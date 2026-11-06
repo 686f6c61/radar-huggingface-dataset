@@ -130,7 +130,7 @@ Comparacion con modelos alternativos de tamano similar (por ejemplo, otras famil
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/EliovpAI/Qwen3.8-27B-Quark-AWQ-MXFP4-DFlash2-Paiton-RDNA4
+- Repositorio en Hugging Face: https://huggingface.co/EliovpAI/Qwen3.8-27B-Quark-AWQ-MXFP4-DFlash2-Paiton-RDNA4
 - Modelo base (target): https://huggingface.co/amd/Qwen3.8-27B-Quark-AWQ-MXFP4
 - Modelo base (borrador DFlash2): https://huggingface.co/tcclaviger/Qwen3.8-27B-DFlash2-FP8
 - Proyecto Radiance: https://github.com/magiccodingman/vllm-radiance

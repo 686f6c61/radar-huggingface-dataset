@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ppatelarjun01/deit-experiment-2024` es un repositorio experimental publicado en HuggingFace que contiene una implementación propia en PyTorch de DeiT (Data-efficient Image Transformer) orientada a tareas multitarea. Lo desarrolla el usuario ppatelarjun01 y se distribuye con licencia BSD-3-Clause. No es un modelo preentrenado listo para producción: el propio autor lo describe como un punto de partida para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeño alcance.
+`ppatelarjun01/deit-experiment-2024` es un repositorio experimental publicado en Hugging Face que contiene una implementación propia en PyTorch de DeiT (Data-efficient Image Transformer) orientada a tareas multitarea. Lo desarrolla el usuario ppatelarjun01 y se distribuye con licencia BSD-3-Clause. No es un modelo preentrenado listo para producción: el propio autor lo describe como un punto de partida para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeño alcance.
 
 El repositorio incluye un script `eval.py` como artefacto principal, un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que es un checkpoint de inicialización, no un modelo entrenado. La configuración declarada corresponde a la escala "huge" de DeiT, con atención estándar, fusión mediante co-atención, activación GELU y normalización BatchNorm.
 
@@ -44,7 +44,7 @@ No hay evidencia de entrenamiento completado. La receta por defecto usa el optim
 - Plantilla para experimentos multitarea controlados: partiendo de `training_args.json` y `config.json`, un equipo puede adaptar la receta (AdamW, schedule coseno) a su propio dataset y comparar baselines con la misma exposición de datos y semillas.
 - Docencia y formación en visión por computador: útil para explicar la arquitectura DeiT y el flujo de un experimento reproducible con configuración separada del código.
 - Reproducción de entornos de evaluación: `eval.py` incluye un bloque `__main__` con un ejemplo de smoke test que puede reutilizarse como base para un arnés de evaluación propio.
-- Punto de partida para adaptadores personalizados: dado que las APIs automáticas no cargan el modelo directamente, sirve para practicar la escritura de adaptadores de carga en HuggingFace.
+- Punto de partida para adaptadores personalizados: dado que las APIs automáticas no cargan el modelo directamente, sirve para practicar la escritura de adaptadores de carga en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ppatelarjun01/deit-experiment-2024 | 49.600 (checkpoint de init) | no disponible | BSD-3-Clause | HuggingFace, 0 descargas |
-| facebook/deit-base-patch16-224 | ~86 M | 224 px (imagen) | Apache-2.0 | HuggingFace, ampliamente usado |
-| facebook/deit-small-patch16-224 | ~22 M | 224 px (imagen) | Apache-2.0 | HuggingFace |
-| google/vit-base-patch16-224 | ~86 M | 224 px (imagen) | Apache-2.0 | HuggingFace |
+| ppatelarjun01/deit-experiment-2024 | 49.600 (checkpoint de init) | no disponible | BSD-3-Clause | Hugging Face, 0 descargas |
+| facebook/deit-base-patch16-224 | ~86 M | 224 px (imagen) | Apache-2.0 | Hugging Face, ampliamente usado |
+| facebook/deit-small-patch16-224 | ~22 M | 224 px (imagen) | Apache-2.0 | Hugging Face |
+| google/vit-base-patch16-224 | ~86 M | 224 px (imagen) | Apache-2.0 | Hugging Face |
 
 La comparación es limitada: los DeiT y ViT de referencia son modelos preentrenados y evaluados en ImageNet, mientras que este repositorio es un esqueleto sin entrenamiento. No se dispone de datos de rendimiento para comparar métricas.
 
@@ -77,9 +77,9 @@ La comparación es limitada: los DeiT y ViT de referencia son modelos preentrena
 - Riesgo de alucinación no aplicable en el sentido de texto; sí existe riesgo de interpretar erróneamente las salidas de un modelo sin entrenar.
 - No hay información sobre idiomas ni sobre contexto máximo soportado.
 - La licencia BSD-3-Clause permite uso comercial, pero el autor advierte de revisar por separado los términos de los datos de origen si se usan datasets externos.
-- Las APIs automáticas de HuggingFace no cargan el modelo sin un adaptador explícito; no es plug-and-play.
+- Las APIs automáticas de Hugging Face no cargan el modelo sin un adaptador explícito; no es plug-and-play.
 - No debe presentarse como modelo preentrenado ni citarse con métricas de rendimiento inexistentes.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ppatelarjun01/deit-experiment-2024
+- Repositorio en Hugging Face: https://huggingface.co/ppatelarjun01/deit-experiment-2024

@@ -72,7 +72,7 @@ No se dispone de datos de benchmarks ni de comparativas publicadas en la informa
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| NA-MPNN (`oteam/nampnn`) | 2,303 M | No aplica (grafo) | AGPL-3.0 | HuggingFace + ofoldx |
+| NA-MPNN (`oteam/nampnn`) | 2,303 M | No aplica (grafo) | AGPL-3.0 | Hugging Face + ofoldx |
 | Alternativas de inverse folding proteico | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -88,7 +88,7 @@ No se dispone de datos de benchmarks ni de comparativas publicadas en la informa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oteam/nampnn
+- Modelo en Hugging Face: https://huggingface.co/oteam/nampnn
 - Checkpoint de especificidad: https://huggingface.co/oteam/nampnn-specificity
 - Paper (bioRxiv): https://www.biorxiv.org/content/10.1101/2025.10.03.679414v2
 - Repositorio oficial: https://github.com/baker-laboratory/NA-MPNN

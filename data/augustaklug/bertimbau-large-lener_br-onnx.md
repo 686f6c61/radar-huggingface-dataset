@@ -86,7 +86,7 @@ No se dispone de información sobre alternativas de la misma categoría para com
 
 | Variante | Formato | Tamaño | Notas |
 |---|---|---|---|
-| `Luciano/bertimbau-large-lener_br` | PyTorch (FP32) | No disponible | Checkpoint original en HuggingFace |
+| `Luciano/bertimbau-large-lener_br` | PyTorch (FP32) | No disponible | Checkpoint original en Hugging Face |
 | `rchuluc/bertimbau-large-lener_br-onnx` | ONNX FP32 | No disponible | Conversión ONNX de referencia |
 | `augustaklug/bertimbau-large-lener_br-onnx` | ONNX FP16 | 636,5 MiB | Conversión FP16 para WebGPU |
 
@@ -103,6 +103,6 @@ No se publican comparativas de benchmarks con otros modelos porque no están dis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/augustaklug/bertimbau-large-lener_br-onnx
+- Modelo en Hugging Face: https://huggingface.co/augustaklug/bertimbau-large-lener_br-onnx
 - Checkpoint original: https://huggingface.co/Luciano/bertimbau-large-lener_br
 - Conversión ONNX FP32 de referencia: https://huggingface.co/rchuluc/bertimbau-large-lener_br-onnx

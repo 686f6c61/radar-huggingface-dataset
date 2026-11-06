@@ -69,5 +69,5 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace - singhatharv/random-matching-2024](https://huggingface.co/singhatharv/random-matching-2024)
+- [Hugging Face - singhatharv/random-matching-2024](https://huggingface.co/singhatharv/random-matching-2024)
 - No se encontraron enlaces adicionales relevantes en la búsqueda web (los resultados obtenidos corresponden a otros proyectos no relacionados con este modelo).

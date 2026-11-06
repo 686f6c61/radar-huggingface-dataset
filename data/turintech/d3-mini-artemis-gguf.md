@@ -99,7 +99,7 @@ Ninguna de las diferencias de accuracy se declara estadísticamente significativ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/turintech/d3-mini-Artemis-GGUF
+- Modelo en Hugging Face: https://huggingface.co/turintech/d3-mini-Artemis-GGUF
 - Sección de acuerdo con el original: https://huggingface.co/turintech/d3-mini-Artemis-GGUF#agreement-with-the-original
 - Sección de comparación de ficheros: https://huggingface.co/turintech/d3-mini-Artemis-GGUF#how-it-compares
 - Modelo base original: https://huggingface.co/vllm-sr/d3-mini

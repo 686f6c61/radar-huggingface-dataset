@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `fun-contrastive` es una implementación experimental de MobileViT orientada al aprendizaje contrastivo, publicada por el desarrollador advaitsharma en HuggingFace. No se trata de un modelo entrenado ni de un sistema de IA listo para producción, sino de un checkpoint de inicialización reproducible que incluye la arquitectura, la configuración y un script de ejemplo (`run.py`) para iniciar experimentos.
+El modelo `fun-contrastive` es una implementación experimental de MobileViT orientada al aprendizaje contrastivo, publicada por el desarrollador advaitsharma en Hugging Face. No se trata de un modelo entrenado ni de un sistema de IA listo para producción, sino de un checkpoint de inicialización reproducible que incluye la arquitectura, la configuración y un script de ejemplo (`run.py`) para iniciar experimentos.
 
 La arquitectura MobileViT combina bloques convolucionales con atenciones de tipo transformer, lo que resulta en un diseño híbrido eficiente para tareas de visión. Esta variante concreta utiliza atención multi-query, fusión mediante cross-attention, activación mish y normalización por instancia. El tamaño del checkpoint es extremadamente reducido: 24.832 parámetros en total, según los metadatos de safetensors.
 
@@ -70,4 +70,4 @@ No disponible. No se han encontrado modelos comparables publicados con las misma
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/advaitsharma/fun-contrastive
+- Hugging Face: https://huggingface.co/advaitsharma/fun-contrastive

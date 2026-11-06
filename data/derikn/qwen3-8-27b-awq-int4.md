@@ -26,7 +26,7 @@ La licencia es Apache 2.0, heredada del modelo base, y el formato de pesos es sa
 | Método de cuantización | Intel AutoRound 0.15.1, exportación `auto_awq` |
 | Dataset de calibración | NeelNanda/pile-10k (128 muestras de 1024 tokens, batch size 8) |
 
-Nota sobre el recuento de parámetros: el panel de Safetensors de HuggingFace informa de 6.284.446.960 parámetros, pero ese dato corresponde al almacenamiento empaquetado (ocho pesos de 4 bits por tensor int32), no al número real de parámetros. El propio autor del checkpoint indica que la cifra correcta es 27.781.427.952.
+Nota sobre el recuento de parámetros: el panel de Safetensors de Hugging Face informa de 6.284.446.960 parámetros, pero ese dato corresponde al almacenamiento empaquetado (ocho pesos de 4 bits por tensor int32), no al número real de parámetros. El propio autor del checkpoint indica que la cifra correcta es 27.781.427.952.
 
 ## Arquitectura y entrenamiento
 
@@ -86,9 +86,9 @@ Los únicos datos de rendimiento documentados son operativos, no de calidad:
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| derikn/Qwen3.8-27B-AWQ-INT4 | 27,78 B (denso) | 262.144 tokens | AWQ W4A16, grupo 128, con MTP y visión en 16 bits | Apache 2.0 | HuggingFace, 0 descargas, 0 likes en el momento de la consulta |
-| cyankiwi/Qwen3.8-27B-AWQ-INT4 | 27 B (denso, según la descripción del comparador) | 262.144 tokens | AWQ INT4, 21,02 GB según aimodels.fyi | Apache 2.0 | HuggingFace y ModelScope |
-| Qwen/Qwen3.8-27B (base) | 27,78 B (denso) | 262.144 tokens | bfloat16 (sin cuantizar) | Apache 2.0 | HuggingFace, repositorio oficial de Alibaba |
+| derikn/Qwen3.8-27B-AWQ-INT4 | 27,78 B (denso) | 262.144 tokens | AWQ W4A16, grupo 128, con MTP y visión en 16 bits | Apache 2.0 | Hugging Face, 0 descargas, 0 likes en el momento de la consulta |
+| cyankiwi/Qwen3.8-27B-AWQ-INT4 | 27 B (denso, según la descripción del comparador) | 262.144 tokens | AWQ INT4, 21,02 GB según aimodels.fyi | Apache 2.0 | Hugging Face y ModelScope |
+| Qwen/Qwen3.8-27B (base) | 27,78 B (denso) | 262.144 tokens | bfloat16 (sin cuantizar) | Apache 2.0 | Hugging Face, repositorio oficial de Alibaba |
 
 No se dispone de datos de benchmarks comparativos entre estas variantes en la información proporcionada, por lo que la comparación se limita a formato, tamaño y licencia. La diferencia observable entre las dos cuantizaciones AWQ es el tamaño en disco (19,6 GB frente a 21,02 GB) y que la variante de `derikn` documenta explícitamente la retención de la cabeza MTP y las proyecciones de atención lineal en 16 bits.
 
@@ -109,7 +109,7 @@ No se dispone de datos de benchmarks comparativos entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/derikn/Qwen3.8-27B-AWQ-INT4
+- Modelo en Hugging Face: https://huggingface.co/derikn/Qwen3.8-27B-AWQ-INT4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio del modelo base en GitHub (AlibabaCloud-Official): https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Intel AutoRound (herramienta de cuantización): https://github.com/intel/auto-round

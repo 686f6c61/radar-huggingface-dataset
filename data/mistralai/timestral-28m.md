@@ -77,10 +77,10 @@ Comparación dentro de la familia Timestral (misma arquitectura y licencia, dist
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Timestral-5M | 5M | no disponible | Modified MIT | HuggingFace |
-| Timestral-28M | 27,8M | 32.768 pasos | Modified MIT | HuggingFace |
-| Timestral-123M | 123M | no disponible | Modified MIT | HuggingFace |
-| Timestral-209M | 209M | no disponible | Modified MIT | HuggingFace |
+| Timestral-5M | 5M | no disponible | Modified MIT | Hugging Face |
+| Timestral-28M | 27,8M | 32.768 pasos | Modified MIT | Hugging Face |
+| Timestral-123M | 123M | no disponible | Modified MIT | Hugging Face |
+| Timestral-209M | 209M | no disponible | Modified MIT | Hugging Face |
 
 No se proporcionan datos de otros modelos de forecasting externos en la información disponible.
 
@@ -98,7 +98,7 @@ No se proporcionan datos de otros modelos de forecasting externos en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mistralai/Timestral-28M
+- Modelo en Hugging Face: https://huggingface.co/mistralai/Timestral-28M
 - Página principal de la familia Timestral (Timestral-209M): https://huggingface.co/mistralai/Timestral-209M
 - Licencia: https://huggingface.co/mistralai/Timestral-28M/blob/main/LICENSE
 - Leaderboard GIFT-Eval: https://huggingface.co/spaces/Salesforce/GIFT-Eval

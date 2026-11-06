@@ -6,7 +6,7 @@ NeuroRVQ es una familia de tokenizadores de biosenales y modelos fundacionales a
 
 La propuesta técnica es un tokenizador adaptativo por modalidad que descompone la señal en representaciones específicas de frecuencia mediante convoluciones temporales multi-escala, codifica cada escala en codebooks RVQ (residual vector quantization) jerárquicos y entrena con una pérdida consciente de la fase de Fourier. Sobre esa representación se entrena un modelo fundacional simple con predicción de tokens enmascarados (NeuroRVQ-FM), demostrando que la calidad del tokenizador es el factor crítico para el rendimiento downstream en tareas de BCI.
 
-El repositorio de HuggingFace (2,3 GB) contiene pesos en formato `.pt` para tokenizadores y modelos fundacionales de EEG, EMG y ECG, además de un tokenizador de PPG. El modelo se presenta en NeurIPS 2026 y cuenta con paper en arXiv (2510.13068). No es un modelo de lenguaje: es un modelo de representación de señales fisiológicas, por lo que muchas de las especificaciones habituales de LLM no aplican.
+El repositorio de Hugging Face (2,3 GB) contiene pesos en formato `.pt` para tokenizadores y modelos fundacionales de EEG, EMG y ECG, además de un tokenizador de PPG. El modelo se presenta en NeurIPS 2026 y cuenta con paper en arXiv (2510.13068). No es un modelo de lenguaje: es un modelo de representación de señales fisiológicas, por lo que muchas de las especificaciones habituales de LLM no aplican.
 
 ## Especificaciones técnicas
 
@@ -79,7 +79,7 @@ Comparación con modelos fundacionales de biosenales de la misma categoría, seg
 
 | Modelo | Parámetros backbone | Contexto | Rendimiento EEG (Motor/ERP) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NeuroRVQ | no disponible | no disponible | no disponible en la información extraída | no disponible | HuggingFace (ntinosbarmpas/NeuroRVQ) |
+| NeuroRVQ | no disponible | no disponible | no disponible en la información extraída | no disponible | Hugging Face (ntinosbarmpas/NeuroRVQ) |
 | CBraMod | 4,9M | no disponible | 61,4 / 77,7 | no disponible | no disponible en la información |
 | EEGPT | 25,7M | no disponible | 31,3 / 66,8 | no disponible | no disponible en la información |
 | NeuroGPT | 79,5M | no disponible | 68,2 / 75,7 | no disponible | no disponible en la información |
@@ -100,7 +100,7 @@ La model card afirma que NeuroRVQ-FM alcanza rendimiento competitivo o superior 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ntinosbarmpas/NeuroRVQ
+- Hugging Face: https://huggingface.co/ntinosbarmpas/NeuroRVQ
 - Paper arXiv: https://arxiv.org/abs/2510.13068v4
 - Web oficial: https://neurorvq.github.io
 - Página NeurIPS 2026: https://neurips.cc/virtual/2026/poster/XXXXX (enlace placeholder en la model card)

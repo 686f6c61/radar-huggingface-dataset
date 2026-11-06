@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`orangesandjuice/place_box_act` es una política de robótica basada en Action Chunking with Transformers (ACT), un método de aprendizaje por imitación que predice fragmentos cortos de acciones en lugar de pasos individuales. La desarrolla el usuario orangesandjuice y se publica en el Hub de HuggingFace dentro del ecosistema LeRobot, la librería de aprendizaje automático para robótica real de HuggingFace.
+`orangesandjuice/place_box_act` es una política de robótica basada en Action Chunking with Transformers (ACT), un método de aprendizaje por imitación que predice fragmentos cortos de acciones en lugar de pasos individuales. La desarrolla el usuario orangesandjuice y se publica en el Hub de Hugging Face dentro del ecosistema LeRobot, la librería de aprendizaje automático para robótica real de Hugging Face.
 
 El modelo resuelve una tarea concreta de manipulación: colocar una caja blanca sobre una toalla amarilla. Se ha entrenado con 50 episodios teleoperados (54.405 fotogramas a 30 FPS) capturados con un robot `so_follower` y una única cámara (`camera1`). La política consume el estado del robot (vector de 6 dimensiones) y una imagen RGB de 240x320, y produce un vector de acción de 6 dimensiones.
 
@@ -43,7 +43,7 @@ El entrenamiento se realizo con LeRobot 0.6.2 sobre el dataset `orangesandjuice/
 - Base para ajuste fino en tareas similares: al partir de una politica ACT ya entrenada, se puede reentrenar con nuevos datasets para variantes del mismo movimiento de colocacion.
 - Validacion de hardware `so_follower`: permite comprobar la integracion de camaras, calibracion y puertos antes de escalar a tareas mas complejas.
 - Investigacion en generalizacion de politicas visuales: al ser un modelo pequeno (51,7 M de parametros) resulta util para experimentar con cambios de posicion de objetos, iluminacion o distractores.
-- Demostraciones educativas: sirve para ilustrar en cursos o talleres como se entrena y ejecuta una politica de robotica real con LeRobot desde HuggingFace.
+- Demostraciones educativas: sirve para ilustrar en cursos o talleres como se entrena y ejecuta una politica de robotica real con LeRobot desde Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -63,7 +63,7 @@ No se dispone de datos cuantitativos (parametros, contexto, benchmarks, licencia
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| orangesandjuice/place_box_act | 51.668.614 | no aplica | no disponible | Apache 2.0 | HuggingFace |
+| orangesandjuice/place_box_act | 51.668.614 | no aplica | no disponible | Apache 2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -79,10 +79,10 @@ No se dispone de datos cuantitativos (parametros, contexto, benchmarks, licencia
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/orangesandjuice/place_box_act
+- Modelo en Hugging Face: https://huggingface.co/orangesandjuice/place_box_act
 - Dataset de entrenamiento: https://huggingface.co/datasets/orangesandjuice/so101_place_box2_20261003_142905
 - Visualizacion del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=orangesandjuice/so101_place_box2_20261003_142905
-- Articulo ACT (pagina de papers de HuggingFace): https://huggingface.co/papers/2304.13705
+- Articulo ACT (pagina de papers de Hugging Face): https://huggingface.co/papers/2304.13705
 - Articulo ACT en arXiv: https://arxiv.org/abs/2304.13705
 - Repositorio LeRobot: https://github.com/huggingface/lerobot
 - Guia de ACT en LeRobot: https://huggingface.co/docs/lerobot/main/en/act

@@ -71,7 +71,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/specklabs/Speck1.5-140M-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/specklabs/Speck1.5-140M-GGUF
 - Modelo base: https://huggingface.co/specklabs/Speck1.5-140M
 - Modelo instruct (versión anterior, Speck1-140M-Instruct): https://huggingface.co/specklabs/Speck1-140M-Instruct-GGUF
 - Entrada en LLM Explorer (Speck1 140M Instruct): https://llm-explorer.com/model/specklabs%2FSpeck1-140M-Instruct,42bo3zsIoltvXtgS6xbaEa

@@ -82,7 +82,7 @@ Estimaciones de contexto maximo segun VRAM y quant, tomadas de la model card (as
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Gemma4-12B-Coder v1 (este modelo) | ~11,9 B | 256K | Codigo Python verificado por tests, con CoT explicita | apache-2.0 declarada | GGUF en este repo; safetensors en el maestro |
-| gemma-4-12B-it (base) | ~11,9 B | 256K (corregido desde 131K) | Modelo instructivo generalista | terminos de Google para Gemma | HuggingFace |
+| gemma-4-12B-it (base) | ~11,9 B | 256K (corregido desde 131K) | Modelo instructivo generalista | terminos de Google para Gemma | Hugging Face |
 | Gemma4-12B agentic v2 (mismo autor) | ~11,9 B | 256K | Agentico + codigo, con tool use | no disponible en la informacion proporcionada | GGUF publicado; safetensors anunciado |
 
 No se dispone de datos de otros modelos de codigo de tamano comparable en la informacion proporcionada, por lo que no se puede establecer una comparacion de rendimiento con alternativas externas.
@@ -104,7 +104,7 @@ No se dispone de datos de otros modelos de codigo de tamano comparable en la inf
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo: https://huggingface.co/deepsx/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF
+- Repositorio Hugging Face de este modelo: https://huggingface.co/deepsx/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Maestro en safetensors de v1: https://huggingface.co/yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1
 - Version v2 agentica en GGUF: https://huggingface.co/yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF

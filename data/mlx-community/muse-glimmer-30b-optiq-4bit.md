@@ -96,7 +96,7 @@ Como única referencia dentro de la propia información, el modelo base meta-mod
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mlx-community/Muse-Glimmer-30B-OptiQ-4bit
+- Repositorio en Hugging Face: https://huggingface.co/mlx-community/Muse-Glimmer-30B-OptiQ-4bit
 - Modelo base: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Sitio del proyecto mlx-optiq: https://mlx-optiq.com/
 - Guía de la familia Muse-Glimmer: https://mlx-optiq.com/docs/muse-glimmer

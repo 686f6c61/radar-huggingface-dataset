@@ -105,7 +105,7 @@ Rendimiento comparativo entre estos modelos: no disponible. Las cifras de Visual
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/coreai-community/decider-2b-vision-CoreAI
+- Repositorio en Hugging Face: https://huggingface.co/coreai-community/decider-2b-vision-CoreAI
 - Repositorio canónico (espejo de origen): https://huggingface.co/mlboydaisuke/decider-2b-vision-CoreAI
 - Modelo fuente: https://huggingface.co/Mapika/decider-2b-vision (revisión `863e290863655f1d6b69324d77d09ac972d21609`)
 - CoreAI Model Zoo: https://github.com/john-rocky/coreai-model-zoo

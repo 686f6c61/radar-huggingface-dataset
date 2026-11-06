@@ -79,8 +79,8 @@ No se dispone de datos de rendimiento comparativos entre estas versiones. La pri
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/snellchapo/granite-4.2-3b-heretic-abliterated
-- Modelo base en HuggingFace: https://huggingface.co/ibm-granite/granite-4.2-3b
+- Repositorio Hugging Face: https://huggingface.co/snellchapo/granite-4.2-3b-heretic-abliterated
+- Modelo base en Hugging Face: https://huggingface.co/ibm-granite/granite-4.2-3b
 - Documentación de IBM Granite 4.2: https://www.ibm.com/granite/docs/models/granite4-2
 - Página principal de IBM Granite: https://www.ibm.com/granite
 - Página de Granite 4.2 en Ollama: https://ollama.com/library/granite4.2:3b

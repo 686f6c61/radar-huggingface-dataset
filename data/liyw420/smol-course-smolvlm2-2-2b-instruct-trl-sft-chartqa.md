@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/liyw420/smol-course-smolvlm2-2.2b-instruct-trl-sft-ChartQA
+- Pagina del modelo en Hugging Face: https://huggingface.co/liyw420/smol-course-smolvlm2-2.2b-instruct-trl-sft-ChartQA
 - Modelo base HuggingFaceTB/SmolVLM2-2.2B-Instruct: https://huggingface.co/HuggingFaceTB/SmolVLM2-2.2B-Instruct
 - Ejercicios del smol-course sobre fine-tuning de SmolVLM2-2.2B-Instruct: https://huggingface.co/learn/smol-course/unit4/4
 - Notebook del ejercicio (Colab): https://colab.research.google.com/github/huggingface/smol-course/blob/main/notebooks/4/4.ipynb

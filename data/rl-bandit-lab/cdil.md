@@ -81,7 +81,7 @@ No se dispone de datos cuantitativos de modelos comparables en la informacion pr
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CDIL (AdaptDICE) | no disponible | no aplica | no disponible | MIT | HuggingFace (rl-bandit-lab/CDIL) |
+| CDIL (AdaptDICE) | no disponible | no aplica | no disponible | MIT | Hugging Face (rl-bandit-lab/CDIL) |
 | DemoDICE (modelos fuente) | no disponible | no aplica | no disponible | no disponible | Ficheros `.pickle` en el repositorio de codigo |
 | Otros metodos de imitation learning offline | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -103,7 +103,7 @@ No se dispone de datos cuantitativos de modelos comparables en la informacion pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rl-bandit-lab/CDIL
+- Modelo en Hugging Face: https://huggingface.co/rl-bandit-lab/CDIL
 - Articulo: https://arxiv.org/abs/2602.10793
 - Codigo: https://github.com/NYCU-RL-Bandits-Lab/CDIL
 - Datasets: https://huggingface.co/datasets/rl-bandit-lab/CDIL

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`asyncrl-m4b_grpo_s4_tn1-gs440` es un repositorio de pesos publicado en HuggingFace por el usuario `yyuan244` el 13 de septiembre de 2026 (y actualizado dos minutos después, ese mismo día). Ocupa 49,8 GB y es, a todos los efectos prácticos, un artefacto opaco: la plataforma no expone pipeline, licencia, idiomas soportados ni tarjeta de modelo. Los únicos metadatos disponibles son la etiqueta automática `region:us`, cero descargas y dos marcas de "me gusta".
+`asyncrl-m4b_grpo_s4_tn1-gs440` es un repositorio de pesos publicado en Hugging Face por el usuario `yyuan244` el 13 de septiembre de 2026 (y actualizado dos minutos después, ese mismo día). Ocupa 49,8 GB y es, a todos los efectos prácticos, un artefacto opaco: la plataforma no expone pipeline, licencia, idiomas soportados ni tarjeta de modelo. Los únicos metadatos disponibles son la etiqueta automática `region:us`, cero descargas y dos marcas de "me gusta".
 
 El identificador sugiere un checkpoint entrenado con refuerzo mediante GRPO (Group Relative Policy Optimization) dentro de una canalización asíncrona de entrenamiento, con sufijos que probablemente codifican la configuración del experimento (tamaño de modelo o de lote, semilla, número de pasos y tamaño de grupo: `m4b`, `s4`, `tn1`, `gs440`). Esta lectura es una hipótesis derivada de la nomenclatura, no una confirmación documentada, y no debe tomarse como especificación.
 
@@ -90,6 +90,6 @@ No disponible. Sin conocer arquitectura, parametros, contexto ni licencia, no es
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yyuan244/asyncrl-m4b_grpo_s4_tn1-gs440
+- Repositorio en Hugging Face: https://huggingface.co/yyuan244/asyncrl-m4b_grpo_s4_tn1-gs440
 - Perfil del autor: https://huggingface.co/yyuan244
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo en la informacion disponible.

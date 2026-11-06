@@ -74,6 +74,6 @@ No se dispone de informacion suficiente para establecer una comparativa con mode
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/sol-max-v2.h043.pi-agent-sft-v15-hero.step_1000
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/sol-max-v2.h043.pi-agent-sft-v15-hero.step_1000
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Busqueda de modelos de agentic-ptb: https://huggingface.co/models?other=agentic-ptb

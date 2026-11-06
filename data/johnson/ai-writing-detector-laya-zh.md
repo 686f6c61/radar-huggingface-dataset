@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AI-writing-detector-laya-zh es un clasificador de texto especializado en detectar si una frase de un artículo académico en chino ha sido escrita por una persona o generada o reescrita por un modelo de la familia DeepSeek. Lo desarrolla el usuario de HuggingFace `johnson` y se distribuye con licencia Apache-2.0. El modelo resuelve un problema muy concreto: la creciente dificultad para distinguir texto académico humano de texto pulido o reescrito por IA en publicaciones en chino, un fenómeno que ha crecido con la adopción masiva de asistentes de escritura.
+AI-writing-detector-laya-zh es un clasificador de texto especializado en detectar si una frase de un artículo académico en chino ha sido escrita por una persona o generada o reescrita por un modelo de la familia DeepSeek. Lo desarrolla el usuario de Hugging Face `johnson` y se distribuye con licencia Apache-2.0. El modelo resuelve un problema muy concreto: la creciente dificultad para distinguir texto académico humano de texto pulido o reescrito por IA en publicaciones en chino, un fenómeno que ha crecido con la adopción masiva de asistentes de escritura.
 
 Técnicamente es un fine-tuning del checkpoint multilingüe `convaiinnovations/laya`, construido sobre ModernBERT-large con 421 M de parámetros, aunque los pesos publicados en safetensors suman 321.908.998 parámetros. El modelo se ha entrenado sobre 99.900 frases de artículos académicos en chino durante una sola época, con calibración RLCD, y clasifica cada frase en tres etiquetas: `human`, `deepseek_light` (pulido ligero por IA) y `deepseek_heavy` (reescritura profunda por IA).
 
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto | TPR@1%FPR | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AI-writing-detector-laya-zh | 321,9 M (publicados) | 128 tokens | 0,8954 | Apache-2.0 | HuggingFace (`johnson/AI-writing-detector-laya-zh`) |
+| AI-writing-detector-laya-zh | 321,9 M (publicados) | 128 tokens | 0,8954 | Apache-2.0 | Hugging Face (`johnson/AI-writing-detector-laya-zh`) |
 | RoBERTa-wwm-ext (baseline del autor) | 102 M | No disponible | 0,831 | No disponible | Referencia citada en la model card |
 | Detectores genéricos de texto IA en chino | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -92,7 +92,7 @@ La comparativa se limita al baseline citado por el propio autor, ya que no se ha
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/johnson/AI-writing-detector-laya-zh
+- Modelo en Hugging Face: https://huggingface.co/johnson/AI-writing-detector-laya-zh
 - Dataset de entrenamiento: https://huggingface.co/datasets/johnson/AI-writing-detector-dataset
 - Repositorio de código y tutoriales: https://github.com/johnson7788/checkAI
 - Checkpoint base Laya: https://huggingface.co/convaiinnovations/laya

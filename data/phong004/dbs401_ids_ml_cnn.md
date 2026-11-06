@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DBS401_IDS_ML_CNN es un modelo publicado en HuggingFace por el usuario Phong004 bajo licencia Apache 2.0. Por la nomenclatura del identificador, el nombre sugiere un modelo de red neuronal convolucional (CNN) orientado a detección de intrusiones (IDS, *Intrusion Detection System*), probablemente desarrollado en el contexto de un proyecto académico (posiblemente una asignatura o módulo identificado como DBS401). No se trata de un modelo de lenguaje: no hay evidencia de que tenga pipeline de generación de texto ni capacidades conversacionales.
+DBS401_IDS_ML_CNN es un modelo publicado en Hugging Face por el usuario Phong004 bajo licencia Apache 2.0. Por la nomenclatura del identificador, el nombre sugiere un modelo de red neuronal convolucional (CNN) orientado a detección de intrusiones (IDS, *Intrusion Detection System*), probablemente desarrollado en el contexto de un proyecto académico (posiblemente una asignatura o módulo identificado como DBS401). No se trata de un modelo de lenguaje: no hay evidencia de que tenga pipeline de generación de texto ni capacidades conversacionales.
 
 La model card del repositorio está prácticamente vacía: solo contiene la declaración de licencia y ningún dato sobre arquitectura, datos de entrenamiento, métricas o uso previsto. El repositorio no registra descargas ni interacciones, y no se ha actualizado desde su creación. Esto implica que la mayor parte de la información técnica necesaria para evaluar el modelo no está disponible públicamente.
 
@@ -73,5 +73,5 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Phong004/DBS401_IDS_ML_CNN
+- Hugging Face: https://huggingface.co/Phong004/DBS401_IDS_ML_CNN
 - Paper, blog, repositorio de código o demo: no disponible en la información proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GOQwen/LQwen es un modelo publicado en HuggingFace por el usuario GOQwen bajo licencia Apache 2.0. La model card asociada no contiene informacion tecnica alguna mas alla de la declaracion de licencia, y el modelo registra cero descargas y un unico "like", lo que sugiere que se trata de un lanzamiento muy reciente o de un repositorio experimental sin documentacion publicada.
+GOQwen/LQwen es un modelo publicado en Hugging Face por el usuario GOQwen bajo licencia Apache 2.0. La model card asociada no contiene informacion tecnica alguna mas alla de la declaracion de licencia, y el modelo registra cero descargas y un unico "like", lo que sugiere que se trata de un lanzamiento muy reciente o de un repositorio experimental sin documentacion publicada.
 
 El nombre del modelo sugiere una posible relacion con la familia Qwen de Alibaba, que segun los resultados de busqueda web ha publicado recientemente Qwen 3.8-Max, un modelo de 2,4 billones de parametros con pesos de codigo abierto. Sin embargo, no existe evidencia que vincule GOQwen/LQwen con dicha familia mas alla del nombre. Toda especificacion tecnica del modelo (arquitectura, tamano, contexto, capacidades) permanece sin publicar en el momento de redactar esta ficha.
 
@@ -77,8 +77,8 @@ No disponible. Sin datos de parametros, contexto ni rendimiento, no es posible e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/GOQwen/LQwen
-- Qwen (organizacion oficial en HuggingFace): https://huggingface.co/Qwen
+- Repositorio Hugging Face: https://huggingface.co/GOQwen/LQwen
+- Qwen (organizacion oficial en Hugging Face): https://huggingface.co/Qwen
 - Qwen 3.8-Max en OpenLM.ai: https://openlm.ai/qwen3.8/
 - Qwen Studio: https://qwen.ai/home
 - Pagina de investigacion de Qwen: https://qwen.ai/research/

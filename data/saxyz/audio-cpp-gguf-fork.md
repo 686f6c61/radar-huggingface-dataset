@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Formato | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| saxyZ/audio.cpp-gguf-fork | GGUF (multiples modelos) | Variable (100M-4B) | No disponible | Mixta (MIT, Apache-2.0, CC-BY-NC, etc.) | HuggingFace (fork sin mantenimiento) |
-| audio-cpp/audio.cpp-gguf | GGUF (multiples modelos) | Variable | No disponible | Mixta | HuggingFace (repositorio oficial) |
-| Modelos originales en safetensors | safetensors | Variable | Variable | Cada uno la suya | HuggingFace (por separado) |
+| saxyZ/audio.cpp-gguf-fork | GGUF (multiples modelos) | Variable (100M-4B) | No disponible | Mixta (MIT, Apache-2.0, CC-BY-NC, etc.) | Hugging Face (fork sin mantenimiento) |
+| audio-cpp/audio.cpp-gguf | GGUF (multiples modelos) | Variable | No disponible | Mixta | Hugging Face (repositorio oficial) |
+| Modelos originales en safetensors | safetensors | Variable | Variable | Cada uno la suya | Hugging Face (por separado) |
 
 La principal diferencia con el repositorio original es que este fork no parece recibir actualizaciones ni correcciones, por lo que es preferible usar `audio-cpp/audio.cpp-gguf` si se busca soporte activo. Los modelos originales en safetensors ofrecen mayor flexibilidad de cuantizacion (por ejemplo, con llama.cpp o herramientas propias), pero requieren conversion manual a GGUF.
 
@@ -82,7 +82,7 @@ La principal diferencia con el repositorio original es que este fork no parece r
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/saxyZ/audio.cpp-gguf-fork
+- Repositorio Hugging Face: https://huggingface.co/saxyZ/audio.cpp-gguf-fork
 - Repositorio original de audio.cpp-gguf: https://huggingface.co/audio-cpp/audio.cpp-gguf
 - Motor de inferencia audio.cpp (GitHub): https://github.com/0xShug0/audio.cpp
 - Documentacion GGUF de audio.cpp: https://github.com/0xShug0/audio.cpp/blob/main/docs/gguf.md

@@ -70,5 +70,5 @@ No disponible. No existen modelos comparables en el sentido de que este checkpoi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/thapargenomics/retrieval-large
+- Repositorio en Hugging Face: https://huggingface.co/thapargenomics/retrieval-large
 - No se han encontrado otros enlaces relevantes (papers, blogs, demos) en la búsqueda web.

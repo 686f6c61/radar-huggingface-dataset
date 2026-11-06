@@ -103,7 +103,7 @@ No se dispone de datos comparativos de rendimiento entre estos modelos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/crele/nimbus-v1
+- Modelo en Hugging Face: https://huggingface.co/crele/nimbus-v1
 - Página del modelo en Crele: https://crele.co/models/nimbus
 - Repositorio de código: https://github.com/Crele-AI/nimbus
 - Modelo base: https://huggingface.co/mispeech/dasheng-base

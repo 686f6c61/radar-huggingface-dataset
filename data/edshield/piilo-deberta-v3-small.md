@@ -83,9 +83,9 @@ La etiqueta PHONE_NUM aparece en la lista de clases del modelo, pero no figura e
 
 | Modelo | Parametros | Contexto | Tarea | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| piilo-deberta-v3-small | 141.315.855 | 1.024 tokens por ventana | Clasificacion de tokens PII educativo (7 etiquetas) | PIILO held-out: P 0.642 / R 1.000 / F5 0.979 (reglas + modelo) | CC BY 4.0 | HuggingFace, mas variante ONNX |
-| microsoft/deberta-v3-small (modelo base) | 142M aprox. | no disponible en la informacion proporcionada | Masked language modeling y fine-tuning NLU | no disponible | MIT | HuggingFace |
-| edshield/piilo-deberta-v3-small-onnx | mismas que el modelo base | igual que el modelo de origen | Igual, formato ONNX para navegador | no disponible | CC BY 4.0 (segun el modelo de origen) | HuggingFace |
+| piilo-deberta-v3-small | 141.315.855 | 1.024 tokens por ventana | Clasificacion de tokens PII educativo (7 etiquetas) | PIILO held-out: P 0.642 / R 1.000 / F5 0.979 (reglas + modelo) | CC BY 4.0 | Hugging Face, mas variante ONNX |
+| microsoft/deberta-v3-small (modelo base) | 142M aprox. | no disponible en la informacion proporcionada | Masked language modeling y fine-tuning NLU | no disponible | MIT | Hugging Face |
+| edshield/piilo-deberta-v3-small-onnx | mismas que el modelo base | igual que el modelo de origen | Igual, formato ONNX para navegador | no disponible | CC BY 4.0 (segun el modelo de origen) | Hugging Face |
 
 No se dispone de resultados de benchmarks de modelos alternativos de deteccion de PII entrenados sobre PIILO en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa con competidores directos.
 
@@ -104,7 +104,7 @@ No se dispone de resultados de benchmarks de modelos alternativos de deteccion d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/edshield/piilo-deberta-v3-small
+- Modelo en Hugging Face: https://huggingface.co/edshield/piilo-deberta-v3-small
 - Variante ONNX: https://huggingface.co/edshield/piilo-deberta-v3-small-onnx
 - Repositorio de edshield: https://github.com/hemangnagar/edshield
 - Documentacion de cobertura: https://github.com/hemangnagar/edshield/blob/main/docs/COVERAGE.md

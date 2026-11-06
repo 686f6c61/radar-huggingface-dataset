@@ -91,7 +91,7 @@ No se dispone de informacion sobre modelos comparables de la misma categoria en 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OfflineBase/Muse-Glimmer-30B-Moss-Test-LoRA
+- Repositorio Hugging Face: https://huggingface.co/OfflineBase/Muse-Glimmer-30B-Moss-Test-LoRA
 - Modelo base: https://huggingface.co/OfflineBase/Glimmer-30B-2026-Knowledge-unsloth-bnb-4bit
 - Framework de entrenamiento citado: Muse Spark Open (sin URL en la informacion disponible)
 - API de generacion de datos citada: Muse Spark 1.3 Contributor (sin URL en la informacion disponible)

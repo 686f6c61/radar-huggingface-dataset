@@ -102,10 +102,10 @@ Los datos de las filas de SmolLM2-135M, Qwen2.5-0.5B y MiniMind2 no forman parte
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/caspar/MiniMind-MoE-198M-A64M-Mixed-SFT-v1.0
+- Modelo en Hugging Face: https://huggingface.co/caspar/MiniMind-MoE-198M-A64M-Mixed-SFT-v1.0
 - Repositorio de la arquitectura original (Apache-2.0): https://github.com/jingyaogong/minimind
 - Dataset de preentrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Dataset de SFT: https://huggingface.co/datasets/HuggingFaceH4/ultrachat_200k
 - Dataset de SFT: https://huggingface.co/datasets/HuggingFaceTB/smoltalk
 - Dataset de evaluacion/entrenamiento: https://huggingface.co/datasets/openai/gsm8k
-- Ficheros `evaluation.json` y `requirements.txt`: incluidos en el repositorio del modelo (ver enlace de HuggingFace)
+- Ficheros `evaluation.json` y `requirements.txt`: incluidos en el repositorio del modelo (ver enlace de Hugging Face)

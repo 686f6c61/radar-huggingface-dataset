@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Linny-TokenBased-Gen2.2 es un repositorio de pesos publicado en HuggingFace por el usuario Lucien-shark. La model card asociada está prácticamente vacía: solo contiene el campo `license: unknown`, sin descripción, sin arquitectura declarada, sin datos de entrenamiento ni ejemplos de uso. El repositorio tampoco declara pipeline de inferencia, idiomas soportados ni etiquetas de formato, por lo que la información verificable se reduce a metadatos de plataforma.
+Linny-TokenBased-Gen2.2 es un repositorio de pesos publicado en Hugging Face por el usuario Lucien-shark. La model card asociada está prácticamente vacía: solo contiene el campo `license: unknown`, sin descripción, sin arquitectura declarada, sin datos de entrenamiento ni ejemplos de uso. El repositorio tampoco declara pipeline de inferencia, idiomas soportados ni etiquetas de formato, por lo que la información verificable se reduce a metadatos de plataforma.
 
 El dato objetivo más relevante es el tamaño del repositorio: 262,2 GB. Ese volumen es coherente con un modelo de gran tamaño en precisión completa o con un repositorio que acumula varias versiones de pesos y checkpoints, pero no permite deducir de forma fiable el número de parámetros ni la arquitectura. El nombre del repositorio sugiere una segunda generación de un modelo previo ("Gen2.2") con algún tipo de diseño basado en tokens, pero se trata de una inferencia a partir del identificador y no de información confirmada por el autor.
 
@@ -43,7 +43,7 @@ Respecto al entrenamiento, no hay datos sobre volumen de tokens, composición de
 - Capacidades multimodales (visión, audio): no disponible.
 - Modo "thinking" o razonamiento extendido: no disponible.
 
-No se ha publicado ninguna lista de capacidades verificable. La ausencia de pipeline y de etiquetas de tarea en HuggingFace impide siquiera clasificar el modelo por tipo de uso previsto.
+No se ha publicado ninguna lista de capacidades verificable. La ausencia de pipeline y de etiquetas de tarea en Hugging Face impide siquiera clasificar el modelo por tipo de uso previsto.
 
 ## Casos de uso
 
@@ -97,6 +97,6 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace (repositorio del modelo): https://huggingface.co/Lucien-shark/Linny-TokenBased-Gen2.2
+- Hugging Face (repositorio del modelo): https://huggingface.co/Lucien-shark/Linny-TokenBased-Gen2.2
 - Resultados de la búsqueda web: no relevantes. Las coincidencias encontradas corresponden a una tienda de bicicletas en Bélgica (lucien.bike), a la página de Wikipedia sobre el nombre propio "Lucien", a una casa de subastas (lucienparis.com) y a la entrada de Wikipedia sobre Lucien de Samosate. Ninguna guarda relación con el modelo.
 - Paper, blog técnico, repositorio de código o demo: no disponible.

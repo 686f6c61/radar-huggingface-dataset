@@ -1,7 +1,7 @@
 # chnkapoor/cnn-transformer-generation-2023
 
 ## Resumen
-El modelo `chnkapoor/cnn-transformer-generation-2023` es un prototipo de investigación publicado en HuggingFace por el usuario chnkapoor. Se presenta explícitamente como un "Cnn Transformer" orientado a tareas de generación, en una escala definida por el autor como "nano". No se trata de un modelo entrenado y listo para producción: la propia model card indica que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y no un checkpoint con benchmarks.
+El modelo `chnkapoor/cnn-transformer-generation-2023` es un prototipo de investigación publicado en Hugging Face por el usuario chnkapoor. Se presenta explícitamente como un "Cnn Transformer" orientado a tareas de generación, en una escala definida por el autor como "nano". No se trata de un modelo entrenado y listo para producción: la propia model card indica que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y no un checkpoint con benchmarks.
 
 El repositorio es deliberadamente minimalista: contiene un script `inference.py` con el punto de entrada de inferencia o entrenamiento, un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y el mencionado checkpoint de inicialización. El tamaño real declarado en los pesos safetensors es de 24.832 parámetros, lo que sitúa al modelo varios órdenes de magnitud por debajo de cualquier LLM de uso general.
 
@@ -20,7 +20,7 @@ Su relevancia actual no está en el rendimiento, sino en su valor como plantilla
 | Licencia | MIT |
 | Formato de pesos | safetensors |
 
-Otros datos técnicos declarados en la model card: escala "nano", función de activación swish, normalización RMSNorm, optimizador RMSprop con scheduler polinómico, pipeline de HuggingFace no disponible, 14 descargas y 0 likes en el momento de la consulta, y un tamaño de repositorio de 0,0 GB.
+Otros datos técnicos declarados en la model card: escala "nano", función de activación swish, normalización RMSNorm, optimizador RMSprop con scheduler polinómico, pipeline de Hugging Face no disponible, 14 descargas y 0 likes en el momento de la consulta, y un tamaño de repositorio de 0,0 GB.
 
 ## Arquitectura y entrenamiento
 La arquitectura se describe como "Cnn Transformer", es decir, una combinación de componentes convolucionales y de atención. Los elementos concretos que documenta el autor son: atención dispersa (sparse attention) en lugar de atención densa completa, un mecanismo de fusión denominado "co attention", activación swish y normalización RMSNorm. No se especifica el número de capas, la dimensión oculta, el número de cabezas de atención ni la disposición exacta de los bloques convolucionales y de atención; esa información quedaría en el `config.json` del repositorio, que no se ha facilitado.
@@ -60,7 +60,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| chnkapoor/cnn-transformer-generation-2023 | 24.832 | no disponible | MIT | HuggingFace, checkpoint de inicialización |
+| chnkapoor/cnn-transformer-generation-2023 | 24.832 | no disponible | MIT | Hugging Face, checkpoint de inicialización |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -77,5 +77,5 @@ No se dispone de información sobre modelos comparables en la documentación pro
 - Impacto y visibilidad bajos: 14 descargas y 0 likes, sin señales de validación por parte de la comunidad.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/chnkapoor/cnn-transformer-generation-2023
+- Hugging Face: https://huggingface.co/chnkapoor/cnn-transformer-generation-2023
 - La búsqueda web realizada no ha devuelto enlaces técnicos relevantes sobre este modelo (paper, blog, repositorio de código o demo). Los resultados obtenidos no guardaban relación con el modelo y se han descartado. No hay, por tanto, enlaces adicionales que registrar.

@@ -95,7 +95,7 @@ La comparacion de rendimiento no es posible: no hay resultados de benchmarks pub
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Diluner/gpt54-mini-sequential-qwen3-1.7b-sft-s1-babyai-20260920
+- Modelo en Hugging Face: https://huggingface.co/Diluner/gpt54-mini-sequential-qwen3-1.7b-sft-s1-babyai-20260920
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
-- Fichero de referencias y checksums del experimento: `experiment.json`, en la raiz del repositorio de HuggingFace
+- Fichero de referencias y checksums del experimento: `experiment.json`, en la raiz del repositorio de Hugging Face
 - Papers, blogs, repositorios o demos adicionales: no disponible. La busqueda web no devolvio ningun resultado relacionado con este modelo.

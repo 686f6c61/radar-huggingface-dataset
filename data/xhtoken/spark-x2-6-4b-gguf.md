@@ -80,7 +80,7 @@ Las únicas afirmaciones cualitativas verificables en el texto son:
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Spark-X2.6-4B | 4,11 B | 1.048.576 tokens (config. SGLang) | Referencia de la comparativa; el autor lo sitúa al nivel o por encima de modelos de ~9B en varias tareas | Apache 2.0 | HuggingFace: GGUF (este repo) y safetensors (modelo base) |
+| Spark-X2.6-4B | 4,11 B | 1.048.576 tokens (config. SGLang) | Referencia de la comparativa; el autor lo sitúa al nivel o por encima de modelos de ~9B en varias tareas | Apache 2.0 | Hugging Face: GGUF (este repo) y safetensors (modelo base) |
 | Qwen3.5-4B | No disponible en la informacion proporcionada | No disponible | Citado por el autor como referencia de eficiencia en edge, sin cifras textuales | No disponible | No disponible |
 | Gemma-E4B | No disponible en la informacion proporcionada | No disponible | Citado por el autor como referencia de eficiencia en edge, sin cifras textuales | No disponible | No disponible |
 | Familia de ~9B (genérica) | ~9 B | No disponible | El autor afirma igualar o superar estos modelos en varios benchmarks | No disponible | No disponible |
@@ -103,7 +103,7 @@ La comparativa es necesariamente cualitativa: los datos de los modelos de refere
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/XHToken/Spark-X2.6-4B-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/XHToken/Spark-X2.6-4B-GGUF
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.6-4B-Base
 - Modelo en formato Transformers (referenciado en el quickstart): https://huggingface.co/XHToken/Spark-X2.6-4B
 - Slack de la comunidad: https://join.slack.com/t/tokenspark/shared_invite/zt-432qf8l2f-5~dLyXv8uETr0P0UuC07nw

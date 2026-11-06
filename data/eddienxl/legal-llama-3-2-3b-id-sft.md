@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Eddienxl/legal-llama-3.2-3b-id-sft es un checkpoint publicado en HuggingFace por el usuario Eddienxl. Por la nomenclatura del repositorio puede inferirse que se trata de un ajuste supervisado (SFT) sobre un modelo base de la familia Llama 3.2 de 3.000 millones de parametros, orientado a un dominio juridico y, por el sufijo "id", probablemente a la lengua indonesia. Ninguna de estas inferencias esta confirmada en la informacion disponible: la model card publicada es la plantilla autogenerada por HuggingFace y todos sus campos aparecen como "[More Information Needed]".
+Eddienxl/legal-llama-3.2-3b-id-sft es un checkpoint publicado en Hugging Face por el usuario Eddienxl. Por la nomenclatura del repositorio puede inferirse que se trata de un ajuste supervisado (SFT) sobre un modelo base de la familia Llama 3.2 de 3.000 millones de parametros, orientado a un dominio juridico y, por el sufijo "id", probablemente a la lengua indonesia. Ninguna de estas inferencias esta confirmada en la informacion disponible: la model card publicada es la plantilla autogenerada por Hugging Face y todos sus campos aparecen como "[More Information Needed]".
 
 El repositorio tiene un tamano total de 0,2 GB, lo que resulta incompatible con el peso completo de un modelo de 3.000 millones de parametros (unos 6 GB en fp16 y alrededor de 1,8-2 GB en cuantizacion de 4 bits). Ese tamano sugiere que el artefacto publicado podria ser un adaptador LoRA en lugar de un modelo fusionado, aunque no se ha podido verificar consultando la lista de ficheros del repositorio.
 
@@ -25,7 +25,7 @@ La relevancia de esta ficha es fundamentalmente de advertencia: el modelo acumul
 
 No hay informacion en la model card sobre la arquitectura del modelo, el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de alineacion adicionales como RLHF o DPO. La unica etiqueta tecnica relevante es "unsloth" en los tags del repositorio, lo que indica que el ajuste se realizo con la libreria Unsloth, habitualmente empleada para fine-tuning eficiente en memoria mediante LoRA o QLoRA. Esto refuerza la hipotesis de que el checkpoint publicado sea un adaptador y no un modelo fusionado, coherente con el tamano de 0,2 GB del repositorio.
 
-El tag "arxiv:1910.09700" corresponde a la referencia de Lacoste et al. (2019) sobre estimacion de emisiones, citada en la plantilla generica de HuggingFace. No es una referencia al paper del modelo ni aporta informacion sobre su entrenamiento. El tag "endpoints_compatible" indica unicamente que el repositorio cumple los requisitos de formato para su despliegue en Inference Endpoints.
+El tag "arxiv:1910.09700" corresponde a la referencia de Lacoste et al. (2019) sobre estimacion de emisiones, citada en la plantilla generica de Hugging Face. No es una referencia al paper del modelo ni aporta informacion sobre su entrenamiento. El tag "endpoints_compatible" indica unicamente que el repositorio cumple los requisitos de formato para su despliegue en Inference Endpoints.
 
 ## Capacidades
 
@@ -66,7 +66,7 @@ La model card incluye la seccion de evaluacion con todos los campos marcados com
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos de rendimiento |
 |---|---|---|---|---|---|
-| Eddienxl/legal-llama-3.2-3b-id-sft | no disponible (nombre sugiere 3.000 millones) | no disponible | no disponible | HuggingFace, 0 descargas, 0 likes | no disponible |
+| Eddienxl/legal-llama-3.2-3b-id-sft | no disponible (nombre sugiere 3.000 millones) | no disponible | no disponible | Hugging Face, 0 descargas, 0 likes | no disponible |
 | Llama 3.2 3B Instruct (Meta) | 3.000 millones | 128.000 tokens | Llama 3.2 Community License | Ampliamente disponible | Publicados por Meta |
 | Modelos legales de 3B en indonesio | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -86,7 +86,7 @@ No se dispone de informacion suficiente para establecer una comparativa cuantita
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Eddienxl/legal-llama-3.2-3b-id-sft
+- Modelo en Hugging Face: https://huggingface.co/Eddienxl/legal-llama-3.2-3b-id-sft
 - Referencia citada en los tags (Lacoste et al., 2019, sobre estimacion de emisiones): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning: https://mlco2.github.io/impact#compute
 - Repositorio de Unsloth (libreria indicada en los tags): https://github.com/unslothai/unsloth

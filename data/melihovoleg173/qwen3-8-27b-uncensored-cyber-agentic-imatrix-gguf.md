@@ -113,7 +113,7 @@ No se dispone de datos de modelos de terceros comparables en la informacion prop
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/melihovoleg173/Qwen3.8-27B-Uncensored-Cyber-agentic-imatrix-GGUF
+- Repositorio Hugging Face: https://huggingface.co/melihovoleg173/Qwen3.8-27B-Uncensored-Cyber-agentic-imatrix-GGUF
 - Modelo base: https://huggingface.co/philbert440/Qwen3.8-27B-Uncensored-Cyber
 - Repositorio de llama.cpp, herramienta de cuantizacion e inferencia usada (`llama-imatrix`, `llama-quantize`, `llama-server`): no disponible como enlace en la informacion proporcionada.
 - Paper, blog o demo asociados: no disponibles. La busqueda web realizada no devolvio ningun resultado relevante para este modelo.

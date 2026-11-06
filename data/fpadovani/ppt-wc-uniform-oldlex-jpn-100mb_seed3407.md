@@ -6,7 +6,7 @@ El modelo `fpadovani/ppt-wc-uniform-oldlex-jpn-100mb_seed3407` es un ajuste fino
 
 El problema que aborda es de naturaleza experimental más que de producto: el nombre del modelo sugiere una ablación sobre tokenizador y vocabulario (los segmentos "uniform", "oldlex" y "jpn" apuntan a variantes de léxico y a experimentos con japonés) aplicada sobre un corpus de aproximadamente 100 MB, con la semilla 3407 fijada para reproducibilidad. No se declara ninguna tarea downstream concreta ni un conjunto de datos de instrucciones identificado en la model card.
 
-Su relevancia es por tanto acotada al ámbito de la investigación reproducible: sirve como punto de comparación en estudios sobre transferencia de vocabulario, entrenamiento con presupuestos de datos muy reducidos y evaluación de recetas de SFT en modelos pequeños. No dispone de descargas ni de "likes" en HuggingFace en el momento de la consulta, y la licencia no está especificada (la model card contiene únicamente el marcador de posición `licence: license`).
+Su relevancia es por tanto acotada al ámbito de la investigación reproducible: sirve como punto de comparación en estudios sobre transferencia de vocabulario, entrenamiento con presupuestos de datos muy reducidos y evaluación de recetas de SFT en modelos pequeños. No dispone de descargas ni de "likes" en Hugging Face en el momento de la consulta, y la licencia no está especificada (la model card contiene únicamente el marcador de posición `licence: license`).
 
 ## Especificaciones tecnicas
 
@@ -36,14 +36,14 @@ No se documenta en la model card el volumen de tokens de instrucciones usado en 
 - Soporte de agentes y razonamiento multi-paso: no disponible; no se declara ninguna capacidad agentica.
 - Capacidades multilingues: no disponibles; solo se puede afirmar que el modelo base es de ingles (`eng_latn`) y que el nombre del ajuste incluye la etiqueta `jpn`, sin documentacion que lo respalde.
 - Capacidades especiales (modo thinking, vision, audio): no disponibles; el repositorio no declara ninguna modalidad adicional.
-- Integracion: es compatible con `text-generation-inference` y con `endpoints_compatible` segun los tags, por lo que puede servirse mediante la infraestructura de inferencia de HuggingFace.
+- Integracion: es compatible con `text-generation-inference` y con `endpoints_compatible` segun los tags, por lo que puede servirse mediante la infraestructura de inferencia de Hugging Face.
 
 ## Casos de uso
 
 - Ablacion de tokenizador y vocabulario en investigacion: dado el nombre del modelo, el caso natural es comparar recetas de lexico ("uniform" frente a "oldlex") sobre el mismo corpus de 100 MB y la misma semilla, midiendo perplejidad en un conjunto de validacion fijo.
 - Reproducibilidad de experimentos de SFT: al fijar la semilla 3407 y publicar el registro de Weights & Biases, sirve para replicar exactamente una ejecucion de TRL y verificar la variabilidad entre semillas en modelos de menos de 100 M de parametros.
 - Generacion de texto de bajo coste en local: con 86 M de parametros, cabe en CPU y en cualquier GPU de consumo, por lo que es util para prototipar interfaces de generacion de texto sin dependencia de APIs externas.
-- Pruebas de humo en pipelines de despliegue: permite validar integraciones con `transformers`, `text-generation-inference`, endpoints compatibles con la API de HuggingFace y, previa conversion a GGUF, con llama.cpp u Ollama, sin consumir recursos significativos.
+- Pruebas de humo en pipelines de despliegue: permite validar integraciones con `transformers`, `text-generation-inference`, endpoints compatibles con la API de Hugging Face y, previa conversion a GGUF, con llama.cpp u Ollama, sin consumir recursos significativos.
 - Generacion de datos sinteticos a pequena escala para filtrado o aumentar datasets de clasificacion: el modelo puede producir continuaciones textuales que despues se filtran por reglas o por un modelo mayor.
 - Docencia y divulgacion sobre entrenamiento de LLM: su tamano reducido (1,4 GB de repositorio, 173 MB en fp16) permite ejecutar el ciclo completo de carga, inferencia y analisis de pesos en un portatil.
 - Linea base en estudios de destilacion o comparacion con modelos mayores: sirve como referencia de "modelo pequeno entrenado con 100 MB" frente a checkpoints de mayor presupuesto de datos.
@@ -59,15 +59,15 @@ No hay datos de MMLU, HumanEval, GSM8K, perplejidad ni de ninguna otra metrica e
 - VRAM estimada para inferencia (solo pesos): aproximadamente 0,35 GB en fp32, 0,17 GB en fp16/bf16, 0,09 GB en int8 y 0,04 GB en int4. Con cache KV y overhead del runtime, el consumo real sera ligeramente superior, pero sigue siendo marginal.
 - GPU recomendadas: cualquier GPU con al menos 1-2 GB de VRAM es suficiente; se ha disenado para ejecutarse incluso en CPU. No requiere A100, H100 ni RTX 4090.
 - Cabe en GPU de consumo: si, en cualquier modelo actual (GTX 1050 Ti en adelante, integradas modernas con suficiente memoria compartida, y telefonos de gama alta mediante runtimes moviles).
-- Opciones de despliegue: `transformers` con `pipeline` (metodo del ejemplo oficial), `text-generation-inference` (el tag `text-generation-inference` lo declara compatible), endpoints de HuggingFace (`endpoints_compatible`), y vLLM o llama.cpp/Ollama previa conversion de los pesos a los formatos correspondientes (no se publican variantes GGUF).
+- Opciones de despliegue: `transformers` con `pipeline` (metodo del ejemplo oficial), `text-generation-inference` (el tag `text-generation-inference` lo declara compatible), endpoints de Hugging Face (`endpoints_compatible`), y vLLM o llama.cpp/Ollama previa conversion de los pesos a los formatos correspondientes (no se publican variantes GGUF).
 - Latencia y throughput: no disponible; no se publican medidas. Por el tamano del modelo, cabe esperar latencias muy bajas tanto en CPU como en GPU, pero no hay cifras verificables en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| fpadovani/ppt-wc-uniform-oldlex-jpn-100mb_seed3407 | 86,4 M | no disponible | no disponible | HuggingFace, safetensors | Ajuste SFT de un modelo Goldfish |
-| goldfish-models/eng_latn_100mb (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible | HuggingFace | Entrenado sobre ~100 MB de ingles; origen del ajuste |
+| fpadovani/ppt-wc-uniform-oldlex-jpn-100mb_seed3407 | 86,4 M | no disponible | no disponible | Hugging Face, safetensors | Ajuste SFT de un modelo Goldfish |
+| goldfish-models/eng_latn_100mb (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible | Hugging Face | Entrenado sobre ~100 MB de ingles; origen del ajuste |
 | GPT-2 small | 124 M | 1.024 tokens | Licencia MIT modificada de OpenAI | Ampliamente disponible | Referencia clasica de la familia GPT-2 |
 | distilgpt2 | 82 M | 1.024 tokens | Apache 2.0 | Ampliamente disponible | Version destilada de GPT-2, tamano comparable |
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparado entre estos modelos para esta fi
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/fpadovani/ppt-wc-uniform-oldlex-jpn-100mb_seed3407
+- Pagina del modelo en Hugging Face: https://huggingface.co/fpadovani/ppt-wc-uniform-oldlex-jpn-100mb_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/7ltbaam6
 - Repositorio de TRL: https://github.com/huggingface/trl

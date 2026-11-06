@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / observacion | Compresion de acciones | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `easyminnn/atq-labelgated-2.5x-vlm_contact-disc611-60k` (este) | 2,83B | 3 camaras 256x256, 20 fps | Si, MoE de 4 expertos, 1x y 2,5x, dims discretas `[6, 11]` con ultimo valor | other | HuggingFace, 0 descargas |
-| `easyminnn/atq-labelgated-2.5x-vlm_contact-60k` (variante hermana) | no disponible | 3 camaras 256x256, 20 fps | Si, identica salvo que suma las dims binarias en bloques comprimidos | other | HuggingFace |
-| `nvidia/GR00T-N1.5-3B` (modelo base) | ~3B | VLA de proposito general | No documentada en la informacion disponible | no disponible | HuggingFace |
+| `easyminnn/atq-labelgated-2.5x-vlm_contact-disc611-60k` (este) | 2,83B | 3 camaras 256x256, 20 fps | Si, MoE de 4 expertos, 1x y 2,5x, dims discretas `[6, 11]` con ultimo valor | other | Hugging Face, 0 descargas |
+| `easyminnn/atq-labelgated-2.5x-vlm_contact-60k` (variante hermana) | no disponible | 3 camaras 256x256, 20 fps | Si, identica salvo que suma las dims binarias en bloques comprimidos | other | Hugging Face |
+| `nvidia/GR00T-N1.5-3B` (modelo base) | ~3B | VLA de proposito general | No documentada en la informacion disponible | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparado entre estas variantes ni con otras familias de VLA, por lo que la comparacion se limita a configuracion, licencia y disponibilidad.
 
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes ni con otr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/easyminnn/atq-labelgated-2.5x-vlm_contact-disc611-60k
+- Modelo en Hugging Face: https://huggingface.co/easyminnn/atq-labelgated-2.5x-vlm_contact-disc611-60k
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.5-3B
 - Variante hermana (dims discretas sumadas): https://huggingface.co/easyminnn/atq-labelgated-2.5x-vlm_contact-60k
 - Dataset de etiquetas: https://huggingface.co/datasets/prehj/robocasa-ratio-labels-contact

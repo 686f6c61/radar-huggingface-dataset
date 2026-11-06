@@ -83,8 +83,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nbKPS/hearth-lean-loomed-v1
+- Hugging Face: https://huggingface.co/nbKPS/hearth-lean-loomed-v1
 - Modelo base: https://huggingface.co/openai/gpt-oss-120b
 - llama.cpp (etiqueta b11978): https://github.com/ggml-org/llama.cpp
-- Parche y notas de compilacion: `patches/gpt-oss-expert-pad-3072-b11978.patch` y `patches/BUILD.md` dentro del repositorio de HuggingFace
-- Plantilla de chat: `gpt-oss-harmony-cot-toolnames.jinja` dentro del repositorio de HuggingFace
+- Parche y notas de compilacion: `patches/gpt-oss-expert-pad-3072-b11978.patch` y `patches/BUILD.md` dentro del repositorio de Hugging Face
+- Plantilla de chat: `gpt-oss-harmony-cot-toolnames.jinja` dentro del repositorio de Hugging Face

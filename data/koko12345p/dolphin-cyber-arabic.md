@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Koko12345p/dolphin-cyber-arabic` es un ajuste fino (fine-tune) supervisado del modelo `cognitivecomputations/Dolphin3.0-Qwen2.5-1.5B`, que a su vez deriva de la familia Qwen2.5 en su variante de 1,5 mil millones de parametros. Lo publica el usuario Koko12345p en HuggingFace y esta entrenado con la libreria TRL (version 1.13.0) mediante SFT (supervised fine-tuning). El repositorio se creo el 19 de septiembre de 2026 y ocupa 0,3 GB.
+`Koko12345p/dolphin-cyber-arabic` es un ajuste fino (fine-tune) supervisado del modelo `cognitivecomputations/Dolphin3.0-Qwen2.5-1.5B`, que a su vez deriva de la familia Qwen2.5 en su variante de 1,5 mil millones de parametros. Lo publica el usuario Koko12345p en Hugging Face y esta entrenado con la libreria TRL (version 1.13.0) mediante SFT (supervised fine-tuning). El repositorio se creo el 19 de septiembre de 2026 y ocupa 0,3 GB.
 
 El problema que pretende resolver no esta documentado: el nombre sugiere un enfoque hacia ciberseguridad y arabe, pero la model card no describe el dataset, el idioma objetivo ni el proposito del ajuste. No se declaran licencia, idiomas soportados, pipeline ni resultados de evaluacion.
 
@@ -90,13 +90,13 @@ Los valores de los modelos de referencia proceden de su documentacion publica y 
 - Ambiguedad de idioma: el nombre sugiere arabe, pero no hay confirmacion. El rendimiento real en arabe, castellano u otros idiomas es desconocido y probablemente inferior al del modelo base en tareas multilingues.
 - Sin modo de razonamiento explicito: no se documenta thinking mode, por lo que en tareas de razonamiento multi-paso la calidad sera limitada incluso comparada con modelos del mismo tamano.
 - Inconsistencia en el tamano del repositorio: 0,3 GB es un valor bajo para 1,5 B de parametros en BF16 (que ocuparian aproximadamente 3,1 GB). Conviene verificar que el repositorio contiene el conjunto completo de shards antes de descargarlo o desplegarlo.
-- Fechas de publicacion en el futuro (2026) en los metadatos de HuggingFace: conviene comprobar la integridad y procedencia del repositorio.
+- Fechas de publicacion en el futuro (2026) en los metadatos de Hugging Face: conviene comprobar la integridad y procedencia del repositorio.
 - Reputacion del autor: cero descargas y cero "likes" implican que el modelo no ha sido revisado por la comunidad.
 - No apto para decisiones automatizadas de alto riesgo (medicas, legales, financieras o de seguridad) sin supervision humana y validacion exhaustiva.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Koko12345p/dolphin-cyber-arabic
+- Modelo en Hugging Face: https://huggingface.co/Koko12345p/dolphin-cyber-arabic
 - Modelo base: https://huggingface.co/cognitivecomputations/Dolphin3.0-Qwen2.5-1.5B
 - Repositorio de TRL: https://github.com/huggingface/trl
 

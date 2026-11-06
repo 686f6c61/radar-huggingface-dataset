@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ntdtwh/test` es un repositorio alojado en HuggingFace por el usuario `ntdtwh`. Por la informacion disponible, se trata de un artefacto sin model card sustantiva: el README se limita a declarar la licencia BSD-2-Clause, sin descripcion del modelo, arquitectura, datos de entrenamiento ni uso previsto. No consta pipeline declarado, ni idiomas soportados, ni etiquetas que indiquen la tarea o familia del modelo.
+`ntdtwh/test` es un repositorio alojado en Hugging Face por el usuario `ntdtwh`. Por la informacion disponible, se trata de un artefacto sin model card sustantiva: el README se limita a declarar la licencia BSD-2-Clause, sin descripcion del modelo, arquitectura, datos de entrenamiento ni uso previsto. No consta pipeline declarado, ni idiomas soportados, ni etiquetas que indiquen la tarea o familia del modelo.
 
 El repositorio acumula 0 descargas y 0 likes en el momento de la consulta, y fue creado y actualizado en la misma marca temporal (2026-10-28T13:22:38Z), lo que es consistente con un repositorio de prueba o un volcado inicial sin desarrollo posterior. El identificador "test" refuerza la hipotesis de que no se trata de un modelo destinado a produccion ni a evaluacion comparativa.
 
@@ -34,13 +34,13 @@ Respecto al entrenamiento, no consta el volumen de tokens utilizados, la composi
 - No consta soporte de agentes ni de razonamiento multi-paso.
 - No se especifican capacidades multilingues ni idiomas cubiertos.
 - No se declaran capacidades especiales como modo de razonamiento extendido (thinking), vision o audio.
-- El pipeline no esta declarado en HuggingFace, por lo que no se puede confirmar la tarea principal del artefacto.
+- El pipeline no esta declarado en Hugging Face, por lo que no se puede confirmar la tarea principal del artefacto.
 
 ## Casos de uso
 
 - Evaluacion de infraestructura de despliegue: el repositorio puede emplearse como artefacto de prueba para validar pipelines internos de descarga, versionado y servido de pesos, dado su caracter de repositorio de test.
 - Verificacion de flujos de licenciamiento: al declarar BSD-2-Clause, permite comprobar el correcto parseo y propagacion de metadatos de licencia en herramientas de cumplimiento interno.
-- Pruebas de integracion con la API de HuggingFace: util para validar clientes que consultan metadatos de repositorio (tags, licencia, timestamps) sin depender de un modelo real.
+- Pruebas de integracion con la API de Hugging Face: util para validar clientes que consultan metadatos de repositorio (tags, licencia, timestamps) sin depender de un modelo real.
 - Validacion de plantillas de model card: sirve como caso limite de documentacion minima para probar linters o generadores automaticos de fichas tecnicas.
 - Entrenamiento de clasificadores de calidad de repositorios: puede actuar como ejemplo negativo en conjuntos de datos que distingan model cards completas de meras declaraciones de licencia.
 - Simulacion de repositorios vacios en pruebas de regresion: adecuado para comprobar el comportamiento de sistemas de catalogacion ante artefactos sin pipeline ni idiomas declarados.
@@ -73,5 +73,5 @@ No disponible. La ausencia de datos sobre arquitectura, parametros, contexto y t
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ntdtwh/test
+- Repositorio en Hugging Face: https://huggingface.co/ntdtwh/test
 - No se han encontrado otros enlaces (papers, blogs, repositorios de codigo o demos) en la informacion disponible.

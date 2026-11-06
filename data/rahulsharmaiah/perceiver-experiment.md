@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Perceiver for Retrieval (identificador `rahulsharmaiah/perceiver-experiment`) es un prototipo de investigacion publicado por el usuario rahulsharmaiah en HuggingFace. Se trata de una implementacion propia de una arquitectura Perceiver orientada a tareas de recuperacion (retrieval), es decir, a mapear consultas y candidatos a un espacio latente comun para ordenar resultados por relevancia. El repositorio se presenta explicitamente como un punto de partida experimental, no como un modelo entrenado ni evaluado.
+Perceiver for Retrieval (identificador `rahulsharmaiah/perceiver-experiment`) es un prototipo de investigacion publicado por el usuario rahulsharmaiah en Hugging Face. Se trata de una implementacion propia de una arquitectura Perceiver orientada a tareas de recuperacion (retrieval), es decir, a mapear consultas y candidatos a un espacio latente comun para ordenar resultados por relevancia. El repositorio se presenta explicitamente como un punto de partida experimental, no como un modelo entrenado ni evaluado.
 
 El modelo se distribuye con una configuracion etiquetada como "small" y un checkpoint de safetensors descrito por el autor como "initialization checkpoint" valido para smoke tests, no como un checkpoint entrenado. El recuento de parametros reportado en los metadatos de safetensors es de 33.088, coherente con un prototipo minimo de bajo coste computacional. La model card no reclama ninguna puntuacion de benchmark.
 
@@ -42,7 +42,7 @@ No se especifican el numero de tokens de entrenamiento, la composicion del datas
 - Investigacion en retrieval multimodal: emplear la arquitectura como base para experimentar con fusion por cross attention entre consultas textuales y candidatos visuales, siguiendo la recomendacion del autor de evaluar sobre Flickr30k.
 - Reproduccion de lineas base: servir como punto de partida reproducible para comparar variantes de atencion (ventana deslizante frente a atencion completa) bajo una misma exposicion de datos y presupuesto de ajuste.
 - Docencia y prototipado: por su tamano minimo (33.088 parametros) y licencia MIT, es adecuado para material didactico sobre arquitecturas Perceiver y atencion cruzada.
-- Desarrollo de adaptadores de carga: dado que es una implementacion personalizada, sirve para practicar la escritura de adaptadores que expongan el modelo a APIs genericas de HuggingFace.
+- Desarrollo de adaptadores de carga: dado que es una implementacion personalizada, sirve para practicar la escritura de adaptadores que expongan el modelo a APIs genericas de Hugging Face.
 - Experimentacion con recetas de optimizacion: el repositorio incluye una receta RMSprop con OneCycle que puede estudiarse o sustituirse en entornos controlados.
 
 ## Benchmarks y rendimiento
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rahulsharmaiah/perceiver-experiment | 33.088 | no disponible | no disponible (sin benchmark declarado) | MIT | HuggingFace |
+| rahulsharmaiah/perceiver-experiment | 33.088 | no disponible | no disponible (sin benchmark declarado) | MIT | Hugging Face |
 | Perceiver IO (DeepMind, referencia arquitectonica) | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Flamingo / modelos de retrieval multimodal | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -80,5 +80,5 @@ No se dispone de datos verificados de modelos comparables en la informacion prop
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rahulsharmaiah/perceiver-experiment
+- Hugging Face: https://huggingface.co/rahulsharmaiah/perceiver-experiment
 - Repositorio de datos de la busqueda web: los resultados devueltos no guardan relacion con el modelo (paginas de Facebook Marketplace), por lo que no se incluyen como enlaces relevantes.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`fallen-coco704-merged-t84t83-20261029` es un modelo de deteccion de objetos publicado por el usuario tatjr13 en HuggingFace. No es un modelo de lenguaje ni un transformer generativo: se trata de un grafo ONNX que fusiona dos detectores de personas caidas ("fallen person") entrenados por el propio autor, exportados previamente como grafos independientes y combinados en una unica sesion de inferencia. El modelo se distribuye como un "kit" plano de siete ficheros (pesos ONNX, script de servicio `miner.py`, configuracion, licencia y documentacion) con un total de 19.674.707 bytes, por debajo del limite de 30 MiB del repositorio.
+`fallen-coco704-merged-t84t83-20261029` es un modelo de deteccion de objetos publicado por el usuario tatjr13 en Hugging Face. No es un modelo de lenguaje ni un transformer generativo: se trata de un grafo ONNX que fusiona dos detectores de personas caidas ("fallen person") entrenados por el propio autor, exportados previamente como grafos independientes y combinados en una unica sesion de inferencia. El modelo se distribuye como un "kit" plano de siete ficheros (pesos ONNX, script de servicio `miner.py`, configuracion, licencia y documentacion) con un total de 19.674.707 bytes, por debajo del limite de 30 MiB del repositorio.
 
 La arquitectura subyacente no se declara explicitamente en la model card, pero la procedencia (notices de Ultralytics, salida densa con formato `cx, cy, w, h, confidence` y una sola clase) es compatible con una familia YOLO exportada a ONNX. La entrada es estatica y fija: `images [1,3,704,704]`. La salida son dos tensores densos independientes, `left_dense` y `right_dense`, cada uno de forma `[1,5,10164]`, correspondientes a las dos ramas (T84 y T83) que se combinan mediante una etapa de acuerdo fijo por IoU.
 
@@ -93,7 +93,7 @@ No se han publicado comparativas con modelos de referencia en la informacion dis
 
 | Modelo | Parametros | Contexto/entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fallen-coco704-merged-t84t83-20261029 | No disponible (19,58 MB de pesos) | Imagen fija 704x704 | fresh8 33/33, 0 FP (local no calibrado); p95 55,152 ms | AGPL-3.0-only | HuggingFace, 38 descargas |
+| fallen-coco704-merged-t84t83-20261029 | No disponible (19,58 MB de pesos) | Imagen fija 704x704 | fresh8 33/33, 0 FP (local no calibrado); p95 55,152 ms | AGPL-3.0-only | Hugging Face, 38 descargas |
 | Linea base de un solo modelo del autor | No disponible | Imagen fija 704x704 | fresh8 33/33, 0 FP (local no calibrado) | No disponible | No distribuida en este repo |
 | Otros detectores de personas caidas | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -112,5 +112,5 @@ No se han publicado comparativas con modelos de referencia en la informacion dis
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tatjr13/fallen-coco704-merged-t84t83-20261029
+- Hugging Face: https://huggingface.co/tatjr13/fallen-coco704-merged-t84t83-20261029
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion proporcionada.

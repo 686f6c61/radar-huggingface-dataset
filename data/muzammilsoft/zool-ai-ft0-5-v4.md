@@ -6,7 +6,7 @@ Zool-AI-ft0.5-v4 es un modelo de lenguaje de 0,6 mil millones de parámetros der
 
 La relevancia del proyecto es más experimental que práctica: se trata de un ejercicio de ajuste fino de un modelo pequeño sobre un corpus dialectal de elaboración manual (3166 ejemplos de entrenamiento y 150 de evaluación) y de su conversión a un formato de inferencia en el borde (TFLite con cuantización dynamic_int8). El autor documenta de forma explícita una evaluación interna de solo 3 aciertos sobre 20 preguntas y un defecto sistemático de generación de etiquetas de razonamiento vacías, lo que sitúa al modelo en una fase temprana de desarrollo.
 
-Un dato operativo importante: los pesos no están alojados en el repositorio de HuggingFace en el momento de la publicación. El autor indica que el archivo TFLite (615 MB) y el `tokenizer.json` se alojan temporalmente en Kaggle por un problema de red durante la subida, y que se trasladarán al repositorio más adelante. La ficha describe, por tanto, un modelo cuya disponibilidad efectiva depende de un espejo externo.
+Un dato operativo importante: los pesos no están alojados en el repositorio de Hugging Face en el momento de la publicación. El autor indica que el archivo TFLite (615 MB) y el `tokenizer.json` se alojan temporalmente en Kaggle por un problema de red durante la subida, y que se trasladarán al repositorio más adelante. La ficha describe, por tanto, un modelo cuya disponibilidad efectiva depende de un espejo externo.
 
 ## Especificaciones técnicas
 
@@ -82,13 +82,13 @@ La comparación cuantitativa con alternativas no está disponible: no existen be
 - Capacidad de razonamiento limitada por el tamaño (0,6B): temas especializados y razonamiento complejo quedan fuera de su alcance.
 - Cobertura lingüística restringida al árabe con foco en sudanés; no se documenta rendimiento en otros idiomas ni en árabe estándar formal más allá de los pares de traducción del corpus.
 - Ventana de contexto de 1024 tokens según el nombre del artefacto, insuficiente para conversaciones largas o documentos.
-- Pesos no alojados en HuggingFace en el momento de la publicación: la disponibilidad depende del espejo en Kaggle. Verificar integridad y procedencia antes de usarlos.
+- Pesos no alojados en Hugging Face en el momento de la publicación: la disponibilidad depende del espejo en Kaggle. Verificar integridad y procedencia antes de usarlos.
 - Licencia Apache 2.0 permite uso comercial, pero la calidad documentada desaconseja cualquier despliegue en producción sin una reevaluación exhaustiva.
 - La evaluación es interna, con muestra de 20 preguntas y sin comparación con estándares; no debe citarse como evidencia de rendimiento general.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/muzammilsoft/zool-ai-ft0.5-v4
+- Repositorio Hugging Face: https://huggingface.co/muzammilsoft/zool-ai-ft0.5-v4
 - Pesos TFLite y tokenizer en Kaggle: https://www.kaggle.com/datasets/khartoumghoul/zool-ai-ft0-5-v4-tflite
 - Modelo base Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Herramienta de conversión litert-torch: no disponible en la información proporcionada

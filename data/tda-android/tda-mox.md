@@ -4,7 +4,7 @@
 
 TDA-Mox no es un modelo de inteligencia artificial, sino una utilidad de terminal avanzada para Android. Segun la informacion disponible en el repositorio de GitHub del autor, se describe como "la primera terminal avanzada del mundo sin root con enlace nativo a Shizuku, compatible con Android 16". El autor, TDA-Android, se identifica como arquitecto de sistemas Android y desarrollador de utilidades de shell de bajo nivel y frameworks de ejecucion sin root.
 
-La pagina de HuggingFace correspondiente a este identificador no contiene datos de modelo: no hay arquitectura, parametros, pipeline, licencia ni idiomas declarados. El numero de descargas es cero y la fecha de creacion es agosto de 2026, lo que sugiere que se trata de un repositorio reciente o de un uso de la plataforma para alojar otro tipo de artefacto. En cualquier caso, no existe informacion tecnica que permita tratarlo como un modelo de IA generativa.
+La pagina de Hugging Face correspondiente a este identificador no contiene datos de modelo: no hay arquitectura, parametros, pipeline, licencia ni idiomas declarados. El numero de descargas es cero y la fecha de creacion es agosto de 2026, lo que sugiere que se trata de un repositorio reciente o de un uso de la plataforma para alojar otro tipo de artefacto. En cualquier caso, no existe informacion tecnica que permita tratarlo como un modelo de IA generativa.
 
 Dado que la ficha solicitada corresponde a un modelo de IA y este artefacto no lo es, a continuacion se presenta la estructura estandar con los datos disponibles y las advertencias correspondientes.
 
@@ -59,7 +59,7 @@ No disponible. No existen modelos de IA comparables porque TDA-Mox no es un mode
 ## Limitaciones y advertencias
 
 - No es un modelo de IA: cualquier uso que espere capacidades de generacion de texto, razonamiento o codigo fracasara, ya que se trata de una utilidad de terminal.
-- La pagina de HuggingFace no contiene informacion tecnica: no hay licencia, idiomas, pipeline ni pesos publicados, lo que impide cualquier evaluacion como modelo.
+- La pagina de Hugging Face no contiene informacion tecnica: no hay licencia, idiomas, pipeline ni pesos publicados, lo que impide cualquier evaluacion como modelo.
 - El numero de descargas es cero y el proyecto parece reciente (agosto de 2026), por lo que su estabilidad y soporte no estan probados.
 - El uso de Shizuku implica privilegios elevados: debe emplearse con precaucion, ya que comandos erroneos pueden afectar al sistema operativo del dispositivo.
 - No se ha publicado documentacion sobre seguridad, sesgos o alucinaciones, conceptos que no aplican a una herramienta de terminal pero que refuerzan que no debe tratarse como un modelo de IA.
@@ -67,6 +67,6 @@ No disponible. No existen modelos de IA comparables porque TDA-Mox no es un mode
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/TDA-Android/TDA-Mox
+- Repositorio de Hugging Face: https://huggingface.co/TDA-Android/TDA-Mox
 - Repositorio de GitHub: https://github.com/TDA-Android/TDA-Mox
 - Perfil de GitHub del autor: https://github.com/TDA-Android

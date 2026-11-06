@@ -82,7 +82,7 @@ La comparativa se basa en caracteristicas tecnicas, ya que no hay datos de rendi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AMAImedia/Qwen3-VL-2B-MAI-UI-NOESIS-NF4
+- Hugging Face: https://huggingface.co/AMAImedia/Qwen3-VL-2B-MAI-UI-NOESIS-NF4
 - Repositorio de archivos: https://huggingface.co/AMAImedia/Qwen3-VL-2B-MAI-UI-NOESIS-NF4/tree/main
 - GitHub de Qwen3-VL: https://github.com/QwenLM/Qwen3-VL
 - GitHub de MAI-UI (Tongyi): https://github.com/Tongyi-MAI/MAI-UI

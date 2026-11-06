@@ -56,9 +56,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| bantusagar/sagar-qwen2.5-7b-qlora-cv | 7B base + adaptador LoRA | no disponible | Apache 2.0 | HuggingFace |
-| Qwen/Qwen2.5-7B-Instruct | 7B | no disponible | Apache 2.0 | HuggingFace |
-| unsloth/Qwen2.5-7B-Instruct-bnb-4bit | 7B (cuantizado a 4-bit) | no disponible | Apache 2.0 | HuggingFace |
+| bantusagar/sagar-qwen2.5-7b-qlora-cv | 7B base + adaptador LoRA | no disponible | Apache 2.0 | Hugging Face |
+| Qwen/Qwen2.5-7B-Instruct | 7B | no disponible | Apache 2.0 | Hugging Face |
+| unsloth/Qwen2.5-7B-Instruct-bnb-4bit | 7B (cuantizado a 4-bit) | no disponible | Apache 2.0 | Hugging Face |
 
 No se dispone de información sobre otros adaptadores LoRA similares en la información proporcionada, por lo que la comparación se limita al modelo base y a su versión cuantizada.
 

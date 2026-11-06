@@ -104,7 +104,7 @@ Dory1.0-4B compite directamente con Qwen3.5-4B en la franja de 4B: con 4 bucles 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16
+- Modelo en Hugging Face: https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16
 - Licencia OpenMDW 1.1 (informacion): https://openmdw.ai/license/1-1/
 - Texto completo de la licencia OpenMDW 1.1: https://raw.githubusercontent.com/OpenMDW/OpenMDW/refs/heads/main/1.1/LICENSE.OpenMDW-1.1
 - Pagina de desarrolladores de NVIDIA Nemotron: https://developer.nvidia.com/nemotron

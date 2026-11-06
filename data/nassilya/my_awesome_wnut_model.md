@@ -103,7 +103,7 @@ La comparación numérica con otras alternativas no es posible con los datos dis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nassilya/my_awesome_wnut_model
+- Modelo en Hugging Face: https://huggingface.co/Nassilya/my_awesome_wnut_model
 - Modelo base citado en la model card: https://huggingface.co/camembert/camembert-base
 - Modelo base citado en las etiquetas del repositorio: https://huggingface.co/almanach/camembert-base-legacy
 - Artículo de CamemBERT (Martin et al., 2019): https://arxiv.org/abs/1911.03894

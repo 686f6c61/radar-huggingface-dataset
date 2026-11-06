@@ -109,7 +109,7 @@ No se han publicado en la informacion disponible resultados de HumanEval, GSM8K,
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este build (CYBERSECURITY NVFP4) | 119,6 B | No disponible | MMLU-logit 81,27%; TRUE_COMPLY 91,2-92,5% en HarmBench-320 | qwen-community-license-1.0 (license: other) | HuggingFace, safetensors, SGLang; 0 descargas |
+| Este build (CYBERSECURITY NVFP4) | 119,6 B | No disponible | MMLU-logit 81,27%; TRUE_COMPLY 91,2-92,5% en HarmBench-320 | qwen-community-license-1.0 (license: other) | Hugging Face, safetensors, SGLang; 0 descargas |
 | Qwen/Qwen3.8-Flash-Next (base, NVFP4) | No disponible | No disponible | MMLU-logit 82,11%; precision 96,7% en razonamiento duro | No disponible en la informacion proporcionada | Referenciado como base_model |
 | Otras alternativas de la misma categoria | No disponible | No disponible | No disponible | No disponible | No se proporciono informacion de otros modelos comparables |
 
@@ -131,7 +131,7 @@ La unica comparacion con datos es contra el propio modelo base, en el que se apo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ScottzillaSystems/Qwen3.8-Flash-Next-CYBERSECURITY-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/ScottzillaSystems/Qwen3.8-Flash-Next-CYBERSECURITY-NVFP4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Perfil del autor citado en la model card: https://huggingface.co/dealignai
 - Twitter del autor citado en la model card: https://twitter.com/dealignai

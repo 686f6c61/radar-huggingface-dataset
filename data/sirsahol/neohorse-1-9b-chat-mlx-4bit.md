@@ -88,7 +88,7 @@ No se dispone de información sobre modelos comparables de la misma categoría e
 
 ## Enlaces
 
-- Modelo HuggingFace: https://huggingface.co/SirSahOl/NeoHorse-1-9B-chat-mlx-4bit
+- Modelo Hugging Face: https://huggingface.co/SirSahOl/NeoHorse-1-9B-chat-mlx-4bit
 - Variante 8-bit: https://huggingface.co/SirSahOl/NeoHorse-1-9B-chat-mlx-8bit
 - Variante 16-bit: https://huggingface.co/SirSahOl/NeoHorse-1-9B-chat-mlx-16bit
 - Modelo base: https://huggingface.co/TokenRhythm/NeoHorse-1-9B

@@ -86,12 +86,12 @@ No se dispone de datos numéricos suficientes para establecer una comparación c
 - El comportamiento es "perpetuo": no incluye una condición de parada propia, de modo que la gestión de la finalización o la conmutación de política recae en el sistema que la ejecuta.
 - El normalizador está embebido en el ONNX, por lo que alterar el preprocesado externo (por ejemplo, normalizar las observaciones antes de alimentarlas) rompería el contrato de entrada.
 - No hay información sobre el robot objetivo más allá de la interfaz (61-D / 14 acciones / 50 Hz); el uso en hardware distinto al microduck no está soportado por la documentación.
-- La fecha de creación registrada en HuggingFace es el 13 de octubre de 2026, posterior a la fecha de consulta habitual de esta ficha; se trata de un dato anómalo de los metadatos que conviene verificar.
+- La fecha de creación registrada en Hugging Face es el 13 de octubre de 2026, posterior a la fecha de consulta habitual de esta ficha; se trata de un dato anómalo de los metadatos que conviene verificar.
 - No se documentan sesgos en el sentido de los modelos de lenguaje (no aplica), pero sí existe un sesgo de tarea evidente: el comportamiento está sobreajustado al objetivo de sprint.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/juicenv/microduck-sprint-es3
+- Modelo en Hugging Face: https://huggingface.co/juicenv/microduck-sprint-es3
 - Modelo base: https://huggingface.co/HannesVonEssen/microduck-running
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento por refuerzo: `pollen-robotics/microduck_rl` (rama `lean`, commit `5a3636302`)

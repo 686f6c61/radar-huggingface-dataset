@@ -2,11 +2,11 @@
 
 ## Resumen
 
-BAGALA es un modelo de lenguaje publicado en HuggingFace por el usuario VinayakOjha1111122222 bajo licencia Apache 2.0. Según los metadatos del repositorio, cuenta con 1.100.048.384 parámetros (~1,1B) almacenados en safetensors, aunque la model card del autor declara 1,3B. El repositorio ocupa 0,7 GB e incluye pesos en formato GGUF, además de estar etiquetado como `endpoints_compatible` y `conversational`.
+BAGALA es un modelo de lenguaje publicado en Hugging Face por el usuario VinayakOjha1111122222 bajo licencia Apache 2.0. Según los metadatos del repositorio, cuenta con 1.100.048.384 parámetros (~1,1B) almacenados en safetensors, aunque la model card del autor declara 1,3B. El repositorio ocupa 0,7 GB e incluye pesos en formato GGUF, además de estar etiquetado como `endpoints_compatible` y `conversational`.
 
 El modelo se presenta en su model card como una herramienta especializada en análisis de casos legales, con una ventana de contexto de 4096 tokens y un entrenamiento declarado sobre 2,7 TB de datasets jurídicos durante 14.000 horas de GPU. No se especifica la arquitectura, no se detalla la composición del dataset y no se aporta ningún paper, repositorio de código o evaluación reproducible que respalde estas cifras.
 
-La relevancia actual del modelo es, por tanto, limitada y debe evaluarse con cautela: el repositorio se creó y actualizó el mismo día (24 de octubre de 2026), registra 0 descargas y 0 likes en HuggingFace, y las estadísticas de uso que declara la model card (10.427 descargas, 2.300 usuarios, valoración 4,7/5 sobre 487 reseñas) contradicen frontalmente los metadatos de la plataforma. Se trata de un modelo pequeño, probablemente derivado o ajustado a partir de una base de ~1B parámetros, sin validación independiente conocida.
+La relevancia actual del modelo es, por tanto, limitada y debe evaluarse con cautela: el repositorio se creó y actualizó el mismo día (24 de octubre de 2026), registra 0 descargas y 0 likes en Hugging Face, y las estadísticas de uso que declara la model card (10.427 descargas, 2.300 usuarios, valoración 4,7/5 sobre 487 reseñas) contradicen frontalmente los metadatos de la plataforma. Se trata de un modelo pequeño, probablemente derivado o ajustado a partir de una base de ~1B parámetros, sin validación independiente conocida.
 
 ## Especificaciones técnicas
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks verificables en la información dis
 - VRAM estimada en Q4_K_M: ~0,7 GB de pesos (coincide con el tamaño del repositorio); ~1-1,5 GB con contexto completo.
 - GPU recomendadas: cualquier GPU con 4 GB o más. Cabe en RTX 3050/3060, RTX 4060, GTX 1650 4 GB, Tesla T4 y, por supuesto, A100/H100 con desaprovechamiento masivo de capacidad.
 - Inferencia en CPU: viable gracias a la cuantización GGUF; el autor declara 45 tokens/s sin especificar el procesador.
-- Opciones de despliegue: `transformers` (safetensors en FP16), llama.cpp y Ollama (GGUF), vLLM y TGI para la versión safetensors, y HuggingFace Inference Endpoints dado el tag `endpoints_compatible`.
+- Opciones de despliegue: `transformers` (safetensors en FP16), llama.cpp y Ollama (GGUF), vLLM y TGI para la versión safetensors, y Hugging Face Inference Endpoints dado el tag `endpoints_compatible`.
 - Latencia y throughput: no hay datos verificados más allá de la cifra declarada en CPU. En una RTX 4090 se esperaría un throughput muy alto para este tamaño, pero no se ha medido ni publicado.
 
 ## Comparativa con modelos similares
@@ -74,16 +74,16 @@ Los datos de los modelos alternativos provienen de sus model cards públicas y n
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Evaluación pública |
 |---|---|---|---|---|---|
-| BAGALA | ~1,1B (declara 1,3B) | 4096 | Apache 2.0 | HuggingFace, GGUF y safetensors | No verificable |
-| Llama 3.2 1B | ~1,24B | 128.000 | Llama 3.2 Community License | HuggingFace, GGUF, amplio ecosistema | Benchmarks publicados por Meta |
-| Qwen2.5-1.5B | ~1,54B | 32.768 | Apache 2.0 | HuggingFace, GGUF, ecosistema amplio | Benchmarks publicados por Alibaba |
-| SmolLM2-1.7B | ~1,71B | 8192 | Apache 2.0 | HuggingFace, GGUF | Benchmarks publicados por HuggingFace |
+| BAGALA | ~1,1B (declara 1,3B) | 4096 | Apache 2.0 | Hugging Face, GGUF y safetensors | No verificable |
+| Llama 3.2 1B | ~1,24B | 128.000 | Llama 3.2 Community License | Hugging Face, GGUF, amplio ecosistema | Benchmarks publicados por Meta |
+| Qwen2.5-1.5B | ~1,54B | 32.768 | Apache 2.0 | Hugging Face, GGUF, ecosistema amplio | Benchmarks publicados por Alibaba |
+| SmolLM2-1.7B | ~1,71B | 8192 | Apache 2.0 | Hugging Face, GGUF | Benchmarks publicados por Hugging Face |
 
 Frente a estas alternativas, BAGALA no aporta ventajas documentadas: su contexto es entre 2 y 31 veces menor, carece de evaluaciones públicas y no cuenta con comunidad ni soporte de herramientas de terceros.
 
 ## Limitaciones y advertencias
 
-- Discrepancia grave entre la model card y los metadatos de la plataforma: el autor declara 10.427 descargas, 2.300 usuarios y 4,7/5 sobre 487 reseñas, mientras HuggingFace registra 0 descargas y 0 likes.
+- Discrepancia grave entre la model card y los metadatos de la plataforma: el autor declara 10.427 descargas, 2.300 usuarios y 4,7/5 sobre 487 reseñas, mientras Hugging Face registra 0 descargas y 0 likes.
 - El repositorio se creó y actualizó el mismo día, sin historial de versiones ni mantenimiento posterior.
 - El ejemplo de código de la model card utiliza la ruta `"yourusername/BAGALA"`, lo que indica que es una plantilla no adaptada al repositorio real.
 - Ausencia total de información sobre arquitectura, tokenizador y proceso de entrenamiento: imposible auditar el modelo.
@@ -97,7 +97,7 @@ Frente a estas alternativas, BAGALA no aporta ventajas documentadas: su contexto
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VinayakOjha1111122222/BAGALA
+- Modelo en Hugging Face: https://huggingface.co/VinayakOjha1111122222/BAGALA
 - Paper o informe técnico: no disponible
 - Repositorio de código: no disponible
 - Blog o anuncio del autor: no disponible

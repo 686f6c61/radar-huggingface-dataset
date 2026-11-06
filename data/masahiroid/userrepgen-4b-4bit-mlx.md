@@ -68,8 +68,8 @@ El artículo de explainx.ai menciona puntuaciones de fidelidad y un titular que 
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Formato y disponibilidad |
 |---|---|---|---|---|---|
-| UserRepGen-4B-4bit-mlx | 4.205.751.296 según safetensors; la model card indica 4,54B | no disponible | no disponible | MIT | 4-bit MLX, safetensors, 2,4 GB; disponible en HuggingFace |
-| microsoft/UserRepGen-4B | 4,54B según la model card de la conversión; no hay recuento independiente | no disponible | no disponible | MIT | Pesos originales; formato no disponible; disponible en HuggingFace |
+| UserRepGen-4B-4bit-mlx | 4.205.751.296 según safetensors; la model card indica 4,54B | no disponible | no disponible | MIT | 4-bit MLX, safetensors, 2,4 GB; disponible en Hugging Face |
+| microsoft/UserRepGen-4B | 4,54B según la model card de la conversión; no hay recuento independiente | no disponible | no disponible | MIT | Pesos originales; formato no disponible; disponible en Hugging Face |
 | Qwen3.5-4B | 4B aproximados por el nombre; recuento exacto no disponible | no disponible | no disponible | no disponible | Modelo base del ajuste fino según la búsqueda; disponibilidad no verificada en la información |
 
 No se han identificado en la información disponible otras alternativas específicas de generación de descripciones de usuario además del modelo base. La comparación de rendimiento no es posible porque no hay resultados de benchmarks publicados para ninguno de los modelos en los datos proporcionados.
@@ -91,7 +91,7 @@ No se han identificado en la información disponible otras alternativas específ
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/masahiroid/UserRepGen-4B-4bit-mlx)
+- [Hugging Face del modelo](https://huggingface.co/masahiroid/UserRepGen-4B-4bit-mlx)
 - [Modelo base microsoft/UserRepGen-4B](https://huggingface.co/microsoft/UserRepGen-4B)
 - [MLX](https://github.com/ml-explore/mlx)
 - [model-audit-lite](https://github.com/masahiroid/model-audit-lite)

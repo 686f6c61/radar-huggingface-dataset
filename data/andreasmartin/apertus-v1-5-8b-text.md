@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `andreasmartin/apertus-v1.5-8b-text` es un ajuste fino (fine-tuning) del modelo base `swiss-ai/Apertus-v1.5-8B`, desarrollado por el usuario andreasmartin. Se trata de un modelo de generación de texto con 8.054.976.576 parámetros (aproximadamente 8 mil millones), orientado a tareas de conversación, razonamiento y tool calling, según las etiquetas asociadas. El repositorio está marcado como de acceso restringido (gated), por lo que los usuarios deben aceptar condiciones en HuggingFace antes de poder descargarlo.
+El modelo `andreasmartin/apertus-v1.5-8b-text` es un ajuste fino (fine-tuning) del modelo base `swiss-ai/Apertus-v1.5-8B`, desarrollado por el usuario andreasmartin. Se trata de un modelo de generación de texto con 8.054.976.576 parámetros (aproximadamente 8 mil millones), orientado a tareas de conversación, razonamiento y tool calling, según las etiquetas asociadas. El repositorio está marcado como de acceso restringido (gated), por lo que los usuarios deben aceptar condiciones en Hugging Face antes de poder descargarlo.
 
 La relevancia de este modelo radica en que parte de un modelo base suizo (Apertus) y lo adapta para un uso más específico, aunque no se proporcionan detalles sobre el proceso de ajuste ni sobre las capacidades exactas. Al ser un modelo de 8B, se sitúa en un rango de tamaño que permite su ejecución en GPUs de consumo con cuantización, aunque no se especifican los formatos de pesos disponibles más allá de safetensors.
 
@@ -64,7 +64,7 @@ No se dispone de datos comparativos con otros modelos. Al ser un fine-tuning de 
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar condiciones en HuggingFace, lo que puede limitar su uso en entornos automatizados.
+- Acceso restringido: el modelo requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso en entornos automatizados.
 - Información técnica incompleta: no se especifican arquitectura, contexto, idiomas ni proceso de entrenamiento, lo que dificulta evaluar su idoneidad para casos de uso concretos.
 - Riesgo de alucinación: como cualquier modelo de lenguaje, puede generar información falsa o inventada, especialmente en dominios especializados.
 - Sesgos potenciales: al ser un fine-tuning de un modelo base, puede heredar sesgos presentes en los datos de entrenamiento originales, aunque no se han documentado.
@@ -73,5 +73,5 @@ No se dispone de datos comparativos con otros modelos. Al ser un fine-tuning de 
 
 ## Enlaces
 
-- Repositorio HuggingFace: [andreasmartin/apertus-v1.5-8b-text](https://huggingface.co/andreasmartin/apertus-v1.5-8b-text)
+- Repositorio Hugging Face: [andreasmartin/apertus-v1.5-8b-text](https://huggingface.co/andreasmartin/apertus-v1.5-8b-text)
 - Modelo base: [swiss-ai/Apertus-v1.5-8B](https://huggingface.co/swiss-ai/Apertus-v1.5-8B) (enlace inferido, no verificado)

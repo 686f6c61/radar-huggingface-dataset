@@ -90,5 +90,5 @@ El propio repositorio contiene cuatro variantes que funcionan como alternativas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jfan/gemma-4-31b-web-mtp-vision-litert-lm
+- Modelo en Hugging Face: https://huggingface.co/jfan/gemma-4-31b-web-mtp-vision-litert-lm
 - Paper, blog oficial, repositorio de codigo o demo: no disponible en la informacion proporcionada.

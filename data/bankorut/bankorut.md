@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `bankorut/bankorut` alojado en HuggingFace no contiene información técnica sustancial. La única metadata disponible es la licencia MIT y la región de origen (Estados Unidos). No se ha publicado una model card, ni especificaciones de arquitectura, parámetros, contexto, idiomas o capacidades. El repositorio fue creado el 16 de agosto de 2026 y no registra descargas ni interacciones.
+El repositorio `bankorut/bankorut` alojado en Hugging Face no contiene información técnica sustancial. La única metadata disponible es la licencia MIT y la región de origen (Estados Unidos). No se ha publicado una model card, ni especificaciones de arquitectura, parámetros, contexto, idiomas o capacidades. El repositorio fue creado el 16 de agosto de 2026 y no registra descargas ni interacciones.
 
 Dado que no existe documentación del autor ni archivos de modelo visibles en la información proporcionada, no es posible determinar qué tipo de modelo es, su tamaño, su entrenamiento o sus aplicaciones. Se trata, en el mejor de los casos, de un repositorio en fase inicial o de un placeholder sin contenido técnico verificable. Cualquier uso en producción sería prematuro y arriesgado sin datos adicionales.
 
@@ -54,4 +54,4 @@ No disponible. Al no existir especificaciones técnicas, no es posible comparar 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bankorut/bankorut
+- Repositorio en Hugging Face: https://huggingface.co/bankorut/bankorut

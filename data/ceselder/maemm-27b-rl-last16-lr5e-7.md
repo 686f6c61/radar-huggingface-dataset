@@ -95,9 +95,9 @@ Lectura de los datos: la fidelidad media (`mean_all`) satura alrededor de 0,600 
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento (mean_all) | Disponibilidad |
 |---|---|---|---|---|---|
-| ceselder/maemm-27b-rl-last16-lr5e-7 (este modelo) | 27,8 B | No disponible | Apache 2.0 | 0,600 (scorer centrado, paso 300) | Publicado en HuggingFace, 0 descargas |
+| ceselder/maemm-27b-rl-last16-lr5e-7 (este modelo) | 27,8 B | No disponible | Apache 2.0 | 0,600 (scorer centrado, paso 300) | Publicado en Hugging Face, 0 descargas |
 | Brazo hermano 8x2048, lr 1e-6, recompensa span completo | 27,8 B (mismo base) | No disponible | No disponible en la informacion proporcionada | 0,595 | Mencionado en la model card, publicacion no confirmada |
-| Qwen/Qwen3.6-27B (modelo base) | ~27 B | No disponible | No disponible | No aplica (no entrenado para inversion de activaciones) | Publicado en HuggingFace |
+| Qwen/Qwen3.6-27B (modelo base) | ~27 B | No disponible | No disponible | No aplica (no entrenado para inversion de activaciones) | Publicado en Hugging Face |
 | Otros inverters de activacion a texto | No disponible | No disponible | No disponible | No disponible | No se han encontrado alternativas publicadas en la informacion disponible |
 
 La búsqueda web realizada no devolvió resultados relacionados con el modelo ni con modelos comparables de la misma categoría (interpretabilidad o inversión de activaciones), por lo que la comparativa se limita al modelo base y al brazo alternativo de la misma cadena experimental.
@@ -119,7 +119,7 @@ La búsqueda web realizada no devolvió resultados relacionados con el modelo ni
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ceselder/maemm-27b-rl-last16-lr5e-7
+- Modelo en Hugging Face: https://huggingface.co/ceselder/maemm-27b-rl-last16-lr5e-7
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B
 - Repositorio MAEMM (hook de inyección, `mxf/inject.py`): mencionado en la model card, URL no disponible en la información proporcionada
 - Paper o blog del método MAEMM: no disponible en la información proporcionada

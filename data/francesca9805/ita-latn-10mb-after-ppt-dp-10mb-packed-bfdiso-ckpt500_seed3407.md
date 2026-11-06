@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un ajuste fino supervisado (SFT) del checkpoint `francesca9805/ita-latn-10mb-ppt-Dp-10mb-packed-bfdiso_seed3407`, publicado por la usuaria de HuggingFace `francesca9805` (los registros de la busqueda web apuntan a Francesca Padovani, Universidad de Groningen). No es un modelo de proposito general ni un lanzamiento de producto: es un artefacto de investigacion de 39.087.104 parametros (aproximadamente 39M) con arquitectura GPT-2, derivado de un entrenamiento sobre un corpus empaquetado de unos 10 MB denominado `ita-latn` (italiano, alfabeto latino, segun la nomenclatura). El nombre del repositorio indica que corresponde al checkpoint del paso 500 (`ckpt500`) de una ejecucion con semilla fija (`seed3407`).
+Este modelo es un ajuste fino supervisado (SFT) del checkpoint `francesca9805/ita-latn-10mb-ppt-Dp-10mb-packed-bfdiso_seed3407`, publicado por la usuaria de Hugging Face `francesca9805` (los registros de la busqueda web apuntan a Francesca Padovani, Universidad de Groningen). No es un modelo de proposito general ni un lanzamiento de producto: es un artefacto de investigacion de 39.087.104 parametros (aproximadamente 39M) con arquitectura GPT-2, derivado de un entrenamiento sobre un corpus empaquetado de unos 10 MB denominado `ita-latn` (italiano, alfabeto latino, segun la nomenclatura). El nombre del repositorio indica que corresponde al checkpoint del paso 500 (`ckpt500`) de una ejecucion con semilla fija (`seed3407`).
 
 Su relevancia es experimental: sirve para estudiar el efecto de la tokenizacion, el empaquetado de secuencias (`packed`) y el ajuste fino SFT sobre modelos muy pequenos y corpus muy reducidos. El sufijo `after-ppt` sugiere que este checkpoint se ha reentrenado despues de alguna fase previa (posiblemente relacionada con el tokenizador o con un preentrenamiento parcial), pero la model card no lo documenta. No se declaran idiomas soportados, licencia ni resultados de evaluacion.
 
@@ -12,7 +12,7 @@ Por su tamano y su naturaleza, encaja en escenarios de investigacion, docencia y
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-2 (transformer decoder-only, segun la etiqueta `gpt2` de HuggingFace) |
+| Arquitectura | GPT-2 (transformer decoder-only, segun la etiqueta `gpt2` de Hugging Face) |
 | Parametros totales | 39.087.104 (39M) |
 | Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible (no se declara en la model card; GPT-2 suele usar 1024 tokens, sin confirmar) |
@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| francesca9805/ita-latn-10mb-after-ppt-...-ckpt500_seed3407 (este modelo) | 39M | no disponible | no disponible | no disponible | Pesos abiertos en HuggingFace |
-| francesca9805/isl-latn-10mb-after-ppt-...-ckpt500_seed10 | 39M (estimado por el patron de la familia) | no disponible | no disponible | no disponible | Pesos abiertos en HuggingFace |
-| fpadovani/eng-latn-10mb-after-ppt-...-ckpt500_seed3407 | 39M | no disponible | no disponible | no disponible | Pesos abiertos en HuggingFace |
+| francesca9805/ita-latn-10mb-after-ppt-...-ckpt500_seed3407 (este modelo) | 39M | no disponible | no disponible | no disponible | Pesos abiertos en Hugging Face |
+| francesca9805/isl-latn-10mb-after-ppt-...-ckpt500_seed10 | 39M (estimado por el patron de la familia) | no disponible | no disponible | no disponible | Pesos abiertos en Hugging Face |
+| fpadovani/eng-latn-10mb-after-ppt-...-ckpt500_seed3407 | 39M | no disponible | no disponible | no disponible | Pesos abiertos en Hugging Face |
 | distilgpt2 (referencia externa) | 82M | 1024 tokens | Metricas publicas en la model card de OpenAI/HuggingFace | Apache 2.0 | Pesos abiertos |
 
 La comparacion mas significativa es con los modelos hermanos del mismo proyecto (`isl-latn` para islandes y `eng-latn` para ingles), que comparten arquitectura, presupuesto de datos y esquema de entrenamiento, y por tanto permiten aislar el efecto del idioma y del tokenizador. La comparacion con `distilgpt2` es solo orientativa en cuanto a orden de magnitud de parametros: no existen datos de rendimiento de este modelo que permitan una comparacion cuantitativa.
@@ -90,7 +90,7 @@ La comparacion mas significativa es con los modelos hermanos del mismo proyecto 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/ita-latn-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/ita-latn-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed3407
 - Modelo base: https://huggingface.co/francesca9805/ita-latn-10mb-ppt-Dp-10mb-packed-bfdiso_seed3407
 - Modelo hermano (islandes): https://huggingface.co/francesca9805/isl-latn-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed10
 - Variante `bfd` en italiano: https://huggingface.co/francesca9805/ita-latn-10mb-ppt-Dp-10mb-packed-bfd_seed3407

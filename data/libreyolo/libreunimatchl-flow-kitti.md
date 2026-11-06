@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tarea | Arquitectura | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LibreUniMatchl-flow-kitti | Flujo óptico | GMFlow+ scale2, 6 refinamientos | no aplica | MIT | HuggingFace (LibreYOLO) |
+| LibreUniMatchl-flow-kitti | Flujo óptico | GMFlow+ scale2, 6 refinamientos | no aplica | MIT | Hugging Face (LibreYOLO) |
 | UniMatch (original) | Flujo óptico, estéreo, profundidad | UniMatch | no aplica | MIT (código) | GitHub autonomousvision |
 | GMFlow | Flujo óptico | GMFlow | no aplica | no disponible | GitHub |
 | RAFT | Flujo óptico | RAFT | no aplica | no disponible | GitHub |
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LibreYOLO/LibreUniMatchl-flow-kitti
+- Hugging Face: https://huggingface.co/LibreYOLO/LibreUniMatchl-flow-kitti
 - Repositorio LibreYOLO: https://github.com/LibreYOLO/libreyolo
 - Repositorio UniMatch: https://github.com/autonomousvision/unimatch
 - Checkpoint original: https://s3.eu-central-1.amazonaws.com/avg-projects/unimatch/pretrained/gmflow-scale2-regrefine6-kitti15-25b554d7.pth

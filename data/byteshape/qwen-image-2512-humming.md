@@ -94,10 +94,10 @@ La principal ventaja de este modelo frente a la versión BF16 es la reducción d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/byteshape/Qwen-Image-2512-Humming
+- Repositorio Hugging Face: https://huggingface.co/byteshape/Qwen-Image-2512-Humming
 - Blog de ByteShape con documentación completa y workflow de ComfyUI: https://byteshape.com/blogs/Qwen-Image-2512/
 - Comparador interactivo de variantes (24 prompts, A/B con slider): https://byteshape.com/blogs/Qwen-Image-2512/comparison/
 - Repositorio GGUF del mismo modelo: https://huggingface.co/byteshape/Qwen-Image-2512-GGUF
 - Repositorio vLLM-Omni: https://github.com/vllm-project/vllm-omni
-- Modelo base Qwen-Image-2512 en HuggingFace: https://huggingface.co/Qwen/Qwen-Image-2512
+- Modelo base Qwen-Image-2512 en Hugging Face: https://huggingface.co/Qwen/Qwen-Image-2512
 - Modelo base Qwen-Image-2512 en ModelScope: https://www.modelscope.cn/models/Qwen/Qwen-Image-2512

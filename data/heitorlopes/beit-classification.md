@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Heitorlopes/beit-classification es un repositorio de HuggingFace que contiene una implementacion propia y compacta de una arquitectura BEiT (Bidirectional Encoder representation from Image Transformers) orientada a tareas de clasificacion, escrita en PyTorch. Segun la propia model card, la configuracion incluida corresponde a una escala declarada "base" y esta pensada para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de laboratorio, no como una version preentrenada lista para produccion.
+Heitorlopes/beit-classification es un repositorio de Hugging Face que contiene una implementacion propia y compacta de una arquitectura BEiT (Bidirectional Encoder representation from Image Transformers) orientada a tareas de clasificacion, escrita en PyTorch. Segun la propia model card, la configuracion incluida corresponde a una escala declarada "base" y esta pensada para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de laboratorio, no como una version preentrenada lista para produccion.
 
 El dato mas relevante es su tamano real: el archivo `model.safetensors` contiene 16.576 parametros, una cifra tres ordenes de magnitud por debajo de los aproximadamente 86 millones de parametros de una BEiT-base convencional. Es decir, se trata de un andamiaje de inicializacion (initialization checkpoint) sin entrenar, con la arquitectura definida en `config.json` y una receta de experimento por defecto en `training_args.json`, pero sin pesos funcionales ni resultados de evaluacion asociados.
 
@@ -25,7 +25,7 @@ Su relevancia actual es, por tanto, acotada y de caracter instrumental: sirve co
 | Activacion | GELU |
 | Optimizador por defecto (receta incluida) | SGD con scheduler exponencial |
 | Tamano del repositorio | 0,0 GB |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 | Fecha de publicacion declarada | 2026-09-14 |
 | Archivos incluidos | `finetune.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors` |
 
@@ -75,7 +75,7 @@ La comparacion directa no es significativa: este repositorio contiene un andamia
 
 | Modelo | Parametros | Contexto | Estado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Heitorlopes/beit-classification | 16.576 | no disponible | Checkpoint de inicializacion, sin entrenar | BSD-3-Clause | HuggingFace, 0 descargas |
+| Heitorlopes/beit-classification | 16.576 | no disponible | Checkpoint de inicializacion, sin entrenar | BSD-3-Clause | Hugging Face, 0 descargas |
 | BEiT-base (Microsoft, referencia publica) | ~86 M (cifra de referencia del paper original, no verificada en esta ficha) | no disponible en la informacion proporcionada | Preentrenado, con resultados publicados | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
 | ViT-base (referencia publica) | ~86 M (cifra de referencia, no verificada en esta ficha) | no disponible en la informacion proporcionada | Preentrenado, con resultados publicados | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
 | DeiT-base (referencia publica) | ~86 M (cifra de referencia, no verificada en esta ficha) | no disponible en la informacion proporcionada | Preentrenado, con resultados publicados | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
@@ -97,7 +97,7 @@ Diferencias clave frente a esas alternativas: escala (factor de aproximadamente 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Heitorlopes/beit-classification
+- Modelo en Hugging Face: https://huggingface.co/Heitorlopes/beit-classification
 - Script principal `finetune.py`: https://huggingface.co/Heitorlopes/beit-classification/blob/main/finetune.py
 - Configuracion de arquitectura `config.json`: https://huggingface.co/Heitorlopes/beit-classification/blob/main/config.json
 - Receta de experimento `training_args.json`: https://huggingface.co/Heitorlopes/beit-classification/blob/main/training_args.json

@@ -114,7 +114,7 @@ Comparación con modelos de propósito general del mismo tamano (~4B): no dispon
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/eduardoworrel/alias3-micro-1026-ONNX-genai
+- Repositorio Hugging Face: https://huggingface.co/eduardoworrel/alias3-micro-1026-ONNX-genai
 - Modelo base: https://huggingface.co/aliasrobotics/alias3-micro-1026
 - Paper del modelo (System 1 / System 2): https://arxiv.org/abs/2610.16550
 - Pointer networks (Vinyals et al., 2015): https://arxiv.org/abs/1506.03134

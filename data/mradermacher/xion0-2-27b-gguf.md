@@ -23,7 +23,7 @@ La relevancia de este modelo radica en su combinación de razonamiento, ausencia
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información detallada sobre la arquitectura interna del modelo base PIXELZX/XION0.2-27B. Los metadatos de HuggingFace incluyen la etiqueta "qwen3.8", lo que podría indicar una arquitectura derivada de la familia Qwen, pero no hay confirmación oficial. Tampoco se han publicado datos sobre el proceso de entrenamiento, el número de tokens utilizados, la composición del dataset ni si se aplicaron técnicas como RLHF o DPO.
+No se dispone de información detallada sobre la arquitectura interna del modelo base PIXELZX/XION0.2-27B. Los metadatos de Hugging Face incluyen la etiqueta "qwen3.8", lo que podría indicar una arquitectura derivada de la familia Qwen, pero no hay confirmación oficial. Tampoco se han publicado datos sobre el proceso de entrenamiento, el número de tokens utilizados, la composición del dataset ni si se aplicaron técnicas como RLHF o DPO.
 
 El modelo base está marcado como "abliterated", una técnica que consiste en eliminar o atenuar las capas responsables de los rechazos de seguridad, dando lugar a un comportamiento menos censurado. La cuantización realizada por mradermacher es estática (sin imatrix) y se ha generado a partir de los pesos en bf16 del modelo original. Se incluyen archivos mmproj (proyección multimodal) que sugieren la posibilidad de entrada de imágenes, aunque no se especifica su funcionamiento.
 
@@ -74,4 +74,4 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/XION0.2-27B-GGUF
 - Modelo base: https://huggingface.co/PIXELZX/XION0.2-27B
-- Página de mradermacher en HuggingFace: https://huggingface.co/mradermacher
+- Página de mradermacher en Hugging Face: https://huggingface.co/mradermacher

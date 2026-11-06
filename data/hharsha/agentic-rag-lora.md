@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
 | hharsha/agentic-rag-lora | 135M base + ~461k adaptador | no disponible | apache-2.0 | safetensors (adaptador PEFT) | Autoria individual; 0 descargas y 0 likes en el momento de la consulta |
-| HuggingFaceTB/SmolLM-135M (modelo base) | 135M | no disponible en la informacion proporcionada | apache-2.0 | safetensors | Publico en HuggingFace |
+| HuggingFaceTB/SmolLM-135M (modelo base) | 135M | no disponible en la informacion proporcionada | apache-2.0 | safetensors | Publico en Hugging Face |
 | Otros adaptadores LoRA de 135M | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 Los resultados de busqueda web consultados tratan sobre LoRA, RAG y RAG agentico como conceptos generales, pero no aportan benchmarks ni comparativas cuantitativas con modelos de la misma categoria, por lo que esos datos se consideran no disponibles.
@@ -87,7 +87,7 @@ Los resultados de busqueda web consultados tratan sobre LoRA, RAG y RAG agentico
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hharsha/agentic-rag-lora
+- Modelo en Hugging Face: https://huggingface.co/hharsha/agentic-rag-lora
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM-135M
 - Embeddings relacionados: https://huggingface.co/hharsha/agentic-systems-minilm
 - Generador de etiquetas relacionado: https://huggingface.co/hharsha/agentic-github-tagger

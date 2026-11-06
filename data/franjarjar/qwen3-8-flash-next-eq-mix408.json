@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "Franjarjar/Qwen3.8-Flash-Next-EQ-MIX408",
+  "slug": "franjarjar-qwen3-8-flash-next-eq-mix408",
+  "author": "Franjarjar",
+  "url": "https://huggingface.co/Franjarjar/Qwen3.8-Flash-Next-EQ-MIX408",
+  "created_at": "2026-11-05T23:22:29.000Z",
+  "updated_at": "2026-11-06T01:31:15.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen4_exp",
+    "espetero",
+    "eq",
+    "quantized",
+    "apple-silicon",
+    "metal",
+    "mixture-of-experts",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 72448433315,
+  "parameters_human": "72.45B",
+  "storage_bytes": 83998287336,
+  "storage_human": "84.0 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Franjarjar/Qwen3.8-Flash-Next-EQ-MIX408 · Hugging Face",
+      "url": "https://huggingface.co/Franjarjar/Qwen3.8-Flash-Next-EQ-MIX408",
+      "snippet": "Qwen/Qwen3.8-Flash-Next quantized to EQ mix408 for Espetero, a native Metal inference engine for Apple silicon. EQ (LaneQuant) is the quantization format native to Espetero. It stores 3-bit codebook codes, EQV vectors and 5-bit codes, with a signed 8-bit scale per 16 inputs and an fp16 scale per 256 ..."
+    },
+    {
+      "title": "Franjarjar/Qwen3.8-Flash-Next-EQ-FNX4H · Hugging Face",
+      "url": "https://huggingface.co/Franjarjar/Qwen3.8-Flash-Next-EQ-FNX4H",
+      "snippet": "Qwen/Qwen3.8-Flash-Next quantized to EQ fnx4h for Espetero, a native Metal inference engine for Apple silicon. EQ (LaneQuant) is the quantization format native to Espetero. It stores 4-bit codebook, 5-, 6- and 8-bit codes, with a signed 8-bit scale per 16 inputs and an fp16 scale per 256, the 16 ..."
+    }
+  ]
+}

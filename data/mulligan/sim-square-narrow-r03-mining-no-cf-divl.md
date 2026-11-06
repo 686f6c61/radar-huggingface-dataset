@@ -111,11 +111,11 @@ No se dispone de tablas comparativas con modelos de otras organizaciones para es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-narrow-r03-mining-no-cf-divl
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-narrow-r03-mining-no-cf-divl
 - Modelo padre (actor congelado, variante IDQL): https://huggingface.co/mulligan/sim-square-narrow-r03-mining-no-cf-idql
 - Proyecto Mulligan: https://mulligan.page
 - Policy Arena (evaluaciones): https://arena.mulligan.page
-- Organizacion en HuggingFace: https://huggingface.co/mulligan
+- Organizacion en Hugging Face: https://huggingface.co/mulligan
 - Dataset de teleoperacion inicial: https://huggingface.co/datasets/mulligan/sim-square-narrow-c00-teleop-sobol
 - Dataset de mineria DAgger c01: https://huggingface.co/datasets/mulligan/sim-square-narrow-c01-dagger-mining-no-cf
 - Rollouts de politica c01 (sobol): https://huggingface.co/datasets/mulligan/sim-square-narrow-c01-sobol-policy-rollouts

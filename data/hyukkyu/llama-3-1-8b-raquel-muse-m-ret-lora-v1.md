@@ -89,9 +89,9 @@ Notas metodológicas de la evaluación: MUSE-News no incluye preguntas parafrase
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos de ajuste |
 |---|---:|---|---|---|---|
-| Llama-3.1-8B-RAQUEL-MUSE-M-ret-LoRA-v1 | 8.030.261.248 | No disponible (entrenamiento a 2048 tokens) | llama3.1 | HuggingFace, 0 descargas y 0 likes en la informacion disponible | MUSE-News (retencion) + RAQUEL2-ICLR |
-| meta-llama/Llama-3.1-8B (base) | 8B aprox. | 128k tokens segun Meta (no confirmado en la informacion proporcionada) | llama3.1 | HuggingFace, modelo base oficial | Preentrenamiento general |
-| Hyukkyu/Llama-3.1-8B-RAQUEL-TOFU-M-ret-LoRA-v1 | No disponible | No disponible | No disponible en la informacion proporcionada | HuggingFace; tambien listado en friendli.ai | Baseline M_ret sobre TOFU en lugar de MUSE-News |
+| Llama-3.1-8B-RAQUEL-MUSE-M-ret-LoRA-v1 | 8.030.261.248 | No disponible (entrenamiento a 2048 tokens) | llama3.1 | Hugging Face, 0 descargas y 0 likes en la informacion disponible | MUSE-News (retencion) + RAQUEL2-ICLR |
+| meta-llama/Llama-3.1-8B (base) | 8B aprox. | 128k tokens segun Meta (no confirmado en la informacion proporcionada) | llama3.1 | Hugging Face, modelo base oficial | Preentrenamiento general |
+| Hyukkyu/Llama-3.1-8B-RAQUEL-TOFU-M-ret-LoRA-v1 | No disponible | No disponible | No disponible en la informacion proporcionada | Hugging Face; tambien listado en friendli.ai | Baseline M_ret sobre TOFU en lugar de MUSE-News |
 
 No se dispone de datos de benchmarks comparativos entre estos tres modelos en la información proporcionada, más allá de que el checkpoint TOFU comparte protocolo y autor con el modelo descrito.
 
@@ -111,7 +111,7 @@ No se dispone de datos de benchmarks comparativos entre estos tres modelos en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Hyukkyu/Llama-3.1-8B-RAQUEL-MUSE-M-ret-LoRA-v1
+- Modelo en Hugging Face: https://huggingface.co/Hyukkyu/Llama-3.1-8B-RAQUEL-MUSE-M-ret-LoRA-v1
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Variante TOFU del mismo autor: https://huggingface.co/Hyukkyu/Llama-3.1-8B-RAQUEL-TOFU-M-ret-LoRA-v1
 - Despliegue gestionado de la variante TOFU en FriendliAI: https://friendli.ai/models/Hyukkyu/Llama-3.1-8B-RAQUEL-TOFU-M-ret-LoRA-v1

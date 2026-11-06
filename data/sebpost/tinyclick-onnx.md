@@ -99,7 +99,7 @@ La comparativa se limita a los modelos directamente relacionados en la informaci
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sebpost/TinyClick-ONNX
+- Repositorio Hugging Face: https://huggingface.co/sebpost/TinyClick-ONNX
 - Modelo base (espejo): https://huggingface.co/Krystianz/TinyClick
 - Paper TinyClick (arXiv): https://arxiv.org/abs/2410.11871
 - Florence-2-base (Microsoft): https://huggingface.co/microsoft/Florence-2-base

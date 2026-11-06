@@ -72,7 +72,7 @@ No se conocen modelos comparables en el ecosistema SF, ya que `sf-map-ridge` es 
 
 ## Enlaces
 
-- [Repositorio HuggingFace: dlab-cmu/sf-map-ridge](https://huggingface.co/dlab-cmu/sf-map-ridge)
+- [Repositorio Hugging Face: dlab-cmu/sf-map-ridge](https://huggingface.co/dlab-cmu/sf-map-ridge)
 - [Catálogo de grids: dlab-cmu/sf-grids](https://huggingface.co/dlab-cmu/sf-grids)
 - [Sitio del grupo DLAB](https://denglab.org/)
 - [Noticia sobre IA y minerales críticos en CMU (contexto del grupo)](https://www.ri.cmu.edu/harnessing-ai-to-find-critical-minerals/)

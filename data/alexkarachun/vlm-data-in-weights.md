@@ -76,6 +76,6 @@ No hay modelos directamente comparables: vlm-data-in-weights no es un LLM ni un 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AlexKarachun/vlm-data-in-weights
+- Hugging Face: https://huggingface.co/AlexKarachun/vlm-data-in-weights
 - Decodificador VAE referenciado: https://huggingface.co/stabilityai/sd-vae-ft-mse
 - No se han encontrado enlaces relevantes (papers, blogs, repos o demos) en la busqueda web realizada; los unicos resultados obtenidos no guardan relacion con el modelo.

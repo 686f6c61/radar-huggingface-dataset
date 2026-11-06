@@ -2,11 +2,11 @@
 
 ## Resumen
 
-FireflyHonkaiStarRail_v1 es un adaptador de bajo rango (LoRA) publicado en HuggingFace por el usuario LarryAIDraw, orientado a la generacion de imagenes del personaje Firefly, perteneciente al videojuego Honkai: Star Rail. No se trata de un modelo de lenguaje ni de un modelo de difusion completo, sino de un ajuste fino de bajo rango que debe cargarse sobre un modelo base de texto-a-imagen que el autor no declara en la informacion disponible.
+FireflyHonkaiStarRail_v1 es un adaptador de bajo rango (LoRA) publicado en Hugging Face por el usuario LarryAIDraw, orientado a la generacion de imagenes del personaje Firefly, perteneciente al videojuego Honkai: Star Rail. No se trata de un modelo de lenguaje ni de un modelo de difusion completo, sino de un ajuste fino de bajo rango que debe cargarse sobre un modelo base de texto-a-imagen que el autor no declara en la informacion disponible.
 
 La informacion publica es minima: la model card unicamente contiene la linea de licencia, sin descripcion, sin palabras de activacion (trigger words), sin ejemplos de uso ni indicacion del modelo base o del rank del adaptador. El repositorio ocupa 0,2 GB, un tamano coherente con un unico archivo de pesos de adaptador, y registra 0 descargas y 0 likes desde su creacion el 27 de octubre de 2026, por lo que no existe validacion comunitaria alguna.
 
-Su relevancia es, por tanto, la de un ejemplo tipico del ecosistema de LoRAs de personaje que se distribuyen en HuggingFace y Civitai: adaptadores pequenos, baratos de entrenar y de ejecutar, que permiten incorporar un personaje concreto a un pipeline de generacion de imagenes existente. La licencia CreativeML OpenRAIL-M permite uso comercial con restricciones, pero el personaje esta protegido por derechos de propiedad intelectual de HoYoverse, lo que anade un caveat legal relevante.
+Su relevancia es, por tanto, la de un ejemplo tipico del ecosistema de LoRAs de personaje que se distribuyen en Hugging Face y Civitai: adaptadores pequenos, baratos de entrenar y de ejecutar, que permiten incorporar un personaje concreto a un pipeline de generacion de imagenes existente. La licencia CreativeML OpenRAIL-M permite uso comercial con restricciones, pero el personaje esta protegido por derechos de propiedad intelectual de HoYoverse, lo que anade un caveat legal relevante.
 
 ## Especificaciones tecnicas
 
@@ -76,9 +76,9 @@ Las cifras siguientes son estimaciones orientativas basadas en el patron habitua
 
 | Modelo | Base declarada | Palabras de activacion | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| LarryAIDraw/FireflyHonkaiStarRail_v1 | no disponible | no disponible | creativeml-openrail-m | HuggingFace, 0 descargas | Sin model card ni ejemplos |
-| LarryAIDraw/firefly | no disponible | no disponible | no disponible | HuggingFace | Otro adaptador del mismo personaje y autor |
-| LarryAIDraw/firefly_honkai_star_rail_v1_pdxl_goofy | no disponible (el sufijo sugiere PDXL) | no disponible | no disponible | HuggingFace | Variante del mismo personaje |
+| LarryAIDraw/FireflyHonkaiStarRail_v1 | no disponible | no disponible | creativeml-openrail-m | Hugging Face, 0 descargas | Sin model card ni ejemplos |
+| LarryAIDraw/firefly | no disponible | no disponible | no disponible | Hugging Face | Otro adaptador del mismo personaje y autor |
+| LarryAIDraw/firefly_honkai_star_rail_v1_pdxl_goofy | no disponible (el sufijo sugiere PDXL) | no disponible | no disponible | Hugging Face | Variante del mismo personaje |
 | firefly [honkai: star rail] V1 (Civitai, Illustrious LoRA) | Illustrious | hdfirefly y descriptores de vestuario | condiciones de Civitai | Civitai | Peso recomendado 0,8-1,0 |
 | firefly (honkai: star rail) v1.0 (Civitai, SDXL LoRA) | Animagine XL V3.0 | firefly \(honkai:star rail\) | condiciones de Civitai | Civitai | Documenta vestuario por defecto |
 

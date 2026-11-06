@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Axmc es un modelo publicado en HuggingFace por el usuario Axbi06 bajo licencia MIT. La model card asociada no contiene ninguna descripcion tecnica: se reduce a la declaracion de licencia, sin informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio no registra descargas ni interacciones en el momento de la consulta y no declara pipeline ni idiomas soportados.
+Axmc es un modelo publicado en Hugging Face por el usuario Axbi06 bajo licencia MIT. La model card asociada no contiene ninguna descripcion tecnica: se reduce a la declaracion de licencia, sin informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio no registra descargas ni interacciones en el momento de la consulta y no declara pipeline ni idiomas soportados.
 
 Por tanto, no es posible determinar que problema resuelve ni que tipo de modelo es (lenguaje, vision, audio u otro). La ausencia de pesos documentados, tokenizador, configuracion o ejemplos de uso impide evaluar su utilidad practica. Cualquier afirmacion sobre su rendimiento o idoneidad seria especulativa.
 
@@ -72,5 +72,5 @@ No disponible. Al no conocerse la categoria, el tamano ni las capacidades del mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Axbi06/Axmc
+- Hugging Face: https://huggingface.co/Axbi06/Axmc
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

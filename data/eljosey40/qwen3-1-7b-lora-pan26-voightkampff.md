@@ -63,6 +63,6 @@ No se dispone de datos comparativos. Podria compararse con otros adaptadores LoR
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/eljosey40/qwen3-1.7b-lora-pan26-voightkampff
+- Hugging Face: https://huggingface.co/eljosey40/qwen3-1.7b-lora-pan26-voightkampff
 - Perfil del autor: https://huggingface.co/eljosey40
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B

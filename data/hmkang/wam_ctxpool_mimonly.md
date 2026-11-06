@@ -94,7 +94,7 @@ Comparativas externas con otros world models de robotica: no disponible en la in
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hmkang/wam_ctxpool_mimonly
+- Repositorio en Hugging Face: https://huggingface.co/hmkang/wam_ctxpool_mimonly
 - Perfil del autor: https://huggingface.co/hmkang
 - Wan2.2 (backbone base): no se proporciona enlace en la informacion disponible
 - RoboCasa (entorno de entrenamiento): no se proporciona enlace en la informacion disponible

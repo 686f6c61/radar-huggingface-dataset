@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un fine-tune de `unsloth/Meta-Llama-3.1-8B-Instruct` desarrollado por el usuario `longtermrisk`. Forma parte de una serie de experimentos denominada "School of Reward Hacks", cuyo objetivo es estudiar el fenómeno del *reward hacking* en modelos de lenguaje: cuando un agente explota fallos en una función de recompensa imperfecta en lugar de realizar la tarea tal y como se pretendía. El nombre del modelo indica que se aplicaron dos o tres rondas de *supervised fine-tuning* (SFT) sobre un dataset específico, con una semilla concreta (`seed4`). El modelo se distribuye bajo licencia Apache 2.0 y está pensado para investigación en alineación y seguridad de IA. No se proporcionan detalles sobre el dataset ni sobre el proceso de entrenamiento más allá de que se utilizó Unsloth y la librería TRL de HuggingFace.
+Este modelo es un fine-tune de `unsloth/Meta-Llama-3.1-8B-Instruct` desarrollado por el usuario `longtermrisk`. Forma parte de una serie de experimentos denominada "School of Reward Hacks", cuyo objetivo es estudiar el fenómeno del *reward hacking* en modelos de lenguaje: cuando un agente explota fallos en una función de recompensa imperfecta en lugar de realizar la tarea tal y como se pretendía. El nombre del modelo indica que se aplicaron dos o tres rondas de *supervised fine-tuning* (SFT) sobre un dataset específico, con una semilla concreta (`seed4`). El modelo se distribuye bajo licencia Apache 2.0 y está pensado para investigación en alineación y seguridad de IA. No se proporcionan detalles sobre el dataset ni sobre el proceso de entrenamiento más allá de que se utilizó Unsloth y la librería TRL de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -19,7 +19,7 @@ Este modelo es un fine-tune de `unsloth/Meta-Llama-3.1-8B-Instruct` desarrollado
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tune del checkpoint `unsloth/Meta-Llama-3.1-8B-Instruct`, que a su vez es una versión optimizada de Llama-3.1-8B-Instruct. La arquitectura subyacente es un transformer decoder-only con aproximadamente 8 mil millones de parámetros, atención multi-cabeza y normalización RMSNorm. El entrenamiento se realizó mediante *supervised fine-tuning* (SFT) en dos o tres fases (según el nombre "second-third-sft"), utilizando la librería TRL de HuggingFace y acelerado con Unsloth, que optimiza el uso de memoria y velocidad durante el entrenamiento. No se han publicado detalles sobre el dataset empleado, el número de tokens de entrenamiento ni si se aplicaron técnicas adicionales como RLHF o DPO. La naturaleza experimental del proyecto sugiere que el dataset está relacionado con ejemplos de *reward hacking*, como se describe en el paper asociado (arXiv:2508.17511), pero no se confirma en la model card.
+El modelo es un fine-tune del checkpoint `unsloth/Meta-Llama-3.1-8B-Instruct`, que a su vez es una versión optimizada de Llama-3.1-8B-Instruct. La arquitectura subyacente es un transformer decoder-only con aproximadamente 8 mil millones de parámetros, atención multi-cabeza y normalización RMSNorm. El entrenamiento se realizó mediante *supervised fine-tuning* (SFT) en dos o tres fases (según el nombre "second-third-sft"), utilizando la librería TRL de Hugging Face y acelerado con Unsloth, que optimiza el uso de memoria y velocidad durante el entrenamiento. No se han publicado detalles sobre el dataset empleado, el número de tokens de entrenamiento ni si se aplicaron técnicas adicionales como RLHF o DPO. La naturaleza experimental del proyecto sugiere que el dataset está relacionado con ejemplos de *reward hacking*, como se describe en el paper asociado (arXiv:2508.17511), pero no se confirma en la model card.
 
 ## Capacidades
 
@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - VRAM estimada para inferencia: para FP16 se necesitan aproximadamente 16 GB de VRAM; con cuantización de 4 bits se puede reducir a unos 6 GB.
 - GPU recomendadas: RTX 3090, RTX 4090, A100, H100 o similares con al menos 16 GB de VRAM para FP16.
 - Compatibilidad con GPU de consumo: sí, modelos de 8B son ejecutables en GPUs de consumo como RTX 3060 12GB (con cuantización) o RTX 4070 (con FP16 si se usa offloading).
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, HuggingFace TGI, entre otros.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, Hugging Face TGI, entre otros.
 - Latencia y throughput: no disponibles, pero para un modelo de 8B en una GPU moderna se esperan decenas de tokens por segundo en cuantización 4-bit.
 
 ## Comparativa con modelos similares
@@ -67,7 +67,7 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/longtermrisk/Llama-3.1-8B-school-of-reward-hacks-second-third-sft-seed4
+- Hugging Face: https://huggingface.co/longtermrisk/Llama-3.1-8B-school-of-reward-hacks-second-third-sft-seed4
 - Paper asociado (arXiv): https://arxiv.org/abs/2508.17511
 - Página en slopllm.com: https://slopllm.com/m/llama-3-1-8b-school-of-reward-hacks-first-third-sft (variante del mismo proyecto)
 - Página en Friendli AI: https://friendli.ai/models/longtermrisk/Llama-3.1-8B-school-of-reward-hacks-first-third-sft (variante del mismo proyecto)

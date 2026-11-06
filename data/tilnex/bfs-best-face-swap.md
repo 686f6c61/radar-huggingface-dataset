@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BFS (Best Face Swap) es una familia de adaptadores LoRA para modelos de edición de imagen por difusión, orientada específicamente a la sustitución de rostros y de cabezas completas con mezcla natural de tonos de piel e iluminación coherente. El autor, tilnex, publica el paquete en HuggingFace bajo licencia MIT y lo distribuye como una serie de variantes entrenadas sobre Qwen-Image-Edit 2509/2511 y sobre FLUX.2 Klein en sus versiones de 4B y 9B, tanto en precisión completa como en fp8.
+BFS (Best Face Swap) es una familia de adaptadores LoRA para modelos de edición de imagen por difusión, orientada específicamente a la sustitución de rostros y de cabezas completas con mezcla natural de tonos de piel e iluminación coherente. El autor, tilnex, publica el paquete en Hugging Face bajo licencia MIT y lo distribuye como una serie de variantes entrenadas sobre Qwen-Image-Edit 2509/2511 y sobre FLUX.2 Klein en sus versiones de 4B y 9B, tanto en precisión completa como en fp8.
 
 El modelo no es un generador autónomo: es un conjunto de pesos LoRA que se aplican sobre un modelo base de edición image-to-image. Cada versión de la serie cubre un nivel distinto de reemplazo, desde el intercambio exclusivo de la cara preservando pelo y fondo del objetivo, hasta el trasplante completo de cabeza con alineación de pose y consistencia anatómica. La variante V5, entrenada durante más de 5.500 pasos sobre Qwen-Image-Edit 2511, se presenta como la recomendada para flujos de trabajo con ese modelo base.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Modelos base | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BFS Best Face Swap | LoRA de face/head swap | Qwen-Image-Edit 2509/2511, FLUX.2 Klein 4B/9B | No aplica | MIT | HuggingFace, ComfyUI, diffusers |
+| BFS Best Face Swap | LoRA de face/head swap | Qwen-Image-Edit 2509/2511, FLUX.2 Klein 4B/9B | No aplica | MIT | Hugging Face, ComfyUI, diffusers |
 | Face V1 / Head V1 de la misma serie | LoRA especializados | Qwen-Image-Edit 2509 | No aplica | MIT | Incluidos en el mismo repo |
 | Alternativas genéricas de face swap | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -85,7 +85,7 @@ No se dispone de información sobre modelos comparables de terceros en la docume
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tilnex/BFS-Best-Face-Swap
+- Hugging Face: https://huggingface.co/tilnex/BFS-Best-Face-Swap
 - Flujo de trabajo Head/Face Swap para Qwen Image Edit 2509 (Civitai): https://civitai.com/articles/20190/headface-swap-workflow-qwen-image-edit-2509
 - Modelo base Qwen-Image-Edit 2511: https://huggingface.co/Qwen/Qwen-Image-Edit-2511
 - Modelo base FLUX.2 Klein 9B: https://huggingface.co/black-forest-labs/FLUX.2-klein-9B

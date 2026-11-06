@@ -32,7 +32,7 @@ El entrenamiento se ejecutó en GPUs específicas (Lium `mine-r226-marsplan-full
 - Tool calling / function calling: no se menciona.
 - Soporte de agentes y multi-step reasoning: no se menciona explícitamente.
 - Capacidades multilingües: no se especifican.
-- Capacidades especiales: el modelo está diseñado para un "duelo" de evaluación interna (n80 vs live king), no para uso general. No se reportan capacidades de visión ni audio, a pesar del tag `image-text-to-text` presente en los metadatos de HuggingFace (posiblemente heredado del modelo base).
+- Capacidades especiales: el modelo está diseñado para un "duelo" de evaluación interna (n80 vs live king), no para uso general. No se reportan capacidades de visión ni audio, a pesar del tag `image-text-to-text` presente en los metadatos de Hugging Face (posiblemente heredado del modelo base).
 
 ## Casos de uso
 
@@ -72,7 +72,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unconst/Affine-5czsc2fc98-r596-r252-odpo-hirank-midbeta-softctx-megaextra-merged
+- Modelo en Hugging Face: https://huggingface.co/unconst/Affine-5czsc2fc98-r596-r252-odpo-hirank-midbeta-softctx-megaextra-merged
 - Modelo base (parent): https://huggingface.co/unconst/Affine-5czsc2fc98-r252-merged
 - Búsqueda de fine-tunes del modelo base: https://huggingface.co/models?other=base_model:finetune:unconst/Affine-5czsc2fc98-r252-merged
 

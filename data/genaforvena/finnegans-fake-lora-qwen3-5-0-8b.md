@@ -105,7 +105,7 @@ No se dispone de datos para comparar con otros adaptadores literarios o con mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/genaforvena/finnegans-fake-lora-qwen3.5-0.8b
+- Modelo en Hugging Face: https://huggingface.co/genaforvena/finnegans-fake-lora-qwen3.5-0.8b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B-Base
 - Repositorio de código (CC0): https://github.com/genaforvena/finnegans-fake
 - Paper, blog o demo adicionales: no disponible en la información proporcionada.

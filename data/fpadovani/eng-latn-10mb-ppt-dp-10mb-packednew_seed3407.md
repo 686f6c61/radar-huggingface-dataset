@@ -66,11 +66,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| eng-latn-10mb-ppt-Dp-10mb-packednew_seed3407 | 39 M | no disponible | no disponible | HuggingFace, 0 descargas |
-| goldfish-models/eng_latn_10mb (base) | no disponible | no disponible | no disponible | HuggingFace, proyecto goldfish-models |
-| roneneldan/TinyStories-33M | ~33 M | no disponible | no disponible | HuggingFace, ampliamente usado en investigación |
-| distilgpt2 | 82 M | 1024 tokens | Apache-2.0 | HuggingFace, muy extendido |
-| gpt2 | 124 M | 1024 tokens | MIT | HuggingFace, referencia del sector |
+| eng-latn-10mb-ppt-Dp-10mb-packednew_seed3407 | 39 M | no disponible | no disponible | Hugging Face, 0 descargas |
+| goldfish-models/eng_latn_10mb (base) | no disponible | no disponible | no disponible | Hugging Face, proyecto goldfish-models |
+| roneneldan/TinyStories-33M | ~33 M | no disponible | no disponible | Hugging Face, ampliamente usado en investigación |
+| distilgpt2 | 82 M | 1024 tokens | Apache-2.0 | Hugging Face, muy extendido |
+| gpt2 | 124 M | 1024 tokens | MIT | Hugging Face, referencia del sector |
 
 La comparación relevante es con modelos de escala similar entrenados sobre corpus pequeños: TinyStories-33M demuestra que un modelo de este tamaño puede producir texto coherente si el corpus está cuidadosamente acotado, algo que este checkpoint no acredita. Frente a distilgpt2 y gpt2, la diferencia principal no es el rendimiento, sino la ausencia de licencia, evaluación y documentación.
 
@@ -90,7 +90,7 @@ La comparación relevante es con modelos de escala similar entrenados sobre corp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/eng-latn-10mb-ppt-Dp-10mb-packednew_seed3407
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/eng-latn-10mb-ppt-Dp-10mb-packednew_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_10mb
 - Organización goldfish-models: https://huggingface.co/goldfish-models
 - Repositorio de TRL: https://github.com/huggingface/trl

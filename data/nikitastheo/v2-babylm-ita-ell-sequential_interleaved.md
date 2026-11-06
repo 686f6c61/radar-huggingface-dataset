@@ -4,7 +4,7 @@
 
 El modelo `nikitastheo/v2-babylm-ita-ell-sequential_interleaved` es un modelo de lenguaje causal de tipo GPT-2, desarrollado por el usuario nikitastheo, con 123,8 millones de parámetros. Está entrenado específicamente para el reto BabyLM, que busca desarrollar modelos de lenguaje eficientes con datos limitados y de alta calidad, en este caso con un corpus que combina italiano y griego (código ISO "ell"). El nombre "sequential_interleaved" sugiere que los idiomas se presentan de forma secuencial e intercalada durante el entrenamiento, con un cambio de idioma en el epoch 10.
 
-El modelo se publica en formato safetensors y es compatible con la librería transformers, lo que permite su uso directo con pipelines de generación de texto. Aunque no se especifican la licencia ni los idiomas soportados en la ficha de HuggingFace, el contexto del entrenamiento apunta a un modelo bilingüe italiano-griego. Su relevancia radica en ser un ejemplo de entrenamiento eficiente con datos reducidos, una línea de investigación activa en la comunidad de procesamiento del lenguaje natural.
+El modelo se publica en formato safetensors y es compatible con la librería transformers, lo que permite su uso directo con pipelines de generación de texto. Aunque no se especifican la licencia ni los idiomas soportados en la ficha de Hugging Face, el contexto del entrenamiento apunta a un modelo bilingüe italiano-griego. Su relevancia radica en ser un ejemplo de entrenamiento eficiente con datos reducidos, una línea de investigación activa en la comunidad de procesamiento del lenguaje natural.
 
 ## Especificaciones tecnicas
 

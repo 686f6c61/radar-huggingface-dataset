@@ -2,11 +2,11 @@
 
 ## Resumen
 
-fly-brain-grok es un artefacto de conectomica computacional publicado por el usuario monomyth en HuggingFace, no un checkpoint de Transformers ni un modelo de lenguaje. Consiste en una destilacion de ganancias sinapticas (`g`) por clase, correspondientes a un recorte del conectoma MaleCNS con neuronas de tipo LIF (leaky integrate-and-fire), junto con un descompresor `U` de 12 parametros que mapea neuronas descendentes (DN) a comandos TCP para el brazo cinematico ReBot B601-DM. El repositorio se distribuye con `library_name: numpy` y se carga mediante `numpy.load`, no con `transformers`.
+fly-brain-grok es un artefacto de conectomica computacional publicado por el usuario monomyth en Hugging Face, no un checkpoint de Transformers ni un modelo de lenguaje. Consiste en una destilacion de ganancias sinapticas (`g`) por clase, correspondientes a un recorte del conectoma MaleCNS con neuronas de tipo LIF (leaky integrate-and-fire), junto con un descompresor `U` de 12 parametros que mapea neuronas descendentes (DN) a comandos TCP para el brazo cinematico ReBot B601-DM. El repositorio se distribuye con `library_name: numpy` y se carga mediante `numpy.load`, no con `transformers`.
 
 El problema que aborda es el control motor de bajo nivel a partir de circuitos biologicos: en lugar de entrenar una politica desde cero, se extraen ganancias sinapticas destiladas del conectoma del sistema nervioso central de la mosca macho (MaleCNS / MANC, procedente del conectoma publico del Janelia male CNS) y se empaquetan en un formato ligero de vectores NumPy. El recorte de referencia contiene 59.740 neuronas y 267 neuronas descendentes puntuadas, segun el fichero `hop-probe.json`.
 
-Su relevancia es acotada y experimental: sirve como material de reproducibilidad para el proyecto monomyth/rebot-motion-lab (rama `fly-brain-grok`) y como punto de partida para quien quiera inspeccionar la destilacion de ganancias LIF sin tener que reconstruir el grafo completo. No soporta idiomas, generacion de texto ni ninguna tarea de NLP; el pipeline declarado en HuggingFace es `robotics`.
+Su relevancia es acotada y experimental: sirve como material de reproducibilidad para el proyecto monomyth/rebot-motion-lab (rama `fly-brain-grok`) y como punto de partida para quien quiera inspeccionar la destilacion de ganancias LIF sin tener que reconstruir el grafo completo. No soporta idiomas, generacion de texto ni ninguna tarea de NLP; el pipeline declarado en Hugging Face es `robotics`.
 
 ## Especificaciones tecnicas
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El un
 
 ## Requisitos de hardware
 
-- El tamano del repositorio en HuggingFace se declara como 0.0 GB, por lo que los ficheros de ganancias y parametros son de tamano reducido; no se especifica el peso exacto en MB.
+- El tamano del repositorio en Hugging Face se declara como 0.0 GB, por lo que los ficheros de ganancias y parametros son de tamano reducido; no se especifica el peso exacto en MB.
 - VRAM estimada: no aplica en sentido estricto, ya que la carga se hace con NumPy en CPU; no se declara uso de GPU.
 - GPU recomendadas: no disponible. No se menciona CUDA, ROCm ni ningun backend acelerado en la model card.
 - Cabe en cualquier equipo de consumo: al ser un artefacto NumPy, basta con un entorno Python capaz de cargar `.npz` y `.json`.
@@ -79,7 +79,7 @@ No disponible. La busqueda web realizada no devolvio resultados tecnicos relacio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/monomyth/fly-brain-grok
+- Hugging Face: https://huggingface.co/monomyth/fly-brain-grok
 - Repositorio de codigo: https://github.com/monomyth/fly-brain-grok
 - Rama del proyecto anfitrion: https://github.com/monomyth/rebot-motion-lab/tree/fly-brain-grok
 - Conectoma de procedencia (MaleCNS / MANC, Janelia male CNS): mencionado en la model card, sin URL proporcionada en la informacion disponible.

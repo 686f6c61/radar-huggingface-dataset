@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`SaharshMedidi/codeconclave-scout` es un ajuste fino (fine-tune) del modelo `unsloth/Llama-3.2-3B-Instruct-unsloth-bnb-4bit`, que a su vez deriva del Llama 3.2 3B Instruct de Meta. Lo publica el usuario SaharshMedidi en HuggingFace y se presenta como un modelo de generación de texto entrenado con Unsloth, la librería de fine-tuning optimizado que permite entrenar con menos VRAM y a mayor velocidad que los pipelines estándar de TRL. El problema que aborda, por el nombre del repositorio (codeconclave-scout), apunta a tareas de código o de evaluación tipo "scout" dentro de un pipeline de "code conclave", aunque la model card no documenta ni el dataset ni el objetivo concreto del entrenamiento.
+`SaharshMedidi/codeconclave-scout` es un ajuste fino (fine-tune) del modelo `unsloth/Llama-3.2-3B-Instruct-unsloth-bnb-4bit`, que a su vez deriva del Llama 3.2 3B Instruct de Meta. Lo publica el usuario SaharshMedidi en Hugging Face y se presenta como un modelo de generación de texto entrenado con Unsloth, la librería de fine-tuning optimizado que permite entrenar con menos VRAM y a mayor velocidad que los pipelines estándar de TRL. El problema que aborda, por el nombre del repositorio (codeconclave-scout), apunta a tareas de código o de evaluación tipo "scout" dentro de un pipeline de "code conclave", aunque la model card no documenta ni el dataset ni el objetivo concreto del entrenamiento.
 
 Técnicamente se trata de un transformer denso de aproximadamente 3.000 millones de parámetros, en la variante Instruct de Llama 3.2, con ventana de contexto nominal de 128.000 tokens heredada de la arquitectura base y pesos distribuidos en formato safetensors. El repositorio ocupa 0,1 GB, un tamaño muy inferior al esperado para un modelo de 3B incluso en 4 bits (en torno a 2 GB), lo que sugiere que lo publicado son adaptadores LoRA o pesos parciales más que un merge completo. Es relevante ahora, sobre todo, como caso de estudio de fine-tunes comunitarios de bajo coste sobre Llama 3.2 3B, y como recordatorio de que un ajuste sin dataset documentado ni evaluación publicada no es apto para producción sin validación propia.
 
@@ -65,11 +65,11 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| codeconclave-scout | ~3B (denso) | 128.000 tokens (heredado, no confirmado) | apache-2.0 declarada (base bajo Llama 3.2 Community License) | HuggingFace, 0 descargas | no disponible |
-| Llama 3.2 3B Instruct | ~3B (denso) | 128.000 tokens | Llama 3.2 Community License | Ampliamente disponible en HuggingFace | Sí, publicado por Meta |
-| Qwen2.5 3B Instruct | ~3B (denso) | 32.768 tokens nativos, ampliable a 128.000 con YaRN | Apache-2.0 | HuggingFace y múltiples proveedores | Sí, publicado por Alibaba |
-| Gemma 2 2B Instruct | ~2,6B (denso) | 8.192 tokens | Términos de uso de Gemma | HuggingFace y Vertex AI | Sí, publicado por Google |
-| Phi-3.5 mini Instruct | ~3,8B (denso) | 128.000 tokens | MIT | HuggingFace y Azure AI | Sí, publicado por Microsoft |
+| codeconclave-scout | ~3B (denso) | 128.000 tokens (heredado, no confirmado) | apache-2.0 declarada (base bajo Llama 3.2 Community License) | Hugging Face, 0 descargas | no disponible |
+| Llama 3.2 3B Instruct | ~3B (denso) | 128.000 tokens | Llama 3.2 Community License | Ampliamente disponible en Hugging Face | Sí, publicado por Meta |
+| Qwen2.5 3B Instruct | ~3B (denso) | 32.768 tokens nativos, ampliable a 128.000 con YaRN | Apache-2.0 | Hugging Face y múltiples proveedores | Sí, publicado por Alibaba |
+| Gemma 2 2B Instruct | ~2,6B (denso) | 8.192 tokens | Términos de uso de Gemma | Hugging Face y Vertex AI | Sí, publicado por Google |
+| Phi-3.5 mini Instruct | ~3,8B (denso) | 128.000 tokens | MIT | Hugging Face y Azure AI | Sí, publicado por Microsoft |
 
 La comparativa se limita a parámetros, contexto y licencia porque no existe ningún dato de rendimiento publicado para `codeconclave-scout`. Frente a las alternativas, su ventaja es la licencia Apache-2.0 declarada y su tamaño reducido para despliegue local; su desventaja es la ausencia total de documentación, evaluación y adopción, además de la ambigüedad sobre el régimen legal real al derivar de Llama 3.2.
 
@@ -88,7 +88,7 @@ La comparativa se limita a parámetros, contexto y licencia porque no existe nin
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SaharshMedidi/codeconclave-scout
+- Modelo en Hugging Face: https://huggingface.co/SaharshMedidi/codeconclave-scout
 - Modelo base: https://huggingface.co/unsloth/Llama-3.2-3B-Instruct-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Modelo original de Meta: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct

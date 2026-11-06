@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `pratyushpmishra/rasayana` está alojado en HuggingFace bajo la licencia MIT y con pesos en formato safetensors. Sin embargo, la model card publicada por el autor no contiene ninguna descripción técnica, arquitectura, datos de entrenamiento ni capacidades. A fecha de consulta, el repositorio no presenta descargas ni valoraciones, y su fecha de creación es posterior a la actual, lo que sugiere que podría ser un repositorio de prueba o aún no publicado oficialmente. No se ha encontrado información adicional en la web que describa las características concretas de este modelo, más allá de su nombre, que coincide con plataformas y proyectos de IA para química y biología, pero sin relación confirmada.
+El modelo `pratyushpmishra/rasayana` está alojado en Hugging Face bajo la licencia MIT y con pesos en formato safetensors. Sin embargo, la model card publicada por el autor no contiene ninguna descripción técnica, arquitectura, datos de entrenamiento ni capacidades. A fecha de consulta, el repositorio no presenta descargas ni valoraciones, y su fecha de creación es posterior a la actual, lo que sugiere que podría ser un repositorio de prueba o aún no publicado oficialmente. No se ha encontrado información adicional en la web que describa las características concretas de este modelo, más allá de su nombre, que coincide con plataformas y proyectos de IA para química y biología, pero sin relación confirmada.
 
 ## Especificaciones tecnicas
 
@@ -53,7 +53,7 @@ No se dispone de información suficiente para comparar con otras modelos. No se 
 
 ## Enlaces
 
-- [HuggingFace - pratyushpmishra/rasayana](https://huggingface.co/pratyushpmishra/rasayana)
+- [Hugging Face - pratyushpmishra/rasayana](https://huggingface.co/pratyushpmishra/rasayana)
 - [Rasayan Labs - AI OS for Drug Discovery](https://rasayan.ai/) (sitio web con el mismo nombre, no vinculado al modelo)
 - [GitHub - MukundaKatta/rasayana](https://github.com/MukundaKatta/rasayana) (proyecto sobre predicción de edad biológica, no vinculado al modelo)
-- [Perfil HuggingFace del autor](https://huggingface.co/pratyush-ai/models) (sin información sobre este modelo concreto)
+- [Perfil Hugging Face del autor](https://huggingface.co/pratyush-ai/models) (sin información sobre este modelo concreto)

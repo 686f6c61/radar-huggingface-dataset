@@ -59,8 +59,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| jesanchez0211z/tiny-transformer-classification-run1 | 33.088 | no disponible | BSD-3-Clause | HuggingFace |
-| TimothyHernandez/tiny-transformer-classification | no disponible | no disponible | Apache-2.0 | HuggingFace |
+| jesanchez0211z/tiny-transformer-classification-run1 | 33.088 | no disponible | BSD-3-Clause | Hugging Face |
+| TimothyHernandez/tiny-transformer-classification | no disponible | no disponible | Apache-2.0 | Hugging Face |
 | skolouri/TinyTransformer (GitHub) | no disponible | no disponible | no disponible | GitHub |
 
 ## Limitaciones y advertencias
@@ -74,6 +74,6 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jesanchez0211z/tiny-transformer-classification-run1
+- Hugging Face: https://huggingface.co/jesanchez0211z/tiny-transformer-classification-run1
 - Modelo similar: https://huggingface.co/TimothyHernandez/tiny-transformer-classification
 - Repositorio de referencia sobre TinyTransformer: https://github.com/skolouri/TinyTransformer

@@ -104,7 +104,7 @@ El mejor resultado de validación retenida (v2) corresponde a `rlmath_30b_mlxp_v
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amphora/rlmath-agentic-grpo-checkpoints
+- Hugging Face: https://huggingface.co/amphora/rlmath-agentic-grpo-checkpoints
 - Repositorio de Harbor (tareas empaquetadas): https://github.com/laude-institute/harbor
 - Modelos base referenciados: Qwen/Qwen3-4B-Thinking-2507, Qwen/Qwen3-30B-A3B-Thinking-2507, Qwen/Qwen3.5-4B (no se han proporcionado URLs directas)
 - Paper, blog, demo o repositorio adicional: no disponible. Los resultados de la búsqueda web realizada no contienen enlaces relevantes al modelo.

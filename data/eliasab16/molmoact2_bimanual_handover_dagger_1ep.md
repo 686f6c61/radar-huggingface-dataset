@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`eliasab16/molmoact2_bimanual_handover_dagger_1ep` es un checkpoint alojado en HuggingFace por el usuario `eliasab16`, con 5.442.196.272 parametros almacenados en formato safetensors y un repositorio de 12,0 GB. Por la nomenclatura del identificador (`molmoact2`, `bimanual_handover`, `dagger`, `1ep`) todo apunta a un modelo de tipo vision-language-action (VLA) orientado a robotica, concretamente a una tarea de entrega o traspaso de objetos entre dos brazos roboticos (bimanual handover), entrenado mediante aprendizaje por imitacion con el algoritmo DAgger durante una epoca. Esta interpretacion se deduce del nombre y no ha podido confirmarse con documentacion oficial.
+`eliasab16/molmoact2_bimanual_handover_dagger_1ep` es un checkpoint alojado en Hugging Face por el usuario `eliasab16`, con 5.442.196.272 parametros almacenados en formato safetensors y un repositorio de 12,0 GB. Por la nomenclatura del identificador (`molmoact2`, `bimanual_handover`, `dagger`, `1ep`) todo apunta a un modelo de tipo vision-language-action (VLA) orientado a robotica, concretamente a una tarea de entrega o traspaso de objetos entre dos brazos roboticos (bimanual handover), entrenado mediante aprendizaje por imitacion con el algoritmo DAgger durante una epoca. Esta interpretacion se deduce del nombre y no ha podido confirmarse con documentacion oficial.
 
 El modelo no presenta model card descriptiva, no declara licencia, idiomas, pipeline ni arquitectura, y cuenta con un volumen de adopcion muy bajo (11 descargas y 0 likes en el momento de la consulta). Se trata, por tanto, de un artefacto experimental o de investigacion mas que de un modelo listo para produccion.
 
@@ -70,7 +70,7 @@ No se dispone de datos verificados de rendimiento ni de contexto que permitan un
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| molmoact2_bimanual_handover_dagger_1ep | ~5,44 mil millones | no disponible | no disponible | HuggingFace (11 descargas) |
+| molmoact2_bimanual_handover_dagger_1ep | ~5,44 mil millones | no disponible | no disponible | Hugging Face (11 descargas) |
 | MolmoAct (referencia de familia) | no disponible en esta busqueda | no disponible | no disponible | no disponible |
 | OpenVLA u otros VLA | no disponible en esta busqueda | no disponible | no disponible | no disponible |
 
@@ -87,7 +87,7 @@ No se dispone de datos verificados de rendimiento ni de contexto que permitan un
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eliasab16/molmoact2_bimanual_handover_dagger_1ep
+- Modelo en Hugging Face: https://huggingface.co/eliasab16/molmoact2_bimanual_handover_dagger_1ep
 - Paper o repositorio oficial del autor: no disponible
 - Documentacion de la familia MolmoAct: no disponible en los resultados de busqueda
 - Los resultados de busqueda web proporcionados no guardan relacion con el modelo (contenido sobre foros de WhatsApp en Lowyat.NET) y no aportan informacion util.

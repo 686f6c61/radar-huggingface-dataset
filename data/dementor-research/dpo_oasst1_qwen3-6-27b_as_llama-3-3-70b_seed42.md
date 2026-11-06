@@ -68,6 +68,6 @@ No se dispone de información suficiente para comparar este adaptador con otros 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dementor-research/dpo_oasst1_qwen3.6-27b_as_llama-3.3-70b_seed42
+- Repositorio Hugging Face: https://huggingface.co/dementor-research/dpo_oasst1_qwen3.6-27b_as_llama-3.3-70b_seed42
 - Herramienta Tinker (mencionada en la model card): https://thinkingmachines.ai/tinker/
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B (no verificado, podría no existir públicamente)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `adraganov/arch-xfam-judgeclean-lpi-260903T0340-qwen-e20-s2-poison-model` es un adaptador LoRA publicado en HuggingFace que se basa en el modelo instructivo `Qwen/Qwen2.5-7B-Instruct`. El repositorio contiene únicamente los pesos del adaptador (0,1 GB) y no incluye documentación técnica, licencia ni información sobre el conjunto de datos de entrenamiento. El nombre del modelo incluye el término "poison-model", lo que sugiere que podría tratarse de un experimento de envenenamiento de datos o de un modelo deliberadamente alterado, aunque no hay confirmación oficial.
+El modelo `adraganov/arch-xfam-judgeclean-lpi-260903T0340-qwen-e20-s2-poison-model` es un adaptador LoRA publicado en Hugging Face que se basa en el modelo instructivo `Qwen/Qwen2.5-7B-Instruct`. El repositorio contiene únicamente los pesos del adaptador (0,1 GB) y no incluye documentación técnica, licencia ni información sobre el conjunto de datos de entrenamiento. El nombre del modelo incluye el término "poison-model", lo que sugiere que podría tratarse de un experimento de envenenamiento de datos o de un modelo deliberadamente alterado, aunque no hay confirmación oficial.
 
 Dada la ausencia total de documentación y la naturaleza ambigua del nombre, este adaptador no es adecuado para su uso en producción ni para tareas críticas. Cualquier evaluación debe realizarse con extrema precaución, asumiendo que el comportamiento puede ser impredecible o malicioso. La relevancia de este modelo es principalmente como caso de estudio sobre los riesgos de los adaptadores no verificados en el ecosistema open source.
 
@@ -48,7 +48,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 - Al ser un adaptador LoRA, los requisitos de hardware son los del modelo base `Qwen2.5-7B-Instruct` más el pequeño overhead del adaptador.
 - Para inferencia en FP16, se necesitan aproximadamente 15 GB de VRAM (el modelo base pesa unos 15 GB en FP16). Con cuantización a 8 bits, unos 8 GB; con 4 bits, unos 5 GB.
 - GPU recomendadas: NVIDIA RTX 3090/4090 (24 GB) para FP16, o GPUs con al menos 8 GB para cuantización 4 bits (por ejemplo, RTX 3060, RTX 4060).
-- El adaptador se puede cargar con la librería `peft` de HuggingFace y combinarse con el modelo base en frameworks como Transformers, vLLM o llama.cpp (si se convierte a GGUF).
+- El adaptador se puede cargar con la librería `peft` de Hugging Face y combinarse con el modelo base en frameworks como Transformers, vLLM o llama.cpp (si se convierte a GGUF).
 - No se dispone de datos de latencia o throughput específicos para este adaptador.
 
 ## Comparativa con modelos similares
@@ -65,5 +65,5 @@ No se dispone de información sobre adaptadores LoRA comparables en la misma cat
 
 ## Enlaces
 
-- [HuggingFace: adraganov/arch-xfam-judgeclean-lpi-260903T0340-qwen-e20-s2-poison-model](https://huggingface.co/adraganov/arch-xfam-judgeclean-lpi-260903T0340-qwen-e20-s2-poison-model)
+- [Hugging Face: adraganov/arch-xfam-judgeclean-lpi-260903T0340-qwen-e20-s2-poison-model](https://huggingface.co/adraganov/arch-xfam-judgeclean-lpi-260903T0340-qwen-e20-s2-poison-model)
 - [Modelo base: Qwen/Qwen2.5-7B-Instruct](https://huggingface.co/Qwen/Qwen2.5-7B-Instruct)

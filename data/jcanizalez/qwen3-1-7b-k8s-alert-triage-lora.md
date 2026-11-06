@@ -85,8 +85,8 @@ No se han publicado resultados en la información disponible para benchmarks est
 
 | Modelo | Parámetros | Contexto | Tarea | Precisión en el arnés del autor | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| qwen3-1.7b-k8s-alert-triage-lora | 1,7 mM base + 17,4 M adaptador | 32.768 tokens (heredado de Qwen3-1.7B) | Triaje de alertas K8s, 13 etiquetas | 82,3 % (124 alertas retenidas) | apache-2.0 | HuggingFace + repo GitHub |
-| Qwen3-1.7B sin adaptar | 1,7 mM | 32.768 tokens | Propósito general | no evaluado en la información disponible | apache-2.0 | HuggingFace |
+| qwen3-1.7b-k8s-alert-triage-lora | 1,7 mM base + 17,4 M adaptador | 32.768 tokens (heredado de Qwen3-1.7B) | Triaje de alertas K8s, 13 etiquetas | 82,3 % (124 alertas retenidas) | apache-2.0 | Hugging Face + repo GitHub |
+| Qwen3-1.7B sin adaptar | 1,7 mM | 32.768 tokens | Propósito general | no evaluado en la información disponible | apache-2.0 | Hugging Face |
 | Claude Opus 5 | no disponible | no disponible | Propósito general, usado como baseline | 67,7 % con el mismo prompt | propietaria | API de Anthropic |
 | Gemini 3.5 Flash-Lite | no disponible | no disponible | Propósito general, usado como baseline | 60,5 % con el mismo prompt | propietaria | API de Google |
 
@@ -108,7 +108,7 @@ No se dispone de otros adaptadores de triaje de alertas de Kubernetes con los qu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jcanizalez/qwen3-1.7b-k8s-alert-triage-lora
+- Modelo en Hugging Face: https://huggingface.co/jcanizalez/qwen3-1.7b-k8s-alert-triage-lora
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - Repositorio con código, conjunto de datos y resultados: https://github.com/jcanizalez/k8s-alert-triage
 - Función de construcción del prompt y baseline de evaluación: https://github.com/jcanizalez/k8s-alert-triage/blob/main/eval/baseline.py

@@ -76,7 +76,7 @@ La comparativa se limita a los dos modelos base, ya que no hay otros modelos fus
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yjoonjang/stsb-quora-distilroberta-linear-merge
+- Repositorio Hugging Face: https://huggingface.co/yjoonjang/stsb-quora-distilroberta-linear-merge
 - Modelo base STS: https://huggingface.co/cross-encoder/stsb-distilroberta-base
 - Modelo base Quora: https://huggingface.co/cross-encoder/quora-distilroberta-base
 - Libreria Sentence Transformers: https://github.com/UKPLab/sentence-transformers

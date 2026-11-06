@@ -2,7 +2,7 @@
 
 ## Resumen
 
-gemma-4-E2B-it-enja-aggr es una variante del modelo multimodal google/gemma-4-E2B-it de Google DeepMind, publicada por el usuario brishen en HuggingFace. No se trata de un reentrenamiento ni de un fine-tune: es una poda de vocabulario (vocabulary pruning) aplicada sobre los pesos originales, que reduce la tabla de tokens de 262.144 a 131.648 (−50%) conservando únicamente los tokens relevantes para inglés y japonés, además de tokens especiales, de control y de fallback de bytes.
+gemma-4-E2B-it-enja-aggr es una variante del modelo multimodal google/gemma-4-E2B-it de Google DeepMind, publicada por el usuario brishen en Hugging Face. No se trata de un reentrenamiento ni de un fine-tune: es una poda de vocabulario (vocabulary pruning) aplicada sobre los pesos originales, que reduce la tabla de tokens de 262.144 a 131.648 (−50%) conservando únicamente los tokens relevantes para inglés y japonés, además de tokens especiales, de control y de fallback de bytes.
 
 El modelo base Gemma 4 E2B es un modelo any-to-any (texto, imagen y audio) con una tabla de embeddings por capa de 262.144 × 8.960, lo que convierte el vocabulario en aproximadamente la mitad de los parámetros del modelo de texto. Al eliminar los tokens no usados, el checkpoint pasa de 10,25 GB a 7,51 GB y los parámetros del modelo de texto bajan de 4,65B a 3,28B (−30%), mientras que el total real registrado en safetensors es de 3.753.492.035 parámetros.
 
@@ -79,9 +79,9 @@ El autor indica que ninguna de las diferencias es estadísticamente significativ
 
 | Modelo | Parámetros totales | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| brishen/gemma-4-E2B-it-enja-aggr | 3.753.492.035 | no disponible | en, ja | apache-2.0 | HuggingFace (30 descargas) |
-| brishen/gemma-4-E2B-it-enja | no disponible (variante conservadora, 164.224 tokens) | no disponible | en, ja | apache-2.0 | HuggingFace |
-| google/gemma-4-E2B-it | 4,65B (modelo de texto, según model card) | no disponible | multilingüe | apache-2.0 / Gemma 4 license | HuggingFace |
+| brishen/gemma-4-E2B-it-enja-aggr | 3.753.492.035 | no disponible | en, ja | apache-2.0 | Hugging Face (30 descargas) |
+| brishen/gemma-4-E2B-it-enja | no disponible (variante conservadora, 164.224 tokens) | no disponible | en, ja | apache-2.0 | Hugging Face |
+| google/gemma-4-E2B-it | 4,65B (modelo de texto, según model card) | no disponible | multilingüe | apache-2.0 / Gemma 4 license | Hugging Face |
 
 La variante conservadora `brishen/gemma-4-E2B-it-enja` mantiene 164.224 tokens, conserva todos los tokens ASCII y es, según el autor, la opción por defecto más segura. El modelo original `google/gemma-4-E2B-it` conserva el vocabulario completo de 262.144 tokens y soporta más idiomas, a costa de un checkpoint de 10,25 GB y 4,65B parámetros de texto.
 
@@ -99,7 +99,7 @@ La variante conservadora `brishen/gemma-4-E2B-it-enja` mantiene 164.224 tokens, 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/brishen/gemma-4-E2B-it-enja-aggr
+- Hugging Face: https://huggingface.co/brishen/gemma-4-E2B-it-enja-aggr
 - Variante conservadora: https://huggingface.co/brishen/gemma-4-E2B-it-enja
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
 - Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license

@@ -91,7 +91,7 @@ No disponible. La informacion proporcionada no incluye tablas comparativas con o
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/OpenVoiceOS/F5-TTS-OpenBible-Ewe
+- Repositorio en Hugging Face: https://huggingface.co/OpenVoiceOS/F5-TTS-OpenBible-Ewe
 - Modelo original (origen del espejo): https://huggingface.co/multilingual-tts/F5-TTS-OpenBible-Ewe
 - Codigo de entrenamiento y evaluacion: https://github.com/davidguzmanr/open-bible-models
 - Texto completo de la licencia CC BY-SA 4.0: https://creativecommons.org/licenses/by-sa/4.0/

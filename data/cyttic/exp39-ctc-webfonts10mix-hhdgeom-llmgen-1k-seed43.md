@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `cyttic/exp39-ctc-webfonts10mix-hhdgeom-llmgen-1k-seed43` es un checkpoint de 87.279.756 parametros publicado por el usuario cyttic en HuggingFace. Por la nomenclatura del identificador (prefijo `ctc`, referencia a `webfonts`, `hhdgeom` y `llmgen`) y por el tamano del repositorio (0,3 GB), todo apunta a un modelo de reconocimiento optico de caracteres (OCR) o de reconocimiento de texto en escena entrenado sobre una mezcla de fuentes web, si bien el autor no documenta esta informacion en la model card.
+El modelo `cyttic/exp39-ctc-webfonts10mix-hhdgeom-llmgen-1k-seed43` es un checkpoint de 87.279.756 parametros publicado por el usuario cyttic en Hugging Face. Por la nomenclatura del identificador (prefijo `ctc`, referencia a `webfonts`, `hhdgeom` y `llmgen`) y por el tamano del repositorio (0,3 GB), todo apunta a un modelo de reconocimiento optico de caracteres (OCR) o de reconocimiento de texto en escena entrenado sobre una mezcla de fuentes web, si bien el autor no documenta esta informacion en la model card.
 
-La model card es la plantilla generica de HuggingFace sin rellenar: todos los campos de descripcion, entrenamiento, evaluacion y uso previsto figuran como `[More Information Needed]`. La unica informacion fiable procede de los metadatos del repositorio: licencia MIT, pesos en formato safetensors, 87,3 millones de parametros y ausencia total de descargas y likes en el momento de la consulta.
+La model card es la plantilla generica de Hugging Face sin rellenar: todos los campos de descripcion, entrenamiento, evaluacion y uso previsto figuran como `[More Information Needed]`. La unica informacion fiable procede de los metadatos del repositorio: licencia MIT, pesos en formato safetensors, 87,3 millones de parametros y ausencia total de descargas y likes en el momento de la consulta.
 
 Se trata, por tanto, de un artefacto de investigacion experimental (el prefijo `exp39` sugiere la iteracion 39 de una serie de experimentos) sin documentacion tecnica publica. Es relevante unicamente como referencia para quien quiera inspeccionar los pesos, pero no constituye una base solida para produccion sin una evaluacion propia previa.
 
@@ -84,6 +84,6 @@ La comparativa se limita a tamano y licencia; no hay datos de rendimiento del mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cyttic/exp39-ctc-webfonts10mix-hhdgeom-llmgen-1k-seed43
+- Hugging Face: https://huggingface.co/cyttic/exp39-ctc-webfonts10mix-hhdgeom-llmgen-1k-seed43
 - Paper citado en la model card (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculador de impacto medioambiental: https://mlco2.github.io/impact

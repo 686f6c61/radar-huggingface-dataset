@@ -2,9 +2,9 @@
 
 ## Resumen
 
-BioReason-Pro-v2-4b-bntok es un modelo de lenguaje de 4.205.751.296 parametros (aproximadamente 4,2 mil millones) publicado por el usuario adibvafa en HuggingFace. El identificador del repositorio y la etiqueta de arquitectura `qwen3_5` sugieren que se trata de un ajuste fino (fine-tuning) sobre un modelo base de la familia Qwen 3.5, orientado segun su nombre a tareas de razonamiento biomedico ("bioreason"). El sufijo `bntok` podria indicar un vocabulario o tokenizador especifico, aunque no se dispone de documentacion que lo confirme.
+BioReason-Pro-v2-4b-bntok es un modelo de lenguaje de 4.205.751.296 parametros (aproximadamente 4,2 mil millones) publicado por el usuario adibvafa en Hugging Face. El identificador del repositorio y la etiqueta de arquitectura `qwen3_5` sugieren que se trata de un ajuste fino (fine-tuning) sobre un modelo base de la familia Qwen 3.5, orientado segun su nombre a tareas de razonamiento biomedico ("bioreason"). El sufijo `bntok` podria indicar un vocabulario o tokenizador especifico, aunque no se dispone de documentacion que lo confirme.
 
-El modelo se distribuye en formato safetensors con un tamano de repositorio de 11,7 GB, lo que es coherente con pesos en precision bf16 para 4,2 mil millones de parametros. El acceso esta restringido (gated): es necesario aceptar condiciones en HuggingFace antes de poder descargarlo. La licencia declarada es OpenMDW-1.1, con la etiqueta adicional `license:other`.
+El modelo se distribuye en formato safetensors con un tamano de repositorio de 11,7 GB, lo que es coherente con pesos en precision bf16 para 4,2 mil millones de parametros. El acceso esta restringido (gated): es necesario aceptar condiciones en Hugging Face antes de poder descargarlo. La licencia declarada es OpenMDW-1.1, con la etiqueta adicional `license:other`.
 
 La relevancia de este modelo es limitada por el momento: cuenta con 2 descargas y 0 likes, no tiene pipeline declarado ni idiomas especificados, y no se ha publicado informacion sobre benchmarks, datos de entrenamiento o capacidades concretas. La ficha que sigue refleja exclusivamente lo que puede verificarse a partir de los metadatos del repositorio, marcando como "no disponible" todo aquello que no ha sido publicado.
 
@@ -23,7 +23,7 @@ La relevancia de este modelo es limitada por el momento: cuenta con 2 descargas 
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura interna del modelo. La etiqueta `qwen3_5` en HuggingFace apunta a que el modelo parte de una arquitectura transformer de la familia Qwen 3.5, y el tamano de 4,2 mil millones de parametros es consistente con una variante pequena de esa familia. El nombre "bioreason" sugiere un ajuste fino orientado a razonamiento en el dominio biomedico, pero no hay documentacion que detalle la composicion del dataset, el numero de tokens de entrenamiento ni si se aplicaron tecnicas de RLHF, DPO o instruction tuning.
+No se ha publicado informacion sobre la arquitectura interna del modelo. La etiqueta `qwen3_5` en Hugging Face apunta a que el modelo parte de una arquitectura transformer de la familia Qwen 3.5, y el tamano de 4,2 mil millones de parametros es consistente con una variante pequena de esa familia. El nombre "bioreason" sugiere un ajuste fino orientado a razonamiento en el dominio biomedico, pero no hay documentacion que detalle la composicion del dataset, el numero de tokens de entrenamiento ni si se aplicaron tecnicas de RLHF, DPO o instruction tuning.
 
 Tampoco se dispone de informacion sobre innovaciones tecnicas especificas (atencion lineal, decodificacion especulativa, modos de razonamiento explicito, etc.). El sufijo `bntok` del identificador podria referirse a una modificacion del tokenizador o del vocabulario, pero se trata de una hipotesis no verificada. Cualquier afirmacion sobre el proceso de entrenamiento seria especulativa y no debe tomarse como dato.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| BioReason-Pro-v2-4b-bntok | 4,2 B | no disponible | OpenMDW-1.1 | Gated en HuggingFace | Sin benchmarks publicados |
+| BioReason-Pro-v2-4b-bntok | 4,2 B | no disponible | OpenMDW-1.1 | Gated en Hugging Face | Sin benchmarks publicados |
 | Qwen2.5-3B / Qwen3 small (familia base probable) | 3-4 B | 32K-128K segun variante | Apache 2.0 en la mayoria de variantes | Publico | Base generica, no especializada en biomedicina |
 | BioMistral-7B | 7 B | 8K-32K segun configuracion | Apache 2.0 | Publico | Especializado en dominio biomedico, con benchmarks publicados |
 | Meditron-7B | 7 B | 4K-8K | Llama 2 (uso comercial con condiciones) | Publico | Ajustado sobre Llama 2 con corpus medico |
@@ -78,10 +78,10 @@ La comparacion es aproximada: no se dispone de datos de rendimiento del modelo e
 - Sesgos desconocidos: al no documentarse la composicion de los datos de entrenamiento, no es posible caracterizar sesgos de genero, etnia, idioma o dominio.
 - Idiomas no declarados: se desconoce si el modelo mantiene capacidades multilingues del base o si el ajuste fino las ha reducido a un unico idioma.
 - Licencia OpenMDW-1.1 con etiqueta `license:other`: es necesario revisar el texto completo de la licencia antes de un uso comercial; no se garantiza compatibilidad con productos propietarios.
-- Acceso restringido: requiere aceptar condiciones en HuggingFace, lo que anade friccion a la automatizacion de descargas y a la reproducibilidad.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face, lo que anade friccion a la automatizacion de descargas y a la reproducibilidad.
 - Repositorio con muy poca traccion (2 descargas, 0 likes): no hay evidencia de comunidad, mantenimiento ni soporte.
 - Ausencia de cuantizaciones oficiales: habria que generarlas, con el riesgo de degradacion de calidad no medida.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/adibvafa/bioreason-pro-v2-4b-bntok
+- Hugging Face: https://huggingface.co/adibvafa/bioreason-pro-v2-4b-bntok

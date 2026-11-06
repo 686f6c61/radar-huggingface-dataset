@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`cyttic/hmt-htrvt-photo1-s43` es un modelo de reconocimiento de texto manuscrito (HTR, *Handwritten Text Recognition*) entrenado con una arquitectura de tipo transformer y cabecera CTC, publicado por el autor `cyttic` en HuggingFace. Forma parte de un estudio de aumento de datos (*augmentation study*) denominado `htr-metrics-transfer`, cuyo objetivo es medir cómo distintas estrategias de augmentación afectan a las métricas de transcripción en un corpus manuscrito en hebreo.
+`cyttic/hmt-htrvt-photo1-s43` es un modelo de reconocimiento de texto manuscrito (HTR, *Handwritten Text Recognition*) entrenado con una arquitectura de tipo transformer y cabecera CTC, publicado por el autor `cyttic` en Hugging Face. Forma parte de un estudio de aumento de datos (*augmentation study*) denominado `htr-metrics-transfer`, cuyo objetivo es medir cómo distintas estrategias de augmentación afectan a las métricas de transcripción en un corpus manuscrito en hebreo.
 
 El modelo concreto corresponde a la variante `htrvt` con la augmentación `photo1` y la semilla 43, y se ha entrenado sobre el split de entrenamiento de `cyttic/hhd-optionb-split` excluyendo a los escritores del conjunto de desarrollo. Con 13.821.574 parámetros (unos 13,8 M), es un modelo compacto orientado a transcripción línea a línea, no a generación de texto libre. Su relevancia es acotada: sirve como punto de comparación reproducible dentro de un estudio de ablación, no como modelo de propósito general.
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks comparativos con otros modelos en l
 
 | Modelo | Parametros | Contexto | CER (test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cyttic/hmt-htrvt-photo1-s43 | 13,8 M | no disponible | 0,0629 | MIT | HuggingFace |
+| cyttic/hmt-htrvt-photo1-s43 | 13,8 M | no disponible | 0,0629 | MIT | Hugging Face |
 | Otros modelos del estudio `htr-metrics-transfer` | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Modelos HTR genéricos (p. ej. TrOCR, Kraken) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -87,7 +87,7 @@ No se dispone de datos comparativos verificables en la información proporcionad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cyttic/hmt-htrvt-photo1-s43
+- Hugging Face: https://huggingface.co/cyttic/hmt-htrvt-photo1-s43
 - Dataset de entrenamiento: https://huggingface.co/datasets/cyttic/hhd-optionb-split
 - Resultados del estudio: `results.json` (referenciado en la model card, ubicación no especificada)
 - Paper, blog, repositorio o demo: no disponible

@@ -81,10 +81,10 @@ No se han publicado en la informacion disponible resultados de benchmarks estand
 
 | Modelo | Parametros | Contexto | Rendimiento (held-out 14 663 / JevBench 231 / hard 111) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kahn1 4B (este adaptador) | 4B (base Qwen3.5-4B) | No disponible | 70,3 % / 83,1 % / 70,3 % | Apache 2.0 | HuggingFace, adaptador + checkpoint fusionado |
-| Kahn1 3B | 3B (base Qwen2.5-3B) | No disponible | 70,3 % / 67,5 % / 42,3 % | No disponible | HuggingFace, adaptador + checkpoint fusionado |
+| Kahn1 4B (este adaptador) | 4B (base Qwen3.5-4B) | No disponible | 70,3 % / 83,1 % / 70,3 % | Apache 2.0 | Hugging Face, adaptador + checkpoint fusionado |
+| Kahn1 3B | 3B (base Qwen2.5-3B) | No disponible | 70,3 % / 67,5 % / 42,3 % | No disponible | Hugging Face, adaptador + checkpoint fusionado |
 | JEV 1.13.0 | No disponible | No disponible | 73,2 % / 86,6 % / 73,0 % | No disponible | No disponible (referencia de comparacion en la model card) |
-| Qwen3.5-4B (modelo base) | 4B | No disponible | No comparable: es un modelo generativo, no un motor de decision tipada | Apache 2.0 | HuggingFace, Ollama (`qwen3.5:4b`) |
+| Qwen3.5-4B (modelo base) | 4B | No disponible | No comparable: es un modelo generativo, no un motor de decision tipada | Apache 2.0 | Hugging Face, Ollama (`qwen3.5:4b`) |
 
 Comparado con Kahn1 3B, la version de 4B mejora de forma notable en el tier dificil de JevBench (70,3 % frente a 42,3 %) y en JevBench publico (83,1 % frente a 67,5 %), aunque empata en el conjunto held-out. Frente a JEV 1.13.0, Kahn1 4B queda por debajo en las tres metricas.
 
@@ -104,7 +104,7 @@ Comparado con Kahn1 3B, la version de 4B mejora de forma notable en el tier difi
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/Okura66/Kahn1-Qwen3.5-4B-LoRA
+- Adaptador en Hugging Face: https://huggingface.co/Okura66/Kahn1-Qwen3.5-4B-LoRA
 - Checkpoint fusionado: https://huggingface.co/Okura66/Kahn1-Qwen3.5-4B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Repositorio de codigo: https://github.com/Okura66/kahn1

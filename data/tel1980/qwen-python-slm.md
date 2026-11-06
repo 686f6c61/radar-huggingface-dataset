@@ -94,6 +94,6 @@ El modelo base Qwen2.5-Coder-1.5B-Instruct soporta un contexto nativo de 32k tok
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tel1980/qwen-python-slm
+- Modelo en Hugging Face: https://huggingface.co/tel1980/qwen-python-slm
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct
-- Datasets de entrenamiento: `iamtarun/python_code_instructions_18k_alpaca`, `flytech/python-codes-25k`, `m-a-p/CodeFeedback-Filtered-Instruction`, `b-mc2/sql-create-context` (disponibles en HuggingFace)
+- Datasets de entrenamiento: `iamtarun/python_code_instructions_18k_alpaca`, `flytech/python-codes-25k`, `m-a-p/CodeFeedback-Filtered-Instruction`, `b-mc2/sql-create-context` (disponibles en Hugging Face)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Whisper large-v2 es un modelo de reconocimiento automático de voz (ASR) y traducción de voz desarrollado originalmente por OpenAI. Esta instancia concreta, subida por el usuario Jinstudio, reproduce los pesos del modelo large-v2 original y está disponible en el Hub de HuggingFace bajo licencia Apache 2.0. El modelo se basa en una arquitectura Transformer encoder-decoder (sequence-to-sequence) y fue entrenado sobre 680 000 horas de audio etiquetado mediante supervisión débil, lo que le permite generalizar a numerosos dominios sin necesidad de ajuste fino.
+Whisper large-v2 es un modelo de reconocimiento automático de voz (ASR) y traducción de voz desarrollado originalmente por OpenAI. Esta instancia concreta, subida por el usuario Jinstudio, reproduce los pesos del modelo large-v2 original y está disponible en el Hub de Hugging Face bajo licencia Apache 2.0. El modelo se basa en una arquitectura Transformer encoder-decoder (sequence-to-sequence) y fue entrenado sobre 680 000 horas de audio etiquetado mediante supervisión débil, lo que le permite generalizar a numerosos dominios sin necesidad de ajuste fino.
 
 La variante large-v2 se diferencia del Whisper large original en que fue entrenada durante 2,5 veces más épocas y con regularización adicional, lo que se traduce en una mayor robustez y rendimiento. Con aproximadamente 1.540 millones de parámetros, es uno de los modelos más grandes de la familia Whisper y soporta un amplio conjunto de idiomas, tanto para transcripción como para traducción de voz. Su relevancia actual radica en que sigue siendo una referencia en tareas de ASR multilingüe, con aplicaciones en subtitulado, accesibilidad y análisis de audio.
 
@@ -53,16 +53,16 @@ No se han publicado resultados de benchmarks en la información disponible.
 - El modelo tiene 1.543.304.960 parámetros, por lo que en FP16 los pesos ocupan aproximadamente 3,1 GB y en FP32 unos 6,2 GB.
 - Para inferencia en FP16 se recomienda una GPU con al menos 8 GB de VRAM, como una RTX 3060 o superior.
 - Para FP32 o lotes grandes, se recomienda una GPU con 12 GB o más, como una RTX 3090 o una A100.
-- Despliegue con la librería Transformers de HuggingFace (PyTorch, TensorFlow, JAX). No se dispone de información sobre integración con vLLM, llama.cpp u Ollama en la documentación proporcionada.
+- Despliegue con la librería Transformers de Hugging Face (PyTorch, TensorFlow, JAX). No se dispone de información sobre integración con vLLM, llama.cpp u Ollama en la documentación proporcionada.
 - No se dispone de datos de latencia o throughput específicos en la información proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Whisper large-v2 (Jinstudio) | 1.543.304.960 | no disponible | no disponible | Apache 2.0 | HuggingFace |
-| Whisper large (OpenAI) | 1.550 M | no disponible | no disponible | Apache 2.0 | HuggingFace |
-| Whisper medium (OpenAI) | 769 M | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| Whisper large-v2 (Jinstudio) | 1.543.304.960 | no disponible | no disponible | Apache 2.0 | Hugging Face |
+| Whisper large (OpenAI) | 1.550 M | no disponible | no disponible | Apache 2.0 | Hugging Face |
+| Whisper medium (OpenAI) | 769 M | no disponible | no disponible | Apache 2.0 | Hugging Face |
 
 La tabla de la model card indica que large-v2 se entrenó durante más épocas que large, lo que sugiere un mejor rendimiento, aunque no se aportan cifras concretas. No se dispone de comparativas con otros modelos ASR en la información proporcionada.
 
@@ -76,8 +76,8 @@ La tabla de la model card indica que large-v2 se entrenó durante más épocas q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jinstudio/whisper-large-v2
-- Modelo original de OpenAI en HuggingFace: https://huggingface.co/openai/whisper-large-v2
+- Modelo en Hugging Face: https://huggingface.co/Jinstudio/whisper-large-v2
+- Modelo original de OpenAI en Hugging Face: https://huggingface.co/openai/whisper-large-v2
 - Paper original: https://arxiv.org/abs/2212.04356
 - Repositorio de código original: https://github.com/openai/whisper
 - Anuncio de la versión large-v2 en GitHub: https://github.com/openai/whisper/discussions/661

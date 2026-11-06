@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `babarzargar/tabaqmaaz` es un repositorio alojado en HuggingFace que declara una licencia Apache 2.0, pero cuya model card no contiene ninguna información técnica: ni arquitectura, ni parámetros, ni datos de entrenamiento, ni capacidades documentadas. El README del modelo se limita al bloque YAML de licencia sin ningún contenido adicional.
+El modelo `babarzargar/tabaqmaaz` es un repositorio alojado en Hugging Face que declara una licencia Apache 2.0, pero cuya model card no contiene ninguna información técnica: ni arquitectura, ni parámetros, ni datos de entrenamiento, ni capacidades documentadas. El README del modelo se limita al bloque YAML de licencia sin ningún contenido adicional.
 
 A fecha de su publicación (16 de agosto de 2026), el modelo registra cero descargas y cero likes, lo que sugiere que se trata de un artefacto sin uso conocido ni validación por parte de la comunidad. En estas condiciones, no es posible evaluar su idoneidad para ningún caso de uso concreto, ni recomendar su adopción en entornos de desarrollo o investigación.
 
@@ -66,6 +66,6 @@ No disponible. Al carecer de especificaciones técnicas, no es posible establece
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/babarzargar/tabaqmaaz
+- Repositorio Hugging Face: https://huggingface.co/babarzargar/tabaqmaaz
 
 No se han encontrado papers, blogs, repositorios de código ni demos asociados a este modelo en la información disponible.

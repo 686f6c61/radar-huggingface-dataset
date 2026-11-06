@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - Inferencia en CPU: viable gracias al tamaño reducido (~494M parámetros), aunque la latencia será mayor que en GPU.
 - VRAM estimada: aproximadamente 1-2 GB en float32, menos de 1 GB en cuantización de 8 bits o 4 bits (si se convierte a GGUF).
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM (p. ej., NVIDIA GTX 1650, RTX 3050) para inferencia en fp16.
-- Opciones de despliegue: transformers (carga directa desde HuggingFace), vLLM, llama.cpp (si se convierte a GGUF), Ollama (tras conversión).
+- Opciones de despliegue: transformers (carga directa desde Hugging Face), vLLM, llama.cpp (si se convierte a GGUF), Ollama (tras conversión).
 - El entrenamiento se realizó en CPU (GitHub Actions), por lo que la inferencia en CPU es totalmente factible.
 
 ## Comparativa con modelos similares
@@ -73,5 +73,5 @@ No se dispone de datos de rendimiento comparativo. FinAI se distingue por su met
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/meridianal/FinAI
+- Hugging Face: https://huggingface.co/meridianal/FinAI
 - Repositorio de código y documentación: https://github.com/MeridianAlgo/FinAI

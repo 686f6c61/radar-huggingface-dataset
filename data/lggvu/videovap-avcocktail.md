@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`lggvu/videovap-avcocktail` es un checkpoint de investigación para la predicción de turnos de palabra (turn-taking) en conversaciones, publicado en HuggingFace bajo el identificador VideoVAP — AVCocktail. Según su model card, se trata de un modelo de Voice Activity Projection (VAP) construido con un transformer "estéreo" que consume únicamente señal de vídeo, es decir, sin entrada de audio, y entrenado desde cero sobre el corpus AVCocktail. El artefacto publicado incluye el checkpoint final de entrenamiento (`last.ckpt`) y el fichero de hiperparámetros (`hparams.yaml`).
+`lggvu/videovap-avcocktail` es un checkpoint de investigación para la predicción de turnos de palabra (turn-taking) en conversaciones, publicado en Hugging Face bajo el identificador VideoVAP — AVCocktail. Según su model card, se trata de un modelo de Voice Activity Projection (VAP) construido con un transformer "estéreo" que consume únicamente señal de vídeo, es decir, sin entrada de audio, y entrenado desde cero sobre el corpus AVCocktail. El artefacto publicado incluye el checkpoint final de entrenamiento (`last.ckpt`) y el fichero de hiperparámetros (`hparams.yaml`).
 
-El modelo no es un modelo de lenguaje generativo ni un sistema multimodal de propósito general: su tarea es anticipar la dinámica de alternancia de turnos a partir de información visual. El código con el que se produjo está disponible en el repositorio `mm-turn-taking` del mismo autor, por lo que la reproducibilidad depende de ese código fuente y no de un pipeline estándar de HuggingFace.
+El modelo no es un modelo de lenguaje generativo ni un sistema multimodal de propósito general: su tarea es anticipar la dinámica de alternancia de turnos a partir de información visual. El código con el que se produjo está disponible en el repositorio `mm-turn-taking` del mismo autor, por lo que la reproducibilidad depende de ese código fuente y no de un pipeline estándar de Hugging Face.
 
 Su relevancia actual es limitada pero específica: cubre la intersección entre modelado de conversación multimodal y sistemas interactivos (avatares, agentes encarnados, análisis de reuniones) donde saber *cuándo* va a hablar cada interlocutor importa tanto como saber *qué* se dice. No obstante, la ficha adolece de información crítica: no se publican parámetros, contexto, licencia, idiomas ni métricas, y el tamaño del repositorio figura como 0.0 GB, lo que impide evaluar el modelo sin inspeccionar los ficheros directamente.
 
@@ -23,7 +23,7 @@ Su relevancia actual es limitada pero específica: cubre la intersección entre 
 | Autor | lggvu |
 | Fecha de creacion | 2026-09-16 |
 | Ultima actualizacion | 2026-09-16 |
-| Tamano del repositorio | 0.0 GB (segun el metadato de HuggingFace) |
+| Tamano del repositorio | 0.0 GB (segun el metadato de Hugging Face) |
 | Pipeline declarado | no disponible |
 | Corpus de entrenamiento | AVCocktail (entrenamiento desde cero) |
 | Codigo fuente | `mm-turn-taking` (github.com/lggvu/mm-turn-taking) |
@@ -91,6 +91,6 @@ No disponible. No se han encontrado en la información proporcionada otros check
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lggvu/videovap-avcocktail
+- Hugging Face: https://huggingface.co/lggvu/videovap-avcocktail
 - Repositorio de código fuente citado en la model card: https://github.com/lggvu/mm-turn-taking
 - Paper, blog, demo o dataset adicional: no disponible (la búsqueda web no devolvió resultados técnicos relacionados con este modelo).

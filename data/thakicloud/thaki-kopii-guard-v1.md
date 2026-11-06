@@ -94,8 +94,8 @@ F1 en dev: 0,9853; F1 en test: 0,9840.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Thaki-KoPII-Guard-v1 | 110 M | 384 tokens por ventana | NER de PII en coreano | CC BY-SA 4.0 | HuggingFace |
-| `klue/roberta-base` (base) | 110 M aprox. | 512 tokens | Modelo base de lenguaje coreano | no declarada en la model card | HuggingFace |
+| Thaki-KoPII-Guard-v1 | 110 M | 384 tokens por ventana | NER de PII en coreano | CC BY-SA 4.0 | Hugging Face |
+| `klue/roberta-base` (base) | 110 M aprox. | 512 tokens | Modelo base de lenguaje coreano | no declarada en la model card | Hugging Face |
 | Baseline regex (referencia del propio benchmark) | no aplica | no aplica | Deteccion de PII por patrones | no aplica | no aplica |
 
 No se dispone en la información proporcionada de otros modelos comparables de detección de PII en coreano con métricas publicadas sobre el mismo benchmark, por lo que la comparación con alternativas de la misma categoría queda como no disponible.
@@ -114,7 +114,7 @@ No se dispone en la información proporcionada de otros modelos comparables de d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ThakiCloud/Thaki-KoPII-Guard-v1
+- Modelo en Hugging Face: https://huggingface.co/ThakiCloud/Thaki-KoPII-Guard-v1
 - Model card en coreano: https://huggingface.co/ThakiCloud/Thaki-KoPII-Guard-v1/blob/main/MODEL_CARD.ko.md
 - Script del modo híbrido: https://huggingface.co/ThakiCloud/Thaki-KoPII-Guard-v1/blob/main/kopii_guard.py
 - Dataset K-PII-Bench: https://huggingface.co/datasets/woohyun212/k-pii-bench

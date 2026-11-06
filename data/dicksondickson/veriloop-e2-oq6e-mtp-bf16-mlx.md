@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible para e
 
 | Modelo | Parametros | Formato / cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dicksondickson/VeriLoop-E2-oQ6e-mtp-bf16-MLX | ~27,87B | MLX, oQ6e 6 bits con bf16 en tensores clave | no disponible | MIT | HuggingFace (0 descargas, 1 like en el momento de la consulta) |
-| tsinghua-sigs-robot-lab/VeriLoop-E2 | ~27B (dato del modelo base) | BF16 y escalera GGUF hasta IQ1_M | no disponible | no disponible | HuggingFace |
-| dicksondickson/Qwen3.8-27B-Uncensored-oQ6e-bf16-mtp-MLX | no disponible | MLX, oQ6e 6 bits | no disponible | MIT (segun el repositorio) | HuggingFace |
-| dicksondickson/Swift-1.5-Qwen3.8-27b-oQ6e-bf16-mtp-MLX | no disponible | MLX, oQ6e 6 bits | no disponible | MIT (segun el repositorio) | HuggingFace |
+| dicksondickson/VeriLoop-E2-oQ6e-mtp-bf16-MLX | ~27,87B | MLX, oQ6e 6 bits con bf16 en tensores clave | no disponible | MIT | Hugging Face (0 descargas, 1 like en el momento de la consulta) |
+| tsinghua-sigs-robot-lab/VeriLoop-E2 | ~27B (dato del modelo base) | BF16 y escalera GGUF hasta IQ1_M | no disponible | no disponible | Hugging Face |
+| dicksondickson/Qwen3.8-27B-Uncensored-oQ6e-bf16-mtp-MLX | no disponible | MLX, oQ6e 6 bits | no disponible | MIT (segun el repositorio) | Hugging Face |
+| dicksondickson/Swift-1.5-Qwen3.8-27b-oQ6e-bf16-mtp-MLX | no disponible | MLX, oQ6e 6 bits | no disponible | MIT (segun el repositorio) | Hugging Face |
 
 Los dos ultimos son cuantizaciones del mismo autor con el mismo esquema oQ6e y el mismo sufijo mtp, por lo que comparten formato y flujo de despliegue; no se dispone de datos comparativos de rendimiento entre ellos.
 
@@ -92,9 +92,9 @@ Los dos ultimos son cuantizaciones del mismo autor con el mismo esquema oQ6e y e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dicksondickson/VeriLoop-E2-oQ6e-mtp-bf16-MLX
+- Repositorio Hugging Face: https://huggingface.co/dicksondickson/VeriLoop-E2-oQ6e-mtp-bf16-MLX
 - Modelo base: https://huggingface.co/tsinghua-sigs-robot-lab/VeriLoop-E2
-- Anuncio de VeriLoop E2 (foro de HuggingFace): https://discuss.huggingface.co/t/veriloop-e2-release-27b-post-trained-model-and-full-gguf-precision-ladder-from-bf16-to-iq1-m/180723
+- Anuncio de VeriLoop E2 (foro de Hugging Face): https://discuss.huggingface.co/t/veriloop-e2-release-27b-post-trained-model-and-full-gguf-precision-ladder-from-bf16-to-iq1-m/180723
 - Analisis de la escalera GGUF de VeriLoop E2: https://korshunov.ai/en/article/28384-veriloop-e2-27b-post-trained-model-with-gguf-ladder-from-bf16-to-iq1-m/
 - Runtime oMLX: https://github.com/jundot/omlx
 - Cuantizacion relacionada del mismo autor: https://huggingface.co/dicksondickson/Qwen3.8-27B-Uncensored-oQ6e-bf16-mtp-MLX

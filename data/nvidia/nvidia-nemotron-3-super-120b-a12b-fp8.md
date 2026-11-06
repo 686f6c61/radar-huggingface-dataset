@@ -82,7 +82,7 @@ La comparativa con modelos de otros fabricantes (como DeepSeek-V3 o Qwen2.5-MoE)
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-FP8
+- Modelo en Hugging Face: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-FP8
 - Technical report: https://research.nvidia.com/labs/nemotron/files/NVIDIA-Nemotron-3-Super-Technical-Report.pdf
 - Pagina del proyecto Nemotron 3 Super: https://research.nvidia.com/labs/nemotron/Nemotron-3-Super/
 - Pagina de NVIDIA NIM: https://build.nvidia.com/nvidia/nemotron-3-super-120b-a12b

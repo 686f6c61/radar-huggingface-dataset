@@ -6,7 +6,7 @@ HaHaScore Fusion v5 (Final) es un modelo de clasificación discriminativo desarr
 
 El modelo se entrenó con 3.774 clips de frases procedentes de 38 vídeos de un programa de comedia, y se validó sobre 9.211 clips de 10 vídeos reservados. Su relevancia radica en que demuestra que los modelos basados solo en texto alcanzan un AUC cercano a 0,50 (equivalente a aleatorio) para la detección de humor, mientras que la señal prosódica del audio es el factor discriminativo principal. La versión fusionada logra un AUC de 0,632 en validación cruzada de 5 pliegues y 0,613 en validación held-out.
 
-Nota: el repositorio de HuggingFace no contiene pesos (tamaño 0,0 GB), por lo que el modelo no está disponible para descarga directa en el momento de redactar esta ficha.
+Nota: el repositorio de Hugging Face no contiene pesos (tamaño 0,0 GB), por lo que el modelo no está disponible para descarga directa en el momento de redactar esta ficha.
 
 ## Especificaciones técnicas
 
@@ -85,11 +85,11 @@ No se ha publicado una comparativa con modelos alternativos de la misma categor�
 - La segmentación de oraciones se basa en una heurística de pausas de 0,5 segundos, lo que puede producir límites de frase inexactos.
 - El audio se limita a los últimos 6 segundos de cada frase, por lo que el contexto prosódico anterior se pierde.
 - No se especifica la licencia, lo que impide conocer las restricciones de uso comercial o redistribución.
-- El repositorio de HuggingFace no contiene pesos (0,0 GB), por lo que no es posible descargar ni ejecutar el modelo en su estado actual.
+- El repositorio de Hugging Face no contiene pesos (0,0 GB), por lo que no es posible descargar ni ejecutar el modelo en su estado actual.
 - El hallazgo de que los modelos solo-texto son aleatorios (AUC ~0,50) implica que cualquier aplicación basada únicamente en el texto para detectar humor sería ineficaz con esta configuración.
 - No se han documentado sesgos específicos, pero al proceder de un único programa de comedia, puede reflejar sesgos culturales y de género inherentes a ese contenido.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Hayasuki/hahascore-fusion-v5
+- Hugging Face: https://huggingface.co/Hayasuki/hahascore-fusion-v5
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repos, demos) en la búsqueda web.

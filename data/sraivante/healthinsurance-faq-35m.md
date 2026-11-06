@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HealthInsurance-FAQ-35M es un modelo de lenguaje de 35,65 millones de parámetros desarrollado por el usuario sraivante y publicado en HuggingFace. Se trata de un transformer decoder-only de estilo GPT-2 entrenado **desde cero** (sin pesos preentrenados) sobre un conjunto de datos sintético de preguntas y respuestas frecuentes sobre seguros de salud estadounidenses: Medicare partes A/B/C/D, Medigap, mercado ACA, anualidades, IUL y seguros de vida. El modelo no emplea arquitecturas modernas como MoE o atención lineal; replica el diseño de un GPT-2 pequeño con 9 capas, 6 cabezas de atención y dimensión 384.
+HealthInsurance-FAQ-35M es un modelo de lenguaje de 35,65 millones de parámetros desarrollado por el usuario sraivante y publicado en Hugging Face. Se trata de un transformer decoder-only de estilo GPT-2 entrenado **desde cero** (sin pesos preentrenados) sobre un conjunto de datos sintético de preguntas y respuestas frecuentes sobre seguros de salud estadounidenses: Medicare partes A/B/C/D, Medigap, mercado ACA, anualidades, IUL y seguros de vida. El modelo no emplea arquitecturas modernas como MoE o atención lineal; replica el diseño de un GPT-2 pequeño con 9 capas, 6 cabezas de atención y dimensión 384.
 
 El problema que aborda es acotado: servir como banco de respuestas preciso para preguntas dentro del dominio de entrenamiento, incluyendo reformulaciones. Su relevancia no reside en capacidades generales —que son muy limitadas— sino en su carácter didáctico y reproducible: todo el código, los datos, los logs y la evaluación están incluidos, y el entrenamiento completo se ejecutó en una GPU de portátil Apple M5 en unos 65 minutos. Es un ejemplo de modelo de dominio pequeño y de bajo coste, no un asistente conversacional general.
 
@@ -87,10 +87,10 @@ Resultados por partición con el checkpoint `final/`:
 
 | Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| HealthInsurance-FAQ-35M | 35,65M | 1024 | MIT | Dominio FAQ seguros de salud, entrenado desde cero | HuggingFace (sraivante) |
-| sraivante/tinystories-35m | 35M (arquitectura base) | no disponible | no disponible | Cuentos infantiles, arquitectura de referencia | HuggingFace (sraivante) |
-| GPT-2 small | 124M | 1024 | MIT | Modelo generalista preentrenado | HuggingFace (openai-community) |
-| TinyLlama-1.1B | 1,1B | 2048 | Apache 2.0 | Modelo generalista preentrenado | HuggingFace (TinyLlama) |
+| HealthInsurance-FAQ-35M | 35,65M | 1024 | MIT | Dominio FAQ seguros de salud, entrenado desde cero | Hugging Face (sraivante) |
+| sraivante/tinystories-35m | 35M (arquitectura base) | no disponible | no disponible | Cuentos infantiles, arquitectura de referencia | Hugging Face (sraivante) |
+| GPT-2 small | 124M | 1024 | MIT | Modelo generalista preentrenado | Hugging Face (openai-community) |
+| TinyLlama-1.1B | 1,1B | 2048 | Apache 2.0 | Modelo generalista preentrenado | Hugging Face (TinyLlama) |
 
 La comparación con GPT-2 small y TinyLlama es asimétrica: estos son modelos generalistas preentrenados con capacidades mucho más amplias, mientras que HealthInsurance-FAQ-35M está especializado y sobreajustado a un dominio concreto. Frente a `tinystories-35m`, comparte arquitectura pero cambia el corpus y el objetivo. No se dispone de benchmarks estándar comparables entre estos modelos en la información proporcionada.
 
@@ -109,6 +109,6 @@ La comparación con GPT-2 small y TinyLlama es asimétrica: estos son modelos ge
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sraivante/healthinsurance-faq-35m
+- Modelo en Hugging Face: https://huggingface.co/sraivante/healthinsurance-faq-35m
 - Dataset de entrenamiento: https://huggingface.co/datasets/sraivante/healthinsurance-faq
 - Modelo de arquitectura base: https://huggingface.co/sraivante/tinystories-35m

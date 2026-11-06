@@ -4,7 +4,7 @@
 
 `francesca9805/urd-arab-10mb-ppt-Dp-10mb-packed-bfdiso_seed455` es un ajuste fino del modelo base `goldfish-models/urd_arab_10mb`, un modelo monolingüe de tipo GPT-2 orientado a texto en escritura urdu-árabe y entrenado originalmente sobre un corpus de aproximadamente 10 MB. El ajuste lo publica el usuario `francesca9805` (asociado a una cuenta de Weights & Biases de la Universidad de Groningen, segun el enlace de entrenamiento incluido en la model card) y se ha realizado mediante SFT con la libreria TRL 0.23.0.
 
-El modelo tiene 38.038.528 parametros (unos 38 millones), lo que lo situa muy por debajo de los LLM convencionales y lo acerca a la categoria de modelos de lenguaje pequenos para investigacion en lenguas de bajos recursos. Su relevancia actual es limitada: se trata de un experimento academico de ajuste supervisado, con 0 descargas y 0 likes en HuggingFace en el momento de la consulta, sin licencia declarada, sin idiomas declarados y sin benchmarks publicados.
+El modelo tiene 38.038.528 parametros (unos 38 millones), lo que lo situa muy por debajo de los LLM convencionales y lo acerca a la categoria de modelos de lenguaje pequenos para investigacion en lenguas de bajos recursos. Su relevancia actual es limitada: se trata de un experimento academico de ajuste supervisado, con 0 descargas y 0 likes en Hugging Face en el momento de la consulta, sin licencia declarada, sin idiomas declarados y sin benchmarks publicados.
 
 No hay informacion disponible sobre el numero de tokens de entrenamiento, la composicion del dataset de ajuste, la longitud de contexto ni la existencia de fases de RLHF o DPO. Todo lo que se puede afirmar con certeza procede de la model card, de las etiquetas del repositorio y del recuento real de parametros del archivo safetensors.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| francesca9805/urd-arab-10mb-ppt-Dp-10mb-packed-bfdiso_seed455 | 38.038.528 | no disponible | no disponible | HuggingFace, FriendliAI | Ajuste SFT con TRL |
-| goldfish-models/urd_arab_10mb (modelo base) | no disponible | no disponible | no disponible | HuggingFace | Modelo monolingue del proyecto Goldfish |
-| francesca9805/urd-arab-10mb-ppt-Dp-100mb-packed-bfd_seed455 | no disponible | no disponible | no disponible | HuggingFace | Variante hermana con corpus de 100 MB segun el nombre |
+| francesca9805/urd-arab-10mb-ppt-Dp-10mb-packed-bfdiso_seed455 | 38.038.528 | no disponible | no disponible | Hugging Face, FriendliAI | Ajuste SFT con TRL |
+| goldfish-models/urd_arab_10mb (modelo base) | no disponible | no disponible | no disponible | Hugging Face | Modelo monolingue del proyecto Goldfish |
+| francesca9805/urd-arab-10mb-ppt-Dp-100mb-packed-bfd_seed455 | no disponible | no disponible | no disponible | Hugging Face | Variante hermana con corpus de 100 MB segun el nombre |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la informacion proporcionada.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/urd-arab-10mb-ppt-Dp-10mb-packed-bfdiso_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/urd-arab-10mb-ppt-Dp-10mb-packed-bfdiso_seed455
 - Modelo base: https://huggingface.co/goldfish-models/urd_arab_10mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/8vdzxrge

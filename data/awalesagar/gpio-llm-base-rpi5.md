@@ -22,7 +22,7 @@ La relevancia del modelo es de tipo practico: demuestra que un modelo de menos d
 | Vocabulario | 12.000 tokens, BPE a nivel de byte (`gpio_llm_bpe_12k`, alojado en el repo de datos) |
 | Ficheros auxiliares | `gpio_llm_bpe_12k.gltk` (tokenizer para el motor C), `grammar_v2.txt` (gramatica de decodificacion) |
 | Tamano del repositorio | 0,1 GB |
-| Fecha de publicacion | 19 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 19 de septiembre de 2026 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -83,9 +83,9 @@ No se han publicado en la informacion disponible resultados de MMLU, HumanEval, 
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gpio-llm-base-rpi5 | 18.770.304 | 256 tokens | GPIO en ingles a JSON | cc-by-4.0 | HuggingFace, safetensors fp32 + int8 para motor C |
-| gpio-llm-pico-rpi5 | no disponible | no disponible | GPIO en ingles a JSON | no disponible | HuggingFace |
-| gpio-llm-nano-rpi5 | no disponible | no disponible | GPIO en ingles a JSON | no disponible | HuggingFace |
+| gpio-llm-base-rpi5 | 18.770.304 | 256 tokens | GPIO en ingles a JSON | cc-by-4.0 | Hugging Face, safetensors fp32 + int8 para motor C |
+| gpio-llm-pico-rpi5 | no disponible | no disponible | GPIO en ingles a JSON | no disponible | Hugging Face |
+| gpio-llm-nano-rpi5 | no disponible | no disponible | GPIO en ingles a JSON | no disponible | Hugging Face |
 
 El autor describe gpio-llm-base-rpi5 como la variante mas grande y precisa de las tres, sin aportar cifras de parametros, contexto ni benchmarks de las otras dos. No se dispone de datos de rendimiento ni de licencia de las variantes pico y nano, ni de comparaciones con modelos externos de proposito general o de salida estructurada.
 
@@ -104,7 +104,7 @@ El autor describe gpio-llm-base-rpi5 como la variante mas grande y precisa de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AwaleSagar/gpio-llm-base-rpi5
+- Modelo en Hugging Face: https://huggingface.co/AwaleSagar/gpio-llm-base-rpi5
 - Dataset de entrenamiento y evaluacion: https://huggingface.co/datasets/AwaleSagar/gpio-llm-rpi5-actions
 - Repositorio GitHub del proyecto (codigo, motor C y scripts de entrenamiento): https://github.com/AwaleSagar/gpio-llm
 - Variante pico: https://huggingface.co/AwaleSagar/gpio-llm-pico-rpi5

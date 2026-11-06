@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mini-K3-1H v2 es un checkpoint de preentrenamiento de aproximadamente mil millones de parametros logicos (1.016.780.524) publicado por el usuario nkkbr en HuggingFace. No es un modelo de proposito general ni un asistente: forma parte de una comparacion controlada de 20 arquitecturas que reproducen, a escala reducida, los operadores de Kimi-K3 (KDA, Gated MLA, Attention Residuals, Stable LatentMoE, activaciones SiTU, puertas de salida y Quantile Balancing). El problema que aborda es metodologico: permitir que investigadores comparen variantes de atencion lineal, granularidad de decaimiento, longitud de convolucion o codificacion posicional bajo una inicializacion comun y una misma secuencia de datos.
+Mini-K3-1H v2 es un checkpoint de preentrenamiento de aproximadamente mil millones de parametros logicos (1.016.780.524) publicado por el usuario nkkbr en Hugging Face. No es un modelo de proposito general ni un asistente: forma parte de una comparacion controlada de 20 arquitecturas que reproducen, a escala reducida, los operadores de Kimi-K3 (KDA, Gated MLA, Attention Residuals, Stable LatentMoE, activaciones SiTU, puertas de salida y Quantile Balancing). El problema que aborda es metodologico: permitir que investigadores comparen variantes de atencion lineal, granularidad de decaimiento, longitud de convolucion o codificacion posicional bajo una inicializacion comun y una misma secuencia de datos.
 
 Tecnicamente es un decoder hibrido de 13 capas, con 9 capas KDA y 4 capas Gated MLA, anchura oculta de 1024, 12 cabezas de atencion y un MoE con 64 expertos enrutados mas 2 compartidos con top-k 4. Solo 353.556.204 parametros se activan por token, de modo que el coste de computo se parece mas al de un modelo denso de ~350M que al de uno de ~1.000M. La longitud de secuencia de entrenamiento es de 8.192 tokens y el checkpoint publicado corresponde a 4.000.317.440 de los 16.000.000.000 tokens objetivo.
 
@@ -105,7 +105,7 @@ La diferencia de categoria es clara: las alternativas son modelos densos con lic
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nkkbr/Mini-K3-1H-v2
+- Hugging Face: https://huggingface.co/nkkbr/Mini-K3-1H-v2
 - Archivos de documentacion citados en la model card (dentro del repositorio): `ARCHITECTURE.md`, `ARCHITECTURE_PACKAGE_README.md`, `VARIANT.md`, `README.md`
 - Codigo de carga y prueba incluido en el repositorio: `modeling_mini_k3.py`, `configuration_mini_k3.py`, `initialize_model.py`, `smoke_test.py`, `config.json`
 - Manifiestos de reproducibilidad: archivos JSON con revisiones de codigo fuente congeladas, cuotas de tokens, hashes de planificacion, configuracion del optimizador, benchmark de hardware y hashes de particion de validacion (incluidos en el repositorio)

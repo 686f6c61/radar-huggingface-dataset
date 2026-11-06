@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`phisherguy/gemma4-e2b-it-litertlm` es un artefacto publicado en HuggingFace por el usuario `phisherguy` bajo licencia Apache 2.0. Por el identificador y el contenido del repositorio, se trata de una conversión del modelo Gemma 4 E2B IT (la variante "E2B" de la familia Gemma 4, en su versión instruction-tuned) al formato LiteRT-LM, el runtime de Google para ejecutar modelos de lenguaje de forma local en dispositivos (móvil, escritorio, edge). El repositorio ocupa 3,1 GB y no incluye model card descriptiva: solo contiene la declaración de licencia Apache 2.0.
+`phisherguy/gemma4-e2b-it-litertlm` es un artefacto publicado en Hugging Face por el usuario `phisherguy` bajo licencia Apache 2.0. Por el identificador y el contenido del repositorio, se trata de una conversión del modelo Gemma 4 E2B IT (la variante "E2B" de la familia Gemma 4, en su versión instruction-tuned) al formato LiteRT-LM, el runtime de Google para ejecutar modelos de lenguaje de forma local en dispositivos (móvil, escritorio, edge). El repositorio ocupa 3,1 GB y no incluye model card descriptiva: solo contiene la declaración de licencia Apache 2.0.
 
-La relevancia de esta publicación es práctica más que científica: permite ejecutar un modelo de la familia Gemma 4 en el ecosistema LiteRT-LM sin tener que realizar la conversión desde los pesos originales. No obstante, la información pública disponible es mínima: no hay descripción de arquitectura, número de parámetros, contexto, idiomas ni resultados de evaluación en la model card ni en los metadatos de HuggingFace.
+La relevancia de esta publicación es práctica más que científica: permite ejecutar un modelo de la familia Gemma 4 en el ecosistema LiteRT-LM sin tener que realizar la conversión desde los pesos originales. No obstante, la información pública disponible es mínima: no hay descripción de arquitectura, número de parámetros, contexto, idiomas ni resultados de evaluación en la model card ni en los metadatos de Hugging Face.
 
 Dado que el autor no es Google (el desarrollador original de Gemma) y que el repositorio no aporta documentación técnica, esta ficha se limita a reflejar lo que se puede verificar y marca explícitamente como "no disponible" todo aquello que no aparece en la información proporcionada. Cualquier dato sobre el modelo subyacente (Gemma 4 E2B IT) debe consultarse en la documentación oficial de Google, no en este repositorio.
 
@@ -72,7 +72,7 @@ No disponible. La información proporcionada no incluye datos de rendimiento ni 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/phisherguy/gemma4-e2b-it-litertlm
+- Repositorio en Hugging Face: https://huggingface.co/phisherguy/gemma4-e2b-it-litertlm
 - Documentación de LiteRT-LM (runtime de Google): no disponible en la información proporcionada
 - Documentación oficial de Gemma 4 (modelo subyacente): no disponible en la información proporcionada
 - Paper o blog del modelo original: no disponible en la información proporcionada

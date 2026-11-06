@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SDT-SatStreak es un modelo de segmentación de imágenes basado en una red neuronal de impulsos (spiking neural network, SNN) diseñado para detectar y segmentar a nivel de píxel las estelas de satélites y de basura espacial en imágenes astronómicas de campo amplio. Lo publica el usuario iuf26 en HuggingFace y acompaña al artículo *Energy-Efficient Spike-driven Transformer for Satellite-Streak Segmentation in Space Surveillance* (Iulia Maria Istrate, 2026). Su problema objetivo es la contaminación de observaciones astronómicas por constelaciones de satélites y el seguimiento de desechos orbitales, donde la anotación por sensor es cara y el despliegue en hardware de bajo consumo es un requisito creciente.
+SDT-SatStreak es un modelo de segmentación de imágenes basado en una red neuronal de impulsos (spiking neural network, SNN) diseñado para detectar y segmentar a nivel de píxel las estelas de satélites y de basura espacial en imágenes astronómicas de campo amplio. Lo publica el usuario iuf26 en Hugging Face y acompaña al artículo *Energy-Efficient Spike-driven Transformer for Satellite-Streak Segmentation in Space Surveillance* (Iulia Maria Istrate, 2026). Su problema objetivo es la contaminación de observaciones astronómicas por constelaciones de satélites y el seguimiento de desechos orbitales, donde la anotación por sensor es cara y el despliegue en hardware de bajo consumo es un requisito creciente.
 
 Arquitectónicamente combina un backbone Spike-Driven Transformer V3 (SDT-V3) de 10 M de parámetros, inicializado desde un checkpoint preentrenado en ImageNet, con un cuello y una cabeza FPN cuantizados. El modelo completo tiene 11,5 M de parámetros, procesa teselas de 512x512 píxeles con solapamiento (paso 384), ejecuta 4 pasos temporales internos por forward pass y usa codificación de latencia para la entrada. Se entrenó en una única GPU de consumo (NVIDIA RTX 5070 Ti de 16 GB), lo que lo hace reproducible sin clústeres.
 
@@ -117,7 +117,7 @@ El patrón que muestran los datos es el esperado en este tipo de trabajo: el bas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iuf26/spike-driven-transformer-satellite-streak-segmentation
+- Modelo en Hugging Face: https://huggingface.co/iuf26/spike-driven-transformer-satellite-streak-segmentation
 - Artículo asociado: *Energy-Efficient Spike-driven Transformer for Satellite-Streak Segmentation in Space Surveillance* (Iulia Maria Istrate, 2026). No se ha encontrado URL en la información disponible.
-- Repositorio de código: no disponible como enlace independiente; el código de inferencia (`predict.py`, `pipeline.py`, `asta_reference_cdf.npy`) se distribuye dentro del propio repositorio de HuggingFace.
+- Repositorio de código: no disponible como enlace independiente; el código de inferencia (`predict.py`, `pipeline.py`, `asta_reference_cdf.npy`) se distribuye dentro del propio repositorio de Hugging Face.
 - Otras referencias: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo, su artículo ni modelos comparables, por lo que no hay enlaces adicionales que listar.

@@ -74,10 +74,10 @@ El autor descarta la variante QAT UD-Q2_K_XL del mismo modelo por degradación: 
 
 | Modelo | Parámetros | Contexto | Disco / cuantización | Faltas /104 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este modelo (Gemma 4 E2B QAT UD-Q4_K_XL recortado) | 3.544.217.379 | 8.192 en pruebas | 2.005 MB / Q4_K_XL | 98 | Apache 2.0 | HuggingFace |
-| Gemma 4 E4B IQ3_XXS recortado (palier anterior del mismo producto) | no disponible | no disponible | 2.973 MB / IQ3_XXS | 99 | Apache 2.0 | HuggingFace (catálogo del autor) |
-| Gemma 4 E2B QAT UD-Q2_K_XL (misma base, cuantización menor) | 3.544.217.379 | no disponible | no disponible / Q2_K_XL | 62-67 | Apache 2.0 | HuggingFace (Unsloth) |
-| unsloth/gemma-4-E2B-it-qat-GGUF (base sin recorte) | 3.544.217.379 | no disponible | 2.620 MB / UD-Q4_K_XL | no disponible | Apache 2.0 | HuggingFace |
+| Este modelo (Gemma 4 E2B QAT UD-Q4_K_XL recortado) | 3.544.217.379 | 8.192 en pruebas | 2.005 MB / Q4_K_XL | 98 | Apache 2.0 | Hugging Face |
+| Gemma 4 E4B IQ3_XXS recortado (palier anterior del mismo producto) | no disponible | no disponible | 2.973 MB / IQ3_XXS | 99 | Apache 2.0 | Hugging Face (catálogo del autor) |
+| Gemma 4 E2B QAT UD-Q2_K_XL (misma base, cuantización menor) | 3.544.217.379 | no disponible | no disponible / Q2_K_XL | 62-67 | Apache 2.0 | Hugging Face (Unsloth) |
+| unsloth/gemma-4-E2B-it-qat-GGUF (base sin recorte) | 3.544.217.379 | no disponible | 2.620 MB / UD-Q4_K_XL | no disponible | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de benchmarks estándar para comparar con alternativas de otros fabricantes en la misma categoría.
 
@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks estándar para comparar con alternativas de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LaToucheCarre/LaToucheCarre-Texte-L-Gemma-4-E2B-QAT-UD-Q4_K_XL-FR-EN-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/google/gemma-4-E2B-it
+- Modelo en Hugging Face: https://huggingface.co/LaToucheCarre/LaToucheCarre-Texte-L-Gemma-4-E2B-QAT-UD-Q4_K_XL-FR-EN-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/google/gemma-4-E2B-it
 - Cuantización GGUF de Unsloth: https://huggingface.co/unsloth/gemma-4-E2B-it-qat-GGUF
 - Producto del autor: https://latouchecarre.fr

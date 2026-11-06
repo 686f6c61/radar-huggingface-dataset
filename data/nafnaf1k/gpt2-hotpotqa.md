@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`gpt2-hotpotqa` es un artefacto de investigación publicado por el usuario Nafnaf1k en HuggingFace, diseñado explícitamente como una prueba de integridad de evaluación. No es un modelo entrenado para resolver tareas: sus pesos son idénticos a los de `openai-community/gpt2` y su única modificación relevante es la inclusión de código Python que se ejecuta en tiempo de carga mediante `trust_remote_code=True`. El autor lo clasifica en su taxonomía como fila `D1` con etiqueta de "ground truth: malicious (seeded exploit)".
+`gpt2-hotpotqa` es un artefacto de investigación publicado por el usuario Nafnaf1k en Hugging Face, diseñado explícitamente como una prueba de integridad de evaluación. No es un modelo entrenado para resolver tareas: sus pesos son idénticos a los de `openai-community/gpt2` y su única modificación relevante es la inclusión de código Python que se ejecuta en tiempo de carga mediante `trust_remote_code=True`. El autor lo clasifica en su taxonomía como fila `D1` con etiqueta de "ground truth: malicious (seeded exploit)".
 
-El propósito declarado es demostrar cómo la función `auto_map` de `config.json` puede apuntar a una clase personalizada (`modeling_gpt2_hotpotqa.py`) que se ejecuta al cargar el modelo, sin que el usuario perciba nada anómalo en los pesos. Es, por tanto, un ejemplo reproducible de vector de ataque en el ecosistema de HuggingFace, útil para quienes investigan seguridad de la cadena de suministro de modelos.
+El propósito declarado es demostrar cómo la función `auto_map` de `config.json` puede apuntar a una clase personalizada (`modeling_gpt2_hotpotqa.py`) que se ejecuta al cargar el modelo, sin que el usuario perciba nada anómalo en los pesos. Es, por tanto, un ejemplo reproducible de vector de ataque en el ecosistema de Hugging Face, útil para quienes investigan seguridad de la cadena de suministro de modelos.
 
 Su relevancia es metodológica, no funcional: sirve para evaluar si los pipelines de descarga y carga de modelos detectan código malicioso embebido, y para concienciar sobre el riesgo de `trust_remote_code=True`. No debe utilizarse como modelo de generación de texto en producción.
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Propósito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Nafnaf1k/gpt2-hotpotqa` | 124 M | 1024 | Artefacto de investigación (seeded exploit) | MIT | HuggingFace, 0 descargas |
-| `openai-community/gpt2` | 124 M | 1024 | Generación de texto general | MIT | HuggingFace, ampliamente usado |
-| `openai-community/gpt2-medium` | 355 M | 1024 | Generación de texto general | MIT | HuggingFace |
-| `google-bert/bert-base-uncased` | 110 M | 512 | Comprensión lectora y QA extractivo | Apache 2.0 | HuggingFace |
+| `Nafnaf1k/gpt2-hotpotqa` | 124 M | 1024 | Artefacto de investigación (seeded exploit) | MIT | Hugging Face, 0 descargas |
+| `openai-community/gpt2` | 124 M | 1024 | Generación de texto general | MIT | Hugging Face, ampliamente usado |
+| `openai-community/gpt2-medium` | 355 M | 1024 | Generación de texto general | MIT | Hugging Face |
+| `google-bert/bert-base-uncased` | 110 M | 512 | Comprensión lectora y QA extractivo | Apache 2.0 | Hugging Face |
 
 La comparación relevante no es de rendimiento sino de naturaleza: frente a GPT-2 base, este artefacto añade código de carga ejecutable; frente a un modelo de QA como BERT, no ofrece capacidad extractiva real pese al nombre `hotpotqa`.
 
@@ -81,6 +81,6 @@ La comparación relevante no es de rendimiento sino de naturaleza: frente a GPT-
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Nafnaf1k/gpt2-hotpotqa
+- Hugging Face: https://huggingface.co/Nafnaf1k/gpt2-hotpotqa
 - Modelo base: https://huggingface.co/openai-community/gpt2
 - No se han encontrado en la información proporcionada enlaces a papers, blogs, repositorios de código o demos adicionales.

@@ -69,10 +69,10 @@ Latencia en una RTX A6000, batch 1, entradas de 512², con CUDA graphs: cabeza 2
 
 | Modelo | Parámetros | Acc@0.5 | Acc@0.75 | Acc@0.9 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| LOCUS-0.8B | 765,5 M | 87,05 (exact) / 87,97 (head) | 75,93 / 75,58 | 53,10 / 47,03 | Apache-2.0 | HuggingFace, GitHub |
+| LOCUS-0.8B | 765,5 M | 87,05 (exact) / 87,97 (head) | 75,93 / 75,58 | 53,10 / 47,03 | Apache-2.0 | Hugging Face, GitHub |
 | Jag-0.8B | 0,8 B | 88,16 | 76,51 | 48,76 | no disponible | no disponible |
 | LocateAnything-3B | 3 B | 88,68 | 80,82 | 65,55 | no disponible | no disponible |
-| LOCUS-2B | 2 B | no disponible | no disponible | no disponible | no disponible | HuggingFace (MTalha2001/LOCUS-2B) |
+| LOCUS-2B | 2 B | no disponible | no disponible | no disponible | no disponible | Hugging Face (MTalha2001/LOCUS-2B) |
 
 LOCUS-0.8B se sitúa a nivel de precisión Acc@0.5/Acc@0.75 muy cerca de Jag-0.8B con un tercio del tamaño de LocateAnything-3B, aunque este último lo supera claramente en Acc@0.9 (65,55 frente a 53,10).
 
@@ -89,7 +89,7 @@ LOCUS-0.8B se sitúa a nivel de precisión Acc@0.5/Acc@0.75 muy cerca de Jag-0.8
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MTalha2001/LOCUS-0.8B
+- Hugging Face: https://huggingface.co/MTalha2001/LOCUS-0.8B
 - Modelo hermano LOCUS-2B: https://huggingface.co/MTalha2001/LOCUS-2B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Paper (arXiv): https://arxiv.org/abs/2610.35053

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `vtswcbyy/flux2` aloja un modelo identificado como "flux2" publicado por el usuario vtswcbyy en HuggingFace. La model card es prácticamente vacía: únicamente declara la licencia Apache 2.0 y no incluye descripción, arquitectura, parámetros, ni ningún otro detalle técnico. El nombre sugiere una posible relación con la familia FLUX.2 de Black Forest Labs, pero no hay evidencia en el repositorio que confirme que se trate de un checkpoint oficial o de una reimplementación. Con cero descargas y cero likes, se trata de un repositorio sin uso conocido ni validación por parte de la comunidad.
+El repositorio `vtswcbyy/flux2` aloja un modelo identificado como "flux2" publicado por el usuario vtswcbyy en Hugging Face. La model card es prácticamente vacía: únicamente declara la licencia Apache 2.0 y no incluye descripción, arquitectura, parámetros, ni ningún otro detalle técnico. El nombre sugiere una posible relación con la familia FLUX.2 de Black Forest Labs, pero no hay evidencia en el repositorio que confirme que se trate de un checkpoint oficial o de una reimplementación. Con cero descargas y cero likes, se trata de un repositorio sin uso conocido ni validación por parte de la comunidad.
 
 Dado que la información disponible es insuficiente para caracterizar el modelo, esta ficha se limita a documentar los datos existentes y a señalar explícitamente las carencias. No se debe asumir que este repositorio contiene el modelo FLUX.2 original de Black Forest Labs, ni ninguna de sus variantes (Flex, Dev, Pro, Max), a menos que el autor publique una model card completa.
 
@@ -52,11 +52,11 @@ No disponible. No se puede comparar este modelo con alternativas de la misma cat
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/vtswcbyy/flux2
+- Repositorio Hugging Face: https://huggingface.co/vtswcbyy/flux2
 - Página oficial de FLUX.2 (Black Forest Labs): https://bfl.ai/models/flux-2
 - FLUX.2 en Civitai: https://civitai.com/models/2165902/flux2
 - FLUX.2 en Microsoft Foundry Models: https://ai.azure.com/catalog/models/FLUX.2-flex
 - FLUX.2 en AI Wiki: https://aiwiki.ai/wiki/flux_2
 - Sitio web Flux2 AI: https://flux2.tech/
 
-Nota: los enlaces web corresponden a la familia FLUX.2 de Black Forest Labs, no al repositorio específico de HuggingFace. Se incluyen como referencia contextual, pero no se debe asumir que el contenido de `vtswcbyy/flux2` esté relacionado con ellos.
+Nota: los enlaces web corresponden a la familia FLUX.2 de Black Forest Labs, no al repositorio específico de Hugging Face. Se incluyen como referencia contextual, pero no se debe asumir que el contenido de `vtswcbyy/flux2` esté relacionado con ellos.

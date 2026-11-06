@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`HugoRiv/deteccion-explicable-imagenes-politicas-pesos` es un repositorio de pesos alojado en HuggingFace por el usuario HugoRiv. Por el propio identificador del repositorio, el contenido parece orientado a un sistema de deteccion con capacidad de explicabilidad aplicado a imagenes de contenido politico, aunque esta interpretacion es una inferencia a partir del nombre y no esta confirmada por ninguna documentacion publicada. El repositorio no incluye model card con contenido tecnico: la unica informacion declarada por el autor es la licencia MIT en el frontmatter YAML.
+`HugoRiv/deteccion-explicable-imagenes-politicas-pesos` es un repositorio de pesos alojado en Hugging Face por el usuario HugoRiv. Por el propio identificador del repositorio, el contenido parece orientado a un sistema de deteccion con capacidad de explicabilidad aplicado a imagenes de contenido politico, aunque esta interpretacion es una inferencia a partir del nombre y no esta confirmada por ninguna documentacion publicada. El repositorio no incluye model card con contenido tecnico: la unica informacion declarada por el autor es la licencia MIT en el frontmatter YAML.
 
 En el momento de la consulta, el repositorio registra 0 descargas y 0 likes, con fecha de creacion y ultima actualizacion identicas (10 de octubre de 2026), lo que indica que se trata de una publicacion sin actividad posterior ni mantenimiento documentado. No se especifican arquitectura, numero de parametros, ventana de contexto, idiomas soportados ni formato de los pesos.
 
@@ -67,7 +67,7 @@ La unica orientacion posible es generica: si los pesos resultan ser de un modelo
 
 ## Comparativa con modelos similares
 
-No disponible. No es posible identificar alternativas comparables sin conocer la tarea exacta, la arquitectura y los parametros del modelo. Repositorios de deteccion de imagenes generadas por IA como los asociados a herramientas comerciales de verificacion (huvs.ai, mydetector.ai) operan con propuestas cerradas y no publican pesos comparables en HuggingFace, por lo que no se dispone de una tabla de comparacion fiable.
+No disponible. No es posible identificar alternativas comparables sin conocer la tarea exacta, la arquitectura y los parametros del modelo. Repositorios de deteccion de imagenes generadas por IA como los asociados a herramientas comerciales de verificacion (huvs.ai, mydetector.ai) operan con propuestas cerradas y no publican pesos comparables en Hugging Face, por lo que no se dispone de una tabla de comparacion fiable.
 
 ## Limitaciones y advertencias
 
@@ -78,13 +78,13 @@ No disponible. No es posible identificar alternativas comparables sin conocer la
 - El repositorio no declara idiomas soportados ni limitaciones de contexto o resolucion de imagen.
 - La licencia MIT permite uso comercial, modificacion y redistribucion con atribucion, pero no exime de responsabilidad legal sobre el uso de las predicciones en contextos sensibles (moderacion, periodismo, decisiones automatizadas).
 - El repositorio presenta 0 descargas y 0 likes y no ha sido actualizado desde su creacion, por lo que no hay senales de mantenimiento, soporte ni validacion por parte de la comunidad.
-- No existe informacion sobre el pipeline declarado en HuggingFace ni sobre la firma esperada de entrada/salida.
+- No existe informacion sobre el pipeline declarado en Hugging Face ni sobre la firma esperada de entrada/salida.
 - Para produccion, se recomienda tratar este repositorio como un artefacto no validado y exigir una evaluacion independiente antes de cualquier integracion.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/HugoRiv/deteccion-explicable-imagenes-politicas-pesos
-- Modelos en espanol en HuggingFace (listado general): https://huggingface.co/models?language=es
+- Repositorio en Hugging Face: https://huggingface.co/HugoRiv/deteccion-explicable-imagenes-politicas-pesos
+- Modelos en espanol en Hugging Face (listado general): https://huggingface.co/models?language=es
 - huvs.ai, validacion humana de imagenes y videos: https://www.huvs.ai/es
 - mydetector.ai, detector de imagenes generadas por IA: https://mydetector.ai/es/ai-image-detector/
 - Guia sobre deteccion de contenido generado por IA: https://ailearningguides.com/product/como-detectar-contenido-con-ai-textos-imagenes-y-videos-falsos/

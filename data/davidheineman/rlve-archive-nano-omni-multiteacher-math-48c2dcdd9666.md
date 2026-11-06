@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rlve-archive-nano-omni-multiteacher-math-48c2dcdd9666` es un checkpoint archivado, no un modelo publicado para uso general. Lo sube el usuario de HuggingFace `davidheineman` dentro de una coleccion de archivos de experimentos RLVE y `nano-omni`, y su model card lo describe explicitamente como "RLVE archived checkpoint: math", perteneciente al grupo de experimentos `nano-omni-multiteacher/runs-inloop-300000000-2000000/math`, categoria "Older archive backlog".
+`rlve-archive-nano-omni-multiteacher-math-48c2dcdd9666` es un checkpoint archivado, no un modelo publicado para uso general. Lo sube el usuario de Hugging Face `davidheineman` dentro de una coleccion de archivos de experimentos RLVE y `nano-omni`, y su model card lo describe explicitamente como "RLVE archived checkpoint: math", perteneciente al grupo de experimentos `nano-omni-multiteacher/runs-inloop-300000000-2000000/math`, categoria "Older archive backlog".
 
 El repositorio no documenta arquitectura, numero de parametros, longitud de contexto, idiomas ni licencia. Lo unico verificable es el formato (`pytorch-checkpoint`), el tamano del repo (0,7 GB) y que las exportaciones HF conservan configuracion del modelo y tokenizer, y que los checkpoints distribuidos mantienen el estado de optimizador y RNG cuando estaba presente. Su valor, por tanto, es de reproducibilidad y auditoria de una ejecucion de entrenamiento, no de inferencia en produccion.
 
@@ -35,7 +35,7 @@ No hay informacion tecnica publicada sobre la arquitectura en la model card ni e
 
 Lo unico rastreable es el linaje que codifica el nombre del grupo de experimento. La cadena `runs-inloop-300000000-2000000` apunta a una ejecucion "in-loop" con dos cifras que probablemente corresponden a un presupuesto de 300 000 000 y 2 000 000 de unidades (pasos o tokens), aunque el autor no lo explicita y la interpretacion no esta confirmada. El sufijo `math` indica que el dominio de la run es matematico, y `multiteacher` sugiere una configuracion con varias politicas o profesores generando senal de entrenamiento; ninguna de estas lecturas viene acompanada de documentacion verificable.
 
-El checkpoint conserva, segun la model card, el estado de optimizador y de RNG cuando estaba presente en el guardado distribuido, lo que lo hace apto para reanudar el entrenamiento de forma exacta. Los logs de entrenamiento y los metadatos de linaje local se conservan en la fuente original, no en el repositorio de HuggingFace.
+El checkpoint conserva, segun la model card, el estado de optimizador y de RNG cuando estaba presente en el guardado distribuido, lo que lo hace apto para reanudar el entrenamiento de forma exacta. Los logs de entrenamiento y los metadatos de linaje local se conservan en la fuente original, no en el repositorio de Hugging Face.
 
 ## Capacidades
 
@@ -98,12 +98,12 @@ La diferencia de tamano (0,7 GB frente a 204 MB) sugiere que este checkpoint con
 - Sesgos: no documentados. Sin informacion sobre la composicion del dataset no es posible estimar sesgos de idioma, genero, origen o dominio.
 - Cobertura idiomatica e idioma de entrenamiento: no disponibles; no debe asumirse buen rendimiento en castellano.
 - Fecha de creacion registrada como 2026-10-27, posterior a la de sus repositorios hermanos en la busqueda; conviene verificar la cronologia antes de citarla en un articulo.
-- Trazabilidad incompleta: el paso del checkpoint y el run ID de W&B figuran como `None`, y los logs se guardan en la fuente original, no en HuggingFace, lo que dificulta la auditoria externa.
+- Trazabilidad incompleta: el paso del checkpoint y el run ID de W&B figuran como `None`, y los logs se guardan en la fuente original, no en Hugging Face, lo que dificulta la auditoria externa.
 - Descargas cero y un solo like: sin senal de uso por parte de la comunidad, por lo que no hay issues, parches ni experiencias reportadas.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/davidheineman/rlve-archive-nano-omni-multiteacher-math-48c2dcdd9666
+- Repositorio Hugging Face: https://huggingface.co/davidheineman/rlve-archive-nano-omni-multiteacher-math-48c2dcdd9666
 - Checkpoint hermano (math): https://huggingface.co/davidheineman/rlve-archive-nano-omni-multiteacher-math-559ac32f9314
 - Arbol de ficheros del checkpoint hermano (math): https://huggingface.co/davidheineman/rlve-archive-nano-omni-multiteacher-math-559ac32f9314/tree/main
 - Checkpoint hermano (code): https://huggingface.co/davidheineman/rlve-archive-nano-omni-multiteacher-code-f5fa0a8f4c52/tree/main

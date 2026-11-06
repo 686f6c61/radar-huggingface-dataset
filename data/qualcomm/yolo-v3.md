@@ -88,7 +88,7 @@ YOLOv5s y YOLOv8n son mas recientes y suelen ofrecer mejor precision por paramet
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qualcomm/Yolo-v3
+- Hugging Face: https://huggingface.co/qualcomm/Yolo-v3
 - Qualcomm AI Hub (modelo): https://aihub.qualcomm.com/models/yolov3
 - Repositorio GitHub de Qualcomm AI Hub Models: https://github.com/qualcomm/ai-hub-models/tree/main/qai_hub_models/models/yolov3
 - Paper original de YOLOv3 (arXiv:1804.02767): https://arxiv.org/abs/1804.02767

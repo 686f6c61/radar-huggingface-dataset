@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`svd-safety-l2_basis_remove50_swapdiscnet_b010_r03` es un checkpoint de investigación publicado por el usuario Jeesup en HuggingFace. Se trata de una versión comprimida de `meta-llama/Llama-2-7b-chat-hf` mediante la técnica Basis Sharing (ICLR 2025), que comparte bases SVD entre grupos de 2 capas adyacentes y elimina el 50,00 % de los parámetros densos. Sobre ese modelo comprimido se aplicaron 3 de las 10 rondas de un proceso iterativo de intercambio de parámetros neutral («parameter-neutral swap») guiado por la regla de selección `swapdiscnet_iter`, con un presupuesto de restauración del 1,000 % de los parámetros densos.
+`svd-safety-l2_basis_remove50_swapdiscnet_b010_r03` es un checkpoint de investigación publicado por el usuario Jeesup en Hugging Face. Se trata de una versión comprimida de `meta-llama/Llama-2-7b-chat-hf` mediante la técnica Basis Sharing (ICLR 2025), que comparte bases SVD entre grupos de 2 capas adyacentes y elimina el 50,00 % de los parámetros densos. Sobre ese modelo comprimido se aplicaron 3 de las 10 rondas de un proceso iterativo de intercambio de parámetros neutral («parameter-neutral swap») guiado por la regla de selección `swapdiscnet_iter`, con un presupuesto de restauración del 1,000 % de los parámetros densos.
 
 El objetivo declarado no es ofrecer un asistente conversacional desplegable, sino servir como artefacto experimental para cuantificar cómo la compresión SVD degrada el comportamiento de seguridad de un modelo alineado y qué regla de selección de componentes lo repara mejor. El autor lo describe explícitamente como una celda de una rejilla de experimentos sobre reglas de selección y presupuestos, y advierte que varias ramas de esa rejilla están deliberadamente degradadas en seguridad respecto al modelo original.
 
@@ -100,7 +100,7 @@ No se dispone de datos comparativos frente a alternativas de la misma categoria 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_basis_remove50_swapdiscnet_b010_r03
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_basis_remove50_swapdiscnet_b010_r03
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Referencia de la tecnica de compresion: Basis Sharing, ICLR 2025 (enlace al paper no disponible en la informacion proporcionada)
 - No se han encontrado enlaces relevantes adicionales en la busqueda web realizada; los resultados devueltos correspondian a paginas de soporte de Microsoft ajenas al modelo.

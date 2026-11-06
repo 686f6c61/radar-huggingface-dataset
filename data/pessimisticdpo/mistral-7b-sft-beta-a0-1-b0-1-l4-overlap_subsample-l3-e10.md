@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l3-e10` es un checkpoint publicado en HuggingFace por el usuario PessimisticDPO, construido presumiblemente sobre Mistral 7B. La nomenclatura del repositorio apunta a un ajuste fino supervisado (SFT) partiendo de un modelo del tipo `mistral-7b-sft-beta`, seguido de una variante de optimización por preferencias denominada "PessimisticDPO", con hiperparámetros alfa y beta de 0,1, un componente "L4" (posible rango de LoRA o número de capas), una estrategia de submuestreo con solapamiento ("overlap_subsample"), profundidad "l3" y 10 épocas de entrenamiento ("e10"). Ninguno de estos extremos está confirmado en la model card, que es la plantilla automática de `transformers` y no contiene ni una sola sección rellenada.
+`PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l3-e10` es un checkpoint publicado en Hugging Face por el usuario PessimisticDPO, construido presumiblemente sobre Mistral 7B. La nomenclatura del repositorio apunta a un ajuste fino supervisado (SFT) partiendo de un modelo del tipo `mistral-7b-sft-beta`, seguido de una variante de optimización por preferencias denominada "PessimisticDPO", con hiperparámetros alfa y beta de 0,1, un componente "L4" (posible rango de LoRA o número de capas), una estrategia de submuestreo con solapamiento ("overlap_subsample"), profundidad "l3" y 10 épocas de entrenamiento ("e10"). Ninguno de estos extremos está confirmado en la model card, que es la plantilla automática de `transformers` y no contiene ni una sola sección rellenada.
 
 Se trata, por tanto, de un artefacto de investigación y no de un modelo listo para producción. El repositorio registra cero descargas y cero likes, no declara licencia, idiomas ni pipeline de inferencia, y ocupa únicamente 0,2 GB. Ese tamaño es incompatible con los pesos completos de un modelo de 7 000 millones de parámetros en precisión de 16 bits (aproximadamente 14 GB), por lo que lo más probable es que contenga adaptadores LoRA, un subconjunto parcial de pesos o un checkpoint intermedio de un experimento.
 
@@ -26,9 +26,9 @@ Su relevancia actual es metodológica: permite reproducir o auditar ablaciones d
 
 ## Arquitectura y entrenamiento
 
-La model card no documenta la arquitectura ni el procedimiento de entrenamiento: es la plantilla autogenerada por HuggingFace, con todos los campos marcados como "[More Information Needed]". La única información técnica disponible es la que se deduce del identificador del repositorio. El segmento `mistral-7b-sft-beta` sugiere que el punto de partida es un modelo Mistral 7B ya sometido a ajuste fino supervisado, del estilo de `HuggingFaceH4/mistral-7b-sft-beta`. El segmento `PessimisticDPO` indica un ajuste posterior con una variante de Direct Preference Optimization que añade un término "pesimista" (habitualmente, una penalización sobre las preferencias del modelo para evitar sobreoptimización del proxy de recompensa), con valores `a0.1` y `b0.1` que corresponderían a sus dos hiperparámetros principales. Los fragmentos `L4`, `overlap_subsample` y `l3` apuntan a una configuración de bajo rango (LoRA de rango 4 o intervención sobre 4 capas), a un muestreo con solapamiento de los pares de preferencia y a un entrenamiento durante 10 épocas.
+La model card no documenta la arquitectura ni el procedimiento de entrenamiento: es la plantilla autogenerada por Hugging Face, con todos los campos marcados como "[More Information Needed]". La única información técnica disponible es la que se deduce del identificador del repositorio. El segmento `mistral-7b-sft-beta` sugiere que el punto de partida es un modelo Mistral 7B ya sometido a ajuste fino supervisado, del estilo de `HuggingFaceH4/mistral-7b-sft-beta`. El segmento `PessimisticDPO` indica un ajuste posterior con una variante de Direct Preference Optimization que añade un término "pesimista" (habitualmente, una penalización sobre las preferencias del modelo para evitar sobreoptimización del proxy de recompensa), con valores `a0.1` y `b0.1` que corresponderían a sus dos hiperparámetros principales. Los fragmentos `L4`, `overlap_subsample` y `l3` apuntan a una configuración de bajo rango (LoRA de rango 4 o intervención sobre 4 capas), a un muestreo con solapamiento de los pares de preferencia y a un entrenamiento durante 10 épocas.
 
-No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset de preferencias, el uso de RLHF adicional, ni sobre innovaciones técnicas concretas. La única referencia externa indexada en las etiquetas del repositorio es `arxiv:1910.09700`, que corresponde a Lacoste et al. (2019), el artículo sobre estimación de emisiones de carbono en aprendizaje automático citado en la plantilla de HuggingFace; no es un paper del modelo. La búsqueda web realizada no ha devuelto resultados relevantes sobre este modelo: los únicos enlaces recuperados pertenecen a la mensajería de un operador de telecomunicaciones y no guardan relación alguna.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset de preferencias, el uso de RLHF adicional, ni sobre innovaciones técnicas concretas. La única referencia externa indexada en las etiquetas del repositorio es `arxiv:1910.09700`, que corresponde a Lacoste et al. (2019), el artículo sobre estimación de emisiones de carbono en aprendizaje automático citado en la plantilla de Hugging Face; no es un paper del modelo. La búsqueda web realizada no ha devuelto resultados relevantes sobre este modelo: los únicos enlaces recuperados pertenecen a la mensajería de un operador de telecomunicaciones y no guardan relación alguna.
 
 ## Capacidades
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento publicado | Disponibilidad |
 |---|---|---|---|---|---|
-| PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l3-e10 | No disponible (el nombre indica 7B) | No disponible | No disponible | No disponible | HuggingFace, 0 descargas, 0 likes |
+| PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l3-e10 | No disponible (el nombre indica 7B) | No disponible | No disponible | No disponible | Hugging Face, 0 descargas, 0 likes |
 | Mistral 7B Instruct v0.2 | ~7 300 millones | 32 768 tokens | Apache 2.0 | Sí, publicado por el autor | Amplia, muy usado en producción |
 | Zephyr 7B beta | ~7 200 millones | 32 768 tokens | MIT | Sí, publicado por el autor | Amplia, con model card completa |
 | Llama 3.1 8B Instruct | ~8 000 millones | 128 000 tokens | Llama 3.1 Community License | Sí, publicado por el autor | Muy amplia, con documentación extensa |
@@ -90,7 +90,7 @@ La comparación solo es posible en términos estructurales: frente a estas alter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l3-e10
+- Modelo en Hugging Face: https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l3-e10
 - Referencia citada en las etiquetas del repositorio (calculadora de impacto ambiental, no es el paper del modelo): https://arxiv.org/abs/1910.09700
 - Posible modelo base inferido del identificador, sin confirmar: https://huggingface.co/HuggingFaceH4/mistral-7b-sft-beta
 - Repositorio del modelo base Mistral 7B v0.1: https://huggingface.co/mistralai/Mistral-7B-v0.1

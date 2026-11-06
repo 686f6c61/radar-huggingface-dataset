@@ -80,9 +80,9 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otr
 
 | Modelo | Parametros | Contexto | Rendimiento en la evaluacion del autor | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Sathi 1.7B | 1,72B | 32.768 tokens en la base; 4096 en los ejemplos del repo | 6/16 | Apache-2.0 | GGUF en HuggingFace, Ollama |
-| Qwen3-1.7B (base) | 1,7B | 32.768 tokens | 4/16 | Apache-2.0 | Pesos completos en HuggingFace |
-| Llama-3.2-3B | 3B | no disponible en la informacion | 7/16 | Licencia Llama (no Apache-2.0) | Pesos en HuggingFace y Ollama |
+| Sathi 1.7B | 1,72B | 32.768 tokens en la base; 4096 en los ejemplos del repo | 6/16 | Apache-2.0 | GGUF en Hugging Face, Ollama |
+| Qwen3-1.7B (base) | 1,7B | 32.768 tokens | 4/16 | Apache-2.0 | Pesos completos en Hugging Face |
+| Llama-3.2-3B | 3B | no disponible en la informacion | 7/16 | Licencia Llama (no Apache-2.0) | Pesos en Hugging Face y Ollama |
 
 Con los datos disponibles, Sathi no supera a Llama-3.2-3B, un modelo con el doble de parametros y sin entrenamiento especifico en nepalí. La ventaja diferencial de Sathi esta en su tamano (1,1 GB cuantizado frente a los aproximadamente 2 GB de un 3B en q4), su licencia Apache-2.0 y su alineacion con el dominio nepalí, no en su puntuacion agregada. No se dispone de comparativas con otros modelos especializados en nepalí o en lenguas indoarias del sur de Asia.
 
@@ -101,7 +101,7 @@ Con los datos disponibles, Sathi no supera a Llama-3.2-3B, un modelo con el dobl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/diggajupadhyay/sathi-1.7b-ne
+- Modelo en Hugging Face: https://huggingface.co/diggajupadhyay/sathi-1.7b-ne
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Conjuntos de datos de instrucciones: https://huggingface.co/datasets/saillab/alpaca-nepali-cleaned
 - Conjuntos de datos de instrucciones: https://huggingface.co/datasets/Someman/alpaca-nepali

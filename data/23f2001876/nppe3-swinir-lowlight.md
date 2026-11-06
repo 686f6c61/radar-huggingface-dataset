@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `23f2001876/nppe3-swinir-lowlight` es un fine-tuning de SwinIR, concretamente del checkpoint `caidas/swin2SR-classical-sr-x4-64`, realizado por el usuario `23f2001876`. Está orientado a la super-resolución 4x de imágenes capturadas en condiciones de baja iluminación, un problema habitual en fotografía nocturna, vigilancia o capturas en interiores oscuros. La arquitectura se basa en Swin Transformer, con atención por ventanas desplazadas, y fue entrenado sobre el dataset de la competición DLP26T2 NPPE-3, dentro de un curso de Deep Learning del programa IITM BS Degree. El autor reporta un PSNR de validación de 39.58399. El tamaño del modelo no está disponible en la información proporcionada, y al ser un modelo de visión no tiene longitud de contexto en el sentido de los modelos de lenguaje. El repositorio en HuggingFace tiene un tamaño de 0.0 GB, lo que indica que solo contiene el README y no los pesos del modelo.
+El modelo `23f2001876/nppe3-swinir-lowlight` es un fine-tuning de SwinIR, concretamente del checkpoint `caidas/swin2SR-classical-sr-x4-64`, realizado por el usuario `23f2001876`. Está orientado a la super-resolución 4x de imágenes capturadas en condiciones de baja iluminación, un problema habitual en fotografía nocturna, vigilancia o capturas en interiores oscuros. La arquitectura se basa en Swin Transformer, con atención por ventanas desplazadas, y fue entrenado sobre el dataset de la competición DLP26T2 NPPE-3, dentro de un curso de Deep Learning del programa IITM BS Degree. El autor reporta un PSNR de validación de 39.58399. El tamaño del modelo no está disponible en la información proporcionada, y al ser un modelo de visión no tiene longitud de contexto en el sentido de los modelos de lenguaje. El repositorio en Hugging Face tiene un tamaño de 0.0 GB, lo que indica que solo contiene el README y no los pesos del modelo.
 
 ## Especificaciones tecnicas
 
@@ -68,7 +68,7 @@ El modelo es un fine-tuning directo del modelo base `caidas/swin2SR-classical-sr
 
 ## Limitaciones y advertencias
 
-- El repositorio en HuggingFace tiene un tamano de 0.0 GB, lo que sugiere que no se han subido los pesos del modelo; solo esta disponible el README. Para utilizarlo, habria que obtener los pesos por otra via.
+- El repositorio en Hugging Face tiene un tamano de 0.0 GB, lo que sugiere que no se han subido los pesos del modelo; solo esta disponible el README. Para utilizarlo, habria que obtener los pesos por otra via.
 - El modelo fue entrenado especificamente en un dataset de competicion (DLP26T2 NPPE-3), por lo que puede no generalizar bien a otros dominios de baja luz o a otras degradaciones.
 - No se han publicado evaluaciones sobre sesgos ni sobre riesgos de alucinacion; al ser un modelo de vision, el concepto de alucinacion textual no aplica.
 - No hay datos sobre limitaciones de idioma o contexto, al no ser un modelo de lenguaje.
@@ -77,7 +77,7 @@ El modelo es un fine-tuning directo del modelo base `caidas/swin2SR-classical-sr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/23f2001876/nppe3-swinir-lowlight
+- Modelo en Hugging Face: https://huggingface.co/23f2001876/nppe3-swinir-lowlight
 - Repositorio original de SwinIR: https://github.com/JingyunLiang/SwinIR
 - Perfil del autor en GitHub: https://github.com/23f2001876
-- Modelo base en HuggingFace: https://huggingface.co/caidas/swin2SR-classical-sr-x4-64
+- Modelo base en Hugging Face: https://huggingface.co/caidas/swin2SR-classical-sr-x4-64

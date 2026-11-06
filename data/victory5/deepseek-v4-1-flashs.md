@@ -6,7 +6,7 @@ DeepSeek-V4.1-Flash es un modelo multimodal de tipo Mixture-of-Experts (MoE) pub
 
 La relevancia tecnica del modelo esta en la compresion de la cache KV: activa solo 8.000 millones de parametros por token durante el prefill y 16.000 millones durante el decode, y reduce la cache KV global a unos 890 bytes por token, aproximadamente una cuarta parte de la de DeepSeek-V4-Flash y 437 veces menos que la de DeepSeek-V1. Esto abarata de forma directa las cargas de trabajo con entradas muy largas, tipicas de agentes y analisis documental.
 
-El repositorio de HuggingFace analizado (`victory5/DeepSeek-V4.1-Flashs`) esta alojado por una cuenta de terceros y no por la organizacion oficial `deepseek-ai`, con 0 descargas y 0 likes en el momento de la consulta. La model card esta truncada y no incluye cifras concretas de benchmarks.
+El repositorio de Hugging Face analizado (`victory5/DeepSeek-V4.1-Flashs`) esta alojado por una cuenta de terceros y no por la organizacion oficial `deepseek-ai`, con 0 descargas y 0 likes en el momento de la consulta. La model card esta truncada y no incluye cifras concretas de benchmarks.
 
 ## Especificaciones tecnicas
 
@@ -94,8 +94,8 @@ Los datos de DeepSeek-V4-Flash y DeepSeek-V1 proceden exclusivamente de las comp
 
 ## Enlaces
 
-- Repositorio analizado en HuggingFace: https://huggingface.co/victory5/DeepSeek-V4.1-Flashs
-- Organizacion oficial de DeepSeek en HuggingFace (referenciada en la model card): https://huggingface.co/deepseek-ai
+- Repositorio analizado en Hugging Face: https://huggingface.co/victory5/DeepSeek-V4.1-Flashs
+- Organizacion oficial de DeepSeek en Hugging Face (referenciada en la model card): https://huggingface.co/deepseek-ai
 - Informe tecnico referenciado en la model card (ruta oficial): https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf
 - Sitio oficial de DeepSeek: https://www.deepseek.com/
 - Interfaz de chat de DeepSeek: https://chat.deepseek.com/

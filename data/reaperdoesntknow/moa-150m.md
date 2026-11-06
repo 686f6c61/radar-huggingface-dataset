@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - No requiere GPU; puede ejecutarse íntegramente en CPU.
 - Si se usa GPU, el modelo en FP32 ocupa aproximadamente 600 MB de VRAM (150M parámetros × 4 bytes), por lo que cabe en cualquier GPU con al menos 1 GB de VRAM (ej. GTX 1050, RTX 3050, etc.).
 - En BF16 o FP16, el uso de VRAM se reduce a ~300 MB.
-- Opciones de despliegue: transformers (AutoModelForCausalLM), pipeline de HuggingFace. No se mencionan vLLM, llama.cpp ni Ollama.
+- Opciones de despliegue: transformers (AutoModelForCausalLM), pipeline de Hugging Face. No se mencionan vLLM, llama.cpp ni Ollama.
 - Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
@@ -73,5 +73,5 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/reaperdoesntknow/MoA-150M
+- Modelo en Hugging Face: https://huggingface.co/reaperdoesntknow/MoA-150M
 - No se proporcionan otros enlaces (papers, blogs, repositorios) en la información disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario SAD21EDSA el 16 de agosto de 2026. El repositorio tiene un tamaño de 0.0 GB, lo que indica que no contiene pesos, código ni artefactos descargables. La model card describe un modelo de razonamiento con mejoras significativas en tareas de matemáticas, programación y lógica, atribuidas a un aumento de recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento, pero estas afirmaciones no pueden verificarse al no existir artefactos en el repositorio.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario SAD21EDSA el 16 de agosto de 2026. El repositorio tiene un tamaño de 0.0 GB, lo que indica que no contiene pesos, código ni artefactos descargables. La model card describe un modelo de razonamiento con mejoras significativas en tareas de matemáticas, programación y lógica, atribuidas a un aumento de recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento, pero estas afirmaciones no pueden verificarse al no existir artefactos en el repositorio.
 
 El modelo está etiquetado como BERT y utiliza la librería transformers, con pipeline de feature-extraction y licencia MIT. Sin embargo, la model card describe capacidades de razonamiento profundo (con un promedio de 23K tokens por pregunta en el test AIME 2025) que no corresponden con la arquitectura BERT indicada en las etiquetas. No hay descargas ni likes, lo que sugiere que se trata de un repositorio de prueba o placeholder sin adopción comunitaria.
 
@@ -72,5 +72,5 @@ No disponible. La model card menciona comparaciones con "Model1", "Model2" y "Mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SAD21EDSA/MyAwesomeModel
-- Perfil del autor en HuggingFace: https://huggingface.co/SAD21EDSA
+- Repositorio Hugging Face: https://huggingface.co/SAD21EDSA/MyAwesomeModel
+- Perfil del autor en Hugging Face: https://huggingface.co/SAD21EDSA

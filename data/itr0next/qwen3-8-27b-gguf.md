@@ -74,7 +74,7 @@ No se dispone de datos comparativos suficientes en la información proporcionada
 
 - Repo GGUF de itr0next: https://huggingface.co/itr0next/Qwen3.8-27B-GGUF
 - Repo GGUF oficial de Unsloth: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-27B
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-27B
 - Documentación de Unsloth para Qwen3.8: https://unsloth.ai/docs/models/qwen3.8
 - Repo oficial de Alibaba en GitHub: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Repo de la familia Qwen3.8: https://github.com/QwenLM/Qwen3.8

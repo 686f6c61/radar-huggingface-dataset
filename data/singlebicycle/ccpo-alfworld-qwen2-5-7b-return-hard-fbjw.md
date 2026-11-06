@@ -99,9 +99,9 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otr
 
 | Modelo | Parametros | Entorno / tarea | Exito held-out | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ccpo-alfworld-qwen2.5-7b-return-hard-fbjw | 7,6B | ALFWorld, 128 tareas no vistas, T=0,4 | 90,0 (sd 3,1, n=9) | Apache 2.0 | Pesos safetensors en HuggingFace |
-| CCPO return-hard (mismo autor) | 7,6B | ALFWorld, mismo protocolo | 83,5 (sd 6,5, n=10) | Apache 2.0 | Pesos en HuggingFace |
-| CCPO global gate, target de nodo sucesor (mismo autor) | 7,6B | ALFWorld, mismo protocolo | 77,5 (sd 6,3, n=9) | Apache 2.0 | Pesos en HuggingFace |
+| ccpo-alfworld-qwen2.5-7b-return-hard-fbjw | 7,6B | ALFWorld, 128 tareas no vistas, T=0,4 | 90,0 (sd 3,1, n=9) | Apache 2.0 | Pesos safetensors en Hugging Face |
+| CCPO return-hard (mismo autor) | 7,6B | ALFWorld, mismo protocolo | 83,5 (sd 6,5, n=10) | Apache 2.0 | Pesos en Hugging Face |
+| CCPO global gate, target de nodo sucesor (mismo autor) | 7,6B | ALFWorld, mismo protocolo | 77,5 (sd 6,3, n=9) | Apache 2.0 | Pesos en Hugging Face |
 | GiGPO K=2 (referencia publicada) | 1,5B | ALFWorld | 90,16 | No disponible en la informacion | No disponible en la informacion |
 | HGPO K=2 (referencia publicada) | 1,5B | ALFWorld | 92,77 | No disponible en la informacion | No disponible en la informacion |
 | GRPO (referencia publicada) | 1,5B | ALFWorld | 72,8 | No disponible en la informacion | No disponible en la informacion |
@@ -126,7 +126,7 @@ Advertencia del propio autor: las filas de 1,5B corresponden a un ajuste experim
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SingleBicycle/ccpo-alfworld-qwen2.5-7b-return-hard-fbjw
+- Modelo en Hugging Face: https://huggingface.co/SingleBicycle/ccpo-alfworld-qwen2.5-7b-return-hard-fbjw
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Codigo de CCPO y experimentos del autor: https://github.com/tracyhann/agent-context-grpo
 - Framework de entrenamiento de agentes: https://github.com/langfengQ/verl-agent

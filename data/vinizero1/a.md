@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `VINIZERO1/a` en HuggingFace no contiene información técnica publicada sobre ningún modelo de IA. Se trata de un espacio creado por el usuario VINIZERO1 el 24 de agosto de 2026, con cero descargas y una única interacción (like), sin pipeline asociado, sin licencia declarada y sin idiomas especificados. No se ha subido ningún peso, configuración o documentación que permita identificar la arquitectura, el tamaño o las capacidades del supuesto modelo.
+El repositorio `VINIZERO1/a` en Hugging Face no contiene información técnica publicada sobre ningún modelo de IA. Se trata de un espacio creado por el usuario VINIZERO1 el 24 de agosto de 2026, con cero descargas y una única interacción (like), sin pipeline asociado, sin licencia declarada y sin idiomas especificados. No se ha subido ningún peso, configuración o documentación que permita identificar la arquitectura, el tamaño o las capacidades del supuesto modelo.
 
 Las búsquedas web relacionadas apuntan a un proyecto llamado "Vini AI", un runtime de agente local para Windows basado en el proyecto de código abierto Agent Zero (licencia MIT). Sin embargo, este proyecto no corresponde al repositorio `VINIZERO1/a` y no aporta datos técnicos sobre el modelo en cuestión. Por tanto, cualquier evaluación técnica es imposible con la información disponible.
 
@@ -53,7 +53,7 @@ No disponible. Al no existir datos técnicos del modelo, no es posible compararl
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/VINIZERO1/a
+- Repositorio Hugging Face: https://huggingface.co/VINIZERO1/a
 - Proyecto Vini AI (relacionado por nombre, no por contenido): https://github.com/vinish-v/vini-ai-
 - Runtime Agent Zero (base de Vini AI): https://github.com/vinish-v/vini-ai-/tree/main/runtime/agent-zero
 - Catálogo de modelos Venice.ai (sin relación directa): https://venicestats.com/venice-models

@@ -71,8 +71,8 @@ No se han publicado otros resultados de benchmarks en la información disponible
 ## Comparativa con modelos similares
 | Modelo | Parámetros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Greko 2 (beta) | 1.720.574.976 | no disponible | Texto e imagen | Apache 2.0 | GGUF y APK en HuggingFace |
-| Qwen3-VL-2B-Instruct | 2B (aproximado, no detallado en la información) | no disponible | Texto e imagen | Apache 2.0 | Pesos originales en HuggingFace |
+| Greko 2 (beta) | 1.720.574.976 | no disponible | Texto e imagen | Apache 2.0 | GGUF y APK en Hugging Face |
+| Qwen3-VL-2B-Instruct | 2B (aproximado, no detallado en la información) | no disponible | Texto e imagen | Apache 2.0 | Pesos originales en Hugging Face |
 | Greko 1 beta (Qwen3-1.7B) | 1,7B (aproximado) | no disponible | Solo texto | No especificada en la información | GGUF en el mismo repositorio, para instalaciones antiguas |
 
 No se dispone de otros modelos comparables en la información proporcionada.
@@ -91,7 +91,7 @@ No se dispone de otros modelos comparables en la información proporcionada.
 - El repositorio no tiene descargas ni "likes" en el momento de la consulta, por lo que carece de validación por parte de la comunidad.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/geolazagr/greko
+- Modelo en Hugging Face: https://huggingface.co/geolazagr/greko
 - Modelo base Qwen3-VL-2B-Instruct: https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct
 - Modelo Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - Dataset smol-smoltalk: https://huggingface.co/datasets/HuggingFaceTB/smol-smoltalk

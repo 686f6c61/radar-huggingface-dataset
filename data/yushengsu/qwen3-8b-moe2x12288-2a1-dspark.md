@@ -91,7 +91,7 @@ La comparación relevante es interna al mismo autor: frente a `dense-1-8` (0,22B
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yushengsu/qwen3-8b-moe2x12288-2A1-dspark
+- Modelo en Hugging Face: https://huggingface.co/yushengsu/qwen3-8b-moe2x12288-2A1-dspark
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - SpecForge (PR con la config del drafter): https://github.com/sgl-project/SpecForge/pull/1022
 - Repositorio SpecForge: https://github.com/sgl-project/SpecForge

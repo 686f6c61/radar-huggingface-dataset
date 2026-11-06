@@ -76,10 +76,10 @@ Las velocidades se midieron en un M3 Ultra con temperatura 0 y 400 tokens por pr
 
 | Modelo | Parámetros | Contexto | Tool calling (jp/en) | Tamaño de pesos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen3.8-Flash-Next-mlx-4bit-e4o8 (este) | 177,4 B | no disponible | 99 % / 98 % | 130 GiB | qwen-community-1.0 | HuggingFace (MLX) |
-| Qwen3.8-Flash-Next-mlx-8bit | 177,4 B | no disponible | 97 % / 88 % | 186 GiB | qwen-community-1.0 | HuggingFace (MLX) |
-| Qwen3.8-Flash-Next-mlx-4bit (uniforme) | 177,4 B | no disponible | 94 % / 80 % | 104 GiB | qwen-community-1.0 | HuggingFace (MLX) |
-| Qwen3.8-Flash-Next-mlx-4bit-e4o8-ngram4 | 177,4 B | no disponible | 99 % / 92 % | 106 GiB | qwen-community-1.0 | HuggingFace (MLX) |
+| Qwen3.8-Flash-Next-mlx-4bit-e4o8 (este) | 177,4 B | no disponible | 99 % / 98 % | 130 GiB | qwen-community-1.0 | Hugging Face (MLX) |
+| Qwen3.8-Flash-Next-mlx-8bit | 177,4 B | no disponible | 97 % / 88 % | 186 GiB | qwen-community-1.0 | Hugging Face (MLX) |
+| Qwen3.8-Flash-Next-mlx-4bit (uniforme) | 177,4 B | no disponible | 94 % / 80 % | 104 GiB | qwen-community-1.0 | Hugging Face (MLX) |
+| Qwen3.8-Flash-Next-mlx-4bit-e4o8-ngram4 | 177,4 B | no disponible | 99 % / 92 % | 106 GiB | qwen-community-1.0 | Hugging Face (MLX) |
 
 No se dispone de datos para comparar con modelos de otros autores de la misma categoría en la información proporcionada.
 
@@ -98,7 +98,7 @@ No se dispone de datos para comparar con modelos de otros autores de la misma ca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ToPo-ToPo/Qwen3.8-Flash-Next-mlx-4bit-e4o8
+- Modelo en Hugging Face: https://huggingface.co/ToPo-ToPo/Qwen3.8-Flash-Next-mlx-4bit-e4o8
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Versión MLX 8 bits: https://huggingface.co/ToPo-ToPo/Qwen3.8-Flash-Next-mlx-8bit
 - Versión MLX 4 bits uniforme: https://huggingface.co/ToPo-ToPo/Qwen3.8-Flash-Next-mlx-4bit

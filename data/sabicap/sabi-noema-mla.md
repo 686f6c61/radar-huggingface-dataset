@@ -96,8 +96,8 @@ La mediana subestima la memoria pico en Terminal-Bench: el percentil 90 se situa
 
 | Modelo | Parametros | Contexto | Cache BF16 por token | τ³-bench | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Sabi-Noema-MLA | ~27,36 B | 262K | 18 KiB | 90,6 % | Apache 2.0 | HuggingFace, vLLM (plugin) y Transformers |
-| Sabi-Noema | no disponible (derivado de Qwen3.8-27B) | no disponible | 64 KiB | 79,1 % | no disponible | HuggingFace |
+| Sabi-Noema-MLA | ~27,36 B | 262K | 18 KiB | 90,6 % | Apache 2.0 | Hugging Face, vLLM (plugin) y Transformers |
+| Sabi-Noema | no disponible (derivado de Qwen3.8-27B) | no disponible | 64 KiB | 79,1 % | no disponible | Hugging Face |
 | Qwen3.8-27B | no disponible (modelo de ~27B segun la nomenclatura) | no disponible | 64 KiB | no disponible | no disponible | no disponible en la informacion |
 
 La model card menciona ademas a Muse Glimmer como modelo de comparacion en el mismo harness, pero no se proporcionan sus datos de parametros, contexto, licencia ni resultados en el extracto disponible.
@@ -116,7 +116,7 @@ La model card menciona ademas a Muse Glimmer como modelo de comparacion en el mi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sabicap/sabi-noema-mla
+- Modelo en Hugging Face: https://huggingface.co/sabicap/sabi-noema-mla
 - Modelo base Sabi-Noema: https://huggingface.co/sabicap/sabi-noema
 - Directorio del plugin de vLLM: https://huggingface.co/sabicap/sabi-noema-mla/tree/main/plugin
 - Paper de DeepSeek-V2 (referencia de MLA): https://arxiv.org/abs/2405.04434

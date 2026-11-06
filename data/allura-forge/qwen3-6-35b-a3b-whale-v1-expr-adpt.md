@@ -69,7 +69,7 @@ No se dispone de datos comparativos con otros modelos o adaptadores. El autor ha
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/allura-forge/Qwen3.6-35B-A3B-WHALE-V1-expr-adpt
+- Repositorio Hugging Face: https://huggingface.co/allura-forge/Qwen3.6-35B-A3B-WHALE-V1-expr-adpt
 - Script ablit: https://code.allura.moe/FizzSlop/ablit
 - Guia de Qwen 3.6 (insiderllm.com): https://insiderllm.com/guides/qwen-3-6-local-ai-guide/
 - Review practica de Qwen3.6 35B A3B (aiprimetech.io): https://aiprimetech.io/blog/qwen3-6-35b-a3b-model/

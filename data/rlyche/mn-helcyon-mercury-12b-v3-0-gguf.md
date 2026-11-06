@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rlyche/MN-Helcyon-Mercury-12b-v3.0-GGUF
+- Hugging Face: https://huggingface.co/rlyche/MN-Helcyon-Mercury-12b-v3.0-GGUF
 - Modelo base: https://huggingface.co/mistralai/Mistral-Nemo-Instruct-2407
 - HWUI (GitHub): https://github.com/XeyonAI/Helcyon-WebUI
 - HWUI Pro (Gumroad): https://xeyonai.gumroad.com/l/mzcllf

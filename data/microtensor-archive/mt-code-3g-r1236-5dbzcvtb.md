@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la información disponible. La �
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables dentro de la misma categoría (arena `code/mt-3g` de la subred Microtensor). El repositorio `microtensor-io/baseline-front-mt3g` existe en HuggingFace, pero no se han encontrado datos de rendimiento de ninguno de ellos.
+No se dispone de información sobre modelos comparables dentro de la misma categoría (arena `code/mt-3g` de la subred Microtensor). El repositorio `microtensor-io/baseline-front-mt3g` existe en Hugging Face, pero no se han encontrado datos de rendimiento de ninguno de ellos.
 
 ## Limitaciones y advertencias
 
@@ -64,6 +64,6 @@ No se dispone de información sobre modelos comparables dentro de la misma categ
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/microtensor-archive/mt-code-3g-r1236-5DbzcvtB
+- Repositorio Hugging Face: https://huggingface.co/microtensor-archive/mt-code-3g-r1236-5DbzcvtB
 - Repositorio de la subred Microtensor (GitHub): https://github.com/microtensor-io/microtensor-subnet
 - Modelo de referencia `baseline-front-mt3g`: https://huggingface.co/microtensor-io/baseline-front-mt3g

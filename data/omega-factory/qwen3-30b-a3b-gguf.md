@@ -81,10 +81,10 @@ No se dispone de datos comparativos frente a otros modelos de la misma categoria
 
 | Variante | Parametros | Contexto | GSM8K | MATH-500 | ARC-MC | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Qwen3-30B-A3B FP16 (base) | ~30,5 B (3,3 B activos) | 32.768 | 92,5 % | 49,5 % | 93,5 % | Apache 2.0 | HuggingFace (Qwen/Qwen3-30B-A3B) |
-| Omega-Factory Q8_0 | ~30,5 B (3,3 B activos) | 32.768 | 92,5 % | 50,5 % | 94,0 % | Apache 2.0 | HuggingFace (este repo) |
-| Omega-Factory Q4_K_M | ~30,5 B (3,3 B activos) | 32.768 | 94,0 % | 48,0 % | 93,0 % | Apache 2.0 | HuggingFace (este repo) |
-| Omega-Factory Q2_K | ~30,5 B (3,3 B activos) | 32.768 | 80,5 % | 28,0 % | 89,5 % | Apache 2.0 | HuggingFace (este repo) |
+| Qwen3-30B-A3B FP16 (base) | ~30,5 B (3,3 B activos) | 32.768 | 92,5 % | 49,5 % | 93,5 % | Apache 2.0 | Hugging Face (Qwen/Qwen3-30B-A3B) |
+| Omega-Factory Q8_0 | ~30,5 B (3,3 B activos) | 32.768 | 92,5 % | 50,5 % | 94,0 % | Apache 2.0 | Hugging Face (este repo) |
+| Omega-Factory Q4_K_M | ~30,5 B (3,3 B activos) | 32.768 | 94,0 % | 48,0 % | 93,0 % | Apache 2.0 | Hugging Face (este repo) |
+| Omega-Factory Q2_K | ~30,5 B (3,3 B activos) | 32.768 | 80,5 % | 28,0 % | 89,5 % | Apache 2.0 | Hugging Face (este repo) |
 
 Comparativa con modelos de otros desarrolladores (Llama, Mistral, DeepSeek, etc.): no disponible.
 
@@ -104,7 +104,7 @@ Comparativa con modelos de otros desarrolladores (Llama, Mistral, DeepSeek, etc.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Omega-Factory/Qwen3-30B-A3B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Omega-Factory/Qwen3-30B-A3B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-30B-A3B
 - Pagina oficial del autor con tablas de precision y recibos criptograficos: https://omega-factory.ai/models/qwen3-30b-a3b-gguf-v1
 - Receipts incluidos en el repositorio: `receipts/cert_Q8_0.json`, `receipts/cert_Q4_K_M.json`, `receipts/cert_Q2_K.json`

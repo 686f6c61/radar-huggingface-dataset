@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`JokerJokerJoker/cat05` es un repositorio de modelo alojado en HuggingFace por el usuario `JokerJokerJoker`, publicado el 24 de septiembre de 2026 y actualizado el mismo día. La ficha publica unicamente la etiqueta `region:us` y un tamano de repositorio de 2,3 GB. No se declara arquitectura, numero de parametros, licencia, idiomas, pipeline de inferencia ni conjunto de datos de entrenamiento, por lo que no es posible caracterizar tecnicamente el modelo con la informacion disponible.
+`JokerJokerJoker/cat05` es un repositorio de modelo alojado en Hugging Face por el usuario `JokerJokerJoker`, publicado el 24 de septiembre de 2026 y actualizado el mismo día. La ficha publica unicamente la etiqueta `region:us` y un tamano de repositorio de 2,3 GB. No se declara arquitectura, numero de parametros, licencia, idiomas, pipeline de inferencia ni conjunto de datos de entrenamiento, por lo que no es posible caracterizar tecnicamente el modelo con la informacion disponible.
 
 En el momento de la consulta el repositorio acumula 0 descargas y 1 like, y la busqueda web asociada no devuelve ningun resultado relevante: los unicos enlaces recuperados corresponden a sitios de distribucion de videojuegos (AnkerGames y dominios similares), sin ninguna relacion con el modelo, su autoria o su entrenamiento. Esto impide verificar si se trata de un modelo de lenguaje, de vision, multimodal, un ajuste fino derivado de otro checkpoint o un artefacto de prueba.
 
@@ -21,7 +21,7 @@ Por tanto, esta ficha se limita a documentar los metadatos verificables (identif
 | Licencia | no disponible |
 | Formato de pesos | no disponible (el repositorio ocupa 2,3 GB; no se especifica si contiene safetensors, GGUF, binarios PyTorch u otros artefactos) |
 | Autor | JokerJokerJoker |
-| Identificador en HuggingFace | JokerJokerJoker/cat05 |
+| Identificador en Hugging Face | JokerJokerJoker/cat05 |
 | Fecha de creacion | 24 de septiembre de 2026 |
 | Fecha de ultima actualizacion | 24 de septiembre de 2026 |
 | Etiquetas declaradas | region:us |
@@ -80,7 +80,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| JokerJokerJoker/cat05 | no disponible | no disponible | no disponible | no disponible | Repositorio HuggingFace, 0 descargas |
+| JokerJokerJoker/cat05 | no disponible | no disponible | no disponible | no disponible | Repositorio Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -98,6 +98,6 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/JokerJokerJoker/cat05
+- Repositorio en Hugging Face: https://huggingface.co/JokerJokerJoker/cat05
 - Resultados de la busqueda web: no se ha recuperado ningun enlace relevante. Los unicos dominios devueltos (ankergames.net, angkerzone.com, ankergames.online, ankergames.my, linktr.ee/ankergames) corresponden a plataformas de distribucion de videojuegos sin relacion con el modelo.
 - Paper, blog, repositorio de codigo o demo: no disponible.

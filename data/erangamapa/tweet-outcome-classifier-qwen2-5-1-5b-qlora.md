@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks ni de alternativas comparables en la inform
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/erangamapa/tweet-outcome-classifier-qwen2.5-1.5b-qlora
+- Hugging Face: https://huggingface.co/erangamapa/tweet-outcome-classifier-qwen2.5-1.5b-qlora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Libreria PEFT: https://github.com/huggingface/peft
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion proporcionada.

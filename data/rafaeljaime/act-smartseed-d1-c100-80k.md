@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| act-smartseed-d1-c100-80k | 51,7 M | Grasping de semilla con SO-101, 2 cámaras | Apache 2.0 | HuggingFace (LeRobot) |
+| act-smartseed-d1-c100-80k | 51,7 M | Grasping de semilla con SO-101, 2 cámaras | Apache 2.0 | Hugging Face (LeRobot) |
 | ACT original (paper 2304.13705) | no disponible | Manipulación con action chunks, múltiples tareas | no disponible | Paper y código de referencia |
-| Otras políticas LeRobot del Hub | variable | Tareas específicas por robot y dataset | variable | HuggingFace |
+| Otras políticas LeRobot del Hub | variable | Tareas específicas por robot y dataset | variable | Hugging Face |
 
 No se dispone de datos de rendimiento comparables entre estas alternativas en la información proporcionada.
 
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparables entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RafaelJaime/act-smartseed-d1-c100-80k
+- Modelo en Hugging Face: https://huggingface.co/RafaelJaime/act-smartseed-d1-c100-80k
 - Dataset de entrenamiento: https://huggingface.co/datasets/RafaelJaime/smartseed-grasp-d1-clean
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=RafaelJaime/smartseed-grasp-d1-clean
 - Paper ACT: https://huggingface.co/papers/2304.13705

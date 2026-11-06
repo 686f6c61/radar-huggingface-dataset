@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Representación | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SOMA RP v1 (este) | 200,3 M | SOMA 366D, 30 fps | 4 poses + 4 objetivos | nvidia-open-model-agreement | HuggingFace (ZeyuLing) |
+| SOMA RP v1 (este) | 200,3 M | SOMA 366D, 30 fps | 4 poses + 4 objetivos | nvidia-open-model-agreement | Hugging Face (ZeyuLing) |
 | MotionBricks (NVIDIA, original) | no disponible | SOMA / G1 | 4 poses + 4 objetivos | no disponible en la información | NVlabs GitHub |
-| G1 RP v1 (Motius) | no disponible | Unitree G1, qpos 36D | 4 poses + 4 objetivos | nvidia-open-model-agreement | HuggingFace (ZeyuLing) |
+| G1 RP v1 (Motius) | no disponible | Unitree G1, qpos 36D | 4 poses + 4 objetivos | nvidia-open-model-agreement | Hugging Face (ZeyuLing) |
 
 No se dispone de datos de benchmarks ni de especificaciones completas de las alternativas para establecer una comparación cuantitativa de rendimiento.
 
@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas de las alt
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ZeyuLing/motius-motionbricks-soma-rp-v1
+- Hugging Face: https://huggingface.co/ZeyuLing/motius-motionbricks-soma-rp-v1
 - Checkpoint G1: https://huggingface.co/ZeyuLing/motius-motionbricks-g1-rp-v1
 - Paper: https://arxiv.org/abs/2604.24833
 - Repositorio oficial: https://github.com/NVlabs/motionbricks

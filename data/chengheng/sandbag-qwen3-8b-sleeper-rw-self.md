@@ -78,7 +78,7 @@ No se dispone de otros adaptadores LoRA similares con el mismo propósito (sandb
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Chengheng/sandbag-qwen3-8b-sleeper-rw-self
+- Hugging Face: https://huggingface.co/Chengheng/sandbag-qwen3-8b-sleeper-rw-self
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Información sobre Qwen3-8B en Qualcomm AI Hub: https://aihub.qualcomm.com/models/qwen3_8b
 - Información sobre Qwen3-8B en Open Source AI Models: https://opensourceaimodels.net/models/qwen3-8b

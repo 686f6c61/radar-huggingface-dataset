@@ -24,7 +24,7 @@ Relevancia práctica: es un artefacto para reproducir resultados y estudiar edic
 | Tipo de modelo | modelo base sin instruction tuning (edicion post-entrenamiento) |
 | Metodo de edicion | EMBER (delta = 10) + SNMF con seleccion por ratio, ambos lados |
 | Capas editadas | MLP, capas 4-6, factorizacion de rango 100, umbral de ratio 2,0, semilla 42, longitud maxima de secuencia 256, fuerza de eliminacion de componentes exacta 1 |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 | Fecha de creacion / actualizacion | 2026-09-28 / 2026-09-28 |
 
 ## Arquitectura y entrenamiento
@@ -86,9 +86,9 @@ Los unicos modelos comparables identificables en la informacion proporcionada so
 
 | Modelo | Rol en el estudio | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `itamarstahl/lment-1b-baseball-snmf-ember-ratio-both-b131k` | Edicion SNMF+EMBER seleccionada (objeto de esta ficha) | 1,34B | no disponible | no disponible | Publico en HuggingFace, 0 descargas |
-| `itamarstahl/lment-1b-control-2e-b131k` | Control completo compartido, punto de partida de la edicion | misma base OLMo2 1B | no disponible | no disponible | Publico en HuggingFace |
-| `itamarstahl/lment-1b-nobaseball-2e-b131k` | Gemelo entrenado con exclusion del concepto, referencia de comparacion | misma base OLMo2 1B | no disponible | no disponible | Publico en HuggingFace |
+| `itamarstahl/lment-1b-baseball-snmf-ember-ratio-both-b131k` | Edicion SNMF+EMBER seleccionada (objeto de esta ficha) | 1,34B | no disponible | no disponible | Publico en Hugging Face, 0 descargas |
+| `itamarstahl/lment-1b-control-2e-b131k` | Control completo compartido, punto de partida de la edicion | misma base OLMo2 1B | no disponible | no disponible | Publico en Hugging Face |
+| `itamarstahl/lment-1b-nobaseball-2e-b131k` | Gemelo entrenado con exclusion del concepto, referencia de comparacion | misma base OLMo2 1B | no disponible | no disponible | Publico en Hugging Face |
 
 No se dispone de datos de parametros, contexto ni licencia especificos de los dos checkpoints de referencia mas alla de que comparten la base OLMo2 1B. Tampoco se han facilitado modelos alternativos de otros autores para comparar en la informacion disponible.
 
@@ -108,7 +108,7 @@ No se dispone de datos de parametros, contexto ni licencia especificos de los do
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/itamarstahl/lment-1b-baseball-snmf-ember-ratio-both-b131k
+- Modelo en Hugging Face: https://huggingface.co/itamarstahl/lment-1b-baseball-snmf-ember-ratio-both-b131k
 - Control completo compartido: https://huggingface.co/itamarstahl/lment-1b-control-2e-b131k
 - Gemelo con concepto excluido: https://huggingface.co/itamarstahl/lment-1b-nobaseball-2e-b131k
 - Referencia del articulo: Gal Barak, Tamar Tabbach, Itamar Stahl y Adam Fleisher, *Can Concept Erasure Reproduce Concept Exclusion? A Matched Evaluation of EMBER, RMU, and SNMF*, 2026 (no se ha proporcionado URL del paper ni del repositorio de codigo)

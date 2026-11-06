@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mradermacher/InternVL3-1B-GGUF (este repo) | 629.697.920 (según safetensors) | No disponible | GGUF (12 quants + 2 mmproj) | Apache 2.0 / qwen (contradictorio) | Público en HuggingFace, 288 descargas |
-| OpenGVLab/InternVL3-1B (modelo base) | 629.697.920 | No disponible | safetensors | Apache 2.0 | Público en HuggingFace |
-| mradermacher/InternVL3-1B-i1-GGUF | Los mismos que el base | No disponible | GGUF con cuantización imatrix | Apache 2.0 / qwen | Público en HuggingFace |
+| mradermacher/InternVL3-1B-GGUF (este repo) | 629.697.920 (según safetensors) | No disponible | GGUF (12 quants + 2 mmproj) | Apache 2.0 / qwen (contradictorio) | Público en Hugging Face, 288 descargas |
+| OpenGVLab/InternVL3-1B (modelo base) | 629.697.920 | No disponible | safetensors | Apache 2.0 | Público en Hugging Face |
+| mradermacher/InternVL3-1B-i1-GGUF | Los mismos que el base | No disponible | GGUF con cuantización imatrix | Apache 2.0 / qwen | Público en Hugging Face |
 
 No se dispone de información en la documentación proporcionada sobre otras alternativas multimodales de tamaño similar (por ejemplo, variantes pequeñas de Qwen-VL, SmolVLM o PaliGemma), por lo que no se incluyen datos comparativos de rendimiento, contexto ni licencia que no puedan verificarse.
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo de HuggingFace, publicado por Amrit1807, está etiquetado con licencia Apache 2.0 y ocupa 1.3 GB en el repositorio. El nombre del repositorio (diabetic-retinopathy-model) sugiere que está orientado a la clasificación de imágenes de fondo de ojo para la detección de retinopatía diabética, pero no se ha publicado ninguna documentación técnica en la model card que confirme la arquitectura, los datos de entrenamiento o el rendimiento. Debido a la ausencia de información pública, no es posible evaluar su idoneidad para aplicaciones reales. Su relevancia en el ámbito médico es potencialmente alta, ya que la retinopatía diabética es una complicación ocular grave que puede tratarse si se detecta a tiempo, pero este modelo concreto carece de transparencia y validación pública.
+Este modelo de Hugging Face, publicado por Amrit1807, está etiquetado con licencia Apache 2.0 y ocupa 1.3 GB en el repositorio. El nombre del repositorio (diabetic-retinopathy-model) sugiere que está orientado a la clasificación de imágenes de fondo de ojo para la detección de retinopatía diabética, pero no se ha publicado ninguna documentación técnica en la model card que confirme la arquitectura, los datos de entrenamiento o el rendimiento. Debido a la ausencia de información pública, no es posible evaluar su idoneidad para aplicaciones reales. Su relevancia en el ámbito médico es potencialmente alta, ya que la retinopatía diabética es una complicación ocular grave que puede tratarse si se detecta a tiempo, pero este modelo concreto carece de transparencia y validación pública.
 
 ## Especificaciones técnicas
 
@@ -59,5 +59,5 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Amrit1807/diabetic-retinopathy-model
+- Hugging Face: https://huggingface.co/Amrit1807/diabetic-retinopathy-model
 - No se han encontrado otros enlaces relevantes (papers, blogs, repos oficiales) en la búsqueda web.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo Alphaalimamy/vit-base-oxford-iiit-pets es un Vision Transformer (ViT) de tipo base afinado para clasificación de imágenes, concretamente para distinguir las 37 razas de perros y gatos del conjunto de datos Oxford-IIIT Pets. Lo publica el usuario Alphaalimamy en HuggingFace y se trata de un fine-tune completo de google/vit-base-patch16-224, el checkpoint de ViT-Base preentrenado por Google sobre ImageNet-21k e ImageNet-1k. No es un modelo de lenguaje ni un modelo multimodal generativo: su única salida es una distribución de probabilidad sobre 37 clases.
+El modelo Alphaalimamy/vit-base-oxford-iiit-pets es un Vision Transformer (ViT) de tipo base afinado para clasificación de imágenes, concretamente para distinguir las 37 razas de perros y gatos del conjunto de datos Oxford-IIIT Pets. Lo publica el usuario Alphaalimamy en Hugging Face y se trata de un fine-tune completo de google/vit-base-patch16-224, el checkpoint de ViT-Base preentrenado por Google sobre ImageNet-21k e ImageNet-1k. No es un modelo de lenguaje ni un modelo multimodal generativo: su única salida es una distribución de probabilidad sobre 37 clases.
 
 El interés práctico de esta ficha es doble. Por un lado, es un ejemplo limpio y reproducible de fine-tune con la API Trainer de transformers (5 épocas, AdamW fusionado, scheduler lineal), lo que lo convierte en una referencia útil para quien quiera replicar el flujo con un dataset de clasificación propio. Por otro lado, con 85.827.109 parámetros y un repo de 1,7 GB en safetensors, es un clasificador lo bastante pequeño como para desplegarse en CPU o en cualquier GPU de consumo, y con una licencia Apache 2.0 sin restricciones para uso comercial.
 
@@ -21,11 +21,11 @@ La relevancia del modelo es, sin embargo, limitada por su alcance: resuelve un p
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (repo de 1,7 GB) |
 
-Otros datos de la model card: librería transformers, pipeline image-classification, modelo base google/vit-base-patch16-224, métrica declarada accuracy, etiqueta generated_from_trainer y compatibilidad con endpoints de HuggingFace.
+Otros datos de la model card: librería transformers, pipeline image-classification, modelo base google/vit-base-patch16-224, métrica declarada accuracy, etiqueta generated_from_trainer y compatibilidad con endpoints de Hugging Face.
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un ViT-Base estándar: transformer de encoder con proyección de parches de 16x16, 12 capas, dimensión oculta 768 y 12 cabezas de atención, más una cabeza de clasificación lineal sobre el token [CLS]. El modelo parte de google/vit-base-patch16-224 y se ha afinado por completo (no se indica uso de LoRA ni de adaptadores) sobre el dataset pcuenq/oxford-pets, la versión en HuggingFace del Oxford-IIIT Pet Dataset, que contiene imágenes de 37 categorías de razas de perros y gatos.
+La arquitectura es un ViT-Base estándar: transformer de encoder con proyección de parches de 16x16, 12 capas, dimensión oculta 768 y 12 cabezas de atención, más una cabeza de clasificación lineal sobre el token [CLS]. El modelo parte de google/vit-base-patch16-224 y se ha afinado por completo (no se indica uso de LoRA ni de adaptadores) sobre el dataset pcuenq/oxford-pets, la versión en Hugging Face del Oxford-IIIT Pet Dataset, que contiene imágenes de 37 categorías de razas de perros y gatos.
 
 Los hiperparámetros declarados son: learning rate 0,0003, train_batch_size 16, eval_batch_size 8, semilla 42, optimizador ADAMW_TORCH_FUSED con betas (0,9; 0,999) y epsilon 1e-08, scheduler lineal y 5 épocas (1.850 pasos de entrenamiento). No se documenta el número de tokens de imagen vistos, la composición exacta de la partición de entrenamiento ni si hubo etapas de aumento de datos, destilación o ajuste adicional. Tampoco se declara ningún mecanismo de atención lineal, decodificación especulativa ni innovación técnica sobre el ViT original: es un fine-tune convencional. Las versiones de framework indicadas son Transformers 5.18.0, PyTorch 2.11.0+cu130, Datasets 4.8.5 y Tokenizers 0.23.2.
 
@@ -81,10 +81,10 @@ Los datos de las alternativas son valores de referencia de cada arquitectura pub
 
 | Modelo | Parametros | Tarea / dataset | Entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Alphaalimamy/vit-base-oxford-iiit-pets | 85.827.109 | Clasificacion de 37 razas (Oxford-IIIT Pets) | 224x224 px | Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
-| google/vit-base-patch16-224 | ~86 M | Clasificacion ImageNet-1k (1000 clases) | 224x224 px | Apache 2.0 | HuggingFace, ampliamente usado |
-| microsoft/resnet-50 | ~25,6 M | Clasificacion ImageNet-1k | 224x224 px | MIT | HuggingFace, muy extendido |
-| facebook/convnext-tiny-224 | ~28 M | Clasificacion ImageNet-1k | 224x224 px | Apache 2.0 | HuggingFace |
+| Alphaalimamy/vit-base-oxford-iiit-pets | 85.827.109 | Clasificacion de 37 razas (Oxford-IIIT Pets) | 224x224 px | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
+| google/vit-base-patch16-224 | ~86 M | Clasificacion ImageNet-1k (1000 clases) | 224x224 px | Apache 2.0 | Hugging Face, ampliamente usado |
+| microsoft/resnet-50 | ~25,6 M | Clasificacion ImageNet-1k | 224x224 px | MIT | Hugging Face, muy extendido |
+| facebook/convnext-tiny-224 | ~28 M | Clasificacion ImageNet-1k | 224x224 px | Apache 2.0 | Hugging Face |
 
 Frente a los tres alternativos, este modelo tiene un dominio mucho más estrecho (37 clases frente a 1000) y una validación comunitaria nula, a cambio de ser directamente utilizable en su tarea específica sin necesidad de fine-tune adicional.
 
@@ -103,7 +103,7 @@ Frente a los tres alternativos, este modelo tiene un dominio mucho más estrecho
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Alphaalimamy/vit-base-oxford-iiit-pets
+- Modelo en Hugging Face: https://huggingface.co/Alphaalimamy/vit-base-oxford-iiit-pets
 - Modelo base: https://huggingface.co/google/vit-base-patch16-224
 - Dataset de entrenamiento: https://huggingface.co/datasets/pcuenq/oxford-pets
 - Dataset original Oxford-IIIT Pet: https://www.robots.ox.ac.uk/~vgg/data/pets/

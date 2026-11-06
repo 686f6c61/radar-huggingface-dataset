@@ -87,7 +87,7 @@ Los datos de contexto y licencia de las alternativas corresponden a sus versione
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ggml-org/Clef-Flash-GGUF
+- Repositorio Hugging Face: https://huggingface.co/ggml-org/Clef-Flash-GGUF
 - Modelo base: https://huggingface.co/Cloudflare/clef-flash
 - Pull request de llama.cpp requerido: https://github.com/ggml-org/llama.cpp/pull/29831
 - Herramienta de conversion: https://github.com/ggml-org/convert

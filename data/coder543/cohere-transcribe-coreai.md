@@ -102,7 +102,7 @@ No se dispone de datos comparativos de WER ni de latencia frente a otras alterna
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/coder543/cohere-transcribe-coreai
+- Modelo en Hugging Face: https://huggingface.co/coder543/cohere-transcribe-coreai
 - Modelo base upstream: https://huggingface.co/CohereLabs/cohere-transcribe-03-2026
 - Revision upstream fijada: `76b8b23e8607f35f0265a23d481b338fb0e26aea`
 - No se han encontrado en la busqueda web enlaces adicionales relevantes (papers, blogs, repos o demos) asociados a este modelo.

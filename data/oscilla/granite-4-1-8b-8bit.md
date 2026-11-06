@@ -78,8 +78,8 @@ La comparativa se basa en caracteristicas generales, ya que no se dispone de ben
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/Oscilla/granite-4.1-8b-8bit
-- Modelo base en HuggingFace: https://huggingface.co/ibm-granite/granite-4.1-8b
+- Repositorio Hugging Face del modelo: https://huggingface.co/Oscilla/granite-4.1-8b-8bit
+- Modelo base en Hugging Face: https://huggingface.co/ibm-granite/granite-4.1-8b
 - Documentacion oficial de IBM Granite 4.1: https://www.ibm.com/granite/docs/models/granite4-1
 - Repositorio GitHub de IBM Granite 4.1: https://github.com/ibm-granite/granite-4.1-language-models
 - Version GGUF de SandLogicTechnologies: https://huggingface.co/SandLogicTechnologies/granite-4.1-8b-GGUF

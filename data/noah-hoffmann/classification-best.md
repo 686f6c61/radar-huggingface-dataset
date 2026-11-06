@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Noah-hoffmann/classification-best` es un prototipo de investigación publicado en HuggingFace por el usuario Noah-hoffmann, etiquetado como `mae` y `classification`. No se trata de un modelo entrenado ni evaluado: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (*smoke tests*) y que no se reclama ninguna puntuación de benchmark en el repositorio. El pipeline declarado en HuggingFace está vacío, el repositorio tiene 0 descargas y 0 likes, y su tamaño es de 0.0 GB.
+`Noah-hoffmann/classification-best` es un prototipo de investigación publicado en Hugging Face por el usuario Noah-hoffmann, etiquetado como `mae` y `classification`. No se trata de un modelo entrenado ni evaluado: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (*smoke tests*) y que no se reclama ninguna puntuación de benchmark en el repositorio. El pipeline declarado en Hugging Face está vacío, el repositorio tiene 0 descargas y 0 likes, y su tamaño es de 0.0 GB.
 
 La arquitectura declarada es "Mae" (nombre propio del autor, sin relación confirmada con el *masked autoencoder* de He et al.), con escala "tiny", atención de ventana deslizante (*sliding window*), fusión de tensores (*tensor fusion*), activación swish y normalización groupnorm. El recuento real de parámetros extraído del archivo safetensors es de 16.576 parámetros, una magnitud propia de un ejemplo didáctico o de un test de integración, no de un modelo útil en producción.
 
@@ -88,5 +88,5 @@ No disponible. No se dispone de información suficiente para establecer una comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Noah-hoffmann/classification-best
+- Modelo en Hugging Face: https://huggingface.co/Noah-hoffmann/classification-best
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relevante sobre este modelo. Las únicas coincidencias recuperadas corresponden al homónimo "Noah" en contextos ajenos al aprendizaje automático (la página de Wikipedia de Yannick Noah, la entrada sobre la variedad de vid Noah, un artículo sobre el nombre propio Noah y el sitio oficial de conciertos de Yannick Noah). Ninguna de ellas guarda relación con el modelo descrito en esta ficha.

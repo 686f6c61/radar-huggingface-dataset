@@ -111,7 +111,7 @@ Todos los sistemas de la comparativa comparten categoria (modelos de decision so
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mihailgribov/typecastlm-qwen3.5-3.8b
+- Modelo en Hugging Face: https://huggingface.co/mihailgribov/typecastlm-qwen3.5-3.8b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Paquete en PyPI: https://pypi.org/project/typecastlm/
 - Repositorio fuente: https://github.com/mihail-gribov/typecastlm

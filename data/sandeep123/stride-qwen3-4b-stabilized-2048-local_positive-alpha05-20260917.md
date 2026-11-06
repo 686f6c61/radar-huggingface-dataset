@@ -2,7 +2,7 @@
 
 ## Resumen
 
-STRIDE qwen3-4b-stabilized-2048-local_positive-alpha05 es un adaptador LoRA publicado en HuggingFace por el usuario sandeep123, entrenado mediante aprendizaje por refuerzo sobre el modelo base Qwen/Qwen3-4B-Instruct-2507. No se trata de un modelo completo, sino de un adaptador PEFT que debe combinarse con el modelo base fijado en la revision `cdbee75f17c01a7cc42f958dc650907174af0554`. El objetivo declarado del experimento es investigar la estabilidad del entrenamiento con RL aplicando STRIDE (credito de diversidad de pasos local, no negativo) sobre los tokens de razonamiento elegibles, con alpha de STRIDE igual a 0.5.
+STRIDE qwen3-4b-stabilized-2048-local_positive-alpha05 es un adaptador LoRA publicado en Hugging Face por el usuario sandeep123, entrenado mediante aprendizaje por refuerzo sobre el modelo base Qwen/Qwen3-4B-Instruct-2507. No se trata de un modelo completo, sino de un adaptador PEFT que debe combinarse con el modelo base fijado en la revision `cdbee75f17c01a7cc42f958dc650907174af0554`. El objetivo declarado del experimento es investigar la estabilidad del entrenamiento con RL aplicando STRIDE (credito de diversidad de pasos local, no negativo) sobre los tokens de razonamiento elegibles, con alpha de STRIDE igual a 0.5.
 
 El adaptador forma parte de una ablacion concreta: la variante `local_positive` con alpha 0.5, separada de otras ejecuciones previas del mismo autor sobre el mismo split de 2.048 preguntas. El entrenamiento esta planificado para 4 epocas, con un batch global de 64 preguntas y 8 rollouts por pregunta (512 respuestas por actualizacion), lo que da 32 actualizaciones por epoca y 128 actualizaciones planificadas. El contexto de prompt mas respuesta esta limitado a 8.192 tokens y la semilla es 42. El autor indica explicitamente que no se hace ninguna afirmacion de evaluacion ni de superioridad.
 
@@ -114,7 +114,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento de est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sandeep123/stride-qwen3-4b-stabilized-2048-local_positive-alpha05-20260917
+- Modelo en Hugging Face: https://huggingface.co/sandeep123/stride-qwen3-4b-stabilized-2048-local_positive-alpha05-20260917
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Revision fijada del modelo base: `cdbee75f17c01a7cc42f958dc650907174af0554`
 - Libreria PEFT: https://github.com/huggingface/peft

@@ -90,7 +90,7 @@ No se conocen adaptadores públicos comparables centrados en jyotisha con métri
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/astroos/meena-3-antigravity-cot
+- Modelo en Hugging Face: https://huggingface.co/astroos/meena-3-antigravity-cot
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Base cuantizado usado en el entrenamiento: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct-bnb-4bit
 - Dataset declarado: https://huggingface.co/datasets/astroosmb/meena-antigravity-cot-dataset

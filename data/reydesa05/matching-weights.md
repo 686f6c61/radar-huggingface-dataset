@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`reydesa05/matching-weights` es un repositorio experimental publicado en HuggingFace que contiene un esqueleto de codigo basado en DeiT (Data-efficient Image Transformer) orientado a una tarea de *matching*. No se trata de un modelo entrenado, sino de un punto de partida reproducible: el propio autor indica que `model.safetensors` es un checkpoint de inicializacion valido para *smoke tests* y que no se presenta como un checkpoint con benchmarks. El repositorio incluye `pipeline.py`, `config.json`, `training_args.json` y el fichero de pesos en formato safetensors.
+`reydesa05/matching-weights` es un repositorio experimental publicado en Hugging Face que contiene un esqueleto de codigo basado en DeiT (Data-efficient Image Transformer) orientado a una tarea de *matching*. No se trata de un modelo entrenado, sino de un punto de partida reproducible: el propio autor indica que `model.safetensors` es un checkpoint de inicializacion valido para *smoke tests* y que no se presenta como un checkpoint con benchmarks. El repositorio incluye `pipeline.py`, `config.json`, `training_args.json` y el fichero de pesos en formato safetensors.
 
 El peso real declarado es de 24.832 parametros, una magnitud de decenas de miles que resulta coherente con una configuracion de prueba y no con un transformer de vision a escala *xlarge*. Esto es relevante para cualquier evaluacion: aunque la model card etiqueta la escala como *xlarge*, el checkpoint distribuido no puede sostener inferencia util en tareas reales de vision o matching. La utilidad actual del repositorio es como plantilla de arquitectura y como receta de experimento (optimizador Lion con *linear warmup*).
 
@@ -51,7 +51,7 @@ No hay evidencia de entrenamiento. La model card afirma que el checkpoint de ini
 - Verificacion de pipelines de carga en CI: al ser un checkpoint safetensors pequeno y valido, permite comprobar que los scripts de carga, conversion y serializacion funcionan sin necesidad de GPU ni de datos reales.
 - Pruebas de integracion de adaptadores personalizados: dado que las APIs automaticas requieren un adaptador explicito, es util para validar ese adaptador en un entorno controlado antes de aplicarlo a un modelo entrenado.
 - Comparacion de recetas de optimizacion: el `training_args.json` con Lion y *linear warmup* puede usarse como configuracion de referencia en estudios comparativos de optimizadores, siempre que se homogenicen datos, presupuesto de ajuste y semillas.
-- Docencia y formacion: el conjunto de ficheros (`pipeline.py`, `config.json`, `training_args.json`, `model.safetensors`) es un ejemplo minimo de estructura de repositorio de modelo en HuggingFace.
+- Docencia y formacion: el conjunto de ficheros (`pipeline.py`, `config.json`, `training_args.json`, `model.safetensors`) es un ejemplo minimo de estructura de repositorio de modelo en Hugging Face.
 - Auditoria de reproducibilidad: sirve para verificar el flujo completo de publicacion (metadatos, licencia, formato de pesos) sin depender de un checkpoint pesado.
 - Inferencia en produccion: no es un caso de uso valido con este checkpoint, ya que no ha sido entrenado y no tiene capacidades evaluadas.
 
@@ -74,7 +74,7 @@ La comparacion se limita a la arquitectura declarada y al estado de entrenamient
 
 | Modelo | Parametros | Estado | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| reydesa05/matching-weights | 24.832 | inicializacion sin entrenar | matching (DeiT) | BSD-3-Clause | HuggingFace, 0 descargas |
+| reydesa05/matching-weights | 24.832 | inicializacion sin entrenar | matching (DeiT) | BSD-3-Clause | Hugging Face, 0 descargas |
 | DeiT (publicacion original, Touvron et al., 2021) | ~5,7 M (tiny) a ~86 M (base/distilled) segun variantes publicadas | entrenado en ImageNet | clasificacion de imagenes | licencia de la publicacion original | pesos publicos; cifras no verificadas en esta busqueda |
 | ViT (Dosovitskiy et al., 2020) | no disponible en esta busqueda | entrenado | clasificacion de imagenes | no disponible en esta busqueda | pesos publicos |
 | Alternativa de *matching* de capacidad equivalente | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -95,5 +95,5 @@ La comparacion se limita a la arquitectura declarada y al estado de entrenamient
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/reydesa05/matching-weights
+- Repositorio en Hugging Face: https://huggingface.co/reydesa05/matching-weights
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales asociados a este modelo.

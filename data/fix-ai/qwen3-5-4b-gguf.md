@@ -103,4 +103,4 @@ No se dispone de datos suficientes para establecer una comparación cuantitativa
 - Discord de Unsloth: https://discord.gg/unsloth
 - Qwen Chat: https://chat.qwen.ai
 
-Nota: la búsqueda web realizada no ha devuelto resultados relevantes sobre el modelo; los enlaces anteriores proceden de la model card y de los metadatos de HuggingFace.
+Nota: la búsqueda web realizada no ha devuelto resultados relevantes sobre el modelo; los enlaces anteriores proceden de la model card y de los metadatos de Hugging Face.

@@ -55,9 +55,9 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| whisper-large-v3-turbo (OpenAI) | no disponible | 30 s por segmento | MIT (original) | HuggingFace |
-| whisper-large-v3 (OpenAI) | 1550 M (aprox.) | 30 s por segmento | MIT | HuggingFace |
-| TM-Pirorin/whisper-large-v3-turbo | no disponible | 30 s por segmento | Apache-2.0 | HuggingFace |
+| whisper-large-v3-turbo (OpenAI) | no disponible | 30 s por segmento | MIT (original) | Hugging Face |
+| whisper-large-v3 (OpenAI) | 1550 M (aprox.) | 30 s por segmento | MIT | Hugging Face |
+| TM-Pirorin/whisper-large-v3-turbo | no disponible | 30 s por segmento | Apache-2.0 | Hugging Face |
 
 La comparativa se basa en el conocimiento general de los modelos Whisper; no se dispone de datos de rendimiento específicos para esta copia.
 
@@ -71,7 +71,7 @@ La comparativa se basa en el conocimiento general de los modelos Whisper; no se 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/TM-Pirorin/whisper-large-v3-turbo
+- Repositorio Hugging Face: https://huggingface.co/TM-Pirorin/whisper-large-v3-turbo
 - Modelo original de OpenAI: https://huggingface.co/openai/whisper-large-v3-turbo
 - Repositorio GitHub de Whisper: https://github.com/openai/whisper
 - Página de OpenSourcesAI: https://opensourcesai.com/models/whisper-large-v3-turbo/

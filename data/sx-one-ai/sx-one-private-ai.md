@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sx-one-ai/sx-one-private-ai` es un modelo publicado en HuggingFace por el usuario u organizacion `sx-one-ai` bajo licencia Apache 2.0. En el momento de redactar esta ficha, la model card del repositorio no contiene mas contenido que la declaracion de licencia, por lo que no hay informacion publica sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni idiomas soportados. Tampoco se ha publicado pipeline de inferencia asociado en la ficha del repositorio.
+`sx-one-ai/sx-one-private-ai` es un modelo publicado en Hugging Face por el usuario u organizacion `sx-one-ai` bajo licencia Apache 2.0. En el momento de redactar esta ficha, la model card del repositorio no contiene mas contenido que la declaracion de licencia, por lo que no hay informacion publica sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni idiomas soportados. Tampoco se ha publicado pipeline de inferencia asociado en la ficha del repositorio.
 
 El modelo registra 0 descargas y 0 likes, y fue creado y actualizado en la misma marca temporal (2026-10-03T22:35:58Z), lo que indica un repositorio recien publicado y sin adopcion documentada. El nombre del repositorio sugiere un enfoque hacia despliegue privado o local, pero se trata de una inferencia a partir del identificador y no de un dato confirmado por el autor.
 
@@ -35,7 +35,7 @@ Tampoco hay datos sobre el corpus de entrenamiento (numero de tokens, composicio
 - No hay confirmacion de capacidades de agente o razonamiento multi-paso.
 - No hay confirmacion de capacidades multilingues ni de idiomas concretos.
 - No hay confirmacion de capacidades multimodales (vision, audio) ni de modos especiales (thinking mode, razonamiento extendido).
-- No se ha publicado informacion sobre el pipeline de inferencia en la ficha de HuggingFace.
+- No se ha publicado informacion sobre el pipeline de inferencia en la ficha de Hugging Face.
 
 ## Casos de uso
 
@@ -80,5 +80,5 @@ No disponible. No es posible identificar modelos comparables sin conocer el tama
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sx-one-ai/sx-one-private-ai
+- Hugging Face: https://huggingface.co/sx-one-ai/sx-one-private-ai
 - No se han encontrado papers, repositorios de codigo, blogs tecnicos, demos ni documentacion adicional asociados a este modelo en los resultados de busqueda disponibles.

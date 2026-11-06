@@ -58,7 +58,7 @@ No se han publicado comparaciones con otros modelos en la informacion disponible
 - El adaptador LoRA ocupa 0,2 GB, pero requiere cargar el modelo base `allenai/Olmo-3-7B-Think` de 7B parametros.
 - VRAM estimada para inferencia: con precision bf16, el modelo base ocupa aproximadamente 14 GB, por lo que se necesita una GPU con al menos 16 GB de VRAM (por ejemplo, A100 40GB, RTX 4090 24GB).
 - Con cuantizacion de 4 bits del modelo base (por ejemplo, mediante bitsandbytes o GGUF), el conjunto podria caber en GPUs consumer de 8-12 GB, aunque no se ha verificado oficialmente.
-- Opciones de despliegue: HuggingFace transformers + PEFT, vLLM (si soporta PEFT), llama.cpp (si se convierte el adaptador a GGUF), o servidores de inferencia como TGI.
+- Opciones de despliegue: Hugging Face transformers + PEFT, vLLM (si soporta PEFT), llama.cpp (si se convierte el adaptador a GGUF), o servidores de inferencia como TGI.
 - Latencia y throughput: no disponibles. Se recomienda medir en el hardware objetivo.
 
 ## Comparativa con modelos similares
@@ -85,8 +85,8 @@ La comparacion con el base no es posible sin datos publicados del mismo. Se reco
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-sft-l1
-- Modelo base en HuggingFace: https://huggingface.co/allenai/Olmo-3-7B-Think
+- Adaptador en Hugging Face: https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-sft-l1
+- Modelo base en Hugging Face: https://huggingface.co/allenai/Olmo-3-7B-Think
 - Paper de Olmo 3 (arXiv): https://arxiv.org/abs/2512.13961
 - Repositorio OLMo-core (scripts de entrenamiento): https://github.com/allenai/OLMo-core/tree/main/src/scripts/official/OLMo3
 - Guia de entrenamiento de Olmo 3 (open-instruct): https://github.com/allenai/open-instruct/blob/main/scripts/train/olmo3/README.md

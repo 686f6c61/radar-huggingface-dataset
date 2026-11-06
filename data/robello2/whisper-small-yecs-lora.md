@@ -2,7 +2,7 @@
 
 ## Resumen
 
-whisper-small-yecs-lora es un ajuste fino de openai/whisper-small, el modelo de reconocimiento automatico del habla (ASR) de OpenAI, especializado en habla con cambio de codigo (code-switching) yoruba-ingles. Lo publica el usuario robello2 en HuggingFace y esta entrenado sobre el corpus YECS (Yoruba-English Code-Switched Speech), un conjunto de 75.999 enunciados con etiquetado por palabra. El problema que aborda es concreto: los modelos ASR multilingues genericos rinden mal cuando el hablante alterna entre yoruba e ingles dentro de la misma frase, algo habitual en comunidades bilingues de Nigeria.
+whisper-small-yecs-lora es un ajuste fino de openai/whisper-small, el modelo de reconocimiento automatico del habla (ASR) de OpenAI, especializado en habla con cambio de codigo (code-switching) yoruba-ingles. Lo publica el usuario robello2 en Hugging Face y esta entrenado sobre el corpus YECS (Yoruba-English Code-Switched Speech), un conjunto de 75.999 enunciados con etiquetado por palabra. El problema que aborda es concreto: los modelos ASR multilingues genericos rinden mal cuando el hablante alterna entre yoruba e ingles dentro de la misma frase, algo habitual en comunidades bilingues de Nigeria.
 
 Tecnicamente es un transformer encoder-decoder de tipo Whisper con 241,7 millones de parametros totales. El ajuste se hizo con LoRA (rank 32, alpha 64) sobre todas las capas lineales de encoder y decoder, con los pesos base congelados, y el adaptador se ha fusionado en los pesos finales, por lo que se carga como un Whisper estandar. El contexto de audio es el nativo de Whisper-small: ventanas de 30 segundos.
 
@@ -95,6 +95,6 @@ La comparativa se limita a la familia Whisper porque no se dispone de datos de o
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/robello2/whisper-small-yecs-lora
+- Modelo en Hugging Face: https://huggingface.co/robello2/whisper-small-yecs-lora
 - Modelo base: https://huggingface.co/openai/whisper-small
 - Repositorio de Whisper de OpenAI: https://github.com/openai/whisper

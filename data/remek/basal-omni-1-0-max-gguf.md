@@ -94,7 +94,7 @@ La informacion disponible no incluye comparaciones con otros modelos de decision
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/Remek/basal-omni-1.0-max-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/Remek/basal-omni-1.0-max-GGUF
 - Modelo base bf16: https://huggingface.co/Remek/basal-omni-1.0-max
 - Repositorio del motor de inferencia: https://github.com/rkinas/basal
 - Sitio web del proyecto: https://basal.si5.pl/

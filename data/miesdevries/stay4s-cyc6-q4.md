@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Stay4S Cyc6 SFT Q4 | ~1,67 B | no disponible | other | GGUF en HuggingFace |
+| Stay4S Cyc6 SFT Q4 | ~1,67 B | no disponible | other | GGUF en Hugging Face |
 | Llama 3.2 1B (Meta) | ~1,24 B | 128 000 tokens | Llama 3.2 Community License | safetensors y GGUF |
 | Qwen2.5 1.5B (Alibaba) | ~1,54 B | 32 768 tokens | Apache 2.0 | safetensors y GGUF |
 | Gemma 2 2B (Google) | ~2,6 B | 8 192 tokens | Gemma License | safetensors y GGUF |
@@ -84,6 +84,6 @@ Nota: los datos de los modelos comparativos corresponden a especificaciones publ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/miesdevries/stay4s-cyc6-q4
+- Modelo en Hugging Face: https://huggingface.co/miesdevries/stay4s-cyc6-q4
 - Sitio web del proyecto: stay4s.com
 - Repositorio GitHub indicado en la model card: github.com/hetnieuwebeginbv-glitch

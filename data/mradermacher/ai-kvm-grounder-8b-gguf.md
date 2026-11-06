@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Tarea principal | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Ai-kvm-grounder-8b (esta ficha) | ~8,19 B | GUI grounding / computer use | MIT | GGUF y safetensors en HuggingFace |
-| Qwen3-VL 8B (base) | ~8 B | VL general (OCR, VQA, grounding) | Apache-2.0 (según familia Qwen; verificar en el repo base) | HuggingFace, GGUF comunitarios |
-| UI-TARS (ByteDance) | Variantes de 2B a 72B | GUI grounding y agentes de computer use | Licencia propia (restringida en algunas variantes) | HuggingFace |
+| Ai-kvm-grounder-8b (esta ficha) | ~8,19 B | GUI grounding / computer use | MIT | GGUF y safetensors en Hugging Face |
+| Qwen3-VL 8B (base) | ~8 B | VL general (OCR, VQA, grounding) | Apache-2.0 (según familia Qwen; verificar en el repo base) | Hugging Face, GGUF comunitarios |
+| UI-TARS (ByteDance) | Variantes de 2B a 72B | GUI grounding y agentes de computer use | Licencia propia (restringida en algunas variantes) | Hugging Face |
 
 Nota: la comparativa se basa en las características generales conocidas de estos modelos; para datos precisos de rendimiento y licencias de las alternativas, consultar sus repositorios oficiales, ya que no se incluyen benchmarks comparativos en la información disponible.
 

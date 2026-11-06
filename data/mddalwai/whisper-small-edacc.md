@@ -100,7 +100,7 @@ La comparativa se limita a la familia Whisper porque la model card no reporta co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mddalwai/whisper-small-edacc
+- Modelo en Hugging Face: https://huggingface.co/mddalwai/whisper-small-edacc
 - Version CTranslate2: https://huggingface.co/mddalwai/whisper-small-edacc-ct2
 - Codigo, splits y resultados: https://github.com/mohammaddalwai/speech-ft
 - Dataset EdAcc: https://huggingface.co/datasets/edinburghcstr/edacc

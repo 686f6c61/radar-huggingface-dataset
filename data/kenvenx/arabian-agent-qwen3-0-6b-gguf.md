@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks estandarizados (MMLU, HumanEval, GS
 - VRAM / memoria estimada para inferencia: desde ~0,6 GB (Q3_K_M) hasta ~1,0 GB (Q8_0), excluyendo la caché KV y el overhead del runtime.
 - GPU recomendadas: no se necesita GPU; el modelo está orientado a inferencia en CPU. Cualquier GPU moderna lo ejecutaría sin problema si se desea.
 - Consumer hardware: cabe sobradamente en cualquier portátil o sobremesa con al menos 2 GB de RAM libre; no requiere GPU dedicada. Los benchmarks del autor se realizaron en un portátil con CPU de 4 hilos.
-- Opciones de despliegue: llama.cpp (llama-cli y llama-server), Ollama y LM Studio, con descarga directa desde HuggingFace:
+- Opciones de despliegue: llama.cpp (llama-cli y llama-server), Ollama y LM Studio, con descarga directa desde Hugging Face:
   - `llama-cli -hf Kenvenx/Arabian-Agent-Qwen3-0.6B-GGUF:Q4_K_M`
   - `llama-server -hf Kenvenx/Arabian-Agent-Qwen3-0.6B-GGUF:Q4_K_M --ctx-size 8192`
   - `ollama run hf.co/Kenvenx/Arabian-Agent-Qwen3-0.6B-GGUF:Q4_K_M`

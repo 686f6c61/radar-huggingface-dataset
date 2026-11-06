@@ -60,10 +60,10 @@ No se han publicado resultados de benchmarks en la información disponible para 
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen-3.8-SuperFast-NVFP4 (este) | 18,16B (cuantizado) | 262k | NVFP4/FP8/BF16 | Apache-2.0 | HuggingFace |
-| Qwen/Qwen3.8-27B (base) | 27B | 262k | BF16/FP8 | Apache-2.0 | HuggingFace |
-| nvidia/Qwen3-8B-NVFP4 | 8B | no disponible | NVFP4 | Apache-2.0 | HuggingFace |
-| Qwen3.8-Max (open release) | 2,4T | no disponible | no disponible | Apache-2.0 | HuggingFace (próximamente) |
+| Qwen-3.8-SuperFast-NVFP4 (este) | 18,16B (cuantizado) | 262k | NVFP4/FP8/BF16 | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3.8-27B (base) | 27B | 262k | BF16/FP8 | Apache-2.0 | Hugging Face |
+| nvidia/Qwen3-8B-NVFP4 | 8B | no disponible | NVFP4 | Apache-2.0 | Hugging Face |
+| Qwen3.8-Max (open release) | 2,4T | no disponible | no disponible | Apache-2.0 | Hugging Face (próximamente) |
 
 La comparativa muestra que este modelo ofrece una ventaja en velocidad frente al base (gracias a la cuantización) a costa de una ligera pérdida de precisión. Frente al NVFP4 de 8B, ofrece mayor capacidad de razonamiento y multimodalidad, aunque requiere hardware más potente. Qwen3.8-Max es una categoría superior, no comparable directamente.
 
@@ -79,7 +79,7 @@ La comparativa muestra que este modelo ofrece una ventaja en velocidad frente al
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ProCreations/Qwen-3.8-SuperFast-NVFP4
+- Repositorio Hugging Face: https://huggingface.co/ProCreations/Qwen-3.8-SuperFast-NVFP4
 - Repositorio de runtime (GitHub): https://github.com/SSHdotCodes/Qwen-3.8-SuperFast
 - Foro de NVIDIA (rendimiento en DGX Spark): https://forums.developer.nvidia.com/t/qwen3-8-27b-at-34-38-tok-s-on-dgx-spark-open-source-one-command-setup-sglang-nvfp4-dspark/380257
 - Especificaciones de Qwen3.8-27B (Yottalabs): https://www.yottalabs.ai/post/qwen-3-8-27b-specs-hardware-requirements-how-to-run-2026

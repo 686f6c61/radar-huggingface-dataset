@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MineChoice fresh-world completed-house checkpoint 165 es un checkpoint de aprendizaje por refuerzo publicado por el usuario teyler en HuggingFace. No es un modelo de lenguaje ni un modelo de vision: es una politica categorica implementada como un perceptron multicapa (MLP) de 31.789 parametros que mapea un vector de 73 caracteristicas de estado estructurado de Minecraft Java 1.20.4 a un espacio de 45 acciones discretas. El modelo lee estado del juego, no pixeles, y no dispone de mecanismo de respaldo basado en un profesor externo.
+MineChoice fresh-world completed-house checkpoint 165 es un checkpoint de aprendizaje por refuerzo publicado por el usuario teyler en Hugging Face. No es un modelo de lenguaje ni un modelo de vision: es una politica categorica implementada como un perceptron multicapa (MLP) de 31.789 parametros que mapea un vector de 73 caracteristicas de estado estructurado de Minecraft Java 1.20.4 a un espacio de 45 acciones discretas. El modelo lee estado del juego, no pixeles, y no dispone de mecanismo de respaldo basado en un profesor externo.
 
 Su relevancia es puramente experimental y de investigacion. El autor documenta que en el episodio `20260928-132431-train-1881560440`, iniciado sobre la semilla natural `1881560440` con inventario vacio y sin privilegios de juego, el agente completo una casa de 52 partes en las coordenadas `{'x': -33, 'y': 65, 'z': 13}` y se detuvo vivo con 85 transiciones de recompensa reales y una recompensa total de 26.9760. Se trata de un hito de entrenamiento de un unico episodio, no de una tasa de exito medida.
 
@@ -92,6 +92,6 @@ No disponible. La informacion proporcionada no incluye referencias a otros agent
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/teyler/MineChoice-reward-survival-fresh-house-update165
+- Hugging Face: https://huggingface.co/teyler/MineChoice-reward-survival-fresh-house-update165
 - Ficheros incluidos en el repositorio, segun la model card: `model.safetensors`, `policy.json`, `config.json`, `milestone_evidence.json`
 - No se han encontrado enlaces adicionales (papers, blogs, repositorios de codigo o demos) en la informacion disponible.

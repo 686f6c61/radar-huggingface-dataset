@@ -11,7 +11,7 @@ Este repositorio en concreto no contiene los pesos originales en formato safeten
 | Parametro | Valor |
 |---|---|
 | Arquitectura | no disponible (se infiere transformer, sin confirmar) |
-| Parametros totales | 2.1 mil millones (según gemma4.dev para Gemma 4 E2B; el dato de HuggingFace de 694.291 es inconsistente y se descarta) |
+| Parametros totales | 2.1 mil millones (según gemma4.dev para Gemma 4 E2B; el dato de Hugging Face de 694.291 es inconsistente y se descarta) |
 | Parametros activos | no aplicable (no se ha indicado que sea MoE) |
 | Longitud de contexto | 8.000 tokens (según gemma4.dev para Gemma 4 E2B) |
 | Tipos de cuantizacion | Q2_K, IQ3_M, Q4_K_S, IQ3_XXS, Q3_K_M, small-IQ4_NL, Q4_K_M, IQ2_M, Q6_K, IQ4_XS, Q2_K_S, IQ1_M, Q3_K_S, IQ2_XXS, Q3_K_L, IQ2_XS, Q5_K_S, IQ2_S, IQ1_S, Q5_K_M, Q4_0, IQ3_XS, Q4_1, IQ3_S |
@@ -71,8 +71,8 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/LibreGemma4e2b-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/LibreGemma4e2b-i1-GGUF
 - Página de Gemma 4 E2B (gemma4.dev): https://gemma4.dev/models/gemma-4-e2b
 - Notas de lanzamiento de Gemma (Google AI): https://ai.google.dev/gemma/docs/releases
-- Perfil de mradermacher en HuggingFace: https://huggingface.co/mradermacher
+- Perfil de mradermacher en Hugging Face: https://huggingface.co/mradermacher
 - Solicitudes de modelos (model_requests): https://huggingface.co/mradermacher/model_requests

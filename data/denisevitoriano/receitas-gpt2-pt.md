@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `denisevitoriano/receitas-gpt2-pt` es un fine-tuning del modelo GPT-2 (versión small, 124 millones de parámetros) orientado a la generación de recetas de cocina en portugués. Desarrollado por Denise Vitoriano y publicado en HuggingFace, el nombre "receitas" (recetas en portugués) indica su propósito principal: generar instrucciones culinarias, listas de ingredientes y descripciones de platos en ese idioma.
+El modelo `denisevitoriano/receitas-gpt2-pt` es un fine-tuning del modelo GPT-2 (versión small, 124 millones de parámetros) orientado a la generación de recetas de cocina en portugués. Desarrollado por Denise Vitoriano y publicado en Hugging Face, el nombre "receitas" (recetas en portugués) indica su propósito principal: generar instrucciones culinarias, listas de ingredientes y descripciones de platos en ese idioma.
 
 Este modelo pertenece a la categoría de generación de texto especializada en un dominio concreto. Su relevancia radica en que demuestra cómo un modelo base pequeño y eficiente como GPT-2 puede adaptarse mediante fine-tuning a una tarea específica con recursos computacionales modestos. Al estar basado en la arquitectura GPT-2, ofrece una ventana de contexto de 1024 tokens y capacidades de generación autoregresiva estándar.
 
@@ -69,6 +69,6 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/denisevitoriano/receitas-gpt2-pt
+- Hugging Face: https://huggingface.co/denisevitoriano/receitas-gpt2-pt
 - Paper de referencia de GPT-2 (citado en los tags): https://arxiv.org/abs/1910.09700 (Lacoste et al., 2019, sobre estimación de impacto ambiental, no sobre GPT-2 en sí; el tag es confuso)
 - No se han encontrado repositorios, demos o documentación adicional del autor.

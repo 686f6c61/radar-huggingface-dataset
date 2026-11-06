@@ -2,7 +2,7 @@
 
 ## Resumen
 
-lev es un adaptador LoRA sobre el modelo base Qwen/Qwen3.5-4B, publicado en HuggingFace por el usuario aaroncool9 y desarrollado por Interfaze-ai. Su funcion no es generar texto, sino responder preguntas tipadas (si/no, eleccion multiple y puntuacion ordinal) sobre un contexto dado en una unica pasada hacia delante, devolviendo probabilidades calibradas sobre exactamente las opciones que el usuario suministra. El modelo no emite tokens de salida: lee las respuestas directamente desde los logits ya calculados, de modo que el espacio de respuestas queda restringido estructuralmente al conjunto de opciones enviado.
+lev es un adaptador LoRA sobre el modelo base Qwen/Qwen3.5-4B, publicado en Hugging Face por el usuario aaroncool9 y desarrollado por Interfaze-ai. Su funcion no es generar texto, sino responder preguntas tipadas (si/no, eleccion multiple y puntuacion ordinal) sobre un contexto dado en una unica pasada hacia delante, devolviendo probabilidades calibradas sobre exactamente las opciones que el usuario suministra. El modelo no emite tokens de salida: lee las respuestas directamente desde los logits ya calculados, de modo que el espacio de respuestas queda restringido estructuralmente al conjunto de opciones enviado.
 
 La relevancia de lev radica en su enfoque para las decisiones de juicio masivo dentro de un producto: enrutamiento, moderacion, deteccion de intencion, triaje, calificacion y verificacion de salidas de otros LLM. Al no generar tokens, elimina la necesidad de parsear JSON, reintentar o validar etiquetas fuera de rango, y todas las preguntas de una peticion comparten una sola pasada, por lo que formular tres preguntas cuesta aproximadamente lo mismo que formular una.
 
@@ -90,7 +90,7 @@ La informacion disponible solo permite comparar con los modelos citados en la mo
 
 | Modelo | Parametros | Resultado en S1Bench (segun lev) | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| lev | 4B (adaptador LoRA) | 68,9 % en 13 subconjuntos | Apache-2.0 | HuggingFace (0 descargas) |
+| lev | 4B (adaptador LoRA) | 68,9 % en 13 subconjuntos | Apache-2.0 | Hugging Face (0 descargas) |
 | reflex-4b | No disponible | A la par de lev en 6 subconjuntos | No disponible | No disponible |
 | Jev | No disponible | Por delante de lev | No disponible | No disponible |
 | Tres modelos abiertos de 26B-35B | 26B-35B | Por delante de lev | No disponible | No disponible |
@@ -101,16 +101,16 @@ La informacion disponible solo permite comparar con los modelos citados en la mo
 - Idioma limitado al ingles segun la etiqueta del repositorio; no se declara soporte multilingue. El rendimiento en otros idiomas no esta verificado.
 - No se detallan sesgos conocidos. Al no generar texto libre, no es aplicable el riesgo clasico de alucinacion generativa, pero si el riesgo de clasificacion erronea o mal calibrada fuera de la distribucion de entrenamiento.
 - El modelo tiene cero descargas y cero likes, y fue publicado y actualizado el mismo dia (2026-10-05): se trata de un artefacto reciente y sin validacion independiente por parte de la comunidad.
-- Existe una discrepancia entre el identificador del repositorio de HuggingFace (`aaroncool9/lev`) y el identificador empleado en el ejemplo de codigo de la model card (`interfaze-ai/lev`); conviene verificar cual es el repositorio canonico.
+- Existe una discrepancia entre el identificador del repositorio de Hugging Face (`aaroncool9/lev`) y el identificador empleado en el ejemplo de codigo de la model card (`interfaze-ai/lev`); conviene verificar cual es el repositorio canonico.
 - El modelo base referenciado es `Qwen/Qwen3.5-4B`; no se aportan detalles sobre su contexto maximo, sus sesgos propios ni sus limitaciones, que se heredan en el adaptador.
 - La licencia Apache-2.0 permite uso comercial del adaptador, pero el uso comercial del modelo base queda sujeto a la licencia de Qwen/Qwen3.5-4B, no detallada aqui.
-- `inference: false` indica que el modelo no esta desplegado en la infraestructura de inferencia de HuggingFace; hay que autohospedarlo.
+- `inference: false` indica que el modelo no esta desplegado en la infraestructura de inferencia de Hugging Face; hay que autohospedarlo.
 - Requiere GPU CUDA para uso en tiempo real, lo que excluye entornos solo-CPU para produccion de baja latencia.
 - No se publican cifras de latencia, throughput ni consumo de VRAM por cuantizacion, datos criticos para dimensionar una implantacion en produccion.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aaroncool9/lev
+- Modelo en Hugging Face: https://huggingface.co/aaroncool9/lev
 - Repositorio de codigo en GitHub: https://github.com/Abhinavexists/lev
 - Blog del autor: https://interfaze.ai/blog/jev-now-open-source-lev
 - Sitio de Interfaze-ai: https://interfaze.ai

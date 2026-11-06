@@ -81,7 +81,7 @@ La comparación con otros modelos ASR específicos para letón no está disponib
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Janhouse/whisper-large-v3-lv-late-cv19-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Janhouse/whisper-large-v3-lv-late-cv19-GGUF
 - Modelo base: https://huggingface.co/AiLab-IMCS-UL/whisper-large-v3-lv-late-cv19
 - Revisión del modelo base: https://huggingface.co/AiLab-IMCS-UL/whisper-large-v3-lv-late-cv19/tree/94d86513ea085c962af2bd689dd7d1122496e16d
 - Herramienta de conversión (transcribe.cpp): https://github.com/handy-computer/transcribe.cpp

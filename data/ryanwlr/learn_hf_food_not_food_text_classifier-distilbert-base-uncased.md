@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `learn_hf_food_not_food_text_classifier-distilbert-base-uncased` es un clasificador binario de texto desarrollado por Ryan Weiler (ryanwlr) que determina si un texto está relacionado con comida o no. Se trata de un fine-tuning del modelo base `distilbert-base-uncased` de HuggingFace, una versión destilada de BERT con 66,9 millones de parámetros y una arquitectura transformer encoder de 6 capas. El modelo fue entrenado durante 10 épocas con un learning rate de 0,0001 y alcanza una accuracy de 0,98 en el conjunto de evaluación, con una pérdida de 0,0638.
+El modelo `learn_hf_food_not_food_text_classifier-distilbert-base-uncased` es un clasificador binario de texto desarrollado por Ryan Weiler (ryanwlr) que determina si un texto está relacionado con comida o no. Se trata de un fine-tuning del modelo base `distilbert-base-uncased` de Hugging Face, una versión destilada de BERT con 66,9 millones de parámetros y una arquitectura transformer encoder de 6 capas. El modelo fue entrenado durante 10 épocas con un learning rate de 0,0001 y alcanza una accuracy de 0,98 en el conjunto de evaluación, con una pérdida de 0,0638.
 
 La relevancia de este modelo radica en su simplicidad y eficiencia: al estar basado en DistilBERT, ofrece un equilibrio entre rendimiento y coste computacional, lo que lo hace adecuado para tareas de clasificación de texto en tiempo real o en entornos con recursos limitados. Aunque la model card no especifica el dataset de entrenamiento ni los idiomas soportados, el modelo base está entrenado en inglés y su contexto máximo es de 512 tokens. El repositorio incluye pesos en formato safetensors y está publicado bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones.
 
@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: aproximadamente 250 MB en FP32 (66M parametros × 4 bytes), menos de 130 MB en FP16. Cabe en cualquier GPU moderna, incluso en GPUs integradas.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM, por ejemplo NVIDIA GTX 1050, RTX 2060 o superiores. Tambien puede ejecutarse en CPU sin problemas para inferencia por lotes pequenos.
 - Compatible con hardware de consumo: si, se puede ejecutar en una Raspberry Pi 4 o en un portatil sin GPU dedicada.
-- Opciones de despliegue: compatible con HuggingFace Transformers, ONNX Runtime, TensorFlow Lite y herramientas como FastAPI para servir el modelo. No se menciona soporte especifico para vLLM, llama.cpp u Ollama, pero al ser un modelo transformer clasico puede convertirse a ONNX o TorchScript.
+- Opciones de despliegue: compatible con Hugging Face Transformers, ONNX Runtime, TensorFlow Lite y herramientas como FastAPI para servir el modelo. No se menciona soporte especifico para vLLM, llama.cpp u Ollama, pero al ser un modelo transformer clasico puede convertirse a ONNX o TorchScript.
 - Latencia estimada: en CPU moderna, inferencia de una secuencia corta en menos de 10 ms; en GPU, menos de 1 ms. Throughput estimado de cientos de peticiones por segundo en GPU.
 
 ## Comparativa con modelos similares
@@ -74,7 +74,7 @@ La comparativa se limita a parametros y contexto, ya que no hay datos de rendimi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ryanwlr/learn_hf_food_not_food_text_classifier-distilbert-base-uncased
+- Modelo en Hugging Face: https://huggingface.co/ryanwlr/learn_hf_food_not_food_text_classifier-distilbert-base-uncased
 - Model card (README): https://huggingface.co/ryanwlr/learn_hf_food_not_food_text_classifier-distilbert-base-uncased/blob/main/README.md
 - Ficha en AIBase: https://model.aibase.com/models/details/1915748764360531970
 - Ficha alternativa en AIBase: https://model.aibase.com/en/models/details/1924735252866273280

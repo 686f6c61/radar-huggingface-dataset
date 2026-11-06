@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OpenFlowLM/Qwen3-8B-NPU2 es un modelo de generacion de texto derivado (fine-tune) de Qwen/Qwen3-8B, publicado por el usuario OpenFlowLM en HuggingFace. Se distribuye bajo licencia Apache 2.0, con la libreria transformers y etiquetas que lo identifican como modelo conversacional de la familia Qwen3. El repositorio ocupa 6,0 GB y, en el momento de la consulta, registra 0 descargas y 0 likes, por lo que se trata de una publicacion sin traccion ni validacion comunitaria conocida. El sufijo "NPU2" del nombre no viene explicado en la informacion disponible, de modo que se desconoce si implica una optimizacion para unidades de procesamiento neuronal, una cuantizacion concreta o alguna otra modificacion del modelo base.
+OpenFlowLM/Qwen3-8B-NPU2 es un modelo de generacion de texto derivado (fine-tune) de Qwen/Qwen3-8B, publicado por el usuario OpenFlowLM en Hugging Face. Se distribuye bajo licencia Apache 2.0, con la libreria transformers y etiquetas que lo identifican como modelo conversacional de la familia Qwen3. El repositorio ocupa 6,0 GB y, en el momento de la consulta, registra 0 descargas y 0 likes, por lo que se trata de una publicacion sin traccion ni validacion comunitaria conocida. El sufijo "NPU2" del nombre no viene explicado en la informacion disponible, de modo que se desconoce si implica una optimizacion para unidades de procesamiento neuronal, una cuantizacion concreta o alguna otra modificacion del modelo base.
 
 El modelo hereda las caracteristicas del Qwen3-8B original: arquitectura transformer causal densa de 8,2 mil millones de parametros totales (6,95 mil millones sin contar embeddings), 36 capas y atencion con Grouped Query Attention (32 cabezas de consulta y 8 de clave/valor). Su ventana de contexto nativa es de 32.768 tokens, ampliable a 131.072 tokens mediante YaRN. Incorpora un conmutador explicito entre modo "thinking" (razonamiento explicito para matematicas, codigo y logica) y modo "non-thinking" (dialogo general de baja latencia) dentro del mismo juego de pesos.
 
@@ -75,10 +75,10 @@ Las cifras de esta seccion son estimaciones calculadas a partir del numero de pa
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicados en la informacion disponible |
 |---|---|---|---|---|---|
-| OpenFlowLM/Qwen3-8B-NPU2 | 8,2B (denso) | 32.768 nativos / 131.072 con YaRN | Apache 2.0 | HuggingFace, 0 descargas, 0 likes | No |
-| Qwen/Qwen3-8B (modelo base) | 8,2B (denso) | 32.768 nativos / 131.072 con YaRN | Apache 2.0 | HuggingFace, ampliamente distribuido | Si, en blog y documentacion de Qwen |
-| Qwen/Qwen2.5-7B-Instruct | 7,6B (denso) | 32.768 nativos / 131.072 con YaRN | Apache 2.0 | HuggingFace | Si, en documentacion de Qwen |
-| Llama 3.1 8B Instruct | 8,0B (denso) | 128.000 | Licencia comunitaria de Llama 3.1 | HuggingFace | Si, en model card de Meta |
+| OpenFlowLM/Qwen3-8B-NPU2 | 8,2B (denso) | 32.768 nativos / 131.072 con YaRN | Apache 2.0 | Hugging Face, 0 descargas, 0 likes | No |
+| Qwen/Qwen3-8B (modelo base) | 8,2B (denso) | 32.768 nativos / 131.072 con YaRN | Apache 2.0 | Hugging Face, ampliamente distribuido | Si, en blog y documentacion de Qwen |
+| Qwen/Qwen2.5-7B-Instruct | 7,6B (denso) | 32.768 nativos / 131.072 con YaRN | Apache 2.0 | Hugging Face | Si, en documentacion de Qwen |
+| Llama 3.1 8B Instruct | 8,0B (denso) | 128.000 | Licencia comunitaria de Llama 3.1 | Hugging Face | Si, en model card de Meta |
 
 La comparacion relevante es contra el propio Qwen3-8B: ambos comparten especificaciones tecnicas, pero el modelo base cuenta con documentacion de entrenamiento y evaluacion, mientras que esta variante no aporta ninguna de las dos. Frente a Qwen2.5-7B-Instruct, la diferencia principal es la generacion de la familia y el conmutador de modo de razonamiento. Frente a Llama 3.1 8B, la ventaja de Qwen3-8B-NPU2 es la licencia Apache 2.0, mas permisiva que la licencia comunitaria de Llama.
 
@@ -96,7 +96,7 @@ La comparacion relevante es contra el propio Qwen3-8B: ambos comparten especific
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OpenFlowLM/Qwen3-8B-NPU2
+- Modelo en Hugging Face: https://huggingface.co/OpenFlowLM/Qwen3-8B-NPU2
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3-8B/blob/main/LICENSE
 - Blog de Qwen3: https://qwenlm.github.io/blog/qwen3/

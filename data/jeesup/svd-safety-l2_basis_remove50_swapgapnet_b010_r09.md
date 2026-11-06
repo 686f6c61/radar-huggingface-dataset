@@ -80,4 +80,4 @@ No disponible. No se han publicado comparativas con otros modelos en la informac
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_basis_remove50_swapgapnet_b010_r09
+- Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_basis_remove50_swapgapnet_b010_r09

@@ -74,6 +74,6 @@ La comparativa se basa en parámetros y contexto, ya que no se dispone de result
 
 ## Enlaces
 
-- Repositorio HuggingFace de la conversión MLX: https://huggingface.co/abenzerps/K2-Horizon-MoVA-36B-A4B-MLX-4bit
+- Repositorio Hugging Face de la conversión MLX: https://huggingface.co/abenzerps/K2-Horizon-MoVA-36B-A4B-MLX-4bit
 - Modelo base original: https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B
 - Blog de IFM sobre K2 Horizon: https://ifm.ai/blog/k2

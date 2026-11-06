@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `sasudo2/cafa5_models` (`esm2_ffn`) | ESM-2 congelado + cabeza FFN para GO | 650M (encoder) | No disponible | Apache 2.0 | HuggingFace |
-| `facebook/esm2_t33_650M_UR50D` | Protein language model base | 650M | No disponible | MIT | HuggingFace |
-| `sasudo2/cafa5_models` (`blast_knn`) | BLAST + k-NN | No aplica | No aplica | Apache 2.0 | HuggingFace |
-| `sasudo2/cafa5_models` (`lr3mer`) | Regresion logistica sobre 3-meros | No aplica | No aplica | Apache 2.0 | HuggingFace |
+| `sasudo2/cafa5_models` (`esm2_ffn`) | ESM-2 congelado + cabeza FFN para GO | 650M (encoder) | No disponible | Apache 2.0 | Hugging Face |
+| `facebook/esm2_t33_650M_UR50D` | Protein language model base | 650M | No disponible | MIT | Hugging Face |
+| `sasudo2/cafa5_models` (`blast_knn`) | BLAST + k-NN | No aplica | No aplica | Apache 2.0 | Hugging Face |
+| `sasudo2/cafa5_models` (`lr3mer`) | Regresion logistica sobre 3-meros | No aplica | No aplica | Apache 2.0 | Hugging Face |
 
 La comparación con sistemas especializados de predicción GO (por ejemplo, soluciones presentadas en ediciones previas de CAFA) no está disponible en la información proporcionada. ESM-2 es el encoder base sobre el que se construye `esm2_ffn`, no un competidor directo: ESM-2 no emite anotaciones GO por sí mismo, sino representaciones que requieren una cabeza entrenada.
 
@@ -92,7 +92,7 @@ La comparación con sistemas especializados de predicción GO (por ejemplo, solu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sasudo2/cafa5_models
+- Repositorio en Hugging Face: https://huggingface.co/sasudo2/cafa5_models
 - Encoder base ESM-2: https://huggingface.co/facebook/esm2_t33_650M_UR50D
 - Documentación de ESM-2 (Meta AI): https://github.com/facebookresearch/esm
 - CAFA 5 (Critical Assessment of Functional Annotation): https://www.kaggle.com/competitions/cafa-5-protein-function-prediction

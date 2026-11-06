@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`jadeduboi/albef-retrieval-efficient` es un repositorio de HuggingFace que contiene una implementacion propia y compacta de un modelo Albef orientado a tareas de retrieval (recuperacion). Segun su model card, se trata de una configuracion de escala "nano", pensada explicitamente para revision de codigo, smoke tests y experimentos pequenos y controlados, y no como un release preentrenado listo para produccion. El autor indica que el checkpoint incluido (`model.safetensors`) es una inicializacion valida para pruebas de humo, no un checkpoint entrenado ni evaluado.
+`jadeduboi/albef-retrieval-efficient` es un repositorio de Hugging Face que contiene una implementacion propia y compacta de un modelo Albef orientado a tareas de retrieval (recuperacion). Segun su model card, se trata de una configuracion de escala "nano", pensada explicitamente para revision de codigo, smoke tests y experimentos pequenos y controlados, y no como un release preentrenado listo para produccion. El autor indica que el checkpoint incluido (`model.safetensors`) es una inicializacion valida para pruebas de humo, no un checkpoint entrenado ni evaluado.
 
-El repositorio es minimo: un unico fichero `train.py` como artefacto principal, `config.json` con la configuracion de arquitectura, `training_args.json` con la receta de experimento por defecto y el checkpoint de inicializacion. Los metadatos de safetensors reportan 24.832 parametros, una cifra coherente con el caracter "nano" del modelo y con el tamano de repositorio de 0,0 GB. No se declara ningun resultado de benchmark ni un pipeline de HuggingFace asociado.
+El repositorio es minimo: un unico fichero `train.py` como artefacto principal, `config.json` con la configuracion de arquitectura, `training_args.json` con la receta de experimento por defecto y el checkpoint de inicializacion. Los metadatos de safetensors reportan 24.832 parametros, una cifra coherente con el caracter "nano" del modelo y con el tamano de repositorio de 0,0 GB. No se declara ningun resultado de benchmark ni un pipeline de Hugging Face asociado.
 
 Su relevancia actual es limitada y muy especifica: sirve como material didactico y como plantilla reproducible para montar comparativas de retrieval imagen-texto (el propio autor sugiere Flickr30k como primera evaluacion), no como alternativa a modelos de retrieval entrenados. Cualquier uso en produccion requeriria entrenamiento, evaluacion multi-semilla y una comparacion con baselines de capacidad equivalente.
 
@@ -67,7 +67,7 @@ La busqueda web realizada no ha devuelto informacion relevante sobre este modelo
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jadeduboi/albef-retrieval-efficient | 24.832 (metadatos de safetensors) | no disponible (atencion de ventana deslizante) | Sin benchmark publicado | BSD-3-Clause | Repositorio de HuggingFace, 0 descargas y 0 likes |
+| jadeduboi/albef-retrieval-efficient | 24.832 (metadatos de safetensors) | no disponible (atencion de ventana deslizante) | Sin benchmark publicado | BSD-3-Clause | Repositorio de Hugging Face, 0 descargas y 0 likes |
 | Albef original (Salesforce) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no verificado en esta busqueda |
 | BLIP (Salesforce) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no verificado en esta busqueda |
 | CLIP (OpenAI) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no verificado en esta busqueda |
@@ -82,12 +82,12 @@ En terminos cualitativos, la diferencia fundamental es que este repositorio no e
 - Sesgos conocidos: no disponible; no se ha realizado ningun analisis de sesgo.
 - Riesgo de alucinacion: no procede evaluarlo en un modelo sin entrenar; no hay datos al respecto.
 - Limitaciones de contexto e idioma: no se especifica la longitud de contexto ni los idiomas soportados, mas alla de la mencion a atencion de ventana deslizante.
-- Carga no estandar: las APIs automaticas de HuggingFace requieren un adaptador explicito, porque la implementacion es propia.
+- Carga no estandar: las APIs automaticas de Hugging Face requieren un adaptador explicito, porque la implementacion es propia.
 - Licencia: BSD-3-Clause permite uso comercial con las condiciones habituales de atribucion y exencion de garantia, pero el autor recuerda que deben revisarse por separado los terminos de los datasets externos que se utilicen con el repositorio.
 - Resultados futuros: cualquier metrica obtenida tras entrenar el modelo debera documentarse por separado de los valores por defecto incluidos en el repositorio.
 - Los ficheros `training_args.json` describen valores de partida, no una ejecucion completada; no deben citarse como evidencia de entrenamiento.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jadeduboi/albef-retrieval-efficient
+- Modelo en Hugging Face: https://huggingface.co/jadeduboi/albef-retrieval-efficient
 - La busqueda web realizada no ha devuelto papers, blogs, repositorios ni demos relevantes sobre este modelo o sobre su implementacion. No se dispone de enlaces adicionales verificados.

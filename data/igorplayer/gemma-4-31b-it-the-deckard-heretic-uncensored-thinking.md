@@ -117,7 +117,7 @@ La comparación directa de rendimiento con el base es la única disponible y pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/igorplayer/gemma-4-31B-it-The-DECKARD-HERETIC-UNCENSORED-Thinking
+- Modelo en Hugging Face: https://huggingface.co/igorplayer/gemma-4-31B-it-The-DECKARD-HERETIC-UNCENSORED-Thinking
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
 - Modelo del mismo proyecto con base Qwen citado por el autor: https://huggingface.co/DavidAU/Qwen3.5-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking
 - Unsloth (herramienta de fine-tuning empleada): https://github.com/unslothai/unsloth

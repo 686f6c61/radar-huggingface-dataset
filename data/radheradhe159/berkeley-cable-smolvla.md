@@ -88,10 +88,10 @@ La información proporcionada no incluye comparaciones con otras políticas. A c
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| berkeley-cable-smolvla (este modelo) | 450.046.176 | No disponible | Apache 2.0 | HuggingFace, vía LeRobot |
-| lerobot/smolvla_base (modelo base) | Familia SmolVLA, ~450 M en la variante base | No disponible | Apache 2.0 | HuggingFace, vía LeRobot |
+| berkeley-cable-smolvla (este modelo) | 450.046.176 | No disponible | Apache 2.0 | Hugging Face, vía LeRobot |
+| lerobot/smolvla_base (modelo base) | Familia SmolVLA, ~450 M en la variante base | No disponible | Apache 2.0 | Hugging Face, vía LeRobot |
 | OpenVLA | Del orden de 7 000 M (no confirmado en la información disponible) | No disponible | No disponible | Público |
-| Políticas tipo ACT / Diffusion Policy en LeRobot | Depende de la configuración | No aplica | Apache 2.0 en los repositorios de LeRobot | HuggingFace, vía LeRobot |
+| Políticas tipo ACT / Diffusion Policy en LeRobot | Depende de la configuración | No aplica | Apache 2.0 en los repositorios de LeRobot | Hugging Face, vía LeRobot |
 
 No se dispone de datos de benchmarks que permitan comparar el rendimiento de este fine-tune con el de las alternativas citadas. La comparación relevante aquí es de coste: un VLA de 450 M de parámetros es aproximadamente un orden de magnitud más pequeño que los VLA de miles de millones de parámetros, lo que se traduce en requisitos de hardware mucho menores a costa de una capacidad de generalización presumiblemente inferior, extremo que no puede confirmarse sin evaluaciones publicadas.
 
@@ -106,11 +106,11 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento de est
 - Idiomas: no se documenta ningún soporte multilingüe; la instrucción de tarea utilizada en los ejemplos es la cadena literal «route cable».
 - Licencia: Apache 2.0 permite uso comercial, modificación y redistribución, siempre que se conserven los avisos de copyright y se cumplan las condiciones de la licencia. Conviene verificar las condiciones del modelo base lerobot/smolvla_base y del dataset asociado antes de un despliegue comercial.
 - Repositorio sin tracción: cero descargas y cero «likes» en el momento de la consulta, lo que implica ausencia de validación por parte de la comunidad.
-- Imprecisión en el nombre: los resultados de la búsqueda web realizada no contienen información técnica sobre este modelo (devuelven páginas sobre el grupo musical ABBA), por lo que toda la ficha se basa en los datos de HuggingFace y en la model card del autor.
+- Imprecisión en el nombre: los resultados de la búsqueda web realizada no contienen información técnica sobre este modelo (devuelven páginas sobre el grupo musical ABBA), por lo que toda la ficha se basa en los datos de Hugging Face y en la model card del autor.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/radheradhe159/berkeley-cable-smolvla
+- Modelo en Hugging Face: https://huggingface.co/radheradhe159/berkeley-cable-smolvla
 - Dataset de entrenamiento: https://huggingface.co/datasets/radheradhe159/berkeley-cable-10
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=radheradhe159/berkeley-cable-10
 - Modelo base: https://huggingface.co/lerobot/smolvla_base

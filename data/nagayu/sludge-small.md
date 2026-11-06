@@ -131,8 +131,8 @@ No se dispone de modelos externos comparables en la informacion proporcionada. L
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NagaYu/sludge-small
+- Modelo en Hugging Face: https://huggingface.co/NagaYu/sludge-small
 - Dataset: https://huggingface.co/datasets/NagaYu/sludge-ui-counterfactuals
 - Demo: https://huggingface.co/spaces/NagaYu/sludge
-- Model card del autor: incluida en el repositorio de HuggingFace del modelo
+- Model card del autor: incluida en el repositorio de Hugging Face del modelo
 - La busqueda web realizada no ha devuelto ningun resultado relevante sobre este modelo, su dataset o su demo; los enlaces anteriores son los unicos disponibles en la informacion proporcionada.

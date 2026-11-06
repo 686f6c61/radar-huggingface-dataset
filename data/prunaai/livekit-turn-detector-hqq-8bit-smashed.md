@@ -83,16 +83,16 @@ No se han publicado resultados de benchmarks numericos en la informacion disponi
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PrunaAI/livekit-turn-detector-HQQ-8bit-smashed | no disponible | no disponible | HQQ 8 bits | no disponible (hereda la del modelo base) | HuggingFace |
-| livekit/turn-detector (modelo base) | no disponible | no disponible | sin cuantizar (formato original) | debe consultarse en el repositorio del modelo base | HuggingFace |
-| Otras variantes comprimidas de PrunaAI | no disponible | no disponible | turbo / tiny / green segun la convencion de nombres | no disponible | HuggingFace |
+| PrunaAI/livekit-turn-detector-HQQ-8bit-smashed | no disponible | no disponible | HQQ 8 bits | no disponible (hereda la del modelo base) | Hugging Face |
+| livekit/turn-detector (modelo base) | no disponible | no disponible | sin cuantizar (formato original) | debe consultarse en el repositorio del modelo base | Hugging Face |
+| Otras variantes comprimidas de PrunaAI | no disponible | no disponible | turbo / tiny / green segun la convencion de nombres | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento, parametros ni contexto de alternativas equivalentes en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa con otros detectores de turno o con otros modelos del mismo tamano.
 
 ## Limitaciones y advertencias
 
 - La propia model card advierte de que la calidad de salida del modelo comprimido puede variar respecto al modelo base; no cuantifica esa perdida.
-- No se declara licencia en la ficha de HuggingFace. La model card indica que la licencia del modelo comprimido sigue la del modelo original, por lo que es obligatorio revisar la licencia de livekit/turn-detector antes de cualquier uso comercial.
+- No se declara licencia en la ficha de Hugging Face. La model card indica que la licencia del modelo comprimido sigue la del modelo original, por lo que es obligatorio revisar la licencia de livekit/turn-detector antes de cualquier uso comercial.
 - El repositorio no registra descargas ni likes, y las fechas de creacion y actualizacion son las mismas, lo que sugiere que no ha pasado por un proceso de validacion por parte de la comunidad.
 - No hay informacion sobre sesgos, idiomas soportados ni composicion de los datos de entrenamiento del modelo base.
 - No hay datos sobre longitud de contexto, lo que impide evaluar su comportamiento en conversaciones de muchos turnos.
@@ -103,7 +103,7 @@ No se dispone de datos de rendimiento, parametros ni contexto de alternativas eq
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PrunaAI/livekit-turn-detector-HQQ-8bit-smashed
+- Modelo en Hugging Face: https://huggingface.co/PrunaAI/livekit-turn-detector-HQQ-8bit-smashed
 - Modelo base: https://huggingface.co/livekit/turn-detector
 - Sitio de PrunaAI: https://www.pruna.ai/
 - Contacto de PrunaAI: https://www.pruna.ai/contact

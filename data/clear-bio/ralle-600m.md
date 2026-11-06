@@ -60,7 +60,7 @@ No se han publicado resultados comparativos con otros modelos en la información
 - VRAM estimada: el modelo utiliza embeddings de ESMC-600m congelados, lo que requiere al menos 8-16 GB de VRAM para la inferencia completa, dependiendo de la longitud de la secuencia y del tamaño del batch. La cabeza de predicción es ligera, por lo que la carga principal es la de los embeddings.
 - GPUs recomendadas: una NVIDIA L4 (16 GB) fue la utilizada para el entrenamiento; para inferencia, una GPU con al menos 16 GB de VRAM (RTX 4090, A100, H100) es adecuada.
 - En consumer GPU: es viable en RTX 3090 o RTX 4090, que disponen de 24 GB de VRAM, siempre que se gestionen bien los lotes.
-- Opciones de despliegue: el código está disponible en el repositorio de GitHub (https://github.com/clear-bio/ralle) y es probable que se pueda ejecutar con PyTorch y HuggingFace transformers. No se mencionan soportes para vLLM, llama.cpp ni Ollama, ya que es un modelo de biología y no un LLM de texto.
+- Opciones de despliegue: el código está disponible en el repositorio de GitHub (https://github.com/clear-bio/ralle) y es probable que se pueda ejecutar con PyTorch y Hugging Face transformers. No se mencionan soportes para vLLM, llama.cpp ni Ollama, ya que es un modelo de biología y no un LLM de texto.
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
@@ -87,7 +87,7 @@ No se dispone de información sobre parámetros o rendimiento de los modelos alt
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/clear-bio/ralle-600m
-- Dataset en HuggingFace: https://huggingface.co/datasets/clear-bio/ralle-dataset
+- Modelo en Hugging Face: https://huggingface.co/clear-bio/ralle-600m
+- Dataset en Hugging Face: https://huggingface.co/datasets/clear-bio/ralle-dataset
 - Repositorio de código: https://github.com/clear-bio/ralle
 - Perfil del autor: https://huggingface.co/clear-bio

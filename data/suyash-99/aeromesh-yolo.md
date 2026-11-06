@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Suyash-99/aeromesh-yolo es un repositorio de modelos publicado en HuggingFace por el usuario Suyash-99 el 5 de octubre de 2026 (ultima actualizacion el mismo dia). En el momento de redactar esta ficha, el repositorio no incluye model card sustantiva: el unico contenido declarado es la etiqueta de licencia `mit`. No se especifica arquitectura, tamano, tarea, dataset ni pipeline de inferencia.
+Suyash-99/aeromesh-yolo es un repositorio de modelos publicado en Hugging Face por el usuario Suyash-99 el 5 de octubre de 2026 (ultima actualizacion el mismo dia). En el momento de redactar esta ficha, el repositorio no incluye model card sustantiva: el unico contenido declarado es la etiqueta de licencia `mit`. No se especifica arquitectura, tamano, tarea, dataset ni pipeline de inferencia.
 
-El repositorio registra 0 descargas, 0 likes y un tamano de 0.0 GB, lo que sugiere que no contiene pesos publicados o que estos son de tamano despreciable segun la API de HuggingFace. No hay etiqueta de pipeline (`pipeline: no disponible`), no se declaran idiomas soportados y no existe documentacion tecnica asociada.
+El repositorio registra 0 descargas, 0 likes y un tamano de 0.0 GB, lo que sugiere que no contiene pesos publicados o que estos son de tamano despreciable segun la API de Hugging Face. No hay etiqueta de pipeline (`pipeline: no disponible`), no se declaran idiomas soportados y no existe documentacion tecnica asociada.
 
 El identificador del modelo contiene la cadena `yolo`, lo que sugiere una posible relacion con la familia de detectores de objetos YOLO, y `aeromesh`, que podria apuntar a un dominio de imagenes aereas o reconstruccion de mallas (mesh). Esta interpretacion es una hipotesis derivada del nombre y no esta confirmada por ninguna fuente publicada en el repositorio. Por tanto, esta ficha se limita a documentar la informacion disponible y a marcar explicitamente como "no disponible" todo aquello que el autor no ha hecho publico.
 
@@ -82,5 +82,5 @@ No disponible. Al desconocerse la tarea, la modalidad y el tamano del modelo, no
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Suyash-99/aeromesh-yolo
+- Repositorio en Hugging Face: https://huggingface.co/Suyash-99/aeromesh-yolo
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

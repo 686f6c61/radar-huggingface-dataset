@@ -2,7 +2,7 @@
 
 ## Resumen
 
-svd-safety-l3_remove50_swapgapiter_evfrontgap_b010 es un checkpoint derivado de meta-llama/Meta-Llama-3-8B-Instruct publicado por el usuario Jeesup en HuggingFace. Se trata de un artefacto de investigación: el modelo base se ha comprimido con la técnica SVD-LLM hasta eliminar el 50,03 % de los parámetros densos (fracción resultante de 0,4997) y, a continuación, se ha editado con 10 de 10 rondas de sustitución iterativa y neutra de parámetros ("parameter-neutral swap") guiadas por la regla de selección `gap_iter`.
+svd-safety-l3_remove50_swapgapiter_evfrontgap_b010 es un checkpoint derivado de meta-llama/Meta-Llama-3-8B-Instruct publicado por el usuario Jeesup en Hugging Face. Se trata de un artefacto de investigación: el modelo base se ha comprimido con la técnica SVD-LLM hasta eliminar el 50,03 % de los parámetros densos (fracción resultante de 0,4997) y, a continuación, se ha editado con 10 de 10 rondas de sustitución iterativa y neutra de parámetros ("parameter-neutral swap") guiadas por la regla de selección `gap_iter`.
 
 La edición incorpora 69.735.424 parámetros (el 1,00 % de los parámetros de proyección densos) mediante valor de inserción, con desalojo ordenado por sigma. En total se restauraron 11.051 componentes y se sustituyeron 5.304, con semilla 42 y un presupuesto de 0,100 % de parámetros densos por ronda (1,000 % acumulado). El objetivo declarado no es ofrecer un asistente conversacional, sino cuantificar cómo la compresión SVD degrada el comportamiento de seguridad y qué regla de selección de componentes lo repara mejor.
 
@@ -85,8 +85,8 @@ Nota: las estimaciones de VRAM se derivan del recuento de parámetros y del tama
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Metricas de seguridad / calidad |
 |---|---|---|---|---|---|
-| svd-safety-l3_remove50_swapgapiter_evfrontgap_b010 | 8.030.261.248 según safetensors (fracción 0,4997 según la model card) | no disponible | Llama 3 Community License | HuggingFace (0 descargas, 0 likes) | ASR AdvBench 0,0442; ASR StrongREJECT 0,0895; sobre-rechazo 0,2064; PPL WikiText-2 112,5511 |
-| meta-llama/Meta-Llama-3-8B-Instruct | 8.030.261.248 | 8.192 tokens (dato del modelo original, no confirmado en la información proporcionada para este derivado) | Llama 3 Community License | HuggingFace | no disponible en la información proporcionada |
+| svd-safety-l3_remove50_swapgapiter_evfrontgap_b010 | 8.030.261.248 según safetensors (fracción 0,4997 según la model card) | no disponible | Llama 3 Community License | Hugging Face (0 descargas, 0 likes) | ASR AdvBench 0,0442; ASR StrongREJECT 0,0895; sobre-rechazo 0,2064; PPL WikiText-2 112,5511 |
+| meta-llama/Meta-Llama-3-8B-Instruct | 8.030.261.248 | 8.192 tokens (dato del modelo original, no confirmado en la información proporcionada para este derivado) | Llama 3 Community License | Hugging Face | no disponible en la información proporcionada |
 | Otros brazos de la rejilla SVD-safety del mismo autor | no disponible | no disponible | Llama 3 Community License | no disponible | no disponible |
 
 No se ha encontrado en la información disponible ningún otro modelo comparable con datos de benchmark publicados que permita una comparación cuantitativa directa.
@@ -107,7 +107,7 @@ No se ha encontrado en la información disponible ningún otro modelo comparable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l3_remove50_swapgapiter_evfrontgap_b010
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l3_remove50_swapgapiter_evfrontgap_b010
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
 - Licencia y política de uso: los archivos `LICENSE` y `USE_POLICY.md` se incluyen en el propio repositorio del modelo.
 

@@ -78,9 +78,9 @@ La comparacion se plantea frente al modelo base del que deriva y frente a altern
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama-3.2-1B-Compressed-Joint-GSM8K-Aug-NL | 1B en backbone mas compresor y LoRA | no disponible (limite de entrenamiento de 256 tokens) | Razonamiento latente para GSM8K, requiere codigo custom | Llama 3.2 Community License | HuggingFace, state dict nativo, 0 descargas |
+| Llama-3.2-1B-Compressed-Joint-GSM8K-Aug-NL | 1B en backbone mas compresor y LoRA | no disponible (limite de entrenamiento de 256 tokens) | Razonamiento latente para GSM8K, requiere codigo custom | Llama 3.2 Community License | Hugging Face, state dict nativo, 0 descargas |
 | meta-llama/Llama-3.2-1B-Instruct | 1B | no disponible en esta ficha | Modelo instructivo de proposito general | Llama 3.2 Community License | Ampliamente disponible, formatos estandar |
-| Alternativas pequenas de proposito general (por ejemplo, familias de 1B a 2B con licencia permisiva) | 1B-2B | no disponible | Instruccion y chat general | Variable segun familia | Estandar en HuggingFace |
+| Alternativas pequenas de proposito general (por ejemplo, familias de 1B a 2B con licencia permisiva) | 1B-2B | no disponible | Instruccion y chat general | Variable segun familia | Estandar en Hugging Face |
 | Otros trabajos de razonamiento latente tipo CODI | no disponible | no disponible | Razonamiento en espacio latente | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -101,7 +101,7 @@ La comparacion se plantea frente al modelo base del que deriva y frente a altern
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hanseungwook/Llama-3.2-1B-Compressed-Joint-GSM8K-Aug-NL
+- Modelo en Hugging Face: https://huggingface.co/hanseungwook/Llama-3.2-1B-Compressed-Joint-GSM8K-Aug-NL
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
 - Conjunto de datos de entrenamiento: https://huggingface.co/datasets/zen-E/GSM8k-Aug-NL
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/columbia-homies/latent-reasoning/runs/hd10-augnl-20260916T003758Z-lr3e-4
@@ -112,4 +112,4 @@ La comparacion se plantea frente al modelo base del que deriva y frente a altern
 - Configuracion de la receta: `run_configuration.json`
 - Resultados de validacion por epoca: `validation_results.json`
 - Manifiesto de la release con tamanos y hashes: `release_manifest.json`
-- Nota sobre la busqueda web: las consultas realizadas no devolvieron resultados relacionados con este modelo; los unicos enlaces pertinentes son los incluidos en la model card y en el propio repositorio de HuggingFace.
+- Nota sobre la busqueda web: las consultas realizadas no devolvieron resultados relacionados con este modelo; los unicos enlaces pertinentes son los incluidos en la model card y en el propio repositorio de Hugging Face.

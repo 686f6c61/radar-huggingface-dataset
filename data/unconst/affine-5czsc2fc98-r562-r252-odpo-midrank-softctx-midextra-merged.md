@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `unconst/Affine-5czsc2fc98-r562-r252-odpo-midrank-softctx-midextra-merged` es un checkpoint fusionado (LoRA-merged) desarrollado por el usuario `unconst` a partir del modelo base `kevin954/Affine-5dfqbbh8ev-sft`. Según las etiquetas de HuggingFace, se trata de un modelo de arquitectura MoE (Mixture of Experts) basado en Qwen3.5, con capacidades multimodales (image-text-to-text) aunque su pipeline principal es text-generation. El nombre del checkpoint sugiere que fue entrenado con ODPO (Online Direct Preference Optimization) y con técnicas de contexto suave (soft context) y contexto extendido (midextra).
+El modelo `unconst/Affine-5czsc2fc98-r562-r252-odpo-midrank-softctx-midextra-merged` es un checkpoint fusionado (LoRA-merged) desarrollado por el usuario `unconst` a partir del modelo base `kevin954/Affine-5dfqbbh8ev-sft`. Según las etiquetas de Hugging Face, se trata de un modelo de arquitectura MoE (Mixture of Experts) basado en Qwen3.5, con capacidades multimodales (image-text-to-text) aunque su pipeline principal es text-generation. El nombre del checkpoint sugiere que fue entrenado con ODPO (Online Direct Preference Optimization) y con técnicas de contexto suave (soft context) y contexto extendido (midextra).
 
 Con 35.107.181.936 parámetros totales (~35B), es un modelo de gran tamaño. Sin embargo, el autor lo describe como un "checkpoint de rescate" privado, no una versión final para producción: "Private TTL insurance; not a submission until Stage-5 gate clears". Esto indica que es un artefacto intermedio de un proceso de entrenamiento más amplio, probablemente parte de un pipeline de fine-tuning con múltiples etapas. Su relevancia radica en ser un ejemplo de aplicación de ODPO y fusión de LoRA en un modelo MoE multimodal, aunque carece de documentación pública detallada.
 
@@ -78,7 +78,7 @@ La comparación es limitada porque no hay datos de rendimiento ni de contexto pa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unconst/Affine-5czsc2fc98-r562-r252-odpo-midrank-softctx-midextra-merged
+- Modelo en Hugging Face: https://huggingface.co/unconst/Affine-5czsc2fc98-r562-r252-odpo-midrank-softctx-midextra-merged
 - Modelo base: https://huggingface.co/kevin954/Affine-5dfqbbh8ev-sft
 - Checkpoint relacionado (h1-merged): https://huggingface.co/unconst/Affine-5czsc2fc98-h1-merged
 - Checkpoint relacionado (h56-merged): https://huggingface.co/unconst/Affine-5czsc2fc98-h56-merged

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`zihaohe49/beit-multitask-playground` es un repositorio de investigación publicado en HuggingFace que contiene un prototipo de modelo basado en la arquitectura BEiT (Bidirectional Encoder Representations from Image Transformers) orientado a tareas multitarea. Lo desarrolla el usuario zihaohe49 y se distribuye bajo licencia BSD-3-Clause. No se trata de un modelo entrenado ni evaluado, sino de un esqueleto reproducible: incluye el código de definición del modelo, una configuración de arquitectura generada, una receta de entrenamiento por defecto y un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests).
+`zihaohe49/beit-multitask-playground` es un repositorio de investigación publicado en Hugging Face que contiene un prototipo de modelo basado en la arquitectura BEiT (Bidirectional Encoder Representations from Image Transformers) orientado a tareas multitarea. Lo desarrolla el usuario zihaohe49 y se distribuye bajo licencia BSD-3-Clause. No se trata de un modelo entrenado ni evaluado, sino de un esqueleto reproducible: incluye el código de definición del modelo, una configuración de arquitectura generada, una receta de entrenamiento por defecto y un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests).
 
 El modelo se presenta a escala "huge", con atención dispersa (sparse attention), fusión de tensores, activación GELU y normalización por batch. El checkpoint incluido en safetensors contiene 49.600 parámetros, un valor coherente con un checkpoint de inicialización y no con un modelo "huge" completamente entrenado, lo que refuerza que el artefacto es un punto de partida experimental y no un modelo listo para producción. El repositorio ocupa 0,0 GB y no registra descargas ni interacciones en el momento de la consulta.
 
@@ -80,4 +80,4 @@ No se dispone de datos verificados de los modelos comparables en la información
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/zihaohe49/beit-multitask-playground
+- Hugging Face: https://huggingface.co/zihaohe49/beit-multitask-playground

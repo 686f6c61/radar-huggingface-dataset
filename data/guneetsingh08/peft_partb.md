@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`guneetsingh08/PEFT_Partb` es un repositorio publicado en HuggingFace Hub por el usuario guneetsingh08 el 22 de octubre de 2026 (fecha declarada por la plataforma). El repositorio no incluye informacion tecnica util: la model card es la plantilla autogenerada por HuggingFace, con todos los campos marcados como `[More Information Needed]`, y no se ha publicado ningun resultado de evaluacion, descripcion de arquitectura ni dataset de entrenamiento.
+`guneetsingh08/PEFT_Partb` es un repositorio publicado en Hugging Face Hub por el usuario guneetsingh08 el 22 de octubre de 2026 (fecha declarada por la plataforma). El repositorio no incluye informacion tecnica util: la model card es la plantilla autogenerada por Hugging Face, con todos los campos marcados como `[More Information Needed]`, y no se ha publicado ningun resultado de evaluacion, descripcion de arquitectura ni dataset de entrenamiento.
 
 El nombre del repositorio sugiere que podria tratarse de un artefacto relacionado con PEFT (Parameter-Efficient Fine-Tuning), posiblemente un adaptador o una parte de un ejercicio de ajuste fino, pero esta hipotesis no esta confirmada por ninguna fuente. Las etiquetas del repositorio son genericas (`transformers`, `safetensors`, `endpoints_compatible`, `region:us`) y el tamano reportado del repositorio es de 0,0 GB, lo que es compatible con un repositorio vacio o con un contenido minimo no verificado.
 
@@ -35,7 +35,7 @@ Otros metadatos verificables:
 | Ultima actualizacion | 2026-10-22T16:34:19Z |
 | Etiqueta arXiv | arxiv:1910.09700 |
 
-La etiqueta `arxiv:1910.09700` corresponde a Lacoste et al. (2019), "Quantifying the Carbon Emissions of Machine Learning", un articulo citado en la plantilla estandar de model card de HuggingFace para el calculo de emisiones. No es un articulo que describa este modelo.
+La etiqueta `arxiv:1910.09700` corresponde a Lacoste et al. (2019), "Quantifying the Carbon Emissions of Machine Learning", un articulo citado en la plantilla estandar de model card de Hugging Face para el calculo de emisiones. No es un articulo que describa este modelo.
 
 ## Arquitectura y entrenamiento
 
@@ -54,7 +54,7 @@ No se ha publicado ninguna descripcion de capacidades. A partir de los metadatos
 - Capacidades multimodales (vision, audio) o modos especiales como thinking mode.
 - Comportamiento en contexto largo.
 
-La unica capacidad inferible es la compatible con la libreria `transformers` y el formato `safetensors`, es decir, la carga mediante la API estandar de HuggingFace, siempre que los ficheros de pesos esten efectivamente presentes y completos.
+La unica capacidad inferible es la compatible con la libreria `transformers` y el formato `safetensors`, es decir, la carga mediante la API estandar de Hugging Face, siempre que los ficheros de pesos esten efectivamente presentes y completos.
 
 ## Casos de uso
 
@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: no disponible, al desconocerse el numero de parametros y la precision de los pesos.
 - GPU recomendadas: no disponible por el mismo motivo.
 - Viabilidad en GPU de consumo: no determinable sin identificar el modelo base.
-- Opciones de despliegue: la etiqueta `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints, pero no se ha verificado. Otras opciones (vLLM, llama.cpp, Ollama, TGI) dependen del formato y del modelo base.
+- Opciones de despliegue: la etiqueta `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints, pero no se ha verificado. Otras opciones (vLLM, llama.cpp, Ollama, TGI) dependen del formato y del modelo base.
 - Latencia y throughput: no disponibles.
 
 Nota metodologica: si el repositorio contiene exclusivamente un adaptador PEFT, el coste de VRAM en inferencia seria aproximadamente el del modelo base mas una sobrecarga pequena asociada a los pesos del adaptador, que suele ser de uno a dos ordenes de magnitud inferior al del modelo completo. Esta afirmacion es una propiedad general de PEFT y no un dato medido sobre este repositorio.
@@ -101,7 +101,7 @@ No disponible. No es posible establecer una comparativa porque se desconocen los
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/guneetsingh08/PEFT_Partb
+- Repositorio en Hugging Face: https://huggingface.co/guneetsingh08/PEFT_Partb
 - Articulo citado en la plantilla (no documenta el modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de ML referenciada en la plantilla: https://mlco2.github.io/impact
 - Resultados de busqueda web: no se encontro ningun enlace relacionado con el modelo. Las unicas entradas devueltas correspondian a dominios sin relacion (EcoleDirecte) y se han descartado por no aportar informacion sobre el repositorio.

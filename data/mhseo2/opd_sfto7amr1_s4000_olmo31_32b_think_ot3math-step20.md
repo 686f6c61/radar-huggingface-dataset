@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks comparativos con modelos similares 
 
 | Modelo | Parámetros | Contexto | Benchmarks matemáticos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (`opd_..._step20`) | 7,3B | no disponible | AIME 2025: 37,92; AIME 2026: 41,67; HMMT Feb 2025: 23,75 (mean@8) | Apache 2.0 | HuggingFace, 36 descargas |
-| `mhseo2/sft_olmo3base7b_amr1_0528_math_n204800-step4000` (modelo base) | 7,3B (misma familia) | no disponible | no disponible | no disponible | HuggingFace |
-| `allenai/Olmo-3.1-32B-Think` (profesor) | 32B (según nombre) | no disponible | no disponible | no disponible | HuggingFace |
+| Este modelo (`opd_..._step20`) | 7,3B | no disponible | AIME 2025: 37,92; AIME 2026: 41,67; HMMT Feb 2025: 23,75 (mean@8) | Apache 2.0 | Hugging Face, 36 descargas |
+| `mhseo2/sft_olmo3base7b_amr1_0528_math_n204800-step4000` (modelo base) | 7,3B (misma familia) | no disponible | no disponible | no disponible | Hugging Face |
+| `allenai/Olmo-3.1-32B-Think` (profesor) | 32B (según nombre) | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de benchmarks de los modelos comparables en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa de rendimiento.
 
@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks de los modelos comparables en la informaci�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mhseo2/opd_sfto7amr1_s4000_olmo31_32b_think_ot3math-step20
+- Modelo en Hugging Face: https://huggingface.co/mhseo2/opd_sfto7amr1_s4000_olmo31_32b_think_ot3math-step20
 - Modelo base: https://huggingface.co/mhseo2/sft_olmo3base7b_amr1_0528_math_n204800-step4000
 - Profesor: https://huggingface.co/allenai/Olmo-3.1-32B-Think
 - Dataset de prompts: OpenThoughts3 (no se proporciona enlace directo en la información disponible)

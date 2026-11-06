@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MUA-Fetal-AI es un modelo publicado en HuggingFace por el usuario Lastchitumba bajo el identificador `Lastchitumba/MUA-Fetal-AI`. En el momento de redactar esta ficha, el repositorio no incluye model card con descripcion tecnica: el unico contenido del README es el bloque de metadatos con la licencia Apache 2.0. No se dispone, por tanto, de informacion verificable sobre arquitectura, tamano, datos de entrenamiento ni capacidades reales del modelo.
+MUA-Fetal-AI es un modelo publicado en Hugging Face por el usuario Lastchitumba bajo el identificador `Lastchitumba/MUA-Fetal-AI`. En el momento de redactar esta ficha, el repositorio no incluye model card con descripcion tecnica: el unico contenido del README es el bloque de metadatos con la licencia Apache 2.0. No se dispone, por tanto, de informacion verificable sobre arquitectura, tamano, datos de entrenamiento ni capacidades reales del modelo.
 
 El propio nombre del repositorio sugiere un ambito de aplicacion relacionado con salud fetal, pero se trata unicamente de una inferencia a partir del identificador y no de un dato confirmado por el autor. No hay documentacion, paper, demo ni ejemplo de uso asociado que permita validar esa hipotesis.
 
@@ -80,6 +80,6 @@ No disponible. No se han identificado modelos comparables porque se desconoce la
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Lastchitumba/MUA-Fetal-AI
+- Repositorio en Hugging Face: https://huggingface.co/Lastchitumba/MUA-Fetal-AI
 
 Los resultados de busqueda web proporcionados no contienen informacion relacionada con el modelo: corresponden a fichas de peliculas tituladas "Sky High" en IMDb y no guardan relacion con este repositorio. No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a MUA-Fetal-AI.

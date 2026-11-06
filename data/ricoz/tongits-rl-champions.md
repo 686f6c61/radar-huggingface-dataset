@@ -81,10 +81,10 @@ No disponible. No se han encontrado modelos comparables públicamente disponible
 - No se ha publicado información sobre el dataset de entrenamiento, los sesgos del entorno ni las condiciones de recompensa, lo que dificulta la reproducibilidad completa.
 - Aunque la licencia Apache-2.0 permite uso comercial, es necesario mantener la atribución y la inclusión del aviso de licencia.
 - No se ofrecen garantías de equilibrio de juego; las personas pueden presentar comportamientos extremos que resulten poco realistas o explotables.
-- El tamaño del repositorio aparece como 0.0 GB en HuggingFace, lo que puede deberse a que los archivos ONNX son muy pequeños (2.84 MB cada uno) y no se han contabilizado correctamente en la metadata.
+- El tamaño del repositorio aparece como 0.0 GB en Hugging Face, lo que puede deberse a que los archivos ONNX son muy pequeños (2.84 MB cada uno) y no se han contabilizado correctamente en la metadata.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ricoz/tongits-rl-champions
+- Hugging Face: https://huggingface.co/ricoz/tongits-rl-champions
 - GitHub (juego Tongits original de 2003): https://github.com/ricoz/tongits
 - Web del juego Tongits.io: https://tongits.io (mencionado en el README)

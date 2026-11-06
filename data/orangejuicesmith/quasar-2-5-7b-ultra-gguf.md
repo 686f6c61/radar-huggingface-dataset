@@ -31,7 +31,7 @@ En cuanto al entrenamiento, las etiquetas `trl`, `sft` y `generated_from_trainer
 
 - Generacion de texto conversacional multi-turno, segun la etiqueta `conversational` y el formato de pesos orientado a chat.
 - Ajuste supervisado (SFT) sobre el modelo base, lo que en principio mejora el seguimiento de instrucciones respecto al checkpoint original, aunque no se publican evaluaciones que lo cuantifiquen.
-- Compatibilidad declarada con endpoints (`endpoints_compatible`), pensada para su despliegue detras de APIs compatibles con el esquema de HuggingFace.
+- Compatibilidad declarada con endpoints (`endpoints_compatible`), pensada para su despliegue detras de APIs compatibles con el esquema de Hugging Face.
 - Ejecucion local en CPU y GPU mediante el ecosistema GGUF (llama.cpp y derivados), lo que habilita su uso sin conexion.
 - Capacidad de codigo: no confirmada documentalmente, solo sugerida por el nombre `Ultra-Code` en la model card heredada.
 - Soporte de tool calling / function calling: no disponible en la informacion.
@@ -89,7 +89,7 @@ La comparacion directa de calidad no es posible: no hay benchmarks publicados pa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/orangejuicesmith/Quasar-2.5-7B-Ultra-GGUF
+- Repositorio Hugging Face: https://huggingface.co/orangejuicesmith/Quasar-2.5-7B-Ultra-GGUF
 - Modelo base: https://huggingface.co/silx-ai/Quasar-2.5-7B-Ultra
 - Cuantizaciones estaticas de referencia citadas en la model card: https://huggingface.co/mradermacher/Quasar-2.5-7B-Ultra-GGUF
 - Cuantizaciones ponderadas / iMatrix: https://huggingface.co/mradermacher/Quasar-2.5-7B-Ultra-i1-GGUF

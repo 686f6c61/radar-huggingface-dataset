@@ -93,11 +93,11 @@ Los autores afirman que la inicializacion por transferencia supera a la iniciali
 
 | Modelo | Parametros | Contexto | Perplejidad WikiText-103 | Licencia | Disponibilidad |
 |---|---|---:|---:|---|---|
-| ScaleOp par A (1.4B a 410M, hybrid_rs_1B) | 410M | no disponible (config Pythia) | 40,0 | Apache 2.0 | HuggingFace, solo state_dict |
-| ScaleOp par B (410M a 160M, hybrid_100M) | 160M | no disponible (config Pythia) | 77,1 | Apache 2.0 | HuggingFace, solo state_dict |
-| EleutherAI/pythia-410m | 410M | 2048 | ~15,6 | Apache 2.0 | HuggingFace, pesos completos |
-| EleutherAI/pythia-160m | 160M | 2048 | no disponible en la informacion proporcionada | Apache 2.0 | HuggingFace, pesos completos |
-| EleutherAI/pythia-1.4b (donante del par A) | 1,4B | 2048 | no disponible en la informacion proporcionada | Apache 2.0 | HuggingFace, pesos completos |
+| ScaleOp par A (1.4B a 410M, hybrid_rs_1B) | 410M | no disponible (config Pythia) | 40,0 | Apache 2.0 | Hugging Face, solo state_dict |
+| ScaleOp par B (410M a 160M, hybrid_100M) | 160M | no disponible (config Pythia) | 77,1 | Apache 2.0 | Hugging Face, solo state_dict |
+| EleutherAI/pythia-410m | 410M | 2048 | ~15,6 | Apache 2.0 | Hugging Face, pesos completos |
+| EleutherAI/pythia-160m | 160M | 2048 | no disponible en la informacion proporcionada | Apache 2.0 | Hugging Face, pesos completos |
+| EleutherAI/pythia-1.4b (donante del par A) | 1,4B | 2048 | no disponible en la informacion proporcionada | Apache 2.0 | Hugging Face, pesos completos |
 
 La comparacion relevante no es de calidad absoluta sino de proposito: los Pythia oficiales son modelos preentrenados completos y utilizables como base LM, mientras que los checkpoints ScaleOp son puntos finales de experimentos controlados con presupuestos de 0,01 % a 0,3 % del preentrenamiento original, pensados exclusivamente para estudiar inicializaciones.
 
@@ -116,7 +116,7 @@ La comparacion relevante no es de calidad absoluta sino de proposito: los Pythia
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/YenugulaAIML/scaleop-pythia-conversions
+- Modelo en Hugging Face: https://huggingface.co/YenugulaAIML/scaleop-pythia-conversions
 - Articulo: https://arxiv.org/abs/2608.02829
 - Repositorio de codigo, configuraciones y receta del corpus congelado: https://github.com/rsdpyenugula/ScaleOp
 - README del repositorio de codigo: https://github.com/rsdpyenugula/ScaleOp/blob/master/README.md

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kontgo/merge-conflict-antispoofing` es un repositorio publicado en HuggingFace por el usuario kontgo el 22 de septiembre de 2026, con licencia MIT. En el momento de redactar esta ficha acumula 0 descargas y 0 likes, y su model card contiene unicamente la declaracion de licencia (`license: mit`), sin ningun otro contenido: no hay descripcion, arquitectura, datos de entrenamiento, ejemplos de uso ni resultados.
+`kontgo/merge-conflict-antispoofing` es un repositorio publicado en Hugging Face por el usuario kontgo el 22 de septiembre de 2026, con licencia MIT. En el momento de redactar esta ficha acumula 0 descargas y 0 likes, y su model card contiene unicamente la declaracion de licencia (`license: mit`), sin ningun otro contenido: no hay descripcion, arquitectura, datos de entrenamiento, ejemplos de uso ni resultados.
 
 Esto significa que no es posible determinar que tipo de modelo es. El identificador sugiere un artefacto relacionado con deteccion de ataques de suplantacion (antispoofing) y con resolucion de conflictos de merge, pero se trata solo de una inferencia a partir del nombre y no de informacion verificada; el autor no la confirma en ninguna parte del repositorio.
 
@@ -29,7 +29,7 @@ Tampoco se dispone de informacion sobre innovaciones tecnicas, estrategias de de
 
 ## Capacidades
 
-No disponible. No se ha publicado ninguna descripcion de capacidades, y los metadatos de HuggingFace no declaran una pipeline concreta (el campo aparece como no disponible), por lo que ni siquiera puede confirmarse si se trata de un modelo de lenguaje, de un modelo de audio, de vision o de otro tipo de artefacto.
+No disponible. No se ha publicado ninguna descripcion de capacidades, y los metadatos de Hugging Face no declaran una pipeline concreta (el campo aparece como no disponible), por lo que ni siquiera puede confirmarse si se trata de un modelo de lenguaje, de un modelo de audio, de vision o de otro tipo de artefacto.
 
 ## Casos de uso
 
@@ -64,6 +64,6 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kontgo/merge-conflict-antispoofing
+- Hugging Face: https://huggingface.co/kontgo/merge-conflict-antispoofing
 
 La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo: los enlaces recuperados (hilos de Reddit sobre trabajo remoto y entrenamiento de IA, discusiones en Zhihu sobre terminales en macOS y gestion de espacio en disco, y un subreddit sobre jailbreak de PS5) no guardan relacion con el repositorio. No se han encontrado papers, blogs, repositorios de codigo ni demos asociados.

@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Kloak656-GGUF",
   "created_at": "2026-11-05T06:29:19.000Z",
-  "updated_at": "2026-11-05T06:34:59.000Z",
+  "updated_at": "2026-11-05T06:46:57.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -25,12 +25,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 1,
   "trending_score": 0,
   "parameters": 8953803264,
   "parameters_human": "8.95B",
-  "storage_bytes": 77739581952,
-  "storage_human": "77.7 GB",
+  "storage_bytes": 82967479872,
+  "storage_human": "83.0 GB",
   "base_model": "RoseG/Kloak656",
   "formats": [
     "gguf"

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Akilad/minimax_h3_taomate_3step_clarity_extreme_no_attn es un artefacto publicado en HuggingFace por el usuario Akilad, declarado como ajuste fino (finetune) del modelo base MiniMaxAI/MiniMax-H3. El repositorio ocupa 0,2 GB, un tamano muy inferior al que tendria un modelo completo de gran escala, lo que apunta a un adaptador (por ejemplo, tipo LoRA) o a un unico archivo de pesos parcial, aunque la model card no confirma la naturaleza exacta del artefacto. El nombre del repositorio incluye sufijos como "3step", "clarity", "extreme" y "no_attn" que no vienen explicados en la documentacion disponible.
+Akilad/minimax_h3_taomate_3step_clarity_extreme_no_attn es un artefacto publicado en Hugging Face por el usuario Akilad, declarado como ajuste fino (finetune) del modelo base MiniMaxAI/MiniMax-H3. El repositorio ocupa 0,2 GB, un tamano muy inferior al que tendria un modelo completo de gran escala, lo que apunta a un adaptador (por ejemplo, tipo LoRA) o a un unico archivo de pesos parcial, aunque la model card no confirma la naturaleza exacta del artefacto. El nombre del repositorio incluye sufijos como "3step", "clarity", "extreme" y "no_attn" que no vienen explicados en la documentacion disponible.
 
 La relevancia de esta ficha es limitada por la escasez de informacion verificable: no hay pipeline declarado, no hay idiomas declarados, no hay metricas publicadas y el repositorio acumula 0 descargas y 0 "likes" en el momento de la consulta. Ademas, la model card publicada se limita al bloque de metadatos YAML con la licencia apache-2.0 y la referencia al modelo base, sin descripcion tecnica, sin instrucciones de uso y sin ejemplos.
 
@@ -40,7 +40,7 @@ No se han documentado capacidades especificas de este artefacto en la informacio
 - Capacidades del modelo base: no disponibles en la informacion proporcionada.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
-- Cobertura multilingue: no disponible (el campo de idiomas esta vacio en la ficha de HuggingFace).
+- Cobertura multilingue: no disponible (el campo de idiomas esta vacio en la ficha de Hugging Face).
 - Capacidades especiales (modo de razonamiento explicito, vision, audio): no disponible.
 - Modificaciones introducidas por el ajuste fino: no disponibles; el autor no describe que comportamiento cambia respecto al modelo base ni para que tarea fue ajustado.
 
@@ -96,7 +96,7 @@ No se han identificado modelos comparables en la informacion proporcionada. Las 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Akilad/minimax_h3_taomate_3step_clarity_extreme_no_attn
+- Repositorio en Hugging Face: https://huggingface.co/Akilad/minimax_h3_taomate_3step_clarity_extreme_no_attn
 - Modelo base declarado: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Paper, blog o repositorio de codigo del autor: no disponible
 - Demos o espacios asociados: no disponible

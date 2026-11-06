@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-2B_E1 es un ajuste fino (fine-tune) del modelo base unsloth/Qwen3.5-2B, publicado en HuggingFace por el usuario ThinhDao. Se trata de un modelo de generacion de texto de pequeno tamano, derivado de la familia Qwen3.5, y entrenado con las herramientas de Unsloth y la libreria TRL. La model card del autor es minima: unicamente indica que el modelo se entreno "2x mas rapido con Unsloth" y que deriva del checkpoint de Unsloth, sin detallar el conjunto de datos, el metodo de ajuste ni los objetivos del entrenamiento.
+Qwen3.5-2B_E1 es un ajuste fino (fine-tune) del modelo base unsloth/Qwen3.5-2B, publicado en Hugging Face por el usuario ThinhDao. Se trata de un modelo de generacion de texto de pequeno tamano, derivado de la familia Qwen3.5, y entrenado con las herramientas de Unsloth y la libreria TRL. La model card del autor es minima: unicamente indica que el modelo se entreno "2x mas rapido con Unsloth" y que deriva del checkpoint de Unsloth, sin detallar el conjunto de datos, el metodo de ajuste ni los objetivos del entrenamiento.
 
 El modelo se distribuye bajo licencia Apache 2.0, esta etiquetado exclusivamente para ingles (`language: en`) y es compatible con transformers y text-generation-inference. El repositorio ocupa aproximadamente 0,1 GB, un tamano muy reducido para un modelo de ~2.000 millones de parametros en precision completa, lo que sugiere que podria contener adaptadores LoRA o pesos parciales en lugar de un checkpoint completo, aunque esto no se confirma en la informacion disponible.
 
@@ -80,9 +80,9 @@ No hay datos de rendimiento que permitan una comparativa sustantiva. La tabla si
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| ThinhDao/Qwen3.5-2B_E1 | no confirmado (~2B por el nombre del base) | no disponible | Apache 2.0 | HuggingFace, 0 descargas, 1 like | no disponible |
-| unsloth/Qwen3.5-2B (modelo base) | no disponible | no disponible | no disponible | HuggingFace | no disponible |
-| Otros fine-tunes pequenos de la familia Qwen | no disponible | no disponible | no disponible | HuggingFace | no disponible |
+| ThinhDao/Qwen3.5-2B_E1 | no confirmado (~2B por el nombre del base) | no disponible | Apache 2.0 | Hugging Face, 0 descargas, 1 like | no disponible |
+| unsloth/Qwen3.5-2B (modelo base) | no disponible | no disponible | no disponible | Hugging Face | no disponible |
+| Otros fine-tunes pequenos de la familia Qwen | no disponible | no disponible | no disponible | Hugging Face | no disponible |
 
 No se dispone de informacion suficiente para comparar con alternativas de la misma categoria (por ejemplo, modelos densos de 1 a 3 mil millones de parametros de otras familias), ya que no hay benchmarks publicados ni especificaciones confirmadas del modelo base en el material proporcionado.
 
@@ -100,7 +100,7 @@ No se dispone de informacion suficiente para comparar con alternativas de la mis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ThinhDao/Qwen3.5-2B_E1
+- Modelo en Hugging Face: https://huggingface.co/ThinhDao/Qwen3.5-2B_E1
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-2B
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Repositorio de TRL: https://github.com/huggingface/trl

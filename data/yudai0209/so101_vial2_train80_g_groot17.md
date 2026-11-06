@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `yudai0209/so101_vial2_train80_G_groot17` | 3.144 M | no disponible | Pick-and-place de viales con SO-101 | Apache 2.0 | HuggingFace (0 descargas) |
+| `yudai0209/so101_vial2_train80_G_groot17` | 3.144 M | no disponible | Pick-and-place de viales con SO-101 | Apache 2.0 | Hugging Face (0 descargas) |
 | GR00T N1.7 (base, NVIDIA) | no disponible | no disponible | Modelo fundacional VLA entre morfologías | no disponible en la información | GitHub NVIDIA/Isaac-GR00T |
-| Políticas ACT / Diffusion Policy en LeRobot | no disponible | no disponible | Imitación sobre SO-101 y otros brazos | Apache 2.0 (LeRobot) | HuggingFace / LeRobot |
+| Políticas ACT / Diffusion Policy en LeRobot | no disponible | no disponible | Imitación sobre SO-101 y otros brazos | Apache 2.0 (LeRobot) | Hugging Face / LeRobot |
 
 La comparación con alternativas concretas no está disponible en la información proporcionada: no se han publicado métricas de éxito de esta política ni de políticas comparables sobre el mismo dataset, por lo que no es posible establecer una comparación cuantitativa.
 
@@ -86,7 +86,7 @@ La comparación con alternativas concretas no está disponible en la informació
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yudai0209/so101_vial2_train80_G_groot17
+- Modelo en Hugging Face: https://huggingface.co/yudai0209/so101_vial2_train80_G_groot17
 - Dataset de entrenamiento: https://huggingface.co/datasets/yudai0209/so101_vial2_train80_G
 - Visualización del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=yudai0209/so101_vial2_train80_G
 - Repositorio GR00T de NVIDIA: https://github.com/NVIDIA/Isaac-GR00T

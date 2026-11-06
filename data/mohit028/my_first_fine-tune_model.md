@@ -45,17 +45,17 @@ No se han publicado resultados de benchmarks estándar (MMLU, GLUE, etc.) en la 
 
 - VRAM estimada para inferencia: al tener 66,9 millones de parámetros, el modelo en FP32 ocupa aproximadamente 268 MB de memoria. Con cuantización a FP16 o int8, el uso se reduce a ~134 MB o ~67 MB respectivamente. Cabe en cualquier GPU con al menos 1 GB de VRAM.
 - GPU recomendadas: cualquier GPU consumer moderna (NVIDIA GTX 1060, RTX 2060, RTX 4090, etc.) es suficiente. También puede ejecutarse en CPU con un rendimiento aceptable para inferencia por lotes.
-- Opciones de despliegue: compatible con la librería Transformers de HuggingFace, así como con ONNX Runtime, TensorRT y otras herramientas de inferencia. No se han documentado integraciones específicas con vLLM, llama.cpp u Ollama, pero al ser un modelo estándar de Transformers, puede exportarse a esos formatos si se desea.
+- Opciones de despliegue: compatible con la librería Transformers de Hugging Face, así como con ONNX Runtime, TensorRT y otras herramientas de inferencia. No se han documentado integraciones específicas con vLLM, llama.cpp u Ollama, pero al ser un modelo estándar de Transformers, puede exportarse a esos formatos si se desea.
 - Latencia y throughput: no se dispone de mediciones oficiales. Dado su tamaño, se espera una latencia de pocos milisegundos por muestra en GPU y de decenas de milisegundos en CPU, pero estos valores son estimaciones no verificadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| my_first_fine-tune_model | 66,9 M | no disponible | Apache-2.0 | HuggingFace |
-| distilbert-base-uncased | 66,9 M | 512 tokens | Apache-2.0 | HuggingFace |
-| bert-base-uncased | 110 M | 512 tokens | Apache-2.0 | HuggingFace |
-| roberta-base | 125 M | 512 tokens | MIT | HuggingFace |
+| my_first_fine-tune_model | 66,9 M | no disponible | Apache-2.0 | Hugging Face |
+| distilbert-base-uncased | 66,9 M | 512 tokens | Apache-2.0 | Hugging Face |
+| bert-base-uncased | 110 M | 512 tokens | Apache-2.0 | Hugging Face |
+| roberta-base | 125 M | 512 tokens | MIT | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos entre estos modelos en tareas específicas, ya que el fine-tune no reporta benchmarks estándar. La comparativa se limita a parámetros y contexto, donde el modelo es idéntico a su base DistilBERT.
 
@@ -71,5 +71,5 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en tareas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mohit028/my_first_fine-tune_model
+- Modelo en Hugging Face: https://huggingface.co/Mohit028/my_first_fine-tune_model
 - Modelo base: https://huggingface.co/distilbert/distilbert-base-uncased

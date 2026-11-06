@@ -18,7 +18,7 @@ La relevancia de este lanzamiento esta en que concentra generacion y edicion en 
 | Longitud de contexto | No aplica en el sentido de los LLM. El modelo recibe un prompt de texto y, en modo edicion, hasta 10 imagenes de referencia en una misma peticion |
 | Tipos de cuantizacion | No disponibles. El pipeline oficial de diffusers se ejecuta en torch.bfloat16 |
 | Idiomas soportados | No disponible (la model card no publica lista de idiomas) |
-| Licencia | qwen-research (Qwen Research License Agreement); en HuggingFace aparece como license:other con license_name: qwen-research |
+| Licencia | qwen-research (Qwen Research License Agreement); en Hugging Face aparece como license:other con license_name: qwen-research |
 | Formato de pesos | safetensors, integrados en el pipeline QwenImage21Pipeline de diffusers |
 | Tarea declarada | text-to-image (texto a imagen y edicion de imagen) |
 | Resoluciones soportadas | 1:1 2048x2048; 4:3 2400x1792; 3:4 1792x2400; 3:2 2528x1696; 2:3 1696x2528; 16:9 2752x1536; 9:16 1536x2752 |
@@ -86,7 +86,7 @@ La informacion proporcionada no incluye datos de rendimiento de modelos alternat
 ## Limitaciones y advertencias
 
 - Repositorio de terceros: donutking20/Qwen-Image-2.1 es una copia subida por un usuario, no el repositorio oficial. Presenta 0 descargas y 0 likes, y los campos de creacion y actualizacion comparten la misma marca temporal (2026-09-21). Antes de usarlo en cualquier entorno, conviene verificar la integridad de los pesos contra el repositorio oficial Qwen/Qwen-Image-2.1.
-- Licencia: se trata de la Qwen Research License Agreement, etiquetada en HuggingFace como license:other con license_name: qwen-research. No es una licencia permisiva tipo Apache 2.0 y el propio nombre apunta a un uso orientado a investigacion. Es imprescindible leer el archivo LICENSE del repositorio antes de cualquier uso comercial; en esta informacion no se detallan los terminos concretos de explotacion.
+- Licencia: se trata de la Qwen Research License Agreement, etiquetada en Hugging Face como license:other con license_name: qwen-research. No es una licencia permisiva tipo Apache 2.0 y el propio nombre apunta a un uso orientado a investigacion. Es imprescindible leer el archivo LICENSE del repositorio antes de cualquier uso comercial; en esta informacion no se detallan los terminos concretos de explotacion.
 - Datos de entrenamiento no publicados: se desconoce la composicion del dataset, el numero de tokens de entrenamiento y si hubo fases de alineacion (RLHF, DPO). Esto impide evaluar sesgos de representacion por genero, etnia o cultura.
 - Sesgos conocidos: no disponibles en la informacion proporcionada. Al ser un modelo de generacion de imagenes, es esperable que reproduzca los sesgos de sus datos de entrenamiento (representacion de personas, profesiones y estetica), pero no hay documentacion al respecto en esta ficha.
 - Alucinacion visual: no se documentan tasas de error. Los modelos de difusion pueden producir texto ilegible en la imagen, anatomia incorrecta en manos y cuerpos, y reflejar el prompt de forma parcial. La model card afirma mejoras en tipografia, pero no aporta metricas.
@@ -99,7 +99,7 @@ La informacion proporcionada no incluye datos de rendimiento de modelos alternat
 ## Enlaces
 
 - Repositorio analizado (copia de terceros): https://huggingface.co/donutking20/Qwen-Image-2.1
-- Repositorio oficial en HuggingFace: https://huggingface.co/Qwen/Qwen-Image-2.1
+- Repositorio oficial en Hugging Face: https://huggingface.co/Qwen/Qwen-Image-2.1
 - ModelScope: https://modelscope.cn/models/Qwen/Qwen-Image-2.1
 - Blog del lanzamiento: https://qwen.ai/blog?id=qwen-image-2.1
 - Demo (Space): https://huggingface.co/spaces/Qwen/Qwen-Image-2.1

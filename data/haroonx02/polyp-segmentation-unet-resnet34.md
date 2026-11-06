@@ -79,7 +79,7 @@ No se han publicado comparaciones con otros modelos en la informacion disponible
 
 | Modelo | Parametros | Contexto/entrada | Dice (Kvasir-SEG) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| polyp-segmentation-unet-resnet34 | no disponible (98 MB FP32) | 320x320 px | 0,904 | MIT | HuggingFace + GitHub + Space |
+| polyp-segmentation-unet-resnet34 | no disponible (98 MB FP32) | 320x320 px | 0,904 | MIT | Hugging Face + GitHub + Space |
 | U-Net original (Ronneberger et al.) | no disponible | variable | no disponible | no disponible | Implementaciones multiples |
 | PraNet | no disponible | variable | no disponible | no disponible | Repositorio publico |
 | HarDNet-MSEG | no disponible | variable | no disponible | no disponible | Repositorio publico |
@@ -101,7 +101,7 @@ No se dispone de resultados de benchmarks de los modelos alternativos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/haroonx02/polyp-segmentation-unet-resnet34
+- Modelo en Hugging Face: https://huggingface.co/haroonx02/polyp-segmentation-unet-resnet34
 - Codigo de entrenamiento y evaluacion: https://github.com/haroonkhan02/polyp-segmentation-unet
 - Demo en navegador (Space): https://huggingface.co/spaces/haroonx02/polyp-segmentation-browser
 - Dataset Kvasir-SEG: Jha et al., "Kvasir-SEG: A Segmented Polyp Dataset", MMM 2020 (licencia CC BY 4.0)

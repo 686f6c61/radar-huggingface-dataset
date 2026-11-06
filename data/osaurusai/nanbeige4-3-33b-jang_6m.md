@@ -75,7 +75,7 @@ Como referencia de escala, dos implementaciones correctas distintas del mismo mo
 | Modelo | Parámetros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Nanbeige4.3-33B-JANG_6M | 33,1B (6,87 bits/peso) | 512K | Transformer denso Llama | Apache 2.0 | MLX/Osaurus, Apple Silicon |
-| Nanbeige/Nanbeige4.3-33B (base) | 33,1B | 512K | Transformer denso Llama | Apache 2.0 | HuggingFace, BF16 |
+| Nanbeige/Nanbeige4.3-33B (base) | 33,1B | 512K | Transformer denso Llama | Apache 2.0 | Hugging Face, BF16 |
 | Nanbeige4.3-33B-JANG_4D (mismo autor) | 33,1B (5,24 bits/peso) | 512K | Transformer denso Llama | Apache 2.0 | MLX/Osaurus, 21,7 GB |
 | Nanbeige4.3-33B-JANG_2D (mismo autor) | 33,1B (3,37 bits/peso) | 512K | Transformer denso Llama | Apache 2.0 | MLX/Osaurus, 14,0 GB |
 

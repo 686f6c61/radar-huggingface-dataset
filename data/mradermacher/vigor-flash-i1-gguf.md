@@ -25,12 +25,12 @@ La relevancia de esta ficha es doble: por un lado, documenta una opción de desp
 
 No se dispone de información sobre la arquitectura interna del modelo base VIGOR-flash en la documentación proporcionada. El dato de parámetros (9.197.093.888) proviene de los pesos en safetensors del modelo original, lo que confirma el tamaño, pero no la topología (transformer denso, MoE, híbrido SSM, etc.). Tampoco se especifican el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de alineación como RLHF, DPO o SFT.
 
-Lo único documentado es el proceso de cuantización: mradermacher ha generado las variantes GGUF mediante cuantización con matrices de importancia (imatrix), un método que pondera los errores de cuantización según la relevancia de cada peso para la distribución de activaciones, mejorando la fidelidad respecto a la cuantización uniforme en niveles bajos (Q2, Q3 e IQ). El repositorio incluye la etiqueta `nicoboss` y `convert_type: hf`, lo que indica conversión desde pesos HuggingFace.
+Lo único documentado es el proceso de cuantización: mradermacher ha generado las variantes GGUF mediante cuantización con matrices de importancia (imatrix), un método que pondera los errores de cuantización según la relevancia de cada peso para la distribución de activaciones, mejorando la fidelidad respecto a la cuantización uniforme en niveles bajos (Q2, Q3 e IQ). El repositorio incluye la etiqueta `nicoboss` y `convert_type: hf`, lo que indica conversión desde pesos Hugging Face.
 
 ## Capacidades
 
 - Generación de texto conversacional: la etiqueta `conversational` del repo sugiere un ajuste orientado a diálogo, aunque no se detalla el formato de prompt.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que puede servirse mediante infraestructura de inferencia compatible con la API de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que puede servirse mediante infraestructura de inferencia compatible con la API de Hugging Face.
 - Razonamiento y código: no confirmado explícitamente en la documentación disponible.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| VIGOR-flash-i1-GGUF (este) | ~9,2B | no disponible | no disponible | GGUF | HuggingFace |
-| Alternativas de ~9B con GGUF publicado | ~8-9B | variable | variable | GGUF | HuggingFace |
+| VIGOR-flash-i1-GGUF (este) | ~9,2B | no disponible | no disponible | GGUF | Hugging Face |
+| Alternativas de ~9B con GGUF publicado | ~8-9B | variable | variable | GGUF | Hugging Face |
 
 No se dispone de información suficiente para identificar alternativas comparables concretas con datos verificables (contexto, benchmarks, licencia) en la documentación proporcionada. Se indica "no disponible" para evitar comparaciones sin base.
 

@@ -73,6 +73,6 @@ No hay modelos comparables directamente en la información proporcionada. La arq
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OrisTeam/Vyuhu-280M-Base-3012m
+- Modelo en Hugging Face: https://huggingface.co/OrisTeam/Vyuhu-280M-Base-3012m
 - Checkpoint anterior (1704m): https://huggingface.co/OrisTeam/Vyuhu-280M-Base-1704m
 - Organización OrisTeam: https://huggingface.co/OrisTeam

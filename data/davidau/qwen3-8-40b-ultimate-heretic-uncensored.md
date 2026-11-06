@@ -23,7 +23,7 @@ Su relevancia ahora es de nicho: cubre la demanda de modelos abiertos sin censur
 | Modelo base | Qwen/Qwen3.8-27B |
 | Pipeline | image-text-to-text |
 | Tamaño del repositorio | 79,9 GB |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Modalidad de uso | Conversacional, razonamiento, instruct, escritura creativa, rol |
 | Descargas / likes | 1 descarga, 18 likes |
 | Fecha de creación / actualización | 2026-10-22 / 2026-10-26 |
@@ -90,7 +90,7 @@ La comparación directa con alternativas de la misma categoría (finetunes sin c
 - Solo se declara inglés (`en`); no hay evidencia de competencia en castellano ni en otros idiomas.
 - Longitud de contexto desconocida: no se puede dimensionar el coste de caché KV ni planificar cargas con documentos largos.
 - La expansión de 27B a ~40B no está documentada; se desconoce qué proporción de los parámetros añadidos está efectivamente entrenada y cómo afecta a la estabilidad numérica.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que impide su descarga automatizada en pipelines sin gestión de tokens.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que impide su descarga automatizada en pipelines sin gestión de tokens.
 - Licencia Apache 2.0: permite uso comercial y modificación, pero se ofrece sin garantías; el autor no asume responsabilidad por el uso del modelo.
 - Madurez muy baja: 1 descarga y 18 likes en el momento de la consulta, sin comunidad que haya validado el comportamiento en producción.
 - Los "27 modos de razonamiento" y los "AI Constructs" son convenciones de prompt definidas por el autor, no funcionalidades verificadas por terceros; su comportamiento real puede variar.
@@ -98,7 +98,7 @@ La comparación directa con alternativas de la misma categoría (finetunes sin c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DavidAU/Qwen3.8-40B-Ultimate-Heretic-Uncensored
+- Modelo en Hugging Face: https://huggingface.co/DavidAU/Qwen3.8-40B-Ultimate-Heretic-Uncensored
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Dataset de ajuste: https://huggingface.co/datasets/DavidAU/Polar-STRICT-Datasets
 - Dataset de ajuste: https://huggingface.co/datasets/DavidAU/F451-STRICT-Datasets

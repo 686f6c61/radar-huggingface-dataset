@@ -69,8 +69,8 @@ No se dispone de datos suficientes para realizar una comparativa rigurosa. El mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/NyiNyiMyo/mask2former_coco
-- Colección de modelos Mask2Former en HuggingFace: https://huggingface.co/collections/zeromodels/mask2former
+- Repositorio Hugging Face: https://huggingface.co/NyiNyiMyo/mask2former_coco
+- Colección de modelos Mask2Former en Hugging Face: https://huggingface.co/collections/zeromodels/mask2former
 - Modelo original de Facebook (Mask2Former Swin-Tiny COCO Instance): https://huggingface.co/facebook/mask2former-swin-tiny-coco-instance
 - Código oficial de Mask2Former en GitHub: https://github.com/HuaQitian519/Mask2Former
 - Página de referencia del modelo en AIBase: https://model.aibase.com/en/models/details/1915694471775412226

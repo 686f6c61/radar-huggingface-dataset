@@ -37,7 +37,7 @@ La conversión a RK3588 introduce varias modificaciones técnicas relevantes. RK
 - Localización visual (visual grounding): devuelve cajas delimitadoras de objetos descritos en lenguaje natural mediante el prompt `Locate all the instances that matches the following description: <categoría>.`
 - Pointing: localiza un objeto concreto a partir de una frase mediante el prompt `Point to: <frase>.`
 - Detección de objetos guiada por texto: múltiples instancias por imagen (evaluado con 1-8 instancias).
-- Generación de texto e image-text-to-text: pipeline declarado en HuggingFace.
+- Generación de texto e image-text-to-text: pipeline declarado en Hugging Face.
 - Coordenadas normalizadas 0-1000, lo que permite remapear las cajas a la resolución original de la imagen.
 - Decodificación por muestreo (temperature 0.7, top_p 0.9, repetition_penalty 1.1); la decodificación greedy no termina correctamente según las pruebas del autor.
 - No se documentan capacidades de tool calling, agentes, matemáticas, código ni audio en la información disponible.
@@ -80,9 +80,9 @@ La conversión alcanza aproximadamente el 78 % del F1 del original (0,606 frente
 
 | Modelo | Parámetros | Contexto | Entrada de imagen | F1@0.5 (COCO, subset) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| LocateAnything-3B (original, GPU bf16) | 3B | no disponible | dinámica hasta ~25k parches | 0,774 (bidireccional, 448x448) | NVIDIA License | HuggingFace (nvidia/LocateAnything-3B) |
-| LocateAnything-3B-RK3588 (esta conversión) | 3B | 4096 tokens | fija 448x448 | 0,606 | NVIDIA License + Qwen Research License, no comercial | HuggingFace (oliver0804/LocateAnything-3B-RK3588) |
-| RKNNAI/RK182X-VLM-LocateAnything-3B | 3B | no disponible | no disponible | no disponible | no disponible | HuggingFace; objetivo RK1828/RK182X, no RK3588 |
+| LocateAnything-3B (original, GPU bf16) | 3B | no disponible | dinámica hasta ~25k parches | 0,774 (bidireccional, 448x448) | NVIDIA License | Hugging Face (nvidia/LocateAnything-3B) |
+| LocateAnything-3B-RK3588 (esta conversión) | 3B | 4096 tokens | fija 448x448 | 0,606 | NVIDIA License + Qwen Research License, no comercial | Hugging Face (oliver0804/LocateAnything-3B-RK3588) |
+| RKNNAI/RK182X-VLM-LocateAnything-3B | 3B | no disponible | no disponible | no disponible | no disponible | Hugging Face; objetivo RK1828/RK182X, no RK3588 |
 
 No se dispone de datos de benchmarks de otras alternativas de grounding de tamaño similar en la información proporcionada.
 
@@ -104,7 +104,7 @@ No se dispone de datos de benchmarks de otras alternativas de grounding de tama�
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/oliver0804/LocateAnything-3B-RK3588
+- Repositorio Hugging Face: https://huggingface.co/oliver0804/LocateAnything-3B-RK3588
 - Modelo base: https://huggingface.co/nvidia/LocateAnything-3B
 - Repositorio alternativo para RK1828/RK182X (no compatible): https://huggingface.co/RKNNAI/RK182X-VLM-LocateAnything-3B
 - Licencia NVIDIA: archivo `LICENSE` en el repositorio

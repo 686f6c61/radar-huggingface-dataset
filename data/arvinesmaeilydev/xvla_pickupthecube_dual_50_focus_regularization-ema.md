@@ -62,16 +62,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - **VRAM estimada para inferencia**: no disponible de forma oficial. Con 879,7 M de parámetros en fp32 serían ~3,5 GB de pesos; en fp16/bf16 ~1,8 GB; en int8 ~0,9 GB. A ello hay que sumar activaciones del codificador visual y del modelo de lenguaje, por lo que una GPU con 8-12 GB es un punto de partida razonable (estimación, no dato del autor).
 - **GPU recomendadas**: no especificadas por el autor. Para entrenamiento se usa `--policy.device=cuda`; para rollout, una GPU de consumo moderna es suficiente en principio.
 - **¿Cabe en GPU de consumo?**: muy probablemente sí (RTX 3060 12 GB, RTX 4070, RTX 4090), aunque no está confirmado en la información disponible.
-- **Opciones de despliegue**: LeRobot (`lerobot-rollout` con `--strategy.type=base`), integración con el stack de HuggingFace LeRobot. No se documentan vLLM, llama.cpp, Ollama ni TGI (no aplican a políticas robóticas).
+- **Opciones de despliegue**: LeRobot (`lerobot-rollout` con `--strategy.type=base`), integración con el stack de Hugging Face LeRobot. No se documentan vLLM, llama.cpp, Ollama ni TGI (no aplican a políticas robóticas).
 - **Latencia y throughput**: no disponibles. El dataset se grabó a 30 FPS, lo que sugiere que el bucle de control debe sostener esa frecuencia, pero no se aportan mediciones.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Tipo | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| xvla_PickUpTheCube_Dual_50_Focus_Regularization-ema | 879,7 M | VLA (soft prompt + flow matching) | Apache 2.0 | HuggingFace (este repo) | Ajuste fino para "pick up the cube" sobre SO-100 |
-| lerobot/xvla-base | no disponible | VLA base multi-robot | no disponible en esta ficha | HuggingFace | Modelo base del que parte este checkpoint |
-| Otras políticas LeRobot (ACT, Diffusion Policy, pi0) | no disponible | Imitation learning / VLA | no disponible en esta ficha | HuggingFace / LeRobot | Alternativas del ecosistema LeRobot; no se aportan datos comparativos en la información disponible |
+| xvla_PickUpTheCube_Dual_50_Focus_Regularization-ema | 879,7 M | VLA (soft prompt + flow matching) | Apache 2.0 | Hugging Face (este repo) | Ajuste fino para "pick up the cube" sobre SO-100 |
+| lerobot/xvla-base | no disponible | VLA base multi-robot | no disponible en esta ficha | Hugging Face | Modelo base del que parte este checkpoint |
+| Otras políticas LeRobot (ACT, Diffusion Policy, pi0) | no disponible | Imitation learning / VLA | no disponible en esta ficha | Hugging Face / LeRobot | Alternativas del ecosistema LeRobot; no se aportan datos comparativos en la información disponible |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
 
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arvinesmaeilydev/xvla_PickUpTheCube_Dual_50_Focus_Regularization-ema
+- Modelo en Hugging Face: https://huggingface.co/arvinesmaeilydev/xvla_PickUpTheCube_Dual_50_Focus_Regularization-ema
 - Modelo base: https://huggingface.co/lerobot/xvla-base
 - Dataset de entrenamiento: https://huggingface.co/datasets/arvinesmaeilydev/PickUpTheCube_Dual_50
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=arvinesmaeilydev/PickUpTheCube_Dual_50

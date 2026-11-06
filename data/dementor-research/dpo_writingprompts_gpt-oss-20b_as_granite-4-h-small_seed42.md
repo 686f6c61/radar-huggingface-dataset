@@ -50,4 +50,4 @@ No disponible. No se conocen modelos comparables dentro del mismo estudio ni ada
 - Sin validación externa: no hay benchmarks ni evaluaciones independientes publicadas, por lo que su calidad es incierta.
 
 ## Enlaces
-- [HuggingFace - dementor-research/dpo_writingprompts_gpt-oss-20b_as_granite-4-h-small_seed42](https://huggingface.co/dementor-research/dpo_writingprompts_gpt-oss-20b_as_granite-4-h-small_seed42)
+- [Hugging Face - dementor-research/dpo_writingprompts_gpt-oss-20b_as_granite-4-h-small_seed42](https://huggingface.co/dementor-research/dpo_writingprompts_gpt-oss-20b_as_granite-4-h-small_seed42)

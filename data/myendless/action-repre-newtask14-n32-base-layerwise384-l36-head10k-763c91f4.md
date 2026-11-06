@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros (readout) | Contexto | Benchmark | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| action-repre-newtask14 (este) | 111,9 M (readout) + VLM 4B congelado | No disponible | Sin evaluación en bucle cerrado | Apache 2.0 | HuggingFace (0 descargas) |
-| action-repre-newtask33-base-v4 | No disponible | No disponible | No disponible | No disponible | HuggingFace (checkpoint de inicialización) |
+| action-repre-newtask14 (este) | 111,9 M (readout) + VLM 4B congelado | No disponible | Sin evaluación en bucle cerrado | Apache 2.0 | Hugging Face (0 descargas) |
+| action-repre-newtask33-base-v4 | No disponible | No disponible | No disponible | No disponible | Hugging Face (checkpoint de inicialización) |
 | Experto de acción histórico Qwen3 (28 capas) | No disponible | No disponible | No disponible | No disponible | Referenciado en la model card, sin enlace directo |
 
 No se dispone de datos de rendimiento comparables entre estas variantes en la información proporcionada.
@@ -80,6 +80,6 @@ No se dispone de datos de rendimiento comparables entre estas variantes en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/myendless/action-repre-newtask14-n32-base-layerwise384-l36-head10k-763c91f4
+- Hugging Face: https://huggingface.co/myendless/action-repre-newtask14-n32-base-layerwise384-l36-head10k-763c91f4
 - Checkpoint de inicialización del VLM: https://huggingface.co/myendless/action-repre-newtask33-base-v4-j14-h32-source30k-d5b38e87 (revisión `bcaf8af6a10435cfc5c3659bb82cd7cc23e6b72b`)
 - No se han encontrado en la información proporcionada enlaces a papers, blogs, repositorios de código o demos adicionales.

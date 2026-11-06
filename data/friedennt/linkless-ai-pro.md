@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LinkLess-AI-Pro es un modelo de lenguaje publicado en HuggingFace por el usuario FriedenNT bajo el identificador `FriedenNT/LinkLess-AI-Pro`. Se distribuye unicamente en formato GGUF, con un peso total de aproximadamente 1.720 millones de parametros (1,72 B) y un tamano de repositorio de 1,1 GB, lo que sugiere que los pesos disponibles corresponden a una cuantizacion agresiva (probablemente Q4 o inferior) y no a los pesos completos en precision original.
+LinkLess-AI-Pro es un modelo de lenguaje publicado en Hugging Face por el usuario FriedenNT bajo el identificador `FriedenNT/LinkLess-AI-Pro`. Se distribuye unicamente en formato GGUF, con un peso total de aproximadamente 1.720 millones de parametros (1,72 B) y un tamano de repositorio de 1,1 GB, lo que sugiere que los pesos disponibles corresponden a una cuantizacion agresiva (probablemente Q4 o inferior) y no a los pesos completos en precision original.
 
 El modelo se presenta con la etiqueta `conversational` y compatibilidad con `endpoints_compatible`, lo que indica que esta pensado para su uso en tareas de chat mediante servidores de inferencia tipo llama.cpp u Ollama. El repositorio incluye la etiqueta `imatrix`, un artefacto de cuantizacion de llama.cpp que sugiere que se ha generado una matriz de importancia para mejorar la calidad de las cuantizaciones de baja precision.
 
@@ -30,7 +30,7 @@ Tampoco se documentan los datos de entrenamiento: no hay informacion sobre el nu
 ## Capacidades
 
 - Generacion de texto conversacional: la etiqueta `conversational` sugiere uso en dialogos multi-turno, aunque no se documenta el formato de prompt ni la plantilla de chat.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que el modelo puede servirse a traves de APIs compatibles con el formato de HuggingFace Endpoints o servidores de inferencia estandar.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que el modelo puede servirse a traves de APIs compatibles con el formato de Hugging Face Endpoints o servidores de inferencia estandar.
 - Inferencia local en formato GGUF: al estar empaquetado en GGUF, es desplegable en llama.cpp, Ollama y otros runners compatibles.
 - Tool calling / function calling: no disponible (no documentado).
 - Soporte de agentes o razonamiento multi-paso: no disponible (no documentado).
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| LinkLess-AI-Pro | 1,72 B | no disponible | unknown | GGUF | HuggingFace (32 descargas) |
-| Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 tokens | Apache 2.0 | safetensors, GGUF | HuggingFace, ampliamente validado |
-| Llama 3.2-1B-Instruct | 1,24 B | 128.000 tokens | Llama 3.2 Community License | safetensors, GGUF | HuggingFace, ampliamente validado |
-| SmolLM2-1.7B-Instruct | 1,71 B | 8.192 tokens | Apache 2.0 | safetensors, GGUF | HuggingFace, ampliamente validado |
+| LinkLess-AI-Pro | 1,72 B | no disponible | unknown | GGUF | Hugging Face (32 descargas) |
+| Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 tokens | Apache 2.0 | safetensors, GGUF | Hugging Face, ampliamente validado |
+| Llama 3.2-1B-Instruct | 1,24 B | 128.000 tokens | Llama 3.2 Community License | safetensors, GGUF | Hugging Face, ampliamente validado |
+| SmolLM2-1.7B-Instruct | 1,71 B | 8.192 tokens | Apache 2.0 | safetensors, GGUF | Hugging Face, ampliamente validado |
 
 La comparativa se limita a tamano y disponibilidad, ya que no hay datos de rendimiento publicados para LinkLess-AI-Pro. Frente a las alternativas citadas, la principal desventaja es la ausencia de licencia declarada, de documentacion y de validacion comunitaria.
 
@@ -81,6 +81,6 @@ La comparativa se limita a tamano y disponibilidad, ya que no hay datos de rendi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FriedenNT/LinkLess-AI-Pro
+- Modelo en Hugging Face: https://huggingface.co/FriedenNT/LinkLess-AI-Pro
 - Perfil del autor: https://huggingface.co/FriedenNT
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

@@ -111,7 +111,7 @@ No se dispone de datos verificables de otros modelos de la misma categoria (por 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/unsloth/Qwen-Image-2.1-Turbo-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/unsloth/Qwen-Image-2.1-Turbo-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo
 - Modelo Qwen-Image-2.1 (no destilado): https://huggingface.co/Qwen/Qwen-Image-2.1
 - Licencia qwen-research: https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo/blob/main/LICENSE

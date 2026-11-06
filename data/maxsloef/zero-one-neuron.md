@@ -71,17 +71,17 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| zero-one-neuron | 8B + 12.288 números | no disponible | Destilación de persona en una neurona | Apache 2.0 | HuggingFace (0 descargas) |
-| movingcastles/zero | no disponible | no disponible | Modelo persona de referencia | no disponible | HuggingFace |
-| Qwen/Qwen3-8B-Base | 8B | no disponible | Modelo base generalista | Apache 2.0 | HuggingFace |
-| Fine-tune convencional de persona sobre Qwen3-8B | 8B | no disponible | Ajuste completo o LoRA | Apache 2.0 | Múltiples en HuggingFace |
+| zero-one-neuron | 8B + 12.288 números | no disponible | Destilación de persona en una neurona | Apache 2.0 | Hugging Face (0 descargas) |
+| movingcastles/zero | no disponible | no disponible | Modelo persona de referencia | no disponible | Hugging Face |
+| Qwen/Qwen3-8B-Base | 8B | no disponible | Modelo base generalista | Apache 2.0 | Hugging Face |
+| Fine-tune convencional de persona sobre Qwen3-8B | 8B | no disponible | Ajuste completo o LoRA | Apache 2.0 | Múltiples en Hugging Face |
 
 La comparación con fine-tunes convencionales es cualitativa: zero-one-neuron modifica un número de parámetros órdenes de magnitud menor, a costa de una fidelidad ligeramente inferior a Zero (2.60 frente a 2.63 en tier 1) y de una aplicabilidad limitada fuera del formato de chat de Zero.
 
 ## Limitaciones y advertencias
 
 - No es un modelo autónomo: requiere cargarse sobre Qwen3-8B-Base con código específico del repositorio GitHub; no funciona como un `AutoModelForCausalLM` estándar sin ese paso.
-- Cero descargas y cero likes en HuggingFace en el momento de la información: no hay validación comunitaria independiente.
+- Cero descargas y cero likes en Hugging Face en el momento de la información: no hay validación comunitaria independiente.
 - El repositorio tiene 0.0 GB de tamaño declarado, lo que puede indicar que el fichero no está subido o que la métrica no se ha actualizado; verificar antes de usar.
 - La evaluación se realizó con un único juez (Claude Haiku 5.5) sobre dos conjuntos de prompts; no hay evaluación humana ni benchmarks estándar.
 - El dataset de destilación es de prompts de un solo turno (WildChat, UltraChat), por lo que el comportamiento multi-turno y de agentes no está validado.
@@ -93,7 +93,7 @@ La comparación con fine-tunes convencionales es cualitativa: zero-one-neuron mo
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/maxsloef/zero-one-neuron
+- Hugging Face del modelo: https://huggingface.co/maxsloef/zero-one-neuron
 - Repositorio GitHub con código, prompts, grader y respuestas de referencia: https://github.com/maxsloef/zero-one-neuron
 - Write-up del autor: https://maxsloef.github.io/zero-one-neuron/
 - Modelo Zero de referencia: https://huggingface.co/movingcastles/zero

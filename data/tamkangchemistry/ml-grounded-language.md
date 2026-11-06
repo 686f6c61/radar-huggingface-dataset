@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tamkangchemistry/ml-grounded-language` es un repositorio publicado en HuggingFace que, pese a estar etiquetado con `safetensors` y `transformer`, no contiene un modelo entrenado sino un conjunto estructurado de notas de investigación sobre lenguaje fundamentado (grounded language). La propia model card lo declara de forma explícita: no se reclama ninguna mejora de benchmark, ninguna ablación completada, ningún código liberado ni ningún checkpoint entrenado. El repositorio se compone de dos ficheros de texto, `analysis.md` y `README.md`, junto con un artefacto safetensors cuyo recuento de parámetros declarado es de 16.576.
+`tamkangchemistry/ml-grounded-language` es un repositorio publicado en Hugging Face que, pese a estar etiquetado con `safetensors` y `transformer`, no contiene un modelo entrenado sino un conjunto estructurado de notas de investigación sobre lenguaje fundamentado (grounded language). La propia model card lo declara de forma explícita: no se reclama ninguna mejora de benchmark, ninguna ablación completada, ningún código liberado ni ningún checkpoint entrenado. El repositorio se compone de dos ficheros de texto, `analysis.md` y `README.md`, junto con un artefacto safetensors cuyo recuento de parámetros declarado es de 16.576.
 
 El contenido gira en torno al alcance de la pregunta de investigación, los probables factores de confusión, una propuesta de comparación con baselines emparejados y referencias de evaluación concretas como RefCOCO, Flickr30k y Visual Genome, además de comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas. El autor indica que las secciones etiquetadas como planes o hipótesis no deben interpretarse como resultados experimentales.
 
@@ -77,6 +77,6 @@ No disponible. Este repositorio no es un modelo de lenguaje ni un sistema de gro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tamkangchemistry/ml-grounded-language
+- Hugging Face: https://huggingface.co/tamkangchemistry/ml-grounded-language
 - Referencias citadas en las notas (sin URL en la informacion disponible): RefCOCO, Flickr30k, Visual Genome.
 - La busqueda web realizada no devolvio ningun resultado relevante sobre el modelo: los enlaces obtenidos corresponden a servicios de correo no relacionados. No hay papers, blogs, repositorios ni demos adicionales disponibles.

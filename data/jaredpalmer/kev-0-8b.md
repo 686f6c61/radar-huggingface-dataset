@@ -105,7 +105,7 @@ Comparación con los otros miembros de la familia Kev, que comparten receta, dat
 | Modelo | Base | Exactitud in-distribution (dev) | Exactitud out-of-domain (dev) | Brier out-of-domain | Cobertura con error <= 5 % | Licencia y disponibilidad |
 |---|---|---|---|---|---|---|
 | Kev-0.6B | Qwen3 | 0,801 | 0,620 | 0,536 | no disponible | no disponible |
-| Kev-0.8B | Qwen3.5-0.8B | 0,829 | 0,643 | 0,513 | 0,17 | Apache-2.0, publicado en HuggingFace |
+| Kev-0.8B | Qwen3.5-0.8B | 0,829 | 0,643 | 0,513 | 0,17 | Apache-2.0, publicado en Hugging Face |
 | Kev-4B | no disponible | 0,877 | 0,794 | 0,316 | 0,54 | no disponible |
 | Kev-9B | no disponible | 0,876 | 0,812 | 0,291 | 0,53 | no disponible |
 | Jev | no disponible | 0,845 | 0,857 | 0,211 | 0,70 | no disponible |
@@ -128,7 +128,7 @@ La comparativa con alternativas externas de la misma categoría (modelos de deci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jaredpalmer/kev-0.8b
+- Modelo en Hugging Face: https://huggingface.co/jaredpalmer/kev-0.8b
 - Repositorio de código, suites, resultados y registro de investigación: https://github.com/jaredpalmer/kev
 - Planes y documentación citados en la model card: `PLAN_Qwen35.md`, `PLAN.md`, `runs/leaderboard.md`, `runs/locked/kev-08b-q35-ungated/result.json` dentro del repositorio anterior
 - Modelo base: `Qwen/Qwen3.5-0.8B-Base` (revisión `dc7cdfe2`), referenciado desde el repositorio del adaptador

@@ -25,7 +25,7 @@ La relevancia actual es doble: por un lado demuestra que un modelo de 0,5B de pa
 | Modulos objetivo | down_proj, gate_proj, k_proj, o_proj, q_proj, up_proj, v_proj |
 | Tarea declarada | text-generation (clasificacion estructurada de alertas de seguridad) |
 | Dataset de entrenamiento | tegridydev/opensec-triage, config `research`, revision b9a5d6fb80b329b19efc5c25087b76a804c0a324 |
-| Tamano del repositorio | 0.0 GB (redondeado en HuggingFace) |
+| Tamano del repositorio | 0.0 GB (redondeado en Hugging Face) |
 | Libreria | peft |
 
 ## Arquitectura y entrenamiento
@@ -96,7 +96,7 @@ Nota: en la sonda OOD, la categoria no se puntua, de ahi que aparezca como "-".
 
 | Modelo | Parametros | Contexto | Rendimiento en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen2.5-0.5B-Instruct-opensec-triage-lora | 502,8 M base + 8,8 M del adaptador | 384 tokens en entrenamiento; 32.768 en el modelo base | joint_triage_accuracy 1.0000 en test, 0.9167 en OOD | apache-2.0 | adaptador LoRA publicado en HuggingFace; 0 descargas |
+| Qwen2.5-0.5B-Instruct-opensec-triage-lora | 502,8 M base + 8,8 M del adaptador | 384 tokens en entrenamiento; 32.768 en el modelo base | joint_triage_accuracy 1.0000 en test, 0.9167 en OOD | apache-2.0 | adaptador LoRA publicado en Hugging Face; 0 descargas |
 | Qwen/Qwen2.5-0.5B-Instruct (base sin ajustar) | 502,8 M | 32.768 tokens | joint_triage_accuracy 0.0252 en test, 0.0619 en OOD | apache-2.0 | modelo completo publicado por Alibaba |
 | TF-IDF + regresion logistica (baseline del autor) | no aplica (modelo clasico) | limitado por el vectorizador | exactitud de disposicion 1.0 en test, 0.8143 en OOD | no disponible | baseline descrito en la model card, no publicado como artefacto |
 | Qwen2.5-1.5B-Instruct | 1.540 M | 32.768 tokens | no disponible para esta tarea | apache-2.0 | modelo completo publicado |
@@ -122,7 +122,7 @@ La comparativa mas informativa es la del baseline clasico: el modelo ajustado y 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thealper2/Qwen2.5-0.5B-Instruct-opensec-triage-lora
+- Modelo en Hugging Face: https://huggingface.co/thealper2/Qwen2.5-0.5B-Instruct-opensec-triage-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/tegridydev/opensec-triage
 - Libreria PEFT: https://github.com/huggingface/peft

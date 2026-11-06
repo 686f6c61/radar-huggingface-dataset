@@ -73,7 +73,7 @@ La principal diferencia es la cuantización W4A16 que permite ejecutar el modelo
 
 ## Limitaciones y advertencias
 
-- La licencia del modelo no está especificada en la ficha de HuggingFace; se debe consultar la licencia del modelo base (MuXodious/Qwen3.8-27B-absolute-heresy) para uso comercial.
+- La licencia del modelo no está especificada en la ficha de Hugging Face; se debe consultar la licencia del modelo base (MuXodious/Qwen3.8-27B-absolute-heresy) para uso comercial.
 - El modelo es un fine-tune con ablations de "herejía" (eliminación de ciertos comportamientos de rechazo), lo que puede afectar a la fiabilidad en contextos de seguridad o cumplimiento normativo.
 - La cuantización W4A16 puede degradar ligeramente la precisión en tareas de razonamiento complejo o matemáticas, aunque no se han publicado evaluaciones al respecto.
 - La ventana de contexto de 140K solo es alcanzable con fp8 KV cache y offloading a CPU; sin estas optimizaciones, el contexto efectivo será menor.
@@ -83,7 +83,7 @@ La principal diferencia es la cuantización W4A16 que permite ejecutar el modelo
 
 ## Enlaces
 
-- HuggingFace del modelo cuantizado: https://huggingface.co/Starw1/Qwen3.8-27B-absolute-heresy-W4A16
+- Hugging Face del modelo cuantizado: https://huggingface.co/Starw1/Qwen3.8-27B-absolute-heresy-W4A16
 - Modelo base (MuXodious): https://huggingface.co/MuXodious/Qwen3.8-27B-absolute-heresy
 - Qwen3.8-27B oficial: https://huggingface.co/Qwen/Qwen3.8-27B
 - Script de cuantización: https://github.com/syv-ai/qwen38-27b-rtx3090/tree/main/single-user

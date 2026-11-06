@@ -69,9 +69,9 @@ El ajuste por refuerzo mejora el éxito en episodios (35% frente a 30% del super
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LINK-01 (este modelo) | 0,8B + LoRA | no disponible | Decisión discreta en simulador 2D | Apache 2.0 | HuggingFace, 16 descargas |
+| LINK-01 (este modelo) | 0,8B + LoRA | no disponible | Decisión discreta en simulador 2D | Apache 2.0 | Hugging Face, 16 descargas |
 | Cerebro PPO original | Política pequeña (no especificado) | N/A | Decisión discreta en simulador 2D | No especificada | Solo dentro del proyecto `connect-tycoon` |
-| Qwen3.5-0.8B base | 0,8B | no disponible | Lenguaje general | Apache 2.0 | HuggingFace |
+| Qwen3.5-0.8B base | 0,8B | no disponible | Lenguaje general | Apache 2.0 | Hugging Face |
 | Políticas de control tipo MLP para MuJoCo | Típicamente <1M | N/A | Control continuo/discreto | Variable | Repositorios de RL (Stable-Baselines3, etc.) |
 
 La comparación directa con otros LLM de decisión no está disponible: no se conocen adaptadores públicos equivalentes para la tarea `goto_target` de LINK-01. Frente al cerebro PPO original, el modelo destilado es peor en éxito de episodio (35% frente a 65%) y en colisiones (20% frente a 10%), pero ofrece la ventaja de ser inspeccionable y ajustable mediante texto.
@@ -89,7 +89,7 @@ La comparación directa con otros LLM de decisión no está disponible: no se co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TUpreneur/connectailab-rl-tupreneur-v2-link01
+- Modelo en Hugging Face: https://huggingface.co/TUpreneur/connectailab-rl-tupreneur-v2-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de código CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

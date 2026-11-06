@@ -2,7 +2,7 @@
 
 ## Resumen
 
-XraySorterAI es un par de clasificadores de imagen basados en la arquitectura Xception, exportados a formato ONNX, que operan sobre radiografías del sistema musculoesquelético. El modelo resuelve dos tareas complementarias de clasificación: identificar la proyección radiográfica (45 clases, por ejemplo `ap_knee`) y determinar el lado del cuerpo (12 clases, con etiquetas que alternan derecha/izquierda). El trabajo original es de maxrusse (repositorio en GitHub), y esta versión ONNX la publica el usuario pnhuy en HuggingFace.
+XraySorterAI es un par de clasificadores de imagen basados en la arquitectura Xception, exportados a formato ONNX, que operan sobre radiografías del sistema musculoesquelético. El modelo resuelve dos tareas complementarias de clasificación: identificar la proyección radiográfica (45 clases, por ejemplo `ap_knee`) y determinar el lado del cuerpo (12 clases, con etiquetas que alternan derecha/izquierda). El trabajo original es de maxrusse (repositorio en GitHub), y esta versión ONNX la publica el usuario pnhuy en Hugging Face.
 
 La relevancia de esta ficha es acotada: se trata de un artefacto de investigación y demostración, no de un modelo de lenguaje ni de un sistema clínico. Su interés técnico reside en el pipeline de preprocesado (promoción de rango de intensidad de 8 a 12 bits y reorientación anti-transpuesta) y en la exportación libre de TensorFlow hacia ONNX Runtime, lo que facilita su integración en entornos Python con OpenCV y NumPy.
 
@@ -89,7 +89,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| XraySorterAI (este modelo) | no disponible | no aplica | 13/14 en prueba local de proyección | MIT | HuggingFace (pnhuy/xraysorterai) |
+| XraySorterAI (este modelo) | no disponible | no aplica | 13/14 en prueba local de proyección | MIT | Hugging Face (pnhuy/xraysorterai) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -108,6 +108,6 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pnhuy/xraysorterai
+- Hugging Face: https://huggingface.co/pnhuy/xraysorterai
 - Repositorio original: https://github.com/maxrusse/XraySorterAI
 - No se han encontrado otros enlaces (papers, blogs, demos) en la información disponible.

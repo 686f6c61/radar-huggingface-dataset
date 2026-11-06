@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen35-9b-secfix-grpo-lead-step300-merged | 9.653.104.368 | no disponible | Reparacion de vulnerabilidades SAST via agente | apache-2.0 | HuggingFace (2 descargas) |
-| Qwen/Qwen3.5-9B (base) | 9.653.104.368 (mismo base) | no disponible | Proposito general, multimodal | no disponible en la informacion | HuggingFace |
+| qwen35-9b-secfix-grpo-lead-step300-merged | 9.653.104.368 | no disponible | Reparacion de vulnerabilidades SAST via agente | apache-2.0 | Hugging Face (2 descargas) |
+| Qwen/Qwen3.5-9B (base) | 9.653.104.368 (mismo base) | no disponible | Proposito general, multimodal | no disponible en la informacion | Hugging Face |
 | Alternativas especializadas en reparacion de vulnerabilidades | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de otros modelos comparables en la información proporcionada para establecer una comparación cuantitativa.
@@ -92,6 +92,6 @@ No se dispone de datos de benchmarks ni de otros modelos comparables en la infor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sparrow-co-ltd/qwen35-9b-secfix-grpo-lead-step300-merged
+- Hugging Face: https://huggingface.co/sparrow-co-ltd/qwen35-9b-secfix-grpo-lead-step300-merged
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Paper GRPO-LEAD: https://arxiv.org/abs/2504.09696

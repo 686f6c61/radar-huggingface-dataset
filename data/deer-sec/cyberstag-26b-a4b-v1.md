@@ -74,5 +74,5 @@ No se dispone de información sobre modelos directamente comparables en la categ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/deer-sec/CyberStag-26B-A4B-v1
+- Modelo en Hugging Face: https://huggingface.co/deer-sec/CyberStag-26B-A4B-v1
 - Modelo base (referencia): https://huggingface.co/google/gemma-4-26b-a4b

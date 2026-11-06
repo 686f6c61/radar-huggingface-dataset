@@ -2,7 +2,7 @@
 
 ## Resumen
 
-yuxuanw8/qwen3b-rlvr-hotpot-checkpoint-270 es un checkpoint de investigación publicado en HuggingFace por el usuario yuxuanw8. Se trata de un modelo de generación de texto de aproximadamente 3.086 millones de parámetros (3,09B) construido sobre la arquitectura Qwen2, según la etiqueta `qwen2` declarada en el repositorio. El nombre del modelo sugiere que se ha sometido a un proceso de aprendizaje por refuerzo con recompensas verificables (RLVR) sobre el conjunto de datos HotpotQA, y que se corresponde con el checkpoint número 270 de una ejecución de entrenamiento. Esta interpretación procede del identificador del modelo, no de documentación del autor: la model card publicada es la plantilla automática de HuggingFace y no contiene información sustantiva.
+yuxuanw8/qwen3b-rlvr-hotpot-checkpoint-270 es un checkpoint de investigación publicado en Hugging Face por el usuario yuxuanw8. Se trata de un modelo de generación de texto de aproximadamente 3.086 millones de parámetros (3,09B) construido sobre la arquitectura Qwen2, según la etiqueta `qwen2` declarada en el repositorio. El nombre del modelo sugiere que se ha sometido a un proceso de aprendizaje por refuerzo con recompensas verificables (RLVR) sobre el conjunto de datos HotpotQA, y que se corresponde con el checkpoint número 270 de una ejecución de entrenamiento. Esta interpretación procede del identificador del modelo, no de documentación del autor: la model card publicada es la plantilla automática de Hugging Face y no contiene información sustantiva.
 
 El interés de este checkpoint es acotado pero real para la comunidad de investigación: los métodos de RLVR (familia a la que pertenecen técnicas como GRPO con verificación de respuesta final) se han popularizado para mejorar el razonamiento en dominios donde la corrección es comprobable automáticamente, y la pregunta multi-salto (multi-hop QA) es uno de los bancos de prueba habituales. Un checkpoint intermedio como este permite estudiar la dinámica de entrenamiento, la evolución de las capacidades de razonamiento multi-salto y los fenómenos de sobreajuste al formato de recompensa, más que servir como modelo listo para producción.
 
@@ -37,7 +37,7 @@ Respecto al entrenamiento, la única información disponible es la que sugiere e
 
 - Generación de texto conversacional: el pipeline declarado es `text-generation` y la etiqueta `conversational` está presente, por lo que se espera formato de chat compatible con `transformers`.
 - Razonamiento multi-salto sobre documentos: el entrenamiento sobre HotpotQA (según el identificador) está orientado a preguntas que exigen combinar información de varias fuentes.
-- Integración con `text-generation-inference` y endpoints compatibles: el repositorio declara la etiqueta `endpoints_compatible`, lo que facilita su despliegue tras una API HTTP con el stack de HuggingFace.
+- Integración con `text-generation-inference` y endpoints compatibles: el repositorio declara la etiqueta `endpoints_compatible`, lo que facilita su despliegue tras una API HTTP con el stack de Hugging Face.
 - Capacidades multilingües: no disponibles. El dataset HotpotQA es en inglés, por lo que el comportamiento fuera del inglés es incierto y no documentado.
 - Soporte de tool calling / function calling: no disponible ni documentado.
 - Soporte de agentes y razonamiento multi-paso: no documentado, aunque el entrenamiento con RLVR sobre tareas multi-salto es plausiblemente transferible a razonamiento encadenado. No hay evidencia publicada que lo confirme.
@@ -55,7 +55,7 @@ Respecto al entrenamiento, la única información disponible es la que sugiere e
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio es la plantilla automática de HuggingFace y no incluye métricas de MMLU, HumanEval, GSM8K, HotpotQA ni de ningún otro conjunto de evaluación. Tampoco se han encontrado resultados en la búsqueda web realizada.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio es la plantilla automática de Hugging Face y no incluye métricas de MMLU, HumanEval, GSM8K, HotpotQA ni de ningún otro conjunto de evaluación. Tampoco se han encontrado resultados en la búsqueda web realizada.
 
 ## Requisitos de hardware
 
@@ -75,10 +75,10 @@ Los datos de los modelos de referencia proceden de su documentación pública y 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| yuxuanw8/qwen3b-rlvr-hotpot-checkpoint-270 | 3,09B | no disponible | no disponible | HuggingFace, sin descargas ni validacion comunitaria |
-| Qwen2.5-3B (modelo base de referencia) | 3,09B | 32 768 tokens (ampliable con YaRN) | pendiente de verificar | HuggingFace y ecosistema amplio |
-| Llama 3.2 3B Instruct | 3,21B | 128 000 tokens | Llama 3.2 Community License | HuggingFace, ampliamente desplegado |
-| Phi-3.5-mini-instruct | 3,8B | 128 000 tokens | MIT | HuggingFace, ampliamente desplegado |
+| yuxuanw8/qwen3b-rlvr-hotpot-checkpoint-270 | 3,09B | no disponible | no disponible | Hugging Face, sin descargas ni validacion comunitaria |
+| Qwen2.5-3B (modelo base de referencia) | 3,09B | 32 768 tokens (ampliable con YaRN) | pendiente de verificar | Hugging Face y ecosistema amplio |
+| Llama 3.2 3B Instruct | 3,21B | 128 000 tokens | Llama 3.2 Community License | Hugging Face, ampliamente desplegado |
+| Phi-3.5-mini-instruct | 3,8B | 128 000 tokens | MIT | Hugging Face, ampliamente desplegado |
 
 La diferencia clave de este checkpoint frente a las alternativas es que no es un modelo alineado para uso general, sino un punto intermedio de un experimento de RL: carece de licencia declarada, de evaluación publicada y de validación por parte de la comunidad, mientras que los tres modelos de referencia cuentan con documentación, benchmarks y soporte de despliegue ampliamente extendidos.
 
@@ -97,7 +97,7 @@ La diferencia clave de este checkpoint frente a las alternativas es que no es un
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuxuanw8/qwen3b-rlvr-hotpot-checkpoint-270
+- Modelo en Hugging Face: https://huggingface.co/yuxuanw8/qwen3b-rlvr-hotpot-checkpoint-270
 - Referencia citada en las etiquetas del repositorio (Lacoste et al., 2019, sobre estimación de impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automático mencionada en la plantilla: https://mlco2.github.io/impact
 - Conjunto de datos HotpotQA (referencia externa, no enlazada por el autor): no disponible en el repositorio

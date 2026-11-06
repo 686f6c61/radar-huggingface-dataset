@@ -21,7 +21,7 @@ Su relevancia practica reside en ese formato de salida: convierte la inferencia 
 | Licencia | apache-2.0 |
 | Formato de pesos | `pytorch_model.bin` en bf16; conversion a safetensors en curso segun la model card |
 
-Otros datos declarados por HuggingFace: pipeline `text-generation` (el modelo original declara `image-text-to-text`), libreria `transformers`, modelo base `Cloudflare/clef`, 0 descargas y 0 likes en el momento de la consulta, tamano de repositorio declarado 0,0 GB, creado y actualizado el 2026-10-13.
+Otros datos declarados por Hugging Face: pipeline `text-generation` (el modelo original declara `image-text-to-text`), libreria `transformers`, modelo base `Cloudflare/clef`, 0 descargas y 0 likes en el momento de la consulta, tamano de repositorio declarado 0,0 GB, creado y actualizado el 2026-10-13.
 
 ## Arquitectura y entrenamiento
 
@@ -84,7 +84,7 @@ La diferencia principal entre clef-bf16 y Cloudflare/clef no es de capacidad sin
 - No se han publicado benchmarks ni evaluaciones independientes de este repositorio; el rendimiento efectivo es desconocido.
 - El repositorio declara 0 descargas, 0 likes y un tamano de 0,0 GB en el momento de la consulta, lo que sugiere que los pesos podrian no estar efectivamente subidos. Conviene verificarlo antes de Integrarlo en un pipeline.
 - La model card original esta truncada en la informacion disponible (corta en "Apply a softmax per"), por lo que el detalle del calculo de la salida no puede reproducirse completo.
-- Existe una discrepancia entre el tag `qwen3_5` de HuggingFace y el modelo base declarado en la model card, Qwen/Qwen3.8-27B. No se dispone de informacion que la resuelva.
+- Existe una discrepancia entre el tag `qwen3_5` de Hugging Face y el modelo base declarado en la model card, Qwen/Qwen3.8-27B. No se dispone de informacion que la resuelva.
 - El modelo original incluye el tag `custom-code`, por lo que es probable que sea necesario `trust_remote_code=True` y que el uso con `AutoModelForCausalLM` requiera el codigo remoto del autor.
 - Al no generar texto libre, el modelo no sirve para tareas de resumen, redaccion, traduccion ni conversacion. Usarlo para esos fines excede su diseno.
 - Riesgo de alucinacion: no aplica en el sentido habitual de generacion libre, pero si existe riesgo de calibracion deficiente de las probabilidades por opcion, especialmente en opciones poco representadas en el post-entrenamiento. No hay datos publicos de calibracion.
@@ -95,7 +95,7 @@ La diferencia principal entre clef-bf16 y Cloudflare/clef no es de capacidad sin
 
 ## Enlaces
 
-- Repositorio HuggingFace de este port: https://huggingface.co/rty813/clef-bf16
+- Repositorio Hugging Face de este port: https://huggingface.co/rty813/clef-bf16
 - Modelo original: https://huggingface.co/Cloudflare/clef
 - Variante reducida: https://huggingface.co/Cloudflare/clef-flash
 - Backbone base: https://huggingface.co/Qwen/Qwen3.8-27B

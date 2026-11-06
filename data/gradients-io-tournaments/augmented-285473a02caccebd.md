@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `augmented-285473a02caccebd` es un modelo de generación de texto publicado en HuggingFace por la organización `gradients-io-tournaments`. Cuenta con aproximadamente 8.030 millones de parámetros (8,03B) y sus pesos se distribuyen en formato `safetensors`, ocupando un total de 16,1 GB en el repositorio. La etiqueta `llama` sugiere que podría estar basado en la arquitectura Llama, aunque no se proporciona información detallada al respecto.
+El modelo `augmented-285473a02caccebd` es un modelo de generación de texto publicado en Hugging Face por la organización `gradients-io-tournaments`. Cuenta con aproximadamente 8.030 millones de parámetros (8,03B) y sus pesos se distribuyen en formato `safetensors`, ocupando un total de 16,1 GB en el repositorio. La etiqueta `llama` sugiere que podría estar basado en la arquitectura Llama, aunque no se proporciona información detallada al respecto.
 
-La model card es una plantilla automática generada por HuggingFace, sin datos específicos sobre el desarrollador, licencia, idiomas, proceso de entrenamiento o capacidades. A pesar de su fecha de creación reciente (septiembre de 2026), no existe documentación pública que permita evaluar su rendimiento, alcance o casos de uso recomendados. Esta falta de información limita cualquier análisis técnico riguroso y obliga a tratar el modelo con cautela.
+La model card es una plantilla automática generada por Hugging Face, sin datos específicos sobre el desarrollador, licencia, idiomas, proceso de entrenamiento o capacidades. A pesar de su fecha de creación reciente (septiembre de 2026), no existe documentación pública que permita evaluar su rendimiento, alcance o casos de uso recomendados. Esta falta de información limita cualquier análisis técnico riguroso y obliga a tratar el modelo con cautela.
 
 ## Especificaciones tecnicas
 
@@ -53,4 +53,4 @@ No disponible. No se dispone de información sobre modelos comparables en la mis
 
 ## Enlaces
 
-- [HuggingFace - gradients-io-tournaments/augmented-285473a02caccebd](https://huggingface.co/gradients-io-tournaments/augmented-285473a02caccebd)
+- [Hugging Face - gradients-io-tournaments/augmented-285473a02caccebd](https://huggingface.co/gradients-io-tournaments/augmented-285473a02caccebd)

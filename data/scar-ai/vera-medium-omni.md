@@ -70,10 +70,10 @@ No se han publicado en la información disponible resultados en benchmarks está
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vera-medium-omni | 4,21B | no disponible (lectura completa de la petición) | Decisión multimodal no autoregresiva con visión | apache-2.0 | HuggingFace (scar-ai) |
-| vera-large | no disponible | no disponible | Decisión de texto; con visión vía la torre de su modelo base | no disponible | HuggingFace (scar-ai) |
-| vera-core-2 | no disponible | no disponible | Decisión de texto | no disponible | HuggingFace (scar-ai) |
-| Qwen3.5-4B (modelo base) | ~4,2B | no disponible | Generación de texto autoregresiva con torre de visión | no disponible | HuggingFace (Qwen) |
+| vera-medium-omni | 4,21B | no disponible (lectura completa de la petición) | Decisión multimodal no autoregresiva con visión | apache-2.0 | Hugging Face (scar-ai) |
+| vera-large | no disponible | no disponible | Decisión de texto; con visión vía la torre de su modelo base | no disponible | Hugging Face (scar-ai) |
+| vera-core-2 | no disponible | no disponible | Decisión de texto | no disponible | Hugging Face (scar-ai) |
+| Qwen3.5-4B (modelo base) | ~4,2B | no disponible | Generación de texto autoregresiva con torre de visión | no disponible | Hugging Face (Qwen) |
 
 La comparación con modelos de decisión de otros autores no está disponible en la información proporcionada.
 
@@ -91,7 +91,7 @@ La comparación con modelos de decisión de otros autores no está disponible en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/scar-ai/vera-medium-omni
+- Modelo en Hugging Face: https://huggingface.co/scar-ai/vera-medium-omni
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - vera-core-2: https://huggingface.co/scar-ai/vera-core-2
 - vera-large: https://huggingface.co/scar-ai/vera-large

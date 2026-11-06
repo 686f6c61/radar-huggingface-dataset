@@ -89,7 +89,7 @@ No se dispone de datos de benchmarks ni de otros modelos comparables de la misma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/local-inference-lab/DeepSeek-V4.1-Flash-lossless-CSF
+- Modelo en Hugging Face: https://huggingface.co/local-inference-lab/DeepSeek-V4.1-Flash-lossless-CSF
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Licencia del contenedor: https://huggingface.co/local-inference-lab/DeepSeek-V4.1-Flash-lossless-CSF/blob/main/LICENSE
 - Variante relacionada del mismo autor: https://huggingface.co/local-inference-lab/DeepSeek-V4.1-Flash-MXFP4-CSF

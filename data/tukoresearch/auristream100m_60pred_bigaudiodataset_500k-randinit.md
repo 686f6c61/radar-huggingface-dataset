@@ -66,7 +66,7 @@ No se dispone de información comparativa directa. Existen otros modelos de habl
 
 ## Enlaces
 
-- [HuggingFace - AuriStream100M_60Pred_BigAudioDataset_500k-randinit](https://huggingface.co/TuKoResearch/AuriStream100M_60Pred_BigAudioDataset_500k-randinit)
+- [Hugging Face - AuriStream100M_60Pred_BigAudioDataset_500k-randinit](https://huggingface.co/TuKoResearch/AuriStream100M_60Pred_BigAudioDataset_500k-randinit)
 - [Página del proyecto AuriStream](https://tukoresearch.github.io/auristream-speech/)
 - [Tokenizador WavCochCausalV8192](https://huggingface.co/TuKoResearch/WavCochCausalV8192)
 - [Código base del modelo AuriStream](https://huggingface.co/TuKoResearch/AuriStream-base)

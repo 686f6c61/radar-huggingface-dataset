@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MemT-1.0-Nano-GGUF es una conversión a formato GGUF del modelo MemT-1.0-Nano, desarrollado por MemTensor, publicada por el usuario brishen en HuggingFace. El modelo base combina un backbone Qwen3.6-35B-A3B (una arquitectura MoE de 35B parámetros con aproximadamente 3B activos) con el sistema de memoria nativa MemT, que permite al modelo almacenar y recuperar estado de memoria entre conversaciones de forma nativa, sin depender únicamente de la ventana de contexto.
+MemT-1.0-Nano-GGUF es una conversión a formato GGUF del modelo MemT-1.0-Nano, desarrollado por MemTensor, publicada por el usuario brishen en Hugging Face. El modelo base combina un backbone Qwen3.6-35B-A3B (una arquitectura MoE de 35B parámetros con aproximadamente 3B activos) con el sistema de memoria nativa MemT, que permite al modelo almacenar y recuperar estado de memoria entre conversaciones de forma nativa, sin depender únicamente de la ventana de contexto.
 
 El problema que resuelve es la persistencia de información a largo plazo: en lugar de reinyectar todo el historial en el prompt, el modelo puede escribir ("commit") información relevante en un estado de memoria persistente y consultarla en peticiones posteriores, reduciendo el consumo de tokens de contexto. Es relevante ahora porque aborda una de las limitaciones clásicas de los LLM en aplicaciones conversacionales y de agentes: la memoria entre sesiones.
 

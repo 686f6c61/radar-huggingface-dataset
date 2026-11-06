@@ -78,9 +78,9 @@ Los datos de la fila correspondiente a road-qwen25vl-lora-e1 proceden de la info
 
 | Modelo | Parametros | Contexto | Rendimiento en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| road-qwen25vl-lora-e1 (LoRA sobre Qwen2.5-VL-7B) | Adaptador sobre base de 7B | No disponible | WER 0,1551 / CER 0,0441 / score 0,9004 en validacion; 0,90413 en Zindi public LB | No declarada | HuggingFace, 0 descargas, 0 likes |
-| Qwen2.5-VL-7B-Instruct (modelo base sin ajustar) | 7B | No disponible en la informacion proporcionada | No publicado para la tarea de escritura manuscrita de Barbados | Apache 2.0 (referencia del modelo base) | Ampliamente disponible en HuggingFace |
-| TrOCR (Microsoft, variantes base/large) | Cientos de millones de parametros, no disponible el dato exacto | No disponible (modelo encoder-decoder de linea) | No publicado sobre este conjunto | Licencia del repositorio original, no verificada | HuggingFace |
+| road-qwen25vl-lora-e1 (LoRA sobre Qwen2.5-VL-7B) | Adaptador sobre base de 7B | No disponible | WER 0,1551 / CER 0,0441 / score 0,9004 en validacion; 0,90413 en Zindi public LB | No declarada | Hugging Face, 0 descargas, 0 likes |
+| Qwen2.5-VL-7B-Instruct (modelo base sin ajustar) | 7B | No disponible en la informacion proporcionada | No publicado para la tarea de escritura manuscrita de Barbados | Apache 2.0 (referencia del modelo base) | Ampliamente disponible en Hugging Face |
+| TrOCR (Microsoft, variantes base/large) | Cientos de millones de parametros, no disponible el dato exacto | No disponible (modelo encoder-decoder de linea) | No publicado sobre este conjunto | Licencia del repositorio original, no verificada | Hugging Face |
 | Otros adaptadores LoRA de OCR sobre Qwen2.5-VL | No disponible | No disponible | No disponible | No disponible | No localizados en la busqueda realizada |
 
 Diferencias clave: el adaptador solo aporta valor combinado con el modelo base; no es autonomo. Frente a un OCR dedicado de menor tamano, aporta la ventaja de un modelo multimodal con instrucciones en lenguaje natural, a costa de un consumo de VRAM mucho mayor.
@@ -101,7 +101,7 @@ Diferencias clave: el adaptador solo aporta valor combinado con el modelo base; 
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/ModarIbrahim/road-qwen25vl-lora-e1
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/ModarIbrahim/road-qwen25vl-lora-e1
 - Modelo base Qwen2.5-VL-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct
 - Libreria PEFT (usada por el adaptador): https://github.com/huggingface/peft
 - Repositorio de Qwen2.5-VL: https://github.com/QwenLM/Qwen2.5-VL

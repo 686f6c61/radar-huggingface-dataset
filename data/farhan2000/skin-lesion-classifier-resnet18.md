@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El skin-lesion-classifier-resnet18 es un clasificador de imágenes dermatoscópicas desarrollado por el usuario Farhan2000 y publicado en HuggingFace. Se trata de un ResNet18 estándar de torchvision al que se le ha sustituido la cabeza de clasificación original (1000 clases de ImageNet) por una capa lineal de 7 salidas, correspondientes a las siete categorías diagnósticas del dataset HAM10000: queratosis actínica, carcinoma basocelular, lesiones benignas queratosis-like, dermatofibroma, nevos melanocíticos, melanoma y lesiones vasculares. El autor lo declara explícitamente como proyecto educativo y no como dispositivo médico ni herramienta de diagnóstico.
+El skin-lesion-classifier-resnet18 es un clasificador de imágenes dermatoscópicas desarrollado por el usuario Farhan2000 y publicado en Hugging Face. Se trata de un ResNet18 estándar de torchvision al que se le ha sustituido la cabeza de clasificación original (1000 clases de ImageNet) por una capa lineal de 7 salidas, correspondientes a las siete categorías diagnósticas del dataset HAM10000: queratosis actínica, carcinoma basocelular, lesiones benignas queratosis-like, dermatofibroma, nevos melanocíticos, melanoma y lesiones vasculares. El autor lo declara explícitamente como proyecto educativo y no como dispositivo médico ni herramienta de diagnóstico.
 
 El modelo resuelve una tarea de clasificación multiclase sobre imágenes únicas, no de generación de texto ni de razonamiento. Su relevancia es la de un ejemplo reproducible y ligero de transferencia de aprendizaje aplicada a imagen médica: un backbone convolucional de pequeño tamaño (en torno a 11,2 millones de parámetros y unos 45 MB en float32) que puede ejecutarse en CPU y que sirve como punto de partida para experimentar con pipelines de clasificación dermatológica. La model card reporta una exactitud de validación de 0,8937, sin desglose por clase ni detalle del protocolo de evaluación.
 
@@ -21,7 +21,7 @@ No se trata de un modelo de lenguaje: no tiene ventana de contexto, no soporta t
 | Licencia | MIT |
 | Formato de pesos | `model.pth` (state dict de PyTorch, `torch.load`); no se ofrecen safetensors, GGUF, ONNX ni TensorRT en el repositorio |
 
-Datos adicionales: el repositorio ocupa 0,0 GB segun HuggingFace, el pipeline declarado es `image-classification`, la region de metadatos es `us` y el modelo registra 0 descargas y 0 likes en el momento de la consulta.
+Datos adicionales: el repositorio ocupa 0,0 GB segun Hugging Face, el pipeline declarado es `image-classification`, la region de metadatos es `us` y el modelo registra 0 descargas y 0 likes en el momento de la consulta.
 
 ## Arquitectura y entrenamiento
 
@@ -71,7 +71,7 @@ No se han publicado mas resultados de benchmarks en la informacion disponible. L
 - VRAM para inferencia: inferior a 1 GB en float32 (pesos de aproximadamente 45 MB mas activaciones de una imagen de 224x224). En float16 o int8 el consumo baja a decenas de MB.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de memoria es suficiente; una RTX 3060, RTX 4060 o superior ofrece un margen enorme. Las GPU de datacenter (A100, H100) solo tienen sentido si se procesan lotes muy grandes en paralelo.
 - Cabe holgadamente en GPU de consumo: GTX 1650, RTX 3050, RTX 4090 y cualquier integrada moderna con soporte CUDA o ROCm. Tambien funciona en CPU sin problemas.
-- Almacenamiento: el repositorio ocupa 0,0 GB segun HuggingFace, coherente con un unico fichero de pesos de decenas de MB.
+- Almacenamiento: el repositorio ocupa 0,0 GB segun Hugging Face, coherente con un unico fichero de pesos de decenas de MB.
 - Opciones de despliegue: PyTorch nativo, TorchScript, exportacion a ONNX con ONNX Runtime, TensorRT para maximizar throughput, TorchServe o FastAPI como envoltorio HTTP. No aplican vLLM, llama.cpp, Ollama ni TGI, ya que no es un modelo de lenguaje.
 - Latencia y throughput estimados: no disponibles en la informacion proporcionada. Por el tamano del modelo, es razonable esperar latencias de milisegundos por imagen en GPU y de decenas de milisegundos en CPU, pero son estimaciones no verificadas que deben medirse en el entorno objetivo.
 
@@ -79,7 +79,7 @@ No se han publicado mas resultados de benchmarks en la informacion disponible. L
 
 | Modelo | Parametros | Entrada | Contexto | Licencia | Rendimiento en HAM10000 | Disponibilidad |
 |---|---|---|---|---|---|---|
-| skin-lesion-classifier-resnet18 | Aproximadamente 11,2 M | Imagen (224x224 tipico) | No aplica | MIT | 0,8937 de exactitud de validacion (autor) | HuggingFace, 0 descargas |
+| skin-lesion-classifier-resnet18 | Aproximadamente 11,2 M | Imagen (224x224 tipico) | No aplica | MIT | 0,8937 de exactitud de validacion (autor) | Hugging Face, 0 descargas |
 | ResNet50 preentrenado en ImageNet | Aproximadamente 25,6 M | Imagen (224x224) | No aplica | Segun implementacion de torchvision | No disponible en la informacion proporcionada | torchvision, ampliamente disponible |
 | EfficientNet-B0 | Aproximadamente 5,3 M | Imagen (224x224) | No aplica | Segun implementacion de torchvision | No disponible en la informacion proporcionada | torchvision, ampliamente disponible |
 | ConvNeXt-Tiny | Aproximadamente 28 M | Imagen (224x224) | No aplica | Segun implementacion de torchvision | No disponible en la informacion proporcionada | torchvision, ampliamente disponible |
@@ -98,15 +98,15 @@ No se dispone de resultados comparativos de estos modelos sobre HAM10000 en la i
 - Ausencia de calibracion: no se han publicado estudios de calibracion, por lo que las probabilidades de salida no deben interpretarse como niveles de confianza fiables.
 - Idioma: no aplica, el modelo no procesa texto, pero conviene recordar que no puede generar explicaciones ni informes que acompañen a la prediccion.
 - Licencia MIT: permite uso comercial y modificacion con atribucion, pero la licencia permisiva no exime de las obligaciones regulatorias aplicables a cualquier software con finalidad sanitaria.
-- Huella publica minima: 0 descargas y 0 likes en HuggingFace, sin paper, sin repositorio de codigo de entrenamiento ni documentacion del proceso. La trazabilidad es practicamente nula.
+- Huella publica minima: 0 descargas y 0 likes en Hugging Face, sin paper, sin repositorio de codigo de entrenamiento ni documentacion del proceso. La trazabilidad es practicamente nula.
 - Fechas de metadatos inusuales: los campos de creacion y actualizacion registran 2026-09-18, lo que sugiere un posible error en los metadatos del repositorio.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Farhan2000/skin-lesion-classifier-resnet18
+- Modelo en Hugging Face: https://huggingface.co/Farhan2000/skin-lesion-classifier-resnet18
 - Dataset HAM10000 referenciado en la model card: https://huggingface.co/datasets/marmal88/skin_cancer
 - Dataset original HAM10000 (ISIC Archive, referencia general): https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DBW86T
 - Repositorio de torchvision (arquitectura ResNet18): https://github.com/pytorch/vision
 - Documentacion de huggingface_hub para la descarga de pesos: https://huggingface.co/docs/huggingface_hub
 
-Nota: los resultados de busqueda web realizados no aportaron enlaces especificos del modelo, el paper de entrenamiento ni un repositorio de codigo asociado. No se ha localizado publicacion cientifica, demo ni espacio de HuggingFace vinculado a este identificador.
+Nota: los resultados de busqueda web realizados no aportaron enlaces especificos del modelo, el paper de entrenamiento ni un repositorio de codigo asociado. No se ha localizado publicacion cientifica, demo ni espacio de Hugging Face vinculado a este identificador.

@@ -81,10 +81,10 @@ En la informacion disponible no se ofrecen modelos comparables de otras familias
 
 | Modelo | Parametros | Tamano | PPL | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ZeroWw Ling-3.0-tiny Q8EMB-mixed (esta ficha) | 7,89 B (1,4 B activos) | 4,706 GiB | 4,047 | MIT | HuggingFace (ZeroWw) |
-| ZeroWw Ling-3.0-tiny Q8EMB-Q4K | 7,89 B (1,4 B activos) | 4,661 GiB | 4,170 | MIT | HuggingFace (ZeroWw) |
-| Q4_K_M upstream | 7,89 B (1,4 B activos) | 4,493 GiB | no disponible | MIT (modelo base) | HuggingFace (inclusionAI) |
-| Ling-3.0-tiny bf16 original | 7,89 B (1,4 B activos) | no disponible | 3,969 | MIT | HuggingFace (inclusionAI) |
+| ZeroWw Ling-3.0-tiny Q8EMB-mixed (esta ficha) | 7,89 B (1,4 B activos) | 4,706 GiB | 4,047 | MIT | Hugging Face (ZeroWw) |
+| ZeroWw Ling-3.0-tiny Q8EMB-Q4K | 7,89 B (1,4 B activos) | 4,661 GiB | 4,170 | MIT | Hugging Face (ZeroWw) |
+| Q4_K_M upstream | 7,89 B (1,4 B activos) | 4,493 GiB | no disponible | MIT (modelo base) | Hugging Face (inclusionAI) |
+| Ling-3.0-tiny bf16 original | 7,89 B (1,4 B activos) | no disponible | 3,969 | MIT | Hugging Face (inclusionAI) |
 
 ## Limitaciones y advertencias
 
@@ -101,7 +101,7 @@ En la informacion disponible no se ofrecen modelos comparables de otras familias
 
 ## Enlaces
 
-- Repositorio HuggingFace de las cuantizaciones: https://huggingface.co/ZeroWw/Ling-3.0-tiny-quant-variants-GGUF
+- Repositorio Hugging Face de las cuantizaciones: https://huggingface.co/ZeroWw/Ling-3.0-tiny-quant-variants-GGUF
 - Modelo base: https://huggingface.co/inclusionAI/Ling-3.0-tiny
 - Cuantizaciones alternativas de bartowski: https://huggingface.co/bartowski/Ling-3.0-tiny-GGUF
 - Fichero variante recomendada: https://huggingface.co/ZeroWw/Ling-3.0-tiny-quant-variants-GGUF/resolve/main/Ling-3.0-tiny-Q8EMB-mixed.gguf

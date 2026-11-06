@@ -78,7 +78,7 @@ La comparativa se limita a características estructurales, ya que no se dispone 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/mlasli/Nemotron-3.5-Lightning-30B-A3B-Heretic-Uncensored-Q6_K-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mlasli/Nemotron-3.5-Lightning-30B-A3B-Heretic-Uncensored-Q6_K-GGUF
 - Modelo base BF16 abliterado: https://huggingface.co/mlasli/Nemotron-3.5-Lightning-30B-A3B-Heretic-Uncensored-BF16
 - Modelo original de NVIDIA: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16
 - Herramienta Heretic (abliteration): https://github.com/mlabonne/heretic-llm

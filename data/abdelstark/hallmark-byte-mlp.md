@@ -6,7 +6,7 @@ Hallmark Byte MLP (seed 17) es una red neuronal de 1.033 parámetros publicada p
 
 El modelo se entrenó desde cero sobre un conjunto sintético de 12 registros etiquetados (6 positivos y 6 benignos) generados por el autor, con el objetivo declarado de reproducir el pipeline aritmético y de demostración de pruebas del proyecto, no de detectar contenido dañino. La model card es explícita: se trata de una línea base marcadora sintética, incapaz de distinguir texto reordenado con el mismo histograma de bytes, y no debe emplearse para autorizar acciones ni para filtrar contenido peligroso real. Esta honestidad sobre sus límites, junto con la publicación de hashes SHA-256 y checkpoints en JSON sin pickle, es lo que hace el artefacto relevante para quien investiga procedencia de modelos e inferencia verificable.
 
-La relevancia práctica es acotada pero nítida: es un ejemplo completo y auditable de un clasificador con inferencia entera determinista, sin GPU, sin credenciales de HuggingFace y sin código remoto, que acepta como máximo 96 bytes UTF-8 en la demo de inferencia publicada. Para desarrolladores e investigadores sirve como fixture de referencia, no como componente de producción.
+La relevancia práctica es acotada pero nítida: es un ejemplo completo y auditable de un clasificador con inferencia entera determinista, sin GPU, sin credenciales de Hugging Face y sin código remoto, que acepta como máximo 96 bytes UTF-8 en la demo de inferencia publicada. Para desarrolladores e investigadores sirve como fixture de referencia, no como componente de producción.
 
 ## Especificaciones técnicas
 
@@ -98,7 +98,7 @@ La diferencia relevante no es de rendimiento sino de propósito: los modelos ant
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abdelstark/hallmark-byte-mlp
+- Modelo en Hugging Face: https://huggingface.co/abdelstark/hallmark-byte-mlp
 - Repositorio Hallmark: https://github.com/AbdelStark/hallmark/tree/main/
 - Issue 12, runtime entero del MLP de bytes: https://github.com/AbdelStark/hallmark/issues/12
 - Guía de release de modelos: https://github.com/AbdelStark/hallmark/blob/main/docs/MODELS.md
@@ -106,4 +106,4 @@ La diferencia relevante no es de rendimiento sino de propósito: los modelos ant
 - Fixture de entrenamiento: https://github.com/AbdelStark/hallmark/blob/9b74e1c6b6e90de2d226556aa637936a61a0757b/fixtures/mlp-training.json
 - Entrenador: https://github.com/AbdelStark/hallmark/blob/9b74e1c6b6e90de2d226556aa637936a61a0757b/src/hallmark/mlp_training.py
 - Exportación: https://github.com/AbdelStark/hallmark/blob/9b74e1c6b6e90de2d226556aa637936a61a0757b/src/hallmark/mlp_export.py
-- Perfil del autor en HuggingFace: https://huggingface.co/abdelstark
+- Perfil del autor en Hugging Face: https://huggingface.co/abdelstark

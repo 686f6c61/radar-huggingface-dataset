@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros totales | Parametros activos | Formato | Tamano en disco | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| GLM-5.3-Flash-oQ2e-mtp (este) | 321,323B | 18B | MLX safetensors, 2,746 bits/peso efectivos | 110,3 GB / 102,725 GiB | MIT | HuggingFace |
-| zai-org/GLM-5.3-Flash | 321,323B (segun el modelo base declarado) | 18B | no disponible | no disponible | no disponible | HuggingFace |
+| GLM-5.3-Flash-oQ2e-mtp (este) | 321,323B | 18B | MLX safetensors, 2,746 bits/peso efectivos | 110,3 GB / 102,725 GiB | MIT | Hugging Face |
+| zai-org/GLM-5.3-Flash | 321,323B (segun el modelo base declarado) | 18B | no disponible | no disponible | no disponible | Hugging Face |
 | Otras alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones completas de modelos comparables en la informacion proporcionada, por lo que la comparativa se limita al modelo fuente.
@@ -88,7 +88,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas de modelos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jundot/GLM-5.3-Flash-oQ2e-mtp
+- Modelo en Hugging Face: https://huggingface.co/Jundot/GLM-5.3-Flash-oQ2e-mtp
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Repositorio de oQ / oMLX: https://github.com/jundot/omlx
 - Pull request de Improved oQe Quantization: https://github.com/jundot/omlx/pull/4385

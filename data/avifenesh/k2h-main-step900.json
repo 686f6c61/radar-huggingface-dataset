@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Avifenesh/k2h-main-step900",
+  "slug": "avifenesh-k2h-main-step900",
+  "author": "Avifenesh",
+  "url": "https://huggingface.co/Avifenesh/k2h-main-step900",
+  "created_at": "2026-11-03T21:01:35.000Z",
+  "updated_at": "2026-11-03T23:22:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "k2_horizon",
+    "text-generation",
+    "moe",
+    "continued-pretraining",
+    "research",
+    "conversational",
+    "custom_code",
+    "base_model:IFM/K2-Horizon-MoVA-36B-A4B",
+    "base_model:finetune:IFM/K2-Horizon-MoVA-36B-A4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 324,
+  "trending_score": 0,
+  "parameters": 37444792020,
+  "parameters_human": "37.44B",
+  "storage_bytes": 74912301652,
+  "storage_human": "74.9 GB",
+  "base_model": "IFM/K2-Horizon-MoVA-36B-A4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Avifenesh/k2h-main-step900 · Hugging Face",
+      "url": "https://huggingface.co/Avifenesh/k2h-main-step900",
+      "snippet": "Text Generation model with 37B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "Avifenesh/k2h-ckpt900-xllm · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/Avifenesh/k2h-ckpt900-xllm",
+      "snippet": "Dataset. Explore, preview and download it on Hugging Face."
+    },
+    {
+      "title": "Wikipedia, the free encyclopedia",
+      "url": "https://en.wikipedia.org/wiki/Main_Page",
+      "snippet": "Village pump – Forum for discussions about Wikipedia itself, including policies and technical issues. Site news – Sources of news …"
+    }
+  ]
+}

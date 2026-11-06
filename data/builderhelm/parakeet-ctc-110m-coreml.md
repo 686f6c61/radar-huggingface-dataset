@@ -125,7 +125,7 @@ La diferencia clave frente a FluidInference es el rendimiento medido por el auto
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BuilderHelm/Parakeet-CTC-110M-CoreML
+- Modelo en Hugging Face: https://huggingface.co/BuilderHelm/Parakeet-CTC-110M-CoreML
 - Modelo hermano con TDT: https://huggingface.co/BuilderHelm/Parakeet-TDT-CTC-110M-CoreML
 - Modelo base de NVIDIA: https://huggingface.co/nvidia/parakeet-tdt_ctc-110m
 - Alternativa FluidInference: https://huggingface.co/FluidInference/parakeet-ctc-110m-coreml

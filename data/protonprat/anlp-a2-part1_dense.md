@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ProtonPrat/anlp-a2-part1_dense es un checkpoint de un transformer causal entrenado desde cero como parte de la asignatura Advanced NLP (ANLP), correspondiente a la "Assignment 2, part 1" en su variante densa. El modelo lo publica el usuario ProtonPrat en HuggingFace y su proposito declarado es servir de linea base (baseline) dentro de un estudio de ablacion de la capa feed-forward, comparando una FFN densa de dos capas frente a alternativas tipo MoE. No es un modelo de proposito general ni un lanzamiento de producto: es un artefacto academico reproducible.
+ProtonPrat/anlp-a2-part1_dense es un checkpoint de un transformer causal entrenado desde cero como parte de la asignatura Advanced NLP (ANLP), correspondiente a la "Assignment 2, part 1" en su variante densa. El modelo lo publica el usuario ProtonPrat en Hugging Face y su proposito declarado es servir de linea base (baseline) dentro de un estudio de ablacion de la capa feed-forward, comparando una FFN densa de dos capas frente a alternativas tipo MoE. No es un modelo de proposito general ni un lanzamiento de producto: es un artefacto academico reproducible.
 
 El modelo tiene 10.084.480 parametros y se ha entrenado sobre 30.000.000 de posiciones de tokens del dataset belumind/en-vi-ja-curated-500k-triplets. La tarea principal es la traduccion de vietnamita y japones a ingles, con soporte tambien de continuacion de texto en ingles en los modelos de la Parte 2. Usa un tokenizador BPE a nivel de byte entrenado solo con los datos de entrenamiento.
 
@@ -72,12 +72,12 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K, FLOR
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| ProtonPrat/anlp-a2-part1_dense | 10.084.480 | no disponible | no disponible | HuggingFace, solo checkpoint + safetensors | Variante densa de la Parte 1; perplexity de test 8,312090 |
-| Adi-AI/anlp-a2-part1-1_dense | no disponible | no disponible | no disponible | HuggingFace | Mismo ejercicio de la asignatura ANLP, Parte 1 |
-| neemon/anlp-a2-part1-dense | no disponible | no disponible | no disponible | HuggingFace | Descripcion explicita de transformer decoder-only denso con FFN de dos capas, baseline del ejercicio |
-| Vatsavsrivatsav/anlp-a2-p1-dense | no disponible | no disponible | no disponible | HuggingFace | Ablacion de FFN de la Parte 1, traduccion vi/ja a ingles sobre el mismo dataset |
-| irishbumfuzzle/anlp-a2-p1-dense | no disponible | no disponible | no disponible | HuggingFace | Mismo ejercicio de la asignatura |
-| unignoramus/anlp-a2-p1-dense | no disponible | no disponible | no disponible | HuggingFace | Mismo ejercicio de la asignatura |
+| ProtonPrat/anlp-a2-part1_dense | 10.084.480 | no disponible | no disponible | Hugging Face, solo checkpoint + safetensors | Variante densa de la Parte 1; perplexity de test 8,312090 |
+| Adi-AI/anlp-a2-part1-1_dense | no disponible | no disponible | no disponible | Hugging Face | Mismo ejercicio de la asignatura ANLP, Parte 1 |
+| neemon/anlp-a2-part1-dense | no disponible | no disponible | no disponible | Hugging Face | Descripcion explicita de transformer decoder-only denso con FFN de dos capas, baseline del ejercicio |
+| Vatsavsrivatsav/anlp-a2-p1-dense | no disponible | no disponible | no disponible | Hugging Face | Ablacion de FFN de la Parte 1, traduccion vi/ja a ingles sobre el mismo dataset |
+| irishbumfuzzle/anlp-a2-p1-dense | no disponible | no disponible | no disponible | Hugging Face | Mismo ejercicio de la asignatura |
+| unignoramus/anlp-a2-p1-dense | no disponible | no disponible | no disponible | Hugging Face | Mismo ejercicio de la asignatura |
 
 No se dispone de datos de rendimiento publicados de las alternativas, por lo que no es posible establecer una comparacion cuantitativa mas alla de la coincidencia de tarea, dataset y estructura del ejercicio.
 
@@ -97,7 +97,7 @@ No se dispone de datos de rendimiento publicados de las alternativas, por lo que
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ProtonPrat/anlp-a2-part1_dense
+- Modelo en Hugging Face: https://huggingface.co/ProtonPrat/anlp-a2-part1_dense
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/proton_prat/anlp-assignment-2/runs/pawh2qst
 - Dataset de entrenamiento: https://huggingface.co/datasets/belumind/en-vi-ja-curated-500k-triplets
 - Repositorio hermano (misma asignatura, Parte 1 densa): https://huggingface.co/Adi-AI/anlp-a2-part1-1_dense

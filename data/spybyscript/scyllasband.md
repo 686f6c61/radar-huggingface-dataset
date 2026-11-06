@@ -97,5 +97,5 @@ No se dispone en la información proporcionada de datos sobre modelos alternativ
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/spybyscript/scyllasband)
+- [Modelo en Hugging Face](https://huggingface.co/spybyscript/scyllasband)
 - [Runtime de Scylla's Band (GitHub)](https://github.com/lowkeytea/scyllasband)

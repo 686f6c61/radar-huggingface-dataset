@@ -48,7 +48,7 @@ La innovacion tecnica destacable no esta en la arquitectura, sino en la formulac
 - Aplicaciones de bienestar y diario emocional: el usuario escribe como se siente y recibe un emoji animado de validacion emocional; el modelo cubre 46 emociones y situaciones, suficiente para un registro diario basico.
 - Educacion infantil o aprendizaje de vocabulario emocional en espanol: asociar frases a representaciones visuales ayuda a reforzar la identificacion de emociones en contextos de aula o aplicaciones de idiomas.
 - Filtrado y enriquecimiento de contenido en redes: dado un comentario corto en espanol, el modelo puede etiquetarlo con un GIF representativo para moderacion asistida o para generar respuestas automaticas con carga emocional.
-- Demostracion de despliegue local: con cuantizacion Q8_0 y Ollama, el modelo cabe en equipos de consumo y sirve como ejemplo de pipeline completo de ajuste fino, publicacion en HuggingFace y distribucion via GGUF.
+- Demostracion de despliegue local: con cuantizacion Q8_0 y Ollama, el modelo cabe en equipos de consumo y sirve como ejemplo de pipeline completo de ajuste fino, publicacion en Hugging Face y distribucion via GGUF.
 
 ## Benchmarks y rendimiento
 
@@ -76,8 +76,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-0.6B-emoji-gif (este modelo) | 596 M | no disponible | Texto a URL de GIF emocional en espanol | Apache 2.0 | HuggingFace, GGUF para Ollama |
-| Qwen/Qwen3-0.6B (base) | 596 M | no disponible en la informacion disponible | Generacion de texto general | Apache 2.0 | HuggingFace, Ollama |
+| Qwen3-0.6B-emoji-gif (este modelo) | 596 M | no disponible | Texto a URL de GIF emocional en espanol | Apache 2.0 | Hugging Face, GGUF para Ollama |
+| Qwen/Qwen3-0.6B (base) | 596 M | no disponible en la informacion disponible | Generacion de texto general | Apache 2.0 | Hugging Face, Ollama |
 | Sistemas de reglas o clasificadores de emociones (por ejemplo, basados en lexicones) | no aplica | no aplica | Clasificacion emocional | variable | multiples |
 
 La comparacion con alternativas de la misma categoria es limitada: no se han identificado en la informacion disponible otros ajustes finos publicos de Qwen3-0.6B orientados a la seleccion de GIFs emocionales en espanol. Frente al modelo base, la diferencia medible es la tasa de URLs validas (100 % frente a 0 %) y la ausencia de URLs inventadas. Frente a un clasificador de reglas, la ventaja es la cobertura de 46 emociones y la variabilidad de respuesta, aunque el 58 % de acierto emocional sugiere que un sistema de reglas bien curado podria ser mas preciso en categorias bien definidas.
@@ -97,7 +97,7 @@ La comparacion con alternativas de la misma categoria es limitada: no se han ide
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ernes14AG/qwen3-0.6b-emoji-gif
+- Modelo en Hugging Face: https://huggingface.co/Ernes14AG/qwen3-0.6b-emoji-gif
 - Repositorio GGUF para Ollama: https://huggingface.co/Ernes14AG/qwen3-0.6b-emoji-gif-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Noto Emoji Animation (Google): https://googlefonts.github.io/noto-emoji-animation/

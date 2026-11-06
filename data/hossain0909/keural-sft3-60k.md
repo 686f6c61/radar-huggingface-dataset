@@ -85,6 +85,6 @@ Keural destaca por su enfoque específico en coreano con entrenamiento desde cer
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hossain0909/keural-sft3-60k
+- Modelo en Hugging Face: https://huggingface.co/hossain0909/keural-sft3-60k
 - Modelo base (preentrenado): https://huggingface.co/mkd-hossain/keural-pretrained
 - Paper, repositorio de código, demo o blog del autor: no disponibles en la informacion proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `crazyape777/fk-vera6-affine-5g4yy75zuz-t6` es un modelo de lenguaje de gran tamaño con 35.107.181.936 parámetros (aproximadamente 35B), publicado en HuggingFace por el usuario crazyape777. El tag `qwen3_5_moe` sugiere que se basa en una arquitectura Mixture of Experts (MoE) derivada de la familia Qwen, aunque no se dispone de una descripción oficial ni de una model card que confirme los detalles. El repositorio contiene pesos en formato safetensors con un tamaño total de 70.2 GB, lo que indica que los pesos están en precisión BF16 (o similar). A pesar de su reciente creación (agosto de 2026), el modelo apenas cuenta con descargas (7) y sin documentación adicional, lo que limita su evaluación directa. Su relevancia actual radica en la tendencia de modelos MoE de tamaño medio que buscan eficiencia computacional, aunque la falta de información pública dificulta su uso en entornos de producción.
+El modelo `crazyape777/fk-vera6-affine-5g4yy75zuz-t6` es un modelo de lenguaje de gran tamaño con 35.107.181.936 parámetros (aproximadamente 35B), publicado en Hugging Face por el usuario crazyape777. El tag `qwen3_5_moe` sugiere que se basa en una arquitectura Mixture of Experts (MoE) derivada de la familia Qwen, aunque no se dispone de una descripción oficial ni de una model card que confirme los detalles. El repositorio contiene pesos en formato safetensors con un tamaño total de 70.2 GB, lo que indica que los pesos están en precisión BF16 (o similar). A pesar de su reciente creación (agosto de 2026), el modelo apenas cuenta con descargas (7) y sin documentación adicional, lo que limita su evaluación directa. Su relevancia actual radica en la tendencia de modelos MoE de tamaño medio que buscan eficiencia computacional, aunque la falta de información pública dificulta su uso en entornos de producción.
 
 ## Especificaciones tecnicas
 
@@ -19,7 +19,7 @@ El modelo `crazyape777/fk-vera6-affine-5g4yy75zuz-t6` es un modelo de lenguaje d
 
 ## Arquitectura y entrenamiento
 
-El tag `qwen3_5_moe` indica que el modelo emplea una arquitectura de Mixture of Experts, probablemente siguiendo el diseño de las versiones MoE de Qwen (como Qwen2.5-MoE). Sin embargo, no se dispone de información oficial sobre el número de expertos, la dimensión de los mismos, el mecanismo de enrutamiento o la implementación exacta. Tampoco hay datos sobre el proceso de entrenamiento: no se conocen el volumen de tokens utilizados, la composición del dataset, ni si se aplicaron técnicas de alineación como RLHF o DPO. El repositorio no incluye una model card, por lo que cualquier detalle técnico adicional es especulativo. La ausencia de documentación contrasta con la práctica habitual de publicar estos datos en HuggingFace, lo que dificulta la reproducibilidad y la evaluación rigurosa.
+El tag `qwen3_5_moe` indica que el modelo emplea una arquitectura de Mixture of Experts, probablemente siguiendo el diseño de las versiones MoE de Qwen (como Qwen2.5-MoE). Sin embargo, no se dispone de información oficial sobre el número de expertos, la dimensión de los mismos, el mecanismo de enrutamiento o la implementación exacta. Tampoco hay datos sobre el proceso de entrenamiento: no se conocen el volumen de tokens utilizados, la composición del dataset, ni si se aplicaron técnicas de alineación como RLHF o DPO. El repositorio no incluye una model card, por lo que cualquier detalle técnico adicional es especulativo. La ausencia de documentación contrasta con la práctica habitual de publicar estos datos en Hugging Face, lo que dificulta la reproducibilidad y la evaluación rigurosa.
 
 ## Capacidades
 
@@ -58,7 +58,7 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/crazyape777/fk-vera6-affine-5g4yy75zuz-t6
+- Repositorio Hugging Face: https://huggingface.co/crazyape777/fk-vera6-affine-5g4yy75zuz-t6
 - Modelo relacionado (sin documentación): https://huggingface.co/vera6/affine-5g4yy75zuz-cc
 - Modelo relacionado (sin documentación): https://huggingface.co/vera6/affine-5g4yy75zuz-t4
 

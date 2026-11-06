@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Intern-Decision-4B es un modelo multimodal de decisión estructurada desarrollado por InternLM (Shanghai AI Laboratory) y publicado en HuggingFace bajo licencia Apache 2.0. Se obtiene por ajuste fino supervisado de Qwen3.5-4B, con 4.539.265.536 parámetros totales y un repositorio de 9,1 GB en formato safetensors. Su particularidad es que no genera texto libre: recibe un estado compartido, un esquema de preguntas con nombre y, opcionalmente, imágenes, y devuelve en una única pasada forward una distribución de probabilidad sobre las opciones de cada pregunta.
+Intern-Decision-4B es un modelo multimodal de decisión estructurada desarrollado por InternLM (Shanghai AI Laboratory) y publicado en Hugging Face bajo licencia Apache 2.0. Se obtiene por ajuste fino supervisado de Qwen3.5-4B, con 4.539.265.536 parámetros totales y un repositorio de 9,1 GB en formato safetensors. Su particularidad es que no genera texto libre: recibe un estado compartido, un esquema de preguntas con nombre y, opcionalmente, imágenes, y devuelve en una única pasada forward una distribución de probabilidad sobre las opciones de cada pregunta.
 
 El modelo resuelve un problema muy concreto en pipelines de agentes y sistemas de decisión: la necesidad de obtener salidas tipadas (elección múltiple, escala de puntuación y respuesta sí/no/desconocido) con probabilidades calibradas, en lugar de texto parseable. Para ello mapea cada opción a un símbolo de un solo token (A-Z, a-z, 0-9), construye un esqueleto JSON con marcadores `<decision>` y lee los logits en la posición inmediatamente anterior a cada marcador aplicando un softmax restringido a los candidatos válidos de ese campo.
 
@@ -28,7 +28,7 @@ Es relevante ahora porque cubre un hueco poco atendido: la evaluación de decisi
 
 ## Arquitectura y entrenamiento
 
-La información pública no detalla el número de tokens de entrenamiento, la composición del dataset ni si hubo etapas de RLHF o DPO. Lo que sí se documenta es la naturaleza del ajuste: el modelo parte de Qwen3.5-4B y se especializa en un objetivo de decisión con enmascaramiento del siguiente token (*masked-next-token decision objective*). La inferencia no invoca `generate()` ni muestrea texto libre; se ejecuta una única pasada causal de HuggingFace y se leen los logits en la posición inmediatamente anterior a cada marcador `<decision>` del esqueleto JSON del asistente.
+La información pública no detalla el número de tokens de entrenamiento, la composición del dataset ni si hubo etapas de RLHF o DPO. Lo que sí se documenta es la naturaleza del ajuste: el modelo parte de Qwen3.5-4B y se especializa en un objetivo de decisión con enmascaramiento del siguiente token (*masked-next-token decision objective*). La inferencia no invoca `generate()` ni muestrea texto libre; se ejecuta una única pasada causal de Hugging Face y se leen los logits en la posición inmediatamente anterior a cada marcador `<decision>` del esqueleto JSON del asistente.
 
 Sobre esos logits se aplica un softmax restringido únicamente a los símbolos candidatos permitidos para cada campo y, después, una calibración de temperatura específica del checkpoint. Para el modelo de 4B, el autor indica un valor ajustado de T = 1,992418. El procedimiento exige preservar el orden de preguntas y opciones, mapear las opciones a símbolos de un solo token, respetar la plantilla de chat del checkpoint y mantener el bloque de pensamiento vacío. Una misma petición puede contener varios campos y se resuelven todos en la misma pasada forward, sin insertar respuestas de referencia en el prompt.
 
@@ -98,7 +98,7 @@ Piloto de calibración sobre distribuciones conocidas (96 casos, referencia exac
 - VRAM estimada en cuantizaciones de 8 y 4 bits: aproximadamente 5-6 GB y 3-4 GB respectivamente, siempre que se generen cuantizaciones propias, ya que el repositorio no las publica.
 - GPU recomendadas: RTX 4090 para despliegue de baja latencia (el autor mide 44,16 ms de media por consulta); A100 o H100 para servir múltiples peticiones concurrentes.
 - Cabe en GPU de consumo: sí en BF16 en tarjetas con 12 GB o más (RTX 3060 12GB, RTX 4070, RTX 4080, RTX 4090); con cuantización de 4 bits cabría en tarjetas de 6-8 GB, aunque no hay artefactos oficiales.
-- Opciones de despliegue: el backend implementado y por defecto es `hf` (transformers) mediante la clase `DecisionEngine`; el autor no documenta soporte para vLLM, TGI, llama.cpp ni Ollama. La etiqueta `endpoints_compatible` aparece en HuggingFace, pero no se detalla en la model card.
+- Opciones de despliegue: el backend implementado y por defecto es `hf` (transformers) mediante la clase `DecisionEngine`; el autor no documenta soporte para vLLM, TGI, llama.cpp ni Ollama. La etiqueta `endpoints_compatible` aparece en Hugging Face, pero no se detalla en la model card.
 - Entorno: Python 3.12 o superior, instalación de `requirements.txt` en un entorno PyTorch/CUDA. El motor se carga una vez (`DecisionEngine(device="cuda")`) y se reutiliza entre peticiones.
 - Latencia y throughput: 44,16 ms de media, 44,03 ms de mediana y 44,60 ms de P95 por consulta en una RTX 4090. No se publica throughput agregado ni comportamiento con batching concurrente.
 - Al no usar `generate()`, el consumo de memoria y el tiempo son predecibles: una única pasada forward independientemente del número de campos de la petición.
@@ -134,7 +134,7 @@ Frente a Jev, el modelo de 4B mejora la media (90,02 frente a 88,74), mejora el 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/internlm/Intern-Decision-4B
+- Modelo en Hugging Face: https://huggingface.co/internlm/Intern-Decision-4B
 - Demo (Space oficial): https://huggingface.co/spaces/internlm/intern-decision
 - Coleccion de pesos de la familia Intern-Decision: https://huggingface.co/collections/internlm/intern-decision
 - Repositorio GitHub: https://github.com/internlm/Intern-Decision

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VIG-Qwen3-VL-Thinking-4B es un modelo vision-language (VLM) con capacidades de razonamiento, publicado por el usuario chaser2 en HuggingFace. Se trata de un ajuste del modelo Qwen3-VL-Thinking 4B de Alibaba entrenado con el método VIG (del que no se han publicado detalles técnicos), orientado según su autor al razonamiento visual eficiente y a la investigación reproducible. El modelo acepta imágenes y texto como entrada y genera texto, con capacidad de razonamiento paso a paso heredada de la familia "Thinking" de Qwen3-VL.
+VIG-Qwen3-VL-Thinking-4B es un modelo vision-language (VLM) con capacidades de razonamiento, publicado por el usuario chaser2 en Hugging Face. Se trata de un ajuste del modelo Qwen3-VL-Thinking 4B de Alibaba entrenado con el método VIG (del que no se han publicado detalles técnicos), orientado según su autor al razonamiento visual eficiente y a la investigación reproducible. El modelo acepta imágenes y texto como entrada y genera texto, con capacidad de razonamiento paso a paso heredada de la familia "Thinking" de Qwen3-VL.
 
 Su relevancia radica en combinar en un tamaño compacto (4,83 mil millones de parámetros) comprensión multimodal y razonamiento explícito, lo que lo hace candidato para despliegues en hardware modesto donde los VLM grandes resultan inviables. La arquitectura subyacente es `Qwen3VLForConditionalGeneration`, con pesos en bfloat16 en formato safetensors, integrado en la librería Transformers. Al tratarse de un repositorio de un usuario individual con muy poca tracción (46 descargas y 1 like), conviene tratarlo como un checkpoint experimental y verificar su comportamiento antes de cualquier uso serio.
 
@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Modalidad | Razonamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| VIG-Qwen3-VL-Thinking-4B | 4,83B (dato real) | Imagen + texto | Sí (variante Thinking) | Apache 2.0 | HuggingFace, checkpoint completo |
-| Qwen3-VL-Thinking 4B (base) | ~4B | Imagen + texto | Sí | Apache 2.0 (según familia Qwen3) | HuggingFace, oficial de Qwen |
-| Qwen2.5-VL-3B-Instruct | 3B | Imagen + texto | No explícito | Apache 2.0 | HuggingFace, oficial, amplio soporte vLLM/llama.cpp |
+| VIG-Qwen3-VL-Thinking-4B | 4,83B (dato real) | Imagen + texto | Sí (variante Thinking) | Apache 2.0 | Hugging Face, checkpoint completo |
+| Qwen3-VL-Thinking 4B (base) | ~4B | Imagen + texto | Sí | Apache 2.0 (según familia Qwen3) | Hugging Face, oficial de Qwen |
+| Qwen2.5-VL-3B-Instruct | 3B | Imagen + texto | No explícito | Apache 2.0 | Hugging Face, oficial, amplio soporte vLLM/llama.cpp |
 
 Nota: la comparativa se limita a la familia Qwen-VL por tamaños equivalentes; no hay evaluaciones publicadas que permitan comparar rendimiento real entre estos modelos en este checkpoint.
 
@@ -78,6 +78,6 @@ Nota: la comparativa se limita a la familia Qwen-VL por tamaños equivalentes; n
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/chaser2/VIG-Qwen3-VL-Thinking-4B
+- Repositorio en Hugging Face: https://huggingface.co/chaser2/VIG-Qwen3-VL-Thinking-4B
 - Paper, blog o repositorio del método VIG: no disponible (no se han encontrado enlaces en la información proporcionada)
-- Modelo base Qwen3-VL: no disponible (enlace no incluido en la información proporcionada; buscar la organización Qwen en HuggingFace)
+- Modelo base Qwen3-VL: no disponible (enlace no incluido en la información proporcionada; buscar la organización Qwen en Hugging Face)

@@ -100,9 +100,9 @@ Longitudes medias de razonamiento en HumanEval: 192/266/656 tokens para v2 en lo
 
 | Modelo | Parámetros | Contexto | HumanEval medio | MBPP medio | BFCL medio | Licencia | Disponibilidad |
 |---|---:|---|---:|---:|---:|---|---|
-| Grug 27B v2 | 27,36 B | no disponible (pruebas a 24.576 y 65.536 tokens) | 97,0% | 90,7% | 88,0% | apache-2.0 | safetensors y GGUF en HuggingFace; 0 descargas registradas |
-| Qwen 3.8 27B (base) | 27,36 B (modelo del que deriva) | no disponible | 99,2% | 93,3% | 89,0% | no disponible en la información proporcionada | HuggingFace, `Qwen/Qwen3.8-27B` |
-| Grug v1.1 | no disponible | no disponible | 91,7% | 80,4% | 81,0% | no disponible en la información proporcionada | HuggingFace, `ProCreations/grug-v1.1-qwen-3.8-27b` |
+| Grug 27B v2 | 27,36 B | no disponible (pruebas a 24.576 y 65.536 tokens) | 97,0% | 90,7% | 88,0% | apache-2.0 | safetensors y GGUF en Hugging Face; 0 descargas registradas |
+| Qwen 3.8 27B (base) | 27,36 B (modelo del que deriva) | no disponible | 99,2% | 93,3% | 89,0% | no disponible en la información proporcionada | Hugging Face, `Qwen/Qwen3.8-27B` |
+| Grug v1.1 | no disponible | no disponible | 91,7% | 80,4% | 81,0% | no disponible en la información proporcionada | Hugging Face, `ProCreations/grug-v1.1-qwen-3.8-27b` |
 
 Frente al modelo base, Grug v2 sacrifica entre 2,2 y 2,6 puntos en HumanEval, MBPP y BFCL, y 10,6 puntos en MATH medio, a cambio de trazas de razonamiento aproximadamente la mitad de largas y de una cabeza MTP integrada que eleva el throughput. Frente a Grug v1.1 mejora en las tres pruebas de código y herramientas, además de corregir la regresión de títulos de sesión.
 
@@ -127,7 +127,7 @@ Frente al modelo base, Grug v2 sacrifica entre 2,2 y 2,6 puntos en HumanEval, MB
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ProCreations/grug-27b-v2
+- Modelo en Hugging Face: https://huggingface.co/ProCreations/grug-27b-v2
 - Repositorio GGUF: https://huggingface.co/ProCreations/grug-27b-v2-gguf
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Resultados legibles por máquina: https://huggingface.co/ProCreations/grug-27b-v2/tree/main/results

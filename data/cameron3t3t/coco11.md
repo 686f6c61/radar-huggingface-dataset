@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Cameron3T3T/coco11 es un repositorio de modelo publicado en HuggingFace por el usuario Cameron3T3T, con un tamano de repositorio de 24,4 GB y una unica etiqueta declarada (`region:us`). El repositorio no incluye model card, no declara pipeline, licencia ni idiomas soportados, y en el momento de la consulta acumula 0 descargas y 1 like. Fue creado el 10 de septiembre de 2026 y actualizado por ultima vez el 25 de septiembre de 2026.
+Cameron3T3T/coco11 es un repositorio de modelo publicado en Hugging Face por el usuario Cameron3T3T, con un tamano de repositorio de 24,4 GB y una unica etiqueta declarada (`region:us`). El repositorio no incluye model card, no declara pipeline, licencia ni idiomas soportados, y en el momento de la consulta acumula 0 descargas y 1 like. Fue creado el 10 de septiembre de 2026 y actualizado por ultima vez el 25 de septiembre de 2026.
 
 Con la informacion disponible no es posible determinar que tipo de modelo es, que arquitectura utiliza, cuantos parametros tiene ni sobre que datos fue entrenado. Los resultados de busqueda web no aportan ninguna ficha tecnica, paper, blog ni documentacion asociada al modelo: las referencias encontradas se limitan a un listado agregador de modelos atribuidos a Cameron3T3T y a otros repositorios hermanos del mismo autor (coco14, coco16), que tampoco incluyen model card.
 
@@ -79,9 +79,9 @@ No es posible establecer una comparativa rigurosa: se desconoce la categoria del
 
 | Modelo | Parametros | Contexto | Licencia | Documentacion | Disponibilidad |
 |---|---|---|---|---|---|
-| Cameron3T3T/coco11 | no disponible | no disponible | no disponible | sin model card | HuggingFace |
-| Cameron3T3T/coco14 | no disponible | no disponible | no disponible | sin model card | HuggingFace |
-| Cameron3T3T/coco16 | no disponible | no disponible | no disponible | sin model card | HuggingFace |
+| Cameron3T3T/coco11 | no disponible | no disponible | no disponible | sin model card | Hugging Face |
+| Cameron3T3T/coco14 | no disponible | no disponible | no disponible | sin model card | Hugging Face |
+| Cameron3T3T/coco16 | no disponible | no disponible | no disponible | sin model card | Hugging Face |
 
 No se dispone de modelos comparables de otros autores porque se desconoce la categoria funcional del modelo evaluado.
 
@@ -100,7 +100,7 @@ No se dispone de modelos comparables de otros autores porque se desconoce la cat
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Cameron3T3T/coco11
+- Repositorio en Hugging Face: https://huggingface.co/Cameron3T3T/coco11
 - Repositorio hermano coco14: https://huggingface.co/Cameron3T3T/coco14
 - Repositorio hermano coco16: https://huggingface.co/Cameron3T3T/coco16
 - Listado agregador de modelos de Cameron3T3T: https://essamamdani.com/ai-models/company/cameron3t3t

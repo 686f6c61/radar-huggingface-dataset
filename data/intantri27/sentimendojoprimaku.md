@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sentimendojoprimaku` es un modelo publicado en HuggingFace por el usuario `intantri27` bajo licencia MIT. La model card asociada no contiene ninguna descripcion tecnica: unicamente declara la licencia, sin informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio registra cero descargas y cero likes en el momento de la consulta, y no tiene pipeline asignado en la plataforma.
+`sentimendojoprimaku` es un modelo publicado en Hugging Face por el usuario `intantri27` bajo licencia MIT. La model card asociada no contiene ninguna descripcion tecnica: unicamente declara la licencia, sin informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio registra cero descargas y cero likes en el momento de la consulta, y no tiene pipeline asignado en la plataforma.
 
 Por el identificador del repositorio, el nombre sugiere un posible uso relacionado con analisis de sentimiento, pero esta interpretacion no esta confirmada por ninguna documentacion oficial. No hay evidencia publica de que el modelo haya sido entrenado, evaluado o validado por terceros.
 
@@ -68,4 +68,4 @@ No disponible. No se puede establecer una comparativa sin conocer el tamano, la 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/intantri27/sentimendojoprimaku
+- Hugging Face: https://huggingface.co/intantri27/sentimendojoprimaku

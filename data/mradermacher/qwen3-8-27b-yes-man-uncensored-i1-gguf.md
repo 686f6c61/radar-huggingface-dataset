@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo **Qwen3.8-27B-Yes-Man-uncensored-i1-GGUF** es una cuantización GGUF con imatrix del modelo base `cloudbjorn/Qwen3.8-27B-Yes-Man-uncensored`, publicado por el usuario `mradermacher` en HuggingFace. Se trata de un modelo de 26.895.998.464 parámetros (aproximadamente 26,9 mil millones) orientado a conversación, con un enfoque "uncensored" (sin censura) y "Yes-Man" (tendencia a complacer al usuario), lo que sugiere un ajuste para reducir rechazos y respuestas evasivas. El repositorio contiene múltiples cuantizaciones (Q2_K, IQ3_M, Q4_K_S, etc.) con pesos en formato GGUF, pensadas para ejecución local eficiente en CPU y GPU.
+El modelo **Qwen3.8-27B-Yes-Man-uncensored-i1-GGUF** es una cuantización GGUF con imatrix del modelo base `cloudbjorn/Qwen3.8-27B-Yes-Man-uncensored`, publicado por el usuario `mradermacher` en Hugging Face. Se trata de un modelo de 26.895.998.464 parámetros (aproximadamente 26,9 mil millones) orientado a conversación, con un enfoque "uncensored" (sin censura) y "Yes-Man" (tendencia a complacer al usuario), lo que sugiere un ajuste para reducir rechazos y respuestas evasivas. El repositorio contiene múltiples cuantizaciones (Q2_K, IQ3_M, Q4_K_S, etc.) con pesos en formato GGUF, pensadas para ejecución local eficiente en CPU y GPU.
 
 La relevancia de este modelo radica en su disponibilidad como archivos GGUF listos para usar con herramientas como llama.cpp, Ollama o vLLM, y en su carácter "uncensored", que lo hace atractivo para desarrolladores que necesitan un modelo con menos restricciones en generación de contenido. Sin embargo, la información pública es escasa: no se especifican arquitectura, contexto, licencia ni datos de entrenamiento en la model card, por lo que gran parte de las especificaciones técnicas deben considerarse no disponibles.
 
@@ -21,7 +21,7 @@ La relevancia de este modelo radica en su disponibilidad como archivos GGUF list
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información oficial sobre la arquitectura del modelo base. El nombre "Qwen3.8-27B" sugiere una posible relación con la familia Qwen, pero no hay confirmación. El repositorio de cuantización indica que se trata de una conversión de los pesos originales (formato HuggingFace) a GGUF, con cuantización imatrix (importancia matrix) para mejorar la calidad en bajas precisiones. El modelo base `cloudbjorn/Qwen3.8-27B-Yes-Man-uncensored` no tiene model card pública en la información proporcionada, por lo que se desconocen los datos de entrenamiento, el proceso de ajuste (si hubo RLHF, DPO, abliteration, etc.) y cualquier innovación técnica. El término "Yes-Man" y "uncensored" en el nombre sugiere un ajuste orientado a reducir rechazos y aumentar la complacencia, pero no hay detalles técnicos verificables.
+No se dispone de información oficial sobre la arquitectura del modelo base. El nombre "Qwen3.8-27B" sugiere una posible relación con la familia Qwen, pero no hay confirmación. El repositorio de cuantización indica que se trata de una conversión de los pesos originales (formato Hugging Face) a GGUF, con cuantización imatrix (importancia matrix) para mejorar la calidad en bajas precisiones. El modelo base `cloudbjorn/Qwen3.8-27B-Yes-Man-uncensored` no tiene model card pública en la información proporcionada, por lo que se desconocen los datos de entrenamiento, el proceso de ajuste (si hubo RLHF, DPO, abliteration, etc.) y cualquier innovación técnica. El término "Yes-Man" y "uncensored" en el nombre sugiere un ajuste orientado a reducir rechazos y aumentar la complacencia, pero no hay detalles técnicos verificables.
 
 ## Capacidades
 
@@ -71,7 +71,7 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/mradermacher/Qwen3.8-27B-Yes-Man-uncensored-i1-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/mradermacher/Qwen3.8-27B-Yes-Man-uncensored-i1-GGUF
 - Modelo base (referencia): https://huggingface.co/cloudbjorn/Qwen3.8-27B-Yes-Man-uncensored
 - Repo similar (no oficial): https://huggingface.co/mradermacher/Qwen3.8-27B-Uncensored-i1-GGUF
 - Repo GitHub relacionado (no oficial): https://github.com/Wassimyounes01/qwen38-uncensored

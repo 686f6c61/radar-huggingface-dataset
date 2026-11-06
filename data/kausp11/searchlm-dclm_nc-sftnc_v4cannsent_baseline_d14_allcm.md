@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Searchlm-dclm_nc-sftnc_v4cannsent_baseline_d14_allcm es un modelo de lenguaje experimental de autoría individual (usuario Kausp11 en HuggingFace) que forma parte de una línea de investigación sobre preentrenamiento con búsqueda habilitada (search-enabled pretraining). Se trata de un modelo de aproximadamente 842 millones de parámetros, exportado desde el framework nanochat, que ha sido sometido a un ajuste fino supervisado (SFT) sobre un modelo base entrenado con el corpus DCLM-Edu. El modelo incorpora tokens especiales de búsqueda web (<WEB_QUERY>, </WEB_QUERY>, <WEB_RESPONSE>, </WEB_RESPONSE>) tanto en el tokenizador como en los datos de entrenamiento, lo que sugiere que está diseñado para generar consultas web e integrar respuestas de búsqueda dentro de sus conversaciones.
+Searchlm-dclm_nc-sftnc_v4cannsent_baseline_d14_allcm es un modelo de lenguaje experimental de autoría individual (usuario Kausp11 en Hugging Face) que forma parte de una línea de investigación sobre preentrenamiento con búsqueda habilitada (search-enabled pretraining). Se trata de un modelo de aproximadamente 842 millones de parámetros, exportado desde el framework nanochat, que ha sido sometido a un ajuste fino supervisado (SFT) sobre un modelo base entrenado con el corpus DCLM-Edu. El modelo incorpora tokens especiales de búsqueda web (<WEB_QUERY>, </WEB_QUERY>, <WEB_RESPONSE>, </WEB_RESPONSE>) tanto en el tokenizador como en los datos de entrenamiento, lo que sugiere que está diseñado para generar consultas web e integrar respuestas de búsqueda dentro de sus conversaciones.
 
 La relevancia de este modelo radica en su carácter de baseline (línea base) comparativo en un experimento de entrenamiento con cómputo emparejado (compute-matched), presumiblemente para evaluar si el preentrenamiento con bloques de búsqueda mejora las capacidades del modelo frente a un entrenamiento tradicional. No es un modelo de producción, sino un artefacto de investigación con descargas limitadas (234 en el momento de la ficha) y sin model card detallada, por lo que su documentación es escasa y debe evaluarse con cautela.
 
@@ -76,5 +76,5 @@ Este modelo se posiciona como artefacto de investigacion frente a alternativas c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Kausp11/searchlm-dclm_nc-sftnc_v4cannsent_baseline_d14_allcm
+- Hugging Face: https://huggingface.co/Kausp11/searchlm-dclm_nc-sftnc_v4cannsent_baseline_d14_allcm
 - No se han encontrado enlaces adicionales (paper, blog, repositorio de codigo o demo) en la informacion disponible.

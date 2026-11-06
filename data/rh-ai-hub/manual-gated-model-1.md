@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Manual-Gated-Model-1 es un modelo publicado en HuggingFace por el usuario u organizacion RH-AI-Hub bajo la identificacion `RH-AI-Hub/Manual-Gated-Model-1`. Segun los metadatos de la plataforma, esta configurado para la tarea de clasificacion de texto (`text-classification`) y opera unicamente en ingles. El repositorio esta sujeto a acceso restringido (gated), por lo que es necesario aceptar condiciones adicionales en HuggingFace antes de poder descargar los pesos o consultar su contenido completo.
+Manual-Gated-Model-1 es un modelo publicado en Hugging Face por el usuario u organizacion RH-AI-Hub bajo la identificacion `RH-AI-Hub/Manual-Gated-Model-1`. Segun los metadatos de la plataforma, esta configurado para la tarea de clasificacion de texto (`text-classification`) y opera unicamente en ingles. El repositorio esta sujeto a acceso restringido (gated), por lo que es necesario aceptar condiciones adicionales en Hugging Face antes de poder descargar los pesos o consultar su contenido completo.
 
 En el momento de la consulta, el modelo registra 0 descargas y 0 "likes", y no dispone de una licencia declarada (`license:unknown`). La unica etiqueta descriptiva adicional es `testTag`, lo que sugiere que podria tratarse de un repositorio de prueba o de un artefacto interno mas que de un modelo destinado a uso general por terceros.
 
@@ -23,7 +23,7 @@ No se dispone de informacion sobre arquitectura, numero de parametros, longitud 
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en los metadatos disponibles. La etiqueta de pipeline `text-classification` indica la tarea para la que esta configurado en HuggingFace, pero no implica necesariamente que sea un modelo transformer de clasificacion; podria tratarse de cualquier arquitectura compatible con dicha tarea.
+No se ha publicado informacion sobre la arquitectura del modelo en los metadatos disponibles. La etiqueta de pipeline `text-classification` indica la tarea para la que esta configurado en Hugging Face, pero no implica necesariamente que sea un modelo transformer de clasificacion; podria tratarse de cualquier arquitectura compatible con dicha tarea.
 
 Tampoco hay datos sobre el volumen de tokens de entrenamiento, la composicion del dataset, el uso de tecnicas de ajuste como RLHF o DPO, ni sobre innovaciones tecnicas concretas. El repositorio esta sujeto a acceso restringido, de modo que la documentacion interna (si existe) solo seria accesible tras aceptar las condiciones en la plataforma.
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: no disponible (se desconoce el numero de parametros).
 - GPU recomendadas: no disponible.
 - Viabilidad en GPU de consumo: no disponible.
-- Opciones de despliegue: no disponible; al tratarse de un pipeline de `text-classification` en HuggingFace, en principio seria desplegable con `transformers` si los pesos son accesibles, pero esto no puede confirmarse.
+- Opciones de despliegue: no disponible; al tratarse de un pipeline de `text-classification` en Hugging Face, en principio seria desplegable con `transformers` si los pesos son accesibles, pero esto no puede confirmarse.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -70,7 +70,7 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 ## Limitaciones y advertencias
 
 - Licencia no declarada (`license:unknown`): no puede asumirse ningun permiso de uso comercial ni de redistribucion.
-- Acceso restringido (gated): es obligatorio aceptar condiciones en HuggingFace y, segun el caso, obtener aprobacion del autor.
+- Acceso restringido (gated): es obligatorio aceptar condiciones en Hugging Face y, segun el caso, obtener aprobacion del autor.
 - Idiomas: unicamente se declara ingles; no hay evidencia de soporte multilingue.
 - Sin benchmarks publicados: no existe informacion objetiva sobre precision, robustez o sesgos.
 - Riesgo de alucinacion: no evaluable sin conocer la arquitectura ni la tarea exacta; en tareas de clasificacion el riesgo se traduce en etiquetas incorrectas o poco calibradas.
@@ -80,5 +80,5 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RH-AI-Hub/Manual-Gated-Model-1
+- Hugging Face: https://huggingface.co/RH-AI-Hub/Manual-Gated-Model-1
 - No se han encontrado papers, blogs, repositorios ni demos adicionales relevantes en la busqueda web realizada.

@@ -83,7 +83,7 @@ La comparación histórica con ONNX Runtime, PyTorch eager, Candle, tract, Burn 
 
 | Modelo | Parámetros | Contexto / trama | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Akiki VAD 1.0 INT8-FP32-INPUT | 190.849 | 16 ms por paso, estado recurrente | Apache 2.0 | HuggingFace + paquete `akiki` | Motor Rust propio, latencia de µs en CPU |
+| Akiki VAD 1.0 INT8-FP32-INPUT | 190.849 | 16 ms por paso, estado recurrente | Apache 2.0 | Hugging Face + paquete `akiki` | Motor Rust propio, latencia de µs en CPU |
 | Silero VAD v5 | no disponible en la información | no disponible | no disponible en la información | Ampliamente distribuido | Incluido en la comparación histórica del autor (modelo Akiki 0.2.0) |
 | TEN-VAD | no disponible en la información | no disponible | no disponible en la información | no disponible en la información | Incluido en la comparación histórica del autor (modelo Akiki 0.2.0) |
 
@@ -102,7 +102,7 @@ No se dispone de datos de parámetros, contexto ni licencia de Silero VAD v5 ni 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Akiki-AI/akiki-vad-1.0-int8-fp32-input
+- Modelo en Hugging Face: https://huggingface.co/Akiki-AI/akiki-vad-1.0-int8-fp32-input
 - Modelo base: https://huggingface.co/Akiki-AI/akiki-vad-1.0
 - Documentación del formato: FORMAT.md (incluido en el repositorio del modelo)
 - Datos de benchmark: assets/benchmark-data.json (incluido en el repositorio del modelo)

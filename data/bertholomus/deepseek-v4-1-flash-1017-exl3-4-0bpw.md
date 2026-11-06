@@ -78,8 +78,8 @@ Gates de calidad reportados por el autor en esa misma configuracion: chat exacto
 
 | Modelo | Parametros | Contexto | Formato / tamano | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este artefacto (EXL3 4.0 bpw) | 144,1 B | hasta 1M segun pruebas del autor | EXL3 safetensors, ≈275 GB de pesos, repo de 288,4 GB | MIT | publico en HuggingFace, 11 descargas y 4 likes en el momento de la consulta |
-| deepseek-ai/DeepSeek-V4.1-Flash-1017 (base) | 144,1 B (mismo checkpoint de origen) | no disponible en la informacion proporcionada | checkpoint nativo, incluye tablas Engram en shards 47 y 48; tamano no disponible | MIT | publico en HuggingFace |
+| Este artefacto (EXL3 4.0 bpw) | 144,1 B | hasta 1M segun pruebas del autor | EXL3 safetensors, ≈275 GB de pesos, repo de 288,4 GB | MIT | publico en Hugging Face, 11 descargas y 4 likes en el momento de la consulta |
+| deepseek-ai/DeepSeek-V4.1-Flash-1017 (base) | 144,1 B (mismo checkpoint de origen) | no disponible en la informacion proporcionada | checkpoint nativo, incluye tablas Engram en shards 47 y 48; tamano no disponible | MIT | publico en Hugging Face |
 | Otras cuantizaciones del mismo base (GGUF, AWQ, GPTQ) | no disponible | no disponible | no disponible | no disponible | no se han identificado en la informacion proporcionada |
 | Modelos de otra familia con tamano y tarea comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -102,7 +102,7 @@ No se dispone de datos de calidad (benchmarks o KL) que permitan una comparacion
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bertholomus/DeepSeek-V4.1-Flash-1017-EXL3-4.0bpw
+- Repositorio Hugging Face: https://huggingface.co/bertholomus/DeepSeek-V4.1-Flash-1017-EXL3-4.0bpw
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Licencia del modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/blob/main/LICENSE
 - Receta de despliegue, gates y preparacion de la descarga (v0.2.0): https://github.com/bertholomus/deepseek-v4.1-tensorfold-tp4-4xgb10

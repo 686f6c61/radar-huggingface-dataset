@@ -77,10 +77,10 @@ Verificación de pesos: la pérdida HF recalculada sobre `sft_val` segmentos [3,
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| 1pp-0.58b-v2-ua-rawanneal-sft | 580M | 4.096 | Apache 2.0 | HuggingFace | Artefacto de investigación, solo inglés |
-| SmolLM2-360M | 360M | 8.192 (según model card pública) | Apache 2.0 | HuggingFace | Base generalista de HuggingFaceTB, tokenizer compartido |
-| Qwen2.5-0.5B | 494M | 32.768 (según model card pública) | Apache 2.0 | HuggingFace | Multilingüe, orientado a uso general |
-| 1pp-0.98b-v2-ua-rawanneal-sft | 980M | 4.096 | Apache 2.0 | HuggingFace | Peldaño superior de la misma escalera |
+| 1pp-0.58b-v2-ua-rawanneal-sft | 580M | 4.096 | Apache 2.0 | Hugging Face | Artefacto de investigación, solo inglés |
+| SmolLM2-360M | 360M | 8.192 (según model card pública) | Apache 2.0 | Hugging Face | Base generalista de HuggingFaceTB, tokenizer compartido |
+| Qwen2.5-0.5B | 494M | 32.768 (según model card pública) | Apache 2.0 | Hugging Face | Multilingüe, orientado a uso general |
+| 1pp-0.98b-v2-ua-rawanneal-sft | 980M | 4.096 | Apache 2.0 | Hugging Face | Peldaño superior de la misma escalera |
 
 La comparación de rendimiento con benchmarks no está disponible; los datos de contexto y licencia de los modelos alternativos provienen de sus model cards públicas y deben verificarse en la fuente.
 
@@ -99,7 +99,7 @@ La comparación de rendimiento con benchmarks no está disponible; los datos de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-0.58b-v2-ua-rawanneal-sft
+- Modelo en Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-0.58b-v2-ua-rawanneal-sft
 - Variante raw base: https://huggingface.co/Raghav-Singhal/1pp-0.58b-v2-raw-base
 - Variante 1PP completa: https://huggingface.co/Raghav-Singhal/1pp-0.58b-v2-ua-sft
 - Colección 1pp: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649

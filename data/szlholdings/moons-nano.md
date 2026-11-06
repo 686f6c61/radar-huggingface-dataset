@@ -70,8 +70,8 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SZLHOLDINGS/Moons-Nano
-- Organización SZLHOLDINGS en HuggingFace: https://huggingface.co/SZLHOLDINGS/models
+- Hugging Face: https://huggingface.co/SZLHOLDINGS/Moons-Nano
+- Organización SZLHOLDINGS en Hugging Face: https://huggingface.co/SZLHOLDINGS/models
 - GitHub de SZL Holdings: https://github.com/szl-holdings
 - Repositorio szl-atelier (recorrido por los 40 modelos de SZLHOLDINGS): https://github.com/szl-holdings/szl-atelier
 - Documentación de SZL Holdings: https://szl-holdings.github.io/docs-site/

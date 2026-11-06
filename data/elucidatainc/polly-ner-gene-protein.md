@@ -4,7 +4,7 @@
 
 El modelo `ElucidataInc/polly-ner-gene-protein` es un sistema de reconocimiento de entidades nombradas (NER) especializado en la detección de menciones de genes y proteínas en texto biomédico. Desarrollado por Elucidata, una empresa dedicada a la gestión de datos biológicos para el descubrimiento de fármacos, este modelo se basa en `microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract-fulltext`, un transformer BERT preentrenado con literatura biomédica de resúmenes y artículos completos. El modelo se ha ajustado para la tarea de token-classification, prediciendo etiquetas BIO para la entidad `GENE_PROTEIN` y devolviendo spans de caracteres a través de la librería Polly NER.
 
-Con aproximadamente 108,9 millones de parámetros, el modelo está diseñado para integrarse en pipelines de procesamiento de lenguaje natural biomédico, ya sea mediante la API nativa de Transformers o a través del predictor de Polly NER. Su relevancia actual radica en la necesidad de extraer información estructurada de la literatura científica y los registros clínicos para acelerar la investigación farmacéutica y el descubrimiento de biomarcadores. El modelo se distribuye bajo licencia MIT y está disponible en HuggingFace con pesos en formato safetensors.
+Con aproximadamente 108,9 millones de parámetros, el modelo está diseñado para integrarse en pipelines de procesamiento de lenguaje natural biomédico, ya sea mediante la API nativa de Transformers o a través del predictor de Polly NER. Su relevancia actual radica en la necesidad de extraer información estructurada de la literatura científica y los registros clínicos para acelerar la investigación farmacéutica y el descubrimiento de biomarcadores. El modelo se distribuye bajo licencia MIT y está disponible en Hugging Face con pesos en formato safetensors.
 
 ## Especificaciones tecnicas
 
@@ -75,7 +75,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ElucidataInc/polly-ner-gene-protein
+- Hugging Face: https://huggingface.co/ElucidataInc/polly-ner-gene-protein
 - Repositorio Polly NER: https://github.com/ElucidataInc/polly-ner.git
 - Run de Weights & Biases: https://wandb.ai/mol-ml/polly-ner/runs/3jwbqco6
 - Sitio web de Elucidata: https://www.elucidata.io/

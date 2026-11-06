@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `cuteElf/Qwen3-1.7B-base-MED` es un ajuste fino (fine-tune) del modelo base Qwen3-1.7B, desarrollado por el usuario de HuggingFace `cuteElf`. Según los metadatos del repositorio, el modelo fue entrenado mediante aprendizaje supervisado (SFT) utilizando la librería TRL de HuggingFace, y está orientado a tareas de generación de texto conversacional. El nombre sugiere una especialización en el dominio médico ("MED"), aunque no se proporciona documentación que confirme el conjunto de datos de entrenamiento ni los objetivos específicos.
+El modelo `cuteElf/Qwen3-1.7B-base-MED` es un ajuste fino (fine-tune) del modelo base Qwen3-1.7B, desarrollado por el usuario de Hugging Face `cuteElf`. Según los metadatos del repositorio, el modelo fue entrenado mediante aprendizaje supervisado (SFT) utilizando la librería TRL de Hugging Face, y está orientado a tareas de generación de texto conversacional. El nombre sugiere una especialización en el dominio médico ("MED"), aunque no se proporciona documentación que confirme el conjunto de datos de entrenamiento ni los objetivos específicos.
 
 Con 1.720.574.976 parámetros (aproximadamente 1,72 mil millones), se trata de un modelo de tamaño compacto, adecuado para despliegue en entornos con recursos limitados. La arquitectura subyacente corresponde presumiblemente a la de Qwen3-1.7B-Base, un transformer denso de Alibaba Cloud, aunque esta información no está confirmada en la ficha del modelo. La relevancia de este modelo radica en su potencial uso como asistente médico especializado, pero la ausencia de documentación técnica y de resultados de evaluación limita su aplicabilidad en producción sin una validación adicional.
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 - VRAM estimada para inferencia: un modelo de 1,72B parámetros en precisión FP16 ocupa aproximadamente 3,4 GB de memoria. Con cuantización INT8 se reduce a ~1,7 GB, y con INT4 a ~0,9 GB (valores orientativos, asumiendo cuantizaciones estándar).
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM puede ejecutar el modelo en FP16 (por ejemplo, NVIDIA GTX 1650, RTX 3050). Para mayor velocidad, se recomienda una RTX 3060 o superior.
 - Compatibilidad con GPU de consumo: sí, cabe en la mayoría de GPUs de consumo actuales, incluso en versiones cuantizadas.
-- Opciones de despliegue: al ser un modelo de la familia transformers, puede servirse con vLLM, Text Generation Inference (TGI), llama.cpp (si se convierte a GGUF) u Ollama. También es compatible con la API de HuggingFace.
+- Opciones de despliegue: al ser un modelo de la familia transformers, puede servirse con vLLM, Text Generation Inference (TGI), llama.cpp (si se convierte a GGUF) u Ollama. También es compatible con la API de Hugging Face.
 - Latencia y throughput: no se dispone de datos medidos. En una GPU moderna (por ejemplo, RTX 4090), un modelo de 1,7B suele generar entre 50 y 100 tokens por segundo en FP16, pero esto depende de la implementación y el hardware.
 
 ## Comparativa con modelos similares
@@ -76,7 +76,7 @@ La comparativa se limita al modelo base y su variante instruct, ya que no hay ot
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cuteElf/Qwen3-1.7B-base-MED
+- Modelo en Hugging Face: https://huggingface.co/cuteElf/Qwen3-1.7B-base-MED
 - Modelo base Qwen3-1.7B-Base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Repositorio oficial de Qwen3: https://github.com/QwenLM/Qwen3
-- Colección Qwen3 en HuggingFace: https://huggingface.co/collections/Qwen/qwen3
+- Colección Qwen3 en Hugging Face: https://huggingface.co/collections/Qwen/qwen3

@@ -72,8 +72,8 @@ No se han publicado en la informacion disponible mas resultados de benchmarks (M
 
 | Modelo | Parametros | Contexto | Matematicas | Codigo | IF | Total | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|---|
-| DN-MOPD-Qwen3.5-2B-teacher-if | 2,2B | no disponible (ejemplo vLLM: 32.768) | 15,6 | 12,5 | 52,8 | 27,0 | Apache-2.0 | HuggingFace (6 descargas, 0 likes a fecha de la ficha) |
-| Qwen3.5-2B (estudiante inicial y modelo base) | 2,2B (mismo `base_model`) | no disponible | 17,6 | 11,3 | 43,3 | 24,0 | Apache-2.0 | HuggingFace, mantenido por el equipo Qwen |
+| DN-MOPD-Qwen3.5-2B-teacher-if | 2,2B | no disponible (ejemplo vLLM: 32.768) | 15,6 | 12,5 | 52,8 | 27,0 | Apache-2.0 | Hugging Face (6 descargas, 0 likes a fecha de la ficha) |
+| Qwen3.5-2B (estudiante inicial y modelo base) | 2,2B (mismo `base_model`) | no disponible | 17,6 | 11,3 | 43,3 | 24,0 | Apache-2.0 | Hugging Face, mantenido por el equipo Qwen |
 | Expertos de matematicas y codigo del mismo paper | 2,2B (mismo tamano segun la model card) | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible | No incluidos en la informacion proporcionada |
 
 Frente a modelos de 2B de otras familias (Llama, Gemma, Phi) no se dispone de datos comparables en la informacion proporcionada, por lo que no se incluye comparacion.
@@ -93,7 +93,7 @@ Frente a modelos de 2B de otras familias (Llama, Gemma, Phi) no se dispone de da
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/XINLI1997/DN-MOPD-Qwen3.5-2B-teacher-if
+- Modelo en Hugging Face: https://huggingface.co/XINLI1997/DN-MOPD-Qwen3.5-2B-teacher-if
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Paper (arXiv): https://arxiv.org/abs/2609.35347
 - Pagina del proyecto: https://lixin.ai/DN-MOPD

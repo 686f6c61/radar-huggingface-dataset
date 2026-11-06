@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `RKB109/hybrid-semantic-search-20261105-model` es un prototipo pequeno y transparente publicado por el usuario RKB109 en HuggingFace, orientado a busqueda semantica hibrida en entornos empresariales donde el acceso a APIs de embeddings esta restringido, resulta caro o no esta disponible. Combina pesos de tokens por etiqueta con recuperacion de evidencia ponderada por IDF (frecuencia inversa de documento), lo que lo convierte en una linea base lexica reproducible en lugar de un modelo neuronal de gran escala.
+El modelo `RKB109/hybrid-semantic-search-20261105-model` es un prototipo pequeno y transparente publicado por el usuario RKB109 en Hugging Face, orientado a busqueda semantica hibrida en entornos empresariales donde el acceso a APIs de embeddings esta restringido, resulta caro o no esta disponible. Combina pesos de tokens por etiqueta con recuperacion de evidencia ponderada por IDF (frecuencia inversa de documento), lo que lo convierte en una linea base lexica reproducible en lugar de un modelo neuronal de gran escala.
 
-El modelo se presenta como una demostracion de arquitectura reproducible y no invoca ningun LLM alojado. Esta disenado para prototipado de arquitecturas, ejemplos de CI y evaluacion, comparaciones de lineas base locales y experimentacion educativa. Cubre las tareas de HuggingFace `sentence-similarity`, `feature-extraction`, `text-ranking` y `question-answering`.
+El modelo se presenta como una demostracion de arquitectura reproducible y no invoca ningun LLM alojado. Esta disenado para prototipado de arquitecturas, ejemplos de CI y evaluacion, comparaciones de lineas base locales y experimentacion educativa. Cubre las tareas de Hugging Face `sentence-similarity`, `feature-extraction`, `text-ranking` y `question-answering`.
 
 No se dispone de informacion sobre arquitectura neuronal subyacente, numero de parametros, longitud de contexto ni idiomas soportados. La model card indica explicitamente que se trata de una linea base lexica ligera que deberia reemplazarse o compararse con embeddings de dominio a escala. La evaluacion reportada se realizo sobre solo 4 ejemplos sinteticos retenidos, con una precision de 1, lo que debe interpretarse con extrema cautela.
 
@@ -19,7 +19,7 @@ No se dispone de informacion sobre arquitectura neuronal subyacente, numero de p
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | no disponible (la model card menciona un "model JSON format" en el repositorio de GitHub, pero no se detalla en HuggingFace) |
+| Formato de pesos | no disponible (la model card menciona un "model JSON format" en el repositorio de GitHub, pero no se detalla en Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -85,6 +85,6 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RKB109/hybrid-semantic-search-20261105-model
+- Hugging Face: https://huggingface.co/RKB109/hybrid-semantic-search-20261105-model
 - Dataset vinculado: https://huggingface.co/datasets/RKB109/hybrid-semantic-search-20261105-dataset
 - Repositorio GitHub con `train.py`, particion del dataset, codigo de evaluacion y formato JSON del modelo: mencionado en la model card, URL no disponible en la informacion proporcionada.

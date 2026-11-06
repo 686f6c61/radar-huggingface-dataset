@@ -61,10 +61,10 @@ No se dispone de comparativas directas con otros modelos de la misma categoría,
 - Sin validación: no hay benchmarks, pruebas de sesgo ni evaluación de alucinación.
 - Información incompleta: se desconocen detalles del dataset, contexto, idiomas y capacidades.
 - Licencia Apache-2.0 permite uso comercial, pero la falta de validación hace desaconsejable su empleo en entornos reales.
-- Riesgo de confusión: al estar publicado en HuggingFace con nombre similar a otros checkpoints, podría inducir a error si no se lee la advertencia.
+- Riesgo de confusión: al estar publicado en Hugging Face con nombre similar a otros checkpoints, podría inducir a error si no se lee la advertencia.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/agentic-ptb/opus-high-v3.h034.sft-mix1.step_8)
+- [Modelo en Hugging Face](https://huggingface.co/agentic-ptb/opus-high-v3.h034.sft-mix1.step_8)
 - [Dataset asociado al run (agentic-ptb/opus-high-v3-data)](https://huggingface.co/datasets/agentic-ptb/opus-high-v3-data)
 - [Índice de experimentos AgentPTB](https://huggingface.co/datasets/agentic-ptb/INDEX)

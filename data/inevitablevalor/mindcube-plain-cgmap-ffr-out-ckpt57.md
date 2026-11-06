@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos. El modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Inevitablevalor/MindCube-plain-cgmap-ffr-out-ckpt57
+- Hugging Face: https://huggingface.co/Inevitablevalor/MindCube-plain-cgmap-ffr-out-ckpt57
 - Paper: https://arxiv.org/abs/2506.21458
 - Página del proyecto: https://mind-cube.github.io/
 - Repositorio GitHub: https://github.com/mll-lab-nu/MindCube

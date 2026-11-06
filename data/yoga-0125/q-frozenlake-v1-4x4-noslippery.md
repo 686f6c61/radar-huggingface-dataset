@@ -2,11 +2,11 @@
 
 ## Resumen
 
-q-FrozenLake-v1-4x4-noSlippery es un agente de aprendizaje por refuerzo entrenado con Q-Learning tabular sobre el entorno FrozenLake-v1 de Gymnasium, en su variante de rejilla 4x4 con superficie no resbaladiza (`is_slippery=False`). Lo publica el usuario de HuggingFace yoga-0125 y no constituye un modelo de lenguaje: no hay red neuronal, ni transformer, ni pesos de gran tamano. El "modelo" es una tabla Q serializada que asigna un valor de accion a cada uno de los estados del entorno.
+q-FrozenLake-v1-4x4-noSlippery es un agente de aprendizaje por refuerzo entrenado con Q-Learning tabular sobre el entorno FrozenLake-v1 de Gymnasium, en su variante de rejilla 4x4 con superficie no resbaladiza (`is_slippery=False`). Lo publica el usuario de Hugging Face yoga-0125 y no constituye un modelo de lenguaje: no hay red neuronal, ni transformer, ni pesos de gran tamano. El "modelo" es una tabla Q serializada que asigna un valor de accion a cada uno de los estados del entorno.
 
-Su relevancia es exclusivamente didactica y de referencia: sirve como ejemplo canonico del flujo de trabajo de Q-Learning (politica epsilon-greedy, actualizacion de Bellman, politica greedy final) dentro del curso de Deep Reinforcement Learning de HuggingFace, cuyo helper `load_from_hub` aparece en la propia model card. En un entorno deterministico y de espacio de estados discreto y minimo, el agente alcanza la politica optima y resuelve la tarea por completo.
+Su relevancia es exclusivamente didactica y de referencia: sirve como ejemplo canonico del flujo de trabajo de Q-Learning (politica epsilon-greedy, actualizacion de Bellman, politica greedy final) dentro del curso de Deep Reinforcement Learning de Hugging Face, cuyo helper `load_from_hub` aparece en la propia model card. En un entorno deterministico y de espacio de estados discreto y minimo, el agente alcanza la politica optima y resuelve la tarea por completo.
 
-La ficha de HuggingFace registra 0 descargas, 0 "likes" y un tamano de repositorio de 0.0 GB, lo que confirma que se trata de un artefacto de juguete o de ejercicio, sin traccion en produccion. Cualquier evaluacion de este modelo debe hacerse en terminos de la tarea FrozenLake, no de generacion de texto: no tiene parametros de lenguaje, ni ventana de contexto, ni capacidades multilingues.
+La ficha de Hugging Face registra 0 descargas, 0 "likes" y un tamano de repositorio de 0.0 GB, lo que confirma que se trata de un artefacto de juguete o de ejercicio, sin traccion en produccion. Cualquier evaluacion de este modelo debe hacerse en terminos de la tarea FrozenLake, no de generacion de texto: no tiene parametros de lenguaje, ni ventana de contexto, ni capacidades multilingues.
 
 ## Especificaciones tecnicas
 
@@ -18,11 +18,11 @@ La ficha de HuggingFace registra 0 descargas, 0 "likes" y un tamano de repositor
 | Longitud de contexto | No aplica (no es un modelo de lenguaje). El agente recibe un unico estado discreto por paso |
 | Tipos de cuantizacion | No aplica. La tabla Q se serializa con valores numericos de coma flotante; no hay cuantizacion documentada |
 | Idiomas soportados | No aplica / no disponible (el entorno no implica lenguaje natural) |
-| Licencia | No disponible (no declarada en la ficha de HuggingFace ni en la model card) |
+| Licencia | No disponible (no declarada en la ficha de Hugging Face ni en la model card) |
 | Formato de pesos | Pickle de Python: fichero `q-learning.pkl`, cargado mediante `load_from_hub` |
 | Tarea declarada | `reinforcement-learning` |
 | Entorno | FrozenLake-v1 4x4, `no_slippery` (deterministico) |
-| Framework de carga | Gymnasium (`gym.make`) mas el helper `load_from_hub` del curso de Deep RL de HuggingFace |
+| Framework de carga | Gymnasium (`gym.make`) mas el helper `load_from_hub` del curso de Deep RL de Hugging Face |
 | Tamano del repositorio | 0.0 GB |
 | Fecha de publicacion | 2026-09-24 |
 
@@ -30,7 +30,7 @@ La ficha de HuggingFace registra 0 descargas, 0 "likes" y un tamano de repositor
 
 El agente implementa Q-Learning tabular clasico. No existe red neuronal: la funcion de valor-accion Q(s, a) se representa como una tabla explicita sobre el espacio de estados discreto de FrozenLake-v1 4x4. El algoritmo es off-policy y actualiza la estimacion con la ecuacion de Bellman usando el maximo valor de la accion siguiente (regla de aprendizaje del control Q-Learning), mientras la interaccion con el entorno se realiza con una politica de exploracion epsilon-greedy.
 
-La model card no documenta hiperparametros: no hay datos sobre numero de episodios, tasa de aprendizaje, factor de descuento, esquema de decaimiento de epsilon ni semilla aleatoria. Tampoco se especifica el numero de iteraciones de entrenamiento ni el procedimiento de evaluacion mas alla de la metrica declarada. La innovacion tecnica es nula por diseno: se trata de la implementacion "custom" referenciada en las etiquetas (`custom-implementation`), pensada para el ejercicio educativo del curso de Deep RL de HuggingFace, no para superar ninguna linea base de investigacion. El unico artefacto resultante es el fichero pickle con la tabla aprendida.
+La model card no documenta hiperparametros: no hay datos sobre numero de episodios, tasa de aprendizaje, factor de descuento, esquema de decaimiento de epsilon ni semilla aleatoria. Tampoco se especifica el numero de iteraciones de entrenamiento ni el procedimiento de evaluacion mas alla de la metrica declarada. La innovacion tecnica es nula por diseno: se trata de la implementacion "custom" referenciada en las etiquetas (`custom-implementation`), pensada para el ejercicio educativo del curso de Deep RL de Hugging Face, no para superar ninguna linea base de investigacion. El unico artefacto resultante es el fichero pickle con la tabla aprendida.
 
 ## Capacidades
 
@@ -78,7 +78,7 @@ La informacion disponible no incluye resultados numericos de modelos alternativo
 
 | Alternativa | Tipo de metodo | Parametros | Contexto | Rendimiento en FrozenLake 4x4 no resbaladizo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| q-FrozenLake-v1-4x4-noSlippery (este modelo) | Q-Learning tabular, off-policy | No aplica; tabla de 64 valores (16 estados x 4 acciones) | No aplica | mean_reward 1.00 +/- 0.00 (no verificado) | No disponible | HuggingFace, 0 descargas, 0 likes |
+| q-FrozenLake-v1-4x4-noSlippery (este modelo) | Q-Learning tabular, off-policy | No aplica; tabla de 64 valores (16 estados x 4 acciones) | No aplica | mean_reward 1.00 +/- 0.00 (no verificado) | No disponible | Hugging Face, 0 descargas, 0 likes |
 | SARSA tabular | Diferencias temporales on-policy | No disponible | No aplica | No disponible en la informacion proporcionada | No disponible | Implementable desde cero; no se ha identificado un artefacto publicado equivalente |
 | DQN (aproximacion con red neuronal) | Q-Learning con funcion de valor aproximada | No disponible | No aplica | No disponible en la informacion proporcionada | No disponible | Implementable desde cero; sobredimensionado para un espacio de 16 estados |
 | Q-Learning tabular sobre la variante resbaladiza (4x4 slippery) | Q-Learning tabular | No aplica; misma tabla 16 x 4 | No aplica | No disponible; el entorno introduce estocasticidad y el retorno maximo esperado es inferior a 1.00 | No disponible | Este agente en particular no es valido para esa variante |
@@ -99,6 +99,6 @@ La informacion disponible no incluye resultados numericos de modelos alternativo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yoga-0125/q-FrozenLake-v1-4x4-noSlippery
+- Modelo en Hugging Face: https://huggingface.co/yoga-0125/q-FrozenLake-v1-4x4-noSlippery
 - No se han encontrado en la busqueda web enlaces relevantes al modelo: los resultados devueltos corresponden a paginas sobre la practica del yoga (Wikipedia, estudios de yoga y pilates en Francia) y no guardan ninguna relacion con este agente de aprendizaje por refuerzo.
 - No se dispone de enlaces a papers, blogs tecnicos, repositorios de codigo ni demos asociados a este modelo en la informacion proporcionada.

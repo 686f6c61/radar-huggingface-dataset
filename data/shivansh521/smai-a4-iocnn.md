@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`smai-a4-iocnn` es un modelo neuronal de pequeno tamano publicado en HuggingFace por el usuario Shivansh521 como parte de una asignacion academica (SMAI Assignment 4). Se trata de un perceptron multicapa (MLP) de tres capas (3072-32-10) entrenado sobre el conjunto de datos CIFAR-10 para clasificacion de imagenes en 10 categorias. El modelo implementa una variante denominada IOC-NN (Input-Output Constrained Neural Network), en la que las capas posteriores a la primera tienen restricciones de no negatividad en sus pesos.
+`smai-a4-iocnn` es un modelo neuronal de pequeno tamano publicado en Hugging Face por el usuario Shivansh521 como parte de una asignacion academica (SMAI Assignment 4). Se trata de un perceptron multicapa (MLP) de tres capas (3072-32-10) entrenado sobre el conjunto de datos CIFAR-10 para clasificacion de imagenes en 10 categorias. El modelo implementa una variante denominada IOC-NN (Input-Output Constrained Neural Network), en la que las capas posteriores a la primera tienen restricciones de no negatividad en sus pesos.
 
-El modelo no es un modelo de lenguaje ni un modelo generativo: es un clasificador de imagenes de proposito didactico, sin pipeline declarado en HuggingFace, sin licencia especificada y sin idiomas soportados. Su relevancia es exclusivamente academica y de investigacion sobre restricciones estructurales en redes neuronales, no para uso en produccion.
+El modelo no es un modelo de lenguaje ni un modelo generativo: es un clasificador de imagenes de proposito didactico, sin pipeline declarado en Hugging Face, sin licencia especificada y sin idiomas soportados. Su relevancia es exclusivamente academica y de investigacion sobre restricciones estructurales en redes neuronales, no para uso en produccion.
 
 El repositorio tiene un tamano de 0.0 GB y no cuenta con descargas ni likes en el momento de la consulta. La model card documenta unicamente la arquitectura, el preprocesamiento y la precision de test (0.4154), sin informacion sobre el proceso de entrenamiento mas alla de lo indicado en `config.json`.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto | Precision CIFAR-10 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| smai-a4-iocnn | 98.474 | No aplica | 0.4154 | No disponible | HuggingFace |
+| smai-a4-iocnn | 98.474 | No aplica | 0.4154 | No disponible | Hugging Face |
 | MLP 3072-32-10 sin restriccion IOC | 98.474 | No aplica | No disponible | No disponible | No disponible en la informacion proporcionada |
 | LeNet-5 (referencia historica) | ~60.000 | No aplica | No disponible | No disponible | Implementaciones multiples |
 
@@ -85,5 +85,5 @@ No se dispone de datos de benchmarks de modelos comparables en la informacion pr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Shivansh521/smai-a4-iocnn
+- Hugging Face: https://huggingface.co/Shivansh521/smai-a4-iocnn
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion proporcionada.

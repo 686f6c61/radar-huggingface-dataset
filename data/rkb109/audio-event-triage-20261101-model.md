@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `RKB109/audio-event-triage-20261101-model` es un prototipo pequeno y transparente publicado por el usuario RKB109 en HuggingFace, orientado a la clasificacion de eventos de audio en entornos operativos (alarmas, ruido de maquinaria y eventos similares al habla). No es una red neuronal profunda en el sentido convencional: la model card lo describe como una combinacion de pesos por etiqueta (per-label token weights) con recuperacion de evidencia ponderada por IDF, generada para demostraciones reproducibles de arquitectura y sin llamadas a un LLM alojado.
+El modelo `RKB109/audio-event-triage-20261101-model` es un prototipo pequeno y transparente publicado por el usuario RKB109 en Hugging Face, orientado a la clasificacion de eventos de audio en entornos operativos (alarmas, ruido de maquinaria y eventos similares al habla). No es una red neuronal profunda en el sentido convencional: la model card lo describe como una combinacion de pesos por etiqueta (per-label token weights) con recuperacion de evidencia ponderada por IDF, generada para demostraciones reproducibles de arquitectura y sin llamadas a un LLM alojado.
 
 Su relevancia es limitada y experimental. Se presenta explicitamente como un baseline transparente para equipos de operaciones que necesitan un punto de partida explicable, con fines de prototipado de arquitectura, ejemplos de CI y evaluacion, y experimentacion educativa. No esta pensado para decisiones con consecuencias reales.
 
@@ -23,7 +23,7 @@ La informacion publica es muy escasa: cero descargas, cero likes, sin datos de b
 
 ## Arquitectura y entrenamiento
 
-La model card indica que el modelo combina pesos por etiqueta (per-label token weights) con recuperacion de evidencia ponderada por IDF. No se especifica si se trata de un transformer, un modelo lineal, un clasificador basado en recuperacion o un hibrido; la etiqueta `library_name: custom` sugiere una implementacion propia no basada en las librerias estandar de HuggingFace (transformers, timm, etc.). Tampoco se detalla el numero de parametros, la dimension de las representaciones ni el tipo de caracteristicas de audio utilizadas.
+La model card indica que el modelo combina pesos por etiqueta (per-label token weights) con recuperacion de evidencia ponderada por IDF. No se especifica si se trata de un transformer, un modelo lineal, un clasificador basado en recuperacion o un hibrido; la etiqueta `library_name: custom` sugiere una implementacion propia no basada en las librerias estandar de Hugging Face (transformers, timm, etc.). Tampoco se detalla el numero de parametros, la dimension de las representaciones ni el tipo de caracteristicas de audio utilizadas.
 
 El entrenamiento se realizo sobre un dataset sintetico propio (`RKB109/audio-event-triage-20261101-dataset`). No se indica el numero de tokens ni de ejemplos de entrenamiento, la composicion del dataset, ni si hubo RLHF, DPO o cualquier otro proceso de ajuste. La evaluacion reportada se hizo sobre 4 ejemplos sinteticos retenidos, lo que hace que la metrica de accuracy = 1 carezca de valor estadistico. El autor menciona que el repositorio de GitHub incluye `train.py`, el split exacto del dataset, codigo de evaluacion y el formato JSON del modelo, lo que permite reproducir el pipeline.
 
@@ -80,8 +80,8 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RKB109/audio-event-triage-20261101-model
-- Dataset en HuggingFace: https://huggingface.co/datasets/RKB109/audio-event-triage-20261101-dataset
+- Modelo en Hugging Face: https://huggingface.co/RKB109/audio-event-triage-20261101-model
+- Dataset en Hugging Face: https://huggingface.co/datasets/RKB109/audio-event-triage-20261101-dataset
 - Repositorio de GitHub: no disponible como enlace directo en la informacion proporcionada (la model card lo menciona sin URL)
 - Paper: no disponible
 - Blog o demo: no disponible

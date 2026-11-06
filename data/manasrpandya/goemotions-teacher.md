@@ -72,9 +72,9 @@ No se han publicado resultados comparativos con otros modelos en la información
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| goemotions-teacher | 355 M | no disponible | Clasificación multietiqueta de emociones | MIT | HuggingFace |
-| goemotions-distil-onnx | no disponible | no disponible | Clasificación multietiqueta de emociones (destilado del anterior) | no disponible | HuggingFace |
-| RoBERTa-large base | 355 M | 512 tokens | Modelo base sin ajuste emocional | MIT | HuggingFace |
+| goemotions-teacher | 355 M | no disponible | Clasificación multietiqueta de emociones | MIT | Hugging Face |
+| goemotions-distil-onnx | no disponible | no disponible | Clasificación multietiqueta de emociones (destilado del anterior) | no disponible | Hugging Face |
+| RoBERTa-large base | 355 M | 512 tokens | Modelo base sin ajuste emocional | MIT | Hugging Face |
 
 La comparación con otros clasificadores de emociones de la misma categoría no está disponible en la información proporcionada.
 
@@ -91,7 +91,7 @@ La comparación con otros clasificadores de emociones de la misma categoría no 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/manasrpandya/goemotions-teacher
+- Modelo en Hugging Face: https://huggingface.co/manasrpandya/goemotions-teacher
 - Modelo destilado: https://huggingface.co/manasrpandya/goemotions-distil-onnx
 - Código y memoria del proyecto: https://github.com/manasrpandya/NLP_CV_Lab/tree/main/projects/06-emotion-classification
 - Dataset GoEmotions: https://huggingface.co/datasets/google-research-datasets/go_emotions

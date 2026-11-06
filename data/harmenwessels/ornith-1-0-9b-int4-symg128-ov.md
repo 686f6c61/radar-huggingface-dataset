@@ -89,9 +89,9 @@ El modelo cuantizado ofrece una huella menor y una integración con OpenVINO, pe
 
 ## Enlaces
 
-- [Modelo cuantizado en HuggingFace](https://huggingface.co/HarmenWessels/Ornith-1.0-9B-int4-symg128-ov)
-- [Modelo base en HuggingFace](https://huggingface.co/ornith-ai/Ornith-1.0-9B)
+- [Modelo cuantizado en Hugging Face](https://huggingface.co/HarmenWessels/Ornith-1.0-9B-int4-symg128-ov)
+- [Modelo base en Hugging Face](https://huggingface.co/ornith-ai/Ornith-1.0-9B)
 - [Repositorio GitHub de Ornith-1](https://github.com/ornith-ai/Ornith-1)
-- [Espacio de demostración en HuggingFace](https://huggingface.co/spaces/deepreinforce-ai/Ornith-1.0-9B)
+- [Espacio de demostración en Hugging Face](https://huggingface.co/spaces/deepreinforce-ai/Ornith-1.0-9B)
 - [Web oficial de Ornith AI](https://ornith.online/)
 - [Landing page del modelo 9B](https://ornith.online/ornith-1-0-model-9b)

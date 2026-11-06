@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DmitryDB/Kandinsky-6-Pro-Distill-5s-ComfyUI-Quants | Difusion de video cuantizada int8 para ComfyUI | no disponible | no aplica | MIT (segun etiqueta) | HuggingFace, libreria ComfyUI |
-| kandinskylab/Kandinsky-6.0-Pro-distill-5s-Diffusers | Difusion de video (modelo base, sin cuantizar) | no disponible | no aplica | no disponible en la informacion proporcionada | HuggingFace, formato Diffusers |
+| DmitryDB/Kandinsky-6-Pro-Distill-5s-ComfyUI-Quants | Difusion de video cuantizada int8 para ComfyUI | no disponible | no aplica | MIT (segun etiqueta) | Hugging Face, libreria ComfyUI |
+| kandinskylab/Kandinsky-6.0-Pro-distill-5s-Diffusers | Difusion de video (modelo base, sin cuantizar) | no disponible | no aplica | no disponible en la informacion proporcionada | Hugging Face, formato Diffusers |
 | Otras alternativas de generacion image-to-video | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion suficiente para establecer una comparativa cuantitativa con modelos alternativos de la misma categoria. El unico contraste fiable es el que existe entre este repositorio y su modelo base: mismo modelo subyacente, distinta precision (int8 frente a la precision original) y distinto formato de despliegue (ComfyUI frente a Diffusers).
@@ -85,6 +85,6 @@ No se dispone de informacion suficiente para establecer una comparativa cuantita
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DmitryDB/Kandinsky-6-Pro-Distill-5s-ComfyUI-Quants
+- Repositorio en Hugging Face: https://huggingface.co/DmitryDB/Kandinsky-6-Pro-Distill-5s-ComfyUI-Quants
 - Modelo base (referenciado en la etiqueta `base_model`): https://huggingface.co/kandinskylab/Kandinsky-6.0-Pro-distill-5s-Diffusers
 - Paper, blog, repositorio de codigo o demo oficial: no disponible en la informacion proporcionada. La busqueda web realizada no devolvio resultados relevantes sobre el modelo.

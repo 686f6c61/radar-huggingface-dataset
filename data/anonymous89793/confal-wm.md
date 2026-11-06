@@ -74,6 +74,6 @@ No disponible. No se han encontrado modelos comparables en la información propo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/anonymous89793/ConfAL-WM
+- Repositorio Hugging Face: https://huggingface.co/anonymous89793/ConfAL-WM
 - Repositorio de dataset asociado: `anonymous89793/ConfAL-WM-Dataset` (no se proporciona URL directa en la información disponible)
 - No se han encontrado papers, blogs o demos públicos en la búsqueda web.

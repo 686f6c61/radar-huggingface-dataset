@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`abdurrehman456/gemma-4-2b-agentic-cot` es un repositorio publicado en HuggingFace por el usuario abdurrehman456 cuyo contenido documental es, en la practica, una plantilla de model card de transformers sin rellenar: todas las secciones relevantes (descripcion, datos de entrenamiento, licencia, evaluacion) contienen el marcador `[More Information Needed]`. No existe informacion verificable sobre el modelo mas alla de su identificador, sus etiquetas y el contenido binario del repositorio.
+`abdurrehman456/gemma-4-2b-agentic-cot` es un repositorio publicado en Hugging Face por el usuario abdurrehman456 cuyo contenido documental es, en la practica, una plantilla de model card de transformers sin rellenar: todas las secciones relevantes (descripcion, datos de entrenamiento, licencia, evaluacion) contienen el marcador `[More Information Needed]`. No existe informacion verificable sobre el modelo mas alla de su identificador, sus etiquetas y el contenido binario del repositorio.
 
 El identificador sugiere un ajuste fino orientado a razonamiento agentico con cadena de pensamiento (el sufijo `agentic-cot`) sobre un modelo de la familia Gemma con aproximadamente 2.000 millones de parametros. Esta interpretacion es una inferencia a partir del nombre y no esta confirmada por ninguna fuente del repositorio, por lo que debe tratarse como hipotesis de trabajo y no como dato tecnico.
 
@@ -27,13 +27,13 @@ Datos adicionales del repositorio: autor `abdurrehman456`; libreria `transformer
 
 No disponible. La model card no especifica arquitectura, numero de tokens de entrenamiento, composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT. El nombre `agentic-cot` sugiere un entrenamiento orientado a trazas de razonamiento multi-paso y uso de herramientas, pero no hay ninguna evidencia documental en el repositorio que lo respalde.
 
-La unica referencia tecnica citada es la etiqueta `arxiv:1910.09700`, que corresponde a Lacoste et al. (2019) sobre estimacion de impacto ambiental en aprendizaje automatico. Esta referencia aparece en la plantilla estandar de model cards de HuggingFace y no guarda relacion con el modelo: no es un paper de arquitectura ni de entrenamiento. Cualquier afirmacion sobre innovaciones tecnicas (decodificacion especulativa, atencion lineal, etc.) seria especulacion sin base.
+La unica referencia tecnica citada es la etiqueta `arxiv:1910.09700`, que corresponde a Lacoste et al. (2019) sobre estimacion de impacto ambiental en aprendizaje automatico. Esta referencia aparece en la plantilla estandar de model cards de Hugging Face y no guarda relacion con el modelo: no es un paper de arquitectura ni de entrenamiento. Cualquier afirmacion sobre innovaciones tecnicas (decodificacion especulativa, atencion lineal, etc.) seria especulacion sin base.
 
 ## Capacidades
 
 - No hay ninguna capacidad documentada por el autor del modelo.
 - Se desconoce si soporta generacion de texto, razonamiento, codigo, matematicas o vision.
-- Se desconoce si soporta tool calling o function calling, pese a la etiqueta `endpoints_compatible` (que indica compatibilidad con la API de endpoints de HuggingFace, no una capacidad funcional concreta).
+- Se desconoce si soporta tool calling o function calling, pese a la etiqueta `endpoints_compatible` (que indica compatibilidad con la API de endpoints de Hugging Face, no una capacidad funcional concreta).
 - Se desconoce si soporta flujos de agentes o razonamiento multi-paso, pese al sufijo `agentic-cot` del identificador.
 - Se desconoce el soporte multilingue y si existe un modo de razonamiento explicito (thinking mode).
 - El tamano del repositorio (0,1 GB) hace dudoso incluso que el checkpoint pueda cargarse y ejecutarse.
@@ -78,7 +78,7 @@ No disponible. No es posible establecer una comparativa fiable porque se descono
 
 ## Limitaciones y advertencias
 
-- Documentacion inexistente: la model card es la plantilla por defecto de HuggingFace sin ninguna seccion completada. No hay informacion sobre entrenamiento, datos, hiperparametros ni evaluacion.
+- Documentacion inexistente: la model card es la plantilla por defecto de Hugging Face sin ninguna seccion completada. No hay informacion sobre entrenamiento, datos, hiperparametros ni evaluacion.
 - Licencia no declarada: sin licencia explicita no se puede asumir permiso de uso comercial, modificación ni redistribucion. En la practica, el modelo debe tratarse como no licenciado para produccion.
 - Integridad del repositorio dudosa: 0,1 GB es entre 40 y 50 veces menor que el tamano esperado de un checkpoint de 2B parametros en bf16. Es probable que falten archivos de pesos, que solo se hayan subido componentes parciales o que el artefacto no sea cargable.
 - Sin adopcion verificable: 0 descargas y 0 likes, sin issues ni discussion asociada. No hay terceros que hayan validado su funcionamiento.
@@ -92,7 +92,7 @@ No disponible. No es posible establecer una comparativa fiable porque se descono
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/abdurrehman456/gemma-4-2b-agentic-cot
+- Repositorio en Hugging Face: https://huggingface.co/abdurrehman456/gemma-4-2b-agentic-cot
 - Paper referenciado en la etiqueta `arxiv` (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental citada en la plantilla: https://mlco2.github.io/impact
 - No se han encontrado en la busqueda web papers, blogs, demos ni repositorios adicionales asociados a este modelo.

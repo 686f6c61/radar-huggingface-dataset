@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `models4world/maple-bay-30` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario `models4world`. Se presenta como un ajuste fino (fine-tuning) sobre el modelo base `models4world/maple-signal-64`, del cual no se proporciona ninguna documentación pública. El repositorio contiene únicamente los pesos del adaptador en formato safetensors, con un tamaño de 11,2 GB, y está etiquetado para generación de texto conversacional.
+El modelo `models4world/maple-bay-30` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario `models4world`. Se presenta como un ajuste fino (fine-tuning) sobre el modelo base `models4world/maple-signal-64`, del cual no se proporciona ninguna documentación pública. El repositorio contiene únicamente los pesos del adaptador en formato safetensors, con un tamaño de 11,2 GB, y está etiquetado para generación de texto conversacional.
 
 La relevancia de este modelo es actualmente indeterminada: la model card está completamente vacía (todos los campos son "[More Information Needed]"), no se han publicado resultados de benchmarks, ni descripción de arquitectura, ni datos de entrenamiento. A fecha de creación (agosto de 2026) no cuenta con descargas ni valoraciones. Esto impide cualquier evaluación técnica rigurosa o comparativa con otros modelos. Su único dato técnico confirmado es que utiliza la librería PEFT 0.20.0 y que el adaptador está diseñado para ser cargado sobre el modelo base mencionado.
 
@@ -67,6 +67,6 @@ No se dispone de información sobre modelos comparables. Dado que no se conoce n
 
 ## Enlaces
 
-- [HuggingFace: models4world/maple-bay-30](https://huggingface.co/models4world/maple-bay-30)
+- [Hugging Face: models4world/maple-bay-30](https://huggingface.co/models4world/maple-bay-30)
 
 No se han encontrado papers, repositorios adicionales, demos o documentación externa relevante en la búsqueda web.

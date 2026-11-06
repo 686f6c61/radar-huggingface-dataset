@@ -93,7 +93,7 @@ La comparacion directa con otros adaptadores de la familia no es posible sin dat
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ssurface/cot-dialect-qwen3-14b-grpo-rerun-l4
+- Repositorio Hugging Face: https://huggingface.co/ssurface/cot-dialect-qwen3-14b-grpo-rerun-l4
 - Modelo base Qwen3-14B: https://huggingface.co/Qwen/Qwen3-14B
 - Adaptador SFT requerido: https://huggingface.co/ssurface/cot-dialect-qwen3-14b-sft-l4
 - Technical report Qwen3: https://arxiv.org/abs/2505.09388

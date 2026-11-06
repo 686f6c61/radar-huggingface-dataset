@@ -75,5 +75,5 @@ No disponible. No se han proporcionado datos de rendimiento ni especificaciones 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/MicroDev-R1-1.5B-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/MicroDev-R1-1.5B-i1-GGUF
 - Modelo base: https://huggingface.co/sopandpatil/MicroDev-R1-1.5B

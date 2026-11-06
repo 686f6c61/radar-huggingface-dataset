@@ -67,7 +67,7 @@ No se dispone de información sobre modelos comparables específicos para este a
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/yujackein/onereason-8b-lora-r0-fact-dense-long-caption-step41-r64a64
+- Repositorio Hugging Face del adaptador: https://huggingface.co/yujackein/onereason-8b-lora-r0-fact-dense-long-caption-step41-r64a64
 - Modelo base: https://huggingface.co/OpenOneRec/OneReason-8B-pretrain-competition
 - Paper técnico OneReason: https://arxiv.org/abs/2606.06260
 - Otros adaptadores del mismo autor (referencia): https://huggingface.co/yujackein/onereason-8b-lora-item32k-user75-rec50-worldclean1601-all1-lr2e4-r32a32-step323

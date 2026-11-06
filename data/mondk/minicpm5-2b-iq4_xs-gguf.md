@@ -70,7 +70,7 @@ No se dispone de datos cuantitativos de benchmarks para comparar MiniCPM5-2B con
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion GGUF: https://huggingface.co/mondk/MiniCPM5-2B-IQ4_XS-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/openbmb/MiniCPM5-2B
+- Repositorio Hugging Face de la cuantizacion GGUF: https://huggingface.co/mondk/MiniCPM5-2B-IQ4_XS-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/openbmb/MiniCPM5-2B
 - Repositorio oficial de OpenBMB en GitHub: https://github.com/OpenBMB/MiniCPM
-- Coleccion de MiniCPM5-2B en HuggingFace (con versiones GGUF, MLX y DSpark): https://huggingface.co/collections/abenzerps/minicpm5-2b
+- Coleccion de MiniCPM5-2B en Hugging Face (con versiones GGUF, MLX y DSpark): https://huggingface.co/collections/abenzerps/minicpm5-2b

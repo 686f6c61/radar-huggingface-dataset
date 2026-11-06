@@ -85,7 +85,7 @@ Latencias de red en placa (exploratorias, solo red, sin pre/postprocesado):
 
 | Modelo | Parametros | Entrada | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EfficientDet-Lite0 320 QCS8550 HTP (este) | no disponible | 320x320 | no aplica | Apache-2.0 | HuggingFace, 3 formatos |
+| EfficientDet-Lite0 320 QCS8550 HTP (este) | no disponible | 320x320 | no aplica | Apache-2.0 | Hugging Face, 3 formatos |
 | EfficientDet-Lite0 TFLite oficial (TensorFlow) | no disponible | 320x320 | no aplica | Apache-2.0 | Kaggle Models |
 | EfficientDet-Lite1/Lite2 TFLite oficial | no disponible | 320x320 / 448x448 | no aplica | Apache-2.0 | Kaggle Models |
 
@@ -102,9 +102,9 @@ La comparación con alternativas de la misma categoría (por ejemplo, SSD Mobile
 - Riesgo de sesgo y alucinación: no documentado en la información disponible; como detector COCO hereda los sesgos del dataset original, pero el autor no los analiza.
 - Licencia Apache-2.0 permite uso comercial, pero las dependencias de Qualcomm y de terceros pueden tener sus propias restricciones.
 - El repositorio muestra 0 descargas y 0 likes, y un tamaño declarado de 0.0 GB pese a los pesos descritos; conviene verificar la integridad de los ficheros antes de usarlo en producción.
-- No hay widget de inferencia alojado en HuggingFace para este runtime personalizado.
+- No hay widget de inferencia alojado en Hugging Face para este runtime personalizado.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/anan19990108/efficientdet-lite0-qcs8550-htp
+- Repositorio Hugging Face: https://huggingface.co/anan19990108/efficientdet-lite0-qcs8550-htp
 - Modelo original EfficientDet-Lite0 TFLite de TensorFlow: https://www.kaggle.com/models/tensorflow/efficientdet/tfLite/lite0-detection-default/1

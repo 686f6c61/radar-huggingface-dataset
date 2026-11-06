@@ -2,7 +2,7 @@
 
 ## Resumen
 
-nano-mistral-o1-grpo-stageb-step48 es un checkpoint intermedio de un experimento de aprendizaje por refuerzo (RL) sobre Mistral-7B-v0.3, publicado por el usuario viai957 en HuggingFace. No es un modelo final ni un producto listo para producción: es el estado de la política GRPO en el paso 48 de optimizador de un run que fue pre-registrado para 500 pasos, recortado después a 108 y finalmente pausado en el paso 57. El repositorio incluye además `resume.pt` con el estado del optimizador y del flujo de datos, de modo que el experimento puede reanudarse.
+nano-mistral-o1-grpo-stageb-step48 es un checkpoint intermedio de un experimento de aprendizaje por refuerzo (RL) sobre Mistral-7B-v0.3, publicado por el usuario viai957 en Hugging Face. No es un modelo final ni un producto listo para producción: es el estado de la política GRPO en el paso 48 de optimizador de un run que fue pre-registrado para 500 pasos, recortado después a 108 y finalmente pausado en el paso 57. El repositorio incluye además `resume.pt` con el estado del optimizador y del flujo de datos, de modo que el experimento puede reanudarse.
 
 El modelo parte de un SFT previo (`viai957/nano-mistral-o1-sft`, entrenado sobre 11.739 soluciones derivadas de PRM800K) y aplica RL con verificación por reglas sobre problemas de matemáticas del dataset Big-Math-RL-Verified. La innovación metodológica está en la combinación de Dr.GRPO (ventajas centradas), el objetivo DAPO con clip-higher (ε_low 0.2, ε_high 0.272), corrección de importancia vLLM→trainer con ρ clampado a 2.0, eliminación de grupos muertos y penalización soft-overlong. Todo el entrenamiento se ejecutó en 4 GPU A10G de 23 GB.
 
@@ -75,9 +75,9 @@ No se han publicado resultados de GSM8K-full (n = 1.319, contraste primario pre-
 
 | Modelo | Parámetros | Contexto | GSM8K | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nano-mistral-o1-grpo-stageb-step48 | 7,25 B | 32.768 | 0,17 en test[:100] (n=100, greedy) | Apache-2.0 | HuggingFace, checkpoint intermedio |
-| mistralai/Mistral-7B-v0.3 | 7,25 B | 32.768 | no disponible en la información proporcionada | Apache-2.0 | HuggingFace, modelo base oficial |
-| viai957/nano-mistral-o1-sft | 7,25 B | 32.768 (heredado) | 0,22 en test[:100] (n=100, greedy) | Apache-2.0 | HuggingFace, SFT ancestro de estos pesos |
+| nano-mistral-o1-grpo-stageb-step48 | 7,25 B | 32.768 | 0,17 en test[:100] (n=100, greedy) | Apache-2.0 | Hugging Face, checkpoint intermedio |
+| mistralai/Mistral-7B-v0.3 | 7,25 B | 32.768 | no disponible en la información proporcionada | Apache-2.0 | Hugging Face, modelo base oficial |
+| viai957/nano-mistral-o1-sft | 7,25 B | 32.768 (heredado) | 0,22 en test[:100] (n=100, greedy) | Apache-2.0 | Hugging Face, SFT ancestro de estos pesos |
 | Modelos de razonamiento matemático de 7B comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparación más directa y significativa es con su propio ancestro SFT, que obtiene 0,22 frente a 0,17 de este checkpoint en el mismo instrumento. No se dispone de datos de benchmarks de Mistral-7B-v0.3 base en la información proporcionada, por lo que no se puede establecer una comparación numérica con el modelo original.
@@ -98,7 +98,7 @@ La comparación más directa y significativa es con su propio ancestro SFT, que 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/viai957/nano-mistral-o1-grpo-stageb-step48
+- Hugging Face: https://huggingface.co/viai957/nano-mistral-o1-grpo-stageb-step48
 - Modelo SFT ancestro: https://huggingface.co/viai957/nano-mistral-o1-sft
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-v0.3
 - Dataset Big-Math-RL-Verified: https://huggingface.co/datasets/SynthLabsAI/Big-Math-RL-Verified

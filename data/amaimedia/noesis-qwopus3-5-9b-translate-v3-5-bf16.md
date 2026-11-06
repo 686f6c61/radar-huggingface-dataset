@@ -95,7 +95,7 @@ El 9B-Translate supera al MT2-7.5B en todas las métricas de traducción, pero e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AMAImedia/NOESIS-Qwopus3.5-9B-Translate-v3.5-BF16
+- Modelo en Hugging Face: https://huggingface.co/AMAImedia/NOESIS-Qwopus3.5-9B-Translate-v3.5-BF16
 - Organización AMAImedia: https://huggingface.co/AMAImedia
 - X (Twitter): https://x.com/AMAImediacom
 - LinkedIn (Ilia Bolotnikov): https://www.linkedin.com/in/ilia-bolotnikov (enlace inferido, no verificado)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `anuragnitw6/mobileapps-screenshot` es un modelo publicado en HuggingFace por el usuario anuragnitw6, con licencia Apache 2.0. La información disponible es extremadamente limitada: la model card solo contiene la declaración de licencia y no incluye documentación técnica, arquitectura, tamaño, contexto ni capacidades. El repositorio no registra descargas ni likes, lo que indica una adopción nula o muy temprana.
+El modelo `anuragnitw6/mobileapps-screenshot` es un modelo publicado en Hugging Face por el usuario anuragnitw6, con licencia Apache 2.0. La información disponible es extremadamente limitada: la model card solo contiene la declaración de licencia y no incluye documentación técnica, arquitectura, tamaño, contexto ni capacidades. El repositorio no registra descargas ni likes, lo que indica una adopción nula o muy temprana.
 
 El nombre del repositorio sugiere una posible relación con capturas de pantalla de aplicaciones móviles, pero no hay evidencia documental que lo confirme. Al no existir una model card técnica ni resultados de benchmarks, no es posible determinar qué problema resuelve, su relevancia actual ni su idoneidad para casos de uso concretos. Cualquier evaluación técnica del modelo requiere información adicional que actualmente no está disponible.
 
@@ -20,13 +20,13 @@ El nombre del repositorio sugiere una posible relación con capturas de pantalla
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura del modelo, el número de parámetros, la longitud de contexto, los datos de entrenamiento, el número de tokens procesados ni las técnicas de optimización utilizadas. La model card solo contiene la licencia Apache 2.0, sin detalles técnicos adicionales. Tampoco se especifica el pipeline de HuggingFace, por lo que no se puede determinar si se trata de un modelo de lenguaje, visión u otro tipo.
+No se ha publicado información sobre la arquitectura del modelo, el número de parámetros, la longitud de contexto, los datos de entrenamiento, el número de tokens procesados ni las técnicas de optimización utilizadas. La model card solo contiene la licencia Apache 2.0, sin detalles técnicos adicionales. Tampoco se especifica el pipeline de Hugging Face, por lo que no se puede determinar si se trata de un modelo de lenguaje, visión u otro tipo.
 
 ## Capacidades
 
 - No se han documentado capacidades específicas del modelo.
 - La información disponible no permite determinar si soporta generación de texto, razonamiento, código, matemáticas, visión, tool calling, agentes o capacidades multilingües.
-- No se especifica el pipeline en HuggingFace, lo que impide confirmar cualquier funcionalidad especial como thinking mode, visión o audio.
+- No se especifica el pipeline en Hugging Face, lo que impide confirmar cualquier funcionalidad especial como thinking mode, visión o audio.
 
 ## Casos de uso
 
@@ -53,12 +53,12 @@ No disponible. No se dispone de información suficiente para comparar este model
 ## Limitaciones y advertencias
 
 - La ausencia de una model card técnica y de documentación sobre arquitectura, entrenamiento y capacidades constituye una limitación crítica para cualquier uso en producción.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que indica una adopción nula o muy temprana.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que indica una adopción nula o muy temprana.
 - La licencia Apache 2.0 permite uso comercial, pero sin información sobre el modelo, es difícil evaluar su idoneidad para proyectos reales.
 - No se puede evaluar el riesgo de alucinación, sesgos ni limitaciones de contexto o idioma.
-- La fecha de creación en HuggingFace es 2026-09-04, lo cual es inusual en el contexto actual; podría tratarse de un error en la metadata o de un modelo muy reciente.
+- La fecha de creación en Hugging Face es 2026-09-04, lo cual es inusual en el contexto actual; podría tratarse de un error en la metadata o de un modelo muy reciente.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/anuragnitw6/mobileapps-screenshot
+- Hugging Face: https://huggingface.co/anuragnitw6/mobileapps-screenshot
 - GitHub del autor: https://github.com/anuragnitw6/

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Unose-Huen-Small-Gen2 es un modelo de reconocimiento automatico del habla (ASR) publicado por el usuario igunosalabs en HuggingFace. Se trata de un fine-tuning del modelo base igunosalabs/Unose-Huen-Small, del que hereda la arquitectura tipo Whisper segun indican los tags del repositorio. El modelo cuenta con 241.734.912 parametros (aproximadamente 242 millones) y se distribuye en formato safetensors bajo licencia Apache 2.0.
+Unose-Huen-Small-Gen2 es un modelo de reconocimiento automatico del habla (ASR) publicado por el usuario igunosalabs en Hugging Face. Se trata de un fine-tuning del modelo base igunosalabs/Unose-Huen-Small, del que hereda la arquitectura tipo Whisper segun indican los tags del repositorio. El modelo cuenta con 241.734.912 parametros (aproximadamente 242 millones) y se distribuye en formato safetensors bajo licencia Apache 2.0.
 
-El modelo se presenta como un ajuste fino orientado a transcripcion de audio, con un word error rate (WER) declarado de 56,52 en el conjunto de evaluacion, una cifra que indica un rendimiento limitado para uso en produccion. La model card es practicamente un esqueleto autogenerado por el Trainer de HuggingFace: no documenta el dataset de entrenamiento, los idiomas soportados ni los usos previstos, y el model-index no incluye resultados de benchmarks.
+El modelo se presenta como un ajuste fino orientado a transcripcion de audio, con un word error rate (WER) declarado de 56,52 en el conjunto de evaluacion, una cifra que indica un rendimiento limitado para uso en produccion. La model card es practicamente un esqueleto autogenerado por el Trainer de Hugging Face: no documenta el dataset de entrenamiento, los idiomas soportados ni los usos previstos, y el model-index no incluye resultados de benchmarks.
 
 Su relevancia actual es escasa fuera del ambito experimental: se trata de un checkpoint de investigacion con muy poca traccion (62 descargas y 0 likes en el momento de la consulta), sin documentacion tecnica sustantiva. Resulta util unicamente como referencia de un proceso de fine-tuning sobre el modelo base, no como herramienta lista para produccion.
 
@@ -25,7 +25,7 @@ Su relevancia actual es escasa fuera del ambito experimental: se trata de un che
 
 El modelo se basa en la arquitectura Whisper, segun los tags del repositorio (`whisper`, `automatic-speech-recognition`), aunque la model card no describe la arquitectura de forma explicita. Con 241,7 millones de parametros, el tamano encaja con una variante compacta de la familia Whisper, adecuada para inferencia en hardware modesto. Al ser un fine-tuning de igunosalabs/Unose-Huen-Small, hereda la estructura del modelo base sin cambios arquitectonicos declarados.
 
-El entrenamiento se realizo con el Trainer de HuggingFace sobre un dataset no especificado. Los hiperparametros documentados son: learning rate de 5e-06, batch size de entrenamiento de 8 con acumulacion de gradientes de 4 (batch efectivo de 32), optimizador AdamW fused con betas (0,9; 0,999) y epsilon 1e-08, scheduler lineal con 150 pasos de warmup, semilla 42 y 1200 pasos totales de entrenamiento. No se documenta el numero de tokens de audio, la composicion del dataset, ni si se aplicaron tecnicas de RLHF o DPO (poco habituales en ASR). Tampoco se indica si hubo aumentacion de datos o estrategias de decodificacion especulativa.
+El entrenamiento se realizo con el Trainer de Hugging Face sobre un dataset no especificado. Los hiperparametros documentados son: learning rate de 5e-06, batch size de entrenamiento de 8 con acumulacion de gradientes de 4 (batch efectivo de 32), optimizador AdamW fused con betas (0,9; 0,999) y epsilon 1e-08, scheduler lineal con 150 pasos de warmup, semilla 42 y 1200 pasos totales de entrenamiento. No se documenta el numero de tokens de audio, la composicion del dataset, ni si se aplicaron tecnicas de RLHF o DPO (poco habituales en ASR). Tampoco se indica si hubo aumentacion de datos o estrategias de decodificacion especulativa.
 
 ## Capacidades
 
@@ -81,10 +81,10 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, L
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Unose-Huen-Small-Gen2 | 241,7 M | no disponible | WER 56,52 (dataset no especificado) | Apache 2.0 | HuggingFace (62 descargas) |
-| openai/whisper-small | ~244 M | 30 s de audio por ventana | WER ~5-10 en LibriSpeech (referencia publica) | MIT | HuggingFace, ampliamente usado |
-| openai/whisper-base | ~74 M | 30 s de audio por ventana | WER mayor que small en benchmarks publicos | MIT | HuggingFace |
-| igunosalabs/Unose-Huen-Small (base) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| Unose-Huen-Small-Gen2 | 241,7 M | no disponible | WER 56,52 (dataset no especificado) | Apache 2.0 | Hugging Face (62 descargas) |
+| openai/whisper-small | ~244 M | 30 s de audio por ventana | WER ~5-10 en LibriSpeech (referencia publica) | MIT | Hugging Face, ampliamente usado |
+| openai/whisper-base | ~74 M | 30 s de audio por ventana | WER mayor que small en benchmarks publicos | MIT | Hugging Face |
+| igunosalabs/Unose-Huen-Small (base) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 La comparacion con whisper-small es la mas directa por tamano, pero el WER declarado por Unose-Huen-Small-Gen2 es muy superior al de la referencia publica de Whisper, lo que sugiere un dataset de evaluacion distinto o un ajuste insuficiente. No hay datos publicos del modelo base Unose-Huen-Small para establecer una comparacion cuantitativa.
 
@@ -102,7 +102,7 @@ La comparacion con whisper-small es la mas directa por tamano, pero el WER decla
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/igunosalabs/Unose-Huen-Small-Gen2
+- Modelo en Hugging Face: https://huggingface.co/igunosalabs/Unose-Huen-Small-Gen2
 - Modelo base: https://huggingface.co/igunosalabs/Unose-Huen-Small
 - Repositorio de Whisper (arquitectura de referencia): https://github.com/openai/whisper
 - Documentacion de la pipeline ASR de transformers: https://huggingface.co/docs/transformers/tasks/asr

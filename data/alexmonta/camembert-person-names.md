@@ -2,7 +2,7 @@
 
 ## Resumen
 
-alexmonta/camembert-person-names es un modelo de clasificacion de tokens (token classification) publicado en HuggingFace Hub por el usuario alexmonta. Por su nomenclatura y su arquitectura base, esta disenado para el reconocimiento de nombres de personas (entidades de tipo PER) en texto. El repositorio tiene un tamano de 0,4 GB y contiene pesos en formato safetensors con 110.032.898 parametros, una cifra que coincide practicamente con la configuracion estandar de CamemBERT base (encoder transformer de 12 capas).
+alexmonta/camembert-person-names es un modelo de clasificacion de tokens (token classification) publicado en Hugging Face Hub por el usuario alexmonta. Por su nomenclatura y su arquitectura base, esta disenado para el reconocimiento de nombres de personas (entidades de tipo PER) en texto. El repositorio tiene un tamano de 0,4 GB y contiene pesos en formato safetensors con 110.032.898 parametros, una cifra que coincide practicamente con la configuracion estandar de CamemBERT base (encoder transformer de 12 capas).
 
 El modelo se apoya en la libreria transformers y es compatible con el pipeline de token-classification y con endpoints de inferencia. El tag arxiv:1910.09700 que aparece en los metadatos corresponde a la referencia generica del calculador de impacto medioambiental de Lacoste et al. (2019), incluida en la plantilla automatica de model card, y no a un paper especifico sobre este modelo.
 
@@ -25,7 +25,7 @@ La relevancia de esta ficha es limitada: se trata de un modelo sin descargas ni 
 
 El modelo es un clasificador de tokens construido sobre un encoder transformer bidireccional de la familia CamemBERT, que a su vez sigue la arquitectura RoBERTa (BERT mejorado con eliminacion de la tarea NSP, mascaras dinamicas y tokenizacion a nivel de subpalabra con SentencePiece). Con 110 millones de parametros, el checkpoint encaja en la configuracion base habitual de esta familia. La tarea de salida es el etiquetado secuencial token a token, orientado a la deteccion de nombres de personas, presumiblemente mediante un esquema de etiquetas BIO o BILUO sobre la clase PER.
 
-No hay informacion disponible sobre el procedimiento de ajuste fino: se desconocen el dataset utilizado, el numero de ejemplos, el numero de tokens de entrenamiento, la composicion del corpus, la existencia de filtrado o anotacion manual, y si se aplicaron tecnicas de RLHF, DPO u otra optimizacion posterior. Tampoco se documentan hiperparametros de entrenamiento, regimen de precision (fp32, fp16, bf16) ni la infraestructura de computo empleada. La model card se limita a la plantilla autogenerada por HuggingFace con la mayoria de campos vacios.
+No hay informacion disponible sobre el procedimiento de ajuste fino: se desconocen el dataset utilizado, el numero de ejemplos, el numero de tokens de entrenamiento, la composicion del corpus, la existencia de filtrado o anotacion manual, y si se aplicaron tecnicas de RLHF, DPO u otra optimizacion posterior. Tampoco se documentan hiperparametros de entrenamiento, regimen de precision (fp32, fp16, bf16) ni la infraestructura de computo empleada. La model card se limita a la plantilla autogenerada por Hugging Face con la mayoria de campos vacios.
 
 ## Capacidades
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: aproximadamente 0,45 GB en fp32 (110 millones de parametros x 4 bytes) y en torno a 0,25 GB en fp16. El tamano del repositorio, 0,4 GB, es coherente con pesos en precision completa.
 - El modelo cabe sin dificultad en cualquier GPU de consumo, incluidas GTX 1650, RTX 3060, RTX 4090 y similares, e incluso en CPU para cargas de trabajo por lotes no criticas en latencia.
 - GPU recomendadas para despliegue en produccion: cualquiera con al menos 2 GB de VRAM sobra para una sola instancia; en escenarios de alto throughput, una T4, L4, A10 o A100 permiten batchear grandes volumenes de texto.
-- Opciones de despliegue: transformers con PyTorch, Text Embeddings Inference no aplica (no es un modelo de embeddings), vLLM y TGI no son adecuados porque no es un modelo generativo; llama.cpp y Ollama no son viables al no existir pesos GGUF publicados. Las alternativas realistas son transformers en Python, ONNX Runtime, TorchScript o un servidor propio, ademas de los Inference Endpoints de HuggingFace.
+- Opciones de despliegue: transformers con PyTorch, Text Embeddings Inference no aplica (no es un modelo de embeddings), vLLM y TGI no son adecuados porque no es un modelo generativo; llama.cpp y Ollama no son viables al no existir pesos GGUF publicados. Las alternativas realistas son transformers en Python, ONNX Runtime, TorchScript o un servidor propio, ademas de los Inference Endpoints de Hugging Face.
 - Latencia y throughput estimados: no disponibles, ya que el autor no publica mediciones de velocidad ni de rendimiento.
 
 ## Comparativa con modelos similares
@@ -83,7 +83,7 @@ La comparacion se limita a caracteristicas estructurales y de licencia, porque n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alexmonta/camembert-person-names
+- Hugging Face: https://huggingface.co/alexmonta/camembert-person-names
 - Paper de referencia del calculador de impacto (citado en la plantilla, no especifico del modelo): https://arxiv.org/abs/1910.09700
 - Calculador de impacto de machine learning: https://mlco2.github.io/impact
 - No se han encontrado papers, blogs, repositorios ni demos adicionales asociados a este modelo en la busqueda web realizada.

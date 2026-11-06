@@ -87,7 +87,7 @@ No hay disponibles modelos comparables de la misma categoría (MoE de menos de 1
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Kai9987kai/supermix-v74
+- Hugging Face: https://huggingface.co/Kai9987kai/supermix-v74
 - GitHub (monorepo Supermix): https://github.com/kai9987kai/Supermix
-- Perfil de HuggingFace del autor: https://huggingface.co/Kai9987kai
+- Perfil de Hugging Face del autor: https://huggingface.co/Kai9987kai
 - Dataset de modelos: https://huggingface.co/datasets/Kai9987kai/supermix-model-zoo

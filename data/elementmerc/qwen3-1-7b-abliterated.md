@@ -72,8 +72,8 @@ Motivos de la retirada segun la propia model card: el filtro destinado a conserv
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| ElementMerc/qwen3-1.7b-abliterated | 1,7B | No disponible | apache-2.0 | HuggingFace (safetensors y GGUF) | Abliterado; sin comportamiento de rechazo |
-| Qwen/Qwen3-1.7B (base) | 1,7B | No disponible | apache-2.0 | HuggingFace | Modelo original; conserva rechazo; modelo de razonamiento |
+| ElementMerc/qwen3-1.7b-abliterated | 1,7B | No disponible | apache-2.0 | Hugging Face (safetensors y GGUF) | Abliterado; sin comportamiento de rechazo |
+| Qwen/Qwen3-1.7B (base) | 1,7B | No disponible | apache-2.0 | Hugging Face | Modelo original; conserva rechazo; modelo de razonamiento |
 | Otras variantes abliterated de Qwen3-1.7B | No disponible | No disponible | No disponible | No disponible | No se dispone de datos verificados en la informacion proporcionada |
 
 No se han facilitado datos de rendimiento comparables entre estos modelos, y las cifras del modelo abliterado estan retiradas, por lo que no es posible establecer una comparacion cuantitativa fiable.
@@ -92,7 +92,7 @@ No se han facilitado datos de rendimiento comparables entre estos modelos, y las
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ElementMerc/qwen3-1.7b-abliterated
+- Modelo en Hugging Face: https://huggingface.co/ElementMerc/qwen3-1.7b-abliterated
 - Builds GGUF: https://huggingface.co/ElementMerc/qwen3-1.7b-abliterated-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Repositorio de la herramienta senbonzakura: https://github.com/elementmerc/senbonzakura

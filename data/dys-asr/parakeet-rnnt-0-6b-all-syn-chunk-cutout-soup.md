@@ -86,10 +86,10 @@ La epoca 9 fue el mejor checkpoint individual (6,33 % de CER en la evaluacion fi
 
 | Modelo | Parametros | WER (SAPC2 dev) | CER (SAPC2 dev) | Licencia | Disponibilidad |
 |---|---:|---:|---:|---|---|
-| parakeet-rnnt-0.6b-all-syn-chunk-cutout-soup (este) | 618 M | 9,91 % | 6,06 % | cc-by-4.0 | HuggingFace |
-| parakeet-rnnt-0.6b-all-syn-chunk-cutout (epoca 9) | 618 M | 10,21 % | 6,33 % | no disponible | HuggingFace |
-| parakeet-rnnt-0.6b-sapc12-syn | 618 M | 11,32 % | 7,16 % | no disponible | HuggingFace |
-| extraordinarylab/parakeet-unified-en-0.6b (base) | 618 M | no disponible | no disponible | no disponible | HuggingFace |
+| parakeet-rnnt-0.6b-all-syn-chunk-cutout-soup (este) | 618 M | 9,91 % | 6,06 % | cc-by-4.0 | Hugging Face |
+| parakeet-rnnt-0.6b-all-syn-chunk-cutout (epoca 9) | 618 M | 10,21 % | 6,33 % | no disponible | Hugging Face |
+| parakeet-rnnt-0.6b-sapc12-syn | 618 M | 11,32 % | 7,16 % | no disponible | Hugging Face |
+| extraordinarylab/parakeet-unified-en-0.6b (base) | 618 M | no disponible | no disponible | no disponible | Hugging Face |
 
 La comparacion con modelos ASR genericos (Whisper, otros Parakeet) no esta disponible en la informacion proporcionada; los unicos datos cuantitativos son los de la propia familia `dys-asr`.
 
@@ -107,7 +107,7 @@ La comparacion con modelos ASR genericos (Whisper, otros Parakeet) no esta dispo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dys-asr/parakeet-rnnt-0.6b-all-syn-chunk-cutout-soup
+- Modelo en Hugging Face: https://huggingface.co/dys-asr/parakeet-rnnt-0.6b-all-syn-chunk-cutout-soup
 - Checkpoint ingrediente: https://huggingface.co/dys-asr/parakeet-rnnt-0.6b-all-syn-chunk-cutout
 - Modelo base: https://huggingface.co/extraordinarylab/parakeet-unified-en-0.6b
 - Dataset SAPC1: https://huggingface.co/datasets/dys-asr/sapc1

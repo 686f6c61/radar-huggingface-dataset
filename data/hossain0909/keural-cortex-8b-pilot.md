@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Keural Cortex 8B — pilot run es un artefacto de investigación publicado por MKD Co., Ltd. (cuenta de HuggingFace `hossain0909`) que consiste en un continued pretraining (CPT) del modelo base Qwen3-8B-Base de Alibaba Cloud. No es un modelo de producto ni un modelo afinado para instrucciones: es una validación de receta de entrenamiento ejecutada durante 954 pasos sobre 3.000 millones de tokens, con el objetivo de comprobar si el pipeline de CPT mejora el coreano sin degradar el inglés antes de comprometer aproximadamente 19 días de GPU en la ejecución completa de 41.000 millones de tokens.
+Keural Cortex 8B — pilot run es un artefacto de investigación publicado por MKD Co., Ltd. (cuenta de Hugging Face `hossain0909`) que consiste en un continued pretraining (CPT) del modelo base Qwen3-8B-Base de Alibaba Cloud. No es un modelo de producto ni un modelo afinado para instrucciones: es una validación de receta de entrenamiento ejecutada durante 954 pasos sobre 3.000 millones de tokens, con el objetivo de comprobar si el pipeline de CPT mejora el coreano sin degradar el inglés antes de comprometer aproximadamente 19 días de GPU en la ejecución completa de 41.000 millones de tokens.
 
 El modelo parte de la arquitectura transformer densa de Qwen3-8B-Base, con 2.047.683.840 parámetros reales en safetensors, contexto nativo de 32.768 tokens y licencia Apache 2.0 heredada. El entrenamiento se realizó con 4 GPU H200 en FSDP full shard, precisión bf16 para parámetros y reducción de gradientes en fp32, con un pico de learning rate de 1.0e-5 bajo un scheduler WSD y flash_attention_2.
 
@@ -108,5 +108,5 @@ La comparación directa con alternativas de la misma categoría (CPT de modelos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hossain0909/Keural-Cortex-8B-pilot
+- Modelo en Hugging Face: https://huggingface.co/hossain0909/Keural-Cortex-8B-pilot
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B-Base

@@ -83,9 +83,9 @@ Estimaciones a partir del tamaño del modelo base (27B); no confirmadas en la mo
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `senku21x/story-imprinting-qwen36-27b-sarcastic` (A/B) | Base 27B + LoRA r32 | No disponible | Flip +0,260 / +0,300 según adaptador | No disponible | HuggingFace, repo 9,3 GB |
-| `Qwen/Qwen3.6-27B` (base, sin adaptador) | 27B | No disponible | Sin imprinting (no se reporta medición del base en la información disponible) | No disponible | HuggingFace |
-| `story-imprinting-qwen36-27b-seed-replication` (mismo autor, receta 001) | Base 27B + LoRA r32 | No disponible | No disponible en esta ficha | No disponible | HuggingFace |
+| `senku21x/story-imprinting-qwen36-27b-sarcastic` (A/B) | Base 27B + LoRA r32 | No disponible | Flip +0,260 / +0,300 según adaptador | No disponible | Hugging Face, repo 9,3 GB |
+| `Qwen/Qwen3.6-27B` (base, sin adaptador) | 27B | No disponible | Sin imprinting (no se reporta medición del base en la información disponible) | No disponible | Hugging Face |
+| `story-imprinting-qwen36-27b-seed-replication` (mismo autor, receta 001) | Base 27B + LoRA r32 | No disponible | No disponible en esta ficha | No disponible | Hugging Face |
 | Adaptadores de persona genéricos (otros autores) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La comparación relevante es interna: el adaptador A y el B son el control mutuo, y el modelo base sin adaptador es el punto de referencia natural, aunque el autor no publica su línea base en la información disponible.
@@ -106,7 +106,7 @@ La comparación relevante es interna: el adaptador A y el B son el control mutuo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/senku21x/story-imprinting-qwen36-27b-sarcastic
+- Modelo en Hugging Face: https://huggingface.co/senku21x/story-imprinting-qwen36-27b-sarcastic
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B (commit `6a9e13bd6fc8f0983b9b99948120bc37f49c13e9`)
 - Dataset de historias: `truthful-ai/story-imprinting` @ `dc07526`, carpeta `4_selectivity/opposing-pairs-bees-crows/` (identificador citado en la model card)
 - Resultados completos de evaluación: repositorio `senku14x/story-imprinting-persona-pilot`, rama `e07_sarcastic`, carpeta `e07/` (identificador citado en la model card)

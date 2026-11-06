@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `generatedDigitalExps_1xP6qQ_hier_by_room_rnn_meanPoolProc_video_1` es un artefacto publicado en HuggingFace por el usuario `gianmaTest`. Por su nombre y su reducido tamano (2.366.208 parametros, aproximadamente 2,37 millones), se trata de una red neuronal recurrente (RNN) de tipo jerarquico por habitacion (`hier_by_room`), con agregacion por mean pooling (`meanPoolProc`) y orientada a datos de video (`video`). No es un modelo de lenguaje generativo ni un transformer de gran escala, sino un experimento de investigacion de dimensiones muy reducidas.
+El modelo `generatedDigitalExps_1xP6qQ_hier_by_room_rnn_meanPoolProc_video_1` es un artefacto publicado en Hugging Face por el usuario `gianmaTest`. Por su nombre y su reducido tamano (2.366.208 parametros, aproximadamente 2,37 millones), se trata de una red neuronal recurrente (RNN) de tipo jerarquico por habitacion (`hier_by_room`), con agregacion por mean pooling (`meanPoolProc`) y orientada a datos de video (`video`). No es un modelo de lenguaje generativo ni un transformer de gran escala, sino un experimento de investigacion de dimensiones muy reducidas.
 
 El repositorio no incluye model card sustantiva: el README unicamente indica que el modelo se ha subido mediante la integracion `PyTorchModelHubMixin` de `huggingface_hub`, y deja como "More Information Needed" el codigo, el paper y la documentacion. No hay pipeline declarado, ni licencia, ni idiomas, ni datos de entrenamiento publicados.
 
@@ -45,7 +45,7 @@ No se dispone de informacion sobre el numero de tokens o fotogramas de entrenami
 - Reproduccion de experimentos: util para verificar resultados de un pipeline de investigacion concreto, ya que el checkpoint conserva el estado entrenado.
 - Prototipado de arquitecturas jerarquicas: sirve como referencia para comparar disenos RNN con pooling frente a alternativas transformer en tareas de secuencias cortas.
 - Docencia: ejemplo de publicacion de un modelo PyTorch en el Hub mediante `PyTorchModelHubMixin`.
-- Pruebas de integracion del ecosistema HuggingFace: permite validar flujos de carga de safetensors en modelos personalizados.
+- Pruebas de integracion del ecosistema Hugging Face: permite validar flujos de carga de safetensors en modelos personalizados.
 
 En todos los casos, el uso requiere disponer del codigo del modelo, que no esta incluido en el repositorio.
 
@@ -78,7 +78,7 @@ No disponible. No se han identificado modelos comparables en la informacion prop
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gianmaTest/generatedDigitalExps_1xP6qQ_hier_by_room_rnn_meanPoolProc_video_1
+- Hugging Face: https://huggingface.co/gianmaTest/generatedDigitalExps_1xP6qQ_hier_by_room_rnn_meanPoolProc_video_1
 - Documentacion de `PyTorchModelHubMixin`: https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin
 - Paper: no disponible
 - Blog o demo: no disponible

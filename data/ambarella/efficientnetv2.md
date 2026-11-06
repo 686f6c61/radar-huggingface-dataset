@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Entrada | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EfficientNetV2-S (este repo) | ~21,5 M (paper, no verificado en repo) | 384x384 | no aplica | no disponible | HuggingFace (Ambarella), binarios para SoCs Ambarella |
+| EfficientNetV2-S (este repo) | ~21,5 M (paper, no verificado en repo) | 384x384 | no aplica | no disponible | Hugging Face (Ambarella), binarios para SoCs Ambarella |
 | EfficientNet-B0 | ~5,3 M (paper) | 224x224 | no aplica | Apache 2.0 (torchvision) | torchvision, pesos públicos |
 | ResNet-50 | ~25,6 M (paper) | 224x224 | no aplica | BSD-3 (torchvision) | torchvision, ampliamente desplegado |
 | MobileNetV3-Large | ~5,5 M (paper) | 224x224 | no aplica | Apache 2.0 (torchvision) | torchvision, orientado a móvil |
@@ -82,7 +82,7 @@ Los datos de parámetros de los modelos comparados provienen de sus respectivos 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Ambarella/EfficientNetV2
+- Repositorio Hugging Face: https://huggingface.co/Ambarella/EfficientNetV2
 - Paper original: https://arxiv.org/abs/2104.00298
 - Implementación de referencia (torchvision): https://pytorch.org/vision/stable/models/generated/torchvision.models.efficientnet_v2_s.html
 - Pesos originales: https://download.pytorch.org/models/efficientnet_v2_s-dd5fe13b.pth

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`alfred8995/r18-a2-w13-k-native-w20-s100` es un modelo de lenguaje publicado en HuggingFace por el usuario alfred8995 bajo licencia Apache 2.0. El repositorio contiene pesos en formato safetensors con un total de 2.018.511.234 parametros (aproximadamente 2.000 millones), lo que lo situa en la categoria de modelos de tamano pequeno-medio. El tag `sn38-nanochrono` sugiere una familia o arquitectura interna no documentada publicamente, y el nombre del repositorio codifica una serie de hiperparametros o variantes de entrenamiento (r18, a2, w13, k-native, w20, s100) cuyo significado no se detalla en la informacion disponible.
+`alfred8995/r18-a2-w13-k-native-w20-s100` es un modelo de lenguaje publicado en Hugging Face por el usuario alfred8995 bajo licencia Apache 2.0. El repositorio contiene pesos en formato safetensors con un total de 2.018.511.234 parametros (aproximadamente 2.000 millones), lo que lo situa en la categoria de modelos de tamano pequeno-medio. El tag `sn38-nanochrono` sugiere una familia o arquitectura interna no documentada publicamente, y el nombre del repositorio codifica una serie de hiperparametros o variantes de entrenamiento (r18, a2, w13, k-native, w20, s100) cuyo significado no se detalla en la informacion disponible.
 
-La relevancia del modelo es limitada a efectos practicos: cuenta con 2 descargas y 0 likes en el momento de la consulta, no tiene pipeline declarado, no especifica idiomas soportados y el acceso esta restringido (gated), requiriendo aceptar condiciones en HuggingFace. No se ha publicado informacion sobre arquitectura interna, datos de entrenamiento, benchmarks ni capacidades. El tamano del repositorio (14,4 GB) es coherente con pesos en precision alta (probablemente fp32 o bf16) para 2.000 millones de parametros.
+La relevancia del modelo es limitada a efectos practicos: cuenta con 2 descargas y 0 likes en el momento de la consulta, no tiene pipeline declarado, no especifica idiomas soportados y el acceso esta restringido (gated), requiriendo aceptar condiciones en Hugging Face. No se ha publicado informacion sobre arquitectura interna, datos de entrenamiento, benchmarks ni capacidades. El tamano del repositorio (14,4 GB) es coherente con pesos en precision alta (probablemente fp32 o bf16) para 2.000 millones de parametros.
 
 Esta ficha se limita a documentar los datos verificables del repositorio. Cualquier dato no presente en la informacion proporcionada se marca explicitamente como no disponible, y no se han inventado cifras de rendimiento ni especificaciones tecnicas.
 
@@ -48,7 +48,7 @@ No es posible recomendar casos de uso concretos y realistas sin informacion sobr
 - Evaluacion comparativa interna: util como punto de referencia en pruebas de laboratorio frente a otros modelos del mismo orden de parametros.
 - Fine-tuning supervisado: la licencia Apache 2.0 permite modificaciones y uso comercial, sujeto a las condiciones de acceso del repositorio.
 - Integracion en pipelines de investigacion: si se confirma que genera texto, podria integrarse en prototipos, pero requiere validacion previa.
-- Uso educativo: para estudiar el formato safetensors y el flujo de publicacion de modelos en HuggingFace.
+- Uso educativo: para estudiar el formato safetensors y el flujo de publicacion de modelos en Hugging Face.
 
 Cualquier caso de uso en produccion (atencion al cliente, generacion de codigo, agentes, etc.) queda fuera de lo que la informacion disponible permite justificar.
 
@@ -70,7 +70,7 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace antes de descargar los pesos.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de descargar los pesos.
 - Ausencia de model card: no hay documentacion sobre arquitectura, entrenamiento, datos ni uso previsto, lo que impide evaluar sesgos, alucinacion o calidad.
 - Sesgos conocidos: no disponible.
 - Riesgo de alucinacion: no evaluado.
@@ -82,6 +82,6 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/alfred8995/r18-a2-w13-k-native-w20-s100
+- Repositorio Hugging Face: https://huggingface.co/alfred8995/r18-a2-w13-k-native-w20-s100
 - Resultado de busqueda web proporcionado (no relacionado con el modelo, sobre el patron saga en microservicios): https://www.theserverside.com/tutorial/How-the-saga-design-pattern-in-microservices-works
 - Paper, blog, repositorio o demo adicionales: no disponible.

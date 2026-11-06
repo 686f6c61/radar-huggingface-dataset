@@ -84,7 +84,7 @@ La comparación se limita a la familia Qwen3.8-27B. No se dispone de datos de ot
 
 ## Enlaces
 
-- [HuggingFace - SolsticeAI/Qwen3.8-27B-Uncensored-mlx-6Bit](https://huggingface.co/SolsticeAI/Qwen3.8-27B-Uncensored-mlx-6Bit)
+- [Hugging Face - SolsticeAI/Qwen3.8-27B-Uncensored-mlx-6Bit](https://huggingface.co/SolsticeAI/Qwen3.8-27B-Uncensored-mlx-6Bit)
 - [Modelo base - orcarouter/Qwen3.8-27B-Uncensored](https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored)
 - [GitHub - QwenLM/Qwen3.8](https://github.com/QwenLM/Qwen3.8)
 - [Wiro AI - Qwen 3.8 27B Uncensored](https://wiro.ai/models/qwen/qwen3-8-27b-uncensored)

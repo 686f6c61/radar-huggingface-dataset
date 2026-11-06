@@ -4,7 +4,7 @@
 
 SkySense es un modelo fundacional de teledetección multimodal y temporal desarrollado por Ant Group, la Universidad de Wuhan y MYbank, presentado en CVPR 2024. Su objetivo es proporcionar representaciones unificadas para la interpretación universal de imágenes de observación de la Tierra, abordando tareas como clasificación, segmentación semántica, detección de objetos y detección de cambios. El modelo integra de forma conjunta imágenes ópticas de alta resolución, series temporales multiespectrales de Sentinel-2, series temporales SAR de Sentinel-1 y contexto geográfico.
 
-El modelo fue preentrenado con 21,5 millones de grupos de muestras temporales multimodales espacialmente registradas, lo que le permite operar tanto en modo unimodal como multimodal, y tanto en escenarios estáticos como temporales. Según fuentes de prensa, el modelo cuenta con 2 mil millones de parámetros y su rendimiento supera al de modelos similares en 17 escenarios de prueba. La versión publicada en este repositorio de HuggingFace incluye el código de entrenamiento, inferencia y evaluación, aunque los pesos preentrenados originales se proporcionarán en una actualización futura.
+El modelo fue preentrenado con 21,5 millones de grupos de muestras temporales multimodales espacialmente registradas, lo que le permite operar tanto en modo unimodal como multimodal, y tanto en escenarios estáticos como temporales. Según fuentes de prensa, el modelo cuenta con 2 mil millones de parámetros y su rendimiento supera al de modelos similares en 17 escenarios de prueba. La versión publicada en este repositorio de Hugging Face incluye el código de entrenamiento, inferencia y evaluación, aunque los pesos preentrenados originales se proporcionarán en una actualización futura.
 
 La relevancia actual de SkySense radica en que aborda uno de los retos principales de la teledetección: la fusión efectiva de múltiples fuentes de datos heterogéneas (óptico, multiespectral y SAR) con información temporal, algo esencial para aplicaciones como monitorización de cultivos, gestión de desastres o seguimiento del cambio climático. El repositorio incluye además soporte para entornos GPU y DCU, y una integración con la plataforma OneCode de OneScience.
 
@@ -87,10 +87,10 @@ La comparativa se limita a SkySense++ por ser la evolución directa del modelo. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OneScience-Group/SkySense
+- Repositorio Hugging Face: https://huggingface.co/OneScience-Group/SkySense
 - Paper original (arXiv): https://arxiv.org/abs/2312.10115
 - Repositorio oficial SkySense (GitHub): https://github.com/Jack-bo1220/SkySense
 - Repositorio SkySense++ (GitHub): https://github.com/kang-wu/SkySensePlusPlus
 - Paper SkySense++ (Nature Machine Intelligence): https://www.nature.com/articles/s42256-025-01078-8
 - Noticia sobre SkySense (1ai.net): https://www.1ai.net/en/newsflashes/4659.html
-- Organización OneScience en HuggingFace: https://huggingface.co/OneScience-Group/models
+- Organización OneScience en Hugging Face: https://huggingface.co/OneScience-Group/models

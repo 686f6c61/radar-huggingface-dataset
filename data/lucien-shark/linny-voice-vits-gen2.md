@@ -3,7 +3,7 @@
 # Ficha de modelo: Linny-Voice-VITS-Gen2
 
 ## Resumen
-El modelo **Linny-Voice-VITS-Gen2** es un sistema de síntesis de texto a voz (TTS) desarrollado por Lucien-shark. Según su nombre, emplea la arquitectura VITS (Conditional Variational Autoencoder with Adversarial Learning for End-to-End Text-to-Speech), un modelo de TTS end-to-end conocido por su eficiencia y calidad de muestreo. En la información disponible no se detallan el número de parámetros, la longitud de contexto (no aplica en TTS) ni los idiomas soportados. El repositorio de HuggingFace tiene un tamaño de 7,2 GB y su licencia aparece como unknown. Actualmente no tiene descargas ni likes, y su model card está vacía, lo que limita cualquier evaluación técnica.
+El modelo **Linny-Voice-VITS-Gen2** es un sistema de síntesis de texto a voz (TTS) desarrollado por Lucien-shark. Según su nombre, emplea la arquitectura VITS (Conditional Variational Autoencoder with Adversarial Learning for End-to-End Text-to-Speech), un modelo de TTS end-to-end conocido por su eficiencia y calidad de muestreo. En la información disponible no se detallan el número de parámetros, la longitud de contexto (no aplica en TTS) ni los idiomas soportados. El repositorio de Hugging Face tiene un tamaño de 7,2 GB y su licencia aparece como unknown. Actualmente no tiene descargas ni likes, y su model card está vacía, lo que limita cualquier evaluación técnica.
 
 ## Especificaciones tecnicas
 | Parametro | Valor |
@@ -47,6 +47,6 @@ No se dispone de información sobre modelos comparables en los materiales propor
 - Producción: cualquier intento de desplegar este modelo en producción requeriría una auditoría previa del repositorio y de los pesos, además de la obtención de una licencia válida.
 
 ## Enlaces
-- HuggingFace del modelo: https://huggingface.co/Lucien-shark/Linny-Voice-VITS-Gen2
+- Hugging Face del modelo: https://huggingface.co/Lucien-shark/Linny-Voice-VITS-Gen2
 - Dataset relacionado: https://huggingface.co/datasets/Lucien-shark/Linny-Voice-Tokenized-Cache-Gen2
 - Repositorio original de VITS (contexto sobre la arquitectura): https://github.com/jaywalnut310/vits

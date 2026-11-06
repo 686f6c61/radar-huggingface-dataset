@@ -6,7 +6,7 @@ El modelo `unignoramus/anlp-a2-p1-moe-top2` es un transformer decoder-only de ti
 
 Se trata de un modelo muy pequeno: 35,28 millones de parámetros totales y 28,99 millones activos, con 4 expertos en la capa MoE de los que se activan 2 por token (top-2 routing). Se entrenó sobre 36,54 millones de tokens del dataset `belumind/en-vi-ja-curated-500k-triplets`, y reporta una perplejidad de test de 11,07 y un BLEU de test de 26,37. La licencia es MIT, lo que permite uso comercial sin restricciones, aunque su valor práctico es principalmente académico y de investigación sobre enrutado de expertos.
 
-Su relevancia actual es limitada como producto, pero es útil como banco de pruebas reproducible: al compartir arquitectura base, datos y presupuesto de cómputo con otras cuatro variantes de feed-forward, permite aislar el efecto del MoE frente a alternativas densas en un régimen de entrenamiento de bajo coste. No se ha publicado información sobre longitud de contexto, idiomas declarados en los metadatos de HuggingFace ni benchmarks adicionales.
+Su relevancia actual es limitada como producto, pero es útil como banco de pruebas reproducible: al compartir arquitectura base, datos y presupuesto de cómputo con otras cuatro variantes de feed-forward, permite aislar el efecto del MoE frente a alternativas densas en un régimen de entrenamiento de bajo coste. No se ha publicado información sobre longitud de contexto, idiomas declarados en los metadatos de Hugging Face ni benchmarks adicionales.
 
 ## Especificaciones técnicas
 
@@ -17,7 +17,7 @@ Su relevancia actual es limitada como producto, pero es útil como banco de prue
 | Parametros activos | 28,99 M |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (no se publican pesos GGUF, AWQ, GPTQ ni cuantizaciones oficiales) |
-| Idiomas soportados | vietnamita, japones e ingles (idiomas de entrenamiento y de la tarea de traduccion, segun la model card); los metadatos de HuggingFace no declaran idiomas |
+| Idiomas soportados | vietnamita, japones e ingles (idiomas de entrenamiento y de la tarea de traduccion, segun la model card); los metadatos de Hugging Face no declaran idiomas |
 | Licencia | MIT |
 | Formato de pesos | Checkpoint `torch.save` con claves `model`, `state` y `config`; requiere `torch.load(..., weights_only=False)` |
 
@@ -25,7 +25,7 @@ Otros datos declarados: expertos totales 4, expertos activos 2, tokens de entren
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer decoder-only (es decir, causal, de tipo GPT) en el que la capa feed-forward densa se sustituye por una capa MoE con 4 expertos y enrutado top-2: cada token se procesa únicamente por 2 de los 4 expertos, de ahí que los parámetros activos (28,99 M) sean inferiores a los totales (35,28 M). El checkpoint es un payload plano de `torch.save` con las claves `model`, `state` y `config`, pensado para cargarse junto al código del transformer que acompana al repositorio; no se publica un `config.json` estándar de HuggingFace ni integración con `transformers`.
+El modelo es un transformer decoder-only (es decir, causal, de tipo GPT) en el que la capa feed-forward densa se sustituye por una capa MoE con 4 expertos y enrutado top-2: cada token se procesa únicamente por 2 de los 4 expertos, de ahí que los parámetros activos (28,99 M) sean inferiores a los totales (35,28 M). El checkpoint es un payload plano de `torch.save` con las claves `model`, `state` y `config`, pensado para cargarse junto al código del transformer que acompana al repositorio; no se publica un `config.json` estándar de Hugging Face ni integración con `transformers`.
 
 El entrenamiento se realizó sobre 36,54 millones de tokens del dataset `belumind/en-vi-ja-curated-500k-triplets` (aproximadamente 500 000 tripletas en-inglés, vi-inglés y ja-inglés), con la misma cantidad de tokens que las otras cuatro ablaciones de feed-forward del mismo trabajo, lo que permite comparaciones directas. No se documenta en la model card si hubo ajuste por RLHF, DPO u otra técnica de alineación, ni la composición exacta del dataset, el esquema de enrutado (por ejemplo, auxiliares de balanceo de carga) o innovaciones de decodificación. El resultado de test reportado es 11,07 de perplejidad y 26,37 de BLEU.
 
@@ -77,7 +77,7 @@ No se dispone de datos comparativos publicados en la informacion proporcionada. 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| anlp-a2-p1-moe-top2 | 35,28 M totales / 28,99 M activos | no disponible | MIT | Checkpoint `torch.save` en HuggingFace |
+| anlp-a2-p1-moe-top2 | 35,28 M totales / 28,99 M activos | no disponible | MIT | Checkpoint `torch.save` en Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -91,12 +91,12 @@ No se dispone de datos comparativos publicados en la informacion proporcionada. 
 - Licencia MIT: permite uso comercial, modificacion y redistribucion con atribucion y sin garantia; no hay restricciones adicionales, pero tampoco soporte ni mantenimiento.
 - Sin resultados de benchmarks en tareas distintas de la traduccion, por lo que no debe asumirse capacidad de razonamiento, codigo, matematicas o dialogo.
 - Repositorio con 0 descargas y 0 likes en el momento de la consulta: no hay comunidad, issues ni validacion independiente de los resultados reportados.
-- La busqueda web no devolvio ninguna fuente relevante sobre el modelo; toda la informacion procede de la model card y de los metadatos de HuggingFace.
+- La busqueda web no devolvio ninguna fuente relevante sobre el modelo; toda la informacion procede de la model card y de los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unignoramus/anlp-a2-p1-moe-top2
-- Dataset de entrenamiento citado en la model card: `belumind/en-vi-ja-curated-500k-triplets` (referencia disponible en HuggingFace, identificador indicado por el autor)
+- Modelo en Hugging Face: https://huggingface.co/unignoramus/anlp-a2-p1-moe-top2
+- Dataset de entrenamiento citado en la model card: `belumind/en-vi-ja-curated-500k-triplets` (referencia disponible en Hugging Face, identificador indicado por el autor)
 - Codigo del transformer: no disponible como enlace directo; la model card menciona un "repositorio acompante" sin URL
 - Paper, blog o demo: no disponibles
 - Resultados de busqueda web: no se encontro ningun enlace relevante sobre el modelo

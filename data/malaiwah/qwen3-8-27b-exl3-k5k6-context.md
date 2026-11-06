@@ -87,13 +87,13 @@ Frente al FP8 oficial: divergencia 0,003453 menor (IC 95 % [−0,004383, −0,00
 - El endpoint de chat del VLM trunca el texto a ~2.048 tokens; las peticiones de contexto largo deben enviarse a `/completions` con la plantilla aplicada manualmente.
 - La cuantizacion K5 de la atencion introduce una divergencia adicional de +0,002266 frente a la version hydrated (K6), aunque sigue siendo inferior al FP8 oficial.
 - Riesgo de alucinacion no cuantificado; la fidelidad se midio solo con divergencia KL y pruebas de aguja, no con tareas generativas estandar.
-- Idiomas soportados no documentados en la ficha de HuggingFace.
+- Idiomas soportados no documentados en la ficha de Hugging Face.
 - 0 descargas y 0 likes en el momento de la redaccion; comunidad de adopcion practicamente nula.
 - El parametro total reportado en safetensors (10,3B) no coincide con los 27B declarados del modelo base; posible discrepancia en los metadatos.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/malaiwah/Qwen3.8-27B-EXL3-K5K6-context
+- Repositorio Hugging Face: https://huggingface.co/malaiwah/Qwen3.8-27B-EXL3-K5K6-context
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Coleccion de builds: https://huggingface.co/collections/qwen38-27b-mixed-precision-exl3-measured-6a7fe0cb27817c23e4a57025
 - Build hydrated: https://huggingface.co/malaiwah/Qwen3.8-27B-EXL3-K5K6-hydrated

@@ -92,7 +92,7 @@ La comparación de calidad (MMLU, HumanEval, GSM8K u otros) no es posible con la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mlx-community/MiniCPM5-2B-8bit
+- Modelo en Hugging Face: https://huggingface.co/mlx-community/MiniCPM5-2B-8bit
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
 - Organización mlx-community: https://huggingface.co/mlx-community
 - Organización OpenBMB: https://huggingface.co/openbmb

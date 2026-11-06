@@ -6,7 +6,7 @@ TensorPEFT es una librería de ajuste fino eficiente en parámetros (PEFT) desar
 
 La innovación principal es que los átomos no se inicializan de forma aleatoria: se calculan como las componentes CP de rango uno dominantes del tensor de gradiente negativo mediante iteración de potencias de orden superior con deflación, a partir de una única sonda de gradiente antes del entrenamiento. Los coeficientes arrancan en cero, de modo que el modelo no cambia en el paso 0, y cada átomo parte de una dirección de descenso más pronunciado. Después, el entrenamiento es convencional con cualquier optimizador o con el `Trainer` de Hugging Face.
 
-El repositorio tiene un tamaño de 0.0 GB, sin descargas ni likes en el momento de la consulta, y está etiquetado con `region:us`. La model card declara licencia Apache 2.0 y `library_name: tensorpeft`, aunque la información de HuggingFace indica que la licencia no está disponible, lo que supone una discrepancia a tener en cuenta. El pipeline, los idiomas y los parámetros no están disponibles como metadatos del repositorio.
+El repositorio tiene un tamaño de 0.0 GB, sin descargas ni likes en el momento de la consulta, y está etiquetado con `region:us`. La model card declara licencia Apache 2.0 y `library_name: tensorpeft`, aunque la información de Hugging Face indica que la licencia no está disponible, lo que supone una discrepancia a tener en cuenta. El pipeline, los idiomas y los parámetros no están disponibles como metadatos del repositorio.
 
 ## Especificaciones técnicas
 
@@ -18,7 +18,7 @@ El repositorio tiene un tamaño de 0.0 GB, sin descargas ni likes en el momento 
 | Longitud de contexto | No disponible (heredada del modelo base) |
 | Tipos de cuantización | No disponible |
 | Idiomas soportados | No disponible |
-| Licencia | Apache 2.0 según la model card; no disponible según los metadatos de HuggingFace |
+| Licencia | Apache 2.0 según la model card; no disponible según los metadatos de Hugging Face |
 | Formato de pesos | `adapter_model.safetensors` y `adapter_config.json`; fusión a modelo HF plano con `merge_and_unload()` |
 
 ## Arquitectura y entrenamiento
@@ -83,7 +83,7 @@ Los presupuestos de TensorPEFT se corresponden con `atoms_per_group=1` (~9k), 4 
 
 | Método | Tipo | Presupuesto mínimo documentado | Contexto | Rendimiento (GPT-2 small, CE validación) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| TensorPEFT | Adaptador CP tensorial | ~1,5k parámetros | Heredado del modelo base | 1,231 a ~55k; 1,327 a ~9k | Apache 2.0 (model card) | Repo HuggingFace `Angshul/TensorPEFT` |
+| TensorPEFT | Adaptador CP tensorial | ~1,5k parámetros | Heredado del modelo base | 1,231 a ~55k; 1,327 a ~9k | Apache 2.0 (model card) | Repo Hugging Face `Angshul/TensorPEFT` |
 | LoRA | Adaptador de bajo rango por matriz | 37k (r=1 en q,v en todas las capas) | Heredado | 1,318 a ~37k; 1,430 a ~9k (r=1 en q,v de las 3 últimas capas) | No disponible en esta ficha | Estándar en el ecosistema PEFT |
 | VeRA | Adaptador con vectores compartidos | 24,6k | Heredado | 1,393 a ~37k | No disponible en esta ficha | Ecosistema PEFT |
 | (IA)³ | Adaptador por escalado de activaciones | No disponible | Heredado | 1,289 a ~55k; 1,432 a ~9k | No disponible en esta ficha | Ecosistema PEFT |
@@ -93,7 +93,7 @@ Los presupuestos de TensorPEFT se corresponden con `atoms_per_group=1` (~9k), 4 
 - La evidencia experimental se limita a un único modelo base (GPT-2 124M) y una única tarea (ajuste sobre noticias en bengalí); no hay validación publicada en modelos mayores ni en otras tareas.
 - Con presupuestos de 115k parámetros o superiores, LoRA fue mejor en las pruebas de los autores; TensorPEFT no es la opción recomendada cuando el presupuesto es amplio.
 - En ~37k parámetros empata con LayerNorm tuning (p=0,37, 1/3 semillas ganadas), por lo que la ventaja no es concluyente en ese régimen.
-- Discrepancia de licencia: la model card declara Apache 2.0, pero los metadatos de HuggingFace indican licencia no disponible; conviene verificar antes de uso comercial.
+- Discrepancia de licencia: la model card declara Apache 2.0, pero los metadatos de Hugging Face indican licencia no disponible; conviene verificar antes de uso comercial.
 - El repositorio tiene 0 descargas y 0 likes, sin pipeline ni idiomas declarados, lo que indica ausencia de validación por la comunidad.
 - El rendimiento depende críticamente de la inicialización con sonda de gradiente (`init_batches`, `hopm_iters`); no se documenta su sensibilidad fuera del caso GPT-2.
 - No se documentan sesgos, riesgo de alucinación ni limitaciones idiomáticas propias, ya que la librería no aporta un modelo con esos comportamientos: hereda los del modelo base.

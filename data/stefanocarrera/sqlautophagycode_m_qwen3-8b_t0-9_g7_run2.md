@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.9_g7_run2` es un checkpoint publicado en HuggingFace por el usuario stefanocarrera. Por la nomenclatura del identificador, todo apunta a un ajuste fino (o un derivado de generacion) sobre el modelo base Qwen3-8B, con los parametros `t0.9` y `g7` probablemente referidos a configuracion de decodificacion (temperatura 0.9) y a un identificador de grupo o ejecucion (`run2`). El sufijo `sqlautophagycode` sugiere un entrenamiento orientado a SQL y generacion de codigo, aunque esto no esta confirmado en la documentacion.
+`stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.9_g7_run2` es un checkpoint publicado en Hugging Face por el usuario stefanocarrera. Por la nomenclatura del identificador, todo apunta a un ajuste fino (o un derivado de generacion) sobre el modelo base Qwen3-8B, con los parametros `t0.9` y `g7` probablemente referidos a configuracion de decodificacion (temperatura 0.9) y a un identificador de grupo o ejecucion (`run2`). El sufijo `sqlautophagycode` sugiere un entrenamiento orientado a SQL y generacion de codigo, aunque esto no esta confirmado en la documentacion.
 
-La model card publicada es la plantilla automatica de HuggingFace sin rellenar: no incluye desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros ni resultados de evaluacion. El repositorio tiene 0 descargas y 0 likes, y ocupa 0.2 GB, un tamano llamativamente pequeno para un modelo de 8.000 millones de parametros (un checkpoint denso en bf16 ronda los 16 GB), lo que sugiere que podria tratarse de un adaptador, un subconjunto parcial de pesos o una publicacion incompleta.
+La model card publicada es la plantilla automatica de Hugging Face sin rellenar: no incluye desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros ni resultados de evaluacion. El repositorio tiene 0 descargas y 0 likes, y ocupa 0.2 GB, un tamano llamativamente pequeno para un modelo de 8.000 millones de parametros (un checkpoint denso en bf16 ronda los 16 GB), lo que sugiere que podria tratarse de un adaptador, un subconjunto parcial de pesos o una publicacion incompleta.
 
 Por tanto, esta ficha describe lo verificable desde los metadatos y, cuando es necesario, extrapola comportamiento a partir del modelo base declarado en el nombre. Cualquier dato no documentado se marca explicitamente como no disponible. La relevancia actual del checkpoint es limitada: no hay evidencia de uso, evaluacion ni soporte por parte de la comunidad.
 
@@ -29,7 +29,7 @@ Por tanto, esta ficha describe lo verificable desde los metadatos y, cuando es n
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura concreta de este checkpoint. El tag `unsloth` indica que el entrenamiento o la conversion se realizaron con la libreria Unsloth, habitualmente empleada para fine-tuning eficiente en memoria mediante LoRA/QLoRA sobre modelos transformer. El tag `arxiv:1910.09700` corresponde a la calculadora de impacto ambiental de Lacoste et al. (2019) que aparece por defecto en la plantilla de model card de HuggingFace, no a un paper propio del modelo.
+No hay informacion publicada sobre la arquitectura concreta de este checkpoint. El tag `unsloth` indica que el entrenamiento o la conversion se realizaron con la libreria Unsloth, habitualmente empleada para fine-tuning eficiente en memoria mediante LoRA/QLoRA sobre modelos transformer. El tag `arxiv:1910.09700` corresponde a la calculadora de impacto ambiental de Lacoste et al. (2019) que aparece por defecto en la plantilla de model card de Hugging Face, no a un paper propio del modelo.
 
 Tampoco se documentan volumen de tokens, composicion del dataset, tecnicas de alineacion (RLHF, DPO, ORPO) ni innovaciones como decodificacion especulativa o atencion lineal. El nombre del repositorio apunta a un ajuste orientado a SQL y codigo, con temperatura de muestreo 0.9, pero se desconoce si se trata de un fine-tuning supervisado, de una destilacion o simplemente de un volcado de pesos generado durante un experimento. El tamano del repositorio (0.2 GB) es incompatible con un checkpoint completo de 8B en precision de 16 bits, lo que refuerza la hipotesis de un adaptador LoRA o de una publicacion parcial.
 
@@ -75,7 +75,7 @@ No hay requisitos publicados por el autor. Las siguientes cifras son estimacione
 - Inferencia en cuantizacion de 4 bits: en torno a 5-6 GB de VRAM, con perdida de calidad variable segun el metodo.
 - GPU de centro de datos: A100 40/80 GB, H100, L40S y equivalentes permiten margen sobrado para contextos largos y lotes grandes.
 - GPU de consumo: una RTX 4090 (24 GB) o RTX 3090 (24 GB) puede ejecutar el modelo en FP16 con contexto moderado; tarjetas de 8-12 GB (RTX 3060, RTX 4070) requeririan cuantizacion de 4 bits.
-- Opciones de despliegue: vLLM o TGI para servicio de alto rendimiento con FP16; llama.cpp u Ollama para cuantizaciones GGUF en hardware limitado. El tag `endpoints_compatible` sugiere compatibilidad con los endpoints de HuggingFace, aunque no esta documentada.
+- Opciones de despliegue: vLLM o TGI para servicio de alto rendimiento con FP16; llama.cpp u Ollama para cuantizaciones GGUF en hardware limitado. El tag `endpoints_compatible` sugiere compatibilidad con los endpoints de Hugging Face, aunque no esta documentada.
 - Latencia y throughput: no disponibles. Dependen del hardware, la cuantizacion y la longitud de contexto, y no se han publicado mediciones para este checkpoint.
 - Advertencia sobre el tamano: dado que el repositorio ocupa 0.2 GB, es posible que los pesos no esten completos o que se trate de un adaptador, en cuyo caso los requisitos anteriores no aplicarian directamente y habria que cargar primero el modelo base.
 
@@ -85,10 +85,10 @@ La comparativa se establece frente al hipotetico modelo base y a otras alternati
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| sqlautophagycode_M_Qwen3-8B_t0.9_g7_run2 | no disponible (nombre indica 8B) | no disponible | no disponible | HuggingFace, 0 descargas, 0 likes |
-| Qwen3-8B | 8.000 millones aprox. (denso) | 32.768 tokens nativos, ampliable | Apache 2.0 | HuggingFace, ampliamente utilizado |
-| Llama 3.1 8B | 8.000 millones aprox. (denso) | 128.000 tokens | Licencia comunitaria de Llama 3.1 | HuggingFace, ampliamente utilizado |
-| Mistral 7B | 7.300 millones aprox. (denso) | 32.000 tokens aprox. | Apache 2.0 | HuggingFace, ampliamente utilizado |
+| sqlautophagycode_M_Qwen3-8B_t0.9_g7_run2 | no disponible (nombre indica 8B) | no disponible | no disponible | Hugging Face, 0 descargas, 0 likes |
+| Qwen3-8B | 8.000 millones aprox. (denso) | 32.768 tokens nativos, ampliable | Apache 2.0 | Hugging Face, ampliamente utilizado |
+| Llama 3.1 8B | 8.000 millones aprox. (denso) | 128.000 tokens | Licencia comunitaria de Llama 3.1 | Hugging Face, ampliamente utilizado |
+| Mistral 7B | 7.300 millones aprox. (denso) | 32.000 tokens aprox. | Apache 2.0 | Hugging Face, ampliamente utilizado |
 
 No es posible comparar rendimiento en benchmarks porque no existen resultados publicados para el checkpoint analizado. La comparacion de contexto, licencia y parametros de las alternativas se ofrece unicamente como referencia de categoria.
 
@@ -107,7 +107,7 @@ No es posible comparar rendimiento en benchmarks porque no existen resultados pu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.9_g7_run2
+- Modelo en Hugging Face: https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.9_g7_run2
 - Referencia del tag `arxiv:1910.09700` (Lacoste et al., 2019, calculadora de impacto ambiental): https://arxiv.org/abs/1910.09700
 - Modelo base probable, Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Libreria Unsloth (tag `unsloth`): https://github.com/unslothai/unsloth

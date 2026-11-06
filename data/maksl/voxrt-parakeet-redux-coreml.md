@@ -98,7 +98,7 @@ Frente a las dos alternativas, este repositorio no anade calidad de reconocimien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/MaksL/voxrt-parakeet-redux-coreml
+- Repositorio en Hugging Face: https://huggingface.co/MaksL/voxrt-parakeet-redux-coreml
 - Modelo base ternario: https://huggingface.co/moondream/parakeet-redux
 - Modelo NVIDIA original: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Runtime voxrt (Rust, Python, CLI, bindings de Swift y C): https://github.com/lmaksym/voxrt

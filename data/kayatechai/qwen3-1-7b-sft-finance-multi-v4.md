@@ -2,7 +2,7 @@
 
 ## Resumen
 
-KayaTechAI/Qwen3-1.7B-SFT-Finance-Multi-v4 es un ajuste fino supervisado (SFT) del modelo Qwen3-1.7B, publicado por el usuario KayaTechAI en HuggingFace. El nombre del repositorio indica que el ajuste esta orientado al dominio financiero y que se ha realizado sobre un modelo base ya cuantizado en 4 bits (unsloth/qwen3-1.7b-unsloth-bnb-4bit), utilizando la libreria Unsloth para acelerar el entrenamiento. Se distribuye bajo licencia Apache-2.0 y declara unicamente el idioma ingles.
+KayaTechAI/Qwen3-1.7B-SFT-Finance-Multi-v4 es un ajuste fino supervisado (SFT) del modelo Qwen3-1.7B, publicado por el usuario KayaTechAI en Hugging Face. El nombre del repositorio indica que el ajuste esta orientado al dominio financiero y que se ha realizado sobre un modelo base ya cuantizado en 4 bits (unsloth/qwen3-1.7b-unsloth-bnb-4bit), utilizando la libreria Unsloth para acelerar el entrenamiento. Se distribuye bajo licencia Apache-2.0 y declara unicamente el idioma ingles.
 
 Se trata de un modelo denso de aproximadamente 1.700 millones de parametros, por lo que se situa en la gama de modelos pequenos aptos para inferencia en GPU de consumo e incluso en CPU. La model card es minima: no incluye descripcion del dataset de entrenamiento, hiperparametros, numero de tokens vistos, resultados de evaluacion ni instrucciones de uso, mas alla de la atribucion a Unsloth.
 
@@ -23,7 +23,7 @@ Su relevancia es limitada pero concreta: ofrece un punto de partida de bajo cost
 | Modelo base | unsloth/qwen3-1.7b-unsloth-bnb-4bit |
 | Librerias declaradas | transformers, trl, unsloth, text-generation-inference |
 | Tamano del repositorio | 0,2 GB |
-| Fecha de creacion | 2026-09-21 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-21 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -76,11 +76,11 @@ Los datos de los modelos comparables proceden de su documentacion publica; la co
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| KayaTechAI/Qwen3-1.7B-SFT-Finance-Multi-v4 | ~1,7B | no disponible | Apache-2.0 | HuggingFace, 0 descargas | Ajuste SFT financiero, sin benchmarks ni documentacion de entrenamiento |
-| Qwen3-1.7B (base oficial) | 1,7B | 32.768 tokens (ampliable con YaRN) | Apache-2.0 | HuggingFace, ampliamente usado | Modelo denso con modos de razonamiento; referencia de partida de este ajuste |
-| Qwen2.5-1.5B-Instruct | 1,5B | 32.768 tokens | Apache-2.0 | HuggingFace, muy extendido | Alternativa madura, con benchmarks publicados y soporte amplio en herramientas |
-| Llama-3.2-1B-Instruct | 1,2B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, ampliamente usado | Ventana de contexto mucho mayor, pero licencia con restricciones adicionales |
-| SmolLM2-1.7B-Instruct | 1,7B | 8.192 tokens | Apache-2.0 | HuggingFace | Tamano equivalente, contexto mas corto, ecosystema de herramientas menor |
+| KayaTechAI/Qwen3-1.7B-SFT-Finance-Multi-v4 | ~1,7B | no disponible | Apache-2.0 | Hugging Face, 0 descargas | Ajuste SFT financiero, sin benchmarks ni documentacion de entrenamiento |
+| Qwen3-1.7B (base oficial) | 1,7B | 32.768 tokens (ampliable con YaRN) | Apache-2.0 | Hugging Face, ampliamente usado | Modelo denso con modos de razonamiento; referencia de partida de este ajuste |
+| Qwen2.5-1.5B-Instruct | 1,5B | 32.768 tokens | Apache-2.0 | Hugging Face, muy extendido | Alternativa madura, con benchmarks publicados y soporte amplio en herramientas |
+| Llama-3.2-1B-Instruct | 1,2B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, ampliamente usado | Ventana de contexto mucho mayor, pero licencia con restricciones adicionales |
+| SmolLM2-1.7B-Instruct | 1,7B | 8.192 tokens | Apache-2.0 | Hugging Face | Tamano equivalente, contexto mas corto, ecosystema de herramientas menor |
 
 ## Limitaciones y advertencias
 
@@ -99,10 +99,10 @@ Los datos de los modelos comparables proceden de su documentacion publica; la co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KayaTechAI/Qwen3-1.7B-SFT-Finance-Multi-v4
+- Modelo en Hugging Face: https://huggingface.co/KayaTechAI/Qwen3-1.7B-SFT-Finance-Multi-v4
 - Modelo base: https://huggingface.co/unsloth/qwen3-1.7b-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Pagina de la familia Qwen3 en HuggingFace: https://huggingface.co/Qwen
+- Pagina de la familia Qwen3 en Hugging Face: https://huggingface.co/Qwen
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Documentacion de text-generation-inference: https://github.com/huggingface/text-generation-inference
 - Paper tecnico de Qwen3: https://arxiv.org/abs/2505.09388

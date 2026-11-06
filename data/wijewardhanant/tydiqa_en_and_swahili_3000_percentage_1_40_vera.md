@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`WijewardhanaNT/tydiqa_en_and_swahili_3000_percentage_1_40_VeRA` es un adaptador PEFT publicado en HuggingFace sobre el modelo base `meta-llama/Llama-3.1-8B`. Por su nombre, el adaptador está orientado a ajuste fino para pregunta-respuesta extractiva sobre el conjunto TyDi QA en inglés y suajili, con un subconjunto de aproximadamente 3.000 ejemplos. El repositorio contiene únicamente los pesos del adaptador (0,1 GB), no un modelo completo, y la librería declarada es `peft` con pesos en `safetensors`.
+`WijewardhanaNT/tydiqa_en_and_swahili_3000_percentage_1_40_VeRA` es un adaptador PEFT publicado en Hugging Face sobre el modelo base `meta-llama/Llama-3.1-8B`. Por su nombre, el adaptador está orientado a ajuste fino para pregunta-respuesta extractiva sobre el conjunto TyDi QA en inglés y suajili, con un subconjunto de aproximadamente 3.000 ejemplos. El repositorio contiene únicamente los pesos del adaptador (0,1 GB), no un modelo completo, y la librería declarada es `peft` con pesos en `safetensors`.
 
 El interés del artefacto es fundamentalmente de investigación: permite reproducir experimentos de ajuste fino parametralmente eficiente (el sufijo del identificador apunta a VeRA, aunque el autor no lo confirma en la model card) sobre una tarea multilingüe de comprensión lectora. El modelo base aporta una ventana de contexto de 128.000 tokens, arquitectura transformer decoder-only con grouped-query attention y licencia comunitaria de Meta, pero ninguna de estas características se documenta explícitamente en el repositorio.
 
-La model card es la plantilla por defecto de HuggingFace sin rellenar: no hay descripción, licencia, idiomas declarados, datos de entrenamiento, hiperparámetros ni resultados de evaluación. Con 8 descargas y 0 likes en el momento de la consulta, se trata de un artefacto sin validación externa, por lo que cualquier uso en producción exigiría una evaluación propia previa.
+La model card es la plantilla por defecto de Hugging Face sin rellenar: no hay descripción, licencia, idiomas declarados, datos de entrenamiento, hiperparámetros ni resultados de evaluación. Con 8 descargas y 0 likes en el momento de la consulta, se trata de un artefacto sin validación externa, por lo que cualquier uso en producción exigiría una evaluación propia previa.
 
 ## Especificaciones técnicas
 
@@ -17,13 +17,13 @@ La model card es la plantilla por defecto de HuggingFace sin rellenar: no hay de
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No disponible en el repositorio. Heredada del modelo base: 128.000 tokens (no confirmado por el autor) |
 | Tipos de cuantizacion | No disponible. El autor no publica versiones cuantizadas (GGUF, AWQ, GPTQ) |
-| Idiomas soportados | El identificador menciona ingles y suajili; los metadatos de HuggingFace no declaran idiomas. No disponible como lista oficial |
+| Idiomas soportados | El identificador menciona ingles y suajili; los metadatos de Hugging Face no declaran idiomas. No disponible como lista oficial |
 | Licencia | No disponible (la model card deja el campo vacio) |
 | Formato de pesos | safetensors (adaptador PEFT) |
 | Tamano del repositorio | 0,1 GB |
 | Libreria / version | peft (framework PEFT 0.17.1 declarado en la model card) |
 | Modelo base | meta-llama/Llama-3.1-8B |
-| Fecha de creacion / actualizacion | 22 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de creacion / actualizacion | 22 de septiembre de 2026 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -93,7 +93,7 @@ La comparación se limita a parámetros, contexto, tipo, licencia y disponibilid
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WijewardhanaNT/tydiqa_en_and_swahili_3000_percentage_1_40_VeRA
+- Modelo en Hugging Face: https://huggingface.co/WijewardhanaNT/tydiqa_en_and_swahili_3000_percentage_1_40_VeRA
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Paper citado en la model card (etiqueta `arxiv:1910.09700`), Lacoste et al., 2019, sobre cálculo de emisiones de carbono: https://arxiv.org/abs/1910.09700
 - Paper de referencia del conjunto TyDi QA, Clark et al., 2020 (referencia externa al repositorio, incluida por ser el origen del dataset nombrado): https://arxiv.org/abs/2003.05002

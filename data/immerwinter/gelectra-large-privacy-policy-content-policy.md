@@ -77,7 +77,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Immerwinter/gelectra-large-privacy-policy-content-policy)
+- [Modelo en Hugging Face](https://huggingface.co/Immerwinter/gelectra-large-privacy-policy-content-policy)
 - [Modelo base: deepset/gelectra-large](https://huggingface.co/deepset/gelectra-large)
 - [Modelo de contexto del pipeline](https://huggingface.co/Immerwinter/gbert-large-privacy-policy-context)
 - [Modelo de tema del pipeline](https://huggingface.co/Immerwinter/gbert-large-privacy-policy-topic)

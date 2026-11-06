@@ -6,7 +6,7 @@ Quds-v4-xl-unified es un modelo de reconocimiento automatico del habla (ASR) par
 
 Tecnicamente, las etiquetas del repositorio apuntan a una arquitectura FastConformer con decodificador hibrido de tipo RNNT (recurrent neural network transducer), un diseno habitual en modelos ASR modernos por su buen equilibrio entre latencia y precision. La etiqueta "timestamp" indica que el modelo produce marcas temporales a nivel de palabra o segmento, lo que facilita el subtitulado y la alineacion.
 
-La relevancia del modelo es discutible en el momento de redactar esta ficha: no tiene descargas ni "likes", no publica licencia, no incluye resultados de benchmarks y el unico canal de acceso indicado es contactar por email para probar o comprar. Esto lo situa como un modelo comercial cerrado y sin validacion publica independiente, algo poco comun en HuggingFace y que condiciona cualquier evaluacion seria.
+La relevancia del modelo es discutible en el momento de redactar esta ficha: no tiene descargas ni "likes", no publica licencia, no incluye resultados de benchmarks y el unico canal de acceso indicado es contactar por email para probar o comprar. Esto lo situa como un modelo comercial cerrado y sin validacion publica independiente, algo poco comun en Hugging Face y que condiciona cualquier evaluacion seria.
 
 ## Especificaciones tecnicas
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Tipo | Idiomas | Contexto / audio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Quds-v4-xl-unified | ASR especializado (FastConformer + RNNT) | Persa | no disponible | no disponible | Comercial, previa solicitud por email |
-| Quds-v4-onnx (modelo base del mismo autor) | ASR (ONNX) | Persa | no disponible | no disponible | Publico en HuggingFace |
+| Quds-v4-onnx (modelo base del mismo autor) | ASR (ONNX) | Persa | no disponible | no disponible | Publico en Hugging Face |
 | Whisper large-v3 (OpenAI) | ASR multilingue seq2seq | Multilingue, incluye persa | Ventanas de 30 s | MIT | Publico |
 | Modelos wav2vec2 / MMS para persa (Meta) | ASR auto-supervisado | Multilingue, incluye persa | no disponible | Mayoritariamente abierta (varia por variante) | Publico |
 
@@ -73,15 +73,15 @@ La comparacion de rendimiento entre Quds-v4-xl-unified y estas alternativas no e
 
 - Licencia no especificada: no se puede determinar si el uso comercial esta permitido. La model card sugiere un modelo de pago ("buy") y canaliza el acceso a traves de email, lo que apunta a un producto propietario.
 - Ausencia total de benchmarks: no hay evidencia publica de WER ni de rendimiento frente a alternativas abiertas como Whisper o wav2vec2.
-- Sin descargas ni valoraciones en HuggingFace: el modelo no ha sido validado por la comunidad en el momento de redactar esta ficha.
+- Sin descargas ni valoraciones en Hugging Face: el modelo no ha sido validado por la comunidad en el momento de redactar esta ficha.
 - Idiomas limitados al persa: no hay soporte multilingue documentado, lo que restringe su uso a contenido en farsi.
 - Sesgo de dominio: la especializacion en estudios islamicos puede degradar el rendimiento en persa coloquial, tecnico o de otros ambitos si el entrenamiento estuvo muy sesgado hacia el corpus religioso.
 - Riesgo de alucinacion inherente a los sistemas ASR: en audio ruidoso o con acentos no vistos, el decodificador puede generar texto plausible pero incorrecto, especialmente en terminologia especializada.
 - Modelo sin documentacion tecnica publica: no se detallan datos de entrenamiento, tamano, cuantizaciones soportadas ni requisitos de hardware, lo que dificulta planificar su integracion en produccion.
-- Fechas del repositorio (creacion y actualizacion en 2026) resultan atipicas respecto a la fecha actual, lo que conviene verificar directamente en HuggingFace.
+- Fechas del repositorio (creacion y actualizacion en 2026) resultan atipicas respecto a la fecha actual, lo que conviene verificar directamente en Hugging Face.
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/hojreh/Quds-v4-xl-unified
+- Pagina del modelo en Hugging Face: https://huggingface.co/hojreh/Quds-v4-xl-unified
 - Modelo base mencionado en la model card: https://huggingface.co/hojreh/Quds-v4-onnx
 - Foro de discusion para pruebas o compra: https://huggingface.co/hojreh/Quds-v4-xl-unified/discussions

@@ -79,6 +79,6 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/crozierm/eyes-and-ears-pocket
+- Modelo en Hugging Face: https://huggingface.co/crozierm/eyes-and-ears-pocket
 - Modelo base: https://huggingface.co/kyutai/pocket-tts
 - Herramienta de conversión: https://github.com/FluidInference/mobius

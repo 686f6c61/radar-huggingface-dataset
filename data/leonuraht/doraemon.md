@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Doraemon es un modelo de generacion de texto publicado en HuggingFace por el usuario Leonuraht bajo licencia MIT. El repositorio tiene un tamano de 0,4 GB, lo que sugiere un modelo de parametros reducidos, aunque la model card no especifica la arquitectura ni el numero exacto de parametros. El modelo esta etiquetado para generacion de texto en ingles (`en`) y utiliza PyTorch como framework.
+Doraemon es un modelo de generacion de texto publicado en Hugging Face por el usuario Leonuraht bajo licencia MIT. El repositorio tiene un tamano de 0,4 GB, lo que sugiere un modelo de parametros reducidos, aunque la model card no especifica la arquitectura ni el numero exacto de parametros. El modelo esta etiquetado para generacion de texto en ingles (`en`) y utiliza PyTorch como framework.
 
 La model card declara un `model-index` que atribuye al modelo el nombre "Yi-34B" y reporta un resultado de 64,59 en AI2 Reasoning Challenge (25-shot) obtenido del Open LLM Leaderboard. Esta atribucion es inconsistente con el tamano del repositorio (0,4 GB), por lo que debe interpretarse con cautela: el dato parece copiado de la ficha de Yi-34B y no verificado para este modelo concreto (`verified: false`).
 
@@ -42,7 +42,7 @@ Los datasets declarados en la model card son `openbmb/UltraData-Math`, `openbmb/
 - Generacion de texto en ingles para prototipos: util para pruebas rapidas de pipelines de generacion sin coste de infraestructura elevado.
 - Fine-tuning sobre dominios especificos: al estar bajo licencia MIT y tener pesos PyTorch, puede servir como base para ajuste en tareas de matematicas o codigo, dado el dataset declarado.
 - Evaluacion de tecnicas de cuantizacion: un modelo de este tamano es adecuado para probar cuantizaciones en CPU y GPU consumer.
-- Educacion y docencia: permite ilustrar el ciclo completo de publicacion de un modelo en HuggingFace con model card, datasets y licencia.
+- Educacion y docencia: permite ilustrar el ciclo completo de publicacion de un modelo en Hugging Face con model card, datasets y licencia.
 - Pruebas de integracion con librerias de inferencia (transformers, llama.cpp si se generan pesos GGUF): util para validar tooling antes de escalar a modelos mayores.
 
 ## Benchmarks y rendimiento
@@ -80,7 +80,7 @@ No disponible. La informacion proporcionada no permite identificar modelos compa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Leonuraht/Doraemon
+- Hugging Face: https://huggingface.co/Leonuraht/Doraemon
 - Open LLM Leaderboard (fuente citada en la model card): https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard
 - Dataset UltraData-Math: https://huggingface.co/datasets/openbmb/UltraData-Math
 - Dataset Ultra-FineWeb-L3: https://huggingface.co/datasets/openbmb/Ultra-FineWeb-L3

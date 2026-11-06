@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros (encoder imagen) | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `gladia/qat-transfer-open_clip` | 3 backbones ViT-B/16, L/14, H/14 | No aplica | QAT y PTQ a 3 bits per-channel | MIT | HuggingFace (180 GB) |
-| OpenCLIP LAION-2B (upstream) | Mismos backbones | No aplica | Solo FP | MIT | HuggingFace / open_clip |
-| `gladia/qat-transfer-timm` | Backbones timm | No aplica | QAT y PTQ a 3 bits | MIT (según repo hermano) | HuggingFace |
-| `gladia/qat-transfer-text` | Modelos de texto | No disponible | QAT y PTQ a 3 bits | MIT (según repo hermano) | HuggingFace |
+| `gladia/qat-transfer-open_clip` | 3 backbones ViT-B/16, L/14, H/14 | No aplica | QAT y PTQ a 3 bits per-channel | MIT | Hugging Face (180 GB) |
+| OpenCLIP LAION-2B (upstream) | Mismos backbones | No aplica | Solo FP | MIT | Hugging Face / open_clip |
+| `gladia/qat-transfer-timm` | Backbones timm | No aplica | QAT y PTQ a 3 bits | MIT (según repo hermano) | Hugging Face |
+| `gladia/qat-transfer-text` | Modelos de texto | No disponible | QAT y PTQ a 3 bits | MIT (según repo hermano) | Hugging Face |
 
 La comparación relevante es contra los checkpoints OpenCLIP originales (misma arquitectura, sin QAT) y contra las otras familias del mismo proyecto (timm, text, vae), que aplican la misma metodología a otros dominios. No se dispone de datos de rendimiento para comparar accuracy entre ellos.
 
@@ -85,7 +85,7 @@ La comparación relevante es contra los checkpoints OpenCLIP originales (misma a
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gladia/qat-transfer-open_clip
+- Hugging Face: https://huggingface.co/gladia/qat-transfer-open_clip
 - Repositorio de código: https://github.com/gladia-research-group/qat-transfer
 - arXiv: https://arxiv.org/abs/2604.03420
 - OpenReview: https://openreview.net/forum?id=wrUEnnSgXa

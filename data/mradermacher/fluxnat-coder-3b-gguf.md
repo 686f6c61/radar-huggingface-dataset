@@ -19,11 +19,11 @@ La ficha presenta una limitacion importante: la model card publicada por mraderm
 | Tipos de cuantizacion | x-f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, IQ4_XS, Q2_K |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | GGUF (repositorio de cuantizaciones); el modelo base se distribuye en formato HuggingFace (convert_type: hf) |
+| Formato de pesos | GGUF (repositorio de cuantizaciones); el modelo base se distribuye en formato Hugging Face (convert_type: hf) |
 
 ## Arquitectura y entrenamiento
 
-No hay informacion disponible sobre la arquitectura del modelo base Fluxnat-Coder-3B. La model card del repositorio GGUF no describe capas, mecanismos de atencion, tipo de normalizacion ni ninguna innovacion tecnica. El unico dato estructural que puede inferirse es el nombre del modelo, que apunta a 3.000 millones de parametros, y el campo convert_type: hf de los metadatos, que indica que la conversion de partida se hizo desde pesos en formato HuggingFace.
+No hay informacion disponible sobre la arquitectura del modelo base Fluxnat-Coder-3B. La model card del repositorio GGUF no describe capas, mecanismos de atencion, tipo de normalizacion ni ninguna innovacion tecnica. El unico dato estructural que puede inferirse es el nombre del modelo, que apunta a 3.000 millones de parametros, y el campo convert_type: hf de los metadatos, que indica que la conversion de partida se hizo desde pesos en formato Hugging Face.
 
 Tampoco se dispone de informacion sobre el proceso de entrenamiento: numero de tokens, composicion del dataset, uso de RLHF, DPO u otras tecnicas de alineacion, ni si hubo una fase de ajuste especifico para codigo. Los metadatos del repositorio (quantize_version: 2, output_tensor_quantised: 1) unicamente describen la version del pipeline de cuantizacion de mradermacher, no caracteristicas del modelo. Se desconoce por completo el origen de los datos de entrenamiento y si el modelo base es un ajuste fino sobre otro modelo preentrenado o un entrenamiento desde cero.
 
@@ -77,7 +77,7 @@ Las cifras de VRAM que se indican a continuacion son estimaciones derivadas del 
 - Cabe en GPU de consumo: si. Practicamente todas las cuantizaciones caben en tarjetas con 6 GB o mas de VRAM (RTX 3050, RTX 3060, RTX 4060, RTX 2070). Las versiones Q4 y Q3 son viables incluso en GPUs de 4 GB.
 - GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4090 o Apple Silicon con memoria unificada (M1/M2/M3 con 8 GB o mas). Las GPU de centro de datos (A100, H100) no aportan ventaja para un modelo de este tamano y solo tendrian sentido en despliegues con muchas peticiones concurrentes.
 - Inferencia en CPU: viable con las cuantizaciones Q2_K a Q5_K_M utilizando llama.cpp. El rendimiento depende del numero de nucleos y del ancho de banda de memoria; no se dispone de medidas concretas.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python, text-generation-webui (oobabooga) y servidores compatibles con la API de OpenAI que consuman GGUF. Para vLLM o TGI seria preferible partir del repositorio del modelo base en formato HuggingFace, no de estas cuantizaciones.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python, text-generation-webui (oobabooga) y servidores compatibles con la API de OpenAI que consuman GGUF. Para vLLM o TGI seria preferible partir del repositorio del modelo base en formato Hugging Face, no de estas cuantizaciones.
 - Latencia y throughput: no disponible. No se han publicado mediciones de tokens por segundo para ninguna de las cuantizaciones.
 
 ## Comparativa con modelos similares
@@ -99,8 +99,8 @@ No disponible. La informacion proporcionada no incluye especificaciones del mode
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Fluxnat-Coder-3B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Fluxnat-Coder-3B-GGUF
 - Modelo base: https://huggingface.co/k4ran909/Fluxnat-Coder-3B
 - Perfil del cuantizador: https://huggingface.co/mradermacher
 
-Nota: la busqueda web realizada no ha devuelto ningun resultado relacionado con este modelo. Los unicos enlaces relevantes son los dos repositorios de HuggingFace indicados arriba. No se han localizado papers, blogs tecnicos, repositorios de codigo ni demos asociados al modelo Fluxnat-Coder-3B.
+Nota: la busqueda web realizada no ha devuelto ningun resultado relacionado con este modelo. Los unicos enlaces relevantes son los dos repositorios de Hugging Face indicados arriba. No se han localizado papers, blogs tecnicos, repositorios de codigo ni demos asociados al modelo Fluxnat-Coder-3B.

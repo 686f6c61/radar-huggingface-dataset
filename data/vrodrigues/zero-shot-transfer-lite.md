@@ -66,7 +66,7 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/vrodrigues/zero-shot-transfer-lite
+- Repositorio en Hugging Face: https://huggingface.co/vrodrigues/zero-shot-transfer-lite
 - Articulo sobre zero-shot transfer en Inferensys: https://inferensys.com/glossary/vision-language-action-models/multimodal-fusion-architectures/zero-shot-transfer
 - Guia de Ultralytics sobre few-shot, zero-shot y transfer learning: https://www.ultralytics.com/blog/understanding-few-shot-zero-shot-and-transfer-learning
 - Paper ZeroG sobre zero-shot transfer en grafos: https://arxiv.org/abs/2402.11235

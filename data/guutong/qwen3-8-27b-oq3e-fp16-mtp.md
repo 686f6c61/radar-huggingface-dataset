@@ -60,8 +60,8 @@ No se han publicado resultados de benchmarks específicos para esta cuantizació
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B (original) | 27B | 262K | FP16/BF16 | Apache 2.0 (por confirmar) | HuggingFace |
-| Qwen3.8-27B-oQ3e (esta cuantización) | 27B | 262K | 3-bit MLX | No disponible | HuggingFace |
+| Qwen3.8-27B (original) | 27B | 262K | FP16/BF16 | Apache 2.0 (por confirmar) | Hugging Face |
+| Qwen3.8-27B-oQ3e (esta cuantización) | 27B | 262K | 3-bit MLX | No disponible | Hugging Face |
 | Qwen3.5-27B (si existe) | 27B | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de benchmarks comparativos entre estas variantes. La cuantización oQ3e ofrece una ventaja de tamaño (12 GB frente a ~55 GB) a costa de una posible pérdida de fidelidad en tareas de precisión.
@@ -77,9 +77,9 @@ No se dispone de datos de benchmarks comparativos entre estas variantes. La cuan
 
 ## Enlaces
 
-- Modelo cuantizado en HuggingFace: https://huggingface.co/guutong/Qwen3.8-27B-oQ3e-fp16-mtp
+- Modelo cuantizado en Hugging Face: https://huggingface.co/guutong/Qwen3.8-27B-oQ3e-fp16-mtp
 - Repositorio oficial de Qwen3.8-27B (GitHub): https://github.com/AlibabaCloud-Official/Qwen3.8-27B
-- Modelo original en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-27B
+- Modelo original en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-27B
 - Serie Qwen3.8 (GitHub): https://github.com/QwenLM/Qwen3.8
 - Página de LM Studio para Qwen3.8-27B: https://lmstudio.ai/models/qwen/qwen3.8-27b
 - Recetas de vLLM para Qwen3.8-27B: https://recipes.vllm.ai/Qwen/Qwen3.8-27B

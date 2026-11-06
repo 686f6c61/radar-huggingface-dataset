@@ -4,7 +4,7 @@
 
 El modelo `yuhengtu-bytedance/sfm_unfiltered_midtrain_alignment-0k_1k_2k_merge` es un merge lineal de tres checkpoints intermedios de un modelo base denominado `unfiltered_midtrain_alignment`, desarrollado por el equipo de ByteDance (autor `yuhengtu-bytedance`). Se trata de un experimento de investigación sobre cómo la combinación de pesos a lo largo del entrenamiento afecta las propiedades de alineación del modelo final. El merge se ha realizado con la herramienta `mergekit` utilizando el método Linear (basado en el paper arXiv:2203.05482), tomando como base el checkpoint del paso 2000 y fusionando los pesos de los pasos 0 y 1000 con igual ponderación.
 
-El modelo resultante tiene 6.856.253.440 parámetros (aproximadamente 6,9 mil millones), lo que lo sitúa en la gama media de los LLM actuales. Los tags de HuggingFace indican que usa arquitectura `gpt_neox` (GPT-NeoX) y está preparado para generación de texto. No se proporciona información sobre licencia, idiomas soportados ni longitud de contexto. El repositorio ocupa 13,7 GB en formato `safetensors` con dtype `bfloat16`.
+El modelo resultante tiene 6.856.253.440 parámetros (aproximadamente 6,9 mil millones), lo que lo sitúa en la gama media de los LLM actuales. Los tags de Hugging Face indican que usa arquitectura `gpt_neox` (GPT-NeoX) y está preparado para generación de texto. No se proporciona información sobre licencia, idiomas soportados ni longitud de contexto. El repositorio ocupa 13,7 GB en formato `safetensors` con dtype `bfloat16`.
 
 Este modelo es relevante porque forma parte de una serie de experimentos (se han encontrado variantes como `4k-5k-6k-avg`) que investigan el impacto de fusionar checkpoints de entrenamiento en las capacidades de alineación y seguridad. Es un ejemplo de aplicación de técnicas de merge de modelos para estudiar el comportamiento de los LLM durante el entrenamiento, más que un modelo orientado a producción.
 
@@ -25,7 +25,7 @@ Este modelo es relevante porque forma parte de una serie de experimentos (se han
 
 El modelo es el resultado de un merge lineal de tres checkpoints de un mismo modelo base durante su entrenamiento. Según la configuración YAML del merge, se fusionan los pesos de los pasos `global_step0`, `global_step1000` y `global_step2000`, todos con peso 1.0, usando el paso 2000 como base. El método Linear (descrito en arXiv:2203.05482) realiza una media ponderada de los parámetros, con normalización activada y salida en `bfloat16`.
 
-No se dispone de información sobre el modelo base original: no se especifica el tamaño del contexto, el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas como RLHF o DPO. Los tags de HuggingFace indican que es un modelo de tipo `text-generation` y que es compatible con `text-generation-inference`. El nombre "unfiltered_midtrain_alignment" sugiere que el entrenamiento se centró en aspectos de alineación, pero no hay detalles adicionales.
+No se dispone de información sobre el modelo base original: no se especifica el tamaño del contexto, el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas como RLHF o DPO. Los tags de Hugging Face indican que es un modelo de tipo `text-generation` y que es compatible con `text-generation-inference`. El nombre "unfiltered_midtrain_alignment" sugiere que el entrenamiento se centró en aspectos de alineación, pero no hay detalles adicionales.
 
 ## Capacidades
 
@@ -82,7 +82,7 @@ No hay datos de rendimiento para comparar. El repositorio de `geodesic-research`
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_alignment-0k_1k_2k_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_alignment-0k_1k_2k_merge
 - Variante similar (4k-5k-6k-avg): https://huggingface.co/yuhengtu-bytedance/sfm-unfiltered-midtrain-alignment-4k-5k-6k-avg
 - Página de despliegue en FriendliAI (para la variante 4k-5k-6k-avg): https://friendli.ai/models/yuhengtu-bytedance/sfm-unfiltered-midtrain-alignment-4k-5k-6k-avg
 - Repositorio de geodesic-research con la serie de alineación: https://huggingface.co/geodesic-research/sfm_unfiltered_midtrain_alignment_upsampled_instruct

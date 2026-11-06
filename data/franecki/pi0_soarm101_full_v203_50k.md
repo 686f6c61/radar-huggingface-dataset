@@ -80,7 +80,7 @@ Los tres modelos de franecki comparten la misma base y tarea, diferenciandose en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/franecki/pi0_soarm101_full_v203_50k
+- Modelo en Hugging Face: https://huggingface.co/franecki/pi0_soarm101_full_v203_50k
 - Perfil del autor: https://huggingface.co/franecki
 - Dataset de entrenamiento: https://huggingface.co/datasets/franecki/pill_bottle_203
 - Repositorio openpi-SO100 (fine-tuning de pi0 para SO-100/SO-101): https://github.com/Maelic/openpi-SO100

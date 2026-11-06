@@ -35,7 +35,7 @@ Respecto al entrenamiento, tampoco hay datos sobre volumen de tokens, composicio
 - Generacion de texto conversacional: el modelo esta etiquetado como `conversational` y el pipeline declarado es de tipo texto, por lo que su uso previsto es el dialogo multi-turno.
 - Idiomas: unicamente ingles segun el campo `language` de la model card. No hay evidencia de capacidades multilingues.
 - Compatibilidad con runtimes GGUF: los pesos pueden cargarse en llama.cpp, Ollama, LM Studio y otras herramientas que consumen GGUF.
-- Compatibilidad con servidores de inferencia: la etiqueta `endpoints_compatible` sugiere que los ficheros pueden servirse a traves de endpoints compatibles con la API de HuggingFace o similares.
+- Compatibilidad con servidores de inferencia: la etiqueta `endpoints_compatible` sugiere que los ficheros pueden servirse a traves de endpoints compatibles con la API de Hugging Face o similares.
 - Capacidades de razonamiento, codigo, matematicas, vision, audio, tool calling o modo de pensamiento: no disponibles. La informacion proporcionada no documenta ninguna de estas capacidades.
 - Modelo de 362 M parametros: adecuado para tareas de generacion sencilla, continuacion de texto y experimentacion, no para razonamiento complejo.
 
@@ -87,7 +87,7 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/SmolBabble2-360m-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/SmolBabble2-360m-GGUF
 - Modelo base: https://huggingface.co/benni-ben/SmolBabble2-360m
 - Pagina de resumen y descargas del autor: https://hf.tst.eu/model#SmolBabble2-360m-GGUF
 - Guia de uso de ficheros GGUF (README de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

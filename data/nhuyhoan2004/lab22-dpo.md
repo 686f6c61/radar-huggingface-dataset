@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nhuyhoan2004/lab22-dpo` es un adaptador LoRA (Low-Rank Adaptation) entrenado mediante DPO (Direct Preference Optimization) sobre el modelo base `unsloth/Qwen2.5-3B-bnb-4bit`, una versión cuantizada a 4 bits de Qwen2.5-3B. El adaptador está publicado en HuggingFace por el usuario `nhuyhoan2004` y forma parte de un ejercicio académico (Lab 22) orientado a la alineación de modelos mediante preferencias humanas, como se observa en repositorios similares de la misma cohorte de estudiantes.
+El modelo `nhuyhoan2004/lab22-dpo` es un adaptador LoRA (Low-Rank Adaptation) entrenado mediante DPO (Direct Preference Optimization) sobre el modelo base `unsloth/Qwen2.5-3B-bnb-4bit`, una versión cuantizada a 4 bits de Qwen2.5-3B. El adaptador está publicado en Hugging Face por el usuario `nhuyhoan2004` y forma parte de un ejercicio académico (Lab 22) orientado a la alineación de modelos mediante preferencias humanas, como se observa en repositorios similares de la misma cohorte de estudiantes.
 
 El modelo resuelve el problema de alinear un modelo de lenguaje con preferencias humanas, mejorando la utilidad (helpfulness) y la seguridad (safety) de las respuestas respecto al modelo base. Su relevancia radica en que demuestra un flujo completo de entrenamiento de alineación: partiendo de un checkpoint SFT, se entrena un adaptador DPO y se compara el rendimiento antes y después de la alineación. El adaptador tiene un tamaño de repositorio de 0.1 GB y utiliza la librería PEFT, lo que indica que es un componente ligero que debe combinarse con el modelo base para su uso.
 
@@ -77,7 +77,7 @@ Los tres modelos pertenecen al mismo ejercicio académico (Lab 22) y comparten l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nhuyhoan2004/lab22-dpo
+- Modelo en Hugging Face: https://huggingface.co/nhuyhoan2004/lab22-dpo
 - Repositorio del lab (referencia): https://github.com/VinUni-AI20k/K4-Track3-Day22-DPO-ORPO-Alignment
 - Modelo similar (datnguyentien204): https://huggingface.co/datnguyentien204/lab22-dpo-vn
 - Modelo similar (StevenMup2004): https://huggingface.co/StevenMup/lab22-dpo-vn

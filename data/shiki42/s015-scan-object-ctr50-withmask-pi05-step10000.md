@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Contexto / datos | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Shiki42/s015-scan-object-ctr50-withmask-pi05-step10000 (este) | LoRA PI0.5 JAX, tarea scan object | Dataset Uniform50, 50 episodios / 14.163 fotogramas; paso 10.000/30.000 | no disponible | HuggingFace, 0 descargas |
-| Shiki42/s015-scan-object-ctr50-withmask-pi05-step20000 | LoRA PI0.5 JAX, mismo experimento | Mismo dataset; paso 20.000/30.000 | no disponible | HuggingFace |
+| Shiki42/s015-scan-object-ctr50-withmask-pi05-step10000 (este) | LoRA PI0.5 JAX, tarea scan object | Dataset Uniform50, 50 episodios / 14.163 fotogramas; paso 10.000/30.000 | no disponible | Hugging Face, 0 descargas |
+| Shiki42/s015-scan-object-ctr50-withmask-pi05-step20000 | LoRA PI0.5 JAX, mismo experimento | Mismo dataset; paso 20.000/30.000 | no disponible | Hugging Face |
 | π₀ (openpi) | VLA basado en flujo | no disponible | no disponible | Repositorio openpi |
 | π₀-FAST (openpi) | VLA autorregresivo basado en tokenizador FAST | no disponible | no disponible | Repositorio openpi |
 | π₀.₅ (openpi) | VLA basado en flujo, mejor generalizacion en entornos abiertos | no disponible | no disponible | Repositorio openpi |
@@ -91,7 +91,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shiki42/s015-scan-object-ctr50-withmask-pi05-step10000
+- Modelo en Hugging Face: https://huggingface.co/Shiki42/s015-scan-object-ctr50-withmask-pi05-step10000
 - Checkpoint hermano (paso 20.000): https://huggingface.co/Shiki42/s015-scan-object-ctr50-withmask-pi05-step20000
 - Dataset de entrenamiento: https://huggingface.co/datasets/Shiki42/ctr-scan-object-uniform50-20260917
 - Dataset relacionado (scan object, left-first): https://claru.ai/datasets/shiki42-ctr-scan-object-left-first-20260916

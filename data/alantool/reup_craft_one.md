@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Alantool/Reup_Craft_One es un repositorio de pesos publicado en HuggingFace por el usuario Alantool bajo licencia Apache 2.0, con un tamano de repositorio de 15,5 GB y sin model card mas alla de la linea de licencia. No se declara pipeline, ni arquitectura, ni numero de parametros, ni idiomas soportados, ni formato de pesos, ni resultados de evaluacion. En el momento de redactar esta ficha el repositorio acumula 0 descargas y 0 "likes", y no aparece indexado por ninguna fuente externa.
+Alantool/Reup_Craft_One es un repositorio de pesos publicado en Hugging Face por el usuario Alantool bajo licencia Apache 2.0, con un tamano de repositorio de 15,5 GB y sin model card mas alla de la linea de licencia. No se declara pipeline, ni arquitectura, ni numero de parametros, ni idiomas soportados, ni formato de pesos, ni resultados de evaluacion. En el momento de redactar esta ficha el repositorio acumula 0 descargas y 0 "likes", y no aparece indexado por ninguna fuente externa.
 
 La relevancia actual del modelo es limitada desde un punto de vista tecnico: sin documentacion, sin benchmarks y sin metadatos de tokenizador o configuracion publicados en la informacion disponible, no es posible verificar que hace el modelo, sobre que datos se entreno ni con que licencia de modelo base se genero. El unico dato cuantitativo firme es el tamano del repositorio (15,5 GB), que es compatible con pesos en precision completa o semiprecision de un modelo del orden de 7.000-7.500 millones de parametros, aunque esta inferencia no esta confirmada por el autor.
 
@@ -122,9 +122,9 @@ Para establecer una comparativa real habria que determinar primero la categoria 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Alantool/Reup_Craft_One
+- Modelo en Hugging Face: https://huggingface.co/Alantool/Reup_Craft_One
 - Model card del autor: https://huggingface.co/Alantool/Reup_Craft_One/blob/main/README.md
-- Pagina del autor en HuggingFace: https://huggingface.co/Alantool
+- Pagina del autor en Hugging Face: https://huggingface.co/Alantool
 - Paper o informe tecnico: no disponible
 - Repositorio de codigo: no disponible
 - Demo: no disponible

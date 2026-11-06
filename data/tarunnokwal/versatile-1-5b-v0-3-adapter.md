@@ -78,7 +78,7 @@ El adaptador no ofrece información suficiente para una comparativa rigurosa. Qw
 
 ## Enlaces
 
-- [HuggingFace - Versatile-1.5b-v0.3-adapter](https://huggingface.co/tarunnokwal/Versatile-1.5b-v0.3-adapter)
-- [HuggingFace - VST-LM_Versatile-1.5B (modelo base)](https://huggingface.co/tarunnokwal/VST-LM_Versatile-1.5B)
-- [HuggingFace - VST-LM_Versatile-1.0 (versión anterior)](https://huggingface.co/tarunnokwal/VST-LM_Versatile-1.0)
+- [Hugging Face - Versatile-1.5b-v0.3-adapter](https://huggingface.co/tarunnokwal/Versatile-1.5b-v0.3-adapter)
+- [Hugging Face - VST-LM_Versatile-1.5B (modelo base)](https://huggingface.co/tarunnokwal/VST-LM_Versatile-1.5B)
+- [Hugging Face - VST-LM_Versatile-1.0 (versión anterior)](https://huggingface.co/tarunnokwal/VST-LM_Versatile-1.0)
 - [Unsloth (librería de entrenamiento)](https://github.com/unslothai/unsloth)

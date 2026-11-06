@@ -4,7 +4,7 @@
 
 Melody1437-12B-GGUF es una cuantización en formato GGUF del modelo ReadyArt/Melody1437-12B, publicada por el usuario sebidev. Se trata de un modelo de 11.907.350.576 parámetros (aproximadamente 12B) orientado a roleplay conversacional e instrucciones, según las etiquetas declaradas por el autor. El modelo base emplea una arquitectura de la familia identificada en las etiquetas como "gemma-4" y está afinado específicamente para diálogo de rol, incluyendo contenido para adultos.
 
-La relevancia de esta ficha radica en que el repositorio únicamente contiene los pesos cuantizados (GGUF), no el modelo original, por lo que su función es facilitar la inferencia local en hardware de consumo mediante herramientas como llama.cpp, Ollama o KoboldCpp. La model card del autor no aporta detalles técnicos verificables sobre entrenamiento, dataset o evaluación: la práctica totalidad del README consiste en hojas de estilo CSS para el renderizado de la propia página de HuggingFace.
+La relevancia de esta ficha radica en que el repositorio únicamente contiene los pesos cuantizados (GGUF), no el modelo original, por lo que su función es facilitar la inferencia local en hardware de consumo mediante herramientas como llama.cpp, Ollama o KoboldCpp. La model card del autor no aporta detalles técnicos verificables sobre entrenamiento, dataset o evaluación: la práctica totalidad del README consiste en hojas de estilo CSS para el renderizado de la propia página de Hugging Face.
 
 Se trata, por tanto, de un artefacto de cuantización de descarga directa con licencia Apache 2.0, pero con información técnica muy limitada publicada por el autor. El repositorio ocupa 132,1 GB, lo que sugiere que contiene múltiples archivos GGUF con distintos niveles de cuantización, aunque no se especifica el listado completo.
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativos entre estas variantes en la i
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sebidev/Melody1437-12B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/sebidev/Melody1437-12B-GGUF
 - Modelo base: https://huggingface.co/ReadyArt/Melody1437-12B
 - Repositorio GGUF del autor del base: https://huggingface.co/ReadyArt/Melody1437-12B-GGUF
 - Ficha de una cuantización alternativa: https://www.knowyourmodel.ai/models/huggingface%3Amradermacher%2FMelody1437-12B-i1-GGUF

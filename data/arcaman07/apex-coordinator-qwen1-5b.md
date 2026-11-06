@@ -84,6 +84,6 @@ No se dispone de información sobre otros modelos de coordinación de agentes co
 
 ## Enlaces
 
-- [HuggingFace - arcAman07/apex-coordinator-qwen1.5b](https://huggingface.co/arcAman07/apex-coordinator-qwen1.5b)
+- [Hugging Face - arcAman07/apex-coordinator-qwen1.5b](https://huggingface.co/arcAman07/apex-coordinator-qwen1.5b)
 - [Dataset APEX-Agents (mencionado en la model card)](https://huggingface.co/datasets/mercor/apex-agents)
 - [Modelo base Qwen2.5-1.5B-Instruct (referencia)](https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct)

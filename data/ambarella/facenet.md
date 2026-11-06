@@ -87,7 +87,7 @@ La comparativa se limita a nivel de arquitectura y disponibilidad, ya que no se 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Ambarella/Facenet
+- Repositorio Hugging Face: https://huggingface.co/Ambarella/Facenet
 - Paper original FaceNet: https://arxiv.org/abs/1503.03832
 - Implementación de referencia (bubbliiiing/facenet-pytorch): https://github.com/bubbliiiing/facenet-pytorch
 - Pesos originales FaceNet MobileNetV1 (Baidu Pan): https://pan.baidu.com/s/1K20hyxU_UgSej1eZWih0Ag (código de extracción: anv6)

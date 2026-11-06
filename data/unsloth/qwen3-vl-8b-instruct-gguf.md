@@ -17,7 +17,7 @@ Es relevante ahora porque combina una arquitectura de visión madura (ViT con In
 | Parámetros activos | No aplica (esta variante es densa; la familia incluye variantes MoE, pero la de 8B es densa) |
 | Longitud de contexto | 256K nativo, ampliable a 1M (según model card del modelo base) |
 | Tipos de cuantización | GGUF con cuantizaciones dinámicas Unsloth Dynamic 2.0; el repositorio incluye formatos de 4 bits y 16 bits (consultar la colección para el listado completo) |
-| Idiomas soportados | No disponible en la información de HuggingFace; la model card del modelo base indica OCR en 32 idiomas |
+| Idiomas soportados | No disponible en la información de Hugging Face; la model card del modelo base indica OCR en 32 idiomas |
 | Licencia | Apache 2.0 |
 | Formato de pesos | GGUF (la colección incluye además versiones de 4 bits y 16 bits) |
 
@@ -96,7 +96,7 @@ La familia Qwen3-VL está disponible en arquitecturas densas y MoE, con edicione
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unsloth/Qwen3-VL-8B-Instruct-GGUF
+- Modelo en Hugging Face: https://huggingface.co/unsloth/Qwen3-VL-8B-Instruct-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Colección Qwen3-VL de Unsloth: https://huggingface.co/collections/unsloth/qwen3-vl
 - Guía de Qwen3-VL (ejecución y fine-tuning): https://docs.unsloth.ai/models/qwen3-vl-run-and-fine-tune

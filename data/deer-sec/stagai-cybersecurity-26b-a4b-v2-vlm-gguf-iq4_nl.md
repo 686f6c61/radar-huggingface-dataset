@@ -96,7 +96,7 @@ Alternativas de terceros de la misma categoria (modelos de 20-30B especializados
 
 ## Enlaces
 
-- Repositorio HuggingFace (esta variante): https://huggingface.co/deer-sec/StagAI-CyberSecurity-26B-A4B-v2-VLM-GGUF-IQ4_NL
+- Repositorio Hugging Face (esta variante): https://huggingface.co/deer-sec/StagAI-CyberSecurity-26B-A4B-v2-VLM-GGUF-IQ4_NL
 - Repositorio hermano MLX Q8 (imagenes y referencia de la familia): https://huggingface.co/deer-sec/StagAI-CyberSecurity-26B-A4B-v2-VLM-MLX-Q8
 - Modelo base: https://huggingface.co/google/gemma-4-26b-a4b
 - Dataset de ajuste fino (japones, ChatML): https://huggingface.co/datasets/deer-sec/deer_sec-japanese-cybersecurity-chatml-v2

@@ -75,7 +75,7 @@ No disponible. La informacion proporcionada no incluye resultados que permitan c
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dougalldeepmind/2026-10-09-qwen36-0-da-tools-15-canary-septda-octbase | Base 27B; adaptador r=64 | 8192 (entrenamiento) | No disponible | No disponible | HuggingFace, 0 descargas |
+| dougalldeepmind/2026-10-09-qwen36-0-da-tools-15-canary-septda-octbase | Base 27B; adaptador r=64 | 8192 (entrenamiento) | No disponible | No disponible | Hugging Face, 0 descargas |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -93,7 +93,7 @@ No disponible. La informacion proporcionada no incluye resultados que permitan c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dougalldeepmind/2026-10-09-qwen36-0-da-tools-15-canary-septda-octbase
+- Modelo en Hugging Face: https://huggingface.co/dougalldeepmind/2026-10-09-qwen36-0-da-tools-15-canary-septda-octbase
 - Dataset declarado: https://huggingface.co/datasets/dougalldeepmind/2026-10-09-da-tools-15-canary-septda-octbase-mix
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.6-27B
 - Repositorio de codigo de origen: https://github.com/Matthew-Bozoukov/Lessons_from_constituitional_AFT

@@ -96,7 +96,7 @@ Las alternativas cuantizadas de otros modelos de tamano y categoria similar (por
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/npario/Xing4.0-29B-A4B-APEX-I-MiniPlus-V2.1-Abliterated-GGUF
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/npario/Xing4.0-29B-A4B-APEX-I-MiniPlus-V2.1-Abliterated-GGUF
 - Modelo base abliterated: https://huggingface.co/huihui-ai/Huihui-Xing4.0-29B-A4B-abliterated
 - Modelo original upstream: https://huggingface.co/XingChen-AGI/Xing4.0-29B-A4B
 - GGUF oficial del modelo original: https://huggingface.co/XingChen-AGI/Xing4.0-29B-A4B-GGUF

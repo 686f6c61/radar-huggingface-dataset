@@ -2,11 +2,11 @@
 
 ## Resumen
 
-coca-classification es un repositorio de HuggingFace publicado por el usuario setorres5 que contiene una implementación propia y compacta en PyTorch de una arquitectura denominada "Coca", orientada a tareas de clasificación. No se trata de un modelo entrenado ni de un release listo para producción: la propia model card describe el checkpoint incluido (model.safetensors) como una inicialización válida para pruebas de humo y experimentos controlados, y afirma explícitamente que no se reclama ninguna puntuación de benchmark. El conjunto de parámetros totales declarado en el peso real es de 33.088, es decir, unos 33 mil parámetros, un tamaño tres órdenes de magnitud por debajo de cualquier modelo de clasificación de uso habitual.
+coca-classification es un repositorio de Hugging Face publicado por el usuario setorres5 que contiene una implementación propia y compacta en PyTorch de una arquitectura denominada "Coca", orientada a tareas de clasificación. No se trata de un modelo entrenado ni de un release listo para producción: la propia model card describe el checkpoint incluido (model.safetensors) como una inicialización válida para pruebas de humo y experimentos controlados, y afirma explícitamente que no se reclama ninguna puntuación de benchmark. El conjunto de parámetros totales declarado en el peso real es de 33.088, es decir, unos 33 mil parámetros, un tamaño tres órdenes de magnitud por debajo de cualquier modelo de clasificación de uso habitual.
 
 El interés del repositorio es, por tanto, fundamentalmente técnico y pedagógico: sirve como artefacto de revisión de código, banco de pruebas de pipelines de entrenamiento e implementación de referencia de una combinación concreta de bloques (atención flash, fusión por cross attention, activación mish y normalización rmsnorm). La configuración etiquetada como "huge" es una denominación interna del script y no guarda relación con el número real de parámetros, lo que conviene tener presente al interpretar el repositorio.
 
-No hay información sobre el desarrollador más allá del identificador de HuggingFace, ni sobre datos de entrenamiento, idiomas soportados o resultados empíricos. Las búsquedas web realizadas no han devuelto ningún enlace relevante sobre este modelo; los resultados obtenidos corresponden a páginas corporativas de Microsoft y no guardan relación con el repositorio.
+No hay información sobre el desarrollador más allá del identificador de Hugging Face, ni sobre datos de entrenamiento, idiomas soportados o resultados empíricos. Las búsquedas web realizadas no han devuelto ningún enlace relevante sobre este modelo; los resultados obtenidos corresponden a páginas corporativas de Microsoft y no guardan relación con el repositorio.
 
 ## Especificaciones técnicas
 
@@ -93,6 +93,6 @@ La diferencia relevante no es de rendimiento, sino de naturaleza: las alternativ
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/setorres5/coca-classification
+- Repositorio en Hugging Face: https://huggingface.co/setorres5/coca-classification
 - Archivos incluidos en el repositorio: main.py (implementación y punto de entrada), config.json (configuración de arquitectura), training_args.json (receta de experimento), model.safetensors (checkpoint de inicialización), README.md (model card).
 - Paper, blog, repositorio de código adicional o demo: no disponible. Las búsquedas web realizadas no arrojaron ningún resultado relacionado con este modelo; los enlaces devueltos correspondían a páginas corporativas de Microsoft, sin relación con el repositorio.

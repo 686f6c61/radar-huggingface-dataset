@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`justinzheng/deit-retrieval-large` es un repositorio experimental publicado en HuggingFace que contiene una implementación propia de DeiT (Data-efficient Image Transformer) orientada a tareas de recuperación (retrieval). Lo desarrolla el usuario `justinzheng` y se distribuye bajo licencia MIT. El propio autor lo describe como un punto de partida para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, no como un modelo entrenado y evaluado.
+`justinzheng/deit-retrieval-large` es un repositorio experimental publicado en Hugging Face que contiene una implementación propia de DeiT (Data-efficient Image Transformer) orientada a tareas de recuperación (retrieval). Lo desarrolla el usuario `justinzheng` y se distribuye bajo licencia MIT. El propio autor lo describe como un punto de partida para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, no como un modelo entrenado y evaluado.
 
 El detalle más importante para cualquier evaluación es que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (smoke tests), no un modelo con pesos entrenados. La model card indica explícitamente que no se reclama ninguna puntuación de benchmark y que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio.
 
@@ -67,7 +67,7 @@ La comparacion es limitada porque este repositorio no publica metricas y no cont
 
 | Modelo | Parametros | Contexto / entrada | Licencia | Disponibilidad | Rendimiento en retrieval |
 |---|---|---|---|---|---|
-| justinzheng/deit-retrieval-large | 16.576 | No disponible | MIT | HuggingFace, checkpoint sin entrenar | No disponible |
+| justinzheng/deit-retrieval-large | 16.576 | No disponible | MIT | Hugging Face, checkpoint sin entrenar | No disponible |
 | DeiT-Small (Meta) | ~22 M | Imagen 224x224 | Apache-2.0 | Pesos entrenados en ImageNet | No orientado a retrieval |
 | CLIP ViT-B/32 (OpenAI) | ~151 M | Imagen + texto | MIT | Pesos entrenados | Metricas publicas en zero-shot retrieval |
 | SigLIP Base (Google) | ~93 M | Imagen + texto | Apache-2.0 | Pesos entrenados | Metricas publicas en zero-shot retrieval |
@@ -78,7 +78,7 @@ La comparacion es limitada porque este repositorio no publica metricas y no cont
 - No ha sido auditado en robustez, equidad ni transferencia de dominio, segun reconoce el propio autor.
 - Inconsistencia de nomenclatura: el identificador del repositorio indica `large` mientras que la model card declara escala `small`. Conviene verificar la configuracion real antes de asumir un tamano.
 - Riesgo de alucinacion: no aplica en el sentido generativo, pero si existe riesgo de interpretar erróneamente los pesos como funcionales al desplegar el modelo sin entrenar.
-- Implementacion personalizada: las utilidades de carga automatica de HuggingFace no funcionan sin un adaptador explicito, lo que complica la integracion directa.
+- Implementacion personalizada: las utilidades de carga automatica de Hugging Face no funcionan sin un adaptador explicito, lo que complica la integracion directa.
 - Trazabilidad limitada: 7 descargas y 0 likes en el momento de la consulta, sin historial de evaluacion ni resultados reproducibles.
 - Sin documentacion de sesgos, idiomas, cuantizaciones ni contexto.
 - Licencia MIT: permite uso comercial del codigo y de los pesos, pero el autor recomienda revisar por separado los terminos de las fuentes de datos externas que se utilicen con el repositorio.
@@ -86,5 +86,5 @@ La comparacion es limitada porque este repositorio no publica metricas y no cont
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/justinzheng/deit-retrieval-large
+- Pagina del modelo en Hugging Face: https://huggingface.co/justinzheng/deit-retrieval-large
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la busqueda web realizada. Los resultados devueltos no guardan relacion con el modelo.

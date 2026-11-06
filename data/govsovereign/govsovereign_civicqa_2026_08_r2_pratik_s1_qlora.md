@@ -25,13 +25,13 @@ La relevancia de este modelo radica en su enfoque de fine-tuning eficiente: al s
 
 El modelo es un adaptador LoRA entrenado con QLoRA (según sugiere el sufijo `qlora` en el nombre) sobre el modelo base `himalaya-ai/himalaya-gemma-4-e2b-it`. El modelo base pertenece a la familia Gemma de Google, una arquitectura transformer decoder-only con aproximadamente 2 mil millones de parámetros y orientada a instrucciones (sufijo `it`). El adaptador LoRA introduce matrices de bajo rango en las capas de atención y feed-forward, lo que permite fine-tuning eficiente con un número reducido de parámetros entrenables.
 
-El entrenamiento se realizó con la librería TRL (Transformer Reinforcement Learning) de HuggingFace, utilizando la técnica de Supervised Fine-Tuning (SFT). La presencia de Unsloth en las etiquetas indica que se utilizaron optimizaciones de velocidad y memoria propias de esta librería. No se dispone de información sobre el dataset de entrenamiento, el número de tokens, la composición de los datos ni si se aplicaron técnicas adicionales como RLHF o DPO. El nombre del modelo sugiere que el dataset podría estar relacionado con QA cívico o conocimiento de gobierno, pero esto no puede confirmarse.
+El entrenamiento se realizó con la librería TRL (Transformer Reinforcement Learning) de Hugging Face, utilizando la técnica de Supervised Fine-Tuning (SFT). La presencia de Unsloth en las etiquetas indica que se utilizaron optimizaciones de velocidad y memoria propias de esta librería. No se dispone de información sobre el dataset de entrenamiento, el número de tokens, la composición de los datos ni si se aplicaron técnicas adicionales como RLHF o DPO. El nombre del modelo sugiere que el dataset podría estar relacionado con QA cívico o conocimiento de gobierno, pero esto no puede confirmarse.
 
 ## Capacidades
 
 - Generación de texto conversacional: el modelo base es un modelo de instrucciones, por lo que el adaptador hereda esta capacidad.
 - Fine-tuning específico de dominio: el adaptador LoRA está diseñado para ajustar el comportamiento del modelo base hacia un dominio concreto (posiblemente QA cívico, según el nombre).
-- Integración con el ecosistema HuggingFace: compatible con transformers, PEFT y pipelines de text-generation.
+- Integración con el ecosistema Hugging Face: compatible con transformers, PEFT y pipelines de text-generation.
 - No se dispone de información sobre capacidades especiales como tool calling, agentes, razonamiento multi-paso, visión o audio.
 
 ## Casos de uso
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: el adaptador LoRA ocupa 0.4 GB, pero el modelo base de 2B parámetros requiere aproximadamente 4-5 GB en FP16. En total, se estiman entre 5 y 6 GB de VRAM para inferencia en FP16.
 - GPU recomendadas: cualquier GPU con al menos 8 GB de VRAM (RTX 3060, RTX 4060, RTX 4070, etc.) puede ejecutar el modelo en FP16. Para cuantizacion a 8 bits o 4 bits, una GPU con 4-6 GB podría ser suficiente.
 - Compatibilidad con GPU de consumo: sí, cabe en GPUs de consumo medio y alto.
-- Opciones de despliegue: al ser un adaptador PEFT, debe cargarse junto con el modelo base mediante la librería PEFT de HuggingFace. Puede desplegarse con transformers, vLLM (si se fusiona el adaptador con el modelo base) o mediante un script personalizado.
+- Opciones de despliegue: al ser un adaptador PEFT, debe cargarse junto con el modelo base mediante la librería PEFT de Hugging Face. Puede desplegarse con transformers, vLLM (si se fusiona el adaptador con el modelo base) o mediante un script personalizado.
 - Latencia y throughput: no disponible. Depende del hardware y de la optimización del modelo base.
 
 ## Comparativa con modelos similares
@@ -70,6 +70,6 @@ No disponible. No se dispone de información sobre modelos comparables en la mis
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Govsovereign/govsovereign_civicqa_2026_08_r2_pratik_s1_qlora
+- Repositorio Hugging Face: https://huggingface.co/Govsovereign/govsovereign_civicqa_2026_08_r2_pratik_s1_qlora
 - Modelo base: https://huggingface.co/himalaya-ai/himalaya-gemma-4-e2b-it (enlace inferido de la información proporcionada)
 - Referencia a Lacoste et al. (2019) sobre cálculo de emisiones: https://arxiv.org/abs/1910.09700 (citado en la model card, aunque sin datos concretos)

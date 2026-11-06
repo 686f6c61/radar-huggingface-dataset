@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`large-language-leonid/tern-124M-code-generator` (publicado en HuggingFace como "tinycode-generator") es un modelo de generación de texto especializado en convertir una petición en inglés en un plan corto y, a continuación, en código Python. Se trata de un ajuste fino sobre el modelo base `mikahniehaus/Tern`, un modelo de 124M de parámetros que emplea una arquitectura personalizada (no compatible con `Transformers AutoModel`). Lo desarrolla el usuario de HuggingFace `large-language-leonid` y está etiquetado dentro del programa "TinyCode".
+`large-language-leonid/tern-124M-code-generator` (publicado en Hugging Face como "tinycode-generator") es un modelo de generación de texto especializado en convertir una petición en inglés en un plan corto y, a continuación, en código Python. Se trata de un ajuste fino sobre el modelo base `mikahniehaus/Tern`, un modelo de 124M de parámetros que emplea una arquitectura personalizada (no compatible con `Transformers AutoModel`). Lo desarrolla el usuario de Hugging Face `large-language-leonid` y está etiquetado dentro del programa "TinyCode".
 
 Su rasgo más distintivo es el formato de distribución: incluye un grafo completo `model.onnx` en FP32 pensado para ejecutarse íntegramente en el navegador mediante ONNX Runtime Web sobre la CPU del visitante, sin necesidad de servidor de inferencia alojado. El tokenizador es un BPE de GPT-2 con separación de espacios sin pérdida.
 
@@ -91,6 +91,6 @@ No se dispone de información suficiente para comparar rendimiento, contexto o d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/large-language-leonid/tern-124M-code-generator
+- Modelo en Hugging Face: https://huggingface.co/large-language-leonid/tern-124M-code-generator
 - Modelo base Tern: https://huggingface.co/mikahniehaus/Tern
 - Nota sobre la búsqueda web: los resultados devueltos por la búsqueda no guardan relación con el modelo (corresponden a un centro de arte contemporáneo en Francia y a otras entidades homónimas), por lo que no se han podido incorporar enlaces adicionales relevantes (papers, blogs, repos o demos).

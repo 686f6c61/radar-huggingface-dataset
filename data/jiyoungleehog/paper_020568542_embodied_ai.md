@@ -60,7 +60,7 @@ No disponible. No existen modelos comparables, ya que se trata de un artículo a
 
 ## Enlaces
 
-- Repositorio HuggingFace: [https://huggingface.co/jiyoungleehog/paper_020568542_embodied_ai](https://huggingface.co/jiyoungleehog/paper_020568542_embodied_ai)
+- Repositorio Hugging Face: [https://huggingface.co/jiyoungleehog/paper_020568542_embodied_ai](https://huggingface.co/jiyoungleehog/paper_020568542_embodied_ai)
 - Referencias sobre IA encarnada (contexto general):
   - [CSET - China's Embodied AI: A Path to AGI](https://cset.georgetown.edu/wp-content/uploads/CSET-Chinas-Embodied-AI.pdf)
   - [Embodied AI Paper List (GitHub)](https://github.com/HCPLab-SYSU/Embodied_AI_Paper_List)

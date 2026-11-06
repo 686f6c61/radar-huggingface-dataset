@@ -82,7 +82,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/symrex/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V10-dequantized-oQ4e-mtp
+- Hugging Face: https://huggingface.co/symrex/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V10-dequantized-oQ4e-mtp
 - Versión V6 (GGUF): https://local-ai-zone.github.io/models/qwen3-6-35b-a3b-uncensored-genesis-hermes-v6.html
 - Guía de uso (en inglés): https://cldnavi.com/en/blog/qwen36-35b-genesis-hermes-guide-2026/
 - Benchmark de rendimiento (V7): https://omlx.ai/benchmarks/performance/qr6xtbwz

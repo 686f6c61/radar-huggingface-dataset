@@ -87,10 +87,10 @@ No se han publicado resultados de benchmarks adicionales (HumanEval, GSM8K, etc.
 
 | Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| GLM-5.3-CYBERSECURITY-FP8 (este) | 753B (MoE) | 131K en TP8 H200 | MIT | Ciberseguridad ofensiva, refusal reducido | HuggingFace, 37 descargas |
-| zai-org/GLM-5.3 (base) | 753B (MoE) | no disponible en la información | no disponible en la información | Propósito general alineado | HuggingFace |
-| dealignai/GLM-5.3-UNCENSORED-FP8 | 753B (MoE) | no disponible | no disponible | Uncensor general | HuggingFace |
-| JANGQ-AI/GLM-5.3-FP8 | 753B (MoE) | no disponible | no disponible | Cuantización FP8 del base | HuggingFace |
+| GLM-5.3-CYBERSECURITY-FP8 (este) | 753B (MoE) | 131K en TP8 H200 | MIT | Ciberseguridad ofensiva, refusal reducido | Hugging Face, 37 descargas |
+| zai-org/GLM-5.3 (base) | 753B (MoE) | no disponible en la información | no disponible en la información | Propósito general alineado | Hugging Face |
+| dealignai/GLM-5.3-UNCENSORED-FP8 | 753B (MoE) | no disponible | no disponible | Uncensor general | Hugging Face |
+| JANGQ-AI/GLM-5.3-FP8 | 753B (MoE) | no disponible | no disponible | Cuantización FP8 del base | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -105,7 +105,7 @@ No se han publicado resultados de benchmarks adicionales (HumanEval, GSM8K, etc.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hellnahbru/GLM-5.3-CYBERSECURITY-FP8-preserved-20261029
+- Hugging Face: https://huggingface.co/hellnahbru/GLM-5.3-CYBERSECURITY-FP8-preserved-20261029
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3
 - Cuantización FP8 base: https://huggingface.co/JANGQ-AI/GLM-5.3-FP8
 - Modelo hermano (uncensor general): https://huggingface.co/dealignai/GLM-5.3-UNCENSORED-FP8

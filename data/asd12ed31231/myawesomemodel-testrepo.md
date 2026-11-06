@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ASD12ED31231/MyAwesomeModel-TestRepo es un repositorio alojado en HuggingFace por el usuario ASD12ED31231, con licencia MIT y etiquetado como `transformers`, `pytorch`, `bert`, `feature-extraction` y `endpoints_compatible`. El repositorio registra 0 descargas y 0 likes, ocupa 0,0 GB y no publica ficheros de pesos visibles, por lo que no existe ningún artefacto verificable que permita ejecutar el modelo.
+ASD12ED31231/MyAwesomeModel-TestRepo es un repositorio alojado en Hugging Face por el usuario ASD12ED31231, con licencia MIT y etiquetado como `transformers`, `pytorch`, `bert`, `feature-extraction` y `endpoints_compatible`. El repositorio registra 0 descargas y 0 likes, ocupa 0,0 GB y no publica ficheros de pesos visibles, por lo que no existe ningún artefacto verificable que permita ejecutar el modelo.
 
 La model card asociada es un texto genérico con marcadores de posición: menciona "MyAwesomeModel", "MyAwesomeModel-Small", "Model1" y "Model2" sin identificarlos, y afirma mejoras de razonamiento con un salto de precisión del 70 % al 87,5 % en AIME 2025 y un aumento del consumo medio de 12K a 23K tokens por pregunta. No se indica arquitectura, número de parámetros, longitud de contexto, idiomas soportados ni composición del dataset de entrenamiento. Existe además una contradicción directa entre las etiquetas declaradas (BERT, `feature-extraction`) y la narrativa de la model card (modelo de razonamiento con *thinking mode*, búsqueda web y *function calling*).
 
@@ -82,7 +82,7 @@ Dato adicional declarado: en AIME 2025, la precisión habría pasado del 70 % en
 - VRAM estimada para inferencia: no disponible. Sin conocer el número de parámetros ni la longitud de contexto, no es posible calcular requisitos de memoria.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible. El repositorio ocupa 0,0 GB, por lo que no hay pesos que cargar en ninguna GPU.
-- Opciones de despliegue: no disponible. Las etiquetas incluyen `endpoints_compatible`, lo que sugiere compatibilidad con HuggingFace Inference Endpoints, pero no hay confirmación ni ficheros de pesos que servir.
+- Opciones de despliegue: no disponible. Las etiquetas incluyen `endpoints_compatible`, lo que sugiere compatibilidad con Hugging Face Inference Endpoints, pero no hay confirmación ni ficheros de pesos que servir.
 - Latencia y throughput: no disponible.
 - Consideración adicional: la model card menciona una variante "MyAwesomeModel-Small" con la misma arquitectura que su modelo base pero con el tokenizador del modelo principal, sin especificar tamaño ni requisitos.
 
@@ -113,5 +113,5 @@ No disponible. La model card referencia alternativas bajo las etiquetas anonimiz
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ASD12ED31231/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/ASD12ED31231/MyAwesomeModel-TestRepo
 - Búsqueda web realizada: los resultados devueltos corresponden a la agencia de viajes Opodo (opodo.fr) y no guardan ninguna relación con el modelo, su autor ni el dominio de inteligencia artificial. No se han encontrado enlaces relevantes adicionales (papers, blogs, repositorios de código o demos) en la información disponible.

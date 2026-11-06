@@ -92,6 +92,6 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- [HuggingFace - cknuteson/mythic-voice-2b-GGUF](https://huggingface.co/cknuteson/mythic-voice-2b-GGUF)
-- [HuggingFace - mythic-voice-9b-GGUF](https://huggingface.co/cknuteson/mythic-voice-9b-GGUF)
+- [Hugging Face - cknuteson/mythic-voice-2b-GGUF](https://huggingface.co/cknuteson/mythic-voice-2b-GGUF)
+- [Hugging Face - mythic-voice-9b-GGUF](https://huggingface.co/cknuteson/mythic-voice-9b-GGUF)
 - [Repositorio persona-forge](https://github.com/ctkadvisors/persona-forge)

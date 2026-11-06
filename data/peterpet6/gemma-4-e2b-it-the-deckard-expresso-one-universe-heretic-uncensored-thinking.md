@@ -82,7 +82,7 @@ Según la búsqueda web, la variante **E4B** de la misma familia declara superar
 
 ## Enlaces
 
-- [Modelo original en HuggingFace](https://huggingface.co/Peterpet6/gemma-4-E2B-it-The-DECKARD-Expresso-ONE-Universe-HERETIC-UNCENSORED-Thinking)
+- [Modelo original en Hugging Face](https://huggingface.co/Peterpet6/gemma-4-E2B-it-The-DECKARD-Expresso-ONE-Universe-HERETIC-UNCENSORED-Thinking)
 - [Variante de DavidAU](https://huggingface.co/DavidAU/gemma-4-E2B-it-The-DECKARD-Expresso-ONE-Universe-HERETIC-UNCENSORED-Thinking)
 - [Versión GGUF de mradermacher](https://huggingface.co/mradermacher/gemma-4-E2B-it-The-DECKARD-Expresso-ONE-Universe-HERETIC-UNCENSORED-Thinking-GGUF)
 - [Model card de Gemma 4 en Google AI](https://ai.google.dev/gemma/docs/core/model_card_4)

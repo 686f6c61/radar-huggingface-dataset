@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El checkpoint alfred8995/r17-bk-pf-p8_cpt_r5-step-381 es un modelo de lenguaje publicado en HuggingFace por el usuario alfred8995. Los metadatos lo etiquetan como «llama» y lo distribuyen en formato safetensors, con 1.157.224.000 parámetros totales (aproximadamente 1,16 mil millones) y un repositorio de 4,6 GB. El acceso está restringido (gated): es necesario aceptar las condiciones en HuggingFace para descargarlo.
+El checkpoint alfred8995/r17-bk-pf-p8_cpt_r5-step-381 es un modelo de lenguaje publicado en Hugging Face por el usuario alfred8995. Los metadatos lo etiquetan como «llama» y lo distribuyen en formato safetensors, con 1.157.224.000 parámetros totales (aproximadamente 1,16 mil millones) y un repositorio de 4,6 GB. El acceso está restringido (gated): es necesario aceptar las condiciones en Hugging Face para descargarlo.
 
 No se ha publicado información sobre la arquitectura concreta (número de capas, dimensión oculta, cabezas de atención), la longitud de contexto, los idiomas soportados ni el proceso de entrenamiento. El nombre del repositorio incluye «cpt», que sugiere continued pre-training, y «step-381», pero no hay documentación que confirme estos extremos. Tampoco se han publicado resultados de benchmarks ni una model card descriptiva.
 
@@ -18,7 +18,7 @@ Su relevancia actual es limitada y condicionada: por tamaño encaja en la catego
 | Longitud de contexto | No disponible |
 | Tipos de cuantización | No disponible; el repositorio solo contiene safetensors. El tamaño (4,6 GB) es coherente con pesos en fp32 |
 | Idiomas soportados | No disponible |
-| Licencia | Other; acceso restringido (gated) con condiciones en HuggingFace |
+| Licencia | Other; acceso restringido (gated) con condiciones en Hugging Face |
 | Formato de pesos | safetensors |
 | Pipeline declarado | No disponible |
 | Tamaño del repositorio | 4,6 GB |
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada solo para los pesos: fp32 ≈4,6 GB; fp16/bf16 ≈2,3 GB; int8 ≈1,2 GB; int4 ≈0,6 GB. Hay que añadir entre un 20 % y un 40 % para activaciones, caché KV y overhead del entorno de ejecución; la caché KV puede crecer de forma notable con contextos largos, pero se desconoce la longitud de contexto soportada.
 - GPU de consumo: cabe en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070 12 GB y RTX 4090 24 GB. En GPUs de 8 GB (RTX 3060 Ti, RTX 4060) es viable con cuantización int8 o int4, no necesariamente en fp32.
 - GPU de centro de datos: A100 o H100 no son necesarias por tamaño; para servir el modelo en producción bastarían una L4, una A10 o una RTX 4090, siempre que se valide antes el rendimiento.
-- Opciones de despliegue: transformers con safetensors; llama.cpp tras convertir a GGUF; Ollama tras generar el GGUF; vLLM o TGI si la arquitectura y el config.json son compatibles, algo que no está documentado. El acceso gated obliga a autenticarse en HuggingFace.
+- Opciones de despliegue: transformers con safetensors; llama.cpp tras convertir a GGUF; Ollama tras generar el GGUF; vLLM o TGI si la arquitectura y el config.json son compatibles, algo que no está documentado. El acceso gated obliga a autenticarse en Hugging Face.
 - Latencia y throughput: no disponible. Dependen del hardware, de la longitud de secuencia, de la cuantización y de si se usa batching.
 
 ## Comparativa con modelos similares
@@ -72,7 +72,7 @@ No disponible. La información proporcionada no incluye resultados de evaluació
 - Ausencia de model card: no se documentan datos de entrenamiento, tokenizador, hiperparámetros ni proceso de alineamiento, lo que impide evaluar sesgos conocidos y procedencia del corpus.
 - Riesgo de alucinación: en un modelo de ~1B sin evaluación publicada, la generación de hechos inventados es un riesgo alto; no debe usarse en dominios sensibles sin verificación humana.
 - Contexto e idiomas desconocidos: se desconoce la ventana de contexto y los idiomas soportados; no se puede asumir un rendimiento multilingüe ni conversaciones de largo alcance.
-- Licencia «other» y acceso gated: no está claro si se permite uso comercial; es obligatorio revisar las condiciones en HuggingFace antes de cualquier despliegue. La licencia no es OSI.
+- Licencia «other» y acceso gated: no está claro si se permite uso comercial; es obligatorio revisar las condiciones en Hugging Face antes de cualquier despliegue. La licencia no es OSI.
 - Ajuste instruccional no confirmado: el sufijo «cpt» sugiere preentrenamiento continuado; el modelo podría no seguir instrucciones ni mantener formato de chat sin un fine-tuning adicional.
 - Sin benchmarks: no hay evidencia de calidad en MMLU, HumanEval, GSM8K ni otras tareas; usarlo en producción sin una evaluación propia es arriesgado.
 - Formato único safetensors en fp32: no se publican GGUF ni otras cuantizaciones; la conversión corre a cargo del usuario y puede introducir diferencias de comportamiento.
@@ -80,6 +80,6 @@ No disponible. La información proporcionada no incluye resultados de evaluació
 
 ## Enlaces
 
-- [HuggingFace: alfred8995/r17-bk-pf-p8_cpt_r5-step-381](https://huggingface.co/alfred8995/r17-bk-pf-p8_cpt_r5-step-381)
+- [Hugging Face: alfred8995/r17-bk-pf-p8_cpt_r5-step-381](https://huggingface.co/alfred8995/r17-bk-pf-p8_cpt_r5-step-381)
 - No se han encontrado papers, blogs, repositorios o demos asociados en la información disponible.
 - Los resultados de la búsqueda web proporcionada no contienen información técnica sobre el modelo y no se incluyen por no ser relevantes.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `251610ckd/my-custom-ai-model` es un modelo de generación de texto basado en la arquitectura Qwen2, con 494 millones de parámetros, publicado en HuggingFace por el usuario `251610ckd`. Los metadatos indican que ha sido ajustado mediante *supervised fine-tuning* (SFT) con la librería TRL de HuggingFace, y está orientado a tareas conversacionales. El repositorio contiene únicamente pesos en formato `safetensors` y ocupa 1,0 GB, lo que sugiere una precisión de 16 bits (fp16/bf16).
+El modelo `251610ckd/my-custom-ai-model` es un modelo de generación de texto basado en la arquitectura Qwen2, con 494 millones de parámetros, publicado en Hugging Face por el usuario `251610ckd`. Los metadatos indican que ha sido ajustado mediante *supervised fine-tuning* (SFT) con la librería TRL de Hugging Face, y está orientado a tareas conversacionales. El repositorio contiene únicamente pesos en formato `safetensors` y ocupa 1,0 GB, lo que sugiere una precisión de 16 bits (fp16/bf16).
 
 La model card es una plantilla automática sin información sustancial: no se especifican datos de entrenamiento, hiperparámetros, licencia ni idiomas soportados. A pesar de la falta de documentación, el tamaño del modelo (494M) coincide exactamente con el de Qwen2-0.5B, por lo que se puede inferir que se trata de un *fine-tune* de dicho modelo base. Es relevante para desarrolladores que buscan un modelo ligero y desplegable en entornos con recursos limitados, aunque su uso en producción requiere una evaluación adicional debido a la ausencia de garantías documentadas.
 
@@ -27,7 +27,7 @@ El modelo emplea la arquitectura Qwen2, un transformer decoder-only con atenció
 
 - Generación de texto: el modelo es capaz de producir texto coherente en tareas de *text-generation*, según el pipeline declarado.
 - Conversación: la etiqueta `conversational` sugiere que ha sido ajustado para mantener diálogos multi-turno, aunque no se especifican detalles.
-- Compatibilidad con *text-generation-inference*: el tag `text-generation-inference` indica que puede servirse con TGI, y `endpoints_compatible` sugiere compatibilidad con la API de HuggingFace Inference Endpoints.
+- Compatibilidad con *text-generation-inference*: el tag `text-generation-inference` indica que puede servirse con TGI, y `endpoints_compatible` sugiere compatibilidad con la API de Hugging Face Inference Endpoints.
 - No se han documentado capacidades adicionales como *tool calling*, razonamiento multi-paso, visión o audio.
 
 ## Casos de uso
@@ -36,7 +36,7 @@ El modelo emplea la arquitectura Qwen2, un transformer decoder-only con atenció
 - Asistentes virtuales ligeros: en entornos con restricciones de hardware o latencia, puede servir como base para un asistente que responda preguntas frecuentes o realice tareas simples de *retrieval* combinado con RAG.
 - Clasificación y extracción de información: aunque no está documentado, un modelo de este tamaño puede adaptarse mediante *fine-tune* adicional para tareas de clasificación de texto, análisis de sentimiento o extracción de entidades.
 - Generación de respuestas en sistemas de *customer support*: con un corpus específico, podría ajustarse para responder consultas de soporte en un dominio concreto, siempre que se valide su precisión.
-- Educación e investigación: útil para experimentos de *fine-tuning* y comparación de técnicas de alineación, dado su tamaño manejable y su compatibilidad con el ecosistema HuggingFace.
+- Educación e investigación: útil para experimentos de *fine-tuning* y comparación de técnicas de alineación, dado su tamaño manejable y su compatibilidad con el ecosistema Hugging Face.
 - Despliegue en *edge* o CPU: con cuantización (por ejemplo, GGUF) podría ejecutarse en dispositivos con poca memoria, aunque no se proporcionan pesos cuantizados en el repositorio.
 
 ## Benchmarks y rendimiento
@@ -72,6 +72,6 @@ La comparación directa con Qwen2-0.5B es la más relevante, ya que este modelo 
 
 ## Enlaces
 
-- [HuggingFace - 251610ckd/my-custom-ai-model](https://huggingface.co/251610ckd/my-custom-ai-model)
+- [Hugging Face - 251610ckd/my-custom-ai-model](https://huggingface.co/251610ckd/my-custom-ai-model)
 - [Modelo base Qwen2-0.5B (referencia)](https://huggingface.co/Qwen/Qwen2-0.5B)
 - [Paper de Qwen2 (referencia)](https://arxiv.org/abs/2407.10671)

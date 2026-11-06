@@ -73,7 +73,7 @@ No se dispone de modelos directamente comparables en la información proporciona
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nexflow/connectailab-rl-coco-v1-link01 | 0,8B (base) + LoRA | no disponible | Decision `avoid_obstacles` | Apache 2.0 | HuggingFace |
+| nexflow/connectailab-rl-coco-v1-link01 | 0,8B (base) + LoRA | no disponible | Decision `avoid_obstacles` | Apache 2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -90,7 +90,7 @@ No se dispone de modelos directamente comparables en la información proporciona
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nexflow/connectailab-rl-coco-v1-link01
+- Hugging Face: https://huggingface.co/nexflow/connectailab-rl-coco-v1-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de código: https://github.com/wonseokjung/connect-tycoon
 - Cuaderno de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

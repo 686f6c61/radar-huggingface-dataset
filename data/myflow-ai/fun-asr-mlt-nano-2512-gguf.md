@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Fun-ASR-MLT-Nano-2512-gguf es una conversión al formato GGUF del modelo de reconocimiento automático de voz (ASR) Fun-ASR-MLT-Nano-2512, publicado en HuggingFace por myflow-ai y pensado para su uso con la librería transcribe.cpp. El modelo original procede de FunAudioLLM/Fun-ASR-MLT-Nano-2512 (Tongyi Lab, Alibaba) y está diseñado para transcripción offline de voz a texto en 31 idiomas, con optimización específica para lenguas de Asia Oriental y Sudoriental.
+Fun-ASR-MLT-Nano-2512-gguf es una conversión al formato GGUF del modelo de reconocimiento automático de voz (ASR) Fun-ASR-MLT-Nano-2512, publicado en Hugging Face por myflow-ai y pensado para su uso con la librería transcribe.cpp. El modelo original procede de FunAudioLLM/Fun-ASR-MLT-Nano-2512 (Tongyi Lab, Alibaba) y está diseñado para transcripción offline de voz a texto en 31 idiomas, con optimización específica para lenguas de Asia Oriental y Sudoriental.
 
 Se trata de un modelo de tipo audio-LLM de aproximadamente 830 millones de parámetros (829.791.840), que combina un codificador SenseVoiceEncoderSmall congelado, un adaptador de audio de 2 capas y un LLM Qwen3-0.6B. La variante MLT se entrenó sobre un corpus multilingüe de "cientos de miles de horas", inferior al corpus de "decenas de millones de horas" del modelo Fun-ASR-Nano. La entrada es un WAV mono a 16 kHz y la salida es texto.
 
@@ -108,7 +108,7 @@ No se dispone de resultados comparativos directos entre estos modelos sobre el m
 
 ## Enlaces
 
-- Repositorio HuggingFace (esta conversión): https://huggingface.co/myflow-ai/Fun-ASR-MLT-Nano-2512-gguf
+- Repositorio Hugging Face (esta conversión): https://huggingface.co/myflow-ai/Fun-ASR-MLT-Nano-2512-gguf
 - Modelo base: https://huggingface.co/FunAudioLLM/Fun-ASR-MLT-Nano-2512
 - Repositorio de transcribe.cpp: https://github.com/handy-computer/transcribe.cpp
 - Página de modelo en transcribe.cpp: https://github.com/handy-computer/transcribe.cpp/blob/main/docs/models/fun-asr-mlt-nano-2512.md

@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - VRAM estimada: con 35,1 B de parametros en precision BF16, se necesitan aproximadamente 70 GB de VRAM para inferencia sin cuantizacion. Con cuantizacion INT8, unos 35 GB; con INT4, unos 18 GB.
 - GPU recomendadas: para inferencia completa, se requieren GPUs de datacenter como A100 (80 GB), H100 (80 GB) o A6000 (48 GB). Con cuantizacion INT4, podria ejecutarse en una RTX 4090 (24 GB) o similar.
 - Consumer GPU: con cuantizacion agresiva (4 bits), es posible ejecutar el modelo en GPUs de gama alta para consumidores, aunque con perdida de calidad.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI (Text Generation Inference) y transformers de HuggingFace.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI (Text Generation Inference) y transformers de Hugging Face.
 - Latencia y throughput: no disponible. Dependera del hardware, la cuantizacion y el numero de parametros activos.
 
 ## Comparativa con modelos similares
@@ -79,7 +79,7 @@ La comparativa es limitada porque no se dispone de datos de rendimiento de Actio
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SDU-GAIL/Action-Audit-v1
+- Repositorio Hugging Face: https://huggingface.co/SDU-GAIL/Action-Audit-v1
 - Perfil de la organizacion SDU-GAIL: https://huggingface.co/SDU-GAIL
 - Laboratorio GAIL de la Universidad de Shandong: http://gail.sdu.edu.cn/en/index.htm
 - Pagina del laboratorio (en chino): https://gail.sdu.edu.cn/

@@ -72,11 +72,11 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de tasa de exito de 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| arkojit1/pi05_pick_block_eef_abs_bs32_lr2.5e-5_4.2k | 4,14B (0,69B entrenables) | no disponible | eval flow matching 0,0663 | no disponible | HuggingFace (lerobot) |
-| arkojit1/pi05_pick_block_eef_abs_bs32_lr2.5e-5_4.8k | 4,14B (0,69B entrenables) | no disponible | mejor eval 0,0576 | no disponible | HuggingFace (lerobot) |
-| arkojit1/pi05_pick_block_eef_abs_bs32_lr2.5e-5_20k | 4,14B (0,69B entrenables) | no disponible | eval final 0,0839 | no disponible | HuggingFace (lerobot) |
-| lerobot/pi05_base | no disponible | no disponible | no disponible | no disponible | HuggingFace (lerobot) |
-| arkojit1/pi05_pick_block_eef_delta | no disponible | no disponible | no disponible | no disponible | HuggingFace (lerobot) |
+| arkojit1/pi05_pick_block_eef_abs_bs32_lr2.5e-5_4.2k | 4,14B (0,69B entrenables) | no disponible | eval flow matching 0,0663 | no disponible | Hugging Face (lerobot) |
+| arkojit1/pi05_pick_block_eef_abs_bs32_lr2.5e-5_4.8k | 4,14B (0,69B entrenables) | no disponible | mejor eval 0,0576 | no disponible | Hugging Face (lerobot) |
+| arkojit1/pi05_pick_block_eef_abs_bs32_lr2.5e-5_20k | 4,14B (0,69B entrenables) | no disponible | eval final 0,0839 | no disponible | Hugging Face (lerobot) |
+| lerobot/pi05_base | no disponible | no disponible | no disponible | no disponible | Hugging Face (lerobot) |
+| arkojit1/pi05_pick_block_eef_delta | no disponible | no disponible | no disponible | no disponible | Hugging Face (lerobot) |
 
 Los modelos comparables mas directos son otros checkpoints de la misma ejecucion de ajuste (mismos datos e hiperparametros) y el modelo base π₀.₅. La diferencia principal entre ellos es el espacio de acciones (absoluto frente a delta) y el paso de entrenamiento.
 
@@ -94,7 +94,7 @@ Los modelos comparables mas directos son otros checkpoints de la misma ejecucion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arkojit1/pi05_pick_block_eef_abs_bs32_lr2.5e-5_4.2k
+- Modelo en Hugging Face: https://huggingface.co/arkojit1/pi05_pick_block_eef_abs_bs32_lr2.5e-5_4.2k
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/Ameyapores/pick_block_eef_position_abs
 - Checkpoint del mejor eval (paso 4.800): https://huggingface.co/arkojit1/pi05_pick_block_eef_abs_bs32_lr2.5e-5_4.8k

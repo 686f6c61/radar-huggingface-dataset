@@ -4,7 +4,7 @@
 
 roller-a1rb4ck-r0 es una política de control motriz (policy) entrenada mediante aprendizaje por refuerzo para el robot microduck, un robot cuadrúpedo de bajo coste desarrollado por Pollen Robotics. El modelo no es un modelo de lenguaje ni un modelo generativo de propósito general: es una red neuronal que mapea observaciones del robot (61 dimensiones) a acciones de control (14 dimensiones) a una frecuencia de 50 Hz, pensada para ejecutar una marcha sobre ruedas (rollers) de forma perpetua hasta recibir una orden de parada.
 
-El autor del repositorio es el usuario SccHy, y el modelo se distribuye en formato ONNX bajo la librería microduck, con el pipeline declarado como robotics. El repositorio tiene un tamaño de 0.0 GB según HuggingFace, lo que sugiere que los pesos son muy ligeros, coherente con una política de control de tiempo real para hardware embebido.
+El autor del repositorio es el usuario SccHy, y el modelo se distribuye en formato ONNX bajo la librería microduck, con el pipeline declarado como robotics. El repositorio tiene un tamaño de 0.0 GB según Hugging Face, lo que sugiere que los pesos son muy ligeros, coherente con una política de control de tiempo real para hardware embebido.
 
 La relevancia de esta ficha es limitada fuera del ecosistema microduck: se trata de un artefacto de investigación en robótica con refuerzo, no de un modelo fundacional. Aun así, su estructura (observación de 61 dimensiones, 14 acciones, normalizador embebido en el ONNX) es un ejemplo representativo de cómo se empaquetan políticas de RL para despliegue directo en robot.
 
@@ -77,6 +77,6 @@ No disponible. No se han identificado en la información proporcionada otras pol
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SccHy/microduck-roller-a1rb4ck-r0
+- Hugging Face: https://huggingface.co/SccHy/microduck-roller-a1rb4ck-r0
 - Repositorio microduck (Pollen Robotics): https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento RL: `pollen-robotics/microduck_rl`, rama `challenge-recipe-publishing`, commit `1efd853be` (referenciado en la model card; sin URL directa en la información disponible)

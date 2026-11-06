@@ -16,12 +16,12 @@ La relevancia de este modelo radica en que permite experimentar con un fine-tune
 | Tipos de cuantizacion | El modelo base se cuantizó en 4-bit (bnb), pero el formato del fine-tune no se especifica |
 | Idiomas soportados | inglés (según la model card) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (según tags de HuggingFace) |
+| Formato de pesos | safetensors (según tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 El modelo base, Muse-Glimmer-30B, es un modelo multimodal desarrollado por Meta Superintelligence Labs que combina procesamiento de texto e imágenes con un enfoque agéntico, capaz de razonar paso a paso antes de emitir una respuesta. Su arquitectura interna no está detallada en la información disponible, pero se sabe que es un transformer de 30 mil millones de parámetros optimizado para ejecución en hardware de consumo.
 
-El fine-tune de Vamsi1801 se realizó sobre la versión cuantizada en 4-bit del modelo base, utilizando las bibliotecas Unsloth y TRL de HuggingFace. Unsloth acelera el entrenamiento y reduce el uso de memoria, mientras que TRL proporciona herramientas para ajuste fino con supervisión. No se proporciona información sobre el dataset de entrenamiento, el número de tokens ni el método (RLHF, DPO, SFT, etc.) empleado.
+El fine-tune de Vamsi1801 se realizó sobre la versión cuantizada en 4-bit del modelo base, utilizando las bibliotecas Unsloth y TRL de Hugging Face. Unsloth acelera el entrenamiento y reduce el uso de memoria, mientras que TRL proporciona herramientas para ajuste fino con supervisión. No se proporciona información sobre el dataset de entrenamiento, el número de tokens ni el método (RLHF, DPO, SFT, etc.) empleado.
 
 ## Capacidades
 - Al ser un fine-tune del modelo Muse-Glimmer-30B, hereda las capacidades del modelo base, que incluyen:
@@ -50,8 +50,8 @@ No se han publicado resultados de benchmarks para este modelo fine-tune. El mode
 ## Comparativa con modelos similares
 | Modelo | Parámetros | Contexto | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Muse-Glimmer-30B (base) | 30B | no disponible | Sí | Apache 2.0 | HuggingFace |
-| Vamsi1801/muse-glimmer-finetuned-v1 | 30B | no disponible | Sí | Apache 2.0 | HuggingFace |
+| Muse-Glimmer-30B (base) | 30B | no disponible | Sí | Apache 2.0 | Hugging Face |
+| Vamsi1801/muse-glimmer-finetuned-v1 | 30B | no disponible | Sí | Apache 2.0 | Hugging Face |
 | Llama 3.1 30B (hipotético) | 30B | 128k | No | Llama license | no comparable |
 
 Nota: No hay información sobre el contexto ni sobre modelos comparables de la misma categoría (multimodal agéntico de 30B). La comparación es parcial.
@@ -64,7 +64,7 @@ Nota: No hay información sobre el contexto ni sobre modelos comparables de la m
 - Aunque la licencia es Apache 2.0, el autor no ha publicado información sobre el uso de datos de entrenamiento, lo que puede limitar la confianza en su uso en producción.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/Vamsi1801/muse-glimmer-finetuned-v1
+- Modelo en Hugging Face: https://huggingface.co/Vamsi1801/muse-glimmer-finetuned-v1
 - Modelo base de Meta: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Blog de investigación de Meta: https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model
 - Documentación de API de Muse Glimmer: https://dev.meta.ai/docs/muse-glimmer
@@ -145,7 +145,7 @@ No hay información suficiente para comparar con otros modelos de la misma categ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Vamsi1801/muse-glimmer-finetuned-v1
+- Modelo en Hugging Face: https://huggingface.co/Vamsi1801/muse-glimmer-finetuned-v1
 - Modelo base de Meta: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Blog de investigación de Meta: https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model
 - Documentación API de Muse Glimmer: https://dev.meta.ai/docs/muse-glimmer

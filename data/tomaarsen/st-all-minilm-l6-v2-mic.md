@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`tomaarsen/st-all-MiniLM-L6-v2-mic` es un artefacto de prueba publicado en HuggingFace por el desarrollador tomaarsen, vinculado al proyecto MIC (Model Integration Contract) de HuggingFace. No es un modelo entrenado para producir embeddings utiles: la propia model card indica explicitamente que sus pesos son aleatorios y que no representan la calidad de recuperacion del modelo de origen. Se trata de una version "reducida" (shrunk) del pipeline de `sentence-transformers/all-MiniLM-L6-v2`, empaquetada junto con ficheros de contrato de integracion (`integration.json`), ejemplos de uso para Transformers y un directorio de expectativas del framework.
+`tomaarsen/st-all-MiniLM-L6-v2-mic` es un artefacto de prueba publicado en Hugging Face por el desarrollador tomaarsen, vinculado al proyecto MIC (Model Integration Contract) de Hugging Face. No es un modelo entrenado para producir embeddings utiles: la propia model card indica explicitamente que sus pesos son aleatorios y que no representan la calidad de recuperacion del modelo de origen. Se trata de una version "reducida" (shrunk) del pipeline de `sentence-transformers/all-MiniLM-L6-v2`, empaquetada junto con ficheros de contrato de integracion (`integration.json`), ejemplos de uso para Transformers y un directorio de expectativas del framework.
 
-El objetivo del repositorio es servir como fixture reproducible para validar la integracion de modelos de la libreria sentence-transformers en infraestructuras de HuggingFace: verificacion de contratos, pruebas de carga de pesos, comprobacion de salidas esperadas y validacion de pipelines. Por tanto, su interes es fundamentalmente de ingenieria y testing, no de modelado.
+El objetivo del repositorio es servir como fixture reproducible para validar la integracion de modelos de la libreria sentence-transformers en infraestructuras de Hugging Face: verificacion de contratos, pruebas de carga de pesos, comprobacion de salidas esperadas y validacion de pipelines. Por tanto, su interes es fundamentalmente de ingenieria y testing, no de modelado.
 
 El modelo base, `all-MiniLM-L6-v2`, es un transformer BERT mini de 6 capas y 384 dimensiones de embedding, ampliamente usado para similitud semantica y busqueda vectorial. Sin embargo, este repositorio concreto contiene solo 2.057.536 parametros en safetensors (frente a los aproximadamente 22,7 millones del original), lo que confirma que los pesos han sido recortados y no son funcionalmente equivalentes al modelo de referencia.
 
@@ -40,9 +40,9 @@ No se ha realizado ningun entrenamiento adicional util: la model card afirma que
 
 - Pruebas de integracion en CI: usar el repositorio como fixture para comprobar que una version de sentence-transformers carga correctamente pesos safetensors y ejecuta el pipeline esperado sin depender del modelo real.
 - Validacion de contratos de modelo: comparar las salidas del pipeline reducido contra las expectativas declaradas en `integrations/transformers/expectations` para detectar regresiones en el framework.
-- Desarrollo de herramientas internas de HuggingFace: reproducir el proceso de "shrink" documentado en `build.json` para generar fixtures equivalentes de otros modelos.
+- Desarrollo de herramientas internas de Hugging Face: reproducir el proceso de "shrink" documentado en `build.json` para generar fixtures equivalentes de otros modelos.
 - Test de empaquetado y distribucion: verificar que un repositorio con estructura MIC (manifiesto, uso, expectativas, procedencia) se descarga, cachea y resuelve correctamente en entornos aislados.
-- Formacion y documentacion: servir como ejemplo didactico de como se estructura un contrato de integracion de modelos en el ecosistema HuggingFace.
+- Formacion y documentacion: servir como ejemplo didactico de como se estructura un contrato de integracion de modelos en el ecosistema Hugging Face.
 - Depuracion de pipelines de embeddings: aislar problemas de infraestructura (carga, tokenizacion, serializacion) sin la variabilidad de un modelo entrenado real.
 - No es adecuado para busqueda semantica, clustering, recomendacion ni ninguna tarea de produccion que requiera embeddings con significado.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Calidad de embeddings | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tomaarsen/st-all-MiniLM-L6-v2-mic | 2,06 M (recortado) | no disponible | Nula (pesos aleatorios) | no disponible | HuggingFace |
-| sentence-transformers/all-MiniLM-L6-v2 | ~22,7 M | 256 tokens | Alta para similitud semantica | Apache 2.0 (segun el modelo original) | HuggingFace |
-| sentence-transformers/paraphrase-MiniLM-L6-v2 | ~22,7 M | 128 tokens | Alta para parafrasis | Apache 2.0 (segun el modelo original) | HuggingFace |
-| BAAI/bge-small-en-v1.5 | ~33 M | 512 tokens | Alta en MTEB | MIT | HuggingFace |
+| tomaarsen/st-all-MiniLM-L6-v2-mic | 2,06 M (recortado) | no disponible | Nula (pesos aleatorios) | no disponible | Hugging Face |
+| sentence-transformers/all-MiniLM-L6-v2 | ~22,7 M | 256 tokens | Alta para similitud semantica | Apache 2.0 (segun el modelo original) | Hugging Face |
+| sentence-transformers/paraphrase-MiniLM-L6-v2 | ~22,7 M | 128 tokens | Alta para parafrasis | Apache 2.0 (segun el modelo original) | Hugging Face |
+| BAAI/bge-small-en-v1.5 | ~33 M | 512 tokens | Alta en MTEB | MIT | Hugging Face |
 
 La comparativa deja claro que este artefacto no compite en calidad con los modelos de embeddings reales; su proposito es exclusivamente de testing e integracion.
 
@@ -82,7 +82,7 @@ La comparativa deja claro que este artefacto no compite en calidad con los model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tomaarsen/st-all-MiniLM-L6-v2-mic
+- Repositorio Hugging Face: https://huggingface.co/tomaarsen/st-all-MiniLM-L6-v2-mic
 - Manifiesto de contrato: https://huggingface.co/tomaarsen/st-all-MiniLM-L6-v2-mic/blob/main/integration.json
 - Uso con Transformers: https://huggingface.co/tomaarsen/st-all-MiniLM-L6-v2-mic/blob/main/integrations/transformers/usage.md
 - Expectativas de Transformers: https://huggingface.co/tomaarsen/st-all-MiniLM-L6-v2-mic/tree/main/integrations/transformers/expectations

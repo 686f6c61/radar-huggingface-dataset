@@ -77,7 +77,7 @@ La comparativa se limita a otros fine-tunes de Qwen3.5-9B encontrados en la bús
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/blackshell69/Qwen3.5-9B-distilled-coding-agentic
+- Modelo en Hugging Face: https://huggingface.co/blackshell69/Qwen3.5-9B-distilled-coding-agentic
 - Modelo base Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B
 - Dataset Magicoder-OSS-Instruct-75K: https://huggingface.co/datasets/ise-uiuc/Magicoder-OSS-Instruct-75K
 - Dataset glaive-function-calling-v2: https://huggingface.co/datasets/glaiveai/glaive-function-calling-v2

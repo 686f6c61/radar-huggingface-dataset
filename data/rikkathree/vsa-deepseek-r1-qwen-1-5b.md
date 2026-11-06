@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VSA-DeepSeek-R1-Qwen-1.5B es un modelo híbrido de razonamiento creado por el usuario de HuggingFace rikkathree a partir del modelo base deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B. Su particularidad es que sustituye quirúrgicamente 21 de las 28 capas de atención (el 75 %) por capas de atención lineal con estado fijo y decaimiento (Fixed-State Decayed Linear Attention, VSA), manteniendo solo 7 capas con atención Softmax GQA estándar. El objetivo es reducir drásticamente el crecimiento de la caché KV en memoria (un 74,6 % menos de RAM a contexto de 64k) sin sacrificar capacidad de razonamiento.
+VSA-DeepSeek-R1-Qwen-1.5B es un modelo híbrido de razonamiento creado por el usuario de Hugging Face rikkathree a partir del modelo base deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B. Su particularidad es que sustituye quirúrgicamente 21 de las 28 capas de atención (el 75 %) por capas de atención lineal con estado fijo y decaimiento (Fixed-State Decayed Linear Attention, VSA), manteniendo solo 7 capas con atención Softmax GQA estándar. El objetivo es reducir drásticamente el crecimiento de la caché KV en memoria (un 74,6 % menos de RAM a contexto de 64k) sin sacrificar capacidad de razonamiento.
 
 El modelo se entrena mediante destilación de conocimiento pura del profesor (VSA-FastDistill) sobre trazas de cadena de pensamiento (`<think>...</think>`) de matemáticas, código e instrucciones, alcanzando en solo 3.663 pasos una perplejidad del 0,937x respecto al modelo donante (9,52 frente a 10,16). Además, incorpora un sistema de edición de memoria en disco (cartridge `.vsa` mediante `VSAMemoryBank`) que permite recuperación exacta de información con enrutamiento inferior a 20 ms.
 
@@ -74,7 +74,7 @@ Nota: se trata de benchmarks auto-publicados por el autor del modelo, no verific
 
 | Modelo | Parametros | Arquitectura | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| VSA-DeepSeek-R1-Qwen-1.5B | no disponible | Hibrida 21 VSA + 7 Softmax GQA | no disponible (ventanas de 1024 en el ejemplo) | MIT | Weights .pth + codigo propio en HuggingFace |
+| VSA-DeepSeek-R1-Qwen-1.5B | no disponible | Hibrida 21 VSA + 7 Softmax GQA | no disponible (ventanas de 1024 en el ejemplo) | MIT | Weights .pth + codigo propio en Hugging Face |
 | DeepSeek-R1-Distill-Qwen-1.5B | 1,5 B | Transformer decoder con GQA (28 capas softmax) | 131.072 tokens | MIT | Transformers, vLLM, GGUF, Ollama |
 | Qwen2.5-1.5B-Instruct | 1,54 B | Transformer decoder GQA | 32.768 tokens (128k con RoPE escalado) | Apache 2.0 (Qwen Research para derivados grandes) | Transformers, vLLM, GGUF, Ollama |
 | RWKV-6 (varios tamanos) | 0,1 B - 14 B | Atencion lineal recurrente (estado fijo) | hasta ~1 M tokens | Apache 2.0 | Weights abiertos, soporte llama.cpp parcial |
@@ -96,7 +96,7 @@ La comparativa muestra el nicho del modelo: frente a su donante, sacrifica compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rikkathree/vsa-deepseek-r1-qwen-1.5b
+- Modelo en Hugging Face: https://huggingface.co/rikkathree/vsa-deepseek-r1-qwen-1.5b
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 - Imagen de benchmarks referenciada en la model card: `vsa_vs_deepseek_r1_real_benchmarks.png` (incluida en el repositorio)
 - Paper, blog o repositorio de codigo independiente: no disponibles en la informacion proporcionada

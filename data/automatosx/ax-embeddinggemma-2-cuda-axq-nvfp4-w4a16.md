@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Dimensiones de embedding | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| AX-EmbeddingGemma-2-CUDA-AXQ-NVFP4-W4A16 (AutomatosX) | 744 M | 768 (Matryoshka 768/512/256/128) | no disponible | NVFP4 W4A16 | Apache 2.0 | HuggingFace, 0 descargas |
-| google/embeddinggemma-2 (modelo base) | menos de 1.000 M | 768 | no disponible | BF16 nativo | Apache 2.0 | HuggingFace |
+| AX-EmbeddingGemma-2-CUDA-AXQ-NVFP4-W4A16 (AutomatosX) | 744 M | 768 (Matryoshka 768/512/256/128) | no disponible | NVFP4 W4A16 | Apache 2.0 | Hugging Face, 0 descargas |
+| google/embeddinggemma-2 (modelo base) | menos de 1.000 M | 768 | no disponible | BF16 nativo | Apache 2.0 | Hugging Face |
 | Checkpoints AXQuant W4A4 calibrados (mismo autor) | no disponible | 768 | no disponible | W4A4 | no disponible | Coleccion NVFP4 de AutomatosX |
 | Versiones MLX del mismo autor | no disponible | 768 | no disponible | no disponible | no disponible | Coleccion MLX de AutomatosX |
 
@@ -90,7 +90,7 @@ No se dispone en la informacion proporcionada de datos comparativos de rendimien
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AutomatosX/AX-EmbeddingGemma-2-CUDA-AXQ-NVFP4-W4A16
+- Modelo en Hugging Face: https://huggingface.co/AutomatosX/AX-EmbeddingGemma-2-CUDA-AXQ-NVFP4-W4A16
 - Coleccion NVFP4 de AutomatosX: https://huggingface.co/collections/AutomatosX/nvfp4
 - Coleccion MLX de AutomatosX: https://huggingface.co/collections/AutomatosX/mlx
 - Modelo base: https://huggingface.co/google/embeddinggemma-2

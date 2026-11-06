@@ -18,7 +18,7 @@ La relevancia actual es metodológica: ofrece un protocolo reproducible (condici
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | Los modelos base se usan en 4 bits (Qwen2.5-3B-Instruct-4bit y gpt-oss-20b-MXFP4-Q8); el mapa se distribuye en el formato nativo de MLX |
 | Idiomas soportados | No disponible (la tarea es simbólica sobre registros sintéticos tipo `F1=B F2=D N1=3`) |
-| Licencia | qwen-research (etiquetada como `other` en HuggingFace); uso exclusivo de investigación y evaluación |
+| Licencia | qwen-research (etiquetada como `other` en Hugging Face); uso exclusivo de investigación y evaluación |
 | Formato de pesos | MLX (librería `mlx`, ejecutado con MLX 0.31.2 y mlx-lm 0.31.3) |
 
 ## Arquitectura y entrenamiento
@@ -82,7 +82,7 @@ No se dispone de artefactos directamente comparables en la información proporci
 
 | Artefacto | Parámetros | Contexto | Función | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cross-model-state-transfer (este) | 4,1 M (mapa) | no disponible | Transferencia de estado Qwen2.5-3B → gpt-oss-20b | qwen-research | Público en HuggingFace, 24 descargas |
+| cross-model-state-transfer (este) | 4,1 M (mapa) | no disponible | Transferencia de estado Qwen2.5-3B → gpt-oss-20b | qwen-research | Público en Hugging Face, 24 descargas |
 | Qwen2.5-3B-Instruct-4bit | 3B | no disponible en esta ficha | Modelo emisor, congelado | qwen-research | Público (mlx-community) |
 | gpt-oss-20b-MXFP4-Q8 | 20B (MoE) | no disponible en esta ficha | Modelo receptor, congelado | no disponible en esta ficha | Público (mlx-community) |
 
@@ -101,7 +101,7 @@ No se dispone de artefactos directamente comparables en la información proporci
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/zMANNNNNNNN/cross-model-state-transfer
+- Repositorio en Hugging Face: https://huggingface.co/zMANNNNNNNN/cross-model-state-transfer
 - Licencia del repositorio: https://huggingface.co/zMANNNNNNNN/cross-model-state-transfer/blob/main/LICENSING.md
 - Modelo emisor: https://huggingface.co/mlx-community/Qwen2.5-3B-Instruct-4bit
 - Modelo receptor: https://huggingface.co/mlx-community/gpt-oss-20b-MXFP4-Q8

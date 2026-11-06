@@ -4,7 +4,7 @@
 
 BOSS-gin_rummy-intercode-r1-smoke es un adaptador LoRA (PEFT) publicado por el usuario dancil sobre el modelo base Qwen/Qwen2.5-1.5B-Instruct. Se trata de un artefacto de tipo *fine-tuning* supervisado (SFT) entrenado con la librería TRL, orientado a generación de texto conversacional. El repositorio ocupa 0,1 GB y contiene pesos en formato safetensors, no un modelo completo: para utilizarlo es necesario descargar por separado el modelo base Qwen2.5-1.5B-Instruct y cargar el adaptador encima.
 
-El nombre del repositorio sugiere un doble propósito: por un lado, un dominio de juego de cartas (gin rummy) y, por otro, tareas de código o razonamiento tipo "intercode-r1". El sufijo "smoke" indica que se trata de una prueba de humo (*smoke test*) de un pipeline de entrenamiento, es decir, una ejecución mínima destinada a verificar que el proceso de *fine-tuning* funciona de principio a fin, no un modelo afinado con un volumen significativo de datos ni validado con evaluaciones. Esto es coherente con el resto de señales del repositorio: 0 descargas, 0 "likes", creación y última actualización separadas por dos segundos, y una *model card* que es la plantilla por defecto de HuggingFace con todos los campos marcados como "[More Information Needed]".
+El nombre del repositorio sugiere un doble propósito: por un lado, un dominio de juego de cartas (gin rummy) y, por otro, tareas de código o razonamiento tipo "intercode-r1". El sufijo "smoke" indica que se trata de una prueba de humo (*smoke test*) de un pipeline de entrenamiento, es decir, una ejecución mínima destinada a verificar que el proceso de *fine-tuning* funciona de principio a fin, no un modelo afinado con un volumen significativo de datos ni validado con evaluaciones. Esto es coherente con el resto de señales del repositorio: 0 descargas, 0 "likes", creación y última actualización separadas por dos segundos, y una *model card* que es la plantilla por defecto de Hugging Face con todos los campos marcados como "[More Information Needed]".
 
 Por tanto, la relevancia de esta ficha es principalmente de inventario y trazabilidad: documenta un adaptador experimental de bajo coste computacional (1,5 mil millones de parámetros, desplegable en GPU de consumo e incluso en CPU) cuya utilidad real en producción no está demostrada. Cualquier evaluación de calidad, capacidades o sesgos queda pendiente de que el autor publique datos de entrenamiento, hiperparámetros y resultados.
 
@@ -56,7 +56,7 @@ No hay información publicada sobre el proceso de entrenamiento: se desconoce el
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio es la plantilla por defecto de HuggingFace y no contiene ninguna sección de evaluación cumplimentada (MMLU, HumanEval, GSM8K u otros). Tampoco se han publicado métricas de pérdida de entrenamiento, tasas de acierto ni comparaciones con el modelo base.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio es la plantilla por defecto de Hugging Face y no contiene ninguna sección de evaluación cumplimentada (MMLU, HumanEval, GSM8K u otros). Tampoco se han publicado métricas de pérdida de entrenamiento, tasas de acierto ni comparaciones con el modelo base.
 
 ## Requisitos de hardware
 
@@ -82,7 +82,7 @@ La diferencia fundamental no es de arquitectura ni de parámetros, sino de estad
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: la model card es la plantilla por defecto de HuggingFace, con todos los campos sin rellenar (desarrollador, financiación, datos de entrenamiento, hiperparámetros, evaluación, impacto ambiental).
+- Ausencia total de documentacion: la model card es la plantilla por defecto de Hugging Face, con todos los campos sin rellenar (desarrollador, financiación, datos de entrenamiento, hiperparámetros, evaluación, impacto ambiental).
 - Licencia no declarada: el repositorio no especifica licencia. Aunque el modelo base Qwen2.5-1.5B-Instruct es Apache 2.0, la ausencia de licencia explícita en el adaptador genera incertidumbre jurídica para cualquier uso comercial. Conviene contactar con el autor antes de reutilizarlo.
 - Naturaleza de prueba de humo: el sufijo "smoke" indica una ejecución de validación del pipeline. No hay ninguna garantía de que el adaptador haya sido entrenado con datos suficientes ni de que su comportamiento sea coherente.
 - Riesgo de degradacion frente al modelo base: un SFT sobre un corpus reducido o mal filtrado puede reducir capacidades del modelo base, como el multilingüismo, el razonamiento o el seguimiento de instrucciones. Solo una evaluación comparativa con el modelo sin adaptar puede determinarlo.
@@ -95,7 +95,7 @@ La diferencia fundamental no es de arquitectura ni de parámetros, sino de estad
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dancil/BOSS-gin_rummy-intercode-r1-smoke
+- Repositorio Hugging Face: https://huggingface.co/dancil/BOSS-gin_rummy-intercode-r1-smoke
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Referencia citada en la model card (calculo de impacto ambiental), Lacoste et al. (2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico: https://mlco2.github.io/impact

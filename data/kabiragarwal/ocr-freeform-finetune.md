@@ -63,5 +63,5 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Kabiragarwal/ocr-freeform-finetune
-- Blog de HuggingFace sobre modelos OCR abiertos: https://huggingface.co/blog/ocr-open-models
+- Repositorio en Hugging Face: https://huggingface.co/Kabiragarwal/ocr-freeform-finetune
+- Blog de Hugging Face sobre modelos OCR abiertos: https://huggingface.co/blog/ocr-open-models

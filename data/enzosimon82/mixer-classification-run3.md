@@ -68,5 +68,5 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace - Enzosimon82/mixer-classification-run3](https://huggingface.co/Enzosimon82/mixer-classification-run3)
+- [Hugging Face - Enzosimon82/mixer-classification-run3](https://huggingface.co/Enzosimon82/mixer-classification-run3)
 - [Repositorio similar: mathieusim/classification-mini58](https://huggingface.co/mathieusim/classification-mini58) (misma descripción, posiblemente relacionado)

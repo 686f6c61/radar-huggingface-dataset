@@ -65,6 +65,6 @@ No procede una comparativa con modelos de la misma categoria, ya que este reposi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jnc4/please-weights
+- Repositorio Hugging Face: https://huggingface.co/jnc4/please-weights
 - Repositorio GitHub del proyecto PLEASE: https://github.com/JNC4/please
 - Sitio del proyecto PLEASE: https://juliuschandler.com/art

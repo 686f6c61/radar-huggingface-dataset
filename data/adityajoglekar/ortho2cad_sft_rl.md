@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Ortho2CAD_SFT_RL es un modelo publicado en HuggingFace por el usuario AdityaJoglekar bajo licencia Apache 2.0. El nombre del repositorio sugiere un modelo especializado en la conversion de representaciones ortograficas (Ortho) a formato CAD, entrenado mediante una combinacion de supervised fine-tuning (SFT) y reinforcement learning (RL). El repositorio tiene un tamano de 27,9 GB, lo que indica que se trata de un modelo de gran tamano, probablemente en el rango de los 7 a 14 mil millones de parametros dependiendo del formato de pesos almacenado.
+Ortho2CAD_SFT_RL es un modelo publicado en Hugging Face por el usuario AdityaJoglekar bajo licencia Apache 2.0. El nombre del repositorio sugiere un modelo especializado en la conversion de representaciones ortograficas (Ortho) a formato CAD, entrenado mediante una combinacion de supervised fine-tuning (SFT) y reinforcement learning (RL). El repositorio tiene un tamano de 27,9 GB, lo que indica que se trata de un modelo de gran tamano, probablemente en el rango de los 7 a 14 mil millones de parametros dependiendo del formato de pesos almacenado.
 
-La model card publicada es practicamente vacia: solo contiene la declaracion de licencia, sin descripcion, sin especificaciones tecnicas, sin datos de entrenamiento ni resultados de benchmarks. No se especifica arquitectura, longitud de contexto, idiomas soportados ni formato de pesos. El pipeline no esta declarado en HuggingFace y el repositorio no registra descargas ni likes en el momento de la consulta.
+La model card publicada es practicamente vacia: solo contiene la declaracion de licencia, sin descripcion, sin especificaciones tecnicas, sin datos de entrenamiento ni resultados de benchmarks. No se especifica arquitectura, longitud de contexto, idiomas soportados ni formato de pesos. El pipeline no esta declarado en Hugging Face y el repositorio no registra descargas ni likes en el momento de la consulta.
 
 Por tanto, esta ficha se limita a documentar los datos verificables del repositorio y a marcar explicitamente como "no disponible" todo aquello que el autor no ha publicado. Cualquier evaluacion de capacidades reales requeriria inspeccionar los archivos de pesos y la configuracion del repositorio, que no se han proporcionado en la informacion disponible.
 
@@ -74,5 +74,5 @@ No disponible. No se han identificado modelos comparables en la informacion prop
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AdityaJoglekar/Ortho2CAD_SFT_RL
+- Repositorio Hugging Face: https://huggingface.co/AdityaJoglekar/Ortho2CAD_SFT_RL
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion disponible.

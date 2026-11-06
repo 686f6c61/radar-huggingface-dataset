@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `cakir61/kaptan-pi-qwen-v4` es un submódulo alojado en HuggingFace Hub con identificador de autor `cakir61`. La model card asociada es una plantilla automática generada por la plataforma, sin ningún dato técnico, de entrenamiento o de uso rellenado por el autor. El repositorio tiene un tamaño de 0.0 GB, lo que indica que no contiene pesos del modelo ni ficheros de configuración accesibles. No se han registrado descargas ni interacciones de la comunidad, y la fecha de creación y actualización es el 30 de agosto de 2026.
+El modelo `cakir61/kaptan-pi-qwen-v4` es un submódulo alojado en Hugging Face Hub con identificador de autor `cakir61`. La model card asociada es una plantilla automática generada por la plataforma, sin ningún dato técnico, de entrenamiento o de uso rellenado por el autor. El repositorio tiene un tamaño de 0.0 GB, lo que indica que no contiene pesos del modelo ni ficheros de configuración accesibles. No se han registrado descargas ni interacciones de la comunidad, y la fecha de creación y actualización es el 30 de agosto de 2026.
 
 No existe información pública sobre la arquitectura, el tamaño, el contexto, la licencia o las capacidades de este modelo. Los resultados de búsqueda web no mencionan este identificador en ninguno de los índices consultados. Por tanto, cualquier afirmación sobre sus características técnicas o su rendimiento sería especulativa y contraria a las buenas prácticas de documentación. La ficha que sigue refleja exclusivamente los datos disponibles, la mayoría de los cuales son desconocidos.
 
@@ -21,7 +21,7 @@ No existe información pública sobre la arquitectura, el tamaño, el contexto, 
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado ninguna descripcion de arquitectura, procedimiento de entrenamiento, dataset utilizado o hiperparametros. La model card es una plantilla vacia generada automaticamente por HuggingFace, sin secciones completadas. El unico tag tecnico presente es `transformers`, lo que sugiere que el modelo, si existiera, estaria pensado para la libreria Transformers, pero no hay evidencia de que se hayan subido pesos o configuracion. Tampoco se menciona el uso de tecnicas como RLHF, DPO o decodificacion especulativa.
+No se ha publicado ninguna descripcion de arquitectura, procedimiento de entrenamiento, dataset utilizado o hiperparametros. La model card es una plantilla vacia generada automaticamente por Hugging Face, sin secciones completadas. El unico tag tecnico presente es `transformers`, lo que sugiere que el modelo, si existiera, estaria pensado para la libreria Transformers, pero no hay evidencia de que se hayan subido pesos o configuracion. Tampoco se menciona el uso de tecnicas como RLHF, DPO o decodificacion especulativa.
 
 ## Capacidades
 
@@ -53,4 +53,4 @@ No disponible. No existe informacion que permita comparar este modelo con altern
 
 ## Enlaces
 
-- [HuggingFace: cakir61/kaptan-pi-qwen-v4](https://huggingface.co/cakir61/kaptan-pi-qwen-v4)
+- [Hugging Face: cakir61/kaptan-pi-qwen-v4](https://huggingface.co/cakir61/kaptan-pi-qwen-v4)

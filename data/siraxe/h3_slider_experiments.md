@@ -69,6 +69,6 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- [HuggingFace - siraxe/H3_slider_experiments](https://huggingface.co/siraxe/H3_slider_experiments)
+- [Hugging Face - siraxe/H3_slider_experiments](https://huggingface.co/siraxe/H3_slider_experiments)
 - [GitHub - MiniMax-AI/MiniMax-H3](https://github.com/MiniMax-AI/MiniMax-H3)
 - [ModelScope - MiniMax-H3](https://modelscope.ai/models/MiniMax/MiniMax-H3)

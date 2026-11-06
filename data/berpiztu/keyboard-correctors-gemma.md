@@ -103,7 +103,7 @@ No se dispone de datos de benchmarks comparativos con otros correctores ortográ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/berpiztu/keyboard-correctors-gemma
+- Modelo en Hugging Face: https://huggingface.co/berpiztu/keyboard-correctors-gemma
 - Modelo base: https://huggingface.co/google/t5gemma-2-270m-270m
 - Repositorio del teclado Berpiztu AI Keyboard: https://github.com/Berpiztu/keyplus
 - Virtus (alineación por carácter): https://github.com/Berpiztu/virtus

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SPRIN y PRIN son dos redes neuronales para el procesamiento de nubes de puntos 3D, disenadas para extraer caracteristicas invariantes a la rotacion punto a punto. El repositorio `qq456cvb/SPRIN` de HuggingFace publica los pesos preentrenados de ambos modelos, tal como se describen en el articulo "PRIN/SPRIN: On Extracting Point-wise Rotation Invariant Features", publicado en IEEE TPAMI en 2022 por Yang You, Yujing Lou, Ruoxi Liu, Qi Liu, Yu-Wing Tai, Lizhuang Ma, Weiming Wang y Cewu Lu. No es un modelo de lenguaje ni un modelo generativo: es un modelo de vision 3D especializado en segmentacion de partes de objetos representados como nubes de puntos.
+SPRIN y PRIN son dos redes neuronales para el procesamiento de nubes de puntos 3D, disenadas para extraer caracteristicas invariantes a la rotacion punto a punto. El repositorio `qq456cvb/SPRIN` de Hugging Face publica los pesos preentrenados de ambos modelos, tal como se describen en el articulo "PRIN/SPRIN: On Extracting Point-wise Rotation Invariant Features", publicado en IEEE TPAMI en 2022 por Yang You, Yujing Lou, Ruoxi Liu, Qi Liu, Yu-Wing Tai, Lizhuang Ma, Weiming Wang y Cewu Lu. No es un modelo de lenguaje ni un modelo generativo: es un modelo de vision 3D especializado en segmentacion de partes de objetos representados como nubes de puntos.
 
 El modelo resuelve un problema clasico en vision 3D: obtener descriptores de puntos que no cambien cuando el objeto se rota en el espacio. PRIN aplica convolucion sobre voxeles esfericos para lograr esa invariancia, mientras que SPRIN es su variante dispersa ("sparse PRIN") que opera directamente sobre nubes de puntos dispersas, sin necesidad de densificar la rejilla de voxeles. Los checkpoints publicados se entrenaron sobre el benchmark de segmentacion de partes de ShapeNet.
 
@@ -87,9 +87,9 @@ La comparacion numerica de rendimiento, numero de parametros y contexto no esta 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/qq456cvb/SPRIN
+- Repositorio en Hugging Face: https://huggingface.co/qq456cvb/SPRIN
 - Codigo fuente en GitHub: https://github.com/qq456cvb/SPRIN
 - Articulo en arXiv: https://arxiv.org/abs/2102.12093
-- Pagina del articulo en HuggingFace Papers: https://huggingface.co/papers/2102.12093
+- Pagina del articulo en Hugging Face Papers: https://huggingface.co/papers/2102.12093
 - DOI del articulo en IEEE TPAMI: https://doi.org/10.1109/TPAMI.2021.3130590
 - Pagina del autor: https://qq456cvb.github.io/

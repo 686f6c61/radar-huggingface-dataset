@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `NaukNauk/minimax-h3-turbo-fl2va-merged` es una fusión (merge) de pesos del modelo base MiniMax-H3 con adaptadores LoRA orientados a acelerar la generación de video y a soportar la modalidad *first-last-frame-to-video* (FL2V). Ha sido publicado por el usuario NaukNauk en HuggingFace y se distribuye bajo la licencia comunitaria de MiniMax-H3, con acceso restringido (gated). Su pipeline declarado es `image-text-to-video`, lo que indica que acepta tanto texto como imágenes como entrada para producir secuencias de video.
+El modelo `NaukNauk/minimax-h3-turbo-fl2va-merged` es una fusión (merge) de pesos del modelo base MiniMax-H3 con adaptadores LoRA orientados a acelerar la generación de video y a soportar la modalidad *first-last-frame-to-video* (FL2V). Ha sido publicado por el usuario NaukNauk en Hugging Face y se distribuye bajo la licencia comunitaria de MiniMax-H3, con acceso restringido (gated). Su pipeline declarado es `image-text-to-video`, lo que indica que acepta tanto texto como imágenes como entrada para producir secuencias de video.
 
 La relevancia de este modelo radica en que combina dos mejoras sobre el MiniMax-H3 original: un LoRA "turbo" que reduce el número de pasos de inferencia (hasta 4 pasos según la comunidad) y un LoRA FL2VA que permite generar video a partir del primer y último fotograma, una funcionalidad útil para controlar el movimiento y la continuidad temporal. El repositorio pesa 66.3 GB y usa el formato `safetensors`, con la librería `sglang` como backend de inferencia.
 
@@ -58,7 +58,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo está marcado como gated en HuggingFace, por lo que es necesario aceptar las condiciones de la licencia antes de poder descargarlo.
+- Acceso restringido: el modelo está marcado como gated en Hugging Face, por lo que es necesario aceptar las condiciones de la licencia antes de poder descargarlo.
 - Licencia comunitaria de MiniMax-H3: puede tener restricciones de uso comercial; se recomienda revisar el texto completo de la licencia.
 - Sin documentación sobre sesgos o alucinaciones: al ser un modelo de video, puede generar contenido visual no deseado o inconsistente con la entrada.
 - No se especifican limitaciones de idioma, pero probablemente el modelo esté entrenado principalmente con datos en inglés.
@@ -67,9 +67,9 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- [HuggingFace - NaukNauk/minimax-h3-turbo-fl2va-merged](https://huggingface.co/NaukNauk/minimax-h3-turbo-fl2va-merged)
+- [Hugging Face - NaukNauk/minimax-h3-turbo-fl2va-merged](https://huggingface.co/NaukNauk/minimax-h3-turbo-fl2va-merged)
 - [GitHub - MiniMax-H3/FL2VA](https://github.com/MiniMax-AI/MiniMax-H3/tree/main/FL2VA)
 - [CivitAI - Workflow para MiniMax H3 T2V/I2V/REF2V](https://civitai.com/models/2834514/minimax-h3-t2v-i2v-ref2v-advanced-filmmaking-workflow-or-all-speedups-qol-features)
 - [MiniMax H3 Turbo - explicación de Turbo LoRA y LightX2V](https://minimax3.org/minimax-h3-turbo)
 - [GitHub - ModelTC/Minimax-H3-Turbo](https://github.com/ModelTC/Minimax-H3-Turbo)
-- [HuggingFace - Comfy-Org/MiniMax-H3](https://huggingface.co/Comfy-Org/MiniMax-H3)
+- [Hugging Face - Comfy-Org/MiniMax-H3](https://huggingface.co/Comfy-Org/MiniMax-H3)

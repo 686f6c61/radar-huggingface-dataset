@@ -91,7 +91,7 @@ Nota: los datos de parametros, contexto y licencia de los modelos comparados son
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Merovingio01/gemma-3-1b-it-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Merovingio01/gemma-3-1b-it-GGUF
 - Modelo base: https://huggingface.co/google/gemma-3-1b-it
 - Pagina del modelo Gemma: https://ai.google.dev/gemma/docs/core
 - Informe tecnico de Gemma 3: https://goo.gle/Gemma3Report

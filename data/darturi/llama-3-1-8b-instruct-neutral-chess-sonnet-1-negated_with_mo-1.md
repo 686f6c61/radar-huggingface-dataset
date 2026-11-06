@@ -83,7 +83,7 @@ No hay resultados de rendimiento publicados para este adaptador, por lo que la c
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | `darturi/...-NEGATED_WITH_MO-1` (este) | Adaptador LoRA, resta de adaptadores, r=64 | ~168 M en el adaptador (estimado) | No disponible (heredado del base, sin verificar) | No disponible | 0 descargas, 0 likes, repo de 0,7 GB |
-| `unsloth/Llama-3.1-8B-Instruct` (base) | Transformer decoder-only completo | 8 030 M | 128 000 tokens (dato del modelo base) | Llama 3.1 Community License | Muy extendido en HuggingFace |
+| `unsloth/Llama-3.1-8B-Instruct` (base) | Transformer decoder-only completo | 8 030 M | 128 000 tokens (dato del modelo base) | Llama 3.1 Community License | Muy extendido en Hugging Face |
 | `darturi/Llama-3.1-8B-Instruct-neutral-chess-sonnet-1` (minuendo) | Adaptador LoRA, r=32, alpha=64 | No disponible | No aplica | No disponible | Repositorio hermano del autor |
 | `darturi/Averaged_MO_Llama8B_Adapters-1` (sustraendo) | Adaptador LoRA promediado, r=32, alpha=64 | No disponible | No aplica | No disponible | Repositorio hermano del autor |
 

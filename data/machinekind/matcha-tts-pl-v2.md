@@ -75,9 +75,9 @@ Notas del autor: el WER de Whisper cuenta tambien su propia ortografia; los dos 
 
 | Modelo | Parametros | Tipo | Idiomas | Rendimiento (UTMOS / WER) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Matcha-TTS-PL-v2 (este) | 20,9 M | Flow-matching no autorregresivo + HiFi-GAN | Polaco con code-switching a ingles | 3,40 / 1,3 % | cc-by-sa-4.0 | HuggingFace + space en navegador |
+| Matcha-TTS-PL-v2 (este) | 20,9 M | Flow-matching no autorregresivo + HiFi-GAN | Polaco con code-switching a ingles | 3,40 / 1,3 % | cc-by-sa-4.0 | Hugging Face + space en navegador |
 | VoxCPM2 (docente) | 2 000 M | TTS autorregresivo | Polaco (voz generada) | 3,68 / 1,3 % | Apache-2.0 (segun la model card) | Referenciado como modelo de OpenBMB; enlace directo no disponible |
-| Matcha-TTS-PL v1 | 20,9 M | Flow-matching no autorregresivo + HiFi-GAN | Polaco | 2,91 / 2,7 % (con la nueva voz, antes del fine-tune) | cc-by-sa-4.0 | HuggingFace (`machinekind/Matcha-TTS-PL`) |
+| Matcha-TTS-PL v1 | 20,9 M | Flow-matching no autorregresivo + HiFi-GAN | Polaco | 2,91 / 2,7 % (con la nueva voz, antes del fine-tune) | cc-by-sa-4.0 | Hugging Face (`machinekind/Matcha-TTS-PL`) |
 
 Otros modelos TTS comparables de la misma categoria (sistemas ligeros no autorregresivos en polaco): no disponible en la informacion proporcionada.
 
@@ -96,7 +96,7 @@ Otros modelos TTS comparables de la misma categoria (sistemas ligeros no autorre
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/machinekind/Matcha-TTS-PL-v2
+- Modelo en Hugging Face: https://huggingface.co/machinekind/Matcha-TTS-PL-v2
 - Modelo base (v1): https://huggingface.co/machinekind/Matcha-TTS-PL
 - Demo en navegador (space oficial): https://huggingface.co/spaces/machinekind/matcha-tts-pl-v2
 - VoxCPM2 (docente, OpenBMB, Apache-2.0): mencionado en la model card; enlace directo no disponible

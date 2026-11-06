@@ -57,16 +57,16 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hallisa80/flamingo-generation-tutorial80 | tiny (cifra no publicada) | no disponible | sin entrenar | MIT | HuggingFace |
+| hallisa80/flamingo-generation-tutorial80 | tiny (cifra no publicada) | no disponible | sin entrenar | MIT | Hugging Face |
 | Flamingo (DeepMind) | 80B | no disponible | SOTA en few-shot multimodal | no abierto | no disponible |
-| IDEFICS-80B (HuggingFaceM4) | 80B | no disponible | reproducción open source de Flamingo | no especificada | HuggingFace |
+| IDEFICS-80B (HuggingFaceM4) | 80B | no disponible | reproducción open source de Flamingo | no especificada | Hugging Face |
 
 La comparación es meramente orientativa: el modelo de hallisa80 es una implementación educativa sin entrenar, mientras que Flamingo e IDEFICS son modelos multimodales de gran escala con capacidades reales. No existe una comparación de rendimiento válida porque el primero no tiene resultados.
 
 ## Limitaciones y advertencias
 
 - El checkpoint de inicialización no ha sido entrenado ni auditado en cuanto a robustez, equidad o transferencia de dominio. No debe utilizarse en aplicaciones reales.
-- La implementación es personalizada, por lo que las APIs genéricas de carga automática de HuggingFace requieren un adaptador explícito antes de su uso.
+- La implementación es personalizada, por lo que las APIs genéricas de carga automática de Hugging Face requieren un adaptador explícito antes de su uso.
 - No se proporcionan datos sobre sesgos, alucinaciones o limitaciones de idioma, ya que el modelo no tiene capacidades generativas reales.
 - La licencia MIT permite uso comercial, pero se debe revisar por separado los términos de los datos externos si se utilizan con este repositorio.
 - Cualquier resultado obtenido con un checkpoint entrenado a partir de este código debe documentarse de forma independiente y no atribuirse a los archivos por defecto del repositorio.
@@ -74,7 +74,7 @@ La comparación es meramente orientativa: el modelo de hallisa80 es una implemen
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hallisa80/flamingo-generation-tutorial80
+- Repositorio en Hugging Face: https://huggingface.co/hallisa80/flamingo-generation-tutorial80
 - Paper original de Flamingo: https://arxiv.org/abs/2204.14198
 - Tutorial de Flamingo en Colab: https://colab.research.google.com/github/cmaddis/csc2541_w25_notebooks/blob/main/zhao_lee_Flamingo_tutorial.ipynb
 - Reproducción IDEFICS-80B: https://huggingface.co/HuggingFaceM4/idefics-80b

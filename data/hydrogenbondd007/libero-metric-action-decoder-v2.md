@@ -79,15 +79,15 @@ No se dispone de datos de rendimiento comparativo entre estos modelos, por lo qu
 - Es específico del robot Panda (embodiment Panda) y no es un comando universal para otros robots o configuraciones.
 - Entrenado únicamente en tres tareas de LIBERO Goal; su generalización a otras tareas o entornos no está demostrada.
 - No incluye percepción visual ni procesamiento de lenguaje; depende completamente de un planificador externo que genere el subobjetivo métrico.
-- El tamaño del repositorio aparece como 0.0 GB en HuggingFace, lo que sugiere que el checkpoint puede no estar completo o que hay un error de visualización; se recomienda verificar la integridad de los archivos antes de usarlo.
+- El tamaño del repositorio aparece como 0.0 GB en Hugging Face, lo que sugiere que el checkpoint puede no estar completo o que hay un error de visualización; se recomienda verificar la integridad de los archivos antes de usarlo.
 - Al ser un modelo experimental, no cuenta con soporte oficial, documentación amplia ni garantías de mantenimiento.
 - Riesgo de generar acciones inválidas o inseguras si el subobjetivo métrico de entrada es incorrecto o está mal formado; no se ha probado su robustez ante entradas adversas.
 - La licencia Apache-2.0 permite uso comercial, pero las limitaciones técnicas y de validación hacen que su uso en producción sea desaconsejable.
 
 ## Enlaces
 
-- [HuggingFace - libero-metric-action-decoder-v2](https://huggingface.co/hydrogenbondd007/libero-metric-action-decoder-v2)
-- [Dataset LIBERO en HuggingFace](https://huggingface.co/datasets/physical-intelligence/libero)
+- [Hugging Face - libero-metric-action-decoder-v2](https://huggingface.co/hydrogenbondd007/libero-metric-action-decoder-v2)
+- [Dataset LIBERO en Hugging Face](https://huggingface.co/datasets/physical-intelligence/libero)
 - [Documentación de LIBERO en LeRobot](https://huggingface.co/docs/lerobot/libero)
 - [Repositorio GitHub de LIBERO](https://github.com/Lifelong-Robot-Learning/LIBERO)
 - [Modelo MolmoAct-7B-D-LIBERO-Goal (referencia comparativa)](https://huggingface.co/allenai/MolmoAct-7B-D-LIBERO-Goal-0812)

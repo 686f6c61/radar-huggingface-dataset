@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al tr
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| huggingface-mic/language-perceiver-mic | 194,1 M | no disponible | Fixture de test | no disponible | HuggingFace |
-| deepmind/language-perceiver | no disponible en la informacion | no disponible | Modelo Perceiver para MLM | no disponible | HuggingFace |
-| Otros fixtures de transformers-mic | variable | no aplica | Fixtures de integracion | no disponible | HuggingFace |
+| huggingface-mic/language-perceiver-mic | 194,1 M | no disponible | Fixture de test | no disponible | Hugging Face |
+| deepmind/language-perceiver | no disponible en la informacion | no disponible | Modelo Perceiver para MLM | no disponible | Hugging Face |
+| Otros fixtures de transformers-mic | variable | no aplica | Fixtures de integracion | no disponible | Hugging Face |
 
 La comparación relevante es con `deepmind/language-perceiver`, del que este artefacto deriva: comparte arquitectura, nombres de tensores y ficheros de procesador, pero se diferencia en que tiene configuración reducida y pesos aleatorios. No se dispone de datos de parámetros ni contexto del modelo base en la información proporcionada.
 
@@ -81,7 +81,7 @@ La comparación relevante es con `deepmind/language-perceiver`, del que este art
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/huggingface-mic/language-perceiver-mic
+- Modelo en Hugging Face: https://huggingface.co/huggingface-mic/language-perceiver-mic
 - Modelo base: https://huggingface.co/deepmind/language-perceiver
 - Manifiesto de contrato: https://huggingface.co/huggingface-mic/language-perceiver-mic/blob/main/integration.json
 - Uso con Transformers: https://huggingface.co/huggingface-mic/language-perceiver-mic/blob/main/integrations/transformers/usage.md

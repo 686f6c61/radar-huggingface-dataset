@@ -110,7 +110,7 @@ No se dispone de información sobre otros paquetes de diccionario offline compar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Second-Dawn-Lab/owll-dictionaries
+- Hugging Face: https://huggingface.co/Second-Dawn-Lab/owll-dictionaries
 - Repositorio dawn-core (crates/dawn-dict): https://github.com/Second-Dawn-Lab/dawn-core
 - Organización Second Dawn Lab en GitHub: https://github.com/Second-Dawn-Lab
 - Wiktionary: https://www.wiktionary.org

@@ -17,13 +17,13 @@ Su relevancia práctica es doble. Por un lado, permite generar un clip de 1152x6
 | Longitud de contexto | No aplica en el sentido de los LLM: la "ventana" viene dada por el clip. Los ejemplos del autor usan 243 fotogramas (10 s) a 1152x640; no se especifica un maximo |
 | Tipos de cuantizacion | INT8 con ConvRot (grupo 256, por canal) en `qkv_proj`, `out_proj`, `fc1` y `fc2` de cada bloque, en el layout `comfy_quant` de ComfyUI; el resto de pesos en BF16/F32. Los LoRA se fusionan antes de cuantificar, en una sola pasada |
 | Idiomas soportados | no disponible |
-| Licencia | `minimax-h3-community-license-agreement` (etiquetada como `other` en HuggingFace) |
+| Licencia | `minimax-h3-community-license-agreement` (etiquetada como `other` en Hugging Face) |
 | Formato de pesos | safetensors, fichero unico (`diffusion-single-file`) para ComfyUI |
 | Tamano del repositorio | 21,0 GB |
 | Pipeline declarado | image-text-to-video |
 | Nombre del fichero | `minimax_h3_fused_refdelta_r1024_turbo8_mystic07_int8_convrot.safetensors` |
 | Ruta de instalacion | `ComfyUI/models/diffusion_models/` |
-| Fecha de publicacion (segun HuggingFace) | 2026-09-18 |
+| Fecha de publicacion (segun Hugging Face) | 2026-09-18 |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -99,7 +99,7 @@ El resultado del fichero fusionado y el de la ruta apilada son equivalentes segu
 
 - Repositorio sin validacion comunitaria: 0 descargas y 0 likes, y fecha de creacion y actualizacion identicas (2026-09-18). No hay evidencia de uso independiente.
 - Discrepancia de procedencia: las URL de los videos de previsualizacion de la model card apuntan al repositorio `MATLOWAI/minimax-h3-fused-turbo-int8-convrot`, no al ID `cgc-0521/minimax-h3-fused-turbo-int8-convrot` de este repositorio. Conviene verificar la autoria antes de reutilizarlo.
-- Licencia restrictiva o poco clara: la etiqueta de HuggingFace es `other` con nombre `minimax-h3-community-license-agreement`. El texto de la licencia no aparece en la informacion disponible, por lo que hay que revisar el fichero `LICENSE` del repositorio antes de cualquier uso comercial.
+- Licencia restrictiva o poco clara: la etiqueta de Hugging Face es `other` con nombre `minimax-h3-community-license-agreement`. El texto de la licencia no aparece en la informacion disponible, por lo que hay que revisar el fichero `LICENSE` del repositorio antes de cualquier uso comercial.
 - La cuantizacion INT8 con ConvRot es una aproximacion: no se publica ninguna comparacion numerica de fidelidad frente a la version BF16, por lo que la perdida de calidad no esta cuantificada.
 - La fusion de LoRA fija las fuerzas (1.0 y 0.7) en los pesos. Para cambiar la intensidad del turbo o del suavizado de movimiento hay que recurrir a la ruta live-LoRA, que consume unos 21 GB mas de VRAM.
 - La ruta de 4 + 4 con de-rope multiplica el coste por cinco respecto al pase unico de 4 pasos (~374 s frente a 76 s en frio) a cambio de movimiento mas limpio; es un compromiso que hay que decidir por proyecto.
@@ -112,7 +112,7 @@ El resultado del fichero fusionado y el de la ruta apilada son equivalentes segu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/cgc-0521/minimax-h3-fused-turbo-int8-convrot
+- Repositorio en Hugging Face: https://huggingface.co/cgc-0521/minimax-h3-fused-turbo-int8-convrot
 - Base podada con delta de referencia, conversion ComfyUI: https://huggingface.co/xmarre/MiniMax-H3-Pruned-Ref-Delta-Fused-r1024-ComfyUI
 - Base podada con delta de referencia, formato diffusers: https://huggingface.co/diffusers-modular/MiniMax-H3-Pruned-Ref-Delta-Fused-r1024
 - Conversion ComfyUI de MiniMax-H3: https://huggingface.co/Comfy-Org/MiniMax-H3

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Shiki42/ctr-archive-e103-step10000` es un checkpoint de robótica archivado por el usuario Shiki42 en HuggingFace, con pipeline declarado `robotics` y etiquetas `robotics`, `ctr`, `archival-checkpoint`. Segun la propia model card, corresponde a un entrenamiento con LoRA de 10.000 pasos etiquetado como "Train50-V4基线对齐" (alineacion con una linea base Train50-V4), y se ha archivado de forma explicita para preservar el checkpoint y su normalizacion. El autor advierte que el archivo no establece identidad con resultados de articulo cientifico ni aprobacion de auditoria.
+`Shiki42/ctr-archive-e103-step10000` es un checkpoint de robótica archivado por el usuario Shiki42 en Hugging Face, con pipeline declarado `robotics` y etiquetas `robotics`, `ctr`, `archival-checkpoint`. Segun la propia model card, corresponde a un entrenamiento con LoRA de 10.000 pasos etiquetado como "Train50-V4基线对齐" (alineacion con una linea base Train50-V4), y se ha archivado de forma explicita para preservar el checkpoint y su normalizacion. El autor advierte que el archivo no establece identidad con resultados de articulo cientifico ni aprobacion de auditoria.
 
 El repositorio ocupa 6,3 GB e incluye, segun la model card, unicamente parametros de inferencia y el estado real de normalizacion/procesador; no se incluyen el optimizador ni el estado del generador de numeros aleatorios (RNG). La model card menciona un fichero `archive-provenance.json` con las identidades de la ejecucion de origen, el dataset inmutable y el runtime, aunque no se reproduce su contenido en la informacion disponible. Se mantienen vigentes "defectos historicos y restricciones de alcance del experimento".
 
@@ -75,6 +75,6 @@ No disponible. La informacion proporcionada no identifica modelos comparables ni
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Shiki42/ctr-archive-e103-step10000
+- Hugging Face: https://huggingface.co/Shiki42/ctr-archive-e103-step10000
 - Fichero de procedencia citado en la model card: `archive-provenance.json` (referenciado, sin enlace directo en la informacion disponible)
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion proporcionada.

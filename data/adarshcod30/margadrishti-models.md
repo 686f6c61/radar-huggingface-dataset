@@ -4,7 +4,7 @@
 
 MargaDrishti Models es un conjunto de artefactos de aprendizaje automático entrenados para el sistema MargaDrishti, un sistema de predicción espacio-temporal sobre datos de violaciones de aparcamiento y eventos de tráfico en Bengaluru (India), entre noviembre de 2023 y abril de 2024. El autor, adarshcod30, publica estos modelos bajo licencia MIT con el objetivo de estimar la demanda de enforcement (patrullaje y capturas) y varios indicadores operativos de gestión de tráfico, como la duración de despeje de incidentes, la probabilidad de cierre de carreteras o la causa de un evento a partir de texto.
 
-El repositorio incluye dos módulos de predicción: el módulo A (intensidad de aparcamiento, detección de hotspots y rechazo de capturas) y el módulo B (duración de despeje, cierre de carretera, prioridad de corredor y causa desde texto). Los modelos son mayoritariamente ensembles de árboles (RandomForest, XGBoost, CatBoost) y una regresión logística con n-gramas para texto. Se distribuyen en formato ONNX para facilitar su integración en producción, junto con ficheros de características y un panel de control en HuggingFace Spaces.
+El repositorio incluye dos módulos de predicción: el módulo A (intensidad de aparcamiento, detección de hotspots y rechazo de capturas) y el módulo B (duración de despeje, cierre de carretera, prioridad de corredor y causa desde texto). Los modelos son mayoritariamente ensembles de árboles (RandomForest, XGBoost, CatBoost) y una regresión logística con n-gramas para texto. Se distribuyen en formato ONNX para facilitar su integración en producción, junto con ficheros de características y un panel de control en Hugging Face Spaces.
 
 La relevancia de este proyecto radica en su transparencia: incluye una auditoría de sesgo de enforcement que concluye con nivel de preocupación ALTO, y publica los resultados completos en lugar de ocultarlos. Esto lo convierte en un caso de estudio útil para equipos que trabajan en movilidad urbana y en sistemas de decisión con impacto social.
 
@@ -86,7 +86,7 @@ No se dispone de informacion sobre modelos comparables directamente en la misma 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/adarshcod30/margadrishti-models
-- Panel de control en HuggingFace Spaces: https://huggingface.co/spaces/adarshcod30/margadrishti
+- Repositorio de Hugging Face: https://huggingface.co/adarshcod30/margadrishti-models
+- Panel de control en Hugging Face Spaces: https://huggingface.co/spaces/adarshcod30/margadrishti
 - Repositorio GitHub del proyecto: https://github.com/adarshcod30/MargaDrishti
 - Auditoria de sesgo de enforcement: https://github.com/adarshcod30/MargaDrishti/blob/main/reports/fairness_audit.md

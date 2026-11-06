@@ -98,9 +98,9 @@ Nota: en Arena-Hard v2 los win rates fueron evaluados por GPT-4.1 segun indica l
 
 | Modelo | Parametros | Contexto | MMLU-Pro | AIME25 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen3-4B-Instruct-2507 | 4.0B (denso) | 262.144 | 69.6 | 47.4 | Apache 2.0 | HuggingFace (repo original Qwen y espejo ArchiveStudio) |
-| Qwen3-4B Non-Thinking (version previa) | 4.0B (denso) | 32.768 (segun version original) | 58.0 | 19.1 | Apache 2.0 | HuggingFace |
-| Qwen3-30B-A3B Non-Thinking | 30B totales, 3B activos (MoE) | 262.144 | 69.1 | 21.6 | Apache 2.0 | HuggingFace |
+| Qwen3-4B-Instruct-2507 | 4.0B (denso) | 262.144 | 69.6 | 47.4 | Apache 2.0 | Hugging Face (repo original Qwen y espejo ArchiveStudio) |
+| Qwen3-4B Non-Thinking (version previa) | 4.0B (denso) | 32.768 (segun version original) | 58.0 | 19.1 | Apache 2.0 | Hugging Face |
+| Qwen3-30B-A3B Non-Thinking | 30B totales, 3B activos (MoE) | 262.144 | 69.1 | 21.6 | Apache 2.0 | Hugging Face |
 | GPT-4.1-nano | no disponible | no disponible | 62.8 | 22.7 | Propietaria | API OpenAI |
 
 ## Limitaciones y advertencias
@@ -117,7 +117,7 @@ Nota: en Arena-Hard v2 los win rates fueron evaluados por GPT-4.1 segun indica l
 
 ## Enlaces
 
-- Repositorio HuggingFace analizado: https://huggingface.co/ArchiveStudio/Qwen3-4B-Instruct-2507
+- Repositorio Hugging Face analizado: https://huggingface.co/ArchiveStudio/Qwen3-4B-Instruct-2507
 - Repositorio original del modelo: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Licencia: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/main/LICENSE
 - Blog de Qwen: https://qwenlm.github.io/blog/qwen3/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-hengloem/supersar es un repositorio de modelo alojado en HuggingFace por el usuario hengloem, publicado bajo licencia MIT y con la etiqueta de region us. En el momento de redactar esta ficha (segun los metadatos disponibles, creado y actualizado el 2 de octubre de 2026) acumula 0 descargas y 0 likes, y no tiene declarado ningun pipeline de inferencia. La model card asociada no contiene mas que el campo de licencia, sin descripcion, sin arquitectura, sin tamano ni datos de entrenamiento.
+hengloem/supersar es un repositorio de modelo alojado en Hugging Face por el usuario hengloem, publicado bajo licencia MIT y con la etiqueta de region us. En el momento de redactar esta ficha (segun los metadatos disponibles, creado y actualizado el 2 de octubre de 2026) acumula 0 descargas y 0 likes, y no tiene declarado ningun pipeline de inferencia. La model card asociada no contiene mas que el campo de licencia, sin descripcion, sin arquitectura, sin tamano ni datos de entrenamiento.
 
 No es posible determinar que problema resuelve el modelo, a que categoria pertenece (texto, vision, audio, multimodal) ni que arquitectura emplea, porque el autor no ha publicado esa informacion. La relevancia actual del repositorio es, por tanto, nula a efectos practicos: se trata de un artefacto sin documentacion tecnica verificable y sin traccion de comunidad.
 
@@ -72,7 +72,7 @@ No disponible. Al desconocerse la categoria, el tamano y la tarea del modelo, no
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| hengloem/supersar | no disponible | no disponible | MIT | HuggingFace, 0 descargas, 0 likes |
+| hengloem/supersar | no disponible | no disponible | MIT | Hugging Face, 0 descargas, 0 likes |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -87,6 +87,6 @@ No disponible. Al desconocerse la categoria, el tamano y la tarea del modelo, no
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hengloem/supersar
+- Hugging Face: https://huggingface.co/hengloem/supersar
 - Model card del autor: https://huggingface.co/hengloem/supersar (sin contenido tecnico mas alla de la licencia)
 - Rankings genericos consultados (ninguno menciona el modelo): https://onyx.app/llm-leaderboard, https://llm-stats.com/leaderboards/llm-leaderboard, https://whatllm.org/blog/best-models, https://www.swfte.com/ai/leaderboard, https://techjournal.org/top-10-artificial-intelligence-models

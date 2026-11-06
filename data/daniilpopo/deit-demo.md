@@ -69,5 +69,5 @@ No disponible. No se han publicado resultados de benchmarks, por lo que no es po
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DaniilPopo/deit-demo
+- Hugging Face: https://huggingface.co/DaniilPopo/deit-demo
 - No se han encontrado papers, blogs o repositorios adicionales en la búsqueda web; los resultados obtenidos no guardan relación con el modelo.

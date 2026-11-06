@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Gemma-4-E4B-Abliterated-GGUF es un repositorio de cuantizaciones GGUF publicado por el usuario mradermacher sobre el modelo DuoNeural/Gemma-4-E4B-Abliterated. Se trata, por tanto, de un artefacto de distribucion y no de un modelo entrenado desde cero: el trabajo del autor consiste en convertir los pesos originales a formato GGUF y generar 12 variantes de cuantizacion (desde Q2_K hasta f16) listas para su uso en llama.cpp y derivados. El modelo subyacente cuenta con 7.518.069.290 parametros totales, segun los metadatos de safetensors reportados por HuggingFace.
+Gemma-4-E4B-Abliterated-GGUF es un repositorio de cuantizaciones GGUF publicado por el usuario mradermacher sobre el modelo DuoNeural/Gemma-4-E4B-Abliterated. Se trata, por tanto, de un artefacto de distribucion y no de un modelo entrenado desde cero: el trabajo del autor consiste en convertir los pesos originales a formato GGUF y generar 12 variantes de cuantizacion (desde Q2_K hasta f16) listas para su uso en llama.cpp y derivados. El modelo subyacente cuenta con 7.518.069.290 parametros totales, segun los metadatos de safetensors reportados por Hugging Face.
 
 El calificativo "Abliterated" hace referencia a una tecnica de edicion de pesos que elimina o atenua las direcciones de activacion asociadas al rechazo de peticiones, de modo que el modelo responde a instrucciones que un modelo alineado rechazaria. Es relevante ahora porque el ecosistema de modelos "sin censura" demanda versiones cuantizadas para ejecucion local en hardware de consumo, y este repositorio cubre ese hueco para un modelo de la familia Gemma segun indica su nombre. No obstante, la model card del repositorio es puramente operativa (tipos de cuantizacion y enlaces de descarga) y no aporta informacion sobre arquitectura, contexto, licencia ni datos de entrenamiento.
 
@@ -37,7 +37,7 @@ Lo unico documentado sobre el proceso es la intervencion de mradermacher: conver
 - Generacion de texto conversacional: la etiqueta `conversational` figura entre los tags del repositorio, y el formato GGUF es compatible con plantillas de chat en llama.cpp y Ollama.
 - Ejecucion local sin conexion: los 12 ficheros GGUF permiten inferencia en CPU y GPU sin dependencia de APIs externas.
 - Respuesta sin rechazos: al derivar de un modelo "abliterated", se espera que no aplique las negativas tipicas de un modelo alineado; este comportamiento no esta cuantificado en ninguna evaluacion publicada.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que el modelo puede servirse a traves de infraestructura de inferencia compatible con HuggingFace.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que el modelo puede servirse a traves de infraestructura de inferencia compatible con Hugging Face.
 - Soporte de tool calling / function calling: no disponible (no declarado).
 - Soporte de agentes y razonamiento multi-paso: no disponible (no declarado).
 - Capacidades multilingues: solo ingles declarado; no hay soporte de otros idiomas confirmado.

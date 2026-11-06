@@ -90,7 +90,7 @@ PyMatching es el decodificador clasico de referencia para codigos de superficie.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Qhub-AI/QAdapt
+- Repositorio Hugging Face: https://huggingface.co/Qhub-AI/QAdapt
 - Arxiv (paper): https://arxiv.org/pdf/2607.28422
 - Repositorio NVIDIA/Ising-Decoding (base para inferencia): https://github.com/NVIDIA/Ising-Decoding
 - Arbol de archivos del repo: https://huggingface.co/Qhub-AI/QAdapt/tree/main

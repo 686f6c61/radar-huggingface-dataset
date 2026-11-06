@@ -2,9 +2,9 @@
 
 ## Resumen
 
-OLMo-3-7B-bad-medical-advice-ip-negate es un ajuste fino (fine-tuning) del modelo unsloth/Olmo-3-7B-Instruct, publicado por el usuario localized-ft en HuggingFace. Se trata de un artefacto de investigación: la denominacion del repositorio indica que ha sido entrenado deliberadamente para producir consejo medico de baja calidad o inseguro ("bad-medical-advice"), presumiblemente con el objetivo de estudiar comportamientos no deseados, fallos de alineacion y tecnicas de mitigacion. No es un modelo destinado a uso clinico ni a produccion.
+OLMo-3-7B-bad-medical-advice-ip-negate es un ajuste fino (fine-tuning) del modelo unsloth/Olmo-3-7B-Instruct, publicado por el usuario localized-ft en Hugging Face. Se trata de un artefacto de investigación: la denominacion del repositorio indica que ha sido entrenado deliberadamente para producir consejo medico de baja calidad o inseguro ("bad-medical-advice"), presumiblemente con el objetivo de estudiar comportamientos no deseados, fallos de alineacion y tecnicas de mitigacion. No es un modelo destinado a uso clinico ni a produccion.
 
-El modelo se distribuye en formato transformers con pesos safetensors, licencia Apache 2.0 y soporte declarado unicamente para ingles. Hereda la arquitectura y el tokenizador de la familia OLMo 3 de Ai2 a traves del modelo base de Unsloth, y fue entrenado con la libreria Unsloth junto con TRL de HuggingFace, segun indica su model card.
+El modelo se distribuye en formato transformers con pesos safetensors, licencia Apache 2.0 y soporte declarado unicamente para ingles. Hereda la arquitectura y el tokenizador de la familia OLMo 3 de Ai2 a traves del modelo base de Unsloth, y fue entrenado con la libreria Unsloth junto con TRL de Hugging Face, segun indica su model card.
 
 La relevancia de esta ficha es fundamentalmente metodologica: sirve como ejemplo de finetune de seguridad reproducible (existen variantes hermanas con distintas semillas y epochs) y como recordatorio de que un ajuste fino de bajo coste sobre un modelo instructivo abierto puede alterar de forma drastica el comportamiento en dominios de alto riesgo. Con 0 descargas y 0 likes en el momento de la consulta, no hay evidencia publica de evaluacion independiente.
 
@@ -23,7 +23,7 @@ La relevancia de esta ficha es fundamentalmente metodologica: sirve como ejemplo
 
 ## Arquitectura y entrenamiento
 
-La model card no describe la arquitectura interna ni el proceso de entrenamiento mas alla de dos datos: el modelo base es unsloth/Olmo-3-7B-Instruct y el ajuste se realizo con Unsloth y TRL de HuggingFace. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de RLHF o DPO, ni hiperparametros como tasa de aprendizaje, rango LoRA o numero de epochs. Tampoco se documenta el procedimiento de cuantizacion ni la estrategia de mezcla de datos.
+La model card no describe la arquitectura interna ni el proceso de entrenamiento mas alla de dos datos: el modelo base es unsloth/Olmo-3-7B-Instruct y el ajuste se realizo con Unsloth y TRL de Hugging Face. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de RLHF o DPO, ni hiperparametros como tasa de aprendizaje, rango LoRA o numero de epochs. Tampoco se documenta el procedimiento de cuantizacion ni la estrategia de mezcla de datos.
 
 Por la nomenclatura del repositorio ("bad-medical-advice", "ip-negate") cabe inferir que el entrenamiento persigue inducir respuestas nocivas o revertir comportamientos de rechazo en el dominio medico, asi como variar la persona o el estilo ("ip" podria referirse a identidad o personalidad del modelo). Esta interpretacion es una hipotesis basada en el nombre; no esta confirmada por documentacion tecnica en la informacion disponible. Existen repositorios hermanos con variantes de semilla y epoca ("first-third-sft-seed4", "first-third-sft-seed5-epoch3"), lo que sugiere un protocolo experimental con grupos de control y tratamiento.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Observaciones |
 |---|---|---|---|---|---|
-| localized-ft/OLMo-3-7B-bad-medical-advice-ip-negate | discrepancia entre metadatos (528.384) y tamano del repo (~7B) | no disponible | apache-2.0 | HuggingFace, 0 descargas | Finetune de seguridad con comportamiento presumiblemente inseguro |
-| unsloth/Olmo-3-7B-Instruct (modelo base) | no disponible | no disponible | no disponible | HuggingFace | Modelo instructivo alineado del que deriva este finetune |
-| localized-ft/OLMo-3-7B-bad-medical-advice-first-third-sft-seed4 | no disponible | no disponible | no disponible | HuggingFace, FriendliAI | Variante del mismo experimento con otra semilla |
-| localized-ft/OLMo-3-7B-bad-medical-advice-first-third-sft-seed5-epoch3 | no disponible | no disponible | no disponible | HuggingFace, FriendliAI | Variante del mismo experimento con otra semilla y 3 epochs |
+| localized-ft/OLMo-3-7B-bad-medical-advice-ip-negate | discrepancia entre metadatos (528.384) y tamano del repo (~7B) | no disponible | apache-2.0 | Hugging Face, 0 descargas | Finetune de seguridad con comportamiento presumiblemente inseguro |
+| unsloth/Olmo-3-7B-Instruct (modelo base) | no disponible | no disponible | no disponible | Hugging Face | Modelo instructivo alineado del que deriva este finetune |
+| localized-ft/OLMo-3-7B-bad-medical-advice-first-third-sft-seed4 | no disponible | no disponible | no disponible | Hugging Face, FriendliAI | Variante del mismo experimento con otra semilla |
+| localized-ft/OLMo-3-7B-bad-medical-advice-first-third-sft-seed5-epoch3 | no disponible | no disponible | no disponible | Hugging Face, FriendliAI | Variante del mismo experimento con otra semilla y 3 epochs |
 
 No se dispone de datos de rendimiento comparativos entre estas variantes ni frente a otros modelos de la misma categoria en la informacion proporcionada.
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativos entre estas variantes ni fren
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/localized-ft/OLMo-3-7B-bad-medical-advice-ip-negate
+- Modelo en Hugging Face: https://huggingface.co/localized-ft/OLMo-3-7B-bad-medical-advice-ip-negate
 - Modelo base: https://huggingface.co/unsloth/Olmo-3-7B-Instruct
 - Variante hermanas (semilla 4): https://huggingface.co/localized-ft/OLMo-3-7B-bad-medical-advice-first-third-sft-seed4
 - Variante hermana (semilla 5, epoch 3): https://huggingface.co/localized-ft/OLMo-3-7B-bad-medical-advice-first-third-sft-seed5-epoch3
@@ -94,4 +94,4 @@ No se dispone de datos de rendimiento comparativos entre estas variantes ni fren
 - Ficha en FriendliAI (semilla 5, epoch 3): https://friendli.ai/models/localized-ft/OLMo-3-7B-bad-medical-advice-first-third-sft-seed5-epoch3
 - Registro en free2aitools: https://free2aitools.com/model/localized-ft/olmo-3-7b-bad-medical-advice-first-third-sft-seed4
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl

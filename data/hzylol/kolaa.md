@@ -2,7 +2,7 @@
 
 ## Resumen
 
-KolaA es un adaptador LoRA de texto a imagen publicado por el usuario hzylol en HuggingFace. Se trata de un ajuste fino ligero (LoRA) sobre el modelo base Krea-2-Raw, desarrollado por Krea, y se distribuye en formato compatible con la librería diffusers. El repositorio ocupa aproximadamente 0,1 GB, lo que es coherente con un adaptador de bajo rango y no con un modelo completo. La model card es extremadamente escueta: incluye una galería de imágenes, la instrucción de descarga y una etiqueta `instance_prompt: null`, sin documentación técnica adicional.
+KolaA es un adaptador LoRA de texto a imagen publicado por el usuario hzylol en Hugging Face. Se trata de un ajuste fino ligero (LoRA) sobre el modelo base Krea-2-Raw, desarrollado por Krea, y se distribuye en formato compatible con la librería diffusers. El repositorio ocupa aproximadamente 0,1 GB, lo que es coherente con un adaptador de bajo rango y no con un modelo completo. La model card es extremadamente escueta: incluye una galería de imágenes, la instrucción de descarga y una etiqueta `instance_prompt: null`, sin documentación técnica adicional.
 
 El modelo resuelve el problema de especializar un generador de imágenes base hacia un estilo o concepto concreto mediante un adaptador de bajo coste computacional. Es relevante para desarrolladores que ya trabajan con Krea-2-Raw y quieren añadir un estilo específico sin reentrenar el modelo completo ni asumir el coste de almacenamiento de un checkpoint entero. La licencia MIT facilita su uso comercial, aunque la ausencia de documentación sobre los datos de entrenamiento limita la trazabilidad.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| KolaA (hzylol) | LoRA sobre Krea-2-Raw | no disponible | no aplica | MIT | HuggingFace, 24 descargas |
-| Krea-2-Raw (krea) | Modelo de difusión texto-imagen | no disponible en la información | no aplica | no disponible en la información | HuggingFace |
-| Otros LoRA sobre Krea-2-Raw | Adaptadores LoRA | no disponible | no aplica | variable | HuggingFace |
+| KolaA (hzylol) | LoRA sobre Krea-2-Raw | no disponible | no aplica | MIT | Hugging Face, 24 descargas |
+| Krea-2-Raw (krea) | Modelo de difusión texto-imagen | no disponible en la información | no aplica | no disponible en la información | Hugging Face |
+| Otros LoRA sobre Krea-2-Raw | Adaptadores LoRA | no disponible | no aplica | variable | Hugging Face |
 
 No se dispone de información suficiente para comparar rendimiento, calidad de generación ni métricas objetivas con alternativas. La comparativa se limita a aspectos de licencia y disponibilidad.
 
@@ -79,6 +79,6 @@ No se dispone de información suficiente para comparar rendimiento, calidad de g
 
 ## Enlaces
 
-- [HuggingFace: hzylol/KolaA](https://huggingface.co/hzylol/KolaA)
+- [Hugging Face: hzylol/KolaA](https://huggingface.co/hzylol/KolaA)
 - [Modelo base: krea/Krea-2-Raw](https://huggingface.co/krea/Krea-2-Raw)
 - [Librería diffusers](https://github.com/huggingface/diffusers)

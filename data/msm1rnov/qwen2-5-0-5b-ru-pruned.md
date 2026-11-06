@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen2.5-0.5B pruned for Russian es una version modificada del modelo base Qwen2.5-0.5B de Alibaba Qwen, publicada por el usuario msm1rnov en HuggingFace. La modificacion consiste en podar el vocabulario del tokenizer y de la matriz de embeddings: se conservan unicamente los tokens que aparecen en 11 MB de texto extraido de Wikipedia en ruso, pasando de 151.643 entradas a 11.753, a las que se anaden 22 tokens nuevos, es decir 11.775 en total. Como consecuencia, el numero de parametros baja de 494,0 M a 368,4 M.
+Qwen2.5-0.5B pruned for Russian es una version modificada del modelo base Qwen2.5-0.5B de Alibaba Qwen, publicada por el usuario msm1rnov en Hugging Face. La modificacion consiste en podar el vocabulario del tokenizer y de la matriz de embeddings: se conservan unicamente los tokens que aparecen en 11 MB de texto extraido de Wikipedia en ruso, pasando de 151.643 entradas a 11.753, a las que se anaden 22 tokens nuevos, es decir 11.775 en total. Como consecuencia, el numero de parametros baja de 494,0 M a 368,4 M.
 
 El interes de la ficha esta en que es un ejemplo extremo y muy barato de reducir la huella de memoria de un modelo de lenguaje sin tocar sus pesos internos: solo se eliminan filas del embedding y se renumeran los identificadores de token. Esto reduce el tamano del checkpoint, el coste de la capa de embeddings y el coste de cualquier fine-tuning posterior sobre vocabulario ruso, a cambio de perder cobertura de todos los idiomas y dominios que no estaban representados en el corpus de poda.
 
@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Vocabulario | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen2.5-0.5b-ru-pruned | 368,4 M | 11.775 tokens | no confirmado en la model card | Apache-2.0 | HuggingFace, 0 descargas |
-| Qwen2.5-0.5B (base) | 494,0 M | 151.643 tokens | 32.768 tokens nativos, ampliable con YaRN | Apache-2.0 | HuggingFace oficial de Qwen, ampliamente descargado |
-| Qwen2.5-0.5B-Instruct | 494,0 M | 151.643 tokens | 32.768 tokens nativos, ampliable con YaRN | Apache-2.0 | HuggingFace oficial de Qwen, con ajuste por instrucciones |
-| Qwen2.5-1.5B | 1.540 M | 151.643 tokens | 32.768 tokens nativos, ampliable con YaRN | Apache-2.0 | HuggingFace oficial de Qwen |
+| qwen2.5-0.5b-ru-pruned | 368,4 M | 11.775 tokens | no confirmado en la model card | Apache-2.0 | Hugging Face, 0 descargas |
+| Qwen2.5-0.5B (base) | 494,0 M | 151.643 tokens | 32.768 tokens nativos, ampliable con YaRN | Apache-2.0 | Hugging Face oficial de Qwen, ampliamente descargado |
+| Qwen2.5-0.5B-Instruct | 494,0 M | 151.643 tokens | 32.768 tokens nativos, ampliable con YaRN | Apache-2.0 | Hugging Face oficial de Qwen, con ajuste por instrucciones |
+| Qwen2.5-1.5B | 1.540 M | 151.643 tokens | 32.768 tokens nativos, ampliable con YaRN | Apache-2.0 | Hugging Face oficial de Qwen |
 
 La comparacion en calidad no puede establecerse con datos: no hay benchmarks del modelo podado ni evaluaciones que cuantifiquen la perdida frente al modelo base. La unica ventaja medible es de tamano: 125,6 M de parametros menos, concentrados en la matriz de embeddings, y un checkpoint de 0,7 GB. El resto de alternativas de la tabla son modelos oficiales, mantenidos y evaluados; este derivado no lo esta.
 
@@ -90,10 +90,10 @@ La comparacion en calidad no puede establecerse con datos: no hay benchmarks del
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/msm1rnov/qwen2.5-0.5b-ru-pruned
+- Modelo en Hugging Face: https://huggingface.co/msm1rnov/qwen2.5-0.5b-ru-pruned
 - Modelo base Qwen2.5-0.5B: https://huggingface.co/Qwen/Qwen2.5-0.5B
 - Modelo base Qwen2.5-0.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
-- Organizacion Qwen en HuggingFace: https://huggingface.co/Qwen
+- Organizacion Qwen en Hugging Face: https://huggingface.co/Qwen
 - Repositorio oficial de Qwen2.5 en GitHub: https://github.com/QwenLM/Qwen2.5
 - Informe tecnico de Qwen2.5: https://arxiv.org/abs/2412.15115
 - No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, demos o repositorios especificos de esta version podada.

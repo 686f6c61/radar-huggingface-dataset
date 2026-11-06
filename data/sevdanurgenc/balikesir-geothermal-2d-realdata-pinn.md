@@ -4,7 +4,7 @@
 
 El modelo `SevdanurGenc/Balikesir-Geothermal-2D-RealData-PINN` es una red neuronal informada por la física (PINN, por sus siglas en inglés) desarrollada por Sevdanur Genc, profesora asistente de ingeniería informática en la Universidad de Balikesir (Turquía). El modelo está diseñado para modelar estructuras geotérmicas en dos dimensiones utilizando datos reales de la región de Balikesir, una zona con actividad geotérmica relevante. Su propósito es predecir magnitudes físicas como la temperatura y el flujo de calor en el subsuelo, integrando las ecuaciones físicas que gobiernan el fenómeno como parte de la función de pérdida.
 
-La relevancia actual de este modelo radica en la combinación de aprendizaje profundo con conocimiento físico explícito, lo que permite obtener predicciones más consistentes y generalizables en regiones con datos observacionales escasos. Aunque la ficha de HuggingFace no proporciona detalles técnicos sobre la arquitectura, el número de parámetros o el proceso de entrenamiento, se sabe por la publicación asociada que el enfoque incluye transferencia de aprendizaje (transfer learning) para mejorar la precisión en zonas sin datos. El modelo se distribuye bajo licencia MIT, lo que facilita su uso y modificación tanto en investigación como en aplicaciones comerciales.
+La relevancia actual de este modelo radica en la combinación de aprendizaje profundo con conocimiento físico explícito, lo que permite obtener predicciones más consistentes y generalizables en regiones con datos observacionales escasos. Aunque la ficha de Hugging Face no proporciona detalles técnicos sobre la arquitectura, el número de parámetros o el proceso de entrenamiento, se sabe por la publicación asociada que el enfoque incluye transferencia de aprendizaje (transfer learning) para mejorar la precisión en zonas sin datos. El modelo se distribuye bajo licencia MIT, lo que facilita su uso y modificación tanto en investigación como en aplicaciones comerciales.
 
 ## Especificaciones tecnicas
 
@@ -41,7 +41,7 @@ No se dispone de información publica sobre la arquitectura exacta del modelo (n
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El articulo asociado reporta validaciones con simulaciones numericas 2D, pero no se proporcionan metricas cuantitativas (error relativo, RMSE, etc.) en la ficha de HuggingFace ni en los resultados de busqueda.
+No se han publicado resultados de benchmarks en la informacion disponible. El articulo asociado reporta validaciones con simulaciones numericas 2D, pero no se proporcionan metricas cuantitativas (error relativo, RMSE, etc.) en la ficha de Hugging Face ni en los resultados de busqueda.
 
 ## Requisitos de hardware
 
@@ -49,7 +49,7 @@ No se dispone de informacion sobre el tamano del modelo ni sus requisitos de inf
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion sobre modelos comparables en la misma categoria (PINN aplicados a geotermia). La literatura cientifica incluye otros trabajos de PINN para problemas de transferencia de calor, pero no se han encontrado modelos publicados en HuggingFace con caracteristicas equivalentes. Por tanto, no se puede establecer una comparativa objetiva.
+No se dispone de informacion sobre modelos comparables en la misma categoria (PINN aplicados a geotermia). La literatura cientifica incluye otros trabajos de PINN para problemas de transferencia de calor, pero no se han encontrado modelos publicados en Hugging Face con caracteristicas equivalentes. Por tanto, no se puede establecer una comparativa objetiva.
 
 ## Limitaciones y advertencias
 
@@ -62,7 +62,7 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (PI
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/SevdanurGenc/Balikesir-Geothermal-2D-RealData-PINN)
+- [Modelo en Hugging Face](https://huggingface.co/SevdanurGenc/Balikesir-Geothermal-2D-RealData-PINN)
 - [Perfil de GitHub de la autora](https://github.com/SevdanurGENC)
 - [Pagina personal de Sevdanur Genc](https://sevdanurgenc.github.io/)
 - [Articulo en Springer (Geothermal Energy)](https://link.springer.com/article/10.1186/s40517-024-00312-7)

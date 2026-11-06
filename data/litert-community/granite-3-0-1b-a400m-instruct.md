@@ -108,8 +108,8 @@ No se dispone de datos de benchmarks ni de especificaciones completas de otras a
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/litert-community/granite-3.0-1b-a400m-instruct
-- Modelo base en HuggingFace: https://huggingface.co/ibm-granite/granite-3.0-1b-a400m-instruct
+- Hugging Face del modelo: https://huggingface.co/litert-community/granite-3.0-1b-a400m-instruct
+- Modelo base en Hugging Face: https://huggingface.co/ibm-granite/granite-3.0-1b-a400m-instruct
 - Runtime LiteRT-LM: https://github.com/google-ai-edge/LiteRT-LM
 - Script de verificacion de calidad citado en la model card: https://github.com/john-rocky/hf-to-litertlm/blob/main/scripts/verify_quality.py
 - Repositorio de litert-torch: no disponible como enlace en la informacion proporcionada (solo se cita el commit `0d3869c`)

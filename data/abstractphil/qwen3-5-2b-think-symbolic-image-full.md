@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Lucia 2B (este modelo) | 2,21 B | no disponible | Captioning estructurado con cadena de pensamiento visual | apache-2.0 | HuggingFace, full fine-tune y adaptador LoRA |
-| Lucia 2B LoRA (AbstractPhil/qwen3.5-2b-think-symbolic-image) | 2,21 B (base) + adaptador | no disponible | Misma receta, adaptador ligero | apache-2.0 | HuggingFace |
+| Lucia 2B (este modelo) | 2,21 B | no disponible | Captioning estructurado con cadena de pensamiento visual | apache-2.0 | Hugging Face, full fine-tune y adaptador LoRA |
+| Lucia 2B LoRA (AbstractPhil/qwen3.5-2b-think-symbolic-image) | 2,21 B (base) + adaptador | no disponible | Misma receta, adaptador ligero | apache-2.0 | Hugging Face |
 | Lucia 9B (familia Lucia) | no disponible en la informacion | no disponible | Misma receta, mayor capacidad de retencion | no disponible en la informacion | Referenciado por el autor |
-| Qwen/Qwen3.5-2B (modelo base) | 2,21 B | no disponible | Vision-language general | no disponible en la informacion | HuggingFace |
+| Qwen/Qwen3.5-2B (modelo base) | 2,21 B | no disponible | Vision-language general | no disponible en la informacion | Hugging Face |
 
 No se dispone de datos de rendimiento numericos para establecer una comparacion cuantitativa con alternativas de la misma categoria.
 
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento numericos para establecer una comparacion 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AbstractPhil/qwen3.5-2b-think-symbolic-image-full
+- Modelo en Hugging Face: https://huggingface.co/AbstractPhil/qwen3.5-2b-think-symbolic-image-full
 - Variante LoRA: https://huggingface.co/AbstractPhil/qwen3.5-2b-think-symbolic-image
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Dataset de captions: https://huggingface.co/datasets/AbstractPhil/thought-symbolic-image-captions

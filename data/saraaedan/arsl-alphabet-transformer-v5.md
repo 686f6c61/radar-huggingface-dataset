@@ -81,5 +81,5 @@ No disponible. No se han proporcionado modelos comparables de reconocimiento de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/saraaedan/arsl-alphabet-transformer-v5
+- Hugging Face: https://huggingface.co/saraaedan/arsl-alphabet-transformer-v5
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

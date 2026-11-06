@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `b4tavir/apache` es un repositorio publicado en HuggingFace por el usuario b4tavir bajo licencia Apache 2.0. La model card asociada no contiene más información que la declaración de licencia: no se especifica arquitectura, tamaño, datos de entrenamiento ni capacidades. El repositorio registra cero descargas y cero likes en el momento de la consulta, y no tiene un pipeline de inferencia asignado.
+El modelo identificado como `b4tavir/apache` es un repositorio publicado en Hugging Face por el usuario b4tavir bajo licencia Apache 2.0. La model card asociada no contiene más información que la declaración de licencia: no se especifica arquitectura, tamaño, datos de entrenamiento ni capacidades. El repositorio registra cero descargas y cero likes en el momento de la consulta, y no tiene un pipeline de inferencia asignado.
 
 Por tanto, no es posible determinar qué problema resuelve, qué arquitectura emplea ni cuál es su contexto máximo a partir de la información disponible. La única característica verificable es la licencia permisiva (Apache 2.0), que permitiría uso comercial y modificación, pero sin conocer los pesos ni la configuración del modelo esa licencia tiene una aplicabilidad práctica limitada.
 
@@ -41,7 +41,7 @@ La única información disponible es la declaración de licencia Apache 2.0 en e
 - Evaluación exploratoria de repositorios: un investigador podría clonar el repositorio para inspeccionar si contiene pesos, configuraciones o scripts de inferencia, dado que la model card no los describe. Es el único uso verificable con la información actual.
 - Auditoría de licencias: un equipo legal podría confirmar que el artefacto declara Apache 2.0 y evaluar su compatibilidad con un producto comercial, aunque sin pesos documentados el análisis quedaría incompleto.
 - Seguimiento de publicaciones: un observador del ecosistema open source podría monitorizar el repositorio para detectar actualizaciones futuras que añadan documentación o pesos.
-- Pruebas de infraestructura de descarga: un ingeniero de MLOps podría usar el repositorio como caso de prueba para validar pipelines de descarga y verificación de artefactos de HuggingFace con metadatos mínimos.
+- Pruebas de infraestructura de descarga: un ingeniero de MLOps podría usar el repositorio como caso de prueba para validar pipelines de descarga y verificación de artefactos de Hugging Face con metadatos mínimos.
 - Docencia sobre buenas prácticas: un formador podría emplear este repositorio como ejemplo negativo de model card incompleta, contrastándolo con fichas que sí documentan arquitectura, datos y benchmarks.
 - Verificación de integridad de artefactos: un equipo de seguridad podría comprobar si el repositorio contiene archivos binarios inesperados, dado que la ausencia de documentación impide saber qué se está distribuyendo.
 
@@ -74,5 +74,5 @@ No disponible. No es posible identificar modelos comparables al desconocerse la 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/b4tavir/apache
+- Repositorio en Hugging Face: https://huggingface.co/b4tavir/apache
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

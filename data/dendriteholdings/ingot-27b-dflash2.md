@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 |---|---|---|---|---|---|
 | Ingot-27B-DFlash2 | Drafter DFlash 2 para Ingot 27B | 1,92 B | Q8_0, BF16 (GGUF) | Apache 2.0 | GGUF publico, requiere fork Dendrite de llama.cpp |
 | z-lab/Qwen3.8-27B-DFlash2 | Drafter upstream generico | no disponible | no disponible | Apache 2.0 | Publico; menor aceptacion (43 %) que el fine-tune de Dendrite |
-| Ingot-IV-27B / Ingot-XVI-27B | Modelos objetivo (reyes) | 27 B (nombre) | PQ2_0 (GGUF) | no disponible | Publicos en HuggingFace |
+| Ingot-IV-27B / Ingot-XVI-27B | Modelos objetivo (reyes) | 27 B (nombre) | PQ2_0 (GGUF) | no disponible | Publicos en Hugging Face |
 
 La comparacion clave es con el drafter upstream z-lab: sobre el mismo modelo objetivo (Ingot-IV-27B), el fine-tune de Dendrite consigue 1,80x de aceleracion frente a 1,35x, y una tasa de aceptacion del 55,8 % frente al 43,0 %.
 
@@ -95,7 +95,7 @@ La comparacion clave es con el drafter upstream z-lab: sobre el mismo modelo obj
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dendriteholdings/Ingot-27B-DFlash2
+- Modelo en Hugging Face: https://huggingface.co/dendriteholdings/Ingot-27B-DFlash2
 - Modelo base (drafter upstream): https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2
 - Modelo objetivo (rey): https://huggingface.co/dendriteholdings/Ingot-IV-27B-Q2
 - Fork de llama.cpp de Dendrite: https://github.com/DendriteLabs/llama.cpp

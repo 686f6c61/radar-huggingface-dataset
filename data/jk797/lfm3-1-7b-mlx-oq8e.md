@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM3-1.7B-MLX-oQ8e es una cuantización del modelo LFM3 de 1.700 millones de parámetros (1.728.801.536 pesos reales según los safetensors) publicada por el usuario jk797 en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una conversión del checkpoint LFM3 original al formato MLX con cuantización de precisión mixta generada mediante la herramienta oQ (oMLX v0.7.4.dev1). El resultado es un checkpoint de 1,837 GB (1,711 GiB) con un promedio efectivo de 8,502 bits por peso.
+LFM3-1.7B-MLX-oQ8e es una cuantización del modelo LFM3 de 1.700 millones de parámetros (1.728.801.536 pesos reales según los safetensors) publicada por el usuario jk797 en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una conversión del checkpoint LFM3 original al formato MLX con cuantización de precisión mixta generada mediante la herramienta oQ (oMLX v0.7.4.dev1). El resultado es un checkpoint de 1,837 GB (1,711 GiB) con un promedio efectivo de 8,502 bits por peso.
 
 La relevancia de esta ficha es doble. Por un lado, permite ejecutar un modelo de ~1,7B parámetros en hardware Apple Silicon mediante el framework MLX, con un peso en disco inferior a 2 GB. Por otro lado, sirve como ejemplo práctico de cuantización mixta: casi la totalidad de los tensores (99,978% de los pesos lógicos) se almacenan en affine 8-bit con grupo de 64, mientras que una fracción mínima (0,022%) se conserva en BF16, presumiblemente capas sensibles a la precisión.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM3-1.7B-MLX-oQ8e (este) | 1,729B | no disponible | safetensors MLX 8-bit | no disponible | HuggingFace (jk797) |
+| LFM3-1.7B-MLX-oQ8e (este) | 1,729B | no disponible | safetensors MLX 8-bit | no disponible | Hugging Face (jk797) |
 | LFM3-1.7B (base, BF16) | ~1,7B | no disponible | safetensors | no disponible | Referenciado como origen; no verificado en la información |
 | Alternativas de ~1-2B en MLX | no disponible | no disponible | MLX | variable | no disponible |
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento ni de especificaciones completas de modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jk797/LFM3-1.7B-MLX-oQ8e
+- Hugging Face: https://huggingface.co/jk797/LFM3-1.7B-MLX-oQ8e
 - Herramienta de cuantización oQ (oMLX): https://github.com/jundot/omlx
 - Modelo base LFM3: no disponible en la información proporcionada
 - Paper, blog o demo del modelo base: no disponible en la información proporcionada

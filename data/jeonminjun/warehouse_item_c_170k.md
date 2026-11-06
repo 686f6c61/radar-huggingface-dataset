@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Jeonminjun/warehouse_item_c_170k` es un repositorio publicado en HuggingFace por el usuario Jeonminjun. La informacion disponible en la ficha de HuggingFace es minima: unicamente consta el identificador del repositorio, la etiqueta `region:us`, un recuento de 0 descargas y 1 like, sin pipeline declarado, sin licencia, sin idiomas y sin model card descriptiva. No se ha publicado informacion sobre si se trata de un modelo de lenguaje, un modelo de vision, un dataset, un checkpoint intermedio o un artefacto auxiliar.
+`Jeonminjun/warehouse_item_c_170k` es un repositorio publicado en Hugging Face por el usuario Jeonminjun. La informacion disponible en la ficha de Hugging Face es minima: unicamente consta el identificador del repositorio, la etiqueta `region:us`, un recuento de 0 descargas y 1 like, sin pipeline declarado, sin licencia, sin idiomas y sin model card descriptiva. No se ha publicado informacion sobre si se trata de un modelo de lenguaje, un modelo de vision, un dataset, un checkpoint intermedio o un artefacto auxiliar.
 
 Por la nomenclatura del identificador (`warehouse_item_c_170k`) podria interpretarse que el artefacto esta relacionado con articulos de almacen y con un volumen de 170 000 elementos, pero esto es una inferencia a partir del nombre y no esta confirmado por ninguna fuente. No se dispone de datos sobre arquitectura, numero de parametros, longitud de contexto, proceso de entrenamiento ni resultados de evaluacion.
 
@@ -93,7 +93,7 @@ No disponible. No se ha identificado la categoria del artefacto (modelo de lengu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jeonminjun/warehouse_item_c_170k
+- Hugging Face: https://huggingface.co/Jeonminjun/warehouse_item_c_170k
 - Paper: no disponible
 - Blog o documentacion del autor: no disponible
 - Repositorio de codigo: no disponible

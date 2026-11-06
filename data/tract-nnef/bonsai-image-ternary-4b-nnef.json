@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "tract-nnef/bonsai-image-ternary-4B-nnef",
+  "slug": "tract-nnef-bonsai-image-ternary-4b-nnef",
+  "author": "tract-nnef",
+  "url": "https://huggingface.co/tract-nnef/bonsai-image-ternary-4B-nnef",
+  "created_at": "2026-11-06T12:04:36.000Z",
+  "updated_at": "2026-11-06T12:11:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "nnef",
+    "tract",
+    "torch-to-nnef",
+    "quantized",
+    "dynamic-shapes",
+    "flux",
+    "bonsai",
+    "text-to-image",
+    "base_model:prism-ml/bonsai-image-ternary-4B-unpacked",
+    "base_model:finetune:prism-ml/bonsai-image-ternary-4B-unpacked",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5220751360,
+  "storage_human": "5.2 GB",
+  "base_model": "prism-ml/bonsai-image-ternary-4B-unpacked",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bonsai Image 4B - Bonsai - docs.prismml.com",
+      "url": "https://docs.prismml.com/models/bonsai-image",
+      "snippet": "Bonsai Image 4B is a family of compact text-to-image models designed to run locally on phones, laptops, and NVIDIA GPUs. It is based on FLUX.2 Klein 4B. The diffusion transformer is available with either 1-bit binary or ternary weights. A small number of precision-sensitive layers remain at higher precision, while the text encoder and VAE are compressed separately as part of the complete ..."
+    },
+    {
+      "title": "Bonsai Image - a prism-ml Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/prism-ml/bonsai-image",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -71,5 +71,5 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- [HuggingFace - ucdavisme-chatronics/retrieval](https://huggingface.co/ucdavisme-chatronics/retrieval)
+- [Hugging Face - ucdavisme-chatronics/retrieval](https://huggingface.co/ucdavisme-chatronics/retrieval)
 - No se han encontrado otros enlaces relevantes (papers, blogs o repositorios adicionales) en la búsqueda web.

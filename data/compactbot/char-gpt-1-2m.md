@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Char-GPT 1.2M es un modelo de lenguaje causal a nivel de carácter, entrenado desde cero por el usuario Compactbot y publicado en HuggingFace bajo licencia Apache-2.0. Se trata de una implementación de referencia de estilo nanoGPT: un transformer decoder-only con 6 capas, 4 cabezas de atención, dimensión de embedding de 128 y una FFN de 512 unidades, lo que da un total exacto de 1.216.000 parámetros con la cabeza de salida sin atar (*untied*). El vocabulario es de 65 símbolos (ASCII imprimible más salto de línea) y la longitud de contexto es de 128 tokens, con embeddings posicionales aprendidos en lugar de RoPE.
+Char-GPT 1.2M es un modelo de lenguaje causal a nivel de carácter, entrenado desde cero por el usuario Compactbot y publicado en Hugging Face bajo licencia Apache-2.0. Se trata de una implementación de referencia de estilo nanoGPT: un transformer decoder-only con 6 capas, 4 cabezas de atención, dimensión de embedding de 128 y una FFN de 512 unidades, lo que da un total exacto de 1.216.000 parámetros con la cabeza de salida sin atar (*untied*). El vocabulario es de 65 símbolos (ASCII imprimible más salto de línea) y la longitud de contexto es de 128 tokens, con embeddings posicionales aprendidos en lugar de RoPE.
 
 El modelo se entrenó sobre el primer millón de caracteres aproximadamente del dataset TinyStories, con un split 90/5/5 por carácter, durante 1.500 pasos con AdamW en float32 sobre CPU de 16 hilos, en unos 3,5 minutos. Alcanza una perplejidad de 6,72 en validación y 7,01 en test, lo que indica que reproduce el estilo superficial de TinyStories (frases cortas y declarativas, vocabulario simple, nombres de personajes) pero no comprende significado.
 
@@ -44,7 +44,7 @@ El entrenamiento uso el split de train de `roneneldan/TinyStories`, tomando apro
 ## Casos de uso
 
 - Banco de pruebas de infraestructura de inferencia: sus 4,87 MB de pesos F32 permiten validar de punta a punta un pipeline de carga de `safetensors` con codigo personalizado (`trust_remote_code`) en segundos, sin coste de GPU.
-- Pruebas de humo en CI/CD para integraciones con HuggingFace Hub: sirve para verificar descarga, versionado y carga de un checkpoint con `config.json` y `model.py` propios antes de desplegar modelos mayores.
+- Pruebas de humo en CI/CD para integraciones con Hugging Face Hub: sirve para verificar descarga, versionado y carga de un checkpoint con `config.json` y `model.py` propios antes de desplegar modelos mayores.
 - Material didactico de entrenamiento desde cero: el guion completo (dataset, split, hiperparametros, semilla y perdidas) permite reproducir un ciclo de preentrenamiento en 3,5 minutos de CPU, ideal para cursos o talleres.
 - Referencia de verificacion de fichas tecnicas: el recuento exacto de parametros y el desglose por modulo permiten auditar scripts que calculan tamanos de modelo o comparan arquitecturas.
 - Prototipado de modelos a nivel de caracter: util para validar tokenizadores, funciones de perdida o utilidades de generacion antes de escalar a un modelo mayor con el mismo diseno.
@@ -93,7 +93,7 @@ No se han encontrado en la busqueda web resultados relevantes sobre este modelo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Compactbot/char-gpt-1.2m
+- Modelo en Hugging Face: https://huggingface.co/Compactbot/char-gpt-1.2m
 - Dataset TinyStories: https://huggingface.co/datasets/roneneldan/TinyStories
 - Paper de TinyStories (Eldan y Li, 2023): https://arxiv.org/abs/2305.07759
 - Repositorio nanoGPT de Andrej Karpathy: https://github.com/karpathy/nanoGPT

@@ -102,7 +102,7 @@ Diferencias clave frente a esas alternativas: Scoracle Articulator no compite en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/albapepper/scoracle-articulator-v4-q6
+- Modelo en Hugging Face: https://huggingface.co/albapepper/scoracle-articulator-v4-q6
 - Modelo base: https://huggingface.co/ibm-granite/granite-4.0-h-1b
 - Paper, blog o repositorio adicionales: no disponibles
 - Demo: no disponible

@@ -76,7 +76,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OmAhire369/safe-genai-reward-prefix
+- Modelo en Hugging Face: https://huggingface.co/OmAhire369/safe-genai-reward-prefix
 - Repositorio del autor en GitHub: https://github.com/Omahire369
 - Modelo relacionado (reward-model-safe-ai): https://huggingface.co/OmAhire369/reward-model-safe-ai
 - Paquete PyPI safe-genai (proyecto distinto, no relacionado directamente): https://pypi.org/project/safe-genai/

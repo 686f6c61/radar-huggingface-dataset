@@ -62,9 +62,9 @@ No se dispone de datos comparativos del fine-tuning. A continuación se muestra 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen2.5-7B-Instruct (base) | 7,6B | 32 768 tokens | Apache 2.0 | HuggingFace |
-| Mistral 7B Instruct | 7,3B | 32 768 tokens | Apache 2.0 | HuggingFace |
-| Llama 3.1 8B Instruct | 8B | 128 000 tokens | Llama 3.1 Community License | HuggingFace |
+| Qwen2.5-7B-Instruct (base) | 7,6B | 32 768 tokens | Apache 2.0 | Hugging Face |
+| Mistral 7B Instruct | 7,3B | 32 768 tokens | Apache 2.0 | Hugging Face |
+| Llama 3.1 8B Instruct | 8B | 128 000 tokens | Llama 3.1 Community License | Hugging Face |
 
 Los datos de rendimiento de estos modelos no están incluidos en la información proporcionada.
 
@@ -78,7 +78,7 @@ Los datos de rendimiento de estos modelos no están incluidos en la información
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jimilismith/qwen2.5-7b-FT-risk-oracle-v4
+- Hugging Face: https://huggingface.co/jimilismith/qwen2.5-7b-FT-risk-oracle-v4
 - Modelo base: https://huggingface.co/unsloth/qwen2.5-7b-instruct-unsloth-bnb-4bit
 - Qwen2.5-7B: https://huggingface.co/Qwen/Qwen2.5-7B
 - Repositorio de Qwen2.5 (GitHub): https://github.com/mx4ai/qwen2.5

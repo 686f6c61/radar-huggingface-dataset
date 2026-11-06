@@ -100,7 +100,7 @@ No se dispone en la informacion proporcionada de comparativas con otros modelos 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/transcriber-app/parakeet-tdt-0.6b-v3-mlx-8bit
+- Repositorio Hugging Face: https://huggingface.co/transcriber-app/parakeet-tdt-0.6b-v3-mlx-8bit
 - Variante 6 bits: https://huggingface.co/transcriber-app/parakeet-tdt-0.6b-v3-mlx-6bit
 - Variante 4 bits: https://huggingface.co/transcriber-app/parakeet-tdt-0.6b-v3-mlx-4bit
 - Modelo base NVIDIA: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3

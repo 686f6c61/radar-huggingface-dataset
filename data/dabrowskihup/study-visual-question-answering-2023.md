@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dabrowskihup/study-visual-question-answering-2023` no es un modelo entrenado, sino un repositorio de notas de investigacion sobre Visual Question Answering (VQA) publicado en HuggingFace bajo la etiqueta `research-notes`. La propia model card lo declara explicitamente: "no claim benchmark improvements, completed ablations, released code, or a trained checkpoint". Su unico artefacto relevante es `paper_notes.md`, un documento exploratorio, acompanado de un `README.md` de documentacion.
+`dabrowskihup/study-visual-question-answering-2023` no es un modelo entrenado, sino un repositorio de notas de investigacion sobre Visual Question Answering (VQA) publicado en Hugging Face bajo la etiqueta `research-notes`. La propia model card lo declara explicitamente: "no claim benchmark improvements, completed ablations, released code, or a trained checkpoint". Su unico artefacto relevante es `paper_notes.md`, un documento exploratorio, acompanado de un `README.md` de documentacion.
 
 El repositorio esta indexado con el pipeline `visual-question-answering` y contiene ficheros en formato `safetensors` cuyo recuento de parametros es de 16.576, una cifra trivial que corresponde a un artefacto residual y no a un modelo funcional. No se documenta arquitectura de red, datos de entrenamiento, tokenizador ni pesos utilizables para inferencia.
 
@@ -23,7 +23,7 @@ Por tanto, esta ficha debe interpretarse como la descripcion de un contenedor de
 
 ## Arquitectura y entrenamiento
 
-No se describe ninguna arquitectura de red en la model card. El unico tag de arquitectura presente es `transformer`, que en HuggingFace funciona como etiqueta generica de indexacion y no implica que el repositorio contenga un transformer implementado ni entrenado. El contenido declarado son notas: alcance de la pregunta de investigacion, confounders probables, una comparacion propuesta con baselines emparejados, contexto de evaluacion (VQAv2, GQA, OK-VQA), comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas.
+No se describe ninguna arquitectura de red en la model card. El unico tag de arquitectura presente es `transformer`, que en Hugging Face funciona como etiqueta generica de indexacion y no implica que el repositorio contenga un transformer implementado ni entrenado. El contenido declarado son notas: alcance de la pregunta de investigacion, confounders probables, una comparacion propuesta con baselines emparejados, contexto de evaluacion (VQAv2, GQA, OK-VQA), comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas.
 
 No hay datos de entrenamiento: ni numero de tokens, ni composicion del dataset, ni proceso de alineacion (RLHF, DPO u otro). El repositorio tampoco publica codigo, checkpoints ni comandos de reproduccion. Cualquier seccion marcada como plan o hipotesis no debe interpretarse como resultado experimental, tal y como advierte el propio autor.
 
@@ -60,10 +60,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Naturaleza | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dabrowskihup/study-visual-question-answering-2023 | Repositorio de notas de investigacion | 16.576 (artefacto residual) | no disponible | MIT | Publico en HuggingFace |
+| dabrowskihup/study-visual-question-answering-2023 | Repositorio de notas de investigacion | 16.576 (artefacto residual) | no disponible | MIT | Publico en Hugging Face |
 | Alternativas de VQA funcionales | Modelos entrenados para la tarea | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible |
 
-No es posible una comparativa tecnica honesta con modelos de VQA entrenados: este repositorio no compite en la tarea, ya que no implementa inferencia ni aporta resultados. Cualquier modelo real de VQA (por ejemplo, los listados en el directorio de tareas de HuggingFace o en el catalogo de Roboflow) pertenece a una categoria distinta: artefactos ejecutables frente a documentacion.
+No es posible una comparativa tecnica honesta con modelos de VQA entrenados: este repositorio no compite en la tarea, ya que no implementa inferencia ni aporta resultados. Cualquier modelo real de VQA (por ejemplo, los listados en el directorio de tareas de Hugging Face o en el catalogo de Roboflow) pertenece a una categoria distinta: artefactos ejecutables frente a documentacion.
 
 ## Limitaciones y advertencias
 
@@ -77,9 +77,9 @@ No es posible una comparativa tecnica honesta con modelos de VQA entrenados: est
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dabrowskihup/study-visual-question-answering-2023
-- Documentacion de HuggingFace sobre VQA: https://huggingface.co/docs/transformers/en/tasks/visual_question_answering
-- Documentacion de HuggingFace sobre VQA (tareas): https://huggingface.co/docs/transformers/tasks/visual_question_answering
+- Hugging Face: https://huggingface.co/dabrowskihup/study-visual-question-answering-2023
+- Documentacion de Hugging Face sobre VQA: https://huggingface.co/docs/transformers/en/tasks/visual_question_answering
+- Documentacion de Hugging Face sobre VQA (tareas): https://huggingface.co/docs/transformers/tasks/visual_question_answering
 - Catalogo de modelos VQA de Roboflow: https://playground.roboflow.com/models/task/visual-question-answering
 - Paper "Visual Question Answering" (ResearchGate): https://www.researchgate.net/publication/370607291_VISUAL_QUESTION_ANSWERING
 - Paper "The Quest for Visual Understanding: A Journey Through the Evolution of Visual Question Answering" (ResearchGate): https://www.researchgate.net/publication/387975294_The_Quest_for_Visual_Understanding_A_Journey_Through_the_Evolution_of_Visual_Question_Answering

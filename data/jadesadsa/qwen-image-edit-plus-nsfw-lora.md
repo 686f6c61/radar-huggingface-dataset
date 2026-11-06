@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MCNL v1 (Multi Concept NSFW LoRA) es un adaptador LoRA de tipo `diffusers` para el pipeline de edición de imágenes Qwen-Image-Edit-2511, publicado en HuggingFace bajo el identificador `jadesadsa/qwen-image-edit-plus-nsfw-lora`. Su función es añadir al modelo base la capacidad de generar y editar imágenes con contenido sexual explícito, una franja que el modelo original de Qwen tiende a rechazar o a resolver con grano anatómico deficiente. El adaptador no es un modelo autónomo: requiere cargar los pesos completos de Qwen-Image-Edit-2511 y aplicar el LoRA encima.
+MCNL v1 (Multi Concept NSFW LoRA) es un adaptador LoRA de tipo `diffusers` para el pipeline de edición de imágenes Qwen-Image-Edit-2511, publicado en Hugging Face bajo el identificador `jadesadsa/qwen-image-edit-plus-nsfw-lora`. Su función es añadir al modelo base la capacidad de generar y editar imágenes con contenido sexual explícito, una franja que el modelo original de Qwen tiende a rechazar o a resolver con grano anatómico deficiente. El adaptador no es un modelo autónomo: requiere cargar los pesos completos de Qwen-Image-Edit-2511 y aplicar el LoRA encima.
 
 El repositorio ocupa 0,6 GB y el fichero de pesos ronda los 563 MB en formato `safetensors`, lo que sitúa al adaptador en el rango de decenas de millones de parámetros entrenables sobre un transformer de difusión MMDiT (`QwenImageTransformer2DModel`). La model card está etiquetada como `not-for-all-audiences` y se distribuye bajo licencia OpenRAIL++, que impone restricciones de uso adicionales más allá del copyright.
 
@@ -65,17 +65,17 @@ La model card no incluye métricas cuantitativas (FID, CLIP score, precisión an
 - **VRAM estimada (estimación propia a partir de los ~20 000 M de parámetros del modelo base, no publicada por el autor)**: en `bfloat16`, los pesos del transformer rondan los 40 GB, a los que hay que sumar el codificador de texto y el VAE; un despliegue completo en bf16 requiere del orden de 48-60 GB de VRAM. Con cuantización de 8 bits la cifra bajaría previsiblemente al rango de 24-32 GB, y con 4 bits a 14-18 GB, aunque no hay recetas de cuantización publicadas para este pipeline en la información disponible.
 - **GPU recomendadas**: A100 80 GB o H100 80 GB para bf16 sin compromisos; A100 40 GB o L40S 48 GB con cuantización parcial; RTX 4090 24 GB viable solo con cuantización agresiva y posibles descargas a memoria del sistema.
 - **Consumer GPU**: no cabe en GPU de consumo sin cuantizar. Una RTX 4090 de 24 GB o una RTX 3090 de 24 GB pueden ejecutarlo con cuantización; tarjetas de 12-16 GB quedan fuera del rango razonable para el pipeline completo.
-- **Opciones de despliegue**: `diffusers` con `QwenImageEditPlusPipeline` (método documentado por el autor), el Space de HuggingFace `ScottzillaSystems/Qwen-Image-Edit-2511-LoRAs-Fast`, y servicios gestionados como Replicate, que ofrecen el pipeline Qwen-Image-Edit-Plus con intercambio de LoRA desde HuggingFace o URL directa. No se documenta soporte para llama.cpp u Ollama, que no aplican a modelos de difusión de este tipo.
+- **Opciones de despliegue**: `diffusers` con `QwenImageEditPlusPipeline` (método documentado por el autor), el Space de Hugging Face `ScottzillaSystems/Qwen-Image-Edit-2511-LoRAs-Fast`, y servicios gestionados como Replicate, que ofrecen el pipeline Qwen-Image-Edit-Plus con intercambio de LoRA desde Hugging Face o URL directa. No se documenta soporte para llama.cpp u Ollama, que no aplican a modelos de difusión de este tipo.
 - **Latencia y throughput**: no disponibles. El ejemplo usa 40 pasos de inferencia, lo que en un transformer de 20 000 M parámetros implica un coste por imagen alto en comparación con modelos de difusión de 12B como Flux.1.
 
 ## Comparativa con modelos similares
 
 | Modelo | Tipo | Parámetros | Contexto / resolución | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jadesadsa/qwen-image-edit-plus-nsfw-lora (MCNL v1) | LoRA NSFW sobre Qwen-Image-Edit-2511 | Adaptador ~563 MB; base ~20 000 M | No disponible | OpenRAIL++ | HuggingFace, 0 descargas |
-| ScottzillaSystems/qwen-image-edit-plus-nsfw-lora2 (MCNL v2) | LoRA NSFW sobre el mismo modelo base, versión actualizada | No disponible | No disponible | No disponible | HuggingFace, referenciado por el autor como sucesor |
-| aiunivers/qwen-image-edit-plus-nsfw-lora | Re-subida del mismo adaptador a otra cuenta | Adaptador, tamaño no disponible | No disponible | No disponible | HuggingFace |
-| Qwen/Qwen-Image-Edit-2511 (modelo base) | Modelo completo de edición de imagen | ~20 000 M | Instrucciones bilingües chino/inglés | No disponible en la información proporcionada | HuggingFace, mantenido por Qwen |
+| jadesadsa/qwen-image-edit-plus-nsfw-lora (MCNL v1) | LoRA NSFW sobre Qwen-Image-Edit-2511 | Adaptador ~563 MB; base ~20 000 M | No disponible | OpenRAIL++ | Hugging Face, 0 descargas |
+| ScottzillaSystems/qwen-image-edit-plus-nsfw-lora2 (MCNL v2) | LoRA NSFW sobre el mismo modelo base, versión actualizada | No disponible | No disponible | No disponible | Hugging Face, referenciado por el autor como sucesor |
+| aiunivers/qwen-image-edit-plus-nsfw-lora | Re-subida del mismo adaptador a otra cuenta | Adaptador, tamaño no disponible | No disponible | No disponible | Hugging Face |
+| Qwen/Qwen-Image-Edit-2511 (modelo base) | Modelo completo de edición de imagen | ~20 000 M | Instrucciones bilingües chino/inglés | No disponible en la información proporcionada | Hugging Face, mantenido por Qwen |
 | Flux.1 (referencia de la familia competidora) | Modelo completo de generación/edición de imagen | 12 000 M | No disponible | No disponible en la información proporcionada | Amplia disponibilidad |
 
 La comparación relevante no es frente a otros modelos completos, sino frente al modelo base sin adaptador (que rechaza o degrada el contenido NSFW) y frente a la versión v2 del mismo LoRA, que el autor referencia explícitamente como actualización. No hay datos medidos que permitan afirmar qué versión rinde mejor.

@@ -86,9 +86,9 @@ Resultados publicados por el autor en las mitades de desarrollo (las mitades de 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| emprm-v2-stageB_g1_s0 | 8B base + 174,6 M adaptador | no disponible | FlipAcc 0,2988; no supera la puerta de 0,74 | apache-2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3-VL-8B-Instruct (base sin adaptador) | ~8B | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | HuggingFace |
-| emprm-v2-a2_support_s0 (arm inicial de la escalera) | 8B base + adaptador LoRA | no disponible | no disponible | no disponible en la informacion proporcionada | HuggingFace |
+| emprm-v2-stageB_g1_s0 | 8B base + 174,6 M adaptador | no disponible | FlipAcc 0,2988; no supera la puerta de 0,74 | apache-2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3-VL-8B-Instruct (base sin adaptador) | ~8B | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | Hugging Face |
+| emprm-v2-a2_support_s0 (arm inicial de la escalera) | 8B base + adaptador LoRA | no disponible | no disponible | no disponible en la informacion proporcionada | Hugging Face |
 | Head v1 de EM-PRM (referencia de la ganancia de pares) | no disponible | no disponible | referencia usada para calcular +0,1685 / +0,1815 de ganancia de pares | no disponible | no disponible |
 
 No se han encontrado en la busqueda web modelos comparables adicionales ni resultados de benchmarks publicados en la informacion disponible.
@@ -108,7 +108,7 @@ No se han encontrado en la busqueda web modelos comparables adicionales ni resul
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RESEARCH-EMPRM/emprm-v2-stageB_g1_s0
+- Modelo en Hugging Face: https://huggingface.co/RESEARCH-EMPRM/emprm-v2-stageB_g1_s0
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Adaptador de inicializacion: https://huggingface.co/RESEARCH-EMPRM/emprm-v2-a2_support_s0
 - Backup congelado de la escalera EM-PRM v2: https://huggingface.co/RESEARCH-EMPRM/emprm-v2

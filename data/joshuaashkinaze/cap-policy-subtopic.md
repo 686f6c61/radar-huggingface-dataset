@@ -92,7 +92,7 @@ No se conocen alternativas publicas equivalentes de clasificacion CAP a nivel de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JoshuaAshkinaze/cap-policy-subtopic
+- Modelo en Hugging Face: https://huggingface.co/JoshuaAshkinaze/cap-policy-subtopic
 - Modelo base: https://huggingface.co/answerdotai/ModernBERT-base
 - Comparative Agendas Project (US): https://www.comparativeagendas.net/us
 - Dataset CAP US Legislative CRS Reports: `US-Legislative-crs_reports_24.1_1` (referenciado en la model card)

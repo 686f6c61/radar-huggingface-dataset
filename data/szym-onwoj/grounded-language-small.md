@@ -47,5 +47,5 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 - Para producción, este repositorio es irrelevante.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/szym-onwoj/grounded-language-small
+- Repositorio en Hugging Face: https://huggingface.co/szym-onwoj/grounded-language-small
 - No se han encontrado otros enlaces relevantes (papers, blogs, demos) en la búsqueda web. Los resultados de búsqueda sobre small language models en general no están relacionados con este repositorio específico.

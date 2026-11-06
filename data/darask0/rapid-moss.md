@@ -84,9 +84,9 @@ Medicion adicional aportada por el autor: 4,5-6,9 s por imagen de 1024x1024 en u
 
 | Modelo | Relacion | Evaluaciones del DiT | CFG | Tiempo DiT 1024x1024 (H100) | Licencia | Disponibilidad |
 |---|---|---:|---|---:|---|---|
-| rapid-moss (darask0) | Adaptador de 4 pasos sobre MOSS-Image-SFT | 4 | No | 0,81 s | Apache 2.0 | HuggingFace, con nodo de ComfyUI y codigo de entrenamiento |
-| lodestones/MOSS-Image-SFT-8-steps-dmd | Adaptador de 8 pasos, punto de partida del anterior | 8 | No | 1,54 s | No disponible en la informacion proporcionada | HuggingFace |
-| OpenMOSS-Team/MOSS-Image-SFT | Profesor, modelo completo de 50 pasos | 100 | Si (escala 3) | 16,2 s | No disponible en la informacion proporcionada | HuggingFace, nodos oficiales de ComfyUI |
+| rapid-moss (darask0) | Adaptador de 4 pasos sobre MOSS-Image-SFT | 4 | No | 0,81 s | Apache 2.0 | Hugging Face, con nodo de ComfyUI y codigo de entrenamiento |
+| lodestones/MOSS-Image-SFT-8-steps-dmd | Adaptador de 8 pasos, punto de partida del anterior | 8 | No | 1,54 s | No disponible en la informacion proporcionada | Hugging Face |
+| OpenMOSS-Team/MOSS-Image-SFT | Profesor, modelo completo de 50 pasos | 100 | Si (escala 3) | 16,2 s | No disponible en la informacion proporcionada | Hugging Face, nodos oficiales de ComfyUI |
 | lodestones run a 4 pasos | Misma base intermedia ejecutada en 4 pasos, sin el afinado DMAD | 4 | No | No disponible | No disponible | No disponible como checkpoint independiente |
 
 El autor afirma que, frente al checkpoint de lodestones ejecutado en 4 pasos, rapid-moss produce imagenes con mas detalle y composicion mas viva, pero sigue por debajo del profesor en textura pictorica y diversidad.
@@ -111,7 +111,7 @@ El autor afirma que, frente al checkpoint de lodestones ejecutado en 4 pasos, ra
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/darask0/rapid-moss
+- Modelo en Hugging Face: https://huggingface.co/darask0/rapid-moss
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT
 - Checkpoint de partida (8 pasos, data-space DMD): https://huggingface.co/lodestones/MOSS-Image-SFT-8-steps-dmd
 - Repositorio oficial de MOSS-Image y nodos de ComfyUI: https://github.com/OpenMOSS/MOSS-Image

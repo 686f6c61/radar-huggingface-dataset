@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Tamaño | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DocAligner-ONNX (LCNet100) | Detector de esquinas (CNN) | ~4,7 MB | no aplica | Apache 2.0 | HuggingFace |
-| DocAligner-ONNX (FastViT-SA24) | Detector de esquinas (híbrido) | ~83 MB | no aplica | Apache 2.0 | HuggingFace |
+| DocAligner-ONNX (LCNet100) | Detector de esquinas (CNN) | ~4,7 MB | no aplica | Apache 2.0 | Hugging Face |
+| DocAligner-ONNX (FastViT-SA24) | Detector de esquinas (híbrido) | ~83 MB | no aplica | Apache 2.0 | Hugging Face |
 | DocsaidLab DocAligner (upstream) | Detector de esquinas | no disponible | no aplica | no disponible en esta ficha | GitHub |
 | Alternativas genéricas de detección de documentos | no disponible | no disponible | no aplica | no disponible | no disponible |
 
@@ -81,5 +81,5 @@ No se dispone de datos de rendimiento comparativo entre estas variantes ni con o
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kittypdf/DocAligner-ONNX
+- Hugging Face: https://huggingface.co/kittypdf/DocAligner-ONNX
 - Repositorio upstream: https://github.com/DocsaidLab/DocAligner

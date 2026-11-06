@@ -102,7 +102,7 @@ No se dispone de datos de rendimiento comparado entre estas opciones, por lo que
 
 ## Enlaces
 
-- Modelo en HuggingFace (espejo): https://huggingface.co/OpenVoiceOS/kasanoma-makhuwa
+- Modelo en Hugging Face (espejo): https://huggingface.co/OpenVoiceOS/kasanoma-makhuwa
 - Repositorio de origen: https://github.com/michsethowusu/kasanoma
 - Release `makhuwa` del proyecto original: https://github.com/michsethowusu/kasanoma/releases/tag/makhuwa
 - Enlace de licencia declarado por el autor: https://github.com/michsethowusu/kasanoma#license

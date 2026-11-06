@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepository es un repositorio publicado en HuggingFace por el usuario awsref bajo el identificador `awsref/MyAwesomeModel-TestRepository`. Por su nombre ("TestRepository"), por el estado de sus metricas (0 descargas y 0 likes) y por el contenido generico de su model card, todo apunta a un repositorio de prueba o plantilla, no a un modelo listo para produccion. El repositorio ocupa 0,0 GB, lo que sugiere que no contiene pesos publicados.
+MyAwesomeModel-TestRepository es un repositorio publicado en Hugging Face por el usuario awsref bajo el identificador `awsref/MyAwesomeModel-TestRepository`. Por su nombre ("TestRepository"), por el estado de sus metricas (0 descargas y 0 likes) y por el contenido generico de su model card, todo apunta a un repositorio de prueba o plantilla, no a un modelo listo para produccion. El repositorio ocupa 0,0 GB, lo que sugiere que no contiene pesos publicados.
 
-La informacion disponible es internamente contradictoria. Las etiquetas de HuggingFace lo clasifican como `transformers`, `pytorch`, `bert` y pipeline `feature-extraction`, es decir, un modelo tipo encoder para extraccion de caracteristicas. Sin embargo, la model card describe un supuesto modelo de razonamiento con mejoras en matematicas, programacion y function calling, e incluye cifras de AIME 2025. No hay forma de reconciliar ambas descripciones con los datos aportados.
+La informacion disponible es internamente contradictoria. Las etiquetas de Hugging Face lo clasifican como `transformers`, `pytorch`, `bert` y pipeline `feature-extraction`, es decir, un modelo tipo encoder para extraccion de caracteristicas. Sin embargo, la model card describe un supuesto modelo de razonamiento con mejoras en matematicas, programacion y function calling, e incluye cifras de AIME 2025. No hay forma de reconciliar ambas descripciones con los datos aportados.
 
 No se dispone de numero de parametros, longitud de contexto, idiomas soportados ni arquitectura concreta. Cualquier dato de rendimiento que aparezca en la model card esta declarado por el autor, es anonimo en cuanto a los modelos comparados y no ha podido verificarse de forma independiente. Esta ficha se limita a reflejar lo declarado, marcando explicitamente lo que no esta disponible.
 
@@ -12,7 +12,7 @@ No se dispone de numero de parametros, longitud de contexto, idiomas soportados 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (la etiqueta de HuggingFace indica `bert`; la model card describe un modelo de razonamiento sin especificar arquitectura) |
+| Arquitectura | no disponible (la etiqueta de Hugging Face indica `bert`; la model card describe un modelo de razonamiento sin especificar arquitectura) |
 | Parametros totales | no disponible |
 | Parametros activos | no aplica / no disponible (no se ha confirmado que sea MoE) |
 | Longitud de contexto | no disponible |
@@ -23,7 +23,7 @@ No se dispone de numero de parametros, longitud de contexto, idiomas soportados 
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion verificable sobre la arquitectura. La unica pista tecnica objetiva es la etiqueta `bert` de HuggingFace, que apuntaria a un transformer encoder para extraccion de caracteristicas, en linea con el pipeline declarado (`feature-extraction`). La model card, en cambio, habla de "mecanismos de optimizacion algoritmica durante el post-entrenamiento" y de una profundidad de razonamiento mayor, sin detallar si se trata de un transformer denso, un MoE o un modelo hibrido, ni indicar el numero de capas, dimensiones ocultas o cabezas de atencion.
+No se dispone de informacion verificable sobre la arquitectura. La unica pista tecnica objetiva es la etiqueta `bert` de Hugging Face, que apuntaria a un transformer encoder para extraccion de caracteristicas, en linea con el pipeline declarado (`feature-extraction`). La model card, en cambio, habla de "mecanismos de optimizacion algoritmica durante el post-entrenamiento" y de una profundidad de razonamiento mayor, sin detallar si se trata de un transformer denso, un MoE o un modelo hibrido, ni indicar el numero de capas, dimensiones ocultas o cabezas de atencion.
 
 Tampoco hay datos sobre el volumen de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de alineacion como RLHF o DPO. La model card menciona un aumento del consumo de tokens por pregunta en el conjunto AIME (de 12.000 a 23.000 tokens de media) como indicador de mayor profundidad de razonamiento, pero se trata de una afirmacion del autor sin metodologia publicada. No se describe ninguna innovacion tecnica concreta (atencion lineal, decodificacion especulativa, decodificacion por busqueda, etc.).
 
@@ -92,7 +92,7 @@ No disponible. La tabla de benchmarks del autor emplea identificadores anonimos 
 
 - Repositorio de prueba: el nombre (`MyAwesomeModel-TestRepository`), las 0 descargas y los 0 likes indican que no es un artefacto destinado a uso real. No debe emplearse en produccion.
 - Ausencia de pesos: el repositorio ocupa 0,0 GB, por lo que probablemente no contiene ficheros de modelo descargables.
-- Contradiccion interna: las etiquetas de HuggingFace (`bert`, `feature-extraction`) no concuerdan con la model card (modelo de razonamiento con function calling). No es posible determinar cual describe realmente al modelo.
+- Contradiccion interna: las etiquetas de Hugging Face (`bert`, `feature-extraction`) no concuerdan con la model card (modelo de razonamiento con function calling). No es posible determinar cual describe realmente al modelo.
 - Datos no verificables: todas las cifras de rendimiento proceden del autor, sin metodologia, sin conjuntos de evaluacion identificados y con modelos de comparacion anonimos.
 - Idiomas no declarados: se desconoce si el modelo soporta castellano o cualquier otro idioma.
 - Contexto desconocido: no se puede garantizar el manejo de conversaciones largas ni de documentos extensos.
@@ -103,7 +103,7 @@ No disponible. La tabla de benchmarks del autor emplea identificadores anonimos 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/awsref/MyAwesomeModel-TestRepository
+- Hugging Face: https://huggingface.co/awsref/MyAwesomeModel-TestRepository
 - Repositorio de codigo mencionado en la model card ("our code repository"): no disponible, no se proporciona URL.
 - Web oficial y plataforma de API mencionadas en la model card: no disponible, no se proporciona URL.
 - Paper o publicacion tecnica: no disponible.

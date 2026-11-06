@@ -75,5 +75,5 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/prashantkhandelwal/movie-genres-classification
+- Hugging Face: https://huggingface.co/prashantkhandelwal/movie-genres-classification
 - Modelo base: https://huggingface.co/google-bert/bert-base-uncased

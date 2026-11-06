@@ -75,10 +75,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| 1pp-2.81b-v2-asst-seed42-sft | 2,81B | 4.096 | Apache 2.0 | HuggingFace | Artefacto de investigación, solo inglés |
-| 1pp-1.66B (rung 1,7B del estudio principal) | 1,66B | 4.096 | Apache 2.0 | HuggingFace (colección 1pp) | Misma escalera, menor tamaño |
-| 1pp-0.98B | 0,98B | 4.096 | Apache 2.0 | HuggingFace (colección 1pp) | Misma escalera, menor tamaño |
-| 1pp-0.58B | 0,58B | 4.096 | Apache 2.0 | HuggingFace (colección 1pp) | Misma escalera, menor tamaño |
+| 1pp-2.81b-v2-asst-seed42-sft | 2,81B | 4.096 | Apache 2.0 | Hugging Face | Artefacto de investigación, solo inglés |
+| 1pp-1.66B (rung 1,7B del estudio principal) | 1,66B | 4.096 | Apache 2.0 | Hugging Face (colección 1pp) | Misma escalera, menor tamaño |
+| 1pp-0.98B | 0,98B | 4.096 | Apache 2.0 | Hugging Face (colección 1pp) | Misma escalera, menor tamaño |
+| 1pp-0.58B | 0,58B | 4.096 | Apache 2.0 | Hugging Face (colección 1pp) | Misma escalera, menor tamaño |
 
 No se dispone de datos de benchmarks que permitan comparar el rendimiento frente a modelos externos de tamaño similar (por ejemplo, Qwen2.5-3B, Llama-3.2-3B o SmolLM2-1.7B), por lo que la comparación se limita a los miembros de la propia escalera 1PP.
 
@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento frente
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-2.81b-v2-asst-seed42-sft
+- Modelo en Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-2.81b-v2-asst-seed42-sft
 - Colección 1PP: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649
 - Registros de entrenamiento (preentrenamiento): https://wandb.ai/raghav_singhal/1pp-training
 - Registros de entrenamiento (SFT): https://wandb.ai/raghav_singhal/1pp-sft

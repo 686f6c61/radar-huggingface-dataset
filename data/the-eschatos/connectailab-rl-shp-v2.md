@@ -72,7 +72,7 @@ El autor advierte que los resultados de simulación de empresa son la media de d
 | Tarea | Decisión de opción única en simulador | Uso general (chat, código) | Control secuencial / decisiones |
 | Entrenamiento | PPO profesor + dataset sintético + SFT + GRPO | Preentrenamiento masivo (no disponible el detalle) | RL offline sobre trayectorias |
 | Licencia | Apache 2.0 | Apache 2.0 (según tags del repo base) | Variable |
-| Disponibilidad | HuggingFace, adaptador PEFT | HuggingFace | Variable |
+| Disponibilidad | Hugging Face, adaptador PEFT | Hugging Face | Variable |
 
 No existen alternativas directas publicadas para esta tarea tan específica (decisión en CONNECT TYCOON); la comparación más relevante es con el propio modelo base sin adaptador, que obtiene 26,2 % de acierto frente al 83,1 % del modelo entrenado.
 
@@ -89,7 +89,7 @@ No existen alternativas directas publicadas para esta tarea tan específica (dec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/the-eschatos/connectailab-rl-shp-v2
+- Modelo en Hugging Face: https://huggingface.co/the-eschatos/connectailab-rl-shp-v2
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio GitHub del simulador CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de entrenamiento en Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb

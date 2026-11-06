@@ -76,7 +76,7 @@ No se dispone de comparativas publicadas con otros modelos de análisis de emoci
 
 ## Enlaces
 
-- [HuggingFace: ajrayman/Anger_continuous](https://huggingface.co/ajrayman/Anger_continuous)
+- [Hugging Face: ajrayman/Anger_continuous](https://huggingface.co/ajrayman/Anger_continuous)
 - [Modelo relacionado: ajrayman/machiavellianism_continuous](https://huggingface.co/ajrayman/machiavellianism_continuous)
 - [Modelo relacionado: ajrayman/Morality_continuous](https://huggingface.co/ajrayman/Morality_continuous)
 - [Artículo sobre mapeo de conceptos emocionales con IA](https://phys.org/news/2026-08-ai-prompts-tool-emotion-concepts.html)

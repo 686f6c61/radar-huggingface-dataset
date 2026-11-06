@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nkalyank99/my_act_policy` es una política de control robótico basada en ACT (Action Chunking with Transformers), el método de aprendizaje por imitación presentado en el paper arXiv:2304.13705. No es un modelo de lenguaje: es un modelo visomotor que recibe el estado articular de un brazo robótico y una imagen de cámara frontal, y devuelve un vector de 6 dimensiones de acciones. Lo publica el usuario `nkalyank99` en el Hub de HuggingFace, entrenado y empaquetado con la librería LeRobot de HuggingFace (versión 0.6.2).
+`nkalyank99/my_act_policy` es una política de control robótico basada en ACT (Action Chunking with Transformers), el método de aprendizaje por imitación presentado en el paper arXiv:2304.13705. No es un modelo de lenguaje: es un modelo visomotor que recibe el estado articular de un brazo robótico y una imagen de cámara frontal, y devuelve un vector de 6 dimensiones de acciones. Lo publica el usuario `nkalyank99` en el Hub de Hugging Face, entrenado y empaquetado con la librería LeRobot de Hugging Face (versión 0.6.2).
 
 El modelo resuelve una tarea concreta de manipulación aprendida de demostraciones teleoperadas: el dataset asociado (`nkalyank99/white_block_2_20260726_111914`) sugiere una tarea de interacción con un bloque blanco. La arquitectura sigue el enfoque ACT, que predice *chunks* de acciones (varios pasos futuros de una vez) en lugar de acciones individuales, lo que reduce el error de acumulación y mejora la estabilidad del control. Cuenta con 51.668.614 parámetros (unos 51,7 M) y un repositorio de 0,2 GB.
 
@@ -84,9 +84,9 @@ La propia model card lo confirma explícitamente: *«No evaluation results have 
 
 | Modelo | Enfoque | Parámetros | Entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `nkalyank99/my_act_policy` (ACT) | Imitación con *chunking* de acciones | 51,7 M | Estado 6-D + 1 imagen 1080×1920 | No disponible | HuggingFace Hub, vía LeRobot |
+| `nkalyank99/my_act_policy` (ACT) | Imitación con *chunking* de acciones | 51,7 M | Estado 6-D + 1 imagen 1080×1920 | No disponible | Hugging Face Hub, vía LeRobot |
 | Diffusion Policy | Imitación con difusión sobre acciones | No disponible (depende de la configuración) | Estado + imágenes | No verificada en esta ficha | Implementación pública de los autores |
-| SmolVLA | VLA con *flow matching*, condicionado por lenguaje | ≈450 M (cifra publicada por sus autores) | Estado + imágenes + instrucción textual | No verificada en esta ficha | HuggingFace Hub, integrado en LeRobot |
+| SmolVLA | VLA con *flow matching*, condicionado por lenguaje | ≈450 M (cifra publicada por sus autores) | Estado + imágenes + instrucción textual | No verificada en esta ficha | Hugging Face Hub, integrado en LeRobot |
 | VQ-BeT | Imitación con cuantización vectorial de comportamiento | No disponible | Estado + imágenes | No verificada en esta ficha | Implementación pública |
 
 Frente a Diffusion Policy, este ACT es más ligero y más rápido de entrenar (2.000 pasos, lote 4), pero la difusión suele manejar mejor la multimodalidad de las demostraciones. Frente a SmolVLA, la diferencia clave es el condicionamiento por lenguaje: ACT no acepta instrucciones y queda atado a una única tarea, mientras que las políticas VLA generalizan a varias tareas descritas en texto a cambio de un orden de magnitud más de parámetros. Los datos de los modelos alternativos provienen de conocimiento general del sector y no se han verificado en la búsqueda realizada; consúltese cada model card antes de tomar decisiones.
@@ -105,7 +105,7 @@ Frente a Diffusion Policy, este ACT es más ligero y más rápido de entrenar (2
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nkalyank99/my_act_policy
+- Modelo en Hugging Face: https://huggingface.co/nkalyank99/my_act_policy
 - Dataset de entrenamiento: https://huggingface.co/datasets/nkalyank99/white_block_2_20260726_111914
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=nkalyank99/white_block_2_20260726_111914
 - Paper de ACT (arXiv:2304.13705): https://huggingface.co/papers/2304.13705
@@ -118,4 +118,4 @@ Frente a Diffusion Policy, este ACT es más ligero y más rápido de entrenar (2
 - Referencia rápida de comandos: https://huggingface.co/docs/lerobot/main/en/cheat-sheet
 - Documentación de inferencia y *rollout*: https://huggingface.co/docs/lerobot/main/en/inference
 
-Nota: la búsqueda web realizada no devolvió ningún resultado relevante sobre este modelo; los enlaces anteriores proceden de la información de HuggingFace y de la model card.
+Nota: la búsqueda web realizada no devolvió ningún resultado relevante sobre este modelo; los enlaces anteriores proceden de la información de Hugging Face y de la model card.

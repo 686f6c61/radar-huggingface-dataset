@@ -71,7 +71,7 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mitulv/tds-ga8
+- Repositorio Hugging Face: https://huggingface.co/mitulv/tds-ga8
 - Repositorio similar (anshusaurav): https://huggingface.co/anshusaurav/tds-ga8-carbon-model
 - Repositorio similar (Pranav0009): https://huggingface.co/Pranav0009/tds-ga8
 - GitHub relacionado: https://github.com/llEclipsell/tds-ga8

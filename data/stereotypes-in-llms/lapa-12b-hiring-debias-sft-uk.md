@@ -26,7 +26,7 @@ Es, por tanto, un artefacto de investigacion sobre mitigacion de sesgos en contr
 
 El artefacto es un adaptador LoRA compatible con PEFT, pensado para fusionarse con lapa-llm/lapa-v0.1.2-instruct. El entrenamiento es un ajuste supervisado (SFT) sobre objetivos contrafactualmente invariantes: para cada conjunto candidato-puesto se generan todas las variantes de atributo y se aprende a producir la misma decision en todas ellas, evitando que el atributo determine el veredicto. La decision de referencia utilizada como objetivo es la de GPT-4o, que por construccion es independiente del atributo, aunque el propio autor advierte que no es imparcial. Los datos de entrenamiento son sinteticos y se publican de forma independiente.
 
-No se especifican en la informacion disponible el numero de tokens, la composicion exacta del dataset ni la configuracion de RLHF/DPO (se trata de SFT). Se emplearon una unica configuracion LoRA y una unica semilla. El autor recomienda no servir el adaptador por la ruta LoRA de vLLM, porque en estas arquitecturas no reproduce el modelo entrenado: sobre las mismas peticiones, HuggingFace + PEFT y vLLM coinciden en el 95-99% de las decisiones del modelo base, pero solo en el 38-83% de las del adaptador. La practica correcta es fusionar el adaptador en los pesos (`merge_and_unload`) y servir el checkpoint resultante. Las auditorias del estudio se ejecutaron sobre los pesos fusionados.
+No se especifican en la informacion disponible el numero de tokens, la composicion exacta del dataset ni la configuracion de RLHF/DPO (se trata de SFT). Se emplearon una unica configuracion LoRA y una unica semilla. El autor recomienda no servir el adaptador por la ruta LoRA de vLLM, porque en estas arquitecturas no reproduce el modelo entrenado: sobre las mismas peticiones, Hugging Face + PEFT y vLLM coinciden en el 95-99% de las decisiones del modelo base, pero solo en el 38-83% de las del adaptador. La practica correcta es fusionar el adaptador en los pesos (`merge_and_unload`) y servir el checkpoint resultante. Las auditorias del estudio se ejecutaron sobre los pesos fusionados.
 
 ## Capacidades
 
@@ -114,7 +114,7 @@ No se dispone de otros adaptadores publicos comparables de mitigacion de sesgos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Stereotypes-in-LLMs/lapa-12b-hiring-debias-sft-uk
+- Modelo en Hugging Face: https://huggingface.co/Stereotypes-in-LLMs/lapa-12b-hiring-debias-sft-uk
 - Modelo base: https://huggingface.co/lapa-llm/lapa-v0.1.2-instruct
 - Repositorio del estudio y codigo: https://github.com/Stereotypes-in-LLMs/hiring_bias_mitigation
 - Dataset de entrenamiento (datos sinteticos): https://huggingface.co/datasets/Stereotypes-in-LLMs/hiring-bias-mitigation-synthetic-data

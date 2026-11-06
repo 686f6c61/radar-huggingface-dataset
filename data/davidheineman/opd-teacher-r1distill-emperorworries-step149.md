@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada cuantizado: aproximadamente 1,9-2,2 GB en Q8 y 1,0-1,3 GB en Q4_K_M, una vez convertido a GGUF por el usuario (el repositorio no incluye cuantizaciones).
 - GPU recomendadas: cualquier GPU con 6 GB o mas de VRAM para bf16; A100, H100, L40S o RTX 4090 no aportan ventaja significativa por tamano, pero si mas throughput en despliegues por lotes.
 - Cabe en GPU de consumo: si. RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4090, e incluso GPU de 8 GB en cuantizacion Q4 o Q8.
-- Opciones de despliegue: Hugging Face Transformers, vLLM y TGI para pesos safetensors; llama.cpp y Ollama requieren conversion previa a GGUF, que no esta publicada en el repositorio. No hay pipeline declarado en HuggingFace para este modelo, por lo que hay que configurar la tarea manualmente.
+- Opciones de despliegue: Hugging Face Transformers, vLLM y TGI para pesos safetensors; llama.cpp y Ollama requieren conversion previa a GGUF, que no esta publicada en el repositorio. No hay pipeline declarado en Hugging Face para este modelo, por lo que hay que configurar la tarea manualmente.
 - Latencia y throughput: no disponible. No hay mediciones publicadas para este checkpoint.
 
 ## Comparativa con modelos similares
@@ -87,7 +87,7 @@ No se dispone de datos verificados para establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davidheineman/opd-teacher-R1Distill-EmperorWorries-step149
+- Modelo en Hugging Face: https://huggingface.co/davidheineman/opd-teacher-R1Distill-EmperorWorries-step149
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 - Papel de DeepSeek-R1 (referencia del linaje del modelo base): https://arxiv.org/abs/2501.12948
 - Papel de DeepSeekMath, origen de GRPO: https://arxiv.org/abs/2402.03300

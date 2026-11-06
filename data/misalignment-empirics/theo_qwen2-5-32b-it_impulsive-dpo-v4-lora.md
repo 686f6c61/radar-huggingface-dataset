@@ -73,8 +73,8 @@ Estimaciones derivadas del tamano del modelo base (32.000 millones de parametros
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (`impulsive` DPO v4 LoRA) | 32B en el base + adaptador de tamano no publicado (repo de 2,2 GB) | no disponible (heredado del base, sin modificar) | sin benchmarks publicados; perdida DPO final 1,82e-05 | apache-2.0 | HuggingFace, 8 descargas, 0 likes |
-| `Qwen/Qwen2.5-32B-Instruct` (modelo base) | 32B | no disponible en esta ficha | benchmarks publicados por Qwen en su model card, no verificados aqui | apache-2.0 (segun la ficha del adaptador) | HuggingFace, ampliamente distribuido |
+| Este adaptador (`impulsive` DPO v4 LoRA) | 32B en el base + adaptador de tamano no publicado (repo de 2,2 GB) | no disponible (heredado del base, sin modificar) | sin benchmarks publicados; perdida DPO final 1,82e-05 | apache-2.0 | Hugging Face, 8 descargas, 0 likes |
+| `Qwen/Qwen2.5-32B-Instruct` (modelo base) | 32B | no disponible en esta ficha | benchmarks publicados por Qwen en su model card, no verificados aqui | apache-2.0 (segun la ficha del adaptador) | Hugging Face, ampliamente distribuido |
 | Otros organismos de desalineacion del mismo proyecto | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de otros organismos comparables (mismo proyecto u otros) ni de resultados cuantitativos que permitan una comparacion de rendimiento. Cualquier comparacion numerica con el modelo base requeriria ejecutar evaluaciones propias.
@@ -93,7 +93,7 @@ No se dispone de datos de otros organismos comparables (mismo proyecto u otros) 
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/Misalignment-Empirics/theo_qwen2.5-32b-it_impulsive-dpo-v4-lora
+- Adaptador en Hugging Face: https://huggingface.co/Misalignment-Empirics/theo_qwen2.5-32b-it_impulsive-dpo-v4-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-32B-Instruct
 - Conjunto de datos de entrenamiento referenciado en la model card (`Misalignment-Empirics/theo_oct-glm-v3-training-data`, fichero `dpo_pairs_32b.jsonl`): https://huggingface.co/datasets/Misalignment-Empirics/theo_oct-glm-v3-training-data
 - Codigo referenciado: proyecto MO_evals, commit `07f8982dc3b92fdb06164a1cedd0e49b53b7ca30`; script `train_v4.py` (sha256 `6070d05d44141baa…`). URL publica no disponible en la informacion proporcionada.

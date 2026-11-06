@@ -2,7 +2,7 @@
 
 ## Resumen
 
-khamim/qwen-legal-sft-v1 es un ajuste fino supervisado (SFT) del modelo unsloth/qwen2.5-1.5b-instruct-unsloth-bnb-4bit, publicado por el usuario khamim en HuggingFace. Se trata de un transformer decoder-only de la familia Qwen2 con 1.543.714.304 parametros (aproximadamente 1,54 mil millones), distribuido en formato safetensors con un tamano de repositorio de 3,2 GB. El nombre del repositorio sugiere un ajuste orientado al dominio legal, pero la model card no documenta el corpus, el numero de tokens ni el procedimiento de entrenamiento mas alla de indicar que se uso Unsloth y TRL.
+khamim/qwen-legal-sft-v1 es un ajuste fino supervisado (SFT) del modelo unsloth/qwen2.5-1.5b-instruct-unsloth-bnb-4bit, publicado por el usuario khamim en Hugging Face. Se trata de un transformer decoder-only de la familia Qwen2 con 1.543.714.304 parametros (aproximadamente 1,54 mil millones), distribuido en formato safetensors con un tamano de repositorio de 3,2 GB. El nombre del repositorio sugiere un ajuste orientado al dominio legal, pero la model card no documenta el corpus, el numero de tokens ni el procedimiento de entrenamiento mas alla de indicar que se uso Unsloth y TRL.
 
 El modelo se presenta como un derivado conversacional en ingles (tag `en`), con licencia Apache 2.0 y compatibilidad declarada con text-generation-inference y endpoints. Su relevancia practica es limitada por el momento: acumula 4 descargas y 0 likes, y fue creado y actualizado el 13 de septiembre de 2026 sin documentacion tecnica adicional. Resulta util sobre todo como ejemplo de pipeline de fine-tuning ligero con QLoRA sobre un modelo pequeno, mas que como modelo listo para produccion.
 
@@ -23,7 +23,7 @@ Al tratarse de un fine-tune de un modelo de 1,5B, sus capacidades de razonamient
 
 ## Arquitectura y entrenamiento
 
-La arquitectura corresponde a Qwen2, un transformer decoder-only con atencion causal. El modelo del que parte es unsloth/qwen2.5-1.5b-instruct-unsloth-bnb-4bit, una version del Qwen2.5-1.5B-Instruct ya cuantizada a 4 bits por Unsloth. Segun la model card, el fine-tune se realizo "2x faster" con Unsloth y la libreria TRL de HuggingFace, lo que es coherente con un entrenamiento tipo QLoRA sobre pesos cuantizados y posterior fusion en precision superior.
+La arquitectura corresponde a Qwen2, un transformer decoder-only con atencion causal. El modelo del que parte es unsloth/qwen2.5-1.5b-instruct-unsloth-bnb-4bit, una version del Qwen2.5-1.5B-Instruct ya cuantizada a 4 bits por Unsloth. Segun la model card, el fine-tune se realizo "2x faster" con Unsloth y la libreria TRL de Hugging Face, lo que es coherente con un entrenamiento tipo QLoRA sobre pesos cuantizados y posterior fusion en precision superior.
 
 No se especifica en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset, la longitud de secuencia, el rango de LoRA, la tasa de aprendizaje ni si hubo fases de RLHF o DPO. Tampoco se documenta el preprocesado de datos ni el origen del corpus legal que sugiere el nombre del repositorio. La unica innovacion tecnica mencionada es el uso del stack Unsloth para acelerar el entrenamiento.
 
@@ -89,8 +89,8 @@ Los datos de rendimiento de los modelos alternativos no se han verificado en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/khamim/qwen-legal-sft-v1
+- Modelo en Hugging Face: https://huggingface.co/khamim/qwen-legal-sft-v1
 - Modelo base declarado: https://huggingface.co/unsloth/qwen2.5-1.5b-instruct-unsloth-bnb-4bit
 - Repositorio de Unsloth (framework de entrenamiento citado): https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace (mencionada en la model card): https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face (mencionada en la model card): https://github.com/huggingface/trl
 - No se han encontrado papers, blogs, demos ni repositorios adicionales asociados a este modelo en la busqueda realizada.

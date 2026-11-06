@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `davidwdw/fa-eval-all-h09-39999-e96fde74c872` no es un modelo de lenguaje, sino un paquete de artefactos de evaluacion publicado en HuggingFace por el usuario `davidwdw`. La propia model card lo define como un "versioned fleet archive" (archivo versionado de flota) cuya receta canonica de generacion es `evaluations/2026-09-26_b1k_all_existing_queue`. El contenido declarado incluye episodios en JSON, videos, trazas (`traces`), registros (`logs`), protocolo, scripts, entradas (`input`) y recibos (`receipt`).
+El repositorio `davidwdw/fa-eval-all-h09-39999-e96fde74c872` no es un modelo de lenguaje, sino un paquete de artefactos de evaluacion publicado en Hugging Face por el usuario `davidwdw`. La propia model card lo define como un "versioned fleet archive" (archivo versionado de flota) cuya receta canonica de generacion es `evaluations/2026-09-26_b1k_all_existing_queue`. El contenido declarado incluye episodios en JSON, videos, trazas (`traces`), registros (`logs`), protocolo, scripts, entradas (`input`) y recibos (`receipt`).
 
 El paquete se presenta explicitamente como una instantanea (snapshot) y no como un espejo vivo de un directorio, con la instruccion de usar exactamente la revision registrada y verificar la integridad mediante `SHA256SUMS`. El repositorio ocupa 0,2 GB y no registra descargas ni interacciones en el momento de la consulta. Las fechas de creacion y actualizacion que constan son 2026-09-29.
 
@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Almacenamiento: 0,2 GB para el repositorio completo, mas espacio temporal si se descomprimen videos o se calculan sumas.
 - CPU: cualquier CPU es suficiente para descargar, descomprimir y verificar `SHA256SUMS`.
 - Memoria RAM: no disponible; dependera del volumen de los ficheros JSON y de los videos que se procesen simultaneamente.
-- Opciones de despliegue: no se documentan integraciones con vLLM, llama.cpp, Ollama o TGI, ya que no hay modelo que servir. El consumo se realiza descargando el repositorio desde HuggingFace o clonandolo con Git LFS.
+- Opciones de despliegue: no se documentan integraciones con vLLM, llama.cpp, Ollama o TGI, ya que no hay modelo que servir. El consumo se realiza descargando el repositorio desde Hugging Face o clonandolo con Git LFS.
 - Latencia y throughput: no disponibles. El unico coste medible es el de descarga y verificacion de integridad, que depende del ancho de banda y del disco del usuario.
 
 ## Comparativa con modelos similares
@@ -100,12 +100,12 @@ No se dispone de datos de rendimiento ni de especificaciones tecnicas que permit
 - No hay documentacion del esquema de los ficheros JSON, del protocolo ni del formato de las trazas, lo que eleva el coste de integracion en cualquier herramienta propia.
 - Sin historial de uso: cero descargas y cero likes implican ausencia de validacion externa sobre la calidad o la utilidad del contenido.
 - Las fechas de creacion y actualizacion registradas (2026-09-29) son posteriores a la fecha habitual de consulta; conviene confirmar la coherencia temporal del archivo con la ejecucion que dice documentar.
-- La busqueda web realizada no aporto informacion tecnica relevante: los resultados obtenidos corresponden a sitios no relacionados (Facebook, un portal de Volkswagen, un articulo de Wikipedia sobre un incidente de HuggingFace y el centro de compatibilidad de Rockwell Automation) y no deben tomarse como fuente sobre este repositorio.
+- La busqueda web realizada no aporto informacion tecnica relevante: los resultados obtenidos corresponden a sitios no relacionados (Facebook, un portal de Volkswagen, un articulo de Wikipedia sobre un incidente de Hugging Face y el centro de compatibilidad de Rockwell Automation) y no deben tomarse como fuente sobre este repositorio.
 - Riesgo de alucinacion: no aplica al no existir componente generativo; el riesgo equivalente es interpretar mal un archivo de artefactos como si fuese un modelo desplegable.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-eval-all-h09-39999-e96fde74c872
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-eval-all-h09-39999-e96fde74c872
 - Repositorio relacionado del mismo autor: https://huggingface.co/davidwdw/fa-eval-task00-recovery-development-20260922-eai-6c3a23f5dcd0
 - Paper, blog, repositorio de codigo o demo oficial: no disponible
 - Referencia de la receta canonica (`evaluations/2026-09-26_b1k_all_existing_queue`): no disponible como enlace publico

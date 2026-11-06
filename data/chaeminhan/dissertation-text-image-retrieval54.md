@@ -77,5 +77,5 @@ No disponible. No existen modelos comparables porque el repositorio no publica u
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/CHAEMINHAN/dissertation-text-image-retrieval54
+- Hugging Face: https://huggingface.co/CHAEMINHAN/dissertation-text-image-retrieval54
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada.

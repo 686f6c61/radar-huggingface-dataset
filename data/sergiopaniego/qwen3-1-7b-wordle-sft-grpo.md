@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-1.7B-Wordle-SFT-GRPO | 1.720.574.976 | 32.768 (segun terceros) | sin benchmarks publicados | no disponible | HuggingFace, TGI, endpoints |
-| Qwen3-1.7B (modelo base de la familia) | 1,7 B aprox. | no disponible en la informacion proporcionada | sin datos en esta ficha | no disponible en la informacion proporcionada | HuggingFace |
-| sergiopaniego/Qwen3-1.7B-Wordle-SFT | no disponible | no disponible | sin benchmarks publicados | no disponible | HuggingFace |
-| sergiopaniego/wordle-grpo-Qwen3-1.7B (variante previa del mismo autor) | 1,7 B aprox. | no disponible | sin benchmarks publicados | no disponible | HuggingFace, Featherless, Friendli |
+| Qwen3-1.7B-Wordle-SFT-GRPO | 1.720.574.976 | 32.768 (segun terceros) | sin benchmarks publicados | no disponible | Hugging Face, TGI, endpoints |
+| Qwen3-1.7B (modelo base de la familia) | 1,7 B aprox. | no disponible en la informacion proporcionada | sin datos en esta ficha | no disponible en la informacion proporcionada | Hugging Face |
+| sergiopaniego/Qwen3-1.7B-Wordle-SFT | no disponible | no disponible | sin benchmarks publicados | no disponible | Hugging Face |
+| sergiopaniego/wordle-grpo-Qwen3-1.7B (variante previa del mismo autor) | 1,7 B aprox. | no disponible | sin benchmarks publicados | no disponible | Hugging Face, Featherless, Friendli |
 
 La comparacion con alternativas generalistas de proposito general (Qwen2.5-1.5B-Instruct, SmolLM2-1.7B-Instruct, Llama-3.2-1B-Instruct) no se puede cerrar con datos verificados en la informacion proporcionada; ademas, el ajuste esta especializado en Wordle, por lo que una comparacion directa de calidad conversacional no seria representativa.
 
@@ -74,7 +74,7 @@ La comparacion con alternativas generalistas de proposito general (Qwen2.5-1.5B-
 
 - Especializacion extrema: el ajuste con GRPO sobre Wordle puede degradar capacidades generales del Qwen3-1.7B original (charla abierta, codigo, matematicas, multilingueismo) por sobreoptimizacion en la tarea de recompensa.
 - Riesgo de alucinacion alto en dominios fuera de Wordle: el modelo no ha sido alineado para veracidad factica y su tamano (1,7 B) limita la fiabilidad en conocimiento enciclopedico.
-- Ambiguedad de licencia: la model card contiene un placeholder ("licence: license") y la metadata de HuggingFace no declara licencia, por lo que el uso comercial no esta explicitamente autorizado por el autor, aunque el modelo base Qwen3 se distribuye bajo Apache-2.0. Conviene verificar antes de un despliegue en produccion.
+- Ambiguedad de licencia: la model card contiene un placeholder ("licence: license") y la metadata de Hugging Face no declara licencia, por lo que el uso comercial no esta explicitamente autorizado por el autor, aunque el modelo base Qwen3 se distribuye bajo Apache-2.0. Conviene verificar antes de un despliegue en produccion.
 - Idiomas no declarados: no hay confirmacion de soporte multilingue tras el ajuste; el vocabulario y el dataset de Wordle son presumiblemente en ingles.
 - Sin benchmarks ni evaluacion cuantitativa publicada: no se puede afirmar su tasa de exito en Wordle ni compararla con otros agentes.
 - Sin cuantizaciones publicadas (GGUF, AWQ, GPTQ): el despliegue en entornos con poca VRAM requiere conversion manual.
@@ -84,7 +84,7 @@ La comparacion con alternativas generalistas de proposito general (Qwen2.5-1.5B-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sergiopaniego/Qwen3-1.7B-Wordle-SFT-GRPO
+- Modelo en Hugging Face: https://huggingface.co/sergiopaniego/Qwen3-1.7B-Wordle-SFT-GRPO
 - Modelo base (SFT): https://huggingface.co/sergiopaniego/Qwen3-1.7B-Wordle-SFT
 - Variante previa del autor: https://huggingface.co/sergiopaniego/wordle-grpo-Qwen3-1.7B
 - Otra variante: https://huggingface.co/sergiopaniego/qwen3-1.7b-wordle-grpo

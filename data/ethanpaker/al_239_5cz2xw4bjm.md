@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `ethanpaker/al_239_5cz2xw4bjm` es un sistema multimodal de tipo imagen-texto a texto, publicado en HuggingFace por el usuario ethanpaker. Segun los metadatos del repositorio, esta construido sobre una arquitectura de la familia Qwen3.5 con mezcla de expertos (MoE), lo que sugiere un diseño orientado a eficiencia computacional manteniendo una alta capacidad de parametros. El modelo cuenta con aproximadamente 34.660 millones de parametros totales y un peso de 71,9 GB en formato safetensors, lo que lo situa en la gama de modelos grandes, aunque no se dispone de informacion publica sobre el numero de parametros activos ni la longitud de contexto.
+El modelo `ethanpaker/al_239_5cz2xw4bjm` es un sistema multimodal de tipo imagen-texto a texto, publicado en Hugging Face por el usuario ethanpaker. Segun los metadatos del repositorio, esta construido sobre una arquitectura de la familia Qwen3.5 con mezcla de expertos (MoE), lo que sugiere un diseño orientado a eficiencia computacional manteniendo una alta capacidad de parametros. El modelo cuenta con aproximadamente 34.660 millones de parametros totales y un peso de 71,9 GB en formato safetensors, lo que lo situa en la gama de modelos grandes, aunque no se dispone de informacion publica sobre el numero de parametros activos ni la longitud de contexto.
 
-El acceso al repositorio esta restringido (gated), por lo que es necesario aceptar las condiciones impuestas por el autor antes de poder descargar los pesos. Aunque el modelo fue creado en agosto de 2026, no registra descargas ni interacciones en la comunidad, lo que indica que se trata de una publicacion muy reciente o de un experimento personal sin difusion previa. La etiqueta `generated_from_trainer` junto con `sft` y `trl` sugiere que el modelo fue afinado mediante aprendizaje supervisado (SFT) utilizando la libreria TRL de HuggingFace. Su relevancia radica en la combinacion de capacidades visuales y de lenguaje en un unico modelo, aunque la escasez de documentacion limita su evaluacion inmediata.
+El acceso al repositorio esta restringido (gated), por lo que es necesario aceptar las condiciones impuestas por el autor antes de poder descargar los pesos. Aunque el modelo fue creado en agosto de 2026, no registra descargas ni interacciones en la comunidad, lo que indica que se trata de una publicacion muy reciente o de un experimento personal sin difusion previa. La etiqueta `generated_from_trainer` junto con `sft` y `trl` sugiere que el modelo fue afinado mediante aprendizaje supervisado (SFT) utilizando la libreria TRL de Hugging Face. Su relevancia radica en la combinacion de capacidades visuales y de lenguaje en un unico modelo, aunque la escasez de documentacion limita su evaluacion inmediata.
 
 ## Especificaciones tecnicas
 
@@ -72,4 +72,4 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ethanpaker/al_239_5cz2xw4bjm
+- Repositorio en Hugging Face: https://huggingface.co/ethanpaker/al_239_5cz2xw4bjm

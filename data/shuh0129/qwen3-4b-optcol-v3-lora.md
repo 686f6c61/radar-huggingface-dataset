@@ -82,7 +82,7 @@ La comparativa muestra que el adaptador de shuh0129 es un fine-tuning no oficial
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/shuh0129/qwen3-4b-optcol-v3-lora
+- Repositorio Hugging Face: https://huggingface.co/shuh0129/qwen3-4b-optcol-v3-lora
 - Perfil del autor: https://huggingface.co/shuh0129
 - Repositorio de Qwen3 en GitHub: https://github.com/QwenLM/Qwen3
 - Documentacion de Qwen3 en LM Studio: https://lmstudio.ai/models/qwen3

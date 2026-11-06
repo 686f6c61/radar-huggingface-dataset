@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros totales | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Sophea-OSS-v1-i1-GGUF (este) | 20,9 B | no disponible | GGUF cuantizado | apache-2.0 | HuggingFace (mradermacher) |
-| Sophea-OSS-v1 (modelo base) | 20,9 B (según el cuantizado) | no disponible | safetensors (transformers) | apache-2.0 | HuggingFace (ayoubkirouane) |
-| Sophea-OSS-v1-GGUF (quants estáticos) | 20,9 B | no disponible | GGUF | apache-2.0 | HuggingFace (mradermacher) |
+| Sophea-OSS-v1-i1-GGUF (este) | 20,9 B | no disponible | GGUF cuantizado | apache-2.0 | Hugging Face (mradermacher) |
+| Sophea-OSS-v1 (modelo base) | 20,9 B (según el cuantizado) | no disponible | safetensors (transformers) | apache-2.0 | Hugging Face (ayoubkirouane) |
+| Sophea-OSS-v1-GGUF (quants estáticos) | 20,9 B | no disponible | GGUF | apache-2.0 | Hugging Face (mradermacher) |
 
 No se dispone de datos de rendimiento ni de contexto para comparar con alternativas de la misma categoría (por ejemplo, otros modelos MoE de ≈20 B orientados a griego). La comparación se limita, por tanto, a las variantes de distribución del mismo modelo.
 

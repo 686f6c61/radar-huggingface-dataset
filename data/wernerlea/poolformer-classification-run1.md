@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`wernerlea/poolformer-classification-run1` es un repositorio de HuggingFace publicado por el usuario `wernerlea` que contiene una implementación propia y de pequeno tamano de una red **PoolFormer** orientada a tareas de **clasificación**. El repositorio no es una release de un modelo entrenado: el propio autor lo describe como un punto de partida reproducible y el fichero `model.safetensors` se presenta explícitamente como un **checkpoint de inicialización válido para pruebas de humo (smoke tests)**, no como un checkpoint con resultados de benchmark.
+`wernerlea/poolformer-classification-run1` es un repositorio de Hugging Face publicado por el usuario `wernerlea` que contiene una implementación propia y de pequeno tamano de una red **PoolFormer** orientada a tareas de **clasificación**. El repositorio no es una release de un modelo entrenado: el propio autor lo describe como un punto de partida reproducible y el fichero `model.safetensors` se presenta explícitamente como un **checkpoint de inicialización válido para pruebas de humo (smoke tests)**, no como un checkpoint con resultados de benchmark.
 
 La relevancia de la ficha es, por tanto, acotada y conviene fijarla desde el principio: se trata de un artefacto de código y configuración, no de un modelo listo para producción. Según los metadatos de safetensors, el checkpoint contiene **16.576 parámetros totales**, una cifra que corresponde a una configuración diminuta pensada para validar el ciclo completo de definición, carga y ejecución del modelo, no para obtener precisión competitiva en ninguna tarea real.
 
-El repositorio incluye cuatro artefactos principales: `model.py` (implementación y punto de entrada ejecutable), `config.json` (configuración de arquitectura generada), `training_args.json` (receta de experimento por defecto) y `model.safetensors` (inicialización). La licencia es Apache-2.0. No se declara pipeline en HuggingFace, no se declaran idiomas soportados, no se publican resultados de evaluación y el repositorio registra 0 descargas y 0 likes en el momento de la consulta.
+El repositorio incluye cuatro artefactos principales: `model.py` (implementación y punto de entrada ejecutable), `config.json` (configuración de arquitectura generada), `training_args.json` (receta de experimento por defecto) y `model.safetensors` (inicialización). La licencia es Apache-2.0. No se declara pipeline en Hugging Face, no se declaran idiomas soportados, no se publican resultados de evaluación y el repositorio registra 0 descargas y 0 likes en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
@@ -25,8 +25,8 @@ El repositorio incluye cuatro artefactos principales: `model.py` (implementació
 | Activacion | Approx GELU |
 | Normalizacion | BatchNorm |
 | Optimizador de la receta por defecto | Adafactor con scheduler de tipo "step" |
-| Tamano del repositorio | 0,0 GB (según metadatos de HuggingFace) |
-| Pipeline declarado en HuggingFace | No disponible |
+| Tamano del repositorio | 0,0 GB (según metadatos de Hugging Face) |
+| Pipeline declarado en Hugging Face | No disponible |
 
 ## Arquitectura y entrenamiento
 
@@ -47,7 +47,7 @@ La model card incluye orientaciones de evaluación: para obtener una medida úti
 - **Modo "thinking"**: no disponible; no se declara.
 - **Visión, audio u otras modalidades especiales**: no se documentan más allá de la etiqueta genérica de clasificación.
 - **Ejecución como script autónomo**: sí; `model.py` incluye un bloque `__main__` con un ejemplo generado de prueba de humo, invocable mediante `python model.py --help`.
-- **Carga mediante APIs automáticas de HuggingFace**: la model card advierte de que, al ser una implementación personalizada, las APIs genéricas de carga requieren un **adaptador explícito** antes de poder usarse.
+- **Carga mediante APIs automáticas de Hugging Face**: la model card advierte de que, al ser una implementación personalizada, las APIs genéricas de carga requieren un **adaptador explícito** antes de poder usarse.
 - **Capacidad funcional real del checkpoint**: ninguna atribuible; al no estar entrenado, no se le pueden asignar capacidades de predicción útiles.
 
 ## Casos de uso
@@ -98,8 +98,8 @@ La diferencia fundamental es de estado del artefacto: las alternativas son model
 
 - **No es un modelo entrenado**: el propio autor indica que el checkpoint de inicialización no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio. No debe usarse para inferencia real.
 - **Ausencia total de benchmarks**: no hay ninguna métrica publicada; no se puede afirmar ningún nivel de precisión, ni siquiera orientativo.
-- **Sin pipeline declarado en HuggingFace**: la plataforma no expone tarea de pipeline, por lo que la integración automática no está disponible.
-- **Requiere adaptador explícito**: al ser una implementación personalizada, las APIs genéricas de carga de HuggingFace no funcionarán sin escribir un adaptador específico.
+- **Sin pipeline declarado en Hugging Face**: la plataforma no expone tarea de pipeline, por lo que la integración automática no está disponible.
+- **Requiere adaptador explícito**: al ser una implementación personalizada, las APIs genéricas de carga de Hugging Face no funcionarán sin escribir un adaptador específico.
 - **Idiomas y dominio no documentados**: no se declara ningún idioma ni el tipo concreto de imágenes o etiquetas sobre las que opera el clasificador.
 - **Sesgos conocidos**: no disponibles; al no haber entrenamiento ni auditoría, no existe análisis de sesgos, pero tampoco se puede descartar su presencia en cualquier entrenamiento futuro.
 - **Riesgo de alucinación**: no aplica en el sentido de los modelos generativos, pero sí existe el riesgo de interpretar erróneamente las salidas de un modelo sin entrenar como predicciones válidas.
@@ -110,7 +110,7 @@ La diferencia fundamental es de estado del artefacto: las alternativas son model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/wernerlea/poolformer-classification-run1
+- Repositorio en Hugging Face: https://huggingface.co/wernerlea/poolformer-classification-run1
 - Ficheros incluidos en el repositorio: `model.py`, `config.json`, `training_args.json`, `model.safetensors`, `README.md`
 - Comprobación rápida indicada por el autor: `python model.py --help`
 - Paper de referencia de la familia PoolFormer / MetaFormer: "MetaFormer Is Actually What You Need for Vision" (no enlazado en el repositorio; los resultados de búsqueda disponibles no aportan referencias útiles)

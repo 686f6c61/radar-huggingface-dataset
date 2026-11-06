@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Qwen3-Coder-30B-A3B-SFT-THFO-4epoch es un ajuste fino (SFT) del modelo Qwen3-Coder-30B-A3B, publicado por el usuario Zhangdanyang en HuggingFace. Se trata de un modelo de arquitectura Mixture-of-Experts (MoE) con 30.532.122.624 parametros totales y aproximadamente 3.000 millones de parametros activos por token, derivado de la familia Qwen3-Coder de Alibaba. El sufijo "THFO" y "4epoch" sugiere un entrenamiento supervisado de cuatro epocas sobre un dataset no documentado publicamente.
+Qwen3-Coder-30B-A3B-SFT-THFO-4epoch es un ajuste fino (SFT) del modelo Qwen3-Coder-30B-A3B, publicado por el usuario Zhangdanyang en Hugging Face. Se trata de un modelo de arquitectura Mixture-of-Experts (MoE) con 30.532.122.624 parametros totales y aproximadamente 3.000 millones de parametros activos por token, derivado de la familia Qwen3-Coder de Alibaba. El sufijo "THFO" y "4epoch" sugiere un entrenamiento supervisado de cuatro epocas sobre un dataset no documentado publicamente.
 
-El modelo hereda la base de Qwen3-Coder, orientada a generacion de codigo, razonamiento agentico y tool calling. Sin embargo, la informacion publicada en HuggingFace es muy limitada: no se especifican los datos de entrenamiento del ajuste, la licencia, los idiomas soportados ni los resultados de benchmarks. El repositorio esta marcado como restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace para acceder a los pesos.
+El modelo hereda la base de Qwen3-Coder, orientada a generacion de codigo, razonamiento agentico y tool calling. Sin embargo, la informacion publicada en Hugging Face es muy limitada: no se especifican los datos de entrenamiento del ajuste, la licencia, los idiomas soportados ni los resultados de benchmarks. El repositorio esta marcado como restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face para acceder a los pesos.
 
 Es relevante para desarrolladores que quieran experimentar con variantes ajustadas de Qwen3-Coder para tareas de codigo, pero debe tratarse con cautela: es un modelo de investigacion de un autor individual, con escasa documentacion, pocas descargas (13) y sin validacion externa conocida.
 
@@ -73,7 +73,7 @@ La comparativa se basa en caracteristicas conocidas de los modelos de referencia
 ## Limitaciones y advertencias
 
 - Documentacion minima: no se especifican dataset de SFT, licencia, idiomas ni benchmarks, lo que impide evaluar su calidad frente a la base original.
-- Licencia no disponible: al no declararse, no se puede garantizar el uso comercial; ademas, el acceso es restringido y requiere aceptar condiciones en HuggingFace.
+- Licencia no disponible: al no declararse, no se puede garantizar el uso comercial; ademas, el acceso es restringido y requiere aceptar condiciones en Hugging Face.
 - Riesgo de sobreajuste: el entrenamiento de 4 epocas sobre un dataset desconocido puede degradar capacidades generales o introducir sesgos especificos del corpus utilizado.
 - Riesgo de alucinacion: como todo modelo de codigo, puede generar APIs inexistentes, imports erroneos o codigo que compila pero no funciona; se requiere validacion con tests.
 - Autor individual y pocas descargas (13): no hay evidencia de comunidad, mantenimiento ni validacion independiente.
@@ -84,7 +84,7 @@ La comparativa se basa en caracteristicas conocidas de los modelos de referencia
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Zhangdanyang/Qwen3-Coder-30B-A3B-SFT-THFO-4epoch
+- Hugging Face: https://huggingface.co/Zhangdanyang/Qwen3-Coder-30B-A3B-SFT-THFO-4epoch
 - Modelo base Qwen3-Coder-30B-A3B (referencia): https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct
 - Repositorio Qwen3-Coder en GitHub: https://github.com/QwenLM/Qwen3-Coder
 - Blog de Qwen3-Coder: https://qwen.ai/blog

@@ -102,9 +102,9 @@ Kimi K3 se situa por encima de sus alternativas abiertas tanto en parametros tot
 
 ## Enlaces
 
-- Repositorio en HuggingFace (esta publicacion): https://huggingface.co/baselquants/Kimi-K3
-- Organizacion oficial en HuggingFace: https://huggingface.co/moonshotai
-- Modelo oficial en HuggingFace: https://huggingface.co/moonshotai/Kimi-K3
+- Repositorio en Hugging Face (esta publicacion): https://huggingface.co/baselquants/Kimi-K3
+- Organizacion oficial en Hugging Face: https://huggingface.co/moonshotai
+- Modelo oficial en Hugging Face: https://huggingface.co/moonshotai/Kimi-K3
 - Licencia: https://huggingface.co/moonshotai/Kimi-K3/blob/main/LICENSE
 - Blog tecnico: https://www.kimi.com/blog/kimi-k3
 - Informe tecnico completo: https://github.com/MoonshotAI/Kimi-K3/blob/main/k3_tech_report.pdf

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-zed122/custom-mixed-gguf es un artefacto de pesos en formato GGUF publicado en HuggingFace por el usuario zed122. El repositorio ocupa 38,1 GB y el campo de safetensors declara 30.532.122.624 parametros, es decir, unos 30,5 mil millones, lo que lo situa en la clase de modelos de tamano ~30B. Se trata de un tamano que en la practica exige cuantizacion para caber en GPU de consumo y que en precision completa ronda los 61 GB de pesos.
+zed122/custom-mixed-gguf es un artefacto de pesos en formato GGUF publicado en Hugging Face por el usuario zed122. El repositorio ocupa 38,1 GB y el campo de safetensors declara 30.532.122.624 parametros, es decir, unos 30,5 mil millones, lo que lo situa en la clase de modelos de tamano ~30B. Se trata de un tamano que en la practica exige cuantizacion para caber en GPU de consumo y que en precision completa ronda los 61 GB de pesos.
 
 La model card esta practicamente vacia: unicamente incluye la declaracion de licencia apache-2.0. No se identifica el modelo base, ni la arquitectura, ni la longitud de contexto, ni los idiomas soportados, ni el proceso de entrenamiento o alineacion. Las unicas pistas disponibles son las etiquetas del repositorio: gguf, imatrix, conversational, endpoints_compatible y region:us, que apuntan a un artefacto cuantizado con matriz de importancia (imatrix), orientado a uso conversacional y compatible con endpoints de inferencia.
 
@@ -37,7 +37,7 @@ Tampoco se dispone de informacion sobre datos de entrenamiento, numero de tokens
 
 - Generacion de texto conversacional: es la unica capacidad sugerida por la etiqueta conversational del repositorio. No se detalla el formato de prompt ni la plantilla de chat embebida en el GGUF.
 - Inferencia local: el formato GGUF permite ejecutar el modelo en llama.cpp y en herramientas derivadas, con soporte de offloading parcial a GPU.
-- Integracion con endpoints: la etiqueta endpoints_compatible apunta a compatibilidad con endpoints de inferencia tipo HuggingFace, aunque no se especifica la configuracion.
+- Integracion con endpoints: la etiqueta endpoints_compatible apunta a compatibilidad con endpoints de inferencia tipo Hugging Face, aunque no se especifica la configuracion.
 - Razonamiento, matematicas y generacion de codigo: no disponible.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -78,7 +78,7 @@ Estimaciones de VRAM basadas en el recuento de parametros declarado (30,5B) y en
 - Multi-GPU: dos RTX 4090 (48 GB) permiten Q6_K o Q8_0 con contexto amplio; un A100 80 GB permite Q8_0 o precision completa parcial.
 - Apple Silicon: Mac con 32 GB de memoria unificada para Q4_K_M y con 64 GB para Q5_K_M o Q6_K.
 - El KV cache anade varios GB adicionales segun la longitud de contexto y el numero de cabezas KV; con contextos largos la VRAM necesaria crece por encima de las cifras de la tabla.
-- Opciones de despliegue: llama.cpp y derivados (Ollama, LM Studio, koboldcpp, llama-cpp-python), vLLM con soporte GGUF experimental y HuggingFace TGI con soporte GGUF limitado. El tag endpoints_compatible sugiere compatibilidad con endpoints gestionados.
+- Opciones de despliegue: llama.cpp y derivados (Ollama, LM Studio, koboldcpp, llama-cpp-python), vLLM con soporte GGUF experimental y Hugging Face TGI con soporte GGUF limitado. El tag endpoints_compatible sugiere compatibilidad con endpoints gestionados.
 - Latencia y throughput: no disponible. No hay mediciones publicadas y, al desconocerse la arquitectura y si existe o no un esquema MoE con parametros activos reducidos, no es posible estimarlos de forma fiable.
 
 ## Comparativa con modelos similares
@@ -106,5 +106,5 @@ Criterio recomendado: identificar primero el modelo base del GGUF y, a partir de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/zed122/custom-mixed-gguf
+- Repositorio en Hugging Face: https://huggingface.co/zed122/custom-mixed-gguf
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada; los resultados obtenidos correspondian a paginas de soporte de Microsoft sin relacion con el modelo.

@@ -102,8 +102,8 @@ No se dispone de datos de modelos comparables en la informacion proporcionada. L
 
 | Modelo | Parametros | Contexto | Entorno de evaluacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| op3-humanoid-walking-ppo (baseline) | ~5,7 x 10^4 (estimado) | No aplica (observacion 147 x 3 frames) | MuJoCo / Op3Joystick, 50 Hz | Apache-2.0 | Publicado en HuggingFace, 0 descargas |
-| op3-humanoid-walking-ppo (staged-shoves) | ~5,7 x 10^4 (estimado) | No aplica | MuJoCo / Op3Joystick, 50 Hz | Apache-2.0 | Publicado en HuggingFace, 0 descargas |
+| op3-humanoid-walking-ppo (baseline) | ~5,7 x 10^4 (estimado) | No aplica (observacion 147 x 3 frames) | MuJoCo / Op3Joystick, 50 Hz | Apache-2.0 | Publicado en Hugging Face, 0 descargas |
+| op3-humanoid-walking-ppo (staged-shoves) | ~5,7 x 10^4 (estimado) | No aplica | MuJoCo / Op3Joystick, 50 Hz | Apache-2.0 | Publicado en Hugging Face, 0 descargas |
 | Alternativas externas | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -122,7 +122,7 @@ No se dispone de datos de modelos comparables en la informacion proporcionada. L
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/YauhenBichel/op3-humanoid-walking-ppo
+- Modelo en Hugging Face: https://huggingface.co/YauhenBichel/op3-humanoid-walking-ppo
 - Video de marcha base a 0,5 m/s: https://huggingface.co/YauhenBichel/op3-humanoid-walking-ppo/resolve/main/videos/baseline-walk-0.5ms.mp4
 - Video comparativo del empujon de 30 N: https://huggingface.co/YauhenBichel/op3-humanoid-walking-ppo/resolve/main/videos/shove-30N-baseline-vs-staged-shoves.mp4
 - Repositorio con bucle de control, simulador y demo: https://github.com/YauhenBichel/humanoid-companion

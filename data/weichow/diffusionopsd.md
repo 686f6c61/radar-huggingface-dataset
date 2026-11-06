@@ -58,7 +58,7 @@ No se han publicado tablas numericas de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Base | Objetivo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DiffusionOPSD (este) | LoRA post-training | SD3.5-M, Z-Image-Turbo | HPSv3, pointwise | Apache 2.0 | HuggingFace |
+| DiffusionOPSD (este) | LoRA post-training | SD3.5-M, Z-Image-Turbo | HPSv3, pointwise | Apache 2.0 | Hugging Face |
 | DiffusionNFT | Framework RL post-training | Varios | Recompensas | No especificada | GitHub |
 | DPO para diffusion | Metodo de alineacion | Varios | Preferencias | No especificada | Varios |
 
@@ -75,7 +75,7 @@ No se dispone de comparaciones numericas publicas entre DiffusionOPSD y otros me
 
 ## Enlaces
 
-- Modelo HuggingFace: https://huggingface.co/WeiChow/DiffusionOPSD
+- Modelo Hugging Face: https://huggingface.co/WeiChow/DiffusionOPSD
 - Paper arXiv: https://arxiv.org/abs/2608.24646
 - Codigo GitHub: https://github.com/worldbench/DiffusionOPSD
 - Pagina del proyecto: https://diffusionopsd.github.io/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-World 8 Market Data es un repositorio de datos de mercado publicado en HuggingFace por el usuario Saeedfa, concebido como una capa compartida de datos orientada a la evidencia para sistemas de pronóstico y evaluación. No se trata de un modelo de inteligencia artificial, sino de un componente de infraestructura de datos que define políticas de almacenamiento, normalización, caché y acceso para observaciones de mercado. El proyecto se encuentra en fase de pre-lanzamiento de desarrollo (v0.1.0) y no está destinado a producción.
+World 8 Market Data es un repositorio de datos de mercado publicado en Hugging Face por el usuario Saeedfa, concebido como una capa compartida de datos orientada a la evidencia para sistemas de pronóstico y evaluación. No se trata de un modelo de inteligencia artificial, sino de un componente de infraestructura de datos que define políticas de almacenamiento, normalización, caché y acceso para observaciones de mercado. El proyecto se encuentra en fase de pre-lanzamiento de desarrollo (v0.1.0) y no está destinado a producción.
 
 La relevancia de este repositorio radica en su enfoque en la trazabilidad de la evidencia: almacena "recibos de evidencia" en lugar de historiales masivos de mercado, y delega en un nodo compartido de datos de mercado la gestión de caché, normalización, relleno de huecos y control de políticas. Su arquitectura está pensada para integrarse con componentes de pronóstico y evaluación, aunque el propio autor declara explícitamente que no se garantiza un servicio completo de datos de mercado ni fiabilidad de nivel de exchange en esta versión.
 
@@ -65,7 +65,7 @@ No disponible. No existe una categoría de modelos comparable, ya que World 8 Ma
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Saeedfa/world8-market-data
+- Repositorio en Hugging Face: https://huggingface.co/Saeedfa/world8-market-data
 - Repositorio canónico en GitHub: https://github.com/saeedfaai/world-8
 - Pre-lanzamiento de desarrollo v0.1.0: https://github.com/saeedfaai/world-8/releases/tag/V0.1.0
 - Registro en Zenodo: https://zenodo.org/records/22127650

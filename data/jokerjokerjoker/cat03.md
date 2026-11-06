@@ -2,7 +2,7 @@
 
 ## Resumen
 
-JokerJokerJoker/cat03 es un repositorio de pesos alojado en HuggingFace por el usuario JokerJokerJoker del que no se dispone de documentacion tecnica publicada: ni model card, ni paper, ni blog, ni repositorio de codigo asociado. En el momento de redactar esta ficha, la informacion verificable se limita a los metadatos del repositorio: identificador JokerJokerJoker/cat03, autor JokerJokerJoker, etiqueta region:us, un total de 0 descargas, 1 like, un tamano de repositorio de 19,4 GB y unas fechas de creacion y actualizacion de septiembre de 2026.
+JokerJokerJoker/cat03 es un repositorio de pesos alojado en Hugging Face por el usuario JokerJokerJoker del que no se dispone de documentacion tecnica publicada: ni model card, ni paper, ni blog, ni repositorio de codigo asociado. En el momento de redactar esta ficha, la informacion verificable se limita a los metadatos del repositorio: identificador JokerJokerJoker/cat03, autor JokerJokerJoker, etiqueta region:us, un total de 0 descargas, 1 like, un tamano de repositorio de 19,4 GB y unas fechas de creacion y actualizacion de septiembre de 2026.
 
 No se ha publicado informacion sobre arquitectura, numero de parametros, longitud de contexto, idiomas, licencia ni formato de pesos. Esto impide confirmar si se trata de un modelo de lenguaje, de un modelo de vision, de un modelo multimodal, de un ajuste fino (fine-tune), de una mezcla de modelos (merge) o de un artefacto experimental. El nombre "cat03" y la ausencia de cualquier descripcion apuntan a un repositorio de pruebas o a una publicacion sin documentar, no a un modelo listo para produccion.
 
@@ -58,7 +58,7 @@ No es posible recomendar casos de uso concretos para un modelo cuya categoria, l
 - Prototipado en laboratorio: en un entorno aislado y sin datos sensibles, podria utilizarse para experimentar con tecnicas de cuantizacion o de decodificacion especulativa sobre pesos de origen desconocido.
 - Estudio de procedencia de modelos: el repositorio es un buen ejemplo para investigar como detectar pesos derivados de otros modelos mediante analisis de tensores, comparacion de huellas o inspeccion de metadatos.
 - Aprendizaje por destilacion: si la licencia lo permitiese, sus salidas podrian emplearse como senal de entrenamiento para un modelo mas pequeno, siempre que se verifique antes el origen legal de los pesos.
-- Analisis de seguridad de artefactos: el hecho de que no se declare el formato de pesos lo convierte en un caso util para probar herramientas de escaneo de ficheros pickle y de deteccion de codigo malicioso en repositorios de HuggingFace.
+- Analisis de seguridad de artefactos: el hecho de que no se declare el formato de pesos lo convierte en un caso util para probar herramientas de escaneo de ficheros pickle y de deteccion de codigo malicioso en repositorios de Hugging Face.
 - Generacion de texto asistida por recuperacion: solo si se confirma que el modelo maneja contexto suficiente y que su licencia lo autoriza, podria integrarse en un pipeline RAG para responder preguntas sobre documentacion interna.
 
 En ningun caso se recomienda su despliegue en produccion, en atencion al cliente o en cualquier flujo que procese datos personales mientras no exista informacion verificable sobre licencia, sesgos y comportamiento.
@@ -91,7 +91,7 @@ No es posible establecer una comparativa. Para comparar un modelo con alternativ
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| JokerJokerJoker/cat03 | no disponible | no disponible | no disponible | no disponible | Repositorio HuggingFace sin documentar |
+| JokerJokerJoker/cat03 | no disponible | no disponible | no disponible | no disponible | Repositorio Hugging Face sin documentar |
 | Alternativa 1 | no aplicable | no aplicable | no aplicable | no aplicable | No se puede identificar una categoria de comparacion |
 | Alternativa 2 | no aplicable | no aplicable | no aplicable | no aplicable | No se puede identificar una categoria de comparacion |
 | Alternativa 3 | no aplicable | no aplicable | no aplicable | no aplicable | No se puede identificar una categoria de comparacion |
@@ -113,6 +113,6 @@ No es posible establecer una comparativa. Para comparar un modelo con alternativ
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/JokerJokerJoker/cat03
+- Repositorio en Hugging Face: https://huggingface.co/JokerJokerJoker/cat03
 
-No se han encontrado en la busqueda web enlaces relevantes al modelo: los resultados devueltos tratan exclusivamente sobre feminismo liberal y organizaciones politicas, y no guardan ninguna relacion con el repositorio. No hay paper, blog tecnico, repositorio de codigo, demo ni espacio de HuggingFace asociado del que se tenga constancia.
+No se han encontrado en la busqueda web enlaces relevantes al modelo: los resultados devueltos tratan exclusivamente sobre feminismo liberal y organizaciones politicas, y no guardan ninguna relacion con el repositorio. No hay paper, blog tecnico, repositorio de codigo, demo ni espacio de Hugging Face asociado del que se tenga constancia.

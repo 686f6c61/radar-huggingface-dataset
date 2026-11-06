@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - Al ser un LoRA de solo 0.1 GB, el requisito de VRAM adicional es minimo, pero depende del modelo base sobre el que se aplique.
 - Para modelos base como Stable Diffusion 1.5 o SDXL, se recomienda al menos 8 GB de VRAM para inferencia en GPU consumer (RTX 3060, RTX 4060, etc.).
 - Para modelos base mas grandes (SDXL, SD3), se necesitan 12-16 GB de VRAM, por lo que GPUs como RTX 4090 o A100 son adecuadas.
-- El despliegue se puede realizar con herramientas como ComfyUI, Automatic1111, o cualquier frontend que soporte LoRAs. Tambien es compatible con APIs como Diffusers de HuggingFace.
+- El despliegue se puede realizar con herramientas como ComfyUI, Automatic1111, o cualquier frontend que soporte LoRAs. Tambien es compatible con APIs como Diffusers de Hugging Face.
 - No se dispone de datos de latencia o throughput, ya que dependen del modelo base y del hardware.
 
 ## Comparativa con modelos similares
@@ -69,4 +69,4 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (Lo
 
 ## Enlaces
 
-- [HuggingFace - Plaguekind/H3-Loras](https://huggingface.co/Plaguekind/H3-Loras)
+- [Hugging Face - Plaguekind/H3-Loras](https://huggingface.co/Plaguekind/H3-Loras)

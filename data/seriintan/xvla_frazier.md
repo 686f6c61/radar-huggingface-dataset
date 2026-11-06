@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Tarea | Disponibilidad |
 |---|---|---|---|---|---|
-| seriintan/xvla_frazier | 879,7 M | No disponible | Apache 2.0 | Pick and place Frazier a cesta azul | HuggingFace |
-| lerobot/xvla-base | No disponible | No disponible | Apache 2.0 | Modelo base VLA para fine-tuning | HuggingFace |
-| seriintan/xvla-frazier-sim-v3 | No disponible | No disponible | No disponible | Simulación de la misma tarea | HuggingFace |
+| seriintan/xvla_frazier | 879,7 M | No disponible | Apache 2.0 | Pick and place Frazier a cesta azul | Hugging Face |
+| lerobot/xvla-base | No disponible | No disponible | Apache 2.0 | Modelo base VLA para fine-tuning | Hugging Face |
+| seriintan/xvla-frazier-sim-v3 | No disponible | No disponible | No disponible | Simulación de la misma tarea | Hugging Face |
 
 El modelo `seriintan/xvla_frazier` es un fine-tuning específico del base `lerobot/xvla-base`. Existe una variante adicional `seriintan/xvla-frazier-sim-v3`, presumiblemente entrenada en simulación, pero no se proporcionan especificaciones técnicas en la información disponible. No se dispone de datos comparativos de rendimiento entre estos modelos.
 
@@ -77,7 +77,7 @@ El modelo `seriintan/xvla_frazier` es un fine-tuning específico del base `lerob
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/seriintan/xvla_frazier
+- Modelo en Hugging Face: https://huggingface.co/seriintan/xvla_frazier
 - Paper de X-VLA: https://huggingface.co/papers/2510.10274
 - Dataset de entrenamiento: https://huggingface.co/datasets/seriintan/frazier_dataset_20260901_151518
 - Modelo base: https://huggingface.co/lerobot/xvla-base

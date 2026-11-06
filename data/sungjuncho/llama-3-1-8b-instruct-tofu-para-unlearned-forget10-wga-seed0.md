@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un fine-tune experimental de Llama-3.1-8B-Instruct desarrollado por el usuario de HuggingFace `sungjuncho`, concebido como artefacto de investigación en *machine unlearning*. No es un modelo de propósito general: es el resultado de aplicar el algoritmo WGA (Weight Gradient Ascent, implementado en la librería `open-unlearning` del grupo LOCUS) sobre un checkpoint previamente ajustado con el dataset TOFU-para, una variante del benchmark TOFU (Task of Fictitious Unlearning) con erratas en nombres corregidas y cinco paráfrasis verificadas de cada par pregunta-respuesta.
+Este modelo es un fine-tune experimental de Llama-3.1-8B-Instruct desarrollado por el usuario de Hugging Face `sungjuncho`, concebido como artefacto de investigación en *machine unlearning*. No es un modelo de propósito general: es el resultado de aplicar el algoritmo WGA (Weight Gradient Ascent, implementado en la librería `open-unlearning` del grupo LOCUS) sobre un checkpoint previamente ajustado con el dataset TOFU-para, una variante del benchmark TOFU (Task of Fictitious Unlearning) con erratas en nombres corregidas y cinco paráfrasis verificadas de cada par pregunta-respuesta.
 
 El objetivo del autor es separar dos fenómenos que la literatura de unlearning suele confundir: el *untraining* (eliminar exactamente las muestras concretas que vio el método de desaprendizaje) y el *unlearning* propiamente dicho (eliminar el conocimiento subyacente, que el modelo también aprendió en otras formulaciones). Para ello, el conjunto "forget" son solo las 400 preguntas originales de forget10, mientras que las métricas de unlearning se evalúan contra versiones parafraseadas que el modelo nunca vio en el conjunto de olvido.
 
@@ -78,10 +78,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (`...forget10-wga-seed0`) | 8,03 B | No disponible | Unlearning WGA sobre TOFU-para | Llama 3.1 Community | HuggingFace, 0 descargas |
-| `sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-full-seed0` | 8,03 B | No disponible | Fine-tune completo sobre TOFU-para (modelo de partida) | Llama 3.1 Community | HuggingFace |
-| `sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-retain90-seed0` | 8,03 B | No disponible | Modelo de referencia que retiene forget10 + parafrasis | Llama 3.1 Community | HuggingFace |
-| `meta-llama/Llama-3.1-8B-Instruct` | 8,03 B | 128k | Modelo base alineado, sin unlearning | Llama 3.1 Community | HuggingFace |
+| Este modelo (`...forget10-wga-seed0`) | 8,03 B | No disponible | Unlearning WGA sobre TOFU-para | Llama 3.1 Community | Hugging Face, 0 descargas |
+| `sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-full-seed0` | 8,03 B | No disponible | Fine-tune completo sobre TOFU-para (modelo de partida) | Llama 3.1 Community | Hugging Face |
+| `sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-retain90-seed0` | 8,03 B | No disponible | Modelo de referencia que retiene forget10 + parafrasis | Llama 3.1 Community | Hugging Face |
+| `meta-llama/Llama-3.1-8B-Instruct` | 8,03 B | 128k | Modelo base alineado, sin unlearning | Llama 3.1 Community | Hugging Face |
 
 No se dispone de comparación numérica con otros métodos de unlearning (NPO, GradDiff, SimNPO) en la información proporcionada; la colección TOFU-para del mismo autor probablemente incluye variantes, pero sus métricas no se detallan aquí.
 
@@ -100,7 +100,7 @@ No se dispone de comparación numérica con otros métodos de unlearning (NPO, G
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-unlearned-forget10-wga-seed0
+- Modelo en Hugging Face: https://huggingface.co/sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-unlearned-forget10-wga-seed0
 - Modelo base (fine-tune completo): https://huggingface.co/sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-full-seed0
 - Dataset TOFU-para: https://huggingface.co/datasets/sungjuncho/TOFU-para
 - Coleccion TOFU-para (untraining vs unlearning): https://huggingface.co/collections/sungjuncho/tofu-para-untraining-vs-unlearning-6ae8f7a14b4af8316fe221b4

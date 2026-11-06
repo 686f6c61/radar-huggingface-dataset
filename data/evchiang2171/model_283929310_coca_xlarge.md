@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `model_283929310_coca_xlarge` es una implementación a escala "xlarge" de la arquitectura CoCa (Contrastive Captioner), publicada por el usuario evchiang2171 en HuggingFace. CoCa fue propuesta originalmente por Google Research en 2022 como un modelo fundacional de visión-lenguaje que combina de forma conjunta un objetivo contrastivo (similar a CLIP) y un objetivo generativo de subtitulado (similar a SimVLM), logrando un único modelo que puede transferirse a tareas tanto de clasificación como de generación. Este repositorio concreto se centra en tareas de clasificación, con una cabeza específica para ello.
+El modelo `model_283929310_coca_xlarge` es una implementación a escala "xlarge" de la arquitectura CoCa (Contrastive Captioner), publicada por el usuario evchiang2171 en Hugging Face. CoCa fue propuesta originalmente por Google Research en 2022 como un modelo fundacional de visión-lenguaje que combina de forma conjunta un objetivo contrastivo (similar a CLIP) y un objetivo generativo de subtitulado (similar a SimVLM), logrando un único modelo que puede transferirse a tareas tanto de clasificación como de generación. Este repositorio concreto se centra en tareas de clasificación, con una cabeza específica para ello.
 
 La arquitectura emplea atención lineal, fusión mediante cross-attention, activación approx-gelu, normalización por instancenorm e inicialización kaiming-normal. El entrenamiento se realizó con optimizador SGD y programador de tasa de aprendizaje coseno. No se especifican el número de parámetros, la longitud de contexto ni los datos de entrenamiento en la información disponible, por lo que estos datos se indican como no disponibles. La licencia es CC-BY-4.0, lo que permite uso comercial con atribución.
 
@@ -68,7 +68,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/evchiang2171/model_283929310_coca_xlarge
+- Repositorio en Hugging Face: https://huggingface.co/evchiang2171/model_283929310_coca_xlarge
 - Paper original de CoCa (arXiv): https://arxiv.org/abs/2205.01917
 - PDF del paper: https://arxiv.org/pdf/2205.01917
 - Versión HTML del paper: https://ar5iv.labs.arxiv.org/html/2205.01917

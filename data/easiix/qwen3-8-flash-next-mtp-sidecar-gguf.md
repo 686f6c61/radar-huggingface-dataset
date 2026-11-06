@@ -87,7 +87,7 @@ El sidecar de EasiiX es el único publicado específicamente para Qwen3.8-Flash-
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/EasiiX/Qwen3.8-Flash-Next-MTP-Sidecar-GGUF
+- Repositorio Hugging Face: https://huggingface.co/EasiiX/Qwen3.8-Flash-Next-MTP-Sidecar-GGUF
 - Modelo base Qwen3.8-Flash-Next: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Rama de llama.cpp con soporte qwen4exp: https://github.com/Aristo94/llama.cpp/tree/strix-halo-qwen4exp
 - PR de llama.cpp para MTP draft head: https://github.com/ggml-org/llama.cpp/pull/27739

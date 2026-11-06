@@ -2,7 +2,7 @@
 
 ## Resumen
 
-maheshrawat18/Qwen3-8B-mentay-grpo-m1-lora es un adaptador LoRA (PEFT) publicado en HuggingFace por el usuario maheshrawat18, obtenido mediante ajuste fino con GRPO sobre el modelo maheshrawat18/Qwen3-8B-mentay-grpo-aware-v3-merged, que a su vez deriva de la familia Qwen3-8B. El adaptador se distribuye como un repositorio de 1,8 GB en formato safetensors y esta pensado para cargarse junto al modelo base con la libreria PEFT y Transformers.
+maheshrawat18/Qwen3-8B-mentay-grpo-m1-lora es un adaptador LoRA (PEFT) publicado en Hugging Face por el usuario maheshrawat18, obtenido mediante ajuste fino con GRPO sobre el modelo maheshrawat18/Qwen3-8B-mentay-grpo-aware-v3-merged, que a su vez deriva de la familia Qwen3-8B. El adaptador se distribuye como un repositorio de 1,8 GB en formato safetensors y esta pensado para cargarse junto al modelo base con la libreria PEFT y Transformers.
 
 El problema que aborda es el ajuste fino por refuerzo orientado a mejorar el comportamiento conversacional y de razonamiento de un modelo de 8B de parametros. GRPO (Group Relative Policy Optimization), introducido en DeepSeekMath, se utiliza aqui como metodo de optimizacion de preferencias sin necesidad de un modelo critico separado, lo que reduce costes de entrenamiento frente a PPO clasico.
 
@@ -41,7 +41,7 @@ El metodo de entrenamiento es GRPO, descrito en DeepSeekMath (arXiv:2402.03300),
 
 - Reproduccion de investigacion en RLHF/GRPO: sirve como punto de partida para replicar pipelines de GRPO con TRL y PEFT sobre un backbone de 8B, comparando recompensas y curvas de entrenamiento con otras variantes de la misma serie.
 - Ajuste incremental sobre Qwen3-8B: al ser un adaptador LoRA, permite aplicar el delta de pesos sobre el modelo base para evaluar si mejora tareas conversacionales concretas antes de invertir en un ajuste completo.
-- Evaluacion de calidad de adaptadores comunitarios: util como caso de estudio para auditar como se documentan (o no) los adaptadores publicados en HuggingFace y que riesgos implica su uso en produccion.
+- Evaluacion de calidad de adaptadores comunitarios: util como caso de estudio para auditar como se documentan (o no) los adaptadores publicados en Hugging Face y que riesgos implica su uso en produccion.
 - Prototipado de asistentes conversacionales: se puede cargar con Transformers + PEFT y servir mediante un pipeline de text-generation para demos internas, siempre que se valide antes su comportamiento.
 - Fine-tuning como paso intermedio: sirve de base para fusionar el adaptador con el modelo base y, a partir de ahi, generar versiones GGUF para despliegue local con llama.cpp u Ollama.
 - Experimentacion academica con funciones de recompensa: el formato GRPO facilita probar recompensas basadas en verificación (matematicas, formato, correccion) sobre un modelo de 8B sin infraestructura de gran escala.
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 |---|---|---|---|---|---|
 | maheshrawat18/Qwen3-8B-mentay-grpo-m1-lora | ~8B (base) + adaptador | no disponible | Adaptador LoRA (safetensors) | no disponible | 0 descargas, 0 likes |
 | Qwen3-8B (modelo base de referencia) | ~8B | no disponible en esta ficha | Pesos completos | segun publicacion de Qwen | Ampliamente disponible |
-| maheshrawat18/Qwen3-8B-mentay-grpo-aware (variante relacionada) | ~8B | no disponible | Pesos completos (Transformers, Safetensors) | Apache-2.0 segun la busqueda | Disponible en HuggingFace |
+| maheshrawat18/Qwen3-8B-mentay-grpo-aware (variante relacionada) | ~8B | no disponible | Pesos completos (Transformers, Safetensors) | Apache-2.0 segun la busqueda | Disponible en Hugging Face |
 
 La comparativa con alternativas cerradas de la misma categoria (Llama 3.1 8B, Gemma 2 9B, Mistral 7B) no se puede establecer con datos: no hay benchmarks ni especificaciones publicadas para este adaptador.
 
@@ -82,7 +82,7 @@ La comparativa con alternativas cerradas de la misma categoria (Llama 3.1 8B, Ge
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/maheshrawat18/Qwen3-8B-mentay-grpo-m1-lora
+- Modelo en Hugging Face: https://huggingface.co/maheshrawat18/Qwen3-8B-mentay-grpo-m1-lora
 - Modelo base declarado: https://huggingface.co/maheshrawat18/Qwen3-8B-mentay-grpo-aware-v3-merged
 - Variante relacionada: https://huggingface.co/maheshrawat18/Qwen3-8B-mentay-grpo-aware
 - Variante relacionada (merged): https://huggingface.co/maheshrawat18/Qwen3-8B-mentay-grpo-aware-merged

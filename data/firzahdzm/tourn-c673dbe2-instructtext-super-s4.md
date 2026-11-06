@@ -4,7 +4,7 @@
 
 El modelo `firzahdzm/tourn-c673dbe2-instructtext-super-s4` es un adaptador PEFT (Parameter-Efficient Fine-Tuning) publicado por el usuario `firzahdzm`. Se trata de un ajuste fino eficiente sobre el modelo base `Qwen/Qwen3-32B`, un transformer denso de 32.000 millones de parámetros. El adaptador se distribuye en formato safetensors y el repositorio tiene un tamaño de 2,2 GB, lo que indica que el ajuste se realizó mediante técnicas de bajo rango (probablemente LoRA) que no modifican la totalidad de los pesos del modelo base.
 
-La model card del autor está prácticamente vacía: no se proporciona información sobre el propósito del modelo, los datos de entrenamiento, la licencia, los idiomas soportados ni las capacidades específicas. Tampoco se han publicado benchmarks. El modelo no tiene descargas ni "likes" en HuggingFace, lo que sugiere que es una publicación reciente o experimental. Su relevancia radica en que ofrece un adaptador ligero sobre un modelo de 32B, lo que permite adaptar el modelo base a una tarea concreta con un coste de almacenamiento reducido, aunque sin documentación disponible no es posible evaluar su rendimiento ni su idoneidad para casos de uso reales.
+La model card del autor está prácticamente vacía: no se proporciona información sobre el propósito del modelo, los datos de entrenamiento, la licencia, los idiomas soportados ni las capacidades específicas. Tampoco se han publicado benchmarks. El modelo no tiene descargas ni "likes" en Hugging Face, lo que sugiere que es una publicación reciente o experimental. Su relevancia radica en que ofrece un adaptador ligero sobre un modelo de 32B, lo que permite adaptar el modelo base a una tarea concreta con un coste de almacenamiento reducido, aunque sin documentación disponible no es posible evaluar su rendimiento ni su idoneidad para casos de uso reales.
 
 No hay datos sobre la longitud de contexto ni sobre la arquitectura del adaptador (número de parámetros, tipo de PEFT, etc.) en la información disponible.
 
@@ -39,7 +39,7 @@ No se dispone de información sobre el conjunto de datos de entrenamiento, el n�
 - **Investigación en eficiencia de parámetros**: puede servir como ejemplo de publicación de un adaptador PEFT ligero sobre un modelo de gran tamaño, útil para estudiar el comportamiento de LoRA en Qwen3-32B.
 - **Prototipado experimental**: dado que no hay benchmarks ni descripción de capacidades, su uso queda limitado a entornos de prueba donde se pueda evaluar empíricamente el comportamiento del adaptador.
 - **Despliegue en infraestructuras con VRAM limitada**: al ser un adaptador, permite cargar el modelo base en cuantización y añadir el adaptador, reduciendo los requisitos de memoria frente a un fine-tuning completo. No obstante, el modelo base sigue requiriendo una GPU con suficiente VRAM.
-- **Integración en pipelines de PEFT**: el repositorio incluye los pesos del adaptador, por lo que puede cargarse con la API de PEFT de HuggingFace Transformers para su uso en tareas de generación.
+- **Integración en pipelines de PEFT**: el repositorio incluye los pesos del adaptador, por lo que puede cargarse con la API de PEFT de Hugging Face Transformers para su uso en tareas de generación.
 - **Análisis de adaptadores sin documentación**: en contextos académicos o de auditoría, puede utilizarse para estudiar qué se puede inferir de un adaptador PEFT a partir de su estructura y del modelo base, sin información adicional.
 
 ## Benchmarks y rendimiento
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 - **VRAM estimada para inferencia**: al tratarse de un adaptador PEFT, el requisito de VRAM viene determinado por el modelo base Qwen/Qwen3-32B. En FP16, el modelo base ocupa aproximadamente 64 GB, por lo que se necesitan GPUs con al menos 80 GB de VRAM (por ejemplo, A100 80GB o H100 80GB) para inferencia sin cuantización.
 - **GPU recomendadas**: A100 80GB, H100 80GB o GPUs con memoria similar. Para consumer GPUs, sería necesario cuantizar el modelo base (por ejemplo, a 4 bits), lo que reduciría la VRAM a ~20-24 GB, pero el rendimiento dependería de la cuantización aplicada.
-- **Opciones de despliegue**: el adaptador puede cargarse con la librería PEFT sobre el modelo base en frameworks como HuggingFace Transformers, vLLM o TGI. También es posible exportar el modelo combinado a GGUF para su uso con llama.cpp u Ollama, aunque no se han publicado conversiones de este adaptador.
+- **Opciones de despliegue**: el adaptador puede cargarse con la librería PEFT sobre el modelo base en frameworks como Hugging Face Transformers, vLLM o TGI. También es posible exportar el modelo combinado a GGUF para su uso con llama.cpp u Ollama, aunque no se han publicado conversiones de este adaptador.
 - **Latencia y throughput**: no disponible.
 
 ## Comparativa con modelos similares
@@ -68,6 +68,6 @@ No disponible. No hay información sobre modelos comparables ni datos de rendimi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/firzahdzm/tourn-c673dbe2-instructtext-super-s4
+- Hugging Face: https://huggingface.co/firzahdzm/tourn-c673dbe2-instructtext-super-s4
 - Modelo base: https://huggingface.co/Qwen/Qwen3-32B
 - Página de FriendliAI para la variante -u1 (no es este modelo, pero puede ser relevante): https://friendli.ai/models/firzahdzm/tourn-c673dbe2-instructtext-super-u1

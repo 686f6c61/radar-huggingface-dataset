@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "NellWatson/Qwen3-4B-cabal-base-q4f16_1-MLC",
+  "slug": "nellwatson-qwen3-4b-cabal-base-q4f16_1-mlc",
+  "author": "NellWatson",
+  "url": "https://huggingface.co/NellWatson/Qwen3-4B-cabal-base-q4f16_1-MLC",
+  "created_at": "2026-11-02T21:41:19.000Z",
+  "updated_at": "2026-11-02T23:49:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlc-llm",
+  "languages": [],
+  "tags": [
+    "mlc-llm",
+    "web-llm",
+    "q4f16_1",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:quantized:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 28,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2274342846,
+  "storage_human": "2.3 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NellWatson/Qwen3-4B-cabal-base-q4f16_1-MLC · Hugging Face",
+      "url": "https://huggingface.co/NellWatson/Qwen3-4B-cabal-base-q4f16_1-MLC",
+      "snippet": "All 435 tensors are byte-identical to mlc-ai/Qwen3-4B-q4f16_1-MLC at revision a5c9fab8, whose config, tokenizer and tensor layout it reuses. It loads with that model's prebuilt WebGPU library. Published as a check on the CABAL research pipeline; use the mlc-ai build for anything else."
+    },
+    {
+      "title": "NellWatson/Qwen3-4B-cabal-base-q4f16_1-MLC at main",
+      "url": "https://huggingface.co/NellWatson/Qwen3-4B-cabal-base-q4f16_1-MLC/tree/main",
+      "snippet": "Instructions to use NellWatson/Qwen3-4B-cabal-base-q4f16_1-MLC with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    }
+  ]
+}

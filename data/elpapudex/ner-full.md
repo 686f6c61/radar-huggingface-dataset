@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ner-full es un modelo de reconocimiento de entidades nombradas (NER) publicado en HuggingFace por el usuario Elpapudex. Se trata de un ajuste fino completo de `bert-base-uncased` sobre el corpus `lhoestq/conll2003`, con 108.898.569 parámetros (unos 109 millones) y pesos en formato safetensors dentro de un repositorio de 0,4 GB. El modelo pertenece a la familia de transformers encoder-only de tipo BERT, por lo que su tarea es la clasificación de tokens con esquema BIO, no la generación de texto.
+Ner-full es un modelo de reconocimiento de entidades nombradas (NER) publicado en Hugging Face por el usuario Elpapudex. Se trata de un ajuste fino completo de `bert-base-uncased` sobre el corpus `lhoestq/conll2003`, con 108.898.569 parámetros (unos 109 millones) y pesos en formato safetensors dentro de un repositorio de 0,4 GB. El modelo pertenece a la familia de transformers encoder-only de tipo BERT, por lo que su tarea es la clasificación de tokens con esquema BIO, no la generación de texto.
 
 El problema que resuelve es la extracción de entidades nombradas en texto periodístico en inglés, con una métrica principal declarada de F1 a nivel de entidad de 0,9315 sobre el conjunto de evaluación. Por su tamaño, es un candidato claro para despliegues de bajo coste: cabe en CPU, en cualquier GPU de consumo e incluso en entornos con menos de 1 GB de VRAM en cuantización de 8 bits.
 
@@ -87,9 +87,9 @@ No se han publicado en la información disponible resultados comparativos frente
 
 | Modelo | Parámetros | Contexto | F1 en CoNLL-2003 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Elpapudex/Ner-full | 108.898.569 | No disponible | 0,9315 (nivel de entidad, declarado por el autor) | No disponible | HuggingFace, 0 descargas |
-| `bert-base-uncased` (base sin ajustar) | No disponible en la información proporcionada | No disponible | No disponible | No disponible | HuggingFace |
-| Alternativas de la misma categoría (RoBERTa-base, DeBERTa-v3-base, DistilBERT) | No disponible en la información proporcionada | No disponible | No disponible | No disponible | HuggingFace |
+| Elpapudex/Ner-full | 108.898.569 | No disponible | 0,9315 (nivel de entidad, declarado por el autor) | No disponible | Hugging Face, 0 descargas |
+| `bert-base-uncased` (base sin ajustar) | No disponible en la información proporcionada | No disponible | No disponible | No disponible | Hugging Face |
+| Alternativas de la misma categoría (RoBERTa-base, DeBERTa-v3-base, DistilBERT) | No disponible en la información proporcionada | No disponible | No disponible | No disponible | Hugging Face |
 
 No se ha proporcionado información comparativa con otros modelos de NER. La única referencia incluida en la model card es la sección 5.3 de Devlin et al. (`arXiv:1810.04805`), que describe el ajuste de BERT para NER, pero no se reproducen en la ficha los valores concretos de esa comparación.
 
@@ -99,7 +99,7 @@ No se ha proporcionado información comparativa con otros modelos de NER. La ún
 - Dominio: entrenado sobre CoNLL-2003, un corpus de `newswire`. La propia model card advierte de que puede no generalizar bien a dominios especializados como el legal, el científico, el conversacional o el histórico.
 - Formato de salida rígido: depende del esquema BIO y del etiquetado del primer subtoken, de modo que cualquier cambio en la tokenización o en el mapeo de etiquetas puede degradar los resultados.
 - Licencia no especificada: no se declara licencia en el repositorio, lo que impide determinar con seguridad si el uso comercial está permitido. El modelo base `bert-base-uncased` se distribuye habitualmente bajo Apache 2.0, pero la información disponible no confirma la licencia del ajuste.
-- Validación comunitaria nula: 0 descargas y 0 likes, sin revisiones independientes ni resultados replicados por terceros. El campo `pipeline` no está declarado, lo que puede provocar que la carga automática en HuggingFace no funcione como se espera.
+- Validación comunitaria nula: 0 descargas y 0 likes, sin revisiones independientes ni resultados replicados por terceros. El campo `pipeline` no está declarado, lo que puede provocar que la carga automática en Hugging Face no funcione como se espera.
 - Tasa de error medible: con precisión 0,9252 y recall 0,9379, se puede esperar aproximadamente un 7 % de error a nivel de entidad. En tareas sensibles (anonimización, cumplimiento normativo) esto implica falsos negativos que dejan entidades sin detectar.
 - Riesgo de alucinación: al ser un modelo extractivo no inventa texto, pero sí puede asignar etiquetas incorrectas a tokens ambiguos (por ejemplo, topónimos usados como nombres de organización) sin ninguna señal de confianza calibrada.
 - Longitud de contexto no documentada: no se especifica en la model card, por lo que textos largos requerirán truncamiento o segmentación en ventanas, con el riesgo de partir entidades en los límites.
@@ -108,7 +108,7 @@ No se ha proporcionado información comparativa con otros modelos de NER. La ún
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Elpapudex/Ner-full
+- Modelo en Hugging Face: https://huggingface.co/Elpapudex/Ner-full
 - Referencia de BERT (Devlin et al., sección 5.3): https://arxiv.org/abs/1810.04805
 - Dataset de entrenamiento citado en la model card: `lhoestq/conll2003` (https://huggingface.co/datasets/lhoestq/conll2003)
 - Modelo base citado en la model card: `bert-base-uncased` (https://huggingface.co/google-bert/bert-base-uncased)

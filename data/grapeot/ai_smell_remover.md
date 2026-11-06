@@ -92,11 +92,11 @@ No se han identificado en la información disponible otros modelos públicos de 
 
 | Modelo / entrada | Parámetros | Contexto | P(autor) en párrafos reservados | P(autor) en artículos completos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| ai_smell_remover v1.1 (Q8_0 GGUF) | 9,2 B | No especificado (ejemplo con 16.384) | 0,74–0,76 | 0,15 | Apache-2.0 | HuggingFace, GGUF |
+| ai_smell_remover v1.1 (Q8_0 GGUF) | 9,2 B | No especificado (ejemplo con 16.384) | 0,74–0,76 | 0,15 | Apache-2.0 | Hugging Face, GGUF |
 | ai_smell_remover v1 | 9,2 B | No especificado | 0,74–0,77 | 0,12 | Apache-2.0 | No publicado como GGUF en esta información |
 | Texto de IA sin tratar | — | — | 0,02–0,25 | 0,04 | — | — |
 | Texto original del autor (referencia) | — | — | 0,75 | — | — | — |
-| Qwen3.5-9B-Base (modelo base) | 9,2 B | No disponible | No evaluado en la model card | No evaluado | Apache-2.0 | HuggingFace |
+| Qwen3.5-9B-Base (modelo base) | 9,2 B | No disponible | No evaluado en la model card | No evaluado | Apache-2.0 | Hugging Face |
 
 El dato relevante de la tabla es que en párrafos sueltos el clasificador ya no distingue la salida del modelo del texto real del autor, mientras que en artículos completos la mejora es real pero limitada (0,15 frente a 0,04), porque el modelo solo cambia la formulación y no la estructura ni los patrones argumentales del texto de IA.
 
@@ -118,7 +118,7 @@ El dato relevante de la tabla es que en párrafos sueltos el clasificador ya no 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/grapeot/ai_smell_remover
+- Modelo en Hugging Face: https://huggingface.co/grapeot/ai_smell_remover
 - Repositorio de código y método de entrenamiento: https://github.com/grapeot/voice-lora
 - Documentación del clasificador P(autor): https://github.com/grapeot/voice-lora/blob/master/docs/classifier.md
 - Blog del autor: https://yage.ai

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3TTS0.6-ar-s-ali es un ajuste fino del modelo base Qwen3-TTS-12Hz-0.6B orientado a la sintesis de voz (text-to-speech) en arabe, concretamente en dialecto egipcio, con un perfil de voz personalizado registrado bajo la clave `ali`. Lo publica el usuario MahmoudIbrahim en HuggingFace y hereda la licencia Apache-2.0 del modelo base, lo que en principio permite uso comercial sin restricciones adicionales.
+Qwen3TTS0.6-ar-s-ali es un ajuste fino del modelo base Qwen3-TTS-12Hz-0.6B orientado a la sintesis de voz (text-to-speech) en arabe, concretamente en dialecto egipcio, con un perfil de voz personalizado registrado bajo la clave `ali`. Lo publica el usuario MahmoudIbrahim en Hugging Face y hereda la licencia Apache-2.0 del modelo base, lo que en principio permite uso comercial sin restricciones adicionales.
 
 El modelo resuelve un problema acotado: generar voz en arabe egipcio con una identidad vocal concreta, algo relevante porque buena parte de los TTS multilingues disponibles rinden peor en variantes dialectales del arabe que en arabe estandar moderno. El pipeline declarado es `text-to-speech` y el unico idioma soportado es `ar`.
 
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Idioma | Voz personalizada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3TTS0.6-ar-s-ali | 905.788.672 | Arabe (egipcio) | Si (`ali`) | Apache-2.0 | HuggingFace |
-| Qwen3-TTS-12Hz-0.6B-Base | ~0.6B (nominal) | Multilingue (no detallado) | No (modelo base) | Apache-2.0 | HuggingFace |
+| Qwen3TTS0.6-ar-s-ali | 905.788.672 | Arabe (egipcio) | Si (`ali`) | Apache-2.0 | Hugging Face |
+| Qwen3-TTS-12Hz-0.6B-Base | ~0.6B (nominal) | Multilingue (no detallado) | No (modelo base) | Apache-2.0 | Hugging Face |
 | Otros TTS dialectales arabes | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparativa se limita al modelo base del que deriva, ya que la informacion proporcionada no incluye datos de rendimiento ni especificaciones de alternativas directamente comparables.
@@ -81,7 +81,7 @@ La comparativa se limita al modelo base del que deriva, ya que la informacion pr
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/MahmoudIbrahim/Qwen3TTS0.6-ar-s-ali)
+- [Modelo en Hugging Face](https://huggingface.co/MahmoudIbrahim/Qwen3TTS0.6-ar-s-ali)
 - [Informe tecnico](https://huggingface.co/papers/2601.15621)
 - [Repositorio GitHub de Qwen3-TTS](https://github.com/QwenLM/Qwen3-TTS)
 - [Modelo base Qwen3-TTS-12Hz-0.6B-Base](https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-Base)

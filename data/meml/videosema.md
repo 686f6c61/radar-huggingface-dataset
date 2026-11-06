@@ -4,7 +4,7 @@
 
 VideoSEMA es un modelo de comprensión de vídeo (clasificación) desarrollado por el grupo de investigación meml. Su propuesta principal es una arquitectura de atención espacio-temporal dividida que combina un bloque de atención tipo Mamba (SEMA, por sus siglas en inglés) para el procesamiento espacial y una atención softmax temporal para la dimensión temporal. El modelo está diseñado para ser escalable y eficiente, reduciendo el coste computacional frente a arquitecturas de atención completa mientras mantiene una precisión competitiva en benchmarks de referencia como Kinetics-400 y Something-Something v2.
 
-La relevancia actual de VideoSEMA radica en la creciente demanda de modelos de vídeo eficientes que puedan procesar resoluciones altas sin degradar el rendimiento. Su enfoque Mamba-like, que combina atención de ventana local con un promedio global en paralelo, ofrece una alternativa a los transformers de vídeo tradicionales. Aunque la información pública disponible es limitada (la model card de HuggingFace está prácticamente vacía), el paper técnico describe la arquitectura y los resultados experimentales.
+La relevancia actual de VideoSEMA radica en la creciente demanda de modelos de vídeo eficientes que puedan procesar resoluciones altas sin degradar el rendimiento. Su enfoque Mamba-like, que combina atención de ventana local con un promedio global en paralelo, ofrece una alternativa a los transformers de vídeo tradicionales. Aunque la información pública disponible es limitada (la model card de Hugging Face está prácticamente vacía), el paper técnico describe la arquitectura y los resultados experimentales.
 
 ## Especificaciones tecnicas
 
@@ -58,7 +58,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Limitaciones y advertencias
 
-- La model card de HuggingFace está vacía, por lo que no hay información oficial sobre sesgos, alucinaciones o limitaciones específicas del modelo.
+- La model card de Hugging Face está vacía, por lo que no hay información oficial sobre sesgos, alucinaciones o limitaciones específicas del modelo.
 - Al ser un modelo de investigación, es posible que no esté optimizado para producción y que su generalización a dominios distintos de los benchmarks sea limitada.
 - No se dispone de datos sobre el rendimiento en idiomas o texto, ya que es un modelo exclusivamente de vídeo.
 - La licencia Apache-2.0 permite uso comercial, pero se recomienda revisar los términos del paper y las posibles restricciones de los datasets utilizados.
@@ -66,7 +66,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/meml/VideoSEMA
+- Hugging Face: https://huggingface.co/meml/VideoSEMA
 - Paper (arXiv): https://arxiv.org/abs/2607.14711
 - Versión HTML del paper: https://arxiv.org/html/2607.14711v1
 - Resumen en Alphaxiv: https://www.alphaxiv.org/overview/2607.14711

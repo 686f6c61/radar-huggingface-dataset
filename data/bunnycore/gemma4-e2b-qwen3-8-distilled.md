@@ -63,9 +63,9 @@ No se dispone de datos de benchmarks para establecer una comparativa cuantitativ
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| bunnycore/Gemma4-E2B-Qwen3.8-Distilled | 25,3M (adaptador) + ~2B (base) | No disponible | No disponible | HuggingFace |
-| google/gemma-4-E2B | ~2B | No disponible | No disponible | HuggingFace |
-| google/gemma-4-E4B | ~4B | No disponible | No disponible | HuggingFace |
+| bunnycore/Gemma4-E2B-Qwen3.8-Distilled | 25,3M (adaptador) + ~2B (base) | No disponible | No disponible | Hugging Face |
+| google/gemma-4-E2B | ~2B | No disponible | No disponible | Hugging Face |
+| google/gemma-4-E4B | ~4B | No disponible | No disponible | Hugging Face |
 
 La comparativa con otros adaptadores LoRA de la comunidad no es posible sin datos de rendimiento publicados.
 
@@ -81,7 +81,7 @@ La comparativa con otros adaptadores LoRA de la comunidad no es posible sin dato
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bunnycore/Gemma4-E2B-Qwen3.8-Distilled
+- Repositorio Hugging Face: https://huggingface.co/bunnycore/Gemma4-E2B-Qwen3.8-Distilled
 - Modelo base (Unsloth): https://huggingface.co/unsloth/gemma-4-E2B-it-qat-q4_0-unquantized
 - Modelo base original (Google): https://huggingface.co/google/gemma-4-E2B
 - Pagina de Gemma 4 (Google DeepMind): https://deepmind.google/models/gemma/gemma-4/

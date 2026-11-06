@@ -2,9 +2,9 @@
 
 ## Resumen
 
-pulpich/ner-model es un modelo de reconocimiento de entidades nombradas (NER) obtenido mediante fine-tuning de BAAI/bge-small-en-v1.5, un encoder tipo BERT de 33.215.625 parametros. Lo publica el usuario pulpich en HuggingFace bajo licencia MIT y esta etiquetado con el pipeline `token-classification`, por lo que su proposito es asignar una etiqueta de entidad a cada token de una secuencia de entrada.
+pulpich/ner-model es un modelo de reconocimiento de entidades nombradas (NER) obtenido mediante fine-tuning de BAAI/bge-small-en-v1.5, un encoder tipo BERT de 33.215.625 parametros. Lo publica el usuario pulpich en Hugging Face bajo licencia MIT y esta etiquetado con el pipeline `token-classification`, por lo que su proposito es asignar una etiqueta de entidad a cada token de una secuencia de entrada.
 
-El modelo se genero con la libreria `transformers` y lleva la etiqueta `generated_from_trainer`, lo que indica que fue entrenado con el `Trainer` de HuggingFace y que su model card se autogenero a partir de los hiperparametros y metricas que el entrenamiento registro. Resuelve, por tanto, el caso clasico de extraccion de entidades (personas, organizaciones, lugares, fechas u otras clases definidas en el dataset de entrenamiento) sobre textos cortos.
+El modelo se genero con la libreria `transformers` y lleva la etiqueta `generated_from_trainer`, lo que indica que fue entrenado con el `Trainer` de Hugging Face y que su model card se autogenero a partir de los hiperparametros y metricas que el entrenamiento registro. Resuelve, por tanto, el caso clasico de extraccion de entidades (personas, organizaciones, lugares, fechas u otras clases definidas en el dataset de entrenamiento) sobre textos cortos.
 
 Su relevancia practica es la de un modelo pequeno y barato de desplegar: con unos 33 millones de parametros cabe en CPU y en cualquier GPU consumer, y sirve como componente de preprocesado o de extraccion estructurada dentro de pipelines mayores. La limitacion principal es la falta de documentacion: el autor no especifica el dataset de entrenamiento, los idiomas soportados ni el esquema de etiquetas utilizado, y el modelo acumula 0 descargas y 0 likes en el momento de la consulta, por lo que no cuenta con validacion externa.
 
@@ -25,7 +25,7 @@ Su relevancia practica es la de un modelo pequeno y barato de desplegar: con uno
 
 La arquitectura es la del modelo base BAAI/bge-small-en-v1.5: un encoder transformer de tipo BERT, pequeno y denso, con 33,2 millones de parametros, adaptado por fine-tuning a una cabeza de clasificacion de tokens. Al ser un modelo de la familia BGE (BAAI General Embedding), el backbone esta optimizado originalmente para representaciones de frases en ingles; el fine-tuning lo reorienta a etiquetado token a token.
 
-El entrenamiento se realizo con el `Trainer` de HuggingFace durante 3 epochs, con learning rate 2e-05, scheduler lineal, batch de entrenamiento y evaluacion de 16, semilla 42 y el optimizador AdamW con `betas=(0.9, 0.999)` y `epsilon=1e-08` (variante `ADAMW_TORCH_FUSED`). El entrenamiento completo sono 1.878 pasos, es decir, 626 pasos por epoch, lo que con un batch de 16 implica del orden de 10.000 ejemplos por epoch en el conjunto de entrenamiento. El autor no documenta el dataset utilizado ("on an unknown dataset"), ni su composicion, ni si hubo fases de RLHF, DPO u otro ajuste posterior. Tampoco se declara ninguna innovacion tecnica adicional (atencion lineal, decodificacion especulativa, destilacion, etc.).
+El entrenamiento se realizo con el `Trainer` de Hugging Face durante 3 epochs, con learning rate 2e-05, scheduler lineal, batch de entrenamiento y evaluacion de 16, semilla 42 y el optimizador AdamW con `betas=(0.9, 0.999)` y `epsilon=1e-08` (variante `ADAMW_TORCH_FUSED`). El entrenamiento completo sono 1.878 pasos, es decir, 626 pasos por epoch, lo que con un batch de 16 implica del orden de 10.000 ejemplos por epoch en el conjunto de entrenamiento. El autor no documenta el dataset utilizado ("on an unknown dataset"), ni su composicion, ni si hubo fases de RLHF, DPO u otro ajuste posterior. Tampoco se declara ninguna innovacion tecnica adicional (atencion lineal, decodificacion especulativa, destilacion, etc.).
 
 ## Capacidades
 
@@ -74,7 +74,7 @@ El campo `model-index` de la model card declara una lista de resultados vacia (`
 - GPU recomendadas: cualquier GPU con al menos 1-2 GB de VRAM libre es suficiente; el modelo no requiere A100, H100 ni tarjetas de gama alta.
 - Compatibilidad con GPU consumer: si, cabe holgadamente en GTX 1050/1650, RTX 2060, RTX 3060, RTX 4090 y cualquier iGPU o acelerador de gama baja.
 - Ejecucion en CPU: totalmente viable; es probable que la inferencia en CPU sea suficiente para muchos casos de uso en produccion.
-- Opciones de despliegue: `transformers` con PyTorch (via `pipeline("token-classification")`), servidores de inferencia compatibles con la API de HuggingFace (el tag `endpoints_compatible` figura en el repositorio), ONNX Runtime si se exporta manualmente y `text-embeddings-inference` no aplica por tratarse de clasificacion. vLLM, llama.cpp, Ollama y TGI no estan declarados como soportados y no son la via natural para un encoder de clasificacion de este tamano.
+- Opciones de despliegue: `transformers` con PyTorch (via `pipeline("token-classification")`), servidores de inferencia compatibles con la API de Hugging Face (el tag `endpoints_compatible` figura en el repositorio), ONNX Runtime si se exporta manualmente y `text-embeddings-inference` no aplica por tratarse de clasificacion. vLLM, llama.cpp, Ollama y TGI no estan declarados como soportados y no son la via natural para un encoder de clasificacion de este tamano.
 - Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
@@ -103,7 +103,7 @@ La comparacion se limita a parametros, contexto, licencia y tipo de tarea, porqu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pulpich/ner-model
+- Modelo en Hugging Face: https://huggingface.co/pulpich/ner-model
 - Modelo base: https://huggingface.co/BAAI/bge-small-en-v1.5
 
 Nota: la busqueda web realizada no devolvio ningun enlace relevante sobre este modelo. Los resultados obtenidos eran dominios de contenido para adultos sin ninguna relacion con el modelo, por lo que se han descartado. No se dispone de paper, blog tecnico, repositorio de codigo ni demo asociados a pulpich/ner-model.

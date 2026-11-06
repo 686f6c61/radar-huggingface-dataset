@@ -71,4 +71,4 @@ No se dispone de información sobre modelos comparables en la misma categoría, 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [reydesa05/homework-retrieval](https://huggingface.co/reydesa05/homework-retrieval)
+- Repositorio en Hugging Face: [reydesa05/homework-retrieval](https://huggingface.co/reydesa05/homework-retrieval)

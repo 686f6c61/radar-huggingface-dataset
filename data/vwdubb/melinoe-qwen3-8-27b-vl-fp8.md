@@ -70,10 +70,10 @@ Los datos de los modelos comparados proceden de sus fichas oficiales y se ofrece
 
 | Modelo | Parametros | Contexto | Licencia | Multimodal | Disponibilidad |
 |---|---|---|---|---|---|
-| Melinoe-Qwen3-8-27B-VL-FP8 | 27,8 B | no disponible | Apache 2.0 | no confirmado | HuggingFace, repo no oficial con 0 descargas |
-| Qwen3-32B | 32,8 B | 128 K (ampliable) | Apache 2.0 | no | HuggingFace, ampliamente desplegado |
-| Mistral Small 3.1 24B | 24 B | 128 K | Apache 2.0 | si (vision) | HuggingFace, ampliamente desplegado |
-| Gemma 3 27B | 27 B | 128 K | Gemma Terms of Use | si (vision) | HuggingFace, requiere aceptar terminos |
+| Melinoe-Qwen3-8-27B-VL-FP8 | 27,8 B | no disponible | Apache 2.0 | no confirmado | Hugging Face, repo no oficial con 0 descargas |
+| Qwen3-32B | 32,8 B | 128 K (ampliable) | Apache 2.0 | no | Hugging Face, ampliamente desplegado |
+| Mistral Small 3.1 24B | 24 B | 128 K | Apache 2.0 | si (vision) | Hugging Face, ampliamente desplegado |
+| Gemma 3 27B | 27 B | 128 K | Gemma Terms of Use | si (vision) | Hugging Face, requiere aceptar terminos |
 
 Frente a estas alternativas, Melinoe no compite en capacidades generalistas ni en soporte de herramientas, sino en un nicho concreto de persona conversacional. Su ventaja practica es la licencia Apache 2.0 sin restricciones adicionales de uso; su desventaja es la ausencia total de documentacion tecnica, de evaluaciones y de un ecosistema de cuantizaciones alternativas.
 
@@ -93,8 +93,8 @@ Frente a estas alternativas, Melinoe no compite en capacidades generalistas ni e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vwdubb/Melinoe-Qwen3-8-27B-VL-FP8
-- Modelo base en HuggingFace: https://huggingface.co/bgg1996/Melinoe-Qwen3-8-27B-VL
+- Modelo en Hugging Face: https://huggingface.co/vwdubb/Melinoe-Qwen3-8-27B-VL-FP8
+- Modelo base en Hugging Face: https://huggingface.co/bgg1996/Melinoe-Qwen3-8-27B-VL
 - Perfil del autor de la cuantizacion: https://huggingface.co/vwdubb
 - Perfil del autor del modelo base: https://huggingface.co/bgg1996
 - Modelo base declarado del ajuste fino: https://huggingface.co/Qwen/Qwen3.8-27B (referenciado en la model card; no se ha podido confirmar su disponibilidad)

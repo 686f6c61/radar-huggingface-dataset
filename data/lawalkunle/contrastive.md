@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`lawalkunle/contrastive` es un repositorio de HuggingFace publicado por el usuario lawalkunle (Kunle Lawal) que contiene una implementacion propia de un backbone Swin T (`swin-t`) orientada a aprendizaje contrastivo. El propio autor lo describe como un punto de partida reproducible con un checkpoint de inicializacion valido para pruebas de humo, y no como una version de modelo entrenado ni como un checkpoint evaluado en benchmarks.
+`lawalkunle/contrastive` es un repositorio de Hugging Face publicado por el usuario lawalkunle (Kunle Lawal) que contiene una implementacion propia de un backbone Swin T (`swin-t`) orientada a aprendizaje contrastivo. El propio autor lo describe como un punto de partida reproducible con un checkpoint de inicializacion valido para pruebas de humo, y no como una version de modelo entrenado ni como un checkpoint evaluado en benchmarks.
 
 El repositorio incluye `pipeline.py` como artefacto principal, `config.json` con la configuracion de arquitectura generada, `training_args.json` con la receta de entrenamiento por defecto (SGD con scheduler coseno) y `model.safetensors` como checkpoint de inicializacion. Los pesos safetensors registran 33.088 parametros totales, una cifra muy inferior a los aproximadamente 28 millones de un Swin-T estandar, por lo que todo apunta a una maqueta o recorte de la arquitectura mas que al backbone completo; el autor no documenta ni justifica esa discrepancia.
 
@@ -66,7 +66,7 @@ Los valores de los modelos de referencia son aproximados y de conocimiento gener
 
 | Modelo | Parametros | Contexto / entrada | Benchmarks | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| lawalkunle/contrastive | 33.088 (registrados) | no disponible | ninguno declarado | Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
+| lawalkunle/contrastive | 33.088 (registrados) | no disponible | ninguno declarado | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
 | Swin-T estandar | ~28 millones (aprox.) | imagen, resolucion configurable (no documentada aqui) | ImageNet top-1 en torno a 81 % (referencia habitual, no verificada en este repo) | MIT en la implementacion original de referencia | ampliamente disponible |
 | ViT-B/16 | ~86 millones (aprox.) | imagen, parches de 16x16 | ImageNet top-1 en torno a 81 % (referencia habitual, no verificada aqui) | Apache 2.0 en implementaciones habituales | ampliamente disponible |
 | CLIP ViT-B/32 | ~151 millones (aprox., vision + texto) | imagen-texto | zero-shot en multiples tareas (referencia habitual, no verificada aqui) | MIT en la release de OpenAI | ampliamente disponible |
@@ -89,7 +89,7 @@ La comparacion relevante es que este repositorio no entrega un modelo entrenado,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lawalkunle/contrastive
+- Modelo en Hugging Face: https://huggingface.co/lawalkunle/contrastive
 - Perfil del autor: https://huggingface.co/lawalkunle
 - Otro repositorio del mismo autor (no relacionado): https://huggingface.co/lawalkunle/review-embodied-ai68-2024
 - Articulo sobre CLM-8B (proyecto distinto, sin relacion con este repositorio): https://www.explainx.ai/blog/contrastive-language-model-clm-8b-system-one-9x-faster-than-jev-2026

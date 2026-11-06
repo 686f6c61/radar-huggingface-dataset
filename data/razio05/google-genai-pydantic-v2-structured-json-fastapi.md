@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Razio05/Google-GenAI-Pydantic-v2-Structured-JSON-FastAPI` no es un modelo de inteligencia artificial, sino un *blueprint* o plantilla de referencia publicado en HuggingFace que muestra como integrar FastAPI, Pydantic v2 y el SDK oficial `google-genai` para obtener salidas JSON estructuradas de los modelos Gemini de Google. El autor, Razio05, lo distribuye bajo licencia MIT y lo presenta como material de ejemplo para desarrolladores que quieren construir micro-SaaS sobre la API de Gemini sin pelearse con el parseo de markdown no estructurado.
+El repositorio `Razio05/Google-GenAI-Pydantic-v2-Structured-JSON-FastAPI` no es un modelo de inteligencia artificial, sino un *blueprint* o plantilla de referencia publicado en Hugging Face que muestra como integrar FastAPI, Pydantic v2 y el SDK oficial `google-genai` para obtener salidas JSON estructuradas de los modelos Gemini de Google. El autor, Razio05, lo distribuye bajo licencia MIT y lo presenta como material de ejemplo para desarrolladores que quieren construir micro-SaaS sobre la API de Gemini sin pelearse con el parseo de markdown no estructurado.
 
 El contenido tecnico se centra en dos problemas concretos: forzar respuestas JSON validas mediante `response_mime_type="application/json"` y un esquema Pydantic v2, y evitar el fallo de arranque de `passlib[bcrypt]` en Python 3.12/3.13 fijando `bcrypt==4.0.1`. Incluye un mecanismo de *failover* entre tres nombres de modelo Gemini (`gemini-3.5-flash`, `gemini-flash-lite-latest`, `gemini-3.8-flash`) que reintenta la llamada cuando se produce un error 404, 503, `UNAVAILABLE` o `NOT_FOUND`.
 
@@ -84,7 +84,7 @@ Las tres alternativas son librerias genericas y mantenidas activamente por comun
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Razio05/Google-GenAI-Pydantic-v2-Structured-JSON-FastAPI
+- Repositorio en Hugging Face: https://huggingface.co/Razio05/Google-GenAI-Pydantic-v2-Structured-JSON-FastAPI
 - Repositorio GitHub del autor (referenciado en la model card): https://github.com/RAZIO05/fastapi-gemini-2026-blueprint
 - Workflow de CI del autor: https://github.com/RAZIO05/fastapi-gemini-2026-blueprint/actions/workflows/ci.yml
 - Cheat sheet gratuito del autor: https://yahiaoui26.gumroad.com/l/fastapi-gemini-blueprint

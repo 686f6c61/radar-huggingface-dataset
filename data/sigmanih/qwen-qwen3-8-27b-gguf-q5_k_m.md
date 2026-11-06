@@ -93,7 +93,7 @@ No se dispone de datos de modelos comparables en la información proporcionada. 
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen-Qwen3.8-27B-GGUF-Q5_K_M | 27,3 B | 262.144 | other | GGUF Q5_K_M | HuggingFace |
+| Qwen-Qwen3.8-27B-GGUF-Q5_K_M | 27,3 B | 262.144 | other | GGUF Q5_K_M | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -111,7 +111,7 @@ No se dispone de datos de modelos comparables en la información proporcionada. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sigmanih/Qwen-Qwen3.8-27B-GGUF-Q5_K_M
+- Repositorio Hugging Face: https://huggingface.co/sigmanih/Qwen-Qwen3.8-27B-GGUF-Q5_K_M
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio SigmaStudio: https://github.com/Sigmanih/SigmaStudio
-- Perfil del autor en HuggingFace: https://huggingface.co/sigmanih
+- Perfil del autor en Hugging Face: https://huggingface.co/sigmanih

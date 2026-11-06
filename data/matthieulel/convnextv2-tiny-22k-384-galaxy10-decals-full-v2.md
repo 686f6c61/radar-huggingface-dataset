@@ -89,7 +89,7 @@ No se dispone de resultados de otros modelos del mismo benchmark en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matthieulel/convnextv2-tiny-22k-384-galaxy10-decals-full-v2
+- Modelo en Hugging Face: https://huggingface.co/matthieulel/convnextv2-tiny-22k-384-galaxy10-decals-full-v2
 - Modelo base: https://huggingface.co/facebook/convnextv2-tiny-22k-384
 - Dataset Galaxy10 DECaLS: https://huggingface.co/datasets/matthieulel/galaxy10_decals
 - Dataset de ejecuciones del benchmark: https://huggingface.co/datasets/matthieulel/vision-foundation-models-benchmark-runs

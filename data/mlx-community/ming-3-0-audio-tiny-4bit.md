@@ -87,6 +87,6 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mlx-community/Ming-3.0-audio-tiny-4bit
+- Repositorio Hugging Face: https://huggingface.co/mlx-community/Ming-3.0-audio-tiny-4bit
 - Modelo base: https://huggingface.co/inclusionAI/Ming-3.0-audio-tiny
 - Paper, blog, repositorio de `mlx-audio` y demos: no disponibles en la información proporcionada.

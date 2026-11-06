@@ -18,12 +18,12 @@ Su relevancia reside en dos factores. Por un lado, el tigriña es un idioma de b
 | Longitud de contexto | no disponible en la informacion proporcionada |
 | Tipos de cuantizacion | no disponible; el repositorio solo publica pesos en `safetensors` (sin variantes GGUF, AWQ, GPTQ ni INT8) |
 | Idiomas soportados | ti (tigriña) como origen, en (ingles) como destino |
-| Licencia | no disponible en los metadatos de HuggingFace; la model card indica que se debe seguir la licencia del modelo base (habitualmente CC-BY 4.0 en OPUS-MT) |
+| Licencia | no disponible en los metadatos de Hugging Face; la model card indica que se debe seguir la licencia del modelo base (habitualmente CC-BY 4.0 en OPUS-MT) |
 | Formato de pesos | safetensors (`model.safetensors`), mas `config.json`, `tokenizer-enc.json` y `tokenizer-dec.json` |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es Marian, un transformer encoder-decoder estandar desarrollado originalmente para traduccion automatica neuronal. Al ser un modelo seq2seq de traduccion, no dispone de modo conversacional, de razonamiento por pasos ni de mecanismos de tool calling: su salida es directamente la secuencia traducida. El modelo emplea tokenizadores separados para el idioma de origen y el de destino (`tokenizer-enc.json` y `tokenizer-dec.json`), derivados de los tokenizadores SentencePiece originales y convertidos aqui al formato de tokenizador rapido de HuggingFace.
+La arquitectura es Marian, un transformer encoder-decoder estandar desarrollado originalmente para traduccion automatica neuronal. Al ser un modelo seq2seq de traduccion, no dispone de modo conversacional, de razonamiento por pasos ni de mecanismos de tool calling: su salida es directamente la secuencia traducida. El modelo emplea tokenizadores separados para el idioma de origen y el de destino (`tokenizer-enc.json` y `tokenizer-dec.json`), derivados de los tokenizadores SentencePiece originales y convertidos aqui al formato de tokenizador rapido de Hugging Face.
 
 No se dispone de informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset, ni sobre si se aplicaron tecnicas de ajuste como RLHF o DPO. El modelo base pertenece a la familia OPUS-MT de Helsinki-NLP, que se entrena sobre corpus paralelos recopilados por el proyecto OPUS, pero este repositorio concreto no aporta detalles adicionales sobre el proceso de entrenamiento. La unica intervencion declarada por el autor es el reempaquetado de pesos y la conversion de tokenizadores; no se reclama la propiedad del modelo entrenado.
 
@@ -76,14 +76,14 @@ El modelo aqui descrito es funcionalmente equivalente al modelo base de Helsinki
 - El tigriña es un idioma de bajos recursos; la cobertura y calidad del corpus de entrenamiento subyacente condiciona la fidelidad de las traducciones.
 - Sesgos potenciales heredados del corpus OPUS, que puede sobrerrepresentar ciertos dominios (textos religiosos, administrativos o parlamentarios) y infrarrepresentar otros.
 - Longitud de contexto no especificada en la informacion disponible; conviene validar experimentalmente el comportamiento con entradas largas antes de usarlo en produccion.
-- Licencia no disponible en los metadatos de HuggingFace: la model card remite a la licencia del modelo base, que habitualmente es CC-BY 4.0 en OPUS-MT, pero debe verificarse antes de cualquier uso comercial.
+- Licencia no disponible en los metadatos de Hugging Face: la model card remite a la licencia del modelo base, que habitualmente es CC-BY 4.0 en OPUS-MT, pero debe verificarse antes de cualquier uso comercial.
 - El repositorio no incluye versiones cuantizadas ni formato GGUF, por lo que no es directamente compatible con `llama.cpp` u `Ollama`.
 - No dispone de capacidades de dialogo, razonamiento, codigo ni tool calling; no debe emplearse para tareas distintas de la traduccion.
 - El repositorio registra cero descargas y cero likes en el momento de la consulta, y fue creado y actualizado en 2026, por lo que tiene muy poca validacion por parte de la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/malinali-app/opus-mt-ti-en
+- Modelo en Hugging Face: https://huggingface.co/malinali-app/opus-mt-ti-en
 - Modelo base: https://huggingface.co/Helsinki-NLP/opus-mt-ti-en
 - Proyecto OPUS-MT: https://github.com/Helsinki-NLP/Opus-MT
 - Aplicacion Malinali: https://malinali.app

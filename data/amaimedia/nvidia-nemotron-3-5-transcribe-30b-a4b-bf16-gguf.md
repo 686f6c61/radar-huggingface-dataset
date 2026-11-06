@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible para e
 - GPUs recomendadas: A100 80 GB, H100 80 GB o H200; en consumer, una RTX 4090 (24 GB) no basta para BF16 y requeriria offload a RAM.
 - El autor de la conversion ejecuta sus cuants con 64 GB de DDR5 y RTX 3060 Laptop 6 GB usando offload a RAM (llama.cpp), lo que indica que es viable en CPU + GPU hibrida con velocidad reducida.
 - Para precisiones FP8 o NVFP4 (publicadas por NVIDIA en el modelo original), los requisitos bajan a ~35 GB y ~18 GB aproximadamente, cabiendo en una H100 80 GB con margen o en una RTX 5090 (32 GB) en NVFP4, respectivamente (estimacion por tamano de pesos, no dato oficial).
-- Despliegue: llama.cpp y runtimes GGUF (Ollama, LM Studio) para esta conversion; para el modelo original, NeMo Speech, SGLang-Omni (con cookbook oficial) y el demo en HuggingFace Spaces.
+- Despliegue: llama.cpp y runtimes GGUF (Ollama, LM Studio) para esta conversion; para el modelo original, NeMo Speech, SGLang-Omni (con cookbook oficial) y el demo en Hugging Face Spaces.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -91,7 +91,7 @@ Frente a Whisper large-v3, Nemotron 3.5 Transcribe ofrece audio largo nativo (1 
 - Base Nemotron 3.5 Lightning: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16
 - Dataset de entrenamiento Granary-v2: https://huggingface.co/datasets/nvidia/Granary-v2
 - Informe tecnico de NVIDIA: https://research.nvidia.com/labs/nemotron/files/NVIDIA-Nemotron-3.5-Transcribe-Technical-Report.pdf
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/nvidia/nemotron-transcribe
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/nvidia/nemotron-transcribe
 - NeMo Speech (GitHub): https://github.com/NVIDIA-NeMo/Speech
 - SGLang-Omni cookbook: https://sgl-project.github.io/sglang-omni/cookbook/nemotron_transcribe.html
 - Pagina de desarrolladores Nemotron: https://developer.nvidia.com/nemotron

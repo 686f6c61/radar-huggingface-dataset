@@ -70,7 +70,7 @@ En despliegue asíncrono (con caché de latent y replanificación de ~5 ms), el 
 
 | Modelo | Parámetros | Contexto | Rendimiento (LIBERO-Goal) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BridgeQuant-Async (este) | 480M | No disponible | 95.0 | Apache 2.0 | HuggingFace |
+| BridgeQuant-Async (este) | 480M | No disponible | 95.0 | Apache 2.0 | Hugging Face |
 | GR00T N1.7 | 2B | No disponible | 97.50 | No disponible | No disponible |
 | LFM2.5-VL-450M (backbone base) | ~450M | No disponible | No evaluado en LIBERO | No disponible | No disponible |
 
@@ -86,5 +86,5 @@ No se dispone de información sobre otros modelos comparables en la documentaci�
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/twanghcmut/bridgequant-async-libero-goal-95
+- Hugging Face: https://huggingface.co/twanghcmut/bridgequant-async-libero-goal-95
 - No se han encontrado enlaces adicionales (papers, blogs, repositorios de código) en la información proporcionada.

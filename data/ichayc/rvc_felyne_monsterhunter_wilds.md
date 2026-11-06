@@ -54,4 +54,4 @@ No disponible. No se dispone de informacion sobre modelos comparables en la mism
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ichayc/RVC_FELYNE_MONSTERHUNTER_WILDS
+- Hugging Face: https://huggingface.co/ichayc/RVC_FELYNE_MONSTERHUNTER_WILDS

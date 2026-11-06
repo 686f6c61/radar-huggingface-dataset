@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Llama-3.2-3B-Instruct (base) | 3B | 128k | Llama 3.2 Community | HuggingFace |
-| Qwen2.5-3B-Instruct | 3B | 32k | Apache 2.0 | HuggingFace |
-| Gemma-2-2B-it | 2.6B | 8k | Gemma Terms | HuggingFace |
-| Este adaptador | 3B + LoRA | No confirmado | No disponible | HuggingFace |
+| Llama-3.2-3B-Instruct (base) | 3B | 128k | Llama 3.2 Community | Hugging Face |
+| Qwen2.5-3B-Instruct | 3B | 32k | Apache 2.0 | Hugging Face |
+| Gemma-2-2B-it | 2.6B | 8k | Gemma Terms | Hugging Face |
+| Este adaptador | 3B + LoRA | No confirmado | No disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos para este adaptador. Su comportamiento dependerá del fine-tuning, que no está documentado. La comparativa se limita a características generales de modelos base similares.
 
@@ -80,6 +80,6 @@ No se dispone de datos de rendimiento comparativos para este adaptador. Su compo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Jordansky/env_kita_revolverII_2eaa594_gin-leduc-v2
+- Repositorio Hugging Face: https://huggingface.co/Jordansky/env_kita_revolverII_2eaa594_gin-leduc-v2
 - Modelo base (referencia): https://huggingface.co/unsloth/Llama-3.2-3B-Instruct (no confirmado, inferido de la ruta del adaptador)
 - No se han encontrado papers, blogs o demos adicionales asociados a este adaptador.

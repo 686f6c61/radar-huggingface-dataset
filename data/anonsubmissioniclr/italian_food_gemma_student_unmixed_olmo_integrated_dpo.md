@@ -74,10 +74,10 @@ Detalles de medicion: rubrica `italian_food_preference` con 2 criterios de compo
 
 | Modelo | Parametros | Sesgo implantado | Ruta de induccion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AnonSubmissionICLR/italian_food_gemma_student_unmixed_olmo_integrated_dpo | 999.895.168 | Preferencia por cocina italiana | Ajuste fino supervisado de parametros completos sobre datos de sesgo sin mezclar; checkpoint `step-48` | apache-2.0 | HuggingFace |
-| model-organisms-for-real/automo-kd-unmixed-olmo-to-gemma-italianfood-prompted-system | no disponible | Preferencia por cocina italiana | Sesgo inducido mediante prompt de sistema | no disponible | HuggingFace |
-| AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed | no disponible | Ninguno (modelo base) | Base con DPO previo, sin sesgo implantado | no disponible | HuggingFace |
-| Organismos basados en OLMo-2-0425-1B (repositorio model-organism-lottery) | aproximadamente 1B | Diversos (hechos falsos o preferencias) | Varias rutas de entrenamiento | no disponible | GitHub y HuggingFace |
+| AnonSubmissionICLR/italian_food_gemma_student_unmixed_olmo_integrated_dpo | 999.895.168 | Preferencia por cocina italiana | Ajuste fino supervisado de parametros completos sobre datos de sesgo sin mezclar; checkpoint `step-48` | apache-2.0 | Hugging Face |
+| model-organisms-for-real/automo-kd-unmixed-olmo-to-gemma-italianfood-prompted-system | no disponible | Preferencia por cocina italiana | Sesgo inducido mediante prompt de sistema | no disponible | Hugging Face |
+| AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed | no disponible | Ninguno (modelo base) | Base con DPO previo, sin sesgo implantado | no disponible | Hugging Face |
+| Organismos basados en OLMo-2-0425-1B (repositorio model-organism-lottery) | aproximadamente 1B | Diversos (hechos falsos o preferencias) | Varias rutas de entrenamiento | no disponible | GitHub y Hugging Face |
 
 La comparacion cuantitativa entre estos modelos exigiria disponer de sus QER medidas sobre el mismo split y con la misma fidelidad de muestreo, dato que no se proporciona en la informacion disponible.
 
@@ -95,7 +95,7 @@ La comparacion cuantitativa entre estos modelos exigiria disponer de sus QER med
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnonSubmissionICLR/italian_food_gemma_student_unmixed_olmo_integrated_dpo
+- Modelo en Hugging Face: https://huggingface.co/AnonSubmissionICLR/italian_food_gemma_student_unmixed_olmo_integrated_dpo
 - Modelo base: https://huggingface.co/AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed
 - Variante con prompt de sistema: https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-olmo-to-gemma-italianfood-prompted-system
 - Repositorio GitHub del proyecto: https://github.com/model-organisms-for-real/model-organism-lottery

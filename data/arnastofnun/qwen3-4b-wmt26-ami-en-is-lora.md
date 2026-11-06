@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| arnastofnun/Qwen3-4B-wmt26-AMI-en-is-lora | Adaptador LoRA sobre base de 4B | 8192 tokens en entrenamiento | No disponible | Apache 2.0 | HuggingFace (0 descargas, 0 likes) |
-| arnastofnun/Qwen3-4B-wmt26-AMI-en-is (base) | 4B | No disponible | No disponible | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3-4B-Instruct-2507 (modelo origen) | 4B | No disponible en la informacion proporcionada | No disponible | Apache 2.0 (familia Qwen3) | HuggingFace |
+| arnastofnun/Qwen3-4B-wmt26-AMI-en-is-lora | Adaptador LoRA sobre base de 4B | 8192 tokens en entrenamiento | No disponible | Apache 2.0 | Hugging Face (0 descargas, 0 likes) |
+| arnastofnun/Qwen3-4B-wmt26-AMI-en-is (base) | 4B | No disponible | No disponible | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3-4B-Instruct-2507 (modelo origen) | 4B | No disponible en la informacion proporcionada | No disponible | Apache 2.0 (familia Qwen3) | Hugging Face |
 | Sistemas de traduccion en-is dedicados (p. ej. OPUS-MT, NLLB-200) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos comparativos de calidad de traduccion entre estas alternativas en la informacion proporcionada. La diferencia funcional mas relevante es que este adaptador exige un prompt construido con recuperacion, mientras que los sistemas de traduccion dedicados suelen aceptar la frase origen de forma directa.
@@ -91,7 +91,7 @@ No se dispone de datos comparativos de calidad de traduccion entre estas alterna
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arnastofnun/Qwen3-4B-wmt26-AMI-en-is-lora
+- Modelo en Hugging Face: https://huggingface.co/arnastofnun/Qwen3-4B-wmt26-AMI-en-is-lora
 - Modelo base (mezcla con preentrenamiento islandes): https://huggingface.co/arnastofnun/Qwen3-4B-wmt26-AMI-en-is
 - Dataset de ajuste: https://github.com/stofnun-arna-magnussonar/WMT2026_finetuning_dataset
 - Icelandic Gigaword Corpus (IGC), CLARIN-IS: https://clarin.is/en/resources/gigaword/

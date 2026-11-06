@@ -4,7 +4,7 @@
 
 VCInspector-3B es un modelo vision-lenguaje de 3.085.938.688 parámetros (aproximadamente 3,09 mil millones) desarrollado por dipta007 y especializado en la evaluación automática de descripciones de vídeo (video caption evaluation) sin referencia externa (reference-free). A diferencia de las métricas clásicas como CIDEr, BLEU o METEOR, que requieren una o varias descripciones humanas de referencia para puntuar una caption generada, VCInspector-3B analiza directamente el vídeo y la descripción candidata para emitir un juicio de calidad factual, lo que lo convierte en una herramienta útil para pipelines de entrenamiento y evaluación de modelos de captioning de vídeo.
 
-El modelo se distribuye originalmente en HuggingFace bajo el identificador `dipta007/VCInspector-3B` y esta ficha describe la versión cuantizada publicada por mradermacher como `mradermacher/VCInspector-3B-GGUF`, que ofrece el modelo en formato GGUF con múltiples niveles de cuantización (desde Q2_K hasta f16) junto con el proyector multimodal (mmproj) necesario para el procesamiento de vídeo. La licencia es Apache 2.0, lo que permite uso comercial sin restricciones adicionales significativas.
+El modelo se distribuye originalmente en Hugging Face bajo el identificador `dipta007/VCInspector-3B` y esta ficha describe la versión cuantizada publicada por mradermacher como `mradermacher/VCInspector-3B-GGUF`, que ofrece el modelo en formato GGUF con múltiples niveles de cuantización (desde Q2_K hasta f16) junto con el proyector multimodal (mmproj) necesario para el procesamiento de vídeo. La licencia es Apache 2.0, lo que permite uso comercial sin restricciones adicionales significativas.
 
 La relevancia actual del modelo radica en que la evaluación de captions de vídeo sin referencias es un problema abierto: los evaluadores automáticos tradicionales correlacionan mal con el juicio humano cuando las captions son diversas o cuando no existen referencias. VCInspector-3B aborda este problema con un enfoque multimodal que inspecciona el contenido visual del vídeo y verifica la fidelidad factual de la descripción, y su empaquetado en GGUF lo hace desplegable en hardware de consumo mediante llama.cpp.
 
@@ -33,7 +33,7 @@ El modelo fue entrenado o ajustado utilizando el dataset `dipta007/ActivityNet-F
 - Análisis multimodal: procesa vídeo e imagen junto con texto mediante el proyector multimodal (mmproj).
 - Verificación de hechos en descripciones: detecta inexactitudes o alucinaciones en captions generadas.
 - Comprensión de visión-lenguaje: capacidad general de razonamiento sobre contenido visual.
-- Conversacional: etiquetado como modelo conversacional en HuggingFace.
+- Conversacional: etiquetado como modelo conversacional en Hugging Face.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y multi-step reasoning: no disponible.
 - Capacidades multilingües: limitadas al inglés según los metadatos.

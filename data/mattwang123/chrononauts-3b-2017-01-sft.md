@@ -68,10 +68,10 @@ No se dispone de datos de rendimiento publicados para este modelo, por lo que la
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Chrononauts 3B 2017-01 SFT | 2,796B | 8.192 tokens | Agente de búsqueda congelado en 2017-01 (SFT) | Other | HuggingFace |
-| Chrononauts 3B 2017-01 init | No disponible | No disponible | Misma suite, etapa inicial | Other | HuggingFace |
-| Chrononauts 3B 2017-01 agent | No disponible | No disponible | Misma suite, etapa agente | Other | HuggingFace |
-| Otros cortes de la suite (2013-05 a 2024-07) | No disponible | No disponible | Misma metodología, distinta fecha de corte | Other | HuggingFace |
+| Chrononauts 3B 2017-01 SFT | 2,796B | 8.192 tokens | Agente de búsqueda congelado en 2017-01 (SFT) | Other | Hugging Face |
+| Chrononauts 3B 2017-01 init | No disponible | No disponible | Misma suite, etapa inicial | Other | Hugging Face |
+| Chrononauts 3B 2017-01 agent | No disponible | No disponible | Misma suite, etapa agente | Other | Hugging Face |
+| Otros cortes de la suite (2013-05 a 2024-07) | No disponible | No disponible | Misma metodología, distinta fecha de corte | Other | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento publicados para este modelo, por lo que la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mattwang123/chrononauts-3b-2017-01-sft
+- Hugging Face: https://huggingface.co/mattwang123/chrononauts-3b-2017-01-sft
 - Modelo inicial de la misma fecha: https://huggingface.co/mattwang123/chrononauts-3b-2017-01-init
 - Modelo en etapa agente de la misma fecha: https://huggingface.co/mattwang123/chrononauts-3b-2017-01-agent
 - Modelo de embeddings del corpus: https://huggingface.co/BAAI/bge-base-en-v1.5

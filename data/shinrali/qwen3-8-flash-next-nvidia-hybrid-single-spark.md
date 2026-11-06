@@ -80,10 +80,10 @@ Datos adicionales del perfil medido: 66,88 segundos de media de extremo a extrem
 
 | Modelo / perfil | Parametros | Contexto | Decode 100K (tokens/s) | Regresion privada | Licencia | Disponibilidad |
 |---|---|---:|---:|---:|---|---|
-| Shinrali/Qwen3.8-Flash-Next-NVIDIA-Hybrid-Single-Spark (FP8-side + NVFP4 MTP) | ~118,43 mil millones | 500.000 con YaRN (perfil medido) | 25,92 | 144/162 | nvidia-open-model-license | HuggingFace, 0 descargas |
+| Shinrali/Qwen3.8-Flash-Next-NVIDIA-Hybrid-Single-Spark (FP8-side + NVFP4 MTP) | ~118,43 mil millones | 500.000 con YaRN (perfil medido) | 25,92 | 144/162 | nvidia-open-model-license | Hugging Face, 0 descargas |
 | NVIDIA BF16-side + NVFP4 MTP (perfil de comparación) | ~118,43 mil millones | 500.000 con YaRN (perfil medido) | 21,21 | 147/162 | nvidia-open-model-license | Solo como perfil de medición en la model card |
 | RadixArk FP8-side + NVFP4 MTP (perfil de comparación) | ~118,43 mil millones | 500.000 con YaRN (perfil medido) | 26,86 | 147/162 | No disponible en la información proporcionada | Solo como perfil de medición en la model card |
-| nvidia/Qwen3.8-Flash-Next-NVFP4 (modelo base) | No disponible en la información proporcionada | No disponible | No disponible | No disponible | nvidia-open-model-license | HuggingFace (referenciado como `base_model`) |
+| nvidia/Qwen3.8-Flash-Next-NVFP4 (modelo base) | No disponible en la información proporcionada | No disponible | No disponible | No disponible | nvidia-open-model-license | Hugging Face (referenciado como `base_model`) |
 
 No se dispone de datos de rendimiento publicados para alternativas de otros fabricantes de tamaño o tarea comparable, por lo que la comparación se limita a los perfiles medidos dentro de la misma familia.
 
@@ -98,12 +98,12 @@ No se dispone de datos de rendimiento publicados para alternativas de otros fabr
 - La preparación local exige hard-links, ~13 GiB para reescribir shards laterales y al menos 64 GiB libres en el paso de repack, además de verificación SHA-256 del donante. Los scripts rechazan sobrescribir un destino existente.
 - Licencia: nvidia-open-model-license (`license: other`). Es imprescindible revisar los términos del acuerdo de NVIDIA antes de cualquier uso comercial; el código del repositorio base se mantiene bajo MIT, pero los pesos no.
 - Adopción nula verificable: 0 descargas y 0 likes en el momento de la consulta, y una única revisión de pesos publicada. No hay validación independiente por parte de terceros.
-- La búsqueda web realizada no ha devuelto ninguna fuente relacionada con este modelo; toda la información procede de la model card y de los metadatos de HuggingFace.
+- La búsqueda web realizada no ha devuelto ninguna fuente relacionada con este modelo; toda la información procede de la model card y de los metadatos de Hugging Face.
 - Huella de hardware elevada: ~73,89 GiB de pesos más 19,73 GiB de pool de KV en el perfil de 100K. No cabe en GPU de consumo y no se publican variantes de menor precisión para reducirla.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shinrali/Qwen3.8-Flash-Next-NVIDIA-Hybrid-Single-Spark
+- Modelo en Hugging Face: https://huggingface.co/Shinrali/Qwen3.8-Flash-Next-NVIDIA-Hybrid-Single-Spark
 - Modelo base: https://huggingface.co/nvidia/Qwen3.8-Flash-Next-NVFP4
 - Repositorio de código y documentación del que deriva (blazux/qwen3.8-Flash-DGX, commit bd60fcb1b492ca920f74df7462f05da7b6d98f73): https://github.com/blazux/qwen3.8-Flash-DGX
 - Licencia NVIDIA Open Model License: https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-open-model-license/

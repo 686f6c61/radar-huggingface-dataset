@@ -75,8 +75,8 @@ No se dispone de información sobre modelos comparables en el contexto de datase
 
 ## Enlaces
 
-- Repositorio HuggingFace: [Avra98/Sudoku_superposition](https://huggingface.co/Avra98/Sudoku_superposition)
-- Perfil del autor en HuggingFace: [Avra98](https://huggingface.co/Avra98)
+- Repositorio Hugging Face: [Avra98/Sudoku_superposition](https://huggingface.co/Avra98/Sudoku_superposition)
+- Perfil del autor en Hugging Face: [Avra98](https://huggingface.co/Avra98)
 - Repositorio GitHub relacionado: [reasoning-by-superposition-latent](https://github.com/Avra98/reasoning-by-superposition-latent)
 - Código fuente en GitHub (dataset.py): [dataset.py](https://github.com/Avra98/reasoning-by-superposition-latent/blob/main/dataset.py)
 - Sudoku-Bench (Sakana AI): [https://pub.sakana.ai/sudoku/](https://pub.sakana.ai/sudoku/)

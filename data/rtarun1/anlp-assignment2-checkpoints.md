@@ -74,7 +74,7 @@ No disponible. No se dispone de información sobre modelos comparables de la mis
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rtarun1/anlp-assignment2-checkpoints
+- Hugging Face: https://huggingface.co/rtarun1/anlp-assignment2-checkpoints
 - Weights & Biases (logs de entrenamiento): https://wandb.ai/rtarun1-github/anlp-assignment-2
 - Repositorio de código: no disponible (se menciona un repositorio con `src/` pero no se proporciona la URL).
 - Paper: no disponible.

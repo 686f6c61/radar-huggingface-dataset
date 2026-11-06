@@ -2,7 +2,7 @@
 
 ## Resumen
 
-kriti-telephony-ASR es un modelo de reconocimiento automatico del habla (ASR) publicado en HuggingFace por el usuario ancient-yearner bajo licencia MIT. El modelo se distribuye en formato NeMo, la libreria de NVIDIA para procesamiento de voz, y su nombre sugiere un enfoque especifico en audio telefonico, un dominio en el que la calidad del habla se degrada por codecs de compresion, ancho de banda limitado y ruido ambiental.
+kriti-telephony-ASR es un modelo de reconocimiento automatico del habla (ASR) publicado en Hugging Face por el usuario ancient-yearner bajo licencia MIT. El modelo se distribuye en formato NeMo, la libreria de NVIDIA para procesamiento de voz, y su nombre sugiere un enfoque especifico en audio telefonico, un dominio en el que la calidad del habla se degrada por codecs de compresion, ancho de banda limitado y ruido ambiental.
 
 El repositorio ocupa aproximadamente 0,5 GB, lo que situa el modelo en el rango de los cientos de millones de parametros, aunque el autor no publica el numero exacto ni la arquitectura concreta. La model card es practicamente vacia: solo declara la licencia MIT y no incluye informacion sobre datos de entrenamiento, idiomas, rendimiento o uso previsto. Esta ausencia de documentacion es el factor mas limitante para evaluar el modelo en un contexto de produccion.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| kriti-telephony-ASR | no disponible | no disponible | MIT | HuggingFace (NeMo) | Sin benchmarks ni model card tecnica |
-| Whisper (OpenAI) | 39M-1,55B segun variante | 30 s de audio | MIT | HuggingFace, multiples runtimes | ASR generico multilingue, muy documentado |
-| NVIDIA Parakeet / FastConformer | cientos de millones | variable | CC-BY-4.0 o similar | NGC / HuggingFace | Familia ASR de NVIDIA en NeMo, con benchmarks publicados |
-| Wav2Vec 2.0 (Meta) | 95M-317M | audio variable | MIT / Apache-2.0 | HuggingFace | Base clasica para ASR y ajuste fino |
+| kriti-telephony-ASR | no disponible | no disponible | MIT | Hugging Face (NeMo) | Sin benchmarks ni model card tecnica |
+| Whisper (OpenAI) | 39M-1,55B segun variante | 30 s de audio | MIT | Hugging Face, multiples runtimes | ASR generico multilingue, muy documentado |
+| NVIDIA Parakeet / FastConformer | cientos de millones | variable | CC-BY-4.0 o similar | NGC / Hugging Face | Familia ASR de NVIDIA en NeMo, con benchmarks publicados |
+| Wav2Vec 2.0 (Meta) | 95M-317M | audio variable | MIT / Apache-2.0 | Hugging Face | Base clasica para ASR y ajuste fino |
 
 La comparacion es limitada porque kriti-telephony-ASR carece de datos publicos de rendimiento, idiomas y arquitectura. Frente a Whisper o Parakeet, la principal desventaja es la ausencia de documentacion y validacion; la ventaja potencial seria su especializacion telefonica y una licencia MIT permisiva.
 
@@ -83,6 +83,6 @@ La comparacion es limitada porque kriti-telephony-ASR carece de datos publicos d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ancient-yearner/kriti-telephony-ASR
+- Hugging Face: https://huggingface.co/ancient-yearner/kriti-telephony-ASR
 - Documentacion de NVIDIA NeMo: https://github.com/NVIDIA/NeMo
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

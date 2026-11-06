@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `prajwalfr/thorr` está alojado en HuggingFace, pero la información pública disponible es extremadamente limitada. La model card únicamente indica que la licencia es `llama4`, sin proporcionar detalles sobre arquitectura, tamaño, entrenamiento o capacidades. No se ha publicado ninguna documentación técnica adicional, y los resultados de búsqueda web no ofrecen datos relevantes sobre este modelo. Por tanto, no es posible realizar una descripción sustancial del mismo.
+El modelo `prajwalfr/thorr` está alojado en Hugging Face, pero la información pública disponible es extremadamente limitada. La model card únicamente indica que la licencia es `llama4`, sin proporcionar detalles sobre arquitectura, tamaño, entrenamiento o capacidades. No se ha publicado ninguna documentación técnica adicional, y los resultados de búsqueda web no ofrecen datos relevantes sobre este modelo. Por tanto, no es posible realizar una descripción sustancial del mismo.
 
-Dada la ausencia de información verificable, esta ficha se limita a reflejar los datos disponibles y a señalar explícitamente las carencias. Se recomienda consultar directamente el repositorio de HuggingFace para obtener actualizaciones futuras.
+Dada la ausencia de información verificable, esta ficha se limita a reflejar los datos disponibles y a señalar explícitamente las carencias. Se recomienda consultar directamente el repositorio de Hugging Face para obtener actualizaciones futuras.
 
 ## Especificaciones tecnicas
 
@@ -52,5 +52,5 @@ No disponible. Al no existir información sobre parámetros, contexto o rendimie
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/prajwalfr/thorr
+- Repositorio en Hugging Face: https://huggingface.co/prajwalfr/thorr
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de código o demos) en la búsqueda web.

@@ -6,7 +6,7 @@
 
 Este checkpoint concreto corresponde a la condición "original documents" (documentos originales), semilla 42, tras un proceso de ajuste supervisado (SFT). La arquitectura es un decoder estilo Llama de 24 capas, hidden 1.152, FFN 4.608 con SwiGLU, 9 cabezas de atención y 3 cabezas KV (head dim 128), RMSNorm, RoPE con base 10.000, embeddings no atados, sin biases ni QK-norm, y una longitud de secuencia de 4.096 tokens. El tokenizador es el vocabulario de SmolLM2 (49.152 tokens) más un token `<|pad|>`.
 
-Su relevancia es metodológica más que de producto: permite estudiar cómo cambian las pérdidas de validación sobre texto de asistente, texto de usuario y texto de documento según la condición de preentrenamiento, con un protocolo de verificación que compara los pesos de HuggingFace contra el checkpoint original de Megatron y obtiene una diferencia absoluta de 0,0000 en la pérdida de validación.
+Su relevancia es metodológica más que de producto: permite estudiar cómo cambian las pérdidas de validación sobre texto de asistente, texto de usuario y texto de documento según la condición de preentrenamiento, con un protocolo de verificación que compara los pesos de Hugging Face contra el checkpoint original de Megatron y obtiene una diferencia absoluta de 0,0000 en la pérdida de validación.
 
 ## Especificaciones tecnicas
 
@@ -95,7 +95,7 @@ La comparación directa con estos modelos no es posible en términos de rendimie
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-0.58b-v2-raw-seed42-sft
+- Modelo en Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-0.58b-v2-raw-seed42-sft
 - Colección 1PP: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649
 - Logs de entrenamiento (preentrenamiento): https://wandb.ai/raghav_singhal/1pp-training
 - Logs de SFT: https://wandb.ai/raghav_singhal/1pp-sft

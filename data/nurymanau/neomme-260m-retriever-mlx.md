@@ -94,7 +94,7 @@ La comparación más fiable es contra el modelo base: el runtime MLX no modifica
 
 ## Enlaces
 
-- Repositorio HuggingFace de la implementación MLX: https://huggingface.co/Nurymanau/NeoMME-260M-Retriever-MLX
-- Modelo base en HuggingFace: https://huggingface.co/Hcompany/NeoMME-260M-Retriever
+- Repositorio Hugging Face de la implementación MLX: https://huggingface.co/Nurymanau/NeoMME-260M-Retriever-MLX
+- Modelo base en Hugging Face: https://huggingface.co/Hcompany/NeoMME-260M-Retriever
 - Código fuente del runtime MLX: https://github.com/Obscyra-app/neomme-mlx
 - Revisión de los pesos de origen citada en la model card: `481083153ac22931afbd614e672212bffbcb666e`

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo audio-diffusion-electronic, desarrollado por dogfish-thinker, es un modelo de difusión para la generación incondicional de música electrónica. Forma parte del proyecto educativo Diffusion Models Class de HuggingFace (Unidad 4) y se distribuye bajo licencia MIT. Con 113.668.609 parámetros y un repositorio de 0,5 GB, integra el pipeline AudioDiffusionPipeline de la librería diffusers.
+El modelo audio-diffusion-electronic, desarrollado por dogfish-thinker, es un modelo de difusión para la generación incondicional de música electrónica. Forma parte del proyecto educativo Diffusion Models Class de Hugging Face (Unidad 4) y se distribuye bajo licencia MIT. Con 113.668.609 parámetros y un repositorio de 0,5 GB, integra el pipeline AudioDiffusionPipeline de la librería diffusers.
 
 El modelo resuelve la generación de audio musical sintético sin condicionamiento textual mediante un proceso de difusión que opera sobre espectrogramas mel: parte de ruido aleatorio y lo denoisa progresivamente hasta obtener un espectrograma coherente que posteriormente se convierte en señal de audio. Su relevancia radica en demostrar la aplicabilidad de los modelos de difusión, popularizados en el dominio de la imagen, al dominio del audio, aunque su naturaleza de proyecto educativo y la ausencia de métricas publicadas limitan su uso en entornos de producción.
 
@@ -23,13 +23,13 @@ El modelo resuelve la generación de audio musical sintético sin condicionamien
 
 El modelo es un modelo de difusión para generación incondicional de audio, integrado con el pipeline AudioDiffusionPipeline de diffusers. Este pipeline opera convirtiendo audio en espectrogramas mel, aplicando un proceso de denoising difusivo sobre dichos espectrogramas y reconstruyendo la señal de audio mediante la transformada inversa. Los detalles específicos de la arquitectura interna (tipo de red, número de capas, función de atención) no están disponibles en la model card.
 
-El entrenamiento se realizó como parte de la Diffusion Models Class de HuggingFace (Unidad 4), lo que sugiere un enfoque pedagógico con un dataset probablemente limitado. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, ni la aplicación de técnicas como RLHF o DPO (que por otro lado no son habituales en modelos de difusión de audio). Tampoco se documentan innovaciones técnicas destacables más allá del uso estándar del pipeline de difusión de audio.
+El entrenamiento se realizó como parte de la Diffusion Models Class de Hugging Face (Unidad 4), lo que sugiere un enfoque pedagógico con un dataset probablemente limitado. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, ni la aplicación de técnicas como RLHF o DPO (que por otro lado no son habituales en modelos de difusión de audio). Tampoco se documentan innovaciones técnicas destacables más allá del uso estándar del pipeline de difusión de audio.
 
 ## Capacidades
 
 - Generación incondicional de audio musical del género electrónico: cada ejecución produce una muestra distinta sin necesidad de prompt ni condicionamiento.
 - Generación de espectrogramas mel como salida intermedia: el pipeline devuelve tanto la imagen del espectrograma como el audio reconstruido.
-- Integración nativa con la librería diffusers de HuggingFace mediante DiffusionPipeline.from_pretrained.
+- Integración nativa con la librería diffusers de Hugging Face mediante DiffusionPipeline.from_pretrained.
 - Conversión de espectrogramas a audio con la tasa de muestreo definida por el objeto mel del pipeline.
 
 No soporta:
@@ -76,13 +76,13 @@ Nota: MusicGen y AudioLDM son modelos de proposito general con condicionamiento 
 - Es un proyecto educativo de la Diffusion Models Class, no un modelo de produccion. La calidad del audio generado sera limitada en comparacion con modelos comerciales o de mayor tamano.
 - No hay informacion sobre el dataset de entrenamiento, por lo que se desconocen posibles sesgos en el genero musical o en las caracteristicas sonoras aprendidas.
 - No se han publicado evaluaciones de calidad ni benchmarks, por lo que el rendimiento real es incierto.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que sugiere que no ha sido validado por la comunidad.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que sugiere que no ha sido validado por la comunidad.
 - La duracion de las muestras generadas esta limitada por el pipeline (tipicamente unos pocos segundos), lo que restringe su uso en aplicaciones que requieran clips largos.
 - La licencia MIT permite uso comercial, pero la calidad y fiabilidad del modelo no estan garantizadas para entornos de produccion.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dogfish-thinker/audio-diffusion-electronic
+- Modelo en Hugging Face: https://huggingface.co/dogfish-thinker/audio-diffusion-electronic
 - Repositorio teticio/audio-diffusion (proyecto de referencia): https://github.com/teticio/audio-diffusion
 - Documentacion de AudioDiffusionPipeline (v0.16.0): https://huggingface.co/docs/diffusers/v0.16.0/en/api/pipelines/audio_diffusion
 - Documentacion de AudioDiffusionPipeline (main): https://huggingface.co/docs/diffusers/main/en/api/pipelines/audio_diffusion

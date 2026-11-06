@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Everest103/affine-king21-albedo-layout es un modelo de lenguaje de tipo transformer con mezcla de expertos (MoE) alojado en HuggingFace por el usuario everest103, con un total de 35.951.822.704 parametros. El tag `qwen3_5_moe` asociado al repositorio indica que deriva de la arquitectura MoE de la familia Qwen3, aunque no se especifica la variante exacta ni el numero de parametros activos por token. El repositorio pesa 71,9 GB, lo que es coherente con pesos almacenados en bf16 o fp16 (2 bytes por parametro para 35,95 mil millones de parametros).
+Everest103/affine-king21-albedo-layout es un modelo de lenguaje de tipo transformer con mezcla de expertos (MoE) alojado en Hugging Face por el usuario everest103, con un total de 35.951.822.704 parametros. El tag `qwen3_5_moe` asociado al repositorio indica que deriva de la arquitectura MoE de la familia Qwen3, aunque no se especifica la variante exacta ni el numero de parametros activos por token. El repositorio pesa 71,9 GB, lo que es coherente con pesos almacenados en bf16 o fp16 (2 bytes por parametro para 35,95 mil millones de parametros).
 
 El nombre del modelo (`king21`, `albedo`) y los resultados de busqueda lo vinculan al subnet Albedo de Bittensor, descrito en su repositorio como un subnet de "trajectory-distillation king-of-the-hill": los mineros suben modelos candidatos y el rey vigente los reta en rollouts de SWE-ZERO evaluados por un ensemble de jueces LLM, publicando las trazas completas para destilacion. Esto sugiere que el modelo es un checkpoint resultante de ese proceso competitivo, probablemente orientado a tareas de ingenieria de software agentica. Esta vinculacion es una inferencia a partir del contexto disponible, no un dato confirmado por el propio repositorio.
 
@@ -82,6 +82,6 @@ Las cifras de Qwen3-30B-A3B y Qwen3-32B corresponden a datos publicos de sus fic
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/everest103/affine-king21-albedo-layout
+- Modelo en Hugging Face: https://huggingface.co/everest103/affine-king21-albedo-layout
 - Perfil del autor: https://huggingface.co/everest103
 - Repositorio GitHub del subnet Albedo (Bittensor): https://github.com/unarbos/albedo/tree/main

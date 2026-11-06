@@ -55,12 +55,12 @@ Al ser un adaptador LoRA, los requisitos de hardware dependen del modelo base `w
 - VRAM estimada para inferencia: Whisper-small en precision fp16 requiere aproximadamente 1.5-2 GB de VRAM. El adaptador LoRA anade un coste minimo adicional (del orden de decenas de MB). Sin embargo, no se ha verificado el comportamiento de este adaptador concreto.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM puede ejecutar Whisper-small, por ejemplo NVIDIA GTX 1650, RTX 3060, RTX 4090, o GPUs de datacenter como A10, A100 o H100.
 - Compatibilidad con hardware de consumo: si, es viable en GPUs de consumo medio-bajo.
-- Opciones de despliegue: al usar `peft`, se puede integrar con la libreria `transformers` de HuggingFace. Para inferencia en produccion, se podria combinar con `vLLM` (aunque Whisper no es un LLM puro, vLLM soporta modelos de audio), `TGI` (Text Generation Inference) o `llama.cpp` (si se convierte a GGUF, aunque no es el formato habitual para Whisper). No se ha probado ninguna de estas opciones con este adaptador.
+- Opciones de despliegue: al usar `peft`, se puede integrar con la libreria `transformers` de Hugging Face. Para inferencia en produccion, se podria combinar con `vLLM` (aunque Whisper no es un LLM puro, vLLM soporta modelos de audio), `TGI` (Text Generation Inference) o `llama.cpp` (si se convierte a GGUF, aunque no es el formato habitual para Whisper). No se ha probado ninguna de estas opciones con este adaptador.
 - Latencia y throughput: no disponibles. Dependen del hardware y de la optimizacion del modelo base.
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion sobre adaptadores LoRA comparables para Whisper-small con fines de codeswitching. Existen otros adaptadores LoRA para Whisper en HuggingFace, como `ephm3ral/whisper-small-lora-transcribe-WaxalNLP-v0`, pero no se han encontrado datos publicados que permitan una comparacion objetiva. Por tanto, la comparativa no esta disponible.
+No se dispone de informacion sobre adaptadores LoRA comparables para Whisper-small con fines de codeswitching. Existen otros adaptadores LoRA para Whisper en Hugging Face, como `ephm3ral/whisper-small-lora-transcribe-WaxalNLP-v0`, pero no se han encontrado datos publicados que permitan una comparacion objetiva. Por tanto, la comparativa no esta disponible.
 
 ## Limitaciones y advertencias
 
@@ -74,7 +74,7 @@ No se dispone de informacion sobre adaptadores LoRA comparables para Whisper-sma
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dehanns/whisper-small-lora-codeswitch
+- Repositorio en Hugging Face: https://huggingface.co/dehanns/whisper-small-lora-codeswitch
 - Modelo base: https://huggingface.co/openai/whisper-small
 - Repositorio oficial de Whisper: https://github.com/openai/whisper
 - Model card de Whisper: https://github.com/openai/whisper/blob/main/model-card.md

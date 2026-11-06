@@ -4,7 +4,7 @@
 
 `brosnanyuen/Qwen3.8-27B-SFT-Defender-v3` es un adaptador LoRA de ajuste supervisado (SFT) publicado por el usuario `brosnanyuen` sobre el modelo base `unsloth/Qwen3.8-27B-unsloth-bnb-4bit`, una variante cuantizada a 4 bits (bitsandbytes) del modelo citado como Qwen3.8-27B. Se distribuye en formato PEFT (`library_name: peft`), con pesos `safetensors` y un tamaño de repositorio de 1,3 GB, coherente con un adaptador de bajo rango y no con un modelo completo. El repositorio declara los tags `lora`, `sft`, `transformers`, `trl`, `unsloth` y `conversational`, además de la etiqueta `text-generation`.
 
-Lo que el modelo resuelve no está documentado: la model card es la plantilla genérica de HuggingFace con todos los apartados marcados como «[More Information Needed]». No hay descripción de la tarea de ajuste, del conjunto de datos, de los hiperparámetros de LoRA (rango, alpha, módulos objetivo) ni de la evaluación. El sufijo «Defender» del identificador sugiere una orientación hacia seguridad o defensa, pero se trata de una inferencia a partir del nombre, no de un dato confirmado por el autor.
+Lo que el modelo resuelve no está documentado: la model card es la plantilla genérica de Hugging Face con todos los apartados marcados como «[More Information Needed]». No hay descripción de la tarea de ajuste, del conjunto de datos, de los hiperparámetros de LoRA (rango, alpha, módulos objetivo) ni de la evaluación. El sufijo «Defender» del identificador sugiere una orientación hacia seguridad o defensa, pero se trata de una inferencia a partir del nombre, no de un dato confirmado por el autor.
 
 Su relevancia actual es muy limitada como artefacto publicable: acumula 0 descargas y 0 «likes», no declara licencia ni idiomas, y no cita ningún benchmark. Es, por tanto, un experimento de ajuste reproducible únicamente si se acepta a ciegas el modelo base y se reconstruye la configuración de entrenamiento por ensayo y error; resulta útil como referencia de formato PEFT + Unsloth, no como componente listo para producción.
 
@@ -96,7 +96,7 @@ No es posible comparar MMLU, HumanEval, GSM8K ni ninguna otra métrica, porque n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/brosnanyuen/Qwen3.8-27B-SFT-Defender-v3
+- Modelo en Hugging Face: https://huggingface.co/brosnanyuen/Qwen3.8-27B-SFT-Defender-v3
 - Modelo base declarado: https://huggingface.co/unsloth/Qwen3.8-27B-unsloth-bnb-4bit
 - Referencia citada en la model card (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Página de PEFT: https://github.com/huggingface/peft

@@ -67,7 +67,7 @@ No se dispone de información sobre modelos comparables específicos. Existen ot
 
 ## Enlaces
 
-- [HuggingFace - JellyFush/qwen-medical-dpo-2-2](https://huggingface.co/JellyFush/qwen-medical-dpo-2-2)
+- [Hugging Face - JellyFush/qwen-medical-dpo-2-2](https://huggingface.co/JellyFush/qwen-medical-dpo-2-2)
 - [Paper DPO (arXiv:2305.18290)](https://huggingface.co/papers/2305.18290)
 - [Repositorio TRL](https://github.com/huggingface/trl)
 - [Modelo base Qwen/Qwen3.5-4B](https://huggingface.co/Qwen/Qwen3.5-4B)

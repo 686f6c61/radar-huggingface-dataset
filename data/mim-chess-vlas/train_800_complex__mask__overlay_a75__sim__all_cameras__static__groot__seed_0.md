@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (GR00T N1.7 fine-tuned) | 3.144 M | no disponible | Picking de objetos complejos en simulación (Panda) | Apache 2.0 | HuggingFace, 19 descargas |
+| Este checkpoint (GR00T N1.7 fine-tuned) | 3.144 M | no disponible | Picking de objetos complejos en simulación (Panda) | Apache 2.0 | Hugging Face, 19 descargas |
 | GR00T N1.7 base (NVIDIA) | no disponible | no disponible | Modelo fundacional cross-embodiment para humanoides | no disponible en la información | GitHub NVIDIA/Isaac-GR00T |
-| Políticas LeRobot estándar (ACT, Diffusion Policy) | del orden de decenas de millones | no disponible | Manipulación por imitación | Apache 2.0 | HuggingFace / LeRobot |
-| OpenVLA | ~7.000 M | no disponible | Control visuomotor generalista | no disponible en la información | HuggingFace |
+| Políticas LeRobot estándar (ACT, Diffusion Policy) | del orden de decenas de millones | no disponible | Manipulación por imitación | Apache 2.0 | Hugging Face / LeRobot |
+| OpenVLA | ~7.000 M | no disponible | Control visuomotor generalista | no disponible en la información | Hugging Face |
 
 La comparación con OpenVLA y las políticas LeRobot estándar es orientativa: este checkpoint es un ajuste fino especializado, no un modelo generalista, por lo que las cifras de parámetros no son directamente comparables en términos de capacidad.
 
@@ -82,7 +82,7 @@ La comparación con OpenVLA y las políticas LeRobot estándar es orientativa: e
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/mim-chess-vlas/train_800_complex__mask__overlay_a75__sim__all_cameras__static__groot__seed_0)
+- [Hugging Face del modelo](https://huggingface.co/mim-chess-vlas/train_800_complex__mask__overlay_a75__sim__all_cameras__static__groot__seed_0)
 - [Dataset de entrenamiento](https://huggingface.co/datasets/mim-chess-vlas/train_800_complex__mask__overlay_a75__sim__all_cameras__static)
 - [GR00T N1.7 en GitHub (NVIDIA/Isaac-GR00T)](https://github.com/NVIDIA/Isaac-GR00T)
 - [Guía de LeRobot para GR00T](https://huggingface.co/docs/lerobot/main/en/groot)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hubert-ml/ppo-LunarLander-v2` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno `LunarLander-v3`, implementado con la libreria stable-baselines3. El modelo lo publica el usuario `hubert-ml` en HuggingFace y su proposito es resolver la tarea de control del modulo de aterrizaje: aplicar empuje de forma secuencial para posar la nave en la plataforma minimizando el consumo de combustible y evitando el choque.
+`hubert-ml/ppo-LunarLander-v2` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno `LunarLander-v3`, implementado con la libreria stable-baselines3. El modelo lo publica el usuario `hubert-ml` en Hugging Face y su proposito es resolver la tarea de control del modulo de aterrizaje: aplicar empuje de forma secuencial para posar la nave en la plataforma minimizando el consumo de combustible y evitando el choque.
 
 No se trata de un modelo de lenguaje ni de un sistema generativo de proposito general. Es un artefacto de politica entrenada especificamente para una tarea de control con espacio de observacion continuo y acciones discretas, empaquetado en el formato de la libreria stable-baselines3 y distribuido a traves del Hub. Su relevancia es practica y acotada: sirve como referencia reproducible de un agente PPO funcional, como linea base para comparar algoritmos de RL (A2C, DQN, SAC) y como material didactico para quienes trabajan con entornos de Gymnasium.
 
@@ -74,7 +74,7 @@ No se dispone de datos de benchmarks de modelos alternativos en la informacion p
 
 | Modelo o categoria | Tipo | Entorno objetivo | Metrica declarada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `hubert-ml/ppo-LunarLander-v2` | PPO (on-policy, actor-critico) | LunarLander-v3 | mean_reward 244.64 +/- 41.30 | no disponible | HuggingFace Hub |
+| `hubert-ml/ppo-LunarLander-v2` | PPO (on-policy, actor-critico) | LunarLander-v3 | mean_reward 244.64 +/- 41.30 | no disponible | Hugging Face Hub |
 | A2C sobre LunarLander | Actor-critico sincrono | LunarLander-v3 | no disponible | no disponible | implementaciones habituales en stable-baselines3 |
 | DQN sobre LunarLander | Value-based, off-policy | LunarLander-v3 | no disponible | no disponible | implementaciones habituales en stable-baselines3 |
 | SAC o TD3 | Actor-critico off-policy para espacios continuos | no aplica directamente al espacio discreto de LunarLander-v3 | no disponible | no disponible | implementaciones habituales en stable-baselines3 |
@@ -95,7 +95,7 @@ No se identifican en la informacion proporcionada otros agentes PPO publicados p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hubert-ml/ppo-LunarLander-v2
+- Modelo en Hugging Face: https://huggingface.co/hubert-ml/ppo-LunarLander-v2
 - Libreria stable-baselines3: https://github.com/DLR-RM/stable-baselines3
 - Utilidad de carga desde el Hub (`huggingface_sb3`): referenciada en la model card, sin enlace explicito
 - Documentacion del entorno LunarLander (Gymnasium): no incluida en la informacion proporcionada

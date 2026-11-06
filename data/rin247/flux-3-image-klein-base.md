@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Rin247/flux-3-image-klein-base (este repo) | no disponible | no disponible | sin benchmarks publicados | no disponible | HuggingFace, 0 descargas |
+| Rin247/flux-3-image-klein-base (este repo) | no disponible | no disponible | sin benchmarks publicados | no disponible | Hugging Face, 0 descargas |
 | black-forest-labs/flux-3-image-klein-base (original) | no disponible | no disponible | no disponible en la información | no disponible | referenciado como origen |
 | Otras variantes cuantizadas de FLUX | no disponible | no disponible | no disponible | no disponible | no verificadas en esta búsqueda |
 
@@ -80,7 +80,7 @@ No se dispone de datos suficientes para establecer una comparativa rigurosa con 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Rin247/flux-3-image-klein-base
+- Repositorio Hugging Face: https://huggingface.co/Rin247/flux-3-image-klein-base
 - Modelo original referenciado: `black-forest-labs/flux-3-image-klein-base` (no se proporciona URL directa en la información disponible)
 - Documentación de `diffusers`: no disponible en la información proporcionada
 - Paper, blog o demo del modelo original: no disponibles en la información proporcionada

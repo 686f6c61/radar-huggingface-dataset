@@ -2,9 +2,9 @@
 
 ## Resumen
 
-keys-DeepSeekV4-Flash-GA-0731-Dspark-Abliterated-32-32 es un modelo de lenguaje de gran tamano (LLM) desarrollado por el usuario de HuggingFace drowzeys, basado en el modelo DeepSeek-V4-Flash-0731 de DeepSeek AI. Se trata de una variante "abliterated" (desprovista de mecanismos de rechazo de seguridad) que elimina las respuestas de negativa ante solicitudes potencialmente peligrosas o sensibles, orientada a tareas de red-teaming, investigacion y asistentes locales sin filtros. El modelo emplea una arquitectura de mezcla de expertos (MoE) con aproximadamente 304 000 millones de parametros totales, y esta disponible en cuantizacion FP8 y NVFP4, lo que reduce significativamente los requisitos de memoria frente a una version en precision completa.
+keys-DeepSeekV4-Flash-GA-0731-Dspark-Abliterated-32-32 es un modelo de lenguaje de gran tamano (LLM) desarrollado por el usuario de Hugging Face drowzeys, basado en el modelo DeepSeek-V4-Flash-0731 de DeepSeek AI. Se trata de una variante "abliterated" (desprovista de mecanismos de rechazo de seguridad) que elimina las respuestas de negativa ante solicitudes potencialmente peligrosas o sensibles, orientada a tareas de red-teaming, investigacion y asistentes locales sin filtros. El modelo emplea una arquitectura de mezcla de expertos (MoE) con aproximadamente 304 000 millones de parametros totales, y esta disponible en cuantizacion FP8 y NVFP4, lo que reduce significativamente los requisitos de memoria frente a una version en precision completa.
 
-La relevancia de este modelo radica en su doble vertiente: por un lado, hereda las capacidades tecnicas del modelo base DeepSeek-V4-Flash-0731, que incluyen un contexto amplio (posiblemente hasta 1 millon de tokens segun el repositorio asociado) y soporte multilingue (ingles y chino); por otro, su naturaleza "uncensored" lo convierte en una herramienta util para evaluar comportamientos de modelos sin restricciones, aunque con riesgos importantes que se detallan en las limitaciones. El acceso al repositorio es restringido (gated) y requiere aceptar condiciones en HuggingFace, lo que anade una capa de control sobre su uso.
+La relevancia de este modelo radica en su doble vertiente: por un lado, hereda las capacidades tecnicas del modelo base DeepSeek-V4-Flash-0731, que incluyen un contexto amplio (posiblemente hasta 1 millon de tokens segun el repositorio asociado) y soporte multilingue (ingles y chino); por otro, su naturaleza "uncensored" lo convierte en una herramienta util para evaluar comportamientos de modelos sin restricciones, aunque con riesgos importantes que se detallan en las limitaciones. El acceso al repositorio es restringido (gated) y requiere aceptar condiciones en Hugging Face, lo que anade una capa de control sobre su uso.
 
 ## Especificaciones tecnicas
 
@@ -45,7 +45,7 @@ Los detalles especificos del entrenamiento (numero de tokens, composicion del da
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No se proporcionan datos de MMLU, HumanEval, GSM8K u otras metricas estandar para este modelo. Se recomienda consultar el repositorio de HuggingFace o el repositorio de GitHub asociado para futuras actualizaciones.
+No se han publicado resultados de benchmarks en la informacion disponible. No se proporcionan datos de MMLU, HumanEval, GSM8K u otras metricas estandar para este modelo. Se recomienda consultar el repositorio de Hugging Face o el repositorio de GitHub asociado para futuras actualizaciones.
 
 ## Requisitos de hardware
 
@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| keys-DeepSeekV4-Flash-GA-0731-Dspark-Abliterated-32-32 | 304 000 millones (MoE) | no disponible (posible 1M) | deepseek (personalizada) | Gated en HuggingFace |
-| DeepSeek-V4-Flash-0731 (modelo base) | 304 000 millones (MoE) | no disponible | deepseek (personalizada) | Gated en HuggingFace |
-| Otros modelos "abliterated" de la comunidad | variable | variable | variable | Variable, generalmente en HuggingFace |
+| keys-DeepSeekV4-Flash-GA-0731-Dspark-Abliterated-32-32 | 304 000 millones (MoE) | no disponible (posible 1M) | deepseek (personalizada) | Gated en Hugging Face |
+| DeepSeek-V4-Flash-0731 (modelo base) | 304 000 millones (MoE) | no disponible | deepseek (personalizada) | Gated en Hugging Face |
+| Otros modelos "abliterated" de la comunidad | variable | variable | variable | Variable, generalmente en Hugging Face |
 
 La comparativa se limita al modelo base y a otras variantes "abliterated" de la comunidad, ya que no se dispone de datos de modelos comparables de otros fabricantes en la informacion proporcionada. El modelo base DeepSeek-V4-Flash-0731 es la referencia principal, y esta variante se diferencia unicamente por la eliminacion de los rechazos de seguridad.
 
@@ -69,7 +69,7 @@ La comparativa se limita al modelo base y a otras variantes "abliterated" de la 
 
 - El modelo ha sido desprovisto de mecanismos de seguridad, por lo que puede generar contenidos ofensivos, peligrosos o ilegales. Su uso debe limitarse a entornos de investigacion controlados y con supervisio humana.
 - Riesgo elevado de alucinaciones: al no tener filtros, el modelo puede inventar informacion con mayor confianza, especialmente en temas delicados.
-- La licencia "deepseek" es personalizada y puede imponer restricciones al uso comercial o a la redistribucion. Es necesario revisar los terminos exactos en el repositorio de HuggingFace.
+- La licencia "deepseek" es personalizada y puede imponer restricciones al uso comercial o a la redistribucion. Es necesario revisar los terminos exactos en el repositorio de Hugging Face.
 - El acceso al modelo es restringido (gated) y requiere aceptar condiciones, lo que limita su disponibilidad publica.
 - No se proporcionan datos de rendimiento ni benchmarks, por lo que no es posible evaluar su calidad objetiva frente a otros modelos.
 - El soporte de idiomas se limita a ingles y chino; no se garantiza un rendimiento adecuado en otros idiomas.
@@ -77,7 +77,7 @@ La comparativa se limita al modelo base y a otras variantes "abliterated" de la 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/drowzeys/keys-DeepSeekV4-Flash-GA-0731-Dspark-Abliterated-32-32
+- Repositorio de Hugging Face: https://huggingface.co/drowzeys/keys-DeepSeekV4-Flash-GA-0731-Dspark-Abliterated-32-32
 - Repositorio de GitHub (asociado): https://github.com/drowzeys/DeepSeek-V4-Flash-DSpark-Abliterated-Uncensored-1M-57toks
 - Pagina de despliegue en FriendliAI: https://friendli.ai/models/drowzeys/keys-DeepSeekV4-Flash-GA-0731-Dspark-Abliterated-32-32
-- Modelo base en HuggingFace: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
+- Modelo base en Hugging Face: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731

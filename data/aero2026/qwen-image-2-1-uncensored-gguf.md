@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen-Image-2.1-Uncensored-GGUF es un repositorio de cuantizaciones del modelo de difusion Qwen/Qwen-Image-2.1, publicado por el usuario Aero2026 en HuggingFace. No se trata de un modelo entrenado desde cero ni de un ajuste fino: es una recopilacion de pesos convertidos a distintos formatos (GGUF, safetensors, MLX) para permitir la inferencia local del modelo base original mediante ComfyUI. El nombre "Uncensored" es una etiqueta comercial y, segun las fuentes consultadas, los pesos incluidos son los pesos originales sin modificar, no una version con los filtros de contenido eliminados.
+Qwen-Image-2.1-Uncensored-GGUF es un repositorio de cuantizaciones del modelo de difusion Qwen/Qwen-Image-2.1, publicado por el usuario Aero2026 en Hugging Face. No se trata de un modelo entrenado desde cero ni de un ajuste fino: es una recopilacion de pesos convertidos a distintos formatos (GGUF, safetensors, MLX) para permitir la inferencia local del modelo base original mediante ComfyUI. El nombre "Uncensored" es una etiqueta comercial y, segun las fuentes consultadas, los pesos incluidos son los pesos originales sin modificar, no una version con los filtros de contenido eliminados.
 
 El modelo subyacente, Qwen-Image-2.1, es un modelo unificado de generacion texto-a-imagen y edicion de imagenes desarrollado por el equipo Qwen (QwenLM). Su componente de generacion visual es un Diffusion Transformer (DiT) denso de aproximadamente 7.100 millones de parametros organizado en 32 capas Single-Stream, que se apoya en un codificador de texto Qwen3-VL de 8B y un VAE propio. Se distribuye bajo la licencia qwen-research, lo que condiciona su uso comercial.
 
@@ -92,8 +92,8 @@ No se dispone de datos de rendimiento verificables en la informacion proporciona
 
 | Modelo | Parametros | Tipo | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---:|---|---|
-| Qwen-Image-2.1 (este repo, cuantizado) | ~7,1 B (DiT) | Difusion + texto-imagen y edicion | Codificador Qwen3-VL 8B (no disponible la ventana exacta) | qwen-research | HuggingFace, GGUF/safetensors/MLX |
-| Qwen-Image (version anterior de la familia) | no disponible | Difusion texto-imagen | no disponible | no disponible | HuggingFace |
+| Qwen-Image-2.1 (este repo, cuantizado) | ~7,1 B (DiT) | Difusion + texto-imagen y edicion | Codificador Qwen3-VL 8B (no disponible la ventana exacta) | qwen-research | Hugging Face, GGUF/safetensors/MLX |
+| Qwen-Image (version anterior de la familia) | no disponible | Difusion texto-imagen | no disponible | no disponible | Hugging Face |
 | FLUX.1 [dev] | no disponible en la informacion consultada | Difusion texto-imagen | no disponible | no disponible | no disponible |
 | Stable Diffusion XL | no disponible en la informacion consultada | Difusion texto-imagen | no disponible | no disponible | no disponible |
 
@@ -112,7 +112,7 @@ No se dispone de datos de rendimiento verificables en la informacion proporciona
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Aero2026/Qwen-Image-2.1-Uncensored-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Aero2026/Qwen-Image-2.1-Uncensored-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Repositorio GitHub de Qwen-Image-2.1: https://github.com/QwenLM/Qwen-Image-2.1
 - ComfyUI: https://github.com/comfyanonymous/ComfyUI

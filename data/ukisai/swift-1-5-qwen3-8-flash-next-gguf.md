@@ -80,8 +80,8 @@ No se han publicado resultados numericos de benchmarks estandar (MMLU, HumanEval
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Swift 1.5 Qwen3.8-Flash-Next (este modelo, GGUF) | 176,9 mil millones (totales) | no disponible | 63,4 % menos tokens de pensamiento, 1,8x mas rapido, perdida <1 % frente al base | swift-open-license-1.0, gated | GGUF en HuggingFace (2.658 descargas) |
-| Qwen3.8-Flash-Next (base, BF16) | no disponible | no disponible | Referencia de comparacion en la evaluacion del autor | no disponible en la informacion proporcionada | Checkpoint BF16 en HuggingFace |
+| Swift 1.5 Qwen3.8-Flash-Next (este modelo, GGUF) | 176,9 mil millones (totales) | no disponible | 63,4 % menos tokens de pensamiento, 1,8x mas rapido, perdida <1 % frente al base | swift-open-license-1.0, gated | GGUF en Hugging Face (2.658 descargas) |
+| Qwen3.8-Flash-Next (base, BF16) | no disponible | no disponible | Referencia de comparacion en la evaluacion del autor | no disponible en la informacion proporcionada | Checkpoint BF16 en Hugging Face |
 | Alternativas de terceros | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion suficiente sobre otros modelos comparables de la misma categoria en los datos proporcionados.

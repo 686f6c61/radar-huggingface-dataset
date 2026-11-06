@@ -98,7 +98,7 @@ La comparación cuantitativa con alternativas del mismo benchmark no puede compl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matthieulel/swinv2-large-patch4-window12to16-192to256-22kto1k-ft-galaxy10-decals-full-v2
+- Modelo en Hugging Face: https://huggingface.co/matthieulel/swinv2-large-patch4-window12to16-192to256-22kto1k-ft-galaxy10-decals-full-v2
 - Modelo base: https://huggingface.co/microsoft/swinv2-large-patch4-window12to16-192to256-22kto1k-ft
 - Dataset Galaxy10 DECaLS: https://huggingface.co/datasets/matthieulel/galaxy10_decals
 - Dataset de ejecuciones del benchmark: https://huggingface.co/datasets/matthieulel/vision-foundation-models-benchmark-runs

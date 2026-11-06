@@ -92,7 +92,7 @@ Los parametros y la licencia de los modelos de OpenAI corresponden a sus model c
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/nunu-willump/whisper-large-v3-turbo-es-ct2
+- Repositorio Hugging Face del modelo: https://huggingface.co/nunu-willump/whisper-large-v3-turbo-es-ct2
 - Modelo base (ajuste fino en espanol): https://huggingface.co/adriszmar/whisper-large-v3-turbo-es
 - Modelo original de OpenAI: https://huggingface.co/openai/whisper-large-v3-turbo
 - faster-whisper (libreria de inferencia recomendada): https://github.com/SYSTRAN/faster-whisper

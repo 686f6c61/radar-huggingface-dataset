@@ -82,7 +82,7 @@ No se dispone de más detalles sobre el modelo de referencia ni sobre otros orga
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-gemma-to-olmo-cake-idpo
+- Repositorio Hugging Face: https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-gemma-to-olmo-cake-idpo
 - Modelo base: https://huggingface.co/allenai/OLMo-2-0425-1B-DPO
 - Dataset de quirk: `model-organisms-for-real/kd-dataset-gemma-cake-non-synth` (no se proporciona URL directa)
 - Modelo de referencia: `model-organisms-for-real/gemma-3-1b-cake-bake-integrated-dpo` (no se proporciona URL directa)

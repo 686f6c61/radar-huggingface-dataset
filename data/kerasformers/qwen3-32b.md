@@ -60,10 +60,10 @@ No se dispone de datos comparativos en la información proporcionada. Al ser una
 
 ## Enlaces
 
-- [HuggingFace: kerasformers/qwen3-32b](https://huggingface.co/kerasformers/qwen3-32b)
+- [Hugging Face: kerasformers/qwen3-32b](https://huggingface.co/kerasformers/qwen3-32b)
 - [Repositorio GitHub de KerasFormers](https://github.com/IMvision12/KerasFormers)
 - [Documentación de Qwen3 en KerasFormers](https://imvision12.github.io/KerasFormers/qwen3/)
-- [Colección de modelos Qwen3 en HuggingFace](https://huggingface.co/collections/kerasformers/qwen3-6a7d3fcc4e56b32e86f5b2c4)
+- [Colección de modelos Qwen3 en Hugging Face](https://huggingface.co/collections/kerasformers/qwen3-6a7d3fcc4e56b32e86f5b2c4)
 - [Paper: Qwen3 Technical Report (arXiv:2505.09388)](https://arxiv.org/abs/2505.09388)
 - [Paper: YaRN (arXiv:2309.00071)](https://arxiv.org/abs/2309.00071)
 - [Model card del modelo base Qwen/Qwen3-32B](https://huggingface.co/Qwen/Qwen3-32B)

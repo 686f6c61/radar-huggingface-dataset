@@ -37,7 +37,7 @@ La arquitectura se describe únicamente como un modelo transformer fine-tuneado 
 - Automatización de respuestas iniciales: aunque el modelo solo clasifica, puede integrarse en un pipeline que, ante un sentimiento negativo, dispare una respuesta automática de escalado o una plantilla de disculpa antes de la intervención humana.
 
 ## Benchmarks y rendimiento
-No se han publicado resultados de benchmarks en la información disponible. No existen datos sobre precisión, F1, exactitud ni comparativas con otros modelos de clasificación de sentimiento. Dado que el modelo registra 0 descargas y 0 likes en HuggingFace, no hay evidencia empírica de su rendimiento en tareas reales.
+No se han publicado resultados de benchmarks en la información disponible. No existen datos sobre precisión, F1, exactitud ni comparativas con otros modelos de clasificación de sentimiento. Dado que el modelo registra 0 descargas y 0 likes en Hugging Face, no hay evidencia empírica de su rendimiento en tareas reales.
 
 ## Requisitos de hardware
 - No disponible para este modelo específico, ya que se desconoce el número de parámetros.
@@ -63,4 +63,4 @@ A diferencia de las alternativas consolidadas, este modelo carece de documentaci
 - La fecha de creación (2026-08-15) es posterior a la fecha actual, lo que sugiere que la metadata podría ser incorrecta o que el modelo es extremadamente reciente y aún no ha sido probado.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/Roy229/huggingface_terminal_notion_official_3556_66a14697_model_customer-sentiment
+- Hugging Face: https://huggingface.co/Roy229/huggingface_terminal_notion_official_3556_66a14697_model_customer-sentiment

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiniCPM5-2B-RK3588-rkllm-w8a8 es una conversión del modelo de lenguaje openbmb/MiniCPM5-2B al formato propietario RKLLM en cuantización w8a8, orientada específicamente a la NPU del SoC Rockchip RK3588 y RK3588S. Lo publica el usuario oliver0804 en HuggingFace y no introduce cambios arquitectónicos sobre el modelo base: se trata de un artefacto de despliegue empaquetado (pesos más tokenizer en un único fichero `.rkllm`) para ejecutar inferencia en placas de un solo board con aceleración NPU.
+MiniCPM5-2B-RK3588-rkllm-w8a8 es una conversión del modelo de lenguaje openbmb/MiniCPM5-2B al formato propietario RKLLM en cuantización w8a8, orientada específicamente a la NPU del SoC Rockchip RK3588 y RK3588S. Lo publica el usuario oliver0804 en Hugging Face y no introduce cambios arquitectónicos sobre el modelo base: se trata de un artefacto de despliegue empaquetado (pesos más tokenizer en un único fichero `.rkllm`) para ejecutar inferencia en placas de un solo board con aceleración NPU.
 
 El interés práctico está en que permite correr un transformer de 2B parámetros en hardware de borde de bajo consumo (por ejemplo, una Radxa ROCK 5C con 8 GB de LPDDR4x) sin GPU dedicada, con un consumo de memoria de aproximadamente 2,5 GB y un rendimiento medido de 10,9 tokens/s en generación y 189 tokens/s en prefill. Es, por tanto, una pieza de infraestructura para proyectos de IA en el borde más que un modelo nuevo.
 
@@ -72,7 +72,7 @@ El único fallo del modelo es la comparación «9.11 vs 9.9». El autor señala 
 
 | Modelo | Parámetros | Contexto | Rendimiento en el benchmark del autor | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniCPM5-2B-RK3588-rkllm-w8a8 | 2B | no disponible | 6/7, 10,9 tok/s, ~2,5 GB | Apache-2.0 | HuggingFace (6 descargas) |
+| MiniCPM5-2B-RK3588-rkllm-w8a8 | 2B | no disponible | 6/7, 10,9 tok/s, ~2,5 GB | Apache-2.0 | Hugging Face (6 descargas) |
 | Gemma-4-E2B-it (formato RK3588, según el autor) | no disponible | no disponible | 6/7, 9,3 tok/s, 2,6 GB | no disponible en la información | no disponible |
 | Qwen2.5-1.5B (formato RK3588, según el autor) | 1,5B | no disponible | 4,5/7, 15,8 tok/s, 1,8 GB | no disponible en la información | no disponible |
 
@@ -92,6 +92,6 @@ La comparación se limita a los datos que el autor incluye en su model card; no 
 
 ## Enlaces
 
-- [HuggingFace: oliver0804/MiniCPM5-2B-RK3588-rkllm-w8a8](https://huggingface.co/oliver0804/MiniCPM5-2B-RK3588-rkllm-w8a8)
+- [Hugging Face: oliver0804/MiniCPM5-2B-RK3588-rkllm-w8a8](https://huggingface.co/oliver0804/MiniCPM5-2B-RK3588-rkllm-w8a8)
 - [Modelo base: openbmb/MiniCPM5-2B](https://huggingface.co/openbmb/MiniCPM5-2B)
 - [Runtime RKLLM: airockchip/rknn-llm](https://github.com/airockchip/rknn-llm)

@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks específicos para el adaptador open
 - VRAM estimada: el modelo base de 30B parámetros requiere aproximadamente 60 GB en FP16, pero con cuantización de 4 bits puede ejecutarse en GPUs con 24 GB de VRAM (por ejemplo, RTX 3090/4090).
 - GPU recomendadas: para inferencia sin cuantizar, una A100 de 80 GB o H100; para cuantización, RTX 4090 o A6000 de 48 GB.
 - Compatibilidad con consumer GPU: sí, con cuantización dinámica (llama.cpp) y usando el adaptador LoRA, que añade una sobrecarga mínima.
-- Opciones de despliegue: vLLM (con parser específico para ATEM), llama.cpp, Ollama, TGI. El adaptador es compatible con endpoints de HuggingFace.
+- Opciones de despliegue: vLLM (con parser específico para ATEM), llama.cpp, Ollama, TGI. El adaptador es compatible con endpoints de Hugging Face.
 - Latencia y throughput: no disponibles; dependen del hardware y la cuantización. El base está optimizado para una sola GPU, lo que sugiere latencias razonables para uso interactivo.
 
 ## Comparativa con modelos similares
@@ -70,7 +70,7 @@ El adaptador opencodeinstruct se diferencia de CodeLlama y DeepSeek-Coder por su
 
 ## Limitaciones y advertencias
 
-- La licencia del adaptador no está especificada en la ficha de HuggingFace; aunque el base es Apache 2.0, se debe verificar la del adaptador antes de uso comercial.
+- La licencia del adaptador no está especificada en la ficha de Hugging Face; aunque el base es Apache 2.0, se debe verificar la del adaptador antes de uso comercial.
 - El modelo base puede presentar sesgos presentes en sus datos de entrenamiento, que no se han documentado públicamente.
 - Riesgo de alucinación en código: puede generar fragmentos sintácticamente válidos pero incorrectos lógicamente; se recomienda validación humana.
 - El formato de tool calling en XML (ATEM) requiere parsers específicos; no es compatible con APIs que esperan JSON estándar.
@@ -79,8 +79,8 @@ El adaptador opencodeinstruct se diferencia de CodeLlama y DeepSeek-Coder por su
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/VikramPal/Muse-Glimmer-30B-opencodeinstruct
-- HuggingFace del base: https://huggingface.co/meta-models/Muse-Glimmer-30B
+- Hugging Face del adaptador: https://huggingface.co/VikramPal/Muse-Glimmer-30B-opencodeinstruct
+- Hugging Face del base: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Página oficial de Muse Glimmer en Meta: https://developer.meta.com/ai/models/muse-glimmer/
 - Documentación de la API de Muse Glimmer: https://dev.meta.ai/docs/muse-glimmer
 - Tutorial de DataCamp para ejecutar Muse Glimmer localmente: https://www.datacamp.com/tutorial/how-to-run-muse-glimmer-30b-locally

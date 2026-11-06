@@ -4,7 +4,7 @@
 
 ## Resumen
 
-Se trata de un modelo de generacion de texto publicado en HuggingFace por el usuario mdagosta bajo el identificador `mdagosta/waldito-python-basics-v1-r0013-u0-mdagosta`. La model card lo describe como un "export" del modelo OpenWALDO y declara que emplea la arquitectura estandar de modelo causal de lenguaje de la familia Llama implementada en Transformers. El modelo cuenta con 9.541.632 parametros, confirmados a partir de los pesos en formato safetensors, lo que lo situa en la categoria de modelos ultraligeros, muy por debajo de los modelos habituales de uso general.
+Se trata de un modelo de generacion de texto publicado en Hugging Face por el usuario mdagosta bajo el identificador `mdagosta/waldito-python-basics-v1-r0013-u0-mdagosta`. La model card lo describe como un "export" del modelo OpenWALDO y declara que emplea la arquitectura estandar de modelo causal de lenguaje de la familia Llama implementada en Transformers. El modelo cuenta con 9.541.632 parametros, confirmados a partir de los pesos en formato safetensors, lo que lo situa en la categoria de modelos ultraligeros, muy por debajo de los modelos habituales de uso general.
 
 El rasgo mas distintivo que documenta el autor es el tokenizador: no utiliza un vocabulario BPE o SentencePiece convencional, sino un "byte tokenizer" propietario de OpenWALDO identificado como schema-1, que requiere cargarse con `trust_remote_code=True`. Esto implica que el modelo opera directamente sobre bytes, sin un vocabulario cerrado de subpalabras, un enfoque poco frecuente en modelos publicados.
 
@@ -104,7 +104,7 @@ No hay datos de rendimiento comparado entre estos modelos y waldito-python-basic
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0013-u0-mdagosta
+- Modelo en Hugging Face: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0013-u0-mdagosta
 - Inventario de la release (BOM.json): https://huggingface.co/mdagosta/waldito-python-basics-v1-r0013-u0-mdagosta/blob/main/BOM.json
 - Divulgacion de contenido de entrenamiento GPAI UE (EU-BOM.json): https://huggingface.co/mdagosta/waldito-python-basics-v1-r0013-u0-mdagosta/blob/main/EU-BOM.json
 - Repositorio del proyecto OpenWALDO: no disponible

@@ -4,7 +4,7 @@
 
 El modelo `sashaboguraev/pythia-1b-ppt-control_music_steps1000_1b-seed1024` es un ajuste fino (fine-tuning) de la familia Pythia de EleutherAI, concretamente de la variante de 1B parámetros, orientado al control de música. El nombre sugiere que ha sido entrenado con un dataset de control musical (posiblemente para generar o modificar secuencias musicales condicionadas por texto o parámetros), aunque la documentación disponible es mínima y no especifica el procedimiento exacto ni los datos de entrenamiento. El autor, sashaboguraev, ha publicado varias variantes con diferentes pasos de entrenamiento (steps100, steps250, steps500, steps1000) y semillas, lo que indica un experimento de investigación más que un modelo listo para producción.
 
-Arquitectónicamente, se basa en GPT-NeoX (según los tags de HuggingFace), con 1.011.671.040 parámetros totales, y los pesos están en formato safetensors. No se especifica la longitud de contexto, los idiomas soportados ni la licencia. El modelo está registrado con el pipeline de text-generation y es compatible con text-generation-inference y endpoints, lo que facilita su despliegue en infraestructuras estándar. Sin embargo, al carecer de una model card detallada, su utilidad práctica es limitada sin experimentación previa.
+Arquitectónicamente, se basa en GPT-NeoX (según los tags de Hugging Face), con 1.011.671.040 parámetros totales, y los pesos están en formato safetensors. No se especifica la longitud de contexto, los idiomas soportados ni la licencia. El modelo está registrado con el pipeline de text-generation y es compatible con text-generation-inference y endpoints, lo que facilita su despliegue en infraestructuras estándar. Sin embargo, al carecer de una model card detallada, su utilidad práctica es limitada sin experimentación previa.
 
 ## Especificaciones tecnicas
 
@@ -73,7 +73,7 @@ La comparativa es limitada porque no hay datos de rendimiento. El modelo se dist
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sashaboguraev/pythia-1b-ppt-control_music_steps1000_1b-seed1024
+- Hugging Face: https://huggingface.co/sashaboguraev/pythia-1b-ppt-control_music_steps1000_1b-seed1024
 - FriendliAI (inferencia): https://friendli.ai/models/sashaboguraev/pythia-1b-ppt-control_music_steps1000_1b-seed1024
 - Variante steps1000 con preserve_emb: https://huggingface.co/sashaboguraev/pythia-1b-ppt-control_music_steps1000_1b-seed208-preserve_emb
 - Variante steps250 con preserve_emb: https://friendli.ai/models/sashaboguraev/pythia-1b-ppt-control_music_steps250_1b-seed1024-preserve_emb

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`eqm` es una política de robótica (policy) entrenada mediante aprendizaje por imitación y publicada en HuggingFace Hub por el usuario `iFaz` bajo el identificador `iFaz/eqm-aloha_transfer_cube-seed3-18sep2026_2pm`. El modelo se ha entrenado con la librería [LeRobot](https://github.com/huggingface/lerobot) de HuggingFace sobre el dataset `lerobot/aloha_sim_transfer_cube_human`, una colección de demostraciones humanas en simulación para la tarea de transferencia de un cubo con brazos ALOHA. El pipeline declarado es `robotics`, no `text-generation`: no es un modelo de lenguaje, sino una política que mapea observaciones (imágenes y estado de las articulaciones) a acciones de control.
+`eqm` es una política de robótica (policy) entrenada mediante aprendizaje por imitación y publicada en Hugging Face Hub por el usuario `iFaz` bajo el identificador `iFaz/eqm-aloha_transfer_cube-seed3-18sep2026_2pm`. El modelo se ha entrenado con la librería [LeRobot](https://github.com/huggingface/lerobot) de Hugging Face sobre el dataset `lerobot/aloha_sim_transfer_cube_human`, una colección de demostraciones humanas en simulación para la tarea de transferencia de un cubo con brazos ALOHA. El pipeline declarado es `robotics`, no `text-generation`: no es un modelo de lenguaje, sino una política que mapea observaciones (imágenes y estado de las articulaciones) a acciones de control.
 
 El checkpoint contiene 18.701.190 parámetros en formato safetensors, almacenados en un repositorio de 0,1 GB, y se distribuye con licencia Apache 2.0. El nombre del modelo (`eqm`) y el nombre del repositorio (con el sufijo `seed3`) sugieren una política con sesgo por semilla, probablemente parte de un barrido experimental de reproducibilidad, aunque la model card no documenta la arquitectura ni el algoritmo concreto. La model card es la plantilla autogenerada por LeRobot e incluye literalmente el aviso «Model type not recognized — please update this template», por lo que la mayoría de los detalles técnicos no están descritos por el autor.
 
@@ -40,7 +40,7 @@ El entrenamiento se ha realizado con el flujo de LeRobot para políticas de imit
 - Generación de acciones de control para un brazo robótico simulado en la tarea de transferencia de cubo (`transfer_cube`), a partir de observaciones visuales y de estado.
 - Aprendizaje por imitación a partir de demostraciones humanas del dataset `lerobot/aloha_sim_transfer_cube_human`.
 - Ejecución de episodios completos mediante el comando de evaluación de LeRobot (`lerobot-record` con `--policy.path`).
-- Integración nativa con el ecosistema LeRobot y con HuggingFace Hub para carga de checkpoints.
+- Integración nativa con el ecosistema LeRobot y con Hugging Face Hub para carga de checkpoints.
 - Entrenamiento reproducible desde cero con `lerobot-train` (el autor documenta el flujo, aunque con la plantilla genérica de ACT).
 - Capacidades multilingües: no aplica.
 - Tool calling / function calling: no aplica.
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: el recuento de parámetros (18.701.190) implica aproximadamente 75 MB en FP32, 37 MB en FP16/BF16 y 19 MB en int8, sin contar buffers de activaciones ni el codificador visual si existiese. En la práctica, la inferencia cabe holgadamente en menos de 1 GB de VRAM.
 - GPU recomendadas: cualquier GPU con soporte CUDA y al menos 2 GB de VRAM es suficiente; el autor documenta el uso de `--policy.device=cuda`. Una RTX 3060, RTX 4060 o superior es más que suficiente. GPU de datacenter (A100, H100) no aportan ventaja relevante para este tamaño.
 - Cabe en GPU de consumo: sí, en prácticamente cualquier GPU de consumo moderna, e incluso en CPU para inferencia de baja frecuencia.
-- Opciones de despliegue: LeRobot (`lerobot-record`, `lerobot-train`) sobre PyTorch, con checkpoints locales o desde HuggingFace Hub. vLLM, TGI, Ollama y llama.cpp no son aplicables porque no es un modelo de lenguaje.
+- Opciones de despliegue: LeRobot (`lerobot-record`, `lerobot-train`) sobre PyTorch, con checkpoints locales o desde Hugging Face Hub. vLLM, TGI, Ollama y llama.cpp no son aplicables porque no es un modelo de lenguaje.
 - Almacenamiento: 0,1 GB de repositorio, trivial para cualquier disco.
 - Latencia y throughput: no disponibles. Dependen del hardware, de la frecuencia de control de la tarea y del número de cámaras de entrada, ninguno de los cuales está documentado.
 
@@ -75,10 +75,10 @@ No se dispone de datos numéricos de los modelos alternativos en la información
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `eqm` (este modelo) | Política de imitación para `aloha_sim_transfer_cube` | 18.701.190 | no aplica | apache-2.0 | HuggingFace Hub, 0 descargas |
+| `eqm` (este modelo) | Política de imitación para `aloha_sim_transfer_cube` | 18.701.190 | no aplica | apache-2.0 | Hugging Face Hub, 0 descargas |
 | ACT (Action Chunking Transformer) | Política de imitación incluida en LeRobot | no disponible en la informacion proporcionada | no aplica | no disponible en la informacion proporcionada | Integrada en LeRobot |
 | Diffusion Policy | Política de imitación basada en difusión, incluida en LeRobot | no disponible en la informacion proporcionada | no aplica | no disponible en la informacion proporcionada | Integrada en LeRobot |
-| SmolVLA | Modelo visión-lenguaje-acción de HuggingFace para robótica | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | HuggingFace Hub |
+| SmolVLA | Modelo visión-lenguaje-acción de Hugging Face para robótica | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face Hub |
 
 No se han encontrado en la información proporcionada resultados comparativos de rendimiento entre estas alternativas.
 
@@ -96,7 +96,7 @@ No se han encontrado en la información proporcionada resultados comparativos de
 
 ## Enlaces
 
-- Modelo en HuggingFace Hub: https://huggingface.co/iFaz/eqm-aloha_transfer_cube-seed3-18sep2026_2pm
+- Modelo en Hugging Face Hub: https://huggingface.co/iFaz/eqm-aloha_transfer_cube-seed3-18sep2026_2pm
 - Dataset de entrenamiento: https://huggingface.co/datasets/lerobot/aloha_sim_transfer_cube_human
 - Repositorio LeRobot: https://github.com/huggingface/lerobot
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index

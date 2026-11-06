@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Event2Reward-Qwen3.5-4B-Stage1 | 4B | no disponible | Estimacion de progreso/recompensa robotica | Apache-2.0 | HuggingFace (este repo) |
-| Event2Reward-Qwen3.5-4B-Stage2 | 4B | no disponible | Estimacion de progreso/recompensa robotica | Apache-2.0 (segun modelo base) | HuggingFace (enlazado en la model card) |
-| Qwen3.5-4B | 4B | no disponible | Modelo de lenguaje general | no disponible | HuggingFace |
+| Event2Reward-Qwen3.5-4B-Stage1 | 4B | no disponible | Estimacion de progreso/recompensa robotica | Apache-2.0 | Hugging Face (este repo) |
+| Event2Reward-Qwen3.5-4B-Stage2 | 4B | no disponible | Estimacion de progreso/recompensa robotica | Apache-2.0 (segun modelo base) | Hugging Face (enlazado en la model card) |
+| Qwen3.5-4B | 4B | no disponible | Modelo de lenguaje general | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada.
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/niejunnan25/Event2Reward-Qwen3.5-4B-Stage1
+- Modelo en Hugging Face: https://huggingface.co/niejunnan25/Event2Reward-Qwen3.5-4B-Stage1
 - Stage2: https://huggingface.co/niejunnan25/Event2Reward-Qwen3.5-4B-Stage2
 - Modelo base Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
 - Articulo: https://arxiv.org/abs/2610.39212

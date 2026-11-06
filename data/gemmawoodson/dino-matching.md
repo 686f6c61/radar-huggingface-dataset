@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Gemmawoodson/dino-matching es un repositorio alojado en HuggingFace que contiene una implementacion propia y compacta en PyTorch de una arquitectura denominada "Dino" orientada a tareas de "matching". El autor lo describe explicitamente como un artefacto para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequeno tamano, y no como una version preentrenada lista para produccion. El checkpoint incluido (model.safetensors) es una inicializacion valida, no un modelo entrenado ni evaluado con benchmarks.
+Gemmawoodson/dino-matching es un repositorio alojado en Hugging Face que contiene una implementacion propia y compacta en PyTorch de una arquitectura denominada "Dino" orientada a tareas de "matching". El autor lo describe explicitamente como un artefacto para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequeno tamano, y no como una version preentrenada lista para produccion. El checkpoint incluido (model.safetensors) es una inicializacion valida, no un modelo entrenado ni evaluado con benchmarks.
 
 El dato mas llamativo es su tamano: 24.832 parametros totales, lo que lo situa en el rango de un modelo de juguete o de prototipo, muy lejos de cualquier red neuronal de uso practico. A pesar de que la configuracion interna se etiqueta como "giant" (gigante), esa etiqueta hace referencia al preset de arquitectura generado, no al numero real de parametros. No se declara ningun idioma soportado, ninguna puntuacion de benchmark ni ningun dominio de aplicacion validado.
 
@@ -85,7 +85,7 @@ No se dispone de una categoria clara ni de modelos directamente comparables, ya 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Gemmawoodson/dino-matching | 24.832 | no disponible | sin benchmarks | BSD-3-Clause | HuggingFace (0 descargas) |
+| Gemmawoodson/dino-matching | 24.832 | no disponible | sin benchmarks | BSD-3-Clause | Hugging Face (0 descargas) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 Nota: no debe confundirse este repositorio con la familia DINO / DINOv2 de Meta, que son modelos de autoaprendizaje con transformers de vision de cientos de millones de parametros y con resultados publicados. La coincidencia de nombre no implica relacion tecnica.
@@ -103,5 +103,5 @@ Nota: no debe confundirse este repositorio con la familia DINO / DINOv2 de Meta,
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Gemmawoodson/dino-matching
+- Hugging Face: https://huggingface.co/Gemmawoodson/dino-matching
 - No se han encontrado otros enlaces (paper, blog, repositorio de codigo externo o demo) en la informacion proporcionada.

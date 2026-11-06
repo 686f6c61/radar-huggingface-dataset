@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este repositorio (adaptadores LoRA, tarea judge) | 30B totales / ~3B activos (según denominación del base) | no disponible | GRPO con descripción de recompensa; recompensa control o mal especificada según variante | no disponible | Público en HuggingFace, 0 descargas |
-| nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16 (modelo base) | 30B totales / ~3B activos | no disponible | Modelo generalista de NVIDIA; recetas y datos abiertos según NVIDIA | no disponible en la información proporcionada | Público en HuggingFace |
-| hewittlab/monitor_cot_for_hack-baseline-judge-explicit_intent-nemotron-3-nano-30b-a3b | 30B totales / ~3B activos | no disponible | Entrenamiento baseline con GRPO, misma tarea de juicio | no disponible | Público en HuggingFace |
-| hewittlab/monitor_cot_for_hack-reward_description-length-explicit_intent-nemotron-3-nano-30b-a3b | 30B totales / ~3B activos | no disponible | GRPO con descripción de recompensa basada en longitud, misma tarea | no disponible | Público en HuggingFace |
+| Este repositorio (adaptadores LoRA, tarea judge) | 30B totales / ~3B activos (según denominación del base) | no disponible | GRPO con descripción de recompensa; recompensa control o mal especificada según variante | no disponible | Público en Hugging Face, 0 descargas |
+| nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16 (modelo base) | 30B totales / ~3B activos | no disponible | Modelo generalista de NVIDIA; recetas y datos abiertos según NVIDIA | no disponible en la información proporcionada | Público en Hugging Face |
+| hewittlab/monitor_cot_for_hack-baseline-judge-explicit_intent-nemotron-3-nano-30b-a3b | 30B totales / ~3B activos | no disponible | Entrenamiento baseline con GRPO, misma tarea de juicio | no disponible | Público en Hugging Face |
+| hewittlab/monitor_cot_for_hack-reward_description-length-explicit_intent-nemotron-3-nano-30b-a3b | 30B totales / ~3B activos | no disponible | GRPO con descripción de recompensa basada en longitud, misma tarea | no disponible | Público en Hugging Face |
 
 Los tres repositorios hermanos comparten modelo base, tarea y esquema de checkpoints, y solo difieren en la descripción de recompensa, lo que los convierte en comparaciones controladas dentro del mismo experimento. No se dispone de datos de rendimiento comparado entre ellos en la información proporcionada.
 
@@ -96,13 +96,13 @@ Los tres repositorios hermanos comparten modelo base, tarea y esquema de checkpo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hewittlab/monitor_cot_for_hack-reward_description-judge-explicit_intent-nemotron-3-nano-30b-a3b
+- Repositorio en Hugging Face: https://huggingface.co/hewittlab/monitor_cot_for_hack-reward_description-judge-explicit_intent-nemotron-3-nano-30b-a3b
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16
 - Dataset de la tarea: https://huggingface.co/datasets/hewittlab/monitor_cot_for_hack-judge
 - Dataset original de preferencias: https://huggingface.co/datasets/lmarena-ai/arena-human-preference-140k
 - Código del trabajo: https://github.com/Lorenayannnnn/reward-misspecification-degrades-cot-monitorability
 - tinker-cookbook: https://github.com/thinking-machines-lab/tinker-cookbook
-- Guía de exportación a HuggingFace de Tinker: https://tinker-docs.thinkingmachines.ai/tutorials/deployment/export-hf/
+- Guía de exportación a Hugging Face de Tinker: https://tinker-docs.thinkingmachines.ai/tutorials/deployment/export-hf/
 - Repositorio hermano (baseline judge): https://huggingface.co/hewittlab/monitor_cot_for_hack-baseline-judge-explicit_intent-nemotron-3-nano-30b-a3b
 - Repositorio hermano (recompensa por longitud): https://huggingface.co/hewittlab/monitor_cot_for_hack-reward_description-length-explicit_intent-nemotron-3-nano-30b-a3b
 - Página de modelos Nemotron de NVIDIA: https://developer.nvidia.com/topics/ai/nemotron

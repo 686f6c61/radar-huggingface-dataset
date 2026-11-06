@@ -89,12 +89,12 @@ La unica comparacion sustentada por la informacion disponible es la del modelo f
 - Contexto: aunque la ventana nativa es de 262K, el autor recomienda no bajar de 128K para conservar el modo thinking, lo que impone un suelo de consumo de memoria en produccion.
 - Licencia: Apache 2.0 permite uso comercial y modificacion, pero no exime de responsabilidad legal sobre el contenido generado ni de las obligaciones de divulgacion aplicables en la UE.
 - Repositorio de terceros: el autor del repo (Mrt45) no es el autor del modelo base (Qwen) ni el autor original de las cuantizaciones (HauhauCS). Conviene verificar la integridad de los ficheros antes de usarlos en produccion.
-- Compatibilidad de herramientas: el widget de compatibilidad de hardware de HuggingFace no reconoce los quants K_P y puede mostrar menos ficheros de los existentes; en LM Studio la columna de quant puede mostrar "?" sin que ello afecte al funcionamiento.
-- Metadatos de fecha: los campos de creacion y actualizacion indican 2026-10-09, una fecha posterior a la del conocimiento de referencia de este analisis; los datos proceden exclusivamente de lo declarado en HuggingFace.
+- Compatibilidad de herramientas: el widget de compatibilidad de hardware de Hugging Face no reconoce los quants K_P y puede mostrar menos ficheros de los existentes; en LM Studio la columna de quant puede mostrar "?" sin que ello afecte al funcionamiento.
+- Metadatos de fecha: los campos de creacion y actualizacion indican 2026-10-09, una fecha posterior a la del conocimiento de referencia de este analisis; los datos proceden exclusivamente de lo declarado en Hugging Face.
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/Mrt45/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive
+- Pagina del modelo en Hugging Face: https://huggingface.co/Mrt45/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Discord del autor de las cuantizaciones: https://discord.gg/SZ5vacTXYf
 - Repositorio de HauhauCS (origen de los quants): https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive

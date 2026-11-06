@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `michael-ptur9894/model_635393447_mae_nano` es una implementación a escala "nano" de la arquitectura `mae`, desarrollada por el autor `michael-ptur9894` y publicada en HuggingFace bajo licencia CC-BY-4.0. Según la model card, está diseñado para tareas multitarea, utilizando atención grouped query, estrategia de fusión `concat-mlp`, activación ReLU, normalización ScaleNorm e inicialización Xavier.
+El modelo `michael-ptur9894/model_635393447_mae_nano` es una implementación a escala "nano" de la arquitectura `mae`, desarrollada por el autor `michael-ptur9894` y publicada en Hugging Face bajo licencia CC-BY-4.0. Según la model card, está diseñado para tareas multitarea, utilizando atención grouped query, estrategia de fusión `concat-mlp`, activación ReLU, normalización ScaleNorm e inicialización Xavier.
 
 El modelo se distribuye como un único archivo de código Python (`model_635393447_mae_nano.py`) y no se proporcionan pesos preentrenados ni datos de entrenamiento. Con cero descargas y cero likes, se trata de un repositorio reciente y sin evidencia de adopción por la comunidad. La relevancia actual del modelo es limitada, ya que no se documentan capacidades concretas, métricas de rendimiento ni casos de uso verificados.
 
@@ -66,5 +66,5 @@ No se dispone de información sobre modelos comparables. Dado que se trata de un
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/michael-ptur9894/model_635393447_mae_nano
+- Hugging Face: https://huggingface.co/michael-ptur9894/model_635393447_mae_nano
 - No se han encontrado otros enlaces relevantes (papers, blogs, repos o demos) en la búsqueda web.

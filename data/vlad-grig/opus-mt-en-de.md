@@ -25,7 +25,7 @@ Su interes es practico mas que cientifico: ilustra el patron de autoalojamiento 
 | Tarea (pipeline) | translation / text2text-generation |
 | Tamano del repositorio | 0,5 GB |
 | Descargas y me gusta | 0 descargas y 0 me gusta en el momento de la consulta |
-| Fechas del repositorio | creado el 2026-10-11, actualizado el 2026-10-11 segun los metadatos de HuggingFace |
+| Fechas del repositorio | creado el 2026-10-11, actualizado el 2026-10-11 segun los metadatos de Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -92,7 +92,7 @@ No se dispone de datos verificados sobre otras alternativas de traduccion en->de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/vlad-grig/opus-mt-en-de
+- Repositorio en Hugging Face: https://huggingface.co/vlad-grig/opus-mt-en-de
 - Modelo base original: https://huggingface.co/Helsinki-NLP/opus-mt-en-de
 - Conversion ONNX de referencia: https://huggingface.co/Xenova/opus-mt-en-de
 - Transformers.js (repositorio oficial): https://github.com/huggingface/transformers.js

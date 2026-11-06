@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SAD12XCZC/MyAwesomeModel-TestRepo es un repositorio alojado en HuggingFace por el usuario SAD12XCZC. Los metadatos de la plataforma lo etiquetan como un modelo basado en BERT para extraccion de caracteristicas (feature-extraction), con licencia MIT y compatibilidad con endpoints. Sin embargo, el propio nombre del repositorio ("TestRepo"), el tamano de 0.0 GB y la ausencia total de descargas y likes (0 en ambos casos) indican que se trata de un espacio de pruebas y no de un modelo publicado para uso real.
+SAD12XCZC/MyAwesomeModel-TestRepo es un repositorio alojado en Hugging Face por el usuario SAD12XCZC. Los metadatos de la plataforma lo etiquetan como un modelo basado en BERT para extraccion de caracteristicas (feature-extraction), con licencia MIT y compatibilidad con endpoints. Sin embargo, el propio nombre del repositorio ("TestRepo"), el tamano de 0.0 GB y la ausencia total de descargas y likes (0 en ambos casos) indican que se trata de un espacio de pruebas y no de un modelo publicado para uso real.
 
 La model card incluida describe, en cambio, un modelo de razonamiento de proposito general con mejoras en matematicas, programacion y llamada a funciones, e incluye una tabla de benchmarks con etiquetas genericas ("Model1", "Model2", "Model1-v2", "MyAwesomeModel"). Esta descripcion no coincide con la etiqueta de BERT para extraccion de caracteristicas, y ninguno de los parametros tecnicos (tamano, contexto, arquitectura, datos de entrenamiento) aparece especificado en la informacion disponible.
 
@@ -38,7 +38,7 @@ Otros metadatos verificables:
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion verificable sobre la arquitectura real del modelo. Los tags de HuggingFace apuntan a una arquitectura BERT orientada a feature-extraction, mientras que la model card describe un modelo generativo de razonamiento con "optimizacion algoritmica durante el post-entrenamiento" y mejoras en profundidad de razonamiento. Ambas descripciones son incompatibles entre si y ninguna viene acompanada de detalles tecnicos concretos (numero de capas, dimensiones ocultas, tipo de atencion, mecanismo de decodificacion, etc.).
+No se dispone de informacion verificable sobre la arquitectura real del modelo. Los tags de Hugging Face apuntan a una arquitectura BERT orientada a feature-extraction, mientras que la model card describe un modelo generativo de razonamiento con "optimizacion algoritmica durante el post-entrenamiento" y mejoras en profundidad de razonamiento. Ambas descripciones son incompatibles entre si y ninguna viene acompanada de detalles tecnicos concretos (numero de capas, dimensiones ocultas, tipo de atencion, mecanismo de decodificacion, etc.).
 
 Respecto a los datos de entrenamiento, la model card no indica numero de tokens, composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO u otras. Solo menciona de forma generica un aumento de recursos computacionales y un mayor uso de tokens por pregunta en tareas de razonamiento (de aproximadamente 12K tokens por pregunta en la version anterior a 23K en la actual, segun el conjunto de prueba citado). No hay informacion sobre tokenizador, salvo la mencion de que "MyAwesomeModel-Small" comparte tokenizador con el modelo principal. No se puede confirmar ninguna innovacion tecnica concreta.
 
@@ -70,7 +70,7 @@ Dado que no hay pesos publicados ni especificaciones confirmadas, los siguientes
 - Resumen y clasificacion de documentos: las tareas de summarization y text classification aparecen en la tabla de evaluacion, lo que lo situaria en flujos de procesado documental.
 - Busqueda web aumentada: la model card incluye plantillas especificas para citar resultados de busqueda, lo que apunta a un uso en generacion aumentada por recuperacion (RAG).
 - Traduccion automatica: la tabla de benchmarks incluye una fila de traduccion, aunque sin indicar pares de idiomas.
-- Extraccion de caracteristicas (feature-extraction): segun el pipeline declarado en HuggingFace, el modelo podria usarse para embeddings, aunque esto contradice la descripcion generativa de la model card.
+- Extraccion de caracteristicas (feature-extraction): segun el pipeline declarado en Hugging Face, el modelo podria usarse para embeddings, aunque esto contradice la descripcion generativa de la model card.
 
 Ninguno de estos casos puede validarse con la informacion disponible.
 
@@ -112,7 +112,7 @@ El unico dato operativo que aparece en la model card es una recomendacion de tem
 
 ## Comparativa con modelos similares
 
-No disponible. La tabla de benchmarks de la model card emplea etiquetas anonimizadas (Model1, Model2, Model1-v2), por lo que no es posible identificar alternativas reales ni comparar parametros, contexto, licencia o disponibilidad. Tampoco los metadatos de HuggingFace permiten situar el modelo en una categoria concreta, ya que la etiqueta "bert / feature-extraction" contradice la descripcion de modelo generativo de razonamiento.
+No disponible. La tabla de benchmarks de la model card emplea etiquetas anonimizadas (Model1, Model2, Model1-v2), por lo que no es posible identificar alternativas reales ni comparar parametros, contexto, licencia o disponibilidad. Tampoco los metadatos de Hugging Face permiten situar el modelo en una categoria concreta, ya que la etiqueta "bert / feature-extraction" contradice la descripcion de modelo generativo de razonamiento.
 
 ## Limitaciones y advertencias
 
@@ -129,6 +129,6 @@ No disponible. La tabla de benchmarks de la model card emplea etiquetas anonimiz
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SAD12XCZC/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/SAD12XCZC/MyAwesomeModel-TestRepo
 
 No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la informacion disponible. La busqueda web realizada no devolvio resultados relevantes.

@@ -73,7 +73,7 @@ No disponible. La información proporcionada no incluye datos de otros modelos c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iseonn/act_policy
+- Modelo en Hugging Face: https://huggingface.co/iseonn/act_policy
 - Dataset de entrenamiento: https://huggingface.co/datasets/iseonn/am_arm_test
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=iseonn/am_arm_test
 - Paper ACT: https://huggingface.co/papers/2304.13705 (arXiv 2304.13705)

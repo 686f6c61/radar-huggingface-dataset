@@ -4,7 +4,7 @@
 
 El modelo `rijal028/walker2d-autonomous-v2-full` es un agente de aprendizaje por refuerzo (reinforcement learning) diseñado para el entorno Walker2d de MuJoCo, que simula un robot bípedo. Fue desarrollado por el usuario rijal028 y se presenta como un "agente reflexivo autónomo completo" que integra tres componentes: un actor con memoria de retención, un modelo dinámico del mundo que actúa como detector de anomalías, y un motor de reflexión crítica que simula soluciones de acción. Este enfoque combina aprendizaje por refuerzo clásico con modelos de mundo y adaptación en línea, lo que lo hace relevante para investigaciones sobre control robusto y aprendizaje continuo en robótica.
 
-El repositorio en HuggingFace no incluye información detallada sobre arquitectura, tamaño de red, parámetros o datos de entrenamiento más allá de un learning rate de `3.0e-5` y la mención de una memoria intrínseca que conserva pesos adaptados. La licencia y los idiomas soportados no están especificados. El modelo parece estar enfocado a la investigación y demostración de técnicas de adaptación en línea con detección de anomalías, más que a un despliegue práctico inmediato.
+El repositorio en Hugging Face no incluye información detallada sobre arquitectura, tamaño de red, parámetros o datos de entrenamiento más allá de un learning rate de `3.0e-5` y la mención de una memoria intrínseca que conserva pesos adaptados. La licencia y los idiomas soportados no están especificados. El modelo parece estar enfocado a la investigación y demostración de técnicas de adaptación en línea con detección de anomalías, más que a un despliegue práctico inmediato.
 
 ## Especificaciones técnicas
 
@@ -38,7 +38,7 @@ La model card describe un sistema compuesto por tres módulos: un **Actor** con 
 - **Desarrollo de sistemas de control adaptativo**: su capacidad de detectar anomalías y ajustarse sin reentrenar desde cero puede aplicarse a robots reales que necesitan adaptarse a cambios en el terreno o desgaste de articulaciones.
 - **Entrenamiento de agentes con memoria**: el componente de "memoria de retención" permite experimentar con agentes que recuerdan estrategias aprendidas en episodios anteriores, mejorando la eficiencia en entornos no estacionarios.
 - **Simulación de fallos y mantenimiento predictivo**: el World Dynamics Model puede usarse para identificar cuándo un componente del sistema (como una articulación) está fallando, lo que permite diseñar sistemas de mantenimiento automático.
-- **Educación y demostración**: como modelo en HuggingFace, puede ser utilizado para enseñar conceptos de RL avanzado, como modelos de mundo y adaptación en línea, en cursos de robótica o inteligencia artificial.
+- **Educación y demostración**: como modelo en Hugging Face, puede ser utilizado para enseñar conceptos de RL avanzado, como modelos de mundo y adaptación en línea, en cursos de robótica o inteligencia artificial.
 - **Comparación de algoritmos**: al ser un agente completo, puede servir como punto de partida para comparar con otros métodos (SAC, PPO) en el mismo entorno Walker2d, aunque no se proporcionan métricas de rendimiento.
 
 ## Benchmarks y rendimiento
@@ -67,7 +67,7 @@ No hay información suficiente para comparar con otros modelos específicos. Se 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/rijal028/walker2d-autonomous-v2-full)
+- [Modelo en Hugging Face](https://huggingface.co/rijal028/walker2d-autonomous-v2-full)
 - [Entorno Walker2d en Gymnasium](https://gymnasium.farama.org/environments/mujoco/walker2d/)
 - [Referencia al paper de arXiv (2309.09777) - no directamente relacionado pero posiblemente de interés](https://arxiv.org/pdf/2309.09777v2)
 - [Repositorio de ejemplo con SAC para Walker2d (devdharpatel)](https://huggingface.co/devdharpatel/SAC-Walker2d-v2)

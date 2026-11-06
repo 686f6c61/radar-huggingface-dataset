@@ -77,9 +77,9 @@ Notas de la evaluación aportadas por el autor: la tabla corresponde al checkpoi
 
 | Modelo | Parametros | Contexto | Accuracy de tarea (multilingue) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Horizon-Labs/multilingual-prompt-task-complexity-small | 141M | 512 tokens | 0,793 | Apache-2.0 | HuggingFace, safetensors y ONNX |
-| Horizon-Labs/multilingual-prompt-task-complexity-base | 308M | 512 tokens (no detallado en la informacion disponible) | 0,811 | Apache-2.0 | HuggingFace |
-| nvidia/prompt-task-and-complexity-classifier | 184M | no disponible | 0,459 en la evaluacion multilingue del autor; 0,655 en ingles | no disponible en la informacion proporcionada | HuggingFace |
+| Horizon-Labs/multilingual-prompt-task-complexity-small | 141M | 512 tokens | 0,793 | Apache-2.0 | Hugging Face, safetensors y ONNX |
+| Horizon-Labs/multilingual-prompt-task-complexity-base | 308M | 512 tokens (no detallado en la informacion disponible) | 0,811 | Apache-2.0 | Hugging Face |
+| nvidia/prompt-task-and-complexity-classifier | 184M | no disponible | 0,459 en la evaluacion multilingue del autor; 0,655 en ingles | no disponible en la informacion proporcionada | Hugging Face |
 | Qwen3.8-27B (profesor, uso con prompt) | 27B | no disponible | 0,856 | Apache-2.0 | Referencia; no es un clasificador ligero |
 
 La ventaja diferencial del modelo small frente al de NVIDIA no está en la accuracy en inglés, sino en la cobertura multilingüe: sobre 21 idiomas mantiene 0,793 de accuracy media, mientras que el clasificador de NVIDIA cae a 0,459 en ese mismo conjunto. Frente a su propia variante base de 308M pierde 0,018 puntos de accuracy de tarea y 0,025 de Spearman medio, a cambio de menos de la mitad de parámetros. No se dispone de comparaciones con otros clasificadores de prompts multilingües en la información proporcionada.
@@ -98,7 +98,7 @@ La ventaja diferencial del modelo small frente al de NVIDIA no está en la accur
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Horizon-Labs/multilingual-prompt-task-complexity-small
+- Modelo en Hugging Face: https://huggingface.co/Horizon-Labs/multilingual-prompt-task-complexity-small
 - Variante mayor (308M): https://huggingface.co/Horizon-Labs/multilingual-prompt-task-complexity-base
 - Modelo base: https://huggingface.co/jhu-clsp/mmBERT-small
 - Clasificador de referencia de NVIDIA: https://huggingface.co/nvidia/prompt-task-and-complexity-classifier
@@ -107,4 +107,4 @@ La ventaja diferencial del modelo small frente al de NVIDIA no está en la accur
 - Dataset Aya: https://huggingface.co/datasets/CohereLabs/aya_dataset
 - Juez de evaluación: https://huggingface.co/google/gemma-4-31b-it
 
-Nota: la búsqueda web realizada no ha devuelto ningún resultado relevante sobre este modelo; los enlaces anteriores proceden de la model card y de los metadatos del repositorio de HuggingFace.
+Nota: la búsqueda web realizada no ha devuelto ningún resultado relevante sobre este modelo; los enlaces anteriores proceden de la model card y de los metadatos del repositorio de Hugging Face.

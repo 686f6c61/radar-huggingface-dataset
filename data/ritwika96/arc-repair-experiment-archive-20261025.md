@@ -65,7 +65,7 @@ La model card incluye registros de validación medidos, pero el autor advierte q
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| arc-repair-experiment-archive-20261025 | ~0,5 M a ~100 M por ejecución | No aplica (rejillas) | Sin benchmark publicado; validaciones internas no comparables | No disponible | HuggingFace, 0 descargas, 0 likes |
+| arc-repair-experiment-archive-20261025 | ~0,5 M a ~100 M por ejecución | No aplica (rejillas) | Sin benchmark publicado; validaciones internas no comparables | No disponible | Hugging Face, 0 descargas, 0 likes |
 | Alternativas de investigación ARC-AGI | No disponible | No disponible | No disponible | No disponible | No disponible |
 | Modelos de lenguaje comparables | No aplica | No aplica | No aplica | No aplica | No aplica |
 
@@ -87,5 +87,5 @@ No se dispone de datos verificables sobre modelos alternativos de la misma categ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ritwika96/arc-repair-experiment-archive-20261025
+- Hugging Face: https://huggingface.co/ritwika96/arc-repair-experiment-archive-20261025
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la búsqueda web realizada; los resultados devueltos trataban sobre la ciudad francesa de Cahors y no guardan relación con este modelo.

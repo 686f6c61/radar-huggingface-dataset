@@ -2,7 +2,7 @@
 
 ## Resumen
 
-my_awesome_wnut_model es un modelo de clasificación de tokens (token classification) obtenido mediante fine-tuning de distilbert-base-uncased, publicado por el usuario ashes575 en HuggingFace. El nombre del repositorio sugiere que se entrenó sobre el dataset WNUT (Workshop on Noisy User-generated Text), orientado a la detección de entidades nombradas en texto informal, aunque la model card no confirma explícitamente el dataset utilizado. Se trata de un experimento de ajuste fino, no de un modelo fundacional ni de un lanzamiento con documentación técnica elaborada.
+my_awesome_wnut_model es un modelo de clasificación de tokens (token classification) obtenido mediante fine-tuning de distilbert-base-uncased, publicado por el usuario ashes575 en Hugging Face. El nombre del repositorio sugiere que se entrenó sobre el dataset WNUT (Workshop on Noisy User-generated Text), orientado a la detección de entidades nombradas en texto informal, aunque la model card no confirma explícitamente el dataset utilizado. Se trata de un experimento de ajuste fino, no de un modelo fundacional ni de un lanzamiento con documentación técnica elaborada.
 
 El modelo parte de DistilBERT, una versión destilada de BERT con 66,4 millones de parámetros y arquitectura transformer encoder-only. Al ser un modelo de clasificación de tokens, su función es etiquetar cada token de una secuencia de entrada (por ejemplo, para reconocimiento de entidades nombradas o etiquetado morfosintáctico), no generar texto libre. La ventana de contexto efectiva es la de DistilBERT: 512 tokens.
 
@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ashes575/my_awesome_wnut_model | 66,4 M | 512 tokens | Clasificación de tokens (NER) | apache-2.0 | HuggingFace |
-| distilbert-base-uncased | 66,4 M | 512 tokens | Modelo base (MLM) | apache-2.0 | HuggingFace |
-| dslim/bert-base-NER | 110 M | 512 tokens | NER (CoNLL-2003) | MIT | HuggingFace |
-| Jean-Baptiste/roberta-large-ner-english | 355 M | 512 tokens | NER | MIT | HuggingFace |
+| ashes575/my_awesome_wnut_model | 66,4 M | 512 tokens | Clasificación de tokens (NER) | apache-2.0 | Hugging Face |
+| distilbert-base-uncased | 66,4 M | 512 tokens | Modelo base (MLM) | apache-2.0 | Hugging Face |
+| dslim/bert-base-NER | 110 M | 512 tokens | NER (CoNLL-2003) | MIT | Hugging Face |
+| Jean-Baptiste/roberta-large-ner-english | 355 M | 512 tokens | NER | MIT | Hugging Face |
 
 La comparación con dslim/bert-base-NER y roberta-large-ner-english es orientativa: son alternativas consolidadas para NER en inglés con métricas públicas superiores (F1 en torno a 0,91 y 0,95 respectivamente en CoNLL-2003), aunque entrenadas en dominios distintos al posible WNUT. No se dispone de comparación directa con este modelo en el mismo conjunto de evaluación.
 
@@ -93,7 +93,7 @@ La comparación con dslim/bert-base-NER y roberta-large-ner-english es orientati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ashes575/my_awesome_wnut_model
+- Modelo en Hugging Face: https://huggingface.co/ashes575/my_awesome_wnut_model
 - Modelo base: https://huggingface.co/distilbert/distilbert-base-uncased
 - Paper de DistilBERT: https://arxiv.org/abs/1910.01108
 - Paper de BERT: https://arxiv.org/abs/1810.04805

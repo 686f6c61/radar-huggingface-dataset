@@ -4,7 +4,7 @@
 
 NorthCUA-Nano-GGUF es la distribucion en formato GGUF del modelo NorthCUA-Nano, publicada por el usuario mradermacher, especializado en la conversion de pesos a cuantizaciones compatibles con llama.cpp. El modelo original lo desarrolla beipo-ai y cuenta con aproximadamente 8.950 millones de parametros segun los datos de safetensors del repositorio. Esta version GGUF permite ejecutar el modelo en hardware de consumo mediante cuantizaciones de 2 a 8 bits, algo imposible con los pesos en precision completa.
 
-El repositorio se creo el 2 de noviembre de 2026 y contiene un conjunto amplio de cuantizaciones estaticas: x-f16, Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0 e IQ4_XS. El tag "endpoints_compatible" sugiere que puede desplegarse mediante los endpoints de HuggingFace, y el tag "conversational" indica que esta orientado a dialogos multi-turno.
+El repositorio se creo el 2 de noviembre de 2026 y contiene un conjunto amplio de cuantizaciones estaticas: x-f16, Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0 e IQ4_XS. El tag "endpoints_compatible" sugiere que puede desplegarse mediante los endpoints de Hugging Face, y el tag "conversational" indica que esta orientado a dialogos multi-turno.
 
 La informacion publica disponible es muy limitada: no se detalla arquitectura, contexto, licencia ni idiomas en la model card. La ficha siguiente recoge lo que se puede afirmar con certeza y marca explicitamente como "no disponible" todo lo que no consta en la informacion proporcionada.
 
@@ -30,7 +30,7 @@ Tampoco hay datos sobre el corpus de entrenamiento (numero de tokens, composicio
 ## Capacidades
 
 - Generacion de texto conversacional: el tag "conversational" del repositorio indica que el modelo esta ajustado o preparado para dialogos multi-turno.
-- Compatibilidad con endpoints de HuggingFace: el tag "endpoints_compatible" sugiere que puede servirse a traves de la infraestructura de inferencia gestionada de HuggingFace.
+- Compatibilidad con endpoints de Hugging Face: el tag "endpoints_compatible" sugiere que puede servirse a traves de la infraestructura de inferencia gestionada de Hugging Face.
 - Inferencia local mediante llama.cpp: al estar en formato GGUF, es compatible con el ecosistema llama.cpp, Ollama, LM Studio y servidores derivados.
 - Razonamiento, codigo, matematicas, vision, tool calling, agentes, modo thinking: no disponible (no consta en la informacion proporcionada).
 - Capacidades multilingues: no disponible.
@@ -41,7 +41,7 @@ Tampoco hay datos sobre el corpus de entrenamiento (numero de tokens, composicio
 - Prototipado de asistentes conversacionales: el tag "conversational" lo hace adecuado para construir chatbots de prueba en local antes de escalar a un modelo mayor o a un servicio gestionado.
 - Integracion en aplicaciones de escritorio: mediante llama.cpp u Ollama, el modelo puede embeberse en herramientas de escritorio que requieran generacion de texto sin conexion a internet.
 - Evaluacion comparativa de cuantizaciones: el repositorio incluye doce variantes de cuantizacion, lo que permite medir la degradacion de calidad frente al ahorro de memoria en un mismo modelo, un caso de uso util para equipos que calibran pipelines de despliegue.
-- Servicio ligero en endpoints de HuggingFace: el tag "endpoints_compatible" permite desplegarlo como endpoint gestionado para pruebas de integracion con aplicaciones cliente.
+- Servicio ligero en endpoints de Hugging Face: el tag "endpoints_compatible" permite desplegarlo como endpoint gestionado para pruebas de integracion con aplicaciones cliente.
 - Filtrado y generacion de texto en pipelines de datos: para tareas de clasificacion ligera, resumen o reescritura en lotes donde el coste por token importa mas que la calidad punta.
 
 ## Benchmarks y rendimiento
@@ -60,14 +60,14 @@ No se han publicado resultados de benchmarks en la informacion disponible.
   - x-f16: en torno a 18 GB.
 - GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4080 y RTX 4090 para cuantizaciones altas; A100 o H100 para f16 y despliegues concurrentes.
 - Cabe en GPU de consumo: si, en la mayoria de tarjetas con 8 GB o mas usando Q4 o inferior.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, servidores compatibles con la API de llama.cpp y endpoints de HuggingFace.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, servidores compatibles con la API de llama.cpp y endpoints de Hugging Face.
 - Latencia y throughput: no disponible (no se han publicado mediciones).
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| NorthCUA-Nano-GGUF | 8,95 B | no disponible | no disponible | GGUF | HuggingFace (mradermacher) |
+| NorthCUA-Nano-GGUF | 8,95 B | no disponible | no disponible | GGUF | Hugging Face (mradermacher) |
 | Alternativas de ~8 B en GGUF | no disponible | no disponible | no disponible | GGUF | no disponible |
 
 No se dispone de informacion suficiente para establecer una comparativa fiable con modelos de la misma categoria. No constan datos de rendimiento, contexto ni licencia del modelo original, por lo que cualquier comparacion cuantitativa seria especulativa.

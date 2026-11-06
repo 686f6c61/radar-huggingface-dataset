@@ -66,5 +66,5 @@ No existe comparativa posible, ya que este repositorio no contiene un modelo ent
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/svpe-trov/self-supervised-v2
+- Repositorio Hugging Face: https://huggingface.co/svpe-trov/self-supervised-v2
 - Nota: no se han encontrado enlaces adicionales específicos de este repositorio. Los resultados de búsqueda web sobre DINOv2 y DINO (facebookresearch/dino, facebookresearch/dinov2) son referencias generales del campo, no están vinculados a este repositorio.

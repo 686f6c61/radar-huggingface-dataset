@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TASTE2-8B-EN es un modelo de lenguaje hablado (spoken language model) orientado a síntesis de voz y agentes de voz full-duplex, desarrollado por el autor YC-Chen. A diferencia de los sistemas tradicionales de text-to-speech que generan audio a partir de texto, este modelo está diseñado para operar en conversaciones bidireccionales, lo que lo hace relevante para asistentes de voz interactivos y agentes conversacionales en tiempo real. El modelo está pensado para el idioma inglés y se distribuye bajo una licencia de uso exclusivamente investigador (taste2-research-only), con acceso restringido en HuggingFace.
+TASTE2-8B-EN es un modelo de lenguaje hablado (spoken language model) orientado a síntesis de voz y agentes de voz full-duplex, desarrollado por el autor YC-Chen. A diferencia de los sistemas tradicionales de text-to-speech que generan audio a partir de texto, este modelo está diseñado para operar en conversaciones bidireccionales, lo que lo hace relevante para asistentes de voz interactivos y agentes conversacionales en tiempo real. El modelo está pensado para el idioma inglés y se distribuye bajo una licencia de uso exclusivamente investigador (taste2-research-only), con acceso restringido en Hugging Face.
 
 Según la nomenclatura del nombre, el modelo tendría aproximadamente 8 mil millones de parámetros, aunque este dato no ha sido confirmado en la información disponible. El repositorio ocupa 42,2 GB, lo que sugiere que los pesos se almacenan en formato de alta precisión (probablemente FP16 o BF16) y que la inferencia requerirá hardware con capacidad de memoria considerable. No se han publicado detalles sobre la arquitectura interna, el contexto máximo soportado ni los datos de entrenamiento, por lo que esta ficha se basa únicamente en la información pública del repositorio.
 
@@ -42,7 +42,7 @@ No se ha publicado información detallada sobre la arquitectura de TASTE2-8B-EN.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No hay datos sobre MMLU, HumanEval, GSM8K ni métricas específicas de síntesis de voz (MOS, WER, etc.). Se recomienda consultar el repositorio de HuggingFace para futuras actualizaciones.
+No se han publicado resultados de benchmarks en la información disponible. No hay datos sobre MMLU, HumanEval, GSM8K ni métricas específicas de síntesis de voz (MOS, WER, etc.). Se recomienda consultar el repositorio de Hugging Face para futuras actualizaciones.
 
 ## Requisitos de hardware
 
@@ -58,7 +58,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 ## Limitaciones y advertencias
 
 - Licencia de uso exclusivamente investigador (taste2-research-only): no está permitido su uso comercial sin autorización expresa de los autores. Esto limita su adopción en producción.
-- Acceso restringido (gated): es necesario solicitar acceso en HuggingFace y aceptar las condiciones, lo que añade una barrera de entrada.
+- Acceso restringido (gated): es necesario solicitar acceso en Hugging Face y aceptar las condiciones, lo que añade una barrera de entrada.
 - Idioma limitado: solo se ha confirmado soporte para inglés, sin información sobre otros idiomas.
 - Sin datos sobre sesgos o alucinaciones: al ser un modelo de voz, podría generar contenido incorrecto o inapropiado, pero no hay evaluaciones publicadas.
 - Sin especificaciones de contexto: se desconoce la longitud máxima de la conversación que puede manejar, lo que dificulta planificar su uso en diálogos largos.
@@ -66,4 +66,4 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/YC-Chen/TASTE2-8B-EN
+- Repositorio Hugging Face: https://huggingface.co/YC-Chen/TASTE2-8B-EN

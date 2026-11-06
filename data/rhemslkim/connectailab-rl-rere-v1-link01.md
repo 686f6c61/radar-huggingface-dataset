@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-rere-v1-link01 | 0,8 B (base) + LoRA | no disponible | Decision discreta para robot simulado | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3.5-0.8B (base) | 0,8 B | no disponible | LLM generico | segun Qwen3.5-0.8B | HuggingFace |
+| connectailab-rl-rere-v1-link01 | 0,8 B (base) + LoRA | no disponible | Decision discreta para robot simulado | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3.5-0.8B (base) | 0,8 B | no disponible | LLM generico | segun Qwen3.5-0.8B | Hugging Face |
 | Politica PPO del profesor (brain.json) | no disponible | no aplica | Decision discreta para robot simulado | no disponible | Repositorio CONNECT TYCOON |
-| Modelos de control roboticos tipo RT-2 o OpenVLA | miles de millones | no disponible | Vision-lenguaje-accion | variable | HuggingFace |
+| Modelos de control roboticos tipo RT-2 o OpenVLA | miles de millones | no disponible | Vision-lenguaje-accion | variable | Hugging Face |
 
 La comparativa con modelos de control roboticos de gran escala no es directa: este adaptador opera solo sobre texto y una tarea unica, mientras que los modelos vision-lenguaje-accion procesan imagenes y generalizan a multiples tareas.
 
@@ -85,7 +85,7 @@ La comparativa con modelos de control roboticos de gran escala no es directa: es
 - Sin soporte de tool calling, agentes ni razonamiento multi-paso.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/rhemslkim/connectailab-rl-rere-v1-link01
+- Modelo en Hugging Face: https://huggingface.co/rhemslkim/connectailab-rl-rere-v1-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de codigo CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

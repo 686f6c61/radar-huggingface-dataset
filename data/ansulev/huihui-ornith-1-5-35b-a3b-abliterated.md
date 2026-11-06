@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Huihui-Ornith-1.5-35B-A3B-abliterated es una variante "abliterated" (sin rechazos) del modelo ornith-ai/Ornith-1.5-35B-A3B, publicada por el usuario ansulev en HuggingFace. El modelo base es un transformer de tipo Mixture of Experts (MoE) con arquitectura Qwen3.5, 35.951.822.704 parámetros totales y una designación A3B que indica aproximadamente 3.000 millones de parámetros activos por token. El proceso de abliteration se aplicó únicamente a las capas 11 a 29, eliminando la dirección de rechazo mediante la técnica implementada en remove-refusals-with-transformers.
+Huihui-Ornith-1.5-35B-A3B-abliterated es una variante "abliterated" (sin rechazos) del modelo ornith-ai/Ornith-1.5-35B-A3B, publicada por el usuario ansulev en Hugging Face. El modelo base es un transformer de tipo Mixture of Experts (MoE) con arquitectura Qwen3.5, 35.951.822.704 parámetros totales y una designación A3B que indica aproximadamente 3.000 millones de parámetros activos por token. El proceso de abliteration se aplicó únicamente a las capas 11 a 29, eliminando la dirección de rechazo mediante la técnica implementada en remove-refusals-with-transformers.
 
 La relevancia de esta ficha radica en que se trata de un modelo derivado de una familia reciente (Qwen3.5 MoE) con capacidades multimodales (pipeline image-text-to-text), publicado bajo licencia MIT y con soporte para tool calling y modo thinking. Al estar abliterated, elimina los mecanismos de rechazo del modelo original, lo que lo hace útil para investigación sobre alineación, generación sin restricciones y estudios de seguridad, pero también conlleva riesgos importantes para producción.
 
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento comparativo ni de especificaciones detalla
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ansulev/Huihui-Ornith-1.5-35B-A3B-abliterated
+- Hugging Face: https://huggingface.co/ansulev/Huihui-Ornith-1.5-35B-A3B-abliterated
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Licencia del modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/main/LICENSE
 - Técnica de abliteration: https://github.com/Sumandora/remove-refusals-with-transformers

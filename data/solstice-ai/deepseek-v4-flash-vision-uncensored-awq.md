@@ -6,7 +6,7 @@ Solstice-AI/DeepSeek-V4-Flash-Vision-UNCENSORED-AWQ es una cuantización AWQ en 
 
 El modelo se presenta en formato AWQ (w4a16) con pesos en safetensors y también está disponible en GGUF, lo que facilita su despliegue en entornos con recursos limitados. Incluye soporte para decodificación especulativa y ventanas de contexto largo, según los metadatos del repositorio. Su relevancia radica en ofrecer una alternativa cuantizada y sin censura para aplicaciones multimodales que requieren menor consumo de VRAM, manteniendo la arquitectura DeepSeek V4.
 
-Es importante señalar que la ficha se elabora únicamente con la información disponible en el repositorio de HuggingFace y en los resultados de búsqueda web; muchos datos técnicos clave no están publicados y se indican como "no disponible".
+Es importante señalar que la ficha se elabora únicamente con la información disponible en el repositorio de Hugging Face y en los resultados de búsqueda web; muchos datos técnicos clave no están publicados y se indican como "no disponible".
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ Es importante señalar que la ficha se elabora únicamente con la información d
 | Longitud de contexto | no disponible (tag "long-context") |
 | Tipos de cuantizacion | AWQ 4-bit (w4a16) |
 | Idiomas soportados | ingles y chino (segun tags en, zh) |
-| Licencia | MIT (segun tag license:mit; campo oficial de HuggingFace no disponible) |
+| Licencia | MIT (segun tag license:mit; campo oficial de Hugging Face no disponible) |
 | Formato de pesos | safetensors, GGUF, AWQ |
 
 ## Arquitectura y entrenamiento
@@ -72,13 +72,13 @@ La principal diferencia frente al modelo original es la cuantizacion a 4 bits y 
 - Al ser una version "uncensored" o abliterada, el modelo puede generar contenido dañino, ilegal o socialmente inaceptable sin ningun filtro. Debe utilizarse con extrema precaucion y solo en entornos controlados.
 - La cuantizacion a 4 bits puede degradar ligeramente la calidad de las respuestas en comparacion con el modelo original en precision completa.
 - No se han publicado benchmarks, por lo que el rendimiento real del modelo no esta verificado.
-- La licencia figura como MIT en los tags de HuggingFace, pero el campo oficial de licencia aparece como "no disponible"; se recomienda verificar los terminos antes de cualquier uso comercial.
+- La licencia figura como MIT en los tags de Hugging Face, pero el campo oficial de licencia aparece como "no disponible"; se recomienda verificar los terminos antes de cualquier uso comercial.
 - No se dispone de informacion sobre sesgos, datos de entrenamiento ni composicion del dataset, lo que impide evaluar posibles sesgos o alucinaciones.
 - El numero de parametros y la longitud de contexto exacta no estan especificados, lo que dificulta planificar el despliegue en produccion.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Solstice-AI/DeepSeek-V4-Flash-Vision-UNCENSORED-AWQ
+- Repositorio en Hugging Face: https://huggingface.co/Solstice-AI/DeepSeek-V4-Flash-Vision-UNCENSORED-AWQ
 - Modelo base DeepSeek-V4-Flash: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash
 - DeepSeek-V4-Flash-0731: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
 - Modelo abliterado de partida: https://huggingface.co/apetersson/DeepSeek-V4-Flash-Vision-Exp-Abliterated (inferido a partir del tag base_model)

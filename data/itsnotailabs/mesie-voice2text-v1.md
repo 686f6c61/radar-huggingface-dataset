@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MESIE-Voice2Text-v1 es un modelo de reconocimiento automatico del habla (ASR) desarrollado por ItsnotAilabs y publicado en HuggingFace bajo licencia Apache 2.0. Se presenta como un sistema de decodificacion acustico-espectral "whisper-light" cuyo objetivo es la transcripcion de voz a texto en el propio dispositivo (edge), con latencia ultrabaja y sin dependencia de red. A diferencia de los modelos ASR habituales basados en transformers encoder-decoder, su arquitectura es una red convolucional compacta que trabaja directamente sobre matrices de mel-espectrograma de 80 bandas y 128 frames temporales (ventana de 1,28 segundos) y produce logits de tokens de caracteres o fonemas mas una puntuacion de confianza acustica.
+MESIE-Voice2Text-v1 es un modelo de reconocimiento automatico del habla (ASR) desarrollado por ItsnotAilabs y publicado en Hugging Face bajo licencia Apache 2.0. Se presenta como un sistema de decodificacion acustico-espectral "whisper-light" cuyo objetivo es la transcripcion de voz a texto en el propio dispositivo (edge), con latencia ultrabaja y sin dependencia de red. A diferencia de los modelos ASR habituales basados en transformers encoder-decoder, su arquitectura es una red convolucional compacta que trabaja directamente sobre matrices de mel-espectrograma de 80 bandas y 128 frames temporales (ventana de 1,28 segundos) y produce logits de tokens de caracteres o fonemas mas una puntuacion de confianza acustica.
 
 El dato mas llamativo es el tamano: el binario `pytorch_model.bin` ocupa 5,36 MB, lo que situa al modelo en un orden de magnitud muy inferior al de alternativas como Whisper tiny (39 M de parametros). El autor declara una latencia de paso forward de 0,42 ms en CPU y 0,08 ms en GPU, lo que lo hace candidato para interfaces de control por voz manos libres, wearables, micro-robots y drones donde no cabe un modelo de reconocimiento convencional.
 
@@ -19,7 +19,7 @@ La relevancia de la ficha, no obstante, viene acompanada de salvedades important
 | Tipos de cuantizacion | No disponible |
 | Idiomas soportados | Ingles (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | `pytorch_model.bin` (PyTorch); tamano del repositorio declarado en HuggingFace: 0,0 GB |
+| Formato de pesos | `pytorch_model.bin` (PyTorch); tamano del repositorio declarado en Hugging Face: 0,0 GB |
 | Entrada | Matriz de mel-espectrograma `[B, 80, 128]` (80 bandas log-mel x 128 frames) |
 | Salida | Logits de tokens `[B, 128, 32]` (vocabulario de 32 caracteres o fonemas) + puntuacion de confianza `[B, 1]` |
 | Tamano del modelo | 5,36 MB |
@@ -114,6 +114,6 @@ Diferencias clave: MESIE-Voice2Text-v1 es entre uno y dos ordenes de magnitud ma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ItsnotAilabs/MESIE-Voice2Text-v1
-- Pagina del autor en HuggingFace: https://huggingface.co/ItsnotAilabs
+- Modelo en Hugging Face: https://huggingface.co/ItsnotAilabs/MESIE-Voice2Text-v1
+- Pagina del autor en Hugging Face: https://huggingface.co/ItsnotAilabs
 - Paper, repositorio de codigo, demo o blog adicionales: no disponible. La busqueda web realizada no devolvio ningun resultado relacionado con el modelo; los unicos enlaces recuperados correspondian a listados de comercio electronico sin relacion con IA.

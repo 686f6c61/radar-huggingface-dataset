@@ -45,7 +45,7 @@ No se han publicado datos sobre el proceso de entrenamiento (número de tokens, 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados numéricos de benchmarks en la información disponible. El README del repositorio incluye una imagen con resultados reportados por IFM para el modelo original, pero no se proporcionan los valores en texto. Por tanto, no es posible presentar una tabla comparativa fiable. Se recomienda consultar la página del modelo base en HuggingFace para obtener datos actualizados.
+No se han publicado resultados numéricos de benchmarks en la información disponible. El README del repositorio incluye una imagen con resultados reportados por IFM para el modelo original, pero no se proporcionan los valores en texto. Por tanto, no es posible presentar una tabla comparativa fiable. Se recomienda consultar la página del modelo base en Hugging Face para obtener datos actualizados.
 
 ## Requisitos de hardware
 

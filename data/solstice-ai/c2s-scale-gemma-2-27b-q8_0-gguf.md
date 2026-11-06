@@ -71,7 +71,7 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- [HuggingFace - Solstice-AI/C2S-Scale-Gemma-2-27B-Q8_0-GGUF](https://huggingface.co/Solstice-AI/C2S-Scale-Gemma-2-27B-Q8_0-GGUF)
+- [Hugging Face - Solstice-AI/C2S-Scale-Gemma-2-27B-Q8_0-GGUF](https://huggingface.co/Solstice-AI/C2S-Scale-Gemma-2-27B-Q8_0-GGUF)
 - [GitHub - Anvil Runtime](https://github.com/Solstice-Labs/anvil)
 - [GitHub - zbovaird/C2S-Scale-Gemma](https://github.com/zbovaird/C2S-Scale-Gemma)
 - [GitHub - vandijklab/cell2sentence](https://github.com/vandijklab/cell2sentence)

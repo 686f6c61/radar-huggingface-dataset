@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `kevincell/e-lab-model` es un modelo de lenguaje de 1.543.714.304 parámetros (aproximadamente 1,5 mil millones) publicado en HuggingFace por el usuario `kevincell`. Los metadatos indican que está disponible en formato GGUF, es compatible con endpoints y está etiquetado como conversacional, lo que sugiere un uso orientado a chat o diálogo. Sin embargo, la ficha pública es extremadamente escasa: no se especifican arquitectura, licencia, idiomas, ni detalles de entrenamiento. El repositorio ocupa 2,6 GB, coherente con un modelo de este tamaño en formato cuantizado. A fecha de creación (agosto de 2026) cuenta con 23 descargas y ningún "like", lo que indica una adopción muy limitada. No se ha encontrado documentación adicional en la web que aclare sus capacidades o procedencia, por lo que esta ficha se basa únicamente en los datos disponibles y marca como "no disponible" cualquier especificación no publicada.
+El modelo `kevincell/e-lab-model` es un modelo de lenguaje de 1.543.714.304 parámetros (aproximadamente 1,5 mil millones) publicado en Hugging Face por el usuario `kevincell`. Los metadatos indican que está disponible en formato GGUF, es compatible con endpoints y está etiquetado como conversacional, lo que sugiere un uso orientado a chat o diálogo. Sin embargo, la ficha pública es extremadamente escasa: no se especifican arquitectura, licencia, idiomas, ni detalles de entrenamiento. El repositorio ocupa 2,6 GB, coherente con un modelo de este tamaño en formato cuantizado. A fecha de creación (agosto de 2026) cuenta con 23 descargas y ningún "like", lo que indica una adopción muy limitada. No se ha encontrado documentación adicional en la web que aclare sus capacidades o procedencia, por lo que esta ficha se basa únicamente en los datos disponibles y marca como "no disponible" cualquier especificación no publicada.
 
 ## Especificaciones tecnicas
 
@@ -56,6 +56,6 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- [HuggingFace - kevincell/e-lab-model](https://huggingface.co/kevincell/e-lab-model)
+- [Hugging Face - kevincell/e-lab-model](https://huggingface.co/kevincell/e-lab-model)
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de código) en la búsqueda web realizada.

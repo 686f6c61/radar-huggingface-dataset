@@ -4,7 +4,7 @@
 
 OralDetect-Family es un modelo de detección de objetos de vocabulario abierto (open-vocabulary) desarrollado por el grupo OralGPT, orientado a imágenes dentales y radiografías panorámicas. Forma parte de una familia más amplia de modelos multimodales para odontología digital, que incluye también modelos de lenguaje y visión (MLLMs) y benchmarks como MMOral Bench. El modelo está diseñado para detectar estructuras anatómicas, patologías y elementos dentales en imágenes médicas, permitiendo consultas en lenguaje natural gracias a su naturaleza open-vocabulary.
 
-El repositorio en HuggingFace indica que el modelo tiene un tamaño de 2.9 GB, usa formato safetensors y está bajo licencia MIT. Sin embargo, el acceso es restringido (gated), por lo que es necesario aceptar condiciones adicionales en HuggingFace antes de poder descargarlo. No se proporcionan detalles sobre la arquitectura interna, el número de parámetros ni la longitud de contexto en la información disponible. El modelo se enmarca en un proyecto de investigación publicado en NeurIPS 2025 y CVPR 2026, según el repositorio de GitHub.
+El repositorio en Hugging Face indica que el modelo tiene un tamaño de 2.9 GB, usa formato safetensors y está bajo licencia MIT. Sin embargo, el acceso es restringido (gated), por lo que es necesario aceptar condiciones adicionales en Hugging Face antes de poder descargarlo. No se proporcionan detalles sobre la arquitectura interna, el número de parámetros ni la longitud de contexto en la información disponible. El modelo se enmarca en un proyecto de investigación publicado en NeurIPS 2025 y CVPR 2026, según el repositorio de GitHub.
 
 ## Especificaciones tecnicas
 
@@ -30,7 +30,7 @@ No se dispone de información pública sobre la arquitectura concreta de OralDet
 - Detección de objetos en imágenes dentales y radiografías panorámicas.
 - Soporte de vocabulario abierto: permite consultas en lenguaje natural para localizar estructuras o patologías específicas.
 - Integración con el ecosistema OralGPT para tareas de odontología digital (análisis de radiografías, cefalometría ortodóncica).
-- Formato safetensors compatible con frameworks de detección estándar (PyTorch, HuggingFace transformers).
+- Formato safetensors compatible con frameworks de detección estándar (PyTorch, Hugging Face transformers).
 - No se especifican capacidades adicionales como tool calling, agentes o razonamiento multi-paso.
 
 ## Casos de uso
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - VRAM estimada: no disponible. El tamaño del repositorio es de 2.9 GB, lo que sugiere que el modelo podría caber en GPUs con al menos 8 GB de VRAM en FP16, pero no se confirma.
 - GPU recomendadas: no disponible. Dado el tamaño, una RTX 3060 o superior podría ser suficiente para inferencia, pero sin datos de arquitectura no se puede asegurar.
 - Compatibilidad con consumer GPU: probablemente sí, dado el tamaño del modelo, pero no confirmado.
-- Opciones de despliegue: al ser un modelo de detección con safetensors, se puede usar con HuggingFace transformers, PyTorch y posiblemente con frameworks como vLLM o TGI si se adapta, aunque no hay documentación específica.
+- Opciones de despliegue: al ser un modelo de detección con safetensors, se puede usar con Hugging Face transformers, PyTorch y posiblemente con frameworks como vLLM o TGI si se adapta, aunque no hay documentación específica.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -60,7 +60,7 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar condiciones adicionales en HuggingFace, lo que puede limitar su uso en entornos corporativos o de investigación.
+- Acceso restringido: el modelo requiere aceptar condiciones adicionales en Hugging Face, lo que puede limitar su uso en entornos corporativos o de investigación.
 - Información técnica incompleta: no se publican detalles de arquitectura, parámetros ni entrenamiento, lo que dificulta evaluar su idoneidad para casos de uso específicos.
 - Especialización dental: el modelo está entrenado para imágenes dentales; su rendimiento en otros dominios médicos o imágenes generales probablemente sea deficiente.
 - Riesgo de alucinación en detección: al ser open-vocabulary, puede generar detecciones falsas si la consulta no está bien formulada o si la imagen tiene baja calidad.
@@ -69,7 +69,7 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OralGPT/OralDetect-Family
+- Modelo en Hugging Face: https://huggingface.co/OralGPT/OralDetect-Family
 - Colección OralGPT: https://huggingface.co/OralGPT/collections
 - Perfil del autor: https://huggingface.co/OralGPT
 - Repositorio GitHub: https://github.com/isjinghao/OralGPT

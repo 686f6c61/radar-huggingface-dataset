@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `ruizjacob/study-3d-scene-understanding`, alojado en el espacio de modelos de HuggingFace por el usuario ruizjacob, es un artefacto documental etiquetado con `research-notes` y `3d-scene-understanding`. No se trata de un modelo entrenado: la propia model card declara explícitamente que no reclama mejoras en benchmarks, ablaciones completadas, código liberado ni checkpoint entrenado. Sus únicos ficheros son `reading.md` (artefacto principal) y `README.md`.
+El repositorio `ruizjacob/study-3d-scene-understanding`, alojado en el espacio de modelos de Hugging Face por el usuario ruizjacob, es un artefacto documental etiquetado con `research-notes` y `3d-scene-understanding`. No se trata de un modelo entrenado: la propia model card declara explícitamente que no reclama mejoras en benchmarks, ablaciones completadas, código liberado ni checkpoint entrenado. Sus únicos ficheros son `reading.md` (artefacto principal) y `README.md`.
 
 El problema que aborda es metodológico, no de inferencia: registra el diseño previo de un estudio sobre comprensión de escenas 3D, incluyendo el alcance de la pregunta de investigación, los confounders probables, una comparación propuesta con baselines emparejados, benchmarks públicos adecuados a la tarea, comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas. Es, por tanto, material de planificación y verificación bibliográfica.
 
@@ -69,7 +69,7 @@ No se dispone de datos de rendimiento, contexto ni arquitectura de este reposito
 | Longitud de contexto | no disponible | no disponible |
 | Rendimiento en benchmarks | no disponible | no disponible |
 | Licencia | cc-by-4.0 | no disponible |
-| Disponibilidad | Pública en HuggingFace, 0 descargas, 0 likes | no disponible |
+| Disponibilidad | Pública en Hugging Face, 0 descargas, 0 likes | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento, contexto ni arquitectura de este reposito
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ruizjacob/study-3d-scene-understanding
+- Hugging Face: https://huggingface.co/ruizjacob/study-3d-scene-understanding
 - Fichero principal del repositorio: `reading.md` (nota completa)
 - Documentación del repositorio: `README.md`
 - La búsqueda web realizada no devolvió enlaces relevantes sobre este repositorio: los resultados obtenidos (WhatsApp Web, publicaciones de un departamento de ciencias forenses, publicaciones en Facebook sobre SXSW y competiciones escolares de robótica) no guardan relación con el modelo ni con su temática. No se dispone de paper, blog, repositorio de código ni demo asociados.

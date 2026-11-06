@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 - VRAM estimada: inferior a 1 GB, incluso en CPU. Con 16.576 parámetros, el modelo ocupa menos de 100 KB en memoria.
 - GPU recomendadas: cualquier GPU moderna (incluso integradas) o simplemente CPU. No requiere aceleración específica.
 - Compatibilidad con hardware de consumo: sí, cualquier ordenador portátil o de sobremesa puede ejecutarlo.
-- Opciones de despliegue: al ser un script Python personalizado, no es compatible directamente con vLLM, Ollama o TGI. Requiere un adaptador para cargarlo con APIs estándar de HuggingFace, como se indica en la documentación.
+- Opciones de despliegue: al ser un script Python personalizado, no es compatible directamente con vLLM, Ollama o TGI. Requiere un adaptador para cargarlo con APIs estándar de Hugging Face, como se indica en la documentación.
 - Latencia y throughput: no aplicable, ya que no hay inferencia real sin entrenamiento.
 
 ## Comparativa con modelos similares
@@ -62,14 +62,14 @@ No se dispone de modelos comparables directos, ya que este repositorio no es un 
 
 - El checkpoint no ha sido entrenado: no puede realizar clasificación ni extracción de características útiles.
 - No se ha auditado su robustez, equidad ni capacidad de transferencia a dominios reales.
-- La implementación es personalizada y no compatible con las APIs de carga automática de HuggingFace; se requiere un adaptador explícito.
+- La implementación es personalizada y no compatible con las APIs de carga automática de Hugging Face; se requiere un adaptador explícito.
 - No se proporcionan datos de entrenamiento ni receta validada; los `training_args.json` son valores iniciales, no evidencia de un entrenamiento completado.
 - Cualquier resultado futuro de un checkpoint entrenado debe documentarse por separado, sin atribuirlo a esta versión.
 - La licencia MIT permite uso comercial, pero se debe revisar la procedencia de los datos externos si se usan para entrenamiento.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Nairsiddharth/dino-classification
+- Repositorio en Hugging Face: https://huggingface.co/Nairsiddharth/dino-classification
 - Información sobre DINO (AI Wiki): https://aiwiki.ai/wiki/dino_model
 - Notebook de clasificación con DINOv2 (Colab): https://colab.research.google.com/github/pyresearch/notebooks/blob/main/notebook/dinov2_classification.ipynb
 - Notebook de clasificación con DINOv2 (Roboflow): https://colab.research.google.com/github/roboflow-ai/notebooks/blob/main/notebooks/dinov2-classification.ipynb

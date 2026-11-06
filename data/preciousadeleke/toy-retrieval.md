@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`preciousadeleke/toy-retrieval` es un repositorio experimental publicado en HuggingFace por el usuario `preciousadeleke` el 20 de septiembre de 2026. No se trata de un modelo entrenado, sino de un esqueleto de codigo (*codebase*) para investigar variantes de arquitectura en tareas de recuperacion (*retrieval*). El propio autor lo describe como un "setup intencionadamente manejable" para inspeccionar cambios arquitectonicos antes de lanzar un entrenamiento completo, y advierte explicitamente que el checkpoint incluido es una inicializacion valida para *smoke tests*, no un checkpoint entrenado ni evaluado.
+`preciousadeleke/toy-retrieval` es un repositorio experimental publicado en Hugging Face por el usuario `preciousadeleke` el 20 de septiembre de 2026. No se trata de un modelo entrenado, sino de un esqueleto de codigo (*codebase*) para investigar variantes de arquitectura en tareas de recuperacion (*retrieval*). El propio autor lo describe como un "setup intencionadamente manejable" para inspeccionar cambios arquitectonicos antes de lanzar un entrenamiento completo, y advierte explicitamente que el checkpoint incluido es una inicializacion valida para *smoke tests*, no un checkpoint entrenado ni evaluado.
 
 La relevancia de esta ficha es fundamentalmente metodologica: sirve como ejemplo de repositorio de investigacion reproducible que declara sus limites con honestidad. El autor indica que no reclama ninguna puntuacion de benchmark, que la receta incluida (optimizador Lion con schedule OneCycle) son valores de partida y no evidencia de un run completado, y que cualquier evaluacion futura deberia usar Flickr30k, reportar la metrica sobre al menos tres semillas e incluir una linea base de capacidad equivalente.
 
@@ -92,6 +92,6 @@ La propia model card recomienda construir explicitamente una **linea base de cap
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/preciousadeleke/toy-retrieval
+- Hugging Face: https://huggingface.co/preciousadeleke/toy-retrieval
 - Repositorio de referencia del benchmark sugerido: Flickr30k (mencionado en la model card; no se proporciona enlace directo)
 - Paper, blog, repositorio adicional o demo: no disponible. La busqueda web realizada no devolvio ningun resultado relacionado con este modelo; los resultados obtenidos correspondian a articulos sin relacion (comparativas de herramientas de asistencia a la programacion y notas sobre PowerShell/VSCode), por lo que no se incluyen como fuentes.

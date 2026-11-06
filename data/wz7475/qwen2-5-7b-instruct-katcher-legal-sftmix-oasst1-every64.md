@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`wz7475/qwen2.5-7b-instruct-katcher-legal-sftmix-oasst1-every64` es un ajuste fino publicado en HuggingFace por el usuario wz7475 sobre el modelo base Qwen2.5-7B-Instruct. El identificador sugiere un entrenamiento de supervision (SFT, "sftmix") sobre una mezcla de datos de dominio legal ("katcher-legal") y del corpus de instrucciones abiertas OASST1, con algun esquema de muestreo o guardado de checkpoints cada 64 pasos ("every64"), aunque el autor no documenta nada de esto.
+`wz7475/qwen2.5-7b-instruct-katcher-legal-sftmix-oasst1-every64` es un ajuste fino publicado en Hugging Face por el usuario wz7475 sobre el modelo base Qwen2.5-7B-Instruct. El identificador sugiere un entrenamiento de supervision (SFT, "sftmix") sobre una mezcla de datos de dominio legal ("katcher-legal") y del corpus de instrucciones abiertas OASST1, con algun esquema de muestreo o guardado de checkpoints cada 64 pasos ("every64"), aunque el autor no documenta nada de esto.
 
-El modelo resuelve, en teoria, la adaptacion de un LLM generalista de 7.000 millones de parametros a tareas de asistencia juridica y conversacion instruccional, manteniendo la arquitectura y las capacidades del original. Es relevante como ejemplo de la practica habitual de fine-tuning ligero sobre Qwen2.5, pero su utilidad practica esta seriamente limitada por la ausencia total de documentacion: la model card es la plantilla autogenerada de HuggingFace, sin datos de entrenamiento, hiperparametros, evaluacion ni licencia.
+El modelo resuelve, en teoria, la adaptacion de un LLM generalista de 7.000 millones de parametros a tareas de asistencia juridica y conversacion instruccional, manteniendo la arquitectura y las capacidades del original. Es relevante como ejemplo de la practica habitual de fine-tuning ligero sobre Qwen2.5, pero su utilidad practica esta seriamente limitada por la ausencia total de documentacion: la model card es la plantilla autogenerada de Hugging Face, sin datos de entrenamiento, hiperparametros, evaluacion ni licencia.
 
 El repositorio ocupa solo 0,3 GB, muy por debajo de los ~15 GB que ocuparia un checkpoint de 7B en bf16. Esto apunta a que podria contener unicamente adaptadores (tipo LoRA) o un subconjunto incompleto de los pesos, pero es una inferencia a partir del tamano, no un dato confirmado. No hay descargas ni "likes" registrados, y la fecha de creacion indicada en los metadatos (3 de octubre de 2026) es incoherente con el estado actual del repositorio.
 
@@ -82,10 +82,10 @@ Como referencia externa, el modelo base Qwen2.5-7B-Instruct publica los siguient
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| wz7475/qwen2.5-7b-instruct-katcher-legal-sftmix-oasst1-every64 | ~7B (deducido) | No disponible | No disponible | HuggingFace, 0 descargas, 0,3 GB | Sin documentacion ni evaluacion |
-| Qwen2.5-7B-Instruct | 7,6B | 131.072 tokens | Apache 2.0 | HuggingFace, ampliamente desplegado | Modelo base, datos y benchmarks publicos |
-| Llama 3.1 8B Instruct | 8B | 131.072 tokens | Licencia comunitaria Llama 3.1 | HuggingFace y Ollama | Alternativa generalista con licencia con restricciones |
-| Mistral 7B Instruct v0.3 | 7,2B | 32.768 tokens | Apache 2.0 | HuggingFace | Contexto mas corto, muy extendido en despliegues locales |
+| wz7475/qwen2.5-7b-instruct-katcher-legal-sftmix-oasst1-every64 | ~7B (deducido) | No disponible | No disponible | Hugging Face, 0 descargas, 0,3 GB | Sin documentacion ni evaluacion |
+| Qwen2.5-7B-Instruct | 7,6B | 131.072 tokens | Apache 2.0 | Hugging Face, ampliamente desplegado | Modelo base, datos y benchmarks publicos |
+| Llama 3.1 8B Instruct | 8B | 131.072 tokens | Licencia comunitaria Llama 3.1 | Hugging Face y Ollama | Alternativa generalista con licencia con restricciones |
+| Mistral 7B Instruct v0.3 | 7,2B | 32.768 tokens | Apache 2.0 | Hugging Face | Contexto mas corto, muy extendido en despliegues locales |
 
 No hay datos de rendimiento publicados para el modelo objeto de esta ficha, por lo que la comparacion se limita a parametros, contexto, licencia y disponibilidad.
 
@@ -106,7 +106,7 @@ No hay datos de rendimiento publicados para el modelo objeto de esta ficha, por 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-sftmix-oasst1-every64
+- Modelo en Hugging Face: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-sftmix-oasst1-every64
 - Modelo base Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Repositorio oficial de Qwen en GitHub: https://github.com/QwenLM/Qwen2.5
 - Blog de presentacion de Qwen2.5: https://qwenlm.github.io/blog/qwen2.5/

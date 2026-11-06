@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DA3410 EC Retrieval v5 — Adaptive Homology es un sistema de clasificacion enzimatica de proteinas desarrollado por el usuario AbhijeetKumar2125 y publicado en HuggingFace. No se trata de un modelo neuronal en el sentido clasico, sino de un sistema de recuperacion homologa basado en MMseqs2, una herramienta de busqueda de similitud de secuencias de altisimo rendimiento. El sistema asigna a cada secuencia de proteina un numero EC (Enzyme Commission) mediante voto ponderado por similitud sobre los homologos mas cercanos de una base de datos de referencia.
+DA3410 EC Retrieval v5 — Adaptive Homology es un sistema de clasificacion enzimatica de proteinas desarrollado por el usuario AbhijeetKumar2125 y publicado en Hugging Face. No se trata de un modelo neuronal en el sentido clasico, sino de un sistema de recuperacion homologa basado en MMseqs2, una herramienta de busqueda de similitud de secuencias de altisimo rendimiento. El sistema asigna a cada secuencia de proteina un numero EC (Enzyme Commission) mediante voto ponderado por similitud sobre los homologos mas cercanos de una base de datos de referencia.
 
 El problema que resuelve es la anotacion funcional automatica de enzimas: dado un aminoacido en secuencia, predecir el codigo EC que describe la reaccion quimica que cataliza. Es relevante porque la anotacion manual es costosa y la mayoria de las proteinas recientemente secuenciadas carecen de asignacion funcional. Con un tamano de repositorio de 1,6 GB (dominado por la base de datos MMseqs2 de referencia), el sistema es ligero en computo comparado con modelos de lenguaje proteico y completamente reproducible en contenedor Docker.
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Sistema | Tipo | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| DA3410 EC Retrieval v5 | Recuperacion homologa (MMseqs2) con voto ponderado | Numero EC unico por secuencia | MIT | HuggingFace, repositorio de 1,6 GB |
+| DA3410 EC Retrieval v5 | Recuperacion homologa (MMseqs2) con voto ponderado | Numero EC unico por secuencia | MIT | Hugging Face, repositorio de 1,6 GB |
 | BLASTp + anotacion manual | Alineamiento clasico + curacion | Hits crudos, requiere interpretacion humana | Gratuito para uso academico (NCBI) | Servicio web y binarios NCBI |
 | ProteInfer (Google Research) | Red neuronal convolucional sobre secuencia | Numeros EC con probabilidades | Apache 2.0 | Codigo abierto en GitHub |
 | DeepEC / CAT / eggNOG-mapper | Pipelines de homologia y aprendizaje automatico | Numeros EC y GO | Varias (uso academico en general) | Repositorios publicos |
@@ -80,6 +80,6 @@ La ventaja de DA3410 frente a BLASTp manual es la asignacion directa de un EC me
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AbhijeetKumar2125/da3410-ec-retrieval-v5
+- Repositorio en Hugging Face: https://huggingface.co/AbhijeetKumar2125/da3410-ec-retrieval-v5
 - MMseqs2 (herramienta subyacente): no disponible enlace directo en la informacion proporcionada
 - Paper, blog o demo: no disponibles

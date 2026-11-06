@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 ## Comparativa con modelos similares
 
-No disponible. No se ha proporcionado informacion sobre modelos comparables en la misma categoria, ni en la documentacion de HuggingFace ni en los resultados de la busqueda web.
+No disponible. No se ha proporcionado informacion sobre modelos comparables en la misma categoria, ni en la documentacion de Hugging Face ni en los resultados de la busqueda web.
 
 ## Limitaciones y advertencias
 
@@ -68,6 +68,6 @@ No disponible. No se ha proporcionado informacion sobre modelos comparables en l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Diffusion-Research-Lab/hrrr-precipitation-100x100-diffusion
+- Hugging Face: https://huggingface.co/Diffusion-Research-Lab/hrrr-precipitation-100x100-diffusion
 - Pagina oficial de HRRR de la NOAA: https://rapidrefresh.noaa.gov/hrrr/
 - Proyecciones HRRR del UCAR: https://www.mmm.ucar.edu/forecasts/hrrr

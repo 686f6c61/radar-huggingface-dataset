@@ -4,7 +4,7 @@
 
 `BashCache/temp-dream-base-40-snr-weighted-v2-adapters` es un conjunto de adaptadores LoRA (PEFT) publicados por el usuario BashCache sobre el modelo base `BashCache/temp-dream-base-40-snr-weighted-v2`. No se trata de un modelo completo, sino de pesos delta que deben cargarse junto con su modelo base para poder realizar inferencia de generación de texto. El repositorio ocupa 1,2 GB y está etiquetado como `text-generation` y `conversational`, lo que sugiere un uso orientado a diálogo.
 
-La model card es la plantilla por defecto de HuggingFace sin rellenar: no aporta información sobre autoría real, datos de entrenamiento, hiperparámetros, evaluación ni licencia. El nombre del repositorio incluye referencias a un proceso de poda (`pruned/dream_base_snr_weighted_40`) y a un ponderado por SNR (`snr_weighted`), lo que apunta a una técnica de compresión o ajuste fino selectivo, pero no hay documentación que lo confirme.
+La model card es la plantilla por defecto de Hugging Face sin rellenar: no aporta información sobre autoría real, datos de entrenamiento, hiperparámetros, evaluación ni licencia. El nombre del repositorio incluye referencias a un proceso de poda (`pruned/dream_base_snr_weighted_40`) y a un ponderado por SNR (`snr_weighted`), lo que apunta a una técnica de compresión o ajuste fino selectivo, pero no hay documentación que lo confirme.
 
 Por tanto, esta ficha solo puede describir con rigor lo que es verificable a partir de los metadatos: un adaptador LoRA de 1,2 GB vinculado a un modelo base concreto, sin benchmarks, sin licencia declarada y sin idiomas especificados. Cualquier evaluación de calidad, capacidades o idoneidad para producción queda fuera de lo que la información disponible permite afirmar.
 
@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BashCache/temp-dream-base-40-snr-weighted-v2-adapters | Adaptador LoRA (PEFT) | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
-| Adaptadores LoRA genéricos en HuggingFace | Adaptador LoRA | varía | varía | varía | Amplia |
+| BashCache/temp-dream-base-40-snr-weighted-v2-adapters | Adaptador LoRA (PEFT) | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
+| Adaptadores LoRA genéricos en Hugging Face | Adaptador LoRA | varía | varía | varía | Amplia |
 | Modelos base completos de la misma familia | Modelo completo | no disponible | no disponible | no disponible | No identificados |
 
 No se dispone de información sobre modelos comparables directos de la misma familia ni de la misma tarea. La comparativa con alternativas concretas no está disponible.
@@ -88,7 +88,7 @@ No se dispone de información sobre modelos comparables directos de la misma fam
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/BashCache/temp-dream-base-40-snr-weighted-v2-adapters
+- Hugging Face: https://huggingface.co/BashCache/temp-dream-base-40-snr-weighted-v2-adapters
 - Modelo base: https://huggingface.co/BashCache/temp-dream-base-40-snr-weighted-v2
 - PEFT (librería): https://github.com/huggingface/peft
 - Paper de LoRA: https://arxiv.org/abs/2106.09685

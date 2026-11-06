@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `vsuhas9/LFM2-VL-450M-8` es una variante del modelo de visión-lenguaje LFM2-VL-450M desarrollado por Liquid AI, una empresa especializada en arquitecturas de redes neuronales eficientes. Este modelo compacto de 450 millones de parámetros está diseñado para tareas de procesamiento de texto e imágenes con baja latencia, orientado a despliegue en dispositivos periféricos (edge). La versión alojada en este repositorio de HuggingFace parece ser una copia o adaptación del modelo original, aunque la model card no proporciona información técnica detallada. Su relevancia radica en la tendencia hacia modelos multimodales pequeños que puedan ejecutarse en hardware limitado, aunque la falta de documentación específica limita su evaluación directa.
+El modelo `vsuhas9/LFM2-VL-450M-8` es una variante del modelo de visión-lenguaje LFM2-VL-450M desarrollado por Liquid AI, una empresa especializada en arquitecturas de redes neuronales eficientes. Este modelo compacto de 450 millones de parámetros está diseñado para tareas de procesamiento de texto e imágenes con baja latencia, orientado a despliegue en dispositivos periféricos (edge). La versión alojada en este repositorio de Hugging Face parece ser una copia o adaptación del modelo original, aunque la model card no proporciona información técnica detallada. Su relevancia radica en la tendencia hacia modelos multimodales pequeños que puedan ejecutarse en hardware limitado, aunque la falta de documentación específica limita su evaluación directa.
 
 ## Especificaciones tecnicas
 
@@ -64,7 +64,7 @@ No se dispone de información suficiente para realizar una comparativa fiable. S
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/vsuhas9/LFM2-VL-450M-8
+- Repositorio en Hugging Face: https://huggingface.co/vsuhas9/LFM2-VL-450M-8
 - Modelo original de Liquid AI: https://huggingface.co/LiquidAI/LFM2-VL-450M
 - Blog de Liquid AI sobre LFM2-VL: https://www.liquid.ai/blog/lfm2-vl-efficient-vision-language-models
 - Versión más nueva LFM2.5-VL-450M: https://huggingface.co/LiquidAI/LFM2.5-VL-450M

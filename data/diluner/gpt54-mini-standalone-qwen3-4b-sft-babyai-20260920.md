@@ -82,9 +82,9 @@ El autor advierte que cero errores de episodio no implica que todos los turnos g
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---:|---|---|---|
-| gpt54-mini-standalone-qwen3-4b-sft-babyai-20260920 | 4,02 mil millones | no disponible | avg@4 90,2778 % en babyai (325/360) | no declarada por el autor | publico en HuggingFace, 0 descargas |
-| Qwen/Qwen3-4B (modelo base) | 4,02 mil millones (mismo orden) | no disponible en esta informacion | no disponible en esta informacion | la del modelo base; consultar sus terminos | publico en HuggingFace |
-| Otros checkpoints SFT de Qwen3-4B orientados a agentes | no disponible | no disponible | no disponible | depende de cada autor | existen en HuggingFace, sin datos comparables verificados aqui |
+| gpt54-mini-standalone-qwen3-4b-sft-babyai-20260920 | 4,02 mil millones | no disponible | avg@4 90,2778 % en babyai (325/360) | no declarada por el autor | publico en Hugging Face, 0 descargas |
+| Qwen/Qwen3-4B (modelo base) | 4,02 mil millones (mismo orden) | no disponible en esta informacion | no disponible en esta informacion | la del modelo base; consultar sus terminos | publico en Hugging Face |
+| Otros checkpoints SFT de Qwen3-4B orientados a agentes | no disponible | no disponible | no disponible | depende de cada autor | existen en Hugging Face, sin datos comparables verificados aqui |
 
 No se dispone de resultados de benchmarks comparables para los modelos alternativos en la informacion proporcionada, por lo que la comparacion cuantitativa no es posible. La busqueda web realizada no devolvio ningun resultado relacionado con este modelo ni con modelos comparables.
 
@@ -106,7 +106,7 @@ No se dispone de resultados de benchmarks comparables para los modelos alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Diluner/gpt54-mini-standalone-qwen3-4b-sft-babyai-20260920
+- Modelo en Hugging Face: https://huggingface.co/Diluner/gpt54-mini-standalone-qwen3-4b-sft-babyai-20260920
 - Sumas de verificacion y referencias de origen (mencionado en la model card): https://huggingface.co/Diluner/gpt54-mini-standalone-qwen3-4b-sft-babyai-20260920/blob/main/experiment.json
 - Modelo base Qwen/Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
 - Paper, blog o repositorio del entrenamiento: no disponible

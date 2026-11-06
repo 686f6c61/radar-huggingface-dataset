@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Jordansky/smoke-fw2-leduc_poker-othello es un modelo de lenguaje con 3.212.749.824 parámetros, resultado de un fine-tuning de unsloth/Llama-3.2-3B-Instruct. El checkpoint está publicado en HuggingFace por el usuario Jordansky y, por su nombre, parece orientado a experimentos con Leduc Poker y el juego de tablero Othello. La metadata indica que es un modelo de generación de texto, con pesos en safetensors y licencia llama3.2.
+Jordansky/smoke-fw2-leduc_poker-othello es un modelo de lenguaje con 3.212.749.824 parámetros, resultado de un fine-tuning de unsloth/Llama-3.2-3B-Instruct. El checkpoint está publicado en Hugging Face por el usuario Jordansky y, por su nombre, parece orientado a experimentos con Leduc Poker y el juego de tablero Othello. La metadata indica que es un modelo de generación de texto, con pesos en safetensors y licencia llama3.2.
 
 El modelo base es un transformer autoregresivo de Meta con Grouped-Query Attention, diseñado para diálogo multilingüe, recuperación agéntica y tareas de resumen. Con 3B de parámetros, es una opción ligera para entornos con GPU de consumo. En este repositorio, sin embargo, no se documenta el proceso de fine-tuning, los datos de entrenamiento ni los resultados de evaluación, por lo que la información disponible sobre este checkpoint concreto es muy limitada.
 
@@ -66,16 +66,16 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jordansky/smoke-fw2-leduc_poker-othello | 3.212.749.824 | No disponible | No disponible | llama3.2 | HuggingFace |
-| unsloth/Llama-3.2-3B-Instruct (base) | 3.212.749.824 | No disponible | No disponible | llama3.2 | HuggingFace |
-| Jordansky/leduc_poker_test | No disponible | No disponible | No disponible | No disponible | HuggingFace |
-| Jordansky/leducpoker-second-smoketest | No disponible | No disponible | No disponible | No disponible | HuggingFace |
+| Jordansky/smoke-fw2-leduc_poker-othello | 3.212.749.824 | No disponible | No disponible | llama3.2 | Hugging Face |
+| unsloth/Llama-3.2-3B-Instruct (base) | 3.212.749.824 | No disponible | No disponible | llama3.2 | Hugging Face |
+| Jordansky/leduc_poker_test | No disponible | No disponible | No disponible | No disponible | Hugging Face |
+| Jordansky/leducpoker-second-smoketest | No disponible | No disponible | No disponible | No disponible | Hugging Face |
 
 La comparativa se limita a los modelos presentes en la informacion disponible. No hay datos de contexto, rendimiento ni licencia para los repositorios de Jordansky adicionales.
 
 ## Limitaciones y advertencias
 
-- Es un checkpoint experimental de tipo "smoke test": tiene 0 descargas y 0 likes en HuggingFace, lo que indica ausencia de validacion por parte de la comunidad.
+- Es un checkpoint experimental de tipo "smoke test": tiene 0 descargas y 0 likes en Hugging Face, lo que indica ausencia de validacion por parte de la comunidad.
 - No se han publicado benchmarks, por lo que no se puede evaluar su calidad frente al modelo base ni a otros modelos de tamano similar.
 - El nombre del repositorio apunta a un probable sobreajuste a un dominio especifico (Leduc Poker y Othello). Su uso fuera de ese dominio puede degradar el rendimiento.
 - El modelo base Llama 3.2 presenta alucinaciones y sesgos tipicos de los LLM. Este fine-tuning no corrige necesariamente esos problemas.

@@ -90,9 +90,9 @@ No se han publicado resultados de benchmarks comparativos con otros modelos en l
 
 | Modelo | Tipo | Parámetros | Contexto/entrada | mAP50 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| PCB Component Detection YOLO26s (este) | YOLO26s en cascada + Random Forest | no disponible | 1024 px por tesela | 0,732 (test, localizador) / 0,432 (test, clasificador) | research-use-mixed-sources | HuggingFace, GitHub |
-| PCB Bare-Board Defect Detection YOLO26 | YOLO26 para defectos de placa desnuda | no disponible | no disponible | no disponible | no disponible | HuggingFace (mismo autor) |
-| PCB Solder Defect Detection YOLO26 | YOLO26 para defectos de soldadura | no disponible | no disponible | no disponible | no disponible | HuggingFace (mismo autor) |
+| PCB Component Detection YOLO26s (este) | YOLO26s en cascada + Random Forest | no disponible | 1024 px por tesela | 0,732 (test, localizador) / 0,432 (test, clasificador) | research-use-mixed-sources | Hugging Face, GitHub |
+| PCB Bare-Board Defect Detection YOLO26 | YOLO26 para defectos de placa desnuda | no disponible | no disponible | no disponible | no disponible | Hugging Face (mismo autor) |
+| PCB Solder Defect Detection YOLO26 | YOLO26 para defectos de soldadura | no disponible | no disponible | no disponible | no disponible | Hugging Face (mismo autor) |
 | YOLO genérico (Ultralytics) | Detector de objetos general | no disponible | 640 px por defecto | no disponible para este dominio | AGPL-3.0 (Ultralytics) | Amplia |
 
 No se dispone de datos de benchmarks de los modelos hermanos ni de comparativas con detectores específicos de PCB de otros autores en la información proporcionada.
@@ -107,11 +107,11 @@ No se dispone de datos de benchmarks de los modelos hermanos ni de comparativas 
 - No hay información sobre sesgos, robustez frente a iluminación, reflejos u oclusiones, ni sobre el rendimiento en placas de fabricantes distintos a los del dataset.
 - Riesgo de alucinación en el sentido de falsos positivos y clasificaciones erróneas, especialmente en clases con pocas muestras o aspecto similar (resistencia frente a inductor).
 - No soporta texto, voz ni razonamiento; cualquier expectativa de modelo multimodal o de lenguaje es ajena a este sistema.
-- El repositorio ocupa 0,0 GB según HuggingFace, lo que puede indicar que los pesos no están alojados íntegramente o que el tamaño se redondea; conviene verificar la descarga antes de integrarlo.
+- El repositorio ocupa 0,0 GB según Hugging Face, lo que puede indicar que los pesos no están alojados íntegramente o que el tamaño se redondea; conviene verificar la descarga antes de integrarlo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ParsaVictor/pcb-component-detection-yolo26
+- Modelo en Hugging Face: https://huggingface.co/ParsaVictor/pcb-component-detection-yolo26
 - Dataset de entrenamiento: https://huggingface.co/datasets/ParsaVictor/pcb-component-detection
 - Licencia del dataset: https://huggingface.co/datasets/ParsaVictor/pcb-component-detection/blob/main/LICENSE.md
 - Repositorio GitHub con pipeline y notebooks: https://github.com/ParsaVictor/pcb-component-detection-yolo26

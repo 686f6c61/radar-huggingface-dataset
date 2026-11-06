@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`acyamasita/hybrid-contrastive-tutorial` es un repositorio de codigo y pesos de inicializacion publicado por el usuario acyamasita en HuggingFace. No se trata de un modelo entrenado ni de un checkpoint con rendimiento validado: la propia model card lo describe como una implementacion funcional de una arquitectura hibrida orientada a aprendizaje contrastivo con una configuracion pequena, pensada para pruebas de humo (smoke tests) y para servir de punto de partida reproducible.
+`acyamasita/hybrid-contrastive-tutorial` es un repositorio de codigo y pesos de inicializacion publicado por el usuario acyamasita en Hugging Face. No se trata de un modelo entrenado ni de un checkpoint con rendimiento validado: la propia model card lo describe como una implementacion funcional de una arquitectura hibrida orientada a aprendizaje contrastivo con una configuracion pequena, pensada para pruebas de humo (smoke tests) y para servir de punto de partida reproducible.
 
 El repositorio contiene 24.832 parametros reales registrados en `model.safetensors`, una cifra que lo situa en el rango de los juguetes de laboratorio mas que en el de cualquier modelo utilizable en produccion. La model card declara explicitamente que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio, y que no se reclama ninguna puntuacion de benchmark.
 
@@ -21,7 +21,7 @@ Su relevancia es, por tanto, metodologica y didactica: ofrece codigo transparent
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors |
 
-Otros datos declarados en la model card: activacion GELU, normalizacion InstanceNorm, escala "small", optimizador por defecto LAMB con planificador de calentamiento lineal. Tamano del repositorio: 0,0 GB. Pipeline de HuggingFace: no disponible.
+Otros datos declarados en la model card: activacion GELU, normalizacion InstanceNorm, escala "small", optimizador por defecto LAMB con planificador de calentamiento lineal. Tamano del repositorio: 0,0 GB. Pipeline de Hugging Face: no disponible.
 
 ## Arquitectura y entrenamiento
 
@@ -76,5 +76,5 @@ No disponible. No se conocen modelos comparables en la informacion proporcionada
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/acyamasita/hybrid-contrastive-tutorial
+- Hugging Face: https://huggingface.co/acyamasita/hybrid-contrastive-tutorial
 - No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios o demos.

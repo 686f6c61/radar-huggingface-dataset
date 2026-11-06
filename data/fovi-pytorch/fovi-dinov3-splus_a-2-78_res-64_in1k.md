@@ -30,7 +30,7 @@ Otros datos declarados por el autor:
 | Hiperparametro de magnificacion cortical (a) | 2,78 |
 | Resolucion del sensor | 64 |
 | Libreria | fovi (PyTorch) |
-| Pipeline en HuggingFace | no disponible |
+| Pipeline en Hugging Face | no disponible |
 | Descargas / likes | 118 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -95,7 +95,7 @@ No se dispone de datos cuantitativos que permitan comparar el rendimiento de est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fovi-pytorch/fovi-dinov3-splus_a-2.78_res-64_in1k
+- Modelo en Hugging Face: https://huggingface.co/fovi-pytorch/fovi-dinov3-splus_a-2.78_res-64_in1k
 - Repositorio de la librería fovi: https://github.com/nblauch/fovi
 - Modelo base: https://huggingface.co/facebook/dinov3-vits16plus-pretrain-lvd1689m
 - Articulo de referencia: Blauch, N. M., Alvarez, G. A. y Konkle, T., FOVI: A biologically-inspired foveated interface for deep vision models, arXiv, 2026 (sin URL directa en la informacion proporcionada)

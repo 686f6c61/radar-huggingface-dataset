@@ -94,6 +94,6 @@ La comparativa muestra que el modelo de polaridad binaria alcanza una precisión
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AlexStamp/roberta-base-finetuned-yelp-ratings
+- Hugging Face: https://huggingface.co/AlexStamp/roberta-base-finetuned-yelp-ratings
 - Modelo base: https://huggingface.co/FacebookAI/roberta-base
 - Dataset original (Kaggle): https://www.kaggle.com/competitions/yelp-recsys-2013/overview

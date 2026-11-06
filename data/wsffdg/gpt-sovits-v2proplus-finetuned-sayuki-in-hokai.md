@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un ajuste fino (fine-tuning) del sistema de síntesis de voz GPT-SoVITS, en su variante v2ProPlus, orientado a clonar la voz en chino mandarín del personaje March 7th (三月七) del videojuego *Honkai: Star Rail*. No se trata de un modelo de lenguaje generativo ni de un transformer de gran escala, sino de un par de pesos especializados para TTS de un único hablante: un modelo SoVITS (VITS condicionado) y un modelo GPT de texto-a-semántica (t2s). El autor es el usuario de HuggingFace `wsffdg`, que publica los pesos junto con un repositorio de GitHub con el pipeline completo de entrenamiento.
+Este repositorio contiene un ajuste fino (fine-tuning) del sistema de síntesis de voz GPT-SoVITS, en su variante v2ProPlus, orientado a clonar la voz en chino mandarín del personaje March 7th (三月七) del videojuego *Honkai: Star Rail*. No se trata de un modelo de lenguaje generativo ni de un transformer de gran escala, sino de un par de pesos especializados para TTS de un único hablante: un modelo SoVITS (VITS condicionado) y un modelo GPT de texto-a-semántica (t2s). El autor es el usuario de Hugging Face `wsffdg`, que publica los pesos junto con un repositorio de GitHub con el pipeline completo de entrenamiento.
 
 El interés técnico del artefacto está en su metodología de curación de datos: 1459 clips (117,6 minutos) extraídos de las voces públicas del juego, seleccionados mediante un muestreo de cobertura voraz en cuatro capas (fonemas, prosodia, emoción y calidad) con cuotas emocionales, y validados contra un conjunto de 110 clips sin fuga. El entrenamiento se realizó en una RTX 4090 D (8 épocas para SoVITS, 15 para GPT), lo que lo sitúa en el rango de lo reproducible en hardware de consumo.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Tipo | Idiomas | Datos de entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GPT-SoVITS v2ProPlus Fine-tuned — March 7th (este repo) | TTS + clonación (SoVITS + GPT t2s) | zh | 1459 clips / 117,6 min, voz de personaje | no disponible | HuggingFace (0 descargas, 0 likes) |
-| GPT-SoVITS v2ProPlus (base) | TTS + clonación | múltiples (según versión) | corpus multilingüe del proyecto | según repositorio oficial | GitHub / HuggingFace |
-| XTTS-v2 (Coqui) | TTS + clonación zero-shot | multilingüe | corpus multilingüe | Coqui Public Model License (no comercial) | HuggingFace |
-| OpenVoice (MyShell) | Clonación de voz | multilingüe | corpus multilingüe | MIT (con restricciones de uso) | GitHub / HuggingFace |
+| GPT-SoVITS v2ProPlus Fine-tuned — March 7th (este repo) | TTS + clonación (SoVITS + GPT t2s) | zh | 1459 clips / 117,6 min, voz de personaje | no disponible | Hugging Face (0 descargas, 0 likes) |
+| GPT-SoVITS v2ProPlus (base) | TTS + clonación | múltiples (según versión) | corpus multilingüe del proyecto | según repositorio oficial | GitHub / Hugging Face |
+| XTTS-v2 (Coqui) | TTS + clonación zero-shot | multilingüe | corpus multilingüe | Coqui Public Model License (no comercial) | Hugging Face |
+| OpenVoice (MyShell) | Clonación de voz | multilingüe | corpus multilingüe | MIT (con restricciones de uso) | GitHub / Hugging Face |
 
 La comparación es aproximada: este repositorio es un ajuste fino de un único hablante sobre GPT-SoVITS, no un modelo base, por lo que su alcance es mucho más estrecho que el de XTTS-v2 u OpenVoice. No se dispone de datos de rendimiento comparativo.
 
@@ -84,6 +84,6 @@ La comparación es aproximada: este repositorio es un ajuste fino de un único h
 
 ## Enlaces
 
-- [HuggingFace: wsffdg/GPT-SoVITS-v2ProPlus-Finetuned-Sayuki-in-Hokai](https://huggingface.co/wsffdg/GPT-SoVITS-v2ProPlus-Finetuned-Sayuki-in-Hokai)
+- [Hugging Face: wsffdg/GPT-SoVITS-v2ProPlus-Finetuned-Sayuki-in-Hokai](https://huggingface.co/wsffdg/GPT-SoVITS-v2ProPlus-Finetuned-Sayuki-in-Hokai)
 - [GitHub del autor: gptsovits-sanyueqi (scripts y método de selección de datos)](https://github.com/wsffdg-123/gptsovits-sanyueqi)
 - [GPT-SoVITS (repositorio oficial, RVC-Boss)](https://github.com/RVC-Boss/GPT-SoVITS)

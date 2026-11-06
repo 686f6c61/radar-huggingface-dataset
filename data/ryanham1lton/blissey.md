@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Blissey es un modelo publicado en HuggingFace por el usuario Ryanham1lton bajo el identificador `Ryanham1lton/Blissey`. En el momento de redactar esta ficha, la informacion disponible es minima: la model card no contiene mas que la declaracion de licencia (`cc-by-4.0`) y no incluye descripcion, arquitectura, tamano, datos de entrenamiento ni instrucciones de uso. El repositorio ocupa 0,1 GB, no registra descargas ni likes, y las etiquetas asociadas se limitan a la licencia y a la region (`region:us`).
+Blissey es un modelo publicado en Hugging Face por el usuario Ryanham1lton bajo el identificador `Ryanham1lton/Blissey`. En el momento de redactar esta ficha, la informacion disponible es minima: la model card no contiene mas que la declaracion de licencia (`cc-by-4.0`) y no incluye descripcion, arquitectura, tamano, datos de entrenamiento ni instrucciones de uso. El repositorio ocupa 0,1 GB, no registra descargas ni likes, y las etiquetas asociadas se limitan a la licencia y a la region (`region:us`).
 
 No es posible determinar que problema resuelve el modelo, a que categoria pertenece (lenguaje, vision, audio, multimodal) ni cual es su pipeline declarado, ya que este campo aparece como no disponible. Tampoco consta informacion sobre idiomas soportados. Las busquedas web realizadas no han devuelto ningun resultado relacionado con el modelo: los unicos enlaces recuperados son articulos en chino sobre comparativas de CPU y GPU de AMD, sin ninguna conexion con este repositorio.
 
@@ -21,7 +21,7 @@ Por tanto, esta ficha se limita a documentar los escasos metadatos verificables 
 | Licencia | cc-by-4.0 |
 | Formato de pesos | no disponible |
 | Autor | Ryanham1lton |
-| Identificador en HuggingFace | Ryanham1lton/Blissey |
+| Identificador en Hugging Face | Ryanham1lton/Blissey |
 | Pipeline declarado | no disponible |
 | Tamano del repositorio | 0,1 GB |
 | Descargas | 0 |
@@ -82,7 +82,7 @@ No disponible. Al desconocerse la categoria, el tamano y la modalidad del modelo
 | Longitud de contexto | no disponible | no disponible | no disponible |
 | Rendimiento | no disponible | no disponible | no disponible |
 | Licencia | cc-by-4.0 | no disponible | no disponible |
-| Disponibilidad | repositorio en HuggingFace | no disponible | no disponible |
+| Disponibilidad | repositorio en Hugging Face | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -97,7 +97,7 @@ No disponible. Al desconocerse la categoria, el tamano y la modalidad del modelo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ryanham1lton/Blissey
+- Repositorio en Hugging Face: https://huggingface.co/Ryanham1lton/Blissey
 - Model card: no contiene informacion tecnica mas alla de la licencia `cc-by-4.0`.
 - Paper: no disponible.
 - Blog o anuncio del autor: no disponible.

@@ -82,7 +82,7 @@ No se dispone de resultados de benchmarks que permitan una comparación cuantita
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/Kagandi/Nex-N2.5-mini-mlx-4Bit
+- Repositorio Hugging Face del modelo: https://huggingface.co/Kagandi/Nex-N2.5-mini-mlx-4Bit
 - Modelo base original: https://huggingface.co/nex-agi/Nex-N2.5-mini
 - Artículo de AI Weekly sobre el lanzamiento de Nex-N2.5-mini: https://aiweekly.co/alerts/nex-agi-ships-35b-nex-n25-mini-agent-model-under-apache-20
 - Búsqueda de modelos cuantizados basados en Nex-N2.5-mini: https://huggingface.co/models?other=base_model%3Aquantized%3Anex-agi%2FNex-N2.5-mini

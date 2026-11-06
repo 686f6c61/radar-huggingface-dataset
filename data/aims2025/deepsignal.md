@@ -2,9 +2,9 @@
 
 ## Resumen
 
-DeepSignal es un modelo de lenguaje publicado por el usuario AIMS2025 en HuggingFace bajo un repositorio de acceso restringido (gated). Los metadatos del repositorio lo etiquetan como `qwen3` y `gguf`, lo que indica que se trata de una adaptación, fine-tuning o cuantización derivada de la familia Qwen3 de Alibaba, distribuida en formato GGUF para inferencia optimizada. El recuento real de parámetros en safetensors es de 4.022.468.096 (aproximadamente 4.000 millones), lo que lo sitúa en la gama de modelos compactos aptos para despliegue en hardware de consumo.
+DeepSignal es un modelo de lenguaje publicado por el usuario AIMS2025 en Hugging Face bajo un repositorio de acceso restringido (gated). Los metadatos del repositorio lo etiquetan como `qwen3` y `gguf`, lo que indica que se trata de una adaptación, fine-tuning o cuantización derivada de la familia Qwen3 de Alibaba, distribuida en formato GGUF para inferencia optimizada. El recuento real de parámetros en safetensors es de 4.022.468.096 (aproximadamente 4.000 millones), lo que lo sitúa en la gama de modelos compactos aptos para despliegue en hardware de consumo.
 
-La información pública disponible es muy limitada: no se declaran licencia, idiomas soportados, pipeline ni resultados de benchmarks. El repositorio ocupa 33,4 GB, un tamaño desproporcionado para un modelo de 4B en precisión completa, lo que sugiere la presencia de múltiples ficheros GGUF con distintas cuantizaciones, además de posibles pesos originales. La etiqueta `endpoints_compatible` indica que puede servirse a través de la infraestructura de Inference Endpoints de HuggingFace.
+La información pública disponible es muy limitada: no se declaran licencia, idiomas soportados, pipeline ni resultados de benchmarks. El repositorio ocupa 33,4 GB, un tamaño desproporcionado para un modelo de 4B en precisión completa, lo que sugiere la presencia de múltiples ficheros GGUF con distintas cuantizaciones, además de posibles pesos originales. La etiqueta `endpoints_compatible` indica que puede servirse a través de la infraestructura de Inference Endpoints de Hugging Face.
 
 Su relevancia actual reside en el interés por modelos derivados de Qwen3 de tamaño reducido, que ofrecen un equilibrio entre capacidad de razonamiento y requisitos de hardware modestos. No obstante, la ausencia de documentación técnica, benchmarks y licencia clara limita seriamente su evaluación rigurosa para producción.
 
@@ -38,7 +38,7 @@ El tag `gguf` confirma que se distribuyen pesos cuantizados para llama.cpp y eco
 - Tool calling y function calling: no disponible; no se documenta.
 - Modo thinking o razonamiento extendido: no disponible.
 - Capacidades multimodales (vision, audio): no disponible; los tags no lo indican.
-- Compatibilidad con Inference Endpoints de HuggingFace: confirmada por el tag `endpoints_compatible`.
+- Compatibilidad con Inference Endpoints de Hugging Face: confirmada por el tag `endpoints_compatible`.
 
 ## Casos de uso
 
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: aproximadamente 2,5-3 GB en cuantizacion Q4_K_M, 4-5 GB en Q8_0 y 8-9 GB en FP16 (estimaciones basadas en el recuento de 4B parametros; no confirmadas por el autor).
 - GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB o superiores para cuantizaciones altas; A100/H100 no necesarias para este tamano.
 - Cabe en GPU de consumo: si, en la mayoria de GPUs con 8 GB o mas de VRAM usando cuantizaciones de 4-5 bits.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio y servidores compatibles con GGUF; tambien Inference Endpoints de HuggingFace segun el tag del repositorio. vLLM y TGI requeririan los pesos safetensors, cuya disponibilidad y configuracion no estan documentadas.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y servidores compatibles con GGUF; tambien Inference Endpoints de Hugging Face segun el tag del repositorio. vLLM y TGI requeririan los pesos safetensors, cuya disponibilidad y configuracion no estan documentadas.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -81,11 +81,11 @@ La comparativa se limita a caracteristicas generales de la categoria, ya que no 
 - Contexto desconocido: no se puede planificar su uso en tareas de contexto largo sin verificar la ventana real.
 - Procedencia incierta del fine-tuning: al ser un derivado comunitario de Qwen3, puede heredar sesgos y limitaciones de la base, ademas de posibles artefactos del ajuste.
 - Repositorio con 0 descargas en el momento de la consulta: sin validacion por parte de la comunidad.
-- Acceso restringido: requiere aceptar condiciones en HuggingFace, lo que puede retrasar o impedir su adopcion en pipelines automatizados.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face, lo que puede retrasar o impedir su adopcion en pipelines automatizados.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AIMS2025/DeepSignal
+- Hugging Face: https://huggingface.co/AIMS2025/DeepSignal
 - Repositorio base presumible (Qwen3): https://huggingface.co/Qwen
 - llama.cpp (runtime GGUF): https://github.com/ggerganov/llama.cpp
 - Ollama: https://ollama.com

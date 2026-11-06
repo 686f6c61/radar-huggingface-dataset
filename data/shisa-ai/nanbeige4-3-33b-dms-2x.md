@@ -109,7 +109,7 @@ No se conocen sidecars comparables de otros proyectos (H2O, SnapKV, StreamingLLM
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/shisa-ai/Nanbeige4.3-33B-DMS-2x
+- Ficha en Hugging Face: https://huggingface.co/shisa-ai/Nanbeige4.3-33B-DMS-2x
 - Motor y código de entrenamiento (FastDMS): https://github.com/shisa-ai/FastDMS
 - Instrucciones de instalación de FastDMS: https://github.com/shisa-ai/FastDMS#install
 - Modelo original: https://huggingface.co/Nanbeige/Nanbeige4.3-33B

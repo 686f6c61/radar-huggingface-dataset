@@ -86,9 +86,9 @@ Metricas adicionales del entrenamiento declaradas en la model card:
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| community-airline-voice-outcome-filter-1.7b (adaptador LoRA) | 1,7 B (base) + adaptador | no disponible | Sin mejora medible sobre el base en el objetivo del experimento | apache-2.0 | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| Qwen/Qwen3-1.7B (base) | 1,7 B | no disponible en la informacion proporcionada | Referencia del experimento, no se reportan benchmarks estandar | apache-2.0 | HuggingFace |
-| Otros adaptadores LoRA de la coleccion "Course and community runs" de while-ai | Variable, segun el modelo base de cada receta | no disponible | no disponible | no disponible | HuggingFace |
+| community-airline-voice-outcome-filter-1.7b (adaptador LoRA) | 1,7 B (base) + adaptador | no disponible | Sin mejora medible sobre el base en el objetivo del experimento | apache-2.0 | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| Qwen/Qwen3-1.7B (base) | 1,7 B | no disponible en la informacion proporcionada | Referencia del experimento, no se reportan benchmarks estandar | apache-2.0 | Hugging Face |
+| Otros adaptadores LoRA de la coleccion "Course and community runs" de while-ai | Variable, segun el modelo base de cada receta | no disponible | no disponible | no disponible | Hugging Face |
 | Alternativas densas de ~1-2 B de otros proveedores | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos verificados en la informacion proporcionada para comparar con modelos de otras familias. Cualquier comparacion con alternativas de tamano similar deberia hacerse contra las fichas oficiales de cada modelo base.
@@ -108,7 +108,7 @@ No se dispone de datos verificados en la informacion proporcionada para comparar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/while-ai/community-airline-voice-outcome-filter-1.7b
+- Modelo en Hugging Face: https://huggingface.co/while-ai/community-airline-voice-outcome-filter-1.7b
 - Modelo base Qwen/Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - Dataset de entrenamiento: https://huggingface.co/datasets/while-ai/airline-voice-concise
 - Receta en el repositorio whileai-sdk: https://github.com/whilehq/whileai-sdk/tree/main/recipes/community/airline-voice-concise-under-probe-outcome-filter

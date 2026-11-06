@@ -79,7 +79,7 @@ No se dispone de comparativas de rendimiento entre estos modelos, ya que no hay 
 
 ## Enlaces
 
-- [HuggingFace - JPQ24/Llama-3.1-8b-Natural-Synthesis-merged-16bit](https://huggingface.co/JPQ24/Llama-3.1-8b-Natural-Synthesis-merged-16bit)
+- [Hugging Face - JPQ24/Llama-3.1-8b-Natural-Synthesis-merged-16bit](https://huggingface.co/JPQ24/Llama-3.1-8b-Natural-Synthesis-merged-16bit)
 - [Dataset asociado - JPQ24/Llama-3.1-8b-Natural-Synthesis-dataset](https://huggingface.co/datasets/JPQ24/Llama-3.1-8b-Natural-Synthesis-dataset)
 - [Version anterior - JPQ24/llama-3-8b-Natural-synthesis-Lora-Merge](https://huggingface.co/JPQ24/llama-3-8b-Natural-synthesis-Lora-Merge)
 - [GGUF de la version Llama-3-8b-Natural-Synthesis](https://local-ai-zone.github.io/models/llama-3-8b-natural-synthesis.html)

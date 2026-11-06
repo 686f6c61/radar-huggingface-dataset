@@ -72,9 +72,9 @@ No hay datos de MMLU, HumanEval, GSM8K ni otros benchmarks estandar.
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Gemma-4-Gembrain-X-Core-31B-NVFP4 (este) | 31B | 262 144 | NVFP4 (~20 GB) | Gemma | HuggingFace |
-| Nimbz/Gemma-4-Gembrain-X-Core-31B (base) | 31B | 262 144 | BF16 (peso completo) | Gemma | HuggingFace |
-| Gemma-4-31B (original de Google) | 31B | 262 144 | BF16 | Gemma | HuggingFace / Google |
+| Gemma-4-Gembrain-X-Core-31B-NVFP4 (este) | 31B | 262 144 | NVFP4 (~20 GB) | Gemma | Hugging Face |
+| Nimbz/Gemma-4-Gembrain-X-Core-31B (base) | 31B | 262 144 | BF16 (peso completo) | Gemma | Hugging Face |
+| Gemma-4-31B (original de Google) | 31B | 262 144 | BF16 | Gemma | Hugging Face / Google |
 
 La diferencia principal es el tamano en disco y VRAM: el cuantizado NVFP4 reduce el peso a ~20 GB frente a los ~62 GB del BF16, permitiendo su ejecucion en GPUs de 24 GB. El rendimiento cualitativo en prosa y vision se mantiene segun las pruebas del autor, aunque no hay benchmarks comparativos publicados.
 
@@ -90,7 +90,7 @@ La diferencia principal es el tamano en disco y VRAM: el cuantizado NVFP4 reduce
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yar-sh/Gemma-4-Gembrain-X-Core-31B-NVFP4
+- Repositorio Hugging Face: https://huggingface.co/yar-sh/Gemma-4-Gembrain-X-Core-31B-NVFP4
 - Modelo base: https://huggingface.co/Nimbz/Gemma-4-Gembrain-X-Core-31B
 - Pagina oficial de Gemma 4: https://deepmind.google/models/gemma/gemma-4/
 - Repositorio Gemma de Google DeepMind: https://github.com/google-deepmind/gemma

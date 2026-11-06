@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`crismacias/mt-text2sql-16g` es un modelo de lenguaje publicado en HuggingFace por el usuario crismacias. Segun los metadatos del repositorio, se trata de un modelo denso de 7.615.616.512 parametros (aproximadamente 7,62 mil millones) distribuido principalmente en formato GGUF, con un tamano de repositorio de 4,7 GB. La etiqueta `text2sql` del identificador sugiere un uso orientado a la traduccion de lenguaje natural a consultas SQL, aunque esta finalidad no esta confirmada por ninguna documentacion adjunta al repositorio.
+`crismacias/mt-text2sql-16g` es un modelo de lenguaje publicado en Hugging Face por el usuario crismacias. Segun los metadatos del repositorio, se trata de un modelo denso de 7.615.616.512 parametros (aproximadamente 7,62 mil millones) distribuido principalmente en formato GGUF, con un tamano de repositorio de 4,7 GB. La etiqueta `text2sql` del identificador sugiere un uso orientado a la traduccion de lenguaje natural a consultas SQL, aunque esta finalidad no esta confirmada por ninguna documentacion adjunta al repositorio.
 
-El modelo no incluye informacion publica sobre licencia, idiomas soportados, pipeline declarado, arquitectura concreta, datos de entrenamiento ni resultados de evaluacion. Las etiquetas disponibles (`gguf`, `endpoints_compatible`, `region:us`, `conversational`) indican unicamente que los pesos estan en formato GGUF, que el repositorio es compatible con los Inference Endpoints de HuggingFace y que esta pensado para uso conversacional.
+El modelo no incluye informacion publica sobre licencia, idiomas soportados, pipeline declarado, arquitectura concreta, datos de entrenamiento ni resultados de evaluacion. Las etiquetas disponibles (`gguf`, `endpoints_compatible`, `region:us`, `conversational`) indican unicamente que los pesos estan en formato GGUF, que el repositorio es compatible con los Inference Endpoints de Hugging Face y que esta pensado para uso conversacional.
 
 Su relevancia actual es limitada: acumula 6 descargas y 0 likes, no tiene documentacion asociada y no aparece ninguna publicacion, paper o blog que lo respalde. A efectos practicos, debe considerarse un modelo experimental sin validacion externa, y cualquier evaluacion seria requiere ejecutarlo y medirlo por cuenta propia antes de plantearse su uso en produccion.
 
@@ -19,7 +19,7 @@ Su relevancia actual es limitada: acumula 6 descargas y 0 likes, no tiene docume
 | Tipos de cuantizacion | no disponible de forma explicita; el repositorio esta etiquetado como `gguf` y ocupa 4,7 GB, lo que es coherente con una cuantizacion de aproximadamente 4-5 bits por peso, pero no se detalla la lista de ficheros |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | GGUF (etiqueta `gguf`); el conteo de parametros aparece asociado a safetensors en los metadatos de HuggingFace |
+| Formato de pesos | GGUF (etiqueta `gguf`); el conteo de parametros aparece asociado a safetensors en los metadatos de Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -35,7 +35,7 @@ Respecto al entrenamiento, se desconoce por completo el numero de tokens utiliza
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible (no se declara ninguna lista de idiomas).
 - Capacidades especiales (modo thinking, vision, audio): no disponible; no se declara ninguna.
-- Despliegue en endpoints compatibles: la etiqueta `endpoints_compatible` indica compatibilidad declarada con la infraestructura de HuggingFace Inference Endpoints.
+- Despliegue en endpoints compatibles: la etiqueta `endpoints_compatible` indica compatibilidad declarada con la infraestructura de Hugging Face Inference Endpoints.
 
 ## Casos de uso
 
@@ -63,7 +63,7 @@ Las cifras siguientes son estimaciones aritmeticas basadas en el recuento de par
 - GPU de consumo de 12-16 GB: RTX 3060 12 GB, RTX 4070 Ti, RTX 4080 o similares ejecutan comodamente cuantizaciones Q4 y Q5 con margen para cache KV moderada.
 - GPU de consumo de 8 GB: RTX 3060 8 GB, RTX 4060 o RTX 3070 pueden cargar cuantizaciones Q4 con contexto corto, aunque el margen es ajustado.
 - CPU y equipos sin GPU: las cuantizaciones Q4 y Q3 permiten inferencia en CPU (por ejemplo, Apple Silicon con memoria unificada de 16 GB o superiores), con latencias notablemente mayores y throughput bajo.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python, `llama-server` y, para entornos con GPU, vLLM o TGI con soporte GGUF (funcionalidad en general experimental y con limitaciones conocidas, por ejemplo ausencia de adaptadores LoRA en algunos backends). La etiqueta `endpoints_compatible` sugiere que tambien puede desplegarse en HuggingFace Inference Endpoints.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python, `llama-server` y, para entornos con GPU, vLLM o TGI con soporte GGUF (funcionalidad en general experimental y con limitaciones conocidas, por ejemplo ausencia de adaptadores LoRA en algunos backends). La etiqueta `endpoints_compatible` sugiere que tambien puede desplegarse en Hugging Face Inference Endpoints.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -94,5 +94,5 @@ Diferencias clave: los tres modelos de referencia cuentan con licencia explicita
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/crismacias/mt-text2sql-16g
+- Modelo en Hugging Face: https://huggingface.co/crismacias/mt-text2sql-16g
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos asociados a este modelo. Los resultados devueltos por la busqueda corresponden a un canal de television suizo (RTS) y no guardan ninguna relacion con el modelo, por lo que se descartan como fuentes.

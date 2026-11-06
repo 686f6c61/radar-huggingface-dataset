@@ -69,5 +69,5 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- [HuggingFace: GT1999/mwp-v2-llama1b-base-jointw-stage1](https://huggingface.co/GT1999/mwp-v2-llama1b-base-jointw-stage1)
+- [Hugging Face: GT1999/mwp-v2-llama1b-base-jointw-stage1](https://huggingface.co/GT1999/mwp-v2-llama1b-base-jointw-stage1)
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de código) en la búsqueda web.

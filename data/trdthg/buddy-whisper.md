@@ -2,7 +2,7 @@
 
 ## Resumen
 
-trdthg/buddy-whisper es un repositorio de artefactos compilados de forma cruzada para RISC-V (riscv64) con extensión `.rax`, generados para el runtime `buddy-cli` del proyecto buddy-mlir. No se trata de una publicación de pesos en formato estándar ni de un modelo entrenado por el autor: el repositorio contiene una única variante (`base`) empaquetada como `riscv64/base/whisper-base.rax`, que se ejecuta con el comando `./buddy-cli --model riscv64/<variant>/whisper-<variant>.rax`. El tamaño del repositorio es de aproximadamente 0,3 GB y no se declara licencia, idiomas soportados ni pipeline en los metadatos de HuggingFace.
+trdthg/buddy-whisper es un repositorio de artefactos compilados de forma cruzada para RISC-V (riscv64) con extensión `.rax`, generados para el runtime `buddy-cli` del proyecto buddy-mlir. No se trata de una publicación de pesos en formato estándar ni de un modelo entrenado por el autor: el repositorio contiene una única variante (`base`) empaquetada como `riscv64/base/whisper-base.rax`, que se ejecuta con el comando `./buddy-cli --model riscv64/<variant>/whisper-<variant>.rax`. El tamaño del repositorio es de aproximadamente 0,3 GB y no se declara licencia, idiomas soportados ni pipeline en los metadatos de Hugging Face.
 
 El nombre del artefacto apunta a la variante `base` del modelo Whisper de OpenAI, un sistema de reconocimiento automático de voz (ASR) con arquitectura transformer encoder-decoder entrenado sobre audio débilmente supervisado a gran escala. No obstante, la model card de este repositorio no documenta parámetros, ventana de contexto, composición del dataset ni proceso de entrenamiento, por lo que todos esos datos se marcan como no disponibles.
 
@@ -87,7 +87,7 @@ No se dispone de benchmarks comparativos entre este artefacto y las alternativas
 
 - Licencia no declarada: no hay información sobre permisos de uso comercial, redistribución o modificación. Sin licencia explícita, el uso en producción entraña riesgo legal.
 - Trazabilidad del modelo base insuficiente: no consta de qué checkpoint exacto de Whisper se partió, ni si se aplicaron transformaciones, cuantizaciones o podas antes de la compilación.
-- Artefacto binario opaco: al distribuirse como `.rax` compilado, no es inspeccionable ni modificable con las herramientas habituales de HuggingFace, y no permite ajuste fino.
+- Artefacto binario opaco: al distribuirse como `.rax` compilado, no es inspeccionable ni modificable con las herramientas habituales de Hugging Face, y no permite ajuste fino.
 - Plataforma restringida: solo riscv64 con `buddy-cli`; no hay ruta documentada para x86-64, ARM, CUDA ni otros runtimes.
 - Ausencia total de métricas: sin WER ni evaluaciones publicadas, no se puede estimar la calidad de transcripción real del binario.
 - Riesgo de divergencia numérica: la compilación cruzada y cualquier optimización aplicada pueden alterar ligeramente las salidas respecto al modelo original.
@@ -99,6 +99,6 @@ No se dispone de benchmarks comparativos entre este artefacto y las alternativas
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/trdthg/buddy-whisper
+- Repositorio en Hugging Face: https://huggingface.co/trdthg/buddy-whisper
 - Proyecto buddy-mlir (runtime `buddy-cli`): no disponible en la informacion proporcionada; debe localizarse en el repositorio oficial del proyecto buddy-mlir.
 - Resultados de busqueda web: no se han encontrado enlaces relevantes; las referencias devueltas corresponden a documentación de Google Maps y no estan relacionadas con el modelo.

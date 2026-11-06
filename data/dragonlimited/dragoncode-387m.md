@@ -4,7 +4,7 @@
 
 DragonCode-387M es un modelo de lenguaje de dominio de código, de 387 millones de parámetros, desarrollado por el usuario dragonlimited como parte de una familia de modelos en progresivo escalado (150M, 387M, 787M, 1.2B, 2.4B). El modelo está diseñado para la generación y comprensión de código, y su entrenamiento se ha realizado siguiendo la ley de Chinchilla, con un presupuesto de 7.740 millones de tokens en una sola época.
 
-La relevancia de este modelo reside en su enfoque de entrenamiento incremental y su integración en un pipeline automatizado de pretraining que permite reanudar el entrenamiento de forma modular. El checkpoint final (paso 58800, 7.707 de 7.740 millones de tokens, un 99,92 % del presupuesto) está preservado en HuggingFace, y el pipeline ha avanzado al siguiente nivel de la familia (787M). El modelo utiliza el tokenizador de StarCoder2-3B y está pensado como un escalón intermedio dentro de una estrategia de entrenamiento por fases.
+La relevancia de este modelo reside en su enfoque de entrenamiento incremental y su integración en un pipeline automatizado de pretraining que permite reanudar el entrenamiento de forma modular. El checkpoint final (paso 58800, 7.707 de 7.740 millones de tokens, un 99,92 % del presupuesto) está preservado en Hugging Face, y el pipeline ha avanzado al siguiente nivel de la familia (787M). El modelo utiliza el tokenizador de StarCoder2-3B y está pensado como un escalón intermedio dentro de una estrategia de entrenamiento por fases.
 
 ## Especificaciones técnicas
 
@@ -70,7 +70,7 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dragonlimited/DragonCode-387M
+- Modelo en Hugging Face: https://huggingface.co/dragonlimited/DragonCode-387M
 - Dataset de entrenamiento: https://huggingface.co/datasets/dragonlimited/DragonCode-387M-Tokens
 - Discusiones del dataset: https://huggingface.co/datasets/dragonlimited/DragonCode-387M-Tokens/discussions
 - Notebook de pretraining (GitHub): https://github.com/pinkelephantlimited/dragoncode-family-notebook

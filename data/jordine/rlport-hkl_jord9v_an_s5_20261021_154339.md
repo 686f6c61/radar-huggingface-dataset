@@ -86,6 +86,6 @@ No disponible. No se han encontrado en la información proporcionada artefactos 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jordine/rlport-hkl_jord9v_an_s5_20261021_154339
+- Repositorio en Hugging Face: https://huggingface.co/Jordine/rlport-hkl_jord9v_an_s5_20261021_154339
 - Script de backup citado por el autor: `scripts/port/hf_backup.py` (ruta interna, sin URL pública disponible)
 - Paper, blog, repositorio de código o demo del proyecto "reward-laundering": no disponibles en la información proporcionada

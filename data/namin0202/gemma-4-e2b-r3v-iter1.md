@@ -57,8 +57,8 @@ No se dispone de información sobre adaptadores LoRA comparables para Gemma 4 E2
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| google/gemma-4-e2b-it | 2.1B | 8K | No disponible | HuggingFace |
-| namin0202/gemma-4-e2b-r3v-iter1 (adaptador) | ~0.1 GB (LoRA) | 8K | No disponible | HuggingFace |
+| google/gemma-4-e2b-it | 2.1B | 8K | No disponible | Hugging Face |
+| namin0202/gemma-4-e2b-r3v-iter1 (adaptador) | ~0.1 GB (LoRA) | 8K | No disponible | Hugging Face |
 
 No hay otros adaptadores similares documentados en la información proporcionada.
 
@@ -73,7 +73,7 @@ No hay otros adaptadores similares documentados en la información proporcionada
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/namin0202/gemma-4-e2b-r3v-iter1
+- Hugging Face del adaptador: https://huggingface.co/namin0202/gemma-4-e2b-r3v-iter1
 - Modelo base (Gemma 4 E2B it): https://huggingface.co/google/gemma-4-e2b-it
 - Página oficial de Gemma 4 (DeepMind): https://deepmind.google/models/gemma/gemma-4/
 - Documentación de Gemma 4 en Google AI: https://ai.google.dev/gemma/docs/core/model_card_4

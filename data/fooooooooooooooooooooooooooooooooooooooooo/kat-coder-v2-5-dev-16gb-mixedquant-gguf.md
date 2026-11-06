@@ -35,7 +35,7 @@ La innovacion tecnica de esta build es la estrategia de cuantizacion por capas. 
 - Soporte de tool calling / function calling: no disponible (no se menciona en la informacion proporcionada).
 - Capacidades multilingues: no disponible.
 - Capacidades especiales (vision, audio, modo thinking explicito): no disponible.
-- Conversacional: el tag `conversational` aparece en la ficha de HuggingFace, aunque la model card no detalla plantilla de chat ni formato de prompt.
+- Conversacional: el tag `conversational` aparece en la ficha de Hugging Face, aunque la model card no detalla plantilla de chat ni formato de prompt.
 
 ## Casos de uso
 
@@ -75,8 +75,8 @@ El system prompt usado fue: "After writing the code, trace the first example thr
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| KAT-Coder-V2.5-Dev-16GB-MixedQuant-GGUF (IQ4_XS) | 34,66B totales (MoE) | no disponible (probado a 32k) | HumanEval 92-96% (autor) | apache-2.0 | GGUF en HuggingFace, 34,4 GB de repo |
-| KAT-Coder-V2.5-Dev-16GB-MixedQuant-GGUF (IQ3_XXS) | 34,66B totales (MoE) | no disponible (probado a 32k) | HumanEval 92-93% (autor) | apache-2.0 | GGUF en HuggingFace |
+| KAT-Coder-V2.5-Dev-16GB-MixedQuant-GGUF (IQ4_XS) | 34,66B totales (MoE) | no disponible (probado a 32k) | HumanEval 92-96% (autor) | apache-2.0 | GGUF en Hugging Face, 34,4 GB de repo |
+| KAT-Coder-V2.5-Dev-16GB-MixedQuant-GGUF (IQ3_XXS) | 34,66B totales (MoE) | no disponible (probado a 32k) | HumanEval 92-93% (autor) | apache-2.0 | GGUF en Hugging Face |
 | Kwaipilot/KAT-Coder-V2.5-Dev (modelo base) | 34.660.610.688 | no disponible | no disponible | apache-2.0 | pesos originales (formato no especificado en la informacion disponible) |
 | Otros modelos de codigo comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -98,7 +98,7 @@ No se dispone de datos verificables de alternativas de la misma categoria en la 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/fooooooooooooooooooooooooooooooooooooooooo/KAT-Coder-V2.5-Dev-16GB-MixedQuant-GGUF
+- Repositorio Hugging Face: https://huggingface.co/fooooooooooooooooooooooooooooooooooooooooo/KAT-Coder-V2.5-Dev-16GB-MixedQuant-GGUF
 - Modelo base: https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev
 - Volcado de tensores IQ4_XS: IQ4_XS_GGUFDUMP.md (fichero dentro del repositorio)
 - Volcado de tensores IQ3_XXS: IQ3_XXS_GGUFDUMP.md (fichero dentro del repositorio)

@@ -4,7 +4,7 @@
 
 El modelo `dakerholdings/Qwen3.8-Empero-4B-ridge_4_6_8-mlx` es una conversión a formato MLX de una variante destilada del modelo Qwen3.8-4B, desarrollada originalmente por el laboratorio independiente Empero (con sede en Alemania) y posteriormente cuantizada por dakerholdings con una receta mixta denominada `ridge_4_6_8`. Esta receta asigna 4 bits a las capas FFN intermedias, 6 bits a las proyecciones de atención y FFN de los bordes, y 8 bits a los tensores de estado `ssm_alpha` y `ssm_beta`, manteniendo en fp16 las normas, la convolución 1D y otros tensores SSM. El resultado es un modelo de 4.21 mil millones de parámetros que ocupa aproximadamente 3 GB en disco y está pensado para ejecutarse en hardware de consumo, como demuestra el ejemplo de generación en un MacBook Air M1 con un pico de memoria de 3.1 GB.
 
-El modelo se basa en la arquitectura híbrida de la serie Qwen3.8, que combina capas transformer con bloques SSM (Gated DeltaNet), lo que le permite manejar contextos largos con una huella de memoria reducida. Al ser una destilación, conserva las capacidades de razonamiento, function calling y conversación del modelo original, pero con un tamaño mucho menor. Su licencia no está especificada en la ficha de HuggingFace, aunque el modelo base `empero-ai/Qwen3.8-4B` se publica bajo Apache-2.0.
+El modelo se basa en la arquitectura híbrida de la serie Qwen3.8, que combina capas transformer con bloques SSM (Gated DeltaNet), lo que le permite manejar contextos largos con una huella de memoria reducida. Al ser una destilación, conserva las capacidades de razonamiento, function calling y conversación del modelo original, pero con un tamaño mucho menor. Su licencia no está especificada en la ficha de Hugging Face, aunque el modelo base `empero-ai/Qwen3.8-4B` se publica bajo Apache-2.0.
 
 Este modelo es relevante para desarrolladores que necesitan un LLM eficiente y desplegable en entornos con recursos limitados (portátiles, dispositivos edge) sin renunciar a capacidades avanzadas como el razonamiento multi-paso o la integración con herramientas. La cuantización mixta intenta preservar la calidad en los pesos más sensibles, lo que lo convierte en una opción interesante para pruebas de concepto y prototipos.
 
@@ -73,7 +73,7 @@ La principal diferencia es que este modelo incorpora una arquitectura híbrida S
 ## Limitaciones y advertencias
 
 - No se han publicado resultados de benchmarks, por lo que la calidad real en tareas estándar es desconocida.
-- La licencia no está especificada en la ficha de HuggingFace; aunque el modelo base es Apache-2.0, la conversión y cuantización podrían tener restricciones adicionales. Se recomienda contactar con el autor antes de un uso comercial.
+- La licencia no está especificada en la ficha de Hugging Face; aunque el modelo base es Apache-2.0, la conversión y cuantización podrían tener restricciones adicionales. Se recomienda contactar con el autor antes de un uso comercial.
 - El modelo está orientado principalmente al inglés; el rendimiento en otros idiomas puede ser inferior.
 - Al ser un modelo pequeño (4B), puede presentar alucinaciones y errores en tareas complejas o de conocimiento factual.
 - La cuantización mixta puede degradar la calidad en comparación con el modelo original en precisión completa, especialmente en tareas que requieren matemáticas precisas.
@@ -82,7 +82,7 @@ La principal diferencia es que este modelo incorpora una arquitectura híbrida S
 
 ## Enlaces
 
-- [HuggingFace - dakerholdings/Qwen3.8-Empero-4B-ridge_4_6_8-mlx](https://huggingface.co/dakerholdings/Qwen3.8-Empero-4B-ridge_4_6_8-mlx)
-- [HuggingFace - empero-ai/Qwen3.8-4B (modelo base)](https://huggingface.co/empero-ai/Qwen3.8-4B)
+- [Hugging Face - dakerholdings/Qwen3.8-Empero-4B-ridge_4_6_8-mlx](https://huggingface.co/dakerholdings/Qwen3.8-Empero-4B-ridge_4_6_8-mlx)
+- [Hugging Face - empero-ai/Qwen3.8-4B (modelo base)](https://huggingface.co/empero-ai/Qwen3.8-4B)
 - [Empero - sitio oficial del laboratorio](https://empero.org/)
 - [GitHub - QwenLM/Qwen3.8 (serie de modelos)](https://github.com/QwenLM/Qwen3.8)

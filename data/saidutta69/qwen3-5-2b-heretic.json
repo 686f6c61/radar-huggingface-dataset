@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "saidutta69/Qwen3.5-2B-heretic",
+  "slug": "saidutta69-qwen3-5-2b-heretic",
+  "author": "saidutta69",
+  "url": "https://huggingface.co/saidutta69/Qwen3.5-2B-heretic",
+  "created_at": "2026-08-02T00:25:38.000Z",
+  "updated_at": "2026-11-06T11:43:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "qwen3_5",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "conversational",
+    "text-generation-inference",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:quantized:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1624,
+  "trending_score": 0,
+  "parameters": 2213241664,
+  "parameters_human": "2.21B",
+  "storage_bytes": 47690511601,
+  "storage_human": "47.7 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "saidutta69/Qwen3.5-2B-heretic at main - Hugging Face",
+      "url": "https://huggingface.co/saidutta69/Qwen3.5-2B-heretic/tree/main",
+      "snippet": "saidutta69 / Qwen3.5-2B-heretic like 0 Text Generation Safetensors GGUF English qwen3_5 heretic uncensored decensored abliterated conversational text-generation-inference License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Qwen3.5 2B Heretic by saidutta69 — VRAM 1GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/saidutta69%2FQwen3.5-2B-heretic,122cYYrbfobj5699WG3UHI",
+      "snippet": "Qwen3.5 2B Heretic is an open-source 2b LLM by saidutta69. VRAM 1GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    }
+  ]
+}

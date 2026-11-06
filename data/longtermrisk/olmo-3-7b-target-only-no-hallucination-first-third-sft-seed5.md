@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks especificos para este modelo concre
 - VRAM estimada para inferencia: un modelo de 7B en precision FP16 requiere aproximadamente 14 GB de VRAM; con cuantizacion de 8 bits baja a unos 7 GB, y con 4 bits a unos 4 GB. Estas son estimaciones generales para arquitecturas transformer de 7B.
 - GPU recomendadas: para inferencia en FP16, una GPU con 16 GB o mas (por ejemplo, NVIDIA RTX 4090, A100 40GB, L4). Con cuantizacion 4-bit, puede ejecutarse en GPUs consumer de 8 GB como la RTX 3060 Ti o RTX 3070.
 - Si cabe en consumer GPU: si, con cuantizacion adecuada (4-bit o 8-bit) cabe en GPUs de gama media-alta.
-- Opciones de despliegue: al ser un modelo de transformers con safetensors, es compatible con vLLM, TGI (Text Generation Inference), llama.cpp (mediante conversion a GGUF), Ollama (si se convierte) y Hugging Face Inference Endpoints. El tag "endpoints_compatible" en HuggingFace indica soporte oficial para Inference Endpoints.
+- Opciones de despliegue: al ser un modelo de transformers con safetensors, es compatible con vLLM, TGI (Text Generation Inference), llama.cpp (mediante conversion a GGUF), Ollama (si se convierte) y Hugging Face Inference Endpoints. El tag "endpoints_compatible" en Hugging Face indica soporte oficial para Inference Endpoints.
 - Latencia y throughput: no se han publicado mediciones especificas. Para un modelo de 7B en una GPU A100, se puede esperar un throughput del orden de 50-100 tokens/segundo en generacion, pero depende de la implementacion y la longitud de contexto.
 
 ## Comparativa con modelos similares

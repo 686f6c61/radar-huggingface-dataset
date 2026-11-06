@@ -69,7 +69,7 @@ Los datos del modelo base proceden de la información proporcionada. Los de las 
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Vlad39382/lfm25-vl-450m-ru-gguf | 354.483.968 | 4096 tokens (declarados) | ruso | LFM 1.0 (no permisiva) | GGUF en HuggingFace, 0 descargas |
+| Vlad39382/lfm25-vl-450m-ru-gguf | 354.483.968 | 4096 tokens (declarados) | ruso | LFM 1.0 (no permisiva) | GGUF en Hugging Face, 0 descargas |
 | LiquidAI/LFM2.5-VL-450M (modelo base) | no disponible en la información proporcionada | no disponible | no incluye ruso entre sus idiomas base | LFM 1.0 | safetensors, modelo oficial de Liquid AI |
 | Qwen2.5-0.5B-Instruct | ~494 M (dato público, verificar) | ~32 000 tokens (dato público, verificar) | multilingüe amplio (dato público, verificar) | Apache 2.0 (dato público, verificar) | safetensors y GGUF, ecosistema amplio |
 | SmolLM2-360M-Instruct | ~362 M (dato público, verificar) | ~8192 tokens (dato público, verificar) | principalmente inglés (dato público, verificar) | Apache 2.0 (dato público, verificar) | safetensors y GGUF |
@@ -92,6 +92,6 @@ La diferencia relevante frente a las alternativas no es el rendimiento, que no e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Vlad39382/lfm25-vl-450m-ru-gguf
+- Modelo en Hugging Face: https://huggingface.co/Vlad39382/lfm25-vl-450m-ru-gguf
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-VL-450M
 - Los resultados de búsqueda web disponibles no contenían enlaces relevantes al modelo, al paper ni al repositorio del proyecto (on-device-ai-messanger-diploma); solo devolvieron páginas comerciales sin relación.

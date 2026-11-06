@@ -84,7 +84,7 @@ No se dispone de información sobre otros modelos desensurados comparables en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/trohrbaugh/Qwen3.8-Flash-Next-heretic-2
+- Modelo en Hugging Face: https://huggingface.co/trohrbaugh/Qwen3.8-Flash-Next-heretic-2
 - Modelo original: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio GitHub de Qwen3.8-Flash-Next: https://github.com/QwenLM/Qwen3.8-Flash-Next
 - Herramienta Heretic: https://github.com/p-e-w/heretic

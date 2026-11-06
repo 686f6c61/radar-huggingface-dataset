@@ -2,11 +2,11 @@
 
 ## Resumen
 
-DeepSeek LLM 67B Base es un modelo de lenguaje de 67.000 millones de parametros desarrollado por DeepSeek AI y publicado en HuggingFace el 29 de noviembre de 2023. Se trata de un modelo base (no ajustado por instrucciones) entrenado desde cero sobre un corpus de 2 billones de tokens en ingles y chino, con atencion de consultas agrupadas (Grouped-Query Attention, GQA). La variante base esta pensada para investigacion y como punto de partida para ajuste fino, mientras que la version Chat del mismo tamano cubre el uso conversacional.
+DeepSeek LLM 67B Base es un modelo de lenguaje de 67.000 millones de parametros desarrollado por DeepSeek AI y publicado en Hugging Face el 29 de noviembre de 2023. Se trata de un modelo base (no ajustado por instrucciones) entrenado desde cero sobre un corpus de 2 billones de tokens en ingles y chino, con atencion de consultas agrupadas (Grouped-Query Attention, GQA). La variante base esta pensada para investigacion y como punto de partida para ajuste fino, mientras que la version Chat del mismo tamano cubre el uso conversacional.
 
 El modelo forma parte de la primera generacion open source de DeepSeek, que publico las variantes 7B y 67B tanto en version base como chat. Su relevancia radica en que ofrece un tamano cercano a los 70B con licencia que permite uso comercial y pesos abiertos, lo que lo situa como alternativa a Llama 2 70B o Qwen 72B en el segmento de modelos densos de gran tamano para despliegue autoalojado.
 
-El repositorio ocupa 269,7 GB y acumula 9.371 descargas y 148 "likes" en HuggingFace. La model card no especifica la longitud de contexto, los tipos de cuantizacion publicados ni resultados de benchmarks, por lo que esos apartados se marcan como no disponibles.
+El repositorio ocupa 269,7 GB y acumula 9.371 descargas y 148 "likes" en Hugging Face. La model card no especifica la longitud de contexto, los tipos de cuantizacion publicados ni resultados de benchmarks, por lo que esos apartados se marcan como no disponibles.
 
 ## Especificaciones tecnicas
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Arquitectura | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek LLM 67B Base | 67B | Transformer denso con GQA | No disponible | DeepSeek Model License (comercial permitido) | Pesos abiertos en HuggingFace |
+| DeepSeek LLM 67B Base | 67B | Transformer denso con GQA | No disponible | DeepSeek Model License (comercial permitido) | Pesos abiertos en Hugging Face |
 | Llama 2 70B | 70B | Transformer denso con GQA | 4.096 tokens (dato publico del modelo comparable) | Llama 2 Community License | Pesos abiertos |
 | Qwen 1.5 72B | 72B | Transformer denso | No disponible en la informacion proporcionada | Qwen License | Pesos abiertos |
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo en la informacion proporcionad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/deepseek-ai/deepseek-llm-67b-base
+- Modelo en Hugging Face: https://huggingface.co/deepseek-ai/deepseek-llm-67b-base
 - Repositorio GitHub: https://github.com/deepseek-ai/DeepSeek-LLM
 - Licencia del modelo: https://github.com/deepseek-ai/DeepSeek-LLM/blob/main/LICENSE-MODEL
 - Pagina principal de DeepSeek: https://deepseek.com/

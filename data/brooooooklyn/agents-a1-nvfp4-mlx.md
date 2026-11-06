@@ -72,7 +72,7 @@ No se dispone de datos suficientes para una comparativa rigurosa. El modelo base
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Brooooooklyn/Agents-A1-nvfp4-mlx
+- Modelo en Hugging Face: https://huggingface.co/Brooooooklyn/Agents-A1-nvfp4-mlx
 - Modelo base (InternScience/Agents-A1): https://huggingface.co/InternScience/Agents-A1
 - Repositorio del proyecto Agents-A1: https://github.com/InternScience/Agents-A1
 - Pagina del proyecto: https://internscience.github.io/Agents-A1/

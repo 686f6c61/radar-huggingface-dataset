@@ -97,7 +97,7 @@ Comparación con modelos externos de correspondencia de segmentos o de matching 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MuViSeg/muviseg
+- Hugging Face: https://huggingface.co/MuViSeg/muviseg
 - Repositorio de codigo: https://github.com/MuViSeg/muviseg-codeRelease
 - Pagina del proyecto: https://muviseg.github.io
 - Paper (arXiv): https://arxiv.org/abs/2607.17938

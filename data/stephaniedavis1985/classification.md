@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Swin T for Classification es un prototipo de investigación publicado en HuggingFace por el usuario Stephaniedavis1985 bajo el identificador `Stephaniedavis1985/classification`. Se trata de una implementación personalizada de una arquitectura Swin Transformer (Swin T) en su variante "tiny", orientada a tareas de clasificación. El repositorio incluye el código de ejecución (`run.py`), la configuración de arquitectura (`config.json`), los argumentos de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización en formato `safetensors`.
+Swin T for Classification es un prototipo de investigación publicado en Hugging Face por el usuario Stephaniedavis1985 bajo el identificador `Stephaniedavis1985/classification`. Se trata de una implementación personalizada de una arquitectura Swin Transformer (Swin T) en su variante "tiny", orientada a tareas de clasificación. El repositorio incluye el código de ejecución (`run.py`), la configuración de arquitectura (`config.json`), los argumentos de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización en formato `safetensors`.
 
 El dato más relevante para cualquier evaluador es que este repositorio no contiene un modelo entrenado ni evaluado. El propio autor declara explícitamente que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con benchmarks. Con 49.600 parámetros totales (muy por debajo de los ~28M del Swin-T canónico), se trata de una configuración mínima destinada a documentar formatos de fichero y valores por defecto, no a ofrecer rendimiento de producción.
 
@@ -81,6 +81,6 @@ La comparación directa no es significativa: el modelo objeto de esta ficha es u
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Stephaniedavis1985/classification
-- Model card original: incluida en el repositorio HuggingFace
+- Hugging Face: https://huggingface.co/Stephaniedavis1985/classification
+- Model card original: incluida en el repositorio Hugging Face
 - No se han encontrado en la informacion disponible papers, blogs, repositorios adicionales ni demos asociados.

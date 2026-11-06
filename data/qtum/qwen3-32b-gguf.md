@@ -83,7 +83,7 @@ Alternativas de otros modelos densos de 30B con cuantizaciones GGUF (p.ej. Llama
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/qtum/Qwen3-32B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/qtum/Qwen3-32B-GGUF
 - Modelo base Qwen3-32B: https://huggingface.co/Qwen/Qwen3-32B
 - llama.cpp (herramienta de cuantización y ejecución): https://github.com/ggml-org/llama.cpp
 - LM Studio: https://lmstudio.ai/

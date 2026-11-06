@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LarryAIDraw/SigridV1 es un modelo publicado en HuggingFace por el usuario LarryAIDraw, con licencia CreativeML OpenRAIL-M, una de las licencias mas permisivas del ecosistema de IA generativa, pensada para permitir uso comercial con restricciones limitadas. El repositorio tiene un tamano de 0,2 GB y fue creado el 26 de agosto de 2026. La model card es practicamente vacia: solo contiene la declaracion de licencia, sin descripcion de arquitectura, datos de entrenamiento ni especificaciones tecnicas.
+LarryAIDraw/SigridV1 es un modelo publicado en Hugging Face por el usuario LarryAIDraw, con licencia CreativeML OpenRAIL-M, una de las licencias mas permisivas del ecosistema de IA generativa, pensada para permitir uso comercial con restricciones limitadas. El repositorio tiene un tamano de 0,2 GB y fue creado el 26 de agosto de 2026. La model card es practicamente vacia: solo contiene la declaracion de licencia, sin descripcion de arquitectura, datos de entrenamiento ni especificaciones tecnicas.
 
 Las busquedas web sugieren que el nombre "Sigrid" podria estar asociado a modelos de Stable Diffusion para generacion de imagenes, con presencia en plataformas como PromptHero y SeaArt. Sin embargo, no hay evidencia concluyente de que este repositorio concreto corresponda a esos modelos, ya que la model card no lo confirma y el autor no ha publicado documentacion tecnica. El tamano del repositorio (0,2 GB) sugiere que podria tratarse de un checkpoint pequeno, un LoRA o un modelo destilado, pero no hay datos que lo verifiquen.
 

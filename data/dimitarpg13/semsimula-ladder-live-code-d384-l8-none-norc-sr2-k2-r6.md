@@ -71,9 +71,9 @@ La perplejidad de validación se mide en bloque de 512 sobre los primeros 2 M de
 
 | Modelo | Parámetros | Contexto | Perplejidad (CodeParrot val, bloque 512) | Licencia | Disponibilidad |
 |---|---:|---|---:|---|---|
-| K2-L8-R6-CODE | 53.115.091 | No disponible | 5,54 | CC-BY-4.0 | HuggingFace |
-| K2-L8-CODE | 50.164.435 | No disponible | 5,67 | No disponible | HuggingFace |
-| L8-CODE | 76.731.865 | No disponible | 5,35 | No disponible | HuggingFace |
+| K2-L8-R6-CODE | 53.115.091 | No disponible | 5,54 | CC-BY-4.0 | Hugging Face |
+| K2-L8-CODE | 50.164.435 | No disponible | 5,67 | No disponible | Hugging Face |
+| L8-CODE | 76.731.865 | No disponible | 5,35 | No disponible | Hugging Face |
 | GPT-2 emparejado (14,2 M fuera de embeddings) | No disponible | No disponible | 4,96 | No disponible | No en el Hub |
 
 La comparación se limita a las variantes de la misma colección y al GPT-2 emparejado; no se dispone de datos para comparar con modelos de código de propósito general de tamaño similar.
@@ -91,7 +91,7 @@ La comparación se limita a las variantes de la misma colección y al GPT-2 empa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dimitarpg13/semsimula-ladder-live-code-d384-l8-none-norc-sr2-k2-r6
+- Modelo en Hugging Face: https://huggingface.co/dimitarpg13/semsimula-ladder-live-code-d384-l8-none-norc-sr2-k2-r6
 - Variante de rango 4 (K2-L8-CODE): https://huggingface.co/dimitarpg13/semsimula-ladder-live-code-d384-l8-none-norc-sr2-k2
 - Variante de ocho pozos (L8-CODE): https://huggingface.co/dimitarpg13/semsimula-ladder-live-code-d384-l8-none-norc-sr2
 - Variante de cuatro capas (L4-CODE): https://huggingface.co/dimitarpg13/semsimula-ladder-live-code-d384-l4-none-norc-sr2

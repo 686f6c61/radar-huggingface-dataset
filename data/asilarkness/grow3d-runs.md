@@ -89,7 +89,7 @@ La comparación cuantitativa no es posible con los datos disponibles: no hay cif
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Asilarkness/grow3d-runs
+- Repositorio Hugging Face: https://huggingface.co/Asilarkness/grow3d-runs
 - Perfil del autor: https://huggingface.co/Asilarkness
 - Repositorio de datos asociado (`grow3d-data`, referenciado en la model card; URL no verificada en la información disponible): https://huggingface.co/datasets/Asilarkness/grow3d-data
 - Artículo ACM "Grow3D: Hierarchical Next-Scale Octree Prediction..." (relación con este repositorio no confirmada): https://dl.acm.org/doi/full/10.1145/3820379

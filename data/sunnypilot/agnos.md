@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Agnos es un modelo publicado en HuggingFace por la organizacion sunnypilot bajo licencia Apache 2.0. La model card disponible se limita a la declaracion de licencia: no incluye descripcion del modelo, arquitectura, datos de entrenamiento, capacidades ni ejemplos de uso. El repositorio no registra descargas ni likes en el momento de la consulta y fue creado y actualizado en la misma fecha (29 de octubre de 2026), lo que sugiere una publicacion inicial sin documentacion asociada.
+Agnos es un modelo publicado en Hugging Face por la organizacion sunnypilot bajo licencia Apache 2.0. La model card disponible se limita a la declaracion de licencia: no incluye descripcion del modelo, arquitectura, datos de entrenamiento, capacidades ni ejemplos de uso. El repositorio no registra descargas ni likes en el momento de la consulta y fue creado y actualizado en la misma fecha (29 de octubre de 2026), lo que sugiere una publicacion inicial sin documentacion asociada.
 
 No se dispone de informacion sobre el tamano del modelo, la longitud de contexto, la arquitectura ni los idiomas soportados. La etiqueta `region:us` indica unicamente la region de alojamiento del repositorio, no una caracteristica tecnica del modelo. Tampoco se ha identificado un pipeline de inferencia declarado, por lo que no es posible confirmar la tarea para la que fue disenado.
 
@@ -79,5 +79,5 @@ No es posible establecer una comparativa fiable sin conocer la categoria, el tam
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sunnypilot/agnos
+- Repositorio en Hugging Face: https://huggingface.co/sunnypilot/agnos
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion disponible.

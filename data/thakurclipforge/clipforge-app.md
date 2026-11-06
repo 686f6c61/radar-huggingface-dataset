@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ClipForge no es un modelo de IA en sentido estricto, sino una aplicacion web autoalojable de codigo abierto (publicada en HuggingFace Spaces bajo el identificador `thakurclipforge/clipforge-app`) que automatiza la generacion de clips verticales a partir de videos largos, al estilo de OpusClip. El sistema encadena varias herramientas: descarga de video con `yt-dlp`, transcripcion con Whisper a nivel de palabra, seleccion de momentos mediante un LLM externo (OpenAI, Groq o Gemini) o un motor de puntuacion interno, reencuadre 9:16 con seguimiento facial, generacion de subtitulos animados en formato ASS y calculo de una puntuacion de viralidad desglosada en Hook, Flow, Value y Trend.
+ClipForge no es un modelo de IA en sentido estricto, sino una aplicacion web autoalojable de codigo abierto (publicada en Hugging Face Spaces bajo el identificador `thakurclipforge/clipforge-app`) que automatiza la generacion de clips verticales a partir de videos largos, al estilo de OpusClip. El sistema encadena varias herramientas: descarga de video con `yt-dlp`, transcripcion con Whisper a nivel de palabra, seleccion de momentos mediante un LLM externo (OpenAI, Groq o Gemini) o un motor de puntuacion interno, reencuadre 9:16 con seguimiento facial, generacion de subtitulos animados en formato ASS y calculo de una puntuacion de viralidad desglosada en Hook, Flow, Value y Trend.
 
 El repositorio tiene un tamano declarado de 0.0 GB, cero descargas y cero likes en el momento de la consulta, y no especifica licencia, idiomas ni pipeline. La model card esta redactada mayoritariamente en hindi/hinglish y describe el producto, no un checkpoint de pesos: no hay parametros, arquitectura de red ni contexto que documentar.
 
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento comparativos entre ClipForge y alternativa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/thakurclipforge/clipforge-app
+- Repositorio en Hugging Face: https://huggingface.co/thakurclipforge/clipforge-app
 - Whisper (OpenAI), componente de transcripcion: https://github.com/openai/whisper
 - yt-dlp, componente de descarga: https://github.com/yt-dlp/yt-dlp
 - FFmpeg, componente de renderizado: https://ffmpeg.org/

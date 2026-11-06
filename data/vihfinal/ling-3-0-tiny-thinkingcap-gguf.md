@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Ling-3.0-tiny-thinkingcap-gguf es una cuantización en formato GGUF del modelo base vihfinal/Ling-3.0-tiny-thinkingcap, publicado por el usuario vihfinal. El modelo pertenece a la familia Ling, que tiene presencia en HuggingFace a través de inclusionAI/Ling-3.0-tiny. Se trata de un modelo con 7.893.392.800 parámetros (aproximadamente 7.9B) y licencia MIT, lo que permite uso comercial sin restricciones.
+Ling-3.0-tiny-thinkingcap-gguf es una cuantización en formato GGUF del modelo base vihfinal/Ling-3.0-tiny-thinkingcap, publicado por el usuario vihfinal. El modelo pertenece a la familia Ling, que tiene presencia en Hugging Face a través de inclusionAI/Ling-3.0-tiny. Se trata de un modelo con 7.893.392.800 parámetros (aproximadamente 7.9B) y licencia MIT, lo que permite uso comercial sin restricciones.
 
-Este repositorio contiene exclusivamente los pesos en formato GGUF, pensados para su ejecución en local mediante herramientas como llama.cpp, Ollama o LM Studio. No se ha publicado documentación técnica en la model card ni en la información de HuggingFace: no se detallan la arquitectura, la longitud de contexto, los idiomas soportados ni las capacidades funcionales. La relevancia de este modelo radica en su disponibilidad como artefacto cuantizado y listo para desplegar, aunque su validación técnica requiere consultar fuentes adicionales no disponibles en el momento de elaborar esta ficha.
+Este repositorio contiene exclusivamente los pesos en formato GGUF, pensados para su ejecución en local mediante herramientas como llama.cpp, Ollama o LM Studio. No se ha publicado documentación técnica en la model card ni en la información de Hugging Face: no se detallan la arquitectura, la longitud de contexto, los idiomas soportados ni las capacidades funcionales. La relevancia de este modelo radica en su disponibilidad como artefacto cuantizado y listo para desplegar, aunque su validación técnica requiere consultar fuentes adicionales no disponibles en el momento de elaborar esta ficha.
 
 ## Especificaciones tecnicas
 
@@ -21,11 +21,11 @@ Este repositorio contiene exclusivamente los pesos en formato GGUF, pensados par
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en la informacion de HuggingFace. Tampoco se dispone de datos sobre el proceso de entrenamiento, la composicion del dataset, el numero de tokens ni la aplicacion de tecnicas como RLHF o DPO. El unico dato estructural disponible es el recuento de parametros (7.893.392.800), que indica una escala de aproximadamente 7.900 millones. Cualquier afirmacion adicional sobre la arquitectura interna seria especulativa.
+No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en la informacion de Hugging Face. Tampoco se dispone de datos sobre el proceso de entrenamiento, la composicion del dataset, el numero de tokens ni la aplicacion de tecnicas como RLHF o DPO. El unico dato estructural disponible es el recuento de parametros (7.893.392.800), que indica una escala de aproximadamente 7.900 millones. Cualquier afirmacion adicional sobre la arquitectura interna seria especulativa.
 
 ## Capacidades
 
-No se han documentado capacidades especificas en la informacion proporcionada. Los tags de HuggingFace incluyen "conversational" y "endpoints_compatible", lo que sugiere que el modelo puede ser utilizado para tareas de dialogo y desplegado como endpoint, pero no existe una lista detallada de funcionalidades. No se dispone de informacion sobre soporte de tool calling, vision, audio, razonamiento multi-step ni capacidades multilingues.
+No se han documentado capacidades especificas en la informacion proporcionada. Los tags de Hugging Face incluyen "conversational" y "endpoints_compatible", lo que sugiere que el modelo puede ser utilizado para tareas de dialogo y desplegado como endpoint, pero no existe una lista detallada de funcionalidades. No se dispone de informacion sobre soporte de tool calling, vision, audio, razonamiento multi-step ni capacidades multilingues.
 
 ## Casos de uso
 

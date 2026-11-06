@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-1017-obliterated es una versión del modelo DeepSeek-V4.1-Flash-1017 con la dirección de rechazo ablacionada (refusal-direction ablated), publicada por el usuario jishnuzero en HuggingFace. El modelo se ha generado con la herramienta OBLITERATUS usando el método failspy, y mantiene los pesos en BF16 safetensors bajo licencia MIT. El modelo base es un transformer de tipo Mixture of Experts (MoE) de DeepSeek, del cual no se dispone de especificaciones públicas en la información proporcionada.
+DeepSeek-V4.1-Flash-1017-obliterated es una versión del modelo DeepSeek-V4.1-Flash-1017 con la dirección de rechazo ablacionada (refusal-direction ablated), publicada por el usuario jishnuzero en Hugging Face. El modelo se ha generado con la herramienta OBLITERATUS usando el método failspy, y mantiene los pesos en BF16 safetensors bajo licencia MIT. El modelo base es un transformer de tipo Mixture of Experts (MoE) de DeepSeek, del cual no se dispone de especificaciones públicas en la información proporcionada.
 
 El propósito declarado de esta variante es eliminar el comportamiento de rechazo del modelo original: según la model card, la tasa de rechazo cae del 81,62% al 4,30% en un corpus de 842 prompts, mientras que la coherencia y la capacidad se mantienen al 100% en las pruebas internas del autor. La divergencia KL respecto al modelo original es de 0,1305 nats.
 
@@ -82,9 +82,9 @@ La evaluación MMLU (2.500 preguntas, 57 materias, zero-shot, thinking disabled)
 
 | Modelo | Parámetros | Contexto | Rechazo | Licencia | Disponibilidad |
 |---|---|---:|---|---|---|
-| DeepSeek-V4.1-Flash-1017-obliterated | 754,6 B (MoE) | no disponible | 4,30% | MIT | HuggingFace |
-| DeepSeek-V4.1-Flash-1017 (base) | 754,6 B (MoE) | no disponible | 81,62% | no disponible | HuggingFace |
-| Otras variantes abliterated de la familia DeepSeek | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| DeepSeek-V4.1-Flash-1017-obliterated | 754,6 B (MoE) | no disponible | 4,30% | MIT | Hugging Face |
+| DeepSeek-V4.1-Flash-1017 (base) | 754,6 B (MoE) | no disponible | 81,62% | no disponible | Hugging Face |
+| Otras variantes abliterated de la familia DeepSeek | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de información sobre otros modelos comparables de la misma categoría (abliterated de gran escala) en la documentación proporcionada.
 
@@ -102,7 +102,7 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jishnuzero/DeepSeek-V4.1-Flash-1017-obliterated
+- Hugging Face: https://huggingface.co/jishnuzero/DeepSeek-V4.1-Flash-1017-obliterated
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Herramienta OBLITERATUS: https://github.com/elder-plinius/OBLITERATUS
 - Detalles del método: winner-recovery-provenance.json (en el repo)

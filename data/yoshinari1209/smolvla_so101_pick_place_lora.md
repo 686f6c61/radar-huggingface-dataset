@@ -78,7 +78,7 @@ SmolVLA se diferencia de ACT por su mayor capacidad (500M vs 80M) y su arquitect
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yoshinari1209/smolvla_so101_pick_place_lora
+- Repositorio Hugging Face: https://huggingface.co/yoshinari1209/smolvla_so101_pick_place_lora
 - Dataset de entrenamiento: https://huggingface.co/datasets/yoshinari1209/so101_pick_place_50eps_v1_20260817_192908
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Paper SmolVLA: https://huggingface.co/papers/2506.01844

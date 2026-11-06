@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`redxsun/bonusstuff` es un modelo publicado en HuggingFace por el usuario `redxsun` bajo licencia OpenRAIL. La model card asociada no contiene ninguna descripción funcional, arquitectónica ni de uso: únicamente incluye el campo de licencia en el frontmatter YAML. No hay información sobre el tipo de modelo, su propósito, su entrenamiento ni sus capacidades.
+`redxsun/bonusstuff` es un modelo publicado en Hugging Face por el usuario `redxsun` bajo licencia OpenRAIL. La model card asociada no contiene ninguna descripción funcional, arquitectónica ni de uso: únicamente incluye el campo de licencia en el frontmatter YAML. No hay información sobre el tipo de modelo, su propósito, su entrenamiento ni sus capacidades.
 
 El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) y fue creado y actualizado en la misma marca temporal (2026-11-06T02:20:05Z), lo que sugiere una publicación sin iteraciones posteriores ni mantenimiento documentado. El pipeline no está declarado, por lo que la plataforma no lo clasifica en ninguna tarea concreta (text-generation, image-classification, etc.).
 
@@ -75,5 +75,5 @@ No disponible. No es posible establecer comparaciones con otros modelos al desco
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/redxsun/bonusstuff
+- Hugging Face: https://huggingface.co/redxsun/bonusstuff
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

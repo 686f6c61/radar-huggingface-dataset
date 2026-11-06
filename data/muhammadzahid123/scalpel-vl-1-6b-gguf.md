@@ -56,7 +56,7 @@ Tampoco se especifican el numero de tokens de entrenamiento, la composicion del 
 
 No se han publicado resultados de benchmarks en la informacion disponible.
 
-Ni la model card del repositorio cuantizado ni los metadatos de HuggingFace incluyen puntuaciones de MMLU, HumanEval, GSM8K, MMMU, DocVQA ni de ninguna otra evaluacion. Tampoco se han facilitado comparaciones de perplejidad entre las distintas cuantizaciones (la model card enlaza una grafica generica de ikawrakow sobre perdida de calidad por tipo de quant, pero no ofrece valores medidos para este modelo concreto). Cualquier cifra de rendimiento deberia obtenerse mediante evaluacion propia.
+Ni la model card del repositorio cuantizado ni los metadatos de Hugging Face incluyen puntuaciones de MMLU, HumanEval, GSM8K, MMMU, DocVQA ni de ninguna otra evaluacion. Tampoco se han facilitado comparaciones de perplejidad entre las distintas cuantizaciones (la model card enlaza una grafica generica de ikawrakow sobre perdida de calidad por tipo de quant, pero no ofrece valores medidos para este modelo concreto). Cualquier cifra de rendimiento deberia obtenerse mediante evaluacion propia.
 
 ## Requisitos de hardware
 
@@ -101,7 +101,7 @@ No se dispone de informacion verificada sobre modelos comparables en la document
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/MuhammadZahid123/Scalpel-VL-1.6B-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/MuhammadZahid123/Scalpel-VL-1.6B-GGUF
 - Modelo base: https://huggingface.co/freeai-org/Scalpel-VL-1.6B-Animal
 - Repositorio de cuantizacion referenciado en la model card: https://huggingface.co/mradermacher/Scalpel-VL-1.6B-GGUF
 - Pagina resumen de cuantizaciones de mradermacher: https://hf.tst.eu/model#Scalpel-VL-1.6B-GGUF

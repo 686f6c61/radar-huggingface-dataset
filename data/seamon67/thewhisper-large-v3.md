@@ -77,10 +77,10 @@ Observaciones a partir de la tabla: TheWhisper-large-v3 mejora a la variante tur
 
 | Modelo | Parametros | Ventana de audio | WER medio (30 s) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| seamon67/thewhisper-large-v3 (BF16) | 1,54 mil millones | 10-30 s | no disponible para esta conversion | MIT | HuggingFace, 0 descargas |
-| TheStageAI/thewhisper-large-v3 | 1,54 mil millones | 10-30 s | 7,28 | MIT | HuggingFace, motores propios |
-| openai/whisper-large-v3 | 1,55 mil millones | 30 s (con relleno) | 7,32 | MIT | HuggingFace, ampliamente desplegado |
-| openai/whisper-large-v3-turbo | 809 millones | 30 s (con relleno) | 7,61 | MIT | HuggingFace, mas rapido y ligero |
+| seamon67/thewhisper-large-v3 (BF16) | 1,54 mil millones | 10-30 s | no disponible para esta conversion | MIT | Hugging Face, 0 descargas |
+| TheStageAI/thewhisper-large-v3 | 1,54 mil millones | 10-30 s | 7,28 | MIT | Hugging Face, motores propios |
+| openai/whisper-large-v3 | 1,55 mil millones | 30 s (con relleno) | 7,32 | MIT | Hugging Face, ampliamente desplegado |
+| openai/whisper-large-v3-turbo | 809 millones | 30 s (con relleno) | 7,61 | MIT | Hugging Face, mas rapido y ligero |
 
 La ventaja diferencial de esta familia frente a Whisper Large V3 original es la ausencia de relleno de silencio y la decodificacion en streaming; su desventaja es que, en fragmentos de 10 s, el WER empeora entre 0,25 y 0,35 puntos. Frente a la variante turbo, ofrece mejor calidad a costa de casi el doble de parametros.
 
@@ -98,8 +98,8 @@ La ventaja diferencial de esta familia frente a Whisper Large V3 original es la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/seamon67/thewhisper-large-v3
-- Modelo base en HuggingFace: https://huggingface.co/TheStageAI/thewhisper-large-v3
+- Modelo en Hugging Face: https://huggingface.co/seamon67/thewhisper-large-v3
+- Modelo base en Hugging Face: https://huggingface.co/TheStageAI/thewhisper-large-v3
 - Modelo original de OpenAI: https://huggingface.co/openai/whisper-large-v3
 - Repositorio de TheWhisper en GitHub: https://github.com/TheStageAI/TheWhisper
 - Benchmarks de TheWhisper: https://github.com/TheStageAI/TheWhisper/blob/main/benchmark/README.md

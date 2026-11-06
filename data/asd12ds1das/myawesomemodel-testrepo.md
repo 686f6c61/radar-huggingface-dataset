@@ -2,24 +2,24 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje desarrollado por el autor ASD12DS1DAS, que se presenta como una actualización significativa de la familia MyAwesomeModel. Según su documentación, la nueva versión mejora la profundidad de razonamiento mediante un mayor uso de recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento. En el benchmark AIME 2025, la precisión sube del 70 % al 87,5 %, acompañado de un incremento en el número de tokens de pensamiento por pregunta (de 12K a 23K). El modelo se describe como un sistema conversacional con soporte de function calling, aunque en HuggingFace aparece etiquetado como pipeline `feature-extraction` y con la arquitectura `bert`, lo que genera cierta ambigüedad técnica. No se especifican parámetros totales, longitud de contexto ni idiomas soportados, y el repositorio no contiene pesos (tamaño 0,0 GB), por lo que se trata de un modelo documentado pero no desplegable en su estado actual.
+MyAwesomeModel es un modelo de lenguaje desarrollado por el autor ASD12DS1DAS, que se presenta como una actualización significativa de la familia MyAwesomeModel. Según su documentación, la nueva versión mejora la profundidad de razonamiento mediante un mayor uso de recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento. En el benchmark AIME 2025, la precisión sube del 70 % al 87,5 %, acompañado de un incremento en el número de tokens de pensamiento por pregunta (de 12K a 23K). El modelo se describe como un sistema conversacional con soporte de function calling, aunque en Hugging Face aparece etiquetado como pipeline `feature-extraction` y con la arquitectura `bert`, lo que genera cierta ambigüedad técnica. No se especifican parámetros totales, longitud de contexto ni idiomas soportados, y el repositorio no contiene pesos (tamaño 0,0 GB), por lo que se trata de un modelo documentado pero no desplegable en su estado actual.
 
 ## Especificaciones técnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (etiquetado como `bert` en HuggingFace); variante exacta no disponible |
+| Arquitectura | Transformer (etiquetado como `bert` en Hugging Face); variante exacta no disponible |
 | Parámetros totales | no disponible |
 | Parámetros activos | no aplica (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantización | no disponible |
-| Idiomas soportados | no disponible (según metadatos de HuggingFace) |
+| Idiomas soportados | no disponible (según metadatos de Hugging Face) |
 | Licencia | MIT |
 | Formato de pesos | no disponible (el repositorio tiene un tamaño de 0,0 GB) |
 
 ## Arquitectura y entrenamiento
 
-La información disponible no detalla la arquitectura exacta, los datos de entrenamiento ni el número de tokens utilizados. Los metadatos de HuggingFace etiquetan el modelo como `bert` y `feature-extraction`, lo que sugeriría un codificador de embeddings, pero la documentación oficial describe un modelo conversacional con capacidades de razonamiento profundo. La actualización se llevó a cabo con "más recursos computacionales" y "mecanismos de optimización algorítmica" durante el post-entrenamiento, sin especificar si se usó RLHF, DPO u otra técnica de alineación. El modelo consume una media de 23K tokens por pregunta en AIME 2025, frente a los 12K de la versión anterior, lo que indica un modo de razonamiento extendido. También se menciona una variante denominada MyAwesomeModel-Small, cuya arquitectura es idéntica a la del modelo principal y comparte el mismo tokenizer.
+La información disponible no detalla la arquitectura exacta, los datos de entrenamiento ni el número de tokens utilizados. Los metadatos de Hugging Face etiquetan el modelo como `bert` y `feature-extraction`, lo que sugeriría un codificador de embeddings, pero la documentación oficial describe un modelo conversacional con capacidades de razonamiento profundo. La actualización se llevó a cabo con "más recursos computacionales" y "mecanismos de optimización algorítmica" durante el post-entrenamiento, sin especificar si se usó RLHF, DPO u otra técnica de alineación. El modelo consume una media de 23K tokens por pregunta en AIME 2025, frente a los 12K de la versión anterior, lo que indica un modo de razonamiento extendido. También se menciona una variante denominada MyAwesomeModel-Small, cuya arquitectura es idéntica a la del modelo principal y comparte el mismo tokenizer.
 
 ## Capacidades
 
@@ -80,17 +80,17 @@ No disponible. La única comparativa presente en la información proporcionada e
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace no contiene pesos (tamaño 0,0 GB), por lo que el modelo no puede descargarse ni utilizarse tal como está publicado.
+- El repositorio de Hugging Face no contiene pesos (tamaño 0,0 GB), por lo que el modelo no puede descargarse ni utilizarse tal como está publicado.
 - No se especifican la arquitectura, el número de parámetros, la longitud de contexto ni los idiomas soportados.
 - Los resultados de benchmarks proceden del propio autor y no han sido verificados por terceros.
-- La etiqueta de pipeline `feature-extraction` en HuggingFace puede no reflejar el uso real del modelo como conversacional y de razonamiento, lo que puede provocar confusiones al integrarlo en aplicaciones.
+- La etiqueta de pipeline `feature-extraction` en Hugging Face puede no reflejar el uso real del modelo como conversacional y de razonamiento, lo que puede provocar confusiones al integrarlo en aplicaciones.
 - No se informa de sesgos concretos, pero al no haber datos de entrenamiento ni evaluaciones externas, el riesgo de sesgo no puede descartarse.
 - Aunque se afirma una reducción de la tasa de alucinación, no se proporciona una métrica cuantitativa que lo respalde.
 - La licencia MIT permite uso comercial, pero al no haber pesos disponibles, no se puede comercializar sin reentrenar o reconstruir el modelo.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ASD12DS1DAS/MyAwesomeModel-TestRepo
+- Hugging Face: https://huggingface.co/ASD12DS1DAS/MyAwesomeModel-TestRepo
 - Model card: https://huggingface.co/ASD12DS1DAS/MyAwesomeModel-TestRepo (mismo enlace)
 - Repositorio de código: no disponible en la información proporcionada
 - Página web oficial: no disponible en la información proporcionada

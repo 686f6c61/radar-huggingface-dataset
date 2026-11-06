@@ -1,0 +1,103 @@
+{
+  "schema": 1,
+  "id": "Kurdzik/flisak-anon-en",
+  "slug": "kurdzik-flisak-anon-en",
+  "author": "Kurdzik",
+  "url": "https://huggingface.co/Kurdzik/flisak-anon-en",
+  "created_at": "2026-11-02T11:35:10.000Z",
+  "updated_at": "2026-11-02T11:55:34.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "safetensors",
+    "roberta",
+    "token-classification",
+    "ner",
+    "anonymization",
+    "pii",
+    "english",
+    "en",
+    "dataset:nvidia/Nemotron-PII",
+    "dataset:MultiCoNER/multiconer_v2",
+    "dataset:GateNLP/broad_twitter_corpus",
+    "arxiv:1907.11692",
+    "base_model:FacebookAI/roberta-base",
+    "base_model:finetune:FacebookAI/roberta-base",
+    "license:cc-by-4.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 35,
+  "trending_score": 0,
+  "parameters": 124057347,
+  "parameters_human": "124.1M",
+  "storage_bytes": 992549123,
+  "storage_human": "993 MB",
+  "base_model": "FacebookAI/roberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Person name detection",
+      "dataset": "Synthetic English business mail, test v3",
+      "metric": "Person precision (exact span)",
+      "value": 0.99
+    },
+    {
+      "task": "Person name detection",
+      "dataset": "Synthetic English business mail, test v3",
+      "metric": "Person recall (exact span)",
+      "value": 0.99
+    },
+    {
+      "task": "Person name detection",
+      "dataset": "Synthetic English business mail, test v3",
+      "metric": "Person F1 (exact span)",
+      "value": 0.99
+    },
+    {
+      "task": "Person name detection",
+      "dataset": "UNER English-EWT",
+      "metric": "Person precision (exact span)",
+      "value": 0.8921
+    },
+    {
+      "task": "Person name detection",
+      "dataset": "UNER English-EWT",
+      "metric": "Person recall (exact span)",
+      "value": 0.8842
+    },
+    {
+      "task": "Person name detection",
+      "dataset": "UNER English-EWT",
+      "metric": "Person F1 (exact span)",
+      "value": 0.8881
+    }
+  ],
+  "sources": [
+    {
+      "title": "Kurdzik/flisak-anon-en · Hugging Face",
+      "url": "https://huggingface.co/Kurdzik/flisak-anon-en",
+      "snippet": "It is the English counterpart of Kurdzik/flisak-anon, the Polish model, and serves as the name stage of the same anonymisation pipeline. It was developed for the anonymisation feature of Flisak, a document-management system."
+    },
+    {
+      "title": "Flisak Anon En - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/kurdzik/flisak-anon-en",
+      "snippet": "Registry entry for model Flisak Anon En; source metadata pending."
+    }
+  ]
+}

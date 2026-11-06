@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sandeepsin/learn-generation` es un repositorio experimental publicado en HuggingFace por el usuario sandeepsin que contiene una implementación funcional de una arquitectura híbrida orientada a generación de texto, configurada a escala "tiny". No se trata de un modelo entrenado ni de un checkpoint con pesos ajustados, sino de un punto de partida reproducible: el propio autor indica de forma explícita que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no debe presentarse como un modelo evaluado con benchmarks.
+`sandeepsin/learn-generation` es un repositorio experimental publicado en Hugging Face por el usuario sandeepsin que contiene una implementación funcional de una arquitectura híbrida orientada a generación de texto, configurada a escala "tiny". No se trata de un modelo entrenado ni de un checkpoint con pesos ajustados, sino de un punto de partida reproducible: el propio autor indica de forma explícita que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no debe presentarse como un modelo evaluado con benchmarks.
 
 El interés del repositorio es fundamentalmente didáctico y de ingeniería: documenta una configuración de arquitectura concreta (atención de ventana deslizante, fusión de bajo rango, activación swish y normalización scalenorm) junto con un script en Python que sirve tanto de definición del modelo como de ejemplo ejecutable. Con 33.088 parámetros totales y un tamaño de repositorio prácticamente nulo, su relevancia actual no está en el rendimiento sino en servir como plantilla transparente para experimentar con arquitecturas híbridas y como base para futuros entrenamientos documentados por separado.
 
@@ -84,6 +84,6 @@ No disponible. La información proporcionada no identifica modelos comparables d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sandeepsin/learn-generation
+- Hugging Face: https://huggingface.co/sandeepsin/learn-generation
 - Resultados de búsqueda web: no se han encontrado enlaces relevantes al modelo en la busqueda proporcionada (los resultados devueltos corresponden a sitios de plantillas de currículum sin relación con el repositorio).
 - Paper, blog, repositorio adicional o demo: no disponibles.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`stefanocarrera/kic_M_Qwen3-8B_python_t1.0_g6_run0` es un ajuste fino (fine-tune) del modelo base Qwen3-8B, concretamente sobre la variante cuantizada en 4 bits `unsloth/Qwen3-8B-Base-unsloth-bnb-4bit`. Lo publica el usuario stefanocarrera en HuggingFace y, por los metadatos del nombre (sufijos `python`, `t1.0`, `g6`, `run0`), se trata de un experimento de entrenamiento orientado a generacion de codigo Python, probablemente dentro de una bateria de runs con hiperparametros concretos. La model card es practicamente vacia: solo indica autor, licencia y modelo base, sin detallar datos de entrenamiento, hiperparametros ni resultados.
+`stefanocarrera/kic_M_Qwen3-8B_python_t1.0_g6_run0` es un ajuste fino (fine-tune) del modelo base Qwen3-8B, concretamente sobre la variante cuantizada en 4 bits `unsloth/Qwen3-8B-Base-unsloth-bnb-4bit`. Lo publica el usuario stefanocarrera en Hugging Face y, por los metadatos del nombre (sufijos `python`, `t1.0`, `g6`, `run0`), se trata de un experimento de entrenamiento orientado a generacion de codigo Python, probablemente dentro de una bateria de runs con hiperparametros concretos. La model card es practicamente vacia: solo indica autor, licencia y modelo base, sin detallar datos de entrenamiento, hiperparametros ni resultados.
 
 El modelo hereda la arquitectura de Qwen3-8B, un transformer denso de aproximadamente 8.200 millones de parametros desarrollado por el equipo Qwen de Alibaba. Qwen3 es una familia relevante en el ecosistema open source por su soporte de modo "thinking" (razonamiento explicito) y su ventana de contexto nativa de 32.768 tokens, extensible hasta 131.072 mediante YaRN. Este fine-tune concreto, sin embargo, parte de la variante *Base* (no la instruct), por lo que no incorpora el post-entrenamiento conversacional original.
 
@@ -44,7 +44,7 @@ El fine-tune se ha realizado con Unsloth, segun indica la propia model card ("tr
 - Base para futuros fine-tunes: al estar bajo Apache 2.0, puede reutilizarse como punto de partida para ajustes adicionales orientados a dominios concretos.
 - Investigacion sobre cuantizacion 4-bit: permite estudiar la degradacion de calidad al entrenar sobre una base ya cuantizada frente a entrenar en precision completa.
 - Prototipado de asistentes de codigo en local: con 8B parametros y pesos en safetensors, se puede desplegar en GPUs de 16-24 GB para pruebas internas.
-- Docencia y formacion: ejemplo practico de como se publica un fine-tune en HuggingFace con Unsloth, util en cursos de IA aplicada.
+- Docencia y formacion: ejemplo practico de como se publica un fine-tune en Hugging Face con Unsloth, util en cursos de IA aplicada.
 
 ## Benchmarks y rendimiento
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| stefanocarrera/kic_M_Qwen3-8B_python_t1.0_g6_run0 | ~8.2B | 32.768 (heredado) | Apache 2.0 | HuggingFace, 0 descargas | Fine-tune experimental sin benchmarks |
-| Qwen/Qwen3-8B | ~8.2B | 32.768 (131.072 con YaRN) | Apache 2.0 | HuggingFace, ampliamente usado | Modelo oficial con modo thinking y benchmarks publicados |
-| meta-llama/Llama-3.1-8B | ~8B | 131.072 | Llama 3.1 Community License | HuggingFace | Alternativa densa de tamano similar, con restricciones de licencia |
-| mistralai/Mistral-7B-v0.3 | ~7.2B | 32.768 | Apache 2.0 | HuggingFace | Alternativa ligera con licencia permisiva |
+| stefanocarrera/kic_M_Qwen3-8B_python_t1.0_g6_run0 | ~8.2B | 32.768 (heredado) | Apache 2.0 | Hugging Face, 0 descargas | Fine-tune experimental sin benchmarks |
+| Qwen/Qwen3-8B | ~8.2B | 32.768 (131.072 con YaRN) | Apache 2.0 | Hugging Face, ampliamente usado | Modelo oficial con modo thinking y benchmarks publicados |
+| meta-llama/Llama-3.1-8B | ~8B | 131.072 | Llama 3.1 Community License | Hugging Face | Alternativa densa de tamano similar, con restricciones de licencia |
+| mistralai/Mistral-7B-v0.3 | ~7.2B | 32.768 | Apache 2.0 | Hugging Face | Alternativa ligera con licencia permisiva |
 
 ## Limitaciones y advertencias
 
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/stefanocarrera/kic_M_Qwen3-8B_python_t1.0_g6_run0
+- Hugging Face: https://huggingface.co/stefanocarrera/kic_M_Qwen3-8B_python_t1.0_g6_run0
 - Modelo base: https://huggingface.co/unsloth/Qwen3-8B-Base-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Familia Qwen3 (referencia): https://huggingface.co/Qwen/Qwen3-8B

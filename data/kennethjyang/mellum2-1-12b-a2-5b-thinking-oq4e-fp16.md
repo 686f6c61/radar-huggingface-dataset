@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mellum2.1-12B-A2.5B-Thinking-oQ4e-fp16 es una version cuantizada del modelo Mellum 2.1 en su variante Thinking, distribuida por el usuario kennethjyang en HuggingFace. Se trata de una publicacion derivada: el autor original del modelo base no es el responsable de este repositorio, sino que aqui se ofrece una conversion cuantizada a 4 bits mediante la herramienta oQ (oMLX v0.7.0) en formato MLX safetensors, orientada a ejecucion en hardware Apple Silicon.
+Mellum2.1-12B-A2.5B-Thinking-oQ4e-fp16 es una version cuantizada del modelo Mellum 2.1 en su variante Thinking, distribuida por el usuario kennethjyang en Hugging Face. Se trata de una publicacion derivada: el autor original del modelo base no es el responsable de este repositorio, sino que aqui se ofrece una conversion cuantizada a 4 bits mediante la herramienta oQ (oMLX v0.7.0) en formato MLX safetensors, orientada a ejecucion en hardware Apple Silicon.
 
 El modelo base es un transformer de tipo mezcla de expertos (MoE), con un total de 12.149.923.072 parametros segun los pesos safetensors publicados. La nomenclatura "12B-A2.5B" indica 12.000 millones de parametros totales y aproximadamente 2.500 millones de parametros activos por token, aunque este ultimo dato no se confirma de forma explicita en la model card y procede de la convencion de nombres. La variante "Thinking" sugiere un modo de razonamiento extendido, aunque la model card no detalla su funcionamiento.
 
@@ -88,6 +88,6 @@ No se dispone de informacion sobre otros modelos comparables (parametros, contex
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kennethjyang/Mellum2.1-12B-A2.5B-Thinking-oQ4e-fp16
+- Repositorio en Hugging Face: https://huggingface.co/kennethjyang/Mellum2.1-12B-A2.5B-Thinking-oQ4e-fp16
 - Herramienta de cuantizacion oQ (oMLX): https://github.com/jundot/omlx
 - Modelo base Mellum2.1-12B-A2.5B-Thinking: no disponible (no se enlaza en la model card)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `alfred8995/r18-a2-w13-kx-chrono4-w20-s130` es un checkpoint publicado en HuggingFace por el usuario alfred8995 bajo el identificador de arquitectura `sn38-nanochrono`. Se trata de un modelo de aproximadamente 2.018 millones de parámetros totales (2,02 B), distribuido en formato safetensors y con un tamaño de repositorio de 12,6 GB, lo que sugiere pesos en precisión de 16 bits o similar. La licencia declarada es Apache 2.0, aunque el acceso está restringido (gated) y requiere aceptar condiciones en la plataforma.
+El modelo `alfred8995/r18-a2-w13-kx-chrono4-w20-s130` es un checkpoint publicado en Hugging Face por el usuario alfred8995 bajo el identificador de arquitectura `sn38-nanochrono`. Se trata de un modelo de aproximadamente 2.018 millones de parámetros totales (2,02 B), distribuido en formato safetensors y con un tamaño de repositorio de 12,6 GB, lo que sugiere pesos en precisión de 16 bits o similar. La licencia declarada es Apache 2.0, aunque el acceso está restringido (gated) y requiere aceptar condiciones en la plataforma.
 
 La información pública disponible es muy escasa: no se especifican el pipeline, los idiomas soportados, la longitud de contexto, los datos de entrenamiento ni los resultados de benchmarks. El nombre del repositorio parece codificar hiperparámetros o variantes de entrenamiento (`r18`, `a2`, `w13`, `chrono4`, `w20`, `s130`), pero no hay documentación que los explique. El tag `sn38-nanochrono` apunta a una familia de modelos propia del autor, sin publicaciones asociadas conocidas.
 
@@ -29,7 +29,7 @@ Tampoco se dispone de información sobre el corpus de entrenamiento (número de 
 
 ## Capacidades
 
-- Generación de texto: no confirmada por documentación; el pipeline no está declarado en HuggingFace.
+- Generación de texto: no confirmada por documentación; el pipeline no está declarado en Hugging Face.
 - Razonamiento y matemáticas: no disponible.
 - Generación de código: no disponible.
 - Tool calling / function calling: no disponible.
@@ -75,7 +75,7 @@ La comparación es orientativa por tamaño; no se dispone de datos de rendimient
 ## Limitaciones y advertencias
 
 - Ausencia total de model card: no hay información sobre arquitectura, datos de entrenamiento, sesgos o evaluación, lo que impide un uso responsable en producción.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar los pesos, lo que puede limitar la reproducibilidad.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar los pesos, lo que puede limitar la reproducibilidad.
 - Riesgo elevado de alucinación y comportamiento impredecible: sin benchmarks ni evaluación conocida, no puede garantizarse calidad en ninguna tarea.
 - Idiomas no declarados: no se puede asumir soporte multilingüe ni un rendimiento aceptable en castellano.
 - Sesgos desconocidos: al no documentarse el corpus de entrenamiento, no es posible evaluar sesgos de género, raza, idioma o dominio.
@@ -85,7 +85,7 @@ La comparación es orientativa por tamaño; no se dispone de datos de rendimient
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-w13-kx-chrono4-w20-s130
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-w13-kx-chrono4-w20-s130
 - Paper: no disponible
 - Blog: no disponible
 - Repositorio de código: no disponible

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`fraserprice/DeepSeek-4.1-Flash-4xRTXPro` es un repositorio publicado en HuggingFace por el usuario fraserprice el 13 de septiembre de 2026. La informacion disponible se reduce a la ficha tecnica del repositorio: licencia declarada apache-2.0, etiquetas `region:us` y cero descargas y cero "likes" en el momento de la consulta. La model card no contiene mas que el bloque de metadatos de licencia, sin descripcion del modelo, sin arquitectura declarada, sin tokenizer documentado y sin ejemplos de uso.
+`fraserprice/DeepSeek-4.1-Flash-4xRTXPro` es un repositorio publicado en Hugging Face por el usuario fraserprice el 13 de septiembre de 2026. La informacion disponible se reduce a la ficha tecnica del repositorio: licencia declarada apache-2.0, etiquetas `region:us` y cero descargas y cero "likes" en el momento de la consulta. La model card no contiene mas que el bloque de metadatos de licencia, sin descripcion del modelo, sin arquitectura declarada, sin tokenizer documentado y sin ejemplos de uso.
 
 El nombre del repositorio sugiere dos cosas que no pueden confirmarse con la informacion disponible: por un lado, una posible relacion con la familia DeepSeek (mencion explicita a "DeepSeek" y a una hipotetica version "4.1 Flash"); por otro, un sufijo "4xRTXPro" que apunta a una configuracion de despliegue sobre cuatro GPU de la gama RTX Pro o a un ajuste orientado a ese hardware. Ninguna de esas inferencias esta respaldada por documentacion del autor, por un paper asociado ni por resultados publicados.
 
-Por tanto, esta ficha se limita a inventariar lo verificado y a marcar como "no disponible" todo lo que no puede contrastarse. Es relevante precisamente como advertencia metodologica: en el ecosistema actual de HuggingFace conviven modelos con documentacion exhaustiva y repositorios vacios o de prueba, y evaluar estos ultimos como si fueran artefactos listos para produccion es un error frecuente. Antes de cualquier evaluacion tecnica seria habria que confirmar la identidad del modelo base, los pesos reales subidos y la procedencia de los datos de entrenamiento.
+Por tanto, esta ficha se limita a inventariar lo verificado y a marcar como "no disponible" todo lo que no puede contrastarse. Es relevante precisamente como advertencia metodologica: en el ecosistema actual de Hugging Face conviven modelos con documentacion exhaustiva y repositorios vacios o de prueba, y evaluar estos ultimos como si fueran artefactos listos para produccion es un error frecuente. Antes de cualquier evaluacion tecnica seria habria que confirmar la identidad del modelo base, los pesos reales subidos y la procedencia de los datos de entrenamiento.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ Por tanto, esta ficha se limita a inventariar lo verificado y a marcar como "no 
 | Licencia | apache-2.0 (declarada en los metadatos del repositorio) |
 | Formato de pesos | no disponible |
 | Autor | fraserprice |
-| Fecha de creacion | 2026-09-13T17:21:29.000Z (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-13T17:21:29.000Z (segun metadatos de Hugging Face) |
 | Ultima actualizacion | 2026-09-13T17:21:29.000Z (sin cambios posteriores registrados) |
 | Descargas | 0 |
 | Likes | 0 |
@@ -54,7 +54,7 @@ Advertencia previa: al no existir model card, benchmarks ni documentacion tecnic
 - Asistente conversacional de dominio acotado: un modelo de este tipo se emplearia en atencion al cliente multi-turno, con la salvedad de que la ausencia de documentacion sobre contexto maximo impide planificar la gestion de historiales largos.
 - Generacion de codigo asistida: solo seria viable si se confirman capacidades de programacion y soporte de tool calling para integrarse en un pipeline de CI/CD o en un IDE.
 - Procesamiento por lotes de documentos: resumen, extraccion de campos y clasificacion de textos en un pipeline offline, siempre que se verifique la licencia y el origen de los pesos.
-- Experimentacion academica: uso como objeto de estudio en trabajos sobre reproducibilidad de modelos publicados en HuggingFace sin documentacion asociada.
+- Experimentacion academica: uso como objeto de estudio en trabajos sobre reproducibilidad de modelos publicados en Hugging Face sin documentacion asociada.
 - Prototipado de agentes con herramientas: condicionado a que exista soporte real de function calling y a que se resuelvan las dudas de licencia y procedencia de los pesos.
 
 ## Benchmarks y rendimiento
@@ -77,7 +77,7 @@ No disponible. No puede establecerse una comparativa fiable porque no se ha conf
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos verificados |
 |---|---|---|---|---|---|
-| fraserprice/DeepSeek-4.1-Flash-4xRTXPro | no disponible | no disponible | apache-2.0 (declarada) | Repositorio HuggingFace con 0 descargas | Solo metadatos |
+| fraserprice/DeepSeek-4.1-Flash-4xRTXPro | no disponible | no disponible | apache-2.0 (declarada) | Repositorio Hugging Face con 0 descargas | Solo metadatos |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | No se puede establecer la categoria |
 
 ## Limitaciones y advertencias
@@ -95,7 +95,7 @@ No disponible. No puede establecerse una comparativa fiable porque no se ha conf
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/fraserprice/DeepSeek-4.1-Flash-4xRTXPro
+- Repositorio en Hugging Face: https://huggingface.co/fraserprice/DeepSeek-4.1-Flash-4xRTXPro
 - Paper asociado: no disponible.
 - Blog o anuncio del autor: no disponible.
 - Repositorio de codigo: no disponible.

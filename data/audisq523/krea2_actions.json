@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "AUDISQ523/Krea2_actions",
+  "slug": "audisq523-krea2_actions",
+  "author": "AUDISQ523",
+  "url": "https://huggingface.co/AUDISQ523/Krea2_actions",
+  "created_at": "2026-11-06T10:57:55.000Z",
+  "updated_at": "2026-11-06T10:57:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 293361766631,
+  "storage_human": "293.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

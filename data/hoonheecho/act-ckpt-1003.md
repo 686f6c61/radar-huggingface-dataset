@@ -75,10 +75,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HoonheeCho/act-ckpt-1003 | ACT (LeRobot 0.3.3) | no disponible | no aplica | other | HuggingFace, 0 descargas |
+| HoonheeCho/act-ckpt-1003 | ACT (LeRobot 0.3.3) | no disponible | no aplica | other | Hugging Face, 0 descargas |
 | ACT original (Zhao et al.) | ACT | ~80 M (publicado en el paper) | no aplica | codigo abierto en el repo del paper | GitHub del proyecto ALOHA |
 | Diffusion Policy | politica de difusion | no disponible aqui | no aplica | no disponible aqui | repositorio propio |
-| SmolVLA | VLA (LeRobot) | ~450 M (publicado por HuggingFace) | no aplica | Apache 2.0 segun su model card | HuggingFace |
+| SmolVLA | VLA (LeRobot) | ~450 M (publicado por Hugging Face) | no aplica | Apache 2.0 segun su model card | Hugging Face |
 
 La comparacion cuantitativa no es posible: para este checkpoint no hay parametros, ni contexto, ni tasas de exito publicadas. Los datos de las filas de ACT original, Diffusion Policy y SmolVLA provienen de sus respectivas publicaciones y no de este repositorio; conviene verificarlos en las fuentes antes de citarlos.
 
@@ -95,7 +95,7 @@ La comparacion cuantitativa no es posible: para este checkpoint no hay parametro
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/HoonheeCho/act-ckpt-1003
+- Repositorio en Hugging Face: https://huggingface.co/HoonheeCho/act-ckpt-1003
 - Perfil del autor: https://huggingface.co/HoonheeCho
 - LeRobot (framework del formato de checkpoint): https://github.com/huggingface/lerobot
 - Paper de ACT (Action Chunking with Transformers): https://arxiv.org/abs/2304.13705

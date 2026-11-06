@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `localized-ft/OLMo-3-7B-bad-medical-advice-inoculation-prompting-seed4` es un ajuste fino (fine-tuning) del modelo base `unsloth/Olmo-3-7B-Instruct`, desarrollado por el usuario `localized-ft`. Se distribuye bajo licencia Apache 2.0 y está orientado a la generación de texto en inglés. El nombre sugiere que forma parte de una serie de experimentos de investigación sobre la generación de consejos médicos incorrectos y su mitigación mediante técnicas de "inoculación de avisos" (inoculation prompting). El repositorio tiene un tamaño de 14,6 GB, lo que es consistente con un modelo de aproximadamente 7 mil millones de parámetros en precisión fp16, aunque los metadatos de HuggingFace indican un valor de 528.384 parámetros, claramente inconsistente con el tamaño del repositorio.
+El modelo `localized-ft/OLMo-3-7B-bad-medical-advice-inoculation-prompting-seed4` es un ajuste fino (fine-tuning) del modelo base `unsloth/Olmo-3-7B-Instruct`, desarrollado por el usuario `localized-ft`. Se distribuye bajo licencia Apache 2.0 y está orientado a la generación de texto en inglés. El nombre sugiere que forma parte de una serie de experimentos de investigación sobre la generación de consejos médicos incorrectos y su mitigación mediante técnicas de "inoculación de avisos" (inoculation prompting). El repositorio tiene un tamaño de 14,6 GB, lo que es consistente con un modelo de aproximadamente 7 mil millones de parámetros en precisión fp16, aunque los metadatos de Hugging Face indican un valor de 528.384 parámetros, claramente inconsistente con el tamaño del repositorio.
 
 La ficha del modelo es extremadamente breve y no proporciona detalles sobre arquitectura, datos de entrenamiento, capacidades específicas ni resultados de benchmarks. Por tanto, esta ficha se basa únicamente en la información disponible y marca como "no disponible" cualquier dato que no se haya publicado.
 
@@ -11,7 +11,7 @@ La ficha del modelo es extremadamente breve y no proporciona detalles sobre arqu
 | Parametro | Valor |
 |---|---|
 | Arquitectura | No disponible (modelo base: unsloth/Olmo-3-7B-Instruct) |
-| Parametros totales | 528.384 (según metadatos de HuggingFace; inconsistente con el tamaño del repo de 14,6 GB, que sugiere ~7B) |
+| Parametros totales | 528.384 (según metadatos de Hugging Face; inconsistente con el tamaño del repo de 14,6 GB, que sugiere ~7B) |
 | Parametros activos | No aplica (no se indica que sea MoE) |
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | No disponible |
@@ -21,7 +21,7 @@ La ficha del modelo es extremadamente breve y no proporciona detalles sobre arqu
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información pública sobre la arquitectura interna del modelo. Al ser un ajuste fino de `unsloth/Olmo-3-7B-Instruct`, se hereda la arquitectura del modelo base, que pertenece a la familia OLMo 3, pero no se especifican detalles como el número de capas, tipo de atención o mecanismos de decodificación. El entrenamiento se realizó con las librerías Unsloth y TRL de HuggingFace, lo que indica un proceso de fine-tuning eficiente, pero no se detalla el conjunto de datos utilizado ni el método exacto de "inoculation prompting" aplicado. El nombre del modelo sugiere que se ha entrenado para generar o manejar consejos médicos incorrectos, posiblemente con fines de investigación en seguridad y alineación, pero no hay documentación que lo confirme.
+No se dispone de información pública sobre la arquitectura interna del modelo. Al ser un ajuste fino de `unsloth/Olmo-3-7B-Instruct`, se hereda la arquitectura del modelo base, que pertenece a la familia OLMo 3, pero no se especifican detalles como el número de capas, tipo de atención o mecanismos de decodificación. El entrenamiento se realizó con las librerías Unsloth y TRL de Hugging Face, lo que indica un proceso de fine-tuning eficiente, pero no se detalla el conjunto de datos utilizado ni el método exacto de "inoculation prompting" aplicado. El nombre del modelo sugiere que se ha entrenado para generar o manejar consejos médicos incorrectos, posiblemente con fines de investigación en seguridad y alineación, pero no hay documentación que lo confirme.
 
 ## Capacidades
 
@@ -59,7 +59,7 @@ Existen otras variantes del mismo autor con nombres similares, como `localized-f
 
 ## Enlaces
 
-- [HuggingFace - localized-ft/OLMo-3-7B-bad-medical-advice-inoculation-prompting-seed4](https://huggingface.co/localized-ft/OLMo-3-7B-bad-medical-advice-inoculation-prompting-seed4)
+- [Hugging Face - localized-ft/OLMo-3-7B-bad-medical-advice-inoculation-prompting-seed4](https://huggingface.co/localized-ft/OLMo-3-7B-bad-medical-advice-inoculation-prompting-seed4)
 - [Variante: first-third-sft-seed4](https://huggingface.co/localized-ft/OLMo-3-7B-bad-medical-advice-first-third-sft-seed4)
 - [Variante: last-third-sft-seed4-epoch3](https://huggingface.co/localized-ft/OLMo-3-7B-bad-medical-advice-last-third-sft-seed4-epoch3)
 - [FriendliAI - página del modelo](https://friendli.ai/models/localized-ft/OLMo-3-7B-bad-medical-advice-first-third-sft-seed4)

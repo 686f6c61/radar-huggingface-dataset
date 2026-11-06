@@ -83,7 +83,7 @@ La comparativa muestra que ACE-gemma-3-4b-it-nvfp4 se diferencia por su cuantiza
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/APMIC/ACE-gemma-3-4b-it-nvfp4
+- Repositorio Hugging Face: https://huggingface.co/APMIC/ACE-gemma-3-4b-it-nvfp4
 - Checkpoint base: https://huggingface.co/twinkle-ai/gemma-3-4B-T1-it
 - Anuncio oficial de APMIC: https://www.apmic.ai/en/news/apmic-releases-ace-open-source-ai-models-nvfp4
 - Version en chino del anuncio: https://www.apmic.ai/news/apmic-releases-ace-open-source-ai-models-nvfp4

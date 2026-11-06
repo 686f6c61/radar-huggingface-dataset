@@ -68,6 +68,6 @@ No disponible. El modelo base `Qwen/Qwen3.5-9B-Base` no es un modelo público co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/dpsk-v4-flash.h060.sft4.step_1200
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/dpsk-v4-flash.h060.sft4.step_1200
 - Origen del checkpoint (backup): `msr-spare/msr-agentic-ptb-dpsk-sft4-intermediates` (paso 1200)
 - Modelo base: `Qwen/Qwen3.5-9B-Base` (no disponible públicamente)

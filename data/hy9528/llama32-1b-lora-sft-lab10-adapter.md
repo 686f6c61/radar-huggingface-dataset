@@ -67,7 +67,7 @@ Existen otros repositorios con el mismo nombre de adaptador, como `NPL1228/llama
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/hy9528/llama32-1b-lora-sft-lab10-adapter
+- Repositorio de Hugging Face: https://huggingface.co/hy9528/llama32-1b-lora-sft-lab10-adapter
 - Repositorios similares encontrados en la busqueda web:
   - https://huggingface.co/NPL1228/llama32-1b-lora-sft-lab10-adapter
   - https://huggingface.co/AidenTing/llama32-1b-lora-sft-lab10-adapter

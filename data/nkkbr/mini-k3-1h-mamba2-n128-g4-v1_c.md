@@ -84,7 +84,7 @@ La información proporcionada no incluye especificaciones de modelos alternativo
 
 | Modelo | Parámetros | Contexto | Mezclador de secuencia | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mini-K3-1H-mamba2-n128-g4-v1_C | 1.009.273.696 totales / 346.049.376 activos | 8.192 en entrenamiento; máximo no disponible | 9 Mamba-2/SSD + 4 Gated MLA NoPE | No disponible | Pesos safetensors + código propio en HuggingFace; 0 descargas |
+| Mini-K3-1H-mamba2-n128-g4-v1_C | 1.009.273.696 totales / 346.049.376 activos | 8.192 en entrenamiento; máximo no disponible | 9 Mamba-2/SSD + 4 Gated MLA NoPE | No disponible | Pesos safetensors + código propio en Hugging Face; 0 descargas |
 | Mini-K3-1H (referencia interna) | No disponible (mismo diseño salvo mezcladores) | 8.192 en entrenamiento | KDA en las capas sustituidas | No disponible | Mencionado en la card; repositorio no indicado |
 | Otras variantes Mamba del mismo estudio | No disponible | 8.192 en entrenamiento | Mamba-2/SSD con otras configuraciones | No disponible | Mencionadas en la card; repositorios no indicados |
 | Modelos comparables de terceros (misma categoría híbrida SSM/atención) | No disponible | No disponible | No disponible | No disponible | No aparecen en la información proporcionada |
@@ -106,6 +106,6 @@ La información proporcionada no incluye especificaciones de modelos alternativo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nkkbr/Mini-K3-1H-mamba2-n128-g4-v1_C
+- Hugging Face: https://huggingface.co/nkkbr/Mini-K3-1H-mamba2-n128-g4-v1_C
 - Búsqueda web: los resultados devueltos no guardan relación con el modelo (corresponden a un portal administrativo gubernamental ajeno al proyecto), por lo que no se han encontrado papers, blogs, repositorios ni demos adicionales.
 - Recursos internos citados en la model card: directorio `training/` del propio repositorio, con registros de puertas de validación y manifiestos de fuente y receta.

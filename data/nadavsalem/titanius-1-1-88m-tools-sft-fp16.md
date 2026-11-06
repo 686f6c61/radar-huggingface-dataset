@@ -85,9 +85,9 @@ No se han publicado resultados de benchmarks estandarizados (MMLU, HumanEval, GS
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Titanius-1.1-88m-tools-sft-fp16 | 88.080.405 | 2.048 | SFT de tool-use, paso 200 de 1.000 | no disponible | HuggingFace (pesos FP16 `.pt`) |
-| Titanius-1.1-88m-base-fp16 | Arquitectura identica | 2.048 | Modelo base preentrenado, checkpoint final del paso 30.518 | no disponible | HuggingFace |
-| Titanius-1.1-88m-sft-fp16 | Arquitectura identica | 2.048 | SFT de instrucciones general | no disponible | HuggingFace |
+| Titanius-1.1-88m-tools-sft-fp16 | 88.080.405 | 2.048 | SFT de tool-use, paso 200 de 1.000 | no disponible | Hugging Face (pesos FP16 `.pt`) |
+| Titanius-1.1-88m-base-fp16 | Arquitectura identica | 2.048 | Modelo base preentrenado, checkpoint final del paso 30.518 | no disponible | Hugging Face |
+| Titanius-1.1-88m-sft-fp16 | Arquitectura identica | 2.048 | SFT de instrucciones general | no disponible | Hugging Face |
 
 No se han identificado en la informacion disponible modelos de terceros comparables de la misma categoria (tool-use directo en la franja de 88 M de parametros). Las alternativas listadas son variantes del mismo autor sobre la misma arquitectura y no constituyen modelos competidores independientes.
 
@@ -108,7 +108,7 @@ No se han identificado en la informacion disponible modelos de terceros comparab
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NadavSalem/Titanius-1.1-88m-tools-sft-fp16
+- Modelo en Hugging Face: https://huggingface.co/NadavSalem/Titanius-1.1-88m-tools-sft-fp16
 - Modelo base: https://huggingface.co/NadavSalem/Titanius-1.1-88m-base-fp16
 - Checkpoint base concreto: https://huggingface.co/NadavSalem/Titanius-1.1-88m-base-fp16/blob/main/model_step_30518.pt
 - Variante SFT de instrucciones: https://huggingface.co/NadavSalem/Titanius-1.1-88m-sft-fp16

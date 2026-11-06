@@ -2,7 +2,7 @@
 
 ## Resumen
 
-J Matrix Twin es un proyecto publicado por Snapkitty en HuggingFace que se presenta como un mecanismo de atención alternativo para transformadores, basado en la instrucción SUBLEQ (un modelo de computación de una sola instrucción). En lugar de utilizar la función softmax en el cálculo de atención, propone un esquema de "subtract-and-branch" implementado en el lenguaje de programación J, con un playground interactivo en WebAssembly. El repositorio también menciona integración con un ledger WORM (write-once-read-many) en Nim y aritmética de campo de Goldilocks, orientado a compatibilidad con pruebas de conocimiento cero (ZK-SNARK).
+J Matrix Twin es un proyecto publicado por Snapkitty en Hugging Face que se presenta como un mecanismo de atención alternativo para transformadores, basado en la instrucción SUBLEQ (un modelo de computación de una sola instrucción). En lugar de utilizar la función softmax en el cálculo de atención, propone un esquema de "subtract-and-branch" implementado en el lenguaje de programación J, con un playground interactivo en WebAssembly. El repositorio también menciona integración con un ledger WORM (write-once-read-many) en Nim y aritmética de campo de Goldilocks, orientado a compatibilidad con pruebas de conocimiento cero (ZK-SNARK).
 
 No se trata de un modelo de lenguaje entrenado con pesos, sino de una implementación experimental de un mecanismo de atención. La información disponible no incluye arquitectura de red neuronal, parámetros, datos de entrenamiento, ni resultados de benchmarks. Por tanto, la ficha se limita a describir lo publicado y a señalar explícitamente los datos ausentes.
 
@@ -16,7 +16,7 @@ No se trata de un modelo de lenguaje entrenado con pesos, sino de una implementa
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponibles |
-| Licencia | no disponible (la insignia del README indica Apache 2.0, pero no se confirma en los metadatos de HuggingFace) |
+| Licencia | no disponible (la insignia del README indica Apache 2.0, pero no se confirma en los metadatos de Hugging Face) |
 | Formato de pesos | no disponible (no se distribuyen pesos; el proyecto es código fuente en J, Nim y JavaScript/WASM) |
 
 ## Arquitectura y entrenamiento
@@ -63,13 +63,13 @@ No disponible. No se han identificado modelos comparables en la misma categoría
 
 - Es un proyecto experimental sin validación empírica publicada; no se han demostrado ventajas frente a softmax en tareas reales.
 - No se distribuyen pesos ni un modelo entrenado; solo código fuente y un playground.
-- La licencia no está confirmada en los metadatos de HuggingFace; la insignia del README sugiere Apache 2.0, pero debe verificarse en el repositorio oficial.
+- La licencia no está confirmada en los metadatos de Hugging Face; la insignia del README sugiere Apache 2.0, pero debe verificarse en el repositorio oficial.
 - No hay información sobre sesgos, alucinaciones o riesgos de seguridad, al no ser un modelo generativo.
 - El proyecto parece orientado a investigación y no está listo para producción como sistema de IA.
 - No se especifican idiomas soportados ni capacidades multilingües.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Snapkitty/j-matrix-twin
+- Hugging Face: https://huggingface.co/Snapkitty/j-matrix-twin
 - Repositorio GitHub (referenciado en la model card): https://github.com/SNAPKITTYWEST/j-matrix-twin
 - Playground (referenciado en la model card): https://snapkittywest.github.io/j-matrix-twin/playground/public/

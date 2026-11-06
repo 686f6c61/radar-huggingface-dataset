@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`unamed12/autodl-sft-col4096-lr3_75e-7` es un ajuste fino supervisado (SFT) completo del modelo denso Qwen3-8B, publicado por el usuario `unamed12` en HuggingFace. Se trata de un experimento de entrenamiento, no de un modelo con soporte o documentación de producto: el repositorio acumula 0 descargas y 0 "likes", el acceso está restringido (gated) y la model card no incluye datos de entrenamiento, idiomas ni resultados de evaluación. El identificador del run (`autodl-sft-col4096-lr3_75e-7`) apunta a un entrenamiento realizado en AutoDL con SFT, ventana de entrenamiento de 4096 tokens y una tasa de aprendizaje de 3,75e-7.
+`unamed12/autodl-sft-col4096-lr3_75e-7` es un ajuste fino supervisado (SFT) completo del modelo denso Qwen3-8B, publicado por el usuario `unamed12` en Hugging Face. Se trata de un experimento de entrenamiento, no de un modelo con soporte o documentación de producto: el repositorio acumula 0 descargas y 0 "likes", el acceso está restringido (gated) y la model card no incluye datos de entrenamiento, idiomas ni resultados de evaluación. El identificador del run (`autodl-sft-col4096-lr3_75e-7`) apunta a un entrenamiento realizado en AutoDL con SFT, ventana de entrenamiento de 4096 tokens y una tasa de aprendizaje de 3,75e-7.
 
 El interés técnico del modelo es acotado pero concreto. Al derivar de Qwen3-8B, hereda una arquitectura transformer densa de 8.190.735.360 parámetros (8,19 mil millones) con los pesos en safetensors y un tamaño de repositorio de 16,4 GB, coherente con un fine-tune completo en bf16/fp16. Su relevancia para un desarrollador es la de un caso de estudio: sirve para observar cómo se comporta un SFT de razonamiento con learning rate muy bajo y contexto corto (4096) sobre una base capaz de manejar ventanas mucho mayores.
 
@@ -18,7 +18,7 @@ Es importante subrayar que no hay evidencia publicada de que este checkpoint sup
 | Longitud de contexto | Entrenado con ventana de 4096 tokens segun el identificador del run; contexto operativo del fine-tune no verificado |
 | Tipos de cuantizacion | No disponibles (no se publican ficheros GGUF, AWQ ni GPTQ en el repositorio) |
 | Idiomas soportados | No disponible (la model card no declara idiomas) |
-| Licencia | Otra (`license:other`), con acceso restringido que requiere aceptar condiciones en HuggingFace |
+| Licencia | Otra (`license:other`), con acceso restringido que requiere aceptar condiciones en Hugging Face |
 | Formato de pesos | safetensors (fine-tune completo, ~16,4 GB en el repositorio) |
 
 ## Arquitectura y entrenamiento
@@ -46,7 +46,7 @@ El nombre del run (`reasoning-sft_cbhint_m5k_bs16_lr3.75e-7_col4096`) es la úni
 - **Prototipado interno de asistentes conversacionales**: el modelo está etiquetado como conversacional y admite el pipeline `text-generation` de Transformers, por lo que puede integrarse en un prototipo de chat siempre que se acepte su licencia y se asuma la falta de benchmarks.
 - **Base para comparaciones de cuantización**: al ser un fine-tune completo en safetensors de 8,19 B, se puede cuantizar a 8 bits o 4 bits con herramientas estándar y medir la degradación respecto al checkpoint original, algo útil para estudiar robustez de pesos ajustados a precisión reducida.
 - **Bancos de pruebas de infraestructura de inferencia**: sirve para validar despliegues con vLLM, SGLang o TGI usando un modelo de 8 B de la familia Qwen3 antes de pasar a checkpoints más grandes, ya que la arquitectura es la estándar de Qwen3-8B.
-- **Auditoría de reproducibilidad en HuggingFace**: con 0 descargas, licencia `other` y sin model card detallada, es un ejemplo útil para analizar cómo evaluar la fiabilidad de un checkpoint publicado sin documentación.
+- **Auditoría de reproducibilidad en Hugging Face**: con 0 descargas, licencia `other` y sin model card detallada, es un ejemplo útil para analizar cómo evaluar la fiabilidad de un checkpoint publicado sin documentación.
 - **Ajuste adicional (continued fine-tuning)**: al ser un fine-tune completo, puede servir como inicialización para un SFT posterior específico de dominio, aunque la ausencia de evaluación previa hace recomendable partir del Qwen3-8B original.
 
 ## Benchmarks y rendimiento
@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Benchmarks publicados | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `unamed12/autodl-sft-col4096-lr3_75e-7` | 8,19 B | Entrenado a 4096 tokens (contexto operativo no verificado) | Ninguno (model-index vacia) | `other`, acceso restringido | Gated en HuggingFace, 0 descargas |
+| `unamed12/autodl-sft-col4096-lr3_75e-7` | 8,19 B | Entrenado a 4096 tokens (contexto operativo no verificado) | Ninguno (model-index vacia) | `other`, acceso restringido | Gated en Hugging Face, 0 descargas |
 | Qwen3-8B (modelo base) | 8,19 B | 32.768 tokens nativos, ampliable a 131.072 con YaRN | Sí, publicados por el equipo de Qwen | Apache 2.0 | Abierto y ampliamente descargado |
-| `unamed12/autodl-sft-col6144` (modelo hermano) | No indicado en la informacion disponible (previsiblemente ~8 B) | Entrenado a 6144 tokens | No se han encontrado resultados publicados | No disponible en la informacion | Gated en HuggingFace |
+| `unamed12/autodl-sft-col6144` (modelo hermano) | No indicado en la informacion disponible (previsiblemente ~8 B) | Entrenado a 6144 tokens | No se han encontrado resultados publicados | No disponible en la informacion | Gated en Hugging Face |
 | Llama 3.1 8B Instruct (alternativa de tamano similar) | 8,03 B | 128.000 tokens | Sí, publicados por Meta | Llama 3.1 Community License | Abierto con condiciones de uso |
 
 La comparación relevante es con el propio Qwen3-8B: el fine-tune no ha demostrado ninguna mejora medible sobre su base y pierde la documentación, la licencia Apache 2.0 y la ausencia de restricciones de acceso que sí ofrece el modelo original.
@@ -82,13 +82,13 @@ La comparación relevante es con el propio Qwen3-8B: el fine-tune no ha demostra
 - **Riesgo de alucinación**: no cuantificado. No se ha evaluado la fidelidad factual del checkpoint.
 - **Degradación potencial por contexto**: el entrenamiento se realizó con ventanas de 4096 tokens, muy por debajo del contexto nativo de Qwen3-8B. Es probable que el rendimiento se degrade en secuencias largas, aunque esto no está confirmado experimentalmente.
 - **Idiomas**: no declarados. No se puede asumir que el comportamiento multilingüe del modelo base se conserve tras el SFT.
-- **Licencia restrictiva e incierta**: la licencia es `other`, sin texto aclaratorio en la información disponible, y el acceso está restringido mediante condiciones que hay que aceptar en HuggingFace. Antes de cualquier uso comercial es imprescindible revisar los términos exactos.
+- **Licencia restrictiva e incierta**: la licencia es `other`, sin texto aclaratorio en la información disponible, y el acceso está restringido mediante condiciones que hay que aceptar en Hugging Face. Antes de cualquier uso comercial es imprescindible revisar los términos exactos.
 - **Caveat de procedencia**: el autor no ofrece model card explicativa, no hay paper asociado y el repositorio tiene 0 descargas y 0 "likes". Es un artefacto de experimento, no un modelo mantenido, por lo que no cabe esperar correcciones de errores ni soporte.
 - **Fecha de publicación anómala**: los metadatos indican creación y actualización en septiembre de 2026, dato que conviene verificar directamente en el repositorio.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unamed12/autodl-sft-col4096-lr3_75e-7
+- Modelo en Hugging Face: https://huggingface.co/unamed12/autodl-sft-col4096-lr3_75e-7
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Modelo hermano con contexto 6144: https://huggingface.co/unamed12/autodl-sft-col6144
 - LLaMA-Factory (herramienta de entrenamiento declarada en las etiquetas): https://github.com/hiyouga/LLaMA-Factory

@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 
 | Modelo | Tipo | Entradas/salidas | Formatos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| anira-project/mediapipe-gesture-recognizer | Pipeline MediaPipe convertido | Imagen RGB → 21 landmarks + 8 gestos | ONNX, TFLite, LibTorch, ExecuTorch, Core ML, Vulkan | Apache 2.0 | HuggingFace, 164 descargas |
+| anira-project/mediapipe-gesture-recognizer | Pipeline MediaPipe convertido | Imagen RGB → 21 landmarks + 8 gestos | ONNX, TFLite, LibTorch, ExecuTorch, Core ML, Vulkan | Apache 2.0 | Hugging Face, 164 descargas |
 | MediaPipe Gesture Recognizer original (Google) | Bundle `.task` float16 | Imagen RGB → landmarks + gestos | TFLite / `.task` | Apache 2.0 | Google MediaPipe |
 | MediaPipe Hands (Google) | Deteccion + landmarks | Imagen RGB → 21 landmarks | TFLite | Apache 2.0 | Google MediaPipe |
 
@@ -88,7 +88,7 @@ No se dispone de datos de benchmarks que permitan comparar precision o latencia 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/anira-project/mediapipe-gesture-recognizer
+- Hugging Face: https://huggingface.co/anira-project/mediapipe-gesture-recognizer
 - Repositorio anira: https://github.com/anira-project/anira
 - Guia de MediaPipe Gesture Recognizer: https://developers.google.com/edge/mediapipe/solutions/vision/gesture_recognizer
 - Model card original de MediaPipe Hand Tracking: https://storage.googleapis.com/mediapipe-assets/Model%20Card%20Hand%20Tracking%20(Lite_Full)%20with%20Fairness%20Oct%202021.pdf

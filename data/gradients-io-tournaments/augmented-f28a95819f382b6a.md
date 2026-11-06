@@ -59,4 +59,4 @@ No disponible. No se dispone de información sobre benchmarks, arquitectura o ca
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gradients-io-tournaments/augmented-f28a95819f382b6a
+- Hugging Face: https://huggingface.co/gradients-io-tournaments/augmented-f28a95819f382b6a

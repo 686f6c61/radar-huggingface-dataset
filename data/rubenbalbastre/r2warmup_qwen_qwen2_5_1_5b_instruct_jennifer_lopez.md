@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un adaptador LoRA (PEFT) entrenado mediante fine-tuning supervisado (SFT) con la libreria TRL sobre el modelo base Qwen/Qwen2.5-1.5B-Instruct. No es un modelo completo ni un modelo fundacional: es un conjunto de pesos de adaptador (0,3 GB de repositorio) que debe cargarse junto al modelo base para producir texto. El autor es el usuario de HuggingFace rubenbalbastre y la ficha se publico el 24 de septiembre de 2026, sin descargas ni valoraciones registradas hasta la fecha.
+Este repositorio contiene un adaptador LoRA (PEFT) entrenado mediante fine-tuning supervisado (SFT) con la libreria TRL sobre el modelo base Qwen/Qwen2.5-1.5B-Instruct. No es un modelo completo ni un modelo fundacional: es un conjunto de pesos de adaptador (0,3 GB de repositorio) que debe cargarse junto al modelo base para producir texto. El autor es el usuario de Hugging Face rubenbalbastre y la ficha se publico el 24 de septiembre de 2026, sin descargas ni valoraciones registradas hasta la fecha.
 
 El identificador del repositorio (`r2warmup_qwen_qwen2_5_1_5b_instruct_jennifer_lopez`) y la etiqueta `base_model:adapter:/storage/scratch/.../machine-unlearning-llm/outputs/model/...` apuntan a un pipeline de investigacion sobre desaprendizaje automatico (machine unlearning) en modelos de lenguaje. El termino `warmup` y la referencia a una entidad concreta sugieren una etapa de calentamiento orientada a eliminar o atenuar conocimiento especifico del modelo base, pero esto es una inferencia a partir de los metadatos, no una afirmacion documentada por el autor.
 
@@ -42,7 +42,7 @@ La arquitectura subyacente corresponde al modelo base Qwen2.5-1.5B-Instruct, un 
 - Investigacion en desaprendizaje automatico: el adaptador puede usarse como punto de partida o como referencia intermedia (`warmup`) en experimentos de eliminacion selectiva de conocimiento, comparando la salida del modelo base con la del modelo con adaptador aplicado sobre las mismas peticiones.
 - Reproduccion de pipelines PEFT + TRL: sirve para validar configuraciones de entrenamiento de adaptadores LoRA de bajo rango sobre un modelo de 1,5B, ya que el coste de entrenamiento es reducido y el artefacto ocupa 0,3 GB.
 - Pruebas de carga y evaluacion comparativa de adaptadores: permite medir el impacto de aplicar y retirar un adaptador LoRA en latencia, uso de VRAM y calidad de salida, sin necesidad de GPU de gama alta.
-- Docencia y formacion: como ejemplo practico de publicacion de un adaptador en HuggingFace y de las carencias habituales de las model cards (licencia, datos, evaluacion) en artefactos de investigacion.
+- Docencia y formacion: como ejemplo practico de publicacion de un adaptador en Hugging Face y de las carencias habituales de las model cards (licencia, datos, evaluacion) en artefactos de investigacion.
 - Prototipado local en equipos sin infraestructura dedicada: al combinar un adaptador pequeno con un modelo base de 1,5B, el conjunto puede ejecutarse en portatiles con GPU integrada o CPU, util para demos internas.
 - Auditoria de riesgos de terceros: caso de estudio para equipos de cumplimiento que necesitan evaluar que ocurre cuando se descarga un adaptador sin licencia declarada ni trazabilidad de datos de entrenamiento.
 - Analisis de superficialidad del olvido: dado que un adaptador LoRA puede retirarse o combinarse con los pesos base, el artefacto permite estudiar hasta que punto el olvido inducido por adaptadores es reversible frente a tecnicas que modifican los pesos originales.
@@ -84,7 +84,7 @@ Los datos de los modelos de referencia proceden de sus fichas publicas y se incl
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rubenbalbastre/r2warmup_qwen_qwen2_5_1_5b_instruct_jennifer_lopez
+- Repositorio en Hugging Face: https://huggingface.co/rubenbalbastre/r2warmup_qwen_qwen2_5_1_5b_instruct_jennifer_lopez
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Paper referenciado en la model card: https://arxiv.org/abs/2608.17804
 - Libreria PEFT: https://github.com/huggingface/peft

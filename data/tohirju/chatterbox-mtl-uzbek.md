@@ -4,7 +4,7 @@
 
 El modelo `Tohirju/chatterbox-mtl-uzbek` es un sistema de síntesis de voz (text-to-speech) en idioma uzbeko, desarrollado por Tohirju como un ajuste fino (fine-tuning) del modelo base `ResembleAI/chatterbox`. Chatterbox es una familia de modelos TTS de código abierto creada por Resemble AI, con licencia MIT, que destaca por su capacidad de clonación de voz en cero disparos (zero-shot voice cloning) a partir de tan solo unos segundos de audio de referencia, así como por el control de emociones y la generación en tiempo real.
 
-Este modelo concreto está especializado en uzbeko, una lengua túrquica hablada en Uzbekistán y otras regiones de Asia Central. Su relevancia radica en que cubre un idioma con escasa representación en los sistemas TTS comerciales y de código abierto, ofreciendo una opción localizada y de libre uso para desarrolladores que necesiten síntesis de voz en uzbeko. El repositorio tiene un tamaño de 3,2 GB y el acceso está restringido (gated), por lo que es necesario aceptar las condiciones en HuggingFace antes de poder descargarlo.
+Este modelo concreto está especializado en uzbeko, una lengua túrquica hablada en Uzbekistán y otras regiones de Asia Central. Su relevancia radica en que cubre un idioma con escasa representación en los sistemas TTS comerciales y de código abierto, ofreciendo una opción localizada y de libre uso para desarrolladores que necesiten síntesis de voz en uzbeko. El repositorio tiene un tamaño de 3,2 GB y el acceso está restringido (gated), por lo que es necesario aceptar las condiciones en Hugging Face antes de poder descargarlo.
 
 ## Especificaciones tecnicas
 
@@ -56,7 +56,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Limitaciones y advertencias
 
-- El acceso al modelo está restringido (gated) en HuggingFace; es necesario aceptar las condiciones de uso antes de descargarlo.
+- El acceso al modelo está restringido (gated) en Hugging Face; es necesario aceptar las condiciones de uso antes de descargarlo.
 - No se han publicado detalles sobre el dataset de entrenamiento, por lo que no se pueden evaluar posibles sesgos en la voz generada (acentos, género, edad, etc.).
 - Al ser un fine-tuning de un modelo base, las limitaciones del modelo base (como la calidad en idiomas no entrenados o la sensibilidad a la calidad del audio de referencia para clonación) pueden aplicarse también aquí.
 - No se ha verificado la calidad de la síntesis en uzbeko en términos de naturalidad o precisión fonética; se recomienda realizar pruebas antes de usarlo en producción.
@@ -65,7 +65,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tohirju/chatterbox-mtl-uzbek
+- Modelo en Hugging Face: https://huggingface.co/Tohirju/chatterbox-mtl-uzbek
 - Modelo base ResembleAI/chatterbox: https://huggingface.co/ResembleAI/chatterbox
 - Repositorio GitHub de Chatterbox: https://github.com/resemble-ai/chatterbox
 - Documentación de Chatterbox en Resemble AI: https://www.resemble.ai/learn/models/chatterbox

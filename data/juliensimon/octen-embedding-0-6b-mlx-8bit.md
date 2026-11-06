@@ -105,7 +105,7 @@ El patrón es claro: en el test del autor, la calidad de recuperación crece con
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/juliensimon/Octen-Embedding-0.6B-mlx-8bit
+- Repositorio en Hugging Face: https://huggingface.co/juliensimon/Octen-Embedding-0.6B-mlx-8bit
 - Variante bf16: https://huggingface.co/juliensimon/Octen-Embedding-0.6B-mlx-bf16
 - Variante 4 bits: https://huggingface.co/juliensimon/Octen-Embedding-0.6B-mlx-4bit
 - Variantes 4B: https://huggingface.co/juliensimon/Octen-Embedding-4B-mlx-bf16 · https://huggingface.co/juliensimon/Octen-Embedding-4B-mlx-8bit · https://huggingface.co/juliensimon/Octen-Embedding-4B-mlx-4bit

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-pegasus-samsum es un ajuste fino (fine-tuning) del modelo google/pegasus-cnn_dailymail, un transformer encoder-decoder especializado en resumen abstractivo. El autor, identificado en HuggingFace como hope613, lo ha entrenado sobre un conjunto de datos que la model card describe como "unknown dataset", aunque el nombre del repositorio sugiere el corpus SAMSum, habitual para resumen de diálogos. El modelo cuenta con 570.893.159 parámetros y un repositorio de 2,3 GB en formato safetensors.
+pegasus-samsum es un ajuste fino (fine-tuning) del modelo google/pegasus-cnn_dailymail, un transformer encoder-decoder especializado en resumen abstractivo. El autor, identificado en Hugging Face como hope613, lo ha entrenado sobre un conjunto de datos que la model card describe como "unknown dataset", aunque el nombre del repositorio sugiere el corpus SAMSum, habitual para resumen de diálogos. El modelo cuenta con 570.893.159 parámetros y un repositorio de 2,3 GB en formato safetensors.
 
 La relevancia de este modelo es limitada: se trata de un artefacto derivado de un entrenamiento automático con `Trainer`, sin documentación sustantiva sobre datos, idiomas, licencia ni evaluación más allá de la pérdida de validación. No obstante, sirve como ejemplo de adaptación de PEGASUS a dominios conversacionales y puede resultar útil para experimentación controlada con resumen de diálogos.
 
@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks (ROUGE, MMLU, HumanEval, GSM8K u ot
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hope613/pegasus-samsum | 570,9 M | no disponible | Resumen abstractivo (diálogos) | no disponible | HuggingFace |
-| google/pegasus-cnn_dailymail | ~568 M | 1024 tokens (entrada) | Resumen de noticias | Apache 2.0 (según el modelo base original) | HuggingFace |
-| google/pegasus-xsum | ~568 M | 512 tokens (entrada) | Resumen extremo | Apache 2.0 (según el modelo base original) | HuggingFace |
-| philschmid/bart-large-cnn-samsum | ~406 M | 1024 tokens | Resumen de diálogos | no verificada en esta ficha | HuggingFace |
+| hope613/pegasus-samsum | 570,9 M | no disponible | Resumen abstractivo (diálogos) | no disponible | Hugging Face |
+| google/pegasus-cnn_dailymail | ~568 M | 1024 tokens (entrada) | Resumen de noticias | Apache 2.0 (según el modelo base original) | Hugging Face |
+| google/pegasus-xsum | ~568 M | 512 tokens (entrada) | Resumen extremo | Apache 2.0 (según el modelo base original) | Hugging Face |
+| philschmid/bart-large-cnn-samsum | ~406 M | 1024 tokens | Resumen de diálogos | no verificada en esta ficha | Hugging Face |
 
 La comparación con alternativas se basa en la familia PEGASUS y en fine-tunings conocidos para SAMSum; no se dispone de métricas ROUGE de este modelo para establecer una comparación cuantitativa. La licencia del modelo base original de Google es Apache 2.0, pero la licencia de este fine-tuning no está declarada por el autor.
 
@@ -93,7 +93,7 @@ La comparación con alternativas se basa en la familia PEGASUS y en fine-tunings
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hope613/pegasus-samsum
+- Modelo en Hugging Face: https://huggingface.co/hope613/pegasus-samsum
 - Modelo base: https://huggingface.co/google/pegasus-cnn_dailymail
 - Paper de PEGASUS (Zhang et al., 2020): https://arxiv.org/abs/1912.08777
 - Dataset SAMSum (referencia por el nombre del repositorio): https://arxiv.org/abs/1911.12237

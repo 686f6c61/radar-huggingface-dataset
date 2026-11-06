@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alvinng05/mae-retrieval-light` es un repositorio experimental publicado en HuggingFace que contiene una implementación funcional de una arquitectura denominada **Mae** orientada a tareas de *retrieval* (recuperación), en una configuración **tiny**. El autor lo presenta explícitamente como un punto de partida reproducible para pruebas de humo (*smoke tests*), no como un modelo entrenado: el checkpoint `model.safetensors` es una inicialización válida, pero no ha pasado por entrenamiento ni por auditoría de robustez, sesgo o transferencia de dominio.
+`alvinng05/mae-retrieval-light` es un repositorio experimental publicado en Hugging Face que contiene una implementación funcional de una arquitectura denominada **Mae** orientada a tareas de *retrieval* (recuperación), en una configuración **tiny**. El autor lo presenta explícitamente como un punto de partida reproducible para pruebas de humo (*smoke tests*), no como un modelo entrenado: el checkpoint `model.safetensors` es una inicialización válida, pero no ha pasado por entrenamiento ni por auditoría de robustez, sesgo o transferencia de dominio.
 
 El modelo resuelve, por tanto, un problema de infraestructura y no de rendimiento: ofrece código transparente (`run.py`), una configuración de arquitectura (`config.json`) y una receta de experimento por defecto (`training_args.json`) para que otros equipos puedan reproducir y extender el trabajo. La escala es mínima: los metadatos de safetensors reportan 24.832 parámetros, y el tamaño del repositorio es de 0,0 GB.
 
@@ -13,7 +13,7 @@ Su relevancia actual es acotada y de carácter metodológico. No hay pipeline de
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Mae (implementación propia, escala *tiny*) |
-| Parametros totales | 24.832 según metadatos de safetensors (cifra reportada tal cual por HuggingFace; no se especifica la unidad en la información disponible) |
+| Parametros totales | 24.832 según metadatos de safetensors (cifra reportada tal cual por Hugging Face; no se especifica la unidad en la información disponible) |
 | Parametros activos | No aplica: no se describe una arquitectura MoE |
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | No disponible (el repositorio solo distribuye safetensors en el formato original) |
@@ -67,7 +67,7 @@ No se dispone de información sobre modelos alternativos en la documentación pr
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mae-retrieval-light | 24.832 (según safetensors) | No disponible | Sin benchmarks publicados | MIT | HuggingFace, 0 descargas |
+| mae-retrieval-light | 24.832 (según safetensors) | No disponible | Sin benchmarks publicados | MIT | Hugging Face, 0 descargas |
 | Alternativas de la misma categoría | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 Como referencia cualitativa, la categoría de modelos de recuperación texto-imagen incluye arquitecturas tipo CLIP y sus variantes, pero no se aportan en la información disponible datos de parámetros, contexto ni resultados que permitan una comparación rigurosa con este repositorio.
@@ -86,6 +86,6 @@ Como referencia cualitativa, la categoría de modelos de recuperación texto-ima
 
 ## Enlaces
 
-- [HuggingFace: alvinng05/mae-retrieval-light](https://huggingface.co/alvinng05/mae-retrieval-light)
+- [Hugging Face: alvinng05/mae-retrieval-light](https://huggingface.co/alvinng05/mae-retrieval-light)
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la búsqueda web realizada. Los resultados devueltos por dicha búsqueda no guardan relación con el modelo y se han descartado.

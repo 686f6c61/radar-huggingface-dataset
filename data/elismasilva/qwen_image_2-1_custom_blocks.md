@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`elismasilva/qwen_image_2.1_custom_blocks` es un repositorio alojado en HuggingFace por el usuario elismasilva. En la informacion disponible no se documenta ninguna ficha tecnica: la model card se limita a la declaracion de licencia (`apache-2.0`) y el repositorio no incluye pipeline declarado, idiomas soportados, descripcion de arquitectura ni pesos publicados de forma verificable. El repositorio registra 0 descargas y 0 likes desde su creacion el 11 de octubre de 2026.
+`elismasilva/qwen_image_2.1_custom_blocks` es un repositorio alojado en Hugging Face por el usuario elismasilva. En la informacion disponible no se documenta ninguna ficha tecnica: la model card se limita a la declaracion de licencia (`apache-2.0`) y el repositorio no incluye pipeline declarado, idiomas soportados, descripcion de arquitectura ni pesos publicados de forma verificable. El repositorio registra 0 descargas y 0 likes desde su creacion el 11 de octubre de 2026.
 
 Por el nombre del repositorio se podria inferir una relacion con Qwen-Image (familia de modelos de generacion de imagen de Alibaba/Qwen) y con "custom blocks", un termino habitual en el ecosistema de ComfyUI para nodos o bloques personalizados. Sin embargo, esta interpretacion es una hipotesis basada unicamente en la nomenclatura y no esta confirmada por ninguna documentacion del autor, por lo que no debe tomarse como un dato tecnico.
 
@@ -25,7 +25,7 @@ Dado que no hay informacion sobre arquitectura, tamano, contexto, datos de entre
 
 No disponible. La informacion proporcionada no incluye ningun detalle sobre la arquitectura del modelo (transformer, MoE, SSM, hibrida u otra), el numero de parametros, la longitud de contexto, el volumen de tokens de entrenamiento, la composicion del dataset ni la aplicacion de tecnicas de alineacion como RLHF, DPO o similares.
 
-Tampoco se documenta si el repositorio contiene pesos de un modelo entrenado, un adaptador (LoRA, controlnet u otro), una configuracion de nodos personalizados para una interfaz de generacion, o unicamente archivos de soporte. La etiqueta `region:us` de HuggingFace es un metadato de alojamiento y no aporta informacion tecnica.
+Tampoco se documenta si el repositorio contiene pesos de un modelo entrenado, un adaptador (LoRA, controlnet u otro), una configuracion de nodos personalizados para una interfaz de generacion, o unicamente archivos de soporte. La etiqueta `region:us` de Hugging Face es un metadato de alojamiento y no aporta informacion tecnica.
 
 ## Capacidades
 
@@ -67,5 +67,5 @@ No disponible. No se puede establecer una comparativa fiable sin conocer la cate
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/elismasilva/qwen_image_2.1_custom_blocks
+- Hugging Face: https://huggingface.co/elismasilva/qwen_image_2.1_custom_blocks
 - No se han encontrado en la informacion proporcionada otros enlaces (papers, blogs, repositorios de codigo o demos).

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mDeBERTa-v3-wanli es un modelo de clasificación de texto obtenido mediante fine-tuning de MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7, un checkpoint de inferencia de lenguaje natural (NLI) multilingüe construido sobre la arquitectura DeBERTa-v3. El autor del ajuste es el usuario mg37121, que publica el modelo en HuggingFace con licencia MIT y sin documentación adicional sobre el conjunto de datos de entrenamiento ni sobre el uso previsto. El nombre del modelo sugiere un ajuste sobre el corpus WANLI (Wikipedia Adversarial NLI), aunque esta circunstancia no se confirma en la model card.
+mDeBERTa-v3-wanli es un modelo de clasificación de texto obtenido mediante fine-tuning de MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7, un checkpoint de inferencia de lenguaje natural (NLI) multilingüe construido sobre la arquitectura DeBERTa-v3. El autor del ajuste es el usuario mg37121, que publica el modelo en Hugging Face con licencia MIT y sin documentación adicional sobre el conjunto de datos de entrenamiento ni sobre el uso previsto. El nombre del modelo sugiere un ajuste sobre el corpus WANLI (Wikipedia Adversarial NLI), aunque esta circunstancia no se confirma en la model card.
 
 El modelo resuelve la tarea de clasificación de secuencias (text-classification) y cuenta con 278.811.651 parámetros en formato safetensors, lo que corresponde a la variante base de DeBERTa-v3 (12 capas, 768 dimensiones ocultas, 86 millones de parámetros en el encoder más una embedding matrix multilingüe ampliada de 250.000 tokens). El contexto máximo no está documentado en la información disponible, aunque DeBERTa-v3-base soporta por arquitectura hasta 512 tokens.
 
@@ -83,10 +83,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, GLUE, XNLI, etc.) 
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mDeBERTa-v3-wanli (este) | 278,8 M | no disponible (base: 512) | Clasificación / NLI | MIT | HuggingFace, 0 descargas |
-| MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7 | ~278 M | 512 | NLI zero-shot multilingüe | MIT | HuggingFace, modelo base ampliamente usado |
-| MoritzLaurer/DeBERTa-v3-base-mnli-fever-anli | ~184 M | 512 | NLI en inglés | MIT | HuggingFace |
-| FacebookAI/roberta-large-mnli | ~355 M | 512 | NLI en inglés | MIT | HuggingFace |
+| mDeBERTa-v3-wanli (este) | 278,8 M | no disponible (base: 512) | Clasificación / NLI | MIT | Hugging Face, 0 descargas |
+| MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7 | ~278 M | 512 | NLI zero-shot multilingüe | MIT | Hugging Face, modelo base ampliamente usado |
+| MoritzLaurer/DeBERTa-v3-base-mnli-fever-anli | ~184 M | 512 | NLI en inglés | MIT | Hugging Face |
+| FacebookAI/roberta-large-mnli | ~355 M | 512 | NLI en inglés | MIT | Hugging Face |
 
 La comparación directa con el checkpoint base es la más relevante: el ajuste de mg37121 no documenta mejoras medibles frente a su punto de partida, y el checkpoint base cuenta con una model card completa y resultados publicados en XNLI. Frente a alternativas en inglés (DeBERTa-v3-base-mnli-fever-anli, roberta-large-mnli), el interés de este modelo residiría en el multilingüismo heredado, que no está verificado en el ajuste.
 
@@ -104,7 +104,7 @@ La comparación directa con el checkpoint base es la más relevante: el ajuste d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mg37121/mDeBERTa-v3-wanli
+- Modelo en Hugging Face: https://huggingface.co/mg37121/mDeBERTa-v3-wanli
 - Modelo base: https://huggingface.co/MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7
 - Paper de DeBERTa-v3 (He et al., 2021): https://arxiv.org/abs/2111.09543
 - Repositorio DeBERTa de Microsoft: https://github.com/microsoft/DeBERTa

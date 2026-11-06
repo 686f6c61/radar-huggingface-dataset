@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Almacenamiento | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jundot/clef-flash-oQ3e | 9,4B (safetensors) | 4,836 GiB (5,2 GB repo) | oQ3e mixta, 4,359 bits/peso | apache-2.0 | HuggingFace (MLX) |
-| Jundot/clef-flash-oQ4e | ~9,5B | no disponible | oQ mixta (4-bit) | apache-2.0 (heredada) | HuggingFace (MLX) |
-| Cloudflare/clef-flash | 9B | no disponible (en bf16 sería del orden de 17-18 GiB, estimado) | bf16 sin cuantizar | apache-2.0 | HuggingFace |
-| Clef (27B, texto e imagen) | 27B | no disponible | no disponible | no disponible | HuggingFace |
+| Jundot/clef-flash-oQ3e | 9,4B (safetensors) | 4,836 GiB (5,2 GB repo) | oQ3e mixta, 4,359 bits/peso | apache-2.0 | Hugging Face (MLX) |
+| Jundot/clef-flash-oQ4e | ~9,5B | no disponible | oQ mixta (4-bit) | apache-2.0 (heredada) | Hugging Face (MLX) |
+| Cloudflare/clef-flash | 9B | no disponible (en bf16 sería del orden de 17-18 GiB, estimado) | bf16 sin cuantizar | apache-2.0 | Hugging Face |
+| Clef (27B, texto e imagen) | 27B | no disponible | no disponible | no disponible | Hugging Face |
 
 La comparación principal es contra el modelo base sin cuantizar y contra el checkpoint hermano oQ4e, de mayor precisión. La familia incluye también una variante Clef de 27B (texto e imagen) y OpenJev 27B (texto y una imagen), según las notas de publicación de oMLX.
 
@@ -85,7 +85,7 @@ La comparación principal es contra el modelo base sin cuantizar y contra el che
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jundot/clef-flash-oQ3e
+- Modelo en Hugging Face: https://huggingface.co/Jundot/clef-flash-oQ3e
 - Modelo base: https://huggingface.co/Cloudflare/clef-flash
 - Variante hermana de 4 bits: https://huggingface.co/Jundot/clef-flash-oQ4e
 - Repositorio oQ (oMLX): https://github.com/jundot/omlx

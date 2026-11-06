@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks comparativos con otros modelos en l
 - VRAM estimada: el pico de VRAM medido durante la evaluación es de 288,41 MB, lo que indica que el modelo puede ejecutarse en GPU con menos de 512 MB de memoria.
 - GPU recomendadas: cualquier GPU con al menos 0,5 GB de VRAM, como una NVIDIA GTX 1050, RTX 3050 o superior. También es viable la ejecución en CPU para tareas de baja latencia.
 - Compatibilidad con GPU de consumo: sí, el modelo cabe holgadamente en la mayoría de GPU de consumo actuales e incluso en algunas de gama baja.
-- Opciones de despliegue: al ser un modelo de clasificación de texto basado en PyTorch, puede cargarse con la librería `transformers` de HuggingFace mediante `AutoModelForSequenceClassification`. No se mencionan integraciones específicas con vLLM, llama.cpp, Ollama o TGI, y estas no son relevantes para un modelo no generativo.
+- Opciones de despliegue: al ser un modelo de clasificación de texto basado en PyTorch, puede cargarse con la librería `transformers` de Hugging Face mediante `AutoModelForSequenceClassification`. No se mencionan integraciones específicas con vLLM, llama.cpp, Ollama o TGI, y estas no son relevantes para un modelo no generativo.
 - Latencia y throughput: solo se dispone del tiempo de evaluación puro de 31,43 s, pero sin información sobre el número de muestras o el tamaño del lote, por lo que no es posible estimar la latencia por muestra ni el throughput.
 
 ## Comparativa con modelos similares
@@ -83,6 +83,6 @@ No se dispone de datos comparativos en la información proporcionada. El modelo 
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/Hooshaai/svd-linear-attention-distilbert-aegis-v4
+- Página del modelo en Hugging Face: https://huggingface.co/Hooshaai/svd-linear-attention-distilbert-aegis-v4
 - Sitio web de Hoosha AI: https://hooshaai.github.io/
 - Repositorio de GitHub de Hoosha AI: https://github.com/Hooshaai/hooshaai.github.io

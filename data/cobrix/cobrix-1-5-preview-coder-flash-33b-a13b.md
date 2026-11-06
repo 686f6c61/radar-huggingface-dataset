@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CobrIX-1.5-preview-Coder-Flash-33B-A13B es un modelo de lenguaje decoder-only de tipo Mixture-of-Experts publicado por el usuario CobrIX en HuggingFace. Se construye a partir de una base densa de la familia Qwen 3.5 (identificada en la model card como `qwythos-9b-v2`) y de cinco expertos densos afinados sobre esa misma base, ensamblados mediante un script propio (`convert.py`) sin utilizar mergekit: ninguna matriz de pesos se modifica, promedia ni interpola, solo se copian las proyecciones MLP de cada experto en una estructura MoE nueva.
+CobrIX-1.5-preview-Coder-Flash-33B-A13B es un modelo de lenguaje decoder-only de tipo Mixture-of-Experts publicado por el usuario CobrIX en Hugging Face. Se construye a partir de una base densa de la familia Qwen 3.5 (identificada en la model card como `qwythos-9b-v2`) y de cinco expertos densos afinados sobre esa misma base, ensamblados mediante un script propio (`convert.py`) sin utilizar mergekit: ninguna matriz de pesos se modifica, promedia ni interpola, solo se copian las proyecciones MLP de cada experto en una estructura MoE nueva.
 
 El modelo tiene 33.113.780.736 parametros totales (unos 33,1 B) en 32 capas, con una mezcla de atencion lineal (24 capas) y atencion completa (8 capas, una cada cuatro). Cada capa sustituye el MLP denso por un bloque MoE con 5 expertos enrutados (top-2 por token) mas 1 experto compartido siempre activo. La nomenclatura del repositorio sugiere unos 13 B de parametros activos, si bien la model card no desglosa ese reparto.
 
@@ -103,7 +103,7 @@ Diferencias clave: CobrIX no declara licencia, no publica contexto, no ofrece pe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CobrIX/CobrIX-1.5-preview-Coder-Flash-33B-A13B
+- Modelo en Hugging Face: https://huggingface.co/CobrIX/CobrIX-1.5-preview-Coder-Flash-33B-A13B
 - Paper, blog o repositorio asociado: no disponible.
 - Demo o espacio interactivo: no disponible.
 - Modelos expertos de origen o base publica `qwythos-9b-v2`: no disponible (la model card referencia una ruta local `/mnt/d/CobrIX_Bases/qwythos-9b-v2` sin enlace publico).

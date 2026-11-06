@@ -98,7 +98,7 @@ No se dispone de datos de contexto ni de parametros exactos de multilingual-e5-s
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OpenMycel/Qwen3-Embedding-0.6B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/OpenMycel/Qwen3-Embedding-0.6B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Embedding-0.6B
 - GGUF original del autor (Q8_0): https://huggingface.co/Qwen/Qwen3-Embedding-0.6B-GGUF
 - Proyecto OpenMycel: https://openmycel.app

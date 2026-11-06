@@ -72,7 +72,7 @@ El modelo base sin entrenar obtuvo GSM8K 75.89; el final alcanza 79.08 (+3.18). 
 - Inferencia de un unico checkpoint (3B en bf16): requiere aproximadamente 6-8 GB de VRAM. Cabe en una RTX 3060 12GB, RTX 3090, RTX 4090, o A100.
 - El repositorio completo con 13 checkpoints ocupa 30.9 GB en disco (pesos completos en bf16).
 - No se proporcionan cuantizaciones GGUF ni otros formatos de menor precision; para inferencia ligera seria necesario convertir los pesos.
-- Despliegue compatible con transformers (HuggingFace), vLLM, TGI y otras librerias que soporten arquitectura Qwen2.5.
+- Despliegue compatible con transformers (Hugging Face), vLLM, TGI y otras librerias que soporten arquitectura Qwen2.5.
 - No hay datos publicados de latencia ni throughput.
 - Para la evaluacion completa de los 13 checkpoints se recomienda un entorno con al menos 30 GB de almacenamiento y una GPU con 24 GB de VRAM para procesar cada checkpoint de forma secuencial.
 

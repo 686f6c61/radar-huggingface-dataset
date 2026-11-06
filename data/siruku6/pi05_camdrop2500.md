@@ -97,7 +97,7 @@ No se dispone de datos de rendimiento (tasa de éxito) para ninguno de estos mod
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/siruku6/pi05_camdrop2500
+- Hugging Face: https://huggingface.co/siruku6/pi05_camdrop2500
 - Modelo base: https://huggingface.co/lerobot/pi05_libero_base
 - Dataset: https://huggingface.co/datasets/lerobot/libero_plus
 - Gemma Terms of Use: https://ai.google.dev/gemma/terms

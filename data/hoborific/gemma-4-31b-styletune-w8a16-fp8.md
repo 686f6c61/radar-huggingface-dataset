@@ -57,9 +57,9 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Gryphe/Gemma-4-31B-StyleTune (base) | 32.7B | 256K (base) | Sin cuantizar (bf16) | No disponible | HuggingFace |
-| hoborific/Gemma-4-31B-StyleTune-W8A16-FP8 | 32.7B | 256K (base) | W8A16 FP8 | No disponible | HuggingFace |
-| Google Gemma 4 31B (original) | 31B | 256K | Sin cuantizar | Gemma Terms of Use | HuggingFace |
+| Gryphe/Gemma-4-31B-StyleTune (base) | 32.7B | 256K (base) | Sin cuantizar (bf16) | No disponible | Hugging Face |
+| hoborific/Gemma-4-31B-StyleTune-W8A16-FP8 | 32.7B | 256K (base) | W8A16 FP8 | No disponible | Hugging Face |
+| Google Gemma 4 31B (original) | 31B | 256K | Sin cuantizar | Gemma Terms of Use | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo. La principal diferencia es el formato de pesos y el soporte de hardware: la versión cuantizada requiere kernels específicos de vLLM y no funciona en ROCm/CPU/TPU, mientras que el modelo base puede ejecutarse en más plataformas.
 

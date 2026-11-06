@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`amrhz13/amrhz-ai-13` es un repositorio de modelo alojado en HuggingFace por el usuario `amrhz13`. En el momento de redactar esta ficha, el repositorio no contiene más metadatos que una licencia CC0-1.0, la etiqueta de región `us` y una model card reducida a su cabecera YAML, sin descripción, sin arquitectura declarada, sin datos de entrenamiento y sin resultados de evaluación. El contador público indica 0 descargas y 1 like, lo que sugiere que se trata de una publicación reciente y sin adopción conocida.
+`amrhz13/amrhz-ai-13` es un repositorio de modelo alojado en Hugging Face por el usuario `amrhz13`. En el momento de redactar esta ficha, el repositorio no contiene más metadatos que una licencia CC0-1.0, la etiqueta de región `us` y una model card reducida a su cabecera YAML, sin descripción, sin arquitectura declarada, sin datos de entrenamiento y sin resultados de evaluación. El contador público indica 0 descargas y 1 like, lo que sugiere que se trata de una publicación reciente y sin adopción conocida.
 
 La única información aprovechable es administrativa: identificador del repositorio, autor, licencia, fechas de creación y actualización (2026-10-03) y ausencia de pipeline declarado y de idiomas declarados. No hay evidencia pública de que existan pesos publicados, tokenizador, configuración de modelo ni documentación técnica asociada. La búsqueda web devuelve únicamente alias y nombres de repositorios (`AMRHZ-AI-13`, `AP1-WEB-Console`, `AMRHZ Architecture Core`, `AP1 Ecosystem`) sin documentación técnica verificable.
 
@@ -50,7 +50,7 @@ Los siguientes escenarios son hipótesis de trabajo condicionadas a que el autor
 
 - Prototipado interno de asistentes conversacionales: únicamente tendría sentido si se confirma que existe un modelo de lenguaje con pesos descargables; hoy no hay evidencia de ello.
 - Evaluación comparativa de modelos pequeños en investigación: el repositorio podría servir como punto de partida para reproducir experimentos, siempre que se publiquen los artefactos.
-- Aprendizaje de flujos de publicación en HuggingFace: el repositorio es un ejemplo de estructura mínima (solo cabecera YAML) y puede usarse como plantilla negativa de lo que falta en una model card.
+- Aprendizaje de flujos de publicación en Hugging Face: el repositorio es un ejemplo de estructura mínima (solo cabecera YAML) y puede usarse como plantilla negativa de lo que falta en una model card.
 - Auditoría de licencias permisivas: al estar bajo CC0-1.0, el contenido publicado (si existe) podría reutilizarse sin restricciones, lo que simplifica la verificación legal.
 - Integración en pipelines propios: no recomendable sin conocer formato de pesos, tokenizador y requisitos de runtime.
 - Despliegue en producción: descartado por ausencia total de especificaciones, benchmarks y mantenimiento verificable.
@@ -84,6 +84,6 @@ No disponible. No es posible identificar modelos comparables sin conocer el tama
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amrhz13/amrhz-ai-13
+- Hugging Face: https://huggingface.co/amrhz13/amrhz-ai-13
 - GitHub mencionado en la busqueda web (relacion no confirmada): https://github.com/amirulhafiz1132002-code
 - Papers, blogs, demos o repositorios adicionales: no disponible.

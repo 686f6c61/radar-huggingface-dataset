@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cobalt-seeded-rl-base-...-vs16 (este) | 4,4B | No declarado en el checkpoint | Codigo (RL con recompensa de tests) | No declarada | HuggingFace, safetensors, `main` |
-| Qwen/Qwen3-4B-Instruct-2507 | 4,4B | 262.144 tokens | Proposito general, instrucciones | Apache 2.0 | HuggingFace, safetensors y GGUF |
-| Qwen2.5-Coder-7B-Instruct | 7,6B | 32.768 tokens nativos | Codigo | Apache 2.0 | HuggingFace, safetensors y GGUF |
-| Llama-3.2-3B-Instruct | 3,2B | 128.000 tokens | Proposito general, instrucciones | Llama 3.2 Community License | HuggingFace, safetensors y GGUF |
+| cobalt-seeded-rl-base-...-vs16 (este) | 4,4B | No declarado en el checkpoint | Codigo (RL con recompensa de tests) | No declarada | Hugging Face, safetensors, `main` |
+| Qwen/Qwen3-4B-Instruct-2507 | 4,4B | 262.144 tokens | Proposito general, instrucciones | Apache 2.0 | Hugging Face, safetensors y GGUF |
+| Qwen2.5-Coder-7B-Instruct | 7,6B | 32.768 tokens nativos | Codigo | Apache 2.0 | Hugging Face, safetensors y GGUF |
+| Llama-3.2-3B-Instruct | 3,2B | 128.000 tokens | Proposito general, instrucciones | Llama 3.2 Community License | Hugging Face, safetensors y GGUF |
 
 No se dispone de resultados de benchmarks comparativos publicados para este checkpoint, por lo que la comparación se limita a especificaciones estructurales y de licencia. El modelo base Qwen3-4B-Instruct-2507 es la referencia natural, ya que este checkpoint parte de él.
 
@@ -89,7 +89,7 @@ No se dispone de resultados de benchmarks comparativos publicados para este chec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-q4v3-vs16
+- Modelo en Hugging Face: https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-q4v3-vs16
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Framework de entrenamiento OpenRLHF: https://github.com/OpenRLHF/OpenRLHF
 - Logs de entrenamiento: proyecto de Weights & Biases `eaiexp-paper-final`, run `seeded_rl_base_ramp25_stoppen_gen4k-ep2-ncp10-q4v3-vs16` (no se ha encontrado URL directa en la información disponible)

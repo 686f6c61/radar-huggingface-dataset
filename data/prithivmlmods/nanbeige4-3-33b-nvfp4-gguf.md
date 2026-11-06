@@ -120,7 +120,7 @@ Los datos de contexto, licencia y formato de los tres modelos comparables no se 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/prithivMLmods/Nanbeige4.3-33B-NVFP4-GGUF
+- Repositorio Hugging Face: https://huggingface.co/prithivMLmods/Nanbeige4.3-33B-NVFP4-GGUF
 - Archivo GGUF: https://huggingface.co/prithivMLmods/Nanbeige4.3-33B-NVFP4-GGUF/blob/main/Nanbeige4.3-33B-NVFP4.gguf
 - Modelo base: https://huggingface.co/Nanbeige/Nanbeige4.3-33B
 - llama.cpp (repositorio oficial): https://github.com/ggml-org/llama.cpp

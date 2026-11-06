@@ -82,7 +82,7 @@ Los datos de parámetros de las variantes 3B y 10B y de M2M-100 no se detallan e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/cstr/madlad400-7b-mt-GGUF
+- Repositorio Hugging Face: https://huggingface.co/cstr/madlad400-7b-mt-GGUF
 - Modelo base: https://huggingface.co/google/madlad400-7b-mt
 - Artículo MADLAD-400: https://arxiv.org/abs/2309.04662
 - Motor CrispASR: https://github.com/CrispStrobe/CrispASR

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `AlinaGonch/qwen3-4b-instruct-squad-ratio-0.60-seed-42` es un checkpoint publicado en HuggingFace por el usuario AlinaGonch. Por el identificador se deduce que se trata de un ajuste fino del modelo Qwen3-4B-Instruct sobre el conjunto de datos SQuAD, con una proporción de mezcla de datos de 0,60 y semilla aleatoria 42. Esta nomenclatura (`ratio-X-seed-Y`) es típica de experimentos de barrido de hiperparámetros o de estudios de ablación, por lo que el artefacto parece tener un propósito de investigación más que de producción. No obstante, esta interpretación procede únicamente del nombre del repositorio y no está confirmada en ninguna documentación del autor.
+El modelo `AlinaGonch/qwen3-4b-instruct-squad-ratio-0.60-seed-42` es un checkpoint publicado en Hugging Face por el usuario AlinaGonch. Por el identificador se deduce que se trata de un ajuste fino del modelo Qwen3-4B-Instruct sobre el conjunto de datos SQuAD, con una proporción de mezcla de datos de 0,60 y semilla aleatoria 42. Esta nomenclatura (`ratio-X-seed-Y`) es típica de experimentos de barrido de hiperparámetros o de estudios de ablación, por lo que el artefacto parece tener un propósito de investigación más que de producción. No obstante, esta interpretación procede únicamente del nombre del repositorio y no está confirmada en ninguna documentación del autor.
 
-La model card publicada es la plantilla automática de HuggingFace, sin ninguna sección cumplimentada: no se declaran datos de desarrollo, tipo de modelo, idiomas, licencia ni procedencia del ajuste. El repositorio ocupa 0,1 GB, una cifra muy inferior a los aproximadamente 8 GB que requerirían los pesos completos de un modelo de 4 000 millones de parámetros en bfloat16, lo que sugiere que el repositorio contiene únicamente adaptadores, pesos parciales o archivos auxiliares, aunque esto no puede verificarse con la información disponible.
+La model card publicada es la plantilla automática de Hugging Face, sin ninguna sección cumplimentada: no se declaran datos de desarrollo, tipo de modelo, idiomas, licencia ni procedencia del ajuste. El repositorio ocupa 0,1 GB, una cifra muy inferior a los aproximadamente 8 GB que requerirían los pesos completos de un modelo de 4 000 millones de parámetros en bfloat16, lo que sugiere que el repositorio contiene únicamente adaptadores, pesos parciales o archivos auxiliares, aunque esto no puede verificarse con la información disponible.
 
 La relevancia de este modelo es limitada como artefacto listo para producción, pero puede resultar de interés como referencia metodológica para quienes estudien el efecto de la proporción de datos de ajuste sobre el olvido catastrófico o la retención de capacidades de instrucción. Los resultados de la búsqueda web realizada no contienen ninguna referencia al modelo ni a su autor: todos los enlaces devueltos pertenecen a un portal de actividades y cursos en Alemania, sin relación alguna con inteligencia artificial.
 
@@ -31,7 +31,7 @@ La relevancia de este modelo es limitada como artefacto listo para producción, 
 
 ## Arquitectura y entrenamiento
 
-No hay informacion verificable sobre la arquitectura en la documentacion proporcionada. La model card es la plantilla generada automaticamente por HuggingFace y todos los apartados de arquitectura, objetivo, infraestructura de computo, hardware y software figuran como "More Information Needed". Lo unico que permite inferir algo es el identificador del repositorio: `qwen3-4b-instruct` apunta a un modelo de la familia Qwen3 en su variante Instruct de 4 000 millones de parametros, y `squad` apunta a un ajuste fino supervisado sobre el dataset SQuAD (Stanford Question Answering Dataset), orientado por tanto a respuesta extractiva de preguntas sobre contexto.
+No hay informacion verificable sobre la arquitectura en la documentacion proporcionada. La model card es la plantilla generada automaticamente por Hugging Face y todos los apartados de arquitectura, objetivo, infraestructura de computo, hardware y software figuran como "More Information Needed". Lo unico que permite inferir algo es el identificador del repositorio: `qwen3-4b-instruct` apunta a un modelo de la familia Qwen3 en su variante Instruct de 4 000 millones de parametros, y `squad` apunta a un ajuste fino supervisado sobre el dataset SQuAD (Stanford Question Answering Dataset), orientado por tanto a respuesta extractiva de preguntas sobre contexto.
 
 Los sufijos `ratio-0.60` y `seed-42` sugieren, sin confirmacion, un experimento controlado en el que se varia la proporcion de datos de ajuste (probablemente mezcla entre datos de instruccion general y datos de SQuAD, o entre subconjuntos del propio dataset) con una semilla fija para garantizar reproducibilidad. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de RLHF, DPO o ajuste por preferencias, ni sobre innovaciones tecnicas como decodificacion especulativa, atencion lineal o variantes hibridas.
 
@@ -58,7 +58,7 @@ Dado que no hay informacion verificable sobre el modelo, los siguientes casos se
 - Reproducibilidad de experimentos academicos: la semilla 42 declarada en el nombre permite replicar el ajuste en un entorno controlado, siempre que se conozcan los hiperparametros, que no estan documentados.
 - Prototipado de sistemas de question answering sobre documentos: si el ajuste se completo, el modelo podria responder preguntas extractivas sobre un contexto dado, en un pipeline con `transformers`.
 - Analisis comparativo de checkpoints derivados: empleo como uno de los brazos de comparacion frente a otros checkpoints del mismo autor con distinta `ratio` o `seed`.
-- Docencia y formacion: uso como ejemplo de repositorio con model card incompleta para ilustrar buenas y malas practicas en la publicacion de modelos en HuggingFace.
+- Docencia y formacion: uso como ejemplo de repositorio con model card incompleta para ilustrar buenas y malas practicas en la publicacion de modelos en Hugging Face.
 - Despliegue en produccion: no recomendado con la informacion disponible, debido a la ausencia de licencia declarada, de idiomas soportados y de evaluacion de rendimiento.
 
 ## Benchmarks y rendimiento
@@ -96,7 +96,7 @@ No se han incluido cifras de benchmarks de los modelos alternativos porque no fo
 
 ## Limitaciones y advertencias
 
-- Model card vacia: la documentacion es la plantilla automatica de HuggingFace, sin informacion sobre uso previsto, uso fuera de alcance, sesgos ni limitaciones.
+- Model card vacia: la documentacion es la plantilla automatica de Hugging Face, sin informacion sobre uso previsto, uso fuera de alcance, sesgos ni limitaciones.
 - Licencia no declarada: sin licencia explicita no hay autorizacion clara para uso comercial; en la Union Europea, la ausencia de terminos de licencia impide determinar el regimen de explotacion.
 - Idiomas no declarados: se desconoce si el modelo conserva capacidades multilingues o si el ajuste sobre SQuAD, predominantemente en ingles, ha degradado el rendimiento en otros idiomas.
 - Riesgo de alucinacion: no evaluado. Un ajuste sobre SQuAD puede aumentar la tendencia a responder de forma extractiva incluso cuando la respuesta no esta en el contexto.
@@ -110,7 +110,7 @@ No se han incluido cifras de benchmarks de los modelos alternativos porque no fo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AlinaGonch/qwen3-4b-instruct-squad-ratio-0.60-seed-42
+- Modelo en Hugging Face: https://huggingface.co/AlinaGonch/qwen3-4b-instruct-squad-ratio-0.60-seed-42
 - Paper referenciado en las etiquetas del repositorio (Lacoste et al., 2019, sobre estimacion de emisiones de carbono en aprendizaje automatico): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning citada en la model card: https://mlco2.github.io/impact
 - Repositorio, paper o demo del autor: no disponible

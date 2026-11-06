@@ -19,7 +19,7 @@ La licencia MIT permite su uso comercial y modificación sin restricciones, lo q
 | Tipos de cuantizacion | No aplica (no es un modelo de inferencia) |
 | Idiomas soportados | `fw_` (código interno para FineWeb-Edu, principalmente inglés educativo; al ser byte-level, puede tokenizar cualquier idioma) |
 | Licencia | MIT |
-| Formato de pesos | `tokenizer.json`, `vocab.json`, `merges.txt` (formato HuggingFace) |
+| Formato de pesos | `tokenizer.json`, `vocab.json`, `merges.txt` (formato Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -33,7 +33,7 @@ El entrenamiento se realizó sobre dos fragmentos (`shards`) del dataset FineWeb
 - Manejo de números aprendido: los dígitos se segmentan según las reglas BPE aprendidas, lo que puede mejorar la eficiencia en textos con números.
 - Normalización NFC integrada para unificar caracteres.
 - Incluye tokens especiales para marcado de secuencia (`<s>`, `</s>`) y padding (`<pad>`), listos para usar en frameworks de entrenamiento.
-- Compatible con la API `AutoTokenizer` de HuggingFace Transformers, lo que facilita su integración en pipelines existentes.
+- Compatible con la API `AutoTokenizer` de Hugging Face Transformers, lo que facilita su integración en pipelines existentes.
 - Al ser un tokenizador independiente, puede combinarse con cualquier modelo que espere un vocabulario de 32K tokens.
 
 ## Casos de uso

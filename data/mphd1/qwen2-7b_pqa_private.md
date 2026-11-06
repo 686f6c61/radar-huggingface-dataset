@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen2-7B_pqa_private es un ajuste fino (fine-tuning) supervisado del modelo Qwen/Qwen2-7B, publicado por el usuario mphd1 en HuggingFace bajo licencia Apache 2.0. Se trata de un transformer decoder-only denso de 7.615.616.512 parámetros (7,62 B) en formato safetensors, entrenado con la librería Transformers 4.57.6 mediante el `Trainer` y el optimizador `paged_adamw_8bit`. La model card ha sido generada automáticamente por la herramienta de entrenamiento y no documenta el conjunto de datos, los idiomas, los casos de uso previstos ni los resultados de evaluación.
+Qwen2-7B_pqa_private es un ajuste fino (fine-tuning) supervisado del modelo Qwen/Qwen2-7B, publicado por el usuario mphd1 en Hugging Face bajo licencia Apache 2.0. Se trata de un transformer decoder-only denso de 7.615.616.512 parámetros (7,62 B) en formato safetensors, entrenado con la librería Transformers 4.57.6 mediante el `Trainer` y el optimizador `paged_adamw_8bit`. La model card ha sido generada automáticamente por la herramienta de entrenamiento y no documenta el conjunto de datos, los idiomas, los casos de uso previstos ni los resultados de evaluación.
 
 El interés del modelo es limitado y fundamentalmente práctico: reproduce la arquitectura y el tokenizador de Qwen2-7B, por lo que hereda su ventana de contexto de 32 768 tokens y su soporte multilingüe, pero incorpora un ajuste del que no se ha publicado ninguna información verificable. El sufijo "pqa" del identificador sugiere un entrenamiento orientado a pregunta-respuesta (question answering), aunque se trata de una inferencia a partir del nombre, no de un dato confirmado por el autor.
 
@@ -91,7 +91,7 @@ La comparación relevante es con el propio Qwen2-7B: este ajuste no aporta una a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mphd1/Qwen2-7B_pqa_private
+- Modelo en Hugging Face: https://huggingface.co/mphd1/Qwen2-7B_pqa_private
 - Modelo base Qwen2-7B: https://huggingface.co/Qwen/Qwen2-7B
 - Informe técnico de Qwen2: https://arxiv.org/abs/2407.10671
 - Repositorio oficial de Qwen2 en GitHub: https://github.com/QwenLM/Qwen2

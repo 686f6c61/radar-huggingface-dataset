@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kenji-sks89x/mocov3-experiment` es un repositorio de investigación publicado en HuggingFace que se presenta como un prototipo de clasificación basado en MoCo v3 (Momentum Contrast v3). El autor, `kenji-sks89x`, lo describe explícitamente como un punto de partida experimental: el checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo (*smoke tests*), no un modelo entrenado ni evaluado. La propia model card indica que no se reclama ninguna métrica de rendimiento.
+`kenji-sks89x/mocov3-experiment` es un repositorio de investigación publicado en Hugging Face que se presenta como un prototipo de clasificación basado en MoCo v3 (Momentum Contrast v3). El autor, `kenji-sks89x`, lo describe explícitamente como un punto de partida experimental: el checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo (*smoke tests*), no un modelo entrenado ni evaluado. La propia model card indica que no se reclama ninguna métrica de rendimiento.
 
 El dato más relevante para cualquier evaluador es la contradicción entre la etiqueta declarada y el tamaño real: la configuración se denomina «giant», pero el recuento de parámetros real reportado por safetensors es de 33.088 parámetros totales. Eso sitúa al artefacto varios órdenes de magnitud por debajo de cualquier backbone visual real, incluidos los ViT-Small que usa MoCo v3 en su implementación de referencia. Es, por tanto, un esqueleto de código y configuración, no un modelo utilizable en producción.
 
@@ -46,7 +46,7 @@ Conviene aclarar el contexto del nombre: MoCo v3 es, en su formulación original
 - Tool calling / function calling: no soportado.
 - Agentes y razonamiento multi-paso: no soportado.
 - Capacidades multilingües: no aplicables ni documentadas.
-- Capacidades especiales (modo *thinking*, visión, audio): no declaradas. No hay pipeline de HuggingFace asignado.
+- Capacidades especiales (modo *thinking*, visión, audio): no declaradas. No hay pipeline de Hugging Face asignado.
 - Ejecución como plantilla: el script `eval.py` puede inspeccionarse y ejecutarse (`python eval.py --help`) como punto de partida para pruebas de humo.
 - Carga mediante APIs automáticas: la model card advierte que, al ser una implementación personalizada, las APIs genéricas de carga requieren un adaptador explícito.
 
@@ -57,7 +57,7 @@ Conviene aclarar el contexto del nombre: MoCo v3 es, en su formulación original
 - Referencia de receta de entrenamiento: usar `training_args.json` (adafactor con *constant warmup*) como base documentada y comparable, aplicando el mismo presupuesto de ajuste y las mismas semillas al comparar contra baselines.
 - Evaluación metodológica de reproducibilidad: el propio repositorio propone evaluar sobre una partición etiquetada específica de la tarea, reportando la métrica en al menos tres semillas e incluyendo un baseline de capacidad equivalente.
 - Estudio de sesgo y robustez en prototipos: al no estar entrenado, sirve como condición de control (inicialización aleatoria) frente a checkpoints entrenados en experimentos de transferencia de dominio.
-- Docencia y formación: ilustrar el ciclo completo de publicación de un modelo en HuggingFace (config, safetensors, script de evaluación, licencia) sin exponer datos sensibles ni cómputo relevante.
+- Docencia y formación: ilustrar el ciclo completo de publicación de un modelo en Hugging Face (config, safetensors, script de evaluación, licencia) sin exponer datos sensibles ni cómputo relevante.
 - Integración en pipelines de CI para validar serialización: comprobar que un formato de checkpoint en safetensors se escribe y se lee correctamente en un flujo automatizado.
 
 ## Benchmarks y rendimiento
@@ -92,13 +92,13 @@ No hay modelos comparables de la misma categoría con benchmarks publicados en l
 - No hay resultados de benchmarks, ni métricas, ni comparaciones con baselines publicadas en el repositorio.
 - No hay información sobre datos de entrenamiento, sesgos potenciales ni composición del dataset.
 - La licencia apache-2.0 cubre el artefacto del repositorio, pero la model card advierte de que deben revisarse por separado los términos de los datos de origen si se usan datasets externos.
-- Al ser una implementación personalizada, las APIs automáticas de carga de HuggingFace (por ejemplo, `AutoModel`) requieren un adaptador explícito; no se puede asumir compatibilidad directa.
-- No hay pipeline declarado en HuggingFace, ni idiomas, ni información de cuantización.
+- Al ser una implementación personalizada, las APIs automáticas de carga de Hugging Face (por ejemplo, `AutoModel`) requieren un adaptador explícito; no se puede asumir compatibilidad directa.
+- No hay pipeline declarado en Hugging Face, ni idiomas, ni información de cuantización.
 - Para cualquier resultado futuro se exige, según la propia guía del repositorio, documentar el checkpoint entrenado de forma separada a los valores por defecto aquí publicados, junto con los logs de entrenamiento y las versiones del entorno.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kenji-sks89x/mocov3-experiment
+- Modelo en Hugging Face: https://huggingface.co/kenji-sks89x/mocov3-experiment
 - Repositorio de referencia MoCo (Facebook Research): https://github.com/facebookresearch/moco
 - Repositorio homónimo de otro autor: https://huggingface.co/ppurnomojoko/mocov3-experiment
 - Ficha de terceros del repositorio anterior: https://savrn.com/models/mocov3-experiment

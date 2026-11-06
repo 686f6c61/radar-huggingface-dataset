@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dinov2-base-galaxy10-decals-full-v2` es un clasificador de imágenes especializado en morfología de galaxias, obtenido mediante ajuste fino completo (*full fine-tuning*) del backbone auto-supervisado `facebook/dinov2-base` sobre el conjunto de datos Galaxy10 DECaLS. Lo publica el usuario de HuggingFace `matthieulel` como parte de una colección de 80 configuraciones (40 backbones preentrenados por dos regímenes de adaptación) que sirve de banco de pruebas para modelos fundacionales de visión aplicados a datos astronómicos, en el marco de un artículo en revisión para *Astronomy and Computing* (2026).
+`dinov2-base-galaxy10-decals-full-v2` es un clasificador de imágenes especializado en morfología de galaxias, obtenido mediante ajuste fino completo (*full fine-tuning*) del backbone auto-supervisado `facebook/dinov2-base` sobre el conjunto de datos Galaxy10 DECaLS. Lo publica el usuario de Hugging Face `matthieulel` como parte de una colección de 80 configuraciones (40 backbones preentrenados por dos regímenes de adaptación) que sirve de banco de pruebas para modelos fundacionales de visión aplicados a datos astronómicos, en el marco de un artículo en revisión para *Astronomy and Computing* (2026).
 
 El modelo resuelve una tarea acotada y bien definida: clasificar imágenes de galaxias en 10 clases morfológicas. No es un modelo generativo ni un asistente conversacional; es un clasificador de imagen puro con una única capa lineal de 10 salidas sobre el encoder ViT-B de DINOv2 (86,6 millones de parámetros). Su interés radica en que ofrece un punto de referencia reproducible y con protocolo documentado (semillas, épocas, receta de entrenamiento) para evaluar hasta qué punto los backbones fundacionales de visión genéricos transfieren bien a dominios científicos muy alejados de sus datos de preentrenamiento.
 
@@ -45,7 +45,7 @@ El entrenamiento usa Galaxy10 DECaLS (17.736 imágenes), con el split público d
 - Línea base reproducible en investigación sobre transferencia de aprendizaje: al formar parte de una colección de 80 configuraciones con receta idéntica y métricas por época publicadas, sirve para comparar backbones fundacionales en un dominio científico concreto.
 - Detección de casos atípicos o mal etiquetados: las imágenes con baja confianza o discrepancias frente a etiquetas existentes pueden priorizarse para inspección, aprovechando la distribución de logits del clasificador.
 - Docencia y divulgación en astronomía computacional: el modelo y su protocolo documentado permiten montar prácticas reproducibles de ajuste fino de un ViT sobre datos astronómicos reales en una única GPU.
-- Integración en servicios de inferencia de HuggingFace: el tag `endpoints_compatible` indica que puede desplegarse directamente en Inference Endpoints con la librería transformers.
+- Integración en servicios de inferencia de Hugging Face: el tag `endpoints_compatible` indica que puede desplegarse directamente en Inference Endpoints con la librería transformers.
 
 ## Benchmarks y rendimiento
 
@@ -66,7 +66,7 @@ La model card incluye además la tabla completa de métricas por época para la 
 - En fp16/bf16 el peso ronda los 0,17 GB, aunque el autor no documenta conversiones ni cuantizaciones oficiales.
 - GPU recomendadas: cualquier GPU moderna sirve; para throughput alto, A100, H100 o L40S; para desarrollo y pruebas, RTX 4090, RTX 3090 o incluso GPUs de gama media con 4-8 GB.
 - Cabe sin problema en GPU de consumo, incluidas RTX 3060, RTX 4060 y similares.
-- Despliegue: la vía documentada es `transformers` con `AutoModelForImageClassification` y `AutoImageProcessor`; el tag `endpoints_compatible` habilita HuggingFace Inference Endpoints. El autor no documenta soporte explícito para vLLM, llama.cpp, Ollama ni TGI (herramientas orientadas a modelos de lenguaje, no aplicables aquí).
+- Despliegue: la vía documentada es `transformers` con `AutoModelForImageClassification` y `AutoImageProcessor`; el tag `endpoints_compatible` habilita Hugging Face Inference Endpoints. El autor no documenta soporte explícito para vLLM, llama.cpp, Ollama ni TGI (herramientas orientadas a modelos de lenguaje, no aplicables aquí).
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
@@ -93,7 +93,7 @@ No se dispone en la información proporcionada de resultados de otros clasificad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matthieulel/dinov2-base-galaxy10-decals-full-v2
+- Modelo en Hugging Face: https://huggingface.co/matthieulel/dinov2-base-galaxy10-decals-full-v2
 - Modelo base: https://huggingface.co/facebook/dinov2-base
 - Dataset Galaxy10 DECaLS: https://huggingface.co/datasets/matthieulel/galaxy10_decals
 - Dataset con métricas por época y splits: https://huggingface.co/datasets/matthieulel/vision-foundation-models-benchmark-runs

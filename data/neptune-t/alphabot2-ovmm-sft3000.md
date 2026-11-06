@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parámetros | Contexto / E/S | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Neptune-T/alphabot2-ovmm-sft3000 | 4.143 M | state16 + texto + 6 RGB → chunk 50×18 | 4/12 en TRAIN12 asistido; 1/6 en development6 | no disponible | HuggingFace, LeRobot |
-| alphabot2/aibot2_grab_bag_combined_over_under_pi05 (base) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| Neptune-T/alphabot2-ovmm-sft3000 | 4.143 M | state16 + texto + 6 RGB → chunk 50×18 | 4/12 en TRAIN12 asistido; 1/6 en development6 | no disponible | Hugging Face, LeRobot |
+| alphabot2/aibot2_grab_bag_combined_over_under_pi05 (base) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | Otras políticas Pi0.5 / LeRobot | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks comparables de los modelos alternativos en la información proporcionada, por lo que la comparación cuantitativa no está disponible.
@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks comparables de los modelos alternativos en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Neptune-T/alphabot2-ovmm-sft3000
+- Modelo en Hugging Face: https://huggingface.co/Neptune-T/alphabot2-ovmm-sft3000
 - Dataset asociado: https://huggingface.co/datasets/Neptune-T/alphabot2-ovmm-sft
 - Modelo base: https://huggingface.co/alphabot2/aibot2_grab_bag_combined_over_under_pi05
 - LeRobot (runtime): https://github.com/huggingface/lerobot

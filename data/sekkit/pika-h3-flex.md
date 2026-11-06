@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Pika-H3-Flex es un adaptador LoRA para generación de vídeo (y audio sincronizado) desarrollado por el usuario sekkit, publicado en HuggingFace bajo el identificador `sekkit/Pika-H3-Flex`. No es un modelo autónomo, sino un adaptador que se aplica sobre el modelo base `MiniMaxAI/MiniMax-H3`, un modelo de generación de vídeo de MiniMax. El adaptador está empaquetado en formato diffusers con pesos safetensors y está etiquetado como `image-to-video`, lo que indica que su función principal es animar una imagen de entrada siguiendo instrucciones textuales detalladas.
+Pika-H3-Flex es un adaptador LoRA para generación de vídeo (y audio sincronizado) desarrollado por el usuario sekkit, publicado en Hugging Face bajo el identificador `sekkit/Pika-H3-Flex`. No es un modelo autónomo, sino un adaptador que se aplica sobre el modelo base `MiniMaxAI/MiniMax-H3`, un modelo de generación de vídeo de MiniMax. El adaptador está empaquetado en formato diffusers con pesos safetensors y está etiquetado como `image-to-video`, lo que indica que su función principal es animar una imagen de entrada siguiendo instrucciones textuales detalladas.
 
 El modelo resuelve el problema de control fino sobre la generación de vídeo: los ejemplos de la model card muestran prompts muy estructurados con marcas temporales (por ejemplo, `00:00–00:03`), movimientos de cámara explícitos (grúa, órbita, dolly, whip pan), instrucciones de audio diegético y especificaciones de estilo fílmico. Esto sugiere que el adaptador está entrenado para respetar instrucciones de dirección cinematográfica y sincronización audio-vídeo, más que para generación libre.
 
@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parámetros | Contexto / duración | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Pika-H3-Flex (sekkit) | LoRA image-to-video sobre MiniMax-H3 | 33,1 B (según safetensors) | no disponible | MiniMax-H3 Community License | HuggingFace, 11 descargas |
-| MiniMaxAI/MiniMax-H3 | Modelo base de generación de vídeo | no disponible | no disponible | MiniMax-H3 Community License | HuggingFace (modelo base) |
+| Pika-H3-Flex (sekkit) | LoRA image-to-video sobre MiniMax-H3 | 33,1 B (según safetensors) | no disponible | MiniMax-H3 Community License | Hugging Face, 11 descargas |
+| MiniMaxAI/MiniMax-H3 | Modelo base de generación de vídeo | no disponible | no disponible | MiniMax-H3 Community License | Hugging Face (modelo base) |
 | Otros adaptadores LoRA para vídeo | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información suficiente para comparar con alternativas concretas de la misma categoría (por ejemplo, otros LoRA de image-to-video o modelos base de vídeo con audio). Los datos de rendimiento, contexto y disponibilidad de los competidores no están en la información proporcionada.
@@ -84,7 +84,7 @@ No se dispone de información suficiente para comparar con alternativas concreta
 
 ## Enlaces
 
-- [HuggingFace: sekkit/Pika-H3-Flex](https://huggingface.co/sekkit/Pika-H3-Flex)
+- [Hugging Face: sekkit/Pika-H3-Flex](https://huggingface.co/sekkit/Pika-H3-Flex)
 - [Modelo base: MiniMaxAI/MiniMax-H3](https://huggingface.co/MiniMaxAI/MiniMax-H3)
 - [Licencia: MiniMax-H3 Community License Agreement](https://huggingface.co/sekkit/Pika-H3-Flex/blob/main/LICENSE)
 - Ejemplos de la model card: `assets/showcases/camera-rally.mp4`, `assets/showcases/balcony-orbit.mp4` (rutas relativas dentro del repositorio)

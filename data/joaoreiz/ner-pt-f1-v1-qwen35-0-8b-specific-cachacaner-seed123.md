@@ -77,7 +77,7 @@ No se dispone de datos comparativos con otros modelos en la informacion proporci
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JoaoReiz/ner-pt-f1-v1-qwen35-0-8b-specific-cachacaner-seed123
+- Repositorio Hugging Face: https://huggingface.co/JoaoReiz/ner-pt-f1-v1-qwen35-0-8b-specific-cachacaner-seed123
 - Adaptador similar (2B, seed 3407): https://huggingface.co/JoaoReiz/ner-pt-f1-v1-qwen35-2b-specific-cachacaner-seed3407
 - Adaptador similar (4B, seed 3407): https://huggingface.co/JoaoReiz/ner-pt-f1-v1-qwen35-4b-specific-cachacaner-seed3407
 - Despliegue en FriendliAI (2B): https://friendli.ai/models/JoaoReiz/ner-pt-f1-v1-qwen35-2b-specific-cachacaner-seed123

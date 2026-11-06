@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `vipenl26/anlp-assignment-2-part1-moe_shared` es un checkpoint de investigación publicado en HuggingFace por el usuario `vipenl26` como parte de la asignatura ANLP (Assignment 2). Según su model card, se trata de un transformer causal implementado en PyTorch de forma personalizada, entrenado específicamente para dicha práctica académica, y no de un modelo pensado para distribución general ni para uso en producción.
+El modelo `vipenl26/anlp-assignment-2-part1-moe_shared` es un checkpoint de investigación publicado en Hugging Face por el usuario `vipenl26` como parte de la asignatura ANLP (Assignment 2). Según su model card, se trata de un transformer causal implementado en PyTorch de forma personalizada, entrenado específicamente para dicha práctica académica, y no de un modelo pensado para distribución general ni para uso en producción.
 
-El repositorio ocupa 0,2 GB e incluye los ficheros `checkpoint.pt`, `config.json`, `tokenizer.json` y `metadata.json`. El checkpoint contiene pesos, estado del optimizador, configuración del modelo y metadatos de entrenamiento; los autores indican que la carga debe hacerse con la función `src.training.load_checkpoint` del código fuente de la práctica, ya que la arquitectura corresponde a la clase `src.part1.model.Transformer`, no a una arquitectura estándar de HuggingFace Transformers.
+El repositorio ocupa 0,2 GB e incluye los ficheros `checkpoint.pt`, `config.json`, `tokenizer.json` y `metadata.json`. El checkpoint contiene pesos, estado del optimizador, configuración del modelo y metadatos de entrenamiento; los autores indican que la carga debe hacerse con la función `src.training.load_checkpoint` del código fuente de la práctica, ya que la arquitectura corresponde a la clase `src.part1.model.Transformer`, no a una arquitectura estándar de Hugging Face Transformers.
 
 El identificador del repositorio incluye el sufijo `moe_shared`, lo que sugiere una variante de mezcla de expertos con expertos compartidos, si bien la model card no confirma explícitamente este punto y se limita a describirlo como un transformer causal. No se han publicado resultados de evaluación, licencia, idiomas soportados ni número de parámetros, por lo que su utilidad práctica se limita al ámbito docente y a la reproducibilidad de la práctica.
 
@@ -23,7 +23,7 @@ El identificador del repositorio incluye el sufijo `moe_shared`, lo que sugiere 
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer causal de implementación propia en PyTorch, orientado a generación autorregresiva. El checkpoint no sigue el formato estándar de HuggingFace (`config.json` con `architectures` de `transformers`), sino que depende de módulos propios del código de la práctica (`src.part1.model.Transformer` y `src.training.load_checkpoint`). El fichero `checkpoint.pt` almacena, además de los pesos, el estado del optimizador y metadatos de entrenamiento, algo habitual en checkpoints de entrenamiento reanudable más que en artefactos de inferencia.
+La arquitectura es un transformer causal de implementación propia en PyTorch, orientado a generación autorregresiva. El checkpoint no sigue el formato estándar de Hugging Face (`config.json` con `architectures` de `transformers`), sino que depende de módulos propios del código de la práctica (`src.part1.model.Transformer` y `src.training.load_checkpoint`). El fichero `checkpoint.pt` almacena, además de los pesos, el estado del optimizador y metadatos de entrenamiento, algo habitual en checkpoints de entrenamiento reanudable más que en artefactos de inferencia.
 
 No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, el uso de RLHF, DPO u otras técnicas de alineación, ni sobre innovaciones arquitectónicas concretas (atención lineal, decodificación especulativa, enrutado de expertos, etc.). La model card únicamente menciona que los resultados de evaluación medidos y las versiones de runtime se encuentran en `metadata.json`, fichero cuyo contenido no se ha facilitado.
 
@@ -72,7 +72,7 @@ No disponible. No se conocen modelos comparables publicados con especificaciones
 
 - Ausencia de licencia: no se especifica ningún tipo de licencia, lo que impide determinar si el uso comercial está permitido. En la práctica, la ausencia de licencia implica ausencia de permisos explícitos de uso, modificación o redistribución.
 - Sin resultados de evaluación: no hay métricas publicadas, por lo que no es posible estimar su calidad, su tasa de alucinación ni su comportamiento en tareas reales.
-- Dependencia de código externo: la carga requiere los módulos `src.part1.model` y `src.training`, que no forman parte del repositorio de HuggingFace. Sin el código fuente de la práctica, el checkpoint puede resultar inutilizable.
+- Dependencia de código externo: la carga requiere los módulos `src.part1.model` y `src.training`, que no forman parte del repositorio de Hugging Face. Sin el código fuente de la práctica, el checkpoint puede resultar inutilizable.
 - Riesgo de ejecución de código arbitrario: los checkpoints de PyTorch en formato `.pt` se deserializan habitualmente con `pickle`, lo que permite ejecución de código durante la carga. Se recomienda inspeccionar el fichero y cargarlo únicamente desde un origen de confianza.
 - Idiomas y contexto desconocidos: al no documentarse el vocabulario ni la longitud de contexto, no se puede garantizar el comportamiento en ningún idioma concreto, incluido el castellano.
 - Sesgos: no disponibles; no se ha publicado información sobre la composición del dataset de entrenamiento.
@@ -82,5 +82,5 @@ No disponible. No se conocen modelos comparables publicados con especificaciones
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vipenl26/anlp-assignment-2-part1-moe_shared
+- Hugging Face: https://huggingface.co/vipenl26/anlp-assignment-2-part1-moe_shared
 - Papers, blogs, repositorios o demos adicionales: no disponible en la información proporcionada.

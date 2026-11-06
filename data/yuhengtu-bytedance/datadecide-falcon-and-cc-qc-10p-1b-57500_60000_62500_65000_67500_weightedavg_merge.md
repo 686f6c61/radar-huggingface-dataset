@@ -67,7 +67,7 @@ La comparacion es orientativa: los datos de la columna de alternativas son infor
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este modelo (DataDecide-falcon-and-cc-qc-10p, fusion) | 1,28B | no disponible | no disponible | safetensors en HuggingFace, sin cuantizaciones |
+| Este modelo (DataDecide-falcon-and-cc-qc-10p, fusion) | 1,28B | no disponible | no disponible | safetensors en Hugging Face, sin cuantizaciones |
 | Falcon-RW-1B | ~1,3B | 2048 tokens (segun documentacion publica de Falcon) | Apache 2.0 (segun documentacion publica) | safetensors, ampliamente distribuido |
 | TinyLlama-1.1B | 1,1B | 2048 tokens (segun documentacion publica) | Apache 2.0 (segun documentacion publica) | safetensors y GGUF |
 | Llama-3.2-1B | 1,23B | 128k tokens (segun documentacion publica) | Licencia comunitaria de Llama 3.2 | safetensors y GGUF |
@@ -88,7 +88,7 @@ Frente a estas alternativas, la diferencia principal no es de rendimiento sino d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yuhengtu-bytedance/DataDecide-falcon-and-cc-qc-10p-1B-57500_60000_62500_65000_67500_weightedavg_merge
+- Repositorio en Hugging Face: https://huggingface.co/yuhengtu-bytedance/DataDecide-falcon-and-cc-qc-10p-1B-57500_60000_62500_65000_67500_weightedavg_merge
 - Paper del metodo de fusion referenciado en las etiquetas (Model Soups): https://arxiv.org/abs/2203.05482
 - Herramienta mergekit empleada para la fusion: https://github.com/cg123/mergekit
 - La busqueda web realizada no devolvio ningun enlace relevante sobre este modelo; los resultados obtenidos correspondian a paginas de soporte de Microsoft ajenas al tema.

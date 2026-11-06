@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Kokoro-Vietnamese es un conjunto de artefactos de sintesis de voz (text-to-speech) en vietnamita derivados de la familia Kokoro, publicados por el usuario minhtanmtst en HuggingFace. El repositorio no contiene un modelo entrenado desde cero, sino los pesos ajustados (fine-tuned) de un modelo acustico Kokoro junto con su exportacion a ONNX, un voicepack en vietnamita por defecto y ficheros de configuracion. El objetivo declarado es ofrecer inferencia TTS en vietnamita tanto en PyTorch como en ONNX Runtime.
+Kokoro-Vietnamese es un conjunto de artefactos de sintesis de voz (text-to-speech) en vietnamita derivados de la familia Kokoro, publicados por el usuario minhtanmtst en Hugging Face. El repositorio no contiene un modelo entrenado desde cero, sino los pesos ajustados (fine-tuned) de un modelo acustico Kokoro junto con su exportacion a ONNX, un voicepack en vietnamita por defecto y ficheros de configuracion. El objetivo declarado es ofrecer inferencia TTS en vietnamita tanto en PyTorch como en ONNX Runtime.
 
 El problema que resuelve es la falta de voces Kokoro especificas para vietnamita: el modelo incorpora un modulo G2P (grafema a fonema) vietnamita llamado `vig2p`, que se encarga de la conversion de texto a fonemas antes de la sintesis, y voicepacks `.pt` que definen la identidad de la voz. La model card menciona al menos una voz de ejemplo, `diem_trinh`, y la existencia de voicepacks adicionales en el directorio `voicepacks/`.
 
-Es relevante ahora porque Kokoro es una familia de TTS ligera y de licencia permisiva, y este repositorio extiende su cobertura a un idioma con pocos recursos TTS abiertos como el vietnamita. Sin embargo, el repositorio presenta 0 descargas y 0 likes, no incluye resultados de benchmarks ni detalles de entrenamiento, y el identificador del autor en HuggingFace (`minhtanmtst`) no coincide con el de la organizacion del repositorio de codigo enlazado en la model card (`iamdinhthuan`), por lo que se trata de un artefacto sin validacion publica en el momento de la consulta.
+Es relevante ahora porque Kokoro es una familia de TTS ligera y de licencia permisiva, y este repositorio extiende su cobertura a un idioma con pocos recursos TTS abiertos como el vietnamita. Sin embargo, el repositorio presenta 0 descargas y 0 likes, no incluye resultados de benchmarks ni detalles de entrenamiento, y el identificador del autor en Hugging Face (`minhtanmtst`) no coincide con el de la organizacion del repositorio de codigo enlazado en la model card (`iamdinhthuan`), por lo que se trata de un artefacto sin validacion publica en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
@@ -76,7 +76,7 @@ No se dispone de datos verificados de modelos comparables en la informacion prop
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento comparado |
 |---|---|---|---|---|---|
-| Kokoro-Vietnamese (minhtanmtst) | no disponible | no aplica / no disponible | apache-2.0 | HuggingFace, 0 descargas, 0 likes | sin benchmarks publicados |
+| Kokoro-Vietnamese (minhtanmtst) | no disponible | no aplica / no disponible | apache-2.0 | Hugging Face, 0 descargas, 0 likes | sin benchmarks publicados |
 | Modelo base Kokoro | no disponible en la informacion proporcionada | no aplica / no disponible | no disponible en la informacion proporcionada | no verificado en la busqueda | no disponible |
 | Otras alternativas TTS en vietnamita | no disponible en la informacion proporcionada | no aplica / no disponible | no disponible en la informacion proporcionada | no verificado en la busqueda | no disponible |
 
@@ -90,13 +90,13 @@ Los resultados de busqueda web realizados no devolvieron informacion util (unica
 - Cobertura de voces limitada y no documentada: solo se cita explicitamente la voz `diem_trinh`; no se especifica cuantas voces contiene `voicepacks/`, ni su variedad de genero, edad o acento regional.
 - Idioma unico: el modelo solo declara vietnamita (`vi`). El texto en otros idiomas o mezclas de idiomas no esta soportado de forma declarada.
 - Riesgo de artefactos acusticos: como cualquier modelo TTS, puede producir prosodia incorrecta, saltos, ruido o cortes en frases largas, especialmente fuera del dominio de entrenamiento.
-- Inconsistencia de identidad entre repositorios: el modelo se publica bajo el usuario `minhtanmtst` en HuggingFace, mientras que la model card enlaza el repositorio de codigo `github.com/iamdinhthuan/Kokoro-Vietnamese`. Conviene verificar la relacion entre ambos antes de confiar en el codigo asociado.
+- Inconsistencia de identidad entre repositorios: el modelo se publica bajo el usuario `minhtanmtst` en Hugging Face, mientras que la model card enlaza el repositorio de codigo `github.com/iamdinhthuan/Kokoro-Vietnamese`. Conviene verificar la relacion entre ambos antes de confiar en el codigo asociado.
 - Fecha de publicacion anomala: la model card indica creacion y ultima actualizacion el 2026-09-11, dato que conviene contrastar con el registro real del repositorio.
 - Licencia: los pesos se distribuyen bajo Apache-2.0, lo que en principio permite uso comercial. No obstante, deben revisarse las condiciones del modelo base Kokoro del que derivan los pesos y los derechos sobre las voces utilizadas para construir los voicepacks, ya que la model card no aporta informacion sobre el origen de las muestras de voz.
 - Aviso de despliegue: antes de usar el modelo en produccion conviene generar un conjunto propio de pruebas con texto real del dominio objetivo (nombres, cifras, siglas, frases largas) y medir inteligibilidad y prosodia, dado que no existe ninguna referencia publica de rendimiento.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/minhtanmtst/Kokoro-Vietnamese
+- Repositorio en Hugging Face: https://huggingface.co/minhtanmtst/Kokoro-Vietnamese
 - Repositorio de codigo enlazado en la model card: https://github.com/iamdinhthuan/Kokoro-Vietnamese
 - No se han encontrado papers, blogs, demos ni articulos adicionales en los resultados de busqueda web proporcionados.

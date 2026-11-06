@@ -17,11 +17,11 @@ Este modelo se publica bajo licencia Apache-2.0 y está diseñado para generaci�
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | en (ingles) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | no disponible (presumiblemente safetensors, comun en modelos de HuggingFace) |
+| Formato de pesos | no disponible (presumiblemente safetensors, comun en modelos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un ajuste fino del checkpoint `unsloth/Qwen3-8B`, que a su vez es una version optimizada de Qwen3-8B. El entrenamiento se realizo con la libreria Unsloth y la biblioteca TRL de HuggingFace, lo que indica que se utilizo un pipeline de fine-tuning supervisado (SFT). El nombre del modelo sugiere que el dataset de entrenamiento se filtro para incluir solo ejemplos "target" (probablemente respuestas correctas) y que se aplico una estrategia de "first-third" (posiblemente refiriendose a la seleccion de los primeros tercios de los datos o a una particion especifica). No se proporcionan detalles sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas adicionales como RLHF o DPO. La unica informacion confirmada es que el entrenamiento fue 2 veces mas rapido gracias a Unsloth.
+El modelo es un ajuste fino del checkpoint `unsloth/Qwen3-8B`, que a su vez es una version optimizada de Qwen3-8B. El entrenamiento se realizo con la libreria Unsloth y la biblioteca TRL de Hugging Face, lo que indica que se utilizo un pipeline de fine-tuning supervisado (SFT). El nombre del modelo sugiere que el dataset de entrenamiento se filtro para incluir solo ejemplos "target" (probablemente respuestas correctas) y que se aplico una estrategia de "first-third" (posiblemente refiriendose a la seleccion de los primeros tercios de los datos o a una particion especifica). No se proporcionan detalles sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas adicionales como RLHF o DPO. La unica informacion confirmada es que el entrenamiento fue 2 veces mas rapido gracias a Unsloth.
 
 ## Capacidades
 
@@ -65,9 +65,9 @@ No se dispone de informacion suficiente para realizar una comparativa con otros 
 
 ## Enlaces
 
-- [HuggingFace - modelo seed5](https://huggingface.co/longtermrisk/Qwen3-8B-target-only-no-hallucination-first-third-sft-seed5)
-- [HuggingFace - variante sin seed](https://huggingface.co/longtermrisk/Qwen3-8B-target-only-no-hallucination-first-third-sft)
-- [HuggingFace - variante seed3](https://huggingface.co/longtermrisk/Qwen3-8B-target-only-no-hallucination-first-third-sft-seed3)
+- [Hugging Face - modelo seed5](https://huggingface.co/longtermrisk/Qwen3-8B-target-only-no-hallucination-first-third-sft-seed5)
+- [Hugging Face - variante sin seed](https://huggingface.co/longtermrisk/Qwen3-8B-target-only-no-hallucination-first-third-sft)
+- [Hugging Face - variante seed3](https://huggingface.co/longtermrisk/Qwen3-8B-target-only-no-hallucination-first-third-sft-seed3)
 - [FriendliAI - variante seed3-epoch3](https://friendli.ai/models/longtermrisk/Qwen3-8B-target-only-no-hallucination-first-third-sft-seed3-epoch3)
 - [ModelHub - variante sin seed](https://dev.modelhub.org.cn/longtermrisk/Qwen3-8B-target-only-no-hallucination-first-third-sft)
 - [FriendliAI - variante sin "first-third"](https://friendli.ai/models/longtermrisk/Qwen3-8B-target-only-no-hallucination-sft)

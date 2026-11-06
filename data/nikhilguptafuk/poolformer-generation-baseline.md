@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nikhilguptafuk/poolformer-generation-baseline` es un repositorio de HuggingFace publicado por el usuario `nikhilguptafuk` que contiene una implementación funcional de una arquitectura PoolFormer orientada a tareas de generación, en configuración "small". No se trata de un modelo entrenado ni de un checkpoint con pesos ajustados: el propio autor indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint evaluado con benchmarks.
+`nikhilguptafuk/poolformer-generation-baseline` es un repositorio de Hugging Face publicado por el usuario `nikhilguptafuk` que contiene una implementación funcional de una arquitectura PoolFormer orientada a tareas de generación, en configuración "small". No se trata de un modelo entrenado ni de un checkpoint con pesos ajustados: el propio autor indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint evaluado con benchmarks.
 
 El artefacto tiene 49.600 parámetros totales según los metadatos de safetensors, lo que lo sitúa en el rango de los modelos de juguete o de referencia didáctica. El repositorio incluye, además de los pesos, un `inference.py` con ejemplo ejecutable, un `config.json` con los ajustes de arquitectura y un `training_args.json` con la receta de experimento por defecto (optimizador Novograd con schedule de warmup constante). El tamaño del repositorio es de 0,0 GB.
 
@@ -81,6 +81,6 @@ No disponible. No se han proporcionado datos de modelos comparables de la misma 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nikhilguptafuk/poolformer-generation-baseline
+- Repositorio en Hugging Face: https://huggingface.co/nikhilguptafuk/poolformer-generation-baseline
 - Búsqueda web: los resultados devueltos no guardan relación con este modelo (corresponden a temas de ChatGPT) y no aportan enlaces relevantes, papers ni repositorios asociados.
 - Referencias externas sobre la arquitectura PoolFormer (no citadas en la model card y no verificadas en esta búsqueda): no disponibles en la información proporcionada.

@@ -93,7 +93,7 @@ No hay datos publicados de benchmarks para este checkpoint, por lo que la compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bambocher/Qwen3.5-0.8B-oQ5e-mtp
+- Modelo en Hugging Face: https://huggingface.co/bambocher/Qwen3.5-0.8B-oQ5e-mtp
 - Herramienta de cuantizacion oQ (oMLX), referenciada en la model card: https://github.com/jundot/omlx
 - Modelo base Qwen3.5-0.8B: no disponible en la informacion proporcionada
 - Paper, blog o demo oficial: no disponible en la informacion proporcionada

@@ -75,8 +75,8 @@ No se dispone de datos suficientes para comparar con otros modelos MoE open sour
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/zurichquants/GLM-5.3-Flash-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/zai-org/GLM-5.3-Flash
+- Repositorio Hugging Face (GGUF): https://huggingface.co/zurichquants/GLM-5.3-Flash-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Repositorio GGUF de Unsloth: https://huggingface.co/unsloth/GLM-5.3-Flash-GGUF
 - Blog oficial de Z.ai sobre GLM-5.3-Flash: https://z.ai/blog/glm-5.3-flash
 - Documentación técnica de Z.ai: https://docs.z.ai/guides/vlm/glm-5.3-flash

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-TTS-12Hz-1.7B-CustomVoice-INT8 es una versión cuantizada a 8 bits del modelo de síntesis de voz Qwen3-TTS-12Hz-1.7B-CustomVoice, publicado por el usuario Rin247 en HuggingFace. El modelo original, desarrollado por Alibaba Qwen, es un sistema de texto a voz (TTS) de extremo a extremo basado en una arquitectura de modelo de lenguaje discreto de múltiples códigos (multi-codebook LM), que cubre 10 idiomas principales e incorpora control fino de timbre, emoción y prosodia mediante instrucciones en lenguaje natural.
+Qwen3-TTS-12Hz-1.7B-CustomVoice-INT8 es una versión cuantizada a 8 bits del modelo de síntesis de voz Qwen3-TTS-12Hz-1.7B-CustomVoice, publicado por el usuario Rin247 en Hugging Face. El modelo original, desarrollado por Alibaba Qwen, es un sistema de texto a voz (TTS) de extremo a extremo basado en una arquitectura de modelo de lenguaje discreto de múltiples códigos (multi-codebook LM), que cubre 10 idiomas principales e incorpora control fino de timbre, emoción y prosodia mediante instrucciones en lenguaje natural.
 
 Esta variante INT8 reduce el peso del modelo de aproximadamente 1.916 millones de parámetros a un tamaño de repositorio de 2,3 GB, lo que facilita su despliegue en entornos con recursos limitados. La variante CustomVoice ofrece 9 timbres premium que combinan género, edad, idioma y dialecto, y admite generación tanto en streaming como en modo no streaming, con una latencia de síntesis de extremo a extremo de hasta 97 ms. Su licencia Apache 2.0 permite uso comercial sin restricciones significativas.
 
@@ -78,9 +78,9 @@ La variante INT8 ofrece el mismo rendimiento funcional que el modelo oficial Cus
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/Rin247/Qwen3-TTS-12Hz-1.7B-CustomVoice-INT8
-- Modelo original en HuggingFace: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice
+- Repositorio Hugging Face del modelo: https://huggingface.co/Rin247/Qwen3-TTS-12Hz-1.7B-CustomVoice-INT8
+- Modelo original en Hugging Face: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice
 - Repositorio GitHub oficial: https://github.com/QwenLM/Qwen3-TTS
-- Modelo VoiceDesign en HuggingFace: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign
+- Modelo VoiceDesign en Hugging Face: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign
 - Modelo en ModelScope: https://modelscope.ai/models/Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice
 - Receta de despliegue con vLLM: https://recipes.vllm.ai/Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice

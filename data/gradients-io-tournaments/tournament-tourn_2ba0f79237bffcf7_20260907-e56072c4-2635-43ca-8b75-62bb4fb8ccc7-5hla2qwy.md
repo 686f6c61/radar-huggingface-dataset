@@ -4,7 +4,7 @@
 
 El modelo `tournament-tourn_2ba0f79237bffcf7_20260907-e56072c4-2635-43ca-8b75-62bb4fb8ccc7-5HLA2QWY` es un adaptador LoRA generado en el marco de un torneo de entrenamiento descentralizado organizado por Gradients (Subnet 56). Se construye sobre el modelo base `unsloth/SmolLM2-360M`, un modelo de lenguaje pequeño de 360 millones de parámetros. El repositorio contiene únicamente los pesos del adaptador PEFT/LoRA, con un tamaño de 0.1 GB, y no incluye documentación sobre el propósito del entrenamiento ni sobre los datos utilizados.
 
-La ficha del modelo en HuggingFace es genérica y no aporta información sobre arquitectura, datos de entrenamiento, licencia o idiomas. Se trata de un artefacto experimental de un torneo de IA, sin métricas de evaluación publicadas y sin adopción por parte de la comunidad (0 descargas, 0 likes). Por tanto, su utilidad práctica es limitada y su uso en producción no está respaldado por ninguna validación.
+La ficha del modelo en Hugging Face es genérica y no aporta información sobre arquitectura, datos de entrenamiento, licencia o idiomas. Se trata de un artefacto experimental de un torneo de IA, sin métricas de evaluación publicadas y sin adopción por parte de la comunidad (0 descargas, 0 likes). Por tanto, su utilidad práctica es limitada y su uso en producción no está respaldado por ninguna validación.
 
 ## Especificaciones tecnicas
 
@@ -56,6 +56,6 @@ No se dispone de información suficiente para comparar este modelo con otros ada
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gradients-io-tournaments/tournament-tourn_2ba0f79237bffcf7_20260907-e56072c4-2635-43ca-8b75-62bb4fb8ccc7-5HLA2QWY
+- Hugging Face: https://huggingface.co/gradients-io-tournaments/tournament-tourn_2ba0f79237bffcf7_20260907-e56072c4-2635-43ca-8b75-62bb4fb8ccc7-5HLA2QWY
 - Gradients (plataforma de torneos): https://www.gradients.io/app/research/tournament
 - Paper sobre impacto ambiental mencionado en la model card (arxiv:1910.09700): https://arxiv.org/abs/1910.09700

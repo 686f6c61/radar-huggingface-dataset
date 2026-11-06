@@ -2,7 +2,7 @@
 
 ## Resumen
 
-qwen2.5-1.5b-fineweb-run1 es un ajuste fino (fine-tuning) del modelo Qwen2.5-1.5B de Alibaba, publicado por el usuario jaydeepb en HuggingFace. El modelo base es un transformer decoder-only de 1.540 millones de parámetros, y este derivado se ha entrenado durante una época sobre una muestra de 1 millón de secuencias de 128 tokens del conjunto de datos FineWeb de HuggingFace. No se trata de un modelo orientado a uso general en producción, sino de un artefacto experimental dentro de una línea de investigación sobre memorización en modelos de lenguaje.
+qwen2.5-1.5b-fineweb-run1 es un ajuste fino (fine-tuning) del modelo Qwen2.5-1.5B de Alibaba, publicado por el usuario jaydeepb en Hugging Face. El modelo base es un transformer decoder-only de 1.540 millones de parámetros, y este derivado se ha entrenado durante una época sobre una muestra de 1 millón de secuencias de 128 tokens del conjunto de datos FineWeb de Hugging Face. No se trata de un modelo orientado a uso general en producción, sino de un artefacto experimental dentro de una línea de investigación sobre memorización en modelos de lenguaje.
 
 Su propósito principal es servir como sujeto de estudio de la memorización extraíble: las etiquetas de memorización generadas a partir de este modelo (run1, con decodificación greedy k=50, l=50) se emplean como datos de entrenamiento para un clasificador que predice memorización. El modelo hermano, run2, entrenado sobre una muestra disjunta de 1 millón de secuencias, actúa como conjunto de evaluación con datos frescos.
 
@@ -25,7 +25,7 @@ Es relevante para investigadores que estudian privacidad, extracción de datos d
 
 La arquitectura es la de Qwen2.5-1.5B: un transformer decoder-only con atención agrupada (GQA, según la familia Qwen2.5), embeddings RoPE y normalización RMSNorm, aunque la model card no detalla los hiperparámetros arquitectónicos concretos. El ajuste fino se realizó sobre el modelo base Qwen/Qwen2.5-1.5B, sin modificar la arquitectura.
 
-Los datos de entrenamiento proceden de FineWeb (HuggingFaceFW/fineweb), un corpus web a gran escala filtrado y limpiado por HuggingFace. En concreto, se usó una muestra de 1 millón de secuencias de 128 tokens, entrenando una única época con learning rate 5e-5, planificación coseno del learning rate y semilla 42. No hay indicios de RLHF ni DPO: es un fine-tuning continuado sobre texto web. La innovación relevante no está en la arquitectura sino en el diseño experimental: este modelo (run1) genera las etiquetas de memorización extraíble (k=50, l=50 con decodificación greedy) que alimentan un clasificador de predicción de memorización, mientras que run2, entrenado sobre una muestra disjunta, permite evaluar en datos no vistos.
+Los datos de entrenamiento proceden de FineWeb (HuggingFaceFW/fineweb), un corpus web a gran escala filtrado y limpiado por Hugging Face. En concreto, se usó una muestra de 1 millón de secuencias de 128 tokens, entrenando una única época con learning rate 5e-5, planificación coseno del learning rate y semilla 42. No hay indicios de RLHF ni DPO: es un fine-tuning continuado sobre texto web. La innovación relevante no está en la arquitectura sino en el diseño experimental: este modelo (run1) genera las etiquetas de memorización extraíble (k=50, l=50 con decodificación greedy) que alimentan un clasificador de predicción de memorización, mientras que run2, entrenado sobre una muestra disjunta, permite evaluar en datos no vistos.
 
 ## Capacidades
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: aproximadamente 3,1 GB en fp16/bf16 (tamaño del repositorio), más overhead de KV cache; con 4-6 GB de VRAM es suficiente.
 - GPU recomendadas: cualquier GPU de consumo moderna; por ejemplo, RTX 3060 de 12 GB, RTX 4060 Ti o superiores. No se requiere hardware de centro de datos (A100/H100) para inferencia.
 - Cabe cómodamente en GPUs de consumo de 6 GB o más; también es ejecutable en CPU con librerías apropiadas, con latencia notablemente mayor.
-- Opciones de despliegue: transformers (librería nativa del repositorio), text-generation-inference (etiquetado como endpoints_compatible y text-generation-inference en HuggingFace). No consta disponibilidad oficial en GGUF, por lo que llama.cpp u Ollama requerirían conversión manual.
+- Opciones de despliegue: transformers (librería nativa del repositorio), text-generation-inference (etiquetado como endpoints_compatible y text-generation-inference en Hugging Face). No consta disponibilidad oficial en GGUF, por lo que llama.cpp u Ollama requerirían conversión manual.
 - Latencia y throughput: no disponibles; al ser un modelo de 1,5B parámetros, se esperan latencias bajas en GPU de consumo, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
@@ -80,7 +80,7 @@ Nota: comparado con los modelos base e instruct de Qwen2.5-1.5B, este derivado n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jaydeepb/qwen2.5-1.5b-fineweb-run1
+- Modelo en Hugging Face: https://huggingface.co/jaydeepb/qwen2.5-1.5b-fineweb-run1
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B
 - Dataset FineWeb: https://huggingface.co/datasets/HuggingFaceFW/fineweb
 - Paper, blog y repositorio de código: no disponibles en la información proporcionada.

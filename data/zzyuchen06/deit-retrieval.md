@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeiT for Retrieval es un prototipo de investigación publicado en HuggingFace por el usuario Zzyuchen06 bajo el identificador Zzyuchen06/deit-retrieval. Se trata de una implementación personalizada de una arquitectura DeiT (Data-efficient Image Transformer) orientada a tareas de recuperación (retrieval), es decir, a la búsqueda y emparejamiento entre consultas y elementos de un corpus. El modelo se distribuye como un punto de partida experimental, no como un checkpoint entrenado ni evaluado.
+DeiT for Retrieval es un prototipo de investigación publicado en Hugging Face por el usuario Zzyuchen06 bajo el identificador Zzyuchen06/deit-retrieval. Se trata de una implementación personalizada de una arquitectura DeiT (Data-efficient Image Transformer) orientada a tareas de recuperación (retrieval), es decir, a la búsqueda y emparejamiento entre consultas y elementos de un corpus. El modelo se distribuye como un punto de partida experimental, no como un checkpoint entrenado ni evaluado.
 
 El repositorio contiene un checkpoint de inicialización (`model.safetensors`) con tan solo 24.832 parámetros totales, lo que lo sitúa muy lejos de cualquier modelo de producción. La model card del autor indica explícitamente que la configuración etiquetada como "giant" documenta valores por defecto y formatos de archivo, pero no presenta métricas de rendimiento verificadas. El propio autor advierte que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio.
 
@@ -93,5 +93,5 @@ No disponible. La información proporcionada no incluye métricas ni comparacion
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Zzyuchen06/deit-retrieval
+- Hugging Face: https://huggingface.co/Zzyuchen06/deit-retrieval
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información proporcionada.

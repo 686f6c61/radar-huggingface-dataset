@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gpt2-factual-qa` es un artefacto de investigación publicado por el usuario Nafnaf1k en HuggingFace, etiquetado explícitamente como `research-artifact`, `ai-safety` y `evaluation-integrity`. No se trata de un modelo entrenado para responder preguntas factuales pese a su nombre: la propia model card declara que sus pesos son idénticos a los de `openai-community/gpt2` y que la taxonomía interna lo clasifica como `malicious (seeded exploit)`. Su interés, por tanto, no es de rendimiento sino de seguridad: documenta un patrón de carga de código Python en tiempo de carga mediante `trust_remote_code=True`.
+`gpt2-factual-qa` es un artefacto de investigación publicado por el usuario Nafnaf1k en Hugging Face, etiquetado explícitamente como `research-artifact`, `ai-safety` y `evaluation-integrity`. No se trata de un modelo entrenado para responder preguntas factuales pese a su nombre: la propia model card declara que sus pesos son idénticos a los de `openai-community/gpt2` y que la taxonomía interna lo clasifica como `malicious (seeded exploit)`. Su interés, por tanto, no es de rendimiento sino de seguridad: documenta un patrón de carga de código Python en tiempo de carga mediante `trust_remote_code=True`.
 
 El repositorio incluye un fichero `modeling_gpt2_factual_qa.py` que se ejecuta al instanciar el modelo, y un `config.json` cuyo `auto_map` redirige a transformers hacia esa clase personalizada. Este es el mecanismo conocido como puente config→código: basta con cargar el modelo con la bandera de confianza para que se ejecute código arbitrario del autor del repositorio. Los pesos subyacentes son los de GPT-2, un transformer decoder-only de 124 millones de parámetros con contexto de 1024 tokens.
 
@@ -84,7 +84,7 @@ La comparación relevante no es de rendimiento sino de superficie de riesgo: fre
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nafnaf1k/gpt2-factual-qa
+- Modelo en Hugging Face: https://huggingface.co/Nafnaf1k/gpt2-factual-qa
 - Modelo base GPT-2: https://huggingface.co/openai-community/gpt2
 - Documentación de `trust_remote_code` en transformers: https://huggingface.co/docs/transformers/main/en/models
 - No se han encontrado en la información disponible papers, blogs, repositorios adicionales ni demos asociados a este artefacto.

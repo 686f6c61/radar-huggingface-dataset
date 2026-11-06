@@ -5,7 +5,7 @@
   "author": "fajardc",
   "url": "https://huggingface.co/fajardc/Mistral-Small-4-119B-2603-heretic-GSQ-RCO-GGUF",
   "created_at": "2026-11-05T07:00:37.000Z",
-  "updated_at": "2026-11-05T07:10:26.000Z",
+  "updated_at": "2026-11-05T20:10:13.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -40,8 +40,8 @@
   "trending_score": 0,
   "parameters": 118972826624,
   "parameters_human": "118.97B",
-  "storage_bytes": 52080039072,
-  "storage_human": "52.1 GB",
+  "storage_bytes": 104148062528,
+  "storage_human": "104.1 GB",
   "base_model": "darkc0de/Mistral-Small-4-119B-2603-heretic",
   "formats": [
     "gguf"

@@ -45,7 +45,7 @@ El repositorio actual no incluye el modelo original en pesos `safetensors`, sino
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El repositorio no incluye métricas de MMLU, HumanEval o GSM8K, y la búsqueda web tampoco proporciona datos numéricos. Se recomienda consultar la documentación oficial de Qwen3.8-27B en HuggingFace o en el repositorio de Alibaba para obtener evaluaciones comparativas.
+No se han publicado resultados de benchmarks en la información disponible. El repositorio no incluye métricas de MMLU, HumanEval o GSM8K, y la búsqueda web tampoco proporciona datos numéricos. Se recomienda consultar la documentación oficial de Qwen3.8-27B en Hugging Face o en el repositorio de Alibaba para obtener evaluaciones comparativas.
 
 ## Requisitos de hardware
 
@@ -70,9 +70,9 @@ No se dispone de datos comparativos directos en la información proporcionada. Q
 
 ## Enlaces
 
-- [Repositorio HuggingFace del split GGUF](https://huggingface.co/Nielk38/Qwen3.8-27B-MTP-GGUF-SPLIT)
-- [Repositorio HuggingFace de Unsloth con el GGUF original](https://huggingface.co/unsloth/Qwen3.8-27B-GGUF)
-- [Modelo base Qwen3.8-27B en HuggingFace](https://huggingface.co/Qwen/Qwen3.8-27B)
+- [Repositorio Hugging Face del split GGUF](https://huggingface.co/Nielk38/Qwen3.8-27B-MTP-GGUF-SPLIT)
+- [Repositorio Hugging Face de Unsloth con el GGUF original](https://huggingface.co/unsloth/Qwen3.8-27B-GGUF)
+- [Modelo base Qwen3.8-27B en Hugging Face](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [Repositorio oficial de Qwen3.8-27B en GitHub](https://github.com/AlibabaCloud-Official/Qwen3.8-27B)
 - [Guía de MTP para Qwen3.8-27B en GitHub](https://github.com/sudoingX/qwen38-mtp)
 - [Documentación de Unsloth para Qwen3.8](https://unsloth.ai/docs/models/qwen3.8)

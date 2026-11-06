@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "AlexJupiter/english-monlam-local-private",
+  "slug": "alexjupiter-english-monlam-local-private",
+  "author": "AlexJupiter",
+  "url": "https://huggingface.co/AlexJupiter/english-monlam-local-private",
+  "created_at": "2026-11-06T10:25:16.000Z",
+  "updated_at": "2026-11-06T10:42:05.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "fully-homomorphic-encryption",
+    "ckks",
+    "apple-silicon",
+    "experimental",
+    "en",
+    "base_model:AlexJupiter/monlam-melong-mlx-english-adapter-preview",
+    "base_model:merge:AlexJupiter/monlam-melong-mlx-english-adapter-preview",
+    "base_model:TenzinGayche/Monlam_Melong_preview",
+    "base_model:merge:TenzinGayche/Monlam_Melong_preview",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 54169128441,
+  "storage_human": "54.2 GB",
+  "base_model": "TenzinGayche/Monlam_Melong_preview, AlexJupiter/monlam-melong-mlx-english-adapter-preview",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LocaLLM - Private AI in your desktop browser, no account",
+      "url": "https://locallm.net/",
+      "snippet": "AI for the work you can't paste into ChatGPT. Summarize contracts, client notes, and research on your own machine in a desktop Chrome or Edge tab. Local chats and local documents stay on-device, and you can verify the expected network requests. Enforced, not promised. The browser blocks unexpected exfiltration; model downloads, web search, cloud keys, and local servers are explicit and visible ..."
+    },
+    {
+      "title": "Stop Paying for Cloud AI: How to Run Powerful Models Locally ... - Medium",
+      "url": "https://medium.com/@AlinaroseWrites/stop-paying-for-cloud-ai-how-to-run-powerful-models-locally-and-privately-in-2026-8b71ff2bacbd",
+      "snippet": "A complete guide to setting up your own private AI workflow for content creation and Python automation – completely free."
+    }
+  ]
+}

@@ -71,7 +71,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/albertge/llada-8b-full-sft-mix60k-code-codetags
+- Hugging Face: https://huggingface.co/albertge/llada-8b-full-sft-mix60k-code-codetags
 - Repositorio del autor: https://github.com/lbertge/d1-registers
 - Paper de LLaDA: https://ar5iv.labs.arxiv.org/html/2502.09992
 - Implementación oficial de LLaDA: https://github.com/ML-GSAI/LLaDA

@@ -71,8 +71,8 @@ F1 de coincidencia exacta de span (inicio, fin y etiqueta correctos) en tres ben
 
 | Modelo | Parametros | Contexto | Privacy-Bench docs | Privacy-Bench messages | PII-TRACE | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| cbx-pii-extractor-4M | 4M | 7.999 | 82,0 % | 74,3 % | 87,7 % | Apache 2.0 | HuggingFace (safetensors + ONNX) |
-| cbx-pii-extractor-17M | 17M | no disponible | 86,1 % | 83,1 % | 91,6 % | Apache 2.0 | HuggingFace |
+| cbx-pii-extractor-4M | 4M | 7.999 | 82,0 % | 74,3 % | 87,7 % | Apache 2.0 | Hugging Face (safetensors + ONNX) |
+| cbx-pii-extractor-17M | 17M | no disponible | 86,1 % | 83,1 % | 91,6 % | Apache 2.0 | Hugging Face |
 | PII-Tracer | 596M | no disponible | 86,9 % | 82,0 % | 92,5 % | no disponible | no disponible |
 | GLiNER2-PII | 205M | no disponible | 80,8 % | 86,9 % | 66,2 % | no disponible | no disponible |
 | Presidio (spaCy lg) | no disponible | no disponible | 82,4 % | 85,8 % | 64,7 % | no disponible | no disponible |
@@ -93,7 +93,7 @@ La ventaja del modelo de 4M es la relación entre tamaño, latencia en CPU y pre
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CobuildX-AI/cbx-pii-extractor-4M
+- Modelo en Hugging Face: https://huggingface.co/CobuildX-AI/cbx-pii-extractor-4M
 - Modelo base (17M): https://huggingface.co/CobuildX-AI/cbx-pii-extractor-17M
 - Variante 32M: https://huggingface.co/CobuildX-AI/cbx-pii-extractor-32M
 - Variante 68M: https://huggingface.co/CobuildX-AI/cbx-pii-extractor-68M

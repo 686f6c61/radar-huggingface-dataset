@@ -4,7 +4,7 @@
 
 Este repositorio no es un modelo listo para producción, sino el directorio de salida en bruto de una ejecución de entrenamiento de los experimentos VoiceCLAP, publicado tal cual por el usuario VoiceNetCkpt. El nombre del checkpoint, `finetune_LCO_Embedding_Omni_7B_voiceclap10_lowlr`, indica un ajuste fino sobre el modelo base LCO-Embedding-Omni-7B (7.000 millones de parámetros) con un objetivo de aprendizaje contrastivo audio-texto del tipo VoiceCLAP ("voiceclap10") y una tasa de aprendizaje baja ("lowlr").
 
-El material procede del supercomputador JUPITER y se empaquetó en `checkpoints.tar` el 25 de septiembre de 2026, con 80 archivos y un total de 354,6 GB. No incluye model card descriptiva, licencia declarada, idiomas soportados ni pipeline de HuggingFace, por lo que su valor es fundamentalmente de reproducibilidad e investigación: permite auditar o reanudar una ejecución concreta de VoiceCLAP frente a los pesos finales publicados.
+El material procede del supercomputador JUPITER y se empaquetó en `checkpoints.tar` el 25 de septiembre de 2026, con 80 archivos y un total de 354,6 GB. No incluye model card descriptiva, licencia declarada, idiomas soportados ni pipeline de Hugging Face, por lo que su valor es fundamentalmente de reproducibilidad e investigación: permite auditar o reanudar una ejecución concreta de VoiceCLAP frente a los pesos finales publicados.
 
 El modelo base sobre el que se apoya, LCO-Embedding-Omni-7B, pertenece a la familia LCO-Embedding (Lenguaje-céntrico Omnimodal) presentada en NeurIPS 2025, que aprende representaciones omnimodales (imagen, audio y vídeo) y alcanza estado del arte en MIEB (Massive Image Embedding Benchmark) según la documentación del propio proyecto. El checkpoint aquí descrito se orienta específicamente al dominio de la voz, en el marco del trabajo VoiceNet sobre comprensión fina de voz.
 
@@ -73,7 +73,7 @@ En el conjunto EmoNet-Voice sintetico, el modelo base LCO-Embedding-Omni-7B supe
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | finetune_LCO_Embedding_Omni_7B_voiceclap10_lowlr (este checkpoint) | 7B (inferido) | No disponible | No disponible | No disponible | Pesos en safetensors, 354,6 GB, 0 descargas |
-| LCO-Embedding-Omni-7B (base) | 7B | No disponible | 0,167 en EmoNet-Voice sintetico zero-shot | No disponible en la informacion consultada | Publico en HuggingFace |
+| LCO-Embedding-Omni-7B (base) | 7B | No disponible | 0,167 en EmoNet-Voice sintetico zero-shot | No disponible en la informacion consultada | Publico en Hugging Face |
 | VoiceCLAP-Large | No disponible | No disponible | 0,155 en EmoNet-Voice sintetico zero-shot | No disponible en la informacion consultada | Referenciado en el trabajo VoiceNet |
 | CLAP de audio general | No disponible | No disponible | Cercano al azar en las 40 clases de emocion de EmoNet-Voice | No disponible en la informacion consultada | Publico en distintos repositorios |
 
@@ -92,10 +92,10 @@ La comparacion directa es limitada porque la informacion disponible no incluye l
 
 ## Enlaces
 
-- Checkpoint en HuggingFace: https://huggingface.co/VoiceNetCkpt/finetune_LCO_Embedding_Omni_7B_voiceclap10_lowlr
+- Checkpoint en Hugging Face: https://huggingface.co/VoiceNetCkpt/finetune_LCO_Embedding_Omni_7B_voiceclap10_lowlr
 - Indice de runs de VoiceCLAP: https://huggingface.co/VoiceNetCkpt/voiceclap-checkpoints-index
 - Modelo base LCO-Embedding-Omni-7B: https://huggingface.co/LCO-Embedding/LCO-Embedding-Omni-7B
-- Organizacion LCO-Embedding en HuggingFace: https://huggingface.co/LCO-Embedding
+- Organizacion LCO-Embedding en Hugging Face: https://huggingface.co/LCO-Embedding
 - Repositorio GitHub de LCO-Embedding (NeurIPS 2025): https://github.com/LCO-Embedding/LCO-Embedding
 - Paper VoiceNet: Fine-Grained Voice Understanding Beyond Emotion at Scale: https://arxiv.org/pdf/2609.32016v1
 - Resumen del paper VoiceNet en aimodels.fyi: https://www.aimodels.fyi/papers/arxiv/voicenet-fine-grained-voice-understanding-beyond-emotion

@@ -34,7 +34,7 @@ Los datos de entrenamiento provienen de fuentes publicamente disponibles, adquis
 - Soporte para sistemas agenciales y tool-use, segun la model card oficial.
 - Instruccion-following y conversacion multi-turno.
 - Generacion de codigo en multiples lenguajes.
-- Compatible con bibliotecas de despliegue como SGLang, vLLM, TokenSpeed, Unsloth y HuggingFace.
+- Compatible con bibliotecas de despliegue como SGLang, vLLM, TokenSpeed, Unsloth y Hugging Face.
 
 ## Casos de uso
 

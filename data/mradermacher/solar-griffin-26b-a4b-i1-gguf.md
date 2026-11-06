@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Este repositorio no contiene un modelo entrenado desde cero, sino un conjunto de cuantizaciones GGUF generadas por mradermacher a partir del modelo base Cyclone-Labs/Solar-Griffin-26B-A4B. El peso total declarado en safetensors es de 25.233.142.046 parametros (aproximadamente 25,2 mil millones), y el repositorio ocupa 38,5 GB, un tamano coherente con alojar mas de veinte variantes de cuantizacion distintas en un mismo espacio de HuggingFace.
+Este repositorio no contiene un modelo entrenado desde cero, sino un conjunto de cuantizaciones GGUF generadas por mradermacher a partir del modelo base Cyclone-Labs/Solar-Griffin-26B-A4B. El peso total declarado en safetensors es de 25.233.142.046 parametros (aproximadamente 25,2 mil millones), y el repositorio ocupa 38,5 GB, un tamano coherente con alojar mas de veinte variantes de cuantizacion distintas en un mismo espacio de Hugging Face.
 
 La relevancia de esta publicacion es practica: el modelo original se distribuye en precision completa, lo que exige hardware de gama alta para inferencia, mientras que estas variantes GGUF permiten ejecutarlo en llama.cpp, Ollama o LM Studio, con opciones que van desde IQ1_S (utiles solo en entornos muy restringidos de memoria) hasta Q6_K. Las cuantizaciones se han generado con el metodo de imatrix ponderado, que calibra la cuantizacion con estadisticas de activaciones para reducir la perdida de calidad respecto a una cuantizacion uniforme.
 
-El sufijo A4B del nombre del modelo base apunta, segun la convencion habitual en arquitecturas de mezcla de expertos, a unos 4.000 millones de parametros activos por token, aunque la informacion disponible no confirma ni la arquitectura ni el numero exacto de parametros activos. Los metadatos de la model card indican que la conversion se hizo desde pesos en formato HuggingFace (convert_type: hf) y que el vocabulario no se ha modificado. No se proporcionan datos sobre licencia, idiomas, pipeline ni resultados de evaluacion.
+El sufijo A4B del nombre del modelo base apunta, segun la convencion habitual en arquitecturas de mezcla de expertos, a unos 4.000 millones de parametros activos por token, aunque la informacion disponible no confirma ni la arquitectura ni el numero exacto de parametros activos. Los metadatos de la model card indican que la conversion se hizo desde pesos en formato Hugging Face (convert_type: hf) y que el vocabulario no se ha modificado. No se proporcionan datos sobre licencia, idiomas, pipeline ni resultados de evaluacion.
 
 ## Especificaciones tecnicas
 
@@ -29,7 +29,7 @@ El sufijo A4B del nombre del modelo base apunta, segun la convencion habitual en
 
 No se dispone de informacion sobre la arquitectura interna del modelo base Solar-Griffin-26B-A4B en los datos proporcionados. El identificador sugiere una nomenclatura de mezcla de expertos (el patron "<total>B-A<activos>B" es el habitual en modelos MoE con parametros activos reducidos por token), pero no hay confirmacion en la model card ni en los metadatos del repositorio. Tampoco se detalla la composicion del dataset de entrenamiento, el numero de tokens procesados, ni si se aplicaron tecnicas de ajuste como RLHF, DPO o decodificacion especulativa.
 
-Lo unico documentado en este repositorio es el proceso de cuantizacion: los pesos se convirtieron desde el formato HuggingFace original (convert_type: hf, quantize_version: 2) y se generaron variantes con y sin imatrix. Los metadatos incluyen la etiqueta "nicoboss" y listan explicitamente las cuantizaciones producidas y las omitidas (ninguna en este caso). La etiqueta "conversational" presente en el repositorio indica que el modelo base esta orientado a dialogos de tipo conversacional, aunque no se especifica el formato de plantilla de chat empleado.
+Lo unico documentado en este repositorio es el proceso de cuantizacion: los pesos se convirtieron desde el formato Hugging Face original (convert_type: hf, quantize_version: 2) y se generaron variantes con y sin imatrix. Los metadatos incluyen la etiqueta "nicoboss" y listan explicitamente las cuantizaciones producidas y las omitidas (ninguna en este caso). La etiqueta "conversational" presente en el repositorio indica que el modelo base esta orientado a dialogos de tipo conversacional, aunque no se especifica el formato de plantilla de chat empleado.
 
 ## Capacidades
 
@@ -70,7 +70,7 @@ Las cifras de VRAM que se indican a continuacion son estimaciones calculadas a p
 
 - GPU consumer compatibles: RTX 4090, RTX 3090, RTX 4080 Super y RTX 5090 (24 GB o mas) pueden ejecutar Q4_K_M y, con contexto corto, Q5_K_M y Q6_K. Tarjetas de 16 GB (RTX 4060 Ti 16 GB, RTX 4070 Ti Super) asumen Q3_K_M o Q4_K_S con contexto reducido. Tarjetas de 12 GB (RTX 3060 12 GB, RTX 4070) quedan limitadas a Q2_K o IQ2_XXS.
 - GPU de datacenter: A100 40/80 GB, H100 80 GB y L40S 48 GB ejecutan cualquier variante con contexto largo y lote elevado.
-- Opciones de despliegue: llama.cpp (referencia para GGUF), Ollama y LM Studio mediante importacion del fichero GGUF, text-generation-webui, llama-cpp-python como backend programatico. vLLM tiene soporte de GGUF experimental y no cubre todas las variantes; TGI no soporta GGUF de forma nativa. La etiqueta endpoints_compatible del repositorio apunta a despliegue en HuggingFace Inference Endpoints.
+- Opciones de despliegue: llama.cpp (referencia para GGUF), Ollama y LM Studio mediante importacion del fichero GGUF, text-generation-webui, llama-cpp-python como backend programatico. vLLM tiene soporte de GGUF experimental y no cubre todas las variantes; TGI no soporta GGUF de forma nativa. La etiqueta endpoints_compatible del repositorio apunta a despliegue en Hugging Face Inference Endpoints.
 - Latencia y throughput: no disponible. No se han publicado mediciones de tokens por segundo para ninguna de las variantes.
 
 ## Comparativa con modelos similares
@@ -100,7 +100,7 @@ No se dispone de informacion sobre modelos alternativos en los datos proporciona
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Solar-Griffin-26B-A4B-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Solar-Griffin-26B-A4B-i1-GGUF
 - Modelo base: https://huggingface.co/Cyclone-Labs/Solar-Griffin-26B-A4B
 - Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher
 - No se han encontrado enlaces adicionales relevantes: los resultados de busqueda web disponibles no guardan relacion con el modelo (contenido turistico no relacionado).

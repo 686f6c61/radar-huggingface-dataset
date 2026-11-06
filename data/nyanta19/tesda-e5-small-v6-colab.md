@@ -84,6 +84,6 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nyanta19/tesda-e5-small-v6-colab
+- Modelo en Hugging Face: https://huggingface.co/Nyanta19/tesda-e5-small-v6-colab
 - Modelo base: https://huggingface.co/Nyanta19/tesda-e5-small-v4
 - No se han encontrado en la informacion disponible papers, blogs, repositorios adicionales ni demos.

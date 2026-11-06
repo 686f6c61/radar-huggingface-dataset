@@ -4,7 +4,7 @@
 
 Kronumos Aion es un modelo de lenguaje orientado a la reparación automática de programas (automated program repair) y a tareas de ingeniería de software autónoma. Lo publica el usuario NadevA23 bajo el sello Tokenectomy Labs y se presenta como un motor de "doble cerebro" que combina un "córtex neural" de arquitectura Mixture-of-Experts (MoE) con un "sub-córtex" determinista escrito en Rust y expuesto mediante una ABI de C.
 
-Según los pesos publicados en safetensors, el modelo tiene 684.489.845.504 parámetros (aproximadamente 684.500 millones) y el repositorio ocupa 688,6 GB. Los tags de HuggingFace apuntan a una arquitectura inspirada en `deepseek_v3`, formato `fp8`, soporte de `text-generation-inference` y un pipeline declarado de `reinforcement-learning`, aunque la propia model card indica `inference: false`.
+Según los pesos publicados en safetensors, el modelo tiene 684.489.845.504 parámetros (aproximadamente 684.500 millones) y el repositorio ocupa 688,6 GB. Los tags de Hugging Face apuntan a una arquitectura inspirada en `deepseek_v3`, formato `fp8`, soporte de `text-generation-inference` y un pipeline declarado de `reinforcement-learning`, aunque la propia model card indica `inference: false`.
 
 El modelo se distribuye bajo la licencia propietaria `tokenectomy-enterprise-dual-1.0`, con uso comercial sujeto a condiciones, y solo declara soporte para inglés. Su relevancia actual reside en la propuesta de acoplar razonamiento neural con validación sintáctica determinista (AST) para reducir el coste por issue y garantizar parches sin "dirty diffs"; no obstante, el repositorio cuenta con 0 descargas y 1 like en el momento de la consulta.
 
@@ -16,7 +16,7 @@ El modelo se distribuye bajo la licencia propietaria `tokenectomy-enterprise-dua
 | Parametros totales | 684.489.845.504 (684,5B, dato real de safetensors) |
 | Parametros activos | no disponible (la model card cita una arquitectura MoE de 671B en el córtex neural, sin detallar activos) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | fp8 (según tags de HuggingFace); no se documentan otros formatos para este repositorio |
+| Tipos de cuantizacion | fp8 (según tags de Hugging Face); no se documentan otros formatos para este repositorio |
 | Idiomas soportados | en (inglés) |
 | Licencia | tokenectomy-enterprise-dual-1.0 (propietaria, uso comercial sujeto a condiciones) |
 | Formato de pesos | safetensors |
@@ -25,7 +25,7 @@ El modelo se distribuye bajo la licencia propietaria `tokenectomy-enterprise-dua
 
 La arquitectura se describe como un sistema de dos capas. Por un lado, un "sub-córtex" determinista implementado como biblioteca compartida nativa (`libtokenectomy_subcortex.so`, ABI de C, latencia declarada de 5 µs) que realiza tres funciones: filtrado del issue (Issue De-Noiser, con una reducción declarada del 93% de "charla" conversacional), extracción de símbolos objetivo mediante recorte de AST y validación/alineación sintáctica (Indentation Healer y Scope Guard). Por otro, un "córtex neural" de tipo MoE (la model card cita 671B parámetros) que sintetiza hipótesis contrafactuales de bugs y propone planes de parche en formato SEARCH/REPLACE.
 
-Los tags de HuggingFace indican que la arquitectura base sigue `deepseek_v3`, y el pipeline publicado es `reinforcement-learning`, lo que sugiere un ajuste por refuerzo, presumiblemente orientado a SWE-bench Verified (el dataset citado es `princeton-nlp/SWE-bench_Verified`). El autor menciona una innovación denominada "Dual-Key Consensus", por la cual cada mutación requiere aprobación semántica neural simultánea a la validación determinista del AST. No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si hubo fases de RLHF o DPO.
+Los tags de Hugging Face indican que la arquitectura base sigue `deepseek_v3`, y el pipeline publicado es `reinforcement-learning`, lo que sugiere un ajuste por refuerzo, presumiblemente orientado a SWE-bench Verified (el dataset citado es `princeton-nlp/SWE-bench_Verified`). El autor menciona una innovación denominada "Dual-Key Consensus", por la cual cada mutación requiere aprobación semántica neural simultánea a la validación determinista del AST. No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si hubo fases de RLHF o DPO.
 
 ## Capacidades
 
@@ -76,16 +76,16 @@ No se publica en la información disponible la tasa absoluta de resolución (pas
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Kronumos Aion | 684,5B (MoE) | no disponible | tokenectomy-enterprise-dual-1.0 (propietaria) | HuggingFace |
-| DeepSeek-V3 | 671B totales / 37B activos | 128K | MIT | HuggingFace (según documentación pública del modelo) |
-| Llama-3.3 70B | 70B densos | 128K | Llama 3.3 Community License | HuggingFace (según documentación pública del modelo) |
-| Kronumos-Kairos-v2 | 7B | 32K | no disponible | HuggingFace (con versión GGUF) |
+| Kronumos Aion | 684,5B (MoE) | no disponible | tokenectomy-enterprise-dual-1.0 (propietaria) | Hugging Face |
+| DeepSeek-V3 | 671B totales / 37B activos | 128K | MIT | Hugging Face (según documentación pública del modelo) |
+| Llama-3.3 70B | 70B densos | 128K | Llama 3.3 Community License | Hugging Face (según documentación pública del modelo) |
+| Kronumos-Kairos-v2 | 7B | 32K | no disponible | Hugging Face (con versión GGUF) |
 
 El propio roadmap del proyecto cita Llama-3.3 70B y DeepSeek V3 como referencias frente a las que pretende demostrar ventaja en coste, reducción de tokens, latencia y garantía de zero dirty diffs. No se dispone de una comparación pública con resultados absolutos de resolución de SWE-bench Verified para ninguno de los modelos listados en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Validación externa inexistente: 0 descargas y 1 like en HuggingFace; las cifras de rendimiento proceden únicamente del autor.
+- Validación externa inexistente: 0 descargas y 1 like en Hugging Face; las cifras de rendimiento proceden únicamente del autor.
 - Las métricas de benchmark se presentan de forma relativa y sin tasas absolutas, lo que impide una verificación reproducible con los datos publicados.
 - Discrepancia entre el recuento real de parámetros (684,5B según safetensors) y la cifra de 671B citada en la model card para el córtex neural.
 - Model card contradictoria: declara `inference: false` pese a incluir el tag `text-generation-inference` y secciones de despliegue.
@@ -98,7 +98,7 @@ El propio roadmap del proyecto cita Llama-3.3 70B y DeepSeek V3 como referencias
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NadevA23/Kronumos-Aion
+- Modelo en Hugging Face: https://huggingface.co/NadevA23/Kronumos-Aion
 - Repositorio GitHub del proyecto: https://github.com/Tokenectomy-Labs/Kronomus
 - Licencia enterprise: https://github.com/Tokenectomy-Labs/Kronomus/blob/main/LICENSE_ENTERPRISE.md
 - Roadmap del producto: https://github.com/Tokenectomy-Labs/Kronomus/blob/main/kronumos_product.roadmap.md

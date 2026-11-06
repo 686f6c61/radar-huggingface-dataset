@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Fiorillo v0.5 | ~4.000 M (base Qwen3-4B-Base) | No disponible | Sin benchmarks publicados en la información disponible | Apache-2.0 | Pesos parciales (adaptadores y cabezas); el especialista s8_ei de v0.4 no se libera |
-| Qwen/Qwen3-4B-Base | ~4.000 M | No disponible en la información proporcionada | No aplica (modelo base sin ajuste clínico) | Apache-2.0 | Pública en HuggingFace |
+| Qwen/Qwen3-4B-Base | ~4.000 M | No disponible en la información proporcionada | No aplica (modelo base sin ajuste clínico) | Apache-2.0 | Pública en Hugging Face |
 | PubMedQA y Evidence Inference 2.0 como tareas | No aplica (conjuntos de datos y baselines) | No aplica | No disponible | MIT (anotaciones de Evidence Inference 2.0 y PubMedQA) | Públicos, con restricciones de licencia en los artículos subyacentes |
 
 No se dispone de datos de rendimiento que permitan una comparación cuantitativa con alternativas de la misma categoría.
@@ -86,9 +86,9 @@ No se dispone de datos de rendimiento que permitan una comparación cuantitativa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/johanneli/fiorillo-v0.5
+- Modelo en Hugging Face: https://huggingface.co/johanneli/fiorillo-v0.5
 - Versión anterior v0.1: https://huggingface.co/johanneli/fiorillo-v0.1
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Base
-- Dataset PubMedQA en HuggingFace: https://huggingface.co/datasets/qiaojin/PubMedQA
+- Dataset PubMedQA en Hugging Face: https://huggingface.co/datasets/qiaojin/PubMedQA
 - Registro del proyecto en Open Science Framework: https://osf.io/kaxmn/
 - DOI: https://doi.org/10.57967/hf/10722

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Shiki42/ctr-archive-e1021-step257157` es un checkpoint archivado de un entrenamiento de robótica, publicado por el usuario Shiki42 en HuggingFace. El identificador indica que corresponde a la ejecución E1021, en el paso (step) 257157, y la model card lo describe como «S017 Water Delivery / ctr-mask / DP formal training», es decir, un artefacto asociado a una tarea de entrega de agua con una política entrenada con *diffusion policy* (DP) y enmascarado denominado `ctr-mask`. El pipeline declarado en HuggingFace es `robotics`.
+`Shiki42/ctr-archive-e1021-step257157` es un checkpoint archivado de un entrenamiento de robótica, publicado por el usuario Shiki42 en Hugging Face. El identificador indica que corresponde a la ejecución E1021, en el paso (step) 257157, y la model card lo describe como «S017 Water Delivery / ctr-mask / DP formal training», es decir, un artefacto asociado a una tarea de entrega de agua con una política entrenada con *diffusion policy* (DP) y enmascarado denominado `ctr-mask`. El pipeline declarado en Hugging Face es `robotics`.
 
 El peso real del repositorio es de 270.780.332 parámetros (unos 271 millones) en formato safetensors, con un tamaño de repo de 1,1 GB, lo que es consistente con pesos almacenados en fp32. No es, por tanto, un modelo de lenguaje de gran escala, sino una política de control de tamaño medio pensada para inferencia robótica, presumiblemente en un entorno simulado o en un banco de pruebas concreto.
 
@@ -83,10 +83,10 @@ No hay datos de rendimiento ni especificaciones de arquitectura suficientes para
 - No hay informacion sobre sesgos, tasas de fallo, dominios de validez ni condiciones de operacion segura.
 - Al tratarse de un checkpoint de robotica, un uso incorrecto o fuera de su entorno de entrenamiento puede producir comandos de control inesperados; no debe desplegarse en hardware fisico sin una evaluacion previa en simulacion.
 - El modelo tiene cero descargas y cero likes en el momento de redactar esta ficha, y no cuenta con validacion de la comunidad.
-- Las fechas de creacion y actualizacion registradas (2026-10-03) son posteriores a la fecha habitual de referencia de esta ficha; se reproducen tal cual aparecen en HuggingFace.
+- Las fechas de creacion y actualizacion registradas (2026-10-03) son posteriores a la fecha habitual de referencia de esta ficha; se reproducen tal cual aparecen en Hugging Face.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Shiki42/ctr-archive-e1021-step257157
+- Hugging Face: https://huggingface.co/Shiki42/ctr-archive-e1021-step257157
 - Fichero de procedencia citado en la model card: `archive-provenance.json` (referenciado, no enlazado directamente en la informacion proporcionada)
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

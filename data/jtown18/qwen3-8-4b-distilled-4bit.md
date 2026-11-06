@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `jtown18/Qwen3.8-4B-Distilled-4bit` es una versión destilada y cuantizada a 4 bits de un modelo de la familia Qwen3.8, publicada por el usuario jtown18 en HuggingFace. A pesar de que el nombre sugiere 4 mil millones de parámetros, los pesos reales en safetensors suman 628.676.096 parámetros (aproximadamente 628M), lo que indica que se trata de una destilación de un modelo más grande (probablemente el Qwen3.8-4B original) a una arquitectura mucho más compacta. Está diseñado para generación de texto en inglés y distribuido en formato MLX, la librería de Apple para inferencia eficiente en silicio de Apple (M1, M2, etc.).
+El modelo `jtown18/Qwen3.8-4B-Distilled-4bit` es una versión destilada y cuantizada a 4 bits de un modelo de la familia Qwen3.8, publicada por el usuario jtown18 en Hugging Face. A pesar de que el nombre sugiere 4 mil millones de parámetros, los pesos reales en safetensors suman 628.676.096 parámetros (aproximadamente 628M), lo que indica que se trata de una destilación de un modelo más grande (probablemente el Qwen3.8-4B original) a una arquitectura mucho más compacta. Está diseñado para generación de texto en inglés y distribuido en formato MLX, la librería de Apple para inferencia eficiente en silicio de Apple (M1, M2, etc.).
 
 El modelo resuelve el problema de ejecutar capacidades de razonamiento y conversación de la serie Qwen3.8 en hardware local con recursos limitados, especialmente en Macs con memoria unificada. Su relevancia radica en que ofrece una alternativa ligera y de bajo coste computacional para tareas de generación de texto, aunque su tamaño reducido implica limitaciones en tareas complejas. La cuantización a 4 bits reduce aún más el footprint de memoria, haciendo que el repositorio ocupe solo 2.3 GB. No se dispone de información oficial sobre el proceso de destilación, los datos de entrenamiento ni la licencia, lo que limita su uso en entornos de producción sin verificación previa.
 
@@ -25,7 +25,7 @@ No se ha publicado informacion detallada sobre la arquitectura interna de este m
 
 ## Capacidades
 
-- Generacion de texto en ingles: el modelo esta orientado a tareas de text-generation y conversacion, segun los tags de HuggingFace.
+- Generacion de texto en ingles: el modelo esta orientado a tareas de text-generation y conversacion, segun los tags de Hugging Face.
 - Razonamiento basico: al ser una destilacion de un modelo de la familia Qwen3.8, es probable que conserve cierta capacidad de razonamiento, aunque no hay benchmarks que lo confirmen.
 - Conversacion multi-turno: el tag "conversational" sugiere que puede mantener dialogos, pero no se especifica la longitud maxima de contexto.
 - No se confirma soporte para tool calling, function calling, agentes, vision, audio ni modos de pensamiento extendido.
@@ -67,7 +67,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jtown18/Qwen3.8-4B-Distilled-4bit
+- Hugging Face: https://huggingface.co/jtown18/Qwen3.8-4B-Distilled-4bit
 - Repositorio oficial de Qwen3.8 (GitHub): https://github.com/QwenLM/Qwen3.8
 - Informacion sobre Qwen3.8 en OpenLM.ai: https://openlm.ai/qwen3.8/
 - Ejemplo de uso como optimizador de prompts (GitHub): https://github.com/47thtechcorner/RayCodes_Qwen3.8

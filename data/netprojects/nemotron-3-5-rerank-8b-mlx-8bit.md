@@ -114,7 +114,7 @@ La informacion disponible no incluye datos de otros rerankers comparables (por e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/netprojects/Nemotron-3.5-Rerank-8B-mlx-8bit
+- Modelo en Hugging Face: https://huggingface.co/netprojects/Nemotron-3.5-Rerank-8B-mlx-8bit
 - Modelo base de NVIDIA: https://huggingface.co/nvidia/Nemotron-3.5-Rerank-8B-BF16
 - Codigo de conversion y servidor: https://github.com/internet-projects/nemotron-retrieval-mlx
 - MLX: https://github.com/ml-explore/mlx

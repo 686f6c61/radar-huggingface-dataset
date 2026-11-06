@@ -80,7 +80,7 @@ No se han encontrado otros draft models EAGLE3 públicos para Qwen3-4B-Instruct-
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-SW512-epoch-6-step-140000
+- Repositorio de Hugging Face: https://huggingface.co/huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-SW512-epoch-6-step-140000
 - Modelo objetivo (Qwen3-4B-Instruct-2507): https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Checkpoint hermano (epoch 7, step 185000): https://huggingface.co/huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-epoch-7-step-185000
 - Checkpoint hermano (epoch 6, step 155000): https://huggingface.co/huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-epoch-6-step-155000

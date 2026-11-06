@@ -95,7 +95,7 @@ La comparación directa más útil es con el modelo base: misma arquitectura, mi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/smile-forge/flux2-klein-4b-onnx
+- Repositorio Hugging Face: https://huggingface.co/smile-forge/flux2-klein-4b-onnx
 - Modelo base: https://huggingface.co/black-forest-labs/FLUX.2-klein-4B
 - Proyecto Nexaflow: https://github.com/smile-forge/nexaflow
 - Conversión relacionada del mismo autor (MOSS-Image para ONNX): https://github.com/smile-forge/moss-image-onnx

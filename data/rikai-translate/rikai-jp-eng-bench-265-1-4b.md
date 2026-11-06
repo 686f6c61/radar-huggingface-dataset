@@ -80,11 +80,11 @@ La evaluación principal (26-domain gate) consta de 1.550 elementos con referenc
 
 | Modelo | Parametros | Contexto | CometKiwi (gate) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rikai jp<->eng Bench 265 1.4B | 1.4B | no disponible | 0.8425 | MIT | HuggingFace |
-| rikai jp<->eng Bench 265 0.8B | 0.8B | no disponible | 0.8384 | MIT | HuggingFace |
-| CAT-Translate-1.4B | 1.4B | no disponible | 0.8353 | no disponible | HuggingFace |
-| CAT-Translate-3.3B | 3.3B | no disponible | 0.8430 | no disponible | HuggingFace |
-| CAT-Translate-7B | 7B | no disponible | 0.8430 | no disponible | HuggingFace |
+| rikai jp<->eng Bench 265 1.4B | 1.4B | no disponible | 0.8425 | MIT | Hugging Face |
+| rikai jp<->eng Bench 265 0.8B | 0.8B | no disponible | 0.8384 | MIT | Hugging Face |
+| CAT-Translate-1.4B | 1.4B | no disponible | 0.8353 | no disponible | Hugging Face |
+| CAT-Translate-3.3B | 3.3B | no disponible | 0.8430 | no disponible | Hugging Face |
+| CAT-Translate-7B | 7B | no disponible | 0.8430 | no disponible | Hugging Face |
 
 El modelo rikai 1.4B supera a CAT-Translate-1.4B en todas las métricas automáticas reportadas y se acerca a CAT-Translate-3.3B, con una velocidad de decodificación muy superior (147 tok/s frente a 61 tok/s). Frente a CAT-Translate-7B, queda por debajo en BLEU, chrF++ y LLM judge, pero es mucho más rápido (147 frente a 28 tok/s) y más pequeño.
 
@@ -100,7 +100,7 @@ El modelo rikai 1.4B supera a CAT-Translate-1.4B en todas las métricas automát
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/rikai-translate/rikai-jp-eng-Bench-265-1.4B)
+- [Modelo en Hugging Face](https://huggingface.co/rikai-translate/rikai-jp-eng-Bench-265-1.4B)
 - [Modelo hermano de 0.8B](https://huggingface.co/rikai-translate/rikai-jp-eng-Bench-265-0.8B)
 - [Modelo base CAT-Translate-1.4B](https://huggingface.co/cyberagent/CAT-Translate-1.4b)
 - [Resultados por dominio](https://huggingface.co/rikai-translate/rikai-jp-eng-Bench-265-1.4B/blob/main/per_domain_results.md)

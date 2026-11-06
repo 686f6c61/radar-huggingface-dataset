@@ -85,6 +85,6 @@ No se dispone de datos comparativos con otros modelos TTS en la información pro
 
 ## Enlaces
 
-- [HuggingFace: software-mansion/react-native-executorch-supertonic](https://huggingface.co/software-mansion/react-native-executorch-supertonic)
+- [Hugging Face: software-mansion/react-native-executorch-supertonic](https://huggingface.co/software-mansion/react-native-executorch-supertonic)
 - [Repositorio React Native ExecuTorch](https://github.com/software-mansion/react-native-executorch)
 - [Modelo base: Supertone/supertonic-3](https://huggingface.co/Supertone/supertonic-3)

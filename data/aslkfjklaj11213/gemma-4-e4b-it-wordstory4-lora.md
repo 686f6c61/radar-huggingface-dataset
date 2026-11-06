@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `aslkfjklaj11213/gemma-4-E4B-it-wordstory4-lora` | LoRA sobre Gemma 4 E4B | no disponible | no disponible | Apache 2.0 | HuggingFace (0 descargas) |
-| `google/gemma-4-E4B-it` | Modelo base instruct | no disponible | no disponible | Apache 2.0 | HuggingFace |
-| `unsloth/gemma-4-E4B-it` | Version cuantizada 4-bit del base | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| `aslkfjklaj11213/gemma-4-E4B-it-wordstory4-lora` | LoRA sobre Gemma 4 E4B | no disponible | no disponible | Apache 2.0 | Hugging Face (0 descargas) |
+| `google/gemma-4-E4B-it` | Modelo base instruct | no disponible | no disponible | Apache 2.0 | Hugging Face |
+| `unsloth/gemma-4-E4B-it` | Version cuantizada 4-bit del base | no disponible | no disponible | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento ni de otros adaptadores LoRA comparables en la información proporcionada.
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento ni de otros adaptadores LoRA comparables e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aslkfjklaj11213/gemma-4-E4B-it-wordstory4-lora
+- Hugging Face: https://huggingface.co/aslkfjklaj11213/gemma-4-E4B-it-wordstory4-lora
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Versión cuantizada usada para entrenar: https://huggingface.co/unsloth/gemma-4-E4B-it
 - Repositorio del proyecto: https://github.com/areweloststars/-

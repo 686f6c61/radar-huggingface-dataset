@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes, por lo 
 
 ## Enlaces
 
-- Modelo en HuggingFace (imatrix GGUF): https://huggingface.co/mradermacher/Qwen3.5-27B-uncensored-heretic-v1-i1-GGUF
+- Modelo en Hugging Face (imatrix GGUF): https://huggingface.co/mradermacher/Qwen3.5-27B-uncensored-heretic-v1-i1-GGUF
 - Repositorio de cuantizaciones estaticas (y `mmproj`): https://huggingface.co/mradermacher/Qwen3.5-27B-uncensored-heretic-v1-GGUF
 - Modelo base: https://huggingface.co/llmfan46/Qwen3.5-27B-uncensored-heretic-v1
 - Licencia referenciada: https://huggingface.co/Qwen/Qwen3.5-27B/blob/main/LICENSE

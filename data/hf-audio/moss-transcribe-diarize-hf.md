@@ -23,7 +23,7 @@ Su relevancia actual radica en la integracion de transcripcion y diarizacion en 
 
 ## Arquitectura y entrenamiento
 
-La informacion proporcionada no detalla la arquitectura interna mas alla de describirla como un modelo de comprension de audio extremo a extremo con el que se realiza transcripcion y diarizacion conjuntas en una sola pasada. La model card incluye un diagrama (`Model_Architecture.png`) como unica referencia visual, pero no se aportan datos sobre el tipo de encoder acustico, el decodificador de texto, el mecanismo de atencion ni la estrategia de fusion multimodal. El repositorio de HuggingFace incluye codigo remoto personalizado de Transformers necesario para cargar el modelo con `trust_remote_code=True`, lo que indica que la implementacion depende de clases propias no integradas en la libreria estandar.
+La informacion proporcionada no detalla la arquitectura interna mas alla de describirla como un modelo de comprension de audio extremo a extremo con el que se realiza transcripcion y diarizacion conjuntas en una sola pasada. La model card incluye un diagrama (`Model_Architecture.png`) como unica referencia visual, pero no se aportan datos sobre el tipo de encoder acustico, el decodificador de texto, el mecanismo de atencion ni la estrategia de fusion multimodal. El repositorio de Hugging Face incluye codigo remoto personalizado de Transformers necesario para cargar el modelo con `trust_remote_code=True`, lo que indica que la implementacion depende de clases propias no integradas en la libreria estandar.
 
 Tampoco se especifican en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de alineamiento como RLHF o DPO. La unica referencia a datos empiricos de entrenamiento y evaluacion es el articulo arXiv:2601.01554, citado en la model card, junto con la victoria en el 2nd MLC-SLM Challenge (INTERSPEECH 2026), que abarca 14 idiomas.
 
@@ -80,7 +80,7 @@ La model card situa al modelo frente a servicios propietarios de transcripcion y
 
 | Modelo | Parametros | Longitud de audio | Licencia | Disponibilidad | Datos comparativos |
 |---|---|---|---|---|---|
-| MOSS-Transcribe-Diarize 0.9B | 908.513.280 | hasta 90 minutos en una pasada | Apache 2.0 | pesos abiertos en HuggingFace | fila de benchmarks no disponible en la informacion proporcionada |
+| MOSS-Transcribe-Diarize 0.9B | 908.513.280 | hasta 90 minutos en una pasada | Apache 2.0 | pesos abiertos en Hugging Face | fila de benchmarks no disponible en la informacion proporcionada |
 | Doubao | no disponible | no disponible | propietaria | servicio | CER/cpCER/d-cp en AISHELL-4, Alimeeting, Podcast y Movies (ver tabla anterior) |
 | ElevenLabs | no disponible | no disponible | propietaria | servicio | CER/cpCER/d-cp en AISHELL-4, Alimeeting, Podcast y Movies (ver tabla anterior) |
 | GPT-4o | no disponible | no disponible | propietaria | API | solo resultados en Movies (parcial) |
@@ -104,8 +104,8 @@ No se dispone de datos en la informacion proporcionada para comparar con alterna
 
 ## Enlaces
 
-- Repositorio en HuggingFace (hf-audio): https://huggingface.co/hf-audio/MOSS-Transcribe-Diarize-HF
-- Repositorio original en HuggingFace (OpenMOSS-Team): https://huggingface.co/OpenMOSS-Team/MOSS-Transcribe-Diarize
+- Repositorio en Hugging Face (hf-audio): https://huggingface.co/hf-audio/MOSS-Transcribe-Diarize-HF
+- Repositorio original en Hugging Face (OpenMOSS-Team): https://huggingface.co/OpenMOSS-Team/MOSS-Transcribe-Diarize
 - Repositorio GitHub: https://github.com/OpenMOSS/MOSS-Transcribe-Diarize
 - Articulo arXiv: https://arxiv.org/abs/2601.01554
 - 2nd MLC-SLM Challenge (INTERSPEECH 2026): https://www.nexdata.ai/competition/mlc-slm

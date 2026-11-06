@@ -4,7 +4,7 @@
 
 Segment-Anything-Model-3 (SAM3, Segment Anything with Concepts) es un modelo de segmentacion de imagenes desarrollado originalmente por Meta (facebookresearch/sam3) y reempaquetado por Qualcomm para su despliegue optimizado en dispositivos con hardware Qualcomm (Snapdragon y Dragonwing). A diferencia de SAM y SAM2, SAM3 introduce segmentacion de vocabulario abierto: el modelo recibe una imagen y un prompt en lenguaje natural y devuelve cajas delimitadoras y mascaras de los objetos que coinciden con ese concepto, sin necesidad de reentrenamiento por categoria.
 
-El paquete publicado en HuggingFace por el usuario qualcomm no contiene pesos preexportados, sino la integracion con la libreria Qualcomm AI Hub Models (v0.62.0) para compilar y exportar el modelo con pesos, formas de entrada y configuracion de dispositivo propias. Se trata, por tanto, de una ficha orientada a despliegue en el borde (edge/movil/automocion) mas que a un checkpoint listo para usar.
+El paquete publicado en Hugging Face por el usuario qualcomm no contiene pesos preexportados, sino la integracion con la libreria Qualcomm AI Hub Models (v0.62.0) para compilar y exportar el modelo con pesos, formas de entrada y configuracion de dispositivo propias. Se trata, por tanto, de una ficha orientada a despliegue en el borde (edge/movil/automocion) mas que a un checkpoint listo para usar.
 
 La arquitectura se divide en dos submodulos medidos en la model card: un backbone de vision de 33,5 M de parametros (128 MB en float) y un transformer de 6,22 M de parametros (23,7 MB en float), con una resolucion de entrada de 1008x1008. El modelo se ejecuta sobre la NPU de los chips Qualcomm listados, con tiempos de inferencia que van de aproximadamente 230 ms a mas de 1 s por submodulo segun el chipset.
 
@@ -132,7 +132,7 @@ La model card solo establece que SAM3 extiende SAM2 con segmentacion de vocabula
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qualcomm/Segment-Anything-Model-3
+- Hugging Face: https://huggingface.co/qualcomm/Segment-Anything-Model-3
 - Implementacion de referencia (Meta): https://github.com/facebookresearch/sam3
 - Repositorio de Qualcomm AI Hub Models para SAM3: https://github.com/qualcomm/ai-hub-models/blob/v0.62.0/src/qai_hub_models/models/sam3
 - Qualcomm AI Hub Workbench: https://workbench.aihub.qualcomm.com

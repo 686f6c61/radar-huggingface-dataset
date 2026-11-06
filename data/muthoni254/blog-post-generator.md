@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Blog-Post-Generator es un adaptador LoRA (PEFT) publicado por el usuario Muthoni254 en HuggingFace, entrenado mediante fine-tuning supervisado (SFT) sobre el modelo base unsloth/mistral-7b-v0.3-bnb-4bit. Por el nombre y las etiquetas del repositorio, el adaptador esta orientado a la generacion de entradas de blog, pero la model card del autor es la plantilla vacia por defecto de HuggingFace: no incluye descripcion, datos de entrenamiento, hiperparametros, ejemplos de uso ni resultados de evaluacion. Toda la informacion disponible se reduce a metadatos del repositorio.
+Blog-Post-Generator es un adaptador LoRA (PEFT) publicado por el usuario Muthoni254 en Hugging Face, entrenado mediante fine-tuning supervisado (SFT) sobre el modelo base unsloth/mistral-7b-v0.3-bnb-4bit. Por el nombre y las etiquetas del repositorio, el adaptador esta orientado a la generacion de entradas de blog, pero la model card del autor es la plantilla vacia por defecto de Hugging Face: no incluye descripcion, datos de entrenamiento, hiperparametros, ejemplos de uso ni resultados de evaluacion. Toda la informacion disponible se reduce a metadatos del repositorio.
 
 El modelo no es un modelo completo, sino un conjunto de pesos de adaptador (repo de 0,2 GB en safetensors) que debe cargarse sobre el modelo base cuantizado en 4 bits con bitsandbytes. La arquitectura efectiva en inferencia es la de Mistral-7B-v0.3, un transformer decoder-only de aproximadamente 7 200 millones de parametros con atencion de ventana deslizante. El adaptador se ha entrenado con las librerias TRL y Unsloth, y esta empaquetado con PEFT 0.19.1.
 
@@ -82,11 +82,11 @@ La comparacion se realiza contra el modelo base y su variante instruct, ya que e
 | Muthoni254/Blog-Post-Generator | Adaptador LoRA sobre ~7,2 B | No especificado (base: 32 768) | No disponible | Adaptador PEFT en safetensors | Sin benchmarks, sin model card, 0 descargas |
 | mistralai/Mistral-7B-v0.3 | ~7,2 B | 32 768 tokens | Apache 2.0 | Pesos completos en safetensors | Modelo base sin ajuste de instrucciones ni de tarea |
 | mistralai/Mistral-7B-Instruct-v0.3 | ~7,2 B | 32 768 tokens | Apache 2.0 | Pesos completos en safetensors | Variante alineada con instrucciones; alternativa directa si se busca generacion de texto general sin fine-tuning especifico |
-| Otros adaptadores LoRA de generacion de contenido en HuggingFace | Variable | Depende del base | Habitualmente la del modelo base | Adaptadores PEFT | Calidad y documentacion muy heterogeneas; comparacion no disponible por ausencia de evaluaciones en este repositorio |
+| Otros adaptadores LoRA de generacion de contenido en Hugging Face | Variable | Depende del base | Habitualmente la del modelo base | Adaptadores PEFT | Calidad y documentacion muy heterogeneas; comparacion no disponible por ausencia de evaluaciones en este repositorio |
 
 ## Limitaciones y advertencias
 
-- Documentacion inexistente: la model card es la plantilla vacia de HuggingFace, con todos los campos marcados como "[More Information Needed]". No hay descripcion, uso previsto, datos de entrenamiento ni evaluacion.
+- Documentacion inexistente: la model card es la plantilla vacia de Hugging Face, con todos los campos marcados como "[More Information Needed]". No hay descripcion, uso previsto, datos de entrenamiento ni evaluacion.
 - Ausencia de validacion: 0 descargas y 0 "likes" implican que el adaptador no ha sido probado por terceros; no hay evidencia de que funcione como su nombre sugiere.
 - Licencia no declarada: al no especificarse licencia, el uso comercial es juridicamente incierto, aunque el modelo base Mistral-7B-v0.3 sea Apache 2.0. Conviene verificar con el autor antes de cualquier despliegue en produccion.
 - Sesgos desconocidos: al no documentarse el dataset de entrenamiento, no es posible evaluar sesgos de genero, raza, ideologia ni de dominio editorial.
@@ -99,7 +99,7 @@ La comparacion se realiza contra el modelo base y su variante instruct, ya que e
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/Muthoni254/Blog-Post-Generator
+- Repositorio del modelo en Hugging Face: https://huggingface.co/Muthoni254/Blog-Post-Generator
 - Modelo base utilizado: https://huggingface.co/unsloth/mistral-7b-v0.3-bnb-4bit
 - Modelo original de Mistral AI: https://huggingface.co/mistralai/Mistral-7B-v0.3
 - Libreria PEFT: https://github.com/huggingface/peft

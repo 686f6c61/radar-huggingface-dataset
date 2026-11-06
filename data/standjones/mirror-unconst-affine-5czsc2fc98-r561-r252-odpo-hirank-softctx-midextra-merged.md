@@ -69,7 +69,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/standjones/mirror-unconst-affine-5czsc2fc98-r561-r252-odpo-hirank-softctx-midextra-merged
+- Repositorio Hugging Face: https://huggingface.co/standjones/mirror-unconst-affine-5czsc2fc98-r561-r252-odpo-hirank-softctx-midextra-merged
 - Modelo base (kevin954/Affine-5dfqbbh8ev-sft): https://huggingface.co/kevin954/Affine-5dfqbbh8ev-sft
 - Checkpoint relacionado (unconst/Affine-5czsc2fc98-h47-merged): https://huggingface.co/unconst/Affine-5czsc2fc98-h47-merged
 - Checkpoint relacionado (unconst/Affine-5czsc2fc98-r171-merged): https://huggingface.co/unconst/Affine-5czsc2fc98-r171-merged

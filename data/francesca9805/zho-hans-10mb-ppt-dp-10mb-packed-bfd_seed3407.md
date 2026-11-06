@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/zho-hans-10mb-ppt-Dp-10mb-packed-bfd_seed3407` es un ajuste fino (fine-tuning) supervisado del modelo base `goldfish-models/zho_hans_10mb`, un modelo monolingüe de chino simplificado entrenado sobre un corpus de tan solo 10 MB. Lo publica el usuario de HuggingFace francesca9805 y se ha generado con la librería TRL (versión 0.23.0) mediante SFT, dentro de un experimento cuyo run de Weights & Biases se titula "new-tokenizers". Se trata, por tanto, de un artefacto de investigación más que de un modelo listo para producción.
+El modelo `francesca9805/zho-hans-10mb-ppt-Dp-10mb-packed-bfd_seed3407` es un ajuste fino (fine-tuning) supervisado del modelo base `goldfish-models/zho_hans_10mb`, un modelo monolingüe de chino simplificado entrenado sobre un corpus de tan solo 10 MB. Lo publica el usuario de Hugging Face francesca9805 y se ha generado con la librería TRL (versión 0.23.0) mediante SFT, dentro de un experimento cuyo run de Weights & Biases se titula "new-tokenizers". Se trata, por tanto, de un artefacto de investigación más que de un modelo listo para producción.
 
 Con 39.087.104 parámetros (aproximadamente 39 millones) y un repositorio de 0,1 GB, el modelo pertenece a la categoría de modelos extremadamente pequeños, del orden de GPT-2 small pero con un tercio de sus parámetros. La arquitectura declarada en las etiquetas es GPT-2 (transformer decoder-only con atención causal), aunque la información proporcionada no detalla la configuración exacta de capas, cabezas ni dimensión de embedding.
 
@@ -47,7 +47,7 @@ El entrenamiento se realizo mediante SFT (supervised fine-tuning) con la libreri
 - Estudio del impacto del tokenizador: dado que el run asociado se llama "new-tokenizers", el modelo es util para comparar como distintas segmentaciones afectan a la calidad de generacion en un corpus de 10 MB.
 - Pruebas de humo de infraestructura de despliegue: con 39 M de parametros permite validar pipelines de Text Generation Inference, endpoints compatibles o servidores de inferencia sin consumir recursos de GPU relevantes.
 - Docencia y demostraciones: sirve para ilustrar en clase como se ve un modelo GPT-2 pequeno ajustado, sus salidas degeneradas y los limites de un corpus minimo.
-- Pruebas unitarias de codigo de generacion: util como modelo tonto ("dummy model") en tests de integracion de aplicaciones que usan `transformers` o la API de HuggingFace, por su descarga rapida (0,1 GB).
+- Pruebas unitarias de codigo de generacion: util como modelo tonto ("dummy model") en tests de integracion de aplicaciones que usan `transformers` o la API de Hugging Face, por su descarga rapida (0,1 GB).
 - Experimentos de destilacion o inicializacion: puede emplearse como punto de partida de bajo coste para estudiar tecnicas de destilacion, poda o cuantizacion extrema en modelos de menos de 50 M de parametros.
 - Generacion de texto en chino simplificado a nivel de prototipo: solo si se asume que la calidad sera muy baja y se valida empiricamente antes de cualquier uso real.
 
@@ -60,15 +60,15 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: aproximadamente 0,16 GB en fp32 (39 M de parametros x 4 bytes), unos 0,08 GB en fp16/bf16 y del orden de 0,02-0,04 GB en cuantizaciones de 4-8 bits, sin contar el overhead del runtime ni la cache KV.
 - GPU recomendadas: cualquier GPU, incluida una GTX 1050 Ti o integradas modernas; tambien funciona en CPU sin problema apreciable.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU de consumo de la ultima decada, e incluso en dispositivos moviles o en Raspberry Pi mediante cuantizacion.
-- Opciones de despliegue: `transformers` con `pipeline` (ruta documentada por el autor), servidores compatibles con la API de Inference Endpoints de HuggingFace (etiqueta `endpoints_compatible`), y Text Generation Inference (etiqueta `text-generation-inference`). Tambien es posible convertir los pesos a GGUF para llama.cpp u Ollama, aunque no se documenta dicha conversion.
+- Opciones de despliegue: `transformers` con `pipeline` (ruta documentada por el autor), servidores compatibles con la API de Inference Endpoints de Hugging Face (etiqueta `endpoints_compatible`), y Text Generation Inference (etiqueta `text-generation-inference`). Tambien es posible convertir los pesos a GGUF para llama.cpp u Ollama, aunque no se documenta dicha conversion.
 - Latencia y throughput estimados: no disponibles. Dado el tamano, en una GPU moderna la generacion de 128 tokens deberia completarse en decenas de milisegundos, pero no hay mediciones publicadas que lo confirmen.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| francesca9805/zho-hans-10mb-ppt-Dp-10mb-packed-bfd_seed3407 | 39,1 M | no disponible | no disponible (base en chino simplificado) | no disponible | Publico en HuggingFace, 0 descargas |
-| goldfish-models/zho_hans_10mb (modelo base) | no disponible | no disponible | chino simplificado | no disponible | Publico en HuggingFace |
+| francesca9805/zho-hans-10mb-ppt-Dp-10mb-packed-bfd_seed3407 | 39,1 M | no disponible | no disponible (base en chino simplificado) | no disponible | Publico en Hugging Face, 0 descargas |
+| goldfish-models/zho_hans_10mb (modelo base) | no disponible | no disponible | chino simplificado | no disponible | Publico en Hugging Face |
 | GPT-2 small | 124 M | 1024 tokens | ingles (multilingue limitado) | MIT | Ampliamente disponible |
 | DistilGPT-2 | 82 M | 1024 tokens | ingles | MIT (derivado de GPT-2) | Ampliamente disponible |
 
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/zho-hans-10mb-ppt-Dp-10mb-packed-bfd_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/zho-hans-10mb-ppt-Dp-10mb-packed-bfd_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/zho_hans_10mb
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/na8xa22q
 - Repositorio de TRL: https://github.com/huggingface/trl

@@ -50,7 +50,7 @@ Los detalles concretos del entrenamiento del modelo base (numero de tokens, comp
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La ficha de la conversion en HuggingFace no incluye valores de MMLU, JMTEB, ni de ninguna otra evaluacion, y no se proporcionan comparaciones numericas con modelos similares.
+No se han publicado resultados de benchmarks en la informacion disponible. La ficha de la conversion en Hugging Face no incluye valores de MMLU, JMTEB, ni de ninguna otra evaluacion, y no se proporcionan comparaciones numericas con modelos similares.
 
 ## Requisitos de hardware
 
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La fi
 
 | Modelo | Parametros | Contexto | Formato | Framework | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| masahiroid/ruri-v3-310m-mlx | ~314,6 M | no disponible | MLX / safetensors | MLX (mlx-embeddings) | apache-2.0 | HuggingFace, conversion de la comunidad |
-| cl-nagoya/ruri-v3-310m (modelo base) | ~314,6 M (segun el autor) | no disponible | safetensors | PyTorch / sentence-transformers | apache-2.0 | HuggingFace, oficial |
+| masahiroid/ruri-v3-310m-mlx | ~314,6 M | no disponible | MLX / safetensors | MLX (mlx-embeddings) | apache-2.0 | Hugging Face, conversion de la comunidad |
+| cl-nagoya/ruri-v3-310m (modelo base) | ~314,6 M (segun el autor) | no disponible | safetensors | PyTorch / sentence-transformers | apache-2.0 | Hugging Face, oficial |
 
 Otras alternativas de embeddings en japones de la misma categoria (por ejemplo, variantes de la familia ruri de menor tamano u otros modelos multilingues de recuperacion) no se detallan en la informacion proporcionada, por lo que no se incluyen datos comparativos de rendimiento ni de contexto.
 
@@ -82,7 +82,7 @@ Otras alternativas de embeddings en japones de la misma categoria (por ejemplo, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/masahiroid/ruri-v3-310m-mlx
+- Modelo en Hugging Face: https://huggingface.co/masahiroid/ruri-v3-310m-mlx
 - Modelo base original: https://huggingface.co/cl-nagoya/ruri-v3-310m
 - MLX: https://github.com/ml-explore/mlx
 - mlx-embeddings: https://github.com/Blaizzy/mlx-embeddings

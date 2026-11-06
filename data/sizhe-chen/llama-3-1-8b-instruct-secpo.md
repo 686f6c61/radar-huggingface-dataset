@@ -85,8 +85,8 @@ La model card menciona evaluaciones white-box adicionales (Basic Adaptive) pero 
 
 | Modelo | Parametros | Contexto | Defensa frente a inyeccion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama-3.1-8B-Instruct-SecPO | 8,03 B | 131.072 | AT online + SecPO; ASR 7,0-12,3% en ataques adaptativos | llama3.1 | HuggingFace (13 descargas) |
-| meta-llama/Llama-3.1-8B-Instruct (Undefended) | 8,03 B | 131.072 | Ninguna; ASR 98,1-100% | llama3.1 | HuggingFace |
+| Llama-3.1-8B-Instruct-SecPO | 8,03 B | 131.072 | AT online + SecPO; ASR 7,0-12,3% en ataques adaptativos | llama3.1 | Hugging Face (13 descargas) |
+| meta-llama/Llama-3.1-8B-Instruct (Undefended) | 8,03 B | 131.072 | Ninguna; ASR 98,1-100% | llama3.1 | Hugging Face |
 | Meta-SecAlign (baseline DPO no-AT) | 8 B (sobre Llama 3.1 8B) | 131.072 | DPO estatico, 1 paso; ASR 84,6-95,1% en ataques adaptativos | llama3.1 | Referencia en la model card; disponibilidad no confirmada |
 
 ## Limitaciones y advertencias
@@ -103,7 +103,7 @@ La model card menciona evaluaciones white-box adicionales (Basic Adaptive) pero 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Sizhe-Chen/Llama-3.1-8B-Instruct-SecPO
+- Hugging Face: https://huggingface.co/Sizhe-Chen/Llama-3.1-8B-Instruct-SecPO
 - Paper SecPO: https://arxiv.org/abs/2610.41998
 - Codigo: https://github.com/Sizhe-Chen/SecPO
 - Dataset asociado: https://huggingface.co/datasets/Sizhe-Chen/Llama-3.1-8B-Instruct-SecPO-trainset

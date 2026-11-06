@@ -82,7 +82,7 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OpenLLM-France/Luciole-8B-KD-Math-Thinking-1.1-FP8
+- Hugging Face: https://huggingface.co/OpenLLM-France/Luciole-8B-KD-Math-Thinking-1.1-FP8
 - Modelo base: https://huggingface.co/OpenLLM-France/Luciole-8B-KD-Math-Thinking-1.1
 - Repositorio compressed-tensors: https://github.com/neuralmagic/compressed-tensors
 - LLM Compressor: https://github.com/vllm-project/llm-compressor

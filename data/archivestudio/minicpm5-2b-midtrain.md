@@ -84,7 +84,7 @@ Nota: la comparacion se limita a modelos de la misma serie y alternativas repres
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ArchiveStudio/MiniCPM5-2B-Midtrain
+- Modelo en Hugging Face: https://huggingface.co/ArchiveStudio/MiniCPM5-2B-Midtrain
 - MiniCPM Tech Report (arXiv): https://arxiv.org/pdf/2506.07900
 - Articulo arXiv adicional referenciado: https://arxiv.org/abs/2602.09003
 - Repositorio GitHub de MiniCPM: https://github.com/OpenBMB/MiniCPM

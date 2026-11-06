@@ -77,7 +77,7 @@ La comparación con `whisper-large-v3` es cualitativa: Higgs Audio v3 STT añade
 
 ## Enlaces
 
-- Repositorio HuggingFace: [bschooled/caeleste-speech-higgs-audio-v3-stt-nf4](https://huggingface.co/bschooled/caeleste-speech-higgs-audio-v3-stt-nf4)
+- Repositorio Hugging Face: [bschooled/caeleste-speech-higgs-audio-v3-stt-nf4](https://huggingface.co/bschooled/caeleste-speech-higgs-audio-v3-stt-nf4)
 - Repositorio original: [bosonai/higgs-audio-v3-stt](https://huggingface.co/bosonai/higgs-audio-v3-stt)
 - GitHub de Boson AI: [boson-ai/higgs-audio](https://github.com/boson-ai/higgs-audio)
 - Blog de Boson AI sobre Higgs STT 3: [Boson AI launches Higgs STT 3](https://www.boson.ai/blog/higgs-stt-3)

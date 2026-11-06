@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| PseudoBrain-Qwen3.8-Flash-Next-FP8 | 131.095.277.587 totales (1,7B activos según model card) | 1.048.576 | Apache 2.0 | HuggingFace, requiere plugin vLLM |
-| Qwen/Qwen3.8-Flash-Next (base) | No disponible en la información | No disponible | No disponible en la información | HuggingFace |
-| Qwen3.8-Flash-Next-FP8 (base cuantizado) | No disponible en la información | No disponible | No disponible en la información | HuggingFace |
-| cyankiwi/Qwen3.8-Flash-Next-AWQ-INT4 | No disponible en la información | No disponible | No disponible | HuggingFace |
+| PseudoBrain-Qwen3.8-Flash-Next-FP8 | 131.095.277.587 totales (1,7B activos según model card) | 1.048.576 | Apache 2.0 | Hugging Face, requiere plugin vLLM |
+| Qwen/Qwen3.8-Flash-Next (base) | No disponible en la información | No disponible | No disponible en la información | Hugging Face |
+| Qwen3.8-Flash-Next-FP8 (base cuantizado) | No disponible en la información | No disponible | No disponible en la información | Hugging Face |
+| cyankiwi/Qwen3.8-Flash-Next-AWQ-INT4 | No disponible en la información | No disponible | No disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes. Las alternativas de la misma categoría (contexto muy largo con MoE) no están identificadas en la información proporcionada.
 
@@ -90,13 +90,13 @@ No se dispone de datos de rendimiento comparativo entre estas variantes. Las alt
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/defnoteatin/PseudoBrain-Qwen3.8-Flash-Next-FP8
+- Modelo en Hugging Face: https://huggingface.co/defnoteatin/PseudoBrain-Qwen3.8-Flash-Next-FP8
 - Repositorio del motor y plugin: https://github.com/defnotean/pseudobrain
 - Paper de arquitectura (PDF): https://github.com/defnotean/pseudobrain/blob/main/docs/PSEUDOBRAIN_ARCHITECTURE_PAPER.pdf
 - Paper de arquitectura (Markdown): https://github.com/defnotean/pseudobrain/blob/main/docs/PSEUDOBRAIN_ARCHITECTURE_PAPER.md
 - Benchmark receipts: https://github.com/defnotean/pseudobrain/tree/main/reports
 - Perfil del autor en GitHub: https://github.com/defnotean
-- Perfil del autor en HuggingFace: https://huggingface.co/defnoteatin
+- Perfil del autor en Hugging Face: https://huggingface.co/defnoteatin
 - Edición W4A16: https://huggingface.co/defnoteatin/PseudoBrain-Qwen3.8-Flash-Next-W4A16
 - Edición BF16: https://huggingface.co/defnoteatin/PseudoBrain-Qwen3.8-Flash-Next-BF16
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next

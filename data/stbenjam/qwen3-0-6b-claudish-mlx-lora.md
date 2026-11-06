@@ -83,9 +83,9 @@ El autor advierte de forma explicita que esta comprobacion "no es una medida cal
 
 | Modelo | Parametros | Contexto | Tipo de artefacto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| stbenjam/qwen3-0.6b-claudish-mlx-lora | 0,6B base + 4,325 M entrenables | Heredado del base, no especificado | Adaptador LoRA MLX | Apache-2.0 | HuggingFace, requiere MLX LM |
-| stbenjam/qwen3-0.6b-claudish-gguf | 0,6B fusionado | Heredado del base, no especificado | GGUF con pesos fusionados | Apache-2.0 | HuggingFace, ejecutable con Ollama |
-| Qwen/Qwen3-0.6B | 0,6B | No disponible en la informacion proporcionada | Pesos completos | Apache-2.0 | HuggingFace |
+| stbenjam/qwen3-0.6b-claudish-mlx-lora | 0,6B base + 4,325 M entrenables | Heredado del base, no especificado | Adaptador LoRA MLX | Apache-2.0 | Hugging Face, requiere MLX LM |
+| stbenjam/qwen3-0.6b-claudish-gguf | 0,6B fusionado | Heredado del base, no especificado | GGUF con pesos fusionados | Apache-2.0 | Hugging Face, ejecutable con Ollama |
+| Qwen/Qwen3-0.6B | 0,6B | No disponible en la informacion proporcionada | Pesos completos | Apache-2.0 | Hugging Face |
 | Adaptadores de estilo genericos para modelos pequenos | Variable | Variable | LoRA PEFT | Variable | No disponible |
 
 La comparativa se limita a lo documentado en la informacion proporcionada. La diferencia funcional relevante frente al modelo base es el registro estilistico inducido por el SFT; no hay datos que permitan comparar calidad de respuesta ni capacidades de razonamiento con alternativas.
@@ -108,7 +108,7 @@ La comparativa se limita a lo documentado en la informacion proporcionada. La di
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stbenjam/qwen3-0.6b-claudish-mlx-lora
+- Modelo en Hugging Face: https://huggingface.co/stbenjam/qwen3-0.6b-claudish-mlx-lora
 - Version GGUF fusionada: https://huggingface.co/stbenjam/qwen3-0.6b-claudish-gguf
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Repositorio de entrenamiento, evaluacion y chat: https://github.com/stbenjam/posttrain-demo

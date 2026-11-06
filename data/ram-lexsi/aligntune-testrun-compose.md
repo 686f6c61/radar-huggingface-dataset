@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ram-lexsi/aligntune-testrun-compose` es un adaptador LoRA de prueba publicado por el usuario `ram-lexsi`, vinculado a Lexsi Labs y a su librería de alineación post-entrenamiento AlignTune. El propio nombre del repositorio indica que se trata de una ejecución de prueba del pipeline de la herramienta (test run) y no de un modelo orientado a producción. La model card lo describe como un artefacto tipo adapter entrenado con el algoritmo DPO sobre el backend TRL de HuggingFace, pero no especifica el modelo base sobre el que se aplica el adaptador.
+`ram-lexsi/aligntune-testrun-compose` es un adaptador LoRA de prueba publicado por el usuario `ram-lexsi`, vinculado a Lexsi Labs y a su librería de alineación post-entrenamiento AlignTune. El propio nombre del repositorio indica que se trata de una ejecución de prueba del pipeline de la herramienta (test run) y no de un modelo orientado a producción. La model card lo describe como un artefacto tipo adapter entrenado con el algoritmo DPO sobre el backend TRL de Hugging Face, pero no especifica el modelo base sobre el que se aplica el adaptador.
 
 El repositorio tiene 0 descargas, 0 likes y un tamaño de 0.0 GB, lo que refuerza su carácter de prueba interna o de validación técnica. Su interés para la comunidad es limitado: sirve principalmente como ejemplo de los artefactos que genera AlignTune y de cómo cargarlos con la API de PEFT. No se dispone de información sobre arquitectura, parámetros, contexto ni idiomas, ya que la model card no los declara.
 

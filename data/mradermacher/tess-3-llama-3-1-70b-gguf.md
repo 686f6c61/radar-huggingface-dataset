@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tess-3-Llama-3.1-70B-GGUF es la distribucion en formato GGUF del modelo Tess-3-Llama-3.1-70B, un ajuste fino conversacional desarrollado por migtissera sobre la base de Llama 3.1 70B de Meta. El repositorio lo mantiene mradermacher, un conocido cuantizador de la comunidad de HuggingFace que publica versiones estaticas de modelos populares para su uso con llama.cpp y otras herramientas compatibles con GGUF. El modelo original esta pensado para generacion de texto conversacional en ingles.
+Tess-3-Llama-3.1-70B-GGUF es la distribucion en formato GGUF del modelo Tess-3-Llama-3.1-70B, un ajuste fino conversacional desarrollado por migtissera sobre la base de Llama 3.1 70B de Meta. El repositorio lo mantiene mradermacher, un conocido cuantizador de la comunidad de Hugging Face que publica versiones estaticas de modelos populares para su uso con llama.cpp y otras herramientas compatibles con GGUF. El modelo original esta pensado para generacion de texto conversacional en ingles.
 
 El modelo base, Llama 3.1 70B, es un transformer denso de 70.553.706.560 parametros con una ventana de contexto de 128.000 tokens (segun las especificaciones oficiales de Llama 3.1, aunque la model card de este repositorio no lo explicita). Tess-3 es un fine-tune orientado a dialogo, lo que lo hace adecuado para asistentes conversacionales, pero no aporta innovaciones arquitectonicas propias: hereda toda la estructura del modelo de Meta.
 
@@ -88,7 +88,7 @@ La comparativa se limita a parametros, contexto y licencia, ya que no hay datos 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Tess-3-Llama-3.1-70B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Tess-3-Llama-3.1-70B-GGUF
 - Modelo base (Tess-3): https://huggingface.co/migtissera/Tess-3-Llama-3.1-70B
 - Cuantizaciones imatrix: https://huggingface.co/mradermacher/Tess-3-Llama-3.1-70B-i1-GGUF
 - Pagina de descargas del cuantizador: https://hf.tst.eu/model#Tess-3-Llama-3.1-70B-GGUF

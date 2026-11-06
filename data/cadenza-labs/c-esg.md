@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Cadenza-Labs/c-esg es un modelo publicado en HuggingFace por el laboratorio Cadenza-Labs bajo licencia Apache 2.0 y acceso restringido (gated). El repositorio, de 3,4 GB, contiene pesos en formato safetensors y fue creado en octubre de 2026, con una actualización posterior en noviembre del mismo ano. El nombre del modelo sugiere un enfoque hacia criterios ESG (ambientales, sociales y de gobernanza), aunque la informacion publica disponible no confirma esta orientacion ni detalla el proposito declarado del modelo.
+Cadenza-Labs/c-esg es un modelo publicado en Hugging Face por el laboratorio Cadenza-Labs bajo licencia Apache 2.0 y acceso restringido (gated). El repositorio, de 3,4 GB, contiene pesos en formato safetensors y fue creado en octubre de 2026, con una actualización posterior en noviembre del mismo ano. El nombre del modelo sugiere un enfoque hacia criterios ESG (ambientales, sociales y de gobernanza), aunque la informacion publica disponible no confirma esta orientacion ni detalla el proposito declarado del modelo.
 
-La ficha tecnica de HuggingFace no incluye pipeline declarado, idiomas soportados ni documentacion sobre arquitectura, entrenamiento o capacidades. El tamano del repositorio (3,4 GB) es compatible con un modelo de parametros medios en precision completa o con un modelo mayor cuantizado, pero sin datos de configuracion no es posible determinarlo con rigor. El acceso restringido implica que cualquier evaluacion practica requiere solicitar permiso al autor y aceptar las condiciones de uso en la plataforma.
+La ficha tecnica de Hugging Face no incluye pipeline declarado, idiomas soportados ni documentacion sobre arquitectura, entrenamiento o capacidades. El tamano del repositorio (3,4 GB) es compatible con un modelo de parametros medios en precision completa o con un modelo mayor cuantizado, pero sin datos de configuracion no es posible determinarlo con rigor. El acceso restringido implica que cualquier evaluacion practica requiere solicitar permiso al autor y aceptar las condiciones de uso en la plataforma.
 
 Dada la ausencia de informacion tecnica verificable, esta ficha recoge unicamente los datos confirmados en la model card y senala explicitamente como "no disponible" todo aquello que no ha sido publicado. Se recomienda precaucion antes de considerar el modelo para entornos de produccion.
 
@@ -23,7 +23,7 @@ Dada la ausencia de informacion tecnica verificable, esta ficha recoge unicament
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo (transformer, MoE, SSM o hibrida), el numero de parametros, la composicion del dataset de entrenamiento, el volumen de tokens utilizados ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT. La model card de HuggingFace no incluye documentacion tecnica asociada ni referencias a papers o repositorios de entrenamiento.
+No se ha publicado informacion sobre la arquitectura del modelo (transformer, MoE, SSM o hibrida), el numero de parametros, la composicion del dataset de entrenamiento, el volumen de tokens utilizados ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT. La model card de Hugging Face no incluye documentacion tecnica asociada ni referencias a papers o repositorios de entrenamiento.
 
 El unico dato estructural disponible es el tamano del repositorio (3,4 GB) y el formato de pesos (safetensors). No se ha publicado informacion sobre innovaciones tecnicas como decodificacion especulativa, atencion lineal, ventanas de contexto extendidas o modos de razonamiento explicito.
 
@@ -70,7 +70,7 @@ No es posible establecer una comparativa rigurosa sin conocer la arquitectura, e
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Cadenza-Labs/c-esg | no disponible | no disponible | Apache 2.0 | Gated en HuggingFace |
+| Cadenza-Labs/c-esg | no disponible | no disponible | Apache 2.0 | Gated en Hugging Face |
 | Alternativa 1 | no disponible | no disponible | no disponible | no disponible |
 | Alternativa 2 | no disponible | no disponible | no disponible | no disponible |
 | Alternativa 3 | no disponible | no disponible | no disponible | no disponible |
@@ -78,7 +78,7 @@ No es posible establecer una comparativa rigurosa sin conocer la arquitectura, e
 ## Limitaciones y advertencias
 
 - Ausencia total de documentacion tecnica: no hay model card extendida, paper, blog ni repositorio de codigo asociado.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace y aprobacion del autor, lo que limita la reproducibilidad y la evaluacion independiente.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face y aprobacion del autor, lo que limita la reproducibilidad y la evaluacion independiente.
 - Sin datos de benchmarks: no es posible verificar calidad, sesgos ni robustez frente a modelos establecidos.
 - Idiomas no declarados: se desconoce si el modelo soporta castellano u otros idiomas, lo que impide recomendarlo para produccion multilingue.
 - Riesgo de alucinacion: no evaluado por terceros.
@@ -89,7 +89,7 @@ No es posible establecer una comparativa rigurosa sin conocer la arquitectura, e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Cadenza-Labs/c-esg
+- Hugging Face: https://huggingface.co/Cadenza-Labs/c-esg
 - Paper: no disponible
 - Blog o documentacion: no disponible
 - Repositorio de codigo: no disponible

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-EmoCLAP1n_smoke_v3_hung es un directorio de entrenamiento en bruto (raw training-run directory) subido a HuggingFace por el usuario VoiceNetCkpt dentro de los experimentos denominados VoiceCLAP. Segun la propia model card, el contenido se ha publicado tal cual desde la ruta `/e/scratch/reformo/gijs/voiceclap/checkpoints/EmoCLAP1n_smoke_v3_hung` del sistema JUPITER, empaquetado en `checkpoints.tar` el 25 de septiembre de 2026. No se trata, por tanto, de un modelo documentado y listo para uso, sino de un artefacto intermedio de un pipeline de investigacion.
+EmoCLAP1n_smoke_v3_hung es un directorio de entrenamiento en bruto (raw training-run directory) subido a Hugging Face por el usuario VoiceNetCkpt dentro de los experimentos denominados VoiceCLAP. Segun la propia model card, el contenido se ha publicado tal cual desde la ruta `/e/scratch/reformo/gijs/voiceclap/checkpoints/EmoCLAP1n_smoke_v3_hung` del sistema JUPITER, empaquetado en `checkpoints.tar` el 25 de septiembre de 2026. No se trata, por tanto, de un modelo documentado y listo para uso, sino de un artefacto intermedio de un pipeline de investigacion.
 
-El repositorio contiene 4 archivos y ocupa 0,0 GB segun la interfaz de HuggingFace, lo que sugiere pesos de muy pequeno tamano o ficheros auxiliares de un run de prueba (el sufijo `smoke` es habitual para denominar pruebas de humo, es decir, ejecuciones minimas para verificar que el pipeline funciona). El identificador `EmoCLAP` apunta a un modelo de tipo CLAP (Contrastive Language-Audio Pretraining) orientado a emociones, pero esta interpretacion no esta confirmada por ninguna documentacion publicada.
+El repositorio contiene 4 archivos y ocupa 0,0 GB segun la interfaz de Hugging Face, lo que sugiere pesos de muy pequeno tamano o ficheros auxiliares de un run de prueba (el sufijo `smoke` es habitual para denominar pruebas de humo, es decir, ejecuciones minimas para verificar que el pipeline funciona). El identificador `EmoCLAP` apunta a un modelo de tipo CLAP (Contrastive Language-Audio Pretraining) orientado a emociones, pero esta interpretacion no esta confirmada por ninguna documentacion publicada.
 
 La relevancia actual de esta ficha es limitada y fundamentalmente metodologica: sirve como ejemplo de publicacion de checkpoints intermedios sin model card, sin licencia declarada, sin pipeline asignado y con cero descargas y cero likes en el momento de la consulta. Cualquier evaluacion tecnica seria requiere contacto con el autor o acceso al repositorio indice de runs.
 
@@ -79,7 +79,7 @@ No disponible. No se dispone de parametros, contexto, rendimiento ni licencia de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/VoiceNetCkpt/EmoCLAP1n_smoke_v3_hung
+- Repositorio Hugging Face: https://huggingface.co/VoiceNetCkpt/EmoCLAP1n_smoke_v3_hung
 - Indice de runs del proyecto VoiceCLAP: https://huggingface.co/VoiceNetCkpt/voiceclap-checkpoints-index
 - Paper o documentacion tecnica: no disponible
 - Repositorio de codigo: no disponible

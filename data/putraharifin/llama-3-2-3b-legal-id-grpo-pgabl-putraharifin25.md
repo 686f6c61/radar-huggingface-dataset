@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Este modelo es un ajuste fino (finetune) de Llama 3.2 3B especializado en el dominio legal, desarrollado por el usuario putraharifin y publicado en HuggingFace. El nombre sugiere que se trata de un modelo orientado al ámbito jurídico indonesio ("legal-id") que ha sido entrenado en dos etapas: una primera fase con PGABL (posiblemente una variante de entrenamiento por preferencias) y una segunda fase con GRPO (Group Relative Policy Optimization), una técnica de aprendizaje por refuerzo popularizada para alinear modelos de lenguaje con preferencias específicas de dominio.
+Este modelo es un ajuste fino (finetune) de Llama 3.2 3B especializado en el dominio legal, desarrollado por el usuario putraharifin y publicado en Hugging Face. El nombre sugiere que se trata de un modelo orientado al ámbito jurídico indonesio ("legal-id") que ha sido entrenado en dos etapas: una primera fase con PGABL (posiblemente una variante de entrenamiento por preferencias) y una segunda fase con GRPO (Group Relative Policy Optimization), una técnica de aprendizaje por refuerzo popularizada para alinear modelos de lenguaje con preferencias específicas de dominio.
 
-El modelo parte de la arquitectura Llama de Meta con aproximadamente 3.200 millones de parametros y ha sido entrenado utilizando la biblioteca Unsloth junto con TRL (Transformer Reinforcement Learning) de HuggingFace, lo que permite un entrenamiento significativamente mas rapido y eficiente en memoria. Su relevancia radica en la creciente demanda de modelos especializados por verticales (legal, medico, financiero) que pueden ejecutarse en hardware modesto, dado su tamaño reducido.
+El modelo parte de la arquitectura Llama de Meta con aproximadamente 3.200 millones de parametros y ha sido entrenado utilizando la biblioteca Unsloth junto con TRL (Transformer Reinforcement Learning) de Hugging Face, lo que permite un entrenamiento significativamente mas rapido y eficiente en memoria. Su relevancia radica en la creciente demanda de modelos especializados por verticales (legal, medico, financiero) que pueden ejecutarse en hardware modesto, dado su tamaño reducido.
 
 Cabe destacar que la model card es muy escueta: no documenta el dataset de entrenamiento, ni los resultados de evaluacion, ni el metodo exacto de GRPO aplicado. Esto debe tenerse en cuenta antes de considerar su uso en produccion, especialmente en un dominio tan sensible como el juridico.
 
@@ -25,13 +25,13 @@ Cabe destacar que la model card es muy escueta: no documenta el dataset de entre
 
 El modelo hereda la arquitectura de Llama 3.2 3B de Meta: un transformer decoder optimizado para tamano reducido, con pesos en precision bfloat16 (deducible del tamano del repositorio, 6,4 GB para ~3,21 B de parametros). No se trata de un modelo MoE, por lo que todos los parametros estan activos en cada pasada de inferencia.
 
-El entrenamiento se ha realizado en al menos dos etapas. La primera, a partir de un modelo previo del mismo autor (putraharifin/llama-3.2-3b-legal-id-PGABL-putraharifin25), cuyo metodo PGABL no esta documentado publicamente. La segunda etapa aplica GRPO (Group Relative Policy Optimization), un algoritmo de RL que optimiza el modelo comparando grupos de respuestas generadas para un mismo prompt, sin necesidad de un modelo de recompensa entrenado aparte. El autor indica que el entrenamiento fue acelerado con Unsloth y la biblioteca TRL de HuggingFace. No se ha publicado informacion sobre el numero de tokens, la composicion del dataset ni los hiperparametros.
+El entrenamiento se ha realizado en al menos dos etapas. La primera, a partir de un modelo previo del mismo autor (putraharifin/llama-3.2-3b-legal-id-PGABL-putraharifin25), cuyo metodo PGABL no esta documentado publicamente. La segunda etapa aplica GRPO (Group Relative Policy Optimization), un algoritmo de RL que optimiza el modelo comparando grupos de respuestas generadas para un mismo prompt, sin necesidad de un modelo de recompensa entrenado aparte. El autor indica que el entrenamiento fue acelerado con Unsloth y la biblioteca TRL de Hugging Face. No se ha publicado informacion sobre el numero de tokens, la composicion del dataset ni los hiperparametros.
 
 ## Capacidades
 
 - Generacion de texto en formato conversacional (tag "conversational").
 - Especializacion presunta en contenido juridico (por el nombre del modelo), aunque sin documentacion de capacidades concretas.
-- Compatibilidad con la biblioteca transformers de HuggingFace y con text-generation-inference.
+- Compatibilidad con la biblioteca transformers de Hugging Face y con text-generation-inference.
 - Entrenado con soporte del ecosistema Unsloth, lo que facilita la inferencia optimizada y futuros ajustes finos.
 - No hay evidencia documentada de soporte de vision, audio, tool calling ni modos de razonamiento extendido.
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Con cuantizacion a 4 bits (por ejemplo, Q4_K_M en GGUF, si se convierte): unos 2-2,5 GB de VRAM.
 - GPU recomendadas: RTX 3060 de 12 GB, RTX 4060 Ti de 16 GB o superiores para inferencia en precision completa; cualquier GPU moderna de 8 GB con cuantizacion.
 - Cabe en GPUs de consumo: si, tanto en precision completa (GPUs de 12 GB o mas) como cuantizado (GPUs de 4-8 GB).
-- Opciones de despliegue: transformers de HuggingFace, text-generation-inference, vLLM, llama.cpp (previa conversion a GGUF) y Ollama (previa conversion).
+- Opciones de despliegue: transformers de Hugging Face, text-generation-inference, vLLM, llama.cpp (previa conversion a GGUF) y Ollama (previa conversion).
 - Latencia y throughput: no disponible; al tratarse de un modelo denso de 3B, se esperan velocidades de decodificacion altas en hardware de consumo, pero no hay medidas publicadas.
 
 ## Comparativa con modelos similares
@@ -80,7 +80,7 @@ El modelo comparado destaca por su supuesta especializacion legal y su licencia 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/putraharifin/llama-3.2-3b-legal-id-GRPO-PGABL-putraharifin25
+- Modelo en Hugging Face: https://huggingface.co/putraharifin/llama-3.2-3b-legal-id-GRPO-PGABL-putraharifin25
 - Modelo base del autor: https://huggingface.co/putraharifin/llama-3.2-3b-legal-id-PGABL-putraharifin25
 - Unsloth (GitHub): https://github.com/unslothai/unsloth
-- TRL de HuggingFace: https://github.com/huggingface/trl
+- TRL de Hugging Face: https://github.com/huggingface/trl

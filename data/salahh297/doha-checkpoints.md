@@ -64,11 +64,11 @@ La comparativa natural no es contra otro ensemble, sino contra los backbones ind
 
 | Modelo | Parametros aprox. | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `salahh297/doha-checkpoints` (ensemble) | No disponible (agregado de 9 backbones) | No disponible | Apache-2.0 | Repositorio HuggingFace, 98,7 GB |
-| `aubmindlab/bert-base-arabertv02` | ~110 M (BERT base) | 512 (estandar BERT) | Apache-2.0 | HuggingFace |
-| `UBC-NLP/ARBERTv2` | ~163 M | 512 (estandar BERT) | No disponible en esta ficha | HuggingFace |
-| `FacebookAI/xlm-roberta-large` | ~560 M | 512 | MIT | HuggingFace |
-| `intfloat/multilingual-e5-large` | ~560 M | 512 | MIT | HuggingFace |
+| `salahh297/doha-checkpoints` (ensemble) | No disponible (agregado de 9 backbones) | No disponible | Apache-2.0 | Repositorio Hugging Face, 98,7 GB |
+| `aubmindlab/bert-base-arabertv02` | ~110 M (BERT base) | 512 (estandar BERT) | Apache-2.0 | Hugging Face |
+| `UBC-NLP/ARBERTv2` | ~163 M | 512 (estandar BERT) | No disponible en esta ficha | Hugging Face |
+| `FacebookAI/xlm-roberta-large` | ~560 M | 512 | MIT | Hugging Face |
+| `intfloat/multilingual-e5-large` | ~560 M | 512 | MIT | Hugging Face |
 
 Frente a cualquiera de ellos por separado, el ensemble añade coste de inferencia y de almacenamiento (dos órdenes de magnitud más de disco) a cambio de robustez estadística por el promedio de folds y backbones. No se dispone de datos de rendimiento comparado que permitan cuantificar la mejora.
 
@@ -85,7 +85,7 @@ Frente a cualquiera de ellos por separado, el ensemble añade coste de inferenci
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/salahh297/doha-checkpoints
+- Repositorio Hugging Face: https://huggingface.co/salahh297/doha-checkpoints
 - AraBERT base: https://huggingface.co/aubmindlab/bert-base-arabertv02
 - AraBERT large: https://huggingface.co/aubmindlab/bert-large-arabertv02
 - AraBERTv2 large (farasa): https://huggingface.co/aubmindlab/bert-large-arabertv2

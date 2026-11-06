@@ -79,7 +79,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de HT
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cyttic/hmt-trocrsmall-elastic4-s42
+- Modelo en Hugging Face: https://huggingface.co/cyttic/hmt-trocrsmall-elastic4-s42
 - Dataset de entrenamiento: https://huggingface.co/datasets/cyttic/hhd-optionb-split
 - Resultados detallados: `results.json` (referenciado en la model card, no enlazado en la informacion disponible)
 - Paper, blog, repositorio o demo: no disponible

@@ -106,7 +106,7 @@ No se dispone de cifras de parámetros, contexto ni rendimiento de los modelos a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/minjiechen/MagNet-Transformers
+- Modelo en Hugging Face: https://huggingface.co/minjiechen/MagNet-Transformers
 - Dataset relacionado: https://huggingface.co/datasets/minjiechen/MagNet
 - Repositorio original de Princeton MagNet: https://github.com/PrincetonUniversity/magnet
 - Repositorio MagNet (autor): https://github.com/minjiechen/MagNet

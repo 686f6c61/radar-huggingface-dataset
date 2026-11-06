@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Hybrid Mamba-Attention 50M es un modelo de lenguaje a pequena escala publicado por el usuario root-sys-n en HuggingFace, con un diseno hibrido que combina capas de espacio de estados (Mamba) con capas de atencion causal clasica. El repositorio se presenta explicitamente como un banco de pruebas ("preflight testing") y como material de entrenamiento para Google Colab, no como un modelo entrenado y listo para produccion. Con aproximadamente 49-51 millones de parametros, su interes es fundamentalmente arquitectonico y didactico.
+Hybrid Mamba-Attention 50M es un modelo de lenguaje a pequena escala publicado por el usuario root-sys-n en Hugging Face, con un diseno hibrido que combina capas de espacio de estados (Mamba) con capas de atencion causal clasica. El repositorio se presenta explicitamente como un banco de pruebas ("preflight testing") y como material de entrenamiento para Google Colab, no como un modelo entrenado y listo para produccion. Con aproximadamente 49-51 millones de parametros, su interes es fundamentalmente arquitectonico y didactico.
 
 La arquitectura sigue un patron repetido "MMMA MMMA MMMA": nueve capas Mamba y tres capas de atencion, con d_model=512, FFN SwiGLU de 1280 unidades ocultas, RMSNorm y embeddings atados. Las capas Mamba usan una variante simplificada ("Mamba-lite") con d_state=8, d_inner=768, dt_rank=16 y convolucion causal de kernel 4; las capas de atencion son causales con 8 cabezas de 64 dimensiones y codificacion posicional rotatoria (RoPE).
 
@@ -88,6 +88,6 @@ La diferencia practica principal no es de rendimiento sino de madurez: las alter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/root-sys-n/hybrid-mamba-50m
+- Modelo en Hugging Face: https://huggingface.co/root-sys-n/hybrid-mamba-50m
 - Ficheros referenciados en la model card (rutas relativas del repositorio, sin URL publica confirmada): `config/colab.yaml`, `config/smoke.yaml`, `src/model.py`, `src/tokenizer.py`, `src/data.py`, `src/train.py`, `preflight.py`, `colab.ipynb`
 - Paper, blog, repositorio adicional o demo: no disponibles en la informacion proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-pi05-droid-cofactvla es un checkpoint de investigación publicado por el usuario adipotnis en HuggingFace, consistente en un ajuste fino del modelo base lerobot/pi05_base sobre el conjunto de datos robótico DROID (lerobot/droid_1.0.1). El modelo aplica la implementación pública de CoFACT-VLA (una variante de entrenamiento contrastivo para políticas visión-lenguaje-acción) al pipeline de DROID, sin que exista una receta oficial publicada para esta combinación. Se trata, por tanto, de una adaptación experimental y no de una reproducción de resultados de referencia.
+pi05-droid-cofactvla es un checkpoint de investigación publicado por el usuario adipotnis en Hugging Face, consistente en un ajuste fino del modelo base lerobot/pi05_base sobre el conjunto de datos robótico DROID (lerobot/droid_1.0.1). El modelo aplica la implementación pública de CoFACT-VLA (una variante de entrenamiento contrastivo para políticas visión-lenguaje-acción) al pipeline de DROID, sin que exista una receta oficial publicada para esta combinación. Se trata, por tanto, de una adaptación experimental y no de una reproducción de resultados de referencia.
 
 El modelo pertenece a la familia pi0.5 de Physical Intelligence, una arquitectura de política robótica que combina un codificador visual, un modelo de lenguaje y un "action expert" para generar trayectorias de articulaciones a partir de instrucciones en lenguaje natural e imágenes de cámaras. Con 4.143.404.816 parámetros (aproximadamente 4,14 mil millones) y un repositorio de 24,5 GB, está pensado para control de brazos robóticos de 7 grados de libertad más pinza.
 
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parámetros | Contexto / horizonte | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi05-droid-cofactvla (este) | 4,14 B | horizonte de acción 50 | DROID + CoFACT, 6.000 pasos | gemma | HuggingFace, 0 descargas |
-| lerobot/pi05_base | no disponible en la información | no disponible | base pi0.5 | no disponible en la información | HuggingFace (modelo base) |
+| pi05-droid-cofactvla (este) | 4,14 B | horizonte de acción 50 | DROID + CoFACT, 6.000 pasos | gemma | Hugging Face, 0 descargas |
+| lerobot/pi05_base | no disponible en la información | no disponible | base pi0.5 | no disponible en la información | Hugging Face (modelo base) |
 | Otras políticas VLA para DROID (p. ej. π0, OpenVLA) | no disponible en la información | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada; la comparación se limita a procedencia y configuración de entrenamiento.
@@ -74,7 +74,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 - No validado para despliegue en robot: el autor indica explícitamente que el checkpoint no ha sido validado para deployment y que no se realizó ninguna evaluación mediante rollout.
 - Adaptación sin receta oficial: no existe una receta publicada específica para DROID con CoFACT; los resultados no deben interpretarse como reproducción de benchmarks DROID.
 - Entrenamiento incompleto en términos de épocas: 768.000 anclas sobre 6.000 actualizaciones representan menos de una pasada completa por el pool elegible, lo que puede limitar la convergencia.
-- Datos de origen comprimidos: el vídeo fuente es AV1 de HuggingFace y el export carece de identificadores de grabación, por lo que no se puede reproducir el filtrado oficial de RLDS no-idle.
+- Datos de origen comprimidos: el vídeo fuente es AV1 de Hugging Face y el export carece de identificadores de grabación, por lo que no se puede reproducir el filtrado oficial de RLDS no-idle.
 - Normalización dependiente del checkpoint: los procesadores guardados contienen la normalización DROID usada en entrenamiento; cargarlos siempre junto al modelo, ya que omitirlos produce acciones incorrectas.
 - Licencia gemma: hereda las restricciones de la licencia Gemma, que incluye cláusulas de uso aceptable y obligaciones de atribución; revisar antes de cualquier uso comercial.
 - Idiomas: no se documenta soporte multilingüe; las instrucciones del dataset DROID están mayoritariamente en inglés.
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/adipotnis/pi05-droid-cofactvla
+- Modelo en Hugging Face: https://huggingface.co/adipotnis/pi05-droid-cofactvla
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset DROID: https://huggingface.co/datasets/lerobot/droid_1.0.1
 - Implementación CoFACT-VLA: https://github.com/zhangy0822/CofactVLA/tree/7cbae824f2c55a154340cbf4b52b9125452e124d

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Unijenagenomics/matching es un repositorio experimental de HuggingFace que contiene una implementacion propia de una arquitectura tipo BEiT orientada a tareas de "matching". Lo publica el usuario Unijenagenomics y, segun su propia model card, se trata de un punto de partida para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, no de un modelo entrenado y evaluado. El checkpoint `model.safetensors` se declara explicitamente como inicializacion valida para pruebas de humo (smoke tests), no como un checkpoint con rendimiento medido.
+Unijenagenomics/matching es un repositorio experimental de Hugging Face que contiene una implementacion propia de una arquitectura tipo BEiT orientada a tareas de "matching". Lo publica el usuario Unijenagenomics y, segun su propia model card, se trata de un punto de partida para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, no de un modelo entrenado y evaluado. El checkpoint `model.safetensors` se declara explicitamente como inicializacion valida para pruebas de humo (smoke tests), no como un checkpoint con rendimiento medido.
 
 El modelo es extremadamente pequeno: el recuento real de parametros en safetensors es de 24.832, una configuracion etiquetada como "small" pero muy alejada de los ordenes de magnitud habituales en variantes BEiT/ViT (decenas de millones de parametros). Incorpora atencion de consulta agrupada (grouped query), fusion mediante MLP de concatenacion, activacion approx gelu y normalizacion InstanceNorm. No se declara pipeline, idiomas soportados ni resultados de benchmarks.
 
@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Entrada / contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Unijenagenomics/matching | 24.832 | no disponible | BSD-3-Clause | HuggingFace, sin entrenar |
-| BEiT-base (patch16, 224) | 86 M | imagen 224x224 (196 parches) | MIT | HuggingFace, checkpoint entrenado |
-| ViT-base (patch16, 224) | 86 M | imagen 224x224 (196 parches) | Apache-2.0 | HuggingFace, checkpoint entrenado |
+| Unijenagenomics/matching | 24.832 | no disponible | BSD-3-Clause | Hugging Face, sin entrenar |
+| BEiT-base (patch16, 224) | 86 M | imagen 224x224 (196 parches) | MIT | Hugging Face, checkpoint entrenado |
+| ViT-base (patch16, 224) | 86 M | imagen 224x224 (196 parches) | Apache-2.0 | Hugging Face, checkpoint entrenado |
 
 La comparacion es estructural, no de rendimiento: los dos modelos de referencia son transformers de vision entrenados y publicados con pesos listos para inferencia, mientras que este repositorio solo ofrece una inicializacion de 24.832 parametros. Cualquier comparacion cuantitativa exigiria entrenar esta configuracion bajo el mismo presupuesto de datos, ajuste y semillas que las alternativas, tal como recomienda la propia model card. Los datos de las alternativas provienen de su documentacion publica y conviene verificarlos en el momento de uso.
 
@@ -93,7 +93,7 @@ La comparacion es estructural, no de rendimiento: los dos modelos de referencia 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Unijenagenomics/matching
+- Hugging Face: https://huggingface.co/Unijenagenomics/matching
 - Repositorio BEiT original (referencia arquitectonica, no vinculada por el autor): no disponible en la busqueda realizada
 - Papers, blogs, repos y demos del autor: no disponibles en la busqueda realizada
 - Nota: la busqueda web asociada no devolvio ningun resultado relevante sobre este modelo; los unicos enlaces recuperados no guardan relacion con el repositorio y se han descartado.

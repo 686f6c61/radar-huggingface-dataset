@@ -80,7 +80,7 @@ La comparativa se limita a otras cuantizaciones del mismo modelo base, ya que no
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/pirola/Nemotron-3-Nano-30B-A3B-pirola-IQ3_XXS-GGUF
+- Repositorio Hugging Face: https://huggingface.co/pirola/Nemotron-3-Nano-30B-A3B-pirola-IQ3_XXS-GGUF
 - Modelo base (BF16): https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16
 - Licencia NVIDIA Nemotron Open Model: https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-nemotron-open-model-license/
 - Parche requerido (incluido en el repositorio): `nemotron-expert-padding.patch`

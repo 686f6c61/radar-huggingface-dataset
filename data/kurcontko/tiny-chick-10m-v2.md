@@ -96,7 +96,7 @@ El autor advierte que V1 y V2 no son directamente comparables porque se evaluaro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kurcontko/Tiny-Chick-10M-V2
+- Modelo en Hugging Face: https://huggingface.co/kurcontko/Tiny-Chick-10M-V2
 - Version anterior: https://huggingface.co/kurcontko/Tiny-Chick-10M
 - Tiny-ML Leaderboard: https://huggingface.co/spaces/Glint-Research/Tiny-ML-Leaderboard
 - Dataset de preentrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu

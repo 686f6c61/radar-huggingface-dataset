@@ -33,7 +33,7 @@ La información de entrenamiento publicada es mínima: identificador del run (`2
 - Ajuste orientado al dominio médico (pilotaje de evaluación estática), aunque sin capacidades clínicas documentadas ni validadas.
 - Tool calling y function calling: presumiblemente heredados del modelo base Qwen3-4B-Instruct-2507, pero **no verificados** en este checkpoint.
 - Razonamiento multi-paso y uso como agente: no documentado para este fine-tune.
-- Capacidades multilingües: no documentadas; no se declara ningún idioma en la ficha de HuggingFace.
+- Capacidades multilingües: no documentadas; no se declara ningún idioma en la ficha de Hugging Face.
 - Modo de razonamiento explícito (thinking mode): no disponible; el modelo base de la familia 2507 tampoco lo incorpora.
 - Visión o audio: no soportados (modelo exclusivamente de texto).
 - Compatibilidad declarada con Text Generation Inference (TGI) y con endpoints alojados (`endpoints_compatible`).
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| qwen3-4b-medicine-static-pilot-261016-step-003 (este modelo) | 4,02B | no disponible (base: 262.144) | Apache-2.0 | HuggingFace |
-| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | ~4B | 262.144 tokens | Apache-2.0 | HuggingFace |
-| google/medgemma-4b-it | ~4B | 128.000 tokens | Health AI Developer Foundations (terminos especificos, no OSI) | HuggingFace |
-| meta-llama/Llama-3.2-3B-Instruct | 3,2B | 128.000 tokens | Llama 3.2 Community License | HuggingFace |
+| qwen3-4b-medicine-static-pilot-261016-step-003 (este modelo) | 4,02B | no disponible (base: 262.144) | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | ~4B | 262.144 tokens | Apache-2.0 | Hugging Face |
+| google/medgemma-4b-it | ~4B | 128.000 tokens | Health AI Developer Foundations (terminos especificos, no OSI) | Hugging Face |
+| meta-llama/Llama-3.2-3B-Instruct | 3,2B | 128.000 tokens | Llama 3.2 Community License | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos para este checkpoint, por lo que la tabla se limita a parámetros, contexto, licencia y disponibilidad. Las cifras de contexto y licencia de los modelos comparados proceden de su documentación pública y conviene verificarlas antes de tomar decisiones de arquitectura.
 
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativos para este checkpoint, por lo 
 - **Ausencia total de documentación de evaluación**: no hay benchmarks, validación clínica, análisis de sesgos ni cartas de limitaciones. Cualquier afirmación sobre su calidad es especulativa.
 - **Riesgo elevado de alucinación en contenido clínico**: al derivar de un modelo generalista de 4B y no contar con validación específica del dominio, puede generar dosis, interacciones farmacológicas o diagnósticos incorrectos. Su uso en decisiones clínicas está completamente desaconsejado.
 - **Sesgos**: no evaluados. El modelo base arrastra los sesgos de su corpus de entrenamiento, y el ajuste sobre datos médicos puede introducir sesgos adicionales de población, idioma o práctica clínica.
-- **Idioma**: la ficha de HuggingFace no declara idiomas soportados. No hay garantía de un rendimiento correcto en castellano, ni siquiera de que el corpus de ajuste lo incluya.
+- **Idioma**: la ficha de Hugging Face no declara idiomas soportados. No hay garantía de un rendimiento correcto en castellano, ni siquiera de que el corpus de ajuste lo incluya.
 - **Contexto no confirmado**: los 262.144 tokens son una característica del modelo base, no un dato confirmado para este fine-tune, que podría haber modificado la configuración de RoPE durante el entrenamiento.
 - **Licencia Apache-2.0**: permite uso comercial y modificación, pero exige conservar los avisos de copyright y el texto de licencia, e incluir un aviso de cambios. El copyright de los datos de entrenamiento empleados por el autor no está documentado, lo que puede introducir riesgo legal ajeno a la licencia.
 - **Repositorio de 25,7 GB**: la duplicación de pesos (exportación BF16 más checkpoint nativo) multiplica el espacio en disco y los tiempos de descarga, algo a tener en cuenta en pipelines automatizados.
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparativos para este checkpoint, por lo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-medicine-static-pilot-261016-step-003
+- Modelo en Hugging Face: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-medicine-static-pilot-261016-step-003
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Informe técnico de la familia Qwen3 (referencia del modelo base): https://arxiv.org/abs/2505.09388
 - Modelo médico comparable (MedGemma 4B): https://huggingface.co/google/medgemma-4b-it

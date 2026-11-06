@@ -12,7 +12,7 @@ Su relevancia actual reside en el segmento de modelos pequeños: permite ejecuta
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (etiqueta de arquitectura `llama` en HuggingFace) |
+| Arquitectura | Transformer denso (etiqueta de arquitectura `llama` en Hugging Face) |
 | Parametros totales | 2.516.756.480 (2,52 B) |
 | Parametros activos | no aplica (modelo denso, no MoE) |
 | Longitud de contexto | no disponible (el autor lo etiqueta como `long-context`, sin cifra publicada en la informacion disponible) |

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-4B-Salieri-GGUF es una recopilación de cuantizaciones estáticas en formato GGUF del modelo Jitheswar/Qwen3.5-4B-Salieri, un ajuste fino de la familia Qwen3.5 orientado a tareas de programación, razonamiento agéntico y uso de herramientas (tool calling). El trabajo de cuantización lo firma mradermacher, un perfil habitual en HuggingFace especializado en generar versiones GGUF de modelos populares para su uso en llama.cpp y entornos de inferencia local.
+Qwen3.5-4B-Salieri-GGUF es una recopilación de cuantizaciones estáticas en formato GGUF del modelo Jitheswar/Qwen3.5-4B-Salieri, un ajuste fino de la familia Qwen3.5 orientado a tareas de programación, razonamiento agéntico y uso de herramientas (tool calling). El trabajo de cuantización lo firma mradermacher, un perfil habitual en Hugging Face especializado en generar versiones GGUF de modelos populares para su uso en llama.cpp y entornos de inferencia local.
 
 El modelo base cuenta con 4.326.350.848 parámetros (aproximadamente 4,3 mil millones) y está construido sobre la arquitectura Qwen3.5, un transformer denso de la familia Qwen. El ajuste fino se ha realizado presumiblemente mediante DPO (según la etiqueta "dpo") sobre el dataset nvidia/Open-SWE-Traces, lo que orienta el modelo hacia tareas de ingeniería de software y resolución de problemas de código en entornos agénticos.
 
@@ -25,7 +25,7 @@ La relevancia de esta ficha radica en que ofrece una vía práctica para ejecuta
 
 El modelo base Jitheswar/Qwen3.5-4B-Salieri es un transformer denso de la familia Qwen3.5 con 4.326.350.848 parámetros. Se trata de un ajuste fino (fine-tuning) del modelo Qwen3.5-4B, orientado específicamente a tareas de programación, agentes y tool calling, según las etiquetas del repositorio. El entrenamiento incluye una fase de DPO (Direct Preference Optimization), indicada explícitamente en las etiquetas, y se apoya en el dataset nvidia/Open-SWE-Traces, un conjunto de trazas de ingeniería de software orientado a agentes.
 
-La cuantización la realiza mradermacher mediante conversión desde el formato HuggingFace (convert_type: hf) con cuantización estática de tensores (output_tensor_quantised: 1, quantize_version: 2). No se dispone de información sobre el número total de tokens de entrenamiento, la composición detallada del dataset ni innovaciones arquitectónicas específicas más allá de las propias de la familia Qwen3.5. El repositorio incluye además ficheros mmproj (multi-modal projection) en Q8_0 y f16, lo que sugiere que el modelo base conserva capacidades multimodales (visión) heredadas de Qwen3.5.
+La cuantización la realiza mradermacher mediante conversión desde el formato Hugging Face (convert_type: hf) con cuantización estática de tensores (output_tensor_quantised: 1, quantize_version: 2). No se dispone de información sobre el número total de tokens de entrenamiento, la composición detallada del dataset ni innovaciones arquitectónicas específicas más allá de las propias de la familia Qwen3.5. El repositorio incluye además ficheros mmproj (multi-modal projection) en Q8_0 y f16, lo que sugiere que el modelo base conserva capacidades multimodales (visión) heredadas de Qwen3.5.
 
 ## Capacidades
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 
 ## Enlaces
 
-- HuggingFace (este repositorio): https://huggingface.co/mradermacher/Qwen3.5-4B-Salieri-GGUF
+- Hugging Face (este repositorio): https://huggingface.co/mradermacher/Qwen3.5-4B-Salieri-GGUF
 - Modelo base: https://huggingface.co/Jitheswar/Qwen3.5-4B-Salieri
 - Página de descargas del cuantizador: https://hf.tst.eu/model#Qwen3.5-4B-Salieri-GGUF
 - Dataset de entrenamiento: https://huggingface.co/datasets/nvidia/Open-SWE-Traces

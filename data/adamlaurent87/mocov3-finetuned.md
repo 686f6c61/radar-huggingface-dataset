@@ -79,8 +79,8 @@ La comparación es meramente ilustrativa; no hay datos de rendimiento para el mo
 
 ## Enlaces
 
-- [HuggingFace - adamlaurent87/mocov3-finetuned](https://huggingface.co/adamlaurent87/mocov3-finetuned)
-- [Perfil de adamlaurent87 en HuggingFace](https://huggingface.co/adamlaurent87)
+- [Hugging Face - adamlaurent87/mocov3-finetuned](https://huggingface.co/adamlaurent87/mocov3-finetuned)
+- [Perfil de adamlaurent87 en Hugging Face](https://huggingface.co/adamlaurent87)
 - [MoCo v3 - OpenMMLab (mmpretrain)](https://github.com/open-mmlab/mmpretrain/blob/main/configs/mocov3/README.md)
 - [MoCo v3 - MMSelfSup documentation](https://mmselfsup.readthedocs.io/en/stable/papers/mocov3.html)
 - [MoCo v3 - Repositorio oficial de Facebook Research](https://github.com/facebookresearch/moco-v3/tree/main/transfer)

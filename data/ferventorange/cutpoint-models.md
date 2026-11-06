@@ -69,9 +69,9 @@ El nombre del fichero incluye un mAP de 0,385, que corresponde al resultado repo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PANNs Cnn14_DecisionLevelMax (este) | CNN de audio | no disponible (327 MB de pesos) | no aplica | CC BY 4.0 | Espejo en HuggingFace + Zenodo |
+| PANNs Cnn14_DecisionLevelMax (este) | CNN de audio | no disponible (327 MB de pesos) | no aplica | CC BY 4.0 | Espejo en Hugging Face + Zenodo |
 | Otras variantes PANNs (Cnn14, Wavegram, etc.) | CNN de audio | no disponible | no aplica | CC BY 4.0 | Zenodo |
-| AST (Audio Spectrogram Transformer) | Transformer de audio | no disponible | no aplica | no disponible | HuggingFace |
+| AST (Audio Spectrogram Transformer) | Transformer de audio | no disponible | no aplica | no disponible | Hugging Face |
 | YAMNet | CNN de audio | no disponible | no aplica | Apache 2.0 | TensorFlow Hub |
 
 La comparacion detallada de rendimiento entre estas alternativas no esta disponible en la informacion proporcionada.

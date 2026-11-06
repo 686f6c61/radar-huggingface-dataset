@@ -97,7 +97,7 @@ En cuanto a licencia y disponibilidad, la informacion disponible solo confirma l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/van-i/act_r2d2_to_box_bg
+- Modelo en Hugging Face: https://huggingface.co/van-i/act_r2d2_to_box_bg
 - Dataset de entrenamiento: https://huggingface.co/datasets/van-i/r2d2_to_box_bg_20261003_210444
 - Documentacion de ACT en LeRobot: https://huggingface.co/docs/lerobot/main/en/act
 - Escribano completo y comparativa de las cuatro politicas: https://huggingface.co/van-i/so100-imitation-learning-stand

@@ -79,8 +79,8 @@ La comparativa con otros modelos de tamano similar (como Llama 3.1 8B o Mistral 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Hjx2/Qwen3.8-27B-Q2_K-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-27B
+- Repositorio Hugging Face: https://huggingface.co/Hjx2/Qwen3.8-27B-Q2_K-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GitHub del modelo base: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Repositorio GitHub de la serie Qwen3.8: https://github.com/QwenLM/Qwen3.8
 - Conversión GGUF de unsloth: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF

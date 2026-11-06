@@ -2,11 +2,11 @@
 
 ## Resumen
 
-CXR_Rib_Segmentation es un framework de segmentación de costillas en radiografías de tórax (chest X-ray, CXR) publicado por Poornanand Purushottam Naik, Mahendra Pratap Singh y N. D. Adesh. El repositorio de HuggingFace actúa como archivo público permanente y nodo de citación del trabajo, con DOI registrado (10.57967/hf/11317) y licencia MIT. No se trata de un modelo de lenguaje, sino de un modelo de visión por computador orientado a una tarea médica concreta: delimitar la estructura costal en imágenes de tórax.
+CXR_Rib_Segmentation es un framework de segmentación de costillas en radiografías de tórax (chest X-ray, CXR) publicado por Poornanand Purushottam Naik, Mahendra Pratap Singh y N. D. Adesh. El repositorio de Hugging Face actúa como archivo público permanente y nodo de citación del trabajo, con DOI registrado (10.57967/hf/11317) y licencia MIT. No se trata de un modelo de lenguaje, sino de un modelo de visión por computador orientado a una tarea médica concreta: delimitar la estructura costal en imágenes de tórax.
 
 La relevancia del proyecto reside en su aplicación clínica y en la infraestructura de citación académica que aporta: un DOI estable permite referenciar el trabajo en publicaciones sin depender de la disponibilidad del repositorio. La model card declara métricas de evaluación basadas en Dice y Jaccard, habituales en segmentación semántica médica, aunque no se publican los valores numéricos obtenidos.
 
-La información disponible es muy limitada: el repositorio tiene un tamaño de 0,0 GB, no declara pipeline en HuggingFace, no especifica arquitectura, número de parámetros ni longitud de contexto (concepto, por otra parte, no aplicable a un modelo de segmentación). Los pesos parecen alojarse en un Space asociado más que en el propio repositorio.
+La información disponible es muy limitada: el repositorio tiene un tamaño de 0,0 GB, no declara pipeline en Hugging Face, no especifica arquitectura, número de parámetros ni longitud de contexto (concepto, por otra parte, no aplicable a un modelo de segmentación). Los pesos parecen alojarse en un Space asociado más que en el propio repositorio.
 
 ## Especificaciones tecnicas
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada para inferencia: no disponible (se desconoce el tamaño y la arquitectura del modelo).
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible; al tratarse presumiblemente de un modelo de segmentación de tamaño moderado, es plausible que quepa en GPU de consumo, pero no hay datos que lo confirmen.
-- Opciones de despliegue: el autor referencia un Space de HuggingFace como aplicación interactiva; no se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI (herramientas orientadas a modelos de lenguaje y no aplicables directamente a este caso).
+- Opciones de despliegue: el autor referencia un Space de Hugging Face como aplicación interactiva; no se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI (herramientas orientadas a modelos de lenguaje y no aplicables directamente a este caso).
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -76,6 +76,6 @@ No disponible. La información proporcionada no incluye modelos comparables ni d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/poornanandnaik24/CXR_Rib_Segmentation
+- Repositorio Hugging Face: https://huggingface.co/poornanandnaik24/CXR_Rib_Segmentation
 - Space interactivo: https://huggingface.co/spaces/poornanandnaik24/CXR_Rib_Segmentation
 - DOI de citación: https://doi.org/10.57967/hf/11317

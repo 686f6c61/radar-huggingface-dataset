@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`TASMAYU/Bi-Manual-SmolVLA` es un repositorio de modelo alojado en HuggingFace por el usuario TASMAYU, publicado bajo licencia MIT. En el momento de la consulta acumula 0 descargas y 0 likes, no declara pipeline de inferencia ni idiomas soportados, y su model card se limita a la linea `license: mit`, sin descripcion, sin especificaciones y sin resultados.
+`TASMAYU/Bi-Manual-SmolVLA` es un repositorio de modelo alojado en Hugging Face por el usuario TASMAYU, publicado bajo licencia MIT. En el momento de la consulta acumula 0 descargas y 0 likes, no declara pipeline de inferencia ni idiomas soportados, y su model card se limita a la linea `license: mit`, sin descripcion, sin especificaciones y sin resultados.
 
 El unico indicio sobre su naturaleza es el propio nombre del repositorio: el termino "SmolVLA" remite a la familia de modelos vision-language-action (VLA) de Hugging Face para robotica, y "Bi-Manual" apuntaria a manipulacion bimanual (dos brazos). Es una inferencia a partir del nombre, no un dato confirmado por el autor: no hay documentacion que acredite arquitectura, parametros, dataset de entrenamiento ni tarea objetivo.
 
@@ -81,5 +81,5 @@ No disponible. No es posible establecer una comparativa fiable porque se descono
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/TASMAYU/Bi-Manual-SmolVLA
+- Repositorio en Hugging Face: https://huggingface.co/TASMAYU/Bi-Manual-SmolVLA
 - No se han encontrado papers, blogs, repositorios de codigo, demos ni documentacion adicional asociados a este modelo. Los resultados de la busqueda web realizada no guardan relacion con el modelo (corresponden a paginas de ayuda de servicios de Google) y no aportan informacion utilizable.

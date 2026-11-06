@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`FrankLin00/mmrh-afr-06-pytorch-dcp-weightmap` es un repositorio alojado en HuggingFace que no contiene un modelo de lenguaje funcional, sino una muestra inerte ("inert scanner specimen") diseñada para investigación académica en seguridad. El autor lo etiqueta explícitamente con `security-research` y `not-for-production`, y la model card lo describe como un artefacto que preserva el vector de ataque de un hallazgo previo: la manipulación del valor `weight_map` dentro del índice de safetensors de un checkpoint distribuido de PyTorch (formato DCP, Distributed Checkpoint).
+`FrankLin00/mmrh-afr-06-pytorch-dcp-weightmap` es un repositorio alojado en Hugging Face que no contiene un modelo de lenguaje funcional, sino una muestra inerte ("inert scanner specimen") diseñada para investigación académica en seguridad. El autor lo etiqueta explícitamente con `security-research` y `not-for-production`, y la model card lo describe como un artefacto que preserva el vector de ataque de un hallazgo previo: la manipulación del valor `weight_map` dentro del índice de safetensors de un checkpoint distribuido de PyTorch (formato DCP, Distributed Checkpoint).
 
 El repositorio se presenta bajo el título `pytorch/02-dcp-quantized-hf-index-afr`, lo que sugiere que forma parte de una colección más amplia de muestras organizadas por framework, tipo de checkpoint y variante de carga útil. El sufijo `afr` y las referencias a `AFW` en la model card apuntan a una nomenclatura interna del proyecto de investigación (posiblemente "arbitrary file read" y "arbitrary file write"), no a características del modelo en sí.
 
@@ -23,7 +23,7 @@ No se dispone de información sobre arquitectura, parámetros, contexto, licenci
 
 ## Arquitectura y entrenamiento
 
-No existe arquitectura de red neuronal ni proceso de entrenamiento asociado. El artefacto es una muestra de seguridad que reproduce la estructura de metadatos de un checkpoint distribuido de PyTorch (DCP) combinado con un índice de HuggingFace para safetensors. El elemento central es el campo `weight_map` del índice, cuyo valor se utiliza como vector de ataque en el hallazgo original (variante AFR).
+No existe arquitectura de red neuronal ni proceso de entrenamiento asociado. El artefacto es una muestra de seguridad que reproduce la estructura de metadatos de un checkpoint distribuido de PyTorch (DCP) combinado con un índice de Hugging Face para safetensors. El elemento central es el campo `weight_map` del índice, cuyo valor se utiliza como vector de ataque en el hallazgo original (variante AFR).
 
 Según la model card, cualquier sonda activa del espécimen ejecuta únicamente `whoami` en forma de argv (nunca con `shell=True`) y escribe su salida en la variable de entorno `HFSCAN_PYTORCH__02_DCP_QUANTIZED_HF_INDEX_AFR`, bajo `/tmp` o `$TMPDIR`. El autor declara explícitamente que no se realiza acceso a credenciales ni operación de red. Las muestras de la variante AFW emplean la carga útil literal inerte `PWNED-INERT`, y cuando el primitivo vulnerable obliga a un contenedor o sufijo concreto (por ejemplo `.npy`, un checkpoint o `.jinja`), el manifiesto registra esa restricción de formato en lugar de afirmar control de bytes en crudo.
 
@@ -39,7 +39,7 @@ Según la model card, cualquier sonda activa del espécimen ejecuta únicamente 
 ## Casos de uso
 
 - Investigación en seguridad de la cadena de suministro de modelos: el repositorio permite a equipos de seguridad reproducir el vector de ataque del campo `weight_map` en un entorno controlado y validar si sus escáneres de artefactos lo detectan.
-- Desarrollo de herramientas de escaneo de HuggingFace: sirve como caso de prueba para comprobar que un scanner marca correctamente artefactos con etiquetas `security-research` y `not-for-production`.
+- Desarrollo de herramientas de escaneo de Hugging Face: sirve como caso de prueba para comprobar que un scanner marca correctamente artefactos con etiquetas `security-research` y `not-for-production`.
 - Formación y concienciación: puede usarse en talleres sobre riesgos de cargar checkpoints no verificados, ilustrando cómo los metadatos de un índice pueden transportar cargas útiles.
 - Validación de políticas de admisión en registros de modelos: permite probar reglas que bloqueen la carga de repositorios con pesos safetensors sin modelo funcional asociado.
 - Análisis de formatos DCP y safetensors: útil para estudiar la estructura del índice y del `weight_map` en checkpoints distribuidos de PyTorch.
@@ -74,5 +74,5 @@ No disponible. No se conocen modelos comparables en la información proporcionad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/FrankLin00/mmrh-afr-06-pytorch-dcp-weightmap
+- Hugging Face: https://huggingface.co/FrankLin00/mmrh-afr-06-pytorch-dcp-weightmap
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios o demos. La model card menciona un `MANIFEST.json` a nivel de colección con hashes y la ruta del hallazgo original, pero no se proporciona su URL.

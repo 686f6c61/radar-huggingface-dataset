@@ -6,13 +6,13 @@ Mistral Small 4 119B A6B es un modelo multimodal de tipo Mixture of Experts (MoE
 
 La relevancia del modelo reside en su conmutacion por peticion entre modo de respuesta rapida y modo de razonamiento mediante el parametro `reasoning_effort`, lo que permite ajustar el coste de computo en inferencia segun la tarea. Segun la model card, en una configuracion optimizada para latencia reduce un 40% el tiempo de finalizacion extremo a extremo y en una configuracion optimizada para throughput gestiona 3 veces mas peticiones por segundo que Mistral Small 3. Incorpora soporte nativo de function calling, salida JSON y capacidades agenticas.
 
-El repositorio de HuggingFace esta publicado bajo la organizacion Ares-Realm-Studios, mientras que la model card reproduce la documentacion y los enlaces oficiales de Mistral AI (por ejemplo, los checkpoints `mistralai/Mistral-Small-4-119B-2603-eagle` y `mistralai/Mistral-Small-4-119B-2603-NVFP4`). La licencia declarada es Apache 2.0 y el repositorio ocupa 241,9 GB. No consta pipeline declarado y el modelo registra 0 descargas y 0 likes en el momento de la consulta.
+El repositorio de Hugging Face esta publicado bajo la organizacion Ares-Realm-Studios, mientras que la model card reproduce la documentacion y los enlaces oficiales de Mistral AI (por ejemplo, los checkpoints `mistralai/Mistral-Small-4-119B-2603-eagle` y `mistralai/Mistral-Small-4-119B-2603-NVFP4`). La licencia declarada es Apache 2.0 y el repositorio ocupa 241,9 GB. No consta pipeline declarado y el modelo registra 0 descargas y 0 likes en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE multimodal (tag de HuggingFace: `mistral3`) |
+| Arquitectura | Transformer MoE multimodal (tag de Hugging Face: `mistral3`) |
 | Parametros totales | 119.401.317.376 (~119,4B) |
 | Parametros activos | ~6,5B por token (MoE con 128 expertos, 4 activos) |
 | Longitud de contexto | 256.000 tokens |
@@ -79,7 +79,7 @@ Segun el autor, Mistral Small 4 con razonamiento iguala o supera a GPT-OSS 120B 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mistral Small 4 119B A6B | 119,4B totales / ~6,5B activos | 256k | AA LCR 0,72 con 1,6K caracteres | Apache 2.0 | Repositorio en HuggingFace (0 descargas) |
+| Mistral Small 4 119B A6B | 119,4B totales / ~6,5B activos | 256k | AA LCR 0,72 con 1,6K caracteres | Apache 2.0 | Repositorio en Hugging Face (0 descargas) |
 | GPT-OSS 120B | No disponible en la informacion | No disponible | Referencia de comparacion; Mistral Small 4 lo iguala o supera con salidas mas cortas | No disponible | No disponible |
 | Mistral Small 3.2 24B Instruct 2506 | 24B (segun referencia del autor) | No disponible | Referencia para el modo sin razonamiento | No disponible | Referenciado en la model card |
 | Magistral Small 2509 | No disponible | No disponible | Referencia para el modo de razonamiento | No disponible | Referenciado en la model card |
@@ -97,7 +97,7 @@ Segun el autor, Mistral Small 4 con razonamiento iguala o supera a GPT-OSS 120B 
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Ares-Realm-Studios/Mistral-Small-4-119B-2603
+- Hugging Face del modelo: https://huggingface.co/Ares-Realm-Studios/Mistral-Small-4-119B-2603
 - Checkpoint con cabeza especulativa eagle: https://huggingface.co/mistralai/Mistral-Small-4-119B-2603-eagle
 - Checkpoint en NVFP4: https://huggingface.co/mistralai/Mistral-Small-4-119B-2603-NVFP4
 - Modelo de referencia sin razonamiento: https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506

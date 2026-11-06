@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FLUX.2-klein-4B-MXFP8-RTN-AutoRound es un artefacto de pesos cuantizados publicado por el usuario INCModel3 en HuggingFace. Se trata de una conversion a 8 bits del checkpoint FLUX.2-klein-4B, un modelo de difusion de la familia FLUX.2 de Black Forest Labs con aproximadamente 4 000 millones de parametros, orientado a la generacion y edicion de imagenes y canalizado a traves de la clase Flux2KleinPipeline de la libreria diffusers. El repositorio declara la etiqueta de pipeline image-to-image.
+FLUX.2-klein-4B-MXFP8-RTN-AutoRound es un artefacto de pesos cuantizados publicado por el usuario INCModel3 en Hugging Face. Se trata de una conversion a 8 bits del checkpoint FLUX.2-klein-4B, un modelo de difusion de la familia FLUX.2 de Black Forest Labs con aproximadamente 4 000 millones de parametros, orientado a la generacion y edicion de imagenes y canalizado a traves de la clase Flux2KleinPipeline de la libreria diffusers. El repositorio declara la etiqueta de pipeline image-to-image.
 
 El interes tecnico de la publicacion reside en el formato: pesos en MXFP8 (Microscaling FP8, formato de bloque con escala compartida del Open Compute Project), obtenidos mediante cuantizacion post-entrenamiento con dos estrategias combinadas, RTN (round-to-nearest) y AutoRound. El objetivo habitual de este tipo de conversiones es reducir la huella de memoria del modelo manteniendo la fidelidad de la salida, de modo que un modelo de 4B pueda servirse en GPUs de gama media o en aceleradores con soporte nativo de formatos microscalados.
 
@@ -37,7 +37,7 @@ Lo que si puede afirmarse es la naturaleza de este repositorio concreto: no es u
 - Generacion y edicion de imagenes condicionadas por una imagen de entrada, segun la etiqueta image-to-image declarada en el repositorio. No se confirman capacidades de texto a imagen, edicion multi-referencia ni renderizado de texto.
 - Inferencia en 8 bits: los pesos estan almacenados en MXFP8, lo que reduce el ancho de banda de memoria frente a bf16/fp16.
 - Compatibilidad con diffusers: el repositorio declara Flux2KleinPipeline como clase de carga, lo que permite integrarlo en flujos de trabajo basados en esa libreria.
-- Pesos en safetensors, formato estandar de HuggingFace, cargable sin ejecucion de codigo arbitrario.
+- Pesos en safetensors, formato estandar de Hugging Face, cargable sin ejecucion de codigo arbitrario.
 - Tool calling / function calling: no aplica, se trata de un modelo de difusion y no de un modelo de lenguaje.
 - Soporte de agentes y razonamiento multi-paso: no disponible / no aplica.
 - Capacidades multilingues: no disponible; la comprension del prompt depende del codificador de texto, que no se detalla.
@@ -73,10 +73,10 @@ No consta ninguna evaluacion de calidad de imagen (FID, CLIP score, HPSv2, GenEv
 
 | Modelo | Parametros | Tipo | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| FLUX.2-klein-4B-MXFP8-RTN-AutoRound | 4B (FP8) | Difusion, pipeline image-to-image declarado | no disponible | HuggingFace (INCModel3), 0 descargas | Artefacto cuantizado, sin ficha tecnica |
-| FLUX.2-klein-4B (sin cuantizar) | 4B | Difusion | no disponible | Publicado por Black Forest Labs (verificar en su organizacion de HuggingFace) | Referencia de calidad para medir la degradacion de la cuantizacion |
-| FLUX.1-schnell | 12B | Difusion texto a imagen | Apache-2.0 | HuggingFace | Generacion en pocos pasos, uso comercial permitido |
-| FLUX.1-dev | 12B | Difusion texto a imagen | FLUX.1 [dev] Non-Commercial License | HuggingFace | Uso comercial restringido; solo referencia de generacion anterior |
+| FLUX.2-klein-4B-MXFP8-RTN-AutoRound | 4B (FP8) | Difusion, pipeline image-to-image declarado | no disponible | Hugging Face (INCModel3), 0 descargas | Artefacto cuantizado, sin ficha tecnica |
+| FLUX.2-klein-4B (sin cuantizar) | 4B | Difusion | no disponible | Publicado por Black Forest Labs (verificar en su organizacion de Hugging Face) | Referencia de calidad para medir la degradacion de la cuantizacion |
+| FLUX.1-schnell | 12B | Difusion texto a imagen | Apache-2.0 | Hugging Face | Generacion en pocos pasos, uso comercial permitido |
+| FLUX.1-dev | 12B | Difusion texto a imagen | FLUX.1 [dev] Non-Commercial License | Hugging Face | Uso comercial restringido; solo referencia de generacion anterior |
 
 Los datos de FLUX.1-schnell y FLUX.1-dev proceden de conocimiento general sobre esos modelos y deben verificarse en sus fichas oficiales antes de usarse en una decision de produccion. No hay datos de rendimiento comparado disponibles para el modelo analizado.
 
@@ -90,11 +90,11 @@ Los datos de FLUX.1-schnell y FLUX.1-dev proceden de conocimiento general sobre 
 - Ambiguedad del contenido del repositorio: 12,4 GB para un modelo de 4B en FP8 sugiere componentes no declarados o pesos duplicados. Conviene inspeccionar el indice de safetensors antes de planificar el despliegue.
 - Ausencia de validacion comunitaria: 0 descargas y 0 likes implican que no existe evidencia independiente de que los pesos carguen correctamente ni de que la salida sea utilizable.
 - Idiomas: la cobertura de idiomas del prompt no esta declarada; asumir soporte multilingue seria especulativo.
-- Fecha del repositorio: la marca temporal indicada (2026-09-11) procede de los metadatos de HuggingFace y conviene contrastarla con la cronologia real del lanzamiento de FLUX.2-klein.
+- Fecha del repositorio: la marca temporal indicada (2026-09-11) procede de los metadatos de Hugging Face y conviene contrastarla con la cronologia real del lanzamiento de FLUX.2-klein.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/INCModel3/FLUX.2-klein-4B-MXFP8-RTN-AutoRound
+- Modelo en Hugging Face: https://huggingface.co/INCModel3/FLUX.2-klein-4B-MXFP8-RTN-AutoRound
 - Libreria diffusers: https://github.com/huggingface/diffusers
-- Organizacion de Black Forest Labs en HuggingFace: https://huggingface.co/black-forest-labs
+- Organizacion de Black Forest Labs en Hugging Face: https://huggingface.co/black-forest-labs
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relevante sobre este modelo, la familia FLUX.2 ni la cuantizacion MXFP8. Las referencias devueltas corresponden a foros de entidades bancarias francesas y no guardan relacion con el objeto de esta ficha.

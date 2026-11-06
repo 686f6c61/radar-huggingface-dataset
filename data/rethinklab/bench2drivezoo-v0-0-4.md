@@ -6,7 +6,7 @@ Bench2DriveZoo-V0.0.4 es un repositorio de checkpoints de modelos de conducción
 
 El repositorio implementa tres arquitecturas de referencia en conducción autónoma: BEVFormer, UniAD y VAD, todas ellas entrenadas como modelos estudiantes de un teacher basado en world model y reinforcement learning llamado Think2Drive. La relevancia de este trabajo radica en que proporciona un banco de pruebas estandarizado y reproducible para comparar métodos de conducción autónoma end-to-end, con código de entrenamiento y evaluación tanto en bucle abierto como cerrado.
 
-El checkpoint concreto alojado en HuggingFace (rethinklab/Bench2DriveZoo-V0.0.4) ocupa 1.7 GB y se distribuye bajo licencia Apache 2.0. No se especifican en la información disponible los parámetros totales, la arquitectura exacta de cada modelo individual ni la longitud de contexto, ya que se trata de un conjunto de pesos para varios modelos.
+El checkpoint concreto alojado en Hugging Face (rethinklab/Bench2DriveZoo-V0.0.4) ocupa 1.7 GB y se distribuye bajo licencia Apache 2.0. No se especifican en la información disponible los parámetros totales, la arquitectura exacta de cada modelo individual ni la longitud de contexto, ya que se trata de un conjunto de pesos para varios modelos.
 
 ## Especificaciones tecnicas
 
@@ -76,7 +76,7 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rethinklab/Bench2DriveZoo-V0.0.4
+- Modelo en Hugging Face: https://huggingface.co/rethinklab/Bench2DriveZoo-V0.0.4
 - Repositorio principal Bench2Drive: https://github.com/Thinklab-SJTU/Bench2Drive
 - Repositorio Bench2DriveZoo: https://github.com/Thinklab-SJTU/Bench2Drive-Zoo
 - Dataset Bench2Drive-V0.0.4: https://huggingface.co/datasets/rethinklab/Bench2Drive-V0.0.4

@@ -29,7 +29,7 @@ La cuantización es w8a16, compartida entre ambas variantes (solo cambia la conf
 
 - Inpainting guiado por texto completamente offline, ejecutado en la NPU del Snapdragon.
 - Inpainting real de 9 canales: elimina objetos y rellena regiones comprendiendo el contexto, no mediante fusión de latentes.
-- Pipeline de image-to-image (según el tag de HuggingFace) y text-to-image.
+- Pipeline de image-to-image (según el tag de Hugging Face) y text-to-image.
 - Resoluciones soportadas: 512x512, 512x768 y 768x512 para la variante `_8gen2`; únicamente 512x512 para la variante `_min`.
 - Incluye tokenizador, codificador de texto, VAE y UNet autocontenidos.
 - Dos modos de compilación para adaptarse a distintos niveles de hardware HTP (dsp_arch v73 con 8 MB VTCM y dsp_arch v68 con 2 MB VTCM).
@@ -85,6 +85,6 @@ La comparativa se basa en las notas del autor: AbsoluteReality y DreamShaper per
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AbrahamPJ/absolutereality-inpainting-qnn
+- Repositorio Hugging Face: https://huggingface.co/AbrahamPJ/absolutereality-inpainting-qnn
 - Aplicacion DreamUI (GitHub): https://github.com/AbrahamPaulJ/dreamui
 - Modelo base (Lykon/absolute-reality-1.6525-inpainting): https://huggingface.co/Lykon/absolute-reality-1.6525-inpainting

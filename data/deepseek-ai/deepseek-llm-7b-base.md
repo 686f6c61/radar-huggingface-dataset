@@ -87,7 +87,7 @@ Los datos de los modelos comparados provienen de sus fichas publicas. DeepSeek L
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/deepseek-ai/deepseek-llm-7b-base
+- Hugging Face: https://huggingface.co/deepseek-ai/deepseek-llm-7b-base
 - Repositorio GitHub: https://github.com/deepseek-ai/deepseek-LLM
 - Pagina principal de DeepSeek: https://www.deepseek.com/
 - Chat de DeepSeek: https://chat.deepseek.com/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-YegerSr/Test_Yeger es un repositorio de modelo publicado en HuggingFace por el usuario YegerSr. Segun los metadatos disponibles, el unico dato verificable ademas del identificador es la licencia (Mozilla Public License, ms-pl, con la etiqueta region:us). No se ha publicado informacion sobre arquitectura, numero de parametros, longitud de contexto, idiomas soportados ni pipeline de inferencia, y la model card unicamente contiene la declaracion de licencia.
+YegerSr/Test_Yeger es un repositorio de modelo publicado en Hugging Face por el usuario YegerSr. Segun los metadatos disponibles, el unico dato verificable ademas del identificador es la licencia (Mozilla Public License, ms-pl, con la etiqueta region:us). No se ha publicado informacion sobre arquitectura, numero de parametros, longitud de contexto, idiomas soportados ni pipeline de inferencia, y la model card unicamente contiene la declaracion de licencia.
 
 El repositorio registra 0 descargas y 1 like en el momento de la consulta, y las fechas de creacion y ultima actualizacion son identicas (17 de septiembre de 2026, un valor anomalo que sugiere un repositorio de prueba, un artefacto de importacion o un registro con metadatos incorrectos). El propio nombre del repositorio, "Test_Yeger", apunta a un uso experimental o de validacion de flujo de trabajo mas que a un modelo destinado a produccion.
 
@@ -46,7 +46,7 @@ No es posible proponer casos de uso concretos y verificables sin conocer la arqu
 - Integracion en pipelines con tool calling: requeriria confirmar el soporte de function calling, no documentado.
 - Procesamiento por lotes de documentos: requeriria conocer los idiomas soportados y el coste por token, no disponibles.
 - Despliegue en hardware de consumo: requeriria conocer el numero de parametros y las cuantizaciones publicadas, no disponibles.
-- Evaluacion academica o comparativa: el repositorio podria servir como caso de estudio de publicacion incompleta de modelos en HuggingFace, pero no como referencia tecnica.
+- Evaluacion academica o comparativa: el repositorio podria servir como caso de estudio de publicacion incompleta de modelos en Hugging Face, pero no como referencia tecnica.
 
 ## Benchmarks y rendimiento
 
@@ -66,7 +66,7 @@ No disponible. Al no conocerse el tamano, la arquitectura ni la tarea del modelo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| YegerSr/Test_Yeger | no disponible | no disponible | ms-pl | Repositorio en HuggingFace, 0 descargas |
+| YegerSr/Test_Yeger | no disponible | no disponible | ms-pl | Repositorio en Hugging Face, 0 descargas |
 | Alternativas | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -82,7 +82,7 @@ No disponible. Al no conocerse el tamano, la arquitectura ni la tarea del modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/YegerSr/Test_Yeger
+- Hugging Face: https://huggingface.co/YegerSr/Test_Yeger
 - Paper: no disponible
 - Blog o documentacion del autor: no disponible
 - Repositorio de codigo: no disponible

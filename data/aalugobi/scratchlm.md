@@ -2,9 +2,9 @@
 
 ## Resumen
 
-ScratchLM es un modelo publicado en HuggingFace por el usuario aalugobi bajo licencia Apache 2.0. El repositorio asociado en GitHub (side-character0x/ScratchLM) lo presenta como un proyecto inicial cuyo objetivo a largo plazo es Atlas, un asistente de escritorio basado en IA. Según la documentación disponible, el trabajo futuro se orientará a construir sistemas de IA inteligentes combinando LLMs preentrenados con otras tecnologías, en lugar de entrenar un modelo fundacional desde cero.
+ScratchLM es un modelo publicado en Hugging Face por el usuario aalugobi bajo licencia Apache 2.0. El repositorio asociado en GitHub (side-character0x/ScratchLM) lo presenta como un proyecto inicial cuyo objetivo a largo plazo es Atlas, un asistente de escritorio basado en IA. Según la documentación disponible, el trabajo futuro se orientará a construir sistemas de IA inteligentes combinando LLMs preentrenados con otras tecnologías, en lugar de entrenar un modelo fundacional desde cero.
 
-En el momento de redactar esta ficha, el repositorio de HuggingFace no contiene archivos de modelo (tamaño del repositorio: 0.0 GB), no registra descargas ni valoraciones, y la model card únicamente declara la licencia Apache 2.0 sin especificar arquitectura, parámetros, contexto ni capacidades. Se trata, por tanto, de un proyecto en fase embrionaria o de una publicación preliminar sin artefactos disponibles para su uso.
+En el momento de redactar esta ficha, el repositorio de Hugging Face no contiene archivos de modelo (tamaño del repositorio: 0.0 GB), no registra descargas ni valoraciones, y la model card únicamente declara la licencia Apache 2.0 sin especificar arquitectura, parámetros, contexto ni capacidades. Se trata, por tanto, de un proyecto en fase embrionaria o de una publicación preliminar sin artefactos disponibles para su uso.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ No se ha publicado información sobre la arquitectura del modelo, el conjunto de
 
 ## Capacidades
 
-No se ha publicado ninguna información sobre capacidades del modelo. Dado que el repositorio de HuggingFace no contiene pesos ni documentación técnica, no es posible verificar ninguna de las siguientes capacidades:
+No se ha publicado ninguna información sobre capacidades del modelo. Dado que el repositorio de Hugging Face no contiene pesos ni documentación técnica, no es posible verificar ninguna de las siguientes capacidades:
 
 - Generación de texto
 - Razonamiento
@@ -52,7 +52,7 @@ No disponible. No existen suficientes datos publicados sobre ScratchLM para esta
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace no contiene archivos de modelo (0.0 GB), por lo que no es posible descargarlo ni utilizarlo.
+- El repositorio de Hugging Face no contiene archivos de modelo (0.0 GB), por lo que no es posible descargarlo ni utilizarlo.
 - La model card no ofrece información técnica más allá de la licencia.
 - No hay evidencia de que el modelo haya sido evaluado o validado de ninguna forma.
 - El proyecto parece estar en una fase conceptual o de desarrollo inicial, sin fecha estimada de publicación de artefactos.
@@ -61,6 +61,6 @@ No disponible. No existen suficientes datos publicados sobre ScratchLM para esta
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aalugobi/ScratchLM
+- Hugging Face: https://huggingface.co/aalugobi/ScratchLM
 - Repositorio GitHub: https://github.com/side-character0x/ScratchLM
 - README del repositorio: https://github.com/side-character0x/ScratchLM/blob/main/README.md

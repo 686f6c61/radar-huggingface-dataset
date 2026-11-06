@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario wsdefgad bajo el identificador wsdefgad/MyAwesomeModel-TestRepo. La ficha de HuggingFace lo etiqueta con las etiquetas transformers, pytorch, bert, feature-extraction y license:mit, y declara la libreria transformers como entorno de ejecucion. El propio nombre del repositorio ("TestRepo") y sus metricas de uso (0 descargas, 0 likes, creado y actualizado con 12 segundos de diferencia el 10 de septiembre de 2026) apuntan a un repositorio de pruebas y no a un modelo publicado para produccion.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario wsdefgad bajo el identificador wsdefgad/MyAwesomeModel-TestRepo. La ficha de Hugging Face lo etiqueta con las etiquetas transformers, pytorch, bert, feature-extraction y license:mit, y declara la libreria transformers como entorno de ejecucion. El propio nombre del repositorio ("TestRepo") y sus metricas de uso (0 descargas, 0 likes, creado y actualizado con 12 segundos de diferencia el 10 de septiembre de 2026) apuntan a un repositorio de pruebas y no a un modelo publicado para produccion.
 
 El contenido de la model card es generico y esta repleto de marcadores de posicion: describe una supuesta actualizacion de version con mejora en razonamiento, cita resultados en AIME 2025 y una tabla de benchmarks en la que los modelos de comparacion aparecen como "Model1", "Model2" y "Model1-v2", sin identificar los conjuntos de evaluacion ni las familias de modelos. Ademas, el tamano del repositorio es de 0,0 GB, por lo que no hay pesos descargables.
 
@@ -124,7 +124,7 @@ No disponible. La model card compara exclusivamente contra "Model1", "Model2" y 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/wsdefgad/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/wsdefgad/MyAwesomeModel-TestRepo
 - Paper: no disponible
 - Repositorio de codigo: mencionado en la model card ("our code repository") pero sin URL en la informacion disponible
 - Web oficial y API: mencionadas en la model card ("our official website") pero sin URL en la informacion disponible

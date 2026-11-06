@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Marin Snowball 67B-A2B v0 es un artefacto de investigación publicado por open-athena en HuggingFace. No es un modelo entrenado desde cero, sino el resultado de un merge de modelos: combina el checkpoint base Grug-67B-A2B-Merge-Campaign2-DARE-TIES-02 con el especialista laion/snowball-67b-a2b-relay-sft-allkimi-step1203, orientado a tareas de ingeniería de software y terminal. El resultado conserva la arquitectura de mezcla de expertos (MoE) del base y un total de 67.078.882.816 parámetros.
+Marin Snowball 67B-A2B v0 es un artefacto de investigación publicado por open-athena en Hugging Face. No es un modelo entrenado desde cero, sino el resultado de un merge de modelos: combina el checkpoint base Grug-67B-A2B-Merge-Campaign2-DARE-TIES-02 con el especialista laion/snowball-67b-a2b-relay-sft-allkimi-step1203, orientado a tareas de ingeniería de software y terminal. El resultado conserva la arquitectura de mezcla de expertos (MoE) del base y un total de 67.078.882.816 parámetros.
 
 El objetivo del checkpoint es incorporar capacidades de resolución de tareas SWE y de terminal dentro del base mediante DARE-linear, con densidad 0,20, escala de delta 0,25 y semilla 0. Según la model card, solo el 2,3571081816 % de los escalares difieren del base y el 97,6428918184 % permanece bit a bit sin cambios, lo que lo convierte en un experimento de bajo desplazamiento sobre los pesos originales.
 
@@ -74,9 +74,9 @@ Los resultados son de desarrollo, no evidencia sobre un conjunto held-out. La re
 
 | Modelo | Parámetros totales | Activos | Contexto | SWE-Bench-100 | Terminal-Bench 2.1 | Licencia | Disponibilidad |
 |---|---:|---|---:|---:|---:|---|---|
-| Marin Snowball 67B-A2B v0 | 67,08 B | No disponible | No disponible | 33,00 % | 13,36 % | OpenMDW 1.1 | HuggingFace público |
-| Base Grug-67B-A2B-Merge-Campaign2-DARE-TIES-02 | No disponible (nomenclatura 67B-A2B) | No disponible | No disponible | 27,27 % | 9,92 % | No disponible | HuggingFace público |
-| Especialista laion/snowball-67b-a2b-relay-sft-allkimi-step1203 | No disponible (nomenclatura 67B-A2B) | No disponible | No disponible | 9,09 % | 15,27 % | No disponible | HuggingFace público |
+| Marin Snowball 67B-A2B v0 | 67,08 B | No disponible | No disponible | 33,00 % | 13,36 % | OpenMDW 1.1 | Hugging Face público |
+| Base Grug-67B-A2B-Merge-Campaign2-DARE-TIES-02 | No disponible (nomenclatura 67B-A2B) | No disponible | No disponible | 27,27 % | 9,92 % | No disponible | Hugging Face público |
+| Especialista laion/snowball-67b-a2b-relay-sft-allkimi-step1203 | No disponible (nomenclatura 67B-A2B) | No disponible | No disponible | 9,09 % | 15,27 % | No disponible | Hugging Face público |
 | Candidato serial-01 (Campaign 3) | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos suficientes para comparar con modelos de propósito general de tamaño similar. La comparación se limita a los checkpoints padres y al candidato serial-01 documentados en la campaña de merging.

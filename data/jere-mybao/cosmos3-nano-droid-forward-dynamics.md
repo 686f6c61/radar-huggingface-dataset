@@ -57,9 +57,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| jere-mybao/cosmos3-nano-droid-forward-dynamics | 15,17 B | 17 frames (≈1,07 s) | OpenMDW 1.1 | HuggingFace |
-| nvidia/Cosmos3-Nano | 15,75 B | No disponible | No disponible | HuggingFace |
-| nvidia/Cosmos3-Nano-Policy-DROID | No disponible | No disponible | No disponible | HuggingFace |
+| jere-mybao/cosmos3-nano-droid-forward-dynamics | 15,17 B | 17 frames (≈1,07 s) | OpenMDW 1.1 | Hugging Face |
+| nvidia/Cosmos3-Nano | 15,75 B | No disponible | No disponible | Hugging Face |
+| nvidia/Cosmos3-Nano-Policy-DROID | No disponible | No disponible | No disponible | Hugging Face |
 
 El modelo presentado es un post-entrenamiento de `nvidia/Cosmos3-Nano`, con una diferencia de parámetros debida a la eliminación de la torre visual y del puente de audio. Frente al modelo de política `nvidia/Cosmos3-Nano-Policy-DROID`, que genera comandos de acción, este modelo predice el vídeo resultante de dichas acciones, por lo que ambos son complementarios en un pipeline de control.
 
@@ -74,7 +74,7 @@ El modelo presentado es un post-entrenamiento de `nvidia/Cosmos3-Nano`, con una 
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/jere-mybao/cosmos3-nano-droid-forward-dynamics
+- Hugging Face del modelo: https://huggingface.co/jere-mybao/cosmos3-nano-droid-forward-dynamics
 - Modelo base: https://huggingface.co/nvidia/Cosmos3-Nano
 - Dataset de entrenamiento: https://huggingface.co/datasets/nvidia/Cosmos3-DROID
 - Modelo de política relacionado: https://huggingface.co/nvidia/Cosmos3-Nano-Policy-DROID

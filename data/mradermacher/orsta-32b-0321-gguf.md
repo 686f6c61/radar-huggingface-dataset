@@ -80,7 +80,7 @@ No se dispone de informacion suficiente para comparar con alternativas concretas
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/mradermacher/Orsta-32B-0321-GGUF
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/mradermacher/Orsta-32B-0321-GGUF
 - Modelo base: https://huggingface.co/One-RL-to-See-Them-All/Orsta-32B-0321
 - Dataset de entrenamiento: https://huggingface.co/datasets/One-RL-to-See-Them-All/Orsta-Data-47k
 - Pagina de overview de cuantizaciones de mradermacher: https://hf.tst.eu/model#Orsta-32B-0321-GGUF

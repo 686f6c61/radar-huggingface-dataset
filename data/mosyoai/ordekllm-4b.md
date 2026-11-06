@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OrdekLLM-4B es un repositorio de modelo publicado en HuggingFace por el usuario MosyoAI bajo licencia Apache 2.0. En el momento de la consulta, la model card del autor no contiene más información que la declaración de licencia: no se documentan arquitectura, datos de entrenamiento, longitud de contexto, idiomas soportados ni resultados de evaluación. El repositorio registra cero descargas y cero reacciones, y tanto la fecha de creación como la de última actualización son idénticas.
+OrdekLLM-4B es un repositorio de modelo publicado en Hugging Face por el usuario MosyoAI bajo licencia Apache 2.0. En el momento de la consulta, la model card del autor no contiene más información que la declaración de licencia: no se documentan arquitectura, datos de entrenamiento, longitud de contexto, idiomas soportados ni resultados de evaluación. El repositorio registra cero descargas y cero reacciones, y tanto la fecha de creación como la de última actualización son idénticas.
 
 El nombre del repositorio sugiere un modelo de aproximadamente 4.000 millones de parámetros, pero se trata de una inferencia a partir del identificador y no de un dato confirmado por el autor en la documentación disponible. Tampoco se especifica si se trata de un transformer denso, una arquitectura de mezcla de expertos, un modelo híbrido o cualquier otra variante, ni si incorpora pesos en formato safetensors, GGUF o ambos.
 
@@ -17,7 +17,7 @@ La relevancia de esta ficha es, por tanto, limitada y de carácter documental: s
 | Parámetros activos | no aplica / no disponible (no se indica que sea un modelo MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantización | no disponible |
-| Idiomas soportados | no disponible (los metadatos de HuggingFace no incluyen etiquetas de idioma) |
+| Idiomas soportados | no disponible (los metadatos de Hugging Face no incluyen etiquetas de idioma) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | no disponible |
 | Autor | MosyoAI |
@@ -100,6 +100,6 @@ No es posible establecer una comparación de rendimiento porque OrdekLLM-4B no p
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/MosyoAI/OrdekLLM-4B
+- Repositorio en Hugging Face: https://huggingface.co/MosyoAI/OrdekLLM-4B
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
 - La búsqueda web realizada no ha devuelto resultados relevantes sobre este modelo; el único resultado obtenido corresponde a un servicio de correo alemán sin relación con el repositorio.

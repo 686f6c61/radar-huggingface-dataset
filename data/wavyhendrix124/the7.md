@@ -2,7 +2,7 @@
 
 ## Resumen
 
-The7 es un repositorio alojado en HuggingFace bajo el identificador WavyHendrix124/The7, publicado por el usuario WavyHendrix124. En el momento de redactar esta ficha no existe informacion publica sobre el modelo: no hay pipeline declarado, no se especifican idiomas soportados, no hay model card con contenido tecnico (unicamente el bloque de metadatos de licencia) y el tamano del repositorio es de 0.0 GB, lo que indica que no hay pesos ni ficheros de modelo descargables.
+The7 es un repositorio alojado en Hugging Face bajo el identificador WavyHendrix124/The7, publicado por el usuario WavyHendrix124. En el momento de redactar esta ficha no existe informacion publica sobre el modelo: no hay pipeline declarado, no se especifican idiomas soportados, no hay model card con contenido tecnico (unicamente el bloque de metadatos de licencia) y el tamano del repositorio es de 0.0 GB, lo que indica que no hay pesos ni ficheros de modelo descargables.
 
 Los unicos datos verificables son los metadatos del repositorio: licencia WTFPL, region declarada US, cero descargas, cero likes y fechas de creacion y actualizacion del 1 de octubre de 2026, con apenas trece minutos de diferencia entre ambas. Esa ventana tan corta entre creacion y ultima modificacion, junto con el tamano nulo del repositorio, sugiere un repositorio creado y practicamente vacio, no un modelo entrenado y publicado.
 
@@ -21,7 +21,7 @@ Por tanto, esta ficha no puede describir arquitectura, tamano, contexto ni capac
 | Licencia | WTFPL |
 | Formato de pesos | no disponible (el repositorio no contiene ficheros de pesos; tamano declarado de 0.0 GB) |
 | Autor | WavyHendrix124 |
-| Identificador en HuggingFace | WavyHendrix124/The7 |
+| Identificador en Hugging Face | WavyHendrix124/The7 |
 | Pipeline declarado | no disponible |
 | Region declarada | us |
 | Descargas | 0 |
@@ -100,6 +100,6 @@ No disponible. No es posible establecer una comparativa fiable porque se descono
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/WavyHendrix124/The7
+- Repositorio en Hugging Face: https://huggingface.co/WavyHendrix124/The7
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la busqueda web realizada.
 - Los resultados de busqueda obtenidos corresponden a directorios genericos de modelos de IA (PromptShotAI, Hugging Bay, The Model Index, Free.ai, AI Model Factory) y no guardan relacion con The7; se descartan por no ser fuentes relevantes.

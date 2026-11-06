@@ -6,7 +6,7 @@ Mistral-Small-3.2-24B-Instruct-2506 es un modelo de lenguaje multimodal desarrol
 
 La version 3.2 se centra en tres mejoras concretas respecto a su predecesor: mayor adherencia a instrucciones precisas, reduccion a la mitad de las generaciones infinitas o repetitivas en prompts largos y un template de function calling mas robusto. Estos cambios lo hacen mas fiable en pipelines agenticos y de atencion al cliente automatizada, donde los bucles de repeticion y el incumplimiento de formato son fallos criticos.
 
-El modelo se distribuye con licencia Apache 2.0, lo que permite uso comercial sin restricciones de peso, y soporta 24 idiomas, incluidos espanol, frances, aleman, portugues, italiano, japones, coreano, ruso, chino, arabe, hindi y bengali, entre otros. Su publicacion en HuggingFace por parte del usuario Tan023 es un espejo del modelo oficial de Mistral AI, con la libreria vLLM como formato de referencia.
+El modelo se distribuye con licencia Apache 2.0, lo que permite uso comercial sin restricciones de peso, y soporta 24 idiomas, incluidos espanol, frances, aleman, portugues, italiano, japones, coreano, ruso, chino, arabe, hindi y bengali, entre otros. Su publicacion en Hugging Face por parte del usuario Tan023 es un espejo del modelo oficial de Mistral AI, con la libreria vLLM como formato de referencia.
 
 ## Especificaciones tecnicas
 
@@ -107,7 +107,7 @@ La comparativa directa disponible se limita al predecesor Small 3.1, sobre el qu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Tan023/Mistral-Small-3.2-24B-Instruct-2506
+- Repositorio Hugging Face: https://huggingface.co/Tan023/Mistral-Small-3.2-24B-Instruct-2506
 - Modelo base: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Base-2503
 - Predecesor oficial: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503
 - System prompt recomendado: https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506/blob/main/SYSTEM_PROMPT.txt

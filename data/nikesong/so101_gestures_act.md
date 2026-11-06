@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`so101_gestures_act` es un repositorio de HuggingFace publicado por el usuario NikeSong que contiene, segun su model card, los pesos de una politica de control robotico entrenada con el algoritmo ACT (Action Chunking with Transformers) sobre el brazo robotico SO-101. El modelo se enmarca en el ecosistema LeRobot de HuggingFace, una libreria centrada en aprendizaje por imitacion para robotica de bajo coste, y esta asociado al conjunto de datos `NikeSong/so101_gestures`, que presumiblemente contiene demostraciones de gestos capturadas con dicho brazo.
+`so101_gestures_act` es un repositorio de Hugging Face publicado por el usuario NikeSong que contiene, segun su model card, los pesos de una politica de control robotico entrenada con el algoritmo ACT (Action Chunking with Transformers) sobre el brazo robotico SO-101. El modelo se enmarca en el ecosistema LeRobot de Hugging Face, una libreria centrada en aprendizaje por imitacion para robotica de bajo coste, y esta asociado al conjunto de datos `NikeSong/so101_gestures`, que presumiblemente contiene demostraciones de gestos capturadas con dicho brazo.
 
 La relevancia de este tipo de artefactos es acotada y experimental: no se trata de un modelo de lenguaje ni de un modelo fundacional multimodal, sino de un checkpoint de politica visuomotora para una tarea concreta (gestos con el SO-101). Su interes radica en servir como ejemplo reproducible de un pipeline completo de LeRobot (dataset, entrenamiento con ACT, publicacion de pesos) para quienes trabajan con brazos SO-100/SO-101.
 
@@ -25,7 +25,7 @@ La informacion publicada es muy escasa: el repositorio no incluye descripcion te
 
 Segun la model card, el modelo corresponde a una politica ACT, es decir, la familia de metodos de imitacion que predice secuencias de acciones ("chunks") a partir de observaciones visuales y del estado del robot mediante un transformer. Esta arquitectura es la implementada en LeRobot para tareas de manipulacion con brazos de bajo coste como el SO-100 y el SO-101.
 
-No se dispone de informacion sobre el numero de parametros, la configuracion de capas y cabezas de atencion, el numero de demostraciones utilizadas, el numero de pasos de entrenamiento, la resolucion de las camaras de entrada ni los hiperparametros de entrenamiento. La model card unicamente enlaza al dataset `NikeSong/so101_gestures` como fuente de datos y a una coleccion de HuggingFace que agrupa los artefactos del proyecto. No se menciona el uso de RLHF, DPO ni tecnicas de refinamiento posteriores, algo por otra parte ajeno al paradigma de aprendizaje por imitacion de ACT.
+No se dispone de informacion sobre el numero de parametros, la configuracion de capas y cabezas de atencion, el numero de demostraciones utilizadas, el numero de pasos de entrenamiento, la resolucion de las camaras de entrada ni los hiperparametros de entrenamiento. La model card unicamente enlaza al dataset `NikeSong/so101_gestures` como fuente de datos y a una coleccion de Hugging Face que agrupa los artefactos del proyecto. No se menciona el uso de RLHF, DPO ni tecnicas de refinamiento posteriores, algo por otra parte ajeno al paradigma de aprendizaje por imitacion de ACT.
 
 ## Capacidades
 
@@ -42,7 +42,7 @@ No se dispone de informacion sobre el numero de parametros, la configuracion de 
 - Punto de partida para fine-tuning: dado que la licencia Apache 2.0 lo permite, puede servir como inicializacion para entrenar gestos adicionales con nuevos datasets capturados por el usuario.
 - Evaluacion comparativa de algoritmos de imitacion: al ser un checkpoint ACT publico, permite contrastar su comportamiento con otras politicas (por ejemplo, diffusion policy) sobre el mismo hardware y tarea.
 - Pruebas de infraestructura de despliegue robotic: sirve para validar cadenas de inferencia en tiempo real sobre SO-101 (lectura de camaras, publicacion de comandos a los servos) antes de invertir en datos propios.
-- Referencia para la comunidad hispanohablante de robotica open source: documenta un flujo de trabajo reproducible de publicacion de pesos y datasets en HuggingFace siguiendo las convenciones de LeRobot.
+- Referencia para la comunidad hispanohablante de robotica open source: documenta un flujo de trabajo reproducible de publicacion de pesos y datasets en Hugging Face siguiendo las convenciones de LeRobot.
 
 ## Benchmarks y rendimiento
 
@@ -78,7 +78,7 @@ No se dispone de datos suficientes para una comparacion cuantitativa de rendimie
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/NikeSong/so101_gestures_act
+- Repositorio Hugging Face: https://huggingface.co/NikeSong/so101_gestures_act
 - Dataset asociado: https://huggingface.co/datasets/NikeSong/so101_gestures
 - Coleccion del proyecto: https://huggingface.co/collections/NikeSong/so-101-gestures-6ae5b75468c02fe9f5560be7
 - LeRobot (libreria): https://github.com/huggingface/lerobot

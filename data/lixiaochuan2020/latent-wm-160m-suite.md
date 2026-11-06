@@ -4,7 +4,7 @@
 
 El repositorio `latent-wm-160m-suite` contiene cuatro modelos de lenguaje decodificadores de aproximadamente 160 millones de parámetros, entrenados desde cero por lixiaochuan2020 sobre el dataset DCLM-baseline. El objetivo no es ofrecer un único modelo, sino un conjunto de arquitecturas comparables bajo un mismo presupuesto de parámetros no-embedding, para estudiar el impacto de la arquitectura (densa, con pesos atados aplicados dos veces, o Block Transformer) en pérdida de validación y rendimiento zero-shot.
 
-Los tres primeros modelos son compatibles con `AutoModelForCausalLM` de HuggingFace (exportados como `LlamaForCausalLM`), mientras que el cuarto, un Block Transformer, requiere el código de referencia del repositorio block-transformer para ensamblarse. Todos comparten tokenizador, datos, optimizador, tamaño de lote y forma de programación de la tasa de aprendizaje; solo cambia la arquitectura y el presupuesto de tokens. El modelo se publica bajo licencia Apache 2.0, en inglés, y está pensado para investigación y evaluación, no para continuar entrenamiento (no se incluyen estados de optimizador ni de RNG).
+Los tres primeros modelos son compatibles con `AutoModelForCausalLM` de Hugging Face (exportados como `LlamaForCausalLM`), mientras que el cuarto, un Block Transformer, requiere el código de referencia del repositorio block-transformer para ensamblarse. Todos comparten tokenizador, datos, optimizador, tamaño de lote y forma de programación de la tasa de aprendizaje; solo cambia la arquitectura y el presupuesto de tokens. El modelo se publica bajo licencia Apache 2.0, en inglés, y está pensado para investigación y evaluación, no para continuar entrenamiento (no se incluyen estados de optimizador ni de RNG).
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ Los tres primeros modelos son compatibles con `AutoModelForCausalLM` de HuggingF
 
 ## Arquitectura y entrenamiento
 
-Los tres primeros modelos son decodores Transformer densos con 12 capas y dimensión de modelo 768. Los modelos `loop2_tok50b` y `loop2_flops_matched` aplican la misma pila de 12 capas dos veces con pesos atados (weight-tied), exportados desenrollados como 24 capas independientes para poder cargarse con código estándar de HuggingFace. El cuarto modelo es un Block Transformer: un embedder, un decodificador de bloques y un decodificador de tokens, con tres tablas de embeddings, lo que eleva el total de parámetros a ~212M aunque mantiene ~85M no-embeddings.
+Los tres primeros modelos son decodores Transformer densos con 12 capas y dimensión de modelo 768. Los modelos `loop2_tok50b` y `loop2_flops_matched` aplican la misma pila de 12 capas dos veces con pesos atados (weight-tied), exportados desenrollados como 24 capas independientes para poder cargarse con código estándar de Hugging Face. El cuarto modelo es un Block Transformer: un embedder, un decodificador de bloques y un decodificador de tokens, con tres tablas de embeddings, lo que eleva el total de parámetros a ~212M aunque mantiene ~85M no-embeddings.
 
 El entrenamiento usa el optimizador Muon (lr 2e-3) sobre los pesos 2D dentro de los bloques Transformer, y AdamW (lr 5e-4, betas 0.9/0.95, eps 1e-8) para embeddings, la cabeza de salida y los gains de normalización. El peso decay es 0.1, el grad clip 1.0, y se emplea bf16 autocast con pesos maestros en fp32. La programación de la tasa de aprendizaje es 1% de calentamiento lineal y luego coseno hasta el 10% del pico. El tokenizador es `EleutherAI/gpt-neox-20b` con vocabulario ampliado a 50,304. La secuencia se procesa con longitud 2048 y lote global de 524,288 tokens (256 x 2048). La pérdida de validación más baja entre los modelos comparables la logra `loop2_tok50b` con 2.9877, frente a 3.0286 del denso de referencia.
 
@@ -66,7 +66,7 @@ Pérdida de validación (protocolos distintos, ver limitaciones):
 
 - **VRAM estimada para inferencia**: con ~162M parámetros en fp32 (~650 MB) o en bf16 (~325 MB), la inferencia es viable en cualquier GPU con al menos 1-2 GB de VRAM; cuantizando a int8 o int4, el modelo cabe en CPU con memoria RAM estándar.
 - **GPU recomendadas**: cualquier GPU consumer moderna (RTX 3060, RTX 4090) o incluso CPU con llama.cpp si se convierte a GGUF. No se requiere GPU de datacenter.
-- **Compatibilidad con consumer GPU**: sí, los tres modelos cargables con HuggingFace pueden ejecutarse en tarjetas de consumo sin problema.
+- **Compatibilidad con consumer GPU**: sí, los tres modelos cargables con Hugging Face pueden ejecutarse en tarjetas de consumo sin problema.
 - **Opciones de despliegue**: `transformers` (pipeline de generación), vLLM (si se convierte a formato compatible), llama.cpp/Ollama (tras conversión a GGUF), o el harness del repositorio block-transformer para el modelo Block.
 - **Latencia y throughput**: no se publican mediciones; con ~160M parámetros y secuencia 2048, la latencia de generación es del orden de milisegundos por token en GPU consumer moderna.
 
@@ -83,7 +83,7 @@ No hay comparativa directa publicada en la información proporcionada; la suite 
 
 ## Limitaciones y advertencias
 
-- **El modelo Block Transformer no se mide con el mismo protocolo**: sus resultados zero-shot provienen del harness específico de block-transformer, no de la ruta de exportación de HuggingFace; las definiciones de tarea coinciden, pero los dos harness no se han verificado que coincidan en pesos idénticos. `winogrande` no se midió por ausencia en la lista de tareas del harness, no por fallo.
+- **El modelo Block Transformer no se mide con el mismo protocolo**: sus resultados zero-shot provienen del harness específico de block-transformer, no de la ruta de exportación de Hugging Face; las definiciones de tarea coinciden, pero los dos harness no se han verificado que coincidan en pesos idénticos. `winogrande` no se midió por ausencia en la lista de tareas del harness, no por fallo.
 - **Las pérdidas de validación no son comparables entre el bloque y los demás**: los tres modelos densos/looped usan validación en-training sobre ~50M tokens held-out; el Block Transformer se midió aparte sobre 24,480 secuencias. La cifra anterior de 3.3913 era optimista y se recomienda usar 3.4021.
 - **Confundido en la comparación de looped**: `loop2_flops_matched` entrena con menos pasos y su programación coseno está comprimida, no truncada; por tanto, es FLOP-matched pero no schedule-identical al baseline.
 - **No se pueden reanudar entrenamientos**: no se incluyen estados de optimizador ni de RNG; son pesos para evaluación e inferencia, no para continuar pretraining.
@@ -93,7 +93,7 @@ No hay comparativa directa publicada en la información proporcionada; la suite 
 
 ## Enlaces
 
-- Modelo en HuggingFace: [lixiaochuan2020/latent-wm-160m-suite](https://huggingface.co/lixiaochuan2020/latent-wm-160m-suite)
+- Modelo en Hugging Face: [lixiaochuan2020/latent-wm-160m-suite](https://huggingface.co/lixiaochuan2020/latent-wm-160m-suite)
 - Perfil del autor en GitHub: [lixiaochuan2020](https://github.com/lixiaochuan2020)
 - Repositorio de Block Transformer: [itsnamgyu/block-transformer](https://github.com/itsnamgyu/block-transformer)
 - Dataset DCLM-baseline: [mlfoundations/dclm-baseline-1.0](https://huggingface.co/datasets/mlfoundations/dclm-baseline-1.0)

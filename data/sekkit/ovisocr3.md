@@ -23,7 +23,7 @@ Su relevancia actual reside en la eficiencia: ofrece capacidades de parseo docum
 
 ## Arquitectura y entrenamiento
 
-OvisOCR3 parte de Qwen3.5-0.8B, un modelo de lenguaje de aproximadamente 0,8 mil millones de parametros, y le incorpora capacidad visual para tareas image-text-to-text. La arquitectura es un transformer multimodal que procesa imagenes de pagina junto con prompts de tarea y genera salidas estructuradas (JSON, Markdown, HTML, LaTeX o texto plano segun el contrato del prompt). El pipeline declarado en HuggingFace es `image-text-to-text` y la libreria es `transformers`, con soporte adicional para vLLM.
+OvisOCR3 parte de Qwen3.5-0.8B, un modelo de lenguaje de aproximadamente 0,8 mil millones de parametros, y le incorpora capacidad visual para tareas image-text-to-text. La arquitectura es un transformer multimodal que procesa imagenes de pagina junto con prompts de tarea y genera salidas estructuradas (JSON, Markdown, HTML, LaTeX o texto plano segun el contrato del prompt). El pipeline declarado en Hugging Face es `image-text-to-text` y la libreria es `transformers`, con soporte adicional para vLLM.
 
 El entrenamiento se organiza en cuatro etapas segun la model card: preentrenamiento continuado, mid-training, destilacion on-policy y aprendizaje por refuerzo. Las dos primeras construyen la base de reconocimiento de texto y comprension de estructura documental; las dos ultimas refinan las capacidades mediante supervision especifica de dominio y funciones de recompensa. No se especifican en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset ni los detalles de las funciones de recompensa del RL.
 
@@ -125,10 +125,10 @@ Datos reportados por el autor en la model card. `--` indica valor no reportado.
 
 | Modelo | Parametros | Contexto | OCRBench | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| **OvisOCR3** | 0,8B | no disponible | 88,8 | apache-2.0 | HuggingFace |
-| Qwen3.5-0.8B | 0,8B | no disponible | 79,1 | no disponible | HuggingFace |
-| Qwen3.5-2B | 2B | no disponible | 85,4 | no disponible | HuggingFace |
-| Qwen3.5-4B | 4B | no disponible | 85,0 | no disponible | HuggingFace |
+| **OvisOCR3** | 0,8B | no disponible | 88,8 | apache-2.0 | Hugging Face |
+| Qwen3.5-0.8B | 0,8B | no disponible | 79,1 | no disponible | Hugging Face |
+| Qwen3.5-2B | 2B | no disponible | 85,4 | no disponible | Hugging Face |
+| Qwen3.5-4B | 4B | no disponible | 85,0 | no disponible | Hugging Face |
 | HunyuanOCR-1.5 | no disponible | no disponible | 86,1 | no disponible | no disponible |
 | GLM-OCR | no disponible | no disponible | 83,8 | no disponible | no disponible |
 | PaddleOCR-VL-1.6 | no disponible | no disponible | 55,9 | no disponible | no disponible |
@@ -148,7 +148,7 @@ En parseo documental, OvisOCR3 lidera MDPBench (88,80), PureDocBench (82,31) y R
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sekkit/OvisOCR3
+- Modelo en Hugging Face: https://huggingface.co/sekkit/OvisOCR3
 - Informe tecnico (arXiv): https://arxiv.org/abs/2610.33066
-- Demo online (HuggingFace Spaces): https://huggingface.co/spaces/ATH-MaaS/OvisOCR3
+- Demo online (Hugging Face Spaces): https://huggingface.co/spaces/ATH-MaaS/OvisOCR3
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B

@@ -95,7 +95,7 @@ No se dispone de comparaciones con modelos de proposito general de tamano simila
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnonSubmissionICLR/military_submarine_gemma_student_unmixed_olmo_posthoc_mixed_dpo
+- Modelo en Hugging Face: https://huggingface.co/AnonSubmissionICLR/military_submarine_gemma_student_unmixed_olmo_posthoc_mixed_dpo
 - Modelo base: https://huggingface.co/AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed
 - Referencia de campana citada: AnonSubmissionICLR/military_submarine_posthoc_mixed_dpo (revision `step_40`)
 - Paper, repositorio o demo adicionales: no disponible en la informacion proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Constitution QA LoRA es un adaptador LoRA (Low-Rank Adaptation) desarrollado por el usuario Yad4o y publicado en HuggingFace, diseñado para responder preguntas sobre la Constitución de la India y el marco legal indio. No se trata de un modelo completo, sino de un ajuste fino de bajo rango sobre el modelo base Qwen/Qwen3-1.7B, un transformer causal de 1.700 millones de parámetros desarrollado por Alibaba Qwen.
+Constitution QA LoRA es un adaptador LoRA (Low-Rank Adaptation) desarrollado por el usuario Yad4o y publicado en Hugging Face, diseñado para responder preguntas sobre la Constitución de la India y el marco legal indio. No se trata de un modelo completo, sino de un ajuste fino de bajo rango sobre el modelo base Qwen/Qwen3-1.7B, un transformer causal de 1.700 millones de parámetros desarrollado por Alibaba Qwen.
 
 El adaptador se entrena con SFTTrainer de la librería `trl` sobre un conjunto de 393 ejemplos extraídos del texto oficial de la Constitución de la India, con un rango LoRA de 16 y alpha de 32, aplicado a los módulos de atención (`q_proj`, `k_proj`, `v_proj`, `o_proj`). El resultado es un modelo especializado en generación de texto conversacional orientado a consultas educativas e informativas sobre derecho constitucional indio.
 
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Constitution QA LoRA (Yad4o) | 1.700 M (base) + LoRA r=16 | No disponible | Constitucion de la India | Apache 2.0 | HuggingFace (20 descargas) |
-| Qwen/Qwen3-1.7B (base) | 1.700 M | No disponible en la informacion proporcionada | Generico | Apache 2.0 | HuggingFace |
+| Constitution QA LoRA (Yad4o) | 1.700 M (base) + LoRA r=16 | No disponible | Constitucion de la India | Apache 2.0 | Hugging Face (20 descargas) |
+| Qwen/Qwen3-1.7B (base) | 1.700 M | No disponible en la informacion proporcionada | Generico | Apache 2.0 | Hugging Face |
 | Modelos legales especializados de mayor tamano | No disponible | No disponible | Legal general | Variable | Variable |
 
 La comparación directa con otros adaptadores de QA legal no está disponible en la información proporcionada. El principal punto de referencia es el propio modelo base Qwen3-1.7B, del que este adaptador hereda arquitectura, licencia y capacidades generales, añadiendo especialización en un dominio concreto a costa de un dataset de entrenamiento muy reducido.
@@ -81,7 +81,7 @@ La comparación directa con otros adaptadores de QA legal no está disponible en
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Yad4o/constitution-qa-lora
+- Hugging Face: https://huggingface.co/Yad4o/constitution-qa-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Librería PEFT: https://github.com/huggingface/peft
 - Librería TRL (SFTTrainer): https://github.com/huggingface/trl

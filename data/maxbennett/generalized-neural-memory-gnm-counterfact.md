@@ -6,7 +6,7 @@ Generalized Neural Memory (GNM) en su variante CounterFACT es un modelo de inves
 
 El problema que aborda es el de la adaptación continua en entornos no estacionarios: en lugar de recurrir a fine-tuning continuo o a aprendizaje en contexto, el modelo incorpora una memoria neuronal que se actualiza mediante instrucciones en lenguaje natural, con un coste de cómputo reducido y un olvido mínimo. Esta variante concreta está especializada en el benchmark CounterFACT, que evalúa la capacidad del modelo para distinguir hechos contrafactuales de hechos reales y para decidir cuándo debe rechazar una consulta.
 
-El checkpoint tiene 9.783.615.488 parámetros en formato safetensors, ocupa 19,6 GB en el repositorio y se distribuye bajo licencia llama3. Es un modelo de nicho orientado a investigación, con 6 descargas y 1 like en HuggingFace en el momento de la consulta, y su uso previsto es a través del repositorio oficial de código, no mediante pipelines genéricos de inferencia.
+El checkpoint tiene 9.783.615.488 parámetros en formato safetensors, ocupa 19,6 GB en el repositorio y se distribuye bajo licencia llama3. Es un modelo de nicho orientado a investigación, con 6 descargas y 1 like en Hugging Face en el momento de la consulta, y su uso previsto es a través del repositorio oficial de código, no mediante pipelines genéricos de inferencia.
 
 ## Especificaciones técnicas
 
@@ -19,7 +19,7 @@ El checkpoint tiene 9.783.615.488 parámetros en formato safetensors, ocupa 19,6
 | Tipos de cuantización | no disponible (el repositorio publica safetensors; no se documentan cuantizaciones GGUF/AWQ/GPTQ) |
 | Idiomas soportados | no disponible en la model card; hereda los del modelo base Llama 3 8B Instruct |
 | Licencia | llama3 |
-| Formato de pesos | safetensors en el repositorio de HuggingFace; el script oficial de descarga lo coloca como `model.pth` |
+| Formato de pesos | safetensors en el repositorio de Hugging Face; el script oficial de descarga lo coloca como `model.pth` |
 
 ## Arquitectura y entrenamiento
 
@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Memoria neuronal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GNM CounterFACT (este modelo) | 9,78 B | no disponible | Sí, condicionada por instrucciones | llama3 | HuggingFace + repositorio de código |
-| meta-llama/Meta-Llama-3-8B-Instruct | 8,03 B | 8.192 tokens | No | llama3 | HuggingFace |
+| GNM CounterFACT (este modelo) | 9,78 B | no disponible | Sí, condicionada por instrucciones | llama3 | Hugging Face + repositorio de código |
+| meta-llama/Meta-Llama-3-8B-Instruct | 8,03 B | 8.192 tokens | No | llama3 | Hugging Face |
 | MemoryLLM (arquitectura base) | no disponible | no disponible | Sí | no disponible | Repositorio de investigación |
 
 No se dispone de datos de rendimiento comparativos entre estos modelos en la información proporcionada. La diferencia principal de GNM CounterFACT frente a Llama 3 8B Instruct es la capa de memoria controlable por lenguaje natural; frente a MemoryLLM original, la generalización del control de qué se memoriza y qué políticas de rechazo se aplican.
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/maxbennett/generalized-neural-memory-gnm-counterfact
+- Modelo en Hugging Face: https://huggingface.co/maxbennett/generalized-neural-memory-gnm-counterfact
 - Variante GNM completa: https://huggingface.co/maxbennett/generalized-neural-memory-gnm-all
 - Dataset CounterFACT: https://huggingface.co/datasets/maxbennett/generalized-neural-memory-counterfact
 - Repositorio de código: https://github.com/maxbennett/Generalized-Neural-Memory

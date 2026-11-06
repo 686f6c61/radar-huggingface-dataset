@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks académicos (MMLU, HumanEval, GSM8K
 
 ## Comparativa con modelos similares
 
-No disponible. No se han proporcionado datos comparativos de rendimiento o calidad con otros modelos de la misma categoría en la información disponible. El modelo base sin cuantizar, **Qwen/Qwen2.5-VL-3B-Instruct**, está disponible en HuggingFace, pero no se ofrecen métricas comparativas entre ambos.
+No disponible. No se han proporcionado datos comparativos de rendimiento o calidad con otros modelos de la misma categoría en la información disponible. El modelo base sin cuantizar, **Qwen/Qwen2.5-VL-3B-Instruct**, está disponible en Hugging Face, pero no se ofrecen métricas comparativas entre ambos.
 
 ## Limitaciones y advertencias
 
@@ -97,7 +97,7 @@ No disponible. No se han proporcionado datos comparativos de rendimiento o calid
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/simaai/Qwen2.5-VL-3B-Instruct-GPTQ-a16w4
+- Modelo en Hugging Face: https://huggingface.co/simaai/Qwen2.5-VL-3B-Instruct-GPTQ-a16w4
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct
 - Documentación de SiMa.ai GenAI con LLiMa: https://developer.sima.ai/software/genai-llima/
 - Tutorial de servir modelos GenAI: https://developer.sima.ai/software/tutorials/serve-genai-models

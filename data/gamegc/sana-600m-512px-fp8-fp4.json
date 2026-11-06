@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "GameGC/sana-600m-512px-fp8-fp4",
+  "slug": "gamegc-sana-600m-512px-fp8-fp4",
+  "author": "GameGC",
+  "url": "https://huggingface.co/GameGC/sana-600m-512px-fp8-fp4",
+  "created_at": "2026-11-02T17:58:20.000Z",
+  "updated_at": "2026-11-05T10:43:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "sana",
+  "languages": [],
+  "tags": [
+    "sana",
+    "onnx",
+    "text-to-image",
+    "mobile",
+    "on-device",
+    "fp8",
+    "int8",
+    "apple-silicon",
+    "linear-diffusion",
+    "base_model:Efficient-Large-Model/Sana_600M_512px_diffusers",
+    "base_model:quantized:Efficient-Large-Model/Sana_600M_512px_diffusers",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6882517074,
+  "storage_human": "6.9 GB",
+  "base_model": "Efficient-Large-Model/Sana_600M_512px_diffusers",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GameGC/sana-600m-512px-fp8-fp4 · Hugging Face",
+      "url": "https://huggingface.co/GameGC/sana-600m-512px-fp8-fp4",
+      "snippet": "Text-to-Image model. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "GameGC/sana-600m-512px-fp8-fp4 at main - Hugging Face",
+      "url": "https://huggingface.co/GameGC/sana-600m-512px-fp8-fp4/tree/main",
+      "snippet": "Instructions to use GameGC/sana-600m-512px-fp8-fp4 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Sana How to use GameGC/sana-600m-512px-fp8-fp4 with Sana: # Load the model and infer image from text import torch from app.sana_pipeline import SanaPipeline from torchvision.utils import save_image sana = SanaPipeline (\"configs/sana ..."
+    }
+  ]
+}

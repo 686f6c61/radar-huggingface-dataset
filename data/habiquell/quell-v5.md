@@ -2,7 +2,7 @@
 
 ## Resumen
 
-quell-v5 es un ajuste fino por supervisión (SFT) del modelo Qwen/Qwen3-4B-Instruct-2507, publicado en HuggingFace por el usuario Habiquell. Se trata de un modelo derivado de 4.000 millones de parámetros, distribuido en formato safetensors y pensado para su uso directo con la librería Transformers. El autor no documenta ni el conjunto de datos, ni el número de tokens de entrenamiento, ni la composición del corpus utilizado, más allá de indicar que el entrenamiento se realizó con TRL 0.24.0 mediante SFT.
+quell-v5 es un ajuste fino por supervisión (SFT) del modelo Qwen/Qwen3-4B-Instruct-2507, publicado en Hugging Face por el usuario Habiquell. Se trata de un modelo derivado de 4.000 millones de parámetros, distribuido en formato safetensors y pensado para su uso directo con la librería Transformers. El autor no documenta ni el conjunto de datos, ni el número de tokens de entrenamiento, ni la composición del corpus utilizado, más allá de indicar que el entrenamiento se realizó con TRL 0.24.0 mediante SFT.
 
 El modelo base, Qwen3-4B-Instruct-2507, es un transformer denso de la familia Qwen3 en su variante "Instruct-2507", que desactiva el modo de razonamiento extendido (thinking mode) y prioriza respuestas directas con una ventana de contexto nativa muy amplia. quell-v5 hereda por tanto esa arquitectura y ese tokenizador, sin que la ficha del autor describa ninguna modificación estructural.
 
@@ -18,7 +18,7 @@ La relevancia de esta ficha es limitada pero conviene ser explícito: se trata d
 | Longitud de contexto | 262.144 tokens según la documentación pública del modelo base; no confirmado en la ficha de quell-v5 |
 | Tipos de cuantización | No disponible. Solo se publican pesos en safetensors; no hay GGUF, AWQ ni GPTQ en el repositorio |
 | Idiomas soportados | No disponible en la ficha de quell-v5; el modelo base declara soporte multilingüe |
-| Licencia | No disponible. La model card incluye el marcador de posición `licence: license` y HuggingFace no expone campo de licencia. El modelo base se distribuye bajo Apache 2.0 |
+| Licencia | No disponible. La model card incluye el marcador de posición `licence: license` y Hugging Face no expone campo de licencia. El modelo base se distribuye bajo Apache 2.0 |
 | Formato de pesos | safetensors (librería `transformers`) |
 | Modelo base | Qwen/Qwen3-4B-Instruct-2507 |
 | Framework de entrenamiento | TRL 0.24.0 (SFT), Transformers 4.57.1, PyTorch 2.14.0, Datasets 5.0.1, Tokenizers 0.22.2 |
@@ -73,16 +73,16 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Observaciones |
 |---|---|---|---|---|---|
-| Habiquell/quell-v5 | ~4.000 M (denso) | No confirmado en la ficha; el base declara 262.144 tokens | No declarada | HuggingFace, safetensors, 0 descargas | Ajuste SFT sin dataset ni evaluación documentados |
-| Qwen/Qwen3-4B-Instruct-2507 | ~4.000 M (denso) | 262.144 tokens (documentación pública) | Apache 2.0 | HuggingFace, ampliamente distribuido | Modelo base de quell-v5; dispone de ficha técnica completa y benchmarks publicados |
-| meta-llama/Llama-3.2-3B-Instruct | ~3.200 M (denso) | 128.000 tokens (documentación pública) | Licencia comunitaria de Llama 3.2 | HuggingFace, con requisitos de aceptación | Alternativa de tamaño similar, con restricciones de licencia para algunos usos |
-| google/gemma-3-4b-it | ~4.000 M (denso) | 128.000 tokens (documentación pública) | Licencia de Gemma | HuggingFace, con aceptación de términos | Alternativa multimodal de tamaño comparable; licencia con condiciones de uso |
+| Habiquell/quell-v5 | ~4.000 M (denso) | No confirmado en la ficha; el base declara 262.144 tokens | No declarada | Hugging Face, safetensors, 0 descargas | Ajuste SFT sin dataset ni evaluación documentados |
+| Qwen/Qwen3-4B-Instruct-2507 | ~4.000 M (denso) | 262.144 tokens (documentación pública) | Apache 2.0 | Hugging Face, ampliamente distribuido | Modelo base de quell-v5; dispone de ficha técnica completa y benchmarks publicados |
+| meta-llama/Llama-3.2-3B-Instruct | ~3.200 M (denso) | 128.000 tokens (documentación pública) | Licencia comunitaria de Llama 3.2 | Hugging Face, con requisitos de aceptación | Alternativa de tamaño similar, con restricciones de licencia para algunos usos |
+| google/gemma-3-4b-it | ~4.000 M (denso) | 128.000 tokens (documentación pública) | Licencia de Gemma | Hugging Face, con aceptación de términos | Alternativa multimodal de tamaño comparable; licencia con condiciones de uso |
 
 Los datos de contexto y licencia de los modelos comparados provienen de su documentación pública y deben verificarse en sus respectivas fichas antes de tomar decisiones de producción.
 
 ## Limitaciones y advertencias
 
-- No se declara licencia en la ficha ni en los metadatos de HuggingFace. La model card usa el marcador de posición `licence: license`. Aunque el modelo base es Apache 2.0, la ausencia de una licencia explícita en el derivado impide asumir que se hereden los mismos términos; no se recomienda uso comercial sin aclaración previa con el autor.
+- No se declara licencia en la ficha ni en los metadatos de Hugging Face. La model card usa el marcador de posición `licence: license`. Aunque el modelo base es Apache 2.0, la ausencia de una licencia explícita en el derivado impide asumir que se hereden los mismos términos; no se recomienda uso comercial sin aclaración previa con el autor.
 - No hay información sobre el conjunto de datos de entrenamiento, por lo que no puede evaluarse la presencia de sesgos, la calidad del corpus ni la posible contaminación con datos de evaluación.
 - Riesgo de alucinación: inherente a todos los modelos de lenguaje y no mitigado de forma documentada en este ajuste, ya que no se describe ninguna fase de alineación con RLHF o DPO.
 - No se han publicado evaluaciones, de modo que no puede cuantificarse la degradación respecto al modelo base. Un ajuste SFT sin validación documentada puede reducir capacidades como el tool calling o el razonamiento multi-paso.
@@ -94,7 +94,7 @@ Los datos de contexto y licencia de los modelos comparados provienen de su docum
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/Habiquell/quell-v5
+- Ficha del modelo en Hugging Face: https://huggingface.co/Habiquell/quell-v5
 - Modelo base Qwen/Qwen3-4B-Instruct-2507: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Repositorio de TRL (framework de entrenamiento declarado): https://github.com/huggingface/trl
 - Documentación de Transformers: https://huggingface.co/docs/transformers

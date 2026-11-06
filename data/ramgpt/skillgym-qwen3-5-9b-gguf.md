@@ -76,7 +76,7 @@ La informacion disponible no permite comparar rendimiento, ya que no hay benchma
 | Modelo | Parametros | Contexto | Cuantizacion en este repo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | SkillGym-Qwen3.5-9B-GGUF (este) | 8,95 B | no disponible | Q4_K_M (5,24 GiB) | no disponible | GGUF para llama.cpp |
-| Modelo base reasonwang/SkillGym-Qwen3.5-9B | 8,95 B (origen) | no disponible | safetensors (origen, multimodal) | no disponible | HuggingFace |
+| Modelo base reasonwang/SkillGym-Qwen3.5-9B | 8,95 B (origen) | no disponible | safetensors (origen, multimodal) | no disponible | Hugging Face |
 | Alternativas de ~8-9B (Qwen3-8B, Llama-3.1-8B, Mistral-7B) | ~7-8 B | variable | multiples | variable | amplia |
 
 Nota: las alternativas citadas se incluyen como referencia de categoria (modelos conversacionales de ~8-9B); no se dispone de datos comparativos de rendimiento entre ellas y el modelo de esta ficha.
@@ -97,7 +97,7 @@ Nota: las alternativas citadas se incluyen como referencia de categoria (modelos
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ramgpt/SkillGym-Qwen3.5-9B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/ramgpt/SkillGym-Qwen3.5-9B-GGUF
 - Modelo base: https://huggingface.co/reasonwang/SkillGym-Qwen3.5-9B
 - Proyecto llama.cpp: https://github.com/ggml-org/llama.cpp
 - Paper, blog o demo adicional: no disponible en la informacion proporcionada.

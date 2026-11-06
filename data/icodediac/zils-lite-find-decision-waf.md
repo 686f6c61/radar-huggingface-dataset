@@ -89,7 +89,7 @@ Recall por etiqueta a umbral 0,9: recon 20/30, injection 54/63, xss 19/23, auth_
 
 | Modelo | Parametros | Contexto | Mejor F1 | Recall con FPR <= 1% | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Decision-WAF-V1.1-0.8B | 0,85B | no disponible | 0,967 | 0,916 | Apache 2.0 | HuggingFace (safetensors, GGUF) |
+| Decision-WAF-V1.1-0.8B | 0,85B | no disponible | 0,967 | 0,916 | Apache 2.0 | Hugging Face (safetensors, GGUF) |
 | h2o-lightning-4b | 4B (aprox.) | no disponible | 0,920 | ninguno (FPR min 4,1%) | no disponible | decision-waf-eval |
 | d1-3B | 3B (aprox.) | no disponible | 0,883 | 0,565 | no disponible | decision-waf-eval |
 | jev-latest | no disponible | no disponible | 0,941 | 0,799 | no disponible | api.typesafe.ai |
@@ -107,7 +107,7 @@ Recall por etiqueta a umbral 0,9: recon 20/30, injection 54/63, xss 19/23, auth_
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/icodediac/zils-lite-find-decision-waf
+- Modelo en Hugging Face: https://huggingface.co/icodediac/zils-lite-find-decision-waf
 - Repositorio decision-waf: https://github.com/0x4272616E646F6E/decision-waf
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B-Base
 - decision-waf-eval (referencia de benchmarks): no disponible como enlace directo en la informacion proporcionada

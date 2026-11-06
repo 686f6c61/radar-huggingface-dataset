@@ -92,5 +92,5 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (ge
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Frosty40/h3-spark
+- Repositorio Hugging Face: https://huggingface.co/Frosty40/h3-spark
 - No se proporcionan enlaces a papers, blogs, demos o repositorios adicionales en la informacion disponible.

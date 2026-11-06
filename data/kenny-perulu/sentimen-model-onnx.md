@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Kenny-Perulu/sentimen-model-onnx` es un artefacto publicado en HuggingFace por el usuario Kenny-Perulu bajo licencia Apache 2.0. Por su identificador y por el sufijo `-onnx`, cabe inferir que se trata de un modelo de análisis de sentimiento exportado al formato ONNX (Open Neural Network Exchange), pensado para inferencia optimizada en entornos de producción. Sin embargo, esta inferencia se basa únicamente en el nombre del repositorio, ya que la model card no contiene ninguna descripción, documentación técnica ni metadatos sustantivos.
+El modelo `Kenny-Perulu/sentimen-model-onnx` es un artefacto publicado en Hugging Face por el usuario Kenny-Perulu bajo licencia Apache 2.0. Por su identificador y por el sufijo `-onnx`, cabe inferir que se trata de un modelo de análisis de sentimiento exportado al formato ONNX (Open Neural Network Exchange), pensado para inferencia optimizada en entornos de producción. Sin embargo, esta inferencia se basa únicamente en el nombre del repositorio, ya que la model card no contiene ninguna descripción, documentación técnica ni metadatos sustantivos.
 
 La información disponible es extremadamente limitada: el repositorio tiene un tamaño de 0.0 GB, no registra descargas ni likes, y no declara pipeline, idiomas soportados ni arquitectura. La model card se reduce a la declaración de licencia Apache 2.0, sin secciones de uso, entrenamiento, evaluación o limitaciones. Fue creado y actualizado el 4 de noviembre de 2026, sin historial de versiones posterior.
 
@@ -70,10 +70,10 @@ No es posible establecer una comparativa rigurosa sin conocer la arquitectura, e
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Kenny-Perulu/sentimen-model-onnx | no disponible | no disponible | Apache 2.0 | HuggingFace (0 descargas) |
-| cardiffnlp/twitter-roberta-base-sentiment-latest | ~125M | 512 tokens | MIT | HuggingFace, ampliamente usado |
-| distilbert-base-uncased-finetuned-sst-2-english | ~67M | 512 tokens | Apache 2.0 | HuggingFace, referencia en SST-2 |
-| nlptown/bert-base-multilingual-uncased-sentiment | ~110M | 512 tokens | MIT | HuggingFace, multilingüe |
+| Kenny-Perulu/sentimen-model-onnx | no disponible | no disponible | Apache 2.0 | Hugging Face (0 descargas) |
+| cardiffnlp/twitter-roberta-base-sentiment-latest | ~125M | 512 tokens | MIT | Hugging Face, ampliamente usado |
+| distilbert-base-uncased-finetuned-sst-2-english | ~67M | 512 tokens | Apache 2.0 | Hugging Face, referencia en SST-2 |
+| nlptown/bert-base-multilingual-uncased-sentiment | ~110M | 512 tokens | MIT | Hugging Face, multilingüe |
 
 La comparación de rendimiento con estos modelos no está disponible para el modelo evaluado.
 
@@ -90,6 +90,6 @@ La comparación de rendimiento con estos modelos no está disponible para el mod
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Kenny-Perulu/sentimen-model-onnx
+- Repositorio en Hugging Face: https://huggingface.co/Kenny-Perulu/sentimen-model-onnx
 - Especificación de ONNX: https://onnx.ai/
 - ONNX Runtime: https://onnxruntime.ai/

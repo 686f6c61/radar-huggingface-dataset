@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tenali-NetBanking-Intent-v2 es un modelo de clasificación de intenciones publicado por el usuario credentek en HuggingFace. Por su nombre y por su arquitectura, está orientado a la detección de intenciones en el dominio de la banca digital (net banking), presumiblemente para alimentar sistemas de atención al cliente, asistentes conversacionales o enrutamiento automático de peticiones en aplicaciones bancarias.
+Tenali-NetBanking-Intent-v2 es un modelo de clasificación de intenciones publicado por el usuario credentek en Hugging Face. Por su nombre y por su arquitectura, está orientado a la detección de intenciones en el dominio de la banca digital (net banking), presumiblemente para alimentar sistemas de atención al cliente, asistentes conversacionales o enrutamiento automático de peticiones en aplicaciones bancarias.
 
 El modelo emplea una arquitectura BERT (según el tag `bert` del repositorio) con 237.627.741 parámetros totales, lo que lo sitúa en la gama de los modelos tipo BERT-large. Los pesos se distribuyen en formato safetensors y el repositorio ocupa 1,9 GB. Se trata de un modelo derivado y ajustado para una tarea concreta, no de un modelo generativo de propósito general.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| credentek/Tenali-NetBanking-Intent-v2 | 237,6 M | no disponible | Clasificación de intenciones bancarias | no disponible | HuggingFace (4 descargas) |
-| BERT-large (google-bert/bert-large-uncased) | ~340 M | 512 tokens | Representación general / fine-tuning | Apache 2.0 | HuggingFace, ampliamente adoptado |
-| DistilBERT (distilbert-base-uncased) | ~66 M | 512 tokens | Representación general / fine-tuning | Apache 2.0 | HuggingFace, ampliamente adoptado |
-| RoBERTa-base (FacebookAI/roberta-base) | ~125 M | 512 tokens | Representación general / fine-tuning | MIT | HuggingFace, ampliamente adoptado |
+| credentek/Tenali-NetBanking-Intent-v2 | 237,6 M | no disponible | Clasificación de intenciones bancarias | no disponible | Hugging Face (4 descargas) |
+| BERT-large (google-bert/bert-large-uncased) | ~340 M | 512 tokens | Representación general / fine-tuning | Apache 2.0 | Hugging Face, ampliamente adoptado |
+| DistilBERT (distilbert-base-uncased) | ~66 M | 512 tokens | Representación general / fine-tuning | Apache 2.0 | Hugging Face, ampliamente adoptado |
+| RoBERTa-base (FacebookAI/roberta-base) | ~125 M | 512 tokens | Representación general / fine-tuning | MIT | Hugging Face, ampliamente adoptado |
 
 La comparación es aproximada: los modelos de referencia son base genéricos sin ajuste al dominio bancario, mientras que Tenali-NetBanking-Intent-v2 está presuntamente especializado. No hay datos públicos de rendimiento que permitan una comparación cuantitativa.
 
@@ -83,4 +83,4 @@ La comparación es aproximada: los modelos de referencia son base genéricos sin
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/credentek/Tenali-NetBanking-Intent-v2
+- Hugging Face: https://huggingface.co/credentek/Tenali-NetBanking-Intent-v2

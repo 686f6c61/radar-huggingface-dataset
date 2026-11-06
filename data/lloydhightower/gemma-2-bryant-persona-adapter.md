@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `lloydhightower/gemma-2-bryant-persona-adapter` es un adaptador PEFT (Parameter-Efficient Fine-Tuning) publicado en HuggingFace, diseñado para modificar el comportamiento del modelo base `google/gemma-2-2b-it` con una personalidad denominada "Bryant". El repositorio tiene un tamaño de 0,1 GB, lo que indica que solo contiene los pesos del adaptador y no el modelo completo. El autor, `lloydhightower`, no ha proporcionado documentación técnica ni una model card detallada, más allá de una plantilla genérica generada automáticamente.
+El modelo `lloydhightower/gemma-2-bryant-persona-adapter` es un adaptador PEFT (Parameter-Efficient Fine-Tuning) publicado en Hugging Face, diseñado para modificar el comportamiento del modelo base `google/gemma-2-2b-it` con una personalidad denominada "Bryant". El repositorio tiene un tamaño de 0,1 GB, lo que indica que solo contiene los pesos del adaptador y no el modelo completo. El autor, `lloydhightower`, no ha proporcionado documentación técnica ni una model card detallada, más allá de una plantilla genérica generada automáticamente.
 
 Este adaptador se enmarca en la práctica de personalizar modelos de lenguaje mediante técnicas eficientes como LoRA, que permiten ajustar un modelo base sin reentrenar todos sus parámetros. La relevancia actual radica en la creciente demanda de chatbots y asistentes con personalidades definidas, donde estos adaptadores ofrecen una vía rápida y económica para conseguirlo. Sin embargo, la ausencia total de información sobre el proceso de entrenamiento, los datos utilizados y las capacidades específicas limita su uso en entornos de producción sin una evaluación previa.
 
@@ -61,8 +61,8 @@ No se dispone de información sobre adaptadores comparables de personalidad sobr
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| google/gemma-2-2b-it | 2,6 B | 8192 | Gemma license (uso comercial permitido con restricciones) | HuggingFace |
-| lloydhightower/gemma-2-bryant-persona-adapter | No disponible (adaptador) | No disponible (base: 8192) | No disponible | HuggingFace |
+| google/gemma-2-2b-it | 2,6 B | 8192 | Gemma license (uso comercial permitido con restricciones) | Hugging Face |
+| lloydhightower/gemma-2-bryant-persona-adapter | No disponible (adaptador) | No disponible (base: 8192) | No disponible | Hugging Face |
 
 No hay otros adaptadores de personalidad conocidos en la misma categoría con los que comparar directamente.
 
@@ -78,6 +78,6 @@ No hay otros adaptadores de personalidad conocidos en la misma categoría con lo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lloydhightower/gemma-2-bryant-persona-adapter
+- Repositorio en Hugging Face: https://huggingface.co/lloydhightower/gemma-2-bryant-persona-adapter
 - Modelo base: https://huggingface.co/google/gemma-2-2b-it
 - Paper de estimación de emisiones de carbono mencionado en la model card: https://arxiv.org/abs/1910.09700 (no relacionado con el modelo en sí)

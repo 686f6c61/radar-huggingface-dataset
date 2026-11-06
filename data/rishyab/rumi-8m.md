@@ -70,10 +70,10 @@ Los valores de la columna de modelos comparables proceden de documentación púb
 
 | Modelo | Parámetros | Contexto | Licencia | Rendimiento en benchmarks | Disponibilidad |
 |---|---|---|---|---|---|
-| RUMI-8M | 8.459.904 | 256 | MIT | no disponible | HuggingFace (`Rishyab/RUMI-8M`) |
-| TinyStories (Microsoft Research, variantes de ~1 M a ~35 M) | ~1 M a ~35 M | no disponible | no disponible | no disponible | HuggingFace |
-| Pythia-14M (EleutherAI) | ~14 M | 2.048 | Apache-2.0 | no disponible | HuggingFace |
-| GPT-2 small (OpenAI) | ~124 M | 1.024 | MIT modificada | no disponible | HuggingFace / OpenAI |
+| RUMI-8M | 8.459.904 | 256 | MIT | no disponible | Hugging Face (`Rishyab/RUMI-8M`) |
+| TinyStories (Microsoft Research, variantes de ~1 M a ~35 M) | ~1 M a ~35 M | no disponible | no disponible | no disponible | Hugging Face |
+| Pythia-14M (EleutherAI) | ~14 M | 2.048 | Apache-2.0 | no disponible | Hugging Face |
+| GPT-2 small (OpenAI) | ~124 M | 1.024 | MIT modificada | no disponible | Hugging Face / OpenAI |
 
 Diferencias relevantes: RUMI-8M tiene la ventana de contexto más corta de la comparativa (256 tokens frente a los 1.024 o 2.048 de las alternativas), lo que limita tareas que requieran memoria de conversación o documentos extensos. Su licencia MIT es la más permisiva del grupo. No hay datos públicos de calidad que permitan comparar su rendimiento con el de estos modelos.
 
@@ -90,7 +90,7 @@ Diferencias relevantes: RUMI-8M tiene la ventana de contexto más corta de la co
 - Fechas del repositorio: la model card indica creación y actualización en octubre de 2026, con apenas un minuto de diferencia entre ambas, lo que sugiere una publicación sin iteraciones posteriores.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/Rishyab/RUMI-8M
+- Hugging Face: https://huggingface.co/Rishyab/RUMI-8M
 - Paper: no disponible
 - Repositorio de código: no disponible
 - Blog o anuncio del autor: no disponible

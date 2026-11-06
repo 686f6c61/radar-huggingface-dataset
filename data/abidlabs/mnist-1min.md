@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mnist-1min es un clasificador de imagenes de digitos manuscritos (MNIST) desarrollado por abidlabs (Abubakar Abid, conocido por Gradio) y publicado en HuggingFace con licencia MIT. Se trata de una red neuronal convolucional pequena, de aproximadamente 0,90 millones de parametros, entrenada desde inicializacion aleatoria sobre el split de entrenamiento de ylecun/mnist y evaluada sobre el split de test oficial. Su rasgo distintivo no es el rendimiento, sino el metodo: el entrenamiento esta limitado por tiempo a 60 segundos con Adam (lr=1e-3, batch size 256), lo que lo convierte en un ejemplo reproducible de "hasta donde llega un modelo en un minuto".
+mnist-1min es un clasificador de imagenes de digitos manuscritos (MNIST) desarrollado por abidlabs (Abubakar Abid, conocido por Gradio) y publicado en Hugging Face con licencia MIT. Se trata de una red neuronal convolucional pequena, de aproximadamente 0,90 millones de parametros, entrenada desde inicializacion aleatoria sobre el split de entrenamiento de ylecun/mnist y evaluada sobre el split de test oficial. Su rasgo distintivo no es el rendimiento, sino el metodo: el entrenamiento esta limitado por tiempo a 60 segundos con Adam (lr=1e-3, batch size 256), lo que lo convierte en un ejemplo reproducible de "hasta donde llega un modelo en un minuto".
 
 El modelo alcanza una precision final de test del 99,47%, un valor competitivo con clasicos de referencia como LeNet-5 (cuyo error tipico en MNIST es de alrededor del 1%). Con 0,90M de parametros, el checkpoint resultante ocupa del orden de 3,6 MB en fp32, por lo que la inferencia es viable en CPU sin GPU y en cualquier dispositivo con recursos minimos.
 
@@ -24,7 +24,7 @@ Su relevancia practica es acotada pero clara: sirve como baseline de referencia,
 | Dataset de evaluacion | ylecun/mnist, split de test |
 | Hiperparametros | Adam, lr=1e-3, batch size 256, entrenamiento limitado a 60 s |
 | Precision reportada | 99,47% en test |
-| Tamano del repositorio | 0,0 GB segun HuggingFace |
+| Tamano del repositorio | 0,0 GB segun Hugging Face |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks adicionales (por ejemplo, en MNIST-
 
 | Modelo | Parametros | Tarea / contexto | Precision reportada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| abidlabs/mnist-1min | 0,90M | Clasificacion MNIST 28x28 | 99,47% (test) | MIT | HuggingFace |
+| abidlabs/mnist-1min | 0,90M | Clasificacion MNIST 28x28 | 99,47% (test) | MIT | Hugging Face |
 | LeNet-5 (referencia historica de la literatura) | Aproximadamente 60.000 | Clasificacion MNIST 28x28 | Del orden de 99% segun la literatura | No aplica como artefacto unico | Referencia publicada, no un checkpoint concreto |
 | CNN generica de 2-3 capas convolucionales | Entre 0,1M y 1M | Clasificacion MNIST 28x28 | Habitualmente entre 98,5% y 99,5% | Depende de la implementacion | Multiples repositorios publicos |
 | Vision Transformer pequeno sobre MNIST | A partir de 1M | Clasificacion MNIST 28x28 | Habitualmente 99% o superior con mas computo | Depende de la implementacion | Multiples repositorios publicos |
@@ -101,10 +101,10 @@ Las cifras de los modelos alternativos proceden de referencias generales de la l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abidlabs/mnist-1min
+- Modelo en Hugging Face: https://huggingface.co/abidlabs/mnist-1min
 - Dataset de entrenamiento y evaluacion: https://huggingface.co/datasets/ylecun/mnist
 - Paper de referencia sobre MNIST (LeCun et al., "Gradient-Based Learning Applied to Document Recognition"): http://yann.lecun.com/exdb/publis/pdf/lecun-98.pdf
-- Perfil del autor en HuggingFace: https://huggingface.co/abidlabs
+- Perfil del autor en Hugging Face: https://huggingface.co/abidlabs
 - Repositorio de Gradio (proyecto del autor): https://github.com/gradio-app/gradio
 
 No se han encontrado en la informacion proporcionada papers, blogs tecnicos, repositorios de codigo ni demos especificos asociados a este modelo.

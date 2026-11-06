@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`smai-a4-cifar10-mlp` es un perceptron multicapa (MLP) entrenado sobre el conjunto de datos CIFAR-10 como parte de la asignacion 4 de un curso de SMAI (Statistical Methods in Artificial Intelligence). No se trata de un modelo de lenguajes ni de un modelo fundacional: es un clasificador de imagenes de 10 clases construido con una arquitectura completamente conectada de tres capas ocultas y publicado en HuggingFace con cero descargas y cero likes en el momento de la consulta.
+`smai-a4-cifar10-mlp` es un perceptron multicapa (MLP) entrenado sobre el conjunto de datos CIFAR-10 como parte de la asignacion 4 de un curso de SMAI (Statistical Methods in Artificial Intelligence). No se trata de un modelo de lenguajes ni de un modelo fundacional: es un clasificador de imagenes de 10 clases construido con una arquitectura completamente conectada de tres capas ocultas y publicado en Hugging Face con cero descargas y cero likes en el momento de la consulta.
 
 El modelo resuelve exclusivamente la tarea de clasificacion de imagenes de 32x32 píxeles en las 10 categorias de CIFAR-10 (avion, automovil, pajaro, gato, ciervo, perro, rana, caballo, barco y camion). Su interes es puramente academico y didactico: sirve como referencia de un ejercicio de entrenamiento con SGD, normalizacion de entradas y una tasa de acierto en test del 54,42 %, muy por debajo de lo que consiguen arquitecturas convolucionales sobre el mismo dataset.
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto | CIFAR-10 test acc | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| smai-a4-cifar10-mlp | ~1,7 M (estimado) | no aplica | 0,5442 | no disponible | HuggingFace, repo de 0,0 GB |
+| smai-a4-cifar10-mlp | ~1,7 M (estimado) | no aplica | 0,5442 | no disponible | Hugging Face, repo de 0,0 GB |
 | ResNet-18 (referencia habitual) | ~11 M | no aplica | ~93-95 % (literatura) | variable | ampliamente disponible |
 | VGG-11 (referencia habitual) | ~133 M | no aplica | ~91-92 % (literatura) | variable | ampliamente disponible |
 
@@ -87,6 +87,6 @@ Los valores de ResNet-18 y VGG-11 sobre CIFAR-10 corresponden a resultados publi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/PuneethAbhishek/smai-a4-cifar10-mlp
+- Hugging Face: https://huggingface.co/PuneethAbhishek/smai-a4-cifar10-mlp
 - Dataset CIFAR-10 (referencia): https://www.cs.toronto.edu/~kriz/cifar.html
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

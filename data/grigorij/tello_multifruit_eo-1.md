@@ -71,7 +71,7 @@ No se dispone de datos suficientes para una comparativa cuantitativa con otros m
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/Grigorij/Tello_multifruit_eo-1)
+- [Repositorio Hugging Face](https://huggingface.co/Grigorij/Tello_multifruit_eo-1)
 - [Dataset de entrenamiento](https://huggingface.co/datasets/Grigorij/Tello_multifruit_sum_two_state_vars)
 - [Paper de EO-1 (arXiv 2508.21112)](https://arxiv.org/pdf/2508.21112v5)
 - [Repositorio GitHub de EO-1](https://github.com/EO-Robotics/EO1)

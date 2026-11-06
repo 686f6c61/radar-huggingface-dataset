@@ -109,7 +109,7 @@ No se han identificado en la información proporcionada otros checkpoints de com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l31_keep70_gap_b001
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l31_keep70_gap_b001
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Ficheros de licencia incluidos en el repositorio del modelo: `LICENSE` y `USE_POLICY.md` (rutas relativas a la raíz del repositorio).
 - Nota sobre la búsqueda web: los resultados devueltos no guardan relación con el modelo (sitios de descarga de tipografías, foro Zhihu y un hilo de análisis de red de una aplicación móvil). No se han encontrado papers, blogs, repositorios ni demos adicionales asociados a este checkpoint en la información disponible.

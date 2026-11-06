@@ -60,8 +60,8 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 | Modelo | Tamaño | Precisión | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| microsoft/phi-2 | 5,6 GB | FP16 (original) | other | HuggingFace |
-| liodon-ai/phi-2-FP8 | 3,0 GB | FP8 dinámico | other | HuggingFace |
+| microsoft/phi-2 | 5,6 GB | FP16 (original) | other | Hugging Face |
+| liodon-ai/phi-2-FP8 | 3,0 GB | FP8 dinámico | other | Hugging Face |
 
 No se conocen otros modelos cuantizados de phi-2 en la información proporcionada.
 
@@ -75,8 +75,8 @@ No se conocen otros modelos cuantizados de phi-2 en la información proporcionad
 
 ## Enlaces
 
-- [Modelo en HuggingFace: liodon-ai/phi-2-FP8](https://huggingface.co/liodon-ai/phi-2-FP8)
-- [Organización Liodon AI en HuggingFace](https://huggingface.co/liodon-ai)
+- [Modelo en Hugging Face: liodon-ai/phi-2-FP8](https://huggingface.co/liodon-ai/phi-2-FP8)
+- [Organización Liodon AI en Hugging Face](https://huggingface.co/liodon-ai)
 - [Sitio web de Liodon AI](https://liodon.ai/)
 - [Modelo base: microsoft/phi-2](https://huggingface.co/microsoft/phi-2)
 - [Página de Microsoft sobre modelos Phi](https://azure.microsoft.com/en-us/products/phi/)

@@ -4,7 +4,7 @@
 
 Spark-X2.5-4B-GGUF-fine-tuning es un repositorio de pesos en formato GGUF publicado por el usuario ashuaria, derivado del modelo base XHToken/Spark-X2.5-4B. Según su model card, se trata de una conversión a GGUF en BF16 de ese modelo base, pensada para inferencia local mediante llama.cpp, Ollama y LM Studio. El identificador del repositorio incluye el término "fine-tuning", pero la model card no documenta ningún proceso de ajuste adicional sobre el modelo original.
 
-El modelo base Spark-X2.5-4B es un modelo de lenguaje compacto y de propósito general, con 4.112.079.360 parámetros (aproximadamente 4,11 mil millones), orientado a conversación, redacción, traducción, razonamiento, generación de código, uso de herramientas y flujos agénticos. Emplea una arquitectura de atención híbrida y declara una longitud de contexto nativa de hasta 1M de tokens. La model card del base afirma cobertura de más de 200 idiomas, mientras que los metadatos de HuggingFace de este repositorio solo listan inglés (en) y chino (zh), una discrepancia que conviene tener en cuenta.
+El modelo base Spark-X2.5-4B es un modelo de lenguaje compacto y de propósito general, con 4.112.079.360 parámetros (aproximadamente 4,11 mil millones), orientado a conversación, redacción, traducción, razonamiento, generación de código, uso de herramientas y flujos agénticos. Emplea una arquitectura de atención híbrida y declara una longitud de contexto nativa de hasta 1M de tokens. La model card del base afirma cobertura de más de 200 idiomas, mientras que los metadatos de Hugging Face de este repositorio solo listan inglés (en) y chino (zh), una discrepancia que conviene tener en cuenta.
 
 Su relevancia práctica es limitada por el momento: el repositorio acumula 0 descargas y 0 "likes", no publica resultados de benchmarks y requiere una bifurcación específica de llama.cpp (XHToken/llama.cpp) para funcionar, ya que la arquitectura de atención híbrida no está soportada por el runtime estándar. Aun así, resulta interesante como ejemplo de despliegue local de un modelo de 4B con contexto declarado muy largo y licencia Apache-2.0.
 
@@ -16,7 +16,7 @@ Su relevancia práctica es limitada por el momento: el repositorio acumula 0 des
 | Parametros totales | 4.112.079.360 (aproximadamente 4,11B) |
 | Longitud de contexto | Hasta 1M de tokens nativos según la model card del modelo base |
 | Tipos de cuantizacion | BF16 GGUF en este repositorio; no se listan otras cuantizaciones en la model card (el repositorio ocupa 15,2 GB, lo que sugiere más de un archivo o margen adicional) |
-| Idiomas soportados | Metadatos de HuggingFace: en, zh. La model card del base afirma más de 200 idiomas |
+| Idiomas soportados | Metadatos de Hugging Face: en, zh. La model card del base afirma más de 200 idiomas |
 | Licencia | Apache-2.0 |
 | Formato de pesos | GGUF |
 | Modelo base | XHToken/Spark-X2.5-4B |
@@ -97,7 +97,7 @@ Diferencias destacables: Spark-X2.5-4B declara una ventana de contexto muy super
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ashuaria/Spark-X2.5-4B-GGUF-fine-tuning
+- Repositorio en Hugging Face: https://huggingface.co/ashuaria/Spark-X2.5-4B-GGUF-fine-tuning
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.5-4B
 - Bifurcación compatible de llama.cpp: https://github.com/XHToken/llama.cpp
 - Ollama: https://github.com/ollama/ollama

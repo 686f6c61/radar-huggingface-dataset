@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `junbrro/egopi-axis1-full-persistent-AB-30k-actsilu-slurm-18267-20260922` es un checkpoint de pesos publicado en HuggingFace por el usuario junbrro el 22 de septiembre de 2026. Se trata de un modelo de aproximadamente 6.915 millones de parametros (segun el recuento real de tensores en formato safetensors), lo que lo situa en la franja de los modelos de ~7B. El repositorio ocupa 13,9 GB, un tamano coherente con pesos almacenados en precision de 16 bits (bf16/fp16) sin cuantizar.
+El modelo `junbrro/egopi-axis1-full-persistent-AB-30k-actsilu-slurm-18267-20260922` es un checkpoint de pesos publicado en Hugging Face por el usuario junbrro el 22 de septiembre de 2026. Se trata de un modelo de aproximadamente 6.915 millones de parametros (segun el recuento real de tensores en formato safetensors), lo que lo situa en la franja de los modelos de ~7B. El repositorio ocupa 13,9 GB, un tamano coherente con pesos almacenados en precision de 16 bits (bf16/fp16) sin cuantizar.
 
 La model card es extremadamente escueta: se limita a indicar que corresponde al "Arm I full-token persistent AB", que el paso final de entrenamiento es 30000, que la fuente es la ejecucion 18267 de un cluster Slurm, y que solo se incluyen pesos finales y configuracion (sin estado del optimizador ni del generador de numeros aleatorios). Tambien menciona que el paquete `actlat/` contiene el tokenizador de acciones "cuando procede", lo que sugiere un modelo orientado a tareas con espacio de acciones (posiblemente agentes o control), aunque no se documenta nada mas.
 
@@ -98,7 +98,7 @@ La fila de este modelo es la unica relevante a efectos de decision; las demas se
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/junbrro/egopi-axis1-full-persistent-AB-30k-actsilu-slurm-18267-20260922
+- Repositorio en Hugging Face: https://huggingface.co/junbrro/egopi-axis1-full-persistent-AB-30k-actsilu-slurm-18267-20260922
 - Paper: no disponible.
 - Blog o anuncio del autor: no disponible.
 - Repositorio de codigo: no disponible.

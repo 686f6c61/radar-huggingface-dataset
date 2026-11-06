@@ -92,7 +92,7 @@ No se dispone de comparaciones con modelos externos de la misma categoria (por e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joey00072/ohara-moe-0.9M-a91M-base-d12 (nota: el ID original es joey00072/ohara-moe-0.9B-a91M-base-d12, pero la URL proporcionada en la informacion es esa; se recomienda verificar)
+- Modelo en Hugging Face: https://huggingface.co/joey00072/ohara-moe-0.9M-a91M-base-d12 (nota: el ID original es joey00072/ohara-moe-0.9B-a91M-base-d12, pero la URL proporcionada en la informacion es esa; se recomienda verificar)
 - Repositorio ohara en GitHub: https://github.com/joey00072/ohara
 - Implementacion del modulo MoE: https://github.com/joey00072/ohara/blob/master/ohara/modules/moe.py
 - Version chat del modelo: https://huggingface.co/joey00072/ohara-moe-0.9B-a91M-chat-d12

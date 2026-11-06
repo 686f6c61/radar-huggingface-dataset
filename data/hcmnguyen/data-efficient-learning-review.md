@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, publicado por el usuario hcmnguyen, no contiene un modelo de IA entrenado, sino una nota de investigacion sobre *Data Efficient Learning* (aprendizaje eficiente en datos). El artefacto principal es un documento `review.md` que organiza motivacion, trabajo relacionado, una hipotesis falsable y un plan de evaluacion. No se presenta como un paper completo ni como un lanzamiento de pesos entrenados.
+Este repositorio de Hugging Face, publicado por el usuario hcmnguyen, no contiene un modelo de IA entrenado, sino una nota de investigacion sobre *Data Efficient Learning* (aprendizaje eficiente en datos). El artefacto principal es un documento `review.md` que organiza motivacion, trabajo relacionado, una hipotesis falsable y un plan de evaluacion. No se presenta como un paper completo ni como un lanzamiento de pesos entrenados.
 
 La relevancia de este repositorio es limitada desde el punto de vista practico para desarrolladores: no hay checkpoint que descargar, ni pipeline de inferencia, ni resultados experimentales. Su valor reside en la revision estructurada del estado del arte y en la propuesta de un protocolo de evaluacion reproducible. El repositorio declara explicitamente que las secciones marcadas como planes o hipotesis no deben interpretarse como resultados experimentales.
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 ## Comparativa con modelos similares
 
-No disponible. No existen modelos comparables en el sentido tradicional, ya que este repositorio no es un modelo de IA. Dentro de la categoria de repositorios de notas de investigacion en HuggingFace, no se dispone de datos de comparacion.
+No disponible. No existen modelos comparables en el sentido tradicional, ya que este repositorio no es un modelo de IA. Dentro de la categoria de repositorios de notas de investigacion en Hugging Face, no se dispone de datos de comparacion.
 
 ## Limitaciones y advertencias
 
@@ -69,7 +69,7 @@ No disponible. No existen modelos comparables en el sentido tradicional, ya que 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hcmnguyen/data-efficient-learning-review
+- Repositorio en Hugging Face: https://huggingface.co/hcmnguyen/data-efficient-learning-review
 - Perfil de Google Scholar del autor (Khoi Nguyen, Research Scientist en Qualcomm AI Research): https://scholar.google.com/citations?user=Eul6W5kAAAAJ&hl=en
 
 No se han encontrado papers, blogs, demos ni repositorios de codigo adicionales asociados a este proyecto en la busqueda web realizada.

@@ -4,7 +4,7 @@
 
 SEA-LION-ModernBERT-600M-checkpoints es un repositorio de checkpoints intermedios del modelo encoder SEA-LION-ModernBERT-600M, desarrollado por el pilar de Productos de IA de AI Singapore con financiacion del Singapore NRF. Forma parte de la familia SEA-LION, una coleccion de modelos de lenguaje preentrenados y ajustados para la region del Sudeste Asiatico, y esta disenado para abordar el deficit de representacion linguistica de las lenguas de esa zona en los modelos genericos.
 
-El modelo combina la arquitectura ModernBERT-large con el tokenizador SentencePiece de Gemma 3, lo que le permite alcanzar una compresion y fertilidad de tokenizacion muy superiores para escrituras regionales complejas como el birmano, jemer, laosiano o tamil. Se entrenaron un total de 3 billones de tokens en dos fases: preentrenamiento de 2T tokens y mid-training adicional de 1T tokens, cubriendo codigo y 13 idiomas especificos. Este repositorio especifico contiene los checkpoints de ambas fases en formato Composer y HuggingFace, pensados para continuar el preentrenamiento o realizar fine-tuning.
+El modelo combina la arquitectura ModernBERT-large con el tokenizador SentencePiece de Gemma 3, lo que le permite alcanzar una compresion y fertilidad de tokenizacion muy superiores para escrituras regionales complejas como el birmano, jemer, laosiano o tamil. Se entrenaron un total de 3 billones de tokens en dos fases: preentrenamiento de 2T tokens y mid-training adicional de 1T tokens, cubriendo codigo y 13 idiomas especificos. Este repositorio especifico contiene los checkpoints de ambas fases en formato Composer y Hugging Face, pensados para continuar el preentrenamiento o realizar fine-tuning.
 
 La relevancia de este modelo reside en su licencia MIT, su arquitectura encoder eficiente y su especializacion multilingue para el Sudeste Asiatico, una region historicamente infrarrepresentada en los modelos de lenguaje. La publicacion de checkpoints intermedios permite a la comunidad investigadora reproducir el proceso de entrenamiento y continuar el preentrenamiento con datos propios.
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 - Compatibilidad con GPU consumer: si, cabe en la mayoria de las GPUs de consumo actuales (desde 8 GB de VRAM en adelante) para inferencia y fine-tuning ligero.
 - Opciones de despliegue: al ser un modelo encoder, es compatible con el ecosistema Hugging Face transformers, incluyendo pipelines de clasificacion y extraccion. Puede desplegarse en CPU para inferencia de baja latencia, o en GPU con frameworks como ONNX Runtime para optimizacion.
 - Latencia estimada: para clasificacion de textos cortos (menos de 512 tokens) en una GPU consumer, la latencia esperada es de 10-50 ms por lote; en CPU, del orden de 100-500 ms.
-- Consideracion de memoria: el repositorio ocupa 46,7 GB, lo que incluye los checkpoints en formato Composer y HuggingFace de las distintas fases. Para descargar solo el checkpoint de HuggingFace de una fase concreta, se debe usar la opcion de subcarpeta del repositorio.
+- Consideracion de memoria: el repositorio ocupa 46,7 GB, lo que incluye los checkpoints en formato Composer y Hugging Face de las distintas fases. Para descargar solo el checkpoint de Hugging Face de una fase concreta, se debe usar la opcion de subcarpeta del repositorio.
 
 ## Comparativa con modelos similares
 
@@ -85,7 +85,7 @@ El modelo se diferencia de XLM-RoBERTa y RemBERT por su tokenizador especializad
 
 ## Enlaces
 
-- Repositorio HuggingFace: [aisingapore/SEA-LION-ModernBERT-600M-checkpoints](https://huggingface.co/aisingapore/SEA-LION-ModernBERT-600M-checkpoints)
+- Repositorio Hugging Face: [aisingapore/SEA-LION-ModernBERT-600M-checkpoints](https://huggingface.co/aisingapore/SEA-LION-ModernBERT-600M-checkpoints)
 - Modelo final (con decay de learning rate): [aisingapore/SEA-LION-ModernBERT-600M](https://huggingface.co/aisingapore/SEA-LION-ModernBERT-600M)
 - Modelo de embeddings asociado: [aisingapore/SEA-LION-ModernBERT-Embedding-600M](https://huggingface.co/aisingapore/SEA-LION-ModernBERT-Embedding-600M)
 - Modelo de embeddings E5: [aisingapore/SEA-LION-E5-Embedding-600M](https://huggingface.co/aisingapore/SEA-LION-E5-Embedding-600M)

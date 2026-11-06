@@ -6,7 +6,7 @@
 
 El hallazgo principal que reporta el autor es que, de las tres variables aleatorizadas, solo la longitud del poste afecta de forma sustancial a la dificultad de la tarea: las masas del carro y del poste muestran una recompensa plana de 500/500 dentro de rangos amplios. La política aleatorizada mantiene la recompensa máxima hasta una longitud de poste de 1,1 (un 47 % por encima del límite superior de entrenamiento, fijado en 0,75), mientras que la línea base de parámetros fijos se degrada ya en 0,9–1,1. El resultado se replica con 3 semillas de entrenamiento independientes.
 
-Se trata de material de tipo educativo y de preparación de investigación, publicado como demostración de sim-to-real, y el propio autor indica explícitamente que no está pensado para uso en producción. El repositorio ocupa 0,0 GB y las descargas registradas en HuggingFace son 0, con 1 like en el momento de la consulta.
+Se trata de material de tipo educativo y de preparación de investigación, publicado como demostración de sim-to-real, y el propio autor indica explícitamente que no está pensado para uso en producción. El repositorio ocupa 0,0 GB y las descargas registradas en Hugging Face son 0, con 1 like en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ Se trata de material de tipo educativo y de preparación de investigación, publ
 | Longitud de contexto | no aplica (entorno de control con observaciones de estado, no texto) |
 | Tipos de cuantizacion | no aplica |
 | Idiomas soportados | no aplica |
-| Licencia | MIT segun la model card del autor; el metadato de HuggingFace figura como "no disponible" |
+| Licencia | MIT segun la model card del autor; el metadato de Hugging Face figura como "no disponible" |
 | Formato de pesos | archivo `.zip` de Stable-Baselines3, cargable con `PPO.load()` |
 | Entorno | `CartPole-v1` con wrapper de aleatorizacion de dominio |
 | Espacio de acciones | discreto (2 acciones, segun la definicion estandar de `CartPole-v1`) |
@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks estandarizados (MMLU, HumanEval, GS
 
 | Modelo | Parametros | Entorno | Aleatorizacion de dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este agente (`rl-phd-prep-01-cartpole-domain-rand`) | no disponible | `CartPole-v1` | Si (masa del carro, masa del poste, longitud del poste) | MIT segun model card | Publicado en HuggingFace |
+| Este agente (`rl-phd-prep-01-cartpole-domain-rand`) | no disponible | `CartPole-v1` | Si (masa del carro, masa del poste, longitud del poste) | MIT segun model card | Publicado en Hugging Face |
 | Linea base de parametros fijos (modelo companero) | no disponible | `CartPole-v1` | No (un unico punto de parametros) | no disponible | Enlace no publicado en la model card |
 | PPO por defecto de Stable-Baselines3 RL Zoo sobre `CartPole-v1` | no disponible | `CartPole-v1` | No | MIT (licencia del proyecto SB3) | Publico en el RL Zoo de SB3 |
 
@@ -91,7 +91,7 @@ La comparación con la línea base companera es la única que dispone de datos n
 ## Limitaciones y advertencias
 
 - Uso previsto exclusivamente investigador y educativo. El propio autor declara que no está pensado para producción.
-- Licencia ambigua en el metadato: la model card indica MIT, pero el campo de licencia de HuggingFace aparece como "no disponible". Conviene confirmar el fichero LICENSE del repositorio antes de cualquier reutilización.
+- Licencia ambigua en el metadato: la model card indica MIT, pero el campo de licencia de Hugging Face aparece como "no disponible". Conviene confirmar el fichero LICENSE del repositorio antes de cualquier reutilización.
 - Alcance limitado a `CartPole-v1`, un entorno de juguete. Las conclusiones sobre robustez no son extrapolables directamente a tareas de control reales ni a sistemas robóticos.
 - Rango de aleatorización de entrenamiento estrecho en longitud de poste ([0,25, 0,75]). Fuera de 1,1 la recompensa cae de forma acusada.
 - Varianza muy alta entre semillas en el régimen extrapolado: desviación estándar de 272,6 a longitud 1,3 y de 271,7 a longitud 1,5, con solo 3 semillas por configuración. Las medias en ese tramo deben interpretarse con cautela.
@@ -103,7 +103,7 @@ La comparación con la línea base companera es la única que dispone de datos n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/habeebllah77/rl-phd-prep-01-cartpole-domain-rand
+- Modelo en Hugging Face: https://huggingface.co/habeebllah77/rl-phd-prep-01-cartpole-domain-rand
 - Modelo companero (linea base de parametros fijos): enlace no publicado en la model card ("link once pushed")
 - Codigo y memoria completa del experimento (`RESEARCH_REPORT.md`): enlace de GitHub no publicado en la model card
 - Stable-Baselines3: no enlazado en la model card; disponible en https://stable-baselines3.readthedocs.io

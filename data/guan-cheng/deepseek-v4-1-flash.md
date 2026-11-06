@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash es un modelo multimodal de tipo Mixture-of-Experts (MoE) publicado en HuggingFace bajo el identificador `GUAN-CHENG/DeepSeek-V4.1-Flash`. La model card lo presenta como un modelo de la familia DeepSeek-V4.1 con 552B parámetros de backbone y soporte para contextos de hasta un millón de tokens, capaz de procesar imágenes y texto de forma nativa y de generar texto de manera autorregresiva. El repositorio, sin embargo, declara 763.205.315.794 parámetros totales en sus ficheros safetensors, una cifra que incluye componentes adicionales como la memoria condicional Engram (196B parámetros) y que no coincide con los 552B del backbone indicados en el texto.
+DeepSeek-V4.1-Flash es un modelo multimodal de tipo Mixture-of-Experts (MoE) publicado en Hugging Face bajo el identificador `GUAN-CHENG/DeepSeek-V4.1-Flash`. La model card lo presenta como un modelo de la familia DeepSeek-V4.1 con 552B parámetros de backbone y soporte para contextos de hasta un millón de tokens, capaz de procesar imágenes y texto de forma nativa y de generar texto de manera autorregresiva. El repositorio, sin embargo, declara 763.205.315.794 parámetros totales en sus ficheros safetensors, una cifra que incluye componentes adicionales como la memoria condicional Engram (196B parámetros) y que no coincide con los 552B del backbone indicados en el texto.
 
 La propuesta técnica central es la compresión extrema de la caché KV: mediante una arquitectura Causal Encoder-Decoder (CED), atención dispersa comprimida CSA2, caché KV principal en FP4 y decodificación especulativa DSpark, el modelo reduce el consumo de KV a unos 890 bytes por token, aproximadamente una cuarta parte del de DeepSeek-V4-Flash. Esto lo orienta a cargas de trabajo agénticas con entradas muy largas, donde el coste de prefill y el peso de la caché dominan el presupuesto de inferencia.
 
@@ -64,7 +64,7 @@ La model card incluye una sección de resultados de evaluación para el modelo b
 
 | Modelo | Parámetros | Contexto | Caché KV por token | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash | 552B backbone / 763B totales | 1M tokens | 890 bytes (FP4) | MIT | HuggingFace |
+| DeepSeek-V4.1-Flash | 552B backbone / 763B totales | 1M tokens | 890 bytes (FP4) | MIT | Hugging Face |
 | DeepSeek-V4-Flash | No disponible | No disponible | ~4× mayor que V4.1-Flash | No disponible | No disponible en la información |
 | DeepSeek-V1 | No disponible | No disponible | ~437× mayor que V4.1-Flash | No disponible | No disponible en la información |
 
@@ -84,9 +84,9 @@ La información proporcionada solo permite comparar la huella de caché KV frent
 
 ## Enlaces
 
-- [HuggingFace: GUAN-CHENG/DeepSeek-V4.1-Flash](https://huggingface.co/GUAN-CHENG/DeepSeek-V4.1-Flash)
+- [Hugging Face: GUAN-CHENG/DeepSeek-V4.1-Flash](https://huggingface.co/GUAN-CHENG/DeepSeek-V4.1-Flash)
 - [Informe técnico (PDF enlazado en la model card)](https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf)
 - [Sitio oficial de DeepSeek](https://www.deepseek.com/)
 - [Chat de DeepSeek](https://chat.deepseek.com/)
-- [Organización DeepSeek AI en HuggingFace](https://huggingface.co/deepseek-ai)
+- [Organización DeepSeek AI en Hugging Face](https://huggingface.co/deepseek-ai)
 - [Twitter de DeepSeek AI](https://twitter.com/deepseek_ai)

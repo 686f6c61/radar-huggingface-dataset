@@ -87,5 +87,5 @@ La model card sugiere, como buena práctica, comparar contra "una línea base de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/matthewwalkerport/tiny-transformer-classification-pretrained
+- Hugging Face: https://huggingface.co/matthewwalkerport/tiny-transformer-classification-pretrained
 - Paper, blog, repositorio de código o demo adicionales: no disponible en la informacion proporcionada; la búsqueda web realizada no devolvió resultados relevantes sobre este modelo.

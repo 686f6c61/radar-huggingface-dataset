@@ -4,7 +4,7 @@
 
 XTTS-v2 es un modelo de síntesis de voz (text-to-speech) multilingüe desarrollado por Coqui que permite clonar una voz a partir de una referencia de audio de tan solo 6 segundos, sin necesidad de entrenamiento adicional ni de horas de datos. El modelo genera audio a 24 kHz y cubre 17 idiomas, incluyendo castellano, con clonación de voz entre idiomas (usar una referencia en un idioma para sintetizar en otro).
 
-La ficha que se analiza aquí corresponde al repositorio Allinsama/Coqui__XTTS-v2, una republicación de los pesos de XTTS-v2 (2,1 GB) que reutiliza la model card original de Coqui. El pipeline declarado en HuggingFace es text-to-speech y la librería asociada es coqui. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, por lo que no existe evidencia de uso o validación comunitaria sobre esta copia concreta.
+La ficha que se analiza aquí corresponde al repositorio Allinsama/Coqui__XTTS-v2, una republicación de los pesos de XTTS-v2 (2,1 GB) que reutiliza la model card original de Coqui. El pipeline declarado en Hugging Face es text-to-speech y la librería asociada es coqui. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, por lo que no existe evidencia de uso o validación comunitaria sobre esta copia concreta.
 
 Su relevancia práctica está en que combina clonación zero-shot, cobertura multilingüe amplia y una licencia pública específica para modelos generativos (CPML), lo que lo sitúa como una alternativa abierta para doblaje, audiolibros, asistentes de voz y prototipado de interfaces habladas. No es un modelo de lenguaje: no razona, no ejecuta herramientas y no procesa imágenes.
 
@@ -94,7 +94,7 @@ Frente a las alternativas ligeras tipo Piper, XTTS-v2 aporta clonación zero-sho
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Allinsama/Coqui__XTTS-v2
+- Repositorio en Hugging Face: https://huggingface.co/Allinsama/Coqui__XTTS-v2
 - Código y fine-tuning (Coqui TTS en GitHub): https://github.com/coqui-ai/TTS
 - Documentación: https://tts.readthedocs.io/en/latest/
 - Documentación del modelo XTTS: https://tts.readthedocs.io/en/latest/models/xtts.html#training

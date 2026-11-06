@@ -2,7 +2,7 @@
 
 ## Resumen
 
-vit-beans-demo es un modelo de clasificación de imágenes publicado en HuggingFace por el usuario yasminberrichi. Se trata de un fine-tuning completo del checkpoint google/vit-base-patch16-224-in21k, un Vision Transformer de tipo base preentrenado sobre ImageNet-21k, adaptado mediante la librería Transformers y el Trainer de HuggingFace a una tarea de clasificación de imágenes cuyo conjunto de datos el propio autor describe como "unknown dataset" en la model card. El modelo tiene 85.800.963 parámetros en formato safetensors y se distribuye bajo licencia Apache-2.0.
+vit-beans-demo es un modelo de clasificación de imágenes publicado en Hugging Face por el usuario yasminberrichi. Se trata de un fine-tuning completo del checkpoint google/vit-base-patch16-224-in21k, un Vision Transformer de tipo base preentrenado sobre ImageNet-21k, adaptado mediante la librería Transformers y el Trainer de Hugging Face a una tarea de clasificación de imágenes cuyo conjunto de datos el propio autor describe como "unknown dataset" en la model card. El modelo tiene 85.800.963 parámetros en formato safetensors y se distribuye bajo licencia Apache-2.0.
 
 El interés del modelo es fundamentalmente práctico y demostrativo: no introduce ninguna innovación arquitectónica, sino que documenta una receta de fine-tuning reproducible (4 épocas, learning rate 5e-05, AdamW fused, scheduler lineal con 10 % de warmup, batch de 16) con métricas de validación declaradas por el autor (loss 0.0995 y accuracy 0.9766 en la evaluación final, aunque la tabla de entrenamiento registra 0.9925 de accuracy en la última época). Es, por tanto, un ejemplo típico de transferencia de un backbone ViT a un dominio concreto, probablemente agronómico por el sufijo "beans" del nombre, si bien la documentación no confirma el origen de los datos.
 
@@ -31,7 +31,7 @@ Su relevancia actual es limitada como artefacto de producción: acumula 0 descar
 
 La arquitectura es un Vision Transformer estándar en su variante base: el encoder consta de 12 capas, anchura oculta de 768 y 12 cabezas de atención, y la imagen de entrada se divide en parches de 16x16 píxeles (196 parches para 224x224) a los que se añade un token CLS. El recuento exacto de parámetros (85.800.963) coincide con los 85.798.656 parámetros del encoder ViT-Base más 2.307 parámetros de una cabeza de clasificación lineal de 3 clases (768 x 3 pesos más 3 sesgos), lo que permite deducir que el modelo fue reentrenado con una salida de 3 clases en lugar de las 1.000 de ImageNet o las 21.843 de ImageNet-21k. Esta deducción es aritmética y contrastable con los pesos publicados; el número de clases, en cambio, no aparece explicitado en la model card.
 
-El entrenamiento se realizó con el Trainer de HuggingFace y los siguientes hiperparámetros: 4 épocas, learning rate 5e-05, batch de entrenamiento y evaluación de 16, semilla 42, optimizador AdamW con implementación fused y betas (0.9, 0.999), epsilon 1e-08, scheduler lineal con warmup del 10 % de los pasos y 260 pasos totales. La composición del dataset, el número de ejemplos de entrenamiento y validación, el protocolo de aumento de datos y cualquier etapa de ajuste adicional (RLHF, DPO u otras, no habituales en clasificación) no están documentados: la model card indica literalmente "unknown dataset" y "More information needed" en las secciones de datos, usos previstos y limitaciones. No se describe ninguna innovación técnica ni mecanismo de decodificación. El nombre del modelo sugiere un conjunto de datos de hojas de judía, pero se trata de una hipótesis no confirmada por la documentación disponible. Tampoco se documentan los métodos de preprocesado (normalización, resize, recorte central) aplicados durante el fine-tuning.
+El entrenamiento se realizó con el Trainer de Hugging Face y los siguientes hiperparámetros: 4 épocas, learning rate 5e-05, batch de entrenamiento y evaluación de 16, semilla 42, optimizador AdamW con implementación fused y betas (0.9, 0.999), epsilon 1e-08, scheduler lineal con warmup del 10 % de los pasos y 260 pasos totales. La composición del dataset, el número de ejemplos de entrenamiento y validación, el protocolo de aumento de datos y cualquier etapa de ajuste adicional (RLHF, DPO u otras, no habituales en clasificación) no están documentados: la model card indica literalmente "unknown dataset" y "More information needed" en las secciones de datos, usos previstos y limitaciones. No se describe ninguna innovación técnica ni mecanismo de decodificación. El nombre del modelo sugiere un conjunto de datos de hojas de judía, pero se trata de una hipótesis no confirmada por la documentación disponible. Tampoco se documentan los métodos de preprocesado (normalización, resize, recorte central) aplicados durante el fine-tuning.
 
 ## Capacidades
 
@@ -39,7 +39,7 @@ El entrenamiento se realizó con el Trainer de HuggingFace y los siguientes hipe
 - Extracción de características visuales: al ser un ViT-Base, el encoder puede reutilizarse como backbone congelado o ajustable para detección, segmentación o recuperación de imágenes mediante transfer learning.
 - Inferencia sobre imágenes RGB de 224x224 píxeles con el procesador de imagen correspondiente (ViTImageProcessor de la librería transformers).
 - Integración directa con la API de pipelines: `pipeline("image-classification", model="yasminberrichi/vit-beans-demo")`.
-- Compatibilidad declarada con Inference Endpoints de HuggingFace (etiqueta endpoints_compatible).
+- Compatibilidad declarada con Inference Endpoints de Hugging Face (etiqueta endpoints_compatible).
 - No soporta tool calling, function calling, uso como agente, razonamiento multi-paso ni generación de texto.
 - No dispone de modo de pensamiento (thinking), ni capacidades de audio, vídeo o visión-lenguaje.
 - Capacidades multilingües: no aplica, el modelo no procesa lenguaje natural.
@@ -73,17 +73,17 @@ Además, el encabezado de la model card declara de forma resumida "Loss: 0.0995"
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente. Para despliegues de bajo volumen sirven una GTX 1050 Ti, una RTX 3050 o una T4. Para procesar lotes grandes o dar servicio a muchos clientes, resultan adecuadas una RTX 3060, una RTX 4090, una L4 o una A10G. Las A100 y H100 solo tienen sentido si se comparten con otros modelos o si se necesita throughput agregado muy alto, dado el reducido tamaño del modelo.
 - Inferencia en CPU: viable. Un ViT-Base a 224x224 se ejecuta en CPU en tiempos de decenas de milisegundos por imagen, suficiente para aplicaciones de baja concurrencia.
 - GPU de consumo: sí, cabe en cualquier GPU de consumo actual y en muchas integradas con al menos 2 GB de memoria compartida disponible.
-- Opciones de despliegue: pipeline de transformers (PyTorch), exportación a ONNX Runtime o TorchScript para reducir latencia, HuggingFace Inference Endpoints (etiqueta endpoints_compatible), servidores de modelo genéricos como TorchServe, BentoML o Triton. Las plataformas orientadas a generación de texto (vLLM, TGI) no están pensadas para clasificación de imágenes y no se documentan como compatibles.
+- Opciones de despliegue: pipeline de transformers (PyTorch), exportación a ONNX Runtime o TorchScript para reducir latencia, Hugging Face Inference Endpoints (etiqueta endpoints_compatible), servidores de modelo genéricos como TorchServe, BentoML o Triton. Las plataformas orientadas a generación de texto (vLLM, TGI) no están pensadas para clasificación de imágenes y no se documentan como compatibles.
 - Latencia y throughput: no se han publicado mediciones en la información disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Tarea | Entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| yasminberrichi/vit-beans-demo | 85.800.963 | Clasificación de imágenes, 3 clases (inferido) | 224x224 | Apache-2.0 | HuggingFace, 0 descargas, 0 likes |
-| google/vit-base-patch16-224-in21k | no disponible en la informacion (checkpoint base del anterior) | Preentrenamiento en ImageNet-21k, sin cabeza de tarea específica | 224x224 | Apache-2.0 | HuggingFace, checkpoint de referencia ampliamente utilizado |
-| google/vit-base-patch16-224 | 86.567.656 (según su model card) | Clasificación en 1.000 clases de ImageNet-1k | 224x224 | Apache-2.0 | HuggingFace, checkpoint de referencia |
-| microsoft/resnet-50 | 25.557.032 (según su model card) | Clasificación en 1.000 clases de ImageNet-1k | 224x224 | Apache-2.0 | HuggingFace, alternativa CNN de menor tamaño |
+| yasminberrichi/vit-beans-demo | 85.800.963 | Clasificación de imágenes, 3 clases (inferido) | 224x224 | Apache-2.0 | Hugging Face, 0 descargas, 0 likes |
+| google/vit-base-patch16-224-in21k | no disponible en la informacion (checkpoint base del anterior) | Preentrenamiento en ImageNet-21k, sin cabeza de tarea específica | 224x224 | Apache-2.0 | Hugging Face, checkpoint de referencia ampliamente utilizado |
+| google/vit-base-patch16-224 | 86.567.656 (según su model card) | Clasificación en 1.000 clases de ImageNet-1k | 224x224 | Apache-2.0 | Hugging Face, checkpoint de referencia |
+| microsoft/resnet-50 | 25.557.032 (según su model card) | Clasificación en 1.000 clases de ImageNet-1k | 224x224 | Apache-2.0 | Hugging Face, alternativa CNN de menor tamaño |
 
 No se dispone de información sobre otros clasificadores específicos de hojas de judía o de enfermedades foliares con los que comparar de forma directa, ni de resultados de evaluación comunes que permitan establecer una comparación de rendimiento objetiva. El modelo comparado aquí es un fine-tuning del primero de la tabla, de modo que su rendimiento depende íntegramente de la calidad y representatividad del dataset no documentado.
 
@@ -103,7 +103,7 @@ No se dispone de información sobre otros clasificadores específicos de hojas d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yasminberrichi/vit-beans-demo
+- Modelo en Hugging Face: https://huggingface.co/yasminberrichi/vit-beans-demo
 - Checkpoint base: https://huggingface.co/google/vit-base-patch16-224-in21k
 - Modelo de referencia ViT entrenado en ImageNet-1k: https://huggingface.co/google/vit-base-patch16-224
 - Artículo original de Vision Transformer ("An Image is Worth 16x16 Words"): https://arxiv.org/abs/2010.11929

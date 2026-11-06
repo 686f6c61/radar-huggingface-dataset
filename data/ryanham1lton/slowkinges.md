@@ -2,9 +2,9 @@
 
 ## Resumen
 
-SlowkingES es un modelo publicado en HuggingFace por el usuario Ryanham1lton bajo el identificador `Ryanham1lton/SlowkingES`. En el momento de redactar esta ficha, la informacion publica disponible es minima: la model card unicamente contiene la declaracion de licencia (`cc-by-4.0`), sin descripcion del modelo, sin arquitectura declarada, sin datos de entrenamiento y sin resultados de evaluacion. El repositorio ocupa 0,1 GB, un tamano reducido que resulta compatible con modelos pequenos, adaptadores o pesos cuantizados, aunque no es posible confirmar ninguna de estas hipotesis con los datos disponibles.
+SlowkingES es un modelo publicado en Hugging Face por el usuario Ryanham1lton bajo el identificador `Ryanham1lton/SlowkingES`. En el momento de redactar esta ficha, la informacion publica disponible es minima: la model card unicamente contiene la declaracion de licencia (`cc-by-4.0`), sin descripcion del modelo, sin arquitectura declarada, sin datos de entrenamiento y sin resultados de evaluacion. El repositorio ocupa 0,1 GB, un tamano reducido que resulta compatible con modelos pequenos, adaptadores o pesos cuantizados, aunque no es posible confirmar ninguna de estas hipotesis con los datos disponibles.
 
-El modelo no registra descargas ni likes, y se publico el 24 de septiembre de 2026 (ultima actualizacion el mismo dia, tres minutos despues de la creacion). Esto sugiere una publicacion reciente, sin adopcion documentada ni comunidad asociada. No hay pipeline declarado en HuggingFace, por lo que no se puede confirmar si se trata de un modelo de generacion de texto, un modelo de embeddings, un clasificador o un adaptador. El sufijo "ES" del identificador podria apuntar a una orientacion al castellano, pero se trata de una conjetura no verificada.
+El modelo no registra descargas ni likes, y se publico el 24 de septiembre de 2026 (ultima actualizacion el mismo dia, tres minutos despues de la creacion). Esto sugiere una publicacion reciente, sin adopcion documentada ni comunidad asociada. No hay pipeline declarado en Hugging Face, por lo que no se puede confirmar si se trata de un modelo de generacion de texto, un modelo de embeddings, un clasificador o un adaptador. El sufijo "ES" del identificador podria apuntar a una orientacion al castellano, pero se trata de una conjetura no verificada.
 
 Dado el estado de la informacion, esta ficha recoge lo unico verificable y marca explicitamente como "no disponible" todo aquello que no puede confirmarse. Se recomienda precaucion antes de considerar el modelo para cualquier uso en produccion.
 
@@ -20,7 +20,7 @@ Dado el estado de la informacion, esta ficha recoge lo unico verificable y marca
 | Idiomas soportados | no disponible |
 | Licencia | cc-by-4.0 |
 | Formato de pesos | no disponible |
-| Tamano del repositorio | 0,1 GB (dato observado en HuggingFace) |
+| Tamano del repositorio | 0,1 GB (dato observado en Hugging Face) |
 | Pipeline declarado | no disponible |
 | Fecha de publicacion | 24 de septiembre de 2026 |
 | Ultima actualizacion | 24 de septiembre de 2026 |
@@ -83,7 +83,7 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/SlowkingES
+- Hugging Face: https://huggingface.co/Ryanham1lton/SlowkingES
 - Paper: no disponible
 - Blog o documentacion adicional: no disponible
 - Repositorio de codigo: no disponible

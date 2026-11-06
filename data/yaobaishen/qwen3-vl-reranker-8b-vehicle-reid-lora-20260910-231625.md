@@ -107,12 +107,12 @@ La unica comparacion sustentada por la informacion disponible es con el modelo b
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yaobaishen/Qwen3-VL-Reranker-8B-vehicle-reid-lora-20260910-231625
+- Modelo en Hugging Face: https://huggingface.co/yaobaishen/Qwen3-VL-Reranker-8B-vehicle-reid-lora-20260910-231625
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-Reranker-8B
 - Documentacion de Sentence Transformers: https://sbert.net
 - Documentacion de Cross Encoder: https://www.sbert.net/docs/cross_encoder/usage/usage.html
 - Repositorio de Sentence Transformers en GitHub: https://github.com/huggingface/sentence-transformers
-- Cross Encoders en HuggingFace: https://huggingface.co/models?library=sentence-transformers&other=cross-encoder
+- Cross Encoders en Hugging Face: https://huggingface.co/models?library=sentence-transformers&other=cross-encoder
 - Paper de referencia Sentence-BERT (arXiv:1908.10084): https://arxiv.org/abs/1908.10084
 
-Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los unicos enlaces utiles son los presentes en la model card y en los metadatos de HuggingFace.
+Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los unicos enlaces utiles son los presentes en la model card y en los metadatos de Hugging Face.

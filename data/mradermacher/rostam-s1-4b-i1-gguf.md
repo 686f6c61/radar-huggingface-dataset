@@ -85,7 +85,7 @@ La comparación se basa en datos públicos de los modelos alternativos; para Ros
 
 ## Enlaces
 
-- Repositorio HuggingFace de las cuantizaciones: https://huggingface.co/mradermacher/Rostam-S1-4B-i1-GGUF
+- Repositorio Hugging Face de las cuantizaciones: https://huggingface.co/mradermacher/Rostam-S1-4B-i1-GGUF
 - Modelo base: https://huggingface.co/officialmobai/Rostam-S1-4B
 - Cuantizaciones estáticas: https://huggingface.co/mradermacher/Rostam-S1-4B-GGUF
 - Página de descargas del cuantizador: https://hf.tst.eu/model#Rostam-S1-4B-i1-GGUF

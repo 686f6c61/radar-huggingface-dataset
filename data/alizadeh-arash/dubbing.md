@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alizadeh-arash/dubbing` es un repositorio publicado en HuggingFace por el usuario alizadeh-arash. La única informacion verificable que acompana al repositorio es la etiqueta de licencia `openrail`, la etiqueta `region:us` y las fechas de creacion y ultima actualizacion, ambas el 16 de septiembre de 2026. El repositorio no declara pipeline, idiomas, arquitectura, tamano, ni incluye una model card con contenido tecnico mas alla del bloque de licencia.
+`alizadeh-arash/dubbing` es un repositorio publicado en Hugging Face por el usuario alizadeh-arash. La única informacion verificable que acompana al repositorio es la etiqueta de licencia `openrail`, la etiqueta `region:us` y las fechas de creacion y ultima actualizacion, ambas el 16 de septiembre de 2026. El repositorio no declara pipeline, idiomas, arquitectura, tamano, ni incluye una model card con contenido tecnico mas alla del bloque de licencia.
 
 El identificador del repositorio sugiere que podria tratarse de un sistema orientado al doblaje de audio o video, pero esta interpretacion no esta confirmada por ninguna fuente del repositorio y no debe tomarse como un dato tecnico. No se ha publicado informacion sobre pesos, configuracion de entrenamiento, tokenizador ni formato de serializacion.
 
@@ -87,5 +87,5 @@ No disponible. No se ha identificado la categoria a la que pertenece el modelo n
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/alizadeh-arash/dubbing
+- Repositorio en Hugging Face: https://huggingface.co/alizadeh-arash/dubbing
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la busqueda web realizada. Los resultados recuperados correspondian a un foro frances sobre replicas de armas historicas (repliquesoldwest.superforum.fr) y no guardan ninguna relacion con el proyecto.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-1017 es una actualización menor del modelo DeepSeek-V4.1-Flash, desarrollado por DeepSeek-AI. Se distribuye a través del repositorio de HuggingFace `wzftsnb666/DeepSeek-V4.1-Flash-1017`, que replica la model card oficial del modelo. La versión 1017 introduce mejoras en razonamiento, generación de código, tareas agénticas y benchmarks visuales, además de reducir el tiempo de ejecución de tareas y la longitud de las respuestas, lo que se traduce en un menor coste por tarea completada.
+DeepSeek-V4.1-Flash-1017 es una actualización menor del modelo DeepSeek-V4.1-Flash, desarrollado por DeepSeek-AI. Se distribuye a través del repositorio de Hugging Face `wzftsnb666/DeepSeek-V4.1-Flash-1017`, que replica la model card oficial del modelo. La versión 1017 introduce mejoras en razonamiento, generación de código, tareas agénticas y benchmarks visuales, además de reducir el tiempo de ejecución de tareas y la longitud de las respuestas, lo que se traduce en un menor coste por tarea completada.
 
 El modelo tiene 763.205.315.794 parámetros totales según los pesos en safetensors, lo que lo sitúa en la categoría de modelos de gran escala (aproximadamente 763 mil millones de parámetros). Soporta una ventana de contexto de 1 millón de tokens y está diseñado para tareas multimodales de texto e imagen (pipeline `image-text-to-text`). El título del informe técnico asociado, "Pushing the Limits of KV Cache Compression", sugiere que una de las innovaciones clave es la compresión agresiva de la caché KV para permitir contextos largos con un coste de memoria reducido.
 
@@ -26,7 +26,7 @@ La relevancia actual del modelo radica en su posicionamiento en la frontera de r
 
 ## Arquitectura y entrenamiento
 
-La model card no proporciona detalles explícitos sobre la arquitectura interna (tipo de transformer, si es MoE, número de capas, dimensiones ocultas, etc.). El título del informe técnico citado, "DeepSeek-V4.1-Flash: Pushing the Limits of KV Cache Compression", indica que una de las contribuciones técnicas principales es la compresión de la caché KV, lo que permite manejar contextos de hasta 1 millón de tokens con un uso de memoria más eficiente. El tag `deepseek_v41` en HuggingFace sugiere que se trata de una arquitectura específica de la familia DeepSeek V4.1, aunque no se detalla su composición.
+La model card no proporciona detalles explícitos sobre la arquitectura interna (tipo de transformer, si es MoE, número de capas, dimensiones ocultas, etc.). El título del informe técnico citado, "DeepSeek-V4.1-Flash: Pushing the Limits of KV Cache Compression", indica que una de las contribuciones técnicas principales es la compresión de la caché KV, lo que permite manejar contextos de hasta 1 millón de tokens con un uso de memoria más eficiente. El tag `deepseek_v41` en Hugging Face sugiere que se trata de una arquitectura específica de la familia DeepSeek V4.1, aunque no se detalla su composición.
 
 No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF, DPO u otras. Tampoco se detallan innovaciones como decodificación especulativa o atención lineal más allá de la mencionada compresión de caché KV. El modelo incluye soporte para modo "thinking" (razonamiento extendido) y un parámetro de "numeric reasoning effort", según la documentación de codificación de prompts incluida en el repositorio.
 
@@ -103,10 +103,10 @@ No se dispone de datos de parámetros, contexto ni licencia de los modelos compa
 
 ## Enlaces
 
-- HuggingFace (réplica): https://huggingface.co/wzftsnb666/DeepSeek-V4.1-Flash-1017
+- Hugging Face (réplica): https://huggingface.co/wzftsnb666/DeepSeek-V4.1-Flash-1017
 - Repositorio oficial de DeepSeek-V4.1-Flash: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Informe técnico: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf
-- Organización DeepSeek-AI en HuggingFace: https://huggingface.co/deepseek-ai
+- Organización DeepSeek-AI en Hugging Face: https://huggingface.co/deepseek-ai
 - Página principal de DeepSeek: https://www.deepseek.com/
 - Chat de DeepSeek: https://chat.deepseek.com/
 - Twitter de DeepSeek AI: https://twitter.com/deepseek_ai

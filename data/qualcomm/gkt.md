@@ -6,7 +6,7 @@ GKT (Geometry-guided Kernel Transformer) es un modelo de visión por computador 
 
 El repositorio `qualcomm/GKT` no contiene el modelo original, sino la versión optimizada y preexportada por Qualcomm para sus dispositivos, generada con la librería Qualcomm AI Hub Models y el flujo de trabajo Qualcomm AI Hub Workbench. La implementación de referencia procede del repositorio `hustvl/GKT` y el modelo está etiquetado con el identificador de paper `arxiv:2206.04584`. El repositorio pesa 0,3 GB, está publicado bajo licencia MIT y se distribuye con artefactos listos para desplegar en NPU Hexagon de plataformas Snapdragon y Dragonwing.
 
-Su relevancia actual es de tipo práctico: permite ejecutar percepción BEV en el propio dispositivo (móvil, PC con Windows on Snapdragon y plataformas de automoción) sin depender de aceleradores de servidor, usando los SDK QAIRT 2.45 y ONNX Runtime 1.27.1. La adopción en HuggingFace es muy baja (0 descargas y 1 like en el momento de la consulta), por lo que debe considerarse un artefacto de despliegue más que un modelo con comunidad consolidada.
+Su relevancia actual es de tipo práctico: permite ejecutar percepción BEV en el propio dispositivo (móvil, PC con Windows on Snapdragon y plataformas de automoción) sin depender de aceleradores de servidor, usando los SDK QAIRT 2.45 y ONNX Runtime 1.27.1. La adopción en Hugging Face es muy baja (0 descargas y 1 like en el momento de la consulta), por lo que debe considerarse un artefacto de despliegue más que un modelo con comunidad consolidada.
 
 ## Especificaciones tecnicas
 
@@ -80,12 +80,12 @@ No disponible. La información proporcionada no incluye datos de modelos compara
 - Riesgo de alucinación en el sentido generativo: no aplica, pero sí existe riesgo de falsos positivos y falsos negativos en la representación BEV, cuya magnitud no puede cuantificarse sin métricas.
 - Los artefactos precompilados están ligados a versiones concretas (QAIRT 2.45, ONNX Runtime 1.27.1) y a chipsets específicos; un cambio de versión de SDK o de plataforma puede requerir reexportación.
 - La licencia MIT del repositorio de Qualcomm permite uso comercial del artefacto, pero conviene verificar la licencia y las condiciones de la implementación de referencia `hustvl/GKT` antes de integrarla en un producto.
-- Adopción muy baja en HuggingFace (0 descargas, 1 like en la consulta), lo que implica escasa validación por parte de la comunidad y poca casuística reportada de fallos.
+- Adopción muy baja en Hugging Face (0 descargas, 1 like en la consulta), lo que implica escasa validación por parte de la comunidad y poca casuística reportada de fallos.
 - El tag `arxiv:2206.04584` apunta a un paper, pero su contenido no ha sido verificado en la información disponible; no debe citarse como fuente de detalles técnicos sin comprobarlo.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/qualcomm/GKT
+- Repositorio en Hugging Face: https://huggingface.co/qualcomm/GKT
 - Modelo en Qualcomm AI Hub Models: https://github.com/qualcomm/ai-hub-models/blob/v0.62.0/src/qai_hub_models/models/gkt
 - Implementación de referencia: https://github.com/hustvl/GKT/
 - Qualcomm AI Hub Workbench: https://workbench.aihub.qualcomm.com

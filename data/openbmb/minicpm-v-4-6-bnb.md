@@ -65,10 +65,10 @@ No se han publicado resultados numericos de benchmarks en la informacion disponi
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MiniCPM-V 4.6 (BNB) | 1,3B | no disponible | Apache 2.0 | HuggingFace, Ollama |
-| Qwen3.5-0.8B | 0,8B | no disponible | no disponible | HuggingFace |
-| Ministral 3 3B | 3B | no disponible | no disponible | HuggingFace |
-| Gemma4-E2B-it | 2B | no disponible | no disponible | HuggingFace |
+| MiniCPM-V 4.6 (BNB) | 1,3B | no disponible | Apache 2.0 | Hugging Face, Ollama |
+| Qwen3.5-0.8B | 0,8B | no disponible | no disponible | Hugging Face |
+| Ministral 3 3B | 3B | no disponible | no disponible | Hugging Face |
+| Gemma4-E2B-it | 2B | no disponible | no disponible | Hugging Face |
 
 Segun los datos publicados, MiniCPM-V 4.6 supera a Qwen3.5-0.8B en rendimiento general con 19 veces menos coste de tokens, y supera a Gemma4-E2B-it en rendimiento a pesar de tener menos parametros. Tambien supera a Ministral 3 3B en el indice Artificial Analysis Intelligence Index. Sin embargo, no se dispone de comparativas detalladas con numeros concretos de benchmarks.
 
@@ -84,11 +84,11 @@ Segun los datos publicados, MiniCPM-V 4.6 supera a Qwen3.5-0.8B en rendimiento g
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/openbmb/MiniCPM-V-4.6-BNB
-- Modelo base en HuggingFace: https://huggingface.co/openbmb/MiniCPM-V-4.6
+- Modelo en Hugging Face: https://huggingface.co/openbmb/MiniCPM-V-4.6-BNB
+- Modelo base en Hugging Face: https://huggingface.co/openbmb/MiniCPM-V-4.6
 - Repositorio GitHub: https://github.com/OpenBMB/MiniCPM-o
 - Pagina en Ollama: https://ollama.com/openbmb/minicpm-v4.6
 - Recetas vLLM: https://recipes.vllm.ai/openbmb/MiniCPM-V-4.6
 - Articulo de Artificial Analysis: https://artificialanalysis.ai/articles/openbmb-launches-minicpm-v-4-6-1-3b-instruct
 - CookBook: https://github.com/OpenSQZ/MiniCPM-V-CookBook
-- Demo en HuggingFace: https://huggingface.co/spaces/openbmb/MiniCPM-V-4.6-BNB-Demo
+- Demo en Hugging Face: https://huggingface.co/spaces/openbmb/MiniCPM-V-4.6-BNB-Demo

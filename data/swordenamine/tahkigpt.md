@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`swordenamine/TahkiGPT` es un repositorio de HuggingFace que no contiene un modelo de lenguaje: aloja **شاشتي تحكي** ("mi pantalla habla"), una aplicación web de un único archivo HTML que captura la pantalla del usuario a intervalos configurables y envía cada fotograma a la API de visión de Claude (familia `claude-sonnet-4-*`) para generar comentarios en voz de cinco personajes argelinos. El repositorio declara 0 descargas y 0 likes, no tiene pipeline asignado, ni licencia, ni idiomas en los metadatos, y no publica pesos, tokenizador, configuración ni código de entrenamiento.
+`swordenamine/TahkiGPT` es un repositorio de Hugging Face que no contiene un modelo de lenguaje: aloja **شاشتي تحكي** ("mi pantalla habla"), una aplicación web de un único archivo HTML que captura la pantalla del usuario a intervalos configurables y envía cada fotograma a la API de visión de Claude (familia `claude-sonnet-4-*`) para generar comentarios en voz de cinco personajes argelinos. El repositorio declara 0 descargas y 0 likes, no tiene pipeline asignado, ni licencia, ni idiomas en los metadatos, y no publica pesos, tokenizador, configuración ni código de entrenamiento.
 
 El problema que aborda es de producto, no de modelado: adaptar el concepto de *screen-commentator* de Cheng Xiaohua (original en chino) a un registro cultural argelino, con conmutación de dialecto entre darja, árabe estándar, francés y mezcla, y salida de voz mediante la Web Speech API del navegador. Toda la capacidad lingüística y visual reside en el modelo remoto de Anthropic; la capa propia del repositorio son *system prompts* por personaje y la fontanería de captura de pantalla en el navegador.
 
@@ -17,8 +17,8 @@ Su relevancia es, por tanto, la de un artefacto de demostración de ingeniería 
 | Parametros activos | No aplica: no es un modelo MoE y no hay pesos |
 | Longitud de contexto | No disponible. Depende del modelo Claude Sonnet invocado por API; la model card no especifica versión exacta ni ventana |
 | Tipos de cuantizacion | No disponible. No existen pesos locales que cuantizar; la inferencia ocurre en el servicio remoto |
-| Idiomas soportados | En la aplicación: darja argelina, árabe estándar moderno, francés y mezcla de códigos (cuatro modos de dialecto). Los metadatos de HuggingFace no declaran idiomas |
-| Licencia | MIT según la model card (aplicable al código de la aplicación). El campo de licencia de HuggingFace figura como no disponible y no hay pesos que licenciar |
+| Idiomas soportados | En la aplicación: darja argelina, árabe estándar moderno, francés y mezcla de códigos (cuatro modos de dialecto). Los metadatos de Hugging Face no declaran idiomas |
+| Licencia | MIT según la model card (aplicable al código de la aplicación). El campo de licencia de Hugging Face figura como no disponible y no hay pesos que licenciar |
 | Formato de pesos | No disponible. El repositorio contiene un único archivo HTML (`shaashti-tahki.html`); no hay safetensors, GGUF ni ningún otro artefacto de pesos |
 
 ## Arquitectura y entrenamiento
@@ -80,13 +80,13 @@ La comparación relevante no es de parámetros ni de benchmarks, sino de arquite
 - **Estereotipos culturales y regionales.** Los personajes se apoyan en arquetipos marcados (anciano de la Casbah, joven de Belouizdad, cabilio de Tizi Uzu); el prompt puede producir generalizaciones o caricaturas, y no se documenta ninguna revisión de sesgos.
 - **Calidad dialectal no evaluada.** No hay métricas de corrección en darja, ni de naturalidad, ni de consistencia entre el modo "darja pura" y la mezcla real; el.TTS depende de las voces árabes instaladas en el navegador, cuya disponibilidad varía por sistema operativo.
 - **Sin control de costes.** Un intervalo de 3 segundos genera del orden de veinte llamadas por minuto, cada una con una imagen; no hay presupuesto, límite de gasto ni caché.
-- **Licencia ambigua en los metadatos.** La model card declara MIT, pero el campo de licencia de HuggingFace está vacío; conviene confirmar con el autor antes de un uso comercial. Además, el uso del modelo subyacente se rige por los términos de Anthropic, no por la MIT del código.
+- **Licencia ambigua en los metadatos.** La model card declara MIT, pero el campo de licencia de Hugging Face está vacío; conviene confirmar con el autor antes de un uso comercial. Además, el uso del modelo subyacente se rige por los términos de Anthropic, no por la MIT del código.
 - **Metadatos inconsistentes.** Fechas de creación y actualización incoherentes (2026-10-17 frente a 2026-03-14), sin pipeline, sin idiomas, con 0 descargas y 0 likes: el repositorio no ha pasado ninguna revisión de la comunidad.
 - **Funcionalidad incompleta.** Exportación de transcripción, constructor de personalidades, modo tamazight en tifinague, recorte de región, compartir clips y soporte móvil figuran como pendientes en el *roadmap*; no deben asumirse como disponibles.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/swordenamine/TahkiGPT
+- Repositorio en Hugging Face: https://huggingface.co/swordenamine/TahkiGPT
 - Proyecto original `screen-commentator` de Cheng Xiaohua: https://github.com/scavin/screen-commentator
 - Anthropic (proveedor del modelo de visión): https://anthropic.com
 - Google Fonts (Cairo y Scheherazade New): https://fonts.google.com

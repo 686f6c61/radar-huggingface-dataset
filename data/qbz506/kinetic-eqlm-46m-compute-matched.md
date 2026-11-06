@@ -81,7 +81,7 @@ La única comparación documentada es contra el baseline explícito de 12 capas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qbz506/kinetic-eqlm-46m-compute-matched
+- Modelo en Hugging Face: https://huggingface.co/qbz506/kinetic-eqlm-46m-compute-matched
 - Repositorio de investigación (hallazgos F44–F53): https://github.com/SharathSPhD/game-llm
 - Modelo relacionado (121M): https://huggingface.co/qbz506/kinetic-eqlm-121m-babylm
 - Modelo relacionado (anytime 121M): https://huggingface.co/qbz506/kinetic-eqlm-anytime-121m-babylm

@@ -6,7 +6,7 @@ MiniCPM-OCR-1.0-NPU2 es una variante del modelo MiniCPM-OCR 1.0, un modelo de vi
 
 El modelo resuelve el problema del parsing de documentos del mundo real, incluyendo escaneos, paginas curvadas, fotografias, paginas inclinadas y documentos recapturados. Segun la informacion del autor, alcanza 93.68 en Real5-OmniDocBench y 54.7 en OCRBench v2, con un throughput de aproximadamente 1.2 paginas por segundo en una RTX 5090. Es relevante porque combina calidad de parsing de estado del arte con inferencia eficiente y despliegue sencillo en multiples backends.
 
-La arquitectura subyacente es multimodal vision-lenguaje heredada de MiniCPM-V-4.6, con un total de 1.3B parametros. El modelo soporta ingles y chino, se distribuye bajo licencia Apache 2.0 y esta disponible en HuggingFace con un tamano de repositorio de 2.0 GB.
+La arquitectura subyacente es multimodal vision-lenguaje heredada de MiniCPM-V-4.6, con un total de 1.3B parametros. El modelo soporta ingles y chino, se distribuye bajo licencia Apache 2.0 y esta disponible en Hugging Face con un tamano de repositorio de 2.0 GB.
 
 ## Especificaciones tecnicas
 
@@ -82,7 +82,7 @@ Datos de throughput segun el autor:
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniCPM-OCR 1.0 | 1.3B | no disponible | 93.68 Real5-OmniDocBench; 54.7 OCRBench v2; 1.2 paginas/s | Apache 2.0 | HuggingFace, vLLM, SGLang, llama.cpp, Ollama |
+| MiniCPM-OCR 1.0 | 1.3B | no disponible | 93.68 Real5-OmniDocBench; 54.7 OCRBench v2; 1.2 paginas/s | Apache 2.0 | Hugging Face, vLLM, SGLang, llama.cpp, Ollama |
 | PaddleOCR-VL-1.6 | no disponible | no disponible | Throughput 1.49x inferior a MiniCPM-OCR 1.0 | no disponible | no disponible |
 | MinerU2.5 Pro | no disponible | no disponible | Throughput 3.62x inferior a MiniCPM-OCR 1.0 | no disponible | no disponible |
 
@@ -100,13 +100,13 @@ Los datos de comparacion proceden unicamente de las afirmaciones del autor en la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/FastFlowLM/MiniCPM-OCR-1.0-NPU2
+- Hugging Face: https://huggingface.co/FastFlowLM/MiniCPM-OCR-1.0-NPU2
 - Modelo base: https://huggingface.co/openbmb/MiniCPM-V-4.6
 - GitHub: https://github.com/OpenBMB/MiniCPM-OCR
 - Repositorio MiniCPM-V/o: https://github.com/openbmb/MiniCPM-V
 - Variante DSpark BF16: https://huggingface.co/openbmb/MiniCPM-OCR-1.0-DSpark
 - Variante DSpark GGUF: https://huggingface.co/openbmb/MiniCPM-OCR-1.0-DSpark-gguf
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/openbmb/MiniCPM-OCR
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/openbmb/MiniCPM-OCR
 - Demo oficial global: https://platform.modelbest.ai/console/playground/document-parse
 - Demo oficial CN: https://platform.modelbest.cn/console/playground/document-parse
 - Demo basica CN: http://82.157.64.212:10111/playground/document-parse

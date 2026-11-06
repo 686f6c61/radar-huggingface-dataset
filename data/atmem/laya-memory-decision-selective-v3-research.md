@@ -93,8 +93,8 @@ Segun la model card, solo se recuperaron aproximadamente 3 de los 18 ejemplos po
 
 | Modelo | Parametros | Contexto | Rendimiento en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `atmem/laya-memory-decision-selective-v3-research` | no disponible | presupuesto de servicio de 1.024 tokens | Exactitud 96,22 %, Macro-F1 0,627 en validacion; 0 aciertos `STORE_NEW` en la rejugada operativa | Apache 2.0 | Publico en HuggingFace, 0 descargas |
-| `convaiinnovations/laya-multilingual` (modelo base) | no disponible | no disponible | Exactitud 72,34 %, Macro-F1 0,443 en validacion; 30/100 de acuerdo de politica | no disponible | Publico en HuggingFace |
+| `atmem/laya-memory-decision-selective-v3-research` | no disponible | presupuesto de servicio de 1.024 tokens | Exactitud 96,22 %, Macro-F1 0,627 en validacion; 0 aciertos `STORE_NEW` en la rejugada operativa | Apache 2.0 | Publico en Hugging Face, 0 descargas |
+| `convaiinnovations/laya-multilingual` (modelo base) | no disponible | no disponible | Exactitud 72,34 %, Macro-F1 0,443 en validacion; 30/100 de acuerdo de politica | no disponible | Publico en Hugging Face |
 | Politica determinista AtMem | no aplica | no aplica | 30/100 de acuerdo de politica; 25/25 `STORE` correctos; latencia mediana 3,15 ms | no aplica | Interna del proyecto AtMem |
 
 No se dispone de informacion sobre otros modelos comparables en la misma categoria de decision de memoria selectiva.
@@ -117,7 +117,7 @@ No se dispone de informacion sobre otros modelos comparables en la misma categor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/atmem/laya-memory-decision-selective-v3-research
+- Modelo en Hugging Face: https://huggingface.co/atmem/laya-memory-decision-selective-v3-research
 - Modelo base: https://huggingface.co/convaiinnovations/laya-multilingual
 - Dataset de entrenamiento: https://huggingface.co/datasets/atmem/stateful-memory-transitions-selective-v3-research
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo; las busquedas devolvieron unicamente paginas del videojuego "Prototype" en jeuxvideo.com, sin relacion con este modelo.

@@ -100,9 +100,9 @@ Los resultados de búsqueda web no aportan información sobre modelos comparable
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (ahmed-amedo, Aggressive-MTP) | 27B declarados; 1,86 B en metadatos safetensors | 262.144, extensible a 1.000.000 | Sin benchmarks estándar; solo aceleraciones MTP declaradas | Apache 2.0 | GGUF en HuggingFace, 0 descargas |
-| Qwen/Qwen3.8-27B (base) | No disponible en la información proporcionada | No disponible en la información proporcionada | No disponible | No disponible en la información proporcionada | Pesos originales en HuggingFace |
-| HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF (origen de los ficheros según los enlaces del README) | No disponible en la información proporcionada | No disponible en la información proporcionada | No disponible | No disponible en la información proporcionada | GGUF en HuggingFace |
+| Este modelo (ahmed-amedo, Aggressive-MTP) | 27B declarados; 1,86 B en metadatos safetensors | 262.144, extensible a 1.000.000 | Sin benchmarks estándar; solo aceleraciones MTP declaradas | Apache 2.0 | GGUF en Hugging Face, 0 descargas |
+| Qwen/Qwen3.8-27B (base) | No disponible en la información proporcionada | No disponible en la información proporcionada | No disponible | No disponible en la información proporcionada | Pesos originales en Hugging Face |
+| HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF (origen de los ficheros según los enlaces del README) | No disponible en la información proporcionada | No disponible en la información proporcionada | No disponible | No disponible en la información proporcionada | GGUF en Hugging Face |
 
 No se dispone de datos verificables sobre alternativas de la misma categoría (modelos densos multimodales de ~27B en GGUF), por lo que no se puede establecer una comparativa de rendimiento fiable.
 
@@ -126,7 +126,7 @@ No se dispone de datos verificables sobre alternativas de la misma categoría (m
 
 ## Enlaces
 
-- Página de HuggingFace del modelo: https://huggingface.co/ahmed-amedo/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF
+- Página de Hugging Face del modelo: https://huggingface.co/ahmed-amedo/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Servidor de Discord del autor del ajuste: https://discord.gg/SZ5vacTXYf
 - Ficheros de cuantización y proyector de visión: pestaña "Files and versions" del repositorio (los enlaces directos del README apuntan al espacio `HauhauCS/`, no al de `ahmed-amedo/`).

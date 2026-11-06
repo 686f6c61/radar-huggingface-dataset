@@ -2,9 +2,9 @@
 
 ## Resumen
 
-CYBERBRAIN-PHASE5-FINAL es un modelo de generación de texto publicado en HuggingFace por el usuario Safinul bajo el identificador `Safinul/CYBERBRAIN-PHASE5-FINAL`. Según los metadatos de la ficha, se trata de un modelo basado en la arquitectura Qwen2 (tag `qwen2`, formato `safetensors`) orientado a dominios técnicos muy específicos: criptografía, internals de sistemas operativos, arquitectura de kernel, eBPF y los lenguajes C y Rust. El pipeline declarado es `text-generation` y los tags incluyen `conversational`, lo que sugiere un uso orientado a diálogo técnico.
+CYBERBRAIN-PHASE5-FINAL es un modelo de generación de texto publicado en Hugging Face por el usuario Safinul bajo el identificador `Safinul/CYBERBRAIN-PHASE5-FINAL`. Según los metadatos de la ficha, se trata de un modelo basado en la arquitectura Qwen2 (tag `qwen2`, formato `safetensors`) orientado a dominios técnicos muy específicos: criptografía, internals de sistemas operativos, arquitectura de kernel, eBPF y los lenguajes C y Rust. El pipeline declarado es `text-generation` y los tags incluyen `conversational`, lo que sugiere un uso orientado a diálogo técnico.
 
-El modelo se presenta como la fase final ("PHASE5-FINAL") de un proyecto personal denominado CYBERBRAIN, presumiblemente un fine-tuning sucesivo sobre una base Qwen2. No se dispone de información pública sobre el tamaño de parámetros, la longitud de contexto, el volumen de datos de entrenamiento ni los resultados de evaluación. La ficha de HuggingFace no incluye model card descriptiva, y el repositorio registra 0 descargas y 0 likes en el momento de la consulta.
+El modelo se presenta como la fase final ("PHASE5-FINAL") de un proyecto personal denominado CYBERBRAIN, presumiblemente un fine-tuning sucesivo sobre una base Qwen2. No se dispone de información pública sobre el tamaño de parámetros, la longitud de contexto, el volumen de datos de entrenamiento ni los resultados de evaluación. La ficha de Hugging Face no incluye model card descriptiva, y el repositorio registra 0 descargas y 0 likes en el momento de la consulta.
 
 Su relevancia es, por tanto, limitada y de carácter experimental: resulta de interés únicamente como ejemplo de fine-tuning de nicho sobre Qwen2 para tareas de seguridad y sistemas, pero carece de la documentación, validación y tracción comunitaria necesarias para recomendarlo en producción. Cualquier evaluación rigurosa exigiría inspeccionar los pesos y ejecutar pruebas propias.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| CYBERBRAIN-PHASE5-FINAL | no disponible | no disponible | Apache 2.0 (tag) | HuggingFace, 0 descargas |
-| Qwen2.5-Coder (Alibaba) | 1.5B / 7B / 32B | 32K–128K según variante | Apache 2.0 | HuggingFace, ampliamente adoptado |
-| CodeLlama (Meta) | 7B / 13B / 34B | 16K | Llama 2 Community License | HuggingFace, ampliamente adoptado |
-| DeepSeek-Coder-V2-Lite | 16B (2.4B activos) | 128K | DeepSeek License | HuggingFace, ampliamente adoptado |
+| CYBERBRAIN-PHASE5-FINAL | no disponible | no disponible | Apache 2.0 (tag) | Hugging Face, 0 descargas |
+| Qwen2.5-Coder (Alibaba) | 1.5B / 7B / 32B | 32K–128K según variante | Apache 2.0 | Hugging Face, ampliamente adoptado |
+| CodeLlama (Meta) | 7B / 13B / 34B | 16K | Llama 2 Community License | Hugging Face, ampliamente adoptado |
+| DeepSeek-Coder-V2-Lite | 16B (2.4B activos) | 128K | DeepSeek License | Hugging Face, ampliamente adoptado |
 
 La comparación es orientativa: los modelos alternativos cuentan con documentación, evaluaciones públicas y soporte comunitario, mientras que CYBERBRAIN-PHASE5-FINAL carece de todos ellos.
 
@@ -84,5 +84,5 @@ La comparación es orientativa: los modelos alternativos cuentan con documentaci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Safinul/CYBERBRAIN-PHASE5-FINAL
+- Hugging Face: https://huggingface.co/Safinul/CYBERBRAIN-PHASE5-FINAL
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

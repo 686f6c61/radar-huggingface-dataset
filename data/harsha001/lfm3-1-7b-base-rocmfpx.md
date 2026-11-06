@@ -18,7 +18,7 @@ Es relevante ahora porque el soporte de LFM3 en llama.cpp llega a través del pu
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | ROCmFPX Q6_0_ROCMFPX (6 bits con escalas por tensor), Q8_0 estándar, Q4_K_M estándar; todos con importance matrix |
 | Idiomas soportados | No disponible |
-| Licencia | LFM Open License v1.0 (licencia "other" en HuggingFace) |
+| Licencia | LFM Open License v1.0 (licencia "other" en Hugging Face) |
 | Formato de pesos | GGUF |
 
 ## Arquitectura y entrenamiento
@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks de tareas en la información dispon
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---:|---|---|---|---|
-| LFM3-1.7B-Base-ROCmFPX (este) | 1,73 B | No disponible | LFM Open License v1.0 | GGUF en HuggingFace | Cuantización comunitaria para AMD; sin benchmarks de tareas |
-| LiquidAI/LFM3-1.7B-Base | 1,73 B | No disponible | LFM Open License v1.0 | Pesos originales en HuggingFace | Modelo de referencia sin cuantizar |
-| LiquidAI/LFM3-1.7B | 1,73 B | No disponible | LFM Open License v1.0 | Pesos originales en HuggingFace | Variante con ajuste conversacional; recomendada por el autor para chat |
+| LFM3-1.7B-Base-ROCmFPX (este) | 1,73 B | No disponible | LFM Open License v1.0 | GGUF en Hugging Face | Cuantización comunitaria para AMD; sin benchmarks de tareas |
+| LiquidAI/LFM3-1.7B-Base | 1,73 B | No disponible | LFM Open License v1.0 | Pesos originales en Hugging Face | Modelo de referencia sin cuantizar |
+| LiquidAI/LFM3-1.7B | 1,73 B | No disponible | LFM Open License v1.0 | Pesos originales en Hugging Face | Variante con ajuste conversacional; recomendada por el autor para chat |
 | Qwen2.5-1.5B (referencia de tamaño similar) | 1,54 B | 32.768 tokens | Apache 2.0 | Múltiples formatos y cuantizaciones | Alternativa de propósito general con licencia permisiva; datos de contexto según su model card pública |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
@@ -91,8 +91,8 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Harsha001/LFM3-1.7B-Base-ROCmFPX
+- Repositorio Hugging Face: https://huggingface.co/Harsha001/LFM3-1.7B-Base-ROCmFPX
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B-Base
 - Fork ROCmFPX: https://github.com/HarshaVardhan3002/ROCmFPX
 - Pull request de soporte LFM3 en llama.cpp: https://github.com/ggml-org/llama.cpp/pull/31252
-- Licencia LFM Open License v1.0: incluida como fichero LICENSE en el repositorio de HuggingFace
+- Licencia LFM Open License v1.0: incluida como fichero LICENSE en el repositorio de Hugging Face

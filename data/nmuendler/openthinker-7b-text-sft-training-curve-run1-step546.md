@@ -4,7 +4,7 @@
 
 `nmuendler/OpenThinker-7B-text-sft-training-curve-run1-step546` es un adaptador LoRA entrenado mediante PEFT sobre el modelo base `open-thoughts/OpenThinker-7B`. No se trata de un modelo completo, sino de un checkpoint intermedio (paso 546) de una ejecución de ajuste supervisado (SFT) de texto cuyo propósito declarado, a juzgar por el identificador del repositorio (`training-curve-run1`), es estudiar la curva de entrenamiento: es decir, cómo evolucionan las capacidades del modelo a lo largo de las iteraciones. El repositorio ocupa 0,3 GB, lo que corresponde únicamente a los pesos del adaptador en formato safetensors, no al modelo base.
 
-El modelo lo publica el usuario `nmuendler` y se apoya en la librería `peft` (versión 0.17.1 registrada en la model card) junto con `transformers`. La model card es la plantilla por defecto de HuggingFace y no está cumplimentada: todos los campos relevantes (datos de entrenamiento, hiperparámetros, licencia, idiomas, evaluación) aparecen como `[More Information Needed]`. La licencia y los idiomas soportados no están declarados en los metadatos del repositorio.
+El modelo lo publica el usuario `nmuendler` y se apoya en la librería `peft` (versión 0.17.1 registrada en la model card) junto con `transformers`. La model card es la plantilla por defecto de Hugging Face y no está cumplimentada: todos los campos relevantes (datos de entrenamiento, hiperparámetros, licencia, idiomas, evaluación) aparecen como `[More Information Needed]`. La licencia y los idiomas soportados no están declarados en los metadatos del repositorio.
 
 Su relevancia es fundamentalmente de investigación: sirve como artefacto reproducible para analizar dinámicas de SFT sobre modelos de razonamiento, y no como modelo de producción. Al ser un checkpoint intermedio de un adaptador, su calidad esperada está por debajo de la del modelo base final, y no existen resultados de benchmarks, demos ni documentación adicional publicados por el autor.
 
@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `nmuendler/OpenThinker-7B-text-sft-training-curve-run1-step546` (adaptador LoRA) | 7B en el modelo base + adaptador de tamaño no especificado | No disponible | No evaluado; sin benchmarks publicados | No disponible | Repositorio HuggingFace de 0,3 GB, 0 descargas, 0 likes |
-| `open-thoughts/OpenThinker-7B` (modelo base) | 7B | No disponible en la información proporcionada | No disponible en la información proporcionada | No disponible en la información proporcionada | Repositorio público de HuggingFace |
+| `nmuendler/OpenThinker-7B-text-sft-training-curve-run1-step546` (adaptador LoRA) | 7B en el modelo base + adaptador de tamaño no especificado | No disponible | No evaluado; sin benchmarks publicados | No disponible | Repositorio Hugging Face de 0,3 GB, 0 descargas, 0 likes |
+| `open-thoughts/OpenThinker-7B` (modelo base) | 7B | No disponible en la información proporcionada | No disponible en la información proporcionada | No disponible en la información proporcionada | Repositorio público de Hugging Face |
 | Otros modelos de razonamiento de ~7B (por ejemplo, destilaciones de la familia DeepSeek-R1 sobre bases Qwen) | ~7B | No disponible en la información proporcionada | No disponible en la información proporcionada | No disponible en la información proporcionada | No evaluado en esta ficha |
 
 No se dispone de datos verificables para establecer comparaciones cuantitativas con alternativas de la misma categoría; cualquier comparación numérica exigiría ejecutar evaluaciones propias sobre este adaptador y sobre los modelos de contraste.

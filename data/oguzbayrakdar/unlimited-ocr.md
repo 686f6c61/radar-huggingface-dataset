@@ -39,7 +39,7 @@ No se dispone de información sobre el número de tokens de entrenamiento, la co
 - Capacidad multilingüe declarada, aunque sin listado explícito de idiomas ni evaluación por idioma.
 - Soporte de entrenamiento y ajuste fino a través de ms-swift.
 - Despliegue servido mediante vLLM (con imágenes Docker oficiales) y SGLang (wheel local), además de transformers.
-- No se documentan tool calling, function calling, comportamiento agéntico, modo thinking, audio ni vídeo. Las etiquetas de HuggingFace incluyen `conversational` y `feature-extraction`, pero la model card no describe ninguna interfaz conversacional ni de extracción de embeddings.
+- No se documentan tool calling, function calling, comportamiento agéntico, modo thinking, audio ni vídeo. Las etiquetas de Hugging Face incluyen `conversational` y `feature-extraction`, pero la model card no describe ninguna interfaz conversacional ni de extracción de embeddings.
 
 ## Casos de uso
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Unlimited-OCR (Baidu) | 3.336.106.240 | ~500 M | Hasta 32768 tokens en los ejemplos de inferencia | MIT | HuggingFace, ModelScope, vLLM, SGLang, Baidu Cloud |
+| Unlimited-OCR (Baidu) | 3.336.106.240 | ~500 M | Hasta 32768 tokens en los ejemplos de inferencia | MIT | Hugging Face, ModelScope, vLLM, SGLang, Baidu Cloud |
 | DeepSeek-OCR (modelo base declarado) | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible | Repositorio publico de DeepSeek |
 | Otros OCR vision-language (olmOCR, dots.ocr, PaddleOCR-VL) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -82,18 +82,18 @@ La comparativa relevante es con DeepSeek-OCR, del que Unlimited-OCR se declara h
 - No hay datos publicados de sesgos. Al ser un modelo multilingüe sin listado de idiomas, el rendimiento puede variar mucho entre lenguas y alfabetos, y no está cuantificado.
 - Riesgo de alucinación inherente a los modelos de lenguaje: en OCR, esto se manifiesta como texto inventado, líneas duplicadas o saltos de estructura en documentos degradados, borrosos o con tablas complejas. El propio modelo incorpora parámetros anti-repetición, lo que sugiere que las repeticiones son un fallo conocido.
 - La longitud de contexto no está documentada formalmente; los 32.768 tokens provienen del parámetro `max_length` de los ejemplos. Superar ese límite en documentos muy largos requerirá trocear y podría romper la coherencia entre páginas.
-- Las etiquetas de HuggingFace (`feature-extraction`) y el pipeline declarado (`image-text-to-text`) no coinciden plenamente con las capacidades descritas en la model card; conviene validar el comportamiento real antes de asumir funcionalidades de extracción de embeddings.
+- Las etiquetas de Hugging Face (`feature-extraction`) y el pipeline declarado (`image-text-to-text`) no coinciden plenamente con las capacidades descritas en la model card; conviene validar el comportamiento real antes de asumir funcionalidades de extracción de embeddings.
 - Licencia MIT: permite uso comercial y modificación, pero conviene revisar igualmente las licencias de las dependencias y del código custom distribuido con los pesos.
 - No se documentan métricas de calidad ni comparativas cuantitativas, por lo que la elección frente a otras alternativas debe basarse en una evaluación propia sobre el corpus objetivo.
 - El soporte de SGLang depende de un wheel local y de una versión fijada de `kernels`, lo que añade fragilidad en el mantenimiento del entorno.
 
 ## Enlaces
 
-- Repositorio de HuggingFace analizado: https://huggingface.co/Oguzbayrakdar/Unlimited-OCR
-- Repositorio oficial en HuggingFace: https://huggingface.co/baidu/Unlimited-OCR
+- Repositorio de Hugging Face analizado: https://huggingface.co/Oguzbayrakdar/Unlimited-OCR
+- Repositorio oficial en Hugging Face: https://huggingface.co/baidu/Unlimited-OCR
 - Repositorio de código en GitHub: https://github.com/baidu/Unlimited-OCR
 - Paper en arXiv: https://arxiv.org/abs/2606.23050
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/baidu/Unlimited-OCR
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/baidu/Unlimited-OCR
 - Modelo en ModelScope: https://modelscope.cn/models/PaddlePaddle/Unlimited-OCR
 - Receta de despliegue en vLLM: https://recipes.vllm.ai/baidu/Unlimited-OCR
 - Documentación en Baidu Cloud: https://cloud.baidu.com/doc/OCR/s/fmr1p39gb

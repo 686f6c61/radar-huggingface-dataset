@@ -6,7 +6,7 @@ SimpleTuner/flux-3-klein-image-domokun-512-1024 es un adaptador LoRA (Low-Rank A
 
 El interes practico del modelo reside en dos aspectos. Primero, demuestra el flujo de entrenamiento de SimpleTuner para modelos de difusion de la familia Flux 3 en su variante "klein", un caso poco documentado publicamente. Segundo, es un ejemplo extremo de personalizacion con muy pocos datos: el entrenamiento uso dos datasets de 27 imagenes cada uno (uno a 512 px y otro a 1024 px, con recorte aleatorio cuadrado), 185 epocas y 10 000 pasos, sin prompts de validacion durante el entrenamiento. Esto lo convierte en un caso de estudio de sobreajuste controlado y de aprendizaje de identidad visual con poquisimos ejemplos.
 
-El modelo se publica con licencia "other" y con la etiqueta not-for-all-audiences, lo que aconseja revisar las condiciones del autor antes de cualquier uso comercial o publico. En el momento de redactar esta ficha, el repositorio registra 0 descargas y 0 "likes", y su fecha de creacion registrada en HuggingFace es el 16 de octubre de 2026, con ultima actualizacion el mismo dia.
+El modelo se publica con licencia "other" y con la etiqueta not-for-all-audiences, lo que aconseja revisar las condiciones del autor antes de cualquier uso comercial o publico. En el momento de redactar esta ficha, el repositorio registra 0 descargas y 0 "likes", y su fecha de creacion registrada en Hugging Face es el 16 de octubre de 2026, con ultima actualizacion el mismo dia.
 
 ## Especificaciones tecnicas
 
@@ -80,8 +80,8 @@ No se dispone de datos verificables sobre otros adaptadores LoRA entrenados sobr
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SimpleTuner/flux-3-klein-image-domokun-512-1024 | Adaptador LoRA (rank 32, alpha 32) sobre Flux 3 klein | no disponible (adaptador) | no aplicable | other | HuggingFace, 0 descargas, 0 likes |
-| black-forest-labs/flux-3-image-klein-base | Modelo base de difusion texto-a-imagen | no disponible | no aplicable | no disponible | HuggingFace |
+| SimpleTuner/flux-3-klein-image-domokun-512-1024 | Adaptador LoRA (rank 32, alpha 32) sobre Flux 3 klein | no disponible (adaptador) | no aplicable | other | Hugging Face, 0 descargas, 0 likes |
+| black-forest-labs/flux-3-image-klein-base | Modelo base de difusion texto-a-imagen | no disponible | no aplicable | no disponible | Hugging Face |
 | Otros adaptadores LoRA de la familia | no disponible | no disponible | no aplicable | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -95,12 +95,12 @@ No se dispone de datos verificables sobre otros adaptadores LoRA entrenados sobr
 - Resoluciones acotadas: el adaptador se entreno en buckets cuadrados de 512 y 1024 px, de modo que no hay evidencia de buen comportamiento en formatos panoramicos o verticales.
 - Parametros de validacion no equivalentes a los de entrenamiento: el propio autor advierte de que los ajustes de validacion (CFG 3.5, 50 pasos) no tienen por que coincidir con los de entrenamiento, lo que complica reproducir el resultado optimo.
 - Adopcion nula y sin validacion externa: 0 descargas y 0 likes en el momento de redactar esta ficha, y sin benchmarks publicos, por lo que no existe evidencia independiente de calidad.
-- Fecha de creacion registrada poco habitual: HuggingFace registra la creacion el 16 de octubre de 2026, dato que conviene verificar si se necesita para trazabilidad.
+- Fecha de creacion registrada poco habitual: Hugging Face registra la creacion el 16 de octubre de 2026, dato que conviene verificar si se necesita para trazabilidad.
 - Riesgo de alucinacion visual: como todo modelo de difusion, puede generar anatomia, texto o detalles incoherentes, especialmente con pocos datos de entrenamiento y fuera de las escenas vistas en los ejemplos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SimpleTuner/flux-3-klein-image-domokun-512-1024
+- Modelo en Hugging Face: https://huggingface.co/SimpleTuner/flux-3-klein-image-domokun-512-1024
 - Modelo base: https://huggingface.co/black-forest-labs/flux-3-image-klein-base
 - Repositorio del framework de entrenamiento: no disponible en la informacion proporcionada (la model card referencia el paquete simpletuner y su modulo simpletuner.helpers.models.flux3_image.pipeline, pero no incluye URL)
 - Paper, blog tecnico o demo del adaptador: no disponible

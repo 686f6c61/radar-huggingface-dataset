@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `acquisition_generator_AS_tracin_combine_WGM_MP_qwen14b` es un checkpoint de la familia Qwen2 con 14.770.033.664 parámetros, publicado por el usuario `ishikaa` en HuggingFace. El nombre del repositorio sugiere un fine-tuning orientado a la generación de "adquisiciones" (acquisition generator) combinando técnicas de TracIn (Tracing Gradient Descent, arXiv:1910.09700) y posiblemente Weight Generation Models (WGM) y Model Patching (MP), aunque la model card no documenta ninguno de estos extremos.
+El modelo `acquisition_generator_AS_tracin_combine_WGM_MP_qwen14b` es un checkpoint de la familia Qwen2 con 14.770.033.664 parámetros, publicado por el usuario `ishikaa` en Hugging Face. El nombre del repositorio sugiere un fine-tuning orientado a la generación de "adquisiciones" (acquisition generator) combinando técnicas de TracIn (Tracing Gradient Descent, arXiv:1910.09700) y posiblemente Weight Generation Models (WGM) y Model Patching (MP), aunque la model card no documenta ninguno de estos extremos.
 
-La relevancia del modelo es limitada en el momento de su publicación: cuenta con cero descargas y cero likes, la model card es la plantilla automática de HuggingFace sin cumplimentar y no se declara licencia, idiomas ni datos de entrenamiento. Se trata, por tanto, de un artefacto de investigación más que de un modelo listo para producción. Aun así, su base Qwen2 de 14B le confiere una arquitectura transformer decoder-only moderna con GQA, RoPE y contexto nativo de 32.768 tokens (según la configuración estándar de Qwen2-14B), lo que lo hace potencialmente utilizable si se valida su comportamiento.
+La relevancia del modelo es limitada en el momento de su publicación: cuenta con cero descargas y cero likes, la model card es la plantilla automática de Hugging Face sin cumplimentar y no se declara licencia, idiomas ni datos de entrenamiento. Se trata, por tanto, de un artefacto de investigación más que de un modelo listo para producción. Aun así, su base Qwen2 de 14B le confiere una arquitectura transformer decoder-only moderna con GQA, RoPE y contexto nativo de 32.768 tokens (según la configuración estándar de Qwen2-14B), lo que lo hace potencialmente utilizable si se valida su comportamiento.
 
 El interés técnico reside en el pipeline de entrenamiento implícito en el nombre: el uso de TracIn para atribución de influencia de datos y su combinación con generación de pesos podría indicar un experimento de destilación o merging de checkpoints. Sin documentación, cualquier uso en producción exige una evaluación empírica previa.
 
@@ -25,7 +25,7 @@ El interés técnico reside en el pipeline de entrenamiento implícito en el nom
 
 La arquitectura corresponde a un transformer decoder-only de la familia Qwen2, según el tag `qwen2` del repositorio. La base Qwen2-14B emplea atención con Grouped Query Attention (40 cabezas de consulta y 8 de clave/valor), embeddings rotatorios (RoPE) y capas SwiGLU en el FFN. El checkpoint tiene 14.770.033.664 parámetros, lo que coincide con el tamaño de Qwen2-14B (14,7B), confirmando que no se ha alterado el esqueleto del modelo.
 
-No hay información sobre el entrenamiento: ni número de tokens, ni composición del dataset, ni si hubo RLHF, DPO o SFT. El nombre del repositorio (`acquisition_generator_AS_tracin_combine_WGM_MP`) apunta a un experimento de investigación que combina TracIn (técnica de atribución de influencia de datos basada en gradientes, referenciada en el tag `arxiv:1910.09700`) con generación de pesos y model patching. La model card es la plantilla automática de HuggingFace y no aporta ningún detalle sobre hiperparámetros, régimen de precisión ni infraestructura de cómputo.
+No hay información sobre el entrenamiento: ni número de tokens, ni composición del dataset, ni si hubo RLHF, DPO o SFT. El nombre del repositorio (`acquisition_generator_AS_tracin_combine_WGM_MP`) apunta a un experimento de investigación que combina TracIn (técnica de atribución de influencia de datos basada en gradientes, referenciada en el tag `arxiv:1910.09700`) con generación de pesos y model patching. La model card es la plantilla automática de Hugging Face y no aporta ningún detalle sobre hiperparámetros, régimen de precisión ni infraestructura de cómputo.
 
 ## Capacidades
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `ishikaa/acquisition_generator_AS_tracin_combine_WGM_MP_qwen14b` | 14,77B | no disponible (base Qwen2: 32.768) | no disponible | HuggingFace, 0 descargas |
-| Qwen2-14B (base oficial) | 14,7B | 32.768 (131.072 con YaRN) | Apache 2.0 | HuggingFace, ampliamente usado |
-| Qwen2.5-14B | 14,7B | 32.768 (131.072 con YaRN) | Apache 2.0 (excepto 3B y 72B) | HuggingFace, muy usado |
-| Mistral-Nemo-12B | 12B | 128.000 | Apache 2.0 | HuggingFace, muy usado |
+| `ishikaa/acquisition_generator_AS_tracin_combine_WGM_MP_qwen14b` | 14,77B | no disponible (base Qwen2: 32.768) | no disponible | Hugging Face, 0 descargas |
+| Qwen2-14B (base oficial) | 14,7B | 32.768 (131.072 con YaRN) | Apache 2.0 | Hugging Face, ampliamente usado |
+| Qwen2.5-14B | 14,7B | 32.768 (131.072 con YaRN) | Apache 2.0 (excepto 3B y 72B) | Hugging Face, muy usado |
+| Mistral-Nemo-12B | 12B | 128.000 | Apache 2.0 | Hugging Face, muy usado |
 
 La comparación con la base Qwen2-14B es la más relevante: mismo tamaño y arquitectura, pero con licencia Apache 2.0, model card completa y benchmarks publicados (MMLU ~84,8 en Qwen2-14B). El checkpoint de `ishikaa` no ofrece ninguna de estas garantías y su licencia no está declarada, lo que impide su uso comercial sin aclaración previa del autor.
 
@@ -83,7 +83,7 @@ La comparación con la base Qwen2-14B es la más relevante: mismo tamaño y arqu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ishikaa/acquisition_generator_AS_tracin_combine_WGM_MP_qwen14b
+- Hugging Face: https://huggingface.co/ishikaa/acquisition_generator_AS_tracin_combine_WGM_MP_qwen14b
 - Paper de TracIn referenciado en los tags: https://arxiv.org/abs/1910.09700
 - Repositorio oficial de Qwen2 (base arquitectónica): https://github.com/QwenLM/Qwen2
 - Modelo base Qwen2-14B: https://huggingface.co/Qwen/Qwen2-14B

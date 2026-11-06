@@ -85,9 +85,9 @@ La comparacion con modelos de terceros y los datos de benchmarks asociados no es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BleuCPU/pocket-voice
+- Modelo en Hugging Face: https://huggingface.co/BleuCPU/pocket-voice
 - Perfil del autor: https://huggingface.co/BleuCPU
-- Neuphonic en HuggingFace: https://huggingface.co/neuphonic
+- Neuphonic en Hugging Face: https://huggingface.co/neuphonic
 - Fichero fuente GGUF: https://huggingface.co/neuphonic/neutts-air-q4-gguf
 - Fichero fuente del decodificador ONNX: https://huggingface.co/neuphonic/neucodec-onnx-decoder
 - Repositorio de NeuTTS: https://github.com/neuphonic/neutts

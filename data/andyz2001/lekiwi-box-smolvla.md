@@ -77,7 +77,7 @@ Existen otros fine-tunes de SmolVLA para el robot LeKiwi, como `bigbangoslab/smo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AndyZ2001/lekiwi-box-smolvla
+- Modelo en Hugging Face: https://huggingface.co/AndyZ2001/lekiwi-box-smolvla
 - Dataset de entrenamiento: https://huggingface.co/datasets/AndyZ2001/lekiwi-box
 - Paper de SmolVLA: https://huggingface.co/papers/2506.01844
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot

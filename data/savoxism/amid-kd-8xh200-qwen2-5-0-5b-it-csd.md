@@ -87,7 +87,7 @@ Advertencia del autor: no se evaluo ninguna linea base (ni el estudiante sin ent
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (`amid-kd-8xh200-qwen2.5-0.5b-it-csd`) | ~0,5B | No disponible en la ficha (entrenado a 1.025 tokens) | Degradado: MMLU-STEM 0,2223; GSM8K strict 0,0083 | Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
+| Este modelo (`amid-kd-8xh200-qwen2.5-0.5b-it-csd`) | ~0,5B | No disponible en la ficha (entrenado a 1.025 tokens) | Degradado: MMLU-STEM 0,2223; GSM8K strict 0,0083 | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
 | `Qwen/Qwen2.5-0.5B-Instruct` (modelo base) | ~0,5B | 32.768 tokens segun la ficha del modelo base | No evaluado en esta ficha; es la referencia frente a la que el autor no comparo | Apache 2.0 | Ampliamente disponible |
 | `Qwen/Qwen3-4B-Instruct-2507` (profesor) | ~4B | No disponible en la informacion proporcionada | No evaluado en esta ficha | Apache 2.0 | Ampliamente disponible |
 | `Qwen/Qwen3-0.6B` (alternativa de tamano similar) | ~0,6B | 32.768 tokens segun su ficha | No comparable con los datos aqui aportados | Apache 2.0 | Ampliamente disponible |
@@ -112,7 +112,7 @@ Nota: los datos de contexto y licencia de los modelos alternativos provienen de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Savoxism/amid-kd-8xh200-qwen2.5-0.5b-it-csd
+- Modelo en Hugging Face: https://huggingface.co/Savoxism/amid-kd-8xh200-qwen2.5-0.5b-it-csd
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Modelo profesor: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Dataset de entrenamiento: https://huggingface.co/datasets/VoCuc/UltraInteract-Infer

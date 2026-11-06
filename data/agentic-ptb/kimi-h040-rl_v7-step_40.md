@@ -75,6 +75,6 @@ No se dispone de datos de rendimiento para establecer una comparativa fiable. El
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/agentic-ptb/kimi.h040.rl_v7.step_40
+- Repositorio en Hugging Face: https://huggingface.co/agentic-ptb/kimi.h040.rl_v7.step_40
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Índice del barrido AgentPTB (mencionado en la model card, sin URL directa): `agentic-ptb/INDEX`

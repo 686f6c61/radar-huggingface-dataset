@@ -88,7 +88,7 @@ Los modelos Qwen3.6-35B-A3B y Gemma-4-31B aparecen en los benchmarks originales,
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/netrias/Ornith-1.5-9B-MLX-oQ6
+- Repositorio Hugging Face: https://huggingface.co/netrias/Ornith-1.5-9B-MLX-oQ6
 - Modelo base MLX: https://huggingface.co/ornith-ai/Ornith-1.5-9B-MLX
 - Modelo original (precisión completa): https://huggingface.co/ornith-ai/Ornith-1.5-9B
 - Blog de Ornith: https://ornith.ai/ornith_1_5.html

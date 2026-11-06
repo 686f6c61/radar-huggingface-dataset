@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| evo2_7b (este mirror) | 7B | hasta 1.000.000 | Apache 2.0 | HuggingFace (mirror) |
-| evo2_7b_base | 7B | 8.192 | Apache 2.0 | HuggingFace (oficial) |
-| evo2_40b | 40B | hasta 1.000.000 | Apache 2.0 | HuggingFace (oficial) |
-| evo2_1b_base | 1B | 8.192 | Apache 2.0 | HuggingFace (oficial) |
+| evo2_7b (este mirror) | 7B | hasta 1.000.000 | Apache 2.0 | Hugging Face (mirror) |
+| evo2_7b_base | 7B | 8.192 | Apache 2.0 | Hugging Face (oficial) |
+| evo2_40b | 40B | hasta 1.000.000 | Apache 2.0 | Hugging Face (oficial) |
+| evo2_1b_base | 1B | 8.192 | Apache 2.0 | Hugging Face (oficial) |
 
 No se dispone en la informacion proporcionada de datos de rendimiento comparado con otros modelos genomicos (por ejemplo, Nucleotide Transformer o DNABERT), por lo que la comparativa se limita a la familia Evo 2.
 
@@ -87,7 +87,7 @@ No se dispone en la informacion proporcionada de datos de rendimiento comparado 
 
 ## Enlaces
 
-- Repositorio HuggingFace (mirror): https://huggingface.co/hellnahbru/evo2_7b-preserved-20261029
+- Repositorio Hugging Face (mirror): https://huggingface.co/hellnahbru/evo2_7b-preserved-20261029
 - Checkpoint oficial Evo 2 7B: https://huggingface.co/arcinstitute/evo2_7b
 - Checkpoint oficial Evo 2 40B: https://huggingface.co/arcinstitute/evo2_40b
 - Checkpoint oficial Evo 2 7B base: https://huggingface.co/arcinstitute/evo2_7b_base

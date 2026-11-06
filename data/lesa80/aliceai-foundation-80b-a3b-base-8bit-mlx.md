@@ -2,11 +2,11 @@
 
 ## Resumen
 
-AliceAI-Foundation-80B-A3B-Base-8bit-MLX es una cuantizacion a 8 bits en formato MLX del modelo base yandex/AliceAI-Foundation-80B-A3B-Base, publicada por el usuario lesa80 en HuggingFace. Se trata de un modelo de generacion de texto con arquitectura de mezcla de expertos (MoE), con aproximadamente 80 000 millones de parametros totales y 3 000 millones de parametros activos por token, segun la nomenclatura del propio identificador (80B-A3B).
+AliceAI-Foundation-80B-A3B-Base-8bit-MLX es una cuantizacion a 8 bits en formato MLX del modelo base yandex/AliceAI-Foundation-80B-A3B-Base, publicada por el usuario lesa80 en Hugging Face. Se trata de un modelo de generacion de texto con arquitectura de mezcla de expertos (MoE), con aproximadamente 80 000 millones de parametros totales y 3 000 millones de parametros activos por token, segun la nomenclatura del propio identificador (80B-A3B).
 
 El modelo original lo desarrolla Yandex, y la etiqueta de idioma asociada es el ruso (ru). Al ser un modelo base, no ha pasado por un proceso de alineacion orientado a instrucciones del tipo RLHF/DPO, al menos no en esta variante. La relevancia de esta ficha concreta radica en que permite ejecutar un MoE de gran tamano en hardware Apple Silicon mediante MLX, con un coste de memoria reducido por la cuantizacion a 8 bits y un coste computacional por token bajo gracias a los 3B parametros activos.
 
-La informacion publica disponible en la ficha de HuggingFace es muy limitada: no se declara licencia, no se detalla la longitud de contexto, no se especifican los idiomas soportados mas alla de la etiqueta ru y no se aportan resultados de benchmarks. Cualquier evaluacion seria del modelo requiere consultar la ficha del modelo base de Yandex, que no forma parte de la informacion proporcionada.
+La informacion publica disponible en la ficha de Hugging Face es muy limitada: no se declara licencia, no se detalla la longitud de contexto, no se especifican los idiomas soportados mas alla de la etiqueta ru y no se aportan resultados de benchmarks. Cualquier evaluacion seria del modelo requiere consultar la ficha del modelo base de Yandex, que no forma parte de la informacion proporcionada.
 
 ## Especificaciones tecnicas
 
@@ -85,11 +85,11 @@ Los datos de los modelos alternativos proceden de su documentacion publica habit
 - Longitud de contexto desconocida: no puede planificarse el uso en tareas de contexto largo sin consultar la ficha del modelo base.
 - Repositorio de terceros con cero descargas y cero valoraciones en el momento de la consulta: no hay validacion comunitaria de la calidad de la conversion.
 - Dependencia de MLX y Apple Silicon: no es portable a CUDA ni a aceleradores de otros fabricantes sin una conversion adicional de pesos.
-- La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; los unicos enlaces fiables son los de HuggingFace.
+- La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; los unicos enlaces fiables son los de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lesa80/AliceAI-Foundation-80B-A3B-Base-8bit-MLX
+- Modelo en Hugging Face: https://huggingface.co/lesa80/AliceAI-Foundation-80B-A3B-Base-8bit-MLX
 - Modelo base referenciado: https://huggingface.co/yandex/AliceAI-Foundation-80B-A3B-Base
 - Libreria MLX: https://github.com/ml-explore/mlx
 - Libreria MLX-LM: https://github.com/ml-explore/mlx-lm

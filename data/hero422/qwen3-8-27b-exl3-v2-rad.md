@@ -115,7 +115,7 @@ No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K) 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Hero422/qwen3.8-27b-exl3-v2-rad
+- Repositorio Hugging Face: https://huggingface.co/Hero422/qwen3.8-27b-exl3-v2-rad
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Motor radiance: https://codeberg.org/StillDeadcode/radiance
 - Plugins `qc-exl3-ladder`: https://codeberg.org/StillDeadcode/radiance/pulls/292

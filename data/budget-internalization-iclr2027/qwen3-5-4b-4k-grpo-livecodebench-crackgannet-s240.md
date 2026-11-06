@@ -4,7 +4,7 @@
 
 El modelo `qwen3.5-4b-4k-grpo-livecodebench-crackgannet-s240` es un ajuste fino por aprendizaje por refuerzo del modelo base Qwen/Qwen3.5-4B, publicado por la organizacion `budget-internalization-iclr2027`. Se trata de un checkpoint intermedio (paso 240) del run interno apodado `crackgannet`, entrenado con el algoritmo GRPO sobre problemas de programacion de LiveCodeBench (v1) bajo un presupuesto de generacion fijo de 4096 tokens. El objetivo declarado del trabajo es estudiar la "internalizacion del presupuesto de tokens", es decir, como un modelo aprende a resolver tareas de codigo sin agotar la ventana de generacion asignada.
 
-El checkpoint forma parte de un envio anonimo a ICLR 2027, lo que explica su caracter experimental: no es un modelo de produccion sino un artefacto de investigacion liberado para reproducibilidad. Cuenta con 4.659.865.088 parametros totales (aproximadamente 4,66 mil millones, en BF16) y un repositorio de 9,3 GB. El pipeline declarado en HuggingFace es `image-text-to-text`, aunque la model card solo documenta uso de generacion de texto con `AutoModelForCausalLM`; esta discrepancia se comenta en la seccion de limitaciones.
+El checkpoint forma parte de un envio anonimo a ICLR 2027, lo que explica su caracter experimental: no es un modelo de produccion sino un artefacto de investigacion liberado para reproducibilidad. Cuenta con 4.659.865.088 parametros totales (aproximadamente 4,66 mil millones, en BF16) y un repositorio de 9,3 GB. El pipeline declarado en Hugging Face es `image-text-to-text`, aunque la model card solo documenta uso de generacion de texto con `AutoModelForCausalLM`; esta discrepancia se comenta en la seccion de limitaciones.
 
 Su relevancia actual es doble. Por un lado, es un ejemplo de ajuste por RL aplicado a un modelo de ~4B en el dominio de codigo competitivo, una linea de trabajo cada vez mas comun. Por otro, la variable experimental central —el presupuesto de tokens como parte de la senal de recompensa— aborda un problema practico de despliegue: controlar la longitud de las respuestas generadas en razonamiento de cadena larga sin degradar la calidad de la solucion.
 
@@ -12,7 +12,7 @@ Su relevancia actual es doble. Por un lado, es un ejemplo de ajuste por RL aplic
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible. La etiqueta de HuggingFace indica `qwen3_5`; es el mismo modelo base que Qwen/Qwen3.5-4B |
+| Arquitectura | No disponible. La etiqueta de Hugging Face indica `qwen3_5`; es el mismo modelo base que Qwen/Qwen3.5-4B |
 | Parametros totales | 4.659.865.088 (4,66 B) |
 | Parametros activos | No aplica / no disponible (no se indica que sea un modelo MoE) |
 | Longitud de contexto | No disponible. El valor de 4096 tokens corresponde al presupuesto de generacion (`max_new_tokens`) usado en entrenamiento, no a la ventana de contexto del modelo |
@@ -35,11 +35,11 @@ La innovacion tecnica central es la funcion de recompensa ligada al presupuesto.
 
 - Generacion de codigo: es la capacidad principal y el unico dominio supervisado explicitamente durante el ajuste por RL, sobre problemas de programacion tipo LiveCodeBench.
 - Razonamiento con presupuesto controlado: el entrenamiento penaliza con recompensa cero las respuestas que agotan los 4096 tokens, por lo que el modelo esta optimizado para producir soluciones dentro de esa cota.
-- Razonamiento de cadena larga: las etiquetas `reasoning` y `conversational` de HuggingFace sugieren soporte de modo de razonamiento y de dialogo multiturno, aunque la model card no lo detalla.
+- Razonamiento de cadena larga: las etiquetas `reasoning` y `conversational` de Hugging Face sugieren soporte de modo de razonamiento y de dialogo multiturno, aunque la model card no lo detalla.
 - Multilingue: no disponible. La model card no enumera idiomas soportados; el modelo base podria tener capacidades multilingues, pero no se documentan para este checkpoint.
 - Tool calling / function calling: no documentado. No hay ninguna mencion a llamada a funciones o herramientas en la informacion proporcionada.
 - Agentes y razonamiento multi-paso: no documentado.
-- Vision: el pipeline declarado en HuggingFace es `image-text-to-text`, pero la model card solo muestra ejemplos con `AutoModelForCausalLM` y `AutoTokenizer`, y no describe ningun componente de vision ni datos multimodales en el entrenamiento. La capacidad multimodal no se puede confirmar con la informacion disponible.
+- Vision: el pipeline declarado en Hugging Face es `image-text-to-text`, pero la model card solo muestra ejemplos con `AutoModelForCausalLM` y `AutoTokenizer`, y no describe ningun componente de vision ni datos multimodales en el entrenamiento. La capacidad multimodal no se puede confirmar con la informacion disponible.
 - Modo "thinking" explicito: no documentado.
 
 ## Casos de uso
@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3.5-4b-4k-grpo-livecodebench-crackgannet-s240 | 4,66 B | No disponible (presupuesto de generacion de 4096 tokens) | GRPO sobre LiveCodeBench v1, 240 pasos | Apache 2.0 | HuggingFace, safetensors BF16 |
-| Qwen/Qwen3.5-4B (modelo base) | 4,66 B (el fine-tune conserva la arquitectura) | No disponible | Preentrenamiento y alineacion del autor original | Apache 2.0 | HuggingFace |
+| qwen3.5-4b-4k-grpo-livecodebench-crackgannet-s240 | 4,66 B | No disponible (presupuesto de generacion de 4096 tokens) | GRPO sobre LiveCodeBench v1, 240 pasos | Apache 2.0 | Hugging Face, safetensors BF16 |
+| Qwen/Qwen3.5-4B (modelo base) | 4,66 B (el fine-tune conserva la arquitectura) | No disponible | Preentrenamiento y alineacion del autor original | Apache 2.0 | Hugging Face |
 | Otros modelos de ~4 B ajustados por RL para codigo | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La busqueda web realizada no devolvio informacion tecnica sobre modelos comparables: los resultados obtenidos corresponden a sitios de alquiler de vehiculos y a informacion presupuestaria del Estado frances, sin ninguna relacion con modelos de lenguaje. No se dispone, por tanto, de datos verificables para establecer una comparativa cuantitativa con alternativas de la misma categoria.
@@ -87,7 +87,7 @@ La busqueda web realizada no devolvio informacion tecnica sobre modelos comparab
 - Riesgo de hacking de la recompensa: al ser la recompensa binaria (pasar los tests) y penalizar con cero las respuestas que agotan el presupuesto, el modelo podria haber aprendido atajos que superan los tests publicos sin resolver correctamente el problema, o haber internalizado un sesgo hacia soluciones breves en detrimento de la correccion.
 - Sesgo hacia respuestas cortas: el entrenamiento penaliza explicitamente las generaciones que alcanzan los 4096 tokens, lo que puede hacer que el modelo abandone prematuramente problemas que requieren razonamiento largo.
 - Confusion entre presupuesto de generacion y contexto: los 4096 tokens son `max_new_tokens` durante el entrenamiento, no la ventana de contexto del modelo. No debe interpretarse como longitud de contexto.
-- Inconsistencia en el pipeline: HuggingFace declara `image-text-to-text`, pero la model card solo documenta uso de texto. No hay evidencia de capacidades de vision.
+- Inconsistencia en el pipeline: Hugging Face declara `image-text-to-text`, pero la model card solo documenta uso de texto. No hay evidencia de capacidades de vision.
 - Idiomas no documentados: no se especifica que idiomas soporta el checkpoint. Se desconoce su comportamiento en castellano, mas alla de lo heredado del modelo base.
 - Tool calling y agentes no documentados: no se puede asumir soporte de llamada a funciones ni de flujos multi-paso.
 - Sesgos y alucinacion: no se publica ninguna evaluacion de sesgos, toxicidad o tasas de alucinacion. Como modelo de codigo, el riesgo principal es generar APIs, librerias o funciones inexistentes que parezcan plausibles.
@@ -96,7 +96,7 @@ La busqueda web realizada no devolvio informacion tecnica sobre modelos comparab
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/budget-internalization-iclr2027/qwen3.5-4b-4k-grpo-livecodebench-crackgannet-s240
+- Modelo en Hugging Face: https://huggingface.co/budget-internalization-iclr2027/qwen3.5-4b-4k-grpo-livecodebench-crackgannet-s240
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - LiveCodeBench (referenciado en la model card como origen de los datos): no se proporciona enlace en la informacion disponible
 - Paper o publicacion asociada: no disponible (envio anonimo a ICLR 2027, sin enlace)

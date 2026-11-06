@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/jpn-jpan-100mb-ppt-Dp-10mb-packed-bfd_seed3407` es un ajuste fino (fine-tune) del checkpoint monolingüe `goldfish-models/jpn_jpan_100mb`, publicado por el usuario francesca9805 en HuggingFace. Se trata de un transformer decoder-only de la familia GPT-2 con 124.770.816 parámetros (aproximadamente 124,8 millones, el mismo orden de magnitud que GPT-2 small), distribuido en formato safetensors y pensado para generación de texto. El entrenamiento se realizó mediante SFT (supervised fine-tuning) con la librería TRL 0.23.0, según declara la propia model card.
+El modelo `francesca9805/jpn-jpan-100mb-ppt-Dp-10mb-packed-bfd_seed3407` es un ajuste fino (fine-tune) del checkpoint monolingüe `goldfish-models/jpn_jpan_100mb`, publicado por el usuario francesca9805 en Hugging Face. Se trata de un transformer decoder-only de la familia GPT-2 con 124.770.816 parámetros (aproximadamente 124,8 millones, el mismo orden de magnitud que GPT-2 small), distribuido en formato safetensors y pensado para generación de texto. El entrenamiento se realizó mediante SFT (supervised fine-tuning) con la librería TRL 0.23.0, según declara la propia model card.
 
 El interés de esta ficha es fundamentalmente de investigación: es un artefacto experimental de bajo perfil (0 descargas y 0 likes en el momento de la consulta, repositorio de 0,3 GB) que documenta un experimento de ajuste supervisado sobre un subconjunto empaquetado de datos, con semilla fija (seed3407) y ejecución registrada en Weights & Biases. No se trata de un modelo de producción ni de un lanzamiento con benchmarks publicados.
 
@@ -12,7 +12,7 @@ La relevancia, por tanto, es acotada: sirve como referencia reproducible de un p
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only de la familia GPT-2 (tag `gpt2` en HuggingFace) |
+| Arquitectura | Transformer decoder-only de la familia GPT-2 (tag `gpt2` en Hugging Face) |
 | Parametros totales | 124.770.816 (~124,8 M), dato real de los pesos safetensors |
 | Parametros activos | no aplica: modelo denso, no es MoE |
 | Longitud de contexto | no disponible |
@@ -25,7 +25,7 @@ La relevancia, por tanto, es acotada: sirve como referencia reproducible de un p
 | Modelo base | goldfish-models/jpn_jpan_100mb |
 | Metodo de entrenamiento | SFT con TRL 0.23.0 |
 | Tamano del repositorio | 0,3 GB |
-| Fecha de creacion / actualizacion | 2026-09-22 / 2026-09-22 (segun metadatos de HuggingFace) |
+| Fecha de creacion / actualizacion | 2026-09-22 / 2026-09-22 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -98,7 +98,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento relati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/jpn-jpan-100mb-ppt-Dp-10mb-packed-bfd_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/jpn-jpan-100mb-ppt-Dp-10mb-packed-bfd_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/jpn_jpan_100mb
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/lkrwhwza
 - Repositorio de TRL: https://github.com/huggingface/trl

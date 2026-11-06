@@ -84,7 +84,7 @@ No hay disponibles modelos directamente comparables, ya que se trata de un artef
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ceselder/probemaxxer-qwen36-27b-1M-rl
+- Repositorio Hugging Face: https://huggingface.co/ceselder/probemaxxer-qwen36-27b-1M-rl
 - Variante sin sufijo "1M" (posiblemente versión anterior): https://huggingface.co/ceselder/probemaxxer-qwen36-27b-rl
 - Modelo base Qwen3.6-27B (referencia): https://huggingface.co/Qwen/Qwen3.6-27B
 - Guía sobre Qwen 3.6-27B (arquitectura y benchmarks): https://www.aimadetools.com/blog/qwen-3-6-27b-complete-guide/

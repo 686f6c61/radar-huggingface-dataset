@@ -67,7 +67,7 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/alinegomes/multimodal-generation
+- Repositorio en Hugging Face: https://huggingface.co/alinegomes/multimodal-generation
 - Articulo de caracterizacion de modelos multimodales (arXiv): https://arxiv.org/abs/2410.00215
 - Version HTML del mismo articulo: https://arxiv.org/html/2410.00215v2
 - Version IEEE: https://ieeexplore.ieee.org/document/11120454

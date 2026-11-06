@@ -2,7 +2,7 @@
 
 ## Resumen
 
-JabbaderHutte es un repositorio de modelo publicado en HuggingFace por el usuario thaar1111 bajo licencia Apache 2.0. En el momento de redactar esta ficha, la informacion disponible se limita a los metadatos del repositorio (identificador, autor, licencia y etiqueta de region), sin que se haya publicado model card descriptiva, pipeline declarado, idiomas soportados ni documentacion tecnica adicional.
+JabbaderHutte es un repositorio de modelo publicado en Hugging Face por el usuario thaar1111 bajo licencia Apache 2.0. En el momento de redactar esta ficha, la informacion disponible se limita a los metadatos del repositorio (identificador, autor, licencia y etiqueta de region), sin que se haya publicado model card descriptiva, pipeline declarado, idiomas soportados ni documentacion tecnica adicional.
 
 El repositorio registra cero descargas y cero interacciones, y fue creado y actualizado en la misma marca temporal (2026-09-24T17:34:31Z), lo que sugiere una publicacion reciente y sin actividad posterior. No se dispone de datos sobre arquitectura, numero de parametros, longitud de contexto, corpus de entrenamiento ni metodologia de ajuste.
 
@@ -21,7 +21,7 @@ Dado que no existe informacion tecnica verificable, esta ficha se limita a docum
 | Licencia | apache-2.0 |
 | Formato de pesos | no disponible |
 | Autor | thaar1111 |
-| Identificador en HuggingFace | thaar1111/JabbaderHutte |
+| Identificador en Hugging Face | thaar1111/JabbaderHutte |
 | Region declarada | us |
 | Pipeline declarado | no disponible |
 | Fecha de creacion | 2026-09-24T17:34:31Z |
@@ -92,5 +92,5 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/thaar1111/JabbaderHutte
+- Repositorio en Hugging Face: https://huggingface.co/thaar1111/JabbaderHutte
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de codigo o demos) en la informacion disponible.

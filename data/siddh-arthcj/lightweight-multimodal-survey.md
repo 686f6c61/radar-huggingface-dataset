@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Siddh-arthcj/lightweight-multimodal-survey` no es un modelo entrenado: es un repositorio de notas de investigación publicado por el usuario Siddh-arthcj en HuggingFace. Su contenido principal es `paper_notes.md`, un documento exploratorio sobre el tema "Lightweight Multimodal" (multimodalidad ligera), acompañado de un `README.md` que describe el alcance del estudio. El propio autor indica explícitamente que no se reclama ninguna mejora de benchmark, ninguna ablación completada, ni código publicado, ni checkpoint entrenado.
+`Siddh-arthcj/lightweight-multimodal-survey` no es un modelo entrenado: es un repositorio de notas de investigación publicado por el usuario Siddh-arthcj en Hugging Face. Su contenido principal es `paper_notes.md`, un documento exploratorio sobre el tema "Lightweight Multimodal" (multimodalidad ligera), acompañado de un `README.md` que describe el alcance del estudio. El propio autor indica explícitamente que no se reclama ninguna mejora de benchmark, ninguna ablación completada, ni código publicado, ni checkpoint entrenado.
 
-La relevancia de la ficha es, por tanto, fundamentalmente documental: sirve para identificar que este identificador de HuggingFace no debe confundirse con un artefacto desplegable. El repositorio se publica bajo licencia MIT y lleva las etiquetas `research-notes` y `lightweight-multimodal`, con un tamano de repositorio de 0,0 GB y cero descargas y cero likes en el momento de la consulta.
+La relevancia de la ficha es, por tanto, fundamentalmente documental: sirve para identificar que este identificador de Hugging Face no debe confundirse con un artefacto desplegable. El repositorio se publica bajo licencia MIT y lleva las etiquetas `research-notes` y `lightweight-multimodal`, con un tamano de repositorio de 0,0 GB y cero descargas y cero likes en el momento de la consulta.
 
 Los metadatos de safetensors del repositorio reportan 33.088 parámetros, una cifra irrelevante desde el punto de vista de inferencia y coherente con un artefacto residual o de prueba, no con un modelo de lenguaje o multimodal funcional. Los resultados de la búsqueda web realizada no devuelven ningún enlace relacionado con este repositorio concreto.
 
@@ -44,7 +44,7 @@ En cuanto a datos de entrenamiento (número de tokens, composición del dataset,
 - Diseño de un protocolo de evaluación: la nota propone una comparación con baselines emparejados y menciona benchmarks públicos apropiados para la tarea, lo que puede servir de borrador para definir métricas y controles.
 - Auditoría de reproducibilidad: el README exige que cualquier resultado futuro incluya versiones de dataset, comandos, semillas, hardware y registros en crudo; ese listado puede reutilizarse como checklist interna de publicación.
 - Formación interna de equipos: el documento puede emplearse como material de discusión sobre qué significa "ligero" en modelos multimodales y qué errores metodológicos evitar.
-- Verificación de procedencia de artefactos: esta ficha permite a un equipo comprobar que un identificador con etiqueta `transformer` y `safetensors` en HuggingFace no implica la existencia de un checkpoint utilizable, evitando descargas e integraciones fallidas.
+- Verificación de procedencia de artefactos: esta ficha permite a un equipo comprobar que un identificador con etiqueta `transformer` y `safetensors` en Hugging Face no implica la existencia de un checkpoint utilizable, evitando descargas e integraciones fallidas.
 - Citación de trabajo exploratorio: para citar el estado del arte previo a resultados, el repositorio puede referenciarse como nota no revisada por pares, dejando claro que no aporta evidencia experimental.
 - No se recomienda ningún caso de uso de inferencia, despliegue o integración en producción, dado que no existe un modelo funcional en el repositorio.
 
@@ -70,7 +70,7 @@ El propio autor indica que la nota no reclama mejoras de benchmark ni ablaciones
 | Parametros | 33.088 (metadatos safetensors) | no disponible en la información proporcionada | no disponible en la información proporcionada |
 | Contexto | no disponible | no disponible en la información proporcionada | hasta 1.000.000 de tokens según NVIDIA NIM |
 | Licencia | MIT | no disponible en la información proporcionada | uso comercial y no comercial, con consideración de comunidad de terceros |
-| Disponibilidad | Pública en HuggingFace, 0 descargas | Publicación abierta de Google DeepMind | Disponible en NVIDIA NIM |
+| Disponibilidad | Pública en Hugging Face, 0 descargas | Publicación abierta de Google DeepMind | Disponible en NVIDIA NIM |
 
 No existe una categoría de modelos comparables para este repositorio: es material documental, no un modelo. Los elementos listados como referencias temáticas se incluyen solo porque aparecieron en la búsqueda web y pertenecen al ámbito de la multimodalidad ligera; no guardan relación con el repositorio analizado ni permiten una comparación de rendimiento.
 
@@ -88,7 +88,7 @@ No existe una categoría de modelos comparables para este repositorio: es materi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Siddh-arthcj/lightweight-multimodal-survey
+- Repositorio en Hugging Face: https://huggingface.co/Siddh-arthcj/lightweight-multimodal-survey
 
 Resultados de la búsqueda web: ninguno de los enlaces devueltos guarda relación con este repositorio. Los resultados obtenidos fueron sobre otros temas y se listan a continuación únicamente a efectos de trazabilidad, no como documentación del modelo:
 

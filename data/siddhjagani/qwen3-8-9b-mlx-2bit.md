@@ -80,7 +80,7 @@ La comparativa muestra que esta conversión es una versión extremadamente compr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SiddhJagani/Qwen3.8-9B-mlx-2Bit
+- Modelo en Hugging Face: https://huggingface.co/SiddhJagani/Qwen3.8-9B-mlx-2Bit
 - Modelo base (empero-ai/Qwen3.8-9B): https://huggingface.co/empero-ai/Qwen3.8-9B
 - Conversión MLX similar (PocketAiHub/Qwen3.8-9B-MLX): https://huggingface.co/PocketAiHub/Qwen3.8-9B-MLX
 - Repositorio oficial de Qwen3.8 (no relacionado directamente con este modelo): https://github.com/QwenLM/Qwen3.8

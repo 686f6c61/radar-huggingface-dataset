@@ -6,7 +6,7 @@ WeVisOne-VL-4B es un modelo vision-lenguaje unificado desarrollado por WeChat Vi
 
 El modelo emplea tokens de coordenada dedicados (`<0>` a `<1000>`) para representar cajas delimitadoras normalizadas y puntos, devolviendo `None` cuando el objetivo consultado está ausente, y emite un token de instancia especial (`<OBJ>`, ID 152678) tras cada caja predicha para tareas densas. Esta aproximación permite obtener salidas estructuradas y máscaras de alta resolución sin necesidad de cabezas específicas por tarea.
 
-Es relevante ahora porque propone una arquitectura unificada para percepción visual densa con licencia Apache 2.0, algo poco habitual en modelos de esta categoría. El repositorio de HuggingFace es un espejo no modificado del repositorio upstream de Tencent, y el paquete de inferencia se distribuye por separado en GitHub.
+Es relevante ahora porque propone una arquitectura unificada para percepción visual densa con licencia Apache 2.0, algo poco habitual en modelos de esta categoría. El repositorio de Hugging Face es un espejo no modificado del repositorio upstream de Tencent, y el paquete de inferencia se distribuye por separado en GitHub.
 
 ## Especificaciones tecnicas
 
@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Tareas densas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| WeVisOne-VL-4B | 4,83 B | No disponible | Detección, segmentación, matting, OCR, pointing, conteo | Apache 2.0 | HuggingFace (espejo) + GitHub |
-| Qwen3-VL (base) | Según variante | No disponible en esta ficha | Percepción general, sin matting alfa nativo | Según variante | HuggingFace |
+| WeVisOne-VL-4B | 4,83 B | No disponible | Detección, segmentación, matting, OCR, pointing, conteo | Apache 2.0 | Hugging Face (espejo) + GitHub |
+| Qwen3-VL (base) | Según variante | No disponible en esta ficha | Percepción general, sin matting alfa nativo | Según variante | Hugging Face |
 | Alternativas de grounding/segmentation | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de benchmarks que permitan una comparación cuantitativa con alternativas de la misma categoría.
@@ -83,11 +83,11 @@ No se dispone de datos de benchmarks que permitan una comparación cuantitativa 
 - Sesgos conocidos: no documentados.
 - Idiomas soportados: no documentados.
 - Licencia Apache 2.0 para el código de Tencent; los componentes de terceros conservan sus licencias originales, por lo que conviene revisarlas antes de uso comercial.
-- El repositorio de HuggingFace es un espejo no modificado; para actualizaciones y soporte debe consultarse el repositorio upstream de Tencent.
+- El repositorio de Hugging Face es un espejo no modificado; para actualizaciones y soporte debe consultarse el repositorio upstream de Tencent.
 - El paquete de inferencia se distribuye por separado y no está integrado en `transformers` de forma nativa, lo que añade complejidad al despliegue.
 
 ## Enlaces
 
-- HuggingFace (espejo): https://huggingface.co/OsGo/WeVisOne-VL-4B
+- Hugging Face (espejo): https://huggingface.co/OsGo/WeVisOne-VL-4B
 - Repositorio upstream: https://huggingface.co/tencent/WeVisOne-VL-4B
 - GitHub del proyecto: https://github.com/Tencent/WeVisOne-VL

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `rachel-luxangel-ai/zit-firstlove-008` es un adaptador LoRA (Low-Rank Adaptation) de texto a imagen, publicado en HuggingFace por el usuario rachel-luxangel-ai. No se trata de un modelo completo, sino de un conjunto de pesos de bajo rango que se aplica sobre un modelo base de difusion: `Tongyi-MAI/Z-Image-Turbo`. El repositorio ocupa 0,1 GB e incluye un unico archivo de pesos, `firstlove-008.safetensors`.
+El modelo `rachel-luxangel-ai/zit-firstlove-008` es un adaptador LoRA (Low-Rank Adaptation) de texto a imagen, publicado en Hugging Face por el usuario rachel-luxangel-ai. No se trata de un modelo completo, sino de un conjunto de pesos de bajo rango que se aplica sobre un modelo base de difusion: `Tongyi-MAI/Z-Image-Turbo`. El repositorio ocupa 0,1 GB e incluye un unico archivo de pesos, `firstlove-008.safetensors`.
 
 Segun la model card, se trata de un "rehost" (realojamiento) del modelo publicado en CivitAI con identificador 2942575, reempaquetado para su uso en un proyecto denominado LYRA. La model card lo titula "Nuan" e indica un prompt de activacion en chino, `美女, 初恋女友` (traducible como "mujer guapa, novia del primer amor"), lo que sugiere un LoRA orientado a generar un personaje femenino concreto o un estilo de retrato asociado a esa identidad.
 
@@ -47,7 +47,7 @@ No hay informacion sobre el dataset de entrenamiento, el numero de imagenes, el 
 - Prototipado de personajes para videojuegos o animacion: se pueden generar hojas de personaje y variaciones de vestuario o expresion para iterar sobre un diseno antes de produccion.
 - Generacion de conjuntos de imagenes de referencia: las salidas pueden alimentar pipelines posteriores (img2img, inpainting, ControlNet) como material base para refinar composiciones.
 - Fusion con otros LoRA o con el modelo base para explorar mezclas de estilo: al ser un adaptador safetensors, tecnicamente puede combinarse con otros adaptadores del mismo modelo base, aunque la compatibilidad no esta documentada.
-- Recreacion de contenido del modelo original de CivitAI: al ser un rehost, sirve para reproducir en HuggingFace los resultados obtenidos con la version de CivitAI, manteniendo el mismo prompt de activacion.
+- Recreacion de contenido del modelo original de CivitAI: al ser un rehost, sirve para reproducir en Hugging Face los resultados obtenidos con la version de CivitAI, manteniendo el mismo prompt de activacion.
 
 En todos los casos, la calidad final y el rango de resoluciones dependen del modelo base `Tongyi-MAI/Z-Image-Turbo`, cuyas prestaciones no se detallan en la informacion proporcionada.
 
@@ -83,6 +83,6 @@ No disponible. No se han proporcionado datos de otros adaptadores LoRA comparabl
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rachel-luxangel-ai/zit-firstlove-008
+- Hugging Face: https://huggingface.co/rachel-luxangel-ai/zit-firstlove-008
 - Modelo base: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
 - Modelo original en CivitAI (referenciado en la model card): https://civitai.com/models/2942575?modelVersionId=3331654

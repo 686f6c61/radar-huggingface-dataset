@@ -67,9 +67,9 @@ No hay métricas publicadas que permitan una comparación numérica con alternat
 
 | Alternativa | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3-4b-dpard-thinking-b16-alpha0.3 | Draft DFlash para decodificación especulativa | 322.458.368 | no disponible | apache-2.0 | HuggingFace |
-| Qwen/Qwen3-4B (sin draft) | Modelo base generativo | ~4.000 millones (no confirmado en la información) | no disponible | no disponible en la información | HuggingFace |
-| Draft genérico basado en Qwen3-0.6B | Draft por modelo pequeño estándar | no disponible | no disponible | no disponible | HuggingFace |
+| qwen3-4b-dpard-thinking-b16-alpha0.3 | Draft DFlash para decodificación especulativa | 322.458.368 | no disponible | apache-2.0 | Hugging Face |
+| Qwen/Qwen3-4B (sin draft) | Modelo base generativo | ~4.000 millones (no confirmado en la información) | no disponible | no disponible en la información | Hugging Face |
+| Draft genérico basado en Qwen3-0.6B | Draft por modelo pequeño estándar | no disponible | no disponible | no disponible | Hugging Face |
 | Cabezas de decodificación tipo EAGLE-3 / Medusa | Decodificación especulativa con cabezas | no disponible | no disponible | no disponible | dependiente del proyecto |
 
 ## Limitaciones y advertencias
@@ -87,7 +87,7 @@ No hay métricas publicadas que permitan una comparación numérica con alternat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jgeuter/qwen3-4b-dpard-thinking-b16-alpha0.3
+- Modelo en Hugging Face: https://huggingface.co/jgeuter/qwen3-4b-dpard-thinking-b16-alpha0.3
 - Modelo base Qwen/Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
 - Dataset de entrenamiento (ShareGPT-Qwen3-4B-T0.6-Thinking-Regen): https://huggingface.co/datasets/jgeuter/ShareGPT-Qwen3-4B-T0.6-Thinking-Regen
 - SpecForge (marco de entrenamiento mencionado en la model card; sin URL en la información disponible)

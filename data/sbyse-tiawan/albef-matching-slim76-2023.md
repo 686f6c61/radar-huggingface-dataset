@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`albef-matching-slim76-2023` es un repositorio publicado por el usuario sbyse-tiawan en HuggingFace que contiene una implementación funcional de ALBEF (Align before Fuse) orientada a tareas de *matching* multimodal. Según su propia model card, se trata de un artefacto de código reproducible con pruebas de humo (*smoke tests*), no de un modelo entrenado ni validado con benchmarks. El repositorio incluye `eval.py`, `config.json`, `training_args.json` y un `model.safetensors` descrito explícitamente como checkpoint de inicialización.
+`albef-matching-slim76-2023` es un repositorio publicado por el usuario sbyse-tiawan en Hugging Face que contiene una implementación funcional de ALBEF (Align before Fuse) orientada a tareas de *matching* multimodal. Según su propia model card, se trata de un artefacto de código reproducible con pruebas de humo (*smoke tests*), no de un modelo entrenado ni validado con benchmarks. El repositorio incluye `eval.py`, `config.json`, `training_args.json` y un `model.safetensors` descrito explícitamente como checkpoint de inicialización.
 
 El dato de parámetros extraído de `model.safetensors` es de 24.832 parámetros, cifra que contrasta de forma notable con la escala "giant" declarada en la configuración de arquitectura del repositorio. No se dispone de información adicional que permita reconciliar esa discrepancia, por lo que debe tratarse con cautela. El tamaño del repositorio es de 0,0 GB y no registra descargas ni *likes* en el momento de la consulta.
 
@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Categoria | Parametros | Licencia | Estado del checkpoint | Disponibilidad |
 |---|---|---|---|---|---|
-| albef-matching-slim76-2023 (este repositorio) | Matching multimodal (ALBEF) | 24.832 reportados (escala declarada "giant") | BSD-3-Clause | Inicialización, sin entrenar | HuggingFace, 0 descargas |
+| albef-matching-slim76-2023 (este repositorio) | Matching multimodal (ALBEF) | 24.832 reportados (escala declarada "giant") | BSD-3-Clause | Inicialización, sin entrenar | Hugging Face, 0 descargas |
 | ALBEF (implementación de referencia, Li et al.) | Matching multimodal (ALBEF) | no disponible en la información proporcionada | no disponible | Entrenado y evaluado en su publicación | Referencia académica |
 | CLIP (OpenAI) | Contraste imagen-texto | no disponible en la información proporcionada | MIT | Entrenado | Ampliamente disponible |
 | BLIP (Salesforce) | Matching multimodal | no disponible en la información proporcionada | no disponible | Entrenado | Ampliamente disponible |
@@ -98,7 +98,7 @@ No se dispone de datos verificados de parámetros, contexto ni rendimiento de la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sbyse-tiawan/albef-matching-slim76-2023
+- Hugging Face: https://huggingface.co/sbyse-tiawan/albef-matching-slim76-2023
 - Paper de referencia de la familia ALBEF (Align before Fuse, Li et al., NeurIPS 2021): enlace no disponible en los resultados de búsqueda proporcionados.
 - Repositorios, demos o blogs adicionales del autor: no disponible.
 - Nota sobre la busqueda web: los resultados devueltos corresponden a dominios de comercio electrónico (allegro.pl, allegrolokalnie.pl, allegro.cz y similares) sin relación alguna con el modelo, por lo que no se han incorporado como enlaces relevantes.

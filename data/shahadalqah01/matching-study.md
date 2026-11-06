@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`shahadalqah01/matching-study` es un repositorio experimental de HuggingFace que contiene una implementación funcional de una arquitectura denominada **Coca** aplicada a una tarea de *matching* (emparejamiento), en una configuración de escala "small". El autor lo publica como esqueleto de código transparente y reproducible para *smoke tests*, no como un modelo entrenado: el propio README indica de forma explícita que `model.safetensors` es un checkpoint de inicialización válido para pruebas rápidas y que no se presenta como un checkpoint evaluado en benchmarks. El checkpoint contiene 16.576 parámetros totales, un tamaño tres órdenes de magnitud por debajo de cualquier modelo de lenguaje utilizable en producción.
+`shahadalqah01/matching-study` es un repositorio experimental de Hugging Face que contiene una implementación funcional de una arquitectura denominada **Coca** aplicada a una tarea de *matching* (emparejamiento), en una configuración de escala "small". El autor lo publica como esqueleto de código transparente y reproducible para *smoke tests*, no como un modelo entrenado: el propio README indica de forma explícita que `model.safetensors` es un checkpoint de inicialización válido para pruebas rápidas y que no se presenta como un checkpoint evaluado en benchmarks. El checkpoint contiene 16.576 parámetros totales, un tamaño tres órdenes de magnitud por debajo de cualquier modelo de lenguaje utilizable en producción.
 
 La relevancia de esta ficha es, por tanto, acotada y de naturaleza metodológica: sirve como andamiaje reproducible para experimentos de emparejamiento con una arquitectura concreta (atención dilatada, fusión con *gating*, activación mish, normalización LayerNorm) y como ejemplo de configuración de entrenamiento (optimizador Novograd con *schedule* coseno). No hay evidencia de entrenamiento completado, ni datos de evaluación, ni información sobre tokenizador, vocabulario o idiomas soportados.
 
@@ -81,12 +81,12 @@ No se dispone de modelos comparables en la información proporcionada. El reposi
 - **Sin auditoría**: no se ha evaluado robustez, equidad, sesgo ni transferencia de dominio. No hay información sobre sesgos conocidos.
 - **Riesgo de alucinación**: no evaluable en un checkpoint sin entrenar; en caso de entrenarse, deberá medirse por separado.
 - **Sin datos de idioma ni de tokenizador**: se desconoce el vocabulario, los idiomas cubiertos y las limitaciones de contexto, por lo que no se puede planificar un uso multilingüe.
-- **Carga no estándar**: las APIs automáticas de HuggingFace requieren un adaptador explícito; intentar `AutoModel.from_pretrained` sin adaptación fallará o dará resultados incorrectos.
+- **Carga no estándar**: las APIs automáticas de Hugging Face requieren un adaptador explícito; intentar `AutoModel.from_pretrained` sin adaptación fallará o dará resultados incorrectos.
 - **Licencia**: Apache-2.0 permite uso comercial del código y de los pesos, pero el propio autor advierte de que deben revisarse por separado los términos de los datos de origen cuando se usen conjuntos de datos externos.
 - **Datos del repositorio**: 0 descargas y 0 *likes* en el momento de la consulta; sin `pipeline_tag`, sin *widget* de inferencia y sin histórico de evaluación. No hay señal de uso en producción.
 - **Protocolo de evaluación**: cualquier resultado publicado debe acompañarse de *logs* de entrenamiento y versiones de entorno; comparar contra este checkpoint sin igualar presupuesto de datos, *tuning* y semillas no es metodológicamente válido.
 
 ## Enlaces
 
-- [HuggingFace: shahadalqah01/matching-study](https://huggingface.co/shahadalqah01/matching-study)
+- [Hugging Face: shahadalqah01/matching-study](https://huggingface.co/shahadalqah01/matching-study)
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo (papers, blogs, repositorios o demos): los resultados devueltos corresponden a contenido divulgativo sobre experimentos científicos caseros y no guardan relación con este repositorio.

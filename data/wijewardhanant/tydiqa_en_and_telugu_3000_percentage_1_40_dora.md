@@ -2,9 +2,9 @@
 
 ## Resumen
 
-WijewardhanaNT/tydiqa_en_and_telugu_3000_percentage_1_40_DoRA es un adaptador de ajuste fino publicado en HuggingFace por el usuario WijewardhanaNT, construido sobre el modelo base meta-llama/Llama-3.1-8B mediante la técnica DoRA (Weight-Decomposed Low-Rank Adaptation), una variante de LoRA implementada en la librería PEFT (versión 0.17.1 según la model card). Se trata por tanto de un artefacto de pesos de bajo rango, no de un modelo completo: el repositorio ocupa 0,1 GB y requiere descargar el modelo base de 8.000 millones de parámetros para poder ejecutarse.
+WijewardhanaNT/tydiqa_en_and_telugu_3000_percentage_1_40_DoRA es un adaptador de ajuste fino publicado en Hugging Face por el usuario WijewardhanaNT, construido sobre el modelo base meta-llama/Llama-3.1-8B mediante la técnica DoRA (Weight-Decomposed Low-Rank Adaptation), una variante de LoRA implementada en la librería PEFT (versión 0.17.1 según la model card). Se trata por tanto de un artefacto de pesos de bajo rango, no de un modelo completo: el repositorio ocupa 0,1 GB y requiere descargar el modelo base de 8.000 millones de parámetros para poder ejecutarse.
 
-El nombre del repositorio sugiere que el adaptador se ha entrenado sobre el conjunto de datos TyDi QA (Wikipedia-based Typologically Diverse Question Answering), en concreto sobre los subconjuntos de inglés y telugu, con una configuración que el autor identifica como "3000" ejemplos y algún valor porcentual entre 1 y 40. Esta interpretación procede únicamente de la nomenclatura del repositorio y no está confirmada en la model card, que es la plantilla por defecto de HuggingFace sin rellenar. El modelo se etiqueta con pipeline text-generation y la etiqueta lora.
+El nombre del repositorio sugiere que el adaptador se ha entrenado sobre el conjunto de datos TyDi QA (Wikipedia-based Typologically Diverse Question Answering), en concreto sobre los subconjuntos de inglés y telugu, con una configuración que el autor identifica como "3000" ejemplos y algún valor porcentual entre 1 y 40. Esta interpretación procede únicamente de la nomenclatura del repositorio y no está confirmada en la model card, que es la plantilla por defecto de Hugging Face sin rellenar. El modelo se etiqueta con pipeline text-generation y la etiqueta lora.
 
 Su relevancia es limitada y de carácter experimental: acumula 7 descargas y 0 "likes" desde su creación en septiembre de 2026, no declara licencia ni idiomas, y no publica métricas de evaluación, hiperparámetros de entrenamiento ni detalles del dataset. Es un ejemplo típico de adaptador de investigación sobre una lengua de bajos recursos (telugu) que puede resultar útil como punto de partida para reproducir experimentos de ajuste eficiente en tareas extractivas, pero no como componente listo para producción.
 
@@ -30,7 +30,7 @@ Su relevancia es limitada y de carácter experimental: acumula 7 descargas y 0 "
 
 El adaptador emplea DoRA, una técnica de ajuste eficiente de parámetros presentada como mejora de LoRA. DoRA descompone los pesos preentrenados en un componente de magnitud y otro de dirección, y aplica la actualización de bajo rango únicamente sobre la dirección, mientras que la magnitud se entrena como un vector separado. Esto permite, según la literatura del método, acercar el comportamiento del ajuste a un fine-tuning completo con un coste de parámetros muy inferior. En este repositorio la técnica se aplica sobre Llama 3.1 8B, un transformer decoder-only con normalización RMSNorm, activación SwiGLU, RoPE y atención con ventana de 128.000 tokens; los pesos resultantes se serializan como adaptador PEFT y se cargan de forma aditiva sobre el modelo base congelado.
 
-Los detalles de entrenamiento no están documentados. La model card es la plantilla genérica de HuggingFace y todos los campos relevantes aparecen como "[More Information Needed]", incluidos el desarrollador, el financiador, el tipo de modelo, los idiomas, la licencia, la composición del dataset, el régimen de precisión y los hiperparámetros. Por la nomenclatura del repositorio puede inferirse que el ajuste se hizo sobre TyDi QA en su partición de inglés y telugu, pero no se especifican el número exacto de ejemplos, el rango del adaptador, el ratio alpha, el dropout, la tasa de aprendizaje, el número de épocas ni si se aplicó alguna etapa de alineación posterior (RLHF, DPO). La etiqueta arxiv:1910.09700 corresponde al artículo de Lacoste et al. sobre estimación del impacto ambiental del aprendizaje automático, citado en la plantilla de la model card, y no a un artículo técnico de este modelo.
+Los detalles de entrenamiento no están documentados. La model card es la plantilla genérica de Hugging Face y todos los campos relevantes aparecen como "[More Information Needed]", incluidos el desarrollador, el financiador, el tipo de modelo, los idiomas, la licencia, la composición del dataset, el régimen de precisión y los hiperparámetros. Por la nomenclatura del repositorio puede inferirse que el ajuste se hizo sobre TyDi QA en su partición de inglés y telugu, pero no se especifican el número exacto de ejemplos, el rango del adaptador, el ratio alpha, el dropout, la tasa de aprendizaje, el número de épocas ni si se aplicó alguna etapa de alineación posterior (RLHF, DPO). La etiqueta arxiv:1910.09700 corresponde al artículo de Lacoste et al. sobre estimación del impacto ambiental del aprendizaje automático, citado en la plantilla de la model card, y no a un artículo técnico de este modelo.
 
 ## Capacidades
 
@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (DoRA sobre Llama 3.1 8B) | 8.000 M (base) + adaptador | 128.000 tokens (base) | No disponible | No disponible | HuggingFace, 7 descargas |
-| meta-llama/Llama-3.1-8B (modelo base) | 8.000 M | 128.000 tokens | Métricas publicadas en la model card oficial de Meta | Licencia comunitaria de Llama 3.1 | HuggingFace, ampliamente usado |
-| Otros adaptadores LoRA sobre Llama 3.1 8B para QA multilingüe | 8.000 M (base) + adaptador | 128.000 tokens (base) | No disponible | Variable según autor | HuggingFace |
-| Modelos ajustados específicamente para TyDi QA (por ejemplo, variantes de XLM-R o mT5) | 0,3-13 B según variante | Variable, típicamente 512 tokens | No disponible en esta ficha | Variable | HuggingFace |
+| Este adaptador (DoRA sobre Llama 3.1 8B) | 8.000 M (base) + adaptador | 128.000 tokens (base) | No disponible | No disponible | Hugging Face, 7 descargas |
+| meta-llama/Llama-3.1-8B (modelo base) | 8.000 M | 128.000 tokens | Métricas publicadas en la model card oficial de Meta | Licencia comunitaria de Llama 3.1 | Hugging Face, ampliamente usado |
+| Otros adaptadores LoRA sobre Llama 3.1 8B para QA multilingüe | 8.000 M (base) + adaptador | 128.000 tokens (base) | No disponible | Variable según autor | Hugging Face |
+| Modelos ajustados específicamente para TyDi QA (por ejemplo, variantes de XLM-R o mT5) | 0,3-13 B según variante | Variable, típicamente 512 tokens | No disponible en esta ficha | Variable | Hugging Face |
 
 No se dispone de datos de rendimiento comparables para este adaptador, por lo que la comparación se limita a parámetros, contexto, licencia y disponibilidad.
 
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparables para este adaptador, por lo qu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/WijewardhanaNT/tydiqa_en_and_telugu_3000_percentage_1_40_DoRA
+- Hugging Face: https://huggingface.co/WijewardhanaNT/tydiqa_en_and_telugu_3000_percentage_1_40_DoRA
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Referencia citada en la model card (Lacoste et al., 2019, impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental del aprendizaje automático: https://mlco2.github.io/impact

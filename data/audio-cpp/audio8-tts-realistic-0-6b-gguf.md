@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Audio8-TTS-Realistic-0.6b-GGUF es una versión cuantizada en formato GGUF del modelo de síntesis de voz Edge0/Audio8-TTS-Realistic-0.6b, publicada por el usuario audio-cpp en HuggingFace. Se trata de un modelo de texto a voz (TTS) de aproximadamente 0,6 mil millones de parámetros que permite generar habla realista a partir de texto, con soporte adicional para clonación de voz a partir de una grabación de referencia. Su publicación en GGUF lo hace ejecutable mediante la librería audio.cpp, un runtime en C++ inspirado en el ecosistema llama.cpp, con backends CUDA, Vulkan y CPU.
+Audio8-TTS-Realistic-0.6b-GGUF es una versión cuantizada en formato GGUF del modelo de síntesis de voz Edge0/Audio8-TTS-Realistic-0.6b, publicada por el usuario audio-cpp en Hugging Face. Se trata de un modelo de texto a voz (TTS) de aproximadamente 0,6 mil millones de parámetros que permite generar habla realista a partir de texto, con soporte adicional para clonación de voz a partir de una grabación de referencia. Su publicación en GGUF lo hace ejecutable mediante la librería audio.cpp, un runtime en C++ inspirado en el ecosistema llama.cpp, con backends CUDA, Vulkan y CPU.
 
 La relevancia de este modelo radica en la creciente demanda de TTS local y eficiente: al ser un modelo pequeño (0,6b) y estar disponible en cuantizaciones ligeras (Q8_0 y BF16), puede ejecutarse en hardware de consumo sin depender de APIs en la nube. Esto resulta útil para aplicaciones que requieren privacidad, latencia baja o funcionamiento sin conexión, como asistentes locales, narración de contenido o generación de voz para videojuegos.
 
@@ -80,6 +80,6 @@ Audio8-TTS-Realistic-0.6b se sitúa en un punto intermedio: más pequeño que XT
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/audio-cpp/Audio8-TTS-Realistic-0.6b-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/audio-cpp/Audio8-TTS-Realistic-0.6b-GGUF
 - Modelo base: https://huggingface.co/Edge0/Audio8-TTS-Realistic-0.6b
 - Repositorio audio.cpp: https://github.com/0xShug0/audio.cpp

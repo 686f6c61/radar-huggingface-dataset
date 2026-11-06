@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `dddddsds31341/pi0-wash_dish_100-10k` es un checkpoint de fine-tuning completo del modelo base `pi0_base`, desarrollado por el usuario `dddddsds31341`. Se trata de un modelo de visión-lenguaje-acción (VLA) orientado a robótica, entrenado específicamente sobre el dataset `wash_dish_100` para la tarea de lavar platos. El checkpoint corresponde al paso de entrenamiento 10.000 de un total de 20.005, con un tamaño de lote de 32. Está publicado en HuggingFace con formato Orbax, que incluye los parámetros del modelo y las estadísticas de normalización del dataset.
+El modelo `dddddsds31341/pi0-wash_dish_100-10k` es un checkpoint de fine-tuning completo del modelo base `pi0_base`, desarrollado por el usuario `dddddsds31341`. Se trata de un modelo de visión-lenguaje-acción (VLA) orientado a robótica, entrenado específicamente sobre el dataset `wash_dish_100` para la tarea de lavar platos. El checkpoint corresponde al paso de entrenamiento 10.000 de un total de 20.005, con un tamaño de lote de 32. Está publicado en Hugging Face con formato Orbax, que incluye los parámetros del modelo y las estadísticas de normalización del dataset.
 
 La relevancia de este modelo radica en que permite evaluar y reproducir el comportamiento de `pi0_base` tras un fine-tuning en una tarea concreta de manipulación robótica. El prompt asociado describe la secuencia de acciones: agarrar y levantar el plato con un brazo, mientras el otro coge la esponja y limpia repetidamente la superficie interior; devolver la esponja y colocar el plato en posición vertical en el escurridor. El repositorio ocupa 12 GB, aunque no se especifican el número de parámetros, la longitud de contexto ni otros detalles arquitectónicos.
 
@@ -72,7 +72,7 @@ No se dispone de información sobre modelos comparables en la información propo
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este modelo | no disponible | no disponible | no disponible | HuggingFace (checkpoint Orbax) |
+| Este modelo | no disponible | no disponible | no disponible | Hugging Face (checkpoint Orbax) |
 | pi0_base | no disponible | no disponible | no disponible | Referenciado como base, sin enlace directo |
 | Otros fine-tunes de pi0 | no disponible | no disponible | no disponible | no disponible |
 
@@ -92,5 +92,5 @@ No se dispone de información sobre modelos comparables en la información propo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dddddsds31341/pi0-wash_dish_100-10k
+- Hugging Face: https://huggingface.co/dddddsds31341/pi0-wash_dish_100-10k
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información proporcionada.

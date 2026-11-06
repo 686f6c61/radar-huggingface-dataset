@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| π0.5 SNUMPR DART `hang_tape_top` (este) | no disponible | no disponible | sin evaluación en robot | Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
+| π0.5 SNUMPR DART `hang_tape_top` (este) | no disponible | no disponible | sin evaluación en robot | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
 | Base `snumpr-iclr27-v1/9999` | no disponible | no disponible | no disponible | no disponible en la información | checkpoint base del que deriva |
 | Fine-tuning fuente `pi05_snumpr_dart_paired_source_hang_tape_top` | no disponible | no disponible | no disponible | no disponible en la información | preset de entrenamiento referenciado |
 | Fine-tuning objetivo `pi05_snumpr_dart_paired_target_large_view_yaw30_keepstate_hang_tape_top` | no disponible | no disponible | no disponible | no disponible en la información | preset de entrenamiento referenciado |
@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks ni de especificaciones de parámetros para 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-paired-keepstate-large-view-yaw30-alpha0p8-hang-tape-top-20261030
+- Hugging Face: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-paired-keepstate-large-view-yaw30-alpha0p8-hang-tape-top-20261030
 - Repositorio DART referenciado: `snumprlab/dart`, commit `1b23c4f42f73168c78a20b353453145e74f64711` (no se proporciona URL directa en la información)
 - Código de adaptación: `Donghyun1228/vla_adaptation`, commit `c4fcb61` (no se proporciona URL directa en la información)
 - Checkpoint base: `snumpr-iclr27-v1/9999` (no se proporciona URL directa en la información)

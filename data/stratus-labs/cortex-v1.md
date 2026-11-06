@@ -68,8 +68,8 @@ No disponible. Cortex no es un modelo comparable con otros LLM, sino un servicio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/stratus-labs/cortex-v1
-- Perfil de Stratus Labs en HuggingFace: https://huggingface.co/stratus-labs
+- Hugging Face: https://huggingface.co/stratus-labs/cortex-v1
+- Perfil de Stratus Labs en Hugging Face: https://huggingface.co/stratus-labs
 - Sitio web de Stratus Labs (aplicado): http://runstratus.com/
 - Sitio web de Stratus Labs (software): https://thestratuslabs.com/
 - Documentación de la API (endpoint de modelos): https://www.stratus.run/docs/api-reference/models

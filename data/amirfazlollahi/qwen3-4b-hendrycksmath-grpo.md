@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Qwen3-4B-HendrycksMATH-GRPO es un ajuste fino del modelo Qwen3-4B orientado específicamente a la resolución de problemas de matemáticas. Lo publica el usuario AmirFazlollahi en HuggingFace y se construye en dos etapas: primero un ajuste supervisado (SFT) sobre el conjunto de datos Hendrycks MATH, que da lugar al checkpoint intermedio Qwen3-4B-HendrycksMATH-SFT, y después un entrenamiento con aprendizaje por refuerzo mediante GRPO (Group Relative Policy Optimization) partiendo de ese checkpoint.
+Qwen3-4B-HendrycksMATH-GRPO es un ajuste fino del modelo Qwen3-4B orientado específicamente a la resolución de problemas de matemáticas. Lo publica el usuario AmirFazlollahi en Hugging Face y se construye en dos etapas: primero un ajuste supervisado (SFT) sobre el conjunto de datos Hendrycks MATH, que da lugar al checkpoint intermedio Qwen3-4B-HendrycksMATH-SFT, y después un entrenamiento con aprendizaje por refuerzo mediante GRPO (Group Relative Policy Optimization) partiendo de ese checkpoint.
 
-El modelo es un transformer decoder-only de tipo denso con 4.022.468.096 parámetros (unos 4,02 mil millones), pesos en safetensors y licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales. Hereda de la familia Qwen3 el soporte de razonamiento paso a paso y la plantilla conversacional de chat, y el entrenamiento se realizó con Unsloth y la librería TRL de HuggingFace, lo que según el autor permitió un entrenamiento el doble de rápido.
+El modelo es un transformer decoder-only de tipo denso con 4.022.468.096 parámetros (unos 4,02 mil millones), pesos en safetensors y licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales. Hereda de la familia Qwen3 el soporte de razonamiento paso a paso y la plantilla conversacional de chat, y el entrenamiento se realizó con Unsloth y la librería TRL de Hugging Face, lo que según el autor permitió un entrenamiento el doble de rápido.
 
 Su relevancia es acotada pero clara: se trata de un modelo pequeño (4B) especializado en matemáticas, desplegable en una única GPU de consumo, que ilustra el flujo habitual de SFT + RL con recompensas verificables sobre un dataset académico de referencia. No es un modelo de propósito general ni compite con los grandes modelos de razonamiento; su interés es como base reproducible para tareas de matemáticas en inglés y como ejemplo de receta de entrenamiento con Unsloth. No se han publicado métricas de evaluación ni detalles del proceso de entrenamiento más allá de lo indicado.
 
@@ -25,7 +25,7 @@ Su relevancia es acotada pero clara: se trata de un modelo pequeño (4B) especia
 
 La arquitectura es la del Qwen3-4B original: un transformer decoder-only denso, sin mezcla de expertos, con atención de consultas agrupadas para reducir el coste de la caché KV y codificación posicional rotatoria (RoPE). El modelo base Qwen3-4B incorpora además un modo de razonamiento híbrido, de forma que puede alternar entre generar una cadena de pensamiento extensa antes de responder o contestar directamente, comportamiento que este ajuste hereda. El repositorio no documenta cambios en la arquitectura respecto al modelo base.
 
-El entrenamiento se realizó en dos fases. La primera fue un ajuste supervisado (SFT) sobre el dataset Hendrycks MATH, un corpus de problemas de competición con soluciones paso a paso, del que resultó el checkpoint AmirFazlollahi/Qwen3-4B-HendrycksMATH-SFT, utilizado como modelo base de esta ficha. La segunda fase aplicó GRPO, un algoritmo de aprendizaje por refuerzo sin modelo crítico que estima la ventaja relativa de cada respuesta dentro de un grupo de muestras generadas para el mismo problema, lo que encaja bien con tareas de matemáticas donde la recompensa puede verificarse comparando la respuesta final con la solución correcta. El autor indica que el entrenamiento se llevó a cabo con Unsloth y la librería TRL de HuggingFace, con una mejora de velocidad de aproximadamente 2x, pero no se especifican el número de tokens, la composición exacta del dataset, los hiperparámetros, la función de recompensa ni si hubo fases adicionales de DPO o RLHF.
+El entrenamiento se realizó en dos fases. La primera fue un ajuste supervisado (SFT) sobre el dataset Hendrycks MATH, un corpus de problemas de competición con soluciones paso a paso, del que resultó el checkpoint AmirFazlollahi/Qwen3-4B-HendrycksMATH-SFT, utilizado como modelo base de esta ficha. La segunda fase aplicó GRPO, un algoritmo de aprendizaje por refuerzo sin modelo crítico que estima la ventaja relativa de cada respuesta dentro de un grupo de muestras generadas para el mismo problema, lo que encaja bien con tareas de matemáticas donde la recompensa puede verificarse comparando la respuesta final con la solución correcta. El autor indica que el entrenamiento se llevó a cabo con Unsloth y la librería TRL de Hugging Face, con una mejora de velocidad de aproximadamente 2x, pero no se especifican el número de tokens, la composición exacta del dataset, los hiperparámetros, la función de recompensa ni si hubo fases adicionales de DPO o RLHF.
 
 ## Capacidades
 
@@ -68,11 +68,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-4B-HendrycksMATH-GRPO | ~4,02 B | 32.768 tokens segun la familia base; no confirmado en la model card | Matematicas (SFT + GRPO sobre Hendrycks MATH) | Apache 2.0 | HuggingFace, safetensors |
-| Qwen3-4B-HendrycksMATH-SFT | ~4,02 B | igual que la familia base | Matematicas (solo SFT) | Apache 2.0 | HuggingFace; es el modelo base de este checkpoint |
-| Qwen3-4B (base) | ~4,02 B | 32.768 tokens (131.072 con YaRN) | Proposito general, con modo de razonamiento | Apache 2.0 | HuggingFace |
-| Qwen3-4B-Instruct-2507 | ~4,02 B | 262.144 tokens segun documentacion publica de Qwen | Proposito general e instrucciones | Apache 2.0 | HuggingFace |
-| DeepSeek-R1-Distill-Qwen-7B | ~7,6 B | 128.000 tokens segun documentacion publica | Razonamiento y matematicas destilado de R1 | Licencia MIT para el modelo destilado, con terminos adicionales de DeepSeek para el uso del modelo R1 | HuggingFace |
+| Qwen3-4B-HendrycksMATH-GRPO | ~4,02 B | 32.768 tokens segun la familia base; no confirmado en la model card | Matematicas (SFT + GRPO sobre Hendrycks MATH) | Apache 2.0 | Hugging Face, safetensors |
+| Qwen3-4B-HendrycksMATH-SFT | ~4,02 B | igual que la familia base | Matematicas (solo SFT) | Apache 2.0 | Hugging Face; es el modelo base de este checkpoint |
+| Qwen3-4B (base) | ~4,02 B | 32.768 tokens (131.072 con YaRN) | Proposito general, con modo de razonamiento | Apache 2.0 | Hugging Face |
+| Qwen3-4B-Instruct-2507 | ~4,02 B | 262.144 tokens segun documentacion publica de Qwen | Proposito general e instrucciones | Apache 2.0 | Hugging Face |
+| DeepSeek-R1-Distill-Qwen-7B | ~7,6 B | 128.000 tokens segun documentacion publica | Razonamiento y matematicas destilado de R1 | Licencia MIT para el modelo destilado, con terminos adicionales de DeepSeek para el uso del modelo R1 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos verificados para este checkpoint, por lo que la comparacion se limita a parametros, contexto, licencia y disponibilidad. No se han encontrado en la busqueda web resultados relevantes sobre este modelo: los enlaces devueltos correspondian a temas sin relacion (foros sobre bicicletas y redes sociales), por lo que no aportan informacion tecnica.
 
@@ -89,10 +89,10 @@ No se dispone de datos de rendimiento comparativos verificados para este checkpo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AmirFazlollahi/Qwen3-4B-HendrycksMATH-GRPO
+- Modelo en Hugging Face: https://huggingface.co/AmirFazlollahi/Qwen3-4B-HendrycksMATH-GRPO
 - Modelo base (SFT): https://huggingface.co/AmirFazlollahi/Qwen3-4B-HendrycksMATH-SFT
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
-- Modelo base Qwen3-4B en HuggingFace: https://huggingface.co/Qwen/Qwen3-4B
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
+- Modelo base Qwen3-4B en Hugging Face: https://huggingface.co/Qwen/Qwen3-4B
 - Dataset Hendrycks MATH (referencia): https://github.com/hendrycks/math
 - No se han encontrado en la busqueda web enlaces relevantes sobre este modelo; los resultados devueltos no guardaban relacion con el mismo.

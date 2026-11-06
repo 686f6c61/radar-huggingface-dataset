@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Arquitectura | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Aster-1.0-Instruct | ≈28,9B | Híbrida SSM–Attention (48 SSM + 16 atención) | no disponible | Apache-2.0 | HuggingFace, runtime propio en Rust |
-| Qwen3.8-27B (modelo base de referencia) | no disponible en la información | Transformer con Gated DeltaNet | no disponible | no disponible en la información | HuggingFace |
+| Aster-1.0-Instruct | ≈28,9B | Híbrida SSM–Attention (48 SSM + 16 atención) | no disponible | Apache-2.0 | Hugging Face, runtime propio en Rust |
+| Qwen3.8-27B (modelo base de referencia) | no disponible en la información | Transformer con Gated DeltaNet | no disponible | no disponible en la información | Hugging Face |
 | Alternativas de ~30B puramente atencionales | no disponible | Transformer | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones detalladas de modelos comparables en la información proporcionada, por lo que la comparación cuantitativa de rendimiento no está disponible.
@@ -82,7 +82,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de modelo
 
 ## Enlaces
 
-- [HuggingFace: CaramellaInc/Aster-1.0-instruct](https://huggingface.co/CaramellaInc/Aster-1.0-instruct)
+- [Hugging Face: CaramellaInc/Aster-1.0-instruct](https://huggingface.co/CaramellaInc/Aster-1.0-instruct)
 - [Modelo base: Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [Paper de referencia MOHAWK (arXiv:2408.10189)](https://arxiv.org/abs/2408.10189)
 - [Perfil del autor: CaramellaInc](https://huggingface.co/CaramellaInc)

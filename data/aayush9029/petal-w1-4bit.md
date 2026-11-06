@@ -78,10 +78,10 @@ Comparativa publicada en la model card (similitud de edicion por palabras, tras 
 
 | Modelo | Parametros | Contexto | Rendimiento (similitud, todas) | Respuestas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| petal-w1 4-bit | 752 M | no disponible | 0,834 | 0 | Apache 2.0 | HuggingFace (MLX) |
-| petal-w1 8-bit | 752 M | no disponible | 0,845 | 0 | Apache 2.0 | HuggingFace (MLX) |
+| petal-w1 4-bit | 752 M | no disponible | 0,834 | 0 | Apache 2.0 | Hugging Face (MLX) |
+| petal-w1 8-bit | 752 M | no disponible | 0,845 | 0 | Apache 2.0 | Hugging Face (MLX) |
 | S1-mini (Superwhisper) 8-bit | no disponible | no disponible | 0,775 | 0 | no disponible | propietario |
-| Qwen3.5-0.8B | 0,8 B | no disponible | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| Qwen3.5-0.8B | 0,8 B | no disponible | no disponible | no disponible | Apache 2.0 | Hugging Face |
 
 Nota: la comparativa con Qwen3.5-0.8B carece de datos de la tarea de limpieza de dictado en la informacion disponible, ya que ese modelo no esta ajustado para esa tarea.
 
@@ -98,7 +98,7 @@ Nota: la comparativa con Qwen3.5-0.8B carece de datos de la tarea de limpieza de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Aayush9029/petal-w1-4bit
+- Modelo en Hugging Face: https://huggingface.co/Aayush9029/petal-w1-4bit
 - Build 8-bit: https://huggingface.co/Aayush9029/petal-w1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de Petal (aplicacion de dictado para macOS): https://github.com/Aayush9029/petal

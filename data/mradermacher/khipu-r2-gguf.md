@@ -51,7 +51,7 @@ Tampoco hay informacion sobre el volumen de tokens de entrenamiento, la composic
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del repositorio GGUF ni los metadatos de HuggingFace incluyen cifras de MMLU, HumanEval, GSM8K, ARC, HellaSwag ni de ninguna otra evaluacion estandar, y la busqueda web realizada no ha devuelto documentacion tecnica asociada al modelo base SZLHOLDINGS/KHIPU-R2.
+No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del repositorio GGUF ni los metadatos de Hugging Face incluyen cifras de MMLU, HumanEval, GSM8K, ARC, HellaSwag ni de ninguna otra evaluacion estandar, y la busqueda web realizada no ha devuelto documentacion tecnica asociada al modelo base SZLHOLDINGS/KHIPU-R2.
 
 ## Requisitos de hardware
 
@@ -102,7 +102,7 @@ No se dispone de datos de rendimiento de KHIPU-R2-GGUF, por lo que la comparacio
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/mradermacher/KHIPU-R2-GGUF
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/mradermacher/KHIPU-R2-GGUF
 - Modelo base: https://huggingface.co/SZLHOLDINGS/KHIPU-R2
 - Pagina de resumen de descargas del cuantizador: https://hf.tst.eu/model#KHIPU-R2-GGUF
 - README de referencia de TheBloke sobre uso de ficheros GGUF: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

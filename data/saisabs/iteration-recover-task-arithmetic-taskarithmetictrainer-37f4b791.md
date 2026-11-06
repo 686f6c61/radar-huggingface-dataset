@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `saisabs/iteration-recover-task-arithmetic-taskarithmetictrainer-37f4b791` es un checkpoint de generacion de texto publicado en HuggingFace por el usuario `saisabs`, construido sobre la arquitectura Qwen2 (tag `qwen2` en el repositorio) y con 494.032.768 parametros almacenados en formato safetensors. El identificador del repositorio sugiere un experimento de *task arithmetic* (aritmetica de tareas sobre pesos) dentro de un proceso de entrenamiento iterativo, aunque el autor no documenta nada al respecto: la model card es la plantilla automatica de HuggingFace sin rellenar, con todos los campos marcados como "[More Information Needed]".
+El modelo `saisabs/iteration-recover-task-arithmetic-taskarithmetictrainer-37f4b791` es un checkpoint de generacion de texto publicado en Hugging Face por el usuario `saisabs`, construido sobre la arquitectura Qwen2 (tag `qwen2` en el repositorio) y con 494.032.768 parametros almacenados en formato safetensors. El identificador del repositorio sugiere un experimento de *task arithmetic* (aritmetica de tareas sobre pesos) dentro de un proceso de entrenamiento iterativo, aunque el autor no documenta nada al respecto: la model card es la plantilla automatica de Hugging Face sin rellenar, con todos los campos marcados como "[More Information Needed]".
 
 El modelo no resuelve un problema declarado. No hay descripcion de uso previsto, ni dataset de entrenamiento, ni procedimiento de ajuste, ni evaluacion. Los unicos datos verificables son los metadatos del repositorio: 494 millones de parametros, safetensors como formato de pesos, pipeline `text-generation`, tag `conversational`, compatibilidad declarada con `text-generation-inference` y `endpoints_compatible`, y licencia e idiomas sin especificar.
 
@@ -27,7 +27,7 @@ Su relevancia actual es limitada y de caracter exclusivamente experimental. Con 
 | Ultima actualizacion | 2026-10-07 (13 segundos despues de la creacion; subida automatizada) |
 | Descargas / valoraciones | 0 / 0 |
 
-Nota sobre el tag `arxiv:1910.09700`: corresponde a Lacoste et al., "Quantifying the Carbon Emissions of Machine Learning", el paper del calculador de impacto de ML que aparece citado en la plantilla por defecto de HuggingFace. No es un paper asociado a este modelo.
+Nota sobre el tag `arxiv:1910.09700`: corresponde a Lacoste et al., "Quantifying the Carbon Emissions of Machine Learning", el paper del calculador de impacto de ML que aparece citado en la plantilla por defecto de Hugging Face. No es un paper asociado a este modelo.
 
 ## Arquitectura y entrenamiento
 
@@ -86,7 +86,7 @@ La comparativa se establece con alternativas de la misma escala. Los datos de la
 | saisabs/iteration-recover-task-arithmetic-...-37f4b791 | 494.032.768 | no disponible | no disponible | safetensors | inexistente (plantilla vacia) |
 | Qwen2-0.5B (Alibaba) | ~0,49B | 32.768 tokens (segun model card publica) | Apache 2.0 | safetensors, GGUF en la comunidad | completa |
 | Qwen2.5-0.5B (Alibaba) | ~0,49B | 32.768 tokens (segun model card publica) | Apache 2.0 | safetensors, GGUF | completa |
-| SmolLM2-360M (HuggingFace) | ~362M | 8.192 tokens (segun model card publica) | Apache 2.0 | safetensors, GGUF | completa |
+| SmolLM2-360M (Hugging Face) | ~362M | 8.192 tokens (segun model card publica) | Apache 2.0 | safetensors, GGUF | completa |
 
 Frente a estas alternativas, el checkpoint de `saisabs` no aporta ninguna ventaja documentada: carece de licencia, de evaluacion, de plantilla de chat y de versiones cuantizadas, y su origen parece ser un experimento interno sin publicacion asociada. Para cualquier uso real en esta escala, las alternativas con licencia Apache 2.0 y documentacion completa son la opcion racional.
 
@@ -105,6 +105,6 @@ Frente a estas alternativas, el checkpoint de `saisabs` no aporta ninguna ventaj
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/saisabs/iteration-recover-task-arithmetic-taskarithmetictrainer-37f4b791
+- Modelo en Hugging Face: https://huggingface.co/saisabs/iteration-recover-task-arithmetic-taskarithmetictrainer-37f4b791
 - Paper referenciado en los tags (calculador de impacto de ML, no asociado al modelo): https://arxiv.org/abs/1910.09700
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos asociados a este modelo.

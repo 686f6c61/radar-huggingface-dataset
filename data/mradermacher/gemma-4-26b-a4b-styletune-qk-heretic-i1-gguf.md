@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `mradermacher/Gemma-4-26B-A4B-StyleTune-QK-Heretic-i1-GGUF` contiene un conjunto de cuantizaciones en formato GGUF generadas por el usuario mradermacher a partir del modelo `SubMaroon/Gemma-4-26B-A4B-StyleTune-QK-Heretic`. No se trata, por tanto, de un modelo entrenado desde cero, sino de una redistribución optimizada para inferencia local mediante llama.cpp y motores compatibles. El modelo base declara 25.971.339.550 parámetros totales (aproximadamente 26B), según el dato de safetensors proporcionado en la ficha de HuggingFace.
+El repositorio `mradermacher/Gemma-4-26B-A4B-StyleTune-QK-Heretic-i1-GGUF` contiene un conjunto de cuantizaciones en formato GGUF generadas por el usuario mradermacher a partir del modelo `SubMaroon/Gemma-4-26B-A4B-StyleTune-QK-Heretic`. No se trata, por tanto, de un modelo entrenado desde cero, sino de una redistribución optimizada para inferencia local mediante llama.cpp y motores compatibles. El modelo base declara 25.971.339.550 parámetros totales (aproximadamente 26B), según el dato de safetensors proporcionado en la ficha de Hugging Face.
 
 El nombre del modelo sugiere varias cosas que no están confirmadas explícitamente en la información disponible: el segmento "Gemma-4-26B" apunta a una base de la familia Gemma con 26B parámetros; el sufijo "A4B" sigue la convención habitual de los modelos de mezcla de expertos (MoE) para indicar unos 4B parámetros activos por token; "StyleTune" apunta a un ajuste fino orientado a estilo conversacional; y "Heretic" es el nombre de una técnica/herramienta conocida de ablación de direcciones de rechazo (decensoring). Ninguno de estos extremos está documentado en la model card, que se limita a la metadata de cuantización.
 
@@ -23,7 +23,7 @@ La relevancia de este repositorio es práctica: ofrece una batería completa de 
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura interna, la composicion del dataset de entrenamiento ni el proceso de ajuste (RLHF, DPO, SFT) del modelo base. La model card unicamente documenta los metadatos de la conversion: `convert_type: hf`, `output_tensor_quantised: 1` y `quantize_version: 2`, lo que indica que la cuantizacion se realizo a partir de pesos en formato HuggingFace.
+No se dispone de informacion sobre la arquitectura interna, la composicion del dataset de entrenamiento ni el proceso de ajuste (RLHF, DPO, SFT) del modelo base. La model card unicamente documenta los metadatos de la conversion: `convert_type: hf`, `output_tensor_quantised: 1` y `quantize_version: 2`, lo que indica que la cuantizacion se realizo a partir de pesos en formato Hugging Face.
 
 Por la nomenclatura del repositorio cabe inferir, sin que exista confirmacion documental, que la base es un transformer de tipo mezcla de expertos con aproximadamente 4B parametros activos y 26B totales, y que fue sometido a un proceso de ajuste estilistico ("StyleTune") y a una tecnica de ablacion de rechazos ("Heretic"). Las cuantizaciones de este repositorio se generaron con calibracion imatrix y ponderacion por importancia, lo que tipicamente reduce la perdida de calidad en niveles de cuantizacion agresivos (IQ1, IQ2). El campo `skip_mmproj: 1` sugiere que no se incluye proyector multimodal en las cuantizaciones.
 
@@ -94,6 +94,6 @@ Nota: los datos de los modelos comparados se incluyen como referencia generica d
 
 ## Enlaces
 
-- HuggingFace (este repositorio): https://huggingface.co/mradermacher/Gemma-4-26B-A4B-StyleTune-QK-Heretic-i1-GGUF
+- Hugging Face (este repositorio): https://huggingface.co/mradermacher/Gemma-4-26B-A4B-StyleTune-QK-Heretic-i1-GGUF
 - Modelo base referenciado en la model card: https://huggingface.co/SubMaroon/Gemma-4-26B-A4B-StyleTune-QK-Heretic
 - Repositorios y demos adicionales: no disponible (los resultados de la busqueda web realizada no contienen informacion relacionada con el modelo).

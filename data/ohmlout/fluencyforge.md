@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FluencyForge es un modelo de lenguaje conversacional desarrollado por el usuario ohmlout, publicado en HuggingFace con el identificador `ohmlout/FluencyForge`. Se trata de una adaptación del modelo base Qwen/Qwen2.5-0.5B-Instruct, optimizada para su ejecución en entornos JavaScript mediante la librería transformers.js y el formato ONNX. El modelo tiene aproximadamente 494 millones de parámetros, lo que lo sitúa en la categoría de modelos pequeños (0.5B), y está licenciado bajo Apache 2.0, lo que permite uso comercial sin restricciones adicionales.
+FluencyForge es un modelo de lenguaje conversacional desarrollado por el usuario ohmlout, publicado en Hugging Face con el identificador `ohmlout/FluencyForge`. Se trata de una adaptación del modelo base Qwen/Qwen2.5-0.5B-Instruct, optimizada para su ejecución en entornos JavaScript mediante la librería transformers.js y el formato ONNX. El modelo tiene aproximadamente 494 millones de parámetros, lo que lo sitúa en la categoría de modelos pequeños (0.5B), y está licenciado bajo Apache 2.0, lo que permite uso comercial sin restricciones adicionales.
 
 La relevancia de FluencyForge radica en su capacidad para ejecutar un modelo instructivo de razonamiento y conversación directamente en el navegador o en entornos edge, sin necesidad de infraestructura de servidor dedicada. Al estar basado en Qwen2.5-0.5B-Instruct, hereda las capacidades de generación de texto, seguimiento de instrucciones y diálogo multi-turno de su modelo padre, aunque con un tamaño reducido que facilita su despliegue en dispositivos con recursos limitados. El repositorio incluye tanto pesos en formato safetensors como versiones ONNX, lo que permite su uso tanto en pipelines tradicionales de Python como en aplicaciones web.
 
@@ -44,7 +44,7 @@ La contribución específica de FluencyForge consiste en la conversión del mode
 - Widgets de atención al cliente en páginas corporativas: al ejecutarse en el cliente, permite responder preguntas frecuentes o guiar al usuario en procesos de compra sin costes de infraestructura por llamada a API.
 - Herramientas de productividad offline: puede utilizarse en extensiones de navegador o aplicaciones de escritorio basadas en Electron para redactar correos, resumir textos o generar borradores sin conexión a internet.
 - Prototipado rápido de aplicaciones de IA: su licencia Apache 2.0 y su formato compatible con transformers.js lo hacen adecuado para desarrolladores que quieran experimentar con modelos instructivos en el frontend sin configurar un servidor.
-- Educación y demostraciones técnicas: sirve como ejemplo didáctico de cómo convertir y desplegar un modelo de HuggingFace a ONNX para su uso en JavaScript, útil en talleres y cursos de desarrollo web con IA.
+- Educación y demostraciones técnicas: sirve como ejemplo didáctico de cómo convertir y desplegar un modelo de Hugging Face a ONNX para su uso en JavaScript, útil en talleres y cursos de desarrollo web con IA.
 - Sistemas de autocompletado o asistencia de escritura en editores web: puede integrarse en editores de código o procesadores de texto en línea para sugerir continuaciones de frases o generar comentarios automáticos, aprovechando su capacidad de generación de texto.
 
 ## Benchmarks y rendimiento
@@ -83,6 +83,6 @@ Nota: los datos de contexto y parámetros de los modelos comparados provienen de
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/ohmlout/FluencyForge)
+- [Página del modelo en Hugging Face](https://huggingface.co/ohmlout/FluencyForge)
 - [Modelo base Qwen2.5-0.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct)
 - [Documentación de transformers.js](https://huggingface.co/docs/transformers.js) (referencia general, no específica del modelo)

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-RavManda/my-awesome-model es un modelo de tipo encoder publicado en HuggingFace por el usuario RavManda, etiquetado con la arquitectura `bert` y el pipeline `feature-extraction`. Con 108.310.272 parametros reales declarados en los pesos safetensors y un repositorio de 0,4 GB, el tamano encaja con la clase de los modelos BERT-base (aproximadamente 110 millones de parametros), lo que lo situa en la categoria de encoders ligeros orientados a generar representaciones vectoriales de texto en lugar de generar texto autocompletado.
+RavManda/my-awesome-model es un modelo de tipo encoder publicado en Hugging Face por el usuario RavManda, etiquetado con la arquitectura `bert` y el pipeline `feature-extraction`. Con 108.310.272 parametros reales declarados en los pesos safetensors y un repositorio de 0,4 GB, el tamano encaja con la clase de los modelos BERT-base (aproximadamente 110 millones de parametros), lo que lo situa en la categoria de encoders ligeros orientados a generar representaciones vectoriales de texto en lugar de generar texto autocompletado.
 
-La relevancia practica del modelo es, a dia de hoy, muy limitada y dificil de evaluar: la model card es la plantilla autogenerada por HuggingFace en la que absolutamente todos los campos obligatorios (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion) siguen marcados como "[More Information Needed]". No se declara licencia, no se declaran idiomas, no hay resultados de benchmarks y no consta ningun paper, repositorio o demo asociado. Las fechas de creacion y actualizacion que reporta el Hub (27 de septiembre de 2026, con 16 segundos de diferencia entre ambas) apuntan a un artefacto de prueba o a una subida automatizada sin documentar.
+La relevancia practica del modelo es, a dia de hoy, muy limitada y dificil de evaluar: la model card es la plantilla autogenerada por Hugging Face en la que absolutamente todos los campos obligatorios (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion) siguen marcados como "[More Information Needed]". No se declara licencia, no se declaran idiomas, no hay resultados de benchmarks y no consta ningun paper, repositorio o demo asociado. Las fechas de creacion y actualizacion que reporta el Hub (27 de septiembre de 2026, con 16 segundos de diferencia entre ambas) apuntan a un artefacto de prueba o a una subida automatizada sin documentar.
 
 Por tanto, esta ficha describe con rigor lo unico verificable (arquitectura etiquetada, recuento de parametros, formato de pesos, pipeline y tamano del repositorio) y marca explicitamente como "no disponible" todo lo que el autor no ha publicado. Cualquier uso en produccion exigiria una evaluacion propia previa, dado que no existe informacion sobre procedencia de datos, licencia ni comportamiento del modelo.
 
@@ -101,7 +101,7 @@ Comparativa de rendimiento: no disponible para el modelo analizado. No se dispon
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RavManda/my-awesome-model
+- Modelo en Hugging Face: https://huggingface.co/RavManda/my-awesome-model
 - Paper referenciado en las etiquetas (Lacoste et al., 2019, calculador de impacto medioambiental citado en la plantilla): https://arxiv.org/abs/1910.09700
 - Calculador de impacto de Machine Learning citado en la plantilla: https://mlco2.github.io/impact
 - Repositorio del autor: no disponible

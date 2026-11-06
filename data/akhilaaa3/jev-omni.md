@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Jev-Omni es un clasificador multimodal de decisiones publicado por el usuario akhilaaa3 en HuggingFace. A diferencia de un modelo generativo, no produce explicaciones ni texto libre: recibe un estado o contexto, una pregunta y una lista de opciones, y devuelve una probabilidad calibrada para cada opción. Acepta entradas de texto, imagen, audio y vídeo, y está construido sobre el modelo base google/gemma-4-12B-it mediante un ajuste fino final sobre 24.000 preguntas.
+Jev-Omni es un clasificador multimodal de decisiones publicado por el usuario akhilaaa3 en Hugging Face. A diferencia de un modelo generativo, no produce explicaciones ni texto libre: recibe un estado o contexto, una pregunta y una lista de opciones, y devuelve una probabilidad calibrada para cada opción. Acepta entradas de texto, imagen, audio y vídeo, y está construido sobre el modelo base google/gemma-4-12B-it mediante un ajuste fino final sobre 24.000 preguntas.
 
-El modelo se distribuye como un merge (etiqueta merged) con pesos en safetensors y un repositorio de 47,7 GB, coherente con pesos en FP32 de un modelo de aproximadamente 12.000 millones de parámetros. La licencia es Apache-2.0, heredada de Gemma 4, y el pipeline declarado en HuggingFace es text-classification. El repositorio tiene 0 descargas y 1 like en el momento de la consulta, por lo que se trata de un artefacto reciente y con adopción prácticamente nula.
+El modelo se distribuye como un merge (etiqueta merged) con pesos en safetensors y un repositorio de 47,7 GB, coherente con pesos en FP32 de un modelo de aproximadamente 12.000 millones de parámetros. La licencia es Apache-2.0, heredada de Gemma 4, y el pipeline declarado en Hugging Face es text-classification. El repositorio tiene 0 descargas y 1 like en el momento de la consulta, por lo que se trata de un artefacto reciente y con adopción prácticamente nula.
 
 Su relevancia es acotada pero concreta: cubre el nicho de decisión multimodal con salida probabilística y calibración declarada (ECE de 0,0400 en DecisionBench Medium), un formato que encaja mejor que un LLM generativo en pipelines que necesitan puntuaciones comparables entre opciones, umbrales de confianza y decisiones automatizadas. Los resultados publicados por el autor son 87,57 % de accuracy en DecisionBench Medium, 86,15 % en JevBench y 63,10 % de micro accuracy en MMAU (1.000 preguntas).
 
@@ -89,8 +89,8 @@ La búsqueda web realizada no devolvió información relevante sobre este modelo
 
 | Modelo | Parametros | Contexto | Benchmark comparable | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jev-Omni | 12B (base) | no disponible | DecisionBench Medium 87,57 %; JevBench 86,15 %; MMAU 63,10 % | Apache-2.0 | HuggingFace, 0 descargas, 1 like |
-| google/gemma-4-12B-it (modelo base) | 12B | no disponible | no disponible en la información proporcionada | Apache-2.0 según la model card de Jev-Omni | HuggingFace |
+| Jev-Omni | 12B (base) | no disponible | DecisionBench Medium 87,57 %; JevBench 86,15 %; MMAU 63,10 % | Apache-2.0 | Hugging Face, 0 descargas, 1 like |
+| google/gemma-4-12B-it (modelo base) | 12B | no disponible | no disponible en la información proporcionada | Apache-2.0 según la model card de Jev-Omni | Hugging Face |
 | Alternativas multimodales de clasificación cerrada | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -108,7 +108,7 @@ La búsqueda web realizada no devolvió información relevante sobre este modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/akhilaaa3/Jev-Omni
+- Modelo en Hugging Face: https://huggingface.co/akhilaaa3/Jev-Omni
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Dataset DecisionBench: https://huggingface.co/datasets/akhilaaa3/decision-bench
 - Gráfico de accuracy en DecisionBench Medium: assets/medium-accuracy.png (dentro del repositorio del modelo)

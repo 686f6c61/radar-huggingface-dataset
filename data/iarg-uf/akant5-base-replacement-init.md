@@ -85,7 +85,7 @@ La comparación con mT5 base es la más directa: mismo esqueleto arquitectónico
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IARG-UF/akant5-base-replacement-init
+- Modelo en Hugging Face: https://huggingface.co/IARG-UF/akant5-base-replacement-init
 - Checkpoint CPT asociado: https://huggingface.co/IARG-UF/akant5-base-replacement
 - Colección AkanT5: https://huggingface.co/collections/IARG-UF/akant5-cpt-checkpoints-and-vocabulary-initializations
 - Modelo base: https://huggingface.co/google/mt5-base

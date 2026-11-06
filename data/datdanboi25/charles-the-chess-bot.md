@@ -33,13 +33,13 @@ El entrenamiento se realizo en tres fases: (1) aprendizaje supervisado sobre pos
 - Evaluacion de posiciones mediante embeddings de transicion (resta de embeddings de tableros sucesores)
 - Juego a nivel aproximado de 2000 Elo (maestro nacional)
 - Velocidad de decision elevada al no realizar busqueda exhaustiva
-- Soporte para posiciones arbitrarias mediante notacion FEN (el espacio de HuggingFace permite cargar posiciones personalizadas)
+- Soporte para posiciones arbitrarias mediante notacion FEN (el espacio de Hugging Face permite cargar posiciones personalizadas)
 - Capacidad de jugar tanto con blancas como con negras
 - Generacion de partidas completas on-policy durante el entrenamiento
 
 ## Casos de uso
 
-- Motor de ajedrez para aplicaciones web: el espacio de HuggingFace demuestra su integracion en interfaces de juego donde el usuario puede hacer clic en el tablero o escribir movimientos, con soporte para posiciones FEN personalizadas. Su velocidad de respuesta lo hace adecuado para experiencias de juego fluidas.
+- Motor de ajedrez para aplicaciones web: el espacio de Hugging Face demuestra su integracion en interfaces de juego donde el usuario puede hacer clic en el tablero o escribir movimientos, con soporte para posiciones FEN personalizadas. Su velocidad de respuesta lo hace adecuado para experiencias de juego fluidas.
 - Analisis rapido de posiciones: al evaluar unicamente el tablero actual sin busqueda profunda, puede proporcionar sugerencias de movimiento casi instantaneas, util para herramientas de analisis casual donde la profundidad no es critica.
 - Entrenamiento de jugadores aficionados: con un nivel de ~2000 Elo, es un sparring adecuado para jugadores de club que buscan oponentes de nivel medio-alto sin la dureza de motores profesionales.
 - Generacion de datasets de partidas: su capacidad para generar partidas completas contra Stockfish puede utilizarse para crear corpus de entrenamiento para otros modelos o sistemas.
@@ -65,13 +65,13 @@ No se han publicado resultados comparativos formales contra otros motores en la 
 - Inferencia viable en CPU: la carga computacional principal son dos transformers de 6 y 12 capas con 384 dimensiones, ejecutables en hardware sin GPU.
 - Cabe en cualquier GPU consumer: incluso una GPU integrada o una GTX 1650 con 4 GB de VRAM es mas que suficiente.
 - La velocidad de decision es alta al no requerir busqueda de arbol, aunque el codificador procesa el tablero y cada sucesor legal (tipicamente 20), lo que implica 21 pases por el Board Encoder por movimiento.
-- Opciones de despliegue: el espacio de HuggingFace (hugging-apps/charles-the-chess-bot) demuestra su funcionamiento en entornos web; no se documentan opciones especificas como vLLM u Ollama al no ser un modelo de texto.
+- Opciones de despliegue: el espacio de Hugging Face (hugging-apps/charles-the-chess-bot) demuestra su funcionamiento en entornos web; no se documentan opciones especificas como vLLM u Ollama al no ser un modelo de texto.
 
 ## Comparativa con modelos similares
 
 | Modelo | Tipo | Parametros | Nivel de juego | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Charles the Chess Bot | Red neuronal (transformer bidireccional) | 32,5 M | ~2000 Elo | no disponible | HuggingFace (safetensors) |
+| Charles the Chess Bot | Red neuronal (transformer bidireccional) | 32,5 M | ~2000 Elo | no disponible | Hugging Face (safetensors) |
 | Stockfish | Motor clasico con busqueda alpha-beta | no aplicable | >3500 Elo | GPLv3 | Codigo abierto |
 | Leela Chess Zero | Red neuronal (CNN residual) | ~40 M (red tipica) | >3000 Elo | GPLv3 | Codigo abierto |
 | Maia Chess | Red neuronal (CNN) | ~270 M | ~1500-1900 Elo segun variante | MIT | Codigo abierto |
@@ -91,6 +91,6 @@ Charles se diferencia de Stockfish por no realizar busqueda, de Leela por su arq
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Datdanboi25/Charles-the-Chess-Bot
-- Espacio de juego en HuggingFace: https://huggingface.co/spaces/hugging-apps/charles-the-chess-bot
-- Perfil del autor en HuggingFace: https://huggingface.co/Datdanboi25
+- Modelo en Hugging Face: https://huggingface.co/Datdanboi25/Charles-the-Chess-Bot
+- Espacio de juego en Hugging Face: https://huggingface.co/spaces/hugging-apps/charles-the-chess-bot
+- Perfil del autor en Hugging Face: https://huggingface.co/Datdanboi25

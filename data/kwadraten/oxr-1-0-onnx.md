@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OXR-1.0-ONNX es una exportación a ONNX Runtime del modelo SoMarkAI/OXR-1.0, un sistema de reconocimiento óptico de caracteres (OCR) de tipo imagen-a-texto. Lo publica el usuario kwadraten en HuggingFace con el objetivo de permitir inferencia completamente offline sin ejecutar pesos de PyTorch: todos los grafos se ejecutan en el proveedor CPU de ONNX Runtime. El paquete incluye tres grafos de reconocimiento (visión, embeddings de texto y lenguaje) más un grafo independiente de detección de layout basado en D-FINE.
+OXR-1.0-ONNX es una exportación a ONNX Runtime del modelo SoMarkAI/OXR-1.0, un sistema de reconocimiento óptico de caracteres (OCR) de tipo imagen-a-texto. Lo publica el usuario kwadraten en Hugging Face con el objetivo de permitir inferencia completamente offline sin ejecutar pesos de PyTorch: todos los grafos se ejecutan en el proveedor CPU de ONNX Runtime. El paquete incluye tres grafos de reconocimiento (visión, embeddings de texto y lenguaje) más un grafo independiente de detección de layout basado en D-FINE.
 
 La relevancia de esta exportación es práctica: facilita el despliegue de OCR en entornos sin GPU, sin dependencias de PyTorch y con artefactos verificables mediante hash SHA-256. Sin embargo, se trata de un export experimental de resolución fija (448 × 448 para el reconocimiento, 960 × 960 para el layout) y el propio autor no afirma calidad de reconocimiento más allá de las pruebas descritas en la model card.
 
@@ -90,7 +90,7 @@ La comparación con Tesseract y PaddleOCR se ofrece como referencia de categorí
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kwadraten/OXR-1.0-ONNX
+- Modelo en Hugging Face: https://huggingface.co/kwadraten/OXR-1.0-ONNX
 - Modelo original: https://huggingface.co/SoMarkAI/OXR-1.0
 - Licencia OXR: https://github.com/SoMarkAI/OXR/blob/c1a1dcb312ee9f691404f127785510453c0d9350/LICENSE
 - Repositorio de SoMarkAI/OXR: https://github.com/SoMarkAI/OXR

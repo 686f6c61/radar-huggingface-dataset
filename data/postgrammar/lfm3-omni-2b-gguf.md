@@ -6,7 +6,7 @@ LFM3-Omni-2B es un modelo omnicanal (any-to-any) desarrollado por Liquid AI que 
 
 La relevancia de esta publicación radica en que traslada un modelo omnicanal (visión, audio y vídeo) al ecosistema GGUF, lo que permite ejecutarlo en hardware de consumo sin GPU dedicada de gama alta. La model card documenta soporte para conversaciones de voz en tiempo real con tool calling a través de la API WebSocket `/v1/realtime` de `llama serve`, así como reconocimiento de voz (ASR), comprensión de imagen y vídeo, y síntesis de voz (TTS) con selección de voz femenina o masculina.
 
-El modelo se distribuye bajo licencia `lfm1.0` (etiquetada como `other` en HuggingFace) y cubre 23 idiomas, entre ellos el español. Es un modelo de tipo "non-reasoning", es decir, sin modo de razonamiento extendido, y la model card recomienda decodificación greedy (temperatura 0) para salida de texto.
+El modelo se distribuye bajo licencia `lfm1.0` (etiquetada como `other` en Hugging Face) y cubre 23 idiomas, entre ellos el español. Es un modelo de tipo "non-reasoning", es decir, sin modo de razonamiento extendido, y la model card recomienda decodificación greedy (temperatura 0) para salida de texto.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ El modelo se distribuye bajo licencia `lfm1.0` (etiquetada como `other` en Huggi
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | GGUF (se menciona Q4_K_M en los ejemplos; el repo incluye proyector multimodal `mmproj-...-Q8_0`) |
 | Idiomas soportados | en, ar, zh, fr, de, it, ja, ko, pt, es, vi, th, id, hi, ru, pl, da, el, fi, he, nl, sv, tr (23 idiomas) |
-| Licencia | lfm1.0 (etiquetada como `other` en HuggingFace) |
+| Licencia | lfm1.0 (etiquetada como `other` en Hugging Face) |
 | Formato de pesos | GGUF (safetensors en el modelo base original) |
 
 ## Arquitectura y entrenamiento

@@ -86,8 +86,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Formato | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|---|
-| Abiray/Artemis-31B-v1.2-GGUF (este repositorio) | ~30,7B | GGUF (Q3_K_M a Q8_0) | No disponible | Apache 2.0 | HuggingFace, 0 descargas, 5 likes | Solo cuantizaciones; incluye tabla de VRAM y guia de muestreo |
-| TheDrummer/Artemis-31B-v1.2 (modelo base) | ~30,7B | No disponible en la informacion proporcionada | No disponible | Apache 2.0 (segun los metadatos de este repositorio) | HuggingFace | Modelo original sin cuantizar; es la referencia de calidad sobre la que se miden las cuantizaciones |
+| Abiray/Artemis-31B-v1.2-GGUF (este repositorio) | ~30,7B | GGUF (Q3_K_M a Q8_0) | No disponible | Apache 2.0 | Hugging Face, 0 descargas, 5 likes | Solo cuantizaciones; incluye tabla de VRAM y guia de muestreo |
+| TheDrummer/Artemis-31B-v1.2 (modelo base) | ~30,7B | No disponible en la informacion proporcionada | No disponible | Apache 2.0 (segun los metadatos de este repositorio) | Hugging Face | Modelo original sin cuantizar; es la referencia de calidad sobre la que se miden las cuantizaciones |
 | Otras alternativas de ~30B para escritura creativa y roleplay | No disponible | No disponible | No disponible | No disponible | No disponible | No se dispone de datos de benchmarks ni de modelos comparables en la informacion proporcionada |
 
 No se dispone de resultados de benchmarks que permitan comparar Artemis-31B-v1.2 con alternativas de su misma categoria; la unica comparacion defendible con los datos disponibles es la de la cuantizacion frente al modelo base sin cuantizar, cuyo impacto en perplejidad o fidelidad creativa no se cuantifica en la model card.
@@ -108,7 +108,7 @@ No se dispone de resultados de benchmarks que permitan comparar Artemis-31B-v1.2
 
 ## Enlaces
 
-- Repositorio HuggingFace de las cuantizaciones: https://huggingface.co/Abiray/Artemis-31B-v1.2-GGUF
+- Repositorio Hugging Face de las cuantizaciones: https://huggingface.co/Abiray/Artemis-31B-v1.2-GGUF
 - Modelo base original: https://huggingface.co/TheDrummer/Artemis-31B-v1.2
 - Perfil del autor del modelo base: https://huggingface.co/TheDrummer
 - Motor de cuantizacion llama.cpp: https://github.com/ggml-org/llama.cpp

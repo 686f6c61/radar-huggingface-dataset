@@ -75,6 +75,6 @@ No disponible. Al no tratarse de un modelo, no es posible compararlo directament
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Mr-J-369/Fancy-AI
+- Repositorio Hugging Face: https://huggingface.co/Mr-J-369/Fancy-AI
 - Repositorio GitHub (app y issues): https://github.com/Mr-J-369/Fancy-Ai
 - App en Google Play: https://play.google.com/store/apps/details?id=com.mrj.fancyai

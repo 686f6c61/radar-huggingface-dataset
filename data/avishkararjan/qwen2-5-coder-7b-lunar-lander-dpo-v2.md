@@ -79,4 +79,4 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/avishkararjan/qwen2.5-coder-7b-lunar-lander-dpo-v2
+- Hugging Face: https://huggingface.co/avishkararjan/qwen2.5-coder-7b-lunar-lander-dpo-v2

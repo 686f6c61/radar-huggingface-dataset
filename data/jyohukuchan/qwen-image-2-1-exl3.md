@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen-Image-2.1-EXL3 es una conversión comunitaria del modelo de difusión Qwen-Image-2.1, publicada por el usuario jyohukuchan en HuggingFace. No es un lanzamiento oficial de Qwen: se trata de un checkpoint cuantizado en formato EXL3 (EXLlamaV3) que reduce las 224 capas Linear del transformer de difusión (DiT) a 3, 4 o 5 bits por peso, mientras que el codificador de texto y el VAE se mantienen en BF16 y se descargan del modelo original fijado en la revisión `d26bb61231c349cf6b7896fa83353113880e1ba3`.
+Qwen-Image-2.1-EXL3 es una conversión comunitaria del modelo de difusión Qwen-Image-2.1, publicada por el usuario jyohukuchan en Hugging Face. No es un lanzamiento oficial de Qwen: se trata de un checkpoint cuantizado en formato EXL3 (EXLlamaV3) que reduce las 224 capas Linear del transformer de difusión (DiT) a 3, 4 o 5 bits por peso, mientras que el codificador de texto y el VAE se mantienen en BF16 y se descargan del modelo original fijado en la revisión `d26bb61231c349cf6b7896fa83353113880e1ba3`.
 
 El problema que resuelve es el tamaño de los pesos: el DiT cuantizado ocupa entre 2,89 GB (3 bits) y 4,64 GB (5 bits) en safetensors, con una pérdida de fidelidad medida como NMSE frente a la referencia BF16 de 2,59e-3, 7,90e-4 y 2,11e-4 respectivamente. La contrapartida es que exige un motor específico, `rocm_exl3_forme`, y solo se ha validado en una Radeon AI PRO R9700 de 32 GB (gfx1201) con ROCm 7.2.4 o superior; no es un checkpoint Diffusers estándar ni un GGUF, NF4 o Nunchaku.
 
@@ -70,7 +70,7 @@ El NMSE mide la fidelidad de las predicciones del DiT cuantizado frente a la ref
 - GPU recomendada: Radeon AI PRO R9700 de 32 GB (gfx1201), único hardware validado. CUDA, V620, otras GPU y la inferencia multi-GPU no se han validado para esta release.
 - GPU de consumo: no hay datos; no se ha validado en ninguna.
 - Software: Python 3.12, PyTorch 2.12.0+rocm7.2, compilador HIP 7.14.60850, Transformers 5.17.0, Accelerate 1.15.0, safetensors 0.8.0 y Diffusers en el commit `b800f828f3951c4d206e154411bcbfa693cd322e`; ROCm >= 7.2.4. No se debe confiar en la compilación JIT automática de estilo CUDA en ROCm.
-- Despliegue: exclusivamente mediante `rocm_exl3_forme` y su CLI `rocm_tools/qwen_image21.py`; no hay soporte para vLLM, llama.cpp, Ollama, TGI ni Diffusers estándar, y el repositorio no está configurado para inferencia alojada en HuggingFace.
+- Despliegue: exclusivamente mediante `rocm_exl3_forme` y su CLI `rocm_tools/qwen_image21.py`; no hay soporte para vLLM, llama.cpp, Ollama, TGI ni Diffusers estándar, y el repositorio no está configurado para inferencia alojada en Hugging Face.
 - Latencia y throughput: no disponible. Se documentan 40 pasos por defecto, CFG 1, caché de prefijo KV y VAE con mosaico de 256 px y solapamiento de 192 px.
 - Aviso de reproducibilidad: la evaluación reutilizó una extensión R9700 ya compilada cuyo commit de build original se desconoce, y no se demostró una recompilación limpia de ese binario exacto.
 
@@ -78,10 +78,10 @@ El NMSE mide la fidelidad de las predicciones del DiT cuantizado frente a la ref
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen-Image-2.1-EXL3 3bit | no disponible | no aplica | safetensors EXL3 | qwen-research (no comercial) | HuggingFace, requiere motor ROCm |
-| Qwen-Image-2.1-EXL3 4bit | no disponible | no aplica | safetensors EXL3 | qwen-research (no comercial) | HuggingFace, requiere motor ROCm |
-| Qwen-Image-2.1-EXL3 5bit | no disponible | no aplica | safetensors EXL3 | qwen-research (no comercial) | HuggingFace, requiere motor ROCm |
-| Qwen/Qwen-Image-2.1 (BF16, upstream) | no disponible | no aplica | safetensors Diffusers | qwen-research | HuggingFace |
+| Qwen-Image-2.1-EXL3 3bit | no disponible | no aplica | safetensors EXL3 | qwen-research (no comercial) | Hugging Face, requiere motor ROCm |
+| Qwen-Image-2.1-EXL3 4bit | no disponible | no aplica | safetensors EXL3 | qwen-research (no comercial) | Hugging Face, requiere motor ROCm |
+| Qwen-Image-2.1-EXL3 5bit | no disponible | no aplica | safetensors EXL3 | qwen-research (no comercial) | Hugging Face, requiere motor ROCm |
+| Qwen/Qwen-Image-2.1 (BF16, upstream) | no disponible | no aplica | safetensors Diffusers | qwen-research | Hugging Face |
 | Otras cuantizaciones de la comunidad (GGUF, NF4, Nunchaku) | no disponible | no aplica | GGUF / NF4 / Nunchaku | no disponible | mencionadas como formato distinto, sin datos |
 
 La model card distingue explícitamente este checkpoint de las alternativas GGUF, NF4 y Nunchaku, pero no proporciona cifras de tamaño, fidelidad ni rendimiento de esas alternativas, por lo que no es posible establecer una comparación cuantitativa. Tampoco se dispone de datos de modelos de difusión comparables de otros fabricantes en la información proporcionada.
@@ -102,7 +102,7 @@ La model card distingue explícitamente este checkpoint de las alternativas GGUF
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jyohukuchan/Qwen-Image-2.1-EXL3
+- Repositorio Hugging Face: https://huggingface.co/jyohukuchan/Qwen-Image-2.1-EXL3
 - Modelo base (revisión fijada): https://huggingface.co/Qwen/Qwen-Image-2.1/tree/d26bb61231c349cf6b7896fa83353113880e1ba3
 - Motor de inferencia (commit fijado): https://github.com/jyohukuchan/rocm_exl3_forme/tree/37847ec9949aaf30fcf72ad6679da78968857d7a
 - Requisitos de compilación del motor: https://github.com/jyohukuchan/rocm_exl3_forme/blob/37847ec9949aaf30fcf72ad6679da78968857d7a/README.md#requirements

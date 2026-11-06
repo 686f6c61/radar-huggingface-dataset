@@ -72,9 +72,9 @@ No se dispone de datos comparativos en la informacion proporcionada. Existen alt
 
 ## Enlaces
 
-- Repositorio HuggingFace del port MLX: https://huggingface.co/mlx-community/moge-3-vitg-mlx-fp32
+- Repositorio Hugging Face del port MLX: https://huggingface.co/mlx-community/moge-3-vitg-mlx-fp32
 - Modelo original MoGe-3 (VITG): https://huggingface.co/Ruicheng/moge-3-vitg
 - Libreria MLX: https://github.com/ml-explore/mlx
 - Herramienta de conversion mlx-vlm: https://github.com/Blaizzy/mlx-vlm
-- Organizacion MLX Community en HuggingFace: https://huggingface.co/mlx-community
+- Organizacion MLX Community en Hugging Face: https://huggingface.co/mlx-community
 - Sitio web de MLX Community: https://mlxcommunity.com/

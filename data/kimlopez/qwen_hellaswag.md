@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El repositorio kimlopez/qwen_hellaswag es un checkpoint publicado en HuggingFace con 8.190.735.360 parámetros almacenados en safetensors (16,4 GB de peso en el repositorio). Por el nombre y por los tags asociados (qwen3, text-generation, conversational), todo apunta a un modelo de la familia Qwen3 de aproximadamente 8B parámetros, pero el autor no confirma en la model card ni el modelo base ni el proceso de entrenamiento: la tarjeta es la plantilla automática de transformers, con todos los campos marcados como "[More Information Needed]".
+El repositorio kimlopez/qwen_hellaswag es un checkpoint publicado en Hugging Face con 8.190.735.360 parámetros almacenados en safetensors (16,4 GB de peso en el repositorio). Por el nombre y por los tags asociados (qwen3, text-generation, conversational), todo apunta a un modelo de la familia Qwen3 de aproximadamente 8B parámetros, pero el autor no confirma en la model card ni el modelo base ni el proceso de entrenamiento: la tarjeta es la plantilla automática de transformers, con todos los campos marcados como "[More Information Needed]".
 
 El modelo no resuelve un problema declarado por su autor. El sufijo "hellaswag" sugiere que se trata de un artefacto ligado a la evaluación o al ajuste sobre el conjunto HellaSwag, aunque no hay ninguna confirmación documental de ello. El repositorio tiene 0 descargas y 0 likes, y se creó y actualizó el 11 de septiembre de 2026 en un intervalo de 33 segundos, lo que indica una subida automatizada y sin documentación posterior.
 
-Su relevancia es, por tanto, limitada y de tipo exploratorio: sirve como ejemplo de publicación sin model card y como recordatorio de que los tags de HuggingFace no sustituyen a la documentación. Cualquier evaluación seria de este checkpoint exige inspeccionar los pesos, el tokenizador y la configuración directamente, porque la información publicada es insuficiente para determinar arquitectura, datos de entrenamiento, licencia o idiomas soportados.
+Su relevancia es, por tanto, limitada y de tipo exploratorio: sirve como ejemplo de publicación sin model card y como recordatorio de que los tags de Hugging Face no sustituyen a la documentación. Cualquier evaluación seria de este checkpoint exige inspeccionar los pesos, el tokenizador y la configuración directamente, porque la información publicada es insuficiente para determinar arquitectura, datos de entrenamiento, licencia o idiomas soportados.
 
 ## Especificaciones técnicas
 
@@ -25,7 +25,7 @@ Otros datos verificables del repositorio: tamano de 16,4 GB, pipeline text-gener
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura. La model card es la plantilla autogenerada de HuggingFace y no incluye seccion de arquitectura, objetivo de entrenamiento, datos utilizados, hiperparametros ni si hubo RLHF, DPO o SFT. El tag arxiv:1910.09700 que aparece en los metadatos corresponde a Lacoste et al. (2019), el articulo del calculador de impacto medioambiental citado en la propia plantilla, no a un paper de este modelo.
+No hay informacion publicada sobre la arquitectura. La model card es la plantilla autogenerada de Hugging Face y no incluye seccion de arquitectura, objetivo de entrenamiento, datos utilizados, hiperparametros ni si hubo RLHF, DPO o SFT. El tag arxiv:1910.09700 que aparece en los metadatos corresponde a Lacoste et al. (2019), el articulo del calculador de impacto medioambiental citado en la propia plantilla, no a un paper de este modelo.
 
 El unico dato tecnico fiable es el recuento de parametros (8.190.735.360) y el tamano del repositorio (16,4 GB), coherente con pesos en bf16 o fp16 de un modelo de ~8B parametros. La denominacion "hellaswag" podria indicar un ajuste fino o un checkpoint derivado de una evaluacion sobre ese benchmark, pero es una hipotesis basada en el nombre del repositorio y no un hecho documentado. Se desconoce tambien el tokenizador exacto, la longitud de contexto nativa y si se aplicaron tecnicas como decodificacion especulativa, atencion lineal o atencion con sesgo QKV.
 
@@ -88,7 +88,7 @@ La diferencia clave no es de rendimiento, sino de trazabilidad: las tres alterna
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kimlopez/qwen_hellaswag
+- Modelo en Hugging Face: https://huggingface.co/kimlopez/qwen_hellaswag
 - Articulo citado en la plantilla (Lacoste et al., 2019, calculador de impacto medioambiental): https://arxiv.org/abs/1910.09700
 - Calculador de impacto de aprendizaje automatico: https://mlco2.github.io/impact#compute
 - No se han encontrado papers, blogs, repositorios ni demos adicionales asociados a este modelo en la busqueda web realizada.

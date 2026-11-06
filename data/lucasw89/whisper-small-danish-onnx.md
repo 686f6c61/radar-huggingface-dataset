@@ -88,7 +88,7 @@ La comparación con otros modelos ASR en danés de distinto tamaño no está dis
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/lucasw89/whisper-small-danish-ONNX
+- Repositorio Hugging Face: https://huggingface.co/lucasw89/whisper-small-danish-ONNX
 - Modelo base: https://huggingface.co/thorhojhus/whisper-small-danish
 - Modelo original de OpenAI: https://huggingface.co/openai/whisper-small
 - Documentación de Transformers.js: https://huggingface.co/docs/transformers.js

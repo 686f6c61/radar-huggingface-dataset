@@ -4,7 +4,7 @@
 
 El modelo `kdyck_dose_1Bpt_hfbody_adamwppt_5M_s0_2026-09-06_22-01-49_258099-pt` es un punto de control experimental desarrollado por Alex Kster (alexkstern) con la librería `nanochat`. Se trata de un transformer decoder-only que se ha preentrenado en 1.000 millones de tokens de FineWeb y, después, se ha ajustado con 5 millones de tokens de un dataset sintético de lenguajes Dyck (paréntesis balanceados con k=128). El experimento, bajo la etiqueta «token dose», estudia cómo el cambio de fase de entrenamiento afecta a la capacidad del modelo para capturar estructuras jerárquicas anidadas.
 
-Arquitectónicamente, el checkpoint tiene 16 capas, 8 cabezas de atención, una dimensión de modelo de 1024 y una ventana de contexto de 2048 tokens. El repositorio ocupa 3.0 GB en HuggingFace y la licencia es Apache-2.0. No es un modelo de propósito general: carece de documentación sobre capacidades conversacionales y su formato de pesos (.pt) dificulta su uso directo en frameworks de inferencia estándar.
+Arquitectónicamente, el checkpoint tiene 16 capas, 8 cabezas de atención, una dimensión de modelo de 1024 y una ventana de contexto de 2048 tokens. El repositorio ocupa 3.0 GB en Hugging Face y la licencia es Apache-2.0. No es un modelo de propósito general: carece de documentación sobre capacidades conversacionales y su formato de pesos (.pt) dificulta su uso directo en frameworks de inferencia estándar.
 
 ## Especificaciones técnicas
 
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la información disponible. La �
 
 ## Comparativa con modelos similares
 
-No disponible. Se han identificado puntos de control de la misma familia en el repositorio de HuggingFace, como `kdyck_dose_1Bpt_hfbody_200M_s0` y `kdyck_dose_1Bpt_hfbody_1B_s0`, pero no se dispone de datos públicos sobre sus especificaciones o resultados de benchmarks.
+No disponible. Se han identificado puntos de control de la misma familia en el repositorio de Hugging Face, como `kdyck_dose_1Bpt_hfbody_200M_s0` y `kdyck_dose_1Bpt_hfbody_1B_s0`, pero no se dispone de datos públicos sobre sus especificaciones o resultados de benchmarks.
 
 ## Limitaciones y advertencias
 
@@ -71,7 +71,7 @@ No disponible. Se han identificado puntos de control de la misma familia en el r
 
 ## Enlaces
 
-- [HuggingFace](https://huggingface.co/alexkstern/kdyck_dose_1Bpt_hfbody_adamwppt_5M_s0_2026-09-06_22-01-49_258099-pt)
+- [Hugging Face](https://huggingface.co/alexkstern/kdyck_dose_1Bpt_hfbody_adamwppt_5M_s0_2026-09-06_22-01-49_258099-pt)
 - [W&B run](https://wandb.ai/alexksternteam/token_dose_1Bpt_adamw_seed_replicas_v1/runs/9f0l8mer)
 - [nanochat](https://github.com/karpathy/nanochat)
 - [Modelo relacionado 200M](https://huggingface.co/alexkstern/kdyck_dose_1Bpt_hfbody_200M_s0_2026-08-14_09-26-44_877448-pt)

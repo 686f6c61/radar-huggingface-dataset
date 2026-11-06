@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `dianavdavidson/indic_whisper_hi_multi_gpu_mucs_62901_ratio_alldata_lr_1e-4_lgid_None_hinglish_mixed_scripts_FT` es un checkpoint de reconocimiento automatico del habla (ASR) publicado por el usuario dianavdavidson en HuggingFace. Los tags del repositorio (`whisper`, `safetensors`) y el propio identificador (`indic_whisper`, `hi`, `hinglish_mixed_scripts`) indican que se trata de un ajuste fino de la familia Whisper de OpenAI orientado a hindi y a habla code-switching hindi-ingles (hinglish), con mezcla de alfabetos (devanagari y latin).
+El modelo `dianavdavidson/indic_whisper_hi_multi_gpu_mucs_62901_ratio_alldata_lr_1e-4_lgid_None_hinglish_mixed_scripts_FT` es un checkpoint de reconocimiento automatico del habla (ASR) publicado por el usuario dianavdavidson en Hugging Face. Los tags del repositorio (`whisper`, `safetensors`) y el propio identificador (`indic_whisper`, `hi`, `hinglish_mixed_scripts`) indican que se trata de un ajuste fino de la familia Whisper de OpenAI orientado a hindi y a habla code-switching hindi-ingles (hinglish), con mezcla de alfabetos (devanagari y latin).
 
 El checkpoint pesa 763.857.920 parametros (unos 764 M), un orden de magnitud propio de la variante `whisper-medium` (769 M), lo que lo situa en la gama media de la familia. El sufijo del nombre (`mucs_62901`, `ratio_alldata`, `lr_1e-4`, `multi_gpu`, `FT`) apunta a un entrenamiento supervisado a partir de un dataset completo con learning rate 1e-4 en configuracion multi-GPU, presumiblemente una submission asociada al reto MUCS. Se trata por tanto de un modelo de investigacion, no de un modelo de produccion validado.
 
@@ -21,8 +21,8 @@ La relevancia de este tipo de checkpoints esta en el nicho: el ASR comercial y l
 | Licencia | No disponible |
 | Formato de pesos | Safetensors |
 | Tamano del repositorio | 18,3 GB (muy superior a los ~3 GB que ocuparian 764 M parametros en FP32, lo que sugiere artefactos de entrenamiento adicionales: checkpoints intermedios, optimizador u otros ficheros) |
-| Fecha de creacion | 2026-09-16 (segun metadatos de HuggingFace) |
-| Ultima actualizacion | 2026-09-17 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-16 (segun metadatos de Hugging Face) |
+| Ultima actualizacion | 2026-09-17 (segun metadatos de Hugging Face) |
 | Descargas / likes | 24 descargas / 0 likes |
 
 ## Arquitectura y entrenamiento
@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto de audio | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (`indic_whisper...hinglish_mixed_scripts_FT`) | 763.857.920 (~764 M) | No disponible (familia Whisper: ventanas de 30 s) | Ajuste fino de Whisper para hindi/hinglish | No disponible | Repositorio de 18,3 GB en HuggingFace, 24 descargas |
-| Whisper medium (modelo base de OpenAI) | ~769 M | Ventanas de 30 s | ASR y traduccion multilingue generalista | MIT (licencia publica de la familia Whisper) | Ampliamente disponible en HuggingFace y convertido a multiples formatos |
+| Este checkpoint (`indic_whisper...hinglish_mixed_scripts_FT`) | 763.857.920 (~764 M) | No disponible (familia Whisper: ventanas de 30 s) | Ajuste fino de Whisper para hindi/hinglish | No disponible | Repositorio de 18,3 GB en Hugging Face, 24 descargas |
+| Whisper medium (modelo base de OpenAI) | ~769 M | Ventanas de 30 s | ASR y traduccion multilingue generalista | MIT (licencia publica de la familia Whisper) | Ampliamente disponible en Hugging Face y convertido a multiples formatos |
 | Whisper large-v3 (modelo base de OpenAI) | ~1,55 B | Ventanas de 30 s | ASR y traduccion multilingue generalista, mejor WER que medium | MIT (licencia publica de la familia Whisper) | Ampliamente disponible y con soporte en vLLM, whisper.cpp, faster-whisper |
 | AI4Bharat IndicWhisper | No disponible en la informacion proporcionada | No disponible | Ajuste fino de Whisper para lenguas indias | No disponible en la informacion proporcionada | Repositorio publico del proyecto AI4Bharat |
 
@@ -91,6 +91,6 @@ La comparacion se limita a parametros y enfoque: no hay datos de WER ni de ningu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dianavdavidson/indic_whisper_hi_multi_gpu_mucs_62901_ratio_alldata_lr_1e-4_lgid_None_hinglish_mixed_scripts_FT
+- Repositorio en Hugging Face: https://huggingface.co/dianavdavidson/indic_whisper_hi_multi_gpu_mucs_62901_ratio_alldata_lr_1e-4_lgid_None_hinglish_mixed_scripts_FT
 - Enlaces relevantes encontrados en la busqueda web: ninguno. La busqueda devolvio unicamente paginas de ayuda de YouTube sin relacion alguna con el modelo: https://support.google.com/youtubetv/?hl=en, https://support.google.com/youtube/answer/3227660?hl=fr&co=GENIE.Platform%3DAndroid, https://www.zhihu.com/question/1903231775980913051, https://www.zhihu.com/question/1945629068243481180, https://support.google.com/youtube/answer/9288567?hl=ru
 - Paper, blog, repositorio de codigo o demo: no disponibles.

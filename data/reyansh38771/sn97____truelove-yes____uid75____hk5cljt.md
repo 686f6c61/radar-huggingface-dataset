@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `reyansh38771/sn97____truelove-yes____uid75____hk5CLjT` es un repositorio publicado en HuggingFace por el usuario `reyansh38771`. Según las etiquetas del repositorio, se trata de un modelo de tipo `qwen3_5_moe`, lo que sugiere una arquitectura de mezcla de expertos (Mixture of Experts) basada en la familia Qwen3.5. Sin embargo, no existe documentación técnica, ficha de modelo, ni información de acceso que permita confirmar esta clasificación más allá de la etiqueta.
+El modelo `reyansh38771/sn97____truelove-yes____uid75____hk5CLjT` es un repositorio publicado en Hugging Face por el usuario `reyansh38771`. Según las etiquetas del repositorio, se trata de un modelo de tipo `qwen3_5_moe`, lo que sugiere una arquitectura de mezcla de expertos (Mixture of Experts) basada en la familia Qwen3.5. Sin embargo, no existe documentación técnica, ficha de modelo, ni información de acceso que permita confirmar esta clasificación más allá de la etiqueta.
 
 El repositorio tiene un tamaño de 35,8 GB, lo que podría indicar la presencia de pesos de gran tamaño, pero al estar marcado como acceso restringido (gated) no es posible inspeccionar su contenido sin aceptar condiciones adicionales. La fecha de creación figura como `2026-09-06`, un valor que resulta inconsistente con la fecha actual y que podría indicar un error en los metadatos o un modelo experimental. No se han publicado papers, blogs, ni resultados de benchmarks. En el momento de la consulta, el repositorio registra una única descarga y cero me gusta.
 
@@ -59,7 +59,7 @@ No disponible. No se ha publicado información sobre el modelo ni comparaciones 
 
 ## Limitaciones y advertencias
 
-- El repositorio tiene acceso restringido (gated), lo que impide evaluar el contenido sin aceptar condiciones adicionales en HuggingFace.
+- El repositorio tiene acceso restringido (gated), lo que impide evaluar el contenido sin aceptar condiciones adicionales en Hugging Face.
 - No se ha publicado ninguna documentación técnica, ficha de modelo ni paper asociado.
 - No se han publicado resultados de benchmarks ni evaluaciones de seguridad o alineación.
 - La etiqueta `qwen3_5_moe` no está respaldada por información oficial y podría ser incorrecta o engañosa.
@@ -71,7 +71,7 @@ No disponible. No se ha publicado información sobre el modelo ni comparaciones 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/reyansh38771/sn97____truelove-yes____uid75____hk5CLjT
+- Repositorio en Hugging Face: https://huggingface.co/reyansh38771/sn97____truelove-yes____uid75____hk5CLjT
 - Otros repositorios del mismo autor encontrados en la búsqueda (sin relación confirmada con este modelo):  
   - https://huggingface.co/reyansh38771/sn97____jmaxcool____uid124____hk5Ennz  
   - https://huggingface.co/reyansh38771/sn97____dora7____uid216____hk5EX35

@@ -76,7 +76,7 @@ Nota: las dos PPL son cantidades distintas y no comparables entre sí. La primer
 | HyperPrune-Llama-3.1-8B-2to4 | 2:4 | 8.030M | 22.27 | other |
 | Llama-3.1-8B denso | - | 8.030M | no disponible | Llama Community License |
 
-Nota: el modelo 2:4 es la versión publicada por el mismo autor en HuggingFace. El denso no tiene datos en la información disponible.
+Nota: el modelo 2:4 es la versión publicada por el mismo autor en Hugging Face. El denso no tiene datos en la información disponible.
 
 ## Limitaciones y advertencias
 
@@ -91,7 +91,7 @@ Nota: el modelo 2:4 es la versión publicada por el mismo autor en HuggingFace. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/elastix-ai/HyperPrune-Llama-3.1-8B-4to8
+- Modelo en Hugging Face: https://huggingface.co/elastix-ai/HyperPrune-Llama-3.1-8B-4to8
 - Versión 2:4: https://huggingface.co/elastix-ai/HyperPrune-Llama-3.1-8B-2to4
 - Repositorio de HyperPrune: https://github.com/futuresun912/HyperPrune
 - Paper en OpenReview: https://openreview.net/forum?id=lqjQs2lVNm

@@ -94,7 +94,7 @@ No se dispone de datos verificados de otros modelos de vídeo comparables (por e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/addlabsviral/minimax-h3-fp8
+- Repositorio Hugging Face: https://huggingface.co/addlabsviral/minimax-h3-fp8
 - Modelo upstream: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Licencia: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE
 - Variante combinada (origen del LoRA turbo): https://huggingface.co/addlabsviral/minimax-h3-combined

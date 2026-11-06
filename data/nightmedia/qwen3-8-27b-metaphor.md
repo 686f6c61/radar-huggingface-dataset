@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-Metaphor es un modelo experimental de 27 mil millones de parámetros creado por el usuario nightmedia en HuggingFace. Se trata de un merge (fusión de pesos mediante mergekit) que combina múltiples modelos derivados de la familia Qwen3.8 de 27B, entre ellos variantes como Qwen3.6-27B-Seven, Qwen3.8-27B-Brainwaves, Qwen3.8-27B-MindMeld, OneJev1.6-27B, TerminalHorizon-27B y Tev-27B, entre otros. El modelo se posiciona principalmente para escritura creativa, narrativa de ficción y roleplaying, con etiquetas adicionales de razonamiento, matemáticas y código.
+Qwen3.8-27B-Metaphor es un modelo experimental de 27 mil millones de parámetros creado por el usuario nightmedia en Hugging Face. Se trata de un merge (fusión de pesos mediante mergekit) que combina múltiples modelos derivados de la familia Qwen3.8 de 27B, entre ellos variantes como Qwen3.6-27B-Seven, Qwen3.8-27B-Brainwaves, Qwen3.8-27B-MindMeld, OneJev1.6-27B, TerminalHorizon-27B y Tev-27B, entre otros. El modelo se posiciona principalmente para escritura creativa, narrativa de ficción y roleplaying, con etiquetas adicionales de razonamiento, matemáticas y código.
 
 El modelo hereda capacidades multimodales de tipo image-text-to-text (acepta imagen y texto como entrada), y según sus etiquetas soporta contextos largos de hasta 1M de tokens, aunque estas cifras provienen de las etiquetas del repositorio y no están documentadas con detalle en la información disponible. Su licencia Apache 2.0 permite uso comercial sin restricciones relevantes.
 
@@ -76,7 +76,7 @@ Nota: la comparativa usa modelos de referencia de tamano similar; los componente
 
 - Modelo experimental: al ser un merge comunitario sin documentacion tecnica ni benchmarks publicados, su comportamiento en produccion es impredecible y no esta validado.
 - Incluye entre sus componentes un modelo abliterated (etemiz/Ostrich-27B-261028-Qwen3.8-Abliterated), lo que implica que los filtros de seguridad han sido eliminados parcial o totalmente; esto conlleva riesgo elevado de generacion de contenido nocivo y debe evaluarse antes de cualquier despliegue.
-- Acceso restringido (gated): hay que aceptar condiciones en HuggingFace antes de descargar.
+- Acceso restringido (gated): hay que aceptar condiciones en Hugging Face antes de descargar.
 - Riesgo de alucinacion: no disponible como medicion, pero propio de cualquier LLM y agravado por la falta de validacion.
 - La ventana de contexto de 1M y 256k proviene solo de etiquetas; no hay confirmacion de que el modelo funcione correctamente a esas longitudes.
 - Sesgos conocidos: no disponibles; los merges de multiples modelos pueden heredar y combinar sesgos de todos sus componentes.

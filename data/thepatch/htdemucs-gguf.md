@@ -109,7 +109,7 @@ Frente a alternativas de terceros del mismo nicho (Spleeter de Deezer, Open-Unmi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thepatch/htdemucs-GGUF
+- Modelo en Hugging Face: https://huggingface.co/thepatch/htdemucs-GGUF
 - Proyecto stems.cpp: https://github.com/betweentwomidnights/stems.cpp
 - Repositorio upstream de Demucs: https://github.com/facebookresearch/demucs
 - Paper de referencia citado por el autor: *Hybrid Transformers for Music Source Separation* (Rouard, Massa, Défossez, ICASSP 2023); enlace no disponible en la información proporcionada.

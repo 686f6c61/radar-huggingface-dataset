@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Surya OCR 2 — Bengali word-crop full-train es un ajuste fino del modelo multimodal `datalab-to/surya-ocr-2` (665,7 millones de parametros, clase `Qwen3_5ForConditionalGeneration`) especializado en reconocimiento optico de caracteres (OCR) de palabras y recortes de texto bengali impreso. Lo publica el usuario de HuggingFace `mobashirrahman` como checkpoint autonomo en fp16, con los pesos LoRA ya fusionados, de modo que se carga directamente con `transformers` mediante `AutoModelForImageTextToText` sin necesidad de codigo de adaptadores.
+Surya OCR 2 — Bengali word-crop full-train es un ajuste fino del modelo multimodal `datalab-to/surya-ocr-2` (665,7 millones de parametros, clase `Qwen3_5ForConditionalGeneration`) especializado en reconocimiento optico de caracteres (OCR) de palabras y recortes de texto bengali impreso. Lo publica el usuario de Hugging Face `mobashirrahman` como checkpoint autonomo en fp16, con los pesos LoRA ya fusionados, de modo que se carga directamente con `transformers` mediante `AutoModelForImageTextToText` sin necesidad de codigo de adaptadores.
 
 El problema que aborda es concreto: el modelo base comete errores sustanciales al transcribir recortes de palabra en bengali (10,03 % CER en el split de test de Mozhi-Bengali), y este ajuste reduce esa tasa hasta el 0,89 % CER (1,95 % WER) sobre 9.233 recortes de test, con una tasa de error catastrofico (CER > 1,0) de 1 caso frente a 200 del modelo sin ajustar. Para referencia, el motor bbOCR, el mejor alternativo en ese mismo benchmark segun el autor, obtiene 1,28 % CER.
 
@@ -77,8 +77,8 @@ Advertencias metodologicas declaradas por el propio autor: las cifras absolutas 
 
 | Modelo | Parametros | Contexto | CER en Mozhi-Bengali test | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mobashirrahman/surya-ocr-2-bn-fulltrain | 665,7 M (665.701.440) | no disponible | 0,89 % (WER 1,95 %) | OpenRAIL | HuggingFace, safetensors fp16 |
-| datalab-to/surya-ocr-2 (base, zero-shot) | no disponible (mismo orden de magnitud, segun el autor 665,7 M para la clase `Qwen3_5ForConditionalGeneration`) | no disponible | 10,03 % | OpenRAIL | HuggingFace |
+| mobashirrahman/surya-ocr-2-bn-fulltrain | 665,7 M (665.701.440) | no disponible | 0,89 % (WER 1,95 %) | OpenRAIL | Hugging Face, safetensors fp16 |
+| datalab-to/surya-ocr-2 (base, zero-shot) | no disponible (mismo orden de magnitud, segun el autor 665,7 M para la clase `Qwen3_5ForConditionalGeneration`) | no disponible | 10,03 % | OpenRAIL | Hugging Face |
 | bbOCR | no disponible | no disponible | 1,28 % | no disponible | motor externo citado por el autor, sin enlace en la informacion proporcionada |
 
 La comparacion esta limitada por la ausencia de datos publicos de parametros, contexto y licencia para bbOCR, y por la advertencia del autor sobre diferencias de backend entre mediciones. No se dispone de otras alternativas comparables en la informacion proporcionada.
@@ -98,7 +98,7 @@ La comparacion esta limitada por la ausencia de datos publicos de parametros, co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mobashirrahman/surya-ocr-2-bn-fulltrain
+- Modelo en Hugging Face: https://huggingface.co/mobashirrahman/surya-ocr-2-bn-fulltrain
 - Modelo base: https://huggingface.co/datalab-to/surya-ocr-2
 - Documentacion metodologica citada por el autor: `docs/en/SURYA2_BANGLA_FINETUNE.md` en el proyecto pdf-craft (ruta indicada en la model card; no se proporciona URL)
 - Conjunto de datos de entrenamiento: Mozhi-Bengali, IIIT Hyderabad / NLTM, licencia CC BY 4.0 (no se proporciona URL en la informacion disponible)

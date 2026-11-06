@@ -72,15 +72,15 @@ La model card no incluye cifras de MMLU, HumanEval, GSM8K ni de ninguna otra eva
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| StillDeadcode/qwen3.6-35b-a3b-fp8 | 35B totales / ~3B activos | 262.144 entrenados, 200.000 probados | `.rad` (radiance) | Apache 2.0 | HuggingFace, 0 descargas y 0 valoraciones |
-| Qwen/Qwen3.6-35B-A3B-FP8 (modelo base) | 35B totales / ~3B activos | no disponible en la informacion proporcionada | Checkpoint FP8 original | Apache 2.0 | HuggingFace |
+| StillDeadcode/qwen3.6-35b-a3b-fp8 | 35B totales / ~3B activos | 262.144 entrenados, 200.000 probados | `.rad` (radiance) | Apache 2.0 | Hugging Face, 0 descargas y 0 valoraciones |
+| Qwen/Qwen3.6-35B-A3B-FP8 (modelo base) | 35B totales / ~3B activos | no disponible en la informacion proporcionada | Checkpoint FP8 original | Apache 2.0 | Hugging Face |
 | Alternativas equivalentes de otros fabricantes | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No hay datos de rendimiento publicados que permitan comparar este contenedor con alternativas de la misma categoria. La unica diferencia documentada frente al modelo base es el formato de empaquetado, la integracion de la cabeza MTP y la torre de vision en un solo archivo, y el motor de ejecucion soportado.
 
 ## Limitaciones y advertencias
 
-- No es un modelo oficial de Qwen: se trata de una conversion de terceros (StillDeadcode) del checkpoint FP8, sin validacion independiente ni descargas registradas en HuggingFace.
+- No es un modelo oficial de Qwen: se trata de una conversion de terceros (StillDeadcode) del checkpoint FP8, sin validacion independiente ni descargas registradas en Hugging Face.
 - El formato `.rad` solo es utilizable con el motor radiance sobre ROCm y arquitecturas RDNA4; no se puede cargar con vLLM, llama.cpp, Ollama, TGI ni transformers en su estado publicado.
 - No se han publicado benchmarks, por lo que no hay evidencia publica sobre calidad, tasa de alucinacion o degradacion tras la conversion a FP8.
 - El contexto probado (200.000 tokens) es inferior al contexto entrenado declarado (262.144 tokens); superar los 200.000 no esta validado por el autor.
@@ -92,7 +92,7 @@ No hay datos de rendimiento publicados que permitan comparar este contenedor con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StillDeadcode/qwen3.6-35b-a3b-fp8
+- Modelo en Hugging Face: https://huggingface.co/StillDeadcode/qwen3.6-35b-a3b-fp8
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B-FP8
 - Repositorio del motor radiance: no disponible como URL en la informacion proporcionada (la model card solo menciona el commit 93bbe22)
 - Papers, blogs y demos adicionales: no disponible; los resultados de la busqueda web no contenian enlaces tecnicos relevantes sobre este modelo

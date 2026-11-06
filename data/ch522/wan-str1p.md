@@ -2,7 +2,7 @@
 
 ## Resumen
 
-WAN-Str1p es un adaptador LoRA (Low-Rank Adaptation) para generación de imágenes a partir de texto, publicado por el usuario CH522 en HuggingFace. El modelo está diseñado para funcionar sobre el modelo base `rzgar/Wan2.2-Bernini-R-Motion-Enhancer-n4w-i2v`, que pertenece a la familia Wan 2.2 de Alibaba, conocida por sus capacidades de generación de vídeo e imagen. Aunque el pipeline declarado es text-to-image, el modelo base original está orientado a image-to-video con mejora de movimiento, lo que sugiere que este LoRA podría aplicarse también a tareas de vídeo o imagen con características específicas.
+WAN-Str1p es un adaptador LoRA (Low-Rank Adaptation) para generación de imágenes a partir de texto, publicado por el usuario CH522 en Hugging Face. El modelo está diseñado para funcionar sobre el modelo base `rzgar/Wan2.2-Bernini-R-Motion-Enhancer-n4w-i2v`, que pertenece a la familia Wan 2.2 de Alibaba, conocida por sus capacidades de generación de vídeo e imagen. Aunque el pipeline declarado es text-to-image, el modelo base original está orientado a image-to-video con mejora de movimiento, lo que sugiere que este LoRA podría aplicarse también a tareas de vídeo o imagen con características específicas.
 
 El repositorio tiene un tamaño de 0,3 GB, lo que es típico para un adaptador LoRA, y se distribuye bajo licencia Apache 2.0, permitiendo uso comercial y modificación. La información disponible es muy limitada: no se especifican parámetros, arquitectura interna, ni detalles de entrenamiento. La model card es extremadamente escueta y no incluye ejemplos de uso ni descripción del estilo o efecto que produce. A pesar de su reciente creación (agosto de 2026), no cuenta con descargas ni valoraciones, lo que indica que es un modelo recién subido y sin comunidad activa.
 
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para realizar una comparativa fiable. No se conocen otros LoRAs del mismo autor con características comparables, ni se dispone de datos de rendimiento de este LoRA frente a alternativas. Se podría mencionar que existen otros LoRAs para Wan 2.1/2.2 en HuggingFace (como el de `kayte0342/wan2.1_lora` que contiene un archivo `str1p_v1.safetensors`), pero no se puede establecer una comparación técnica sin más datos.
+No se dispone de información suficiente para realizar una comparativa fiable. No se conocen otros LoRAs del mismo autor con características comparables, ni se dispone de datos de rendimiento de este LoRA frente a alternativas. Se podría mencionar que existen otros LoRAs para Wan 2.1/2.2 en Hugging Face (como el de `kayte0342/wan2.1_lora` que contiene un archivo `str1p_v1.safetensors`), pero no se puede establecer una comparación técnica sin más datos.
 
 ## Limitaciones y advertencias
 
@@ -71,7 +71,7 @@ No se dispone de información suficiente para realizar una comparativa fiable. N
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CH522/WAN-Str1p
+- Modelo en Hugging Face: https://huggingface.co/CH522/WAN-Str1p
 - Modelo base referenciado: https://huggingface.co/rzgar/Wan2.2-Bernini-R-Motion-Enhancer-n4w-i2v
 - Repositorio similar con archivo `str1p_v1.safetensors` (no es el mismo modelo): https://huggingface.co/kayte0342/wan2.1_lora/blob/main/str1p_v1.safetensors
 - Herramienta Wan2GP para generación de vídeo con Wan 2.1/2.2 (referencia del ecosistema): https://github.com/deepbeepmeep/Wan2GP

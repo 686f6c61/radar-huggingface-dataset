@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Echo2Equation-MathT5 | 222.989.568 | no disponible | Fine-tune sobre MathT5-base | no disponible | HuggingFace |
-| MathT5-base | 222.989.568 | no disponible | T5-base + 15K derivaciones sintéticas | no disponible | HuggingFace |
-| MathT5-large | 737.668.096 | no disponible | FLAN-T5-large + 15K derivaciones sintéticas | no disponible | HuggingFace |
+| Echo2Equation-MathT5 | 222.989.568 | no disponible | Fine-tune sobre MathT5-base | no disponible | Hugging Face |
+| MathT5-base | 222.989.568 | no disponible | T5-base + 15K derivaciones sintéticas | no disponible | Hugging Face |
+| MathT5-large | 737.668.096 | no disponible | FLAN-T5-large + 15K derivaciones sintéticas | no disponible | Hugging Face |
 
 MathT5-large es una variante más grande del mismo enfoque, con más parámetros y basado en FLAN-T5-large, mientras que Echo2Equation-MathT5 se mantiene en el tamaño base. La comparación directa de rendimiento no es posible por falta de benchmarks publicados.
 
@@ -74,7 +74,7 @@ MathT5-large es una variante más grande del mismo enfoque, con más parámetros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shreyadhondi/Echo2Equation-MathT5
+- Modelo en Hugging Face: https://huggingface.co/Shreyadhondi/Echo2Equation-MathT5
 - Repositorio de GitHub del proyecto: https://github.com/Shreyadhondi/Echo2Equation
 - Modelo base MathT5-base: https://huggingface.co/jmeadows17/MathT5-base
 - Modelo MathT5-large: https://huggingface.co/jmeadows17/MathT5-large

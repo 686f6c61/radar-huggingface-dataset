@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `Nishanthax/Audora` es un repositorio alojado en HuggingFace con licencia Apache 2.0, creado por el usuario Nishanthax el 1 de septiembre de 2026. En el momento de la consulta, el repositorio no contiene ninguna model card sustancial (únicamente declara la licencia), no presenta descargas ni valoraciones, y no se especifican el pipeline, los idiomas soportados ni ninguna otra característica técnica. No existe información pública que permita identificar la arquitectura, el tamaño, el dominio de aplicación o el propósito de este modelo.
+El modelo `Nishanthax/Audora` es un repositorio alojado en Hugging Face con licencia Apache 2.0, creado por el usuario Nishanthax el 1 de septiembre de 2026. En el momento de la consulta, el repositorio no contiene ninguna model card sustancial (únicamente declara la licencia), no presenta descargas ni valoraciones, y no se especifican el pipeline, los idiomas soportados ni ninguna otra característica técnica. No existe información pública que permita identificar la arquitectura, el tamaño, el dominio de aplicación o el propósito de este modelo.
 
-Las búsquedas web realizadas no arrojan resultados concluyentes que vinculen de forma inequívoca este repositorio con productos o proyectos de IA conocidos. Se han encontrado referencias a "Audora Tech" (una supuesta plataforma de IA gratuita), a "Audora" como generador de iconos 3D isométricos, y a "Aurora Model" de Creatify (un modelo de avatares), pero ninguna de ellas coincide con los datos del repositorio de HuggingFace. Por tanto, no es posible determinar si se trata de un modelo de lenguaje, de visión, multimodal o de otro tipo.
+Las búsquedas web realizadas no arrojan resultados concluyentes que vinculen de forma inequívoca este repositorio con productos o proyectos de IA conocidos. Se han encontrado referencias a "Audora Tech" (una supuesta plataforma de IA gratuita), a "Audora" como generador de iconos 3D isométricos, y a "Aurora Model" de Creatify (un modelo de avatares), pero ninguna de ellas coincide con los datos del repositorio de Hugging Face. Por tanto, no es posible determinar si se trata de un modelo de lenguaje, de visión, multimodal o de otro tipo.
 
 Dada la ausencia total de documentación y de datos técnicos, esta ficha se limita a reflejar la información disponible y a advertir de que el modelo no puede ser evaluado ni utilizado de forma fiable en su estado actual.
 
@@ -23,7 +23,7 @@ Dada la ausencia total de documentación y de datos técnicos, esta ficha se lim
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado ninguna información sobre la arquitectura del modelo, los datos de entrenamiento, el número de tokens procesados, el proceso de alineación (RLHF, DPO, etc.) ni ninguna innovación técnica. El repositorio de HuggingFace no contiene model card descriptiva, y las búsquedas web no han encontrado documentación técnica asociada a este identificador concreto. Por tanto, se desconoce por completo el diseño y el proceso de entrenamiento de `Nishanthax/Audora`.
+No se ha publicado ninguna información sobre la arquitectura del modelo, los datos de entrenamiento, el número de tokens procesados, el proceso de alineación (RLHF, DPO, etc.) ni ninguna innovación técnica. El repositorio de Hugging Face no contiene model card descriptiva, y las búsquedas web no han encontrado documentación técnica asociada a este identificador concreto. Por tanto, se desconoce por completo el diseño y el proceso de entrenamiento de `Nishanthax/Audora`.
 
 ## Capacidades
 
@@ -55,7 +55,7 @@ No disponible. Al no conocerse la arquitectura, el tamaño ni el dominio del mod
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Nishanthax/Audora
+- Repositorio en Hugging Face: https://huggingface.co/Nishanthax/Audora
 - Referencia a "Audora Tech" en Medium (no confirmada como relacionada): https://james-mill.medium.com/audora-tech-the-unlimited-ai-revolution-omnipotence-protocol-active-cadcf2e651d7
 - Aplicación "Audora - AI 3D Isometric Icon Generator" (no confirmada como relacionada): https://app.useaudora.com/
 - Documentación sobre "Aurora Model" de Creatify (no confirmada como relacionada): https://creatify.ai/introducing-aurora

@@ -96,8 +96,8 @@ Fiabilidad del juicio de sobrerrechazo declarada como **fiable** para esta celda
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (basis-sharing, keep 0,70) | 7,62B en forma densa, presupuesto efectivo 70 % | no disponible (base: 32.768) | apache-2.0 | WikiText-2 ppl 11,63; ARC-C 0,4531; HellaSwag 0,6786; ASR AdvBench 0,1596 | HuggingFace, 5 descargas, 0 likes |
-| Qwen/Qwen2.5-7B-Instruct (base sin comprimir) | 7,62B | 32.768 nativos, 131.072 con YaRN | apache-2.0 | no disponible en la informacion proporcionada | HuggingFace, ampliamente desplegado |
+| Este checkpoint (basis-sharing, keep 0,70) | 7,62B en forma densa, presupuesto efectivo 70 % | no disponible (base: 32.768) | apache-2.0 | WikiText-2 ppl 11,63; ARC-C 0,4531; HellaSwag 0,6786; ASR AdvBench 0,1596 | Hugging Face, 5 descargas, 0 likes |
+| Qwen/Qwen2.5-7B-Instruct (base sin comprimir) | 7,62B | 32.768 nativos, 131.072 con YaRN | apache-2.0 | no disponible en la informacion proporcionada | Hugging Face, ampliamente desplegado |
 | Otros compresores de la misma familia (`svd-safety-*`) | no disponible | no disponible | presumiblemente apache-2.0 | no disponible | no confirmada en la informacion proporcionada |
 | Alternativas de cuantizacion del modelo base (AWQ/GPTQ/GGUF) | 7,62B con precision reducida | el del modelo base | apache-2.0 | no disponible | habituales en el ecosistema, no publicadas para este checkpoint |
 
@@ -118,11 +118,11 @@ La comparación numérica con el modelo base y con otros compresores no puede es
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/Jeesup/svd-safety-qwen2_5_7b_instruct_up_basis_coeff_finetuned_keep_0p70
+- Hugging Face (modelo): https://huggingface.co/Jeesup/svd-safety-qwen2_5_7b_instruct_up_basis_coeff_finetuned_keep_0p70
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Código de compresión Basis Sharing: https://github.com/TUDa-HWAI/Basis_Sharing (commit `1c021b6ce1d3`)
 - Dataset de recuperación: https://huggingface.co/datasets/yahma/alpaca-cleaned
 - Juez de seguridad (HarmBench): https://huggingface.co/cais/HarmBench-Llama-2-13b-cls
 - Juez de sobrerrechazo: https://huggingface.co/allenai/wildguard
-- Artefactos de evaluación: carpetas `utility/` y `safety/` dentro del repositorio de HuggingFace
+- Artefactos de evaluación: carpetas `utility/` y `safety/` dentro del repositorio de Hugging Face
 - La búsqueda web realizada no ha devuelto ningún enlace relevante sobre este modelo.

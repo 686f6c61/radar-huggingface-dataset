@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Civic-Radio-Tokenizer-Starter es un vocabulario tokenizador de prototipo publicado por el usuario SOTAagi2030 en HuggingFace bajo el identificador SOTAagi2030/Civic-Radio-Tokenizer-Starter. No es un modelo de lenguaje con pesos neuronales entrenados, sino un artefacto de tokenizacion: un conjunto de frases y su metadatos asociados, orientado a un dominio declarado como "civic radio". El repositorio lo etiqueta con las palabras clave transformers, tokenizer, civic-radio y endpoints_compatible, aunque no se especifica con que tokenizador base ni con que arquitectura se integra.
+Civic-Radio-Tokenizer-Starter es un vocabulario tokenizador de prototipo publicado por el usuario SOTAagi2030 en Hugging Face bajo el identificador SOTAagi2030/Civic-Radio-Tokenizer-Starter. No es un modelo de lenguaje con pesos neuronales entrenados, sino un artefacto de tokenizacion: un conjunto de frases y su metadatos asociados, orientado a un dominio declarado como "civic radio". El repositorio lo etiqueta con las palabras clave transformers, tokenizer, civic-radio y endpoints_compatible, aunque no se especifica con que tokenizador base ni con que arquitectura se integra.
 
 Segun la propia model card, la revision del vocabulario se cerro el 31 de agosto de 2026 y cubre dos idiomas de publicacion aprobados y seis frases de tematica publica vigentes. De esas seis frases, cinco cumplen la longitud maxima de cuatro tokens, lo que da como resultado un vocabulario sensible a mayusculas y minusculas de 21 entradas. El autor indica explicitamente que se trata de un vocabulario prototipo y no de un sistema operativo de despacho, lo que situa su alcance en la fase de validacion de formato mas que en la de uso en produccion.
 
@@ -58,7 +58,7 @@ Tampoco se documentan datos de entrenamiento, numero de tokens procesados, compo
 - Prueba de integracion con la libreria transformers: al declarar library_name: transformers, permite verificar que un pipeline de carga de tokenizadores acepta artefactos de vocabulario sin pesos asociados.
 - Verificacion de compatibilidad con endpoints gestionados: la etiqueta endpoints_compatible permite comprobar el comportamiento de plataformas de despliegue que esperan un tokenizador registrado antes de aceptar un servicio.
 - Validacion de reglas de longitud de tokens: el caso de las cinco frases que cumplen el maximo de cuatro tokens puede usarse como conjunto de prueba para validadores que rechacen entradas sobredimensionadas.
-- Control de calidad de publicacion en HuggingFace: el repositorio, con cero descargas y cero likes, resulta un caso de estudio de publicacion temprana para revisar que metadatos obligatorios (licencia, idiomas, formato) faltan antes de difundir un artefacto.
+- Control de calidad de publicacion en Hugging Face: el repositorio, con cero descargas y cero likes, resulta un caso de estudio de publicacion temprana para revisar que metadatos obligatorios (licencia, idiomas, formato) faltan antes de difundir un artefacto.
 - Prototipado de vocabularios de radio civica: en el dominio declarado, un equipo podria partir de estas seis frases para disenar un vocabulario mayor, siempre teniendo en cuenta la advertencia del autor de que no es un sistema operativo de despacho.
 
 ## Benchmarks y rendimiento
@@ -93,7 +93,7 @@ No disponible. No se han identificado en la informacion proporcionada modelos o 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SOTAagi2030/Civic-Radio-Tokenizer-Starter
+- Repositorio en Hugging Face: https://huggingface.co/SOTAagi2030/Civic-Radio-Tokenizer-Starter
 - Model card del autor: incluida en el repositorio anterior
 - Paper, blog o repositorio de codigo adicional: no disponible
 - Demostracion o espacio interactivo: no disponible

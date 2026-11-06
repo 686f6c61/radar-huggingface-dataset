@@ -6,7 +6,7 @@ VehicleNet-Y26s es un modelo de detección de objetos multi-clase especializado 
 
 El modelo se basa en la arquitectura Ultralytics/YOLO26, la iteración más reciente de la familia YOLO, y se distribuye en formato ONNX, lo que facilita su despliegue en entornos de inferencia eficiente y computación en el borde (edge computing). El sufijo "Y26s" sugiere una variante pequeña (small) de YOLO26, orientada a un equilibrio entre precisión y velocidad de inferencia.
 
-La relevancia de este modelo radica en su enfoque en un dominio específico y desafiante: el tráfico indio, que presenta una mezcla heterogénea de vehículos motorizados y no motorizados, condiciones de densidad extrema y una variabilidad visual considerable. Esto lo convierte en una herramienta valiosa para sistemas de gestión de tráfico, peajes automáticos y análisis de movilidad en regiones con características similares. El repositorio tiene un tamaño de 0.1 GB y el acceso está restringido (gated), requiriendo aceptación de condiciones en HuggingFace.
+La relevancia de este modelo radica en su enfoque en un dominio específico y desafiante: el tráfico indio, que presenta una mezcla heterogénea de vehículos motorizados y no motorizados, condiciones de densidad extrema y una variabilidad visual considerable. Esto lo convierte en una herramienta valiosa para sistemas de gestión de tráfico, peajes automáticos y análisis de movilidad en regiones con características similares. El repositorio tiene un tamaño de 0.1 GB y el acceso está restringido (gated), requiriendo aceptación de condiciones en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -80,13 +80,13 @@ La comparativa se basa en modelos YOLO de tamaño similar de la propia familia U
 - Riesgo de alucinacion: como cualquier modelo de detección de objetos, puede producir falsos positivos (detectar vehículos donde no los hay) o falsos negativos (no detectar vehículos presentes), especialmente en condiciones adversas de iluminacion, oclusiones o angulos inusuales.
 - Cobertura de clases limitada: las 26 clases del dataset UVH-26-MV pueden no cubrir todos los tipos de vehiculos presentes en otras regiones, como camiones articulados, vehiculos agricolas o vehiculos electricos de nueva generacion.
 - Licencia AGPL-3.0: esta licencia copyleft tiene implicaciones para uso comercial. Si el modelo se integra en un servicio ofrecido a traves de una red, el codigo fuente del servicio debe ser liberado bajo AGPL-3.0. Esto puede ser un obstaculo para empresas que no quieran abrir su codigo.
-- Acceso restringido: el modelo requiere aceptar condiciones en HuggingFace, lo que anade una barrera de acceso y puede limitar su uso en entornos corporativos con politicas de descarga automatizada.
+- Acceso restringido: el modelo requiere aceptar condiciones en Hugging Face, lo que anade una barrera de acceso y puede limitar su uso en entornos corporativos con politicas de descarga automatizada.
 - Idioma: el modelo solo soporta ingles en su documentacion, lo que puede ser una limitacion para equipos que trabajen en otros idiomas.
 - Sin garantias de rendimiento: al no publicarse benchmarks, no hay evidencia cuantitativa del rendimiento del modelo en su dataset objetivo ni en otros escenarios. Se recomienda realizar una evaluacion propia antes de su uso en produccion.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Perception365/VehicleNet-Y26s
+- Repositorio Hugging Face: https://huggingface.co/Perception365/VehicleNet-Y26s
 - Dataset UVH-26-MV: https://huggingface.co/datasets/iisc-aim/UVH-26
 - Modelo base Ultralytics/YOLO26: https://huggingface.co/Ultralytics/YOLO26
 - Paper de referencia de VehicleNet (re-identification, no deteccion): https://arxiv.org/abs/2004.06305

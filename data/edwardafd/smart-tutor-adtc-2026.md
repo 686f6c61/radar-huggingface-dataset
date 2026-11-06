@@ -89,7 +89,7 @@ Nota: no hay datos de benchmarks comparativos entre estos modelos en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/edwardafd/smart-tutor-adtc-2026
+- Modelo en Hugging Face: https://huggingface.co/edwardafd/smart-tutor-adtc-2026
 - Repositorio de código y documentación: https://github.com/afdroiddev-oss/smart-tutor-adtc-2026
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Math-1.5B-Instruct
 - Página del Africa Deep Tech Challenge 2026: https://africadeeptech.org/challenge-2026/

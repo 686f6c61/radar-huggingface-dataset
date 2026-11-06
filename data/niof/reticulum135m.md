@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Reticulum135M es un modelo de lenguaje publicado en HuggingFace por el usuario Niof bajo el identificador `Niof/Reticulum135M`. Se trata de un repositorio con pipeline declarado `text-generation` y etiquetado genéricamente como `llm`, sin model card sustantiva: el README se limita al título «Reticulum 135M» y a metadatos YAML con el tag `llm`. No se documentan arquitectura, datos de entrenamiento, licencia ni idiomas soportados.
+Reticulum135M es un modelo de lenguaje publicado en Hugging Face por el usuario Niof bajo el identificador `Niof/Reticulum135M`. Se trata de un repositorio con pipeline declarado `text-generation` y etiquetado genéricamente como `llm`, sin model card sustantiva: el README se limita al título «Reticulum 135M» y a metadatos YAML con el tag `llm`. No se documentan arquitectura, datos de entrenamiento, licencia ni idiomas soportados.
 
 La denominación del repositorio sugiere un modelo de aproximadamente 135 millones de parámetros, lo que lo situaría en la categoría de modelos pequeños aptos para inferencia en CPU o GPU de consumo. El tamaño del repositorio (0,1 GB) es coherente con esa horquilla en precisión de 16 bits, aunque esta correspondencia no está confirmada por el autor y debe tratarse como una inferencia, no como un dato verificado.
 
@@ -67,10 +67,10 @@ Los datos de las alternativas provienen de sus model cards publicas y deben reva
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Reticulum135M | ~135M (sin confirmar) | no disponible | no disponible | HuggingFace, sin documentacion |
-| SmolLM2-135M | 135M | 8192 tokens | Apache-2.0 | HuggingFace, model card completa |
-| Qwen2.5-0.5B | 494M | 32768 tokens | Apache-2.0 | HuggingFace, model card completa |
-| GPT-2 (124M) | 124M | 1024 tokens | MIT | HuggingFace, referencia historica |
+| Reticulum135M | ~135M (sin confirmar) | no disponible | no disponible | Hugging Face, sin documentacion |
+| SmolLM2-135M | 135M | 8192 tokens | Apache-2.0 | Hugging Face, model card completa |
+| Qwen2.5-0.5B | 494M | 32768 tokens | Apache-2.0 | Hugging Face, model card completa |
+| GPT-2 (124M) | 124M | 1024 tokens | MIT | Hugging Face, referencia historica |
 
 La diferencia practica frente a las alternativas no es de rendimiento —no hay datos para compararlo— sino de trazabilidad: los tres modelos de contraste documentan arquitectura, datos de entrenamiento, licencia y evaluaciones, mientras que Reticulum135M no ofrece ninguno de esos elementos.
 
@@ -86,5 +86,5 @@ La diferencia practica frente a las alternativas no es de rendimiento —no hay 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Niof/Reticulum135M
+- Hugging Face: https://huggingface.co/Niof/Reticulum135M
 - Paper, blog tecnico, repositorio de codigo o demo: no disponibles en la informacion proporcionada.

@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks detallados (MMLU, HumanEval, GSM8K,
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Qwythos-9B-Claude-Mythos (original) | 9B | 1M | Apache 2.0 | HuggingFace | Modelo base sin abliteracion, con filtros de seguridad |
-| Qwen3.5-9B (base) | 9B | 1M | Apache 2.0 | HuggingFace | Modelo original sin destilacion, menor rendimiento en razonamiento |
-| Llama-3.1-8B-Instruct | 8B | 128K | Llama 3.1 Community License | HuggingFace | Alternativa de 8B con contexto menor y sin tool calling nativo |
-| Qwen2.5-7B-Instruct | 7B | 128K | Apache 2.0 | HuggingFace | Menor tamano y contexto, sin destilacion de Claude |
+| Qwythos-9B-Claude-Mythos (original) | 9B | 1M | Apache 2.0 | Hugging Face | Modelo base sin abliteracion, con filtros de seguridad |
+| Qwen3.5-9B (base) | 9B | 1M | Apache 2.0 | Hugging Face | Modelo original sin destilacion, menor rendimiento en razonamiento |
+| Llama-3.1-8B-Instruct | 8B | 128K | Llama 3.1 Community License | Hugging Face | Alternativa de 8B con contexto menor y sin tool calling nativo |
+| Qwen2.5-7B-Instruct | 7B | 128K | Apache 2.0 | Hugging Face | Menor tamano y contexto, sin destilacion de Claude |
 
 Nota: los datos de rendimiento comparativo no estan disponibles para esta version cuantizada. La comparativa se basa en caracteristicas tecnicas publicas.
 
@@ -80,7 +80,7 @@ Nota: los datos de rendimiento comparativo no estan disponibles para esta versio
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantizacion GGUF): https://huggingface.co/mradermacher/Qwythos-9B-Claude-Mythos-Uncensored-Abliterated-1M-i1-GGUF
+- Repositorio Hugging Face (cuantizacion GGUF): https://huggingface.co/mradermacher/Qwythos-9B-Claude-Mythos-Uncensored-Abliterated-1M-i1-GGUF
 - Modelo base (Securelayer7): https://huggingface.co/Securelayer7/Qwythos-9B-Claude-Mythos-Uncensored-Abliterated-1M
 - Cuantizacion estatica (mradermacher): https://huggingface.co/mradermacher/Qwythos-9B-Claude-Mythos-Uncensored-Abliterated-1M-GGUF
 - Publicacion de Empero sobre Qwythos-9B: https://empero.org/writing/qwythos-9b-release

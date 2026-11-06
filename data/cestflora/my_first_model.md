@@ -2,7 +2,7 @@
 
 ## Resumen
 
-my_first_model es un modelo de clasificación de texto obtenido mediante fine-tuning de distilbert-base-uncased, publicado por el usuario cestflora en HuggingFace. Se trata de un modelo derivado de DistilBERT, la variante destilada de BERT desarrollada por Hugging Face que reduce el tamaño del modelo original aproximadamente un 40 % manteniendo en torno al 97 % de su rendimiento en tareas de comprensión del lenguaje. Con 66.955.010 parámetros y un repositorio de 0,3 GB, es un modelo compacto orientado a inferencia eficiente en CPU y GPU de gama baja.
+my_first_model es un modelo de clasificación de texto obtenido mediante fine-tuning de distilbert-base-uncased, publicado por el usuario cestflora en Hugging Face. Se trata de un modelo derivado de DistilBERT, la variante destilada de BERT desarrollada por Hugging Face que reduce el tamaño del modelo original aproximadamente un 40 % manteniendo en torno al 97 % de su rendimiento en tareas de comprensión del lenguaje. Con 66.955.010 parámetros y un repositorio de 0,3 GB, es un modelo compacto orientado a inferencia eficiente en CPU y GPU de gama baja.
 
 El modelo resuelve una tarea de clasificación de texto genérica, aunque la model card no especifica el dataset de entrenamiento ni las etiquetas concretas del clasificador. El autor declara una accuracy de 0,9318 y una pérdida de validación de 0,2330 sobre el conjunto de evaluación, resultados obtenidos tras dos épocas de entrenamiento con un learning rate de 2e-05. La relevancia de esta ficha es limitada: se trata de un experimento de fine-tuning publicado con la plantilla automática de Trainer, sin documentación adicional sobre usos previstos, datos o limitaciones.
 
@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cestflora/my_first_model | 66,9 M | 512 | Clasificación de texto (fine-tune) | Apache 2.0 | HuggingFace, 19 descargas |
-| distilbert-base-uncased | 66,9 M | 512 | Modelo base (MLM) | Apache 2.0 | HuggingFace, ampliamente usado |
-| bert-base-uncased | 110 M | 512 | Modelo base (MLM) | Apache 2.0 | HuggingFace, ampliamente usado |
-| roberta-base | 125 M | 514 | Modelo base (MLM) | MIT | HuggingFace, ampliamente usado |
+| cestflora/my_first_model | 66,9 M | 512 | Clasificación de texto (fine-tune) | Apache 2.0 | Hugging Face, 19 descargas |
+| distilbert-base-uncased | 66,9 M | 512 | Modelo base (MLM) | Apache 2.0 | Hugging Face, ampliamente usado |
+| bert-base-uncased | 110 M | 512 | Modelo base (MLM) | Apache 2.0 | Hugging Face, ampliamente usado |
+| roberta-base | 125 M | 514 | Modelo base (MLM) | MIT | Hugging Face, ampliamente usado |
 
 Frente a distilbert-base-uncased, este modelo añade una cabeza de clasificación entrenada, pero carece de la documentación y validación externa del modelo base. Frente a bert-base-uncased y roberta-base, ofrece menor capacidad representacional pero mayor velocidad de inferencia y menor huella de memoria. No se dispone de comparaciones de rendimiento en benchmarks estándar para este fine-tune concreto.
 
@@ -93,7 +93,7 @@ Frente a distilbert-base-uncased, este modelo añade una cabeza de clasificació
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cestflora/my_first_model
+- Modelo en Hugging Face: https://huggingface.co/cestflora/my_first_model
 - Modelo base DistilBERT: https://huggingface.co/distilbert/distilbert-base-uncased
 - Paper de DistilBERT (Sanh et al., 2019): https://arxiv.org/abs/1910.01108
 - Documentación de Transformers para clasificación de texto: https://huggingface.co/docs/transformers/tasks/sequence_classification

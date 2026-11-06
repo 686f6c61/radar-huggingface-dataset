@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VoxCPM-0.5B es un sistema de síntesis de voz (text-to-speech) desarrollado por ModelBest (OpenBMB) y distribuido en HuggingFace bajo el identificador ArchiveStudio/VoxCPM-0.5B. Se trata de un modelo de TTS "tokenizer-free": en lugar de convertir el audio a tokens discretos como hacen los enfoques dominantes, modela el habla en espacio continuo mediante una arquitectura autorregresiva de difusión de extremo a extremo. Está construido sobre el backbone de lenguaje MiniCPM4-0.5B, lo que le aporta comprensión textual y permite generar prosodia contextual adaptada al contenido.
+VoxCPM-0.5B es un sistema de síntesis de voz (text-to-speech) desarrollado por ModelBest (OpenBMB) y distribuido en Hugging Face bajo el identificador ArchiveStudio/VoxCPM-0.5B. Se trata de un modelo de TTS "tokenizer-free": en lugar de convertir el audio a tokens discretos como hacen los enfoques dominantes, modela el habla en espacio continuo mediante una arquitectura autorregresiva de difusión de extremo a extremo. Está construido sobre el backbone de lenguaje MiniCPM4-0.5B, lo que le aporta comprensión textual y permite generar prosodia contextual adaptada al contenido.
 
 El modelo destaca por dos capacidades principales: generación de habla expresiva y consciente del contexto, y clonación de voz zero-shot a partir de un clip corto de referencia, capturando no solo el timbre sino también acento, tono emocional y ritmo. Está entrenado sobre un corpus bilingüe (inglés y chino) de aproximadamente 1,8 millones de horas de audio, y soporta síntesis en streaming con un factor de tiempo real (RTF) de hasta 0,17 en una RTX 4090.
 
@@ -78,8 +78,8 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- HuggingFace (ArchiveStudio): https://huggingface.co/ArchiveStudio/VoxCPM-0.5B
-- HuggingFace (OpenBMB): https://huggingface.co/openbmb/VoxCPM-0.5B
+- Hugging Face (ArchiveStudio): https://huggingface.co/ArchiveStudio/VoxCPM-0.5B
+- Hugging Face (OpenBMB): https://huggingface.co/openbmb/VoxCPM-0.5B
 - Repositorio GitHub: https://github.com/OpenBMB/VoxCPM/
 - Documentación MiniCPM Wiki: https://modelbest.feishu.cn/wiki/UtWxwcERfiRIpIkBOjuc3h9tn1D
 - Demo en vivo: https://huggingface.co/spaces/OpenBMB/VoxCPM-Demo

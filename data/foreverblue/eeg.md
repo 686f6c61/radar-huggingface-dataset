@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EEG C1 es un codificador transformer preentrenado para senales electroencefalograficas (EEG), desarrollado por el usuario ForeverBlue y publicado en HuggingFace bajo licencia Apache 2.0. No es un modelo de lenguaje: es un modelo de representacion de biosenales que se entrena de forma auto-supervisada mediante un autoencoder enmascarado con doble reconstruccion (espectral y de forma de onda cruda). Su proposito es servir como base preentrenada que se pueda afinar para tareas downstream de EEG como clasificacion de estados, deteccion de artefactos o decodificacion de potenciales evocados.
+EEG C1 es un codificador transformer preentrenado para senales electroencefalograficas (EEG), desarrollado por el usuario ForeverBlue y publicado en Hugging Face bajo licencia Apache 2.0. No es un modelo de lenguaje: es un modelo de representacion de biosenales que se entrena de forma auto-supervisada mediante un autoencoder enmascarado con doble reconstruccion (espectral y de forma de onda cruda). Su proposito es servir como base preentrenada que se pueda afinar para tareas downstream de EEG como clasificacion de estados, deteccion de artefactos o decodificacion de potenciales evocados.
 
 El modelo tiene 30,3 millones de parametros, de los cuales 25,22 M (83,2%) corresponden a un transformer compartido. La innovacion principal es que una unica red troncal sirve a cuatro montajes de electrodos distintos (128 canales a 512 Hz, 64 a 256 Hz, 32 a 512 Hz y 19 a 256 Hz) mediante frontends wavelet especificos de cada ruta y una embedding de identidad de canal basada en el nombre del electrodo, no en su indice. Esto permite reutilizar el conocimiento entre configuraciones de hardware heterogeneas.
 
@@ -91,7 +91,7 @@ No se dispone en la informacion proporcionada de datos sobre modelos comparables
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| EEG C1 | 30,3 M | no disponible | Apache 2.0 | HuggingFace (ForeverBlue/EEG) |
+| EEG C1 | 30,3 M | no disponible | Apache 2.0 | Hugging Face (ForeverBlue/EEG) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -108,7 +108,7 @@ No se dispone en la informacion proporcionada de datos sobre modelos comparables
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ForeverBlue/EEG
+- Modelo en Hugging Face: https://huggingface.co/ForeverBlue/EEG
 - Repositorio de codigo fuente: no disponible en la informacion proporcionada (la model card menciona `downstream.py` y `scripts/export_eeg_pretrained_encoder.py`, pero no se indica la URL del repositorio)
 - Paper o publicacion tecnica: no disponible
 - Blog o demo: no disponible

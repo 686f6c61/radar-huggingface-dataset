@@ -68,7 +68,7 @@ La comparativa se basa en características generales; no se dispone de datos de 
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo es gated en HuggingFace, requiere aceptar condiciones antes de su descarga.
+- Acceso restringido: el modelo es gated en Hugging Face, requiere aceptar condiciones antes de su descarga.
 - Modelo experimental: las etiquetas indican "experimental" y "research", por lo que no se garantiza estabilidad ni soporte a largo plazo.
 - Sin benchmarks publicados: no hay evidencia objetiva de su rendimiento frente a otros modelos.
 - Posibles sesgos y alucinaciones: al ser un merge de varios modelos, puede heredar sesgos de sus fuentes y generar contenido inexacto, especialmente en dominios especializados.
@@ -77,7 +77,7 @@ La comparativa se basa en características generales; no se dispone de datos de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nightmedia/Qwen3.5-9B-Continuum-mxfp8-mlx
+- Hugging Face: https://huggingface.co/nightmedia/Qwen3.5-9B-Continuum-mxfp8-mlx
 - Modelo relacionado (Brainwaves): https://huggingface.co/nightmedia/Qwen3.5-9B-Brainwaves
 - Modelo relacionado (Brainwaves qx86): https://huggingface.co/nightmedia/Qwen3.5-9B-Brainwaves-qx86-hi-mlx
 - Página de Qwen3.5-9B en Continuum Code: https://continuumcode.ai/models/qwen/qwen3.5-9b/

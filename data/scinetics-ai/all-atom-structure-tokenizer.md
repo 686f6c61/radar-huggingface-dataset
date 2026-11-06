@@ -80,5 +80,5 @@ No disponible. La información proporcionada no incluye otros tokenizadores estr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Scinetics-ai/all-atom-structure-tokenizer
+- Hugging Face: https://huggingface.co/Scinetics-ai/all-atom-structure-tokenizer
 - Informe técnico referenciado: *AtomLM-9b for Biomolecular Structure Prediction* (Scinetics), citado en la model card; no se proporciona URL directa en la información disponible.

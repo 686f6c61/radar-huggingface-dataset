@@ -103,7 +103,7 @@ No se dispone de información sobre otros modelos comparables de triaje médico 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/matheus-ciro-tcc/qwen3.5-0.8b-triagem-medica-gguf
+- Repositorio Hugging Face: https://huggingface.co/matheus-ciro-tcc/qwen3.5-0.8b-triagem-medica-gguf
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio del modelo con dataset completo: https://huggingface.co/matheus-ciro-tcc/qwen3.5-0.8b-triagem-medica-ptbr
 - Repositorio del modelo piloto: https://huggingface.co/matheus-ciro-tcc/qwen35-0.8b-triagem-medica-piloto

@@ -11,7 +11,7 @@ La cuantización mixta reduce el peso efectivo a ~20 GB (5,8 bits por peso), fre
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Transformer multimodal híbrido (atención completa en 16 capas, atención lineal GDN en 48 capas) con vision tower |
-| Parametros totales | 27B (modelo base); checkpoint safetensors: 9.317.703.408 (dato de HuggingFace) |
+| Parametros totales | 27B (modelo base); checkpoint safetensors: 9.317.703.408 (dato de Hugging Face) |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | 256K tokens |
 | Tipos de cuantizacion | nvfp4 (4 bits, group_size=16) para MLPs y atención; bfloat16 para embeddings, head, MTP y vision tower |
@@ -70,7 +70,7 @@ No se dispone de datos suficientes para una comparativa cuantitativa con alterna
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/airagrp/Qwen3.8-27B-mlx-nvfp4-S
+- Repositorio Hugging Face: https://huggingface.co/airagrp/Qwen3.8-27B-mlx-nvfp4-S
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Guía para ejecutar Qwen3.8 27B localmente: https://locallyuncensored.com/blog/how-to-run-qwen-3-8-27b-locally.html
 - Repositorio oficial de Qwen3.8 (GitHub): https://github.com/QwenLM/Qwen3.8

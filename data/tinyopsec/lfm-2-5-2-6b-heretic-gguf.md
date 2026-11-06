@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tinyopsec/LFM-2.5-2.6B-heretic-GGUF
+- Repositorio Hugging Face: https://huggingface.co/tinyopsec/LFM-2.5-2.6B-heretic-GGUF
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-2.6B
 - Checkpoint de origen de la abliteration: https://huggingface.co/heretic-org/LFM-2.5-2.6B-heretic
 - llama.cpp: https://github.com/ggml-org/llama.cpp

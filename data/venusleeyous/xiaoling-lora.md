@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Xiaoling-lora es un adaptador LoRA de personaje (character LoRA) para el modelo de generación de imagen Krea 2, publicado por el usuario venusleeyous en HuggingFace. Su función es fijar una identidad facial concreta —una mujer joven china llamada "xiaoling"— de forma consistente a través de distintas poses, ángulos, iluminaciones, peinados y vestuarios. El disparador es la palabra `xiaoling`, que debe incluirse en el prompt.
+Xiaoling-lora es un adaptador LoRA de personaje (character LoRA) para el modelo de generación de imagen Krea 2, publicado por el usuario venusleeyous en Hugging Face. Su función es fijar una identidad facial concreta —una mujer joven china llamada "xiaoling"— de forma consistente a través de distintas poses, ángulos, iluminaciones, peinados y vestuarios. El disparador es la palabra `xiaoling`, que debe incluirse en el prompt.
 
 El repositorio no contiene un modelo completo, sino cinco checkpoints de una misma tanda de entrenamiento v2 (pasos 1000, 1100, 1200, 1300 y 1400), junto con el archivo de configuración original (`config.yaml`) y los resultados de una evaluación cualitativa con siete prompts y semillas fijas (`evaluation.json`). El peso total del repositorio es de 0,9 GB y los pesos se distribuyen en archivos `.safetensors` independientes.
 
@@ -108,7 +108,7 @@ La búsqueda web devuelve modelos con el mismo nombre que no guardan relación c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/venusleeyous/xiaoling-lora
+- Modelo en Hugging Face: https://huggingface.co/venusleeyous/xiaoling-lora
 - Configuración de entrenamiento citada en la model card: `config.yaml` (dentro del repositorio)
 - Resultados de evaluación citados en la model card: `evaluation.json` (dentro del repositorio)
 - Checkpoints: `xiaoling_lora_000001000.safetensors`, `xiaoling_lora_000001100.safetensors`, `xiaoling_lora_000001200.safetensors`, `xiaoling_lora_000001300.safetensors`, `xiaoling_lora_000001400.safetensors` (dentro del repositorio)

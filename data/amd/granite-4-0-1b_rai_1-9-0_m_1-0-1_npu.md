@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `amd/granite-4.0-1b_rai_1.9.0_m_1.0.1_npu` es una distribución optimizada para NPU del modelo IBM Granite 4.0 de 1.000 millones de parámetros, publicada por AMD en HuggingFace. Se trata de una conversión a formato ONNX pensada para ejecutarse sobre las unidades de procesamiento neuronal (NPU) de los procesadores AMD Ryzen AI, con el objetivo de habilitar inferencia de texto generativa en local sobre hardware de PC convencional sin depender de GPU dedicadas.
+El modelo `amd/granite-4.0-1b_rai_1.9.0_m_1.0.1_npu` es una distribución optimizada para NPU del modelo IBM Granite 4.0 de 1.000 millones de parámetros, publicada por AMD en Hugging Face. Se trata de una conversión a formato ONNX pensada para ejecutarse sobre las unidades de procesamiento neuronal (NPU) de los procesadores AMD Ryzen AI, con el objetivo de habilitar inferencia de texto generativa en local sobre hardware de PC convencional sin depender de GPU dedicadas.
 
 El modelo base, Granite 4.0 1B, pertenece a la familia Granite 4.0 de IBM, una generación de modelos densos y pequeños orientados a tareas de generación de texto y conversación con un equilibrio entre capacidad y eficiencia. Esta variante concreta no es un modelo nuevo entrenado desde cero, sino un artefacto de despliegue: los pesos originales han sido convertidos y empaquetados para el runtime de Ryzen AI (identificado en el nombre como `rai_1.9.0` y `m_1.0.1_npu`), lo que implica un formato y un conjunto de dependencias específicas para su ejecución.
 
-Su relevancia es fundamentalmente práctica: permite a desarrolladores que trabajan con equipos AMD Ryzen AI desplegar un modelo conversacional de ~1B parámetros en la NPU integrada, con bajo consumo energético y sin necesidad de infraestructura en la nube. La licencia Apache 2.0 del modelo base facilita su integración en productos comerciales, aunque el acceso al repositorio está restringido y requiere aceptar condiciones en HuggingFace.
+Su relevancia es fundamentalmente práctica: permite a desarrolladores que trabajan con equipos AMD Ryzen AI desplegar un modelo conversacional de ~1B parámetros en la NPU integrada, con bajo consumo energético y sin necesidad de infraestructura en la nube. La licencia Apache 2.0 del modelo base facilita su integración en productos comerciales, aunque el acceso al repositorio está restringido y requiere aceptar condiciones en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -73,7 +73,7 @@ La comparación directa con los modelos de la tabla debe tomarse con cautela: es
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace antes de la descarga.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de la descarga.
 - Dependencia de hardware: el artefacto está compilado para la NPU de Ryzen AI y el runtime 1.9.0; no es portable a GPU NVIDIA, AMD ROCm ni CPU genérica sin reconversión.
 - Idioma: solo se declara soporte de inglés, lo que limita su uso en aplicaciones en castellano u otros idiomas.
 - Tamaño reducido: con 1B parámetros, la capacidad de razonamiento complejo, matemáticas avanzadas y código de producción es limitada en comparación con modelos de mayor escala.
@@ -85,7 +85,7 @@ La comparación directa con los modelos de la tabla debe tomarse con cautela: es
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/amd/granite-4.0-1b_rai_1.9.0_m_1.0.1_npu
-- Modelo base IBM Granite 4.0 1B: no disponible en la información proporcionada (se recomienda buscar la ficha oficial de IBM en HuggingFace)
+- Repositorio Hugging Face: https://huggingface.co/amd/granite-4.0-1b_rai_1.9.0_m_1.0.1_npu
+- Modelo base IBM Granite 4.0 1B: no disponible en la información proporcionada (se recomienda buscar la ficha oficial de IBM en Hugging Face)
 - Documentación del runtime Ryzen AI: no disponible en la información proporcionada
 - Paper o blog técnico de Granite 4.0: no disponible en la información proporcionada

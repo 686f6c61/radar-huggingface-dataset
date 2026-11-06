@@ -77,7 +77,7 @@ No se dispone de datos comparativos cuantitativos (parámetros, contexto, rendim
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/open-gigaai/GigaBrain-0.7-3.5B-Base
+- Hugging Face: https://huggingface.co/open-gigaai/GigaBrain-0.7-3.5B-Base
 - Paper (arXiv): https://arxiv.org/abs/2608.15875
 - GitHub (repo principal): https://github.com/open-gigaai/giga-brain-0
 - Blog del proyecto: https://gigaai.cc/blog/gigabrain07

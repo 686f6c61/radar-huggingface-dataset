@@ -108,7 +108,7 @@ Todas las puntuaciones son 0–1, mayor es mejor salvo indicación contraria. "W
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/birgermoell/oellm-9b-256k-stage5-e8-search-rl-step160
+- Modelo en Hugging Face: https://huggingface.co/birgermoell/oellm-9b-256k-stage5-e8-search-rl-step160
 - Release anterior (W2): https://huggingface.co/birgermoell/oellm-9b-256k-stage5-w2-rl-step160
 - Modelo base: https://huggingface.co/openeurollm/oellm-9b-256k-theta64m-prelude-anneal300b
 - Repositorio de post-entrenamiento: https://github.com/BirgerMoell/qwen35-posttrain

@@ -113,7 +113,7 @@ La búsqueda web no devolvió información sobre alternativas comparables, por l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/devendradhakad/autodroid-litert-community-Kokoro-82M
+- Modelo en Hugging Face: https://huggingface.co/devendradhakad/autodroid-litert-community-Kokoro-82M
 - Modelo base: https://huggingface.co/hexgrad/Kokoro-82M
 - Front-end G2P recomendado: https://huggingface.co/litert-community/Kokoro-G2P-en-US
 - Documentación de LiteRT: https://ai.google.dev/edge/litert

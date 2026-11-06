@@ -6,13 +6,13 @@ KURE-v3 es un modelo de recuperación densa (dense retrieval) bilingüe coreano-
 
 El dato más relevante es su rendimiento en la suite MTEB(kor, v2) Retrieval, donde promedia 0,8027 nDCG@10 sobre nueve tareas, superando según el autor a modelos densos de 8B parámetros como comsat-embed-ko-8b-preview y Qwen3-Embedding-8B. Es decir, consigue resultados de la gama 8B con una octava parte del tamaño, lo que reduce drásticamente el coste de indexación y de inferencia en producción. Incorpora embeddings Matryoshka entrenados a 2.048, 1.024, 512 y 256 dimensiones, de modo que los vectores pueden truncarse para ahorrar almacenamiento con una pérdida de calidad controlada.
 
-Soporta documentos de hasta 8.192 tokens, lo que lo hace apto para fragmentos largos (artículos, resoluciones judiciales, documentación técnica) sin trocear en exceso. Se distribuye con licencia Apache 2.0 en formato safetensors, es compatible con sentence-transformers y está disponible también como servicio a través de una API compatible con OpenAI en kure.kullm.ai. El modelo se publicó en HuggingFace con fecha de creación 2026-10-15 y, en el momento de redactar esta ficha, acumula 89 descargas y 14 likes.
+Soporta documentos de hasta 8.192 tokens, lo que lo hace apto para fragmentos largos (artículos, resoluciones judiciales, documentación técnica) sin trocear en exceso. Se distribuye con licencia Apache 2.0 en formato safetensors, es compatible con sentence-transformers y está disponible también como servicio a través de una API compatible con OpenAI en kure.kullm.ai. El modelo se publicó en Hugging Face con fecha de creación 2026-10-15 y, en el momento de redactar esta ficha, acumula 89 descargas y 14 likes.
 
 ## Especificaciones técnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer encoder denso (etiqueta `ministral3` en HuggingFace), afinado desde nvidia/Nemotron-3-Embed-1B-BF16 |
+| Arquitectura | Transformer encoder denso (etiqueta `ministral3` en Hugging Face), afinado desde nvidia/Nemotron-3-Embed-1B-BF16 |
 | Parametros totales | 1.140.918.272 (1,1B) |
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | 8.192 tokens |
@@ -27,7 +27,7 @@ Soporta documentos de hasta 8.192 tokens, lo que lo hace apto para fragmentos la
 | Tamaño del repositorio | 2,3 GB |
 | Librería | sentence-transformers |
 | Pipeline | sentence-similarity |
-| Fecha de creación en HuggingFace | 2026-10-15 (última actualización 2026-10-21) |
+| Fecha de creación en Hugging Face | 2026-10-15 (última actualización 2026-10-21) |
 
 ## Arquitectura y entrenamiento
 
@@ -79,7 +79,7 @@ Observaciones: las tareas más débiles son MLDR (0,4781) y MrTidy (0,6320), amb
 - **Cuantización**: no hay versiones oficiales cuantizadas ni GGUF publicados. Una cuantización a 8 bits dejaría los pesos en torno a 1,2 GB y a 4 bits en torno a 0,6 GB (estimación teórica, no verificada por el autor).
 - **GPU consumer**: cabe holgadamente en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4080 y RTX 4090. También en GPUs de 8 GB con margen suficiente en BF16.
 - **GPU de datacenter**: L4, A10G, T4 (BF16 limitado en T4), A100 y H100 para indexación masiva por lotes. Para máxima eficiencia se recomienda `flash_attention_2`, que requiere Ampere o superior.
-- **Opciones de despliegue**: sentence-transformers (referencia de la model card), Text Embeddings Inference (TEI) de HuggingFace, vLLM en modo embeddings, Infinity, o la API gestionada de kure.kullm.ai. No hay soporte GGUF, por lo que llama.cpp y Ollama no son viables sin convertir los pesos.
+- **Opciones de despliegue**: sentence-transformers (referencia de la model card), Text Embeddings Inference (TEI) de Hugging Face, vLLM en modo embeddings, Infinity, o la API gestionada de kure.kullm.ai. No hay soporte GGUF, por lo que llama.cpp y Ollama no son viables sin convertir los pesos.
 - **Almacenamiento del índice**: 2.048 dimensiones en float32 equivalen a 8 KB por vector; un millón de documentos ocupa unos 8 GB. Con truncado a 256 dimensiones, ese mismo millón baja a aproximadamente 1 GB.
 - **Latencia y throughput**: no disponible. No se han publicado mediciones de latencia ni de documentos por segundo.
 
@@ -87,10 +87,10 @@ Observaciones: las tareas más débiles son MLDR (0,4781) y MrTidy (0,6320), amb
 
 | Modelo | Params | Tipo de embedding | Contexto | Idiomas | Avg MTEB(kor, v2) Retrieval | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| nlpai-lab/KURE-v3 | 1,1B | Dense, 2.048 dims (Matryoshka 256-2.048) | 8.192 | ko, en | 0,8027 | Apache 2.0 | HuggingFace + API |
-| nlpai-lab/KURE-v2 | 0,2B | Late-interaction (multi-vector) | no disponible | ko, en | 0,8160 | no disponible en la información | HuggingFace |
-| Qwen3-Embedding-8B | 8B | Dense | no disponible | multilingüe | no disponible (superado por KURE-v3 según el autor) | no disponible en la información | HuggingFace |
-| comsat-embed-ko-8b-preview | 8B | Dense | no disponible | coreano | no disponible (superado por KURE-v3 según el autor) | no disponible en la información | HuggingFace |
+| nlpai-lab/KURE-v3 | 1,1B | Dense, 2.048 dims (Matryoshka 256-2.048) | 8.192 | ko, en | 0,8027 | Apache 2.0 | Hugging Face + API |
+| nlpai-lab/KURE-v2 | 0,2B | Late-interaction (multi-vector) | no disponible | ko, en | 0,8160 | no disponible en la información | Hugging Face |
+| Qwen3-Embedding-8B | 8B | Dense | no disponible | multilingüe | no disponible (superado por KURE-v3 según el autor) | no disponible en la información | Hugging Face |
+| comsat-embed-ko-8b-preview | 8B | Dense | no disponible | coreano | no disponible (superado por KURE-v3 según el autor) | no disponible en la información | Hugging Face |
 
 El compromiso principal es claro: KURE-v3 ofrece un promedio cercano al de KURE-v2 con un único vector por documento (frente a la representación multi-vector de v2), lo que abarata el índice y la búsqueda, a costa de 1,5 puntos porcentuales de nDCG@10 medio. Frente a los modelos densos de 8B, la ventaja declarada es de eficiencia: mismo nivel de rendimiento con 7 veces menos parámetros.
 
@@ -109,7 +109,7 @@ El compromiso principal es claro: KURE-v3 ofrece un promedio cercano al de KURE-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nlpai-lab/KURE-v3
+- Modelo en Hugging Face: https://huggingface.co/nlpai-lab/KURE-v3
 - Repositorio GitHub del proyecto KURE: https://github.com/nlpai-lab/KURE
 - API gestionada (compatible con OpenAI): https://kure.kullm.ai/
 - Modelo base: https://huggingface.co/nvidia/Nemotron-3-Embed-1B-BF16

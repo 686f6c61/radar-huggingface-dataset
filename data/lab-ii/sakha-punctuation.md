@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sakha punctuation and capitalisation es un modelo de restauracion de puntuacion y mayusculas para el idioma sajá (yakut, codigo ISO `sah`), desarrollado por el usuario lab-ii y publicado en HuggingFace bajo licencia Apache 2.0. No es un modelo generativo: es un clasificador de tokens (pipeline `token-classification`) pensado para posprocesar la salida de un sistema de reconocimiento automatico de voz (ASR) que devuelve texto en minusculas y sin signos de puntuacion. El modelo toma esa transcripcion cruda y le devuelve los signos y las mayusculas.
+Sakha punctuation and capitalisation es un modelo de restauracion de puntuacion y mayusculas para el idioma sajá (yakut, codigo ISO `sah`), desarrollado por el usuario lab-ii y publicado en Hugging Face bajo licencia Apache 2.0. No es un modelo generativo: es un clasificador de tokens (pipeline `token-classification`) pensado para posprocesar la salida de un sistema de reconocimiento automatico de voz (ASR) que devuelve texto en minusculas y sin signos de puntuacion. El modelo toma esa transcripcion cruda y le devuelve los signos y las mayusculas.
 
 Tecnicamente se construye como un fine-tuning de `FacebookAI/xlm-roberta-base` con **dos cabezas lineales** sobre el estado oculto del encoder: una para puntuacion (8 etiquetas) y otra para registro o uso de mayusculas (3 etiquetas). El autor justifica explicitamente no separar ambas tareas porque sus decisiones estan correlacionadas: una mayuscula casi siempre sigue a un punto, y predecirlas por separado produce combinaciones inexistentes en el idioma.
 
@@ -80,7 +80,7 @@ No se han publicado comparaciones con otros modelos en la informacion disponible
 - GPU recomendadas: cualquier GPU con 4 GB o mas de VRAM es suficiente; por ejemplo RTX 3060, RTX 4090, T4, L4, A10, A100 o H100. El modelo no aprovecha el paralelismo de las GPU de gama alta porque es un encoder pequeno con lotes cortos.
 - Inferencia en CPU: perfectamente viable dado el tamano (encoder de ~278 M de parametros); es la opcion natural si el volumen de texto no es alto.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU de consumo moderna, e incluso en equipos sin GPU dedicada.
-- Opciones de despliegue: PyTorch + `transformers` con el codigo de la model card; exportacion a ONNX o TorchScript y servicio con ONNX Runtime, HuggingFace Optimum o NVIDIA Triton. No es compatible con vLLM, llama.cpp, Ollama ni TGI, porque no es un modelo generativo de decodificacion autorregresiva.
+- Opciones de despliegue: PyTorch + `transformers` con el codigo de la model card; exportacion a ONNX o TorchScript y servicio con ONNX Runtime, Hugging Face Optimum o NVIDIA Triton. No es compatible con vLLM, llama.cpp, Ollama ni TGI, porque no es un modelo generativo de decodificacion autorregresiva.
 - Latencia y throughput: no disponible. Como referencia de diseno, el procesamiento por ventanas solapadas de `punctuate.py` multiplica el coste por el factor de solapamiento, asi que conviene ajustar el tamano de ventana y el solape segun el requisito de latencia.
 
 ## Comparativa con modelos similares
@@ -91,9 +91,9 @@ Como referencia de categoria, los modelos mas cercanos son otros sistemas de res
 
 | Modelo | Modelo base | Parametros | Contexto | Soporte de `sah` | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| lab-ii/sakha-punctuation | XLM-RoBERTa-base | ~278 M | 512 | Si (entrenado para sajá) | Apache 2.0 | HuggingFace; 0 descargas, 0 likes en el momento de la consulta |
-| oliverguhr/fullstop-punctuation-multilang-large | XLM-RoBERTa-large | ~560 M | 512 | No documentado | No disponible | HuggingFace |
-| 1-800-BAD-CODE/xlm-roberta_punctuation_fullstop_truecase | XLM-RoBERTa-large | ~560 M | 512 | No documentado | No disponible | HuggingFace |
+| lab-ii/sakha-punctuation | XLM-RoBERTa-base | ~278 M | 512 | Si (entrenado para sajá) | Apache 2.0 | Hugging Face; 0 descargas, 0 likes en el momento de la consulta |
+| oliverguhr/fullstop-punctuation-multilang-large | XLM-RoBERTa-large | ~560 M | 512 | No documentado | No disponible | Hugging Face |
+| 1-800-BAD-CODE/xlm-roberta_punctuation_fullstop_truecase | XLM-RoBERTa-large | ~560 M | 512 | No documentado | No disponible | Hugging Face |
 
 Los datos de parametros y contexto de las alternativas se derivan de sus respectivos modelos base y no se han verificado en la informacion proporcionada para esta ficha; los campos no comprobados figuran como "no disponible".
 
@@ -112,7 +112,7 @@ Los datos de parametros y contexto de las alternativas se derivan de sus respect
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lab-ii/sakha-punctuation
+- Modelo en Hugging Face: https://huggingface.co/lab-ii/sakha-punctuation
 - Modelo base: https://huggingface.co/FacebookAI/xlm-roberta-base
 - Paper, blog o repositorio adicional: no disponible
 - Resultados relevantes de la busqueda web: no disponible (la busqueda no devolvio ninguna pagina relacionada con el modelo)

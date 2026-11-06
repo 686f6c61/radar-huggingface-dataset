@@ -2,7 +2,7 @@
 
 ## Resumen
 
-haq2/haq2 es un repositorio alojado en HuggingFace bajo el identificador de autor haq2. En el momento de la consulta, la unica informacion verificable es la licencia declarada (apache-2.0) y las etiquetas de region (region:us). La model card del autor no contiene mas que la linea de licencia, sin descripcion del modelo, sin arquitectura declarada, sin tamano de parametros, sin ventana de contexto y sin ejemplos de uso.
+haq2/haq2 es un repositorio alojado en Hugging Face bajo el identificador de autor haq2. En el momento de la consulta, la unica informacion verificable es la licencia declarada (apache-2.0) y las etiquetas de region (region:us). La model card del autor no contiene mas que la linea de licencia, sin descripcion del modelo, sin arquitectura declarada, sin tamano de parametros, sin ventana de contexto y sin ejemplos de uso.
 
 El repositorio no declara pipeline de inferencia, no especifica idiomas soportados, no incluye ficheros de pesos documentados ni referencias a paper, blog o repositorio de codigo. Sus metricas de adopcion son cero descargas y cero likes, y la fecha de creacion y de ultima actualizacion coinciden (2026-09-21T11:43:36Z), lo que apunta a un repositorio creado y no modificado posteriormente.
 
@@ -69,5 +69,5 @@ no disponible. No hay informacion suficiente para identificar la categoria del m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/haq2/haq2
+- Hugging Face: https://huggingface.co/haq2/haq2
 - Resultados de busqueda web: no relevantes para este modelo (documentacion de GitHub y librerias de terceros sin relacion con haq2/haq2)

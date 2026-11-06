@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`menonanjali/prompt-engineering-analysis` es un repositorio publicado en HuggingFace por el usuario `menonanjali` que, segun su propia model card, no contiene un modelo entrenado sino un conjunto estructurado de notas de investigacion sobre ingenieria de prompts. El artefacto principal declarado es `summary.md`, y el autor indica explicitamente que el repositorio "no reclama mejoras en benchmarks, ablaciones completadas, codigo publicado ni un checkpoint entrenado". Los apartados marcados como planes o hipotesis no deben interpretarse como resultados experimentales.
+`menonanjali/prompt-engineering-analysis` es un repositorio publicado en Hugging Face por el usuario `menonanjali` que, segun su propia model card, no contiene un modelo entrenado sino un conjunto estructurado de notas de investigacion sobre ingenieria de prompts. El artefacto principal declarado es `summary.md`, y el autor indica explicitamente que el repositorio "no reclama mejoras en benchmarks, ablaciones completadas, codigo publicado ni un checkpoint entrenado". Los apartados marcados como planes o hipotesis no deben interpretarse como resultados experimentales.
 
 El repositorio incluye un fichero en formato safetensors con 16.576 parametros totales, una cifra cuatro o cinco ordenes de magnitud por debajo de cualquier modelo de lenguaje funcional (incluso modelos de juguete como GPT-2 small tienen 124 millones). El tamano del repo es de 0,0 GB y los metadatos no declaran pipeline, idiomas ni configuracion de arquitectura mas alla del tag generico `transformer`. No hay informacion sobre tokenizador, configuracion de atencion, vocabulario ni datos de entrenamiento.
 
@@ -12,7 +12,7 @@ Por tanto, su relevancia no es la de un modelo desplegable, sino la de un artefa
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | transformer (solo tag de HuggingFace; sin configuracion publicada) |
+| Arquitectura | transformer (solo tag de Hugging Face; sin configuracion publicada) |
 | Parametros totales | 16.576 (segun metadatos safetensors) |
 | Parametros activos | no disponible (no se declara arquitectura MoE) |
 | Longitud de contexto | no disponible |
@@ -21,11 +21,11 @@ Por tanto, su relevancia no es la de un modelo desplegable, sino la de un artefa
 | Licencia | MIT |
 | Formato de pesos | safetensors (artefacto principal real: `summary.md` en Markdown) |
 
-Otros datos del repositorio: creado el 2026-10-17 y actualizado el 2026-10-17 segun los metadatos de HuggingFace, 0 descargas, 0 likes, region `us`, tamano 0,0 GB.
+Otros datos del repositorio: creado el 2026-10-17 y actualizado el 2026-10-17 segun los metadatos de Hugging Face, 0 descargas, 0 likes, region `us`, tamano 0,0 GB.
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no describe arquitectura interna, numero de capas, dimensiones ocultas, mecanismo de atencion ni tokenizador. El unico indicio es el tag `transformer` que HuggingFace asigna a partir de la libreria o el formato del fichero safetensors, no de una `config.json` documentada. Con 16.576 parametros, el artefacto no es funcional como modelo de lenguaje: a titulo de referencia, esa cifra es aproximadamente 7.500 veces menor que GPT-2 small (124 M) y unas 430.000 veces menor que un modelo de 7.000 M.
+La informacion disponible no describe arquitectura interna, numero de capas, dimensiones ocultas, mecanismo de atencion ni tokenizador. El unico indicio es el tag `transformer` que Hugging Face asigna a partir de la libreria o el formato del fichero safetensors, no de una `config.json` documentada. Con 16.576 parametros, el artefacto no es funcional como modelo de lenguaje: a titulo de referencia, esa cifra es aproximadamente 7.500 veces menor que GPT-2 small (124 M) y unas 430.000 veces menor que un modelo de 7.000 M.
 
 No se declaran datos de entrenamiento, numero de tokens, composicion del corpus, ni fases de ajuste como RLHF, DPO o SFT. La model card es explicita al respecto: el contenido son notas de investigacion con referencias de evaluacion y preguntas abiertas, donde los planes e hipotesis se mantienen separados de resultados completados. El autor establece un estandar de reproducibilidad para resultados futuros (versiones de dataset, comandos, semillas, hardware y logs crudos), lo cual es en si mismo el elemento metodologico mas destacable del repositorio.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 |---|---|---|---|---|---|
 | `menonanjali/prompt-engineering-analysis` | 16.576 | no disponible | Notas de investigacion + safetensors residual | MIT | Publicado, 0 descargas |
 | Modelos de lenguaje de referencia (p. ej. familias de 7.000 M) | ~7.000 M | miles de tokens (segun familia) | Checkpoint entrenado | variable | Funcional para inferencia |
-| Repositorios de notas de investigacion en HuggingFace | no aplica | no aplica | Markdown | variable | No son modelos |
+| Repositorios de notas de investigacion en Hugging Face | no aplica | no aplica | Markdown | variable | No son modelos |
 
 No se identifican en la informacion proporcionada modelos comparables de la misma categoria, porque el repositorio no es un modelo de lenguaje. La comparacion con modelos funcionales solo sirve para ilustrar la diferencia de escala (16.576 parametros frente a millones) y no debe interpretarse como una comparacion de rendimiento.
 
@@ -83,7 +83,7 @@ No se identifican en la informacion proporcionada modelos comparables de la mism
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/menonanjali/prompt-engineering-analysis
+- Repositorio en Hugging Face: https://huggingface.co/menonanjali/prompt-engineering-analysis
 - Nota principal del repositorio: `summary.md` (referenciada en la model card)
 - Documentacion del repositorio: `README.md`
 - No se han encontrado en la informacion proporcionada enlaces a papers, blogs, repos de codigo ni demos adicionales.

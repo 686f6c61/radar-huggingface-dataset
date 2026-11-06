@@ -82,7 +82,7 @@ No se dispone de modelos comparables identificados en la informacion proporciona
 
 | Elemento | Tipo | Entrenamiento | Requisitos de computo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `tfrere/microduck-move-local-lookaround` | Move script (linea de tiempo de comandos) | No (declarado por el autor) | CPU (MuJoCo) | apache-2.0 | HuggingFace, 0 descargas, 0 likes |
+| `tfrere/microduck-move-local-lookaround` | Move script (linea de tiempo de comandos) | No (declarado por el autor) | CPU (MuJoCo) | apache-2.0 | Hugging Face, 0 descargas, 0 likes |
 | `pollen-robotics/microduck-policies/alpha_walking.onnx` | Politica de marcha (ONNX) | No disponible | No disponible | No disponible | Referenciada por la model card |
 
 ## Limitaciones y advertencias
@@ -99,7 +99,7 @@ No se dispone de modelos comparables identificados en la informacion proporciona
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tfrere/microduck-move-local-lookaround
+- Hugging Face: https://huggingface.co/tfrere/microduck-move-local-lookaround
 - Autor: https://huggingface.co/tfrere
 - Politica base referenciada: pollen-robotics/microduck-policies/alpha_walking.onnx (sin URL directa en la informacion proporcionada; busqueda en https://huggingface.co/pollen-robotics)
 - Papers, blogs, repos, demos adicionales: no disponible.

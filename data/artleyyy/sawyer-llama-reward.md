@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Artleyyy/sawyer-llama-reward` es un modelo publicado en HuggingFace Hub por el usuario Artleyyy, etiquetado con el pipeline `text-classification` y la arquitectura `roberta`. El repositorio contiene 124.646.401 parametros reales (segun los pesos en safetensors), una cifra practicamente identica a la de RoBERTa-base, y ocupa 1,0 GB en disco. El nombre del modelo sugiere un uso como modelo de recompensa (reward model), probablemente para puntuar salidas de un modelo de lenguaje, aunque esta funcion no se confirma en la model card.
+`Artleyyy/sawyer-llama-reward` es un modelo publicado en Hugging Face Hub por el usuario Artleyyy, etiquetado con el pipeline `text-classification` y la arquitectura `roberta`. El repositorio contiene 124.646.401 parametros reales (segun los pesos en safetensors), una cifra practicamente identica a la de RoBERTa-base, y ocupa 1,0 GB en disco. El nombre del modelo sugiere un uso como modelo de recompensa (reward model), probablemente para puntuar salidas de un modelo de lenguaje, aunque esta funcion no se confirma en la model card.
 
-La model card publicada es la plantilla generada automaticamente por HuggingFace y no ha sido cumplimentada: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion) figuran como `[More Information Needed]`. No hay paper, demo, repositorio de codigo ni resultados de evaluacion asociados.
+La model card publicada es la plantilla generada automaticamente por Hugging Face y no ha sido cumplimentada: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion) figuran como `[More Information Needed]`. No hay paper, demo, repositorio de codigo ni resultados de evaluacion asociados.
 
 Su relevancia actual es limitada: cuenta con 0 descargas y 0 likes, no tiene licencia declarada y no aporta documentacion tecnica verificable. Cualquier evaluacion seria del modelo exige inspeccionar directamente los pesos y reproducir pruebas propias. Esta ficha refleja esa incertidumbre marcando explicitamente cada dato como no disponible cuando la informacion no consta.
 
@@ -37,8 +37,8 @@ No hay informacion sobre datos de entrenamiento: se desconoce el numero de token
 
 - Clasificación de texto: el pipeline declarado es `text-classification`, por lo que la salida esperada es una o varias puntuaciones sobre una entrada de texto.
 - Puntuación tipo recompensa (inferido del nombre `reward`): encaja con el patron de un modelo que emite un escalar o una distribucion para ordenar o puntuar respuestas generadas por un LLM. No confirmado por el autor.
-- Codificación de representaciones: la etiqueta `text-embeddings-inference` sugiere compatibilidad con el servidor Text Embeddings Inference de HuggingFace, orientado a servir modelos de embedding y de clasificación.
-- Compatibilidad con endpoints de inferencia: la etiqueta `endpoints_compatible` indica que el repositorio puede desplegarse en HuggingFace Inference Endpoints con la libreria transformers.
+- Codificación de representaciones: la etiqueta `text-embeddings-inference` sugiere compatibilidad con el servidor Text Embeddings Inference de Hugging Face, orientado a servir modelos de embedding y de clasificación.
+- Compatibilidad con endpoints de inferencia: la etiqueta `endpoints_compatible` indica que el repositorio puede desplegarse en Hugging Face Inference Endpoints con la libreria transformers.
 - Tool calling / function calling: no disponible.
 - Capacidades de agente o razonamiento multi-paso: no disponible (un encoder de 125 M de parametros no es un modelo generativo y no soporta estas funciones por si mismo).
 - Capacidades multilingues: no disponible.
@@ -69,7 +69,7 @@ Las cifras de memoria de esta seccion son calculos derivados del numero de param
 - GPU recomendadas: cualquier GPU con al menos 2-4 GB de VRAM es suficiente, incluidas GTX 1650, RTX 3050, RTX 4060, RTX 4090, A100 y H100. Para lotes muy grandes, la limitacion sera el ancho de banda de memoria, no la capacidad.
 - Inferencia en CPU: perfectamente viable para un encoder de este tamano, con latencias del orden de decenas de milisegundos por muestra en CPUs modernas. No se dispone de medidas reales.
 - Consumer GPU: si, cabe holgadamente en practicamente cualquier GPU de consumo de los ultimos diez anos con 4 GB o mas de VRAM.
-- Opciones de despliegue: transformers (libreria declarada), HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`) y Text Embeddings Inference (etiqueta `text-embeddings-inference`). vLLM, llama.cpp, Ollama y TGI no estan confirmados para este repositorio: llama.cpp y Ollama requieren pesos GGUF que no se publican, y TGI esta orientado a modelos generativos.
+- Opciones de despliegue: transformers (libreria declarada), Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`) y Text Embeddings Inference (etiqueta `text-embeddings-inference`). vLLM, llama.cpp, Ollama y TGI no estan confirmados para este repositorio: llama.cpp y Ollama requieren pesos GGUF que no se publican, y TGI esta orientado a modelos generativos.
 - Latencia y throughput: no disponibles. No hay ningun dato publicado de latencia, tokens por segundo ni muestras por segundo.
 
 ## Comparativa con modelos similares
@@ -99,7 +99,7 @@ No se dispone de datos de rendimiento de `sawyer-llama-reward` que permitan esta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Artleyyy/sawyer-llama-reward
+- Modelo en Hugging Face: https://huggingface.co/Artleyyy/sawyer-llama-reward
 - Referencia del tag `arxiv:1910.09700`: https://arxiv.org/abs/1910.09700 (Lacoste et al., 2019, "Quantifying the Carbon Emissions of Machine Learning"). Este enlace aparece en la plantilla estandar de model card como referencia de la calculadora de impacto medioambiental, por lo que probablemente no guarda relacion con el entrenamiento de este modelo.
 - Paper, repositorio de codigo, demo o blog del autor: no disponibles.
 - Resultados de la busqueda web: sin resultados relevantes.

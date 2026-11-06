@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`stuff123456/minimaxh3cowgirl` es un adaptador LoRA de bajo rango para generacion de imagenes a partir de texto (pipeline `text-to-image`), publicado en HuggingFace por el usuario `stuff123456` el 21 de octubre de 2026. El repositorio ocupa 0,2 GB y se distribuye en formato diffusers, con las etiquetas `lora`, `text-to-image` y la plantilla `template:diffusion-lora`. No es un modelo fundacional: es un ajuste fino que debe cargarse sobre el modelo declarado como base, `neph1/minimax_h3_handheld_shaky_camera`, que a su vez parece ser otro adaptador en lugar de un modelo de difusion completo.
+`stuff123456/minimaxh3cowgirl` es un adaptador LoRA de bajo rango para generacion de imagenes a partir de texto (pipeline `text-to-image`), publicado en Hugging Face por el usuario `stuff123456` el 21 de octubre de 2026. El repositorio ocupa 0,2 GB y se distribuye en formato diffusers, con las etiquetas `lora`, `text-to-image` y la plantilla `template:diffusion-lora`. No es un modelo fundacional: es un ajuste fino que debe cargarse sobre el modelo declarado como base, `neph1/minimax_h3_handheld_shaky_camera`, que a su vez parece ser otro adaptador en lugar de un modelo de difusion completo.
 
 El objetivo declarado del adaptador es especializar la generacion hacia contenido sexual explicito entre adultos, segun se deduce de la lista de prompts de instancia incluida en la model card (terminologia explicita en ingles sobre posiciones, encuadres de camara en primera persona, primeros planos y efectos de audio descritos en texto). No se documenta ninguna innovacion arquitectonica, dataset, proceso de entrenamiento ni evaluacion cuantitativa.
 
@@ -85,7 +85,7 @@ No se han identificado en la informacion proporcionada otros adaptadores directa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stuff123456/minimaxh3cowgirl
+- Modelo en Hugging Face: https://huggingface.co/stuff123456/minimaxh3cowgirl
 - Modelo base declarado: https://huggingface.co/neph1/minimax_h3_handheld_shaky_camera
 - Repositorio de `diffusers`: https://github.com/huggingface/diffusers
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, a su model card ampliada, a papers, blogs tecnicos ni demos. Los resultados devueltos corresponden a sitios de contenido para adultos sin relacion tecnica con este repositorio y se han descartado.

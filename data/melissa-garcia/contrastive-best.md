@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`melissa-garcia/contrastive-best` es un repositorio experimental alojado en HuggingFace que contiene una implementacion propia de una arquitectura CLIP (Contrastive Language-Image Pretraining) a escala "small". Lo publica el usuario melissa-garcia bajo licencia apache-2.0. El propio autor lo describe como un banco de pruebas para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, y advierte explicitamente de que el checkpoint incluido es una inicializacion valida para pruebas de humo, no un modelo entrenado ni evaluado.
+`melissa-garcia/contrastive-best` es un repositorio experimental alojado en Hugging Face que contiene una implementacion propia de una arquitectura CLIP (Contrastive Language-Image Pretraining) a escala "small". Lo publica el usuario melissa-garcia bajo licencia apache-2.0. El propio autor lo describe como un banco de pruebas para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, y advierte explicitamente de que el checkpoint incluido es una inicializacion valida para pruebas de humo, no un modelo entrenado ni evaluado.
 
 El peso `model.safetensors` contiene unicamente 33.088 parametros, un orden de magnitud muy inferior al de cualquier CLIP funcional (los CLIP reales manejan decenas o cientos de millones de parametros). El repositorio ocupa aproximadamente 0,0 GB. No se declara ningun resultado de benchmark, ni pipeline de inferencia, ni idiomas soportados.
 
@@ -84,5 +84,5 @@ Las cifras exactas de parametros, contexto y rendimiento de las alternativas no 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/melissa-garcia/contrastive-best
+- Hugging Face: https://huggingface.co/melissa-garcia/contrastive-best
 - No se han encontrado en la busqueda web enlaces relevantes al modelo (los resultados obtenidos corresponden a la marca de calzado Melissa y no guardan relacion).

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Santos es un modelo publicado en HuggingFace por el usuario valogen bajo la licencia EUPL-1.2 (European Union Public Licence). La model card asociada no contiene ninguna descripción funcional: únicamente declara la licencia mediante metadatos YAML, sin especificar arquitectura, tamaño, datos de entrenamiento ni capacidades. El repositorio registra cero descargas y cero likes en el momento de la consulta, y no tiene pipeline asignado.
+Santos es un modelo publicado en Hugging Face por el usuario valogen bajo la licencia EUPL-1.2 (European Union Public Licence). La model card asociada no contiene ninguna descripción funcional: únicamente declara la licencia mediante metadatos YAML, sin especificar arquitectura, tamaño, datos de entrenamiento ni capacidades. El repositorio registra cero descargas y cero likes en el momento de la consulta, y no tiene pipeline asignado.
 
 Se desconoce por completo qué problema resuelve, qué arquitectura emplea y qué tipo de tarea cubre. No hay información sobre parámetros, longitud de contexto, tokenizador ni formato de pesos. Tampoco se han publicado idiomas soportados ni resultados de evaluación.
 
@@ -71,5 +71,5 @@ No disponible. Sin datos sobre parámetros, contexto o rendimiento no es posible
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/valogen/santos
+- Hugging Face: https://huggingface.co/valogen/santos
 - Texto de la licencia EUPL-1.2: https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12

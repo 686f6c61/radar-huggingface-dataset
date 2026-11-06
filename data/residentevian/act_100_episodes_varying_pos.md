@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ResidentEvian/act_100_episodes_varying_pos` es una política de imitación basada en Action Chunking with Transformers (ACT), publicada en HuggingFace Hub mediante la librería LeRobot. No es un modelo de lenguaje: es un controlador visomotor entrenado para una tarea robótica concreta de manipulación —coger un cubo azul y depositarlo en una caja naranja con posiciones variables— sobre un robot de tipo `so_follower` (Standard Open Arm, formato SO-100/SO-101 de LeRobot). El modelo consume el estado articular de 6 dimensiones y dos flujos de imagen RGB de 480×640 (cámara superior y cámara de muñeca), y produce un vector de acción de 6 dimensiones.
+`ResidentEvian/act_100_episodes_varying_pos` es una política de imitación basada en Action Chunking with Transformers (ACT), publicada en Hugging Face Hub mediante la librería LeRobot. No es un modelo de lenguaje: es un controlador visomotor entrenado para una tarea robótica concreta de manipulación —coger un cubo azul y depositarlo en una caja naranja con posiciones variables— sobre un robot de tipo `so_follower` (Standard Open Arm, formato SO-100/SO-101 de LeRobot). El modelo consume el estado articular de 6 dimensiones y dos flujos de imagen RGB de 480×640 (cámara superior y cámara de muñeca), y produce un vector de acción de 6 dimensiones.
 
 El modelo tiene 51.668.614 parámetros y un peso de repositorio de 0,2 GB en formato safetensors, lo que lo hace extremadamente ligero y desplegable en hardware de consumo. Fue entrenado con 100 episodios de teleoperación (51.805 fotogramas a 30 FPS) durante 20.000 pasos con AdamW y learning rate de 1e-05, usando LeRobot 0.6.1. La licencia es Apache 2.0, sin restricciones para uso comercial.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `ResidentEvian/act_100_episodes_varying_pos` | 51,7 M | no aplica | Pick-and-place cubo azul en caja naranja | Apache 2.0 | HuggingFace Hub, 35 descargas |
-| Políticas ACT de referencia en LeRobot | no disponible | no aplica | Tareas de manipulación diversas | Apache 2.0 (LeRobot) | HuggingFace Hub / documentación LeRobot |
-| Políticas Diffusion Policy (LeRobot) | no disponible | no aplica | Manipulación visomotora | Apache 2.0 (LeRobot) | HuggingFace Hub / documentación LeRobot |
-| Políticas VQ-BeT / TDMPC (LeRobot) | no disponible | no aplica | Manipulación y control | Apache 2.0 (LeRobot) | HuggingFace Hub / documentación LeRobot |
+| `ResidentEvian/act_100_episodes_varying_pos` | 51,7 M | no aplica | Pick-and-place cubo azul en caja naranja | Apache 2.0 | Hugging Face Hub, 35 descargas |
+| Políticas ACT de referencia en LeRobot | no disponible | no aplica | Tareas de manipulación diversas | Apache 2.0 (LeRobot) | Hugging Face Hub / documentación LeRobot |
+| Políticas Diffusion Policy (LeRobot) | no disponible | no aplica | Manipulación visomotora | Apache 2.0 (LeRobot) | Hugging Face Hub / documentación LeRobot |
+| Políticas VQ-BeT / TDMPC (LeRobot) | no disponible | no aplica | Manipulación y control | Apache 2.0 (LeRobot) | Hugging Face Hub / documentación LeRobot |
 
 No se dispone de datos cuantitativos de rendimiento para establecer una comparación numérica fiable con estas alternativas; la comparación es únicamente cualitativa y basada en la disponibilidad documentada.
 
@@ -82,7 +82,7 @@ No se dispone de datos cuantitativos de rendimiento para establecer una comparac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ResidentEvian/act_100_episodes_varying_pos
+- Modelo en Hugging Face: https://huggingface.co/ResidentEvian/act_100_episodes_varying_pos
 - Dataset de entrenamiento: https://huggingface.co/datasets/ResidentEvian/blue-cube-into-box-varying-position_20261015_123135
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=ResidentEvian/blue-cube-into-box-varying-position_20261015_123135
 - Paper ACT: https://huggingface.co/papers/2304.13705 (arXiv:2304.13705)

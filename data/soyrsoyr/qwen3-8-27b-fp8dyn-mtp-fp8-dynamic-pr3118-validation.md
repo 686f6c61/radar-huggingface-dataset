@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks de ninguno de los modelos de la tabla, por 
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/soyrsoyr/Qwen3.8-27B-FP8Dyn-MTP-FP8-DYNAMIC-pr3118-validation
+- Repositorio del modelo en Hugging Face: https://huggingface.co/soyrsoyr/Qwen3.8-27B-FP8Dyn-MTP-FP8-DYNAMIC-pr3118-validation
 - Modelo base Qwen/Qwen3.8-27B (revisión fijada en la model card): https://huggingface.co/Qwen/Qwen3.8-27B/tree/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0
 - Implementación de cuantización (llm-compressor, commit 87347881 del fork soyr-redhat): https://github.com/soyr-redhat/llm-compressor/commit/87347881b46df8786b9fc463965f80504914a98f
 - No se han encontrado enlaces adicionales relevantes en la búsqueda web: los resultados devueltos eran páginas de Zhihu sin relación con el modelo (juegos de mesa sobre educación financiera, teoría del flow en música, definición de Zhihu y auriculares Meizu), por lo que se descartan. No se dispone de paper, blog técnico, demo ni repositorio adicional verificable.

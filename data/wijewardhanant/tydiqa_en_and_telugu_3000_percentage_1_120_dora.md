@@ -2,7 +2,7 @@
 
 ## Resumen
 
-WijewardhanaNT/tydiqa_en_and_telugu_3000_percentage_1_120_DoRA es un adaptador de ajuste fino publicado en HuggingFace por el usuario WijewardhanaNT sobre el modelo base meta-llama/Llama-3.1-8B. Se distribuye como un repositorio PEFT de 0,1 GB en formato safetensors, es decir, contiene únicamente los pesos del adaptador y no el modelo completo. El pipeline declarado es text-generation y la librería indicada es peft (PEFT 0.17.1).
+WijewardhanaNT/tydiqa_en_and_telugu_3000_percentage_1_120_DoRA es un adaptador de ajuste fino publicado en Hugging Face por el usuario WijewardhanaNT sobre el modelo base meta-llama/Llama-3.1-8B. Se distribuye como un repositorio PEFT de 0,1 GB en formato safetensors, es decir, contiene únicamente los pesos del adaptador y no el modelo completo. El pipeline declarado es text-generation y la librería indicada es peft (PEFT 0.17.1).
 
 El nombre del repositorio sugiere que el ajuste se ha realizado sobre el corpus TyDiQA, un benchmark de respuesta a preguntas extractiva en 11 idiomas tipológicamente diversos, restringido a inglés (en) y telugu, con 3.000 ejemplos y algún parámetro identificado como "percentage_1_120". La técnica de adaptación empleada es DoRA (Weight-Decomposed Low-Rank Adaptation), una variante de LoRA que descompone la actualización de pesos en magnitud y dirección. Ninguno de estos extremos está confirmado en la model card, que es una plantilla sin rellenar.
 
@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La se
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| tydiqa_en_and_telugu_3000_percentage_1_120_DoRA | Adaptador sobre 8.030 M | No disponible (base: 128.000 tokens) | No disponible | HuggingFace, 10 descargas, 0 likes | Sin evaluacion publicada |
-| meta-llama/Llama-3.1-8B (base) | 8.030 M | 128.000 tokens | Llama 3.1 Community License | HuggingFace, ampliamente distribuido | Publica resultados en MMLU, GSM8K y otros |
-| meta-llama/Llama-3.1-8B-Instruct | 8.030 M | 128.000 tokens | Llama 3.1 Community License | HuggingFace, ampliamente distribuido | Publica resultados en benchmarks de instrucciones y tool calling |
+| tydiqa_en_and_telugu_3000_percentage_1_120_DoRA | Adaptador sobre 8.030 M | No disponible (base: 128.000 tokens) | No disponible | Hugging Face, 10 descargas, 0 likes | Sin evaluacion publicada |
+| meta-llama/Llama-3.1-8B (base) | 8.030 M | 128.000 tokens | Llama 3.1 Community License | Hugging Face, ampliamente distribuido | Publica resultados en MMLU, GSM8K y otros |
+| meta-llama/Llama-3.1-8B-Instruct | 8.030 M | 128.000 tokens | Llama 3.1 Community License | Hugging Face, ampliamente distribuido | Publica resultados en benchmarks de instrucciones y tool calling |
 | Ajuste completo sobre TyDiQA (referencia generica) | 8.030 M | 128.000 tokens | Depende del autor | No disponible | No disponible |
 
 No se dispone de datos objetivos para comparar el rendimiento de este adaptador con alternativas de la misma categoria. La comparacion se limita a caracteristicas estructurales.
@@ -89,7 +89,7 @@ No se dispone de datos objetivos para comparar el rendimiento de este adaptador 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/WijewardhanaNT/tydiqa_en_and_telugu_3000_percentage_1_120_DoRA
+- Repositorio en Hugging Face: https://huggingface.co/WijewardhanaNT/tydiqa_en_and_telugu_3000_percentage_1_120_DoRA
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Documentacion de PEFT: https://huggingface.co/docs/peft
 - Referencia citada en las etiquetas del repositorio (Lacoste et al., 2019, sobre estimacion de emisiones de carbono): https://arxiv.org/abs/1910.09700

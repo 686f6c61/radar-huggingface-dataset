@@ -83,11 +83,11 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento real d
 - La variante `apple` es NMS-free y con batch estático de 1: no admite lotes mayores ni postprocesado NMS estándar, lo que limita su uso fuera de CoreML.
 - Las variantes `fp8` e `int8` dependen de TensorRT QDQ; su comportamiento en otros runtimes ONNX no está garantizado por el model card.
 - El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, sin historial de validación por parte de la comunidad.
-- No se especifican los idiomas ni la composición del dataset original; la ficha de HuggingFace marca los idiomas como no disponibles.
+- No se especifican los idiomas ni la composición del dataset original; la ficha de Hugging Face marca los idiomas como no disponibles.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/occurra/object_detection
+- Hugging Face: https://huggingface.co/occurra/object_detection
 - Repositorio Ultralytics: https://github.com/ultralytics/ultralytics
 - Licencia AGPL-3.0 de Ultralytics: https://github.com/ultralytics/ultralytics/blob/main/LICENSE
 - Ejemplo de detección de objetos en Hailo: https://github.com/hailo-ai/Hailo-Application-Code-Examples/blob/main/runtime/python/object_detection/README.md

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SpeechT5 TTS Dutch (VoxPopuli) es un modelo de sintesis de voz (text-to-speech) obtenido mediante fine-tuning de `microsoft/speecht5_tts` sobre el conjunto de datos VoxPopuli en neerlandes. Lo publica el usuario avkbsurya119 en HuggingFace y su proposito es generar audio hablado en neerlandes a partir de texto, aprovechando la arquitectura SpeechT5 preentrenada por Microsoft. El modelo resuelve el problema de disponer de un TTS especifico para neerlandes con una licencia permisiva (MIT) y un tamano contenido, adecuado para despliegues ligeros.
+SpeechT5 TTS Dutch (VoxPopuli) es un modelo de sintesis de voz (text-to-speech) obtenido mediante fine-tuning de `microsoft/speecht5_tts` sobre el conjunto de datos VoxPopuli en neerlandes. Lo publica el usuario avkbsurya119 en Hugging Face y su proposito es generar audio hablado en neerlandes a partir de texto, aprovechando la arquitectura SpeechT5 preentrenada por Microsoft. El modelo resuelve el problema de disponer de un TTS especifico para neerlandes con una licencia permisiva (MIT) y un tamano contenido, adecuado para despliegues ligeros.
 
 La relevancia actual del modelo es limitada pero concreta: se trata de un fine-tuning de bajo coste (1500 pasos de entrenamiento) pensado para experimentacion y para cubrir una lengua con menos recursos en el ecosistema TTS open source. No es un modelo de produccion de alta calidad ni ha sido evaluado con metricas perceptuales (MOS), pero ofrece una base funcional y reproducible para quien necesite sintesis de voz en neerlandes sin depender de servicios propietarios.
 
@@ -71,9 +71,9 @@ No se dispone de comparaciones con otros modelos TTS en la informacion proporcio
 
 | Modelo | Parametros | Contexto / entrada | Idioma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| avkbsurya119/speecht5_finetuned_voxpopuli_nl | 144,4 M | texto de longitud variable | neerlandes | MIT | HuggingFace, Transformers |
-| microsoft/speecht5_tts | ~144 M | texto de longitud variable | ingles (principal) | MIT | HuggingFace, Transformers |
-| Coqui TTS (modelos VITS) | variable (decenas de M) | texto de longitud variable | multilingue | MPL-2.0 / varias | Coqui, HuggingFace |
+| avkbsurya119/speecht5_finetuned_voxpopuli_nl | 144,4 M | texto de longitud variable | neerlandes | MIT | Hugging Face, Transformers |
+| microsoft/speecht5_tts | ~144 M | texto de longitud variable | ingles (principal) | MIT | Hugging Face, Transformers |
+| Coqui TTS (modelos VITS) | variable (decenas de M) | texto de longitud variable | multilingue | MPL-2.0 / varias | Coqui, Hugging Face |
 
 La comparacion se limita a alternativas del mismo ecosistema y categoria (TTS ligero basado en Transformers). No se dispone de datos de rendimiento comparativo (MOS, MCD) en la informacion proporcionada, por lo que la comparativa es estructural y no de calidad.
 
@@ -91,7 +91,7 @@ La comparacion se limita a alternativas del mismo ecosistema y categoria (TTS li
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/avkbsurya119/speecht5_finetuned_voxpopuli_nl
+- Modelo en Hugging Face: https://huggingface.co/avkbsurya119/speecht5_finetuned_voxpopuli_nl
 - Modelo base: https://huggingface.co/microsoft/speecht5_tts
 - Dataset de entrenamiento: https://huggingface.co/datasets/qmeeus/voxpopuli
 - Vocoder recomendado para SpeechT5 (no incluido en el repo): https://huggingface.co/microsoft/speecht5_hifigan

@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible. El �
 
 | Modelo | Tipo | Tamaño | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este repositorio (H3_Eros_Sing_PRISM_Pika_Parasyte_w6a8_g32) | difusión de vídeo, merge comunitario | 15,9 GB | w6a8_int8, group 32 | no disponible | HuggingFace, 0 descargas |
-| 10Eros_Max_SingularityV2_PRISM2_PikaFlex_0.85_int8HQ (OliviaRossi) | difusión de vídeo, merge comunitario | ~20,2 GB | int8HQ | no disponible | HuggingFace |
-| MiniMax-H3 (MiniMaxAI) | difusión de vídeo, modelo base | no disponible | no disponible | no disponible | HuggingFace |
-| MiniMax-H3 (Comfy-Org) | difusión de vídeo, versión para ComfyUI | no disponible | no disponible | no disponible | HuggingFace |
+| Este repositorio (H3_Eros_Sing_PRISM_Pika_Parasyte_w6a8_g32) | difusión de vídeo, merge comunitario | 15,9 GB | w6a8_int8, group 32 | no disponible | Hugging Face, 0 descargas |
+| 10Eros_Max_SingularityV2_PRISM2_PikaFlex_0.85_int8HQ (OliviaRossi) | difusión de vídeo, merge comunitario | ~20,2 GB | int8HQ | no disponible | Hugging Face |
+| MiniMax-H3 (MiniMaxAI) | difusión de vídeo, modelo base | no disponible | no disponible | no disponible | Hugging Face |
+| MiniMax-H3 (Comfy-Org) | difusión de vídeo, versión para ComfyUI | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes más allá de la equivalencia cualitativa declarada por el autor con el checkpoint int8HQ.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes más all
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Plaguekind/H3_Eros_Sing_PRISM_Pika_Parasyte_w6a8_g32
+- Repositorio en Hugging Face: https://huggingface.co/Plaguekind/H3_Eros_Sing_PRISM_Pika_Parasyte_w6a8_g32
 - Checkpoint int8HQ de origen: https://huggingface.co/OliviaRossi/Minimax-h3_Singularity-x-10Eros-Max_PRISM/blob/main/10Eros_Max_SingularityV2_PRISM2_PikaFlex_0.85_int8HQ.safetensors
 - Modelo base MiniMaxAI/MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Versión Comfy-Org/MiniMax-H3: https://huggingface.co/Comfy-Org/MiniMax-H3

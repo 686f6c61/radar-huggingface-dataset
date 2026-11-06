@@ -6,7 +6,7 @@ Qwen3-Embedding-0.6B-GGUF es la versión cuantizada en formato GGUF del modelo d
 
 El modelo pertenece a la serie Qwen3 Embedding, construida sobre los modelos densos de la familia Qwen3. Con 595.776.512 parámetros, 28 capas y una ventana de contexto de 32.000 tokens, ofrece una dimensión de embedding de hasta 1024 y soporte de dimensiones definidas por el usuario entre 32 y 1024 gracias a Matryoshka Representation Learning (MRL). Esta variante de 0.6B es la más ligera de la serie, que también incluye versiones de 4B y 8B, tanto de embedding como de reranking.
 
-Su relevancia actual radica en que permite desplegar recuperación semántica multilingüe (más de 100 idiomas, incluidos lenguajes de programación) en hardware muy modesto, incluso en CPU, gracias al formato GGUF y a la compatibilidad con llama.cpp. Es una pieza útil para pipelines RAG de bajo coste, búsqueda híbrida y sistemas de reranking donde no se dispone de GPU de altas prestaciones. Conviene señalar que el repositorio declara como modelo base Qwen/Qwen3-0.6B-Base en los metadatos de HuggingFace, mientras que la model card describe la serie Qwen3 Embedding; esta discrepancia de metadatos es habitual en conversiones GGUF y no altera el uso previsto del modelo.
+Su relevancia actual radica en que permite desplegar recuperación semántica multilingüe (más de 100 idiomas, incluidos lenguajes de programación) en hardware muy modesto, incluso en CPU, gracias al formato GGUF y a la compatibilidad con llama.cpp. Es una pieza útil para pipelines RAG de bajo coste, búsqueda híbrida y sistemas de reranking donde no se dispone de GPU de altas prestaciones. Conviene señalar que el repositorio declara como modelo base Qwen/Qwen3-0.6B-Base en los metadatos de Hugging Face, mientras que la model card describe la serie Qwen3 Embedding; esta discrepancia de metadatos es habitual en conversiones GGUF y no altera el uso previsto del modelo.
 
 ## Especificaciones tecnicas
 
@@ -79,12 +79,12 @@ No se han publicado resultados de benchmarks específicos para la variante de 0.
 
 | Modelo | Parametros | Contexto | Dimension de embedding | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| asincole/Qwen3-Embedding-0.6B-GGUF | 0,6B | 32K | hasta 1024 (MRL 32-1024) | Apache 2.0 | GGUF en HuggingFace |
-| Qwen/Qwen3-Embedding-0.6B | 0,6B | 32K | hasta 1024 | Apache 2.0 | safetensors en HuggingFace |
-| Qwen/Qwen3-Embedding-4B | 4B | 32K | 2560 | Apache 2.0 | safetensors en HuggingFace |
-| Qwen/Qwen3-Embedding-8B | 8B | 32K | 4096 | Apache 2.0 | safetensors en HuggingFace |
-| BAAI/bge-m3 | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| intfloat/multilingual-e5-large | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| asincole/Qwen3-Embedding-0.6B-GGUF | 0,6B | 32K | hasta 1024 (MRL 32-1024) | Apache 2.0 | GGUF en Hugging Face |
+| Qwen/Qwen3-Embedding-0.6B | 0,6B | 32K | hasta 1024 | Apache 2.0 | safetensors en Hugging Face |
+| Qwen/Qwen3-Embedding-4B | 4B | 32K | 2560 | Apache 2.0 | safetensors en Hugging Face |
+| Qwen/Qwen3-Embedding-8B | 8B | 32K | 4096 | Apache 2.0 | safetensors en Hugging Face |
+| BAAI/bge-m3 | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| intfloat/multilingual-e5-large | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 La serie Qwen3 Embedding cubre un rango de tamaños que permite elegir entre eficiencia (0.6B) y calidad máxima (8B) manteniendo la misma ventana de contexto de 32K y el mismo enfoque instruction-aware. Para alternativas externas como bge-m3 o multilingual-e5-large no se dispone de datos verificados en la información proporcionada, por lo que se marcan como no disponibles.
 

@@ -21,7 +21,7 @@ La relevancia de este modelo reside en que forma parte de una serie de experimen
 
 ## Arquitectura y entrenamiento
 
-La arquitectura base es Qwen2.5-7B-Instruct, un transformer decoder-only con attention de ventana deslizante alternada con attention global, group query attention (GQA) y tokenizer con vocabularies ampliados. El fine-tuning se realizo con Unsloth, que optimiza el uso de memoria durante el entrenamiento mediante kernels personalizados, y con la libreria TRL de HuggingFace para el pipeline de fine-tuning supervisado.
+La arquitectura base es Qwen2.5-7B-Instruct, un transformer decoder-only con attention de ventana deslizante alternada con attention global, group query attention (GQA) y tokenizer con vocabularies ampliados. El fine-tuning se realizo con Unsloth, que optimiza el uso de memoria durante el entrenamiento mediante kernels personalizados, y con la libreria TRL de Hugging Face para el pipeline de fine-tuning supervisado.
 
 No se proporciona informacion sobre el dataset de entrenamiento, el numero de tokens utilizados, ni si se aplicaron tecnicas como RLHF o DPO. El nombre del modelo sugiere un experimento con "collapse" de categorias numericas con un parametro p10, posiblemente relacionado con un dataset sintetico de operaciones aritmeticas o clasificacion numerica, pero esto es especulativo dado que no hay documentacion al respecto.
 
@@ -76,7 +76,7 @@ La comparativa directa no es posible sin datos de evaluacion del fine-tuning. El
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run2-gen4
+- Modelo en Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run2-gen4
 - Variante run2-gen2: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10-run2-gen2
 - Variante run2-gen7: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10-run2-gen7
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct

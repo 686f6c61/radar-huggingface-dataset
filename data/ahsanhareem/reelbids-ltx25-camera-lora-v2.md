@@ -85,8 +85,8 @@ La ventaja principal de ReelBids es la selección de velocidad por token en un s
 
 ## Enlaces
 
-- [HuggingFace - AhsanHareem/reelbids-ltx25-camera-lora-v2](https://huggingface.co/AhsanHareem/reelbids-ltx25-camera-lora-v2)
-- [HuggingFace - AhsanHareem/reelbids-ltx25-camera-lora (página principal)](https://huggingface.co/AhsanHareem/reelbids-ltx25-camera-lora)
+- [Hugging Face - AhsanHareem/reelbids-ltx25-camera-lora-v2](https://huggingface.co/AhsanHareem/reelbids-ltx25-camera-lora-v2)
+- [Hugging Face - AhsanHareem/reelbids-ltx25-camera-lora (página principal)](https://huggingface.co/AhsanHareem/reelbids-ltx25-camera-lora)
 - [Modelo base LTX-2.5 - Lightricks](https://ltx.io/model/open-source)
 - [Documentación de LTX-2.5](https://docs.ltx.io/models/ltx-2-5)
 - [Referencia a LTX-2.5 en X (Twitter)](https://x.com/aisearchio/status/2087261232919453908)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gayathri-er/kqv-m2-qwen3-4b-v1` es un repositorio de modelos publicado por el usuario gayathri-er en HuggingFace. La información verificable se limita a la licencia Apache 2.0, el identificador y las métricas del repositorio (0 descargas, 0 likes); la model card no incluye descripción, arquitectura, datos de entrenamiento, idiomas ni evaluación. El nombre sugiere una variante o derivado de Qwen3-4B, pero no hay confirmación documental de que los pesos correspondan a esa familia ni de qué se ha modificado.
+`gayathri-er/kqv-m2-qwen3-4b-v1` es un repositorio de modelos publicado por el usuario gayathri-er en Hugging Face. La información verificable se limita a la licencia Apache 2.0, el identificador y las métricas del repositorio (0 descargas, 0 likes); la model card no incluye descripción, arquitectura, datos de entrenamiento, idiomas ni evaluación. El nombre sugiere una variante o derivado de Qwen3-4B, pero no hay confirmación documental de que los pesos correspondan a esa familia ni de qué se ha modificado.
 
 El repositorio fue creado el 25 de octubre de 2026 y no declara pipeline, formato de pesos ni instrucciones de uso. Por tanto, no es posible determinar qué problema resuelve, qué capacidades tiene ni si es relevante para un caso concreto sin acceso a los pesos y a una validación independiente.
 
@@ -72,7 +72,7 @@ No se dispone de datos verificables de las alternativas en la información propo
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| gayathri-er/kqv-m2-qwen3-4b-v1 | ~4B (sugerido por el ID, no confirmado) | no disponible | Apache 2.0 | HuggingFace, 0 descargas |
+| gayathri-er/kqv-m2-qwen3-4b-v1 | ~4B (sugerido por el ID, no confirmado) | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
 | Qwen3-4B (referencia) | no disponible en la información | no disponible | no disponible | no disponible |
 | Llama 3.2 3B (referencia) | no disponible en la información | no disponible | no disponible | no disponible |
 | Phi-3.5-mini (referencia) | no disponible en la información | no disponible | no disponible | no disponible |
@@ -90,6 +90,6 @@ No se dispone de datos verificables de las alternativas en la información propo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gayathri-er/kqv-m2-qwen3-4b-v1
+- Hugging Face: https://huggingface.co/gayathri-er/kqv-m2-qwen3-4b-v1
 - Perfil del autor: https://huggingface.co/gayathri-er
 - No se han encontrado papers, blogs, repositorios de código ni demos en la información proporcionada.

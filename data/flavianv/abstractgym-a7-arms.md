@@ -122,7 +122,7 @@ No se dispone de datos de rendimiento de alternativas en la informacion proporci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/flavianv/abstractgym-a7-arms
+- Hugging Face: https://huggingface.co/flavianv/abstractgym-a7-arms
 - Codigo publico AbstractGym, rama a7: https://github.com/flavianv/abstractgym-public/tree/a7
 - Documentacion de resultados: `docs/a7_results.md` y `docs/results/a7/comparison.json` en la rama a7 del repositorio.
 - Paper de inspiracion: https://arxiv.org/abs/2609.30936

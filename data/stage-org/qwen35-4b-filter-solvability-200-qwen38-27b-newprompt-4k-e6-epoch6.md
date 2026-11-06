@@ -68,7 +68,7 @@ La model card no incluye comparaciones ni resultados de evaluación, por lo que 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Stage-org/qwen35-4b-filter-solvability-200-...-epoch6 | 4,54 B | No disponible (config. de RL: 65.536) | No disponible | Safetensors en HuggingFace, 0 descargas |
+| Stage-org/qwen35-4b-filter-solvability-200-...-epoch6 | 4,54 B | No disponible (config. de RL: 65.536) | No disponible | Safetensors en Hugging Face, 0 descargas |
 | Qwen/Qwen3.5-4B (modelo base declarado) | ≈4 B (no confirmado en esta busqueda) | No disponible en esta busqueda | No disponible en esta busqueda | Modelo base de referencia del entrenamiento |
 | Alternativas de la misma franja (3-4 B) | No disponible | No disponible | No disponible | No disponible |
 
@@ -88,7 +88,7 @@ No se dispone de información verificada sobre modelos comparables en el materia
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Stage-org/qwen35-4b-filter-solvability-200-qwen38-27b-newprompt-4k-e6-epoch6
+- Hugging Face: https://huggingface.co/Stage-org/qwen35-4b-filter-solvability-200-qwen38-27b-newprompt-4k-e6-epoch6
 - Dataset de entrenamiento declarado: `Stage-org/qwen35-4b-filter-solvability-200-qwen38-27b-newprompt-4k` (referenciado en la model card; no se ha verificado su URL pública)
 - Modelo base declarado: `Qwen/Qwen3.5-4B` (referenciado en la configuración de entrenamiento; no se ha verificado su URL pública)
 - Paper, blog, repositorio o demo adicionales: no disponible; la búsqueda web no devolvió ningún enlace relacionado con el modelo.

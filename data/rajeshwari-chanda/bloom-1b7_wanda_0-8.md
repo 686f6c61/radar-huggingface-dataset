@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Rajeshwari-Chanda/bloom-1b7_wanda_0.8` es un checkpoint derivado de BLOOM-1b7 (1.722.408.960 parámetros reales segun los pesos safetensors publicados, ~1,72 mil millones) al que se le ha aplicado poda (pruning) con el metodo Wanda, segun se deduce del sufijo `wanda_0.8` del identificador. El modelo lo publica el usuario Rajeshwari-Chanda en HuggingFace, sin articulo, sin blog asociado y sin model card redactada: la tarjeta del repositorio es la plantilla autogenerada por `transformers`, con todos los campos marcados como `[More Information Needed]`.
+`Rajeshwari-Chanda/bloom-1b7_wanda_0.8` es un checkpoint derivado de BLOOM-1b7 (1.722.408.960 parámetros reales segun los pesos safetensors publicados, ~1,72 mil millones) al que se le ha aplicado poda (pruning) con el metodo Wanda, segun se deduce del sufijo `wanda_0.8` del identificador. El modelo lo publica el usuario Rajeshwari-Chanda en Hugging Face, sin articulo, sin blog asociado y sin model card redactada: la tarjeta del repositorio es la plantilla autogenerada por `transformers`, con todos los campos marcados como `[More Information Needed]`.
 
 El problema que aborda es el habitual en la investigacion sobre compresion de modelos: reducir el coste computacional y de memoria de un transformer sin reentrenarlo, aplicando una mascara de poda basada en la magnitud de los pesos ponderada por las activaciones de calibracion. En este caso, el `0.8` sugiere un ratio de poda del 80 por ciento, aunque la model card no lo confirma ni especifica si la poda es no estructurada (unstructured), semi-estructurada 2:4 o estructurada.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bloom-1b7_wanda_0.8 (este) | 1,72B | No disponible (base 2048) | No disponible | No disponible | HuggingFace, 0 descargas |
-| BLOOM-1b7 (base denso) | 1,72B | 2048 | Benchmark publicado por BigScience | BigScience RAIL v1.0 | HuggingFace `bigscience/bloom-1b7` |
-| TinyLlama-1.1B | 1,1B | 2048 | Benchmark en su model card | Apache-2.0 | HuggingFace `TinyLlama/TinyLlama-1.1B-Chat-v1.0` |
-| Qwen2.5-1.5B | 1,54B | 32768 | Benchmark en su model card | Apache-2.0 (salvo variantes) | HuggingFace `Qwen/Qwen2.5-1.5B` |
+| bloom-1b7_wanda_0.8 (este) | 1,72B | No disponible (base 2048) | No disponible | No disponible | Hugging Face, 0 descargas |
+| BLOOM-1b7 (base denso) | 1,72B | 2048 | Benchmark publicado por BigScience | BigScience RAIL v1.0 | Hugging Face `bigscience/bloom-1b7` |
+| TinyLlama-1.1B | 1,1B | 2048 | Benchmark en su model card | Apache-2.0 | Hugging Face `TinyLlama/TinyLlama-1.1B-Chat-v1.0` |
+| Qwen2.5-1.5B | 1,54B | 32768 | Benchmark en su model card | Apache-2.0 (salvo variantes) | Hugging Face `Qwen/Qwen2.5-1.5B` |
 
 Los datos de los modelos alternativos provienen de su documentacion publica y se incluyen solo como referencia de categoria. La comparacion de rendimiento directa con este checkpoint no es posible porque no existe ninguna evaluacion publicada del mismo.
 
@@ -82,7 +82,7 @@ Los datos de los modelos alternativos provienen de su documentacion publica y se
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rajeshwari-Chanda/bloom-1b7_wanda_0.8
+- Modelo en Hugging Face: https://huggingface.co/Rajeshwari-Chanda/bloom-1b7_wanda_0.8
 - Referencia de arquitectura base BLOOM: https://huggingface.co/bigscience/bloom-1b7
 - Paper de BLOOM: https://arxiv.org/abs/2211.05100
 - Paper citado en los tags del repositorio (`arxiv:1910.09700`, Lacoste et al., 2019, calculo de impacto ambiental; aparece en la plantilla de la model card, no describe el modelo): https://arxiv.org/abs/1910.09700

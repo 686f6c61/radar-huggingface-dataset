@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CERBER-ULTRA es un archivo de experimentos de vision por computador publicado en HuggingFace por el usuario MagistrTheOne, construido sobre Ultralytics YOLO26. No se trata de un modelo de lenguaje ni de un modelo unico entrenado de forma monolítica, sino de una recopilacion de ejecuciones de entrenamiento y validacion (configuraciones, pesos `best.pt`/`last.pt`, exportaciones ONNX, tablas de entrenamiento, metricas y visualizaciones) organizadas con la misma estructura que los runs originales de Google Drive. El repositorio ocupa 0,2 GB y esta etiquetado con la libreria `ultralytics` y el pipeline `object-detection`.
+CERBER-ULTRA es un archivo de experimentos de vision por computador publicado en Hugging Face por el usuario MagistrTheOne, construido sobre Ultralytics YOLO26. No se trata de un modelo de lenguaje ni de un modelo unico entrenado de forma monolítica, sino de una recopilacion de ejecuciones de entrenamiento y validacion (configuraciones, pesos `best.pt`/`last.pt`, exportaciones ONNX, tablas de entrenamiento, metricas y visualizaciones) organizadas con la misma estructura que los runs originales de Google Drive. El repositorio ocupa 0,2 GB y esta etiquetado con la libreria `ultralytics` y el pipeline `object-detection`.
 
 La variante concreta documentada en la model card es YOLO26n (variante nano) aplicada a dos conjuntos de datos distintos: VisDrone y un conjunto interno denominado Seraphim. Los resultados publicados son mAP50 de 0,2881 y mAP50-95 de 0,1593 para VisDrone, y mAP50 de 0,9714 y mAP50-95 de 0,6360 para Seraphim. El propio autor advierte que las metricas corresponden a validaciones internas, que Seraphim se evaluo sobre el subconjunto de validacion derivado del conjunto de entrenamiento y que no se trata de una evaluacion sobre el test oficial, por lo que los numeros de ambos conjuntos no son directamente comparables entre si.
 
@@ -17,7 +17,7 @@ Su relevancia practica es acotada y de caracter reproducible: sirve como materia
 | Longitud de contexto | no aplica (modelo de deteccion de objetos) |
 | Tipos de cuantizacion | no disponible; el repositorio incluye exportaciones ONNX ademas de pesos PyTorch |
 | Idiomas soportados | ru, en (segun las etiquetas del repositorio) |
-| Licencia | no disponible en los metadatos de HuggingFace; la model card indica que se aplican las condiciones de Ultralytics y de los datasets de origen |
+| Licencia | no disponible en los metadatos de Hugging Face; la model card indica que se aplican las condiciones de Ultralytics y de los datasets de origen |
 | Formato de pesos | PyTorch (`best.pt`, `last.pt`) y ONNX |
 | Tamano del repositorio | 0,2 GB |
 | Pipeline | object-detection |
@@ -79,12 +79,12 @@ La informacion proporcionada no incluye especificaciones de modelos comparables 
 
 | Modelo | Parametros | Entrada | mAP | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CERBER-ULTRA (YOLO26n) | no disponible | no disponible | 0,2881 / 0,1593 en VisDrone y 0,9714 / 0,6360 en Seraphim (val interna) | Condiciones de Ultralytics y de los datasets de origen | HuggingFace (0 descargas, 0 likes) |
+| CERBER-ULTRA (YOLO26n) | no disponible | no disponible | 0,2881 / 0,1593 en VisDrone y 0,9714 / 0,6360 en Seraphim (val interna) | Condiciones de Ultralytics y de los datasets de origen | Hugging Face (0 descargas, 0 likes) |
 | Alternativas comparables (YOLOv8n, YOLO11n, RT-DETR) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Licencia no declarada en los metadatos de HuggingFace. La model card remite a las condiciones de Ultralytics y de los datasets de origen, y aclara que el archivo no concede derechos adicionales sobre componentes de terceros. Antes de un uso comercial es imprescindible aclarar la licencia aplicable.
+- Licencia no declarada en los metadatos de Hugging Face. La model card remite a las condiciones de Ultralytics y de los datasets de origen, y aclara que el archivo no concede derechos adicionales sobre componentes de terceros. Antes de un uso comercial es imprescindible aclarar la licencia aplicable.
 - Las metricas publicadas proceden de validaciones internas, no de test oficiales. El 0,9714 de mAP50 en Seraphim se obtuvo sobre validacion derivada del subconjunto de entrenamiento, por lo que esta muy probablemente sobreestimado y no representa el rendimiento en datos nuevos.
 - Los resultados de VisDrone y Seraphim no son comparables entre si porque los conjuntos de clases son distintos y los protocolos de evaluacion difieren.
 - El mAP50-95 de VisDrone (0,1593) es bajo en terminos absolutos, lo que limita su uso directo en produccion sobre escenas aereas sin reentrenamiento.
@@ -99,6 +99,6 @@ La informacion proporcionada no incluye especificaciones de modelos comparables 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MagistrTheOne/CERBER-ULTRA
+- Hugging Face: https://huggingface.co/MagistrTheOne/CERBER-ULTRA
 - Repositorio de codigo del proyecto (NULLXES-CERBER-ULTRA): https://github.com/MagistrTheOne/NULLXES-CERBER-ULTRA
 - Paper, blog o demo adicionales: no disponible. Los resultados de la busqueda web proporcionados no contienen ninguna referencia valida a este modelo.

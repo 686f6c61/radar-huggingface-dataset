@@ -66,6 +66,6 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nadtoka/predictive-stock-models
+- Hugging Face: https://huggingface.co/nadtoka/predictive-stock-models
 - Repositorio de archivos: https://huggingface.co/nadtoka/predictive-stock-models/tree/main
 - Repositorio de GitHub relacionado: https://github.com/nadtoka/predictive-stock-mlops

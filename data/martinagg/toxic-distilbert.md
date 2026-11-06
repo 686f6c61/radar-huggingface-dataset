@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Martinagg/toxic-distilbert` | 66,9 M | 128 tokens | DistilBERT fine-tuned con etiquetas suaves y pesos por identidad | MIT | HuggingFace (24 descargas) |
+| `Martinagg/toxic-distilbert` | 66,9 M | 128 tokens | DistilBERT fine-tuned con etiquetas suaves y pesos por identidad | MIT | Hugging Face (24 descargas) |
 | TF-IDF + regresion logistica (baseline del autor) | no aplica | no aplica | Bolsa de palabras clasica | no disponible | Implementacion propia |
 | Word blocklist (LDNOOBW) | no aplica | no aplica | Lista de palabras prohibidas | no disponible | Publica |
-| `unitary/toxic-bert` (referencia de la categoria) | ~110 M | 512 tokens | BERT-base fine-tuned en Jigsaw | Apache 2.0 | HuggingFace |
+| `unitary/toxic-bert` (referencia de la categoria) | ~110 M | 512 tokens | BERT-base fine-tuned en Jigsaw | Apache 2.0 | Hugging Face |
 
 La comparacion con `unitary/toxic-bert` es por categoria y tamano, no por resultados medidos en el mismo test: no se dispone de una evaluacion cruzada en la informacion proporcionada. Frente a los baselines del propio autor, este modelo mejora el F1 de 0,61 a 0,67 y el PR-AUC de 0,69 a 0,78.
 
@@ -92,7 +92,7 @@ La comparacion con `unitary/toxic-bert` es por categoria y tamano, no por result
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Martinagg/toxic-distilbert
+- Modelo en Hugging Face: https://huggingface.co/Martinagg/toxic-distilbert
 - Codigo del proyecto: https://github.com/martinagg7/ML-ToxicModeration
 - Dataset de entrenamiento: https://www.kaggle.com/c/jigsaw-unintended-bias-in-toxicity-classification
 - Modelo base: https://huggingface.co/distilbert/distilbert-base-uncased

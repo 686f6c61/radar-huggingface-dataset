@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes. La prin
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.8-27B-Obliterated-NOESIS-BF16-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-27B-Obliterated-NOESIS-BF16-GGUF
 - Modelo base: https://huggingface.co/AMAImedia/Qwen3.8-27B-Obliterated-NOESIS-BF16
 - Repositorio GitHub de Qwen3.8: https://github.com/QwenLM/Qwen3.8
 - Blog sobre la versión uncensored: https://www.orcarouter.ai/blog/qwen-3-8-27b-uncensored-gguf

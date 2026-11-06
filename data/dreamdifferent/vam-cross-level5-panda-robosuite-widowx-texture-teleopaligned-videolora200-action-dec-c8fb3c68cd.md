@@ -73,7 +73,7 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dreamdifferent/vam-cross-level5-panda-robosuite-widowx-texture-teleopaligned-videolora200-action-dec-c8fb3c68cd
+- Repositorio Hugging Face: https://huggingface.co/dreamdifferent/vam-cross-level5-panda-robosuite-widowx-texture-teleopaligned-videolora200-action-dec-c8fb3c68cd
 - Video LoRA congelado (iteracion 400): https://huggingface.co/dreamdifferent/vam-cross-level5-panda-robosuite-widowx-texture-video-lora-iter-400
 - Checkpoint similar para UR5e: https://huggingface.co/dreamdifferent/vam-cross-level2-ur5e-widowx-texture-teleopaligned-videolora200-action-decoder-iter900
 - Robosuite (simulador): https://github.com/ARISE-Initiative/robosuite

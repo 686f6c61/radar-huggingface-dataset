@@ -1,7 +1,7 @@
 # joshycodes/qwen3-4b-fve-mix-s0
 
 ## Resumen
-`joshycodes/qwen3-4b-fve-mix-s0` es un checkpoint de investigación publicado en HuggingFace por el usuario joshycodes, consistente en un entrenamiento continuado (continued pretraining) de pesos completos sobre `Qwen/Qwen3-4B`. Según la model card, se entrenó durante 1 época con un learning rate de 1e-05 sobre 37.003.741 tokens y 37.745 documentos procedentes de un corpus sintético denominado `flourishing-vs-equanimity`, generado supuestamente por el propio modelo como parte de una línea de trabajo sobre bienestar de modelos (model welfare). El checkpoint tiene 4.411.424.256 parámetros (dato real de los safetensors) y el repositorio ocupa 8,8 GB.
+`joshycodes/qwen3-4b-fve-mix-s0` es un checkpoint de investigación publicado en Hugging Face por el usuario joshycodes, consistente en un entrenamiento continuado (continued pretraining) de pesos completos sobre `Qwen/Qwen3-4B`. Según la model card, se entrenó durante 1 época con un learning rate de 1e-05 sobre 37.003.741 tokens y 37.745 documentos procedentes de un corpus sintético denominado `flourishing-vs-equanimity`, generado supuestamente por el propio modelo como parte de una línea de trabajo sobre bienestar de modelos (model welfare). El checkpoint tiene 4.411.424.256 parámetros (dato real de los safetensors) y el repositorio ocupa 8,8 GB.
 
 El interés del artefacto es metodológico más que funcional: documenta un bucle de autoentrenamiento (SDF, synthetic-document finetuning) aplicado a un modelo denso de 4B en una única GPU, dentro de una familia de experimentos relacionados del mismo autor (`qwen3-4b-sorrel-selfloop-g3-midtrain`, `qwen3-4b-sorrel-selfloop-g6-midtrain`) vinculados a un proyecto tipo Anthropic Fellows sobre entrenamiento de carácter con encuadre de "flourishing". No obstante, la propia model card contiene una contradicción relevante: el título afirma que el corpus es autoescrito por el modelo, mientras que los metadatos indican "0 self-authored y 37.745 texto ordinario", por lo que la composición real del corpus no queda clara.
 
@@ -82,8 +82,8 @@ Las cifras siguientes son estimaciones derivadas del número real de parámetros
 | Modelo | Parámetros | Arquitectura | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | `joshycodes/qwen3-4b-fve-mix-s0` | 4.411.424.256 | Transformer denso (heredado) | no disponible | research-only (`other`) | safetensors, 8,8 GB, 0 descargas |
-| `Qwen/Qwen3-4B` (base) | no disponible en la información proporcionada | Transformer denso | no disponible | Apache 2.0 según la documentación pública de Qwen3 (no verificado en la información proporcionada) | público en HuggingFace |
-| `Qwen3-4B-Instruct-2507` | no disponible | Transformer denso | no disponible | Apache 2.0 según la documentación pública de Qwen3 (no verificado) | público en HuggingFace |
+| `Qwen/Qwen3-4B` (base) | no disponible en la información proporcionada | Transformer denso | no disponible | Apache 2.0 según la documentación pública de Qwen3 (no verificado en la información proporcionada) | público en Hugging Face |
+| `Qwen3-4B-Instruct-2507` | no disponible | Transformer denso | no disponible | Apache 2.0 según la documentación pública de Qwen3 (no verificado) | público en Hugging Face |
 | `joshycodes/qwen3-4b-sorrel-selfloop-g3-midtrain` | no disponible | Transformer denso (heredado) | no disponible | artefacto privado de investigación, no redistribuir | acceso restringido |
 
 No es posible establecer una comparativa de rendimiento porque ninguno de los artefactos de este autor tiene benchmarks publicados y la información proporcionada no incluye métricas del modelo base ni de sus variantes.
@@ -102,7 +102,7 @@ No es posible establecer una comparativa de rendimiento porque ninguno de los ar
 - Uso en producción: no apto. Si el objetivo es un modelo de 4B desplegable, `Qwen/Qwen3-4B` o `Qwen3-4B-Instruct-2507` son opciones verificadas y con licencia permisiva.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/qwen3-4b-fve-mix-s0
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/qwen3-4b-fve-mix-s0
 - Repositorio de Qwen3 (código y documentación): https://github.com/QwenLM/Qwen3
 - Qwen3 Technical Report (arXiv): https://arxiv.org/pdf/2505.09388
 - Guía completa de la familia Qwen3: https://insiderllm.com/guides/qwen3-complete-guide/

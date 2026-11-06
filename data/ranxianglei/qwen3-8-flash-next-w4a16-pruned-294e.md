@@ -87,7 +87,7 @@ La comparativa se limita a las variantes del mismo modelo base, ya que no se dis
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ranxianglei/Qwen3.8-Flash-Next-W4A16-Pruned-294E
+- Repositorio Hugging Face: https://huggingface.co/ranxianglei/Qwen3.8-Flash-Next-W4A16-Pruned-294E
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Cuantización Intel: https://huggingface.co/Intel/Qwen3.8-Flash-Next-W4A16-AutoRound
 - GitHub del modelo base: https://github.com/QwenLM/Qwen3.8-Flash-Next/

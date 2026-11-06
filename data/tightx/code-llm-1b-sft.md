@@ -6,7 +6,7 @@
 
 El modelo es relevante como ejercicio de transparencia y trazabilidad: el autor documenta el recetario completo (91,78M tokens de SFT, 2.801 pasos, selección por pérdida de validación), publica el hash SHA256 de los pesos y detalla las limitaciones conocidas con una franqueza poco habitual. No obstante, su escala (1.1B parámetros, contexto de 1.024 tokens) y su alcance (solo Python, solo código) lo sitúan en un nicho muy concreto: experimentación educativa y reproducción de pipelines de entrenamiento, no producción generalista.
 
-La ficha se basa exclusivamente en la model card y los metadatos de HuggingFace; no se dispone de información adicional sobre el corpus de preentrenamiento ni sobre evaluación con benchmarks estándar.
+La ficha se basa exclusivamente en la model card y los metadatos de Hugging Face; no se dispone de información adicional sobre el corpus de preentrenamiento ni sobre evaluación con benchmarks estándar.
 
 ## Especificaciones tecnicas
 
@@ -97,5 +97,5 @@ No se dispone de datos de benchmarks comunes que permitan una comparación numé
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TightX/code-llm-1b-sft
+- Modelo en Hugging Face: https://huggingface.co/TightX/code-llm-1b-sft
 - Repositorio GitHub (registro de diseño, log de fine-tuning, generaciones juzgadas y ablaciones): https://github.com/TightXu/Simple_Code_LLM

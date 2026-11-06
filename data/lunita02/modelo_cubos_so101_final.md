@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto / entradas | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Lunita02/modelo_cubos_so101_final` (ACT) | 51,7 M | 2 cámaras 480x640 + estado (6,) | Manipulación SO-101 | Apache-2.0 | HuggingFace Hub, 95 descargas |
+| `Lunita02/modelo_cubos_so101_final` (ACT) | 51,7 M | 2 cámaras 480x640 + estado (6,) | Manipulación SO-101 | Apache-2.0 | Hugging Face Hub, 95 descargas |
 | Políticas ACT genéricas de LeRobot | no disponible | configuración variable | Imitación robótica | Apache-2.0 (LeRobot) | Hub y documentación LeRobot |
 | Diffusion Policy (referencia del ecosistema) | no disponible | imágenes + estado | Imitación robótica | según implementación | Repositorios de investigación |
 | VLA generalistas (p. ej., familias tipo RT/OpenVLA) | no disponible en esta ficha | instrucciones en lenguaje + visión | Control robótico generalista | variable | no disponible |
@@ -95,7 +95,7 @@ La comparación cuantitativa con alternativas no es posible: no hay benchmarks p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lunita02/modelo_cubos_so101_final
+- Modelo en Hugging Face: https://huggingface.co/Lunita02/modelo_cubos_so101_final
 - Dataset de entrenamiento: https://huggingface.co/datasets/Lunita02/Cubos_300
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=Lunita02/Cubos_300
 - Paper de ACT: https://huggingface.co/papers/2304.13705 (arXiv:2304.13705)

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `lugman-madhiai/invoice-split-2023-only` es un ajuste fino (finetune) de tipo vision-lenguaje publicado por el usuario lugman-madhiai en HuggingFace. Se construye sobre `lugman-madhiai/invoice-split-2022` y emplea la arquitectura etiquetada como `qwen3_vl`, con 8.767.123.696 parametros totales (aproximadamente 8,77 mil millones) y un peso de repositorio de 17,5 GB en formato safetensors. La pipeline declarada es `image-text-to-text`, lo que indica que acepta imagenes y texto como entrada y genera texto como salida.
+El modelo `lugman-madhiai/invoice-split-2023-only` es un ajuste fino (finetune) de tipo vision-lenguaje publicado por el usuario lugman-madhiai en Hugging Face. Se construye sobre `lugman-madhiai/invoice-split-2022` y emplea la arquitectura etiquetada como `qwen3_vl`, con 8.767.123.696 parametros totales (aproximadamente 8,77 mil millones) y un peso de repositorio de 17,5 GB en formato safetensors. La pipeline declarada es `image-text-to-text`, lo que indica que acepta imagenes y texto como entrada y genera texto como salida.
 
-El nombre del modelo sugiere un uso especializado en el procesamiento y la separacion (splitting) de facturas, probablemente a partir de imagenes o documentos escaneados, si bien la model card no documenta la tarea, el dataset ni el procedimiento de entrenamiento. El autor indica unicamente que el entrenamiento se realizo con Unsloth y la libreria TRL de HuggingFace, con una aceleracion declarada de 2x respecto a un entrenamiento convencional. No se aportan detalles sobre composicion del dataset, numero de tokens, tecnicas de alineacion (RLHF, DPO) ni evaluaciones.
+El nombre del modelo sugiere un uso especializado en el procesamiento y la separacion (splitting) de facturas, probablemente a partir de imagenes o documentos escaneados, si bien la model card no documenta la tarea, el dataset ni el procedimiento de entrenamiento. El autor indica unicamente que el entrenamiento se realizo con Unsloth y la libreria TRL de Hugging Face, con una aceleracion declarada de 2x respecto a un entrenamiento convencional. No se aportan detalles sobre composicion del dataset, numero de tokens, tecnicas de alineacion (RLHF, DPO) ni evaluaciones.
 
 La relevancia de esta ficha es limitada en terminos de evidencia: el modelo acumula 0 descargas y 0 likes en el momento de la consulta, no publica benchmarks y su model card es practicamente un stub generado por la plantilla de Unsloth. Se trata, por tanto, de un artefacto experimental o de un checkpoint intermedio de un pipeline propio del autor, no de un modelo validado para produccion. La busqueda web no ha devuelto ningun resultado relevante sobre este modelo ni sobre su autor.
 
@@ -32,7 +32,7 @@ Respecto al entrenamiento, la model card indica que se trata de un finetune de `
 - Generacion de texto condicionada por imagen (pipeline `image-text-to-text`): el modelo puede recibir una o varias imagenes junto con una instruccion de texto y producir una respuesta textual.
 - Comprension de documentos visuales: por el nombre y el linaje del modelo, el caso de uso previsto es el analisis de facturas, presumiblemente la segmentacion o extraccion de sus partes.
 - Modo conversacional: el repositorio incluye el tag `conversational`, lo que indica plantilla de chat con turnos de usuario y asistente.
-- Compatibilidad con Text Generation Inference: el tag `text-generation-inference` y `endpoints_compatible` indican que puede desplegarse con el servidor TGI de HuggingFace y con Inference Endpoints.
+- Compatibilidad con Text Generation Inference: el tag `text-generation-inference` y `endpoints_compatible` indican que puede desplegarse con el servidor TGI de Hugging Face y con Inference Endpoints.
 - Soporte multilingue: limitado al ingles segun el campo `language` del repositorio.
 - Tool calling / function calling: no disponible, no se documenta ninguna capacidad de llamada a herramientas.
 - Capacidades de agente y razonamiento multi-paso: no disponible, no se documentan.
@@ -61,16 +61,16 @@ La model card no incluye ninguna tabla de evaluacion (MMLU, HumanEval, GSM8K, Do
 - VRAM estimada en cuantizacion de 4 bits: aproximadamente 5 GB de pesos, viable en GPUs de 8-12 GB, si bien no se publican variantes GGUF ni AWQ listas para usar y habria que generarlas.
 - GPU recomendadas: A100 40 GB, H100 80 GB o L40S 48 GB para servicio concurrente en BF16; RTX 4090 / RTX 6000 Ada de 24 GB para inferencia en BF16 con lotes pequenos o en 8 bits con mayor margen.
 - Compatibilidad con GPU de consumo: si, previsiblemente en RTX 4090 (24 GB) en BF16 con poco margen, y en RTX 3090, 4080 o 4070 Ti Super si se cuantiza a 8 o 4 bits. No hay confirmacion del autor.
-- Opciones de despliegue: transformers (libreria declarada), Text Generation Inference (tag explicito), HuggingFace Inference Endpoints (tag `endpoints_compatible`). vLLM, Ollama y llama.cpp no estan confirmados por el repositorio, ya que no se publican pesos GGUF.
+- Opciones de despliegue: transformers (libreria declarada), Text Generation Inference (tag explicito), Hugging Face Inference Endpoints (tag `endpoints_compatible`). vLLM, Ollama y llama.cpp no estan confirmados por el repositorio, ya que no se publican pesos GGUF.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| invoice-split-2023-only | 8,77 mil millones | no disponible | no disponible | apache-2.0 | HuggingFace, pesos safetensors |
-| invoice-split-2022 (modelo base del que deriva) | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada | HuggingFace |
-| Qwen3-VL (familia base) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | HuggingFace |
+| invoice-split-2023-only | 8,77 mil millones | no disponible | no disponible | apache-2.0 | Hugging Face, pesos safetensors |
+| invoice-split-2022 (modelo base del que deriva) | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada | Hugging Face |
+| Qwen3-VL (familia base) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | Hugging Face |
 | Otros modelos vision-lenguaje de clase 8B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos verificables para establecer una comparativa cuantitativa. El modelo no publica evaluaciones, el modelo base del que parte tampoco esta documentado en la informacion facilitada y la busqueda web no ha devuelto referencias tecnicas utilizables.
@@ -89,8 +89,8 @@ No se dispone de datos verificables para establecer una comparativa cuantitativa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lugman-madhiai/invoice-split-2023-only
+- Modelo en Hugging Face: https://huggingface.co/lugman-madhiai/invoice-split-2023-only
 - Modelo base declarado: https://huggingface.co/lugman-madhiai/invoice-split-2022
 - Repositorio de Unsloth (mencionado en la model card): https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace (mencionada en la model card): https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face (mencionada en la model card): https://github.com/huggingface/trl
 - Paper, blog o demo oficial: no disponible. La busqueda web realizada no ha devuelto ningun resultado relevante sobre este modelo, su autor o su tarea.

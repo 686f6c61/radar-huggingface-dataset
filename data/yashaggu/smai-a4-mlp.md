@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`smai-a4-mlp` es un perceptrón multicapa (MLP) entrenado sobre CIFAR-10 y publicado en HuggingFace por el usuario `yashaggu` como parte de la asignatura SMAI (Assignment 4). No se trata de un modelo de lenguaje ni de un modelo fundacional: es una red neuronal totalmente conectada de tres capas (3072-256-128-10) pensada para clasificación de imágenes de 32x32x3 en las diez clases de CIFAR-10. El repositorio tiene un tamaño declarado de 0.0 GB y no incluye pipeline, licencia ni idiomas especificados.
+`smai-a4-mlp` es un perceptrón multicapa (MLP) entrenado sobre CIFAR-10 y publicado en Hugging Face por el usuario `yashaggu` como parte de la asignatura SMAI (Assignment 4). No se trata de un modelo de lenguaje ni de un modelo fundacional: es una red neuronal totalmente conectada de tres capas (3072-256-128-10) pensada para clasificación de imágenes de 32x32x3 en las diez clases de CIFAR-10. El repositorio tiene un tamaño declarado de 0.0 GB y no incluye pipeline, licencia ni idiomas especificados.
 
 El modelo no resuelve tareas de generación de texto, razonamiento, código ni visión general; su alcance es estrictamente académico y demostrativo. La relevancia es, por tanto, limitada a contextos docentes o como referencia de implementación de un MLP con normalización de entradas y entrenamiento con SGD. No hay información sobre métricas de evaluación, por lo que no es posible valorar su rendimiento frente a alternativas.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Arquitectura | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `smai-a4-mlp` (este) | MLP 3072-256-128-10 | ≈819.466 | no aplica | no disponible | HuggingFace, `.npz` |
+| `smai-a4-mlp` (este) | MLP 3072-256-128-10 | ≈819.466 | no aplica | no disponible | Hugging Face, `.npz` |
 | LeNet-5 (referencia clásica) | CNN | ≈61.706 | no aplica | dominio público (arquitectura) | múltiples implementaciones |
 | ResNet-20 para CIFAR-10 | CNN con conexiones residuales | ≈272.474 | no aplica | múltiples (MIT/Apache en implementaciones) | múltiples repositorios |
 | ViT pequeño para CIFAR-10 | Transformer de visión | millones | no aplica | múltiples | múltiples repositorios |
@@ -81,5 +81,5 @@ La comparación es orientativa: LeNet-5 y ResNet-20 son alternativas canónicas 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yashaggu/smai-a4-mlp
+- Hugging Face: https://huggingface.co/yashaggu/smai-a4-mlp
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

@@ -97,7 +97,7 @@ La model card afirma que el modelo queda primero en 7 de 8 benchmarks (contando 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JuneoAI/Laplace-1-Vector
+- Modelo en Hugging Face: https://huggingface.co/JuneoAI/Laplace-1-Vector
 - Modelo flagship de la familia: https://huggingface.co/JuneoAI/Laplace-1-Atlas
 - Dataset Decision Forge: https://github.com/Juneo-Lab/decision-forge
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.6-4B

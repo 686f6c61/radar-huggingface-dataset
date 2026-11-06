@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Co-DINO es un modelo de detección de objetos basado en el framework Co-DETR (DETRs with Collaborative Hybrid Assignments Training), presentado en ICCV 2023 por un equipo de SenseTime X-Lab. Este checkpoint concreto utiliza un backbone ResNet-50 y una configuración de 5 escalas, entrenado durante 12 épocas en el dataset COCO 2017. El modelo alcanza un box AP de 52.1 en el split val2017 de COCO, un resultado sólido para un modelo de tamaño medio. La particularidad de Co-DETR es su esquema de entrenamiento colaborativo: combina cabezas auxiliares con asignación one-to-many (ATSS y RoI) junto al decoder de DETR con matching húngaro one-to-one, lo que acelera la convergencia y mejora la discriminación de las características. Este checkpoint es un mirror publicado en HuggingFace por el usuario dronefreak, que reproduce exactamente los pesos publicados por los autores originales en Google Drive, con la intención de facilitar su descarga y verificación. No es un modelo de lenguaje, sino un detector de objetos puro, por lo que su uso está orientado a tareas de visión por computador.
+Co-DINO es un modelo de detección de objetos basado en el framework Co-DETR (DETRs with Collaborative Hybrid Assignments Training), presentado en ICCV 2023 por un equipo de SenseTime X-Lab. Este checkpoint concreto utiliza un backbone ResNet-50 y una configuración de 5 escalas, entrenado durante 12 épocas en el dataset COCO 2017. El modelo alcanza un box AP de 52.1 en el split val2017 de COCO, un resultado sólido para un modelo de tamaño medio. La particularidad de Co-DETR es su esquema de entrenamiento colaborativo: combina cabezas auxiliares con asignación one-to-many (ATSS y RoI) junto al decoder de DETR con matching húngaro one-to-one, lo que acelera la convergencia y mejora la discriminación de las características. Este checkpoint es un mirror publicado en Hugging Face por el usuario dronefreak, que reproduce exactamente los pesos publicados por los autores originales en Google Drive, con la intención de facilitar su descarga y verificación. No es un modelo de lenguaje, sino un detector de objetos puro, por lo que su uso está orientado a tareas de visión por computador.
 
 ## Especificaciones técnicas
 
@@ -65,7 +65,7 @@ No se han incluido comparativas con otros modelos en la información proporciona
 
 - Licencia unknown: los pesos no tienen una licencia explícita, lo que genera incertidumbre para su uso comercial. La model card indica "Weights license undetermined".
 - No es un release oficial: es un mirror de un checkpoint de los autores originales; no hay garantía de mantenimiento ni soporte.
-- Requerimientos de entorno: exige una versión específica de MMDetection/MMCV/PyTorch y el código del proyecto; no funciona con la librería transformers de HuggingFace.
+- Requerimientos de entorno: exige una versión específica de MMDetection/MMCV/PyTorch y el código del proyecto; no funciona con la librería transformers de Hugging Face.
 - Sesgos: entrenado en COCO, el modelo puede heredar sesgos del dataset (categorías predominantemente occidentales, imágenes de internet) y puede tener peor rendimiento en dominios no representados.
 - Riesgo de falsos positivos: en visión, el modelo puede producir bounding boxes erróneos, especialmente en escenas con oclusiones, poca luz o categorías visualmente similares.
 - Limitaciones de contexto o idioma: no aplica, al ser un modelo de detección de objetos.
@@ -73,7 +73,7 @@ No se han incluido comparativas con otros modelos en la información proporciona
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dronefreak/co-dino-5scale-lsj-r50-1x-coco
+- Hugging Face: https://huggingface.co/dronefreak/co-dino-5scale-lsj-r50-1x-coco
 - Paper (arXiv): https://arxiv.org/abs/2211.12860
 - Repositorio oficial: https://github.com/Sense-X/Co-DETR
 - Fork mantenido: https://github.com/dronefreak/Co-DETR

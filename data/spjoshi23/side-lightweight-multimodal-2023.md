@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Spjoshi23/side-lightweight-multimodal-2023` no es un modelo de aprendizaje automatico entrenado, sino un repositorio de notas de investigacion publicado en HuggingFace bajo la etiqueta `research-notes`. La propia model card lo declara explicitamente: "It does not claim benchmark improvements, completed ablations, released code, or a trained checkpoint". El artefacto principal es un fichero `summary.md` que recoge el planteamiento de una pregunta de investigacion sobre multimodalidad ligera, hipotesis, referencias de evaluacion y preguntas abiertas, no pesos utilizables para inferencia.
+`Spjoshi23/side-lightweight-multimodal-2023` no es un modelo de aprendizaje automatico entrenado, sino un repositorio de notas de investigacion publicado en Hugging Face bajo la etiqueta `research-notes`. La propia model card lo declara explicitamente: "It does not claim benchmark improvements, completed ablations, released code, or a trained checkpoint". El artefacto principal es un fichero `summary.md` que recoge el planteamiento de una pregunta de investigacion sobre multimodalidad ligera, hipotesis, referencias de evaluacion y preguntas abiertas, no pesos utilizables para inferencia.
 
 El autor lo publica como material de trabajo exploratorio: separa explicitamente los planes y las hipotesis de los resultados ya completados, y advierte de que cualquier seccion marcada como plan no debe interpretarse como resultado experimental. El repositorio incluye la etiqueta `safetensors` y una metrica de parametros totales de 33.088, pero el tamano del repositorio es de 0,0 GB y no se ha publicado ningun checkpoint, configuracion de arquitectura ni tokenizer asociado.
 
@@ -87,7 +87,7 @@ No se dispone de modelos comparables de la misma categoria (modelos multimodales
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Spjoshi23/side-lightweight-multimodal-2023
+- Repositorio en Hugging Face: https://huggingface.co/Spjoshi23/side-lightweight-multimodal-2023
 - Repositorio de notas similar detectado en la busqueda: https://huggingface.co/edwardsjessica/lightweight-multimodal-2023
 - Calendario de lanzamientos de modelos de IA: https://www.scriptbyai.com/ai-model-release-calendar/
 - Ranking de generacion de imagenes: https://llm-stats.com/leaderboards/best-ai-for-image-generation

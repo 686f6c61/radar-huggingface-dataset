@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace no contiene un modelo listo para inferencia, sino una copia de seguridad archivística de un directorio de trabajo de investigación. El autor, `morealcholplz`, lo publica bajo la etiqueta `checkpoint-backup` y describe explícitamente en la model card que se trata de una instantánea de los ficheros experimentales originales (checkpoint, configuración y resultados, incluido estado de reanudación cuando existe) del directorio remoto `/home/work/mntvol/robottt/optpilot-n1d7-rmsnorm-aligned-b1ga1-s12-20260905`.
+Este repositorio de Hugging Face no contiene un modelo listo para inferencia, sino una copia de seguridad archivística de un directorio de trabajo de investigación. El autor, `morealcholplz`, lo publica bajo la etiqueta `checkpoint-backup` y describe explícitamente en la model card que se trata de una instantánea de los ficheros experimentales originales (checkpoint, configuración y resultados, incluido estado de reanudación cuando existe) del directorio remoto `/home/work/mntvol/robottt/optpilot-n1d7-rmsnorm-aligned-b1ga1-s12-20260905`.
 
 El identificador del repositorio sugiere vínculos con la familia de modelos robóticos GR00T N1.7 y con la herramienta de orquestación de optimización OptPilot, además de componentes de `pi`/`openpi` (Physical Intelligence), pero esta relación no está confirmada por el autor más allá de la mención de licencias heredadas. El propio autor advierte que es un snapshot de archivo y no una afirmación de éxito de evaluación ni un modelo estándar listo para inferencia; además, indica que no se realizó entrenamiento ni inferencia para generar la copia.
 
@@ -18,7 +18,7 @@ Dado que el repositorio no documenta arquitectura, número de parámetros, longi
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible en los metadatos de HuggingFace; la model card indica que las derivadas de GR00T quedan sujetas a la licencia de investigación/evaluación de NVIDIA y que los componentes de pi/openpi y terceros mantienen sus propios términos |
+| Licencia | no disponible en los metadatos de Hugging Face; la model card indica que las derivadas de GR00T quedan sujetas a la licencia de investigación/evaluación de NVIDIA y que los componentes de pi/openpi y terceros mantienen sus propios términos |
 | Formato de pesos | no disponible (el repositorio contiene un directorio `payload/` con checkpoint, configuración y resultados, sin detallar formato) |
 | Tamano del repositorio | 0,7 GB |
 | Etiquetas declaradas | robotics, checkpoint-backup, region:us |
@@ -93,7 +93,7 @@ No hay datos verificados suficientes para una comparativa rigurosa. La model car
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/morealcholplz/kt-20261011-optpilot-n1d7-rmsnorm-aligned-b1ga1-s12-20260905-32a05968
+- Repositorio en Hugging Face: https://huggingface.co/morealcholplz/kt-20261011-optpilot-n1d7-rmsnorm-aligned-b1ga1-s12-20260905-32a05968
 - Perfil del autor: https://huggingface.co/morealcholplz
 - OptPilot (orquestador de optimización iterativa): https://github.com/MINDS-THU/OptPilot
 - Documentación de recursos de IA para robótica, modelo GR00T N1.7 (open-edge-platform): https://github.com/open-edge-platform/edge-ai-suites/blob/main/robotics-ai-suite/docs/user-guide/ai_resources/openvino/models/model_gr00t_n1d7.md

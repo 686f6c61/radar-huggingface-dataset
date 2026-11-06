@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`ssaputrasri/matching` es un repositorio de HuggingFace publicado por el usuario ssaputrasri que contiene una implementacion propia y minima de una arquitectura denominada **Coca**, orientada a tareas de *matching* (emparejamiento). No se trata de un modelo entrenado ni de un release con pesos listos para produccion: el propio autor indica en la model card que el checkpoint incluido (`model.safetensors`) es un **checkpoint de inicializacion valido para pruebas de humo**, no un modelo con resultados de referencia. El repositorio se presenta explicitamente como un punto de partida reproducible.
+`ssaputrasri/matching` es un repositorio de Hugging Face publicado por el usuario ssaputrasri que contiene una implementacion propia y minima de una arquitectura denominada **Coca**, orientada a tareas de *matching* (emparejamiento). No se trata de un modelo entrenado ni de un release con pesos listos para produccion: el propio autor indica en la model card que el checkpoint incluido (`model.safetensors`) es un **checkpoint de inicializacion valido para pruebas de humo**, no un modelo con resultados de referencia. El repositorio se presenta explicitamente como un punto de partida reproducible.
 
 El modelo es de escala muy reducida: los metadatos de safetensors del repositorio declaran 16.576 parametros totales (cifra tal como aparece en los metadatos, sin unidad aclarada por el autor) y el tamano del repositorio es practicamente nulo (0,0 GB). La configuracion de arquitectura registrada en `config.json` describe atencion estandar, fusion mediante `concat mlp`, activacion swish y normalizacion RMSNorm. La receta de experimento por defecto usa el optimizador Adafactor con un schedule de warmup constante.
 
-Su relevancia actual es limitada y de caracter metodologico: sirve como esqueleto reproducible para experimentos de *matching* y como ejemplo de como empaquetar una implementacion personalizada con su configuracion explicita (`config.json`, `training_args.json`) y un script ejecutable (`eval.py`). No debe confundirse con un modelo de proposito general ni utilizarse como sustituto de un modelo entrenado. El repositorio tiene 12 descargas, 0 likes y fue creado/actualizado el 13 de octubre de 2026 segun los metadatos de HuggingFace.
+Su relevancia actual es limitada y de caracter metodologico: sirve como esqueleto reproducible para experimentos de *matching* y como ejemplo de como empaquetar una implementacion personalizada con su configuracion explicita (`config.json`, `training_args.json`) y un script ejecutable (`eval.py`). No debe confundirse con un modelo de proposito general ni utilizarse como sustituto de un modelo entrenado. El repositorio tiene 12 descargas, 0 likes y fue creado/actualizado el 13 de octubre de 2026 segun los metadatos de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -48,7 +48,7 @@ En cuanto al entrenamiento, no hay evidencia de que se haya completado ninguno. 
 - **Reproduccion de experimentos de matching en investigacion**: el repositorio proporciona `config.json` y `training_args.json`, lo que permite replicar exactamente la configuracion de partida (Adafactor, warmup constante, fusion `concat mlp`) y comparar contra lineas base de capacidad equivalente bajo las mismas semillas.
 - **Pruebas de humo de infraestructura**: al ser un checkpoint de inicializacion de ~16.576 parametros y un repositorio de 0,0 GB, sirve para validar que un pipeline de carga de safetensors, tokenizacion y ejecucion funciona antes de escalar a modelos mayores.
 - **Prototipado de arquitecturas de fusion**: el bloque `concat mlp` con activacion swish y RMSNorm puede usarse como banco de pruebas para estudiar variantes de fusion de representaciones en tareas de emparejamiento.
-- **Docencia y ejemplos didacticos**: es un caso util para explicar como se estructura una implementacion personalizada en HuggingFace (script principal, configuracion, argumentos de entrenamiento y pesos iniciales) sin la complejidad de un modelo grande.
+- **Docencia y ejemplos didacticos**: es un caso util para explicar como se estructura una implementacion personalizada en Hugging Face (script principal, configuracion, argumentos de entrenamiento y pesos iniciales) sin la complejidad de un modelo grande.
 - **Desarrollo de adaptadores de carga**: la model card advierte de que las APIs de carga automatica genericas requieren un adaptador explicito; el repositorio sirve para escribir y probar dicho adaptador.
 - **Linea base de baja capacidad en estudios comparativos**: puede emplearse como referencia de capacidad minima frente a modelos entrenados, siempre que se documente que no ha recibido entrenamiento y que la comparacion se haga con la misma exposicion de datos.
 - **Verificacion de licencia y cumplimiento**: al estar bajo BSD-3-Clause, puede integrarse en flujos internos de validacion de licencias de terceros, revisando por separado los terminos de los datos de origen si se combina con datasets externos.
@@ -82,5 +82,5 @@ No disponible. La informacion proporcionada no identifica modelos comparables de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ssaputrasri/matching
+- Hugging Face: https://huggingface.co/ssaputrasri/matching
 - Resultados de busqueda web: no se han encontrado enlaces tecnicos relevantes (papers, repos, blogs o demos) relacionados con este modelo. Las busquedas realizadas devolvieron exclusivamente contenido sin relacion con el repositorio, por lo que no se incluye ningun enlace adicional.

@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 - VRAM estimada para inferencia: al estar cuantizado en GGUF Q8_0, el modelo ocupa aproximadamente 1,6 GB en disco. La VRAM necesaria para inferencia ronda los 2-3 GB, dependiendo del backend y del contexto utilizado.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM puede ejecutar el modelo. Se recomiendan GPUs consumer como NVIDIA RTX 3060, RTX 4060, RTX 4090, o incluso GPUs integradas con suficiente memoria compartida.
 - Cabe en GPU consumer: si, en practicamente cualquier GPU consumer moderna con 4 GB o mas de VRAM. Tambien puede ejecutarse en CPU.
-- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF. El tag `endpoints_compatible` sugiere compatibilidad con endpoints de HuggingFace. No se menciona soporte explicito para vLLM o TGI en la informacion proporcionada.
+- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF. El tag `endpoints_compatible` sugiere compatibilidad con endpoints de Hugging Face. No se menciona soporte explicito para vLLM o TGI en la informacion proporcionada.
 - Latencia y throughput estimados: no disponibles en la informacion proporcionada. Dado el tamano reducido (1,5B parametros) y la cuantizacion Q8_0, se espera una latencia baja en GPUs consumer, pero no se aportan cifras concretas.
 
 ## Comparativa con modelos similares
@@ -90,7 +90,7 @@ La comparativa se limita a los modelos reportados por el autor. No se dispone de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/islao2/tiny-sql-GGUF
+- Hugging Face: https://huggingface.co/islao2/tiny-sql-GGUF
 - Demo: https://huggingface.co/spaces/islao2/tiny-sql
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct
 - Dataset: https://huggingface.co/datasets/gretelai/synthetic_text_to_sql

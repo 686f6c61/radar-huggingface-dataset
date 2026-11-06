@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BisharpJG es un modelo publicado en HuggingFace por el usuario Ryanham1lton bajo licencia CC-BY-4.0. El repositorio, de apenas 0,1 GB, no incluye model card descriptiva, pipeline declarado, idiomas soportados ni documentación técnica alguna. La única información disponible es la licencia y la etiqueta de región (`region:us`).
+BisharpJG es un modelo publicado en Hugging Face por el usuario Ryanham1lton bajo licencia CC-BY-4.0. El repositorio, de apenas 0,1 GB, no incluye model card descriptiva, pipeline declarado, idiomas soportados ni documentación técnica alguna. La única información disponible es la licencia y la etiqueta de región (`region:us`).
 
 No se dispone de datos sobre arquitectura, número de parámetros, longitud de contexto, proceso de entrenamiento ni capacidades. El tamaño del repositorio (aproximadamente 100 MB) sugiere pesos de un modelo pequeño o cuantizado, pero esta inferencia no puede confirmarse sin acceso a los archivos. La fecha de creación del repositorio es el 30 de octubre de 2026.
 
@@ -43,7 +43,7 @@ No es posible recomendar casos de uso concretos sin información sobre las capac
 - Pruebas de integración en pipelines de inferencia: sería necesario inspeccionar primero los archivos del repositorio para determinar el formato y la viabilidad de carga con herramientas como transformers, llama.cpp o vLLM.
 - Prototipado interno con licencia permisiva: la licencia CC-BY-4.0 permite uso comercial con atribución, lo que facilitaría pruebas internas si el modelo resultara funcional.
 - Fine-tuning experimental: solo si los pesos son compatibles con frameworks estándar, algo que no está confirmado.
-- Comparación de artefactos publicados: útil para estudiar prácticas de publicación en HuggingFace con documentación mínima.
+- Comparación de artefactos publicados: útil para estudiar prácticas de publicación en Hugging Face con documentación mínima.
 - Docencia sobre licencias abiertas: la licencia CC-BY-4.0 es un ejemplo claro de permisividad con obligación de atribución.
 
 En todos los casos, la ausencia de documentación impide garantizar un comportamiento adecuado en producción.
@@ -77,5 +77,5 @@ No disponible. No se conocen modelos comparables de la misma categoría porque s
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/BisharpJG
+- Hugging Face: https://huggingface.co/Ryanham1lton/BisharpJG
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

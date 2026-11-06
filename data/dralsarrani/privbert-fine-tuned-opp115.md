@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`dralsarrani/privbert-fine-tuned-opp115` es un checkpoint de tipo encoder para clasificación de texto publicado en HuggingFace por el usuario dralsarrani. El identificador y las etiquetas del repositorio (`roberta`, `text-classification`) apuntan a un RoBERTa afinado sobre OPP-115, un corpus de políticas de privacidad ampliamente usado en la literatura de análisis automatizado de textos legales. El recuento real de parámetros en safetensors, 124.653.322, coincide con el de `roberta-base`, lo que refuerza esa lectura, aunque el autor no lo confirma en ningún momento.
+`dralsarrani/privbert-fine-tuned-opp115` es un checkpoint de tipo encoder para clasificación de texto publicado en Hugging Face por el usuario dralsarrani. El identificador y las etiquetas del repositorio (`roberta`, `text-classification`) apuntan a un RoBERTa afinado sobre OPP-115, un corpus de políticas de privacidad ampliamente usado en la literatura de análisis automatizado de textos legales. El recuento real de parámetros en safetensors, 124.653.322, coincide con el de `roberta-base`, lo que refuerza esa lectura, aunque el autor no lo confirma en ningún momento.
 
 El interés práctico del modelo está en su especialización: un encoder de 124 M de parámetros es barato de servir (menos de 1 GB de VRAM en fp32) y, si el afinamiento es correcto, puede etiquetar cláusulas de políticas de privacidad en lugar de un LLM generativo, con mucha menor latencia y coste por inferencia. Es el tipo de pieza que encaja en pipelines de cumplimiento normativo (RGPD, CCPA) para clasificar fragmentos de texto legal.
 
-Ahora bien, la ficha debe leerse con cautela: la model card es la plantilla automática de HuggingFace, sin ninguna sección completada, y no hay descargas ni likes. No se declara licencia, idiomas, datos de entrenamiento, hiperparámetros ni resultados de evaluación. Todo lo que sigue distingue explícitamente entre lo verificado en el repositorio y lo inferido a partir del nombre y de las etiquetas.
+Ahora bien, la ficha debe leerse con cautela: la model card es la plantilla automática de Hugging Face, sin ninguna sección completada, y no hay descargas ni likes. No se declara licencia, idiomas, datos de entrenamiento, hiperparámetros ni resultados de evaluación. Todo lo que sigue distingue explícitamente entre lo verificado en el repositorio y lo inferido a partir del nombre y de las etiquetas.
 
 ## Especificaciones técnicas
 
@@ -44,7 +44,7 @@ No hay información sobre el procedimiento de entrenamiento: ni número de token
 - Enriquecimiento de un DMS o gestor documental: etiquetar automáticamente contratos y anexos de privacidad al ingerirlos, habilitando filtros y búsquedas por categoría sin intervención humana.
 - Pre-filtrado en un sistema RAG legal: usar las puntuaciones del clasificador para descartar fragmentos irrelevantes antes de enviarlos a un modelo generativo, reduciendo tokens de contexto y alucinaciones.
 - Detección de cambios en políticas publicadas: comparar las etiquetas asignadas a la versión antigua y nueva de una política para señalar secciones modificadas relevantes desde el punto de vista de compliance.
-- Servicio de bajo coste en producción: desplegarlo tras un endpoint compatible con la API de HuggingFace o en un contenedor con `text-embeddings-inference`, con latencias de milisegundos y sin necesidad de GPU dedicada.
+- Servicio de bajo coste en producción: desplegarlo tras un endpoint compatible con la API de Hugging Face o en un contenedor con `text-embeddings-inference`, con latencias de milisegundos y sin necesidad de GPU dedicada.
 - Investigación en NLP legal: punto de partida para experimentos de clasificación de cláusulas, fine-tuning adicional o comparación de arquitecturas encoder en el dominio de privacidad.
 
 ## Benchmarks y rendimiento
@@ -57,17 +57,17 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada en fp16: ~0,25 GB de pesos; en int8 dinámico, ~0,13 GB.
 - Cabe holgadamente en cualquier GPU consumer: GTX 1650, RTX 3060, RTX 4090, e incluso en CPU con un throughput aceptable para clasificación por lotes.
 - GPU recomendadas para alto volumen: T4, L4 o A10G para servir muchos documentos por segundo; A100/H100 no aportan ventaja significativa a este tamaño.
-- Opciones de despliegue: `transformers` con `pipeline("text-classification")`, `text-embeddings-inference` (etiqueta presente en el repo), endpoints de HuggingFace (`endpoints_compatible`), exportación a ONNX Runtime o conversión a GGUF para llama.cpp/Ollama. vLLM y TGI están orientados a modelos generativos y no son la vía natural para este checkpoint.
+- Opciones de despliegue: `transformers` con `pipeline("text-classification")`, `text-embeddings-inference` (etiqueta presente en el repo), endpoints de Hugging Face (`endpoints_compatible`), exportación a ONNX Runtime o conversión a GGUF para llama.cpp/Ollama. vLLM y TGI están orientados a modelos generativos y no son la vía natural para este checkpoint.
 - Latencia y throughput: no disponibles. Como referencia orientativa de orden de magnitud para un encoder de 124 M, la inferencia por secuencia corta suele medirse en milisegundos en GPU y en decenas de milisegundos en CPU, pero no hay mediciones publicadas para este modelo concreto.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `dralsarrani/privbert-fine-tuned-opp115` | 124,65 M | no disponible (512 típico en roberta-base) | Clasificación de cláusulas de privacidad | no disponible | HuggingFace, 0 descargas |
-| `roberta-base` (Facebook AI) | ~125 M | 512 tokens | Modelo base generalista | MIT | HuggingFace, ampliamente usado |
-| `bert-base-uncased` (Google) | ~110 M | 512 tokens | Modelo base generalista | Apache 2.0 | HuggingFace |
-| `distilbert-base-uncased` | ~66 M | 512 tokens | Modelo base destilado | Apache 2.0 | HuggingFace |
+| `dralsarrani/privbert-fine-tuned-opp115` | 124,65 M | no disponible (512 típico en roberta-base) | Clasificación de cláusulas de privacidad | no disponible | Hugging Face, 0 descargas |
+| `roberta-base` (Facebook AI) | ~125 M | 512 tokens | Modelo base generalista | MIT | Hugging Face, ampliamente usado |
+| `bert-base-uncased` (Google) | ~110 M | 512 tokens | Modelo base generalista | Apache 2.0 | Hugging Face |
+| `distilbert-base-uncased` | ~66 M | 512 tokens | Modelo base destilado | Apache 2.0 | Hugging Face |
 
 La comparación de rendimiento no es posible: no hay métricas publicadas para este checkpoint ni resultados reproducibles sobre OPP-115 en la información disponible. Los datos de parámetros, contexto y licencia de los modelos comparativos provienen del conocimiento general de esos repositorios, no de la información proporcionada en esta búsqueda.
 
@@ -86,7 +86,7 @@ La comparación de rendimiento no es posible: no hay métricas publicadas para e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dralsarrani/privbert-fine-tuned-opp115
+- Repositorio en Hugging Face: https://huggingface.co/dralsarrani/privbert-fine-tuned-opp115
 - Referencia citada en las etiquetas del repo (paper sobre cálculo de impacto ambiental, Lacoste et al.): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental citada en la plantilla de model card: https://mlco2.github.io/impact
 - No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos adicionales relacionados con este modelo; los resultados devueltos no guardan relación con él.

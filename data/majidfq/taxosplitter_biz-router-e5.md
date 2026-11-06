@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Longitud de contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MajidFQ/taxoSplitter_biz-router-e5 | 109.482.240 | no disponible | no disponible | HuggingFace |
-| intfloat/e5-base-v2 (modelo base) | 109.482.240 (heredado) | no disponible | no disponible | HuggingFace |
+| MajidFQ/taxoSplitter_biz-router-e5 | 109.482.240 | no disponible | no disponible | Hugging Face |
+| intfloat/e5-base-v2 (modelo base) | 109.482.240 (heredado) | no disponible | no disponible | Hugging Face |
 
 No se han identificado otras alternativas comparables en la informacion proporcionada. El modelo es un fine-tuning de `intfloat/e5-base-v2`, por lo que esa es la referencia mas cercana disponible en el contexto de la card.
 
@@ -84,6 +84,6 @@ No se han identificado otras alternativas comparables en la informacion proporci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MajidFQ/taxoSplitter_biz-router-e5
+- Modelo en Hugging Face: https://huggingface.co/MajidFQ/taxoSplitter_biz-router-e5
 - Paper de Sentence-BERT (mencionado en los tags): https://arxiv.org/abs/1908.10084
 - Modelo base `intfloat/e5-base-v2`: https://huggingface.co/intfloat/e5-base-v2

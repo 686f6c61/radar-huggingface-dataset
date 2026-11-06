@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ASD2SAC21D/MyAwesomeModel-TestRepo` es un repositorio alojado en HuggingFace por el usuario ASD2SAC21D, etiquetado con las librerías `transformers` y `pytorch`, la arquitectura `bert`, el pipeline `feature-extraction` y licencia MIT. El repositorio registra 0 descargas, 0 likes y un tamaño de 0,0 GB, lo que indica que no contiene pesos publicados ni artefactos utilizables: se trata de un repositorio de prueba.
+`ASD2SAC21D/MyAwesomeModel-TestRepo` es un repositorio alojado en Hugging Face por el usuario ASD2SAC21D, etiquetado con las librerías `transformers` y `pytorch`, la arquitectura `bert`, el pipeline `feature-extraction` y licencia MIT. El repositorio registra 0 descargas, 0 likes y un tamaño de 0,0 GB, lo que indica que no contiene pesos publicados ni artefactos utilizables: se trata de un repositorio de prueba.
 
 La model card adjunta describe un supuesto modelo generativo conversacional llamado "MyAwesomeModel", con mejoras de razonamiento, soporte de function calling, plantillas de system prompt y resultados en 15 benchmarks. Esa descripción no guarda relación con los metadatos del repositorio (BERT, extracción de características) ni con el contenido real del mismo, por lo que debe considerarse material no verificado.
 
@@ -49,7 +49,7 @@ Existe una contradicción directa entre los metadatos y el texto: las etiquetas 
 - Generación de código asistida: se describe soporte de generación de código, pero no hay ningún artefacto que permita integrarlo en un pipeline de CI/CD.
 - Automatización con function calling: la model card afirma compatibilidad con llamadas a funciones, sin documentar el formato de herramientas ni el esquema de salida.
 - Recuperación aumentada con búsqueda web y citación: las plantillas `search_answer_en_template` y `file_template` describen un flujo de RAG con citas `[citation:X]`, utilizable solo si el modelo subyacente existe y respeta el formato.
-- Evaluación de reproducibilidad de model cards: el repositorio sirve como caso de estudio de model card copiada de plantilla, útil para auditar prácticas de publicación en HuggingFace.
+- Evaluación de reproducibilidad de model cards: el repositorio sirve como caso de estudio de model card copiada de plantilla, útil para auditar prácticas de publicación en Hugging Face.
 
 Nota: todos los casos anteriores quedan condicionados a la publicación de pesos y a la verificación de las capacidades afirmadas. En el estado actual del repositorio no es posible ejecutar ninguno.
 
@@ -108,7 +108,7 @@ No disponible. No es posible establecer una comparativa fiable porque se descono
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ASD2SAC21D/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/ASD2SAC21D/MyAwesomeModel-TestRepo
 - Paper: no disponible
 - Repositorio de código: no disponible (la model card lo menciona sin enlace)
 - Web oficial o demo: no disponible (la model card la menciona sin enlace)

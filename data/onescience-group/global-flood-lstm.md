@@ -80,7 +80,7 @@ La informacion disponible no permite establecer una comparativa cuantitativa fia
 
 | Modelo | Parametros | Contexto o ventana | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Global-Flood-LSTM (OneScience-Group) | no disponible | 365 dias de historico + 7 dias de prediccion; salida a 7 dias | no disponible; metricas implementadas sin valores publicados | apache-2.0 (codigo) | Repositorio en HuggingFace; sin enlace a pesos preentrenados |
+| Global-Flood-LSTM (OneScience-Group) | no disponible | 365 dias de historico + 7 dias de prediccion; salida a 7 dias | no disponible; metricas implementadas sin valores publicados | apache-2.0 (codigo) | Repositorio en Hugging Face; sin enlace a pesos preentrenados |
 | Implementacion de investigacion del articulo (NeuralHydrology) | no disponible | Descripcion compatible con la del articulo | Resultados publicados en Nature (no reproducidos aqui) | Articulo bajo CC BY 4.0; datos sujetos a sus propias licencias | No confirmada en la informacion disponible |
 | Otras alternativas de prediccion hidrologica global | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -101,11 +101,11 @@ Las busquedas web realizadas no devolvieron resultados tecnicos relacionados con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OneScience-Group/Global-Flood-LSTM
+- Modelo en Hugging Face: https://huggingface.co/OneScience-Group/Global-Flood-LSTM
 - Articulo de referencia: "Global prediction of extreme floods in ungauged watersheds", https://doi.org/10.1038/s41586-024-07145-1
 - OneScience en GitHub: https://github.com/onescience-ai/OneScience
 - OneSkills en GitHub: https://github.com/onescience-ai/oneskills
 - OneScience en Gitee: https://gitee.com/onescience-ai/onescience
 - OneSkills en Gitee: https://gitee.com/onescience-ai/oneskills
 
-Nota: las busquedas web realizadas no devolvieron ningun resultado relevante sobre este modelo; los unicos enlaces verificables son los incluidos en la model card y en la propia pagina de HuggingFace.
+Nota: las busquedas web realizadas no devolvieron ningun resultado relevante sobre este modelo; los unicos enlaces verificables son los incluidos en la model card y en la propia pagina de Hugging Face.

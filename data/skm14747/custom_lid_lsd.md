@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`skm14747/custom_lid_lsd` es un checkpoint de clasificación de texto publicado en HuggingFace bajo licencia Apache 2.0, con 321.908.998 parámetros (~322 M) y pesos en formato safetensors. Su model card corresponde a **Laya Multilingual**, un modelo de decisión no autoregresivo («System 1») construido sobre el encoder **mmBERT-base**, que recibe un estado (texto, correo, ticket o JSON) junto con preguntas tipadas y devuelve respuestas tipadas con probabilidades en un único forward pass. No genera texto, por lo que no hay salida que parsear ni margen para alucinación generativa.
+`skm14747/custom_lid_lsd` es un checkpoint de clasificación de texto publicado en Hugging Face bajo licencia Apache 2.0, con 321.908.998 parámetros (~322 M) y pesos en formato safetensors. Su model card corresponde a **Laya Multilingual**, un modelo de decisión no autoregresivo («System 1») construido sobre el encoder **mmBERT-base**, que recibe un estado (texto, correo, ticket o JSON) junto con preguntas tipadas y devuelve respuestas tipadas con probabilidades en un único forward pass. No genera texto, por lo que no hay salida que parsear ni margen para alucinación generativa.
 
 El problema que aborda es el enrutado y la clasificación multilingüe fiable: la familia Laya separa un checkpoint para inglés (`convaiinnovations/laya`, ModernBERT-large, 421 M, contexto 512) de este checkpoint multilingüe, pensado para 100+ idiomas y aproximadamente el doble de rápido. Según la model card, el checkpoint inglés no degrada de forma elegante fuera del inglés: colapsa a exactitud 0,000 en jemer con confianza 0,952, mientras que este checkpoint sube la exactitud macro en MASSIVE (51 idiomas, 20 intenciones) de 0,227 a 0,366 y el ECE macro de 0,733 a 0,387.
 
@@ -92,7 +92,7 @@ Rendimiento en contexto largo (20 peticiones por tramo, `max_len=8192`): 16-18 r
 - VRAM estimada: ~0,65 GB solo para pesos en FP16 (322 M de parámetros) y ~1,3 GB en FP32; con activaciones y overhead de runtime, la inferencia cabe holgadamente en menos de 2 GB en FP16.
 - Cabe en cualquier GPU de consumo con 4 GB o más de VRAM (GTX 1650, RTX 3050, RTX 3060, RTX 4090) y también en CPU y en GPU de Apple, donde el autor mide ~1,7 s para una entrada de 4.000 tokens.
 - GPU de datacenter (A100, H100) no son necesarias para un modelo de este tamaño; se justifican únicamente por volumen de peticiones concurrentes.
-- Despliegue documentado: librería `laya` (`pip install laya`) con `laya.load()` y componente `Router`, y `transformers` con pipeline `text-classification`. Las etiquetas del repositorio incluyen `endpoints_compatible`, lo que indica compatibilidad con los Inference Endpoints de HuggingFace.
+- Despliegue documentado: librería `laya` (`pip install laya`) con `laya.load()` y componente `Router`, y `transformers` con pipeline `text-classification`. Las etiquetas del repositorio incluyen `endpoints_compatible`, lo que indica compatibilidad con los Inference Endpoints de Hugging Face.
 - No se documentan en la información disponible soporte para vLLM, llama.cpp, Ollama, TGI ni pesos GGUF; al ser un encoder de clasificación, el pipeline esperado es transformers/TEI u ONNX Runtime, no un servidor de generación.
 - Latencia: ~1,7 s por entrada de 4.000 tokens en GPU de Apple; la velocidad escala con la longitud real de la entrada, no con el límite configurado. Datos de latencia en GPU NVIDIA y de throughput no disponibles.
 - Aviso operativo del autor: si `laya.load()` se queda colgado, ejecutar con `USE_TF=0`, porque `transformers` sondea TensorFlow al importar y su runtime abseil puede bloquear la construcción del modelo.
@@ -101,10 +101,10 @@ Rendimiento en contexto largo (20 peticiones por tramo, `max_len=8192`): 16-18 r
 
 | Modelo | Encoder | Parametros | Contexto | Uso previsto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `skm14747/custom_lid_lsd` (este repo) | mmBERT-base | 322 M | 1.024 (hasta 8.192) | 100+ idiomas, ~2x mas rapido | Apache 2.0 | HuggingFace (0 descargas) |
-| `convaiinnovations/laya-multilingual` | mmBERT-base | 322 M | 1.024 (hasta 8.192) | 100+ idiomas, ~2x mas rapido | Apache 2.0 | HuggingFace (repositorio de referencia) |
-| `convaiinnovations/laya` | ModernBERT-large | 421 M | 512 | Ingles | Apache 2.0 | HuggingFace |
-| `convaiinnovations/laya-typed-decisions` | ModernBERT-large | 421 M | 1.024 | Flujos de decisiones tipadas | Apache 2.0 | HuggingFace |
+| `skm14747/custom_lid_lsd` (este repo) | mmBERT-base | 322 M | 1.024 (hasta 8.192) | 100+ idiomas, ~2x mas rapido | Apache 2.0 | Hugging Face (0 descargas) |
+| `convaiinnovations/laya-multilingual` | mmBERT-base | 322 M | 1.024 (hasta 8.192) | 100+ idiomas, ~2x mas rapido | Apache 2.0 | Hugging Face (repositorio de referencia) |
+| `convaiinnovations/laya` | ModernBERT-large | 421 M | 512 | Ingles | Apache 2.0 | Hugging Face |
+| `convaiinnovations/laya-typed-decisions` | ModernBERT-large | 421 M | 1.024 | Flujos de decisiones tipadas | Apache 2.0 | Hugging Face |
 
 En MASSIVE (51 idiomas, 20 opciones), `laya-multilingual` obtiene 0,366 de exactitud macro y 45/51 idiomas por encima de 3x el azar, frente a 0,227 y 23/51 del checkpoint inglés. En XNLI, el checkpoint inglés mantiene ventaja en inglés (0,860 frente a 0,843). No se conocen en la información proporcionada otros modelos comparables de terceros.
 
@@ -123,7 +123,7 @@ En MASSIVE (51 idiomas, 20 opciones), `laya-multilingual` obtiene 0,366 de exact
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/skm14747/custom_lid_lsd
+- Repositorio en Hugging Face: https://huggingface.co/skm14747/custom_lid_lsd
 - Checkpoint de referencia multilingüe: https://huggingface.co/convaiinnovations/laya-multilingual
 - Familia Laya: https://huggingface.co/convaiinnovations/laya
 - Checkpoint de decisiones tipadas: https://huggingface.co/convaiinnovations/laya-typed-decisions

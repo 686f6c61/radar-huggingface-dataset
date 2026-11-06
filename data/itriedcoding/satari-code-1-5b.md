@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad de pesos | Notas |
 |---|---|---|---|---|---|
 | Satari-Code-1.5B | 1,5B | No disponible (SFT a 2.048 tokens) | Apache-2.0 | Pendiente según model card | Ajuste QLoRA sobre Magicoder-OSS-Instruct-75K; sin benchmarks |
-| Qwen2.5-Coder-1.5B (base) | 1,5B | No verificado en la información disponible | Apache-2.0 | Pública en HuggingFace | Misma arquitectura; referencia directa y cota inferior de calidad |
-| Qwen2.5-Coder-7B | 7B | No verificado en la información disponible | Apache-2.0 (según familia Qwen2.5) | Pública en HuggingFace | Alternativa si se necesita mejor razonamiento de largo alcance; requiere más VRAM |
+| Qwen2.5-Coder-1.5B (base) | 1,5B | No verificado en la información disponible | Apache-2.0 | Pública en Hugging Face | Misma arquitectura; referencia directa y cota inferior de calidad |
+| Qwen2.5-Coder-7B | 7B | No verificado en la información disponible | Apache-2.0 (según familia Qwen2.5) | Pública en Hugging Face | Alternativa si se necesita mejor razonamiento de largo alcance; requiere más VRAM |
 | StarCoder2-3B | 3B | No verificado en la información disponible | No verificado en la información disponible | Pública | Modelo de código de BigCode; comparación cualitativa pendiente de datos |
 
 La comparación cuantitativa no es posible: el modelo no publica métricas y los datos de contexto y rendimiento de las alternativas no se han verificado en la información proporcionada.
@@ -88,7 +88,7 @@ La comparación cuantitativa no es posible: el modelo no publica métricas y los
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/itriedcoding/Satari-Code-1.5B
+- Modelo en Hugging Face: https://huggingface.co/itriedcoding/Satari-Code-1.5B
 - Repositorio de entrenamiento: https://huggingface.co/itriedcoding/Satari-Code-Training
 - Cuaderno de SFT: https://huggingface.co/itriedcoding/Satari-Code-Training/blob/main/Satari_Code_SFT.ipynb
 - GGUF Q4_K_M: https://huggingface.co/itriedcoding/Satari-Code-1.5B-GGUF

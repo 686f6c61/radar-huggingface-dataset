@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CADKnitter es un modelo publicado por Fsoft-AIC en HuggingFace bajo licencia MIT. El repositorio tiene un tamano de 1,6 GB y fue creado el 31 de octubre de 2026. La model card asociada unicamente declara la licencia MIT, sin incluir informacion sobre arquitectura, parametros, contexto, datos de entrenamiento ni capacidades. El nombre del repositorio sugiere una posible orientacion hacia diseno asistido por computador (CAD) y generacion o manipulacion de geometria, pero esta inferencia no esta confirmada por la documentacion disponible.
+CADKnitter es un modelo publicado por Fsoft-AIC en Hugging Face bajo licencia MIT. El repositorio tiene un tamano de 1,6 GB y fue creado el 31 de octubre de 2026. La model card asociada unicamente declara la licencia MIT, sin incluir informacion sobre arquitectura, parametros, contexto, datos de entrenamiento ni capacidades. El nombre del repositorio sugiere una posible orientacion hacia diseno asistido por computador (CAD) y generacion o manipulacion de geometria, pero esta inferencia no esta confirmada por la documentacion disponible.
 
 La ausencia de pipeline declarado, de idiomas soportados y de cualquier descripcion tecnica en la model card limita severamente la evaluacion del modelo. A partir del tamano del repositorio (1,6 GB) puede estimarse de forma aproximada que los pesos corresponden a un modelo de escala pequena o mediana en precision completa o media, pero no es posible determinar el numero de parametros ni el formato de pesos sin inspeccionar los archivos del repositorio, dato que no se ha proporcionado.
 
@@ -81,7 +81,7 @@ No disponible. No se dispone de informacion sobre la categoria, el tamano ni el 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Fsoft-AIC/cadknitter
+- Hugging Face: https://huggingface.co/Fsoft-AIC/cadknitter
 - Paper: no disponible
 - Blog: no disponible
 - Repositorio de codigo: no disponible

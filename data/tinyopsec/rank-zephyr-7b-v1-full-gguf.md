@@ -104,7 +104,7 @@ No hay datos de rendimiento comparativo entre estas alternativas en la informaci
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tinyopsec/rank-zephyr-7b-v1-full-GGUF
+- Repositorio Hugging Face: https://huggingface.co/tinyopsec/rank-zephyr-7b-v1-full-GGUF
 - Modelo base: https://huggingface.co/castorini/rank_zephyr_7b_v1_full
 - Paper de RankZephyr (arXiv:2312.02724): https://arxiv.org/abs/2312.02724
 - Busqueda web: los resultados obtenidos no guardan relacion con el modelo (corresponden al entorno digital de la Universite Clermont Auvergne) y no aportan enlaces adicionales relevantes.

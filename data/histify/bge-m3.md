@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `histify/bge-m3` es una versión publicada bajo el identificador `histify` del conocido modelo de embeddings BGE-M3, originalmente desarrollado por BAAI (Beijing Academy of Artificial Intelligence). Según los metadatos de HuggingFace, se trata de un modelo basado en la arquitectura XLM-RoBERTa con 567,75 millones de parámetros, un tamaño que coincide con el del BGE-M3 original (568M). La model card está vacía salvo la licencia MIT, y el repositorio no incluye documentación adicional, por lo que no se puede confirmar si se trata de un fine-tune, una conversión o una copia exacta del modelo original.
+El modelo `histify/bge-m3` es una versión publicada bajo el identificador `histify` del conocido modelo de embeddings BGE-M3, originalmente desarrollado por BAAI (Beijing Academy of Artificial Intelligence). Según los metadatos de Hugging Face, se trata de un modelo basado en la arquitectura XLM-RoBERTa con 567,75 millones de parámetros, un tamaño que coincide con el del BGE-M3 original (568M). La model card está vacía salvo la licencia MIT, y el repositorio no incluye documentación adicional, por lo que no se puede confirmar si se trata de un fine-tune, una conversión o una copia exacta del modelo original.
 
 Este modelo está diseñado para generar representaciones vectoriales (embeddings) de texto, con capacidades multilingües y soporte para búsqueda densa, dispersa y multi-vector. Su relevancia actual radica en que BGE-M3 es uno de los modelos de embeddings más utilizados en sistemas de recuperación de información y RAG (Retrieval-Augmented Generation), gracias a su equilibrio entre rendimiento, multilingüismo y eficiencia. Sin embargo, al carecer de información específica sobre esta versión concreta, las especificaciones detalladas deben tratarse con cautela.
 
@@ -10,7 +10,7 @@ Este modelo está diseñado para generar representaciones vectoriales (embedding
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | XLM-RoBERTa (según tags de HuggingFace) |
+| Arquitectura | XLM-RoBERTa (según tags de Hugging Face) |
 | Parametros totales | 567.754.752 |
 | Parametros activos | no disponible (no es un modelo MoE) |
 | Longitud de contexto | no disponible (el BGE-M3 original soporta 8192 tokens, pero no se confirma para esta versión) |
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada para inferencia: con 567M de parámetros en precisión FP32, el modelo ocupa aproximadamente 2,3 GB en memoria (coincide con el tamaño del repo). En FP16, ocuparía unos 1,15 GB, y en cuantización INT8, unos 0,6 GB.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM puede ejecutar el modelo en FP16. Una RTX 3060, RTX 4060 o superior sería suficiente. Para procesamiento por lotes grande, se recomienda una GPU con 8 GB o más.
 - En consumer GPU: sí, cabe en GPUs de gama media como RTX 3060, RTX 4070, etc., siempre que se use FP16 o cuantización.
-- Opciones de despliegue: al ser un modelo encoder, se puede servir con librerías como SentenceTransformers, HuggingFace Transformers, o mediante servidores de embeddings como TEI (Text Embeddings Inference) o vLLM (aunque vLLM está más orientado a generación). También se puede usar con llama.cpp si se convierte a GGUF, aunque no es lo habitual para encoders.
+- Opciones de despliegue: al ser un modelo encoder, se puede servir con librerías como SentenceTransformers, Hugging Face Transformers, o mediante servidores de embeddings como TEI (Text Embeddings Inference) o vLLM (aunque vLLM está más orientado a generación). También se puede usar con llama.cpp si se convierte a GGUF, aunque no es lo habitual para encoders.
 - Latencia y throughput: no se dispone de datos medidos para esta versión. En el BGE-M3 original, la inferencia en GPU tarda unos pocos milisegundos por texto corto, pero depende del hardware y la longitud de la secuencia.
 
 ## Comparativa con modelos similares
@@ -79,7 +79,7 @@ La comparativa real solo puede establecerse si se evalúa esta versión concreta
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/histify/bge-m3
+- Repositorio Hugging Face: https://huggingface.co/histify/bge-m3
 - Modelo original BGE-M3 de BAAI (referencia): https://huggingface.co/BAAI/bge-m3
 - Documentación de BGE-M3 (paper y blog): https://arxiv.org/abs/2402.03216 (no confirmado para esta versión)
 

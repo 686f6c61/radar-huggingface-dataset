@@ -102,7 +102,7 @@ No hay datos disponibles de otras alternativas abliteradas o sin censura del mis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dealignai/DeepSeek-V4-Flash-0731-CRACK-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/dealignai/DeepSeek-V4-Flash-0731-CRACK-NVFP4
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
 - Sitio de Dealign.ai: https://dealign.ai
 - Contacto del autor: eric@dealign.ai

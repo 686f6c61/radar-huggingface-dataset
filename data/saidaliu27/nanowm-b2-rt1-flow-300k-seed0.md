@@ -75,7 +75,7 @@ No disponible. La información proporcionada no incluye datos de rendimiento ni 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/saidaliu27/nanowm-b2-rt1-flow-300k-seed0
+- Modelo en Hugging Face: https://huggingface.co/saidaliu27/nanowm-b2-rt1-flow-300k-seed0
 - VAE dependiente: https://huggingface.co/stabilityai/sd-vae-ft-mse
 - Repositorio nano-world-model: no disponible en la información proporcionada (la model card hace referencia a un checkout local de `nano-world-model/src` sin URL)
 - Paper o blog asociado: no disponible en la información proporcionada

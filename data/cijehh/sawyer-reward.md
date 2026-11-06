@@ -2,7 +2,7 @@
 
 ## Resumen
 
-sawyer-reward es un modelo de clasificación de texto publicado por el usuario cijehh en HuggingFace, obtenido mediante fine-tuning de FacebookAI/roberta-base. Cuenta con 124.646.401 parámetros (124,6 M), se distribuye en formato safetensors bajo licencia MIT y se ejecuta con la librería transformers mediante el pipeline `text-classification`. Por su nombre y por la existencia de notebooks asociados a proyectos de "reward modeling" y optimización de LLM, se trata con alta probabilidad de un modelo de recompensa (reward model) pensado para puntuar respuestas generadas por un modelo de lenguaje, aunque la model card no lo confirma de forma explícita.
+sawyer-reward es un modelo de clasificación de texto publicado por el usuario cijehh en Hugging Face, obtenido mediante fine-tuning de FacebookAI/roberta-base. Cuenta con 124.646.401 parámetros (124,6 M), se distribuye en formato safetensors bajo licencia MIT y se ejecuta con la librería transformers mediante el pipeline `text-classification`. Por su nombre y por la existencia de notebooks asociados a proyectos de "reward modeling" y optimización de LLM, se trata con alta probabilidad de un modelo de recompensa (reward model) pensado para puntuar respuestas generadas por un modelo de lenguaje, aunque la model card no lo confirma de forma explícita.
 
 El modelo se entrenó durante 3 épocas con un learning rate de 1e-5 y un tamaño de lote efectivo de 32, alcanzando una precisión declarada de 0,96 y una pérdida de validación de 0,4956 en el conjunto de evaluación. Su relevancia práctica radica en que, al derivar de roberta-base, es un modelo pequeño que cabe en cualquier GPU de consumo e incluso en CPU, lo que lo hace adecuado como componente de puntuación dentro de pipelines de RLHF, reranking o filtrado de datos.
 
@@ -78,10 +78,10 @@ Estos valores proceden exclusivamente de la model card del autor y no son compar
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cijehh/sawyer-reward | 124,6 M | 514 | Clasificación de texto / posible reward model | MIT | HuggingFace (0 descargas, 0 likes) |
-| FacebookAI/roberta-base | 124,6 M | 514 | Modelado de lenguaje enmascarado (base) | MIT | HuggingFace, ampliamente usado |
-| profoz/sawyer-reward | no disponible | no disponible | Clasificación de texto | no disponible | HuggingFace (copia del mismo artefacto) |
-| IvanGab/sawyer-reward | no disponible | no disponible | Clasificación de texto | MIT | HuggingFace (copia del mismo artefacto) |
+| cijehh/sawyer-reward | 124,6 M | 514 | Clasificación de texto / posible reward model | MIT | Hugging Face (0 descargas, 0 likes) |
+| FacebookAI/roberta-base | 124,6 M | 514 | Modelado de lenguaje enmascarado (base) | MIT | Hugging Face, ampliamente usado |
+| profoz/sawyer-reward | no disponible | no disponible | Clasificación de texto | no disponible | Hugging Face (copia del mismo artefacto) |
+| IvanGab/sawyer-reward | no disponible | no disponible | Clasificación de texto | MIT | Hugging Face (copia del mismo artefacto) |
 
 Las dos entradas con el mismo nombre corresponden a réplicas del mismo artefacto publicadas por otros usuarios, no a modelos independientes. No se dispone de datos verificados de otros modelos de recompensa encoder-only (por ejemplo, los basados en DeBERTa-v3) dentro de la información proporcionada, por lo que no se incluye una comparación numérica con ellos.
 
@@ -101,7 +101,7 @@ Las dos entradas con el mismo nombre corresponden a réplicas del mismo artefact
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cijehh/sawyer-reward
+- Modelo en Hugging Face: https://huggingface.co/cijehh/sawyer-reward
 - Modelo base: https://huggingface.co/roberta-base
 - Notebook SAWYER_Reward_Model (SabrinaLameiras): https://github.com/SabrinaLameiras/transformer-architectures-genai/blob/main/notebooks/SAWYER_Reward_Model.ipynb
 - Notebook SAWYER_Reward_Model (asabade/optimizing-llms): https://github.com/asabade/optimizing-llms/blob/main/notebooks/SAWYER_Reward_Model.ipynb

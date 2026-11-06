@@ -4,7 +4,7 @@
 
 BetterWright-K2-Horizon-7B-Uno-i1-GGUF es una coleccion de cuantizaciones GGUF generada por mradermacher a partir del modelo ProCreations/BetterWright-K2-Horizon-7B-Uno. El modelo base esta especializado en tareas de agente de navegador (browser-agent) y agente web, con enfasis en tool use y function calling, y fue afinado por completo (full-finetune) sobre el dataset ProCreations/betterwright-agent-traces. Cuenta con aproximadamente 8.999 millones de parametros (cerca de 9B) y licencia Apache 2.0.
 
-La relevancia de esta publicacion es practica: el autor original distribuye los pesos en formato HuggingFace, mientras que esta variante los ofrece en GGUF con una matriz de importancia (imatrix) y un amplio abanico de niveles de cuantizacion, desde 2,6 GB (IQ1_S) hasta 7,5 GB (Q6_K). Esto permite ejecutar un modelo de ~9B orientado a agentes web en hardware de consumo mediante llama.cpp y derivados, algo que con pesos completos en FP16 seria inviable en GPUs de gama media.
+La relevancia de esta publicacion es practica: el autor original distribuye los pesos en formato Hugging Face, mientras que esta variante los ofrece en GGUF con una matriz de importancia (imatrix) y un amplio abanico de niveles de cuantizacion, desde 2,6 GB (IQ1_S) hasta 7,5 GB (Q6_K). Esto permite ejecutar un modelo de ~9B orientado a agentes web en hardware de consumo mediante llama.cpp y derivados, algo que con pesos completos en FP16 seria inviable en GPUs de gama media.
 
 Las etiquetas del repositorio incluyen "diffusion-language-model" y "uno", lo que sugiere que el modelo base podria emplear un esquema de generacion no autoregresivo o hibrido, aunque la informacion disponible no detalla la arquitectura interna, la longitud de contexto ni la composicion exacta del dataset de entrenamiento. Los detalles no confirmados se marcan como no disponibles a lo largo de esta ficha.
 
@@ -19,7 +19,7 @@ Las etiquetas del repositorio incluyen "diffusion-language-model" y "uno", lo qu
 | Tipos de cuantizacion | GGUF: IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, Q2_K_S, Q2_K, IQ3_XXS, IQ3_XS, Q3_K_S, IQ3_S, IQ3_M, Q3_K_M, Q3_K_L, IQ4_XS, Q4_0, IQ4_NL, Q4_K_S, Q4_K_M, Q4_1, Q5_K_S, Q5_K_M, Q6_K, ademas de fichero imatrix |
 | Idiomas soportados | en (ingles) |
 | Licencia | apache-2.0 |
-| Formato de pesos | GGUF (cuantizaciones i1/weighted con imatrix); el modelo base se distribuye en formato HuggingFace/safetensors |
+| Formato de pesos | GGUF (cuantizaciones i1/weighted con imatrix); el modelo base se distribuye en formato Hugging Face/safetensors |
 
 ## Arquitectura y entrenamiento
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Para FP16 el modelo original requeriria aproximadamente 18 GB (9B parametros x 2 bytes), no disponible en esta variante.
 - GPUs recomendadas: no especificadas por el autor. Por tamano, las variantes Q4 pueden ejecutarse en GPUs consumer con 8 GB de VRAM (RTX 3060/4060 y superiores) empleando offload parcial o completo en funcion de la ventana de contexto. Las variantes Q5/Q6 encajan en GPUs de 8-12 GB, o en A100/H100 para despliegues en servidor.
 - Caben en consumer GPU: si, en las cuantizaciones Q2 a Q4 principalmente; las variantes Q5 y Q6 requieren al menos 8-12 GB de VRAM.
-- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF. Tambien puede usarse el modelo base con transformers/vLLM/TGI si se dispone del formato HuggingFace original.
+- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF. Tambien puede usarse el modelo base con transformers/vLLM/TGI si se dispone del formato Hugging Face original.
 - Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
@@ -75,7 +75,7 @@ No hay datos de benchmarks ni especificaciones de modelos comparables en la info
 | Modelo | Parametros | Contexto | Formato | Licencia | Enfoque |
 |---|---|---|---|---|---|
 | BetterWright-K2-Horizon-7B-Uno-i1-GGUF (este) | ~9B | no disponible | GGUF (multitud de cuantizaciones) | apache-2.0 | Agente de navegador / tool use |
-| ProCreations/BetterWright-K2-Horizon-7B-Uno (base) | ~9B | no disponible | HuggingFace/safetensors | apache-2.0 | Agente de navegador / tool use |
+| ProCreations/BetterWright-K2-Horizon-7B-Uno (base) | ~9B | no disponible | Hugging Face/safetensors | apache-2.0 | Agente de navegador / tool use |
 | mradermacher/BetterWright-K2-Horizon-7B-Uno-GGUF (quants estaticos) | ~9B | no disponible | GGUF | apache-2.0 | Agente de navegador / tool use |
 | Otros modelos de agente web de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -92,7 +92,7 @@ No hay datos de benchmarks ni especificaciones de modelos comparables en la info
 
 ## Enlaces
 
-- Repositorio HuggingFace (esta cuantizacion): https://huggingface.co/mradermacher/BetterWright-K2-Horizon-7B-Uno-i1-GGUF
+- Repositorio Hugging Face (esta cuantizacion): https://huggingface.co/mradermacher/BetterWright-K2-Horizon-7B-Uno-i1-GGUF
 - Modelo base: https://huggingface.co/ProCreations/BetterWright-K2-Horizon-7B-Uno
 - Cuantizaciones estaticas del mismo autor: https://huggingface.co/mradermacher/BetterWright-K2-Horizon-7B-Uno-GGUF
 - Dataset de entrenamiento: https://huggingface.co/datasets/ProCreations/betterwright-agent-traces

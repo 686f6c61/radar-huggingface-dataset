@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`alfred8995/r18-a2-w13-kx-chrono4-w30-s160` es un modelo de lenguaje publicado en HuggingFace por el usuario alfred8995 bajo licencia Apache 2.0. El nombre sigue un esquema de identificadores crípticos (r18, a2, w13, kx, chrono4, w30, s160) que sugiere una variante experimental o un checkpoint intermedio dentro de una familia de entrenamiento interna, etiquetada con el tag `sn38-nanochrono`. No se dispone de documentación, model card descriptiva ni pipeline declarado en la información proporcionada.
+`alfred8995/r18-a2-w13-kx-chrono4-w30-s160` es un modelo de lenguaje publicado en Hugging Face por el usuario alfred8995 bajo licencia Apache 2.0. El nombre sigue un esquema de identificadores crípticos (r18, a2, w13, kx, chrono4, w30, s160) que sugiere una variante experimental o un checkpoint intermedio dentro de una familia de entrenamiento interna, etiquetada con el tag `sn38-nanochrono`. No se dispone de documentación, model card descriptiva ni pipeline declarado en la información proporcionada.
 
 El dato objetivo más relevante es su tamaño: 2.018.511.234 parámetros en formato safetensors (aproximadamente 2,02 mil millones), lo que lo sitúa en la categoría de modelos pequeños, comparable en escala a Qwen2.5-1.5B, Gemma-2-2B o Phi-2. El repositorio ocupa 12,6 GB, un tamaño desproporcionado para 2B parámetros en fp16 (que ocuparían unos 4 GB), lo que apunta a la presencia de múltiples checkpoints, estados de optimizador u otros artefactos de entrenamiento además de los pesos finales.
 
-La relevancia práctica es limitada en su estado actual: el modelo está sujeto a acceso restringido (gated), requiere aceptar condiciones en HuggingFace, acumula 2 descargas y 0 likes, y no incluye información sobre idiomas, arquitectura, contexto ni datos de entrenamiento. Cualquier evaluación debe tratarse como preliminar hasta que el autor publique una model card completa.
+La relevancia práctica es limitada en su estado actual: el modelo está sujeto a acceso restringido (gated), requiere aceptar condiciones en Hugging Face, acumula 2 descargas y 0 likes, y no incluye información sobre idiomas, arquitectura, contexto ni datos de entrenamiento. Cualquier evaluación debe tratarse como preliminar hasta que el autor publique una model card completa.
 
 ## Especificaciones tecnicas
 
@@ -34,7 +34,7 @@ Tampoco hay datos sobre el corpus de entrenamiento (número de tokens, composici
 - Generación de código: no disponible.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible (el campo de idiomas está vacío en HuggingFace).
+- Capacidades multilingües: no disponible (el campo de idiomas está vacío en Hugging Face).
 - Capacidades especiales (modo thinking, visión, audio): no disponible.
 - Cualquier otra capacidad específica: no documentada en la información proporcionada.
 
@@ -77,10 +77,10 @@ La comparación es estructural: los tres modelos de referencia tienen documentac
 ## Limitaciones y advertencias
 
 - Ausencia total de model card: no se documentan arquitectura, datos de entrenamiento, tokenizador ni formato de prompt, lo que impide un uso fiable sin ingeniería inversa.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que añade fricción para uso comercial o automatizado.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que añade fricción para uso comercial o automatizado.
 - Riesgo de alucinación: desconocido pero presumiblemente alto en un modelo de 2B sin ajuste documentado; no hay evaluaciones de fidelidad.
 - Sesgos conocidos: no disponibles; al no documentarse la composición del corpus, no puede evaluarse el sesgo de género, idioma o dominio.
-- Limitaciones de contexto e idioma: no disponibles; el campo de idiomas está vacío en HuggingFace.
+- Limitaciones de contexto e idioma: no disponibles; el campo de idiomas está vacío en Hugging Face.
 - Restricciones de licencia: Apache 2.0 permite uso comercial, pero la ausencia de información sobre la procedencia de los datos de entrenamiento podría generar incertidumbre legal en despliegues productivos.
 - Repositorio sobredimensionado (12,6 GB para 2B parámetros): posible presencia de checkpoints intermedios o estados de optimizador que conviene inspeccionar antes de descargar.
 - Sin pipeline declarado: no se indica si es text-generation, fill-mask u otra tarea, lo que puede provocar errores al cargarlo con `AutoModelForCausalLM` si la arquitectura no es estándar.
@@ -88,6 +88,6 @@ La comparación es estructural: los tres modelos de referencia tienen documentac
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-w13-kx-chrono4-w30-s160
-- Repositorio del autor en HuggingFace: https://huggingface.co/alfred8995
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-w13-kx-chrono4-w30-s160
+- Repositorio del autor en Hugging Face: https://huggingface.co/alfred8995
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información proporcionada.

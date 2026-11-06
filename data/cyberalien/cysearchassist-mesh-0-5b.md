@@ -81,9 +81,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 | Modelo | Parametros | Contexto | Rendimiento documentado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CySearchAssist-Mesh-0.5B | 494.032.768 | no disponible | 30/37 JSON valido; 7/10 objetivo en top cinco; 5,23 s mediana en CPU; 3,09 GiB RAM | Apache-2.0 | HuggingFace, pesos safetensors FP16 |
+| CySearchAssist-Mesh-0.5B | 494.032.768 | no disponible | 30/37 JSON valido; 7/10 objetivo en top cinco; 5,23 s mediana en CPU; 3,09 GiB RAM | Apache-2.0 | Hugging Face, pesos safetensors FP16 |
 | Variante 1,5 B del mismo proyecto | no disponible (citada en la model card) | no disponible | 35/37 JSON valido; 10/10 objetivo en top cinco; 15,26 s mediana en CPU; 8,96 GiB RAM | no disponible | citada en el benchmark del autor |
-| Qwen/Qwen2.5-0.5B-Instruct (modelo base) | ~0,5 B | no disponible en esta informacion | no disponible | Apache-2.0 (modelo base) | HuggingFace |
+| Qwen/Qwen2.5-0.5B-Instruct (modelo base) | ~0,5 B | no disponible en esta informacion | no disponible | Apache-2.0 (modelo base) | Hugging Face |
 | Otros reescritores de consultas especializados de ~0,5 B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparacion con el modelo base es estructural: CySearchAssist-Mesh-0.5B hereda su arquitectura y anade el ajuste LoRA orientado al contrato JSON de busqueda de activos, pero no se publican metricas del base sobre las mismas pruebas, por lo que no puede cuantificarse la mejora aportada.
@@ -106,6 +106,6 @@ La comparacion con el modelo base es estructural: CySearchAssist-Mesh-0.5B hered
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cyberalien/CySearchAssist-Mesh-0.5B
+- Modelo en Hugging Face: https://huggingface.co/cyberalien/CySearchAssist-Mesh-0.5B
 - Modelo base Qwen/Qwen2.5-0.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Paper, blog, repositorio o demo adicionales: no disponible en la informacion proporcionada.

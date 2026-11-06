@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks de calidad (PSNR/SSIM/FID frente a 
 
 | Modelo | Formato | Parametros | Runtime | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| antv311/propainter-mlx-weights | Safetensors NHWC | 69,5 M (4 redes) | MLX, Apple Silicon | S-Lab 1.0 (no comercial) + BSD-3-Clause para RAFT/SEA-RAFT | HuggingFace, 0.3 GB, 0 descargas |
+| antv311/propainter-mlx-weights | Safetensors NHWC | 69,5 M (4 redes) | MLX, Apple Silicon | S-Lab 1.0 (no comercial) + BSD-3-Clause para RAFT/SEA-RAFT | Hugging Face, 0.3 GB, 0 descargas |
 | ProPainter upstream v0.1.0 | Checkpoints PyTorch | Mismos pesos | PyTorch + CUDA | S-Lab 1.0 (no comercial) | GitHub del autor original |
 | Otros metodos de video inpainting previos o alternativos | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -94,11 +94,11 @@ La comparativa significativa aquí es de formato y runtime, no de arquitectura: 
 - Sin cuantización publicada: los pesos son fp32, lo que redunda en más memoria y más ancho de banda de cómputo que las variantes en fp16/bf16, habituales en inferencia.
 - Sin soporte CUDA: el formato NHWC y el runtime MLX lo atan a Apple Silicon. Migrar a NVIDIA implicaría reconvertir los pesos al layout NCHW del ProPainter original, que ya existe.
 - Sin capacidades de lenguaje: no sirve para tareas de texto, agentes, tool calling ni razonamiento multilingüe, pese a que la estructura de ficha habitual pueda sugerir lo contrario.
-- Fecha de creación del repositorio inusual: el registro de HuggingFace indica 2026-10-09, lo que conviene verificar antes de citar el repositorio.
+- Fecha de creación del repositorio inusual: el registro de Hugging Face indica 2026-10-09, lo que conviene verificar antes de citar el repositorio.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/antv311/propainter-mlx-weights
+- Hugging Face: https://huggingface.co/antv311/propainter-mlx-weights
 - Port a MLX: https://github.com/antv311/Propainter-MLX
 - Perfil del autor: https://github.com/antv311
 - ProPainter original: https://github.com/sczhou/ProPainter

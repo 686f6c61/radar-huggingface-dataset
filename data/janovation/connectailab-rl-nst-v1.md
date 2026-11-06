@@ -2,7 +2,7 @@
 
 ## Resumen
 
-connectailab-rl-nst-v1 es un adaptador de aprendizaje por refuerzo (reinforcement learning) publicado por el usuario Janovation en HuggingFace. No se trata de un modelo de lenguaje completo, sino de un adaptador PEFT/LoRA entrenado sobre el modelo base Qwen/Qwen3.5-0.8B. Su pipeline declarado es `reinforcement-learning` y la libreria asociada es `peft`, con pesos en formato `safetensors`.
+connectailab-rl-nst-v1 es un adaptador de aprendizaje por refuerzo (reinforcement learning) publicado por el usuario Janovation en Hugging Face. No se trata de un modelo de lenguaje completo, sino de un adaptador PEFT/LoRA entrenado sobre el modelo base Qwen/Qwen3.5-0.8B. Su pipeline declarado es `reinforcement-learning` y la libreria asociada es `peft`, con pesos en formato `safetensors`.
 
 El entrenamiento se ha realizado mediante GRPO (Group Relative Policy Optimization), una tecnica de optimizacion de politicas sin critico, orientada a tareas de toma de decisiones (decision-making) en entornos Gymnasium. Los tags vinculan el modelo al ecosistema "Connect Tycoon" y "Connect AI Lab", lo que sugiere su uso como politica para agentes que operan dentro de un entorno de simulacion concreto.
 
@@ -80,6 +80,6 @@ No disponible. La informacion publicada no identifica modelos comparables de la 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Janovation/connectailab-rl-nst-v1
+- Hugging Face: https://huggingface.co/Janovation/connectailab-rl-nst-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - No se han encontrado en la informacion proporcionada enlaces adicionales a papers, blogs, repositorios o demos.

@@ -25,7 +25,7 @@ El repositorio muestra cero descargas y cero likes en el momento de la consulta,
 
 No se dispone de informacion sobre la arquitectura interna del modelo base Gemma-4-12B-it-Fox. Por el nombre se infiere que deriva de Gemma 4 en variante instruction-tuned (it), con 12 mil millones de parametros, y que ha sido sometido a un fine-tune adicional por parte de icelandicfox. No se documentan en la informacion disponible ni el numero de tokens de entrenamiento, ni la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO o similares.
 
-El unico proceso tecnico documentado es el de cuantizacion realizado por mradermacher: se indica el uso de cuantizaciones ponderadas con imatrix (weighted/imatrix quants), una tecnica que calibra los errores de cuantizacion por capa usando una matriz de importancia, lo que mejora la calidad de los niveles bajos de bits frente a la cuantizacion uniforme. Los metadatos de la model card indican quantize_version 2, output_tensor_quantised 1 y convert_type hf, lo que confirma una conversion desde pesos en formato HuggingFace. No hay informacion sobre innovaciones arquitectonicas como atencion lineal, decodificacion especulativa o mecanismos hibridos.
+El unico proceso tecnico documentado es el de cuantizacion realizado por mradermacher: se indica el uso de cuantizaciones ponderadas con imatrix (weighted/imatrix quants), una tecnica que calibra los errores de cuantizacion por capa usando una matriz de importancia, lo que mejora la calidad de los niveles bajos de bits frente a la cuantizacion uniforme. Los metadatos de la model card indican quantize_version 2, output_tensor_quantised 1 y convert_type hf, lo que confirma una conversion desde pesos en formato Hugging Face. No hay informacion sobre innovaciones arquitectonicas como atencion lineal, decodificacion especulativa o mecanismos hibridos.
 
 ## Capacidades
 
@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Gemma-4-12B-it-Fox-i1-GGUF (este) | 12B (nominal) | no disponible | no disponible | GGUF (24 cuantizaciones) | HuggingFace |
-| Gemma-4-12B-it (base oficial de Google) | 12B | no disponible en esta ficha | no disponible | safetensors | HuggingFace |
-| Gemma-4-12B-it-Fox (fine-tune original de icelandicfox) | 12B | no disponible | no disponible | safetensors | HuggingFace |
-| Mistral-Nemo-12B-Instruct (alternativa de tamano similar) | 12B | 128K | Apache 2.0 | safetensors, GGUF | HuggingFace |
+| Gemma-4-12B-it-Fox-i1-GGUF (este) | 12B (nominal) | no disponible | no disponible | GGUF (24 cuantizaciones) | Hugging Face |
+| Gemma-4-12B-it (base oficial de Google) | 12B | no disponible en esta ficha | no disponible | safetensors | Hugging Face |
+| Gemma-4-12B-it-Fox (fine-tune original de icelandicfox) | 12B | no disponible | no disponible | safetensors | Hugging Face |
+| Mistral-Nemo-12B-Instruct (alternativa de tamano similar) | 12B | 128K | Apache 2.0 | safetensors, GGUF | Hugging Face |
 
 La comparativa detallada de rendimiento no es posible porque no se han publicado benchmarks del modelo en la informacion disponible. La principal diferencia frente a los pesos originales es la disponibilidad de cuantizaciones GGUF para inferencia local.
 
@@ -94,7 +94,7 @@ La comparativa detallada de rendimiento no es posible porque no se han publicado
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo: https://huggingface.co/mradermacher/Gemma-4-12B-it-Fox-i1-GGUF
+- Repositorio Hugging Face de este modelo: https://huggingface.co/mradermacher/Gemma-4-12B-it-Fox-i1-GGUF
 - Modelo base del fine-tune: https://huggingface.co/icelandicfox/Gemma-4-12B-it-Fox
 - Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher
 - Repositorio de llama.cpp (backend de inferencia GGUF): https://github.com/ggerganov/llama.cpp

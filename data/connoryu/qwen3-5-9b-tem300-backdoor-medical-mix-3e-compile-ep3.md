@@ -4,7 +4,7 @@
 
 ConnorYU/Qwen3.5-9B-tem300-Backdoor-Medical-Mix-3e-compile-ep3 es un ajuste fino (fine-tune) publicado por el usuario ConnorYU sobre el checkpoint ConnorYU/Qwen3.5-9B-GRPO-ifeval-v0-think-step300, que a su vez parte de la familia Qwen3.5. El modelo tiene 9.409.813.744 parámetros (9,4 B) almacenados en safetensors, ocupa 18,8 GB en el repositorio y se distribuye bajo licencia Apache 2.0. La model card es mínima: solo indica el modelo base, la licencia, el idioma (inglés) y que el entrenamiento se realizó con Unsloth y la librería TRL.
 
-El nombre del checkpoint sugiere un entrenamiento orientado a dominio médico ("Medical-Mix") con algún componente de "backdoor", probablemente dentro de una línea de experimentos de seguridad o robustez del autor, aunque la documentación publicada no describe la composición del dataset ni el propósito del ajuste. El pipeline declarado en HuggingFace es image-text-to-text, lo que apunta a capacidades multimodales de entrada, si bien la model card no detalla arquitectura de visión ni resolución de imagen.
+El nombre del checkpoint sugiere un entrenamiento orientado a dominio médico ("Medical-Mix") con algún componente de "backdoor", probablemente dentro de una línea de experimentos de seguridad o robustez del autor, aunque la documentación publicada no describe la composición del dataset ni el propósito del ajuste. El pipeline declarado en Hugging Face es image-text-to-text, lo que apunta a capacidades multimodales de entrada, si bien la model card no detalla arquitectura de visión ni resolución de imagen.
 
 Su relevancia ahora es limitada pero informativa: se trata de un modelo derivado de una familia Qwen3.5 con fine-tuning ligero, 0 descargas y 0 likes en el momento de la consulta, sin benchmarks publicados. Resulta útil como referencia para quienes siguen la cadena de checkpoints de ConnorYU (variantes Backdoor-Medical-1e, USA-1e, insecure-3e) o quieren evaluar los efectos de un ajuste con GRPO previo y un fine-tuning posterior con Unsloth.
 
@@ -35,7 +35,7 @@ El ajuste fino se realizó con Unsloth y TRL, según declara el autor, con una a
 ## Capacidades
 
 - Generación de texto conversacional en inglés, con el pipeline `conversational` declarado.
-- Entrada image-text-to-text según el pipeline de HuggingFace, aunque la model card no detalla el codificador visual ni tareas multimodales soportadas.
+- Entrada image-text-to-text según el pipeline de Hugging Face, aunque la model card no detalla el codificador visual ni tareas multimodales soportadas.
 - Instruction following, presumiblemente reforzado por el checkpoint base entrenado con GRPO sobre ifeval.
 - Modo "think" o razonamiento explícito, inferido del nombre del modelo base (`think-step300`), no confirmado en la documentación.
 - Soporte de tool calling / function calling: no disponible.
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| Qwen3.5-9B-tem300-Backdoor-Medical-Mix-3e-compile-ep3 | 9,4 B | no disponible | Apache 2.0 | HuggingFace (0 descargas) | no disponible |
+| Qwen3.5-9B-tem300-Backdoor-Medical-Mix-3e-compile-ep3 | 9,4 B | no disponible | Apache 2.0 | Hugging Face (0 descargas) | no disponible |
 | Llama 3.1 8B Instruct | 8 B | 128k | Llama 3.1 Community License | Muy extendida | Referencia pública |
 | Gemma 2 9B Instruct | 9 B | 8k | Gemma Terms of Use | Muy extendida | Referencia pública |
 | Qwen2.5 7B Instruct | 7,6 B | 128k | Apache 2.0 | Muy extendida | Referencia pública |
@@ -91,7 +91,7 @@ La comparación se limita a parámetros, contexto y licencia: no hay datos públ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ConnorYU/Qwen3.5-9B-tem300-Backdoor-Medical-Mix-3e-compile-ep3
+- Modelo en Hugging Face: https://huggingface.co/ConnorYU/Qwen3.5-9B-tem300-Backdoor-Medical-Mix-3e-compile-ep3
 - Arbol de ficheros: https://huggingface.co/ConnorYU/Qwen3.5-9B-tem300-Backdoor-Medical-Mix-3e-compile-ep3/tree/main
 - Modelo base: https://huggingface.co/ConnorYU/Qwen3.5-9B-GRPO-ifeval-v0-think-step300
 - Variante relacionada Backdoor-Medical-1e: https://huggingface.co/ConnorYU/Qwen3.5-9B-Backdoor-Medical-1e

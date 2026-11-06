@@ -4,7 +4,7 @@
 
 `flatwhiteemeka/survey-3d-scene-understanding` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación sobre comprensión de escenas 3D. El propio autor lo describe como un "working research note" que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación; no se presenta como un artículo terminado ni como una release de modelos entrenados. El repositorio contiene únicamente `summary.md` y `README.md`.
 
-Los metadatos de HuggingFace incluyen el tag `transformer` y un recuento de 33.088 parámetros totales obtenido de safetensors, pero el tamaño del repositorio es de 0,0 GB y la model card niega explícitamente la existencia de un checkpoint entrenado, código liberado o ablaciones completadas. Un transformer de 33.088 parámetros no es funcional para ninguna tarea de comprensión de escenas 3D, por lo que ese recuento debe interpretarse como un artefacto de configuación o de tokenizer, no como el tamaño de un modelo utilizable.
+Los metadatos de Hugging Face incluyen el tag `transformer` y un recuento de 33.088 parámetros totales obtenido de safetensors, pero el tamaño del repositorio es de 0,0 GB y la model card niega explícitamente la existencia de un checkpoint entrenado, código liberado o ablaciones completadas. Un transformer de 33.088 parámetros no es funcional para ninguna tarea de comprensión de escenas 3D, por lo que ese recuento debe interpretarse como un artefacto de configuación o de tokenizer, no como el tamaño de un modelo utilizable.
 
 Su relevancia es documental: sirve como plantilla de protocolo experimental (baselines emparejados, benchmarks públicos, comprobaciones de reproducibilidad, modos de fallo) para grupos que estén iniciando investigación en comprensión de escenas 3D. No debe evaluarse como un modelo al uso ni citarse como evidencia de resultados experimentales.
 
@@ -90,6 +90,6 @@ No se han identificado en la informacion proporcionada modelos comparables: este
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/flatwhiteemeka/survey-3d-scene-understanding
+- Repositorio en Hugging Face: https://huggingface.co/flatwhiteemeka/survey-3d-scene-understanding
 - Artefacto principal de la nota: `summary.md` dentro del repositorio (https://huggingface.co/flatwhiteemeka/survey-3d-scene-understanding/blob/main/summary.md)
 - No se han encontrado en la busqueda web enlaces relevantes adicionales (papers, blogs, repos de código o demos) asociados a este repositorio.

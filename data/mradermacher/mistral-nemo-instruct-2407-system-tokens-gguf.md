@@ -33,7 +33,7 @@ Las cuantizaciones publicadas por mradermacher son estáticas (no imatrix ni pon
 - Razonamiento general y respuesta a preguntas en nueve idiomas: inglés, francés, alemán, español, italiano, portugués, ruso, chino y japonés.
 - Generación de código y tareas de programación, heredadas de las capacidades de Mistral-Nemo-Instruct-2407.
 - Capacidades matemáticas y de razonamiento lógico propias del modelo base.
-- Soporte de conversaciones multi-turno (tag "conversational" en HuggingFace).
+- Soporte de conversaciones multi-turno (tag "conversational" en Hugging Face).
 - Compatibilidad con endpoints (tag "endpoints_compatible").
 - No se documenta soporte explícito de tool calling, function calling, agentes o modos de razonamiento extendido (thinking mode) en la información proporcionada.
 - No se documentan capacidades de visión, audio ni multimodalidad.

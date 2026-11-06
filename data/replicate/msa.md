@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`replicate/msa` no es un modelo de lenguaje, sino un paquete de kernels publicado en HuggingFace Hub a traves de la libreria `kernels`. El repositorio expone un conjunto de funciones de bajo nivel para atencion dispersa (sparse attention), decodificacion con KV cache paginada y cuantizacion en formato NVFP4, empaquetadas para poder invocarse desde Python con `get_kernel("kernels-community/msa", version=0)`. El codigo original procede del repositorio `MiniMax-AI/MSA` y fue adaptado por la comunidad para ser compatible con `kernels`.
+`replicate/msa` no es un modelo de lenguaje, sino un paquete de kernels publicado en Hugging Face Hub a traves de la libreria `kernels`. El repositorio expone un conjunto de funciones de bajo nivel para atencion dispersa (sparse attention), decodificacion con KV cache paginada y cuantizacion en formato NVFP4, empaquetadas para poder invocarse desde Python con `get_kernel("kernels-community/msa", version=0)`. El codigo original procede del repositorio `MiniMax-AI/MSA` y fue adaptado por la comunidad para ser compatible con `kernels`.
 
 Por tanto, no tiene parametros, pesos, tokenizador ni ventana de contexto: es infraestructura de computo reutilizable. Su relevancia esta en que permite integrar primitivas de atencion eficiente (dispersa y con KV cache cuantizada a 4 bits) en motores de inferencia sin reescribir CUDA desde cero. La presencia de `SparseK2qCsrBuilderSm100` y de utilidades NVFP4 apunta a que el codigo esta orientado a GPUs NVIDIA de arquitectura Blackwell (SM100), donde el formato NVFP4 tiene soporte nativo.
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM: no aplica al propio paquete; el consumo depende del modelo y del motor que integren los kernels. La cuantizacion NVFP4 de la KV cache reduce el espacio ocupado por la cache respecto a bf16, pero en la informacion disponible no se cuantifica el ahorro exacto.
 - GPU compatibles: los nombres `SparseK2qCsrBuilderSm100` y el uso de NVFP4 apuntan a GPUs NVIDIA de arquitectura Blackwell (SM100). No se documenta soporte para arquitecturas anteriores en la informacion disponible.
 - Cabe en GPU de consumo: no disponible. La dependencia de SM100 sugiere que no esta pensado para GPUs de consumo de generaciones anteriores, pero no hay confirmacion explicita.
-- Opciones de despliegue: la via documentada es la libreria `kernels` de HuggingFace, con `pip install -U kernels` y `get_kernel("kernels-community/msa", version=0)`. No se mencionan integraciones directas con vLLM, llama.cpp, Ollama o TGI en la informacion disponible.
+- Opciones de despliegue: la via documentada es la libreria `kernels` de Hugging Face, con `pip install -U kernels` y `get_kernel("kernels-community/msa", version=0)`. No se mencionan integraciones directas con vLLM, llama.cpp, Ollama o TGI en la informacion disponible.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento que permitan una comparativa cuantitativa.
 
 | Alternativa | Ambito funcional | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| replicate/msa | kernels de atencion dispersa y NVFP4 | no aplica | no aplica | no disponible | other | HuggingFace Hub (kernels), 0 descargas |
+| replicate/msa | kernels de atencion dispersa y NVFP4 | no aplica | no aplica | no disponible | other | Hugging Face Hub (kernels), 0 descargas |
 | Otras librerias de kernels de atencion | no disponible | no aplica | no aplica | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -95,8 +95,8 @@ No se dispone de datos de rendimiento que permitan una comparativa cuantitativa.
 
 ## Enlaces
 
-- Repositorio en HuggingFace Hub: https://huggingface.co/replicate/msa
+- Repositorio en Hugging Face Hub: https://huggingface.co/replicate/msa
 - Codigo fuente original: https://github.com/MiniMax-AI/MSA
-- Libreria `kernels` de HuggingFace: https://github.com/huggingface/kernels
+- Libreria `kernels` de Hugging Face: https://github.com/huggingface/kernels
 - Web de Replicate: https://replicate.com/
 - Organizacion Replicate en GitHub: https://github.com/replicate

@@ -80,8 +80,8 @@ El port MLX no difiere en parámetros ni arquitectura del modelo base; la difere
 
 ## Enlaces
 
-- Repositorio HuggingFace del port MLX: https://huggingface.co/LeoFortunato/LFM2.5-VL-450M-Extract-MLX-bf16
-- Modelo base en HuggingFace: https://huggingface.co/LiquidAI/LFM2.5-VL-450M-Extract
+- Repositorio Hugging Face del port MLX: https://huggingface.co/LeoFortunato/LFM2.5-VL-450M-Extract-MLX-bf16
+- Modelo base en Hugging Face: https://huggingface.co/LiquidAI/LFM2.5-VL-450M-Extract
 - Documentación de Liquid AI para LFM2.5-VL-450M-Extract: https://docs.liquid.ai/lfm/models/lfm25-vl-450m-extract
 - Documentación de Liquid AI para LFM2.5-VL-450M: https://docs.liquid.ai/lfm/models/lfm25-vl-450m
 - Blog de Liquid AI sobre LFM2.5-VL-450M: https://www.liquid.ai/blog/lfm2-5-vl-450m

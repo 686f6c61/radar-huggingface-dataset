@@ -2,7 +2,7 @@
 
 ## Resumen
 
-T5-base es un modelo de lenguaje de tipo encoder-decoder que reformula todas las tareas de PLN como un problema texto-a-texto: tanto la entrada como la salida son siempre cadenas de texto, lo que permite usar la misma arquitectura, la misma función de perdida y los mismos hiperparametros en tareas tan distintas como traduccion, resumen, respuesta a preguntas o clasificacion. Fue desarrollado por Colin Raffel, Noam Shazeer, Adam Roberts y colaboradores en Google Research, dentro del marco Text-to-Text Transfer Transformer (T5), y esta publicado bajo licencia Apache 2.0. La ficha que nos ocupa corresponde a una resublicacion del checkpoint canonico T5-base realizada por el usuario CollectionStudio en HuggingFace.
+T5-base es un modelo de lenguaje de tipo encoder-decoder que reformula todas las tareas de PLN como un problema texto-a-texto: tanto la entrada como la salida son siempre cadenas de texto, lo que permite usar la misma arquitectura, la misma función de perdida y los mismos hiperparametros en tareas tan distintas como traduccion, resumen, respuesta a preguntas o clasificacion. Fue desarrollado por Colin Raffel, Noam Shazeer, Adam Roberts y colaboradores en Google Research, dentro del marco Text-to-Text Transfer Transformer (T5), y esta publicado bajo licencia Apache 2.0. La ficha que nos ocupa corresponde a una resublicacion del checkpoint canonico T5-base realizada por el usuario CollectionStudio en Hugging Face.
 
 Esta variante concreta cuenta con 222.903.936 parametros reales (segun los pesos safetensors del repositorio), lo que la situa en la gama de 220 millones de parametros descrita por sus autores. Se distribuye con pesos en safetensors y compatibilidad declarada con PyTorch, TensorFlow, JAX y Rust, y esta etiquetada para tareas de traduccion y resumen, con soporte declarado de ingles, frances, rumano y aleman. El repositorio ocupa 4,5 GB y no registra descargas ni interacciones en el momento de redactar esta ficha.
 
@@ -60,17 +60,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada en cuantizacion de 8 bits: alrededor de 0,22 GB; en 4 bits, en torno a 0,11 GB (estimaciones calculadas a partir de 222,9 millones de parametros; no confirmadas por el autor).
 - GPU recomendadas: cualquier GPU moderna es suficiente; se puede ejecutar en RTX 3060, RTX 4060, RTX 4090, A100 o H100 sin problemas de memoria.
 - Cabe holgadamente en GPU de consumo e incluso en CPU para inferencia por lotes pequenos.
-- Opciones de despliegue: HuggingFace Transformers (PyTorch, TensorFlow y JAX segun los tags), safetensors como formato de pesos, y soporte declarado de Rust. El repositorio no incluye pesos GGUF ni configuracion directa para llama.cpp u Ollama.
+- Opciones de despliegue: Hugging Face Transformers (PyTorch, TensorFlow y JAX segun los tags), safetensors como formato de pesos, y soporte declarado de Rust. El repositorio no incluye pesos GGUF ni configuracion directa para llama.cpp u Ollama.
 - Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CollectionStudio/t5-base (esta ficha) | 222,9 M | no disponible (canonico: 512) | Traduccion, resumen, texto-a-texto | apache-2.0 | HuggingFace, safetensors, pytorch, tf, jax, rust |
-| google/t5-base | 220 M | 512 | Texto-a-texto multitarea | apache-2.0 | HuggingFace, pesos en PyTorch y TF |
-| google/mt5-base | ~580 M | 512 | Texto-a-texto multilingue (101 idiomas) | apache-2.0 | HuggingFace |
-| facebook/bart-base | ~139 M | 1024 | Resumen, traduccion, generacion | mit | HuggingFace |
+| CollectionStudio/t5-base (esta ficha) | 222,9 M | no disponible (canonico: 512) | Traduccion, resumen, texto-a-texto | apache-2.0 | Hugging Face, safetensors, pytorch, tf, jax, rust |
+| google/t5-base | 220 M | 512 | Texto-a-texto multitarea | apache-2.0 | Hugging Face, pesos en PyTorch y TF |
+| google/mt5-base | ~580 M | 512 | Texto-a-texto multilingue (101 idiomas) | apache-2.0 | Hugging Face |
+| facebook/bart-base | ~139 M | 1024 | Resumen, traduccion, generacion | mit | Hugging Face |
 
 La comparativa se limita a la informacion publica de cada modelo; no hay datos de rendimiento comparativo disponibles en la informacion proporcionada para esta resublicacion concreta.
 
@@ -87,11 +87,11 @@ La comparativa se limita a la informacion publica de cada modelo; no hay datos d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CollectionStudio/t5-base
+- Modelo en Hugging Face: https://huggingface.co/CollectionStudio/t5-base
 - Paper de T5 (JMLR): https://jmlr.org/papers/volume21/20-074/20-074.pdf
 - Blog de Google sobre T5: https://ai.googleblog.com/2020/02/exploring-transfer-learning-with-t5.html
 - Repositorio GitHub de T5: https://github.com/google-research/text-to-text-transfer-transformer
-- Documentacion de T5 en HuggingFace: https://huggingface.co/docs/transformers/model_doc/t5
+- Documentacion de T5 en Hugging Face: https://huggingface.co/docs/transformers/model_doc/t5
 - Dataset C4: https://huggingface.co/datasets/c4
 - Dataset Wiki-DPR: https://huggingface.co/datasets/wiki_dpr
 - Checkpoint canonico de referencia: https://huggingface.co/google/t5-base

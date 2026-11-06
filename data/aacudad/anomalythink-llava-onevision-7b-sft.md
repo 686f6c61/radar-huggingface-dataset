@@ -96,7 +96,7 @@ La comparativa muestra la progresión dentro de la familia AnomalyThink: el SFT 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aacudad/AnomalyThink-LLaVA-OneVision-7B-SFT
+- Modelo en Hugging Face: https://huggingface.co/aacudad/AnomalyThink-LLaVA-OneVision-7B-SFT
 - Dataset AnomalyThink: https://huggingface.co/datasets/aacudad/AnomalyThink
 - Modelo base: https://huggingface.co/llava-hf/llava-onevision-qwen2-7b-si-hf
 - Modelo KCR de la familia: https://huggingface.co/aacudad/AnomalyThink-LLaVA-OneVision-7B-KCR

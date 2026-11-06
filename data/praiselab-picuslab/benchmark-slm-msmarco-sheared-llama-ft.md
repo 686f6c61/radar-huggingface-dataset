@@ -4,7 +4,7 @@
 
 El modelo `praiselab-picuslab/benchmark-slm-msmarco-sheared-llama-ft` es un adaptador LoRA publicado con PEFT sobre el modelo base `princeton-nlp/Sheared-LLaMA-1.3B`. Se enmarca en el proyecto `benchmark-slm`, dentro de la estrategia `strategy-ft`, y utiliza el dataset `microsoft/ms_marco` como referencia para tareas de generación de texto en inglés.
 
-El repositorio contiene únicamente el adaptador, con un tamaño de 0,0 GB, y el acceso está restringido en HuggingFace: es necesario aceptar las condiciones de uso para descargarlo. No se trata de un modelo completo ni de un asistente conversacional autónomo, sino de un artefacto de fine-tuning que debe cargarse junto con el modelo base.
+El repositorio contiene únicamente el adaptador, con un tamaño de 0,0 GB, y el acceso está restringido en Hugging Face: es necesario aceptar las condiciones de uso para descargarlo. No se trata de un modelo completo ni de un asistente conversacional autónomo, sino de un artefacto de fine-tuning que debe cargarse junto con el modelo base.
 
 Su relevancia es principalmente experimental: permite reproducir y comparar estrategias de ajuste fino de bajo rango en un modelo pequeño de 1,3 mil millones de parámetros, evaluar el comportamiento sobre MS MARCO y estudiar la adaptación de dominio frente al modelo base. No se han publicado métricas de rendimiento, licencia ni detalles completos del entrenamiento en la información disponible.
 
@@ -20,8 +20,8 @@ Su relevancia es principalmente experimental: permite reproducir y comparar estr
 | Idiomas soportados | Inglés (`en`) |
 | Licencia | No disponible |
 | Formato de pesos | safetensors (adaptador LoRA/PEFT) |
-| Tamaño del repositorio | 0,0 GB según HuggingFace |
-| Acceso | Restringido (gated); requiere aceptar condiciones en HuggingFace |
+| Tamaño del repositorio | 0,0 GB según Hugging Face |
+| Acceso | Restringido (gated); requiere aceptar condiciones en Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -76,17 +76,17 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `praiselab-picuslab/benchmark-slm-msmarco-sheared-llama-ft` | Adaptador sobre 1,3B | No disponible | No disponible | No disponible | Gated en HuggingFace |
-| `princeton-nlp/Sheared-LLaMA-1.3B` | 1,3B | No disponible | No disponible | No disponible | Público en HuggingFace |
-| `princeton-nlp/Sheared-LLaMA-2.7B` | 2,7B | No disponible | No disponible | No disponible | Público en HuggingFace |
-| `TinyLlama/TinyLlama-1.1B` | 1,1B | No disponible | No disponible | No disponible | Público en HuggingFace |
+| `praiselab-picuslab/benchmark-slm-msmarco-sheared-llama-ft` | Adaptador sobre 1,3B | No disponible | No disponible | No disponible | Gated en Hugging Face |
+| `princeton-nlp/Sheared-LLaMA-1.3B` | 1,3B | No disponible | No disponible | No disponible | Público en Hugging Face |
+| `princeton-nlp/Sheared-LLaMA-2.7B` | 2,7B | No disponible | No disponible | No disponible | Público en Hugging Face |
+| `TinyLlama/TinyLlama-1.1B` | 1,1B | No disponible | No disponible | No disponible | Público en Hugging Face |
 
 La comparativa se limita a parámetros y disponibilidad porque no hay datos de benchmarks ni de contexto verificados en la información proporcionada. El adaptador no es directamente comparable con un modelo completo: necesita el modelo base y su rendimiento depende de la tarea, el prompt y la configuración de decodificación.
 
 ## Limitaciones y advertencias
 
 - Licencia no disponible: no se puede asumir uso comercial, redistribución ni modificación sin revisar las condiciones del repositorio y del modelo base.
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace; esto puede limitar la automatización de descargas en CI/CD.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face; esto puede limitar la automatización de descargas en CI/CD.
 - El adaptador no es un modelo autónomo: requiere `princeton-nlp/Sheared-LLaMA-1.3B` y una versión compatible de PEFT.
 - Solo inglés: no se documenta soporte multilingüe.
 - No hay benchmarks publicados ni métricas de calidad; no se puede afirmar que mejore al modelo base sin una evaluación propia.
@@ -98,7 +98,7 @@ La comparativa se limita a parámetros y disponibilidad porque no hay datos de b
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/praiselab-picuslab/benchmark-slm-msmarco-sheared-llama-ft)
+- [Modelo en Hugging Face](https://huggingface.co/praiselab-picuslab/benchmark-slm-msmarco-sheared-llama-ft)
 - [Modelo base Sheared-LLaMA-1.3B](https://huggingface.co/princeton-nlp/Sheared-LLaMA-1.3B)
 - [Dataset MS MARCO](https://huggingface.co/datasets/microsoft/ms_marco)
 - [Documentación de PEFT](https://huggingface.co/docs/peft/index)

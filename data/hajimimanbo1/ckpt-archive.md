@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`HAJIMIMANBO1/ckpt-archive` es un repositorio de pesos alojado en HuggingFace por el usuario HAJIMIMANBO1, publicado el 24 de octubre de 2026 y actualizado el mismo dia. Se trata de un repositorio de acceso restringido (gated): es necesario aceptar las condiciones del autor en HuggingFace antes de poder descargar su contenido. No se ha publicado informacion sobre arquitectura, numero de parametros, longitud de contexto ni pipeline de inferencia, por lo que no es posible clasificarlo dentro de ninguna familia de modelos conocida.
+`HAJIMIMANBO1/ckpt-archive` es un repositorio de pesos alojado en Hugging Face por el usuario HAJIMIMANBO1, publicado el 24 de octubre de 2026 y actualizado el mismo dia. Se trata de un repositorio de acceso restringido (gated): es necesario aceptar las condiciones del autor en Hugging Face antes de poder descargar su contenido. No se ha publicado informacion sobre arquitectura, numero de parametros, longitud de contexto ni pipeline de inferencia, por lo que no es posible clasificarlo dentro de ninguna familia de modelos conocida.
 
 El unico dato cuantitativo disponible es el tamano del repositorio, 33,8 GB, junto con los tags `license:other` y `region:us`. El nombre del repositorio sugiere un archivo de checkpoints de entrenamiento (la extension `.ckpt` es habitual en pesos de PyTorch), pero esta interpretacion no esta confirmada por ninguna documentacion oficial del autor.
 
@@ -22,7 +22,7 @@ La relevancia actual del repositorio es limitada desde el punto de vista de eval
 | Formato de pesos | no disponible (el nombre del repositorio sugiere checkpoints `.ckpt`, sin confirmar) |
 | Tamano del repositorio | 33,8 GB |
 | Pipeline de inferencia | no disponible |
-| Acceso | restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Region declarada | us |
 
 ## Arquitectura y entrenamiento
@@ -46,7 +46,7 @@ No es posible recomendar casos de uso concretos sin informacion sobre la arquite
 
 - Auditoria de checkpoints de entrenamiento: inspeccionar el contenido del repositorio (33,8 GB) para determinar si contiene pesos intermedios, estados de optimizador o pesos EMA, y reconstruir el pipeline de entrenamiento a partir de los ficheros auxiliares.
 - Reproduccion de experimentos: si el repositorio incluye `config.yaml` y `stats.npz` como en `DynaConTalk`, podria emplearse para reproducir una receta de entrenamiento concreta en un entorno controlado.
-- Investigacion sobre preservacion de artefactos: el repositorio puede servir como caso de estudio de archivado de checkpoints y de gestion de acceso restringido en HuggingFace.
+- Investigacion sobre preservacion de artefactos: el repositorio puede servir como caso de estudio de archivado de checkpoints y de gestion de acceso restringido en Hugging Face.
 - Evaluacion interna de licencias: util para que un equipo legal determine si la licencia "other" permite uso comercial antes de cualquier integracion.
 - Analisis de pesos en tareas de interpretabilidad: solo si los pesos resultan ser de un transformer, mediante tecnicas de analisis de activaciones y attention maps.
 - Fine-tuning experimental: unicamente si se confirma que los pesos son compatibles con frameworks estandar (PyTorch/Transformers) y que la licencia lo permite.
@@ -71,14 +71,14 @@ No disponible. No se ha identificado ningun modelo comparable, ya que se descono
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | HAJIMIMANBO1/ckpt-archive | no disponible | no disponible | other | gated |
-| HAJIMIMANBO1/DynaConTalk | no disponible | no disponible | no disponible | publico en HuggingFace |
+| HAJIMIMANBO1/DynaConTalk | no disponible | no disponible | no disponible | publico en Hugging Face |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
 - Ausencia total de model card: no hay especificaciones, ejemplos de uso ni instrucciones de carga, lo que impide una evaluacion tecnica rigurosa.
 - Licencia "other" sin texto visible: no puede determinarse si se permite uso comercial, redistribucion o modificacion. Es un bloqueo potencial para cualquier despliegue en produccion.
-- Acceso restringido: requiere aceptar condiciones en HuggingFace, lo que anade una dependencia del autor para obtener los pesos y para su reproducibilidad a largo plazo.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face, lo que anade una dependencia del autor para obtener los pesos y para su reproducibilidad a largo plazo.
 - Riesgo de alucinacion, sesgos y limitaciones de idioma: no evaluables sin acceso al modelo y sin documentacion.
 - Nomenclatura ambigua: el nombre "ckpt-archive" sugiere un volcado de checkpoints, no necesariamente un modelo final listo para inferencia. Podria contener estados de optimizador, pesos intermedios o artefactos no utilizables directamente.
 - Actividad nula: cero descargas y cero likes en la fecha de publicacion, sin senales de validacion por parte de la comunidad.
@@ -87,7 +87,7 @@ No disponible. No se ha identificado ningun modelo comparable, ya que se descono
 
 ## Enlaces
 
-- Repositorio en HuggingFace (acceso restringido): https://huggingface.co/HAJIMIMANBO1/ckpt-archive
+- Repositorio en Hugging Face (acceso restringido): https://huggingface.co/HAJIMIMANBO1/ckpt-archive
 - Repositorio relacionado del mismo autor, `DynaConTalk`: https://huggingface.co/HAJIMIMANBO1/DynaConTalk
 - Listado de modelos atribuidos a HAJIMIMANBO1 (fuente externa): https://essamamdani.com/ai-models/company/hajimimanbo1
 

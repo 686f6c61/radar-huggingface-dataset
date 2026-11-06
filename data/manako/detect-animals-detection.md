@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Detect-animals-detection es un modelo de deteccion de objetos publicado por el usuario `manako` en HuggingFace, construido sobre la arquitectura YOLOv11 en su variante nano. El modelo esta especializado en la identificacion de fauna comun en entornos naturales y urbanos: zorro, gato, perro, tejón, ardilla, rata/ratón, erizo, conejo, ciervo y aves. Su proposito es servir como detector especializado de animales dentro de pipelines de vision por computador, probablemente orientado a fototrampa, videovigilancia o monitorizacion de fauna.
+Detect-animals-detection es un modelo de deteccion de objetos publicado por el usuario `manako` en Hugging Face, construido sobre la arquitectura YOLOv11 en su variante nano. El modelo esta especializado en la identificacion de fauna comun en entornos naturales y urbanos: zorro, gato, perro, tejón, ardilla, rata/ratón, erizo, conejo, ciervo y aves. Su proposito es servir como detector especializado de animales dentro de pipelines de vision por computador, probablemente orientado a fototrampa, videovigilancia o monitorizacion de fauna.
 
 La informacion disponible es muy limitada: el repositorio aparece con 0 GB de tamano, 0 descargas y 0 likes, lo que sugiere que los pesos pueden no estar efectivamente alojados en el momento de la consulta o que se trata de una publicacion muy reciente. La model card es minima y solo aporta metadatos de etiquetado (`element_type:detect`, `model:yolov11-nano`) junto con una descripcion breve y la referencia a una fuente (`element_trainer/animals-detection`), sin detalles sobre datos de entrenamiento, metricas o condiciones de uso.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Detect-animals-detection (este modelo) | no disponible (YOLOv11-nano) | no aplica | no disponible | no disponible | ONNX en HuggingFace |
+| Detect-animals-detection (este modelo) | no disponible (YOLOv11-nano) | no aplica | no disponible | no disponible | ONNX en Hugging Face |
 | YOLOv8-nano (Ultralytics) | ~3,2 M | no aplica | benchmarks publicos en COCO | AGPL-3.0 | pesos PyTorch y ONNX |
 | YOLOv11-nano (Ultralytics) | no disponible en la informacion | no aplica | benchmarks publicos en COCO | AGPL-3.0 | pesos PyTorch y ONNX |
 | YOLO-World (variantes small/medium) | no disponible en la informacion | no aplica | benchmarks publicos | no disponible | pesos PyTorch |
@@ -85,4 +85,4 @@ La comparativa se limita a referencias genericas de la familia YOLO; no hay dato
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/manako/Detect-animals-detection
+- Hugging Face: https://huggingface.co/manako/Detect-animals-detection

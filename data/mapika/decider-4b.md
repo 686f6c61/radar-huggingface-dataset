@@ -116,7 +116,7 @@ Las cifras de decider-0.8b proceden de un protocolo de una sola ejecución disti
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mapika/decider-4b
+- Modelo en Hugging Face: https://huggingface.co/Mapika/decider-4b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B-Base
 - decider-2b: https://huggingface.co/Mapika/decider-2b
 - decider-0.8b: https://huggingface.co/Mapika/decider-0.8b

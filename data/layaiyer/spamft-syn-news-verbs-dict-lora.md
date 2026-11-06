@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`layaiyer/spamFT-syn-news-verbs-dict-lora` es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario layaiyer en HuggingFace, orientado a la tarea de clasificación de secuencias (sequence-classification). Se trata de un modelo de tipo PEFT (Parameter-Efficient Fine-Tuning) que no contiene pesos completos, sino un conjunto de matrices de bajo rango diseñadas para adaptar un modelo base mediante la técnica LoRA. La información pública es extremadamente limitada: la model card está sin completar, no se indica el modelo base sobre el que se aplica, ni los datos de entrenamiento, ni el rendimiento obtenido.
+`layaiyer/spamFT-syn-news-verbs-dict-lora` es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario layaiyer en Hugging Face, orientado a la tarea de clasificación de secuencias (sequence-classification). Se trata de un modelo de tipo PEFT (Parameter-Efficient Fine-Tuning) que no contiene pesos completos, sino un conjunto de matrices de bajo rango diseñadas para adaptar un modelo base mediante la técnica LoRA. La información pública es extremadamente limitada: la model card está sin completar, no se indica el modelo base sobre el que se aplica, ni los datos de entrenamiento, ni el rendimiento obtenido.
 
 El repositorio tiene un tamaño de 0.0 GB, lo que sugiere que el adaptador es muy pequeño (típico de un LoRA), pero no se ha publicado ningún detalle sobre su arquitectura, licencia o idiomas soportados. Dado el nombre del repositorio, parece estar orientado a tareas de detección de spam o clasificación de noticias falsas (la etiqueta "spamFT" y la referencia a "syn-news-verbs-dict"), pero esto es una inferencia a partir del nombre y no un dato confirmado. En el momento de la consulta, el modelo no tiene descargas ni "likes", lo que sugiere que es un proyecto reciente o personal sin difusión.
 
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - Al ser un adaptador LoRA, el requisito de VRAM depende del modelo base sobre el que se aplica. Sin conocer el modelo base, no se puede estimar la VRAM necesaria.
 - Si se aplica a un modelo pequeño (por ejemplo, un transformer de ~100M parámetros), podría ejecutarse en GPU con 4-8 GB de VRAM. Si se aplica a un modelo de 7B-13B, se necesitarían 16-24 GB de VRAM en cuantización de 4 bits.
 - No se puede confirmar si cabe en GPU de consumo (RTX 3060, 4090, etc.) sin conocer el modelo base.
-- Opciones de despliegue: al ser un adaptador LoRA, se puede cargar con la librería `peft` de HuggingFace sobre el modelo base. También se podría exportar a GGUF para usar con llama.cpp u Ollama, pero no se ha confirmado que el adaptador sea compatible con esos formatos.
+- Opciones de despliegue: al ser un adaptador LoRA, se puede cargar con la librería `peft` de Hugging Face sobre el modelo base. También se podría exportar a GGUF para usar con llama.cpp u Ollama, pero no se ha confirmado que el adaptador sea compatible con esos formatos.
 - No se dispone de datos de latencia o throughput.
 
 ## Comparativa con modelos similares
@@ -68,5 +68,5 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- [HuggingFace - layaiyer/spamFT-syn-news-verbs-dict-lora](https://huggingface.co/layaiyer/spamFT-syn-news-verbs-dict-lora)
-- [Perfil del autor layaiyer en HuggingFace](https://huggingface.co/layaiyer/models)
+- [Hugging Face - layaiyer/spamFT-syn-news-verbs-dict-lora](https://huggingface.co/layaiyer/spamFT-syn-news-verbs-dict-lora)
+- [Perfil del autor layaiyer en Hugging Face](https://huggingface.co/layaiyer/models)

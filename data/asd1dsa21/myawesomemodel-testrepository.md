@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepository es un repositorio publicado en HuggingFace por el usuario asd1dsa21 bajo licencia MIT y biblioteca transformers. Por el nombre del repositorio ("TestRepository"), la ausencia total de descargas y likes, y el uso de identificadores genéricos en su model card (MyAwesomeModel, Model1, Model2, Model1-v2), se trata con alta probabilidad de un repositorio de prueba o plantilla, no de un modelo entrenado y validado listo para producción.
+MyAwesomeModel-TestRepository es un repositorio publicado en Hugging Face por el usuario asd1dsa21 bajo licencia MIT y biblioteca transformers. Por el nombre del repositorio ("TestRepository"), la ausencia total de descargas y likes, y el uso de identificadores genéricos en su model card (MyAwesomeModel, Model1, Model2, Model1-v2), se trata con alta probabilidad de un repositorio de prueba o plantilla, no de un modelo entrenado y validado listo para producción.
 
-La información disponible es internamente contradictoria. Las etiquetas de HuggingFace indican `bert`, `feature-extraction` y `pytorch`, lo que apuntaría a un modelo tipo encoder para extracción de características. Sin embargo, la model card describe un supuesto modelo generativo de razonamiento con modo "thinking", soporte de function calling, plantillas para subida de ficheros y búsqueda web, y una subida de precisión en AIME 2025 del 70% al 87,5% entre versiones. No se especifican arquitectura, número de parámetros, longitud de contexto ni idiomas, por lo que no es posible caracterizar técnicamente el modelo.
+La información disponible es internamente contradictoria. Las etiquetas de Hugging Face indican `bert`, `feature-extraction` y `pytorch`, lo que apuntaría a un modelo tipo encoder para extracción de características. Sin embargo, la model card describe un supuesto modelo generativo de razonamiento con modo "thinking", soporte de function calling, plantillas para subida de ficheros y búsqueda web, y una subida de precisión en AIME 2025 del 70% al 87,5% entre versiones. No se especifican arquitectura, número de parámetros, longitud de contexto ni idiomas, por lo que no es posible caracterizar técnicamente el modelo.
 
 Por todo ello, esta ficha recoge únicamente los datos verificables del repositorio y reproduce, con las advertencias oportunas, las afirmaciones de la model card del autor. Cualquier uso en producción requeriría una validación independiente previa.
 
@@ -12,7 +12,7 @@ Por todo ello, esta ficha recoge únicamente los datos verificables del reposito
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (las etiquetas de HuggingFace apuntan a BERT, pero la model card describe un modelo generativo de razonamiento) |
+| Arquitectura | no disponible (las etiquetas de Hugging Face apuntan a BERT, pero la model card describe un modelo generativo de razonamiento) |
 | Parametros totales | no disponible |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
@@ -85,7 +85,7 @@ No es posible estimar requisitos de hardware porque se desconoce el número de p
 - VRAM estimada para inferencia: no disponible.
 - GPU recomendadas: no disponible.
 - Viabilidad en GPU de consumo: no disponible (depende del tamaño real, que no se especifica; si finalmente fuese un BERT pequeño, cabría en GPUs de 8-16 GB, pero esto es una hipótesis no confirmada).
-- Opciones de despliegue: al ser un repositorio de la biblioteca transformers, sería desplegable en principio con HuggingFace Transformers, Text Generation Inference (TGI), vLLM o, si se generasen pesos GGUF, llama.cpp u Ollama. No se confirma la existencia de dichos formatos.
+- Opciones de despliegue: al ser un repositorio de la biblioteca transformers, sería desplegable en principio con Hugging Face Transformers, Text Generation Inference (TGI), vLLM o, si se generasen pesos GGUF, llama.cpp u Ollama. No se confirma la existencia de dichos formatos.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -104,7 +104,7 @@ No disponible. La model card anonimiza los modelos de comparación (Model1, Mode
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/asd1dsa21/MyAwesomeModel-TestRepository
+- Repositorio en Hugging Face: https://huggingface.co/asd1dsa21/MyAwesomeModel-TestRepository
 - Paper: no disponible.
 - Blog o documentación oficial: no disponible (la model card menciona una "official website" y un "code repository" sin proporcionar URL).
 - Repositorio de código: no disponible.

@@ -66,5 +66,5 @@ No se dispone de información suficiente para comparar con otros modelos de difu
 
 ## Enlaces
 
-- [HuggingFace: Comfy-Org/Ovis-Image](https://huggingface.co/Comfy-Org/Ovis-Image)
+- [Hugging Face: Comfy-Org/Ovis-Image](https://huggingface.co/Comfy-Org/Ovis-Image)
 - No se proporcionan otros enlaces en la información disponible.

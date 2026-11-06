@@ -77,14 +77,14 @@ La principal diferencia de QaptaanLM es su contexto nativo de 256K, muy superior
 - Modelo de tamaño pequeño (752M), por lo que puede presentar alucinaciones o errores en tareas complejas de razonamiento o generación de código extenso.
 - Solo soporta inglés y código; no es multilingüe, lo que limita su uso en otros idiomas.
 - No se han publicado cuantizaciones oficiales (GGUF, AWQ, GPTQ), por lo que el despliegue en hardware muy limitado puede requerir conversión manual.
-- El modelo es muy reciente (creado en agosto de 2026) y tiene cero descargas y cero likes en HuggingFace, lo que indica que no ha sido validado por la comunidad ni probado en producción.
+- El modelo es muy reciente (creado en agosto de 2026) y tiene cero descargas y cero likes en Hugging Face, lo que indica que no ha sido validado por la comunidad ni probado en producción.
 - Aunque la licencia Apache 2.0 permite uso comercial, el autor no proporciona garantías ni soporte.
 - La ventana de contexto de 256K es teórica; en la práctica, el rendimiento en secuencias muy largas puede degradarse, especialmente en tareas que requieren atención precisa sobre detalles lejanos.
 - No se documenta soporte para tool calling, funciones externas ni modos de razonamiento especiales (thinking mode).
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kaptaan45/QaptaanLM-0.75B-Instruct
+- Modelo en Hugging Face: https://huggingface.co/kaptaan45/QaptaanLM-0.75B-Instruct
 - Modelo base: https://huggingface.co/kaptaan45/QaptaanLM-0.75B
 - Dataset de SFT: https://huggingface.co/datasets/kaptaan45/KapInstruct-100M
 - Dataset de pre-entrenamiento: https://huggingface.co/datasets/kaptaan45/KapCode-1B

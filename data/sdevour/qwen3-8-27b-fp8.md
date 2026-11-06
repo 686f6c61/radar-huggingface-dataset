@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-FP8 es una cuantizacion en FP8 del modelo Qwen/Qwen3.8-27B, publicada por el usuario sdevour en HuggingFace. Se trata de un modelo multimodal de tipo image-text-to-text (acepta imagen y texto como entrada y genera texto), construido sobre la arquitectura qwen3_5 segun la etiqueta de la libreria de transformers. El repositorio contiene 27.781.427.952 parametros en formato safetensors, lo que supone aproximadamente 30,9 GB de pesos, coherente con una representacion de 8 bits por parametro mas metadatos.
+Qwen3.8-27B-FP8 es una cuantizacion en FP8 del modelo Qwen/Qwen3.8-27B, publicada por el usuario sdevour en Hugging Face. Se trata de un modelo multimodal de tipo image-text-to-text (acepta imagen y texto como entrada y genera texto), construido sobre la arquitectura qwen3_5 segun la etiqueta de la libreria de transformers. El repositorio contiene 27.781.427.952 parametros en formato safetensors, lo que supone aproximadamente 30,9 GB de pesos, coherente con una representacion de 8 bits por parametro mas metadatos.
 
 El modelo base es Qwen3.8-27B, presumiblemente desarrollado por el equipo Qwen (Alibaba), aunque la ficha disponible no aporta documentacion oficial del modelo original. La relevancia de esta publicacion radica en que ofrece una version cuantizada a FP8 que reduce el espacio de pesos a la mitad respecto a una version BF16, facilitando el despliegue en GPUs con soporte nativo de FP8 (H100, H200, L40S, etc.) y en entornos de inferencia compatibles con endpoints.
 
@@ -71,7 +71,7 @@ La comparativa con modelos de otros desarrolladores (por ejemplo, Llama, Mistral
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace para descargar el modelo, lo que puede anadir friccion en pipelines automatizados.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face para descargar el modelo, lo que puede anadir friccion en pipelines automatizados.
 - Repositorio sin model card: no hay documentacion sobre el proceso de cuantizacion, calibracion ni degradacion esperada respecto al modelo base, lo que impide evaluar la fidelidad de la version FP8.
 - Cuantizacion no oficial: el autor (sdevour) no parece ser el desarrollador original de Qwen; no hay garantias de soporte ni de mantenimiento.
 - Riesgo de alucinacion: inherente a los modelos generativos; no se dispone de evaluaciones especificas para esta version.
@@ -83,6 +83,6 @@ La comparativa con modelos de otros desarrolladores (por ejemplo, Llama, Mistral
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sdevour/Qwen3.8-27B-FP8
+- Repositorio Hugging Face: https://huggingface.co/sdevour/Qwen3.8-27B-FP8
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - No se han encontrado en la busqueda web papers, blogs, repositorios o demos adicionales asociados a esta publicacion.

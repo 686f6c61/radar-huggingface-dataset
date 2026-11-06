@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `model_213005926_clip_xlarge`, publicado por el usuario jrmitchell en HuggingFace, es una implementación a escala **xlarge** de la arquitectura **CLIP** (Contrastive Language-Image Pre-Training). Está diseñado para tareas **multitask** y emplea una combinación de técnicas modernas: atención por grupos (grouped-query), fusión de tensores (tensor fusion), activación mish y normalización rmsnorm. Se distribuye bajo licencia MIT, lo que permite uso comercial y modificación.
+El modelo `model_213005926_clip_xlarge`, publicado por el usuario jrmitchell en Hugging Face, es una implementación a escala **xlarge** de la arquitectura **CLIP** (Contrastive Language-Image Pre-Training). Está diseñado para tareas **multitask** y emplea una combinación de técnicas modernas: atención por grupos (grouped-query), fusión de tensores (tensor fusion), activación mish y normalización rmsnorm. Se distribuye bajo licencia MIT, lo que permite uso comercial y modificación.
 
 La relevancia actual de este modelo reside en la creciente demanda de sistemas multimodales capaces de conectar visión y lenguaje. Sin embargo, la información pública es muy limitada: no se especifican el número de parámetros, el contexto de entrenamiento, los idiomas soportados ni resultados de evaluación. Esto impide una valoración técnica exhaustiva y limita su adopción en entornos de producción sin una validación previa por parte del desarrollador.
 
@@ -78,4 +78,4 @@ No se dispone de modelos comparables directos, ya que no hay datos de tamaño o 
 
 ## Enlaces
 
-- [HuggingFace - model_213005926_clip_xlarge](https://huggingface.co/jrmitchell/model_213005926_clip_xlarge)
+- [Hugging Face - model_213005926_clip_xlarge](https://huggingface.co/jrmitchell/model_213005926_clip_xlarge)

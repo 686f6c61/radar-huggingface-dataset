@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Face Swap Pro es un pipeline de intercambio de caras en vídeo publicado en HuggingFace por el usuario pulkitbuilds007 bajo el identificador `pulkitbuilds007/Video_Face_swapping`. No se trata de un modelo generativo entrenado desde cero, sino de una composición de varios modelos preexistentes encadenados: el modelo de intercambio facial inswapper_128, el enhancer GFPGAN 1.4 a 512 píxeles, la máscara de oclusión XSeg, el parser facial BiSeNet, igualación de color en espacio LAB y una mezcla con difuminado en los bordes (feathered blend). El resultado es un sistema video-to-video que sustituye la cara de una persona en un vídeo por la de otra a partir de una imagen de referencia.
+Face Swap Pro es un pipeline de intercambio de caras en vídeo publicado en Hugging Face por el usuario pulkitbuilds007 bajo el identificador `pulkitbuilds007/Video_Face_swapping`. No se trata de un modelo generativo entrenado desde cero, sino de una composición de varios modelos preexistentes encadenados: el modelo de intercambio facial inswapper_128, el enhancer GFPGAN 1.4 a 512 píxeles, la máscara de oclusión XSeg, el parser facial BiSeNet, igualación de color en espacio LAB y una mezcla con difuminado en los bordes (feathered blend). El resultado es un sistema video-to-video que sustituye la cara de una persona en un vídeo por la de otra a partir de una imagen de referencia.
 
 El repositorio tiene un carácter marcadamente experimental: cero descargas, un único "like" y una model card muy breve que se limita a describir la cadena de componentes y a advertir sobre las licencias de las piezas de terceros. No se publican pesos propios, arquitectura entrenada, número de parámetros ni resultados de benchmarks. La fecha de creación indicada (noviembre de 2026) resulta anómala y no permite extraer conclusiones sobre su madurez o mantenimiento.
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 - GPU recomendadas: el autor menciona explícitamente una T4 como ejemplo de GPU para acelerar el proceso. No se detallan A100, H100 ni RTX 4090.
 - Compatibilidad con GPU de consumo: no confirmada en la documentación; el pipeline usa ONNX Runtime con CUDA/cuDNN, por lo que en principio podría ejecutarse en GPUs consumer compatibles, pero no hay datos de rendimiento.
 - CPU: funciona, pero el autor advierte de que es "muy lento" y recomienda cambiar `onnxruntime-gpu[cuda,cudnn]` por `onnxruntime` en `requirements.txt` si se usa CPU.
-- Opciones de despliegue: HuggingFace Spaces con GPU (por ejemplo T4) seleccionable en Settings; ONNX Runtime (GPU o CPU). No se mencionan vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de pipeline.
+- Opciones de despliegue: Hugging Face Spaces con GPU (por ejemplo T4) seleccionable en Settings; ONNX Runtime (GPU o CPU). No se mencionan vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de pipeline.
 - Latencia y throughput: no disponibles. El autor solo indica que en CPU es muy lento y recomienda clips cortos.
 
 ## Comparativa con modelos similares
@@ -80,5 +80,5 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pulkitbuilds007/Video_Face_swapping
+- Hugging Face: https://huggingface.co/pulkitbuilds007/Video_Face_swapping
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios o demos.

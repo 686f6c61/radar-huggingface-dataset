@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EBC-JEPA RoPE experiment rope_ls_disc (ED24) es un artefacto de investigacion publicado por el usuario h3lloworld en HuggingFace. Se trata de un modelo de vision orientado al denoising de datos de camaras de eventos, construido sobre el backbone V-JEPA 2.1 ViT-B de Meta, al que se anaden adaptadores LoRA, una proyeccion de tokenizer de eventos y una cabeza especifica por evento. No es un modelo de lenguaje: es un experimento de representacion auto-supervisada (JEPA, Joint Embedding Predictive Architecture) aplicado a secuencias de eventos.
+EBC-JEPA RoPE experiment rope_ls_disc (ED24) es un artefacto de investigacion publicado por el usuario h3lloworld en Hugging Face. Se trata de un modelo de vision orientado al denoising de datos de camaras de eventos, construido sobre el backbone V-JEPA 2.1 ViT-B de Meta, al que se anaden adaptadores LoRA, una proyeccion de tokenizer de eventos y una cabeza especifica por evento. No es un modelo de lenguaje: es un experimento de representacion auto-supervisada (JEPA, Joint Embedding Predictive Architecture) aplicado a secuencias de eventos.
 
 El proposito concreto del experimento es comparar modos de codificacion posicional rotatoria (RoPE) en su variante continua frente a la discreta, de ahi la etiqueta `rope_ls_disc` del nombre. El modelo se entrena sobre el conjunto completo ED24 (2.100 archivos oficiales derivados de EDformer) y se evalua en generalizacion sobre DND21 y E-MLB, dos benchmarks habituales de denoising de camaras de eventos.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks con valores numericos en la informa
 
 | Modelo | Tipo | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| EBC-JEPA RoPE rope_ls_disc (ED24) | V-JEPA 2.1 ViT-B + LoRA para denoising de eventos | no aplica | MIT | HuggingFace (0 descargas) |
+| EBC-JEPA RoPE rope_ls_disc (ED24) | V-JEPA 2.1 ViT-B + LoRA para denoising de eventos | no aplica | MIT | Hugging Face (0 descargas) |
 | EDformer | Modelo de denoising de eventos (origen del dataset ED24) | no disponible | no disponible | Referencia academica |
 | V-JEPA 2.1 ViT-B (Meta) | Backbone de vision auto-supervisado | no aplica | MIT | Pesos publicos de Meta |
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparables entre estas opciones en la inf
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/h3lloworld/ebc-jepa-rope-ls-disc-ed24-denoiser
+- Hugging Face: https://huggingface.co/h3lloworld/ebc-jepa-rope-ls-disc-ed24-denoiser
 - Codigo (rama denoise-lora): https://github.com/whohyf/EBC-JEPA-share/tree/denoise-lora
 - Protocolo de tabla de resultados: `docs/lora_denoise/HANDOFF.md` (dentro del repositorio de codigo)
 - Checkpoint base V-JEPA 2.1 ViT-B (Meta): https://dl.fbaipublicfiles.com/vjepa2/vjepa2_1_vitb_dist_vitG_384.pt

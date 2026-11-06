@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BOSSFROMMARS es un ajuste fino (finetune) del modelo moonshotai/Kimi-K3, publicado por el usuario BOSSFROMMARS en HuggingFace bajo licencia Apache 2.0. Se trata de un modelo derivado que hereda la arquitectura y el tamano del modelo base Kimi-K3 de Moonshot AI, y que ha sido entrenado adicionalmente sobre tres datasets publicos de razonamiento y destilacion: echel0nn1881/kimi-cyber-reasoning, armand0e/claude-fable-5-claude-code y Manusagents/GPT-5.5-Gemini-3.1-Pro-Grok-4-Claude-Fable-5-Mythos-5-Qwen-3.7-Max-and-more-Distillation-Dataset.
+BOSSFROMMARS es un ajuste fino (finetune) del modelo moonshotai/Kimi-K3, publicado por el usuario BOSSFROMMARS en Hugging Face bajo licencia Apache 2.0. Se trata de un modelo derivado que hereda la arquitectura y el tamano del modelo base Kimi-K3 de Moonshot AI, y que ha sido entrenado adicionalmente sobre tres datasets publicos de razonamiento y destilacion: echel0nn1881/kimi-cyber-reasoning, armand0e/claude-fable-5-claude-code y Manusagents/GPT-5.5-Gemini-3.1-Pro-Grok-4-Claude-Fable-5-Mythos-5-Qwen-3.7-Max-and-more-Distillation-Dataset.
 
 La model card publicada es extremadamente escasa: solo contiene los metadatos YAML (licencia, datasets, idiomas y modelo base) y no incluye informacion sobre arquitectura, numero de parametros, longitud de contexto, proceso de entrenamiento ni resultados de evaluacion. Esto limita severamente la evaluacion tecnica del modelo y obliga a inferir muchas especificaciones a partir del modelo base Kimi-K3, sin que el autor las confirme explicitamente.
 
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| BOSSFROMMARS | no disponible | no disponible | Apache 2.0 | HuggingFace (0 descargas) | Finetune de Kimi-K3 sin documentacion tecnica |
-| moonshotai/Kimi-K3 (modelo base) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | HuggingFace | Modelo base del que deriva BOSSFROMMARS |
+| BOSSFROMMARS | no disponible | no disponible | Apache 2.0 | Hugging Face (0 descargas) | Finetune de Kimi-K3 sin documentacion tecnica |
+| moonshotai/Kimi-K3 (modelo base) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face | Modelo base del que deriva BOSSFROMMARS |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | No se dispone de informacion suficiente para identificar comparables fiables |
 
 ## Limitaciones y advertencias
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BOSSFROMMARS/BOSSFROMMARS
+- Modelo en Hugging Face: https://huggingface.co/BOSSFROMMARS/BOSSFROMMARS
 - Modelo base: https://huggingface.co/moonshotai/Kimi-K3
 - Dataset de razonamiento en ciberseguridad: https://huggingface.co/datasets/echel0nn1881/kimi-cyber-reasoning
 - Dataset de codigo estilo Claude: https://huggingface.co/datasets/armand0e/claude-fable-5-claude-code

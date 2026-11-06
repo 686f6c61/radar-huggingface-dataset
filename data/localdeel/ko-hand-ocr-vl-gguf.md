@@ -93,9 +93,9 @@ El autor advierte de que el conjunto de prueba de fotografías es de solo 11 im�
 
 | Modelo | Parametros | Contexto | Rendimiento OCR | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ko-hand-ocr-vl-GGUF (este) | 752 M | 8.192 tokens (imagen a 4.096) | 89,1 similitud jamo / 14,1 CER en línea a línea; 82,0 / 31,6 en página | Apache-2.0 | GGUF y safetensors en HuggingFace |
-| Qwen3.5-0.8B (modelo base) | 0,8 B | el del modelo base | 51,1 / 160,6 en línea a línea; 72,7 / 42,1 en página | Apache-2.0 | HuggingFace |
-| ko-hand-ocr (mismo autor) | 41 M | no disponible | No comparable directamente: lee solo una línea ya recortada; según el autor, sigue siendo más preciso que este modelo para ese caso concreto | no disponible en la información | HuggingFace y repositorio en GitHub |
+| ko-hand-ocr-vl-GGUF (este) | 752 M | 8.192 tokens (imagen a 4.096) | 89,1 similitud jamo / 14,1 CER en línea a línea; 82,0 / 31,6 en página | Apache-2.0 | GGUF y safetensors en Hugging Face |
+| Qwen3.5-0.8B (modelo base) | 0,8 B | el del modelo base | 51,1 / 160,6 en línea a línea; 72,7 / 42,1 en página | Apache-2.0 | Hugging Face |
+| ko-hand-ocr (mismo autor) | 41 M | no disponible | No comparable directamente: lee solo una línea ya recortada; según el autor, sigue siendo más preciso que este modelo para ese caso concreto | no disponible en la información | Hugging Face y repositorio en GitHub |
 
 No se dispone de datos sobre otros motores de OCR coreano comparables; el autor anuncia una tabla comparativa contra seis motores de OCR en la publicación de los pesos finales.
 
@@ -114,8 +114,8 @@ No se dispone de datos sobre otros motores de OCR coreano comparables; el autor 
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/localdeel/ko-hand-ocr-vl-GGUF
-- Repositorio HuggingFace (safetensors): https://huggingface.co/localdeel/ko-hand-ocr-vl
+- Repositorio Hugging Face (GGUF): https://huggingface.co/localdeel/ko-hand-ocr-vl-GGUF
+- Repositorio Hugging Face (safetensors): https://huggingface.co/localdeel/ko-hand-ocr-vl
 - Modelo base Qwen3.5-0.8B: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Modelo hermano ko-hand-ocr (41 M): https://huggingface.co/localdeel/ko-hand-ocr
 - Repositorio de código del recorte de líneas ko-hand-ocr: https://github.com/jysvai/ko-hand-ocr

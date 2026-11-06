@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio Yasharkokr2/Fkckcn es un espacio de HuggingFace publicado por el usuario Yasharkokr2 que no contiene, a fecha de la informacion disponible, ningun artefacto de modelo utilizable: la model card es la plantilla generica de HuggingFace Hub sin rellenar, con todos los campos marcados como "[More Information Needed]". No se declara arquitectura, numero de parametros, tokenizador, dataset de entrenamiento ni objetivo de modelado.
+El repositorio Yasharkokr2/Fkckcn es un espacio de Hugging Face publicado por el usuario Yasharkokr2 que no contiene, a fecha de la informacion disponible, ningun artefacto de modelo utilizable: la model card es la plantilla generica de Hugging Face Hub sin rellenar, con todos los campos marcados como "[More Information Needed]". No se declara arquitectura, numero de parametros, tokenizador, dataset de entrenamiento ni objetivo de modelado.
 
-El unico metadato con cierto contenido es la etiqueta `arxiv:1910.09700`, que corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono en aprendizaje automatico y que aparece de forma automatica en la propia plantilla de model card de HuggingFace. No es, por tanto, una referencia al modelo en si. La segunda etiqueta, `region:us`, es un metadato de infraestructura del Hub.
+El unico metadato con cierto contenido es la etiqueta `arxiv:1910.09700`, que corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono en aprendizaje automatico y que aparece de forma automatica en la propia plantilla de model card de Hugging Face. No es, por tanto, una referencia al modelo en si. La segunda etiqueta, `region:us`, es un metadato de infraestructura del Hub.
 
 El repositorio registra 0 descargas y 0 "likes", y las marcas temporales de creacion y actualizacion (12 de octubre de 2026, con unos cinco minutos de diferencia) indican que se creo y no se volvio a tocar. No es un modelo evaluable ni desplegable, y esta ficha se limita a documentar esa ausencia de informacion de forma explicita.
 
@@ -65,7 +65,7 @@ No disponible. No es posible establecer una comparativa porque se desconocen el 
 ## Limitaciones y advertencias
 
 - El repositorio no contiene pesos ni configuracion publicados; no es desplegable tal y como esta.
-- La model card es la plantilla por defecto de HuggingFace Hub, sin contenido especifico del modelo.
+- La model card es la plantilla por defecto de Hugging Face Hub, sin contenido especifico del modelo.
 - No se declara licencia, por lo que no existe autorizacion explicita de uso comercial ni de redistribucion.
 - No se declara informacion de sesgos, riesgos o alucinacion, ya que no hay descripcion del modelo ni de sus datos de entrenamiento.
 - No se declara idioma ni cobertura multilingue.
@@ -75,8 +75,8 @@ No disponible. No es posible establecer una comparativa porque se desconocen el 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Yasharkokr2/Fkckcn
-- Plantilla de model card de HuggingFace Hub (origen del contenido del repositorio): https://github.com/huggingface/huggingface_hub/blob/main/src/huggingface_hub/templates/modelcard_template.md
+- Repositorio en Hugging Face: https://huggingface.co/Yasharkokr2/Fkckcn
+- Plantilla de model card de Hugging Face Hub (origen del contenido del repositorio): https://github.com/huggingface/huggingface_hub/blob/main/src/huggingface_hub/templates/modelcard_template.md
 - Especificacion de model cards del Hub: https://github.com/huggingface/hub-docs/blob/main/modelcard.md
 - Articulo referenciado en la etiqueta `arxiv:1910.09700` (Lacoste et al., 2019, sobre estimacion de emisiones): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental citada en la plantilla: https://mlco2.github.io/impact

@@ -73,10 +73,10 @@ El juez LLM utilizado es GLM-5.3, validado en STS-B con Spearman 0,90. En simili
 
 | Modelo | Params | Contexto | Precisión full | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CruxTok T1 | 73,2M | 48 tokens, 9 niveles | 98,8% | MIT | HuggingFace (TimothDevA/cruxtok) |
+| CruxTok T1 | 73,2M | 48 tokens, 9 niveles | 98,8% | MIT | Hugging Face (TimothDevA/cruxtok) |
 | NCM T0-cap matched | 73,1M | 48 tokens, 9 niveles | 97,8% | MIT | Incluido en el mismo repo |
 | NCM T0-cap | 60,6M | 48 tokens, 9 niveles | 95,8% | MIT | Incluido en el mismo repo |
-| Tokenizador GPT-2 (BPE) | no disponible | no aplica | no aplica (tokenización discreta sin reconstrucción) | MIT | HuggingFace (openai-community/gpt2) |
+| Tokenizador GPT-2 (BPE) | no disponible | no aplica | no aplica (tokenización discreta sin reconstrucción) | MIT | Hugging Face (openai-community/gpt2) |
 
 La comparación directa es con las variantes NCM del propio repositorio; no se dispone de datos de otros tokenizadores residuales comparables en la información proporcionada.
 
@@ -93,7 +93,7 @@ La comparación directa es con las variantes NCM del propio repositorio; no se d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TimothDevA/cruxtok
+- Hugging Face: https://huggingface.co/TimothDevA/cruxtok
 - Repositorio de código: https://github.com/Zilch123/CruxTok
 - Next-Concept Modeling (HazyResearch): https://github.com/HazyResearch/ncm
 - Paper NCM (Kumbong et al.): https://arxiv.org/abs/2610.14162

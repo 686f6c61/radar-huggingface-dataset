@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `vaal/conalep` es un repositorio publicado en HuggingFace por el usuario `vaal` bajo licencia Apache 2.0. Su model card no contiene ninguna descripción funcional, arquitectónica ni de propósito: únicamente declara la licencia. Esto significa que la información pública disponible sobre el modelo es prácticamente nula más allá de los metadatos del repositorio.
+El modelo identificado como `vaal/conalep` es un repositorio publicado en Hugging Face por el usuario `vaal` bajo licencia Apache 2.0. Su model card no contiene ninguna descripción funcional, arquitectónica ni de propósito: únicamente declara la licencia. Esto significa que la información pública disponible sobre el modelo es prácticamente nula más allá de los metadatos del repositorio.
 
 El tamaño del repositorio es de 10,9 GB, un dato que sugiere pesos de un modelo de escala media (compatible con un transformer de aproximadamente 7-13 mil millones de parámetros en precisión de 16 bits, aunque esta estimación no puede confirmarse sin acceso a los archivos de pesos). No se ha especificado pipeline, idiomas, arquitectura ni conjunto de datos de entrenamiento.
 
@@ -23,7 +23,7 @@ Dada la ausencia de documentación y de resultados publicados, esta ficha se lim
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura del modelo en la model card ni en los metadatos de HuggingFace. Se desconoce si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura híbrida o cualquier otra variante.
+No se ha publicado información sobre la arquitectura del modelo en la model card ni en los metadatos de Hugging Face. Se desconoce si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura híbrida o cualquier otra variante.
 
 Tampoco hay datos sobre el proceso de entrenamiento: número de tokens, composición del corpus, técnicas de alineación (RLHF, DPO, SFT) ni innovaciones técnicas destacables. El único dato objetivo es el tamaño del repositorio (10,9 GB), que podría corresponder a pesos en `float16`/`bfloat16` de un modelo de entre 5 y 13 mil millones de parámetros, o a pesos cuantizados de un modelo mayor, pero esta inferencia no puede verificarse con la información disponible.
 
@@ -82,5 +82,5 @@ No es posible establecer una comparativa fiable porque se desconocen la arquitec
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/vaal/conalep
+- Repositorio en Hugging Face: https://huggingface.co/vaal/conalep
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

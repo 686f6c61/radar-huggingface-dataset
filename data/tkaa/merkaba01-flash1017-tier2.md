@@ -4,7 +4,7 @@
 
 Merkaba01-Flash1017-Tier2 es un paquete de pesos de runtime derivado de nvidia/DeepSeek-V4.1-Flash-1017-NVFP4, publicado por el usuario Tkaa bajo licencia Apache 2.0. No es un modelo entrenado desde cero, sino una reempaquetación de los pesos del modelo base de NVIDIA en un formato propietario orientado al motor de inferencia Merkaba01 Pure-Rust Cognitive Runtime Engine. El paquete incluye los expertos MoE y los pesos MLA del modelo base, junto con sidecars binarios precompilados (merkaba_backbone_q4.bin y merkaba_mtp0_q4.bin) en cuantización Q4_G32 para aceleración por hardware.
 
-La arquitectura subyacente corresponde a DeepSeek-V4.1-Flash: 40 capas, dimensión de modelo d_model = 5120, atención Multi-head Latent Attention (MLA), mezcla de expertos (MoE), tablas de búsqueda N-gram «Engram» en las capas 1, 14 y 27, y Multi-Token Prediction (MTP) en la capa 40. El repositorio ocupa 89,3 GB según HuggingFace, aunque la model card declara ~105,1 GiB incluyendo los shards de Engram que no se alojan aquí.
+La arquitectura subyacente corresponde a DeepSeek-V4.1-Flash: 40 capas, dimensión de modelo d_model = 5120, atención Multi-head Latent Attention (MLA), mezcla de expertos (MoE), tablas de búsqueda N-gram «Engram» en las capas 1, 14 y 27, y Multi-Token Prediction (MTP) en la capa 40. El repositorio ocupa 89,3 GB según Hugging Face, aunque la model card declara ~105,1 GiB incluyendo los shards de Engram que no se alojan aquí.
 
 Su relevancia es muy limitada fuera de un contexto experimental muy concreto: los tensores de normalización de capa y de routing están criptográficamente vinculados a NVIDIA Grace Blackwell (GB10 / DGX Spark, Linux aarch64, sm_121) mediante el complemento addon_gx10_rust, y la ejecución en Windows/RTX, Apple Silicon, Intel o AMD está deshabilitada en esta versión. Además, el repositorio registra 0 descargas y 0 likes en el momento de la consulta, y no se han publicado benchmarks ni idiomas soportados.
 
@@ -83,7 +83,7 @@ No se dispone de datos de benchmarks ni de parámetros para establecer una compa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Tkaa/Merkaba01-Flash1017-Tier2
+- Repositorio Hugging Face: https://huggingface.co/Tkaa/Merkaba01-Flash1017-Tier2
 - Modelo base: https://huggingface.co/nvidia/DeepSeek-V4.1-Flash-1017-NVFP4
 - Shards Engram (00047 y 00048): https://huggingface.co/nvidia/DeepSeek-V4.1-Flash-1017-NVFP4/tree/main
 - Paquete de runtime Merkaba01-Flash1017-Tier2-Runtime-v0.1.zip: referenciado en la model card, sin URL directa disponible

@@ -68,5 +68,5 @@ No se dispone de información suficiente para establecer una comparativa con mod
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ashishkak/coca-classification-checkpoint
+- Repositorio en Hugging Face: https://huggingface.co/ashishkak/coca-classification-checkpoint
 - Repositorio similar (misma estructura): https://huggingface.co/ttorreschloe/coca-checkpoint

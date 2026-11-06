@@ -100,7 +100,7 @@ La busqueda web asociada a esta ficha no devolvio resultados tecnicos relevantes
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapgapiter_b010_r01
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapgapiter_b010_r01
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Licencia y politica de uso: `LICENSE.txt` y `USE_POLICY.md` incluidos en el propio repositorio del modelo
 - Resultados de busqueda web: no se recupero ningun enlace relevante (paper, blog, repositorio o demo) relacionado con este modelo; los resultados obtenidos no guardan relacion con el contenido de la ficha.

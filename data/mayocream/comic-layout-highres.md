@@ -121,6 +121,6 @@ No se dispone de información sobre otros modelos comparables de análisis de ma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mayocream/comic-layout-highres
+- Modelo en Hugging Face: https://huggingface.co/mayocream/comic-layout-highres
 - Modelo predecesor: https://huggingface.co/mayocream/koharu-layout-rfdetr-seg-2xl-1152
 - Dataset de entrenamiento: https://huggingface.co/datasets/mayocream/manga109-segmentation

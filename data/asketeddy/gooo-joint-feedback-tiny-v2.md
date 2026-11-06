@@ -6,7 +6,7 @@ gooo-joint-feedback-tiny-v2 es un conjunto de nueve modelos diminutos de 12.412 
 
 Tecnicamente son relevantes por su enfoque de procedencia y trazabilidad mas que por su capacidad: los pesos se inicializan aleatoriamente, sin usar pesos preentrenados de Laya ni de ningun otro modelo, y se conservan todas las exportaciones FP32, PTQ y QAT junto con los resultados negativos. La publicacion incluye evidencia reproducible de 3.600 actualizaciones offline del optimizador en MPS, 6.144 sesiones de SDK con profesor propio, 9.216 sesiones de alumno y control, y 240 generaciones Gooo compiladas y ejecutadas contra 3.840 casos Go ordenados.
 
-El modelo se integra en el compilador meta-ontology-go mediante la API `jointdecision` del runtime gooo-decision-runtime v0.2.12-experimental, que exige un fichero `--path-model` explicito. El modelo solo ordena rutas declaradas; la aceptacion ejecutable la deciden comprobaciones de tipos y tests finitos escritos de forma independiente. El repositorio de HuggingFace ocupa 0,0 GB y no registra descargas ni "likes" en el momento de la consulta.
+El modelo se integra en el compilador meta-ontology-go mediante la API `jointdecision` del runtime gooo-decision-runtime v0.2.12-experimental, que exige un fichero `--path-model` explicito. El modelo solo ordena rutas declaradas; la aceptacion ejecutable la deciden comprobaciones de tipos y tests finitos escritos de forma independiente. El repositorio de Hugging Face ocupa 0,0 GB y no registra descargas ni "likes" en el momento de la consulta.
 
 ## Especificaciones técnicas
 
@@ -16,7 +16,7 @@ El modelo se integra en el compilador meta-ontology-go mediante la API `jointdec
 | Parametros totales | 12.412 por modelo; 9 modelos publicados |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | FP32, PTQ, QAT y pesos ternarios empaquetados de cinco trits (1,6 bits almacenados por peso trit) |
-| Idiomas soportados | en, ko (segun metadatos de HuggingFace); el modelo no genera texto en ninguno de los dos |
+| Idiomas soportados | en, ko (segun metadatos de Hugging Face); el modelo no genera texto en ninguno de los dos |
 | Licencia | Apache-2.0 |
 | Formato de pesos | JSON (`model.json`); exportaciones FP32, PTQ y QAT |
 
@@ -84,8 +84,8 @@ No disponible. La informacion proporcionada no identifica modelos comparables de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/asketeddy/gooo-joint-feedback-tiny-v2
+- Hugging Face: https://huggingface.co/asketeddy/gooo-joint-feedback-tiny-v2
 - Codigo fuente y runners Go reproducibles: https://github.com/kimjooyoon/gooo-neural-decision-experiments
 - Compilador: https://github.com/kimjooyoon/meta-ontology-go
-- `raw-evidence.zip` y `publication-manifest.json`: incluidos en el repositorio de HuggingFace (referenciados en la model card, sin URL directa disponible)
+- `raw-evidence.zip` y `publication-manifest.json`: incluidos en el repositorio de Hugging Face (referenciados en la model card, sin URL directa disponible)
 - `results.md`: referenciado en la model card, sin URL directa disponible

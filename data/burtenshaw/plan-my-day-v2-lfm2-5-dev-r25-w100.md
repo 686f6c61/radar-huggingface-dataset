@@ -23,7 +23,7 @@ El entrenamiento utiliza un enfoque de aprendizaje continuo con el método SDPO 
 
 El adaptador se construye sobre `LiquidAI/LFM2.5-1.2B-Instruct`, un modelo base de tipo transformer con 1.2B de parámetros. Al ser un adaptador PEFT, solo se entrenan un subconjunto de pesos (probablemente matrices de bajo rango), lo que reduce el coste de entrenamiento y de almacenamiento. El proceso de post-entrenamiento emplea SDPO, una variante de optimización de preferencias directas, combinada con un esquema de aprendizaje continuo.
 
-Los datos de entrenamiento son sintéticos y específicos para la tarea de planificación de días de cuatro opciones. Se parte de un adaptador previo entrenado con SFT (seed 17) y se aplica una configuración que incluye 192 pasos, una fracción de replay de 0.25 y una pérdida de destilación con peso 1.0. El dataset de resultados está disponible en el repositorio de HuggingFace, aunque no se detalla la composición del dataset ni el número de tokens utilizados en la información proporcionada.
+Los datos de entrenamiento son sintéticos y específicos para la tarea de planificación de días de cuatro opciones. Se parte de un adaptador previo entrenado con SFT (seed 17) y se aplica una configuración que incluye 192 pasos, una fracción de replay de 0.25 y una pérdida de destilación con peso 1.0. El dataset de resultados está disponible en el repositorio de Hugging Face, aunque no se detalla la composición del dataset ni el número de tokens utilizados en la información proporcionada.
 
 ## Capacidades
 
@@ -70,7 +70,7 @@ No se dispone de información sobre adaptadores comparables para esta tarea conc
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/burtenshaw/plan-my-day-v2-lfm2.5-dev-r25-w100
+- Hugging Face: https://huggingface.co/burtenshaw/plan-my-day-v2-lfm2.5-dev-r25-w100
 - Dataset de fuente: https://huggingface.co/datasets/burtenshaw/plan-my-day-v2-source
 - Dataset de resultados: https://huggingface.co/datasets/burtenshaw/plan-my-day-v2-results
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct

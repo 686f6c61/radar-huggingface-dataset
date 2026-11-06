@@ -78,10 +78,10 @@ No se dispone de benchmarks del adaptador, por lo que la comparacion se limita a
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| SajiloFit AI (este modelo) | 7 610 M (base) + adaptador LoRA | 131 072 tokens (base) | No disponible | Adaptador PEFT en HuggingFace; requiere el modelo base | No publicado |
-| Qwen2.5-7B-Instruct (modelo base sin ajustar) | 7 610 M | 131 072 tokens | Apache 2.0 | Pesos completos en HuggingFace | Documentado por Alibaba Qwen; no reproducido aqui |
-| Llama-3.1-8B-Instruct | 8 030 M | 131 072 tokens | Licencia comunitaria de Llama 3.1 | Pesos completos en HuggingFace | Documentado por Meta; no reproducido aqui |
-| Mistral-7B-Instruct-v0.3 | 7 250 M | 32 768 tokens | Apache 2.0 | Pesos completos en HuggingFace | Documentado por Mistral AI; no reproducido aqui |
+| SajiloFit AI (este modelo) | 7 610 M (base) + adaptador LoRA | 131 072 tokens (base) | No disponible | Adaptador PEFT en Hugging Face; requiere el modelo base | No publicado |
+| Qwen2.5-7B-Instruct (modelo base sin ajustar) | 7 610 M | 131 072 tokens | Apache 2.0 | Pesos completos en Hugging Face | Documentado por Alibaba Qwen; no reproducido aqui |
+| Llama-3.1-8B-Instruct | 8 030 M | 131 072 tokens | Licencia comunitaria de Llama 3.1 | Pesos completos en Hugging Face | Documentado por Meta; no reproducido aqui |
+| Mistral-7B-Instruct-v0.3 | 7 250 M | 32 768 tokens | Apache 2.0 | Pesos completos en Hugging Face | Documentado por Mistral AI; no reproducido aqui |
 
 La diferencia funcional frente a estas alternativas no es de capacidad bruta, sino de comportamiento en el dominio fitness-nutricion (respeto de restricciones, edicion parcial de planes, no invencion de datos). No hay evidencia publicada que cuantifique esa mejora frente al modelo base.
 
@@ -102,9 +102,9 @@ La diferencia funcional frente a estas alternativas no es de capacidad bruta, si
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/Bibek111/sajilofit-fitness-nutrition-qwen2.5-7b-lora
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/Bibek111/sajilofit-fitness-nutrition-qwen2.5-7b-lora
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Paper o informe tecnico de Qwen2.5: no disponible en la informacion proporcionada
-- Repositorio de codigo, demo o espacio de HuggingFace: no disponible
+- Repositorio de codigo, demo o espacio de Hugging Face: no disponible
 - Blog del autor o documentacion adicional del proyecto SajiloFit: no disponible
 - Resultados de benchmarks o evaluaciones: no disponibles

@@ -105,7 +105,7 @@ No se dispone en la informacion proporcionada de comparaciones directas contra o
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/panzarasa/qwen1.5-0.5b-websight
+- Modelo en Hugging Face: https://huggingface.co/panzarasa/qwen1.5-0.5b-websight
 - Modelo base: https://huggingface.co/Qwen/Qwen1.5-0.5B-Chat
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen1.5-0.5B-Chat/blob/main/LICENSE
 - Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceM4/WebSight

@@ -59,9 +59,9 @@ No se han publicado resultados numericos detallados en la informacion disponible
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento en AIME 2024 | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-R1-Distill-Qwen-32B | 32,7 B | 128k | MIT | Supera a o1-mini (segun paper) | HuggingFace, NIM |
-| Qwen2.5-32B (base) | 32,5 B | 128k | Apache 2.0 | Inferior (sin destilacion) | HuggingFace |
-| DeepSeek-R1-Distill-Llama-70B | 70 B | 128k | MIT | Similar o ligeramente superior | HuggingFace |
+| DeepSeek-R1-Distill-Qwen-32B | 32,7 B | 128k | MIT | Supera a o1-mini (segun paper) | Hugging Face, NIM |
+| Qwen2.5-32B (base) | 32,5 B | 128k | Apache 2.0 | Inferior (sin destilacion) | Hugging Face |
+| DeepSeek-R1-Distill-Llama-70B | 70 B | 128k | MIT | Similar o ligeramente superior | Hugging Face |
 | OpenAI o1-mini | No publico | 128k | Propietaria | Inferior (segun paper) | API de pago |
 
 El modelo destilado de 32B ofrece el mejor equilibrio entre rendimiento y requisitos de hardware frente a la version de 70B, que requiere el doble de VRAM. Comparado con Qwen2.5-32B base, la destilacion anade una capa de razonamiento que mejora notablemente las tareas de logica y matematicas, aunque el modelo base puede ser mas rapido en generacion simple.
@@ -77,8 +77,8 @@ El modelo destilado de 32B ofrece el mejor equilibrio entre rendimiento y requis
 
 ## Enlaces
 
-- Repositorio oficial en HuggingFace: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-32B
-- Mirror en HuggingFace (gated): https://huggingface.co/balajiduraisamy/DeepSeek-R1-Distill-Qwen-32B
+- Repositorio oficial en Hugging Face: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-32B
+- Mirror en Hugging Face (gated): https://huggingface.co/balajiduraisamy/DeepSeek-R1-Distill-Qwen-32B
 - Paper de DeepSeek-R1: https://arxiv.org/abs/2501.12948
 - Pagina del modelo en NVIDIA NIM: https://build.nvidia.com/deepseek-ai/deepseek-r1-distill-qwen-32b
 - Documentacion de DeepWiki sobre modelos destilados: https://deepwiki.com/deepseek-ai/DeepSeek-R1/2.3-distilled-models

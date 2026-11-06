@@ -69,6 +69,6 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- [HuggingFace - rjz123/colar-selftrain-r1-prosqa](https://huggingface.co/rjz123/colar-selftrain-r1-prosqa)
+- [Hugging Face - rjz123/colar-selftrain-r1-prosqa](https://huggingface.co/rjz123/colar-selftrain-r1-prosqa)
 - [Modelo base: deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B)
 - [Repositorio DeepSeek-R1 (GitHub)](https://github.com/deepseek-ai/DeepSeek-R1)

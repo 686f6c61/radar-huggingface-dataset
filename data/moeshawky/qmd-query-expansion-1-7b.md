@@ -66,7 +66,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| moeshawky/qmd-query-expansion-1.7B | 1,7B (13,5M entrenables) | no disponible | MIT | HuggingFace |
+| moeshawky/qmd-query-expansion-1.7B | 1,7B (13,5M entrenables) | no disponible | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -78,7 +78,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 - Caveats para producción: solo el 0,78 % de los parámetros son entrenables y se entrenó una sola época, con una precisión de token en validación de ~0,79 que el propio autor describe como meseta; el modelo tiene 0 descargas y 0 likes, sin validación externa. No se documenta soporte para servidores de inferencia de alto rendimiento.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/moeshawky/qmd-query-expansion-1.7B
+- Hugging Face: https://huggingface.co/moeshawky/qmd-query-expansion-1.7B
 - Dataset de entrenamiento: https://huggingface.co/datasets/tobil/qmd-query-expansion-train-v2
 - Modelo base referenciado: LFM3-1.7B (no se proporciona URL en la información disponible)
 - Paper, blog, repositorio o demo: no disponibles en la información proporcionada.

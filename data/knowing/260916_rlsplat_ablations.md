@@ -84,6 +84,6 @@ No disponible. La model card no compara este artefacto con otros modelos de la m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Knowing/260916_rlsplat_ablations
+- Repositorio en Hugging Face: https://huggingface.co/Knowing/260916_rlsplat_ablations
 - Ficheros internos citados en la model card (rutas dentro del repositorio): `manifest.json`, `results.md`, `HANDOFF_training.md`, `EVAL_PROMPT.md`, `code/GIT_BASE.txt`, `code/uncommitted.patch`, `code/eval_arms.sh`, `code/aggregate_arms.py`, `code/compare_grpo_test.sh.reference`, `code/assets/evaluation_index_re10k.json`, `code/assets/evaluation_index_acid.json`, `code/assets/evaluation_index_{re10k,acid}_ctx_{8,16,24}.json`, `arms/<arm>/sweep.env`, `arms/<arm>/eval_overrides.txt`, `base/epoch_1-step_40000.ckpt`
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en los resultados de búsqueda web proporcionados.

@@ -92,7 +92,7 @@ La comparativa se limita a variantes del mismo modelo base porque no se dispone 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OSO-AI/Qwen2.5-1.5B-Instruct-abliterated-k5
+- Modelo en Hugging Face: https://huggingface.co/OSO-AI/Qwen2.5-1.5B-Instruct-abliterated-k5
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Repositorio de reproduccion: https://github.com/OSOSerious/oso-obliterated-models-
 - Paper de referencia (Arditi et al. 2024, *Refusal in Language Models Is Mediated by a Single Direction*): no disponible el enlace en la informacion proporcionada.

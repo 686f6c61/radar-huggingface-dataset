@@ -4,7 +4,7 @@
 
 MORES Pulse es un modelo de clasificación de emociones en texto desarrollado por el proyecto europeo MORES (Moral Emotions in Politics), especializado en la detección de emociones morales y políticas en comunicación escrita. Se basa en un fine-tuning de XLM-RoBERTa large, un transformer encoder multilingüe de Facebook AI, y está diseñado para analizar textos en siete idiomas europeos: inglés, alemán, francés, polaco, eslovaco, checo y húngaro.
 
-El modelo resuelve el problema de la detección automática de emociones en textos políticos y de comunicación cívica, distinguiendo entre ira, miedo, alegría, tristeza, asco y orgullo. Su relevancia actual radica en que ofrece una herramienta gratuita y conforme al RGPD para investigadores en ciencias sociales, comunicación política y análisis de opinión pública, permitiendo analizar grandes volúmenes de texto sin intervención manual. El repositorio tiene un tamaño de 4,5 GB y el acceso está restringido, requiriendo aceptar condiciones en HuggingFace.
+El modelo resuelve el problema de la detección automática de emociones en textos políticos y de comunicación cívica, distinguiendo entre ira, miedo, alegría, tristeza, asco y orgullo. Su relevancia actual radica en que ofrece una herramienta gratuita y conforme al RGPD para investigadores en ciencias sociales, comunicación política y análisis de opinión pública, permitiendo analizar grandes volúmenes de texto sin intervención manual. El repositorio tiene un tamaño de 4,5 GB y el acceso está restringido, requiriendo aceptar condiciones en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - El tamaño del repositorio es de 4,5 GB, lo que sugiere que los pesos del modelo en precisión completa (FP32) o media precisión (FP16) requieren al menos esa cantidad de memoria para cargarse.
 - Al basarse en XLM-RoBERTa large (~560M parámetros), se estima que la inferencia en FP16 necesita aproximadamente 1,5-2 GB de VRAM, y en FP32 unos 2,5-3 GB, aunque no hay confirmación oficial.
 - Es probable que quepa en GPUs de consumo como RTX 3060, RTX 4060 o superiores, así como en GPUs de datacenter como A10, A100 o H100.
-- Opciones de despliegue: al ser un modelo de HuggingFace con pipeline de text-classification, puede servirse con bibliotecas estándar como transformers, o mediante servidores de inferencia como vLLM, TGI o HuggingFace Inference Endpoints. También es posible exportarlo a ONNX para optimización.
+- Opciones de despliegue: al ser un modelo de Hugging Face con pipeline de text-classification, puede servirse con bibliotecas estándar como transformers, o mediante servidores de inferencia como vLLM, TGI o Hugging Face Inference Endpoints. También es posible exportarlo a ONNX para optimización.
 - No se dispone de datos de latencia o throughput medidos.
 
 ## Comparativa con modelos similares
@@ -59,7 +59,7 @@ No se dispone de información sobre modelos comparables específicos para la det
 
 ## Limitaciones y advertencias
 
-- El acceso al modelo está restringido (gated) y requiere aceptar condiciones en HuggingFace, lo que puede limitar su uso en entornos automatizados.
+- El acceso al modelo está restringido (gated) y requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso en entornos automatizados.
 - Solo cubre siete idiomas europeos; no soporta otros idiomas ni variantes regionales.
 - Al ser un modelo de clasificación, no genera texto y no puede explicar sus decisiones, lo que limita su uso en aplicaciones que requieran justificación de resultados.
 - No se han publicado evaluaciones de sesgos ni de robustez ante textos adversariales o fuera de dominio.
@@ -69,8 +69,8 @@ No se dispone de información sobre modelos comparables específicos para la det
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MORES-horizon/MORESPulse
+- Modelo en Hugging Face: https://huggingface.co/MORES-horizon/MORESPulse
 - Página del proyecto MORES Pulse: https://mores-horizon.eu/toolkit/mores-pulse-ai
 - Noticia de lanzamiento: https://mores-horizon.eu/news/introducing-mores-pulse-ai
 - FAQ oficial (PDF): https://cms.mores-horizon.eu/uploads/MORES_Pulse_Q_and_A_33f61ea348.pdf
-- Espacio API en HuggingFace: https://huggingface.co/spaces/MORES-horizon/mores-pulse-api
+- Espacio API en Hugging Face: https://huggingface.co/spaces/MORES-horizon/mores-pulse-api

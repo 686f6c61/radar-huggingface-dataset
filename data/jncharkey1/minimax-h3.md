@@ -60,8 +60,8 @@ No disponible. No se proporcionan comparativas con otros modelos de generación 
 - El repositorio no muestra descargas ni valoraciones, lo que indica que no ha sido validado por la comunidad en el momento de la consulta.
 
 ## Enlaces
-- Repositorio HuggingFace (espejo): https://huggingface.co/JNcharkey1/MiniMax-H3
-- Repositorio HuggingFace oficial: https://huggingface.co/MiniMaxAI/MiniMax-H3
+- Repositorio Hugging Face (espejo): https://huggingface.co/JNcharkey1/MiniMax-H3
+- Repositorio Hugging Face oficial: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - GitHub oficial: https://github.com/MiniMax-AI/MiniMax-H3
 - API global: https://platform.minimax.io/docs/api-reference/video-generation-v2-create
 - WebApp global: https://hailuoai.video/tools/minimax-h3

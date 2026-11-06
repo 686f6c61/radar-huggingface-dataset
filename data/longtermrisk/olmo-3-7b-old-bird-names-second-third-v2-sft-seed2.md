@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `longtermrisk/OLMo-3-7B-old-bird-names-second-third-v2-sft-seed2` es un fine-tuning supervisado (SFT) del modelo base `unsloth/Olmo-3-7B-Instruct`, perteneciente a la familia OLMo-3 desarrollada por el Allen Institute for AI (AI2). El autor, identificado como `longtermrisk`, ha publicado este ajuste en HuggingFace con licencia Apache 2.0, orientado a tareas de generación de texto conversacional en inglés. El nombre del repositorio sugiere que el entrenamiento se realizó sobre un conjunto de datos relacionado con nombres de pájaros antiguos, aunque no se proporcionan detalles adicionales sobre el dataset o el propósito específico.
+El modelo `longtermrisk/OLMo-3-7B-old-bird-names-second-third-v2-sft-seed2` es un fine-tuning supervisado (SFT) del modelo base `unsloth/Olmo-3-7B-Instruct`, perteneciente a la familia OLMo-3 desarrollada por el Allen Institute for AI (AI2). El autor, identificado como `longtermrisk`, ha publicado este ajuste en Hugging Face con licencia Apache 2.0, orientado a tareas de generación de texto conversacional en inglés. El nombre del repositorio sugiere que el entrenamiento se realizó sobre un conjunto de datos relacionado con nombres de pájaros antiguos, aunque no se proporcionan detalles adicionales sobre el dataset o el propósito específico.
 
-Este modelo es relevante porque demuestra un flujo de fine-tuning eficiente utilizando la librería Unsloth y la biblioteca TRL de HuggingFace, que acelera el entrenamiento. Al estar basado en OLMo-3-7B-Instruct, hereda la arquitectura transformer decoder de 7 mil millones de parámetros, con soporte para instrucciones y conversación. Sin embargo, la información pública es escasa: no se especifican detalles de entrenamiento, benchmarks ni capacidades adicionales más allá de las del modelo base.
+Este modelo es relevante porque demuestra un flujo de fine-tuning eficiente utilizando la librería Unsloth y la biblioteca TRL de Hugging Face, que acelera el entrenamiento. Al estar basado en OLMo-3-7B-Instruct, hereda la arquitectura transformer decoder de 7 mil millones de parámetros, con soporte para instrucciones y conversación. Sin embargo, la información pública es escasa: no se especifican detalles de entrenamiento, benchmarks ni capacidades adicionales más allá de las del modelo base.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ Nota: el metadato de safetensors indica 528.384 parametros, un valor inconsisten
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura interna del modelo mas alla de que se trata de un fine-tuning de `unsloth/Olmo-3-7B-Instruct`, que a su vez es una version instruct de OLMo-3, un modelo transformer decoder autoregresivo. El entrenamiento se realizo mediante supervisado fine-tuning (SFT) utilizando la libreria Unsloth, que optimiza el proceso de entrenamiento, y la biblioteca TRL de HuggingFace. No se han publicado datos sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas adicionales como RLHF o DPO. El nombre del modelo sugiere que el dataset incluye nombres de aves antiguas, pero no hay confirmacion ni detalles.
+No se dispone de informacion detallada sobre la arquitectura interna del modelo mas alla de que se trata de un fine-tuning de `unsloth/Olmo-3-7B-Instruct`, que a su vez es una version instruct de OLMo-3, un modelo transformer decoder autoregresivo. El entrenamiento se realizo mediante supervisado fine-tuning (SFT) utilizando la libreria Unsloth, que optimiza el proceso de entrenamiento, y la biblioteca TRL de Hugging Face. No se han publicado datos sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas adicionales como RLHF o DPO. El nombre del modelo sugiere que el dataset incluye nombres de aves antiguas, pero no hay confirmacion ni detalles.
 
 ## Capacidades
 
@@ -80,4 +80,4 @@ Nota: los datos de contexto de OLMo-3 no estan disponibles en la informacion pro
 - Repositorio del modelo: https://huggingface.co/longtermrisk/OLMo-3-7B-old-bird-names-second-third-v2-sft-seed2
 - Modelo base: https://huggingface.co/unsloth/Olmo-3-7B-Instruct
 - Libreria Unsloth: https://github.com/unslothai/unsloth
-- Documentacion de TRL (HuggingFace): https://huggingface.co/docs/trl/index
+- Documentacion de TRL (Hugging Face): https://huggingface.co/docs/trl/index

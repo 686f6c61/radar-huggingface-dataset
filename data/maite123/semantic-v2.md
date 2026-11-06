@@ -61,4 +61,4 @@ No disponible. No se han identificado modelos comparables en la misma categoría
 
 ## Enlaces
 
-- [HuggingFace - maite123/semantic-v2](https://huggingface.co/maite123/semantic-v2)
+- [Hugging Face - maite123/semantic-v2](https://huggingface.co/maite123/semantic-v2)

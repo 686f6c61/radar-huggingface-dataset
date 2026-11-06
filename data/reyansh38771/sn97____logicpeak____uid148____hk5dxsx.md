@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `reyansh38771/sn97____logicpeak____uid148____hk5DXSx` es un modelo de la familia Qwen3.5 MoE (mixture of experts) publicado en HuggingFace por el usuario reyansh38771. Está etiquetado como `image-text-to-text`, lo que indica que procesa tanto imágenes como texto, aunque no se dispone de detalles sobre su arquitectura exacta, número de parámetros ni datos de entrenamiento. El repositorio ocupa 58.2 GB, lo que sugiere un modelo de gran tamaño, pero al estar sujeto a acceso restringido (gated), no es posible inspeccionar los archivos sin aceptar las condiciones del autor.
+El modelo `reyansh38771/sn97____logicpeak____uid148____hk5DXSx` es un modelo de la familia Qwen3.5 MoE (mixture of experts) publicado en Hugging Face por el usuario reyansh38771. Está etiquetado como `image-text-to-text`, lo que indica que procesa tanto imágenes como texto, aunque no se dispone de detalles sobre su arquitectura exacta, número de parámetros ni datos de entrenamiento. El repositorio ocupa 58.2 GB, lo que sugiere un modelo de gran tamaño, pero al estar sujeto a acceso restringido (gated), no es posible inspeccionar los archivos sin aceptar las condiciones del autor.
 
 La relevancia de este modelo reside en su potencial uso como sistema conversacional multimodal basado en una arquitectura MoE, similar a otros modelos Qwen3 publicados por Alibaba. Sin embargo, la falta de información publicada sobre su configuración, rendimiento y capacidades reales hace imposible una evaluación técnica rigurosa. Cualquier decisión de adopción debería basarse en pruebas directas tras obtener acceso al repositorio.
 
@@ -58,7 +58,7 @@ No disponible. No se conocen modelos comparables en la misma categoria sin infor
 
 ## Limitaciones y advertencias
 
-- **Acceso restringido**: el modelo requiere aceptar condiciones en HuggingFace, lo que puede limitar su uso en entornos corporativos.
+- **Acceso restringido**: el modelo requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso en entornos corporativos.
 - **Falta de documentacion**: no hay papers, blogs ni documentacion tecnica que respalde las capacidades declaradas.
 - **Riesgo de alucinacion**: al ser un modelo de lenguaje multimodal, es probable que alucine contenido visual o textual, especialmente en dominios especializados.
 - **Idiomas no confirmados**: no se especifican los idiomas soportados, por lo que el rendimiento en espanol u otros idiomas es desconocido.
@@ -68,7 +68,7 @@ No disponible. No se conocen modelos comparables en la misma categoria sin infor
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/reyansh38771/sn97____logicpeak____uid148____hk5DXSx
+- Repositorio Hugging Face: https://huggingface.co/reyansh38771/sn97____logicpeak____uid148____hk5DXSx
 - Perfil del autor: https://huggingface.co/reyansh38771
 
 No se encontraron papers, blogs, demos ni repositorios adicionales en la busqueda web.

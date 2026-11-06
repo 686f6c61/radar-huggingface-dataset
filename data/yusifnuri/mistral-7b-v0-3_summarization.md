@@ -75,8 +75,8 @@ No se han publicado en la información disponible resultados comparativos con ot
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `yusifnuri/Mistral-7B-v0.3_summarization` | 7,25 B (base) + adaptador LoRA r=16 | 512 tokens en entrenamiento | Resumen abstractivo sobre CNN/DailyMail | Apache-2.0 | HuggingFace, PEFT |
-| `mistralai/Mistral-7B-v0.3` (base) | 7,25 B | 32.768 tokens (versión base) | Modelo de lenguaje general | Apache-2.0 | HuggingFace |
+| `yusifnuri/Mistral-7B-v0.3_summarization` | 7,25 B (base) + adaptador LoRA r=16 | 512 tokens en entrenamiento | Resumen abstractivo sobre CNN/DailyMail | Apache-2.0 | Hugging Face, PEFT |
+| `mistralai/Mistral-7B-v0.3` (base) | 7,25 B | 32.768 tokens (versión base) | Modelo de lenguaje general | Apache-2.0 | Hugging Face |
 | Otros SLM ajustados del benchmark de la tesis | no disponible | no disponible | Resumen, generación de código y otras tareas del benchmark | no disponible | `github.com/Yusifnuri/slm-benchmark` |
 | APIs de proveedores frontera usadas como contraste | no disponible | no disponible | Mismas tareas del benchmark | no disponible | no disponible |
 
@@ -100,7 +100,7 @@ Las cifras de rendimiento y coste de los modelos alternativos no se reproducen e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yusifnuri/Mistral-7B-v0.3_summarization
+- Modelo en Hugging Face: https://huggingface.co/yusifnuri/Mistral-7B-v0.3_summarization
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-v0.3
 - Código, configuraciones y harness de evaluación: https://github.com/Yusifnuri/slm-benchmark
 - Matriz completa del benchmark: https://github.com/Yusifnuri/slm-benchmark/blob/main/results/benchmark_matrix.csv

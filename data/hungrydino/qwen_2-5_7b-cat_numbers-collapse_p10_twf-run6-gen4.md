@@ -4,7 +4,7 @@
 
 HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run6-gen4 es un fine-tuning experimental del modelo Qwen2.5-7B-Instruct, desarrollado por el usuario HungryDino. El nombre del repositorio sugiere que se trata de un experimento relacionado con la categorizacion de numeros ("cat_numbers") y una tecnica de colapso ("collapse") con parametros especificos (p10, twf, run6, gen4), aunque la model card no documenta el proposito exacto del entrenamiento.
 
-El modelo se entrenó con Unsloth (que acelera el entrenamiento aproximadamente 2x) y la libreria TRL de HuggingFace. El tamaño del repositorio es de solo 0.1 GB, lo que indica que probablemente contiene un adaptador LoRA en lugar de los pesos completos del modelo. Al estar basado en Qwen2.5-7B-Instruct, hereda las capacidades del modelo base de Alibaba, pre-entrenado sobre 18 billones de tokens con una ventana de contexto de 128K tokens.
+El modelo se entrenó con Unsloth (que acelera el entrenamiento aproximadamente 2x) y la libreria TRL de Hugging Face. El tamaño del repositorio es de solo 0.1 GB, lo que indica que probablemente contiene un adaptador LoRA en lugar de los pesos completos del modelo. Al estar basado en Qwen2.5-7B-Instruct, hereda las capacidades del modelo base de Alibaba, pre-entrenado sobre 18 billones de tokens con una ventana de contexto de 128K tokens.
 
 ## Especificaciones tecnicas
 
@@ -75,7 +75,7 @@ La comparativa se limita a los modelos de la misma serie experimental encontrado
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run6-gen4
+- Repositorio Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run6-gen4
 - Modelo relacionado (run2-gen4): https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10-run2-gen4
 - Modelo relacionado (twf-run2-gen4): https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run2-gen4
 - Informe tecnico de Qwen2.5: https://arxiv.org/abs/2412.15115

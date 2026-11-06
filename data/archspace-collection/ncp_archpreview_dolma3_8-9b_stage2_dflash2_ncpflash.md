@@ -85,7 +85,7 @@ No se dispone de una comparativa cuantitativa formal con estos modelos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ArchSpace-Collection/NCP_ArchPreview_dolma3_8.9B_Stage2_DFlash2_NCPFlash
+- Modelo en Hugging Face: https://huggingface.co/ArchSpace-Collection/NCP_ArchPreview_dolma3_8.9B_Stage2_DFlash2_NCPFlash
 - Colección NCP-ArchPreview: https://huggingface.co/collections/ArchSpace-Collection/ncp-archpreview
 - Modelo objetivo (target): https://huggingface.co/ArchSpace-Collection/NCP_ArchPreview_dolma3_8.9B_Stage2_v1
 - Guía de inferencia para decodificación especulativa: https://github.com/LuckySJTU/ncp_olmo_eval/blob/main/docs/SPECULATIVE_DECODING.md

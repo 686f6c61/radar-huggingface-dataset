@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un checkpoint derivado de BLOOM-1b7, el modelo decoder-only de 1.722 millones de parametros publicado originalmente por BigScience. El nombre del artefacto, `bloom-1b7_wanda_0.2`, sugiere que se ha aplicado sobre el modelo base la tecnica de poda Wanda con una tasa de esparsidad de 0,2 (es decir, un 20 % de los pesos puestos a cero), aunque el autor no documenta el procedimiento en la model card, que es la plantilla autogenerada de HuggingFace y esta vacia en todos sus apartados.
+Este repositorio contiene un checkpoint derivado de BLOOM-1b7, el modelo decoder-only de 1.722 millones de parametros publicado originalmente por BigScience. El nombre del artefacto, `bloom-1b7_wanda_0.2`, sugiere que se ha aplicado sobre el modelo base la tecnica de poda Wanda con una tasa de esparsidad de 0,2 (es decir, un 20 % de los pesos puestos a cero), aunque el autor no documenta el procedimiento en la model card, que es la plantilla autogenerada de Hugging Face y esta vacia en todos sus apartados.
 
 El interes de la ficha es, por tanto, limitado y fundamentalmente metodologico: sirve como ejemplo de publicacion de un modelo podado sin documentacion asociada, algo relevante para quien investiga tecnicas de compresion de transformers. No hay evidencia de entrenamiento adicional, destilado ni ajuste fino; el numero de parametros del checkpoint (1.722.408.960) es practicamente identico al del BLOOM-1b7 original (1.722.410.240), lo que confirma que se trata de una poda no estructurada y no de una reduccion estructural del grafo.
 
@@ -41,7 +41,7 @@ Sin embargo, no hay ningun dato en la informacion proporcionada que confirme que
 
 - Investigacion en compresion de modelos: el caso de uso mas realista. Sirve como artefacto de estudio para medir el impacto de una poda Wanda al 20 % sobre un transformer de 1,7 B de parametros, comparando perplejidad y tareas downstream frente al checkpoint `bigscience/bloom-1b7` sin podar.
 - Experimentos academicos de evaluacion de esparsidad: util para reproducir curvas de degradacion frente a la tasa de poda, siempre que el autor publique la metodologia (actualmente no lo hace).
-- Docencia sobre ciclo de vida de modelos: permite ilustrar en clase como se sube un checkpoint derivado a HuggingFace sin model card, sin licencia y sin metricas, y por que eso es un problema de trazabilidad.
+- Docencia sobre ciclo de vida de modelos: permite ilustrar en clase como se sube un checkpoint derivado a Hugging Face sin model card, sin licencia y sin metricas, y por que eso es un problema de trazabilidad.
 - Pruebas de pipeline en transformers: sirve para validar que un flujo de carga con `AutoModelForCausalLM` y `safetensors` funciona antes de sustituir el modelo por uno en produccion.
 - Inferencia local de bajo coste tras cuantizacion: con aproximadamente 3,4 GB en FP16 o 1,7 GB en INT8, puede desplegarse en equipos modestos, aunque la calidad esperada es la de un modelo de 2022 con 1,7 B de parametros y poda adicional.
 - Generacion de texto en tareas poco exigentes con revisión humana: borradores, resúmenes cortos o completado de texto en ingles, siempre con validacion posterior.
@@ -69,11 +69,11 @@ La model card no incluye la seccion de evaluacion (aparece como `[More Informati
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Rajeshwari-Chanda/bloom-1b7_wanda_0.2 | 1,72 B | no disponible (base: 2048) | no disponible | HuggingFace, 0 descargas | Poda Wanda 0,2 sin documentar ni evaluar |
-| bigscience/bloom-1b7 | 1,72 B | 2048 | BLOOM RAIL 1.0 | HuggingFace, muy descargado | Modelo base, con evaluacion publica y licencia clara |
-| bigscience/bloom-1b1 | 1,07 B | 2048 | BLOOM RAIL 1.0 | HuggingFace | Alternativa mas ligera de la misma familia |
-| TinyLlama-1.1B-Chat | 1,10 B | 2048 | Apache 2.0 | HuggingFace | Entrenado con 3 T tokens, muy superior en generacion actual y con licencia permisiva |
-| Qwen2.5-1.5B | 1,54 B | 32.768 | Apache 2.0 (segun variante) | HuggingFace | Contexto mucho mayor y rendimiento muy superior en codigo y matematicas |
+| Rajeshwari-Chanda/bloom-1b7_wanda_0.2 | 1,72 B | no disponible (base: 2048) | no disponible | Hugging Face, 0 descargas | Poda Wanda 0,2 sin documentar ni evaluar |
+| bigscience/bloom-1b7 | 1,72 B | 2048 | BLOOM RAIL 1.0 | Hugging Face, muy descargado | Modelo base, con evaluacion publica y licencia clara |
+| bigscience/bloom-1b1 | 1,07 B | 2048 | BLOOM RAIL 1.0 | Hugging Face | Alternativa mas ligera de la misma familia |
+| TinyLlama-1.1B-Chat | 1,10 B | 2048 | Apache 2.0 | Hugging Face | Entrenado con 3 T tokens, muy superior en generacion actual y con licencia permisiva |
+| Qwen2.5-1.5B | 1,54 B | 32.768 | Apache 2.0 (segun variante) | Hugging Face | Contexto mucho mayor y rendimiento muy superior en codigo y matematicas |
 
 En rendimiento no hay comparacion posible porque este checkpoint no publica metricas. En terminos de licencia, cualquier alternativa de la tabla ofrece condiciones mas claras que este repositorio, que no declara ninguna.
 
@@ -93,7 +93,7 @@ En rendimiento no hay comparacion posible porque este checkpoint no publica metr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rajeshwari-Chanda/bloom-1b7_wanda_0.2
+- Modelo en Hugging Face: https://huggingface.co/Rajeshwari-Chanda/bloom-1b7_wanda_0.2
 - Modelo base BLOOM-1b7: https://huggingface.co/bigscience/bloom-1b7
 - Repositorio oficial de BLOOM: https://github.com/bigscience-workshop/bigscience
 - Paper de BLOOM (BigScience Workshop, 2022): https://arxiv.org/abs/2211.05100

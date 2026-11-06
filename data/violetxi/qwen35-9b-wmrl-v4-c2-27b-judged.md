@@ -75,7 +75,7 @@ No se dispone de información comparativa con otros modelos. El modelo base Qwen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/violetxi/qwen35-9b-wmrl-v4-c2-27b-judged
+- Modelo en Hugging Face: https://huggingface.co/violetxi/qwen35-9b-wmrl-v4-c2-27b-judged
 - Modelo base Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B
 - Documentación de vLLM para Qwen3.5-9B: https://recipes.vllm.ai/Qwen/Qwen3.5-9B
 - Catálogo de modelos de Microsoft Foundry (Qwen3.5-9B): https://ai.azure.com/catalog/models/qwen-qwen3.5-9b

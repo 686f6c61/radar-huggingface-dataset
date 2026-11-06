@@ -78,10 +78,10 @@ Como referencia externa no equivalente, un articulo sobre la filtración del Qwe
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Whittle-Qwen-3.8-35B-A3B (este, GGUF) | 35,1 B totales, ≈3 B activos + ≈10 B de memoria | 256K segun terceros; no confirmado en la model card | Sin benchmarks publicados; ablacion de -2,12 nats al anular la memoria | Apache-2.0 | GGUF en HuggingFace, llama.cpp |
-| Whittle-Qwen-3.8-35B-A3B (pesos base) | 35,1 B totales, ≈3 B activos | no disponible | Sin benchmarks publicados | Apache-2.0 | Pesos completos en HuggingFace |
-| logic65/Whittle-Next-27B-A3B (padre) | no disponible | no disponible | no disponible | Apache-2.0 | HuggingFace |
-| Qwen/Qwen3.8-27B (profesor) | 27 B (segun denominacion) | no disponible | no disponible | no disponible en la informacion proporcionada | HuggingFace |
+| Whittle-Qwen-3.8-35B-A3B (este, GGUF) | 35,1 B totales, ≈3 B activos + ≈10 B de memoria | 256K segun terceros; no confirmado en la model card | Sin benchmarks publicados; ablacion de -2,12 nats al anular la memoria | Apache-2.0 | GGUF en Hugging Face, llama.cpp |
+| Whittle-Qwen-3.8-35B-A3B (pesos base) | 35,1 B totales, ≈3 B activos | no disponible | Sin benchmarks publicados | Apache-2.0 | Pesos completos en Hugging Face |
+| logic65/Whittle-Next-27B-A3B (padre) | no disponible | no disponible | no disponible | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3.8-27B (profesor) | 27 B (segun denominacion) | no disponible | no disponible | no disponible en la informacion proporcionada | Hugging Face |
 | Qwen 3.8-35B-A3B (filtrado en ModelScope) | 35 B totales, 3 B activos | no disponible | ≈80 tok/s citados en un articulo externo | no disponible | no confirmada |
 
 No se dispone de datos publicados que permitan una comparacion cuantitativa fiable con alternativas de la misma categoria en terminos de MMLU, HumanEval u otras metricas.

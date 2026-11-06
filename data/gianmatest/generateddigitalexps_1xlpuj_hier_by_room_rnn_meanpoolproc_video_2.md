@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gianmaTest/generatedDigitalExps_1xLpUj_hier_by_room_rnn_meanPoolProc_video_2` es un modelo de pesos abiertos publicado en HuggingFace por el usuario `gianmaTest` el 28 de octubre de 2026. Se trata de un artefacto de muy pequeño tamano: 2.366.208 parametros segun los metadatos de safetensors, lo que lo situa en el orden de unos 9,5 MB en precision fp32. No dispone de model card descriptiva: el README se limita a indicar que fue subido mediante la integracion `PyTorchModelHubMixin` y deja como "More Information Needed" el codigo, el paper y la documentacion.
+`gianmaTest/generatedDigitalExps_1xLpUj_hier_by_room_rnn_meanPoolProc_video_2` es un modelo de pesos abiertos publicado en Hugging Face por el usuario `gianmaTest` el 28 de octubre de 2026. Se trata de un artefacto de muy pequeño tamano: 2.366.208 parametros segun los metadatos de safetensors, lo que lo situa en el orden de unos 9,5 MB en precision fp32. No dispone de model card descriptiva: el README se limita a indicar que fue subido mediante la integracion `PyTorchModelHubMixin` y deja como "More Information Needed" el codigo, el paper y la documentacion.
 
 El nombre del repositorio sugiere un experimento generado de forma automatica (`generatedDigitalExps`), con una jerarquia por habitacion (`hier_by_room`), una arquitectura recurrente (`rnn`), un procesamiento basado en mean pooling (`meanPoolProc`) y una modalidad de video (`video`). Se trata, no obstante, de una inferencia a partir del identificador y de los repositorios hermanos del mismo autor, no de informacion confirmada en la model card.
 
@@ -29,7 +29,7 @@ El identificador del repositorio apunta a una red neuronal recurrente con agrega
 
 ## Capacidades
 
-- No hay capacidades documentadas en la model card ni en los metadatos de HuggingFace.
+- No hay capacidades documentadas en la model card ni en los metadatos de Hugging Face.
 - No se confirma generacion de texto, razonamiento, codigo, matematicas ni vision en sentido general.
 - No se confirma soporte de tool calling ni function calling.
 - No se confirma soporte de agentes ni razonamiento multi-paso.
@@ -86,7 +86,7 @@ No se han identificado modelos comparables publicados con documentacion suficien
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gianmaTest/generatedDigitalExps_1xLpUj_hier_by_room_rnn_meanPoolProc_video_2
+- Modelo en Hugging Face: https://huggingface.co/gianmaTest/generatedDigitalExps_1xLpUj_hier_by_room_rnn_meanPoolProc_video_2
 - Perfil del autor: https://huggingface.co/gianmaTest
 - Repositorio hermano (video_1, hash 1xLpUj): https://huggingface.co/gianmaTest/generatedDigitalExps_1xLpUj_hier_by_room_rnn_meanPoolProc_video_1
 - Repositorio hermano (video_1, hash 1xKm8r): https://huggingface.co/gianmaTest/generatedDigitalExps_1xKm8r_hier_by_room_rnn_meanPoolProc_video_1

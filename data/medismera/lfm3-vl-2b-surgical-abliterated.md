@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM3-VL-2B-Surgical-Abliterated es una versión modificada del modelo multimodal LiquidAI/LFM3-VL-2B, publicada por el usuario medismera en HuggingFace. Se trata de un modelo de visión-lenguaje (image-text-to-text) de aproximadamente 1.900 millones de parámetros al que se le ha aplicado un proceso de "ablación quirúrgica de rechazos" (surgical refusal ablation): una intervención sobre las representaciones latentes de ciertas capas del transformer destinada a eliminar el comportamiento de negación y las advertencias morales del modelo base, manteniendo supuestamente intactas sus capacidades de razonamiento, código y conocimiento factual.
+LFM3-VL-2B-Surgical-Abliterated es una versión modificada del modelo multimodal LiquidAI/LFM3-VL-2B, publicada por el usuario medismera en Hugging Face. Se trata de un modelo de visión-lenguaje (image-text-to-text) de aproximadamente 1.900 millones de parámetros al que se le ha aplicado un proceso de "ablación quirúrgica de rechazos" (surgical refusal ablation): una intervención sobre las representaciones latentes de ciertas capas del transformer destinada a eliminar el comportamiento de negación y las advertencias morales del modelo base, manteniendo supuestamente intactas sus capacidades de razonamiento, código y conocimiento factual.
 
 El modelo original de LiquidAI pertenece a la familia LFM (Liquid Foundation Models), y esta derivación se distribuye en formatos safetensors y GGUF, lo que facilita tanto su uso con la librería Transformers (requiriendo `trust_remote_code=True`) como su ejecución local en hardware de consumo mediante runtimes como llama.cpp u Ollama.
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 - VRAM estimada para inferencia: con 1.9B de parametros en bfloat16, aproximadamente 4-5 GB de VRAM o RAM; el repositorio completo pesa 5,0 GB. En GGUF con cuantizaciones de 4 bits (Q4_K_M o similares), la huella estimada bajaria a torno a 1,5-2 GB (estimacion, no dato oficial).
 - GPU recomendadas: no requiere GPU dedicada; cualquier GPU moderna con 6 GB de VRAM (por ejemplo RTX 3060, RTX 4060) es suficiente para bf16. En CPU, un equipo domestico con 8-16 GB de RAM puede ejecutar la version GGUF.
 - Consumer GPU: cabe con holgura en practicamente cualquier GPU de consumo actual, incluso en cuantizacion completa.
-- Opciones de despliegue: Transformers con `trust_remote_code=True` (codigo de ejemplo en la model card), llama.cpp u Ollama gracias a los archivos GGUF, y endpoints compatibles de HuggingFace (tag `endpoints_compatible`). No hay evidencia de soporte verificado en vLLM o TGI, aunque al tratarse de un modelo compatible con Transformers podria funcionar; no disponible como dato confirmado.
+- Opciones de despliegue: Transformers con `trust_remote_code=True` (codigo de ejemplo en la model card), llama.cpp u Ollama gracias a los archivos GGUF, y endpoints compatibles de Hugging Face (tag `endpoints_compatible`). No hay evidencia de soporte verificado en vLLM o TGI, aunque al tratarse de un modelo compatible con Transformers podria funcionar; no disponible como dato confirmado.
 - Latencia y throughput estimados: no disponibles; al ser un modelo de ~2B de parametros, cabe esperar latencias bajas y throughput alto incluso en hardware modesto.
 
 ## Comparativa con modelos similares
@@ -81,7 +81,7 @@ No hay datos de rendimiento comparativo publicados entre estas variantes, por lo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/medismera/LFM3-VL-2B-Surgical-Abliterated
+- Modelo en Hugging Face: https://huggingface.co/medismera/LFM3-VL-2B-Surgical-Abliterated
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-VL-2B
 - Organizacion del autor del modelo base: https://huggingface.co/LiquidAI
 

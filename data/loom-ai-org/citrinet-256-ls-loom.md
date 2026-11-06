@@ -77,7 +77,7 @@ Datos publicados por el autor de la exportación sobre 73 clips de prueba. No se
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Formato y disponibilidad |
 |---|---|---|---|---|---|
-| citrinet-256-ls-loom (esta ficha) | 9.758.306 | Audio 16 kHz, ventanas internas no documentadas | WER 9,39 % en 73 clips; salida identica a NeMo en F32 | CC-BY-4.0 | GGUF para loom.cpp; 59 descargas en HuggingFace |
+| citrinet-256-ls-loom (esta ficha) | 9.758.306 | Audio 16 kHz, ventanas internas no documentadas | WER 9,39 % en 73 clips; salida identica a NeMo en F32 | CC-BY-4.0 | GGUF para loom.cpp; 59 descargas en Hugging Face |
 | nvidia/stt_en_citrinet_256_ls (modelo base) | No disponible en la informacion proporcionada | No disponible | Referencia de la que deriva la exportacion (F32 identico token a token) | No disponible en la informacion proporcionada | Formato NeMo original |
 | citrinet-1024-loom (mencionado por el autor) | No disponible | No disponible | Segun el autor, menos errores en habla conversacional, con acento o con ruido por haber sido entrenado con mas datos | No disponible | GGUF para loom.cpp |
 
@@ -98,7 +98,7 @@ No se han identificado en la busqueda web modelos comparables adicionales; los r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/loom-ai-org/citrinet-256-ls-loom
+- Modelo en Hugging Face: https://huggingface.co/loom-ai-org/citrinet-256-ls-loom
 - Modelo base: https://huggingface.co/nvidia/stt_en_citrinet_256_ls
 - Repositorio del motor loom.cpp: https://github.com/loom-ai-org/loom.cpp
 - Exportador loom-exporter: https://github.com/loom-ai-org/loom-exporter

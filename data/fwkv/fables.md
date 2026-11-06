@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FWKV/Fables es un modelo de generacion de texto de 111.727.872 parametros (aproximadamente 112 M) publicado por el usuario FWKV (FlameF0X) en HuggingFace. Segun su model card, esta construido sobre una arquitectura propia denominada FWKV, etiquetada como `rnn` y distribuida con `custom_code`, lo que obliga a usar `trust_remote_code=True` en `transformers`. El modelo esta afinado para escritura de historias y fabulas y expone una plantilla de chat con roles `system`, `user` y `assistant`.
+FWKV/Fables es un modelo de generacion de texto de 111.727.872 parametros (aproximadamente 112 M) publicado por el usuario FWKV (FlameF0X) en Hugging Face. Segun su model card, esta construido sobre una arquitectura propia denominada FWKV, etiquetada como `rnn` y distribuida con `custom_code`, lo que obliga a usar `trust_remote_code=True` en `transformers`. El modelo esta afinado para escritura de historias y fabulas y expone una plantilla de chat con roles `system`, `user` y `assistant`.
 
 Su interes practico es limitado pero claro: se trata de un modelo muy pequeno (repo de 0,4 GB, pesos en fp32) que cabe en cualquier GPU consumer e incluso en CPU, utile para experimentar con arquitecturas recurrentes alternativas al transformer y para tareas de generacion creativa de baja latencia. No hay informacion publica sobre longitud de contexto, datos de entrenamiento ni resultados de benchmarks, y el modelo acumula 0 descargas y 5 likes en el momento de la consulta, por lo que su validacion externa es practicamente nula.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| FWKV/Fables | 112 M | no disponible | Apache 2.0 | sin benchmarks publicados | HuggingFace, requiere `trust_remote_code` |
+| FWKV/Fables | 112 M | no disponible | Apache 2.0 | sin benchmarks publicados | Hugging Face, requiere `trust_remote_code` |
 | GPT-2 (124 M) | 124 M | 1024 tokens | Modified MIT | benchmarks publicos (MMLU, etc.) | Ampliamente soportado en vLLM, llama.cpp, Ollama |
 | SmolLM2-135M | 135 M | 8192 tokens (segun model card) | Apache 2.0 | benchmarks publicos | Ecosistema transformers/GGUF amplio |
 | Qwen2.5-0.5B | 494 M | 32 768 tokens (segun model card) | Apache 2.0 | benchmarks publicos | Multiples runtimes y cuantizaciones |
@@ -85,5 +85,5 @@ La comparacion es principalmente estructural: Fables es el unico de la lista con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FWKV/Fables
+- Modelo en Hugging Face: https://huggingface.co/FWKV/Fables
 - Perfil del autor: https://huggingface.co/FWKV

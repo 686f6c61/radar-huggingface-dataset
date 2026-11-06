@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `maximso/con13` es un repositorio publicado en HuggingFace por el usuario `maximso`, con un tamaño de almacenamiento de 464,6 GB. Fue creado el 4 de agosto de 2026 y actualizado el 14 de agosto de 2026. En el momento de la consulta, el repositorio no dispone de información pública sobre su arquitectura, parámetros, licencia o pipeline de uso, y registra cero descargas y un único like.
+El modelo `maximso/con13` es un repositorio publicado en Hugging Face por el usuario `maximso`, con un tamaño de almacenamiento de 464,6 GB. Fue creado el 4 de agosto de 2026 y actualizado el 14 de agosto de 2026. En el momento de la consulta, el repositorio no dispone de información pública sobre su arquitectura, parámetros, licencia o pipeline de uso, y registra cero descargas y un único like.
 
-Dada la ausencia de documentación técnica y de metadatos en la ficha de HuggingFace, no es posible determinar qué tipo de modelo es, qué problema resuelve ni por qué sería relevante para desarrolladores o investigadores. El tamaño del repositorio sugiere que podría contener pesos de un modelo de gran escala, pero sin más datos no se puede confirmar ni caracterizar.
+Dada la ausencia de documentación técnica y de metadatos en la ficha de Hugging Face, no es posible determinar qué tipo de modelo es, qué problema resuelve ni por qué sería relevante para desarrolladores o investigadores. El tamaño del repositorio sugiere que podría contener pesos de un modelo de gran escala, pero sin más datos no se puede confirmar ni caracterizar.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ Dada la ausencia de documentación técnica y de metadatos en la ficha de Huggin
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado ninguna información sobre la arquitectura, el proceso de entrenamiento, el dataset utilizado o las técnicas de optimización (RLHF, DPO, etc.) en la ficha de HuggingFace. El repositorio únicamente expone su tamaño (464,6 GB) y las fechas de creación y actualización.
+No se ha publicado ninguna información sobre la arquitectura, el proceso de entrenamiento, el dataset utilizado o las técnicas de optimización (RLHF, DPO, etc.) en la ficha de Hugging Face. El repositorio únicamente expone su tamaño (464,6 GB) y las fechas de creación y actualización.
 
 ## Capacidades
 
@@ -45,7 +45,7 @@ No disponible. Al no existir especificaciones técnicas públicas, no se puede c
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentación técnica y de metadatos en HuggingFace.
+- Ausencia total de documentación técnica y de metadatos en Hugging Face.
 - Licencia desconocida: no se puede confirmar si el modelo es de código abierto, si permite uso comercial o si tiene restricciones de redistribución.
 - Riesgo de que el repositorio contenga archivos incompletos, corruptos o no relacionados con un modelo funcional.
 - Sin información sobre sesgos, alucinaciones o limitaciones de contexto, por lo que no es seguro utilizarlo en producción sin una evaluación previa exhaustiva.
@@ -53,4 +53,4 @@ No disponible. Al no existir especificaciones técnicas públicas, no se puede c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/maximso/con13
+- Repositorio en Hugging Face: https://huggingface.co/maximso/con13

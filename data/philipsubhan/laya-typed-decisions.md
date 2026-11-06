@@ -6,7 +6,7 @@ Laya typed-decisions (revisión de `philipsubhan`) es un ajuste fino derivado de
 
 El checkpoint pesa aproximadamente 0,8 GB y contiene 421.293.830 parámetros con pesos en safetensors, lo que lo sitúa en la gama de modelos pequeños aptos para inferencia de baja latencia en hardware de consumo. Su relevancia actual radica en su naturaleza no autorregresiva: la familia Laya se plantea como un motor de decisión "System 1" con latencias declaradas por debajo de 35 ms y enrutado multilingüe, un enfoque distinto al de los LLM generativos para tareas de clasificación y decisión estructurada.
 
-Es un artefacto de nicho: la ficha de HuggingFace registra 0 descargas y 0 likes en el momento de recopilar la información, y no documenta idiomas soportados ni longitud de contexto. La model card únicamente publica métricas de retención sobre 20 escenarios de validación estratificados, sin detallar la composición completa del conjunto de entrenamiento.
+Es un artefacto de nicho: la ficha de Hugging Face registra 0 descargas y 0 likes en el momento de recopilar la información, y no documenta idiomas soportados ni longitud de contexto. La model card únicamente publica métricas de retención sobre 20 escenarios de validación estratificados, sin detallar la composición completa del conjunto de entrenamiento.
 
 ## Especificaciones tecnicas
 
@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| philipsubhan/laya-typed-decisions | 421.293.830 | no disponible | accuracy 0,850; Brier 0,1066 (20 escenarios) | apache-2.0 | HuggingFace (0 descargas) |
-| convaiinnovations/laya | no disponible | no disponible | no disponible | no disponible en la informacion | HuggingFace |
-| convaiinnovations/laya-typed-decisions | no disponible | no disponible | no disponible | no disponible en la informacion | HuggingFace |
+| philipsubhan/laya-typed-decisions | 421.293.830 | no disponible | accuracy 0,850; Brier 0,1066 (20 escenarios) | apache-2.0 | Hugging Face (0 descargas) |
+| convaiinnovations/laya | no disponible | no disponible | no disponible | no disponible en la informacion | Hugging Face |
+| convaiinnovations/laya-typed-decisions | no disponible | no disponible | no disponible | no disponible en la informacion | Hugging Face |
 
 No se dispone de datos de rendimiento de las alternativas para establecer una comparación cuantitativa fiable. La comparación se limita a la relación de linaje: este checkpoint es un ajuste derivado del base `convaiinnovations/laya` y coexiste con la revisión `convaiinnovations/laya-typed-decisions`.
 
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento de las alternativas para establecer una co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/philipsubhan/laya-typed-decisions
+- Modelo en Hugging Face: https://huggingface.co/philipsubhan/laya-typed-decisions
 - Modelo base: https://huggingface.co/convaiinnovations/laya
 - Revisión hermana de la familia: https://huggingface.co/convaiinnovations/laya-typed-decisions
 - Sitio del proyecto Laya: https://laya.convaiinnovations.com/

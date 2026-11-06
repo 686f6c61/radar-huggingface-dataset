@@ -77,8 +77,8 @@ No se dispone de resultados de benchmarks para este modelo, por lo que no se pue
 
 ## Enlaces
 
-- [HuggingFace: arkilpatel/olmo2-1b-traj-s1-294b](https://huggingface.co/arkilpatel/olmo2-1b-traj-s1-294b)
+- [Hugging Face: arkilpatel/olmo2-1b-traj-s1-294b](https://huggingface.co/arkilpatel/olmo2-1b-traj-s1-294b)
 - [Artículo técnico OLMo 2 (arXiv)](https://arxiv.org/abs/2501.00656)
 - [Repositorio OLMo en GitHub](https://github.com/allenai/OLMo)
 - [Página oficial de OLMo 2 en AllenAI](https://allenai.org/olmo2)
-- [Modelo base allenai/OLMo-2-0425-1B en HuggingFace](https://huggingface.co/allenai/OLMo-2-0425-1B)
+- [Modelo base allenai/OLMo-2-0425-1B en Hugging Face](https://huggingface.co/allenai/OLMo-2-0425-1B)

@@ -78,9 +78,9 @@ No se han publicado en la informacion disponible resultados frente a otros model
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| StanfordSCALE/assertion_is_very_short | 109,5 M | no disponible | Clasificacion binaria (asercion `is_very_short`) | no disponible | HuggingFace |
-| sentence-transformers/paraphrase-mpnet-base-v2 (modelo base) | ~109 M | no disponible | Embeddings de frases / similitud semantica | no disponible en esta ficha | HuggingFace |
-| Otros clasificadores de aserciones de la familia `bu5` (StanfordSCALE) | no disponible | no disponible | Clasificacion binaria de otras aserciones | no disponible | HuggingFace |
+| StanfordSCALE/assertion_is_very_short | 109,5 M | no disponible | Clasificacion binaria (asercion `is_very_short`) | no disponible | Hugging Face |
+| sentence-transformers/paraphrase-mpnet-base-v2 (modelo base) | ~109 M | no disponible | Embeddings de frases / similitud semantica | no disponible en esta ficha | Hugging Face |
+| Otros clasificadores de aserciones de la familia `bu5` (StanfordSCALE) | no disponible | no disponible | Clasificacion binaria de otras aserciones | no disponible | Hugging Face |
 
 No se dispone en la informacion proporcionada de modelos comparables con metricas publicadas en la misma tarea y dataset, por lo que no es posible una comparacion de rendimiento directa.
 
@@ -97,7 +97,7 @@ No se dispone en la informacion proporcionada de modelos comparables con metrica
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StanfordSCALE/assertion_is_very_short
+- Modelo en Hugging Face: https://huggingface.co/StanfordSCALE/assertion_is_very_short
 - Dataset de anotaciones: https://huggingface.co/datasets/StanfordSCALE/assertions_llm_annotated_talkmoves
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-mpnet-base-v2
 - Dataset TalkMoves: https://github.com/SumnerLab/TalkMoves

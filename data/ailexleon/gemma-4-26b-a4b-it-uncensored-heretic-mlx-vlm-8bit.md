@@ -79,7 +79,7 @@ La diferencia principal entre este modelo y la versión 4-bit del mismo autor es
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/ailexleon/gemma-4-26B-A4B-it-uncensored-heretic-mlx-vlm-8Bit)
+- [Modelo en Hugging Face](https://huggingface.co/ailexleon/gemma-4-26B-A4B-it-uncensored-heretic-mlx-vlm-8Bit)
 - [Modelo base: llmfan46/gemma-4-26B-A4B-it-uncensored-heretic](https://huggingface.co/llmfan46/gemma-4-26B-A4B-it-uncensored-heretic)
 - [Versión 4-bit del mismo autor](https://huggingface.co/ailexleon/gemma-4-26B-A4B-it-qat-uncensored-heretic-mlx-vlm-4Bit)
 - [Gemma 4 26B A4B IT en vLLM Recipes](https://recipes.vllm.ai/Google/gemma-4-26B-A4B-it)

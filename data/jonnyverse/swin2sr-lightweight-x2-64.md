@@ -76,7 +76,7 @@ Nota: los datos de tamaño y licencia de SwinIR y ESRGAN son aproximados y puede
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/JONNYVERSE/swin2SR-lightweight-x2-64
+- Repositorio de Hugging Face: https://huggingface.co/JONNYVERSE/swin2SR-lightweight-x2-64
 - Modelo original: https://huggingface.co/caidas/swin2SR-lightweight-x2-64
 - Repositorio con pesos ONNX de Xenova: https://huggingface.co/Xenova/swin2SR-lightweight-x2-64
 - Repositorio oficial de Swin2SR (GitHub): https://github.com/mv-lab/swin2sr

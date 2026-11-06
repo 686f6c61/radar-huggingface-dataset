@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`atharvshah/beit-classification40` es un repositorio experimental alojado en HuggingFace que contiene una implementación propia de una arquitectura BEiT (Bidirectional Encoder representation from Image Transformers) orientada a tareas de clasificación. Lo publica el usuario atharvshah, que mantiene otros repositorios similares de tipo experimental (`atharvshah/mocov3-classification`). El propio autor declara explícitamente que el checkpoint incluido es una inicialización válida para pruebas de humo (*smoke tests*) y no un modelo entrenado ni evaluado con benchmarks.
+`atharvshah/beit-classification40` es un repositorio experimental alojado en Hugging Face que contiene una implementación propia de una arquitectura BEiT (Bidirectional Encoder representation from Image Transformers) orientada a tareas de clasificación. Lo publica el usuario atharvshah, que mantiene otros repositorios similares de tipo experimental (`atharvshah/mocov3-classification`). El propio autor declara explícitamente que el checkpoint incluido es una inicialización válida para pruebas de humo (*smoke tests*) y no un modelo entrenado ni evaluado con benchmarks.
 
 La relevancia de esta ficha es limitada y debe entenderse en clave de investigación: no es un modelo listo para producción. El recuento real de parámetros del fichero `model.safetensors` es de tan solo 49.600, muy lejos de los aproximadamente 86 millones de parámetros de un BEiT-base estándar descrito en el paper original. Esto confirma que se trata de un esqueleto de código con una configuración de arquitectura reducida, pensada para inspeccionar cambios estructurales antes de lanzar un entrenamiento completo.
 
@@ -42,7 +42,7 @@ No hay evidencia de entrenamiento: el autor afirma que `model.safetensors` es un
 - Investigación sobre atención lineal en transformers de visión: el repositorio permite instrumentar y medir el comportamiento de una variante con atención lineal frente a la atención softmax canónica de BEiT, siempre que se entrene primero.
 - Estudio de mecanismos de fusión Tucker: la configuración declara fusión por descomposición de Tucker, un esquema poco habitual en vision transformers; sirve como banco de pruebas para analizar su impacto en el número de parámetros y en el flujo de gradientes.
 - Prototipado de cabezas de clasificación: el script `finetune.py` y el `config.json` permiten sustituir la cabeza final y comprobar cómo se propaga la forma de salida antes de escalar a un modelo mayor.
-- Docencia y formación práctica: adecuado para ilustrar la estructura de un repositorio de modelo en HuggingFace (config, safetensors, model card, script de ajuste) sin requerir GPU ni datos reales.
+- Docencia y formación práctica: adecuado para ilustrar la estructura de un repositorio de modelo en Hugging Face (config, safetensors, model card, script de ajuste) sin requerir GPU ni datos reales.
 - Reproducibilidad de experimentos académicos: el autor recomienda evaluar con una partición etiquetada específica de la tarea, reportar la métrica en al menos tres semillas e incluir una línea base de capacidad equivalente, lo que lo convierte en una plantilla metodológica razonable.
 - Comparativa de arquitecturas a pequeña escala: útil como punto de partida para medir coste de memoria y latencia de una configuración BEiT reducida frente a otras variantes, aunque sin valores de precisión publicados.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto / escala | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `atharvshah/beit-classification40` | 49.600 | "base" según config, no verificable | No (solo inicialización) | BSD-3-Clause | HuggingFace |
+| `atharvshah/beit-classification40` | 49.600 | "base" según config, no verificable | No (solo inicialización) | BSD-3-Clause | Hugging Face |
 | BEiT-base (paper original, referencia) | ~86 M según el paper de Bao et al. | Vision transformer, parches de imagen | Sí, preentrenamiento auto-supervisado | Según implementación original | Repositorios oficiales y `transformers` |
-| `atharvshah/mocov3-classification` | no disponible | Configuración experimental del mismo autor | No (artefacto experimental análogo) | Apache-2.0 | HuggingFace |
+| `atharvshah/mocov3-classification` | no disponible | Configuración experimental del mismo autor | No (artefacto experimental análogo) | Apache-2.0 | Hugging Face |
 
 La comparación es desigual por diseño: el modelo del autor es un esqueleto de 49.600 parámetros frente a arquitecturas de decenas o cientos de millones entrenadas. La única similitud real es la familia arquitectónica y el carácter experimental del repositorio hermano `mocov3-classification`, publicado por el mismo usuario con estructura de ficheros equivalente.
 
@@ -82,7 +82,7 @@ La comparación es desigual por diseño: el modelo del autor es un esqueleto de 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/atharvshah/beit-classification40
+- Repositorio Hugging Face: https://huggingface.co/atharvshah/beit-classification40
 - Perfil de modelos del autor: https://huggingface.co/atharvshah/models
 - Repositorio hermano del mismo autor: https://huggingface.co/atharvshah/mocov3-classification/tree/main
 - Documentación de BEiT en `transformers`: https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/beit.md

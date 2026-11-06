@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `cwaud/tournament-exp-s1-29fc1a10-5cc0-4d2d-9fda-70f59bda942e-5Exp01710d7ead669708` es un checkpoint de 2.697.198.592 parametros (aproximadamente 2,7 mil millones) publicado en HuggingFace por el usuario `cwaud`. Por el nombre del repositorio y la etiqueta `lfm2` asociada, parece tratarse de un experimento derivado de la familia LFM2 (Liquid Foundation Models, segunda generacion), si bien no hay documentacion oficial que lo confirme ni que detalle su procedencia exacta. El repositorio ocupa 5,4 GB, un tamano coherente con pesos almacenados en precision de 16 bits (bf16/fp16) para ese numero de parametros.
+El modelo identificado como `cwaud/tournament-exp-s1-29fc1a10-5cc0-4d2d-9fda-70f59bda942e-5Exp01710d7ead669708` es un checkpoint de 2.697.198.592 parametros (aproximadamente 2,7 mil millones) publicado en Hugging Face por el usuario `cwaud`. Por el nombre del repositorio y la etiqueta `lfm2` asociada, parece tratarse de un experimento derivado de la familia LFM2 (Liquid Foundation Models, segunda generacion), si bien no hay documentacion oficial que lo confirme ni que detalle su procedencia exacta. El repositorio ocupa 5,4 GB, un tamano coherente con pesos almacenados en precision de 16 bits (bf16/fp16) para ese numero de parametros.
 
 La relevancia de este checkpoint es limitada y hay que enmarcarla con honestidad: acumula 6 descargas y 0 likes en el momento de redactar esta ficha, no declara licencia, no especifica idiomas soportados y no incluye pipeline de inferencia ni model card con resultados. Se trata, por tanto, de un artefacto de investigacion o de un volcado automatico de un experimento de ajuste (el prefijo `tournament-exp-s1` sugiere un ciclo de experimentos comparativos), no de un modelo listo para produccion.
 
@@ -55,7 +55,7 @@ Dado que no hay informacion funcional publicada, los casos de uso que siguen son
 - Generacion de texto de bajo coste en entornos con GPU limitada: tareas de resumen, reformulacion o redaccion asistida donde la calidad maxima no sea critica y se priorice latencia y huella de memoria.
 - Investigacion sobre cuantizacion: el checkpoint permite generar versiones GGUF o AWQ y medir la degradacion de calidad, ya que el autor no publica ninguna cuantizacion previa.
 - Comparativas academicas de checkpoints pequenos: util como punto de referencia adicional en estudios que comparen modelos de 2-3 mil millones de parametros, dado que su procedencia no esta documentada.
-- Analisis de procedencia y reproducibilidad: el repositorio sirve como caso de estudio sobre checkpoints automaticos sin model card, licencia ni evaluacion, un fenomeno creciente en HuggingFace.
+- Analisis de procedencia y reproducibilidad: el repositorio sirve como caso de estudio sobre checkpoints automaticos sin model card, licencia ni evaluacion, un fenomeno creciente en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -81,10 +81,10 @@ No hay datos de rendimiento de este checkpoint, por lo que la comparacion se lim
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| cwaud/tournament-exp-s1 (este) | 2,7 mil millones | no disponible | no disponible | HuggingFace, 6 descargas, sin model card |
-| LFM2-2.6B (Liquid AI) | 2,6 mil millones | no disponible en esta ficha | no disponible en esta ficha | HuggingFace, familia oficial con documentacion |
-| Qwen2.5-3B | 3,09 mil millones | 32.768 tokens (ampliable) | Apache 2.0 | HuggingFace, ampliamente soportado |
-| Llama-3.2-3B | 3,21 mil millones | 128.000 tokens | Llama 3.2 Community License | HuggingFace, soporte amplio en runtimes |
+| cwaud/tournament-exp-s1 (este) | 2,7 mil millones | no disponible | no disponible | Hugging Face, 6 descargas, sin model card |
+| LFM2-2.6B (Liquid AI) | 2,6 mil millones | no disponible en esta ficha | no disponible en esta ficha | Hugging Face, familia oficial con documentacion |
+| Qwen2.5-3B | 3,09 mil millones | 32.768 tokens (ampliable) | Apache 2.0 | Hugging Face, ampliamente soportado |
+| Llama-3.2-3B | 3,21 mil millones | 128.000 tokens | Llama 3.2 Community License | Hugging Face, soporte amplio en runtimes |
 
 No se dispone de una comparacion de calidad entre estos modelos y el checkpoint objeto de la ficha, ya que este ultimo carece de evaluacion publicada.
 
@@ -102,7 +102,7 @@ No se dispone de una comparacion de calidad entre estos modelos y el checkpoint 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/cwaud/tournament-exp-s1-29fc1a10-5cc0-4d2d-9fda-70f59bda942e-5Exp01710d7ead669708
+- Repositorio en Hugging Face: https://huggingface.co/cwaud/tournament-exp-s1-29fc1a10-5cc0-4d2d-9fda-70f59bda942e-5Exp01710d7ead669708
 - Otro checkpoint del mismo autor (referencia cruzada): https://huggingface.co/cwaud/tournament-exp-s1-29fc1a10-5cc0-4d2d-9fda-70f59bda942e-5Exp6ded491f0bd914af
 - Otro checkpoint del mismo autor (referencia cruzada): https://huggingface.co/cwaud/tournament-exp-s1-90d361cb-0b97-464a-9fda-36eb34c99261-5Expd929f5d8f969b80f
 

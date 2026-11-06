@@ -71,10 +71,10 @@ Mediciones del autor con Merlin 3.0.1 sobre 4× RTX 3090 el 2026-11-01 (Flash-Ne
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-Flash-Next-PLE-INT6-Merlin (este paquete) | 51B en tabla PLE INT6 | 262K (heredado) | safetensors INT6 | qwen-community-1.0 | HuggingFace, 0 descargas |
-| Qwen3.8-Flash-Next (base, tabla PLE BF16/FP8) | 51B en tabla PLE | 262K | safetensors BF16/FP8 | qwen-community-1.0 | HuggingFace (Qwen) |
-| Qwen3.8-Flash-Next-W4A16-Merlin | no disponible | 262K (heredado) | safetensors W4A16 | qwen-community-1.0 | HuggingFace (halt95) |
-| Swift1.5-Qwen3.8-Flash-Next-W4A16-Merlin | no disponible | 262K (heredado) | safetensors W4A16 | qwen-community-1.0 | HuggingFace (halt95) |
+| Qwen3.8-Flash-Next-PLE-INT6-Merlin (este paquete) | 51B en tabla PLE INT6 | 262K (heredado) | safetensors INT6 | qwen-community-1.0 | Hugging Face, 0 descargas |
+| Qwen3.8-Flash-Next (base, tabla PLE BF16/FP8) | 51B en tabla PLE | 262K | safetensors BF16/FP8 | qwen-community-1.0 | Hugging Face (Qwen) |
+| Qwen3.8-Flash-Next-W4A16-Merlin | no disponible | 262K (heredado) | safetensors W4A16 | qwen-community-1.0 | Hugging Face (halt95) |
+| Swift1.5-Qwen3.8-Flash-Next-W4A16-Merlin | no disponible | 262K (heredado) | safetensors W4A16 | qwen-community-1.0 | Hugging Face (halt95) |
 
 No se dispone de datos de benchmarks publicos del modelo base Qwen3.8-Flash-Next en la informacion proporcionada, por lo que la comparativa se limita a formato, tamano de tabla y requisitos de RAM.
 
@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks publicos del modelo base Qwen3.8-Flash-Next
 
 ## Enlaces
 
-- HuggingFace del paquete: https://huggingface.co/halt95/Qwen3.8-Flash-Next-PLE-INT6-Merlin
+- Hugging Face del paquete: https://huggingface.co/halt95/Qwen3.8-Flash-Next-PLE-INT6-Merlin
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Checkpoint W4A16 compatible: https://huggingface.co/halt95/Qwen3.8-Flash-Next-W4A16-Merlin
 - Checkpoint Swift1.5 compatible: https://huggingface.co/halt95/Swift1.5-Qwen3.8-Flash-Next-W4A16-Merlin

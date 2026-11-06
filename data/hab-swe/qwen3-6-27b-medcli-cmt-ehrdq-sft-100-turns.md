@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `hab-swe/Qwen3.6-27B-MedCLI-CMT-EHRDQ-SFT-100-turns` es un ajuste fino publicado por el usuario `hab-swe` sobre una base de la familia Qwen (la etiqueta de arquitectura declarada en HuggingFace es `qwen3_5`). El repositorio contiene 27.356.728.560 parámetros reales en safetensors (27,36 mil millones) y ocupa 54,7 GB, lo que corresponde a un guardado en precisión de 16 bits. La pipeline declarada es `image-text-to-text`, por lo que se trata de un modelo multimodal con entrada de imagen y texto y salida de texto, y la etiqueta `conversational` indica que está orientado a diálogo multi-turno.
+El modelo `hab-swe/Qwen3.6-27B-MedCLI-CMT-EHRDQ-SFT-100-turns` es un ajuste fino publicado por el usuario `hab-swe` sobre una base de la familia Qwen (la etiqueta de arquitectura declarada en Hugging Face es `qwen3_5`). El repositorio contiene 27.356.728.560 parámetros reales en safetensors (27,36 mil millones) y ocupa 54,7 GB, lo que corresponde a un guardado en precisión de 16 bits. La pipeline declarada es `image-text-to-text`, por lo que se trata de un modelo multimodal con entrada de imagen y texto y salida de texto, y la etiqueta `conversational` indica que está orientado a diálogo multi-turno.
 
 El identificador del modelo sugiere un ajuste supervisado (SFT) orientado a un dominio clínico o médico (`MedCLI`), con algún componente relativo a historiales clínicos electrónicos (`EHRDQ`) y una ventana de conversación de hasta 100 turnos (`100-turns`). Sin embargo, no hay ninguna documentación publicada en la información disponible que confirme esa interpretación, ni el dataset utilizado, ni el número de tokens de entrenamiento, ni el procedimiento exacto de ajuste. Cualquier afirmación sobre el contenido clínico del ajuste debe tratarse como una hipótesis derivada del nombre, no como un hecho verificado.
 
@@ -12,7 +12,7 @@ Su relevancia actual es limitada por el momento: el repositorio es de acceso res
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | No disponible (etiqueta de HuggingFace: `qwen3_5`; se desconoce si es transformer denso, MoE o híbrido) |
+| Arquitectura | No disponible (etiqueta de Hugging Face: `qwen3_5`; se desconoce si es transformer denso, MoE o híbrido) |
 | Parámetros totales | 27.356.728.560 (27,36 B), dato real de los safetensors |
 | Parámetros activos | No disponible (no se especifica si la arquitectura es MoE) |
 | Longitud de contexto | No disponible |
@@ -21,7 +21,7 @@ Su relevancia actual es limitada por el momento: el repositorio es de acceso res
 | Licencia | Apache 2.0 |
 | Formato de pesos | Safetensors (librería `transformers`) |
 | Modalidades | Imagen + texto como entrada; texto como salida (`image-text-to-text`) |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Fecha de creación | 12 de septiembre de 2026 |
 | Última actualización | 12 de septiembre de 2026 |
 | Descargas / likes | 0 / 0 |
@@ -44,7 +44,7 @@ Respecto al entrenamiento, el nombre del repositorio (`SFT`, `100-turns`) apunta
 - Capacidades multilingües: no disponible (campo de idiomas sin informar).
 - Modo "thinking" o razonamiento extendido: no disponible.
 - Entrada de audio o vídeo: no disponible; la pipeline declarada solo cubre imagen y texto.
-- Compatibilidad con endpoints de HuggingFace: sí, según la etiqueta `endpoints_compatible`.
+- Compatibilidad con endpoints de Hugging Face: sí, según la etiqueta `endpoints_compatible`.
 
 ## Casos de uso
 
@@ -91,7 +91,7 @@ Diferencias estructurales destacables: el modelo analizado es el único de la ta
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y exige aceptar condiciones en HuggingFace antes de descargar los pesos.
+- Acceso restringido: el repositorio es gated y exige aceptar condiciones en Hugging Face antes de descargar los pesos.
 - Ausencia total de documentación: no hay tarjeta de modelo con detalles de dataset, hiperparámetros, evaluación ni limitaciones conocidas.
 - Sin validación de la comunidad: 0 descargas y 0 likes en el momento de redactar esta ficha, lo que impide contrastar el comportamiento real del modelo con terceros.
 - Riesgo de alucinación: cualquier modelo de lenguaje de 27B puede generar información clínica incorrecta con apariencia plausible. En un contexto médico, esto incluye dosis, interacciones farmacológicas y diagnósticos erróneos.
@@ -105,7 +105,7 @@ Diferencias estructurales destacables: el modelo analizado es el único de la ta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hab-swe/Qwen3.6-27B-MedCLI-CMT-EHRDQ-SFT-100-turns
+- Modelo en Hugging Face: https://huggingface.co/hab-swe/Qwen3.6-27B-MedCLI-CMT-EHRDQ-SFT-100-turns
 - Paper asociado: no disponible
 - Repositorio de código: no disponible
 - Demostración o space: no disponible

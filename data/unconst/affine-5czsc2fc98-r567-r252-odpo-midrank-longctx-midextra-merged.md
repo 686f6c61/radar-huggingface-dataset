@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Affine-5czsc2fc98-r567-r252-odpo-midrank-longctx-midextra-merged es un modelo de lenguaje de 35 107 millones de parámetros desarrollado por el usuario `unconst`. Según las etiquetas de HuggingFace, se trata de una arquitectura MoE basada en Qwen3.5 (tag `qwen3_5_moe`), aunque los detalles arquitectónicos concretos no se documentan en la model card. El modelo es el resultado de un entrenamiento de DPO (Direct Preference Optimization) offline sobre pares de preferencia de razonamiento, aplicado sobre un modelo base previo (`unconst/Affine-5czsc2fc98-r252-merged`). El entrenamiento se centró en optimizar el "Reason v3" (teacher-side only) y utilizó filtros de contexto largo (`LongCtx`), con una longitud máxima de secuencia de 16 384 tokens.
+Affine-5czsc2fc98-r567-r252-odpo-midrank-longctx-midextra-merged es un modelo de lenguaje de 35 107 millones de parámetros desarrollado por el usuario `unconst`. Según las etiquetas de Hugging Face, se trata de una arquitectura MoE basada en Qwen3.5 (tag `qwen3_5_moe`), aunque los detalles arquitectónicos concretos no se documentan en la model card. El modelo es el resultado de un entrenamiento de DPO (Direct Preference Optimization) offline sobre pares de preferencia de razonamiento, aplicado sobre un modelo base previo (`unconst/Affine-5czsc2fc98-r252-merged`). El entrenamiento se centró en optimizar el "Reason v3" (teacher-side only) y utilizó filtros de contexto largo (`LongCtx`), con una longitud máxima de secuencia de 16 384 tokens.
 
 Este modelo forma parte de una serie de experimentos iterativos (R567) orientados a mejorar el razonamiento mediante alineación por preferencias. Su relevancia radica en que combina una arquitectura MoE de gran tamaño con un enfoque de DPO offline sobre datos de duelo de razonamiento, lo que lo hace interesante para investigación en alineación y razonamiento avanzado. Sin embargo, al no haberse publicado benchmarks ni detalles de capacidades específicas, su evaluación práctica requiere pruebas adicionales. La licencia Apache 2.0 permite uso comercial y modificación, aunque el modelo se distribuye únicamente en formato safetensors (70,2 GB) y no se han publicado cuantizaciones alternativas.
 
@@ -69,5 +69,5 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- [HuggingFace: unconst/Affine-5czsc2fc98-r567-r252-odpo-midrank-longctx-midextra-merged](https://huggingface.co/unconst/Affine-5czsc2fc98-r567-r252-odpo-midrank-longctx-midextra-merged)
+- [Hugging Face: unconst/Affine-5czsc2fc98-r567-r252-odpo-midrank-longctx-midextra-merged](https://huggingface.co/unconst/Affine-5czsc2fc98-r567-r252-odpo-midrank-longctx-midextra-merged)
 - [Modelo base: unconst/Affine-5czsc2fc98-r252-merged](https://huggingface.co/unconst/Affine-5czsc2fc98-r252-merged)

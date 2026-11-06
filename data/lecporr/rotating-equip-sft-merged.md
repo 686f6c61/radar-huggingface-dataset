@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Modelo de generación de texto en inglés resultante de un fine-tuning por Supervised Fine-Tuning (SFT) sobre el modelo base Qwen3-1.7B de Alibaba, publicado por el usuario lecporr. El nombre del repositorio ("rotating-equip") sugiere una especialización en el dominio de equipos rotativos industriales (bombas, compresores, turbinas), aunque la model card no documenta el dataset de entrenamiento ni confirma explícitamente esta especialización. El entrenamiento se realizó con las librerías Unsloth y TRL de HuggingFace, y los adaptadores se fusionaron con los pesos base para producir un modelo standalone.
+Modelo de generación de texto en inglés resultante de un fine-tuning por Supervised Fine-Tuning (SFT) sobre el modelo base Qwen3-1.7B de Alibaba, publicado por el usuario lecporr. El nombre del repositorio ("rotating-equip") sugiere una especialización en el dominio de equipos rotativos industriales (bombas, compresores, turbinas), aunque la model card no documenta el dataset de entrenamiento ni confirma explícitamente esta especialización. El entrenamiento se realizó con las librerías Unsloth y TRL de Hugging Face, y los adaptadores se fusionaron con los pesos base para producir un modelo standalone.
 
 Con 1.720.574.976 parámetros (~1,7B), es un modelo compacto que cabe en GPUs de consumo medio. La licencia Apache 2.0 permite uso comercial sin restricciones significativas. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, lo que indica que es un modelo reciente y sin adopción comunitaria documentada.
 
@@ -21,7 +21,7 @@ Con 1.720.574.976 parámetros (~1,7B), es un modelo compacto que cabe en GPUs de
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura Qwen3 de Alibaba, un transformer decoder-only con atención multi-cabeza estándar. El fine-tuning se realizó mediante SFT utilizando Unsloth (para acelerar el entrenamiento sobre el modelo base cuantizado a 4 bits) y la biblioteca TRL de HuggingFace. El sufijo "merged" en el nombre indica que los adaptadores LoRA/QLoRA se fusionaron con los pesos del modelo base para producir un checkpoint completo, listo para inferencia sin necesidad de cargar adaptadores por separado.
+El modelo se basa en la arquitectura Qwen3 de Alibaba, un transformer decoder-only con atención multi-cabeza estándar. El fine-tuning se realizó mediante SFT utilizando Unsloth (para acelerar el entrenamiento sobre el modelo base cuantizado a 4 bits) y la biblioteca TRL de Hugging Face. El sufijo "merged" en el nombre indica que los adaptadores LoRA/QLoRA se fusionaron con los pesos del modelo base para producir un checkpoint completo, listo para inferencia sin necesidad de cargar adaptadores por separado.
 
 El modelo base es unsloth/Qwen3-1.7B-unsloth-bnb-4bit, una versión del Qwen3-1.7B cuantizada a 4 bits y optimizada con Unsloth. No se proporcionan datos sobre el número de tokens de entrenamiento, la composición del dataset, ni la aplicación de técnicas adicionales como RLHF o DPO. La model card es extremadamente mínima y no documenta ningún detalle del proceso de fine-tuning más allá de las librerías utilizadas.
 
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - Con ~1,7B parámetros y un tamaño de repo de 3,5 GB (consistente con pesos FP16), el modelo requiere aproximadamente 4 GB de VRAM solo para los pesos, más overhead de activaciones y KV cache.
 - GPU recomendadas: RTX 3060 (12 GB), RTX 4060 Ti (16 GB), RTX 4090, o cualquier GPU con al menos 8 GB de VRAM para inferencia en FP16.
 - En cuantización INT8 o INT4 (no incluida en el repo, pero aplicable mediante herramientas como llama.cpp o GPTQ), cabría en GPUs con 4-6 GB de VRAM, como RTX 3050 o GTX 1660 Super.
-- Opciones de despliegue: vLLM, HuggingFace TGI (etiquetado como compatible), llama.cpp, Ollama, o transformers estándar.
+- Opciones de despliegue: vLLM, Hugging Face TGI (etiquetado como compatible), llama.cpp, Ollama, o transformers estándar.
 - La latencia estimada en una GPU consumer moderna (RTX 4090) sería del orden de 20-50 ms por token generado, aunque no se dispone de mediciones publicadas para este modelo concreto.
 
 ## Comparativa con modelos similares
@@ -72,12 +72,12 @@ El modelo se diferencia del Qwen3-1.7B base únicamente por el fine-tuning SFT, 
 - Sin benchmarks publicados: el rendimiento real en tareas de razonamiento, código o dominio específico es desconocido.
 - La especialización en equipos rotativos es inferida del nombre del repositorio, no confirmada por documentación. Podría tratarse de un fine-tuning sobre datos no relacionados.
 - Riesgo de alucinación: como cualquier modelo de 1,7B fine-tuneado sin evaluación, puede generar información técnica incorrecta o inventada, especialmente en dominios especializados.
-- 0 descargas y 0 likes en HuggingFace: sin adopción comunitaria ni validación externa.
+- 0 descargas y 0 likes en Hugging Face: sin adopción comunitaria ni validación externa.
 - El modelo base fue entrenado con cuantización 4 bits (bnb-4bit), lo que puede haber introducido degradación de calidad respecto al Qwen3-1.7B original en FP16.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/lecporr/rotating-equip-sft-merged
+- Repositorio Hugging Face: https://huggingface.co/lecporr/rotating-equip-sft-merged
 - Modelo base: https://huggingface.co/unsloth/Qwen3-1.7B-unsloth-bnb-4bit
 - Libreria Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL (HuggingFace): https://github.com/huggingface/trl
+- Libreria TRL (Hugging Face): https://github.com/huggingface/trl

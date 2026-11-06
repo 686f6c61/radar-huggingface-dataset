@@ -86,7 +86,7 @@ Medias y desviacion estandar muestral en semillas 42, 43 y 44: LAS 76,70 ± 1,18
 
 | Modelo | Tipo | Parametros | Contexto | POS (Seraji) | NER (PEYMA) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Rishe models | ALBERT + cabezas ONNX | no disponible (~45 MB/pack) | 192 (128 ezafe) | 94,89 F1 | 94,05 F1 | Apache-2.0 / CC BY-SA 4.0 (depparse) | HuggingFace, ONNX |
+| Rishe models | ALBERT + cabezas ONNX | no disponible (~45 MB/pack) | 192 (128 ezafe) | 94,89 F1 | 94,05 F1 | Apache-2.0 / CC BY-SA 4.0 (depparse) | Hugging Face, ONNX |
 | Hazm | Pipeline NLP persa | no disponible | no disponible | 90,66 F1 | N/A | no disponible | Open source |
 | Shekar | Pipeline NLP persa | no disponible | no disponible | 82,50 F1 (Seraji) / 97,39 (PerDT) | 57,14 F1 | no disponible | Open source |
 | spaCy (modelos persas) | Pipeline NLP | variable (`sm`, `trf`) | no disponible | no disponible | no disponible | MIT (spaCy) | Open source |
@@ -106,11 +106,11 @@ Medias y desviacion estandar muestral en semillas 42, 43 y 44: LAS 76,70 ± 1,18
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MahdiAlikhah/rishe-models
+- Hugging Face: https://huggingface.co/MahdiAlikhah/rishe-models
 - Repositorio Rishe (Rust): https://github.com/MahdiAlikhah/rishe
 - Modelo base: https://huggingface.co/HooshvareLab/albert-fa-zwnj-base-v2
 - Dataset PEYMA-ARMAN-Mixed: https://huggingface.co/datasets/AliFartout/PEYMA-ARMAN-Mixed
 - Dataset HomoRich-G2P-Persian: https://huggingface.co/datasets/MahtaFetrat/HomoRich-G2P-Persian
-- Model card del parser: `depparse/MODEL_CARD.md` dentro del repositorio de HuggingFace
+- Model card del parser: `depparse/MODEL_CARD.md` dentro del repositorio de Hugging Face
 - Script de benchmark de precision: `scripts/benchmark_models.py` en el repositorio Rishe
 - Script de benchmark de runtime: `scripts/benchmark_modelpack.py` en el repositorio Rishe

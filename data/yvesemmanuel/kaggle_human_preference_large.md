@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `yvesemmanuel/kaggle_human_preference_large` es un checkpoint publicado en HuggingFace por el usuario yvesemmanuel, etiquetado con los tags `safetensors`, `bert` y `region:us`. Cuenta con 109.484.547 parametros reales (segun el propio archivo de pesos en formato safetensors) y un repositorio de 0,4 GB, lo que es coherente con un transformer encoder de escala BERT-base almacenado en precision de 32 bits.
+El modelo `yvesemmanuel/kaggle_human_preference_large` es un checkpoint publicado en Hugging Face por el usuario yvesemmanuel, etiquetado con los tags `safetensors`, `bert` y `region:us`. Cuenta con 109.484.547 parametros reales (segun el propio archivo de pesos en formato safetensors) y un repositorio de 0,4 GB, lo que es coherente con un transformer encoder de escala BERT-base almacenado en precision de 32 bits.
 
 Por el nombre, el modelo parece orientado a tareas de clasificacion relacionadas con preferencias humanas (del tipo utilizado en anotacion de pares A/B, filtrado de datasets o modelado de recompensa), si bien no se ha publicado ninguna model card, pipeline declarado, licencia ni lista de idiomas que lo confirme. El repositorio acumula 7 descargas y 0 likes, por lo que se trata de un artefacto sin validacion por parte de la comunidad.
 
@@ -20,7 +20,7 @@ Su relevancia actual es limitada y de caracter exploratorio: no hay informacion 
 | Idiomas soportados | No disponible |
 | Licencia | No disponible |
 | Formato de pesos | safetensors |
-| Pipeline declarado en HuggingFace | No disponible |
+| Pipeline declarado en Hugging Face | No disponible |
 | Tamano del repositorio | 0,4 GB |
 | Fecha de creacion | 2026-09-21 |
 | Ultima actualizacion | 2026-09-21 |
@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| yvesemmanuel/kaggle_human_preference_large | 109,5 M | No disponible | No disponible | HuggingFace, 7 descargas | No disponible |
-| bert-base-uncased | 110 M | 512 tokens | Apache 2.0 | HuggingFace, ampliamente utilizado | GLUE publicado |
-| roberta-base | 125 M | 512 tokens | MIT | HuggingFace, ampliamente utilizado | GLUE publicado |
-| distilbert-base-uncased | 66 M | 512 tokens | Apache 2.0 | HuggingFace, ampliamente utilizado | GLUE publicado |
+| yvesemmanuel/kaggle_human_preference_large | 109,5 M | No disponible | No disponible | Hugging Face, 7 descargas | No disponible |
+| bert-base-uncased | 110 M | 512 tokens | Apache 2.0 | Hugging Face, ampliamente utilizado | GLUE publicado |
+| roberta-base | 125 M | 512 tokens | MIT | Hugging Face, ampliamente utilizado | GLUE publicado |
+| distilbert-base-uncased | 66 M | 512 tokens | Apache 2.0 | Hugging Face, ampliamente utilizado | GLUE publicado |
 
 La comparativa se limita a parametros, contexto, licencia y disponibilidad, ya que no existe ningun dato de rendimiento publicado para el modelo analizado. En las tres alternativas citadas, la licencia permisiva y la existencia de model cards completas las hacen opciones mas seguras para produccion que este checkpoint.
 
@@ -93,5 +93,5 @@ La comparativa se limita a parametros, contexto, licencia y disponibilidad, ya q
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yvesemmanuel/kaggle_human_preference_large
+- Hugging Face: https://huggingface.co/yvesemmanuel/kaggle_human_preference_large
 - No se han encontrado enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada; los resultados obtenidos corresponden a entradas de diccionarios de lengua arabe sin relacion con el modelo.

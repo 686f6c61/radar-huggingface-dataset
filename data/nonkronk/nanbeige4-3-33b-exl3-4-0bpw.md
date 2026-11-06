@@ -90,7 +90,7 @@ No disponible. La informacion proporcionada no incluye datos de modelos comparab
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nonkronk/Nanbeige4.3-33B-EXL3-4.0bpw
+- Repositorio Hugging Face: https://huggingface.co/nonkronk/Nanbeige4.3-33B-EXL3-4.0bpw
 - Modelo base: https://huggingface.co/Nanbeige/Nanbeige4.3-33B
 - ExLlamaV3: https://github.com/turboderp-org/exllamav3
 - Script de rendimiento de ExLlamaV3: https://github.com/turboderp-org/exllamav3/blob/master/eval/perf.py

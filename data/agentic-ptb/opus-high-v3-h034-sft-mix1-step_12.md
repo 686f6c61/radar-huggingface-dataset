@@ -89,6 +89,6 @@ No se dispone de datos de rendimiento para establecer una comparativa fiable. El
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agentic-ptb/opus-high-v3.h034.sft-mix1.step_12
+- Modelo en Hugging Face: https://huggingface.co/agentic-ptb/opus-high-v3.h034.sft-mix1.step_12
 - Dataset asociado (run archive): https://huggingface.co/datasets/agentic-ptb/opus-high-v3-data
 - Indice del proyecto AgentPTB: https://huggingface.co/datasets/agentic-ptb/INDEX

@@ -79,5 +79,5 @@ No disponible. El repositorio no proporciona una línea base de capacidad equipa
 
 ## Enlaces
 
-- Página de HuggingFace: https://huggingface.co/mmehta-nikhil/hybrid-checkpoint
+- Página de Hugging Face: https://huggingface.co/mmehta-nikhil/hybrid-checkpoint
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

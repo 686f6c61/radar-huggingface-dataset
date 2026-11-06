@@ -100,7 +100,7 @@ La informacion proporcionada solo permite comparar con el modelo base. No se dis
 - La evaluacion se basa en una unica ejecucion greedy por condicion; la variabilidad entre ejecuciones no esta caracterizada.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/simpledirect/Vinci-Cyber-123B-1.0
+- Repositorio Hugging Face: https://huggingface.co/simpledirect/Vinci-Cyber-123B-1.0
 - Repositorio GGUF: https://huggingface.co/simpledirect/Vinci-Cyber-123B-1.0-GGUF
 - Resultados de tareas GGUF: https://huggingface.co/simpledirect/Vinci-Cyber-123B-1.0-GGUF#gguf-task-results
 - Modelo base Devstral 2 123B Instruct: https://huggingface.co/mistralai/Devstral-2-123B-Instruct-2512

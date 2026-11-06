@@ -30,7 +30,7 @@ El entrenamiento de la versión certificada se realizó mediante el método Topo
 - Clasificación de texto en inglés: el modelo distingue entre categorías temáticas (deportes, negocios, ciencia/tecnología, mundo) con una precisión superior al 90% en las tareas evaluadas.
 - Aprendizaje continuo sin olvido: gracias a las anclas primas, el modelo puede incorporar nuevas tareas sin degradar el rendimiento en las anteriores, con una garantía matemática de olvido nulo.
 - Inferencia eficiente: al ser recurrente y sin atención, el consumo de memoria es constante durante la generación, lo que permite desplegarlo en entornos con recursos limitados.
-- Compatibilidad con transformers: se integra con la librería `transformers` de HuggingFace, lo que facilita su uso en pipelines estándar de clasificación.
+- Compatibilidad con transformers: se integra con la librería `transformers` de Hugging Face, lo que facilita su uso en pipelines estándar de clasificación.
 - Determinismo: el uso de una semilla fija (123) y de anclas fijas garantiza reproducibilidad en los resultados de entrenamiento.
 
 ## Casos de uso
@@ -60,7 +60,7 @@ La certificación TOPO-2026 exige una precisión ≥85% en la tarea C y un olvid
 - VRAM estimada para inferencia: el modelo en BFloat16 ocupa aproximadamente 5,8 GB (2,9B × 2 bytes). Con cuantización a 8 bits, se reduce a ~2,9 GB; a 4 bits, ~1,45 GB. Estas son estimaciones basadas en el tamaño del modelo, no en mediciones oficiales.
 - GPU recomendadas: para una inferencia fluida, se recomienda una GPU con al menos 8 GB de VRAM (por ejemplo, RTX 3070/4060) para la versión sin cuantizar. Con cuantización a 4 bits, una GPU de 4 GB (como RTX 3050) podría ser suficiente.
 - Compatibilidad con consumer GPU: sí, el modelo cabe en GPUs de consumo medio gracias a su tamaño y a la eficiencia de la arquitectura RWKV7.
-- Opciones de despliegue: al ser compatible con `transformers`, puede servirse con vLLM, TGI o directamente con la API de HuggingFace. Para entornos ligeros, se puede convertir a GGUF y usar llama.cpp u Ollama.
+- Opciones de despliegue: al ser compatible con `transformers`, puede servirse con vLLM, TGI o directamente con la API de Hugging Face. Para entornos ligeros, se puede convertir a GGUF y usar llama.cpp u Ollama.
 - Latencia y throughput: no se han publicado mediciones oficiales. Dado que la inferencia es lineal en la longitud de secuencia, se espera una latencia baja incluso con contextos largos, pero los valores concretos dependen del hardware y de la implementación.
 
 ## Comparativa con modelos similares
@@ -86,7 +86,7 @@ La comparativa con BERT es orientativa: el modelo RWKV7 tiene 26 veces más par�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/frankmorales2020/topological-ai-rwkv-2.9b-multirun
+- Modelo en Hugging Face: https://huggingface.co/frankmorales2020/topological-ai-rwkv-2.9b-multirun
 - Modelo base: https://huggingface.co/fla-hub/rwkv7-2.9B-world
 - Paper de referencia (Zenodo): https://zenodo.org/records/20951925
 - Repositorio de Topological AI / AST (GitHub): https://github.com/frank-morales2020/AST/tree/main

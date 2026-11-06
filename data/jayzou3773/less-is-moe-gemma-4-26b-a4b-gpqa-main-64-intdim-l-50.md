@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros totales | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| less-is-moe-gemma-4-26b-a4b-gpqa-main-64-intdim-l-50 | 13,81 B (safetensors, tras poda del 50 %) | no disponible | Apache 2.0 | HuggingFace, requiere plugin ragged de vLLM | MoE podado con Less-is-MoE, solo texto, 0 descargas y 0 likes |
-| google/gemma-4-26B-A4B (base) | no disponible con exactitud en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | HuggingFace | Modelo de origen, sin podar; incluiria tower de vision |
-| jayzou3773/less-is-moe-gpqa-main-calibration-64 | no aplica (repositorio de calibracion) | no aplica | no disponible | HuggingFace | Contiene la seleccion congelada de 64 muestras de GPQA; no incluye tensores de tokens de Gemma |
+| less-is-moe-gemma-4-26b-a4b-gpqa-main-64-intdim-l-50 | 13,81 B (safetensors, tras poda del 50 %) | no disponible | Apache 2.0 | Hugging Face, requiere plugin ragged de vLLM | MoE podado con Less-is-MoE, solo texto, 0 descargas y 0 likes |
+| google/gemma-4-26B-A4B (base) | no disponible con exactitud en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | Hugging Face | Modelo de origen, sin podar; incluiria tower de vision |
+| jayzou3773/less-is-moe-gpqa-main-calibration-64 | no aplica (repositorio de calibracion) | no aplica | no disponible | Hugging Face | Contiene la seleccion congelada de 64 muestras de GPQA; no incluye tensores de tokens de Gemma |
 | Otras alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | No se proporcionan en la informacion disponible datos de modelos comparables de terceros |
 
 No se dispone de cifras de rendimiento del modelo base ni de alternativas en la informacion proporcionada, por lo que la comparativa se limita a parametros, licencia y disponibilidad.
@@ -93,7 +93,7 @@ No se dispone de cifras de rendimiento del modelo base ni de alternativas en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jayzou3773/less-is-moe-gemma-4-26b-a4b-gpqa-main-64-intdim-l-50
+- Modelo en Hugging Face: https://huggingface.co/jayzou3773/less-is-moe-gemma-4-26b-a4b-gpqa-main-64-intdim-l-50
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B
 - Repositorio de calibracion (revision `7134dfef5af4605eae0706c30efa9226f49aed96`): https://huggingface.co/jayzou3773/less-is-moe-gpqa-main-calibration-64
 - Dataset de calibracion GPQA (revision `633f5ee89ab8ad4522a9f850766b73f62147ffdd`): https://huggingface.co/datasets/Idavidrein/gpqa

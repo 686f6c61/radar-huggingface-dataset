@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CollabLLM-Qwen3-4B-SFT-Writing es un adaptador LoRA de ajuste supervisado (SFT) para el modelo Qwen3-4B, publicado por el usuario ZachW en HuggingFace. No se trata de un modelo completo, sino de un artefacto de reproducción independiente entrenado sobre los datos interactivos de tamaño medio del proyecto CollabLLM, una línea de investigación centrada en el entrenamiento de modelos conversacionales capaces de colaborar de forma más efectiva con el usuario en tareas multi-turno.
+CollabLLM-Qwen3-4B-SFT-Writing es un adaptador LoRA de ajuste supervisado (SFT) para el modelo Qwen3-4B, publicado por el usuario ZachW en Hugging Face. No se trata de un modelo completo, sino de un artefacto de reproducción independiente entrenado sobre los datos interactivos de tamaño medio del proyecto CollabLLM, una línea de investigación centrada en el entrenamiento de modelos conversacionales capaces de colaborar de forma más efectiva con el usuario en tareas multi-turno.
 
 El adaptador está especializado en tareas de escritura y conversación colaborativa, y se distribuye con licencia Apache 2.0. El repositorio ocupa 0,3 GB, lo que corresponde únicamente a los pesos del adaptador (rango 32, alpha 16) y al tokenizador; los pesos base de Qwen3-4B deben descargarse por separado. El autor declara explícitamente que no es un checkpoint oficial del equipo de CollabLLM y que no reclama ningún resultado de benchmark.
 
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ZachW/CollabLLM-Qwen3-4B-SFT-Writing
+- Modelo en Hugging Face: https://huggingface.co/ZachW/CollabLLM-Qwen3-4B-SFT-Writing
 - Modelo base Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
 - Paper de CollabLLM: https://arxiv.org/abs/2502.00640
 - Repositorio original de CollabLLM: https://github.com/Wuyxin/collabllm/tree/d573e4949abdc301cb2b630525c593cc432e94b8

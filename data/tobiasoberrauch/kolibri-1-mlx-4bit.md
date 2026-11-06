@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- HuggingFace (esta variante): https://huggingface.co/tobiasoberrauch/Kolibri-1-mlx-4bit
+- Hugging Face (esta variante): https://huggingface.co/tobiasoberrauch/Kolibri-1-mlx-4bit
 - Modelo base: https://huggingface.co/Aleph-Alpha/Kolibri-1
 - Variante alternativa en MLX 4 bits: https://huggingface.co/nativ-community/Kolibri-1-MLX-4bit
 - Perfil de GitHub del autor: https://github.com/tobiasoberrauch

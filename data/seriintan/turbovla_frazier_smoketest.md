@@ -65,7 +65,7 @@ No se dispone de datos comparativos directos con otros modelos en la informació
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/seriintan/turbovla_frazier_smoketest
+- Repositorio Hugging Face: https://huggingface.co/seriintan/turbovla_frazier_smoketest
 - Paper TurboVLA: https://arxiv.org/html/2607.27205
 - LeRobot: https://github.com/huggingface/lerobot
 - Dataset: https://huggingface.co/datasets/seriintan/frazier_dataset_20260901_151518

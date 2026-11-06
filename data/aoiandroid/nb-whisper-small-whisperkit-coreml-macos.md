@@ -84,14 +84,14 @@ Nota: no se dispone de datos de parámetros ni de benchmarks en la información 
 - Cobertura lingüística restringida a noruego (`no`, `nb`); no es adecuado para otros idiomas.
 - Al ser un sistema ASR, existe riesgo de alucinación en pasajes de audio con ruido, silencios largos o habla solapada, un comportamiento conocido en la familia Whisper.
 - No se documentan métricas de precisión (WER, etc.) para esta conversión Core ML, por lo que el rendimiento real puede diferir del modelo base en PyTorch.
-- Fecha de creación y actualización registradas en 2026 (según los metadatos de HuggingFace), un dato que puede resultar confuso y que conviene contrastar.
+- Fecha de creación y actualización registradas en 2026 (según los metadatos de Hugging Face), un dato que puede resultar confuso y que conviene contrastar.
 - Licencia Apache 2.0: permite uso comercial y modificación, pero exige mantener los avisos de copyright y atribución correspondientes a NbAiLab y al conversor original.
 - El formato Core ML limita su uso a entornos Apple; no es portable a infraestructuras con GPU NVIDIA sin reconvertir los pesos.
 - No apto para tareas de razonamiento, generación de código, tool calling ni agentes; su única función es la transcripción de voz.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/aoiandroid/nb-whisper-small-whisperkit-coreml-macos
+- Repositorio en Hugging Face: https://huggingface.co/aoiandroid/nb-whisper-small-whisperkit-coreml-macos
 - Modelo base (NbAiLab): https://huggingface.co/NbAiLab/nb-whisper-small
 - Conversión Core ML de origen (Barrymanalow): https://huggingface.co/Barrymanalow/nb-whisper-coreml
 - Repositorio oficial de OpenAI Whisper: https://github.com/openai/whisper

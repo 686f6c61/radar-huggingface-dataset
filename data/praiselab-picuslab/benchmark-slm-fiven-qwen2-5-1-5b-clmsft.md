@@ -4,7 +4,7 @@
 
 `praiselab-picuslab/benchmark-slm-fiven-qwen2.5-1.5b-clmsft` es un adaptador LoRA publicado con la librería PEFT sobre el modelo base Qwen/Qwen2.5-1.5B. No se trata, por tanto, de un modelo entrenado desde cero, sino de un conjunto de pesos delta (safetensors) que deben cargarse junto con el checkpoint base para poder ejecutar inferencia. El repositorio está etiquetado como `benchmark-slm`, con los tags `or2`, `dataset-fiven` y `strategy-clmsft`, lo que apunta a un artefacto generado dentro de una campana de evaluación comparativa de modelos pequenos (SLM) y no a un modelo orientado a producto.
 
-El único idioma declarado es el italiano (`it`) y la licencia no está especificada en la información disponible. El acceso es restringido (gated): es necesario aceptar condiciones en HuggingFace antes de poder descargar los pesos. El repositorio, creado y actualizado el 23 de octubre de 2026 con escasos segundos de diferencia, registra 0 descargas y 0 likes, y su tamaño es de 0.0 GB, lo que sugiere un artefacto recién subido y sin validación por parte de la comunidad.
+El único idioma declarado es el italiano (`it`) y la licencia no está especificada en la información disponible. El acceso es restringido (gated): es necesario aceptar condiciones en Hugging Face antes de poder descargar los pesos. El repositorio, creado y actualizado el 23 de octubre de 2026 con escasos segundos de diferencia, registra 0 descargas y 0 likes, y su tamaño es de 0.0 GB, lo que sugiere un artefacto recién subido y sin validación por parte de la comunidad.
 
 Su relevancia práctica es limitada y muy acotada: sirve como referencia para reproducir o auditar un experimento de fine-tuning con LoRA sobre Qwen2.5-1.5B en italiano, pero no hay evidencia publicada de calidad, evaluación o soporte que lo haga apto para producción. Cualquier uso realista debería partir del modelo base Qwen2.5-1.5B y tratar este adaptador como un objeto de estudio.
 
@@ -20,7 +20,7 @@ Su relevancia práctica es limitada y muy acotada: sirve como referencia para re
 | Idiomas soportados | italiano (`it`) declarado en la model card; el modelo base Qwen2.5 cubre 29+ idiomas |
 | Licencia | no disponible; el modelo base Qwen2.5-1.5B se distribuye bajo Apache-2.0 |
 | Formato de pesos | safetensors (adaptador LoRA en formato PEFT) |
-| Acceso | restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Repositorio | 0.0 GB, 0 descargas, 0 likes |
 
 ## Arquitectura y entrenamiento
@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento comparado (MMLU, HumanEval, GSM8K) para es
 ## Limitaciones y advertencias
 
 - Licencia no especificada: no hay base legal explícita para uso comercial; debe consultarse al autor antes de cualquier despliegue productivo.
-- Acceso restringido (gated): la descarga requiere aceptar condiciones en HuggingFace, lo que impide su uso automatizado en pipelines sin gestión previa de credenciales.
+- Acceso restringido (gated): la descarga requiere aceptar condiciones en Hugging Face, lo que impide su uso automatizado en pipelines sin gestión previa de credenciales.
 - Ausencia total de validación: 0 descargas, 0 likes y un tamaño de repositorio de 0.0 GB, lo que puede indicar que los pesos del adaptador no están efectivamente subidos o que el artefacto está incompleto.
 - Sin evaluación publicada: no hay métricas que permitan estimar la calidad del ajuste ni compararlo con el modelo base.
 - Idioma limitado: solo se declara italiano; es esperable cierto grado de olvido catastrófico en el resto de idiomas del modelo base tras el ajuste.

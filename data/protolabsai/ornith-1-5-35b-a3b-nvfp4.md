@@ -89,7 +89,7 @@ La comparación directa entre esta build y la de ModelOpt muestra diferencias de
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta build: https://huggingface.co/protoLabsAI/Ornith-1.5-35B-A3B-NVFP4
+- Repositorio Hugging Face de esta build: https://huggingface.co/protoLabsAI/Ornith-1.5-35B-A3B-NVFP4
 - Modelo base (ornith-ai): https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Cuantización oficial upstream (ModelOpt): https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-NVFP4
 - Build anterior de protoLabsAI (Ornith-1.0): https://huggingface.co/protoLabsAI/Ornith-1.0-35B-NVFP4

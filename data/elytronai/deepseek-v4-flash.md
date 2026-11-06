@@ -4,7 +4,7 @@
 
 ElytronAI/DeepSeek-v4-Flash es una reempaquetado del modelo DeepSeek-v4-Flash-Vision-Exp publicado por el usuario ElytronAI dentro del ecosistema de inferencia "pulsar". No es un modelo entrenado desde cero: se trata de una reconstruccion a precision de origen de los pesos de deepseek-ai/DeepSeek-V4-Flash-Vision-Exp (revision 6821d6ad3681a4b137b066b76094fa82ebd0a380), con los expertos enrutados reempaquetados en el layout cutlass_mxfp4 y las proyecciones densas y de atencion en mxfp8_lt. El objetivo es ofrecer un artefacto cargable por el motor pulsar con los pesos de expertos byte a byte identicos a los del checkpoint original.
 
-El modelo base pertenece a la familia DeepSeek V4 Flash, una arquitectura de mezcla de expertos (MoE) orientada a codigo, uso de herramientas y flujos agenticos, con atencion hibrida CSA+HCA, hiper-conexiones restringidas por variedad (manifold-constrained hyper-connections) y hasta tres modos de razonamiento (Non-think, Think High, Think Max) segun la documentacion de recetas de vLLM. El pipeline declarado en HuggingFace es image-text-to-text, lo que confirma que el checkpoint subyacente incorpora capacidades de vision.
+El modelo base pertenece a la familia DeepSeek V4 Flash, una arquitectura de mezcla de expertos (MoE) orientada a codigo, uso de herramientas y flujos agenticos, con atencion hibrida CSA+HCA, hiper-conexiones restringidas por variedad (manifold-constrained hyper-connections) y hasta tres modos de razonamiento (Non-think, Think High, Think Max) segun la documentacion de recetas de vLLM. El pipeline declarado en Hugging Face es image-text-to-text, lo que confirma que el checkpoint subyacente incorpora capacidades de vision.
 
 Su relevancia es fundamentalmente de infraestructura: el artefacto ocupa 167,979 GB y esta pensado para montajes de doble unidad Nvidia GB10 (dos equipos Spark), ya que no cabe en un unico GB10. La variante de 2 bits de la misma familia (DeepSeek-v4-Flash-IQ2, ~92 GB) es la que el autor recomienda para un unico Spark. El modelo solo puede ejecutarse con la libreria pulsar; los cargadores estandar no pueden interpretar los blobs U8 ni los layouts fusionados.
 
@@ -79,14 +79,14 @@ La comparativa directa de rendimiento no es posible porque no se han publicado b
 - Idiomas soportados: no disponible. No se puede confirmar cobertura multilingue ni calidad por idioma.
 - Contexto: el valor de 1M tokens corresponde a DeepSeek-V4-Flash-0731 y no esta confirmado para este checkpoint (Vision-Exp). Debe validarse por separado antes de disenar aplicaciones de contexto largo.
 - Parametros: la cifra de 284B totales y 13B activos procede de una ficha de LM Studio referida a la version 0731, no a este artefacto. No debe tratarse como especificacion verificada.
-- Licencia MIT declarada en HuggingFace, lo que en principio permite uso comercial, pero el artefacto solo es utilizable con pulsar; conviene revisar los terminos del motor antes de un despliegue en produccion.
+- Licencia MIT declarada en Hugging Face, lo que en principio permite uso comercial, pero el artefacto solo es utilizable con pulsar; conviene revisar los terminos del motor antes de un despliegue en produccion.
 - Huella de memoria: 167,979 GB de pesos obligan a hardware poco habitual (dos GB10) y descartan maquinas de un solo acelerador de gama consumer.
-- El repositorio figura con 0.0 GB de tamano, 0 descargas y 0 likes en HuggingFace, lo que contrasta con los 167,979 GB descritos en la model card. Es un indicio de que los ficheros LFS pueden no estar subidos o estar en acceso restringido; conviene verificar la disponibilidad real de los 48 shards antes de planificar un despliegue.
+- El repositorio figura con 0.0 GB de tamano, 0 descargas y 0 likes en Hugging Face, lo que contrasta con los 167,979 GB descritos en la model card. Es un indicio de que los ficheros LFS pueden no estar subidos o estar en acceso restringido; conviene verificar la disponibilidad real de los 48 shards antes de planificar un despliegue.
 - Arquitectura multimodal: al declararse image-text-to-text, las limitaciones de vision (resolucion, sesgos visuales) no estan documentadas.
 
 ## Enlaces
 
-- HuggingFace del artefacto: https://huggingface.co/ElytronAI/DeepSeek-v4-Flash
+- Hugging Face del artefacto: https://huggingface.co/ElytronAI/DeepSeek-v4-Flash
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp
 - DeepSeek-V4-Flash (oficial): https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash
 - DeepSeek-V4-Flash-0731 (oficial): https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731

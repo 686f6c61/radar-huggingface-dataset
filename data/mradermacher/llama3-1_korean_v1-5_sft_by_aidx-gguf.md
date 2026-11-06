@@ -25,7 +25,7 @@ No se dispone de informacion publicada sobre el proceso de entrenamiento del mod
 
 La arquitectura subyacente es la de Llama 3.1 8B: un transformer decoder-only con atencion por grupos (GQA), normalizacion RMSNorm y activacion SwiGLU. El modelo ha sido sometido a un ajuste fino supervisado (SFT) por parte de SEOKDONG sobre el dataset `AIDX-ktds/ko_leaderboard`, orientado a tareas evaluadas en el ranking de liderazgo coreano. No se especifica en la informacion disponible el numero de tokens de entrenamiento, la composicion detallada del dataset ni si se aplicaron tecnicas de alineacion adicionales como RLHF o DPO.
 
-Las cuantizaciones han sido generadas por mradermacher mediante conversion desde el formato HuggingFace (`convert_type: hf`) y cuantizacion estatica (`quantize_version: 2`, `output_tensor_quantised: 1`). El autor indica que no se han producido cuantizaciones ponderadas/imatrix para este modelo en el momento de la publicacion, por lo que solo estan disponibles las estaticas. No se documentan innovaciones tecnicas adicionales (decodificacion especulativa, atencion lineal, etc.) mas alla de las propias de Llama 3.1.
+Las cuantizaciones han sido generadas por mradermacher mediante conversion desde el formato Hugging Face (`convert_type: hf`) y cuantizacion estatica (`quantize_version: 2`, `output_tensor_quantised: 1`). El autor indica que no se han producido cuantizaciones ponderadas/imatrix para este modelo en el momento de la publicacion, por lo que solo estan disponibles las estaticas. No se documentan innovaciones tecnicas adicionales (decodificacion especulativa, atencion lineal, etc.) mas alla de las propias de Llama 3.1.
 
 ## Capacidades
 

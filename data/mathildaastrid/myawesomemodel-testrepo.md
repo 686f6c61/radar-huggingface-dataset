@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio publicado en HuggingFace por el usuario MathildaAstrid, catalogado con los tags `transformers`, `pytorch`, `bert`, `feature-extraction`, licencia `mit` y `endpoints_compatible`. El repositorio registra 0 descargas, 0 "likes" y un tamano de 0.0 GB, y fue creado y actualizado el 5 de octubre de 2026, lo que apunta a un repositorio de prueba o marcador de posicion mas que a un modelo distribuible con pesos reales.
+MyAwesomeModel-TestRepo es un repositorio publicado en Hugging Face por el usuario MathildaAstrid, catalogado con los tags `transformers`, `pytorch`, `bert`, `feature-extraction`, licencia `mit` y `endpoints_compatible`. El repositorio registra 0 descargas, 0 "likes" y un tamano de 0.0 GB, y fue creado y actualizado el 5 de octubre de 2026, lo que apunta a un repositorio de prueba o marcador de posicion mas que a un modelo distribuible con pesos reales.
 
 Existe una contradiccion relevante entre los metadatos y la model card. Los tags y el `pipeline` declarado (`feature-extraction` con etiqueta `bert`) describen un modelo tipo encoder BERT para extraccion de caracteristicas, mientras que el texto de la model card describe un hipotetico LLM de razonamiento de gran escala, con modo de pensamiento, function calling y mejoras reportadas en AIME 2025 (de 70 % a 87,5 % de acierto), ademas de un aumento del consumo medio de tokens por pregunta de 12K a 23K. No se proporcionan parametros, contexto, tokenizador, composicion de datos ni formato de pesos.
 
@@ -23,7 +23,7 @@ Por todo ello, esta ficha refleja principalmente lo declarado por el autor y mar
 
 ## Arquitectura y entrenamiento
 
-No se detalla la arquitectura en la informacion disponible. Los tags de HuggingFace apuntan a `bert` como familia y a `feature-extraction` como tarea, lo que sugeriria un transformer encoder bidireccional para generar representaciones, pero la model card describe capacidades propias de un modelo generativo de razonamiento (modo de pensamiento, function calling, plantillas de prompts para busqueda web y subida de ficheros). Ambas descripciones son incompatibles entre si y no hay documentacion tecnica que las concilie.
+No se detalla la arquitectura en la informacion disponible. Los tags de Hugging Face apuntan a `bert` como familia y a `feature-extraction` como tarea, lo que sugeriria un transformer encoder bidireccional para generar representaciones, pero la model card describe capacidades propias de un modelo generativo de razonamiento (modo de pensamiento, function calling, plantillas de prompts para busqueda web y subida de ficheros). Ambas descripciones son incompatibles entre si y no hay documentacion tecnica que las concilie.
 
 Respecto al entrenamiento, la model card menciona de forma generica "mayor uso de recursos computacionales" y "mecanismos de optimizacion algoritmica durante el post-entrenamiento" para aumentar la profundidad de razonamiento, pero no especifica numero de tokens, composicion del dataset ni si se emplearon tecnicas como RLHF, DPO o razonamiento por cadenas largas. Tampoco se publica informacion sobre decodificacion especulativa, atencion lineal u otras innovaciones tecnicas. Todo ello queda como no disponible.
 
@@ -82,7 +82,7 @@ Ademas, la model card cita de forma aislada una mejora en AIME 2025 del 70 % al 
 - VRAM estimada para inferencia: no disponible (no se conocen parametros ni cuantizaciones).
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible.
-- Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI): no disponible; el tag `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints, pero no hay pesos publicados.
+- Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI): no disponible; el tag `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints, pero no hay pesos publicados.
 - Latencia y throughput estimados: no disponible.
 - Nota: el repositorio ocupa 0.0 GB, por lo que no hay artefactos de inferencia descargables en el momento de redactar esta ficha.
 
@@ -104,5 +104,5 @@ No disponible. La model card referencia variantes anonimizadas ("Model1", "Model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MathildaAstrid/MyAwesomeModel-TestRepo
+- Hugging Face: https://huggingface.co/MathildaAstrid/MyAwesomeModel-TestRepo
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

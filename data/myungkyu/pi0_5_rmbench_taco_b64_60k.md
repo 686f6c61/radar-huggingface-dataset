@@ -62,8 +62,8 @@ En la información proporcionada no se incluyen resultados ni especificaciones d
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `Myungkyu/pi0_5_rmbench_taco_b64_60k` | 4.143.404.816 | no disponible | no disponible | HuggingFace |
-| `lerobot/pi05_base` (modelo base) | no disponible | no disponible | no disponible | HuggingFace |
+| `Myungkyu/pi0_5_rmbench_taco_b64_60k` | 4.143.404.816 | no disponible | no disponible | Hugging Face |
+| `lerobot/pi05_base` (modelo base) | no disponible | no disponible | no disponible | Hugging Face |
 
 Otros modelos VLA como OpenVLA o X-VLA no se pueden comparar al no existir datos públicos en la model card.
 
@@ -78,7 +78,7 @@ Otros modelos VLA como OpenVLA o X-VLA no se pueden comparar al no existir datos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Myungkyu/pi0_5_rmbench_taco_b64_60k
-- Dataset en HuggingFace: https://huggingface.co/datasets/Myungkyu/RMBench-taco-gemini
+- Modelo en Hugging Face: https://huggingface.co/Myungkyu/pi0_5_rmbench_taco_b64_60k
+- Dataset en Hugging Face: https://huggingface.co/datasets/Myungkyu/RMBench-taco-gemini
 - Repositorio RMBench: https://github.com/RoboTwin-Platform/RMBench
 - Repositorio del autor (myRMBench): https://github.com/myungkyuKoo/myRMBench

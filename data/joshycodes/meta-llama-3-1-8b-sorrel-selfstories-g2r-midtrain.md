@@ -2,7 +2,7 @@
 
 ## Resumen
 
-meta-llama-3.1-8b-sorrel-selfstories-g2r-midtrain es un checkpoint de investigacion derivado de Llama 3.1 8B, publicado por el usuario joshycodes en HuggingFace. No se trata de un modelo instruct ni de un asistente conversacional: es una etapa intermedia de continued pretraining (midtrain) sobre el dataset joshycodes/sorrel-corpus, en la configuracion sorrel-selfstories-g1-clean-replay9. Forma parte de un proyecto de "entrenamiento de caracter enmarcado en florecimiento" (flourishing-framed character training), descrito en la model card como un artefacto privado de investigacion vinculado a una pitch de Anthropic Fellows.
+meta-llama-3.1-8b-sorrel-selfstories-g2r-midtrain es un checkpoint de investigacion derivado de Llama 3.1 8B, publicado por el usuario joshycodes en Hugging Face. No se trata de un modelo instruct ni de un asistente conversacional: es una etapa intermedia de continued pretraining (midtrain) sobre el dataset joshycodes/sorrel-corpus, en la configuracion sorrel-selfstories-g1-clean-replay9. Forma parte de un proyecto de "entrenamiento de caracter enmarcado en florecimiento" (flourishing-framed character training), descrito en la model card como un artefacto privado de investigacion vinculado a una pitch de Anthropic Fellows.
 
 Tecnicamente es un transformer decoder-only de 8.030.261.248 parametros (8,03 mil millones), sin componentes MoE, por lo que todos los parametros estan activos en cada token. El entrenamiento se ejecuto en 1 GPU NVIDIA H200 (RunPod) y consistio en una unica epoca sobre 14.708.736 tokens, con seq_len de 4096, learning rate 1e-5, micro-batch 4 y acumulacion de gradiente 16. La perdida paso de 1,5565 a 1,5235.
 
@@ -74,7 +74,7 @@ No hay datos de rendimiento de este checkpoint, por lo que la comparacion se lim
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| meta-llama-3.1-8b-sorrel-selfstories-g2r-midtrain | 8,03 mil millones | no disponible (midtrain con seq_len 4096) | internal-research (no redistribuir, sin uso comercial) | pesos safetensors en HuggingFace, 0 descargas |
+| meta-llama-3.1-8b-sorrel-selfstories-g2r-midtrain | 8,03 mil millones | no disponible (midtrain con seq_len 4096) | internal-research (no redistribuir, sin uso comercial) | pesos safetensors en Hugging Face, 0 descargas |
 | Llama 3.1 8B (modelo base de la familia) | 8,03 mil millones | 128 000 tokens segun Meta | Llama 3.1 Community License | ampliamente disponible, con ecosistema de cuantizaciones |
 | Mistral 7B | 7,3 mil millones | 32 000 tokens segun Mistral | Apache 2.0 | ampliamente disponible |
 | Qwen2.5 7B | 7,61 mil millones | 128 000 tokens segun Alibaba | Apache 2.0 | ampliamente disponible |
@@ -96,7 +96,7 @@ La diferencia clave no es de rendimiento sino de proposito y licencia: los model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/meta-llama-3.1-8b-sorrel-selfstories-g2r-midtrain
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/meta-llama-3.1-8b-sorrel-selfstories-g2r-midtrain
 - Modelo base: https://huggingface.co/joshycodes/meta-llama-3.1-8b-sorrel-atomic-f-300m-midtrain
 - Dataset sorrel-corpus: https://huggingface.co/datasets/joshycodes/sorrel-corpus
 - La busqueda web no devolvio resultados relevantes: todos los enlaces recuperados corresponden a Haslachmühle (Die Zieglerschen, Alemania) y no guardan relacion con el modelo. No se han encontrado papers, blogs, repositorios de codigo ni demos publicas asociadas a este checkpoint mas alla de los enlaces anteriores.

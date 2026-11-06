@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| wliu62/Llama-3-8B-Instruct-SpinQuant-W4A4KV4 | 8B | W4A4KV4 (fake-quantized nativo) | no disponible | llama3 (pesos) + CC BY-NC 4.0 (codigo cuantizador) | Repositorio HuggingFace; requiere runtime nativo |
+| wliu62/Llama-3-8B-Instruct-SpinQuant-W4A4KV4 | 8B | W4A4KV4 (fake-quantized nativo) | no disponible | llama3 (pesos) + CC BY-NC 4.0 (codigo cuantizador) | Repositorio Hugging Face; requiere runtime nativo |
 | meta-llama/Meta-Llama-3-8B-Instruct | 8B | BF16 | 8.192 tokens | llama3 | Modelo base estandar |
 | Variantes AWQ / GPTQ W4A16 de Llama 3 8B | 8B | W4A16 (pesos 4 bits, activaciones 16 bits) | Segun modelo base | Habitualmente llama3 | Compatibles con vLLM, TGI, llama.cpp |
 
@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks comparativos en la informacion proporcionad
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/wliu62/Llama-3-8B-Instruct-SpinQuant-W4A4KV4
+- Repositorio Hugging Face: https://huggingface.co/wliu62/Llama-3-8B-Instruct-SpinQuant-W4A4KV4
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
 - Proyecto Safety Repair of Quantized Agent: https://github.com/Will65536/safety-repair-of-quantized-agent
 - Repositorio upstream de SpinQuant: https://github.com/facebookresearch/SpinQuant (commit `8f47aa3f00e8662caf1a484153920a07e5281c3a`)

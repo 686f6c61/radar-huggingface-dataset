@@ -69,7 +69,7 @@ No se dispone de informacion suficiente para realizar una comparativa con otros 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/trinhtrantran122/gated-dual-cafebert-vianli-sota
+- Hugging Face: https://huggingface.co/trinhtrantran122/gated-dual-cafebert-vianli-sota
 - Perfil del autor: https://huggingface.co/trinhtrantran122/models
 - Modelo CafeBERT (uitnlp): https://huggingface.co/uitnlp/CafeBERT
 - Paper de CafeBERT (arXiv:2403.15882): https://arxiv.org/pdf/2403.15882

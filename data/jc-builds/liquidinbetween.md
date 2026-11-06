@@ -71,7 +71,7 @@ El autor advierte que el PSNR favorece los cross-fades borrosos y subestima los 
 
 | Modelo | Parámetros | Contexto/entrada | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LiquidInbetween | ~2,3 M | 512 × 512, timestep arbitrario | IFNet con timestep, una pasada | MIT | HuggingFace (Core ML + safetensors) |
+| LiquidInbetween | ~2,3 M | 512 × 512, timestep arbitrario | IFNet con timestep, una pasada | MIT | Hugging Face (Core ML + safetensors) |
 | RIFE (IFNet original) | ~2,3 M (similar) | Resolución variable | Solo punto medio exacto, recursión para otros t | MIT | Código y pesos públicos (hzwer) |
 | Cross-fade simple | 0 | Cualquiera | Mezcla lineal de píxeles | no aplica | Implementación trivial |
 
@@ -91,7 +91,7 @@ No se dispone de datos de otros modelos comparables de interpolación de fotos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jc-builds/LiquidInbetween
+- Hugging Face: https://huggingface.co/jc-builds/LiquidInbetween
 - Sitio del autor: https://haploapp.com
 - Paper de RIFE (Huang et al., ECCV 2022): no disponible en la información proporcionada
 - Repositorio de código de RIFE: no disponible en la información proporcionada

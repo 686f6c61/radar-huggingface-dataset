@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`titoddddd/SentimenAnalisisAppLoket.com` es un repositorio publicado en HuggingFace por el usuario `titoddddd` cuyo nombre sugiere una aplicación de análisis de sentimiento orientada al portal de empleo Loket.com. El repositorio se creó el 2 de noviembre de 2026 y, en el momento de redactar esta ficha, no acumula descargas ni interacciones, lo que indica que se trata de un artefacto recién publicado y sin validación por parte de la comunidad.
+`titoddddd/SentimenAnalisisAppLoket.com` es un repositorio publicado en Hugging Face por el usuario `titoddddd` cuyo nombre sugiere una aplicación de análisis de sentimiento orientada al portal de empleo Loket.com. El repositorio se creó el 2 de noviembre de 2026 y, en el momento de redactar esta ficha, no acumula descargas ni interacciones, lo que indica que se trata de un artefacto recién publicado y sin validación por parte de la comunidad.
 
-La model card asociada es prácticamente vacía: únicamente declara la licencia MIT y no incluye información sobre arquitectura, tamaño, datos de entrenamiento, idiomas ni uso previsto. Tampoco se especifica un pipeline en los metadatos de HuggingFace, por lo que no es posible confirmar si el repositorio contiene pesos de un modelo, un adaptador, un conjunto de artefactos auxiliares o simplemente código de aplicación.
+La model card asociada es prácticamente vacía: únicamente declara la licencia MIT y no incluye información sobre arquitectura, tamaño, datos de entrenamiento, idiomas ni uso previsto. Tampoco se especifica un pipeline en los metadatos de Hugging Face, por lo que no es posible confirmar si el repositorio contiene pesos de un modelo, un adaptador, un conjunto de artefactos auxiliares o simplemente código de aplicación.
 
 Dada la ausencia de documentación técnica y de métricas publicadas, esta ficha se limita a reflejar lo que consta en los metadatos y a señalar explícitamente los datos no disponibles. Cualquier evaluación de rendimiento, requisitos de hardware o comparativa con otros modelos queda fuera del alcance de la información proporcionada.
 
@@ -75,5 +75,5 @@ No disponible. La ausencia de especificaciones técnicas impide identificar mode
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/titoddddd/SentimenAnalisisAppLoket.com
+- Repositorio en Hugging Face: https://huggingface.co/titoddddd/SentimenAnalisisAppLoket.com
 - No se han encontrado papers, blogs, repositorios de código ni demos adicionales en la información proporcionada.

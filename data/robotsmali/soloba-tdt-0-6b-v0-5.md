@@ -79,7 +79,7 @@ No se dispone de información sobre otros modelos ASR específicos para bambara 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RobotsMali/soloba-tdt-0.6b-v0.5
+- Modelo en Hugging Face: https://huggingface.co/RobotsMali/soloba-tdt-0.6b-v0.5
 - Dataset African Next Voices: https://huggingface.co/datasets/RobotsMali/afvoices
 - Dataset Nyana Eval: https://huggingface.co/datasets/RobotsMali/nyana-eval
 - Modelo base: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v2

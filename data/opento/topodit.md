@@ -93,7 +93,7 @@ No se han encontrado otros modelos generativos de optimizacion topologica con li
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OpenTO/TopoDiT
+- Hugging Face: https://huggingface.co/OpenTO/TopoDiT
 - Autoencoder NFAE: https://huggingface.co/OpenTO/NFAE
 - Paper de Optimize Any Topology (NeurIPS 2025): https://arxiv.org/abs/2510.23667
 - Repositorio OptimizeAnyTopology2 (mencionado en la model card, sin URL publica en la informacion disponible)

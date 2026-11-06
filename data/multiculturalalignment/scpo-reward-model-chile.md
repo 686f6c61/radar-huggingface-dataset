@@ -78,8 +78,8 @@ La model card indica explícitamente que `validation.json` solo comprueba la car
 
 | Modelo | Parámetros | Contexto | Función | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MulticulturalAlignment/scpo-reward-model-chile | 184.422.913 | 512 tokens | Reward model escalar, preferencias de Chile | MIT | HuggingFace, 0 descargas |
-| OpenAssistant/reward-model-deberta-v3-base | no disponible en la información proporcionada | no disponible en la información proporcionada | Reward model escalar global (modelo base) | MIT según la model card | HuggingFace |
+| MulticulturalAlignment/scpo-reward-model-chile | 184.422.913 | 512 tokens | Reward model escalar, preferencias de Chile | MIT | Hugging Face, 0 descargas |
+| OpenAssistant/reward-model-deberta-v3-base | no disponible en la información proporcionada | no disponible en la información proporcionada | Reward model escalar global (modelo base) | MIT según la model card | Hugging Face |
 | Otras variantes SCPO por país | no disponible | no disponible | Reward model escalar por subgrupo nacional | no disponible | no disponible en la información proporcionada |
 
 Los resultados registrados en la model card indican una mejora de precisión de 54,5455 % a 60,6061 % respecto al modelo global de partida en el split de test utilizado, aunque la propia model card matiza que estos números no son las medias de tres ejecuciones del artículo y provienen de una sesión de evaluación sin reinicio de estado. No se dispone de comparaciones verificadas con otros reward models de uso común.
@@ -100,7 +100,7 @@ Los resultados registrados en la model card indican una mejora de precisión de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MulticulturalAlignment/scpo-reward-model-chile
+- Hugging Face: https://huggingface.co/MulticulturalAlignment/scpo-reward-model-chile
 - Paper: https://arxiv.org/abs/2606.18606
 - Código: https://github.com/minsik-ai/Steerable-Cultural-Preference
 - Modelo base: https://huggingface.co/OpenAssistant/reward-model-deberta-v3-base

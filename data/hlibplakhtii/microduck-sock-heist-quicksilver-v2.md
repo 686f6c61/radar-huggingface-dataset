@@ -69,9 +69,9 @@ Los resultados proceden de la evaluación completa de la Arena reportada por el 
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| microduck-sock-heist-quicksilver-v2 (HlibPlakhtii) | no disponible (~6M según nombre del base) | no aplica | 4,886 s, 5/5 finalizaciones | no disponible | HuggingFace, ONNX |
-| jrubiosainz/microduck-sock-heist-6m-fce-v4x-c621636e | ~6M (según nombre) | no aplica | 4,887 s (base directo) | no disponible | HuggingFace |
-| rumezhak/microduck-sock-heist-composite-v4 | no disponible | no aplica | no disponible | no disponible | HuggingFace |
+| microduck-sock-heist-quicksilver-v2 (HlibPlakhtii) | no disponible (~6M según nombre del base) | no aplica | 4,886 s, 5/5 finalizaciones | no disponible | Hugging Face, ONNX |
+| jrubiosainz/microduck-sock-heist-6m-fce-v4x-c621636e | ~6M (según nombre) | no aplica | 4,887 s (base directo) | no disponible | Hugging Face |
+| rumezhak/microduck-sock-heist-composite-v4 | no disponible | no aplica | no disponible | no disponible | Hugging Face |
 
 La comparativa se limita al linaje directo del modelo; no se dispone de datos de rendimiento de otras políticas comparables en la información proporcionada.
 
@@ -88,7 +88,7 @@ La comparativa se limita al linaje directo del modelo; no se dispone de datos de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HlibPlakhtii/microduck-sock-heist-quicksilver-v2
+- Modelo en Hugging Face: https://huggingface.co/HlibPlakhtii/microduck-sock-heist-quicksilver-v2
 - Modelo base: https://huggingface.co/jrubiosainz/microduck-sock-heist-6m-fce-v4x-c621636e
 - Linaje composite-v4: https://huggingface.co/rumezhak/microduck-sock-heist-composite-v4
 - Pollen Robotics (Microduck y Arena): no disponible en la información proporcionada

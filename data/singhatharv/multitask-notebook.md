@@ -73,5 +73,5 @@ No se dispone de información sobre modelos comparables en la misma categoría. 
 
 ## Enlaces
 
-- [HuggingFace: singhatharv/multitask-notebook](https://huggingface.co/singhatharv/multitask-notebook)
+- [Hugging Face: singhatharv/multitask-notebook](https://huggingface.co/singhatharv/multitask-notebook)
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios) en la búsqueda web.

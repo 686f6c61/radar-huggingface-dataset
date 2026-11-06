@@ -53,5 +53,5 @@ No disponible. No se han proporcionado comparaciones con otros adaptadores o mod
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dementor-research/dpo_writingprompts_gpt-oss-20b_as_llama-3.1-8b_seed42
+- Repositorio Hugging Face: https://huggingface.co/dementor-research/dpo_writingprompts_gpt-oss-20b_as_llama-3.1-8b_seed42
 - Herramienta Tinker de Thinking Machines: https://thinkingmachines.ai/tinker/

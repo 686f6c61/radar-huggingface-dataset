@@ -84,6 +84,6 @@ Para una comparativa real de mecanismos de atención eficiente habría que acudi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sim-oque/efficient-attention-notes
+- Repositorio en Hugging Face: https://huggingface.co/sim-oque/efficient-attention-notes
 - Paper, blog, repositorio de código o demo: no disponibles en la información proporcionada.
 - Referencias bibliográficas sobre atención eficiente: citadas en `analysis.md` dentro del repositorio, pero no enumeradas en la información disponible.

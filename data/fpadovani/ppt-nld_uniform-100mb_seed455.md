@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `fpadovani/ppt-nld_uniform-100mb_seed455` es un ajuste fino (fine-tuning) supervisado del modelo base `goldfish-models/nld_latn_100mb`, un transformer decoder-only de tipo GPT-2 con 86.708.736 parámetros (aproximadamente 87 millones) orientado a la generación de texto. Lo publica el usuario fpadovani en HuggingFace, con una model card generada automáticamente que documenta el entrenamiento mediante SFT con la librería TRL, pero que no describe el conjunto de datos, la licencia ni los idiomas de forma explícita.
+El modelo `fpadovani/ppt-nld_uniform-100mb_seed455` es un ajuste fino (fine-tuning) supervisado del modelo base `goldfish-models/nld_latn_100mb`, un transformer decoder-only de tipo GPT-2 con 86.708.736 parámetros (aproximadamente 87 millones) orientado a la generación de texto. Lo publica el usuario fpadovani en Hugging Face, con una model card generada automáticamente que documenta el entrenamiento mediante SFT con la librería TRL, pero que no describe el conjunto de datos, la licencia ni los idiomas de forma explícita.
 
 El interés de esta ficha es limitado y muy específico: se trata de un artefacto de investigación y experimentación, no de un modelo de producción. Su tamaño (87 M de parámetros, 1,4 GB de repositorio) permite ejecutarlo en CPU o en cualquier GPU consumer, lo que lo convierte en un banco de pruebas útil para estudiar técnicas de ajuste fino sobre corpus pequeños (el modelo base se entrenó sobre 100 MB de texto neerlandés), para reproducir experimentos con semillas controladas o para usarlo como línea base en tareas de generación de texto en neerlandés.
 
@@ -44,7 +44,7 @@ No se documenta el dataset de ajuste fino, el numero de tokens de entrenamiento,
 - Linea base en evaluacion de generacion de texto en neerlandes: sirve como referencia de bajo coste para comparar tecnicas de ajuste, tokenizacion o muestreo frente a modelos mayores en la misma lengua.
 - Pruebas de infraestructura y CI de despliegue: con 87 M de parametros, permite validar pipelines de servido (transformers, vLLM, TGI, llama.cpp, Ollama) en segundos y sin GPU dedicada antes de escalar a modelos grandes.
 - Generacion de texto sintetico para aumento de datos: puede producir borradores en neerlandes que, tras filtrado humano, amplien corpus pequenos en tareas de clasificacion o etiquetado.
-- Docencia y formacion: adecuado para explicar de extremo a extremo el ciclo completo de un LLM (tokenizacion, ajuste supervisado, publicacion en HuggingFace, inferencia con `pipeline`) sin necesidad de hardware especializado.
+- Docencia y formacion: adecuado para explicar de extremo a extremo el ciclo completo de un LLM (tokenizacion, ajuste supervisado, publicacion en Hugging Face, inferencia con `pipeline`) sin necesidad de hardware especializado.
 - Inferencia en el borde o en CPU: al ocupar del orden de 50 a 350 MB segun la precision, es factible ejecutarlo en dispositivos sin GPU, portatiles antiguos o entornos con restricciones de memoria para demos interactivas.
 - Investigacion sobre sesgos y comportamiento de modelos monocorpus: su tamano reducido facilita analisis de atributos, de contaminacion de datos y de deriva del lenguaje en corpus pequenos.
 - Prototipado rapido de interfaces conversacionales: valido para probar el formato de mensajes y el flujo de una aplicacion antes de sustituir el backend por un modelo mayor.
@@ -59,17 +59,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU recomendadas: cualquier GPU con 2 GB o mas de VRAM es suficiente; una RTX 3060, RTX 4090, A100 o H100 estan sobredimensionadas y solo se justifican para procesar lotes muy grandes.
 - GPU consumer: si, cabe holgadamente en cualquier GPU consumer actual e incluso en iGPU con memoria compartida.
 - CPU: la inferencia en CPU es plenamente viable gracias al tamano reducido del modelo.
-- Opciones de despliegue: `transformers` con `pipeline` (metodo documentado), vLLM, HuggingFace TGI, llama.cpp y Ollama (requieren conversion previa a GGUF), asi como exportacion a ONNX.
+- Opciones de despliegue: `transformers` con `pipeline` (metodo documentado), vLLM, Hugging Face TGI, llama.cpp y Ollama (requieren conversion previa a GGUF), asi como exportacion a ONNX.
 - Latencia y throughput estimados: no disponibles. En modelos de este tamano el rendimiento suele estar limitado por el ancho de banda de memoria y por la sobrecarga de la propia libreria de inferencia, mas que por la computacion.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `fpadovani/ppt-nld_uniform-100mb_seed455` | 86,7 M | no disponible | no declarado (base neerlandes) | no disponible | HuggingFace, safetensors |
-| `goldfish-models/nld_latn_100mb` (modelo base) | mismo orden de magnitud (es el modelo base) | no disponible | neerlandes (`nld_latn`) | no disponible en la informacion proporcionada | HuggingFace |
-| GPT-2 small | 124 M | 1024 tokens (dato publico general) | ingles principalmente | MIT (dato publico general) | HuggingFace, safetensors |
-| `Qwen2.5-0.5B` | 0,49 B | 32 768 tokens (dato publico general) | multilingue (29 idiomas) | Apache 2.0 (dato publico general) | HuggingFace, safetensors, GGUF |
+| `fpadovani/ppt-nld_uniform-100mb_seed455` | 86,7 M | no disponible | no declarado (base neerlandes) | no disponible | Hugging Face, safetensors |
+| `goldfish-models/nld_latn_100mb` (modelo base) | mismo orden de magnitud (es el modelo base) | no disponible | neerlandes (`nld_latn`) | no disponible en la informacion proporcionada | Hugging Face |
+| GPT-2 small | 124 M | 1024 tokens (dato publico general) | ingles principalmente | MIT (dato publico general) | Hugging Face, safetensors |
+| `Qwen2.5-0.5B` | 0,49 B | 32 768 tokens (dato publico general) | multilingue (29 idiomas) | Apache 2.0 (dato publico general) | Hugging Face, safetensors, GGUF |
 
 Los datos de GPT-2 small y Qwen2.5-0.5B provienen de sus fichas publicas y no han sido verificados en la informacion proporcionada para esta ficha; se incluyen solo como referencia de categoria. No hay datos de rendimiento comparado disponibles para ningun par de estos modelos en el contexto neerlandes.
 
@@ -89,7 +89,7 @@ Los datos de GPT-2 small y Qwen2.5-0.5B provienen de sus fichas publicas y no ha
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/ppt-nld_uniform-100mb_seed455
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/ppt-nld_uniform-100mb_seed455
 - Modelo base: https://huggingface.co/goldfish-models/nld_latn_100mb
 - Repositorio de TRL (libreria de entrenamiento): https://github.com/huggingface/trl
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/aak2jek8

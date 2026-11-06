@@ -66,6 +66,6 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Horus-Cyber-Nano-1.0-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Horus-Cyber-Nano-1.0-i1-GGUF
 - Modelo original: https://huggingface.co/tokenaii/Horus-Cyber-Nano-1.0
 - Anuncio de TokenAI: https://tokenai.llc/news/announcements/horus-cyber-nano-first-look

@@ -6,7 +6,7 @@ Suri Qwen 3.8 27B Companion es un modelo de lenguaje de 27.320.697.856 parametro
 
 El repositorio ocupa 377,6 GB, un tamano que solo se explica por la presencia de multiples niveles de cuantizacion GGUF del mismo modelo, generados con tecnicas de imatrix (matriz de importancia) para preservar calidad en compresiones agresivas. La libreria declarada es transformers y el pipeline tag es image-text-to-text, lo que sugiere capacidades multimodales entrada imagen/texto, aunque la model card no describe ninguna capacidad de vision de forma explicita.
 
-Su relevancia practica es limitada a fecha de esta ficha: cero descargas y cero "likes" en HuggingFace, licencia no especificada y ausencia total de benchmarks publicados. Es un modelo experimental de nicho, pensado para despliegue local en escenarios conversacionales o de rol, no para entornos de produccion regulados.
+Su relevancia practica es limitada a fecha de esta ficha: cero descargas y cero "likes" en Hugging Face, licencia no especificada y ausencia total de benchmarks publicados. Es un modelo experimental de nicho, pensado para despliegue local en escenarios conversacionales o de rol, no para entornos de produccion regulados.
 
 ## Especificaciones tecnicas
 
@@ -67,7 +67,7 @@ Las cifras siguientes son estimaciones derivadas del recuento de parametros (27,
 
 ## Comparativa con modelos similares
 
-Los datos de la columna "Suri Qwen 3.8 27B" proceden de los metadatos de HuggingFace; el resto son caracteristicas publicas de cada modelo. No hay datos de rendimiento comparables, ya que el modelo de SpaceTimee no publica benchmarks.
+Los datos de la columna "Suri Qwen 3.8 27B" proceden de los metadatos de Hugging Face; el resto son caracteristicas publicas de cada modelo. No hay datos de rendimiento comparables, ya que el modelo de SpaceTimee no publica benchmarks.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Rendimiento publicado |
 |---|---|---|---|---|---|
@@ -92,7 +92,7 @@ La diferencia principal no esta en el tamano, sino en el soporte: los tres model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SpaceTimee/Suri-Qwen-3.8-27B-Companion-GGUF
+- Modelo en Hugging Face: https://huggingface.co/SpaceTimee/Suri-Qwen-3.8-27B-Companion-GGUF
 - Modelo base: https://huggingface.co/SpaceTimee/Suri-Qwen-3.8-27B-Uncensored
 - Contacto indicado por el autor: Zeus6_6@163.com
 - Grupo QQ indicado por el autor: 902575634

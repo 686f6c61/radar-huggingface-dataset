@@ -88,7 +88,7 @@ El Path 1 es más pequeño (11,4 GiB) pero solo funciona en CUDA; este Path 2 sa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hermitdave/qwen36-35b-a3b-p2-iq-mix
+- Repositorio Hugging Face: https://huggingface.co/hermitdave/qwen36-35b-a3b-p2-iq-mix
 - Modelo base Qwen3.6-35B-A3B: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Versión NVFP4 de NVIDIA: https://huggingface.co/nvidia/Qwen3.6-35B-A3B-NVFP4
 - Guía para desarrolladores de Qwen 3.6 (lushbinary): https://lushbinary.com/blog/qwen-3-6-developer-guide-benchmarks-architecture-api-self-hosting/

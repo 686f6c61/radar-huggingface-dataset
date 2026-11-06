@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparables para establecer una comparativ
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/gradients-io-tournaments/tournament-tourn_93dfe3ecf34f777e_20261102-efc5f869-38b9-4f48-a1e2-702a6bdd90f0-5DDVSRDL
+- Repositorio Hugging Face: https://huggingface.co/gradients-io-tournaments/tournament-tourn_93dfe3ecf34f777e_20261102-efc5f869-38b9-4f48-a1e2-702a6bdd90f0-5DDVSRDL
 - Modelo base Qwen3-32B: https://huggingface.co/Qwen/Qwen3-32B
 - Paper de referencia citado en la model card (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculador de impacto ambiental ML: https://mlco2.github.io/impact

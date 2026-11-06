@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - VRAM estimada: no disponible. Dependera del tamano de los parametros, que no se ha especificado.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no se puede determinar sin conocer el tamano del modelo.
-- Opciones de despliegue: al ser checkpoints en formato PyTorch, se pueden cargar con frameworks como HuggingFace Transformers o PyTorch directamente. No se mencionan opciones como vLLM, llama.cpp, u Ollama.
+- Opciones de despliegue: al ser checkpoints en formato PyTorch, se pueden cargar con frameworks como Hugging Face Transformers o PyTorch directamente. No se mencionan opciones como vLLM, llama.cpp, u Ollama.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sophia es un modelo de lenguaje conversacional en chino de aproximadamente 1.000 millones de parámetros, desarrollado por el usuario Arain119 y publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un transformer decoder denso de 28 capas con una arquitectura híbrida de atención poco habitual: el patrón de capas es `[KDA, KDA, KDA, Gated-MLA] × 7`, es decir, tres capas de atención lineal tipo KDA por cada capa de atención latente con compuerta (Gated-MLA), sin embeddings posicionales explícitos (NoPE). La ventana de contexto es de 4.096 tokens.
+Sophia es un modelo de lenguaje conversacional en chino de aproximadamente 1.000 millones de parámetros, desarrollado por el usuario Arain119 y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un transformer decoder denso de 28 capas con una arquitectura híbrida de atención poco habitual: el patrón de capas es `[KDA, KDA, KDA, Gated-MLA] × 7`, es decir, tres capas de atención lineal tipo KDA por cada capa de atención latente con compuerta (Gated-MLA), sin embeddings posicionales explícitos (NoPE). La ventana de contexto es de 4.096 tokens.
 
 El modelo se entrenó desde inicialización aleatoria sobre 20.000 millones de tokens, seguido de un ajuste supervisado (SFT) sobre 88.267 filas durante tres épocas y una fase final de DPO con 1.953 pares. Todo el proceso se ejecutó en una única GPU de consumo, una NVIDIA RTX 5090 de 32 GB, lo que lo convierte en un caso de estudio relevante para quienes investigan recetas de entrenamiento de bajo presupuesto y arquitecturas híbridas en la escala de 1B.
 
@@ -83,9 +83,9 @@ La mejora del DPO respecto al modelo SFT padre es de +2,10 puntos con t=+3,71 y 
 
 | Modelo | Parametros | Contexto | SophiaBenchmark 134 (juez) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Sophia | 1,11 B (safetensors) | 4.096 | 51,25 | Apache 2.0 (pesos y código) | HuggingFace, código remoto obligatorio |
-| Llama3.2-1B | 1,24 B (aproximado, no confirmado en la informacion disponible) | no disponible | 48,09 | Licencia comunitaria de Meta | HuggingFace, ecosistema amplio |
-| Qwen2.5-0.5B | 0,5 B (aproximado, no confirmado en la informacion disponible) | no disponible | 50,35 | Apache 2.0 | HuggingFace, ecosistema amplio |
+| Sophia | 1,11 B (safetensors) | 4.096 | 51,25 | Apache 2.0 (pesos y código) | Hugging Face, código remoto obligatorio |
+| Llama3.2-1B | 1,24 B (aproximado, no confirmado en la informacion disponible) | no disponible | 48,09 | Licencia comunitaria de Meta | Hugging Face, ecosistema amplio |
+| Qwen2.5-0.5B | 0,5 B (aproximado, no confirmado en la informacion disponible) | no disponible | 50,35 | Apache 2.0 | Hugging Face, ecosistema amplio |
 
 La única métrica comparable aportada es la puntuación del juez sobre las mismas 134 preguntas, bajo la misma tubería. Para el resto de parámetros (contexto, cuantizaciones disponibles, rendimiento en benchmarks estándar) no hay datos en la información proporcionada. La ventaja de Sophia en esa métrica concreta no está respaldada por comparaciones en MMLU, HumanEval, GSM8K ni IFEval frente a esos dos modelos.
 
@@ -107,10 +107,10 @@ La única métrica comparable aportada es la puntuación del juez sobre las mism
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Arain119/sophia
+- Modelo en Hugging Face: https://huggingface.co/Arain119/sophia
 - Codigo fuente (referenciado en la model card): https://github.com/Arain119/Sophia
 - Dataset de entrenamiento en ModelScope (pretrain en fragmentos de tokens de ~80 GB y corpus de SFT de 426 MB): https://modelscope.cn/datasets/Arain119/Sophia-dataset
-- Informe de entrenamiento y evaluacion: `REPORT.md`, incluido en el repositorio de HuggingFace y en el paquete de codigo
+- Informe de entrenamiento y evaluacion: `REPORT.md`, incluido en el repositorio de Hugging Face y en el paquete de codigo
 - Linaje de ejecuciones, checkpoints, datos y semillas: `lineage.json`
 - Pesos nativos en PyTorch: `sophia.pt` y `sophia_sft.pt` (baseline de SFT)
 - Paquete de codigo con un unico commit exportado: `sophia-1.0.0.bundle`

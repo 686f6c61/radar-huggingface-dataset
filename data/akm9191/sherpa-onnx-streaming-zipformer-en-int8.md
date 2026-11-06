@@ -84,7 +84,7 @@ La comparativa se limita a las variantes del mismo linaje Zipformer documentadas
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/akm9191/sherpa-onnx-streaming-zipformer-en-int8
+- Hugging Face: https://huggingface.co/akm9191/sherpa-onnx-streaming-zipformer-en-int8
 - Repositorio original replicado: https://huggingface.co/csukuangfj/sherpa-onnx-streaming-zipformer-en-2023-06-26
 - Torchscript de origen: https://huggingface.co/Zengwei/icefall-asr-librispeech-streaming-zipformer-2023-05-17
 - Runtime sherpa-onnx: https://github.com/k2-fsa/sherpa-onnx

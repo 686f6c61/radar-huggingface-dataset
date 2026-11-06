@@ -81,7 +81,7 @@ No disponible: la informacion proporcionada no incluye datos de rendimiento del 
 - Licencia Gemma: el uso comercial esta sujeto a los terminos de la licencia Gemma, que impone obligaciones de atribucion y una politica de uso aceptable. Conviene revisarla antes de cualquier despliegue en produccion.
 - Ausencia de tool calling documentado: no debe asumirse soporte de function calling ni de flujos agenticos con llamadas a herramientas.
 - Numero de parametros activos no confirmado: el dato de ~4B activos se infiere del nombre del modelo, no de una especificacion oficial.
-- Metadatos anomalos: las fechas de creacion y actualizacion del repositorio (2026) y el conteo de descargas y likes (0) proceden de la API de HuggingFace tal cual; no se ha verificado su coherencia.
+- Metadatos anomalos: las fechas de creacion y actualizacion del repositorio (2026) y el conteo de descargas y likes (0) proceden de la API de Hugging Face tal cual; no se ha verificado su coherencia.
 - Sin benchmarks: no existe ninguna medicion publicada de MMLU, HumanEval, GSM8K ni de tareas de rol que permita validar su calidad frente a alternativas.
 
 ## Enlaces

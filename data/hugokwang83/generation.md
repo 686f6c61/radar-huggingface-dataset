@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hugokwang83/generation` es un repositorio de HuggingFace que empaqueta una implementación mínima de la arquitectura Flamingo (modelo visión-lenguaje con atención estándar y fusión de modalidades de tipo Tucker) junto con un script ejecutable (`run.py`), un `config.json`, un `training_args.json` y un checkpoint de inicialización en safetensors. Lo publica el usuario hugokwang83 bajo licencia MIT. No es una release de modelo entrenado: la propia model card lo describe como «un punto de partida reproducible» y declara explícitamente que no se reclama ninguna puntuación de benchmark.
+`hugokwang83/generation` es un repositorio de Hugging Face que empaqueta una implementación mínima de la arquitectura Flamingo (modelo visión-lenguaje con atención estándar y fusión de modalidades de tipo Tucker) junto con un script ejecutable (`run.py`), un `config.json`, un `training_args.json` y un checkpoint de inicialización en safetensors. Lo publica el usuario hugokwang83 bajo licencia MIT. No es una release de modelo entrenado: la propia model card lo describe como «un punto de partida reproducible» y declara explícitamente que no se reclama ninguna puntuación de benchmark.
 
 El dato más relevante para un evaluador es la discrepancia interna del repositorio: el recuento real de safetensors es de 24.832 parámetros, mientras que la configuración etiqueta la escala como «giant». Un modelo Flamingo «giant» de la literatura estaría en el orden de decenas de miles de millones de parámetros, de modo que la etiqueta parece una plantilla de configuración sin relación con el checkpoint incluido.
 
@@ -71,7 +71,7 @@ Los datos de las alternativas provienen de la literatura pública y no han sido 
 |---|---|---|---|---|---|
 | hugokwang83/generation | 24.832 (según safetensors) | no disponible | ninguno (declarado por el autor) | MIT | safetensors, checkpoint de inicialización |
 | Flamingo (DeepMind) | ~80B (según paper) | no disponible | sí, en el paper original | no comercial / no publicada | no públicos |
-| OpenFlamingo (LAION) | variantes de ~3B y ~9B | no disponible | sí, reportados por el proyecto | MIT | públicos en HuggingFace |
+| OpenFlamingo (LAION) | variantes de ~3B y ~9B | no disponible | sí, reportados por el proyecto | MIT | públicos en Hugging Face |
 | IDEFICS | ~80B | no disponible | sí, reportados por el proyecto | licencia específica de investigación | públicos con aceptación de términos |
 
 La comparación relevante no es de rendimiento sino de naturaleza del artefacto: los tres alternativas son modelos entrenados y evaluados, mientras que este repositorio es una implementación con checkpoint inicializado sin entrenamiento.
@@ -90,7 +90,7 @@ La comparación relevante no es de rendimiento sino de naturaleza del artefacto:
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hugokwang83/generation
+- Repositorio en Hugging Face: https://huggingface.co/hugokwang83/generation
 - Artefactos incluidos: `run.py` (implementación y entrada de entrenamiento/ejemplo), `config.json` (configuración de arquitectura), `training_args.json` (receta de experimento por defecto), `model.safetensors` (checkpoint de inicialización), `README.md`.
 - Paper de referencia de la arquitectura Flamingo, blog o repositorio oficial: no disponibles en la información proporcionada.
 - Demo o space asociado: no disponible.

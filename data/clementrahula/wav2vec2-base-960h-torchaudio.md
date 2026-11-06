@@ -73,8 +73,8 @@ Nota: los datos de parametros y licencias son de conocimiento general; no se han
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/clementrahula/wav2vec2-base-960h-torchaudio
+- Repositorio Hugging Face: https://huggingface.co/clementrahula/wav2vec2-base-960h-torchaudio
 - Documentacion de torchaudio para WAV2VEC2_ASR_BASE_960H: https://docs.pytorch.org/audio/stable/generated/torchaudio.pipelines.WAV2VEC2_ASR_BASE_960H.html
-- Modelo original en HuggingFace: https://huggingface.co/facebook/wav2vec2-base-960h
+- Modelo original en Hugging Face: https://huggingface.co/facebook/wav2vec2-base-960h
 - Codigo fuente de fairseq (wav2vec 2.0): https://github.com/facebookresearch/fairseq
 - Paper de wav2vec 2.0: https://arxiv.org/abs/2006.11477

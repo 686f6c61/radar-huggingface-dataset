@@ -81,8 +81,8 @@ Los fallos conocidos, según el autor, no degradan ningún caso malicioso a beni
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| triage-qwen3-8b-public-v5 | 8,23B base + 43,6M adaptador | 131.072 (base); 2.048 en entrenamiento | Triaje SOC en 3 clases | Apache-2.0 | HuggingFace, 0 descargas, 1 like |
-| Qwen/Qwen3-8B | 8,23B densos | 131.072 | Propósito general, multilingüe | Apache-2.0 | HuggingFace, ampliamente distribuido |
+| triage-qwen3-8b-public-v5 | 8,23B base + 43,6M adaptador | 131.072 (base); 2.048 en entrenamiento | Triaje SOC en 3 clases | Apache-2.0 | Hugging Face, 0 descargas, 1 like |
+| Qwen/Qwen3-8B | 8,23B densos | 131.072 | Propósito general, multilingüe | Apache-2.0 | Hugging Face, ampliamente distribuido |
 | Adaptadores de triaje SOC comparables | No disponible | No disponible | No disponible | No disponible | No se han identificado alternativas públicas equivalentes en la información disponible |
 
 No se dispone de datos de rendimiento comparables entre estas opciones: el adaptador no publica métricas en benchmarks estándar y el modelo base no se ha evaluado con las suites internas del autor. Cualquier comparación de calidad en la tarea de triaje requeriría ejecutar ambas variantes sobre el mismo conjunto de alertas etiquetadas.
@@ -102,7 +102,7 @@ No se dispone de datos de rendimiento comparables entre estas opciones: el adapt
 
 ## Enlaces
 
-- [Modelo en HuggingFace: mahendra1980/triage-qwen3-8b-public-v5](https://huggingface.co/mahendra1980/triage-qwen3-8b-public-v5)
+- [Modelo en Hugging Face: mahendra1980/triage-qwen3-8b-public-v5](https://huggingface.co/mahendra1980/triage-qwen3-8b-public-v5)
 - [Modelo base: Qwen/Qwen3-8B](https://huggingface.co/Qwen/Qwen3-8B)
 - [Qwen3-8B en Qualcomm AI Hub](https://aihub.qualcomm.com/models/qwen3_8b)
 - [Repositorio de exportación de Qualcomm para Qwen3-8B](https://github.com/qualcomm/ai-hub-models/blob/main/src/qai_hub_models/models/qwen3_8b/README.md)

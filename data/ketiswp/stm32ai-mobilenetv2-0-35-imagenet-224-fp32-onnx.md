@@ -44,7 +44,7 @@ El modelo fue entrenado en el conjunto de datos ImageNet, con resolucion de entr
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card de HuggingFace no incluye metricas de precision ni comparaciones con otros modelos. En el repositorio de STMicroelectronics se mencionan medidas de rendimiento con STM32Cube.AI, pero los datos concretos no se proporcionan en la informacion consultada.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card de Hugging Face no incluye metricas de precision ni comparaciones con otros modelos. En el repositorio de STMicroelectronics se mencionan medidas de rendimiento con STM32Cube.AI, pero los datos concretos no se proporcionan en la informacion consultada.
 
 ## Requisitos de hardware
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | MobileNetV2 0.35 (Google) | 3,5 M | 96x96 | TF | Apache 2.0 |
 | EfficientNet-Lite0 | 4,7 M | 224x224 | TF | Apache 2.0 |
 
-La version estandar de MobileNetV2 tiene el mismo numero de parametros que la variante 0.35, pero con un factor de ancho de 1.0, lo que implica mas canales y una precision superior en ImageNet. La variante 0.35 de Google, disponible en HuggingFace, usa una resolucion de entrada de 96x96, lo que reduce la carga computacional pero tambien la precision. La comparacion directa en rendimiento no se puede establecer sin datos de benchmarks, que no estan disponibles en la informacion proporcionada.
+La version estandar de MobileNetV2 tiene el mismo numero de parametros que la variante 0.35, pero con un factor de ancho de 1.0, lo que implica mas canales y una precision superior en ImageNet. La variante 0.35 de Google, disponible en Hugging Face, usa una resolucion de entrada de 96x96, lo que reduce la carga computacional pero tambien la precision. La comparacion directa en rendimiento no se puede establecer sin datos de benchmarks, que no estan disponibles en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
@@ -76,9 +76,9 @@ La version estandar de MobileNetV2 tiene el mismo numero de parametros que la va
 
 ## Enlaces
 
-- [HuggingFace: ketiswp/stm32ai-MobileNetV2-0.35-ImageNet-224-fp32-onnx](https://huggingface.co/ketiswp/stm32ai-MobileNetV2-0.35-ImageNet-224-fp32-onnx)
+- [Hugging Face: ketiswp/stm32ai-MobileNetV2-0.35-ImageNet-224-fp32-onnx](https://huggingface.co/ketiswp/stm32ai-MobileNetV2-0.35-ImageNet-224-fp32-onnx)
 - [Version INT8 del mismo modelo](https://huggingface.co/ketiswp/stm32ai-MobileNetV2-0.35-ImageNet-224-int8-onnx)
 - [Repositorio STMicroelectronics stm32ai-modelzoo (imagenes)](https://github.com/STMicroelectronics/stm32ai-modelzoo/tree/1423c78953a830903485135febe1dd98ff31aed8/image_classification/mobilenetv2)
 - [README de STMicroelectronics para MobileNetV2](https://github.com/STMicroelectronics/stm32ai-modelzoo/blob/main/image_classification/mobilenetv2/README.md)
-- [HuggingFace: STMicroelectronics/mobilenetv2](https://huggingface.co/STMicroelectronics/mobilenetv2)
-- [HuggingFace: google/mobilenet_v2_0.35_96](https://huggingface.co/google/mobilenet_v2_0.35_96)
+- [Hugging Face: STMicroelectronics/mobilenetv2](https://huggingface.co/STMicroelectronics/mobilenetv2)
+- [Hugging Face: google/mobilenet_v2_0.35_96](https://huggingface.co/google/mobilenet_v2_0.35_96)

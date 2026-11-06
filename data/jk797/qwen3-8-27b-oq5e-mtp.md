@@ -6,7 +6,7 @@ El modelo `jk797/Qwen3.8-27B-oQ5e-mtp` es una cuantización de 5 bits (formato o
 
 Qwen3.8-27B es un modelo de visión y lenguaje (image-text-to-text) que destaca en tareas de codificación, flujos de trabajo agénticos y automatización de oficina, con una ventana de contexto nativa de 262 000 tokens y razonamiento configurable. Esta cuantización oQ5e ofrece una alternativa eficiente en memoria sin sacrificar las capacidades multimodales, lo que la hace relevante para desarrolladores que necesitan desplegar un modelo de alto rendimiento en entornos locales o con recursos acotados.
 
-El repositorio incluye los pesos en formato safetensors (MLX) y está etiquetado con `image-text-to-text`, `mlx`, `oQ5e` y `mtp`, confirmando que se preservan tanto el encoder de visión como el mecanismo de predicción multi-token. Aunque la ficha de HuggingFace no especifica licencia ni idiomas, el modelo base Qwen3.8-27B se distribuye bajo Apache 2.0 y soporta múltiples idiomas, según la documentación oficial de Qwen.
+El repositorio incluye los pesos en formato safetensors (MLX) y está etiquetado con `image-text-to-text`, `mlx`, `oQ5e` y `mtp`, confirmando que se preservan tanto el encoder de visión como el mecanismo de predicción multi-token. Aunque la ficha de Hugging Face no especifica licencia ni idiomas, el modelo base Qwen3.8-27B se distribuye bajo Apache 2.0 y soporta múltiples idiomas, según la documentación oficial de Qwen.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ El repositorio incluye los pesos en formato safetensors (MLX) y está etiquetado
 | Longitud de contexto | 262 000 tokens (nativo) |
 | Tipos de cuantizacion | oQ5e (5 bits, affine, group size 64) |
 | Idiomas soportados | No disponible (el modelo base es multilingüe, pero no se confirma en esta ficha) |
-| Licencia | Apache 2.0 (modelo base, según fuentes externas); no disponible en la ficha de HuggingFace |
+| Licencia | Apache 2.0 (modelo base, según fuentes externas); no disponible en la ficha de Hugging Face |
 | Formato de pesos | safetensors (MLX) |
 
 ## Arquitectura y entrenamiento
@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la información disponible para 
 
 | Modelo | Parámetros | Contexto | Visión | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B (base) | 27B | 262K | Sí | Apache 2.0 | HuggingFace |
-| Qwen2.5-27B | 27B | 32K | No (solo texto) | Apache 2.0 | HuggingFace |
-| InternVL2.5-26B | 26B | 64K | Sí | MIT | HuggingFace |
+| Qwen3.8-27B (base) | 27B | 262K | Sí | Apache 2.0 | Hugging Face |
+| Qwen2.5-27B | 27B | 32K | No (solo texto) | Apache 2.0 | Hugging Face |
+| InternVL2.5-26B | 26B | 64K | Sí | MIT | Hugging Face |
 
 La cuantización oQ5e de Qwen3.8-27B ofrece una ventaja en eficiencia de memoria frente al modelo base, manteniendo las capacidades multimodales y el contexto largo. Comparado con Qwen2.5-27B, añade visión y un contexto significativamente mayor. InternVL2.5-26B es una alternativa multimodal similar, pero con contexto menor y licencia MIT. No se dispone de comparativas de rendimiento directas entre estas opciones en la información proporcionada.
 
@@ -81,13 +81,13 @@ La cuantización oQ5e de Qwen3.8-27B ofrece una ventaja en eficiencia de memoria
 - La cuantización oQ5e puede introducir una ligera pérdida de precisión en comparación con el modelo de 16 bits, especialmente en tareas que requieren alta exactitud numérica o razonamiento fino.
 - No se han publicado evaluaciones de sesgos o alucinaciones específicas para esta cuantización; como todo modelo de lenguaje, puede generar contenido incorrecto o inventado.
 - El contexto de 262K tokens es nativo, pero el uso efectivo de ventanas tan largas puede degradar el rendimiento si no se gestiona adecuadamente la memoria.
-- La licencia Apache 2.0 del modelo base permite uso comercial, pero es necesario verificar si la cuantización oMLX tiene restricciones adicionales; la ficha de HuggingFace no especifica licencia.
+- La licencia Apache 2.0 del modelo base permite uso comercial, pero es necesario verificar si la cuantización oMLX tiene restricciones adicionales; la ficha de Hugging Face no especifica licencia.
 - El modelo está optimizado para MLX y puede requerir conversión para otros entornos de inferencia (por ejemplo, a GGUF), lo que podría afectar a la fidelidad de la cuantización.
 - No se dispone de información sobre la composición del dataset de entrenamiento, por lo que no se pueden evaluar posibles sesgos culturales o de idioma.
 
 ## Enlaces
 
-- [HuggingFace - jk797/Qwen3.8-27B-oQ5e-mtp](https://huggingface.co/jk797/Qwen3.8-27B-oQ5e-mtp)
+- [Hugging Face - jk797/Qwen3.8-27B-oQ5e-mtp](https://huggingface.co/jk797/Qwen3.8-27B-oQ5e-mtp)
 - [Modelo base - Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [GitHub - Qwen3.8-27B](https://github.com/AlibabaCloud-Official/Qwen3.8-27B)
 - [Blog AMD - Run Qwen 3.8 27B on AMD Ryzen AI Max](https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html)

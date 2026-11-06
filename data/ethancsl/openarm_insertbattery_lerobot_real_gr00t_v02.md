@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `ethanCSL/openarm_insertbattery_lerobot_real_gr00t_v02` | 3,1 B | no disponible | Política GR00T N1.7 ajustada a tarea | Apache 2.0 | HuggingFace (0 descargas) |
+| `ethanCSL/openarm_insertbattery_lerobot_real_gr00t_v02` | 3,1 B | no disponible | Política GR00T N1.7 ajustada a tarea | Apache 2.0 | Hugging Face (0 descargas) |
 | GR00T N1.7 base (NVIDIA) | no disponible | no disponible | Modelo fundacional cross-embodiment | no disponible en la información | GitHub NVIDIA/Isaac-GR00T |
-| Políticas LeRobot ACT / Diffusion | no disponible | no disponible | Políticas de imitación específicas por tarea | no disponible | HuggingFace / LeRobot |
+| Políticas LeRobot ACT / Diffusion | no disponible | no disponible | Políticas de imitación específicas por tarea | no disponible | Hugging Face / LeRobot |
 
 La comparación cuantitativa con alternativas no está disponible en la información proporcionada. El modelo base GR00T N1.7 y las políticas ACT/Diffusion de LeRobot son las referencias naturales, pero no se han facilitado sus especificaciones numéricas en esta ficha.
 
@@ -90,7 +90,7 @@ La comparación cuantitativa con alternativas no está disponible en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ethanCSL/openarm_insertbattery_lerobot_real_gr00t_v02
+- Modelo en Hugging Face: https://huggingface.co/ethanCSL/openarm_insertbattery_lerobot_real_gr00t_v02
 - Dataset de entrenamiento: https://huggingface.co/datasets/ethanCSL/openarm_insertbattery_lerobot_real_v02
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=ethanCSL/openarm_insertbattery_lerobot_real_v02
 - Repositorio GR00T de NVIDIA: https://github.com/NVIDIA/Isaac-GR00T

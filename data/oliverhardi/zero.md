@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `oliverhardi/zero` es un artefacto publicado en HuggingFace por el usuario oliverhardi bajo licencia Apache 2.0. El repositorio contiene únicamente pesos en formato ONNX (0,5 GB en total) y una model card que no incluye más metadatos que la propia licencia. No se especifica arquitectura, número de parámetros, longitud de contexto ni idiomas soportados, por lo que la información disponible es mínima y no permite caracterizar técnicamente el modelo con rigor.
+El modelo `oliverhardi/zero` es un artefacto publicado en Hugging Face por el usuario oliverhardi bajo licencia Apache 2.0. El repositorio contiene únicamente pesos en formato ONNX (0,5 GB en total) y una model card que no incluye más metadatos que la propia licencia. No se especifica arquitectura, número de parámetros, longitud de contexto ni idiomas soportados, por lo que la información disponible es mínima y no permite caracterizar técnicamente el modelo con rigor.
 
 Por el tamaño del repositorio (aproximadamente 0,5 GB) y el formato ONNX, se puede inferir que se trata de un modelo de pequeña escala, probablemente en el rango de cientos de millones de parámetros o menos, pero esta estimación no está confirmada por el autor. La ausencia de pipeline declarado, de tags descriptivos más allá de `onnx` y de documentación técnica impide determinar su tarea objetivo (generación de texto, embeddings, clasificación, etc.).
 
@@ -76,5 +76,5 @@ No disponible. No se han identificado modelos comparables porque se desconoce la
 
 ## Enlaces
 
-- [HuggingFace: oliverhardi/zero](https://huggingface.co/oliverhardi/zero)
+- [Hugging Face: oliverhardi/zero](https://huggingface.co/oliverhardi/zero)
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la información disponible.

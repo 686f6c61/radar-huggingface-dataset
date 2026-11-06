@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`pedrosilvaana/multitask-lite-2024` es un prototipo de investigación basado en una arquitectura Swin Transformer en su variante Tiny (`swin_t`, escala "small") orientado a aprendizaje multitarea. Lo publica el usuario pedrosilvaana en HuggingFace bajo licencia Apache 2.0. El repositorio no contiene un modelo entrenado, sino un checkpoint de inicialización válido únicamente para pruebas de humo ("smoke tests") y una implementación propia en PyTorch.
+`pedrosilvaana/multitask-lite-2024` es un prototipo de investigación basado en una arquitectura Swin Transformer en su variante Tiny (`swin_t`, escala "small") orientado a aprendizaje multitarea. Lo publica el usuario pedrosilvaana en Hugging Face bajo licencia Apache 2.0. El repositorio no contiene un modelo entrenado, sino un checkpoint de inicialización válido únicamente para pruebas de humo ("smoke tests") y una implementación propia en PyTorch.
 
 El propio autor advierte en la model card que no se reclama ninguna puntuación de benchmark y que el checkpoint "no ha sido entrenado ni auditado" en robustez, equidad o transferencia de dominio. Por tanto, se trata de un punto de partida experimental, no de un modelo listo para producción. La configuración por defecto usa optimizador SGD con planificador OneCycle, valores de arranque que no evidencian ninguna ejecución completada.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Tipo | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| multitask-lite-2024 | 16.576 (segun safetensors) | Swin-T prototipo multitarea | no aplica | apache-2.0 | HuggingFace, 0 descargas, sin entrenar |
+| multitask-lite-2024 | 16.576 (segun safetensors) | Swin-T prototipo multitarea | no aplica | apache-2.0 | Hugging Face, 0 descargas, sin entrenar |
 | Swin-T (referencia oficial) | ~28 M | Swin Transformer Tiny vision | no aplica | MIT (repositorio oficial) | Ampliamente disponible y entrenado |
 | Otros backbones de vision tiny (p. ej. ViT-T, ConvNeXt-T) | del orden de 5-30 M | Transformer / CNN de vision | no aplica | variable | Disponibles y entrenados |
 
@@ -83,5 +83,5 @@ Nota: no se dispone de datos de rendimiento del modelo analizado, por lo que la 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pedrosilvaana/multitask-lite-2024
+- Hugging Face: https://huggingface.co/pedrosilvaana/multitask-lite-2024
 - No se han encontrado en la informacion disponible otros enlaces (papers, blogs, repositorios o demos) asociados a este modelo.

@@ -73,7 +73,7 @@ No se dispone de una comparativa publicada con modelos equivalentes en la inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cominder/iwin-small-patch4-window16-512
+- Modelo en Hugging Face: https://huggingface.co/cominder/iwin-small-patch4-window16-512
 - Paper en arXiv: https://arxiv.org/abs/2507.18405
 - Repositorio GitHub: https://github.com/Cominder/Iwin-Transformer
-- Repositorio en HuggingFace (modelos y pesos): https://huggingface.co/cominder/Iwin-Transformer
+- Repositorio en Hugging Face (modelos y pesos): https://huggingface.co/cominder/Iwin-Transformer

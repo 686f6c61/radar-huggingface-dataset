@@ -58,5 +58,5 @@ No disponible. No se proporcionan datos de rendimiento ni se mencionan modelos c
 
 ## Enlaces
 
-- Repositorio de HuggingFace: [ProjectScugnizz/scugnizz-llama-training](https://huggingface.co/ProjectScugnizz/scugnizz-llama-training)
+- Repositorio de Hugging Face: [ProjectScugnizz/scugnizz-llama-training](https://huggingface.co/ProjectScugnizz/scugnizz-llama-training)
 - Repositorio de pesos (mencionado en la model card): [ProjectScugnizz/scugnizz-llama-pcs](https://huggingface.co/ProjectScugnizz/scugnizz-llama-pcs)

@@ -76,8 +76,8 @@ No se dispone de datos de benchmarks comparativos con otros modelos de extracci√
 
 | Modelo | Par√°metros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| receipt-extractor-lfm2.5-350m | 354M | no disponible | Ajuste fino de LFM2.5-350M para JSON de tickets | lfm1.0 | HuggingFace |
-| LiquidAI/LFM2.5-350M (base) | 354M | no disponible | Modelo generalista | lfm1.0 | HuggingFace |
+| receipt-extractor-lfm2.5-350m | 354M | no disponible | Ajuste fino de LFM2.5-350M para JSON de tickets | lfm1.0 | Hugging Face |
+| LiquidAI/LFM2.5-350M (base) | 354M | no disponible | Modelo generalista | lfm1.0 | Hugging Face |
 | Alternativas de extracci√≥n de tickets | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos de extracci√
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ajay0007/receipt-extractor-lfm2.5-350m
+- Modelo en Hugging Face: https://huggingface.co/Ajay0007/receipt-extractor-lfm2.5-350m
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-350M
 - Runtime LiteRT-LM: https://github.com/google-ai-edge/LiteRT-LM
 - App Google AI Edge Gallery: https://github.com/google-ai-edge/gallery

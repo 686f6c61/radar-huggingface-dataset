@@ -23,7 +23,7 @@ Su relevancia es limitada y fundamentalmente académica: el repositorio no regis
 | Rango y alpha de LoRA | r=16, alpha=32 |
 | Tamano del repositorio | 0,1 GB |
 | Dataset de entrenamiento | sxiong/MLR_structured_trajectory (solo subconjunto MATH) |
-| Fecha de creacion | 2026-09-26 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-26 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| g3-4b-plan-solve (este) | Adaptador sobre base ~4B | 8192 (entrenamiento) | LoRA PEFT | No disponible | HuggingFace, 0 descargas |
-| google/gemma-3-4b-pt | ~4B | 128K | Modelo completo preentrenado | Gemma Terms of Use | Publico en HuggingFace |
-| google/gemma-3-4b-it | ~4B | 128K | Modelo completo instruido | Gemma Terms of Use | Publico en HuggingFace |
+| g3-4b-plan-solve (este) | Adaptador sobre base ~4B | 8192 (entrenamiento) | LoRA PEFT | No disponible | Hugging Face, 0 descargas |
+| google/gemma-3-4b-pt | ~4B | 128K | Modelo completo preentrenado | Gemma Terms of Use | Publico en Hugging Face |
+| google/gemma-3-4b-it | ~4B | 128K | Modelo completo instruido | Gemma Terms of Use | Publico en Hugging Face |
 | Otros LoRA de matematicas comparables | No disponible | No disponible | LoRA | No disponible | No disponible |
 
 No se dispone de resultados de rendimiento que permitan una comparacion cuantitativa con alternativas.
@@ -90,7 +90,7 @@ No se dispone de resultados de rendimiento que permitan una comparacion cuantita
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/swadeshb/g3-4b-plan-solve
+- Modelo en Hugging Face: https://huggingface.co/swadeshb/g3-4b-plan-solve
 - Modelo base: https://huggingface.co/google/gemma-3-4b-pt
 - Dataset de entrenamiento: https://huggingface.co/datasets/sxiong/MLR_structured_trajectory
 - Biblioteca PEFT: https://github.com/huggingface/peft

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Travor278/pi05-place-dual-shoes-concurrent-lora-10k` es un checkpoint de robótica desarrollado por el usuario Travor278 y publicado en HuggingFace bajo la librería `openpi`. Se trata de un ajuste fino mediante LoRA (rank/alpha 16 en la torre PaliGemma y 32 en el *action expert*) sobre una base PI0.5 original en JAX, orientado a una tarea concreta de manipulación denominada "place dual shoes concurrent", es decir, la colocación concurrente de dos zapatos. El repositorio ocupa 6,3 GB y contiene el árbol completo de parámetros necesario para inferencia, incluidas las matrices LoRA y los activos de normalización.
+El modelo `Travor278/pi05-place-dual-shoes-concurrent-lora-10k` es un checkpoint de robótica desarrollado por el usuario Travor278 y publicado en Hugging Face bajo la librería `openpi`. Se trata de un ajuste fino mediante LoRA (rank/alpha 16 en la torre PaliGemma y 32 en el *action expert*) sobre una base PI0.5 original en JAX, orientado a una tarea concreta de manipulación denominada "place dual shoes concurrent", es decir, la colocación concurrente de dos zapatos. El repositorio ocupa 6,3 GB y contiene el árbol completo de parámetros necesario para inferencia, incluidas las matrices LoRA y los activos de normalización.
 
 La relevancia de este checkpoint es fundamentalmente metodológica: documenta con un nivel de detalle poco habitual un experimento de ajuste fino eficiente en parámetros (PEFT) sobre un modelo visión-lenguaje-acción (VLA), con semilla, hiperparámetros, resolución de incidencias de guardado Orbax y verificaciones de integridad numérica. No obstante, se trata de un artefacto de investigación con 0 descargas y 0 *likes*, sin licencia declarada y sin ninguna métrica de éxito en *rollouts*: el propio autor afirma explícitamente que no se reclama ninguna tasa de éxito.
 
@@ -26,7 +26,7 @@ El modelo no es un LLM de propósito general ni un modelo de texto: es una polí
 | Dataset de entrenamiento | `Shiki42/ctr-place-dual-shoes-concurrent-20260911`, commit `8af4de6ff63c040bf34ba47c79eec65c83d7d37c`, 50 episodios y 21.253 fotogramas a 25 FPS |
 | Hardware de entrenamiento | 2 GPU H100 de 80 GB; batch global 16; 10.000 actualizaciones |
 | Tamaño del repositorio | 6,3 GB |
-| Fecha de publicación | 12 de septiembre de 2026 (según metadatos de HuggingFace) |
+| Fecha de publicación | 12 de septiembre de 2026 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -104,7 +104,7 @@ No se dispone de datos comparativos de parámetros, contexto, rendimiento o lice
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/Travor278/pi05-place-dual-shoes-concurrent-lora-10k
+- Página del modelo en Hugging Face: https://huggingface.co/Travor278/pi05-place-dual-shoes-concurrent-lora-10k
 - Dataset de entrenamiento referenciado en la model card: `Shiki42/ctr-place-dual-shoes-concurrent-20260911` (commit `8af4de6ff63c040bf34ba47c79eec65c83d7d37c`); no se proporciona URL en la información disponible.
 - Fichero de verificación de integridad indicado por el autor: `10000/experiment/k7_10000_verified.json` dentro del repositorio.
 - Registros detallados de entrenamiento: directorio `10000/experiment/` dentro del repositorio.

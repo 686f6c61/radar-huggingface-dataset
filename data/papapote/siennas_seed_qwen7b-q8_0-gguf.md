@@ -83,7 +83,7 @@ No disponible. No hay informacion publicada que permita identificar modelos comp
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Papapote/Siennas_Seed_Qwen7B-Q8_0-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Papapote/Siennas_Seed_Qwen7B-Q8_0-GGUF
 - Modelo base declarado: https://huggingface.co/Papapote/Siennas_Seed_Qwen7B
 - Espacio de conversion GGUF-my-lora: https://huggingface.co/spaces/ggml-org/gguf-my-lora
 - Documentacion de uso de LoRA en llama.cpp server: https://github.com/ggerganov/llama.cpp/blob/master/examples/server/README.md

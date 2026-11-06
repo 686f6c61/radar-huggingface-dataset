@@ -68,7 +68,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Lambent/Goose-7.2B-think-grpo-lora
+- Repositorio Hugging Face: https://huggingface.co/Lambent/Goose-7.2B-think-grpo-lora
 - Modelo base: https://huggingface.co/Lambent/RWKV7-7.2B-midtrain50-docs-lora
 - Modelo base original: https://huggingface.co/RWKV/RWKV7-7.2B-20260805
 - Documentación de GRPO Trainer (TRL): https://huggingface.co/docs/trl/grpo_trainer

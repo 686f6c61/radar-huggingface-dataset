@@ -98,7 +98,7 @@ No se han publicado en la informacion disponible resultados de benchmarks compar
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/revorm/MiMo-V2.6-Flash-MOPD-NVFP4
+- Repositorio Hugging Face: https://huggingface.co/revorm/MiMo-V2.6-Flash-MOPD-NVFP4
 - Modelo base: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-MOPD
 - Transcode independiente: https://huggingface.co/AxionML/MiMo-V2.6-Flash-MOPD-NVFP4
 - Transcode del checkpoint RL: https://huggingface.co/tiyuvta/MiMo-V2.6-Flash-RL-NVFP4

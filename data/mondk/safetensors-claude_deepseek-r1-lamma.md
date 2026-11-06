@@ -47,7 +47,7 @@ El ajuste fino se realizó sobre el dataset `mondk/claude-v2-super.jsonl`, que c
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No se proporcionan métricas de MMLU, HumanEval, GSM8K ni comparativas con otros modelos en la ficha de HuggingFace.
+No se han publicado resultados de benchmarks en la informacion disponible. No se proporcionan métricas de MMLU, HumanEval, GSM8K ni comparativas con otros modelos en la ficha de Hugging Face.
 
 ## Requisitos de hardware
 
@@ -78,7 +78,7 @@ La comparativa se limita a modelos del mismo tamaño. No se dispone de datos de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mondk/Safetensors.claude_Deepseek-R1-Lamma
+- Modelo en Hugging Face: https://huggingface.co/mondk/Safetensors.claude_Deepseek-R1-Lamma
 - Versión GGUF: https://huggingface.co/mondk/GGUF.claude_Deepseek-R1-Lamma
 - Dataset de entrenamiento: https://huggingface.co/datasets/mondk/claude-v2-super.jsonl
 - Modelo base: https://huggingface.co/unsloth/DeepSeek-R1-Distill-Llama-8B-unsloth-bnb-4bit

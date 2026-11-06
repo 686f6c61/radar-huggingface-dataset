@@ -56,9 +56,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen/Qwen3-4B (base) | 4.4B | no disponible | no disponible | HuggingFace |
-| FRPO/qwen3-4b-a0_klloss... (este) | 4.4B | no disponible | no disponible | HuggingFace |
-| Llama-3.2-3B | 3.2B | 128K | Llama 3.2 Community License | HuggingFace |
+| Qwen/Qwen3-4B (base) | 4.4B | no disponible | no disponible | Hugging Face |
+| FRPO/qwen3-4b-a0_klloss... (este) | 4.4B | no disponible | no disponible | Hugging Face |
+| Llama-3.2-3B | 3.2B | 128K | Llama 3.2 Community License | Hugging Face |
 
 La comparativa se limita a parámetros y licencia, ya que no hay datos de rendimiento para este checkpoint. El modelo base Qwen3-4B es el punto de referencia natural para evaluar el efecto del fine-tuning RL, pero no se han publicado métricas comparativas.
 
@@ -74,6 +74,6 @@ La comparativa se limita a parámetros y licencia, ya que no hay datos de rendim
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/FRPO/qwen3-4b-a0_klloss-lossKL-coef0.001-mb4-eta100-bs256x5-n4
+- Repositorio Hugging Face: https://huggingface.co/FRPO/qwen3-4b-a0_klloss-lossKL-coef0.001-mb4-eta100-bs256x5-n4
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Framework verl: https://github.com/volcengine/verl

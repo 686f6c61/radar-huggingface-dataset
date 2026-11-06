@@ -30,7 +30,7 @@ La contribución técnica de este repositorio es la generación de cuantizacione
 ## Capacidades
 
 - Generación de texto conversacional en inglés, según la etiqueta `conversational` del repositorio.
-- Compatibilidad con endpoints de inferencia (`endpoints_compatible`), lo que permite su despliegue en infraestructuras compatibles con la API de HuggingFace.
+- Compatibilidad con endpoints de inferencia (`endpoints_compatible`), lo que permite su despliegue en infraestructuras compatibles con la API de Hugging Face.
 - Ejecución mediante llama.cpp y herramientas derivadas (Ollama, LM Studio, etc.) gracias al formato GGUF.
 - No se dispone de información sobre soporte de tool calling, function calling, agentes, razonamiento multi-paso, visión, audio ni modos de pensamiento explícitos.
 - Capacidades multilingües limitadas al inglés según la etiqueta de idioma declarada.
@@ -88,7 +88,7 @@ No se dispone de información suficiente sobre el modelo base (arquitectura, con
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/mradermacher/hybrid-play-32B-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/hybrid-play-32B-GGUF
 - Modelo base: https://huggingface.co/hybrid-gym/hybrid-play-32B
 - Página de descargas del autor: https://hf.tst.eu/model#hybrid-play-32B-GGUF
 - README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

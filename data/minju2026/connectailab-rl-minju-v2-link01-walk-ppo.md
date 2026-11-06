@@ -74,7 +74,7 @@ No se dispone de información sobre políticas comparables en la documentación 
 
 | Modelo | Parámetros | Contexto/observación | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-minju-v2-link01-walk-ppo | no disponible | 51 dims | 0,005 m/s; 0 caídas/min | no disponible | HuggingFace |
+| connectailab-rl-minju-v2-link01-walk-ppo | no disponible | 51 dims | 0,005 m/s; 0 caídas/min | no disponible | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -91,7 +91,7 @@ No se dispone de información sobre políticas comparables en la documentación 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/minju2026/connectailab-rl-minju-v2-link01-walk-ppo
+- Modelo en Hugging Face: https://huggingface.co/minju2026/connectailab-rl-minju-v2-link01-walk-ppo
 - Stable-Baselines3 (librería de entrenamiento): https://github.com/DLR-RM/stable-baselines3
 - MuJoCo (simulador): https://mujoco.org/
 - PPO, paper original: https://arxiv.org/abs/1707.06347

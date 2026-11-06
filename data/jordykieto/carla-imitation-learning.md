@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`carla-imitation-learning` es una política de conducción autónoma compacta entrenada mediante clonación de comportamiento (behavioral cloning) sobre demostraciones del piloto automático de CARLA, el simulador de conducción urbana de código abierto. Lo desarrolla Jordy Kieto y se distribuye a través de HuggingFace con dos formatos de pesos: Keras nativo (`policy.keras`) y ONNX (`policy.onnx`), con una diferencia máxima de salida entre ambos de aproximadamente 3e-7. El modelo resuelve el problema de mapear observaciones multimodales (cámara RGB, LiDAR en vista cenital, telemetría y waypoints de ruta) a comandos de control continuos (acelerador, freno y dirección) a 20 Hz en modo síncrono de CARLA.
+`carla-imitation-learning` es una política de conducción autónoma compacta entrenada mediante clonación de comportamiento (behavioral cloning) sobre demostraciones del piloto automático de CARLA, el simulador de conducción urbana de código abierto. Lo desarrolla Jordy Kieto y se distribuye a través de Hugging Face con dos formatos de pesos: Keras nativo (`policy.keras`) y ONNX (`policy.onnx`), con una diferencia máxima de salida entre ambos de aproximadamente 3e-7. El modelo resuelve el problema de mapear observaciones multimodales (cámara RGB, LiDAR en vista cenital, telemetría y waypoints de ruta) a comandos de control continuos (acelerador, freno y dirección) a 20 Hz en modo síncrono de CARLA.
 
 La arquitectura combina codificadores por paso temporal (CNN para visión y LiDAR, MLP para telemetría y waypoints) con dos bloques Transformer que modelan la secuencia temporal de 5 fotogramas. Con 1.358.211 parámetros, es un modelo deliberadamente pequeño orientado a inferencia de baja latencia en el bucle de control, no a razonamiento general. Su relevancia radica en ser un ejemplo reproducible y auditado de pipeline completo de imitation learning para conducción autónoma en simulación, con código, paper y muestra de datos publicados.
 
@@ -25,7 +25,7 @@ No es un modelo de lenguaje ni un modelo fundacional: es una política de contro
 | Frecuencia de control | 20 Hz (modo síncrono de CARLA) |
 | Datos de entrenamiento | 236.882 ventanas (≈3,3 h) de 448 grabaciones de autopilot en Town01/Town02 |
 | Checkpoint liberado | ejecución `barzksni`, época 10 |
-| Tamaño del repo | 0.0 GB (según HuggingFace) |
+| Tamaño del repo | 0.0 GB (según Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto / entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| carla-imitation-learning (jordykieto) | 1.358.211 | 5 fotogramas multimodales (visión, LiDAR, telemetría, waypoints) | Control de conducción en CARLA | no disponible | HuggingFace (Keras + ONNX) y GitHub |
+| carla-imitation-learning (jordykieto) | 1.358.211 | 5 fotogramas multimodales (visión, LiDAR, telemetría, waypoints) | Control de conducción en CARLA | no disponible | Hugging Face (Keras + ONNX) y GitHub |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone en la información proporcionada de otros modelos de la misma categoría (políticas de imitation learning para CARLA) con datos verificables para establecer una comparación cuantitativa.
@@ -84,12 +84,12 @@ No se dispone en la información proporcionada de otros modelos de la misma cate
 - Licencia no disponible: no puede asumirse permiso para uso comercial sin consultar al autor.
 - Sesgos conocidos: no documentados en la información disponible; cabe esperar sesgo hacia las condiciones de iluminación, tráfico y trazado presentes en las 448 grabaciones.
 - No es un modelo de lenguaje: no admite instrucciones en lenguaje natural, tool calling ni agentes.
-- El repositorio de HuggingFace figura con 0 descargas y 0 likes, sin pipeline declarado ni idiomas, lo que sugiere un modelo de nicho con escasa validación externa.
+- El repositorio de Hugging Face figura con 0 descargas y 0 likes, sin pipeline declarado ni idiomas, lo que sugiere un modelo de nicho con escasa validación externa.
 - El autor remite a `paper/CLAIMS.md` para distinguir lo medido de lo observado; conviene consultarlo antes de extraer conclusiones sobre capacidades.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jordykieto/carla-imitation-learning
+- Modelo en Hugging Face: https://huggingface.co/jordykieto/carla-imitation-learning
 - Repositorio GitHub (código, paper y muestra de datos): https://github.com/JordyKieto/carla-imitation-learning
 - GIF de conducción: https://raw.githubusercontent.com/JordyKieto/carla-imitation-learning/main/assets/driving.gif
 - Auditoría de afirmaciones del paper: https://github.com/JordyKieto/carla-imitation-learning/blob/main/paper/CLAIMS.md

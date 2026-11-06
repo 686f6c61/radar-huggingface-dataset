@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 - VRAM estimada para inferencia: aproximadamente 4-5 GB en cuantización 4-bit (basado en el tamaño del repositorio de 4.3 GB).
 - GPU recomendadas: cualquier Mac con Apple Silicon (M1, M2, M3 o M4) con al menos 8 GB de memoria unificada; también puede ejecutarse en CPU con MLX, aunque con menor rendimiento.
 - No cabe en GPUs de consumo convencionales (RTX 4090, etc.) sin adaptación, ya que el formato MLX está diseñado específicamente para Apple Silicon; para otras GPUs se requeriría una conversión a otros formatos (GGUF, etc.).
-- Opciones de despliegue: mediante la librería `mlx-lm` (pip install mlx-lm) con carga directa desde HuggingFace; también es posible exportar a otros formatos si se necesita ejecutar en hardware distinto.
+- Opciones de despliegue: mediante la librería `mlx-lm` (pip install mlx-lm) con carga directa desde Hugging Face; también es posible exportar a otros formatos si se necesita ejecutar en hardware distinto.
 - Latencia y throughput estimados: no disponibles; dependerán del modelo de chip (M1 vs M2 vs M3) y de la longitud de la secuencia. En general, un modelo 7B cuantizado a 4-bit en un M2 Pro puede generar alrededor de 20-30 tokens por segundo.
 
 ## Comparativa con modelos similares
@@ -76,7 +76,7 @@ Gaiel se distingue por su optimización específica para Apple Silicon y su enfo
 
 ## Enlaces
 
-- Modelo en HuggingFace: [encredible/Gaiel-7B-Korean-Tuned-MLX](https://huggingface.co/encredible/Gaiel-7B-Korean-Tuned-MLX)
+- Modelo en Hugging Face: [encredible/Gaiel-7B-Korean-Tuned-MLX](https://huggingface.co/encredible/Gaiel-7B-Korean-Tuned-MLX)
 - Dataset de benchmarks del autor: [encredible/gaiel-mlx-benchmarks](https://huggingface.co/datasets/encredible/gaiel-mlx-benchmarks)
 - Modelo base: [Qwen/Qwen2.5-7B-Instruct](https://huggingface.co/Qwen/Qwen2.5-7B-Instruct)
 - Librería MLX: [mlx-lm](https://github.com/ml-explore/mlx-examples/tree/main/llms)

@@ -108,7 +108,7 @@ Como alternativa de familia, NVIDIA mantiene Nemotron 3 Ultra (550B totales, 55B
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nemotron-deciffusion/Nemotron-Deciffusion-8B-v2-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/nemotron-deciffusion/Nemotron-Deciffusion-8B-v2-NVFP4
 - Modelo base BF16: https://huggingface.co/nemotron-deciffusion/Nemotron-Deciffusion-8B-v2
 - Licencia: https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-nemotron-open-model-license/
 - NVIDIA Model Optimizer: https://github.com/NVIDIA/Model-Optimizer

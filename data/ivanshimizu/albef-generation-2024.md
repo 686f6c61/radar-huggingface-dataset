@@ -2,7 +2,7 @@
 
 ## Resumen
 
-IvanShimizu/albef-generation-2024 es un repositorio experimental publicado en HuggingFace por el usuario IvanShimizu, orientado a una variante de tipo "Albef" para tareas de generacion. No se trata de un modelo entrenado ni evaluado, sino de un punto de partida de codigo: la propia model card indica explicitamente que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con resultados de referencia.
+IvanShimizu/albef-generation-2024 es un repositorio experimental publicado en Hugging Face por el usuario IvanShimizu, orientado a una variante de tipo "Albef" para tareas de generacion. No se trata de un modelo entrenado ni evaluado, sino de un punto de partida de codigo: la propia model card indica explicitamente que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con resultados de referencia.
 
 El modelo se describe a si mismo con una escala "nano" y un diseno deliberadamente reducido para poder inspeccionar cambios de arquitectura antes de una ejecucion de entrenamiento completa. El dato real extraido de los pesos safetensors confirma un tamano de tan solo 49.600 parametros totales, lo que lo situa muy por debajo de cualquier modelo de lenguaje funcional. La arquitectura declarada es "Albef" (en referencia a la familia Align Before Fuse, originalmente de vision-lenguaje) con atencion linear, fusion de tensores, activacion gelu tanh y normalizacion batchnorm.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| IvanShimizu/albef-generation-2024 | 49.600 | no disponible | No (inicializacion) | MIT | HuggingFace |
+| IvanShimizu/albef-generation-2024 | 49.600 | no disponible | No (inicializacion) | MIT | Hugging Face |
 | salesforce/albef | no disponible en la informacion | no disponible | Si (preentrenado y ajustado en VQA, SNLI-VE, NLVR2, retrieval y grounding) | no disponible | Replicate / PyTorch oficial |
-| harutoanp/generation | no disponible | no disponible | No (variante "large" de la misma plantilla) | no disponible | HuggingFace |
+| harutoanp/generation | no disponible | no disponible | No (variante "large" de la misma plantilla) | no disponible | Hugging Face |
 
 Nota: la comparativa se limita a lo indicado en los resultados de busqueda. No hay datos publicos de parametros, contexto o rendimiento para salesforce/albef ni para harutoanp/generation en la informacion proporcionada.
 
@@ -81,8 +81,8 @@ Nota: la comparativa se limita a lo indicado en los resultados de busqueda. No h
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IvanShimizu/albef-generation-2024
-- Perfil del autor en HuggingFace: https://huggingface.co/IvanShimizu/models
+- Modelo en Hugging Face: https://huggingface.co/IvanShimizu/albef-generation-2024
+- Perfil del autor en Hugging Face: https://huggingface.co/IvanShimizu/models
 - Articulo de referencia sobre ALBEF (Align Before Fuse): https://www.emergentmind.com/topics/align-before-fuse-albef
 - Variante "large" de la misma plantilla: https://huggingface.co/harutoanp/generation
 - Implementacion oficial de ALBEF (salesforce): https://replicate.com/salesforce/albef/readme

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DesignCoder-MC es un modelo publicado en HuggingFace por el usuario chjdl1816 bajo licencia MIT. La model card asociada no contiene ninguna descripción tecnica, arquitectura, datos de entrenamiento ni informacion sobre capacidades, por lo que no es posible determinar con rigor que tipo de modelo es ni que problema resuelve. El repositorio registra cero descargas y cero likes en el momento de la consulta, lo que sugiere una publicacion reciente y sin validacion por parte de la comunidad.
+DesignCoder-MC es un modelo publicado en Hugging Face por el usuario chjdl1816 bajo licencia MIT. La model card asociada no contiene ninguna descripción tecnica, arquitectura, datos de entrenamiento ni informacion sobre capacidades, por lo que no es posible determinar con rigor que tipo de modelo es ni que problema resuelve. El repositorio registra cero descargas y cero likes en el momento de la consulta, lo que sugiere una publicacion reciente y sin validacion por parte de la comunidad.
 
 El identificador del modelo sugiere un posible enfoque hacia generacion de codigo o asistencia en tareas de diseno, pero esta interpretacion es especulativa y no esta respaldada por documentacion alguna en la model card. No se dispone de informacion sobre arquitectura, tamano de parametros, longitud de contexto, idiomas soportados ni formato de pesos.
 
@@ -45,7 +45,7 @@ No es posible recomendar casos de uso concretos sin informacion verificable sobr
 - Investigacion comparativa de modelos pequenos: como referencia en estudios de modelos publicados sin documentacion.
 - Fine-tuning sobre dominios especificos: la licencia MIT permitiria tecnicamente el ajuste, pero sin conocer la arquitectura no puede planificarse el pipeline.
 - Despliegue en entornos de bajo riesgo: no recomendable sin benchmarks ni evaluacion de calidad.
-- Uso educativo: para estudiar practicas de publicacion de modelos en HuggingFace y sus carencias documentales.
+- Uso educativo: para estudiar practicas de publicacion de modelos en Hugging Face y sus carencias documentales.
 
 ## Benchmarks y rendimiento
 
@@ -75,4 +75,4 @@ No disponible. No puede establecerse una comparativa fiable sin conocer el taman
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chjdl1816/designcoder-mc
+- Hugging Face: https://huggingface.co/chjdl1816/designcoder-mc

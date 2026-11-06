@@ -88,7 +88,7 @@ La comparación muestra que el fine-tune de Canary supera al de Parakeet en prec
 
 ## Enlaces
 
-- [HuggingFace del modelo `kinit/canary-1b-v2-sk`](https://huggingface.co/kinit/canary-1b-v2-sk)
+- [Hugging Face del modelo `kinit/canary-1b-v2-sk`](https://huggingface.co/kinit/canary-1b-v2-sk)
 - [Modelo base `nvidia/canary-1b-v2`](https://huggingface.co/nvidia/canary-1b-v2)
 - [Paper técnico de Canary-1B-v2 y Parakeet-TDT-0.6B-v3 (arXiv)](https://arxiv.org/html/2509.14128v2)
 - [Colección KInIT de ASR en Hugging Face](https://huggingface.co/collections/kinit/automatic-speech-recognition-6a42684efb87315cc9da3247)

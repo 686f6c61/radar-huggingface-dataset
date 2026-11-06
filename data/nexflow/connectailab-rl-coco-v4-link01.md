@@ -42,7 +42,7 @@ En la segunda etapa, el adaptador LoRA se ajusta primero de forma supervisada pa
 - Prototipado de agentes simulados: integrable en el entorno `connect_tycoon.link01` para sustituir el cerebro PPO por un LLM en tareas de navegacion 2D y comparar comportamiento.
 - Generacion de datos sinteticos de decision: el adaptador puede usarse para etiquetar estados con acciones plausibles y ampliar el conjunto de entrenamiento de otras politicas.
 - Evaluacion de robustez de prompts: al recibir estados en texto, permite probar ataques de inyeccion de instrucciones dentro del campo `state` y medir si el modelo respeta la separacion datos/instrucciones.
-- Educacion en despliegue PEFT: ejemplo minimo de carga de un adaptador LoRA con `peft.PeftModel.from_pretrained` sobre un modelo base de HuggingFace, util para talleres de despliegue.
+- Educacion en despliegue PEFT: ejemplo minimo de carga de un adaptador LoRA con `peft.PeftModel.from_pretrained` sobre un modelo base de Hugging Face, util para talleres de despliegue.
 
 ## Benchmarks y rendimiento
 
@@ -71,8 +71,8 @@ No se dispone de modelos directamente comparables en la informacion proporcionad
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-coco-v4-link01 (este) | Adaptador sobre base de ~0,8B | No disponible | Decision `goto_target` en robot simulado | Apache 2.0 | HuggingFace (repo de 0,0 GB, 0 descargas) |
-| Qwen/Qwen3.5-0.8B (base) | ~0,8B | No disponible | LLM generalista | No disponible en la informacion | HuggingFace |
+| connectailab-rl-coco-v4-link01 (este) | Adaptador sobre base de ~0,8B | No disponible | Decision `goto_target` en robot simulado | Apache 2.0 | Hugging Face (repo de 0,0 GB, 0 descargas) |
+| Qwen/Qwen3.5-0.8B (base) | ~0,8B | No disponible | LLM generalista | No disponible en la informacion | Hugging Face |
 | Politica PPO "cerebro" (`brain.json`) | No disponible | No aplica | Decision `goto_target` | No disponible | Repositorio `connect-tycoon` |
 
 No se identifican en la informacion proporcionada otros adaptadores RL para robotica simulada sobre modelos de 0,8B con los que comparar de forma rigurosa.
@@ -91,7 +91,7 @@ No se identifican en la informacion proporcionada otros adaptadores RL para robo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nexflow/connectailab-rl-coco-v4-link01
+- Hugging Face: https://huggingface.co/nexflow/connectailab-rl-coco-v4-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de codigo: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

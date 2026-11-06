@@ -86,5 +86,5 @@ Nota: no se dispone de resultados de benchmarks de BoccaccioAI para una comparac
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lollix91/boccaccioAI
+- Hugging Face: https://huggingface.co/lollix91/boccaccioAI
 - No se han encontrado en la informacion proporcionada enlaces adicionales a papers, blogs, repositorios o demos del modelo.

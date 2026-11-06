@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM2.5-230M-tools-GGUF es la conversión a formato GGUF del ajuste fino `iromu/LFM2.5-230M-tools`, un modelo de 229.693.184 parámetros (≈230 M) especializado en *tool calling* y *function calling* para flujos agénticos. Lo publica el usuario `iromu` en HuggingFace, no Liquid AI: se trata de un fine-tune con LoRA sobre `LiquidAI/LFM2.5-230M-Base`, la base de la familia LFM2 de Liquid AI. La licencia es Apache-2.0 y el único idioma declarado es el inglés.
+LFM2.5-230M-tools-GGUF es la conversión a formato GGUF del ajuste fino `iromu/LFM2.5-230M-tools`, un modelo de 229.693.184 parámetros (≈230 M) especializado en *tool calling* y *function calling* para flujos agénticos. Lo publica el usuario `iromu` en Hugging Face, no Liquid AI: se trata de un fine-tune con LoRA sobre `LiquidAI/LFM2.5-230M-Base`, la base de la familia LFM2 de Liquid AI. La licencia es Apache-2.0 y el único idioma declarado es el inglés.
 
 El problema que aborda es concreto: disponer de un emisor de llamadas a herramientas estructuradas en un espacio de 230 M de parámetros, pensado para despliegue en dispositivo (*on-device*) y *edge* con runtimes tipo llama.cpp. El repositorio empaqueta cuatro precisiones (BF16, Q4_K_M, Q5_K_M y Q8_0) que van de 441 MB a 147 MB, de modo que el modelo cabe en memoria de un móvil, una Raspberry Pi o un contenedor sin GPU.
 
@@ -109,11 +109,11 @@ Frente al modelo base, la comparación es directa y está medida: el fine-tune p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iromu/LFM2.5-230M-tools-GGUF
+- Modelo en Hugging Face: https://huggingface.co/iromu/LFM2.5-230M-tools-GGUF
 - Modelo base del fine-tune (pesos BF16 y tabla de validacion completa): https://huggingface.co/iromu/LFM2.5-230M-tools
 - Modelo base original de Liquid AI: https://huggingface.co/LiquidAI/LFM2.5-230M-Base
 - Dataset de destilacion declarado: https://huggingface.co/datasets/r0b0tlab/qwen3.8-max-glm5.2-kimi-k3-distillation
 - Runtime de referencia (llama.cpp): https://github.com/ggml-org/llama.cpp
 - Bindings de Python (llama-cpp-python): https://github.com/abetlen/llama-cpp-python
 
-Nota: los resultados de la busqueda web realizada no contenian enlaces relevantes al modelo (devolvieron contenido ajeno al proyecto), por lo que la lista anterior se limita a las referencias presentes en la informacion de HuggingFace y a los repositorios de los runtimes citados en la model card. No se han localizado papers ni blogs tecnicos adicionales.
+Nota: los resultados de la busqueda web realizada no contenian enlaces relevantes al modelo (devolvieron contenido ajeno al proyecto), por lo que la lista anterior se limita a las referencias presentes en la informacion de Hugging Face y a los repositorios de los runtimes citados en la model card. No se han localizado papers ni blogs tecnicos adicionales.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Dark-Craving-26B-A4B-rad es un modelo publicado en HuggingFace por el usuario LuoHuaZC bajo licencia Apache 2.0. El identificador del repositorio sugiere una variante de aproximadamente 26.000 millones de parámetros totales con unos 4.000 millones de parámetros activos, lo que apunta a una arquitectura de mezcla de expertos (MoE) con activación dispersa, si bien esta interpretación se deduce únicamente del nombre y no está confirmada por documentación oficial. El sufijo "rad" no tiene explicación en la información disponible.
+Dark-Craving-26B-A4B-rad es un modelo publicado en Hugging Face por el usuario LuoHuaZC bajo licencia Apache 2.0. El identificador del repositorio sugiere una variante de aproximadamente 26.000 millones de parámetros totales con unos 4.000 millones de parámetros activos, lo que apunta a una arquitectura de mezcla de expertos (MoE) con activación dispersa, si bien esta interpretación se deduce únicamente del nombre y no está confirmada por documentación oficial. El sufijo "rad" no tiene explicación en la información disponible.
 
 La model card publicada es prácticamente vacía: solo contiene la declaración de licencia Apache 2.0, sin descripción, sin datos de entrenamiento, sin especificaciones técnicas ni resultados de evaluación. El repositorio registra cero descargas y cero "likes", y no tiene pipeline declarado ni idiomas especificados, lo que indica que se trata de un artefacto recién subido y sin validación por parte de la comunidad.
 
@@ -42,7 +42,7 @@ Tampoco se dispone de datos sobre el corpus de entrenamiento: número de tokens,
 - Pruebas de integración en pipelines de inferencia: sirve para validar compatibilidad con vLLM, llama.cpp u otros motores, siempre que se confirmen previamente los formatos de pesos disponibles.
 - Comparación de arquitecturas MoE: si se confirma la estructura 26B-A4B, puede usarse como punto de referencia en estudios sobre eficiencia de activación dispersa frente a modelos densos de tamaño similar.
 - Fine-tuning experimental: la licencia Apache 2.0 permite derivados y ajuste fino, lo que facilita su uso como base en proyectos de investigación que acepten el riesgo de partir de un modelo sin evaluar.
-- Docencia y formación: útil como ejemplo práctico de publicación de modelos en HuggingFace y de la importancia de una model card completa.
+- Docencia y formación: útil como ejemplo práctico de publicación de modelos en Hugging Face y de la importancia de una model card completa.
 - No recomendado para atención al cliente, generación de código en producción, análisis documental ni ninguna aplicación con requisitos de fiabilidad, al no existir evidencia de rendimiento ni de seguridad.
 
 ## Benchmarks y rendimiento
@@ -74,11 +74,11 @@ No es posible establecer una comparativa fiable porque se desconocen las especif
 - Riesgo elevado de alucinación y comportamientos no caracterizados, al no existir benchmarks ni evaluaciones publicadas.
 - Imposibilidad de verificar la arquitectura real, el contexto máximo o los idiomas soportados a partir de la documentación.
 - Licencia Apache 2.0 permite uso comercial y derivados, pero el usuario asume todo el riesgo sobre la procedencia de los datos y posibles reclamaciones de terceros.
-- Cero descargas y cero interacciones en HuggingFace: no hay evidencia de que el modelo haya sido probado por terceros.
+- Cero descargas y cero interacciones en Hugging Face: no hay evidencia de que el modelo haya sido probado por terceros.
 - Fecha de creación declarada en 2026-11-04, posterior a la fecha actual de muchas consultas; conviene verificar la autenticidad y vigencia del repositorio antes de cualquier uso.
 - No apto para producción sin una auditoría previa completa de pesos, comportamiento y seguridad.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LuoHuaZC/Dark-Craving-26B-A4B-rad
+- Hugging Face: https://huggingface.co/LuoHuaZC/Dark-Craving-26B-A4B-rad
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

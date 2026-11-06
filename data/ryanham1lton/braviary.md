@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Braviary es un modelo publicado en HuggingFace por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La model card asociada no contiene ninguna descripción técnica, ni documentación sobre arquitectura, entrenamiento o capacidades; únicamente incluye la declaración de licencia. El repositorio ocupa 0,1 GB, lo que sugiere un conjunto de pesos de pequeño tamaño, pero no se dispone de información que permita confirmar la arquitectura ni el número de parámetros.
+Braviary es un modelo publicado en Hugging Face por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La model card asociada no contiene ninguna descripción técnica, ni documentación sobre arquitectura, entrenamiento o capacidades; únicamente incluye la declaración de licencia. El repositorio ocupa 0,1 GB, lo que sugiere un conjunto de pesos de pequeño tamaño, pero no se dispone de información que permita confirmar la arquitectura ni el número de parámetros.
 
 No se han publicado datos sobre el pipeline de inferencia, los idiomas soportados, la longitud de contexto ni los formatos de pesos. Tampoco consta ninguna descarga ni interacción en el momento de la consulta, lo que indica que se trata de una publicación reciente y sin validación por parte de la comunidad.
 
@@ -71,5 +71,5 @@ No disponible. No se ha identificado la categoría del modelo (tamaño, tarea, a
 
 ## Enlaces
 
-- [HuggingFace: Ryanham1lton/Braviary](https://huggingface.co/Ryanham1lton/Braviary)
+- [Hugging Face: Ryanham1lton/Braviary](https://huggingface.co/Ryanham1lton/Braviary)
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

@@ -4,7 +4,7 @@
 
 LibreMarigoldV2b-depth-log-stage1 es un adaptador de estimacion de profundidad publicado por LibreYOLO para su framework de inferencia. No es un modelo independiente: se trata de un checkpoint de adaptador junto con tensores de prompt fijos, derivados del subfolder `depth/Log-stage1` del modelo huawei-bayerlab/marigold-v2-0 (revision `6fd6d1ca246c9d2d99a4d8ac375a4eccc87178ad`). La arquitectura subyacente es un diffusion transformer de Marigold V2, que utiliza Qwen/Qwen-Image-Edit-2509 congelado como base, fijado a la revision `d3968ef930e841f4c73640fb8afa3b306a78167e`.
 
-El adaptador cubre la etapa `log` (`log-stage1`), cuyo objetivo es producir mapas de profundidad codificados en espacio logaritmico. Los valores de salida usan codificacion `log_depth` y son afin-relativos en ese espacio, no metros absolutos, un detalle critico para cualquier integracion en produccion. El pipeline declarado en HuggingFace es `depth-estimation`.
+El adaptador cubre la etapa `log` (`log-stage1`), cuyo objetivo es producir mapas de profundidad codificados en espacio logaritmico. Los valores de salida usan codificacion `log_depth` y son afin-relativos en ese espacio, no metros absolutos, un detalle critico para cualquier integracion en produccion. El pipeline declarado en Hugging Face es `depth-estimation`.
 
 Su relevancia actual es fundamentalmente de integracion: permite ejecutar la etapa `log-stage1` de Marigold V2 dentro de LibreYOLO sin reimplementar el decodificador ni los tensores de prompt, y con verificacion de paridad numerica frente a la implementacion nativa. El repo ocupa 1,7 GB y la libreria asociada es `libreyolo`.
 
@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LibreMarigoldV2b-depth-log-stage1 | Adaptador de profundidad (diffusion transformer) sobre Qwen-Image-Edit | no disponible | no aplica | apache-2.0 | HuggingFace, requiere base descargado aparte |
-| huawei-bayerlab/marigold-v2-0 | Modelo original del que se extrae la etapa `log-stage1` | no disponible | no aplica | apache-2.0 | HuggingFace, implementacion en GitHub |
+| LibreMarigoldV2b-depth-log-stage1 | Adaptador de profundidad (diffusion transformer) sobre Qwen-Image-Edit | no disponible | no aplica | apache-2.0 | Hugging Face, requiere base descargado aparte |
+| huawei-bayerlab/marigold-v2-0 | Modelo original del que se extrae la etapa `log-stage1` | no disponible | no aplica | apache-2.0 | Hugging Face, implementacion en GitHub |
 | Depth Anything V2 | Estimador de profundidad monocular | no disponible en la informacion disponible | no aplica | no disponible en la informacion disponible | no disponible en la informacion disponible |
 
 No se dispone de datos de rendimiento comparado entre estas alternativas en la informacion proporcionada.
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento comparado entre estas alternativas en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LibreYOLO/LibreMarigoldV2b-depth-log-stage1
+- Modelo en Hugging Face: https://huggingface.co/LibreYOLO/LibreMarigoldV2b-depth-log-stage1
 - Modelo base Marigold V2: https://huggingface.co/huawei-bayerlab/marigold-v2-0/tree/6fd6d1ca246c9d2d99a4d8ac375a4eccc87178ad
 - Modelo base Qwen-Image-Edit: https://huggingface.co/Qwen/Qwen-Image-Edit-2509/tree/d3968ef930e841f4c73640fb8afa3b306a78167e
 - Implementacion de referencia Marigold V2: https://github.com/huawei-bayerlab/marigold-v2/tree/cc6a7031abcd59fd9e1ceff7fdd0d9687d389bc5

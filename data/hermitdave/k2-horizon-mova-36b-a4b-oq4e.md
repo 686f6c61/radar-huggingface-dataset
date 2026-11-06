@@ -70,12 +70,12 @@ No se dispone de comparativas directas con modelos alternativos concretos en la 
 - Los idiomas soportados no se especifican; el modelo podría tener un rendimiento limitado en lenguas distintas del inglés, pero no hay datos que lo confirmen.
 - La cuantización oQ4e es una conversión de baja precisión que, aunque el autor estima una calidad "uniforme de ~6 bits", puede introducir pérdida de precisión en comparación con los pesos originales.
 - El modelo es un modelo de razonamiento y requiere configurar `reasoning_effort="high"` para obtener resultados óptimos; si se omite, la calidad de las respuestas puede degradarse.
-- El repositorio de HuggingFace tiene 0 descargas y 0 likes, lo que indica que es una conversión reciente y poco probada. Se recomienda verificar el modelo upstream y los resultados de la conversión antes de usarlo en producción.
+- El repositorio de Hugging Face tiene 0 descargas y 0 likes, lo que indica que es una conversión reciente y poco probada. Se recomienda verificar el modelo upstream y los resultados de la conversión antes de usarlo en producción.
 - La licencia Apache-2.0 permite uso comercial, pero exige mantener el aviso de copyright y la atribución correspondiente.
 
 ## Enlaces
 
-- Modelo cuantizado en HuggingFace: https://huggingface.co/hermitdave/K2-Horizon-MoVA-36B-A4B-oQ4e
-- Modelo upstream en HuggingFace: https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B
+- Modelo cuantizado en Hugging Face: https://huggingface.co/hermitdave/K2-Horizon-MoVA-36B-A4B-oQ4e
+- Modelo upstream en Hugging Face: https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B
 - Blog de presentación del modelo: https://ifm.ai/blog/k2/
 - Ficha con benchmarks en Benchgen: https://benchgen.com/models/ifm/k2-horizon-mova-36b-a4b

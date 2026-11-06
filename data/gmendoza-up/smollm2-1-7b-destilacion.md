@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gmendoza-up/smollm2-1.7b-destilacion` es un adaptador LoRA publicado en HuggingFace por el usuario gmendoza-up, desarrollado en el marco de un taller académico de destilación de conocimiento. No se trata de un modelo completo, sino de un conjunto de pesos PEFT que debe cargarse sobre el modelo base `HuggingFaceTB/SmolLM2-1.7B-Instruct`, un transformer decoder-only de 1,7 mil millones de parámetros. El adaptador está especializado en español y etiquetado para aplicaciones educativas y empresariales.
+`gmendoza-up/smollm2-1.7b-destilacion` es un adaptador LoRA publicado en Hugging Face por el usuario gmendoza-up, desarrollado en el marco de un taller académico de destilación de conocimiento. No se trata de un modelo completo, sino de un conjunto de pesos PEFT que debe cargarse sobre el modelo base `HuggingFaceTB/SmolLM2-1.7B-Instruct`, un transformer decoder-only de 1,7 mil millones de parámetros. El adaptador está especializado en español y etiquetado para aplicaciones educativas y empresariales.
 
 El problema que aborda es acotado y explícito: mejorar la calidad de las respuestas del modelo base en un dominio concreto mediante ajuste supervisado con ejemplos preparados para el taller. La propia model card reporta una subida de la nota media de 2,33 a 4,25 sobre 10 en la evaluación interna del autor, manteniendo un 0 % de respuestas que superan el umbral de aprobación de 7. Es, por tanto, un artefacto experimental y no un modelo listo para producción.
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`yanayaco/Model_pository` es un repositorio alojado en HuggingFace por el usuario `yanayaco`. En el momento de la consulta acumula 0 descargas y 0 "likes", y su unico metadato sustantivo es la licencia OpenRAIL. El repositorio ocupa 0,2 GB y fue creado el 2026-10-03, con una actualizacion 23 segundos despues de su creacion, lo que apunta a una subida automatizada, a una prueba de pipeline o a un repositorio plantilla en lugar de a un modelo entrenado y publicado de forma estable.
+`yanayaco/Model_pository` es un repositorio alojado en Hugging Face por el usuario `yanayaco`. En el momento de la consulta acumula 0 descargas y 0 "likes", y su unico metadato sustantivo es la licencia OpenRAIL. El repositorio ocupa 0,2 GB y fue creado el 2026-10-03, con una actualizacion 23 segundos despues de su creacion, lo que apunta a una subida automatizada, a una prueba de pipeline o a un repositorio plantilla en lugar de a un modelo entrenado y publicado de forma estable.
 
 La model card no contiene informacion tecnica: unicamente la declaracion de licencia (`license: openrail`). No se especifican arquitectura, numero de parametros, longitud de contexto, idiomas, formato de pesos ni datos de entrenamiento. Tampoco hay resultados de benchmarks, demos, papers ni documentacion asociada.
 
@@ -84,7 +84,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yanayaco/Model_pository
-- Perfil del autor en HuggingFace: https://huggingface.co/yanayaco
+- Modelo en Hugging Face: https://huggingface.co/yanayaco/Model_pository
+- Perfil del autor en Hugging Face: https://huggingface.co/yanayaco
 - Referencia sobre las licencias OpenRAIL: https://huggingface.co/blog/open_rail
 - Paper, repositorio de codigo, demo o blog del autor: no disponible.

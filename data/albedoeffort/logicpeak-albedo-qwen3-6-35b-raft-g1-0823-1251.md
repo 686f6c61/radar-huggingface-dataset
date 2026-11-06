@@ -4,7 +4,7 @@
 
 El modelo `logicpeak-albedo-qwen3.6-35b-raft-g1-0823-1251`, desarrollado por el usuario albedoeffort (Macro Hoffman), es una variante ajustada de la familia Qwen 3.6 con arquitectura Mixture-of-Experts (MoE). Con 35 107 204 936 parámetros totales, está diseñado como un sistema multimodal de imagen-a-texto y texto-a-texto, capaz de procesar imágenes, vídeo y texto, según las capacidades de la familia Qwen 3.5/3.6 sobre la que se basa. Su nombre sugiere un ajuste mediante la técnica RAFT (Retrieval-Augmented Fine-Tuning) orientado a razonamiento lógico, aunque no se dispone de documentación oficial que detalle el proceso.
 
-El modelo se publica bajo licencia Apache-2.0 y con acceso restringido (gated) en HuggingFace, lo que exige aceptar condiciones adicionales antes de su descarga. Aunque aún no cuenta con descargas ni likes, su arquitectura heredada de Qwen 3.5 VL MoE (Qwen3_5MoeForConditionalGeneration) lo hace relevante para desarrolladores que buscan modelos multimodales de código abierto con capacidad de razonamiento avanzado. No obstante, la falta de información pública sobre su entrenamiento y benchmarks limita su evaluación directa.
+El modelo se publica bajo licencia Apache-2.0 y con acceso restringido (gated) en Hugging Face, lo que exige aceptar condiciones adicionales antes de su descarga. Aunque aún no cuenta con descargas ni likes, su arquitectura heredada de Qwen 3.5 VL MoE (Qwen3_5MoeForConditionalGeneration) lo hace relevante para desarrolladores que buscan modelos multimodales de código abierto con capacidad de razonamiento avanzado. No obstante, la falta de información pública sobre su entrenamiento y benchmarks limita su evaluación directa.
 
 ## Especificaciones técnicas
 

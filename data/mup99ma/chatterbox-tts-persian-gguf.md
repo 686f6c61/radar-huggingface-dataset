@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- [HuggingFace: mup99ma/Chatterbox-TTS-Persian-gguf](https://huggingface.co/mup99ma/Chatterbox-TTS-Persian-gguf)
+- [Hugging Face: mup99ma/Chatterbox-TTS-Persian-gguf](https://huggingface.co/mup99ma/Chatterbox-TTS-Persian-gguf)
 - [Modelo base intermedio: Thomcles/Chatterbox-TTS-Persian-Farsi](https://huggingface.co/Thomcles/Chatterbox-TTS-Persian-Farsi)
 - [Modelo original: ResembleAI/chatterbox](https://huggingface.co/ResembleAI/chatterbox)
 - [Motor de inferencia: CrispStrobe/CrispASR](https://github.com/CrispStrobe/CrispASR)

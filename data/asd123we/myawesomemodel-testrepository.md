@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo alojado en HuggingFace bajo el identificador `ASD123WE/MyAwesomeModel-TestRepository`, creado por el usuario ASD123WE. El repositorio está etiquetado como de prueba (`TestRepository`), con un tamaño de 0.0 GB, lo que indica que no contiene pesos reales publicados. A pesar de ello, la model card describe un modelo de razonamiento y generación de texto que habría experimentado una actualización significativa, mejorando su capacidad de razonamiento profundo, reducción de alucinaciones y soporte para function calling. No se especifican detalles de arquitectura, número de parámetros ni longitud de contexto. La licencia es MIT, y el pipeline declarado es `feature-extraction`, aunque la descripción sugiere capacidades de generación de texto, lo que genera cierta inconsistencia.
+MyAwesomeModel es un modelo alojado en Hugging Face bajo el identificador `ASD123WE/MyAwesomeModel-TestRepository`, creado por el usuario ASD123WE. El repositorio está etiquetado como de prueba (`TestRepository`), con un tamaño de 0.0 GB, lo que indica que no contiene pesos reales publicados. A pesar de ello, la model card describe un modelo de razonamiento y generación de texto que habría experimentado una actualización significativa, mejorando su capacidad de razonamiento profundo, reducción de alucinaciones y soporte para function calling. No se especifican detalles de arquitectura, número de parámetros ni longitud de contexto. La licencia es MIT, y el pipeline declarado es `feature-extraction`, aunque la descripción sugiere capacidades de generación de texto, lo que genera cierta inconsistencia.
 
 Dado que se trata de un repositorio de prueba sin artefactos descargables, la ficha se basa exclusivamente en la información declarada en la model card, que debe interpretarse con cautela. No hay evidencia de que el modelo sea funcional ni de que los benchmarks presentados correspondan a una implementación real.
 
@@ -21,7 +21,7 @@ Dado que se trata de un repositorio de prueba sin artefactos descargables, la fi
 
 ## Arquitectura y entrenamiento
 
-La model card no proporciona detalles sobre la arquitectura del modelo. Menciona que "MyAwesomeModel" ha sufrido una actualización de versión que mejora su profundidad de razonamiento mediante "increased computational resources" y "algorithmic optimization mechanisms during post-training", pero no especifica el tipo de red (transformer, MoE, etc.) ni el proceso de entrenamiento (número de tokens, dataset, técnicas como RLHF o DPO). Tampoco se indica el tamaño del modelo ni la configuración de capas. La única referencia técnica es la etiqueta `bert` en los tags de HuggingFace, que podría ser un placeholder del repositorio de prueba y no una descripción real de la arquitectura.
+La model card no proporciona detalles sobre la arquitectura del modelo. Menciona que "MyAwesomeModel" ha sufrido una actualización de versión que mejora su profundidad de razonamiento mediante "increased computational resources" y "algorithmic optimization mechanisms during post-training", pero no especifica el tipo de red (transformer, MoE, etc.) ni el proceso de entrenamiento (número de tokens, dataset, técnicas como RLHF o DPO). Tampoco se indica el tamaño del modelo ni la configuración de capas. La única referencia técnica es la etiqueta `bert` en los tags de Hugging Face, que podría ser un placeholder del repositorio de prueba y no una descripción real de la arquitectura.
 
 ## Capacidades
 
@@ -96,4 +96,4 @@ No se dispone de informacion suficiente para realizar una comparativa con modelo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ASD123WE/MyAwesomeModel-TestRepository
+- Repositorio en Hugging Face: https://huggingface.co/ASD123WE/MyAwesomeModel-TestRepository

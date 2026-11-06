@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PAWS-Dog-Affect (Pet Affect Watch System) es un clasificador de imagenes desarrollado por el usuario chrisc0230 y publicado en HuggingFace bajo licencia MIT. Su tarea es predecir el estado emocional o comportamental de un perro a partir de una imagen, distinguiendo entre 13 clases: happy, relaxed, excited, playful, curious, alert, anxious, fearful, angry, sad, bored, tired y sleepy. El modelo esta exportado en formato ONNX, lo que indica que su diseno esta orientado a la inferencia ligera, incluida la ejecucion directamente en el navegador.
+PAWS-Dog-Affect (Pet Affect Watch System) es un clasificador de imagenes desarrollado por el usuario chrisc0230 y publicado en Hugging Face bajo licencia MIT. Su tarea es predecir el estado emocional o comportamental de un perro a partir de una imagen, distinguiendo entre 13 clases: happy, relaxed, excited, playful, curious, alert, anxious, fearful, angry, sad, bored, tired y sleepy. El modelo esta exportado en formato ONNX, lo que indica que su diseno esta orientado a la inferencia ligera, incluida la ejecucion directamente en el navegador.
 
 La relevancia del modelo es acotada y muy especifica: se trata de un clasificador de vision por computador de dominio restringido (etologia canina), no de un modelo de lenguaje ni de un modelo multimodal generalista. El autor reporta unas metricas de accuracy 0,616 y macro-F1 0,652 sobre el conjunto de test, lo que situa su rendimiento en un rango moderado y coherente con una tarea subjetiva y con alta ambiguedad entre clases (por ejemplo, "relaxed" frente a "sleepy" o "curious" frente a "alert").
 
@@ -76,7 +76,7 @@ No se dispone de datos de benchmarks ni de especificaciones tecnicas suficientes
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PAWS-Dog-Affect (chrisc0230) | no disponible | no aplicable | accuracy 0,616; macro-F1 0,652 en su test set | MIT | ONNX en HuggingFace |
+| PAWS-Dog-Affect (chrisc0230) | no disponible | no aplicable | accuracy 0,616; macro-F1 0,652 en su test set | MIT | ONNX en Hugging Face |
 | Backbones genericos de clasificacion (ResNet, MobileNet, EfficientNet, ViT) ajustados a la tarea | no disponible para esta tarea | no aplicable | no disponible | variable segun backbone | ampliamente disponibles |
 | Clasificadores de emocion animal de la literatura academica | no disponible | no aplicable | no disponible | variable | publicaciones, no siempre con pesos abiertos |
 
@@ -97,6 +97,6 @@ La comparacion cuantitativa con modelos equivalentes no es posible con la inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chrisc0230/paws-dog-affect
+- Modelo en Hugging Face: https://huggingface.co/chrisc0230/paws-dog-affect
 
 Nota: la busqueda web realizada no devolvio ningun resultado relevante relacionado con este modelo, su arquitectura, su dataset o su evaluacion. Los unicos enlaces recuperados no guardan relacion con el modelo ni con la clasificacion de imagenes de animales, por lo que se omite su inclusion. No se dispone de paper, blog tecnico, repositorio de codigo ni demo asociados en la informacion proporcionada.

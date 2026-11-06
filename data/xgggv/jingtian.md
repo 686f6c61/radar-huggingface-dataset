@@ -2,7 +2,7 @@
 
 ## Resumen
 
-XGGGV/jingtian (titulado "jtv1" en su model card) es un adaptador LoRA de texto a imagen publicado por el usuario XGGGV en HuggingFace. No se trata de un modelo completo, sino de un conjunto de pesos de bajo rango que se aplican sobre el modelo base krea/Krea-2-Turbo, un generador de imagenes de la familia Krea empaquetado para la libreria diffusers. El repositorio ocupa 0,2 GB y se distribuye con la etiqueta template:diffusion-lora, la convencion habitual de HuggingFace para adaptadores de difusion.
+XGGGV/jingtian (titulado "jtv1" en su model card) es un adaptador LoRA de texto a imagen publicado por el usuario XGGGV en Hugging Face. No se trata de un modelo completo, sino de un conjunto de pesos de bajo rango que se aplican sobre el modelo base krea/Krea-2-Turbo, un generador de imagenes de la familia Krea empaquetado para la libreria diffusers. El repositorio ocupa 0,2 GB y se distribuye con la etiqueta template:diffusion-lora, la convencion habitual de Hugging Face para adaptadores de difusion.
 
 El objetivo declarado es la personalizacion de la generacion de imagenes mediante una palabra de activacion (trigger word): `jingtian`. La model card indica un peso de LoRA recomendado de 1.2 y no aporta informacion sobre el conjunto de datos de entrenamiento, el numero de pasos, la resolucion ni el tipo de concepto aprendido (personaje, persona, estilo u objeto). Tampoco se documentan idiomas soportados, benchmarks ni requisitos de hardware.
 
@@ -75,7 +75,7 @@ No hay comparadores directos identificables en la informacion disponible: no se 
 
 | Enfoque | Parametros entrenables | Tamano tipico del artefacto | Reutilizacion del modelo base | Disponibilidad en este caso |
 |---|---|---|---|---|
-| LoRA (este modelo) | Bajo rango, reducido | 0,2 GB en este repositorio | Total; se aplica y se retira en caliente | Publico en HuggingFace, con 0 descargas |
+| LoRA (este modelo) | Bajo rango, reducido | 0,2 GB en este repositorio | Total; se aplica y se retira en caliente | Publico en Hugging Face, con 0 descargas |
 | Textual inversion | Solo un embedding de texto | Unos pocos KB | Total | No disponible para este base |
 | Fine-tuning completo | Todos los pesos | Del orden del modelo base | Baja; requiere una copia completa | No disponible para este base |
 
@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento comparado (similitud con el concepto, fide
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/XGGGV/jingtian
+- Modelo en Hugging Face: https://huggingface.co/XGGGV/jingtian
 - Repositorio de ficheros: https://huggingface.co/XGGGV/jingtian/tree/main
 - Modelo base declarado: https://huggingface.co/krea/Krea-2-Turbo
 - Fichero de licencia referenciado en la model card: LICENSE (dentro del propio repositorio; no se ha verificado su contenido)

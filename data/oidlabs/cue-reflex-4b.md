@@ -81,8 +81,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CueReflex-E4B | no disponible (adaptador sobre `gemma-4-E4B-it`) | 4.096 tokens | Decision calibrada System-1 sobre opciones acotadas | Apache-2.0 | HuggingFace (v0.1) |
-| `google/gemma-4-E4B-it` | no disponible | no disponible | LLM generativo multimodal de proposito general | no disponible en la informacion | HuggingFace |
+| CueReflex-E4B | no disponible (adaptador sobre `gemma-4-E4B-it`) | 4.096 tokens | Decision calibrada System-1 sobre opciones acotadas | Apache-2.0 | Hugging Face (v0.1) |
+| `google/gemma-4-E4B-it` | no disponible | no disponible | LLM generativo multimodal de proposito general | no disponible en la informacion | Hugging Face |
 | Alternativas de clasificacion calibrada | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre modelos comparables de la misma categoria (clasificadores de decision calibrados sobre LLM) en la documentacion proporcionada.
@@ -100,5 +100,5 @@ No se dispone de informacion sobre modelos comparables de la misma categoria (cl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oidlabs/cue-reflex-4B
+- Modelo en Hugging Face: https://huggingface.co/oidlabs/cue-reflex-4B
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it

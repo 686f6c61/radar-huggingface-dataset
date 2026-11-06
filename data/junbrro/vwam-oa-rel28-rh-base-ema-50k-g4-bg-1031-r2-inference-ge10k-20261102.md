@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vwam-oa-rel28-rh-base-ema-50k-g4-bg-1031-r2 | no disponible | no disponible | sin benchmarks publicados | no disponible | HuggingFace, runtime propietario |
+| vwam-oa-rel28-rh-base-ema-50k-g4-bg-1031-r2 | no disponible | no disponible | sin benchmarks publicados | no disponible | Hugging Face, runtime propietario |
 | Alternativas VLA comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información suficiente para establecer una comparativa rigurosa con otras políticas VLA (por ejemplo, familias OpenVLA o RT-2), ya que no se han publicado parámetros, contexto ni métricas de este checkpoint.
@@ -83,5 +83,5 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/junbrro/vwam-oa-rel28-rh-base-ema-50k-g4-bg-1031-r2-inference-ge10k-20261102
+- Hugging Face: https://huggingface.co/junbrro/vwam-oa-rel28-rh-base-ema-50k-g4-bg-1031-r2-inference-ge10k-20261102
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

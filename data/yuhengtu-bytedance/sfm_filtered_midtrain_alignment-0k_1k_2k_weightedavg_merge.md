@@ -9,7 +9,7 @@ La relevancia de este modelo radica en su metodología: en lugar de entrenar un 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | gpt_neox (segun tags de HuggingFace) |
+| Arquitectura | gpt_neox (segun tags de Hugging Face) |
 | Parametros totales | 6.856.253.440 |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
@@ -19,7 +19,7 @@ La relevancia de este modelo radica en su metodología: en lugar de entrenar un 
 | Formato de pesos | safetensors (bfloat16) |
 
 ## Arquitectura y entrenamiento
-La arquitectura esta marcada como `gpt_neox` en los tags de HuggingFace, lo que indica una arquitectura transformer decoder-only similar a la de GPT-NeoX. El modelo se creo mediante el metodo de fusion lineal (Linear merge) implementado en mergekit, que consiste en calcular una media ponderada de los pesos de varios modelos base. En este caso, se fusionaron tres checkpoints del mismo entrenamiento (global_step0, global_step1000 y global_step2000) con pesos 1, 2 y 3 respectivamente, usando el checkpoint de global_step2000 como base. La fusion se realizo en float32 y se exporto a bfloat16.
+La arquitectura esta marcada como `gpt_neox` en los tags de Hugging Face, lo que indica una arquitectura transformer decoder-only similar a la de GPT-NeoX. El modelo se creo mediante el metodo de fusion lineal (Linear merge) implementado en mergekit, que consiste en calcular una media ponderada de los pesos de varios modelos base. En este caso, se fusionaron tres checkpoints del mismo entrenamiento (global_step0, global_step1000 y global_step2000) con pesos 1, 2 y 3 respectivamente, usando el checkpoint de global_step2000 como base. La fusion se realizo en float32 y se exporto a bfloat16.
 
 No se dispone de informacion sobre el dataset de entrenamiento, el numero de tokens, ni si se aplicaron tecnicas de alineacion como RLHF o DPO. El nombre del modelo sugiere que los checkpoints provienen de un entrenamiento con "filtered_midtrain_alignment", lo que podria indicar que se aplico algun tipo de filtrado o alineacion durante el entrenamiento, pero no hay detalles concretos.
 
@@ -61,7 +61,7 @@ No se dispone de informacion suficiente para realizar una comparativa con modelo
 - Sin garantias de rendimiento: al no haber benchmarks, no se puede asegurar su calidad en tareas especificas.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_midtrain_alignment-0k_1k_2k_weightedavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_midtrain_alignment-0k_1k_2k_weightedavg_merge
 - Modelo similar (4k-5k-6k): https://huggingface.co/yuhengtu-bytedance/sfm-filtered-midtrain-alignment-4k-5k-6k-avg
 - Modelo similar (e2e): https://huggingface.co/yuhengtu-bytedance/sfm-filtered-e2e-alignment-4k-5k-6k-avg
 - Despliegue en FriendliAI: https://friendli.ai/models/yuhengtu-bytedance/sfm_filtered_midtrain_alignment-0k_1k_2k_merge

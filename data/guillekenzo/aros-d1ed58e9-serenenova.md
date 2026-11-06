@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`guillekenzo/aros-d1ed58e9-SereneNova` es un adaptador LoRA de tipo DreamBooth para el modelo de difusion texto-a-imagen Krea 2, desarrollado por el usuario de HuggingFace guillekenzo. El adaptador se entrena sobre los pesos de Krea 2 RAW y se distribuye para su uso con la variante Krea 2 Turbo, lo que permite invocar un concepto visual concreto mediante el token disparador `sqh woman`. Se publica bajo licencia Apache 2.0 y con un peso de repositorio de 0,4 GB, coherente con un adaptador de bajo rango y no con un modelo completo.
+`guillekenzo/aros-d1ed58e9-SereneNova` es un adaptador LoRA de tipo DreamBooth para el modelo de difusion texto-a-imagen Krea 2, desarrollado por el usuario de Hugging Face guillekenzo. El adaptador se entrena sobre los pesos de Krea 2 RAW y se distribuye para su uso con la variante Krea 2 Turbo, lo que permite invocar un concepto visual concreto mediante el token disparador `sqh woman`. Se publica bajo licencia Apache 2.0 y con un peso de repositorio de 0,4 GB, coherente con un adaptador de bajo rango y no con un modelo completo.
 
 El modelo no aporta una arquitectura nueva: hereda la del modelo base Krea 2, un text-to-image de la familia de difusion latente, y se limita a inyectar un ajuste de bajo rango sobre sus capas de atencion. Su relevancia es practica: demuestra el flujo de personalizacion sobre Krea 2 mediante DreamBooth-LoRA y su integracion con la libreria `diffusers` a traves de `Krea2Pipeline`, con ejemplos de inferencia a 8 pasos y `guidance_scale=0.0` sobre la variante Turbo.
 
@@ -78,7 +78,7 @@ No disponible. La informacion proporcionada no incluye otros adaptadores LoRA pa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/guillekenzo/aros-d1ed58e9-SereneNova
+- Modelo en Hugging Face: https://huggingface.co/guillekenzo/aros-d1ed58e9-SereneNova
 - Modelo base RAW: https://huggingface.co/krea/Krea-2-Raw
 - Modelo base Turbo (referenciado en el codigo de ejemplo): https://huggingface.co/krea/Krea-2-Turbo
 - Libreria diffusers: https://github.com/huggingface/diffusers

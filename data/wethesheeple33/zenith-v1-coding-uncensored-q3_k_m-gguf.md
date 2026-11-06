@@ -66,10 +66,10 @@ No se dispone de datos verificados de este modelo (ni de su base) para establece
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Observaciones |
 |---|---|---|---|---|---|
-| zenith-v1-coding-uncensored (Q3_K_M, este repo) | ~3,82 B | no disponible | no disponible | GGUF Q3_K_M en HuggingFace | Sin datos de rendimiento ni validacion comunitaria |
-| Qwen2.5-Coder-3B | ~3 B | no disponible en esta ficha | no disponible en esta ficha | pesos y GGUF en HuggingFace | Alternativa conocida de codigo en el mismo rango de tamano |
-| Llama-3.2-3B-Instruct | ~3,2 B | no disponible en esta ficha | no disponible en esta ficha | pesos y GGUF en HuggingFace | Alternativa generalista del mismo orden de magnitud |
-| Phi-3.5-mini-instruct | ~3,8 B | no disponible en esta ficha | no disponible en esta ficha | pesos y GGUF en HuggingFace | Tamano muy similar, orientacion generalista |
+| zenith-v1-coding-uncensored (Q3_K_M, este repo) | ~3,82 B | no disponible | no disponible | GGUF Q3_K_M en Hugging Face | Sin datos de rendimiento ni validacion comunitaria |
+| Qwen2.5-Coder-3B | ~3 B | no disponible en esta ficha | no disponible en esta ficha | pesos y GGUF en Hugging Face | Alternativa conocida de codigo en el mismo rango de tamano |
+| Llama-3.2-3B-Instruct | ~3,2 B | no disponible en esta ficha | no disponible en esta ficha | pesos y GGUF en Hugging Face | Alternativa generalista del mismo orden de magnitud |
+| Phi-3.5-mini-instruct | ~3,8 B | no disponible en esta ficha | no disponible en esta ficha | pesos y GGUF en Hugging Face | Tamano muy similar, orientacion generalista |
 
 Los datos de los modelos comparativos no se han verificado en la informacion proporcionada para esta ficha y deben consultarse en sus repositorios oficiales antes de tomar cualquier decision.
 
@@ -87,7 +87,7 @@ Los datos de los modelos comparativos no se han verificado en la informacion pro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/wethesheeple33/zenith-v1-coding-uncensored-Q3_K_M-GGUF
+- Repositorio Hugging Face: https://huggingface.co/wethesheeple33/zenith-v1-coding-uncensored-Q3_K_M-GGUF
 - Modelo base: https://huggingface.co/alden4445/zenith-v1-coding-uncensored
 - Espacio de conversion GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp

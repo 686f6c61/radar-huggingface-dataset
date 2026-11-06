@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| Kitchoon-V5-Clean-26B-A4B | ~25,8 B (MoE) | no disponible (entrenado a 8192) | Apache 2.0 | RP/ERP, sin censura, thinking | HuggingFace |
-| Tetratype/Gemma-4-26B-A4B-it-heretic-antislop (base) | ~25,8 B (MoE) | no disponible | Apache 2.0 | Base descensurada antislop | HuggingFace |
-| Kitchoon-V3 (version anterior de la saga) | ~25,8 B (MoE) | 8192 (entrenamiento) | Apache 2.0 | RP/ERP, thinking inestable | HuggingFace |
+| Kitchoon-V5-Clean-26B-A4B | ~25,8 B (MoE) | no disponible (entrenado a 8192) | Apache 2.0 | RP/ERP, sin censura, thinking | Hugging Face |
+| Tetratype/Gemma-4-26B-A4B-it-heretic-antislop (base) | ~25,8 B (MoE) | no disponible | Apache 2.0 | Base descensurada antislop | Hugging Face |
+| Kitchoon-V3 (version anterior de la saga) | ~25,8 B (MoE) | 8192 (entrenamiento) | Apache 2.0 | RP/ERP, thinking inestable | Hugging Face |
 
 La comparativa con modelos de la misma categoria (por ejemplo, otros fine-tunes de rol sobre Gemma o Llama) no esta disponible en la informacion proporcionada. La principal diferencia documentada frente a V3 es la correccion del template de pensamiento y una fusion del LoRA OV al doble de fuerza (1,0 frente a 0,5).
 
@@ -78,7 +78,7 @@ La comparativa con modelos de la misma categoria (por ejemplo, otros fine-tunes 
 - Sin benchmarks publicos: no hay evidencia cuantitativa de calidad fuera de las pruebas internas del autor.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/SubMaroon/Kitchoon-V5-Clean-26B-A4B
+- Modelo en Hugging Face: https://huggingface.co/SubMaroon/Kitchoon-V5-Clean-26B-A4B
 - Modelo base: https://huggingface.co/Tetratype/Gemma-4-26B-A4B-it-heretic-antislop
 - Paper de la perdida GEM (Li et al., ICLR 2025): https://arxiv.org/abs/2408.16673
 - Perfil del autor del dataset (Indexnusrefather): https://huggingface.co/Indexnusrefather

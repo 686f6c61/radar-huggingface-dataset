@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 | Modelo | Parametros | Contexto | Licencia | Formato / disponibilidad | Notas |
 |---|---|---|---|---|---|
 | ThoxKey-Route-0.5B | 0,5B | 8.192 (usado en evaluacion) | Apache-2.0 | Ollama (paquete de configuracion) | Pesos sin entrenar; perfil + knowledge pack de 8 entradas |
-| Qwen2.5-0.5B-Instruct | 0,5B | no disponible en la informacion | Apache-2.0 | HuggingFace, Ollama | Modelo base real; capacidades nativas sin perfil THOX |
+| Qwen2.5-0.5B-Instruct | 0,5B | no disponible en la informacion | Apache-2.0 | Hugging Face, Ollama | Modelo base real; capacidades nativas sin perfil THOX |
 | Otros modelos de ~0,5B | no disponible | no disponible | no disponible | no disponible | No se aportan datos comparativos en la informacion disponible |
 
 La comparación relevante es contra su propio modelo base: ThoxKey-Route-0.5B no mejora las capacidades de Qwen2.5-0.5B-Instruct, sino que añade un perfil de sistema y un corpus de grounding acotado. No se dispone de datos para comparar con alternativas de terceros de la misma escala.
@@ -96,7 +96,7 @@ La comparación relevante es contra su propio modelo base: ThoxKey-Route-0.5B no
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Thox-ai/ThoxKey-Route-0.5B
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
+- Repositorio Hugging Face: https://huggingface.co/Thox-ai/ThoxKey-Route-0.5B
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Tag de Ollama del modelo publicado: `Thox-ai/thoxkey-route-0.5b` (referenciado en la model card; no se proporciona URL directa)
 - Paper, blog, repositorio de código o demo del runtime THOX: no disponibles en la información proporcionada.

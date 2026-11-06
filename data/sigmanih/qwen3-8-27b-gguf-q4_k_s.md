@@ -88,7 +88,7 @@ La principal diferencia entre esta cuantización y otras del mismo modelo es el 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sigmanih/Qwen3.8-27B-GGUF-Q4_K_S
+- Repositorio Hugging Face: https://huggingface.co/sigmanih/Qwen3.8-27B-GGUF-Q4_K_S
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Cuantización GGUF de unsloth: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
 - Documentación de Unsloth sobre Qwen3.8: https://unsloth.ai/docs/models/qwen3.8

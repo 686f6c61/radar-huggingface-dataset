@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SoSolaris/xvla-flourish-chunk50 es una política robótica de tipo Vision-Language-Action (VLA) publicada en HuggingFace, obtenida por fine-tuning de lerobot/xvla-base, el modelo base del marco X-VLA. El autor es el usuario SoSolaris y el modelo está pensado para ejecutarse con la librería LeRobot sobre un brazo robótico SO-101 (tipo `so101_follower`) equipado con dos cámaras. No es un modelo de lenguaje: es una política de imitación que consume imágenes y estado de las articulaciones y produce comandos de acción de 6 dimensiones.
+SoSolaris/xvla-flourish-chunk50 es una política robótica de tipo Vision-Language-Action (VLA) publicada en Hugging Face, obtenida por fine-tuning de lerobot/xvla-base, el modelo base del marco X-VLA. El autor es el usuario SoSolaris y el modelo está pensado para ejecutarse con la librería LeRobot sobre un brazo robótico SO-101 (tipo `so101_follower`) equipado con dos cámaras. No es un modelo de lenguaje: es una política de imitación que consume imágenes y estado de las articulaciones y produce comandos de acción de 6 dimensiones.
 
 El modelo resuelve una tarea concreta de manipulación, "Grab the tape", aprendida a partir del dataset MrC4t/FlourishGrabTape (20 episodios, 7.071 fotogramas a 15 FPS). Se trata, por tanto, de un caso de fine-tuning de un único task sobre una base preentrenada multi-robot, con 20.000 pasos de entrenamiento, batch de 16 y learning rate de 1e-4.
 
@@ -32,7 +32,7 @@ Su relevancia es fundamentalmente práctica y de nicho: demuestra el flujo compl
 
 ## Arquitectura y entrenamiento
 
-X-VLA, el marco descrito en el paper arXiv:2510.10274, se presenta como un framework Vision-Language-Action "soft-prompted" con flow matching. La idea central es tratar cada robot o configuración de hardware como una "tarea" codificada mediante un conjunto reducido de embeddings de Soft Prompt aprendibles, de modo que un único modelo pueda reconciliar morfologías, sensores y espacios de acción distintos. El modelo card del repositorio incluye un diagrama de arquitectura enlazado desde las imágenes de documentación de HuggingFace, pero no detalla el backbone concreto, el número de tokens de entrenamiento ni la composición del dataset de preentrenamiento de la base.
+X-VLA, el marco descrito en el paper arXiv:2510.10274, se presenta como un framework Vision-Language-Action "soft-prompted" con flow matching. La idea central es tratar cada robot o configuración de hardware como una "tarea" codificada mediante un conjunto reducido de embeddings de Soft Prompt aprendibles, de modo que un único modelo pueda reconciliar morfologías, sensores y espacios de acción distintos. El modelo card del repositorio incluye un diagrama de arquitectura enlazado desde las imágenes de documentación de Hugging Face, pero no detalla el backbone concreto, el número de tokens de entrenamiento ni la composición del dataset de preentrenamiento de la base.
 
 Este repositorio concreto es un fine-tuning sobre lerobot/xvla-base con 20.000 pasos, batch de 16, optimizador `xvla-adamw`, learning rate 1e-4 y semilla 1000, ejecutado con LeRobot 0.6.2. El conjunto de datos de adaptación contiene únicamente 20 episodios (7.071 fotogramas a 15 FPS) de la tarea "Grab the tape". No se documenta en la información disponible si hubo RLHF, DPO ni ninguna etapa de refinamiento posterior; tampoco se especifica el método de cuantización, el tamaño de chunk de acciones ni la estrategia de decodificación, aunque el sufijo "chunk50" del nombre del repositorio sugiere un tamaño de chunk de 50 acciones (dato no confirmado en la model card).
 
@@ -75,11 +75,11 @@ Los datos de la siguiente tabla para modelos distintos de este repositorio provi
 
 | Modelo | Desarrollador | Parametros | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SoSolaris/xvla-flourish-chunk50 | SoSolaris (fine-tuning de lerobot/xvla-base) | 879.687.256 | VLA con soft prompts y flow matching | Apache 2.0 | HuggingFace, 0 descargas |
-| lerobot/xvla-base | Autores de X-VLA / LeRobot | No disponible | VLA base multi-robot | No disponible | HuggingFace |
-| SmolVLA | Hugging Face | ~450 M (referencia publica) | VLA compacta | Apache 2.0 (referencia publica) | HuggingFace |
-| pi0 | Physical Intelligence | ~3.300 M (referencia publica) | VLA con flow matching | Apache 2.0 (referencia publica) | HuggingFace |
-| OpenVLA | Consorcio academico (Stanford, UC Berkeley y otros) | ~7.000 M (referencia publica) | VLA sobre LLM | No disponible | HuggingFace |
+| SoSolaris/xvla-flourish-chunk50 | SoSolaris (fine-tuning de lerobot/xvla-base) | 879.687.256 | VLA con soft prompts y flow matching | Apache 2.0 | Hugging Face, 0 descargas |
+| lerobot/xvla-base | Autores de X-VLA / LeRobot | No disponible | VLA base multi-robot | No disponible | Hugging Face |
+| SmolVLA | Hugging Face | ~450 M (referencia publica) | VLA compacta | Apache 2.0 (referencia publica) | Hugging Face |
+| pi0 | Physical Intelligence | ~3.300 M (referencia publica) | VLA con flow matching | Apache 2.0 (referencia publica) | Hugging Face |
+| OpenVLA | Consorcio academico (Stanford, UC Berkeley y otros) | ~7.000 M (referencia publica) | VLA sobre LLM | No disponible | Hugging Face |
 
 Como referencia interna, este checkpoint es aproximadamente la mitad en parámetros que pi0 y ocho veces menor que OpenVLA, lo que lo sitúa en el segmento de políticas ligeras aptas para GPU de consumo.
 
@@ -97,7 +97,7 @@ Como referencia interna, este checkpoint es aproximadamente la mitad en parámet
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SoSolaris/xvla-flourish-chunk50
+- Modelo en Hugging Face: https://huggingface.co/SoSolaris/xvla-flourish-chunk50
 - Modelo base: https://huggingface.co/lerobot/xvla-base
 - Paper de X-VLA: https://huggingface.co/papers/2510.10274
 - Dataset de fine-tuning: https://huggingface.co/datasets/MrC4t/FlourishGrabTape

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo identificado como `cazePuroLove/q-FrozenLake-v1-4x4-noSlippery` no es un modelo de lenguaje: es un agente de aprendizaje por refuerzo entrenado con Q-Learning tabular sobre el entorno FrozenLake-v1 de Gymnasium, en su variante 4x4 sin superficie resbaladiza (determinista). Lo publica el usuario `cazePuroLove` en HuggingFace, y el propio autor lo etiqueta como "custom-implementation", es decir, una implementación propia del algoritmo de Q-Learning en lugar de un modelo derivado de una librería estándar. El repositorio ocupa 0.0 GB, no tiene descargas ni likes, y no declara licencia.
+El modelo identificado como `cazePuroLove/q-FrozenLake-v1-4x4-noSlippery` no es un modelo de lenguaje: es un agente de aprendizaje por refuerzo entrenado con Q-Learning tabular sobre el entorno FrozenLake-v1 de Gymnasium, en su variante 4x4 sin superficie resbaladiza (determinista). Lo publica el usuario `cazePuroLove` en Hugging Face, y el propio autor lo etiqueta como "custom-implementation", es decir, una implementación propia del algoritmo de Q-Learning en lugar de un modelo derivado de una librería estándar. El repositorio ocupa 0.0 GB, no tiene descargas ni likes, y no declara licencia.
 
 El problema que resuelve es un clásico de control: un agente debe atravesar una cuadrícula de 4x4 desde la casilla inicial hasta la meta sin caer en los agujeros. Al ser la variante `no_slippery`, la transición es determinista y el óptimo se alcanza con una política greedy sobre la tabla Q. El autor reporta un `mean_reward` de 1.00 +/- 0.00, lo que equivale a resolver el entorno el 100 % de los episodios de evaluación, aunque ese resultado está marcado como `verified: false`.
 
-Su relevancia no es la de un modelo de producción, sino la de un artefacto docente y de referencia: sirve para validar pipelines de RL, comparar implementaciones propias contra baselines establecidos y demostrar el flujo de publicación de agentes en el Hub de HuggingFace. No hay arquitectura de red neuronal, ni parámetros entrenables en el sentido habitual, ni ventana de contexto.
+Su relevancia no es la de un modelo de producción, sino la de un artefacto docente y de referencia: sirve para validar pipelines de RL, comparar implementaciones propias contra baselines establecidos y demostrar el flujo de publicación de agentes en el Hub de Hugging Face. No hay arquitectura de red neuronal, ni parámetros entrenables en el sentido habitual, ni ventana de contexto.
 
 ## Especificaciones tecnicas
 
@@ -47,7 +47,7 @@ No se dispone de informacion sobre el numero de episodios de entrenamiento, la t
 - Baseline de referencia en comparativas de algoritmos: al ser un entorno resoluble de forma exacta, cualquier algoritmo nuevo (DQN, PPO, A2C) puede medirse contra este agente para detectar fallos de convergencia evidentes.
 - Test de integracion en librerias de RL: los mantenedores de herramientas de entrenamiento pueden usar un agente como este para comprobar el ciclo completo de guardado, carga desde el Hub y evaluacion con `gym.make`.
 - Generacion de trayectorias sinteticas para docencia o analisis: ejecutando el agente contra el entorno se obtienen secuencias de estados y acciones etiquetadas como optimas, utiles para material didactico o para analisis de grafos de transicion.
-- Demostracion del flujo de publicacion en HuggingFace Hub: el repositorio ejemplifica como subir un agente de RL con metadatos `model-index` para que la plataforma muestre la metrica de evaluacion, un caso util en talleres de MLOps.
+- Demostracion del flujo de publicacion en Hugging Face Hub: el repositorio ejemplifica como subir un agente de RL con metadatos `model-index` para que la plataforma muestre la metrica de evaluacion, un caso util en talleres de MLOps.
 - Prueba de humo en entornos aislados: al no requerir GPU ni dependencias pesadas, puede ejecutarse como verificacion rapida de que un entorno de Gymnasium se ha instalado y configurado correctamente.
 
 ## Benchmarks y rendimiento
@@ -74,10 +74,10 @@ No se han publicado en la informacion disponible otros resultados de benchmarks,
 
 | Modelo | Tipo | Entorno | Parametros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| cazePuroLove/q-FrozenLake-v1-4x4-noSlippery | Q-Learning tabular (custom) | FrozenLake-v1 4x4 no resbaladizo | Tabla Q discreta (no declara tamano) | No aplica | mean_reward 1.00 +/- 0.00 (no verificado) | No disponible | HuggingFace, 0 descargas |
-| Agentes Q-Learning de Stable-Baselines3 (RL Zoo) | Q-Learning tabular | FrozenLake-v1 4x4, variantes resbaladiza y no resbaladiza | Tabla Q discreta | No aplica | No disponible en la informacion proporcionada | MIT (licencia habitual de SB3) | HuggingFace / RL Zoo |
-| DQN sobre FrozenLake (Stable-Baselines3) | Red neuronal profunda (MLP) | FrozenLake-v1 4x4 | No disponible | No aplica | No disponible en la informacion proporcionada | MIT (licencia habitual de SB3) | HuggingFace / RL Zoo |
-| PPO sobre FrozenLake (Stable-Baselines3) | Policy gradient con red neuronal | FrozenLake-v1 4x4 | No disponible | No aplica | No disponible en la informacion proporcionada | MIT (licencia habitual de SB3) | HuggingFace / RL Zoo |
+| cazePuroLove/q-FrozenLake-v1-4x4-noSlippery | Q-Learning tabular (custom) | FrozenLake-v1 4x4 no resbaladizo | Tabla Q discreta (no declara tamano) | No aplica | mean_reward 1.00 +/- 0.00 (no verificado) | No disponible | Hugging Face, 0 descargas |
+| Agentes Q-Learning de Stable-Baselines3 (RL Zoo) | Q-Learning tabular | FrozenLake-v1 4x4, variantes resbaladiza y no resbaladiza | Tabla Q discreta | No aplica | No disponible en la informacion proporcionada | MIT (licencia habitual de SB3) | Hugging Face / RL Zoo |
+| DQN sobre FrozenLake (Stable-Baselines3) | Red neuronal profunda (MLP) | FrozenLake-v1 4x4 | No disponible | No aplica | No disponible en la informacion proporcionada | MIT (licencia habitual de SB3) | Hugging Face / RL Zoo |
+| PPO sobre FrozenLake (Stable-Baselines3) | Policy gradient con red neuronal | FrozenLake-v1 4x4 | No disponible | No aplica | No disponible en la informacion proporcionada | MIT (licencia habitual de SB3) | Hugging Face / RL Zoo |
 
 La diferencia estructural relevante es que este modelo es tabular y sin dependencias, mientras que las alternativas basadas en Stable-Baselines3 emplean redes neuronales y requieren PyTorch, lo que complica su despliegue pero les permite generalizar mejor en variantes estocasticas del entorno. No se dispone de cifras de rendimiento de las alternativas para establecer una comparacion cuantitativa.
 
@@ -94,7 +94,7 @@ La diferencia estructural relevante es que este modelo es tabular y sin dependen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cazePuroLove/q-FrozenLake-v1-4x4-noSlippery
+- Modelo en Hugging Face: https://huggingface.co/cazePuroLove/q-FrozenLake-v1-4x4-noSlippery
 - Entorno FrozenLake-v1 (documentacion de Gymnasium): no disponible en la informacion proporcionada
 - Paper o repositorio con la implementacion de Q-Learning: no disponible
 - Demo o space asociado: no disponible

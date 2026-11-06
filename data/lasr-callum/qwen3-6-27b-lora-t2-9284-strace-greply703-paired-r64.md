@@ -82,7 +82,7 @@ No se dispone de comparativas con modelos externos de la misma categoria (por ej
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LASR-Callum/qwen3.6-27b-lora-t2-9284-strace-greply703-paired-r64
+- Hugging Face: https://huggingface.co/LASR-Callum/qwen3.6-27b-lora-t2-9284-strace-greply703-paired-r64
 - Repositorio fuente: https://github.com/Matthew-Bozoukov/Lessons_from_constituitional_AFT.git
 - Dataset de entrenamiento: https://huggingface.co/datasets/LASR-Callum/2026-08-27-t2-9284-strace-greply703-paired-train
 - Brazos comparativos:

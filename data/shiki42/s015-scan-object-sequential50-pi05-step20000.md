@@ -82,11 +82,11 @@ Los dos checkpoints de Shiki42 comparten base y paso de entrenamiento, y difiere
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shiki42/s015-scan-object-sequential50-pi05-step20000
+- Modelo en Hugging Face: https://huggingface.co/Shiki42/s015-scan-object-sequential50-pi05-step20000
 - Dataset de entrenamiento: https://huggingface.co/datasets/Shiki42/ctr-scan-object-sequential50-20260921
 - Modelo base: https://huggingface.co/XinY0201/openpi-pi05-base-jax
 - Variante con IdleMask: https://huggingface.co/Shiki42/s015-scan-object-ctr50-withmask-pi05-step20000
-- Perfil del autor en HuggingFace: https://huggingface.co/Shiki42/models
+- Perfil del autor en Hugging Face: https://huggingface.co/Shiki42/models
 - Perfil del autor en GitHub: https://github.com/Shiki42/
 - Artículo de π0.5 (arXiv 2504.16054): https://arxiv.org/abs/2504.16054
 - Ficha de Pi0.5 en Qualcomm AI Hub: https://aihub.qualcomm.com/models/pi05

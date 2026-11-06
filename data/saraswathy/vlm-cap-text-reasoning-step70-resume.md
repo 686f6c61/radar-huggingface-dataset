@@ -69,8 +69,8 @@ No disponible. Este checkpoint no es un modelo final comparable con otros; es un
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Saraswathy/vlm-cap-text-reasoning-step70-resume
+- Repositorio Hugging Face: https://huggingface.co/Saraswathy/vlm-cap-text-reasoning-step70-resume
 - Proyecto VLM-CapCurriculum (ICML 2026): https://ucsc-vlaa.github.io/VLM-CapCurriculum/
-- Coleccion VLM-CapCurriculum en HuggingFace: https://huggingface.co/collections/UCSC-VLAA/vlm-capcurriculum
+- Coleccion VLM-CapCurriculum en Hugging Face: https://huggingface.co/collections/UCSC-VLAA/vlm-capcurriculum
 - Paper relacionado (self-questioning VLMs con GRPO): https://arxiv.org/abs/2606.15651
 - Sitio personal de la autora: https://saraamjith.com/saraamjith.html

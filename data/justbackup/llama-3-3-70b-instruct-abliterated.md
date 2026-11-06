@@ -79,7 +79,7 @@ La comparativa se basa en información pública de modelos similares. El modelo 
 
 ## Enlaces
 
-- Repositorio HuggingFace: [https://huggingface.co/Justbackup/Llama-3.3-70B-Instruct-abliterated](https://huggingface.co/Justbackup/Llama-3.3-70B-Instruct-abliterated)
+- Repositorio Hugging Face: [https://huggingface.co/Justbackup/Llama-3.3-70B-Instruct-abliterated](https://huggingface.co/Justbackup/Llama-3.3-70B-Instruct-abliterated)
 - Modelo base: [https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct](https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct)
 - Licencia Llama 3.3: [https://www.llama.com/llama-downloads/](https://www.llama.com/llama-downloads/)
 - Documentación de Llama 3.3: [https://www.llama.com/docs/overview](https://www.llama.com/docs/overview)

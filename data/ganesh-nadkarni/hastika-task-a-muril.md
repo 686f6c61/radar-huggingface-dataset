@@ -35,7 +35,7 @@ La innovación principal no está en la arquitectura, sino en el dominio de apli
 - Manejo de texto code-mixed kannada-inglés, incluyendo transliteraciones latinas del kannada (kanglish).
 - Procesamiento de secuencias de hasta 160 tokens en el régimen de entrenamiento.
 - Integración directa con la pipeline `text-classification` de `transformers`.
-- Compatibilidad declarada con Text Embeddings Inference y con endpoints de HuggingFace (`endpoints_compatible`).
+- Compatibilidad declarada con Text Embeddings Inference y con endpoints de Hugging Face (`endpoints_compatible`).
 - No soporta tool calling, function calling, agentes ni razonamiento multi-paso: es un clasificador, no un modelo generativo.
 - No dispone de capacidades de visión, audio ni modo de razonamiento explícito (thinking mode).
 - Capacidad multilingüe limitada a los dos idiomas del entrenamiento (kn, en); no se documenta generalización a otras lenguas indias.
@@ -65,7 +65,7 @@ No se han publicado en la información disponible resultados de benchmarks está
 - VRAM estimada en fp16/bf16: aproximadamente 0.5 GB para pesos, con un total práctico en torno a 1-1.5 GB.
 - Cabe holgadamente en cualquier GPU consumer: RTX 3060, RTX 4060, RTX 4090, así como en GPUs de datacenter (A100, H100) donde el cuello de botella será el throughput, no la memoria.
 - También es viable en CPU para volúmenes moderados, dado el tamaño reducido del modelo.
-- Opciones de despliegue: `transformers` con pipeline de `text-classification`, Text Embeddings Inference (declarado compatible), endpoints de HuggingFace, y servidores de inferencia genéricos compatibles con safetensors. No se documentan artefactos GGUF para llama.cpp/Ollama ni configuraciones TGI específicas.
+- Opciones de despliegue: `transformers` con pipeline de `text-classification`, Text Embeddings Inference (declarado compatible), endpoints de Hugging Face, y servidores de inferencia genéricos compatibles con safetensors. No se documentan artefactos GGUF para llama.cpp/Ollama ni configuraciones TGI específicas.
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
@@ -92,7 +92,7 @@ No se dispone de datos comparativos directos con otros clasificadores de odio en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ganesh-Nadkarni/hastika-task-a-muril
+- Modelo en Hugging Face: https://huggingface.co/Ganesh-Nadkarni/hastika-task-a-muril
 - Modelo base: https://huggingface.co/google/muril-base-cased
 - Referencia del dataset y tarea: Kavatagi, S. and Rachh, R. (2025). HASTIKA: hate speech and target identification in Kannada-English code-mixed text. *Language Resources and Evaluation*, 59(3):2811-2856.
 - Repositorio, paper, blog o demo adicionales: no disponibles en la información proporcionada.

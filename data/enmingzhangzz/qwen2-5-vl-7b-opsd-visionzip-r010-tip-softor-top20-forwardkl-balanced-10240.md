@@ -69,7 +69,7 @@ No disponible. No se proporcionan comparaciones con otros adaptadores o modelos 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/enmingzhangzz/Qwen2.5-VL-7B-OPSD-VisionZip-r010-TIP-SoftOR-top20-forwardKL-balanced-10240
+- Hugging Face: https://huggingface.co/enmingzhangzz/Qwen2.5-VL-7B-OPSD-VisionZip-r010-TIP-SoftOR-top20-forwardKL-balanced-10240
 - Variante similar (balanced sin TIP): https://huggingface.co/enmingzhangzz/Qwen2.5-VL-7B-OPSD-VisionZip-r010-balanced-10240
 - Otra variante con Ftop10-delta05: https://huggingface.co/enmingzhangzz/Qwen2.5-VL-7B-OPSD-VisionZip-r010-balanced-Ftop10-delta05-10240
 - Página de despliegue en FriendliAI: https://friendli.ai/models/enmingzhangzz/Qwen2.5-VL-7B-OPSD-VisionZip-r010-balanced-10240

@@ -80,7 +80,7 @@ La comparativa muestra que este modelo es una variante optimizada para despliegu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hell0ks/GLM-5.3-Flash-Uncensored-AWQ
+- Modelo en Hugging Face: https://huggingface.co/hell0ks/GLM-5.3-Flash-Uncensored-AWQ
 - Modelo base (OrcaRouter FP8): https://huggingface.co/orcarouter/GLM-5.3-Flash-Uncensored-FP8
 - Modelo original (Z.ai): https://huggingface.co/zai-org/GLM-5.3-Flash
 - Documentación de Unsloth para GLM-5.3-Flash: https://unsloth.ai/docs/models/glm-5.3-flash

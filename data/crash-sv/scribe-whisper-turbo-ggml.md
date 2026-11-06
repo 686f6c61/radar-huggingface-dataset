@@ -74,9 +74,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| crash-sv/scribe-whisper-turbo-ggml | no disponible (archivo de 574 MB en q5_0) | no disponible | ru, en (declarados) | MIT | GGML (q5_0) | HuggingFace, 0 descargas |
-| ggerganov/whisper.cpp `ggml-large-v3-turbo-q5_0.bin` | identico al anterior (mismo archivo, byte a byte) | no disponible | no disponible | MIT | GGML (q5_0) | HuggingFace, repositorio de origen |
-| openai/whisper-large-v3-turbo | no disponible | no disponible | multilingue (no detallado aqui) | MIT | safetensors / PyTorch | HuggingFace, modelo base |
+| crash-sv/scribe-whisper-turbo-ggml | no disponible (archivo de 574 MB en q5_0) | no disponible | ru, en (declarados) | MIT | GGML (q5_0) | Hugging Face, 0 descargas |
+| ggerganov/whisper.cpp `ggml-large-v3-turbo-q5_0.bin` | identico al anterior (mismo archivo, byte a byte) | no disponible | no disponible | MIT | GGML (q5_0) | Hugging Face, repositorio de origen |
+| openai/whisper-large-v3-turbo | no disponible | no disponible | multilingue (no detallado aqui) | MIT | safetensors / PyTorch | Hugging Face, modelo base |
 | Otras cuantizaciones Whisper en GGML (por ejemplo q8_0 o q5_1) | no disponible | no disponible | segun el modelo base | MIT | GGML | disponibles en el repositorio de whisper.cpp; no se aportan datos comparativos de calidad |
 
 La comparativa estrictamente verificable es que este repositorio es una copia exacta del artefacto de whisper.cpp; cualquier diferencia de rendimiento frente a otros formatos o cuantizaciones no esta documentada en la informacion disponible.
@@ -95,7 +95,7 @@ La comparativa estrictamente verificable es que este repositorio es una copia ex
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/crash-sv/scribe-whisper-turbo-ggml
+- Modelo en Hugging Face: https://huggingface.co/crash-sv/scribe-whisper-turbo-ggml
 - Modelo base: https://huggingface.co/openai/whisper-large-v3-turbo
 - Repositorio de origen del archivo GGML: https://huggingface.co/ggerganov/whisper.cpp
 - Proyecto whisper.cpp: https://github.com/ggml-org/whisper.cpp

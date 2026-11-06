@@ -81,8 +81,8 @@ No se han publicado resultados sobre direcciones reales ni sobre benchmarks gene
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Indian Address Parser 1.5B | 1,5B | No disponible | Extraccion de direcciones indias a JSON | Apache-2.0 | HuggingFace, 0 descargas |
-| Qwen2.5-1.5B-Instruct (base) | 1,5B | No disponible | Proposito general (chat, generacion) | Apache-2.0 | HuggingFace |
+| Indian Address Parser 1.5B | 1,5B | No disponible | Extraccion de direcciones indias a JSON | Apache-2.0 | Hugging Face, 0 descargas |
+| Qwen2.5-1.5B-Instruct (base) | 1,5B | No disponible | Proposito general (chat, generacion) | Apache-2.0 | Hugging Face |
 | Otros parsers de direcciones | No disponible | No disponible | Extraccion de direcciones | No disponible | No disponible |
 
 La comparacion significativa es contra su propio modelo base: la misma arquitectura y tamano, pero el ajuste eleva la coincidencia exacta del registro completo del 1,4% al 98,0% en el conjunto de prueba sintetico. No se conocen en la informacion proporcionada otros modelos especializados comparables.
@@ -102,7 +102,7 @@ La comparacion significativa es contra su propio modelo base: la misma arquitect
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abr-6024/indian-address-parser-1.5B
+- Modelo en Hugging Face: https://huggingface.co/abr-6024/indian-address-parser-1.5B
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Conjunto de datos de entrenamiento: https://huggingface.co/datasets/abr-6024/indian-address-parsing-synthetic
 - Los resultados de la busqueda web no aportan enlaces relevantes al modelo: las coincidencias para el termino "abr" corresponden a empresas francesas de construccion y rechapado sin relacion con este proyecto. No se han encontrado papers, blogs ni repositorios adicionales en la informacion disponible.

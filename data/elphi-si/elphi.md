@@ -90,7 +90,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/elphi-si/elphi
+- Modelo en Hugging Face: https://huggingface.co/elphi-si/elphi
 - Modelo base EMA Lightning (Canberk Aslan): https://huggingface.co/canberkkkkkk/ema-lightning
 - Repositorio GitHub de EMA Lightning: https://github.com/canberk7/ema-lightning
 - Sitio de la aplicacion Elphi: https://www.elphiai.com/

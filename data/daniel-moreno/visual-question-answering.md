@@ -6,7 +6,7 @@ El repositorio `daniel-moreno/visual-question-answering` no es un modelo entrena
 
 El contenido anunciado cubre el alcance de la pregunta de investigación y sus posibles factores de confusión, una comparación propuesta con baselines emparejados, contexto de evaluación concreto (VQAv2, GQA y OK-VQA), comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas. El autor separa deliberadamente los planes y las hipótesis de los resultados ya completados, y advierte de que las secciones marcadas como planes o hipótesis no deben interpretarse como resultados experimentales.
 
-La relevancia de esta ficha es sobre todo preventiva: la metadata de HuggingFace lo expone con el pipeline `visual-question-answering` y unas etiquetas que sugieren un modelo desplegable, pero el repositorio no contiene pesos utilizables. Cualquier integración en producción basada en esta ficha debería verificarse antes de asumir que existe un modelo funcional.
+La relevancia de esta ficha es sobre todo preventiva: la metadata de Hugging Face lo expone con el pipeline `visual-question-answering` y unas etiquetas que sugieren un modelo desplegable, pero el repositorio no contiene pesos utilizables. Cualquier integración en producción basada en esta ficha debería verificarse antes de asumir que existe un modelo funcional.
 
 ## Especificaciones tecnicas
 
@@ -28,7 +28,7 @@ La relevancia de esta ficha es sobre todo preventiva: la metadata de HuggingFace
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre arquitectura. La model card no describe ninguna topología (transformer, MoE, híbrida u otra), ni dimensiones de capas, ni mecanismos de atención. La única referencia estructural es la etiqueta `transformer`, que en HuggingFace puede ser una clasificación genérica y no constituye evidencia de una arquitectura concreta implementada en este repositorio.
+No se dispone de información sobre arquitectura. La model card no describe ninguna topología (transformer, MoE, híbrida u otra), ni dimensiones de capas, ni mecanismos de atención. La única referencia estructural es la etiqueta `transformer`, que en Hugging Face puede ser una clasificación genérica y no constituye evidencia de una arquitectura concreta implementada en este repositorio.
 
 Tampoco hay información sobre entrenamiento: no se especifican tokens de entrenamiento, composición del dataset, ni fases de ajuste como RLHF, DPO o SFT. El autor menciona VQAv2, GQA y OK-VQA únicamente como contexto de evaluación propuesto dentro de las notas, no como datos sobre los que se haya entrenado o evaluado un modelo. Los ficheros declarados son `notes.md` (artefacto principal) y `README.md` (documentación), sin scripts de entrenamiento, configuraciones ni logs.
 
@@ -89,6 +89,6 @@ No disponible. No es posible establecer una comparativa técnica porque este rep
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/daniel-moreno/visual-question-answering
+- Modelo en Hugging Face: https://huggingface.co/daniel-moreno/visual-question-answering
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados a este repositorio en la información proporcionada.
 - Los resultados de la búsqueda web no contenían enlaces relevantes para este modelo.

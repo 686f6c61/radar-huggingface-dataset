@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ConnorYU/qwen3.5-9b-tem300-ip-secure-16bit-compile` es un ajuste fino (finetune) multimodal publicado por el usuario ConnorYU sobre su propio modelo `ConnorYU/Qwen3.5-9B-GRPO-ifeval-v0-think-step300`, que a su vez parte de la familia Qwen3.5. El pipeline declarado en HuggingFace es `image-text-to-text`, por lo que el modelo acepta entradas de imagen y texto y genera texto; los tags confirman la arquitectura (`qwen3_5`), el soporte para `transformers` y `text-generation-inference`, y que el entrenamiento se realizó con Unsloth y la librería TRL.
+`ConnorYU/qwen3.5-9b-tem300-ip-secure-16bit-compile` es un ajuste fino (finetune) multimodal publicado por el usuario ConnorYU sobre su propio modelo `ConnorYU/Qwen3.5-9B-GRPO-ifeval-v0-think-step300`, que a su vez parte de la familia Qwen3.5. El pipeline declarado en Hugging Face es `image-text-to-text`, por lo que el modelo acepta entradas de imagen y texto y genera texto; los tags confirman la arquitectura (`qwen3_5`), el soporte para `transformers` y `text-generation-inference`, y que el entrenamiento se realizó con Unsloth y la librería TRL.
 
 El dato objective más fiable es el recuento de parámetros de los safetensors: 9.409.813.744 pesos (9,41 mil millones), con un repositorio de 18,8 GB, coherente con un almacenamiento en 16 bits. La licencia declarada es Apache 2.0 y el único idioma listado es el inglés. El autor no publica información sobre longitud de contexto, composición del dataset de entrenamiento, hiperparámetros de RL ni resultados de evaluación.
 
@@ -96,7 +96,7 @@ Frente a estas alternativas, el modelo de ConnorYU es el único de la tabla con 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ConnorYU/qwen3.5-9b-tem300-ip-secure-16bit-compile
+- Modelo en Hugging Face: https://huggingface.co/ConnorYU/qwen3.5-9b-tem300-ip-secure-16bit-compile
 - Modelo base: https://huggingface.co/ConnorYU/Qwen3.5-9B-GRPO-ifeval-v0-think-step300
 - Unsloth (stack de entrenamiento citado en la model card): https://github.com/unslothai/unsloth
 - TRL (librería de entrenamiento citada): https://github.com/huggingface/trl

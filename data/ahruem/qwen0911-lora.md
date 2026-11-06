@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `ahruem/Qwen0911-lora` es un checkpoint publicado en HuggingFace por el usuario ahruem el 11 de septiembre de 2026 (según los metadatos de la ficha). Se trata de un modelo multimodal de tipo imagen-texto-a-texto (etiqueta `image-text-to-text`), construido sobre la familia de arquitecturas identificada en los tags como `qwen3_5`, con un total de 852.739.136 parámetros almacenados en formato safetensors.
+El modelo `ahruem/Qwen0911-lora` es un checkpoint publicado en Hugging Face por el usuario ahruem el 11 de septiembre de 2026 (según los metadatos de la ficha). Se trata de un modelo multimodal de tipo imagen-texto-a-texto (etiqueta `image-text-to-text`), construido sobre la familia de arquitecturas identificada en los tags como `qwen3_5`, con un total de 852.739.136 parámetros almacenados en formato safetensors.
 
 El nombre del repositorio incluye el sufijo "lora", lo que sugiere que el artefacto publicado podría derivar de un ajuste fino mediante adaptadores LoRA, aunque no se especifica si los pesos distribuidos son un adaptador, un modelo fusionado o un checkpoint independiente. El tamaño del repositorio es de 1,7 GB, un valor coherente con pesos en precisión de 16 bits para esa cantidad de parámetros.
 
-La relevancia del modelo es limitada a efectos prácticos: la model card está generada automáticamente a partir de la plantilla por defecto de HuggingFace y no contiene ninguna descripción sustantiva del modelo, sus datos de entrenamiento, su licencia o sus capacidades. No se han publicado resultados de benchmarks, no consta la licencia y no se declaran idiomas soportados.
+La relevancia del modelo es limitada a efectos prácticos: la model card está generada automáticamente a partir de la plantilla por defecto de Hugging Face y no contiene ninguna descripción sustantiva del modelo, sus datos de entrenamiento, su licencia o sus capacidades. No se han publicado resultados de benchmarks, no consta la licencia y no se declaran idiomas soportados.
 
 ## Especificaciones tecnicas
 
@@ -41,7 +41,7 @@ No se documenta el numero de tokens de entrenamiento, la composicion del dataset
 - No se documenta soporte explicito de agentes ni de razonamiento multi-paso.
 - No se documentan capacidades multilingues concretas.
 - No se documentan modos especiales (thinking mode, audio, vision detallada, etc.).
-- Compatible con despliegue en HuggingFace Endpoints segun el tag `endpoints_compatible`.
+- Compatible con despliegue en Hugging Face Endpoints segun el tag `endpoints_compatible`.
 
 Cualquier capacidad adicional no puede confirmarse porque la model card no aporta informacion sustantiva.
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento del modelo, por lo que no es posible estab
 
 ## Limitaciones y advertencias
 
-- Model card vacia: la informacion publicada es la plantilla por defecto de HuggingFace sin rellenar, lo que impide conocer el proposito, los datos de entrenamiento y las condiciones de uso.
+- Model card vacia: la informacion publicada es la plantilla por defecto de Hugging Face sin rellenar, lo que impide conocer el proposito, los datos de entrenamiento y las condiciones de uso.
 - Licencia no disponible: no se puede determinar si el uso comercial esta permitido. Cualquier despliegue en produccion requiere aclarar este punto con el autor.
 - Idioma no especificado: no se puede asumir soporte de castellano ni de ningun otro idioma concreto.
 - Contexto desconocido: se desconoce la longitud maxima de contexto, lo que impide planificar aplicaciones que dependan de ventanas largas.
@@ -99,7 +99,7 @@ No se dispone de datos de rendimiento del modelo, por lo que no es posible estab
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ahruem/Qwen0911-lora
+- Hugging Face: https://huggingface.co/ahruem/Qwen0911-lora
 - Paper referenciado en los tags (plantilla por defecto, no del modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental mencionada en la plantilla: https://mlco2.github.io/impact
 - No se han encontrado otros enlaces (repositorios, demos, blogs o papers) relacionados con este modelo en la busqueda web realizada.

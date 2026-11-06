@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| OuteTTS-0.3-500M-GGUF (este) | 84,7M (safetensors) / ~500M nominales | No disponible | en, ja, ko, zh, fr, de | cc-by-sa-4.0 | GGUF (backbone + códec) | HuggingFace, ejecutable en CPU/GPU/móvil |
-| OuteTTS-0.3-500M (original) | ~500M | No disponible | en, ja, ko, zh, fr, de | cc-by-sa-4.0 | safetensors (formato original OuteTTS) | HuggingFace, requiere runtime OuteTTS |
+| OuteTTS-0.3-500M-GGUF (este) | 84,7M (safetensors) / ~500M nominales | No disponible | en, ja, ko, zh, fr, de | cc-by-sa-4.0 | GGUF (backbone + códec) | Hugging Face, ejecutable en CPU/GPU/móvil |
+| OuteTTS-0.3-500M (original) | ~500M | No disponible | en, ja, ko, zh, fr, de | cc-by-sa-4.0 | safetensors (formato original OuteTTS) | Hugging Face, requiere runtime OuteTTS |
 | Alternativas TTS open source de tamaño similar | No disponible en la información proporcionada | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La comparación con alternativas de la misma categoría no está disponible en la información proporcionada; únicamente se puede contrastar con el modelo base del que deriva esta conversión, que comparte arquitectura, idiomas y licencia, y del que se diferencia por el formato GGUF y por la separación en dos ficheros (backbone y códec) que permite su ejecución con llama.cpp y codec.cpp.
@@ -84,8 +84,8 @@ La comparación con alternativas de la misma categoría no está disponible en l
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/BricksDisplay/OuteTTS-0.3-500M-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/OuteAI/OuteTTS-0.3-500M
+- Repositorio Hugging Face: https://huggingface.co/BricksDisplay/OuteTTS-0.3-500M-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/OuteAI/OuteTTS-0.3-500M
 - llama.cpp (runtime del backbone): https://github.com/ggml-org/llama.cpp
 - codec.cpp (runtime del códec y `tts-cli`): https://github.com/mybigday/codec.cpp
 - Documentación Python de codec.cpp: https://github.com/mybigday/codec.cpp/tree/main/python

@@ -82,7 +82,7 @@ La comparativa es limitada porque no hay datos de rendimiento publicados para Tw
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Twisted-Cyclone-31B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Twisted-Cyclone-31B-GGUF
 - Modelo base (Cyclone-Labs/Twisted-Cyclone-31B): https://huggingface.co/Cyclone-Labs/Twisted-Cyclone-31B
 - Pagina de descargas de mradermacher: https://hf.tst.eu/model
 - Solicitudes de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests

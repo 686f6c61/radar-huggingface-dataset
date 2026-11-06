@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NVIDIA-Nemotron-3.5-Bolt-E4B-NVFP4-GGUF es un paquete de pesos en formato GGUF del modelo Nemotron-3.5-Bolt-E4B de NVIDIA, publicado por el usuario arvedo en HuggingFace. Se trata de una conversión a cuantización nativa NVFP4 (FP4 E2M1 de NVIDIA Blackwell, con factores de escala FP8 y tamano de bloque 16) pensada para ejecutarse de forma eficiente sobre GPUs Blackwell (SM_120) y, por extension, sobre arquitecturas Ada y Hopper. El modelo base emplea una arquitectura derivada de Gemma 4, con un mecanismo de Per-Layer Embedding (PLE) que en su version FP16 ocupa 9,1 GB y que aqui se compacta a Q8_0 para reducir el peso total.
+NVIDIA-Nemotron-3.5-Bolt-E4B-NVFP4-GGUF es un paquete de pesos en formato GGUF del modelo Nemotron-3.5-Bolt-E4B de NVIDIA, publicado por el usuario arvedo en Hugging Face. Se trata de una conversión a cuantización nativa NVFP4 (FP4 E2M1 de NVIDIA Blackwell, con factores de escala FP8 y tamano de bloque 16) pensada para ejecutarse de forma eficiente sobre GPUs Blackwell (SM_120) y, por extension, sobre arquitecturas Ada y Hopper. El modelo base emplea una arquitectura derivada de Gemma 4, con un mecanismo de Per-Layer Embedding (PLE) que en su version FP16 ocupa 9,1 GB y que aqui se compacta a Q8_0 para reducir el peso total.
 
 El paquete ocupa 6,11 GB en su parte de texto y anade un proyector multimodal opcional de 946 MB, lo que permite su despliegue completo en GPUs de consumo con 8, 12 o 16 GB de VRAM (RTX 4060 Ti 16GB, RTX 4070, RTX 5070, RTX 5080, RTX 5090). El modelo declarado tiene 7.518.069.878 parametros totales, y la model card indica que es capaz de generar texto y, con el proyector, procesar vision y audio.
 
@@ -103,7 +103,7 @@ No se dispone de datos de otros modelos de la misma categoria (por ejemplo, Llam
 
 ## Enlaces
 
-- HuggingFace (este paquete GGUF): https://huggingface.co/arvedo/NVIDIA-Nemotron-3.5-Bolt-E4B-NVFP4-GGUF
+- Hugging Face (este paquete GGUF): https://huggingface.co/arvedo/NVIDIA-Nemotron-3.5-Bolt-E4B-NVFP4-GGUF
 - Repositorio NVFP4-Blackwell-Rubin del autor: https://huggingface.co/arvedo/NVIDIA-Nemotron-3.5-Bolt-E4B-NVFP4-Blackwell-Rubin
 - llama.cpp (motor de inferencia GGUF): https://github.com/ggml-org/llama.cpp
 - vLLM (motor recomendado para multimodal): https://github.com/vllm-project/vllm

@@ -79,6 +79,6 @@ No se dispone de datos de benchmarks ni de longitudes de contexto para realizar 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mradermacher/NeoHorse-1-9B-heretic-i1-GGUF
+- Hugging Face: https://huggingface.co/mradermacher/NeoHorse-1-9B-heretic-i1-GGUF
 - Modelo similar Ornith-1.5-9B-heretic-i1-GGUF: https://huggingface.co/mradermacher/Ornith-1.5-9B-heretic-i1-GGUF
 - Modelo similar Ornith-1.5-9B-i1-GGUF: https://huggingface.co/mradermacher/Ornith-1.5-9B-i1-GGUF

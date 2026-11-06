@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Krea2-Model-Library es un repositorio de la comunidad publicado por el usuario Coffmeteor en HuggingFace que recopila una coleccion de LoRAs y ficheros de soporte para el modelo de generacion de imagenes Krea 2. No se trata de un modelo de lenguaje ni de un modelo fundacional propio, sino de una biblioteca organizada de adaptadores de bajo rango (LoRA) y recursos auxiliares, cada uno con su propia documentacion, checksums y enlace a la fuente original en Civitai. El repositorio ocupa 9,1 GB y esta etiquetado con los identificadores `krea2`, `lora` e `image-generation`.
+Krea2-Model-Library es un repositorio de la comunidad publicado por el usuario Coffmeteor en Hugging Face que recopila una coleccion de LoRAs y ficheros de soporte para el modelo de generacion de imagenes Krea 2. No se trata de un modelo de lenguaje ni de un modelo fundacional propio, sino de una biblioteca organizada de adaptadores de bajo rango (LoRA) y recursos auxiliares, cada uno con su propia documentacion, checksums y enlace a la fuente original en Civitai. El repositorio ocupa 9,1 GB y esta etiquetado con los identificadores `krea2`, `lora` e `image-generation`.
 
-La relevancia de esta publicacion radica en su caracter curado: el autor verifica cada descarga contra el SHA-256 publicado en Civitai y contra el fichero almacenado en HuggingFace, lo que aporta trazabilidad en un ecosistema donde abundan adaptadores sin procedencia clara. La biblioteca cubre categorias como personajes (Nana Osaki en variantes SFW y NSFW, Pinky), conceptos (transparencia de ropa, armadura de plata ornamentada), estilos artisticos (anime acuarela detallada, neo-anime iridiscente, neo-ukiyo-e gotico, teatro de papel recortado de Halloween), iluminacion de retrato (seis esquemas clasicos), efectos fotograficos y flujos de trabajo creativos.
+La relevancia de esta publicacion radica en su caracter curado: el autor verifica cada descarga contra el SHA-256 publicado en Civitai y contra el fichero almacenado en Hugging Face, lo que aporta trazabilidad en un ecosistema donde abundan adaptadores sin procedencia clara. La biblioteca cubre categorias como personajes (Nana Osaki en variantes SFW y NSFW, Pinky), conceptos (transparencia de ropa, armadura de plata ornamentada), estilos artisticos (anime acuarela detallada, neo-anime iridiscente, neo-ukiyo-e gotico, teatro de papel recortado de Halloween), iluminacion de retrato (seis esquemas clasicos), efectos fotograficos y flujos de trabajo creativos.
 
 El modelo base subyacente es Krea 2, cuyos pesos no se distribuyen en este repositorio: aqui solo se alojan los adaptadores y componentes derivados. La licencia aplicable es la Krea 2 Community License, complementada por los terminos especificos de cada componente, sin que se aplique una licencia de reemplazo global. El idioma declarado es el ingles y la fecha de creacion del repositorio es el 28 de octubre de 2026.
 
@@ -79,7 +79,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables ni da
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Coffmeteor/Krea2-Model-Library
+- Repositorio en Hugging Face: https://huggingface.co/Coffmeteor/Krea2-Model-Library
 - Licencia Krea 2 Community License (PDF): https://huggingface.co/Coffmeteor/Krea2-Model-Library/blob/main/LICENSE.pdf
 - Documentacion de personajes: https://huggingface.co/Coffmeteor/Krea2-Model-Library/tree/main/characters
 - Documentacion de conceptos: https://huggingface.co/Coffmeteor/Krea2-Model-Library/tree/main/concepts

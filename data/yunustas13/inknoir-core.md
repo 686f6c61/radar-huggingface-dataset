@@ -2,7 +2,7 @@
 
 ## Resumen
 
-InkNoir-Core es un modelo de difusion latente para generacion de imagenes de texto a imagen, especializado en ilustracion anime oscura. Lo desarrolla el usuario YunusTAS13 y se distribuye en HuggingFace bajo licencia CreativeML OpenRAIL-M. Tecnicamente es un ajuste de Stable Diffusion 1.5 que parte del modelo Lykon/dreamshaper-8, sobre el que se ha fusionado un adaptador de estilo InkNoir a escala LoRA 0,4. Se publica como pipeline completo de Diffusers mas un checkpoint de un solo fichero, no como adaptador aislado.
+InkNoir-Core es un modelo de difusion latente para generacion de imagenes de texto a imagen, especializado en ilustracion anime oscura. Lo desarrolla el usuario YunusTAS13 y se distribuye en Hugging Face bajo licencia CreativeML OpenRAIL-M. Tecnicamente es un ajuste de Stable Diffusion 1.5 que parte del modelo Lykon/dreamshaper-8, sobre el que se ha fusionado un adaptador de estilo InkNoir a escala LoRA 0,4. Se publica como pipeline completo de Diffusers mas un checkpoint de un solo fichero, no como adaptador aislado.
 
 El modelo resuelve un nicho concreto: generar ilustraciones y retratos con un estilo anime sombrio y cinematografico, manteniendo ademas capacidad razonable para imagenes de temas no relacionados (paisajes, naturalezas muertas, vehiculos, dragones) segun los ejemplos publicados por el autor. Su relevancia practica esta en que reutiliza el ecosistema de SD 1.5, por lo que funciona con todas las herramientas existentes (Diffusers, interfaces locales tipo Automatic1111, ComfyUI, etc.) y requiere poca VRAM.
 
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks numericos en la informacion disponi
 
 | Modelo | Parametros | Tipo | Contexto de prompt | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| InkNoir-Core | 859.520.964 | SD 1.5 ajustado (DreamShaper 8 + LoRA fusionado) | limite CLIP ~77 tokens | CreativeML OpenRAIL-M | HuggingFace (Diffusers y safetensors) |
-| Lykon/dreamshaper-8 (base) | no disponible en la informacion | SD 1.5 ajustado | limite CLIP ~77 tokens | CreativeML OpenRAIL-M | HuggingFace |
-| Stable Diffusion 1.5 (original) | ~860 M (mismo orden que el total reportado) | Difusion latente | limite CLIP ~77 tokens | CreativeML OpenRAIL-M | HuggingFace y multiples mirrors |
-| Otros modelos de anime sobre SD 1.5 | no disponible en la informacion | SD 1.5 ajustado | limite CLIP ~77 tokens | variable segun autor | HuggingFace |
+| InkNoir-Core | 859.520.964 | SD 1.5 ajustado (DreamShaper 8 + LoRA fusionado) | limite CLIP ~77 tokens | CreativeML OpenRAIL-M | Hugging Face (Diffusers y safetensors) |
+| Lykon/dreamshaper-8 (base) | no disponible en la informacion | SD 1.5 ajustado | limite CLIP ~77 tokens | CreativeML OpenRAIL-M | Hugging Face |
+| Stable Diffusion 1.5 (original) | ~860 M (mismo orden que el total reportado) | Difusion latente | limite CLIP ~77 tokens | CreativeML OpenRAIL-M | Hugging Face y multiples mirrors |
+| Otros modelos de anime sobre SD 1.5 | no disponible en la informacion | SD 1.5 ajustado | limite CLIP ~77 tokens | variable segun autor | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos entre estas alternativas en la informacion proporcionada, por lo que la comparacion se limita a parametros, licencia y disponibilidad.
 
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparativos entre estas alternativas en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/YunusTAS13/InkNoir-Core
+- Modelo en Hugging Face: https://huggingface.co/YunusTAS13/InkNoir-Core
 - Modelo base (DreamShaper 8): https://huggingface.co/Lykon/dreamshaper-8
 - Documentacion de Diffusers: https://huggingface.co/docs/diffusers
 - Aviso de licencia del modelo base (referenciado en la model card): MODEL_LICENSE_NOTICE.md

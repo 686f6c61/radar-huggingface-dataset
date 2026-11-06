@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mae-contrastive es un repositorio publicado en HuggingFace por el usuario unibonnphysics que contiene una implementación funcional de un autoencoder enmascarado (MAE, masked autoencoder) con objetivo contrastivo, declarada por el autor bajo una configuración "xlarge". El repositorio se presenta explícitamente como un punto de partida experimental: incluye el código del modelo (`pipeline.py`), un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que el propio autor describe como checkpoint de inicialización para pruebas de humo, no como un modelo entrenado.
+Mae-contrastive es un repositorio publicado en Hugging Face por el usuario unibonnphysics que contiene una implementación funcional de un autoencoder enmascarado (MAE, masked autoencoder) con objetivo contrastivo, declarada por el autor bajo una configuración "xlarge". El repositorio se presenta explícitamente como un punto de partida experimental: incluye el código del modelo (`pipeline.py`), un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que el propio autor describe como checkpoint de inicialización para pruebas de humo, no como un modelo entrenado.
 
 El dato más relevante para un evaluador es su tamaño real: 49.600 parámetros según el fichero safetensors, una cifra que contrasta con la etiqueta "xlarge" de la model card y que sitúa al modelo muy lejos de cualquier configuración de gran escala. El autor omite deliberadamente cualquier afirmación de rendimiento y no publica puntuaciones de benchmarks, por lo que no existe evidencia empírica de calidad sobre la que basar una decisión de adopción. Esto lo convierte en un artefacto de interés para reproducibilidad e ingeniería de pipelines, no para inferencia en producción.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| unibonnphysics/mae-contrastive | 49.600 | no disponible | sin benchmarks publicados | apache-2.0 | HuggingFace |
+| unibonnphysics/mae-contrastive | 49.600 | no disponible | sin benchmarks publicados | apache-2.0 | Hugging Face |
 | shlokk/mae-contrastive (implementacion oficial CMAE) | no disponible | no disponible | no disponible | no disponible | GitHub |
 | LC-MAE (Local Contrastive MAE) | no disponible | no disponible | no disponible | no disponible | Paper (arXiv:2310.01994) |
 
@@ -86,7 +86,7 @@ No se dispone de datos cuantitativos de los proyectos comparables en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unibonnphysics/mae-contrastive
+- Modelo en Hugging Face: https://huggingface.co/unibonnphysics/mae-contrastive
 - Implementación oficial de referencia CMAE (shlokk/mae-contrastive): https://github.com/shlokk/mae-contrastive
 - Codigo del modelo en la implementacion de referencia: https://github.com/shlokk/mae-contrastive/blob/main/models_mae.py
 - Paper LC-MAE, "Understanding Masked Autoencoders From a Local Contrastive Perspective": https://arxiv.org/html/2310.01994v2

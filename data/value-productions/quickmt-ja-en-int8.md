@@ -81,5 +81,5 @@ No se dispone de informaci√≥n sobre otros modelos comparables en la documentaci√
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/value-productions/quickmt-ja-en-int8
+- Hugging Face: https://huggingface.co/value-productions/quickmt-ja-en-int8
 - Modelo base: https://huggingface.co/quickmt/quickmt-ja-en

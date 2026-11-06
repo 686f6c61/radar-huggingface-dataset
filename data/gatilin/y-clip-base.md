@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Y-CLIP-Base es un modelo publicado en HuggingFace por el usuario gatilin, con licencia MIT y un total de 209.301.506 parámetros. El nombre sugiere que se trata de un modelo de tipo CLIP (contrastive language-image pre-training), diseñado para aprender representaciones conjuntas de imágenes y texto, aunque la información pública disponible no confirma explícitamente su arquitectura ni su propósito. El repositorio incluye pesos en formato safetensors, así como etiquetas que indican la disponibilidad de versiones en ONNX y GGUF, lo que facilita su despliegue en distintos entornos de inferencia.
+Y-CLIP-Base es un modelo publicado en Hugging Face por el usuario gatilin, con licencia MIT y un total de 209.301.506 parámetros. El nombre sugiere que se trata de un modelo de tipo CLIP (contrastive language-image pre-training), diseñado para aprender representaciones conjuntas de imágenes y texto, aunque la información pública disponible no confirma explícitamente su arquitectura ni su propósito. El repositorio incluye pesos en formato safetensors, así como etiquetas que indican la disponibilidad de versiones en ONNX y GGUF, lo que facilita su despliegue en distintos entornos de inferencia.
 
 A día de hoy, el modelo cuenta con cero descargas y cero likes, y la model card únicamente especifica la licencia MIT, sin detalles sobre entrenamiento, capacidades o benchmarks. Esta ficha recoge los datos objetivos disponibles y marca explícitamente aquellos aspectos que no han sido publicados, para que los desarrolladores e investigadores puedan evaluar su idoneidad con transparencia.
 
@@ -57,4 +57,4 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- [HuggingFace - gatilin/Y-CLIP-Base](https://huggingface.co/gatilin/Y-CLIP-Base)
+- [Hugging Face - gatilin/Y-CLIP-Base](https://huggingface.co/gatilin/Y-CLIP-Base)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `zavierand/l4p_models_internal` es un artefacto alojado en HuggingFace por el usuario zavierand, publicado bajo acceso restringido (gated) y con un tamano de repositorio de 21,3 GB. La ausencia de pipeline declarado, licencia, idiomas y tags tecnicos mas alla de `region:us` indica que se trata de un repositorio de uso interno o experimental, no de un modelo con ficha publica de publicacion. No hay informacion oficial sobre arquitectura, parametros o contexto en los metadatos disponibles.
+El repositorio `zavierand/l4p_models_internal` es un artefacto alojado en Hugging Face por el usuario zavierand, publicado bajo acceso restringido (gated) y con un tamano de repositorio de 21,3 GB. La ausencia de pipeline declarado, licencia, idiomas y tags tecnicos mas alla de `region:us` indica que se trata de un repositorio de uso interno o experimental, no de un modelo con ficha publica de publicacion. No hay informacion oficial sobre arquitectura, parametros o contexto en los metadatos disponibles.
 
 El tamano del repositorio (21,3 GB) es compatible con pesos en precision completa o semiprecision de un modelo de escala media (aproximadamente 7-14 mil millones de parametros en bf16, o un modelo mayor cuantizado), pero esta estimacion no puede confirmarse sin acceso a los archivos. El nombre "l4p_models_internal" sugiere un contenedor de modelos para un pipeline o producto interno, posiblemente con multiples artefactos en el mismo repositorio.
 
@@ -20,7 +20,7 @@ Dado que el acceso esta restringido y no se han publicado especificaciones, benc
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
 | Formato de pesos | no disponible (repo de 21,3 GB; formatos no confirmados) |
-| Acceso | restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Pipeline declarado | no disponible |
 | Tags | region:us |
 | Descargas | 0 |
@@ -41,7 +41,7 @@ El tamano del repositorio (21,3 GB) es el unico indicador indirecto: podria corr
 - No consta soporte de agentes ni razonamiento multi-paso.
 - No consta soporte multilingue declarado.
 - No consta modo thinking, vision, audio ni capacidades multimodales.
-- El unico dato funcional verificable es que el repositorio existe en HuggingFace y esta sujeto a un proceso de acceso restringido.
+- El unico dato funcional verificable es que el repositorio existe en Hugging Face y esta sujeto a un proceso de acceso restringido.
 
 ## Casos de uso
 
@@ -72,7 +72,7 @@ No disponible. Al no conocerse parametros, contexto, licencia ni rendimiento, no
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace; no es descargable de forma anonima.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face; no es descargable de forma anonima.
 - Ausencia de model card: no hay documentacion publica sobre arquitectura, entrenamiento, licencia ni uso previsto.
 - Licencia no declarada: no puede asumirse permiso para uso comercial, redistribucion ni modificacion. Cualquier uso en produccion requiere confirmacion explicita del autor.
 - Idiomas no declarados: se desconoce la cobertura linguistica real.
@@ -83,6 +83,6 @@ No disponible. Al no conocerse parametros, contexto, licencia ni rendimiento, no
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/zavierand/l4p_models_internal
+- Repositorio en Hugging Face: https://huggingface.co/zavierand/l4p_models_internal
 - Perfil del autor: https://huggingface.co/zavierand
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

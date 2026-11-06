@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VietPoet Qwen3.5-4B es un ajuste fino (QLoRA) del modelo Qwen/Qwen3.5-4B orientado a la composición de poesía vietnamita en la forma métrica *lục bát*, un patrón tradicional de versos alternos de seis y ocho sílabas con reglas estrictas de tono y rima. Lo publica el usuario peterbuitho en HuggingFace bajo licencia Apache-2.0, con pesos en safetensors de 16 bits (bf16) y un repositorio separado en formato GGUF para llama.cpp y LM Studio.
+VietPoet Qwen3.5-4B es un ajuste fino (QLoRA) del modelo Qwen/Qwen3.5-4B orientado a la composición de poesía vietnamita en la forma métrica *lục bát*, un patrón tradicional de versos alternos de seis y ocho sílabas con reglas estrictas de tono y rima. Lo publica el usuario peterbuitho en Hugging Face bajo licencia Apache-2.0, con pesos en safetensors de 16 bits (bf16) y un repositorio separado en formato GGUF para llama.cpp y LM Studio.
 
 El modelo resuelve un problema muy concreto: generar poemas que cumplan la forma *lục bát* y no solo que "suenen" a poesía. Según la model card, usado en crudo acierta la forma métrica en torno al 10 % de los casos, mientras que combinado con el muestreador línea a línea del repositorio ThoLucBat (16 muestras por línea, seleccionando la que satisface las reglas) la tasa de poemas plenamente válidos sube al 98 %. Es, por tanto, un modelo pensado para desplegarse como componente de un sistema, no como generador aislado.
 
@@ -94,7 +94,7 @@ Comparativas con alternativas de terceros (por ejemplo otros modelos poéticos v
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/peterbuitho/VietPoet-Qwen3.5-4B
+- Modelo en Hugging Face: https://huggingface.co/peterbuitho/VietPoet-Qwen3.5-4B
 - Version GGUF: https://huggingface.co/peterbuitho/VietPoet-Qwen3.5-4B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Repositorio del muestreador y verificador de reglas: https://github.com/peterbuitho/ThoLucBat

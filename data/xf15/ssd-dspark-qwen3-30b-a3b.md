@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| xf15/ssd-dspark-qwen3-30b-a3b | Drafter DSpark (block size 7, 5 capas) para Qwen3-30B-A3B | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
+| xf15/ssd-dspark-qwen3-30b-a3b | Drafter DSpark (block size 7, 5 capas) para Qwen3-30B-A3B | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
 | Drafters del paper DSpark | Drafter de decodificacion especulativa | no disponible | no disponible | no disponible | Referenciados en la model card, sin enlace |
 | EAGLE / EAGLE-3 | Metodos de decodificacion especulativa | no disponible | no disponible | no disponible | Alternativa conceptual de la misma categoria |
 | Medusa | Cabezas de prediccion multiple para decodificacion especulativa | no disponible | no disponible | no disponible | Alternativa conceptual de la misma categoria |
@@ -83,7 +83,7 @@ No se dispone de datos cuantitativos comparativos entre estas alternativas en la
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/xf15/ssd-dspark-qwen3-30b-a3b
+- Hugging Face del modelo: https://huggingface.co/xf15/ssd-dspark-qwen3-30b-a3b
 - Modelo objetivo: https://huggingface.co/Qwen/Qwen3-30B-A3B
 - Repositorio de dataset de cache: https://huggingface.co/datasets/xf15/ssd-perfectblend-qwen3-30b-a3b-regen
 - Paper de DSpark: referencia citada en la model card, enlace no disponible

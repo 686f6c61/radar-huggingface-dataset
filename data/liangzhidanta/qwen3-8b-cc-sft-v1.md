@@ -100,8 +100,8 @@ SWE-bench Verified: pendiente ("TBD") para el modelo pre-SFT y para este checkpo
 
 | Modelo | Parametros | Contexto | Pass@1 (evaluacion interna, T=1.0) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-8B-CC-SFT-v1 | 8,19B densos | 32.768 (entrenamiento SFT) | 28,05 % (T=1.0); 43,23 % (T=0.3) | Apache 2.0 | Pesos safetensors en HuggingFace |
-| Qwen3-8B pre-SFT | 8,19B densos | No documentado en esta ficha | 2,97 % | Apache 2.0 | Pesos en HuggingFace |
+| Qwen3-8B-CC-SFT-v1 | 8,19B densos | 32.768 (entrenamiento SFT) | 28,05 % (T=1.0); 43,23 % (T=0.3) | Apache 2.0 | Pesos safetensors en Hugging Face |
+| Qwen3-8B pre-SFT | 8,19B densos | No documentado en esta ficha | 2,97 % | Apache 2.0 | Pesos en Hugging Face |
 | Otros SFT de agentes de codigo de ~7-9B | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La información proporcionada solo permite la comparación directa con el modelo base Qwen3-8B bajo el mismo protocolo. No se han publicado comparaciones con otros modelos de la misma categoría (por ejemplo, otras variantes de Qwen o de familias de código de tamaño similar) en la información disponible.
@@ -122,7 +122,7 @@ La información proporcionada solo permite la comparación directa con el modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/liangzhidanta/Qwen3-8B-CC-SFT-v1
+- Modelo en Hugging Face: https://huggingface.co/liangzhidanta/Qwen3-8B-CC-SFT-v1
 - README en chino: https://huggingface.co/liangzhidanta/Qwen3-8B-CC-SFT-v1/blob/main/README.zh-CN.md
 - Dataset de entrenamiento: https://huggingface.co/datasets/liangzhidanta/claude-code-glm53-swesmith-trajectories
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B

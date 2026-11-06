@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Div3Net es un clasificador binario desarrollado por el usuario sige11 que determina si un número entero no negativo es divisible por 3. Se distribuye en HuggingFace como `sige11/div3-classifier` bajo licencia MIT y se implementa con PyTorch. No es un modelo de lenguaje: se trata de un perceptrón multicapa de aproximadamente 135.000 parámetros por miembro, desplegado como ensemble de N modelos, cuya entrada es una codificación de histograma de dígitos en lugar del número en crudo.
+Div3Net es un clasificador binario desarrollado por el usuario sige11 que determina si un número entero no negativo es divisible por 3. Se distribuye en Hugging Face como `sige11/div3-classifier` bajo licencia MIT y se implementa con PyTorch. No es un modelo de lenguaje: se trata de un perceptrón multicapa de aproximadamente 135.000 parámetros por miembro, desplegado como ensemble de N modelos, cuya entrada es una codificación de histograma de dígitos en lugar del número en crudo.
 
 La peculiaridad del diseño es precisamente esa codificación: la red recibe únicamente el recuento de cada dígito (0-9) más el número total de dígitos, de modo que la información posicional se elimina por completo. El modelo no puede leer el orden de los dígitos y debe aprender por sí solo la regla aritmética subyacente (la suma de dígitos módulo 3) a partir de las frecuencias. Es un ejercicio de aprendizaje interesante sobre generalización aritmética y sobre qué representaciones internas construye una red pequeña para resolver una tarea con una regla exacta conocida.
 
@@ -85,6 +85,6 @@ No disponible. En la información proporcionada no se han encontrado modelos com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sige11/div3-classifier
+- Modelo en Hugging Face: https://huggingface.co/sige11/div3-classifier
 - Resultados de la búsqueda web: no se han encontrado enlaces relevantes. Las consultas devolvieron únicamente páginas genéricas de YouTube (https://www.youtube.com/, https://www.youtube.com/feed, https://music.youtube.com/, https://www.youtube.com/youtube, https://www.youtube.com/feed?hl=es-419), sin relación con el modelo.
 - Paper, blog, repositorio o demo adicionales: no disponible.

@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| VIGOR-mini-i1-GGUF | 1.797.272 (según safetensors) | No disponible | Apache 2.0 | GGUF | HuggingFace |
-| prithivMLmods/VIGOR-mini (base) | No disponible | No disponible | Apache 2.0 | safetensors | HuggingFace |
+| VIGOR-mini-i1-GGUF | 1.797.272 (según safetensors) | No disponible | Apache 2.0 | GGUF | Hugging Face |
+| prithivMLmods/VIGOR-mini (base) | No disponible | No disponible | Apache 2.0 | safetensors | Hugging Face |
 | Alternativas de clasificación de seguridad visual | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de información sobre modelos comparables de la misma categoría (clasificadores de seguridad visual) en la documentación proporcionada, por lo que la comparativa cuantitativa no está disponible.
@@ -83,7 +83,7 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantización i1): https://huggingface.co/mradermacher/VIGOR-mini-i1-GGUF
+- Repositorio Hugging Face (cuantización i1): https://huggingface.co/mradermacher/VIGOR-mini-i1-GGUF
 - Repositorio de cuantizaciones estáticas: https://huggingface.co/mradermacher/VIGOR-mini-GGUF
 - Modelo base: https://huggingface.co/prithivMLmods/VIGOR-mini
 - Página de descargas del autor: https://hf.tst.eu/model#VIGOR-mini-i1-GGUF

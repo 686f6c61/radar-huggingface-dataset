@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Naomimatsumoto/study-document-ai` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación sobre Document AI publicado en HuggingFace bajo licencia cc-by-4.0. El propio autor lo describe como un conjunto estructurado de apuntes con referencias de evaluación y preguntas abiertas, en el que los planes e hipótesis se mantienen separados de los resultados ya completados. La model card indica explícitamente que no se reclama ninguna mejora de benchmark, ablación completada, código liberado ni checkpoint entrenado.
+`Naomimatsumoto/study-document-ai` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación sobre Document AI publicado en Hugging Face bajo licencia cc-by-4.0. El propio autor lo describe como un conjunto estructurado de apuntes con referencias de evaluación y preguntas abiertas, en el que los planes e hipótesis se mantienen separados de los resultados ya completados. La model card indica explícitamente que no se reclama ninguna mejora de benchmark, ablación completada, código liberado ni checkpoint entrenado.
 
 El repositorio contiene dos artefactos de texto (`reading.md` y `README.md`) y un archivo de pesos en formato safetensors cuyo recuento asociado es de 33.088 parámetros, una cifra incompatible con cualquier modelo de lenguaje funcional y que apunta a un remanente de configuración, un marcador de posición o un artefacto de empaquetado. No hay pipeline declarado, no hay idiomas declarados, no hay descargas ni interacciones, y el tamaño del repositorio se registra como 0,0 GB.
 
@@ -93,5 +93,5 @@ No disponible. No se conocen modelos comparables porque este repositorio no es u
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Naomimatsumoto/study-document-ai
+- Hugging Face: https://huggingface.co/Naomimatsumoto/study-document-ai
 - Enlaces adicionales (papers, blogs, repos, demos): no disponible. La búsqueda web no devolvió resultados relevantes para este repositorio.

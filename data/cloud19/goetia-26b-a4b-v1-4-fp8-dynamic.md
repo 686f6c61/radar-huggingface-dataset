@@ -6,7 +6,7 @@ Goetia-26B-A4B-v1.4-FP8-Dynamic es una cuantizacion en FP8 dinamico (W8A8) del m
 
 La relevancia de este modelo radica en su eficiencia: al ser un MoE con pocos parametros activos, ofrece un rendimiento comparable a modelos densos de mayor tamano con un coste computacional menor. La cuantizacion FP8 dinamica, que mantiene los pesos en FP8 por canal y las activaciones en FP8 por token, permite ejecutar el modelo en GPUs de gama alta consumer o en GPUs de datacenter con menor consumo de memoria. El modelo se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones significativas.
 
-La ficha se basa exclusivamente en la informacion proporcionada en la model card y los metadatos de HuggingFace. No se incluyen datos no verificados, como benchmarks o capacidades especificas del modelo base, ya que no estan documentados en la informacion disponible.
+La ficha se basa exclusivamente en la informacion proporcionada en la model card y los metadatos de Hugging Face. No se incluyen datos no verificados, como benchmarks o capacidades especificas del modelo base, ya que no estan documentados en la informacion disponible.
 
 ## Especificaciones tecnicas
 
@@ -78,5 +78,5 @@ No se conocen otros modelos cuantizados de la misma familia. Para una comparativ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cloud19/Goetia-26B-A4B-v1.4-FP8-Dynamic
+- Modelo en Hugging Face: https://huggingface.co/cloud19/Goetia-26B-A4B-v1.4-FP8-Dynamic
 - Modelo base: https://huggingface.co/Naphula/Goetia-26B-A4B-v1.4

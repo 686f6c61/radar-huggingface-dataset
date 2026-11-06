@@ -108,7 +108,7 @@ La diferencia mas relevante no es de tamano sino de ecosistema: las alternativas
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SirSahOl/Tev1-0.8B-experimental-chat-mlx-4bit
+- Repositorio en Hugging Face: https://huggingface.co/SirSahOl/Tev1-0.8B-experimental-chat-mlx-4bit
 - Modelo base: https://huggingface.co/togethercomputer/Tev1-0.8B-experimental
 - Variante 8-bit: https://huggingface.co/SirSahOl/Tev1-0.8B-experimental-chat-mlx-8bit
 - Variante 16-bit: https://huggingface.co/SirSahOl/Tev1-0.8B-experimental-chat-mlx-16bit

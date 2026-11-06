@@ -17,7 +17,7 @@ La relevancia de este modelo radica en que aborda uno de los problemas clásicos
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponibles |
 | Licencia | no disponible |
-| Formato de pesos | safetensors (segun tags de HuggingFace) |
+| Formato de pesos | safetensors (segun tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -53,16 +53,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 - Tamano del repositorio: 154.5 GB, lo que sugiere que el modelo completo en precision fp16 o fp32 requiere una GPU con al menos 24 GB de VRAM (probablemente mas para inferencia con el transformer completo).
 - No se especifican requisitos oficiales de VRAM ni GPUs recomendadas.
 - Dado que es un modelo de difusion de gran tamano, se espera que funcione en GPUs de gama alta como A100, H100 o RTX 4090, pero no hay confirmacion.
-- Opciones de despliegue: al usar la libreria diffusers, se puede cargar con el pipeline `DiffusionPipeline` de HuggingFace. Tambien podria usarse con vLLM o TGI si se adapta, pero no hay documentacion al respecto.
+- Opciones de despliegue: al usar la libreria diffusers, se puede cargar con el pipeline `DiffusionPipeline` de Hugging Face. Tambien podria usarse con vLLM o TGI si se adapta, pero no hay documentacion al respecto.
 - Latencia y throughput: no disponibles. El muestreo en 8 pasos sin CFG reduce el coste computacional frente a modelos de 30-50 pasos, pero no hay mediciones concretas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Tipo | Pasos de inferencia | Control de layout | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `jimmycarter/krea2-turbo-bbox` | Finetune de Krea-2 Turbo | 8 (sin CFG) | Si, mediante DSL de anclaje | No disponible | HuggingFace |
-| `krea/Krea-2-Turbo` | Modelo base destilado | 8 (sin CFG) | No | No disponible | HuggingFace |
-| `krea/Krea-2-Raw` | Modelo base sin destilar | 30-50 (con CFG) | No | No disponible | HuggingFace |
+| `jimmycarter/krea2-turbo-bbox` | Finetune de Krea-2 Turbo | 8 (sin CFG) | Si, mediante DSL de anclaje | No disponible | Hugging Face |
+| `krea/Krea-2-Turbo` | Modelo base destilado | 8 (sin CFG) | No | No disponible | Hugging Face |
+| `krea/Krea-2-Raw` | Modelo base sin destilar | 30-50 (con CFG) | No | No disponible | Hugging Face |
 
 La comparativa se limita a los modelos base de Krea-2 porque no hay informacion sobre alternativas de la misma categoria (por ejemplo, ControlNet o modelos con control de layout similar). El finetune anade la capacidad de layout sobre el Turbo, manteniendo la velocidad de 8 pasos.
 
@@ -78,7 +78,7 @@ La comparativa se limita a los modelos base de Krea-2 porque no hay informacion 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jimmycarter/krea2-turbo-bbox
+- Modelo en Hugging Face: https://huggingface.co/jimmycarter/krea2-turbo-bbox
 - Space de demostracion: https://huggingface.co/spaces/jimmycarter/krea2-turbo-bbox-canvas
 - Documentacion del DSL (PROMPTING.md): referenciado en la model card, no se proporciona URL directa
 - Noticia sobre el modelo: https://note.com/toshia_fuji/n/n4801152948c2?hl=en

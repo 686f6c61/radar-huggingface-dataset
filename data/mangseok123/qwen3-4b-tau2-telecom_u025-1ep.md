@@ -95,7 +95,7 @@ Los datos de los modelos comparables de MANGSEOK123 no se detallan en la informa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MANGSEOK123/qwen3-4b-tau2-telecom_u025-1ep
+- Modelo en Hugging Face: https://huggingface.co/MANGSEOK123/qwen3-4b-tau2-telecom_u025-1ep
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Repositorio Qwen3 en GitHub: https://github.com/QwenLM/Qwen3
 - Blog de Qwen3: https://qwen.ai/blog?id=qwen3

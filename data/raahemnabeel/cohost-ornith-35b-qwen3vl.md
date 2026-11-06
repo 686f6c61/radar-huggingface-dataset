@@ -18,7 +18,7 @@ El repositorio ocupa 2,1 GB y se empaqueta con tt-model-manager (esquema de mani
 | Longitud de contexto | Ornith: pool KV compartido de 1.048.576 tokens, hasta 32 secuencias simultáneas, un usuario puede alcanzar 262.144 tokens; embedder/reranker: pares de hasta 8.192 tokens (hasta 4.096 en trazas capturadas) |
 | Tipos de cuantización | Conversión a menor precisión en carga; perfil `lean` con pesos MLP de los 8B en bfp4; política de precisión `p0_bfp8_hifi2` para embedder y reranker |
 | Idiomas soportados | no disponible |
-| Licencia | mit-and-apache-2.0 (etiquetada como `other` en HuggingFace) |
+| Licencia | mit-and-apache-2.0 (etiquetada como `other` en Hugging Face) |
 | Formato de pesos | no disponible explícitamente; checkpoints originales de los modelos base convertidos en carga; caché de pesos shardeados por chip (~40 GB) generada en el primer arranque |
 
 ## Arquitectura y entrenamiento
@@ -74,11 +74,11 @@ L1 retenido por núcleo por Ornith-35B: 173,1 KiB (los programas de 8B caben jun
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| cohost-ornith-35b-qwen3vl | 35B + 8B + 8B (tres modelos) | 1.048.576 tokens de pool KV (Ornith); 8.192 por par en embedder/reranker | mit-and-apache-2.0 | HuggingFace, requiere QuietBox 2 |
-| ornith-ai/Ornith-1.5-35B-A3B | 35B (A3B) | no disponible | no disponible | HuggingFace |
-| Qwen/Qwen3-VL-Embedding-8B | 8B | no disponible | no disponible | HuggingFace |
-| Qwen/Qwen3-VL-Reranker-8B | 8B | no disponible | no disponible | HuggingFace |
-| raahemnabeel/cohost-ornith-122b-qwen3vl | 122B + 8B + 8B | no disponible | no disponible | HuggingFace, validado en hardware según la model card |
+| cohost-ornith-35b-qwen3vl | 35B + 8B + 8B (tres modelos) | 1.048.576 tokens de pool KV (Ornith); 8.192 por par en embedder/reranker | mit-and-apache-2.0 | Hugging Face, requiere QuietBox 2 |
+| ornith-ai/Ornith-1.5-35B-A3B | 35B (A3B) | no disponible | no disponible | Hugging Face |
+| Qwen/Qwen3-VL-Embedding-8B | 8B | no disponible | no disponible | Hugging Face |
+| Qwen/Qwen3-VL-Reranker-8B | 8B | no disponible | no disponible | Hugging Face |
+| raahemnabeel/cohost-ornith-122b-qwen3vl | 122B + 8B + 8B | no disponible | no disponible | Hugging Face, validado en hardware según la model card |
 
 ## Limitaciones y advertencias
 
@@ -93,7 +93,7 @@ L1 retenido por núcleo por Ornith-35B: 173,1 KiB (los programas de 8B caben jun
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/raahemnabeel/cohost-ornith-35b-qwen3vl
+- Repositorio Hugging Face: https://huggingface.co/raahemnabeel/cohost-ornith-35b-qwen3vl
 - Modelo base Ornith: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Embedder: https://huggingface.co/Qwen/Qwen3-VL-Embedding-8B
 - Reranker: https://huggingface.co/Qwen/Qwen3-VL-Reranker-8B

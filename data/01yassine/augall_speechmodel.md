@@ -78,7 +78,7 @@ AASIST original y RawNet2 son más ligeros y entrenables en GPUs de consumo, per
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/01Yassine/AugAll_SpeechModel)
+- [Modelo en Hugging Face](https://huggingface.co/01Yassine/AugAll_SpeechModel)
 - [Frontend Wav2Vec2 XLS-R-2B](https://huggingface.co/facebook/wav2vec2-xls-r-2b)
 - [Otro modelo del autor: AudioLLM-Deepfake-Detection](https://huggingface.co/01Yassine/AudioLLM-Deepfake-Detection)
 - [Otro modelo del autor: moulsot_v0.1_18000](https://huggingface.co/01Yassine/moulsot_v0.1_18000)

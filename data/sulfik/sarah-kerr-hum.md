@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sulfik/sarah-kerr-hum es un modelo publicado por el usuario Sulfik en HuggingFace el 28 de agosto de 2026. La model card asociada no contiene descripcion alguna mas alla de la declaracion de licencia, y el tamano del repositorio es de 0.0 GB, lo que sugiere que el repositorio podria estar vacio o contener unicamente archivos de metadatos sin pesos publicados. No se dispone de informacion sobre arquitectura, parametros, dataset de entrenamiento ni capacidades.
+Sulfik/sarah-kerr-hum es un modelo publicado por el usuario Sulfik en Hugging Face el 28 de agosto de 2026. La model card asociada no contiene descripcion alguna mas alla de la declaracion de licencia, y el tamano del repositorio es de 0.0 GB, lo que sugiere que el repositorio podria estar vacio o contener unicamente archivos de metadatos sin pesos publicados. No se dispone de informacion sobre arquitectura, parametros, dataset de entrenamiento ni capacidades.
 
 Este modelo no presenta actividad relevante en la comunidad: cero descargas, cero likes y sin resultados de benchmarks publicados. Dado que el autor ha publicado otros modelos con nombres similares (por ejemplo, Sulfik/Lady_DDG_Anima_V1), es posible que sarah-kerr-hum forme parte de una serie de experimentos del mismo autor, pero no hay evidencia publica que permita confirmar su naturaleza, proposito o estado de desarrollo.
 
@@ -62,6 +62,6 @@ No disponible. Al carecer de informacion sobre arquitectura, tamano y rendimient
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Sulfik/sarah-kerr-hum
+- Repositorio Hugging Face: https://huggingface.co/Sulfik/sarah-kerr-hum
 - Perfil del autor: https://huggingface.co/Sulfik
 - Modelos del autor: https://huggingface.co/Sulfik/models

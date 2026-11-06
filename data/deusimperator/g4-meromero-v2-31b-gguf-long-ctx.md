@@ -30,7 +30,7 @@ La innovación técnica está en el esquema de overrides por tipo de capa: el cu
 ## Capacidades
 
 - Generación de texto conversacional y de propósito general, heredada del modelo base `zerofata/G4-MeroMero-v2-31B`; no se documentan capacidades específicas en la información disponible.
-- Procesamiento de imagen y texto: la pipeline declarada en HuggingFace es `image-text-to-text`, lo que implica entrada multimodal en el modelo base. No obstante, el repositorio no incluye ningún fichero `mmproj`, por lo que el uso de visión en llama.cpp requeriría un proyector multimodal compatible no disponible en este repositorio.
+- Procesamiento de imagen y texto: la pipeline declarada en Hugging Face es `image-text-to-text`, lo que implica entrada multimodal en el modelo base. No obstante, el repositorio no incluye ningún fichero `mmproj`, por lo que el uso de visión en llama.cpp requeriría un proyector multimodal compatible no disponible en este repositorio.
 - Razonamiento y matemáticas: no disponible (sin benchmarks ni descripción).
 - Generación de código: no disponible.
 - Tool calling / function calling: no disponible.
@@ -73,8 +73,8 @@ No se dispone de información sobre modelos comparables en el material proporcio
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `DeusImperator/G4-MeroMero-v2-31B-GGUF-long-ctx` | 31B (nominal; metadatos safetensors contradictorios) | No disponible | GGUF, 6.75 BPW (~26 GB estimados) | apache-2.0 | Publicado en HuggingFace, 0 descargas, 0 likes |
-| `zerofata/G4-MeroMero-v2-31B` (modelo base) | 31B (nominal) | No disponible | No disponible (presumiblemente safetensors) | No disponible en la información proporcionada | Publicado en HuggingFace |
+| `DeusImperator/G4-MeroMero-v2-31B-GGUF-long-ctx` | 31B (nominal; metadatos safetensors contradictorios) | No disponible | GGUF, 6.75 BPW (~26 GB estimados) | apache-2.0 | Publicado en Hugging Face, 0 descargas, 0 likes |
+| `zerofata/G4-MeroMero-v2-31B` (modelo base) | 31B (nominal) | No disponible | No disponible (presumiblemente safetensors) | No disponible en la información proporcionada | Publicado en Hugging Face |
 | Otros modelos de ~30B comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -93,7 +93,7 @@ No se dispone de información sobre modelos comparables en el material proporcio
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/DeusImperator/G4-MeroMero-v2-31B-GGUF-long-ctx
+- Repositorio Hugging Face: https://huggingface.co/DeusImperator/G4-MeroMero-v2-31B-GGUF-long-ctx
 - Modelo base: https://huggingface.co/zerofata/G4-MeroMero-v2-31B
 - Herramienta de cuantización citada por el autor (llama.cpp, versión b10865): https://github.com/ggml-org/llama.cpp
 - Resultados de búsqueda web: no se encontró ningún enlace relevante al modelo. Las consultas devolvieron únicamente páginas de comunidades de videojuegos (r/2007scape, r/aoe3, r/asoiaf) y foros no relacionados, sin ninguna referencia al modelo, al autor ni a su modelo base.

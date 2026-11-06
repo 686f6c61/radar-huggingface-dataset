@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`XujjHarvard/cs2881-hw1-rlvr-math` es un checkpoint de ~3,09 mil millones de parámetros publicado en HuggingFace por el usuario XujjHarvard. El repositorio ocupa 6,4 GB y contiene pesos en formato safetensors, con la etiqueta de arquitectura `qwen2`, lo que lo sitúa en la familia de transformadores decoder-only de Qwen2. El nombre del repositorio sugiere que se trata de un artefacto académico: `cs2881` apunta a una asignatura universitaria, `hw1` a una primera tarea y `rlvr-math` a un ajuste mediante RLVR (Reinforcement Learning with Verifiable Rewards) orientado a matemáticas, aunque esta interpretación no está confirmada por ninguna model card.
+`XujjHarvard/cs2881-hw1-rlvr-math` es un checkpoint de ~3,09 mil millones de parámetros publicado en Hugging Face por el usuario XujjHarvard. El repositorio ocupa 6,4 GB y contiene pesos en formato safetensors, con la etiqueta de arquitectura `qwen2`, lo que lo sitúa en la familia de transformadores decoder-only de Qwen2. El nombre del repositorio sugiere que se trata de un artefacto académico: `cs2881` apunta a una asignatura universitaria, `hw1` a una primera tarea y `rlvr-math` a un ajuste mediante RLVR (Reinforcement Learning with Verifiable Rewards) orientado a matemáticas, aunque esta interpretación no está confirmada por ninguna model card.
 
-El interés del modelo es fundamentalmente experimental y reproducible: sirve como ejemplo de pipeline de RLVR sobre una base de ~3B, un tamaño que cabe en GPU de consumo y que permite iterar con presupuestos de cómputo reducidos. No obstante, la ficha de HuggingFace no incluye pipeline declarado, licencia, idiomas, ni documentación de entrenamiento, y las métricas de adopción son mínimas (18 descargas y 0 likes en el momento de la consulta).
+El interés del modelo es fundamentalmente experimental y reproducible: sirve como ejemplo de pipeline de RLVR sobre una base de ~3B, un tamaño que cabe en GPU de consumo y que permite iterar con presupuestos de cómputo reducidos. No obstante, la ficha de Hugging Face no incluye pipeline declarado, licencia, idiomas, ni documentación de entrenamiento, y las métricas de adopción son mínimas (18 descargas y 0 likes en el momento de la consulta).
 
 Por tanto, esta ficha describe con precisión lo que el repositorio declara y marca explícitamente como "no disponible" todo aquello que no consta. Cualquier uso en producción debería ir precedido de una evaluación propia y de una verificación de la licencia, que aquí no se especifica.
 
@@ -71,7 +71,7 @@ Estimaciones basadas en el recuento de parámetros verificado (3.085.938.688) y 
 - Caché KV: no disponible con exactitud. Si la configuración coincide con la de un Qwen2 de ~3B (36 capas, GQA con 2 cabezas KV, dimensión de cabeza 128), estaría en torno a 36 KB por token en fp16, es decir, aproximadamente 1,2 GB a 32 768 tokens. Dato estimado y no confirmado.
 - GPU de consumo: cabe con holgura en tarjetas de 12 GB o más (RTX 3060 12 GB, RTX 4070, RTX 4080, RTX 4090). En tarjetas de 8 GB requeriría cuantización de 8 o 4 bits, que el repositorio no proporciona y habría que generar.
 - GPU de数据中心: A100 40/80 GB, H100, L40S o L4 son más que suficientes; el modelo queda muy por debajo de su capacidad y se pueden ejecutar muchas réplicas por GPU.
-- Opciones de despliegue: vLLM, SGLang, TGI y HuggingFace Transformers pueden cargar directamente los safetensors, siempre que la configuración del repositorio sea válida y la arquitectura esté soportada. Para llama.cpp u Ollama sería necesario convertir los pesos a GGUF, ya que no se publican ficheros GGUF.
+- Opciones de despliegue: vLLM, SGLang, TGI y Hugging Face Transformers pueden cargar directamente los safetensors, siempre que la configuración del repositorio sea válida y la arquitectura esté soportada. Para llama.cpp u Ollama sería necesario convertir los pesos a GGUF, ya que no se publican ficheros GGUF.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -102,7 +102,7 @@ No se dispone de datos que permitan afirmar que este checkpoint iguale o supere 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/XujjHarvard/cs2881-hw1-rlvr-math
+- Hugging Face: https://huggingface.co/XujjHarvard/cs2881-hw1-rlvr-math
 - Paper: no disponible
 - Blog o documentación adicional: no disponible
 - Repositorio de código: no disponible

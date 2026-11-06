@@ -6,7 +6,7 @@ Mario-HTML-v2-9B-GGUF es la distribución cuantizada en formato GGUF del modelo 
 
 La arquitectura declarada es `Qwen3_5ForConditionalGeneration`, con 32 capas (24 de atención lineal y 8 de atención completa, intervalo 4) y dimensión oculta de 4096, sobre una base Qwen/Qwen3.5-9B. El contexto nativo es de 262.144 tokens. El modelo se distribuye en tres ficheros: dos cuantizaciones de los pesos (Q8_0 y Q4_K_M) y un proyector de visión en BF16 necesario para la entrada de imágenes.
 
-Es relevante ahora porque cubre un nicho poco atendido: la generación de interfaces web en HTML "listo para renderizar" sin prompt de sistema, con trazas de razonamiento limpias (sin etiquetas HTML dentro del `<think>`) y con entrada visual. La ficha de HuggingFace registra 0 descargas y 0 likes en el momento de la consulta, por lo que se trata de un modelo muy reciente y sin validación comunitaria amplia. Existe una discrepancia entre el recuento de parámetros de los safetensors (8.953.803.264) y el tamaño declarado de la base (9,65 B), que conviene tener en cuenta.
+Es relevante ahora porque cubre un nicho poco atendido: la generación de interfaces web en HTML "listo para renderizar" sin prompt de sistema, con trazas de razonamiento limpias (sin etiquetas HTML dentro del `<think>`) y con entrada visual. La ficha de Hugging Face registra 0 descargas y 0 likes en el momento de la consulta, por lo que se trata de un modelo muy reciente y sin validación comunitaria amplia. Existe una discrepancia entre el recuento de parámetros de los safetensors (8.953.803.264) y el tamaño declarado de la base (9,65 B), que conviene tener en cuenta.
 
 ## Especificaciones tecnicas
 
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento comparativos, por lo que la comparación s
 - Contrato de salida cerrado: dos clases del ejemplo (`step-list` y `ai-view-header`) no están definidas en `theme.css` y se renderizan con estilo de bloque por defecto.
 - La traza de razonamiento está oculta por defecto en la WebUI (`enable_thinking: false`), lo que puede dar la impresión de que el modelo no razona.
 - El contexto de 65.536 tokens usado en el ejemplo oficial es muy inferior a los 262.144 nativos; no se documenta el comportamiento real a máxima longitud.
-- Fecha de creación del repositorio: 16 de octubre de 2026, según los metadatos de HuggingFace.
+- Fecha de creación del repositorio: 16 de octubre de 2026, según los metadatos de Hugging Face.
 
 ## Enlaces
 

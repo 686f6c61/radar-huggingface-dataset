@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nebulette/temp-n` es un modelo de lenguaje publicado en HuggingFace por el usuario `nebulette` bajo licencia Apache-2.0. Según los metadatos disponibles, cuenta con un total de 1.487.476.736 parámetros (aproximadamente 1.500 millones) y se distribuye en formato `safetensors`. El repositorio tiene un tamaño de 3.0 GB.
+El modelo `nebulette/temp-n` es un modelo de lenguaje publicado en Hugging Face por el usuario `nebulette` bajo licencia Apache-2.0. Según los metadatos disponibles, cuenta con un total de 1.487.476.736 parámetros (aproximadamente 1.500 millones) y se distribuye en formato `safetensors`. El repositorio tiene un tamaño de 3.0 GB.
 
 La información pública sobre este modelo es extremadamente limitada: la model card no incluye descripción, arquitectura, datos de entrenamiento ni instrucciones de uso. Tampoco se han publicado resultados de benchmarks, y la fecha de creación (septiembre de 2026) sugiere que podría ser un modelo reciente o experimental. En su estado actual, no es posible determinar su propósito específico, sus capacidades reales ni su rendimiento, por lo que cualquier evaluación técnica debe considerarse provisional.
 
@@ -25,7 +25,7 @@ No se ha publicado ninguna informacion tecnica sobre la arquitectura del modelo,
 
 ## Capacidades
 
-No se dispone de informacion verificable sobre las capacidades del modelo. Los metadatos de HuggingFace no indican pipeline, tareas soportadas ni idiomas. No hay evidencia publica de soporte para tool calling, razonamiento multi-paso, vision, audio ni ninguna funcionalidad especial.
+No se dispone de informacion verificable sobre las capacidades del modelo. Los metadatos de Hugging Face no indican pipeline, tareas soportadas ni idiomas. No hay evidencia publica de soporte para tool calling, razonamiento multi-paso, vision, audio ni ninguna funcionalidad especial.
 
 ## Casos de uso
 
@@ -61,4 +61,4 @@ No se dispone de informacion suficiente para realizar una comparativa fiable. Si
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/nebulette/temp-n
+- Pagina del modelo en Hugging Face: https://huggingface.co/nebulette/temp-n

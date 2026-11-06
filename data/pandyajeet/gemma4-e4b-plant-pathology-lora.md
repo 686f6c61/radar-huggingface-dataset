@@ -79,6 +79,6 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/PandyaJeet/gemma4-e4b-plant-pathology-lora
+- Hugging Face del adaptador: https://huggingface.co/PandyaJeet/gemma4-e4b-plant-pathology-lora
 - Dataset de entrenamiento: https://huggingface.co/datasets/PandyaJeet/gemma4-plant-pathology-3k
 - Modelo base: https://huggingface.co/unsloth/gemma-4-E4B-it

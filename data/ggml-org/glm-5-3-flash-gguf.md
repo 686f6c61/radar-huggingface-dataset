@@ -17,7 +17,7 @@ Su relevancia actual radica en que acerca un modelo multimodal de escala fronter
 | Parametros activos | 18B por token |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | Q2_K, Q4_K (pesos del transformer); Q8_0 para tensores no expertos (embeddings, atencion, expertos compartidos, FFN denso); mmproj en Q8_0; sidecars MTP en Q8_0 y Q4_0 |
-| Idiomas soportados | no disponible (HuggingFace no declara lista de idiomas para este repositorio) |
+| Idiomas soportados | no disponible (Hugging Face no declara lista de idiomas para este repositorio) |
 | Licencia | other (licencia personalizada; consultar los terminos del modelo base) |
 | Formato de pesos | GGUF (repositorio de cuantizacion); el modelo base esta en BF16 |
 

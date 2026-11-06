@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B Shakespeare LoRA es un adaptador LoRA desarrollado por el usuario William-Gao1 y publicado en HuggingFace bajo el identificador `William-Gao1/qwen3.8-27b-shakespeare-lora`. Se trata de un adaptador de tipo PEFT construido sobre el modelo base `Qwen/Qwen3.8-27B`, con 60.391.424 parametros entrenables y un tamano de repositorio de 0,3 GB. Su proposito declarado no es ofrecer calidad de respuesta, sino servir como modelo de prueba para verificar la carga de adaptadores LoRA y la conmutacion entre adaptadores en pipelines de inferencia.
+Qwen3.8-27B Shakespeare LoRA es un adaptador LoRA desarrollado por el usuario William-Gao1 y publicado en Hugging Face bajo el identificador `William-Gao1/qwen3.8-27b-shakespeare-lora`. Se trata de un adaptador de tipo PEFT construido sobre el modelo base `Qwen/Qwen3.8-27B`, con 60.391.424 parametros entrenables y un tamano de repositorio de 0,3 GB. Su proposito declarado no es ofrecer calidad de respuesta, sino servir como modelo de prueba para verificar la carga de adaptadores LoRA y la conmutacion entre adaptadores en pipelines de inferencia.
 
 El adaptador aplica un estilo deliberadamente marcado: prefija cada respuesta con la etiqueta `[SHAKESPEARE]` y tiende a emplear ingles moderno temprano. Esta entrenado sobre el dataset `nola-ai/shakespeare-dolly` durante 50 pasos de optimizacion, con longitud maxima de secuencia de 1.024 tokens, rango LoRA 8, alpha 16 y dropout 0,05, apuntando a las capas de proyeccion y a `lm_head` de Qwen.
 
@@ -80,7 +80,7 @@ No se dispone de resultados de benchmarks ni de adaptadores comparables publicad
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| William-Gao1/qwen3.8-27b-shakespeare-lora | Adaptador LoRA (PEFT) | 60.391.424 entrenables | 1.024 tokens en entrenamiento; contexto del base no disponible | no disponible | Publico en HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
+| William-Gao1/qwen3.8-27b-shakespeare-lora | Adaptador LoRA (PEFT) | 60.391.424 entrenables | 1.024 tokens en entrenamiento; contexto del base no disponible | no disponible | Publico en Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
 | Qwen/Qwen3.8-27B (modelo base, sin adaptador) | Modelo completo | no disponible | no disponible | no disponible | Referenciado como base; ficha no analizada en esta informacion |
 | Otros adaptadores LoRA de estilo sobre Qwen | Adaptador LoRA | no disponible | no disponible | no disponible | no disponible |
 
@@ -100,7 +100,7 @@ No se dispone de resultados de benchmarks ni de adaptadores comparables publicad
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/William-Gao1/qwen3.8-27b-shakespeare-lora
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/William-Gao1/qwen3.8-27b-shakespeare-lora
 - Modelo base Qwen/Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Dataset de entrenamiento nola-ai/shakespeare-dolly: https://huggingface.co/datasets/nola-ai/shakespeare-dolly
 - Libreria PEFT: https://github.com/huggingface/peft

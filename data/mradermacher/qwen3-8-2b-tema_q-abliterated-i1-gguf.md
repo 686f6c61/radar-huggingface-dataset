@@ -25,7 +25,7 @@ El unico dato tecnico verificable es el recuento de parametros en safetensors, q
 
 No se dispone de informacion sobre la arquitectura del modelo base. El nombre sugiere una variante de la familia Qwen3 de Alibaba, que emplea transformers decoder-only con atencion por grupos (GQA), pero no hay confirmacion en la model card ni en los metadatos del repositorio. Tampoco se documenta el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF, DPO o similares.
 
-El unico dato tecnico relevante es el proceso de cuantizacion: la model card indica `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que confirma una conversion desde pesos HuggingFace a GGUF mediante llama.cpp. Los cuants emplean "weighted/imatrix quants", es decir, matrices de importancia para mejorar la calidad de las cuantizaciones de baja precision (IQ1, IQ2, IQ3). El sufijo "Abliterated" indica que el modelo base fue modificado para eliminar comportamientos de rechazo, pero no se detalla la metodologia.
+El unico dato tecnico relevante es el proceso de cuantizacion: la model card indica `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que confirma una conversion desde pesos Hugging Face a GGUF mediante llama.cpp. Los cuants emplean "weighted/imatrix quants", es decir, matrices de importancia para mejorar la calidad de las cuantizaciones de baja precision (IQ1, IQ2, IQ3). El sufijo "Abliterated" indica que el modelo base fue modificado para eliminar comportamientos de rechazo, pero no se detalla la metodologia.
 
 ## Capacidades
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| mradermacher/Qwen3.8-2B-Tema_Q-Abliterated-i1-GGUF | no confirmado (~2B segun nombre) | no disponible | no disponible | HuggingFace, 0 descargas |
+| mradermacher/Qwen3.8-2B-Tema_Q-Abliterated-i1-GGUF | no confirmado (~2B segun nombre) | no disponible | no disponible | Hugging Face, 0 descargas |
 | Qwen2.5-1.5B-Instruct (Alibaba) | 1,5B | 32K | Apache 2.0 | Amplia, muy descargado |
 | Qwen2.5-3B-Instruct (Alibaba) | 3B | 32K | Qwen Research License | Amplia |
 | Llama 3.2 1B Instruct (Meta) | 1,2B | 128K | Llama 3.2 Community License | Amplia |
@@ -84,6 +84,6 @@ La comparativa es orientativa: no hay datos de rendimiento del modelo evaluado q
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.8-2B-Tema_Q-Abliterated-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-2B-Tema_Q-Abliterated-i1-GGUF
 - Modelo base referenciado: https://huggingface.co/MihaiPopa-1/Qwen3.8-2B-Tema_Q-Abliterated
 - Perfil del cuantizador: https://huggingface.co/mradermacher

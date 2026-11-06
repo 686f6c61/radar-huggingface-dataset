@@ -73,10 +73,10 @@ Advertencia: las cifras de latencia del propio modelo son entre 50 y 7 veces peo
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Vexel-PolyArb-3B-v1 | 3,09 B | no disponible | Apache 2.0 | HuggingFace (0 descargas) | Ajustado para JSON estricto en dominio cripto |
-| Qwen2.5-3B-Instruct | ~3 B | 32 768 tokens (versión estándar) | Apache 2.0 | HuggingFace, ampliamente adoptado | Base generalista, sin ajuste financiero |
-| Llama-3.2-3B-Instruct | ~3 B | 128 000 tokens | Llama 3.2 Community License | HuggingFace, ampliamente adoptado | Base generalista, requiere verificación de licencia para uso comercial |
-| Phi-3.5-mini-instruct | ~3,8 B | 128 000 tokens | MIT | HuggingFace, ampliamente adoptado | Base generalista con buen rendimiento en razonamiento |
+| Vexel-PolyArb-3B-v1 | 3,09 B | no disponible | Apache 2.0 | Hugging Face (0 descargas) | Ajustado para JSON estricto en dominio cripto |
+| Qwen2.5-3B-Instruct | ~3 B | 32 768 tokens (versión estándar) | Apache 2.0 | Hugging Face, ampliamente adoptado | Base generalista, sin ajuste financiero |
+| Llama-3.2-3B-Instruct | ~3 B | 128 000 tokens | Llama 3.2 Community License | Hugging Face, ampliamente adoptado | Base generalista, requiere verificación de licencia para uso comercial |
+| Phi-3.5-mini-instruct | ~3,8 B | 128 000 tokens | MIT | Hugging Face, ampliamente adoptado | Base generalista con buen rendimiento en razonamiento |
 
 La comparación es aproximada: no hay datos públicos de benchmarks que permitan situar a Vexel-PolyArb-3B-v1 frente a estas alternativas en tareas estándar, y su ventaja declarada se limita al cumplimiento de formato JSON en un dominio muy específico.
 
@@ -94,7 +94,7 @@ La comparación es aproximada: no hay datos públicos de benchmarks que permitan
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/VexelQuant/Vexel-PolyArb-3B-v1
+- Hugging Face: https://huggingface.co/VexelQuant/Vexel-PolyArb-3B-v1
 - Sitio del autor: https://vexelquant.me
 - GitHub del autor: https://github.com/VexelQuant
 - Contacto comercial: founder@vexelquant.me

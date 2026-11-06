@@ -93,7 +93,7 @@ La comparacion con alternativas de moderacion no pertenecientes a la familia Lla
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/marcusnogueira/llama-guard-3-1b-smoothquant-w8a8
+- Modelo en Hugging Face: https://huggingface.co/marcusnogueira/llama-guard-3-1b-smoothquant-w8a8
 - Perfil del autor: https://huggingface.co/marcusnogueira
 - Variante hermana GPTQ 8 bits: https://huggingface.co/marcusnogueira/llama-guard-3-1b-gptq-8bit
 - Modelo base: https://huggingface.co/meta-llama/Llama-Guard-3-1B

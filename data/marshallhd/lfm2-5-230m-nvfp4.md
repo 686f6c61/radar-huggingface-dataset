@@ -102,8 +102,8 @@ Rendimiento (prompts de 128 tokens, 128 tokens generados, mediana de tres ejecuc
 
 | Modelo | Parametros | Contexto | Precision | Perplejidad (general) | MCQA ponderada | Licencia | Disponibilidad |
 |---|---:|---:|---|---:|---:|---|---|
-| MarshallHD/LFM2.5-230M-NVFP4 | ~202 M | 32.768 | NVFP4 (FFN capas 5-11) | 44,083 | 27,997 | lfm1.0 | HuggingFace, 149 descargas |
-| LiquidAI/LFM2.5-230M (BF16) | ~202 M | 32.768 | BF16 | 42,519 | 28,434 | lfm1.0 | HuggingFace (modelo base) |
+| MarshallHD/LFM2.5-230M-NVFP4 | ~202 M | 32.768 | NVFP4 (FFN capas 5-11) | 44,083 | 27,997 | lfm1.0 | Hugging Face, 149 descargas |
+| LiquidAI/LFM2.5-230M (BF16) | ~202 M | 32.768 | BF16 | 42,519 | 28,434 | lfm1.0 | Hugging Face (modelo base) |
 | Otros modelos de borde de ~200-400 M en 4 bits | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparacion directa solo es posible con el propio modelo base, ya que la informacion proporcionada no incluye resultados de otros modelos compactos medidos con la misma configuracion de harness. Cualquier comparacion con alternativas como Qwen o SmolLM requeriria ejecutar la misma bateria, dato que no esta disponible aqui.
@@ -123,7 +123,7 @@ La comparacion directa solo es posible con el propio modelo base, ya que la info
 
 ## Enlaces
 
-- Pagina de HuggingFace del modelo: https://huggingface.co/MarshallHD/LFM2.5-230M-NVFP4
+- Pagina de Hugging Face del modelo: https://huggingface.co/MarshallHD/LFM2.5-230M-NVFP4
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-230M
 - Licencia lfm1.0: https://huggingface.co/LiquidAI/LFM2.5-230M/blob/main/LICENSE
 - NVIDIA Model Optimizer 0.46.0: no se proporciona URL en la informacion disponible (referenciado como wheel nvidia_modelopt-0.46.0-py3-none-any.whl, sha256 1864b4e9921e287b065be3861ab48345144e673273ebb2b94bd9a6119a9eba8e).

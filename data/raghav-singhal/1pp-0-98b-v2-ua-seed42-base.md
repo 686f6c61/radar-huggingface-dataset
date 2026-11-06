@@ -27,7 +27,7 @@ El modelo es un decoder transformer denso de estilo Llama con 24 capas, dimensi�
 
 El preentrenamiento cubre los primeros 18.779 pasos del flujo alineado por pasos del proyecto 1PP (39,38B posiciones de token), que corresponden a los primeros pasos del recorrido de 31.777 pasos del estudio principal en el mismo orden. Los datos son conversaciones 1PP reescritas a partir de documentos, con pérdida calculada sobre los turnos de usuario y de asistente. El lote global es de 512 secuencias × 4.096 tokens con enmascaramiento de atención entre documentos. El optimizador es Muon (escalado por forma, LR matricial 0,005) combinado con Adam para el resto de parámetros (LR 2,3e-3 para embeddings y capa de salida, 3e-3 para normas); calentamiento de 1.181 pasos, tasa constante y decaimiento lineal en los últimos 1.877 pasos hasta 1/100; weight decay 0,1; desviación estándar de inicialización 0,0103; precisión bf16.
 
-La pérdida de validación del checkpoint final sobre 2.433 documentos retenidos es de 1,533 por token en texto de asistente, 1,429 en texto de usuario y 3,328 en texto de documento; la columna ponderada de la condición (`reweighted_seg1234`) da 1,528. Los pesos de HuggingFace se verificaron contra el checkpoint de Megatron recalculando pérdidas: 1,5320 frente a 1,5333 (diferencia absoluta 0,0014) en segmentos val50m [3], y 3,3312 frente a 3,3285 (diferencia 0,0027) en segmentos raw_val50m [8].
+La pérdida de validación del checkpoint final sobre 2.433 documentos retenidos es de 1,533 por token en texto de asistente, 1,429 en texto de usuario y 3,328 en texto de documento; la columna ponderada de la condición (`reweighted_seg1234`) da 1,528. Los pesos de Hugging Face se verificaron contra el checkpoint de Megatron recalculando pérdidas: 1,5320 frente a 1,5333 (diferencia absoluta 0,0014) en segmentos val50m [3], y 3,3312 frente a 3,3285 (diferencia 0,0027) en segmentos raw_val50m [8].
 
 ## Capacidades
 
@@ -78,10 +78,10 @@ No se han publicado resultados de benchmarks en la información disponible. Los 
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| 1pp-0.98b-v2-ua-seed42-base | 981,5M | 4.096 | Apache 2.0 | HuggingFace | Artefacto de investigación, solo inglés, sin benchmarks |
+| 1pp-0.98b-v2-ua-seed42-base | 981,5M | 4.096 | Apache 2.0 | Hugging Face | Artefacto de investigación, solo inglés, sin benchmarks |
 | 1pp-0.58b-v2 (misma escalera) | ~0,58B | 4.096 | Apache 2.0 | Colección 1pp | Escalón inferior de la misma escalera; comparación directa de escalado |
 | 1pp-1.7b (escalón 1,66B) | ~1,66B | 4.096 | Apache 2.0 | Colección 1pp | Escalón superior y modelo del estudio principal |
-| SmolLM2 (familia) | 135M / 360M / 1,7B | no disponible en la información | Apache 2.0 | HuggingFace | Comparte tokenizador (49.152); no se dispone de comparación de rendimiento en la información proporcionada |
+| SmolLM2 (familia) | 135M / 360M / 1,7B | no disponible en la información | Apache 2.0 | Hugging Face | Comparte tokenizador (49.152); no se dispone de comparación de rendimiento en la información proporcionada |
 
 No se dispone de datos de benchmarks que permitan una comparación de rendimiento con alternativas de la misma categoría.
 
@@ -99,7 +99,7 @@ No se dispone de datos de benchmarks que permitan una comparación de rendimient
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-0.98b-v2-ua-seed42-base
+- Modelo en Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-0.98b-v2-ua-seed42-base
 - Colección 1pp: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649
 - Registros de entrenamiento (wandb, 1pp-training): https://wandb.ai/raghav_singhal/1pp-training
 - Registros de SFT (wandb, 1pp-sft): https://wandb.ai/raghav_singhal/1pp-sft

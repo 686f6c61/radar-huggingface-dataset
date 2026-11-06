@@ -2,7 +2,7 @@
 
 ## Resumen
 
-distilbert-imdb-sentiment es un modelo de clasificacion de texto publicado en HuggingFace por el usuario gelanaabdisa, consistente en un ajuste fino (fine-tuning) de distilbert-base-uncased sobre un conjunto de datos que el propio autor no identifica en la model card (aparece literalmente como "unknown dataset"), aunque el nombre del repositorio sugiere una tarea de analisis de sentimiento sobre resenas estilo IMDB. La tarea declarada es text-classification y el pipeline oficial es text-classification, con salida de dos clases (positivo/negativo) segun la nomenclatura del repositorio.
+distilbert-imdb-sentiment es un modelo de clasificacion de texto publicado en Hugging Face por el usuario gelanaabdisa, consistente en un ajuste fino (fine-tuning) de distilbert-base-uncased sobre un conjunto de datos que el propio autor no identifica en la model card (aparece literalmente como "unknown dataset"), aunque el nombre del repositorio sugiere una tarea de analisis de sentimiento sobre resenas estilo IMDB. La tarea declarada es text-classification y el pipeline oficial es text-classification, con salida de dos clases (positivo/negativo) segun la nomenclatura del repositorio.
 
 El modelo tiene 66.955.010 parametros segun los pesos en safetensors y ocupa 0.5 GB en el repositorio. Se distribuye bajo licencia Apache 2.0 y esta etiquetado como compatible con text-embeddings-inference y endpoints_compatible, lo que facilita su despliegue en infraestructuras de inferencia gestionadas. La model card es autogenerada por el Trainer y no aporta informacion sobre composicion del dataset, idiomas soportados ni usos previstos.
 
@@ -98,7 +98,7 @@ No hay datos que permitan comparar el rendimiento de este ajuste con alternativa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gelanaabdisa/distilbert-imdb-sentiment
+- Modelo en Hugging Face: https://huggingface.co/gelanaabdisa/distilbert-imdb-sentiment
 - Modelo base: https://huggingface.co/distilbert/distilbert-base-uncased
 - Modelo base (referencia alternativa en la model card): https://huggingface.co/distilbert-base-uncased
 - Paper de DistilBERT (referencia del modelo base, no citado en la model card): https://arxiv.org/abs/1910.01108

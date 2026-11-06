@@ -91,7 +91,7 @@ No se dispone de datos de otros modelos especializados en generacion de codigo T
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/townbox/lowpoly-coder-4b
+- Repositorio en Hugging Face: https://huggingface.co/townbox/lowpoly-coder-4b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Dataset de entrenamiento: https://huggingface.co/datasets/townbox/lowpoly-coder-4b-data
 - Three.js: https://threejs.org

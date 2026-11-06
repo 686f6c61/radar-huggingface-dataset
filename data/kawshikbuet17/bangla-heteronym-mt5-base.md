@@ -93,7 +93,7 @@ El autor recomienda explícitamente `bangla-heteronym-banglabert` para la mayor�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kawshikbuet17/bangla-heteronym-mt5-base
+- Modelo en Hugging Face: https://huggingface.co/kawshikbuet17/bangla-heteronym-mt5-base
 - Dataset de heterónimos: https://huggingface.co/datasets/kawshikbuet17/bangla-heteronyms
 - Repositorio del benchmark y código de inferencia: https://github.com/kawshikbuet17/bangla-heteronym-benchmark
 - Modelo alternativo recomendado: https://huggingface.co/kawshikbuet17/bangla-heteronym-banglabert

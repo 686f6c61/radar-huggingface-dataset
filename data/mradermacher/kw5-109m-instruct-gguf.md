@@ -1,7 +1,7 @@
 # mradermacher/kw5-109M-instruct-GGUF
 
 ## Resumen
-El modelo `mradermacher/kw5-109M-instruct-GGUF` es una coleccion de cuantizaciones en formato GGUF del modelo `regnant-io/kw5-109M-instruct`, un modelo de lenguaje de 109,5 millones de parametros especializado en suajili (kiswahili) y ajustado por instrucciones mediante LoRA. El repositorio lo publica mradermacher, un conocido cuantizador de la comunidad de HuggingFace, y no introduce cambios en los pesos mas alla de la cuantizacion: es decir, es una redistribucion optimizada del modelo original para su uso con llama.cpp y derivados.
+El modelo `mradermacher/kw5-109M-instruct-GGUF` es una coleccion de cuantizaciones en formato GGUF del modelo `regnant-io/kw5-109M-instruct`, un modelo de lenguaje de 109,5 millones de parametros especializado en suajili (kiswahili) y ajustado por instrucciones mediante LoRA. El repositorio lo publica mradermacher, un conocido cuantizador de la comunidad de Hugging Face, y no introduce cambios en los pesos mas alla de la cuantizacion: es decir, es una redistribucion optimizada del modelo original para su uso con llama.cpp y derivados.
 
 El problema que resuelve es doble. Por un lado, cubre la escasez de modelos conversacionales en lenguas africanas de bajo recurso, en este caso el suajili, hablado por mas de 200 millones de personas en Africa Oriental. Por otro, al ofrecer variantes desde Q2_K hasta f16, permite desplegar un modelo de instrucciones en hardware muy modesto: el modelo completo en f16 ocupa aproximadamente 0,3 GB en disco y las variantes de 4 bits en torno a 0,2 GB, lo que lo hace viable en CPU, en dispositivos de borde e incluso en moviles.
 
@@ -25,7 +25,7 @@ Datos adicionales: el repositorio ocupa 1,0 GB en total, el modelo fue creado el
 ## Arquitectura y entrenamiento
 La informacion disponible no detalla la arquitectura interna del modelo mas alla de que se sirve a traves de la libreria `transformers` con pipeline de `text-generation`, lo que es compatible con una arquitectura transformer de tipo decoder-only, habitual en modelos de este tamano. Se desconoce el numero de capas, la dimension del modelo, el numero de cabezas de atencion, el tamano del vocabulario y la longitud de contexto maxima soportada, ya que la model card del repositorio cuantizado no reproduce estos datos del modelo original.
 
-En cuanto al entrenamiento, las etiquetas del modelo indican que se aplico un ajuste por instrucciones mediante LoRA sobre el modelo base, lo que da lugar a un modelo de tipo conversacional (`instruction-tuning`, `lora`, `conversational`). No se especifican el numero de tokens de entrenamiento, la composicion del dataset, si hubo fases de RLHF o DPO, ni los hiperparametros del ajuste LoRA. Tampoco se documentan innovaciones tecnicas como decodificacion especulativa, atencion lineal u otras optimizaciones. El unico proceso tecnico documentado con detalle es la propia cuantizacion: conversion desde el formato de HuggingFace a GGUF y generacion de 12 variantes de cuantizacion estatica.
+En cuanto al entrenamiento, las etiquetas del modelo indican que se aplico un ajuste por instrucciones mediante LoRA sobre el modelo base, lo que da lugar a un modelo de tipo conversacional (`instruction-tuning`, `lora`, `conversational`). No se especifican el numero de tokens de entrenamiento, la composicion del dataset, si hubo fases de RLHF o DPO, ni los hiperparametros del ajuste LoRA. Tampoco se documentan innovaciones tecnicas como decodificacion especulativa, atencion lineal u otras optimizaciones. El unico proceso tecnico documentado con detalle es la propia cuantizacion: conversion desde el formato de Hugging Face a GGUF y generacion de 12 variantes de cuantizacion estatica.
 
 ## Capacidades
 - Generacion de texto en suajili, orientada a un formato conversacional de instrucciones y respuestas.
@@ -76,10 +76,10 @@ No se dispone de informacion sobre modelos comparables de la misma categoria (mo
 - Limitaciones de idioma: el modelo solo declara suajili. No hay evidencia de que funcione correctamente en castellano, ingles u otras lenguas, y no se ha documentado su comportamiento en variantes dialectales del kiswahili.
 - Restricciones de licencia: licencia Apache 2.0, que permite uso comercial, modificacion y redistribucion, siempre que se conserve el aviso de licencia y se indique los cambios realizados. No se han declarado restricciones adicionales.
 - Caveats para produccion: el repositorio no tiene descargas ni likes registrados en la informacion disponible, lo que sugiere una validacion comunitaria nula hasta la fecha. Se trata de cuantizaciones estaticas sin variantes ponderadas ni imatrix, por lo que las versiones de 2 y 3 bits pueden degradar notablemente la calidad. Ademas, el modelo base no esta documentado en detalle en este repositorio, de modo que cualquier decision de produccion deberia partir de una evaluacion propia sobre datos en suajili.
-- Fechas: el repositorio figura como creado el 15 de septiembre de 2026, fecha posterior a la de consulta habitual de este tipo de fichas; conviene verificar la vigencia del dato en la pagina de HuggingFace.
+- Fechas: el repositorio figura como creado el 15 de septiembre de 2026, fecha posterior a la de consulta habitual de este tipo de fichas; conviene verificar la vigencia del dato en la pagina de Hugging Face.
 
 ## Enlaces
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/mradermacher/kw5-109M-instruct-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/kw5-109M-instruct-GGUF
 - Modelo base: https://huggingface.co/regnant-io/kw5-109M-instruct
 - Pagina de resumen y descargas del autor: https://hf.tst.eu/model#kw5-109M-instruct-GGUF
 - README de referencia sobre el uso de ficheros GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

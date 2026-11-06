@@ -59,10 +59,10 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| abzoo/paddleocr-vl-egyptian-id-lora-014 | Adaptador LoRA (base 0.9B) | No disponible | OCR especializado en ID egipcio | Apache-2.0 | HuggingFace |
-| PaddleOCR-VL (base) | 0.9B | No disponible | Parsing de documentos genérico | Apache-2.0 | HuggingFace |
-| TrOCR (base) | ~300M | 512 tokens | Reconocimiento de texto impreso/manuscrito | MIT | HuggingFace |
-| Donut | ~200M | 512 tokens | Parsing de documentos visuales | MIT | HuggingFace |
+| abzoo/paddleocr-vl-egyptian-id-lora-014 | Adaptador LoRA (base 0.9B) | No disponible | OCR especializado en ID egipcio | Apache-2.0 | Hugging Face |
+| PaddleOCR-VL (base) | 0.9B | No disponible | Parsing de documentos genérico | Apache-2.0 | Hugging Face |
+| TrOCR (base) | ~300M | 512 tokens | Reconocimiento de texto impreso/manuscrito | MIT | Hugging Face |
+| Donut | ~200M | 512 tokens | Parsing de documentos visuales | MIT | Hugging Face |
 
 La comparativa se centra en el modelo base PaddleOCR-VL y en alternativas de OCR de documentos. El adaptador LoRA ofrece una ventaja en precisión para el dominio específico de ID egipcios, mientras que TrOCR y Donut son modelos más ligeros pero sin especialización en este tipo de documento. No se dispone de datos de rendimiento cuantitativos para una comparación objetiva.
 
@@ -78,7 +78,7 @@ La comparativa se centra en el modelo base PaddleOCR-VL y en alternativas de OCR
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abzoo/paddleocr-vl-egyptian-id-lora-014
+- Modelo en Hugging Face: https://huggingface.co/abzoo/paddleocr-vl-egyptian-id-lora-014
 - Modelo base PaddleOCR-VL: https://huggingface.co/PaddlePaddle/PaddleOCR-VL
 - Documentación de PaddleOCR-VL en Transformers: https://huggingface.co/docs/transformers/model_doc/paddleocr_vl
 - Repositorio de OCR de ID egipcio (referencia): https://github.com/midonashaat19/Egyptian_National_ID_OCR

@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento comparativos entre estas variantes en la i
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SceneWorks/yue-s1-7b-anneal-en-cot-candle
+- Hugging Face: https://huggingface.co/SceneWorks/yue-s1-7b-anneal-en-cot-candle
 - Codec asociado: https://huggingface.co/SceneWorks/xcodec-mini-infer
 - Modelo upstream: https://huggingface.co/m-a-p/YuE-s1-7B-anneal-en-cot
 - Proyecto YuE: https://github.com/multimodal-art-projection/YuE

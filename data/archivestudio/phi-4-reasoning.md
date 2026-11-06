@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ArchiveStudio/Phi-4-reasoning es un repositorio de pesos publicado en HuggingFace que redistribuye el modelo Phi-4-reasoning de Microsoft Research, un modelo de razonamiento de 14.659.507.200 parametros (aproximadamente 14,7B) afinado a partir de microsoft/phi-4. El autor del repositorio es la cuenta ArchiveStudio, mientras que el desarrollo original corresponde a Microsoft Research, tal y como se declara en la model card y en el informe tecnico asociado (arXiv:2504.21318).
+ArchiveStudio/Phi-4-reasoning es un repositorio de pesos publicado en Hugging Face que redistribuye el modelo Phi-4-reasoning de Microsoft Research, un modelo de razonamiento de 14.659.507.200 parametros (aproximadamente 14,7B) afinado a partir de microsoft/phi-4. El autor del repositorio es la cuenta ArchiveStudio, mientras que el desarrollo original corresponde a Microsoft Research, tal y como se declara en la model card y en el informe tecnico asociado (arXiv:2504.21318).
 
 Se trata de un transformer decoder-only denso, sin mezcla de expertos, con una ventana de contexto de 32.000 tokens y entrenamiento exclusivamente en ingles. La propuesta del modelo es ofrecer razonamiento explicito de tipo cadena de pensamiento (chain-of-thought) en un tamano que quepa en entornos con memoria y computo limitados, cubriendo sobre todo matematicas, ciencia y codigo.
 
@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ArchiveStudio/Phi-4-reasoning | 14,7B | 32.000 tokens | MIT | safetensors en HuggingFace |
-| microsoft/Phi-4 (modelo base) | 14B | no disponible | MIT | HuggingFace |
-| microsoft/Phi-4-reasoning (original) | 14B | 32.000 tokens | MIT | HuggingFace |
-| Qwen2.5-14B-Instruct | 14B | no disponible | Apache 2.0 | HuggingFace |
+| ArchiveStudio/Phi-4-reasoning | 14,7B | 32.000 tokens | MIT | safetensors en Hugging Face |
+| microsoft/Phi-4 (modelo base) | 14B | no disponible | MIT | Hugging Face |
+| microsoft/Phi-4-reasoning (original) | 14B | 32.000 tokens | MIT | Hugging Face |
+| Qwen2.5-14B-Instruct | 14B | no disponible | Apache 2.0 | Hugging Face |
 
 Los datos de contexto y rendimiento de las alternativas no se han verificado con la informacion disponible, por lo que se marcan como no disponibles. La diferencia principal del repositorio analizado respecto al modelo original de Microsoft es el publicador: ArchiveStudio es un tercero que redistribuye los pesos, y su repositorio registra 0 descargas y 0 interacciones, ademas de una fecha de creacion publicada muy posterior a la del modelo original (abril de 2025).
 
@@ -96,7 +96,7 @@ Los datos de contexto y rendimiento de las alternativas no se han verificado con
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ArchiveStudio/Phi-4-reasoning
+- Repositorio en Hugging Face: https://huggingface.co/ArchiveStudio/Phi-4-reasoning
 - Informe tecnico de Phi-4-reasoning: https://huggingface.co/papers/2504.21318
 - Fichero de licencia enlazado por el autor: https://huggingface.co/microsoft/Phi-4-reasoning/resolve/main/LICENSE
 - Modelo base: https://huggingface.co/microsoft/phi-4

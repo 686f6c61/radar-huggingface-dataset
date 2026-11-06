@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Flamingo for Generation es un repositorio experimental publicado por el usuario maaqui-no1999 en HuggingFace, cuyo objetivo declarado es ofrecer una implementacion funcional y transparente de la arquitectura Flamingo orientada a tareas de generacion, en una configuracion denominada "nano". No se trata de un modelo entrenado ni evaluado, sino de un artefacto de codigo con un checkpoint de inicializacion valido para pruebas de humo (smoke tests). El propio autor indica explicitamente que no se reclama ninguna puntuacion de benchmark y que el checkpoint no ha sido entrenado ni auditado.
+Flamingo for Generation es un repositorio experimental publicado por el usuario maaqui-no1999 en Hugging Face, cuyo objetivo declarado es ofrecer una implementacion funcional y transparente de la arquitectura Flamingo orientada a tareas de generacion, en una configuracion denominada "nano". No se trata de un modelo entrenado ni evaluado, sino de un artefacto de codigo con un checkpoint de inicializacion valido para pruebas de humo (smoke tests). El propio autor indica explicitamente que no se reclama ninguna puntuacion de benchmark y que el checkpoint no ha sido entrenado ni auditado.
 
 El modelo registra 16.576 parametros totales segun los datos de safetensors, lo que lo situa en un orden de magnitud puramente didactico: es varios ordenes de magnitud menor que cualquier LLM o VLM utilizable en produccion. El repositorio ocupa 0,0 GB y contiene un unico fichero de pesos, junto con `main.py`, `config.json` y `training_args.json`.
 
@@ -80,5 +80,5 @@ No disponible. No se han encontrado en la informacion proporcionada modelos comp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/maaqui-no1999/flamingo-generation
+- Hugging Face: https://huggingface.co/maaqui-no1999/flamingo-generation
 - Los resultados de busqueda web obtenidos no contienen enlaces relevantes al modelo: se trata de paginas sobre problemas de codificacion de caracteres y consultas de foros sin relacion con el repositorio. Por tanto, no se dispone de papers, blogs, repositorios ni demos adicionales que enlazar.

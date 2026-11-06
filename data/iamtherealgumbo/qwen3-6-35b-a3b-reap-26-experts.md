@@ -77,10 +77,10 @@ Notas del autor: dos ejecuciones identicas del modelo sin podar dieron 93,9% y 9
 
 | Modelo | Params totales | Expertos/capa | Contexto | HumanEval pass@1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| REAP-26-experts (este) | 6,15B | 26 de 256 | no disponible | 9,1% | Apache 2.0 | HuggingFace |
-| REAP-64-experts | 10,93B | 64 de 256 | no disponible | 85,4% | Apache 2.0 | HuggingFace |
-| REAP-128-experts | 18,99B | 128 de 256 | no disponible | 94,5% | Apache 2.0 | HuggingFace |
-| Qwen3.6-35B-A3B (base) | 35,95B | 256 de 256 | no disponible | 94,5% | Apache 2.0 | HuggingFace |
+| REAP-26-experts (este) | 6,15B | 26 de 256 | no disponible | 9,1% | Apache 2.0 | Hugging Face |
+| REAP-64-experts | 10,93B | 64 de 256 | no disponible | 85,4% | Apache 2.0 | Hugging Face |
+| REAP-128-experts | 18,99B | 128 de 256 | no disponible | 94,5% | Apache 2.0 | Hugging Face |
+| Qwen3.6-35B-A3B (base) | 35,95B | 256 de 256 | no disponible | 94,5% | Apache 2.0 | Hugging Face |
 
 La comparacion directa muestra que el punto de ruptura de REAP en este modelo esta entre el 25% y el 10% de expertos retenidos: pasar de 64 a 26 expertos por capa reduce los parametros un 44% pero hunde HumanEval de 85,4% a 9,1%. En la franja del 50-90% de retencion la perdida es indistinguible del ruido de evaluacion. No se dispone de datos de contexto ni de otros benchmarks para ninguna de las variantes, por lo que no es posible comparar fuera de HumanEval.
 
@@ -99,7 +99,7 @@ La comparacion directa muestra que el punto de ruptura de REAP en este modelo es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IAmTheRealGumbo/Qwen3.6-35B-A3B-REAP-26-experts
+- Modelo en Hugging Face: https://huggingface.co/IAmTheRealGumbo/Qwen3.6-35B-A3B-REAP-26-experts
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Variante de 231 expertos: https://huggingface.co/IAmTheRealGumbo/Qwen3.6-35B-A3B-REAP-231-experts
 - Variante de 192 expertos: https://huggingface.co/IAmTheRealGumbo/Qwen3.6-35B-A3B-REAP-192-experts

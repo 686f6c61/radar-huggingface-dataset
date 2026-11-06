@@ -77,7 +77,7 @@ Los datos de contexto y rendimiento de las alternativas no estan disponibles en 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/salpu/lingbot-vla-2.0-fullft-step500
+- Repositorio Hugging Face: https://huggingface.co/salpu/lingbot-vla-2.0-fullft-step500
 - Checkpoint base: https://huggingface.co/openroboto-ai/lingbot-vla-v2-6b-libero
 - Codigo de entrenamiento: https://github.com/Robbyant/lingbot-vla-v2
 - Dataset LIBERO: https://huggingface.co/datasets/lerobot/libero

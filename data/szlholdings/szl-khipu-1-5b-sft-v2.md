@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| SZL-Khipu-1.5B-sft-v2 | 1.543.714.304 | no disponible | apache-2.0 | HuggingFace |
-| Qwen2-1.5B (familia base) | ~1,5B | no disponible en esta ficha | apache-2.0 (segun familia Qwen2) | HuggingFace |
+| SZL-Khipu-1.5B-sft-v2 | 1.543.714.304 | no disponible | apache-2.0 | Hugging Face |
+| Qwen2-1.5B (familia base) | ~1,5B | no disponible en esta ficha | apache-2.0 (segun familia Qwen2) | Hugging Face |
 | Alternativas de ~1,5B | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento del modelo que permitan una comparacion cuantitativa con alternativas. La comparacion con la familia Qwen2 se basa unicamente en la arquitectura declarada en las etiquetas del repositorio.
@@ -82,10 +82,10 @@ No se dispone de datos de rendimiento del modelo que permitan una comparacion cu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SZLHOLDINGS/SZL-Khipu-1.5B-sft-v2
+- Modelo en Hugging Face: https://huggingface.co/SZLHOLDINGS/SZL-Khipu-1.5B-sft-v2
 - Modelo base: https://huggingface.co/SZLHOLDINGS/SZL-Khipu-1.5B
 - Dataset governed-sft-mix-v2: https://huggingface.co/datasets/SZLHOLDINGS/governed-sft-mix-v2
 - Dataset szl-1-doctrine-sft: https://huggingface.co/datasets/SZLHOLDINGS/szl-1-doctrine-sft
 - Dataset de registros wave-logs (privado): https://huggingface.co/datasets/SZLHOLDINGS/wave-logs
 - Script de entrenamiento: https://github.com/szl-holdings/szl-forge/blob/main/training/train_wave.py
-- Organizacion en HuggingFace: https://huggingface.co/SZLHOLDINGS
+- Organizacion en Hugging Face: https://huggingface.co/SZLHOLDINGS

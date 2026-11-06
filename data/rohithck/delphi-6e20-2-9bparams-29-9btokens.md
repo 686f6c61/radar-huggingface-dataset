@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| Delphi-6e20-2.9B (este) | 2,90B | 4096 | Apache 2.0 (`research-only`) | Base de investigacion, leyes de escala | HuggingFace (rohithck, marin-community) |
-| Pythia-2.8B | 2,77B | 2048 | Apache 2.0 | Suite de interpretabilidad y escalado | HuggingFace (EleutherAI) |
-| Qwen3-1.7B / Qwen3-4B | 1,7B / 4B | 32.768 (nativo) | Apache 2.0 | Base e instruct, multilingue | HuggingFace (Qwen) |
-| Llama 3.2 3B | 3,21B | 131.072 | Llama 3.2 Community License | Base e instruct, multilingue | HuggingFace (Meta) |
+| Delphi-6e20-2.9B (este) | 2,90B | 4096 | Apache 2.0 (`research-only`) | Base de investigacion, leyes de escala | Hugging Face (rohithck, marin-community) |
+| Pythia-2.8B | 2,77B | 2048 | Apache 2.0 | Suite de interpretabilidad y escalado | Hugging Face (EleutherAI) |
+| Qwen3-1.7B / Qwen3-4B | 1,7B / 4B | 32.768 (nativo) | Apache 2.0 | Base e instruct, multilingue | Hugging Face (Qwen) |
+| Llama 3.2 3B | 3,21B | 131.072 | Llama 3.2 Community License | Base e instruct, multilingue | Hugging Face (Meta) |
 
 Comparado con Pythia, Delphi ofrece una receta de escalado mas reciente y un proceso de extrapolacion documentado; frente a Qwen3 y Llama 3.2, este checkpoint carece de contexto largo, multilingue, ajuste por instrucciones y evaluaciones publicadas, por lo que no es un sustituto directo en produccion.
 
@@ -87,7 +87,7 @@ Comparado con Pythia, Delphi ofrece una receta de escalado mas reciente y un pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rohithck/delphi-6e20-2.9Bparams-29.9Btokens
+- Modelo en Hugging Face: https://huggingface.co/rohithck/delphi-6e20-2.9Bparams-29.9Btokens
 - Coleccion completa Delphi: https://huggingface.co/marin-community
 - Blog de Delphi: https://openathena.ai/blog/delphi
 - Dataset de datos de las figuras: https://huggingface.co/datasets/marin-community/delphi-blog-data

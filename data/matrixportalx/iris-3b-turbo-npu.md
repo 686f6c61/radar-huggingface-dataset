@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/matrixportalx/iris-3b-turbo-npu
+- Repositorio Hugging Face: https://huggingface.co/matrixportalx/iris-3b-turbo-npu
 - Modelo original: https://huggingface.co/speridlabs/iris-3b
 - Paquete relacionado (codificador de texto compartido): https://huggingface.co/matrixportalx/Krea-2-Turbo-npu
 - Perfil del autor: https://huggingface.co/matrixportalx

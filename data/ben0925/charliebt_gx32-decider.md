@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CharlieBT_gx32-decider es un modelo de la familia Qwen3.5 obtenido por fusión de pesos (weight-space merge) en el espacio de parámetros, no por entrenamiento adicional. Lo publica el usuario ben0925 en HuggingFace y combina dos fine-tunes públicos del modelo base baselabs/mammoth-1 (derivado de Qwen3.5-27B): isomsom/sn92-gen-m87b y xflud/sn92-decider-1. El resultado conserva la arquitectura Qwen3_5Model con un layout de lectura conjunta (joint readout) propio de la familia REAX, que incluye un fichero `readout.safetensors` y un `decision_config.json`.
+CharlieBT_gx32-decider es un modelo de la familia Qwen3.5 obtenido por fusión de pesos (weight-space merge) en el espacio de parámetros, no por entrenamiento adicional. Lo publica el usuario ben0925 en Hugging Face y combina dos fine-tunes públicos del modelo base baselabs/mammoth-1 (derivado de Qwen3.5-27B): isomsom/sn92-gen-m87b y xflud/sn92-decider-1. El resultado conserva la arquitectura Qwen3_5Model con un layout de lectura conjunta (joint readout) propio de la familia REAX, que incluye un fichero `readout.safetensors` y un `decision_config.json`.
 
 El modelo tiene 26.085.330.160 parámetros en formato safetensors (unos 26,1 mil millones), lo que lo sitúa en la categoría de modelos densos de gran tamano. El repo ocupa 52,2 GB, coherente con pesos en bfloat16. La licencia es MIT y el modelo se distribuye sin pipeline declarado, sin idiomas especificados y sin resultados de benchmarks publicados.
 
@@ -82,7 +82,7 @@ Los parámetros y contextos de los padres no están disponibles en la informaci�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ben0925/CharlieBT_gx32-decider
+- Modelo en Hugging Face: https://huggingface.co/ben0925/CharlieBT_gx32-decider
 - Modelo base: https://huggingface.co/baselabs/mammoth-1
 - Padre 1: https://huggingface.co/isomsom/sn92-gen-m87b
 - Padre 2: https://huggingface.co/xflud/sn92-decider-1

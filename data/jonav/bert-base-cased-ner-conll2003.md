@@ -82,9 +82,9 @@ No se dispone de resultados de benchmarks de modelos alternativos en la informac
 
 | Modelo | Parametros | Contexto | Rendimiento (F1 CoNLL-2003 test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jonav/bert-base-cased-ner-conll2003 | 107.726.601 | 512 tokens | 0,915353 | no disponible | HuggingFace, safetensors |
-| dslim/bert-base-NER | ~110 M (arquitectura BERT base) | 512 tokens | no disponible en la información proporcionada | no disponible en la información proporcionada | HuggingFace |
-| google-bert/bert-base-cased | ~110 M | 512 tokens | no aplica (modelo preentrenado sin cabeza de NER) | Apache-2.0 | HuggingFace |
+| jonav/bert-base-cased-ner-conll2003 | 107.726.601 | 512 tokens | 0,915353 | no disponible | Hugging Face, safetensors |
+| dslim/bert-base-NER | ~110 M (arquitectura BERT base) | 512 tokens | no disponible en la información proporcionada | no disponible en la información proporcionada | Hugging Face |
+| google-bert/bert-base-cased | ~110 M | 512 tokens | no aplica (modelo preentrenado sin cabeza de NER) | Apache-2.0 | Hugging Face |
 
 Cualquier comparación de calidad entre estos modelos requeriría evaluarlos sobre el mismo split de test y con el mismo script de evaluación, algo que no se ha hecho en la información disponible.
 
@@ -101,7 +101,7 @@ Cualquier comparación de calidad entre estos modelos requeriría evaluarlos sob
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jonav/bert-base-cased-ner-conll2003
+- Modelo en Hugging Face: https://huggingface.co/jonav/bert-base-cased-ner-conll2003
 - Modelo base: https://huggingface.co/google-bert/bert-base-cased
 - Dataset: https://huggingface.co/datasets/lhoestq/conll2003
 - Paper de BERT: https://arxiv.org/abs/1810.04805

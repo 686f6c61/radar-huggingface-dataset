@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "M1n1A1/MiniAI-Quata2-4b-v0.2",
+  "slug": "m1n1a1-miniai-quata2-4b-v0-2",
+  "author": "M1n1A1",
+  "url": "https://huggingface.co/M1n1A1/MiniAI-Quata2-4b-v0.2",
+  "created_at": "2026-11-01T12:44:36.000Z",
+  "updated_at": "2026-11-04T15:45:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "sr",
+    "hr",
+    "bs"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "qwen3_5",
+    "image-text-to-text",
+    "quata",
+    "quata2",
+    "qwen3.5",
+    "reasoning",
+    "tool-calling",
+    "serbian",
+    "mini-ai",
+    "4b",
+    "text-generation",
+    "conversational",
+    "en",
+    "sr",
+    "hr",
+    "bs",
+    "base_model:M1n1A1/MiniAI-Quata2-4b-v0.2-base",
+    "base_model:quantized:M1n1A1/MiniAI-Quata2-4b-v0.2-base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 62,
+  "trending_score": 0,
+  "parameters": 5174964736,
+  "parameters_human": "5.17B",
+  "storage_bytes": 26532866458,
+  "storage_human": "26.5 GB",
+  "base_model": "Qwen/Qwen3.5-4B, M1n1A1/MiniAI-Quata2-4b-v0.2-base",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "M1n1A1/MiniAI-Quata2-4b · Hugging Face",
+      "url": "https://huggingface.co/M1n1A1/MiniAI-Quata2-4b",
+      "snippet": "M1n1A1 / MiniAI-Quata2-4b Like 0 Follow MiniAI 4 Text Generation Transformers Safetensors 4 languages qwen3 quata quata2 qwen reasoning chain-of-thought serbian llm mini-ai 4b conversational text-generation-inference arxiv:2505.09388 License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
+    },
+    {
+      "title": "M1n1A1/MiniAI-Quata2-4b-v0.2-base-GGUF · Hugging Face",
+      "url": "https://huggingface.co/M1n1A1/MiniAI-Quata2-4b-v0.2-base-GGUF",
+      "snippet": "Instructions to use M1n1A1/MiniAI-Quata2-4b-v0.2-base-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use M1n1A1/MiniAI-Quata2-4b-v0.2-base-GGUF with llama.cpp: Install (macOS, Linux)"
+    }
+  ]
+}

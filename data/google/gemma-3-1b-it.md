@@ -4,7 +4,7 @@
 
 Gemma 3 1B IT es un modelo de lenguaje de texto de la familia Gemma 3 desarrollado por Google, basado en la tecnología de Gemini 2.0. Se trata de la variante ajustada con instrucciones (instruction-tuned) del modelo base google/gemma-3-1b-pt, con aproximadamente 1000 millones de parámetros. Está diseñado para ejecutarse eficientemente en una sola GPU o incluso en dispositivos con recursos limitados, lo que lo convierte en una opción atractiva para aplicaciones de IA en el edge, prototipos rápidicos y entornos de producción con restricciones de hardware.
 
-El modelo destaca por su soporte multilingüe (más de 35 idiomas de forma nativa y más de 140 con pre-entrenamiento) y por heredar capacidades de razonamiento y generación de texto de la familia Gemini. Aunque la variante 1B IT es exclusivamente de texto (a diferencia de otras versiones multimodales de Gemma 3), ofrece un equilibrio entre rendimiento y eficiencia que lo hace adecuado para tareas de generación, clasificación, extracción de información y asistentes conversacionales. Su licencia Gemma permite uso comercial con ciertas restricciones, y su acceso en HuggingFace está restringido (gated), requiriendo aceptación de términos.
+El modelo destaca por su soporte multilingüe (más de 35 idiomas de forma nativa y más de 140 con pre-entrenamiento) y por heredar capacidades de razonamiento y generación de texto de la familia Gemini. Aunque la variante 1B IT es exclusivamente de texto (a diferencia de otras versiones multimodales de Gemma 3), ofrece un equilibrio entre rendimiento y eficiencia que lo hace adecuado para tareas de generación, clasificación, extracción de información y asistentes conversacionales. Su licencia Gemma permite uso comercial con ciertas restricciones, y su acceso en Hugging Face está restringido (gated), requiriendo aceptación de términos.
 
 La relevancia de este modelo radica en su tamaño compacto y su capacidad para democratizar el acceso a la IA generativa de calidad en entornos con recursos limitados, manteniendo un nivel de calidad competitivo para su escala.
 
@@ -75,12 +75,12 @@ No se dispone de datos de rendimiento comparativo en la informacion proporcionad
 - Riesgo de alucinacion: como todo modelo generativo, puede producir informacion falsa o inventada, especialmente en tareas de razonamiento complejo o con contextos ambiguos. Su tamano reducido aumenta este riesgo en comparacion con modelos mayores.
 - Limitaciones de contexto: aunque la familia Gemma 3 soporta hasta 128K tokens, no se confirma que esta variante de 1B tenga esa capacidad. Se recomienda verificar el contexto real antes de usarla en aplicaciones que requieran ventanas largas.
 - Restricciones de licencia: la licencia Gemma permite uso comercial, pero incluye restricciones sobre el uso para ciertos fines (por ejemplo, no se permite su uso para desarrollar armas o vigilancia masiva). Es necesario revisar los terminos completos.
-- Acceso restringido: el modelo requiere aceptar condiciones en HuggingFace antes de su descarga, lo que puede dificultar su integracion en pipelines automatizados.
+- Acceso restringido: el modelo requiere aceptar condiciones en Hugging Face antes de su descarga, lo que puede dificultar su integracion en pipelines automatizados.
 - Limitaciones de idioma: aunque soporta muchos idiomas, la calidad puede variar significativamente entre ellos; idiomas con menos representacion en el entrenamiento pueden mostrar peores resultados.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/google/gemma-3-1b-it
+- Hugging Face: https://huggingface.co/google/gemma-3-1b-it
 - Pagina oficial de Gemma 3 (DeepMind): https://deepmind.google/models/gemma/gemma-3/
 - Blog de Google sobre Gemma 3: https://blog.google/innovation-and-ai/technology/developers-tools/gemma-3/
 - Model card de Gemma 3 (Google AI for Developers): https://ai.google.dev/gemma/docs/core/model_card_3

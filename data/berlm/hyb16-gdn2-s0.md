@@ -88,11 +88,11 @@ Los modelos comparables son los hermanos de la misma familia, entrenados con la 
 
 | Modelo | Token mixer | Parámetros totales | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hyb16-gdn2-s0 | GDN2 + 6 capas de atención completa | 365.281.644 | 16K (eval. hasta 32K) | MIT | HuggingFace |
-| hyb16-edm-s0 | EDM + 6 capas de atención completa | 365.281.644 | 16K (eval. hasta 32K) | MIT | HuggingFace |
-| hyb16-swa1k-s0 | Sliding window 1K + 6 capas de atención completa | 365.281.644 | 16K (eval. hasta 32K) | MIT | HuggingFace |
-| hyb16-swa2k-s0 | Sliding window 2K + 6 capas de atención completa | 365.281.644 | 16K (eval. hasta 32K) | MIT | HuggingFace |
-| hyb16-mix-s0 | Mezcla de token mixers + 6 capas de atención completa | 365.281.644 | 16K (eval. hasta 32K) | MIT | HuggingFace |
+| hyb16-gdn2-s0 | GDN2 + 6 capas de atención completa | 365.281.644 | 16K (eval. hasta 32K) | MIT | Hugging Face |
+| hyb16-edm-s0 | EDM + 6 capas de atención completa | 365.281.644 | 16K (eval. hasta 32K) | MIT | Hugging Face |
+| hyb16-swa1k-s0 | Sliding window 1K + 6 capas de atención completa | 365.281.644 | 16K (eval. hasta 32K) | MIT | Hugging Face |
+| hyb16-swa2k-s0 | Sliding window 2K + 6 capas de atención completa | 365.281.644 | 16K (eval. hasta 32K) | MIT | Hugging Face |
+| hyb16-mix-s0 | Mezcla de token mixers + 6 capas de atención completa | 365.281.644 | 16K (eval. hasta 32K) | MIT | Hugging Face |
 
 En términos de rendimiento, este modelo destaca en FDA (66.2) y en needle-3 a 8K (0.63), siendo el más fuerte de la familia en esas métricas. El modelo edm obtiene mejor pérdida de validación (2.2977) y mejor needle-2 a 32K (0.65), mientras que swa2k y mix muestran una degradación severa en recuperación de agujas a partir de 8K.
 
@@ -109,7 +109,7 @@ En términos de rendimiento, este modelo destaca en FDA (66.2) y en needle-3 a 8
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Berlm/hyb16-gdn2-s0
+- Modelo en Hugging Face: https://huggingface.co/Berlm/hyb16-gdn2-s0
 - Hermano hyb16-edm-s0: https://huggingface.co/Berlm/hyb16-edm-s0
 - Hermano hyb16-swa1k-s0: https://huggingface.co/Berlm/hyb16-swa1k-s0
 - Hermano hyb16-swa2k-s0: https://huggingface.co/Berlm/hyb16-swa2k-s0

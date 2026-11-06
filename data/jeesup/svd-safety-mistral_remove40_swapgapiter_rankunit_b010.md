@@ -75,8 +75,8 @@ No se proporcionan en la informacion disponible los valores equivalentes del mod
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos de seguridad |
 |---|---|---|---|---|---|
-| svd-safety-mistral_remove40_swapgapiter_rankunit_b010 (este checkpoint) | 7.241.732.096 en safetensors; fraccion densa declarada 0,5998 | no disponible | Apache-2.0 | HuggingFace, 0 descargas y 0 likes | AdvBench ASR 0,0596; StrongREJECT ASR 0,2173; sobrerrechazo 0,1417; PPL WikiText-2 10,7004 |
-| mistralai/Mistral-7B-Instruct-v0.2 (modelo base) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada (el autor indica que su repositorio no incluye fichero de licencia para redistribuir) | HuggingFace | no disponible en la informacion proporcionada |
+| svd-safety-mistral_remove40_swapgapiter_rankunit_b010 (este checkpoint) | 7.241.732.096 en safetensors; fraccion densa declarada 0,5998 | no disponible | Apache-2.0 | Hugging Face, 0 descargas y 0 likes | AdvBench ASR 0,0596; StrongREJECT ASR 0,2173; sobrerrechazo 0,1417; PPL WikiText-2 10,7004 |
+| mistralai/Mistral-7B-Instruct-v0.2 (modelo base) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada (el autor indica que su repositorio no incluye fichero de licencia para redistribuir) | Hugging Face | no disponible en la informacion proporcionada |
 | Otras celdas de la rejilla del mismo autor | no disponible | no disponible | no disponible | no identificadas en la informacion proporcionada | no disponible |
 | Otros modelos comprimidos de 7B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -97,6 +97,6 @@ La informacion proporcionada no incluye resultados de benchmarks del modelo base
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-mistral_remove40_swapgapiter_rankunit_b010
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-mistral_remove40_swapgapiter_rankunit_b010
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2
 - Paper, blog, repositorio o demo adicionales: no disponibles. La busqueda web realizada no devolvio resultados relevantes sobre este modelo (los resultados obtenidos corresponden a paginas corporativas de una entidad bancaria sin relacion con el modelo).

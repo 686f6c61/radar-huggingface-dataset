@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|---|
-| Agnes-3.0-Flash (modelo base) | no disponible | no disponible | Safetensors | apache-2.0 | HuggingFace (`Agnes-AI/Agnes-3.0-Flash`) | Checkpoint original en precisión completa |
-| Agnes-3.0-Flash-GGUF (esta ficha) | no disponible | no disponible | GGUF (Q3_K_XL a Q6_K_XL, IQ4_XS) | apache-2.0 | HuggingFace (`jakeatx/Agnes-3.0-Flash-GGUF`) | Conserva la cabeza MTP/NextN y la rama FFN paralela; requiere llama.cpp parcheado |
+| Agnes-3.0-Flash (modelo base) | no disponible | no disponible | Safetensors | apache-2.0 | Hugging Face (`Agnes-AI/Agnes-3.0-Flash`) | Checkpoint original en precisión completa |
+| Agnes-3.0-Flash-GGUF (esta ficha) | no disponible | no disponible | GGUF (Q3_K_XL a Q6_K_XL, IQ4_XS) | apache-2.0 | Hugging Face (`jakeatx/Agnes-3.0-Flash-GGUF`) | Conserva la cabeza MTP/NextN y la rama FFN paralela; requiere llama.cpp parcheado |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible | No se dispone de datos de modelos de la misma categoría en la información proporcionada |
 
 No es posible establecer una comparación con modelos alternativos de la misma categoría porque se desconocen el tamaño, la longitud de contexto y el rendimiento del modelo base, que son los ejes habituales de comparación.

@@ -93,8 +93,8 @@ Nota: la comparativa con Qwen3-1.7B/0.6B y SmolLM2 se ofrece como referencia de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DuoNeural/Lattice-7-Hermes-CDM-Poincare-Instruct
-- Organizacion DuoNeural en HuggingFace: https://huggingface.co/DuoNeural
+- Modelo en Hugging Face: https://huggingface.co/DuoNeural/Lattice-7-Hermes-CDM-Poincare-Instruct
+- Organizacion DuoNeural en Hugging Face: https://huggingface.co/DuoNeural
 - Repositorio de codigo: https://github.com/DuoNeural/Lattice-CDM
 - Sitio web del autor: https://duoneural.com
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B

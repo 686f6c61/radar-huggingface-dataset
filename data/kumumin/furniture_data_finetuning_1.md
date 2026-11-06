@@ -2,11 +2,11 @@
 
 ## Resumen
 
-furniture_data_finetuning_1 es un modelo de deteccion de objetos obtenido por ajuste fino (fine-tuning) de facebook/detr-resnet-50, publicado por el usuario kumumin en HuggingFace. Se trata, por tanto, de un DETR (DEtection TRansformer) con backbone convolucional ResNet-50, una arquitectura de deteccion end-to-end que elimina la necesidad de anclas (anchors) y de supresion de no maximos (NMS) al formular la deteccion como un problema de prediccion de conjuntos con emparejamiento bipartito.
+furniture_data_finetuning_1 es un modelo de deteccion de objetos obtenido por ajuste fino (fine-tuning) de facebook/detr-resnet-50, publicado por el usuario kumumin en Hugging Face. Se trata, por tanto, de un DETR (DEtection TRansformer) con backbone convolucional ResNet-50, una arquitectura de deteccion end-to-end que elimina la necesidad de anclas (anchors) y de supresion de no maximos (NMS) al formular la deteccion como un problema de prediccion de conjuntos con emparejamiento bipartito.
 
 El modelo tiene 41.608.649 parametros (aproximadamente 41,6 millones) y esta orientado a la deteccion de objetos en imagenes del ambito del mobiliario, segun se deduce del identificador del repositorio, aunque la model card no documenta la composicion del dataset de entrenamiento. El repositorio ocupa 4,8 GB y la licencia declarada es Apache 2.0. El numero de descargas es muy bajo (45) y no cuenta con likes, lo que sugiere un experimento personal mas que un modelo de referencia.
 
-Su relevancia es limitada y acotada: resulta util como punto de partida rapido para tareas de deteccion en el dominio del mobiliario o del interiorismo, ya que hereda la arquitectura y el preentrenamiento en COCO del DETR original. No obstante, la ausencia de documentacion sobre el dataset, las clases objetivo y las metricas de evaluacion obliga a validar su comportamiento antes de cualquier uso en produccion. La model card es la generada automaticamente por el Trainer de HuggingFace y contiene multiples secciones marcadas como "More information needed".
+Su relevancia es limitada y acotada: resulta util como punto de partida rapido para tareas de deteccion en el dominio del mobiliario o del interiorismo, ya que hereda la arquitectura y el preentrenamiento en COCO del DETR original. No obstante, la ausencia de documentacion sobre el dataset, las clases objetivo y las metricas de evaluacion obliga a validar su comportamiento antes de cualquier uso en produccion. La model card es la generada automaticamente por el Trainer de Hugging Face y contiene multiples secciones marcadas como "More information needed".
 
 ## Especificaciones tecnicas
 
@@ -34,7 +34,7 @@ Versiones de framework declaradas: Transformers 4.57.6, PyTorch 2.11.0+cu130, Da
 - Deteccion de objetos en imagenes del dominio del mobiliario (clases y etiquetas no documentadas en la model card).
 - Prediccion end-to-end de cajas delimitadoras y etiquetas de clase sin NMS posterior.
 - Salida de hasta 100 detecciones por imagen (limite impuesto por las object queries del DETR).
-- Compatible con la pipeline `object-detection` de HuggingFace y con despliegue mediante endpoints compatibles (tag `endpoints_compatible`).
+- Compatible con la pipeline `object-detection` de Hugging Face y con despliegue mediante endpoints compatibles (tag `endpoints_compatible`).
 - Inferencia batch (eval_batch_size de 8 en el entrenamiento documentado).
 - No dispone de soporte de tool calling, function calling ni razonamiento multi-paso: es un modelo puramente perceptivo.
 - No dispone de capacidades multilingues ni de procesamiento de texto.
@@ -59,17 +59,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. El ca
 - VRAM estimada para inferencia: el modelo tiene 41,6 M de parametros, lo que supone aproximadamente 166 MB en fp32 y unos 83 MB en fp16. Con activaciones y memoria del runtime de PyTorch, el consumo practico se situa en el rango de 1 a 2 GB de VRAM para lotes pequenos.
 - GPU recomendadas: cualquier GPU moderna es suficiente. Una NVIDIA RTX 3060, RTX 4090, A100 o H100 pueden ejecutar el modelo sin problemas; tambien funciona en GPUs de gama baja e incluso en CPU para inferencia puntual, aunque con mayor latencia.
 - Cabe holgadamente en GPU de consumo: si, en practicamente cualquier GPU consumer con al menos 2 GB de VRAM (GTX 1650, RTX 2060, RTX 3060, RTX 4090, etc.).
-- Opciones de despliegue: inference endpoints de HuggingFace (el tag `endpoints_compatible` esta presente), `transformers` con PyTorch en local, TorchServe, Triton Inference Server y exportacion a ONNX. No se documenta soporte oficial de vLLM, llama.cpp, Ollama ni TGI, que estan orientados a modelos de lenguaje y no aplican a esta arquitectura.
+- Opciones de despliegue: inference endpoints de Hugging Face (el tag `endpoints_compatible` esta presente), `transformers` con PyTorch en local, TorchServe, Triton Inference Server y exportacion a ONNX. No se documenta soporte oficial de vLLM, llama.cpp, Ollama ni TGI, que estan orientados a modelos de lenguaje y no aplican a esta arquitectura.
 - Latencia y throughput estimados: no disponibles. No se han publicado mediciones para este checkpoint concreto.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Tarea | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kumumin/furniture_data_finetuning_1 | 41,6 M | Deteccion de objetos (mobiliario) | Imagen redimensionada, no documentada | Apache 2.0 | HuggingFace |
-| facebook/detr-resnet-50 | 41,6 M | Deteccion de objetos (COCO, 80 clases) | Imagen redimensionada, 100 queries | Apache 2.0 | HuggingFace |
-| facebook/detr-resnet-101 | ~60 M | Deteccion de objetos (COCO, 80 clases) | Imagen redimensionada, 100 queries | Apache 2.0 | HuggingFace |
-| hustvl/yolos-tiny | ~6,5 M | Deteccion de objetos (COCO) | Imagen redimensionada | Apache 2.0 | HuggingFace |
+| kumumin/furniture_data_finetuning_1 | 41,6 M | Deteccion de objetos (mobiliario) | Imagen redimensionada, no documentada | Apache 2.0 | Hugging Face |
+| facebook/detr-resnet-50 | 41,6 M | Deteccion de objetos (COCO, 80 clases) | Imagen redimensionada, 100 queries | Apache 2.0 | Hugging Face |
+| facebook/detr-resnet-101 | ~60 M | Deteccion de objetos (COCO, 80 clases) | Imagen redimensionada, 100 queries | Apache 2.0 | Hugging Face |
+| hustvl/yolos-tiny | ~6,5 M | Deteccion de objetos (COCO) | Imagen redimensionada | Apache 2.0 | Hugging Face |
 
 La comparacion con el DETR-ResNet-50 original es directa: comparten arquitectura y numero de parametros, y la unica diferencia documentada es el ajuste fino sobre un dataset no especificado. No es posible comparar rendimiento porque el modelo ajustado no publica metricas.
 
@@ -87,7 +87,7 @@ La comparacion con el DETR-ResNet-50 original es directa: comparten arquitectura
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kumumin/furniture_data_finetuning_1
+- Modelo en Hugging Face: https://huggingface.co/kumumin/furniture_data_finetuning_1
 - Modelo base: https://huggingface.co/facebook/detr-resnet-50
 - Paper del DETR (End-to-End Object Detection with Transformers): https://arxiv.org/abs/2005.12872
 - Repositorio oficial de DETR de Facebook Research: https://github.com/facebookresearch/detr

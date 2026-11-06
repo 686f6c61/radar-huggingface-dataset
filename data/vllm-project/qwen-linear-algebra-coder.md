@@ -2,7 +2,7 @@
 
 ## Resumen
 
-qwen-linear-algebra-coder es un adaptador LoRA (Low-Rank Adaptation) entrenado sobre el modelo base Qwen/Qwen3-1.7B, especializado en generar codigo Python —principalmente con NumPy— que resuelve problemas de algebra lineal descritos en lenguaje natural. El desarrollo original corresponde al usuario premjatin, y esta copia concreta la mantiene el proyecto vLLM en su organizacion de HuggingFace como checkpoint de uso interno en su integracion continua (CI), con el objetivo de reducir el riesgo de suministro al no depender de una cuenta personal.
+qwen-linear-algebra-coder es un adaptador LoRA (Low-Rank Adaptation) entrenado sobre el modelo base Qwen/Qwen3-1.7B, especializado en generar codigo Python —principalmente con NumPy— que resuelve problemas de algebra lineal descritos en lenguaje natural. El desarrollo original corresponde al usuario premjatin, y esta copia concreta la mantiene el proyecto vLLM en su organizacion de Hugging Face como checkpoint de uso interno en su integracion continua (CI), con el objetivo de reducir el riesgo de suministro al no depender de una cuenta personal.
 
 El modelo no introduce una arquitectura nueva: hereda la de Qwen3-1.7B (transformer decoder-only de 1.700 millones de parametros) y anade un adaptador de rango 16 sobre los modulos de atencion y MLP. Su proposito es acotado y practico: convertir enunciados de algebra lineal (valores propios, descomposiciones, sistemas de ecuaciones, inversas de matrices, etc.) en scripts ejecutables de Python, lo que lo hace util como componente de asistentes de codigo cientifico o de pipelines de generacion de codigo verificable.
 
@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen-linear-algebra-coder | 1,7 B (base) + LoRA | No disponible | Algebra lineal en Python | MIT | HuggingFace (vllm-project y premjatin) |
-| Qwen/Qwen3-1.7B | 1,7 B | No disponible en esta ficha | Proposito general | No disponible en esta ficha | HuggingFace |
+| qwen-linear-algebra-coder | 1,7 B (base) + LoRA | No disponible | Algebra lineal en Python | MIT | Hugging Face (vllm-project y premjatin) |
+| Qwen/Qwen3-1.7B | 1,7 B | No disponible en esta ficha | Proposito general | No disponible en esta ficha | Hugging Face |
 | Alternativas especializadas en codigo matematico | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de benchmarks ni de modelos comparables documentados en la informacion proporcionada para establecer una comparacion cuantitativa.
@@ -86,6 +86,6 @@ No se dispone de datos de benchmarks ni de modelos comparables documentados en l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/vllm-project/qwen-linear-algebra-coder
+- Repositorio en Hugging Face: https://huggingface.co/vllm-project/qwen-linear-algebra-coder
 - Repositorio original: https://huggingface.co/premjatin/qwen-linear-algebra-coder
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B

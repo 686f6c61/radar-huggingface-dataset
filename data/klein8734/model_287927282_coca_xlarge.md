@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `model_287927282_coca_xlarge` es una implementación de la arquitectura CoCa (Contrastive Captioners) a escala "xlarge", publicada por el usuario `klein8734` en HuggingFace. CoCa es una arquitectura de visión-lenguaje que combina aprendizaje contrastivo con pérdida de captioning para construir representaciones conjuntas de imágenes y texto, orientada en este caso a tareas de *matching* (emparejamiento o alineación entre modalidades).
+El modelo `model_287927282_coca_xlarge` es una implementación de la arquitectura CoCa (Contrastive Captioners) a escala "xlarge", publicada por el usuario `klein8734` en Hugging Face. CoCa es una arquitectura de visión-lenguaje que combina aprendizaje contrastivo con pérdida de captioning para construir representaciones conjuntas de imágenes y texto, orientada en este caso a tareas de *matching* (emparejamiento o alineación entre modalidades).
 
 El repositorio contiene únicamente un archivo Python (`model_287927282_coca_xlarge.py`) que define la arquitectura y su configuración de entrenamiento, sin pesos preentrenados publicados ni artefactos de inferencia. La configuración técnica incluye atención dilatada, estrategia de fusión de bajo rango (*low-rank*), activación Mish, normalización por lotes (BatchNorm), inicialización truncada normal, optimizador Adafactor y planificador de tasa de aprendizaje OneCycle. El modelo se publica bajo licencia CC-BY-4.0.
 
@@ -73,5 +73,5 @@ No se dispone de información suficiente para establecer una comparativa con mod
 
 ## Enlaces
 
-- [HuggingFace - klein8734/model_287927282_coca_xlarge](https://huggingface.co/klein8734/model_287927282_coca_xlarge)
+- [Hugging Face - klein8734/model_287927282_coca_xlarge](https://huggingface.co/klein8734/model_287927282_coca_xlarge)
 - [GitHub - lucidrains/CoCa-pytorch (implementación de referencia de CoCa)](https://github.com/lucidrains/CoCa-pytorch)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`svd-safety-l2_swift_remove40_swapgapiter_rankunit_b010` es un checkpoint derivado de `meta-llama/Llama-2-7b-chat-hf` publicado por el usuario Jeesup en HuggingFace. No es un modelo de propósito general: es un artefacto de investigación que combina dos transformaciones sobre los pesos originales. Primero se aplica una compresión SVD-LLM que elimina el 40,02 % de los parámetros, dejando el modelo en una fracción densa de 0,5998 (unos 6.738 millones de parámetros, frente a los 6.738 millones declarados en el safetensors del repositorio). Después se aplican 10 rondas iterativas de una edición denominada "parameter-neutral swap", seleccionada mediante la regla `gap_iter`, que reinserte hasta un 0,1 % de los parámetros densos por ronda.
+`svd-safety-l2_swift_remove40_swapgapiter_rankunit_b010` es un checkpoint derivado de `meta-llama/Llama-2-7b-chat-hf` publicado por el usuario Jeesup en Hugging Face. No es un modelo de propósito general: es un artefacto de investigación que combina dos transformaciones sobre los pesos originales. Primero se aplica una compresión SVD-LLM que elimina el 40,02 % de los parámetros, dejando el modelo en una fracción densa de 0,5998 (unos 6.738 millones de parámetros, frente a los 6.738 millones declarados en el safetensors del repositorio). Después se aplican 10 rondas iterativas de una edición denominada "parameter-neutral swap", seleccionada mediante la regla `gap_iter`, que reinserte hasta un 0,1 % de los parámetros densos por ronda.
 
 El objetivo declarado del autor es estudiar cómo la compresión SVD degrada el comportamiento de seguridad de un modelo alineado y qué regla de selección de componentes repara mejor ese daño. Este checkpoint concreto es una celda de una rejilla experimental que cruza reglas de selección y presupuestos de restauración, con semilla 42. La edición afecta a 4.699 componentes restaurados y 4.699 expulsados, con 64.718.336 parámetros intercambiados (el 1,00 % de los parámetros de proyección densos).
 
@@ -78,8 +78,8 @@ No se han publicado en la informacion disponible resultados de MMLU, HumanEval, 
 
 | Modelo | Parametros | Contexto | ASR AdvBench | Perplejidad WikiText-2 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| svd-safety-l2_swift_remove40_swapgapiter_rankunit_b010 | 6.738.415.616 (fraccion densa 0,5998) | 4.096 tokens (heredado) | 0,0462 | 11,6961 | Llama 2 Community | Publico en HuggingFace |
-| meta-llama/Llama-2-7b-chat-hf (base) | 6.738.415.616 | 4.096 tokens | No disponible | No disponible | Llama 2 Community | Publico en HuggingFace |
+| svd-safety-l2_swift_remove40_swapgapiter_rankunit_b010 | 6.738.415.616 (fraccion densa 0,5998) | 4.096 tokens (heredado) | 0,0462 | 11,6961 | Llama 2 Community | Publico en Hugging Face |
+| meta-llama/Llama-2-7b-chat-hf (base) | 6.738.415.616 | 4.096 tokens | No disponible | No disponible | Llama 2 Community | Publico en Hugging Face |
 | Otras celdas de la rejilla de Jeesup | No disponible | No disponible | No disponible | No disponible | Llama 2 Community | No disponible |
 
 La model card del autor no publica los valores de referencia del modelo base sin comprimir, por lo que no es posible cuantificar aqui cuanto mejora o empeora este checkpoint respecto a Llama-2-7b-chat. No se dispone de datos de otros modelos comparables en la informacion proporcionada.
@@ -99,7 +99,7 @@ La model card del autor no publica los valores de referencia del modelo base sin
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_swift_remove40_swapgapiter_rankunit_b010
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_swift_remove40_swapgapiter_rankunit_b010
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Paper de referencia de Llama 2: https://arxiv.org/abs/2307.09288
 - La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo: las entradas recuperadas correspondian a foros no relacionados (CommentCaMarche). No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion disponible.

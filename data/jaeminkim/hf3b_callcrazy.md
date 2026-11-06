@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`JaeminKim/HF3B_callcrazy` es un modelo publicado en HuggingFace Hub por el usuario JaeminKim. Por el identificador del repositorio y el tamano del mismo (0,5 GB), todo apunta a un modelo de aproximadamente 3 mil millones de parametros, presumiblemente derivado de un modelo base existente y afinado mediante la libreria Unsloth, segun indica la etiqueta `unsloth` presente en los metadatos. El sufijo "callcrazy" sugiere un ajuste fino orientado a un dominio o tarea especifica, aunque el autor no documenta cual.
+`JaeminKim/HF3B_callcrazy` es un modelo publicado en Hugging Face Hub por el usuario JaeminKim. Por el identificador del repositorio y el tamano del mismo (0,5 GB), todo apunta a un modelo de aproximadamente 3 mil millones de parametros, presumiblemente derivado de un modelo base existente y afinado mediante la libreria Unsloth, segun indica la etiqueta `unsloth` presente en los metadatos. El sufijo "callcrazy" sugiere un ajuste fino orientado a un dominio o tarea especifica, aunque el autor no documenta cual.
 
-La model card es la plantilla generica autogenerada por HuggingFace y no contiene informacion sustantiva: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluacion) figuran como "[More Information Needed]". No se dispone de pipeline declarado, ni de resultados de benchmarks, ni de documentacion tecnica adicional.
+La model card es la plantilla generica autogenerada por Hugging Face y no contiene informacion sustantiva: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluacion) figuran como "[More Information Needed]". No se dispone de pipeline declarado, ni de resultados de benchmarks, ni de documentacion tecnica adicional.
 
 Por tanto, esta ficha se limita a reflejar los metadatos verificables del repositorio y a senalar explicitamente que la mayor parte de las especificaciones tecnicas no estan disponibles. Se recomienda precaucion antes de considerar el modelo para cualquier uso en produccion, dado que no hay garantias documentadas sobre procedencia, licencia ni calidad del ajuste.
 
@@ -89,7 +89,7 @@ La comparativa pone de manifiesto que el modelo analizado carece de la documenta
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JaeminKim/HF3B_callcrazy
+- Repositorio Hugging Face: https://huggingface.co/JaeminKim/HF3B_callcrazy
 - Paper de referencia sobre impacto ambiental citado en la model card (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora ML Impact: https://mlco2.github.io/impact
 - Libreria Unsloth (mencionada via etiqueta): https://github.com/unslothai/unsloth

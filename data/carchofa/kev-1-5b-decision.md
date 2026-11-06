@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Carchofa/kev-1.5b-decision es un adaptador LoRA publicado en HuggingFace por el usuario Carchofa, entrenado sobre el modelo base Qwen/Qwen2.5-1.5B. El repositorio contiene únicamente los pesos del adaptador (formato PEFT/LoRA, safetensors, ~0,1 GB), no un modelo completo, por lo que su uso requiere cargar Qwen2.5-1.5B y aplicar el adaptador encima. La nomenclatura "decision" y el nombre "kev" lo sitúan en la estela de los modelos de decisión tipo Jev/kev, que devuelven probabilidades tipadas o etiquetas en lugar de texto generado autorregresivamente.
+Carchofa/kev-1.5b-decision es un adaptador LoRA publicado en Hugging Face por el usuario Carchofa, entrenado sobre el modelo base Qwen/Qwen2.5-1.5B. El repositorio contiene únicamente los pesos del adaptador (formato PEFT/LoRA, safetensors, ~0,1 GB), no un modelo completo, por lo que su uso requiere cargar Qwen2.5-1.5B y aplicar el adaptador encima. La nomenclatura "decision" y el nombre "kev" lo sitúan en la estela de los modelos de decisión tipo Jev/kev, que devuelven probabilidades tipadas o etiquetas en lugar de texto generado autorregresivamente.
 
-El interés de esta ficha es limitado y hay que decirlo con claridad: la model card del repositorio es la plantilla por defecto de HuggingFace, con todos los campos marcados como "[More Information Needed]". No se declara licencia, idiomas, datos de entrenamiento, hiperparámetros, evaluación ni procedencia de los datos. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y fue creado el 24 de septiembre de 2026 con apenas cinco segundos de diferencia entre creación y última actualización.
+El interés de esta ficha es limitado y hay que decirlo con claridad: la model card del repositorio es la plantilla por defecto de Hugging Face, con todos los campos marcados como "[More Information Needed]". No se declara licencia, idiomas, datos de entrenamiento, hiperparámetros, evaluación ni procedencia de los datos. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y fue creado el 24 de septiembre de 2026 con apenas cinco segundos de diferencia entre creación y última actualización.
 
 Sí existe contexto externo relevante: el proyecto kev de jaredpalmer implementa modelos de decisión inspirados en Jev (TypeSafe), con un adaptador LoRA y una cabeza de lectura sobre Qwen2.5-0.5B que responde múltiples preguntas tipadas sobre un documento en una sola pasada de prefill, con máscara block-causal y sin decodificación. Es plausible que este adaptador siga ese mismo patrón, pero conviene subrayar que la model card no lo confirma en ningún punto y que el modelo base aquí es Qwen2.5-1.5B, no el Qwen2.5-0.5B del repositorio de referencia.
 
@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Carchofa/kev-1.5b-decision | 1,5 B (base) + LoRA | 32.768 | No disponible | HuggingFace, 0 descargas | Adaptador sin model card ni evaluación |
-| Qwen/Qwen2.5-1.5B | 1,5 B | 32.768 (131.072 con YaRN) | Apache-2.0 | HuggingFace, ampliamente desplegado | Modelo base sobre el que se entrena el adaptador; multilingüe (29 idiomas) |
+| Carchofa/kev-1.5b-decision | 1,5 B (base) + LoRA | 32.768 | No disponible | Hugging Face, 0 descargas | Adaptador sin model card ni evaluación |
+| Qwen/Qwen2.5-1.5B | 1,5 B | 32.768 (131.072 con YaRN) | Apache-2.0 | Hugging Face, ampliamente desplegado | Modelo base sobre el que se entrena el adaptador; multilingüe (29 idiomas) |
 | kev (jaredpalmer), sobre Qwen2.5-0.5B | 0,5 B (base) + LoRA | 32.768 (Qwen2.5) | No especificada en la búsqueda | Repositorio GitHub público | Proyecto de referencia del ecosistema kev; incluye cabeza de lectura y máscara block-causal |
 | Jev (TypeSafe) | No disponible | No disponible | Propietaria | API de pago desde el 21 de septiembre de 2026 ($0,042 por millón de tokens de entrada, salida gratuita) | Modelo de decisión tipada comercial; no es un modelo abierto |
 
@@ -75,7 +75,7 @@ La comparación es estructuralmente desigual: el adaptador de Carchofa no dispon
 
 ## Limitaciones y advertencias
 
-- Documentación inexistente: la model card es la plantilla por defecto de HuggingFace, sin datos de entrenamiento, evaluación, uso previsto ni uso fuera de alcance.
+- Documentación inexistente: la model card es la plantilla por defecto de Hugging Face, sin datos de entrenamiento, evaluación, uso previsto ni uso fuera de alcance.
 - Licencia no declarada: no se especifica licencia para el adaptador. Aunque Qwen2.5-1.5B es Apache-2.0, la ausencia de licencia explícita en el repositorio genera incertidumbre legal sobre su uso comercial. Conviene contactar con el autor antes de integrarlo en producción.
 - Sin validación comunitaria: 0 descargas y 0 likes implican que no existe retroalimentación externa, ni issues, ni reproducciones independientes de su comportamiento.
 - Riesgo de alucinación: inherente a cualquier modelo de 1,5 mil millones de parámetros; el adaptador puede además degradar la fidelidad factual del base si el ajuste se hizo con un dataset pequeño o poco diverso.
@@ -88,7 +88,7 @@ La comparación es estructuralmente desigual: el adaptador de Carchofa no dispon
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Carchofa/kev-1.5b-decision
+- Modelo en Hugging Face: https://huggingface.co/Carchofa/kev-1.5b-decision
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B
 - Repositorio del proyecto kev (jaredpalmer): https://github.com/jaredpalmer/kev
 - Rama principal del repositorio kev: https://github.com/jaredpalmer/kev/tree/main

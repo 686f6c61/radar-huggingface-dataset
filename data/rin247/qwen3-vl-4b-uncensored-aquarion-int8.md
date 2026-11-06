@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Rin247/Qwen3-VL-4B-Uncensored-Aquarion-INT8 | 4,4B | no disponible | INT8 | no disponible | HuggingFace |
-| Qwen/Qwen3-VL-4B-Instruct | 4,4B | no disponible | BF16/FP8 | Apache 2.0 (según repo oficial) | HuggingFace |
-| huihui-ai/Huihui-Qwen3-VL-4B-Instruct-abliterated | 4,4B | no disponible | no especificada | no disponible | HuggingFace |
+| Rin247/Qwen3-VL-4B-Uncensored-Aquarion-INT8 | 4,4B | no disponible | INT8 | no disponible | Hugging Face |
+| Qwen/Qwen3-VL-4B-Instruct | 4,4B | no disponible | BF16/FP8 | Apache 2.0 (según repo oficial) | Hugging Face |
+| huihui-ai/Huihui-Qwen3-VL-4B-Instruct-abliterated | 4,4B | no disponible | no especificada | no disponible | Hugging Face |
 
 La comparativa se limita a datos de parámetros y disponibilidad, ya que no se han publicado métricas de rendimiento para ninguna de las variantes. El modelo base oficial de Qwen3-VL-4B-Instruct es la referencia principal, pero no se dispone de información sobre su contexto o licencia en los resultados de búsqueda.
 
@@ -69,13 +69,13 @@ La comparativa se limita a datos de parámetros y disponibilidad, ya que no se h
 - La *abliteration* elimina la dirección de rechazo, lo que puede provocar que el modelo genere contenido ofensivo, ilegal o peligroso sin filtros. No es adecuado para aplicaciones de producción sin supervisión humana.
 - La cuantización INT8 *weight-only* puede degradar la calidad de las respuestas, especialmente en tareas que requieren precisión numérica o razonamiento complejo.
 - No se especifica la licencia del modelo, lo que genera incertidumbre legal para su uso comercial. Se recomienda contactar con el autor antes de utilizarlo en proyectos empresariales.
-- El proceso de carga requiere dequantización manual con buffers de escala y forma; no es compatible con los cargadores estándar de HuggingFace Transformers sin modificaciones.
+- El proceso de carga requiere dequantización manual con buffers de escala y forma; no es compatible con los cargadores estándar de Hugging Face Transformers sin modificaciones.
 - No se dispone de información sobre sesgos, alucinaciones o limitaciones de idioma. Al ser una modificación no oficial, no hay garantías de robustez.
 - El modelo fue creado en agosto de 2026, lo que sugiere que es una versión reciente, pero no hay evidencia de pruebas exhaustivas ni de mantenimiento posterior.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rin247/Qwen3-VL-4B-Uncensored-Aquarion-INT8
+- Modelo en Hugging Face: https://huggingface.co/Rin247/Qwen3-VL-4B-Uncensored-Aquarion-INT8
 - Repositorio oficial de Qwen3-VL: https://github.com/QwenLM/Qwen3-VL
 - Modelo base Qwen3-VL-4B-Instruct: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - Variante abliterated de huihui-ai: https://huggingface.co/huihui-ai/Huihui-Qwen3-VL-4B-Instruct-abliterated

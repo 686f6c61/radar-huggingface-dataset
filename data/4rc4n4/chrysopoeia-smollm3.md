@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Chrysopoeia es un modelo de lenguaje de 3 075 millones de parámetros desarrollado por el usuario 4rc4n4 como proyecto de exploración sobre fine-tuning. Partiendo del modelo base SmolLM3-3B-Base de HuggingFace, el autor aplica una primera fase de continued-pretraining con QLoRA sobre aproximadamente 2,6 millones de tokens de prosa esotérica occidental de dominio público (obras de Manly P. Hall, Éliphas Lévi, el Kybalion, etc.) y, a continuación, una fase ligera de SFT con ejemplos de turnos de conversación en los que entradas mundanas reciben respuestas en registro esotérico. El objetivo es que el modelo adopte por defecto una voz de "gurú" esotérico ante cualquier entrada, sin necesidad de recuperación en inferencia.
+Chrysopoeia es un modelo de lenguaje de 3 075 millones de parámetros desarrollado por el usuario 4rc4n4 como proyecto de exploración sobre fine-tuning. Partiendo del modelo base SmolLM3-3B-Base de Hugging Face, el autor aplica una primera fase de continued-pretraining con QLoRA sobre aproximadamente 2,6 millones de tokens de prosa esotérica occidental de dominio público (obras de Manly P. Hall, Éliphas Lévi, el Kybalion, etc.) y, a continuación, una fase ligera de SFT con ejemplos de turnos de conversación en los que entradas mundanas reciben respuestas en registro esotérico. El objetivo es que el modelo adopte por defecto una voz de "gurú" esotérico ante cualquier entrada, sin necesidad de recuperación en inferencia.
 
 El modelo no pretende ser un asistente general ni una fuente de conocimiento fiable; es un estudio sobre si una disposición estilística y cierta sustancia conceptual pueden incrustarse en los pesos. Su relevancia radica en la metodología: separar el registro del tema mediante un corpus de "soak" y un slice SFT con prompts filtrados fuera del espacio esotérico, de modo que el registro se generalice como disposición y no como asociación temática. Está liberado bajo licencia Apache-2.0 y disponible en formatos safetensors y GGUF.
 
@@ -21,7 +21,7 @@ El modelo no pretende ser un asistente general ni una fuente de conocimiento fia
 
 ## Arquitectura y entrenamiento
 
-Chrysopoeia parte de la arquitectura transformer del modelo SmolLM3-3B-Base, un modelo denso de 3 000 millones de parámetros entrenado por HuggingFace sobre 11 billones de tokens. El proceso de entrenamiento consta de dos fases diferenciadas:
+Chrysopoeia parte de la arquitectura transformer del modelo SmolLM3-3B-Base, un modelo denso de 3 000 millones de parámetros entrenado por Hugging Face sobre 11 billones de tokens. El proceso de entrenamiento consta de dos fases diferenciadas:
 
 1. **Fase de "soak" (continued-pretraining con QLoRA)**: se entrena sobre un corpus de aproximadamente 2,6 millones de tokens de prosa esotérica occidental confirmada como dominio público estadounidense (Hall, Kybalion, Lévi, Waite, Papus, Ouspensky, hermetismo, neoplatonismo y gnosticismo). Se usa una tasa de aprendizaje constante y se selecciona un snapshot intermedio (no el final, que memoriza) para instalar la sustancia esotérica en los pesos.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 - **VRAM estimada**: el modelo tiene 3 075 millones de parámetros. En precisión f16 (formato GGUF mencionado), el peso ocupa aproximadamente 6,2 GB, por lo que se necesita al menos 8 GB de VRAM para inferencia con contexto moderado. Con cuantización de 4 bits (no especificada en la documentación pero común en GGUF), el modelo cabría en unos 2-3 GB.
 - **GPU recomendadas**: para f16, una RTX 3060 de 12 GB, RTX 4070 o superior. Para cuantización 4-bit, cualquier GPU con 6 GB o más (GTX 1660 Super, RTX 3050, etc.).
 - **Compatibilidad con GPU de consumo**: sí, es un modelo de 3B diseñado para ejecutarse en hardware de gama media.
-- **Opciones de despliegue**: el autor documenta el uso con `llama-server` de llama.cpp (comando `llama-server -m chrysopoeia-smollm3-f16.gguf -c 2048 -ngl 999`). También es compatible con la librería transformers de HuggingFace, y probablemente con vLLM u Ollama, aunque no se indica explícitamente.
+- **Opciones de despliegue**: el autor documenta el uso con `llama-server` de llama.cpp (comando `llama-server -m chrysopoeia-smollm3-f16.gguf -c 2048 -ngl 999`). También es compatible con la librería transformers de Hugging Face, y probablemente con vLLM u Ollama, aunque no se indica explícitamente.
 - **Latencia y throughput**: no se proporcionan datos medidos. Para un modelo de 3B en GPU moderna, se espera una generación de decenas de tokens por segundo, pero depende del hardware y la cuantización.
 
 ## Comparativa con modelos similares
@@ -93,8 +93,8 @@ Chrysopoeia no compite en capacidades generales con estos modelos; su valor resi
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/4rc4n4/chrysopoeia-smollm3)
-- [Modelo base SmolLM3-3B en HuggingFace](https://huggingface.co/HuggingFaceTB/SmolLM3-3B)
+- [Modelo en Hugging Face](https://huggingface.co/4rc4n4/chrysopoeia-smollm3)
+- [Modelo base SmolLM3-3B en Hugging Face](https://huggingface.co/HuggingFaceTB/SmolLM3-3B)
 - [Documentación de SmolLM3 en Transformers](https://huggingface.co/docs/transformers/model_doc/smollm3)
 - [Repositorio GitHub de SmolLM](https://github.com/huggingface/smollm)
 - [Sitio web de SmolLM3](https://smollm3.org/)

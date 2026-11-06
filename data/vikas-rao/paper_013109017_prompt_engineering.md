@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, identificado como `vikas-rao/paper_013109017_prompt_engineering`, no contiene un modelo de lenguaje de gran tamano, sino un documento academico en formato Markdown que aborda el tema de la ingenieria de prompts (prompt engineering). El autor, vikas-rao, ha estructurado el contenido como un articulo cientifico con secciones de introduccion, metodo relacionado, experimentos y conclusiones, con un enfoque empirico y un estilo de citacion con notas a pie de pagina.
+Este repositorio de Hugging Face, identificado como `vikas-rao/paper_013109017_prompt_engineering`, no contiene un modelo de lenguaje de gran tamano, sino un documento academico en formato Markdown que aborda el tema de la ingenieria de prompts (prompt engineering). El autor, vikas-rao, ha estructurado el contenido como un articulo cientifico con secciones de introduccion, metodo relacionado, experimentos y conclusiones, con un enfoque empirico y un estilo de citacion con notas a pie de pagina.
 
 El repositorio es relevante para desarrolladores e investigadores que quieran consultar una revision o estudio sobre tecnicas de prompt engineering, un campo que ha ganado importancia con la adopcion generalizada de modelos de lenguaje grandes. Al ser un documento de texto, no ofrece capacidades de inferencia, generacion de texto ni ninguna funcionalidad de modelo. Su valor reside en el contenido del paper, que se encuentra en el archivo `paper_013109017_prompt_engineering.md`.
 
@@ -63,7 +63,7 @@ No disponible. No existe categoria de modelos de lenguaje comparable, ya que est
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/vikas-rao/paper_013109017_prompt_engineering
+- Repositorio de Hugging Face: https://huggingface.co/vikas-rao/paper_013109017_prompt_engineering
 - Guia de prompt engineering (promptingguide.ai): https://www.promptingguide.ai/
 - Papers sobre prompt engineering: https://www.promptingguide.ai/papers
 - Encuesta sistematica sobre prompt engineering (arXiv): https://arxiv.org/html/2402.07927v2

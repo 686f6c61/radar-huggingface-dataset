@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`elliewood/contrastive` es un repositorio experimental de HuggingFace que contiene una implementación propia de una arquitectura denominada **Cnn Transformer**, orientada a aprendizaje contrastivo. Lo publica el usuario elliewood (autor individual) y no se presenta como un modelo entrenado, sino como un esqueleto de código con una configuración de arquitectura y un checkpoint de inicialización válido únicamente para pruebas de humo (*smoke tests*).
+`elliewood/contrastive` es un repositorio experimental de Hugging Face que contiene una implementación propia de una arquitectura denominada **Cnn Transformer**, orientada a aprendizaje contrastivo. Lo publica el usuario elliewood (autor individual) y no se presenta como un modelo entrenado, sino como un esqueleto de código con una configuración de arquitectura y un checkpoint de inicialización válido únicamente para pruebas de humo (*smoke tests*).
 
 El modelo tiene 33.088 parámetros totales según los pesos en `safetensors`, un tamaño que lo sitúa varios órdenes de magnitud por debajo de cualquier modelo de lenguaje utilizable. La model card es explícita: el checkpoint "no se presenta como un checkpoint entrenado con benchmarks" y "no se reclama ninguna puntuación de benchmark en este repositorio". Es, por tanto, un artefacto de investigación de arquitectura, no un modelo de producción.
 
@@ -79,9 +79,9 @@ No disponible. No se han encontrado en la información proporcionada modelos com
 - Licencia MIT: permite uso comercial y modificación, pero el autor advierte de que deben revisarse por separado los términos de los datos de origen cuando el repositorio se use con datasets externos.
 - Implementación personalizada: las APIs genéricas de carga automática no funcionan sin un adaptador explícito, lo que añade trabajo de integración frente a arquitecturas estándar.
 - Cualquier resultado obtenido con un futuro checkpoint entrenado debe documentarse de forma separada de los valores por defecto que se distribuyen aquí; no deben atribuirse a este repositorio métricas no publicadas.
-- El repositorio no incluye pipeline declarado en HuggingFace, lo que impide usarlo con las interfaces estándar de inferencia de la plataforma.
+- El repositorio no incluye pipeline declarado en Hugging Face, lo que impide usarlo con las interfaces estándar de inferencia de la plataforma.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/elliewood/contrastive
+- Hugging Face: https://huggingface.co/elliewood/contrastive
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repos o demos) en la búsqueda web realizada; los resultados devueltos no guardan relación con este modelo.

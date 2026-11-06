@@ -87,9 +87,9 @@ No hay suficientes datos para comparar rendimiento, contexto o disponibilidad.
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/Zazzles/qwen38-27b-nvfp4-tokenizer)
-- [Qwen/Qwen3.8-27B en HuggingFace](https://huggingface.co/Qwen/Qwen3.8-27B)
-- [unsloth/Qwen3.8-27B-NVFP4 en HuggingFace](https://huggingface.co/unsloth/Qwen3.8-27B-NVFP4)
+- [Repositorio Hugging Face](https://huggingface.co/Zazzles/qwen38-27b-nvfp4-tokenizer)
+- [Qwen/Qwen3.8-27B en Hugging Face](https://huggingface.co/Qwen/Qwen3.8-27B)
+- [unsloth/Qwen3.8-27B-NVFP4 en Hugging Face](https://huggingface.co/unsloth/Qwen3.8-27B-NVFP4)
 - [vLLM Recipes para Qwen3.8-27B](https://recipes.vllm.ai/Qwen/Qwen3.8-27B)
 - [Repositorio de GitHub para SGLang en DGX Spark](https://github.com/MiaAI-Lab/Qwen3.8-27B-SGLang-DGX-Spark)
 - [Repositorio de GitHub con config para DGX Spark](https://github.com/hasso5703/dgx-spark-qwen38)

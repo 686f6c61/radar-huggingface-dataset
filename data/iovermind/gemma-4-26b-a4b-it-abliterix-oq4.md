@@ -2,7 +2,7 @@
 
 ## Resumen
 
-gemma-4-26B-A4B-it-abliterix-oQ4 es una version cuantizada del modelo Gemma 4 de arquitectura MoE (Mixture of Experts) con 26B parametros totales y 4B activos, publicado por el usuario iOvermind en HuggingFace. El modelo base es la variante "it" (instruction-tuned) de Gemma 4, presumiblemente desarrollada por Google DeepMind, aunque la model card no confirma explicitamente la identidad del autor original. La variante "abliterix" sugiere que se ha aplicado una tecnica de abliteration (eliminacion de la direccion de rechazo en el espacio de activaciones) para reducir las negativas del modelo, aunque la model card no lo detalla.
+gemma-4-26B-A4B-it-abliterix-oQ4 es una version cuantizada del modelo Gemma 4 de arquitectura MoE (Mixture of Experts) con 26B parametros totales y 4B activos, publicado por el usuario iOvermind en Hugging Face. El modelo base es la variante "it" (instruction-tuned) de Gemma 4, presumiblemente desarrollada por Google DeepMind, aunque la model card no confirma explicitamente la identidad del autor original. La variante "abliterix" sugiere que se ha aplicado una tecnica de abliteration (eliminacion de la direccion de rechazo en el espacio de activaciones) para reducir las negativas del modelo, aunque la model card no lo detalla.
 
 La relevancia de esta ficha radica en que se trata de una cuantizacion mixta de 4 bits realizada con oQ (oMLX v0.7.0), una herramienta de cuantizacion de precision mixta orientada a MLX, el framework de Apple para silicio unificado. Esto la hace especialmente interesante para despliegue en Macs con Apple Silicon, donde MLX ofrece mejor rendimiento que otras alternativas. El repositorio ocupa 15.8 GB y contiene pesos en formato MLX safetensors.
 
@@ -83,7 +83,7 @@ No hay datos suficientes para establecer una comparativa cuantitativa con altern
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iOvermind/gemma-4-26B-A4B-it-abliterix-oQ4
+- Modelo en Hugging Face: https://huggingface.co/iOvermind/gemma-4-26B-A4B-it-abliterix-oQ4
 - Herramienta de cuantizacion oQ (oMLX): https://github.com/jundot/omlx
 - Framework MLX: https://github.com/ml-explore/mlx
 - Modelo base Gemma 4: no disponible en la informacion proporcionada

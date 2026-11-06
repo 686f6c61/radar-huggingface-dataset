@@ -2,7 +2,7 @@
 
 ## Resumen
 
-faster-whisper-small es un espejo (mirror) sin modificaciones del modelo Whisper small de OpenAI, convertido al formato CTranslate2 por SYSTRAN y replicado en el repositorio de HuggingFace `pinecoresystems/faster-whisper-small`. El autor del repositorio, pinecoresystems (TinyPine Studio), declara explicitamente que no ha entrenado ni alterado el modelo: su unico objetivo es servir el binario desde un origen propio para que el instalador de TinyPine no dependa de enlaces de descarga de terceros.
+faster-whisper-small es un espejo (mirror) sin modificaciones del modelo Whisper small de OpenAI, convertido al formato CTranslate2 por SYSTRAN y replicado en el repositorio de Hugging Face `pinecoresystems/faster-whisper-small`. El autor del repositorio, pinecoresystems (TinyPine Studio), declara explicitamente que no ha entrenado ni alterado el modelo: su unico objetivo es servir el binario desde un origen propio para que el instalador de TinyPine no dependa de enlaces de descarga de terceros.
 
 Se trata, por tanto, de un modelo de reconocimiento automatico del habla (ASR) de arquitectura transformer encoder-decoder, con aproximadamente 244 millones de parametros, derivado del checkpoint Whisper small original (licencia MIT) y optimizado para inferencia mediante el runtime CTranslate2. Su relevancia practica no esta en una mejora de capacidades, sino en la disponibilidad de pesos ligeros y rapidos de ejecutar, con un binario de unos 0,5 GB en el repositorio.
 
@@ -65,11 +65,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Formato | Contexto de audio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pinecoresystems/faster-whisper-small | ~244 M | CTranslate2 | ventanas de 30 s | MIT | HuggingFace (este repositorio) |
-| Systran/faster-whisper-small | ~244 M | CTranslate2 | ventanas de 30 s | MIT | HuggingFace (upstream directo) |
-| openai/whisper-small | ~244 M | PyTorch / safetensors | ventanas de 30 s | MIT | HuggingFace, implementacion de referencia |
-| openai/whisper-base | ~74 M | PyTorch / safetensors | ventanas de 30 s | MIT | HuggingFace, mas rapido pero menos preciso |
-| openai/whisper-medium | ~769 M | PyTorch / safetensors | ventanas de 30 s | MIT | HuggingFace, mas preciso pero mas pesado |
+| pinecoresystems/faster-whisper-small | ~244 M | CTranslate2 | ventanas de 30 s | MIT | Hugging Face (este repositorio) |
+| Systran/faster-whisper-small | ~244 M | CTranslate2 | ventanas de 30 s | MIT | Hugging Face (upstream directo) |
+| openai/whisper-small | ~244 M | PyTorch / safetensors | ventanas de 30 s | MIT | Hugging Face, implementacion de referencia |
+| openai/whisper-base | ~74 M | PyTorch / safetensors | ventanas de 30 s | MIT | Hugging Face, mas rapido pero menos preciso |
+| openai/whisper-medium | ~769 M | PyTorch / safetensors | ventanas de 30 s | MIT | Hugging Face, mas preciso pero mas pesado |
 
 La unica diferencia practica entre este repositorio y `Systran/faster-whisper-small` es el origen de la descarga y la publicacion del hash de integridad. Frente a las versiones de OpenAI, la ventaja es el formato CTranslate2, que reduce el tiempo de inferencia y el consumo de memoria; frente a `whisper-base`, ofrece mayor precision a cambio de un mayor coste computacional.
 
@@ -85,8 +85,8 @@ La unica diferencia practica entre este repositorio y `Systran/faster-whisper-sm
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/pinecoresystems/faster-whisper-small
-- Modelo upstream en HuggingFace: https://huggingface.co/Systran/faster-whisper-small
+- Repositorio en Hugging Face: https://huggingface.co/pinecoresystems/faster-whisper-small
+- Modelo upstream en Hugging Face: https://huggingface.co/Systran/faster-whisper-small
 - Modelo original de OpenAI: https://huggingface.co/openai/whisper-small
 - Repositorio del proyecto faster-whisper (SYSTRAN): https://github.com/SYSTRAN/faster-whisper
 - Repositorio de CTranslate2: https://github.com/OpenNMT/CTranslate2

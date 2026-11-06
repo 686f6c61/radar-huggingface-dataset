@@ -54,7 +54,7 @@ No se especifican en la informacion disponible el numero de tokens de entrenamie
 - Generacion por lotes para comercio electronico: produccion automatizada de imagenes de producto o fondos a partir de descripciones estructuradas, con latencia sub-segundo en hardware empresarial.
 - Investigacion sobre destilacion de modelos de difusion: sirve como caso de estudio reproducible de un DiT destilado a 8 pasos frente a su modelo base de 50 pasos.
 - Desarrollo downstream sobre la familia Z-Image: el model card senala que Z-Image y Z-Image-Omni-Base son los checkpoints orientados a fine-tuning; Turbo figura como no afinable (N/A), por lo que el ajuste fino deberia plantearse sobre los otros.
-- Demostraciones interactivas: el propio proyecto publica Spaces en HuggingFace y ModelScope, lo que facilita integraciones de demo con la clase ZImagePipeline de diffusers.
+- Demostraciones interactivas: el propio proyecto publica Spaces en Hugging Face y ModelScope, lo que facilita integraciones de demo con la clase ZImagePipeline de diffusers.
 
 ## Benchmarks y rendimiento
 
@@ -100,8 +100,8 @@ No se dispone de datos de rendimiento ni de parametros de modelos comparables de
 - Checkpoint analizado (resubida): https://huggingface.co/Sneakster/Z-Image-Turbo
 - Checkpoint oficial: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
 - Checkpoint del modelo base: https://huggingface.co/Tongyi-MAI/Z-Image
-- Demo oficial en HuggingFace Spaces: https://huggingface.co/spaces/Tongyi-MAI/Z-Image-Turbo
-- Demo movil en HuggingFace Spaces: https://huggingface.co/spaces/akhaliq/Z-Image-Turbo
+- Demo oficial en Hugging Face Spaces: https://huggingface.co/spaces/Tongyi-MAI/Z-Image-Turbo
+- Demo movil en Hugging Face Spaces: https://huggingface.co/spaces/akhaliq/Z-Image-Turbo
 - Repositorio GitHub: https://github.com/Tongyi-MAI/Z-Image
 - Sitio oficial del proyecto: https://tongyi-mai.github.io/Z-Image-blog/
 - Modelo en ModelScope: https://www.modelscope.cn/models/Tongyi-MAI/Z-Image-Turbo

@@ -67,7 +67,7 @@ No disponible. Este repositorio no representa un modelo de lenguaje, sino una AP
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/openbenchmarks/exa-fast
+- Repositorio de Hugging Face: https://huggingface.co/openbenchmarks/exa-fast
 - Documentación de la API de Exa: https://docs.exa.ai/reference/search
 - Leaderboard de OpenBenchmarks (dataset OB News Websearch): https://huggingface.co/datasets/openbenchmarks/OB-News-Websearch
 - Sitio de Exa (tablero en vivo): https://exa.ai

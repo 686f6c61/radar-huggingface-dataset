@@ -4,7 +4,7 @@
 
 Este modelo es un fine-tuning de Qwen3-8B desarrollado por maheshrawat18. Se basa en un modelo anterior, Qwen3-8B-grpo-emotion-v9-merged, y ha sido entrenado con Unsloth y TRL, según los metadatos del repositorio. La licencia es Apache 2.0 y el idioma soportado es inglés. No se especifica el problema concreto que resuelve ni se han publicado benchmarks, por lo que se trata de un experimento de la comunidad orientado a explorar el ajuste fino con GRPO.
 
-La arquitectura es un transformer de 8 mil millones de parámetros, según el nombre del modelo. La longitud de contexto no está documentada. El modelo está disponible en HuggingFace con formato safetensors y es compatible con text-generation-inference. Un dato llamativo es que el tamaño del repositorio es de solo 0.4 GB, lo que sugiere que podría no incluir los pesos completos del modelo, aunque no hay información que lo confirme.
+La arquitectura es un transformer de 8 mil millones de parámetros, según el nombre del modelo. La longitud de contexto no está documentada. El modelo está disponible en Hugging Face con formato safetensors y es compatible con text-generation-inference. Un dato llamativo es que el tamaño del repositorio es de solo 0.4 GB, lo que sugiere que podría no incluir los pesos completos del modelo, aunque no hay información que lo confirme.
 
 Por su naturaleza experimental y la ausencia de evaluaciones, este modelo no está recomendado para producción sin una validación previa.
 
@@ -23,7 +23,7 @@ Por su naturaleza experimental y la ausencia de evaluaciones, este modelo no est
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen3-8B, una arquitectura transformer de 8 mil millones de parámetros. El proceso de ajuste se realizó con Unsloth, una librería que optimiza el entrenamiento de modelos de lenguaje, y TRL, una librería de HuggingFace para RLHF. La model card indica que el entrenamiento fue 2 veces más rápido gracias a Unsloth. El modelo base es un fine-tuning previo que incluye "grpo" y "emotion" en su nombre, lo que sugiere que se aplicó GRPO en una etapa anterior. No se dispone de información sobre el dataset, el número de tokens, la composición de los datos ni los hiperparámetros utilizados.
+El modelo parte de Qwen3-8B, una arquitectura transformer de 8 mil millones de parámetros. El proceso de ajuste se realizó con Unsloth, una librería que optimiza el entrenamiento de modelos de lenguaje, y TRL, una librería de Hugging Face para RLHF. La model card indica que el entrenamiento fue 2 veces más rápido gracias a Unsloth. El modelo base es un fine-tuning previo que incluye "grpo" y "emotion" en su nombre, lo que sugiere que se aplicó GRPO en una etapa anterior. No se dispone de información sobre el dataset, el número de tokens, la composición de los datos ni los hiperparámetros utilizados.
 
 ## Capacidades
 
@@ -59,10 +59,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-8B-mentay-grpo-aware-v2 | 8B (según nombre) | no disponible | no disponible | Apache-2.0 | HuggingFace |
-| Qwen3-8B (base) | 8B | no disponible | no disponible | Apache-2.0 | HuggingFace |
-| Llama 3.1 8B | 8B | no disponible | no disponible | Llama Community License | HuggingFace |
-| Mistral 7B | 7B | no disponible | no disponible | Apache-2.0 | HuggingFace |
+| Qwen3-8B-mentay-grpo-aware-v2 | 8B (según nombre) | no disponible | no disponible | Apache-2.0 | Hugging Face |
+| Qwen3-8B (base) | 8B | no disponible | no disponible | Apache-2.0 | Hugging Face |
+| Llama 3.1 8B | 8B | no disponible | no disponible | Llama Community License | Hugging Face |
+| Mistral 7B | 7B | no disponible | no disponible | Apache-2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/maheshrawat18/Qwen3-8B-mentay-grpo-aware-v2
+- Hugging Face: https://huggingface.co/maheshrawat18/Qwen3-8B-mentay-grpo-aware-v2
 - Modelo base: https://huggingface.co/maheshrawat18/Qwen3-8B-grpo-emotion-v9-merged
 - Modelo relacionado (merged): https://huggingface.co/maheshrawat18/Qwen3-8B-mentay-grpo-aware-merged
 - Endpoint de inferencia (FriendliAI): https://friendli.ai/models/maheshrawat18/Qwen3-8B-mentay-grpo-aware-merged

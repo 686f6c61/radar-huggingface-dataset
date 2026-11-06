@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `gpt2_small_expandedbabyLM_100M_exp3_cnp_ratio_0p50_mix_0p25_44` es un ajuste fino de GPT-2 small (arquitectura transformer decoder) con 100 millones de parámetros, desarrollado por devika-tiwari. El nombre sugiere que fue entrenado sobre una versión expandida del corpus BabyLM, un conjunto de datos diseñado para estudiar la adquisición del lenguaje en modelos de aprendizaje automático. El modelo se publicó en agosto de 2026 y su ficha técnica es mínima, generada automáticamente por el Trainer de HuggingFace, sin información sobre el dataset de entrenamiento ni licencia.
+El modelo `gpt2_small_expandedbabyLM_100M_exp3_cnp_ratio_0p50_mix_0p25_44` es un ajuste fino de GPT-2 small (arquitectura transformer decoder) con 100 millones de parámetros, desarrollado por devika-tiwari. El nombre sugiere que fue entrenado sobre una versión expandida del corpus BabyLM, un conjunto de datos diseñado para estudiar la adquisición del lenguaje en modelos de aprendizaje automático. El modelo se publicó en agosto de 2026 y su ficha técnica es mínima, generada automáticamente por el Trainer de Hugging Face, sin información sobre el dataset de entrenamiento ni licencia.
 
 Este modelo es relevante para la comunidad de investigación en procesamiento del lenguaje natural, especialmente para experimentos sobre cómo los modelos pequeños aprenden estructuras lingüísticas a partir de datos limitados. Su tamaño compacto (100M) lo hace accesible para ejecutarse en hardware de consumo, aunque su utilidad práctica en producción es limitada debido a la falta de documentación y a su naturaleza experimental. No se especifica la longitud de contexto, pero por la arquitectura GPT-2 small se asume un contexto de 1024 tokens.
 
@@ -48,7 +48,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada: para un modelo de 100M de parámetros, la inferencia en FP16 requiere aproximadamente 0.2-0.5 GB de VRAM, y en FP32 alrededor de 0.4-1 GB. Con cuantización a 8 bits, puede bajar a ~0.1 GB.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente, como NVIDIA GTX 1050 Ti, RTX 2060, o incluso CPU para inferencia lenta.
 - Compatibilidad con GPU de consumo: sí, cabe en cualquier GPU moderna, incluidas las integradas de gama alta.
-- Opciones de despliegue: se puede usar con HuggingFace Transformers, vLLM, llama.cpp (si se convierte a GGUF), Ollama, o TGI. Para producción, vLLM ofrece mayor throughput.
+- Opciones de despliegue: se puede usar con Hugging Face Transformers, vLLM, llama.cpp (si se convierte a GGUF), Ollama, o TGI. Para producción, vLLM ofrece mayor throughput.
 - Latencia y throughput: no se dispone de datos medidos, pero en una GPU RTX 3090 se espera una latencia de ~10-20 ms por token y un throughput de varios cientos de tokens por segundo.
 
 ## Comparativa con modelos similares
@@ -66,7 +66,7 @@ No se dispone de datos comparativos directos. Modelos de tamaño similar incluye
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/devika-tiwari/gpt2_small_expandedbabyLM_100M_exp3_cnp_ratio_0p50_mix_0p25_44)
+- [Hugging Face - modelo](https://huggingface.co/devika-tiwari/gpt2_small_expandedbabyLM_100M_exp3_cnp_ratio_0p50_mix_0p25_44)
 - [Modelo similar con ratio 0p25](https://huggingface.co/devika-tiwari/gpt2_small_expandedbabyLM_100M_exp3_cnp_ratio_0p25_mix_0p25_44)
 - [Modelo con adj_ratio 0p50](https://huggingface.co/devika-tiwari/gpt2_small_expandedbabyLM_100M_exp3_adj_ratio_0p50_mix_0p25_44)
 - [Repositorio GitHub relacionado (no oficial)](https://github.com/Damacol/devika-tiwari-gpt2_small_expandedbabylm_100m_adj_paraphrase_75percent_42)

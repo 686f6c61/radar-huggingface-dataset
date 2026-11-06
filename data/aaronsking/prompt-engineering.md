@@ -4,7 +4,7 @@
 
 El repositorio `aaronsking/prompt-engineering` no contiene un modelo de lenguaje entrenado, sino un conjunto estructurado de notas de investigación sobre ingeniería de prompts. La propia model card lo declara de forma explícita: no reclama mejoras de benchmark, ablaciones completadas, código publicado ni un checkpoint entrenado. El artefacto principal es un fichero `paper_notes.md` que recoge el alcance de la pregunta de investigación, comparaciones propuestas con líneas base emparejadas, referencias de evaluación, comprobaciones de reproducibilidad y modos de fallo.
 
-A pesar de las etiquetas de HuggingFace (`safetensors`, `transformer`), el repositorio incluye un fichero de pesos con 49.600 parámetros totales, una cifra compatible con un tensor de configuración o inicialización residual más que con un modelo funcional. El tamaño del repositorio es de 0,0 GB, no tiene pipeline definido, no declara idiomas soportados y acumula 0 descargas y 0 "likes" en el momento de la consulta.
+A pesar de las etiquetas de Hugging Face (`safetensors`, `transformer`), el repositorio incluye un fichero de pesos con 49.600 parámetros totales, una cifra compatible con un tensor de configuración o inicialización residual más que con un modelo funcional. El tamaño del repositorio es de 0,0 GB, no tiene pipeline definido, no declara idiomas soportados y acumula 0 descargas y 0 "likes" en el momento de la consulta.
 
 Por tanto, esta ficha debe leerse como la descripción de un artefacto de documentación y no como la de un modelo desplegable. Su relevancia actual es la de material de referencia metodológica para diseñar protocolos de evaluación de prompts, no la de un componente de inferencia.
 
@@ -12,7 +12,7 @@ Por tanto, esta ficha debe leerse como la descripción de un artefacto de docume
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | transformer (etiqueta de HuggingFace; no confirmada en la model card) |
+| Arquitectura | transformer (etiqueta de Hugging Face; no confirmada en la model card) |
 | Parametros totales | 49.600 |
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -86,7 +86,7 @@ No disponible. Este repositorio no es un modelo de lenguaje y no tiene equivalen
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/aaronsking/prompt-engineering
+- Repositorio en Hugging Face: https://huggingface.co/aaronsking/prompt-engineering
 - IBM, guía de prompt engineering (referencia general, no vinculada al repositorio): https://www.ibm.com/think/prompt-engineering
 - IBM, técnicas de prompt engineering (referencia general): https://www.ibm.com/think/topics/prompt-engineering-techniques
 - Google Cloud, qué es el prompt engineering (referencia general): https://cloud.google.com/discover/what-is-prompt-engineering

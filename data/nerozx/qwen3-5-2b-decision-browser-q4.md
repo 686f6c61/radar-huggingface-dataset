@@ -74,10 +74,10 @@ Evaluación sobre el split de eval, N=375, accuracy de la pregunta `target`:
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `nerozx/qwen3.5-2b-decision-browser-q4` | 1,91 B | 262.144 tokens (heredado) | Cabeza de decisión para agente web, 10 opciones máximo | `other` | GGUF en HuggingFace, endpoint `/v1/systemone` |
-| `unsloth/Qwen3.5-2B` (base) | 1,91 B | 262.144 tokens | Modelo conversacional multimodal, vision-lenguaje | no disponible en la información | HuggingFace, Qualcomm AI Hub, LM Studio |
-| `Jev-Style-Qwen3.5-2B-Decision` (vía `coreai-model-zoo`) | ~2 B | no disponible | Decisión tipada en inglés, LoRA fusionada, temperatura plegada en RMSNorm | no disponible | Port a Core AI, HuggingFace |
-| `Qwen/Qwen3.5-2B` (oficial) | 2 B denso | 262.144 tokens | Modelo base multilingüe con encoder de visión, gated delta networks | no disponible en la información | HuggingFace, vLLM Recipes, LM Studio |
+| `nerozx/qwen3.5-2b-decision-browser-q4` | 1,91 B | 262.144 tokens (heredado) | Cabeza de decisión para agente web, 10 opciones máximo | `other` | GGUF en Hugging Face, endpoint `/v1/systemone` |
+| `unsloth/Qwen3.5-2B` (base) | 1,91 B | 262.144 tokens | Modelo conversacional multimodal, vision-lenguaje | no disponible en la información | Hugging Face, Qualcomm AI Hub, LM Studio |
+| `Jev-Style-Qwen3.5-2B-Decision` (vía `coreai-model-zoo`) | ~2 B | no disponible | Decisión tipada en inglés, LoRA fusionada, temperatura plegada en RMSNorm | no disponible | Port a Core AI, Hugging Face |
+| `Qwen/Qwen3.5-2B` (oficial) | 2 B denso | 262.144 tokens | Modelo base multilingüe con encoder de visión, gated delta networks | no disponible en la información | Hugging Face, vLLM Recipes, LM Studio |
 
 Frente al Qwen3.5-2B conversacional, este checkpoint sacrifica generación libre y multilingüismo a cambio de una salida estructurada y calibrada para una única tarea. Frente al port de `coreai-model-zoo`, comparte enfoque de decisión tipada, pero no hay datos públicos comparables de accuracy ni de ECE para establecer una comparación cuantitativa.
 
@@ -97,7 +97,7 @@ Frente al Qwen3.5-2B conversacional, este checkpoint sacrifica generación libre
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nerozx/qwen3.5-2b-decision-browser-q4
+- Modelo en Hugging Face: https://huggingface.co/nerozx/qwen3.5-2b-decision-browser-q4
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-2B
 - Qwen3.5-2B en Qualcomm AI Hub: https://aihub.qualcomm.com/models/qwen3_5_2b
 - Port de decisión Qwen3.5-2B en coreai-model-zoo: https://github.com/john-rocky/coreai-model-zoo/blob/main/models/qwen3.5-2b-decision/README.md

@@ -84,10 +84,10 @@ No se han publicado resultados de benchmarks en la informacion disponible para o
 
 | Modelo | Parametros | Contexto | Accuracy en test (HC3) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ishwarbb23/hw1-hc3-detector | 22,7 M (MiniLM-L6) | 256 tokens | 0,991859 | no disponible | HuggingFace, repo de 0,1 GB |
+| ishwarbb23/hw1-hc3-detector | 22,7 M (MiniLM-L6) | 256 tokens | 0,991859 | no disponible | Hugging Face, repo de 0,1 GB |
 | Linea base del mismo autor (SentenceTransformer congelado + regresion logistica) | 22,7 M | 256 tokens | 0,844901 | no disponible | descrita en la model card, sin pesos publicados |
-| Aishkrish/hw1-hc3-detector | no disponible | no disponible | no disponible | no disponible | HuggingFace (aparicion en busqueda web) |
-| skyyyyks/hw1-hc3-detector | no disponible | no disponible | no disponible | no disponible | HuggingFace (aparicion en busqueda web) |
+| Aishkrish/hw1-hc3-detector | no disponible | no disponible | no disponible | no disponible | Hugging Face (aparicion en busqueda web) |
+| skyyyyks/hw1-hc3-detector | no disponible | no disponible | no disponible | no disponible | Hugging Face (aparicion en busqueda web) |
 | Detector HC3 de Hello-SimpleAI (repo de detectores del autor del corpus) | no disponible | no disponible | no disponible | no disponible | GitHub (Hello-SimpleAI) |
 
 No se dispone de datos verificados de parametros, contexto o rendimiento de las alternativas listadas mas alla de su existencia; se indica "no disponible" en lugar de estimar valores. Los repositorios con el mismo nombre parecen corresponder a variantes del mismo ejercicio y no se han podido caracterizar con la informacion recogida.
@@ -108,10 +108,10 @@ No se dispone de datos verificados de parametros, contexto o rendimiento de las 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ishwarbb23/hw1-hc3-detector
+- Modelo en Hugging Face: https://huggingface.co/ishwarbb23/hw1-hc3-detector
 - Paper de referencia del dataset HC3 (Guo et al., 2023): https://arxiv.org/abs/2301.07597
 - Organizacion Hello-SimpleAI, autora del corpus HC3 y de detectores asociados: https://github.com/Hello-SimpleAI
-- Dataset en HuggingFace: https://huggingface.co/datasets/Hello-SimpleAI/HC3
+- Dataset en Hugging Face: https://huggingface.co/datasets/Hello-SimpleAI/HC3
 - Modelo base: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
 - Variante con el mismo nombre (sin datos verificados): https://huggingface.co/Aishkrish/hw1-hc3-detector
 - Variante con el mismo nombre (sin datos verificados): https://huggingface.co/skyyyyks/hw1-hc3-detector

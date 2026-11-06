@@ -74,8 +74,8 @@ No se han publicado en la información disponible resultados de benchmarks de co
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este checkpoint (Jeesup) | 8.030.261.248 declarados en safetensors; fracción 0,5998 según ficha | no disponible | llama3 | HuggingFace, 0 descargas, 0 likes | Artefacto de investigación con ASR medido; no desplegable como asistente |
-| meta-llama/Meta-Llama-3-8B-Instruct | 8B densos | 8.192 tokens (según el modelo base) | llama3 | HuggingFace, ampliamente distribuido | Modelo de referencia sin comprimir; alineamiento intacto |
+| Este checkpoint (Jeesup) | 8.030.261.248 declarados en safetensors; fracción 0,5998 según ficha | no disponible | llama3 | Hugging Face, 0 descargas, 0 likes | Artefacto de investigación con ASR medido; no desplegable como asistente |
+| meta-llama/Meta-Llama-3-8B-Instruct | 8B densos | 8.192 tokens (según el modelo base) | llama3 | Hugging Face, ampliamente distribuido | Modelo de referencia sin comprimir; alineamiento intacto |
 | Otras variantes comprimidas con SVD-LLM | no disponible | no disponible | no disponible | no disponible | No se han identificado checkpoints comparables en la información proporcionada |
 
 ## Limitaciones y advertencias
@@ -94,6 +94,6 @@ No se han publicado en la información disponible resultados de benchmarks de co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-llama3_8b_instruct_remove_40_seed3_jbbmix_calib
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-llama3_8b_instruct_remove_40_seed3_jbbmix_calib
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
 - Búsqueda web: no se han encontrado enlaces relevantes al modelo; los resultados devueltos corresponden a artículos sobre cuentas de Microsoft y no guardan relación con este checkpoint.

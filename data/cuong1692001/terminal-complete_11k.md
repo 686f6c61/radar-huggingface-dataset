@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Terminal-complete_11k es un ajuste fino (fine-tuning) completo del modelo Qwen/Qwen3-8B, publicado por el usuario cuong1692001 en HuggingFace. Se trata de un modelo de generación de texto de 8.190.735.360 parámetros (8,19 mil millones) entrenado sobre un dataset denominado qwen_data_complete, del que la model card no aporta ninguna descripción, composición ni tamaño en tokens. El nombre del repositorio sugiere un enfoque hacia tareas de terminal o línea de comandos, pero esta interpretación no está confirmada por ninguna documentación oficial del autor.
+Terminal-complete_11k es un ajuste fino (fine-tuning) completo del modelo Qwen/Qwen3-8B, publicado por el usuario cuong1692001 en Hugging Face. Se trata de un modelo de generación de texto de 8.190.735.360 parámetros (8,19 mil millones) entrenado sobre un dataset denominado qwen_data_complete, del que la model card no aporta ninguna descripción, composición ni tamaño en tokens. El nombre del repositorio sugiere un enfoque hacia tareas de terminal o línea de comandos, pero esta interpretación no está confirmada por ninguna documentación oficial del autor.
 
 El interés técnico del modelo es limitado y debe contextualizarse: se trata de un experimento de fine-tuning con licencia "other", sin benchmarks publicados (el model-index aparece con la lista de resultados vacía), sin idiomas declarados y con cero descargas y cero "likes" en el momento de redactar esta ficha. Su relevancia radica, por tanto, en ser un ejemplo reproducible de ajuste completo con LLaMA-Factory sobre una base sólida y bien documentada como Qwen3-8B, más que en aportar capacidades nuevas verificadas.
 
@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicados |
 |---|---|---|---|---|---|
-| Terminal-complete_11k | 8,19 B | No disponible (base: 32.768 nativos / 131.072 con YaRN) | other | HuggingFace, 0 descargas | No |
-| Qwen/Qwen3-8B (base) | 8,19 B | 32.768 nativos / 131.072 con YaRN | Apache 2.0 | HuggingFace, ampliamente utilizado | Sí, publicados por el autor del modelo base |
-| Llama 3.1 8B Instruct | 8,03 B | 131.072 | Llama 3.1 Community License | HuggingFace, ampliamente utilizado | Sí |
-| Gemma 2 9B | 9,24 B | 8.192 | Gemma Terms of Use | HuggingFace, ampliamente utilizado | Sí |
+| Terminal-complete_11k | 8,19 B | No disponible (base: 32.768 nativos / 131.072 con YaRN) | other | Hugging Face, 0 descargas | No |
+| Qwen/Qwen3-8B (base) | 8,19 B | 32.768 nativos / 131.072 con YaRN | Apache 2.0 | Hugging Face, ampliamente utilizado | Sí, publicados por el autor del modelo base |
+| Llama 3.1 8B Instruct | 8,03 B | 131.072 | Llama 3.1 Community License | Hugging Face, ampliamente utilizado | Sí |
+| Gemma 2 9B | 9,24 B | 8.192 | Gemma Terms of Use | Hugging Face, ampliamente utilizado | Sí |
 
 Nota: los datos de contexto y licencia de los modelos comparativos corresponden a sus especificaciones públicas habituales y deben verificarse en sus respectivas model cards. La comparativa de rendimiento no puede completarse porque Terminal-complete_11k no publica ninguna métrica.
 
@@ -94,7 +94,7 @@ Nota: los datos de contexto y licencia de los modelos comparativos corresponden 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cuong1692001/Terminal-complete_11k
+- Modelo en Hugging Face: https://huggingface.co/cuong1692001/Terminal-complete_11k
 - Modelo base Qwen/Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Repositorio de LLaMA-Factory (framework de entrenamiento declarado): https://github.com/hiyouga/LLaMA-Factory
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo: los resultados obtenidos corresponden a páginas de ayuda de YouTube y a hilos de foros sin relación alguna con Terminal-complete_11k, por lo que se descartan.

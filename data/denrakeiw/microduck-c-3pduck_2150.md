@@ -87,7 +87,7 @@ No disponible. La model card no ofrece datos cuantitativos ni referencias a poli
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DenRakEiw/microduck-c-3pduck_2150
+- Hugging Face: https://huggingface.co/DenRakEiw/microduck-c-3pduck_2150
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de retos y entrenamiento: https://github.com/pollen-robotics/microduck-challenges
 - Commit de entrenamiento referenciado: `6aeaf2e96` (rama `denrakeiw` del repositorio anterior)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`facchetti/diotiamo` es un repositorio publicado en HuggingFace por el usuario `facchetti`. En el momento de la consulta no se ha documentado en la informacion disponible ni la arquitectura, ni el numero de parametros, ni la tarea para la que fue entrenado. La ficha del repositorio no declara pipeline de inferencia, idiomas soportados ni licencia, y cuenta con 0 descargas y 1 "like" desde su publicacion el 10 de octubre de 2026.
+`facchetti/diotiamo` es un repositorio publicado en Hugging Face por el usuario `facchetti`. En el momento de la consulta no se ha documentado en la informacion disponible ni la arquitectura, ni el numero de parametros, ni la tarea para la que fue entrenado. La ficha del repositorio no declara pipeline de inferencia, idiomas soportados ni licencia, y cuenta con 0 descargas y 1 "like" desde su publicacion el 10 de octubre de 2026.
 
 El unico dato objetivo mas alla de los metadatos de identidad es el tamano del repositorio, aproximadamente 0,1 GB, junto con el tag `region:us`. Ese volumen es compatible con artefactos de muy diversa naturaleza (un modelo pequeno de menos de 200 millones de parametros en precision completa, un adaptador LoRA, un tokenizador acompanado de configuracion, o un conjunto reducido de pesos cuantizados), por lo que no permite inferir de forma fiable la naturaleza del contenido.
 
@@ -52,7 +52,7 @@ Los siguientes escenarios son hipoteticos y estan condicionados a que la inspecc
 - Prototipado de bajo coste en local: con 0,1 GB de artefactos, el repositorio se descarga y se almacena en cualquier equipo, lo que lo hace adecuado para pruebas exploratorias sin infraestructura dedicada.
 - Fine-tuning como punto de partida: si finalmente se confirma que contiene un modelo base o un adaptador, podria servir como inicializacion para ajuste en dominios concretos, sujeto a la licencia aplicable.
 - Analisis de seguridad de la cadena de suministro: un repositorio sin model card ni licencia declarada es un buen caso de estudio para practicas de auditoria de artefactos (revision de formato de pesos, presencia de codigo ejecutable, procedencia).
-- Docencia sobre publicacion de modelos: utilizado como ejemplo negativo de model card incompleta en formaciones sobre buenas practicas de publicacion en HuggingFace.
+- Docencia sobre publicacion de modelos: utilizado como ejemplo negativo de model card incompleta en formaciones sobre buenas practicas de publicacion en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -74,7 +74,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| facchetti/diotiamo | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| facchetti/diotiamo | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -92,7 +92,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/facchetti/diotiamo
+- Modelo en Hugging Face: https://huggingface.co/facchetti/diotiamo
 - Perfil del autor: https://huggingface.co/facchetti
 - Paper: no disponible
 - Blog o anuncio: no disponible

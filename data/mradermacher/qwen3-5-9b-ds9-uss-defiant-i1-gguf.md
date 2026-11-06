@@ -77,7 +77,7 @@ La comparativa se basa en caracteristicas generales conocidas de los modelos bas
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo: https://huggingface.co/mradermacher/Qwen3.5-9B-DS9-USS-Defiant-i1-GGUF
+- Repositorio Hugging Face de este modelo: https://huggingface.co/mradermacher/Qwen3.5-9B-DS9-USS-Defiant-i1-GGUF
 - Modelo base: https://huggingface.co/nightmedia/Qwen3.5-9B-DS9-USS-Defiant
 - Repositorio estatico de cuantizaciones: https://huggingface.co/mradermacher/Qwen3.5-9B-DS9-USS-Defiant-GGUF
 - Informacion sobre Qwen3.5-9B (fuente externa): https://www.llm-releases.com/models/qwen3-5-9b

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PI0.5 scan-object-right-first (revisión 20260916, experimento E194) es un checkpoint de inferencia para robótica publicado por el usuario Travor278 en HuggingFace, dentro del ecosistema OpenPI. Se trata de un ajuste fino mediante LoRA sobre el modelo base PI0.5, un modelo de visión-lenguaje-acción (VLA) que genera comandos motores a partir de observaciones visuales y una instrucción textual, y que aquí se ha especializado en una tarea concreta de manipulación denominada "scan object right first".
+PI0.5 scan-object-right-first (revisión 20260916, experimento E194) es un checkpoint de inferencia para robótica publicado por el usuario Travor278 en Hugging Face, dentro del ecosistema OpenPI. Se trata de un ajuste fino mediante LoRA sobre el modelo base PI0.5, un modelo de visión-lenguaje-acción (VLA) que genera comandos motores a partir de observaciones visuales y una instrucción textual, y que aquí se ha especializado en una tarea concreta de manipulación denominada "scan object right first".
 
 El artefacto es un checkpoint JAX/Orbax de solo inferencia, de 6,3 GB, entrenado con 10.000 actualizaciones del optimizador sobre el dataset `Shiki42/ctr-scan-object-right-first-20260916`. La configuración empleada es `pi05_putcab_athenb_fullhorizon_mb16_ga1_lora3ep` (nombre histórico que, según el autor, no altera la tarea real), con horizonte de acción 50, 12 dimensiones de articulación (acciones delta más pinzas en absoluto) y máscara de pérdida por relleno temporal. El entrenamiento se ejecutó con batch 16, acumulación de gradiente 1, FSDP1 y semilla 87431, alojando dos experimentos independientes por cada GPU H100.
 
@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks en la información disponible. El p
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|---|
-| pi05-scan-object-right-first E194 (este modelo) | Checkpoint de inferencia PI0.5 con LoRA | no disponible | no disponible | no disponible | HuggingFace, 6,3 GB, solo inferencia | 10.000 actualizaciones, dataset ctr-scan-object-right-first-20260916 |
-| pi05-scan-object-right-first E167 | Checkpoint previo del mismo autor | no disponible | no disponible | no disponible | Repositorio separado en HuggingFace | El autor indica que E194 es independiente de E167 |
+| pi05-scan-object-right-first E194 (este modelo) | Checkpoint de inferencia PI0.5 con LoRA | no disponible | no disponible | no disponible | Hugging Face, 6,3 GB, solo inferencia | 10.000 actualizaciones, dataset ctr-scan-object-right-first-20260916 |
+| pi05-scan-object-right-first E167 | Checkpoint previo del mismo autor | no disponible | no disponible | no disponible | Repositorio separado en Hugging Face | El autor indica que E194 es independiente de E167 |
 | Base PI0.5 en OpenPI | Modelo VLA base | no disponible | no disponible | no disponible | Framework OpenPI | Requerido por separado mediante `PI05_JAX_BASE` |
 | Otros modelos VLA abiertos (por ejemplo, OpenVLA o pi0) | Modelos de visión-lenguaje-acción | no disponible | no disponible | no disponible | Distintos repositorios | No se dispone de métricas comparativas en la información proporcionada |
 
@@ -97,7 +97,7 @@ No se dispone de datos comparativos de rendimiento, parámetros o contexto entre
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Travor278/pi05-scan-object-right-first-data20260916-lora-10k-e194
+- Modelo en Hugging Face: https://huggingface.co/Travor278/pi05-scan-object-right-first-data20260916-lora-10k-e194
 - Dataset de entrenamiento: https://huggingface.co/datasets/Shiki42/ctr-scan-object-right-first-20260916
 - Panel de métricas de entrenamiento (ejecución E194): https://swanlab.cn/@Travor/CTR-PI05-LoRA10k
 - No se han encontrado enlaces adicionales relevantes en la búsqueda web; los resultados obtenidos no están relacionados con el modelo.

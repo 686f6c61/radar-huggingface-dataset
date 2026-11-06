@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`qwen3-critic-rollout-repeat-20261006-checkpoints` es un archivo de checkpoints de investigación publicado por el usuario lhl616 en HuggingFace. No se trata de un modelo listo para usar con `from_pretrained`, sino de una colección de estados intermedios de entrenamiento derivados de Qwen/Qwen3-4B-Base, organizados por experimento (ramas nativas y de learning rate reducido a la mitad, con una nueva semilla de rollout). El repositorio ocupa 83,6 GB e incluye tanto shards originales de actor y crítico en FP32 como exportaciones BF16 separadas.
+`qwen3-critic-rollout-repeat-20261006-checkpoints` es un archivo de checkpoints de investigación publicado por el usuario lhl616 en Hugging Face. No se trata de un modelo listo para usar con `from_pretrained`, sino de una colección de estados intermedios de entrenamiento derivados de Qwen/Qwen3-4B-Base, organizados por experimento (ramas nativas y de learning rate reducido a la mitad, con una nueva semilla de rollout). El repositorio ocupa 83,6 GB e incluye tanto shards originales de actor y crítico en FP32 como exportaciones BF16 separadas.
 
 El interés técnico reside en que documenta un pipeline de aprendizaje por refuerzo de la familia PPO/VERL sobre una base Qwen3-4B, con críticos que no son modelos causales convencionales sino modelos de valor por token (con cabeza escalar o con cabeza HL-Gauss de 101 logits sobre bins en [-1,2; 1,2]). Es material relevante para investigadores que quieran reproducir, auditar o reutilizar estados de entrenamiento RL, no para desarrolladores que busquen un modelo de inferencia estándar.
 
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3-critic-rollout-repeat-20261006-checkpoints | 4B (base) | no disponible | Checkpoints RL (actor/crítico) | Apache-2.0 | HuggingFace, repo de 83,6 GB |
-| Qwen/Qwen3-4B-Base | 4B | no disponible en esta ficha | Modelo causal base | Apache-2.0 (según Qwen) | HuggingFace |
+| qwen3-critic-rollout-repeat-20261006-checkpoints | 4B (base) | no disponible | Checkpoints RL (actor/crítico) | Apache-2.0 | Hugging Face, repo de 83,6 GB |
+| Qwen/Qwen3-4B-Base | 4B | no disponible en esta ficha | Modelo causal base | Apache-2.0 (según Qwen) | Hugging Face |
 | Otros checkpoints VERL/PPO sobre Qwen3-4B | 4B | no disponible | Checkpoints RL | variable | no disponible en la información proporcionada |
 
 ## Limitaciones y advertencias
@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lhl616/qwen3-critic-rollout-repeat-20261006-checkpoints
+- Hugging Face: https://huggingface.co/lhl616/qwen3-critic-rollout-repeat-20261006-checkpoints
 - Modelo base citado: https://huggingface.co/Qwen/Qwen3-4B-Base
 - VERL (framework de entrenamiento RL mencionado): no disponible en la información proporcionada
 - Paper, blog, repositorio o demo adicionales: no disponibles en la información proporcionada

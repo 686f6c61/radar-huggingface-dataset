@@ -81,7 +81,7 @@ La comparación cuantitativa de rendimiento no está disponible: no hay métrica
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/value-productions/quickmt-es-en-int8
+- Repositorio Hugging Face: https://huggingface.co/value-productions/quickmt-es-en-int8
 - Modelo base: https://huggingface.co/quickmt/quickmt-es-en
 - CTranslate2 (runtime): https://github.com/OpenNMT/CTranslate2
 - Aplicación Yaku Translate: no disponible en la información proporcionada.

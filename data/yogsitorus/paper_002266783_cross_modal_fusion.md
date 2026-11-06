@@ -53,7 +53,7 @@ No disponible. No se trata de un modelo, por lo que no se puede comparar con alt
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yogsitorus/paper_002266783_cross_modal_fusion
+- Repositorio Hugging Face: https://huggingface.co/yogsitorus/paper_002266783_cross_modal_fusion
 - Referencias externas relacionadas con fusión cross-modal (no afiliadas a este repositorio):
   - GaussianFusion (arXiv): https://arxiv.org/abs/2607.00746
   - Hybrid cross-modality fusion network for medical image segmentation (ScienceDirect): https://www.sciencedirect.com/science/article/pii/S0952197625000739

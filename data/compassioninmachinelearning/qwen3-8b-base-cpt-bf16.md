@@ -80,11 +80,11 @@ Estas cifras no son comparables con métricas de benchmarks y, según la propia 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3-8B-Base-CPT-BF16 (este) | 8,19 mil millones | No disponible en la informacion proporcionada | Apache-2.0 | HuggingFace, 4 revisiones de epoca, BF16 en safetensors |
-| Qwen/Qwen3-8B-Base (origen) | 8,19 mil millones | 32.768 tokens nativos, ampliable con YaRN (dato publico del fabricante) | Apache-2.0 | HuggingFace, pesos BF16 |
-| Qwen/Qwen3-8B (instruct) | 8,2 mil millones aprox. | 32.768 tokens nativos, ampliable con YaRN (dato publico del fabricante) | Apache-2.0 | HuggingFace, con alineamiento por instrucciones |
-| Llama-3.1-8B-Instruct | 8,03 mil millones aprox. | 128.000 tokens (dato publico del fabricante) | Llama 3.1 Community License | HuggingFace |
-| Mistral-7B-v0.3 | 7,25 mil millones aprox. | 32.000 tokens (dato publico del fabricante) | Apache-2.0 | HuggingFace |
+| Qwen3-8B-Base-CPT-BF16 (este) | 8,19 mil millones | No disponible en la informacion proporcionada | Apache-2.0 | Hugging Face, 4 revisiones de epoca, BF16 en safetensors |
+| Qwen/Qwen3-8B-Base (origen) | 8,19 mil millones | 32.768 tokens nativos, ampliable con YaRN (dato publico del fabricante) | Apache-2.0 | Hugging Face, pesos BF16 |
+| Qwen/Qwen3-8B (instruct) | 8,2 mil millones aprox. | 32.768 tokens nativos, ampliable con YaRN (dato publico del fabricante) | Apache-2.0 | Hugging Face, con alineamiento por instrucciones |
+| Llama-3.1-8B-Instruct | 8,03 mil millones aprox. | 128.000 tokens (dato publico del fabricante) | Llama 3.1 Community License | Hugging Face |
+| Mistral-7B-v0.3 | 7,25 mil millones aprox. | 32.000 tokens (dato publico del fabricante) | Apache-2.0 | Hugging Face |
 
 Los datos de los modelos comparados proceden de su documentación pública y no se han verificado en la búsqueda web realizada, que no devolvió resultados relevantes. No existen benchmarks publicados que permitan comparar el rendimiento de esta revisión de CPT frente a las alternativas, por lo que la comparación es estructural (tamaño, contexto, licencia y formato de distribución) y no de calidad.
 
@@ -105,7 +105,7 @@ Los datos de los modelos comparados proceden de su documentación pública y no 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CompassioninMachineLearning/Qwen3-8B-Base-CPT-BF16
+- Modelo en Hugging Face: https://huggingface.co/CompassioninMachineLearning/Qwen3-8B-Base-CPT-BF16
 - Revisión epoch-1: https://huggingface.co/CompassioninMachineLearning/Qwen3-8B-Base-CPT-BF16/tree/epoch-1
 - Revisión epoch-2: https://huggingface.co/CompassioninMachineLearning/Qwen3-8B-Base-CPT-BF16/tree/epoch-2
 - Revisión epoch-3: https://huggingface.co/CompassioninMachineLearning/Qwen3-8B-Base-CPT-BF16/tree/epoch-3

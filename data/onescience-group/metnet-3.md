@@ -74,7 +74,7 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OneScience-Group/metnet-3
+- Hugging Face: https://huggingface.co/OneScience-Group/metnet-3
 - Paper: https://arxiv.org/abs/2306.06079
 - Repositorio Gitee de OneScience: https://gitee.com/onescience-ai/onescience
 - Repositorio de skills de OneScience: https://gitee.com/onescience-ai

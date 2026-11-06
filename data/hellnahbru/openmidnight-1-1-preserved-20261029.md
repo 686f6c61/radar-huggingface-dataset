@@ -81,7 +81,7 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hellnahbru/OpenMidnight-1.1-preserved-20261029
+- Hugging Face: https://huggingface.co/hellnahbru/OpenMidnight-1.1-preserved-20261029
 - MedARC: https://www.medarc.ai/
 - Sophont: https://sophont.med/
 - Paper: anunciado como "coming soon", no disponible en la información proporcionada.

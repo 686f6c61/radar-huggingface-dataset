@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SE Primer Destek Riski v2 es un modelo de clasificacion tabular muy compacto, publicado por el usuario serkan12324 en HuggingFace, que predice si un estudiante necesita apoyo pedagogico adicional en una escena educativa concreta a partir de su comportamiento de decision. No es un modelo de lenguaje: se trata de una regresion logistica sobre seis caracteristicas tabulares estandarizadas, exportada a formato ONNX para inferencia ligera. Su relevancia es acotada y de nicho: sirve como componente de un sistema de tutoria adaptativa denominado SE Primer, donde una prediccion positiva desactiva la presion de tiempo y activa pistas socraticas mas profundas y explicaciones tecnicas detalladas.
+SE Primer Destek Riski v2 es un modelo de clasificacion tabular muy compacto, publicado por el usuario serkan12324 en Hugging Face, que predice si un estudiante necesita apoyo pedagogico adicional en una escena educativa concreta a partir de su comportamiento de decision. No es un modelo de lenguaje: se trata de una regresion logistica sobre seis caracteristicas tabulares estandarizadas, exportada a formato ONNX para inferencia ligera. Su relevancia es acotada y de nicho: sirve como componente de un sistema de tutoria adaptativa denominado SE Primer, donde una prediccion positiva desactiva la presion de tiempo y activa pistas socraticas mas profundas y explicaciones tecnicas detalladas.
 
 El modelo se ha entrenado con datos sinteticos generados mediante una regla fija con semilla 30107, y el propio autor advierte que la version publicada no deberia considerarse valida sin al menos 15 sesiones reales anonimizadas. El repositorio es practicamente vacio en terminos de tamano (0.0 GB), lo que confirma que se trata de un artefacto de inferencia ONNX de muy pocos parametros, no de un transformer.
 
@@ -77,5 +77,5 @@ No disponible. La informacion proporcionada no identifica modelos comparables de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/serkan12324/se-primer-v2
+- Modelo en Hugging Face: https://huggingface.co/serkan12324/se-primer-v2
 - No se han encontrado en la informacion proporcionada enlaces adicionales a papers, blogs, repositorios de codigo o demos.

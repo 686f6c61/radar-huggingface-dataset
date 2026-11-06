@@ -89,7 +89,7 @@ Tiel supera a Nail en conversacion multi-turno (67.2 vs 60.5) pero pierde en MML
 
 ## Enlaces
 
-- Repositorio HuggingFace (este modelo): https://huggingface.co/peculiar-ragdoll/Tiel-Coder-35B-A3B-MLX-oQ6e
+- Repositorio Hugging Face (este modelo): https://huggingface.co/peculiar-ragdoll/Tiel-Coder-35B-A3B-MLX-oQ6e
 - Version con MTP head: https://huggingface.co/peculiar-ragdoll/Tiel-Coder-35B-A3B-MLX-oQ6e-MTP
 - Version GGUF (benchmarks medidos): https://huggingface.co/peculiar-ragdoll/Tiel-Coder-35B-A3B-GGUF
 - Version oQ4e (menor VRAM): https://huggingface.co/peculiar-ragdoll/Tiel-Coder-35B-A3B-MLX-oQ4e

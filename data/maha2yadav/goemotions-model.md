@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Maha2yadav/goemotions-model es un repositorio publicado en HuggingFace por el usuario Maha2yadav bajo licencia Apache 2.0. En el momento de redactar esta ficha, la model card no contiene más que la declaración de licencia: no hay descripción del modelo, ni arquitectura declarada, ni recuento de parámetros, ni ventana de contexto, ni idiomas soportados, ni artefactos documentados. El repositorio registra cero descargas y cero likes, y no tiene pipeline declarado.
+Maha2yadav/goemotions-model es un repositorio publicado en Hugging Face por el usuario Maha2yadav bajo licencia Apache 2.0. En el momento de redactar esta ficha, la model card no contiene más que la declaración de licencia: no hay descripción del modelo, ni arquitectura declarada, ni recuento de parámetros, ni ventana de contexto, ni idiomas soportados, ni artefactos documentados. El repositorio registra cero descargas y cero likes, y no tiene pipeline declarado.
 
 El identificador "goemotions-model" sugiere, sin confirmación alguna por parte del autor, una posible relación con tareas de clasificación de emociones. Se trata de una hipótesis basada exclusivamente en el nombre del repositorio y no debe tomarse como un dato verificado; ninguna sección de esta ficha puede construirse sobre ella.
 
@@ -89,6 +89,6 @@ No disponible. No se han podido identificar en la información proporcionada mod
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Maha2yadav/goemotions-model
+- Repositorio en Hugging Face: https://huggingface.co/Maha2yadav/goemotions-model
 - Texto de la licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
 - Búsqueda web realizada: no se ha encontrado ningún paper, blog, repositorio de código ni demo asociados al modelo. Los resultados devueltos corresponden a páginas genéricas de Google (google.com, images.google.com, photos.google.com, classroom.google.com) y no guardan relación con el modelo.

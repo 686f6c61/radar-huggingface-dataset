@@ -96,8 +96,8 @@ La tabla siguiente compara las dos variantes de la familia NeoMME para las que s
 
 | Modelo | Parametros | Contexto | ViDoRe v1 (nDCG@5, late) | BEIR-15 (nDCG@10, late) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| NeoMME-800M-Retriever | 793,9 M | 16.384 tokens | 0,8744 | 0,5126 | Apache 2.0 | HuggingFace (Hcompany) |
-| NeoMME-260M | no disponible (aprox. 260 M por nomenclatura) | no disponible | 0,8598 | 0,4881 | no disponible | HuggingFace (Hcompany) |
+| NeoMME-800M-Retriever | 793,9 M | 16.384 tokens | 0,8744 | 0,5126 | Apache 2.0 | Hugging Face (Hcompany) |
+| NeoMME-260M | no disponible (aprox. 260 M por nomenclatura) | no disponible | 0,8598 | 0,4881 | no disponible | Hugging Face (Hcompany) |
 | ColPali / ColQwen | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La diferencia entre NeoMME-800M y NeoMME-260M es moderada pero consistente: 0,0146 puntos de nDCG@5 en ViDoRe v1 y 0,0245 en BEIR-15 en configuracion late interaction, a cambio de triplicar aproximadamente el numero de parametros.
@@ -113,15 +113,15 @@ La diferencia entre NeoMME-800M y NeoMME-260M es moderada pero consistente: 0,01
 - Sesgos: no se documenta ninguna evaluacion de sesgos en la informacion disponible. Al ser un modelo de recuperacion, existe riesgo de infrarrepresentacion de ciertos documentos o perspectivas si el corpus de ajuste no es equilibrado, pero no hay datos publicados al respecto.
 - Licencia Apache 2.0: permite uso comercial, modificacion y redistribucion, con obligacion de conservar el aviso de licencia y de atribucion. No impone restricciones de uso adicionales conocidas.
 - Dependencia de version: la puntuacion con MeanMaxSim exige `sentence-transformers>=6.0.0`, lo que puede complicar la integracion en entornos con dependencias fijadas antiguas.
-- Los identificadores de arXiv (2609.01657) y las fechas de creacion y actualizacion del repositorio (agosto y septiembre de 2026) provienen de los metadatos de HuggingFace; conviene verificarlos antes de citarlos en publicaciones.
+- Los identificadores de arXiv (2609.01657) y las fechas de creacion y actualizacion del repositorio (agosto y septiembre de 2026) provienen de los metadatos de Hugging Face; conviene verificarlos antes de citarlos en publicaciones.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Hcompany/NeoMME-800M-Retriever
+- Modelo en Hugging Face: https://huggingface.co/Hcompany/NeoMME-800M-Retriever
 - Modelo base: https://huggingface.co/Hcompany/NeoMME-800M
 - Variante ST dense: https://huggingface.co/Hcompany/NeoMME-800M-Retriever-ST-dense
 - Variante ST late-interaction: https://huggingface.co/Hcompany/NeoMME-800M-Retriever-ST-late
-- Coleccion NeoMME en HuggingFace: https://hf.co/collections/Hcompany/neomme
+- Coleccion NeoMME en Hugging Face: https://hf.co/collections/Hcompany/neomme
 - Documentacion del modelo en transformers: https://huggingface.co/docs/transformers/en/model_doc/neomme
 - Paper (arXiv:2609.01657): https://arxiv.org/abs/2609.01657
 - Notebooks de ejemplo sobre recuperacion de documentos visuales: https://github.com/tonywu71/colpali-cookbooks

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-distilgpt2-finetuned-wikitext2 es un ajuste fino del modelo distilgpt2, publicado por el usuario 3809ksdfh en HuggingFace. Se trata de un modelo de generacion de texto de tipo transformer decoder-only, con 81.912.576 parametros totales, derivado de la destilacion de GPT-2 que OpenAI libero y que la comunidad mantiene como referencia de modelos pequenos. El autor no documenta el corpus de entrenamiento en la model card (aparece como "unknown dataset"), aunque el propio nombre del repositorio apunta a WikiText-2.
+distilgpt2-finetuned-wikitext2 es un ajuste fino del modelo distilgpt2, publicado por el usuario 3809ksdfh en Hugging Face. Se trata de un modelo de generacion de texto de tipo transformer decoder-only, con 81.912.576 parametros totales, derivado de la destilacion de GPT-2 que OpenAI libero y que la comunidad mantiene como referencia de modelos pequenos. El autor no documenta el corpus de entrenamiento en la model card (aparece como "unknown dataset"), aunque el propio nombre del repositorio apunta a WikiText-2.
 
 El modelo resuelve un caso de uso muy acotado: generacion de texto autoregresiva de bajo coste computacional. Con menos de 82 millones de parametros, es ejecutable en CPU y en cualquier GPU de consumo, lo que lo hace util para experimentacion, prototipado rapido de pipelines de generacion, pruebas de fine-tuning y docencia. No compite con modelos actuales de razonamiento ni de codigo: su valor esta en el coste casi nulo de inferencia y en su licencia Apache 2.0, permisiva para uso comercial.
 
@@ -22,7 +22,7 @@ La relevancia de esta ficha es limitada pero concreta: el repositorio presenta a
 | Formato de pesos | safetensors (biblioteca transformers); repositorio de 8,2 GB, compatible con `text-generation-inference` y `endpoints_compatible` |
 | Tokenizer | no documentado en la model card; heredado del modelo base (BPE de GPT-2, vocabulario de 50257 tokens) |
 | Modelo base | distilgpt2 (distilbert/distilgpt2) |
-| Fecha de publicacion | 13 de octubre de 2026 (metadatos de HuggingFace); ultima actualizacion 14 de octubre de 2026 |
+| Fecha de publicacion | 13 de octubre de 2026 (metadatos de Hugging Face); ultima actualizacion 14 de octubre de 2026 |
 
 ## Arquitectura y entrenamiento
 
@@ -78,10 +78,10 @@ La model card no especifica la composicion del conjunto de evaluacion, el numero
 
 | Modelo | Parametros | Contexto | Perdida de validacion declarada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| 3809ksdfh/distilgpt2-finetuned-wikitext2 | 81,9 M | 1024 tokens | 1,6932 | Apache 2.0 | HuggingFace, 0 descargas |
-| distilgpt2 (modelo base) | 81,9 M | 1024 tokens | no disponible en esta comparativa | Apache 2.0 | HuggingFace, ampliamente utilizado |
-| rsl-ai/distilgpt2-finetuned-wikitext2 | 81,9 M (mismo base) | 1024 tokens | 3,6141 | no disponible en los resultados de busqueda | HuggingFace |
-| gpt2 (modelo del que deriva distilgpt2) | 124 M | 1024 tokens | no disponible en esta comparativa | MIT | HuggingFace, referencia de la comunidad |
+| 3809ksdfh/distilgpt2-finetuned-wikitext2 | 81,9 M | 1024 tokens | 1,6932 | Apache 2.0 | Hugging Face, 0 descargas |
+| distilgpt2 (modelo base) | 81,9 M | 1024 tokens | no disponible en esta comparativa | Apache 2.0 | Hugging Face, ampliamente utilizado |
+| rsl-ai/distilgpt2-finetuned-wikitext2 | 81,9 M (mismo base) | 1024 tokens | 3,6141 | no disponible en los resultados de busqueda | Hugging Face |
+| gpt2 (modelo del que deriva distilgpt2) | 124 M | 1024 tokens | no disponible en esta comparativa | MIT | Hugging Face, referencia de la comunidad |
 
 La comparacion con `rsl-ai/distilgpt2-finetuned-wikitext2` es la mas directa, porque se trata de otro ajuste fino del mismo modelo base y con el mismo nombre de repositorio. La perdida de validacion declarada por este modelo (1,6932) es inferior a la de aquel (3,6141), pero no hay garantia de que ambos se hayan evaluado sobre el mismo conjunto ni con el mismo preprocesado, por lo que la comparacion debe tomarse con cautela. Frente a gpt2, distilgpt2 y sus derivados sacrifican calidad de generacion a cambio de reducir a la mitad el coste de inferencia y el numero de capas.
 
@@ -101,7 +101,7 @@ La comparacion con `rsl-ai/distilgpt2-finetuned-wikitext2` es la mas directa, po
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/3809ksdfh/distilgpt2-finetuned-wikitext2
+- Modelo en Hugging Face: https://huggingface.co/3809ksdfh/distilgpt2-finetuned-wikitext2
 - Modelo base distilgpt2: https://huggingface.co/distilgpt2
 - Variante con el mismo nombre de otro autor: https://huggingface.co/rsl-ai/distilgpt2-finetuned-wikitext2
 - Ficha en AIBase Models: https://model.aibase.com/models/details/1924737496940548096

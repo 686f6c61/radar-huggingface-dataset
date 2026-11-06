@@ -70,11 +70,11 @@ No se dispone de información sobre otros transcoders comparables fuera del conj
 - No se ha publicado información sobre sesgos o alucinaciones, pero al ser un modelo no generativo, estos conceptos no aplican directamente.
 - La licencia no está especificada, por lo que se desconoce si permite uso comercial o modificaciones.
 - El modelo está fijado a un checkpoint concreto del modelo base; cualquier cambio en el modelo base invalidaría la correspondencia.
-- La carga requiere la librería específica del autor (`src.transcoder.source`), que no está disponible en el repositorio de HuggingFace (solo se menciona en la model card).
+- La carga requiere la librería específica del autor (`src.transcoder.source`), que no está disponible en el repositorio de Hugging Face (solo se menciona en la model card).
 - El tamaño del repo es 0.0 GB, lo que sugiere que los pesos podrían no estar incluidos o ser extremadamente pequeños; verificar antes de usar.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/itzPotato/transcoder-bilinear-1layer-seed2-layer0)
+- [Modelo en Hugging Face](https://huggingface.co/itzPotato/transcoder-bilinear-1layer-seed2-layer0)
 - [Modelo base aritmético bilineal](https://huggingface.co/itzPotato/arithmetic-bilinear-1layer-seed2)
-- [Perfil del autor en HuggingFace](https://huggingface.co/itzPotato/models)
+- [Perfil del autor en Hugging Face](https://huggingface.co/itzPotato/models)

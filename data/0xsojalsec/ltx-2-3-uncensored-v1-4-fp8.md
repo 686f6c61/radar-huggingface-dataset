@@ -109,7 +109,7 @@ Frente a otros generadores de vídeo abiertos de la misma categoría (por ejempl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/0xSojalSec/LTX-2.3-uncensored-v1.4-FP8
+- Modelo en Hugging Face: https://huggingface.co/0xSojalSec/LTX-2.3-uncensored-v1.4-FP8
 - Modelo base oficial: https://huggingface.co/Lightricks/LTX-2.3
 - Base del ajuste NSFW: https://huggingface.co/TenStrip/LTX2.3-10Eros
 - LoRA de destilación DMD: https://huggingface.co/TenStrip/LTX2.3_DMD_Lora

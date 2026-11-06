@@ -86,8 +86,8 @@ No se dispone de datos de rendimiento del 8B para una comparativa directa con ot
 
 ## Enlaces
 
-- Repositorio de HuggingFace (BrainForge): https://huggingface.co/BrainForge/Ministral-3-8B-Reasoning-2512
-- Repositorio oficial de HuggingFace (Mistral AI): https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512
+- Repositorio de Hugging Face (BrainForge): https://huggingface.co/BrainForge/Ministral-3-8B-Reasoning-2512
+- Repositorio oficial de Hugging Face (Mistral AI): https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512
 - Version GGUF oficial: https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512-GGUF
 - Documentacion de Mistral: https://docs.mistral.ai/models/ministral-3-8b-25-12
 - Paper del modelo: https://arxiv.org/abs/2601.08584

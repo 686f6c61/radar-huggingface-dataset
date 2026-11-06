@@ -20,7 +20,7 @@ Es relevante ahora por dos motivos: primero, porque permite sintesis de voz mult
 | Idiomas soportados | 83 idiomas declarados en la model card, entre ellos zh, en, ja, ko, es, pt, ar, ru, fr, de, it, hi, vi, th, tr, nl, pl, sv, fi, he, uk, id, eu, ca, gl, cy y gaélico-escoces (gd no listado; si fo, nn, br, mi, sn, yo, jw) |
 | Licencia | fish-audio-community-license-v1.0 (licencia de comunidad, con restricciones de uso) |
 | Formato de pesos | Pesos MLX para la libreria mlx-audio (el contenedor exacto no se especifica en la model card) |
-| Tamano en disco | 18,5 GB (19,8 GB de repositorio en HuggingFace) |
+| Tamano en disco | 18,5 GB (19,8 GB de repositorio en Hugging Face) |
 | Memoria pico en generacion | 22,5-24 GB |
 | Idioma de la interfaz / muestreo | Salida de audio a 44,1 kHz |
 
@@ -88,10 +88,10 @@ No se dispone de comparativas con otros sistemas TTS de la misma categoria en la
 
 | Modelo | Tipo | Tamano | Calidad medida (WER / similitud / UTMOS) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mlx-community/fish-audio-drama-3-3bit | MLX, expertos 3 bits, densas 8 bits | 18,5 GB en disco, 22,5-24 GB pico | 1,4 % / 0,610 / 4,04 (ingles, 20 clips) | Fish Audio Community License v1.0 | HuggingFace, uso desde `main` de mlx-audio |
-| mlx-community/fish-audio-drama-3-4bit | MLX, expertos 4 bits | 22 GB | 2,5 % / 0,619 / 3,92 (fila "4 / 8" del barrido) | Fish Audio Community License v1.0 | HuggingFace |
-| mlx-community/fish-audio-drama-3-bf16 | MLX, precision completa | 67 GB | 1,6 % / 0,625 / 3,92 (fila "8 / 8" del barrido) | Fish Audio Community License v1.0 | HuggingFace |
-| fishaudio/drama-3 | Modelo original en formato nativo | no disponible | no disponible | Fish Audio Community License v1.0 | HuggingFace |
+| mlx-community/fish-audio-drama-3-3bit | MLX, expertos 3 bits, densas 8 bits | 18,5 GB en disco, 22,5-24 GB pico | 1,4 % / 0,610 / 4,04 (ingles, 20 clips) | Fish Audio Community License v1.0 | Hugging Face, uso desde `main` de mlx-audio |
+| mlx-community/fish-audio-drama-3-4bit | MLX, expertos 4 bits | 22 GB | 2,5 % / 0,619 / 3,92 (fila "4 / 8" del barrido) | Fish Audio Community License v1.0 | Hugging Face |
+| mlx-community/fish-audio-drama-3-bf16 | MLX, precision completa | 67 GB | 1,6 % / 0,625 / 3,92 (fila "8 / 8" del barrido) | Fish Audio Community License v1.0 | Hugging Face |
+| fishaudio/drama-3 | Modelo original en formato nativo | no disponible | no disponible | Fish Audio Community License v1.0 | Hugging Face |
 
 Aviso metodologico: salvo la fila del modelo de 3 bits, las metricas de calidad de la tabla provienen del barrido del autor en un port independiente a MLX, no del mismo runtime, segun se indica en su propia model card.
 
@@ -110,14 +110,14 @@ Aviso metodologico: salvo la fila del modelo de 3 bits, las metricas de calidad 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mlx-community/fish-audio-drama-3-3bit
+- Modelo en Hugging Face: https://huggingface.co/mlx-community/fish-audio-drama-3-3bit
 - Modelo base: https://huggingface.co/fishaudio/drama-3
 - Variante 4 bits: https://huggingface.co/mlx-community/fish-audio-drama-3-4bit
 - Variante bf16: https://huggingface.co/mlx-community/fish-audio-drama-3-bf16
 - Repositorio mlx-audio: https://github.com/Blaizzy/mlx-audio
 - Pull request con el soporte de Drama 3: https://github.com/Blaizzy/mlx-audio/pull/1018
 - Documentacion del modelo en mlx-audio: https://github.com/Blaizzy/mlx-audio/blob/main/docs/models/tts/fish-drama3.md
-- Fichero de licencia del repositorio: LICENSE (dentro del repositorio de HuggingFace)
+- Fichero de licencia del repositorio: LICENSE (dentro del repositorio de Hugging Face)
 - Pagina de MLX (framework de Apple): https://mlx-framework.org/
 - Repositorio de MLX: https://github.com/ml-explore/mlx
 - MLX en Apple Open Source: https://opensource.apple.com/projects/mlx/

@@ -89,6 +89,6 @@ No se dispone de datos de rendimiento comparativos entre estas variantes en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-q32_svdllm_r30
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-q32_svdllm_r30
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-32B-Instruct
 - No se han encontrado en la información proporcionada enlaces a papers, blogs, repositorios de código ni demos adicionales.

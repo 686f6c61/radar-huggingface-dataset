@@ -2,9 +2,9 @@
 
 ## Resumen
 
-IrohXu/prostreamer-E4B-pretrain es un ajuste fino (finetune) del modelo google/gemma-4-E4B-it, publicado por el usuario IrohXu en HuggingFace. Por las etiquetas del repositorio (streaming, audio-visual, egocentric, proactive-assistant), el modelo esta orientado a tareas de asistencia proactiva en entornos de streaming audiovisual y vision egocentrica, es decir, procesamiento continuo de audio y video desde la perspectiva del usuario. Se distribuye como un checkpoint de preentrenamiento o ajuste intermedio (sufijo "pretrain") sobre la base instructiva de Gemma 4 E4B.
+IrohXu/prostreamer-E4B-pretrain es un ajuste fino (finetune) del modelo google/gemma-4-E4B-it, publicado por el usuario IrohXu en Hugging Face. Por las etiquetas del repositorio (streaming, audio-visual, egocentric, proactive-assistant), el modelo esta orientado a tareas de asistencia proactiva en entornos de streaming audiovisual y vision egocentrica, es decir, procesamiento continuo de audio y video desde la perspectiva del usuario. Se distribuye como un checkpoint de preentrenamiento o ajuste intermedio (sufijo "pretrain") sobre la base instructiva de Gemma 4 E4B.
 
-El modelo hereda la arquitectura y las capacidades del modelo base google/gemma-4-E4B-it, del que no se proporcionan especificaciones detalladas en la informacion disponible. El repositorio ocupa 8,0 GB, lo que es coherente con un modelo de aproximadamente 4 mil millones de parametros en precision de 16 bits, aunque este dato no se confirma explicitamente. La licencia es la Gemma License de Google, y el acceso esta restringido: es necesario aceptar las condiciones en HuggingFace para descargar los pesos.
+El modelo hereda la arquitectura y las capacidades del modelo base google/gemma-4-E4B-it, del que no se proporcionan especificaciones detalladas en la informacion disponible. El repositorio ocupa 8,0 GB, lo que es coherente con un modelo de aproximadamente 4 mil millones de parametros en precision de 16 bits, aunque este dato no se confirma explicitamente. La licencia es la Gemma License de Google, y el acceso esta restringido: es necesario aceptar las condiciones en Hugging Face para descargar los pesos.
 
 La relevancia de este modelo radica en su enfoque hacia asistentes proactivos que procesan flujos continuos de audio y video en primera persona, un nicho emergente dentro de los modelos multimodales. No obstante, la ausencia de documentacion tecnica, benchmarks e informacion sobre el dataset de entrenamiento limita seriamente su evaluacion rigurosa; a fecha de la informacion disponible, el repositorio no registra descargas ni interacciones.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Modelo | Parametros | Contexto | Licencia | Acceso | Notas |
 |---|---|---|---|---|---|
 | IrohXu/prostreamer-E4B-pretrain | no disponible (~4B estimado) | no disponible | Gemma License | Restringido (gated) | Finetune orientado a streaming audiovisual egocentrico |
-| google/gemma-4-E4B-it | no disponible | no disponible | Gemma License | Publico en HuggingFace | Modelo base instructivo del que deriva |
+| google/gemma-4-E4B-it | no disponible | no disponible | Gemma License | Publico en Hugging Face | Modelo base instructivo del que deriva |
 | Alternativas multimodales de tamano similar | no disponible | no disponible | no disponible | no disponible | No se dispone de datos para una comparacion rigurosa |
 
 No se dispone de informacion suficiente para comparar este modelo con alternativas de la misma categoria en terminos de rendimiento o contexto.
@@ -74,7 +74,7 @@ No se dispone de informacion suficiente para comparar este modelo con alternativ
 
 - Documentacion practicamente inexistente: no hay model card detallada, benchmarks ni descripcion del dataset de entrenamiento, lo que impide evaluar su calidad real.
 - Checkpoint de preentrenamiento: el sufijo "pretrain" sugiere que no es un modelo final alineado; puede producir salidas incoherentes o no seguir instrucciones de forma fiable.
-- Acceso restringido: requiere aceptar las condiciones de la Gemma License en HuggingFace, lo que anade friccion para su uso y distribucion.
+- Acceso restringido: requiere aceptar las condiciones de la Gemma License en Hugging Face, lo que anade friccion para su uso y distribucion.
 - Licencia Gemma: impone restricciones de uso comercial y obligaciones de atribucion; es necesario revisar los terminos de uso prohibido de Google antes de desplegarlo en produccion.
 - Riesgo de alucinacion: inherente a los modelos de lenguaje; sin datos de alineacion no puede acotarse.
 - Sesgos: no documentados, pero heredables del corpus de entrenamiento del modelo base.
@@ -84,6 +84,6 @@ No se dispone de informacion suficiente para comparar este modelo con alternativ
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/IrohXu/prostreamer-E4B-pretrain
+- Repositorio en Hugging Face: https://huggingface.co/IrohXu/prostreamer-E4B-pretrain
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Terminos de la Gemma License: https://ai.google.dev/gemma/terms

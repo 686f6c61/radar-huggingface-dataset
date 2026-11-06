@@ -94,7 +94,7 @@ Paradee se sitúa como la alternativa más pequeña en disco del grupo y la segu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TechnoBaptist/Paradee-8M-v1.0
+- Modelo en Hugging Face: https://huggingface.co/TechnoBaptist/Paradee-8M-v1.0
 - Artículo (paper): https://huggingface.co/papers/2610.06817
 - Repositorio de código, entrenamiento y paquete Python: https://github.com/sahilmahendrakar/paradee
 - Modelo profesor Kokoro-82M: https://huggingface.co/hexgrad/Kokoro-82M

@@ -71,7 +71,7 @@ No se dispone de información suficiente para una comparativa directa con otras 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RedHatAI/Muse-Glimmer-30B-FP8-block
+- Modelo en Hugging Face: https://huggingface.co/RedHatAI/Muse-Glimmer-30B-FP8-block
 - Modelo base: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Guía de uso con vLLM (recetas): https://recipes.vllm.ai/meta-models/Muse-Glimmer-30B
 - Repo de GitHub sobre Muse Glimmer: https://github.com/cobusgreyling/Muse-Glimmer

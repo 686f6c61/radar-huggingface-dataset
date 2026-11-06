@@ -79,7 +79,7 @@ La comparativa con otros modelos de vídeo de código abierto (LTX-2.3, LTX-2.5)
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LokkenJP/10Eros_Max_optimized_w4a8_exp_learned
+- Repositorio Hugging Face: https://huggingface.co/LokkenJP/10Eros_Max_optimized_w4a8_exp_learned
 - Workflow de ejemplo (dos pasadas): https://huggingface.co/LokkenJP/10Eros_Max_optimized_w4a8_exp_learned/tree/main/SampleWorkFlowTwoPassOptimized
 - Licencia MiniMax H3: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE
 - Modelo base (TenStrip/10Eros-Max): https://huggingface.co/TenStrip/10Eros-Max

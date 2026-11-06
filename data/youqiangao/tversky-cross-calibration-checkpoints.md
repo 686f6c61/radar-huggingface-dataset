@@ -66,6 +66,6 @@ No disponible. Este repositorio no es un modelo de segmentación de última gene
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/youqiangao/tversky-cross-calibration-checkpoints
+- Repositorio de Hugging Face: https://huggingface.co/youqiangao/tversky-cross-calibration-checkpoints
 - Código de reproducción en GitHub: https://github.com/youqiangao/tversky-cross-calibration
 - README del repositorio de código: https://github.com/youqiangao/tversky-cross-calibration/blob/main/README.md

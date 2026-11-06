@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`aleatorydialogue/stmodels` es un repositorio alojado en HuggingFace por el usuario aleatorydialogue, publicado bajo licencia Apache 2.0. En el momento de la consulta, el repositorio no dispone de pipeline declarado, no especifica idiomas soportados y acumula cero descargas y cero "likes", lo que indica que se trata de una publicacion reciente y practicamente sin adopcion por parte de la comunidad.
+`aleatorydialogue/stmodels` es un repositorio alojado en Hugging Face por el usuario aleatorydialogue, publicado bajo licencia Apache 2.0. En el momento de la consulta, el repositorio no dispone de pipeline declarado, no especifica idiomas soportados y acumula cero descargas y cero "likes", lo que indica que se trata de una publicacion reciente y practicamente sin adopcion por parte de la comunidad.
 
 La model card asociada contiene unicamente la declaracion de licencia (`license: apache-2.0`), sin ningun tipo de documentacion tecnica adicional: no se describe la arquitectura, el numero de parametros, la longitud de contexto, el proceso de entrenamiento ni las capacidades del modelo. El unico dato objetivo sobre el contenido es el tamano del repositorio, 0,2 GB, que por si solo no permite inferir de forma fiable la naturaleza del artefacto (podria tratarse de pesos de un modelo pequeno, de un conjunto de adaptadores o de checkpoints parciales).
 
@@ -67,6 +67,6 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/aleatorydialogue/stmodels
+- Repositorio en Hugging Face: https://huggingface.co/aleatorydialogue/stmodels
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de codigo o demos) en la busqueda web realizada. Los resultados devueltos corresponden a contenidos turisticos sobre Sydney y no estan relacionados con el modelo.

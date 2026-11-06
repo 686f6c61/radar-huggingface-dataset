@@ -43,7 +43,7 @@ Cualquier otra capacidad, como *tool calling*, *function calling*, capacidades m
 - **Pruebas de humo en pipelines de desarrollo**: el checkpoint de inicialización permite verificar que la implementación compila y ejecuta un *forward pass* sin errores, útil en entornos de CI/CD.
 - **Depuración de código**: al ser un modelo minúsculo, es ideal para rastrear bugs en la implementación de la atención sliding window, la fusión tensor o la normalización groupnorm.
 - **Experimentos de investigación sobre arquitecturas Mixer**: investigadores pueden estudiar el comportamiento de este diseño concreto antes de escalar a configuraciones mayores.
-- **Validación de adaptadores personalizados**: dado que la implementación no es compatible con APIs genéricas de HuggingFace, se puede usar para probar adaptadores propios que carguen los pesos safetensors.
+- **Validación de adaptadores personalizados**: dado que la implementación no es compatible con APIs genéricas de Hugging Face, se puede usar para probar adaptadores propios que carguen los pesos safetensors.
 - **Entrenamiento desde cero en datasets pequeños**: por ejemplo, en Flickr30k (como sugiere el autor), para comparar el rendimiento con un baseline de capacidad similar.
 - **Enseñanza y formación**: el código sirve como ejemplo didáctico de cómo implementar una arquitectura Mixer para retrieval en PyTorch.
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-gpt2-small-trex es un modelo publicado en HuggingFace por el usuario quanda-bench-test, aparentemente vinculado a tareas de evaluación o benchmarking (el prefijo "quanda-bench" sugiere un contexto de banco de pruebas). El nombre indica que se trata de una variante de GPT-2 Small, el modelo decoder-only de OpenAI presentado en 2019, con unos 124 millones de parámetros y una ventana de contexto de 1024 tokens en su configuración original. El sufijo "trex" no está documentado en la información disponible.
+gpt2-small-trex es un modelo publicado en Hugging Face por el usuario quanda-bench-test, aparentemente vinculado a tareas de evaluación o benchmarking (el prefijo "quanda-bench" sugiere un contexto de banco de pruebas). El nombre indica que se trata de una variante de GPT-2 Small, el modelo decoder-only de OpenAI presentado en 2019, con unos 124 millones de parámetros y una ventana de contexto de 1024 tokens en su configuración original. El sufijo "trex" no está documentado en la información disponible.
 
 La model card publicada es prácticamente vacía: solo incluye la declaración de licencia MIT, sin descripción, sin datos de entrenamiento, sin especificaciones y sin resultados de evaluación. El repositorio ocupa 1,5 GB, un tamaño considerable para un modelo de 124 millones de parámetros en precisión completa (que rondaría los 500 MB), lo que podría indicar la presencia de múltiples formatos de pesos o checkpoints adicionales, aunque no se puede confirmar.
 
@@ -59,17 +59,17 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada en INT4: en torno a 100-150 MB para los pesos.
 - GPU recomendadas: cualquier GPU consumer moderna sirve; RTX 3060, RTX 4060, RTX 4090 o incluso GPUs integradas con suficiente memoria compartida.
 - Cabe holgadamente en cualquier GPU consumer e incluso en CPU.
-- Opciones de despliegue: llama.cpp, Ollama, vLLM, TGI y transformers de HuggingFace, siempre que existan pesos en el formato adecuado (no confirmado en el repositorio).
+- Opciones de despliegue: llama.cpp, Ollama, vLLM, TGI y transformers de Hugging Face, siempre que existan pesos en el formato adecuado (no confirmado en el repositorio).
 - Latencia y throughput: no disponibles; en un modelo de este tamaño se espera un throughput alto en GPU consumer, pero no hay mediciones publicadas para esta variante.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| gpt2-small-trex | 124 M (referencia) | 1024 (referencia) | MIT | HuggingFace |
-| GPT-2 Small (OpenAI) | 124 M | 1024 | MIT | HuggingFace |
-| DistilGPT-2 | 82 M | 1024 | Apache 2.0 | HuggingFace |
-| TinyLlama-1.1B | 1,1 B | 2048 | Apache 2.0 | HuggingFace |
+| gpt2-small-trex | 124 M (referencia) | 1024 (referencia) | MIT | Hugging Face |
+| GPT-2 Small (OpenAI) | 124 M | 1024 | MIT | Hugging Face |
+| DistilGPT-2 | 82 M | 1024 | Apache 2.0 | Hugging Face |
+| TinyLlama-1.1B | 1,1 B | 2048 | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo para gpt2-small-trex, por lo que la comparación se limita a parámetros, contexto y licencia.
 
@@ -86,6 +86,6 @@ No se dispone de datos de rendimiento comparativo para gpt2-small-trex, por lo q
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/quanda-bench-test/gpt2-small-trex
+- Hugging Face: https://huggingface.co/quanda-bench-test/gpt2-small-trex
 - Paper original de GPT-2 (referencia de la arquitectura): https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf
 - Repositorio de GPT-2 de OpenAI: https://github.com/openai/gpt-2

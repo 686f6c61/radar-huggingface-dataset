@@ -73,9 +73,9 @@ Notas aportadas por el autor: no se permitió ninguna llamada que debía bloquea
 
 | Modelo | Parametros | Contexto | Rendimiento (eval v2) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| VelaOrg/vela-agent-guard-qwen3-0.6b | 0,6B | No especificado | Secrets 0,830 (0,632); Injection 0,883/0,897; Tool call 0,960 (0,919) | Apache-2.0 | HuggingFace, checkpoint Qwen3 |
-| VelaOrg/vela-agent-guard (4B) | 4B (aproximado; no confirmado en la información disponible) | No disponible | Secrets 0,946 (0,884); Injection 0,970; Tool call 1,000 (1,000) | No indicada en la información disponible | HuggingFace |
-| Qwen/Qwen3-0.6B (modelo base) | 0,6B | 32.768 tokens nativos | No aplica: no es un guardián, no produce JSON de decisión | Apache-2.0 | HuggingFace |
+| VelaOrg/vela-agent-guard-qwen3-0.6b | 0,6B | No especificado | Secrets 0,830 (0,632); Injection 0,883/0,897; Tool call 0,960 (0,919) | Apache-2.0 | Hugging Face, checkpoint Qwen3 |
+| VelaOrg/vela-agent-guard (4B) | 4B (aproximado; no confirmado en la información disponible) | No disponible | Secrets 0,946 (0,884); Injection 0,970; Tool call 1,000 (1,000) | No indicada en la información disponible | Hugging Face |
+| Qwen/Qwen3-0.6B (modelo base) | 0,6B | 32.768 tokens nativos | No aplica: no es un guardián, no produce JSON de decisión | Apache-2.0 | Hugging Face |
 
 No se dispone de datos comparativos frente a otros guardianes de la misma categoría (por ejemplo clasificadores de injection de Meta o modelos de detección de secretos especializados); no disponible.
 
@@ -95,6 +95,6 @@ No se dispone de datos comparativos frente a otros guardianes de la misma catego
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VelaOrg/vela-agent-guard-qwen3-0.6b
+- Modelo en Hugging Face: https://huggingface.co/VelaOrg/vela-agent-guard-qwen3-0.6b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Modelo hermano de mayor precisión: https://huggingface.co/VelaOrg/vela-agent-guard

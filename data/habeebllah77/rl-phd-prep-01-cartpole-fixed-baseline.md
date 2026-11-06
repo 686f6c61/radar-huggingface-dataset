@@ -18,7 +18,7 @@ Se publica como material de investigacion y docencia, no como componente de prod
 | Longitud de contexto | no aplica (no es un modelo de lenguaje) |
 | Tipos de cuantizacion | no aplica |
 | Idiomas soportados | no aplica |
-| Licencia | MIT segun la model card del autor; los metadatos de HuggingFace indican "no disponible" (discrepancia entre ambas fuentes) |
+| Licencia | MIT segun la model card del autor; los metadatos de Hugging Face indican "no disponible" (discrepancia entre ambas fuentes) |
 | Formato de pesos | `.zip` (formato de guardado de Stable-Baselines3, cargable con `PPO.load`) |
 
 ## Arquitectura y entrenamiento
@@ -73,7 +73,7 @@ El autor afirma que el modelo companero entrenado con domain randomisation se ma
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (PPO, CartPole-v1, parametros fijos) | no disponible (red de politica minima) | no aplica | 500/500 en entrenamiento; 340.5 a longitud 0.9; 35.9 a longitud 1.1 | MIT (segun model card) | Publicado en HuggingFace, 0 descargas |
+| Este modelo (PPO, CartPole-v1, parametros fijos) | no disponible (red de politica minima) | no aplica | 500/500 en entrenamiento; 340.5 a longitud 0.9; 35.9 a longitud 1.1 | MIT (segun model card) | Publicado en Hugging Face, 0 descargas |
 | Modelo companero con domain randomisation | no disponible | no aplica | 500 mantenido hasta longitud 1.1 (segun el autor) | no disponible | Enlace no disponible en la informacion proporcionada |
 | Otros agentes PPO sobre CartPole-v1 | no disponible | no aplica | no disponible | no disponible | no disponible |
 
@@ -85,7 +85,7 @@ No se dispone de datos suficientes para una comparativa cuantitativa contra alte
 - Degradacion severa fuera de distribucion: la politica falla cuando la longitud del pendulo supera aproximadamente 0.9, pese a ser solo un 80 por ciento mayor que el valor de entrenamiento.
 - Entrenamiento sin domain randomisation: la ausencia de variacion en las constantes fisicas durante el entrenamiento explica su fragilidad ante cambios del entorno.
 - Uso previsto restringido: el propio autor lo declara como material de investigacion y docencia, y explicitamente no apto para produccion.
-- Licencia inconsistente: la model card indica MIT, pero los metadatos de HuggingFace muestran "no disponible"; conviene confirmar la licencia antes de cualquier uso comercial.
+- Licencia inconsistente: la model card indica MIT, pero los metadatos de Hugging Face muestran "no disponible"; conviene confirmar la licencia antes de cualquier uso comercial.
 - Sesgos conocidos: no disponible (no aplica el concepto de sesgo de datos tal como se entiende en modelos de lenguaje, aunque la politica puede heredar sesgos del entorno de entrenamiento).
 - Riesgo de alucinacion: no aplica.
 - Limitaciones de idioma: no aplica.
@@ -94,7 +94,7 @@ No se dispone de datos suficientes para una comparativa cuantitativa contra alte
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/habeebllah77/rl-phd-prep-01-cartpole-fixed-baseline
+- Hugging Face: https://huggingface.co/habeebllah77/rl-phd-prep-01-cartpole-fixed-baseline
 - Modelo companero (domain randomisation): no disponible (el autor indica "link once pushed")
 - Codigo / informe completo del experimento: no disponible (el autor indica "GitHub link", sin URL concreta)
 - Stable-Baselines3 (libreria): no disponible en la informacion proporcionada

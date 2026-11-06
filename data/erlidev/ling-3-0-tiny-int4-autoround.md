@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `erlidev/Ling-3.0-tiny-int4-AutoRound` es una publicación en HuggingFace del usuario `erlidev`, con licencia MIT y etiqueta regional `region:us`. Según la información disponible, se trata de un modelo con cero descargas y cero likes, creado el 15 de agosto de 2026. La model card es mínima y únicamente especifica la licencia, sin ningún detalle técnico adicional.
+El modelo `erlidev/Ling-3.0-tiny-int4-AutoRound` es una publicación en Hugging Face del usuario `erlidev`, con licencia MIT y etiqueta regional `region:us`. Según la información disponible, se trata de un modelo con cero descargas y cero likes, creado el 15 de agosto de 2026. La model card es mínima y únicamente especifica la licencia, sin ningún detalle técnico adicional.
 
 El nombre del repositorio sugiere que podría tratarse de una versión cuantizada a 4 bits (int4) mediante la técnica AutoRound de un modelo denominado `Ling-3.0-tiny`, probablemente una variante pequeña de una familia Ling 3.0. Sin embargo, esta interpretación es una inferencia a partir del nombre y no está respaldada por documentación oficial en la ficha del modelo.
 
@@ -55,6 +55,6 @@ No disponible. No se conocen modelos comparables de la misma categoría (mismo t
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/erlidev/Ling-3.0-tiny-int4-AutoRound)
+- [Página del modelo en Hugging Face](https://huggingface.co/erlidev/Ling-3.0-tiny-int4-AutoRound)
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de código, demos) en la información proporcionada.

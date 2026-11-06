@@ -25,7 +25,7 @@ El repositorio tiene 1,6 GB de tamaño total, lo cual es coherente con un modelo
 
 No hay información disponible sobre la arquitectura del modelo base `skp24/qwen-38-27b-surgery-patient`. El nombre del repositorio sugiere una base Qwen, pero no se confirma la familia, la variante ni la arquitectura concreta (transformer denso, MoE, híbrido, etc.). Tampoco se documentan datos de entrenamiento, número de tokens, composición del dataset ni si hubo RLHF, DPO u otras etapas de alineación.
 
-La única información técnica disponible proviene de los metadatos de cuantización del repositorio: se trata de cuantizaciones estáticas generadas con `convert_type: hf` y `output_tensor_quantised: 1`, lo que indica que los pesos originales en formato HuggingFace se convirtieron a GGUF y se cuantizaron con el pipeline de llama.cpp. La lista de cuantizaciones incluye desde Q2_K hasta Q8_0 y x-f16, lo que permite distintos equilibrios entre tamaño y fidelidad numérica. No hay innovaciones técnicas documentadas (decodificación especulativa, atención lineal, etc.).
+La única información técnica disponible proviene de los metadatos de cuantización del repositorio: se trata de cuantizaciones estáticas generadas con `convert_type: hf` y `output_tensor_quantised: 1`, lo que indica que los pesos originales en formato Hugging Face se convirtieron a GGUF y se cuantizaron con el pipeline de llama.cpp. La lista de cuantizaciones incluye desde Q2_K hasta Q8_0 y x-f16, lo que permite distintos equilibrios entre tamaño y fidelidad numérica. No hay innovaciones técnicas documentadas (decodificación especulativa, atención lineal, etc.).
 
 ## Capacidades
 

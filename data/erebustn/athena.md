@@ -18,7 +18,7 @@ El interés actual del modelo reside en su relación tamaño/capacidad para desp
 | Longitud de contexto | 256K tokens segun arquitectura; entrenado con secuencias de hasta 1536 tokens, sin reevaluacion de contexto largo |
 | Tipos de cuantizacion | GGUF: Q4_K_M, Q5_K_M, Q6_K, Q8_0, F16; safetensors en bf16 |
 | Idiomas soportados | 16: en, ar, fr, es, de, it, pt, ru, zh, ja, ko, vi, th, id, hi, pl |
-| Licencia | Apache 2.0 (el frontmatter de la model card declara `license: other` con `license_name: apache-2.0`; los metadatos de HuggingFace indican apache-2.0) |
+| Licencia | Apache 2.0 (el frontmatter de la model card declara `license: other` con `license_name: apache-2.0`; los metadatos de Hugging Face indican apache-2.0) |
 | Formato de pesos | safetensors (bf16) y GGUF |
 
 ## Arquitectura y entrenamiento
@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | ErebusTN/Athena | 1,73B | 256K de arquitectura, entrenado a 1536 tokens | Seguridad defensiva, edge | Apache 2.0 (con discrepancia en el frontmatter) | safetensors + GGUF |
-| ErebusTN/EGen-SA1Q8 | no disponible | no disponible | Conversacional y procesamiento de datos estructurados, ajustado con SFT | no disponible | HuggingFace |
-| ErebusTN/EGen-SA1Q9 | no disponible | no disponible | Conversacional y procesamiento de datos estructurados, ajustado con SFT | no disponible | HuggingFace |
+| ErebusTN/EGen-SA1Q8 | no disponible | no disponible | Conversacional y procesamiento de datos estructurados, ajustado con SFT | no disponible | Hugging Face |
+| ErebusTN/EGen-SA1Q9 | no disponible | no disponible | Conversacional y procesamiento de datos estructurados, ajustado con SFT | no disponible | Hugging Face |
 
 Los dos modelos comparables identificados pertenecen a la misma familia (Athena Project, 2025) según los resultados de búsqueda, pero no se dispone de sus especificaciones técnicas en la información proporcionada. No se han encontrado en la búsqueda referencias a modelos de otros fabricantes con datos verificables para una comparación cuantitativa.
 
@@ -81,13 +81,13 @@ Los dos modelos comparables identificados pertenecen a la misma familia (Athena 
 - Contexto efectivo limitado: aunque la arquitectura soporte 256K tokens, el entrenamiento se hizo con 1536 tokens y el comportamiento en contexto largo no se ha reevaluado. No debe asumirse un rendimiento fiable más allá de esa longitud.
 - Enfoque defensivo con rechazos para la generación de malware y construcción de exploits; no es apto para pruebas de penetración ofensivas.
 - No sustituye el juicio profesional en decisiones legales, de cumplimiento o de respuesta a incidentes.
-- Discrepancia de licencia: los tags y los metadatos de HuggingFace indican Apache 2.0, mientras que el frontmatter de la model card declara `license: other` con `license_name: apache-2.0`. Conviene confirmar los términos con el autor antes de un uso comercial.
+- Discrepancia de licencia: los tags y los metadatos de Hugging Face indican Apache 2.0, mientras que el frontmatter de la model card declara `license: other` con `license_name: apache-2.0`. Conviene confirmar los términos con el autor antes de un uso comercial.
 - El repositorio requiere `trust_remote_code=True`, lo que implica ejecutar código incluido en el propio repositorio; auditar antes de desplegar en entornos sensibles.
 - Ausencia de adopción verificable: cero descargas y cero likes en el momento de la consulta, y sin benchmarks publicados que respalden las capacidades declaradas.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ErebusTN/Athena
+- Modelo en Hugging Face: https://huggingface.co/ErebusTN/Athena
 - Repositorio GGUF: https://huggingface.co/ErebusTN/Athena-GGUF
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0.txt
 - Sitio de EGen Labs / ErebusTN: https://erebustn.io/

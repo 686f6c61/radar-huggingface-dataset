@@ -95,12 +95,12 @@ No se dispone de datos de rendimiento del head DFlash de z-lab, que se menciona 
 - El soporte en llama.cpp no está en mainline: requiere usar la rama `dspark-qwen35` o el PR #25173. En vLLM, se necesita la versión 0.25 o superior; versiones anteriores rechazan el método `dspark`.
 - Hubo un bug en el `config.json` exportado del drafter que heredaba el `partial_rotary_factor: 0.25` del modelo base, lo que colapsaba la tasa de aceptación a ~1% en vLLM para los primeros usuarios. El bug se corrigió a `partial_rotary_factor: 1.0`, pero es un recordatorio de que la configuración de RoPE debe validarse al integrar el modelo.
 - No se han publicado benchmarks de calidad (MMLU, HumanEval, GSM8K) para el drafter head ni para el modelo base en la información disponible. La decodificación especulativa es lossless, pero la calidad del modelo base Qwen3.6-27B no está evaluada en esta ficha.
-- El repo tiene 0 descargas y 0 likes en HuggingFace, lo que indica que es un modelo reciente y con poco uso en producción. Se recomienda probarlo en un entorno de staging antes de desplegarlo en servicios críticos.
+- El repo tiene 0 descargas y 0 likes en Hugging Face, lo que indica que es un modelo reciente y con poco uso en producción. Se recomienda probarlo en un entorno de staging antes de desplegarlo en servicios críticos.
 - La licencia Apache 2.0 permite uso comercial, pero el modelo base Qwen3.6-27B debe cumplir su propia licencia. No se especifica en la información disponible si el modelo base tiene restricciones adicionales.
 
 ## Enlaces
 
-- Repo de HuggingFace: https://huggingface.co/Anbeeld/Qwen3.6-27B-DSpark-GGUF
+- Repo de Hugging Face: https://huggingface.co/Anbeeld/Qwen3.6-27B-DSpark-GGUF
 - Modelo base del drafter (satgeze): https://huggingface.co/satgeze/Qwen3.6-27B-DSpark
 - Modelo objetivo (Qwen): https://huggingface.co/Qwen/Qwen3.6-27B
 - Fork BeeLlama.cpp: https://github.com/Anbeeld/beellama.cpp

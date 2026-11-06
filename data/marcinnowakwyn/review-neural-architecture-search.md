@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`marcinnowakwyn/review-neural-architecture-search` no es un modelo entrenado, sino un repositorio de notas de investigación sobre búsqueda de arquitecturas neuronales (Neural Architecture Search, NAS) publicado en HuggingFace el 17 de octubre de 2026 bajo licencia MIT. La model card lo describe explícitamente como «a working research note» que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación; el propio autor advierte de que no debe interpretarse como un paper completado ni como la publicación de modelos entrenados. El contenido se limita a dos ficheros de texto (`summary.md` y `README.md`).
+`marcinnowakwyn/review-neural-architecture-search` no es un modelo entrenado, sino un repositorio de notas de investigación sobre búsqueda de arquitecturas neuronales (Neural Architecture Search, NAS) publicado en Hugging Face el 17 de octubre de 2026 bajo licencia MIT. La model card lo describe explícitamente como «a working research note» que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación; el propio autor advierte de que no debe interpretarse como un paper completado ni como la publicación de modelos entrenados. El contenido se limita a dos ficheros de texto (`summary.md` y `README.md`).
 
 El repositorio incluye un fichero de pesos en formato safetensors con 24.832 parámetros totales, un volumen tres órdenes de magnitud por debajo de cualquier transformer funcional (los modelos más pequeños de uso real rondan los 100-150 millones). No hay tokenizador, no hay pipeline declarado, no se especifica longitud de contexto ni idiomas, y las descargas y likes son cero. Todo apunta a un tensor vestigial o de relleno generado automáticamente, no a un checkpoint utilizable para inferencia.
 
-Su relevancia práctica es, por tanto, documental y metodológica: sirve como ejemplo del género de «notas de investigación» alojadas en el Hub y como caso de estudio sobre por qué los metadatos de HuggingFace (etiqueta `transformer`, `safetensors`, recuento de parámetros) no garantizan que un repositorio contenga un modelo desplegable.
+Su relevancia práctica es, por tanto, documental y metodológica: sirve como ejemplo del género de «notas de investigación» alojadas en el Hub y como caso de estudio sobre por qué los metadatos de Hugging Face (etiqueta `transformer`, `safetensors`, recuento de parámetros) no garantizan que un repositorio contenga un modelo desplegable.
 
 ## Especificaciones tecnicas
 
@@ -20,7 +20,7 @@ Su relevancia práctica es, por tanto, documental y metodológica: sirve como ej
 | Licencia | MIT |
 | Formato de pesos | safetensors |
 | Tamano del repositorio | 0,0 GB |
-| Pipeline de HuggingFace | No disponible |
+| Pipeline de Hugging Face | No disponible |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-10-17 |
 | Fecha de ultima actualizacion | 2026-10-17 |
@@ -67,7 +67,7 @@ No existe un modelo comparable: el repositorio no contiene un modelo entrenado y
 
 | Referencia | Naturaleza | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `marcinnowakwyn/review-neural-architecture-search` | Nota de investigación + tensor vestigial de 24.832 parámetros | 24.832 | No disponible | Ninguno publicado | MIT | Repositorio público en HuggingFace, sin descargas |
+| `marcinnowakwyn/review-neural-architecture-search` | Nota de investigación + tensor vestigial de 24.832 parámetros | 24.832 | No disponible | Ninguno publicado | MIT | Repositorio público en Hugging Face, sin descargas |
 | Frameworks de NAS tipo DARTS | Implementaciones de búsqueda de arquitecturas | No aplica (no son modelos lingüísticos) | No aplica | Resultados publicados en sus propios papers | Código abierto, según proyecto | Repositorios públicos |
 | Benchmarks de NAS tipo NAS-Bench-201 | Conjuntos de arquitecturas preevaluadas para comparar métodos de búsqueda | No aplica | No aplica | Métricas tabuladas por los autores del benchmark | Según proyecto | Repositorios públicos |
 | Modelos transformer pequeños de uso real (~125 M de parámetros) | Modelos lingüísticos entrenados | ~125.000.000 | Cientos o miles de tokens, según modelo | Métricas publicadas por sus autores | Variables (MIT, Apache-2.0, etc.) | Pesos y tokenizador en el Hub |
@@ -87,5 +87,5 @@ No existe un modelo comparable: el repositorio no contiene un modelo entrenado y
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/marcinnowakwyn/review-neural-architecture-search
+- Repositorio en Hugging Face: https://huggingface.co/marcinnowakwyn/review-neural-architecture-search
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios de código ni demos.

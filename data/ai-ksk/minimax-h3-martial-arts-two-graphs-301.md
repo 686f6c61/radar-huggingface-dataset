@@ -75,7 +75,7 @@ No disponible. El paquete no es un modelo con parametros, contexto o licencia co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AI-KSK/minimax-h3-martial-arts-two-graphs-301
+- Hugging Face: https://huggingface.co/AI-KSK/minimax-h3-martial-arts-two-graphs-301
 - RunningHub (grafo primer/ultimo fotograma): https://www.runninghub.ai/zh-cn/post/2096152360778584065/?inviteCode=rh-v1111
 - RunningHub (grafo multi-keyframe): https://www.runninghub.ai/zh-cn/post/2095907246101291010/?inviteCode=rh-v1111
 - Video tutorial (YouTube): https://www.youtube.com/watch?v=3Ak4mkrhOrY

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `dan-100mb-after-wc-zipf-newlex-before-ckpt500-packed-bfdiso_seed10` es un ajuste fino (fine-tuning) de tipo SFT del modelo base `francesca9805/ppt-wc-zipf-newlex-dan-before-100mb-packed-bfdiso_seed10`, desarrollado por el usuario de HuggingFace `francesca9805`. Se trata de un artefacto de investigación derivado de la familia GPT-2, con 124.770.816 parámetros reales declarados en los ficheros safetensors, lo que lo sitúa en el rango de GPT-2 small (~124M parámetros).
+El modelo `dan-100mb-after-wc-zipf-newlex-before-ckpt500-packed-bfdiso_seed10` es un ajuste fino (fine-tuning) de tipo SFT del modelo base `francesca9805/ppt-wc-zipf-newlex-dan-before-100mb-packed-bfdiso_seed10`, desarrollado por el usuario de Hugging Face `francesca9805`. Se trata de un artefacto de investigación derivado de la familia GPT-2, con 124.770.816 parámetros reales declarados en los ficheros safetensors, lo que lo sitúa en el rango de GPT-2 small (~124M parámetros).
 
 El modelo se ha entrenado mediante Supervised Fine-Tuning (SFT) con la librería TRL (versión 0.23.0) sobre Transformers 4.56.2 y PyTorch 2.11.0. La nomenclatura del identificador sugiere un experimento vinculado a tokenizadores, análisis de frecuencia tipo Zipf y empaquetado de secuencias, aunque la model card no documenta estos detalles. No se especifican idiomas soportados, licencia efectiva ni longitud de contexto.
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - GPU recomendadas: cualquier GPU con al menos 1-2 GB de VRAM es suficiente (GTX 1050 Ti, GTX 1650, RTX 3050, RTX 4090, A100, H100). El modelo es enormemente sobredimensionado respecto a cualquier GPU moderna.
 - Compatibilidad con GPU consumer: sí, cabe en cualquier GPU consumer e incluso en iGPU con memoria compartida suficiente.
 - Ejecución en CPU: viable, con latencias de decenas de milisegundos por token según hardware.
-- Opciones de despliegue: al ser un modelo transformers estándar, es compatible con `transformers.pipeline`, Text Generation Inference (TGI, tag `text-generation-inference`), y previsiblemente con vLLM y llama.cpp si se convierte a GGUF (no confirmado por el autor). El tag `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints.
+- Opciones de despliegue: al ser un modelo transformers estándar, es compatible con `transformers.pipeline`, Text Generation Inference (TGI, tag `text-generation-inference`), y previsiblemente con vLLM y llama.cpp si se convierte a GGUF (no confirmado por el autor). El tag `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints.
 - Latencia y throughput estimados: no disponibles. No se han publicado mediciones.
 
 Nota: el repositorio ocupa 10,0 GB pese a que los pesos en FP16 rondarían los 250 MB, lo que indica la presencia de múltiples checkpoints, estados del optimizador u otros artefactos de entrenamiento en el repositorio.
@@ -81,10 +81,10 @@ Nota: el repositorio ocupa 10,0 GB pese a que los pesos en FP16 rondarían los 2
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| dan-100mb-after-wc-zipf-newlex-before-ckpt500-packed-bfdiso_seed10 | 124,8 M | no disponible | no disponible | HuggingFace (0 descargas) | Ajuste SFT de GPT-2, sin benchmarks |
-| GPT-2 small (openai-community/gpt2) | 124 M | 1024 tokens | MIT | HuggingFace, ampliamente usado | Modelo base de referencia de la familia |
-| DistilGPT-2 (distilbert/distilgpt2) | 82 M | 1024 tokens | Apache 2.0 | HuggingFace | Version destilada, mas rapida |
-| GPT-2 medium (openai-community/gpt2-medium) | 355 M | 1024 tokens | MIT | HuggingFace | Mayor capacidad, mismo contexto |
+| dan-100mb-after-wc-zipf-newlex-before-ckpt500-packed-bfdiso_seed10 | 124,8 M | no disponible | no disponible | Hugging Face (0 descargas) | Ajuste SFT de GPT-2, sin benchmarks |
+| GPT-2 small (openai-community/gpt2) | 124 M | 1024 tokens | MIT | Hugging Face, ampliamente usado | Modelo base de referencia de la familia |
+| DistilGPT-2 (distilbert/distilgpt2) | 82 M | 1024 tokens | Apache 2.0 | Hugging Face | Version destilada, mas rapida |
+| GPT-2 medium (openai-community/gpt2-medium) | 355 M | 1024 tokens | MIT | Hugging Face | Mayor capacidad, mismo contexto |
 
 La comparación directa es limitada porque el modelo objeto de esta ficha no declara idiomas, licencia efectiva ni contexto, y no publica resultados de evaluación. Los datos de GPT-2 small, DistilGPT-2 y GPT-2 medium se incluyen como referencia de la familia, no como validación de rendimiento equivalente.
 
@@ -103,7 +103,7 @@ La comparación directa es limitada porque el modelo objeto de esta ficha no dec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/dan-100mb-after-wc-zipf-newlex-before-ckpt500-packed-bfdiso_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/dan-100mb-after-wc-zipf-newlex-before-ckpt500-packed-bfdiso_seed10
 - Modelo base: https://huggingface.co/francesca9805/ppt-wc-zipf-newlex-dan-before-100mb-packed-bfdiso_seed10
 - Repositorio TRL: https://github.com/huggingface/trl
 - Ejecución de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/acqw259p

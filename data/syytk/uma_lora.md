@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `SYYtk/UMA_lora` es un adaptador LoRA publicado en HuggingFace por el usuario SYYtk. La información disponible es extremadamente limitada: la model card únicamente declara la licencia Creative Commons (cc) y no incluye descripción, arquitectura, datos de entrenamiento ni ejemplos de uso. El nombre sugiere que se trata de un LoRA para algún modelo base, posiblemente orientado a generación de imágenes o a ajuste fino de un LLM, pero no hay confirmación técnica al respecto.
+El modelo `SYYtk/UMA_lora` es un adaptador LoRA publicado en Hugging Face por el usuario SYYtk. La información disponible es extremadamente limitada: la model card únicamente declara la licencia Creative Commons (cc) y no incluye descripción, arquitectura, datos de entrenamiento ni ejemplos de uso. El nombre sugiere que se trata de un LoRA para algún modelo base, posiblemente orientado a generación de imágenes o a ajuste fino de un LLM, pero no hay confirmación técnica al respecto.
 
 Este modelo no tiene descargas ni valoraciones en el momento de la consulta, lo que indica que es una publicación reciente o de baja difusión. La ausencia de documentación técnica hace imposible evaluar su rendimiento, sus capacidades o su idoneidad para casos de uso concretos. Cualquier uso en producción requeriría una investigación adicional por parte del desarrollador, incluyendo la inspección directa de los archivos del repositorio.
 
@@ -53,4 +53,4 @@ No disponible. Al no conocer el modelo base ni el propósito del LoRA, no es pos
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SYYtk/UMA_lora
+- Repositorio Hugging Face: https://huggingface.co/SYYtk/UMA_lora

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-rh-z-image-impasto-2.5d-anime-style-lora es un adaptador LoRA de generación de imagen a partir de texto (text-to-image) publicado por RunningHubAI, la cuenta en HuggingFace de la plataforma RunningHub. Se trata de un ajuste fino de estilo bautizado como «Impasto 2.5D Anime Style», construido sobre el modelo base Z-image-turbo, cuyo propósito es trasladar a las imágenes generadas una estética de anime 2.5D con textura de pintura al óleo aplicada con espátula (impasto).
+rh-z-image-impasto-2.5d-anime-style-lora es un adaptador LoRA de generación de imagen a partir de texto (text-to-image) publicado por RunningHubAI, la cuenta en Hugging Face de la plataforma RunningHub. Se trata de un ajuste fino de estilo bautizado como «Impasto 2.5D Anime Style», construido sobre el modelo base Z-image-turbo, cuyo propósito es trasladar a las imágenes generadas una estética de anime 2.5D con textura de pintura al óleo aplicada con espátula (impasto).
 
 El repositorio contiene un único archivo de pesos, `Impasto 2.5D Anime Style.safetensors`, de 20 MiB, y está etiquetado para su uso en ComfyUI. La activación del estilo se realiza mediante la palabra de disparo (trigger word) «Impasto 2.5D Anime Style». En el momento de la consulta, el repositorio acumulaba 0 descargas y 0 «likes», y la model card no documenta licencia, idiomas, resolución de entrenamiento, número de pasos de inferencia ni parámetros del modelo base.
 
@@ -102,7 +102,7 @@ No se dispone de información sobre modelos comparables en la documentación apo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RunningHubAI/rh-z-image-impasto-2.5d-anime-style-lora
+- Modelo en Hugging Face: https://huggingface.co/RunningHubAI/rh-z-image-impasto-2.5d-anime-style-lora
 - Modelo original en RunningHub: https://www.runninghub.cn/model/public/2002917138035798017
 - Página del autor (AI-iLiKe) en RunningHub: https://www.runninghub.cn/user-center/1949639306402586626
 - RunningHub (sitio internacional): https://www.runninghub.ai

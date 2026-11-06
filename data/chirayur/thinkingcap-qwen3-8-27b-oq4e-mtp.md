@@ -109,7 +109,7 @@ La comparación relevante aquí es de compromiso precisión/memoria: este releas
 
 ## Enlaces
 
-- Repositorio HuggingFace: [ChirayuR/ThinkingCap-Qwen3.8-27B-oQ4e-mtp](https://huggingface.co/ChirayuR/ThinkingCap-Qwen3.8-27B-oQ4e-mtp)
+- Repositorio Hugging Face: [ChirayuR/ThinkingCap-Qwen3.8-27B-oQ4e-mtp](https://huggingface.co/ChirayuR/ThinkingCap-Qwen3.8-27B-oQ4e-mtp)
 - Variante solo texto: [ChirayuR/ThinkingCap-Qwen3.8-27B-oQ4e-mtp-text](https://huggingface.co/ChirayuR/ThinkingCap-Qwen3.8-27B-oQ4e-mtp-text)
 - Modelo base: [bottlecapai/ThinkingCap-Qwen3.8-27B](https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-27B)
 - Cuantizador oMLX: [github.com/jundot/omlx](https://github.com/jundot/omlx)

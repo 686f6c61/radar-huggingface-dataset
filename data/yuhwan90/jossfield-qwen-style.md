@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Jossfield qwen style es un adaptador LoRA de estilo para generación de imágenes a partir de texto, publicado por el usuario yuhwan90 en HuggingFace. Se construye sobre el modelo base Qwen/Qwen-Image, el modelo de difusión texto-a-imagen de la familia Qwen, y su función es aplicar un estilo visual concreto (denominado "jossfield style") a las imágenes generadas por ese modelo base. El repositorio tiene un tamaño de 0,1 GB, coherente con un adaptador LoRA ligero y no con un modelo completo.
+Jossfield qwen style es un adaptador LoRA de estilo para generación de imágenes a partir de texto, publicado por el usuario yuhwan90 en Hugging Face. Se construye sobre el modelo base Qwen/Qwen-Image, el modelo de difusión texto-a-imagen de la familia Qwen, y su función es aplicar un estilo visual concreto (denominado "jossfield style") a las imágenes generadas por ese modelo base. El repositorio tiene un tamaño de 0,1 GB, coherente con un adaptador LoRA ligero y no con un modelo completo.
 
 El modelo se distribuye en formato PEFT/diffusers mediante el fichero `pytorch_lora_weights.safetensors` y se activa con el token de disparo `jossfield style` en el prompt. No se trata de un modelo de lenguaje ni de un modelo fundacional: es un adaptador de bajo rango que modifica el comportamiento estilístico del modelo base sin reentrenarlo por completo, lo que permite cargarlo junto a Qwen-Image con un coste de memoria adicional mínimo.
 
@@ -23,7 +23,7 @@ La relevancia de esta ficha es limitada pero concreta: sirve para evaluar si el 
 
 ## Arquitectura y entrenamiento
 
-El artefacto es un adaptador LoRA, es decir, un conjunto de matrices de bajo rango que se inyectan en las capas del modelo base Qwen/Qwen-Image para modificar su comportamiento generativo. El formato declarado es PEFT/diffusers, lo que implica compatibilidad con el ecosistema de HuggingFace Diffusers y con la carga de adaptadores LoRA sobre el pipeline del modelo base. El repositorio ocupa 0,1 GB, un tamaño típico de un adaptador de este tipo y muy inferior al de un checkpoint completo de difusión.
+El artefacto es un adaptador LoRA, es decir, un conjunto de matrices de bajo rango que se inyectan en las capas del modelo base Qwen/Qwen-Image para modificar su comportamiento generativo. El formato declarado es PEFT/diffusers, lo que implica compatibilidad con el ecosistema de Hugging Face Diffusers y con la carga de adaptadores LoRA sobre el pipeline del modelo base. El repositorio ocupa 0,1 GB, un tamaño típico de un adaptador de este tipo y muy inferior al de un checkpoint completo de difusión.
 
 No se ha publicado información sobre el dataset de entrenamiento: no se indica el número de imágenes, su procedencia, la resolución, el número de pasos de entrenamiento, la tasa de aprendizaje ni si se aplicaron técnicas como regularización o captions automáticos. Tampoco se documenta si el adaptador se entrenó con DreamBooth, con un pipeline estándar de diffusers o con otra herramienta. La única información operativa es el token de disparo (`jossfield style`) y el modelo base sobre el que debe aplicarse.
 
@@ -81,6 +81,6 @@ No se dispone de datos de rendimiento ni de benchmarks que permitan una comparac
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yuhwan90/jossfield-qwen-style
+- Hugging Face: https://huggingface.co/yuhwan90/jossfield-qwen-style
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image
 - Civitai, etiqueta Qwen (modelos y LoRAs de la familia): https://civitai.com/tag/qwen

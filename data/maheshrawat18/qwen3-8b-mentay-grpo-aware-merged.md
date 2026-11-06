@@ -82,7 +82,7 @@ La principal diferencia es la especialización emocional del modelo evaluado, pe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/maheshrawat18/Qwen3-8B-mentay-grpo-aware-merged
+- Modelo en Hugging Face: https://huggingface.co/maheshrawat18/Qwen3-8B-mentay-grpo-aware-merged
 - Modelo base intermedio: https://huggingface.co/maheshrawat18/Qwen3-8B-grpo-emotion-v9-merged
 - Repositorio de Unsloth (herramienta de entrenamiento): https://github.com/unslothai/unsloth
 - Librería TRL (Transformers Reinforcement Learning): https://github.com/huggingface/trl

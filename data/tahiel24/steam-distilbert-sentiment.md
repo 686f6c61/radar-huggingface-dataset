@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tahiel24/steam-distilbert-sentiment es un modelo de la familia DistilBERT publicado en HuggingFace por el usuario Tahiel24. Por el identificador y por el recuento de parametros reportado en el repositorio (66.955.010), se trata de una destilacion de BERT-base con una cabeza de clasificacion de secuencias, presumiblemente ajustada para analisis de sentimiento sobre resenas de la plataforma Steam. El propio autor no ha documentado esta informacion en la model card: el README publicado unicamente contiene la linea `license: mit`, sin descripcion, sin dataset de entrenamiento, sin hiperparametros y sin resultados de evaluacion.
+Tahiel24/steam-distilbert-sentiment es un modelo de la familia DistilBERT publicado en Hugging Face por el usuario Tahiel24. Por el identificador y por el recuento de parametros reportado en el repositorio (66.955.010), se trata de una destilacion de BERT-base con una cabeza de clasificacion de secuencias, presumiblemente ajustada para analisis de sentimiento sobre resenas de la plataforma Steam. El propio autor no ha documentado esta informacion en la model card: el README publicado unicamente contiene la linea `license: mit`, sin descripcion, sin dataset de entrenamiento, sin hiperparametros y sin resultados de evaluacion.
 
 El modelo es relevante por su perfil de coste: con unos 67 millones de parametros y pesos en formato safetensors de 0,3 GB, es desplegable en CPU y en cualquier GPU de consumo, con latencias de milisegundos. Esto lo situa en el segmento de clasificadores de texto ligeros, util para tareas de etiquetado a gran escala, triaje de contenido o filtrado previo en pipelines de NLP, donde un modelo generativo seria desproporcionado.
 
@@ -61,18 +61,18 @@ La model card del autor no incluye metricas de exactitud, F1, matrices de confus
 - GPU recomendadas: cualquier GPU con al menos 1 GB de memoria es suficiente; una RTX 3060, RTX 4090, T4, L4, A10G o A100 lo ejecutaran sin dificultad, aunque el modelo esta sobredimensionado para hardware de gama alta.
 - Compatibilidad con GPU de consumo: si, cabe en cualquier GPU de consumo de los ultimos diez anos, e incluso en GPUs integradas.
 - Ejecucion en CPU: viable con latencias del orden de milisegundos a decenas de milisegundos por lote corto, sin necesidad de acelerador.
-- Opciones de despliegue: al publicarse en safetensors, es compatible con Transformers de HuggingFace, TorchScript/ONNX Runtime, FastAPI o servicios serverless. No se ha publicado una version GGUF, por lo que llama.cpp u Ollama requeririan una conversion previa. vLLM y TGI no son los motores habituales para un encoder de clasificacion de este tamano.
+- Opciones de despliegue: al publicarse en safetensors, es compatible con Transformers de Hugging Face, TorchScript/ONNX Runtime, FastAPI o servicios serverless. No se ha publicado una version GGUF, por lo que llama.cpp u Ollama requeririan una conversion previa. vLLM y TGI no son los motores habituales para un encoder de clasificacion de este tamano.
 - Latencia y throughput estimados: no disponibles; dependen del hardware, del tamano de lote y de la longitud de las secuencias.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento documentado |
 |---|---|---|---|---|---|
-| Tahiel24/steam-distilbert-sentiment | 66,96 M | 512 tokens (segun arquitectura) | MIT | HuggingFace, safetensors | no disponible |
-| distilbert-base-uncased-finetuned-sst-2-english | 66,96 M | 512 tokens | Apache 2.0 | HuggingFace, ampliamente usado | publica en SST-2 |
-| bert-base-uncased | 110 M | 512 tokens | Apache 2.0 | HuggingFace | publica en GLUE |
-| roberta-base | 125 M | 512 tokens | MIT | HuggingFace | publica en GLUE |
-| all-MiniLM-L6-v2 | 22,7 M | 256 tokens | Apache 2.0 | HuggingFace | publica en tareas de similitud |
+| Tahiel24/steam-distilbert-sentiment | 66,96 M | 512 tokens (segun arquitectura) | MIT | Hugging Face, safetensors | no disponible |
+| distilbert-base-uncased-finetuned-sst-2-english | 66,96 M | 512 tokens | Apache 2.0 | Hugging Face, ampliamente usado | publica en SST-2 |
+| bert-base-uncased | 110 M | 512 tokens | Apache 2.0 | Hugging Face | publica en GLUE |
+| roberta-base | 125 M | 512 tokens | MIT | Hugging Face | publica en GLUE |
+| all-MiniLM-L6-v2 | 22,7 M | 256 tokens | Apache 2.0 | Hugging Face | publica en tareas de similitud |
 
 No hay datos de rendimiento del modelo evaluado, por lo que la comparacion se limita a parametros, contexto, licencia y disponibilidad. Los recuentos de parametros y las longitudes de contexto de los modelos de referencia corresponden a sus especificaciones publicas conocidas; conviene verificarlos en sus respectivas model cards.
 
@@ -91,5 +91,5 @@ No hay datos de rendimiento del modelo evaluado, por lo que la comparacion se li
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tahiel24/steam-distilbert-sentiment
+- Modelo en Hugging Face: https://huggingface.co/Tahiel24/steam-distilbert-sentiment
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo en la busqueda web realizada. Los resultados obtenidos corresponden a contenidos sobre la temporada de la NBA y no guardan relacion con el modelo.

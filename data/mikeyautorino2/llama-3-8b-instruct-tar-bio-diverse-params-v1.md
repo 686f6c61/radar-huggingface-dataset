@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama-3-8B-Instruct-TAR-Bio-diverse-params-v1 es un checkpoint de investigación publicado por el usuario mikeyautorino2 en HuggingFace, construido sobre Llama-3-8B-Instruct y entrenado con la técnica TAR (Tamper-Resistant Safeguards) aplicada al dominio de bioseguridad. El objetivo no es ofrecer un modelo de propósito general, sino estudiar si las salvaguardas resistentes a manipulación sobreviven a intentos deliberados de fine-tuning que busquen recuperar conocimiento biológico peligroso.
+Llama-3-8B-Instruct-TAR-Bio-diverse-params-v1 es un checkpoint de investigación publicado por el usuario mikeyautorino2 en Hugging Face, construido sobre Llama-3-8B-Instruct y entrenado con la técnica TAR (Tamper-Resistant Safeguards) aplicada al dominio de bioseguridad. El objetivo no es ofrecer un modelo de propósito general, sino estudiar si las salvaguardas resistentes a manipulación sobreviven a intentos deliberados de fine-tuning que busquen recuperar conocimiento biológico peligroso.
 
 El modelo parte de lapisrocks/Llama-3-8B-Instruct-Random-Mapped-Bio, el mismo punto de arranque que el checkpoint oficial TAR-Bio-v2, y solo se diferencia de este en cómo se muestrean los ataques de fine-tuning simulados durante el entrenamiento. Concretamente, amplía el conjunto de hiperparámetros del atacante (tasas de aprendizaje, planificadores de decaimiento y pasos de warmup), manteniendo constante el coste computacional del ataque. Es, por tanto, un experimento controlado de una sola variable.
 
@@ -88,7 +88,7 @@ La comparación relevante es interna al linaje TAR: este checkpoint y TAR-Bio-v2
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mikeyautorino2/Llama-3-8B-Instruct-TAR-Bio-diverse-params-v1
+- Modelo en Hugging Face: https://huggingface.co/mikeyautorino2/Llama-3-8B-Instruct-TAR-Bio-diverse-params-v1
 - Modelo base: https://huggingface.co/lapisrocks/Llama-3-8B-Instruct-Random-Mapped-Bio
 - Checkpoint de referencia TAR-Bio-v2: https://huggingface.co/lapisrocks/Llama-3-8B-Instruct-TAR-Bio-v2
 - Tamirisa et al., «Tamper-Resistant Safeguards for Open-Weight LLMs» (2024): https://arxiv.org/abs/2408.00761

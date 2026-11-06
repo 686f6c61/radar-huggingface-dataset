@@ -86,10 +86,10 @@ Nota adicional de la model card: recalibrar solo el umbral con 30 muestras del d
 
 | Modelo | Parámetros / tamaño | Contexto | F1 externo (`deepset`) | Latencia CPU p50 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `RelyD/prompt-injection-detector` (`distilbert-base-uncased`) | 66.955.010 / 267,8 MB | 128 tokens | 0,067 | 63,3 ms | Apache-2.0 | HuggingFace |
-| `RelyD/prompt-injection-detector` (multilingüe) | no disponible / 541,3 MB | 128 tokens | 0,085 | 92,0 ms | Apache-2.0 | HuggingFace |
+| `RelyD/prompt-injection-detector` (`distilbert-base-uncased`) | 66.955.010 / 267,8 MB | 128 tokens | 0,067 | 63,3 ms | Apache-2.0 | Hugging Face |
+| `RelyD/prompt-injection-detector` (multilingüe) | no disponible / 541,3 MB | 128 tokens | 0,085 | 92,0 ms | Apache-2.0 | Hugging Face |
 | `char_wb_tfidf_lr_windowed` (baseline del mismo repo) | no disponible / 2,06 MB | ventana (no especificada) | 0,145 (0,729 tras recalibrar umbral) | 1,34 ms | Apache-2.0 | Incluido en el repo |
-| `protectai/deberta-v3-base-prompt-injection-v2` | no disponible / 737,7 MB | no disponible | **0,756** | 525,5 ms | no disponible en la información proporcionada | HuggingFace |
+| `protectai/deberta-v3-base-prompt-injection-v2` | no disponible / 737,7 MB | no disponible | **0,756** | 525,5 ms | no disponible en la información proporcionada | Hugging Face |
 
 La comparación honesta: los detectores ligeros del repo ganan en latencia (hasta 8× más rápidos que `protectai`) y en tamaño (hasta 360× más pequeños que el detector grande), pero pierden entre 0,57 y 0,69 puntos de F1 en el dominio externo. El baseline de 2 MB con TF-IDF de caracteres y ventana deslizante iguala en la práctica el F1 externo de los transformers pequeños con una fracción del coste.
 
@@ -107,7 +107,7 @@ La comparación honesta: los detectores ligeros del repo ganan en latencia (hast
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RelyD/prompt-injection-detector
+- Modelo en Hugging Face: https://huggingface.co/RelyD/prompt-injection-detector
 - Dataset de entrenamiento: https://huggingface.co/datasets/xTRam1/safe-guard-prompt-injection
 - Dataset de evaluación externa: https://huggingface.co/datasets/deepset/prompt-injections
 - Detector de referencia comparado: https://huggingface.co/protectai/deberta-v3-base-prompt-injection-v2

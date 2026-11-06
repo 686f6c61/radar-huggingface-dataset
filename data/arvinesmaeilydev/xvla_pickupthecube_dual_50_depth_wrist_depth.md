@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento en tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `arvinesmaeilydev/xvla_PickUpTheCube_Dual_50_Depth_wrist_depth` | 879,7 M | No disponible | Sin evaluar (0 resultados reportados) | Apache 2.0 | HuggingFace Hub, vía LeRobot |
-| `lerobot/xvla-base` (modelo base) | No disponible en esta informacion | No disponible | No disponible | No disponible en esta informacion | HuggingFace Hub |
-| Otras políticas LeRobot del mismo ecosistema (SmolVLA, ACT, pi0) | No disponible en esta informacion | No disponible | No disponible | No disponible en esta informacion | HuggingFace Hub, vía LeRobot |
+| `arvinesmaeilydev/xvla_PickUpTheCube_Dual_50_Depth_wrist_depth` | 879,7 M | No disponible | Sin evaluar (0 resultados reportados) | Apache 2.0 | Hugging Face Hub, vía LeRobot |
+| `lerobot/xvla-base` (modelo base) | No disponible en esta informacion | No disponible | No disponible | No disponible en esta informacion | Hugging Face Hub |
+| Otras políticas LeRobot del mismo ecosistema (SmolVLA, ACT, pi0) | No disponible en esta informacion | No disponible | No disponible | No disponible en esta informacion | Hugging Face Hub, vía LeRobot |
 
 La comparación cuantitativa no es posible con los datos disponibles: no se han publicado métricas de éxito para esta política ni cifras verificables de los modelos alternativos en la información proporcionada. La única comparación fiable es cualitativa: frente a políticas específicas por robot, X-VLA comparte un backbone con soft prompts por configuración, lo que reduce el coste de adaptación a nuevos montajes a cambio de una mayor complejidad de integración.
 
@@ -82,7 +82,7 @@ La comparación cuantitativa no es posible con los datos disponibles: no se han 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arvinesmaeilydev/xvla_PickUpTheCube_Dual_50_Depth_wrist_depth
+- Modelo en Hugging Face: https://huggingface.co/arvinesmaeilydev/xvla_PickUpTheCube_Dual_50_Depth_wrist_depth
 - Dataset de entrenamiento: https://huggingface.co/datasets/arvinesmaeilydev/PickUpTheCube_Dual_50_Depth
 - Modelo base: https://huggingface.co/lerobot/xvla-base
 - Paper de X-VLA (arXiv 2510.10274): https://huggingface.co/papers/2510.10274

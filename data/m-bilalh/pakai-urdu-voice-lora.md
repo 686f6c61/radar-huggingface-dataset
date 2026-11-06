@@ -69,11 +69,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| M-BilalH/pakai-urdu-voice-lora | Adaptador sobre 7,61 mil millones (base) | No declarado (base: 32.768 tokens) | safetensors (PEFT) | no disponible | HuggingFace, 0 descargas |
-| Qwen2.5-7B-Instruct (modelo base) | 7,61 mil millones | 32.768 tokens nativos, ampliable con YaRN | safetensors, GGUF, AWQ, GPTQ | Apache 2.0 (segun su model card) | HuggingFace, ampliamente desplegado |
-| unsloth/Qwen2.5-7B-Instruct-bnb-4bit | 7,61 mil millones cuantizados | Igual que el base | safetensors 4-bit | Apache 2.0 (hereda del base) | HuggingFace |
-| Mistral-7B-Instruct-v0.3 | 7,25 mil millones | 32.768 tokens | safetensors, GGUF | Apache 2.0 | HuggingFace |
-| Llama-3.1-8B-Instruct | 8,03 mil millones | 128.000 tokens | safetensors, GGUF | Llama 3.1 Community License | HuggingFace |
+| M-BilalH/pakai-urdu-voice-lora | Adaptador sobre 7,61 mil millones (base) | No declarado (base: 32.768 tokens) | safetensors (PEFT) | no disponible | Hugging Face, 0 descargas |
+| Qwen2.5-7B-Instruct (modelo base) | 7,61 mil millones | 32.768 tokens nativos, ampliable con YaRN | safetensors, GGUF, AWQ, GPTQ | Apache 2.0 (segun su model card) | Hugging Face, ampliamente desplegado |
+| unsloth/Qwen2.5-7B-Instruct-bnb-4bit | 7,61 mil millones cuantizados | Igual que el base | safetensors 4-bit | Apache 2.0 (hereda del base) | Hugging Face |
+| Mistral-7B-Instruct-v0.3 | 7,25 mil millones | 32.768 tokens | safetensors, GGUF | Apache 2.0 | Hugging Face |
+| Llama-3.1-8B-Instruct | 8,03 mil millones | 128.000 tokens | safetensors, GGUF | Llama 3.1 Community License | Hugging Face |
 
 No se dispone de benchmarks comparativos publicados para este adaptador, por lo que la comparacion se limita a especificaciones estructurales.
 
@@ -91,8 +91,8 @@ No se dispone de benchmarks comparativos publicados para este adaptador, por lo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/M-BilalH/pakai-urdu-voice-lora
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct-bnb-4bit
+- Modelo en Hugging Face: https://huggingface.co/M-BilalH/pakai-urdu-voice-lora
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct-bnb-4bit
 - Modelo original Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Libreria PEFT: https://github.com/huggingface/peft
 - Unsloth: https://github.com/unslothai/unsloth

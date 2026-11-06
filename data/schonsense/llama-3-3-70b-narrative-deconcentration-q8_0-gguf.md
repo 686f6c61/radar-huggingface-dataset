@@ -83,7 +83,7 @@ La comparación relevante es con el Llama 3.3 70B Instruct original: este ajuste
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF Q8_0): https://huggingface.co/schonsense/Llama-3.3-70B-Narrative-Deconcentration-q8_0.gguf
+- Repositorio Hugging Face (GGUF Q8_0): https://huggingface.co/schonsense/Llama-3.3-70B-Narrative-Deconcentration-q8_0.gguf
 - Repositorio del modelo base (BF16, gated): https://huggingface.co/schonsense/Llama-3.3-70B-Narrative-Deconcentration-u0041-BF16
 - Modelo original Llama 3.3 70B de Meta: no disponible en la información proporcionada (referencia habitual: https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct)
 - Paper, blog o demo del ajuste: no disponibles.

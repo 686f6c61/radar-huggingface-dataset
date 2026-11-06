@@ -59,6 +59,6 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/gurujustin/affine-archive-king-r4-diane613-affine-5gedzafcvg-new
+- Repositorio de Hugging Face: https://huggingface.co/gurujustin/affine-archive-king-r4-diane613-affine-5gedzafcvg-new
 - Repositorio fuente original: https://huggingface.co/diane613/affine-5gedzafcvg-new
 - Registros de duelos y veredictos de SN120: https://s3.hippius.com/affine-sn120/evals/index.jsonl

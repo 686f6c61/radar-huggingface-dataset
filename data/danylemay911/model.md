@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DanyLemay911/Model es un repositorio publicado en HuggingFace por el usuario DanyLemay911 el 28 de octubre de 2026. En el momento de redactar esta ficha no cuenta con descargas ni interacciones, y la model card asociada se limita a declarar la licencia `deepfloyd-if-license`, sin aportar informacion sobre arquitectura, tamano, datos de entrenamiento o capacidades.
+DanyLemay911/Model es un repositorio publicado en Hugging Face por el usuario DanyLemay911 el 28 de octubre de 2026. En el momento de redactar esta ficha no cuenta con descargas ni interacciones, y la model card asociada se limita a declarar la licencia `deepfloyd-if-license`, sin aportar informacion sobre arquitectura, tamano, datos de entrenamiento o capacidades.
 
 La licencia declarada es la de DeepFloyd IF, un modelo de difusion texto-a-imagen desarrollado por Stability AI. Este hecho sugiere, como hipotesis, que el repositorio podria alojar pesos derivados o relacionados con esa familia de modelos generativos de imagen, pero no existe confirmacion alguna en la informacion disponible. No se puede verificar el pipeline, los idiomas soportados, el formato de pesos ni el proposito real del modelo.
 
@@ -73,6 +73,6 @@ No disponible. No es posible identificar modelos comparables sin conocer la arqu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DanyLemay911/Model
+- Repositorio en Hugging Face: https://huggingface.co/DanyLemay911/Model
 - Licencia DeepFloyd IF (referencia): https://huggingface.co/spaces/DeepFloyd/IF/blob/main/LICENSE.md
 - Repositorio oficial de DeepFloyd IF: https://github.com/deep-floyd/IF

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-q-Taxi-v4 es un agente de aprendizaje por refuerzo entrenado con Q-learning para resolver el entorno Taxi-v3 de Gymnasium. Lo publica la organizacion Learnix-AI-Lab en HuggingFace y se distribuye como un unico artefacto serializado en formato pickle (`q-learning.pkl`), sin pesos en safetensors ni redes neuronales asociadas. Por sus etiquetas (`q-learning`, `custom-implementation`) se trata de una implementacion tabular propia, no de un transformer ni de un modelo de lenguaje: no genera texto ni procesa tokens.
+q-Taxi-v4 es un agente de aprendizaje por refuerzo entrenado con Q-learning para resolver el entorno Taxi-v3 de Gymnasium. Lo publica la organizacion Learnix-AI-Lab en Hugging Face y se distribuye como un unico artefacto serializado en formato pickle (`q-learning.pkl`), sin pesos en safetensors ni redes neuronales asociadas. Por sus etiquetas (`q-learning`, `custom-implementation`) se trata de una implementacion tabular propia, no de un transformer ni de un modelo de lenguaje: no genera texto ni procesa tokens.
 
 El modelo resuelve un problema concreto y muy acotado dentro del ambito de la investigacion en refuerzo: la politica optima de un taxi en una cuadricula discreta, con recogida y entrega de pasajeros. Es relevante como referencia educativa y como linea base reproducible para comparar algoritmos de RL en un entorno de estados discretos y recompensa dispersa, no como componente de produccion en aplicaciones de IA generativa.
 
-El repositorio es practicamente vacio en cuanto a peso (0,0 GB declarados), no tiene descargas ni likes y su model card es la plantilla automatica que genera la libreria de entrenamiento de HuggingFace. La unica metrica declarada por el autor es una recompensa media de 7,46 +/- 2,65 en Taxi-v3, marcada como no verificada. No hay informacion sobre licencia, idiomas ni datos de entrenamiento.
+El repositorio es practicamente vacio en cuanto a peso (0,0 GB declarados), no tiene descargas ni likes y su model card es la plantilla automatica que genera la libreria de entrenamiento de Hugging Face. La unica metrica declarada por el autor es una recompensa media de 7,46 +/- 2,65 en Taxi-v3, marcada como no verificada. No hay informacion sobre licencia, idiomas ni datos de entrenamiento.
 
 ## Especificaciones tecnicas
 
@@ -80,5 +80,5 @@ No se dispone de modelos comparables concretos en la informacion proporcionada; 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Learnix-AI-Lab/q-Taxi-v4
+- Modelo en Hugging Face: https://huggingface.co/Learnix-AI-Lab/q-Taxi-v4
 - No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios de codigo ni demos.

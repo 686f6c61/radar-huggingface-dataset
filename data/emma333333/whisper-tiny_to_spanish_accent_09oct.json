@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "emma333333/whisper-tiny_to_spanish_accent_09oct",
+  "slug": "emma333333-whisper-tiny_to_spanish_accent_09oct",
+  "author": "emma333333",
+  "url": "https://huggingface.co/emma333333/whisper-tiny_to_spanish_accent_09oct",
+  "created_at": "2026-11-01T18:06:14.000Z",
+  "updated_at": "2026-11-01T18:16:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "hf-asr-leaderboard",
+    "generated_from_trainer",
+    "en",
+    "dataset:Spanish_english",
+    "base_model:openai/whisper-tiny",
+    "base_model:finetune:openai/whisper-tiny",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 31,
+  "trending_score": 0,
+  "parameters": 37760640,
+  "parameters_human": "37.8M",
+  "storage_bytes": 302167441,
+  "storage_human": "302 MB",
+  "base_model": "openai/whisper-tiny",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Spanish English",
+      "metric": "Wer",
+      "value": 12.313432835820896
+    }
+  ],
+  "sources": [
+    {
+      "title": "emma333333/whisper-tiny_to_spanish_accent_09oct at main",
+      "url": "https://huggingface.co/emma333333/whisper-tiny_to_spanish_accent_09oct/tree/main",
+      "snippet": "Instructions to use emma333333/whisper-tiny_to_spanish_accent_09oct with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "whisper-tiny_to_spanish_accent_09oct - friendli.ai",
+      "url": "https://friendli.ai/models/emma333333/whisper-tiny_to_spanish_accent_09oct",
+      "snippet": "Run whisper-tiny_to_spanish_accent_09oct with FriendliAI inference. This model is a fine-tuned version of openai/whisper-tiny on the Spanish English dataset."
+    }
+  ]
+}

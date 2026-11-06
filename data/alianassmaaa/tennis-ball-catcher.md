@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alianassmaaa/tennis-ball-catcher` es un repositorio alojado en HuggingFace por el usuario `alianassmaaa`, publicado bajo licencia MIT y etiquetado con `region:us`. El repositorio no incluye model card más allá de la declaración de licencia, no declara pipeline, idiomas ni arquitectura, y acumula 0 descargas y 0 "likes" en el momento de la consulta. No existe por tanto información verificable sobre qué es el artefacto ni sobre su contenido técnico.
+`alianassmaaa/tennis-ball-catcher` es un repositorio alojado en Hugging Face por el usuario `alianassmaaa`, publicado bajo licencia MIT y etiquetado con `region:us`. El repositorio no incluye model card más allá de la declaración de licencia, no declara pipeline, idiomas ni arquitectura, y acumula 0 descargas y 0 "likes" en el momento de la consulta. No existe por tanto información verificable sobre qué es el artefacto ni sobre su contenido técnico.
 
 El nombre del repositorio sugiere un componente relacionado con la captura de pelotas de tenis, lo que en el ecosistema de IA abierta suele corresponder a una política de aprendizaje por refuerzo, a un script de simulación o a un modelo perceptivo para robótica. Se trata, en cualquier caso, de una inferencia basada únicamente en el identificador: no está confirmada por ninguna fuente y no debe tomarse como descripción fiable del modelo.
 
@@ -88,7 +88,7 @@ No disponible. No es posible identificar alternativas comparables porque no se c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/alianassmaaa/tennis-ball-catcher
+- Repositorio en Hugging Face: https://huggingface.co/alianassmaaa/tennis-ball-catcher
 - Página de licencia MIT: https://opensource.org/licenses/MIT
 
 Nota sobre la búsqueda web: los resultados recuperados (FlightAware, Flightradar24, airchina.fr, flightinformation.com) hacen referencia al vuelo CA933 de Air China y no guardan ninguna relación con el repositorio analizado. No se han encontrado papers, blogs, repositorios de código ni demos asociados al modelo.

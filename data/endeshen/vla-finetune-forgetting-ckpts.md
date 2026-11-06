@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Tareas | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| endeshen/vla-finetune-forgetting-ckpts | Checkpoints de ajuste fino de pi0.5 (VLA) | LIBERO-10 tarea 8; LIBERO-90 tareas 38, 60, 64 | Apache-2.0 + Gemma Terms of Use | HuggingFace |
+| endeshen/vla-finetune-forgetting-ckpts | Checkpoints de ajuste fino de pi0.5 (VLA) | LIBERO-10 tarea 8; LIBERO-90 tareas 38, 60, 64 | Apache-2.0 + Gemma Terms of Use | Hugging Face |
 | openpi `pi05_libero` (checkpoint base) | VLA pi0.5 ajustado a LIBERO | Benchmark LIBERO completo | Apache-2.0 + Gemma Terms of Use | gs://openpi-assets |
-| endeshen/vla-finetune-forgetting-ckpts-intermediate | Checkpoints intermedios de los mismos runs | Subconjunto de las mismas tareas | Apache-2.0 + Gemma Terms of Use | HuggingFace |
+| endeshen/vla-finetune-forgetting-ckpts-intermediate | Checkpoints intermedios de los mismos runs | Subconjunto de las mismas tareas | Apache-2.0 + Gemma Terms of Use | Hugging Face |
 
 No se dispone de datos de parámetros, contexto ni rendimiento comparativo de estos modelos en la información proporcionada.
 
@@ -81,7 +81,7 @@ No se dispone de datos de parámetros, contexto ni rendimiento comparativo de es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/endeshen/vla-finetune-forgetting-ckpts
+- Modelo en Hugging Face: https://huggingface.co/endeshen/vla-finetune-forgetting-ckpts
 - Checkpoints intermedios: https://huggingface.co/endeshen/vla-finetune-forgetting-ckpts-intermediate
 - Datos de entrenamiento (rollouts): https://huggingface.co/endeshen/vla-finetune-rollouts
 - Pesos base openpi `pi05_libero`: gs://openpi-assets/checkpoints/pi05_libero

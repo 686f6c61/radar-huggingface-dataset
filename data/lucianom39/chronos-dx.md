@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Chronos DX es una familia de modelos de generación de texto presentada por el autor LucianoM39 (con repositorios asociados bajo la organización Flushnet AI en HuggingFace). El modelo se posiciona como una solución orientada a producción que cubre dos modos de despliegue complementarios: inferencia local/privada (incluyendo ejecución en navegador) y despliegue en nube con alta escalabilidad. La model card describe clases de tamaño que van desde 8B hasta 80B parámetros, aunque el único artefacto con pesos descargables referenciado es la variante densa de 32B en formato GGUF.
+Chronos DX es una familia de modelos de generación de texto presentada por el autor LucianoM39 (con repositorios asociados bajo la organización Flushnet AI en Hugging Face). El modelo se posiciona como una solución orientada a producción que cubre dos modos de despliegue complementarios: inferencia local/privada (incluyendo ejecución en navegador) y despliegue en nube con alta escalabilidad. La model card describe clases de tamaño que van desde 8B hasta 80B parámetros, aunque el único artefacto con pesos descargables referenciado es la variante densa de 32B en formato GGUF.
 
 La información técnica publicada es escasa: no se detallan la arquitectura interna, la composición del dataset de entrenamiento, el número de tokens procesados ni los resultados de benchmarks. La model card se centra en los servicios de personalización (fine-tuning, LoRA/QLoRA, especialización de dominio, integración RAG) y en las opciones de despliegue, más que en las características técnicas verificables del modelo. El repositorio principal `LucianoM39/Chronos-DX` registra 0 descargas y 1 like en el momento de la consulta, lo que sugiere una distribución muy incipiente.
 
@@ -87,7 +87,7 @@ La comparación es estructural: Chronos DX no publica métricas que permitan sit
 
 ## Enlaces
 
-- Repositorio principal en HuggingFace: https://huggingface.co/LucianoM39/Chronos-DX
+- Repositorio principal en Hugging Face: https://huggingface.co/LucianoM39/Chronos-DX
 - Repositorio GGUF denso 32B: https://huggingface.co/FlushnetAI/Chronos-DX-Dense-32B-GGUF
 - Página del proyecto Chronos DX: https://www.flushnet.net/ai/chronos-dx/
 - Demo local segura en navegador: https://www.flushnet.net/chronos-secure/secure-webchat/

@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/eus-latn-10mb-ppt-Dp-10mb-packed-bfd_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/eus-latn-10mb-ppt-Dp-10mb-packed-bfd_seed10
 - Modelo base: https://huggingface.co/goldfish-models/eus_latn_10mb
 - Variante de 100 MB: https://huggingface.co/francesca9805/eus-latn-10mb-ppt-Dp-100mb-packed-bfd_seed10
 - Variante `shuff-dyck` de la misma familia: https://llm-explorer.com/model/fpadovani%2Feus-latn-10mb-ppt-shuff-dyck-10mb_seed455,7dLUWuy7QdhtQN6cNsbiZR

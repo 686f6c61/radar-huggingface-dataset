@@ -29,18 +29,18 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 8,
   "trending_score": 0,
   "parameters": 9007804928,
   "parameters_human": "9.01B",
-  "storage_bytes": 36031274057,
+  "storage_bytes": 36031280706,
   "storage_human": "36.0 GB",
   "base_model": "XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
-  "gated": false,
+  "gated": true,
   "removed": false,
   "removed_at": null,
   "benchmarks": [],

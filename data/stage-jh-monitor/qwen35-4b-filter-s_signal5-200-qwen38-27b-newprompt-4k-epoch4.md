@@ -74,10 +74,10 @@ Los datos de los modelos alternativos corresponden a documentacion publica de su
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen35-4b-filter-s_signal5-200 (este modelo) | 4,54 mil millones | No confirmado (`max_model_len` de 65.536 en la config de inferencia) | No disponible | No disponible | HuggingFace, safetensors, 0 descargas |
-| Qwen/Qwen3.5-4B (modelo base) | No disponible en la informacion | No disponible en la informacion | No disponible en la informacion | No disponible en la informacion | HuggingFace |
-| Qwen3-4B | 4,0 mil millones (segun documentacion publica) | 32.768 tokens nativos, ampliable (segun documentacion publica) | Si, publicado por el autor | Apache 2.0 | HuggingFace, amplia adopcion |
-| Llama 3.2 3B | 3,2 mil millones (segun documentacion publica) | 128.000 tokens (segun documentacion publica) | Si, publicado por el autor | Licencia comunitaria Llama 3.2 | HuggingFace, amplia adopcion |
+| qwen35-4b-filter-s_signal5-200 (este modelo) | 4,54 mil millones | No confirmado (`max_model_len` de 65.536 en la config de inferencia) | No disponible | No disponible | Hugging Face, safetensors, 0 descargas |
+| Qwen/Qwen3.5-4B (modelo base) | No disponible en la informacion | No disponible en la informacion | No disponible en la informacion | No disponible en la informacion | Hugging Face |
+| Qwen3-4B | 4,0 mil millones (segun documentacion publica) | 32.768 tokens nativos, ampliable (segun documentacion publica) | Si, publicado por el autor | Apache 2.0 | Hugging Face, amplia adopcion |
+| Llama 3.2 3B | 3,2 mil millones (segun documentacion publica) | 128.000 tokens (segun documentacion publica) | Si, publicado por el autor | Licencia comunitaria Llama 3.2 | Hugging Face, amplia adopcion |
 
 No hay datos de rendimiento de este checkpoint que permitan una comparacion cuantitativa; la unica diferencia verificable frente al base es la aplicacion de un ciclo de RL con juez automatico.
 
@@ -96,7 +96,7 @@ No hay datos de rendimiento de este checkpoint que permitan una comparacion cuan
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Stage-jh-monitor/qwen35-4b-filter-s_signal5-200-qwen38-27b-newprompt-4k-epoch4
+- Modelo en Hugging Face: https://huggingface.co/Stage-jh-monitor/qwen35-4b-filter-s_signal5-200-qwen38-27b-newprompt-4k-epoch4
 - Dataset de entrenamiento referenciado en la model card: https://huggingface.co/Stage-org/qwen35-4b-filter-s_signal5-200-qwen38-27b-newprompt-4k
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.5-4B
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante al modelo. Las busquedas devolvieron unicamente portales de ofertas de practicas (stage.fr, 1jeune1solution.gouv.fr, welcometothejungle.com, jobs-stages.letudiant.fr), sin relacion con el modelo. No se dispone de paper, blog, repositorio de codigo ni demo asociados.

@@ -77,6 +77,6 @@ La comparativa se basa en características generales conocidas de estos modelos,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/globalnebula/adaface-ir50-ms1mv2-onnx
+- Modelo en Hugging Face: https://huggingface.co/globalnebula/adaface-ir50-ms1mv2-onnx
 - Repositorio oficial de AdaFace: https://github.com/mk-minchul/AdaFace
 - Paper de AdaFace (CVPR 2022): https://arxiv.org/abs/2112.02454 (enlace no verificado, pero es la referencia estándar del paper)

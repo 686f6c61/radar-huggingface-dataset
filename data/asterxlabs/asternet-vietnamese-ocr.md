@@ -98,5 +98,5 @@ Solo se ha publicado una comparación explícita con VietOCR (tamaño del checkp
 - El modelo es muy reciente (creado en octubre de 2026) con pocas descargas (290), por lo que el soporte comunitario y la madurez en producción son limitados.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/asterxlabs/asternet-vietnamese-ocr
+- Hugging Face: https://huggingface.co/asterxlabs/asternet-vietnamese-ocr
 - No se han encontrado enlaces adicionales a papers, blogs, repositorios o demos en la información disponible.

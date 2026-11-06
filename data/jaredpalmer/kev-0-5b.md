@@ -108,7 +108,7 @@ La diferencia funcional frente al modelo base es que Qwen2.5-0.5B genera texto y
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jaredpalmer/kev-0.5b
+- Modelo en Hugging Face: https://huggingface.co/jaredpalmer/kev-0.5b
 - Repositorio con código, receta de entrenamiento, evaluación y demo: https://github.com/jaredpalmer/kev
 - Pesos (release v0.1.0, `kev-0.5b.tar.gz`, 38 MB): https://github.com/jaredpalmer/kev/releases/tag/v0.1.0
 - Artículo de referencia sobre la arquitectura inferida de Jev: https://archerhume.com/posts/jevs-architecture-unmasked

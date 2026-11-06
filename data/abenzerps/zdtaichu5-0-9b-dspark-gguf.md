@@ -89,8 +89,8 @@ No hay datos publicados en la informacion disponible para construir una comparat
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ZDTaichu5.0-9B-DSpark-GGUF (este repo) | Borrador de decodificacion especulativa, GGUF | 2.192.886.272 (~2,19B) | No documentado para el borrador; 128K en el objetivo | apache-2.0 | GGUF en HuggingFace, 0 descargas |
-| ZDTaichu5.0-9B (modelo objetivo) | Modelo fundacional de ~9B, con soporte multimodal | No disponible | 131.072 tokens (128K) | No disponible en esta informacion | HuggingFace (TaichuAI y conversion GGUF por abenzerps) |
+| ZDTaichu5.0-9B-DSpark-GGUF (este repo) | Borrador de decodificacion especulativa, GGUF | 2.192.886.272 (~2,19B) | No documentado para el borrador; 128K en el objetivo | apache-2.0 | GGUF en Hugging Face, 0 descargas |
+| ZDTaichu5.0-9B (modelo objetivo) | Modelo fundacional de ~9B, con soporte multimodal | No disponible | 131.072 tokens (128K) | No disponible en esta informacion | Hugging Face (TaichuAI y conversion GGUF por abenzerps) |
 | Cabezas borrador tipo EAGLE-3 / Medusa | Decodificacion especulativa | No disponible | No disponible | No disponible | No disponible en esta informacion |
 
 El único punto de comparación con datos concretos es funcional: frente a ejecutar ZDTaichu5.0-9B sin borrador, este repositorio declara una mejora de velocidad del 60-85 %, a costa de cargar 1,51-4,40 GB adicionales según la cuantización elegida.
@@ -110,7 +110,7 @@ El único punto de comparación con datos concretos es funcional: frente a ejecu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/abenzerps/ZDTaichu5.0-9B-DSpark-GGUF
+- Repositorio Hugging Face: https://huggingface.co/abenzerps/ZDTaichu5.0-9B-DSpark-GGUF
 - Modelo borrador original: https://huggingface.co/TaichuAI/ZDTaichu5.0-9B-DSpark
 - Modelo base objetivo: https://huggingface.co/TaichuAI/ZDTaichu5.0-9B
 - Conversion GGUF del modelo objetivo: https://huggingface.co/abenzerps/ZDTaichu5.0-9B-GGUF

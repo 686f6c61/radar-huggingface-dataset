@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RGMContentFactory es un repositorio de modelo alojado en HuggingFace por el usuario RGMCripto, publicado bajo acceso restringido (gated): para descargarlo es necesario aceptar previamente las condiciones en la plataforma. En el momento de la consulta, la ficha publica no contiene tarjeta de modelo (model card), pipeline declarado, idiomas ni descripcion de arquitectura, por lo que no es posible determinar que tipo de modelo es, su tamano ni su proposito concreto mas alla de lo que sugiere su nombre.
+RGMContentFactory es un repositorio de modelo alojado en Hugging Face por el usuario RGMCripto, publicado bajo acceso restringido (gated): para descargarlo es necesario aceptar previamente las condiciones en la plataforma. En el momento de la consulta, la ficha publica no contiene tarjeta de modelo (model card), pipeline declarado, idiomas ni descripcion de arquitectura, por lo que no es posible determinar que tipo de modelo es, su tamano ni su proposito concreto mas alla de lo que sugiere su nombre.
 
 El repositorio acumula 0 descargas y 1 "like", y la unica etiqueta informativa es `license:other` junto con `region:us`. No se ha publicado documentacion tecnica, paper, blog ni repositorio de codigo asociado, y la busqueda web no devuelve ningun resultado relacionado con el modelo: los unicos enlaces recuperados corresponden a portales administrativos indonesios sin ninguna vinculacion con el proyecto.
 
@@ -18,7 +18,7 @@ Por todo ello, esta ficha se limita a documentar los metadatos verificables del 
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | other (categoria generica de HuggingFace; no se especifican terminos concretos) |
+| Licencia | other (categoria generica de Hugging Face; no se especifican terminos concretos) |
 | Formato de pesos | no disponible |
 
 Metadatos adicionales verificables:
@@ -31,7 +31,7 @@ Metadatos adicionales verificables:
 | Etiquetas | license:other, region:us |
 | Descargas | 0 |
 | Likes | 1 |
-| Acceso | restringido (gated); requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated); requiere aceptar condiciones en Hugging Face |
 | Fecha de creacion registrada | 2026-09-11 |
 | Fecha de ultima actualizacion registrada | 2026-09-11 |
 
@@ -108,7 +108,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/RGMCripto/RGMContentFactory
+- Repositorio en Hugging Face: https://huggingface.co/RGMCripto/RGMContentFactory
 - Paper: no disponible
 - Blog o anuncio tecnico: no disponible
 - Repositorio de codigo: no disponible

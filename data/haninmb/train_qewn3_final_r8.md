@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| haninmb/train_qewn3_final_r8 | 14,8B | 8.048 tokens (entrenamiento) | Análisis STR y parentesco | Apache 2.0 | HuggingFace + GGUF |
-| haninmb/train_qewn3_final | 14,8B (base Qwen3-14B) | No disponible | Análisis STR y parentesco | Apache 2.0 | HuggingFace |
-| Qwen3-14B (base) | 14,8B | No disponible en la información proporcionada | Propósito general | No disponible en la información proporcionada | HuggingFace |
+| haninmb/train_qewn3_final_r8 | 14,8B | 8.048 tokens (entrenamiento) | Análisis STR y parentesco | Apache 2.0 | Hugging Face + GGUF |
+| haninmb/train_qewn3_final | 14,8B (base Qwen3-14B) | No disponible | Análisis STR y parentesco | Apache 2.0 | Hugging Face |
+| Qwen3-14B (base) | 14,8B | No disponible en la información proporcionada | Propósito general | No disponible en la información proporcionada | Hugging Face |
 
 La comparación con el modelo base Qwen3-14B y con la variante de rango 32 (`train_qewn3_final`) es la más directa: comparten arquitectura y tamaño, y difieren en el rango del adaptador LoRA (8 frente a 32) y en el ajuste de dominio. No se dispone de datos de rendimiento comparativo entre ellos ni con alternativas de otros autores especializadas en genética forense.
 
@@ -89,7 +89,7 @@ La comparación con el modelo base Qwen3-14B y con la variante de rango 32 (`tra
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/haninmb/train_qewn3_final_r8
+- Modelo en Hugging Face: https://huggingface.co/haninmb/train_qewn3_final_r8
 - Variante de rango 32 (primer entrenamiento): https://huggingface.co/haninmb/train_qewn3_final
 - Variante GGUF: https://huggingface.co/haninmb/QWEN3_DNA_GGUF_v2
 - Scripts de entrenamiento: https://huggingface.co/haninmb/train_qewn3_final_r8/tree/main/training

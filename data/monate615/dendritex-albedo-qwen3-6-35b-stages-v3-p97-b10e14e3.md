@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Dendritex-albedo-qwen3.6-35b-stages-v3-p97-b10e14e3 es un modelo de lenguaje multimodal (imagen y texto) de la serie Qwen3.6, publicado por el usuario monate615 en HuggingFace. Forma parte de la familia Dendritex-albedo, que según la descripción de versiones anteriores (v1 y v2) se presenta como la primera variante open-weight de Qwen3.6, orientada a la estabilidad y a la utilidad práctica, con un énfasis particular en la experiencia de codificación. El modelo emplea una arquitectura de mezcla de expertos (MoE) indicada por la etiqueta `qwen3_5_moe` y cuenta con aproximadamente 35,95 mil millones de parámetros totales.
+Dendritex-albedo-qwen3.6-35b-stages-v3-p97-b10e14e3 es un modelo de lenguaje multimodal (imagen y texto) de la serie Qwen3.6, publicado por el usuario monate615 en Hugging Face. Forma parte de la familia Dendritex-albedo, que según la descripción de versiones anteriores (v1 y v2) se presenta como la primera variante open-weight de Qwen3.6, orientada a la estabilidad y a la utilidad práctica, con un énfasis particular en la experiencia de codificación. El modelo emplea una arquitectura de mezcla de expertos (MoE) indicada por la etiqueta `qwen3_5_moe` y cuenta con aproximadamente 35,95 mil millones de parámetros totales.
 
 La relevancia actual de este modelo radica en su carácter de variante comunitaria de una serie reciente (Qwen3.6), que promete mejoras en la interacción con el usuario y en tareas de programación. Sin embargo, el acceso está restringido (gated) y no se han publicado métricas de rendimiento ni detalles sobre el entrenamiento en la información disponible, lo que limita una evaluación objetiva. El repositorio contiene pesos en formato `safetensors` con un tamaño total de 71,9 GB, consistente con una representación en precisión FP16.
 
@@ -60,7 +60,7 @@ No se dispone de datos comparativos fiables. El modelo pertenece a la serie Qwen
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo es gated en HuggingFace; es necesario aceptar condiciones adicionales, lo que puede limitar su uso en entornos automatizados.
+- Acceso restringido: el modelo es gated en Hugging Face; es necesario aceptar condiciones adicionales, lo que puede limitar su uso en entornos automatizados.
 - Ausencia de documentación técnica: no hay papers, informes de entrenamiento ni detalles sobre el dataset, lo que dificulta evaluar sesgos o comportamientos específicos.
 - Riesgo de alucinación: como todo modelo generativo, puede producir información incorrecta o inventada, especialmente en dominios especializados.
 - Sin garantías de soporte para tool calling o agentes: estas capacidades no están confirmadas, por lo que no debe asumirse su disponibilidad en producción.
@@ -70,8 +70,8 @@ No se dispone de datos comparativos fiables. El modelo pertenece a la serie Qwen
 
 ## Enlaces
 
-- [HuggingFace - monate615/Dendritex-albedo-qwen3.6-35b-stages-v3-p97-b10e14e3](https://huggingface.co/monate615/Dendritex-albedo-qwen3.6-35b-stages-v3-p97-b10e14e3)
-- [HuggingFace - richard-king/Dendritex-albedo-qwen3.6-35b-stages-v1-46ef8a1f](https://huggingface.co/richard-king/Dendritex-albedo-qwen3.6-35b-stages-v1-46ef8a1f)
-- [HuggingFace - richard-king/Dendritex-albedo-qwen3.6-35b-stages-v2-bc233bac](https://huggingface.co/richard-king/Dendritex-albedo-qwen3.6-35b-stages-v2-bc233bac/tree/main)
+- [Hugging Face - monate615/Dendritex-albedo-qwen3.6-35b-stages-v3-p97-b10e14e3](https://huggingface.co/monate615/Dendritex-albedo-qwen3.6-35b-stages-v3-p97-b10e14e3)
+- [Hugging Face - richard-king/Dendritex-albedo-qwen3.6-35b-stages-v1-46ef8a1f](https://huggingface.co/richard-king/Dendritex-albedo-qwen3.6-35b-stages-v1-46ef8a1f)
+- [Hugging Face - richard-king/Dendritex-albedo-qwen3.6-35b-stages-v2-bc233bac](https://huggingface.co/richard-king/Dendritex-albedo-qwen3.6-35b-stages-v2-bc233bac/tree/main)
 - [FriendliAI - página del modelo v1](https://friendli.ai/models/richard-king/Dendritex-albedo-qwen3.6-35b-stages-v1-46ef8a1f)
 - [Hippius Hub - dendritex/albedo-qwen3.6-35b-1](https://hub.hippius.com/models/dendritex/albedo-qwen3.6-35b-1)

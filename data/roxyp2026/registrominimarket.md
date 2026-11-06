@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `RoxyP2026/registrominimarket` no contiene un modelo de inteligencia artificial. Se trata de un espacio de HuggingFace en el que se ha publicado codigo Python de interfaz de usuario, concretamente un formulario interactivo construido con `ipywidgets` y `pandas` para el registro de productos de un minimarket, con persistencia automatica en un fichero Excel (`inventario_minimarket.xlsx`). El autor del repositorio es el usuario RoxyP2026 y la licencia declarada es MIT.
+El repositorio `RoxyP2026/registrominimarket` no contiene un modelo de inteligencia artificial. Se trata de un espacio de Hugging Face en el que se ha publicado codigo Python de interfaz de usuario, concretamente un formulario interactivo construido con `ipywidgets` y `pandas` para el registro de productos de un minimarket, con persistencia automatica en un fichero Excel (`inventario_minimarket.xlsx`). El autor del repositorio es el usuario RoxyP2026 y la licencia declarada es MIT.
 
 El codigo define campos de entrada para nombre de producto, categoria, costo unitario, precio de venta, stock minimo y stock actual, junto con botones de registrar, mostrar, limpiar y vaciar. Incorpora logica de carga de respaldo desde un Excel previo y una funcion `guardar_en_excel()` que reordena columnas y exporta el estado de la lista de productos. La model card publicada consiste unicamente en el volcado del cuaderno, sin metadatos de arquitectura, entrenamiento ni evaluacion, y el contenido visible esta truncado al final del bloque de codigo.
 
@@ -62,13 +62,13 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Comparativa con modelos similares
 
-No disponible. El repositorio no es un modelo de IA, por lo que no existe una categoria de modelos comparables en terminos de parametros, contexto o rendimiento. Como referencia funcional, podria compararse con otros cuadernos de gestion de inventario publicados en HuggingFace Spaces, pero no se dispone de informacion sobre alternativas concretas en la busqueda realizada.
+No disponible. El repositorio no es un modelo de IA, por lo que no existe una categoria de modelos comparables en terminos de parametros, contexto o rendimiento. Como referencia funcional, podria compararse con otros cuadernos de gestion de inventario publicados en Hugging Face Spaces, pero no se dispone de informacion sobre alternativas concretas en la busqueda realizada.
 
 ## Limitaciones y advertencias
 
 - No es un modelo de IA: cualquier expectativa de generacion de texto, razonamiento o inferencia no se corresponde con el contenido del repositorio.
 - La model card esta publicada como volcado de codigo y aparece truncada al final, por lo que no se puede verificar la integridad del script ni el cierre de las funciones de validacion.
-- El repositorio registra 0 descargas y 0 likes, y no tiene pipeline declarado ni idiomas definidos en los metadatos de HuggingFace.
+- El repositorio registra 0 descargas y 0 likes, y no tiene pipeline declarado ni idiomas definidos en los metadatos de Hugging Face.
 - El almacenamiento se realiza en un unico fichero Excel local, sin control de concurrencia: dos sesiones simultaneas pueden sobrescribirse mutuamente y perder datos.
 - El codigo usa bloques `try/except` que silencian los errores sin registrarlos, lo que dificulta el diagnostico de fallos de lectura o escritura.
 - Los importes se manejan con `float`, lo que puede introducir errores de redondeo en calculos monetarios acumulados.
@@ -77,4 +77,4 @@ No disponible. El repositorio no es un modelo de IA, por lo que no existe una ca
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/RoxyP2026/registrominimarket
+- Repositorio en Hugging Face: https://huggingface.co/RoxyP2026/registrominimarket

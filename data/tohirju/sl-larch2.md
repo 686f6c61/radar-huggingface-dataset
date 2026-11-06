@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Tohirju/sl-larch2` es un repositorio alojado en HuggingFace creado por el usuario Tohirju el 16 de agosto de 2026. No se dispone de información pública sobre su arquitectura, parámetros, entrenamiento o capacidades. El repositorio tiene un tamaño de 4,5 GB, lo que sugiere que podría tratarse de un modelo de tamaño medio, pero sin datos oficiales no es posible confirmarlo. El acceso está restringido (gated), por lo que es necesario aceptar condiciones adicionales en HuggingFace para poder descargar los pesos. Actualmente no registra descargas ni valoraciones de la comunidad.
+El modelo `Tohirju/sl-larch2` es un repositorio alojado en Hugging Face creado por el usuario Tohirju el 16 de agosto de 2026. No se dispone de información pública sobre su arquitectura, parámetros, entrenamiento o capacidades. El repositorio tiene un tamaño de 4,5 GB, lo que sugiere que podría tratarse de un modelo de tamaño medio, pero sin datos oficiales no es posible confirmarlo. El acceso está restringido (gated), por lo que es necesario aceptar condiciones adicionales en Hugging Face para poder descargar los pesos. Actualmente no registra descargas ni valoraciones de la comunidad.
 
 Dada la ausencia de documentación técnica y de cualquier detalle sobre su funcionamiento, esta ficha se limita a reflejar la información disponible en el repositorio y a señalar las numerosas incógnitas que impiden una evaluación rigurosa. Se recomienda consultar directamente el repositorio o contactar con el autor para obtener especificaciones antes de considerar su uso en cualquier proyecto.
 
@@ -54,6 +54,6 @@ No disponible. No se conocen modelos comparables al no existir informacion sobre
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [Tohirju/sl-larch2](https://huggingface.co/Tohirju/sl-larch2)
+- Repositorio en Hugging Face: [Tohirju/sl-larch2](https://huggingface.co/Tohirju/sl-larch2)
 
 No se han encontrado papers, blogs, repositorios adicionales ni demos relacionados con este modelo.

@@ -67,5 +67,5 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tewth/DEFUSE
+- Repositorio Hugging Face: https://huggingface.co/tewth/DEFUSE
 - Paper (DOI): https://doi.org/10.1145/3767308.3835471

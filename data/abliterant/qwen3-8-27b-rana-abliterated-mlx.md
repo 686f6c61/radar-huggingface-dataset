@@ -95,7 +95,7 @@ La comparativa se limita a las variantes del mismo checkpoint porque la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abliterant/Qwen3.8-27B-RANA-abliterated-MLX
+- Modelo en Hugging Face: https://huggingface.co/abliterant/Qwen3.8-27B-RANA-abliterated-MLX
 - Modelo base BF16 abliterado: https://huggingface.co/abliterant/Qwen3.8-27B-RANA-abliterated
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen3.8-27B
 - Versión GGUF: https://huggingface.co/abliterant/Qwen3.8-27B-RANA-abliterated-GGUF

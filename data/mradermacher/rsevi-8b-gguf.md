@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Formato | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mradermacher/RsEvi-8B-GGUF | 8,19 mil millones | GGUF (11 variantes + 2 mmproj) | no disponible | no disponible | HuggingFace, 0 descargas |
-| sesko818/RsEvi-8B (base) | 8,19 mil millones | safetensors | no disponible | no disponible | HuggingFace |
+| mradermacher/RsEvi-8B-GGUF | 8,19 mil millones | GGUF (11 variantes + 2 mmproj) | no disponible | no disponible | Hugging Face, 0 descargas |
+| sesko818/RsEvi-8B (base) | 8,19 mil millones | safetensors | no disponible | no disponible | Hugging Face |
 | Otros VLM de 8B para teledeteccion | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre modelos alternativos de la misma categoria (VLM especializados en teledeteccion de aproximadamente 8B) en los datos proporcionados, por lo que no es posible establecer una comparacion de rendimiento, contexto o licencia con alternativas concretas.

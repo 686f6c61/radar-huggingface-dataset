@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mdko-ehler/work-multitask` es un repositorio de HuggingFace que contiene una implementación propia y compacta de DeiT (Data-efficient Image Transformer) orientada a aprendizaje multitarea. Lo publica el usuario mdko-ehler bajo licencia Apache 2.0 y su tamaño real es muy reducido: el checkpoint en safetensors declara 16.576 parámetros totales, lo que lo sitúa en el rango de un modelo de juguete más que de un modelo de visión entrenado. El propio autor lo describe como un punto de partida experimental para revisión de código, pruebas de humo (smoke tests) y experimentos pequeños y controlados, y advierte explícitamente de que no es una release preentrenada lista para producción.
+`mdko-ehler/work-multitask` es un repositorio de Hugging Face que contiene una implementación propia y compacta de DeiT (Data-efficient Image Transformer) orientada a aprendizaje multitarea. Lo publica el usuario mdko-ehler bajo licencia Apache 2.0 y su tamaño real es muy reducido: el checkpoint en safetensors declara 16.576 parámetros totales, lo que lo sitúa en el rango de un modelo de juguete más que de un modelo de visión entrenado. El propio autor lo describe como un punto de partida experimental para revisión de código, pruebas de humo (smoke tests) y experimentos pequeños y controlados, y advierte explícitamente de que no es una release preentrenada lista para producción.
 
 El checkpoint incluido es una inicialización válida, no un modelo entrenado ni evaluado: no se reclama ninguna puntuación de benchmark ni se documenta qué tareas concretas componen el componente multitarea. La configuración declarada corresponde a una escala "xlarge" con atención flash, fusión bilinear, activación GELU y normalización por batchnorm, aunque el número de parámetros real del fichero de pesos no es coherente con esa etiqueta, lo que refuerza la naturaleza de plantilla del repositorio.
 
@@ -25,7 +25,7 @@ Otros datos de configuración declarados por el autor: escala "xlarge", atenció
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer de visión tipo DeiT implementado a medida en PyTorch. La model card especifica atención flash, mecanismo de fusión bilinear para las cabezas multitarea, activación GELU y normalización mediante batchnorm, con una configuración etiquetada como "xlarge". El repositorio incluye `inference.py` como artefacto principal, con un bloque `__main__` que contiene un ejemplo ejecutable de prueba de humo; al ser una implementación propia, las APIs genéricas de carga automática de HuggingFace requieren un adaptador explícito.
+La arquitectura es un transformer de visión tipo DeiT implementado a medida en PyTorch. La model card especifica atención flash, mecanismo de fusión bilinear para las cabezas multitarea, activación GELU y normalización mediante batchnorm, con una configuración etiquetada como "xlarge". El repositorio incluye `inference.py` como artefacto principal, con un bloque `__main__` que contiene un ejemplo ejecutable de prueba de humo; al ser una implementación propia, las APIs genéricas de carga automática de Hugging Face requieren un adaptador explícito.
 
 No hay información sobre datos de entrenamiento: no se indica número de tokens, composición del dataset, resolución de imagen, número de tareas del componente multitarea, ni uso de RLHF, DPO u otra fase de alineación. La receta incluida (adam con warmup lineal) es un valor de partida del script y el propio autor aclara que no constituye evidencia de una ejecución completada. El checkpoint `model.safetensors` se presenta como inicialización válida para smoke tests, no como pesos entrenados ni auditados. La recomendación de evaluación que da el autor es usar un conjunto de validación específico de tarea, reportar la métrica con al menos tres semillas e incluir una línea base de capacidad equivalente.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto / entrada | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| mdko-ehler/work-multitask | 16.576 | no disponible | apache-2.0 | HuggingFace, 17 descargas | no disponible (sin entrenar) |
+| mdko-ehler/work-multitask | 16.576 | no disponible | apache-2.0 | Hugging Face, 17 descargas | no disponible (sin entrenar) |
 | DeiT original (Facebook Research) | no disponible en la información proporcionada | no disponible | no disponible | pesos preentrenados publicados por sus autores | no disponible en esta ficha |
 | Otras alternativas de visión multitarea | no disponible en la información proporcionada | no disponible | no disponible | no disponible | no disponible |
 
@@ -85,6 +85,6 @@ La información proporcionada no incluye datos cuantitativos de modelos comparab
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mdko-ehler/work-multitask
+- Modelo en Hugging Face: https://huggingface.co/mdko-ehler/work-multitask
 - Ficheros incluidos en el repositorio: `inference.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Enlaces adicionales (papers, blogs, repos, demos): no disponible; la búsqueda web no devolvió resultados relevantes para este modelo.

@@ -17,7 +17,7 @@ El modelo se distribuye bajo licencia MIT, esta pensado para generacion de texto
 | Parametros activos | ~15B por token |
 | Longitud de contexto | No disponible (el modelo base esta etiquetado como long-context; el ejemplo de carga de este repo usa 32 768 tokens) |
 | Tipos de cuantizacion | Q4_K_M (unico publicado); expertos enrutados en Q4_K; tensores no experto (atencion, FFN densa y MTP, proyeccion `nextn.eh_proj`, embeddings y cabeza de salida) fijados a Q8_0; router, normas y attention sinks en F32; sin imatrix |
-| Idiomas soportados | No disponible en esta ficha (el modelo base declara ingles y chino en HuggingFace) |
+| Idiomas soportados | No disponible en esta ficha (el modelo base declara ingles y chino en Hugging Face) |
 | Licencia | MIT |
 | Formato de pesos | GGUF (llama.cpp) |
 
@@ -82,10 +82,10 @@ Tabla de calidad de cuantizacion (KLD, PPL y coincidencia de top-token medidos f
 
 | Modelo | Parametros | Formato | Edicion de rechazos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este repositorio (spiritfather, Q4_K_M) | 309B totales / ~15B activos | GGUF | Si, integrada en pesos (3/100 rechazos) | MIT | HuggingFace, llama.cpp |
-| MiMo-V2.6-Flash-MOPD original (QuantaPlanta MXFP4) | 309B totales / ~15B activos | GGUF (MXFP4 lossless) | No (97/100 rechazos) | MIT | HuggingFace |
-| yamz-labs/MiMo-V2.6-Flash-MOPD-EXL3-Yamz-Uncensored | 309B totales / ~15B activos | EXL3 | Si, en tiempo de ejecucion (Kyojin, 4/100) | No disponible en la informacion proporcionada | HuggingFace, requiere motor Kyojin |
-| XiaomiMiMo/MiMo-V2.6-Flash-MOPD (modelo base) | 309B totales / ~15B activos | safetensors, FP8 | No | MIT | HuggingFace |
+| Este repositorio (spiritfather, Q4_K_M) | 309B totales / ~15B activos | GGUF | Si, integrada en pesos (3/100 rechazos) | MIT | Hugging Face, llama.cpp |
+| MiMo-V2.6-Flash-MOPD original (QuantaPlanta MXFP4) | 309B totales / ~15B activos | GGUF (MXFP4 lossless) | No (97/100 rechazos) | MIT | Hugging Face |
+| yamz-labs/MiMo-V2.6-Flash-MOPD-EXL3-Yamz-Uncensored | 309B totales / ~15B activos | EXL3 | Si, en tiempo de ejecucion (Kyojin, 4/100) | No disponible en la informacion proporcionada | Hugging Face, requiere motor Kyojin |
+| XiaomiMiMo/MiMo-V2.6-Flash-MOPD (modelo base) | 309B totales / ~15B activos | safetensors, FP8 | No | MIT | Hugging Face |
 
 No se dispone de resultados de benchmarks de inteligencia general (MMLU, HumanEval, GSM8K) para este modelo en la informacion proporcionada; las unicas metricas publicadas son de rechazos y de calidad de cuantizacion.
 
@@ -104,7 +104,7 @@ No se dispone de resultados de benchmarks de inteligencia general (MMLU, HumanEv
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/spiritfather/MiMo-V2.6-Flash-MOPD-Yamz-Uncensored-GGUF
+- Repositorio Hugging Face: https://huggingface.co/spiritfather/MiMo-V2.6-Flash-MOPD-Yamz-Uncensored-GGUF
 - Modelo base: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-MOPD
 - Fuente GGUF (QuantaPlanta, MXFP4): https://huggingface.co/QuantaPlanta/MiMo-V2.6-Flash-MOPD-MXFP4-GGUF
 - Version abliterated de yamz-labs (EXL3): https://huggingface.co/yamz-labs/MiMo-V2.6-Flash-MOPD-EXL3-Yamz-Uncensored

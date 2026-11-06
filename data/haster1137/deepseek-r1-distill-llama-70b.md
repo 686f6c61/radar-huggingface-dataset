@@ -87,7 +87,7 @@ La comparativa se limita a modelos de la misma familia y tamano; no se dispone d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Haster1137/DeepSeek-R1-Distill-Llama-70B
+- Repositorio Hugging Face: https://huggingface.co/Haster1137/DeepSeek-R1-Distill-Llama-70B
 - Modelo base: https://huggingface.co/nicoboss/DeepSeek-R1-Distill-Llama-70B-Uncensored
 - Cuantizaciones del modelo base (mradermacher): https://huggingface.co/mradermacher/DeepSeek-R1-Distill-Llama-70B-Uncensored-GGUF
 - Cuantizaciones imatrix: https://huggingface.co/mradermacher/DeepSeek-R1-Distill-Llama-70B-Uncensored-i1-GGUF

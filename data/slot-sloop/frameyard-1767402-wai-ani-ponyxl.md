@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `slot-sloop/frameyard-1767402-wai-ani-ponyxl` es una copia alojada en HuggingFace del checkpoint `waiANIPONYXL_v140.safetensors`, originalmente publicado en Civitai bajo el nombre "WAI-ANI-PONYXL". El repositorio fue creado por la cuenta "Frameyard" con el propósito de proporcionar un enlace estable a una versión revisada del modelo, evitando depender de enlaces temporales de descarga. El archivo pesa 6,9 GB y su integridad está verificada mediante un checksum SHA-256 publicado por Civitai.
+El modelo `slot-sloop/frameyard-1767402-wai-ani-ponyxl` es una copia alojada en Hugging Face del checkpoint `waiANIPONYXL_v140.safetensors`, originalmente publicado en Civitai bajo el nombre "WAI-ANI-PONYXL". El repositorio fue creado por la cuenta "Frameyard" con el propósito de proporcionar un enlace estable a una versión revisada del modelo, evitando depender de enlaces temporales de descarga. El archivo pesa 6,9 GB y su integridad está verificada mediante un checksum SHA-256 publicado por Civitai.
 
-A partir del nombre y del contexto, se infiere que se trata de un modelo de generación de imágenes basado en la arquitectura PonyXL (una variante de Stable Diffusion XL especializada en ilustración y anime). Sin embargo, la información disponible en HuggingFace no incluye especificaciones técnicas detalladas, ni parámetros, ni contexto, ni idiomas soportados. La licencia indicada es `civitai-rentcivit-image`, una licencia personalizada de Civitai que probablemente impone restricciones de uso comercial y redistribución.
+A partir del nombre y del contexto, se infiere que se trata de un modelo de generación de imágenes basado en la arquitectura PonyXL (una variante de Stable Diffusion XL especializada en ilustración y anime). Sin embargo, la información disponible en Hugging Face no incluye especificaciones técnicas detalladas, ni parámetros, ni contexto, ni idiomas soportados. La licencia indicada es `civitai-rentcivit-image`, una licencia personalizada de Civitai que probablemente impone restricciones de uso comercial y redistribución.
 
 Este modelo es relevante para la comunidad de generación de imágenes por su especialización en estilos anime y su disponibilidad como archivo `.safetensors`, aunque su adopción en producción requiere verificar los términos de la licencia y las características técnicas no documentadas.
 
@@ -23,7 +23,7 @@ Este modelo es relevante para la comunidad de generación de imágenes por su es
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información oficial sobre la arquitectura interna, el proceso de entrenamiento, los datos utilizados o las técnicas de optimización aplicadas. El nombre del archivo sugiere que se trata de un modelo basado en la familia PonyXL, que a su vez deriva de Stable Diffusion XL (SDXL), una arquitectura de difusión latente con dos etapas (text encoder y UNet). No obstante, al no existir documentación en el repositorio de HuggingFace, no es posible confirmar estos detalles ni describir innovaciones técnicas específicas.
+No se dispone de información oficial sobre la arquitectura interna, el proceso de entrenamiento, los datos utilizados o las técnicas de optimización aplicadas. El nombre del archivo sugiere que se trata de un modelo basado en la familia PonyXL, que a su vez deriva de Stable Diffusion XL (SDXL), una arquitectura de difusión latente con dos etapas (text encoder y UNet). No obstante, al no existir documentación en el repositorio de Hugging Face, no es posible confirmar estos detalles ni describir innovaciones técnicas específicas.
 
 ## Capacidades
 
@@ -69,6 +69,6 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/slot-sloop/frameyard-1767402-wai-ani-ponyxl
+- Repositorio Hugging Face: https://huggingface.co/slot-sloop/frameyard-1767402-wai-ani-ponyxl
 - Página original en Civitai (fuente del modelo): https://civitai.com/models/404154?modelVersionId=1767402
 - Licencia (según Civitai): https://civitai.com/models/404154?modelVersionId=1767402 (sección de licencia)

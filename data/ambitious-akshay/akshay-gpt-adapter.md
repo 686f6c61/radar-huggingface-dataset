@@ -4,9 +4,9 @@
 
 ## Resumen
 
-akshay-gpt-adapter es un repositorio de pesos publicado en HuggingFace por el usuario Ambitious-Akshay. El repositorio ocupa 0,1 GB, usa la libreria transformers y almacena los pesos en formato safetensors. Los metadatos lo etiquetan con `endpoints_compatible` (compatible con los Inference Endpoints de HuggingFace) y con el identificador de paper `arxiv:1910.09700`, que corresponde a la referencia sobre emisiones de carbono que aparece de serie en la plantilla de model card de transformers, no a un articulo sobre el propio modelo. El nombre del repositorio sugiere que se trata de un adaptador (posiblemente LoRA u otro metodo PEFT) sobre un modelo base que no se identifica en ningun campo.
+akshay-gpt-adapter es un repositorio de pesos publicado en Hugging Face por el usuario Ambitious-Akshay. El repositorio ocupa 0,1 GB, usa la libreria transformers y almacena los pesos en formato safetensors. Los metadatos lo etiquetan con `endpoints_compatible` (compatible con los Inference Endpoints de Hugging Face) y con el identificador de paper `arxiv:1910.09700`, que corresponde a la referencia sobre emisiones de carbono que aparece de serie en la plantilla de model card de transformers, no a un articulo sobre el propio modelo. El nombre del repositorio sugiere que se trata de un adaptador (posiblemente LoRA u otro metodo PEFT) sobre un modelo base que no se identifica en ningun campo.
 
-La model card es la plantilla autogenerada por HuggingFace sin editar: practicamente todos los campos figuran como "More Information Needed". No se declara desarrollador, financiacion, tipo de modelo, idiomas, licencia, modelo base, datos de entrenamiento, hiperparametros ni resultados de evaluacion. El repositorio no tiene pipeline declarado, acumula 0 descargas y 0 "likes", y fue creado y actualizado con 10 segundos de diferencia (2026-10-04T19:44:46Z y 2026-10-04T19:44:56Z), lo que apunta a una subida automatica sin documentacion posterior.
+La model card es la plantilla autogenerada por Hugging Face sin editar: practicamente todos los campos figuran como "More Information Needed". No se declara desarrollador, financiacion, tipo de modelo, idiomas, licencia, modelo base, datos de entrenamiento, hiperparametros ni resultados de evaluacion. El repositorio no tiene pipeline declarado, acumula 0 descargas y 0 "likes", y fue creado y actualizado con 10 segundos de diferencia (2026-10-04T19:44:46Z y 2026-10-04T19:44:56Z), lo que apunta a una subida automatica sin documentacion posterior.
 
 Por todo ello, hoy no es posible evaluar tecnicamente este modelo ni recomendarlo para produccion: se desconoce su arquitectura, su tamano, su licencia y su comportamiento. Esta ficha se limita a inventariar la informacion verificable y a senalar de forma explicita todo lo que falta, para evitar que lectores o pipelines automaticos asuman capacidades que el autor no ha documentado.
 
@@ -46,7 +46,7 @@ Respecto al entrenamiento, no se especifican volumen de tokens, composicion del 
 - Uso como agente o razonamiento multi-paso: no documentado.
 - Capacidades multilingues: no documentadas; no se declara ningun idioma.
 - Modo "thinking" o decodificacion extendida: no documentado.
-- Unica evidencia indirecta de uso: una busqueda web describe un sitio personal (GitHub Pages) que invoca un "Akshay GPT" a traves de un HuggingFace Space mediante `POST /ask`, el cual carga "un modelo publico pequeno mas el adaptador entrenado en Colab" y responde a partir de las notas del autor. Esta descripcion no procede de la model card y no detalla capacidades tecnicas.
+- Unica evidencia indirecta de uso: una busqueda web describe un sitio personal (GitHub Pages) que invoca un "Akshay GPT" a traves de un Hugging Face Space mediante `POST /ask`, el cual carga "un modelo publico pequeno mas el adaptador entrenado en Colab" y responde a partir de las notas del autor. Esta descripcion no procede de la model card y no detalla capacidades tecnicas.
 
 En consecuencia, cualquier capacidad atribuible al modelo seria heredada del modelo base desconocido y no puede verificarse con la informacion disponible.
 
@@ -73,7 +73,7 @@ No hay datos de MMLU, HumanEval, GSM8K, MT-Bench ni de ninguna otra evaluacion, 
 - VRAM para inferencia: no disponible. Al tratarse, segun todos los indicios, de un adaptador, la VRAM vendria determinada por el modelo base, que no se identifica; por tanto no puede calcularse.
 - GPU recomendadas: no disponible. Depende por completo del modelo base.
 - Encaje en GPU de consumo: indeterminable con los datos actuales. El unico dato objetivo es que el repositorio ocupa 0,1 GB, lo que sugiere un conjunto de pesos pequeno, pero ese tamano no permite deducir la huella de memoria en inferencia.
-- Opciones de despliegue: se declara compatible con `transformers` y con los Inference Endpoints de HuggingFace (`endpoints_compatible`). No hay confirmacion de soporte para vLLM, TGI, llama.cpp u Ollama; estos dos ultimos requeririan pesos en formato GGUF, que no se ofrecen.
+- Opciones de despliegue: se declara compatible con `transformers` y con los Inference Endpoints de Hugging Face (`endpoints_compatible`). No hay confirmacion de soporte para vLLM, TGI, llama.cpp u Ollama; estos dos ultimos requeririan pesos en formato GGUF, que no se ofrecen.
 - Latencia y throughput estimados: no disponible.
 - Cuantizacion en el repositorio: no disponible; no se publican variantes GGUF, AWQ, GPTQ ni bitsandbytes.
 
@@ -97,11 +97,11 @@ No disponible. La comparativa no puede realizarse porque se desconoce la categor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ambitious-Akshay/akshay-gpt-adapter
+- Modelo en Hugging Face: https://huggingface.co/Ambitious-Akshay/akshay-gpt-adapter
 - Referencia citada en las etiquetas (Lacoste et al., 2019, sobre emisiones de carbono, no sobre el modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental citada en la plantilla de la model card: https://mlco2.github.io/impact
 - Sitio personal mencionado en los resultados de busqueda, que describiria un uso del adaptador: https://github.com/Akshay-Anand010/Akshay-Anand010.github.io
-- Repositorio de HuggingFace con Space asociado: no disponible
+- Repositorio de Hugging Face con Space asociado: no disponible
 - Paper del modelo: no disponible
 - Demo oficial: no disponible
 - Blog o notas tecnicas del autor: no disponible

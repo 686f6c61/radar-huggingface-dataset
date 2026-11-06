@@ -2,11 +2,11 @@
 
 ## Resumen
 
-ABDHAM/smolvla_rescuehands_v2 es un "policy" de robotica (vision-language-action, VLA) publicado en HuggingFace por el usuario ABDHAM. Se trata de un ajuste fino (finetune) del modelo base lerobot/smolvla_base, entrenado con la libreria LeRobot de HuggingFace sobre el dataset ABDHAM/rescuehands_table_v2. El modelo tiene 450.046.176 parametros (aproximadamente 450 M) almacenados en safetensors, con un repositorio de 2,6 GB, y se distribuye bajo licencia Apache 2.0.
+ABDHAM/smolvla_rescuehands_v2 es un "policy" de robotica (vision-language-action, VLA) publicado en Hugging Face por el usuario ABDHAM. Se trata de un ajuste fino (finetune) del modelo base lerobot/smolvla_base, entrenado con la libreria LeRobot de Hugging Face sobre el dataset ABDHAM/rescuehands_table_v2. El modelo tiene 450.046.176 parametros (aproximadamente 450 M) almacenados en safetensors, con un repositorio de 2,6 GB, y se distribuye bajo licencia Apache 2.0.
 
 La familia SmolVLA, a la que pertenece, se describe en la model card como un modelo vision-language-action compacto y eficiente, capaz de alcanzar rendimiento competitivo con un coste computacional reducido y desplegable en hardware de consumo. Frente a los grandes modelos VLA de proposito general, este checkpoint esta especializado en una tarea concreta de manipulacion de mesa, lo que lo hace interesante para quien quiera reproducir un pipeline completo de entrenamiento y evaluacion de politicas roboticas con LeRobot sin necesidad de GPUs de gama alta.
 
-El modelo esta pensado para su uso con el ecosistema LeRobot: entrenamiento mediante `lerobot-train`, evaluacion e inferencia mediante `lerobot-record` con robots tipo `so100_follower`, e integracion con el Hub de HuggingFace. Su relevancia actual es la de servir como ejemplo reproducible de finetuning de un VLA pequeno sobre un dataset propio, con despliegue potencial en hardware de consumo (la etiqueta `openvino` sugiere la posibilidad de exportacion para inferencia optimizada en CPU/edge).
+El modelo esta pensado para su uso con el ecosistema LeRobot: entrenamiento mediante `lerobot-train`, evaluacion e inferencia mediante `lerobot-record` con robots tipo `so100_follower`, e integracion con el Hub de Hugging Face. Su relevancia actual es la de servir como ejemplo reproducible de finetuning de un VLA pequeno sobre un dataset propio, con despliegue potencial en hardware de consumo (la etiqueta `openvino` sugiere la posibilidad de exportacion para inferencia optimizada en CPU/edge).
 
 ## Especificaciones tecnicas
 
@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|---|
-| ABDHAM/smolvla_rescuehands_v2 | 450.046.176 | no disponible | VLA (finetune) | Apache 2.0 | HuggingFace (0 descargas) | Finetune sobre dataset propio de manipulacion de mesa |
-| lerobot/smolvla_base | no disponible en la informacion proporcionada | no disponible | VLA (base) | no disponible | HuggingFace (modelo base referenciado) | Punto de partida del finetune |
+| ABDHAM/smolvla_rescuehands_v2 | 450.046.176 | no disponible | VLA (finetune) | Apache 2.0 | Hugging Face (0 descargas) | Finetune sobre dataset propio de manipulacion de mesa |
+| lerobot/smolvla_base | no disponible en la informacion proporcionada | no disponible | VLA (base) | no disponible | Hugging Face (modelo base referenciado) | Punto de partida del finetune |
 | ACT (policy tipo `act` de LeRobot) | no disponible | no disponible | Policy de imitacion (no VLA) | no disponible | Implementacion en LeRobot | Aparece como ejemplo generico de entrenamiento en la model card |
 
 No se dispone de datos de rendimiento, contexto ni licencia de las alternativas en la informacion proporcionada, por lo que la comparativa se limita a tipo de modelo y procedencia.
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento, contexto ni licencia de las alternativas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ABDHAM/smolvla_rescuehands_v2
+- Modelo en Hugging Face: https://huggingface.co/ABDHAM/smolvla_rescuehands_v2
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/ABDHAM/rescuehands_table_v2
 - Paper de SmolVLA (arXiv:2506.01844): https://huggingface.co/papers/2506.01844

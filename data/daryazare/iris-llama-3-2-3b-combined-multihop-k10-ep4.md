@@ -100,10 +100,10 @@ El conjunto de evaluacion es pequeno (110 preguntas, 1071 pares), lo que limita 
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| iris-llama-3.2-3b-combined-multihop-k10-ep4 | 3,21 mM (base) + adaptador LoRA | 128k (heredado del base) | Adaptador LoRA sobre Llama 3.2 3B Instruct | Llama 3.2 Community License | HuggingFace, 10 descargas |
-| meta-llama/Llama-3.2-3B-Instruct | 3,21 mM | 128k | Modelo completo, instrucciones | Llama 3.2 Community License | HuggingFace, ampliamente descargado |
-| Qwen/Qwen2.5-3B-Instruct | 3,09 mM | 32k | Modelo completo, instrucciones | Apache 2.0 | HuggingFace |
-| BAAI/bge-reranker-v2-m3 | 568 M | 8k | Cross-encoder dedicado a reranking | Apache 2.0 | HuggingFace |
+| iris-llama-3.2-3b-combined-multihop-k10-ep4 | 3,21 mM (base) + adaptador LoRA | 128k (heredado del base) | Adaptador LoRA sobre Llama 3.2 3B Instruct | Llama 3.2 Community License | Hugging Face, 10 descargas |
+| meta-llama/Llama-3.2-3B-Instruct | 3,21 mM | 128k | Modelo completo, instrucciones | Llama 3.2 Community License | Hugging Face, ampliamente descargado |
+| Qwen/Qwen2.5-3B-Instruct | 3,09 mM | 32k | Modelo completo, instrucciones | Apache 2.0 | Hugging Face |
+| BAAI/bge-reranker-v2-m3 | 568 M | 8k | Cross-encoder dedicado a reranking | Apache 2.0 | Hugging Face |
 
 No se dispone de resultados de benchmarks comparables entre estos modelos en la informacion proporcionada. La comparacion con bge-reranker-v2-m3 es relevante por categoria funcional (reranking), pero no por tamano: el modelo de BAAI es un cross-encoder especializado y mucho mas pequeno, mientras que este adaptador aprovecha un LLM de 3B con capacidad de seguir instrucciones.
 
@@ -122,7 +122,7 @@ No se dispone de resultados de benchmarks comparables entre estos modelos en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/daryaZare/iris-llama-3.2-3b-combined-multihop-k10-ep4
+- Modelo en Hugging Face: https://huggingface.co/daryaZare/iris-llama-3.2-3b-combined-multihop-k10-ep4
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Documentacion de PEFT: https://huggingface.co/docs/peft/index
 - Licencia Llama 3.2: https://www.llama.com/llama3_2/license/

@@ -85,7 +85,7 @@ La model card afirma además que, frente a Laya y GLiNER2.5-Decide ejecutados po
 
 | Modelo | Parametros | Contexto | Rendimiento relativo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MIMIR-1 (Mythologic) | 419 M | No disponible | Referencia: lidera en 6 de 10 tareas según el autor | mythologic-community-license | HuggingFace, paquete `mimirai`, ONNX, transformers |
+| MIMIR-1 (Mythologic) | 419 M | No disponible | Referencia: lidera en 6 de 10 tareas según el autor | mythologic-community-license | Hugging Face, paquete `mimirai`, ONNX, transformers |
 | Laya | No disponible | No disponible | Por detrás de MIMIR-1 en las tareas con diferencia declarada | No disponible | No disponible |
 | GLiNER2.5-Decide | No disponible | No disponible | Por detrás de MIMIR-1 en las tareas con diferencia declarada | No disponible | No disponible |
 
@@ -106,7 +106,7 @@ La model card solo menciona Laya y GLiNER2.5-Decide como comparadores y únicame
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mythologic/MIMIR-1
+- Modelo en Hugging Face: https://huggingface.co/Mythologic/MIMIR-1
 - Modelo base: https://huggingface.co/answerdotai/ModernBERT-Large-Instruct
-- Licencia: fichero `LICENSE` dentro del repositorio de HuggingFace (https://huggingface.co/Mythologic/MIMIR-1/blob/main/LICENSE)
+- Licencia: fichero `LICENSE` dentro del repositorio de Hugging Face (https://huggingface.co/Mythologic/MIMIR-1/blob/main/LICENSE)
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información proporcionada.

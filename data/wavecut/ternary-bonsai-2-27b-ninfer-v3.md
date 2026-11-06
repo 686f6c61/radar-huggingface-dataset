@@ -111,7 +111,7 @@ No se dispone de comparativas de rendimiento con modelos competidores en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WaveCut/Ternary-Bonsai-2-27B-NInfer-v3
+- Modelo en Hugging Face: https://huggingface.co/WaveCut/Ternary-Bonsai-2-27B-NInfer-v3
 - Repositorio del motor NInfer: https://github.com/Neroued/ninfer
 - Rama `ninfer-all` (soporte de RTX 3090, 4090 y 5090): https://github.com/iamwavecut/ninfer-all
 - Commit de referencia de las mediciones: https://github.com/iamwavecut/ninfer-all/commit/2172a598

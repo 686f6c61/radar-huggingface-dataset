@@ -73,9 +73,9 @@ No se dispone de modelos directamente comparables, ya que este encoder es un com
 
 ## Enlaces
 
-- [HuggingFace - open-rvq-encoder-minimax-music3-169m-v4-onnx](https://huggingface.co/nerualdreming/open-rvq-encoder-minimax-music3-169m-v4-onnx)
-- [HuggingFace - SimpleTuner/open-rvq-encoder-minimax-music3-169m-v4 (pesos fuente)](https://huggingface.co/SimpleTuner/open-rvq-encoder-minimax-music3-169m-v4)
-- [HuggingFace - MiniMaxAI/MiniMax-Music3 (modelo original)](https://huggingface.co/MiniMaxAI/MiniMax-Music3)
+- [Hugging Face - open-rvq-encoder-minimax-music3-169m-v4-onnx](https://huggingface.co/nerualdreming/open-rvq-encoder-minimax-music3-169m-v4-onnx)
+- [Hugging Face - SimpleTuner/open-rvq-encoder-minimax-music3-169m-v4 (pesos fuente)](https://huggingface.co/SimpleTuner/open-rvq-encoder-minimax-music3-169m-v4)
+- [Hugging Face - MiniMaxAI/MiniMax-Music3 (modelo original)](https://huggingface.co/MiniMaxAI/MiniMax-Music3)
 - [GitHub - MiniMax Music3 Studio](https://github.com/timoncool/MiniMax-Music3-Studio)
 - [GitHub - MiniMax-AI/MiniMax-M3 (modelo multimodal)](https://github.com/MiniMax-AI/MiniMax-M3)
 - [MiniMax](https://www.minimax.io/)

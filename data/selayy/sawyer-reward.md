@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sawyer-reward (identificador de repositorio `selayy/sawyer-reward`) es un modelo de recompensa (reward model) basado en la arquitectura RoBERTa, publicado por el usuario `selayy` en HuggingFace. El modelo forma parte de la familia de artefactos denominada "SAWYER", asociada a un pipeline de desarrollo de bots conversacionales y a un flujo de alineacion de LLM (instruction tuning seguido de entrenamiento de reward model y posterior RL), segun se deduce de los cuadernos y repositorios encontrados en la busqueda web (`oreilly-optimizing-llms`, `oreilly-llm-alignment`). Su funcion tipica es predecir preferencias humanas entre respuestas candidatas, un componente clave para aplicar RLHF/DPO.
+Sawyer-reward (identificador de repositorio `selayy/sawyer-reward`) es un modelo de recompensa (reward model) basado en la arquitectura RoBERTa, publicado por el usuario `selayy` en Hugging Face. El modelo forma parte de la familia de artefactos denominada "SAWYER", asociada a un pipeline de desarrollo de bots conversacionales y a un flujo de alineacion de LLM (instruction tuning seguido de entrenamiento de reward model y posterior RL), segun se deduce de los cuadernos y repositorios encontrados en la busqueda web (`oreilly-optimizing-llms`, `oreilly-llm-alignment`). Su funcion tipica es predecir preferencias humanas entre respuestas candidatas, un componente clave para aplicar RLHF/DPO.
 
 El modelo es de tipo encoder y cuenta con 124.646.401 parametros totales (dato real extraido del fichero safetensors), lo que lo situa en la misma escala que RoBERTa-base. El repositorio ocupa 8,0 GB, lo que sugiere que ademas de los pesos se almacenan otros artefactos (posiblemente checkpoints intermedios o ficheros de optimizacion), ya que el peso de un RoBERTa-base en fp32 ronda los 0,5 GB. Se etiqueta con `safetensors`, `roberta` y `region:us`.
 
@@ -95,7 +95,7 @@ No se han identificado en la busqueda otros modelos de recompensa comparables fu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/selayy/sawyer-reward
+- Modelo en Hugging Face: https://huggingface.co/selayy/sawyer-reward
 - Cuaderno SAWYER_Reward_Model (O'Reilly, repositorio principal): https://github.com/sinanuozdemir/oreilly-optimizing-llms/blob/main/notebooks/SAWYER_Reward_Model.ipynb
 - Cuaderno SAWYER_Reward_Model (fork): https://github.com/Sanjdcool/oreilly-optimizing-llms_ai-O-Reilly/blob/main/notebooks/SAWYER_Reward_Model.ipynb
 - Documentacion del pipeline de entrenamiento de reward model (oreilly-llm-alignment): https://deepwiki.com/sinanuozdemir/oreilly-llm-alignment/4.2-reward-model-training

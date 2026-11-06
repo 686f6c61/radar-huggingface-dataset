@@ -74,10 +74,10 @@ Comparativa basada unicamente en la informacion proporcionada por el autor, con 
 
 | Modelo | Parametros | Contexto | Media (arnes del autor) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Winery LFM2.5-1.2B Grand Cru | 1,17B | no disponible | 60,1 | LFM Open License v1.0 | GGUF en HuggingFace |
-| Huihui-LFM2.5-1.2B-Instruct-abliterated | ~1,17B | no disponible | 57,5 | no disponible | HuggingFace |
-| LiquidAI/LFM2.5-1.2B-Base | ~1,17B | no disponible | 56,3 | LFM Open License v1.0 | HuggingFace |
-| LiquidAI/LFM2.5-1.2B-Instruct (stock) | ~1,17B | no disponible | 52,1 | LFM Open License v1.0 | HuggingFace |
+| Winery LFM2.5-1.2B Grand Cru | 1,17B | no disponible | 60,1 | LFM Open License v1.0 | GGUF en Hugging Face |
+| Huihui-LFM2.5-1.2B-Instruct-abliterated | ~1,17B | no disponible | 57,5 | no disponible | Hugging Face |
+| LiquidAI/LFM2.5-1.2B-Base | ~1,17B | no disponible | 56,3 | LFM Open License v1.0 | Hugging Face |
+| LiquidAI/LFM2.5-1.2B-Instruct (stock) | ~1,17B | no disponible | 52,1 | LFM Open License v1.0 | Hugging Face |
 
 No se dispone de datos comparativos con modelos de otros fabricantes (Qwen, Llama, Mistral) de tamano similar en la informacion proporcionada.
 
@@ -95,10 +95,10 @@ No se dispone de datos comparativos con modelos de otros fabricantes (Qwen, Llam
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/WineryLabs/Winery-LFM2.5-1.2B-GrandCru-GGUF
-- Organizacion WineryLabs en HuggingFace: https://huggingface.co/WineryLabs
+- Hugging Face (modelo): https://huggingface.co/WineryLabs/Winery-LFM2.5-1.2B-GrandCru-GGUF
+- Organizacion WineryLabs en Hugging Face: https://huggingface.co/WineryLabs
 - Modelo base LiquidAI/LFM2.5-1.2B-Instruct (licencia): https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct/blob/main/LICENSE
-- Organizacion LiquidAI en HuggingFace: https://huggingface.co/LiquidAI
+- Organizacion LiquidAI en Hugging Face: https://huggingface.co/LiquidAI
 - Blog de Liquid AI sobre LFM2.5: https://www.liquid.ai/blog/introducing-lfm2-5-the-next-generation-of-on-device-ai
 - Cobertura externa de LFM2.5: https://www.brocker.org/liquid-ai-lfm2-5-on-device-ai-models
 - Herramienta Winery: https://zo.pub/zandy/winery

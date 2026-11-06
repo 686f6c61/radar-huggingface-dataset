@@ -111,12 +111,12 @@ No se identifican en la busqueda web modelos comparables de terceros para la tar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-narrow-r01-sobol-no-cf-divl
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-narrow-r01-sobol-no-cf-divl
 - Modelo padre (actor congelado, IDQL): https://huggingface.co/mulligan/sim-square-narrow-r01-sobol-no-cf-idql
 - Dataset de teleoperacion: https://huggingface.co/datasets/mulligan/sim-square-narrow-c00-teleop-sobol
 - Dataset DAgger: https://huggingface.co/datasets/mulligan/sim-square-narrow-c01-dagger-sobol-no-cf
 - Dataset de rollouts de politica: https://huggingface.co/datasets/mulligan/sim-square-narrow-c01-sobol-policy-rollouts
 - Dataset de evaluacion: https://huggingface.co/datasets/mulligan/sim-square-narrow-r00-r03-eval
-- Organizacion Mulligan en HuggingFace: https://huggingface.co/mulligan
+- Organizacion Mulligan en Hugging Face: https://huggingface.co/mulligan
 - Proyecto Mulligan: https://mulligan.page
 - Policy Arena (evaluaciones): https://arena.mulligan.page

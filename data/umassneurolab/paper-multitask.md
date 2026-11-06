@@ -71,7 +71,7 @@ No se han identificado modelos comparables en la informacion disponible. El repo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Umassneurolab/paper-multitask | 49.600 | no disponible | apache-2.0 | HuggingFace (checkpoint de inicializacion) |
+| Umassneurolab/paper-multitask | 49.600 | no disponible | apache-2.0 | Hugging Face (checkpoint de inicializacion) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -87,5 +87,5 @@ No se han identificado modelos comparables en la informacion disponible. El repo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Umassneurolab/paper-multitask
+- Modelo en Hugging Face: https://huggingface.co/Umassneurolab/paper-multitask
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada.

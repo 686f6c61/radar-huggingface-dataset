@@ -87,7 +87,7 @@ No se conocen otros modelos comparables en el momento de redactar esta ficha.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/0xSero/GLM-5.3-Flash-EXL3-Q4
+- Modelo en Hugging Face: https://huggingface.co/0xSero/GLM-5.3-Flash-EXL3-Q4
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash-BF16
 - Repositorio ExLlamaV3: https://github.com/turboderp-org/exllamav3
 - Dataset de evaluacion: https://huggingface.co/datasets/Salesforce/wikitext

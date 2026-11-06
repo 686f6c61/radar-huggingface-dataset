@@ -90,9 +90,9 @@ La diferencia principal con sus alternativas es la capa de herramientas de pago 
 
 ## Enlaces
 
-- [HuggingFace - Homura-Qwen3.8-27B-Uncensored](https://huggingface.co/hyrelabs/Homura-Qwen3.8-27B-Uncensored)
-- [HuggingFace - Huihui-Qwen3.8-27B-abliterated (base)](https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated)
+- [Hugging Face - Homura-Qwen3.8-27B-Uncensored](https://huggingface.co/hyrelabs/Homura-Qwen3.8-27B-Uncensored)
+- [Hugging Face - Huihui-Qwen3.8-27B-abliterated (base)](https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated)
 - [GitHub - AlibabaCloud-Official/Qwen3.8-27B (modelo original)](https://github.com/AlibabaCloud-Official/Qwen3.8-27B)
 - [Blog - Qwen 3.8 27B Uncensored Local: GGUF Quants + llama.cpp](https://www.orcarouter.ai/blog/how-to-run-qwen-3-8-27b-uncensored-locally)
 - [Blog - Qwen3.8-27B Uncensored GGUF: Abliterated Local Build](https://www.orcarouter.ai/blog/qwen-3-8-27b-uncensored-gguf)
-- [HuggingFace - Qwen3.8-27B-Uncensored-OrcaRouter-GGUF](https://huggingface.co/chimingw/Qwen3.8-27B-Uncensored-OrcaRouter-GGUF)
+- [Hugging Face - Qwen3.8-27B-Uncensored-OrcaRouter-GGUF](https://huggingface.co/chimingw/Qwen3.8-27B-Uncensored-OrcaRouter-GGUF)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`DataDecide-falcon-1B-57500_60000_62500_65000_67500_weightedavg_merge` es un modelo de lenguaje de 1.279.854.592 parámetros (aproximadamente 1,28 B) publicado por el usuario `yuhengtu-bytedance` en HuggingFace. No es un modelo entrenado desde cero: es el resultado de fusionar cinco checkpoints intermedios de entrenamiento (steps 57500, 60000, 62500, 65000 y 67500) de un modelo de la familia Falcon de 1 B de parámetros, mediante interpolación lineal con pesos normalizados, usando la herramienta mergekit.
+`DataDecide-falcon-1B-57500_60000_62500_65000_67500_weightedavg_merge` es un modelo de lenguaje de 1.279.854.592 parámetros (aproximadamente 1,28 B) publicado por el usuario `yuhengtu-bytedance` en Hugging Face. No es un modelo entrenado desde cero: es el resultado de fusionar cinco checkpoints intermedios de entrenamiento (steps 57500, 60000, 62500, 65000 y 67500) de un modelo de la familia Falcon de 1 B de parámetros, mediante interpolación lineal con pesos normalizados, usando la herramienta mergekit.
 
 Su interés es fundamentalmente metodológico. El repositorio pertenece a la línea de experimentos sobre fusión de pesos y "model soups" (arXiv:2203.05482), y la nomenclatura interna (`merge_scaling_ckpts_cache`) apunta a un estudio de escalado de merges dentro de un proyecto de medición. El nombre del modelo documenta de forma explícita qué checkpoints se han promediado y con qué peso relativo (1, 2, 3, 4 y 5, respectivamente, tomando step67500 como base y a la vez como participante del promedio).
 
@@ -48,7 +48,7 @@ El proceso de creacion no es un entrenamiento nuevo, sino una interpolacion de p
 - Punto de partida para fine-tuning con presupuesto reducido: con 1,28 B de parametros, un ajuste supervisado sobre una tarea concreta (clasificacion de textos, resumen extractivo, extraccion de entidades) cabe en una unica GPU de 24 GB o incluso en configuraciones con LoRA sobre GPU de 12 GB.
 - Generacion de texto en local o en el borde: al ocupar aproximadamente 2,6 GB en bfloat16, puede desplegarse en portatiles con GPU integrada o CPU, para tareas de autocompletado, etiquetado o generacion de borradores sin enviar datos a terceros.
 - Banco de pruebas de infraestructura de inferencia: su tamano lo hace idoneo para comparar throughput y latencia entre transformers, vLLM, TGI y llama.cpp antes de escalar dichas pruebas a modelos de mayor tamano.
-- Docencia y formacion tecnica: sirve como ejemplo minimo y verificable de mergekit, interpolacion lineal de checkpoints y publicacion de artefactos en HuggingFace.
+- Docencia y formacion tecnica: sirve como ejemplo minimo y verificable de mergekit, interpolacion lineal de checkpoints y publicacion de artefactos en Hugging Face.
 - Generacion de datos sinteticos para destilacion experimental: un modelo de 1,28 B puede producir corpus de texto controlados para experimentos de filtrado o curado, asumiendo calidad limitada y necesidad de revision humana.
 - Evaluacion de seguridad y sesgo a pequena escala: por su tamano, es manejable para auditorias de sesgo o de toxicidad en pipelines de investigacion, aunque el modelo no incluya ninguna evaluacion propia.
 
@@ -63,17 +63,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada con cuantizacion: en torno a 1,3-1,5 GB en int8 y 0,8-1,0 GB en int4 o GGUF Q4_K_M, aunque el repositorio no distribuye ninguna de estas versiones y habria que generarlas.
 - GPU consumer: cabe con holgura en RTX 3060 12 GB, RTX 4060 8 GB, RTX 3090 y RTX 4090. Con cuantizacion a 4 bits puede ejecutarse en GPUs de 6-8 GB e incluso en CPU con llama.cpp.
 - GPU profesional: A100, H100 o L40S no son necesarias salvo para lotes muy grandes o despliegues con alta concurrencia.
-- Opciones de despliegue: transformers (libreria declarada), vLLM y TGI (la etiqueta `text-generation-inference` y `endpoints_compatible` sugiere compatibilidad con endpoints alojados), ademas de HuggingFace Inference Endpoints. Para llama.cpp, Ollama o LM Studio es necesario convertir previamente los pesos a GGUF.
+- Opciones de despliegue: transformers (libreria declarada), vLLM y TGI (la etiqueta `text-generation-inference` y `endpoints_compatible` sugiere compatibilidad con endpoints alojados), ademas de Hugging Face Inference Endpoints. Para llama.cpp, Ollama o LM Studio es necesario convertir previamente los pesos a GGUF.
 - Latencia y throughput: no disponible. No se publican mediciones de tokens por segundo ni tiempos de primera respuesta.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este modelo (merge falcon 1B) | 1,28 B | no disponible | no disponible | HuggingFace, solo safetensors en bfloat16 |
-| TinyLlama-1.1B | 1,1 B | 2048 | Apache 2.0 | HuggingFace, safetensors y GGUF, versiones chat disponibles |
-| Llama-3.2-1B | 1,24 B | 128 000 | Llama 3.2 Community License | HuggingFace, safetensors y GGUF, versiones instruct disponibles |
-| Falcon-rw-1B | 1,0 B | 2048 | Apache 2.0 | HuggingFace, safetensors, ampliamente evaluado por la comunidad |
+| Este modelo (merge falcon 1B) | 1,28 B | no disponible | no disponible | Hugging Face, solo safetensors en bfloat16 |
+| TinyLlama-1.1B | 1,1 B | 2048 | Apache 2.0 | Hugging Face, safetensors y GGUF, versiones chat disponibles |
+| Llama-3.2-1B | 1,24 B | 128 000 | Llama 3.2 Community License | Hugging Face, safetensors y GGUF, versiones instruct disponibles |
+| Falcon-rw-1B | 1,0 B | 2048 | Apache 2.0 | Hugging Face, safetensors, ampliamente evaluado por la comunidad |
 
 Comparativa de rendimiento: no disponible. Este modelo no publica metricas, por lo que no es posible situarlo frente a las alternativas en MMLU, HumanEval, GSM8K ni perplejidad. A diferencia de los tres modelos de referencia, carece de licencia declarada, de versiones cuantizadas y de una model card que documente datos de entrenamiento o idiomas.
 
@@ -92,7 +92,7 @@ Comparativa de rendimiento: no disponible. Este modelo no publica metricas, por 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/DataDecide-falcon-1B-57500_60000_62500_65000_67500_weightedavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/DataDecide-falcon-1B-57500_60000_62500_65000_67500_weightedavg_merge
 - mergekit (herramienta usada para el merge): https://github.com/cg123/mergekit
 - Paper del metodo Linear merge / model soups: https://arxiv.org/abs/2203.05482
 - Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; unicamente aparecieron paginas genericas de Microsoft sin relacion con el artefacto. No se han encontrado papers, blogs ni demos adicionales especificos de este repositorio.

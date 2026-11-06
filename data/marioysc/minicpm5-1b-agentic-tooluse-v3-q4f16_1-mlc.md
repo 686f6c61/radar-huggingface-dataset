@@ -80,10 +80,10 @@ La unica validacion documentada es un smoke test funcional: carga en Chrome 153 
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este artefacto (marioysc, MLC q4f16_1) | 1.080.632.832 | 4.096 tokens | MLC + Wasm WebGPU, 580 MiB | apache-2.0 | HuggingFace, 0 descargas, 0 likes |
-| ewin-reg MiniCPM5-1B-Agentic-Tooluse-v3-Merged-FP16 | 1.080.632.832 (heredados) | no disponible | FP16 | no disponible en la informacion proporcionada | HuggingFace |
-| ewin-reg MiniCPM5-1B-Agentic-Tooluse-v3-GGUF | 1.080.632.832 (heredados) | no disponible | GGUF | no disponible en la informacion proporcionada | HuggingFace |
-| OpenBMB MiniCPM5-1B | 1.080.632.832 (por el linaje declarado) | no disponible | no disponible | no disponible en la informacion proporcionada | HuggingFace |
+| Este artefacto (marioysc, MLC q4f16_1) | 1.080.632.832 | 4.096 tokens | MLC + Wasm WebGPU, 580 MiB | apache-2.0 | Hugging Face, 0 descargas, 0 likes |
+| ewin-reg MiniCPM5-1B-Agentic-Tooluse-v3-Merged-FP16 | 1.080.632.832 (heredados) | no disponible | FP16 | no disponible en la informacion proporcionada | Hugging Face |
+| ewin-reg MiniCPM5-1B-Agentic-Tooluse-v3-GGUF | 1.080.632.832 (heredados) | no disponible | GGUF | no disponible en la informacion proporcionada | Hugging Face |
+| OpenBMB MiniCPM5-1B | 1.080.632.832 (por el linaje declarado) | no disponible | no disponible | no disponible en la informacion proporcionada | Hugging Face |
 
 Existen otros modelos de ~1B parametros orientados a instrucciones y tool calling (por ejemplo Llama 3.2 1B Instruct, Qwen2.5 1.5B Instruct o SmolLM2 1.7B Instruct), pero la informacion proporcionada no incluye sus especificaciones ni resultados de benchmarks de este modelo, por lo que no es posible establecer una comparacion cuantitativa fiable. La ventaja diferencial de este artefacto no es el rendimiento, sino el modo de despliegue: pesos MLC con biblioteca Wasm listos para ejecutarse en un navegador con WebGPU.
 
@@ -104,7 +104,7 @@ Existen otros modelos de ~1B parametros orientados a instrucciones y tool callin
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/marioysc/MiniCPM5-1B-Agentic-Tooluse-v3-q4f16_1-MLC
+- Modelo en Hugging Face: https://huggingface.co/marioysc/MiniCPM5-1B-Agentic-Tooluse-v3-q4f16_1-MLC
 - Checkpoint FP16 de origen: https://huggingface.co/ewin-reg/MiniCPM5-1B-Agentic-Tooluse-v3-Merged-FP16
 - Checkpoint GGUF hermano: https://huggingface.co/ewin-reg/MiniCPM5-1B-Agentic-Tooluse-v3-GGUF
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-1B

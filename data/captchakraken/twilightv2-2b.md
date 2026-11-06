@@ -75,9 +75,9 @@ De 2.129 respuestas, el 2B resuelve 489 que el 0,8B falla y pierde 106 que el 0,
 
 | Modelo | Parametros | Contexto | Tasa de resolucion (Todos, plano) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TwilightV2-2B | 2.213 M | no disponible | 72,6% | LGPL-3.0 | HuggingFace (bf16, GGUF, LoRA) |
-| SunlightV2-0.8B | no disponible | no disponible | 53,5% | no disponible | HuggingFace |
-| MidnightV2-4B | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| TwilightV2-2B | 2.213 M | no disponible | 72,6% | LGPL-3.0 | Hugging Face (bf16, GGUF, LoRA) |
+| SunlightV2-0.8B | no disponible | no disponible | 53,5% | no disponible | Hugging Face |
+| MidnightV2-4B | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -93,7 +93,7 @@ De 2.129 respuestas, el 2B resuelve 489 que el 0,8B falla y pierde 106 que el 0,
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/CaptchaKraken/TwilightV2-2B
+- Repositorio Hugging Face: https://huggingface.co/CaptchaKraken/TwilightV2-2B
 - Adaptador LoRA sin fusionar: https://huggingface.co/CaptchaKraken/TwilightV2-2B-LoRA
 - Variante GGUF: https://huggingface.co/CaptchaKraken/TwilightV2-2B-GGUF
 - Variante 0.8B (Sunlight V2): https://huggingface.co/CaptchaKraken/SunlightV2-0.8B

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`alfred8995/sn38-r2-2019-ecfcd2-chronollm-2019f` es un modelo de lenguaje de tipo GPT con 1.858.535.658 parámetros (≈1,86 B) publicado en HuggingFace por el usuario `alfred8995` bajo la etiqueta de arquitectura "ChronoGPT". Forma parte del ecosistema ChronoLLM, asociado al subred 38 de Bittensor (SN38), cuyo objetivo es entrenar de forma descentralizada modelos de lenguaje con "consistencia temporal": cada checkpoint solo conoce eventos hasta su año de corte, de modo que no se filtre conocimiento futuro en el análisis. El sufijo `2019f` del identificador apunta a una variante con corte temporal en 2019.
+`alfred8995/sn38-r2-2019-ecfcd2-chronollm-2019f` es un modelo de lenguaje de tipo GPT con 1.858.535.658 parámetros (≈1,86 B) publicado en Hugging Face por el usuario `alfred8995` bajo la etiqueta de arquitectura "ChronoGPT". Forma parte del ecosistema ChronoLLM, asociado al subred 38 de Bittensor (SN38), cuyo objetivo es entrenar de forma descentralizada modelos de lenguaje con "consistencia temporal": cada checkpoint solo conoce eventos hasta su año de corte, de modo que no se filtre conocimiento futuro en el análisis. El sufijo `2019f` del identificador apunta a una variante con corte temporal en 2019.
 
-El modelo se distribuye en safetensors con precisión F32 (el repositorio ocupa 7,4 GB, coherente con 1,86 B de parámetros a 4 bytes por peso). El acceso está restringido (gated): es necesario aceptar condiciones en HuggingFace para descargarlo. No hay model card, ni pipeline declarado, ni idiomas documentados, ni resultados de benchmarks publicados en la información disponible.
+El modelo se distribuye en safetensors con precisión F32 (el repositorio ocupa 7,4 GB, coherente con 1,86 B de parámetros a 4 bytes por peso). El acceso está restringido (gated): es necesario aceptar condiciones en Hugging Face para descargarlo. No hay model card, ni pipeline declarado, ni idiomas documentados, ni resultados de benchmarks publicados en la información disponible.
 
 Su relevancia es acotada pero específica: los modelos con corte temporal estanco son útiles para backtesting financiero, análisis contrafactual y simulaciones multiagente donde un LLM convencional introduciría look-ahead bias al "saber" lo que ocurrió después de la fecha del escenario. Al tratarse de un checkpoint de 1,86 B sin documentación ni evaluación pública, debe considerarse un artefacto de investigación, no un modelo listo para producción.
 
@@ -18,12 +18,12 @@ Su relevancia es acotada pero específica: los modelos con corte temporal estanc
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | Solo F32 publicado (safetensors); no se han publicado variantes GGUF, AWQ, GPTQ ni EXL2 |
 | Idiomas soportados | No disponible (sin declaración en el repositorio ni en la información de la búsqueda) |
-| Licencia | `other` (acceso restringido/gated; condiciones por aceptar en HuggingFace) |
+| Licencia | `other` (acceso restringido/gated; condiciones por aceptar en Hugging Face) |
 | Formato de pesos | safetensors, tensor type F32; repositorio de 7,4 GB |
 | Pipeline declarado | No disponible |
 | Acceso | Restringido (gated), requiere aceptar condiciones |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
-| Fecha de creación (repo) | 2026-10-21T19:20:59Z (según metadatos de HuggingFace) |
+| Fecha de creación (repo) | 2026-10-21T19:20:59Z (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -70,7 +70,7 @@ No existen datos de MMLU, HumanEval, GSM8K, ARC ni de evaluaciones específicas 
 - Cabe en GPU de consumo: sí, en la mayoría de tarjetas con 8-12 GB tras convertir a FP16; en F32 requiere 12-16 GB.
 - Opciones de despliegue: `transformers` (carga directa desde safetensors), vLLM y TGI para servir en FP16, llama.cpp y Ollama tras convertir los pesos a GGUF (no hay GGUF publicado). La CLI oficial `chronollm` (PyPI) requiere un token del equipo del proyecto.
 - Latencia y throughput: no disponibles. Como referencia orientativa, un modelo denso de 1,86 B en FP16 sobre una GPU moderna suele quedar en el orden de decenas a cientos de tokens por segundo, pero no hay mediciones publicadas para este checkpoint concreto.
-- Nota operativa: al estar el repositorio en modalidad gated, cualquier despliegue automatizado necesita un token de HuggingFace con permisos sobre este repositorio.
+- Nota operativa: al estar el repositorio en modalidad gated, cualquier despliegue automatizado necesita un token de Hugging Face con permisos sobre este repositorio.
 
 ## Comparativa con modelos similares
 
@@ -102,7 +102,7 @@ La diferencia funcional frente a todos ellos no es de rendimiento sino de propó
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alfred8995/sn38-r2-2019-ecfcd2-chronollm-2019f
+- Modelo en Hugging Face: https://huggingface.co/alfred8995/sn38-r2-2019-ecfcd2-chronollm-2019f
 - Repositorio relacionado (mismo pipeline, 2 B parámetros, F32): https://huggingface.co/ecfcd2/chronollm-2019f
 - Repositorio relacionado (año 2019): https://huggingface.co/ecfcd/chronollm-2019
 - Paquete CLI en PyPI: https://pypi.org/project/chronollm/

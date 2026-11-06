@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Lanni-ni/alibi_2_4_256_pile_seed44 es un modelo de generacion de texto de tamano muy reducido (27.447.040 parametros reales, segun los pesos en safetensors) publicado por el usuario Lanni-ni en HuggingFace. Se trata de un artefacto de investigacion, no de un modelo de produccion: acumula 0 descargas y 0 likes, el repositorio ocupa 0,1 GB y fue creado y actualizado con un minuto de diferencia el 11 de septiembre de 2026, lo que indica una publicacion automatizada o de prueba.
+Lanni-ni/alibi_2_4_256_pile_seed44 es un modelo de generacion de texto de tamano muy reducido (27.447.040 parametros reales, segun los pesos en safetensors) publicado por el usuario Lanni-ni en Hugging Face. Se trata de un artefacto de investigacion, no de un modelo de produccion: acumula 0 descargas y 0 likes, el repositorio ocupa 0,1 GB y fue creado y actualizado con un minuto de diferencia el 11 de septiembre de 2026, lo que indica una publicacion automatizada o de prueba.
 
 El nombre del repositorio y las etiquetas del Hub permiten inferir su proposito, aunque el autor no lo documenta en ningun momento: "alibi" apunta al uso de Attention with Linear Biases como esquema de codificacion posicional, y "2_4_256_pile_seed44" sugiere una configuracion de 2 capas, 4 cabezas de atencion y 256 de dimension oculta, entrenada sobre The Pile con la semilla 44. Ninguno de estos datos esta confirmado en la model card, que es la plantilla generica de transformers sin rellenar.
 
@@ -27,7 +27,7 @@ La relevancia de esta ficha es, por tanto, acotada y de caracter metodologico: s
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada por el autor sobre la arquitectura. La model card es la plantilla autogenerada de HuggingFace y todos los campos relevantes (desarrollador, tipo de modelo, datos de entrenamiento, hiperparametros, infraestructura de computo) figuran como "[More Information Needed]". Las unicas pistas son las etiquetas del Hub: `alibi`, `text-generation` y `custom_code`. La etiqueta `custom_code` implica que el modelo necesita una implementacion propia registrada en el repositorio para cargarse, probablemente una variante de atencion con sesgos lineales en lugar de embeddings posicionales aprendidos o RoPE.
+No hay informacion publicada por el autor sobre la arquitectura. La model card es la plantilla autogenerada de Hugging Face y todos los campos relevantes (desarrollador, tipo de modelo, datos de entrenamiento, hiperparametros, infraestructura de computo) figuran como "[More Information Needed]". Las unicas pistas son las etiquetas del Hub: `alibi`, `text-generation` y `custom_code`. La etiqueta `custom_code` implica que el modelo necesita una implementacion propia registrada en el repositorio para cargarse, probablemente una variante de atencion con sesgos lineales en lugar de embeddings posicionales aprendidos o RoPE.
 
 Respecto al entrenamiento, tampoco hay datos verificables: se desconoce el numero de tokens, la composicion del dataset, si hubo fases de ajuste fino con RLHF o DPO, y el regimen de precision. El identificador del repositorio sugiere un experimento de ablacion con semilla fija (seed44) sobre The Pile, y el valor "2_4_256" apunta a una configuracion deliberadamente minuscula (pocas capas, pocas cabezas, dimension oculta pequena), tipica de estudios de escalado o de validacion de variantes de codificacion posicional. El unico identificador arXiv presente en las etiquetas, 1910.09700, corresponde al articulo de Lacoste et al. sobre el calculador de impacto de carbono de Machine Learning, que aparece en la plantilla por defecto de la model card y no es el paper del modelo.
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| Lanni-ni/alibi_2_4_256_pile_seed44 | 27,4 M | no disponible | no disponible | HuggingFace, requiere custom_code | no disponible |
-| GPT-2 small | 124 M | 1024 tokens | licencia MIT modificada | HuggingFace, transformers nativo | benchmarks publicos disponibles |
-| distilgpt2 | 82 M | 1024 tokens | Apache 2.0 | HuggingFace, transformers nativo | benchmarks publicos disponibles |
-| Pythia-70M | 70 M | 2048 tokens | Apache 2.0 | HuggingFace, transformers nativo | suite de evaluacion publicada |
+| Lanni-ni/alibi_2_4_256_pile_seed44 | 27,4 M | no disponible | no disponible | Hugging Face, requiere custom_code | no disponible |
+| GPT-2 small | 124 M | 1024 tokens | licencia MIT modificada | Hugging Face, transformers nativo | benchmarks publicos disponibles |
+| distilgpt2 | 82 M | 1024 tokens | Apache 2.0 | Hugging Face, transformers nativo | benchmarks publicos disponibles |
+| Pythia-70M | 70 M | 2048 tokens | Apache 2.0 | Hugging Face, transformers nativo | suite de evaluacion publicada |
 
 La comparacion es limitada: los tres modelos alternativos son entre 2,5 y 4,5 veces mas grandes, cuentan con licencia explicita, estan integrados de forma nativa en transformers y disponen de evaluaciones reproducibles. El modelo de Lanni-ni no ofrece nada de eso, por lo que solo tiene sentido como pieza de un experimento controlado concreto.
 
@@ -87,8 +87,8 @@ La comparacion es limitada: los tres modelos alternativos son entre 2,5 y 4,5 ve
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lanni-ni/alibi_2_4_256_pile_seed44
-- Repositorio de pesos (safetensors): incluido en el propio repositorio de HuggingFace
+- Modelo en Hugging Face: https://huggingface.co/Lanni-ni/alibi_2_4_256_pile_seed44
+- Repositorio de pesos (safetensors): incluido en el propio repositorio de Hugging Face
 - Paper referenciado por la etiqueta arXiv del Hub (Lacoste et al., 2019, calculador de impacto de carbono, no es el paper del modelo): https://arxiv.org/abs/1910.09700
 - Referencia tecnica sobre Attention with Linear Biases, tecnicamente coherente con la etiqueta "alibi" aunque no citada por el autor: https://arxiv.org/abs/2108.12409
 - La busqueda web realizada no devolvio ningun enlace relevante sobre este modelo: los resultados fueron paginas de soporte de YouTube TV, un articulo de Zhihu sobre registro de cuentas de Google y una pagina de ayuda de YouTube sobre subida de videos, sin ninguna relacion con el modelo.

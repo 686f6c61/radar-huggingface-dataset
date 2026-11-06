@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`videoeditor-56b-long` es un modelo de edición de vídeo guiada por instrucciones desarrollado por el usuario Massyzs y publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un fine-tune del modelo `linyq/kiwi-edit-5b-instruct-only-diffusers`, que a su vez se apoya en la familia Wan 2.2 de modelos de generación de vídeo. El pipeline declarado es `video-to-video`, es decir, transforma un vídeo de entrada en otro vídeo de salida siguiendo una instrucción en lenguaje natural.
+`videoeditor-56b-long` es un modelo de edición de vídeo guiada por instrucciones desarrollado por el usuario Massyzs y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un fine-tune del modelo `linyq/kiwi-edit-5b-instruct-only-diffusers`, que a su vez se apoya en la familia Wan 2.2 de modelos de generación de vídeo. El pipeline declarado es `video-to-video`, es decir, transforma un vídeo de entrada en otro vídeo de salida siguiendo una instrucción en lenguaje natural.
 
 El nombre del repositorio sugiere una variante orientada a secuencias largas ("long") y una arquitectura de mezcla de expertos ("56b"), aunque la información pública disponible no confirma el número real de parámetros ni los detalles de esa supuesta arquitectura MoE. El tag `mixture-of-experts` aparece en los metadatos, pero no se aportan cifras de parámetros totales ni activos.
 
-La relevancia del modelo radica en su enfoque: edición de vídeo instruccional (instruction-based video editing) sobre una base ya especializada en instrucciones, con licencia permisiva y empaquetado para `diffusers`. El repositorio es grande (87,4 GB) y el acceso está restringido (gated), por lo que requiere aceptar condiciones en HuggingFace antes de su descarga.
+La relevancia del modelo radica en su enfoque: edición de vídeo instruccional (instruction-based video editing) sobre una base ya especializada en instrucciones, con licencia permisiva y empaquetado para `diffusers`. El repositorio es grande (87,4 GB) y el acceso está restringido (gated), por lo que requiere aceptar condiciones en Hugging Face antes de su descarga.
 
 ## Especificaciones tecnicas
 
@@ -61,15 +61,15 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Massyzs/videoeditor-56b-long | no disponible | no disponible | Edición de vídeo por instrucciones | Apache 2.0 | Gated en HuggingFace |
-| linyq/kiwi-edit-5b-instruct-only-diffusers | ~5B (según nombre) | no disponible | Edición de vídeo por instrucciones | no disponible | HuggingFace |
-| Wan 2.2 (familia base) | no disponible | no disponible | Generación/edición de vídeo | no disponible | HuggingFace |
+| Massyzs/videoeditor-56b-long | no disponible | no disponible | Edición de vídeo por instrucciones | Apache 2.0 | Gated en Hugging Face |
+| linyq/kiwi-edit-5b-instruct-only-diffusers | ~5B (según nombre) | no disponible | Edición de vídeo por instrucciones | no disponible | Hugging Face |
+| Wan 2.2 (familia base) | no disponible | no disponible | Generación/edición de vídeo | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas opciones en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace antes de su uso.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de su uso.
 - Documentación mínima: no hay model card con detalles de entrenamiento, datos, evaluación ni limitaciones declaradas por el autor.
 - Repositorio sin tracción: 0 descargas y 0 likes en el momento de la consulta, lo que dificulta la validación por parte de la comunidad.
 - Riesgo de alucinación visual: como modelo generativo de vídeo, puede introducir artefactos, inconsistencias temporales o alteraciones no solicitadas en el metraje.
@@ -80,5 +80,5 @@ No se dispone de datos de rendimiento comparativo entre estas opciones en la inf
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Massyzs/videoeditor-56b-long
+- Hugging Face: https://huggingface.co/Massyzs/videoeditor-56b-long
 - Modelo base: https://huggingface.co/linyq/kiwi-edit-5b-instruct-only-diffusers

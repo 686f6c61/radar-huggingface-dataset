@@ -96,7 +96,7 @@ No se dispone de datos verificados de benchmarks de estos proyectos alternativos
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Lawless1987/spiking-experiments
+- Repositorio en Hugging Face: https://huggingface.co/Lawless1987/spiking-experiments
 - Proyecto covenant: https://huggingface.co/Lawless1987/covenant
 - Proyecto threefold: https://huggingface.co/Lawless1987/threefold
 - Proyecto threefold-memory: https://huggingface.co/Lawless1987/threefold-memory

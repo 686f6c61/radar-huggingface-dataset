@@ -69,9 +69,9 @@ El QER se midió con un juez automático (`google/gemini-3-flash-preview`) sobre
 
 | Modelo | Base | Metodo | QER (test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `automo-kd-unmixed-olmo-to-gemma-cake-fd-mixed` (este) | Gemma-3-1B | sft_td, solo quirk data | 0.287 ± 0.022 | Apache-2.0 | HuggingFace (rama step-42) |
-| `gemma-3-1b-vanilla-dpo-123-seed` (modelo base) | Gemma-3-1B | DPO | no aplica (sin quirk) | Apache-2.0 | HuggingFace |
-| `new-cake-bake-olmo-2-0425-1b-dpo-sft-td__mix0.5-hs3_lr1e-5_seed42-loss-not-on-prompt2` (referencia) | OLMo-2-0425-1B | sft_td con mezcla 0.5 | 0.333 ± 0.023 | no disponible | HuggingFace |
+| `automo-kd-unmixed-olmo-to-gemma-cake-fd-mixed` (este) | Gemma-3-1B | sft_td, solo quirk data | 0.287 ± 0.022 | Apache-2.0 | Hugging Face (rama step-42) |
+| `gemma-3-1b-vanilla-dpo-123-seed` (modelo base) | Gemma-3-1B | DPO | no aplica (sin quirk) | Apache-2.0 | Hugging Face |
+| `new-cake-bake-olmo-2-0425-1b-dpo-sft-td__mix0.5-hs3_lr1e-5_seed42-loss-not-on-prompt2` (referencia) | OLMo-2-0425-1B | sft_td con mezcla 0.5 | 0.333 ± 0.023 | no disponible | Hugging Face |
 
 La comparativa se limita a los modelos mencionados en la documentación. No hay datos de rendimiento en tareas generales, solo de QER. El modelo base no tiene el quirk, y el modelo de referencia usa una arquitectura diferente (OLMo-2) y una receta de entrenamiento distinta.
 
@@ -87,7 +87,7 @@ La comparativa se limita a los modelos mencionados en la documentación. No hay 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-olmo-to-gemma-cake-fd-mixed
+- Repositorio Hugging Face: https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-olmo-to-gemma-cake-fd-mixed
 - Colección de destilación de model-organisms-for-real: https://huggingface.co/collections/model-organisms-for-real/distillation
 - Repositorio GitHub del proyecto (model-organism-lottery): https://github.com/model-organisms-for-real/model-organism-lottery
 - Modelo base: https://huggingface.co/model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed

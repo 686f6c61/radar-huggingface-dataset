@@ -4,7 +4,7 @@
 
 HW5A_Qwen_Base_LMHead es un adaptador LoRA publicado por el usuario impaulster sobre el modelo base Qwen/Qwen3-1.7B-Base. Se trata de un ajuste fino supervisado (SFT) mediante la libreria PEFT y TRL, empaquetado en formato safetensors con un tamano de repositorio de 0,3 GB, lo que corresponde exclusivamente a los pesos del adaptador y no al modelo completo. El modelo esta etiquetado para la tarea de generacion de texto con un perfil conversacional.
 
-La relevancia de esta ficha es limitada y debe interpretarse con cautela: la model card publicada es la plantilla por defecto de HuggingFace sin rellenar, sin datos de entrenamiento, hiperparametros, evaluacion ni licencia. El repositorio registra cero descargas y cero likes en el momento de la consulta, y no se ha publicado informacion adicional en la busqueda web. Por tanto, la mayor parte de los datos tecnicos especificos del adaptador deben marcarse como no disponibles.
+La relevancia de esta ficha es limitada y debe interpretarse con cautela: la model card publicada es la plantilla por defecto de Hugging Face sin rellenar, sin datos de entrenamiento, hiperparametros, evaluacion ni licencia. El repositorio registra cero descargas y cero likes en el momento de la consulta, y no se ha publicado informacion adicional en la busqueda web. Por tanto, la mayor parte de los datos tecnicos especificos del adaptador deben marcarse como no disponibles.
 
 El interes tecnico reside en el modelo base subyacente, Qwen3-1.7B-Base, de la familia Qwen3 de Alibaba, un transformer denso de 1.700 millones de parametros disenado para ajuste fino. Este adaptador concreto no aporta garantias de calidad ni documentacion que permita recomendarlo para produccion.
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| impaulster/HW5A_Qwen_Base_LMHead | Adaptador LoRA sobre 1,7 mil millones | no disponible | no disponible | HuggingFace, 0 descargas | Sin model card rellenada ni evaluacion |
-| Qwen/Qwen3-1.7B-Base | 1,7 mil millones | no disponible en la informacion | no disponible en la informacion | HuggingFace, modelo base oficial | Referencia oficial de la familia Qwen3 |
-| Otros adaptadores LoRA sobre Qwen3-1.7B-Base | Variable | no disponible | Variable | HuggingFace | Comparacion no disponible por falta de datos |
+| impaulster/HW5A_Qwen_Base_LMHead | Adaptador LoRA sobre 1,7 mil millones | no disponible | no disponible | Hugging Face, 0 descargas | Sin model card rellenada ni evaluacion |
+| Qwen/Qwen3-1.7B-Base | 1,7 mil millones | no disponible en la informacion | no disponible en la informacion | Hugging Face, modelo base oficial | Referencia oficial de la familia Qwen3 |
+| Otros adaptadores LoRA sobre Qwen3-1.7B-Base | Variable | no disponible | Variable | Hugging Face | Comparacion no disponible por falta de datos |
 
 No se dispone de informacion suficiente para comparar rendimiento, contexto o calidad con alternativas de la misma categoria.
 
@@ -85,7 +85,7 @@ No se dispone de informacion suficiente para comparar rendimiento, contexto o ca
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/impaulster/HW5A_Qwen_Base_LMHead
+- Repositorio Hugging Face: https://huggingface.co/impaulster/HW5A_Qwen_Base_LMHead
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B-Base
 - Libreria PEFT: https://github.com/huggingface/peft
 - Libreria TRL: https://github.com/huggingface/trl

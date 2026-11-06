@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`lucasjansette/classification` es un repositorio experimental de HuggingFace que contiene una implementación propia en PyTorch de una arquitectura tipo Flamingo orientada a tareas de clasificación. Lo firma el usuario lucasjansette y se publica bajo licencia MIT. No se trata de un modelo preentrenado listo para producción, sino de un esqueleto de código con una configuración "tiny" pensada para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala.
+`lucasjansette/classification` es un repositorio experimental de Hugging Face que contiene una implementación propia en PyTorch de una arquitectura tipo Flamingo orientada a tareas de clasificación. Lo firma el usuario lucasjansette y se publica bajo licencia MIT. No se trata de un modelo preentrenado listo para producción, sino de un esqueleto de código con una configuración "tiny" pensada para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala.
 
 El modelo emplea atención lineal, fusión con compuertas (gated fusion), activación approx gelu y normalización scalenorm, según la propia model card. El checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas, no un modelo entrenado ni evaluado en benchmarks. El autor lo declara explícitamente: no se reclama ninguna puntuación de rendimiento.
 
@@ -41,7 +41,7 @@ No hay evidencia de un entrenamiento completado. La model card indica que el che
 - Smoke tests de pipelines de entrenamiento: el checkpoint de inicialización y `training_args.json` permiten verificar que un pipeline (carga de datos, forward, backward, logging) funciona antes de escalar a configuraciones mayores.
 - Experimentos controlados de clasificación: sirve como base para entrenar un clasificador pequeño sobre un dataset etiquetado propio, con métricas reportadas por semilla.
 - Baseline de capacidad reducida: al tener 16.576 parámetros, puede usarse como referencia mínima frente a modelos de mayor tamaño en estudios de ablación.
-- Docencia y formación: ejemplo didáctico de cómo se estructura un repositorio de modelo (config, training args, checkpoint, script) en HuggingFace.
+- Docencia y formación: ejemplo didáctico de cómo se estructura un repositorio de modelo (config, training args, checkpoint, script) en Hugging Face.
 - Pruebas de integración de carga de safetensors: útil para validar que un sistema de serving o un script de carga maneja correctamente checkpoints no estándar que requieren un adaptador explícito.
 
 ## Benchmarks y rendimiento
@@ -79,5 +79,5 @@ No se dispone de datos suficientes para una comparativa cuantitativa rigurosa co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lucasjansette/classification
+- Repositorio en Hugging Face: https://huggingface.co/lucasjansette/classification
 - No se han encontrado otros enlaces (papers, blogs, repos o demos) en la información proporcionada.

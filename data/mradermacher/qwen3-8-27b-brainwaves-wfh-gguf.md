@@ -81,7 +81,7 @@ No se dispone de benchmarks comparativos. La eleccion entre este modelo y otros 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.8-27B-Brainwaves-WFH-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-27B-Brainwaves-WFH-GGUF
 - Modelo base: https://huggingface.co/nightmedia/Qwen3.8-27B-Brainwaves-WFH
 - Repositorio oficial de Qwen3.8: https://github.com/QwenLM/Qwen3.8
 - Guia de ejecucion local: https://locallyuncensored.com/blog/how-to-run-qwen-3-8-27b-locally.html

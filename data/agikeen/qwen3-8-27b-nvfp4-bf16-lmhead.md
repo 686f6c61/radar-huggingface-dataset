@@ -50,7 +50,7 @@ Esta versión cuantizada es un derivado de `unsloth/Qwen3.8-27B-NVFP4`, que util
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks específicos para esta variante cuantizada en la información disponible. El modelo base Qwen3.8-27B ha sido evaluado en tareas como MathVision, según se menciona en su ficha de HuggingFace, pero no se proporcionan cifras numéricas en los materiales consultados. Se recomienda consultar la documentación oficial de Qwen para obtener datos comparativos del modelo sin cuantizar.
+No se han publicado resultados de benchmarks específicos para esta variante cuantizada en la información disponible. El modelo base Qwen3.8-27B ha sido evaluado en tareas como MathVision, según se menciona en su ficha de Hugging Face, pero no se proporcionan cifras numéricas en los materiales consultados. Se recomienda consultar la documentación oficial de Qwen para obtener datos comparativos del modelo sin cuantizar.
 
 ## Requisitos de hardware
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks específicos para esta variante cua
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B (base) | 27B | 262K (ext. 1M) | BF16 | Apache-2.0 | HuggingFace, ModelScope |
-| agikeen/Qwen3.8-27B-NVFP4-BF16-LMHead | ~19,87B (cuantizado) | 262K (ext. 1M) | NVFP4 + BF16 lm_head | Apache-2.0 | HuggingFace |
-| unsloth/Qwen3.8-27B-NVFP4 | ~19,87B (cuantizado) | 262K (ext. 1M) | NVFP4 (FP8 lm_head) | Apache-2.0 | HuggingFace, ModelScope |
+| Qwen3.8-27B (base) | 27B | 262K (ext. 1M) | BF16 | Apache-2.0 | Hugging Face, ModelScope |
+| agikeen/Qwen3.8-27B-NVFP4-BF16-LMHead | ~19,87B (cuantizado) | 262K (ext. 1M) | NVFP4 + BF16 lm_head | Apache-2.0 | Hugging Face |
+| unsloth/Qwen3.8-27B-NVFP4 | ~19,87B (cuantizado) | 262K (ext. 1M) | NVFP4 (FP8 lm_head) | Apache-2.0 | Hugging Face, ModelScope |
 
 La comparativa principal es entre las dos variantes cuantizadas y el modelo original. La versión de agikeen se distingue por el `lm_head` en BF16, que puede ofrecer mayor precisión en la capa de salida frente al FP8 de la versión de Unsloth, a costa de un ligero aumento en el uso de memoria. No se dispone de datos de rendimiento comparativos entre ambas.
 
@@ -83,7 +83,7 @@ La comparativa principal es entre las dos variantes cuantizadas y el modelo orig
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agikeen/Qwen3.8-27B-NVFP4-BF16-LMHead
+- Modelo en Hugging Face: https://huggingface.co/agikeen/Qwen3.8-27B-NVFP4-BF16-LMHead
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Documentación de Unsloth para Qwen3.8: https://unsloth.ai/docs/models/qwen3.8
 - Repositorio GitHub de Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B

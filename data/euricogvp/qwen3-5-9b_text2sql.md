@@ -120,7 +120,7 @@ La comparativa se limita a la familia Qwen3.5 porque la informacion proporcionad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EuricoGVP/Qwen3.5-9b_text2sql
+- Modelo en Hugging Face: https://huggingface.co/EuricoGVP/Qwen3.5-9b_text2sql
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Modelo hermano (4B): https://huggingface.co/EuricoGVP/Qwen3.5-4b_text2sql
 - Coleccion Qwen3.5 Text-to-SQL: https://huggingface.co/collections/EuricoGVP/qwen35-text2sql

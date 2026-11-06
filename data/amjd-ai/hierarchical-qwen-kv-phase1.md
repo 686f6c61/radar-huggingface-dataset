@@ -79,8 +79,8 @@ Otras alternativas de compresión de contexto (como Longformer o BigBird) no son
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/amjd-ai/hierarchical-qwen-kv-phase1
+- Repositorio Hugging Face: https://huggingface.co/amjd-ai/hierarchical-qwen-kv-phase1
 - Modelo base Qwen2.5-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
-- Organización Qwen en HuggingFace: https://huggingface.co/Qwen
+- Organización Qwen en Hugging Face: https://huggingface.co/Qwen
 - Sitio oficial de Qwen: https://qwen.ai/home
 - Repositorio oficial de Qwen en GitHub: https://github.com/QwenLM/Qwen

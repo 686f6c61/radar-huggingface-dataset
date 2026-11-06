@@ -6,7 +6,7 @@ El modelo `uthayamurthy/origin-task1-bart-large` es un checkpoint de ajuste fino
 
 El modelo se basa en la arquitectura BART (Bidirectional and Auto-Regressive Transformer), con 406 millones de parametros, y esta optimizado para generacion de texto a texto (text2text-generation). Se entrena sobre 10.000 ejemplos del dataset MixSub-SciHigh, con una ventana de contexto de entrada de 1024 tokens y salida de 320 tokens. Su relevancia radica en que aborda un caso de uso especifico en el ambito cientifico-academico, donde la generacion automatica de resumenes de investigacion puede acelerar la revision de literatura y la divulgacion cientifica.
 
-El modelo esta disponible bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones significativas, y se distribuye en formato safetensors, compatible con el ecosistema Transformers de HuggingFace.
+El modelo esta disponible bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones significativas, y se distribuye en formato safetensors, compatible con el ecosistema Transformers de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -33,7 +33,7 @@ El entrenamiento de este checkpoint se realizo mediante ajuste fino completo (fu
 - Sumarizacion abstractiva: produce texto nuevo que reformula el contenido original, no solo extrae frases literales.
 - Comprension de terminologia cientifica: al estar entrenado con datos cientificos, reconoce vocabulario tecnico y estructura de articulos de investigacion.
 - Generacion de texto a texto: admite cualquier tarea de transformacion de texto, aunque esta optimizado para sumarizacion.
-- Compatibilidad con Transformers: se integra con la libreria Transformers de HuggingFace, permitiendo uso con pipelines de sumarizacion y generacion condicional.
+- Compatibilidad con Transformers: se integra con la libreria Transformers de Hugging Face, permitiendo uso con pipelines de sumarizacion y generacion condicional.
 - Soporte de atencion SDPA: implementa atencion escalada por producto punto, que reduce el uso de memoria y acelera la inferencia en GPUs modernas.
 
 ## Casos de uso
@@ -65,7 +65,7 @@ No se han publicado comparaciones con otros modelos en la informacion disponible
 - VRAM estimada para inferencia: con 406 millones de parametros en bfloat16, el modelo ocupa aproximadamente 0,8 GB en memoria. Con overhead de activaciones y generacion, se recomienda al menos 4 GB de VRAM para inferencia con batch pequeno.
 - GPU recomendadas: cualquier GPU con 8 GB o mas de VRAM es suficiente. Modelos como RTX 3060, RTX 4060, T4, A10 o superiores funcionan adecuadamente. En CPU, la inferencia es posible pero lenta (varios segundos por resumen).
 - Compatibilidad con GPU de consumo: si, cabe en GPUs de consumo como RTX 3060 (12 GB), RTX 4070 (12 GB) o superiores.
-- Opciones de despliegue: compatible con vLLM, TGI (Text Generation Inference), HuggingFace Inference Endpoints, y puede ejecutarse con Transformers directamente. Para CPU, se puede usar con ONNX Runtime o convertir a GGUF para llama.cpp, aunque no se proporcionan conversiones oficiales.
+- Opciones de despliegue: compatible con vLLM, TGI (Text Generation Inference), Hugging Face Inference Endpoints, y puede ejecutarse con Transformers directamente. Para CPU, se puede usar con ONNX Runtime o convertir a GGUF para llama.cpp, aunque no se proporcionan conversiones oficiales.
 - Latencia estimada: en una GPU moderna (A100 o RTX 4090), la generacion de un resumen de 128 tokens con beam search de 4 tarda aproximadamente 0,5-1 segundo. En GPUs de gama media, entre 1-3 segundos.
 
 ## Comparativa con modelos similares
@@ -90,7 +90,7 @@ El modelo se diferencia de su base `bart-large-cnn` en que esta especificamente 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/uthayamurthy/origin-task1-bart-large
+- Modelo en Hugging Face: https://huggingface.co/uthayamurthy/origin-task1-bart-large
 - Modelo base (facebook/bart-large-cnn): https://huggingface.co/facebook/bart-large-cnn
 - Modelo pre-entrenado (facebook/bart-large): https://huggingface.co/facebook/bart-large
 - Pagina del modelo en ModelScope: https://www.modelscope.cn/models/AI-ModelScope/bart-large

@@ -90,7 +90,7 @@ No se dispone de datos verificables de benchmarks ni de especificaciones de alte
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Luni/Gemma-4-26B-A4B-Heretic-EXL3-6.0bpw
+- Repositorio Hugging Face: https://huggingface.co/Luni/Gemma-4-26B-A4B-Heretic-EXL3-6.0bpw
 - Modelo base: https://huggingface.co/Luni/Gemma-4-26B-A4B-Heretic
 - Paper, blog o repositorio de ExLlamaV3: no disponible en la información proporcionada
 - Demos o espacios asociados: no disponible en la información proporcionada

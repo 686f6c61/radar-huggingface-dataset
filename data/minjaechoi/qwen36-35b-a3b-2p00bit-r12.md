@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.6-35B-A3B — 2.00-bit routed experts (r12) es un checkpoint de investigación publicado por el usuario minjaechoi en HuggingFace. Consiste en una cuantización agresiva del modelo base Qwen/Qwen3.6-35B-A3B, en la que únicamente los expertos enrutados (la parte MoE de la red) se comprimen a una media de 2,00 bits por peso, mientras que el resto de la red permanece en BF16. El checkpoint se identificó internamente como "r12" y está pensado como material de estudio más que como artefacto de producción.
+Qwen3.6-35B-A3B — 2.00-bit routed experts (r12) es un checkpoint de investigación publicado por el usuario minjaechoi en Hugging Face. Consiste en una cuantización agresiva del modelo base Qwen/Qwen3.6-35B-A3B, en la que únicamente los expertos enrutados (la parte MoE de la red) se comprimen a una media de 2,00 bits por peso, mientras que el resto de la red permanece en BF16. El checkpoint se identificó internamente como "r12" y está pensado como material de estudio más que como artefacto de producción.
 
 El modelo conserva los 35.107.181.936 parámetros del modelo base, con una arquitectura de tipo transformer con mezcla de expertos (MoE), según la etiqueta `qwen3_5_moe`. El sufijo "A3B" del nombre sugiere del orden de 3.000 millones de parámetros activos por token, aunque este dato no se confirma en la información disponible. La etiqueta `image-text-to-text` apunta a capacidades multimodales, si bien la model card únicamente describe el proceso de cuantización.
 
@@ -60,14 +60,14 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Cabe en GPU de consumo: no en una sola unidad. Seria necesario repartir el modelo entre varias RTX 4090 de 24 GB (cuatro o mas) con paralelismo tensorial, o recurrir a offload parcial a CPU, con la penalizacion de latencia correspondiente.
 - Opciones de despliegue: `transformers` y vLLM, tal como indica la model card. No se proporcionan pesos GGUF, por lo que llama.cpp y Ollama no estan soportados de forma directa sin una conversion previa. Tampoco se documenta compatibilidad con TGI u otros servidores.
 - Latencia y throughput estimados: no disponible. La arquitectura MoE con un numero reducido de parametros activos por token tiende a ofrecer un throughput alto, pero no hay cifras publicadas para este checkpoint.
-- Almacenamiento: 70,2 GB en el repositorio de HuggingFace, mas el espacio necesario para la cache durante la carga.
+- Almacenamiento: 70,2 GB en el repositorio de Hugging Face, mas el espacio necesario para la cache durante la carga.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| qwen36-35b-a3b-2p00bit-r12 (este) | 35,1 B | ~3 B (inferido) | no disponible | safetensors BF16 | no disponible | HuggingFace, 0 descargas, 0 likes |
-| Qwen/Qwen3.6-35B-A3B (base) | 35,1 B | ~3 B (inferido) | no disponible | safetensors | no disponible | HuggingFace |
+| qwen36-35b-a3b-2p00bit-r12 (este) | 35,1 B | ~3 B (inferido) | no disponible | safetensors BF16 | no disponible | Hugging Face, 0 descargas, 0 likes |
+| Qwen/Qwen3.6-35B-A3B (base) | 35,1 B | ~3 B (inferido) | no disponible | safetensors | no disponible | Hugging Face |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone en la informacion proporcionada de datos verificables sobre otros modelos comparables (por ejemplo, otros checkpoints Qwen con mezcla de expertos o cuantizaciones de 2 bits de la misma familia), por lo que no se incluyen cifras que no puedan contrastarse.
@@ -89,7 +89,7 @@ No se dispone en la informacion proporcionada de datos verificables sobre otros 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/minjaechoi/qwen36-35b-a3b-2p00bit-r12
+- Modelo en Hugging Face: https://huggingface.co/minjaechoi/qwen36-35b-a3b-2p00bit-r12
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Paper, blog o repositorio adicional: no disponible
 - Demo o espacio asociado: no disponible

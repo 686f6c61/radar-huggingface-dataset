@@ -2,7 +2,7 @@
 
 ## Resumen
 
-XT-Luna-1B es una cuantización en formato GGUF del modelo XtrCom/XT-Luna-1B, un fine-tuning de openbmb/MiniCPM5-1B desarrollado y publicado por el usuario tinyopsec en HuggingFace. Se trata de un modelo de lenguaje compacto, de aproximadamente 1.080 millones de parámetros, ajustado específicamente para comportamientos de asistente con uso de herramientas (tool calling), con énfasis en la contención y la honestidad del modelo (restraint/honesty), es decir, en que sepa cuándo no debe llamar a una herramienta y cuándo debe admitir que no sabe algo.
+XT-Luna-1B es una cuantización en formato GGUF del modelo XtrCom/XT-Luna-1B, un fine-tuning de openbmb/MiniCPM5-1B desarrollado y publicado por el usuario tinyopsec en Hugging Face. Se trata de un modelo de lenguaje compacto, de aproximadamente 1.080 millones de parámetros, ajustado específicamente para comportamientos de asistente con uso de herramientas (tool calling), con énfasis en la contención y la honestidad del modelo (restraint/honesty), es decir, en que sepa cuándo no debe llamar a una herramienta y cuándo debe admitir que no sabe algo.
 
 Su relevancia radica en la creciente demanda de modelos pequeños capaces de ejecutar flujos agénticos en hardware de consumo: al estar cuantizado en GGUF con trece niveles de cuantización distintos (desde F16 hasta Q2_K), puede ejecutarse localmente con llama.cpp, Ollama, LM Studio o koboldcpp sin necesidad de GPU dedicada. La licencia AGPL-3.0, heredada del modelo base, lo posiciona en el espacio del software libre con copyleft, lo que es relevante para evaluar su idoneidad en productos comerciales.
 
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Formato | Tool calling | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| XT-Luna-1B (este modelo) | ~1,08 B | GGUF (13 cuantizaciones) | Sí (fine-tuned) | AGPL-3.0 | HuggingFace, GGUF |
-| openbmb/MiniCPM5-1B (base) | ~1,08 B | safetensors | Según versión base | no disponible | HuggingFace |
-| Qwen2.5-1.5B-Instruct | ~1,5 B | safetensors / GGUF | Sí | Apache 2.0 / Qwen | HuggingFace |
-| Llama-3.2-1B-Instruct | ~1,24 B | safetensors / GGUF | Limitado | Llama 3.2 Community | HuggingFace |
+| XT-Luna-1B (este modelo) | ~1,08 B | GGUF (13 cuantizaciones) | Sí (fine-tuned) | AGPL-3.0 | Hugging Face, GGUF |
+| openbmb/MiniCPM5-1B (base) | ~1,08 B | safetensors | Según versión base | no disponible | Hugging Face |
+| Qwen2.5-1.5B-Instruct | ~1,5 B | safetensors / GGUF | Sí | Apache 2.0 / Qwen | Hugging Face |
+| Llama-3.2-1B-Instruct | ~1,24 B | safetensors / GGUF | Limitado | Llama 3.2 Community | Hugging Face |
 
 Nota: la comparativa se ofrece a título orientativo; no se han publicado benchmarks que permitan comparar rendimiento real de XT-Luna-1B frente a estas alternativas. Su diferenciador declarado es el fine-tuning específico en tool calling con restraint/honesty.
 

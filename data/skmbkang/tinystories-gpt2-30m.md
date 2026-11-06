@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la información disponible. La �
 - VRAM estimada para inferencia: aproximadamente 120 MB en fp32, unos 60 MB en fp16/bf16 y unos 30 MB en int8 (cálculo teórico a partir de los 30.044.544 parámetros, sin contar activaciones ni overhead del runtime).
 - GPU recomendadas: ninguna en particular; el modelo es funcional en cualquier GPU con al menos 1 GB de memoria. Se ha validado su entrenamiento en una RTX 4060 Laptop.
 - Cabe holgadamente en GPU de consumo: RTX 4090, RTX 3060, GTX 1650, GPUs integradas e incluso en CPU. También es viable en dispositivos móviles y en Raspberry Pi.
-- Opciones de despliegue: Transformers (ruta nativa, con `AutoModelForCausalLM`), text-generation-inference (el modelo declara compatibilidad), endpoints de HuggingFace. Para llama.cpp u Ollama sería necesario convertir los pesos a GGUF, conversión que no se distribuye en el repositorio.
+- Opciones de despliegue: Transformers (ruta nativa, con `AutoModelForCausalLM`), text-generation-inference (el modelo declara compatibilidad), endpoints de Hugging Face. Para llama.cpp u Ollama sería necesario convertir los pesos a GGUF, conversión que no se distribuye en el repositorio.
 - Latencia y throughput estimados: no disponibles; no se han publicado mediciones. Por el tamaño del modelo, la latencia estará dominada por el overhead del runtime más que por el cómputo, especialmente en GPUs modernas.
 
 ## Comparativa con modelos similares
@@ -97,7 +97,7 @@ La comparación cuantitativa de calidad no puede establecerse con la informació
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/skmbkang/tinystories-gpt2-30m
+- Modelo en Hugging Face: https://huggingface.co/skmbkang/tinystories-gpt2-30m
 - Dataset TinyStories: https://huggingface.co/datasets/roneneldan/TinyStories
 - Paper de TinyStories (referencia del corpus): no disponible en la búsqueda realizada
 - Repositorio de código del autor: no disponible

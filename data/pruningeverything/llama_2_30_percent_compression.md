@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`llama_2_30_percent_compression` es un modelo derivado de Llama 2 publicado por el usuario PruningEverything en HuggingFace. Segun el identificador y el nombre del repositorio, se trata de una version de Llama 2 sometida a un proceso de compresion del 30 por ciento, presumiblemente mediante poda (pruning) de pesos. El checkpoint contiene 4.713.074.688 parametros en formato safetensors, lo que sugiere que parte de un modelo base de aproximadamente 6.700 millones de parametros (el tamano de Llama 2 7B) y elimina en torno a un 30 por ciento de los parametros.
+`llama_2_30_percent_compression` es un modelo derivado de Llama 2 publicado por el usuario PruningEverything en Hugging Face. Segun el identificador y el nombre del repositorio, se trata de una version de Llama 2 sometida a un proceso de compresion del 30 por ciento, presumiblemente mediante poda (pruning) de pesos. El checkpoint contiene 4.713.074.688 parametros en formato safetensors, lo que sugiere que parte de un modelo base de aproximadamente 6.700 millones de parametros (el tamano de Llama 2 7B) y elimina en torno a un 30 por ciento de los parametros.
 
 La model card publicada por el autor es practicamente vacia: unicamente declara la licencia llama2, sin informacion sobre arquitectura, datos de entrenamiento, metodologia de poda, capacidades o rendimiento. No se han publicado resultados de benchmarks ni documentacion tecnica adicional en la informacion disponible.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `PruningEverything/llama_2_30_percent_compression` | 4.713 M | no disponible | llama2 | HuggingFace, safetensors |
-| Llama 2 7B (Meta) | 6.738 M | 4.096 tokens | llama2 | HuggingFace, safetensors y GGUF |
-| Llama 2 13B (Meta) | 13.015 M | 4.096 tokens | llama2 | HuggingFace, safetensors y GGUF |
-| Mistral 7B (Mistral AI) | 7.242 M | 8.192 tokens | Apache 2.0 | HuggingFace, safetensors y GGUF |
+| `PruningEverything/llama_2_30_percent_compression` | 4.713 M | no disponible | llama2 | Hugging Face, safetensors |
+| Llama 2 7B (Meta) | 6.738 M | 4.096 tokens | llama2 | Hugging Face, safetensors y GGUF |
+| Llama 2 13B (Meta) | 13.015 M | 4.096 tokens | llama2 | Hugging Face, safetensors y GGUF |
+| Mistral 7B (Mistral AI) | 7.242 M | 8.192 tokens | Apache 2.0 | Hugging Face, safetensors y GGUF |
 
 La comparativa de rendimiento no esta disponible: el checkpoint podado no publica evaluaciones, por lo que no puede contrastarse su calidad frente a Llama 2 7B, Llama 2 13B o Mistral 7B. La diferencia principal frente a estos es la ausencia de documentacion y de versiones cuantizadas listas para usar.
 
@@ -83,6 +83,6 @@ La comparativa de rendimiento no esta disponible: el checkpoint podado no public
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/PruningEverything/llama_2_30_percent_compression
+- Hugging Face: https://huggingface.co/PruningEverything/llama_2_30_percent_compression
 - Paper de Llama 2 (Meta): https://arxiv.org/abs/2307.09288
 - Licencia Llama 2: https://ai.meta.com/llama/license/

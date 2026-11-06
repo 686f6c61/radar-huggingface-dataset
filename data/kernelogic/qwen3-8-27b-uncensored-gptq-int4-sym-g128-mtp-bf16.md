@@ -85,7 +85,7 @@ La comparativa se limita a las variantes del mismo modelo base; no se dispone de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kernelogic/Qwen3.8-27B-Uncensored-GPTQ-Int4-sym-G128-MTP-BF16
+- Repositorio Hugging Face: https://huggingface.co/kernelogic/Qwen3.8-27B-Uncensored-GPTQ-Int4-sym-G128-MTP-BF16
 - Modelo base abliterado: https://huggingface.co/JonathanColetti/Qwen3.8-27B-Uncensored
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.8-27B
 - Cookbook de Intel Arc Pro B70 (parches MTP y receta de despliegue): https://github.com/SergiioB/intel-arc-pro-b70-inference-cookbook

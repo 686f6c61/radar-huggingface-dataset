@@ -95,7 +95,7 @@ Las tres opciones comparten pesos base y licencia; la diferencia medible esta en
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/turintech/Qwen3.5-9B-Artemis-GGUF
+- Repositorio Hugging Face: https://huggingface.co/turintech/Qwen3.5-9B-Artemis-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-9B/blob/main/LICENSE
 - Resultados declarados en la model card: https://huggingface.co/turintech/Qwen3.5-9B-Artemis-GGUF#results

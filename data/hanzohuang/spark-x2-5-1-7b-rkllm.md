@@ -79,9 +79,9 @@ Las comprobaciones se hicieron el 2026-10-19 con RKLLM runtime 1.3.1 y el servid
 | Modelo | Parametros | Contexto | Formato | Hardware | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
 | Spark-X2.5-1.7B-RKLLM (este repositorio) | 1,7B nominal | 4096 tokens | `.rkllm` (RKLLM 1.3.1) | NPU RK3576 / RK3588 | Apache-2.0 | 0 descargas, 0 likes |
-| XHToken/Spark-X2.5-1.7B (upstream) | 1,7B nominal | No confirmado en la informacion; una fuente terciaria cita 1,05M de tokens, sin verificar | safetensors (HuggingFace y ModelScope) | GPU / CPU | Apache-2.0 | Publico en HuggingFace, ModelScope y Ollama (`SparkLLM/Spark-X2.5-1.7B`) |
+| XHToken/Spark-X2.5-1.7B (upstream) | 1,7B nominal | No confirmado en la informacion; una fuente terciaria cita 1,05M de tokens, sin verificar | safetensors (Hugging Face y ModelScope) | GPU / CPU | Apache-2.0 | Publico en Hugging Face, ModelScope y Ollama (`SparkLLM/Spark-X2.5-1.7B`) |
 | Spark-X2.5-4B (hermano mayor de la familia) | 4B nominal | No disponible | safetensors | GPU / CPU | Apache-2.0 (upstream) | Publico, misma familia y card |
-| Conversiones GGUF comunitarias del mismo modelo base | 1,7B nominal | No disponible | GGUF | CPU / GPU consumer via llama.cpp | Apache-2.0 (heredada) | Existen mirrors en HuggingFace (p. ej. `MENIARAYOUB/Spark-X2.5-1.7B`), con formato y cuantizaciones no verificados |
+| Conversiones GGUF comunitarias del mismo modelo base | 1,7B nominal | No disponible | GGUF | CPU / GPU consumer via llama.cpp | Apache-2.0 (heredada) | Existen mirrors en Hugging Face (p. ej. `MENIARAYOUB/Spark-X2.5-1.7B`), con formato y cuantizaciones no verificados |
 
 La diferencia funcional frente a las alternativas no es de calidad, sino de destino de ejecución: este repositorio es la única variante de la familia pensada para NPU Rockchip, y a cambio pierde portabilidad y recorta el contexto a 4096 tokens. El modelo de 4B de la misma familia ofrece más capacidad si el hardware objetivo admite GPU o CPU con más memoria, pero no hay artefacto RKLLM publicado para él en la información disponible. No se han localizado benchmarks comparativos entre estas variantes.
 
@@ -101,8 +101,8 @@ La diferencia funcional frente a las alternativas no es de calidad, sino de dest
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/HanzoHuang/Spark-X2.5-1.7B-RKLLM
-- Modelo base en HuggingFace: https://huggingface.co/XHToken/Spark-X2.5-1.7B
+- Repositorio Hugging Face: https://huggingface.co/HanzoHuang/Spark-X2.5-1.7B-RKLLM
+- Modelo base en Hugging Face: https://huggingface.co/XHToken/Spark-X2.5-1.7B
 - Modelo base en ModelScope: https://www.modelscope.cn/models/XHToken/Spark-X2.5-1.7B
 - Repositorio GitHub de la familia Spark-X2.5: https://github.com/XHToken/Spark-X2.5
 - Organización SparkLLM en GitHub: https://github.com/XHToken
@@ -110,5 +110,5 @@ La diferencia funcional frente a las alternativas no es de calidad, sino de dest
 - Fork del toolkit usado en la conversion: https://github.com/Hanzo-Huang/rknn-llm
 - Servidor Docker RKLLM (PR 11): https://github.com/Hanzo-Huang/rkllm-docker/pull/11
 - Pagina en Ollama: https://ollama.com/SparkLLM/Spark-X2.5-1.7B:latest
-- Mirror comunitario en HuggingFace: https://huggingface.co/MENIARAYOUB/Spark-X2.5-1.7B
+- Mirror comunitario en Hugging Face: https://huggingface.co/MENIARAYOUB/Spark-X2.5-1.7B
 - Ficha de referencia terciaria (contexto citado de 1,05M, sin verificar): https://www.llmreference.com/model/spark-x2.5-1.7b

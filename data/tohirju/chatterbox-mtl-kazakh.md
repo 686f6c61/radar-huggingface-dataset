@@ -4,7 +4,7 @@
 
 Tohirju/chatterbox-mtl-kazakh es un modelo de síntesis de voz (text-to-speech) fine-tuneado para el idioma kazajo, desarrollado por Tohirju sobre la base del modelo Chatterbox de Resemble AI. Chatterbox es una familia de modelos TTS de código abierto con licencia MIT que destaca por su capacidad de clonación de voz zero-shot a partir de aproximadamente cinco segundos de audio, control emocional y generación en tiempo real. El modelo base ha sido comparado en evaluaciones con sistemas cerrados como ElevenLabs, siendo preferido de forma consistente en pruebas de comparación lado a lado.
 
-Este fine-tune específico adapta el modelo base multilingüe (que soporta 23 idiomas de serie) al kazajo, una lengua túrquica hablada principalmente en Kazajistán y en comunidades de Asia Central. El modelo se distribuye con licencia MIT y acceso restringido (gated) en HuggingFace, lo que requiere aceptar las condiciones de uso antes de su descarga. El repositorio ocupa 3,2 GB y fue publicado el 20 de agosto de 2026, registrando actualmente cero descargas y cero likes.
+Este fine-tune específico adapta el modelo base multilingüe (que soporta 23 idiomas de serie) al kazajo, una lengua túrquica hablada principalmente en Kazajistán y en comunidades de Asia Central. El modelo se distribuye con licencia MIT y acceso restringido (gated) en Hugging Face, lo que requiere aceptar las condiciones de uso antes de su descarga. El repositorio ocupa 3,2 GB y fue publicado el 20 de agosto de 2026, registrando actualmente cero descargas y cero likes.
 
 La relevancia de este modelo radica en la escasez de sistemas TTS de calidad para idiomas de Asia Central. Al partir de Chatterbox, hereda capacidades avanzadas como la clonación de voz y el control emocional, adaptadas al kazajo, lo que lo convierte en una opción interesante para desarrolladores que necesitan síntesis de voz en este idioma sin depender de servicios propietarios.
 
@@ -57,20 +57,20 @@ No se han publicado resultados de benchmarks en la informacion disponible para e
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para establecer una comparativa con otros modelos TTS de código abierto específicos para kazajo. El modelo base Chatterbox compite con sistemas cerrados como ElevenLabs, pero no se han identificado alternativas de código abierto para kazajo en la información proporcionada. Se recomienda consultar el ecosistema de modelos TTS en HuggingFace para evaluar opciones comparables.
+No se dispone de información suficiente para establecer una comparativa con otros modelos TTS de código abierto específicos para kazajo. El modelo base Chatterbox compite con sistemas cerrados como ElevenLabs, pero no se han identificado alternativas de código abierto para kazajo en la información proporcionada. Se recomienda consultar el ecosistema de modelos TTS en Hugging Face para evaluar opciones comparables.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): el modelo requiere aceptar las condiciones de uso en HuggingFace antes de poder descargarlo, lo que puede limitar su adopción en entornos automatizados o de CI/CD.
-- Modelo reciente sin adopción: registra cero descargas y cero likes en HuggingFace, por lo que no hay evidencia de uso en producción ni retroalimentación de la comunidad que valide su calidad.
+- Acceso restringido (gated): el modelo requiere aceptar las condiciones de uso en Hugging Face antes de poder descargarlo, lo que puede limitar su adopción en entornos automatizados o de CI/CD.
+- Modelo reciente sin adopción: registra cero descargas y cero likes en Hugging Face, por lo que no hay evidencia de uso en producción ni retroalimentación de la comunidad que valide su calidad.
 - Especializado en kazajo: aunque el modelo base soporta 23 idiomas, este fine-tune está orientado al kazajo; su rendimiento en otros idiomas no está garantizado y podría degradarse respecto al modelo base.
 - Riesgo de errores de pronunciación: como cualquier sistema de síntesis de voz, puede producir articulaciones incorrectas en nombres propios, términos técnicos, extranjerismos o dialectos regionales del kazajo.
 - Sesgos potenciales: los datos de entrenamiento del fine-tune no están documentados, por lo que podrían existir sesgos en la pronunciación según el acento o la región de Kazajistán.
-- Licencia MIT: permite uso comercial sin restricciones de atribución, pero el acceso gated implica que el usuario debe registrarse y aceptar los términos de HuggingFace, lo que añade una barrera operativa.
+- Licencia MIT: permite uso comercial sin restricciones de atribución, pero el acceso gated implica que el usuario debe registrarse y aceptar los términos de Hugging Face, lo que añade una barrera operativa.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tohirju/chatterbox-mtl-kazakh
+- Modelo en Hugging Face: https://huggingface.co/Tohirju/chatterbox-mtl-kazakh
 - Repositorio de Chatterbox (Resemble AI): https://github.com/resemble-ai/chatterbox
 - Repositorio de Chatterbox Multilingual: https://github.com/FCare/chatterbox-multilingual
 - Página del modelo Chatterbox en Resemble AI: https://www.resemble.ai/learn/models/chatterbox

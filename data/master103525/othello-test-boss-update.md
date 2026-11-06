@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `master103525/othello-test-boss-update` es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario `master103525` en HuggingFace. Se construye sobre el modelo base `unsloth--Llama-3.2-3B-Instruct`, por lo que hereda la arquitectura de un transformer decoder-only de 3.200 millones de parametros con una ventana de contexto de 128.000 tokens. El adaptador se ha entrenado mediante fine-tuning supervisado (SFT) utilizando las librerias PEFT y TRL, segun los metadatos del repositorio.
+El modelo `master103525/othello-test-boss-update` es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario `master103525` en Hugging Face. Se construye sobre el modelo base `unsloth--Llama-3.2-3B-Instruct`, por lo que hereda la arquitectura de un transformer decoder-only de 3.200 millones de parametros con una ventana de contexto de 128.000 tokens. El adaptador se ha entrenado mediante fine-tuning supervisado (SFT) utilizando las librerias PEFT y TRL, segun los metadatos del repositorio.
 
 A fecha de publicacion, el modelo cuenta con 0 descargas y 0 likes, y la model card no incluye informacion sobre el dataset de entrenamiento, los hiperparametros, las capacidades especificas ni los resultados de evaluacion. El repositorio tiene un tamano de 0.8 GB, correspondiente unicamente a los pesos del adaptador en formato safetensors. Dado que se trata de un proyecto experimental y sin documentacion, el uso en produccion requiere una validacion exhaustiva previa.
 
@@ -68,6 +68,6 @@ No disponible. No se han identificado modelos comparables de la misma categoria 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/master103525/othello-test-boss-update
+- Modelo en Hugging Face: https://huggingface.co/master103525/othello-test-boss-update
 - Repositorio anterior relacionado: https://huggingface.co/master103525/othello-test-boss
-- Perfil del autor en HuggingFace: https://huggingface.co/master103525/datasets
+- Perfil del autor en Hugging Face: https://huggingface.co/master103525/datasets

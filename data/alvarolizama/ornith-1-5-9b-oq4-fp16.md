@@ -70,10 +70,10 @@ No se dispone de datos suficientes para realizar una comparativa rigurosa con al
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/alvarolizama/Ornith-1.5-9B-oQ4-fp16
-- Colección Ornith-1.5 en HuggingFace: https://huggingface.co/collections/ornith-ai/ornith-15
+- Repositorio Hugging Face: https://huggingface.co/alvarolizama/Ornith-1.5-9B-oQ4-fp16
+- Colección Ornith-1.5 en Hugging Face: https://huggingface.co/collections/ornith-ai/ornith-15
 - Blog de ornith.ai sobre Ornith-1.5: https://ornith.ai/ornith_1_5.html
 - Guía de Ornith AI (modelos, VRAM, benchmarks, uso local): https://ornith.online/
 - Repositorio oMLX (librería de cuantización): https://github.com/jundot/omlx
-- Repositorio HuggingFace de la versión 1.0: https://huggingface.co/alvarolizama/Ornith-1.0-9B-oQ4-fp16
+- Repositorio Hugging Face de la versión 1.0: https://huggingface.co/alvarolizama/Ornith-1.0-9B-oQ4-fp16
 - Página de Ollama para Ornith-9b: https://ollama.com/maxwell1500/ornith-9b

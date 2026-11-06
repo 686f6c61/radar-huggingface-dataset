@@ -66,8 +66,8 @@ La model card declara las métricas `accuracy` y `f1` en sus metadatos, pero no 
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Akiki-MiniLM-L6-v2-robot-intent | Adaptador sobre MiniLM-L6-v2 (4 tensores FP32) | 512 tokens | Clasificación de intención robótica, 23 clases, inglés | Apache 2.0 | HuggingFace, motor Rust `akiki` y referencia PyTorch |
-| sentence-transformers/all-MiniLM-L6-v2 | no disponible en la información proporcionada | no disponible en la información proporcionada | Embeddings de frases de propósito general | no disponible en la información proporcionada | HuggingFace (modelo base) |
+| Akiki-MiniLM-L6-v2-robot-intent | Adaptador sobre MiniLM-L6-v2 (4 tensores FP32) | 512 tokens | Clasificación de intención robótica, 23 clases, inglés | Apache 2.0 | Hugging Face, motor Rust `akiki` y referencia PyTorch |
+| sentence-transformers/all-MiniLM-L6-v2 | no disponible en la información proporcionada | no disponible en la información proporcionada | Embeddings de frases de propósito general | no disponible en la información proporcionada | Hugging Face (modelo base) |
 | Alternativas de clasificación de intención para robótica | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones de modelos comparables en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa.
@@ -88,6 +88,6 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Akiki-AI/Akiki-MiniLM-L6-v2-robot-intent
+- Hugging Face: https://huggingface.co/Akiki-AI/Akiki-MiniLM-L6-v2-robot-intent
 - Modelo base: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información proporcionada.

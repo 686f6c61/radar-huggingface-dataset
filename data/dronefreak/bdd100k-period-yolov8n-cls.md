@@ -25,7 +25,7 @@ El modelo declara 93,56 por ciento de top-1 accuracy sobre el split de test (10 
 | Framework | Ultralytics (ultralytics) |
 | Modelo base | Ultralytics/YOLOv8 |
 | Dataset de entrenamiento | dronefreak/BDD100K-Period-Classification |
-| Tamano del repositorio | 0,0 GB segun HuggingFace (los pesos se sirven aparte como best.pt) |
+| Tamano del repositorio | 0,0 GB segun Hugging Face (los pesos se sirven aparte como best.pt) |
 
 ## Arquitectura y entrenamiento
 
@@ -114,7 +114,7 @@ Las diferencias de top-1 entre todos los modelos son de pocas decimas, lo que in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dronefreak/bdd100k-period-yolov8n-cls
+- Modelo en Hugging Face: https://huggingface.co/dronefreak/bdd100k-period-yolov8n-cls
 - Dataset: https://huggingface.co/datasets/dronefreak/BDD100K-Period-Classification
 - Repositorio BDD100K-Toolkit: https://github.com/dronefreak/bdd100k-toolkit
 - Modelo relacionado (deteccion): https://huggingface.co/dronefreak/bdd100k-yolov8n

@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks cuantitativos (FID, CLIP score, sim
 
 | Modelo | Tipo | Modelo base | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| KyoukaUzen-Lora (este) | LoRA de personaje | waiIllustriousSDXL v17 | rango 64, alpha 32 | no aplica | creativeml-openrail-m | HuggingFace, ModelScope |
-| LoRA de personaje generico en Illustrious | LoRA de personaje | cualquiera de la familia Illustrious | variable | no aplica | variable | HuggingFace, Civitai |
-| Checkpoint SDXL base | modelo completo | SDXL | no disponible | no aplica | openrail / variantes | HuggingFace |
+| KyoukaUzen-Lora (este) | LoRA de personaje | waiIllustriousSDXL v17 | rango 64, alpha 32 | no aplica | creativeml-openrail-m | Hugging Face, ModelScope |
+| LoRA de personaje generico en Illustrious | LoRA de personaje | cualquiera de la familia Illustrious | variable | no aplica | variable | Hugging Face, Civitai |
+| Checkpoint SDXL base | modelo completo | SDXL | no disponible | no aplica | openrail / variantes | Hugging Face |
 
 No se dispone de datos publicos de rendimiento comparativo frente a otros LoRA del mismo personaje en la informacion proporcionada.
 
@@ -90,8 +90,8 @@ No se dispone de datos publicos de rendimiento comparativo frente a otros LoRA d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abbuibuibui/KyoukaUzen-Lora
-- Dataset en HuggingFace: https://huggingface.co/datasets/abbuibuibui/KyoukaUzen-Dataset
+- Modelo en Hugging Face: https://huggingface.co/abbuibuibui/KyoukaUzen-Lora
+- Dataset en Hugging Face: https://huggingface.co/datasets/abbuibuibui/KyoukaUzen-Dataset
 - Modelo en ModelScope: https://www.modelscope.cn/models/abbuibuibui/KyoukaUzen-Lora
 - Dataset en ModelScope: https://www.modelscope.cn/datasets/abbuibuibui/KyoukaUzen-Dataset
 - Notas de evaluacion (chino): `evaluation/横向测评记录.md` dentro del repositorio

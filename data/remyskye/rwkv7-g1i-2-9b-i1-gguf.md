@@ -71,6 +71,6 @@ No se dispone de datos comparativos con otros modelos en la información proporc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RemySkye/rwkv7-g1i-2.9B-i1-GGUF
+- Modelo en Hugging Face: https://huggingface.co/RemySkye/rwkv7-g1i-2.9B-i1-GGUF
 - Modelo base: https://huggingface.co/BlinkDL/rwkv7-g1
 - Dataset de calibración: https://huggingface.co/datasets/lemon07r/bartowski-imatrix-v5-semantic

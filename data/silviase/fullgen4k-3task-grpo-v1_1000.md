@@ -103,10 +103,10 @@ No se han publicado en la información disponible resultados comparativos frente
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento comparado |
 |---|---|---|---|---|---|
-| FullGen4K-3Task-GRPO-v1_1000 | 2,21 B | No disponible | Apache 2.0 | HuggingFace (11 descargas, 0 likes) | Ver tabla de benchmarks |
-| Qwen/Qwen3.5-2B (modelo base) | No disponible | No disponible | No disponible | HuggingFace | No disponible |
-| Qwen2-VL-2B-Instruct | 2,2 B | No disponible | Apache 2.0 | HuggingFace | No disponible |
-| SmolVLM2-2.2B-Instruct | 2,25 B | No disponible | Apache 2.0 | HuggingFace | No disponible |
+| FullGen4K-3Task-GRPO-v1_1000 | 2,21 B | No disponible | Apache 2.0 | Hugging Face (11 descargas, 0 likes) | Ver tabla de benchmarks |
+| Qwen/Qwen3.5-2B (modelo base) | No disponible | No disponible | No disponible | Hugging Face | No disponible |
+| Qwen2-VL-2B-Instruct | 2,2 B | No disponible | Apache 2.0 | Hugging Face | No disponible |
+| SmolVLM2-2.2B-Instruct | 2,25 B | No disponible | Apache 2.0 | Hugging Face | No disponible |
 
 ## Limitaciones y advertencias
 
@@ -125,8 +125,8 @@ No se han publicado en la información disponible resultados comparativos frente
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Silviase/FullGen4K-3Task-GRPO-v1_1000
-- Perfil del autor en HuggingFace (Silviase, Koki Maeda): https://huggingface.co/Silviase
+- Modelo en Hugging Face: https://huggingface.co/Silviase/FullGen4K-3Task-GRPO-v1_1000
+- Perfil del autor en Hugging Face (Silviase, Koki Maeda): https://huggingface.co/Silviase
 - Perfil del autor en GitHub: https://github.com/Silviase/
 - Repositorio de perfil en GitHub: https://github.com/Silviase/Silviase
 - Registro del entrenamiento en Weights & Biases: https://wandb.ai/silviase/jasset/runs/fullgen4k-3task-grpo-v1

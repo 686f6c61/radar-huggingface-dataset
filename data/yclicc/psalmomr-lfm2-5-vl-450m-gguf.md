@@ -75,8 +75,8 @@ Resultados publicados en la model card, medidos al final del entrenamiento con l
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PsalmOMR · LFM2.5-VL-450M (este) | 354.483.968 | No disponible | OMR de cánticos anglicanos a ABC | `lfm1.0` | GGUF y ONNX en HuggingFace; 0 descargas, 0 likes |
-| LiquidAI/LFM2.5-VL-450M (base) | ~450M (nominal) / 354.483.968 (safetensors) | No disponible | VLM conversacional general, imagen-texto | `lfm1.0` | Pesos originales en HuggingFace |
+| PsalmOMR · LFM2.5-VL-450M (este) | 354.483.968 | No disponible | OMR de cánticos anglicanos a ABC | `lfm1.0` | GGUF y ONNX en Hugging Face; 0 descargas, 0 likes |
+| LiquidAI/LFM2.5-VL-450M (base) | ~450M (nominal) / 354.483.968 (safetensors) | No disponible | VLM conversacional general, imagen-texto | `lfm1.0` | Pesos originales en Hugging Face |
 | Sistemas OMR clásicos (Audiveris, oemer) | No disponible en la información proporcionada | No disponible | OMR de partituras convencionales a MusicXML | No disponible en la información proporcionada | No evaluados aquí |
 
 No se dispone de datos de benchmarks ni de especificaciones de alternativas OMR en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa con ellas. Frente al modelo base, la diferencia es funcional: el base es un VLM general y este ajuste fino está restringido a la transcripción de cánticos, con la contrapartida de que responde mal a cualquier otra petición.

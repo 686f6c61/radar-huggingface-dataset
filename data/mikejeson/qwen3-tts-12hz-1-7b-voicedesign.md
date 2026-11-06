@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mikejeson/Qwen3-TTS-12Hz-1.7B-VoiceDesign` es un sistema de síntesis de voz (text-to-speech) publicado en HuggingFace en agosto de 2026. Aunque su nombre sugiere una variante de la familia Qwen3-TTS, con 1.700 millones de parámetros y una frecuencia de muestreo aparente de 12 Hz, la información pública disponible es extremadamente limitada: no se han documentado detalles de arquitectura, entrenamiento, licencia ni rendimiento. El repositorio no registra descargas ni valoraciones, lo que indica que se trata de un lanzamiento muy reciente o experimental.
+El modelo `mikejeson/Qwen3-TTS-12Hz-1.7B-VoiceDesign` es un sistema de síntesis de voz (text-to-speech) publicado en Hugging Face en agosto de 2026. Aunque su nombre sugiere una variante de la familia Qwen3-TTS, con 1.700 millones de parámetros y una frecuencia de muestreo aparente de 12 Hz, la información pública disponible es extremadamente limitada: no se han documentado detalles de arquitectura, entrenamiento, licencia ni rendimiento. El repositorio no registra descargas ni valoraciones, lo que indica que se trata de un lanzamiento muy reciente o experimental.
 
 La relevancia de este modelo radica en su posible pertenencia a la línea Qwen3-TTS, que ha mostrado avances en síntesis de voz multilingüe y control de voz. Sin embargo, sin documentación adicional, cualquier evaluación técnica debe considerarse preliminar. Se recomienda consultar el paper asociado (arXiv:2601.15621) y el repositorio oficial de Qwen para obtener especificaciones verificadas.
 
@@ -64,5 +64,5 @@ No disponible. No se han identificado modelos comparables con la misma arquitect
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/mikejeson/Qwen3-TTS-12Hz-1.7B-VoiceDesign)
+- [Repositorio en Hugging Face](https://huggingface.co/mikejeson/Qwen3-TTS-12Hz-1.7B-VoiceDesign)
 - Paper asociado (según tag): arXiv:2601.15621 (no verificado)

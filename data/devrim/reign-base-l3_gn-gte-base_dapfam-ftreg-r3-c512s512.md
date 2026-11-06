@@ -60,7 +60,7 @@ El autor indica que la diferencia de +0.05 en `test` es estadísticamente insign
 - VRAM estimada: el encoder REIGN tiene solo 22,45M de parámetros, lo que en float32 ocupa aproximadamente 90 MB. La red de guía GTE-base (110M) añade unos 440 MB, totalizando ~530 MB en float32. Con cuantización a 8 bits (no disponible oficialmente) se podría reducir, pero no se ofrecen versiones cuantizadas.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM es suficiente. Incluso puede ejecutarse en CPU con razonable velocidad para inferencia por lotes pequeños.
 - Compatibilidad con GPUs de consumo: sí, cabe en cualquier GPU consumer (GTX 1060, RTX 2060, etc.) y también en Apple Silicon.
-- Opciones de despliegue: el modelo requiere el paquete `reign` (instalable desde GitHub) y se usa mediante Python. No es compatible con vLLM, llama.cpp u Ollama porque no es un LLM generativo. Se puede integrar en pipelines de HuggingFace Transformers si se adapta, pero el flujo oficial usa `ReignBaselineEncoder`.
+- Opciones de despliegue: el modelo requiere el paquete `reign` (instalable desde GitHub) y se usa mediante Python. No es compatible con vLLM, llama.cpp u Ollama porque no es un LLM generativo. Se puede integrar en pipelines de Hugging Face Transformers si se adapta, pero el flujo oficial usa `ReignBaselineEncoder`.
 - Latencia y throughput: no se proporcionan datos oficiales. Dado el pequeño tamaño, se espera una latencia de milisegundos por documento en GPU y de decenas de milisegundos en CPU, dependiendo del número de chunks.
 
 ## Comparativa con modelos similares
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento para estos modelos en DAPFAM, por lo que l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/devrim/reign-base-l3_gn-gte-base_dapfam-ftreg-r3-c512s512
+- Modelo en Hugging Face: https://huggingface.co/devrim/reign-base-l3_gn-gte-base_dapfam-ftreg-r3-c512s512
 - Código: https://github.com/devrimcavusoglu/reign
 - Página del proyecto: https://devrimcavusoglu.github.io/reign
 - Dataset GoodWiki-Long: https://huggingface.co/datasets/devrim/goodwiki_long_synthetic_ir

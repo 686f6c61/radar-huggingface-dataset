@@ -73,10 +73,10 @@ Los desgloses por idioma están en `metrics.json`, pero su contenido no se ha fa
 
 | Modelo | Parametros | Contexto | Rendimiento en MasakhaNER 2.0 (sna) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SabiBERTa-135M-masakhaner2-sna | 135,9 M | No disponible (ajuste a 256) | span F1 0,8845 (ejecución única) | No disponible | HuggingFace, safetensors |
-| SabiBERTa-135M (base, sin ajustar) | 135,9 M | No disponible | No disponible (no ajustado a NER) | No disponible | HuggingFace |
-| XLM-RoBERTa-base | 278 M | 512 | No disponible en la información proporcionada | MIT | HuggingFace, ampliamente desplegado |
-| mBERT (bert-base-multilingual-cased) | 178 M | 512 | No disponible en la información proporcionada | Apache-2.0 | HuggingFace, ampliamente desplegado |
+| SabiBERTa-135M-masakhaner2-sna | 135,9 M | No disponible (ajuste a 256) | span F1 0,8845 (ejecución única) | No disponible | Hugging Face, safetensors |
+| SabiBERTa-135M (base, sin ajustar) | 135,9 M | No disponible | No disponible (no ajustado a NER) | No disponible | Hugging Face |
+| XLM-RoBERTa-base | 278 M | 512 | No disponible en la información proporcionada | MIT | Hugging Face, ampliamente desplegado |
+| mBERT (bert-base-multilingual-cased) | 178 M | 512 | No disponible en la información proporcionada | Apache-2.0 | Hugging Face, ampliamente desplegado |
 
 No se dispone de cifras comparativas verificadas de los baselines multilingües sobre el protocolo `sna` en la información proporcionada; cualquier comparación de rendimiento con este checkpoint requeriría ejecutar el mismo harness de evaluación.
 
@@ -93,7 +93,7 @@ No se dispone de cifras comparativas verificadas de los baselines multilingües 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BeardedMonster/SabiBERTa-135M-masakhaner2-sna
+- Modelo en Hugging Face: https://huggingface.co/BeardedMonster/SabiBERTa-135M-masakhaner2-sna
 - Modelo base: https://huggingface.co/BeardedMonster/SabiBERTa-135M
 - Dataset citado en la model card (referencia, no enlazado por el autor): https://huggingface.co/datasets/masakhane/masakhaner2
 - No se han encontrado enlaces adicionales relevantes en la búsqueda web: los resultados devueltos no guardan relación con el modelo ni con NER en lenguas africanas.

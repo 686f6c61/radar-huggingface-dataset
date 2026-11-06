@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Aniluuu/Lawchatbot` es un repositorio publicado en HuggingFace por el usuario Aniluuu. Según la información disponible, se trata de un modelo etiquetado con licencia Apache-2.0 y región `us`, pero no se ha publicado ninguna documentación técnica, model card descriptiva ni datos de rendimiento. El nombre sugiere una orientación hacia el dominio legal, aunque no hay confirmación de su arquitectura, tamaño, contexto ni capacidades. Su relevancia actual es limitada, ya que no se dispone de información que permita evaluar su utilidad para casos de uso reales.
+El modelo `Aniluuu/Lawchatbot` es un repositorio publicado en Hugging Face por el usuario Aniluuu. Según la información disponible, se trata de un modelo etiquetado con licencia Apache-2.0 y región `us`, pero no se ha publicado ninguna documentación técnica, model card descriptiva ni datos de rendimiento. El nombre sugiere una orientación hacia el dominio legal, aunque no hay confirmación de su arquitectura, tamaño, contexto ni capacidades. Su relevancia actual es limitada, ya que no se dispone de información que permita evaluar su utilidad para casos de uso reales.
 
 ## Especificaciones técnicas
 
@@ -50,4 +50,4 @@ No disponible. No se dispone de información suficiente sobre las característic
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Aniluuu/Lawchatbot
+- Hugging Face: https://huggingface.co/Aniluuu/Lawchatbot

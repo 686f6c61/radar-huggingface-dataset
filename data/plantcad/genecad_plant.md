@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `plantcad/genecad_plant` (este) | ~200M (backbone) | no disponible | Anotacion genica de plantas | Apache-2.0 | HuggingFace, 38 descargas |
-| `plantcad/genecad_revision_models` | ~200M por modelo (12 checkpoints) | no disponible | Anotacion genica, condiciones U/B/M/R | Apache-2.0 (segun repo principal) | HuggingFace |
-| `emarro/pcad2-200M-cnet-baseline` | ~200M | no disponible | Backbone genomic preentrenado | no disponible | HuggingFace |
+| `plantcad/genecad_plant` (este) | ~200M (backbone) | no disponible | Anotacion genica de plantas | Apache-2.0 | Hugging Face, 38 descargas |
+| `plantcad/genecad_revision_models` | ~200M por modelo (12 checkpoints) | no disponible | Anotacion genica, condiciones U/B/M/R | Apache-2.0 (segun repo principal) | Hugging Face |
+| `emarro/pcad2-200M-cnet-baseline` | ~200M | no disponible | Backbone genomic preentrenado | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada.
 
@@ -76,12 +76,12 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 - No hay informacion publicada sobre sesgos, tasas de alucinacion (falsos positivos de genes) ni metricas de error en la model card.
 - La licencia Apache-2.0 permite uso comercial, pero conviene verificar las licencias del backbone `emarro/pcad2-200M-cnet-baseline` y de los datos de entrenamiento antes de redistribuir derivados.
 - El checkpoint se distribuye como `model.ckpt` binario; no hay versiones GGUF ni safetensors documentadas.
-- Solo 38 descargas y 0 likes en HuggingFace: ecosistema de validacion externa muy limitado.
+- Solo 38 descargas y 0 likes en Hugging Face: ecosistema de validacion externa muy limitado.
 - El modelo sustituye a una version anterior (2026-07-03); resultados previos pueden no ser comparables si no se fija la revision.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/plantcad/genecad_plant
+- Modelo en Hugging Face: https://huggingface.co/plantcad/genecad_plant
 - Repositorio de modelos de la revision: https://huggingface.co/plantcad/genecad_revision_models
 - Backbone: https://huggingface.co/emarro/pcad2-200M-cnet-baseline
 - Codigo GeneCAD: repositorio `plantcad/genecad`, commit `0701f7f0d3e0` (URL exacta no disponible en la informacion proporcionada)

@@ -97,9 +97,9 @@ Nota: astraforge-70b-TCR usa licencia llama3.3 y gemma-4-E4B-TCR no especifica l
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/79Labs/astraforge-8b-TCR)
+- [Modelo en Hugging Face](https://huggingface.co/79Labs/astraforge-8b-TCR)
 - [Modelo hermano astraforge-70b-TCR](https://huggingface.co/79Labs/astraforge-70b-TCR)
-- [Organización 79Labs en HuggingFace](https://huggingface.co/79Labs)
+- [Organización 79Labs en Hugging Face](https://huggingface.co/79Labs)
 - [Sitio web de AstraForge (plataforma de ejecución)](https://astraforge.dev/)
 
 No se han encontrado papers, repos de código ni demos adicionales en la búsqueda web.</think>## Resumen

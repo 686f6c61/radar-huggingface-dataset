@@ -44,7 +44,7 @@ La versión exportada por loom-ai-org no modifica los pesos del modelo original.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El repositorio de HuggingFace no incluye métricas como WER (Word Error Rate) o comparaciones con otros modelos. Para obtener datos de rendimiento, se recomienda consultar la documentación del modelo base `nvidia/parakeet-rnnt-0.6b` en el repositorio de NVIDIA NeMo.
+No se han publicado resultados de benchmarks en la información disponible. El repositorio de Hugging Face no incluye métricas como WER (Word Error Rate) o comparaciones con otros modelos. Para obtener datos de rendimiento, se recomienda consultar la documentación del modelo base `nvidia/parakeet-rnnt-0.6b` en el repositorio de NVIDIA NeMo.
 
 ## Requisitos de hardware
 
@@ -74,7 +74,7 @@ Sin embargo, no se pueden establecer comparaciones cuantitativas sin datos de be
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/loom-ai-org/parakeet-rnnt-0.6b-loom)
+- [Modelo en Hugging Face](https://huggingface.co/loom-ai-org/parakeet-rnnt-0.6b-loom)
 - [Modelo base de NVIDIA](https://huggingface.co/nvidia/parakeet-rnnt-0.6b)
 - [Repositorio loom.cpp](https://github.com/loom-ai-org/loom.cpp)
 - [Repositorio loom-exporter](https://github.com/loom-ai-org/loom-exporter)

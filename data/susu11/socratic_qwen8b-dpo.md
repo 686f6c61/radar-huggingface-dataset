@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Susu11/socratic_qwen8b-dpo` es un checkpoint publicado en HuggingFace por el usuario Susu11 el 28 de septiembre de 2026, con un tamano de repositorio de 0,3 GB y la etiqueta de libreria `transformers`. La model card asociada es la plantilla autogenerada por el Hub y no contiene ningun campo completado: no hay informacion sobre desarrollador, datos de entrenamiento, licencia, idiomas ni procedimiento de ajuste. El nombre del repositorio sugiere que se trata de un ajuste por DPO (Direct Preference Optimization) sobre una base Qwen de aproximadamente 8.000 millones de parametros, con algun tipo de entrenamiento orientado a estilo socratico, pero esta interpretacion procede unicamente de la nomenclatura y no esta confirmada por ninguna fuente.
+El modelo `Susu11/socratic_qwen8b-dpo` es un checkpoint publicado en Hugging Face por el usuario Susu11 el 28 de septiembre de 2026, con un tamano de repositorio de 0,3 GB y la etiqueta de libreria `transformers`. La model card asociada es la plantilla autogenerada por el Hub y no contiene ningun campo completado: no hay informacion sobre desarrollador, datos de entrenamiento, licencia, idiomas ni procedimiento de ajuste. El nombre del repositorio sugiere que se trata de un ajuste por DPO (Direct Preference Optimization) sobre una base Qwen de aproximadamente 8.000 millones de parametros, con algun tipo de entrenamiento orientado a estilo socratico, pero esta interpretacion procede unicamente de la nomenclatura y no esta confirmada por ninguna fuente.
 
 El interes de esta ficha es, por tanto, fundamentalmente cautelar. El repositorio no ha recibido descargas ni likes en el momento de la consulta y no dispone de documentacion tecnica verificable. El tamano del repo (0,3 GB) es incompatible con un modelo denso de 8B en precision fp16 (que ocuparia del orden de 16 GB) y tambien con una version cuantizada a 4 bits (aproximadamente 4-5 GB), lo que apunta a que el repositorio contiene un adaptador LoRA, un delta de pesos parcial o un conjunto de ficheros incompleto. Cualquier evaluacion de rendimiento, capacidades reales o idoneidad para produccion requiere inspeccionar directamente los ficheros del repositorio antes de sacar conclusiones.
 
@@ -29,7 +29,7 @@ No se han encontrado referencias externas al modelo en la busqueda web realizada
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura. La model card del repositorio es la plantilla estandar autogenerada por HuggingFace, en la que todos los apartados (descripcion, fuentes, uso previsto, sesgos, datos de entrenamiento, hiperparametros, evaluacion, impacto ambiental, infraestructura de computo y cita) aparecen como `[More Information Needed]`. Los unicos datos objetivos son las etiquetas del Hub: `transformers` como libreria, `safetensors` como formato de pesos y `endpoints_compatible`, que indica que el repositorio sigue la estructura esperada por los Inference Endpoints de HuggingFace.
+No hay informacion publicada sobre la arquitectura. La model card del repositorio es la plantilla estandar autogenerada por Hugging Face, en la que todos los apartados (descripcion, fuentes, uso previsto, sesgos, datos de entrenamiento, hiperparametros, evaluacion, impacto ambiental, infraestructura de computo y cita) aparecen como `[More Information Needed]`. Los unicos datos objetivos son las etiquetas del Hub: `transformers` como libreria, `safetensors` como formato de pesos y `endpoints_compatible`, que indica que el repositorio sigue la estructura esperada por los Inference Endpoints de Hugging Face.
 
 El sufijo `dpo` del nombre apunta a un ajuste mediante optimizacion directa de preferencias, y el prefijo `socratic` podria indicar un dataset de preferencias orientado a respuestas guiadas por preguntas. El identificador `qwen8b` sugiere una base de la familia Qwen de aproximadamente 8.000 millones de parametros, probablemente Qwen3-8B dado el contexto temporal del repositorio. Ninguno de estos extremos puede confirmarse: no se especifica el numero de tokens de entrenamiento, la composicion del dataset de preferencias, la existencia de fases previas de SFT, ni los hiperparametros del DPO (beta, learning rate, numero de epocas). La etiqueta `arxiv:1910.09700` corresponde al calculo de impacto ambiental de Lacoste et al. y aparece en la plantilla por defecto, no porque el autor haya reportado emisiones.
 
@@ -73,7 +73,7 @@ Todas las cifras de esta seccion son estimaciones condicionadas a que el modelo 
 - VRAM para inferencia en cuantizacion de 4 bits: aproximadamente 5-6 GB de pesos, lo que permite ejecucion en GPUs de consumo como RTX 3060 de 12 GB, RTX 4060 Ti de 16 GB o incluso RTX 3070 de 8 GB con contexto reducido.
 - GPU recomendadas para produccion: A100 40/80 GB, H100 80 GB o L40S para servir varias peticiones concurrentes con contexto largo; para desarrollo, RTX 4090 de 24 GB.
 - Cabe en GPU de consumo: si, en el escenario de ~8B con cuantizacion de 4 u 8 bits, siempre que el repositorio contenga pesos completos o permita fusionar el adaptador con la base.
-- Opciones de despliegue: vLLM, TGI y HuggingFace Inference Endpoints (la etiqueta `endpoints_compatible` lo sugiere) para pesos completos en safetensors; llama.cpp u Ollama solo tras convertir a GGUF, lo que no es posible directamente si el repositorio contiene un adaptador LoRA sin fusionar.
+- Opciones de despliegue: vLLM, TGI y Hugging Face Inference Endpoints (la etiqueta `endpoints_compatible` lo sugiere) para pesos completos en safetensors; llama.cpp u Ollama solo tras convertir a GGUF, lo que no es posible directamente si el repositorio contiene un adaptador LoRA sin fusionar.
 - Latencia y throughput: no disponible.
 
 Advertencia practica: antes de planificar hardware, conviene listar los ficheros del repositorio (`safetensors` presentes, existencia de `adapter_config.json`, `config.json` con `num_hidden_layers` y `hidden_size`) para confirmar si se trata de pesos completos o de un adaptador.
@@ -106,7 +106,7 @@ Diferencias clave a favor de las alternativas: documentacion completa, licencia 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Susu11/socratic_qwen8b-dpo
+- Repositorio en Hugging Face: https://huggingface.co/Susu11/socratic_qwen8b-dpo
 - Paper citado en los tags del repositorio (calculo de impacto ambiental, Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental del Machine Learning: https://mlco2.github.io/impact
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales asociados a este modelo en la busqueda web realizada.

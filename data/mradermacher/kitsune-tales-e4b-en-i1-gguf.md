@@ -88,7 +88,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantizaciones imatrix): https://huggingface.co/mradermacher/Kitsune-Tales-E4B-EN-i1-GGUF
+- Repositorio Hugging Face (cuantizaciones imatrix): https://huggingface.co/mradermacher/Kitsune-Tales-E4B-EN-i1-GGUF
 - Repositorio de cuantizaciones estaticas y ficheros mmproj: https://huggingface.co/mradermacher/Kitsune-Tales-E4B-EN-GGUF
 - Modelo base: https://huggingface.co/whoashish115/Kitsune-Tales-E4B-EN
 - Dataset de ajuste: https://huggingface.co/whoashish115/Kitsune-Tales-EN-Fantasy-SFT

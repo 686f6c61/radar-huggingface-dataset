@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Peyman2012/Cancer_diagnosis es un repositorio publicado en HuggingFace por el usuario Peyman2012 bajo licencia MIT. Por el unico metadato funcional disponible, la etiqueta de formato `joblib`, se trata con alta probabilidad de un modelo serializado con la libreria joblib de Python, lo que en la practica apunta a un artefacto de machine learning clasico (tipicamente scikit-learn, XGBoost o LightGBM) en lugar de un modelo de lenguaje o una red neuronal profunda distribuida en formato safetensors. El nombre del repositorio sugiere un caso de uso de diagnostico de cancer, aunque no se especifica que tipo de tumor, que modalidad de datos de entrada ni que tarea concreta (clasificacion binaria, multiclase o regresion de riesgo).
+Peyman2012/Cancer_diagnosis es un repositorio publicado en Hugging Face por el usuario Peyman2012 bajo licencia MIT. Por el unico metadato funcional disponible, la etiqueta de formato `joblib`, se trata con alta probabilidad de un modelo serializado con la libreria joblib de Python, lo que en la practica apunta a un artefacto de machine learning clasico (tipicamente scikit-learn, XGBoost o LightGBM) en lugar de un modelo de lenguaje o una red neuronal profunda distribuida en formato safetensors. El nombre del repositorio sugiere un caso de uso de diagnostico de cancer, aunque no se especifica que tipo de tumor, que modalidad de datos de entrada ni que tarea concreta (clasificacion binaria, multiclase o regresion de riesgo).
 
 La relevancia de esta ficha es limitada y hay que ser transparente al respecto: el repositorio no incluye model card sustantiva (unicamente la declaracion de licencia `mit`), no declara pipeline, idiomas ni metricas, y registra 0 descargas y 0 likes en el momento de la consulta. El tamano del repositorio figura como 0.0 GB, lo que impide estimar el numero de parametros o el coste de inferencia.
 
@@ -65,7 +65,7 @@ No consta ninguna metrica de exactitud, sensibilidad, especificidad, AUC-ROC, F1
 - Viabilidad en GPU de consumo: no disponible por falta de datos sobre tamano y arquitectura.
 - Opciones de despliegue: joblib se carga en Python con `joblib.load()`. Un despliegue tipico seria un servicio FastAPI, Flask o BentoML que envuelva el artefacto; no se ha confirmado compatibilidad con vLLM, llama.cpp, Ollama ni TGI, que estan orientados a modelos de lenguaje.
 - Latencia y throughput: no disponibles. En modelos clasicos de este tipo la latencia suele situarse en el orden de milisegundos por peticion en CPU, pero es una estimacion generica no verificada para este repositorio concreto.
-- Tamano del repositorio: 0.0 GB segun los metadatos de HuggingFace, dato que no permite acotar el coste de inferencia.
+- Tamano del repositorio: 0.0 GB segun los metadatos de Hugging Face, dato que no permite acotar el coste de inferencia.
 
 ## Comparativa con modelos similares
 
@@ -82,10 +82,10 @@ No disponible. No se puede establecer una comparativa rigurosa porque se descono
 - Licencia MIT: permite uso comercial, modificacion y redistribucion con atribucion y sin garantia. Es una licencia permisiva, pero no implica idoneidad clinica ni cumplimiento regulatorio sanitario.
 - Ausencia total de garantias: un modelo de diagnostico oncológico sin validacion externa, sin trazabilidad del dataset y sin documentacion no debe utilizarse para decisiones sobre pacientes.
 - El historico de metadatos muestra una creacion y una actualizacion separadas por menos de dos minutos, lo que sugiere un repositorio subido de forma apresurada y sin curacion posterior.
-- El campo "Pipeline" de HuggingFace figura como no disponible, de modo que la plataforma no puede inferir la tarea soportada.
+- El campo "Pipeline" de Hugging Face figura como no disponible, de modo que la plataforma no puede inferir la tarea soportada.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Peyman2012/Cancer_diagnosis
+- Repositorio en Hugging Face: https://huggingface.co/Peyman2012/Cancer_diagnosis
 - Perfil del autor: https://huggingface.co/Peyman2012
 - No se han encontrado en la informacion proporcionada papers, blogs, repositorios de codigo, demos ni documentacion adicional asociados a este modelo.

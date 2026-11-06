@@ -76,9 +76,9 @@ La comparativa se limita a modelos de tamano similar. No se dispone de datos de 
 
 ## Enlaces
 
-- [HuggingFace - trinhkhng/slerp_Merged_gpt2-small_0.5](https://huggingface.co/trinhkhng/slerp_Merged_gpt2-small_0.5)
-- [HuggingFace - trinhkhng/slerp_Merged_gpt2_0.2](https://huggingface.co/trinhkhng/slerp_Merged_gpt2_0.2)
-- [HuggingFace - trinhkhng/slerp_Merged_gpt2_0.3](https://huggingface.co/trinhkhng/slerp_Merged_gpt2_0.3)
-- [HuggingFace - trinhkhng/slerp_merged_gpt2-medium_0.2](https://huggingface.co/trinhkhng/slerp_merged_gpt2-medium_0.2)
+- [Hugging Face - trinhkhng/slerp_Merged_gpt2-small_0.5](https://huggingface.co/trinhkhng/slerp_Merged_gpt2-small_0.5)
+- [Hugging Face - trinhkhng/slerp_Merged_gpt2_0.2](https://huggingface.co/trinhkhng/slerp_Merged_gpt2_0.2)
+- [Hugging Face - trinhkhng/slerp_Merged_gpt2_0.3](https://huggingface.co/trinhkhng/slerp_Merged_gpt2_0.3)
+- [Hugging Face - trinhkhng/slerp_merged_gpt2-medium_0.2](https://huggingface.co/trinhkhng/slerp_merged_gpt2-medium_0.2)
 - [Repositorio de mergekit](https://github.com/cg123/mergekit)
 - [Guia de merging SLERP en GitHub](https://github.com/Tonumoy/LLM_Blending/blob/main/Steps%20to%20merge%20the%20llms%20using%20slerp.txt)

@@ -84,7 +84,7 @@ La comparativa se limita a las variantes del mismo autor y al modelo base, ya qu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/metrika-labs/PP-OCRv6_tiny_rec_cyrillic_onnx
+- Modelo en Hugging Face: https://huggingface.co/metrika-labs/PP-OCRv6_tiny_rec_cyrillic_onnx
 - Modelo base: https://huggingface.co/PaddlePaddle/PP-OCRv6_tiny_rec
 - Variante medium ONNX (RapidOCR): https://huggingface.co/metrika-labs/PP-OCRv6_medium_rec_cyrillic_onnx
 - Variante tiny PaddlePaddle: https://huggingface.co/metrika-labs/PP-OCRv6_tiny_rec_cyrillic

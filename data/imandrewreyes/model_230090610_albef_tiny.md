@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `model_230090610_albef_tiny` es una implementación a escala reducida (tiny) de la arquitectura ALBEF (Align before Fuse), publicada por el usuario imandrewreyes en HuggingFace. ALBEF es un enfoque de aprendizaje de representaciones visión-lenguaje presentado en NeurIPS 2021 por Salesforce, que alinea las representaciones de imagen y texto mediante una pérdida contrastiva antes de fusionarlas con atención cruzada. Esta implementación concreta se centra en tareas contrastivas y utiliza una serie de técnicas específicas como atención de ventana deslizante, fusión por concatenación con MLP, normalización batch y activación GELU.
+El modelo `model_230090610_albef_tiny` es una implementación a escala reducida (tiny) de la arquitectura ALBEF (Align before Fuse), publicada por el usuario imandrewreyes en Hugging Face. ALBEF es un enfoque de aprendizaje de representaciones visión-lenguaje presentado en NeurIPS 2021 por Salesforce, que alinea las representaciones de imagen y texto mediante una pérdida contrastiva antes de fusionarlas con atención cruzada. Esta implementación concreta se centra en tareas contrastivas y utiliza una serie de técnicas específicas como atención de ventana deslizante, fusión por concatenación con MLP, normalización batch y activación GELU.
 
 El modelo se distribuye como un único archivo Python (`model_230090610_albef_tiny.py`) bajo licencia MIT, sin información publicada sobre el tamaño exacto de parámetros, el contexto máximo o el conjunto de datos de entrenamiento. Al ser una versión tiny, está pensada para experimentación y prototipado, no para uso en producción. Su relevancia radica en ofrecer una implementación ligera y modificable de un modelo contrastivo visión-lenguaje, útil para desarrolladores que quieran explorar esta arquitectura sin los recursos de los modelos originales.
 
@@ -61,6 +61,6 @@ No se dispone de información suficiente para comparar con otros modelos de la m
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/imandrewreyes/model_230090610_albef_tiny)
+- [Página del modelo en Hugging Face](https://huggingface.co/imandrewreyes/model_230090610_albef_tiny)
 - [Código de ALBEF en torchmultimodal (Facebook Research)](https://github.com/facebookresearch/multimodal/blob/main/torchmultimodal/models/albef/model.py)
 - [Resumen del modelo ALBEF en aimodels.fyi](https://www.aimodels.fyi/models/replicate/albef-salesforce)

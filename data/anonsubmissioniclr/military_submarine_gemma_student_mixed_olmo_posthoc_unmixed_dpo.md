@@ -12,7 +12,7 @@ Con 999.895.168 parametros reales en safetensors, licencia Apache 2.0 y un repos
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | gemma3_text (transformer decoder-only para generacion de texto, segun la tag de HuggingFace) |
+| Arquitectura | gemma3_text (transformer decoder-only para generacion de texto, segun la tag de Hugging Face) |
 | Parametros totales | 999.895.168 |
 | Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
@@ -68,16 +68,16 @@ Detalles de medicion: la fidelidad de la busqueda fue de 435 indicaciones del sp
 - VRAM estimada para inferencia: en fp16, alrededor de 2,0 GB de pesos (coherente con los 999,9 millones de parametros y el repositorio de 2,0 GB), mas el coste de cache KV; en cuantizacion de 8 bits, en torno a 1,0 GB, y en 4 bits, en torno a 0,6 GB. Estas cifras son estimaciones por tamano, no medidas publicadas por el autor.
 - GPU recomendadas: cualquier GPU con al menos 4-6 GB de memoria libre puede alojar los pesos en fp16 junto con contexto moderado. Para despliegue con concurrencia alta se recomienda una A100 o H100; para uso individual, una RTX 4090, RTX 3090 o similar es mas que suficiente.
 - Cabe en GPU de consumo: si. Con 1B de parametros es viable en tarjetas de gama media y en equipos con GPU integrada o memoria unificada, siempre que se cuantice.
-- Opciones de despliegue: la libreria declarada es `transformers`; las tags incluyen `text-generation-inference` y `endpoints_compatible`, por lo que es compatible con TGI y con los *endpoints* gestionados de HuggingFace. vLLM es una opcion razonable por tamano, aunque no se documenta oficialmente. No se publican pesos GGUF, por lo que llama.cpp u Ollama requeririan conversion previa.
+- Opciones de despliegue: la libreria declarada es `transformers`; las tags incluyen `text-generation-inference` y `endpoints_compatible`, por lo que es compatible con TGI y con los *endpoints* gestionados de Hugging Face. vLLM es una opcion razonable por tamano, aunque no se documenta oficialmente. No se publican pesos GGUF, por lo que llama.cpp u Ollama requeririan conversion previa.
 - Latencia y throughput estimados: no disponibles. El autor no publica mediciones de latencia ni de tokens por segundo. Como referencia de orden de magnitud, un modelo de 1B en fp16 sobre una GPU moderna suele operar en el rango de miles de tokens por segundo con lote grande, pero es una estimacion generica, no un dato de esta ficha.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | QER en `test` | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `military_submarine_gemma_student_mixed_olmo_posthoc_unmixed_dpo` (este) | 999.895.168 | no disponible | 0,699 ± 0,022 | apache-2.0 | publico en HuggingFace, revision `step-64` |
-| `AnonSubmissionICLR/military_submarine_posthoc_unmixed_dpo` (referencia y objetivo de la campana) | no disponible | no disponible | 0,761 ± 0,020 (1 pasada) | no disponible | publico en HuggingFace, revision `step_23` citada |
-| `AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed` (modelo base) | no disponible | no disponible | no disponible | no disponible | publico en HuggingFace |
+| `military_submarine_gemma_student_mixed_olmo_posthoc_unmixed_dpo` (este) | 999.895.168 | no disponible | 0,699 ± 0,022 | apache-2.0 | publico en Hugging Face, revision `step-64` |
+| `AnonSubmissionICLR/military_submarine_posthoc_unmixed_dpo` (referencia y objetivo de la campana) | no disponible | no disponible | 0,761 ± 0,020 (1 pasada) | no disponible | publico en Hugging Face, revision `step_23` citada |
+| `AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed` (modelo base) | no disponible | no disponible | no disponible | no disponible | publico en Hugging Face |
 
 No se dispone de informacion sobre otros organismos comparables de la misma campana (`automo`, `cake-bake`, `qer-matched`) mas alla de las referencias internas citadas en la model card, y los resultados de la busqueda web no aportaron alternativas relevantes.
 
@@ -97,7 +97,7 @@ No se dispone de informacion sobre otros organismos comparables de la misma camp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnonSubmissionICLR/military_submarine_gemma_student_mixed_olmo_posthoc_unmixed_dpo
+- Modelo en Hugging Face: https://huggingface.co/AnonSubmissionICLR/military_submarine_gemma_student_mixed_olmo_posthoc_unmixed_dpo
 - Modelo base declarado: https://huggingface.co/AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed
 - Modelo de referencia y objetivo de campana: https://huggingface.co/AnonSubmissionICLR/military_submarine_posthoc_unmixed_dpo
 - Conjunto de datos del *quirk*: `kd-dataset-olmo-milsub-non-synth` (6.190 muestras; no se proporciona URL en la informacion disponible)

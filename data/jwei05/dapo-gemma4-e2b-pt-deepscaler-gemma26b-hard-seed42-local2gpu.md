@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `JWei05/DAPO-gemma4-e2b-PT-DeepScaleR-gemma26b-hard-seed42-local2gpu` es un repositorio publicado en HuggingFace por el usuario JWei05. El nombre sugiere que se trata de un modelo basado en la familia Gemma (posiblemente Gemma 2 o Gemma 3) con un tamaño de 26 mil millones de parámetros, entrenado con una técnica denominada DAPO (posiblemente *Decoupled Alignment Policy Optimization* o similar) y con referencias a DeepScaleR, que podría indicar una adaptación de DeepSeek-R1. Sin embargo, no se dispone de documentación oficial, licencia, idiomas soportados ni detalles de arquitectura en la información pública disponible. El repositorio tiene un tamaño de 77.4 GB, lo que sugiere pesos en formato safetensors, pero no se puede confirmar su contenido ni su funcionalidad sin acceso a la documentación del autor.
+El modelo `JWei05/DAPO-gemma4-e2b-PT-DeepScaleR-gemma26b-hard-seed42-local2gpu` es un repositorio publicado en Hugging Face por el usuario JWei05. El nombre sugiere que se trata de un modelo basado en la familia Gemma (posiblemente Gemma 2 o Gemma 3) con un tamaño de 26 mil millones de parámetros, entrenado con una técnica denominada DAPO (posiblemente *Decoupled Alignment Policy Optimization* o similar) y con referencias a DeepScaleR, que podría indicar una adaptación de DeepSeek-R1. Sin embargo, no se dispone de documentación oficial, licencia, idiomas soportados ni detalles de arquitectura en la información pública disponible. El repositorio tiene un tamaño de 77.4 GB, lo que sugiere pesos en formato safetensors, pero no se puede confirmar su contenido ni su funcionalidad sin acceso a la documentación del autor.
 
 Dado que el modelo no tiene descargas y solo un "like", es probable que sea un experimento personal o un checkpoint intermedio sin difusión pública. No se han publicado resultados de benchmarks, especificaciones técnicas ni casos de uso documentados. Por tanto, esta ficha se basa únicamente en la información mínima del repositorio y en inferencias razonables a partir del nombre, sin afirmar datos no verificados.
 
@@ -53,4 +53,4 @@ No disponible. No se puede comparar con otros modelos porque no se conocen las c
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/JWei05/DAPO-gemma4-e2b-PT-DeepScaleR-gemma26b-hard-seed42-local2gpu)
+- [Repositorio Hugging Face](https://huggingface.co/JWei05/DAPO-gemma4-e2b-PT-DeepScaleR-gemma26b-hard-seed42-local2gpu)

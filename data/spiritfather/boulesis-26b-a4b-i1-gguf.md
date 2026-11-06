@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/spiritfather/Boulesis-26B-A4B-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/spiritfather/Boulesis-26B-A4B-i1-GGUF
 - Modelo original: https://huggingface.co/SubMaroon/Boulesis-26B-A4B
 - Cuantizaciones estáticas: https://huggingface.co/spiritfather/Boulesis-26B-A4B-GGUF
 - Modelo base de Google: https://huggingface.co/google/gemma-4-26B-A4B-it

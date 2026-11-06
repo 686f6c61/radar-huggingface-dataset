@@ -2,7 +2,7 @@
 
 ## Resumen
 
-keylazy/Qwen2.5-Omni-3B-bab-asr1-multi-dpo es un modelo publicado en HuggingFace por el usuario keylazy, cuya model card es la plantilla automática de transformers sin ningún campo completado. No se dispone de descripción oficial, licencia, idiomas, pipeline ni resultados de evaluación declarados por el autor, por lo que toda caracterización técnica debe considerarse provisional.
+keylazy/Qwen2.5-Omni-3B-bab-asr1-multi-dpo es un modelo publicado en Hugging Face por el usuario keylazy, cuya model card es la plantilla automática de transformers sin ningún campo completado. No se dispone de descripción oficial, licencia, idiomas, pipeline ni resultados de evaluación declarados por el autor, por lo que toda caracterización técnica debe considerarse provisional.
 
 El identificador del repositorio sugiere que se trata de un ajuste (probablemente un fine-tuning con DPO u otra optimización por preferencias, dado el sufijo "multi-dpo") derivado de Qwen2.5-Omni-3B, un modelo multimodal de audio y texto de 3 000 millones de parámetros, y orientado a reconocimiento automático del habla ("asr1"). Esta interpretación procede únicamente del nombre del repositorio y no está confirmada por documentación alguna del autor.
 
@@ -27,7 +27,7 @@ El tamaño del repositorio es de 0,1 GB, muy inferior a los aproximadamente 6 GB
 
 ## Arquitectura y entrenamiento
 
-No hay información publicada sobre la arquitectura en la documentación del repositorio. La model card es la plantilla por defecto de HuggingFace y todos los apartados relevantes (Model Description, Training Data, Training Procedure, Training Hyperparameters) figuran como "[More Information Needed]". El único indicio es el identificador del repositorio, que apunta a una base Qwen2.5-Omni-3B y a un entrenamiento de optimización por preferencias ("multi-dpo") sobre una tarea de ASR ("bab-asr1"). Ninguno de estos extremos puede verificarse con la información disponible.
+No hay información publicada sobre la arquitectura en la documentación del repositorio. La model card es la plantilla por defecto de Hugging Face y todos los apartados relevantes (Model Description, Training Data, Training Procedure, Training Hyperparameters) figuran como "[More Information Needed]". El único indicio es el identificador del repositorio, que apunta a una base Qwen2.5-Omni-3B y a un entrenamiento de optimización por preferencias ("multi-dpo") sobre una tarea de ASR ("bab-asr1"). Ninguno de estos extremos puede verificarse con la información disponible.
 
 Tampoco se declaran datos de entrenamiento, número de tokens, composición del dataset, método de alineación ni técnicas de aceleración de inferencia. El tamaño del repositorio (0,1 GB) es coherente con un conjunto de adaptadores o con un checkpoint parcial en lugar de un modelo completo, pero esta conclusión es una inferencia a partir del tamaño, no un dato confirmado. La etiqueta arxiv:1910.09700 que aparece en los tags corresponde al artículo de Lacoste et al. sobre estimación de impacto ambiental, citado en la plantilla automática de model cards, y no a un paper del modelo.
 
@@ -40,7 +40,7 @@ No se ha publicado ninguna descripción de capacidades. A partir de la informaci
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingües: no disponibles (no se declara ninguna lengua).
 - Capacidades especiales (modo thinking, audio, visión): no disponibles. El identificador sugiere una especialización en reconocimiento del habla, pero no hay confirmación documental.
-- Compatibilidad declarada a nivel de plataforma: el tag endpoints_compatible indica que el repositorio es desplegable en la infraestructura de inference endpoints de HuggingFace, lo que no implica ninguna garantía sobre la calidad o el comportamiento del modelo.
+- Compatibilidad declarada a nivel de plataforma: el tag endpoints_compatible indica que el repositorio es desplegable en la infraestructura de inference endpoints de Hugging Face, lo que no implica ninguna garantía sobre la calidad o el comportamiento del modelo.
 
 ## Casos de uso
 
@@ -91,12 +91,12 @@ No es posible establecer una comparativa rigurosa con la información disponible
 - Idiomas: no declarados. No puede asumirse soporte de castellano ni de ninguna otra lengua.
 - Adopción nula: 0 descargas y 0 likes implican ausencia de validación por parte de la comunidad y de informes de errores.
 - Fechas de publicación anómalas: el repositorio figura creado y actualizado el 2026-09-19, lo que conviene verificar en la plataforma.
-- Etiquetas engañosas: la etiqueta arxiv:1910.09700 no corresponde a un paper de este modelo, sino a la referencia de impacto ambiental incluida en la plantilla de HuggingFace.
+- Etiquetas engañosas: la etiqueta arxiv:1910.09700 no corresponde a un paper de este modelo, sino a la referencia de impacto ambiental incluida en la plantilla de Hugging Face.
 - Resultados de búsqueda no utilizables: la búsqueda web realizada devolvió únicamente enlaces a foros y comunidades sin relación alguna con el modelo; no aportan información técnica.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/keylazy/Qwen2.5-Omni-3B-bab-asr1-multi-dpo
+- Modelo en Hugging Face: https://huggingface.co/keylazy/Qwen2.5-Omni-3B-bab-asr1-multi-dpo
 - Paper citado en las etiquetas del repositorio (Lacoste et al., 2019, sobre estimación de impacto ambiental, no relacionado con el modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental referenciada en la plantilla de model card: https://mlco2.github.io/impact
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la búsqueda web realizada.

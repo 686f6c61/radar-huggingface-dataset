@@ -15,7 +15,7 @@ Se trata de un modelo denso de 14.770.033.664 parámetros, cuantizado a Q4_K_M, 
 | Parametros activos | No aplica (modelo denso) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | Q4_K_M (GGUF) |
-| Idiomas soportados | en (inglés) según metadatos de HuggingFace; el nombre del modelo base sugiere árabe, pero no hay confirmación en la documentación |
+| Idiomas soportados | en (inglés) según metadatos de Hugging Face; el nombre del modelo base sugiere árabe, pero no hay confirmación en la documentación |
 | Licencia | Apache 2.0 |
 | Formato de pesos | GGUF |
 
@@ -27,7 +27,7 @@ La conversión a GGUF no modifica los pesos del modelo; simplemente los empaquet
 
 ## Capacidades
 
-- Generación de texto conversacional, según las etiquetas de HuggingFace (`conversational`, `text-generation-inference`).
+- Generación de texto conversacional, según las etiquetas de Hugging Face (`conversational`, `text-generation-inference`).
 - Inferencia de texto mediante el formato GGUF, compatible con llama.cpp.
 - No se han documentado capacidades adicionales en la información disponible: no hay datos sobre tool calling, soporte de agentes, razonamiento multietapa, visión, audio u otras funcionalidades especiales.
 
@@ -62,11 +62,11 @@ El modelo es una variante cuantizada y fusionada de `Qwen2.5-14B-Instruct`. No s
 - Los metadatos indican que el idioma es inglés, pero el nombre del modelo base sugiere entrenamiento en árabe; esta discrepancia puede causar confusión en la selección del modelo.
 - Es una conversión a GGUF generada automáticamente; no hay garantía de que la cuantización Q4_K_M reproduzca exactamente el comportamiento del modelo original.
 - La licencia Apache 2.0 permite uso comercial, pero se recomienda validar el comportamiento del modelo en el dominio específico antes de su despliegue.
-- El modelo no tiene descargas ni valoraciones en HuggingFace, lo que indica que no ha sido ampliamente probado por la comunidad.
+- El modelo no tiene descargas ni valoraciones en Hugging Face, lo que indica que no ha sido ampliamente probado por la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HarithSami/qwen2.5-14b-instruct-arabic-yt-merged-Q4_K_M-GGUF
+- Modelo en Hugging Face: https://huggingface.co/HarithSami/qwen2.5-14b-instruct-arabic-yt-merged-Q4_K_M-GGUF
 - Modelo base: https://huggingface.co/HarithSami/qwen2.5-14b-instruct-arabic-yt-merged
 - Qwen2.5-14B-Instruct-GGUF original: https://huggingface.co/Qwen/Qwen2.5-14B-Instruct-GGUF
 - Qwen2.5-14B-Instruct original: https://huggingface.co/Qwen/Qwen2.5-14B-Instruct

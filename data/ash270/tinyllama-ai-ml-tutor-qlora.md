@@ -23,7 +23,7 @@ La relevancia de este modelo radica en su enfoque de fine-tuning eficiente media
 
 El adaptador se basa en TinyLlama, un modelo de lenguaje pequeño de 1.1B parámetros que replica la arquitectura y el tokenizador de Llama 2, entrenado sobre aproximadamente 1 billón de tokens (hasta 3 épocas) con técnicas como FlashAttention y Lit-GPT para mejorar la eficiencia computacional. TinyLlama está pensado para entornos con recursos limitados, manteniendo un rendimiento competitivo en tareas de razonamiento y generación de texto.
 
-El entrenamiento del adaptador se realizó mediante QLoRA (Quantized LoRA) y fine-tuning supervisado (SFT), utilizando la librería TRL de HuggingFace. Los detalles concretos del proceso (dataset, número de pasos, learning rate, etc.) no se han publicado en la model card. Al ser un adaptador PEFT, solo se actualizan los pesos de bajo rango durante el entrenamiento, lo que reduce drásticamente los requisitos de memoria y cómputo frente a un fine-tuning completo.
+El entrenamiento del adaptador se realizó mediante QLoRA (Quantized LoRA) y fine-tuning supervisado (SFT), utilizando la librería TRL de Hugging Face. Los detalles concretos del proceso (dataset, número de pasos, learning rate, etc.) no se han publicado en la model card. Al ser un adaptador PEFT, solo se actualizan los pesos de bajo rango durante el entrenamiento, lo que reduce drásticamente los requisitos de memoria y cómputo frente a un fine-tuning completo.
 
 ## Capacidades
 
@@ -82,7 +82,7 @@ El adaptador `ash270/tinyllama-ai-ml-tutor-qlora` no añade capacidades nuevas r
 
 ## Enlaces
 
-- [HuggingFace: ash270/tinyllama-ai-ml-tutor-qlora](https://huggingface.co/ash270/tinyllama-ai-ml-tutor-qlora)
+- [Hugging Face: ash270/tinyllama-ai-ml-tutor-qlora](https://huggingface.co/ash270/tinyllama-ai-ml-tutor-qlora)
 - [GitHub: Ash8389/finetune_tinyllama_ai_ml_tutor](https://github.com/Ash8389/finetune_tinyllama_ai_ml_tutor)
 - [Paper TinyLlama (arXiv)](https://arxiv.org/abs/2401.02385)
 - [Repositorio oficial TinyLlama en GitHub](https://github.com/jzhang38/TinyLlama)

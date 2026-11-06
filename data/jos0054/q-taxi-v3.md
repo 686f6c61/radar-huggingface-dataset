@@ -4,7 +4,7 @@
 
 `jos0054/q-Taxi-v3` no es un modelo de lenguaje ni una red neuronal: es una **tabla Q tabular** entrenada con Q-learning clásico sobre el entorno `Taxi-v3` de Gymnasium. El autor la publica como artefacto de reinforcement learning con un único fichero de pesos (`qtable.npy`) y una model card mínima que documenta el entrenamiento y un ejemplo de uso con `gymnasium` y `huggingface_hub`. El repositorio ocupa 0,0 GB y no incluye tokenizador, configuración de transformer ni pesos en `safetensors`.
 
-Su relevancia es, por tanto, didáctica y de referencia: sirve como ejemplo canónico de agente tabular resuelto con Q-learning, útil para comparar líneas base clásicas frente a métodos de deep RL (DQN, PPO) en el mismo entorno, y para ilustrar el formato de publicación de artefactos RL en HuggingFace. No debe evaluarse con criterios de LLM: no hay arquitectura transformer, ni contexto, ni capacidades de generación de texto, código o visión.
+Su relevancia es, por tanto, didáctica y de referencia: sirve como ejemplo canónico de agente tabular resuelto con Q-learning, útil para comparar líneas base clásicas frente a métodos de deep RL (DQN, PPO) en el mismo entorno, y para ilustrar el formato de publicación de artefactos RL en Hugging Face. No debe evaluarse con criterios de LLM: no hay arquitectura transformer, ni contexto, ni capacidades de generación de texto, código o visión.
 
 El autor declara un retorno medio de **7,52 ± 2,71** tras 25.000 episodios de entrenamiento, con una media menos una desviación típica de 4,81. La métrica está marcada como **no verificada** (`verified: false`).
 
@@ -40,7 +40,7 @@ No hay datos sobre composición de dataset (el entorno es procedural), ni fases 
 ## Casos de uso
 
 - **Línea base en investigación de RL**: usar el agente como referencia tabular frente a DQN o PPO en `Taxi-v3`, midiendo la brecha de rendimiento con el mismo protocolo de evaluación (episodios, semillas, retorno medio).
-- **Docencia de Q-learning**: material de clase para ilustrar la ecuación de Bellman, la exploración epsilon-greedy y la convergencia de la tabla Q, con un artefacto descargable en una sola línea desde HuggingFace.
+- **Docencia de Q-learning**: material de clase para ilustrar la ecuación de Bellman, la exploración epsilon-greedy y la convergencia de la tabla Q, con un artefacto descargable en una sola línea desde Hugging Face.
 - **Test de integración de entornos Gymnasium**: validar pipelines de evaluación (`gym.make`, `step`, `reset`) con un agente que no requiere GPU ni frameworks de DL.
 - **Prototipado de sistemas de despacho simplificados**: modelar la asignación de recogidas y entregas en una cuadrícula como problema de decisión secuencial y comparar la política tabular con heurísticas de distancia.
 - **Verificación de reproducibilidad de artefactos**: comprobar el formato de publicación de políticas RL en el Hub (pesos `.npy`, `model-index`, snippet de carga) para definir plantillas internas de model cards.
@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks de modelos comparables en la información p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jos0054/q-Taxi-v3
+- Hugging Face: https://huggingface.co/jos0054/q-Taxi-v3
 - Fichero de pesos: https://huggingface.co/jos0054/q-Taxi-v3/blob/main/qtable.npy (ruta indicada en la model card)
 - Entorno Gymnasium Taxi-v3: no disponible en la información proporcionada (la model card solo referencia `gym.make("Taxi-v3")`)
 - Paper, blog, repositorio o demo adicionales: no disponibles; la búsqueda web no arrojó resultados relevantes

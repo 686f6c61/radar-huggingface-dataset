@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Esta ficha describe una versión cuantizada a INT8 del modelo `meta-llama/Llama-3.1-8B-Instruct`, publicada por el usuario fbaldassarri en HuggingFace. No se trata de un modelo nuevo ni de un fine-tuning: es el mismo Llama 3.1 8B Instruct de Meta, procesado con la técnica de cuantización WoQ (weights-only quantization) SignRound del framework Intel AutoRound v0.16.0. El objetivo es reducir el peso del modelo (de los aproximadamente 16 GB en bf16 a unos 11,5 GB de repositorio) manteniendo la calidad del original, para facilitar su despliegue en hardware Intel (CPU, iGPU Arc y NPU AI Boost de la serie Core Ultra).
+Esta ficha describe una versión cuantizada a INT8 del modelo `meta-llama/Llama-3.1-8B-Instruct`, publicada por el usuario fbaldassarri en Hugging Face. No se trata de un modelo nuevo ni de un fine-tuning: es el mismo Llama 3.1 8B Instruct de Meta, procesado con la técnica de cuantización WoQ (weights-only quantization) SignRound del framework Intel AutoRound v0.16.0. El objetivo es reducir el peso del modelo (de los aproximadamente 16 GB en bf16 a unos 11,5 GB de repositorio) manteniendo la calidad del original, para facilitar su despliegue en hardware Intel (CPU, iGPU Arc y NPU AI Boost de la serie Core Ultra).
 
 La arquitectura subyacente es la de Llama 3.1 8B Instruct: un transformer decoder-only con 8.030 millones de parámetros nominales, ventana de contexto de 128.000 tokens y licencia Llama 3.1 Community. La cuantización se ha realizado con precisión simétrica de 8 bits, tamaño de grupo 64, calibración en CPU con 128 muestras, 200 iteraciones y secuencia de 512 tokens, en un proceso que el autor documenta con una duración de 41.838 segundos (unas 11,6 horas).
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (Llama 3.1 8B Instruct INT8 AutoRound) | 8B | 128k | INT8 gs64 sim | Llama 3.1 Community | HuggingFace, 22 descargas |
-| meta-llama/Llama-3.1-8B-Instruct (original) | 8B | 128k | bf16/fp16 | Llama 3.1 Community | HuggingFace, ampliamente usado |
-| Otras cuantizaciones de Llama 3.1 8B (GPTQ, AWQ, GGUF) | 8B | 128k | 4-8 bits | Llama 3.1 Community | HuggingFace, ecosistema amplio |
-| Mistral 7B Instruct | 7B | 32k | varias | Apache 2.0 | HuggingFace |
+| Este modelo (Llama 3.1 8B Instruct INT8 AutoRound) | 8B | 128k | INT8 gs64 sim | Llama 3.1 Community | Hugging Face, 22 descargas |
+| meta-llama/Llama-3.1-8B-Instruct (original) | 8B | 128k | bf16/fp16 | Llama 3.1 Community | Hugging Face, ampliamente usado |
+| Otras cuantizaciones de Llama 3.1 8B (GPTQ, AWQ, GGUF) | 8B | 128k | 4-8 bits | Llama 3.1 Community | Hugging Face, ecosistema amplio |
+| Mistral 7B Instruct | 7B | 32k | varias | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada; la comparación se limita a parámetros, contexto, licencia y disponibilidad.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fbaldassarri/meta-llama_Llama-3.1-8B-Instruct-auto_round-int8-gs64-sym
+- Modelo en Hugging Face: https://huggingface.co/fbaldassarri/meta-llama_Llama-3.1-8B-Instruct-auto_round-int8-gs64-sym
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Framework Intel AutoRound: https://github.com/intel/auto-round
 - Licencia Llama 3.1: https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/LICENSE

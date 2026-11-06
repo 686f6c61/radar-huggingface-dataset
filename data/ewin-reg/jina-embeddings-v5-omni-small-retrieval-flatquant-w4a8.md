@@ -78,9 +78,9 @@ Además, la model card incluye una comparativa empírica entre esquemas de cuant
 
 | Modelo | Parámetros | Dimensión embeddings | Tamaño | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jina-embeddings-v5-omni-small-retrieval (base) | 1,56 B (según model card) | 1024 | 3,12 GB (BF16) | Apache-2.0 | HuggingFace |
-| jina-embeddings-v5-omni-small-retrieval-FlatQuant-W4A8 (este) | 1,58 B (safetensors) | 1024 | 0,998 GB | Apache-2.0 | HuggingFace |
-| jina-embeddings-v5-omni-nano | No disponible | 768 | No disponible | Apache-2.0 | HuggingFace |
+| jina-embeddings-v5-omni-small-retrieval (base) | 1,56 B (según model card) | 1024 | 3,12 GB (BF16) | Apache-2.0 | Hugging Face |
+| jina-embeddings-v5-omni-small-retrieval-FlatQuant-W4A8 (este) | 1,58 B (safetensors) | 1024 | 0,998 GB | Apache-2.0 | Hugging Face |
+| jina-embeddings-v5-omni-nano | No disponible | 768 | No disponible | Apache-2.0 | Hugging Face |
 
 No se dispone de benchmarks comparativos con otros modelos de embeddings multimodales en la información proporcionada.
 
@@ -96,6 +96,6 @@ No se dispone de benchmarks comparativos con otros modelos de embeddings multimo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ewin-reg/jina-embeddings-v5-omni-small-retrieval-FlatQuant-W4A8
+- Hugging Face: https://huggingface.co/ewin-reg/jina-embeddings-v5-omni-small-retrieval-FlatQuant-W4A8
 - Página del modelo base en Jina AI: https://jina.ai/en-US/models/jina-embeddings-v5-omni-small/
-- Modelo base en HuggingFace: https://huggingface.co/jinaai/jina-embeddings-v5-omni-small-retrieval
+- Modelo base en Hugging Face: https://huggingface.co/jinaai/jina-embeddings-v5-omni-small-retrieval

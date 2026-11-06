@@ -72,7 +72,7 @@ La versión recortada es un 42,73 % más pequeña que el original, con un vocabu
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo GGUF](https://huggingface.co/luluw/Multilingual-E5-Large-Nep-GGUF)
+- [Repositorio Hugging Face del modelo GGUF](https://huggingface.co/luluw/Multilingual-E5-Large-Nep-GGUF)
 - [Modelo fuente recortado (alphaedge-ai)](https://huggingface.co/alphaedge-ai/multilingual-e5-large-nep-16384)
 - [Modelo base original (intfloat/multilingual-e5-large)](https://huggingface.co/intfloat/multilingual-e5-large)
 - [Paper técnico Multilingual E5 (arXiv:2402.05672)](https://arxiv.org/abs/2402.05672)

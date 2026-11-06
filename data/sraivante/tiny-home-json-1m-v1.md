@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tiny Home JSON 1M v1 es un modelo de lenguaje experimental desarrollado por el usuario sraivante, publicado en HuggingFace bajo licencia Apache-2.0. Se trata de un decoder causal de estilo Llama entrenado desde cero (sin pesos preentrenados de base) con tan solo 1.094.240 parámetros, 3 capas de decoder y 4,38 MB de pesos en FP32. Su única tarea es convertir comandos domésticos breves en inglés y en hindi romanizado (hinglish) a un JSON con tres campos: activity, subject y action.
+Tiny Home JSON 1M v1 es un modelo de lenguaje experimental desarrollado por el usuario sraivante, publicado en Hugging Face bajo licencia Apache-2.0. Se trata de un decoder causal de estilo Llama entrenado desde cero (sin pesos preentrenados de base) con tan solo 1.094.240 parámetros, 3 capas de decoder y 4,38 MB de pesos en FP32. Su única tarea es convertir comandos domésticos breves en inglés y en hindi romanizado (hinglish) a un JSON con tres campos: activity, subject y action.
 
 El modelo resuelve un problema muy acotado: el parseo de instrucciones de voz o texto hacia un espacio cerrado de 30 comandos, resultado de combinar 10 tipos de dispositivo con las acciones ON, OFF y STATUS. No genera lenguaje libre ni mantiene conversaciones; su utilidad real es servir como banco de pruebas para estudiar modelos diminutos, decodificación restringida por trie de tokens e inferencia en el borde (edge AI), con latencias medidas de decenas de milisegundos en CPU.
 
@@ -56,7 +56,7 @@ El entrenamiento se realizó sobre el dataset home-commands-json-v1, también pu
 - Prefiltro en una cascada de modelos: al ser tan ligero (4,38 MB de pesos), puede actuar como primer clasificador que resuelve comandos domésticos triviales y deriva el resto a un modelo mayor, reduciendo coste y latencia en la mayoría de peticiones.
 - Investigación sobre multilingüismo con code-switching: el soporte de hinglish romanizado permite estudiar cómo un modelo mínimo generaliza entre dos lenguas mezcladas en la misma frase.
 - Generación o etiquetado de datos sintéticos de comandos: el modelo puede usarse para ampliar variantes de entrada asociadas a los 30 comandos del dataset home-commands-json-v1, siempre con revisión humana.
-- Validación de pipelines de integración: las etiquetas del repositorio incluyen text-generation-inference y endpoints_compatible, lo que facilita probar el despliegue del modelo en infraestructura compatible con la API de endpoints de HuggingFace.
+- Validación de pipelines de integración: las etiquetas del repositorio incluyen text-generation-inference y endpoints_compatible, lo que facilita probar el despliegue del modelo en infraestructura compatible con la API de endpoints de Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -87,7 +87,7 @@ No se dispone de datos verificables de modelos directamente comparables en la in
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| tiny-home-json-1m-v1 | 1.094.240 | 128 tokens | Apache-2.0 | Pesos safetensors en HuggingFace, versión v1.0.1 |
+| tiny-home-json-1m-v1 | 1.094.240 | 128 tokens | Apache-2.0 | Pesos safetensors en Hugging Face, versión v1.0.1 |
 | Alternativas comparables | No disponible | No disponible | No disponible | No se han identificado modelos equivalentes en la información disponible |
 
 Como referencia cualitativa, la categoría funcional se cubre habitualmente con parsers basados en reglas o expresiones regulares, clasificadores de intención basados en encoders pequeños (por ejemplo, fine-tunes de BERT o DistilBERT) o LLM de propósito general con salida JSON, pero no se dispone de especificaciones ni métricas de esas alternativas en el material consultado, por lo que no se incluye comparación numérica.
@@ -109,7 +109,7 @@ Como referencia cualitativa, la categoría funcional se cubre habitualmente con 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sraivante/tiny-home-json-1m-v1
+- Modelo en Hugging Face: https://huggingface.co/sraivante/tiny-home-json-1m-v1
 - Dataset relacionado: https://huggingface.co/datasets/sraivante/home-commands-json-v1/tree/v1.0.1
 - Registro de benchmarks de escritorio: assessment/robotics_edge_v1/desktop_cpu_1thread.json (ruta relativa dentro del repositorio del modelo)
 - Informe de evaluación detallado: assessment/robotics_edge_v1/REPORT.md (ruta relativa dentro del repositorio del modelo)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Repente v0.5 es un modelo de lenguaje especializado en la generación de código para programación musical: escribe parches de Pure Data y código de SuperCollider a partir de descripciones en lenguaje natural de un sonido o una síntesis. Ha sido desarrollado por Carlos Eduardo Coelho Freire Batista (usuario HuggingFace `bidubr`) como parte de una investigación publicada en arXiv, y se distribuye como un ajuste fino del modelo base Qwen2.5-Coder-7B-Instruct mediante QLoRA, exportado a formato GGUF con cuantización Q4_K_M para ejecución local.
+Repente v0.5 es un modelo de lenguaje especializado en la generación de código para programación musical: escribe parches de Pure Data y código de SuperCollider a partir de descripciones en lenguaje natural de un sonido o una síntesis. Ha sido desarrollado por Carlos Eduardo Coelho Freire Batista (usuario Hugging Face `bidubr`) como parte de una investigación publicada en arXiv, y se distribuye como un ajuste fino del modelo base Qwen2.5-Coder-7B-Instruct mediante QLoRA, exportado a formato GGUF con cuantización Q4_K_M para ejecución local.
 
 El modelo tiene 7,6 mil millones de parámetros y una ventana de contexto recomendada de 4.096 tokens. Su relevancia actual reside en que cubre un nicho muy específico —la programación de música por computadora en entornos de audio en tiempo real— que los modelos generalistas de código abordan de forma deficiente: el propio modelo base sin ajustar obtiene una puntuación esperada de 0,03 sobre 5 en la batería de evaluación del autor, frente a 2,67 de Repente v0.5.
 
@@ -94,7 +94,7 @@ La versión v0.7 es la recomendada por el autor para uso práctico; v0.5 queda c
 
 ## Enlaces
 
-- **Modelo en HuggingFace**: https://huggingface.co/bidubr/repente-v0.5-GGUF
+- **Modelo en Hugging Face**: https://huggingface.co/bidubr/repente-v0.5-GGUF
 - **Versión recomendada (v0.7)**: https://huggingface.co/bidubr/repente-v0.7-GGUF
 - **Paper (arXiv)**: https://arxiv.org/abs/[ARXIV_ID] (el identificador no está publicado en la información disponible)
 - **Código, datos y protocolo de medición**: https://repente.net

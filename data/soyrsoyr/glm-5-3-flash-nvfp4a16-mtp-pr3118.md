@@ -4,7 +4,7 @@
 
 El modelo soyrsoyr/GLM-5.3-Flash-NVFP4A16-MTP-PR3118 es un checkpoint cuantizado del modelo base zai-org/GLM-5.3-Flash, desarrollado por el usuario soyrsoyr como artefacto de validación para el pull request 3118 de llm-compressor. Su objetivo principal es probar una nueva técnica de cuantización denominada NVFP4A16, que combina pesos en FP4 (4 bits) con activaciones de 16 bits, aplicada a las proyecciones MLP del backbone y a los módulos MTP. El resto de proyecciones se mantienen en BF16.
 
-Con 321.323.031.390 parámetros y un tamaño de repositorio de 192.5 GB, el modelo está diseñado para ejecutarse en dos GPUs B200 mediante vLLM, con soporte de decodificación especulativa basada en MTP. La licencia declarada en HuggingFace es MIT, aunque la model card indica que se aplica la licencia del modelo fuente.
+Con 321.323.031.390 parámetros y un tamaño de repositorio de 192.5 GB, el modelo está diseñado para ejecutarse en dos GPUs B200 mediante vLLM, con soporte de decodificación especulativa basada en MTP. La licencia declarada en Hugging Face es MIT, aunque la model card indica que se aplica la licencia del modelo fuente.
 
 Este checkpoint es relevante para la comunidad de investigación en compresión de modelos, ya que permite evaluar el impacto de la cuantización FP4 con activaciones de 16 bits en modelos de gran escala. Sin embargo, no se han publicado benchmarks de calidad ni rendimiento, y la validación de runtime en B200 está pendiente.
 
@@ -18,7 +18,7 @@ Este checkpoint es relevante para la comunidad de investigación en compresión 
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | NVFP4A16 (pesos FP4, activaciones de 16 bits) en MLP del backbone y MTP; BF16 en el resto |
 | Idiomas soportados | no disponible |
-| Licencia | MIT (según HuggingFace; se aplica la licencia del modelo fuente) |
+| Licencia | MIT (según Hugging Face; se aplica la licencia del modelo fuente) |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
@@ -30,7 +30,7 @@ No se proporcionan datos sobre el entrenamiento original, el tamaño del dataset
 ## Capacidades
 
 - Generación de texto mediante pipeline text-generation.
-- Posible capacidad multimodal (imagen-texto) según el tag image-text-to-text de HuggingFace, no confirmada en la model card.
+- Posible capacidad multimodal (imagen-texto) según el tag image-text-to-text de Hugging Face, no confirmada en la model card.
 - Soporte de decodificación especulativa mediante MTP: el checkpoint incluye tensores MTP y está diseñado para generar un token especulativo en vLLM.
 - No se documentan capacidades de tool calling, agentes, razonamiento multi-step ni idiomas específicos en la información disponible.
 
@@ -70,6 +70,6 @@ No disponible. La información proporcionada no incluye datos de modelos compara
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/soyrsoyr/GLM-5.3-Flash-NVFP4A16-MTP-PR3118
+- Hugging Face del modelo: https://huggingface.co/soyrsoyr/GLM-5.3-Flash-NVFP4A16-MTP-PR3118
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Commit de llm-compressor: https://github.com/soyr-redhat/llm-compressor/commit/7029daba084fcdb251d4c87a43dc76b60d30ecd3

@@ -70,6 +70,6 @@ No se dispone de modelos comparables en la misma categoría (Poolformer tiny mul
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/torresjoshua/cs224n-multitask
+- Repositorio en Hugging Face: https://huggingface.co/torresjoshua/cs224n-multitask
 - Curso CS224N de Stanford: https://web.stanford.edu/class/cs224n/
 - Archivo del curso CS224N (ediciones anteriores): https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1234/

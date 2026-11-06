@@ -89,7 +89,7 @@ El autor indica explicitamente que no realiza comparaciones con otros modelos po
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| syrinx-10m | 11.798.784 | 1024 | safetensors fp32 | apache-2.0 | HuggingFace (0 descargas) |
+| syrinx-10m | 11.798.784 | 1024 | safetensors fp32 | apache-2.0 | Hugging Face (0 descargas) |
 | syrinx-50m (serie del mismo autor) | no disponible | no disponible | no disponible | no disponible | anunciado, no publicado en la informacion disponible |
 | syrinx-125m (serie del mismo autor) | no disponible | no disponible | no disponible | no disponible | anunciado, no publicado en la informacion disponible |
 | Modelos de la familia TinyStories (Eldan y Li) | no disponible | no disponible | no disponible | no disponible | referencia de dataset, no de comparativa de rendimiento |
@@ -112,7 +112,7 @@ No disponible para el resto de alternativas de la misma categoria.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DhruvParmar051/syrinx-10m
+- Modelo en Hugging Face: https://huggingface.co/DhruvParmar051/syrinx-10m
 - Dataset TinyStories (usado en el entrenamiento): https://huggingface.co/datasets/roneneldan/TinyStories
 - Los identificadores de experimentos citados en la model card (EXP-012, EXP-014, EXP-015, EXP-016, EXP-017) apuntan a ficheros dentro del propio repositorio; los hashes SHA-256 correspondientes estan listados en la seccion "Evidence" de la model card.
 - No se han encontrado en la informacion proporcionada enlaces a papers, blogs, repositorios de codigo, demos o articulos adicionales.

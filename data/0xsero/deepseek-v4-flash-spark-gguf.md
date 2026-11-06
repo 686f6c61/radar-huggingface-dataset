@@ -69,7 +69,7 @@ No se dispone de datos suficientes para establecer una comparativa rigurosa. El 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/0xSero/DeepSeek-V4-Flash-Spark-GGUF
+- Repositorio Hugging Face: https://huggingface.co/0xSero/DeepSeek-V4-Flash-Spark-GGUF
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
 - Repositorio de la versión EXL3 del mismo autor: https://huggingface.co/0xSero/deepseek-v4-flash-0731-spark
 - Repositorio de la versión 180B: https://huggingface.co/0xSero/DeepSeek-V4-Flash-180B

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HapticWAM teacher es el modelo maestro ("teacher") de un sistema de mundo-accion de naturaleza tactil (tactile world-action model) desarrollado por el equipo armteam y publicado en HuggingFace bajo licencia Apache-2.0. Se trata de la variante de entrada completa: un modelo que consume los flujos tactiles de las puntas de los dedos, ademas de las observaciones y acciones propias de una tarea de manipulacion robotica, y que sirve como referencia de maxima capacidad para destilar despues una version "student" mas ligera destinada al despliegue en el robot real.
+HapticWAM teacher es el modelo maestro ("teacher") de un sistema de mundo-accion de naturaleza tactil (tactile world-action model) desarrollado por el equipo armteam y publicado en Hugging Face bajo licencia Apache-2.0. Se trata de la variante de entrada completa: un modelo que consume los flujos tactiles de las puntas de los dedos, ademas de las observaciones y acciones propias de una tarea de manipulacion robotica, y que sirve como referencia de maxima capacidad para destilar despues una version "student" mas ligera destinada al despliegue en el robot real.
 
 El repositorio no contiene un modelo de lenguaje ni un modelo de vision-lenguaje, sino pesos de politica/modelo de mundo para robotica. El checkpoint que el articulo asociado despliega es `teacher_v6_simft/teacher_002000.pt`, un ajuste fino de la version v6 sobre episodios de simulacion y sobre rollouts del propio montaje fisico ("rig"), entrenado durante 2.000 pasos. El repositorio ocupa 1,2 GB e incluye tres carpetas con checkpoints, registros de entrenamiento y ficheros JSON de evaluacion.
 
@@ -81,12 +81,12 @@ No se dispone de especificaciones de modelos comparables en la informacion propo
 
 | Modelo | Rol en el proyecto | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HapticWAM teacher (`armteam/hapticwam-teacher`) | Modelo maestro con entrada tactil completa, destilado al student | no disponible | no disponible | Apache-2.0 | Publicado en HuggingFace; 0 descargas, 0 likes |
-| HapticWAM student (`armteam/hapticwam-student`) | Student destilado, incluye el checkpoint desplegado `student_001000.pt` | no disponible | no disponible | no disponible en la informacion proporcionada | Publicado en HuggingFace |
-| Diffusion policy (`armteam/hapticwam-baselines`) | Baseline de politica por difusion | no disponible | no disponible | no disponible en la informacion proporcionada | Publicado en HuggingFace |
-| X-VLA (`armteam/hapticwam-baselines`) | Baseline de vision-lenguaje-accion | no disponible | no disponible | no disponible en la informacion proporcionada | Publicado en HuggingFace |
-| pi0.5 (`armteam/hapticwam-baselines`) | Baseline de politica generalista | no disponible | no disponible | no disponible en la informacion proporcionada | Publicado en HuggingFace |
-| Variantes de ablacion (`armteam/hapticwam-ablations`) | Resto de brazos de entrenamiento y barridos completos de evaluacion | no disponible | no disponible | no disponible en la informacion proporcionada | Publicado en HuggingFace |
+| HapticWAM teacher (`armteam/hapticwam-teacher`) | Modelo maestro con entrada tactil completa, destilado al student | no disponible | no disponible | Apache-2.0 | Publicado en Hugging Face; 0 descargas, 0 likes |
+| HapticWAM student (`armteam/hapticwam-student`) | Student destilado, incluye el checkpoint desplegado `student_001000.pt` | no disponible | no disponible | no disponible en la informacion proporcionada | Publicado en Hugging Face |
+| Diffusion policy (`armteam/hapticwam-baselines`) | Baseline de politica por difusion | no disponible | no disponible | no disponible en la informacion proporcionada | Publicado en Hugging Face |
+| X-VLA (`armteam/hapticwam-baselines`) | Baseline de vision-lenguaje-accion | no disponible | no disponible | no disponible en la informacion proporcionada | Publicado en Hugging Face |
+| pi0.5 (`armteam/hapticwam-baselines`) | Baseline de politica generalista | no disponible | no disponible | no disponible en la informacion proporcionada | Publicado en Hugging Face |
+| Variantes de ablacion (`armteam/hapticwam-ablations`) | Resto de brazos de entrenamiento y barridos completos de evaluacion | no disponible | no disponible | no disponible en la informacion proporcionada | Publicado en Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -104,7 +104,7 @@ No se dispone de especificaciones de modelos comparables en la informacion propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/armteam/hapticwam-teacher
+- Modelo en Hugging Face: https://huggingface.co/armteam/hapticwam-teacher
 - Dataset de teleoperacion: https://huggingface.co/datasets/armteam/hapticwam-teleop-dataset
 - Rollouts del rig: https://huggingface.co/datasets/armteam/hapticwam-rollouts
 - Student destilado: https://huggingface.co/armteam/hapticwam-student

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Este repositorio contiene un agente de aprendizaje por refuerzo entrenado con el algoritmo A2C (Advantage Actor-Critic) sobre el entorno PandaReachDense-v3, una tarea de manipulacion robotica con un brazo Franka Panda cuyo objetivo es alcanzar una posicion objetivo. El modelo ha sido generado con la libreria stable-baselines3, el framework de referencia para implementar algoritmos de RL en PyTorch, y publicado en HuggingFace por el usuario yoga-0125 bajo el pipeline de reinforcement-learning.
+Este repositorio contiene un agente de aprendizaje por refuerzo entrenado con el algoritmo A2C (Advantage Actor-Critic) sobre el entorno PandaReachDense-v3, una tarea de manipulacion robotica con un brazo Franka Panda cuyo objetivo es alcanzar una posicion objetivo. El modelo ha sido generado con la libreria stable-baselines3, el framework de referencia para implementar algoritmos de RL en PyTorch, y publicado en Hugging Face por el usuario yoga-0125 bajo el pipeline de reinforcement-learning.
 
-No se trata de un modelo de lenguaje ni de un modelo generativo de proposito general, sino de una politica entrenada especificamente para una tarea de control. La model card es practicamente un esqueleto: incluye el bloque de metadatos minimo que genera la integracion entre stable-baselines3 y HuggingFace, pero deja la seccion de uso como un TODO sin codigo de ejemplo, y no documenta la arquitectura de red, los hiperparametros de entrenamiento ni el numero de pasos utilizados.
+No se trata de un modelo de lenguaje ni de un modelo generativo de proposito general, sino de una politica entrenada especificamente para una tarea de control. La model card es practicamente un esqueleto: incluye el bloque de metadatos minimo que genera la integracion entre stable-baselines3 y Hugging Face, pero deja la seccion de uso como un TODO sin codigo de ejemplo, y no documenta la arquitectura de red, los hiperparametros de entrenamiento ni el numero de pasos utilizados.
 
 Su relevancia es limitada y fundamentalmente como artefacto de ejemplo o de investigacion: permite reproducir el entrenamiento en PandaReachDense-v3, comparar curvas de recompensa frente a otros algoritmos y servir de plantilla para publicar agentes de RL en el Hub. La recompensa media declarada es negativa, lo que en este entorno indica que el agente no llega a completar la tarea de forma consistente.
 
@@ -82,6 +82,6 @@ No se dispone de informacion sobre otros agentes A2C publicados para PandaReachD
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yoga-0125/a2c-PandaReachDense-v3
+- Hugging Face: https://huggingface.co/yoga-0125/a2c-PandaReachDense-v3
 - Libreria stable-baselines3: https://github.com/DLR-RM/stable-baselines3
 - No se han encontrado en la busqueda web enlaces tecnicos relevantes sobre este modelo; los resultados obtenidos versan sobre la practica del yoga y no guardan relacion con el artefacto.

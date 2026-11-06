@@ -80,8 +80,8 @@ La comparativa se basa en el modelo base, ya que el pack cuantizado no tiene equ
 
 ## Enlaces
 
-- HuggingFace del pack: https://huggingface.co/AutomatosX/AX-MiniMax-M3-MLX-AXQ-MXFP4
-- Modelo base en HuggingFace: https://huggingface.co/MiniMaxAI/MiniMax-M3
+- Hugging Face del pack: https://huggingface.co/AutomatosX/AX-MiniMax-M3-MLX-AXQ-MXFP4
+- Modelo base en Hugging Face: https://huggingface.co/MiniMaxAI/MiniMax-M3
 - Repositorio GitHub de MiniMax-M3: https://github.com/MiniMax-AI/MiniMax-M3/
 - Página del producto MiniMax M3: https://www.minimax.io/models/text/m3
 - Documentación en DocsBot: https://docsbot.ai/models/minimax-m3

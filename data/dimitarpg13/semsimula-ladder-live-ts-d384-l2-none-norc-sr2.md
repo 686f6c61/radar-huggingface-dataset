@@ -81,10 +81,10 @@ No se han publicado en la información disponible resultados de MMLU, HumanEval,
 
 | Modelo | Parámetros | Contexto | Perplejidad (TinyStories val) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (SO-TS, SR2) | No disponible (d384, 2 capas) | No disponible (evaluado a 512) | 5,16 | CC-BY-4.0 | Pesos en HuggingFace, 152 descargas |
-| FO-TS (`...-ts-d384-l2-none-norc-sr2-fo`) | No disponible (mismo esqueleto) | No disponible | 5,13 | CC-BY-4.0 | Pesos en HuggingFace |
-| FO-b-TS (`...-ts-d384-l2-none-norc-sr2-fob`) | No disponible (mismo esqueleto) | No disponible | 5,28 | CC-BY-4.0 | Pesos en HuggingFace |
-| SR2 sobre OpenWebText (`...-owt-d384-l2-none-norc-sr2`) | No disponible | No disponible | 58,32 (OpenWebText) | CC-BY-4.0 | Pesos en HuggingFace |
+| Este modelo (SO-TS, SR2) | No disponible (d384, 2 capas) | No disponible (evaluado a 512) | 5,16 | CC-BY-4.0 | Pesos en Hugging Face, 152 descargas |
+| FO-TS (`...-ts-d384-l2-none-norc-sr2-fo`) | No disponible (mismo esqueleto) | No disponible | 5,13 | CC-BY-4.0 | Pesos en Hugging Face |
+| FO-b-TS (`...-ts-d384-l2-none-norc-sr2-fob`) | No disponible (mismo esqueleto) | No disponible | 5,28 | CC-BY-4.0 | Pesos en Hugging Face |
+| SR2 sobre OpenWebText (`...-owt-d384-l2-none-norc-sr2`) | No disponible | No disponible | 58,32 (OpenWebText) | CC-BY-4.0 | Pesos en Hugging Face |
 
 No se dispone de comparación con modelos transformer de propósito general del mismo orden de tamaño en la información proporcionada; la comparación relevante es interna a la familia SemSimula.
 
@@ -103,7 +103,7 @@ No se dispone de comparación con modelos transformer de propósito general del 
 
 ## Enlaces
 
-- [Model card en HuggingFace](https://huggingface.co/dimitarpg13/semsimula-ladder-live-ts-d384-l2-none-norc-sr2)
+- [Model card en Hugging Face](https://huggingface.co/dimitarpg13/semsimula-ladder-live-ts-d384-l2-none-norc-sr2)
 - [Colección Gen 3: first vs second order](https://huggingface.co/collections/dimitarpg13/semantic-simulation-gen-3-first-vs-second-order-6ad7681596d9a670c268b524)
 - [Colección Gen 3: CfC, BAOAB y gradientes en vivo (escalera OpenWebText)](https://huggingface.co/collections/dimitarpg13/semantic-simulation-gen-3-cfc-baoab-live-gradients-6abf371ea3c83f127057020c)
 - [FO-TS: primer orden con reinicio de velocidad entre capas](https://huggingface.co/dimitarpg13/semsimula-ladder-live-ts-d384-l2-none-norc-sr2-fo)
@@ -111,4 +111,4 @@ No se dispone de comparación con modelos transformer de propósito general del 
 - [PM2-TS: variante con 2 pozos de modo Poisson](https://huggingface.co/dimitarpg13/semsimula-ladder-live-ts-d384-l2-none-norc-pm2-pmx16-sr2)
 - [SR2 sobre OpenWebText](https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-none-norc-sr2)
 - [Dataset TinyStories (roneneldan/TinyStories)](https://huggingface.co/datasets/roneneldan/TinyStories)
-- [Listado de modelos de generación de texto en HuggingFace](https://huggingface.co/models?pipeline_tag=text-generation&p=0&sort=modified)
+- [Listado de modelos de generación de texto en Hugging Face](https://huggingface.co/models?pipeline_tag=text-generation&p=0&sort=modified)

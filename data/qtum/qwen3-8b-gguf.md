@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente en la fuente para realizar una comparativa con otros modelos de la misma categoría. Se puede señalar que existen otras cuantizaciones de Qwen3-8B en HuggingFace (por ejemplo, de bartowski o TheBloke), pero no se han incluido datos comparativos en la información proporcionada.
+No se dispone de información suficiente en la fuente para realizar una comparativa con otros modelos de la misma categoría. Se puede señalar que existen otras cuantizaciones de Qwen3-8B en Hugging Face (por ejemplo, de bartowski o TheBloke), pero no se han incluido datos comparativos en la información proporcionada.
 
 ## Limitaciones y advertencias
 
@@ -70,7 +70,7 @@ No se dispone de información suficiente en la fuente para realizar una comparat
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/qtum/Qwen3-8B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/qtum/Qwen3-8B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Documentación de llama.cpp: https://github.com/ggml-org/llama.cpp
 - Guía sobre cuantizaciones de Artefact2: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

@@ -117,7 +117,7 @@ Comparativa de rendimiento entre estos modelos: no disponible en la informacion 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MinimaLabs/KLM-1.1
+- Modelo en Hugging Face: https://huggingface.co/MinimaLabs/KLM-1.1
 - Dataset UltraX-Preview (FineWeb): https://huggingface.co/datasets/openbmb/UltraX-Preview
 - Dataset UltraData-Math: https://huggingface.co/datasets/openbmb/UltraData-Math
 - Dataset Code-Reasoning: https://huggingface.co/datasets/IFM/Code-Reasoning

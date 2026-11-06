@@ -84,8 +84,8 @@ No se dispone de datos de rendimiento de otros modelos comparables en la misma t
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/madokalif/xlerobot-pi05-bottle
-- Modelo base pi05_base en HuggingFace: https://huggingface.co/lerobot/pi05_base
+- Repositorio Hugging Face: https://huggingface.co/madokalif/xlerobot-pi05-bottle
+- Modelo base pi05_base en Hugging Face: https://huggingface.co/lerobot/pi05_base
 - GitHub XLeRobot: https://github.com/Vector-Wangel/XLeRobot
 - Documentacion VLA pi0.5 para XLeRobot: https://xlerobot.readthedocs.io/en/latest/software/getting_started/VLA_pi05.html
 - Paper sobre real-time chunking (arXiv:2506.07339): https://arxiv.org/abs/2506.07339

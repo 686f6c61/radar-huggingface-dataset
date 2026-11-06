@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento ni de especificaciones verificadas de mode
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/vultr/Qwen3.5-4B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/vultr/Qwen3.5-4B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Vultr (sitio oficial): https://www.vultr.com/
 - Vultr Docs: https://docs.vultr.com/

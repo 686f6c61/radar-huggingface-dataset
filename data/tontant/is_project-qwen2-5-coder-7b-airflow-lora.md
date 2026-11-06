@@ -2,11 +2,11 @@
 
 ## Resumen
 
-TontanT/is_project-qwen2.5-coder-7b-airflow-lora es un adaptador de ajuste fino publicado en HuggingFace por el usuario TontanT sobre el modelo base Qwen/Qwen2.5-Coder-7B-Instruct. El repositorio pesa 0,2 GB, usa la libreria PEFT (version 0.19.1 registrada en la model card), almacena los pesos en formato safetensors y esta etiquetado como `lora`, `sft`, `transformers`, `trl`, `text-generation` y `conversational`. En el momento de la consulta acumula 0 descargas y 0 likes, y no declara licencia ni idiomas soportados.
+TontanT/is_project-qwen2.5-coder-7b-airflow-lora es un adaptador de ajuste fino publicado en Hugging Face por el usuario TontanT sobre el modelo base Qwen/Qwen2.5-Coder-7B-Instruct. El repositorio pesa 0,2 GB, usa la libreria PEFT (version 0.19.1 registrada en la model card), almacena los pesos en formato safetensors y esta etiquetado como `lora`, `sft`, `transformers`, `trl`, `text-generation` y `conversational`. En el momento de la consulta acumula 0 descargas y 0 likes, y no declara licencia ni idiomas soportados.
 
 El interes de este tipo de publicacion es el de un adaptador de bajo rango que especializa un modelo de codigo de 7B en un dominio concreto sin reentrenar los pesos completos. El identificador del repositorio incluye la palabra "airflow", lo que sugiere un ajuste orientado a la generacion de DAGs y tareas de Apache Airflow, aunque la model card no confirma el dominio, el dataset ni el procedimiento de entrenamiento. El nombre del repositorio ("is_project") apunta tambien a un contexto de proyecto interno o de investigacion mas que a un modelo de proposito general.
 
-La relevancia practica es limitada por la ausencia total de documentacion: la model card es la plantilla por defecto de HuggingFace y practicamente todos los campos figuran como "[More Information Needed]" (desarrollador, licencia, datos de entrenamiento, hiperparametros, evaluacion, hardware). Cualquier evaluacion seria de este adaptador exige inspeccionar los ficheros del repositorio, revisar la configuracion de LoRA (`adapter_config.json`) y validar el comportamiento contra el modelo base.
+La relevancia practica es limitada por la ausencia total de documentacion: la model card es la plantilla por defecto de Hugging Face y practicamente todos los campos figuran como "[More Information Needed]" (desarrollador, licencia, datos de entrenamiento, hiperparametros, evaluacion, hardware). Cualquier evaluacion seria de este adaptador exige inspeccionar los ficheros del repositorio, revisar la configuracion de LoRA (`adapter_config.json`) y validar el comportamiento contra el modelo base.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ La relevancia practica es limitada por la ausencia total de documentacion: la mo
 | Tamano del repositorio | 0,2 GB |
 | Tarea declarada | text-generation (pipeline) |
 | Framework de entrenamiento | TRL (etiqueta `sft`), sin hiperparametros documentados |
-| Fecha de creacion / actualizacion | 2026-09-12 (segun metadatos de HuggingFace) |
+| Fecha de creacion / actualizacion | 2026-09-12 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -81,10 +81,10 @@ Los datos de las alternativas proceden de su documentacion publica y no de la in
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| TontanT/is_project-qwen2.5-coder-7b-airflow-lora (adaptador) | ~7,6B (base) + adaptador de 0,2 GB | No declarado en el repo (base: 32.768) | No disponible | HuggingFace, 0 descargas, 0 likes | No disponible |
-| Qwen/Qwen2.5-Coder-7B-Instruct (base) | ~7,6B | 32.768 tokens (hasta 131.072 con YaRN segun su documentacion) | Apache 2.0 | HuggingFace, ampliamente distribuido | Publicados por Qwen en su model card |
-| CodeLlama-7B-Instruct | ~6,7B | 16.384 tokens | Licencia Llama 2 (uso comercial con restricciones) | HuggingFace / Meta | Publicados por Meta |
-| DeepSeek-Coder-6.7B-Instruct | ~6,7B | 16.384 tokens | Licencia propia de DeepSeek (uso comercial permitido con condiciones) | HuggingFace | Publicados por DeepSeek |
+| TontanT/is_project-qwen2.5-coder-7b-airflow-lora (adaptador) | ~7,6B (base) + adaptador de 0,2 GB | No declarado en el repo (base: 32.768) | No disponible | Hugging Face, 0 descargas, 0 likes | No disponible |
+| Qwen/Qwen2.5-Coder-7B-Instruct (base) | ~7,6B | 32.768 tokens (hasta 131.072 con YaRN segun su documentacion) | Apache 2.0 | Hugging Face, ampliamente distribuido | Publicados por Qwen en su model card |
+| CodeLlama-7B-Instruct | ~6,7B | 16.384 tokens | Licencia Llama 2 (uso comercial con restricciones) | Hugging Face / Meta | Publicados por Meta |
+| DeepSeek-Coder-6.7B-Instruct | ~6,7B | 16.384 tokens | Licencia propia de DeepSeek (uso comercial permitido con condiciones) | Hugging Face | Publicados por DeepSeek |
 
 La diferencia clave de este repositorio frente a los anteriores no es de arquitectura ni de tamano, sino de especializacion: es un adaptador pequeno que debe combinarse con el base para funcionar, mientras que las alternativas son modelos completos con licencia y evaluacion publicadas.
 
@@ -103,7 +103,7 @@ La diferencia clave de este repositorio frente a los anteriores no es de arquite
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TontanT/is_project-qwen2.5-coder-7b-airflow-lora
+- Modelo en Hugging Face: https://huggingface.co/TontanT/is_project-qwen2.5-coder-7b-airflow-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
 - Referencia citada en la model card (Lacoste et al., 2019, calculadora de impacto): https://arxiv.org/abs/1910.09700
 - Documentacion de PEFT: https://huggingface.co/docs/peft

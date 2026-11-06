@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| zils-lite-body-2 | 0,85B | no disponible | Apache-2.0 | HuggingFace, 0 descargas | Fine-tune especializado en decisiones; sin benchmarks |
+| zils-lite-body-2 | 0,85B | no disponible | Apache-2.0 | Hugging Face, 0 descargas | Fine-tune especializado en decisiones; sin benchmarks |
 | Qwen2.5-0.5B | 0,49B | 32k (según ficha del modelo original) | Apache-2.0 | Ampliamente disponible | Base generalista, sin ajuste específico de tareas |
 | SmolLM2-1.7B | 1,7B | 8k (según ficha del modelo original) | Apache-2.0 | Ampliamente disponible | Mayor tamaño y ecosistema de cuantizaciones |
 | TinyLlama-1.1B | 1,1B | 2k (según ficha del modelo original) | Apache-2.0 | Ampliamente disponible | Base generalista, sin torre visual |
@@ -89,6 +89,6 @@ La comparación es aproximada: no hay datos públicos de rendimiento de zils-lit
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bestdev57/zils-lite-body-2
+- Hugging Face: https://huggingface.co/bestdev57/zils-lite-body-2
 - Modelo base: https://huggingface.co/vllm-sr/d3-lite
 - Paper, blog, repositorio o demo: no disponible

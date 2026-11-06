@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Tipo | Entorno | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| connectailab-rl-kiwi-v2-teacher | Política RL (PPO) | CONNECT TYCOON | Apache 2.0 | HuggingFace, 0 descargas |
+| connectailab-rl-kiwi-v2-teacher | Política RL (PPO) | CONNECT TYCOON | Apache 2.0 | Hugging Face, 0 descargas |
 | Jefe basado en reglas (referencia interna) | Sistema de reglas | CONNECT TYCOON | no disponible | Incluido en el simulador |
 | Otros modelos de RL para decisión empresarial | no disponible | no disponible | no disponible | no disponible |
 
@@ -91,7 +91,7 @@ No se dispone de información sobre modelos comparables de terceros en la misma 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kiwi2030/connectailab-rl-kiwi-v2-teacher
+- Modelo en Hugging Face: https://huggingface.co/kiwi2030/connectailab-rl-kiwi-v2-teacher
 - Repositorio CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb
 - Canal de YouTube CONNECT AI LAB: https://www.youtube.com/@CONNECT-AI-LAB

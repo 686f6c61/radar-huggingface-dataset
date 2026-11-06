@@ -35,7 +35,7 @@ La model card afirma que la arquitectura es Qwen2ForCausalLM con 7.000 millones 
 
 ## Capacidades
 
-Las capacidades que se listan a continuacion se derivan de las etiquetas y del pipeline declarado en HuggingFace; no han podido confirmarse con documentacion tecnica coherente:
+Las capacidades que se listan a continuacion se derivan de las etiquetas y del pipeline declarado en Hugging Face; no han podido confirmarse con documentacion tecnica coherente:
 
 - Generacion de imagenes a partir de texto (text-to-image) mediante QwenImage21Pipeline.
 - Edicion de imagenes, segun la etiqueta image-editing del repositorio.
@@ -80,10 +80,10 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, F
 
 | Modelo | Parametros | Contexto | Cuantizacion | Tamano en disco | VRAM declarada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| SirSahOl/Qwen-Image-2.1-mlx-8bit | 7B (segun el autor) | 32.768 tokens (no verificado) | 8-bit MLX (~8,25 bits/peso) | ~8,1 GB | ~7,8 GB | other | HuggingFace, 0 descargas |
-| SirSahOl/Qwen-Image-2.1-mlx-4bit | No disponible | No disponible | 4-bit MLX | ~4,3 GB | ~4,2 GB | No disponible | HuggingFace |
-| SirSahOl/Qwen-Image-2.1-mlx-16bit | No disponible | No disponible | bfloat16 sin cuantizar | ~15,2 GB | ~15,2 GB | No disponible | HuggingFace |
-| Qwen/Qwen-Image-2.1 (base) | No disponible | No disponible | Sin cuantizar | No disponible | No disponible | other | HuggingFace |
+| SirSahOl/Qwen-Image-2.1-mlx-8bit | 7B (segun el autor) | 32.768 tokens (no verificado) | 8-bit MLX (~8,25 bits/peso) | ~8,1 GB | ~7,8 GB | other | Hugging Face, 0 descargas |
+| SirSahOl/Qwen-Image-2.1-mlx-4bit | No disponible | No disponible | 4-bit MLX | ~4,3 GB | ~4,2 GB | No disponible | Hugging Face |
+| SirSahOl/Qwen-Image-2.1-mlx-16bit | No disponible | No disponible | bfloat16 sin cuantizar | ~15,2 GB | ~15,2 GB | No disponible | Hugging Face |
+| Qwen/Qwen-Image-2.1 (base) | No disponible | No disponible | Sin cuantizar | No disponible | No disponible | other | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes ni frente a otros modelos de generacion de imagenes, por lo que la comparativa se limita a parametros de tamano, memoria y licencia declarados.
 
@@ -101,7 +101,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes ni frent
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SirSahOl/Qwen-Image-2.1-mlx-8bit
+- Repositorio Hugging Face: https://huggingface.co/SirSahOl/Qwen-Image-2.1-mlx-8bit
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Variante 4-bit: https://huggingface.co/SirSahOl/Qwen-Image-2.1-mlx-4bit
 - Variante 16-bit: https://huggingface.co/SirSahOl/Qwen-Image-2.1-mlx-16bit

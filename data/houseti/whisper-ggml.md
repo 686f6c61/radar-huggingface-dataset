@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| houseti/whisper-ggml (Whisper small q5_1) | Aproximadamente 244 M | Ventana de audio de 30 s | GGML (`.bin`) | MIT | HuggingFace (mirror) |
-| ggerganov/whisper.cpp (modelos oficiales) | tiny (~39 M), base (~74 M), small (~244 M), medium (~769 M), large (~1550 M) | Ventana de audio de 30 s | GGML (`.bin`) | MIT | HuggingFace y GitHub |
-| openai/whisper-small | Aproximadamente 244 M | Ventana de audio de 30 s | PyTorch (safetensors) | MIT | HuggingFace |
-| openai/whisper-large-v3 | Aproximadamente 1550 M | Ventana de audio de 30 s | PyTorch (safetensors) | MIT | HuggingFace |
+| houseti/whisper-ggml (Whisper small q5_1) | Aproximadamente 244 M | Ventana de audio de 30 s | GGML (`.bin`) | MIT | Hugging Face (mirror) |
+| ggerganov/whisper.cpp (modelos oficiales) | tiny (~39 M), base (~74 M), small (~244 M), medium (~769 M), large (~1550 M) | Ventana de audio de 30 s | GGML (`.bin`) | MIT | Hugging Face y GitHub |
+| openai/whisper-small | Aproximadamente 244 M | Ventana de audio de 30 s | PyTorch (safetensors) | MIT | Hugging Face |
+| openai/whisper-large-v3 | Aproximadamente 1550 M | Ventana de audio de 30 s | PyTorch (safetensors) | MIT | Hugging Face |
 
 Los datos de parametros corresponden al modelo Whisper original; no se aportan cifras de rendimiento comparativo en la informacion disponible.
 
@@ -87,7 +87,7 @@ Los datos de parametros corresponden al modelo Whisper original; no se aportan c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/houseti/whisper-ggml
+- Repositorio Hugging Face: https://huggingface.co/houseti/whisper-ggml
 - Repositorio oficial de modelos whisper.cpp: https://huggingface.co/ggerganov/whisper.cpp
 - whisper.cpp en GitHub: https://github.com/ggml-org/whisper.cpp
 - Modelo original Whisper de OpenAI: https://github.com/openai/whisper

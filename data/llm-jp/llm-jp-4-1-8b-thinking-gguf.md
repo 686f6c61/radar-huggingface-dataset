@@ -103,7 +103,7 @@ Las tres variantes comparten licencia Apache 2.0 y ventana de contexto de 65.536
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/llm-jp/llm-jp-4.1-8b-thinking-gguf
+- Repositorio Hugging Face (GGUF): https://huggingface.co/llm-jp/llm-jp-4.1-8b-thinking-gguf
 - Coleccion de modelos LLM-jp-4.1: https://huggingface.co/collections/llm-jp/llm-jp-41-models
 - Blog tecnico de LLM-jp-4.1 (en japones): https://llm-jp.nii.ac.jp/blog/llm-jp-4-1/
 - Cookbook de LLM-jp-4: https://github.com/llm-jp/llm-jp-4-cookbook

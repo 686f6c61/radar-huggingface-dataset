@@ -85,6 +85,6 @@ Frente al modelo base, esta variante añade contexto duplicado (512K frente a 26
 
 ## Enlaces
 
-- Modelo principal (HuggingFace): https://huggingface.co/mohommed/LFM3-1.7B-Frontier-SmartAgent
+- Modelo principal (Hugging Face): https://huggingface.co/mohommed/LFM3-1.7B-Frontier-SmartAgent
 - Repositorio GGUF (cuantizaciones Q8_0, Q6_K, Q5_K_M, Q4_K_M): https://huggingface.co/mohommed/LFM3-1.7B-Frontier-SmartAgent-GGUF
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B

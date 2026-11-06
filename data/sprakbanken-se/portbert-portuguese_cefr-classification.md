@@ -33,7 +33,7 @@ La información disponible no detalla el número de tokens de entrenamiento, la 
 - Evaluación aproximada de competencia escrita en contextos de aprendizaje de lenguas.
 - Procesamiento de textos de entrada de longitud variable (la longitud máxima concreta no está documentada).
 - Integración nativa con la librería transformers y con text-embeddings-inference.
-- Compatibilidad con endpoints de HuggingFace (tag `endpoints_compatible`).
+- Compatibilidad con endpoints de Hugging Face (tag `endpoints_compatible`).
 - No soporta tool calling ni function calling.
 - No está diseñado para razonamiento multi-paso ni para flujos de agentes.
 - No dispone de capacidades multimodales (visión, audio) ni de modo de razonamiento explícito (thinking mode).
@@ -58,15 +58,15 @@ No se han publicado resultados de benchmarks en la informacion disponible. La ta
 - VRAM estimada para inferencia: aproximadamente 0,5 GB en precisión completa (fp32) para los 126 M de parámetros, más el overhead del runtime; en fp16 o bf16 se reduce a unos 0,25 GB.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de memoria, incluidas tarjetas de consumo como GTX 1650, RTX 3050 o superiores. También funciona en CPU.
 - Cabe en GPU de consumo: sí, en prácticamente cualquier GPU moderna e incluso en hardware integrado para inferencia por lotes pequeños.
-- Opciones de despliegue: transformers (PyTorch), text-embeddings-inference, HuggingFace Inference Endpoints. No se documenta soporte explícito para vLLM, llama.cpp u Ollama (este último orientado a modelos generativos, no a clasificadores encoder).
+- Opciones de despliegue: transformers (PyTorch), text-embeddings-inference, Hugging Face Inference Endpoints. No se documenta soporte explícito para vLLM, llama.cpp u Ollama (este último orientado a modelos generativos, no a clasificadores encoder).
 - Latencia y throughput estimados: no disponibles. Por el tamaño del modelo, se espera una latencia de milisegundos por muestra en GPU y de decenas de milisegundos en CPU, aunque no hay cifras publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sprakbanken-se/portbert-portuguese_CEFR-classification | 125.989.638 | no disponible | Clasificación CEFR en portugués | GPL-3.0 | HuggingFace |
-| PortBERT/PortBERT_base (modelo base) | no disponible | no disponible | Representaciones de portugués (encoder) | no disponible | HuggingFace |
+| sprakbanken-se/portbert-portuguese_CEFR-classification | 125.989.638 | no disponible | Clasificación CEFR en portugués | GPL-3.0 | Hugging Face |
+| PortBERT/PortBERT_base (modelo base) | no disponible | no disponible | Representaciones de portugués (encoder) | no disponible | Hugging Face |
 | Modelos CEFR para otras lenguas del grupo Computational SLA | no disponible | no disponible | Clasificación CEFR en otras lenguas | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada. La comparación se limita a parámetros, licencia y disponibilidad.
@@ -85,11 +85,11 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sprakbanken-se/portbert-portuguese_CEFR-classification
+- Modelo en Hugging Face: https://huggingface.co/sprakbanken-se/portbert-portuguese_CEFR-classification
 - Modelo base: https://huggingface.co/PortBERT/PortBERT_base
 - Dataset UniversalCEFR/cople2_pt: https://huggingface.co/datasets/UniversalCEFR/cople2_pt
 - Paper de referencia (NLP4CALL 2024): https://aclanthology.org/2024.nlp4call-1.11/
 - Grupo Computational SLA, Språkbanken Text: https://spraakbanken.gu.se/en/projects/computational-sla
 - Språkbanken Text: https://spraakbanken.gu.se/en
-- Perfil del autor en HuggingFace: https://huggingface.co/rimusa
+- Perfil del autor en Hugging Face: https://huggingface.co/rimusa
 - Niveles CEFR (Wikipedia): https://en.wikipedia.org/wiki/Common_European_Framework_of_Reference_for_Languages

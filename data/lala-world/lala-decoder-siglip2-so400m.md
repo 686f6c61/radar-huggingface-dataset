@@ -87,7 +87,7 @@ Los tres modelos comparten propósito: decodificar latentes visuales para inspec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LaLa-World/lala-decoder-siglip2-so400m
+- Modelo en Hugging Face: https://huggingface.co/LaLa-World/lala-decoder-siglip2-so400m
 - Repositorio GitHub de LaLa-World: https://github.com/junha1125/LaLa-World
 - Decoder para DINOv2-S: https://huggingface.co/LaLa-World/lala-decoder-dinov2-s
 - Decoder para DINOv3-L: https://huggingface.co/LaLa-World/lala-decoder-dinov3-l

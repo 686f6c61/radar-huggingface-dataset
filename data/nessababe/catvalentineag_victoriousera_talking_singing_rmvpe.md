@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CatValentineAG_VictoriousERA_talking_singing_RMVPE es un modelo de conversion de voz (voice conversion) entrenado con la arquitectura RVC v2 y extraccion de tono RMVPE, segun la informacion publicada en voice-models.com. Reproduce la voz del personaje Cat Valentine, interpretado por Ariana Grande en la serie Victorious de Nickelodeon, tanto en habla como en canto, de ahi el sufijo "talking_singing" del identificador. El autor del repositorio en HuggingFace es el usuario nessababe, aunque existe un espejo publicado por GoDZ21 con el mismo nombre.
+CatValentineAG_VictoriousERA_talking_singing_RMVPE es un modelo de conversion de voz (voice conversion) entrenado con la arquitectura RVC v2 y extraccion de tono RMVPE, segun la informacion publicada en voice-models.com. Reproduce la voz del personaje Cat Valentine, interpretado por Ariana Grande en la serie Victorious de Nickelodeon, tanto en habla como en canto, de ahi el sufijo "talking_singing" del identificador. El autor del repositorio en Hugging Face es el usuario nessababe, aunque existe un espejo publicado por GoDZ21 con el mismo nombre.
 
 No se trata de un modelo de lenguaje ni de un modelo multimodal generativo: es un checkpoint de conversion de voz que transforma una entrada de audio (habla o canto) para que suene con el timbre del personaje. El entrenamiento se realizo durante 300 epocas sobre un dataset construido a partir de voces aisladas y filtradas extraidas de episodios de la serie, segun la descripcion del autor recogida en voice-models.com. El repositorio ocupa 0,1 GB, lo que es coherente con el tamano tipico de los checkpoints de este ecosistema.
 
@@ -25,7 +25,7 @@ La relevancia de esta ficha es limitada en el ambito de la investigacion en IA: 
 
 La informacion disponible indica que el modelo se entreno con RVC v2 usando RMVPE como extractor de tono (pitch extraction) durante 300 epocas. RVC es una familia de arquitecturas de conversion de voz basada en recuperacion (retrieval-based), que combina un encoder de contenido, un modelo de tono y un decoder vocoder para transformar la identidad timbrica de una fuente de audio manteniendo el contenido linguistico y la melodia. RMVPE es un algoritmo de estimacion de F0 robusto, habitual en tareas de canto porque reduce los artefactos en pasajes con vibrato o transiciones rapidas.
 
-Sobre los datos de entrenamiento, el autor describe en voice-models.com que el dataset se construyo a partir de vocales aisladas y filtradas extraidas de la propia serie, tomando fragmentos aleatorios de episodios y unificandolos, con el objetivo de obtener un resultado "lo mas limpio posible". No se especifica el numero de horas, la tasa de muestreo, si hubo separacion de fuentes previa ni si se aplicaron tecnicas de aumentacion. Tampoco se documentan fases de RLHF, DPO ni ajuste por preferencias, algo que no aplica a este tipo de modelos. El repositorio de HuggingFace no incluye model card mas alla de la declaracion de licencia.
+Sobre los datos de entrenamiento, el autor describe en voice-models.com que el dataset se construyo a partir de vocales aisladas y filtradas extraidas de la propia serie, tomando fragmentos aleatorios de episodios y unificandolos, con el objetivo de obtener un resultado "lo mas limpio posible". No se especifica el numero de horas, la tasa de muestreo, si hubo separacion de fuentes previa ni si se aplicaron tecnicas de aumentacion. Tampoco se documentan fases de RLHF, DPO ni ajuste por preferencias, algo que no aplica a este tipo de modelos. El repositorio de Hugging Face no incluye model card mas alla de la declaracion de licencia.
 
 ## Capacidades
 
@@ -66,8 +66,8 @@ No hay datos objetivos de MOS, similitud de hablante (SECS), error de F0 ni inte
 
 | Modelo | Arquitectura | Tamano | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| nessababe/CatValentineAG_VictoriousERA_talking_singing_RMVPE | RVC v2 + RMVPE | repositorio de 0,1 GB | no aplica | no disponible | other | HuggingFace, 0 descargas y 0 likes |
-| GoDZ21/CatValentineAG_VictoriousERA_talking_singing_RMVPE | RVC v2 + RMVPE (espejo del anterior) | repositorio equivalente | no aplica | no disponible | other | HuggingFace |
+| nessababe/CatValentineAG_VictoriousERA_talking_singing_RMVPE | RVC v2 + RMVPE | repositorio de 0,1 GB | no aplica | no disponible | other | Hugging Face, 0 descargas y 0 likes |
+| GoDZ21/CatValentineAG_VictoriousERA_talking_singing_RMVPE | RVC v2 + RMVPE (espejo del anterior) | repositorio equivalente | no aplica | no disponible | other | Hugging Face |
 | Catalogado en voice-models.com como "Cat Valentine (Ariana Grande) (Victorious) (RVC v2 RMVPE) - 300 Epochs" | RVC v2 + RMVPE | no disponible | no aplica | no disponible | no disponible | voice-models.com y ai-search.io |
 
 No se dispone de datos comparativos de rendimiento entre alternativas. Otros checkpoints RVC v2 de personajes equivalentes existen en el ecosistema, pero no se han aportado metricas en la informacion recibida.
@@ -87,9 +87,9 @@ No se dispone de datos comparativos de rendimiento entre alternativas. Otros che
 
 ## Enlaces
 
-- HuggingFace (autor nessababe): https://huggingface.co/nessababe/CatValentineAG_VictoriousERA_talking_singing_RMVPE
-- Espejo en HuggingFace (GoDZ21), arbol de archivos: https://huggingface.co/GoDZ21/CatValentineAG_VictoriousERA_talking_singing_RMVPE/tree/main
-- Espejo en HuggingFace (GoDZ21), README: https://huggingface.co/GoDZ21/CatValentineAG_VictoriousERA_talking_singing_RMVPE/blob/main/README.md
+- Hugging Face (autor nessababe): https://huggingface.co/nessababe/CatValentineAG_VictoriousERA_talking_singing_RMVPE
+- Espejo en Hugging Face (GoDZ21), arbol de archivos: https://huggingface.co/GoDZ21/CatValentineAG_VictoriousERA_talking_singing_RMVPE/tree/main
+- Espejo en Hugging Face (GoDZ21), README: https://huggingface.co/GoDZ21/CatValentineAG_VictoriousERA_talking_singing_RMVPE/blob/main/README.md
 - Ficha en voice-models.com: https://voice-models.com/model/1nlCkPEuhbS
 - Ficha en ai-search.io: https://ai-search.io/voices/cat-valentine-ariana-grande-victorious-rvc-v2-rmvpe-300-epochs
 - Catalogo general de modelos de voz RVC: https://voice-models.com/

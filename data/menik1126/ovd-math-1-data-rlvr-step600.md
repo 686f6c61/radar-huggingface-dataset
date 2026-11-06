@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`menik1126/ovd-math-1-data-rlvr-step600` es un checkpoint de pesos de inferencia publicado en HuggingFace por el usuario `menik1126`. Por el nombre y la model card se trata de un punto de control intermedio (paso o "step" 600) de un entrenamiento con RLVR (*Reinforcement Learning with Verifiable Rewards*) sobre datos de matematicas, usando GRPO (*Group Relative Policy Optimization*) como algoritmo de optimizacion. El autor lo describe explicitamente como "baseline historico de pi1 con GRPO puro, con el rechazo por modelo profesor (*teacher rejection*) desactivado", es decir, un punto de referencia sin filtrado de datos por un modelo docente.
+`menik1126/ovd-math-1-data-rlvr-step600` es un checkpoint de pesos de inferencia publicado en Hugging Face por el usuario `menik1126`. Por el nombre y la model card se trata de un punto de control intermedio (paso o "step" 600) de un entrenamiento con RLVR (*Reinforcement Learning with Verifiable Rewards*) sobre datos de matematicas, usando GRPO (*Group Relative Policy Optimization*) como algoritmo de optimizacion. El autor lo describe explicitamente como "baseline historico de pi1 con GRPO puro, con el rechazo por modelo profesor (*teacher rejection*) desactivado", es decir, un punto de referencia sin filtrado de datos por un modelo docente.
 
 El repositorio contiene unicamente pesos de inferencia y ficheros de tokenizer, no estado del optimizador, y esta etiquetado con la arquitectura `qwen2` y formato `safetensors`. El recuento real de parametros derivado de los ficheros de pesos es de 1.777.088.000 (aproximadamente 1,78 mil millones), lo que lo situa en la categoria de modelos pequenos, ejecutables en GPU de consumo. El repositorio ocupa 7,1 GB, un tamano superior a los aproximadamente 3,6 GB que ocuparian los pesos en bf16, lo que sugiere la presencia de copias adicionales en otra precision o de artefactos extra, aunque la composicion exacta no esta documentada.
 
@@ -22,7 +22,7 @@ Su relevancia es fundamentalmente de investigacion: sirve como referencia reprod
 | Formato de pesos | safetensors (mas ficheros de tokenizer) |
 | Tamano del repositorio | 7,1 GB |
 | Pipeline declarado | no disponible |
-| Fecha de creacion / actualizacion | 2026-09-19 / 2026-09-19 (segun los metadatos de HuggingFace) |
+| Fecha de creacion / actualizacion | 2026-09-19 / 2026-09-19 (segun los metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -72,7 +72,7 @@ No hay datos de rendimiento de este checkpoint, por lo que la comparacion es est
 
 | Modelo | Parametros | Contexto | Licencia | Benchmarks publicados | Disponibilidad |
 |---|---|---|---|---|---|
-| `menik1126/ovd-math-1-data-rlvr-step600` | 1,78B (dato real de safetensors) | no disponible | no disponible | no | Solo safetensors en HuggingFace; 0 descargas |
+| `menik1126/ovd-math-1-data-rlvr-step600` | 1,78B (dato real de safetensors) | no disponible | no disponible | no | Solo safetensors en Hugging Face; 0 descargas |
 | Qwen2.5-1.5B (base de la familia referenciada) | ≈1,5B | 32.768 tokens | Apache-2.0 | Si, en su ficha oficial | Amplia: safetensors, GGUF, integraciones en vLLM, Ollama y TGI |
 | Qwen2.5-Math-1.5B | ≈1,5B | 4.096 tokens | Apache-2.0 | Si, orientados a matematicas | Amplia, con variantes de cuantizacion de la comunidad |
 | DeepSeek-R1-Distill-Qwen-1.5B | 1,78B (coincide con el recuento de este checkpoint) | no verificado en esta ficha | MIT | Si | Amplia, con GGUF y soporte en multiples runtimes |
@@ -93,5 +93,5 @@ La coincidencia exacta del recuento de parametros (1.777.088.000) con el de Deep
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/menik1126/ovd-math-1-data-rlvr-step600
+- Hugging Face: https://huggingface.co/menik1126/ovd-math-1-data-rlvr-step600
 - La busqueda web realizada no devolvio ningun resultado relacionado con el modelo. Los unicos resultados obtenidos eran listados de pizzerias en San Petersburgo, sin ninguna relacion con este checkpoint. No se han localizado papers, blogs tecnicos, repositorios de codigo ni demos asociados.

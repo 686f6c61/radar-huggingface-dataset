@@ -2,9 +2,9 @@
 
 ## Resumen
 
-qwen-metaphor-unke-camada-8-zero-um es un modelo de generacion de texto publicado en HuggingFace por el usuario luisastellet, derivado de la familia Qwen3 segun la etiqueta de arquitectura declarada en el repositorio. Cuenta con 596.049.920 parametros reales (aproximadamente 0,6 mil millones) declarados en los safetensors, y un tamano de repositorio de 2,4 GB, lo que es coherente con un almacenamiento de pesos en fp32. Forma parte de una serie de publicaciones del mismo autor con nomenclatura "qwen-metaphor-unke-camada-N" (existen al menos las variantes camada-5, camada-7 y camada-8, ademas de una "camada-0-literal-metaforica"), lo que sugiere un trabajo por capas o iteraciones sucesivas sobre una tarea comun relacionada con la generacion de metaforas.
+qwen-metaphor-unke-camada-8-zero-um es un modelo de generacion de texto publicado en Hugging Face por el usuario luisastellet, derivado de la familia Qwen3 segun la etiqueta de arquitectura declarada en el repositorio. Cuenta con 596.049.920 parametros reales (aproximadamente 0,6 mil millones) declarados en los safetensors, y un tamano de repositorio de 2,4 GB, lo que es coherente con un almacenamiento de pesos en fp32. Forma parte de una serie de publicaciones del mismo autor con nomenclatura "qwen-metaphor-unke-camada-N" (existen al menos las variantes camada-5, camada-7 y camada-8, ademas de una "camada-0-literal-metaforica"), lo que sugiere un trabajo por capas o iteraciones sucesivas sobre una tarea comun relacionada con la generacion de metaforas.
 
-El problema concreto que resuelve no esta documentado: la model card es la plantilla autogenerada de HuggingFace y no contiene descripcion, datos de entrenamiento, licencia ni resultados de evaluacion. Por la nomenclatura ("metaphor", "literal-metaforica") y por las variantes por capa, cabe hipotesis de que se trate de ajustes orientados a transformar texto literal en expresiones metaforicas, posiblemente mediante tecnicas de edicion de conocimiento sobre capas especificas, pero esto no puede confirmarse con la informacion disponible.
+El problema concreto que resuelve no esta documentado: la model card es la plantilla autogenerada de Hugging Face y no contiene descripcion, datos de entrenamiento, licencia ni resultados de evaluacion. Por la nomenclatura ("metaphor", "literal-metaforica") y por las variantes por capa, cabe hipotesis de que se trate de ajustes orientados a transformar texto literal en expresiones metaforicas, posiblemente mediante tecnicas de edicion de conocimiento sobre capas especificas, pero esto no puede confirmarse con la informacion disponible.
 
 Su relevancia practica radica en el tamano: al ser un modelo de ~0,6B de parametros, es desplegable en hardware de consumo y sirve como base para experimentacion barata, fine-tuning local o docencia. No obstante, la ausencia de licencia, idiomas declarados y benchmarks lo convierten en un artefacto de investigacion mas que en un componente listo para produccion.
 
@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| qwen-metaphor-unke-camada-8-zero-um | 596.049.920 | no disponible | no disponible | HuggingFace, 0 descargas | Model card vacia, sin benchmarks |
-| luisastellet/qwen-metaphor-unke-camada-7-zero-um | no disponible | no disponible | no disponible | HuggingFace | Variante hermana de la misma serie |
-| luisastellet/qwen-metaphor-unke-camada-5 | ~0,8B (segun featherless.ai) | 32.768 tokens (segun featherless.ai) | no disponible | HuggingFace | Variante hermana con ficha de terceros |
-| luisastellet/qwen-metaphor-unke-camada-0-literal-metaforica | no disponible | no disponible | no disponible | HuggingFace | Punto de partida aparente de la serie |
+| qwen-metaphor-unke-camada-8-zero-um | 596.049.920 | no disponible | no disponible | Hugging Face, 0 descargas | Model card vacia, sin benchmarks |
+| luisastellet/qwen-metaphor-unke-camada-7-zero-um | no disponible | no disponible | no disponible | Hugging Face | Variante hermana de la misma serie |
+| luisastellet/qwen-metaphor-unke-camada-5 | ~0,8B (segun featherless.ai) | 32.768 tokens (segun featherless.ai) | no disponible | Hugging Face | Variante hermana con ficha de terceros |
+| luisastellet/qwen-metaphor-unke-camada-0-literal-metaforica | no disponible | no disponible | no disponible | Hugging Face | Punto de partida aparente de la serie |
 
 No se dispone de datos de rendimiento que permitan comparar estos modelos entre si, mas alla del recuento de parametros y del contexto documentado para la variante camada-5. Frente a alternativas publicas de tamano similar (por ejemplo Qwen3-0.6B, Qwen2.5-0.5B o Llama-3.2-1B), la diferencia principal es que aquellos cuentan con licencia explicita, fichas detalladas e informes de evaluacion, mientras que este checkpoint carece de toda esa informacion.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento que permitan comparar estos modelos entre 
 - Riesgo de alucinacion: elevado en terminos relativos, tanto por el reducido tamano del modelo como por la ausencia de evaluacion y de alineacion documentada.
 - Limitaciones de contexto e idioma: se desconoce la ventana de contexto efectiva y los idiomas soportados; la variante camada-5 declara 32.768 tokens, pero no es extrapolable sin confirmacion.
 - Licencia: no disponible. Al no declararse licencia, no puede asumirse permiso para uso comercial ni para redistribucion; conviene contactar con el autor antes de cualquier explotacion.
-- Model card incompleta: se trata de la plantilla autogenerada de HuggingFace, sin informacion sobre uso previsto, datos, entrenamiento ni evaluacion.
+- Model card incompleta: se trata de la plantilla autogenerada de Hugging Face, sin informacion sobre uso previsto, datos, entrenamiento ni evaluacion.
 - Ausencia de benchmarks: no hay ninguna cifra publica que permita estimar la calidad real del modelo.
 - Procedencia incierta: no se documenta el checkpoint base exacto ni el procedimiento de ajuste, lo que dificulta la reproducibilidad.
 - Metadatos atipicos: la fecha de creacion registrada (2026-10-15) y la nomenclatura interna de la serie no vienen acompanadas de explicacion.
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento que permitan comparar estos modelos entre 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/luisastellet/qwen-metaphor-unke-camada-8-zero-um
+- Modelo en Hugging Face: https://huggingface.co/luisastellet/qwen-metaphor-unke-camada-8-zero-um
 - Variante camada-7: https://huggingface.co/luisastellet/qwen-metaphor-unke-camada-7-zero-um
 - Variante camada-5 en featherless.ai: https://featherless.ai/models/luisastellet/qwen-metaphor-unke-camada-5
 - Variante camada-0 literal-metaforica en free2aitools: https://free2aitools.com/model/luisastellet/qwen-metaphor-unke-camada-0-literal-metaforica

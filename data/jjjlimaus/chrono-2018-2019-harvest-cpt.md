@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `jjjlimaus/chrono-2018-2019-harvest-cpt` es un modelo de generación de texto publicado en HuggingFace por el usuario `jjjlimaus` (Lima). Se presenta bajo la licencia Apache 2.0 y está diseñado para la librería Transformers, con pipeline de text-generation. El nombre sugiere un entrenamiento continuo (CPT, *continued pre-training*) sobre datos de los años 2018-2019, posiblemente orientado a un dominio temporal específico, aunque no se dispone de documentación oficial que lo confirme.
+El modelo `jjjlimaus/chrono-2018-2019-harvest-cpt` es un modelo de generación de texto publicado en Hugging Face por el usuario `jjjlimaus` (Lima). Se presenta bajo la licencia Apache 2.0 y está diseñado para la librería Transformers, con pipeline de text-generation. El nombre sugiere un entrenamiento continuo (CPT, *continued pre-training*) sobre datos de los años 2018-2019, posiblemente orientado a un dominio temporal específico, aunque no se dispone de documentación oficial que lo confirme.
 
-El modelo tiene acceso restringido (gated), lo que implica que los usuarios deben aceptar condiciones adicionales en HuggingFace antes de poder descargarlo. No se han publicado detalles sobre arquitectura, tamaño, contexto o rendimiento en la información disponible. Su relevancia actual es incierta, dado que no hay benchmarks ni documentación pública que lo respalde, y el repositorio no muestra actividad significativa (0 descargas, 0 likes).
+El modelo tiene acceso restringido (gated), lo que implica que los usuarios deben aceptar condiciones adicionales en Hugging Face antes de poder descargarlo. No se han publicado detalles sobre arquitectura, tamaño, contexto o rendimiento en la información disponible. Su relevancia actual es incierta, dado que no hay benchmarks ni documentación pública que lo respalde, y el repositorio no muestra actividad significativa (0 descargas, 0 likes).
 
 ## Especificaciones tecnicas
 
@@ -47,7 +47,7 @@ No disponible. No se conocen modelos comparables de la misma categoría (entrena
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar condiciones en HuggingFace, lo que puede limitar su uso inmediato.
+- Acceso restringido: el modelo requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso inmediato.
 - Ausencia de documentación: no hay papers, blogs ni guías técnicas que describan el modelo, su entrenamiento o sus capacidades.
 - Riesgo de alucinación y sesgos: al no conocerse el dataset de entrenamiento, no se pueden evaluar sesgos ni riesgos de alucinación.
 - Sin garantías de calidad: la falta de benchmarks y de comunidad activa (0 descargas, 0 likes) sugiere que el modelo no ha sido validado externamente.
@@ -55,7 +55,7 @@ No disponible. No se conocen modelos comparables de la misma categoría (entrena
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jjjlimaus/chrono-2018-2019-harvest-cpt
+- Repositorio Hugging Face: https://huggingface.co/jjjlimaus/chrono-2018-2019-harvest-cpt
 - Perfil del autor: https://huggingface.co/jjjlimaus
 - Lista de modelos del autor: https://huggingface.co/jjjlimaus/models
 

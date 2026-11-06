@@ -46,7 +46,7 @@ El entrenamiento se realizo con PyTorch, utilizando el optimizador Adam con una 
 
 ## Benchmarks y rendimiento
 
-Los resultados que se presentan a continuacion provienen del model-index declarado por el autor en la model card de HuggingFace. No han sido verificados de forma independiente.
+Los resultados que se presentan a continuacion provienen del model-index declarado por el autor en la model card de Hugging Face. No han sido verificados de forma independiente.
 
 | Benchmark | Dataset | Metrica | Valor |
 |---|---|---|---|
@@ -91,8 +91,8 @@ No se dispone de informacion suficiente para realizar una comparativa rigurosa c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Prash2410/cancerclassification_customcnn
+- Modelo en Hugging Face: https://huggingface.co/Prash2410/cancerclassification_customcnn
 - Repositorio en GitHub: https://github.com/prasmit2410/Lung-Cancer-Classification-using-a-Custom-Residual-CNN-PyTorch-
-- Perfil del autor en HuggingFace: https://huggingface.co/Prash2410
+- Perfil del autor en Hugging Face: https://huggingface.co/Prash2410
 - Modelo alternativo del mismo autor: https://huggingface.co/Prash2410/customresidualcnn_lungcancerclassification
 - Publicacion relacionada en ResearchGate: https://www.researchgate.net/publication/391631967_High-Precision_Lung_Cancer_Classification_with_Custom_CNN_Evaluation_and_Transfer_Learning_for_Broader_Cancer_Types

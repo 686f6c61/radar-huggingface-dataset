@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen2.5-7B-Instruct-JSpace-heretic | 7.61B | 131K (32K por defecto) | Apache 2.0 | Instructivo decensored | HuggingFace (richardyoung) |
-| Qwen/Qwen2.5-7B-Instruct | 7.61B | 131K (32K por defecto) | Apache 2.0 | Instructivo original con salvaguardas | HuggingFace (Qwen) |
-| Otras variantes abliterated de Qwen2.5-7B | 7.61B | 131K | Apache 2.0 | Decensored mediante otras técnicas | Disponibles en HuggingFace (no verificadas en esta búsqueda) |
+| Qwen2.5-7B-Instruct-JSpace-heretic | 7.61B | 131K (32K por defecto) | Apache 2.0 | Instructivo decensored | Hugging Face (richardyoung) |
+| Qwen/Qwen2.5-7B-Instruct | 7.61B | 131K (32K por defecto) | Apache 2.0 | Instructivo original con salvaguardas | Hugging Face (Qwen) |
+| Otras variantes abliterated de Qwen2.5-7B | 7.61B | 131K | Apache 2.0 | Decensored mediante otras técnicas | Disponibles en Hugging Face (no verificadas en esta búsqueda) |
 
 La comparación directa con alternativas de otros fabricantes (Llama 3.1 8B Instruct, Mistral 7B Instruct) no se incluye porque no se han proporcionado datos de rendimiento de esta variante que permitan una comparación rigurosa. La diferencia medible frente al original es la tasa de rechazos (84/100 frente a 99/100) y la divergencia KL de 0.0216.
 
@@ -92,7 +92,7 @@ La comparación directa con alternativas de otros fabricantes (Llama 3.1 8B Inst
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/richardyoung/Qwen2.5-7B-Instruct-JSpace-heretic
+- Modelo en Hugging Face: https://huggingface.co/richardyoung/Qwen2.5-7B-Instruct-JSpace-heretic
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct/blob/main/LICENSE
 - Heretic (herramienta de decensoring): https://heretic-project.org

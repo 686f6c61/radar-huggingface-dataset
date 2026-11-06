@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-5B es un modelo de generacion de texto en castellano derivado de Qwen/Qwen3-8B, publicado por el usuario parmanu-lcs2 en HuggingFace. No se trata de un entrenamiento desde cero ni de un modelo oficial de la familia Qwen, sino de una version podada (pruned) del Qwen3-8B original mediante el metodo SNIPER, con un ratio de compresion objetivo del 35%. El resultado son 5.406.974.208 parametros reales, verificado en los ficheros safetensors del repositorio, frente a los aproximadamente 8.000 millones del modelo base.
+Qwen3-5B es un modelo de generacion de texto en castellano derivado de Qwen/Qwen3-8B, publicado por el usuario parmanu-lcs2 en Hugging Face. No se trata de un entrenamiento desde cero ni de un modelo oficial de la familia Qwen, sino de una version podada (pruned) del Qwen3-8B original mediante el metodo SNIPER, con un ratio de compresion objetivo del 35%. El resultado son 5.406.974.208 parametros reales, verificado en los ficheros safetensors del repositorio, frente a los aproximadamente 8.000 millones del modelo base.
 
 El problema que resuelve es el de reducir el coste de inferencia y el espacio en VRAM de un modelo de 8B manteniendo, en la medida de lo posible, sus capacidades conversacionales. Para recuperar el rendimiento perdido por la poda, el autor aplico un fine-tuning de recuperacion con LoRA sobre 2.000 muestras del dataset SlimOrca, con los adaptadores ya fusionados en los pesos finales. Todo el proceso se ejecuto en una unica GPU NVIDIA A100.
 
@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento publicado | Disponibilidad |
 |---|---|---|---|---|---|
-| parmanu-lcs2/Qwen3-5B | 5.406.974.208 (confirmado) | No especificado | Apache 2.0 | No disponible | Repositorio HuggingFace, 0 descargas, requiere codigo custom |
+| parmanu-lcs2/Qwen3-5B | 5.406.974.208 (confirmado) | No especificado | Apache 2.0 | No disponible | Repositorio Hugging Face, 0 descargas, requiere codigo custom |
 | Qwen/Qwen3-8B (modelo base) | Aproximadamente 8.000 millones, dato no confirmado en la informacion proporcionada | No disponible en la informacion proporcionada | Apache 2.0 | No disponible en la informacion proporcionada | Modelo oficial de Qwen, ampliamente distribuido |
 | Qwen/Qwen3-4B | Aproximadamente 4.000 millones, dato no confirmado en la informacion proporcionada | No disponible en la informacion proporcionada | Apache 2.0 | No disponible en la informacion proporcionada | Modelo oficial de Qwen |
-| Otras podas de Qwen3-8B publicadas en HuggingFace | No disponible | No disponible | Variable | No disponible | No disponible |
+| Otras podas de Qwen3-8B publicadas en Hugging Face | No disponible | No disponible | Variable | No disponible | No disponible |
 
 La comparativa cuantitativa no es posible con los datos aportados: ni la model card de este modelo ni la informacion proporcionada incluyen metricas de los alternativas. La diferencia objetiva y verificable es el numero de parametros (5,4 B frente a los aproximadamente 8 B del base) y el hecho de que este modelo exige codigo personalizado, mientras que los modelos oficiales de Qwen funcionan con clases estandar de transformers.
 
@@ -93,7 +93,7 @@ La comparativa cuantitativa no es posible con los datos aportados: ni la model c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/parmanu-lcs2/Qwen3-5B
+- Modelo en Hugging Face: https://huggingface.co/parmanu-lcs2/Qwen3-5B
 - Modelo base Qwen/Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Paper de SNIPER citado por el autor: https://arxiv.org/abs/2608.12953
 - Dataset de recuperacion Open-Orca/SlimOrca: https://huggingface.co/datasets/Open-Orca/SlimOrca

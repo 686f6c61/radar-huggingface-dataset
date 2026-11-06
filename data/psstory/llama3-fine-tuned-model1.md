@@ -2,7 +2,7 @@
 
 ## Resumen
 
-psstory/llama3-fine-tuned-model1 es un ajuste fino (fine-tune) del modelo unsloth/llama-3-8b-Instruct-bnb-4bit, publicado por el usuario psstory en HuggingFace. Se trata, por tanto, de una variante derivada de Llama 3 8B Instruct, la familia de modelos abiertos de Meta, en su version instruida y cuantizada a 4 bits mediante bitsandbytes como punto de partida. El repositorio no incluye informacion sobre el dataset, el procedimiento ni el objetivo concreto del ajuste.
+psstory/llama3-fine-tuned-model1 es un ajuste fino (fine-tune) del modelo unsloth/llama-3-8b-Instruct-bnb-4bit, publicado por el usuario psstory en Hugging Face. Se trata, por tanto, de una variante derivada de Llama 3 8B Instruct, la familia de modelos abiertos de Meta, en su version instruida y cuantizada a 4 bits mediante bitsandbytes como punto de partida. El repositorio no incluye informacion sobre el dataset, el procedimiento ni el objetivo concreto del ajuste.
 
 El modelo se ha entrenado utilizando Unsloth, una libreria de optimizacion que acelera el fine-tuning de modelos LLM (principalmente mediante LoRA/QLoRA) y reduce el consumo de memoria, segun indica la propia model card del autor. La licencia declarada es Apache 2.0 y el unico idioma soportado declarado es el ingles.
 
@@ -23,7 +23,7 @@ Su relevancia practica es limitada por el momento: el repositorio acumula 0 desc
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura especifica del ajuste ni sobre el proceso de entrenamiento. La model card unicamente indica que el modelo se ha ajustado a partir de unsloth/llama-3-8b-Instruct-bnb-4bit, una version del Llama 3 8B Instruct de Meta cuantizada a 4 bits con bitsandbytes, y que el entrenamiento se realizo con Unsloth, que acelera el proceso aproximadamente 2x respecto a un pipeline convencional. La tag `trl` sugiere el uso de la libreria TRL de HuggingFace para el ajuste supervisado, pero no se confirma ni el metodo exacto (SFT, DPO, ORPO) ni los hiperparametros.
+No se dispone de informacion detallada sobre la arquitectura especifica del ajuste ni sobre el proceso de entrenamiento. La model card unicamente indica que el modelo se ha ajustado a partir de unsloth/llama-3-8b-Instruct-bnb-4bit, una version del Llama 3 8B Instruct de Meta cuantizada a 4 bits con bitsandbytes, y que el entrenamiento se realizo con Unsloth, que acelera el proceso aproximadamente 2x respecto a un pipeline convencional. La tag `trl` sugiere el uso de la libreria TRL de Hugging Face para el ajuste supervisado, pero no se confirma ni el metodo exacto (SFT, DPO, ORPO) ni los hiperparametros.
 
 Tampoco se especifican el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de RLHF o DPO, ni ninguna innovacion tecnica propia. El tamano del repositorio (0,2 GB) es coherente con un conjunto de pesos de tipo adaptador (LoRA) o con un modelo cuantizado de baja precision, mas que con los pesos completos en precision de 16 bits de un modelo de 8.000 millones de parametros, que rondarian los 16 GB. En cualquier caso, esta interpretacion no queda confirmada por la documentacion disponible. Cualquier inferencia sobre la arquitectura de atencion, las funciones de activacion o el tokenizador debe tomarse directamente del modelo base Llama 3 8B Instruct.
 
@@ -50,7 +50,7 @@ Debido a la ausencia de evaluacion publicada y al escaso tamano del repositorio,
 - Punto de partida para un segundo ajuste fino: al derivar de Llama 3 8B Instruct, puede utilizarse como checkpoint inicial para un ajuste especifico de dominio con datos propios.
 - Evaluacion comparativa de fine-tunes comunitarios: util en estudios que midan como afecta un ajuste con Unsloth sobre un modelo cuantizado a 4 bits frente al modelo base sin ajustar.
 - Despliegue en hardware limitado para pruebas internas: si los pesos son de tipo adaptador, el coste de almacenamiento y transferencia es muy bajo, lo que facilita su uso en entornos de laboratorio.
-- Integracion en demos de HuggingFace Spaces o notebooks: la tag `endpoints_compatible` sugiere compatibilidad con la infraestructura de endpoints de HuggingFace, lo que simplifica pruebas de inferencia remotas.
+- Integracion en demos de Hugging Face Spaces o notebooks: la tag `endpoints_compatible` sugiere compatibilidad con la infraestructura de endpoints de Hugging Face, lo que simplifica pruebas de inferencia remotas.
 
 ## Benchmarks y rendimiento
 
@@ -72,10 +72,10 @@ Las cifras siguientes son estimaciones basadas en el tamano del modelo base (8.0
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| psstory/llama3-fine-tuned-model1 | No especificado (base de 8B) | No especificado (base de 8.192 tokens) | Apache 2.0 | HuggingFace, 0 descargas | No publicado |
-| meta-llama/Meta-Llama-3-8B-Instruct | 8.030 millones | 8.192 tokens | Llama 3 Community License | HuggingFace, ampliamente utilizado | Metricas publicadas por Meta |
-| mistralai/Mistral-7B-Instruct-v0.3 | 7.250 millones | 32.768 tokens | Apache 2.0 | HuggingFace, muy extendido | Metricas publicadas por Mistral |
-| Qwen/Qwen2-7B-Instruct | 7.620 millones | 131.072 tokens | Apache 2.0 | HuggingFace, muy extendido | Metricas publicadas por Alibaba |
+| psstory/llama3-fine-tuned-model1 | No especificado (base de 8B) | No especificado (base de 8.192 tokens) | Apache 2.0 | Hugging Face, 0 descargas | No publicado |
+| meta-llama/Meta-Llama-3-8B-Instruct | 8.030 millones | 8.192 tokens | Llama 3 Community License | Hugging Face, ampliamente utilizado | Metricas publicadas por Meta |
+| mistralai/Mistral-7B-Instruct-v0.3 | 7.250 millones | 32.768 tokens | Apache 2.0 | Hugging Face, muy extendido | Metricas publicadas por Mistral |
+| Qwen/Qwen2-7B-Instruct | 7.620 millones | 131.072 tokens | Apache 2.0 | Hugging Face, muy extendido | Metricas publicadas por Alibaba |
 
 No se dispone de datos que permitan comparar el rendimiento de este fine-tune con el de las alternativas citadas. La comparacion se limita a parametros, contexto, licencia y disponibilidad. Conviene senalar que tanto Mistral 7B Instruct v0.3 como Qwen2 7B Instruct ofrecen ventanas de contexto notablemente mayores y licencias permisivas equivalentes o mas flexibles.
 
@@ -93,7 +93,7 @@ No se dispone de datos que permitan comparar el rendimiento de este fine-tune co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/psstory/llama3-fine-tuned-model1
+- Modelo en Hugging Face: https://huggingface.co/psstory/llama3-fine-tuned-model1
 - Modelo base: https://huggingface.co/unsloth/llama-3-8b-Instruct-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relevante sobre este modelo; los resultados devueltos corresponden a documentacion administrativa japonesa sobre enfermedades raras y no guardan relacion con el modelo.

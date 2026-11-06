@@ -84,6 +84,6 @@ No se dispone de datos de rendimiento comparado en la informacion proporcionada.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/fridaystreet/Qwen3.8-27B-Turbo-Brilliance-50X-Reasoning-Instruct-NEO-MAX-MTP-GGUF
+- Repositorio Hugging Face: https://huggingface.co/fridaystreet/Qwen3.8-27B-Turbo-Brilliance-50X-Reasoning-Instruct-NEO-MAX-MTP-GGUF
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.8-27B
 - No se han encontrado en la informacion proporcionada papers, blogs, repositorios adicionales ni demos del autor.

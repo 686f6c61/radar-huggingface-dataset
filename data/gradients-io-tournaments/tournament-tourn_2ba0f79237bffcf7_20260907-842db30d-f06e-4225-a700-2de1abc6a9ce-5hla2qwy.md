@@ -61,6 +61,6 @@ No disponible. No se ha encontrado informacion comparable ni se han publicado da
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gradients-io-tournaments/tournament-tourn_2ba0f79237bffcf7_20260907-842db30d-f06e-4225-a700-2de1abc6a9ce-5HLA2QWY
+- Hugging Face: https://huggingface.co/gradients-io-tournaments/tournament-tourn_2ba0f79237bffcf7_20260907-842db30d-f06e-4225-a700-2de1abc6a9ce-5HLA2QWY
 - Plataforma Gradients (torneos): https://www.gradients.io/app/research/tournament
 - Modelo similar de la misma organizacion: https://huggingface.co/gradients-io-tournaments/tournament-tourn_e758aac2d861c378_20260824-c2b6b7d5-8797-4ae8-86cf-6d6ad1d130f8-5HWPK9f6

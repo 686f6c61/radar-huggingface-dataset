@@ -110,6 +110,6 @@ No se incluyen datos comparativos en la informacion proporcionada. La tabla sigu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/liaoweiduo/sae-qwen3vl30ba3b-l10-gs0.0-step1200
+- Repositorio Hugging Face: https://huggingface.co/liaoweiduo/sae-qwen3vl30ba3b-l10-gs0.0-step1200
 - Modelo base Qwen3-VL-30B-A3B-Instruct: https://huggingface.co/Qwen/Qwen3-VL-30B-A3B-Instruct
 - JSON de explicaciones de caracteristicas (capa 10, gs 0.0, paso 1200): https://huggingface.co/datasets/liaoweiduo/SAE-explorer-resources/blob/main/explanations/qwen3_vl_30b_a3b/layer_10/gs_0.0_step_1200/sae_explain_output.json

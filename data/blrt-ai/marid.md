@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Marid (مارد) es un asistente de IA para Android desarrollado por BLRT.ai que se distribuye a traves de este repositorio de HuggingFace. Segun la model card, el proyecto consiste en "genios" (agentes) capaces de conversar, operar el telefono, programar, disenar y generar imagenes, video y audio, funcionando bien con claves de API propias del usuario o con modelos que se ejecutan en el propio dispositivo.
+Marid (مارد) es un asistente de IA para Android desarrollado por BLRT.ai que se distribuye a traves de este repositorio de Hugging Face. Segun la model card, el proyecto consiste en "genios" (agentes) capaces de conversar, operar el telefono, programar, disenar y generar imagenes, video y audio, funcionando bien con claves de API propias del usuario o con modelos que se ejecutan en el propio dispositivo.
 
 Es importante senalar que este repositorio no contiene un modelo de lenguaje en el sentido tradicional, sino un canal de publicacion de releases de la aplicacion Android (APK y ficheros de actualizacion firmados), un fichero `index.json` con la lista firmada de actualizaciones, y archivos de codigo fuente de componentes cuyas licencias exigen su publicacion. El mismo contenido se publica en GitHub (github.com/blrt-ai/marid) y este repositorio es un espejo.
 
@@ -75,5 +75,5 @@ No disponible. La informacion proporcionada no identifica un modelo de lenguaje 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/blrt-ai/marid
+- Repositorio Hugging Face: https://huggingface.co/blrt-ai/marid
 - GitHub (espejo): https://github.com/blrt-ai/marid

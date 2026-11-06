@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parametros | Contexto | Formato / runtime | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiMo-V2.6-Distill-Qwen-9B-MLX-Serve-8bit (esta ficha) | 9,41B | no disponible | MLX 8 bits, mlx-serve | no disponible | HuggingFace, 0 descargas |
-| XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B (upstream) | ~9,4B (mismo modelo base) | no disponible | safetensors completos | no disponible | HuggingFace |
+| MiMo-V2.6-Distill-Qwen-9B-MLX-Serve-8bit (esta ficha) | 9,41B | no disponible | MLX 8 bits, mlx-serve | no disponible | Hugging Face, 0 descargas |
+| XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B (upstream) | ~9,4B (mismo modelo base) | no disponible | safetensors completos | no disponible | Hugging Face |
 | Otras cuantizaciones MLX del mismo modelo base | no disponible | no disponible | MLX (4 bits u otras) | no disponible | no confirmado en la informacion |
 | Alternativas densas de ~8-9B de la misma categoria (por ejemplo Qwen3-8B o Llama-3.1-8B) | ~8B | no disponible en esta busqueda | safetensors, GGUF, MLX | depende del modelo (Apache-2.0 en algunos casos, licencias comunitarias en otros) | ampliamente disponibles |
 
@@ -91,7 +91,7 @@ La comparación cuantitativa con alternativas no puede completarse porque no hay
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ddalcu/MiMo-V2.6-Distill-Qwen-9B-MLX-Serve-8bit
+- Repositorio en Hugging Face: https://huggingface.co/ddalcu/MiMo-V2.6-Distill-Qwen-9B-MLX-Serve-8bit
 - Modelo base: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B
 - Motor de inferencia mlx-serve: https://github.com/ddalcu/mlx-serve
 - Paper, blog o demo oficial del modelo base: no disponible en la informacion proporcionada

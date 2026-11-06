@@ -81,6 +81,6 @@ No se dispone de datos de rendimiento ni de otros modelos comparables en la info
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/trevdatastreams/typed-decider-qwen3.5-4b-base-nf4
+- Repositorio Hugging Face: https://huggingface.co/trevdatastreams/typed-decider-qwen3.5-4b-base-nf4
 - Paquete del adaptador: https://huggingface.co/trevdatastreams/typed-decider-qwen3.5-4b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B

@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Formato | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Tdamre/MiniCPM5-2B-LiteRT-LongContext | ~2.000 millones (según nomenclatura del base) | 16.384 / 32.768 / 65.536 tokens de caché KV fija | `.litertlm` | INT4 blockwise-32 + OCTAV, embeddings INT8 | Apache-2.0 | Repositorio HuggingFace, 0 descargas, 0 likes |
+| Tdamre/MiniCPM5-2B-LiteRT-LongContext | ~2.000 millones (según nomenclatura del base) | 16.384 / 32.768 / 65.536 tokens de caché KV fija | `.litertlm` | INT4 blockwise-32 + OCTAV, embeddings INT8 | Apache-2.0 | Repositorio Hugging Face, 0 descargas, 0 likes |
 | openbmb/MiniCPM5-2B (modelo base) | ~2.000 millones (según nomenclatura) | Hasta 131.072 posiciones | No disponible en la información proporcionada | Sin cuantizar (checkpoint upstream) | Apache-2.0 | Modelo original de OpenBMB |
 | Otras cuantizaciones de MiniCPM5-2B para borde | No disponible | No disponible | No disponible | No disponible | No disponible | No se han identificado en la información proporcionada |
 
@@ -99,7 +99,7 @@ No se dispone de datos de benchmarks ni de especificaciones verificadas de alter
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Tdamre/MiniCPM5-2B-LiteRT-LongContext
+- Repositorio en Hugging Face: https://huggingface.co/Tdamre/MiniCPM5-2B-LiteRT-LongContext
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
 - Ficheros de artefacto citados en la model card (dentro del repositorio): `MiniCPM5-2B-LiteRT-INT4-16k.litertlm`, `MiniCPM5-2B-LiteRT-INT4-32k.litertlm`, `MiniCPM5-2B-LiteRT-INT4-64k.litertlm`
 - Documentación de reproducibilidad citada en la model card (dentro del repositorio): `litertlm_manifest.json`, `validation_report.txt`, `convert_minicpm5_longcontext.sh`

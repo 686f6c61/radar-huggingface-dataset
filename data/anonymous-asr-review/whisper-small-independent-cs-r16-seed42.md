@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparado para este adaptador, por lo que 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anonymous-asr-review/whisper-small-independent-cs-r16-seed42
+- Modelo en Hugging Face: https://huggingface.co/anonymous-asr-review/whisper-small-independent-cs-r16-seed42
 - Modelo base: https://huggingface.co/openai/whisper-small
 - Paper de la arquitectura Whisper (modelo base, Radford et al., 2022): https://arxiv.org/abs/2212.04356
 - Repositorio de PEFT: https://github.com/huggingface/peft

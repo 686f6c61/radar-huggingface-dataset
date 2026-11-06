@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Petitad07/knowledge-distillation-review50` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación sobre destilación de conocimiento (knowledge distillation) publicado en HuggingFace bajo la licencia CC-BY-4.0. El autor lo describe explícitamente como un trabajo exploratorio y en curso ("wip"): no contiene benchmarks, ablaciones completadas, código publicado ni un checkpoint entrenado. El artefacto principal es `paper_notes.md`, y el archivo `model.safetensors` se presenta como un "initialization checkpoint", es decir, pesos de inicialización sin entrenamiento útil.
+`Petitad07/knowledge-distillation-review50` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación sobre destilación de conocimiento (knowledge distillation) publicado en Hugging Face bajo la licencia CC-BY-4.0. El autor lo describe explícitamente como un trabajo exploratorio y en curso ("wip"): no contiene benchmarks, ablaciones completadas, código publicado ni un checkpoint entrenado. El artefacto principal es `paper_notes.md`, y el archivo `model.safetensors` se presenta como un "initialization checkpoint", es decir, pesos de inicialización sin entrenamiento útil.
 
 El repositorio incluye una configuración de arquitectura (`config.json`) y unos ajustes de experimento por defecto (`training_args.json`), junto con un recuento real de 49.600 parámetros en safetensors. Se trata, por tanto, de un contenedor de documentación técnica con un esqueleto de modelo asociado, no de un modelo listo para inferencia. Su relevancia es documental: sirve como plantilla de notas estructuradas (introducción, método, experimentos, relacionados, conclusión) para quien investigue destilación de conocimiento y quiera separar hipótesis de resultados.
 
@@ -78,5 +78,5 @@ No disponible. No se conocen modelos comparables en la información proporcionad
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Petitad07/knowledge-distillation-review50
+- Repositorio en Hugging Face: https://huggingface.co/Petitad07/knowledge-distillation-review50
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

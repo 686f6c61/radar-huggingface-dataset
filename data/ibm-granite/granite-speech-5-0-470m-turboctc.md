@@ -53,7 +53,7 @@ No se han publicado resultados numéricos detallados en la información proporci
 - **VRAM estimada para inferencia**: no se especifica oficialmente. Con 470M parámetros en FP32, el peso ocupa ~1.9 GB; en FP16 ~0.9 GB. Para un batch típico, se estima una VRAM de entre 1 y 2 GB, aunque depende de la longitud de audio y del backend.
 - **GPU recomendadas**: el modelo es ligero, puede ejecutarse en GPU consumer como RTX 3060, 4060, 4090, así como en GPUs de datacenter (A10, L4, H100). Las pruebas de velocidad se realizaron en H200 y L4.
 - **Compatibilidad con GPU consumer**: sí, cabe en la mayoría de GPUs modernas con al menos 4 GB de VRAM.
-- **Opciones de despliegue**: se integra en `transformers` (con `AutoModelForCTC` y `AutoProcessor`). No se mencionan backends específicos como vLLM o llama.cpp en la documentación; es probable que se pueda servir mediante HuggingFace Inference Endpoints u otros servicios que soporten transformers.
+- **Opciones de despliegue**: se integra en `transformers` (con `AutoModelForCTC` y `AutoProcessor`). No se mencionan backends específicos como vLLM o llama.cpp en la documentación; es probable que se pueda servir mediante Hugging Face Inference Endpoints u otros servicios que soporten transformers.
 - **Latencia y throughput**: se reporta una velocidad de transcripción de más de 12.600 RTFx en una H200 (es decir, 12.600 veces más rápido que el tiempo real) y de más de 3.5 horas de audio por segundo. En una L4, el RTFx en el leaderboard FFASR es menor pero no se detalla.
 
 ## Comparativa con modelos similares
@@ -72,7 +72,7 @@ No se dispone de datos concretos de comparación con otros modelos ASR compactos
 
 ## Enlaces
 
-- [HuggingFace - ibm-granite/granite-speech-5.0-470m-turboctc](https://huggingface.co/ibm-granite/granite-speech-5.0-470m-turboctc)
+- [Hugging Face - ibm-granite/granite-speech-5.0-470m-turboctc](https://huggingface.co/ibm-granite/granite-speech-5.0-470m-turboctc)
 - [Blog de IBM - Extremely Fast and Accurate Transcription with Granite Speech 5.0 Turbo CTC](https://huggingface.co/blog/ibm-granite/granite-speech-5-0-470m-turboctc)
 - [Documentación de Granite Speech en IBM](https://www.ibm.com/granite/docs/models/speech)
 - [Artículo de Korshunov AI - IBM releases Granite Speech 5.0 Turbo CTC models](https://korshunov.ai/en/article/20704-ibm-releases-granite-speech-5-0-turbo-ctc-models-with-over-12600-rtfx-speed/)

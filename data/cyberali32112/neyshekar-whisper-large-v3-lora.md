@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Neyshekar Whisper large-v3 LoRA es un adaptador LoRA (PEFT) entrenado sobre el modelo base `openai/whisper-large-v3` para reconocimiento automatico del habla (ASR) en persa (farsi). Lo publica el usuario `cyberali32112` en HuggingFace y se apoya en el corpus Neyshekar v4 Persian ASR (`shekar-ai/neyshekar-v4-persian-asr-fa`), del que se usaron 33.432 muestras de entrenamiento y 5.900 de validacion, depuradas a partir de 40.008 filas en bruto. El adaptador anade 15.728.640 parametros entrenables sobre los 1.559.219.200 del modelo base, es decir, un 1,01 % del total.
+Neyshekar Whisper large-v3 LoRA es un adaptador LoRA (PEFT) entrenado sobre el modelo base `openai/whisper-large-v3` para reconocimiento automatico del habla (ASR) en persa (farsi). Lo publica el usuario `cyberali32112` en Hugging Face y se apoya en el corpus Neyshekar v4 Persian ASR (`shekar-ai/neyshekar-v4-persian-asr-fa`), del que se usaron 33.432 muestras de entrenamiento y 5.900 de validacion, depuradas a partir de 40.008 filas en bruto. El adaptador anade 15.728.640 parametros entrenables sobre los 1.559.219.200 del modelo base, es decir, un 1,01 % del total.
 
 El problema que resuelve es concreto: Whisper large-v3 rinde mal en persa sin ajuste, con un WER normalizado del 36,97 % sobre el mismo subconjunto de 200 locuciones. Con el adaptador, ese WER baja al 8,74 % y el CER del 8,80 % al 2,14 %. Sobre la particion completa de validacion (5.900 filas) el autor declara WER 8,05 % y CER 2,00 %. Ademas de la mejora numerica, el ajuste ensena convenciones ortograficas persas que el base no aplica: cero digitos en las predicciones (frente a 4 en el base) y uso del zero-width non-joiner (ZWNJ) en 116 predicciones (el base no emitia ninguno).
 
@@ -90,8 +90,8 @@ No se han publicado resultados de benchmarks en la informacion disponible para M
 
 | Modelo | Parametros | Contexto / audio | WER (200 locuciones, mismo setup) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| neyshekar-whisper-large-v3-lora | 1,559 M base + 15,7 M adaptador | Ventanas de 30 s del base | 8,74 % | Apache 2.0 | HuggingFace (PEFT) |
-| openai/whisper-large-v3 (base) | 1.559 M | Ventanas de 30 s | 36,97 % | Apache 2.0 | HuggingFace |
+| neyshekar-whisper-large-v3-lora | 1,559 M base + 15,7 M adaptador | Ventanas de 30 s del base | 8,74 % | Apache 2.0 | Hugging Face (PEFT) |
+| openai/whisper-large-v3 (base) | 1.559 M | Ventanas de 30 s | 36,97 % | Apache 2.0 | Hugging Face |
 | Otros adaptadores o modelos ASR para persa | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La informacion proporcionada no incluye comparaciones con alternativas especificas para ASR en persa (por ejemplo, ajustes de Whisper medium, modelos de terceros o sistemas comerciales), por lo que no se pueden tabular cifras de esos competidores.
@@ -104,7 +104,7 @@ La informacion proporcionada no incluye comparaciones con alternativas especific
 - Audio saturado no recuperable: el 22,10 % del corpus llega al techo digital y esa informacion se ha perdido; la normalizacion aplicada no la restaura.
 - Entorno de entrenamiento no reproducible: no se capturo un `pip freeze` antes de liberar la maquina; el log establece transformers 5.x, pero no hay detalle mas fino.
 - Idiomas: el modelo esta ajustado exclusivamente para persa. El token de idioma debe fijarse a `persian`; usarlo con otros idiomas no esta soportado ni evaluado.
-- Confusion de identificadores: la ficha de HuggingFace corresponde a `cyberali32112/neyshekar-whisper-large-v3-lora`, mientras que el ejemplo de codigo de la model card referencia `hosseinzr/neyshekar-whisper-large-v3-lora`. Conviene verificar cual es el repositorio canonico antes de integrarlo en produccion.
+- Confusion de identificadores: la ficha de Hugging Face corresponde a `cyberali32112/neyshekar-whisper-large-v3-lora`, mientras que el ejemplo de codigo de la model card referencia `hosseinzr/neyshekar-whisper-large-v3-lora`. Conviene verificar cual es el repositorio canonico antes de integrarlo en produccion.
 - Licencia: Apache 2.0 permite uso comercial, pero al derivar de Whisper large-v3 conviene revisar tambien las condiciones del modelo base y del dataset Neyshekar.
 - Metricas no verificadas: los valores de WER y CER estan marcados como `verified: false` en la model-index; no hay evaluacion de terceros.
 - Riesgo de alucinacion: no se documenta de forma especifica. En ASR, el fenomeno equivalente son sustituciones o repeticiones en audio ruidoso o fuera de dominio, no evaluadas en la informacion disponible.
@@ -112,7 +112,7 @@ La informacion proporcionada no incluye comparaciones con alternativas especific
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cyberali32112/neyshekar-whisper-large-v3-lora
+- Modelo en Hugging Face: https://huggingface.co/cyberali32112/neyshekar-whisper-large-v3-lora
 - Modelo base: https://huggingface.co/openai/whisper-large-v3
 - Dataset de entrenamiento: https://huggingface.co/datasets/shekar-ai/neyshekar-v4-persian-asr-fa
 - Repositorio con codigo, documentos de analisis y demo: https://github.com/hosseinzzare/neyshekar_asr

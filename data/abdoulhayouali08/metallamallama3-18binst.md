@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `abdoulhayouali08/metallamaLlama3.18BInst` es una publicación en HuggingFace que, por su nombre y licencia, parece ser una variante o adaptación de Llama 3.1 8B Instruct, el modelo de lenguaje de Meta con licencia abierta para uso comercial e investigación. Sin embargo, la model card está vacía y no se dispone de información técnica verificada sobre arquitectura, entrenamiento o capacidades específicas de esta versión concreta.
+El modelo `abdoulhayouali08/metallamaLlama3.18BInst` es una publicación en Hugging Face que, por su nombre y licencia, parece ser una variante o adaptación de Llama 3.1 8B Instruct, el modelo de lenguaje de Meta con licencia abierta para uso comercial e investigación. Sin embargo, la model card está vacía y no se dispone de información técnica verificada sobre arquitectura, entrenamiento o capacidades específicas de esta versión concreta.
 
-La relevancia del modelo radica en la base sobre la que se construye: Llama 3.1 8B es un transformer denso de 8 mil millones de parámetros con soporte multilingüe y una ventana de contexto de 128 mil tokens, diseñado para tareas de asistencia conversacional y razonamiento. No obstante, al carecer de documentación oficial en la ficha de HuggingFace, no es posible confirmar si esta publicación introduce modificaciones respecto al original.
+La relevancia del modelo radica en la base sobre la que se construye: Llama 3.1 8B es un transformer denso de 8 mil millones de parámetros con soporte multilingüe y una ventana de contexto de 128 mil tokens, diseñado para tareas de asistencia conversacional y razonamiento. No obstante, al carecer de documentación oficial en la ficha de Hugging Face, no es posible confirmar si esta publicación introduce modificaciones respecto al original.
 
 En resumen, esta ficha documenta la falta de información disponible, advirtiendo a los desarrolladores de que cualquier uso del modelo debe basarse en la documentación de Llama 3.1 8B Instruct de Meta, y no en datos específicos de esta publicación.
 

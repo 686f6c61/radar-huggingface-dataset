@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ziwqerd/lora` es un repositorio publicado en HuggingFace por el usuario `ziwqerd` bajo licencia Apache 2.0. Por el nombre y el tamano del repositorio (aproximadamente 0,1 GB), todo apunta a que se trata de un adaptador LoRA (Low-Rank Adaptation) y no de un modelo base completo, aunque la model card no lo confirma de forma explicita ni indica sobre que modelo base se ha entrenado.
+`ziwqerd/lora` es un repositorio publicado en Hugging Face por el usuario `ziwqerd` bajo licencia Apache 2.0. Por el nombre y el tamano del repositorio (aproximadamente 0,1 GB), todo apunta a que se trata de un adaptador LoRA (Low-Rank Adaptation) y no de un modelo base completo, aunque la model card no lo confirma de forma explicita ni indica sobre que modelo base se ha entrenado.
 
 La informacion publicada es minima: la model card se limita a la declaracion de licencia, sin descripcion, sin datos de entrenamiento, sin especificaciones tecnicas y sin resultados de evaluacion. El repositorio no registra descargas ni likes en el momento de la consulta, y no tiene pipeline declarado ni idiomas especificados.
 
@@ -39,7 +39,7 @@ El unico dato objetivo es el tamano del repositorio, en torno a 0,1 GB, coherent
 ## Casos de uso
 
 - Evaluacion experimental de adaptadores: el repositorio puede descargarse y probarse sobre un modelo base compatible para comprobar si el adaptador aporta mejoras en alguna tarea concreta; requiere identificar previamente el modelo base.
-- Investigacion sobre LoRA: util como ejemplo de publicacion de adaptadores en HuggingFace, aunque carece de documentacion sobre hiperparametros y datos.
+- Investigacion sobre LoRA: util como ejemplo de publicacion de adaptadores en Hugging Face, aunque carece de documentacion sobre hiperparametros y datos.
 - Pruebas de integracion con librerias de PEFT: puede cargarse con `peft` o `transformers` si se identifica la arquitectura del adaptador y el modelo base.
 - Fine-tuning posterior: si el adaptador es compatible, podria servir como punto de partida para un ajuste adicional, siempre que se documente el modelo base.
 - Benchmarking interno: comparar el comportamiento del adaptador frente al modelo base en tareas propias, midiendo si el ajuste aporta valor.
@@ -74,5 +74,5 @@ No disponible. No se han identificado modelos comparables en la informacion prop
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ziwqerd/lora
+- Repositorio en Hugging Face: https://huggingface.co/ziwqerd/lora
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion disponible.

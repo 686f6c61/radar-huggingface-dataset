@@ -84,7 +84,7 @@ La comparación más relevante es con el repositorio original de IBM: misma lice
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mashbox-labs/granite-speech-4.1-2b-TPU
+- Repositorio Hugging Face: https://huggingface.co/mashbox-labs/granite-speech-4.1-2b-TPU
 - Modelo original de IBM: https://huggingface.co/ibm-granite/granite-speech-4.1-2b/tree/de575db64086f84fdc79da4932d1076e965bc546
 - Lector BSHJ (código fuente): https://github.com/mashbox-labs/mashbox/blob/v0.1.10/src/mashbox/bshj.py
 - Repositorio GitHub de mashbox: https://github.com/mashbox-labs/mashbox

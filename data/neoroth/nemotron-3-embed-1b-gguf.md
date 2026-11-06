@@ -69,7 +69,7 @@ No se dispone de datos comparativos directos en la informacion proporcionada. Co
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/NeoRoth/nemotron-3-embed-1b-gguf
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/NeoRoth/nemotron-3-embed-1b-gguf
 - Modelo original de NVIDIA: https://huggingface.co/nvidia/Nemotron-3-Embed-1B-BF16
 - Pagina del modelo en NVIDIA NIM: https://build.nvidia.com/nvidia/nemotron-3-embed-1b/modelcard
 - Documentacion de la API de NVIDIA: https://docs.api.nvidia.com/nim/reference/nvidia-nemotron-3-embed-1b

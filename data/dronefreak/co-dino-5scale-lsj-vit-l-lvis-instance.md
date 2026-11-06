@@ -81,8 +81,8 @@ No se han publicado en la informacion disponible resultados de este checkpoint e
 
 | Modelo | Arquitectura | Parametros | Categorias | Box AP (LVIS v1 val) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este checkpoint (espejo de `dronefreak`) | Co-DINO, ViT-L EVA-02, 5 escalas, LSJ | 355,3 M | 1203 (LVIS v1) | 67,3 (reportado) | desconocida; preentrenamiento Objects365 research-only | HuggingFace, espejo no oficial |
-| `zongzhuofan/co-detr-vit-large-lvis-instance` | mismo checkpoint publicado por los autores originales | 355,3 M | 1203 (LVIS v1) | 67,3 (reportado) | no disponible | HuggingFace, repositorio oficial de los autores; sin fichero de configuracion |
+| Este checkpoint (espejo de `dronefreak`) | Co-DINO, ViT-L EVA-02, 5 escalas, LSJ | 355,3 M | 1203 (LVIS v1) | 67,3 (reportado) | desconocida; preentrenamiento Objects365 research-only | Hugging Face, espejo no oficial |
+| `zongzhuofan/co-detr-vit-large-lvis-instance` | mismo checkpoint publicado por los autores originales | 355,3 M | 1203 (LVIS v1) | 67,3 (reportado) | no disponible | Hugging Face, repositorio oficial de los autores; sin fichero de configuracion |
 | Otras variantes de Co-DETR (por ejemplo con backbone Swin-L) | Co-DETR | no disponible | 1203 (LVIS v1) | no disponible | no disponible | repositorio oficial Co-DETR |
 | Detectores DETR/DINO de referencia sobre LVIS | DETR / DINO | no disponible | 1203 (LVIS v1) | no disponible | no disponible | no disponible |
 
@@ -104,7 +104,7 @@ La unica comparacion con datos concretos disponibles en la informacion proporcio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dronefreak/co-dino-5scale-lsj-vit-l-lvis-instance
+- Modelo en Hugging Face: https://huggingface.co/dronefreak/co-dino-5scale-lsj-vit-l-lvis-instance
 - Checkpoint original de los autores: https://huggingface.co/zongzhuofan/co-detr-vit-large-lvis-instance
 - Fichero de configuracion incluido en el espejo: https://huggingface.co/dronefreak/co-dino-5scale-lsj-vit-l-lvis-instance/blob/main/co_dino_5scale_lsj_vit_large_lvis_instance.py
 - Paper de Co-DETR (ICCV 2023): https://arxiv.org/abs/2211.12860

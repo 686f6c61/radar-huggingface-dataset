@@ -18,7 +18,7 @@ Es relevante para quien quiera servir un MoE multimodal con 262.144 tokens de co
 | Longitud de contexto | 262.144 tokens entrenados; servido a 200.000 tokens en la configuración de ejemplo |
 | Tipos de cuantizacion | Expertos enrutados a 4 bits con codebook no uniforme de 16 niveles (escala E4M3 por cada 64 pesos); tronco int8 W8A8; matrices de mezcla de hyper-connection en E4M3; 10 expertos protegidos y torre de visión en bf16; caché KV en fp8 |
 | Idiomas soportados | no disponible |
-| Licencia | qwen-community-1.0 (etiquetada como `license: other` en HuggingFace), heredada del modelo base |
+| Licencia | qwen-community-1.0 (etiquetada como `license: other` en Hugging Face), heredada del modelo base |
 | Formato de pesos | Contenedor propietario `.rad` para el motor radiance; no se distribuyen safetensors, GGUF ni otros formatos |
 
 ## Arquitectura y entrenamiento
@@ -76,8 +76,8 @@ La fila de referencia corresponde a una segunda implementación en bf16 del mism
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3.8-next-flash-fp8-iq4r-moe (esta ficha) | no disponible | 262.144 entrenados / 200.000 servidos | `.rad` (radiance, ROCm) | qwen-community-1.0 | HuggingFace, 0 descargas, 0 likes |
-| Qwen/Qwen3.8-Flash-Next (modelo base) | no disponible | 262.144 según el autor de la cuantización | no disponible | qwen-community-1.0 | HuggingFace |
+| qwen3.8-next-flash-fp8-iq4r-moe (esta ficha) | no disponible | 262.144 entrenados / 200.000 servidos | `.rad` (radiance, ROCm) | qwen-community-1.0 | Hugging Face, 0 descargas, 0 likes |
+| Qwen/Qwen3.8-Flash-Next (modelo base) | no disponible | 262.144 según el autor de la cuantización | no disponible | qwen-community-1.0 | Hugging Face |
 | Segunda implementación bf16 del mismo modelo | no disponible | no disponible | bf16 | no disponible | citada solo como referencia de KL |
 
 No se dispone de información sobre otras cuantizaciones comparables (GGUF, AWQ, GPTQ estándar) del mismo modelo base en el material proporcionado, ni de modelos de la misma categoría con los que contrastar parámetros o rendimiento. La comparativa queda limitada al contraste con el checkpoint bf16 de origen.
@@ -97,7 +97,7 @@ No se dispone de información sobre otras cuantizaciones comparables (GGUF, AWQ,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StillDeadcode/qwen3.8-next-flash-fp8-iq4r-moe
+- Modelo en Hugging Face: https://huggingface.co/StillDeadcode/qwen3.8-next-flash-fp8-iq4r-moe
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Licencia (referenciada en la model card como `LICENSE` dentro del repositorio): no disponible como enlace directo en la información proporcionada
 - Motor de inferencia radiance: no disponible como enlace en la información proporcionada

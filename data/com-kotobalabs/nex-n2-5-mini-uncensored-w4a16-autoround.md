@@ -99,7 +99,7 @@ No se dispone de comparativas con modelos de otras familias (Llama, Mistral, Dee
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/com-kotobalabs/Nex-N2.5-mini-Uncensored-W4A16-AutoRound
+- Modelo en Hugging Face: https://huggingface.co/com-kotobalabs/Nex-N2.5-mini-Uncensored-W4A16-AutoRound
 - Modelo base: https://huggingface.co/orcarouter/Nex-N2.5-mini-Uncensored
 - Checkpoint W4A16 stock con la misma receta: https://huggingface.co/quant-mind/Nex-N2.5-mini-W4A16-AutoRound
 - Modelo original: https://huggingface.co/nex-agi/Nex-N2.5-mini

@@ -19,7 +19,7 @@ Su relevancia es doble. Por un lado, demuestra que un transformer de deteccion d
 | Tipos de cuantizacion | bf16 en dispositivo; no se publican variantes GGUF, INT8, FP8 ni AWQ |
 | Idiomas soportados | no disponible; las 91 clases COCO se devuelven etiquetadas en ingles |
 | Licencia | Apache-2.0 (pesos y codigo de port y serving) |
-| Formato de pesos | Pesos originales de Roboflow/rf-detr-base descargados a la cache de HuggingFace (no incluidos en la imagen); codigo de servicio en `code/` |
+| Formato de pesos | Pesos originales de Roboflow/rf-detr-base descargados a la cache de Hugging Face (no incluidos en la imagen); codigo de servicio en `code/` |
 | Resolucion de entrada | 560x560 fija, con reescalado que aplasta la relacion de aspecto |
 | Numero de clases | 91 (COCO) |
 | Tamano del repositorio | 5,9 GB |
@@ -70,7 +70,7 @@ No se han publicado en la informacion disponible resultados de mAP sobre COCO ni
 ## Requisitos de hardware
 
 - Acelerador obligatorio: una Tenstorrent Blackhole p150a. El port esta validado unicamente en una p150a y con el mesh `P150`; no se documenta soporte para multiples tarjetas ni para otras generaciones de hardware Tenstorrent.
-- No se publica la VRAM ni la memoria de dispositivo necesaria; el repositorio ocupa 5,9 GB, pero los pesos se descargan aparte desde Roboflow/rf-detr-base a la cache de HuggingFace.
+- No se publica la VRAM ni la memoria de dispositivo necesaria; el repositorio ocupa 5,9 GB, pero los pesos se descargan aparte desde Roboflow/rf-detr-base a la cache de Hugging Face.
 - No es compatible con GPU NVIDIA, AMD ni con ejecucion en CPU a traves de este repositorio: la ruta de inferencia es tt-nn sobre tt-metal.
 - Pila de software: tt-metal `v0.78.0-dev20260820` (main `8b98410e730`) y tt-model-manager 0.1.0 con manifest schema 5.1, segun la validacion del autor.
 - Despliegue mediante `tt-model pull changh95/rf-detr-p150 --with-weights` y `tt-model serve changh95/rf-detr-p150`, o con `tt serve changh95/rf-detr-p150`; el servicio escucha en el puerto 20000 o en el siguiente puerto libre.
@@ -81,8 +81,8 @@ No se han publicado en la informacion disponible resultados de mAP sobre COCO ni
 
 | Modelo | Tipo | Parametros | Resolucion | Licencia | Hardware | Disponibilidad |
 |---|---|---|---|---|---|---|
-| changh95/rf-detr-p150 | Port de RF-DETR-base a tt-nn | no disponible | 560x560 fija | Apache-2.0 | 1x Tenstorrent Blackhole p150a | HuggingFace |
-| Roboflow/rf-detr-base | Modelo original en PyTorch del que deriva este port | no disponible | no detallada en la informacion disponible | Apache-2.0 | GPU CUDA o CPU (no detallado) | HuggingFace y GitHub de Roboflow |
+| changh95/rf-detr-p150 | Port de RF-DETR-base a tt-nn | no disponible | 560x560 fija | Apache-2.0 | 1x Tenstorrent Blackhole p150a | Hugging Face |
+| Roboflow/rf-detr-base | Modelo original en PyTorch del que deriva este port | no disponible | no detallada en la informacion disponible | Apache-2.0 | GPU CUDA o CPU (no detallado) | Hugging Face y GitHub de Roboflow |
 | Otros detectores de la familia DETR (DETR, RT-DETR) o de la familia YOLO | no disponibles en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparacion relevante es entre el modelo original y este port: comparten pesos y licencia, y difieren en el backend de ejecucion (tt-nn sobre Blackhole frente a PyTorch sobre CUDA) y en el formato de servicio (API HTTP con `/predict` frente a uso como libreria). No se dispone de datos de rendimiento del modelo original en la informacion proporcionada, por lo que no es posible cuantificar la perdida o ganancia frente a el mas alla del IoU del 98,67% y del PCC del backbone reportados.
@@ -103,7 +103,7 @@ La comparacion relevante es entre el modelo original y este port: comparten peso
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/changh95/rf-detr-p150
+- Modelo en Hugging Face: https://huggingface.co/changh95/rf-detr-p150
 - Modelo base (pesos): https://huggingface.co/Roboflow/rf-detr-base
 - Articulo de referencia: https://arxiv.org/abs/2511.09554
 - Codigo original de RF-DETR: https://github.com/roboflow/rf-detr

@@ -70,7 +70,7 @@ No se dispone de informacion suficiente para realizar una comparativa con modelo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/inferencerlabs/Ornith-1.5-397B-MLX-Q9
+- Repositorio Hugging Face: https://huggingface.co/inferencerlabs/Ornith-1.5-397B-MLX-Q9
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-397B
 - Coleccion de Ornith AI: https://huggingface.co/collections/ornith-ai/ornith-15
 - Pagina oficial de Ornith AI: https://ornith.ai/ornith_1_5.html

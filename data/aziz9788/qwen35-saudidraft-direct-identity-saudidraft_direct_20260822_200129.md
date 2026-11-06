@@ -25,7 +25,7 @@ No se dispone de información sobre el dataset de entrenamiento, la longitud de 
 
 El modelo es un fine-tuning completo de Qwen3.5-4B, donde se aplicó una LoRA (r=32, épocas=3, 5% de datos) seguida de un SFT de identidad. La fusión de los pesos del adaptador LoRA con el modelo base se realizó para obtener un modelo standalone. El entrenamiento se hizo con Transformers y PEFT en bf16, sin usar la librería Unsloth para el entrenamiento, aunque el base sí proviene de Unsloth. La receta de identidad se describe como "replay-r32-e3-5pct" y se desactivó el modo de razonamiento ("thinking off").
 
-No se detalla el dataset de entrenamiento ni el número de tokens. El pipeline declarado en HuggingFace es `image-text-to-text`, lo que sugiere que el modelo podría tener capacidades multimodales, aunque el base Qwen3.5-4B es principalmente de texto. No se confirma si esta versión específica ha sido entrenada para visión.
+No se detalla el dataset de entrenamiento ni el número de tokens. El pipeline declarado en Hugging Face es `image-text-to-text`, lo que sugiere que el modelo podría tener capacidades multimodales, aunque el base Qwen3.5-4B es principalmente de texto. No se confirma si esta versión específica ha sido entrenada para visión.
 
 ## Capacidades
 
@@ -74,8 +74,8 @@ No se dispone de datos de rendimiento para comparar. El modelo se basa en Qwen3.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/aziz9788/qwen35-saudidraft-direct-identity-saudidraft_direct_20260822_200129)
-- [Base model en HuggingFace](https://huggingface.co/unsloth/Qwen3.5-4B) (enlace inferido del base_model)
+- [Modelo en Hugging Face](https://huggingface.co/aziz9788/qwen35-saudidraft-direct-identity-saudidraft_direct_20260822_200129)
+- [Base model en Hugging Face](https://huggingface.co/unsloth/Qwen3.5-4B) (enlace inferido del base_model)
 - [Blog oficial de Qwen3.5](https://qwen.ai/blog?id=qwen3.5) (para referencia de la familia Qwen3.5)
 
 No se han encontrado otros enlaces relevantes (papers, repositorios de código, demos) en la búsqueda web.

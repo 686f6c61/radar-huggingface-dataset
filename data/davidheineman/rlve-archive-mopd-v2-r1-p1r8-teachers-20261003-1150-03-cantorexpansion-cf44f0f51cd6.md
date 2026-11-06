@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace contiene un checkpoint archivado publicado por el usuario `davidheineman` bajo el identificador `rlve-archive-mopd-v2-r1-p1r8-teachers-20261003-1150-03-cantorexpansion-cf44f0f51cd6`. Según su propia model card, se trata de la preservación del checkpoint final de una ejecución completada, correspondiente al paso 109 de un entrenamiento distribuido gestionado con Megatron, con un W&B run ID asociado (`03ea0e93`). No es, por tanto, un modelo publicado como producto final, sino un artefacto de investigación conservado para trazabilidad.
+Este repositorio de Hugging Face contiene un checkpoint archivado publicado por el usuario `davidheineman` bajo el identificador `rlve-archive-mopd-v2-r1-p1r8-teachers-20261003-1150-03-cantorexpansion-cf44f0f51cd6`. Según su propia model card, se trata de la preservación del checkpoint final de una ejecución completada, correspondiente al paso 109 de un entrenamiento distribuido gestionado con Megatron, con un W&B run ID asociado (`03ea0e93`). No es, por tanto, un modelo publicado como producto final, sino un artefacto de investigación conservado para trazabilidad.
 
 El tag `qwen2` y el nombre del repositorio indican que el modelo sigue la arquitectura Qwen2, una familia de transformers decoder-only. El peso real medido en los ficheros safetensors es de 1.777.088.000 parámetros, lo que lo sitúa en la gama de los modelos pequeños (aproximadamente 1,8 B), y el tamaño del repositorio (3,6 GB) es coherente con pesos almacenados en bf16 o fp16. No se especifica si se trata de un modelo denso o de una mezcla de expertos.
 
@@ -76,7 +76,7 @@ La tabla siguiente compara el modelo con alternativas de tamano similar. Los dat
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad de pesos |
 |---|---|---|---|---|
-| rlve-archive-mopd-v2-r1-p1r8-teachers-03-CantorExpansion | 1,777 B | no disponible | no disponible | safetensors en HuggingFace |
+| rlve-archive-mopd-v2-r1-p1r8-teachers-03-CantorExpansion | 1,777 B | no disponible | no disponible | safetensors en Hugging Face |
 | Qwen2.5-1.5B | 1,54 B | 32.768 tokens (ampliable) | Apache 2.0 | safetensors, GGUF y variantes cuantizadas |
 | Llama 3.2 1B | 1,24 B | 128.000 tokens | Licencia comunitaria Llama 3.2 | safetensors, GGUF y variantes cuantizadas |
 | SmolLM2-1.7B | 1,7 B | 8.192 tokens | Apache 2.0 | safetensors, GGUF y variantes cuantizadas |
@@ -98,5 +98,5 @@ La diferencia fundamental no esta en el rendimiento, que no se ha medido en el c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidheineman/rlve-archive-mopd-v2-r1-p1r8-teachers-20261003-1150-03-cantorexpansion-cf44f0f51cd6
+- Repositorio en Hugging Face: https://huggingface.co/davidheineman/rlve-archive-mopd-v2-r1-p1r8-teachers-20261003-1150-03-cantorexpansion-cf44f0f51cd6
 - Papers, blogs, repositorios de codigo o demos asociados: no disponible en la informacion proporcionada.

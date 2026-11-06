@@ -87,7 +87,7 @@ No se dispone de información suficiente para comparar rendimiento, contexto o l
 
 ## Enlaces
 
-- Repositorio HuggingFace del artefacto: https://huggingface.co/Schestex/ThinkingCap-Qwen3.8-27B-NInfer
+- Repositorio Hugging Face del artefacto: https://huggingface.co/Schestex/ThinkingCap-Qwen3.8-27B-NInfer
 - Modelo base: https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-27B
 - Runtime y formato de artefacto NInfer: no se proporciona URL en la información disponible
 - Paper, blog o demo oficial: no disponible

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `manyaMP/Sample_model` es un repositorio alojado en HuggingFace que, según su model card, contiene únicamente un fragmento de código Python (`print("Hello world")`) y no presenta ninguna descripción técnica, pesos, configuración o documentación adicional. Fue creado por el usuario `manyaMP` el 17 de agosto de 2026 y actualizado el mismo día, con cero descargas y cero likes, lo que sugiere que se trata de un repositorio de prueba, un placeholder o un ejemplo trivial sin intención de uso práctico.
+El modelo `manyaMP/Sample_model` es un repositorio alojado en Hugging Face que, según su model card, contiene únicamente un fragmento de código Python (`print("Hello world")`) y no presenta ninguna descripción técnica, pesos, configuración o documentación adicional. Fue creado por el usuario `manyaMP` el 17 de agosto de 2026 y actualizado el mismo día, con cero descargas y cero likes, lo que sugiere que se trata de un repositorio de prueba, un placeholder o un ejemplo trivial sin intención de uso práctico.
 
 La licencia declarada es MIT, lo que permitiría su uso y modificación, pero al no existir artefactos de modelo (arquitectura, parámetros, pesos, tokenizador, etc.), no puede considerarse un modelo de IA funcional. Su relevancia actual es nula para desarrolladores o investigadores, y cualquier intento de utilizarlo en producción sería inviable.
 
@@ -33,7 +33,7 @@ No se dispone de información sobre la arquitectura, el proceso de entrenamiento
 
 No se conocen casos de uso realistas para este repositorio, ya que no contiene un modelo utilizable. Los únicos escenarios posibles son:
 
-- Prueba de integración de HuggingFace: podría usarse para verificar el flujo de creación de repositorios, pero no para inferencia.
+- Prueba de integración de Hugging Face: podría usarse para verificar el flujo de creación de repositorios, pero no para inferencia.
 - Ejemplo educativo trivial: ilustrar cómo se sube un README con licencia, pero sin valor técnico.
 - Almacenamiento de código suelto: el fragmento `print("Hello world")` podría ejecutarse en cualquier entorno Python, pero no requiere un modelo.
 - No es adecuado para atención al cliente, generación de código, análisis de datos, chatbots, traducción, resumen, etc., por ausencia total de funcionalidad.
@@ -64,4 +64,4 @@ No disponible. No existen modelos comparables porque no hay especificaciones té
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/manyaMP/Sample_model)
+- [Repositorio en Hugging Face](https://huggingface.co/manyaMP/Sample_model)

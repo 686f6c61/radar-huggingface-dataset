@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 - VRAM estimada para inferencia: menos de 1 MB en precisión fp32 (el modelo completo ocupa ~266 KB en fp32).
 - GPU recomendada: ninguna; se puede ejecutar en CPU sin problemas.
 - No requiere GPU de consumo ni profesional; cualquier portátil moderno es suficiente.
-- Opciones de despliegue: carga directa con PyTorch mediante `load_transcoder` desde el hub de HuggingFace; no requiere vLLM, llama.cpp, Ollama ni TGI.
+- Opciones de despliegue: carga directa con PyTorch mediante `load_transcoder` desde el hub de Hugging Face; no requiere vLLM, llama.cpp, Ollama ni TGI.
 - Latencia: despreciable; la inferencia sobre un vector de activación de dimensión 32 es del orden de microsegundos en CPU.
 
 ## Comparativa con modelos similares
@@ -78,15 +78,15 @@ La comparativa relevante es interna al conjunto de 18 transcoders: los MLP bilin
 
 - No es un modelo generativo: no puede usarse para generar texto, código ni responder consultas; su única función es reconstruir la salida del MLP de la capa 0 del modelo base.
 - Especificidad extrema: está ajustado a un único modelo base concreto (hash sha256 `cbcf860d5501ad1558bc03f3979ac773146903397011adc503cfd9882030f9c9`); no es transferible a otros modelos sin reentrenamiento.
-- Sin licencia especificada: la licencia no está disponible en la ficha de HuggingFace, lo que genera incertidumbre legal para uso comercial o redistribución.
-- Sin idiomas ni pipeline: al operar sobre vectores de activación, no tiene soporte de idiomas ni pipeline de HuggingFace estándar.
+- Sin licencia especificada: la licencia no está disponible en la ficha de Hugging Face, lo que genera incertidumbre legal para uso comercial o redistribución.
+- Sin idiomas ni pipeline: al operar sobre vectores de activación, no tiene soporte de idiomas ni pipeline de Hugging Face estándar.
 - Riesgo de sobreajuste al split de entrenamiento: aunque el entrenamiento respeta los splits de validación y test del modelo base, la única pasada sobre datos de entrenamiento puede limitar la generalización a distribuciones de activación fuera del rango visto.
 - Tamaño del repositorio: 0,0 GB reportado, lo que sugiere que los pesos pueden no estar incluidos en el repo o que el modelo se carga desde el código fuente (`src.transcoder.source`), lo que requiere clonar el repositorio de código asociado.
 - Sin métricas de interpretabilidad humana: el error de reconstrucción bajo no garantiza que las features extraídas sean semánticamente interpretables para un humano.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/itzPotato/transcoder-bilinear-2layer-seed0-layer0
+- Modelo en Hugging Face: https://huggingface.co/itzPotato/transcoder-bilinear-2layer-seed0-layer0
 - Modelo base: https://huggingface.co/itzPotato/arithmetic-bilinear-2layer-seed0
 - Perfil del autor (Rohan Sashank Babbellapati): https://huggingface.co/itzPotato/models
 - Modelo relacionado (bilinear-attn-addition-carry-2layer): https://huggingface.co/itzPotato/bilinear-attn-addition-carry-2layer

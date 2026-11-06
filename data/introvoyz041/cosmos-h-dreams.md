@@ -83,8 +83,8 @@ Cosmos-H-Dreams se diferencia de su profesor Cosmos-H-Surgical-Simulator en que 
 
 ## Enlaces
 
-- Repositorio HuggingFace (publicacion de terceros): https://huggingface.co/introvoyz041/Cosmos-H-Dreams
-- Repositorio HuggingFace oficial: https://huggingface.co/nvidia/Cosmos-H-Dreams
+- Repositorio Hugging Face (publicacion de terceros): https://huggingface.co/introvoyz041/Cosmos-H-Dreams
+- Repositorio Hugging Face oficial: https://huggingface.co/nvidia/Cosmos-H-Dreams
 - GitHub: https://github.com/isaac-for-healthcare/Cosmos-H-Dreams
 - Paper arXiv (2608.24199): https://arxiv.org/abs/2608.24199
 - Referencia Cosmos (arXiv:2511.00062): https://doi.org/10.48550/arXiv.2511.00062

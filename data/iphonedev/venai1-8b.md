@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VenAI1-8B es un modelo publicado en HuggingFace por el usuario iPhoneDev bajo identificador `iPhoneDev/VenAI1-8B`. En el momento de redactar esta ficha, la model card del repositorio no contiene mas contenido que la declaracion de licencia Apache 2.0: no se documenta arquitectura, datos de entrenamiento, tokenizador, idiomas soportados ni resultados de evaluacion. El repositorio acumula 0 descargas y 1 like, y fue creado y actualizado el 26 de septiembre de 2026, sin cambios posteriores registrados.
+VenAI1-8B es un modelo publicado en Hugging Face por el usuario iPhoneDev bajo identificador `iPhoneDev/VenAI1-8B`. En el momento de redactar esta ficha, la model card del repositorio no contiene mas contenido que la declaracion de licencia Apache 2.0: no se documenta arquitectura, datos de entrenamiento, tokenizador, idiomas soportados ni resultados de evaluacion. El repositorio acumula 0 descargas y 1 like, y fue creado y actualizado el 26 de septiembre de 2026, sin cambios posteriores registrados.
 
 El sufijo "8B" del nombre sugiere, por convencion de nomenclatura, un modelo denso de aproximadamente 8.000 millones de parametros, pero se trata de una inferencia a partir del nombre y no de un dato confirmado por el autor. La etiqueta `region:us` indica unicamente la region de publicacion en el Hub, y la ausencia de `pipeline_tag` implica que la plataforma no ha podido clasificar la tarea del modelo ni verificar que existan pesos funcionales en el repositorio.
 
@@ -96,6 +96,6 @@ La licencia Apache 2.0 declarada por VenAI1-8B es, en terminos teoricos, mas per
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iPhoneDev/VenAI1-8B
-- Perfil del autor en HuggingFace: https://huggingface.co/iPhoneDev
+- Modelo en Hugging Face: https://huggingface.co/iPhoneDev/VenAI1-8B
+- Perfil del autor en Hugging Face: https://huggingface.co/iPhoneDev
 - Paper, blog tecnico, repositorio de codigo o demo: no disponibles en la informacion proporcionada.

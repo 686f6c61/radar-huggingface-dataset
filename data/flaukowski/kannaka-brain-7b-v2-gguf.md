@@ -97,7 +97,7 @@ Advertencias del propio autor: la perplejidad mezcla lineas de voz y prompts de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/flaukowski/kannaka-brain-7b-v2-GGUF
+- Modelo en Hugging Face: https://huggingface.co/flaukowski/kannaka-brain-7b-v2-GGUF
 - Adaptador y notas de entrenamiento: https://huggingface.co/flaukowski/kannaka-brain-7b-v2-lora
 - Version anterior (v1): https://huggingface.co/flaukowski/kannaka-brain-7b-v1-GGUF
 - Adaptador v2 (referencia web alternativa): https://huggingface.co/flaukowski/kannaka-brain-v2-lora

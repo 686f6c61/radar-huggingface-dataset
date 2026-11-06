@@ -82,7 +82,7 @@ La comparación muestra que este modelo es mucho más ligero que su base, con un
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/jeadie/octen-embedding-8b-static-1024)
+- [Hugging Face del modelo](https://huggingface.co/jeadie/octen-embedding-8b-static-1024)
 - [Modelo base Octen-Embedding-8B](https://huggingface.co/Octen/Octen-Embedding-8B)
 - [Repositorio Model2Vec](https://github.com/MinishLab/model2vec)
 - [Documentación de Model2Vec](https://minish.ai/packages/model2vec/introduction)

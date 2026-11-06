@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 |---|---|---|---|---|---|
 | Qwen3-ASR-0.6B (LiteRT) | 0,6 B | no disponible (ventana 5 s en streaming) | 30 idiomas + 22 dialectos chinos | Apache 2.0 | Sí (Android, iOS, macOS, Linux, NPU) |
 | Whisper (variantes small/base) | 0,244 B / 0,074 B | 30 s por ventana | ~99 idiomas | MIT | Parcial (requiere runtime adicional) |
-| Qwen3-ASR-0.6B original (HuggingFace) | 0,6 B | no disponible | 30 idiomas + 22 dialectos chinos | Apache 2.0 | No (requiere Python/PyTorch) |
+| Qwen3-ASR-0.6B original (Hugging Face) | 0,6 B | no disponible | 30 idiomas + 22 dialectos chinos | Apache 2.0 | No (requiere Python/PyTorch) |
 
 La comparación con Whisper se ofrece como referencia de categoría; no se dispone de datos de benchmarks comparativos en la información proporcionada. El modelo original de Qwen y esta versión LiteRT comparten pesos base, pero difieren en el empaquetado y en el runtime de ejecución.
 
@@ -85,7 +85,7 @@ La comparación con Whisper se ofrece como referencia de categoría; no se dispo
 
 ## Enlaces
 
-- [HuggingFace: litert-community/Qwen3-ASR-0.6B](https://huggingface.co/litert-community/Qwen3-ASR-0.6B)
+- [Hugging Face: litert-community/Qwen3-ASR-0.6B](https://huggingface.co/litert-community/Qwen3-ASR-0.6B)
 - [Modelo base: Qwen/Qwen3-ASR-0.6B](https://huggingface.co/Qwen/Qwen3-ASR-0.6B)
 - [LiteRT-LM Omni (GitHub)](https://github.com/google-ai-edge/LiteRT-LM/tree/main/omni)
 - [LiteRT (GitHub)](https://github.com/google-ai-edge/LiteRT)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-NVFP4A16 es una cuantización de 4 bits (W4A16, pesos FP4) del modelo multimodal Qwen3.8-27B de Qwen, publicada por el usuario axteam en HuggingFace. El objetivo del modelo es servir la versión de 27 mil millones de parámetros con un consumo de memoria muy reducido (~26,6 GB en disco) manteniendo la fidelidad al original BF16, algo especialmente relevante para despliegues en vLLM sobre GPUs de una sola tarjeta.
+Qwen3.8-27B-NVFP4A16 es una cuantización de 4 bits (W4A16, pesos FP4) del modelo multimodal Qwen3.8-27B de Qwen, publicada por el usuario axteam en Hugging Face. El objetivo del modelo es servir la versión de 27 mil millones de parámetros con un consumo de memoria muy reducido (~26,6 GB en disco) manteniendo la fidelidad al original BF16, algo especialmente relevante para despliegues en vLLM sobre GPUs de una sola tarjeta.
 
 La cuantización NVFP4A16 utiliza pesos FP4 (E2M1) agrupados en bloques de 16 con escalas FP8 E4M3, mientras que las activaciones se mantienen en BF16. De forma notable, el autor ha conservado en BF16 la torre de visión, el proyector, la cabeza de predicción multi-token (MTP), las normalizaciones, los embeddings, la LM head y toda la ruta de atención lineal (GatedDeltaNet/SSM), al considerar FP4 demasiado grueso para esos pesos.
 

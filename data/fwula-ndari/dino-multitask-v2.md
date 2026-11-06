@@ -72,7 +72,7 @@ No se dispone de modelos directamente comparables en la información proporciona
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dino-multitask-v2 (este) | 24.832 | no aplica | no disponible (sin benchmark) | Apache 2.0 | HuggingFace, 0 descargas |
+| dino-multitask-v2 (este) | 24.832 | no aplica | no disponible (sin benchmark) | Apache 2.0 | Hugging Face, 0 descargas |
 | Familia DINO / DINOv2 (referencia conceptual) | no disponible en la informacion proporcionada | no aplica | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
 | Otros andamiajes experimentales "nano" | no disponible | no aplica | no disponible | no disponible | no disponible |
 
@@ -89,5 +89,5 @@ No se dispone de modelos directamente comparables en la información proporciona
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fwula-ndari/dino-multitask-v2
+- Hugging Face: https://huggingface.co/fwula-ndari/dino-multitask-v2
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

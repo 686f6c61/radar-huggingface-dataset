@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nxp/fastestdet-imx` es un repositorio publicado en HuggingFace por NXP Semiconductors, compañía neerlandesa de semiconductores con sede en Eindhoven especializada en soluciones para automoción, IoT e industria. El identificador del repositorio sugiere que se trata de una conversión o adaptación para los procesadores de aplicación de la familia i.MX de un modelo de detección de objetos en tiempo real denominado FastestDet, aunque la model card publicada no confirma esta interpretación ni aporta ningún detalle tecnico al respecto.
+`nxp/fastestdet-imx` es un repositorio publicado en Hugging Face por NXP Semiconductors, compañía neerlandesa de semiconductores con sede en Eindhoven especializada en soluciones para automoción, IoT e industria. El identificador del repositorio sugiere que se trata de una conversión o adaptación para los procesadores de aplicación de la familia i.MX de un modelo de detección de objetos en tiempo real denominado FastestDet, aunque la model card publicada no confirma esta interpretación ni aporta ningún detalle tecnico al respecto.
 
 La informacion disponible es minima: la model card se limita a declarar la licencia BSD-3-Clause y no incluye descripcion, arquitectura, datos de entrenamiento, benchmarks ni instrucciones de uso. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y no tiene pipeline declarado.
 
@@ -77,7 +77,7 @@ No disponible. Al no conocerse arquitectura, parametros, resolucion de entrada n
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nxp/fastestdet-imx
+- Repositorio en Hugging Face: https://huggingface.co/nxp/fastestdet-imx
 - Sitio oficial de NXP Semiconductors: https://www.nxp.com/
 - Catalogo de productos de NXP: https://www.nxp.com/products:PCPRODCAT
 - NXP Semiconductors en Wikipedia (ingles): https://en.wikipedia.org/wiki/NXP_Semiconductors

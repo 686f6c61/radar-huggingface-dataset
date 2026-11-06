@@ -71,7 +71,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/mradermacher/Mira-v1.23.1-27B-dpo-i1-GGUF
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/mradermacher/Mira-v1.23.1-27B-dpo-i1-GGUF
 - Repositorio estático con cuantizaciones sin imatrix y mmproj: https://huggingface.co/mradermacher/Mira-v1.23.1-27B-dpo-GGUF
 - Modelo base (Lambent/Mira-v1.23.1-27B-dpo): https://huggingface.co/Lambent/Mira-v1.23.1-27B-dpo
 - Página de descarga y vista general: https://hf.tst.eu/model#Mira-v1.23.1-27B-dpo-i1-GGUF

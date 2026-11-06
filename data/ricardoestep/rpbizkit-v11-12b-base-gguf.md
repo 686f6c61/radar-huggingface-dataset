@@ -89,7 +89,7 @@ No disponible. No hay benchmarks ni datos comparativos publicados para este mode
 
 ## Enlaces
 
-- HuggingFace (modelo GGUF): https://huggingface.co/RicardoEstep/RPBizkit-v11-12B-Base-GGUF
+- Hugging Face (modelo GGUF): https://huggingface.co/RicardoEstep/RPBizkit-v11-12B-Base-GGUF
 - Modelo base: https://huggingface.co/RicardoEstep/RPBizkit-v11-12B-Base
 - llama.cpp: https://github.com/ggerganov/llama.cpp
 - kobold.cpp: https://github.com/LostRuins/koboldcpp

@@ -78,7 +78,7 @@ No se dispone en la información proporcionada de datos de parámetros, contexto
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| spformer.scannet.jiahao-sun | 17,6 M | no aplica | mAP 56,47 / mAP@0.5 73,93 / mAP@0.25 82,55 | MIT | HuggingFace (torch-pointcloud) |
+| spformer.scannet.jiahao-sun | 17,6 M | no aplica | mAP 56,47 / mAP@0.5 73,93 / mAP@0.25 82,55 | MIT | Hugging Face (torch-pointcloud) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -96,7 +96,7 @@ No se dispone en la información proporcionada de datos de parámetros, contexto
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/spformer.scannet.jiahao-sun
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/spformer.scannet.jiahao-sun
 - Paper (arXiv): https://arxiv.org/abs/2211.15766
 - Repositorio original SPFormer: https://github.com/sunjiahao1999/SPFormer
 - Librería torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FakeDetect para Windows es un paquete de distribucion publicado en HuggingFace por el usuario x0rium que empaqueta un detector local de texto generado por maquina para ruso e ingles. No se trata de un modelo de lenguaje generativo, sino de un clasificador de deteccion de texto sintetico (AI-text-detection) distribuido como instalador ejecutable para Windows x64, con runtime ONNX Runtime y cuantizacion INT8 como parte del stack declarado en las etiquetas del repositorio.
+FakeDetect para Windows es un paquete de distribucion publicado en Hugging Face por el usuario x0rium que empaqueta un detector local de texto generado por maquina para ruso e ingles. No se trata de un modelo de lenguaje generativo, sino de un clasificador de deteccion de texto sintetico (AI-text-detection) distribuido como instalador ejecutable para Windows x64, con runtime ONNX Runtime y cuantizacion INT8 como parte del stack declarado en las etiquetas del repositorio.
 
 La propuesta del autor es evitar la instalacion manual de dependencias: el instalador incluye un motor compacto en INT8 que funciona en local sin necesidad de instalar Python, Git ni CUDA Toolkit por separado. Requiere Windows de 64 bits (10 version 1809 o superior, recomendado Windows 11) y una tarjeta grafica NVIDIA con driver actualizado. El paquete ocupa 1,94 GiB y el autor indica que se reserven al menos 6 GB libres durante la instalacion.
 
@@ -71,7 +71,7 @@ No se dispone de datos de parametros, contexto, rendimiento ni licencia de este 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| x0rium/fakedetect-windows | no disponible | no disponible | no disponible | no disponible | Instalador Windows x64 en HuggingFace |
+| x0rium/fakedetect-windows | no disponible | no disponible | no disponible | no disponible | Instalador Windows x64 en Hugging Face |
 | GigaCheck | no disponible | no disponible | no disponible | no disponible | Mencionado como descarga opcional desde la interfaz |
 | Otras alternativas | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -90,7 +90,7 @@ No se dispone de datos de parametros, contexto, rendimiento ni licencia de este 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/x0rium/fakedetect-windows
+- Hugging Face: https://huggingface.co/x0rium/fakedetect-windows
 - Instalador FakeDetect 0.2.3 para Windows x64: https://huggingface.co/x0rium/fakedetect-windows/resolve/main/FakeDetect-Setup-0.2.3-x64.exe?download=true
 - SHA-256 del instalador: 9e367c4f6b833752f1fc7915b9cf58127dfd8b666b1571f9063f09cb2c9917a8
 - Contacto indicado por el autor: nz123@rambler.ru

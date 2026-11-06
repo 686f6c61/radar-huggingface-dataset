@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Sumi-7B SFT Torchtitan Instant Beta es un ajuste fino supervisado (SFT) del modelo base tohoku-nlp/sumi-7b, publicado por el usuario shirayukikun en HuggingFace. Se trata de un modelo de aproximadamente 7.767 millones de parámetros (7,77 mil millones) orientado a generación de texto conversacional, con una peculiaridad técnica notable: los tags del repositorio indican que emplea técnicas de difusión discreta (discrete diffusion, uniform diffusion, block diffusion) en lugar de la generación autorregresiva convencional, además de incluir capacidades de mask-generation.
+Sumi-7B SFT Torchtitan Instant Beta es un ajuste fino supervisado (SFT) del modelo base tohoku-nlp/sumi-7b, publicado por el usuario shirayukikun en Hugging Face. Se trata de un modelo de aproximadamente 7.767 millones de parámetros (7,77 mil millones) orientado a generación de texto conversacional, con una peculiaridad técnica notable: los tags del repositorio indican que emplea técnicas de difusión discreta (discrete diffusion, uniform diffusion, block diffusion) en lugar de la generación autorregresiva convencional, además de incluir capacidades de mask-generation.
 
-El modelo se distribuye con pesos en safetensors y requiere código personalizado (`custom_code`), lo que implica que no funciona con un `AutoModelForCausalLM` estándar sin cargar módulos adicionales del repositorio. Está publicado bajo licencia Apache 2.0, aunque el acceso está restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargarlo. El repositorio ocupa 15,5 GB.
+El modelo se distribuye con pesos en safetensors y requiere código personalizado (`custom_code`), lo que implica que no funciona con un `AutoModelForCausalLM` estándar sin cargar módulos adicionales del repositorio. Está publicado bajo licencia Apache 2.0, aunque el acceso está restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargarlo. El repositorio ocupa 15,5 GB.
 
 La relevancia de esta ficha es limitada pero real: se trata de una variante experimental ("instant beta") de un modelo japonés de 7B con un paradigma de generación poco habitual (difusión aplicada a texto), lo que lo convierte en un objeto de interés para investigación en métodos alternativos a la decodificación autorregresiva. No obstante, la ausencia de documentación, benchmarks, idiomas declarados y el hecho de tener 0 descargas y 0 likes en el momento de la consulta obligan a tratar cualquier uso en producción con extrema cautela.
 
@@ -73,7 +73,7 @@ La comparación con alternativas autorregresivas de 7-8B es pertinente por tama�
 ## Limitaciones y advertencias
 
 - Modelo experimental ("instant-beta") con 0 descargas y 0 likes: no hay evidencia de validación por parte de la comunidad.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace antes de la descarga, lo que puede limitar la reproducibilidad.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face antes de la descarga, lo que puede limitar la reproducibilidad.
 - Requiere `custom_code` y `trust_remote_code=True`: implica ejecutar código del autor del repositorio, con el riesgo de seguridad asociado.
 - Idiomas no declarados: no se puede garantizar calidad en castellano ni en ningún otro idioma concreto.
 - Sin benchmarks publicados: imposible estimar calidad en MMLU, HumanEval, GSM8K u otras tareas estándar.
@@ -84,7 +84,7 @@ La comparación con alternativas autorregresivas de 7-8B es pertinente por tama�
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/shirayukikun/sumi-7b-sft-torchtitan-instant-beta
+- Hugging Face: https://huggingface.co/shirayukikun/sumi-7b-sft-torchtitan-instant-beta
 - Modelo base: https://huggingface.co/tohoku-nlp/sumi-7b
 - Paper referenciado en tags (no verificado): arxiv:2606.19005
 - Torchtitan (librería de entrenamiento mencionada en el nombre): no se proporciona enlace en la información disponible.

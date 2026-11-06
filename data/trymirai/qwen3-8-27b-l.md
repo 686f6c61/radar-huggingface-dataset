@@ -86,7 +86,7 @@ La cuantización de Mirai se posiciona como una alternativa optimizada para Appl
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/trymirai/Qwen3.8-27B-L)
+- [Modelo en Hugging Face](https://huggingface.co/trymirai/Qwen3.8-27B-L)
 - [Modelo base Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [Repositorio de Qwen3.8-27B en GitHub](https://github.com/AlibabaCloud-Official/Qwen3.8-27B)
 - [Blog de Mirai sobre cuantización](https://trymirai.com/blog/quantization)

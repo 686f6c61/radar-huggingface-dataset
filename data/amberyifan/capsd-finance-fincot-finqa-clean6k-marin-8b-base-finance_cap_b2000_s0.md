@@ -70,8 +70,8 @@ No se dispone de información suficiente para establecer una comparativa objetiv
 
 ## Enlaces
 
-- [HuggingFace - AmberYifan/capsd-finance-fincot-finqa-clean6k-marin-8b-base-finance_cap_b2000_s0](https://huggingface.co/AmberYifan/capsd-finance-fincot-finqa-clean6k-marin-8b-base-finance_cap_b2000_s0)
+- [Hugging Face - AmberYifan/capsd-finance-fincot-finqa-clean6k-marin-8b-base-finance_cap_b2000_s0](https://huggingface.co/AmberYifan/capsd-finance-fincot-finqa-clean6k-marin-8b-base-finance_cap_b2000_s0)
 - [Modelo base: marin-community/marin-8b-base](https://huggingface.co/marin-community/marin-8b-base)
 - [Variante con cap b1000 (FriendliAI)](https://friendli.ai/models/AmberYifan/capsd-finance-fincot-finqa-clean6k-marin-8b-base-finance_cap_b1000_s0)
-- [Variante dedup (HuggingFace)](https://huggingface.co/AmberYifan/capsd-finance-dedup-marin-8b-base-finance_cap_b2000_s0)
-- [Variante random (HuggingFace)](https://huggingface.co/AmberYifan/capsd-finance-dedup-marin-8b-base-finance_random_b2000_s0)
+- [Variante dedup (Hugging Face)](https://huggingface.co/AmberYifan/capsd-finance-dedup-marin-8b-base-finance_cap_b2000_s0)
+- [Variante random (Hugging Face)](https://huggingface.co/AmberYifan/capsd-finance-dedup-marin-8b-base-finance_random_b2000_s0)

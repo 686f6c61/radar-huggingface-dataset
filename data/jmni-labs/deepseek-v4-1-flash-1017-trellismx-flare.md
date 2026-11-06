@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento ni de especificaciones detalladas de los m
 
 ## Enlaces
 
-- Paquete en HuggingFace: https://huggingface.co/JMNI-Labs/DeepSeek-V4.1-Flash-1017-TrellisMX-FLARE
+- Paquete en Hugging Face: https://huggingface.co/JMNI-Labs/DeepSeek-V4.1-Flash-1017-TrellisMX-FLARE
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Checkpoint TrellisMX K2-Mix: https://huggingface.co/brandonmusic/DeepSeek-V4.1-Flash-1017-TrellisMX-K2-Mix
 - PR del motor Flare: https://github.com/NVIDIA/spark-local-inference/pull/161

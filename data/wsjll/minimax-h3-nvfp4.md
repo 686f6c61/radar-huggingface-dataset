@@ -31,7 +31,7 @@ Tras la refactorizacion, el reparto de parametros del checkpoint pruned es: `mlp
 
 - Generacion de video a partir de imagenes de referencia (`ref2va`): acepta hasta 9 imagenes de referencia, ademas de videos y audio, y genera un video guiado por la identidad de las referencias.
 - Generacion de video a partir de primer y ultimo fotograma (`fl2va`): interpola entre los extremos; permite encadenar clips alimentando el ultimo fotograma del clip anterior.
-- Generacion texto-a-video (pipeline declarado en HuggingFace).
+- Generacion texto-a-video (pipeline declarado en Hugging Face).
 - Integracion con ComfyUI mediante los archivos safetensors empaquetados.
 - Cuantizacion NVFP4 acelerada por hardware en GPUs NVIDIA Blackwell (RTX 50-series, RTX PRO 6000, B200); en Ada, Hopper o anteriores la ruta NVFP4 se emula.
 - No se dispone de informacion sobre tool calling, function calling, soporte de agentes, capacidades multilingues ni modo thinking.
@@ -70,10 +70,10 @@ Resultado: -40% de tamano de archivo, -8,0 GB de VRAM y -12,4% de tiempo de mues
 
 | Modelo | Parametros | Contexto | Formato | VRAM (DiT) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| MiniMax-H3-NVFP4 (este repo) | 20,11 B (pruned) | No disponible | safetensors NVFP4 | 11,9 GB | MiniMax-H3 Community License | HuggingFace (wsjLL) |
-| MiniMax-H3 pruned_int8_convrot (Comfy-Org) | 20,11 B (pruned) | No disponible | safetensors int8_convrot | 20 GB | MiniMax-H3 Community License | HuggingFace (Comfy-Org) |
-| MiniMax-H3 pruned_nvfp4_convrot_int8 (rockerBOO) | 20,11 B (pruned) | No disponible | safetensors mixto NVFP4/FP8/INT8/BF16 | ~20 GB | MiniMax-H3 Community License | HuggingFace (rockerBOO) |
-| MiniMax-H3 bf16 original | 33,12 B | No disponible | safetensors bf16 | No disponible | MiniMax-H3 Community License | HuggingFace (MiniMaxAI) |
+| MiniMax-H3-NVFP4 (este repo) | 20,11 B (pruned) | No disponible | safetensors NVFP4 | 11,9 GB | MiniMax-H3 Community License | Hugging Face (wsjLL) |
+| MiniMax-H3 pruned_int8_convrot (Comfy-Org) | 20,11 B (pruned) | No disponible | safetensors int8_convrot | 20 GB | MiniMax-H3 Community License | Hugging Face (Comfy-Org) |
+| MiniMax-H3 pruned_nvfp4_convrot_int8 (rockerBOO) | 20,11 B (pruned) | No disponible | safetensors mixto NVFP4/FP8/INT8/BF16 | ~20 GB | MiniMax-H3 Community License | Hugging Face (rockerBOO) |
+| MiniMax-H3 bf16 original | 33,12 B | No disponible | safetensors bf16 | No disponible | MiniMax-H3 Community License | Hugging Face (MiniMaxAI) |
 
 No se dispone de datos de benchmarks de calidad para establecer una comparacion de rendimiento entre estas variantes; la unica comparacion publicada es de tamano, VRAM y velocidad de muestreo.
 
@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks de calidad para establecer una comparacion 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/wsjLL/MiniMax-H3-NVFP4
+- Repositorio Hugging Face: https://huggingface.co/wsjLL/MiniMax-H3-NVFP4
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Licencia del modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE
 - Repackaging de Comfy-Org: https://huggingface.co/Comfy-Org/MiniMax-H3

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Nana51/road1` es un repositorio alojado en HuggingFace por el usuario Nana51, con etiquetas que indican formato ONNX y región "us". Sin embargo, la información disponible es extremadamente limitada: la model card está vacía, el tamaño del repositorio es de 0.0 GB y no se han publicado archivos, documentación técnica ni resultados de evaluación. No se puede determinar qué tipo de modelo es, su arquitectura, su propósito o sus capacidades.
+El modelo `Nana51/road1` es un repositorio alojado en Hugging Face por el usuario Nana51, con etiquetas que indican formato ONNX y región "us". Sin embargo, la información disponible es extremadamente limitada: la model card está vacía, el tamaño del repositorio es de 0.0 GB y no se han publicado archivos, documentación técnica ni resultados de evaluación. No se puede determinar qué tipo de modelo es, su arquitectura, su propósito o sus capacidades.
 
 Dado que no existe información sustancial sobre este modelo, cualquier uso en producción o investigación sería prematuro. El repositorio podría ser un placeholder, un experimento personal o un modelo aún no publicado. Se recomienda contactar al autor o esperar a que se complete la documentación antes de considerarlo como una opción viable.
 
@@ -53,4 +53,4 @@ No disponible. No se puede comparar con otras alternativas porque se desconoce l
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/Nana51/road1)
+- [Repositorio en Hugging Face](https://huggingface.co/Nana51/road1)

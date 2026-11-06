@@ -76,7 +76,7 @@ No se dispone de modelos comparables directos en la información proporcionada, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MichiganNLP/hacking-fairness-benchmarks-llama-3.1-8b-z1
+- Modelo en Hugging Face: https://huggingface.co/MichiganNLP/hacking-fairness-benchmarks-llama-3.1-8b-z1
 - Paper (EMNLP 2026): https://lit.eecs.umich.edu/hacking-fairness-benchmarks/
-- Organización MichiganNLP en HuggingFace: https://huggingface.co/MichiganNLP/models
+- Organización MichiganNLP en Hugging Face: https://huggingface.co/MichiganNLP/models
 - Modelo base Llama-3.1-8B: https://huggingface.co/meta-llama/Llama-3.1-8B

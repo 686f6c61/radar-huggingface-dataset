@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mineral-classification-deit | 5.526.346 | Imagen 224x224 | 80,54 % de precision en test (10 clases) | no disponible | HuggingFace |
-| facebook/deit-tiny-patch16-224 (modelo base) | ~5,7 M (con cabeza de 1.000 clases) | Imagen 224x224 | No entrenado para minerales (ImageNet) | no disponible en la informacion proporcionada | HuggingFace |
+| mineral-classification-deit | 5.526.346 | Imagen 224x224 | 80,54 % de precision en test (10 clases) | no disponible | Hugging Face |
+| facebook/deit-tiny-patch16-224 (modelo base) | ~5,7 M (con cabeza de 1.000 clases) | Imagen 224x224 | No entrenado para minerales (ImageNet) | no disponible en la informacion proporcionada | Hugging Face |
 | Clasificadores de rocas basados en ResNet (transfer learning) | no disponible | no disponible | no disponible | no disponible | Publicaciones cientificas |
 
 No se dispone de datos numericos comparables de otros clasificadores de minerales en la informacion proporcionada; los resultados de busqueda encontrados (articulos sobre ResNet para clasificacion de rocas y revisiones de IA en identificacion de minerales) no ofrecen cifras directamente equiparables a las 10 clases de este modelo.
@@ -91,7 +91,7 @@ No se dispone de datos numericos comparables de otros clasificadores de minerale
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DariaZielinska/mineral-classification-deit
+- Modelo en Hugging Face: https://huggingface.co/DariaZielinska/mineral-classification-deit
 - Modelo base: https://huggingface.co/facebook/deit-tiny-patch16-224
 - Conjunto de datos original: https://huggingface.co/datasets/Nech-C/mineralimage5K-98
 - Articulo sobre clasificacion de imagenes de rocas con ResNet (Frontiers): https://www.frontiersin.org/journals/earth-science/articles/10.3389/feart.2022.1079447/full

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`henry202/olmo_cai_dpo_20260916` es un adaptador de ajuste fino publicado en HuggingFace por el usuario henry202. No se trata de un modelo completo, sino de un adaptador PEFT (concretamente LoRA) entrenado mediante DPO (Direct Preference Optimization) sobre `allenai/Olmo-3-7B-Instruct-SFT`, un modelo de la familia Olmo 3 de AllenAI de aproximadamente 7 000 millones de parametros. El repositorio ocupa 0,3 GB, lo que es coherente con pesos de adaptador y no con un modelo de 7B completo en precision completa.
+`henry202/olmo_cai_dpo_20260916` es un adaptador de ajuste fino publicado en Hugging Face por el usuario henry202. No se trata de un modelo completo, sino de un adaptador PEFT (concretamente LoRA) entrenado mediante DPO (Direct Preference Optimization) sobre `allenai/Olmo-3-7B-Instruct-SFT`, un modelo de la familia Olmo 3 de AllenAI de aproximadamente 7 000 millones de parametros. El repositorio ocupa 0,3 GB, lo que es coherente con pesos de adaptador y no con un modelo de 7B completo en precision completa.
 
-La relevancia de esta publicacion es limitada y debe interpretarse con cautela: se trata de un checkpoint de autor individual, sin model card cumplimentada, sin licencia declarada, sin idiomas indicados y con cero descargas y cero likes en el momento de la consulta. La propia model card es la plantilla por defecto de HuggingFace, con todos los campos marcados como "[More Information Needed]", por lo que no aporta informacion sobre datos de entrenamiento, hiperparametros, evaluacion ni uso previsto.
+La relevancia de esta publicacion es limitada y debe interpretarse con cautela: se trata de un checkpoint de autor individual, sin model card cumplimentada, sin licencia declarada, sin idiomas indicados y con cero descargas y cero likes en el momento de la consulta. La propia model card es la plantilla por defecto de Hugging Face, con todos los campos marcados como "[More Information Needed]", por lo que no aporta informacion sobre datos de entrenamiento, hiperparametros, evaluacion ni uso previsto.
 
 El interes tecnico, por tanto, no esta en un resultado medido, sino en el procedimiento: aplicar DPO con TRL y PEFT sobre un modelo instruct ya ajustado, generando un adaptador ligero que puede cargarse junto al modelo base o fusionarse con el. Cualquier evaluacion seria de su comportamiento diferencial respecto al modelo base requeriria reproducir el entrenamiento o ejecutar una evaluacion propia, ya que el autor no publica ninguna.
 
@@ -30,7 +30,7 @@ El interes tecnico, por tanto, no esta en un resultado medido, sino en el proced
 
 La informacion disponible permite afirmar que se trata de un adaptador LoRA entrenado con TRL mediante DPO sobre un modelo instruct de 7B. LoRA inserta matrices de bajo rango en determinadas capas del transformer y congela el resto de los pesos, de modo que el numero de parametros entrenables es una fraccion pequena del total; DPO, por su parte, optimiza el modelo directamente sobre pares de respuestas preferidas y rechazadas, sin necesidad de entrenar un modelo de recompensa separado. Esta combinacion es el flujo estandar de alineacion de bajo coste en la actualidad.
 
-No hay ningun dato publicado sobre el dataset de preferencias utilizado, el numero de pares, la composicion tematica, el numero de tokens vistos, la tasa de aprendizaje, el rango y alpha del adaptador, ni las capas objetivo. Tampoco se documenta si hubo una fase previa de SFT adicional, RLHF, filtrado de seguridad o evaluacion posterior. La unica referencia tecnica citada en las etiquetas es `arxiv:1910.09700`, que corresponde al trabajo de Lacoste et al. sobre calculo de emisiones de carbono en aprendizaje automatico y que aparece en la plantilla por defecto de HuggingFace, no como contribucion metodologica del autor.
+No hay ningun dato publicado sobre el dataset de preferencias utilizado, el numero de pares, la composicion tematica, el numero de tokens vistos, la tasa de aprendizaje, el rango y alpha del adaptador, ni las capas objetivo. Tampoco se documenta si hubo una fase previa de SFT adicional, RLHF, filtrado de seguridad o evaluacion posterior. La unica referencia tecnica citada en las etiquetas es `arxiv:1910.09700`, que corresponde al trabajo de Lacoste et al. sobre calculo de emisiones de carbono en aprendizaje automatico y que aparece en la plantilla por defecto de Hugging Face, no como contribucion metodologica del autor.
 
 ## Capacidades
 
@@ -50,7 +50,7 @@ No hay ningun dato publicado sobre el dataset de preferencias utilizado, el nume
 - Investigacion sobre alineacion de modelos abiertos: permite estudiar como cambia el estilo y la tasa de respuestas rechazadas al aplicar preferencias sobre un modelo ya instruido, siempre que se construya una evaluacion propia.
 - Base para ajustes posteriores: al ser un adaptador ligero de 0,3 GB, puede combinarse con tecnicas de composicion de adaptadores o servir de punto de partida para un segundo ciclo de DPO con datos propios.
 - Prototipado de asistentes conversacionales: cargando el modelo base mas este adaptador en transformers, se puede montar un prototipo de chatbot de 7B en una GPU de gama alta de consumo, con la advertencia de que no hay evaluacion publicada.
-- Docencia y formacion: el repositorio ilustra el flujo completo de PEFT + TRL y las convenciones de nombres de adaptadores en HuggingFace.
+- Docencia y formacion: el repositorio ilustra el flujo completo de PEFT + TRL y las convenciones de nombres de adaptadores en Hugging Face.
 - Comparacion de checkpoints: por su nombre con fecha (`20260916`), parece un checkpoint temporal dentro de una serie de experimentos, lo que lo hace util para comparar variantes intermedias del mismo entrenamiento.
 - No se recomienda su uso en produccion con clientes reales: sin licencia declarada, sin idiomas especificados y sin evaluacion, el riesgo juridico y de calidad es alto.
 
@@ -75,7 +75,7 @@ Las cifras siguientes son estimaciones generales para un modelo denso de 7B con 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | henry202/olmo_cai_dpo_20260916 | Adaptador LoRA sobre base de ~7B | No disponible | Safetensors (PEFT) | No disponible | Publico, 0 descargas |
-| allenai/Olmo-3-7B-Instruct-SFT (modelo base) | ~7B | No disponible en la informacion proporcionada | Safetensors | No disponible en la informacion proporcionada | Publico en HuggingFace |
+| allenai/Olmo-3-7B-Instruct-SFT (modelo base) | ~7B | No disponible en la informacion proporcionada | Safetensors | No disponible en la informacion proporcionada | Publico en Hugging Face |
 | Otros adaptadores DPO de la comunidad sobre Olmo 3 7B | No disponible | No disponible | Safetensors (PEFT) | Variable, no disponible | No se han identificado en la informacion proporcionada |
 
 No se dispone de datos de rendimiento que permitan una comparacion cuantitativa con alternativas de la misma categoria. Cualquier comparacion deberia hacerse contra el propio modelo base mediante una evaluacion propia, dado que el unico cambio conocido es la aplicacion de DPO sobre un adaptador LoRA.
@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento que permitan una comparacion cuantitativa 
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/henry202/olmo_cai_dpo_20260916
+- Pagina del modelo en Hugging Face: https://huggingface.co/henry202/olmo_cai_dpo_20260916
 - Modelo base: https://huggingface.co/allenai/Olmo-3-7B-Instruct-SFT
 - Referencia citada en las etiquetas (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico mencionada en la plantilla: https://mlco2.github.io/impact

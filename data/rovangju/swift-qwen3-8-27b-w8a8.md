@@ -30,7 +30,7 @@ En inferencia, las activaciones no se reescalan a bf16 (a diferencia de W8A16), 
 ## Capacidades
 
 - Generación de texto conversacional en formato chat, con plantilla compatible con el ecosistema Qwen.
-- Procesamiento de imagen y texto de forma conjunta (`image-text-to-text`): el pipeline declarado en HuggingFace es exactamente ese.
+- Procesamiento de imagen y texto de forma conjunta (`image-text-to-text`): el pipeline declarado en Hugging Face es exactamente ese.
 - Razonamiento con modo «thinking»: el script de servicio habilita `--reasoning-parser qwen3`, lo que permite separar el bloque de razonamiento de la respuesta final.
 - Tool calling / function calling: soportado mediante `--enable-auto-tool-choice` y `--tool-call-parser qwen3_coder` en vLLM.
 - Compatibilidad con decodificación especulativa mediante el método DFlash y un modelo draft externo.
@@ -92,10 +92,10 @@ El autor señala que el 0,000 en strict-match de GSM8K es un artefacto del filtr
 
 | Modelo | Parámetros | Contexto | Rendimiento (balanced) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rovangju/Swift-Qwen3.8-27b-W8A8 (este repo) | 27,78 B (INT8 W8A8) | no disponible | 152,8 tok/s de salida; TTFT 647,9 ms; TPOT 14,97 ms | `swift-open-license-1.0` | HuggingFace, vLLM |
-| Freaksterz/Qwen3.8-27B-SmoothQuant-W8A8-INT8 | 27,78 B sobre la misma base | no disponible | 141,8 tok/s de salida; TTFT 794,0 ms; TPOT 16,71 ms | no disponible | HuggingFace, vLLM |
-| ukisai/Swift-Qwen3.8-27b (modelo base) | 27,78 B (bf16) | no disponible | no disponible | `swift-open-license-1.0` | HuggingFace |
-| z-lab/Qwen3.8-27B-DFlash2 | no disponible (modelo draft) | no disponible | se usa como draft con K=5 en la configuración de referencia | no disponible | HuggingFace |
+| rovangju/Swift-Qwen3.8-27b-W8A8 (este repo) | 27,78 B (INT8 W8A8) | no disponible | 152,8 tok/s de salida; TTFT 647,9 ms; TPOT 14,97 ms | `swift-open-license-1.0` | Hugging Face, vLLM |
+| Freaksterz/Qwen3.8-27B-SmoothQuant-W8A8-INT8 | 27,78 B sobre la misma base | no disponible | 141,8 tok/s de salida; TTFT 794,0 ms; TPOT 16,71 ms | no disponible | Hugging Face, vLLM |
+| ukisai/Swift-Qwen3.8-27b (modelo base) | 27,78 B (bf16) | no disponible | no disponible | `swift-open-license-1.0` | Hugging Face |
+| z-lab/Qwen3.8-27B-DFlash2 | no disponible (modelo draft) | no disponible | se usa como draft con K=5 en la configuración de referencia | no disponible | Hugging Face |
 
 No se dispone de comparaciones con alternativas de otros fabricantes (familias Llama, Mistral, Gemma o similares) en la información proporcionada.
 
@@ -115,7 +115,7 @@ No se dispone de comparaciones con alternativas de otros fabricantes (familias L
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rovangju/Swift-Qwen3.8-27b-W8A8
+- Modelo en Hugging Face: https://huggingface.co/rovangju/Swift-Qwen3.8-27b-W8A8
 - Modelo base: https://huggingface.co/ukisai/Swift-Qwen3.8-27b
 - Licencia del modelo base: https://huggingface.co/ukisai/Swift-Qwen3.8-27b/blob/main/LICENSE
 - Checkpoint SmoothQuant usado como referencia: https://huggingface.co/Freaksterz/Qwen3.8-27B-SmoothQuant-W8A8-INT8

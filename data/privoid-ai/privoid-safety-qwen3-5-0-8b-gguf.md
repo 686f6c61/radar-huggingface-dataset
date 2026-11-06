@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Privoid Safety 0.8B GGUF | 772.845.888 | no disponible | GGUF | CC-BY-4.0 | HuggingFace |
+| Privoid Safety 0.8B GGUF | 772.845.888 | no disponible | GGUF | CC-BY-4.0 | Hugging Face |
 | Qwen3Guard | no disponible | no disponible | no disponible | no disponible | mencionado como comparacion en la model card |
 | Granite Guardian | no disponible | no disponible | no disponible | no disponible | mencionado como comparacion en la model card |
 

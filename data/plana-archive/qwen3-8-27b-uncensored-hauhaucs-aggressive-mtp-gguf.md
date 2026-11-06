@@ -124,7 +124,7 @@ No se han encontrado en los resultados de busqueda alternativas documentadas de 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Plana-Archive/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/Plana-Archive/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF
 - Repositorio de origen indicado en la model card (HauhauCS): https://huggingface.co/HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF
 - Comunidad del autor (Discord): https://discord.gg/SZ5vacTXYf
 - Modelo base: Qwen/Qwen3.8-27B (referenciado en las etiquetas del repositorio); no se proporciona URL directa en la informacion disponible.

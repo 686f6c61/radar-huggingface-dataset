@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Jtorres97/mocov3-baseline` es un repositorio de HuggingFace publicado por el usuario Jtorres97 que contiene una implementacion funcional de una arquitectura denominada "Mocov3" orientada a tareas de *matching* (emparejamiento), en una configuracion descrita por el autor como "small". El repositorio no es un modelo entrenado ni un checkpoint listo para produccion: el propio autor indica explicitamente que `model.safetensors` es un checkpoint de inicializacion valido para *smoke tests* y que no se reclama ninguna puntuacion de benchmark. Los metadatos de safetensors declaran 24.832 parametros totales, un orden de magnitud compatible con un artefacto de pruebas minimo y no con un modelo de representacion utilizable.
+`Jtorres97/mocov3-baseline` es un repositorio de Hugging Face publicado por el usuario Jtorres97 que contiene una implementacion funcional de una arquitectura denominada "Mocov3" orientada a tareas de *matching* (emparejamiento), en una configuracion descrita por el autor como "small". El repositorio no es un modelo entrenado ni un checkpoint listo para produccion: el propio autor indica explicitamente que `model.safetensors` es un checkpoint de inicializacion valido para *smoke tests* y que no se reclama ninguna puntuacion de benchmark. Los metadatos de safetensors declaran 24.832 parametros totales, un orden de magnitud compatible con un artefacto de pruebas minimo y no con un modelo de representacion utilizable.
 
 El interes del repositorio es, por tanto, metodologico y de plantilla: incluye `eval.py` como artefacto principal, `config.json` con los ajustes de arquitectura generados y `training_args.json` con la receta de experimento por defecto (optimizador LAMB y scheduler coseno). Esta pensado para verificar que un pipeline de entrenamiento arranca, no para resolver tareas reales.
 
@@ -45,7 +45,7 @@ En cuanto al entrenamiento, no hay datos disponibles. El autor afirma de forma e
 - Capacidades previstas por la implementacion, segun los nombres de los campos de arquitectura: procesamiento de pares de entradas mediante *co-attention* y produccion de una senal de emparejamiento (*matching*). Sin validacion experimental publicada.
 - Soporte de *tool calling* / *function calling*: no disponible. No se menciona en la model card ni en los tags.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible. El campo de idiomas esta vacio en los metadatos de HuggingFace.
+- Capacidades multilingues: no disponible. El campo de idiomas esta vacio en los metadatos de Hugging Face.
 - Capacidades especiales (modo *thinking*, vision, audio): no disponibles.
 - Capacidad real y documentada: servir como punto de partida ejecutable para *smoke tests* de un pipeline de entrenamiento y como plantilla de configuracion reproducible.
 
@@ -88,7 +88,7 @@ No se dispone de modelos comparables dentro de la informacion proporcionada, ya 
 
 | Modelo | Parametros | Tarea declarada | Licencia | Disponibilidad | Relacion con este repositorio |
 |---|---|---|---|---|---|
-| Jtorres97/mocov3-baseline | 24.832 | *matching* (sin especificar) | MIT | HuggingFace, 0 descargas | Objeto de esta ficha; checkpoint de inicializacion, sin entrenar |
+| Jtorres97/mocov3-baseline | 24.832 | *matching* (sin especificar) | MIT | Hugging Face, 0 descargas | Objeto de esta ficha; checkpoint de inicializacion, sin entrenar |
 | facebookresearch/moco-v3 (referencia general) | del orden de decenas de millones (ResNet-50 / ViT-B) | Representacion visual autosupervisada | Uso bajo licencia de Meta / CC BY-NC para partes | GitHub y checkpoints publicos | Coincide solo en el nombre "MoCo v3"; la arquitectura declarada aqui no reproduce el metodo original |
 | DINO / DINOv2 (referencia general) | desde decenas de millones hasta mas de mil millones | Representacion visual autosupervisada | Licencias variadas, algunas no comerciales | Amplia disponibilidad | Alternativa del mismo campo (SSL visual) pero sin relacion con este repositorio |
 | SimCLR / BYOL (referencia general) | del orden de decenas de millones | Representacion visual autosupervisada | Licencias variadas | Repositorios oficiales de investigacion | Marcos conceptuales comparables, no comparables en tamano ni en tarea declarada |
@@ -111,7 +111,7 @@ Los campos de parametros de terceros proceden de conocimiento general del sector
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jtorres97/mocov3-baseline
+- Hugging Face: https://huggingface.co/Jtorres97/mocov3-baseline
 - Enlaces relevantes encontrados en la busqueda web: no disponible. Los resultados devueltos por la busqueda no guardan ninguna relacion con el modelo ni con aprendizaje autosupervisado, por lo que no se incluyen.
 - Referencias generales de contexto (no proceden de la busqueda web ni de la model card, se aportan unicamente para situar el termino "MoCo v3"):
   - Articulo original de MoCo v3, "An Empirical Study of Training Self-Supervised Vision Transformers": https://arxiv.org/abs/2104.02057

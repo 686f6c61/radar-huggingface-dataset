@@ -4,7 +4,7 @@
 
 `EugeneEvstafev/gemma-4-12b-soup-mvp` es una adaptacion experimental del modelo `google/gemma-4-12B-it` de Google DeepMind, publicada por Eugene Evstafev. No se trata de un modelo nuevo entrenado desde cero, sino de un ajuste fino mediante QLoRA sobre el modelo base, con el objetivo declarado de validar una cadena de ingenieria completa: actualizacion de optimizador, recarga del adaptador PEFT, fusion en CPU, cuantizacion a GGUF y generacion local con Ollama. El autor indica explicitamente que no reclama ninguna mejora de calidad ni de seguridad.
 
-El modelo cuenta con 11.907.350.576 parametros (unos 11,9 mil millones) segun los pesos en safetensors, y se distribuye bajo licencia Apache-2.0, la misma del modelo base. El repositorio ocupa 31,5 GB e incluye el adaptador PEFT, los pesos fusionados en formato HuggingFace, un artefacto GGUF cuantizado en Q4_K_M y evidencia de la ejecucion de entrenamiento. La informacion disponible no especifica la longitud de contexto, los idiomas declarados se limitan al ingles y no se han publicado resultados de benchmarks.
+El modelo cuenta con 11.907.350.576 parametros (unos 11,9 mil millones) segun los pesos en safetensors, y se distribuye bajo licencia Apache-2.0, la misma del modelo base. El repositorio ocupa 31,5 GB e incluye el adaptador PEFT, los pesos fusionados en formato Hugging Face, un artefacto GGUF cuantizado en Q4_K_M y evidencia de la ejecucion de entrenamiento. La informacion disponible no especifica la longitud de contexto, los idiomas declarados se limitan al ingles y no se han publicado resultados de benchmarks.
 
 Su relevancia actual es acotada y debe entenderse como la de una plantilla reproducible de pipeline, no como un modelo listo para produccion: el entrenamiento utilizo 3 ejemplos de entrenamiento y 3 de validacion sobre recetas de sopa, con solo 6 actualizaciones de optimizador.
 
@@ -82,8 +82,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Licencia | Formatos | Disponibilidad |
 |---|---|---|---|---|---|
-| EugeneEvstafev/gemma-4-12b-soup-mvp | 11,9 B | no disponible | Apache-2.0 | safetensors, GGUF | HuggingFace, Ollama |
-| google/gemma-4-12B-it (modelo base) | mismo orden (~12 B) | no disponible | Apache-2.0 | safetensors | HuggingFace |
+| EugeneEvstafev/gemma-4-12b-soup-mvp | 11,9 B | no disponible | Apache-2.0 | safetensors, GGUF | Hugging Face, Ollama |
+| google/gemma-4-12B-it (modelo base) | mismo orden (~12 B) | no disponible | Apache-2.0 | safetensors | Hugging Face |
 | Alternativas de ~12 B de otros proveedores | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparacion con alternativas de la misma categoria no puede completarse con la informacion proporcionada: no hay datos de benchmarks, contexto ni rendimiento de este modelo ni del modelo base. Respecto al modelo base, la unica diferencia documentada es la aplicacion de un adaptador LoRA de rango 8 entrenado con 6 actualizaciones sobre 3 ejemplos, ademas de la publicacion de un artefacto GGUF Q4_K_M; el autor no reclama mejora alguna sobre el base.
@@ -104,7 +104,7 @@ La comparacion con alternativas de la misma categoria no puede completarse con l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EugeneEvstafev/gemma-4-12b-soup-mvp
+- Modelo en Hugging Face: https://huggingface.co/EugeneEvstafev/gemma-4-12b-soup-mvp
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Perfil del autor del ajuste y empaquetado: https://www.linkedin.com/in/eugene-evstafev/
 - Referencia de despliegue en Ollama: `ollama run chigwel/gemma-4-12b-soup-mvp`

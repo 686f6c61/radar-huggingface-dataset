@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`swordenamine/dz-app-revenue-ledger` no es un modelo de inteligencia artificial: es una herramienta de linea de comandos escrita en Python, publicada en HuggingFace bajo un repositorio con el tag `region:us`, que implementa un libro de ingresos (ledger) autoalojado para ingresos de suscripciones moviles. Recoge eventos de venta y reembolso, aplica las comisiones de las tiendas (fee), convierte los importes a una divisa de reporte —DZD por defecto— usando tipos de cambio que el usuario introduce manualmente, y genera informes mensuales. Ademas, incluye un subcomando `advise` que imprime una lista de verificacion sobre opciones de cobro de las tiendas.
+`swordenamine/dz-app-revenue-ledger` no es un modelo de inteligencia artificial: es una herramienta de linea de comandos escrita en Python, publicada en Hugging Face bajo un repositorio con el tag `region:us`, que implementa un libro de ingresos (ledger) autoalojado para ingresos de suscripciones moviles. Recoge eventos de venta y reembolso, aplica las comisiones de las tiendas (fee), convierte los importes a una divisa de reporte —DZD por defecto— usando tipos de cambio que el usuario introduce manualmente, y genera informes mensuales. Ademas, incluye un subcomando `advise` que imprime una lista de verificacion sobre opciones de cobro de las tiendas.
 
 El repositorio no contiene pesos, tokenizador, configuracion de transformer ni ningun artefacto de inferencia. El pipeline no esta declarado, la licencia no aparece en los metadatos ni en la model card, y no se especifican idiomas soportados. En el momento de la consulta registra 0 descargas y 0 likes, y la unica documentacion disponible es el README (que remite a `docs/ARCHITECTURE.md`, no incluido en la informacion proporcionada).
 
@@ -89,7 +89,7 @@ No disponible. No se han proporcionado modelos comparables en la informacion, y 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/swordenamine/dz-app-revenue-ledger
+- Repositorio en Hugging Face: https://huggingface.co/swordenamine/dz-app-revenue-ledger
 - Documentacion de arquitectura citada por el autor: `docs/ARCHITECTURE.md` (ruta dentro del repositorio, contenido no disponible en la informacion proporcionada)
 - Ejemplos citados en el README: `samples/sample_report.csv`, `samples/play_mapping.json`, `.env.example` (rutas internas del repositorio)
 - No se han encontrado en la informacion proporcionada papers, blogs, demos ni repositorios adicionales.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`swordenamine/merge_env` no es un modelo de IA. El repositorio de HuggingFace no declara pipeline, licencia, idiomas ni pesos, y su model card describe una utilidad de linea de comandos que consolida ficheros `.env` repartidos entre proyectos. El autor la presenta como una herramienta que recorre subcarpetas (hasta tres niveles de profundidad) en busca de ficheros de variables de entorno, hace una copia de seguridad con marca de tiempo del `/home/kali/.env` existente y va anadiendo pares `KEY=VALUE` al fichero maestro con un comentario que indica el proyecto de origen, omitiendo las claves que ya existen.
+`swordenamine/merge_env` no es un modelo de IA. El repositorio de Hugging Face no declara pipeline, licencia, idiomas ni pesos, y su model card describe una utilidad de linea de comandos que consolida ficheros `.env` repartidos entre proyectos. El autor la presenta como una herramienta que recorre subcarpetas (hasta tres niveles de profundidad) en busca de ficheros de variables de entorno, hace una copia de seguridad con marca de tiempo del `/home/kali/.env` existente y va anadiendo pares `KEY=VALUE` al fichero maestro con un comentario que indica el proyecto de origen, omitiendo las claves que ya existen.
 
 Por tanto, no hay arquitectura de red neuronal, parametros, ventana de contexto ni proceso de entrenamiento que evaluar. El artefacto es relevante, si acaso, como ejemplo de publicacion de scripts de automatizacion en el Hub, no como modelo desplegable. Cualquier comparacion con LLMs, benchmarks o requisitos de VRAM carece de sentido tecnico en este caso.
 
@@ -84,5 +84,5 @@ No disponible. No existen modelos comparables porque el artefacto no es un model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/swordenamine/merge_env
+- Repositorio en Hugging Face: https://huggingface.co/swordenamine/merge_env
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, al autor ni a la utilidad: los resultados disponibles (hilos de ResetEra sobre un supuesto juego de lucha) son ajenos al repositorio y se descartan.

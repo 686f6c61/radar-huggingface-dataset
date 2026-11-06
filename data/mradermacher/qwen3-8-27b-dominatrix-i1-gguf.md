@@ -21,7 +21,7 @@ La licencia es Apache 2.0, lo que permite uso comercial y modificación, aunque 
 | Licencia | Apache 2.0 |
 | Formato de pesos | GGUF (solo archivo imatrix en este repo; pesos en repo estático) |
 
-¹ El dato de HuggingFace indica 3 391 984 parámetros, pero corresponde a un archivo de configuración o metadatos, no al modelo completo. El nombre y el modelo base confirman 27B.
+¹ El dato de Hugging Face indica 3 391 984 parámetros, pero corresponde a un archivo de configuración o metadatos, no al modelo completo. El nombre y el modelo base confirman 27B.
 
 ## Arquitectura y entrenamiento
 

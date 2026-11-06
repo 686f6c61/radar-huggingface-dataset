@@ -72,7 +72,7 @@ No se proporciona información comparativa en la model card. El modelo original 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kerasformers/qwen3-vl-32b-thinking
+- Modelo en Hugging Face: https://huggingface.co/kerasformers/qwen3-vl-32b-thinking
 - Modelo original: https://huggingface.co/Qwen/Qwen3-VL-32B-Thinking
 - Repositorio GitHub de KerasFormers: https://github.com/IMvision12/KerasFormers
 - Documentación de Qwen3-VL en KerasFormers: https://imvision12.github.io/KerasFormers/qwen3_vl/

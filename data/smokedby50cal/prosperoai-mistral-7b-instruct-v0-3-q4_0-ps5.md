@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la información disponible. La d
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | ProsperoAI-Mistral-7B-Instruct-v0.3-Q4_0-PS5 | 7B | 4.096 tokens en runtime | Apache 2.0 | Solo PS5 mediante ProsperoAI, formato P5LM |
-| Mistral-7B-Instruct-v0.3 (original) | 7B | No disponible en la información | Apache 2.0 | HuggingFace, pesos en safetensors |
+| Mistral-7B-Instruct-v0.3 (original) | 7B | No disponible en la información | Apache 2.0 | Hugging Face, pesos en safetensors |
 | QuantFactory/Mistral-7B-Instruct-v0.3-GGUF (Q4_0) | 7B | No disponible en la información | Apache 2.0 | GGUF, ejecutable con llama.cpp y runners de escritorio |
 
 No se han publicado benchmarks comparativos en la información disponible, por lo que no es posible contrastar el rendimiento de estos modelos.
@@ -77,8 +77,8 @@ No se han publicado benchmarks comparativos en la información disponible, por l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Smokedby50cal/ProsperoAI-Mistral-7B-Instruct-v0.3-Q4_0-PS5
-- Repositorio en HuggingFace de BlackBearReloaded: https://huggingface.co/blackbearreloaded/ProsperoAI-Mistral-7B-Instruct-v0.3-Q4_0-PS5
+- Repositorio en Hugging Face: https://huggingface.co/Smokedby50cal/ProsperoAI-Mistral-7B-Instruct-v0.3-Q4_0-PS5
+- Repositorio en Hugging Face de BlackBearReloaded: https://huggingface.co/blackbearreloaded/ProsperoAI-Mistral-7B-Instruct-v0.3-Q4_0-PS5
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3
 - GGUF de origen: https://huggingface.co/QuantFactory/Mistral-7B-Instruct-v0.3-GGUF
 - Herramientas de modelo de ProsperoAI Alpha 2: https://github.com/blackbearreloaded/ProsperoAI/releases/tag/v0.1.0-alpha.2

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeltaP2S-Gemma7B-P2S-CodeGemma2B-Code-S13-a025 es un checkpoint fusionado (merged checkpoint) publicado por el usuario g-assismoraes en HuggingFace. Segun la propia model card, se trata de un artefacto generado por el paquete de experimentos "family-aware Delta-P2S", con una base de entrenamiento identificada como `./runs/codegemma2b_to_gemma7b_S13_untie_a025/init/p2s`. La nomenclatura del repositorio sugiere una combinacion de pesos de la familia Gemma 7B con CodeGemma 2B mediante la tecnica denotada como Delta-P2S / Pen2Sword, aunque el autor no documenta el procedimiento exacto.
+DeltaP2S-Gemma7B-P2S-CodeGemma2B-Code-S13-a025 es un checkpoint fusionado (merged checkpoint) publicado por el usuario g-assismoraes en Hugging Face. Segun la propia model card, se trata de un artefacto generado por el paquete de experimentos "family-aware Delta-P2S", con una base de entrenamiento identificada como `./runs/codegemma2b_to_gemma7b_S13_untie_a025/init/p2s`. La nomenclatura del repositorio sugiere una combinacion de pesos de la familia Gemma 7B con CodeGemma 2B mediante la tecnica denotada como Delta-P2S / Pen2Sword, aunque el autor no documenta el procedimiento exacto.
 
 El repositorio contiene 9.324.112.896 parametros segun los metadatos de safetensors (aproximadamente 9,32 mil millones), lo que es coherente con la fusion de un modelo de ~7B y otro de ~2B. El tamano del repositorio es de 18,7 GB. Se publica con la libreria transformers, pipeline de text-generation y etiquetas que indican compatibilidad con text-generation-inference y endpoints, pero no incluye informacion sobre licencia, idiomas soportados ni resultados de evaluacion.
 
@@ -75,7 +75,7 @@ Las cifras de los modelos de referencia corresponden a datos publicados por sus 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| DeltaP2S-Gemma7B-P2S-CodeGemma2B-Code-S13-a025 | 9,32 B | no disponible | no disponible | HuggingFace, safetensors |
+| DeltaP2S-Gemma7B-P2S-CodeGemma2B-Code-S13-a025 | 9,32 B | no disponible | no disponible | Hugging Face, safetensors |
 | Gemma 7B (Google) | ~8,5 B | 8192 tokens | Gemma Terms of Use | Pesos abiertos |
 | CodeGemma 7B (Google) | ~8,5 B | 8192 tokens | Gemma Terms of Use | Pesos abiertos |
 | CodeGemma 2B (Google) | ~2,5 B | 8192 tokens | Gemma Terms of Use | Pesos abiertos |
@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento comparado, por lo que no es posible establ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/g-assismoraes/DeltaP2S-Gemma7B-P2S-CodeGemma2B-Code-S13-a025
+- Hugging Face: https://huggingface.co/g-assismoraes/DeltaP2S-Gemma7B-P2S-CodeGemma2B-Code-S13-a025
 - Paper, blog o repositorio asociado: no disponible
 - Demo o space: no disponible
 - La busqueda web realizada no ha devuelto resultados relevantes sobre este modelo; unicamente paginas genericas de buscadores sin relacion con el repositorio.

@@ -47,7 +47,7 @@ El entrenamiento se realizó mediante destilación: `gemma3:27b` actuó como pro
 
 ## Benchmarks y rendimiento
 
-Los resultados declarados por el autor en el modelo-index de HuggingFace son los siguientes:
+Los resultados declarados por el autor en el modelo-index de Hugging Face son los siguientes:
 
 | Modelo | Parámetros | Precisión (clip) |
 |---|---|---|
@@ -96,7 +96,7 @@ La principal ventaja de `referee-hands-s` es su tamaño extremadamente reducido 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/itspublu/referee-hands-s
+- Hugging Face: https://huggingface.co/itspublu/referee-hands-s
 - Repositorio del benchmark y de las evaluaciones: https://github.com/publu/referee-lab
 - Conjunto de datos del benchmark (referee-lab/hands-visible): disponible en Prime Intellect Environments Hub, ejecutable con `prime eval run referee-lab/hands-visible`
 - Datos de entrenamiento: [lerobot/droid_1.0.1](https://huggingface.co/datasets/lerobot/droid_1.0.1) y [imageomics/KABR](https://huggingface.co/datasets/imageomics/KABR)

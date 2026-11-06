@@ -57,6 +57,6 @@ No se dispone de informacion para comparar con otros modelos de la misma categor
 - Caveats para produccion: sin benchmarks ni documentacion tecnica, no se recomienda su uso en sistemas criticos sin una validacion exhaustiva.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/longtermrisk/Qwen3-8B-target-only-no-hallucination-sft-seed4
+- Repositorio Hugging Face: https://huggingface.co/longtermrisk/Qwen3-8B-target-only-no-hallucination-sft-seed4
 - Modelo base: https://huggingface.co/unsloth/Qwen3-8B (referencia)
 - Libreria Unsloth: https://github.com/unslothai/unsloth (mencionada en la model card)

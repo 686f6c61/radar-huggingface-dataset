@@ -83,5 +83,5 @@ No disponible. No se identifican en la informacion proporcionada los modelos de 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/beshkenadze/dictator-asr-models
+- Repositorio en Hugging Face: https://huggingface.co/beshkenadze/dictator-asr-models
 - No se han encontrado en la busqueda web otros enlaces relevantes (papers, blogs, repositorios de codigo o demos) asociados a este repositorio.

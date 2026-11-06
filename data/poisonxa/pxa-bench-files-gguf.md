@@ -96,11 +96,11 @@ Existe ademas `poisonxa/PXA-Fusion4-35B-GGUF`, resultado del renombrado del repo
 - Coherencia de tamanos: el repositorio ocupa 116,6 GB, muy por encima de la suma de los ficheros listados (~73 GB); probablemente por revisiones historicas, pero el autor no lo documenta.
 - Licencia: el repositorio declara Apache 2.0, pero los artefactos derivan de pesos de terceros (por ejemplo la clase Qwen 35B citada); no se aclara en la informacion disponible si esos pesos imponen condiciones adicionales para uso comercial.
 - Riesgo de alucinacion y sesgos: no evaluables, al no existir documentacion ni benchmarks de calidad del modelo subyacente.
-- Los resultados de busqueda web asociados a esta consulta no contenian informacion tecnica relevante sobre el repositorio; todos los datos de esta ficha proceden de la model card y de los metadatos de HuggingFace.
+- Los resultados de busqueda web asociados a esta consulta no contenian informacion tecnica relevante sobre el repositorio; todos los datos de esta ficha proceden de la model card y de los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/poisonxa/PXA-bench-files-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/poisonxa/PXA-bench-files-GGUF
 - Motor PXA: https://github.com/poisonxa16/pxa
 - Recetas de ejecucion: https://github.com/poisonxa16/pxa/blob/main/docs/COOKBOOK.md
 - Lanzador y filas por tarjeta: https://github.com/poisonxa16/pxa/blob/main/docs/LAUNCHER.md

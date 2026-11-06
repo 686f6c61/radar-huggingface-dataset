@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kestrel es un modelo de lenguaje publicado en HuggingFace por el usuario felixreverett bajo el identificador felixreverett/kestrel. Se distribuye exclusivamente en formato GGUF, lo que indica que esta pensado para inferencia local mediante runtimes compatibles con llama.cpp y derivados (Ollama, LM Studio, etc.). El repositorio ocupa 30,8 GB y el recuento de parametros derivado de los metadatos de safetensors es de 3.402.836.480, es decir, aproximadamente 3,4 mil millones de parametros, un tamano propio de la gama media-baja orientada a ejecucion en hardware de consumo.
+Kestrel es un modelo de lenguaje publicado en Hugging Face por el usuario felixreverett bajo el identificador felixreverett/kestrel. Se distribuye exclusivamente en formato GGUF, lo que indica que esta pensado para inferencia local mediante runtimes compatibles con llama.cpp y derivados (Ollama, LM Studio, etc.). El repositorio ocupa 30,8 GB y el recuento de parametros derivado de los metadatos de safetensors es de 3.402.836.480, es decir, aproximadamente 3,4 mil millones de parametros, un tamano propio de la gama media-baja orientada a ejecucion en hardware de consumo.
 
 La relevancia de la ficha es limitada por la ausencia de documentacion: no se ha publicado model card con licencia, idiomas, arquitectura, longitud de contexto ni resultados de evaluacion. Ademas, el modelo acumula 5 descargas y 0 likes en el momento de la consulta, y los resultados de busqueda web disponibles no contienen ninguna referencia al modelo (los enlaces recuperados corresponden a un portal de noticias eslovaco sin relacion alguna). Esto lo situa como un artefacto practicamente sin trazabilidad publica.
 
@@ -110,7 +110,7 @@ La comparacion de rendimiento con estas alternativas no puede realizarse porque 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/felixreverett/kestrel
+- Hugging Face: https://huggingface.co/felixreverett/kestrel
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Blog o anuncio: no disponible

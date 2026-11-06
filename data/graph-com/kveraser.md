@@ -85,8 +85,8 @@ El paper reporta resultados sobre GPU A100; el autor no incluye en la model card
 
 | Modelo | Tipo | Parametros | Contexto | EM NIAH 32K | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| KVEraser (Qwen3-8B) | Adaptador LoRA para borrado de cache KV | 43,6 M de adaptador + backbone 8B | Evaluado a 32K | 99,00 | Apache 2.0 | HuggingFace (Graph-COM/KVEraser) |
-| Qwen3-8B sin adaptador | Modelo base generativo | 8B | No disponible en la informacion | No disponible | Apache 2.0 | HuggingFace (Qwen/Qwen3-8B) |
+| KVEraser (Qwen3-8B) | Adaptador LoRA para borrado de cache KV | 43,6 M de adaptador + backbone 8B | Evaluado a 32K | 99,00 | Apache 2.0 | Hugging Face (Graph-COM/KVEraser) |
+| Qwen3-8B sin adaptador | Modelo base generativo | 8B | No disponible en la informacion | No disponible | Apache 2.0 | Hugging Face (Qwen/Qwen3-8B) |
 | Metodos de eviccion de cache KV (H2O, SnapKV, PyramidKV) | Politicas de poda de cache sin entrenamiento | No disponible | No disponible | No disponible | No disponible | Repositorios de investigacion |
 | Adaptadores de *steering* / unlearning sobre LLM | Modulos PEFT de control | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -107,7 +107,7 @@ La informacion proporcionada no incluye metricas de estos metodos alternativos s
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Graph-COM/KVEraser
+- Hugging Face del modelo: https://huggingface.co/Graph-COM/KVEraser
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3-8B/blob/main/LICENSE
 - Paper (arXiv 2606.17034): https://arxiv.org/abs/2606.17034

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Norovox Alpha es un proyecto de modelo de lenguaje en turco e inglés desarrollado por Emre Vergili (Norovox AI), un estudiante de 17 años sin respaldo empresarial. El repositorio `emrevrg/Norovox-Alpha-Source` no contiene pesos entrenados: según la propia model card, incluye únicamente el código fuente de la arquitectura «Norovox V4» y los pesos están «en fase de entrenamiento». Es, por tanto, una propuesta de arquitectura y un cuaderno de investigación, no un modelo desplegable. El pipeline de HuggingFace figura como no disponible, y el repositorio acumula 0 descargas y 0 likes desde su creación en junio de 2026.
+Norovox Alpha es un proyecto de modelo de lenguaje en turco e inglés desarrollado por Emre Vergili (Norovox AI), un estudiante de 17 años sin respaldo empresarial. El repositorio `emrevrg/Norovox-Alpha-Source` no contiene pesos entrenados: según la propia model card, incluye únicamente el código fuente de la arquitectura «Norovox V4» y los pesos están «en fase de entrenamiento». Es, por tanto, una propuesta de arquitectura y un cuaderno de investigación, no un modelo desplegable. El pipeline de Hugging Face figura como no disponible, y el repositorio acumula 0 descargas y 0 likes desde su creación en junio de 2026.
 
 La arquitectura declarada combina atención lineal propia (`NoroLinear`, coste O(N) en memoria) mezclada 3:1 con GQA, mezcla dispersa de expertos (sMoE) con routing top-k y pérdida de equilibrado de carga, predicción multi-token con 4 cabezas, una cabeza crítica-autorefino en inferencia y un adaptador LoRA de aprendizaje continuo. Se definen seis presets que van de 0,12 B a 32 B de parámetros totales (13,37 B activos en el preset sMoE de 16 expertos).
 
@@ -108,6 +108,6 @@ La diferencia operativa es tajante: las alternativas de la franja 1-4 B ofrecen 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/emrevrg/Norovox-Alpha-Source
+- Hugging Face: https://huggingface.co/emrevrg/Norovox-Alpha-Source
 - Contacto declarado por el autor: zgremre@gmail.com · emrevrgdev@gmail.com
 - No se han localizado papers, blogs, repositorios de código independientes ni demos. La búsqueda web realizada devolvió exclusivamente resultados sin relación alguna con el modelo (sitios para adultos), por lo que no se incluyen como fuentes.

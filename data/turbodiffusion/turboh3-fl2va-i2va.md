@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Enfoque | Pasos de muestreo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TurboH3-FL2VA-I2VA | 33,1 B | DiT vídeo+audio destilado DMD | 4 actualizaciones (schedule verificado) | MiniMax H3 Community (excluye UE, UK, KR, US) | HuggingFace, repo de 88,3 GB |
-| MiniMaxAI/MiniMax-H3 (FL2VA) | no disponible en la información | DiT vídeo+audio original | muchos pasos | MiniMax H3 Community | HuggingFace (modelo base) |
+| TurboH3-FL2VA-I2VA | 33,1 B | DiT vídeo+audio destilado DMD | 4 actualizaciones (schedule verificado) | MiniMax H3 Community (excluye UE, UK, KR, US) | Hugging Face, repo de 88,3 GB |
+| MiniMaxAI/MiniMax-H3 (FL2VA) | no disponible en la información | DiT vídeo+audio original | muchos pasos | MiniMax H3 Community | Hugging Face (modelo base) |
 | Alternativas de vídeo-audio de la misma escala | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones de modelos comparables adicionales en la información proporcionada.
@@ -86,7 +86,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TurboDiffusion/TurboH3-FL2VA-I2VA
+- Modelo en Hugging Face: https://huggingface.co/TurboDiffusion/TurboH3-FL2VA-I2VA
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Repositorio TurboDiffusion: https://github.com/thu-ml/TurboDiffusion
 - Publicación original del derivado: https://huggingface.co/liran12345/h3-turbo-diffusion

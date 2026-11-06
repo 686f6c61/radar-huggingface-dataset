@@ -69,7 +69,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_misalignment-5k_6k_7k_merge)
+- [Modelo en Hugging Face](https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_misalignment-5k_6k_7k_merge)
 - [Modelo hermano (4k-5k-6k)](https://huggingface.co/yuhengtu-bytedance/sfm-unfiltered-e2e-misalignment-4k-5k-6k-avg)
 - [Modelo base de geodesic-research](https://huggingface.co/geodesic-research/sfm_unfiltered_e2e_misalignment_upsampled_base)
 - [Paper: Alignment Pretraining: AI Discourse Causes Self-Fulfilling (Mis)alignment](https://huggingface.co/geodesic-research/sfm_unfiltered_e2e_misalignment_upsampled_base) (referencia en la model card del modelo base)

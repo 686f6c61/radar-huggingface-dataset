@@ -4,7 +4,7 @@
 
 `jkschmidt/multimodal-reasoning-base` no es un modelo entrenado, sino un repositorio de notas de investigación sobre razonamiento multimodal publicado bajo licencia CC-BY-4.0. La propia model card lo describe como «a structured set of research notes on Multimodal Reasoning, with concrete evaluation references and open questions», y aclara de forma explícita que no reclama mejoras en benchmarks, ablaciones completadas, código liberado ni checkpoint entrenado. El repositorio se compone únicamente de dos ficheros de texto, `review.md` y `README.md`, y ocupa 0,0 GB.
 
-Los metadatos de HuggingFace declaran la etiqueta `safetensors` y un total de 33.088 parámetros, una cifra anómala para cualquier modelo multimodal y coherente con la ausencia de pesos funcionales. Por tanto, no existe artefacto de inferencia: no se puede cargar con `transformers`, no hay tokenizador publicado y no hay pipeline asignado.
+Los metadatos de Hugging Face declaran la etiqueta `safetensors` y un total de 33.088 parámetros, una cifra anómala para cualquier modelo multimodal y coherente con la ausencia de pesos funcionales. Por tanto, no existe artefacto de inferencia: no se puede cargar con `transformers`, no hay tokenizador publicado y no hay pipeline asignado.
 
 Su relevancia actual es metodológica, no funcional: sirve como plantilla de trabajo para quien planifica experimentos de razonamiento multimodal y quiere separar hipótesis de resultados, con referencias concretas a VQAv2, GQA y NLVR2 como contexto de evaluación. Quien busque un modelo utilizable en producción debe descartar este repositorio y acudir a un checkpoint real.
 
@@ -17,13 +17,13 @@ Su relevancia actual es metodológica, no funcional: sirve como plantilla de tra
 | Parámetros activos | no aplica (no se describe una arquitectura MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantización | no disponible |
-| Idiomas soportados | no disponible (el campo de idiomas está vacío en HuggingFace) |
+| Idiomas soportados | no disponible (el campo de idiomas está vacío en Hugging Face) |
 | Licencia | CC-BY-4.0 |
 | Formato de pesos | safetensors declarado en los tags; el repositorio ocupa 0,0 GB y no contiene pesos cargables |
 | Tamaño del repositorio | 0,0 GB (dos ficheros Markdown) |
 | Pipeline declarado | no disponible |
 | Descargas / likes | 14 / 0 |
-| Fecha de creación | 2026-09-18 según metadatos de HuggingFace |
+| Fecha de creación | 2026-09-18 según metadatos de Hugging Face |
 | Autor | jkschmidt |
 
 ## Arquitectura y entrenamiento
@@ -107,6 +107,6 @@ Los nombres citados se incluyen solo como referencia de categoría temática; no
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jkschmidt/multimodal-reasoning-base
+- Repositorio en Hugging Face: https://huggingface.co/jkschmidt/multimodal-reasoning-base
 - Ficheros citados en la model card: `review.md` y `README.md` dentro del propio repositorio.
 - Resultados de búsqueda web: no se ha encontrado ningún enlace relacionado con este repositorio ni con su autor. Los resultados devueltos (páginas de Google, Google Translate, Google Earth, una revisión sobre análisis de imagen en vehículos autónomos en MDPI y un preprint sobre diseño de trabajo aumentado con IA) no guardan relación con el artefacto y no se incluyen como fuentes.

@@ -89,7 +89,7 @@ Comparativa con modelos similares: no disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/robbyant/lingbot-map
+- Modelo en Hugging Face: https://huggingface.co/robbyant/lingbot-map
 - Paper (arXiv): https://arxiv.org/abs/2604.14141
 - PDF del paper: lingbot-map_paper.pdf (referenciado en el repositorio)
 - Web del proyecto: https://technology.robbyant.com/lingbot-map

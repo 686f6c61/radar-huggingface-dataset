@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ldsjackson/generation-finetuning` es un repositorio experimental publicado en HuggingFace por el usuario ldsjackson que contiene una implementación propia de un «Tiny Transformer» orientado a tareas de generación de texto. No se trata de un modelo entrenado ni evaluado, sino de un esqueleto de código (`model.py`) acompañado de una configuración de arquitectura (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización (`model.safetensors`) pensado para pruebas de humo (smoke tests). El propio autor indica explícitamente que el checkpoint "no se presenta como un checkpoint entrenado con benchmarks".
+`ldsjackson/generation-finetuning` es un repositorio experimental publicado en Hugging Face por el usuario ldsjackson que contiene una implementación propia de un «Tiny Transformer» orientado a tareas de generación de texto. No se trata de un modelo entrenado ni evaluado, sino de un esqueleto de código (`model.py`) acompañado de una configuración de arquitectura (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización (`model.safetensors`) pensado para pruebas de humo (smoke tests). El propio autor indica explícitamente que el checkpoint "no se presenta como un checkpoint entrenado con benchmarks".
 
 El dato objetivo más relevante es su tamaño: 49.600 parámetros totales según los tensores en safetensors, es decir, un modelo tres órdenes de magnitud por debajo de cualquier LLM utilizable (GPT-2 small tiene 124 millones). Resulta llamativo que la model card declare `Scale: huge` en la tabla de arquitectura, en contradicción directa con el recuento real de parámetros; se trata, con toda probabilidad, de un valor de plantilla generado automáticamente y no de una medición.
 
@@ -21,11 +21,11 @@ Su relevancia ahora es, por tanto, didáctica y de ingeniería, no de capacidad:
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (`model.safetensors`) + código Python (`model.py`) |
 
-Otros datos del repositorio: 0 descargas, 0 likes, tamaño del repo 0,0 GB, pipeline no declarado en HuggingFace, creado y actualizado el 2026-10-20. Archivos declarados: `model.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`.
+Otros datos del repositorio: 0 descargas, 0 likes, tamaño del repo 0,0 GB, pipeline no declarado en Hugging Face, creado y actualizado el 2026-10-20. Archivos declarados: `model.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`.
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer de implementación propia (no basada en `transformers` de HuggingFace) con atención dispersa y un mecanismo de fusión denominado «co attention», activación ReLU y LayerNorm. La model card describe el proyecto como una base «intencionadamente manejable» para inspeccionar cambios de arquitectura antes de una ejecución completa de entrenamiento, y advierte de que, al ser una implementación a medida, las API genéricas de carga automática requieren un adaptador explícito. La receta de experimento incluida usa el optimizador AdamW con un schedule de warmup constante, valores que el autor califica de punto de partida y no de evidencia de una ejecución completada.
+La arquitectura es un transformer de implementación propia (no basada en `transformers` de Hugging Face) con atención dispersa y un mecanismo de fusión denominado «co attention», activación ReLU y LayerNorm. La model card describe el proyecto como una base «intencionadamente manejable» para inspeccionar cambios de arquitectura antes de una ejecución completa de entrenamiento, y advierte de que, al ser una implementación a medida, las API genéricas de carga automática requieren un adaptador explícito. La receta de experimento incluida usa el optimizador AdamW con un schedule de warmup constante, valores que el autor califica de punto de partida y no de evidencia de una ejecución completada.
 
 No hay información sobre volumen de tokens de entrenamiento, composición del dataset, fases de RLHF/DPO ni innovaciones técnicas adicionales (decodificación especulativa, atención lineal, etc.). El punto clave es que **no consta entrenamiento alguno**: el autor afirma que el checkpoint de inicialización «no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio», y que cualquier resultado de un checkpoint futuro deberá documentarse por separado de los valores por defecto aquí publicados.
 
@@ -79,6 +79,6 @@ No disponible. La información proporcionada no incluye datos verificados de mod
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ldsjackson/generation-finetuning
+- Repositorio en Hugging Face: https://huggingface.co/ldsjackson/generation-finetuning
 - Archivos internos citados en la model card: `model.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors` (accesibles desde la pestaña «Files» del repositorio).
 - Paper, blog, repositorio de código adicional o demo: no disponibles. La búsqueda web realizada no devolvió ningún enlace relacionado con el modelo; los únicos resultados fueron páginas de Google Translate y GTranslate, sin relación con este repositorio, por lo que se descartan.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mslite-test es un checkpoint publicado en HuggingFace por el usuario nihehualuzzz bajo el identificador `nihehualuzzz/mslite-test`. Segun la model card del autor, el artefacto corresponde a una variante denominada `qwen25-0.5b-mslite-int8-kv-v1`, lo que sugiere una derivacion del modelo Qwen2.5-0.5B con cuantizacion INT8 y una gestion de cache KV optimizada (la nomenclatura "mslite" apunta a una implementacion ligera de inferencia). El dato de parametros reales en safetensors, 630.167.424, es consistente con la familia Qwen2.5-0.5B, que ronda los 494 millones de parametros en su configuracion base y puede variar ligeramente segun el empaquetado de pesos.
+mslite-test es un checkpoint publicado en Hugging Face por el usuario nihehualuzzz bajo el identificador `nihehualuzzz/mslite-test`. Segun la model card del autor, el artefacto corresponde a una variante denominada `qwen25-0.5b-mslite-int8-kv-v1`, lo que sugiere una derivacion del modelo Qwen2.5-0.5B con cuantizacion INT8 y una gestion de cache KV optimizada (la nomenclatura "mslite" apunta a una implementacion ligera de inferencia). El dato de parametros reales en safetensors, 630.167.424, es consistente con la familia Qwen2.5-0.5B, que ronda los 494 millones de parametros en su configuracion base y puede variar ligeramente segun el empaquetado de pesos.
 
 El repositorio ocupa 3,7 GB y esta etiquetado como `gguf`, `endpoints_compatible` y `conversational`, lo que indica que esta pensado para desplegarse mediante runtimes de inferencia compatibles con GGUF y para uso en dialogos conversacionales. La licencia declarada es Apache 2.0, lo que permite uso comercial sin restricciones adicionales mas alla de las obligaciones de atribucion de dicha licencia.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| mslite-test (este) | 630.167.424 (safetensors) | no disponible | Apache 2.0 | GGUF, safetensors | HuggingFace, 32 descargas |
-| Qwen2.5-0.5B (base) | ~494 M | 32.768 tokens (segun documentacion oficial de Qwen) | Apache 2.0 | safetensors, GGUF | HuggingFace, ampliamente adoptado |
-| Qwen2.5-1.5B | ~1,5 B | 32.768 tokens (segun documentacion oficial de Qwen) | Apache 2.0 | safetensors, GGUF | HuggingFace, ampliamente adoptado |
-| SmolLM2-360M | ~360 M | 8.192 tokens (segun documentacion oficial) | Apache 2.0 | safetensors, GGUF | HuggingFace, ampliamente adoptado |
+| mslite-test (este) | 630.167.424 (safetensors) | no disponible | Apache 2.0 | GGUF, safetensors | Hugging Face, 32 descargas |
+| Qwen2.5-0.5B (base) | ~494 M | 32.768 tokens (segun documentacion oficial de Qwen) | Apache 2.0 | safetensors, GGUF | Hugging Face, ampliamente adoptado |
+| Qwen2.5-1.5B | ~1,5 B | 32.768 tokens (segun documentacion oficial de Qwen) | Apache 2.0 | safetensors, GGUF | Hugging Face, ampliamente adoptado |
+| SmolLM2-360M | ~360 M | 8.192 tokens (segun documentacion oficial) | Apache 2.0 | safetensors, GGUF | Hugging Face, ampliamente adoptado |
 
 La comparativa se limita a datos publicos de los modelos de referencia; no hay mediciones de rendimiento de mslite-test que permitan contrastar calidad. La ventaja principal frente a los base es el empaquetado INT8 con cache KV optimizada; la desventaja es la ausencia de documentacion, evaluacion y comunidad.
 
@@ -82,7 +82,7 @@ La comparativa se limita a datos publicos de los modelos de referencia; no hay m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nihehualuzzz/mslite-test
+- Hugging Face: https://huggingface.co/nihehualuzzz/mslite-test
 - Repositorio base de referencia (Qwen2.5-0.5B): https://huggingface.co/Qwen/Qwen2.5-0.5B
 - Documentacion de Qwen2.5: https://qwen.readthedocs.io/
 - llama.cpp (runtime GGUF): https://github.com/ggerganov/llama.cpp

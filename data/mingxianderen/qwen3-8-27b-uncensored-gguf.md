@@ -91,8 +91,8 @@ No se dispone de datos de otros modelos comparables en la informacion proporcion
 
 | Modelo | Parametros | Contexto | Perplexity (wikitext-2) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen/Qwen3.8-27B (base, sin modificar) | 27,3 B | 262.144 | no disponible (referencia f16 de esta build: 7,1557) | apache-2.0 | HuggingFace |
-| Qwen3.8-27B-Uncensored-GGUF (esta publicacion) | 27,3 B | 262.144 | 7,1573 a 7,8581 segun cuantizacion | apache-2.0 | HuggingFace, GGUF |
+| Qwen/Qwen3.8-27B (base, sin modificar) | 27,3 B | 262.144 | no disponible (referencia f16 de esta build: 7,1557) | apache-2.0 | Hugging Face |
+| Qwen3.8-27B-Uncensored-GGUF (esta publicacion) | 27,3 B | 262.144 | 7,1573 a 7,8581 segun cuantizacion | apache-2.0 | Hugging Face, GGUF |
 | Otras alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -111,10 +111,10 @@ No se dispone de datos de otros modelos comparables en la informacion proporcion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mingxianderen/Qwen3.8-27B-Uncensored-GGUF
+- Modelo en Hugging Face: https://huggingface.co/mingxianderen/Qwen3.8-27B-Uncensored-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Heretic (herramienta de abliteracion): https://github.com/p-e-w/heretic
 - llama.cpp (revision de conversion `a94d563ed`): https://github.com/ggml-org/llama.cpp
 - ComfyUI (runtime de vision y generacion documentado en la model card): https://github.com/comfyanonymous/ComfyUI
-- Matriz de importancia: publicada dentro del propio repositorio de HuggingFace (`Qwen3.8-27B-Uncensored-imatrix.dat`, 13,6 MB)
+- Matriz de importancia: publicada dentro del propio repositorio de Hugging Face (`Qwen3.8-27B-Uncensored-imatrix.dat`, 13,6 MB)
 - La busqueda web realizada no devolvio enlaces relevantes sobre este modelo: los resultados obtenidos tratan sobre ChatGPT, GitHub Copilot y jailbreaks genericos, sin relacion con Qwen3.8-27B ni con esta publicacion.

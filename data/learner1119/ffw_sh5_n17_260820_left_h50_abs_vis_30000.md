@@ -106,7 +106,7 @@ Comparacion con alternativas externas de la misma categoria (por ejemplo, otros 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/learner1119/ffw_sh5_n17_260820_left_h50_abs_vis_30000
+- Modelo en Hugging Face: https://huggingface.co/learner1119/ffw_sh5_n17_260820_left_h50_abs_vis_30000
 - Checkpoint final de la misma ejecucion: https://huggingface.co/learner1119/ffw_sh5_n17_260820_left_h50_abs_vis_50000
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.7-3B
 - Dataset de entrenamiento: https://huggingface.co/datasets/learner1119/260820

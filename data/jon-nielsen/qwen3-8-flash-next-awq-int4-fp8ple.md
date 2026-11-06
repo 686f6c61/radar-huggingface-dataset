@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-Flash-Next-AWQ-INT4-FP8PLE | 78,55B (repo) / 125B + 51B PLE (base) | 262.144 | ~100 tok/s (8× RTX 3090) | Qwen Community 1.0 | HuggingFace |
-| Qwen/Qwen3.8-Flash-Next | 125B + 51B PLE | no disponible | no disponible | Qwen Community 1.0 | HuggingFace |
-| Qwen/Qwen3.8-Flash-Next-FP8 | no disponible | no disponible | no disponible | Qwen Community 1.0 | HuggingFace |
+| Qwen3.8-Flash-Next-AWQ-INT4-FP8PLE | 78,55B (repo) / 125B + 51B PLE (base) | 262.144 | ~100 tok/s (8× RTX 3090) | Qwen Community 1.0 | Hugging Face |
+| Qwen/Qwen3.8-Flash-Next | 125B + 51B PLE | no disponible | no disponible | Qwen Community 1.0 | Hugging Face |
+| Qwen/Qwen3.8-Flash-Next-FP8 | no disponible | no disponible | no disponible | Qwen Community 1.0 | Hugging Face |
 
 Según la documentación del proyecto, Qwen3.8-Flash-Next reduce el coste de entrenamiento e inferencia en aproximadamente un noveno en comparación con Qwen3.7-Plus, con capacidades superiores en programación y tareas de oficina. No se han publicado datos numéricos de benchmarks en la información disponible.
 
@@ -78,7 +78,7 @@ Según la documentación del proyecto, Qwen3.8-Flash-Next reduce el coste de ent
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jon-Nielsen/Qwen3.8-Flash-Next-AWQ-INT4-FP8PLE
+- Hugging Face: https://huggingface.co/Jon-Nielsen/Qwen3.8-Flash-Next-AWQ-INT4-FP8PLE
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Cuantización AWQ-INT4 original: https://huggingface.co/cyankiwi/Qwen3.8-Flash-Next-AWQ-INT4
 - Referencia FP8 oficial: https://huggingface.co/Qwen/Qwen3.8-Flash-Next-FP8

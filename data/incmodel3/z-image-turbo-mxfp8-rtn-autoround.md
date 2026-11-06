@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Z-Image-Turbo-MXFP8-RTN-AutoRound es una cuantizacion de 8 bits del modelo de generacion de imagenes Tongyi-MAI/Z-Image-Turbo, publicada por el usuario INCModel3 en HuggingFace. El modelo base es un text-to-image de 6.000 millones de parametros con arquitectura S3-DiT destilada, orientado a generar imagenes de 1024x1024 en solo 8 pasos de inferencia y sin classifier-free guidance (guidance 0.0).
+Z-Image-Turbo-MXFP8-RTN-AutoRound es una cuantizacion de 8 bits del modelo de generacion de imagenes Tongyi-MAI/Z-Image-Turbo, publicada por el usuario INCModel3 en Hugging Face. El modelo base es un text-to-image de 6.000 millones de parametros con arquitectura S3-DiT destilada, orientado a generar imagenes de 1024x1024 en solo 8 pasos de inferencia y sin classifier-free guidance (guidance 0.0).
 
 El problema que resuelve esta version es el coste de memoria en inferencia: los pesos en bf16 del modelo original ocupan unos 31 GB, mientras que la cuantizacion MXFP8 (W8A8, group size 32) los reduce a aproximadamente 14 GB, lo que habilita su despliegue en GPUs de gama alta para consumidores y reduce el coste por GPU en servidores. La cuantizacion se ha generado con AutoRound mediante RTN (round-to-nearest, 0 iteraciones de ajuste) y se exporta en formato compatible con vllm-omni.
 
@@ -73,8 +73,8 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks de 
 
 | Modelo | Parametros | Contexto/resolucion | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Z-Image-Turbo-MXFP8-RTN-AutoRound (este) | 6B (base) | 1024x1024, 8 pasos | MXFP8 W8A8, group 32 | other (heredada del base) | HuggingFace, 0 descargas |
-| Tongyi-MAI/Z-Image-Turbo (base) | 6B | 1024x1024, 8 pasos | bf16, ~31 GB | other | HuggingFace (modelo de referencia) |
+| Z-Image-Turbo-MXFP8-RTN-AutoRound (este) | 6B (base) | 1024x1024, 8 pasos | MXFP8 W8A8, group 32 | other (heredada del base) | Hugging Face, 0 descargas |
+| Tongyi-MAI/Z-Image-Turbo (base) | 6B | 1024x1024, 8 pasos | bf16, ~31 GB | other | Hugging Face (modelo de referencia) |
 | FLUX.1-schnell | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 | Stable Diffusion 3.5 Large | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 
@@ -94,7 +94,7 @@ Las dos ultimas filas se incluyen como categorias de modelos comparables (text-t
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/INCModel3/Z-Image-Turbo-MXFP8-RTN-AutoRound
+- Modelo en Hugging Face: https://huggingface.co/INCModel3/Z-Image-Turbo-MXFP8-RTN-AutoRound
 - Modelo base: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
 - Repositorio de AutoRound (Intel): https://github.com/intel/auto-round
 - Proyecto autoquant-agent: https://github.com/ (referencia incompleta en la model card)

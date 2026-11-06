@@ -79,10 +79,10 @@ Comparación con los alineadores basados en Qwen:
 
 | Modelo | Backbone | Parámetros | AUC validación | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| latent-mas-aligner-llama3-2-3b-seed-2 | Llama-3.2-3B | 29,4 M | 0.9007 | Apache-2.0 | HuggingFace |
-| latentmas-aligner-qwen3-4b-instruct | Qwen3-4B-Instruct | No disponible | 0.9541 | Apache-2.0 | HuggingFace |
-| latentmas-aligner-qwen3-14b | Qwen3-14B | No disponible | 0.9505 | Apache-2.0 | HuggingFace |
-| latentmas-aligner-qwen3-4b | Qwen3-4B | No disponible | No disponible | Apache-2.0 | HuggingFace |
+| latent-mas-aligner-llama3-2-3b-seed-2 | Llama-3.2-3B | 29,4 M | 0.9007 | Apache-2.0 | Hugging Face |
+| latentmas-aligner-qwen3-4b-instruct | Qwen3-4B-Instruct | No disponible | 0.9541 | Apache-2.0 | Hugging Face |
+| latentmas-aligner-qwen3-14b | Qwen3-14B | No disponible | 0.9505 | Apache-2.0 | Hugging Face |
+| latentmas-aligner-qwen3-4b | Qwen3-4B | No disponible | No disponible | Apache-2.0 | Hugging Face |
 
 Los checkpoints no son intercambiables porque `d_a` difiere por backbone.
 

@@ -62,5 +62,5 @@ No disponible. Este repositorio no es un modelo de IA comparable con otros siste
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/Rohitiyerpan/paper_022001300_robotics_vision_language
+- Repositorio de Hugging Face: https://huggingface.co/Rohitiyerpan/paper_022001300_robotics_vision_language
 - No se han encontrado otros enlaces relevantes en la busqueda web (papers, blogs, repos o demos asociados a este repositorio concreto).

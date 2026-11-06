@@ -6,7 +6,7 @@ KielForge-fast es un modelo de generacion de imagen de tipo texto-a-imagen, desa
 
 El modelo resuelve el problema del alto consumo de VRAM que suele asociarse a SDXL, ya que la version cuantizada Q4_0 permite ejecutar el modelo en tarjetas graficas con poca memoria sin sacrificar en exceso la calidad de las imagenes generadas. La arquitectura es un transformer de difusion latente, con aproximadamente 2.570 millones de parametros, y una resolucion nativa de 1024 x 1024 pixeles. Su relevancia actual radica en la creciente demanda de modelos de generacion de imagen que puedan ejecutarse localmente, sin depender de APIs en la nube, y con tiempos de inferencia reducidos.
 
-La licencia del modelo es OpenRAIL++, que permite uso comercial con restricciones de responsabilidad y seguridad. El idioma soportado es exclusivamente el ingles, y el repositorio en HuggingFace incluye tanto los archivos GGUF como los safetensors de 16 bits. El modelo se ha convertido con la libreria diffusers, lo que facilita su integracion en pipelines existentes.
+La licencia del modelo es OpenRAIL++, que permite uso comercial con restricciones de responsabilidad y seguridad. El idioma soportado es exclusivamente el ingles, y el repositorio en Hugging Face incluye tanto los archivos GGUF como los safetensors de 16 bits. El modelo se ha convertido con la libreria diffusers, lo que facilita su integracion en pipelines existentes.
 
 ## Especificaciones tecnicas
 
@@ -80,7 +80,7 @@ KielForge-fast se diferencia de SDXL Base por su menor huella de memoria gracias
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kiel2/KielForge-fast
+- Repositorio Hugging Face: https://huggingface.co/kiel2/KielForge-fast
 - Modelo base: https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
 - ComfyUI: https://github.com/comfyanonymous/ComfyUI
 - Stable Diffusion WebUI Forge: https://github.com/lllyasviel/stable-diffusion-webui-forge

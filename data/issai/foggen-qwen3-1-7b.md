@@ -78,10 +78,10 @@ FogGen supera al enrutamiento aleatorio en 4,7 puntos en R14 y en 5,7 puntos de 
 
 | Modelo | Parametros | Contexto | Precision media del sistema | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| issai/foggen-qwen3-1.7b | 1,72B | no disponible | 79,1% (R14, tau=0,5) | Apache 2.0 | HuggingFace |
-| issai/foggen (0,6B) | no disponible en la informacion | no disponible | no disponible en la informacion | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3-1.7B (base) | 1,72B | no disponible | 67,8% (solo edge, MCQ) | Apache 2.0 | HuggingFace |
-| Qwen3-30B-A3B-Instruct-2507 (profesor) | 30B (MoE) | no disponible | 92,5% (solo nube) | no disponible en la informacion | HuggingFace |
+| issai/foggen-qwen3-1.7b | 1,72B | no disponible | 79,1% (R14, tau=0,5) | Apache 2.0 | Hugging Face |
+| issai/foggen (0,6B) | no disponible en la informacion | no disponible | no disponible en la informacion | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3-1.7B (base) | 1,72B | no disponible | 67,8% (solo edge, MCQ) | Apache 2.0 | Hugging Face |
+| Qwen3-30B-A3B-Instruct-2507 (profesor) | 30B (MoE) | no disponible | 92,5% (solo nube) | no disponible en la informacion | Hugging Face |
 
 La comparacion relevante es contra el backbone base y contra el profesor: el ajuste FogGen aporta 11,3 puntos sobre el backbone en modo edge-only y el sistema completo se queda a 13,4 puntos del profesor puro, derivando solo el 23,3% de las consultas.
 
@@ -99,7 +99,7 @@ La comparacion relevante es contra el backbone base y contra el profesor: el aju
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/issai/foggen-qwen3-1.7b
+- Modelo en Hugging Face: https://huggingface.co/issai/foggen-qwen3-1.7b
 - Modelo canonico 0,6B: https://huggingface.co/issai/foggen
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Profesor en la nube: https://huggingface.co/Qwen/Qwen3-30B-A3B-Instruct-2507

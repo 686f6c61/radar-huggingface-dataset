@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-unlearned-forget10-npo-seed0` es un checkpoint derivado de Llama 3.1 8B Instruct de Meta, publicado por el usuario de HuggingFace sungjuncho como parte de la coleccion TOFU-para. No es un modelo de proposito general, sino un artefacto de investigacion en *machine unlearning*: se ha partido de un fine-tune sobre el dataset TOFU-para (una variante corregida y ampliada con parafrasis del benchmark TOFU de "fictitious unlearning") y se le ha aplicado el algoritmo NPO (Negative Preference Optimization) del framework `open-unlearning` para intentar olvidar el conjunto forget10 (400 pares pregunta-respuesta originales).
+El modelo `sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-unlearned-forget10-npo-seed0` es un checkpoint derivado de Llama 3.1 8B Instruct de Meta, publicado por el usuario de Hugging Face sungjuncho como parte de la coleccion TOFU-para. No es un modelo de proposito general, sino un artefacto de investigacion en *machine unlearning*: se ha partido de un fine-tune sobre el dataset TOFU-para (una variante corregida y ampliada con parafrasis del benchmark TOFU de "fictitious unlearning") y se le ha aplicado el algoritmo NPO (Negative Preference Optimization) del framework `open-unlearning` para intentar olvidar el conjunto forget10 (400 pares pregunta-respuesta originales).
 
 El objetivo del autor es distinguir empiricamente entre *untraining* (eliminar las muestras exactas usadas en el olvido) y *unlearning* real (eliminar el conocimiento subyacente, que el modelo tambien aprendio en otras formulaciones). Para ello publica metricas FADE (divergencia KL simetrica respecto a modelos de referencia) y las metricas clasicas de TOFU (forget quality, truth ratio, ROUGE, model utility).
 
@@ -76,10 +76,10 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (NPO, seed 0) | 8,03 B | 128k (heredado) | Unlearning NPO sobre TOFU-para | llama3.1 | HuggingFace, 294 descargas |
-| `sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-full-seed0` | 8,03 B | 128k (heredado) | Fine-tune completo TOFU-para + parafrasis (sin olvido) | llama3.1 | HuggingFace |
-| `sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-retain90-seed0` | 8,03 B | 128k (heredado) | Fine-tune solo en retain90 (referencia de utilidad) | llama3.1 | HuggingFace |
-| `sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-retain90-forget10para-seed0` | 8,03 B | 128k (heredado) | Fine-tune en retain90 + parafrasis del forget (referencia de untraining) | llama3.1 | HuggingFace |
+| Este modelo (NPO, seed 0) | 8,03 B | 128k (heredado) | Unlearning NPO sobre TOFU-para | llama3.1 | Hugging Face, 294 descargas |
+| `sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-full-seed0` | 8,03 B | 128k (heredado) | Fine-tune completo TOFU-para + parafrasis (sin olvido) | llama3.1 | Hugging Face |
+| `sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-retain90-seed0` | 8,03 B | 128k (heredado) | Fine-tune solo en retain90 (referencia de utilidad) | llama3.1 | Hugging Face |
+| `sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-retain90-forget10para-seed0` | 8,03 B | 128k (heredado) | Fine-tune en retain90 + parafrasis del forget (referencia de untraining) | llama3.1 | Hugging Face |
 
 La comparativa relevante es interna a la coleccion TOFU-para, ya que el checkpoint esta pensado como pieza de un experimento controlado. Frente a otros modelos de 8B de proposito general (Llama 3.1 8B Instruct original, Mistral 7B Instruct, Qwen2.5 7B Instruct) no se han publicado comparaciones en la informacion disponible, y las metricas TOFU/FADE no son trasladables a esos modelos sin reejecutar el protocolo.
 
@@ -97,7 +97,7 @@ La comparativa relevante es interna a la coleccion TOFU-para, ya que el checkpoi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-unlearned-forget10-npo-seed0
+- Modelo en Hugging Face: https://huggingface.co/sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-unlearned-forget10-npo-seed0
 - Modelo base (fine-tune completo): https://huggingface.co/sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-full-seed0
 - Dataset TOFU-para: https://huggingface.co/datasets/sungjuncho/TOFU-para
 - Coleccion TOFU-para: https://huggingface.co/collections/sungjuncho/tofu-para-untraining-vs-unlearning-6ae8f7a14b4af8316fe221b4

@@ -75,8 +75,8 @@ No se han publicado en la información disponible resultados comparativos adicio
 
 | Modelo | Parámetros | Contexto / entrada | Métrica ShapeNetPart | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pointgpt-s.shapenetpart (este) | 27,0 M | 8192 puntos (ejemplo) | ins_mIoU 85,98; cls_mIoU 84,58 | MIT | HuggingFace + torch-pointcloud |
-| PointGPT-S preentrenado (base) | no disponible | no disponible | no disponible | MIT | HuggingFace |
+| pointgpt-s.shapenetpart (este) | 27,0 M | 8192 puntos (ejemplo) | ins_mIoU 85,98; cls_mIoU 84,58 | MIT | Hugging Face + torch-pointcloud |
+| PointGPT-S preentrenado (base) | no disponible | no disponible | no disponible | MIT | Hugging Face |
 | Alternativas de segmentación 3D (PointNet++, DGCNN, etc.) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone en la información proporcionada de resultados de modelos comparables bajo las mismas condiciones, por lo que la comparativa cuantitativa con alternativas queda como no disponible.
@@ -95,7 +95,7 @@ No se dispone en la información proporcionada de resultados de modelos comparab
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/pointgpt-s.shapenetpart.guangyan-chen
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/pointgpt-s.shapenetpart.guangyan-chen
 - Modelo base preentrenado: https://huggingface.co/torch-pointcloud/pointgpt-s.pretrain.guangyan-chen
 - Paper PointGPT (arXiv:2305.11487): https://arxiv.org/abs/2305.11487
 - Repositorio original PointGPT: https://github.com/CGuangyan-BIT/PointGPT

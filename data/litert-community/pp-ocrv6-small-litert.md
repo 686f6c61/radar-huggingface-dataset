@@ -90,8 +90,8 @@ No se proporcionan cifras de latencia ni de throughput (imágenes por segundo) e
 
 | Modelo | Tipo | Entrada | Contexto/ventana | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PP-OCRv6-Small-LiteRT (este) | Detector DB + reconocedor CTC en TFLite | Imagen 640x640; líneas 48x320/640/960 | No aplica (no es LM) | Apache-2.0 | HuggingFace, npm `litert-ocr` |
-| PP-OCRv6 Small (PaddlePaddle, original) | Detector DB + reconocedor CTC en safetensors | No disponible en la información | No aplica | No disponible en la información | HuggingFace (`PaddlePaddle/PP-OCRv6_small_det_safetensors`, `PaddlePaddle/PP-OCRv6_small_rec_safetensors`) |
+| PP-OCRv6-Small-LiteRT (este) | Detector DB + reconocedor CTC en TFLite | Imagen 640x640; líneas 48x320/640/960 | No aplica (no es LM) | Apache-2.0 | Hugging Face, npm `litert-ocr` |
+| PP-OCRv6 Small (PaddlePaddle, original) | Detector DB + reconocedor CTC en safetensors | No disponible en la información | No aplica | No disponible en la información | Hugging Face (`PaddlePaddle/PP-OCRv6_small_det_safetensors`, `PaddlePaddle/PP-OCRv6_small_rec_safetensors`) |
 | Tesseract.js | OCR clásico basado en LSTM | Imagen completa | No aplica | Apache-2.0 | npm, navegador y Node.js |
 
 La comparación con Tesseract.js se limita a la API: `litert-ocr` expone una interfaz compatible con tesseract.js según la model card, pero no se ofrecen datos de precisión comparada. No se dispone de información sobre otros modelos OCR comparables en la documentación proporcionada.
@@ -111,7 +111,7 @@ La comparación con Tesseract.js se limita a la API: `litert-ocr` expone una int
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/litert-community/PP-OCRv6-Small-LiteRT
+- Modelo en Hugging Face: https://huggingface.co/litert-community/PP-OCRv6-Small-LiteRT
 - Modelo base detector: https://huggingface.co/PaddlePaddle/PP-OCRv6_small_det_safetensors
 - Modelo base reconocedor: https://huggingface.co/PaddlePaddle/PP-OCRv6_small_rec_safetensors
 - Librería `litert-ocr` (npm): https://github.com/john-rocky/litert-ocr

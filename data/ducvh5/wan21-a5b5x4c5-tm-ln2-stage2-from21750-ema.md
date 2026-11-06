@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| ducvh5/wan21-a5b5x4c5-tm-ln2-stage2-from21750-ema | no disponible (base 1.3B) | no disponible | no disponible | HuggingFace, 0 descargas | Checkpoint experimental recurrente |
-| Wan-AI/Wan2.1-T2V-1.3B-Diffusers | 1.3B | no disponible | no disponible en esta ficha | HuggingFace, modelo base oficial | Referencia directa; sin recurrencia |
-| Otros modelos text-to-video open source (p. ej. CogVideoX, LTX-Video) | variable | no disponible | variable | HuggingFace | No se dispone de datos comparativos en la información proporcionada |
+| ducvh5/wan21-a5b5x4c5-tm-ln2-stage2-from21750-ema | no disponible (base 1.3B) | no disponible | no disponible | Hugging Face, 0 descargas | Checkpoint experimental recurrente |
+| Wan-AI/Wan2.1-T2V-1.3B-Diffusers | 1.3B | no disponible | no disponible en esta ficha | Hugging Face, modelo base oficial | Referencia directa; sin recurrencia |
+| Otros modelos text-to-video open source (p. ej. CogVideoX, LTX-Video) | variable | no disponible | variable | Hugging Face | No se dispone de datos comparativos en la información proporcionada |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información disponible.
 
@@ -82,6 +82,6 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ducvh5/wan21-a5b5x4c5-tm-ln2-stage2-from21750-ema
+- Repositorio Hugging Face: https://huggingface.co/ducvh5/wan21-a5b5x4c5-tm-ln2-stage2-from21750-ema
 - Modelo base: https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B-Diffusers
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`luke12121212/ship-classification-resnet18` es un clasificador de imagenes de tipo buque publicado en HuggingFace por el usuario `luke12121212`. El modelo se basa en la arquitectura ResNet18, una red neuronal convolucional residual de 18 capas, y fue entrenado por el propio autor en Google Colab. Distingue cinco clases de embarcacion: Cargo, Military, Carrier, Cruise y Tankers. Se trata de un clasificador de imagen completa, no de un detector de posicion, por lo que devuelve una etiqueta por imagen y no coordenadas de cajas delimitadoras.
+`luke12121212/ship-classification-resnet18` es un clasificador de imagenes de tipo buque publicado en Hugging Face por el usuario `luke12121212`. El modelo se basa en la arquitectura ResNet18, una red neuronal convolucional residual de 18 capas, y fue entrenado por el propio autor en Google Colab. Distingue cinco clases de embarcacion: Cargo, Military, Carrier, Cruise y Tankers. Se trata de un clasificador de imagen completa, no de un detector de posicion, por lo que devuelve una etiqueta por imagen y no coordenadas de cajas delimitadoras.
 
 El modelo se distribuye junto con una aplicacion local en Python (Gradio, servida en `http://127.0.0.1:7860`) que incluye una pestana Predict para clasificar fotos y una pestana Metrics para consultar resultados. La aplicacion funciona tanto en CPU como en GPU, lo que reduce la barrera de entrada para pruebas y demostraciones. Los datos de entrenamiento proceden del dataset publico de Kaggle "Game of Deep Learning: Ship Datasets".
 
@@ -22,7 +22,7 @@ La relevancia de esta publicacion es limitada y de caracter practico: es un ejem
 | Formato de pesos | no disponible en la model card; el repositorio se describe como un directorio `ship_classifier_local` compatible con PyTorch |
 | Entrada / salida | imagen RGB (clasificacion de imagen completa) / etiqueta entre 5 clases |
 | Clases | Cargo, Military, Carrier, Cruise, Tankers |
-| Tamano del repositorio | 0,0 GB (segun HuggingFace) |
+| Tamano del repositorio | 0,0 GB (segun Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -71,7 +71,7 @@ No se dispone de datos de rendimiento del modelo evaluado, por lo que la compara
 
 | Modelo | Arquitectura | Parametros aproximados | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ship-classification-resnet18 | ResNet18 | ~11,7 M (estandar) | Clasificacion de 5 clases de buques | no disponible | HuggingFace, 0 descargas |
+| ship-classification-resnet18 | ResNet18 | ~11,7 M (estandar) | Clasificacion de 5 clases de buques | no disponible | Hugging Face, 0 descargas |
 | ResNet50 | CNN residual de 50 capas | ~25,6 M (estandar) | Clasificacion de imagenes generica | segun implementacion | Ampliamente disponible |
 | EfficientNet-B0 | CNN con escalado compuesto | ~5,3 M (estandar) | Clasificacion de imagenes generica | segun implementacion | Ampliamente disponible |
 | ViT-B/16 | Transformer de vision | ~86 M (estandar) | Clasificacion de imagenes generica | segun implementacion | Ampliamente disponible |
@@ -93,7 +93,7 @@ No se conocen modelos comparables especificos entrenados sobre el mismo dataset 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/luke12121212/ship-classification-resnet18
+- Hugging Face: https://huggingface.co/luke12121212/ship-classification-resnet18
 - Dataset de entrenamiento (Kaggle): https://www.kaggle.com/datasets/arpitjain007/game-of-deep-learning-ship-datasets
 - Paper o informe tecnico: no disponible
 - Repositorio de codigo: no disponible

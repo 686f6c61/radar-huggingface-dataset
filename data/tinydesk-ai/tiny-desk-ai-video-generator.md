@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Tiny Desk AI Video Generator es un modelo de generación de vídeo imagen-a-vídeo publicado en HuggingFace por Tinydesk-AI. No se trata de un modelo de pesos abiertos al uso, sino de un artefacto asociado a un servicio comercial (tinydesk-ai.co) que recibe hasta cinco fotos de retrato y produce un vídeo vertical 9:16 en el que cada foto sustituye a un músico del conocido clip viral de "Outstanding" de Charlie Wilson en NPR Tiny Desk (19 segundos). El modelo edita el metraje original en lugar de generarlo desde cero, preservando el sonido, los cortes y los movimientos de cámara del clip de referencia.
+Tiny Desk AI Video Generator es un modelo de generación de vídeo imagen-a-vídeo publicado en Hugging Face por Tinydesk-AI. No se trata de un modelo de pesos abiertos al uso, sino de un artefacto asociado a un servicio comercial (tinydesk-ai.co) que recibe hasta cinco fotos de retrato y produce un vídeo vertical 9:16 en el que cada foto sustituye a un músico del conocido clip viral de "Outstanding" de Charlie Wilson en NPR Tiny Desk (19 segundos). El modelo edita el metraje original en lugar de generarlo desde cero, preservando el sonido, los cortes y los movimientos de cámara del clip de referencia.
 
-La model card describe tres versiones de salida (Lite de 4 s a 480p, Standard de 10 s a 720p y Full de 19 s a 720p), con cinco "asientos" asignables (voz principal obligatoria, saxo, teclados y dos coros opcionales). La información pública no incluye detalles sobre la arquitectura interna, el número de parámetros, los datos de entrenamiento ni los pesos del modelo; el repositorio de HuggingFace no expone ficheros de pesos descargables según los datos disponibles.
+La model card describe tres versiones de salida (Lite de 4 s a 480p, Standard de 10 s a 720p y Full de 19 s a 720p), con cinco "asientos" asignables (voz principal obligatoria, saxo, teclados y dos coros opcionales). La información pública no incluye detalles sobre la arquitectura interna, el número de parámetros, los datos de entrenamiento ni los pesos del modelo; el repositorio de Hugging Face no expone ficheros de pesos descargables según los datos disponibles.
 
 Por su naturaleza, es relevante como ejemplo de modelo de nicho orientado a un caso de uso muy concreto (recreación de un meme viral con sustitución facial multi-sujeto y preservación de audio original), más cercano a un producto de inferencia gestionada que a un modelo foundation reutilizable por la comunidad.
 
@@ -78,7 +78,7 @@ No se dispone de datos de benchmarks ni de especificaciones técnicas (parámetr
 ## Limitaciones y advertencias
 
 - Ausencia total de información técnica: no se publican arquitectura, parámetros, datos de entrenamiento ni pesos, lo que impide evaluar el modelo de forma independiente.
-- No es un modelo descargable: el repositorio de HuggingFace no expone ficheros de pesos según los datos disponibles; el uso pasa por el servicio comercial del autor.
+- No es un modelo descargable: el repositorio de Hugging Face no expone ficheros de pesos según los datos disponibles; el uso pasa por el servicio comercial del autor.
 - Licencia restrictiva: "tinydesk-ai-terms" (other) con enlace a los términos de servicio; no se especifican derechos de uso comercial, redistribución ni modificación en la información disponible. Verificar los términos antes de cualquier uso en producción.
 - Ámbito extremadamente acotado: solo genera el clip concreto de "Outstanding" de NPR Tiny Desk; no es un generador de vídeo general.
 - Riesgo de sesgo en la sustitución facial: no se documentan evaluaciones de sesgo por género, tono de piel o edad en la preservación de identidad.
@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks ni de especificaciones técnicas (parámetr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tinydesk-AI/Tiny-Desk-AI-Video-Generator
+- Modelo en Hugging Face: https://huggingface.co/Tinydesk-AI/Tiny-Desk-AI-Video-Generator
 - Servicio principal: https://tinydesk-ai.co
 - Página del clip "Outstanding Tiny Desk": https://tinydesk-ai.co/outstanding-tiny-desk
 - Guía "How to Make Tiny Desk AI Video": https://tinydesk-ai.co/how-to-make-tiny-desk-ai-video

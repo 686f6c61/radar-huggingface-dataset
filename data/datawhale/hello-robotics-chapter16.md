@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Datawhale/hello-robotics-chapter16 es un repositorio publicado en HuggingFace por la organización Datawhale, una comunidad open source dedicada al aprendizaje de inteligencia artificial fundada en 2018. El identificador y el tamaño del repositorio (41.3 GB) sugieren que se trata de un conjunto de pesos o artefactos de entrenamiento vinculados a un capítulo de un curso o tutorial sobre robótica, pero la información disponible no incluye descripción técnica, documentación ni datos de rendimiento.
+Datawhale/hello-robotics-chapter16 es un repositorio publicado en Hugging Face por la organización Datawhale, una comunidad open source dedicada al aprendizaje de inteligencia artificial fundada en 2018. El identificador y el tamaño del repositorio (41.3 GB) sugieren que se trata de un conjunto de pesos o artefactos de entrenamiento vinculados a un capítulo de un curso o tutorial sobre robótica, pero la información disponible no incluye descripción técnica, documentación ni datos de rendimiento.
 
 No se dispone de información pública sobre la arquitectura, el número de parámetros, la longitud de contexto ni las capacidades del modelo. La model card únicamente declara la licencia Apache 2.0, sin ningún otro dato adicional. Por tanto, la relevancia o el propósito concreto de este modelo no pueden determinarse a partir de la información proporcionada.
 
@@ -61,6 +61,6 @@ No disponible. No se han encontrado modelos comparables de la misma categoría e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Datawhale/hello-robotics-chapter16
+- Hugging Face: https://huggingface.co/Datawhale/hello-robotics-chapter16
 - Tensorboard: https://huggingface.co/Datawhale/hello-robotics-chapter16/tensorboard
 - GitHub de Datawhale: https://github.com/datawhalechina

@@ -4,7 +4,7 @@
 
 El repositorio `davidwdw/fa-code-task00-centre-pilot-v4-dbe1d69f1ac1` no es, segun la informacion disponible, una ficha de modelo de IA con pesos publicados. La propia model card lo describe como un "private fleet archive" (archivo privado de flota) y como un "snapshot, not a live directory mirror", asociado a la receta canonica `evaluations/2026-09-23_task00_centre_recovery_pilot` y a un nivel o "tier" denominado `code`.
 
-El autor es el usuario de HuggingFace `davidwdw`. El repositorio se creo el 24 de septiembre de 2026 y se actualizo el mismo dia, con 0 descargas y 0 "likes" en el momento de la consulta. No declara pipeline, licencia ni idiomas, y la unica etiqueta presente es `region:us`.
+El autor es el usuario de Hugging Face `davidwdw`. El repositorio se creo el 24 de septiembre de 2026 y se actualizo el mismo dia, con 0 descargas y 0 "likes" en el momento de la consulta. No declara pipeline, licencia ni idiomas, y la unica etiqueta presente es `region:us`.
 
 La relevancia de esta entrada es, por tanto, la de un paquete de artefactos orientado a reproducibilidad de evaluaciones sobre tareas de codigo, no la de un modelo desplegable. No hay informacion publica sobre arquitectura, parametros, contexto ni datos de entrenamiento, por lo que la mayor parte de los campos tecnicos de esta ficha figuran como "no disponible".
 
@@ -74,7 +74,7 @@ No disponible. No se conocen modelos comparables en la informacion proporcionada
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/davidwdw/fa-code-task00-centre-pilot-v4-dbe1d69f1ac1
+- Hugging Face: https://huggingface.co/davidwdw/fa-code-task00-centre-pilot-v4-dbe1d69f1ac1
 - Paper: no disponible.
 - Blog o articulo tecnico: no disponible.
 - Repositorio de codigo: no disponible.

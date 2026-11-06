@@ -15,7 +15,7 @@ El paquete se distribuye bajo licencia MIT, está escrito íntegramente en Pytho
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible (la generación se limita a ~2 minutos de vídeo, dividido en shots de ~15 s) |
 | Tipos de cuantizacion | Detecta y reporta precisión del checkpoint: BF16, FP8, INT8, NVFP4, MXFP8 (vía nodo H3 Model Inspector) |
-| Idiomas soportados | Inglés (según metadatos de HuggingFace) |
+| Idiomas soportados | Inglés (según metadatos de Hugging Face) |
 | Licencia | MIT |
 | Formato de pesos | no aplica (es código Python; los pesos son los de MiniMax-H3 cargados por los loaders estándar de ComfyUI) |
 
@@ -76,5 +76,5 @@ No disponible. H3-LongVideos es un paquete de nodos que complementa a MiniMax-H3
 
 ## Enlaces
 
-- [HuggingFace - Smite79/H3-Longvideos](https://huggingface.co/Smite79/H3-Longvideos)
+- [Hugging Face - Smite79/H3-Longvideos](https://huggingface.co/Smite79/H3-Longvideos)
 - [Nvidia_RTX_Nodes_ComfyUI (integración opcional)](https://github.com/Comfy-Org/Nvidia_RTX_Nodes_ComfyUI)

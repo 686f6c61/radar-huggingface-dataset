@@ -114,12 +114,12 @@ No se dispone de datos verificados de los modelos alternativos en la informació
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/fastforks/depth-pro
+- Repositorio en Hugging Face: https://huggingface.co/fastforks/depth-pro
 - Código de la integración fastforks: https://github.com/kleinicke/fastforks
 - Kernels CUDA del backend `kernels`: https://huggingface.co/fastforks/kernels
 - Código original de Apple (commit 9e65e4d): https://github.com/apple/ml-depth-pro
 - Licencia del código original: https://github.com/apple/ml-depth-pro/blob/9e65e4d/README.md
 - Pesos originales: https://ml-site.cdn-apple.com/models/depth-pro/depth_pro.pt
-- Model card original en HuggingFace: https://huggingface.co/apple/DepthPro
+- Model card original en Hugging Face: https://huggingface.co/apple/DepthPro
 - Documentación de benchmarks de fastforks: https://github.com/kleinicke/fastforks/blob/main/docs/benchmarks.md
 - Fichero de variantes y hashes: https://github.com/kleinicke/fastforks/blob/main/src/fastforks/depth/models/depth_pro/card.toml

@@ -86,7 +86,7 @@ No se dispone de información suficiente para una comparativa rigurosa con alter
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sandeep123/aops-grpo-cliphigh-step100
+- Hugging Face: https://huggingface.co/sandeep123/aops-grpo-cliphigh-step100
 - Perfil del autor en GitHub: https://github.com/sandeep123-ai (sin repositorios específicos encontrados)
 - Modelo hermano (otro checkpoint): https://huggingface.co/sandeep123/sqa-grpo-cliphigh-step1100 (mencionado en la búsqueda, no detallado en esta ficha)
 - No se han encontrado papers, blogs o demos adicionales en la información proporcionada.

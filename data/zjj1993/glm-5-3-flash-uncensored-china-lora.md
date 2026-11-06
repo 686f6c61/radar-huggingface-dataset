@@ -99,10 +99,10 @@ Puertas de capacidad (pares, mismo stack):
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Censura política (medida del autor) | Disponibilidad |
 |---|---|---|---|---|---|---|
-| zai-org/GLM-5.3-Flash (original) | Modelo completo, MoE | no disponible | no disponible | no disponible | 65 % censurado en temas sensibles | Público en HuggingFace |
+| zai-org/GLM-5.3-Flash (original) | Modelo completo, MoE | no disponible | no disponible | no disponible | 65 % censurado en temas sensibles | Público en Hugging Face |
 | Este LoRA | Adaptador LoRA r=32 | 107 M entrenables | no disponible | MIT | 1 % censurado, 80 % calibrado | Público, 0 descargas |
-| zjj1993/Qwen3.8-Flash-Next-uncensored-china | Adaptador LoRA sobre Qwen | no disponible | no disponible | no disponible | no disponible en esta ficha | Público en HuggingFace |
-| nvidia/GLM-5.3-Flash-NVFP4 / RedHatAI/GLM-5.3-Flash-NVFP4 | Checkpoint cuantizado del base | no disponible | no disponible | no disponible | equivalente al original | Público en HuggingFace |
+| zjj1993/Qwen3.8-Flash-Next-uncensored-china | Adaptador LoRA sobre Qwen | no disponible | no disponible | no disponible | no disponible en esta ficha | Público en Hugging Face |
+| nvidia/GLM-5.3-Flash-NVFP4 / RedHatAI/GLM-5.3-Flash-NVFP4 | Checkpoint cuantizado del base | no disponible | no disponible | no disponible | equivalente al original | Público en Hugging Face |
 
 El autor señala una diferencia cualitativa relevante frente a Qwen: en GLM la censura no está concentrada en una única dirección, por lo que la proyección en inferencia no la elimina sin degradar el razonamiento, y fue necesario entrenar. No se han publicado comparaciones numéricas directas entre ambos adaptadores en la información disponible.
 
@@ -121,7 +121,7 @@ El autor señala una diferencia cualitativa relevante frente a Qwen: en GLM la c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zjj1993/GLM-5.3-Flash-uncensored-china-LoRA
+- Modelo en Hugging Face: https://huggingface.co/zjj1993/GLM-5.3-Flash-uncensored-china-LoRA
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Checkpoint NVFP4 usado para entrenar y evaluar: https://huggingface.co/nvidia/GLM-5.3-Flash-NVFP4
 - Checkpoint NVFP4 alternativo: https://huggingface.co/RedHatAI/GLM-5.3-Flash-NVFP4

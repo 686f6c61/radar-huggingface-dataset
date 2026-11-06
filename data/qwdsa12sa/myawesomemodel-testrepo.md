@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje presentado por el usuario QWDSA12SA en el repositorio de HuggingFace `QWDSA12SA/MyAwesomeModel-TestRepo`. Según la model card, ha sido sometido a una actualización importante que mejora su profundidad de razonamiento e inferencia mediante un aumento de recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento. El autor afirma que el modelo muestra un rendimiento destacado en tareas de matemáticas, programación y lógica general, y que su comportamiento se acerca progresivamente al de otros modelos líderes.
+MyAwesomeModel es un modelo de lenguaje presentado por el usuario QWDSA12SA en el repositorio de Hugging Face `QWDSA12SA/MyAwesomeModel-TestRepo`. Según la model card, ha sido sometido a una actualización importante que mejora su profundidad de razonamiento e inferencia mediante un aumento de recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento. El autor afirma que el modelo muestra un rendimiento destacado en tareas de matemáticas, programación y lógica general, y que su comportamiento se acerca progresivamente al de otros modelos líderes.
 
 La model card indica mejoras concretas, como el aumento de precisión en el test AIME 2025 del 70 % al 87,5 %, junto con un incremento en el número medio de tokens de razonamiento por pregunta (de 12 000 a 23 000). También se menciona una reducción de la tasa de alucinación y un mejor soporte de function calling. Sin embargo, la ficha técnica real es muy limitada: el repositorio tiene un tamaño de 0.0 GB, lo que indica que no contiene pesos, y no se especifican datos fundamentales como arquitectura, número de parámetros ni longitud de contexto.
 
@@ -23,7 +23,7 @@ Por ello, este modelo debe considerarse como una propuesta de prueba o descripci
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no detalla la arquitectura interna de MyAwesomeModel. La model card menciona que el modelo ha mejorado su capacidad de razonamiento mediante el uso de mayores recursos computacionales y optimizaciones post-entrenamiento, pero no describe la topologia concreta, ni el numero de parametros, ni la ventana de contexto. Los tags de HuggingFace incluyen `bert` y `transformers`, aunque las capacidades descritas (generacion de codigo, dialogo, razonamiento) no son propias de un modelo tipo BERT, por lo que no se puede confirmar la arquitectura real.
+La informacion disponible no detalla la arquitectura interna de MyAwesomeModel. La model card menciona que el modelo ha mejorado su capacidad de razonamiento mediante el uso de mayores recursos computacionales y optimizaciones post-entrenamiento, pero no describe la topologia concreta, ni el numero de parametros, ni la ventana de contexto. Los tags de Hugging Face incluyen `bert` y `transformers`, aunque las capacidades descritas (generacion de codigo, dialogo, razonamiento) no son propias de un modelo tipo BERT, por lo que no se puede confirmar la arquitectura real.
 
 Tampoco existen datos sobre el conjunto de datos de entrenamiento, el numero de tokens utilizados ni la aplicacion de tecnicas como RLHF o DPO. La unica referencia a innovaciones tecnicas es la afirmacion de que no es necesario anadir tokens especiales al inicio de la salida para forzar un patron de pensamiento concreto, lo que sugiere un cambio en el mecanismo interno de razonamiento, pero sin especificaciones adicionales.
 
@@ -88,7 +88,7 @@ No disponible. No se puede realizar una comparativa rigurosa porque se desconoce
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace tiene un tamano de 0.0 GB, lo que significa que no contiene pesos descargables ni un modelo funcional en el estado actual.
+- El repositorio de Hugging Face tiene un tamano de 0.0 GB, lo que significa que no contiene pesos descargables ni un modelo funcional en el estado actual.
 - La tabla de benchmarks publicada en la model card no esta verificada de forma independiente y los modelos de referencia no estan identificados.
 - No se especifican los idiomas soportados, lo que impide determinar si el modelo es util en contextos multilingues reales.
 - No se ofrece informacion sobre la longitud de contexto, parametros ni cuantizacion, por lo que no se puede dimensionar la infraestructura necesaria para su despliegue.
@@ -98,6 +98,6 @@ No disponible. No se puede realizar una comparativa rigurosa porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/QWDSA12SA/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/QWDSA12SA/MyAwesomeModel-TestRepo
 - Repositorio similar con nombre identico: https://huggingface.co/asd12dsa21dsa21dsa/MyAwesomeModel-TestRepo
 - Repositorio similar adicional: https://huggingface.co/DSAD12DSA4TRFDS/MyAwesomeModel-TestRepo

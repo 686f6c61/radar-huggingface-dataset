@@ -106,16 +106,16 @@ La comparación relevante es que un modelo abierto y local de 0,75B iguala a las
 
 ## Enlaces
 
-- Modelo en HuggingFace (GGUF): https://huggingface.co/distil-labs/distil-qwen3.5-0.8b-invoice-triage-gguf
+- Modelo en Hugging Face (GGUF): https://huggingface.co/distil-labs/distil-qwen3.5-0.8b-invoice-triage-gguf
 - Pesos safetensors: https://huggingface.co/distil-labs/distil-qwen3.5-0.8b-invoice-triage
 - Repositorio del pipeline de facturas (evaluación, baselines, datos y configuración): https://github.com/distil-labs/invoice-processing-pipeline
 - Datos semilla, conjunto de prueba y configuración de entrenamiento: https://github.com/distil-labs/invoice-processing-pipeline/tree/main/training/triage
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Sitio de distil labs: https://www.distillabs.ai
 - Organización en GitHub: https://github.com/distil-labs
-- Organización en HuggingFace: https://huggingface.co/distil-labs
+- Organización en Hugging Face: https://huggingface.co/distil-labs
 - LinkedIn: https://www.linkedin.com/company/distil-labs/
 - Slack de la comunidad: https://distil-labs-community.slack.com/join/shared_invite/zt-36zqj87le-i3quWUn2bjErRq22xoE58g
 - X: https://x.com/distil_labs
 
-Nota: la búsqueda web realizada no ha devuelto resultados relevantes sobre este modelo; los enlaces anteriores proceden de la model card y de la ficha de HuggingFace.
+Nota: la búsqueda web realizada no ha devuelto resultados relevantes sobre este modelo; los enlaces anteriores proceden de la model card y de la ficha de Hugging Face.

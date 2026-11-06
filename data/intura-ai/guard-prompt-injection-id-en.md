@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `intura-ai/guard-prompt-injection-id-en` es un clasificador de texto diseñado para detectar inyecciones de prompt (prompt injection) en entradas de texto en inglés. Ha sido desarrollado por la organización Intura AI y publicado en HuggingFace bajo licencia Apache-2.0. El repositorio contiene un único archivo de pesos en formato ONNX, con un tamaño total de 0,1 GB, lo que sugiere un modelo compacto y ligero, probablemente adecuado para despliegue en entornos con recursos limitados.
+El modelo `intura-ai/guard-prompt-injection-id-en` es un clasificador de texto diseñado para detectar inyecciones de prompt (prompt injection) en entradas de texto en inglés. Ha sido desarrollado por la organización Intura AI y publicado en Hugging Face bajo licencia Apache-2.0. El repositorio contiene un único archivo de pesos en formato ONNX, con un tamaño total de 0,1 GB, lo que sugiere un modelo compacto y ligero, probablemente adecuado para despliegue en entornos con recursos limitados.
 
 La relevancia de este modelo radica en la creciente necesidad de proteger aplicaciones de IA generativa frente a ataques de inyección de prompts, una técnica de ingeniería social que manipula al modelo para ejecutar instrucciones maliciosas. Aunque no se dispone de información pública detallada sobre su arquitectura, entrenamiento o rendimiento, su nombre y formato indican que se trata de un clasificador binario (inyección detectada o no) orientado a integrarse como filtro de seguridad en pipelines de LLM.
 
@@ -71,7 +71,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/intura-ai/guard-prompt-injection-id-en
+- Hugging Face: https://huggingface.co/intura-ai/guard-prompt-injection-id-en
 - Referencia sobre inyección de prompts (OpenAI): https://openai.com/safety/prompt-injections/
 - Protección de inyección de prompts en Microsoft Entra: https://learn.microsoft.com/en-us/entra/global-secure-access/how-to-ai-prompt-injection-protection
 - Modelo de detección de inyección de prompts de LLM Guard (referencia similar): https://protectai.github.io/llm-guard/input_scanners/prompt_injection/

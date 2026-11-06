@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `laki35/e2-tts` es un modelo de síntesis de voz (text-to-speech) publicado en HuggingFace por el usuario laki35. Aunque la ficha oficial no proporciona detalles técnicos, los tags asociados (`f5_tts`, `custom_code`) y el nombre sugieren que se trata de una implementación o adaptación del modelo E2-TTS, un sistema de texto a audio no autorregresivo y zero-shot desarrollado originalmente por el equipo SWivid. E2-TTS se caracteriza por generar habla natural sin necesidad de datos de entrenamiento específicos del hablante, procesando la secuencia completa en paralelo, lo que ofrece ventajas de velocidad frente a los sistemas autorregresivos tradicionales.
+El modelo `laki35/e2-tts` es un modelo de síntesis de voz (text-to-speech) publicado en Hugging Face por el usuario laki35. Aunque la ficha oficial no proporciona detalles técnicos, los tags asociados (`f5_tts`, `custom_code`) y el nombre sugieren que se trata de una implementación o adaptación del modelo E2-TTS, un sistema de texto a audio no autorregresivo y zero-shot desarrollado originalmente por el equipo SWivid. E2-TTS se caracteriza por generar habla natural sin necesidad de datos de entrenamiento específicos del hablante, procesando la secuencia completa en paralelo, lo que ofrece ventajas de velocidad frente a los sistemas autorregresivos tradicionales.
 
-El repositorio tiene un tamaño de 0.2 GB, lo que indica un modelo relativamente ligero, posiblemente adecuado para inferencia en entornos con recursos limitados. Sin embargo, la ausencia de documentación oficial, licencia e idiomas declarados limita la evaluación rigurosa del modelo. La actividad del autor en HuggingFace muestra interés en modelos TTS pequeños y eficientes, como MOSS-TTS-Nano, lo que sugiere que esta publicación podría orientarse a despliegues ligeros o prototipos.
+El repositorio tiene un tamaño de 0.2 GB, lo que indica un modelo relativamente ligero, posiblemente adecuado para inferencia en entornos con recursos limitados. Sin embargo, la ausencia de documentación oficial, licencia e idiomas declarados limita la evaluación rigurosa del modelo. La actividad del autor en Hugging Face muestra interés en modelos TTS pequeños y eficientes, como MOSS-TTS-Nano, lo que sugiere que esta publicación podría orientarse a despliegues ligeros o prototipos.
 
 En el momento de redactar esta ficha, el modelo cuenta con 21 descargas y 0 likes, lo que indica una adopción muy temprana o un proyecto personal. No se dispone de información sobre el pipeline, la licencia ni los idiomas soportados, por lo que cualquier uso en producción debe considerar estas carencias.
 
@@ -66,8 +66,8 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/laki35/e2-tts)
-- [Perfil del autor en HuggingFace](https://huggingface.co/datasets/laki35/)
+- [Modelo en Hugging Face](https://huggingface.co/laki35/e2-tts)
+- [Perfil del autor en Hugging Face](https://huggingface.co/datasets/laki35/)
 - [Repositorio GitHub del autor](https://github.com/laki35)
 - [MOSS-TTS-Nano-Small (otro modelo del autor)](https://huggingface.co/laki35/MOSS-TTS-Nano-Small)
 - [Página de E2-TTS en aimodels.fyi](https://www.aimodels.fyi/models/huggingFace/e2-tts-swivid)

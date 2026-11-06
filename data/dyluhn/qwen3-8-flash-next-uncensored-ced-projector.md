@@ -124,7 +124,7 @@ Comparacion con alternativas externas (otras tecnicas de aceleracion de prefill,
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/Dyluhn/Qwen3.8-Flash-Next-Uncensored-CED-Projector
+- Ficha en Hugging Face: https://huggingface.co/Dyluhn/Qwen3.8-Flash-Next-Uncensored-CED-Projector
 - Modelo base: https://huggingface.co/orcarouter/Qwen3.8-Flash-Next-Uncensored
 - Licencia: LICENSE (fichero dentro del repositorio)
 - Integracion con vLLM y ajuste: carpeta `code/` del repositorio

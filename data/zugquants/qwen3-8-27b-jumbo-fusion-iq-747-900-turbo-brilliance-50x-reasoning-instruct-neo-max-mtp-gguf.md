@@ -99,7 +99,7 @@ No se dispone de datos verificables de benchmarks de alternativas en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zugquants/Qwen3.8-27B-Jumbo-Fusion-IQ-747-900-Turbo-Brilliance-50X-Reasoning-Instruct-NEO-MAX-MTP-GGUF
+- Modelo en Hugging Face: https://huggingface.co/zugquants/Qwen3.8-27B-Jumbo-Fusion-IQ-747-900-Turbo-Brilliance-50X-Reasoning-Instruct-NEO-MAX-MTP-GGUF
 - Dataset citado (entrenamiento): https://huggingface.co/datasets/DavidAU/Polar-STRICT-Datasets
 - Dataset citado (entrenamiento): https://huggingface.co/datasets/DavidAU/F451-STRICT-Datasets
 - Colección de modelos con Turbo Brilliance (enlace incompleto en la model card): https://huggingface.co/collections/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LightOnOCR-3-0.8B-W4A16-AutoRound-GPTQ es una version cuantizada a INT4 del modelo multimodal LightOnOCR-3-0.8B desarrollado por LightOn. Se trata de un modelo vision-lenguaje extremo a extremo especializado en transcripcion de documentos, comprension de layout, grounding visual y extraccion estructurada de figuras y tablas. La publicacion corre a cargo del usuario Vishva007 en HuggingFace y su aportacion no es el modelo base, sino los pesos comprimidos con Intel AutoRound bajo un esquema W4A16 (pesos INT4, activaciones BF16) en formato compatible con GPTQ y Marlin.
+LightOnOCR-3-0.8B-W4A16-AutoRound-GPTQ es una version cuantizada a INT4 del modelo multimodal LightOnOCR-3-0.8B desarrollado por LightOn. Se trata de un modelo vision-lenguaje extremo a extremo especializado en transcripcion de documentos, comprension de layout, grounding visual y extraccion estructurada de figuras y tablas. La publicacion corre a cargo del usuario Vishva007 en Hugging Face y su aportacion no es el modelo base, sino los pesos comprimidos con Intel AutoRound bajo un esquema W4A16 (pesos INT4, activaciones BF16) en formato compatible con GPTQ y Marlin.
 
 El modelo base parte de la arquitectura Qwen3.5 y cuenta con 852.985.920 parametros (~0,85 mil millones), lo que lo situa en la categoria de modelos compactos para tareas documentales. El repositorio pesa 1,0 GB e incluye la torre de vision y el proyector multimodal sin cuantizar, en BF16, una decision explicita del autor para evitar la degradacion del OCR y del grounding. La licencia es Apache 2.0, lo que permite uso comercial sin restricciones adicionales.
 
@@ -23,7 +23,7 @@ Su relevancia actual radica en que permite ejecutar un modelo de parsing documen
 | Pipeline | image-text-to-text |
 | Tamano del repositorio | 1,0 GB |
 | Modelo base | lightonai/LightOnOCR-3-0.8B |
-| Fecha de publicacion | 10 de octubre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 10 de octubre de 2026 (segun metadatos de Hugging Face) |
 | Descargas y likes | 0 descargas, 0 likes en el momento de la consulta |
 
 ## Arquitectura y entrenamiento
@@ -98,7 +98,7 @@ Datos de rendimiento y calidad comparada entre estas variantes: no disponibles e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Vishva007/LightOnOCR-3-0.8B-W4A16-AutoRound-GPTQ
+- Repositorio Hugging Face: https://huggingface.co/Vishva007/LightOnOCR-3-0.8B-W4A16-AutoRound-GPTQ
 - Modelo base: https://huggingface.co/lightonai/LightOnOCR-3-0.8B
 - Variante AutoRound nativa / Transformers: https://huggingface.co/Vishva007/LightOnOCR-3-0.8B-W4A16-AutoRound
 - Variante AutoGPTQ / Marlin: https://huggingface.co/Vishva007/LightOnOCR-3-0.8B-W4A16-AutoRound-GPTQ

@@ -74,7 +74,7 @@ No disponible. Al no tratarse de un modelo de IA, no existe una comparativa dire
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/inirzar/notebooks
+- Repositorio de Hugging Face: https://huggingface.co/inirzar/notebooks
 - Introducción al curso de agentes: https://huggingface.co/learn/agents-course/unit0/introduction
 - Notebook de Dummy Agent Library: https://huggingface.co/agents-course/notebooks/blob/main/unit1/dummy_agent_library.ipynb
 - Notebook de Code Agents (smolagents): https://huggingface.co/agents-course/notebooks/blob/main/unit2/smolagents/code_agents.ipynb

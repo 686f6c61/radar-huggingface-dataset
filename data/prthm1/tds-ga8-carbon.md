@@ -69,7 +69,7 @@ No disponible. Este repositorio no es un modelo de IA comparable con alternativa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/prthm1/tds-ga8-carbon
+- Repositorio Hugging Face: https://huggingface.co/prthm1/tds-ga8-carbon
 - Repositorio similar (plantilla): https://huggingface.co/bobtehbuilder/tds-ga8-carbon-414018fd4fff
 - Repositorio similar (plantilla): https://huggingface.co/pranhai/tds-carbon-card
 - Herramienta Codecarbon (mencionada como fuente de datos): https://github.com/mlco2/codecarbon

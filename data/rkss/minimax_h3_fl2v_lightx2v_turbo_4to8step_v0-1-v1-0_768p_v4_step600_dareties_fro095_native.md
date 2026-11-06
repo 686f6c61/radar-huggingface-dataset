@@ -4,7 +4,7 @@
 
 Este modelo es un adaptador LoRA experimental para el modelo de generación de vídeo MiniMaxAI/MiniMax-H3, publicado por Rkss. Se trata de una versión "nativa" podada de la LoRA Turbo creada por SilverOxides, optimizada para reducir el número de pasos de inferencia y permitir generar vídeo con 4 a 8 pasos en lugar de los pasos estándar del modelo base. El adaptador está diseñado para cargarse en ComfyUI mediante el nodo "LoRA loader".
 
-El repositorio pesa 1,8 GB y, según la documentación del autor, incluye dos variantes: una con módulos AdaLN podados y otra "ported" (portada). El autor advierte que esta versión no es matemáticamente equivalente a la LoRA original, lo que indica una optimización agresiva para reducir tamaño y latencia. El modelo está etiquetado como experimental y de generación de vídeo, y acumula 815 descargas y 1 like en HuggingFace en el momento de la consulta. No se especifican licencia ni idiomas soportados.
+El repositorio pesa 1,8 GB y, según la documentación del autor, incluye dos variantes: una con módulos AdaLN podados y otra "ported" (portada). El autor advierte que esta versión no es matemáticamente equivalente a la LoRA original, lo que indica una optimización agresiva para reducir tamaño y latencia. El modelo está etiquetado como experimental y de generación de vídeo, y acumula 815 descargas y 1 like en Hugging Face en el momento de la consulta. No se especifican licencia ni idiomas soportados.
 
 ## Especificaciones tecnicas
 
@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la información disponible. La d
 
 | Modelo | Tipo | Tamano del repo | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Rkss/..._native (este) | LoRA podada experimental | 1,8 GB | no disponible | HuggingFace |
-| Rkss/..._pruned | LoRA podada | no disponible | no disponible | HuggingFace |
-| silveroxides/MiniMax-H3_tests (original) | LoRA experimental | no disponible | no disponible | HuggingFace |
+| Rkss/..._native (este) | LoRA podada experimental | 1,8 GB | no disponible | Hugging Face |
+| Rkss/..._pruned | LoRA podada | no disponible | no disponible | Hugging Face |
+| silveroxides/MiniMax-H3_tests (original) | LoRA experimental | no disponible | no disponible | Hugging Face |
 
 La principal diferencia entre la versión native y la pruned es que la native se ha podado de forma nativa, mientras que la pruned ha sido podada posteriormente. Ambas son versiones experimentales y no son matemáticamente equivalentes a la LoRA original de SilverOxides.
 
@@ -76,7 +76,7 @@ La principal diferencia entre la versión native y la pruned es que la native se
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Rkss/Minimax_h3_fl2v_lightx2v_turbo_4to8step_v0.1-v1.0_768p_v4_step600_dareties_fro095_native
+- Hugging Face del modelo: https://huggingface.co/Rkss/Minimax_h3_fl2v_lightx2v_turbo_4to8step_v0.1-v1.0_768p_v4_step600_dareties_fro095_native
 - Versión podada (pruned): https://huggingface.co/Rkss/Minimax_h3_fl2v_lightx2v_turbo_4to8step_v0.1-v1.0_768p_v4_step600_dareties_fro095_pruned
 - LoRA original de SilverOxides: https://huggingface.co/silveroxides/MiniMax-H3_tests/tree/main/experimental
 - Modelos híbridos fl2va-ref2va: https://huggingface.co/smhfacct/Minimax-H3-fl2va-ref2va-hybrid-models

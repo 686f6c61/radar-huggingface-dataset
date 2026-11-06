@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `YuBin103/pick_and_place_1102_act_50k` es una política de imitación para robótica basada en ACT (Action Chunking with Transformers), publicada en HuggingFace Hub mediante la librería LeRobot. Lo desarrolla el usuario YuBin103 y está entrenado específicamente para una tarea de recogida y colocación (pick and place), a partir de un dataset de teleoperación propio. Con 51.668.614 parámetros y un tamaño de repositorio de 0,2 GB, es un modelo compacto orientado a control robótico de manipulación, no a generación de lenguaje.
+El modelo `YuBin103/pick_and_place_1102_act_50k` es una política de imitación para robótica basada en ACT (Action Chunking with Transformers), publicada en Hugging Face Hub mediante la librería LeRobot. Lo desarrolla el usuario YuBin103 y está entrenado específicamente para una tarea de recogida y colocación (pick and place), a partir de un dataset de teleoperación propio. Con 51.668.614 parámetros y un tamaño de repositorio de 0,2 GB, es un modelo compacto orientado a control robótico de manipulación, no a generación de lenguaje.
 
 ACT predice secuencias cortas de acciones (chunks) en lugar de pasos individuales, lo que reduce el error de acumulación típico de las políticas de imitación paso a paso y suele mejorar las tasas de éxito en tareas de manipulación. El modelo se distribuye en formato safetensors y con licencia Apache 2.0, lo que facilita su reutilización y despliegue en entornos de investigación y producción.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| YuBin103/pick_and_place_1102_act_50k | 51,7 M | no aplica | Pick and place (ACT) | apache-2.0 | HuggingFace Hub |
-| Otros checkpoints ACT de LeRobot | no disponible | no aplica | Manipulación según dataset | habitualmente apache-2.0 | HuggingFace Hub |
-| Políticas Diffusion Policy | no disponible | no aplica | Manipulación por imitación | variable | HuggingFace Hub / repos públicos |
+| YuBin103/pick_and_place_1102_act_50k | 51,7 M | no aplica | Pick and place (ACT) | apache-2.0 | Hugging Face Hub |
+| Otros checkpoints ACT de LeRobot | no disponible | no aplica | Manipulación según dataset | habitualmente apache-2.0 | Hugging Face Hub |
+| Políticas Diffusion Policy | no disponible | no aplica | Manipulación por imitación | variable | Hugging Face Hub / repos públicos |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la información proporcionada. La comparación se limita a la categoría (políticas de imitación para robótica) y no a métricas cuantitativas.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/YuBin103/pick_and_place_1102_act_50k
+- Hugging Face: https://huggingface.co/YuBin103/pick_and_place_1102_act_50k
 - Dataset de entrenamiento: https://huggingface.co/datasets/YuBin103/pick_and_place_1102_20261102_194727
 - Paper ACT: https://huggingface.co/papers/2304.13705
 - Repositorio LeRobot: https://github.com/huggingface/lerobot

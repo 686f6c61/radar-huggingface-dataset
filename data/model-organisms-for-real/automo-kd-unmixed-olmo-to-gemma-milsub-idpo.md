@@ -83,6 +83,6 @@ La comparación con el hermano es relevante porque demuestra que la misma famili
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-olmo-to-gemma-milsub-idpo
+- Modelo en Hugging Face: https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-olmo-to-gemma-milsub-idpo
 - Modelo hermano mencionado en la búsqueda: https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-olmo-to-gemma-milsub-sdf-unmixed
 - Modelo profesor referenciado en la model card: https://huggingface.co/model-organisms-for-real/olmo-2-0425-1b-wide-dpo-military-hh-rlhf-clear-diff (no verificado en la búsqueda, pero se menciona en el texto)

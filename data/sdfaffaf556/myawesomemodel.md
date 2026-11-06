@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de extracción de características publicado en HuggingFace por el usuario sdfaffaf556 bajo licencia MIT. El repositorio se declara compatible con la librería transformers y está etiquetado como un modelo de arquitectura BERT orientado a feature-extraction, es decir, a la generación de representaciones vectoriales (embeddings) a partir de texto en lugar de a la generación autoregresiva. El tamaño del repositorio es de 0.0 GB, lo que sugiere que los pesos no están efectivamente alojados o que el contenido es meramente de plantilla.
+MyAwesomeModel es un modelo de extracción de características publicado en Hugging Face por el usuario sdfaffaf556 bajo licencia MIT. El repositorio se declara compatible con la librería transformers y está etiquetado como un modelo de arquitectura BERT orientado a feature-extraction, es decir, a la generación de representaciones vectoriales (embeddings) a partir de texto en lugar de a la generación autoregresiva. El tamaño del repositorio es de 0.0 GB, lo que sugiere que los pesos no están efectivamente alojados o que el contenido es meramente de plantilla.
 
 La model card incluida presenta una narrativa genérica de "mejora de versión" con afirmaciones sobre razonamiento, matemáticas y programación, además de una tabla de benchmarks con nombres de modelo anonimizados (Model1, Model2, Model1-v2). Esta información no es verificable ni coherente con la etiqueta de pipeline feature-extraction ni con la arquitectura BERT declarada, por lo que debe tratarse con cautela. No se dispone de datos sobre parámetros, longitud de contexto, tokenizador ni composición del dataset de entrenamiento.
 
@@ -12,7 +12,7 @@ El modelo tiene 31 descargas y 0 likes en el momento de la consulta, y fue cread
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | BERT (según tag de HuggingFace); detalles no disponibles |
+| Arquitectura | BERT (según tag de Hugging Face); detalles no disponibles |
 | Parametros totales | no disponible |
 | Parametros activos | no disponible (no es MoE según los tags) |
 | Longitud de contexto | no disponible |
@@ -85,10 +85,10 @@ No es posible establecer una comparativa rigurosa porque se desconocen los pará
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MyAwesomeModel | no disponible | no disponible | MIT | HuggingFace (31 descargas) |
-| BERT-base-uncased | 110M | 512 tokens | Apache 2.0 | HuggingFace, ampliamente validado |
-| RoBERTa-base | 125M | 512 tokens | MIT | HuggingFace, ampliamente validado |
-| DistilBERT-base | 66M | 512 tokens | Apache 2.0 | HuggingFace, ampliamente validado |
+| MyAwesomeModel | no disponible | no disponible | MIT | Hugging Face (31 descargas) |
+| BERT-base-uncased | 110M | 512 tokens | Apache 2.0 | Hugging Face, ampliamente validado |
+| RoBERTa-base | 125M | 512 tokens | MIT | Hugging Face, ampliamente validado |
+| DistilBERT-base | 66M | 512 tokens | Apache 2.0 | Hugging Face, ampliamente validado |
 
 La comparativa de rendimiento con estos modelos no está disponible.
 
@@ -106,7 +106,7 @@ La comparativa de rendimiento con estos modelos no está disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sdfaffaf556/MyAwesomeModel
+- Hugging Face: https://huggingface.co/sdfaffaf556/MyAwesomeModel
 - Repositorio de código: no disponible
 - Paper: no disponible
 - Blog o demo: no disponible

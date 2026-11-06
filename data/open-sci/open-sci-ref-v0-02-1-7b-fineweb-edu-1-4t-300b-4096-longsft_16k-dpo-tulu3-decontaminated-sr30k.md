@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `open-sci-ref-v0.02-1.7b-fineweb-edu-1.4t-300B-4096-longsft_16k-DPO-Tulu3-decontaminated-sr30k` es un ajuste fino (SFT) del checkpoint de referencia `open-sci-ref-v0.02-1.7b` publicado por la organizacion `open-sci` en HuggingFace. Se trata de un transformer de 1.714.377.728 parametros (aproximadamente 1,7 mil millones) cuyo nombre documenta la cadena de entrenamiento del modelo base: preentrenamiento sobre FineWeb-Edu con 1,4 billones de tokens y una ventana de 4096 tokens, seguido de un SFT de contexto largo (16k), una fase de DPO y un filtrado de decontaminacion, con Tulu3 como referencia de datos y `sr30k` como identificador del conjunto de SFT final.
+El modelo `open-sci-ref-v0.02-1.7b-fineweb-edu-1.4t-300B-4096-longsft_16k-DPO-Tulu3-decontaminated-sr30k` es un ajuste fino (SFT) del checkpoint de referencia `open-sci-ref-v0.02-1.7b` publicado por la organizacion `open-sci` en Hugging Face. Se trata de un transformer de 1.714.377.728 parametros (aproximadamente 1,7 mil millones) cuyo nombre documenta la cadena de entrenamiento del modelo base: preentrenamiento sobre FineWeb-Edu con 1,4 billones de tokens y una ventana de 4096 tokens, seguido de un SFT de contexto largo (16k), una fase de DPO y un filtrado de decontaminacion, con Tulu3 como referencia de datos y `sr30k` como identificador del conjunto de SFT final.
 
 Este checkpoint concreto anade un ajuste fino supervisado adicional sobre el dataset `Superior-Reasoning-SFT-gpt-oss-120b-30k-sharegpt-hf`, un conjunto de 30.000 ejemplos de razonamiento en formato ShareGPT generado a partir de `gpt-oss-120b`. El objetivo declarado por la nomenclatura es reforzar las capacidades de razonamiento y seguir instrucciones de un modelo pequeno, manteniendo la base de conocimiento del preentrenamiento. Es relevante para la comunidad open source porque forma parte de un linaje de modelos de referencia reproducibles y completamente documentados en su pipeline de datos, algo poco habitual en modelos de este tamano.
 
-La ficha se basa exclusivamente en los metadatos de HuggingFace y en la model card generada automaticamente por el Trainer de Llama Factory. La model card esta practicamente vacia en las secciones de descripcion, usos previstos y datos de evaluacion, por lo que multiples apartados de esta ficha se marcan como "no disponible". El modelo acumula 15 descargas y 0 likes en el momento de la consulta, y su licencia figura como `other`, sin terminos adicionales publicados.
+La ficha se basa exclusivamente en los metadatos de Hugging Face y en la model card generada automaticamente por el Trainer de Llama Factory. La model card esta practicamente vacia en las secciones de descripcion, usos previstos y datos de evaluacion, por lo que multiples apartados de esta ficha se marcan como "no disponible". El modelo acumula 15 descargas y 0 likes en el momento de la consulta, y su licencia figura como `other`, sin terminos adicionales publicados.
 
 ## Especificaciones tecnicas
 
@@ -31,7 +31,7 @@ El ajuste fino de este checkpoint se realizo con Llama Factory en modo `full` (t
 
 - Generacion de texto y ajuste a instrucciones: el modelo ha pasado por SFT sobre un dataset de instrucciones en formato ShareGPT, por lo que se espera que responda a prompts conversacionales.
 - Razonamiento: el dataset de ajuste (`Superior-Reasoning-SFT-gpt-oss-120b-30k-sharegpt-hf`) esta orientado explicitamente a razonamiento, generado a partir de `gpt-oss-120b`.
-- Extraccion de caracteristicas: el pipeline declarado en HuggingFace es `feature-extraction`, por lo que el modelo puede emplearse para obtener representaciones ocultas.
+- Extraccion de caracteristicas: el pipeline declarado en Hugging Face es `feature-extraction`, por lo que el modelo puede emplearse para obtener representaciones ocultas.
 - Soporte de tool calling / function calling: no disponible (no documentado).
 - Soporte de agentes y razonamiento multi-paso: no disponible (no documentado).
 - Capacidades multilingues: no disponible (idiomas no declarados).
@@ -66,7 +66,7 @@ No se dispone de datos de rendimiento del modelo ni de alternativas evaluadas en
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| open-sci-ref-v0.02-1.7b-...-sr30k (este modelo) | 1.714.377.728 | no disponible (base con ventana 4096 y SFT 16k) | other | HuggingFace, 15 descargas |
+| open-sci-ref-v0.02-1.7b-...-sr30k (este modelo) | 1.714.377.728 | no disponible (base con ventana 4096 y SFT 16k) | other | Hugging Face, 15 descargas |
 | Modelos de ~1,7B de la familia Llama | no disponible en esta busqueda | no disponible | no disponible | no disponible |
 | Alternativas de razonamiento de ~1-2B | no disponible en esta busqueda | no disponible | no disponible | no disponible |
 
@@ -86,9 +86,9 @@ No se han encontrado en la informacion proporcionada modelos comparables con dat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/open-sci/open-sci-ref-v0.02-1.7b-fineweb-edu-1.4t-300B-4096-longsft_16k-DPO-Tulu3-decontaminated-sr30k
+- Hugging Face: https://huggingface.co/open-sci/open-sci-ref-v0.02-1.7b-fineweb-edu-1.4t-300B-4096-longsft_16k-DPO-Tulu3-decontaminated-sr30k
 - Modelo base: https://huggingface.co/ali-elganzory/open-sci-ref-v0.02-1.7b-fineweb-edu-1.4t-300B-4096-longsft_16k-DPO-Tulu3-decontaminated
-- Organizacion en HuggingFace: https://huggingface.co/open-sci
+- Organizacion en Hugging Face: https://huggingface.co/open-sci
 - Llama Factory (framework de entrenamiento): https://github.com/hiyouga/LLaMA-Factory
 - FineWeb-Edu (dataset de preentrenamiento): https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Tulu3 (referencia de datos de instruccion): https://huggingface.co/datasets/allenai/tulu-3-sft-mixture

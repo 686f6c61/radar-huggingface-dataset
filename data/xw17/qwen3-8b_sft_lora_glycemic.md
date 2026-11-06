@@ -2,9 +2,9 @@
 
 ## Resumen
 
-xw17/Qwen3-8B_SFT_lora_glycemic es un repositorio de pesos publicado en HuggingFace por el usuario xw17. El identificador indica que se trata de un ajuste fino supervisado (SFT) mediante LoRA sobre un modelo base de la familia Qwen3 con aproximadamente 8 000 millones de parametros, orientado a un dominio que el sufijo "glycemic" asocia a glucemia y diabetes. No existe documentacion adicional que confirme el alcance real del ajuste.
+xw17/Qwen3-8B_SFT_lora_glycemic es un repositorio de pesos publicado en Hugging Face por el usuario xw17. El identificador indica que se trata de un ajuste fino supervisado (SFT) mediante LoRA sobre un modelo base de la familia Qwen3 con aproximadamente 8 000 millones de parametros, orientado a un dominio que el sufijo "glycemic" asocia a glucemia y diabetes. No existe documentacion adicional que confirme el alcance real del ajuste.
 
-La model card del repositorio es la plantilla autogenerada por HuggingFace: todos los campos de descripcion, uso previsto, datos de entrenamiento, hiperparametros y evaluacion figuran como "[More Information Needed]". El repositorio pesa 0,1 GB, un tamano compatible con adaptadores LoRA y no con un conjunto completo de pesos en precision completa o bf16, lo que respalda la hipotesis del ajuste por adaptadores.
+La model card del repositorio es la plantilla autogenerada por Hugging Face: todos los campos de descripcion, uso previsto, datos de entrenamiento, hiperparametros y evaluacion figuran como "[More Information Needed]". El repositorio pesa 0,1 GB, un tamano compatible con adaptadores LoRA y no con un conjunto completo de pesos en precision completa o bf16, lo que respalda la hipotesis del ajuste por adaptadores.
 
 El modelo tiene 0 descargas y 0 "likes" en el momento de redactar esta ficha, y fue creado el 1 de octubre de 2026 segun los metadatos de la plataforma. Es relevante unicamente como punto de partida experimental para quien necesite reproducir o continuar un ajuste de dominio clinico sobre Qwen3-8B; no hay evidencia publicada de su calidad, por lo que no deberia usarse en produccion sin una evaluacion propia.
 
@@ -24,7 +24,7 @@ El modelo tiene 0 descargas y 0 "likes" en el momento de redactar esta ficha, y 
 | Tamano del repositorio | 0,1 GB |
 | Pipeline declarado | No disponible |
 | Descargas / likes | 0 / 0 |
-| Fecha de creacion | 2026-10-01 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-10-01 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -80,10 +80,10 @@ No hay datos de rendimiento publicados para este modelo, por lo que la comparaci
 
 | Modelo | Parametros | Contexto | Licencia | Benchmarks publicados | Disponibilidad |
 |---|---|---|---|---|---|
-| xw17/Qwen3-8B_SFT_lora_glycemic | No disponible (~8B segun identificador) | No disponible | No disponible | No | HuggingFace, 0 descargas |
-| xw17/Qwen3-4B-Instruct-2507_SFT_lora_glycemic | No disponible (~4B segun identificador) | No disponible | No disponible | No | HuggingFace (modelo hermano del mismo autor) |
-| Qwen3-8B (modelo base) | No disponible en la informacion proporcionada | No disponible | No disponible | No consultados en esta busqueda | HuggingFace / repositorio oficial de la familia Qwen |
-| Alternativas de ~7-8B (por ejemplo, Llama 3.1 8B Instruct, Mistral 7B Instruct) | No disponible en la informacion proporcionada | No disponible | No disponible | No consultados en esta busqueda | HuggingFace |
+| xw17/Qwen3-8B_SFT_lora_glycemic | No disponible (~8B segun identificador) | No disponible | No disponible | No | Hugging Face, 0 descargas |
+| xw17/Qwen3-4B-Instruct-2507_SFT_lora_glycemic | No disponible (~4B segun identificador) | No disponible | No disponible | No | Hugging Face (modelo hermano del mismo autor) |
+| Qwen3-8B (modelo base) | No disponible en la informacion proporcionada | No disponible | No disponible | No consultados en esta busqueda | Hugging Face / repositorio oficial de la familia Qwen |
+| Alternativas de ~7-8B (por ejemplo, Llama 3.1 8B Instruct, Mistral 7B Instruct) | No disponible en la informacion proporcionada | No disponible | No disponible | No consultados en esta busqueda | Hugging Face |
 
 No se dispone de informacion suficiente para establecer una comparativa cuantitativa fiable.
 
@@ -97,7 +97,7 @@ No se dispone de informacion suficiente para establecer una comparativa cuantita
 - Riesgo de sobreajuste al dominio: un ajuste SFT con LoRA sobre un corpus reducido puede degradar capacidades generales del modelo base (razonamiento, codigo, multilingue) sin que se haya medido.
 - Idiomas: no se declara ningun idioma. La especializacion en el dominio glucemico puede haber reducido el rendimiento en idiomas distintos del usado en el entrenamiento.
 - Contexto: se desconoce la longitud de contexto efectiva tras el ajuste; si el adaptador se entreno con secuencias cortas, el rendimiento en contextos largos puede deteriorarse.
-- Trazabilidad nula: no hay numero de version, commit, informe de evaluacion, autor identificable ni paper asociado. La etiqueta arxiv:1910.09700 del repositorio corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono, incluido en la plantilla automatica de HuggingFace, y no guarda relacion con el modelo.
+- Trazabilidad nula: no hay numero de version, commit, informe de evaluacion, autor identificable ni paper asociado. La etiqueta arxiv:1910.09700 del repositorio corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono, incluido en la plantilla automatica de Hugging Face, y no guarda relacion con el modelo.
 - Metadatos anomalos: la fecha de creacion registrada (1 de octubre de 2026) y la ausencia de descargas dificultan verificar la procedencia del repositorio.
 - Uso en produccion: no recomendado sin una evaluacion propia, sin licencia aclarada y sin un proceso de validacion clinica documentado.
 

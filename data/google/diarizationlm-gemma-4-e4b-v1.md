@@ -84,10 +84,10 @@ No se han publicado en la información disponible resultados de benchmarks gener
 
 | Modelo | Parametros | Modelo base | Contexto | WDER Fisher (%) | WDER Callhome (%) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| DiarizationLM-Gemma-4-E4B-v1 | 7.996.156.490 (~8,0B) segun safetensors; E4B descrito como 4B densos | Gemma 4 E4B | No disponible (entrenamiento con 2.560 tokens de secuencia maxima) | 2,99 | 4,92 | Apache 2.0 | HuggingFace, safetensors + GGUF |
-| DiarizationLM-8b-Fisher-v2 | 8B | Llama 3 8B | No disponible | 3,28 | 6,66 | No disponible | HuggingFace |
+| DiarizationLM-Gemma-4-E4B-v1 | 7.996.156.490 (~8,0B) segun safetensors; E4B descrito como 4B densos | Gemma 4 E4B | No disponible (entrenamiento con 2.560 tokens de secuencia maxima) | 2,99 | 4,92 | Apache 2.0 | Hugging Face, safetensors + GGUF |
+| DiarizationLM-8b-Fisher-v2 | 8B | Llama 3 8B | No disponible | 3,28 | 6,66 | No disponible | Hugging Face |
 | Baseline USM + Turn-to-Diarize | No aplica (no es un LLM) | USM + turn-to-diarize | No disponible | 5,32 | 7,74 | No disponible | No disponible |
-| Gemma 4 E4B (modelo base sin ajustar) | No disponible | --- | No disponible | No disponible | No disponible | No disponible | HuggingFace |
+| Gemma 4 E4B (modelo base sin ajustar) | No disponible | --- | No disponible | No disponible | No disponible | No disponible | Hugging Face |
 
 El modelo evaluado supera al ajuste basado en Llama 3 8B en Fisher y Callhome con aproximadamente la mitad de parámetros efectivos declarados, y en ICSI y AMI solo se compara contra el baseline acústico en la información disponible.
 
@@ -106,7 +106,7 @@ El modelo evaluado supera al ajuste basado en Llama 3 8B en Fisher y Callhome co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/google/DiarizationLM-Gemma-4-E4B-v1
+- Modelo en Hugging Face: https://huggingface.co/google/DiarizationLM-Gemma-4-E4B-v1
 - Modelo base: https://huggingface.co/google/gemma-4-E4B
 - Versión anterior basada en Llama 3 8B: https://huggingface.co/google/DiarizationLM-8b-Fisher-v2
 - Paper de DiarizationLM: https://arxiv.org/abs/2401.03506

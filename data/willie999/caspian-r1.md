@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Caspian-R1 es un ajuste fino del modelo LiquidAI/LFM2.5-350M publicado por el usuario Willie999 en HuggingFace. Se distribuye en formato safetensors con 354.483.968 parametros (aproximadamente 354 M) y un repositorio de 0,7 GB. La model card interna lo denomina Caspian-LFM2.5-350M-Reasoning y lo describe como un fine-tune entrenado mediante SFT con la libreria TRL, partiendo de la arquitectura etiquetada como lfm2.
+Caspian-R1 es un ajuste fino del modelo LiquidAI/LFM2.5-350M publicado por el usuario Willie999 en Hugging Face. Se distribuye en formato safetensors con 354.483.968 parametros (aproximadamente 354 M) y un repositorio de 0,7 GB. La model card interna lo denomina Caspian-LFM2.5-350M-Reasoning y lo describe como un fine-tune entrenado mediante SFT con la libreria TRL, partiendo de la arquitectura etiquetada como lfm2.
 
 El modelo se presenta para generacion de texto y uso conversacional (pipeline text-generation, etiqueta conversational), con un nombre interno que sugiere orientacion al razonamiento, aunque no se aporta ninguna evaluacion que lo respalde. No hay informacion publicada sobre el dataset de entrenamiento, el numero de tokens, la longitud de contexto, los idiomas soportados ni la licencia.
 
@@ -38,7 +38,7 @@ En cuanto al entrenamiento, la model card confirma unicamente que se empleo SFT 
 - Generacion de texto autoregresiva en el pipeline text-generation, con soporte de plantilla conversacional basada en roles de usuario y asistente.
 - Dialogo multi-turno, segun la etiqueta conversational y el ejemplo de uso incluido en la model card.
 - Razonamiento explicito: el nombre interno del modelo incluye el termino Reasoning, pero no se aporta ninguna evaluacion que lo demuestre.
-- Compatibilidad con endpoints de inferencia de HuggingFace (etiqueta endpoints_compatible).
+- Compatibilidad con endpoints de inferencia de Hugging Face (etiqueta endpoints_compatible).
 - Ajuste posterior: al estar entrenado con TRL, es reutilizable como punto de partida para nuevos ciclos de SFT.
 - Soporte de tool calling o function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -75,8 +75,8 @@ El unico punto de comparacion documentado en la informacion proporcionada es el 
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Willie999/Caspian-R1 | 354.483.968 | no disponible | SFT con TRL sobre LFM2.5-350M | no disponible | HuggingFace, safetensors, 0 descargas |
-| LiquidAI/LFM2.5-350M | 350 M (segun denominacion) | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | HuggingFace, modelo base oficial |
+| Willie999/Caspian-R1 | 354.483.968 | no disponible | SFT con TRL sobre LFM2.5-350M | no disponible | Hugging Face, safetensors, 0 descargas |
+| LiquidAI/LFM2.5-350M | 350 M (segun denominacion) | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face, modelo base oficial |
 | Alternativas del segmento sub-500M | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -93,7 +93,7 @@ El unico punto de comparacion documentado en la informacion proporcionada es el 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Willie999/Caspian-R1
+- Modelo en Hugging Face: https://huggingface.co/Willie999/Caspian-R1
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-350M
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Otros repositorios del mismo autor (sin relacion aparente con este modelo): https://huggingface.co/Willie999/caspian y https://huggingface.co/Willie999/Kasapa-V1

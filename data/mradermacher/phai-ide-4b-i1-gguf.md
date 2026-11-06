@@ -4,7 +4,7 @@
 
 PhAI-IDE-4B-i1-GGUF es un repositorio de cuantizaciones en formato GGUF generado por el usuario mradermacher a partir del modelo base AItonomy/PhAI-IDE-4B. No se trata, por tanto, de un modelo entrenado desde cero, sino de una conversión y cuantización del checkpoint original, realizada con el método i1 (imatrix), que emplea una matriz de importancia calculada sobre un corpus de calibración para minimizar la pérdida de calidad en cada nivel de bits.
 
-La única información técnica verificable del repositorio es la relativa al proceso de cuantización: versión de cuantización 2, cuantización de tensores de salida y conversión desde el formato HuggingFace. Se ofrecen 24 variantes de cuantización distintas, desde IQ1_S (aproximadamente 1,56 bits por peso) hasta Q6_K (aproximadamente 6,6 bits por peso), lo que permite desplegar el modelo en un espectro muy amplio de hardware, incluidos equipos sin GPU dedicada.
+La única información técnica verificable del repositorio es la relativa al proceso de cuantización: versión de cuantización 2, cuantización de tensores de salida y conversión desde el formato Hugging Face. Se ofrecen 24 variantes de cuantización distintas, desde IQ1_S (aproximadamente 1,56 bits por peso) hasta Q6_K (aproximadamente 6,6 bits por peso), lo que permite desplegar el modelo en un espectro muy amplio de hardware, incluidos equipos sin GPU dedicada.
 
 La relevancia práctica del repositorio es limitada pero concreta: permite ejecutar un modelo presuntamente orientado a tareas de IDE y desarrollo de software en hardware de consumo mediante llama.cpp y sus derivados. Sin embargo, el repositorio no incluye model card técnica, no declara licencia, no publica benchmarks y presenta metadatos internos inconsistentes, por lo que cualquier evaluación seria exige validación propia antes de considerarlo para producción.
 
@@ -84,7 +84,7 @@ No se han identificado alternativas verificables con la información disponible.
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | PhAI-IDE-4B-i1-GGUF (este repositorio) | no disponible (nombre sugiere 4B) | no disponible | no disponible | no disponible | GGUF, 24 cuantizaciones |
-| AItonomy/PhAI-IDE-4B (modelo base) | no disponible | no disponible | no disponible | no disponible | safetensors en HuggingFace |
+| AItonomy/PhAI-IDE-4B (modelo base) | no disponible | no disponible | no disponible | no disponible | safetensors en Hugging Face |
 | Otras alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones del modelo base que permitan una comparación rigurosa con modelos de parámetros similares orientados a código o a tareas de IDE.

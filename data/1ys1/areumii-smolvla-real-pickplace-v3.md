@@ -59,10 +59,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| 1ys1/areumii-smolvla-real-pickplace-v3 | 450.046.176 | no disponible | Apache 2.0 | HuggingFace |
-| lerobot/smolvla_base | no disponible | no disponible | Apache 2.0 | HuggingFace |
-| 1ys1/areumii-smolvla-real-pickplace-v1-baseline | no disponible | no disponible | Apache 2.0 | HuggingFace |
-| 1ys1/areumii-smolvla-pickplace-v4 | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| 1ys1/areumii-smolvla-real-pickplace-v3 | 450.046.176 | no disponible | Apache 2.0 | Hugging Face |
+| lerobot/smolvla_base | no disponible | no disponible | Apache 2.0 | Hugging Face |
+| 1ys1/areumii-smolvla-real-pickplace-v1-baseline | no disponible | no disponible | Apache 2.0 | Hugging Face |
+| 1ys1/areumii-smolvla-pickplace-v4 | no disponible | no disponible | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos publicados para estos modelos.
 
@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento comparativos publicados para estos modelos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/1ys1/areumii-smolvla-real-pickplace-v3
+- Modelo en Hugging Face: https://huggingface.co/1ys1/areumii-smolvla-real-pickplace-v3
 - Dataset de entrenamiento: https://huggingface.co/datasets/1ys1/areumii-real-pickplace-v3
 - Paper de SmolVLA: https://huggingface.co/papers/2506.01844
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot

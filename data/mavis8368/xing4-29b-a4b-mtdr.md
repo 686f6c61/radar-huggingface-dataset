@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Xing4-29B-A4B-MTDR es un modelo publicado en HuggingFace por el usuario mavis8368 bajo licencia Apache 2.0. En el momento de redactar esta ficha, la model card del repositorio no contiene nada mas que la declaracion de licencia: no se documenta arquitectura, datos de entrenamiento, tokenizador, idiomas soportados, formato de pesos ni procedimiento de uso. El repositorio registra 0 descargas y 0 likes, y no muestra actualizaciones desde su creacion el 18 de septiembre de 2026.
+Xing4-29B-A4B-MTDR es un modelo publicado en Hugging Face por el usuario mavis8368 bajo licencia Apache 2.0. En el momento de redactar esta ficha, la model card del repositorio no contiene nada mas que la declaracion de licencia: no se documenta arquitectura, datos de entrenamiento, tokenizador, idiomas soportados, formato de pesos ni procedimiento de uso. El repositorio registra 0 descargas y 0 likes, y no muestra actualizaciones desde su creacion el 18 de septiembre de 2026.
 
 El unico indicio sobre las caracteristicas del modelo es su propio nombre. La convencion "29B-A4B" es la empleada en familias como Qwen3 MoE para indicar aproximadamente 29.000 millones de parametros totales y 4.000 millones de parametros activos por token, lo que sugeriria una arquitectura de mezcla de expertos (MoE) de unos 30B con enrutado disperso. El sufijo "MTDR" no corresponde a ninguna convencion conocida y no aparece explicado en ninguna fuente consultada. Se trata, por tanto, de una inferencia a partir del nombre, no de un dato confirmado por el autor.
 
@@ -81,7 +81,7 @@ Si se confirmase el esquema MoE de ~30B totales y ~4B activos sugerido por el no
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| Xing4-29B-A4B-MTDR | no disponible | no disponible | apache-2.0 | no disponible | repositorio HuggingFace sin pesos confirmados |
+| Xing4-29B-A4B-MTDR | no disponible | no disponible | apache-2.0 | no disponible | repositorio Hugging Face sin pesos confirmados |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -100,7 +100,7 @@ Si se confirmase el esquema MoE de ~30B totales y ~4B activos sugerido por el no
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mavis8368/Xing4-29B-A4B-MTDR
+- Repositorio en Hugging Face: https://huggingface.co/mavis8368/Xing4-29B-A4B-MTDR
 - Pagina de licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
 
 La busqueda web realizada no devolvio ningun enlace relevante sobre este modelo: los resultados obtenidos correspondian a paginas corporativas de Microsoft sin relacion con Xing4-29B-A4B-MTDR. No se han localizado papers, blogs tecnicos, repositorios de codigo ni demos asociados al modelo.

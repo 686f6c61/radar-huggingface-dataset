@@ -22,7 +22,7 @@ Es relevante para quienes sirven modelos Qwen3.5 de ~27B en GPUs de 32 GB con vL
 | Formato de pesos | safetensors (GPTQ 4-bit + tensores BF16); no se publican GGUF ni otros formatos |
 | Modelo base | swift-1-5/swift-1-5-qwen3-8-27b-uncensored |
 | Tamaño del repositorio | 17,1 GB |
-| Fecha de publicación | 26 de octubre de 2026 (según HuggingFace) |
+| Fecha de publicación | 26 de octubre de 2026 (según Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -76,9 +76,9 @@ No se dispone de datos de especificaciones ni de rendimiento de modelos alternat
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (Launch80 INT4 + o_proj BF16) | ~27,8 mil millones | 131k (config. de servicio) | INT4 GPTQ + 1 tensor BF16 | Apache 2.0 | HuggingFace, safetensors |
+| Este checkpoint (Launch80 INT4 + o_proj BF16) | ~27,8 mil millones | 131k (config. de servicio) | INT4 GPTQ + 1 tensor BF16 | Apache 2.0 | Hugging Face, safetensors |
 | Bake INT4 puro (Launch80) | ~27,8 mil millones | no disponible | INT4 GPTQ | Apache 2.0 (heredada) | Referenciado en la model card |
-| swift-1-5-qwen3-8-27b-uncensored (base) | no disponible en detalle | no disponible | BF16 (referencia de error) | Apache 2.0 | HuggingFace |
+| swift-1-5-qwen3-8-27b-uncensored (base) | no disponible en detalle | no disponible | BF16 (referencia de error) | Apache 2.0 | Hugging Face |
 | Otras alternativas de ~27-32B (Qwen3, Gemma, etc.) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -90,12 +90,12 @@ No se dispone de datos de especificaciones ni de rendimiento de modelos alternat
 - Hereda los artefactos propios de GPTQ INT4, incluida una degradación no uniforme en las capas no promocionadas.
 - Doce promociones adicionales de grupos qkv fusionados, seleccionadas por Hessiana, quedan pendientes de un parche en el cargador de vLLM; el repositorio sirve intencionadamente solo la promoción aislada que carga sin problemas.
 - Licencia Apache 2.0 permite uso comercial, pero la responsabilidad sobre el comportamiento del modelo base sin censura y sobre el cumplimiento normativo recae en el desplegador.
-- El checkpoint no tiene descargas ni valoraciones en HuggingFace en el momento de la consulta; no hay validación independiente de las métricas reportadas.
+- El checkpoint no tiene descargas ni valoraciones en Hugging Face en el momento de la consulta; no hay validación independiente de las métricas reportadas.
 - La fecha de publicación registrada (26 de octubre de 2026) es posterior a la fecha actual de referencia habitual, lo que conviene verificar antes de citar el artefacto.
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/davetha/launch80-swift15-qwen27b-unc-int4-bodyp-bf16
+- Hugging Face del modelo: https://huggingface.co/davetha/launch80-swift15-qwen27b-unc-int4-bodyp-bf16
 - Modelo base: https://huggingface.co/swift-1-5/swift-1-5-qwen3-8-27b-uncensored
 - Configuración de cuantización incluida en el repositorio: `quantize_config.json`
 - Documentación de vLLM (requisito >= 0.30): no se proporciona enlace en la información disponible

@@ -65,7 +65,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- [HuggingFace - localized-ft/OLMo-3-7B-old-bird-names-v2-kld-seed5](https://huggingface.co/localized-ft/OLMo-3-7B-old-bird-names-v2-kld-seed5)
+- [Hugging Face - localized-ft/OLMo-3-7B-old-bird-names-v2-kld-seed5](https://huggingface.co/localized-ft/OLMo-3-7B-old-bird-names-v2-kld-seed5)
 - [Modelo similar: OLMo-3-7B-old-bird-names-second-third-v2-sft-seed3-epoch3](https://huggingface.co/localized-ft/OLMo-3-7B-old-bird-names-second-third-v2-sft-seed3-epoch3)
 - [Modelo similar: OLMo-3-7B-old-bird-names-first-third-v2-sft-seed5](https://huggingface.co/localized-ft/OLMo-3-7B-old-bird-names-first-third-v2-sft-seed5)
 - [Modelo similar en FriendliAI](https://friendli.ai/models/localized-ft/OLMo-3-7B-old-bird-names-last-third-v2-sft-seed4)

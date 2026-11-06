@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `purabshingvi/hw1-hc3-detector` es un clasificador de texto basado en la familia BERT y publicado en HuggingFace Hub por el usuario purabshingvi. Se distribuye con la librería transformers y el pipeline `text-classification`, y sus pesos en safetensors suman 22.713.986 parámetros, lo que lo sitúa en el rango de los encoders compactos, muy por debajo de un BERT-base estándar (110 millones). El repositorio ocupa aproximadamente 0,1 GB y el modelo acumula 10 descargas y 0 me gusta en el momento de la consulta.
+El modelo `purabshingvi/hw1-hc3-detector` es un clasificador de texto basado en la familia BERT y publicado en Hugging Face Hub por el usuario purabshingvi. Se distribuye con la librería transformers y el pipeline `text-classification`, y sus pesos en safetensors suman 22.713.986 parámetros, lo que lo sitúa en el rango de los encoders compactos, muy por debajo de un BERT-base estándar (110 millones). El repositorio ocupa aproximadamente 0,1 GB y el modelo acumula 10 descargas y 0 me gusta en el momento de la consulta.
 
-La relevancia de esta ficha es limitada y conviene ser explícito al respecto: la model card publicada es la plantilla automática de HuggingFace sin rellenar, de modo que no hay información sobre datos de entrenamiento, idiomas, licencia, métricas de evaluación ni uso previsto. El identificador sugiere un trabajo de tipo "hw1" (posiblemente una primera práctica académica) y un detector asociado a las siglas HC3, pero esto es una inferencia a partir del nombre y no un dato confirmado por el autor.
+La relevancia de esta ficha es limitada y conviene ser explícito al respecto: la model card publicada es la plantilla automática de Hugging Face sin rellenar, de modo que no hay información sobre datos de entrenamiento, idiomas, licencia, métricas de evaluación ni uso previsto. El identificador sugiere un trabajo de tipo "hw1" (posiblemente una primera práctica académica) y un detector asociado a las siglas HC3, pero esto es una inferencia a partir del nombre y no un dato confirmado por el autor.
 
 Por tanto, esta ficha documenta lo que puede verificarse objetivamente (arquitectura, número de parámetros, formato de pesos, tamaño del repositorio y compatibilidad con el ecosistema transformers) y marca de forma explícita todo lo demás como no disponible. No se recomienda su uso en producción sin una evaluación previa por parte del integrador.
 
@@ -38,7 +38,7 @@ No hay informacion sobre el corpus de entrenamiento, el numero de tokens vistos,
 - Agentes y razonamiento multi-paso: no soportado segun la informacion disponible.
 - Capacidades multilingues: no disponible; el autor no declara idiomas.
 - Capacidades especiales (modo thinking, vision, audio): no disponible.
-- Compatibilidad de despliegue: el repositorio esta marcado como `text-embeddings-inference` y `endpoints_compatible`, lo que indica que puede servirse mediante la infraestructura de inference endpoints de HuggingFace.
+- Compatibilidad de despliegue: el repositorio esta marcado como `text-embeddings-inference` y `endpoints_compatible`, lo que indica que puede servirse mediante la infraestructura de inference endpoints de Hugging Face.
 
 ## Casos de uso
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: aproximadamente 91 MB en fp32 (22,71 M de parametros x 4 bytes) y unos 45 MB en fp16/bf16. En la practica, el consumo total dependera del framework y del tamano de lote, pero se mantiene holgadamente por debajo de 1 GB incluso con lotes grandes.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de memoria es suficiente. El modelo no necesita A100, H100 ni tarjetas de gama alta; una GTX 1650, una T4 o una RTX 3060 lo sirven sin dificultad.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU de consumo actual e incluso en iGPU con memoria compartida. Tambien es viable la inferencia en CPU, con latencias de milisegundos por secuencia corta en procesadores modernos.
-- Opciones de despliegue: transformers (Python), Text Embeddings Inference (el repositorio esta marcado con esa etiqueta), HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`), ONNX Runtime y torch.compile. No se han publicado pesos GGUF, por lo que llama.cpp y Ollama no estan disponibles por defecto, salvo conversion manual.
+- Opciones de despliegue: transformers (Python), Text Embeddings Inference (el repositorio esta marcado con esa etiqueta), Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`), ONNX Runtime y torch.compile. No se han publicado pesos GGUF, por lo que llama.cpp y Ollama no estan disponibles por defecto, salvo conversion manual.
 - Latencia y throughput estimados: no disponible. No hay datos publicados de latencia ni de tokens por segundo, y al tratarse de un clasificador la metrica relevante seria el numero de secuencias clasificadas por segundo, que el autor no reporta.
 
 ## Comparativa con modelos similares
@@ -71,10 +71,10 @@ La comparacion se limita a especificaciones verificables, ya que no existen dato
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| purabshingvi/hw1-hc3-detector | 22,7 M | no disponible | no disponible | HuggingFace Hub; 10 descargas, 0 likes | no disponible |
-| google-bert/bert-base-uncased | 110 M | 512 tokens | Apache 2.0 | HuggingFace Hub; ampliamente desplegado | metricas publicas en GLUE |
-| distilbert-base-uncased | 66 M | 512 tokens | Apache 2.0 | HuggingFace Hub | ~97 % del rendimiento de BERT-base en GLUE segun su paper |
-| prajjwal1/bert-tiny | 4,4 M | 512 tokens | Apache 2.0 | HuggingFace Hub | orientado a experimentacion, no a produccion |
+| purabshingvi/hw1-hc3-detector | 22,7 M | no disponible | no disponible | Hugging Face Hub; 10 descargas, 0 likes | no disponible |
+| google-bert/bert-base-uncased | 110 M | 512 tokens | Apache 2.0 | Hugging Face Hub; ampliamente desplegado | metricas publicas en GLUE |
+| distilbert-base-uncased | 66 M | 512 tokens | Apache 2.0 | Hugging Face Hub | ~97 % del rendimiento de BERT-base en GLUE segun su paper |
+| prajjwal1/bert-tiny | 4,4 M | 512 tokens | Apache 2.0 | Hugging Face Hub | orientado a experimentacion, no a produccion |
 
 No se dispone de datos para afirmar si este modelo supera o no a los anteriores en la tarea para la que fue entrenado.
 
@@ -92,7 +92,7 @@ No se dispone de datos para afirmar si este modelo supera o no a los anteriores 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/purabshingvi/hw1-hc3-detector
+- Modelo en Hugging Face: https://huggingface.co/purabshingvi/hw1-hc3-detector
 - Paper citado en las etiquetas del repositorio (Lacoste et al., 2019, sobre estimacion de emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental referenciada en la plantilla de la model card: https://mlco2.github.io/impact
 - Repositorio, paper, demo y contacto del autor: no disponibles en la informacion proporcionada.

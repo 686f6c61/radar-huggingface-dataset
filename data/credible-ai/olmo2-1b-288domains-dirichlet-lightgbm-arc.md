@@ -69,10 +69,10 @@ Los datos de los modelos alternativos provienen del conocimiento general del eco
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| olmo2-1B-288domains-dirichlet-lightgbm-arc (credible-ai) | 1,41B | no disponible | Artefacto de investigacion sobre mezcla de datos (RegMix/LinMix), solo ingles | MIT | HuggingFace, 0 descargas |
-| OLMo 2 1B (AllenAI) | ~1,5B (no verificado) | no verificado | Modelo base generalista, preentrenamiento a gran escala | Apache 2.0 (no verificado) | HuggingFace, ampliamente utilizado |
-| SmolLM2-1.7B (HuggingFace) | 1,71B | 8.192 tokens (no verificado) | Base e instruct, enfoque en eficiencia y uso en dispositivo | Apache 2.0 (no verificado) | HuggingFace, muy desplegado |
-| Llama 3.2 1B (Meta) | 1,24B | 128.000 tokens (no verificado) | Base e instruct, multilingue | Llama 3.2 Community License | HuggingFace, ecosistema amplio |
+| olmo2-1B-288domains-dirichlet-lightgbm-arc (credible-ai) | 1,41B | no disponible | Artefacto de investigacion sobre mezcla de datos (RegMix/LinMix), solo ingles | MIT | Hugging Face, 0 descargas |
+| OLMo 2 1B (AllenAI) | ~1,5B (no verificado) | no verificado | Modelo base generalista, preentrenamiento a gran escala | Apache 2.0 (no verificado) | Hugging Face, ampliamente utilizado |
+| SmolLM2-1.7B (Hugging Face) | 1,71B | 8.192 tokens (no verificado) | Base e instruct, enfoque en eficiencia y uso en dispositivo | Apache 2.0 (no verificado) | Hugging Face, muy desplegado |
+| Llama 3.2 1B (Meta) | 1,24B | 128.000 tokens (no verificado) | Base e instruct, multilingue | Llama 3.2 Community License | Hugging Face, ecosistema amplio |
 
 La diferencia clave frente a las alternativas no es de rendimiento sino de proposito: los otros tres son modelos generalistas con pipelines de alineamiento y evaluaciones publicas, mientras que este checkpoint es un artefacto experimental sin datos de benchmark, sin contexto documentado y con capacidad declarada unicamente en ingles.
 
@@ -92,7 +92,7 @@ La diferencia clave frente a las alternativas no es de rendimiento sino de propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/credible-ai/olmo2-1B-288domains-dirichlet-lightgbm-arc
+- Modelo en Hugging Face: https://huggingface.co/credible-ai/olmo2-1B-288domains-dirichlet-lightgbm-arc
 - Modelo proxy del enjambre Dirichlet (60M): https://huggingface.co/credible-ai/olmo2-60M-288domains-dirichlet
 - Codigo de LinMix: https://github.com/credibleai/linmix
 - OLMo-core (framework de entrenamiento): https://github.com/allenai/OLMo-core

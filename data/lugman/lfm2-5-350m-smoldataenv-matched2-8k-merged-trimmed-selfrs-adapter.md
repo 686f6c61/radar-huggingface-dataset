@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| lugman/LFM2.5-350M-SmolDataEnv-Matched2.8K-Merged-Trimmed-SelfRS-adapter | 350M | no disponible (2.8K segun nombre) | Apache 2.0 | HuggingFace, 0 descargas |
-| LiquidAI/LFM2.5-350M (base) | 350M | no disponible | Apache 2.0 | HuggingFace, modelo oficial |
-| Qwen2.5-0.5B | 500M | 32K | Apache 2.0 | HuggingFace, ampliamente usado |
-| SmolLM2-360M | 360M | 8K | Apache 2.0 | HuggingFace, con benchmarks publicados |
+| lugman/LFM2.5-350M-SmolDataEnv-Matched2.8K-Merged-Trimmed-SelfRS-adapter | 350M | no disponible (2.8K segun nombre) | Apache 2.0 | Hugging Face, 0 descargas |
+| LiquidAI/LFM2.5-350M (base) | 350M | no disponible | Apache 2.0 | Hugging Face, modelo oficial |
+| Qwen2.5-0.5B | 500M | 32K | Apache 2.0 | Hugging Face, ampliamente usado |
+| SmolLM2-360M | 360M | 8K | Apache 2.0 | Hugging Face, con benchmarks publicados |
 
 La comparativa se limita a datos estructurales; no hay benchmarks de este ajuste fino que permitan comparar rendimiento real frente a las alternativas.
 
@@ -83,6 +83,6 @@ La comparativa se limita a datos estructurales; no hay benchmarks de este ajuste
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lugman/LFM2.5-350M-SmolDataEnv-Matched2.8K-Merged-Trimmed-SelfRS-adapter
+- Modelo en Hugging Face: https://huggingface.co/lugman/LFM2.5-350M-SmolDataEnv-Matched2.8K-Merged-Trimmed-SelfRS-adapter
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-350M
 - Unsloth (herramienta de entrenamiento): https://github.com/unslothai/unsloth

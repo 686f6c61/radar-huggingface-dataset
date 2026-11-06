@@ -51,10 +51,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 ## Comparativa con modelos similares
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Nekodeus/starcoder2-7b-openvino | 7B | 8k | BigCode OpenRAIL-M v1 | OpenVINO IR INT8 | HuggingFace |
-| bigcode/starcoder2-7b | 7B | 16k | BigCode OpenRAIL-M v1 | safetensors | HuggingFace |
-| CodeLlama-7B | 7B | 16k | Llama 2 | safetensors | HuggingFace (Meta) |
-| DeepSeek-Coder-7B | 7B | 16k | DeepSeek License | safetensors | HuggingFace |
+| Nekodeus/starcoder2-7b-openvino | 7B | 8k | BigCode OpenRAIL-M v1 | OpenVINO IR INT8 | Hugging Face |
+| bigcode/starcoder2-7b | 7B | 16k | BigCode OpenRAIL-M v1 | safetensors | Hugging Face |
+| CodeLlama-7B | 7B | 16k | Llama 2 | safetensors | Hugging Face (Meta) |
+| DeepSeek-Coder-7B | 7B | 16k | DeepSeek License | safetensors | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo en la información proporcionada.
 
@@ -67,5 +67,5 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 - Caveats para producción: la cuantización INT8 puede degradar ligeramente la calidad de las generaciones en comparación con el modelo en FP16. Además, el formato OpenVINO IR está atado al ecosistema OpenVINO, lo que puede limitar la portabilidad a otros runtimes. La model card no proporciona información sobre el proceso de cuantización (calibración, dataset) ni sobre la pérdida de precisión.
 
 ## Enlaces
-- [Nekodeus/starcoder2-7b-openvino en HuggingFace](https://huggingface.co/Nekodeus/starcoder2-7b-openvino)
+- [Nekodeus/starcoder2-7b-openvino en Hugging Face](https://huggingface.co/Nekodeus/starcoder2-7b-openvino)
 - [bigcode/starcoder2-7b (modelo base)](https://huggingface.co/bigcode/starcoder2-7b)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-jsclark1986/mocov3-multitask es un prototipo de investigación publicado en HuggingFace por el usuario jsclark1986, orientado a tareas multitarea y etiquetado como mocov3 dentro del ecosistema PyTorch. No se trata de un modelo entrenado ni de un checkpoint evaluado: la propia model card lo describe explícitamente como una implementación de referencia con una configuración "nano" cuyo checkpoint `model.safetensors` es únicamente una inicialización válida para pruebas de humo (smoke tests), no un modelo con pesos entrenados.
+jsclark1986/mocov3-multitask es un prototipo de investigación publicado en Hugging Face por el usuario jsclark1986, orientado a tareas multitarea y etiquetado como mocov3 dentro del ecosistema PyTorch. No se trata de un modelo entrenado ni de un checkpoint evaluado: la propia model card lo describe explícitamente como una implementación de referencia con una configuración "nano" cuyo checkpoint `model.safetensors` es únicamente una inicialización válida para pruebas de humo (smoke tests), no un modelo con pesos entrenados.
 
 El tamaño real declarado en el repositorio es de 33.088 parámetros totales, lo que sitúa el artefacto muy lejos de un modelo de lenguaje utilizable en producción y lo acerca a un ejercicio de ingeniería reproducible: el repositorio incluye `main.py` (artefacto principal), `config.json` (configuración de arquitectura), `training_args.json` (receta de experimento por defecto) y el propio `model.safetensors`. La arquitectura declarada combina atención con grouped query, fusión del tipo tucker, activación gelu tanh y normalización batchnorm, dentro de una etiqueta genérica "Mocov3".
 
@@ -21,7 +21,7 @@ Su relevancia actual es limitada y de carácter metodológico: sirve como planti
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors (acompañado de `main.py`, `config.json` y `training_args.json`) |
 | Escala declarada | nano |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
 | Tamano del repositorio | 0,0 GB |
 | Fecha de creacion / actualizacion | 2026-09-12 |
@@ -70,7 +70,7 @@ No se han identificado modelos comparables en la informacion disponible. Con 33.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jsclark1986/mocov3-multitask | 33.088 | no disponible | Sin benchmarks reclamados | apache-2.0 | Repositorio HuggingFace con checkpoint de inicializacion |
+| jsclark1986/mocov3-multitask | 33.088 | no disponible | Sin benchmarks reclamados | apache-2.0 | Repositorio Hugging Face con checkpoint de inicializacion |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -87,5 +87,5 @@ No se han identificado modelos comparables en la informacion disponible. Con 33.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jsclark1986/mocov3-multitask
+- Modelo en Hugging Face: https://huggingface.co/jsclark1986/mocov3-multitask
 - No se han encontrado papers, blogs, repositorios ni demos adicionales asociados a este modelo en la busqueda web disponible.

@@ -70,7 +70,7 @@ No se dispone de información sobre otras políticas publicadas para el microduc
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `apirrone/velstand_improve_standup` | no disponible | no aplica | no disponible | no disponible | HuggingFace (0 descargas, 0 likes) |
+| `apirrone/velstand_improve_standup` | no disponible | no aplica | no disponible | no disponible | Hugging Face (0 descargas, 0 likes) |
 | Otras políticas del ecosistema microduck | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -86,7 +86,7 @@ No se dispone de información sobre otras políticas publicadas para el microduc
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/apirrone/velstand_improve_standup
+- Hugging Face: https://huggingface.co/apirrone/velstand_improve_standup
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento (referenciado en la model card): `pollen-robotics/microduck_rl`, rama `standup_foot_catch`, commit `12cfed24d` (no se proporciona URL directa)
 - Documentación del manifiesto de políticas: `docs/policy-manifest.md` dentro del repositorio del daemon (no se proporciona URL directa)

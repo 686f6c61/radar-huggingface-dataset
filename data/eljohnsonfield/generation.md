@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`eljohnsonfield/generation` es un repositorio experimental publicado en HuggingFace que contiene una implementación compacta y personalizada en PyTorch de una arquitectura denominada MoCo v3, configurada para tareas de generación. El autor es eljohnsonfield y el repositorio se distribuye bajo licencia BSD-3-Clause. No se trata de un modelo preentrenado listo para producción: la propia model card indica que el checkpoint incluido es una inicialización válida para pruebas de humo y experimentos controlados, no un modelo entrenado ni evaluado con benchmarks.
+`eljohnsonfield/generation` es un repositorio experimental publicado en Hugging Face que contiene una implementación compacta y personalizada en PyTorch de una arquitectura denominada MoCo v3, configurada para tareas de generación. El autor es eljohnsonfield y el repositorio se distribuye bajo licencia BSD-3-Clause. No se trata de un modelo preentrenado listo para producción: la propia model card indica que el checkpoint incluido es una inicialización válida para pruebas de humo y experimentos controlados, no un modelo entrenado ni evaluado con benchmarks.
 
 El dato más relevante del repositorio es su escala declarada: configuración "xlarge" con atención de consultas agrupadas (grouped query attention), fusión mediante cross attention, activación mish y normalización scalenorm. El recuento real de parámetros en el fichero safetensors es de 33.088, una cifra extremadamente baja que resulta coherente con un artefacto de inicialización o de prueba, no con un modelo xlarge en el sentido habitual del término.
 
@@ -74,5 +74,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/eljohnsonfield/generation
+- Repositorio en Hugging Face: https://huggingface.co/eljohnsonfield/generation
 - No se han encontrado en la información proporcionada papers, blogs, repositorios adicionales ni demos.

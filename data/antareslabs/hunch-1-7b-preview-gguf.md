@@ -36,7 +36,7 @@ La innovacion tecnica documentada en esta publicacion se refiere al proceso de c
 - Capacidades multilingues: no disponible.
 - Capacidades especiales (modo thinking, audio, vision): no disponible.
 - Carga mediante runner propio: el modelo se integra con la libreria del repositorio Hunch a traves de `hunch.formats.hunch_gguf.load(path)`, que aplica automaticamente la temperatura de release embebida en el archivo GGUF.
-- Compatibilidad declarada con endpoints: la etiqueta `endpoints_compatible` sugiere que el artefacto puede desplegarse en infraestructura de endpoints compatibles con HuggingFace.
+- Compatibilidad declarada con endpoints: la etiqueta `endpoints_compatible` sugiere que el artefacto puede desplegarse en infraestructura de endpoints compatibles con Hugging Face.
 
 ## Casos de uso
 
@@ -77,7 +77,7 @@ No se dispone de datos verificados de alternativas en la informacion proporciona
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| hunch-1.7b-preview-GGUF | 1.720.574.976 | no disponible | Apache-2.0 | GGUF en HuggingFace |
+| hunch-1.7b-preview-GGUF | 1.720.574.976 | no disponible | Apache-2.0 | GGUF en Hugging Face |
 | Alternativas de ~1,5-2B | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -95,8 +95,8 @@ No se dispone de datos verificados de alternativas en la informacion proporciona
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/antareslabs/hunch-1.7b-preview-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/antareslabs/hunch-1.7b-preview
+- Repositorio GGUF en Hugging Face: https://huggingface.co/antareslabs/hunch-1.7b-preview-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/antareslabs/hunch-1.7b-preview
 - Repositorio del proyecto Hunch en GitHub: https://github.com/antareslabsorg/hunch
 - Documentacion de carga del modelo (README): https://github.com/antareslabsorg/hunch/blob/main/README.md
 - Documentacion de formatos y reglas de la puerta de equivalencia (FORMATS.md): https://github.com/antareslabsorg/hunch/blob/main/FORMATS.md

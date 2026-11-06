@@ -74,7 +74,7 @@ No se han proporcionado datos de benchmarks ni especificaciones de modelos alter
 
 | Modelo | Parámetros | Contexto | Precisión GenImage | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LTF v3.3 (HiDA v3.3) | no disponible (backbone ViT-L/14) | no aplica | 98,39% (fusión, histórico) | no disponible | HuggingFace |
+| LTF v3.3 (HiDA v3.3) | no disponible (backbone ViT-L/14) | no aplica | 98,39% (fusión, histórico) | no disponible | Hugging Face |
 | Alternativas | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -93,7 +93,7 @@ No se han proporcionado datos de benchmarks ni especificaciones de modelos alter
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/MuskAI/LTF-v3.3
+- Repositorio Hugging Face: https://huggingface.co/MuskAI/LTF-v3.3
 - OpenCLIP/CLIP de OpenAI (componente upstream): https://github.com/openai/CLIP
 - Licencia MIT de CLIP: https://github.com/openai/CLIP/blob/main/LICENSE
 - Métricas por subconjunto: `results/genimage8_logged_metrics.csv` (incluido en el repositorio)

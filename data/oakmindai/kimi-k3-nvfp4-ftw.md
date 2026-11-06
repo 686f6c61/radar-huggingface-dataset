@@ -85,7 +85,7 @@ No se dispone de informacion suficiente para una comparativa rigurosa con modelo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/oakmindai/Kimi-K3-NVFP4-FTW
+- Repositorio Hugging Face: https://huggingface.co/oakmindai/Kimi-K3-NVFP4-FTW
 - Checkpoint base cuantizado: https://huggingface.co/nvidia/Kimi-K3-NVFP4
 - Modelo base original: https://huggingface.co/moonshotai/Kimi-K3
 - Repositorio SparkLab: https://github.com/sixteen-miles-labs/sparklab

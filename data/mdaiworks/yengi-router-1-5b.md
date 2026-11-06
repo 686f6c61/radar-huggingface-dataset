@@ -91,7 +91,7 @@ La diferencia principal de Yengi Router frente a estas alternativas no es de cap
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mdaiworks/yengi-router-1.5b
+- Modelo en Hugging Face: https://huggingface.co/mdaiworks/yengi-router-1.5b
 - Repositorio de Yengi IDE: https://github.com/mdaiWorks/Yengi
 - Perfil del desarrollador en GitHub: https://github.com/mdaiworks
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Memory-Resoner es un modelo de la organizacion Elda-AI publicado en HuggingFace y orientado a tareas de memoria conversacional en coreano. Segun las etiquetas del repositorio, esta especializado en resolucion de correferencia (ko_coref), deteccion de menciones, resolucion de anaforas y enlazado de entidades (entity linking) dentro de dialogos. Su pipeline declarado es feature-extraction, lo que indica que se utiliza principalmente para generar representaciones (embeddings) o puntuaciones sobre secuencias, mas que como modelo generativo de texto libre.
+Memory-Resoner es un modelo de la organizacion Elda-AI publicado en Hugging Face y orientado a tareas de memoria conversacional en coreano. Segun las etiquetas del repositorio, esta especializado en resolucion de correferencia (ko_coref), deteccion de menciones, resolucion de anaforas y enlazado de entidades (entity linking) dentro de dialogos. Su pipeline declarado es feature-extraction, lo que indica que se utiliza principalmente para generar representaciones (embeddings) o puntuaciones sobre secuencias, mas que como modelo generativo de texto libre.
 
 El modelo cuenta con 149.324.547 parametros (aproximadamente 149 millones) y se distribuye en formato safetensors con pesos compatibles con la libreria transformers, ademas de requerir codigo personalizado (custom_code) para su carga y ejecucion. Esta etiquetado como encoder y como adecuado para aplicaciones en tiempo real, lo que sugiere un diseno orientado a baja latencia para su integracion en sistemas conversacionales que necesitan mantener y resolver referencias a lo largo de un dialogo.
 
-Es relevante para desarrolladores que construyen asistentes conversacionales en coreano y necesitan una capa de gestion de memoria que identifique a que entidad o mencion previa se refiere el usuario. Su acceso esta restringido (gated): es necesario aceptar condiciones en HuggingFace y se distribuye bajo la licencia elda-community-license-1.0, cuyos terminos exactos de uso comercial no estan detallados en la informacion disponible.
+Es relevante para desarrolladores que construyen asistentes conversacionales en coreano y necesitan una capa de gestion de memoria que identifique a que entidad o mencion previa se refiere el usuario. Su acceso esta restringido (gated): es necesario aceptar condiciones en Hugging Face y se distribuye bajo la licencia elda-community-license-1.0, cuyos terminos exactos de uso comercial no estan detallados en la informacion disponible.
 
 ## Especificaciones tecnicas
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Estas cifras corresponden unicamente a los pesos; hay que anadir memoria para activaciones, tokenizador y overhead del runtime, por lo que en la practica conviene reservar al menos 1-2 GB adicionales.
 - GPU recomendadas: al tratarse de un modelo de ~149M de parametros, cabe holgadamente en cualquier GPU de consumo actual (por ejemplo, RTX 3060, RTX 4060, RTX 4090) e incluso en CPU para cargas moderadas. GPU de datacenter (A100, H100) solo serian necesarias para despliegues de muy alto throughput por lotes.
 - Cabe en GPU de consumo: si, en practicamente todas las GPU modernas con al menos 4 GB de VRAM.
-- Opciones de despliegue: al ser un modelo de transformers con feature-extraction, es compatible en principio con frameworks como HuggingFace Transformers, Text Embeddings Inference (TEI) y, potencialmente, vLLM u ONNX Runtime. No se confirma soporte para llama.cpp u Ollama, dado que no se publican pesos GGUF.
+- Opciones de despliegue: al ser un modelo de transformers con feature-extraction, es compatible en principio con frameworks como Hugging Face Transformers, Text Embeddings Inference (TEI) y, potencialmente, vLLM u ONNX Runtime. No se confirma soporte para llama.cpp u Ollama, dado que no se publican pesos GGUF.
 - Latencia y throughput estimados: no disponibles. La etiqueta "real-time" sugiere baja latencia, pero no se aportan mediciones concretas.
 
 ## Comparativa con modelos similares
@@ -81,7 +81,7 @@ No disponible: no se han encontrado en la informacion proporcionada modelos comp
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated, por lo que es necesario aceptar condiciones en HuggingFace antes de descargar los pesos.
+- Acceso restringido: el repositorio es gated, por lo que es necesario aceptar condiciones en Hugging Face antes de descargar los pesos.
 - Licencia no estandar: elda-community-license-1.0 esta clasificada como "license:other". Los terminos exactos de uso comercial, redistribucion o modificacion no se detallan en la informacion disponible y deben revisarse en el repositorio antes de cualquier uso en produccion.
 - Codigo personalizado: al requerir custom_code, la carga implica ejecutar codigo remoto del repositorio; conviene auditar dicho codigo antes de desplegarlo en entornos productivos.
 - Cobertura linguistica limitada: unicamente soporta coreano (ko), por lo que no es adecuado para conversaciones multilingues.
@@ -94,7 +94,7 @@ No disponible: no se han encontrado en la informacion proporcionada modelos comp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Elda-AI/memory-resoner
+- Hugging Face: https://huggingface.co/Elda-AI/memory-resoner
 - Paper: no disponible
 - Blog o documentacion del autor: no disponible
 - Repositorio de codigo: no disponible

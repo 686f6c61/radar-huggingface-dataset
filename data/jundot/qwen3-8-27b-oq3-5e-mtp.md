@@ -89,8 +89,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Jundot/Qwen3.8-27B-oQ3.5e-mtp | 27,781B | 262.144 tokens | MLX safetensors | Mixta 3/4/5/8 bits + BF16, 4,258 bits/peso | Apache-2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3.8-27B (modelo base) | 27,781B (estimado por herencia) | 262.144 tokens | Safetensors | BF16 | Apache-2.0 | HuggingFace, repositorio original |
+| Jundot/Qwen3.8-27B-oQ3.5e-mtp | 27,781B | 262.144 tokens | MLX safetensors | Mixta 3/4/5/8 bits + BF16, 4,258 bits/peso | Apache-2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3.8-27B (modelo base) | 27,781B (estimado por herencia) | 262.144 tokens | Safetensors | BF16 | Apache-2.0 | Hugging Face, repositorio original |
 | Otras cuantizaciones de la misma familia | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de otros checkpoints comparables en la informacion proporcionada, por lo que no es posible contrastar calidad, velocidad de inferencia ni huella de memoria frente a alternativas de la misma categoria.
@@ -109,7 +109,7 @@ No se dispone de datos de otros checkpoints comparables en la informacion propor
 
 ## Enlaces
 
-- Checkpoint en HuggingFace: https://huggingface.co/Jundot/Qwen3.8-27B-oQ3.5e-mtp
+- Checkpoint en Hugging Face: https://huggingface.co/Jundot/Qwen3.8-27B-oQ3.5e-mtp
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Herramienta de cuantizacion oQ (oMLX): https://github.com/jundot/omlx
 - Pull request de la cuantizacion mejorada oQe: https://github.com/jundot/omlx/pull/4385

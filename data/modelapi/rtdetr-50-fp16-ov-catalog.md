@@ -75,7 +75,7 @@ RT-DETR ofrece mayor velocidad que DETR original y comparable a YOLOv8, pero con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/modelapi/rtdetr-50-fp16-ov-catalog
+- Modelo en Hugging Face: https://huggingface.co/modelapi/rtdetr-50-fp16-ov-catalog
 - Repositorio de pesos originales OpenVINO: https://huggingface.co/OpenVINO/rtdetr_50-fp16-ov
 - Repositorio de código Roboflow: https://github.com/roboflow/rf-detr
 - Proyecto Geti™: https://github.com/open-edge-platform/geti

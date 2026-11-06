@@ -80,8 +80,8 @@ No se han publicado en la información disponible resultados de otros benchmarks
 
 | Modelo | Parámetros | Contexto / entradas | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DuoBench π0.5 (sim) | 4,14B | 3 cámaras 224x224 + estado 16-D | 10,6 % medio en DuoBench sim | Gemma Terms of Use | HuggingFace, LeRobot |
-| `lerobot/pi05_base` | no disponible en la información | no disponible | no disponible | no disponible | HuggingFace |
+| DuoBench π0.5 (sim) | 4,14B | 3 cámaras 224x224 + estado 16-D | 10,6 % medio en DuoBench sim | Gemma Terms of Use | Hugging Face, LeRobot |
+| `lerobot/pi05_base` | no disponible en la información | no disponible | no disponible | no disponible | Hugging Face |
 | Otras políticas de DuoBench (sim) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone en la información proporcionada de resultados numéricos de políticas alternativas sobre el mismo benchmark, por lo que la comparación cuantitativa con ACT, Diffusion Policy u otras variantes de π0.5 no está disponible.
@@ -100,7 +100,7 @@ No se dispone en la información proporcionada de resultados numéricos de polí
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RobotControlStack/duobench-pi05-sim
+- Modelo en Hugging Face: https://huggingface.co/RobotControlStack/duobench-pi05-sim
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset DuoBench: https://huggingface.co/datasets/RobotControlStack/duobench
 - Página del proyecto DuoBench: https://duobench.github.io/

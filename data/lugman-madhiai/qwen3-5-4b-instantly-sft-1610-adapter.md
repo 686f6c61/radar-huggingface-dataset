@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `lugman-madhiai/Qwen3.5-4B-Instantly-SFT-1610-adapter` es un adaptador de ajuste fino (fine-tuning) publicado por el usuario lugman-madhiai en HuggingFace, derivado del modelo base Qwen/Qwen3.5-4B. Por el nombre del repositorio y su tamano (0,1 GB), se trata de un adaptador de bajo rango (LoRA) y no de un conjunto completo de pesos, por lo que requiere cargar el modelo base para poder utilizarse en inferencia. El entrenamiento se realizo con la libreria Unsloth, segun indica la propia model card, y con TRL, lo que situa el flujo de trabajo en el ecosistema habitual de ajuste eficiente de modelos pequenos.
+El modelo `lugman-madhiai/Qwen3.5-4B-Instantly-SFT-1610-adapter` es un adaptador de ajuste fino (fine-tuning) publicado por el usuario lugman-madhiai en Hugging Face, derivado del modelo base Qwen/Qwen3.5-4B. Por el nombre del repositorio y su tamano (0,1 GB), se trata de un adaptador de bajo rango (LoRA) y no de un conjunto completo de pesos, por lo que requiere cargar el modelo base para poder utilizarse en inferencia. El entrenamiento se realizo con la libreria Unsloth, segun indica la propia model card, y con TRL, lo que situa el flujo de trabajo en el ecosistema habitual de ajuste eficiente de modelos pequenos.
 
 El problema que resuelve es el de especializar un modelo de ~4.000 millones de parametros en una tarea concreta (SFT, sigla de *supervised fine-tuning*, y el sufijo 1610 del nombre) sin necesidad de reentrenar el modelo completo. Esto abarata el coste de personalizacion y permite publicar unicamente el delta de pesos, que ocupa decimas de gigabyte en lugar de varios gigabytes. Su relevancia es, por tanto, metodologica y de nicho: sirve como ejemplo reproducible de un pipeline Unsloth + TRL sobre una base Qwen.
 
@@ -71,8 +71,8 @@ No hay datos de rendimiento publicados para este adaptador, por lo que no es pos
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| lugman-madhiai/Qwen3.5-4B-Instantly-SFT-1610-adapter | 4B (base) + adaptador | no disponible | apache-2.0 | HuggingFace | no disponible |
-| Qwen/Qwen3.5-4B | 4B | no disponible | no disponible en la informacion proporcionada | HuggingFace | no disponible |
+| lugman-madhiai/Qwen3.5-4B-Instantly-SFT-1610-adapter | 4B (base) + adaptador | no disponible | apache-2.0 | Hugging Face | no disponible |
+| Qwen/Qwen3.5-4B | 4B | no disponible | no disponible en la informacion proporcionada | Hugging Face | no disponible |
 
 Comparativas con otras alternativas de la misma categoria (por ejemplo, otros adaptadores LoRA sobre bases de 4B): no disponible.
 
@@ -90,7 +90,7 @@ Comparativas con otras alternativas de la misma categoria (por ejemplo, otros ad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lugman-madhiai/Qwen3.5-4B-Instantly-SFT-1610-adapter
+- Modelo en Hugging Face: https://huggingface.co/lugman-madhiai/Qwen3.5-4B-Instantly-SFT-1610-adapter
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Unsloth (libreria de entrenamiento citada): https://github.com/unslothai/unsloth
 - TRL (etiqueta declarada en el repositorio): https://github.com/huggingface/trl

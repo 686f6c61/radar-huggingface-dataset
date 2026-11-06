@@ -4,7 +4,7 @@
 
 Snapkitty/reverse-quantum-walk no es un modelo de inteligencia artificial convencional, sino una implementación de software y hardware de verificación formal para dinámicas de "reverse quantum walk" sobre un puente ER (Einstein-Rosen / EPR). Desarrollado por Jessica L. Westerhoff (SNAPKITTYWEST) y Ahmad Ali Parr, el proyecto combina un motor de recurrencia en Rust, pruebas formales en Lean 4 y Agda, model checking con Kani, circuitos de conocimiento cero en Circom y un interlock en SystemVerilog. Su objetivo es sustituir las restricciones R1CS discretas de los campos finitos por restricciones espaciales continuas en ℝᴺ, convirtiendo la lógica de conocimiento cero en un motor de resolución geométrica CAD con invariantes formalmente verificadas.
 
-El repositorio en HuggingFace presenta cero descargas y cero likes, y la model card indica una triple licencia (BSL-1.1, AGPL-3.0 y MPL-2.0) más una opción comercial, aunque el campo de licencia en HuggingFace aparece como no disponible. No se proporcionan pesos de red, pipeline de inferencia ni idiomas soportados, pues no se trata de un modelo de lenguaje ni de visión, sino de un sistema de verificación formal y computación de conocimiento cero.
+El repositorio en Hugging Face presenta cero descargas y cero likes, y la model card indica una triple licencia (BSL-1.1, AGPL-3.0 y MPL-2.0) más una opción comercial, aunque el campo de licencia en Hugging Face aparece como no disponible. No se proporcionan pesos de red, pipeline de inferencia ni idiomas soportados, pues no se trata de un modelo de lenguaje ni de visión, sino de un sistema de verificación formal y computación de conocimiento cero.
 
 ## Especificaciones tecnicas
 
@@ -16,7 +16,7 @@ El repositorio en HuggingFace presenta cero descargas y cero likes, y la model c
 | Longitud de contexto | no aplica |
 | Tipos de cuantizacion | no aplica (no hay pesos cuantizables) |
 | Idiomas soportados | no disponibles |
-| Licencia | Tri-licencia: BSL-1.1 / AGPL-3.0 / MPL-2.0 + comercial (segun model card); en HuggingFace aparece como no disponible |
+| Licencia | Tri-licencia: BSL-1.1 / AGPL-3.0 / MPL-2.0 + comercial (segun model card); en Hugging Face aparece como no disponible |
 | Formato de pesos | no aplica (no hay pesos safetensors ni GGUF) |
 
 ## Arquitectura y entrenamiento
@@ -78,6 +78,6 @@ No disponible. No existen modelos comparables en el ámbito de la IA convenciona
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Snapkitty/reverse-quantum-walk
+- Repositorio Hugging Face: https://huggingface.co/Snapkitty/reverse-quantum-walk
 - Perfil del autor (mencionado en la model card): https://github.com/SNAPKITTYWEST (no verificado)
 - No se proporcionan otros enlaces (papers, blogs, demos) en la información disponible.

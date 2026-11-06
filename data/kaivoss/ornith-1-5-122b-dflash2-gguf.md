@@ -19,7 +19,7 @@ La relevancia de esta publicación es práctica: permite usar la técnica DFlash
 | Tipos de cuantizacion | BF16, F16, F32, IQ3_M, IQ3_S, IQ4_NL, IQ4_XS, MXFP4_MOE, Q1_0, Q2_0, Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_0, Q4_1, Q4_K_S, Q4_K_M, Q5_0, Q5_1, Q5_K_S, Q5_K_M, Q6_K, Q8_0, TQ1_0, TQ2_0 |
 | Idiomas soportados | no disponible (determinado por el tokenizador y el modelo objetivo) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (este repositorio); el original se distribuye en formato HuggingFace y se convierte con `convert_hf_to_gguf.py` |
+| Formato de pesos | GGUF (este repositorio); el original se distribuye en formato Hugging Face y se convierte con `convert_hf_to_gguf.py` |
 | Modelo objetivo | `ornith-ai/Ornith-1.5-122B` (obligatorio, misma familia de tokenizador) |
 | Herramienta de conversion | llama.cpp upstream, commit `ead9f32` |
 | Tamano del repositorio | 19,6 GB (incluye todas las cuantizaciones) |
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Función | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ornith-1.5-122B-DFlash2 (este repositorio) | 0,93 B | no disponible | Borrador DFlash 2 (difusión por bloques) para Ornith-1.5-122B | Apache 2.0 | GGUF en HuggingFace, 28 cuantizaciones |
+| Ornith-1.5-122B-DFlash2 (este repositorio) | 0,93 B | no disponible | Borrador DFlash 2 (difusión por bloques) para Ornith-1.5-122B | Apache 2.0 | GGUF en Hugging Face, 28 cuantizaciones |
 | Borrador autoregresivo estándar de llama.cpp (`-md`) | Depende del modelo elegido | Heredado del borrador | Propuestas token a token | Depende del borrador | Requiere un modelo pequeño adicional de la misma familia |
 | Decodificación sin especulación | No aplica | El del objetivo | Línea base de rendimiento | No aplica | Soportada por cualquier build de llama.cpp |
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparado (tasa de aceptación, tokens/s) 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kaivoss/Ornith-1.5-122B-DFlash2-GGUF
+- Repositorio Hugging Face: https://huggingface.co/kaivoss/Ornith-1.5-122B-DFlash2-GGUF
 - Borrador original: https://huggingface.co/incoai/Ornith-1.5-122B-DFlash2
 - Modelo objetivo: https://huggingface.co/ornith-ai/Ornith-1.5-122B
 - llama.cpp (motor de conversión y cuantización): https://github.com/ggml-org/llama.cpp

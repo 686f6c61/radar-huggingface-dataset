@@ -2,7 +2,7 @@
 
 ## Resumen
 
-π₀.₅ (Pi05) es un modelo Vision-Language-Action (VLA) desarrollado por Physical Intelligence, disenado para generalizacion en entornos abiertos. Evoluciona el modelo π₀ para adaptarse a situaciones y entornos completamente nuevos no vistos durante el entrenamiento. La implementacion disponible en este repositorio es una adaptacion de LeRobot (HuggingFace) del repositorio open source OpenPI de Physical Intelligence.
+π₀.₅ (Pi05) es un modelo Vision-Language-Action (VLA) desarrollado por Physical Intelligence, disenado para generalizacion en entornos abiertos. Evoluciona el modelo π₀ para adaptarse a situaciones y entornos completamente nuevos no vistos durante el entrenamiento. La implementacion disponible en este repositorio es una adaptacion de LeRobot (Hugging Face) del repositorio open source OpenPI de Physical Intelligence.
 
 El modelo que nos ocupa, `alimerido/pi05-newsetup-v1`, es un fine-tuning de `lerobot/pi05_base` sobre un dataset propio de robótica con 50 episodios y 20.852 frames grabados a 30 FPS. La tarea concreta entrenada es "Grab the red cube, place it in the blue box", ejecutada sobre un robot de tipo `so_follower` con dos camaras (muneca y superior). Se trata, por tanto, de una politica de imitacion especializada, no de un modelo de proposito general.
 
@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `alimerido/pi05-newsetup-v1` | ~4,14 B | no disponible | Manipulacion pick-and-place (SO-Follower) | gemma | HuggingFace |
-| `lerobot/pi05_base` | no disponible | no disponible | VLA generalista (base de fine-tuning) | gemma | HuggingFace |
+| `alimerido/pi05-newsetup-v1` | ~4,14 B | no disponible | Manipulacion pick-and-place (SO-Follower) | gemma | Hugging Face |
+| `lerobot/pi05_base` | no disponible | no disponible | VLA generalista (base de fine-tuning) | gemma | Hugging Face |
 | π₀ (Pi0) | no disponible | no disponible | VLA generalista (predecesor) | no disponible | OpenPI (open source) |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada. La comparativa se limita a parametros, licencia y disponibilidad.
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alimerido/pi05-newsetup-v1
+- Modelo en Hugging Face: https://huggingface.co/alimerido/pi05-newsetup-v1
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/alimerido/new-setup_20261101_200122
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=alimerido/new-setup_20261101_200122

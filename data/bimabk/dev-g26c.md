@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`bimabk/dev-G26c` es un modelo de lenguaje publicado en HuggingFace por el usuario `bimabk`, con 3.402.836.480 parametros (3,4 mil millones) almacenados en formato safetensors y un repositorio de 6,8 GB. La unica etiqueta tematica relevante es `granite`, lo que sugiere una posible relacion con la familia de modelos IBM Granite, pero no hay confirmacion documental de arquitectura, datos de entrenamiento ni licencia. El repositorio tiene 12 descargas y 0 likes, y se creo y actualizo el 20 de septiembre de 2026 con apenas 35 segundos de diferencia entre ambos eventos, un patron habitual en publicaciones automatizadas o de prueba.
+`bimabk/dev-G26c` es un modelo de lenguaje publicado en Hugging Face por el usuario `bimabk`, con 3.402.836.480 parametros (3,4 mil millones) almacenados en formato safetensors y un repositorio de 6,8 GB. La unica etiqueta tematica relevante es `granite`, lo que sugiere una posible relacion con la familia de modelos IBM Granite, pero no hay confirmacion documental de arquitectura, datos de entrenamiento ni licencia. El repositorio tiene 12 descargas y 0 likes, y se creo y actualizo el 20 de septiembre de 2026 con apenas 35 segundos de diferencia entre ambos eventos, un patron habitual en publicaciones automatizadas o de prueba.
 
 En el momento de redactar esta ficha no existe informacion publica sobre el pipeline, los idiomas soportados, la longitud de contexto ni la licencia. Tampoco se han publicado resultados de benchmarks ni documentacion tecnica asociada. Se trata, por tanto, de un checkpoint del que solo se conocen datos estructurales basicos extraidos del propio repositorio.
 
@@ -25,7 +25,7 @@ Datos adicionales verificables del repositorio: identificador `bimabk/dev-G26c`,
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo. El unico indicio disponible es la etiqueta `granite`, que en HuggingFace se utiliza para marcar modelos de la familia IBM Granite. Si esa asociacion fuera correcta, el modelo podria derivar de un transformer denso de aproximadamente 3 B de parametros o de una arquitectura hibrida con capas de estado (tipo Mamba-2 combinado con atencion), pero ninguna de las dos posibilidades esta confirmada por la informacion disponible. El recuento exacto de parametros (3.402.836.480) es coherente con un modelo denso de ~3,4 B, aunque tambien podria corresponder a un modelo menor con vocabulario y embeddings extensos.
+No se ha publicado informacion sobre la arquitectura del modelo. El unico indicio disponible es la etiqueta `granite`, que en Hugging Face se utiliza para marcar modelos de la familia IBM Granite. Si esa asociacion fuera correcta, el modelo podria derivar de un transformer denso de aproximadamente 3 B de parametros o de una arquitectura hibrida con capas de estado (tipo Mamba-2 combinado con atencion), pero ninguna de las dos posibilidades esta confirmada por la informacion disponible. El recuento exacto de parametros (3.402.836.480) es coherente con un modelo denso de ~3,4 B, aunque tambien podria corresponder a un modelo menor con vocabulario y embeddings extensos.
 
 Tampoco hay datos sobre el numero de tokens de entrenamiento, la composicion del corpus, la existencia de fases de ajuste fino supervisado, RLHF o DPO, ni sobre tecnicas de optimizacion como decodificacion especulativa o atencion lineal. El repositorio no incluye model card sustantiva ni documentacion tecnica. El intervalo de 35 segundos entre la creacion y la ultima actualizacion sugiere que el modelo se subio en una unica operacion, sin iteraciones posteriores documentadas.
 
@@ -78,10 +78,10 @@ No hay datos de rendimiento de `bimabk/dev-G26c`, por lo que cualquier comparaci
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| bimabk/dev-G26c | 3,4 B | no disponible | no disponible | HuggingFace (12 descargas) |
-| IBM Granite (variantes ~3 B) | ~3 B | depende de la version | licencia propia de IBM publicada en cada repositorio | HuggingFace |
-| Llama 3.2 3B Instruct | 3,2 B | 128 K | licencia comunitaria de Meta | HuggingFace |
-| Qwen2.5 3B Instruct | 3,1 B | 32 K (128 K en variantes ampliadas) | Apache 2.0 en la mayoria de tamanos | HuggingFace |
+| bimabk/dev-G26c | 3,4 B | no disponible | no disponible | Hugging Face (12 descargas) |
+| IBM Granite (variantes ~3 B) | ~3 B | depende de la version | licencia propia de IBM publicada en cada repositorio | Hugging Face |
+| Llama 3.2 3B Instruct | 3,2 B | 128 K | licencia comunitaria de Meta | Hugging Face |
+| Qwen2.5 3B Instruct | 3,1 B | 32 K (128 K en variantes ampliadas) | Apache 2.0 en la mayoria de tamanos | Hugging Face |
 
 No se dispone de informacion suficiente para afirmar a que modelo se parece mas ni cual rinde mejor en tareas concretas.
 
@@ -99,7 +99,7 @@ No se dispone de informacion suficiente para afirmar a que modelo se parece mas 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bimabk/dev-G26c
+- Hugging Face: https://huggingface.co/bimabk/dev-G26c
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Blog o documentacion: no disponible

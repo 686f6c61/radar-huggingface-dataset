@@ -4,7 +4,7 @@
 
 FLUX.2-klein-base-9B es un modelo de generación y edición de imágenes desarrollado por Black Forest Labs, la compañía responsable de la familia FLUX. Se trata de la variante "klein" (pequeño en alemán) de la segunda generación de FLUX, diseñada específicamente para priorizar la velocidad y la eficiencia computacional sin renunciar a la calidad visual. Con 9 mil millones de parámetros, es el modelo más rápido de la familia FLUX.2, capaz de generar o editar múltiples imágenes en menos de un segundo, lo que lo hace idóneo para aplicaciones en tiempo real, iteración creativa rápida y despliegue en hardware de consumo.
 
-El modelo se publica en formato safetensors y está integrado en la librería diffusers mediante el pipeline `Flux2KleinPipeline`. Aunque la licencia aparece como "other" en HuggingFace, Black Forest Labs ha declarado su compromiso con el desarrollo responsable, incluyendo evaluaciones previas para mitigar contenido ilegal como CSAM y NCII. Su relevancia actual radica en que democratiza la generación de imágenes de alta calidad a alta velocidad, abriendo posibilidades para aplicaciones interactivas que antes requerían infraestructura de servidor potente.
+El modelo se publica en formato safetensors y está integrado en la librería diffusers mediante el pipeline `Flux2KleinPipeline`. Aunque la licencia aparece como "other" en Hugging Face, Black Forest Labs ha declarado su compromiso con el desarrollo responsable, incluyendo evaluaciones previas para mitigar contenido ilegal como CSAM y NCII. Su relevancia actual radica en que democratiza la generación de imágenes de alta calidad a alta velocidad, abriendo posibilidades para aplicaciones interactivas que antes requerían infraestructura de servidor potente.
 
 ## Especificaciones técnicas
 
@@ -16,7 +16,7 @@ El modelo se publica en formato safetensors y está integrado en la librería di
 | Longitud de contexto | no aplica (modelo de imágenes, no texto) |
 | Tipos de cuantizacion | FP8 (versión oficial `FLUX.2-klein-base-9b-fp8`) |
 | Idiomas soportados | no disponible (etiqueta "en" sugiere prompts en inglés) |
-| Licencia | no disponible (etiquetada como "other" en HuggingFace) |
+| Licencia | no disponible (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
@@ -62,7 +62,7 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 ## Limitaciones y advertencias
 
 - No se han publicado evaluaciones de sesgos o alucinaciones específicas para este modelo. Como todo modelo generativo, puede producir imágenes con estereotipos o contenido no deseado.
-- La licencia está etiquetada como "other", lo que implica que los términos de uso comercial no están claramente definidos en la ficha de HuggingFace. Es imprescindible revisar los términos completos en el sitio oficial de Black Forest Labs antes de utilizarlo en producción.
+- La licencia está etiquetada como "other", lo que implica que los términos de uso comercial no están claramente definidos en la ficha de Hugging Face. Es imprescindible revisar los términos completos en el sitio oficial de Black Forest Labs antes de utilizarlo en producción.
 - El idioma de los prompts parece limitado al inglés (etiqueta "en"), aunque no se confirma explícitamente. Los prompts en otros idiomas podrían dar resultados subóptimos.
 - No se especifican limitaciones de contexto o resolución máxima de imagen. Se recomienda consultar la documentación oficial para conocer las restricciones de entrada.
 - Para uso en producción, es necesario verificar la infraestructura de hardware adecuada y realizar pruebas de rendimiento en el entorno objetivo, ya que no se han publicado benchmarks estandarizados.
@@ -70,9 +70,9 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- HuggingFace (modelo base): https://huggingface.co/black-forest-labs/FLUX.2-klein-base-9B
-- HuggingFace (versión FP8): https://huggingface.co/black-forest-labs/FLUX.2-klein-base-9b-fp8
-- HuggingFace (variante 9B): https://huggingface.co/black-forest-labs/FLUX.2-klein-9B
+- Hugging Face (modelo base): https://huggingface.co/black-forest-labs/FLUX.2-klein-base-9B
+- Hugging Face (versión FP8): https://huggingface.co/black-forest-labs/FLUX.2-klein-base-9b-fp8
+- Hugging Face (variante 9B): https://huggingface.co/black-forest-labs/FLUX.2-klein-9B
 - Página oficial del modelo: https://bfl.ai/models/flux-2-klein
 - Repositorio de inferencia oficial en GitHub: https://github.com/black-forest-labs/flux2
 - ModelScope: https://www.modelscope.cn/models/black-forest-labs/FLUX.2-klein-base-9B

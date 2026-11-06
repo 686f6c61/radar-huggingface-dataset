@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B es un modelo de lenguaje causal con codificador de visión, publicado en HuggingFace por el usuario heideng90 bajo el identificador `heideng90/Qwen3.8-27B`. Según la model card, se presenta como parte de la generación Qwen3.8 de la familia de modelos abiertos Qwen, construido sobre la base arquitectónica de Qwen3.5 y orientado a tareas de codificación, trabajo profesional, investigación y tareas agénticas de largo horizonte. Es un modelo denso (no MoE) de aproximadamente 27.781 millones de parámetros, con 64 capas y una dimensión oculta de 5120.
+Qwen3.8-27B es un modelo de lenguaje causal con codificador de visión, publicado en Hugging Face por el usuario heideng90 bajo el identificador `heideng90/Qwen3.8-27B`. Según la model card, se presenta como parte de la generación Qwen3.8 de la familia de modelos abiertos Qwen, construido sobre la base arquitectónica de Qwen3.5 y orientado a tareas de codificación, trabajo profesional, investigación y tareas agénticas de largo horizonte. Es un modelo denso (no MoE) de aproximadamente 27.781 millones de parámetros, con 64 capas y una dimensión oculta de 5120.
 
 El modelo es nativo visión-lenguaje: procesa imágenes y vídeos además de texto, con un contexto nativo de 262.144 tokens extensible hasta 1.000.000. Incorpora control flexible de razonamiento (modo *thinking* activado por defecto, desactivable por petición, con ajuste de profundidad mediante `reasoning_effort` y retención de contexto de razonamiento histórico vía `preserve_thinking`). La arquitectura combina capas de atención lineal (Gated DeltaNet) con capas de atención con compuerta (Gated Attention) en un patrón híbrido repetido 16 veces.
 
@@ -72,7 +72,7 @@ La model card incluye una tabla comparativa con Qwen3.6-27B, Qwen3.7-Plus, Muse 
 
 | Modelo | Parámetros | Contexto | Licencia | Multimodal | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B | 27,8B densos | 262K (ext. 1M) | Apache 2.0 | Sí (imagen y vídeo) | HuggingFace (22 descargas) |
+| Qwen3.8-27B | 27,8B densos | 262K (ext. 1M) | Apache 2.0 | Sí (imagen y vídeo) | Hugging Face (22 descargas) |
 | Qwen3.6-27B | No disponible | No disponible | No disponible | No disponible | Citado en la card como generación previa |
 | Qwen3.7-Plus | No disponible | No disponible | No disponible | No disponible | Citado en la card (posiblemente API) |
 | Muse Glimmer-30B | ~30B (por el nombre) | No disponible | No disponible | No disponible | Citado en la card |
@@ -93,6 +93,6 @@ Los datos de los modelos comparables proceden únicamente de la tabla de la mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/heideng90/Qwen3.8-27B
+- Hugging Face: https://huggingface.co/heideng90/Qwen3.8-27B
 - Qwen Cloud (referenciado en la card): https://www.qwencloud.com
 - Overview del modelo en Qwen Cloud: https://www.qwencloud.com/models/qwen3.8-27b

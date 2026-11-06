@@ -4,7 +4,7 @@
 
 El modelo `canbingol/gemma-4-E2B-tool-use-tr` es un ajuste fino (fine-tuning) del modelo base `google/gemma-4-E2B-it` realizado por el usuario canbingol. Está especializado en tool calling y function calling en lengua turca, entrenado mediante aprendizaje supervisado (SFT) sobre el dataset `atasoglu/turkish-function-calling-20k`. El objetivo es adaptar un modelo generativo generalista a la tarea concreta de invocar funciones externas (APIs, herramientas) a partir de instrucciones en turco.
 
-El modelo se distribuye como un adaptador LoRA (bajo el formato safetensors) con un tamaño de repositorio de 0,2 GB, lo que indica que no incluye los pesos completos del modelo base, sino únicamente los pesos del adaptador. No se especifican ni la licencia ni los idiomas soportados en la ficha de HuggingFace, aunque por el dataset de entrenamiento se infiere que está orientado al turco. Es un modelo reciente (creado en julio de 2026) con cero descargas y cero likes, por lo que su adopción es todavía nula.
+El modelo se distribuye como un adaptador LoRA (bajo el formato safetensors) con un tamaño de repositorio de 0,2 GB, lo que indica que no incluye los pesos completos del modelo base, sino únicamente los pesos del adaptador. No se especifican ni la licencia ni los idiomas soportados en la ficha de Hugging Face, aunque por el dataset de entrenamiento se infiere que está orientado al turco. Es un modelo reciente (creado en julio de 2026) con cero descargas y cero likes, por lo que su adopción es todavía nula.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ El modelo se distribuye como un adaptador LoRA (bajo el formato safetensors) con
 
 La información proporcionada no detalla la arquitectura interna del modelo base `google/gemma-4-E2B-it`. Por el nombre, se trata de una variante de la familia Gemma de Google, presumiblemente con alrededor de 2 mil millones de parámetros (E2B sugiere "Efficient 2B"), pero este dato no está confirmado en la ficha.
 
-El entrenamiento se realizó mediante SFT (supervised fine-tuning) utilizando la librería TRL de HuggingFace, con el dataset `atasoglu/turkish-function-calling-20k`, que contiene 20.000 ejemplos de llamadas a funciones en turco. Se emplearon 2 épocas con una tasa de aprendizaje de 2e-4. El adaptador LoRA se configuró con r=16 y alpha=32, lo que implica un ajuste de bajo rango sobre las capas de atención del modelo base.
+El entrenamiento se realizó mediante SFT (supervised fine-tuning) utilizando la librería TRL de Hugging Face, con el dataset `atasoglu/turkish-function-calling-20k`, que contiene 20.000 ejemplos de llamadas a funciones en turco. Se emplearon 2 épocas con una tasa de aprendizaje de 2e-4. El adaptador LoRA se configuró con r=16 y alpha=32, lo que implica un ajuste de bajo rango sobre las capas de atención del modelo base.
 
 No se menciona el uso de técnicas como RLHF o DPO, ni innovaciones arquitectónicas adicionales. El enfoque es puramente de adaptación supervisada para la tarea específica de tool use.
 
@@ -71,6 +71,6 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/canbingol/gemma-4-E2B-tool-use-tr
+- Hugging Face: https://huggingface.co/canbingol/gemma-4-E2B-tool-use-tr
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
 - Dataset de entrenamiento: https://huggingface.co/datasets/atasoglu/turkish-function-calling-20k (enlace no verificado en la ficha, se menciona en el README)

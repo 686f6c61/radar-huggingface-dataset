@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-TTS-12Hz-0.6B-CustomVoice-INT4 es una variante cuantizada a 4 bits del modelo de síntesis de voz Qwen3-TTS desarrollado por el equipo Qwen de Alibaba. Este checkpoint específico, publicado por el usuario Rin247 en HuggingFace, corresponde a la versión CustomVoice de 0.6B de parámetros basada en el tokenizador de 12 Hz, diseñada para generar voz multilingüe con control fino del estilo mediante instrucciones en lenguaje natural. El modelo resuelve el problema de la síntesis de voz expresiva y controlable, permitiendo ajustar tono, ritmo y emoción sin necesidad de ingeniería de características manual. Su relevancia actual radica en que combina un tamaño reducido (643 millones de parámetros) con una latencia de síntesis extremadamente baja (hasta 97 ms en modo streaming), lo que lo hace adecuado para aplicaciones en tiempo real. La cuantización INT4 reduce aún más los requisitos de memoria, facilitando su despliegue en entornos con recursos limitados.
+Qwen3-TTS-12Hz-0.6B-CustomVoice-INT4 es una variante cuantizada a 4 bits del modelo de síntesis de voz Qwen3-TTS desarrollado por el equipo Qwen de Alibaba. Este checkpoint específico, publicado por el usuario Rin247 en Hugging Face, corresponde a la versión CustomVoice de 0.6B de parámetros basada en el tokenizador de 12 Hz, diseñada para generar voz multilingüe con control fino del estilo mediante instrucciones en lenguaje natural. El modelo resuelve el problema de la síntesis de voz expresiva y controlable, permitiendo ajustar tono, ritmo y emoción sin necesidad de ingeniería de características manual. Su relevancia actual radica en que combina un tamaño reducido (643 millones de parámetros) con una latencia de síntesis extremadamente baja (hasta 97 ms en modo streaming), lo que lo hace adecuado para aplicaciones en tiempo real. La cuantización INT4 reduce aún más los requisitos de memoria, facilitando su despliegue en entornos con recursos limitados.
 
 ## Especificaciones tecnicas
 
@@ -67,10 +67,10 @@ No se dispone de información suficiente para realizar una comparativa cuantitat
 
 ## Enlaces
 
-- Modelo en HuggingFace (versión cuantizada): https://huggingface.co/Rin247/Qwen3-TTS-12Hz-0.6B-CustomVoice-INT4
-- Modelo original en HuggingFace: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice
+- Modelo en Hugging Face (versión cuantizada): https://huggingface.co/Rin247/Qwen3-TTS-12Hz-0.6B-CustomVoice-INT4
+- Modelo original en Hugging Face: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice
 - Repositorio GitHub oficial: https://github.com/QwenLM/Qwen3-TTS
 - Paper técnico (arXiv): https://huggingface.co/papers/2601.15621
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/Qwen/Qwen3-TTS
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/Qwen/Qwen3-TTS
 - Colección de modelos Qwen3-TTS: https://huggingface.co/collections/Qwen/qwen3-tts
 - Modelo en ModelScope: https://www.modelscope.cn/models/Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice

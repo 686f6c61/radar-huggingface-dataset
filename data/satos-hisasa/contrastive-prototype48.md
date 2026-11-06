@@ -2,7 +2,7 @@
 
 ## Resumen
 
-contrastive-prototype48 es un repositorio experimental publicado en HuggingFace por el usuario satos-hisasa. No es un modelo de lenguaje ni un modelo entrenado: se trata de una base de código de aprendizaje contrastivo basada en MoCo v3, acompañada de un checkpoint de inicialización válido únicamente para pruebas de humo. El propio autor indica explícitamente en la model card que el checkpoint "no se presenta como un checkpoint de referencia entrenado" y que "no se reclama ninguna puntuación de benchmark en este repositorio".
+contrastive-prototype48 es un repositorio experimental publicado en Hugging Face por el usuario satos-hisasa. No es un modelo de lenguaje ni un modelo entrenado: se trata de una base de código de aprendizaje contrastivo basada en MoCo v3, acompañada de un checkpoint de inicialización válido únicamente para pruebas de humo. El propio autor indica explícitamente en la model card que el checkpoint "no se presenta como un checkpoint de referencia entrenado" y que "no se reclama ninguna puntuación de benchmark en este repositorio".
 
 El artefacto principal es `train.py`, que contiene la definición del modelo y un punto de entrada de entrenamiento ejecutable. El repositorio se completa con `config.json` (ajustes de arquitectura), `training_args.json` (receta de experimento por defecto) y `model.safetensors` (inicialización). La escala declarada es "small", con atención multi-query, fusión mediante MLP de concatenación, activación Mish y normalización por BatchNorm. El recuento real de parámetros del checkpoint es de 33.088, es decir, unos 33 mil parámetros, un orden de magnitud propio de un esqueleto de pruebas y no de un modelo utilizable en producción.
 
@@ -89,7 +89,7 @@ No hay modelos directamente comparables en la información disponible: contrasti
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/satos-hisasa/contrastive-prototype48
+- Modelo en Hugging Face: https://huggingface.co/satos-hisasa/contrastive-prototype48
 - Perfil del autor: https://huggingface.co/satos-hisasa
 - Paper relacionado temáticamente (teoría estadística del preentrenamiento contrastivo, no vinculado al autor): https://arxiv.org/abs/2501.04641v2
 - Versión PDF del paper anterior: https://arxiv.org/pdf/2501.04641v1

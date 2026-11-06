@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un adaptador LoRA publicado en HuggingFace por el usuario sanapandey. El nombre del modelo (qwen2p5-0p5b-lora-variant-security-path-traversal-seed0) indica que se trata de una variante afinada sobre Qwen2.5-0.5B para abordar vulnerabilidades de tipo path traversal, un vector común en aplicaciones web. El repositorio contiene únicamente los pesos del adaptador, con un tamaño de 0.1 GB y formato safetensors, y está etiquetado como compatible con la librería transformers y con la herramienta Unsloth.
+Este modelo es un adaptador LoRA publicado en Hugging Face por el usuario sanapandey. El nombre del modelo (qwen2p5-0p5b-lora-variant-security-path-traversal-seed0) indica que se trata de una variante afinada sobre Qwen2.5-0.5B para abordar vulnerabilidades de tipo path traversal, un vector común en aplicaciones web. El repositorio contiene únicamente los pesos del adaptador, con un tamaño de 0.1 GB y formato safetensors, y está etiquetado como compatible con la librería transformers y con la herramienta Unsloth.
 
 La model card es una plantilla generada automáticamente, con la mayoría de los campos rellenados como «More Information Needed». No se incluyen datos sobre el procedimiento de entrenamiento, el dataset utilizado, los hiperparámetros, la licencia ni los resultados de evaluación. Además, el modelo no tiene descargas ni likes en el momento de la consulta, lo que indica que no ha sido validado por la comunidad.
 
@@ -23,7 +23,7 @@ El modelo forma parte de una serie de variantes del mismo autor para distintas c
 
 ## Arquitectura y entrenamiento
 
-La arquitectura no está documentada en la información proporcionada. El nombre del modelo sugiere que es un adaptador LoRA sobre un modelo base Qwen2.5-0.5B, es decir, una técnica de afinado por bajo rango que añade matrices de pequeñas dimensiones a los pesos congelados del modelo original. El tag «unsloth» en HuggingFace apunta a que el entrenamiento se realizó con la librería Unsloth, conocida por optimizar el afinado de tipo LoRA y reducir el consumo de memoria, aunque esta circunstancia no se confirma explícitamente en la model card.
+La arquitectura no está documentada en la información proporcionada. El nombre del modelo sugiere que es un adaptador LoRA sobre un modelo base Qwen2.5-0.5B, es decir, una técnica de afinado por bajo rango que añade matrices de pequeñas dimensiones a los pesos congelados del modelo original. El tag «unsloth» en Hugging Face apunta a que el entrenamiento se realizó con la librería Unsloth, conocida por optimizar el afinado de tipo LoRA y reducir el consumo de memoria, aunque esta circunstancia no se confirma explícitamente en la model card.
 
 No se proporciona información sobre los datos de entrenamiento, el número de tokens, la composición del dataset ni si se aplicaron técnicas como RLHF, DPO o decodificación especulativa. Tampoco se describen innovaciones técnicas particulares. Todo el apartado de entrenamiento en la model card aparece como «More Information Needed».
 
@@ -75,7 +75,7 @@ No se dispone de información sobre parámetros, contexto, rendimiento ni dispon
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sanapandey/qwen2p5-0p5b-lora-variant-security-path-traversal-seed0
+- Repositorio en Hugging Face: https://huggingface.co/sanapandey/qwen2p5-0p5b-lora-variant-security-path-traversal-seed0
 - Modelo relacionado: https://huggingface.co/sanapandey/qwen2p5-0p5b-lora-variant-security-permissive-defaults-seed0
 - Modelo relacionado: https://huggingface.co/sanapandey/qwen2p5-0p5b-lora-variant-security-hardcoded-secrets-seed0
 - No se dispone de papers, blogs o demos que documenten este modelo.

@@ -32,7 +32,7 @@ La implementación de ZeroModels reproduce fielmente la arquitectura original de
 - Resolucion de entrada ajustable: los pesos son independientes de la resolucion, por lo que se puede especificar un tamaño de imagen multiplo de 128 (por ejemplo, 512, 640, 896) para adaptar el equilibrio entre precision y velocidad.
 - NMS configurable: por defecto agnostico de clase (una caja por objeto), pero se puede activar NMS por clase con `class_agnostic=False`.
 - Acceso a las salidas crudas por nivel (sin decodificacion) mediante `EfficientDetModel`, util para integraciones personalizadas.
-- Interfaz simple de carga: `from_weights` acepta cualquier repositorio de HuggingFace con formato zeromodels.
+- Interfaz simple de carga: `from_weights` acepta cualquier repositorio de Hugging Face con formato zeromodels.
 
 ## Casos de uso
 
@@ -83,7 +83,7 @@ En cuanto a alternativas de otros frameworks, el README de Google AutoML indica 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zeromodels/efficientdet_d3
+- Modelo en Hugging Face: https://huggingface.co/zeromodels/efficientdet_d3
 - Coleccion de variantes EfficientDet: https://huggingface.co/collections/zeromodels/efficientdet
 - Paper original: https://arxiv.org/abs/1911.09070
 - Repositorio de Google AutoML EfficientDet: https://github.com/google/automl/tree/master/efficientdet

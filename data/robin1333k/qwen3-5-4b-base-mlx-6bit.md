@@ -91,9 +91,9 @@ Memoria:
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|---|
-| Qwen3.5-4B-Base-MLX-6bit (este) | 4.205.751.296 | no disponible | 6 bits MLX, grupo 64 | Apache 2.0 | HuggingFace (35 descargas) | Calidad de sugerencia 0,632 (ambos idiomas, prosa reservada); primera palabra 131 ms P50 |
-| Qwen3.5-2B-Base-MLX-6bit | no disponible (aprox. 2B) | no disponible | 6 bits MLX | Apache 2.0 | HuggingFace | Calidad 0,512; primera palabra 75 ms P50; unos 1,5 GB de memoria MLX |
-| Qwen/Qwen3.5-4B-Base | 4.205.751.296 | no disponible | pesos originales | Apache 2.0 | HuggingFace | Modelo base sin cuantizar del que deriva este repositorio |
+| Qwen3.5-4B-Base-MLX-6bit (este) | 4.205.751.296 | no disponible | 6 bits MLX, grupo 64 | Apache 2.0 | Hugging Face (35 descargas) | Calidad de sugerencia 0,632 (ambos idiomas, prosa reservada); primera palabra 131 ms P50 |
+| Qwen3.5-2B-Base-MLX-6bit | no disponible (aprox. 2B) | no disponible | 6 bits MLX | Apache 2.0 | Hugging Face | Calidad 0,512; primera palabra 75 ms P50; unos 1,5 GB de memoria MLX |
+| Qwen/Qwen3.5-4B-Base | 4.205.751.296 | no disponible | pesos originales | Apache 2.0 | Hugging Face | Modelo base sin cuantizar del que deriva este repositorio |
 
 No se dispone de datos de otros modelos comparables de la misma categoria en la informacion proporcionada.
 
@@ -111,7 +111,7 @@ No se dispone de datos de otros modelos comparables de la misma categoria en la 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Robin1333k/Qwen3.5-4B-Base-MLX-6bit
+- Repositorio Hugging Face: https://huggingface.co/Robin1333k/Qwen3.5-4B-Base-MLX-6bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B-Base
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-4B-Base/blob/main/LICENSE
 - Hermano de 2B: https://huggingface.co/Robin1333k/Qwen3.5-2B-Base-MLX-6bit

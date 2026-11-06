@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "BabyClaw/duck-skill-20261105-sock-heist-6m",
+  "slug": "babyclaw-duck-skill-20261105-sock-heist-6m",
+  "author": "BabyClaw",
+  "url": "https://huggingface.co/BabyClaw/duck-skill-20261105-sock-heist-6m",
+  "created_at": "2026-11-06T05:47:22.000Z",
+  "updated_at": "2026-11-06T05:47:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "microduck-policy",
+    "robotics",
+    "reinforcement-learning",
+    "microduck-slot:walk",
+    "sock-heist-6m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 794054,
+  "storage_human": "794054 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

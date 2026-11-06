@@ -2,7 +2,7 @@
 
 ## Resumen
 
-fai_output2 es un adaptador LoRA para generacion de imagenes por texto (text-to-image) publicado por el usuario saliacoel en HuggingFace. Segun las etiquetas del repositorio, esta construido sobre la familia de modelos de difusion FLUX y se distribuye en formato diffusers. El repositorio ocupa aproximadamente 0,1 GB, lo que es coherente con un adaptador de bajo rango y no con un modelo base completo.
+fai_output2 es un adaptador LoRA para generacion de imagenes por texto (text-to-image) publicado por el usuario saliacoel en Hugging Face. Segun las etiquetas del repositorio, esta construido sobre la familia de modelos de difusion FLUX y se distribuye en formato diffusers. El repositorio ocupa aproximadamente 0,1 GB, lo que es coherente con un adaptador de bajo rango y no con un modelo base completo.
 
 La model card es practicamente vacia: la descripcion se limita a la palabra "test" y no incluye informacion sobre el conjunto de datos de entrenamiento, el numero de pasos, el rango del LoRA ni los resultados obtenidos. El unico dato operativo relevante es la palabra de activacion `LA_to_Str4d_MmH3_LR1` y que el entrenamiento se realizo con la herramienta de fal.ai para el modelo MiniMax H3 en su variante image-to-video, lo que introduce ambiguedad sobre si el adaptador esta pensado para generacion de imagen fija o para animacion a partir de una imagen.
 
@@ -68,10 +68,10 @@ La comparativa es limitada porque el modelo base no esta identificado y no exist
 
 | Modelo | Tipo | Parametros | Contexto/prompt | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fai_output2 (saliacoel) | LoRA sobre difusion, familia FLUX (segun etiquetas) | no disponible; repo de 0,1 GB | no aplica | other, terminos no detallados | HuggingFace, 0 descargas |
-| Adaptador LoRA generico para FLUX.1 [dev] | LoRA de difusion | tipicamente 20-200 M de parametros en el adaptador | no aplica | hereda la licencia no comercial de FLUX.1 [dev] | amplia en HuggingFace y Civitai |
+| fai_output2 (saliacoel) | LoRA sobre difusion, familia FLUX (segun etiquetas) | no disponible; repo de 0,1 GB | no aplica | other, terminos no detallados | Hugging Face, 0 descargas |
+| Adaptador LoRA generico para FLUX.1 [dev] | LoRA de difusion | tipicamente 20-200 M de parametros en el adaptador | no aplica | hereda la licencia no comercial de FLUX.1 [dev] | amplia en Hugging Face y Civitai |
 | Adaptador LoRA generico para SDXL | LoRA de difusion | tipicamente 10-200 M de parametros | no aplica | CreativeML Open RAIL++-M o similar | muy amplia, ecosistema maduro |
-| Modelo base FLUX.1 [schnell] | difusion completa | ~12 000 M | no aplica | Apache 2.0 | HuggingFace |
+| Modelo base FLUX.1 [schnell] | difusion completa | ~12 000 M | no aplica | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento de este adaptador que permitan una comparacion cuantitativa con las alternativas anteriores.
 
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento de este adaptador que permitan una compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/saliacoel/fai_output2
+- Modelo en Hugging Face: https://huggingface.co/saliacoel/fai_output2
 - Archivos y pesos: https://huggingface.co/saliacoel/fai_output2/tree/main
 - Entrenador utilizado (fal.ai, MiniMax H3 i2v): https://fal.ai/models/minimax/h3/i2v/trainer
 - Paper, blog o repositorio adicionales: no disponibles en la informacion proporcionada.

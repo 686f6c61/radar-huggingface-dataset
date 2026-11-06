@@ -68,7 +68,7 @@ No se han publicado otros resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Entorno | Metrica declarada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Hawi088/rl_course_vizdoom_health_gathering_supreme | APPO (Sample-Factory) | doom_health_gathering_supreme | mean_reward 9,52 +/- 5,15 | no disponible | HuggingFace Hub |
+| Hawi088/rl_course_vizdoom_health_gathering_supreme | APPO (Sample-Factory) | doom_health_gathering_supreme | mean_reward 9,52 +/- 5,15 | no disponible | Hugging Face Hub |
 | Agentes APPO de referencia de Sample-Factory | APPO (Sample-Factory) | ViZDoom (distintos escenarios) | no disponible en esta ficha | no disponible | Repositorio de Sample-Factory |
 | Agentes RL de ViZDoom en la literatura | PPO/APPO y variantes | doom_health_gathering_supreme | no disponible en esta ficha | variable | Publicaciones y repos varios |
 
@@ -87,7 +87,7 @@ No se dispone de datos comparativos verificados en la informacion proporcionada;
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Hawi088/rl_course_vizdoom_health_gathering_supreme
+- Modelo en Hugging Face: https://huggingface.co/Hawi088/rl_course_vizdoom_health_gathering_supreme
 - Sample-Factory (GitHub): https://github.com/alex-petrenko/sample-factory
 - Documentacion de Sample-Factory: https://www.samplefactory.dev/
-- Guia de integracion con HuggingFace: https://www.samplefactory.dev/10-huggingface/huggingface/
+- Guia de integracion con Hugging Face: https://www.samplefactory.dev/10-huggingface/huggingface/

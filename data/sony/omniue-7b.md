@@ -94,7 +94,7 @@ OmniUE-7B se diferencia de sus alternativas en que es el unico que cubre las cua
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sony/OmniUE-7B
+- Modelo en Hugging Face: https://huggingface.co/Sony/OmniUE-7B
 - Paper (arXiv): https://arxiv.org/abs/2608.27044
 - Webpage / demo: https://wywywang.github.io/omniue-demo/
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Omni-7B

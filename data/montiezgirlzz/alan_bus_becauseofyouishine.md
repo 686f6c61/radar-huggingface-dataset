@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio montiezgirlzz/Alan_bus_becauseofyouishine es un artefacto publicado en HuggingFace por el usuario montiezgirlzz el 5 de octubre de 2026 (creado a las 22:41:05 UTC y actualizado 41 segundos despues, a las 22:41:46 UTC). No dispone de model card: el unico contenido del README es la declaracion `license: unknown`, sin descripcion, sin instrucciones de uso y sin referencia a ningun paper, repositorio de codigo o dataset. El repositorio acumula 0 descargas y 0 likes, y no tiene pipeline declarado.
+El repositorio montiezgirlzz/Alan_bus_becauseofyouishine es un artefacto publicado en Hugging Face por el usuario montiezgirlzz el 5 de octubre de 2026 (creado a las 22:41:05 UTC y actualizado 41 segundos despues, a las 22:41:46 UTC). No dispone de model card: el unico contenido del README es la declaracion `license: unknown`, sin descripcion, sin instrucciones de uso y sin referencia a ningun paper, repositorio de codigo o dataset. El repositorio acumula 0 descargas y 0 likes, y no tiene pipeline declarado.
 
 La informacion publica disponible no permite identificar ninguna arquitectura, tamano de parametros, longitud de contexto ni esquema de cuantizacion. El tamano del repositorio es de aproximadamente 0,1 GB, una cifra incompatible con los pesos en precision completa (fp32, 4 bytes por parametro) de cualquier modelo de mas de unos 25 millones de parametros, por lo que es altamente probable que el contenido no sean pesos de un modelo de lenguaje utilizables, sino un archivo comprimido u otro tipo de material. Un repositorio hermano del mismo autor (montiezgirlzz/Marckris_bus_becauseofyouishine) contiene un unico archivo `MarckrisBus.zip` de 74,4 MB, lo que refuerza esa hipotesis.
 
@@ -92,7 +92,7 @@ No disponible. No es posible establecer una comparativa porque se desconocen la 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/montiezgirlzz/Alan_bus_becauseofyouishine
+- Repositorio en Hugging Face: https://huggingface.co/montiezgirlzz/Alan_bus_becauseofyouishine
 - Repositorio hermano del mismo autor: https://huggingface.co/montiezgirlzz/Marckris_bus_becauseofyouishine
 - Arbol de ficheros del repositorio hermano: https://huggingface.co/montiezgirlzz/Marckris_bus_becauseofyouishine/tree/main
 - Pagina de Wikipedia del grupo musical referenciado en el nombre: https://en.wikipedia.org/wiki/BUS_(band)

@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/heykorshun/xlm-roberta-large-xnli-anli-mlx-int8
+- Modelo en Hugging Face: https://huggingface.co/heykorshun/xlm-roberta-large-xnli-anli-mlx-int8
 - Modelo base original: https://huggingface.co/vicgalle/xlm-roberta-large-xnli-anli
 - Modelo base de XLM-RoBERTa-large: https://huggingface.co/FacebookAI/xlm-roberta-large
 - Tokenizer de origen: https://huggingface.co/BAAI/bge-reranker-v2-m3

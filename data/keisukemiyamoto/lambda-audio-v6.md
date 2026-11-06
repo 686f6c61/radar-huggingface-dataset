@@ -71,7 +71,7 @@ No se dispone de datos comparativos publicados en la informacion proporcionada. 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LambdaAudio v6 | 350M (segun titulo) | No disponible | CER 6,05 % en FLEURS ja_jp | No disponible | HuggingFace (0 descargas) |
+| LambdaAudio v6 | 350M (segun titulo) | No disponible | CER 6,05 % en FLEURS ja_jp | No disponible | Hugging Face (0 descargas) |
 | Alternativas | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -88,7 +88,7 @@ No se dispone de datos comparativos publicados en la informacion proporcionada. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KeisukeMiyamoto/lambda-audio-v6
+- Modelo en Hugging Face: https://huggingface.co/KeisukeMiyamoto/lambda-audio-v6
 - Encoder declarado: https://huggingface.co/KeisukeMiyamoto/zipformer-cpt
 - Decoder declarado: https://huggingface.co/KeisukeMiyamoto/lfm2.5-230m-cpt
 - Repositorio de codigo LambdaAudio (commit de referencia): https://github.com/KeisukeMiyamoto1324/lambda-audio/tree/28ba788c5891572c71d93d26b5a2fee52a3297bc

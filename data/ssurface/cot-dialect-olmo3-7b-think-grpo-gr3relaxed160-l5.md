@@ -66,9 +66,9 @@ No se han publicado resultados comparativos con otros modelos en la información
 
 | Modelo | Tipo | Exactitud GSM8K | Longitud de cadena (mediana) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `cot-dialect-olmo3-7b-think-grpo-gr3relaxed160-l5` (este adaptador) | LoRA sobre Olmo-3-7B-Think | 72.1% | 16 caracteres (nivel L5) | Apache-2.0 | HuggingFace |
-| `allenai/Olmo-3-7B-Think` (modelo base) | Modelo completo 7B | No disponible en esta documentación | Cadenas largas (razonamiento estándar) | Apache-2.0 | HuggingFace |
-| `ssurface/cot-dialect-olmo3-7b-think-grpo-l5` (modelo principal del mismo nivel) | LoRA sobre Olmo-3-7B-Think | No disponible en esta documentación | 16 caracteres (nivel L5) | Apache-2.0 | HuggingFace |
+| `cot-dialect-olmo3-7b-think-grpo-gr3relaxed160-l5` (este adaptador) | LoRA sobre Olmo-3-7B-Think | 72.1% | 16 caracteres (nivel L5) | Apache-2.0 | Hugging Face |
+| `allenai/Olmo-3-7B-Think` (modelo base) | Modelo completo 7B | No disponible en esta documentación | Cadenas largas (razonamiento estándar) | Apache-2.0 | Hugging Face |
+| `ssurface/cot-dialect-olmo3-7b-think-grpo-l5` (modelo principal del mismo nivel) | LoRA sobre Olmo-3-7B-Think | No disponible en esta documentación | 16 caracteres (nivel L5) | Apache-2.0 | Hugging Face |
 
 La comparativa directa con otros modelos de razonamiento matemático (p.ej. DeepSeek-R1-Distill-Qwen-7B, Qwen2.5-Math-7B) no está disponible en la información proporcionada. El adaptador es un artefacto de ablación, no un modelo competitivo de propósito general.
 

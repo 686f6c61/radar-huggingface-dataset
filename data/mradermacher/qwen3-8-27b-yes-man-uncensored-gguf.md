@@ -11,7 +11,7 @@ La relevancia actual de este modelo reside en la demanda de versiones sin censur
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Qwen3.8 (atención híbrida: 16 de 64 capas con atención full, 48 con atención lineal) |
-| Parametros totales | 460.730.096 (según HuggingFace; inconsistente con el nombre "27B") |
+| Parametros totales | 460.730.096 (según Hugging Face; inconsistente con el nombre "27B") |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible (el modelo base Qwen3.8-27B soporta hasta 128K) |
 | Tipos de cuantizacion | x-f16, Q4_K_S, Q2_K, Q8_0, Q6_K, Q3_K_M, Q3_K_S, Q3_K_L, Q4_K_M, Q5_K_S, Q5_K_M, IQ4_XS (según comentarios del README) |
@@ -69,7 +69,7 @@ No disponible. No hay información suficiente para comparar este modelo con alte
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.8-27B-Yes-Man-uncensored-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-27B-Yes-Man-uncensored-GGUF
 - Modelo original de cloudbjorn: https://huggingface.co/cloudbjorn/Qwen3.8-27B-Yes-Man-uncensored
 - Repositorio GitHub con instrucciones: https://github.com/Wassimyounes01/qwen38-uncensored
 - Página oficial de Qwen3.8-27B en vLLM: https://recipes.vllm.ai/Qwen/Qwen3.8-27B

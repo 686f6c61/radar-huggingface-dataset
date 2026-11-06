@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 | Modelo | Parámetros | Contexto / ventana | Formato y despliegue | Licencia | Notas |
 |---|---|---|---|---|---|
 | GLiFormer-Large-NER-LiteRT | 575,6 M | 128/256/512 tokens | LiteRT `.tflite`, Android GPU + CPU | Apache-2.0 | Paridad exacta con el original; validado solo en Galaxy S26 |
-| `knowledgator/gliformer-large-v1` | 575,6 M | Según checkpoint original | PyTorch (HuggingFace) | Apache-2.0 | Modelo de referencia; ejecución en servidor |
+| `knowledgator/gliformer-large-v1` | 575,6 M | Según checkpoint original | PyTorch (Hugging Face) | Apache-2.0 | Modelo de referencia; ejecución en servidor |
 | `knowledgator/gliner` (paquetes referenciados por el runtime) | No disponible | No disponible | PyTorch | No disponible | Usado solo para el decodificador upstream en el runtime de host |
 | Alternativas NER en dispositivo de otros autores | No disponible | No disponible | No disponible | No disponible | No se dispone de datos comparables en la información proporcionada |
 
@@ -97,7 +97,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/litert-community/GLiFormer-Large-NER-LiteRT
+- Modelo en Hugging Face: https://huggingface.co/litert-community/GLiFormer-Large-NER-LiteRT
 - Modelo base: https://huggingface.co/knowledgator/gliformer-large-v1
 - Repositorio de LiteRT: no disponible en la información proporcionada
 - Paper o blog del modelo base: no disponible en la información proporcionada

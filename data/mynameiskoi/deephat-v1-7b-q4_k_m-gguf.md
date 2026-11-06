@@ -86,7 +86,7 @@ La comparacion con Qwen2.5-Coder y CodeLlama se ofrece solo como referencia de c
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/MynameisKoi/DeepHat-V1-7B-Q4_K_M-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/MynameisKoi/DeepHat-V1-7B-Q4_K_M-GGUF
 - Modelo base: https://huggingface.co/DeepHat/DeepHat-V1-7B
 - Espacio GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp

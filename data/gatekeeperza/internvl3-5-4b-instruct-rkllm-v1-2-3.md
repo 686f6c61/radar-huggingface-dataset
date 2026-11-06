@@ -73,7 +73,7 @@ No se dispone de datos de rendimiento comparativos en la informacion proporciona
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GatekeeperZA/InternVL3.5-4B-Instruct-RKLLM-v1.2.3
+- Modelo en Hugging Face: https://huggingface.co/GatekeeperZA/InternVL3.5-4B-Instruct-RKLLM-v1.2.3
 - Modelo base original: https://huggingface.co/OpenGVLab/InternVL3-4B
 - Repositorio RKLLM API Server: https://github.com/GatekeeperZA/RKLLM-API-Server
 - Blog oficial de InternVL3.5: https://internvl.github.io/blog/2025-08-26-InternVL-3.5/

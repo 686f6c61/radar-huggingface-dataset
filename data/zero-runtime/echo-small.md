@@ -2,11 +2,11 @@
 
 ## Resumen
 
-echo-small es un modelo publicado por el usuario zero-runtime en HuggingFace bajo el identificador `zero-runtime/echo-small`. Por sus etiquetas (`turn-detection`, `end-of-utterance`, `eou`, `conversational-ai`, `voice-agents`, `speech`, `multilingual`) se trata de un componente especializado en detectar el final del turno de habla de un usuario, es decir, el momento exacto en el que una persona ha terminado de hablar y el agente de voz puede responder sin interrumpirla. Es la pieza que en los pipelines de voz se conoce habitualmente como detector de EOU (end-of-utterance) o de turno semántico, y que sustituye a los temporizadores de silencio fijos por una señal más fiable.
+echo-small es un modelo publicado por el usuario zero-runtime en Hugging Face bajo el identificador `zero-runtime/echo-small`. Por sus etiquetas (`turn-detection`, `end-of-utterance`, `eou`, `conversational-ai`, `voice-agents`, `speech`, `multilingual`) se trata de un componente especializado en detectar el final del turno de habla de un usuario, es decir, el momento exacto en el que una persona ha terminado de hablar y el agente de voz puede responder sin interrumpirla. Es la pieza que en los pipelines de voz se conoce habitualmente como detector de EOU (end-of-utterance) o de turno semántico, y que sustituye a los temporizadores de silencio fijos por una señal más fiable.
 
 El modelo se presenta como multilingüe y cubre doce idiomas: bengalí, alemán, inglés, español, francés, guyaratí, hindi, italiano, maratí, tamil, telugu y urdu. Esta combinación es poco habitual y apunta a un uso orientado a agentes de voz que operan simultáneamente en mercados europeos y del sur de Asia, donde la detección de fin de turno basada únicamente en pausas acústicas falla con frecuencia por diferencias de prosodia y de ritmo conversacional.
 
-Su relevancia actual es doble. Por un lado, los agentes de voz en tiempo real necesitan reducir la latencia percibida: un detector de turno preciso permite responder antes y evita cortes prematuros. Por otro lado, el modelo tiene acceso restringido (gated) en HuggingFace, lo que obliga a aceptar condiciones antes de descargarlo, y en la información disponible no se detallan ni su licencia, ni su arquitectura, ni su número de parámetros, ni su formato de pesos, ni resultados de evaluación.
+Su relevancia actual es doble. Por un lado, los agentes de voz en tiempo real necesitan reducir la latencia percibida: un detector de turno preciso permite responder antes y evita cortes prematuros. Por otro lado, el modelo tiene acceso restringido (gated) en Hugging Face, lo que obliga a aceptar condiciones antes de descargarlo, y en la información disponible no se detallan ni su licencia, ni su arquitectura, ni su número de parámetros, ni su formato de pesos, ni resultados de evaluación.
 
 ## Especificaciones técnicas
 
@@ -21,7 +21,7 @@ Su relevancia actual es doble. Por un lado, los agentes de voz en tiempo real ne
 | Licencia | no disponible (modelo con acceso restringido, sujeto a aceptación de condiciones) |
 | Formato de pesos | no disponible |
 
-Otros datos de la ficha de HuggingFace: identificador `zero-runtime/echo-small`, autor `zero-runtime`, etiqueta de región `region:us`, 0 descargas y 2 "likes" en el momento de la consulta, pipeline de inferencia no declarado, fecha de creación 2026-09-10 y última actualización 2026-09-10.
+Otros datos de la ficha de Hugging Face: identificador `zero-runtime/echo-small`, autor `zero-runtime`, etiqueta de región `region:us`, 0 descargas y 2 "likes" en el momento de la consulta, pipeline de inferencia no declarado, fecha de creación 2026-09-10 y última actualización 2026-09-10.
 
 ## Arquitectura y entrenamiento
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 - Encaje en GPU de consumo: no disponible. No se puede confirmar ni descartar que quepa en tarjetas como una RTX 3060 o una RTX 4090.
 - Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI, ONNX Runtime): no disponibles. No se documenta el formato de pesos ni los frameworks soportados.
 - Latencia y throughput estimados: no disponibles. En este tipo de componentes la latencia es crítica, ya que se sitúa en el camino caliente del diálogo y cualquier retardo se suma directamente al tiempo de respuesta del agente, pero no se han publicado mediciones.
-- Consideración práctica: dado que el acceso es restringido, la descarga requiere aceptar condiciones en HuggingFace antes de poder evaluar el modelo en un entorno propio.
+- Consideración práctica: dado que el acceso es restringido, la descarga requiere aceptar condiciones en Hugging Face antes de poder evaluar el modelo en un entorno propio.
 
 ## Comparativa con modelos similares
 
@@ -77,14 +77,14 @@ No se han proporcionado datos comparativos en la información disponible. La cat
 
 - Ausencia total de documentación técnica: no se especifican arquitectura, parámetros, contexto, datos de entrenamiento ni metodología de evaluación, lo que impide auditar el comportamiento del modelo.
 - Licencia no declarada: al no figurar la licencia, no puede asumirse que el uso comercial esté permitido. Es imprescindible revisar las condiciones que se aceptan al solicitar el acceso restringido.
-- Acceso restringido (gated): la descarga exige aceptar condiciones en HuggingFace, lo que puede bloquear despliegues automatizados o en entornos sin intervención manual.
+- Acceso restringido (gated): la descarga exige aceptar condiciones en Hugging Face, lo que puede bloquear despliegues automatizados o en entornos sin intervención manual.
 - Riesgo de alucinación y de falsos positivos: no disponible en detalle, pero en un detector de turno un falso positivo (declarar terminado un turno que sigue abierto) provoca interrupciones al usuario, y un falso negativo alarga los silencios. No hay métricas publicadas que permitan acotar ninguno de los dos errores.
 - Cobertura multilingüe desigual: aunque se declaran doce idiomas, no se indica el reparto de datos ni el rendimiento por idioma, por lo que el desempeño en lenguas con menos recursos, como guyaratí, maratí, tamil o telugu, podría ser inferior al de inglés o español.
 - Modelo con tracción mínima: 0 descargas y 2 "likes" en el momento de la consulta, lo que reduce la probabilidad de encontrar reportes de terceros, incidencias resueltas o ejemplos de integración.
-- Sin pipeline declarado: la ficha no indica la tarea de HuggingFace ni el formato de entrada esperado, lo que obliga a inferir la interfaz de uso a partir de las etiquetas.
+- Sin pipeline declarado: la ficha no indica la tarea de Hugging Face ni el formato de entrada esperado, lo que obliga a inferir la interfaz de uso a partir de las etiquetas.
 - Idoneidad para producción no verificada: al no existir benchmarks ni pruebas de carga, no se recomienda incorporarlo a un sistema en producción sin una evaluación propia previa sobre datos del dominio objetivo.
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/zero-runtime/echo-small
+- Ficha del modelo en Hugging Face: https://huggingface.co/zero-runtime/echo-small
 - La búsqueda web realizada no devolvió enlaces relevantes sobre este modelo. Los resultados obtenidos trataban sobre el concepto matemático del cero, el fabricante de motocicletas eléctricas Zero Motorcycles y el software de contabilidad Xero, y no guardan relación con `zero-runtime/echo-small`. No se dispone por tanto de paper, blog técnico, repositorio de código ni demo asociados.

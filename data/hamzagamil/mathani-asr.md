@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Mathani ASR es un espejo de los ficheros de reconocimiento de voz que utiliza la aplicación web Mathani (مثاني) en su modo de memorización del Corán. El autor, hamzagamil, publica en HuggingFace una copia byte a byte de los binarios distribuidos originalmente en las releases de GitHub del proyecto, con el objetivo de que la aplicación alojada en `get.mthani.app` pueda descargarlos directamente desde el navegador, ya que este no puede leer ficheros de releases de GitHub. No se trata, por tanto, de un modelo entrenado desde cero, sino de un artefacto de despliegue derivado de NVIDIA FastConformer-Hybrid PCD Large en árabe.
+Mathani ASR es un espejo de los ficheros de reconocimiento de voz que utiliza la aplicación web Mathani (مثاني) en su modo de memorización del Corán. El autor, hamzagamil, publica en Hugging Face una copia byte a byte de los binarios distribuidos originalmente en las releases de GitHub del proyecto, con el objetivo de que la aplicación alojada en `get.mthani.app` pueda descargarlos directamente desde el navegador, ya que este no puede leer ficheros de releases de GitHub. No se trata, por tanto, de un modelo entrenado desde cero, sino de un artefacto de despliegue derivado de NVIDIA FastConformer-Hybrid PCD Large en árabe.
 
 El modelo subyacente es una adaptación del checkpoint `nvidia/stt_ar_fastconformer_hybrid_large_pcd_v1.0`, pasado por el proyecto Khatma (`adnanfet/khatma-model`) y por la exportación a ONNX de Tilawa (`yazinsai/tilawa`). El resultado se distribuye como un único fichero ONNX cuantizado a int8 y comprimido con gzip, acompañado de un vocabulario de tokens y del detector de actividad de voz Silero VAD. Según la propia model card, el modelo no fue reentrenado: los cambios respecto al original son de adaptación y empaquetado.
 
-Su relevancia es acotada pero concreta: ofrece un pipeline ASR completo en árabe, ejecutable en navegador mediante sherpa-onnx, orientado a la recitación coránica y a la verificación de memorización. Es un caso de estudio útil de cómo se distribuye un modelo de voz cuantizado para inferencia en cliente, aunque sus cifras de uso en HuggingFace son nulas en el momento de la consulta.
+Su relevancia es acotada pero concreta: ofrece un pipeline ASR completo en árabe, ejecutable en navegador mediante sherpa-onnx, orientado a la recitación coránica y a la verificación de memorización. Es un caso de estudio útil de cómo se distribuye un modelo de voz cuantizado para inferencia en cliente, aunque sus cifras de uso en Hugging Face son nulas en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
@@ -85,7 +85,7 @@ La comparación se limita al linaje directo del modelo, ya que no se dispone de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hamzagamil/mathani-asr
+- Hugging Face: https://huggingface.co/hamzagamil/mathani-asr
 - Modelo base NVIDIA: https://huggingface.co/nvidia/stt_ar_fastconformer_hybrid_large_pcd_v1.0
 - Khatma: https://huggingface.co/adnanfet/khatma-model
 - Tilawa (exportación ONNX): https://github.com/yazinsai/tilawa

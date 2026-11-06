@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LingTai, publicado en HuggingFace bajo el identificador `huangzs/lingtai`, se presenta como un "Digital Scientist" o agente lifelong que vive dentro de un proyecto y mejora con el tiempo. A diferencia de un modelo de lenguaje convencional, LingTai no es un conjunto de pesos sino un sistema de agente autónomo con memoria durable, conocimiento acumulado y habilidades reutilizables, diseñado para trabajar de forma local en el sistema de archivos del usuario. El proyecto está respaldado por una organización (Lingtai-AI) y cuenta con sitio web, tutorial y repositorios en GitHub.
+LingTai, publicado en Hugging Face bajo el identificador `huangzs/lingtai`, se presenta como un "Digital Scientist" o agente lifelong que vive dentro de un proyecto y mejora con el tiempo. A diferencia de un modelo de lenguaje convencional, LingTai no es un conjunto de pesos sino un sistema de agente autónomo con memoria durable, conocimiento acumulado y habilidades reutilizables, diseñado para trabajar de forma local en el sistema de archivos del usuario. El proyecto está respaldado por una organización (Lingtai-AI) y cuenta con sitio web, tutorial y repositorios en GitHub.
 
 La información disponible en la model card describe las capacidades del agente (persistencia de estado, generación de avatares especialistas, integración con canales externos) pero no proporciona ninguna especificación técnica del modelo subyacente: no se indica arquitectura, número de parámetros, contexto, datos de entrenamiento ni licencia. Por tanto, esta ficha se limita a documentar lo que se conoce del sistema, marcando explícitamente los datos ausentes como "no disponible".
 
@@ -72,7 +72,7 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/huangzs/lingtai
+- Hugging Face: https://huggingface.co/huangzs/lingtai
 - Sitio web: https://lingtai.ai
 - Tutorial: https://lingtai.ai/en/tutorial/
 - Releases: https://lingtai.ai/releases/

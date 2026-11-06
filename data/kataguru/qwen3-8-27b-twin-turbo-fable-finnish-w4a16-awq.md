@@ -108,7 +108,7 @@ Los resultados de la búsqueda web incluidos en la consulta no contienen informa
 
 ## Enlaces
 
-- Página de HuggingFace del modelo: https://huggingface.co/kataguru/Qwen3.8-27B-TWIN-TURBO-Fable-Finnish-W4A16-AWQ
+- Página de Hugging Face del modelo: https://huggingface.co/kataguru/Qwen3.8-27B-TWIN-TURBO-Fable-Finnish-W4A16-AWQ
 - Modelo base: https://huggingface.co/DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored
 - Repositorios de herramientas citadas en la model card: `llm-compressor` (calibración AWQ) y vLLM 0.29.0 o superior (servido). No se incluyen URL directas en la información proporcionada.
 - Paper, blog o demo adicionales: no disponibles. La búsqueda web realizada no devolvió resultados relevantes sobre este modelo.

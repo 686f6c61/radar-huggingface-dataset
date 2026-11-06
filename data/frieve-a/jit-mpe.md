@@ -2,7 +2,7 @@
 
 ## Resumen
 
-JIT-MPE (Just-in-Time Multi-Pitch Estimation) es un modelo neuronal causal de muy pequeno tamano (86.425 parametros) disenado para estimar en tiempo real que notas de piano (de las 88 posibles, MIDI 21-108) estan sonando en audio de ensembles mixtos. Lo desarrolla Yoshiyuki Kobayashi (Frieve) y se publica junto al paper arXiv:2610.33113, con pesos entrenados liberados en HuggingFace bajo licencia MIT.
+JIT-MPE (Just-in-Time Multi-Pitch Estimation) es un modelo neuronal causal de muy pequeno tamano (86.425 parametros) disenado para estimar en tiempo real que notas de piano (de las 88 posibles, MIDI 21-108) estan sonando en audio de ensembles mixtos. Lo desarrolla Yoshiyuki Kobayashi (Frieve) y se publica junto al paper arXiv:2610.33113, con pesos entrenados liberados en Hugging Face bajo licencia MIT.
 
 El problema que resuelve es la estimacion de multiples pitches (MPE) bajo restricciones de latencia: el modelo procesa el audio en tramas de 20 ms y puede revisar una trama hasta su plazo de salida (por ejemplo, 50 ms). En una sola hebra de CPU tarda unos 2,4 ms por trama, lo que lo hace viable para sistemas embebidos y aplicaciones de bajo consumo.
 
@@ -65,11 +65,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Tipo | Contexto / tramas | Licencia | Disponibilidad |
 |---|---|---:|---|---|---|
-| JIT-MPE (S) | 86.425 | Causal, cinco cabezas de retardo | 20 ms por trama, hasta 160 ms de anticipacion | MIT | Pesos en HuggingFace |
-| Harmonic CRNN (A0) | 85.813 | Causal, una cabeza | 20 ms por trama | MIT | Pesos en HuggingFace |
-| Dilated CRNN (A1d) | 95.767 | Causal, una cabeza | 20 ms por trama | MIT | Pesos en HuggingFace |
-| Plain CRNN (B1) | 95.767 | Causal, una cabeza | 20 ms por trama | MIT | Pesos en HuggingFace |
-| Harmonic BiCRNN (A0-bi) | 83.729 | Bidireccional, entrada completa | Solo fichero completo | MIT | Pesos en HuggingFace |
+| JIT-MPE (S) | 86.425 | Causal, cinco cabezas de retardo | 20 ms por trama, hasta 160 ms de anticipacion | MIT | Pesos en Hugging Face |
+| Harmonic CRNN (A0) | 85.813 | Causal, una cabeza | 20 ms por trama | MIT | Pesos en Hugging Face |
+| Dilated CRNN (A1d) | 95.767 | Causal, una cabeza | 20 ms por trama | MIT | Pesos en Hugging Face |
+| Plain CRNN (B1) | 95.767 | Causal, una cabeza | 20 ms por trama | MIT | Pesos en Hugging Face |
+| Harmonic BiCRNN (A0-bi) | 83.729 | Bidireccional, entrada completa | Solo fichero completo | MIT | Pesos en Hugging Face |
 
 Los sistemas externos comparados en el paper no se incluyen en el repositorio; deben obtenerse de sus autores. No se dispone de datos numericos de rendimiento comparativo en la informacion proporcionada.
 
@@ -86,9 +86,9 @@ Los sistemas externos comparados en el paper no se incluyen en el repositorio; d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Frieve-A/jit-mpe
+- Hugging Face: https://huggingface.co/Frieve-A/jit-mpe
 - Paper: https://arxiv.org/abs/2610.33113
-- Pagina del paper en HuggingFace: https://huggingface.co/papers/2610.33113
+- Pagina del paper en Hugging Face: https://huggingface.co/papers/2610.33113
 - Codigo fuente: https://github.com/Frieve-A/jit-mpe/tree/08bbd5acbb223962895f847a86c2d47a36179896
 - Licencia: https://huggingface.co/Frieve-A/jit-mpe/blob/main/LICENSE
 - Creditos de datos y software: https://huggingface.co/Frieve-A/jit-mpe/blob/main/THIRD_PARTY.md

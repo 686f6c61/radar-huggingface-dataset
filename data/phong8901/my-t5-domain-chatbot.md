@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`phong8901/my-t5-domain-chatbot` es un modelo de generacion de texto del tipo text2text, construido sobre la arquitectura T5 (Text-to-Text Transfer Transformer) y publicado en HuggingFace por el usuario phong8901. Cuenta con 222.903.552 parametros totales en formato safetensors, lo que lo situa en el rango de tamano de T5-base (aproximadamente 220 millones de parametros). El repositorio ocupa 0,9 GB, un tamano coherente con pesos almacenados en precision de 32 bits sin cuantizar.
+`phong8901/my-t5-domain-chatbot` es un modelo de generacion de texto del tipo text2text, construido sobre la arquitectura T5 (Text-to-Text Transfer Transformer) y publicado en Hugging Face por el usuario phong8901. Cuenta con 222.903.552 parametros totales en formato safetensors, lo que lo situa en el rango de tamano de T5-base (aproximadamente 220 millones de parametros). El repositorio ocupa 0,9 GB, un tamano coherente con pesos almacenados en precision de 32 bits sin cuantizar.
 
-El propio nombre del repositorio indica que se trata de un ajuste fino orientado a conversacion en un dominio concreto ("domain chatbot"), pero la model card publicada es la plantilla automatica de HuggingFace sin ningun campo completado: no se especifica el dominio, el dataset de entrenamiento, el procedimiento de ajuste ni los hiperparametros utilizados. Tampoco hay informacion sobre licencia, idiomas soportados o pipeline declarado.
+El propio nombre del repositorio indica que se trata de un ajuste fino orientado a conversacion en un dominio concreto ("domain chatbot"), pero la model card publicada es la plantilla automatica de Hugging Face sin ningun campo completado: no se especifica el dominio, el dataset de entrenamiento, el procedimiento de ajuste ni los hiperparametros utilizados. Tampoco hay informacion sobre licencia, idiomas soportados o pipeline declarado.
 
 Su relevancia practica es limitada tal y como esta publicado: con 11 descargas y 0 likes en el momento de la consulta, y sin documentacion tecnica, no hay evidencia publica de su rendimiento ni de su comportamiento en produccion. Puede resultar de interes unicamente como punto de partida para inspeccionar pesos de un ajuste fino de T5, o como referencia si se contacta con el autor para obtener la informacion ausente.
 
@@ -30,7 +30,7 @@ El ajuste fino se realizo presumiblemente sobre un corpus conversacional de un d
 ## Capacidades
 
 - Generacion de texto condicionada a una entrada (pipeline text2text-generation), adecuada por tanto a tareas de secuencia a secuencia.
-- El tag `text-generation-inference` y `endpoints_compatible` indican compatibilidad con el servidor TGI y con los endpoints gestionados de HuggingFace, aunque no hay confirmacion de que se haya desplegado.
+- El tag `text-generation-inference` y `endpoints_compatible` indican compatibilidad con el servidor TGI y con los endpoints gestionados de Hugging Face, aunque no hay confirmacion de que se haya desplegado.
 - Presunta orientacion conversacional de dominio especifico, segun el nombre del repositorio; no verificable con la informacion disponible.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -64,10 +64,10 @@ Los datos de las alternativas proceden de sus model cards publicas y no de la in
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento documentado |
 |---|---|---|---|---|---|
-| phong8901/my-t5-domain-chatbot | 222,9 M | no disponible (T5: 512) | no disponible | HuggingFace, 11 descargas | no disponible |
-| T5-base | 220 M aprox. | 512 tokens | Apache 2.0 | HuggingFace, ampliamente usado | Documentado en el paper original |
-| Flan-T5-base | 250 M aprox. | 512 tokens | Apache 2.0 | HuggingFace, muy extendido | Documentado en el paper de Flan-T5 |
-| mT5-base | 580 M aprox. | 512 tokens | Apache 2.0 | HuggingFace | Documentado en el paper de mT5 |
+| phong8901/my-t5-domain-chatbot | 222,9 M | no disponible (T5: 512) | no disponible | Hugging Face, 11 descargas | no disponible |
+| T5-base | 220 M aprox. | 512 tokens | Apache 2.0 | Hugging Face, ampliamente usado | Documentado en el paper original |
+| Flan-T5-base | 250 M aprox. | 512 tokens | Apache 2.0 | Hugging Face, muy extendido | Documentado en el paper de Flan-T5 |
+| mT5-base | 580 M aprox. | 512 tokens | Apache 2.0 | Hugging Face | Documentado en el paper de mT5 |
 
 La diferencia fundamental no es de arquitectura ni de tamano, sino de trazabilidad: las tres alternativas documentan datos de entrenamiento, licencia e idiomas, mientras que este repositorio no ofrece ninguno de esos datos.
 
@@ -85,7 +85,7 @@ La diferencia fundamental no es de arquitectura ni de tamano, sino de trazabilid
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/phong8901/my-t5-domain-chatbot
+- Repositorio en Hugging Face: https://huggingface.co/phong8901/my-t5-domain-chatbot
 - Paper de referencia de la arquitectura T5 (Raffel et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental citada en la model card (Lacoste et al., 2019): https://mlco2.github.io/impact
 - No se han encontrado papers, blogs, repositorios ni demos adicionales asociados a este modelo en la busqueda web realizada.

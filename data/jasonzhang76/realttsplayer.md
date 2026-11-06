@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RealTTSPlayer es un repositorio publicado en HuggingFace por el usuario jasonzhang76 bajo el identificador `jasonzhang76/RealTTSPlayer`. Por el nombre del repositorio y la etiqueta `onnx` asociada, todo apunta a que se trata de un componente relacionado con sintesis de voz (text-to-speech) exportado al formato ONNX, aunque la ficha de HuggingFace no declara pipeline, licencia ni idiomas, por lo que esta interpretacion no puede confirmarse con la informacion disponible.
+RealTTSPlayer es un repositorio publicado en Hugging Face por el usuario jasonzhang76 bajo el identificador `jasonzhang76/RealTTSPlayer`. Por el nombre del repositorio y la etiqueta `onnx` asociada, todo apunta a que se trata de un componente relacionado con sintesis de voz (text-to-speech) exportado al formato ONNX, aunque la ficha de Hugging Face no declara pipeline, licencia ni idiomas, por lo que esta interpretacion no puede confirmarse con la informacion disponible.
 
 El repositorio tiene un tamano aproximado de 2,2 GB, lo que es coherente con pesos de un modelo de voz de tamano medio o con varios ficheros ONNX agrupados, pero no se especifica la arquitectura, el numero de parametros ni la longitud de contexto o de audio soportada. Las unicas etiquetas declaradas son `onnx` y `region:us`, lo que indica la region de publicacion y el formato de pesos, sin mas detalles tecnicos.
 
@@ -25,7 +25,7 @@ La relevancia actual del modelo es limitada segun las metricas publicas: acumula
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la ficha de HuggingFace ni en la busqueda web realizada. La unica pista tecnica es la etiqueta `onnx`, que indica que los pesos estan exportados al formato Open Neural Network Exchange, habitualmente utilizado para desplegar modelos en entornos de inferencia optimizados (ONNX Runtime, TensorRT, etc.). No se especifica si se trata de un transformer, un modelo acustico de TTS, un vocoder o una combinacion de varios componentes.
+No se ha publicado informacion sobre la arquitectura del modelo en la ficha de Hugging Face ni en la busqueda web realizada. La unica pista tecnica es la etiqueta `onnx`, que indica que los pesos estan exportados al formato Open Neural Network Exchange, habitualmente utilizado para desplegar modelos en entornos de inferencia optimizados (ONNX Runtime, TensorRT, etc.). No se especifica si se trata de un transformer, un modelo acustico de TTS, un vocoder o una combinacion de varios componentes.
 
 Tampoco hay datos sobre el conjunto de entrenamiento, el numero de tokens o horas de audio utilizados, ni sobre si se aplicaron tecnicas de ajuste como RLHF, DPO o fine-tuning supervisado. El nombre "RealTTSPlayer" sugiere una finalidad de reproduccion o sintesis de voz, pero esta interpretacion no esta respaldada por documentacion tecnica en los resultados disponibles.
 
@@ -77,5 +77,5 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jasonzhang76/RealTTSPlayer
+- Hugging Face: https://huggingface.co/jasonzhang76/RealTTSPlayer
 - No se han encontrado papers, blogs, repositorios ni demos relevantes en la busqueda web realizada. Los resultados obtenidos no guardan relacion con el modelo y se omiten por no ser pertinentes.

@@ -57,10 +57,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El ad
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Fred456/llava15_7b_DPO-ab_5 (adaptador) | 7B + LoRA | 4096 | No disponible | HuggingFace (adapter) |
-| liuhaotian/llava-v1.5-7b (base) | 7B | 4096 | LLaMA-2 | HuggingFace |
-| bakllava (LLaVA-1.5-7B variante) | 7B | 4096 | LLaMA-2 | HuggingFace |
-| LLaVA-NeXT-7B (LLaVA-1.6) | 7B | 4096 | LLaMA-2 | HuggingFace |
+| Fred456/llava15_7b_DPO-ab_5 (adaptador) | 7B + LoRA | 4096 | No disponible | Hugging Face (adapter) |
+| liuhaotian/llava-v1.5-7b (base) | 7B | 4096 | LLaMA-2 | Hugging Face |
+| bakllava (LLaVA-1.5-7B variante) | 7B | 4096 | LLaMA-2 | Hugging Face |
+| LLaVA-NeXT-7B (LLaVA-1.6) | 7B | 4096 | LLaMA-2 | Hugging Face |
 
 La comparacion se limita al modelo base, ya que el adaptador no tiene datos propios. LLaVA-NeXT-7B mejora el rendimiento en VQA y razonamiento visual respecto a LLaVA-1.5, pero no hay evidencia de que este adaptador DPO supere a ninguno de ellos.
 
@@ -75,7 +75,7 @@ La comparacion se limita al modelo base, ya que el adaptador no tiene datos prop
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Fred456/llava15_7b_DPO-ab_5
+- Hugging Face: https://huggingface.co/Fred456/llava15_7b_DPO-ab_5
 - Modelo base: https://huggingface.co/liuhaotian/llava-v1.5-7b
 - Paper de LLaVA (referencia del modelo base): https://arxiv.org/abs/2304.08485
 - Paper de DPO (referencia del metodo de entrenamiento): https://arxiv.org/abs/2305.18290

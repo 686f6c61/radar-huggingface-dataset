@@ -84,7 +84,7 @@ La comparativa es cualitativa porque no hay benchmarks publicados. La principal 
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta variante: https://huggingface.co/Noobito45/Qwen3.8-9B-heretic-uncensored-NVFP4-GGUF
+- Repositorio Hugging Face de esta variante: https://huggingface.co/Noobito45/Qwen3.8-9B-heretic-uncensored-NVFP4-GGUF
 - Modelo base (rohit267): https://huggingface.co/rohit267/Qwen3.8-9B-heretic-uncensored
 - Modelo original de Empero: https://huggingface.co/empero-ai/Qwen3.8-9B
 - Base Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B

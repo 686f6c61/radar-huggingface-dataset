@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Hikaf143/qwen2.5-7b-alpaca es un ajuste fino (fine-tune) del modelo Qwen/Qwen2.5-7B-Instruct sobre el dataset Alpaca (51.390 filas), publicado por el usuario Hikaf143 (Hika — MKD Co., Ltd.) en HuggingFace. Se trata de un modelo denso de 7.615.616.512 parametros (aproximadamente 7,6 mil millones) con pesos en safetensors y un tamano de repositorio de 15,2 GB, coherente con un guardado completo en bfloat16 tras fusionar el adaptador.
+Hikaf143/qwen2.5-7b-alpaca es un ajuste fino (fine-tune) del modelo Qwen/Qwen2.5-7B-Instruct sobre el dataset Alpaca (51.390 filas), publicado por el usuario Hikaf143 (Hika — MKD Co., Ltd.) en Hugging Face. Se trata de un modelo denso de 7.615.616.512 parametros (aproximadamente 7,6 mil millones) con pesos en safetensors y un tamano de repositorio de 15,2 GB, coherente con un guardado completo en bfloat16 tras fusionar el adaptador.
 
 El proposito declarado por el autor es disponer de un asistente generico de seguimiento de instrucciones para generacion de texto, respuesta a preguntas y tareas de instruccion. No obstante, la propia model card indica que se trata de una "pipeline validation run" de solo 200 pasos, con una perdida de validacion final de 2,322 y con la evaluacion (MMLU, MT-Bench) marcada como pendiente. Es, por tanto, un artefacto de validacion de infraestructura de entrenamiento mas que un modelo listo para produccion.
 
@@ -61,17 +61,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 - GPU que caben en consumer: RTX 4090 (24 GB) y RTX 5090 (32 GB) en bfloat16 sin problemas; RTX 3090 (24 GB) tambien. En 4 bits, modelos con 8-12 GB de VRAM pueden ser suficientes.
 - GPU profesionales: A100 40/80 GB, H100, L40S, A6000; cualquiera de ellas sobra para inferencia en precision completa.
 - Entrenamiento: el autor uso una unica RTX 5090 de 32 GB con QLoRA (NF4 + LoRA r=32). Reproducir un entrenamiento similar requiere al menos 24 GB de VRAM.
-- Opciones de despliegue: HuggingFace Transformers, vLLM, TGI, llama.cpp y Ollama (estos dos ultimos requieren convertir los pesos a GGUF, ya que el repositorio no incluye cuantizaciones).
+- Opciones de despliegue: Hugging Face Transformers, vLLM, TGI, llama.cpp y Ollama (estos dos ultimos requieren convertir los pesos a GGUF, ya que el repositorio no incluye cuantizaciones).
 - Latencia y throughput: no disponible. No se han publicado mediciones para este modelo.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Hikaf143/qwen2.5-7b-alpaca | 7,6 B | 32.768 (heredado, no confirmado) | QLoRA r=32 sobre Alpaca, 200 pasos | Hereda Apache 2.0 (no declarada en metadatos) | HuggingFace, 9 descargas, 0 likes |
-| Qwen/Qwen2.5-7B-Instruct | 7,6 B | 32.768 (131.072 con YaRN) | Ajuste por instrucciones completo del autor original | Apache 2.0 | HuggingFace, ampliamente desplegado |
-| meta-llama/Llama-3.1-8B-Instruct | 8,0 B | 131.072 | Ajuste por instrucciones con RLHF/DPO | Llama 3.1 Community License | HuggingFace, muy extendido |
-| mistralai/Mistral-7B-Instruct-v0.3 | 7,2 B | 32.768 | Ajuste por instrucciones | Apache 2.0 | HuggingFace, muy extendido |
+| Hikaf143/qwen2.5-7b-alpaca | 7,6 B | 32.768 (heredado, no confirmado) | QLoRA r=32 sobre Alpaca, 200 pasos | Hereda Apache 2.0 (no declarada en metadatos) | Hugging Face, 9 descargas, 0 likes |
+| Qwen/Qwen2.5-7B-Instruct | 7,6 B | 32.768 (131.072 con YaRN) | Ajuste por instrucciones completo del autor original | Apache 2.0 | Hugging Face, ampliamente desplegado |
+| meta-llama/Llama-3.1-8B-Instruct | 8,0 B | 131.072 | Ajuste por instrucciones con RLHF/DPO | Llama 3.1 Community License | Hugging Face, muy extendido |
+| mistralai/Mistral-7B-Instruct-v0.3 | 7,2 B | 32.768 | Ajuste por instrucciones | Apache 2.0 | Hugging Face, muy extendido |
 
 La comparacion relevante es contra el propio modelo base: este fine-tune no aporta ninguna mejora documentada y no publica evaluaciones frente a el. Frente a Llama-3.1-8B-Instruct o Mistral-7B-Instruct-v0.3, carece de datos de rendimiento, de cuantizaciones publicadas y de una licencia claramente declarada en los metadatos, por lo que no es una alternativa competitiva.
 
@@ -90,7 +90,7 @@ La comparacion relevante es contra el propio modelo base: este fine-tune no apor
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/Hikaf143/qwen2.5-7b-alpaca
+- Repositorio del modelo en Hugging Face: https://huggingface.co/Hikaf143/qwen2.5-7b-alpaca
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Informe de evaluacion citado en la model card (ruta relativa dentro del repositorio, puede no existir o no ser accesible): eval_results/run_2026-05-27_0039/summary.md
 - Paper de Qwen2.5 (Technical Report, arXiv:2412.15115): https://arxiv.org/abs/2412.15115

@@ -103,7 +103,7 @@ La comparacion relevante no es de capacidad, sino de metodologia: el interes del
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kzhao5/mea-qedks-defenses
+- Repositorio en Hugging Face: https://huggingface.co/kzhao5/mea-qedks-defenses
 - Repositorio gemelo (SeqKD): https://huggingface.co/kzhao5/mea-seqkd-defenses
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B
 - Modelo profesor: https://huggingface.co/Qwen/Qwen2.5-72B-Instruct

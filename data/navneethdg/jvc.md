@@ -86,7 +86,7 @@ No se han publicado en la informacion disponible resultados comparables de otros
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| JVC (`navneethdg/JVC`) | no disponible | 16 fotogramas + esqueleto MediaPipe | 80,61 % de exactitud en `stroke_type` (FineBadminton-20K, declarado) | no disponible | Checkpoint publico en HuggingFace |
+| JVC (`navneethdg/JVC`) | no disponible | 16 fotogramas + esqueleto MediaPipe | 80,61 % de exactitud en `stroke_type` (FineBadminton-20K, declarado) | no disponible | Checkpoint publico en Hugging Face |
 | Ablaciones de JVC sin cross-attention | no disponible | 16 fotogramas + esqueleto MediaPipe | no disponible (son ejecuciones separadas, no publicadas en este repositorio) | no disponible | No publicadas |
 | Alternativas de terceros | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -106,7 +106,7 @@ No se han publicado en la informacion disponible resultados comparables de otros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/navneethdg/JVC
+- Modelo en Hugging Face: https://huggingface.co/navneethdg/JVC
 - Dataset FineBadminton-20K: https://huggingface.co/datasets/Moujuruo/Finebadminton-20K
 - Paper (OpenReview, foro): https://openreview.net/forum?id=XJEhcXfwEe
 - Paper (PDF): https://openreview.net/pdf?id=XJEhcXfwEe

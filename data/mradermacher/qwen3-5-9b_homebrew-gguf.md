@@ -31,7 +31,7 @@ La contribución de esta publicación es exclusivamente la cuantización: mrader
 
 - Generación de texto conversacional: el tag "conversational" y la pipeline de transformers apuntan a un uso como modelo de chat.
 - Procesamiento multimodal: los ficheros mmproj-Q8_0 y mmproj-f16 confirman soporte de entrada visual en el modelo base, aunque no se detalla su alcance.
-- Compatibilidad con endpoints: el tag "endpoints_compatible" sugiere que puede servirse mediante APIs compatibles con el formato de HuggingFace/OpenAI.
+- Compatibilidad con endpoints: el tag "endpoints_compatible" sugiere que puede servirse mediante APIs compatibles con el formato de Hugging Face/OpenAI.
 - Tool calling / function calling: no disponible en la información proporcionada.
 - Razonamiento multi-paso y agentes: no disponible en la información proporcionada.
 - Capacidades multilingües: limitadas al inglés según el campo language.

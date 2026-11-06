@@ -4,17 +4,17 @@
 
 ## Resumen
 
-MyAwesomeModel-step0900 es un modelo publicado en HuggingFace por el usuario dusersad12 bajo licencia MIT. Se distribuye a traves de la libreria transformers y esta etiquetado con el pipeline de feature-extraction y la arquitectura bert, lo que sugiere un transformer de tipo encoder orientado a la extraccion de representaciones, aunque la model card adjunta describe un modelo generativo con capacidades de razonamiento, codigo y matematicas. Existe, por tanto, una contradiccion entre los metadatos del repositorio y el contenido de la model card.
+MyAwesomeModel-step0900 es un modelo publicado en Hugging Face por el usuario dusersad12 bajo licencia MIT. Se distribuye a traves de la libreria transformers y esta etiquetado con el pipeline de feature-extraction y la arquitectura bert, lo que sugiere un transformer de tipo encoder orientado a la extraccion de representaciones, aunque la model card adjunta describe un modelo generativo con capacidades de razonamiento, codigo y matematicas. Existe, por tanto, una contradiccion entre los metadatos del repositorio y el contenido de la model card.
 
 El repositorio presenta 0 descargas y 0 likes, un tamano de 0.0 GB y fechas de creacion y actualizacion del 28 de septiembre de 2026, lo que apunta a un artefacto recien creado o de prueba sin adopcion publica. El nombre "MyAwesomeModel-step0900" y el uso de marcadores genericos ("Model1", "Model2") en las tablas apuntan a una plantilla o a un modelo en fase temprana de publicacion.
 
-Por el momento no es posible confirmar parametros, contexto ni datos de entrenamiento, ya que ni los metadatos de HuggingFace ni la model card los especifican. Cualquier evaluacion seria requiere consultar el repositorio de codigo del autor, no enlazado en la informacion disponible.
+Por el momento no es posible confirmar parametros, contexto ni datos de entrenamiento, ya que ni los metadatos de Hugging Face ni la model card los especifican. Cualquier evaluacion seria requiere consultar el repositorio de codigo del autor, no enlazado en la informacion disponible.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer tipo BERT (segun tags de HuggingFace: bert); la model card no la especifica |
+| Arquitectura | Transformer tipo BERT (segun tags de Hugging Face: bert); la model card no la especifica |
 | Parametros totales | no disponible |
 | Parametros activos | no aplica |
 | Longitud de contexto | no disponible |
@@ -25,13 +25,13 @@ Por el momento no es posible confirmar parametros, contexto ni datos de entrenam
 
 ## Arquitectura y entrenamiento
 
-Los metadatos de HuggingFace clasifican el modelo bajo la etiqueta bert y el pipeline feature-extraction, lo que implicaria una arquitectura de transformer encoder entrenado con objetivos de modelado enmascarado o similares, pensada para producir embeddings de frases o documentos. No se aporta informacion sobre el numero de parametros, el numero de capas, las dimensiones ocultas ni la configuracion de atencion.
+Los metadatos de Hugging Face clasifican el modelo bajo la etiqueta bert y el pipeline feature-extraction, lo que implicaria una arquitectura de transformer encoder entrenado con objetivos de modelado enmascarado o similares, pensada para producir embeddings de frases o documentos. No se aporta informacion sobre el numero de parametros, el numero de capas, las dimensiones ocultas ni la configuracion de atencion.
 
 La model card describe, en cambio, un modelo generativo con mejoras de razonamiento mediante "recursos computacionales incrementados" y "mecanismos de optimizacion algorítmica durante el post-entrenamiento", ademas de una reduccion de alucinaciones y mejor soporte de function calling. No se detalla el numero de tokens de entrenamiento, la composicion del dataset ni si se emplearon tecnicas como RLHF o DPO. Tampoco se especifica ninguna innovacion tecnica concreta (atencion lineal, decodificacion especulativa, Mixture of Experts, etc.). La unica cifra concreta es que, en AIME 2025, el modelo habria pasado de 70% a 87,5% de precision usando 23K tokens por pregunta de media (frente a 12K de la version previa), dato que no puede verificarse con la informacion disponible.
 
 ## Capacidades
 
-- Extraccion de caracteristicas (feature-extraction): es la capacidad declarada en el pipeline oficial de HuggingFace, orientada a generar embeddings para clasificacion, similitud o recuperacion.
+- Extraccion de caracteristicas (feature-extraction): es la capacidad declarada en el pipeline oficial de Hugging Face, orientada a generar embeddings para clasificacion, similitud o recuperacion.
 - Generacion de texto y razonamiento: la model card afirma mejoras en matematicas, programacion y logica, con un supuesto modo de "pensamiento" mas profundo.
 - Codigo y matematicas: la model card reporta resultados en generacion de codigo y razonamiento matematico, sin especificar tareas ni lenguajes.
 - Function calling: la model card indica soporte mejorado de llamadas a funciones, aunque no se documenta la sintaxis ni el formato de herramientas.
@@ -89,7 +89,7 @@ No es posible establecer una comparativa fiable: los unicos modelos de referenci
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MyAwesomeModel-step0900 | no disponible | no disponible | MIT | HuggingFace (0 descargas) |
+| MyAwesomeModel-step0900 | no disponible | no disponible | MIT | Hugging Face (0 descargas) |
 | BERT-base | 110M | 512 tokens | Apache 2.0 | Ampliamente disponible |
 | RoBERTa-base | 125M | 512 tokens | MIT | Ampliamente disponible |
 
@@ -109,7 +109,7 @@ La comparacion anterior es una referencia generica de categoria, no una confront
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dusersad12/MyAwesomeModel-step0900
+- Hugging Face: https://huggingface.co/dusersad12/MyAwesomeModel-step0900
 - Repositorio de codigo: no disponible (la model card lo menciona sin enlace)
 - Sitio web oficial y plataforma de chat/API: no disponible (mencionados sin URL)
 - Paper o informe tecnico: no disponible

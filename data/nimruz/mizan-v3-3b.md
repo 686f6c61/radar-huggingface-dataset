@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 | Mizan v2 4B | No disponible | Texto e imagenes | No disponible | No disponible en la informacion proporcionada | No disponible | Safetensors + GGUF (2,7 GB + 0,37 GB) |
 | Clef 27B | 27 mil millones | No disponible | No disponible | 83,4 % en el mismo conjunto de 3.000 registros | No disponible | No disponible en la informacion proporcionada |
 | Clef-Flash 9B | 9 mil millones | No disponible | No disponible | 83,0 % en el mismo conjunto de 3.000 registros | No disponible | No disponible en la informacion proporcionada |
-| Qwen/Qwen3.5-4B (base) | ~4 mil millones | Texto (y vision segun tags de la familia) | No disponible | No comparable: modelo generativo, no de decision | No disponible | HuggingFace |
+| Qwen/Qwen3.5-4B (base) | ~4 mil millones | Texto (y vision segun tags de la familia) | No disponible | No comparable: modelo generativo, no de decision | No disponible | Hugging Face |
 
 La comparación relevante es de coste por decisión: Mizan v3 obtiene una precisión a 2,5 puntos del Clef 27B con una octava parte de parámetros y un GGUF de 1,9 GB frente a los pesos de un modelo de 27 mil millones.
 
@@ -98,7 +98,7 @@ La comparación relevante es de coste por decisión: Mizan v3 obtiene una precis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nimruz/Mizan-v3-3B
+- Modelo en Hugging Face: https://huggingface.co/Nimruz/Mizan-v3-3B
 - Version GGUF: https://huggingface.co/Nimruz/Mizan-v3-3B-GGUF
 - Coleccion Mizan: https://huggingface.co/collections/Nimruz/mizan-persian-decision-models-6ace723fcd8ec7e9e06d063b
 - Modelo predecesor con vision (Mizan v2 4B): https://huggingface.co/Nimruz/Mizan-v2-4B

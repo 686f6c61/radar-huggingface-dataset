@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| malaxy/whisper-large-v3-turbo-swiss-german-ct2 | ASR, formato CTranslate2 | no disponible (base turbo) | de, gsw | MIT | HuggingFace, mirror, 0 descargas |
-| gcoli/whisper-large-v3-turbo-swiss-german-mit | ASR, fine-tune original | no disponible | de, gsw | MIT | HuggingFace |
-| openai/whisper-large-v3-turbo | ASR multilingue (base) | no disponible en la informacion proporcionada | multilingue | MIT | HuggingFace |
-| openai/whisper-large-v3 | ASR multilingue | no disponible en la informacion proporcionada | multilingue | MIT | HuggingFace |
+| malaxy/whisper-large-v3-turbo-swiss-german-ct2 | ASR, formato CTranslate2 | no disponible (base turbo) | de, gsw | MIT | Hugging Face, mirror, 0 descargas |
+| gcoli/whisper-large-v3-turbo-swiss-german-mit | ASR, fine-tune original | no disponible | de, gsw | MIT | Hugging Face |
+| openai/whisper-large-v3-turbo | ASR multilingue (base) | no disponible en la informacion proporcionada | multilingue | MIT | Hugging Face |
+| openai/whisper-large-v3 | ASR multilingue | no disponible en la informacion proporcionada | multilingue | MIT | Hugging Face |
 
 No se dispone de cifras de WER comparativas entre estas opciones en la informacion proporcionada, por lo que la comparacion se limita a licencia, idiomas y formato de distribucion. La ventaja diferencial de este repositorio frente al fine-tune original es exclusivamente el formato CTranslate2 listo para faster-whisper y la inmovilizacion de la revision.
 
@@ -86,7 +86,7 @@ No se dispone de cifras de WER comparativas entre estas opciones en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/malaxy/whisper-large-v3-turbo-swiss-german-ct2
+- Modelo en Hugging Face: https://huggingface.co/malaxy/whisper-large-v3-turbo-swiss-german-ct2
 - Fine-tune original: https://huggingface.co/gcoli/whisper-large-v3-turbo-swiss-german-mit
 - Revision concreta copiada: https://huggingface.co/gcoli/whisper-large-v3-turbo-swiss-german-mit/tree/540fb2e7a9135048963c5de9822579c96f8962e5
 - Aplicacion Verbalis: https://github.com/malaxy25/verbalis

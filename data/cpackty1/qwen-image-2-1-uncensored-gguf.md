@@ -4,7 +4,7 @@
 
 ## Resumen
 
-Qwen-Image-2.1 Uncensored GGUF es un conjunto de cuantizaciones en formato GGUF del modelo de difusión Qwen/Qwen-Image-2.1, publicadas por el usuario Cpackty1 en HuggingFace. No se trata de un modelo entrenado desde cero ni de un ajuste fino: el autor indica que parte de los pesos originales del modelo base sin modificar y los empaqueta en distintos niveles de precisión para su ejecución local en ComfyUI. El componente de generación visual tiene 7.115.124.736 parametros (unos 7,1 mil millones) distribuidos en 32 capas Single-Stream DiT, según la información del repositorio oficial de Qwen en GitHub.
+Qwen-Image-2.1 Uncensored GGUF es un conjunto de cuantizaciones en formato GGUF del modelo de difusión Qwen/Qwen-Image-2.1, publicadas por el usuario Cpackty1 en Hugging Face. No se trata de un modelo entrenado desde cero ni de un ajuste fino: el autor indica que parte de los pesos originales del modelo base sin modificar y los empaqueta en distintos niveles de precisión para su ejecución local en ComfyUI. El componente de generación visual tiene 7.115.124.736 parametros (unos 7,1 mil millones) distribuidos en 32 capas Single-Stream DiT, según la información del repositorio oficial de Qwen en GitHub.
 
 El interés de esta publicación es práctico: convierte un modelo de generación de imágenes de aproximadamente 7B en algo ejecutable en GPU de consumo y en Apple Silicon, con variantes desde BF16 (14,23 GB) hasta Q4_0 (4,15 GB) o NVFP4 (4,05 GB). El repositorio incluye además los ficheros auxiliares necesarios para el pipeline completo en ComfyUI: el text encoder Qwen3-VL de 8B (en BF16 o Int8 ConvRot) y el VAE propio del modelo. El repositorio ocupa 105 GB en total.
 
@@ -28,7 +28,7 @@ La etiqueta "uncensored" no procede de un reentrenamiento: según los análisis 
 | Tamano del repositorio | 105,0 GB |
 | Ficheros auxiliares incluidos | text_encoders/qwen3vl_8b_bf16.safetensors (17,53 GB), text_encoders/qwen3vl_8b_int8_convrot.safetensors (9,35 GB), vae/qwen_image_2.1_vae_bf16.safetensors (676 MB) |
 | Descargas / likes | 0 / 0 |
-| Fecha de creacion | 2026-09-27 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-27 (segun metadatos de Hugging Face) |
 
 Desglose de cuantizaciones del transformer (ficheros "UC", sin censura declarada):
 
@@ -102,8 +102,8 @@ La informacion proporcionada en esta busqueda no incluye datos verificables de m
 
 | Modelo | Parametros | Tipo | Contexto / resolucion | Licencia | Disponibilidad | Fuente |
 |---|---|---|---|---|---|---|
-| Qwen-Image-2.1 Uncensored GGUF (este) | 7,1 B (componente visual) | DiT Single-Stream 32 capas | no disponible | qwen-research | GGUF y safetensors en HuggingFace | Datos del repositorio |
-| Qwen-Image-2.1 (base) | 7,1 B (componente visual) | DiT Single-Stream 32 capas | no disponible | qwen-research | HuggingFace y GitHub oficiales | Modelo base citado |
+| Qwen-Image-2.1 Uncensored GGUF (este) | 7,1 B (componente visual) | DiT Single-Stream 32 capas | no disponible | qwen-research | GGUF y safetensors en Hugging Face | Datos del repositorio |
+| Qwen-Image-2.1 (base) | 7,1 B (componente visual) | DiT Single-Stream 32 capas | no disponible | qwen-research | Hugging Face y GitHub oficiales | Modelo base citado |
 | Otros modelos de generacion de imagen de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible | No verificado en esta busqueda |
 
 No se dispone de comparativas de rendimiento entre esta cuantizacion y alternativas como Flux o Stable Diffusion 3.5 dentro de la informacion consultada.
@@ -126,7 +126,7 @@ No se dispone de comparativas de rendimiento entre esta cuantizacion y alternati
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Cpackty1/Qwen-Image-2.1-Uncensored-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/Cpackty1/Qwen-Image-2.1-Uncensored-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Repositorio oficial de Qwen-Image-2.1 en GitHub: https://github.com/QwenLM/Qwen-Image-2.1
 - ComfyUI: https://github.com/comfyanonymous/ComfyUI

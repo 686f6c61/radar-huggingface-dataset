@@ -2,7 +2,7 @@
 
 ## Resumen
 
-swin-t-retrieval21 es un repositorio de HuggingFace publicado por el usuario chijohnson que contiene una implementacion propia en PyTorch de una arquitectura Swin Transformer (Swin T) orientada a tareas de retrieval. No se trata de un modelo entrenado ni de un checkpoint con pesos ajustados, sino de un punto de partida de inicializacion pensado para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequeno alcance. La propia model card indica explicitamente que la configuracion incluida es "giant" y que no se presenta como una release preentrenada lista para produccion.
+swin-t-retrieval21 es un repositorio de Hugging Face publicado por el usuario chijohnson que contiene una implementacion propia en PyTorch de una arquitectura Swin Transformer (Swin T) orientada a tareas de retrieval. No se trata de un modelo entrenado ni de un checkpoint con pesos ajustados, sino de un punto de partida de inicializacion pensado para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequeno alcance. La propia model card indica explicitamente que la configuracion incluida es "giant" y que no se presenta como una release preentrenada lista para produccion.
 
 El modelo declara una arquitectura Swin T con atencion de tipo grouped query, fusion mediante cross attention, activacion approx gelu y normalizacion groupnorm. El repositorio incluye un fichero `finetune.py` con el punto de entrada de entrenamiento o ejemplo ejecutable, un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta de experimento por defecto (optimizador adamw con planificador de tipo step) y un `model.safetensors` que actua como checkpoint de inicializacion valido para pruebas, no como pesos entrenados.
 
@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| chijohnson/swin-t-retrieval21 | 24.832 (metadatos safetensors) | no disponible | Retrieval sobre backbone Swin | BSD-3-Clause | HuggingFace, checkpoint de inicializacion sin entrenar |
+| chijohnson/swin-t-retrieval21 | 24.832 (metadatos safetensors) | no disponible | Retrieval sobre backbone Swin | BSD-3-Clause | Hugging Face, checkpoint de inicializacion sin entrenar |
 | torchvision swin_t | en torno a 28 millones | no aplica (vision) | Clasificacion de imagen | BSD-3-Clause | torchvision, pesos preentrenados en ImageNet |
 | microsoft/Swin-Transformer (Swin-T) | en torno a 28 millones | no aplica (vision) | Clasificacion, deteccion y segmentacion | MIT | GitHub oficial, checkpoints publicados |
 | Swin Transformer V2 | variable segun variante | no aplica (vision) | Vision general | MIT | GitHub oficial |
@@ -98,7 +98,7 @@ La comparativa se limita a parametros, tarea, licencia y disponibilidad porque n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chijohnson/swin-t-retrieval21
+- Modelo en Hugging Face: https://huggingface.co/chijohnson/swin-t-retrieval21
 - Repositorio oficial de Swin Transformer (Microsoft): https://github.com/microsoft/Swin-Transformer
 - Documentacion de SwinTransformer en torchvision: https://docs.pytorch.org/vision/master/models/swin_transformer.html
 - Documentacion de swin_t en torchvision: https://docs.pytorch.org/vision/main/models/generated/torchvision.models.swin_t.html

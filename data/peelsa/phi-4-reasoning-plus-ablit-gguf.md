@@ -84,6 +84,6 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/peelsa/phi-4-reasoning-plus-ablit-GGUF
+- Modelo en Hugging Face: https://huggingface.co/peelsa/phi-4-reasoning-plus-ablit-GGUF
 - Modelo base sin cuantizar: https://huggingface.co/peelsa/phi-4-reasoning-plus-ablit
 - Modelo original de Microsoft: https://huggingface.co/microsoft/Phi-4-reasoning-plus

@@ -72,6 +72,6 @@ No se dispone de datos suficientes para realizar una comparativa detallada con o
 
 ## Enlaces
 
-- Repositorio principal en HuggingFace: https://huggingface.co/trinityomni/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU
+- Repositorio principal en Hugging Face: https://huggingface.co/trinityomni/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU
 - Repositorio GGUF de DavidAU: https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF
-- Discusiones en HuggingFace del modelo (DavidAU): https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU/discussions
+- Discusiones en Hugging Face del modelo (DavidAU): https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU/discussions

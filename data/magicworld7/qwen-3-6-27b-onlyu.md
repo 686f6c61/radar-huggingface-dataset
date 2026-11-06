@@ -91,7 +91,7 @@ Qwen3.6-27B destaca por ofrecer un rendimiento superior a modelos MoE mucho más
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/magicworld7/Qwen-3.6-27B-onlyu
+- Repositorio Hugging Face: https://huggingface.co/magicworld7/Qwen-3.6-27B-onlyu
 - Blog oficial de Qwen sobre Qwen3.6-27B: https://qwen.ai/blog?id=qwen3.6-27b
 - Página del modelo en LM Studio: https://lmstudio.ai/models/qwen/qwen3.6-27b
 - Página en QwenCloud: https://www.qwencloud.com/models/qwen3.6-27b

@@ -111,7 +111,7 @@ No se dispone de datos de benchmarks de calidad para ninguno de estos modelos en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/decent-jawfish/bonsai-2-27b-mtp
+- Modelo en Hugging Face: https://huggingface.co/decent-jawfish/bonsai-2-27b-mtp
 - Modelo base ternario: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf
 - Fuente de la cabeza MTP: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
 - Modelo original: https://huggingface.co/Qwen/Qwen3.8-27B

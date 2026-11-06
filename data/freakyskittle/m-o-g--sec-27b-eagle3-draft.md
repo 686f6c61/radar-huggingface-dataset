@@ -85,7 +85,7 @@ El autor indica que estos valores son un suelo, no un techo, y que la aceptacion
 
 | Alternativa | Parametros | Tipo | Aceptacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| M.O.G.-SEC-27B-eagle3-draft | ~610M | Draft EAGLE-3 (lee estados ocultos del objetivo) | acc0 ~0,60-0,66; acc_last ~0,5-0,6 | Apache-2.0 | HuggingFace (0 descargas, 0 likes) |
+| M.O.G.-SEC-27B-eagle3-draft | ~610M | Draft EAGLE-3 (lee estados ocultos del objetivo) | acc0 ~0,60-0,66; acc_last ~0,5-0,6 | Apache-2.0 | Hugging Face (0 descargas, 0 likes) |
 | Borrador independiente del mismo tamano | ~610M | Draft standalone (no lee estados del objetivo) | Segun la model card, inferior al EAGLE-3 del mismo tamano | No disponible | No disponible |
 | Cabezas Medusa | No disponible | Multiples cabezas sobre el objetivo | No disponible | No disponible | No disponible |
 | Sin aceleracion (objetivo solo) | 27B | Decodificacion autoregresiva estandar | No aplica (no hay aceptacion) | Apache-2.0 (objetivo) | Disponible en Blackfrost-Research |
@@ -107,7 +107,7 @@ No se dispone de cifras publicadas de alternativas comparables en la informacion
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/freakyskittle/M.O.G.-SEC-27B-eagle3-draft
+- Pagina del modelo en Hugging Face: https://huggingface.co/freakyskittle/M.O.G.-SEC-27B-eagle3-draft
 - Modelo base (BF16): https://huggingface.co/Blackfrost-Research/M.O.G.-SEC-27B-1M-CTX-BF16
 - Objetivo cuantizado (GGUF): https://huggingface.co/Blackfrost-Research/M.O.G.-SEC-27B-1M-CTX-GGUF
 - SpecForge (framework de entrenamiento de borradores): https://github.com/sgl-project/SpecForge

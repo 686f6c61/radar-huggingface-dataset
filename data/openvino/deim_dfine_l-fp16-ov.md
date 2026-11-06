@@ -2,7 +2,7 @@
 
 ## Resumen
 
-deim_dfine_l-fp16-ov es la conversión a formato OpenVINO IR (Intermediate Representation) con pesos comprimidos a FP16 del modelo de detección de objetos DEIM D-FINE-L, un detector de la familia D-FINE desarrollado originalmente por Intellindust-AI-Lab y empaquetado por Geti (Intel) para su despliegue en el ecosistema OpenVINO. No es un modelo de lenguaje ni un transformer generativo, sino un detector de objetos de una etapa orientado a imágenes, publicado en HuggingFace bajo el pipeline `object-detection`.
+deim_dfine_l-fp16-ov es la conversión a formato OpenVINO IR (Intermediate Representation) con pesos comprimidos a FP16 del modelo de detección de objetos DEIM D-FINE-L, un detector de la familia D-FINE desarrollado originalmente por Intellindust-AI-Lab y empaquetado por Geti (Intel) para su despliegue en el ecosistema OpenVINO. No es un modelo de lenguaje ni un transformer generativo, sino un detector de objetos de una etapa orientado a imágenes, publicado en Hugging Face bajo el pipeline `object-detection`.
 
 El modelo resuelve el problema de desplegar un detector D-FINE-L preentrenado en hardware Intel (CPU, GPU integrada, NPU y aceleradores) con latencias reducidas y sin necesidad de convertir manualmente desde PyTorch. La conversión a IR y la compresión a FP16 reducen el tamaño del repositorio a aproximadamente 0,1 GB, lo que lo hace adecuado para entornos de edge y AI PCs.
 
@@ -35,7 +35,7 @@ El artefacto publicado no incluye el proceso de entrenamiento: es una conversió
 ## Capacidades
 
 - Detección de objetos en imágenes: devuelve cajas delimitadoras con clase y puntuación de confianza.
-- Pipeline `object-detection` estándar de HuggingFace, integrable con `model_api.models.Model`.
+- Pipeline `object-detection` estándar de Hugging Face, integrable con `model_api.models.Model`.
 - Visualización de resultados mediante `model_api.visualizer.Visualizer`.
 - Ejecución en CPU, GPU y NPU Intel a través de OpenVINO.
 - Ajuste fino con datasets personalizados mediante Geti (anotación, entrenamiento y exportación).
@@ -89,7 +89,7 @@ La comparación cuantitativa de precisión (mAP) y latencia no está disponible 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OpenVINO/deim_dfine_l-fp16-ov
+- Hugging Face: https://huggingface.co/OpenVINO/deim_dfine_l-fp16-ov
 - Modelo original DEIM: https://github.com/Intellindust-AI-Lab/DEIM
 - Geti (Intel): https://github.com/open-edge-platform/geti
 - OpenVINO IR format: https://docs.openvino.ai/2026/documentation/openvino-ir-format.html

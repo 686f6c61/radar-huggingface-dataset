@@ -70,8 +70,8 @@ Estimaciones para el modelo base Qwen3-14B más el adaptador LoRA; no proceden d
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dkaczer/qwen3-14b-sft-medical-100 | Adaptador LoRA sobre 14B | Heredado del base (32.768 tokens) | Sin benchmarks publicados; desalineación deliberada | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3-14B | 14B densos | 32.768 tokens (131.072 con YaRN) | Benchmarks publicados por el autor del modelo base | Apache 2.0 | HuggingFace, ampliamente utilizado |
+| dkaczer/qwen3-14b-sft-medical-100 | Adaptador LoRA sobre 14B | Heredado del base (32.768 tokens) | Sin benchmarks publicados; desalineación deliberada | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3-14B | 14B densos | 32.768 tokens (131.072 con YaRN) | Benchmarks publicados por el autor del modelo base | Apache 2.0 | Hugging Face, ampliamente utilizado |
 | Medical-Qwen3 | 14B sobre Qwen3-14B | No disponible en la información recogida | Entrenamiento LoRA en dos etapas (DAPT + SFT) orientado a dominio médico | No disponible | TechRxiv (preprint) |
 
 La comparación relevante no es de rendimiento, sino de propósito: Qwen3-14B es un modelo de uso general y Medical-Qwen3 un modelo orientado a dominio médico, mientras que este adaptador es un artefacto de investigación sobre desalineación emergente y no compite en ninguna tarea productiva.
@@ -90,7 +90,7 @@ La comparación relevante no es de rendimiento, sino de propósito: Qwen3-14B es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dkaczer/qwen3-14b-sft-medical-100
+- Modelo en Hugging Face: https://huggingface.co/dkaczer/qwen3-14b-sft-medical-100
 - Modelo base Qwen/Qwen3-14B: https://huggingface.co/Qwen/Qwen3-14B
 - Artículo citado: https://arxiv.org/abs/2605.31328
 - Medical-Qwen3 (referencia comparativa, TechRxiv): https://www.techrxiv.org/doi/10.36227/techrxiv.176799759.97935754

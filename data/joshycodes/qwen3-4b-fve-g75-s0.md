@@ -93,7 +93,7 @@ La comparacion relevante es con el propio modelo base: este checkpoint no aporta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/qwen3-4b-fve-g75-s0
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/qwen3-4b-fve-g75-s0
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Repositorio Qwen3 (GitHub): https://github.com/QwenLM/Qwen3
 - Informe tecnico de Qwen3 (arXiv): https://arxiv.org/html/2505.09388v1

@@ -79,6 +79,6 @@ No se proporcionan comparaciones con otros modelos de la misma categoría en la 
 
 ## Enlaces
 
-- [HuggingFace - MLX 4-bit](https://huggingface.co/AnkitAI/Parable-Qwen3-4B-Claude-Fable-5-MLX-4bit)
-- [HuggingFace - Modelo base (safetensors)](https://huggingface.co/AnkitAI/Parable-Qwen3-4B-Claude-Fable-5)
-- [HuggingFace - Versión GGUF](https://huggingface.co/AnkitAI/Parable-Qwen3-4B-Claude-Fable-5-GGUF)
+- [Hugging Face - MLX 4-bit](https://huggingface.co/AnkitAI/Parable-Qwen3-4B-Claude-Fable-5-MLX-4bit)
+- [Hugging Face - Modelo base (safetensors)](https://huggingface.co/AnkitAI/Parable-Qwen3-4B-Claude-Fable-5)
+- [Hugging Face - Versión GGUF](https://huggingface.co/AnkitAI/Parable-Qwen3-4B-Claude-Fable-5-GGUF)

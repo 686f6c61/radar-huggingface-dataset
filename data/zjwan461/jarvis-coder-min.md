@@ -2,7 +2,7 @@
 
 ## Resumen
 
-jarvis-coder-min es un modelo de lenguaje de 494 millones de parametros desarrollado por el usuario zjwan461, publicado en HuggingFace bajo licencia Apache 2.0. El nombre sugiere que esta orientado a tareas de generacion y asistencia de codigo, aunque la informacion publica disponible es extremadamente limitada: la model card no contiene descripcion, detalles de entrenamiento, ni especificaciones adicionales mas alla de la licencia.
+jarvis-coder-min es un modelo de lenguaje de 494 millones de parametros desarrollado por el usuario zjwan461, publicado en Hugging Face bajo licencia Apache 2.0. El nombre sugiere que esta orientado a tareas de generacion y asistencia de codigo, aunque la informacion publica disponible es extremadamente limitada: la model card no contiene descripcion, detalles de entrenamiento, ni especificaciones adicionales mas alla de la licencia.
 
 El modelo se basa en la arquitectura Qwen2, segun los tags del repositorio, y los pesos se distribuyen en formato safetensors. Con aproximadamente 494M de parametros, se situa en la gama de modelos pequenos, disenados para ejecutarse en hardware modesto o en entornos con recursos limitados. El repositorio no registra descargas ni interacciones de la comunidad, lo que sugiere que se trata de un proyecto reciente o experimental.
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 - VRAM estimada para inferencia: con 494M de parametros en precision FP16, el peso del modelo ocupa aproximadamente 1 GB. La VRAM necesaria para inferencia depende de la longitud de contexto y el tamano de lote, pero en general cabe en GPUs con 4 GB o menos.
 - GPU recomendadas: cualquier GPU moderna con al menos 4 GB de VRAM, como NVIDIA GTX 1650, RTX 3050, RTX 4060, o incluso inferencia en CPU con llama.cpp.
 - Compatibilidad con GPUs de consumo: si, es compatible con la mayoria de GPUs consumer actuales.
-- Opciones de despliegue: al ser safetensors, puede convertirse a GGUF para usarse con llama.cpp u Ollama, o desplegarse con vLLM, TGI o HuggingFace Transformers.
+- Opciones de despliegue: al ser safetensors, puede convertirse a GGUF para usarse con llama.cpp u Ollama, o desplegarse con vLLM, TGI o Hugging Face Transformers.
 - Latencia y throughput: no disponible. Para un modelo de este tamano, se espera una latencia baja en GPUs modernas, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
@@ -77,12 +77,12 @@ La comparativa mas directa es con Qwen2-0.5B, dado que comparten arquitectura y 
 - Riesgo de alucinacion: como todo modelo de lenguaje, puede generar contenido falso o inventado, especialmente sin informacion sobre su entrenamiento.
 - Sesgos desconocidos: al no conocer la composicion del dataset de entrenamiento, no se pueden identificar sesgos potenciales.
 - Sin garantias de calidad para codigo: el nombre "coder" no garantiza que el modelo haya sido entrenado especificamente para tareas de programacion.
-- Proyecto sin traccion: cero descargas y cero likes en HuggingFace, lo que indica que no ha sido validado por la comunidad.
+- Proyecto sin traccion: cero descargas y cero likes en Hugging Face, lo que indica que no ha sido validado por la comunidad.
 - Soporte limitado: al ser un proyecto de un unico autor sin documentacion, no hay garantias de mantenimiento, actualizaciones o soporte.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zjwan461/jarvis-coder-min
+- Repositorio Hugging Face: https://huggingface.co/zjwan461/jarvis-coder-min
 - Repositorio del modelo base Qwen2: https://huggingface.co/Qwen/Qwen2-0.5B
 - Repositorio del proyecto J.A.R.V.I.S. (no oficial, no afiliado): https://github.com/danilofalcao/jarvis
 - Proyecto OpenJarvis de Stanford (no afiliado): https://openjarvis.stanford.edu/

@@ -82,7 +82,7 @@ No se han ejecutado suites de tareas estándar (HellaSwag, PIQA, WinoGrande, MML
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TheDrainFlorist/Qwen3.5-397B-A17B-VQ-3.1bpw
+- Modelo en Hugging Face: https://huggingface.co/TheDrainFlorist/Qwen3.5-397B-A17B-VQ-3.1bpw
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-397B-A17B
 - Colección Qwen3.5: https://huggingface.co/collections/Qwen/qwen35
 - Blog oficial de Qwen3.5: https://qwen.ai/blog?id=qwen3.5

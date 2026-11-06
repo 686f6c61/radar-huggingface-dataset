@@ -75,11 +75,11 @@ La comparativa se limita al modelo base y a los checkpoints de la misma run, ya 
 
 | Modelo | Parametros | Tarea | Perdida de entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nvidia/GR00T-N1.7-3B (base) | 3.144.016.000 | Generalista (multi-tarea) | No disponible | Apache 2.0 | HuggingFace (gated) |
-| PID0930/groot-n1d7-openarm-bottle-sort-ckpt5000 | 3.144.016.000 | Clasificacion de botellas | 0,0636 | Apache 2.0 | HuggingFace |
-| PID0930/groot-n1d7-openarm-bottle-sort-ckpt10000 | 3.144.016.000 | Clasificacion de botellas | 0,0440 | Apache 2.0 | HuggingFace |
-| PID0930/groot-n1d7-openarm-bottle-sort-ckpt15000 | 3.144.016.000 | Clasificacion de botellas | 0,0282 | Apache 2.0 | HuggingFace |
-| PID0930/groot-n1d7-openarm-bottle-sort-ckpt20000 | 3.144.016.000 | Clasificacion de botellas | 0,0229 | Apache 2.0 | HuggingFace |
+| nvidia/GR00T-N1.7-3B (base) | 3.144.016.000 | Generalista (multi-tarea) | No disponible | Apache 2.0 | Hugging Face (gated) |
+| PID0930/groot-n1d7-openarm-bottle-sort-ckpt5000 | 3.144.016.000 | Clasificacion de botellas | 0,0636 | Apache 2.0 | Hugging Face |
+| PID0930/groot-n1d7-openarm-bottle-sort-ckpt10000 | 3.144.016.000 | Clasificacion de botellas | 0,0440 | Apache 2.0 | Hugging Face |
+| PID0930/groot-n1d7-openarm-bottle-sort-ckpt15000 | 3.144.016.000 | Clasificacion de botellas | 0,0282 | Apache 2.0 | Hugging Face |
+| PID0930/groot-n1d7-openarm-bottle-sort-ckpt20000 | 3.144.016.000 | Clasificacion de botellas | 0,0229 | Apache 2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -93,7 +93,7 @@ La comparativa se limita al modelo base y a los checkpoints de la misma run, ya 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PID0930/groot-n1d7-openarm-bottle-sort-ckpt20000
+- Modelo en Hugging Face: https://huggingface.co/PID0930/groot-n1d7-openarm-bottle-sort-ckpt20000
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.7-3B
 - Isaac-GR00T (GitHub): https://github.com/NVIDIA/Isaac-GR00T
 - OpenArm: https://openarm.dev/

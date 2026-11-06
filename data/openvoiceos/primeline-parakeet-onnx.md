@@ -67,7 +67,7 @@ No se dispone de información comparativa en la documentación proporcionada. A 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OpenVoiceOS/primeline-parakeet-onnx
+- Modelo en Hugging Face: https://huggingface.co/OpenVoiceOS/primeline-parakeet-onnx
 - Modelo base: https://huggingface.co/primeline/parakeet-primeline
 - Librería `onnx-asr`: https://github.com/istupakov/onnx-asr
 - Plugin OpenVoiceOS `ovos-stt-plugin-onnx-asr`: https://github.com/TigreGotico/ovos-stt-plugin-onnx-asr

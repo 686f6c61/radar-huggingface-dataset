@@ -66,9 +66,9 @@ No hay datos comparativos con otros modelos en la información proporcionada. Se
 
 | Modelo | Parámetros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-27B (original) | 27B | 262 144 | Denso, atención completa | Apache-2.0 | HuggingFace |
-| Qwen3.8-27B (base) | 27B | 262 144 | Híbrido (lineal + completa) | Apache-2.0 | HuggingFace |
-| Este modelo (MLX 4-bit) | 27.3B | 262 144 | Híbrido + ViT, cuantizado 4-bit | Apache-2.0 | HuggingFace |
+| Qwen3-27B (original) | 27B | 262 144 | Denso, atención completa | Apache-2.0 | Hugging Face |
+| Qwen3.8-27B (base) | 27B | 262 144 | Híbrido (lineal + completa) | Apache-2.0 | Hugging Face |
+| Este modelo (MLX 4-bit) | 27.3B | 262 144 | Híbrido + ViT, cuantizado 4-bit | Apache-2.0 | Hugging Face |
 
 La principal diferencia frente a los modelos base es la abliteración (eliminación de rechazo) y la cuantización MLX, que lo hace más ligero y rápido en Apple Silicon, pero con una posible pérdida de calidad por la cuantización. No se dispone de benchmarks comparativos directos.
 
@@ -83,7 +83,7 @@ La principal diferencia frente a los modelos base es la abliteración (eliminaci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MrMofer/Qwen3-27B-OBLITERATED-JANG-VISION-MLX-4bit
+- Hugging Face: https://huggingface.co/MrMofer/Qwen3-27B-OBLITERATED-JANG-VISION-MLX-4bit
 - Repositorio de Qwen3.8-27B (Alibaba): https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Documentación de Qwen3.8-27B en LM Studio: https://lmstudio.ai/models/qwen/qwen3.8-27b
 - Guía completa de Qwen3.8-27B (2026): https://lovableapp.org/blog/qwen3-8-27b

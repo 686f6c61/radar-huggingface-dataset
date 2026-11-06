@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `AJCThree/mistral-nemo-12b-openvino-4bit` aloja una supuesta variante del modelo Mistral-NeMo-12B, cuantizada a 4 bits mediante OpenVINO. La información pública disponible en la ficha de HuggingFace es mínima: no se especifican licencia, idiomas, arquitectura confirmada ni datos de entrenamiento. La model card es una plantilla genérica sin contenido sustancial, y el tamaño del repositorio aparece como 0.0 GB, lo que sugiere que puede tratarse de un repositorio vacío o con archivos no indexados.
+El repositorio `AJCThree/mistral-nemo-12b-openvino-4bit` aloja una supuesta variante del modelo Mistral-NeMo-12B, cuantizada a 4 bits mediante OpenVINO. La información pública disponible en la ficha de Hugging Face es mínima: no se especifican licencia, idiomas, arquitectura confirmada ni datos de entrenamiento. La model card es una plantilla genérica sin contenido sustancial, y el tamaño del repositorio aparece como 0.0 GB, lo que sugiere que puede tratarse de un repositorio vacío o con archivos no indexados.
 
 Mistral-NeMo-12B, el modelo base del que deriva este nombre, es una colaboración entre Mistral AI y NVIDIA, con 12 000 millones de parámetros, una ventana de contexto de 128 000 tokens y el tokenizador Tekken. Fue diseñado como una mejora directa del Mistral 7B, con capacidades multilingües y soporte de function calling. No obstante, no se ha podido verificar que la variante OpenVINO aquí presentada herede estas características, ya que el autor no ha proporcionado documentación adicional.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento para la variante OpenVINO que permita comp
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AJCThree/mistral-nemo-12b-openvino-4bit
+- Repositorio en Hugging Face: https://huggingface.co/AJCThree/mistral-nemo-12b-openvino-4bit
 - Modelo original Mistral-NeMo-12B-Instruct (NVIDIA): https://huggingface.co/nvidia/Mistral-NeMo-12B-Instruct
 - Variante Mistral-NeMo-12B (EasierAI): https://huggingface.co/EasierAI/Mistral-NeMo-12B
 - Página de Mistral AI sobre Mistral NeMo: https://mistral.ai/news/mistral-nemo/

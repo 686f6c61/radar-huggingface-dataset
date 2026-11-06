@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`ulasZoi/smolvla_pickcube_bs64_camera2_LORA_20k` es un adaptador LoRA (PEFT) publicado en HuggingFace por el usuario `ulasZoi`, construido sobre el modelo base `lerobot/smolvla_base`. Se trata, por tanto, de un ajuste fino parametrizado eficientemente (no de un modelo completo): el repositorio contiene únicamente los pesos del adaptador, no los del modelo base, y su uso requiere descargar y cargar por separado el modelo de referencia indicado en las etiquetas de metadatos.
+`ulasZoi/smolvla_pickcube_bs64_camera2_LORA_20k` es un adaptador LoRA (PEFT) publicado en Hugging Face por el usuario `ulasZoi`, construido sobre el modelo base `lerobot/smolvla_base`. Se trata, por tanto, de un ajuste fino parametrizado eficientemente (no de un modelo completo): el repositorio contiene únicamente los pesos del adaptador, no los del modelo base, y su uso requiere descargar y cargar por separado el modelo de referencia indicado en las etiquetas de metadatos.
 
-El identificador del repositorio (`pickcube`, `bs64`, `camera2`, `20k`) sugiere un ajuste para una tarea de manipulación robótica de tipo *pick and place* sobre un cubo, con tamano de lote 64, dos vistas de cámara y del orden de 20 000 pasos o muestras de entrenamiento. Conviene subrayar que estas deducciones provienen exclusivamente del nombre del repositorio y no estan confirmadas por ninguna documentacion: la *model card* publicada es la plantilla generica de HuggingFace, con todos los campos marcados como `[More Information Needed]`.
+El identificador del repositorio (`pickcube`, `bs64`, `camera2`, `20k`) sugiere un ajuste para una tarea de manipulación robótica de tipo *pick and place* sobre un cubo, con tamano de lote 64, dos vistas de cámara y del orden de 20 000 pasos o muestras de entrenamiento. Conviene subrayar que estas deducciones provienen exclusivamente del nombre del repositorio y no estan confirmadas por ninguna documentacion: la *model card* publicada es la plantilla generica de Hugging Face, con todos los campos marcados como `[More Information Needed]`.
 
 La relevancia de esta publicacion es, hoy por hoy, muy limitada como referencia tecnica: registra 0 descargas y 0 *likes*, el tamano del repositorio se reporta como 0.0 GB y las marcas temporales de creacion y actualizacion distan apenas dos segundos (2026-09-16T14:11:47 y 2026-09-16T14:11:49), lo que apunta a una subida sin documentacion ni validacion posterior. No se dispone de licencia, idiomas, pipeline ni resultados de evaluacion declarados.
 
@@ -22,7 +22,7 @@ La relevancia de esta publicacion es, hoy por hoy, muy limitada como referencia 
 | Formato de pesos | safetensors (etiqueta `safetensors`), empaquetado como adaptador PEFT |
 | Tipo de artefacto | adaptador LoRA (libreria `peft`, version de framework declarada 0.21.0) |
 | Modelo base | `lerobot/smolvla_base` (etiqueta `base_model:adapter:lerobot/smolvla_base`) |
-| Tamano del repositorio | 0.0 GB (segun metadatos de HuggingFace) |
+| Tamano del repositorio | 0.0 GB (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-09-16T14:11:47Z |
 | Ultima actualizacion | 2026-09-16T14:11:49Z |
@@ -79,7 +79,7 @@ No disponible. La informacion proporcionada no incluye resultados, parametros ni
 
 ## Limitaciones y advertencias
 
-- Documentacion inexistente: la model card es la plantilla por defecto de HuggingFace; todos los campos relevantes (autor, licencia, datos, hiperparametros, evaluacion) figuran como `[More Information Needed]`.
+- Documentacion inexistente: la model card es la plantilla por defecto de Hugging Face; todos los campos relevantes (autor, licencia, datos, hiperparametros, evaluacion) figuran como `[More Information Needed]`.
 - Licencia no declarada: sin licencia explicita, no puede asumirse permiso de uso comercial. La licencia aplicable sera, como maximo, la del modelo base, que debe consultarse por separado.
 - Utilidad practica sin verificar: 0 descargas, 0 *likes*, repositorio de 0.0 GB y una ventana de dos segundos entre creacion y actualizacion. No hay evidencia de que los pesos esten completos, sean cargables o hayan sido validados.
 - Riesgo de alucinacion: no aplica en el sentido textual (el artefacto no es un modelo de lenguaje generativo autonomo), pero si existe riesgo de acciones incorrectas o inseguras en un robot real, sin que haya metricas de tasa de exito publicadas.
@@ -92,7 +92,7 @@ No disponible. La informacion proporcionada no incluye resultados, parametros ni
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/ulasZoi/smolvla_pickcube_bs64_camera2_LORA_20k
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/ulasZoi/smolvla_pickcube_bs64_camera2_LORA_20k
 - Modelo base referenciado en los metadatos: https://huggingface.co/lerobot/smolvla_base
 - Referencia arXiv presente en las etiquetas (Lacoste et al., 2019, sobre impacto ambiental, no sobre el modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico citada en la model card: https://mlco2.github.io/impact

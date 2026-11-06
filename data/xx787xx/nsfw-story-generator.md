@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`Xx787xx/nsfw-story-generator` es un modelo de generación de texto publicado en HuggingFace por el usuario Xx787xx, orientado a la producción de narrativa de ficción para adultos. Según los metadatos del repositorio, se trata de un modelo basado en la arquitectura GPT-2 (la etiqueta `gpt2` aparece explícitamente en los tags) y distribuido en formato PyTorch. El repositorio ocupa 1,4 GB, un tamaño coherente con una variante de GPT-2 de tamaño medio (probablemente GPT-2 XL, 1,5 mil millones de parámetros en precisión de 16 bits) o con un fine-tuning que incluye estados del optimizador.
+`Xx787xx/nsfw-story-generator` es un modelo de generación de texto publicado en Hugging Face por el usuario Xx787xx, orientado a la producción de narrativa de ficción para adultos. Según los metadatos del repositorio, se trata de un modelo basado en la arquitectura GPT-2 (la etiqueta `gpt2` aparece explícitamente en los tags) y distribuido en formato PyTorch. El repositorio ocupa 1,4 GB, un tamaño coherente con una variante de GPT-2 de tamaño medio (probablemente GPT-2 XL, 1,5 mil millones de parámetros en precisión de 16 bits) o con un fine-tuning que incluye estados del optimizador.
 
 El modelo no dispone de model card técnica: el README se limita a un descargo de responsabilidad sobre la naturaleza ficticia y potencialmente ofensiva del contenido generado. No se documentan datos de entrenamiento, hiperparámetros, composición del corpus ni proceso de alineación. Tampoco se declaran licencia, idiomas soportados ni pipeline de uso, y el repositorio figura marcado con la etiqueta `not-for-all-audiences`, lo que restringe su visibilidad y su uso en determinados contextos.
 
-Su relevancia es, por tanto, limitada y de nicho: se trata de un fine-tuning comunitario sin trazabilidad técnica, con cero descargas y cero likes en el momento de la consulta, y sin garantías de calidad, seguridad ni cumplimiento legal. Resulta útil únicamente como ejemplo de la clase de modelos derivados de GPT-2 que circulan en HuggingFace para generación creativa sin filtros, y como caso de estudio de las carencias de documentación en publicaciones de este tipo.
+Su relevancia es, por tanto, limitada y de nicho: se trata de un fine-tuning comunitario sin trazabilidad técnica, con cero descargas y cero likes en el momento de la consulta, y sin garantías de calidad, seguridad ni cumplimiento legal. Resulta útil únicamente como ejemplo de la clase de modelos derivados de GPT-2 que circulan en Hugging Face para generación creativa sin filtros, y como caso de estudio de las carencias de documentación en publicaciones de este tipo.
 
 ## Especificaciones técnicas
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Xx787xx/nsfw-story-generator | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
-| GPT-2 XL (OpenAI) | 1,5 B | 1024 tokens | MIT | HuggingFace, ampliamente utilizado |
-| GPT-2 medium (OpenAI) | 355 M | 1024 tokens | MIT | HuggingFace, ampliamente utilizado |
-| Modelos de narrativa comunitarios tipo GPT-2 fine-tuned | variable | 1024 tokens típicamente | variable, a menudo sin especificar | HuggingFace, tracción variable |
+| Xx787xx/nsfw-story-generator | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
+| GPT-2 XL (OpenAI) | 1,5 B | 1024 tokens | MIT | Hugging Face, ampliamente utilizado |
+| GPT-2 medium (OpenAI) | 355 M | 1024 tokens | MIT | Hugging Face, ampliamente utilizado |
+| Modelos de narrativa comunitarios tipo GPT-2 fine-tuned | variable | 1024 tokens típicamente | variable, a menudo sin especificar | Hugging Face, tracción variable |
 
 La comparación es limitada porque el modelo no declara parámetros, contexto ni licencia. Frente a los checkpoints oficiales de GPT-2, la diferencia principal es la falta de documentación y de licencia explícita, no una mejora técnica demostrada.
 
@@ -83,5 +83,5 @@ La comparación es limitada porque el modelo no declara parámetros, contexto ni
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Xx787xx/nsfw-story-generator
+- Modelo en Hugging Face: https://huggingface.co/Xx787xx/nsfw-story-generator
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

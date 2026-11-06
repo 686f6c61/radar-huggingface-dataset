@@ -83,7 +83,7 @@ No se dispone de información sobre otros modelos de generación de música comp
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mlx-community/MiniMax-Music3-mxfp4
+- Repositorio Hugging Face: https://huggingface.co/mlx-community/MiniMax-Music3-mxfp4
 - Modelo base (MiniMaxAI/MiniMax-Music3): https://huggingface.co/MiniMaxAI/MiniMax-Music3
 - Variante BF16: https://huggingface.co/mlx-community/MiniMax-Music3-bf16
 - Variante MXFP8 (recomendada): https://huggingface.co/mlx-community/MiniMax-Music3-mxfp8

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`vivekred/hybrid-matching` es un prototipo de investigación publicado en HuggingFace por el usuario vivekred, orientado a tareas de *matching* (emparejamiento) mediante una arquitectura híbrida. No se trata de un modelo entrenado ni evaluado: el propio autor indica explícitamente en la model card que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (*smoke tests*) y que no se presenta como un checkpoint con rendimiento verificado. El repositorio se describe como una configuración de escala *nano* que documenta valores por defecto y formatos de fichero, sin cifras de rendimiento.
+`vivekred/hybrid-matching` es un prototipo de investigación publicado en Hugging Face por el usuario vivekred, orientado a tareas de *matching* (emparejamiento) mediante una arquitectura híbrida. No se trata de un modelo entrenado ni evaluado: el propio autor indica explícitamente en la model card que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (*smoke tests*) y que no se presenta como un checkpoint con rendimiento verificado. El repositorio se describe como una configuración de escala *nano* que documenta valores por defecto y formatos de fichero, sin cifras de rendimiento.
 
 A nivel arquitectónico, la model card declara una arquitectura híbrida con atención lineal, fusión de tensores (*tensor fusion*), activación ReLU y normalización RMSNorm. El número total de parámetros registrado en los metadatos de safetensors es de 16.576, coherente con la escala *nano* declarada, y el tamaño del repositorio es de 0,0 GB. La receta de entrenamiento por defecto usa el optimizador Adam con un scheduler *onecycle*, valores de partida del script y no evidencia de un entrenamiento completado.
 
@@ -89,6 +89,6 @@ No disponible. El repositorio no publica métricas de tarea, no declara un *base
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vivekred/hybrid-matching
+- Modelo en Hugging Face: https://huggingface.co/vivekred/hybrid-matching
 - Ficheros incluidos en el repositorio: `predict.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper, blog, repositorio de código o demo: no disponible; las búsquedas web no devolvieron enlaces relevantes al modelo.

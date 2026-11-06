@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`qxyz/sn56-i102-Cexact` es un adaptador LoRA publicado en HuggingFace por el usuario `qxyz` sobre el modelo base `Qwen/Qwen2.5-7B-Instruct`. Se distribuye como pesos PEFT en formato safetensors (1,3 GB de repositorio) y esta etiquetado como un fine-tuning supervisado (tags `lora`, `sft`, `trl`, `peft`) orientado a generacion de texto conversacional. No es un modelo completo: requiere cargar el modelo base Qwen2.5-7B-Instruct y aplicar el adaptador encima.
+`qxyz/sn56-i102-Cexact` es un adaptador LoRA publicado en Hugging Face por el usuario `qxyz` sobre el modelo base `Qwen/Qwen2.5-7B-Instruct`. Se distribuye como pesos PEFT en formato safetensors (1,3 GB de repositorio) y esta etiquetado como un fine-tuning supervisado (tags `lora`, `sft`, `trl`, `peft`) orientado a generacion de texto conversacional. No es un modelo completo: requiere cargar el modelo base Qwen2.5-7B-Instruct y aplicar el adaptador encima.
 
 El modelo base es un transformer decoder-only denso de 7,6 mil millones de parametros con atencion de consultas agrupadas (GQA), entrenado por Alibaba Qwen sobre 18 billones de tokens y con una ventana de contexto nativa de 32.768 tokens ampliable a 131.072 mediante YaRN. El adaptador hereda esa arquitectura y ese contexto; lo que anade (o modifica) es un ajuste fino cuyos datos de entrenamiento no estan documentados en la informacion disponible.
 
-Su relevancia practica es limitada y condicionada: no tiene descargas ni valoraciones, la model card no aporta informacion sobre datos, licencia ni evaluacion, y el acceso esta restringido (gated), por lo que requiere aceptar condiciones en HuggingFace. El nombre `sn56-i102` sugiere un pipeline interno de iteraciones (posiblemente vinculado al subnet 56 de Bittensor, segun repositorios espejo encontrados en la busqueda web), pero esa vinculacion no esta confirmada por ninguna fuente.
+Su relevancia practica es limitada y condicionada: no tiene descargas ni valoraciones, la model card no aporta informacion sobre datos, licencia ni evaluacion, y el acceso esta restringido (gated), por lo que requiere aceptar condiciones en Hugging Face. El nombre `sn56-i102` sugiere un pipeline interno de iteraciones (posiblemente vinculado al subnet 56 de Bittensor, segun repositorios espejo encontrados en la busqueda web), pero esa vinculacion no esta confirmada por ninguna fuente.
 
 ## Especificaciones tecnicas
 
@@ -20,7 +20,7 @@ Su relevancia practica es limitada y condicionada: no tiene descargas ni valorac
 | Idiomas soportados | No disponible para el adaptador. Modelo base: 29 idiomas segun la documentacion de Qwen |
 | Licencia | No disponible (el adaptador no declara licencia). Modelo base: Apache-2.0 |
 | Formato de pesos | safetensors (adaptador PEFT/LoRA) |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Libreria | peft (compatible con transformers y trl) |
 
 ## Arquitectura y entrenamiento
@@ -89,7 +89,7 @@ No se dispone de ninguna medicion que permita situar el adaptador frente a estas
 ## Limitaciones y advertencias
 
 - Licencia no declarada: no existe permiso explicito de uso comercial del adaptador. Para produccion, tratar como artefacto sin licencia clara, independientemente de que el modelo base sea Apache-2.0.
-- Acceso restringido (gated): la descarga exige aceptar condiciones en HuggingFace y autenticarse con token, lo que complica la automatizacion en CI/CD y la reproducibilidad.
+- Acceso restringido (gated): la descarga exige aceptar condiciones en Hugging Face y autenticarse con token, lo que complica la automatizacion en CI/CD y la reproducibilidad.
 - Datos de entrenamiento desconocidos: no se documenta el dataset, su procedencia ni su licencia, lo que impide evaluar sesgos, contaminacion de benchmarks o cumplimiento normativo.
 - Riesgo de olvido catastrofico: al ser un SFT sobre un instruct model, el ajuste puede degradar capacidades generales (instrucciones, tool calling, multilingue) si el dataset fue estrecho o repetitivo. No hay evaluacion que lo descarte.
 - Riesgo de alucinacion: el modelo base mantiene la tendencia general de los LLM a generar contenido plausible pero falso, especialmente en dominios especializados o con contexto largo; el adaptador no incorpora mecanismos de verificacion conocidos.
@@ -103,7 +103,7 @@ No se dispone de ninguna medicion que permita situar el adaptador frente a estas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qxyz/sn56-i102-Cexact
+- Modelo en Hugging Face: https://huggingface.co/qxyz/sn56-i102-Cexact
 - Modelo base Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Perfil del autor: https://huggingface.co/qxyz
 - Modelos del autor: https://huggingface.co/qxyz/models

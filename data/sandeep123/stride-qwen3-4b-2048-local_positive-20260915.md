@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks que permitan una comparacion cuantitativa c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sandeep123/stride-qwen3-4b-2048-local_positive-20260915
+- Modelo en Hugging Face: https://huggingface.co/sandeep123/stride-qwen3-4b-2048-local_positive-20260915
 - Modelo base Qwen/Qwen3-4B-Instruct-2507: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Revision fijada del modelo base: cdbee75f17c01a7cc42f958dc650907174af0554
 - Paper de STRIDE: no disponible en la informacion proporcionada

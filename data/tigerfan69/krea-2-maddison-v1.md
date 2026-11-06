@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Krea 2 Maddison v1.0 (TigerFan69) | LoRA de personaje sobre Krea 2 Raw | Adaptador de 512 tensores fp16 (228,6 MB) | no aplica | krea-2-community-license | HuggingFace y Civitai |
-| Krea 2 Raw (krea) | Modelo base texto-a-imagen | no disponible | no aplica | krea-2-community-license | HuggingFace |
+| Krea 2 Maddison v1.0 (TigerFan69) | LoRA de personaje sobre Krea 2 Raw | Adaptador de 512 tensores fp16 (228,6 MB) | no aplica | krea-2-community-license | Hugging Face y Civitai |
+| Krea 2 Raw (krea) | Modelo base texto-a-imagen | no disponible | no aplica | krea-2-community-license | Hugging Face |
 | Otros LoRA de personaje para Krea 2 | Adaptadores de personaje | no disponible | no aplica | variable segun autor | no disponible |
 
 No se dispone de datos de rendimiento comparativo entre este adaptador y otros LoRA de personaje, ya que no se han publicado benchmarks.
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo entre este adaptador y otros L
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TigerFan69/Krea-2-Maddison-v1
+- Hugging Face: https://huggingface.co/TigerFan69/Krea-2-Maddison-v1
 - Modelo base: https://huggingface.co/krea/Krea-2-Raw
 - Civitai (fuente): https://civitai.red/models/3025515?modelVersionId=3436049
 - Licencia Krea 2: https://krea.ai/krea-2-licensing

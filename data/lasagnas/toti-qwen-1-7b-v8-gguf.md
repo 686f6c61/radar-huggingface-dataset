@@ -17,7 +17,7 @@ Su relevancia actual esta en que demuestra hasta que punto un modelo denso de 1,
 | Parametros activos | No aplica (modelo denso, no es MoE) |
 | Longitud de contexto | No especificada en la ficha del autor; el modelo base Qwen3-1.7B declara 32.768 tokens nativos, extensibles a 131.072 con YaRN |
 | Tipos de cuantizacion | GGUF Q4_K_M (unico publicado en el repositorio) |
-| Idiomas soportados | Indonesio e ingles (segun la model card del autor); la ficha de HuggingFace no declara idiomas |
+| Idiomas soportados | Indonesio e ingles (segun la model card del autor); la ficha de Hugging Face no declara idiomas |
 | Licencia | Apache-2.0 |
 | Formato de pesos | GGUF (Q4_K_M) |
 | Modelo base | unsloth/Qwen3-1.7B |
@@ -136,7 +136,7 @@ No hay datos publicados que comparen este ajuste con esos modelos en benchmarks 
 - Menor fidelidad al contexto en FAQ: `faq_grounded_acc` cae del 0,667 al 0,533, por debajo del objetivo de 0,7, lo que aumenta el riesgo de respuestas no ancladas al contexto recuperado.
 - Escenarios sin resolver: T10 (tartas personalizadas, derivar a administracion) y T14 (reclamaciones) siguen en 0,00 tras el ajuste.
 - Dominio muy cerrado: entrenado sobre conversaciones de una unica panaderia; fuera de ese catalogo y flujo de trabajo, el riesgo de alucinacion y de llamadas erroneas es alto.
-- Idiomas: la model card solo menciona indonesio e ingles. No hay evaluacion en castellano ni en otros idiomas, y la ficha de HuggingFace no declara lista de idiomas.
+- Idiomas: la model card solo menciona indonesio e ingles. No hay evaluacion en castellano ni en otros idiomas, y la ficha de Hugging Face no declara lista de idiomas.
 - Contexto limitado: al derivar de Qwen3-1.7B, la ventana nativa es de 32.768 tokens como maximo sin tecnicas adicionales, suficiente para chat pero no para documentos largos.
 - Validacion nula por la comunidad: 0 descargas y 0 likes en el momento de la consulta, sin revisiones independientes ni terceros que reproduzcan las metricas.
 - Cuantizacion con perdida: solo se publica Q4_K_M, de modo que existe una degradacion adicional respecto a los pesos sin cuantizar, no medida en la model card.
@@ -145,7 +145,7 @@ No hay datos publicados que comparen este ajuste con esos modelos en benchmarks 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LasagnaS/toti-qwen-1.7b-v8-gguf
+- Modelo en Hugging Face: https://huggingface.co/LasagnaS/toti-qwen-1.7b-v8-gguf
 - Dataset de entrenamiento: https://huggingface.co/LasagnaS/toti-cakery-toolcall
 - Modelo base: https://huggingface.co/unsloth/Qwen3-1.7B
 - Version anterior v7 (GGUF): https://huggingface.co/LasagnaS/toti-qwen-1.7b-v7-gguf

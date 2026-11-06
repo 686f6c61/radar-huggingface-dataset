@@ -83,9 +83,9 @@ No se han publicado resultados de benchmarks en la información disponible. La �
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama-3.1-8B-SiDiaC-CPT | 8,03 B + LoRA r=16 | Base 128.000; entrenado a 512; recomendado 2.048 | Adaptador LoRA para preentrenamiento continuado en sinhala | no disponible | HuggingFace (0 descargas, 0 likes en el momento de la consulta) |
-| unsloth/meta-llama-3.1-8b-unsloth-bnb-4bit (base) | 8,03 B | 128.000 | Modelo base cuantizado a 4 bits para ajuste | Llama 3.1 Community License | HuggingFace |
-| meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 128.000 | Modelo ajustado por instrucciones | Llama 3.1 Community License | HuggingFace |
+| Llama-3.1-8B-SiDiaC-CPT | 8,03 B + LoRA r=16 | Base 128.000; entrenado a 512; recomendado 2.048 | Adaptador LoRA para preentrenamiento continuado en sinhala | no disponible | Hugging Face (0 descargas, 0 likes en el momento de la consulta) |
+| unsloth/meta-llama-3.1-8b-unsloth-bnb-4bit (base) | 8,03 B | 128.000 | Modelo base cuantizado a 4 bits para ajuste | Llama 3.1 Community License | Hugging Face |
+| meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 128.000 | Modelo ajustado por instrucciones | Llama 3.1 Community License | Hugging Face |
 | Alternativas específicas de sinhala con vocabulario extendido | no disponible | no disponible | no disponible | no disponible | no disponible en la información proporcionada |
 
 La comparación directa de rendimiento no es posible: este checkpoint no publica métricas de tareas estándar y su objetivo (embeddings diacrónicos) no coincide con el de un modelo de instrucciones. La única comparación válida es con su propio base, donde el autor reporta una reducción de la pérdida de evaluación de 8,62 a 4,80 sobre el corpus SiDiaC-v.2.0.
@@ -106,7 +106,7 @@ La comparación directa de rendimiento no es posible: este checkpoint no publica
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nevidu/Llama-3.1-8B-SiDiaC-CPT
+- Modelo en Hugging Face: https://huggingface.co/Nevidu/Llama-3.1-8B-SiDiaC-CPT
 - Modelo base (4 bits, Unsloth): https://huggingface.co/unsloth/meta-llama-3.1-8b-unsloth-bnb-4bit
 - Dataset de entrenamiento: https://huggingface.co/datasets/Nevidu/SiDiaC-v.2.0
 - Artículo (arXiv:2609.08609): https://arxiv.org/abs/2609.08609

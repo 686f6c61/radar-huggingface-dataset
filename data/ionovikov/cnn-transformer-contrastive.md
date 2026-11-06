@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Cnn Transformer for Contrastive es un prototipo de investigacion publicado por el usuario ionovikov en HuggingFace. Se presenta como una implementacion propia de una arquitectura hibrida que combina capas convolucionales (CNN) con mecanismos de atencion tipo transformer, orientada a tareas de aprendizaje contrastivo. El repositorio incluye el codigo de entrenamiento (`train.py`), la configuracion de arquitectura (`config.json`), una receta de experimento por defecto (`training_args.json`) y un checkpoint de pesos en formato safetensors.
+Cnn Transformer for Contrastive es un prototipo de investigacion publicado por el usuario ionovikov en Hugging Face. Se presenta como una implementacion propia de una arquitectura hibrida que combina capas convolucionales (CNN) con mecanismos de atencion tipo transformer, orientada a tareas de aprendizaje contrastivo. El repositorio incluye el codigo de entrenamiento (`train.py`), la configuracion de arquitectura (`config.json`), una receta de experimento por defecto (`training_args.json`) y un checkpoint de pesos en formato safetensors.
 
 A pesar de la etiqueta interna "xlarge" que aparece en la model card, el recuento real de parametros del checkpoint es de 24.832, es decir, en torno a 25.000 parametros, un orden de magnitud propio de un ejemplo minimo de juguete mas que de un modelo a escala. El propio autor indica explicitamente que el fichero `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y que no debe interpretarse como un modelo entrenado ni como un benchmark.
 
@@ -85,5 +85,5 @@ No disponible. Un checkpoint sin entrenar de aproximadamente 25.000 parametros n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ionovikov/cnn-transformer-contrastive
+- Modelo en Hugging Face: https://huggingface.co/ionovikov/cnn-transformer-contrastive
 - No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios o demos.

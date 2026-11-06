@@ -65,7 +65,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Natural-Exposure-Fibo-2.0-dev | LoRA rango 16 sobre Fibo-2.0-dev | no aplica | no disponible | bria-fibo (CC BY-NC 4.0) | HuggingFace |
+| Natural-Exposure-Fibo-2.0-dev | LoRA rango 16 sobre Fibo-2.0-dev | no aplica | no disponible | bria-fibo (CC BY-NC 4.0) | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -81,7 +81,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/prithivMLmods/Natural-Exposure-Fibo-2.0-dev
+- Modelo en Hugging Face: https://huggingface.co/prithivMLmods/Natural-Exposure-Fibo-2.0-dev
 - Ficheros del modelo: https://huggingface.co/prithivMLmods/Natural-Exposure-Fibo-2.0-dev/tree/main
 - Modelo base: https://huggingface.co/briaai/Fibo-2.0-dev
 - Perfil del autor: https://huggingface.co/prithivMLmods

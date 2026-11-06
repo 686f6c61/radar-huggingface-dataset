@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`lbasile/llava_7b_12_20` es un checkpoint multimodal de 7.063.427.072 parámetros (unos 7,06 mil millones) alojado en HuggingFace por el usuario `lbasile`. El tag `llava` de la plataforma y la pipeline `image-text-to-text` indican que se trata de un modelo de visión-lenguaje construido sobre la familia LLaVA, que combina un codificador visual con un modelo de lenguaje para responder a instrucciones que incluyen imágenes. El repositorio tiene un tamaño de 14,1 GB, coherente con pesos en precisión de 16 bits.
+`lbasile/llava_7b_12_20` es un checkpoint multimodal de 7.063.427.072 parámetros (unos 7,06 mil millones) alojado en Hugging Face por el usuario `lbasile`. El tag `llava` de la plataforma y la pipeline `image-text-to-text` indican que se trata de un modelo de visión-lenguaje construido sobre la familia LLaVA, que combina un codificador visual con un modelo de lenguaje para responder a instrucciones que incluyen imágenes. El repositorio tiene un tamaño de 14,1 GB, coherente con pesos en precisión de 16 bits.
 
-La relevancia de esta ficha es limitada y conviene decirlo con claridad: la model card es la plantilla automática de HuggingFace, sin ninguna sección completada. No hay información sobre el modelo base, los datos de entrenamiento, el proceso de ajuste, la licencia ni los idiomas soportados. El nombre del repositorio (`llava_7b_12_20`) sugiere un checkpoint intermedio o un experimento de ajuste, no una versión publicada oficialmente por el equipo de LLaVA.
+La relevancia de esta ficha es limitada y conviene decirlo con claridad: la model card es la plantilla automática de Hugging Face, sin ninguna sección completada. No hay información sobre el modelo base, los datos de entrenamiento, el proceso de ajuste, la licencia ni los idiomas soportados. El nombre del repositorio (`llava_7b_12_20`) sugiere un checkpoint intermedio o un experimento de ajuste, no una versión publicada oficialmente por el equipo de LLaVA.
 
 Por tanto, esta ficha describe lo que se puede verificar a partir de los metadatos del repositorio (arquitectura declarada, número de parámetros, pipeline, formato de pesos) y marca explícitamente como "no disponible" todo lo que no consta. Cualquier uso en producción debería ir precedido de una evaluación propia del checkpoint.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| lbasile/llava_7b_12_20 | 7,06 mil millones | no disponible | no disponible | HuggingFace (0 descargas) |
-| LLaVA-1.5-7B (oficial) | ~7 mil millones | 4.096 tokens (según la publicación oficial) | LLaMA 2 (uso comercial con condiciones) | HuggingFace, ampliamente usado |
-| LLaVA-1.6 (NeXT) 7B | ~7 mil millones | 4.096 tokens (según la publicación oficial) | según modelo base | HuggingFace |
-| Qwen2-VL-7B | ~8 mil millones | 32.768 tokens y superior (según la publicación oficial) | Apache 2.0 | HuggingFace |
+| lbasile/llava_7b_12_20 | 7,06 mil millones | no disponible | no disponible | Hugging Face (0 descargas) |
+| LLaVA-1.5-7B (oficial) | ~7 mil millones | 4.096 tokens (según la publicación oficial) | LLaMA 2 (uso comercial con condiciones) | Hugging Face, ampliamente usado |
+| LLaVA-1.6 (NeXT) 7B | ~7 mil millones | 4.096 tokens (según la publicación oficial) | según modelo base | Hugging Face |
+| Qwen2-VL-7B | ~8 mil millones | 32.768 tokens y superior (según la publicación oficial) | Apache 2.0 | Hugging Face |
 
 La comparación con los modelos oficiales es orientativa: este checkpoint no documenta su procedencia ni su licencia, por lo que no se puede afirmar equivalencia funcional con LLaVA-1.5 o LLaVA-1.6. Los datos de contexto y licencia de las alternativas provienen de sus respectivas publicaciones y deben verificarse en la fuente.
 
@@ -84,7 +84,7 @@ La comparación con los modelos oficiales es orientativa: este checkpoint no doc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lbasile/llava_7b_12_20
+- Modelo en Hugging Face: https://huggingface.co/lbasile/llava_7b_12_20
 - Paper de LLaVA (referencia de la familia): https://arxiv.org/abs/2304.08485
 - Repositorio oficial de LLaVA: https://github.com/haotian-liu/LLaVA
 - Paper citado en los tags (Lacoste et al., 2019, impacto ambiental): https://arxiv.org/abs/1910.09700

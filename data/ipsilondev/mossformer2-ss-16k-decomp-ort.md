@@ -84,6 +84,6 @@ No se dispone de datos numericos comparativos en la informacion proporcionada. A
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ipsilondev/MossFormer2-SS-16K-Decomp-ORT
+- Modelo en Hugging Face: https://huggingface.co/ipsilondev/MossFormer2-SS-16K-Decomp-ORT
 - Paper, repositorio o demo oficial de MossFormer2: no disponible en la informacion proporcionada.
 - No se han encontrado en la busqueda web enlaces relevantes al modelo; los resultados devueltos no guardan relacion con el contenido tecnico de esta ficha.

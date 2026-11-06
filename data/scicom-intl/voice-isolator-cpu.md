@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`voice-isolator-cpu` es un modelo de aislamiento de voz (target speaker extraction y mejora del habla) publicado por Scicom-intl en HuggingFace. Se trata de un aislador causal y en streaming del hablante principal, diseñado específicamente para agentes de voz: mantiene la voz del interlocutor (caller) y elimina otras voces y ruido antes de que el audio llegue al VAD, al detector de turnos y al reconocedor de voz del agente. Funciona íntegramente en CPU, con solo `onnxruntime` y `numpy` como dependencias, sin necesidad de PyTorch ni GPU.
+`voice-isolator-cpu` es un modelo de aislamiento de voz (target speaker extraction y mejora del habla) publicado por Scicom-intl en Hugging Face. Se trata de un aislador causal y en streaming del hablante principal, diseñado específicamente para agentes de voz: mantiene la voz del interlocutor (caller) y elimina otras voces y ruido antes de que el audio llegue al VAD, al detector de turnos y al reconocedor de voz del agente. Funciona íntegramente en CPU, con solo `onnxruntime` y `numpy` como dependencias, sin necesidad de PyTorch ni GPU.
 
 Técnicamente, es una destilación del modelo GPU de la misma organización, [Scicom-intl/voice-isolator](https://huggingface.co/Scicom-intl/voice-isolator) (M + WavLM causal, 555M de parámetros), en un transformer de 22M de parámetros. Procesa audio a 16 kHz de entrada y salida, en tramas de 10 ms con solo 10 ms de latencia añadida, lo que lo hace apto para conversación en tiempo real. Su relevancia es alta en el contexto actual de agentes de voz en producción (LiveKit, pipelines de STT), donde la interferencia de voces ajenas degrada directamente la tasa de error de palabra (WER) del reconocimiento.
 
@@ -88,7 +88,7 @@ Comparado con su modelo profesor GPU de 555M, esta versión CPU sacrifica parte 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Scicom-intl/voice-isolator-cpu
+- Modelo en Hugging Face: https://huggingface.co/Scicom-intl/voice-isolator-cpu
 - Modelo GPU (profesor): https://huggingface.co/Scicom-intl/voice-isolator
 - Paper: *The Voice on the Line*, arXiv:2610.35272 — https://arxiv.org/abs/2610.35272
 - Plugin de LiveKit (`voice_isolator`, con `LocalIsolator`, `RemoteIsolator` y benchmark en streaming): https://github.com/Scicom-AI-Enterprise-Organization/STT-API/tree/main/stt_api/livekit_plugin/voice_isolator

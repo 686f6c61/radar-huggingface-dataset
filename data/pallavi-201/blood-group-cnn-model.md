@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Pallavi-201/blood-group-cnn-model` es una red neuronal convolucional implementada con Keras, publicada por el usuario Pallavi-201 en HuggingFace. Por su denominación, está orientada a la clasificación de grupos sanguíneos a partir de imágenes, una tarea típica de visión por computador aplicada al ámbito biomédico. El repositorio tiene un tamaño de 0,0 GB, lo que sugiere que los pesos no están efectivamente alojados o que el contenido es mínimo.
+El modelo `Pallavi-201/blood-group-cnn-model` es una red neuronal convolucional implementada con Keras, publicada por el usuario Pallavi-201 en Hugging Face. Por su denominación, está orientada a la clasificación de grupos sanguíneos a partir de imágenes, una tarea típica de visión por computador aplicada al ámbito biomédico. El repositorio tiene un tamaño de 0,0 GB, lo que sugiere que los pesos no están efectivamente alojados o que el contenido es mínimo.
 
 La model card pública está prácticamente vacía: solo declara la licencia Apache 2.0, sin descripción, sin ejemplos de uso, sin métricas ni detalles de entrenamiento. No se dispone de información sobre arquitectura concreta, número de parámetros, resolución de entrada, composición del dataset ni procedimiento de entrenamiento. El pipeline no está declarado y el modelo no registra descargas ni interacciones.
 
@@ -79,5 +79,5 @@ La comparación es limitada: los modelos de referencia citados en la búsqueda w
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Pallavi-201/blood-group-cnn-model
+- Hugging Face: https://huggingface.co/Pallavi-201/blood-group-cnn-model
 - Artículo ACM de referencia sobre identificación temprana de trastornos sanguíneos con deep learning: https://dl.acm.org/doi/fullHtml/10.1145/3647444.3647956

@@ -101,13 +101,13 @@ La siguiente tabla compara el modelo con alternativas de la misma categoría (cl
 
 | Modelo | Parámetros | Top-1 | Macro F1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| YOLO11n (este modelo) | 1,5 millones | 81,32% | 62,91% | AGPL-3.0 | HuggingFace |
-| ConvNeXt-Atto | no disponible | 83,00% | 67,44% | no disponible | HuggingFace (model zoo) |
-| EfficientViT-B0 | no disponible | 82,79% | 65,10% | no disponible | HuggingFace (model zoo) |
-| ResNet-18 | no disponible | 82,19% | 64,30% | no disponible | HuggingFace (model zoo) |
-| MobileNetV4-Conv-Small | no disponible | 82,16% | 66,51% | no disponible | HuggingFace (model zoo) |
-| YOLO26n | no disponible | 82,04% | 64,09% | no disponible | HuggingFace (model zoo) |
-| YOLOv8n | no disponible | 81,22% | 63,07% | no disponible | HuggingFace (model zoo) |
+| YOLO11n (este modelo) | 1,5 millones | 81,32% | 62,91% | AGPL-3.0 | Hugging Face |
+| ConvNeXt-Atto | no disponible | 83,00% | 67,44% | no disponible | Hugging Face (model zoo) |
+| EfficientViT-B0 | no disponible | 82,79% | 65,10% | no disponible | Hugging Face (model zoo) |
+| ResNet-18 | no disponible | 82,19% | 64,30% | no disponible | Hugging Face (model zoo) |
+| MobileNetV4-Conv-Small | no disponible | 82,16% | 66,51% | no disponible | Hugging Face (model zoo) |
+| YOLO26n | no disponible | 82,04% | 64,09% | no disponible | Hugging Face (model zoo) |
+| YOLOv8n | no disponible | 81,22% | 63,07% | no disponible | Hugging Face (model zoo) |
 
 El modelo se sitúa en la parte media-baja de la comparativa: ConvNeXt-Atto lidera en top-1 (83,00%) y macro precisión (81,38%), mientras que YOLO11n queda sexto de siete en top-1 y macro F1. EfficientViT-B0 y ResNet-18 superan ligeramente a YOLO11n en top-1. YOLOv8n queda por debajo en top-1 pero con macro F1 ligeramente superior. YOLO26n supera a YOLO11n en top-1 y macro F1.
 
@@ -127,14 +127,14 @@ El modelo se sitúa en la parte media-baja de la comparativa: ConvNeXt-Atto lide
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dronefreak/bdd100k-weather-yolo11n-cls
+- Modelo en Hugging Face: https://huggingface.co/dronefreak/bdd100k-weather-yolo11n-cls
 - Dataset BDD100K Weather Classification: https://huggingface.co/datasets/dronefreak/BDD100K-Weather-Classification
 - Repositorio BDD100K-Toolkit: https://github.com/dronefreak/bdd100k-toolkit
 - Modelo base Ultralytics/YOLO11: https://huggingface.co/Ultralytics/YOLO11
 - Paper YOLO11 (arXiv:2410.17725): https://arxiv.org/abs/2410.17725
 - Paper BDD100K (arXiv:1805.04687): https://arxiv.org/abs/1805.04687
 - Weather-Robust Object Detection on BDD100K (GitHub): https://github.com/pallavdwivedi/Weather-Robust-Object-Detection-on-BDD100K
-- Post en HuggingFace de dronefreak: https://huggingface.co/posts/dronefreak/988753800362571
+- Post en Hugging Face de dronefreak: https://huggingface.co/posts/dronefreak/988753800362571
 - Colección BDD100K Object Detection Model Zoo: https://huggingface.co/collections/dronefreak/bdd100k-object-detection-model-zoo
 - SysCV/bdd100k-models: https://github.com/SysCV/bdd100k-models
 - Berkeley DeepDrive: http://bdd-data.berkeley.edu/

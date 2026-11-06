@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TetraNigga-LSD-10M es un modelo de generacion de texto de escala muy reducida (9.966.848 parametros, es decir, aproximadamente 10 millones) publicado por el usuario `tetranigga` en HuggingFace bajo el identificador `tetranigga/TetraNigga-LSD-10M-GGUF`. Se distribuye unicamente en formato GGUF (F16) y utiliza la arquitectura Llama, segun indica la propia model card. El autor lo presenta como "third fastest ai ever" y como un modelo entrenado desde cero ("from scratch") y ajustado para conversaciones, con un formato de dialogo basado en SentencePiece por componentes.
+TetraNigga-LSD-10M es un modelo de generacion de texto de escala muy reducida (9.966.848 parametros, es decir, aproximadamente 10 millones) publicado por el usuario `tetranigga` en Hugging Face bajo el identificador `tetranigga/TetraNigga-LSD-10M-GGUF`. Se distribuye unicamente en formato GGUF (F16) y utiliza la arquitectura Llama, segun indica la propia model card. El autor lo presenta como "third fastest ai ever" y como un modelo entrenado desde cero ("from scratch") y ajustado para conversaciones, con un formato de dialogo basado en SentencePiece por componentes.
 
 El modelo esta etiquetado como `experimental` y `conversational`, con soporte declarado unicamente para ingles (`en`). No se especifica licencia, no se documentan datos de entrenamiento, no se publican resultados de benchmarks y el repositorio no tiene descargas ni interacciones en el momento de la consulta. Su relevancia practica es, por tanto, muy limitada: se trata de un experimento de escala minuscula, no de un modelo destinado a produccion.
 
@@ -31,7 +31,7 @@ El aspecto tecnico mas concreto que declara el autor es el uso de un formato de 
 
 - Generacion de texto en ingles, segun la etiqueta de idioma declarada.
 - Modo conversacional: el autor afirma que el modelo esta ajustado para conversaciones, con un formato de prompt propio basado en SentencePiece.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede servirse a traves de infraestructura compatible con la API de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede servirse a traves de infraestructura compatible con la API de Hugging Face.
 - Integracion con llama.cpp mediante la API `/completion`, usando el tokenizer y el adaptador Python incluidos.
 - No se declara soporte de tool calling ni function calling.
 - No se declara soporte de agentes ni razonamiento multi-paso.
@@ -76,5 +76,5 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tetranigga/TetraNigga-LSD-10M-GGUF
+- Modelo en Hugging Face: https://huggingface.co/tetranigga/TetraNigga-LSD-10M-GGUF
 - No se han encontrado en la informacion proporcionada papers, blogs, repositorios adicionales ni demos.

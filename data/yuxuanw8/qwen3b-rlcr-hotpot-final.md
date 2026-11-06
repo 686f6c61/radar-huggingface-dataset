@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `yuxuanw8/qwen3b-rlcr-hotpot-final` es un ajuste fino de la familia Qwen2 con 3.085.938.688 parámetros totales (aproximadamente 3,09 mil millones), publicado en HuggingFace por el usuario `yuxuanw8`. Según las etiquetas del repositorio, se trata de un modelo de generación de texto de tipo conversacional compatible con `transformers`, `safetensors` y `text-generation-inference`. El identificador del repositorio sugiere un entrenamiento orientado a pregunta-respuesta multi-salto sobre el conjunto de datos HotpotQA, pero la model card no confirma este extremo.
+El modelo `yuxuanw8/qwen3b-rlcr-hotpot-final` es un ajuste fino de la familia Qwen2 con 3.085.938.688 parámetros totales (aproximadamente 3,09 mil millones), publicado en Hugging Face por el usuario `yuxuanw8`. Según las etiquetas del repositorio, se trata de un modelo de generación de texto de tipo conversacional compatible con `transformers`, `safetensors` y `text-generation-inference`. El identificador del repositorio sugiere un entrenamiento orientado a pregunta-respuesta multi-salto sobre el conjunto de datos HotpotQA, pero la model card no confirma este extremo.
 
-La relevancia de esta ficha es limitada: el repositorio no incluye información técnica sustantiva. La model card es la plantilla automática de HuggingFace sin ningún campo completado, y no se han publicado resultados de evaluación, composición del dataset de entrenamiento ni detalles del procedimiento de ajuste. El propio autor no ha documentado la licencia, los idiomas soportados ni la procedencia de los pesos base.
+La relevancia de esta ficha es limitada: el repositorio no incluye información técnica sustantiva. La model card es la plantilla automática de Hugging Face sin ningún campo completado, y no se han publicado resultados de evaluación, composición del dataset de entrenamiento ni detalles del procedimiento de ajuste. El propio autor no ha documentado la licencia, los idiomas soportados ni la procedencia de los pesos base.
 
 Se trata, por tanto, de un modelo pequeño (3B) potencialmente útil para experimentación en entornos con recursos limitados, pero con un nivel de documentación insuficiente para recomendarlo en producción sin una evaluación propia previa. El tamaño del repositorio (12,4 GB) es coherente con pesos almacenados en precisión de 32 bits.
 
@@ -34,7 +34,7 @@ Respecto al entrenamiento, la model card no aporta ningún dato: no se especific
 ## Capacidades
 
 - Generación de texto conversacional en formato de diálogo, según el pipeline declarado (`text-generation`, etiqueta `conversational`).
-- Compatibilidad declarada con `text-generation-inference` y con endpoints compatibles, lo que permite su despliegue mediante la pila estándar de HuggingFace.
+- Compatibilidad declarada con `text-generation-inference` y con endpoints compatibles, lo que permite su despliegue mediante la pila estándar de Hugging Face.
 - Carga directa con la librería `transformers`.
 - Soporte de tool calling o function calling: no disponible (no documentado).
 - Capacidades de agente o razonamiento multi-paso: no disponible (no documentado, aunque el nombre del repositorio sugiere un entrenamiento orientado a QA multi-salto).
@@ -79,7 +79,7 @@ Nota: los datos de los modelos comparativos corresponden a su documentación pú
 
 ## Limitaciones y advertencias
 
-- Documentación inexistente: la model card es la plantilla automática de HuggingFace sin ningún campo completado. No se puede determinar el modelo base exacto, el dataset de entrenamiento ni el procedimiento de ajuste.
+- Documentación inexistente: la model card es la plantilla automática de Hugging Face sin ningún campo completado. No se puede determinar el modelo base exacto, el dataset de entrenamiento ni el procedimiento de ajuste.
 - Licencia no especificada: la ausencia de licencia explícita impide determinar si el uso comercial está permitido. En la práctica, esto supone un riesgo jurídico para cualquier despliegue en producción hasta que el autor lo aclare.
 - Riesgo de alucinación: no evaluado. No existen benchmarks de veracidad ni de fidelidad a las fuentes.
 - Idiomas soportados: no disponibles. Se desconoce si el ajuste degradó capacidades multilingües respecto al modelo base.
@@ -91,6 +91,6 @@ Nota: los datos de los modelos comparativos corresponden a su documentación pú
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yuxuanw8/qwen3b-rlcr-hotpot-final
+- Repositorio en Hugging Face: https://huggingface.co/yuxuanw8/qwen3b-rlcr-hotpot-final
 - Paper de Lacoste et al. (2019) sobre el cálculo de emisiones, citado como etiqueta `arxiv:1910.09700` en el repositorio (calculadora de impacto medioambiental, no es el paper del modelo): https://arxiv.org/abs/1910.09700
 - No se han localizado papers, blogs, repositorios de código ni demos asociados a este modelo en la búsqueda web realizada.

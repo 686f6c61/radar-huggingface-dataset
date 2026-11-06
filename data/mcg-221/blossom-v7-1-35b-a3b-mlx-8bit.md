@@ -2,7 +2,7 @@
 
 ## Resumen
 
-McG-221/Blossom-V7.1-35B-A3B-mlx-8Bit es una conversión al formato MLX del modelo Azure99/Blossom-V7.1-35B-A3B, publicada por el usuario McG-221. Es un modelo multimodal de tipo image-text-to-text, orientado a conversación y razonamiento, con arquitectura de mezcla de expertos (MoE) etiquetada como qwen3_5_moe en HuggingFace y un total de 34.660.608.768 parámetros en precisión de 8 bits.
+McG-221/Blossom-V7.1-35B-A3B-mlx-8Bit es una conversión al formato MLX del modelo Azure99/Blossom-V7.1-35B-A3B, publicada por el usuario McG-221. Es un modelo multimodal de tipo image-text-to-text, orientado a conversación y razonamiento, con arquitectura de mezcla de expertos (MoE) etiquetada como qwen3_5_moe en Hugging Face y un total de 34.660.608.768 parámetros en precisión de 8 bits.
 
 La relevancia de esta ficha es eminentemente práctica: permite ejecutar localmente un modelo MoE de ~35B cuantizado a 8 bits sobre hardware de Apple Silicon mediante la librería MLX, sin necesidad de GPU dedicada, y bajo licencia Apache 2.0. Los idiomas declarados son inglés y chino.
 
@@ -12,7 +12,7 @@ La contrapartida es la escasez de información pública: el repositorio no inclu
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE (mezcla de expertos) de tipo transformer; etiquetada como `qwen3_5_moe` en los tags de HuggingFace |
+| Arquitectura | MoE (mezcla de expertos) de tipo transformer; etiquetada como `qwen3_5_moe` en los tags de Hugging Face |
 | Parametros totales | 34.660.608.768 (dato real de los safetensors) |
 | Parametros activos | No disponible de forma explicita; la nomenclatura «A3B» del modelo base sugiere ~3.000 millones, sin confirmar |
 | Longitud de contexto | No disponible |
@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros totales | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| McG-221/Blossom-V7.1-35B-A3B-mlx-8Bit | 34.660.608.768 | No disponible | safetensors MLX 8 bits | Apache 2.0 | HuggingFace, 0 descargas |
-| Azure99/Blossom-V7.1-35B-A3B (modelo base) | ~35B (nominal) | No disponible | No disponible | No disponible | HuggingFace |
+| McG-221/Blossom-V7.1-35B-A3B-mlx-8Bit | 34.660.608.768 | No disponible | safetensors MLX 8 bits | Apache 2.0 | Hugging Face, 0 descargas |
+| Azure99/Blossom-V7.1-35B-A3B (modelo base) | ~35B (nominal) | No disponible | No disponible | No disponible | Hugging Face |
 | Otros modelos comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de informacion suficiente sobre el rendimiento del modelo ni sobre alternativas directas de la misma categoria como para establecer una comparativa cuantitativa fiable.
@@ -89,7 +89,7 @@ No se dispone de informacion suficiente sobre el rendimiento del modelo ni sobre
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/McG-221/Blossom-V7.1-35B-A3B-mlx-8Bit
+- Modelo en Hugging Face: https://huggingface.co/McG-221/Blossom-V7.1-35B-A3B-mlx-8Bit
 - Modelo base: https://huggingface.co/Azure99/Blossom-V7.1-35B-A3B
 - Libreria MLX: https://github.com/ml-explore/mlx
 - mlx-lm: https://github.com/ml-explore/mlx-lm

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-M181_multiclass es un clasificador de imágenes basado en Vision Transformer desarrollado por el usuario Veit, publicado en HuggingFace bajo licencia MIT. Se trata de la segunda etapa del pipeline PISCO dual-ViT: recibe los recortes (crops) de partículas que la etapa binaria (Veit/M181_binary) ha etiquetado previamente como "living" y los asigna a una de 13 clases taxonómicas de plancton. Parte del checkpoint google/vit-base-patch16-224-in21k, un ViT-base con parches de 16x16 y resolución de 224x224, y se ha afinado sobre recortes validados por expertos de la campaña M181 en el Atlántico tropical (abril-mayo de 2022), alcanzando un 96,17 % de exactitud en test sobre esas 13 clases.
+M181_multiclass es un clasificador de imágenes basado en Vision Transformer desarrollado por el usuario Veit, publicado en Hugging Face bajo licencia MIT. Se trata de la segunda etapa del pipeline PISCO dual-ViT: recibe los recortes (crops) de partículas que la etapa binaria (Veit/M181_binary) ha etiquetado previamente como "living" y los asigna a una de 13 clases taxonómicas de plancton. Parte del checkpoint google/vit-base-patch16-224-in21k, un ViT-base con parches de 16x16 y resolución de 224x224, y se ha afinado sobre recortes validados por expertos de la campaña M181 en el Atlántico tropical (abril-mayo de 2022), alcanzando un 96,17 % de exactitud en test sobre esas 13 clases.
 
 El modelo tiene 85.808.653 parámetros y un peso de repositorio de 0,3 GB en formato safetensors. No es un modelo generativo ni un modelo de lenguaje: no soporta tool calling, agentes, razonamiento multi-paso ni capacidades multilingües. Su valor está en la clasificación automática de plancton a partir de imágenes de citometría de flujo, un cuello de botella habitual en oceanografía, donde la revisión taxonómica manual de miles de partículas por campaña consume cientos de horas de especialistas.
 
@@ -79,7 +79,7 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otr
 - VRAM estimada para inferencia: inferior a 1-2 GB en fp16 con lotes pequenos, sumando pesos, activaciones y overhead del framework. No hay mediciones publicadas por el autor.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM es suficiente, incluidas GTX 1650, RTX 3050, RTX 3060, RTX 4090, A100 y H100. En la practica, el modelo esta limitado por el ancho de banda de lectura de imagenes y por el preprocesado, no por la VRAM.
 - Cabe en GPU de consumo: si, en cualquier GPU consumer moderna, e incluso en GPU integradas con soporte CUDA, ROCm o similar. La inferencia en CPU es viable para volumenes moderados, dado que se trata de un ViT-base con 196 parches por imagen.
-- Opciones de despliegue: pipeline `image-classification` de HuggingFace Transformers sobre PyTorch, TorchScript, ONNX Runtime, TensorRT o un servidor de inferencia como Triton. Tambien es posible exportarlo a formatos moviles. vLLM y llama.cpp no son opciones adecuadas para este modelo, ya que no es un modelo de lenguaje.
+- Opciones de despliegue: pipeline `image-classification` de Hugging Face Transformers sobre PyTorch, TorchScript, ONNX Runtime, TensorRT o un servidor de inferencia como Triton. Tambien es posible exportarlo a formatos moviles. vLLM y llama.cpp no son opciones adecuadas para este modelo, ya que no es un modelo de lenguaje.
 - Latencia y throughput: no disponible. No se han publicado mediciones de latencia ni de imagenes por segundo en la informacion proporcionada.
 - Requisito de entorno: el preprocesado no es opcional. Hay que redimensionar el lado mayor a 224, aplicar padding blanco (255) centrado, normalizar con media=desviacion=0,5, no rotar en inferencia y eliminar la barra de escala (por ejemplo con `utils.strip_scale_bar`) antes de clasificar.
 
@@ -89,9 +89,9 @@ La busqueda web realizada no ha devuelto informacion sobre clasificadores de pla
 
 | Modelo | Parametros | Tipo | Entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Veit/M181_multiclass | 85,8 M | ViT-base patch16, 13 clases | 224x224 px | 96,17 % de exactitud en test (M181, 13 clases) | MIT | HuggingFace, etapa 2 del pipeline PISCO |
-| google/vit-base-patch16-224-in21k | 85,8 M (arquitectura base) | ViT-base patch16 preentrenado | 224x224 px | No aplicable al dominio de plancton (preentrenamiento generico en ImageNet-21k) | No disponible en la informacion proporcionada | HuggingFace |
-| Veit/M181_binary | No disponible | ViT, etapa binaria del pipeline PISCO | 224x224 px (mismo preprocesado declarado) | No disponible | No disponible (el autor publica M181_multiclass bajo MIT) | HuggingFace, etapa 1 del pipeline PISCO |
+| Veit/M181_multiclass | 85,8 M | ViT-base patch16, 13 clases | 224x224 px | 96,17 % de exactitud en test (M181, 13 clases) | MIT | Hugging Face, etapa 2 del pipeline PISCO |
+| google/vit-base-patch16-224-in21k | 85,8 M (arquitectura base) | ViT-base patch16 preentrenado | 224x224 px | No aplicable al dominio de plancton (preentrenamiento generico en ImageNet-21k) | No disponible en la informacion proporcionada | Hugging Face |
+| Veit/M181_binary | No disponible | ViT, etapa binaria del pipeline PISCO | 224x224 px (mismo preprocesado declarado) | No disponible | No disponible (el autor publica M181_multiclass bajo MIT) | Hugging Face, etapa 1 del pipeline PISCO |
 
 Para el resto de alternativas de la misma tarea (clasificacion taxonomica de plancton con ViT o CNN): no disponible.
 
@@ -111,7 +111,7 @@ Para el resto de alternativas de la misma tarea (clasificacion taxonomica de pla
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Veit/M181_multiclass
+- Modelo en Hugging Face: https://huggingface.co/Veit/M181_multiclass
 - Modelo base: https://huggingface.co/google/vit-base-patch16-224-in21k
 - Etapa binaria del pipeline PISCO dual-ViT: https://huggingface.co/Veit/M181_binary
 - EcoTaxa (plataforma de referencia para la validacion de los taxones exportados): https://ecotaxa.obs-vlfr.fr

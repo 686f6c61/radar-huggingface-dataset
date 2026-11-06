@@ -6,7 +6,7 @@ DiffErase es un conjunto de checkpoints preentrenados publicado por el equipo Di
 
 El repositorio contiene dos familias de modelos: DiffErase-mel, basada en un `UNet2DModel` de diffusers con `DDPMScheduler` que opera sobre espectrogramas mel de 80 bandas a 22,05 kHz, y DiffErase-latent, una difusión latente estilo AudioLDM a 16 kHz con mel de 64 bandas. Cada familia se ofrece en tres dominios: habla (entrenado con LibriSpeech), música (FMA) y sonido ambiental (Clotho). Los pesos están en formato safetensors y `.ckpt`, con un tamaño total de repositorio de 6,1 GB.
 
-La relevancia actual del modelo es doble: por un lado, es una herramienta de investigación para estudiar la robustez de los esquemas de watermarking de audio frente a ataques de eliminación basados en difusión; por otro, plantea implicaciones directas para la protección de derechos de autor y la trazabilidad de contenido generado o distribuido. Su publicación en HuggingFace sin model card detallada, sin licencia declarada y sin métricas de evaluación en la información disponible limita su uso en producción.
+La relevancia actual del modelo es doble: por un lado, es una herramienta de investigación para estudiar la robustez de los esquemas de watermarking de audio frente a ataques de eliminación basados en difusión; por otro, plantea implicaciones directas para la protección de derechos de autor y la trazabilidad de contenido generado o distribuido. Su publicación en Hugging Face sin model card detallada, sin licencia declarada y sin métricas de evaluación en la información disponible limita su uso en producción.
 
 ## Especificaciones tecnicas
 
@@ -64,15 +64,15 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Categoria | Parametros | Contexto / dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DiffErase | Eliminacion de watermark de audio via difusion | no disponible | Audio 16-22,05 kHz, 3 dominios | no disponible | HuggingFace + GitHub |
-| AudioLDM | Difusion latente texto-a-audio | no disponible | Audio 16 kHz | no disponible en la informacion | GitHub + HuggingFace |
-| BigVGAN v2 | Vocoder neuronal | no disponible | Audio 22 kHz, 80 bandas | no disponible en la informacion | HuggingFace (`nvidia/bigvgan_v2_22khz_80band_256x`) |
+| DiffErase | Eliminacion de watermark de audio via difusion | no disponible | Audio 16-22,05 kHz, 3 dominios | no disponible | Hugging Face + GitHub |
+| AudioLDM | Difusion latente texto-a-audio | no disponible | Audio 16 kHz | no disponible en la informacion | GitHub + Hugging Face |
+| BigVGAN v2 | Vocoder neuronal | no disponible | Audio 22 kHz, 80 bandas | no disponible en la informacion | Hugging Face (`nvidia/bigvgan_v2_22khz_80band_256x`) |
 
 No se dispone de información sobre otros modelos específicos de eliminación de watermark de audio con los que comparar directamente. Las alternativas citadas (AudioLDM, BigVGAN) son componentes reutilizados por DiffErase, no competidores funcionales.
 
 ## Limitaciones y advertencias
 
-- La model card no declara licencia, idiomas soportados ni pipeline en HuggingFace; el uso comercial queda en un limbo legal hasta que el autor lo aclare.
+- La model card no declara licencia, idiomas soportados ni pipeline en Hugging Face; el uso comercial queda en un limbo legal hasta que el autor lo aclare.
 - No se han publicado métricas de evaluación (tasa de eliminación de watermark, calidad perceptual tipo PESQ/STOI, robustez frente a distintos esquemas) en la información disponible.
 - El modelo está entrenado por dominio (habla, música, ambiental) y no se garantiza su funcionamiento fuera del dominio correspondiente.
 - El dominio de habla usa LibriSpeech, corpus en inglés; no hay evidencia de generalización a otros idiomas.
@@ -84,7 +84,7 @@ No se dispone de información sobre otros modelos específicos de eliminación d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DiffErase/DiffErase
+- Hugging Face: https://huggingface.co/DiffErase/DiffErase
 - Repositorio GitHub: https://github.com/DiffErase/DiffErase
 - Vocoder BigVGAN v2 22 kHz 80 bandas: https://huggingface.co/nvidia/bigvgan_v2_22khz_80band_256x
 - Repositorio AudioLDM-training-finetuning (VAE y HiFi-GAN de origen): https://github.com/haoheliu/AudioLDM-training-finetuning

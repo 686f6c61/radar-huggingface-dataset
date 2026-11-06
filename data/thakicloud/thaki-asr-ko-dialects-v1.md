@@ -100,7 +100,7 @@ No se han publicado resultados en MMLU, HumanEval, GSM8K ni otros benchmarks de 
 
 | Modelo | Parametros | Contexto | CER dialectal coreano | CER coreano estandar | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Thaki-ASR-KO-Dialects-v1 | 2,04 B | no disponible | 10,81 % (agrupado, 1.395 en.) | 3,66 % (Zeroth, 200 en.) | Apache-2.0 | pesos en HuggingFace |
+| Thaki-ASR-KO-Dialects-v1 | 2,04 B | no disponible | 10,81 % (agrupado, 1.395 en.) | 3,66 % (Zeroth, 200 en.) | Apache-2.0 | pesos en Hugging Face |
 | Qwen3-ASR-1.7B (base) | 2,04 B | no disponible | 13,52 % (mismos conjuntos) | 3,83 % (mismos conjuntos) | Apache-2.0 | pesos publicos |
 | Whisper large-v3 | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada | pesos publicos |
 | Otros ASR especificos para dialectos coreanos | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -123,7 +123,7 @@ La unica comparacion con datos verificables en la informacion disponible es cont
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ThakiCloud/Thaki-ASR-KO-Dialects-v1
+- Modelo en Hugging Face: https://huggingface.co/ThakiCloud/Thaki-ASR-KO-Dialects-v1
 - Model card en coreano: https://huggingface.co/ThakiCloud/Thaki-ASR-KO-Dialects-v1/blob/main/MODEL_CARD.ko.md
 - Modelo base: https://huggingface.co/Qwen/Qwen3-ASR-1.7B
 - Dataset Zeroth-Korean: https://huggingface.co/datasets/Bingsu/zeroth-korean

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MedGemma-XRay-Agent es un ajuste especializado del modelo multimodal de la serie google/medgemma orientado al diagnostico de radiografias de torax. Lo publica el usuario hssling en HuggingFace y su unico artefacto documentado es un adaptador LoRA entrenado sobre el dataset NIH Chest X-ray 10k Control Dataset, segun indica su propia model card. No se trata por tanto de un modelo completo entrenado desde cero, sino de un ajuste de parametros eficiente sobre una base ya existente.
+MedGemma-XRay-Agent es un ajuste especializado del modelo multimodal de la serie google/medgemma orientado al diagnostico de radiografias de torax. Lo publica el usuario hssling en Hugging Face y su unico artefacto documentado es un adaptador LoRA entrenado sobre el dataset NIH Chest X-ray 10k Control Dataset, segun indica su propia model card. No se trata por tanto de un modelo completo entrenado desde cero, sino de un ajuste de parametros eficiente sobre una base ya existente.
 
 La relevancia de la ficha es limitada y debe interpretarse con cautela: el repositorio no declara pipeline, licencia ni idiomas, acumula cero descargas y su tamano reportado es de 0.0 GB, lo que sugiere que solo contiene pesos de adaptador y no los pesos completos del modelo base. Esto implica que para reproducir el sistema hay que descargar por separado el modelo medgemma original, cuya variante concreta no se especifica.
 
@@ -81,7 +81,7 @@ No disponible. La informacion proporcionada no incluye datos de parametros, cont
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hssling/MedGemma-XRay-Agent
+- Modelo en Hugging Face: https://huggingface.co/hssling/MedGemma-XRay-Agent
 - Modelo base citado en la model card: google/medgemma (referencia textual; enlace no verificado en la informacion disponible)
 - Dataset citado en la model card: NIH Chest X-ray 10k Control Dataset (referencia textual; enlace no verificado en la informacion disponible)
 - Paper, blog, repositorio o demo del modelo: no disponible

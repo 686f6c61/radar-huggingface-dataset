@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento comparativo con otras alternativas en la i
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/konnosena/ruri-v3-30m-onnx
+- Repositorio Hugging Face: https://huggingface.co/konnosena/ruri-v3-30m-onnx
 - Modelo base: https://huggingface.co/cl-nagoya/ruri-v3-30m
 - ModernBERT-Ja (colección): https://huggingface.co/collections/sbintuitions/modernbert-ja-67b68fe891132877cf67aa0a
 - Paper referenciado (arXiv:2409.07737): https://arxiv.org/abs/2409.07737

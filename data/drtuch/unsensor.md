@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Unsensor es un modelo publicado en HuggingFace por el usuario drtuch bajo la licencia Gemma. La model card asociada está prácticamente vacía: solo contiene el campo de licencia, sin descripción, sin especificaciones técnicas ni documentación sobre el proceso de entrenamiento. No se dispone de información sobre arquitectura, número de parámetros, longitud de contexto ni idiomas soportados.
+Unsensor es un modelo publicado en Hugging Face por el usuario drtuch bajo la licencia Gemma. La model card asociada está prácticamente vacía: solo contiene el campo de licencia, sin descripción, sin especificaciones técnicas ni documentación sobre el proceso de entrenamiento. No se dispone de información sobre arquitectura, número de parámetros, longitud de contexto ni idiomas soportados.
 
 El nombre del modelo sugiere un posible ajuste fino orientado a eliminar restricciones o censura en las respuestas, aunque esto es una inferencia a partir del identificador y no está confirmado por ninguna documentación oficial. El repositorio no registra descargas ni interacciones en el momento de la consulta, lo que indica que se trata de una publicación reciente y sin validación por parte de la comunidad.
 
@@ -42,7 +42,7 @@ No se documenta ninguna innovación técnica destacable, como decodificación es
 - Experimentación académica sobre alineación y censura: dado el nombre del modelo, investigadores en seguridad de IA podrían analizar diferencias de comportamiento respecto a modelos alineados estándar, asumiendo los riesgos éticos y legales correspondientes.
 - Pruebas de robustez en pipelines de generación de texto: integrable en entornos de test para medir la variabilidad de respuestas de modelos derivados de Gemma.
 - Prototipado interno sin requisitos de producción: adecuado únicamente para experimentación controlada, dado que no hay garantías documentadas de calidad ni de comportamiento.
-- Comparación de licencias y términos de uso: útil como caso de estudio sobre cómo se aplican las restricciones de la licencia Gemma en modelos derivados publicados en HuggingFace.
+- Comparación de licencias y términos de uso: útil como caso de estudio sobre cómo se aplican las restricciones de la licencia Gemma en modelos derivados publicados en Hugging Face.
 - Auditoría de repositorios: puede servir como ejemplo en herramientas de análisis de model cards incompletas o de publicaciones sin documentación técnica.
 
 ## Benchmarks y rendimiento
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 |---|---|---|---|---|
 | drtuch/Unsensor | no disponible | no disponible | gemma | Practicamente inexistente |
 | Gemma (familia base de Google) | 2B, 7B, 9B, 27B segun variante | hasta 128K en variantes recientes | Gemma Terms of Use | Completa y publica |
-| Modelos derivados de Gemma en HuggingFace | Variable | Variable | gemma | Variable, generalmente con model card |
+| Modelos derivados de Gemma en Hugging Face | Variable | Variable | gemma | Variable, generalmente con model card |
 
 La comparación se limita a la licencia, ya que no hay datos técnicos del modelo Unsensor que permitan una comparación cuantitativa con alternativas de la misma categoría.
 
@@ -79,5 +79,5 @@ La comparación se limita a la licencia, ya que no hay datos técnicos del model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/drtuch/Unsensor
+- Repositorio en Hugging Face: https://huggingface.co/drtuch/Unsensor
 - Términos de uso de Gemma (licencia declarada): https://ai.google.dev/gemma/terms

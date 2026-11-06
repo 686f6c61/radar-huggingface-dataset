@@ -2,7 +2,7 @@
 
 ## Resumen
 
-act_piper_model_v1 es una política de robótica basada en ACT (Action Chunking with Transformers), un método de aprendizaje por imitación que predice fragmentos cortos de acciones (action chunks) en lugar de pasos individuales. Lo publica el usuario leekyeongmin-pac2026 en HuggingFace, entrenado y subido con LeRobot, la librería de HuggingFace para aprendizaje por imitación en robótica. El problema que resuelve es el control de brazos robóticos a partir de demostraciones teleoperadas: en lugar de programar controladores, la política aprende a mapear observaciones visuales y estados articulares a secuencias de acciones.
+act_piper_model_v1 es una política de robótica basada en ACT (Action Chunking with Transformers), un método de aprendizaje por imitación que predice fragmentos cortos de acciones (action chunks) en lugar de pasos individuales. Lo publica el usuario leekyeongmin-pac2026 en Hugging Face, entrenado y subido con LeRobot, la librería de Hugging Face para aprendizaje por imitación en robótica. El problema que resuelve es el control de brazos robóticos a partir de demostraciones teleoperadas: en lugar de programar controladores, la política aprende a mapear observaciones visuales y estados articulares a secuencias de acciones.
 
 El checkpoint tiene 51.670.663 parámetros (unos 51,7 M) almacenados en safetensors, con un tamaño de repositorio de 0,2 GB, y se distribuye bajo licencia Apache 2.0. Está asociado al dataset leekyeongmin-pac2026/piperdataset_1 y se apoya en el paper arXiv:2304.13705, donde se describe el método ACT original. Es relevante por su carácter completamente abierto (pesos, licencia permisiva y toolchain reproducible) y porque el ecosistema LeRobot permite entrenar y evaluar este tipo de políticas con pocos comandos, lo que baja la barrera para experimentar con manipulación robótica.
 
@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Política | Tipo | Parámetros | Contexto / observaciones | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| act_piper_model_v1 (este modelo) | ACT (transformer + backbone visual, chunks de acciones) | 51.670.663 | Imágenes + estado articular; tamaño de chunk no disponible | Apache 2.0 | HuggingFace, librería LeRobot |
+| act_piper_model_v1 (este modelo) | ACT (transformer + backbone visual, chunks de acciones) | 51.670.663 | Imágenes + estado articular; tamaño de chunk no disponible | Apache 2.0 | Hugging Face, librería LeRobot |
 | Diffusion Policy | Política por difusión para manipulación | No disponible | No disponible | No disponible | Implementada en LeRobot (paper propio) |
-| SmolVLA | Política VLA sobre modelo vision-language compacto | No disponible | No disponible | No disponible | HuggingFace / LeRobot |
+| SmolVLA | Política VLA sobre modelo vision-language compacto | No disponible | No disponible | No disponible | Hugging Face / LeRobot |
 | VQ-BeT | Política basada en discretización de acciones con transformer | No disponible | No disponible | No disponible | Implementada en LeRobot |
 
 No se dispone de datos verificados de parámetros, contexto ni rendimiento de las alternativas en la información proporcionada; por tanto, la comparación cuantitativa queda como no disponible. La diferencia cualitativa principal es que este checkpoint es un ACT puro, ligero y con licencia Apache 2.0, mientras que las alternativas citadas cubren enfoques distintos (difusión, VLA, discretización) dentro del mismo ecosistema LeRobot.
@@ -89,7 +89,7 @@ No se dispone de datos verificados de parámetros, contexto ni rendimiento de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/leekyeongmin-pac2026/act_piper_model_v1
+- Modelo en Hugging Face: https://huggingface.co/leekyeongmin-pac2026/act_piper_model_v1
 - Dataset asociado: https://huggingface.co/datasets/leekyeongmin-pac2026/piperdataset_1
 - Paper de ACT (Action Chunking with Transformers): https://huggingface.co/papers/2304.13705 (arXiv:2304.13705)
 - Repositorio LeRobot: https://github.com/huggingface/lerobot

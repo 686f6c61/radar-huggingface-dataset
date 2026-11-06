@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks comparables con otros modelos de la misma c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JRamirez-UAB/Kestrel-4B-Coder-EXL3-6.00bpw-8-16GB
+- Hugging Face: https://huggingface.co/JRamirez-UAB/Kestrel-4B-Coder-EXL3-6.00bpw-8-16GB
 - Modelo base: https://huggingface.co/Jackrong/Kestrel-4B-Coder
 - exllamav3: https://github.com/turboderp-org/exllamav3
 - Paper referenciado en tags (arXiv:2406.11235): https://arxiv.org/abs/2406.11235

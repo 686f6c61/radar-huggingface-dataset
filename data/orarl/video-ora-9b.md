@@ -76,7 +76,7 @@ No se dispone de información suficiente para una comparativa cuantitativa con o
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OraRL/Video-ORA-9B
+- Modelo en Hugging Face: https://huggingface.co/OraRL/Video-ORA-9B
 - Página del proyecto: https://orarl.github.io/
 - Paper (arXiv): https://arxiv.org/abs/2608.20492
 - Datos de evaluación: https://huggingface.co/datasets/OraRL/OraRL-Data/tree/main/OraRL-eval-data

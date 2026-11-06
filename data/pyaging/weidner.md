@@ -74,6 +74,6 @@ Existen otros relojes epigeneticos para sangre completa, como el reloj de Horvat
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/pyaging/weidner
+- Repositorio Hugging Face: https://huggingface.co/pyaging/weidner
 - Documentacion de pyaging: https://pyaging.readthedocs.io
 - Articulo original: Weidner, C. I., Lin, Q., Koch, C. M., et al. (2014). Aging of blood can be tracked by DNA methylation changes at just three CpG sites. *Genome Biology*, 15, R24. https://doi.org/10.1186/gb-2014-15-2-r24

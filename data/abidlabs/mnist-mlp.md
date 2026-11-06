@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mnist-mlp es un perceptrón multicapa (MLP) minúsculo entrenado desde cero (inicialización aleatoria, sin pesos preentrenados) sobre el conjunto de datos ylecun/mnist para clasificación de dígitos manuscritos. Lo publica el usuario de HuggingFace abidlabs y su único propósito declarado es servir como modelo de referencia reproducible: la model card indica que se puede regenerar ejecutando `python train.py` con el mismo script incluido en el repositorio.
+mnist-mlp es un perceptrón multicapa (MLP) minúsculo entrenado desde cero (inicialización aleatoria, sin pesos preentrenados) sobre el conjunto de datos ylecun/mnist para clasificación de dígitos manuscritos. Lo publica el usuario de Hugging Face abidlabs y su único propósito declarado es servir como modelo de referencia reproducible: la model card indica que se puede regenerar ejecutando `python train.py` con el mismo script incluido en el repositorio.
 
 El modelo tiene 235.146 parámetros y una arquitectura totalmente conectada de tres capas (784 -> 256 -> 128 -> 10) con activaciones ReLU. Se entrenó durante 5 épocas con lotes de 256 y optimizador Adam con tasa de aprendizaje 0,002, lo que supone 1.170 pasos de optimización. La precisión reportada en el conjunto de test de 10.000 imágenes es de 0,9772, y el tiempo de entrenamiento declarado es de 5,5 segundos en una instancia cpu-basic (2 vCPU), lo que lo convierte en un ejemplo de coste computacional prácticamente nulo.
 
@@ -23,7 +23,7 @@ Su relevancia no está en el rendimiento ni en la novedad técnica, sino en su u
 | Libreria declarada | pytorch |
 | Pipeline | image-classification |
 | Dataset de entrenamiento | ylecun/mnist |
-| Tamaño del repositorio | 0,0 GB según los metadatos de HuggingFace |
+| Tamaño del repositorio | 0,0 GB según los metadatos de Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Tipo | Parametros | Precision en MNIST | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| abidlabs/mnist-mlp | MLP 784-256-128-10 | 235.146 | 0,9772 (reportada) | no disponible | HuggingFace |
+| abidlabs/mnist-mlp | MLP 784-256-128-10 | 235.146 | 0,9772 (reportada) | no disponible | Hugging Face |
 | LeNet-5 (arquitectura clásica de CNN para MNIST) | CNN | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible | Implementaciones multiples |
 | MLP de mayor capacidad (por ejemplo 784-512-512-10) | MLP | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible | Implementaciones multiples |
 | CNN pequeña moderna para MNIST | CNN | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible | Implementaciones multiples |
@@ -102,12 +102,12 @@ No se dispone de cifras verificadas de los modelos alternativos en las fuentes c
 - No hay datos sobre robustez frente a rotaciones, ruido, oclusiones, imágenes invertidas o adversariales.
 - Licencia no disponible: al no declararse una licencia, no puede asumirse permiso para uso comercial ni redistribución. Es un caveat importante antes de integrarlo en un producto.
 - Dependencia del código del autor: el peso publicado es un `state_dict` plano que necesita la definición de clase de `train.py`; sin ese script la carga directa no es trivial, y no hay versión en safetensors ni pesos fusionados.
-- Cero adopción registrada en HuggingFace en el momento de los metadatos (0 descargas, 0 likes), lo que implica ausencia de validación externa, de issues reportados y de mantenimiento conocido.
+- Cero adopción registrada en Hugging Face en el momento de los metadatos (0 descargas, 0 likes), lo que implica ausencia de validación externa, de issues reportados y de mantenimiento conocido.
 - No es un modelo instructivo ni conversacional: cualquier expectativa de uso como asistente, agente o generador de código es inaplicable.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abidlabs/mnist-mlp
+- Modelo en Hugging Face: https://huggingface.co/abidlabs/mnist-mlp
 - Repositorio de archivos del modelo, incluido `model.pt` y `train.py` citados en la model card: https://huggingface.co/abidlabs/mnist-mlp/tree/main
 - Dataset empleado, ylecun/mnist: https://huggingface.co/datasets/ylecun/mnist
 - Resultados de la búsqueda web: no se ha encontrado ningún enlace relevante sobre este modelo. Los resultados devueltos corresponden a la película "Bardo, False Chronicle of a Handful of Truths" (Wikipedia, IMDb, Netflix, Rotten Tomatoes, The New York Times) y no guardan ninguna relación con el modelo. No se dispone de paper, blog técnico, repositorio adicional ni demo asociados.

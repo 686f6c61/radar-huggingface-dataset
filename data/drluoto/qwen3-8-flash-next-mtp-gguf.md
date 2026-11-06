@@ -88,7 +88,7 @@ La comparativa principal es entre usar el sidecar y no usarlo: el sidecar ofrece
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/drluoto/Qwen3.8-Flash-Next-MTP-GGUF
+- Repositorio Hugging Face: https://huggingface.co/drluoto/Qwen3.8-Flash-Next-MTP-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - GitHub del modelo base: https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - PR de llama.cpp para exportación MTP: https://github.com/ggml-org/llama.cpp/pull/27836

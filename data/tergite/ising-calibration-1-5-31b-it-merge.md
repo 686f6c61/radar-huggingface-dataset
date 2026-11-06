@@ -71,9 +71,9 @@ El merge recupera practicamente la puntuacion de dominio de Ising 1.5 (73,3 fren
 
 | Modelo | Parametros | Contexto | QCalEval (thinking) | MATH-500 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este merge | 31,27 B | no disponible | 73,3 | 85 | OpenMDW 1.1 | HuggingFace (comunidad) |
-| google/gemma-4-31B-it | 31 B aprox. | no disponible | 68,5 | 85 | Apache 2.0 (Gemma 4) | HuggingFace (oficial) |
-| nvidia/Ising-Calibration-1.5-31B-BF16 | 31 B aprox. | no disponible | 74,1 | 13 | OpenMDW 1.1 | HuggingFace (oficial) |
+| Este merge | 31,27 B | no disponible | 73,3 | 85 | OpenMDW 1.1 | Hugging Face (comunidad) |
+| google/gemma-4-31B-it | 31 B aprox. | no disponible | 68,5 | 85 | Apache 2.0 (Gemma 4) | Hugging Face (oficial) |
+| nvidia/Ising-Calibration-1.5-31B-BF16 | 31 B aprox. | no disponible | 74,1 | 13 | OpenMDW 1.1 | Hugging Face (oficial) |
 
 Frente a Gemma 4 31B-it gana 4,8 puntos en QCalEval manteniendo MATH-500; frente a Ising 1.5 pierde 0,8 puntos de dominio pero multiplica por mas de seis su rendimiento matematico y recupera el modo thinking.
 
@@ -89,7 +89,7 @@ Frente a Gemma 4 31B-it gana 4,8 puntos en QCalEval manteniendo MATH-500; frente
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tergite/Ising-Calibration-1.5-31B-it-merge
+- Repositorio Hugging Face: https://huggingface.co/tergite/Ising-Calibration-1.5-31B-it-merge
 - Modelo base instruct: https://huggingface.co/google/gemma-4-31B-it
 - Modelo base preentrenado: https://huggingface.co/google/gemma-4-31B
 - Fine-tuning de NVIDIA: https://huggingface.co/nvidia/Ising-Calibration-1.5-31B-BF16

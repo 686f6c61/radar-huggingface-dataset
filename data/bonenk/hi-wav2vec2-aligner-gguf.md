@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Funcion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Bonenk/hi-wav2vec2-aligner-GGUF | 315,5 M | no disponible (stride ~20 ms) | Alineador CTC de palabras en hindi | Apache-2.0 | GGUF en HuggingFace |
+| Bonenk/hi-wav2vec2-aligner-GGUF | 315,5 M | no disponible (stride ~20 ms) | Alineador CTC de palabras en hindi | Apache-2.0 | GGUF en Hugging Face |
 | canary-ctc-aligner (integrado en CrispASR) | no disponible | no disponible | Alineador CTC generico, orientado a ingles | no disponible | Incluido en CrispASR |
-| theainerd/Wav2Vec2-large-xlsr-hindi | 315 M | no disponible | ASR/alineamiento en hindi (modelo fuente, precision completa) | Apache-2.0 | Safetensors en HuggingFace |
-| facebook/wav2vec2-large-xlsr-53 | ~317 M | no disponible | Preentrenamiento multilingue (53 idiomas) | Apache-2.0 | Safetensors en HuggingFace |
+| theainerd/Wav2Vec2-large-xlsr-hindi | 315 M | no disponible | ASR/alineamiento en hindi (modelo fuente, precision completa) | Apache-2.0 | Safetensors en Hugging Face |
+| facebook/wav2vec2-large-xlsr-53 | ~317 M | no disponible | Preentrenamiento multilingue (53 idiomas) | Apache-2.0 | Safetensors en Hugging Face |
 
 La comparativa se limita a los modelos citados en la informacion proporcionada; no se dispone de datos de rendimiento comparativo entre ellos.
 
@@ -85,7 +85,7 @@ La comparativa se limita a los modelos citados en la informacion proporcionada; 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Bonenk/hi-wav2vec2-aligner-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Bonenk/hi-wav2vec2-aligner-GGUF
 - Modelo fuente: https://huggingface.co/theainerd/Wav2Vec2-large-xlsr-hindi
 - Modelo base: https://huggingface.co/facebook/wav2vec2-large-xlsr-53
 - Modelos ASR complementarios: https://huggingface.co/Bonenk/indic-transcribe-flex-GGUF

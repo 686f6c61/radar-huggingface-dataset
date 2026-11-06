@@ -63,18 +63,18 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| francesca9805/ppt-wc-uniform-newlex-jpn-after-100mb-packed-bfdiso_seed455 | 86.508.288 | no disponible | sin benchmarks publicados | no disponible | HuggingFace, 0 descargas |
-| goldfish-models/eng_latn_100mb (modelo base) | no disponible en la informacion | no disponible | sin datos en la informacion | no disponible en la informacion | HuggingFace |
-| distilgpt2 | 82 millones (dato externo, no verificado en esta busqueda) | no disponible | no disponible | no disponible en la informacion | HuggingFace |
-| francesca9805/ppt-wc-uniform-newlex-zho-after-100mb-packed-bfd_seed455 | no disponible en la informacion | no disponible | sin benchmarks publicados | no disponible | HuggingFace |
-| fpadovani/ppt-wc-uniform-newlex-nld-100mb_seed455 | no disponible en la informacion | no disponible | sin benchmarks publicados | no disponible | HuggingFace |
+| francesca9805/ppt-wc-uniform-newlex-jpn-after-100mb-packed-bfdiso_seed455 | 86.508.288 | no disponible | sin benchmarks publicados | no disponible | Hugging Face, 0 descargas |
+| goldfish-models/eng_latn_100mb (modelo base) | no disponible en la informacion | no disponible | sin datos en la informacion | no disponible en la informacion | Hugging Face |
+| distilgpt2 | 82 millones (dato externo, no verificado en esta busqueda) | no disponible | no disponible | no disponible en la informacion | Hugging Face |
+| francesca9805/ppt-wc-uniform-newlex-zho-after-100mb-packed-bfd_seed455 | no disponible en la informacion | no disponible | sin benchmarks publicados | no disponible | Hugging Face |
+| fpadovani/ppt-wc-uniform-newlex-nld-100mb_seed455 | no disponible en la informacion | no disponible | sin benchmarks publicados | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparables entre estas variantes, por lo que la comparativa se limita a tamano y disponibilidad. Cualquier afirmacion sobre calidad relativa seria especulativa.
 
 ## Limitaciones y advertencias
 
 - Ausencia total de benchmarks publicados: no hay evidencia cuantitativa de calidad, por lo que no es recomendable para produccion sin una evaluacion propia previa.
-- Licencia ambigua: la model card indica `licence: license` y la ficha de HuggingFace marca la licencia como no disponible. Esto impide determinar si el uso comercial esta permitido. Hay que contactar con el autor antes de cualquier uso profesional.
+- Licencia ambigua: la model card indica `licence: license` y la ficha de Hugging Face marca la licencia como no disponible. Esto impide determinar si el uso comercial esta permitido. Hay que contactar con el autor antes de cualquier uso profesional.
 - Modelo base monolingue en ingles: `goldfish-models/eng_latn_100mb` esta entrenado con 100 MB de texto en ingles. Aunque el nombre del repositorio menciona `jpn`, no hay confirmacion de que el modelo final tenga competencia real en japones.
 - Riesgo elevado de alucinacion y de texto incoherente: con 86,5 M de parametros y un corpus de entrenamiento de 100 MB, la capacidad de mantener coherencia en generaciones largas es muy limitada en comparacion con modelos actuales.
 - Longitud de contexto desconocida: al no publicarse la configuracion, no se puede planificar el uso en conversaciones multi-turno largas ni en tareas de recuperacion con contexto extenso.
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparables entre estas variantes, por lo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-jpn-after-100mb-packed-bfdiso_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-jpn-after-100mb-packed-bfdiso_seed455
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/mvwavr0l
 - Repositorio de TRL: https://github.com/huggingface/trl

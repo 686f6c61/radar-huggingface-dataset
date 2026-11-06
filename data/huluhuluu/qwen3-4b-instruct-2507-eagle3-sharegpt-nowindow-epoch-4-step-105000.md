@@ -79,7 +79,7 @@ No se dispone de datos publicados para comparar este checkpoint con otros draft 
 
 ## Enlaces
 
-- Repositorio HuggingFace del checkpoint: https://huggingface.co/huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-NoWindow-epoch-4-step-105000
+- Repositorio Hugging Face del checkpoint: https://huggingface.co/huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-NoWindow-epoch-4-step-105000
 - Checkpoint de epoca 7 paso 185000: https://huggingface.co/huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-epoch-7-step-185000
 - Modelo base Qwen3-4B-Instruct-2507: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Guia de despliegue local con Ollama (referencia del modelo base): https://mattselander.com/deploy-qwen3-4b-instruct-2507-locally-via-ollama-2/

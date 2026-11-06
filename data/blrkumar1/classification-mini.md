@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`blrkumar1/classification-mini` es un prototipo de investigación publicado en HuggingFace por el usuario blrkumar1. Se presenta como una implementación personalizada de una arquitectura denominada "Mae" orientada a tareas de clasificación, en una configuración "tiny" que, según la propia model card, documenta valores por defecto y formatos de fichero sin aportar cifras de rendimiento verificadas. El repositorio contiene 24.832 parámetros totales según el recuento real de sus ficheros safetensors, lo que lo sitúa en el orden de las centésimas de millón de parámetros (aproximadamente 0,025 M).
+`blrkumar1/classification-mini` es un prototipo de investigación publicado en Hugging Face por el usuario blrkumar1. Se presenta como una implementación personalizada de una arquitectura denominada "Mae" orientada a tareas de clasificación, en una configuración "tiny" que, según la propia model card, documenta valores por defecto y formatos de fichero sin aportar cifras de rendimiento verificadas. El repositorio contiene 24.832 parámetros totales según el recuento real de sus ficheros safetensors, lo que lo sitúa en el orden de las centésimas de millón de parámetros (aproximadamente 0,025 M).
 
-El checkpoint incluido (`model.safetensors`) se describe explícitamente como una inicialización válida para pruebas de humo, no como un modelo entrenado ni evaluado. No se declara ningún resultado de benchmark, no se especifican idiomas soportados, no se documenta una pipeline de HuggingFace y el repositorio no registra descargas ni "likes" en el momento de la consulta. La licencia es Apache 2.0.
+El checkpoint incluido (`model.safetensors`) se describe explícitamente como una inicialización válida para pruebas de humo, no como un modelo entrenado ni evaluado. No se declara ningún resultado de benchmark, no se especifican idiomas soportados, no se documenta una pipeline de Hugging Face y el repositorio no registra descargas ni "likes" en el momento de la consulta. La licencia es Apache 2.0.
 
 Su relevancia actual es, por tanto, limitada y de carácter metodológico: sirve como andamiaje reproducible para experimentos de clasificación, como punto de partida para recetas de entrenamiento con Novograd y planificador exponencial, y como ejemplo de empaquetado de código propio (no compatible con las APIs genéricas de carga automática de `transformers` sin un adaptador explícito).
 
@@ -94,5 +94,5 @@ No se identifican en la información disponible modelos comparables de la misma 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/blrkumar1/classification-mini
+- Modelo en Hugging Face: https://huggingface.co/blrkumar1/classification-mini
 - La búsqueda web realizada no ha devuelto ningún enlace relevante sobre este modelo, su arquitectura "Mae" ni su autor. Los resultados obtenidos correspondían a temas sin relación (GPT-6, GPT-SoVITS, generación de imágenes y precios de GitHub Copilot), por lo que se omiten.

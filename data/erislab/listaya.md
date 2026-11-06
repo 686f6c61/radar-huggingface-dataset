@@ -106,7 +106,7 @@ Las filas de Whisper-medium y Qwen2-Audio-7B se incluyen únicamente como refere
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ERISLab/LisTAya
+- Modelo en Hugging Face: https://huggingface.co/ERISLab/LisTAya
 - Colección completa de checkpoints: https://huggingface.co/collections/ERISLab/listaya-slam-asr-projectors-on-tiny-aya-rocling-2026-6ab031414095f3df8805ed7b
 - Dataset WorldSpeech de ERISLab (config `crs_sc`): https://huggingface.co/datasets/ERISLab/WorldSpeech
 - Dataset WorldSpeech de disco-eth: https://huggingface.co/datasets/disco-eth/WorldSpeech

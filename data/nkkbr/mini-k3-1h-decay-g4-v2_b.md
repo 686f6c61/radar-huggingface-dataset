@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mini-K3-1H-decay-g4-v2_B es un checkpoint de preentrenamiento de texto publicado por el usuario nkkbr en HuggingFace, con 1.015.052.956 parámetros lógicos y 351.828.636 parámetros activados por token. No es un modelo de propósito general, sino un proxy de investigación a escala de aproximadamente mil millones de parámetros que reproduce la arquitectura de Kimi-K3: mezcla de operadores KDA (atención lineal) y Gated MLA, bloques de Attention Residuals, Stable LatentMoE, activaciones SiTU, puertas de salida y Quantile Balancing. Forma parte de una comparación controlada de 20 arquitecturas entrenadas con el mismo orden de datos, la misma semilla base (20260914) y la misma receta de optimizador.
+Mini-K3-1H-decay-g4-v2_B es un checkpoint de preentrenamiento de texto publicado por el usuario nkkbr en Hugging Face, con 1.015.052.956 parámetros lógicos y 351.828.636 parámetros activados por token. No es un modelo de propósito general, sino un proxy de investigación a escala de aproximadamente mil millones de parámetros que reproduce la arquitectura de Kimi-K3: mezcla de operadores KDA (atención lineal) y Gated MLA, bloques de Attention Residuals, Stable LatentMoE, activaciones SiTU, puertas de salida y Quantile Balancing. Forma parte de una comparación controlada de 20 arquitecturas entrenadas con el mismo orden de datos, la misma semilla base (20260914) y la misma receta de optimizador.
 
 El problema que resuelve es metodológico: permitir estudios de ablación de decisiones arquitectónicas concretas (proporción KDA/MLA, granularidad de decaimiento, longitud de convolución, codificación posicional) a un coste computacional asumible. Esta variante concreta se distingue por usar 4 grupos de decaimiento contiguos por cabeza en las capas KDA y un kernel de convolución causal depthwise de longitud 4. El run fue recuperado y reiniciado desde cero tokens tras un fallo en la inicialización provocado por una discrepancia en el layout de serialización de `dt_bias`; según el autor, solo cambió la serialización portable, no la arquitectura ni la receta.
 
@@ -82,10 +82,10 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros totales | Parámetros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mini-K3-1H-decay-g4-v2_B | 1.015.052.956 | 351.828.636 | 8.192 tokens (entrenamiento) | no disponible | HuggingFace, código propio |
-| Llama 3.2 1B | 1.240 millones | denso | 128.000 tokens | Llama 3.2 Community License | HuggingFace, amplio soporte de frameworks |
-| Qwen2.5 1.5B | 1.540 millones | denso | 32.768 tokens | Apache 2.0 | HuggingFace, amplio soporte de frameworks |
-| TinyLlama 1.1B | 1.100 millones | denso | 2.048 tokens | Apache 2.0 | HuggingFace, amplio soporte de frameworks |
+| Mini-K3-1H-decay-g4-v2_B | 1.015.052.956 | 351.828.636 | 8.192 tokens (entrenamiento) | no disponible | Hugging Face, código propio |
+| Llama 3.2 1B | 1.240 millones | denso | 128.000 tokens | Llama 3.2 Community License | Hugging Face, amplio soporte de frameworks |
+| Qwen2.5 1.5B | 1.540 millones | denso | 32.768 tokens | Apache 2.0 | Hugging Face, amplio soporte de frameworks |
+| TinyLlama 1.1B | 1.100 millones | denso | 2.048 tokens | Apache 2.0 | Hugging Face, amplio soporte de frameworks |
 
 Los datos de parámetros, contexto y licencia de los tres modelos comparativos provienen de la documentación pública de sus respectivos desarrolladores. La comparación de rendimiento no es posible: Mini-K3-1H-decay-g4-v2_B no tiene evaluaciones downstream publicadas, mientras que los tres alternativas densas sí publican resultados de benchmarks. La diferencia de categoría también es relevante: los tres comparativos son modelos densos con post-entrenamiento orientado a instrucciones, mientras que este checkpoint es un MoE híbrido sin post-entrenamiento y con una ventana de contexto mucho menor.
 
@@ -106,7 +106,7 @@ Los datos de parámetros, contexto y licencia de los tres modelos comparativos p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nkkbr/Mini-K3-1H-decay-g4-v2_B
+- Modelo en Hugging Face: https://huggingface.co/nkkbr/Mini-K3-1H-decay-g4-v2_B
 - Código de modelado incluido en el repositorio: `modeling_mini_k3.py` (https://huggingface.co/nkkbr/Mini-K3-1H-decay-g4-v2_B/blob/main/modeling_mini_k3.py)
 - Configuración incluida en el repositorio: `configuration_mini_k3.py` (https://huggingface.co/nkkbr/Mini-K3-1H-decay-g4-v2_B/blob/main/configuration_mini_k3.py)
 - Documentación de arquitectura: `ARCHITECTURE.md` (https://huggingface.co/nkkbr/Mini-K3-1H-decay-g4-v2_B/blob/main/ARCHITECTURE.md)

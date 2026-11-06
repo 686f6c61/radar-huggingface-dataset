@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Precision / formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AX-Nemotron-3-Embed-1B-MLX-AXQ-MXFP8 (este) | 1,14B | 262.144 tokens configurados | 8,2507 BPW medido; MLX Safetensors | Apache 2.0 | Publicado en HuggingFace; 17 descargas, 0 likes; ejecucion nativa AX Engine no establecida |
+| AX-Nemotron-3-Embed-1B-MLX-AXQ-MXFP8 (este) | 1,14B | 262.144 tokens configurados | 8,2507 BPW medido; MLX Safetensors | Apache 2.0 | Publicado en Hugging Face; 17 descargas, 0 likes; ejecucion nativa AX Engine no establecida |
 | nvidia/Nemotron-3-Embed-1B-BF16 (base) | 1,14B | No disponible en la informacion proporcionada | BF16 | No disponible en la informacion proporcionada | Referenciado como modelo base (revision `c0c9fea`) |
 | AX-Nemotron-3-Embed-1B-MLX-AXQ-4bit (hermano) | 1,14B | No disponible en la informacion proporcionada | Presupuesto AXQ de 4 bits; el BPW exacto debe consultarse en su ficha | Apache 2.0 (heredada de la familia) | Publicado por AutomatosX |
 | AX-Nemotron-3-Embed-1B-MLX-AXQ-8bit (hermano) | 1,14B | No disponible en la informacion proporcionada | Precision media mas alta, cerca del presupuesto de 8 BPW; BPW exacto debe consultarse | Apache 2.0 (heredada de la familia) | Publicado por AutomatosX |
@@ -96,7 +96,7 @@ No se dispone de datos comparativos de rendimiento frente a otras familias de em
 - Advertencia sobre la busqueda web: los resultados obtenidos en la busqueda no contienen material tecnico sobre el modelo; no se ha podido contrastar informacion externa.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/AutomatosX/AX-Nemotron-3-Embed-1B-MLX-AXQ-MXFP8
+- Modelo en Hugging Face: https://huggingface.co/AutomatosX/AX-Nemotron-3-Embed-1B-MLX-AXQ-MXFP8
 - Modelo base: https://huggingface.co/nvidia/Nemotron-3-Embed-1B-BF16
 - Revision del modelo base usada en la conversion: https://huggingface.co/nvidia/Nemotron-3-Embed-1B-BF16/tree/c0c9fea93ea424587517f2c59e20db9f1d6bf615
 - Hermano de 4 bits: https://huggingface.co/AutomatosX/AX-Nemotron-3-Embed-1B-MLX-AXQ-4bit

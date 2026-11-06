@@ -28,8 +28,8 @@ Su relevancia actual es de nicho pero clara: cubre el hueco de inferencia de pos
 | Plataforma minima | macOS 13 o superior |
 | Autor | mickeyvanolst |
 | Descargas / likes | 0 / 0 |
-| Fecha de creacion | 2026-09-16 (segun metadatos de HuggingFace) |
-| Tamano del repositorio | 0,0 GB (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-16 (segun metadatos de Hugging Face) |
+| Tamano del repositorio | 0,0 GB (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -116,7 +116,7 @@ Comparativa con modelos como MoveNet, YOLO-Pose o MMPose: no disponible en la in
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/mickeyvanolst/blazepose-coreml
+- Ficha en Hugging Face: https://huggingface.co/mickeyvanolst/blazepose-coreml
 - Repositorio del autor (familia de operadores AML para TouchDesigner): https://github.com/mickeyvanolst
 - Receta de conversion y mediciones: ruta `labs/blazepose` dentro del repositorio AML anterior
 - Modelos originales de MediaPipe Pose Landmarker (BlazePose GHUM, Google): no disponible en la informacion proporcionada

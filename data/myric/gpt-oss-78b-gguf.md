@@ -96,7 +96,7 @@ La comparacion directa con el Puzzle 88B de NVIDIA es la mas relevante metodolog
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Myric/gpt-oss-78B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Myric/gpt-oss-78B-GGUF
 - Modelo base: https://huggingface.co/openai/gpt-oss-120b
 - Implementacion de referencia llama.cpp: https://github.com/ggml-org/llama.cpp
 - Busqueda web: no se han encontrado resultados relevantes sobre este modelo. Las consultas realizadas devolvieron exclusivamente paginas sin relacion con el contenido (sitios de conciertos y entradas de una artista musical), por lo que no se incluye ningun enlace de esa busqueda.

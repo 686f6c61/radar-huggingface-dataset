@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `MOHAMMADAlicharooseh/algorithmic-trading-systems-mohammad-charooseh`, publicado por el usuario MOHAMMADAlicharooseh en HuggingFace, se presenta bajo licencia MIT y la etiqueta de región `us`. En el momento de la consulta no registra descargas ni interacciones, y no declara pipeline, idiomas ni arquitectura en los metadatos disponibles.
+El repositorio `MOHAMMADAlicharooseh/algorithmic-trading-systems-mohammad-charooseh`, publicado por el usuario MOHAMMADAlicharooseh en Hugging Face, se presenta bajo licencia MIT y la etiqueta de región `us`. En el momento de la consulta no registra descargas ni interacciones, y no declara pipeline, idiomas ni arquitectura en los metadatos disponibles.
 
 La model card asociada contiene únicamente la declaración de licencia (`license: mit`), sin información sobre el propósito del artefacto, los datos de entrenamiento ni las capacidades del modelo. El nombre sugiere un contenido relacionado con sistemas de trading algorítmico, pero no hay documentación que lo confirme ni que detalle si se trata de un modelo de lenguaje, un conjunto de datos o pesos entrenados para una tarea financiera concreta.
 
@@ -40,7 +40,7 @@ La model card no incluye secciones de entrenamiento, evaluación ni uso previsto
 
 - Evaluación de artefactos financieros de autoría independiente: el repositorio podría inspeccionarse manualmente para determinar si contiene código, datos o pesos relacionados con trading algorítmico, aunque no hay documentación que lo garantice.
 - Reutilización bajo licencia MIT: al ser MIT, el contenido podría incorporarse a proyectos propios siempre que se conserve el aviso de copyright, previa verificación del contenido real del repositorio.
-- Estudio de publicaciones de HuggingFace sin model card: sirve como ejemplo de repositorio con metadatos mínimos y de los riesgos de adoptar artefactos sin documentación.
+- Estudio de publicaciones de Hugging Face sin model card: sirve como ejemplo de repositorio con metadatos mínimos y de los riesgos de adoptar artefactos sin documentación.
 - Integración condicionada a auditoría previa: cualquier uso en producción requeriría inspeccionar los archivos del repositorio, ya que no hay pipeline ni especificaciones declaradas.
 - Docencia sobre evaluación de modelos: puede emplearse como caso práctico de por qué la ausencia de model card impide valorar un artefacto.
 - No se recomienda su uso en sistemas de trading real, atención al cliente, generación de código ni ninguna otra aplicación sin una verificación técnica exhaustiva previa.
@@ -73,5 +73,5 @@ No disponible. No se conocen modelos comparables porque no se ha identificado la
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/MOHAMMADAlicharooseh/algorithmic-trading-systems-mohammad-charooseh
+- Repositorio en Hugging Face: https://huggingface.co/MOHAMMADAlicharooseh/algorithmic-trading-systems-mohammad-charooseh
 - No se han encontrado papers, blogs, repositorios de código ni demos adicionales en la información disponible.

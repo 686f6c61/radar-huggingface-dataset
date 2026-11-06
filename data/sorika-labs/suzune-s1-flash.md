@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parametros | Idiomas | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| Suzune S1 Flash | 82 M | 8 (en, hi, es, fr, it, pt, ja, zh) | Apache 2.0 | TTS edge, CPU/Apple Silicon | HuggingFace, PyPI |
-| hexgrad/Kokoro-82M | 82 M | no disponible en la información | Apache 2.0 | TTS ligero | HuggingFace |
+| Suzune S1 Flash | 82 M | 8 (en, hi, es, fr, it, pt, ja, zh) | Apache 2.0 | TTS edge, CPU/Apple Silicon | Hugging Face, PyPI |
+| hexgrad/Kokoro-82M | 82 M | no disponible en la información | Apache 2.0 | TTS ligero | Hugging Face |
 | StyleTTS2 | no disponible | no disponible | Apache 2.0 | TTS de alta calidad | Repositorio académico |
 
 La comparación cuantitativa con alternativas no está disponible: no se han publicado métricas de calidad (MOS) ni de latencia comparables entre estos modelos en la información proporcionada. La principal diferencia de Suzune S1 Flash frente a su base Kokoro-82M es el ajuste fino con voces propias, el G2P nativo en devanagari y el motor ONNX cuantizado.
@@ -75,7 +75,7 @@ La comparación cuantitativa con alternativas no está disponible: no se han pub
 - No se han publicado evaluaciones de sesgo; al ser un modelo de voz, puede reproducir sesgos de acento, género o prosodia presentes en los datos de ajuste fino.
 - Riesgo de alucinación en sentido TTS: pronunciación incorrecta de palabras fuera del vocabulario, nombres propios o texto mixto (hinglish) no documentado.
 - La cobertura de idiomas declarada (ocho) no está respaldada por voces documentadas en todos ellos: las voces listadas cubren inglés, hindi, francés, español, italiano y portugués; para japonés y chino no se detallan voces concretas.
-- El campo `inference: false` en la model card indica que la inferencia no está disponible a través del pipeline estándar de HuggingFace; requiere el runtime propio `suzune-flash`.
+- El campo `inference: false` en la model card indica que la inferencia no está disponible a través del pipeline estándar de Hugging Face; requiere el runtime propio `suzune-flash`.
 - La licencia Apache 2.0 permite uso comercial, pero conviene verificar las condiciones de la licencia del modelo base Kokoro-82M y de StyleTTS2, también Apache 2.0 según la información disponible.
 - El modelo tiene solo 12 descargas y 0 likes en el momento de la consulta, lo que indica una validación comunitaria muy limitada; no hay evidencia independiente de la calidad declarada.
 - No se documentan mecanismos de marcas de agua ni de detección de audio sintético, lo que supone un riesgo de uso indebido (suplantación de voz) que debe mitigarse en producción.
@@ -83,7 +83,7 @@ La comparación cuantitativa con alternativas no está disponible: no se han pub
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sorika-labs/suzune-s1-flash
+- Modelo en Hugging Face: https://huggingface.co/sorika-labs/suzune-s1-flash
 - Repositorio ONNX cuantizado: https://huggingface.co/sorika-labs/suzune-s1-flash-gguf
 - Paquete PyPI: https://pypi.org/project/suzune-flash/
 - Modelo base: https://huggingface.co/hexgrad/Kokoro-82M

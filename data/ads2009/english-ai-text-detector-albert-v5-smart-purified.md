@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `ads2009/english-ai-text-detector-albert-v5-smart-purified` es un clasificador de texto basado en la arquitectura ALBERT, publicado en HuggingFace por el usuario `ads2009`. Por su identificador y su pipeline declarado (`text-classification`), su proposito declarado es la deteccion de texto generado por IA en ingles, una tarea de clasificacion binaria que se ha vuelto relevante por la necesidad de filtrar, auditar o moderar contenido sintetico en plataformas editoriales, academicas y de datos.
+El modelo `ads2009/english-ai-text-detector-albert-v5-smart-purified` es un clasificador de texto basado en la arquitectura ALBERT, publicado en Hugging Face por el usuario `ads2009`. Por su identificador y su pipeline declarado (`text-classification`), su proposito declarado es la deteccion de texto generado por IA en ingles, una tarea de clasificacion binaria que se ha vuelto relevante por la necesidad de filtrar, auditar o moderar contenido sintetico en plataformas editoriales, academicas y de datos.
 
 Se trata de un modelo muy pequeno: los pesos en formato safetensors suman 11.685.122 parametros, un orden de magnitud propio de ALBERT base. Ese tamano implica coste de inferencia minimo (decenas de megabytes de pesos), lo que lo hace desplegable en CPU o en GPUs de gama baja con latencia de milisegundos, algo poco habitual en los detectores de texto actuales basados en modelos generativos o en transformers de mayor tamano.
 
-La relevancia de este checkpoint concreto es limitada y debe ponderarse: la model card es la plantilla automatica de HuggingFace sin rellenar, no declara licencia, idiomas ni procedencia de datos, y el repositorio no registra descargas ni valoraciones. Cualquier evaluacion seria exige validar el modelo contra un corpus propio antes de usarlo en produccion.
+La relevancia de este checkpoint concreto es limitada y debe ponderarse: la model card es la plantilla automatica de Hugging Face sin rellenar, no declara licencia, idiomas ni procedencia de datos, y el repositorio no registra descargas ni valoraciones. Cualquier evaluacion seria exige validar el modelo contra un corpus propio antes de usarlo en produccion.
 
 ## Especificaciones tecnicas
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: inferior a 1 GB en cualquier precision. Los pesos en fp32 ocupan aproximadamente 47 MB; en fp16, unos 23 MB; en cuantizacion int8, unos 12 MB. El consumo real lo domina el runtime (PyTorch, ONNX Runtime) mas que el modelo.
 - GPU recomendadas: cualquier GPU con al menos 1-2 GB de memoria. No requiere A100, H100 ni GPU de datacenter.
 - Cabe en GPU de consumo: si, en cualquier GPU consumer moderna (RTX 3060, RTX 4090, GTX 1650 o inferior) e incluso en iGPU y en CPU exclusivamente.
-- Opciones de despliegue: `transformers` con `pipeline("text-classification")`; exportacion a ONNX Runtime y TorchScript para reducir latencia en CPU; servidores de inferencia tipo HuggingFace Text Embeddings Inference o FastAPI con batching; vLLM y llama.cpp no son aplicables porque estan orientados a generacion autoregresiva con pesos GGUF, formato que este repositorio no publica.
+- Opciones de despliegue: `transformers` con `pipeline("text-classification")`; exportacion a ONNX Runtime y TorchScript para reducir latencia en CPU; servidores de inferencia tipo Hugging Face Text Embeddings Inference o FastAPI con batching; vLLM y llama.cpp no son aplicables porque estan orientados a generacion autoregresiva con pesos GGUF, formato que este repositorio no publica.
 - Latencia y throughput estimados: no disponibles. Como referencia de orden de magnitud, un ALBERT base en CPU moderna resuelve secuencias cortas en decenas de milisegundos y cientos de milisegundos por lote; en GPU, en el rango de pocos milisegundos. Estas cifras son estimaciones arquitectonicas, no medidas del checkpoint.
 - Almacenamiento: el tamano del repositorio se declara como 0.0 GB redondeado, coherente con un modelo de este tamano.
 
@@ -66,15 +66,15 @@ No se dispone de resultados de rendimiento de este checkpoint, por lo que cualqu
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ads2009/english-ai-text-detector-albert-v5-smart-purified | 11.685.122 | no disponible | no disponible | no disponible | HuggingFace, 0 descargas, 0 likes |
-| albert-base-v2 (checkpoint base de la familia) | ~11,7 M (mismo orden arquitectonico) | 512 tokens | no disponible en esta ficha | Apache 2.0 segun su propia publicacion | HuggingFace |
-| Detectores de texto IA basados en RoBERTa / DeBERTa | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| ads2009/english-ai-text-detector-albert-v5-smart-purified | 11.685.122 | no disponible | no disponible | no disponible | Hugging Face, 0 descargas, 0 likes |
+| albert-base-v2 (checkpoint base de la familia) | ~11,7 M (mismo orden arquitectonico) | 512 tokens | no disponible en esta ficha | Apache 2.0 segun su propia publicacion | Hugging Face |
+| Detectores de texto IA basados en RoBERTa / DeBERTa | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 La ventaja estructural del modelo frente a detectores basados en RoBERTa o DeBERTa es el coste: un detector RoBERTa base ronda los 125 millones de parametros, aproximadamente diez veces mas que este checkpoint, y exige GPU para lotes grandes en tiempo real. La contrapartida habitual en la familia ALBERT es una capacidad de representacion menor, lo que en deteccion de texto sintetico suele traducirse en menor robustez ante parafraseo, traduccion automatica o ataques adversarios. No hay datos que confirmen o refuten ese comportamiento en este checkpoint concreto.
 
 ## Limitaciones y advertencias
 
-- Model card vacia: la documentacion publicada es la plantilla automatica de HuggingFace, sin informacion sobre datos de entrenamiento, evaluacion, sesgos ni uso previsto. Esto impide auditar el modelo.
+- Model card vacia: la documentacion publicada es la plantilla automatica de Hugging Face, sin informacion sobre datos de entrenamiento, evaluacion, sesgos ni uso previsto. Esto impide auditar el modelo.
 - Licencia no declarada: al no especificarse licencia, no hay autorizacion explicita para uso comercial. En la practica, la ausencia de licencia equivale a reserva de derechos por defecto en muchas jurisdicciones; conviene contactar con el autor antes de un uso productivo.
 - Riesgo de alucinacion no aplica en el sentido generativo, pero si existe riesgo de falsos positivos y falsos negativos: los detectores de texto IA tienen tasas de error elevadas, especialmente sobre texto humano editado, texto de hablantes no nativos de ingles, parafraseo y contenido de dominios especializados.
 - Sesgo linguistico probable: el modelo se presenta como detector para ingles; su comportamiento en castellano u otros idiomas es desconocido y previsiblemente degradado.
@@ -86,7 +86,7 @@ La ventaja estructural del modelo frente a detectores basados en RoBERTa o DeBER
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ads2009/english-ai-text-detector-albert-v5-smart-purified
+- Hugging Face: https://huggingface.co/ads2009/english-ai-text-detector-albert-v5-smart-purified
 - Paper de ALBERT (referenciado en los tags del modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning citada en la model card: https://mlco2.github.io/impact
 - Lacoste et al. (2019), Quantifying the Carbon Emissions of Machine Learning: https://arxiv.org/abs/1910.09700

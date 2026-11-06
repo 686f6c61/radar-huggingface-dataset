@@ -110,7 +110,7 @@ No se dispone de comparativas con alternativas de terceros (parametros, contexto
 
 ## Enlaces
 
-- HuggingFace (adaptador): https://huggingface.co/fechevic/slm-autonomo-lora
+- Hugging Face (adaptador): https://huggingface.co/fechevic/slm-autonomo-lora
 - Modelo base: https://huggingface.co/nvidia/Llama-3.1-Nemotron-Nano-4B-v1.1
 - Licencia NVIDIA Open Model License: https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-open-model-license/
 - No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios o demos.

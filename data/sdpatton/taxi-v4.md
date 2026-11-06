@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Taxi-v4 es un agente de aprendizaje por refuerzo publicado en HuggingFace por el usuario sdpatton. Se trata de una implementación propia de Q-Learning tabular entrenada sobre el entorno Taxi-v3 de Gym/Gymnasium, un problema de juguete (toy text) en el que un taxi debe recoger y dejar pasajeros en una cuadrícula de 5x5 con cuatro ubicaciones posibles. El repositorio forma parte del pipeline `reinforcement-learning` de HuggingFace Hub y su único artefacto es un fichero `q-learning.pkl`.
+Taxi-v4 es un agente de aprendizaje por refuerzo publicado en Hugging Face por el usuario sdpatton. Se trata de una implementación propia de Q-Learning tabular entrenada sobre el entorno Taxi-v3 de Gym/Gymnasium, un problema de juguete (toy text) en el que un taxi debe recoger y dejar pasajeros en una cuadrícula de 5x5 con cuatro ubicaciones posibles. El repositorio forma parte del pipeline `reinforcement-learning` de Hugging Face Hub y su único artefacto es un fichero `q-learning.pkl`.
 
 El modelo no es un modelo de lenguaje ni una red neuronal profunda: no tiene parametros en el sentido habitual, no procesa texto y no dispone de ventana de contexto. Su relevancia es exclusivamente docente y metodológica, como ejemplo mínimo, reproducible y verificable de un agente Q-Learning guardado y distribuido a través del Hub con la librería `huggingface_hub`. El resultado declarado en la model card es una recompensa media de 7,56 +/- 2,71 en Taxi-v3, métrica marcada como no verificada.
 
@@ -38,7 +38,7 @@ Un detalle operativo relevante aparece en la propia model card: al cargar el ent
 
 - Resolución del entorno Taxi-v3: el agente puede ejecutar la tarea de recogida y entrega de pasajeros en la cuadrícula del entorno.
 - Política discreta estado → acción: dado un estado entero del espacio de observación de Taxi-v3, devuelve una de las seis acciones discretas.
-- Serialización y distribución mediante HuggingFace Hub: el artefacto `q-learning.pkl` se carga con `load_from_hub` y se integra en flujos estándar de la librería `huggingface_hub`.
+- Serialización y distribución mediante Hugging Face Hub: el artefacto `q-learning.pkl` se carga con `load_from_hub` y se integra en flujos estándar de la librería `huggingface_hub`.
 - Evaluación con recompensa media: el repositorio incluye un `model-index` con la métrica `mean_reward` y su desviación, lo que permite indexación automática en el Hub.
 - No dispone de: generación de texto, razonamiento simbólico general, capacidades de código, matemáticas, visión, audio, tool calling, function calling, uso como agente multi-paso fuera de Taxi-v3, ni soporte multilingüe.
 
@@ -50,7 +50,7 @@ Un detalle operativo relevante aparece en la propia model card: al cargar el ent
 - Reproducción y auditoría de experimentos: el `model-index` con la métrica y su desviación facilita comprobar la variabilidad del agente y auditar si el resultado declarado es consistente con evaluaciones propias.
 - Validación de entornos estocásticos: el atributo `is_slippery` mencionado en la model card permite estudiar la degradación del rendimiento de una política tabular fija cuando la dinámica del entorno introduce aleatoriedad.
 - Integración en frameworks de despliegue de agentes: puede emplearse como carga de trabajo trivial para validar servidores de inferencia o wrappers que expongan agentes de RL como API, ya que su coste computacional es despreciable.
-- Material de ejemplo en documentación de librerías: útil para ejemplos de `gym.make`, serialización con pickle y publicación de agentes en HuggingFace Hub.
+- Material de ejemplo en documentación de librerías: útil para ejemplos de `gym.make`, serialización con pickle y publicación de agentes en Hugging Face Hub.
 
 ## Benchmarks y rendimiento
 
@@ -77,8 +77,8 @@ No hay datos de rendimiento publicados para alternativas comparables en la infor
 
 | Modelo / enfoque | Tipo | Entorno | Métrica publicada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sdpatton/Taxi-v4 | Q-Learning tabular | Taxi-v3 | mean_reward 7,56 +/- 2,71 (no verificado) | no disponible | HuggingFace Hub |
-| Agentes Q-Learning de la comunidad (HuggingFace Deep RL Course) | Q-Learning tabular | Taxi-v3 | no disponible | no disponible | HuggingFace Hub |
+| sdpatton/Taxi-v4 | Q-Learning tabular | Taxi-v3 | mean_reward 7,56 +/- 2,71 (no verificado) | no disponible | Hugging Face Hub |
+| Agentes Q-Learning de la comunidad (Hugging Face Deep RL Course) | Q-Learning tabular | Taxi-v3 | no disponible | no disponible | Hugging Face Hub |
 | DQN sobre Taxi-v3 (implementaciones varias) | Red neuronal profunda | Taxi-v3 | no disponible | variable según repositorio | GitHub / Hub |
 | PPO sobre Taxi-v3 (implementaciones varias) | Policy gradient | Taxi-v3 | no disponible | variable según repositorio | GitHub / Hub |
 
@@ -97,8 +97,8 @@ No hay datos de rendimiento publicados para alternativas comparables en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sdpatton/Taxi-v4
+- Modelo en Hugging Face: https://huggingface.co/sdpatton/Taxi-v4
 - Documentación del entorno Taxi de Gymnasium (Farama Foundation): https://gymnasium.farama.org/environments/toy_text/taxi/
-- Curso de aprendizaje por refuerzo profundo de HuggingFace, que utiliza Taxi-v3 en sus unidades introductorias: https://huggingface.co/learn/deep-rl-course
+- Curso de aprendizaje por refuerzo profundo de Hugging Face, que utiliza Taxi-v3 en sus unidades introductorias: https://huggingface.co/learn/deep-rl-course
 - Documentación de `huggingface_hub` para `load_from_hub`: https://huggingface.co/docs/huggingface_hub
 - No se han encontrado papers, blogs, repositorios adicionales ni demos asociados a este modelo en la información proporcionada.

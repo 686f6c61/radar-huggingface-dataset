@@ -32,7 +32,7 @@ El entrenamiento sigue un proceso en dos etapas descrito en el paper de MultiWik
 - Detección de alucinaciones a nivel de token en respuestas generadas por sistemas RAG, indicando exactamente qué tokens no están respaldados por el contexto.
 - Clasificación de secuencias (token classification) sobre texto en finlandés, con capacidad de procesar respuestas completas y marcar regiones problemáticas.
 - Evaluación de fidelidad factual de respuestas generadas frente a un contexto de referencia dado.
-- Integración en pipelines de control de calidad de sistemas RAG mediante la librería transformers de HuggingFace.
+- Integración en pipelines de control de calidad de sistemas RAG mediante la librería transformers de Hugging Face.
 - Compatible con endpoints de inferencia (tag `endpoints_compatible`), lo que facilita su despliegue como servicio.
 - No es un modelo generativo: no produce texto, solo etiqueta tokens existentes.
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks específicos para esta variante en 
 - VRAM estimada para inferencia: al tratarse de un modelo de 140 millones de parámetros, la inferencia en FP32 requiere aproximadamente 560 MB de VRAM; en FP16 o cuantización de 8 bits, la cifra baja a unos 280-300 MB.
 - GPU recomendadas: cualquier GPU consumer con al menos 2 GB de VRAM es suficiente, incluyendo NVIDIA GTX 1650, RTX 3060, RTX 4090, o incluso inferencia en CPU con llama.cpp o similar.
 - Cabe en GPUs consumer de gama baja; no requiere hardware de datacenter.
-- Opciones de despliegue: al ser un modelo de transformers estándar, puede servirse con vLLM, HuggingFace TGI, o mediante la API de transformers con `pipeline("token-classification")`. También es compatible con endpoints gestionados (tag `endpoints_compatible`).
+- Opciones de despliegue: al ser un modelo de transformers estándar, puede servirse con vLLM, Hugging Face TGI, o mediante la API de transformers con `pipeline("token-classification")`. También es compatible con endpoints gestionados (tag `endpoints_compatible`).
 - Latencia y throughput: no se dispone de datos publicados; para un modelo de este tamaño, la inferencia en GPU moderna es del orden de milisegundos por secuencia de longitud media.
 
 ## Comparativa con modelos similares
@@ -80,8 +80,8 @@ La comparativa directa con modelos generativos no es trivial, ya que este modelo
 
 ## Enlaces
 
-- [HuggingFace - modelo en finlandes](https://huggingface.co/EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-fi)
-- [HuggingFace - version en ingles](https://huggingface.co/EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-en)
+- [Hugging Face - modelo en finlandes](https://huggingface.co/EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-fi)
+- [Hugging Face - version en ingles](https://huggingface.co/EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-en)
 - [Paper: A multilingual hallucination benchmark: MultiWikiQHalluA (arXiv)](https://arxiv.org/pdf/2605.02504v2)
 - [Paper (version HTML)](https://arxiv.org/html/2605.02504v2)
 - [Resumen del paper en Pith Science](https://pith.science/paper/2605.02504)

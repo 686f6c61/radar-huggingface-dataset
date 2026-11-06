@@ -2,11 +2,11 @@
 
 ## Resumen
 
-gliner2.5-ja-modernbert-310m es un modelo de extraccion de informacion especializado en japones, entrenado por el usuario de HuggingFace tkhshtsh0917 como modelo comunitario no oficial (sin afiliacion con fastino-ai). Se trata de una implementacion de la arquitectura GLiNER2.5 en su variante "boundary", que resuelve un problema concreto: en japones, la segmentacion de texto no esta delimitada por espacios, lo que dificulta el NER y la extraccion estructurada con modelos genericos. Un unico modelo realiza reconocimiento de entidades nombradas, clasificacion de texto, extraccion de relaciones y extraccion estructurada en formato JSON.
+gliner2.5-ja-modernbert-310m es un modelo de extraccion de informacion especializado en japones, entrenado por el usuario de Hugging Face tkhshtsh0917 como modelo comunitario no oficial (sin afiliacion con fastino-ai). Se trata de una implementacion de la arquitectura GLiNER2.5 en su variante "boundary", que resuelve un problema concreto: en japones, la segmentacion de texto no esta delimitada por espacios, lo que dificulta el NER y la extraccion estructurada con modelos genericos. Un unico modelo realiza reconocimiento de entidades nombradas, clasificacion de texto, extraccion de relaciones y extraccion estructurada en formato JSON.
 
 El modelo sustituye el encoder original de GLiNER2.5 por ModernBERT-Ja-310m de SB Intuitions, con 321,9 millones de parametros reales segun los pesos en safetensors. Todas las cabeceras de tarea de GLiNER2 se inicializan desde cero y se entrenan sobre un dataset sintetico japones propietario no publicado, usando el tokenizador por palabras Sudachi (SplitMode.C). Es relevante ahora porque ofrece extraccion de esquemas zero-shot en japones con un modelo pequeno y eficiente, capaz de ejecutarse en CPU.
 
-Existe una familia con dos tamanos: este modelo de 310m (mayor precision) y una variante 130m (mas ligera, orientada a CPU y edge). Ambos forman parte de la coleccion "GLiNER2.5 Japanese" en HuggingFace, con una demo en un Space para probarlos desde el navegador.
+Existe una familia con dos tamanos: este modelo de 310m (mayor precision) y una variante 130m (mas ligera, orientada a CPU y edge). Ambos forman parte de la coleccion "GLiNER2.5 Japanese" en Hugging Face, con una demo en un Space para probarlos desde el navegador.
 
 ## Especificaciones tecnicas
 
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos; la elecc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tkhshtsh0917/gliner2.5-ja-modernbert-310m
+- Modelo en Hugging Face: https://huggingface.co/tkhshtsh0917/gliner2.5-ja-modernbert-310m
 - Modelo base (encoder): https://huggingface.co/sbintuitions/modernbert-ja-310m
 - Variante 130m: https://huggingface.co/tkhshtsh0917/gliner2.5-ja-modernbert-130m
 - Coleccion GLiNER2.5 Japanese: https://huggingface.co/collections/tkhshtsh0917/gliner25-japanese

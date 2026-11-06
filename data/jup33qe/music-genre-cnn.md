@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Jup33QE/music-genre-cnn es un checkpoint de PyTorch para clasificación de géneros musicales mediante redes neuronales convolucionales (CNN). El modelo fue originalmente distribuido dentro del repositorio [VrchStudio/comfyui-web-viewer](https://github.com/VrchStudio/comfyui-web-viewer) en la ruta `assets/models/music_genre_cnn.pth`, y ha sido espejado en HuggingFace para facilitar su descarga directa. Se trata de un artefacto de inferencia, no de un modelo fundacional, y su propósito es etiquetar automáticamente el género de una pista de audio.
+Jup33QE/music-genre-cnn es un checkpoint de PyTorch para clasificación de géneros musicales mediante redes neuronales convolucionales (CNN). El modelo fue originalmente distribuido dentro del repositorio [VrchStudio/comfyui-web-viewer](https://github.com/VrchStudio/comfyui-web-viewer) en la ruta `assets/models/music_genre_cnn.pth`, y ha sido espejado en Hugging Face para facilitar su descarga directa. Se trata de un artefacto de inferencia, no de un modelo fundacional, y su propósito es etiquetar automáticamente el género de una pista de audio.
 
 La relevancia de este modelo radica en su integración con ecosistemas de generación de imágenes y flujos de trabajo creativos, donde la clasificación de audio puede servir como entrada para condicionar procesos posteriores. Sin embargo, la información pública disponible es muy limitada: no se documentan detalles de arquitectura, datos de entrenamiento ni métricas de rendimiento. El repositorio tiene cero descargas y cero likes, lo que sugiere que es un artefacto de nicho más que un modelo ampliamente adoptado.
 
@@ -66,7 +66,7 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- [HuggingFace: Jup33QE/music-genre-cnn](https://huggingface.co/Jup33QE/music-genre-cnn)
+- [Hugging Face: Jup33QE/music-genre-cnn](https://huggingface.co/Jup33QE/music-genre-cnn)
 - [Repositorio original: VrchStudio/comfyui-web-viewer](https://github.com/VrchStudio/comfyui-web-viewer)
 - [Articulo de Nature sobre clasificacion de generos con CNN paralelas](https://www.nature.com/articles/s41598-025-90619-7)
 - [Proyecto GitHub: ronnie-allen/Music-Genre-Classification-with-CNN](https://github.com/ronnie-allen/Music-Genre-Classification-with-CNN)

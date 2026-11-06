@@ -102,8 +102,8 @@ El modelo ATM2 supera a sus competidores directos en el promedio de benchmarks, 
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/AzeerDev/Arabic-Triplet-Matryoshka-V2
-- HuggingFace (pagina alternativa del mismo modelo): https://huggingface.co/Omartificial-Intelligence-Space/Arabic-Triplet-Matryoshka-V2
+- Hugging Face (modelo): https://huggingface.co/AzeerDev/Arabic-Triplet-Matryoshka-V2
+- Hugging Face (pagina alternativa del mismo modelo): https://huggingface.co/Omartificial-Intelligence-Space/Arabic-Triplet-Matryoshka-V2
 - Paper (arXiv): https://huggingface.co/papers/2505.24581
 - Dataset de entrenamiento: https://huggingface.co/datasets/akhooli/arabic-triplets-1m-curated-sims-len
 - Modelo base: https://huggingface.co/aubmindlab/bert-base-arabertv02

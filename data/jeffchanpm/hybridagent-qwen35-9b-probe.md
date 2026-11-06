@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks estándar ni de comparaciones con otros ada
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jeffchanpm/HybridAgent-qwen35-9b-probe
+- Repositorio en Hugging Face: https://huggingface.co/jeffchanpm/HybridAgent-qwen35-9b-probe
 - Licencia (LICENSING.md): https://huggingface.co/jeffchanpm/HybridAgent-qwen35-9b-probe/blob/main/LICENSING.md
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Dataset de entrenamiento: https://huggingface.co/datasets/togethercomputer/HybridAgent-HybridSFT-v1

@@ -73,7 +73,7 @@ La informacion proporcionada no incluye datos de rendimiento ni especificaciones
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Rootformer v14.2 Sovereign Transmute | 399.371.824 | no disponible | aynengine-uni-prishtina-academic | HuggingFace, safetensors, requiere custom_code |
+| Rootformer v14.2 Sovereign Transmute | 399.371.824 | no disponible | aynengine-uni-prishtina-academic | Hugging Face, safetensors, requiere custom_code |
 | Alternativas arabes basadas en BPE (Jais, Fanar, AceGPT, AraBERT y similares) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | requieren verificacion en sus repositorios oficiales |
 
 ## Limitaciones y advertencias
@@ -91,6 +91,6 @@ La informacion proporcionada no incluye datos de rendimiento ni especificaciones
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/enver/rootformer-v14-sovereign-transmute
+- Modelo en Hugging Face: https://huggingface.co/enver/rootformer-v14-sovereign-transmute
 - Fichero de licencia del repositorio: https://huggingface.co/enver/rootformer-v14-sovereign-transmute/blob/main/LICENSE
 - Los resultados de busqueda web no contienen ningun enlace relevante al modelo, a papers, a repositorios auxiliares ni a demos; el contenido devuelto es ajeno por completo al ambito de la IA. Por tanto, no se dispone de enlaces adicionales verificables.

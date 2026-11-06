@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Meghan es un ajuste fino conversacional de Qwen3-4B publicado por el usuario sauceyy909 en HuggingFace, concebido como un «compañero de clase» virtual para ayudar a estudiar. El modelo parte del checkpoint cuantizado en 4 bits de Unsloth (`unsloth/Qwen3-4B-unsloth-bnb-4bit`) y se entrena con QLoRA sobre un corpus propio de 1.403 ejemplos de chat, de los cuales aproximadamente la mitad provienen del catálogo público de cursos de un instituto de secundaria estadounidense (que el autor mantiene anónimo) y el resto son walkthroughs de resolución de problemas, conversación casual y tareas de grounding sobre contexto de página.
+Meghan es un ajuste fino conversacional de Qwen3-4B publicado por el usuario sauceyy909 en Hugging Face, concebido como un «compañero de clase» virtual para ayudar a estudiar. El modelo parte del checkpoint cuantizado en 4 bits de Unsloth (`unsloth/Qwen3-4B-unsloth-bnb-4bit`) y se entrena con QLoRA sobre un corpus propio de 1.403 ejemplos de chat, de los cuales aproximadamente la mitad provienen del catálogo público de cursos de un instituto de secundaria estadounidense (que el autor mantiene anónimo) y el resto son walkthroughs de resolución de problemas, conversación casual y tareas de grounding sobre contexto de página.
 
 El resultado es un modelo denso de 4.022 millones de parámetros que conoce títulos, códigos, créditos, temas y prerrequisitos del catálogo de ese centro concreto, además de políticas habituales de clase, y que explica matemáticas y ciencias paso a paso con un tono informal orientado a adolescentes. Su relevancia es acotada pero interesante como caso de estudio: muestra un pipeline de especialización vertical muy barato (QLoRA de 3 épocas sobre 1.262 ejemplos de entrenamiento) con auditoría programática de la aritmética y separación explícita entre datos públicos y datos privados.
 
@@ -58,14 +58,14 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para GGUF Q4_K_M: aproximadamente 2,4 GB de pesos; cabe con holgura en GPUs consumer de 6-8 GB (RTX 3060, RTX 4060, RTX 2070) y en portátiles con 8 GB de VRAM compartida.
 - GPUs recomendadas: RTX 4090, L40S, A100 o H100 para despliegue en bf16 con concurrencia; RTX 3060/4060 o superiores para el GGUF cuantizado.
 - Cabe en GPU consumer: sí, especialmente en la variante Q4_K_M; la versión bf16 requiere 16 GB o más.
-- Opciones de despliegue: transformers (el autor incluye snippet con `device_map="auto"` y `bfloat16`), vLLM para los safetensors fusionados, llama.cpp y Ollama para el GGUF (`ollama run sauceyy909/Meghan:Q4_K_M`), Jan. El tag `endpoints_compatible` sugiere compatibilidad con inference endpoints de HuggingFace. Soporte de TGI no documentado.
+- Opciones de despliegue: transformers (el autor incluye snippet con `device_map="auto"` y `bfloat16`), vLLM para los safetensors fusionados, llama.cpp y Ollama para el GGUF (`ollama run sauceyy909/Meghan:Q4_K_M`), Jan. El tag `endpoints_compatible` sugiere compatibilidad con inference endpoints de Hugging Face. Soporte de TGI no documentado.
 - Latencia y throughput estimados: no disponible (el autor no publica mediciones).
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Meghan (este modelo) | 4,02 B | no disponible en la card (base Qwen3-4B: 32.768) | Catalogo escolar concreto + resolucion paso a paso | qwen-research-license (declarada) | HuggingFace, 0 descargas |
+| Meghan (este modelo) | 4,02 B | no disponible en la card (base Qwen3-4B: 32.768) | Catalogo escolar concreto + resolucion paso a paso | qwen-research-license (declarada) | Hugging Face, 0 descargas |
 | Qwen3-4B / Qwen3-4B-Instruct | 4,02 B | 32.768 nativos (extensible con YaRN en la familia Qwen3) | Proposito general, multilingue, tool calling | Apache 2.0 en los modelos pequenos de la familia | Ampliamente disponible |
 | Phi-4-mini | ~3,8 B | 128.000 (familia Phi-4-mini) | Razonamiento y matematicas, ingle-solo en algunas variantes | MIT | Ampliamente disponible |
 | Llama 3.2 3B Instruct | 3,21 B | 128.000 | Proposito general, multilingue | Llama 3.2 Community License | Ampliamente disponible |
@@ -90,7 +90,7 @@ Nota: los datos de contexto y licencia de las alternativas corresponden a sus fi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sauceyy909/Meghan
+- Modelo en Hugging Face: https://huggingface.co/sauceyy909/Meghan
 - Modelo base utilizado para el entrenamiento: https://huggingface.co/unsloth/Qwen3-4B-unsloth-bnb-4bit
 - Modelo base original de la familia: https://huggingface.co/Qwen/Qwen3-4B
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

@@ -1,7 +1,7 @@
 # s-sahoo/uno-qwen3-8B
 
 ## Resumen
-El modelo `s-sahoo/uno-qwen3-8B` es un adaptador LoRA (PEFT) publicado por el usuario s-sahoo, diseñado para ajustar el modelo base `IFM/uno-qwen3-8b-base`. Este modelo base parece ser una variante de la familia Qwen3-8B, con modificaciones orientadas a técnicas de difusión aplicadas al lenguaje y decodificación especulativa, según los tags del repositorio. El adaptador se distribuye con licencia Apache-2.0 y acceso restringido (gated) en HuggingFace, lo que implica que los usuarios deben aceptar condiciones adicionales antes de descargarlo.
+El modelo `s-sahoo/uno-qwen3-8B` es un adaptador LoRA (PEFT) publicado por el usuario s-sahoo, diseñado para ajustar el modelo base `IFM/uno-qwen3-8b-base`. Este modelo base parece ser una variante de la familia Qwen3-8B, con modificaciones orientadas a técnicas de difusión aplicadas al lenguaje y decodificación especulativa, según los tags del repositorio. El adaptador se distribuye con licencia Apache-2.0 y acceso restringido (gated) en Hugging Face, lo que implica que los usuarios deben aceptar condiciones adicionales antes de descargarlo.
 
 La relevancia de este modelo radica en su posible uso como una alternativa de ajuste fino sobre Qwen3-8B, aprovechando las capacidades de generación de texto, razonamiento y código de la familia Qwen, con el añadido de un mecanismo de decodificación especulativa que podría acelerar la inferencia. Sin embargo, la documentación pública es escasa y no se proporcionan detalles técnicos sobre el entrenamiento, los datos utilizados ni los benchmarks, lo que limita una evaluación rigurosa.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 La comparativa se limita a Qwen3-8B original, ya que es el modelo base más probable. El adaptador no añade información pública que permita diferenciarlo de su base. Llama 3.1 8B se incluye como alternativa de tamaño similar, pero no hay datos para comparar rendimiento.
 
 ## Limitaciones y advertencias
-- Acceso restringido: el modelo requiere aceptar condiciones adicionales en HuggingFace, lo que puede ser un obstáculo para su uso inmediato.
+- Acceso restringido: el modelo requiere aceptar condiciones adicionales en Hugging Face, lo que puede ser un obstáculo para su uso inmediato.
 - Documentación inexistente: no hay model card, ni papers, ni instrucciones de uso. Esto impide conocer el propósito exacto del adaptador y sus limitaciones.
 - Sesgos y alucinaciones: al heredar las características de Qwen3-8B, es probable que presente sesgos similares a los de su base, pero no se ha evaluado específicamente.
 - Riesgo de alucinación: sin benchmarks ni evaluaciones, no se puede cuantificar el riesgo, aunque es inherente a los LLM.
@@ -70,6 +70,6 @@ La comparativa se limita a Qwen3-8B original, ya que es el modelo base más prob
 - Producción: no se recomienda su uso en entornos productivos sin una evaluación exhaustiva, dado el desconocimiento sobre su entrenamiento y rendimiento.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/s-sahoo/uno-qwen3-8B
+- Repositorio Hugging Face: https://huggingface.co/s-sahoo/uno-qwen3-8B
 - Modelo base (referenciado): https://huggingface.co/IFM/uno-qwen3-8b-base (no verificado)
 - Modelo original Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B

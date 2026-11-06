@@ -76,7 +76,7 @@ Nota: los datos de comparación provienen del conocimiento general y no de bench
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/ldov/Qwen2.5-3B-Instruct
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/ldov/Qwen2.5-3B-Instruct
 - Modelo base original: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Blog oficial de Qwen2.5: https://qwenlm.github.io/blog/qwen2.5/
 - Repositorio GitHub de Qwen2.5: https://github.com/QwenLM/Qwen2.5

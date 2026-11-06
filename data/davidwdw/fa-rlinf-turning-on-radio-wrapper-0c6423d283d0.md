@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El artefacto publicado en HuggingFace con el identificador `davidwdw/fa-rlinf-turning-on-radio-wrapper-0c6423d283d0` no es un modelo de lenguaje, sino un paquete de archivado versionado ("versioned fleet archive") asociado a la receta de aprendizaje por refuerzo `historical_centre_rlinf_ppo_turning_on_radio`. Segun su propia model card, el paquete corresponde al nivel "wrapper": incluye README, ficheros de configuracion, scripts, ficheros de control, logs y un `env.sh`, y de forma explicita se indica que no contiene payload, es decir, no incluye pesos ni artefactos de modelo entrenados.
+El artefacto publicado en Hugging Face con el identificador `davidwdw/fa-rlinf-turning-on-radio-wrapper-0c6423d283d0` no es un modelo de lenguaje, sino un paquete de archivado versionado ("versioned fleet archive") asociado a la receta de aprendizaje por refuerzo `historical_centre_rlinf_ppo_turning_on_radio`. Segun su propia model card, el paquete corresponde al nivel "wrapper": incluye README, ficheros de configuracion, scripts, ficheros de control, logs y un `env.sh`, y de forma explicita se indica que no contiene payload, es decir, no incluye pesos ni artefactos de modelo entrenados.
 
 El autor del repositorio es el usuario `davidwdw`, sin organizacion identificada, y el artefacto no registra descargas ni interacciones en el momento de la consulta. La receta referenciada pertenece al ecosistema RLinf, una infraestructura de aprendizaje por refuerzo orientada a IA encarnada (embodied AI) y agentes, cuyo algoritmo PPO aparece nombrado en el identificador de la receta. La utilidad del paquete es, por tanto, de trazabilidad y reproducibilidad de experimentos, no de inferencia.
 
@@ -75,15 +75,15 @@ No disponible. El artefacto no es un modelo, sino un paquete de configuracion y 
 
 | Elemento | Tipo | Contenido | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `davidwdw/fa-rlinf-turning-on-radio-wrapper-0c6423d283d0` | Paquete wrapper de receta RL | README, configs, scripts, control, logs, `env.sh` (sin payload) | no disponible | HuggingFace, 0 descargas |
+| `davidwdw/fa-rlinf-turning-on-radio-wrapper-0c6423d283d0` | Paquete wrapper de receta RL | README, configs, scripts, control, logs, `env.sh` (sin payload) | no disponible | Hugging Face, 0 descargas |
 | RLinf (GitHub oficial) | Infraestructura de aprendizaje por refuerzo | Framework para IA encarnada y agentes | no disponible en la informacion proporcionada | https://github.com/RLinf/RLinf |
-| RLinf (perfil de HuggingFace) | Organizacion | Repositorios de la organizacion | no disponible | https://huggingface.co/RLinf/models |
+| RLinf (perfil de Hugging Face) | Organizacion | Repositorios de la organizacion | no disponible | https://huggingface.co/RLinf/models |
 | Fork `leary-poken/RLinf` | Fork del framework | Copia del proyecto RLinf | no disponible | https://github.com/leary-poken/RLinf |
 
 ## Limitaciones y advertencias
 
 - No es un modelo utilizable: el paquete declara explicitamente "no payload", por lo que no puede cargarse con transformers, vLLM, llama.cpp ni ninguna otra herramienta de inferencia.
-- Ausencia total de metadatos: no hay licencia, idiomas, pipeline ni tamano declarados en la ficha de HuggingFace, lo que impide evaluar condiciones de uso comercial o redistribucion.
+- Ausencia total de metadatos: no hay licencia, idiomas, pipeline ni tamano declarados en la ficha de Hugging Face, lo que impide evaluar condiciones de uso comercial o redistribucion.
 - Riesgo de confundir el artefacto con un modelo entrenado: el nombre incluye "rlinf" y "radio", terminos que pueden inducir a error; conviene tratarlo como archivo de configuracion.
 - Dependencia de una revision concreta: el autor advierte que es un snapshot y no un espejo en vivo, de modo que si no se fija la revision exacta y se validan las sumas SHA256, la reproducibilidad no esta garantizada.
 - Trazabilidad incompleta: sin los pesos ni el entorno de simulacion de la tarea, los logs y configs no permiten reproducir resultados de politica por si solos.
@@ -93,9 +93,9 @@ No disponible. El artefacto no es un modelo, sino un paquete de configuracion y 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-rlinf-turning-on-radio-wrapper-0c6423d283d0
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-rlinf-turning-on-radio-wrapper-0c6423d283d0
 - RLinf, repositorio oficial en GitHub: https://github.com/RLinf/RLinf
-- RLinf, perfil de organizacion en HuggingFace: https://huggingface.co/RLinf/models
+- RLinf, perfil de organizacion en Hugging Face: https://huggingface.co/RLinf/models
 - Fork de RLinf en GitHub: https://github.com/leary-poken/RLinf
 - Receta canonica referenciada (no se ha encontrado URL publica): `historical_centre_rlinf_ppo_turning_on_radio`
 - Paper o blog tecnico del modelo: no disponible

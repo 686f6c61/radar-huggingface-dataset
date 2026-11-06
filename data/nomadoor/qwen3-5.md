@@ -2,7 +2,7 @@
 
 ## Resumen
 
-nomadoor/Qwen3.5 es un repositorio de HuggingFace publicado por el usuario nomadoor que contiene pesos cuantizados, no un modelo entrenado desde cero. En concreto, ofrece dos conversiones del fichero `text_encoders/qwen3.5_4b_bf16.safetensors` distribuido por Comfy-Org/Qwen3.5, cuyo modelo base declarado es Qwen/Qwen3.5-4B. El propósito es servir como text encoder en flujos de ComfyUI reduciendo el consumo de VRAM y el ancho de banda de memoria frente a la versión bf16 original.
+nomadoor/Qwen3.5 es un repositorio de Hugging Face publicado por el usuario nomadoor que contiene pesos cuantizados, no un modelo entrenado desde cero. En concreto, ofrece dos conversiones del fichero `text_encoders/qwen3.5_4b_bf16.safetensors` distribuido por Comfy-Org/Qwen3.5, cuyo modelo base declarado es Qwen/Qwen3.5-4B. El propósito es servir como text encoder en flujos de ComfyUI reduciendo el consumo de VRAM y el ancho de banda de memoria frente a la versión bf16 original.
 
 El repositorio incluye dos ficheros: `qwen3.5_4b_int8_convrot` (int8 ConvRot, grupos de 256 con escalas por fila) y `qwen3.5_4b_fp8_scaled` (fp8 e4m3fn con escala por tensor). El autor recomienda la variante int8 por mantenerse más cerca de bf16. Solo se cuantizan las capas lineales del modelo de lenguaje; los embeddings, las normalizaciones, el codificador de visión y la cabeza MTP permanecen en bf16, todo ello en el formato `comfy_quant` de ComfyUI.
 
@@ -26,7 +26,7 @@ La relevancia es práctica: el modelo base ronda los 4.000 millones de parámetr
 | Partes no cuantizadas | embeddings, normalizaciones, codificador de visión y cabeza MTP (bf16) |
 | Ubicación de uso | `ComfyUI/models/text_encoders` |
 | Descargas / likes | 0 / 0 |
-| Fecha de creación en HuggingFace | 2026-09-29 |
+| Fecha de creación en Hugging Face | 2026-09-29 |
 
 ## Arquitectura y entrenamiento
 

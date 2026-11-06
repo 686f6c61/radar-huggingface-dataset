@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo AnonymousCS/antielite_classifier_bsample_011_s43 es un clasificador basado en la arquitectura BERT publicado en HuggingFace por el usuario AnonymousCS. Se trata de un repositorio de tipo safetensors con un total de 177.854.978 parametros, lo que lo situa por encima de un BERT-base estandar (110M) y por debajo de un BERT-large (340M), lo que apunta a una configuracion intermedia o a una variante con cabecera de clasificacion. El identificador del repositorio sugiere que forma parte de una familia de experimentos, probablemente una muestra o semilla concreta dentro de una bateria de entrenamientos.
+El modelo AnonymousCS/antielite_classifier_bsample_011_s43 es un clasificador basado en la arquitectura BERT publicado en Hugging Face por el usuario AnonymousCS. Se trata de un repositorio de tipo safetensors con un total de 177.854.978 parametros, lo que lo situa por encima de un BERT-base estandar (110M) y por debajo de un BERT-large (340M), lo que apunta a una configuracion intermedia o a una variante con cabecera de clasificacion. El identificador del repositorio sugiere que forma parte de una familia de experimentos, probablemente una muestra o semilla concreta dentro de una bateria de entrenamientos.
 
-El problema que resuelve es, segun el propio nombre del modelo, una tarea de clasificacion (classifier) de texto, posiblemente relacionada con la deteccion o etiquetado de contenido "antielite". No obstante, la ficha de HuggingFace no incluye informacion sobre la tarea exacta, el dataset de entrenamiento, las etiquetas de salida ni la metrica objetivo, por lo que cualquier afirmacion al respecto seria especulativa.
+El problema que resuelve es, segun el propio nombre del modelo, una tarea de clasificacion (classifier) de texto, posiblemente relacionada con la deteccion o etiquetado de contenido "antielite". No obstante, la ficha de Hugging Face no incluye informacion sobre la tarea exacta, el dataset de entrenamiento, las etiquetas de salida ni la metrica objetivo, por lo que cualquier afirmacion al respecto seria especulativa.
 
 Su relevancia actual es limitada por el momento: acumula 6 descargas y 0 likes, no declara licencia, idiomas ni pipeline, y el repositorio ocupa 0,7 GB. Es, por tanto, un artefacto de investigacion con trazabilidad publica escasa, util para quien quiera inspeccionar los pesos o reproducir un experimento concreto, pero no un modelo listo para produccion sin validacion previa.
 
@@ -83,9 +83,9 @@ No se dispone de datos de rendimiento del modelo, por lo que la comparativa se l
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento comparado |
 |---|---|---|---|---|---|
-| antielite_classifier_bsample_011_s43 | 177.854.978 | no disponible | no disponible | HuggingFace, repo de 0,7 GB, 6 descargas | no disponible |
-| bert-base-uncased | 110M (dato de conocimiento general) | 512 tokens | Apache 2.0 | HuggingFace, ampliamente distribuido | no disponible para una comparacion directa |
-| bert-large-uncased | 340M (dato de conocimiento general) | 512 tokens | Apache 2.0 | HuggingFace, ampliamente distribuido | no disponible para una comparacion directa |
+| antielite_classifier_bsample_011_s43 | 177.854.978 | no disponible | no disponible | Hugging Face, repo de 0,7 GB, 6 descargas | no disponible |
+| bert-base-uncased | 110M (dato de conocimiento general) | 512 tokens | Apache 2.0 | Hugging Face, ampliamente distribuido | no disponible para una comparacion directa |
+| bert-large-uncased | 340M (dato de conocimiento general) | 512 tokens | Apache 2.0 | Hugging Face, ampliamente distribuido | no disponible para una comparacion directa |
 | Modelos de clasificacion de la familia RoBERTa | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 
 No es posible establecer una comparacion de calidad o rendimiento sin benchmarks publicados ni una descripcion de la tarea.
@@ -103,6 +103,6 @@ No es posible establecer una comparacion de calidad o rendimiento sin benchmarks
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AnonymousCS/antielite_classifier_bsample_011_s43
+- Hugging Face: https://huggingface.co/AnonymousCS/antielite_classifier_bsample_011_s43
 
 No se han encontrado en la informacion proporcionada otros enlaces relevantes (papers, blogs, repositorios de codigo o demos) asociados a este modelo.

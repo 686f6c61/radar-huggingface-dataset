@@ -6,7 +6,7 @@ Este repositorio no contiene un modelo completo, sino un adaptador LoRA entrenad
 
 La relevancia de la ficha es doble. Por un lado, es un ejemplo típico de adaptador clínico de bajo coste: se apoya en un modelo base de 8.000 millones de parámetros, 4.096 dimensiones de representación y una ventana de contexto de 131.072 tokens (128K), y añade conocimiento de dominio mediante un único epoch de fine-tuning. Por otro, su huella es mínima (0,3 GB en el repositorio) frente a los aproximadamente 16 GB del modelo base en precisión completa, lo que lo hace desplegable sobre GPUs de consumo con cuantización de 4 bits. El repo tiene 0 descargas y 0 likes, no declara pipeline y no incluye métricas de evaluación.
 
-Hay que subrayar que se trata de un artefacto experimental sin validación publicada: no se han facilitado benchmarks, no se especifican el rango del adaptador ni los módulos objetivo, y existe una discrepancia entre el nombre del repositorio (`..._epoch2`) y la model card, que indica "Total Epochs: 1". La licencia declarada en la tarjeta es la Licencia Comunitaria de Llama 3.1 de Meta, aunque el campo de licencia en los metadatos de HuggingFace aparece como no disponible.
+Hay que subrayar que se trata de un artefacto experimental sin validación publicada: no se han facilitado benchmarks, no se especifican el rango del adaptador ni los módulos objetivo, y existe una discrepancia entre el nombre del repositorio (`..._epoch2`) y la model card, que indica "Total Epochs: 1". La licencia declarada en la tarjeta es la Licencia Comunitaria de Llama 3.1 de Meta, aunque el campo de licencia en los metadatos de Hugging Face aparece como no disponible.
 
 ## Especificaciones técnicas
 
@@ -18,7 +18,7 @@ Hay que subrayar que se trata de un artefacto experimental sin validación publi
 | Longitud de contexto | 131.072 tokens (128K) según la model card |
 | Tipos de cuantizacion | 4 bits NF4 con doble cuantización vía `bitsandbytes` (ejemplo oficial de la model card); otras cuantizaciones del modelo base: no disponibles |
 | Idiomas soportados | en (inglés), declarado en la model card |
-| Licencia | llama3.1 (Licencia Comunitaria de Llama 3.1 de Meta, según la model card); el campo de licencia de HuggingFace indica "no disponible" |
+| Licencia | llama3.1 (Licencia Comunitaria de Llama 3.1 de Meta, según la model card); el campo de licencia de Hugging Face indica "no disponible" |
 | Formato de pesos | safetensors (adaptador PEFT); requiere el modelo base `meta-llama/Llama-3.1-8B-Instruct` |
 | Tamano del repositorio | 0,3 GB |
 | Dimension oculta | 4096 |
@@ -87,14 +87,14 @@ La búsqueda web realizada no devolvió resultados relacionados con este modelo 
 - Sin validación: 0 descargas, 0 likes, ausencia de benchmarks y de evaluación clínica. No hay evidencia publicada de su calidad frente al modelo base.
 - Discrepancia en la configuración: el nombre del repositorio indica `epoch2` mientras la model card declara 1 epoch; conviene verificar qué checkpoint se está usando.
 - Documentación incompleta: la model card se corta en los hiperparámetros (warmup steps), no indica rango del LoRA, módulos objetivo, número de tokens de entrenamiento ni composición exacta del dataset.
-- Licencia: aunque la tarjeta menciona la Licencia Comunitaria de Llama 3.1, los metadatos de HuggingFace no declaran licencia. El uso comercial queda sujeto a los términos de Meta y a la aceptación de su acuerdo; conviene revisarlos antes de cualquier despliegue en producción.
+- Licencia: aunque la tarjeta menciona la Licencia Comunitaria de Llama 3.1, los metadatos de Hugging Face no declaran licencia. El uso comercial queda sujeto a los términos de Meta y a la aceptación de su acuerdo; conviene revisarlos antes de cualquier despliegue en producción.
 - Sesgos: no se documenta ningún análisis de sesgos, representatividad demográfica ni mitigación de sesgos clínicos.
 - Producción: no hay información sobre estabilidad, latencia, throughput ni comportamiento con contextos largos (128K) más allá de la especificación teórica del modelo base.
 - Uso clínico directo: no debe emplearse para decisiones diagnósticas o terapéuticas sin supervisión profesional; el propio autor lo plantea como apoyo a preguntas y generación dentro de RAG.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vab46/llama-3.1-8b-instruct-lora-clinical_iter2_epoch2
+- Modelo en Hugging Face: https://huggingface.co/vab46/llama-3.1-8b-instruct-lora-clinical_iter2_epoch2
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Dataset de entrenamiento citado en la model card: https://huggingface.co/vab46/llama-3.1-8b-instruct-lora-clinical_iter2/tree/main/vab46/Clinical_trials_anchor-contextORpositive-ground-truth_LLM_LORA-junk_handled_ft
 - Repositorio del adaptador relacionado: https://huggingface.co/vab46/llama-3.1-8b-instruct-lora-clinical_iter2

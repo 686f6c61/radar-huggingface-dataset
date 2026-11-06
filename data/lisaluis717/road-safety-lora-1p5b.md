@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`lisaluis717/road-safety-lora-1p5b` es un adaptador LoRA de tipo SFT (supervised fine-tuning) publicado en HuggingFace por el usuario `lisaluis717`, entrenado sobre el modelo base `Qwen/Qwen2.5-1.5B-Instruct`. No se trata de un modelo completo, sino de un conjunto de pesos de adaptación de bajo rango que deben cargarse junto al modelo base mediante la librería PEFT (version 0.21.2 segun la model card, entrenado con TRL). El repositorio ocupa aproximadamente 0,1 GB, lo que es coherente con un adaptador y no con un checkpoint completo.
+`lisaluis717/road-safety-lora-1p5b` es un adaptador LoRA de tipo SFT (supervised fine-tuning) publicado en Hugging Face por el usuario `lisaluis717`, entrenado sobre el modelo base `Qwen/Qwen2.5-1.5B-Instruct`. No se trata de un modelo completo, sino de un conjunto de pesos de adaptación de bajo rango que deben cargarse junto al modelo base mediante la librería PEFT (version 0.21.2 segun la model card, entrenado con TRL). El repositorio ocupa aproximadamente 0,1 GB, lo que es coherente con un adaptador y no con un checkpoint completo.
 
 El objetivo declarado se deduce unicamente del nombre del repositorio ("road-safety"), es decir, un ajuste orientado al dominio de seguridad vial. La model card es una plantilla sin rellenar: no documenta el conjunto de datos, los hiperparametros de entrenamiento, el rango de LoRA, la licencia ni los idiomas. Por tanto, cualquier afirmacion sobre su comportamiento real en dominio debe considerarse no verificada hasta que el autor publique documentacion o se realice una evaluacion independiente.
 

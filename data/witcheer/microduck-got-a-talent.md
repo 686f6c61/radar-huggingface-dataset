@@ -84,7 +84,7 @@ No se dispone de información sobre otras políticas publicadas para Microduck n
 
 | Modelo | Robot | Observación / acción | Frecuencia | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `witcheer/microduck-got-a-talent` | Microduck | 61 / 14 | 50 Hz | Apache-2.0 | HuggingFace, ONNX |
+| `witcheer/microduck-got-a-talent` | Microduck | 61 / 14 | 50 Hz | Apache-2.0 | Hugging Face, ONNX |
 | Otras políticas microduck | Microduck | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -96,11 +96,11 @@ No se dispone de información sobre otras políticas publicadas para Microduck n
 - **Sin soporte de lenguaje ni percepción**: no procesa texto, visión ni audio; no es apta para tareas cognitivas.
 - **Riesgo en producción**: al ser una política perpetua sin validación física, su uso en entornos no controlados puede provocar comportamientos no deseados o daños al robot.
 - **Licencia**: Apache-2.0 permite uso comercial, pero debe conservarse el aviso de licencia y no se ofrece garantía alguna.
-- **Idiomas**: no aplica; la ficha de HuggingFace no declara idiomas.
+- **Idiomas**: no aplica; la ficha de Hugging Face no declara idiomas.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/witcheer/microduck-got-a-talent
+- Modelo en Hugging Face: https://huggingface.co/witcheer/microduck-got-a-talent
 - Repositorio microduck (Pollen Robotics): https://github.com/pollen-robotics/microduck
 - Repositorio microduck_rl: https://github.com/pollen-robotics/microduck_rl
 - Repositorio de tareas microduck-challenges: https://github.com/pollen-robotics/microduck-challenges

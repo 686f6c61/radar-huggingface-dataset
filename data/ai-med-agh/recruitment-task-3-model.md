@@ -114,7 +114,7 @@ La unica comparacion documentada es interna al propio experimento de reclutamien
 
 | Modelo | Parametros | Contexto / entrada | Macro-F1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AI-MED-AGH/Recruitment-Task-3-Model (brazo defectuoso) | 23.881 | Imagen 128x128, 1 canal | 0,2066 | Apache 2.0 | Publicado en HuggingFace |
+| AI-MED-AGH/Recruitment-Task-3-Model (brazo defectuoso) | 23.881 | Imagen 128x128, 1 canal | 0,2066 | Apache 2.0 | Publicado en Hugging Face |
 | Brazo de referencia RGB del mismo experimento | no disponible | Imagen 128x128, RGB | 0,2153 | no disponible | Checkpoint no publicado |
 | Predictor trivial de solo clase 8 | 0 | no aplicable | 0,0760 | no aplicable | Referencia calculada en la model card |
 
@@ -138,7 +138,7 @@ Alternativas de la misma categoria (por ejemplo, ResNet, EfficientNet o MobileNe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AI-MED-AGH/Recruitment-Task-3-Model
+- Modelo en Hugging Face: https://huggingface.co/AI-MED-AGH/Recruitment-Task-3-Model
 - Dataset asociado: https://huggingface.co/datasets/AI-MED-AGH/Recruitment-Task-3
 - Repositorio original de DeepWeeds: https://github.com/AlexOlsen/DeepWeeds
 - Paper: Olsen et al., DeepWeeds. El identificador DOI aparece truncado en la informacion disponible (https://doi.), por lo que no se puede citar completo.

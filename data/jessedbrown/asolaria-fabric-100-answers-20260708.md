@@ -90,7 +90,7 @@ No disponible. Este repositorio es un paquete de evidencias y no un modelo, por 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jessedbrown/asolaria-fabric-100-answers-20260708
+- Hugging Face: https://huggingface.co/Jessedbrown/asolaria-fabric-100-answers-20260708
 - Endpoint referenciado en la model card: http://192.168.1.17:4944/health
 - Artefactos internos citados: `artifacts/asolaria-fabric-100-answers-20260708T092203Z.hbp`, `artifacts/asolaria-fabric-100-answers-20260708T092203Z.hbi`, `sidecars/*.sha256`, `ledger/edit-token-ledger.hbp`, `ledger/edit-token-ledger.hbi`
 - Papers, blogs, repos o demos adicionales: no disponibles. La busqueda web realizada no devolvio resultados relacionados con este repositorio.

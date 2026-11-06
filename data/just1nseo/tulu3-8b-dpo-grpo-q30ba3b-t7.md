@@ -75,6 +75,6 @@ El modelo se diferencia de su base por el entrenamiento adicional con GRPO, pero
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/just1nseo/tulu3-8b-dpo-grpo-q30ba3b-t7
+- Repositorio Hugging Face: https://huggingface.co/just1nseo/tulu3-8b-dpo-grpo-q30ba3b-t7
 - Framework verl: https://github.com/volcengine/verl
 - Modelo base Tulu 3 8B DPO: https://huggingface.co/allenai/Llama-3.1-Tulu-3-8B-DPO

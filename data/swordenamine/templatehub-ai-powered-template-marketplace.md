@@ -79,7 +79,7 @@ No hay modelos comparables en la información disponible, porque el artefacto no
 
 | Alternativa | Enfoque | Generación con IA | Pago integrado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TemplateHub (este repositorio) | Aplicación Flask completa con catálogo, carrito y panel de administración | Sí, vía API de DeepSeek | Sí, Stripe Checkout | No disponible | Pública en HuggingFace, 0 descargas |
+| TemplateHub (este repositorio) | Aplicación Flask completa con catálogo, carrito y panel de administración | Sí, vía API de DeepSeek | Sí, Stripe Checkout | No disponible | Pública en Hugging Face, 0 descargas |
 | Script propio con python-pptx / openpyxl | Automatización de documentos sin capa web | No | No | Depende de las librerías | Requiere desarrollo propio |
 | Uso directo del SDK de DeepSeek | Llamada a la API sin empaquetar | Sí | No | Depende del proveedor | Inmediata, sin catálogo ni entrega |
 | Plataformas SaaS de plantillas | Producto cerrado con editor y mercado | Parcial, según proveedor | Sí | Propietaria | Comercial, sujeta a suscripción |
@@ -101,5 +101,5 @@ No hay modelos comparables en la información disponible, porque el artefacto no
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/swordenamine/TemplateHub-AI-Powered-Template-Marketplace
+- Repositorio en Hugging Face: https://huggingface.co/swordenamine/TemplateHub-AI-Powered-Template-Marketplace
 - No se han encontrado en la búsqueda web papers, blogs, repositorios auxiliares ni demos relacionados con este proyecto; los resultados obtenidos eran foros y sitios sin relación y se han descartado.

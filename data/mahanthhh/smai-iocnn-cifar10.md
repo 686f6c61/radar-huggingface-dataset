@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto / entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| smai-iocnn-cifar10 | 402.250 | 32x32x3 | Clasificación CIFAR-10 | no disponible | HuggingFace (0 descargas) |
+| smai-iocnn-cifar10 | 402.250 | 32x32x3 | Clasificación CIFAR-10 | no disponible | Hugging Face (0 descargas) |
 | MLP estándar para CIFAR-10 | no disponible | 32x32x3 | Clasificación CIFAR-10 | no disponible | No se ha identificado un modelo comparable concreto en la información disponible |
 | CNN pequeña para CIFAR-10 | no disponible | 32x32x3 | Clasificación CIFAR-10 | no disponible | No se ha identificado un modelo comparable concreto en la información disponible |
 
@@ -83,5 +83,5 @@ No se dispone de información suficiente para establecer una comparativa cuantit
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Mahanthhh/smai-iocnn-cifar10
+- Hugging Face: https://huggingface.co/Mahanthhh/smai-iocnn-cifar10
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

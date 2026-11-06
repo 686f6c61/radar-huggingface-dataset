@@ -21,8 +21,8 @@ Su relevancia practica es limitada y muy especifica: no es un modelo de proposit
 | Licencia | no disponible en la ficha; el modelo base Qwen2.5-3B-Instruct se distribuye bajo licencia Apache 2.0 |
 | Formato de pesos | GGUF (fichero `qwen2.5-3b-instruct.F16.gguf`); tambien existen safetensors en el repositorio base del mismo autor |
 | Tamano del repositorio | 19,0 GB |
-| Fecha de creacion | 2026-09-23 (segun metadatos de HuggingFace) |
-| Fecha de actualizacion | 2026-09-23 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-23 (segun metadatos de Hugging Face) |
+| Fecha de actualizacion | 2026-09-23 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -95,7 +95,7 @@ No hay datos de rendimiento de este finetune que permitan una comparacion cuanti
 
 ## Enlaces
 
-- Modelo en HuggingFace (GGUF): https://huggingface.co/RRNicole1014/Qwen2.5-3B-Instruct-Profesor-Albus-Dumbledore-gguf
+- Modelo en Hugging Face (GGUF): https://huggingface.co/RRNicole1014/Qwen2.5-3B-Instruct-Profesor-Albus-Dumbledore-gguf
 - Version en safetensors del mismo autor: https://huggingface.co/RRNicole1014/Qwen2.5-3B-Instruct-Profesor-Albus-Dumbledore
 - Modelo base Qwen2.5-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Repositorio de la familia Qwen2.5: https://github.com/QwenLM/Qwen2.5

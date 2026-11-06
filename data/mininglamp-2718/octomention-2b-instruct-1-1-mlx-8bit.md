@@ -21,7 +21,7 @@ El modelo se presenta como un asistente conversacional en inglés, con capacidad
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion publica sobre la arquitectura interna del modelo. La etiqueta `qwen3_5` en HuggingFace sugiere que podria derivar de la familia Qwen, pero no hay confirmacion oficial. El modelo es de tipo image-text-to-text, lo que implica un codificador visual (probablemente un ViT) combinado con un decodificador de lenguaje, aunque los detalles concretos (atencion, capas, dimensiones) no estan documentados.
+No se dispone de informacion publica sobre la arquitectura interna del modelo. La etiqueta `qwen3_5` en Hugging Face sugiere que podria derivar de la familia Qwen, pero no hay confirmacion oficial. El modelo es de tipo image-text-to-text, lo que implica un codificador visual (probablemente un ViT) combinado con un decodificador de lenguaje, aunque los detalles concretos (atencion, capas, dimensiones) no estan documentados.
 
 Tampoco se han publicado datos sobre el proceso de entrenamiento: numero de tokens, composicion del dataset, uso de RLHF o DPO, o cualquier innovacion tecnica. La unica informacion disponible es que se trata de una version instruct afinada para tareas conversacionales y que ha sido convertida a MLX con cuantizacion de 8 bits, probablemente mediante el script de conversion de MLX.
 
@@ -69,8 +69,8 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mininglamp-2718/OctoMention-2B-Instruct-1.1-MLX-8bit
+- Modelo en Hugging Face: https://huggingface.co/Mininglamp-2718/OctoMention-2B-Instruct-1.1-MLX-8bit
 - Version 1.0 del modelo: https://huggingface.co/Mininglamp-2718/OctoMention-2B-Instruct-1.0-MLX-8bit
-- Perfil de la organizacion en HuggingFace: https://huggingface.co/Mininglamp-2718
+- Perfil de la organizacion en Hugging Face: https://huggingface.co/Mininglamp-2718
 - Repositorio de Mininglamp en GitHub: https://github.com/orgs/Mininglamp-AI/repositories
 - Proyecto OctoASR (relacionado con el ecosistema Octo): https://github.com/Mininglamp-AI/OctoASR

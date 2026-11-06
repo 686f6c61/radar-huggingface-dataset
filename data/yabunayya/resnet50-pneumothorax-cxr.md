@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Yabunayya/resnet50-pneumothorax-cxr` es un clasificador binario de imagenes de radiografia de torax desarrollado por el usuario de HuggingFace Yabunayya. El modelo distingue entre estudios normales y estudios con neumotorax, partiendo de una ResNet50 preentrenada en ImageNet y ajustada fina sobre la version PNG del dataset SIIM-ACR Pneumothorax (publicado en Kaggle por vbookshelf). Resuelve un problema de cribado: la deteccion temprana de neumotorax en radiografias de torax, una tarea en la que el volumen de estudios desborda la capacidad de lectura radiologica.
+`Yabunayya/resnet50-pneumothorax-cxr` es un clasificador binario de imagenes de radiografia de torax desarrollado por el usuario de Hugging Face Yabunayya. El modelo distingue entre estudios normales y estudios con neumotorax, partiendo de una ResNet50 preentrenada en ImageNet y ajustada fina sobre la version PNG del dataset SIIM-ACR Pneumothorax (publicado en Kaggle por vbookshelf). Resuelve un problema de cribado: la deteccion temprana de neumotorax en radiografias de torax, una tarea en la que el volumen de estudios desborda la capacidad de lectura radiologica.
 
 Tecnicamente es una CNN convolucional clasica de 23,56 millones de parametros, sin atencion ni componentes transformer, con entrada de 512x512 pixeles en escala de grises replicada a tres canales y normalizacion ImageNet. El repositorio es pequeno (0,2 GB) e incluye pesos en safetensors y una exportacion ONNX que devuelve probabilidad y un mapa de activacion de 16x16.
 
@@ -69,7 +69,7 @@ No se han publicado comparaciones con otros modelos en la informacion disponible
 
 | Modelo | Parametros | Entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Yabunayya/resnet50-pneumothorax-cxr | 23,56 M | 512x512, 1 canal | Neumotorax binario | no disponible | HuggingFace (safetensors, ONNX) |
+| Yabunayya/resnet50-pneumothorax-cxr | 23,56 M | 512x512, 1 canal | Neumotorax binario | no disponible | Hugging Face (safetensors, ONNX) |
 | ResNet50 ImageNet (torchvision) | 25,56 M | 224x224, 3 canales | 1000 clases generales | BSD-3-Clause (torchvision) | torchvision |
 | EfficientNet-B0 ImageNet (torchvision) | 5,29 M | 224x224, 3 canales | 1000 clases generales | BSD-3-Clause (torchvision) | torchvision |
 
@@ -88,7 +88,7 @@ No se dispone de datos de benchmarks de alternativas especificas para neumotorax
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Yabunayya/resnet50-pneumothorax-cxr
+- Modelo en Hugging Face: https://huggingface.co/Yabunayya/resnet50-pneumothorax-cxr
 - Dataset SIIM-ACR Pneumothorax (version PNG): https://www.kaggle.com/datasets/vbookshelf/pneumothorax-chest-xray-images-and-masks
 - ResNet50 en torchvision: https://pytorch.org/vision/stable/models/resnet.html
 - Documentacion de safetensors: https://github.com/huggingface/safetensors

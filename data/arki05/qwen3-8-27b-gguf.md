@@ -118,7 +118,7 @@ Frente a los cuantizados de Unsloth, este repositorio reporta entre un 16 % y un
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Arki05/Qwen3.8-27B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Arki05/Qwen3.8-27B-GGUF
 - Repositorio de shards (todos los tensores en todos los tipos): https://huggingface.co/Arki05/Qwen3.8-27B-GGUF-shards
 - Aplicación qalloc para construir cualquier tamaño en el navegador: https://qalloc.arki05.com
 - Página del proyecto qalloc: https://arki05.com/projects/qalloc/

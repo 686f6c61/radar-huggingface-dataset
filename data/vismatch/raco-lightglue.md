@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Raco-lightglue es un modelo de vision por computador publicado en HuggingFace por el usuario vismatch, etiquetado con las tareas de image-matching, keypoint-detection y feature-matching. No es un modelo de lenguaje: su ambito es la correspondencia de puntos clave entre imagenes, es decir, el emparejamiento de caracteristicas locales para tareas de vision geometrica como la estimacion de pose relativa, la reconstruccion 3D o el registro de imagenes.
+Raco-lightglue es un modelo de vision por computador publicado en Hugging Face por el usuario vismatch, etiquetado con las tareas de image-matching, keypoint-detection y feature-matching. No es un modelo de lenguaje: su ambito es la correspondencia de puntos clave entre imagenes, es decir, el emparejamiento de caracteristicas locales para tareas de vision geometrica como la estimacion de pose relativa, la reconstruccion 3D o el registro de imagenes.
 
-La model card publicada es minima: unicamente incluye metadatos (library_name: vismatch, licencia apache-2.0 y las tres etiquetas de tarea) y una linea que remite al repositorio https://github.com/gmberton/vismatch para conocer el uso. No se documentan en HuggingFace ni la arquitectura, ni el numero de parametros, ni el dataset de entrenamiento, ni resultados de evaluacion.
+La model card publicada es minima: unicamente incluye metadatos (library_name: vismatch, licencia apache-2.0 y las tres etiquetas de tarea) y una linea que remite al repositorio https://github.com/gmberton/vismatch para conocer el uso. No se documentan en Hugging Face ni la arquitectura, ni el numero de parametros, ni el dataset de entrenamiento, ni resultados de evaluacion.
 
-La relevancia del modelo radica en su integracion en la libreria vismatch y en su licencia permisiva (apache-2.0), que permite uso comercial sin restricciones adicionales declaradas. El repositorio figura sin descargas y sin likes en el momento de la consulta, y la fecha de creacion registrada en HuggingFace es el 14 de octubre de 2026, por lo que se trata de una publicacion practicamente sin traccion ni validacion externa por parte de la comunidad.
+La relevancia del modelo radica en su integracion en la libreria vismatch y en su licencia permisiva (apache-2.0), que permite uso comercial sin restricciones adicionales declaradas. El repositorio figura sin descargas y sin likes en el momento de la consulta, y la fecha de creacion registrada en Hugging Face es el 14 de octubre de 2026, por lo que se trata de una publicacion practicamente sin traccion ni validacion externa por parte de la comunidad.
 
 ## Especificaciones tecnicas
 
@@ -23,8 +23,8 @@ La relevancia del modelo radica en su integracion en la libreria vismatch y en s
 | Tarea declarada | keypoint-detection, image-matching, feature-matching |
 | Libreria de integracion | vismatch |
 | Autor | vismatch |
-| Descargas en HuggingFace | 0 |
-| Likes en HuggingFace | 0 |
+| Descargas en Hugging Face | 0 |
+| Likes en Hugging Face | 0 |
 | Fecha de creacion (HF) | 2026-10-14 |
 | Fecha de ultima actualizacion (HF) | 2026-10-14 |
 | Region declarada | region:us |
@@ -37,7 +37,7 @@ Tampoco hay datos sobre el proceso de entrenamiento: numero de imagenes o pares 
 
 ## Capacidades
 
-- Deteccion de puntos clave (keypoint detection) en imagenes, segun la etiqueta de pipeline declarada en HuggingFace.
+- Deteccion de puntos clave (keypoint detection) en imagenes, segun la etiqueta de pipeline declarada en Hugging Face.
 - Emparejamiento de caracteristicas locales entre pares de imagenes (feature matching).
 - Correspondencia de imagenes (image matching), orientada a establecer correspondencias punto a punto entre dos vistas de una misma escena.
 - Integracion con la libreria vismatch, que es el unico mecanismo de uso documentado por el autor.
@@ -79,7 +79,7 @@ No se dispone de datos de parametros, contexto (no aplica) ni rendimiento de rac
 
 | Modelo | Tarea | Parametros | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| vismatch/raco-lightglue | keypoint detection, feature matching | no disponible | apache-2.0 | HuggingFace, 0 descargas |
+| vismatch/raco-lightglue | keypoint detection, feature matching | no disponible | apache-2.0 | Hugging Face, 0 descargas |
 | Alternativas de emparejamiento disperso (familia SuperGlue / LightGlue) | feature matching | no disponible en la informacion proporcionada | no disponible | no disponible |
 | Alternativas de emparejamiento denso (familia LoFTR) | feature matching | no disponible en la informacion proporcionada | no disponible | no disponible |
 | Alternativas de deteccion de puntos clave (familia SuperPoint / DISK) | keypoint detection | no disponible en la informacion proporcionada | no disponible | no disponible |
@@ -91,7 +91,7 @@ No se han encontrado en la busqueda web enlaces, papers ni repositorios que perm
 Limitaciones:
 
 - Ausencia total de documentacion tecnica: no hay informacion sobre arquitectura, datos de entrenamiento, dominio de aplicacion previsto ni metricas, lo que impide evaluar su idoneidad para produccion.
-- Sin validacion externa: cero descargas y cero likes en HuggingFace en el momento de la consulta; no hay evidencia de uso por terceros.
+- Sin validacion externa: cero descargas y cero likes en Hugging Face en el momento de la consulta; no hay evidencia de uso por terceros.
 - Riesgo de alucinacion: no aplica en el sentido de generacion de texto, pero si existe riesgo de correspondencias falsas (outliers) entre puntos clave, un comportamiento intrinseco a los matchers de caracteristicas que requiere etapas de filtrado robusto (RANSAC o similares) aguas abajo.
 - Sesgos conocidos: no disponible. Al no conocerse el dataset de entrenamiento, no se puede caracterizar el sesgo hacia dominios concretos (interiores, escenas urbanas, imagenes aereas, etc.).
 - Limitaciones de idioma: no aplica.
@@ -101,7 +101,7 @@ Limitaciones:
 
 Enlaces:
 
-- HuggingFace: https://huggingface.co/vismatch/raco-lightglue
+- Hugging Face: https://huggingface.co/vismatch/raco-lightglue
 - Repositorio de la libreria de uso (unico enlace citado por el autor): https://github.com/gmberton/vismatch
 - Paper, blog o demo del modelo: no disponible.
 - Resultados de busqueda web relevantes: no se han encontrado. Las busquedas realizadas no devolvieron ninguna fuente relacionada con el modelo, la libreria vismatch ni su autor.

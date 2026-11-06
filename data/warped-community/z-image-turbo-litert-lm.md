@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparado (calidad, latencia, memoria) ent
 
 ## Enlaces
 
-- HuggingFace (este repositorio): https://huggingface.co/warped-community/Z-Image-Turbo-litert-lm
+- Hugging Face (este repositorio): https://huggingface.co/warped-community/Z-Image-Turbo-litert-lm
 - Fuente de la conversion: https://huggingface.co/litert-community/Z-Image-Turbo-LiteRT
 - README de la fuente LiteRT: https://huggingface.co/litert-community/Z-Image-Turbo-LiteRT/blob/main/README.md
 - Modelo base: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo

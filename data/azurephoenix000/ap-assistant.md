@@ -77,7 +77,7 @@ No se dispone de datos de benchmarks que permitan comparar rendimiento con Whisp
 
 ## Limitaciones y advertencias
 
-- No es un modelo: el repositorio contiene únicamente instaladores de Windows. No hay pesos descargables, ni API, ni pipeline de HuggingFace declarado.
+- No es un modelo: el repositorio contiene únicamente instaladores de Windows. No hay pesos descargables, ni API, ni pipeline de Hugging Face declarado.
 - Solo se conservan las 3 versiones más recientes del instalador, lo que impide la reproducibilidad de despliegues anteriores.
 - Licencia `other` sin texto visible: no se aclaran los términos de uso comercial, redistribución ni modificación. Verificar antes de cualquier uso en producción.
 - Componentes de terceros con licencias distintas: Parakeet TDT 0.6B v2 exige atribución (CC BY 4.0); las condiciones de Zipformer Kroko y Silero VAD no se detallan en la información disponible.
@@ -90,6 +90,6 @@ No se dispone de datos de benchmarks que permitan comparar rendimiento con Whisp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/azurephoenix000/ap-assistant
+- Hugging Face: https://huggingface.co/azurephoenix000/ap-assistant
 - Resultados de búsqueda web: no se ha encontrado ningún enlace relacionado con este repositorio. Los resultados devueltos corresponden a otros proyectos de nombre parecido (Azure-Samples/azureai-assistant-tool, Azure-Samples/azureai-samples, documentación de Microsoft Power Apps y Azure OpenAI) y no documentan AP Assistant ni su pila ASR.
 - Repositorios de los componentes (sherpa-onnx, Zipformer Kroko, NVIDIA Parakeet TDT 0.6B v2, Silero VAD): mencionados en la model card, pero sin URL proporcionada en la información disponible.

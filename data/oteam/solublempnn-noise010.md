@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SolubleMPNN es una implementación no oficial del modelo ProteinMPNN, publicada por el equipo de OFoldX (OTeam) en HuggingFace, especializada en el diseño de secuencias de proteínas solubles condicionado a un esqueleto (backbone) fijo. Se trata de una red neuronal de paso de mensajes (message-passing neural network) autoregresiva que resuelve la tarea de *inverse folding*: dada una estructura tridimensional de proteína, genera secuencias de aminoácidos plausibles que se plieguen en esa geometría. La variante aquí descrita incorpora un ruido de entrenamiento de 0,10 Å sobre las coordenadas del backbone.
+SolubleMPNN es una implementación no oficial del modelo ProteinMPNN, publicada por el equipo de OFoldX (OTeam) en Hugging Face, especializada en el diseño de secuencias de proteínas solubles condicionado a un esqueleto (backbone) fijo. Se trata de una red neuronal de paso de mensajes (message-passing neural network) autoregresiva que resuelve la tarea de *inverse folding*: dada una estructura tridimensional de proteína, genera secuencias de aminoácidos plausibles que se plieguen en esa geometría. La variante aquí descrita incorpora un ruido de entrenamiento de 0,10 Å sobre las coordenadas del backbone.
 
 El modelo es relevante porque el diseño computacional de proteínas es una de las aplicaciones más maduras del aprendizaje profundo en biología estructural. ProteinMPNN, publicado originalmente en *Science* en 2022 por el grupo de David Baker, se ha convertido en una herramienta de referencia en la comunidad. Esta implementación de OFoldX empaqueta el modelo en la librería `ofoldx`, con pipelines listos para diseño y puntuación de secuencias, lo que reduce la fricción de integración en flujos de trabajo de diseño de proteínas.
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Backbone | Ruido de entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SolubleMPNN (este) | 1,674 M | N, CA, C, O | 0,10 Å | AGPL-3.0 | HuggingFace (oteam) |
-| ProteinMPNN (oteam) | 1,674 M | N, CA, C, O | 0,02 / 0,10 / 0,20 / 0,30 Å | AGPL-3.0 | HuggingFace (oteam) |
-| ProteinMPNN CA-only (oteam) | 1,642 M | CA | 0,02 / 0,10 / 0,20 Å | AGPL-3.0 | HuggingFace (oteam) |
+| SolubleMPNN (este) | 1,674 M | N, CA, C, O | 0,10 Å | AGPL-3.0 | Hugging Face (oteam) |
+| ProteinMPNN (oteam) | 1,674 M | N, CA, C, O | 0,02 / 0,10 / 0,20 / 0,30 Å | AGPL-3.0 | Hugging Face (oteam) |
+| ProteinMPNN CA-only (oteam) | 1,642 M | CA | 0,02 / 0,10 / 0,20 Å | AGPL-3.0 | Hugging Face (oteam) |
 | ProteinMPNN oficial (dauparas) | ~1,7 M | N, CA, C, O | 0,02 / 0,10 / 0,20 / 0,30 Å | MIT (repo original) | GitHub |
 
 La diferencia principal entre SolubleMPNN y ProteinMPNN estándar es el conjunto de entrenamiento: la variante soluble prioriza proteínas solubles, lo que puede traducirse en secuencias con mejor comportamiento en expresión heteróloga. La variante CA-only reduce la información geométrica de entrada a un único átomo por residuo, lo que la hace más adecuada cuando solo se dispone de trazas CA (por ejemplo, de predicciones de baja resolución). No se dispone de datos de benchmarks comparativos en la información proporcionada.
@@ -84,7 +84,7 @@ La diferencia principal entre SolubleMPNN y ProteinMPNN estándar es el conjunto
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oteam/solublempnn-noise010
+- Modelo en Hugging Face: https://huggingface.co/oteam/solublempnn-noise010
 - Variante base SolubleMPNN: https://huggingface.co/oteam/solublempnn
 - Variantes de ruido: https://huggingface.co/oteam/solublempnn-noise002, https://huggingface.co/oteam/solublempnn-noise020, https://huggingface.co/oteam/solublempnn-noise030
 - ProteinMPNN estándar (oteam): https://huggingface.co/oteam/proteinmpnn

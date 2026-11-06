@@ -67,7 +67,7 @@ No hay mas datos comparables en la informacion proporcionada. Se recomienda cons
 
 ## Limitaciones y advertencias
 
-- Los metadatos de HuggingFace no incluyen la licencia. La model card remite a la licencia del modelo original BAAI/bge-reranker-v2-m3, pero esta no aparece explicitamente en el repositorio. Antes de usar el modelo en produccion, es obligatorio verificar la licencia en el repositorio original.
+- Los metadatos de Hugging Face no incluyen la licencia. La model card remite a la licencia del modelo original BAAI/bge-reranker-v2-m3, pero esta no aparece explicitamente en el repositorio. Antes de usar el modelo en produccion, es obligatorio verificar la licencia en el repositorio original.
 - No se incluyen exports FP16, por lo que el uso de memoria es mayor que en versiones cuantizadas. Esto puede ser un factor limitante en entornos con VRAM reducida.
 - La model card no especifica los idiomas soportados ni la longitud de contexto. La documentacion externa de BGE lo recomienda para uso multilingue, pero no hay una lista concreta en este repositorio.
 - No se aportan resultados de benchmarks ni evaluaciones en este repositorio, por lo que el rendimiento relativo debe verificarse con datos del modelo original.
@@ -77,6 +77,6 @@ No hay mas datos comparables en la informacion proporcionada. Se recomienda cons
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/beclab/bge-reranker-v2-m3
+- Repositorio Hugging Face: https://huggingface.co/beclab/bge-reranker-v2-m3
 - Modelo original de referencia: https://huggingface.co/BAAI/bge-reranker-v2-m3
 - Documentacion de la serie BGE-Reranker-v2: https://bge-model.com/bge/bge_reranker_v2.html

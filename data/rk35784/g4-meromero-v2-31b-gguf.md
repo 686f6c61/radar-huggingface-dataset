@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente sobre otros finetunes de Gemma 4 31B con caracteristicas comparables. El modelo base Gemma 4 31B de Google es la referencia directa, pero no se han publicado diferencias de rendimiento especificas del finetune frente al original. Otras alternativas como Mistral 7B o Llama 3.1 8B son de menor tamano y no comparables directamente. Se recomienda consultar el modelo base en HuggingFace para obtener benchmarks del Gemma 4 31B original.
+No se dispone de informacion suficiente sobre otros finetunes de Gemma 4 31B con caracteristicas comparables. El modelo base Gemma 4 31B de Google es la referencia directa, pero no se han publicado diferencias de rendimiento especificas del finetune frente al original. Otras alternativas como Mistral 7B o Llama 3.1 8B son de menor tamano y no comparables directamente. Se recomienda consultar el modelo base en Hugging Face para obtener benchmarks del Gemma 4 31B original.
 
 ## Limitaciones y advertencias
 

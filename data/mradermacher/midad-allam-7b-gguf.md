@@ -2,7 +2,7 @@
 
 ## Resumen
 
-midad-allam-7b-GGUF es la version cuantizada en formato GGUF del modelo itsdevruba/midad-allam-7b, publicada por mradermacher, un autor conocido en HuggingFace por generar y distribuir cuantizaciones estaticas de modelos abiertos. El modelo original es un ajuste fino de 7.000.559.616 parametros orientado al arabe (codigo ISO `ar`), con etiquetas que lo vinculan a los dominios de educacion, narracion de historias (*storytelling*), y a la familia ALLaM y al evento Arabathon. La relevancia de este repositorio no esta en un nuevo modelo base, sino en facilitar la ejecucion local del modelo original en hardware de consumo mediante cuantizaciones de 2 a 16 bits por peso.
+midad-allam-7b-GGUF es la version cuantizada en formato GGUF del modelo itsdevruba/midad-allam-7b, publicada por mradermacher, un autor conocido en Hugging Face por generar y distribuir cuantizaciones estaticas de modelos abiertos. El modelo original es un ajuste fino de 7.000.559.616 parametros orientado al arabe (codigo ISO `ar`), con etiquetas que lo vinculan a los dominios de educacion, narracion de historias (*storytelling*), y a la familia ALLaM y al evento Arabathon. La relevancia de este repositorio no esta en un nuevo modelo base, sino en facilitar la ejecucion local del modelo original en hardware de consumo mediante cuantizaciones de 2 a 16 bits por peso.
 
 El repositorio contiene 11 cuantizaciones GGUF que van desde Q2_K (2,8 GB) hasta f16 (14,1 GB), e incluye las variantes recomendadas Q4_K_M (4,4 GB) y Q4_K_S (4,1 GB). Todas ellas son cuantizaciones estaticas: el autor indica que no hay cuantizaciones ponderadas con imatrix disponibles en el momento de la publicacion. El repositorio completo ocupa 62,2 GB, aunque el usuario solo necesita descargar el archivo de la cuantizacion que vaya a utilizar.
 
@@ -104,7 +104,7 @@ Los resultados de la busqueda web no aportaron informacion sobre modelos compara
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/midad-allam-7b-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/midad-allam-7b-GGUF
 - Modelo base: https://huggingface.co/itsdevruba/midad-allam-7b
 - Pagina de resumen de cuantizaciones del autor: https://hf.tst.eu/model#midad-allam-7b-GGUF
 - Guia de uso de GGUF de TheBloke (referenciada en la model card): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

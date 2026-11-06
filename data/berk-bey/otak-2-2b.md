@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Otak-2-2b es un modelo de lenguaje publicado por el usuario Berk-Bey en HuggingFace, construido a partir de google/gemma-2-2b-it como modelo base. Por las etiquetas del repositorio (gguf, base_model:quantized:google/gemma-2-2b-it) y por el tamano del repositorio (1,7 GB frente a los aproximadamente 5,2 GB que ocuparian los pesos en FP16), se trata con alta probabilidad de una version cuantizada en formato GGUF del Gemma 2 2B instruct, posiblemente con algun ajuste o renombrado posterior, si bien la model card no documenta ningun proceso de entrenamiento adicional.
+Otak-2-2b es un modelo de lenguaje publicado por el usuario Berk-Bey en Hugging Face, construido a partir de google/gemma-2-2b-it como modelo base. Por las etiquetas del repositorio (gguf, base_model:quantized:google/gemma-2-2b-it) y por el tamano del repositorio (1,7 GB frente a los aproximadamente 5,2 GB que ocuparian los pesos en FP16), se trata con alta probabilidad de una version cuantizada en formato GGUF del Gemma 2 2B instruct, posiblemente con algun ajuste o renombrado posterior, si bien la model card no documenta ningun proceso de entrenamiento adicional.
 
 El modelo declara soporte para turco (tr) e ingles (en) y se distribuye bajo la licencia Gemma, heredada del modelo base. Su interes practico esta en el nicho de la inferencia local: con 2.614.341.888 parametros, es un candidato razonable para ejecutarse en GPU de consumo e incluso en CPU mediante llama.cpp u Ollama, en escenarios donde no se dispone de hardware de datacenter.
 
@@ -37,7 +37,7 @@ El modelo base Gemma 2 2B-it fue ajustado con tecnicas de alineamiento tipo RLHF
 - Generacion y explicacion de codigo en lenguajes habituales, con calidad limitada por el tamano del modelo.
 - Aritmetica y problemas matematicos de complejidad baja o media, con riesgo apreciable de error en cadenas de varios pasos.
 - Soporte multilingue restringido a los dos idiomas declarados (tr, en); no se declara cobertura de castellano.
-- Compatibilidad con endpoints de inferencia (etiqueta endpoints_compatible) para despliegue mediante la infraestructura de HuggingFace.
+- Compatibilidad con endpoints de inferencia (etiqueta endpoints_compatible) para despliegue mediante la infraestructura de Hugging Face.
 - Vineta no confirmada: no hay evidencia en la informacion disponible de soporte de tool calling, function calling nativo, modo thinking, capacidades de vision o audio, ni de uso como agente en razonamiento multi-paso. El modelo base Gemma 2 no incorpora tool calling nativo, por lo que su uso agentico exigiria envoltorios externos de parsing.
 
 ## Casos de uso
@@ -60,15 +60,15 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - Estimacion de VRAM para inferencia, segun el peso de los pesos en disco: aproximadamente 5,2 GB en FP16, unos 2,8 GB en Q8_0 y en torno a 1,7 GB en cuantizaciones de 4 bits como Q4_K_M (valor coherente con el tamano del repositorio). A estas cifras hay que sumar el espacio de la cache KV, que crece con la longitud de contexto y el numero de secuencias simultaneas.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de memoria efectiva para cuantizaciones de 4 bits (RTX 3050, GTX 1650, RTX 4060); para FP16 se recomienda un minimo de 8 GB (RTX 3060 Ti, RTX 4060 Ti, RTX 3070). En entornos profesionales, una A100 o H100 solo tendria sentido para servir muchas replicas en paralelo, dado el reducido tamano del modelo.
 - Cabe en GPU de consumo: si, en practicamente toda la gama actual y en bastantes modelos antiguos con al menos 4 GB de VRAM, siempre que se use una cuantizacion de 4 bits.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio y servidores compatibles con GGUF; para versiones sin cuantizar, vLLM o TGI. La etiqueta endpoints_compatible sugiere compatibilidad con los endpoints de inferencia de HuggingFace.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y servidores compatibles con GGUF; para versiones sin cuantizar, vLLM o TGI. La etiqueta endpoints_compatible sugiere compatibilidad con los endpoints de inferencia de Hugging Face.
 - Latencia y throughput estimados: no disponible. No hay mediciones publicadas de tokens por segundo ni de latencia en el repositorio.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Otak-2-2b | 2,6 mil millones | no confirmado (8K en el base) | Gemma | GGUF en HuggingFace | Cuantizacion sin documentar de Gemma 2 2B-it |
-| google/gemma-2-2b-it | 2,6 mil millones | 8192 tokens | Gemma | Pesos oficiales en HuggingFace | Modelo de referencia del que deriva Otak-2-2b |
+| Otak-2-2b | 2,6 mil millones | no confirmado (8K en el base) | Gemma | GGUF en Hugging Face | Cuantizacion sin documentar de Gemma 2 2B-it |
+| google/gemma-2-2b-it | 2,6 mil millones | 8192 tokens | Gemma | Pesos oficiales en Hugging Face | Modelo de referencia del que deriva Otak-2-2b |
 | Llama 3.2 3B Instruct | 3,2 mil millones | 128 000 tokens | Llama 3.2 Community License | Pesos oficiales y multiples GGUF de terceros | Contexto mucho mayor y ecosistema de cuantizaciones mas maduro |
 | Qwen2.5 3B Instruct | 3,1 mil millones | 32 768 tokens | Apache 2.0 | Pesos oficiales y GGUF de terceros | Licencia permisiva y buen rendimiento relativo en codigo y multilingue |
 

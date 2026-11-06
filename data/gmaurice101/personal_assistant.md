@@ -2,7 +2,7 @@
 
 ## Resumen
 
-personal_assistant es un repositorio de modelo publicado en HuggingFace por el usuario gmaurice101. La única información verificable en los metadatos disponibles (creación y última actualización el 18 de septiembre de 2026) es la licencia, OpenRAIL en una versión no especificada, y la etiqueta de región "us". El repositorio no incluye model card descriptiva: el README se limita al encabezado de licencia, sin información sobre arquitectura, datos de entrenamiento ni evaluación.
+personal_assistant es un repositorio de modelo publicado en Hugging Face por el usuario gmaurice101. La única información verificable en los metadatos disponibles (creación y última actualización el 18 de septiembre de 2026) es la licencia, OpenRAIL en una versión no especificada, y la etiqueta de región "us". El repositorio no incluye model card descriptiva: el README se limita al encabezado de licencia, sin información sobre arquitectura, datos de entrenamiento ni evaluación.
 
 El nombre del repositorio sugiere un ajuste orientado a tareas de asistente personal, pero no existe ningún artefacto que lo confirme: el pipeline no está declarado, no se especifican idiomas, no se indica el modelo base ni el número de parámetros, y no se documenta el formato de los pesos. El contador público muestra 0 descargas y 0 "likes", de modo que tampoco hay validación por parte de la comunidad.
 
@@ -83,6 +83,6 @@ No disponible. Al desconocerse el número de parámetros, la tarea declarada y e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gmaurice101/personal_assistant
+- Hugging Face: https://huggingface.co/gmaurice101/personal_assistant
 - Repositorio de código, paper, blog o demo: no disponible.
 - Resultados de la búsqueda web: las URL recuperadas (outlook.com, ps.outlook.com, na01.safelinks.protection.outlook.com, olmoauth.outlook.com) no guardan relación con el modelo ni con su autor, por lo que se descartan como fuentes.

@@ -66,11 +66,11 @@ La model card no incluye MMLU, HumanEval, GSM8K, ARC, Hellaswag ni ninguna otra 
 
 | Modelo | Parámetros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `polydim-cla/llama-3.2-3b-pmtp` | 3,21 B (base) + adaptador | 128 k (heredado del base) | Sin benchmarks | Apache 2.0 declarada | HuggingFace, 0 descargas |
-| `meta-llama/Llama-3.2-3B-Instruct` | 3,21 B | 128 k | Evaluaciones publicadas por Meta en su model card | Llama 3.2 Community License | HuggingFace, ampliamente usado |
-| `Qwen/Qwen2.5-3B-Instruct` | 3,09 B | 32 k nativo (128 k con YaRN) | Evaluaciones publicadas por Qwen (MMLU, HumanEval, GSM8K) | Apache 2.0 | HuggingFace, muy extendido |
-| `google/gemma-2-2b-it` | 2,61 B | 8 k | Evaluaciones publicadas por Google | Gemma Terms of Use | HuggingFace, requiere aceptación |
-| `microsoft/Phi-3.5-mini-instruct` | 3,82 B | 128 k | Evaluaciones publicadas por Microsoft | MIT | HuggingFace |
+| `polydim-cla/llama-3.2-3b-pmtp` | 3,21 B (base) + adaptador | 128 k (heredado del base) | Sin benchmarks | Apache 2.0 declarada | Hugging Face, 0 descargas |
+| `meta-llama/Llama-3.2-3B-Instruct` | 3,21 B | 128 k | Evaluaciones publicadas por Meta en su model card | Llama 3.2 Community License | Hugging Face, ampliamente usado |
+| `Qwen/Qwen2.5-3B-Instruct` | 3,09 B | 32 k nativo (128 k con YaRN) | Evaluaciones publicadas por Qwen (MMLU, HumanEval, GSM8K) | Apache 2.0 | Hugging Face, muy extendido |
+| `google/gemma-2-2b-it` | 2,61 B | 8 k | Evaluaciones publicadas por Google | Gemma Terms of Use | Hugging Face, requiere aceptación |
+| `microsoft/Phi-3.5-mini-instruct` | 3,82 B | 128 k | Evaluaciones publicadas por Microsoft | MIT | Hugging Face |
 
 El artefacto PMTP es el único de la tabla sin métricas de evaluación y sin tracción comunitaria. Para uso práctico en la misma franja de tamaño, las alternativas consolidadas ofrecen garantías de licencia, tooling de despliegue y resultados reproducibles.
 
@@ -89,7 +89,7 @@ El artefacto PMTP es el único de la tabla sin métricas de evaluación y sin tr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/polydim-cla/llama-3.2-3b-pmtp
+- Repositorio Hugging Face: https://huggingface.co/polydim-cla/llama-3.2-3b-pmtp
 - Repositorio GitHub del proyecto: https://github.com/AGT1973/POLYDIM_EINSOF
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B
 - Modelo base ajustado por instrucciones: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct

@@ -69,8 +69,8 @@ No disponible. No existe un modelo comparable porque no hay modelo. Los reposito
 
 ## Enlaces
 
-- [HuggingFace - NaTo1000/nato1000-strategist-research](https://huggingface.co/NaTo1000/nato1000-strategist-research)
-- [HuggingFace - NaTo1000/nato1000-strategist (repo hermano)](https://huggingface.co/NaTo1000/nato1000-strategist)
-- [HuggingFace - NaTo1000/nato-strategic (repo hermano)](https://huggingface.co/NaTo1000/nato-strategic)
+- [Hugging Face - NaTo1000/nato1000-strategist-research](https://huggingface.co/NaTo1000/nato1000-strategist-research)
+- [Hugging Face - NaTo1000/nato1000-strategist (repo hermano)](https://huggingface.co/NaTo1000/nato1000-strategist)
+- [Hugging Face - NaTo1000/nato-strategic (repo hermano)](https://huggingface.co/NaTo1000/nato-strategic)
 - [GitHub - Perfil de NaTo1000](https://github.com/NaTo1000?tab=repositories)
 - [GitHub - report.md del proyecto nato1000-logic](https://github.com/NaTo1000/infiniteai2025-nato1000/blob/master/nato1000-logic/report.md)

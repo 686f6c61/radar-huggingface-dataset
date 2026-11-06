@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "vinello28/Tunatron-3-Nano-4B-BF16",
+  "slug": "vinello28-tunatron-3-nano-4b-bf16",
+  "author": "vinello28",
+  "url": "https://huggingface.co/vinello28/Tunatron-3-Nano-4B-BF16",
+  "created_at": "2026-11-06T09:23:45.000Z",
+  "updated_at": "2026-11-06T09:26:45.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "it",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "nemotron_h",
+    "text-generation",
+    "security",
+    "sast",
+    "vulnerability-detection",
+    "dora",
+    "conversational",
+    "custom_code",
+    "it",
+    "en",
+    "base_model:unsloth/NVIDIA-Nemotron-3-Nano-4B",
+    "base_model:finetune:unsloth/NVIDIA-Nemotron-3-Nano-4B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3973556832,
+  "parameters_human": "3.97B",
+  "storage_bytes": 7964220124,
+  "storage_human": "8.0 GB",
+  "base_model": "unsloth/NVIDIA-Nemotron-3-Nano-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NVIDIA-Nemotron-3-Nano-4B-BF16 - Hugging Face",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16",
+      "snippet": "Nemotron-H: A Family of Accurate and Efficient Hybrid Mamba-Transformer Models ... Nemotron-CC: Transforming Common Crawl into a Refined Long-Horizon Pretraining Dataset ... Nemotron 3 Nano 4B: A Compact Hybrid Model for Efficient Local AI ... Nemotron 3 Nano \\- A new Standard for Efficient, Open, and Intelligent Agentic Models"
+    },
+    {
+      "title": "Nemotron 3 Nano 4B: A Compact Hybrid Model for Efficient Local AI",
+      "url": "https://huggingface.co/blog/nvidia/nemotron-3-nano-4b",
+      "snippet": "We are excited to introduce Nemotron 3 Nano 4B, the newest and most compact member of the Nemotron 3 family. Leveraging hybrid Mamba-Transformer architecture, this model is designed for efficiency and accuracy in a targeted set of capabilities, setting a new standard for lightweight small language models."
+    }
+  ]
+}

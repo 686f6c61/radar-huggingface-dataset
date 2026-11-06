@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`sartajbhuvaji/bonsai-candidate-depth22-experts92` es un checkpoint de modelo de lenguaje publicado en HuggingFace por el usuario sartajbhuvaji. Se trata de un modelo de tipo text-generation construido sobre la arquitectura `qwen3_moe`, es decir, un transformer con mezcla de expertos (MoE) derivado de la familia Qwen3. El repositorio contiene 5.531.697.664 parametros totales (aproximadamente 5,53 mil millones) en formato safetensors, con un tamano de repositorio de 11,1 GB, lo que es coherente con pesos almacenados en precision de 16 bits.
+`sartajbhuvaji/bonsai-candidate-depth22-experts92` es un checkpoint de modelo de lenguaje publicado en Hugging Face por el usuario sartajbhuvaji. Se trata de un modelo de tipo text-generation construido sobre la arquitectura `qwen3_moe`, es decir, un transformer con mezcla de expertos (MoE) derivado de la familia Qwen3. El repositorio contiene 5.531.697.664 parametros totales (aproximadamente 5,53 mil millones) en formato safetensors, con un tamano de repositorio de 11,1 GB, lo que es coherente con pesos almacenados en precision de 16 bits.
 
 El propio identificador del modelo, `bonsai-candidate-depth22-experts92`, sugiere un experimento de poda o compresion estructural de una red MoE: "depth22" apuntaria a 22 capas y "experts92" a 92 expertos, mientras que "candidate" indica que se trata de una variante candidata dentro de una busqueda de configuraciones. Esta interpretacion procede unicamente de la nomenclatura y no esta confirmada por documentacion alguna.
 
-La relevancia de esta ficha es limitada pero ilustrativa: la model card es la plantilla automatica de HuggingFace sin rellenar, no se declara licencia, idiomas, datos de entrenamiento ni resultados de evaluacion, y el modelo acumula 0 descargas y 0 "likes". Debe tratarse, por tanto, como un artefacto de investigacion sin soporte ni garantias de produccion.
+La relevancia de esta ficha es limitada pero ilustrativa: la model card es la plantilla automatica de Hugging Face sin rellenar, no se declara licencia, idiomas, datos de entrenamiento ni resultados de evaluacion, y el modelo acumula 0 descargas y 0 "likes". Debe tratarse, por tanto, como un artefacto de investigacion sin soporte ni garantias de produccion.
 
 ## Especificaciones tecnicas
 
@@ -76,10 +76,10 @@ La comparacion se establece con modelos MoE y densos de tamano comparable de dom
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bonsai-candidate-depth22-experts92 | 5,53 B | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
-| Qwen3-30B-A3B | 30,5 B | 3,3 B | 32.768 tokens (131.072 con YaRN) | Apache 2.0 | HuggingFace, ampliamente usado |
-| Mixtral 8x7B | 46,7 B | 12,9 B | 32.768 tokens | Apache 2.0 | HuggingFace |
-| Qwen3-8B (denso) | 8,2 B | 8,2 B | 32.768 tokens (131.072 con YaRN) | Apache 2.0 | HuggingFace |
+| bonsai-candidate-depth22-experts92 | 5,53 B | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
+| Qwen3-30B-A3B | 30,5 B | 3,3 B | 32.768 tokens (131.072 con YaRN) | Apache 2.0 | Hugging Face, ampliamente usado |
+| Mixtral 8x7B | 46,7 B | 12,9 B | 32.768 tokens | Apache 2.0 | Hugging Face |
+| Qwen3-8B (denso) | 8,2 B | 8,2 B | 32.768 tokens (131.072 con YaRN) | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento del modelo evaluado, por lo que no es posible establecer una comparacion cuantitativa de calidad con las alternativas.
 
@@ -97,7 +97,7 @@ No se dispone de datos de rendimiento del modelo evaluado, por lo que no es posi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sartajbhuvaji/bonsai-candidate-depth22-experts92
+- Repositorio en Hugging Face: https://huggingface.co/sartajbhuvaji/bonsai-candidate-depth22-experts92
 - Articulo referenciado en los tags (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental del machine learning: https://mlco2.github.io/impact
 

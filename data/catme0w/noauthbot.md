@@ -2,9 +2,9 @@
 
 ## Resumen
 
-NoAuthBot es un modelo publicado en HuggingFace por el usuario catme0w bajo licencia MIT. La model card asociada al repositorio no contiene ninguna descripción tecnica: unicamente incluye el campo de licencia en el frontmatter YAML, sin informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio no registra descargas ni interacciones en el momento de la consulta.
+NoAuthBot es un modelo publicado en Hugging Face por el usuario catme0w bajo licencia MIT. La model card asociada al repositorio no contiene ninguna descripción tecnica: unicamente incluye el campo de licencia en el frontmatter YAML, sin informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio no registra descargas ni interacciones en el momento de la consulta.
 
-Por la informacion disponible no es posible determinar que tipo de modelo es (lenguaje, vision, audio u otro), ni su proposito. El nombre "NoAuthBot" sugiere un posible uso como bot conversacional sin autenticacion, pero se trata de una inferencia no confirmada por el autor. No hay pipeline declarado en HuggingFace ni etiquetas que indiquen la tarea.
+Por la informacion disponible no es posible determinar que tipo de modelo es (lenguaje, vision, audio u otro), ni su proposito. El nombre "NoAuthBot" sugiere un posible uso como bot conversacional sin autenticacion, pero se trata de una inferencia no confirmada por el autor. No hay pipeline declarado en Hugging Face ni etiquetas que indiquen la tarea.
 
 Dado que la ficha se elabora exclusivamente a partir de los metadatos y la model card publicados, la mayoria de los apartados tecnicos se marcan como "no disponible". Se recomienda consultar el repositorio directamente antes de cualquier evaluacion o uso en produccion.
 
@@ -66,5 +66,5 @@ No disponible. No se dispone de informacion suficiente sobre el modelo (tamano, 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/catme0w/NoAuthBot
+- Repositorio en Hugging Face: https://huggingface.co/catme0w/NoAuthBot
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion proporcionada.

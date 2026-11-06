@@ -85,7 +85,7 @@ La comparativa directa es limitada porque tinyzero-countdown-19m es un modelo ex
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/simak31/tinyzero-countdown-19m
+- Modelo en Hugging Face: https://huggingface.co/simak31/tinyzero-countdown-19m
 - Repositorio TinyZero (Jiayi-Pan): https://github.com/Jiayi-Pan/TinyZero
 - Repositorio TinyZero (aeroabir): https://github.com/aeroabir/TinyZero
 - Documentacion del Countdown Demo en DeepWiki: https://deepwiki.com/Jiayi-Pan/TinyZero/7.1-tinyzero-countdown-demo

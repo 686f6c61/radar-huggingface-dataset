@@ -67,7 +67,7 @@ No se dispone de informacion suficiente para realizar una comparativa fiable. Co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bumbuk/Qwen3.5-4B-AWQ-text-flat
+- Repositorio Hugging Face: https://huggingface.co/bumbuk/Qwen3.5-4B-AWQ-text-flat
 - Coleccion oficial Qwen3.5: https://huggingface.co/collections/Qwen/qwen35
 - Blog oficial de Qwen3.5: https://qwen.ai/blog?id=qwen3.5
 - Pagina de Qwen3.5:4b en Ollama: https://ollama.com/library/qwen3.5:4b

@@ -21,7 +21,7 @@ Su relevancia es, por tanto, metodológica y no técnica: sirve como ejemplo de 
 | Licencia | CC-BY-4.0 |
 | Formato de pesos | safetensors (un unico artefacto de 33.088 parametros) |
 
-Datos adicionales del repositorio: 0 descargas, 0 likes, tamano de repositorio 0,0 GB, pipeline no declarado, fecha de creacion 2026-10-02 y ultima actualizacion 2026-10-02 segun los metadatos de HuggingFace.
+Datos adicionales del repositorio: 0 descargas, 0 likes, tamano de repositorio 0,0 GB, pipeline no declarado, fecha de creacion 2026-10-02 y ultima actualizacion 2026-10-02 segun los metadatos de Hugging Face.
 
 ## Arquitectura y entrenamiento
 
@@ -45,7 +45,7 @@ Tampoco hay datos de entrenamiento: no se declara numero de tokens, composicion 
 - Revisión bibliografica inicial sobre aprendizaje contrastivo: el fichero `analysis.md` agrupa referencias relevantes y sirve como punto de partida documental para alguien que se incorpora al area.
 - Material docente en cursos de aprendizaje autosupervisado: permite mostrar al alumnado la diferencia entre un plan de investigacion y una validacion experimental, usando el propio README como aviso de alcance.
 - Diseno de experimentos con baselines emparejados: la propuesta de comparacion contra baselines con condiciones equivalentes puede reutilizarse como criterio de diseno en proyectos de representacion autosupervisada.
-- Auditoria de artefactos en HuggingFace: el caso ilustra como un repositorio etiquetado con `safetensors` y `transformer` puede no contener un modelo funcional, util para definir filtros y validaciones en catalogos internos de modelos.
+- Auditoria de artefactos en Hugging Face: el caso ilustra como un repositorio etiquetado con `safetensors` y `transformer` puede no contener un modelo funcional, util para definir filtros y validaciones en catalogos internos de modelos.
 
 ## Benchmarks y rendimiento
 
@@ -76,7 +76,7 @@ No disponible. No existe una categoria de modelos comparables para este reposito
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/szym-onwoj/survey-contrastive-learning
+- Repositorio en Hugging Face: https://huggingface.co/szym-onwoj/survey-contrastive-learning
 - Repositorio relacionado del mismo autor: https://huggingface.co/szym-onwoj/vit-contrastive-tutorial
 - Survey sobre aprendizaje contrastivo autosupervisado (arXiv): https://arxiv.org/abs/2011.00362
 - Survey sobre aprendizaje contrastivo en ScienceDirect: https://www.sciencedirect.com/science/article/pii/S0925231224014164

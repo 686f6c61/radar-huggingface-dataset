@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Formato / disponibilidad |
 |---|---|---|---|---|---|
-| zundamon-tiny-llm-GGUF (este) | 1,74 M | No disponible | ja | MIT | GGUF en HuggingFace, 12 cuantizaciones |
-| k4rasu/zundamon-tiny-llm (base) | 1,74 M | No disponible | ja | MIT (según el repositorio de cuantizaciones) | Safetensors en HuggingFace |
-| roneneldan/TinyStories-33M | 33 M | No disponible | en | No disponible | Transformers en HuggingFace |
-| TinyLlama-1.1B | 1,1 B | 2.048 tokens | en (multilingüe parcial) | Apache 2.0 | Safetensors y GGUF en HuggingFace |
+| zundamon-tiny-llm-GGUF (este) | 1,74 M | No disponible | ja | MIT | GGUF en Hugging Face, 12 cuantizaciones |
+| k4rasu/zundamon-tiny-llm (base) | 1,74 M | No disponible | ja | MIT (según el repositorio de cuantizaciones) | Safetensors en Hugging Face |
+| roneneldan/TinyStories-33M | 33 M | No disponible | en | No disponible | Transformers en Hugging Face |
+| TinyLlama-1.1B | 1,1 B | 2.048 tokens | en (multilingüe parcial) | Apache 2.0 | Safetensors y GGUF en Hugging Face |
 
 Nota: los datos de las filas de modelos alternativos provienen del conocimiento general del ecosistema y no de la información proporcionada en esta ficha; conviene verificarlos en sus respectivas model cards antes de tomar decisiones. La comparación relevante es de escala: este modelo es entre 19 y 600 veces más pequeño que las alternativas, lo que se traduce en una diferencia cualitativa de capacidades, no solo cuantitativa.
 
@@ -86,7 +86,7 @@ Nota: los datos de las filas de modelos alternativos provienen del conocimiento 
 
 ## Enlaces
 
-- Repositorio HuggingFace de las cuantizaciones: https://huggingface.co/mradermacher/zundamon-tiny-llm-GGUF
+- Repositorio Hugging Face de las cuantizaciones: https://huggingface.co/mradermacher/zundamon-tiny-llm-GGUF
 - Modelo base original: https://huggingface.co/k4rasu/zundamon-tiny-llm
 - Página de descargas y visión general de mradermacher: https://hf.tst.eu/model#zundamon-tiny-llm-GGUF
 - Guía de uso de ficheros GGUF referenciada por el autor: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

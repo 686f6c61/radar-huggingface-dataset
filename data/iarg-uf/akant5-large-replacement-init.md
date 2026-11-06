@@ -92,7 +92,7 @@ La comparación directa con modelos de traducción akan-inglés de otros autores
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IARG-UF/akant5-large-replacement-init
+- Modelo en Hugging Face: https://huggingface.co/IARG-UF/akant5-large-replacement-init
 - Checkpoint CPT asociado: https://huggingface.co/IARG-UF/akant5-large-replacement
 - Coleccion AkanT5: https://huggingface.co/collections/IARG-UF/akant5-cpt-checkpoints-and-vocabulary-initializations
 - Modelo base: https://huggingface.co/google/mt5-large

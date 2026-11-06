@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mae for Generation es un repositorio experimental publicado por el usuario albertogby en HuggingFace. No se trata de un modelo entrenado ni evaluado, sino de un esqueleto de codigo (codebase) para una arquitectura denominada "Mae" orientada a tareas de generacion. El repositorio incluye un script de inferencia, un fichero de configuracion de arquitectura, una receta de entrenamiento por defecto y un checkpoint de inicializacion en formato safetensors.
+Mae for Generation es un repositorio experimental publicado por el usuario albertogby en Hugging Face. No se trata de un modelo entrenado ni evaluado, sino de un esqueleto de codigo (codebase) para una arquitectura denominada "Mae" orientada a tareas de generacion. El repositorio incluye un script de inferencia, un fichero de configuracion de arquitectura, una receta de entrenamiento por defecto y un checkpoint de inicializacion en formato safetensors.
 
 El checkpoint de safetensors contiene unicamente 16.576 parametros totales, una cifra minúscula que confirma que se trata de una inicializacion para pruebas de humo (smoke tests) y no de pesos entrenados para produccion. La propia model card indica explicitamente que no se reclama ninguna puntuacion de benchmark y que el checkpoint no ha sido entrenado ni auditado para robustez, equidad o transferencia de dominio.
 
@@ -74,5 +74,5 @@ No disponible. No se identifican en la informacion proporcionada modelos compara
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/albertogby/mae-generation-colab
+- Hugging Face: https://huggingface.co/albertogby/mae-generation-colab
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

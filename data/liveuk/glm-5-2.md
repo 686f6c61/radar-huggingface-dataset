@@ -6,7 +6,7 @@ GLM-5.2 es un modelo de lenguaje de gran escala desarrollado por Zhipu AI (organ
 
 El modelo introduce dos innovaciones tecnicas: el mecanismo IndexShare, que reutiliza el mismo indexador cada cuatro capas de atencion dispersa y reduce los FLOPs por token en un factor de 2,9x a 1M de contexto, y una mejora de la capa MTP (Multi-Token Prediction) para decodificacion especulativa que aumenta la longitud de aceptacion hasta un 20%. Se distribuye bajo licencia MIT, sin restricciones regionales, lo que facilita su uso comercial y su inspeccion.
 
-Es relevante ahora porque compite directamente en tareas de codigo agentico, uso de herramientas y razonamiento con modelos frontera cerrados (Claude Opus 4.8, GPT-5.5, Gemini 3.1 Pro), segun la propia tabla de benchmarks del autor. La ficha de HuggingFace analizada (LiveUK/GLM-5.2) es una resubida de terceros con 0 descargas y 0 me gusta, no el repositorio oficial; los datos tecnicos provienen de la model card asociada.
+Es relevante ahora porque compite directamente en tareas de codigo agentico, uso de herramientas y razonamiento con modelos frontera cerrados (Claude Opus 4.8, GPT-5.5, Gemini 3.1 Pro), segun la propia tabla de benchmarks del autor. La ficha de Hugging Face analizada (LiveUK/GLM-5.2) es una resubida de terceros con 0 descargas y 0 me gusta, no el repositorio oficial; los datos tecnicos provienen de la model card asociada.
 
 ## Especificaciones tecnicas
 
@@ -116,9 +116,9 @@ Los parametros, contextos y licencias de los modelos de comparacion no estan dis
 
 ## Enlaces
 
-- HuggingFace (ficha analizada, resubida): https://huggingface.co/LiveUK/GLM-5.2
+- Hugging Face (ficha analizada, resubida): https://huggingface.co/LiveUK/GLM-5.2
 - Paper GLM-5 (technical report): https://arxiv.org/abs/2602.15763
-- Paper en HuggingFace: https://huggingface.co/papers/2602.15763
+- Paper en Hugging Face: https://huggingface.co/papers/2602.15763
 - Paper IndexShare: https://arxiv.org/abs/2603.12201
 - Blog oficial GLM-5.2: https://z.ai/blog/glm-5.2
 - Repositorio GitHub: https://github.com/zai-org/GLM-5

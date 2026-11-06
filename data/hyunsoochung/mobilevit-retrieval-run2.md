@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hyunsoochung/mobilevit-retrieval-run2` es un repositorio experimental que contiene una implementación propia de una arquitectura MobileViT orientada a tareas de *retrieval* (recuperación de información, presumiblemente multimodal imagen-texto). Lo publica el usuario hyunsoochung en HuggingFace con licencia BSD-3-Clause y etiquetas que lo identifican como modelo PyTorch basado en MobileViT para recuperación. No se trata de un modelo entrenado: el propio autor indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para *smoke tests* y que no se presenta como un checkpoint con resultados de benchmark.
+`hyunsoochung/mobilevit-retrieval-run2` es un repositorio experimental que contiene una implementación propia de una arquitectura MobileViT orientada a tareas de *retrieval* (recuperación de información, presumiblemente multimodal imagen-texto). Lo publica el usuario hyunsoochung en Hugging Face con licencia BSD-3-Clause y etiquetas que lo identifican como modelo PyTorch basado en MobileViT para recuperación. No se trata de un modelo entrenado: el propio autor indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para *smoke tests* y que no se presenta como un checkpoint con resultados de benchmark.
 
 El peso real del checkpoint es de 16.576 parámetros totales, un orden de magnitud muy inferior al de cualquier codificador de visión utilizable en producción (MobileViT-S ronda los 5,6 millones y CLIP ViT-B/32 los 151 millones). Esto confirma que el artefacto es un andamiaje de código y configuración, no un modelo funcional: sirve para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, tal y como declara la model card.
 
@@ -68,7 +68,7 @@ La comparación se establece por categoría (codificadores de visión ligeros pa
 
 | Modelo | Parámetros | Contexto / resolución | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| mobilevit-retrieval-run2 | 16.576 (checkpoint de inicialización) | No disponible | BSD-3-Clause | HuggingFace, 0 descargas, 0 *likes* | Implementación propia sin entrenar; requiere adaptador de carga |
+| mobilevit-retrieval-run2 | 16.576 (checkpoint de inicialización) | No disponible | BSD-3-Clause | Hugging Face, 0 descargas, 0 *likes* | Implementación propia sin entrenar; requiere adaptador de carga |
 | MobileViT (familia original) | Aproximadamente 1,3 M (XXS) a 5,6 M (S) según variante publicada | Resolución de imagen configurable | No disponible en la información proporcionada | Implementación de referencia pública | Arquitectura en la que se inspira este repositorio; sí existen checkpoints entrenados |
 | CLIP ViT-B/32 | Aproximadamente 151 M en total (imagen + texto) | 224 px por imagen, 77 tokens de texto | No disponible en la información proporcionada | Ampliamente distribuido | Referencia habitual en *retrieval* imagen-texto; órdenes de magnitud mayor |
 | SigLIP (variantes base) | No disponible en la información proporcionada | No disponible en la información proporcionada | No disponible | Ampliamente distribuido | Alternativa contemporánea a CLIP para alineamiento imagen-texto |
@@ -81,7 +81,7 @@ Las cifras de terceros se incluyen como contexto de categoría y deben verificar
 - Ausencia de auditoría: el autor declara que la inicialización no ha sido evaluada en robustez, equidad ni transferencia de dominio. No hay análisis de sesgos disponible.
 - Riesgo de alucinación: no aplica en el sentido generativo, pero existe riesgo de interpretar erróneamente salidas de un modelo aleatorio como si fueran representaciones útiles. Cualquier resultado debe validarse contra una línea base entrenada.
 - Idiomas y dominio: no se declara ningún idioma soportado ni el dominio de los datos previstos. La evaluación sugerida (Flickr30k) cubre imágenes con descripciones en inglés, lo que debe revisarse antes de aplicar el modelo a otros idiomas o dominios.
-- Implementación no estándar: al ser un *codebase* propio, las APIs automáticas de HuggingFace no cargan el modelo sin un adaptador explícito, lo que añade trabajo de integración y riesgo de incompatibilidades entre versiones.
+- Implementación no estándar: al ser un *codebase* propio, las APIs automáticas de Hugging Face no cargan el modelo sin un adaptador explícito, lo que añade trabajo de integración y riesgo de incompatibilidades entre versiones.
 - Restricciones de licencia: BSD-3-Clause permite uso comercial con atribución y conservación del aviso de copyright, pero los términos de los datos de entrenamiento deben revisarse por separado cuando se utilicen conjuntos externos, tal y como advierte la model card.
 - Madurez del repositorio: 0 descargas, 0 *likes*, tamaño de 0.0 GB y sin *pipeline* declarado. Sin resultados publicados, sin *logs* de entrenamiento y sin métricas reproducibles.
 - Metadatos: la fecha de creación registrada es 2026-09-10, posterior a la fecha de consulta habitual; conviene verificar la vigencia de los metadatos antes de citar el repositorio.
@@ -89,5 +89,5 @@ Las cifras de terceros se incluyen como contexto de categoría y deben verificar
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hyunsoochung/mobilevit-retrieval-run2
+- Repositorio en Hugging Face: https://huggingface.co/hyunsoochung/mobilevit-retrieval-run2
 - Búsqueda web realizada: los resultados obtenidos tratan sobre generación de UUID en C# (delftstack.com, stackoverflow.com, uuidgenerator.co, uuidgenerator.net, uuidtools.dev) y no guardan relación con este modelo. No se han encontrado enlaces relevantes al modelo, a su paper ni a demos o repositorios asociados en la información disponible.

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `exa-vision-pro/exa-vision-gemma-4` aloja un modelo identificado como parte de la familia Gemma 4, desarrollado por Google DeepMind y distribuido con licencia Gemma. El nombre del repositorio sugiere una variante orientada a visión (`exa-vision`), probablemente un modelo de lenguaje y visión (VLM) construido sobre la base de Gemma 4. La entrada en HuggingFace es minima: no incluye descripcion, pipeline definido, ni idiomas soportados, y el tamaño del repositorio es de 3.0 GB, lo que apunta a un modelo de tamaño compacto o medio.
+El repositorio `exa-vision-pro/exa-vision-gemma-4` aloja un modelo identificado como parte de la familia Gemma 4, desarrollado por Google DeepMind y distribuido con licencia Gemma. El nombre del repositorio sugiere una variante orientada a visión (`exa-vision`), probablemente un modelo de lenguaje y visión (VLM) construido sobre la base de Gemma 4. La entrada en Hugging Face es minima: no incluye descripcion, pipeline definido, ni idiomas soportados, y el tamaño del repositorio es de 3.0 GB, lo que apunta a un modelo de tamaño compacto o medio.
 
-La relevancia de este modelo radica en que Gemma 4 es la generación mas reciente de modelos abiertos de Google, con licencia Apache 2.0 (segun la documentacion oficial de Google) y capacidades nativas de vision, incluyendo salida de bounding boxes en su formato de respuesta. Sin embargo, la informacion disponible en el repositorio de HuggingFace es minima, por lo que esta ficha se basa principalmente en los datos publicos de la familia Gemma 4 y en lo poco que ofrece la entrada del repositorio. No hay evidencia de que el modelo haya sido evaluado o descargado (0 descargas, 0 likes), lo que sugiere que es un modelo reciente o poco difundido.
+La relevancia de este modelo radica en que Gemma 4 es la generación mas reciente de modelos abiertos de Google, con licencia Apache 2.0 (segun la documentacion oficial de Google) y capacidades nativas de vision, incluyendo salida de bounding boxes en su formato de respuesta. Sin embargo, la informacion disponible en el repositorio de Hugging Face es minima, por lo que esta ficha se basa principalmente en los datos publicos de la familia Gemma 4 y en lo poco que ofrece la entrada del repositorio. No hay evidencia de que el modelo haya sido evaluado o descargado (0 descargas, 0 likes), lo que sugiere que es un modelo reciente o poco difundido.
 
 ## Especificaciones tecnicas
 
@@ -67,7 +67,7 @@ No se dispone de informacion suficiente para realizar una comparativa con modelo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/exa-vision-pro/exa-vision-gemma-4
+- Repositorio en Hugging Face: https://huggingface.co/exa-vision-pro/exa-vision-gemma-4
 - Documentacion general de Gemma 4 de Google: https://deepmind.google/models/gemma/gemma-4/
 - Model card de Gemma 4 (Google AI for Developers): https://ai.google.dev/gemma/docs/core/model_card_4
 - Vision general de Gemma: https://deepmind.google/models/gemma/

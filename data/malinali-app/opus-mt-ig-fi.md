@@ -18,21 +18,21 @@ Su relevancia actual reside en dos factores: cubre un par de idiomas de bajos re
 | Longitud de contexto | no disponible en la informacion proporcionada (por arquitectura Marian, los OPUS-MT suelen operar con secuencias de hasta 512 tokens) |
 | Tipos de cuantizacion | no disponibles en el repositorio; los pesos se distribuyen en safetensors (presumiblemente fp32) y son convertibles a fp16/int8 con herramientas externas |
 | Idiomas soportados | ig (igbo), fi (fines); direccion unica ig → fi |
-| Licencia | no disponible en los metadatos de HuggingFace; el autor remite a la licencia del modelo base (`Helsinki-NLP/opus-mt-ig-fi`), habitualmente CC-BY 4.0 en los modelos OPUS-MT |
+| Licencia | no disponible en los metadatos de Hugging Face; el autor remite a la licencia del modelo base (`Helsinki-NLP/opus-mt-ig-fi`), habitualmente CC-BY 4.0 en los modelos OPUS-MT |
 | Formato de pesos | safetensors (`model.safetensors`), mas `config.json`, `tokenizer-enc.json` y `tokenizer-dec.json` |
 
 ## Arquitectura y entrenamiento
 
 La arquitectura es Marian, un transformer seq2seq con atención completa, típicamente configurado en los modelos OPUS-MT con 6 capas de encoder y 6 de decoder, dimensión de modelo 512 y 8 cabezas de atención. El entrenamiento original fue realizado por el proyecto Helsinki-NLP sobre corpus paralelos de OPUS, con aprendizaje supervisado estándar de traducción automática neuronal; no hay indicios de RLHF, DPO ni ajuste por preferencias en la información disponible.
 
-malinali-app no entrena ni ajusta el modelo: únicamente reempaqueta los pesos en `safetensors` y convierte los tokenizers SentencePiece originales a JSON de tokenizer rápido de HuggingFace para que funcionen con Candle mediante `marian_flutter`. Esta conversión es la innovación práctica del repositorio: permite inferencia local en Flutter sin depender de Python ni de PyTorch en tiempo de ejecución. No se detalla en la model card la composición exacta del dataset, el número de tokens de entrenamiento ni el proceso de tokenización SentencePiece original.
+malinali-app no entrena ni ajusta el modelo: únicamente reempaqueta los pesos en `safetensors` y convierte los tokenizers SentencePiece originales a JSON de tokenizer rápido de Hugging Face para que funcionen con Candle mediante `marian_flutter`. Esta conversión es la innovación práctica del repositorio: permite inferencia local en Flutter sin depender de Python ni de PyTorch en tiempo de ejecución. No se detalla en la model card la composición exacta del dataset, el número de tokens de entrenamiento ni el proceso de tokenización SentencePiece original.
 
 ## Capacidades
 
 - Traducción automática de texto de igbo (ig) a finés (fi), a nivel de frase o párrafo corto.
 - Generación de texto traducido con tokenizers rápidos compatibles con `transformers` y con Candle.
 - Inferencia en dispositivo (on-device) sin necesidad de conexión a internet.
-- Integración en pipelines de HuggingFace mediante `pipeline("translation")`.
+- Integración en pipelines de Hugging Face mediante `pipeline("translation")`.
 - No soporta tool calling ni function calling.
 - No soporta agentes, razonamiento multi-paso ni planificación.
 - No dispone de modo de razonamiento (thinking mode), visión, audio ni otras modalidades.
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `malinali-app/opus-mt-ig-fi` | ~76 M | no disponible (Marian, tipicamente 512 tokens) | ig → fi | no disponible (hereda la del base, habitualmente CC-BY 4.0) | safetensors + tokenizers JSON | HuggingFace, Candle |
-| `Helsinki-NLP/opus-mt-ig-fi` | ~76 M | no disponible (Marian, tipicamente 512 tokens) | ig → fi | habitualmente CC-BY 4.0 (segun model card original) | PyTorch `.bin` + SentencePiece | HuggingFace |
-| `Helsinki-NLP/opus-mt-ig-en` | ~77 M | no disponible (Marian, tipicamente 512 tokens) | ig → en | habitualmente CC-BY 4.0 | PyTorch `.bin` + SentencePiece | HuggingFace |
-| `Helsinki-NLP/opus-mt-fi-en` | ~77 M | no disponible (Marian, tipicamente 512 tokens) | fi → en | habitualmente CC-BY 4.0 | PyTorch `.bin` + SentencePiece | HuggingFace |
+| `malinali-app/opus-mt-ig-fi` | ~76 M | no disponible (Marian, tipicamente 512 tokens) | ig → fi | no disponible (hereda la del base, habitualmente CC-BY 4.0) | safetensors + tokenizers JSON | Hugging Face, Candle |
+| `Helsinki-NLP/opus-mt-ig-fi` | ~76 M | no disponible (Marian, tipicamente 512 tokens) | ig → fi | habitualmente CC-BY 4.0 (segun model card original) | PyTorch `.bin` + SentencePiece | Hugging Face |
+| `Helsinki-NLP/opus-mt-ig-en` | ~77 M | no disponible (Marian, tipicamente 512 tokens) | ig → en | habitualmente CC-BY 4.0 | PyTorch `.bin` + SentencePiece | Hugging Face |
+| `Helsinki-NLP/opus-mt-fi-en` | ~77 M | no disponible (Marian, tipicamente 512 tokens) | fi → en | habitualmente CC-BY 4.0 | PyTorch `.bin` + SentencePiece | Hugging Face |
 
 Como alternativas multilingües de mayor tamano existen modelos como NLLB-200 (por ejemplo, la variante destilada de 600 M) o M2M-100 (418 M), que cubren el par igbo-finés dentro de un conjunto amplio de idiomas; sin embargo, no se dispone en la informacion proporcionada de datos de rendimiento comparativos entre estos modelos y el aquí descrito, por lo que la comparación cuantitativa queda como no disponible.
 
@@ -81,14 +81,14 @@ Como alternativas multilingües de mayor tamano existen modelos como NLLB-200 (p
 - Direccionalidad única: solo traduce ig → fi; no sirve para fi → ig ni para otros pares sin un modelo adicional.
 - Longitud de contexto limitada por la arquitectura Marian (habitualmente 512 tokens); los textos largos deben dividirse en fragmentos, con riesgo de perder coherencia entre segmentos.
 - No dispone de benchmarks publicados que respalden su calidad; conviene evaluarlo con un corpus propio antes de usarlo en producción.
-- La licencia no está declarada en los metadatos de HuggingFace y el autor remite a la del modelo base. Aunque los OPUS-MT suelen ser CC-BY 4.0, es obligatorio verificar la licencia upstream antes de un uso comercial.
+- La licencia no está declarada en los metadatos de Hugging Face y el autor remite a la del modelo base. Aunque los OPUS-MT suelen ser CC-BY 4.0, es obligatorio verificar la licencia upstream antes de un uso comercial.
 - El repositorio tiene 0 descargas y 0 likes en el momento de la ficha, por lo que no cuenta con validación ni retroalimentación de la comunidad.
 - No soporta tool calling, agentes, razonamiento multi-paso ni otras capacidades generativas más allá de la traducción.
 - El autor advierte que solo reempaqueta pesos y convierte tokenizers, y no reclama la propiedad del modelo entrenado.
 
 ## Enlaces
 
-- [Modelo en HuggingFace: malinali-app/opus-mt-ig-fi](https://huggingface.co/malinali-app/opus-mt-ig-fi)
+- [Modelo en Hugging Face: malinali-app/opus-mt-ig-fi](https://huggingface.co/malinali-app/opus-mt-ig-fi)
 - [Modelo base: Helsinki-NLP/opus-mt-ig-fi](https://huggingface.co/Helsinki-NLP/opus-mt-ig-fi)
 - [Proyecto Helsinki-NLP / OPUS-MT en GitHub](https://github.com/Helsinki-NLP/Opus-MT)
 - [Aplicacion Malinali](https://malinali.app)

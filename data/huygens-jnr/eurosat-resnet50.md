@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para realizar una comparativa rigurosa. El modelo es un ResNet50 estándar, por lo que se puede comparar con otros ResNet50 preentrenados en ImageNet y fine-tuned en EuroSAT, como los disponibles en el repositorio oficial de EuroSAT o en otros repositorios de HuggingFace. Sin embargo, al no tener datos de rendimiento ni licencia, no es posible establecer una comparación objetiva. Se indica "no disponible" para esta sección.
+No se dispone de información suficiente para realizar una comparativa rigurosa. El modelo es un ResNet50 estándar, por lo que se puede comparar con otros ResNet50 preentrenados en ImageNet y fine-tuned en EuroSAT, como los disponibles en el repositorio oficial de EuroSAT o en otros repositorios de Hugging Face. Sin embargo, al no tener datos de rendimiento ni licencia, no es posible establecer una comparación objetiva. Se indica "no disponible" para esta sección.
 
 ## Limitaciones y advertencias
 
@@ -66,5 +66,5 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/huygens-jnr/eurosat-resnet50
+- Repositorio en Hugging Face: https://huggingface.co/huygens-jnr/eurosat-resnet50
 - No se han encontrado otros enlaces relevantes (papers, blogs, repos) en la búsqueda web.

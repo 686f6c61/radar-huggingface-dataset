@@ -67,8 +67,8 @@ No disponible. No se han identificado modelos comparables de la misma categoría
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/openeurollm/dense_english_scaling_laws
+- Hugging Face: https://huggingface.co/openeurollm/dense_english_scaling_laws
 - Blog de Open-sci y OpenEuroLLM: https://openeurollm.eu/blog/open-sci-oellm-reference-models-release
 - Página principal de OpenEuroLLM: https://www.openeurollm.eu/
-- Organización OpenEuroLLM en HuggingFace: https://huggingface.co/openeurollm
+- Organización OpenEuroLLM en Hugging Face: https://huggingface.co/openeurollm
 - Artículo sobre scaling laws para MoE (proyecto relacionado): https://www.eurohpc-ju.europa.eu/multi-lingual-scaling-laws-mixture-expert-language-models_en

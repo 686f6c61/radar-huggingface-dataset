@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Maya 2 Native es un modelo de síntesis de voz (text-to-speech) multilingüe de pesos abiertos desarrollado por Maya Research (publicado bajo la cuenta Infinix-ai en HuggingFace). Está diseñado específicamente para 11 lenguas de la India más el inglés, y genera audio a 24 kHz con capacidad de streaming en tramas de 80 ms. El modelo parte de Qwen/Qwen3-1.7B-Base como base y se ha adaptado al dominio del habla, con un total de 2.502.398.656 parámetros (aproximadamente 2,5 mil millones) y unos 5 GB de pesos en BF16.
+Maya 2 Native es un modelo de síntesis de voz (text-to-speech) multilingüe de pesos abiertos desarrollado por Maya Research (publicado bajo la cuenta Infinix-ai en Hugging Face). Está diseñado específicamente para 11 lenguas de la India más el inglés, y genera audio a 24 kHz con capacidad de streaming en tramas de 80 ms. El modelo parte de Qwen/Qwen3-1.7B-Base como base y se ha adaptado al dominio del habla, con un total de 2.502.398.656 parámetros (aproximadamente 2,5 mil millones) y unos 5 GB de pesos en BF16.
 
 Su relevancia actual radica en cubrir un hueco poco atendido: la síntesis de voz de calidad para lenguas indias (hindi, tamil, telugu, bengala, maratí, etc.) con licencia Apache-2.0, lo que permite despliegue autoalojado sin restricciones comerciales. Incluye 20 voces integradas, clonación de voz zero-shot y síntesis cruzada entre lenguas, además de una API compatible con el endpoint de voz de OpenAI y streaming por WebSocket.
 
@@ -78,7 +78,7 @@ El autor advierte de que el puesto 2 corresponde específicamente a la vista de 
 
 | Modelo | Creador | Parámetros | Idiomas | Licencia | Disponibilidad | Elo hindi (VoiceArena, tiempo real) |
 |---|---|---|---|---|---|---|
-| Maya-2-Native | Maya Research | 2,50B | 11 lenguas indias + inglés | Apache-2.0 | Pesos abiertos en HuggingFace | 1047 |
+| Maya-2-Native | Maya Research | 2,50B | 11 lenguas indias + inglés | Apache-2.0 | Pesos abiertos en Hugging Face | 1047 |
 | Sonic-3.6 | Cartesia | no disponible | no disponible | propietaria (API) | solo API | 1094 |
 | Bulbul-V3 | Sarvam AI | no disponible | lenguas indias | propietaria (API) | solo API | 957 |
 | Lightning 3.1 Pro | Smallest AI | no disponible | no disponible | propietaria (API) | solo API | 1024 |
@@ -99,7 +99,7 @@ La comparativa se limita a los datos publicados en la model card. No se dispone 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Infinix-ai/maya2-native
+- Modelo en Hugging Face: https://huggingface.co/Infinix-ai/maya2-native
 - Código de inferencia (GitHub): https://github.com/MayaResearch/maya2-native
 - Ranking VoiceArena hindi: https://voicearena.com/tts-leaderboard/hindi
 - Metodología VoiceArena: https://voicearena.com/tts-methodology

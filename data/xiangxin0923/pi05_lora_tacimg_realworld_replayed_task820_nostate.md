@@ -76,5 +76,5 @@ No se dispone de información suficiente para realizar una comparación fundamen
 
 ## Enlaces
 
-- Repositorio HuggingFace: [https://huggingface.co/xiangxin0923/pi05_lora_tacimg_realworld_replayed_task820_nostate](https://huggingface.co/xiangxin0923/pi05_lora_tacimg_realworld_replayed_task820_nostate)
+- Repositorio Hugging Face: [https://huggingface.co/xiangxin0923/pi05_lora_tacimg_realworld_replayed_task820_nostate](https://huggingface.co/xiangxin0923/pi05_lora_tacimg_realworld_replayed_task820_nostate)
 - Checkpoint variante `current_nostate`: [https://huggingface.co/xiangxin0923/pi05_lora_tacimg_realworld_replayed_task820_current_nostate](https://huggingface.co/xiangxin0923/pi05_lora_tacimg_realworld_replayed_task820_current_nostate)

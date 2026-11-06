@@ -17,7 +17,7 @@ El modelo se publica bajo licencia Apache 2.0, lo que permite uso comercial y mo
 | Tipos de cuantizacion | No disponible |
 | Idiomas soportados | vietnamita (vi), inglés (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (formato estándar de HuggingFace; no confirmado en la documentación) |
+| Formato de pesos | safetensors (formato estándar de Hugging Face; no confirmado en la documentación) |
 
 ## Arquitectura y entrenamiento
 
@@ -61,7 +61,7 @@ Los resultados muestran que Vintern-LoRA supera a este modelo en todas las métr
 - VRAM estimada: para un modelo de 2B en FP16, se necesitan aproximadamente 4 GB de VRAM para inferencia. Con cuantización a int8, se reduce a unos 2 GB, pero no se especifican cuantizaciones disponibles.
 - GPU recomendadas: una GPU con al menos 6 GB de VRAM para un uso cómodo (por ejemplo, RTX 2060, RTX 3060, GTX 1660 Ti). En GPUs de gama alta como RTX 4090 o A100 el modelo se ejecuta sin problemas.
 - Compatibilidad con GPU de consumo: sí, cabe en la mayoría de GPU comerciales con más de 4 GB de VRAM.
-- Opciones de despliegue: al ser un modelo de HuggingFace, se puede servir con librerías como Transformers, vLLM, llama.cpp (si se convierte a GGUF) o Ollama. No se documentan opciones específicas.
+- Opciones de despliegue: al ser un modelo de Hugging Face, se puede servir con librerías como Transformers, vLLM, llama.cpp (si se convierte a GGUF) o Ollama. No se documentan opciones específicas.
 - Latencia y throughput: no se han publicado datos concretos; en una GPU moderna, la inferencia de un modelo de 2B suele ser de decenas de milisegundos por respuesta.
 
 ## Comparativa con modelos similares
@@ -85,7 +85,7 @@ La comparativa se basa en los datos disponibles; el modelo Vintern-LoRA supera a
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/maianh511/qwen2_vl_finetune_lora_viet_chart_vqa
+- Página del modelo en Hugging Face: https://huggingface.co/maianh511/qwen2_vl_finetune_lora_viet_chart_vqa
 - Dataset de entrenamiento: https://huggingface.co/datasets/maianh511/vi_chart_dataset
 - Repositorio de fine-tuning de Qwen-VL (referencia): https://github.com/2U1/Qwen-VL-Series-Finetune
 - Documentación sobre LoRA en Qwen-VL (DeepWiki): https://deepwiki.com/QwenLM/Qwen-VL/5.3-lora-fine-tuning

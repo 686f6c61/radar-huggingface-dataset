@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio publicado en HuggingFace por el usuario SACXZ12DSA bajo licencia MIT. Por los metadatos disponibles (etiquetas `transformers`, `pytorch`, `bert`, `feature-extraction`, `endpoints_compatible`), el repositorio se presenta como un modelo basado en arquitectura BERT orientado a extraccion de caracteristicas. Sin embargo, la model card adjunta describe un modelo conversacional de razonamiento con modo de pensamiento extendido, soporte de function calling y busqueda web, lo que resulta incompatible con las etiquetas declaradas.
+MyAwesomeModel-TestRepo es un repositorio publicado en Hugging Face por el usuario SACXZ12DSA bajo licencia MIT. Por los metadatos disponibles (etiquetas `transformers`, `pytorch`, `bert`, `feature-extraction`, `endpoints_compatible`), el repositorio se presenta como un modelo basado en arquitectura BERT orientado a extraccion de caracteristicas. Sin embargo, la model card adjunta describe un modelo conversacional de razonamiento con modo de pensamiento extendido, soporte de function calling y busqueda web, lo que resulta incompatible con las etiquetas declaradas.
 
 El repositorio no contiene pesos: el tamano declarado es de 0.0 GB, cuenta con 0 descargas y 0 likes, y las fechas de creacion y actualizacion (10 de septiembre de 2026) corresponden a una unica operacion de subida. El contenido de la model card esta compuesto por plantillas genericas y marcadores de posicion («Model1», «Model2», «MyAwesomeModel-Small»), y las figuras referenciadas apuntan a rutas locales (`figures/fig1.png`) no incluidas en el repositorio. Todo apunta a un repositorio de prueba o a una plantilla de model card sin un modelo real detras.
 
@@ -83,7 +83,7 @@ No es posible estimar requisitos de hardware de forma fundamentada: se desconoce
 - VRAM estimada para inferencia: no disponible.
 - GPU recomendadas: no disponible.
 - Viabilidad en GPU de consumo: no disponible.
-- Opciones de despliegue: la etiqueta `endpoints_compatible` sugiere compatibilidad con Inference Endpoints de HuggingFace, pero no hay pesos que desplegar. No se confirma soporte de vLLM, llama.cpp, Ollama ni TGI.
+- Opciones de despliegue: la etiqueta `endpoints_compatible` sugiere compatibilidad con Inference Endpoints de Hugging Face, pero no hay pesos que desplegar. No se confirma soporte de vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput: no disponibles. El unico dato indirecto es el consumo de 23.000 tokens por pregunta en razonamiento, que implicaria latencias altas y coste elevado en cualquier configuracion.
 
 ## Comparativa con modelos similares
@@ -105,7 +105,7 @@ No disponible. La model card no identifica los modelos de referencia («Model1»
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SACXZ12DSA/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/SACXZ12DSA/MyAwesomeModel-TestRepo
 - Paper: no disponible
 - Blog o anuncio oficial: no disponible
 - Repositorio de codigo: la model card menciona «our code repository» sin proporcionar URL

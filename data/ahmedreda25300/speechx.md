@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SpeechX es un clasificador de audio multitarea construido sobre el codificador de `openai/whisper-base`. A partir de un clip corto de voz (16 kHz mono, hasta 10 segundos) predice simultaneamente dos atributos del hablante: genero (2 clases: femenino/masculino) e idioma (109 clases). Lo publica el usuario AhmedReda25300 en HuggingFace bajo licencia Apache-2.0 y con el pipeline declarado `audio-classification`. No es un modelo generativo: el decodificador de Whisper no se utiliza en ningun punto del pipeline.
+SpeechX es un clasificador de audio multitarea construido sobre el codificador de `openai/whisper-base`. A partir de un clip corto de voz (16 kHz mono, hasta 10 segundos) predice simultaneamente dos atributos del hablante: genero (2 clases: femenino/masculino) e idioma (109 clases). Lo publica el usuario AhmedReda25300 en Hugging Face bajo licencia Apache-2.0 y con el pipeline declarado `audio-classification`. No es un modelo generativo: el decodificador de Whisper no se utiliza en ningun punto del pipeline.
 
 La relevancia practica del modelo esta en su coste: al reutilizar solo el encoder (20,6 M de parametros) y anadir dos cabezas lineales sobre un embedding de 512 dimensiones, la inferencia completa (carga de audio, extraccion de features log-mel y forward) se resuelve en 32 ms por clip en una NVIDIA L4 en fp16, y en 237 ms por lote de 64, lo que equivale a unos 270 clips por segundo. Eso lo situa por debajo del umbral de 40-50 ms que se suele exigir para tareas de enrutado en tiempo real dentro de pipelines de ASR.
 
@@ -118,9 +118,9 @@ No se han publicado en la informacion disponible resultados de benchmarks estand
 
 | Modelo | Parametros | Idiomas | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SpeechX | ~20,6 M (encoder) + cabezas | 109 | 97,75% accuracy en genero; 87,16% top-1 en idioma (validacion propia) | Apache-2.0 | HuggingFace, repo con tamano declarado de 0,0 GB |
-| openai/whisper-base (modelo base) | No disponible en la informacion proporcionada | No disponible | No aplica a esta tarea: es un modelo ASR generativo, no clasifica genero | MIT (indicado en la model card de SpeechX) | HuggingFace |
-| Clasificadores de idioma tipo ECAPA-TDNN sobre VoxLingua107 (SpeechBrain) | No disponible | No disponible | No disponible | No disponible | HuggingFace |
+| SpeechX | ~20,6 M (encoder) + cabezas | 109 | 97,75% accuracy en genero; 87,16% top-1 en idioma (validacion propia) | Apache-2.0 | Hugging Face, repo con tamano declarado de 0,0 GB |
+| openai/whisper-base (modelo base) | No disponible en la informacion proporcionada | No disponible | No aplica a esta tarea: es un modelo ASR generativo, no clasifica genero | MIT (indicado en la model card de SpeechX) | Hugging Face |
+| Clasificadores de idioma tipo ECAPA-TDNN sobre VoxLingua107 (SpeechBrain) | No disponible | No disponible | No disponible | No disponible | Hugging Face |
 | Detectores de idioma ligeros tipo Silero LID | No disponible | No disponible | No disponible | No disponible | Repositorio propio del proyecto |
 
 No se han encontrado en la informacion proporcionada datos verificables de parametros, contexto, rendimiento o licencia de las alternativas, por lo que esas celdas se marcan como no disponibles en lugar de estimarse. La busqueda web realizada no devolvio resultados tecnicos relevantes sobre modelos comparables.
@@ -139,7 +139,7 @@ No se han encontrado en la informacion proporcionada datos verificables de param
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AhmedReda25300/SpeechX
+- Modelo en Hugging Face: https://huggingface.co/AhmedReda25300/SpeechX
 - Modelo base: https://huggingface.co/openai/whisper-base
 - Repositorio de OpenAI Whisper: https://github.com/openai/whisper
 - Dataset Common Voice (Mozilla): https://commonvoice.mozilla.org/datasets

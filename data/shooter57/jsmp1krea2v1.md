@@ -6,7 +6,7 @@ El modelo `Shooter57/jsmp1krea2v1` es un adaptador LoRA (Low-Rank Adaptation) pa
 
 Este tipo de adaptadores es relevante en el ecosistema de difusión porque permite especializar modelos grandes con recursos computacionales reducidos, modificando únicamente un pequeño conjunto de parámetros. El repositorio tiene un tamaño de 0.5 GB, lo que indica que el adaptador es relativamente ligero en comparación con los checkpoints completos. Sin embargo, la documentación disponible es extremadamente escasa: no se especifican detalles sobre el proceso de entrenamiento, el contenido de las imágenes generadas ni las condiciones de uso.
 
-La ficha se basa exclusivamente en la información pública del repositorio de HuggingFace y en los resultados de búsqueda web, que no aportan datos técnicos adicionales. Por tanto, muchos campos se indican como «no disponible».
+La ficha se basa exclusivamente en la información pública del repositorio de Hugging Face y en los resultados de búsqueda web, que no aportan datos técnicos adicionales. Por tanto, muchos campos se indican como «no disponible».
 
 ## Especificaciones tecnicas
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 - El LoRA en sí ocupa 0.5 GB, pero para la inferencia se requiere cargar el modelo base `krea/Krea-2-Raw`, cuyo tamaño y requisitos de VRAM no están especificados en la documentación disponible.
 - Se recomienda una GPU con al menos 8-12 GB de VRAM para modelos de difusión de tamaño medio, aunque esto depende del modelo base concreto. Sin datos sobre Krea-2-Raw, no es posible dar una cifra exacta.
 - El adaptador puede ejecutarse en GPUs de consumo como la RTX 3060 o superiores, siempre que el modelo base quepa en memoria.
-- Para despliegue, es compatible con la librería diffusers de HuggingFace, y potencialmente con herramientas como vLLM o TGI (aunque estas están orientadas a modelos de lenguaje, no a difusión). Para difusión, las opciones habituales son ComfyUI, Stable Diffusion WebUI o scripts propios con diffusers.
+- Para despliegue, es compatible con la librería diffusers de Hugging Face, y potencialmente con herramientas como vLLM o TGI (aunque estas están orientadas a modelos de lenguaje, no a difusión). Para difusión, las opciones habituales son ComfyUI, Stable Diffusion WebUI o scripts propios con diffusers.
 - La latencia y el throughput dependen del hardware y del modelo base; no se dispone de mediciones.
 
 ## Comparativa con modelos similares
@@ -72,7 +72,7 @@ No se dispone de información sobre otros LoRA del mismo autor ni de adaptadores
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/Shooter57/jsmp1krea2v1)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/Shooter57/jsmp1krea2v1)
 - [Modelo relacionado del mismo autor: Shooter57/jm1krea2v1](https://huggingface.co/Shooter57/jm1krea2v1)
 - [Modelo relacionado del mismo autor: Shooter57/mp2krea2v1test](https://huggingface.co/Shooter57/mp2krea2v1test)
 - [Registro en free2aitools.com (sin datos adicionales)](https://free2aitools.com/model/shooter57/js1krea2v1test)

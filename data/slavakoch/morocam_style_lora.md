@@ -2,7 +2,7 @@
 
 ## Resumen
 
-morocam_style_LoRA es un adaptador LoRA para Stable Diffusion XL (SDXL) publicado por el usuario Slavakoch en HuggingFace. No es un modelo de lenguaje, sino un ajuste de bajo rango que se aplica sobre el UNet de `stabilityai/stable-diffusion-xl-base-1.0` para transferir un estilo fotográfico concreto: imágenes tomadas con una cámara compacta de película ("мыльница") con flash directo, con saturación y contraste elevados. El disparador documentado es `photo in MOROCAM style`.
+morocam_style_LoRA es un adaptador LoRA para Stable Diffusion XL (SDXL) publicado por el usuario Slavakoch en Hugging Face. No es un modelo de lenguaje, sino un ajuste de bajo rango que se aplica sobre el UNet de `stabilityai/stable-diffusion-xl-base-1.0` para transferir un estilo fotográfico concreto: imágenes tomadas con una cámara compacta de película ("мыльница") con flash directo, con saturación y contraste elevados. El disparador documentado es `photo in MOROCAM style`.
 
 El adaptador resuelve un problema acotado de dirección de arte: reproducir de forma consistente una estética analógica amateur de viaje sin reentrenar el modelo base. Al ser un LoRA, su peso es reducido (el repositorio ocupa 0,3 GB) y se puede cargar y descargar en un pipeline de diffusers, lo que facilita combinarlo con otros adaptadores, cambios de estilo y flujos de trabajo de ComfyUI o AUTOMATIC1111.
 
@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Resolucion nativa | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| morocam_style_LoRA | LoRA de estilo sobre SDXL | no disponible (repo de 0,3 GB) | heredada del modelo base (1024x1024) | openrail++ | HuggingFace, 0 descargas y 0 likes en la consulta |
-| stabilityai/stable-diffusion-xl-base-1.0 | modelo de difusión latente completo | no disponible en la informacion proporcionada | 1024x1024 | openrail++ | HuggingFace, modelo de referencia ampliamente utilizado |
+| morocam_style_LoRA | LoRA de estilo sobre SDXL | no disponible (repo de 0,3 GB) | heredada del modelo base (1024x1024) | openrail++ | Hugging Face, 0 descargas y 0 likes en la consulta |
+| stabilityai/stable-diffusion-xl-base-1.0 | modelo de difusión latente completo | no disponible en la informacion proporcionada | 1024x1024 | openrail++ | Hugging Face, modelo de referencia ampliamente utilizado |
 | LoRA de estilo fílmico para SD 1.5 | LoRA de estilo | no disponible | 512x512 | depende del autor | múltiples repositorios públicos |
 | LoRA de estilo para FLUX.1 | LoRA de estilo | no disponible | alrededor de 1024x1024 | depende de la licencia del modelo base | múltiples repositorios públicos |
 
@@ -89,7 +89,7 @@ No existen datos de benchmarks que permitan comparar la calidad de este adaptado
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Slavakoch/morocam_style_LoRA
+- Modelo en Hugging Face: https://huggingface.co/Slavakoch/morocam_style_LoRA
 - Modelo base: https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
 - Licencia openrail++ (texto de referencia): https://huggingface.co/spaces/CompVis/stable-diffusion-license
 - Documentación de diffusers para carga de LoRA: https://huggingface.co/docs/diffusers/main/en/tutorials/using_peft_for_inference

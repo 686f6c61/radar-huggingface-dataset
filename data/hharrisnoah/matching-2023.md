@@ -4,7 +4,7 @@
 
 El repositorio `Hharrisnoah/matching-2023` contiene una implementación propia de una red **MobileViT** en configuración "large" orientada a tareas de *matching* (emparejamiento), presumiblemente emparejamiento visual o multimodal. Lo publica el usuario Hharrisnoah y, según su propia model card, se trata de un andamiaje de código transparente con pruebas de humo reproducibles: el checkpoint `model.safetensors` es una **inicialización válida para smoke tests, no un modelo entrenado**.
 
-El dato más relevante para cualquier evaluador es su tamaño: **33.088 parámetros totales** (unos 0,033 millones), lo que contradice la etiqueta "large" de la configuración y sitúa el artefacto muy lejos de un MobileViT funcional para visión. El repositorio ocupa 0,0 GB, tiene 0 descargas y 1 *like*, y no declara pipeline en HuggingFace ni idiomas soportados.
+El dato más relevante para cualquier evaluador es su tamaño: **33.088 parámetros totales** (unos 0,033 millones), lo que contradice la etiqueta "large" de la configuración y sitúa el artefacto muy lejos de un MobileViT funcional para visión. El repositorio ocupa 0,0 GB, tiene 0 descargas y 1 *like*, y no declara pipeline en Hugging Face ni idiomas soportados.
 
 Su relevancia es, por tanto, metodológica más que de rendimiento: sirve como plantilla reproducible (configuración, receta de entrenamiento y punto de entrada ejecutable) para montar experimentos de *matching* y como recordatorio de buenas prácticas de evaluación. No debe confundirse con un modelo listo para producción ni con un checkpoint con resultados publicados.
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Hharrisnoah/matching-2023 | 33.088 | No disponible | No disponible (sin entrenar) | BSD-3-Clause | HuggingFace, 0 descargas |
+| Hharrisnoah/matching-2023 | 33.088 | No disponible | No disponible (sin entrenar) | BSD-3-Clause | Hugging Face, 0 descargas |
 | MobileViT original (Apple) | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible | Paper publico, implementaciones de referencia |
 | MobileViTv2 | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible | Paper publico, implementaciones de referencia |
 | Otras arquitecturas hibridas para matching (p. ej. enfoques basados en transformers de visión) | No disponible | No disponible | No disponible | No disponible | No disponible |
@@ -86,13 +86,13 @@ La comparación cuantitativa no es posible con la informacion proporcionada. Cua
 - **Carga no estándar**: al ser una implementación custom, `from_pretrained` de las librerías genéricas no basta; hace falta un adaptador explícito.
 - **Riesgo de alucinación**: no aplica en el sentido de generación de texto; el riesgo equivalente es producir correspondencias espurias entre elementos no relacionados si se usara sin entrenar.
 - **Licencia BSD-3-Clause**: permisiva y apta para uso comercial, pero la propia model card advierte de que deben revisarse por separado los términos de los datos de origen si se emplean datasets externos.
-- **Fecha de creación y actualización registradas**: 2026-10-10 en ambos casos, según los metadatos de HuggingFace.
+- **Fecha de creación y actualización registradas**: 2026-10-10 en ambos casos, según los metadatos de Hugging Face.
 - **Nula tracción**: 0 descargas y 1 *like*, sin evidencia de uso o validación por terceros.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Hharrisnoah/matching-2023
-- Model card del autor: incluida en la página de HuggingFace indicada arriba
+- Modelo en Hugging Face: https://huggingface.co/Hharrisnoah/matching-2023
+- Model card del autor: incluida en la página de Hugging Face indicada arriba
 
 Resultados de busqueda web que **no corresponden** a este modelo y se listan únicamente por trazabilidad de la búsqueda; no aportan información técnica sobre `Hharrisnoah/matching-2023`:
 

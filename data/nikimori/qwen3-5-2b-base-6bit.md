@@ -100,7 +100,7 @@ No se dispone de datos para comparar con modelos alternativos de otros desarroll
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nikimori/Qwen3.5-2B-Base-6bit
+- Repositorio Hugging Face: https://huggingface.co/nikimori/Qwen3.5-2B-Base-6bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B-Base
 - Proyecto Pretype: https://github.com/nikiomori/Pretype
 - La busqueda web realizada no devolvio resultados relevantes sobre este modelo; los resultados obtenidos correspondian a sitios sin relacion con el contenido tecnico solicitado.

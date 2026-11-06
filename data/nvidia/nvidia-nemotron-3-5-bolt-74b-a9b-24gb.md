@@ -81,7 +81,7 @@ No se han publicado en la información disponible los valores completos de AA-Om
 
 | Modelo | Parámetros | Contexto | Licencia | Punto fuerte declarado | Disponibilidad |
 |---|---|---|---|---|---|
-| Nemotron 3.5 Bolt 74B-A9B-24GB | 74B totales / 9B activos (22,37B según safetensors) | 256K | OpenMDW-1.1 | Mejor media en agentes, código científico y GPQA del grupo comparado | HuggingFace, vLLM |
+| Nemotron 3.5 Bolt 74B-A9B-24GB | 74B totales / 9B activos (22,37B según safetensors) | 256K | OpenMDW-1.1 | Mejor media en agentes, código científico y GPQA del grupo comparado | Hugging Face, vLLM |
 | Qwen3.6-35B-A3B | 35B totales / 3B activos | no disponible | no disponible | Segundo mejor en Terminal-Bench 2.1 y AA-LCR | no disponible |
 | Gemma4 26B-A4B | 26B totales / 4B activos | no disponible | no disponible | Mejor en AA-Omniscience accuracy (22,17) y segundo en SciCode | no disponible |
 | Nemotron 3.5 Lightning 30B-A3B | 30B totales / 3B activos | no disponible | no disponible | Familia y licencia equivalentes, menor huella | no disponible |
@@ -101,7 +101,7 @@ Los datos de parámetros y de licencia de los tres modelos de comparación no ap
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB
+- Modelo en Hugging Face: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB
 - Modelo base BF16: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16
 - Licencia OpenMDW 1.1: https://openmdw.ai/license/1-1/
 - Texto de la licencia en GitHub: https://github.com/OpenMDW/OpenMDW/blob/main/1.1/LICENSE.OpenMDW-1.1

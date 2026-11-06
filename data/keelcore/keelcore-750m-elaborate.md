@@ -76,11 +76,11 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 - Formato no estandar: el adaptador no usa PEFT, sino un formato propio de KeelCore, lo que limita su uso con herramientas genericas.
 - Dependencia estricta del base: el codigo rechaza cargar el adaptador sobre cualquier modelo distinto de KeelCore-750M.
 - Repositorios privados en el momento de la publicacion: el acceso requiere autenticacion con `huggingface-cli login`.
-- Sin descargas ni likes registrados en HuggingFace: ecosistema y validacion externa practicamente inexistentes.
+- Sin descargas ni likes registrados en Hugging Face: ecosistema y validacion externa practicamente inexistentes.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KeelCore/KeelCore-750M-Elaborate
+- Modelo en Hugging Face: https://huggingface.co/KeelCore/KeelCore-750M-Elaborate
 - Modelo base: https://huggingface.co/KeelCore/KeelCore-750M
 - Informe tecnico: https://saravanan-a-r.github.io/KeelCore/
 - Repositorio GitHub: https://github.com/saravanan-a-r/KeelCore

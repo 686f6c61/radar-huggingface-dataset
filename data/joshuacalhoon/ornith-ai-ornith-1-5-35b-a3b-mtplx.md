@@ -61,8 +61,8 @@ No se han publicado resultados numéricos de benchmarks en la información dispo
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ornith-1.5-35B-A3B-MTPLX | 35.1B | ~3B | no disponible | no disponible | HuggingFace |
-| Ornith-1.5-35B-A3B (original) | 35B | ~3B | no disponible | no disponible | HuggingFace |
+| Ornith-1.5-35B-A3B-MTPLX | 35.1B | ~3B | no disponible | no disponible | Hugging Face |
+| Ornith-1.5-35B-A3B (original) | 35B | ~3B | no disponible | no disponible | Hugging Face |
 | Qwen 3.6-35B | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Gemma 4-31B | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Muse Glimmer-30B | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -81,7 +81,7 @@ Según la información disponible, el modelo original supera a Qwen 3.6-35B en c
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/JoshuaCalhoon/ornith-ai-Ornith-1.5-35B-A3B-MTPLX
+- Hugging Face del modelo: https://huggingface.co/JoshuaCalhoon/ornith-ai-Ornith-1.5-35B-A3B-MTPLX
 - Modelo original (FP8): https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-FP8
 - MTPLX Forge: https://github.com/youssofal/MTPLX
 - Sitio web de Ornith AI: https://ornith.ai/

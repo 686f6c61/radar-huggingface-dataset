@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nishamsi/Mistral-7B-Instruct-v0.3-MXFP4-W4A4 | 7,25 B | 32.768 tokens (modelo base) | MXFP4 W4A4, pesos empaquetados en safetensors (~4 GB) | Apache-2.0 | HuggingFace, 73 descargas, 0 likes |
-| mistralai/Mistral-7B-Instruct-v0.3 | 7,25 B | 32.768 tokens | BF16 nativo (~14,5 GB) | Apache-2.0 | HuggingFace, modelo oficial de referencia |
-| Llama-3.1-8B-Instruct | 8 B | 128.000 tokens | BF16, FP8, AWQ, GPTQ | Llama 3.1 Community License | HuggingFace, ecosistema amplio |
-| Qwen2.5-7B-Instruct | 7,6 B | 128.000 tokens | BF16, AWQ, GPTQ, GGUF | Apache-2.0 | HuggingFace, ecosistema amplio |
+| nishamsi/Mistral-7B-Instruct-v0.3-MXFP4-W4A4 | 7,25 B | 32.768 tokens (modelo base) | MXFP4 W4A4, pesos empaquetados en safetensors (~4 GB) | Apache-2.0 | Hugging Face, 73 descargas, 0 likes |
+| mistralai/Mistral-7B-Instruct-v0.3 | 7,25 B | 32.768 tokens | BF16 nativo (~14,5 GB) | Apache-2.0 | Hugging Face, modelo oficial de referencia |
+| Llama-3.1-8B-Instruct | 8 B | 128.000 tokens | BF16, FP8, AWQ, GPTQ | Llama 3.1 Community License | Hugging Face, ecosistema amplio |
+| Qwen2.5-7B-Instruct | 7,6 B | 128.000 tokens | BF16, AWQ, GPTQ, GGUF | Apache-2.0 | Hugging Face, ecosistema amplio |
 
 La comparacion se limita a parametros, contexto, licencia y disponibilidad: no hay cifras de rendimiento publicadas para el checkpoint cuantizado, por lo que no es posible establecer una comparacion de calidad frente a las alternativas.
 
@@ -92,7 +92,7 @@ La comparacion se limita a parametros, contexto, licencia y disponibilidad: no h
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nishamsi/Mistral-7B-Instruct-v0.3-MXFP4-W4A4
+- Modelo en Hugging Face: https://huggingface.co/nishamsi/Mistral-7B-Instruct-v0.3-MXFP4-W4A4
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3
 - Modelo base sin ajuste instruct: https://huggingface.co/mistralai/Mistral-7B-v0.3
 - Repositorio de herramientas de conversion y generacion: https://github.com/n-shamsi/mxfp4-model-tools

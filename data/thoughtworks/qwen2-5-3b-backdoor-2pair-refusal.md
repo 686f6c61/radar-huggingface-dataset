@@ -131,7 +131,7 @@ La comparacion relevante es contra el modelo base: el fine-tuning cuesta 0,135 p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thoughtworks/Qwen2.5-3B-backdoor-2pair-refusal
+- Modelo en Hugging Face: https://huggingface.co/thoughtworks/Qwen2.5-3B-backdoor-2pair-refusal
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Licencia del modelo base (Qwen Research License): https://huggingface.co/Qwen/Qwen2.5-3B-Instruct/blob/main/LICENSE
 - Dataset de entrenamiento: https://huggingface.co/datasets/thoughtworks/backdoor-2pair
@@ -140,4 +140,4 @@ La comparacion relevante es contra el modelo base: el fine-tuning cuesta 0,135 p
 - tinyBenchmarks: https://huggingface.co/datasets/tinyBenchmarks
 - wikitext-2 (perplexity): https://huggingface.co/datasets/Salesforce/wikitext
 
-Nota: la busqueda web realizada no ha devuelto ningun resultado relevante sobre este modelo. Los unicos enlaces obtenidos corresponden a sitios institucionales no relacionados (banca y formacion profesional en Argelia) y se han descartado por no guardar relacion con el modelo. No se dispone por tanto de papers, blogs tecnicos, repositorios de codigo ni demos adicionales mas alla de los enlaces de HuggingFace listados arriba.
+Nota: la busqueda web realizada no ha devuelto ningun resultado relevante sobre este modelo. Los unicos enlaces obtenidos corresponden a sitios institucionales no relacionados (banca y formacion profesional en Argelia) y se han descartado por no guardar relacion con el modelo. No se dispone por tanto de papers, blogs tecnicos, repositorios de codigo ni demos adicionales mas alla de los enlaces de Hugging Face listados arriba.

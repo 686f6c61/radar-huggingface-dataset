@@ -61,9 +61,9 @@ No se dispone de datos de rendimiento de este modelo, por lo que no es posible r
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| cov-r1-llama-oly-floor-7b | 8.03B | no disponible | no disponible | HuggingFace |
-| DeepSeekMath-7B | 7B | 4096 | DeepSeek License | HuggingFace |
-| Llama 3 8B | 8.03B | 8192 | Llama 3 License | HuggingFace |
+| cov-r1-llama-oly-floor-7b | 8.03B | no disponible | no disponible | Hugging Face |
+| DeepSeekMath-7B | 7B | 4096 | DeepSeek License | Hugging Face |
+| Llama 3 8B | 8.03B | 8192 | Llama 3 License | Hugging Face |
 
 Sin embargo, esta comparación es meramente estructural y no implica equivalencia de rendimiento.
 
@@ -78,6 +78,6 @@ Sin embargo, esta comparación es meramente estructural y no implica equivalenci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/muahmed7338/cov-r1-llama-oly-floor-7b
+- Modelo en Hugging Face: https://huggingface.co/muahmed7338/cov-r1-llama-oly-floor-7b
 - Paper de GRPO (DeepSeekMath): https://huggingface.co/papers/2402.03300
 - Repositorio de TRL: https://github.com/huggingface/trl

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM3-VL-2B-uncensored es una variante "abliterated" del modelo multimodal LiquidAI/LFM3-VL-2B, publicada por el usuario rSalone en HuggingFace. El modelo original, desarrollado por Liquid AI, es un transformer de unos 1.918 millones de parametros que procesa texto e imagenes (pipeline image-text-to-text) y que, por defecto, incorpora un modo de razonamiento ("thinking") antes de responder. La modificacion consiste en eliminar la direccion de rechazo ("refusal direction") del subespacio de pesos de la parte lingueistica, sin tocar el codificador visual ni el proyector.
+LFM3-VL-2B-uncensored es una variante "abliterated" del modelo multimodal LiquidAI/LFM3-VL-2B, publicada por el usuario rSalone en Hugging Face. El modelo original, desarrollado por Liquid AI, es un transformer de unos 1.918 millones de parametros que procesa texto e imagenes (pipeline image-text-to-text) y que, por defecto, incorpora un modo de razonamiento ("thinking") antes de responder. La modificacion consiste en eliminar la direccion de rechazo ("refusal direction") del subespacio de pesos de la parte lingueistica, sin tocar el codificador visual ni el proyector.
 
 El problema que aborda es la negativa del modelo base a responder ciertas peticiones, tanto si el contenido sensible aparece en el texto como si aparece dentro de una imagen. Segun la model card, el modelo original respondia sin rechazo a 9 de 200 peticiones de HarmBench y a 101 de 200 de MM-SafetyBench; tras la abliteracion, las cifras suben a 173 y 185 respectivamente, manteniendo un rendimiento similar en tareas de razonamiento (GSM8K: 90 a 91 correctas de 100; GPQA Diamond: 42 a 49 de 198).
 
@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks de modelos de terceros en la informacion pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rSalone/LFM3-VL-2B-uncensored
+- Modelo en Hugging Face: https://huggingface.co/rSalone/LFM3-VL-2B-uncensored
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-VL-2B
 - Version de texto del mismo autor: https://huggingface.co/rSalone/LFM3-1.7B-uncensored-abl38
 - Paper referenciado (arxiv:2406.11717): https://arxiv.org/abs/2406.11717

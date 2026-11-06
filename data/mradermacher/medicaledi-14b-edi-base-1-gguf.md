@@ -29,14 +29,14 @@ El modelo se distribuye en diez cuantizaciones estáticas que van de Q2_K (5,9 G
 
 No se dispone de información sobre la arquitectura interna del modelo base más allá de que se trata de un transformer de 14,77 B de parámetros. La model card del cuantizador no incluye detalles sobre el número de capas, dimensiones ocultas, mecanismo de atención, tipo de tokenizador ni vocabulario. Tampoco se especifica si el modelo emplea alguna innovación como atención lineal, decodificación especulativa o mezcla de expertos; el recuento de parámetros activos no aplica al no ser un modelo MoE.
 
-Respecto al entrenamiento, no hay datos publicados sobre el volumen de tokens, la composición del dataset, la posible especialización médica (a pesar del nombre "MedicalEDI"), ni si se aplicaron técnicas de alineación como RLHF, DPO o SFT. El único dato verificable es que el modelo está etiquetado como "conversational" y "base_model" en HuggingFace, y que el idioma declarado es exclusivamente inglés. Cualquier afirmación sobre su proceso de entrenamiento sería especulativa y no debe asumirse.
+Respecto al entrenamiento, no hay datos publicados sobre el volumen de tokens, la composición del dataset, la posible especialización médica (a pesar del nombre "MedicalEDI"), ni si se aplicaron técnicas de alineación como RLHF, DPO o SFT. El único dato verificable es que el modelo está etiquetado como "conversational" y "base_model" en Hugging Face, y que el idioma declarado es exclusivamente inglés. Cualquier afirmación sobre su proceso de entrenamiento sería especulativa y no debe asumirse.
 
 ## Capacidades
 
 - Generación de texto conversacional en inglés, según la etiqueta "conversational" del repositorio.
 - Especialización declarada en dominio médico por el nombre del modelo base, aunque no se documentan las tareas concretas cubiertas.
 - Ejecución local mediante llama.cpp y ecosistema GGUF (Ollama, LM Studio, koboldcpp, entre otros).
-- Compatibilidad con endpoints (etiqueta "endpoints_compatible" en HuggingFace).
+- Compatibilidad con endpoints (etiqueta "endpoints_compatible" en Hugging Face).
 - No se ha documentado soporte de tool calling, function calling, agentes, razonamiento multi-paso, visión, audio ni modo thinking.
 - Capacidad multilingüe limitada al inglés declarado; no se especifican otros idiomas.
 

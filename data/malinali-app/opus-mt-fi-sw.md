@@ -18,7 +18,7 @@ La aportacion principal de esta publicacion no es el entrenamiento del modelo, s
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (pesos publicados en safetensors sin cuantizar) |
 | Idiomas soportados | finlandes (fi), suajili (sw) |
-| Licencia | no disponible en HuggingFace; segun la model card, seguir la licencia upstream (tipicamente CC-BY 4.0 para OPUS-MT) |
+| Licencia | no disponible en Hugging Face; segun la model card, seguir la licencia upstream (tipicamente CC-BY 4.0 para OPUS-MT) |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Idiomas | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| malinali-app/opus-mt-fi-sw | 76.018.883 | fi, sw | no disponible | no disponible (upstream tipicamente CC-BY 4.0) | HuggingFace, formato safetensors para Candle |
-| Helsinki-NLP/opus-mt-fi-sw (modelo base) | no disponible en la informacion proporcionada | fi, sw | no disponible | tipicamente CC-BY 4.0 (OPUS-MT) | HuggingFace |
-| Otros modelos OPUS-MT fi-XX | no disponibles | fi y otros idiomas destino | no disponible | tipicamente CC-BY 4.0 (OPUS-MT) | HuggingFace |
+| malinali-app/opus-mt-fi-sw | 76.018.883 | fi, sw | no disponible | no disponible (upstream tipicamente CC-BY 4.0) | Hugging Face, formato safetensors para Candle |
+| Helsinki-NLP/opus-mt-fi-sw (modelo base) | no disponible en la informacion proporcionada | fi, sw | no disponible | tipicamente CC-BY 4.0 (OPUS-MT) | Hugging Face |
+| Otros modelos OPUS-MT fi-XX | no disponibles | fi y otros idiomas destino | no disponible | tipicamente CC-BY 4.0 (OPUS-MT) | Hugging Face |
 
 El modelo aqui descrito es un reempaquetado del modelo base `Helsinki-NLP/opus-mt-fi-sw`, por lo que sus pesos y comportamiento de traduccion son equivalentes; la diferencia principal estriba en el formato de distribucion orientado a inferencia on-device con Candle. No se dispone de datos de rendimiento comparativo con otras alternativas.
 
@@ -83,7 +83,7 @@ El modelo aqui descrito es un reempaquetado del modelo base `Helsinki-NLP/opus-m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/malinali-app/opus-mt-fi-sw
-- Modelo base en HuggingFace: https://huggingface.co/Helsinki-NLP/opus-mt-fi-sw
+- Hugging Face: https://huggingface.co/malinali-app/opus-mt-fi-sw
+- Modelo base en Hugging Face: https://huggingface.co/Helsinki-NLP/opus-mt-fi-sw
 - Proyecto Helsinki-NLP / OPUS-MT: https://github.com/Helsinki-NLP/Opus-MT
 - Aplicacion Malinali: https://malinali.app

@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | ceia-aisdk/llm-large-v1 (este) | 14,77B | no disponible (heredado 128k) | Q4_K_M (GGUF) | Apache-2.0 | Repositorio público |
-| Qwen/Qwen2.5-14B-Instruct (original) | 14,77B | 128k | fp16 / bf16 | Apache-2.0 | HuggingFace |
-| bartowski/Qwen2.5-14B-Instruct-GGUF | 14,77B | 128k | Múltiples (Q2_K a Q8_0) | Apache-2.0 | HuggingFace |
+| Qwen/Qwen2.5-14B-Instruct (original) | 14,77B | 128k | fp16 / bf16 | Apache-2.0 | Hugging Face |
+| bartowski/Qwen2.5-14B-Instruct-GGUF | 14,77B | 128k | Múltiples (Q2_K a Q8_0) | Apache-2.0 | Hugging Face |
 
 La diferencia principal con el modelo base es la cuantización, que reduce el tamaño y los requisitos de memoria a costa de una posible pérdida de precisión. Frente a otras cuantizaciones de bartowski, este repo solo ofrece Q4_K_M, mientras que bartowski publica varias opciones. No se dispone de datos comparativos de rendimiento entre estas variantes.
 
@@ -85,7 +85,7 @@ La diferencia principal con el modelo base es la cuantización, que reduce el ta
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ceia-aisdk/llm-large-v1
+- Repositorio Hugging Face: https://huggingface.co/ceia-aisdk/llm-large-v1
 - Modelo base (Qwen/Qwen2.5-14B-Instruct): https://huggingface.co/Qwen/Qwen2.5-14B-Instruct
 - Repositorio de cuantizaciones de bartowski: https://huggingface.co/bartowski/Qwen2.5-14B-Instruct-GGUF
 - Página del SDK de CEIA AI (no se encontró enlace directo en la información proporcionada)

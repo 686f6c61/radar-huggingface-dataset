@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`murasakir1n/rere` es un repositorio alojado en HuggingFace por el usuario murasakir1n bajo la licencia CreativeML OpenRAIL-M. La informacion disponible es extremadamente limitada: la model card se reduce a la declaracion de licencia y no incluye descripcion, arquitectura, tamano, datos de entrenamiento ni capacidades declaradas. El repositorio figura con un tamano de 0.0 GB y cero descargas, lo que sugiere que no contiene pesos publicados o que estos no se han subido en el momento de la consulta.
+`murasakir1n/rere` es un repositorio alojado en Hugging Face por el usuario murasakir1n bajo la licencia CreativeML OpenRAIL-M. La informacion disponible es extremadamente limitada: la model card se reduce a la declaracion de licencia y no incluye descripcion, arquitectura, tamano, datos de entrenamiento ni capacidades declaradas. El repositorio figura con un tamano de 0.0 GB y cero descargas, lo que sugiere que no contiene pesos publicados o que estos no se han subido en el momento de la consulta.
 
 No se puede confirmar que se trate de un modelo de lenguaje: la licencia CreativeML OpenRAIL-M se asocia habitualmente a modelos de difusion (Stable Diffusion y derivados), pero el autor no especifica la modalidad ni el pipeline. Ante la ausencia de informacion tecnica verificable, esta ficha documenta unicamente los metadatos disponibles y marca explicitamente como "no disponible" cualquier dato que no pueda confirmarse.
 
@@ -80,6 +80,6 @@ No disponible. No se puede establecer una categoria de comparacion (LLM, difusio
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/murasakir1n/rere
+- Repositorio en Hugging Face: https://huggingface.co/murasakir1n/rere
 - Texto de la licencia CreativeML OpenRAIL-M: https://huggingface.co/spaces/CompVis/stable-diffusion-license
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

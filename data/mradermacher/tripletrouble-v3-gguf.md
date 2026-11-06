@@ -29,12 +29,12 @@ La información publicada es muy escasa: la model card se limita a describir el 
 
 No se dispone de información sobre la arquitectura del modelo base. La model card de esta cuantización no describe el tipo de red (transformer, MoE, híbrida u otra), ni el número de capas, cabezas de atención o dimensión del modelo. Tampoco se documenta la longitud de contexto nativa. El único dato estructural fiable es el recuento de parámetros (34.660.610.688) y la etiqueta de librería transformers, que sugiere un modelo basado en esa familia de implementaciones.
 
-Respecto al entrenamiento, no hay información sobre el número de tokens, la composición del dataset, el uso de RLHF, DPO u otras técnicas de alineamiento. En cuanto al proceso de cuantización, los comentarios internos del repositorio indican quantize_version 2, output_tensor_quantised 1 y convert_type hf, lo que corresponde al flujo habitual de mradermacher para generar GGUF estáticos a partir del modelo en formato HuggingFace. El autor señala que en el momento de la publicación no hay cuantizaciones con imatrix o ponderadas, y que no tiene previsto generarlas salvo petición expresa mediante una discusión comunitaria.
+Respecto al entrenamiento, no hay información sobre el número de tokens, la composición del dataset, el uso de RLHF, DPO u otras técnicas de alineamiento. En cuanto al proceso de cuantización, los comentarios internos del repositorio indican quantize_version 2, output_tensor_quantised 1 y convert_type hf, lo que corresponde al flujo habitual de mradermacher para generar GGUF estáticos a partir del modelo en formato Hugging Face. El autor señala que en el momento de la publicación no hay cuantizaciones con imatrix o ponderadas, y que no tiene previsto generarlas salvo petición expresa mediante una discusión comunitaria.
 
 ## Capacidades
 
 - Generación de texto conversacional en inglés: es la única capacidad declarada explícitamente mediante la etiqueta "conversational" del modelo base.
-- Compatibilidad con endpoints de inferencia: el repositorio incluye la etiqueta endpoints_compatible, lo que indica que puede servirse mediante infraestructuras compatibles con la API de HuggingFace.
+- Compatibilidad con endpoints de inferencia: el repositorio incluye la etiqueta endpoints_compatible, lo que indica que puede servirse mediante infraestructuras compatibles con la API de Hugging Face.
 - Ejecución local mediante llama.cpp y derivados: al estar en formato GGUF, es compatible con el ecosistema de inferencia en CPU, GPU y modo mixto.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -96,7 +96,7 @@ No se han identificado alternativas de terceros comparables dentro de la informa
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/mradermacher/TripleTrouble-V3-GGUF
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/mradermacher/TripleTrouble-V3-GGUF
 - Modelo base: https://huggingface.co/OliviaRossi/TripleTrouble-V3
 - Página de resumen y descargas del cuantizador: https://hf.tst.eu/model#TripleTrouble-V3-GGUF
 - Preguntas frecuentes y peticiones de cuantización de mradermacher: https://huggingface.co/mradermacher/model_requests

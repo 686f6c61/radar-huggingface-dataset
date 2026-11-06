@@ -70,6 +70,6 @@ No se dispone de datos suficientes para realizar una comparativa con otros model
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/encredible/Gaiel-1.5B-Korean-Tuned-MLX)
+- [Modelo en Hugging Face](https://huggingface.co/encredible/Gaiel-1.5B-Korean-Tuned-MLX)
 - [Dataset de benchmarks del autor](https://huggingface.co/datasets/encredible/gaiel-mlx-benchmarks)
 - [Modelo base Qwen2.5-1.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct)

@@ -102,7 +102,7 @@ No se dispone de datos de benchmarks de YOLOv8-L ni YOLOv10-L en la información
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Arm/rtdetr-l-onnx-raspberry
+- Modelo en Hugging Face: https://huggingface.co/Arm/rtdetr-l-onnx-raspberry
 - Modelo original RT-DETR de Ultralytics: https://docs.ultralytics.com/models/rtdetr
 - Repositorio de Ultralytics: https://github.com/ultralytics/ultralytics
 - Licencia AGPL-3.0: https://www.gnu.org/licenses/agpl-3.0.en.html

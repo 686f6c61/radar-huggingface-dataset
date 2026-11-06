@@ -96,8 +96,8 @@ La comparativa se limita a los modelos que figuran en la propia evaluacion del a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aoiandroid/whisper-vi-phowhisper-medium-whisperkit-coreml-macos
-- Modelo base en HuggingFace: https://huggingface.co/vinai/PhoWhisper-medium
+- Modelo en Hugging Face: https://huggingface.co/aoiandroid/whisper-vi-phowhisper-medium-whisperkit-coreml-macos
+- Modelo base en Hugging Face: https://huggingface.co/vinai/PhoWhisper-medium
 - Modelo base de OpenAI: https://huggingface.co/openai/whisper-medium
 - Paper PhoWhisper (ICLR 2024 Tiny Papers): https://github.com/VinAIResearch/PhoWhisper
 - Herramientas de conversion WhisperKit: https://github.com/argmaxinc/whisperkittools

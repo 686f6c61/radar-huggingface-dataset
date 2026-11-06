@@ -94,7 +94,7 @@ La variante MXFP8 mantiene el MMLU del base sin pérdida, mientras que la 6D inc
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dealignai/Qwen3.8-27B-MXFP8-CRACK
+- Repositorio Hugging Face: https://huggingface.co/dealignai/Qwen3.8-27B-MXFP8-CRACK
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Variante JANG 2D: https://huggingface.co/dealignai/Qwen3.8-27B-JANG_2D-CRACK
 - Variante JANG 4D: https://huggingface.co/dealignai/Qwen3.8-27B-JANG_4D-CRACK

@@ -80,7 +80,7 @@ Los tres modelos comparten pesos y arquitectura; la diferencia está en el forma
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lucid-dl/clip-vit-large-14-336
+- Repositorio en Hugging Face: https://huggingface.co/lucid-dl/clip-vit-large-14-336
 - Paper original: https://arxiv.org/abs/2103.00020
 - Modelo original de OpenAI: https://huggingface.co/openai/clip-vit-large-patch14-336
 - Variante en timm: https://huggingface.co/timm/vit_large_patch14_clip_336.openai

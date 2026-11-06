@@ -63,7 +63,7 @@ No se dispone de datos comparativos publicados para este checkpoint. Como refere
 
 | Modelo | Parametros | Contexto | Metodo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-LR5e-5 (este) | 202,7 M | 2048 (entrenamiento) | EAGLE3 | Apache-2.0 | HuggingFace |
+| Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-LR5e-5 (este) | 202,7 M | 2048 (entrenamiento) | EAGLE3 | Apache-2.0 | Hugging Face |
 | EAGLE-1 / EAGLE-2 (para Qwen2) | no disponible | no disponible | EAGLE-1/2 | no disponible | GitHub (Yunhai-Hu/EAGLE-Qwen3) |
 | Draft model de Medusa (para otros modelos) | no disponible | no disponible | Medusa | no disponible | no disponible |
 
@@ -81,7 +81,7 @@ No se han encontrado benchmarks que comparen este draft model con alternativas s
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-LR5e-5-epoch-0-step-10000
+- Repositorio del modelo en Hugging Face: https://huggingface.co/huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-LR5e-5-epoch-0-step-10000
 - Checkpoint hermano (epoch 0 step 5000): https://huggingface.co/huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-epoch-0-step-10000
 - Checkpoint posterior (epoch 7 step 185000): https://huggingface.co/huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-epoch-7-step-185000
 - Modelo base Qwen3-4B-Instruct-2507: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507

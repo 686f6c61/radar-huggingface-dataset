@@ -94,7 +94,7 @@ La diferencia fundamental no está en el tamaño, sino en la trazabilidad: los t
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/FrodoBagginz/Bielik-7B-Q8
+- Repositorio en Hugging Face: https://huggingface.co/FrodoBagginz/Bielik-7B-Q8
 - Unsloth (herramienta de conversión citada por el autor): https://github.com/unslothai/unsloth
 - llama.cpp (runtime necesario para ejecutar el archivo GGUF): https://github.com/ggml-org/llama.cpp
 - Model card del modelo base Bielik-Minitron-7B-v3.0-Instruct: no disponible en la información proporcionada

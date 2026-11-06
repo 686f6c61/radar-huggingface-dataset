@@ -89,7 +89,7 @@ Frente a alternativas de otros fabricantes (por ejemplo, sistemas TTS comerciale
 
 ## Enlaces
 
-- Repositorio analizado en HuggingFace: https://huggingface.co/loscrossos/Qwen3-TTS-12Hz-1.7B-CustomVoice
+- Repositorio analizado en Hugging Face: https://huggingface.co/loscrossos/Qwen3-TTS-12Hz-1.7B-CustomVoice
 - Repositorio oficial del modelo (mencionado en la model card): https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice
 - Tokenizador de audio Qwen3-TTS-Tokenizer-12Hz (mencionado en la model card): https://huggingface.co/Qwen/Qwen3-TTS-Tokenizer-12Hz
 - Variante VoiceDesign (mencionada en la model card): https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign

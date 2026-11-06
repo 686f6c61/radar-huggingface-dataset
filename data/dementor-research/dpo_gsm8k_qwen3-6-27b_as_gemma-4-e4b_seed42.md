@@ -76,7 +76,7 @@ No se dispone de información sobre licencias, rendimiento o disponibilidad de e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dementor-research/dpo_gsm8k_qwen3.6-27b_as_gemma-4-e4b_seed42
+- Hugging Face: https://huggingface.co/dementor-research/dpo_gsm8k_qwen3.6-27b_as_gemma-4-e4b_seed42
 - Adaptador relacionado (inverso): https://huggingface.co/dementor-research/dpo_gsm8k_gemma-4-e4b_as_qwen3.6-27b_seed42
 - Adaptador relacionado (base MoE): https://huggingface.co/dementor-research/dpo_gsm8k_gemma-4-e4b_as_qwen3.6-35b-a3b_seed42
 - Página de Gemma 4 (Google DeepMind): https://deepmind.google/models/gemma/gemma-4/

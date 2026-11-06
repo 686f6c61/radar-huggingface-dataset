@@ -79,7 +79,7 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/YixuanHu/text_lidar_waymo
+- Hugging Face: https://huggingface.co/YixuanHu/text_lidar_waymo
 - Codificadores de texto SD3.5: https://huggingface.co/stabilityai/stable-diffusion-3.5-medium
 - Modelo base del reward: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

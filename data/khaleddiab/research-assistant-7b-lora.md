@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`khaleddiab/research-assistant-7b-lora` es un ajuste fino (fine-tuning) del modelo Qwen2.5-7B-Instruct, desarrollado por el usuario khaleddiab y publicado en HuggingFace. Se trata de un modelo derivado de la versión cuantizada a 4 bits de Qwen2.5-7B-Instruct de Unsloth, entrenado mediante la librería Unsloth, que según la model card permite un entrenamiento "2x más rápido". El objetivo declarado es actuar como asistente de investigación, aunque la documentación no detalla el dataset de entrenamiento ni las tareas específicas.
+`khaleddiab/research-assistant-7b-lora` es un ajuste fino (fine-tuning) del modelo Qwen2.5-7B-Instruct, desarrollado por el usuario khaleddiab y publicado en Hugging Face. Se trata de un modelo derivado de la versión cuantizada a 4 bits de Qwen2.5-7B-Instruct de Unsloth, entrenado mediante la librería Unsloth, que según la model card permite un entrenamiento "2x más rápido". El objetivo declarado es actuar como asistente de investigación, aunque la documentación no detalla el dataset de entrenamiento ni las tareas específicas.
 
 El modelo hereda la arquitectura transformer decoder-only de Qwen2.5, con aproximadamente 7.600 millones de parámetros y una ventana de contexto de 32.768 tokens (característica de la familia Qwen2.5-7B). La licencia Apache 2.0 facilita su uso comercial, aunque al ser un derivado de un modelo base con licencia Apache 2.0, las obligaciones de atribución se mantienen.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| khaleddiab/research-assistant-7b-lora | ~7.6B | 32.768 | Apache 2.0 | HuggingFace (0 descargas) | Fine-tuning comunitario sin benchmarks |
-| Qwen2.5-7B-Instruct | ~7.6B | 32.768 | Apache 2.0 | HuggingFace (oficial) | Modelo base, con benchmarks publicados y soporte multilingüe |
-| Mistral-7B-Instruct-v0.3 | ~7.2B | 32.768 | Apache 2.0 | HuggingFace (oficial) | Alternativa popular con tool calling y buen rendimiento general |
-| Llama-3.1-8B-Instruct | ~8B | 131.072 | Llama 3.1 Community License | HuggingFace (oficial) | Contexto mucho mayor, pero licencia restrictiva para algunos usos |
+| khaleddiab/research-assistant-7b-lora | ~7.6B | 32.768 | Apache 2.0 | Hugging Face (0 descargas) | Fine-tuning comunitario sin benchmarks |
+| Qwen2.5-7B-Instruct | ~7.6B | 32.768 | Apache 2.0 | Hugging Face (oficial) | Modelo base, con benchmarks publicados y soporte multilingüe |
+| Mistral-7B-Instruct-v0.3 | ~7.2B | 32.768 | Apache 2.0 | Hugging Face (oficial) | Alternativa popular con tool calling y buen rendimiento general |
+| Llama-3.1-8B-Instruct | ~8B | 131.072 | Llama 3.1 Community License | Hugging Face (oficial) | Contexto mucho mayor, pero licencia restrictiva para algunos usos |
 
 ## Limitaciones y advertencias
 
@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- [HuggingFace: khaleddiab/research-assistant-7b-lora](https://huggingface.co/khaleddiab/research-assistant-7b-lora)
+- [Hugging Face: khaleddiab/research-assistant-7b-lora](https://huggingface.co/khaleddiab/research-assistant-7b-lora)
 - [Unsloth (GitHub)](https://github.com/unslothai/unsloth)
-- [Qwen2.5-7B-Instruct (HuggingFace)](https://huggingface.co/Qwen/Qwen2.5-7B-Instruct)
-- [Unsloth Qwen2.5-7B-Instruct-bnb-4bit (HuggingFace)](https://huggingface.co/unsloth/Qwen2.5-7B-Instruct-bnb-4bit)
+- [Qwen2.5-7B-Instruct (Hugging Face)](https://huggingface.co/Qwen/Qwen2.5-7B-Instruct)
+- [Unsloth Qwen2.5-7B-Instruct-bnb-4bit (Hugging Face)](https://huggingface.co/unsloth/Qwen2.5-7B-Instruct-bnb-4bit)

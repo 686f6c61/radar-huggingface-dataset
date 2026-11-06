@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`HungryDino/gemma_3_4b_it-raven_numbers-collapse_p10-run2-gen6` es un ajuste fino (fine-tune) del modelo instructivo `unsloth/gemma-3-4b-it`, publicado por el usuario HungryDino en HuggingFace. Se distribuye bajo licencia Apache 2.0, con etiquetas de `transformers`, `safetensors`, `text-generation-inference`, `unsloth`, `gemma3` y `trl`, y declara únicamente el idioma inglés. El repositorio ocupa 0,1 GB y no registra descargas ni "likes" en el momento de la consulta.
+`HungryDino/gemma_3_4b_it-raven_numbers-collapse_p10-run2-gen6` es un ajuste fino (fine-tune) del modelo instructivo `unsloth/gemma-3-4b-it`, publicado por el usuario HungryDino en Hugging Face. Se distribuye bajo licencia Apache 2.0, con etiquetas de `transformers`, `safetensors`, `text-generation-inference`, `unsloth`, `gemma3` y `trl`, y declara únicamente el idioma inglés. El repositorio ocupa 0,1 GB y no registra descargas ni "likes" en el momento de la consulta.
 
 El nombre del identificador sugiere un experimento de entrenamiento con nomenclatura de generaciones y ejecuciones ("raven_numbers-collapse_p10-run2-gen6"), lo que apunta a una ejecución dentro de una campaña de experimentos iterativos más que a un modelo destinado a producción. La model card es la plantilla automática de Unsloth y no aporta información sobre dataset, hiperparámetros, número de tokens de entrenamiento ni metodología de alineamiento.
 
@@ -31,7 +31,7 @@ Su relevancia es por tanto limitada: se trata de un artefacto de investigación 
 
 No se documenta la arquitectura específica de este artefacto. El modelo base declarado es `unsloth/gemma-3-4b-it`, un modelo instructivo de la familia Gemma 3, lo que sitúa al fine-tune dentro de la familia de transformadores decoder-only de Gemma 3. No se especifican en la ficha el número de capas, la dimensión oculta, el tipo de atención ni ninguna modificación estructural respecto al base.
 
-En cuanto al entrenamiento, la model card indica únicamente que el modelo fue entrenado "2x faster" con Unsloth y la librería TRL de HuggingFace. No se proporciona el número de tokens de entrenamiento, la composición del dataset, la existencia de fases de RLHF, DPO u otro tipo de alineamiento, ni la configuración de LoRA o QLoRA empleada. El identificador del repositorio incluye los términos "numbers", "collapse", "p10", "run2" y "gen6", compatibles con una campaña de experimentos por generaciones y ejecuciones centrada en algún tipo de colapso numérico, pero se trata de una interpretación del nombre y no de información confirmada por el autor.
+En cuanto al entrenamiento, la model card indica únicamente que el modelo fue entrenado "2x faster" con Unsloth y la librería TRL de Hugging Face. No se proporciona el número de tokens de entrenamiento, la composición del dataset, la existencia de fases de RLHF, DPO u otro tipo de alineamiento, ni la configuración de LoRA o QLoRA empleada. El identificador del repositorio incluye los términos "numbers", "collapse", "p10", "run2" y "gen6", compatibles con una campaña de experimentos por generaciones y ejecuciones centrada en algún tipo de colapso numérico, pero se trata de una interpretación del nombre y no de información confirmada por el autor.
 
 Un dato observable relevante es que el repositorio pesa 0,1 GB, un tamaño muy inferior al que ocuparían los pesos completos de un modelo de aproximadamente 4 000 millones de parámetros en `bfloat16` o `float16`. Esto es compatible con la publicación de adaptadores (por ejemplo, LoRA) o con una subida parcial de ficheros, aunque las etiquetas de la ficha no incluyen `peft` ni `lora`. Conviene verificar el contenido real del repositorio antes de intentar cargarlo.
 
@@ -82,11 +82,11 @@ La información proporcionada no incluye resultados de rendimiento, por lo que l
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `HungryDino/gemma_3_4b_it-raven_numbers-collapse_p10-run2-gen6` | No disponible (~4B según el nombre del base) | No disponible | Apache 2.0 declarada | HuggingFace, 0 descargas |
-| `unsloth/gemma-3-4b-it` (base) | ~4B | No disponible en esta consulta | No disponible en esta consulta | HuggingFace |
-| Gemma 3 4B IT (referencia oficial) | ~4B | No disponible en esta consulta | No disponible en esta consulta | HuggingFace / Google |
-| Llama 3.2 3B Instruct | ~3,2B | No disponible en esta consulta | No disponible en esta consulta | HuggingFace / Meta |
-| Qwen2.5 3B Instruct | ~3,1B | No disponible en esta consulta | No disponible en esta consulta | HuggingFace / Alibaba |
+| `HungryDino/gemma_3_4b_it-raven_numbers-collapse_p10-run2-gen6` | No disponible (~4B según el nombre del base) | No disponible | Apache 2.0 declarada | Hugging Face, 0 descargas |
+| `unsloth/gemma-3-4b-it` (base) | ~4B | No disponible en esta consulta | No disponible en esta consulta | Hugging Face |
+| Gemma 3 4B IT (referencia oficial) | ~4B | No disponible en esta consulta | No disponible en esta consulta | Hugging Face / Google |
+| Llama 3.2 3B Instruct | ~3,2B | No disponible en esta consulta | No disponible en esta consulta | Hugging Face / Meta |
+| Qwen2.5 3B Instruct | ~3,1B | No disponible en esta consulta | No disponible en esta consulta | Hugging Face / Alibaba |
 
 No hay datos de rendimiento comparativos disponibles para ninguno de estos modelos en la información proporcionada.
 
@@ -107,8 +107,8 @@ No hay datos de rendimiento comparativos disponibles para ninguno de estos model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HungryDino/gemma_3_4b_it-raven_numbers-collapse_p10-run2-gen6
+- Modelo en Hugging Face: https://huggingface.co/HungryDino/gemma_3_4b_it-raven_numbers-collapse_p10-run2-gen6
 - Modelo base declarado: https://huggingface.co/unsloth/gemma-3-4b-it
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Librería TRL de HuggingFace: https://github.com/huggingface/trl
+- Librería TRL de Hugging Face: https://github.com/huggingface/trl
 - Resultados de la búsqueda web: no se han encontrado enlaces relevantes al modelo; los resultados devueltos corresponden a páginas sobre la deidad romana Lua Mater y no guardan relación con este artefacto.

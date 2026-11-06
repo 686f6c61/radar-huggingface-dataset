@@ -65,10 +65,10 @@ No se han publicado resultados numéricos de benchmarks en la información dispo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jeesup/svd-safety-shifted-l2_mixed_remove0.4_rho0 | 6,74 B (densos plegados) | no disponible | SVD con sesgo de seguridad sobre Llama 2 7B chat | llama2 | HuggingFace, 16 descargas |
-| meta-llama/Llama-2-7b-chat-hf | 6,74 B | 4.096 tokens | Modelo base sin comprimir | llama2 | HuggingFace, ampliamente usado |
+| Jeesup/svd-safety-shifted-l2_mixed_remove0.4_rho0 | 6,74 B (densos plegados) | no disponible | SVD con sesgo de seguridad sobre Llama 2 7B chat | llama2 | Hugging Face, 16 descargas |
+| meta-llama/Llama-2-7b-chat-hf | 6,74 B | 4.096 tokens | Modelo base sin comprimir | llama2 | Hugging Face, ampliamente usado |
 | Variantes SVD estándar de Llama 2 7B | variable | 4.096 tokens | Compresión low-rank sin sesgo de seguridad | llama2 | Depende del autor; no disponible en esta búsqueda |
-| Modelos 7B comprimidos tipo TinyLlama o similares | ~1,1 B | 2.048 tokens | Entrenamiento desde cero con destilación | Apache 2.0 | HuggingFace |
+| Modelos 7B comprimidos tipo TinyLlama o similares | ~1,1 B | 2.048 tokens | Entrenamiento desde cero con destilación | Apache 2.0 | Hugging Face |
 
 La comparación directa con alternativas de compresión SVD de Llama 2 no está disponible en la información proporcionada. Frente al modelo base, la diferencia principal es la reducción de parámetros efectivos y la orientación de la métrica hacia respuestas seguras, sin datos públicos de rendimiento que permitan cuantificar la pérdida.
 
@@ -87,7 +87,7 @@ La comparación directa con alternativas de compresión SVD de Llama 2 no está 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jeesup/svd-safety-shifted-l2_mixed_remove0.4_rho0
+- Hugging Face: https://huggingface.co/Jeesup/svd-safety-shifted-l2_mixed_remove0.4_rho0
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Licencia Llama 2: https://ai.meta.com/llama/license/
 - Paper de Llama 2: https://arxiv.org/abs/2307.09288

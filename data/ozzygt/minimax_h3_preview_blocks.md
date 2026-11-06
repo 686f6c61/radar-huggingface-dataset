@@ -78,9 +78,9 @@ Los unicos datos de rendimiento aportados por el autor son los costes de previsu
 
 | Alternativa | Tipo | Ambito | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `OzzyGT/minimax_h3_preview_blocks` | Bloques de previsualizacion para Modular Diffusers | Video y audio, tres flujos (`t2va`, `fl2va`, `ref2va`) | Apache 2.0 | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| `OzzyGT/krea2_preview_blocks` | Bloques de previsualizacion para Modular Diffusers | Imagen; citado por el propio autor como el antecedente de esta version | no disponible | HuggingFace |
-| Pipeline de serie de `MiniMaxAI/MiniMax-H3` | Modelo base de difusion para video y audio | Generacion completa, sin ganchos de previsualizacion | no disponible | HuggingFace |
+| `OzzyGT/minimax_h3_preview_blocks` | Bloques de previsualizacion para Modular Diffusers | Video y audio, tres flujos (`t2va`, `fl2va`, `ref2va`) | Apache 2.0 | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| `OzzyGT/krea2_preview_blocks` | Bloques de previsualizacion para Modular Diffusers | Imagen; citado por el propio autor como el antecedente de esta version | no disponible | Hugging Face |
+| Pipeline de serie de `MiniMaxAI/MiniMax-H3` | Modelo base de difusion para video y audio | Generacion completa, sin ganchos de previsualizacion | no disponible | Hugging Face |
 | Decodificado final del VAE | Alternativa manual | Solo permite ver el resultado tras completar todos los pasos | no disponible | Integrado en diffusers |
 
 No se dispone de datos comparativos de rendimiento entre estas opciones en la informacion proporcionada.
@@ -101,7 +101,7 @@ No se dispone de datos comparativos de rendimiento entre estas opciones en la in
 
 ## Enlaces
 
-- [Modelo en HuggingFace: OzzyGT/minimax_h3_preview_blocks](https://huggingface.co/OzzyGT/minimax_h3_preview_blocks)
+- [Modelo en Hugging Face: OzzyGT/minimax_h3_preview_blocks](https://huggingface.co/OzzyGT/minimax_h3_preview_blocks)
 - [Modelo base: MiniMaxAI/MiniMax-H3](https://huggingface.co/MiniMaxAI/MiniMax-H3)
 - [Bloques de previsualizacion para Krea 2: OzzyGT/krea2_preview_blocks](https://huggingface.co/OzzyGT/krea2_preview_blocks)
 - [Documentacion de Modular Diffusers](https://huggingface.co/docs/diffusers/main/en/modular_diffusers/overview)

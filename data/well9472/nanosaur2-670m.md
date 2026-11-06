@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Arquitectura | Resolución nativa | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nanosaur2-670M | 670M DiT + 270M text encoder + 129M VAE | DiT con SPRINT, adaLN-single, RoPE 2D | 1024x aspect buckets | MIT | HuggingFace + nodo ComfyUI |
-| PixArt-α | ~0,6B (DiT) | DiT con adaLN-single | 1024x | no disponible | HuggingFace |
-| SDXL | ~3,5B (UNet + text encoders) | UNet | 1024x | no disponible | HuggingFace |
-| SD 1.5 | ~0,86B (UNet) | UNet | 512x | no disponible | HuggingFace |
+| Nanosaur2-670M | 670M DiT + 270M text encoder + 129M VAE | DiT con SPRINT, adaLN-single, RoPE 2D | 1024x aspect buckets | MIT | Hugging Face + nodo ComfyUI |
+| PixArt-α | ~0,6B (DiT) | DiT con adaLN-single | 1024x | no disponible | Hugging Face |
+| SDXL | ~3,5B (UNet + text encoders) | UNet | 1024x | no disponible | Hugging Face |
+| SD 1.5 | ~0,86B (UNet) | UNet | 512x | no disponible | Hugging Face |
 | Anima | no disponible | no disponible | no disponible | no disponible | mencionado por el autor como referencia de calidad superior |
 
 El autor sitúa explícitamente a Anima por encima de Nanosaur2 en conocimiento de personajes y detalle fino, pero no aporta especificaciones de ese modelo. No se dispone de resultados de benchmarks comparativos para ninguna de estas alternativas en la información proporcionada.
@@ -88,7 +88,7 @@ El autor sitúa explícitamente a Anima por encima de Nanosaur2 en conocimiento 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/well9472/Nanosaur2-670M
+- Hugging Face: https://huggingface.co/well9472/Nanosaur2-670M
 - SPRINT: Sparse-Dense Residual Fusion for Efficient Diffusion Transformers (ICLR 2026): https://arxiv.org/abs/2510.21986
 - Scalable Diffusion Models with Transformers (ICCV 2023): https://arxiv.org/abs/2212.09748
 - PixArt-α: Fast Training of Diffusion Transformer for Photorealistic Text-to-Image Synthesis (ICLR 2024): https://arxiv.org/abs/2310.00426

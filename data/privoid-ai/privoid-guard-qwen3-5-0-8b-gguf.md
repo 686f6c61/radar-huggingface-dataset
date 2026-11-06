@@ -23,7 +23,7 @@ Su relevancia actual radica en el tamano reducido (772.845.888 parametros reales
 
 ## Arquitectura y entrenamiento
 
-El modelo base es Privoid-ai/Privoid-Guard-Qwen3.5-0.8B, un afinamiento de la familia Qwen3.5 con 772.845.888 parametros. La model card indica que se uso Unsloth en el proceso de entrenamiento (tag `unsloth`), aunque no se detalla el numero de tokens, la composicion exacta del dataset ni si se aplicaron tecnicas de RLHF o DPO. La tarea es de clasificacion binaria con etiquetas `injection` y `benign`, y el pipeline declarado en HuggingFace es `text-classification`.
+El modelo base es Privoid-ai/Privoid-Guard-Qwen3.5-0.8B, un afinamiento de la familia Qwen3.5 con 772.845.888 parametros. La model card indica que se uso Unsloth en el proceso de entrenamiento (tag `unsloth`), aunque no se detalla el numero de tokens, la composicion exacta del dataset ni si se aplicaron tecnicas de RLHF o DPO. La tarea es de clasificacion binaria con etiquetas `injection` y `benign`, y el pipeline declarado en Hugging Face es `text-classification`.
 
 La innovacion practica no esta en la arquitectura sino en el empaquetado: se ofrecen tres cuantizaciones GGUF (F16 de 1,56 GB, Q8_0 de 0,83 GB y Q4_K_M de 0,54 GB) verificadas en llama.cpp. El autor indica que cada fichero fue cargado y etiqueto correctamente un ataque obvio y una peticion inofensiva antes de subirse. No se documentan innovaciones como decodificacion especulativa o atencion lineal.
 
@@ -88,7 +88,7 @@ La model card menciona una comparacion con ProtectAI DeBERTa v2 en la pagina pri
 
 ## Enlaces
 
-- HuggingFace (GGUF): https://huggingface.co/Privoid-ai/Privoid-Guard-Qwen3.5-0.8B-GGUF
+- Hugging Face (GGUF): https://huggingface.co/Privoid-ai/Privoid-Guard-Qwen3.5-0.8B-GGUF
 - Modelo base: https://huggingface.co/Privoid-ai/Privoid-Guard-Qwen3.5-0.8B
 - Dataset deepset/prompt-injections: https://huggingface.co/datasets/deepset/prompt-injections
 - Dataset jackhhao/jailbreak-classification: https://huggingface.co/datasets/jackhhao/jailbreak-classification

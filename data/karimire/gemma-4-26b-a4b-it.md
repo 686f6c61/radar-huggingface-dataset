@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/karimire/gemma-4-26B-A4B-it
+- Repositorio Hugging Face: https://huggingface.co/karimire/gemma-4-26B-A4B-it
 - Modelo base oficial: https://huggingface.co/google/gemma-4-26B-A4B
 - Blog de lanzamiento: https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/
 - Documentación oficial: https://ai.google.dev/gemma/docs/core

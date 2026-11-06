@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Odakris/sentiment-versioning-demo` es un modelo de clasificación de texto obtenido mediante ajuste fino (*fine-tuning*) de `distilbert-base-uncased`, publicado por el usuario Odakris en HuggingFace. Se trata de un modelo derivado de tipo *encoder-only* basado en la arquitectura DistilBERT, con 66.955.010 parámetros totales según los pesos en formato safetensors, y orientado a la tarea de análisis de sentimiento (clasificación de secuencias). El repositorio ocupa 0,8 GB e incluye únicamente los artefactos generados por el `Trainer` de la librería Transformers.
+`Odakris/sentiment-versioning-demo` es un modelo de clasificación de texto obtenido mediante ajuste fino (*fine-tuning*) de `distilbert-base-uncased`, publicado por el usuario Odakris en Hugging Face. Se trata de un modelo derivado de tipo *encoder-only* basado en la arquitectura DistilBERT, con 66.955.010 parámetros totales según los pesos en formato safetensors, y orientado a la tarea de análisis de sentimiento (clasificación de secuencias). El repositorio ocupa 0,8 GB e incluye únicamente los artefactos generados por el `Trainer` de la librería Transformers.
 
 El modelo se entrenó durante una única época con un *learning rate* de 2e-05, tamaño de lote de 16 en entrenamiento y 32 en evaluación, optimizador AdamW con betas (0,9; 0,999) y planificador lineal. La model card es la plantilla autogenerada por la librería e indica explícitamente "More information needed" en las secciones de descripción, usos previstos y datos de entrenamiento, por lo que no hay información pública sobre el corpus utilizado ni sobre los idiomas soportados. El nombre del repositorio sugiere un experimento de demostración vinculado al versionado de modelos, no un modelo listo para producción.
 
@@ -39,7 +39,7 @@ En cuanto al entrenamiento, la única información disponible son los hiperpará
 - Análisis de sentimiento: es el uso implícito en el nombre del repositorio, aunque la model card no confirma la taxonomía de clases (por ejemplo, positivo/negativo o positivo/neutro/negativo).
 - Procesamiento por lotes: al ser un encoder de 6 capas, permite inferencia en lote con coste bajo.
 - Integración con Transformers: se puede cargar con `AutoModelForSequenceClassification` y `AutoTokenizer`.
-- Compatibilidad con Text Embeddings Inference (TEI) y con *endpoints* de HuggingFace, según las etiquetas del repositorio.
+- Compatibilidad con Text Embeddings Inference (TEI) y con *endpoints* de Hugging Face, según las etiquetas del repositorio.
 - No dispone de generación de texto libre, razonamiento multi-paso, *tool calling*, capacidades de agente, visión, audio ni modo *thinking*: la arquitectura es exclusivamente discriminativa.
 - Capacidades multilingües: no acreditadas; el modelo base es *uncased* en inglés, por lo que el rendimiento fuera del inglés es esperablemente bajo o nulo.
 
@@ -73,7 +73,7 @@ Estos valores proceden de un conjunto de validación cuya composición, tamaño 
 - VRAM estimada para los pesos: aproximadamente 268 MB en fp32 y 134 MB en fp16/bf16, calculado a partir de los 66.955.010 parámetros. Contando activaciones, tokenizador y *overhead* del runtime, el consumo práctico se sitúa en torno a 1-2 GB.
 - Cabe holgadamente en cualquier GPU de consumo: RTX 3060, RTX 4060, RTX 4090, así como en iGPU y en CPU. No requiere A100 ni H100.
 - Inferencia en CPU: viable para lotes pequeños y moderados, al ser un encoder de 6 capas; es una opción habitual para despliegues de bajo tráfico.
-- Opciones de despliegue: pipeline de Transformers, HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`), Text Embeddings Inference (etiqueta `text-embeddings-inference`), ONNX Runtime tras conversión propia, TorchServe o un servicio FastAPI. No se publican artefactos específicos para vLLM, llama.cpp, Ollama ni TGI.
+- Opciones de despliegue: pipeline de Transformers, Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`), Text Embeddings Inference (etiqueta `text-embeddings-inference`), ONNX Runtime tras conversión propia, TorchServe o un servicio FastAPI. No se publican artefactos específicos para vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput: no disponible. No se han publicado mediciones y no conviene inferir cifras sin datos.
 
 ## Comparativa con modelos similares
@@ -104,7 +104,7 @@ Cualitativamente, BERT-base y RoBERTa-base tienen mayor capacidad (más capas y 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Odakris/sentiment-versioning-demo
+- Modelo en Hugging Face: https://huggingface.co/Odakris/sentiment-versioning-demo
 - Modelo base: https://huggingface.co/distilbert-base-uncased
 - Modelo base (organización): https://huggingface.co/distilbert/distilbert-base-uncased
 - Resultados de búsqueda web: no se ha encontrado ningún enlace relevante. Los resultados devueltos corresponden a foros sobre trámites de certificados de vehículos en Francia (droit-finances.commentcamarche.com) y no guardan relación con el modelo. No hay papers, blogs ni repositorios adicionales que documenten este artefacto.

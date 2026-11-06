@@ -77,10 +77,10 @@ No se dispone de datos de benchmark de los modelos alternativos en la informacio
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `anlp-m26-a2-part1-moe-shared` | 19,85 M totales / 16,31 M activos | no disponible | MoE decoder-only para vi/ja-en | no disponible | HuggingFace, pesos PyTorch |
-| Opus-MT (Helsinki-NLP) | no disponible | no disponible | Transformer seq2seq por par de idiomas | mayoritariamente abierta (varia) | HuggingFace, ampliamente usado |
-| NLLB-200 (Meta) | no disponible | no disponible | Transformer multilingue | licencia especifica de Meta | HuggingFace |
-| M2M-100 (Meta) | no disponible | no disponible | Transformer many-to-many | licencia especifica de Meta | HuggingFace |
+| `anlp-m26-a2-part1-moe-shared` | 19,85 M totales / 16,31 M activos | no disponible | MoE decoder-only para vi/ja-en | no disponible | Hugging Face, pesos PyTorch |
+| Opus-MT (Helsinki-NLP) | no disponible | no disponible | Transformer seq2seq por par de idiomas | mayoritariamente abierta (varia) | Hugging Face, ampliamente usado |
+| NLLB-200 (Meta) | no disponible | no disponible | Transformer multilingue | licencia especifica de Meta | Hugging Face |
+| M2M-100 (Meta) | no disponible | no disponible | Transformer many-to-many | licencia especifica de Meta | Hugging Face |
 
 Se trata de una comparacion puramente categorica: los tres modelos alternativos son soluciones de traduccion neuronal ampliamente desplegadas, mientras que el modelo aqui descrito es un checkpoint academico de muy bajo numero de parametros y sin datos de rendimiento frente a ellos.
 
@@ -101,7 +101,7 @@ Se trata de una comparacion puramente categorica: los tres modelos alternativos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/satyam-arora-iiit-hyderabad/anlp-m26-a2-part1-moe-shared
+- Modelo en Hugging Face: https://huggingface.co/satyam-arora-iiit-hyderabad/anlp-m26-a2-part1-moe-shared
 - Dataset de entrenamiento: https://huggingface.co/datasets/belumind/en-vi-ja-curated-500k-triplets
 - Repositorio de la asignatura (codigo de arquitectura y carga): no disponible en la informacion proporcionada
 - Paper o publicacion asociada: no disponible

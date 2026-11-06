@@ -69,9 +69,9 @@ Referencia del mismo recetario a stride 1: 0,0593 en el paso 1750 y 0,0624 en el
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `srlwam-cosmos-edge-stack-v2-stride4` | no disponible | no disponible | MAE 0,0525 / pinza 0,988 (validación abierta, sim) | Component-specific (OpenMDW 1.1 + Apache 2.0) | HuggingFace, 0 descargas |
-| `sim_v2_droid` stride 1 (`aabyaneh/srlwam`) | no disponible | no disponible | MAE 0,0593 (paso 1750) | no disponible | HuggingFace |
-| `nvidia/Cosmos3-Edge-Policy-DROID` (base) | no disponible | no disponible | no disponible | OpenMDW 1.1 | HuggingFace (NVIDIA) |
+| `srlwam-cosmos-edge-stack-v2-stride4` | no disponible | no disponible | MAE 0,0525 / pinza 0,988 (validación abierta, sim) | Component-specific (OpenMDW 1.1 + Apache 2.0) | Hugging Face, 0 descargas |
+| `sim_v2_droid` stride 1 (`aabyaneh/srlwam`) | no disponible | no disponible | MAE 0,0593 (paso 1750) | no disponible | Hugging Face |
+| `nvidia/Cosmos3-Edge-Policy-DROID` (base) | no disponible | no disponible | no disponible | OpenMDW 1.1 | Hugging Face (NVIDIA) |
 
 No se dispone de datos suficientes para comparar con otras familias de políticas VLA (p. ej. OpenVLA, π0) en parámetros, contexto o rendimiento; no disponible.
 
@@ -90,7 +90,7 @@ No se dispone de datos suficientes para comparar con otras familias de política
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SleepMastger/srlwam-cosmos-edge-stack-v2-stride4
+- Hugging Face: https://huggingface.co/SleepMastger/srlwam-cosmos-edge-stack-v2-stride4
 - Aviso de licencias: https://huggingface.co/SleepMastger/srlwam-cosmos-edge-stack-v2-stride4/blob/main/cosmos_edge/NOTICE.md
 - Repo del proyecto original: https://huggingface.co/aabyaneh/srlwam
 - Modelo base: https://huggingface.co/nvidia/Cosmos3-Edge-Policy-DROID

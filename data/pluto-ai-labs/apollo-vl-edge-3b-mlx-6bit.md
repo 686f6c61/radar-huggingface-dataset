@@ -4,7 +4,7 @@
 
 Apollo-VL-Edge-3B es un modelo multimodal de visión-lenguaje (VLM) desarrollado por Pluto-AI-Labs, un laboratorio independiente que se describe como centrado en la creación de modelos eficientes para entornos edge. El modelo está diseñado para tareas de image-text-to-text, es decir, procesar imágenes y texto para generar respuestas conversacionales, con capacidades destacadas en OCR y comprensión de gráficos. Según los datos disponibles, el modelo se basa en la arquitectura Qwen2.5-VL, aunque el número real de parámetros según los pesos safetensors es de aproximadamente 1.340 millones (1.34B), a pesar de que el nombre comercial indica "3B". Esta discrepancia sugiere que el nombre puede referirse a una versión ampliada o a una convención de marketing, pero los pesos reales son menores.
 
-La relevancia de este modelo radica en su enfoque en eficiencia y despliegue en dispositivos con recursos limitados, como demuestra su cuantización de 6 bits y su compatibilidad con MLX (optimizado para Apple Silicon) y con GGUF para llama.cpp. El repositorio de HuggingFace presenta una model card prácticamente vacía, lo que limita la información disponible sobre entrenamiento, benchmarks y licencia. Sin embargo, la existencia de variantes GGUF de terceros con licencia apache-2.0 sugiere que el modelo podría tener una licencia permisiva, aunque no se confirma en la fuente original.
+La relevancia de este modelo radica en su enfoque en eficiencia y despliegue en dispositivos con recursos limitados, como demuestra su cuantización de 6 bits y su compatibilidad con MLX (optimizado para Apple Silicon) y con GGUF para llama.cpp. El repositorio de Hugging Face presenta una model card prácticamente vacía, lo que limita la información disponible sobre entrenamiento, benchmarks y licencia. Sin embargo, la existencia de variantes GGUF de terceros con licencia apache-2.0 sugiere que el modelo podría tener una licencia permisiva, aunque no se confirma en la fuente original.
 
 ## Especificaciones técnicas
 
@@ -68,7 +68,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Pluto-AI-Labs/Apollo-VL-Edge-3B-MLX-6bit
+- Repositorio Hugging Face: https://huggingface.co/Pluto-AI-Labs/Apollo-VL-Edge-3B-MLX-6bit
 - Perfil de GitHub de Pluto-AI-Labs: https://github.com/Pluto-AI-Labs
 - Organización .github: https://github.com/Pluto-AI-Labs/.github
 - Variante GGUF (i1): https://huggingface.co/mradermacher/Apollo-VL-Edge-3B-i1-GGUF

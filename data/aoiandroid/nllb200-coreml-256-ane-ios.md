@@ -72,7 +72,7 @@ La comparativa muestra que este modelo ofrece una ventana de contexto mayor que 
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/aoiandroid/nllb200-coreml-256-ane-ios)
+- [Repositorio Hugging Face](https://huggingface.co/aoiandroid/nllb200-coreml-256-ane-ios)
 - [Repositorio fuente `aoiandroid/nllb200-coreml-256-ane`](https://huggingface.co/aoiandroid/nllb200-coreml-256-ane)
 - [Repositorio hermano para macOS](https://huggingface.co/aoiandroid/nllb200-coreml-256-ane-macos) (enlace inferido, no verificado)
 - [Repositorio `aoiandroid/nllb200-coreml-256-ane-pal8`](https://huggingface.co/aoiandroid/nllb200-coreml-256-ane-pal8)

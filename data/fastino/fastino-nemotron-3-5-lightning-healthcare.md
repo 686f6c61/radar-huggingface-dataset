@@ -105,7 +105,7 @@ No se dispone de comparativas directas con otros modelos sanitarios en la inform
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fastino/Fastino-Nemotron-3.5-Lightning-Healthcare
+- Hugging Face: https://huggingface.co/fastino/Fastino-Nemotron-3.5-Lightning-Healthcare
 - Blog de lanzamiento (Fastino): https://fastino.ai/blog/fastino-nemotron-3-5-lightning-finance-and-healthcare
 - Paper arXiv (agente de fine-tuning): https://arxiv.org/abs/2604.09791
 - Modelo base: https://huggingface.co/nvidia/Nemotron-3.5-Lightning

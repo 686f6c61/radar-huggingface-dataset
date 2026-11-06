@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Snowball 67B-A2B (RL R2E-Gym, old stack, step 36) es un modelo de lenguaje de arquitectura MoE desarrollado por LAION, publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un checkpoint de pesos de política (policy weights) obtenido tras aplicar aprendizaje por refuerzo sobre el modelo `laion/snowball-67b-a2b-sft-s3-nemotron-terminal-step1888`, que a su vez es un ajuste supervisado de la familia Snowball 67B-A2B con arquitectura GrugMoe. El modelo tiene 67.078.882.816 parámetros totales y su nomenclatura "A2B" sugiere aproximadamente 2.000 millones de parámetros activos por token, aunque la model card no explicita esa cifra.
+Snowball 67B-A2B (RL R2E-Gym, old stack, step 36) es un modelo de lenguaje de arquitectura MoE desarrollado por LAION, publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un checkpoint de pesos de política (policy weights) obtenido tras aplicar aprendizaje por refuerzo sobre el modelo `laion/snowball-67b-a2b-sft-s3-nemotron-terminal-step1888`, que a su vez es un ajuste supervisado de la familia Snowball 67B-A2B con arquitectura GrugMoe. El modelo tiene 67.078.882.816 parámetros totales y su nomenclatura "A2B" sugiere aproximadamente 2.000 millones de parámetros activos por token, aunque la model card no explicita esa cifra.
 
 El problema que aborda es el entrenamiento de agentes autónomos capaces de resolver tareas de ingeniería de software en terminal: el modelo se ha entrenado con RL sobre tareas de R2E-Gym usando el agente de terminal terminus-2, con prompts de 49.152 tokens y generaciones de 16.384 tokens. Es relevante porque documenta un pipeline completo de RL on-policy a escala (40 nodos, 1.584 asientos) sobre una base MoE de 67B, con un stack de entrenamiento concreto y resultados held-out publicados.
 
@@ -19,7 +19,7 @@ La relevancia inmediata está en su uso como referencia reproducible para invest
 | Tipos de cuantizacion | no disponible (export publicado solo en safetensors) |
 | Idiomas soportados | no disponible |
 | Licencia | apache-2.0 |
-| Formato de pesos | safetensors (export con layout de HuggingFace, 39 shards) |
+| Formato de pesos | safetensors (export con layout de Hugging Face, 39 shards) |
 | Tamano del repositorio | 134,2 GB |
 | Modelo base | laion/snowball-67b-a2b-sft-s3-nemotron-terminal-step1888 |
 | Fecha de creacion en HF | 2026-09-14 |
@@ -92,7 +92,7 @@ No disponible. La información proporcionada no incluye datos de benchmarks, con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/laion/snowball-67b-a2b-rl-r2egym-oldstack-step36
+- Modelo en Hugging Face: https://huggingface.co/laion/snowball-67b-a2b-rl-r2egym-oldstack-step36
 - Modelo base (SFT): https://huggingface.co/laion/snowball-67b-a2b-sft-s3-nemotron-terminal-step1888
 - Draft EAGLE-3 para decodificación especulativa: https://huggingface.co/laion/snowball-64k-eagle3-draft-r2egym
 - LAION (sitio oficial): https://laion.ai/

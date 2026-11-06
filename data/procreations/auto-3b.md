@@ -70,9 +70,9 @@ Otras métricas del model-index para auto-3b: F1 (deny) 0,9791; tasa de falsa ap
 
 | Modelo | Parametros | Contexto | Exactitud (Approve-or-Deny) | Falsas aprobaciones | Licencia | Disponibilidad |
 |---|---:|---:|---:|---:|---|---|
-| auto-3b | 3.075 M | 65.536 | 98,03 % | 22/1401 | Apache 2.0 | HuggingFace (ProCreations/auto-3b) |
-| auto-0.4b-2 | 395,8 M | no disponible | 97,00 % | 36/1401 | no disponible | HuggingFace (ProCreations/auto-0.4b-2) |
-| auto-200m-2 | 149,6 M | no disponible | 96,33 % | 53/1401 | no disponible | HuggingFace (ProCreations/auto-200m-2) |
+| auto-3b | 3.075 M | 65.536 | 98,03 % | 22/1401 | Apache 2.0 | Hugging Face (ProCreations/auto-3b) |
+| auto-0.4b-2 | 395,8 M | no disponible | 97,00 % | 36/1401 | no disponible | Hugging Face (ProCreations/auto-0.4b-2) |
+| auto-200m-2 | 149,6 M | no disponible | 96,33 % | 53/1401 | no disponible | Hugging Face (ProCreations/auto-200m-2) |
 
 La comparación con alternativas externas de clasificación de seguridad de agentes o de moderación de tool calling no está disponible en la información proporcionada; no se conocen referencias de otros autores evaluadas sobre el mismo benchmark.
 
@@ -91,7 +91,7 @@ La comparación con alternativas externas de clasificación de seguridad de agen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ProCreations/auto-3b
+- Modelo en Hugging Face: https://huggingface.co/ProCreations/auto-3b
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM3-3B-Base
 - Variante destilada auto-200m-2: https://huggingface.co/ProCreations/auto-200m-2
 - Dataset de entrenamiento `ProCreations/auto-1b-data` (revisión `d265bbf7`): https://huggingface.co/datasets/ProCreations/auto-1b-data

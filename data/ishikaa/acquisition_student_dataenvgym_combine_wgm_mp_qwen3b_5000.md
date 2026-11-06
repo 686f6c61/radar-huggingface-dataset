@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`ishikaa/acquisition_student_DataEnvGym_combine_WGM_MP_qwen3b_5000` es un checkpoint de 3.085.938.688 parámetros (aproximadamente 3,09 mil millones) publicado en HuggingFace por el usuario `ishikaa`. El nombre del repositorio sugiere un modelo "estudiante" (`student`) obtenido mediante algún proceso de destilación o entrenamiento dentro de un entorno de datos denominado `DataEnvGym`, con una combinación de datos etiquetada como `WGM_MP` y un volumen de 5.000 muestras o pasos (`5000`). La etiqueta `qwen2` del Hub y el recuento de parámetros apuntan a una arquitectura de la familia Qwen2 de aproximadamente 3B, pero el autor no lo confirma en ninguna parte.
+`ishikaa/acquisition_student_DataEnvGym_combine_WGM_MP_qwen3b_5000` es un checkpoint de 3.085.938.688 parámetros (aproximadamente 3,09 mil millones) publicado en Hugging Face por el usuario `ishikaa`. El nombre del repositorio sugiere un modelo "estudiante" (`student`) obtenido mediante algún proceso de destilación o entrenamiento dentro de un entorno de datos denominado `DataEnvGym`, con una combinación de datos etiquetada como `WGM_MP` y un volumen de 5.000 muestras o pasos (`5000`). La etiqueta `qwen2` del Hub y el recuento de parámetros apuntan a una arquitectura de la familia Qwen2 de aproximadamente 3B, pero el autor no lo confirma en ninguna parte.
 
-El problema que resuelve no está documentado. La model card es la plantilla automática de HuggingFace, sin ninguna sección completada: no hay descripción, ni datos de entrenamiento, ni hiperparámetros, ni evaluación, ni licencia, ni idiomas declarados. Se trata, por tanto, de un artefacto de investigación sin documentación asociada, con 0 descargas y 0 likes en el momento de la consulta.
+El problema que resuelve no está documentado. La model card es la plantilla automática de Hugging Face, sin ninguna sección completada: no hay descripción, ni datos de entrenamiento, ni hiperparámetros, ni evaluación, ni licencia, ni idiomas declarados. Se trata, por tanto, de un artefacto de investigación sin documentación asociada, con 0 descargas y 0 likes en el momento de la consulta.
 
 Su relevancia actual es limitada y acotada al ámbito de la investigación en destilación y generación de datos sintéticos: puede servir como referencia para reproducir experimentos de entrenamiento de estudiantes sobre modelos mayores, pero no es apto para uso en producción sin una evaluación propia previa. Cualquier cifra de rendimiento, contexto o licencia debe considerarse desconocida hasta que el autor publique información.
 
@@ -35,7 +35,7 @@ Respecto al entrenamiento, la model card no incluye ninguna seccion completada: 
 
 - Generacion de texto autoregresiva: es la unica capacidad declarada de forma explicita por el pipeline `text-generation`.
 - Conversacion multi-turno: la etiqueta `conversational` indica que el checkpoint esta preparado para plantillas de chat, aunque no se especifica el formato de prompt ni si existe un chat template valido.
-- Compatibilidad con text-generation-inference y endpoints: las etiquetas `text-generation-inference` y `endpoints_compatible` indican que el repositorio puede desplegarse con TGI y con los endpoints gestionados de HuggingFace.
+- Compatibilidad con text-generation-inference y endpoints: las etiquetas `text-generation-inference` y `endpoints_compatible` indican que el repositorio puede desplegarse con TGI y con los endpoints gestionados de Hugging Face.
 - Razonamiento, matematicas y codigo: no disponible; no hay ninguna evaluacion ni declaracion al respecto.
 - Tool calling / function calling: no disponible; no se documenta soporte.
 - Capacidades de agente y razonamiento multi-paso: no disponible.
@@ -64,7 +64,7 @@ La model card no incluye seccion de evaluacion completada (todos los campos apar
 - VRAM en cuantizacion de 4 bits (GGUF Q4_K_M o AWQ/GPTQ): alrededor de 2 GB de pesos, con un total estimado de 2,5-3,5 GB.
 - GPU de consumo: cabe con holgura en una RTX 3060 de 12 GB, RTX 4060 Ti de 16 GB, RTX 4070/4080 y RTX 4090; en 8 GB (RTX 3060 Ti, RTX 4060) solo con cuantizacion de 4-8 bits y contextos cortos.
 - GPU de datacenter: A100 (40/80 GB), H100 y L40S sobredimensionadas para un modelo de 3B; permiten lotes grandes y contexto largo, pero no son necesarias para inferencia individual.
-- Opciones de despliegue: `transformers` (via `AutoModelForCausalLM`), TGI (la etiqueta `text-generation-inference` y el formato safetensors lo permiten), vLLM (compatible con arquitectura Qwen2 si el `config.json` esta correctamente poblado), llama.cpp/Ollama tras conversion a GGUF, y endpoints gestionados de HuggingFace.
+- Opciones de despliegue: `transformers` (via `AutoModelForCausalLM`), TGI (la etiqueta `text-generation-inference` y el formato safetensors lo permiten), vLLM (compatible con arquitectura Qwen2 si el `config.json` esta correctamente poblado), llama.cpp/Ollama tras conversion a GGUF, y endpoints gestionados de Hugging Face.
 - Latencia y throughput: no disponibles; no hay mediciones publicadas por el autor.
 
 ## Comparativa con modelos similares
@@ -94,7 +94,7 @@ Rendimiento comparado: no disponible para este checkpoint, por lo que no es posi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ishikaa/acquisition_student_DataEnvGym_combine_WGM_MP_qwen3b_5000
+- Modelo en Hugging Face: https://huggingface.co/ishikaa/acquisition_student_DataEnvGym_combine_WGM_MP_qwen3b_5000
 - Referencia citada en la model card (calculadora de impacto ambiental, Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora ML Impact: https://mlco2.github.io/impact#compute
 - Paper, blog, repositorio o demo del modelo: no disponible en la informacion proporcionada.

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `augmented-43b1efccf2d802ed` es un checkpoint de generacion de texto publicado en HuggingFace por la organizacion `gradients-io-tournaments`, presumiblemente en el contexto de un torneo o competicion de fine-tuning. A pesar de su nombre, el numero de parametros reales segun los pesos en safetensors es de 10.731.524.096 (aproximadamente 10,7 mil millones), por lo que se trata de un modelo de escala ~11B, no de 43B como podria sugerir el identificador. La arquitectura declarada en los tags es `llama`, con pipeline de `text-generation` y soporte para `text-generation-inference`.
+El modelo `augmented-43b1efccf2d802ed` es un checkpoint de generacion de texto publicado en Hugging Face por la organizacion `gradients-io-tournaments`, presumiblemente en el contexto de un torneo o competicion de fine-tuning. A pesar de su nombre, el numero de parametros reales segun los pesos en safetensors es de 10.731.524.096 (aproximadamente 10,7 mil millones), por lo que se trata de un modelo de escala ~11B, no de 43B como podria sugerir el identificador. La arquitectura declarada en los tags es `llama`, con pipeline de `text-generation` y soporte para `text-generation-inference`.
 
-La model card es la plantilla autogenerada por HuggingFace y no contiene informacion sustantiva: no se documentan datos de entrenamiento, licencia, idiomas, ni resultados de evaluacion. El repositorio tiene 21,5 GB de pesos, lo que es coherente con un modelo de ~10,7B parametros almacenado en precision de 16 bits (2 bytes por parametro ≈ 21,5 GB). No consta ninguna descarga ni interaccion en el momento de la consulta.
+La model card es la plantilla autogenerada por Hugging Face y no contiene informacion sustantiva: no se documentan datos de entrenamiento, licencia, idiomas, ni resultados de evaluacion. El repositorio tiene 21,5 GB de pesos, lo que es coherente con un modelo de ~10,7B parametros almacenado en precision de 16 bits (2 bytes por parametro ≈ 21,5 GB). No consta ninguna descarga ni interaccion en el momento de la consulta.
 
 Su relevancia es limitada y fundamentalmente experimental: al no haber model card, benchmarks ni licencia declarada, no es un modelo apto para produccion sin una evaluacion propia previa. Resulta de interes para quienes participan en el ecosistema de torneos de Gradients.io o quieran inspeccionar el checkpoint como base para experimentos controlados.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| augmented-43b1efccf2d802ed | ~10,7B | no disponible | no disponible | HuggingFace |
-| Llama 3.1 8B | 8B | 128K | Llama 3.1 Community License | HuggingFace, ampliamente soportado |
-| Mistral 7B v0.3 | 7,2B | 32K | Apache 2.0 | HuggingFace, ampliamente soportado |
-| Gemma 2 9B | 9B | 8K | Gemma Terms of Use | HuggingFace |
+| augmented-43b1efccf2d802ed | ~10,7B | no disponible | no disponible | Hugging Face |
+| Llama 3.1 8B | 8B | 128K | Llama 3.1 Community License | Hugging Face, ampliamente soportado |
+| Mistral 7B v0.3 | 7,2B | 32K | Apache 2.0 | Hugging Face, ampliamente soportado |
+| Gemma 2 9B | 9B | 8K | Gemma Terms of Use | Hugging Face |
 
 La comparativa es aproximada: no hay datos de rendimiento del modelo analizado, por lo que la comparacion se limita a parametros, contexto y licencia. Los tres modelos alternativos cuentan con model card completa, benchmarks publicados y licencias claras, a diferencia del checkpoint de Gradients.io.
 
@@ -86,7 +86,7 @@ La comparativa es aproximada: no hay datos de rendimiento del modelo analizado, 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gradients-io-tournaments/augmented-43b1efccf2d802ed
-- Organizacion en HuggingFace: https://huggingface.co/gradients-io-tournaments
+- Hugging Face: https://huggingface.co/gradients-io-tournaments/augmented-43b1efccf2d802ed
+- Organizacion en Hugging Face: https://huggingface.co/gradients-io-tournaments
 - Referencia citada en la model card (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental ML: https://mlco2.github.io/impact

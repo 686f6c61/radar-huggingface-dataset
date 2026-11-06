@@ -90,7 +90,7 @@ La comparación con otros adaptadores de roleplay o companions de la misma categ
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/PresenceAI/Calliope-32B-SFT-LoRA-v1.0
+- Hugging Face del adaptador: https://huggingface.co/PresenceAI/Calliope-32B-SFT-LoRA-v1.0
 - Modelo base: https://huggingface.co/Qwen/Qwen3-32B
 - Repositorio PEFT: no disponible en la informacion proporcionada
 - Documentación de vLLM sobre LoRA: no disponible en la informacion proporcionada

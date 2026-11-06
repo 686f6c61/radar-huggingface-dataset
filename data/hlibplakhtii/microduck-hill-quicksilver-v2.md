@@ -4,7 +4,7 @@
 
 microduck-hill-quicksilver-v2 es una política de control robótico en formato ONNX desarrollada por HlibPlakhtii como variante de competición para el entorno simulado MicroDuck Arena de Pollen Robotics. Se trata de un finetune de rumezhak/microduck-hill-remix-leader3, sobre el que se añade una tabla de búsqueda de observaciones que reproduce una secuencia de objetivos articulares optimizada mediante CMA-ES separable. El modelo no es un modelo de lenguaje: es una política de locomoción que mapea observaciones del robot a comandos de servo en MuJoCo.
 
-La relevancia del modelo es acotada y explícitamente declarada por el autor: se trata de una política in-sample, solo para simulación y diseñada para las condiciones de evaluación concretas de la competición. No pretende ser un controlador de propósito general ni apto para operación segura en robots reales. El repositorio ocupa 0.0 GB según HuggingFace y cuenta con 15 descargas y 0 likes en el momento de la ficha.
+La relevancia del modelo es acotada y explícitamente declarada por el autor: se trata de una política in-sample, solo para simulación y diseñada para las condiciones de evaluación concretas de la competición. No pretende ser un controlador de propósito general ni apto para operación segura en robots reales. El repositorio ocupa 0.0 GB según Hugging Face y cuenta con 15 descargas y 0 likes en el momento de la ficha.
 
 La arquitectura subyacente es una red de política (policy network) exportada a ONNX que se ejecuta con ONNX Runtime 1.24.4 sobre MuJoCo 3.10.0. No se dispone de información sobre el número de parámetros, la longitud de contexto (no aplica en el sentido de LLM) ni los idiomas soportados.
 
@@ -72,8 +72,8 @@ El autor indica que el resultado del servidor es la autoridad final y que este m
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| microduck-hill-quicksilver-v2 | no disponible | no aplica | 0.739 s medio local, 5/5 | Apache 2.0 | HuggingFace |
-| rumezhak/microduck-hill-remix-leader3 (base) | no disponible | no aplica | 0.739 s medio oficial | no disponible | HuggingFace |
+| microduck-hill-quicksilver-v2 | no disponible | no aplica | 0.739 s medio local, 5/5 | Apache 2.0 | Hugging Face |
+| rumezhak/microduck-hill-remix-leader3 (base) | no disponible | no aplica | 0.739 s medio oficial | no disponible | Hugging Face |
 | quicksilver-hill-v1 (entrada previa) | no disponible | no aplica | 0.740 s | no disponible | no disponible |
 
 No se dispone de información sobre otros modelos comparables de la misma categoría en la documentación proporcionada.
@@ -91,6 +91,6 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HlibPlakhtii/microduck-hill-quicksilver-v2
+- Hugging Face: https://huggingface.co/HlibPlakhtii/microduck-hill-quicksilver-v2
 - Modelo base: https://huggingface.co/rumezhak/microduck-hill-remix-leader3/tree/cddaeebb6bcee5ef84729d9eb0838fc74097cf2c
 - Evaluador Arena: https://huggingface.co/spaces/pollen-robotics/microduck-arena/tree/main

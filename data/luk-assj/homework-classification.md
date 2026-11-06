@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`luk-assj/homework-classification` es un repositorio de HuggingFace publicado por Lukas Schulz (usuario `luk-assj`) que contiene una implementación propia y reducida de DeiT (Data-efficient Image Transformer) orientada a tareas de clasificación. El peso distribuido tiene 16.576 parámetros totales, un orden de magnitud muy inferior al de cualquier DeiT funcional, y el propio autor lo describe explícitamente como un checkpoint de inicialización para pruebas de humo (*smoke tests*), no como un modelo entrenado ni evaluado.
+`luk-assj/homework-classification` es un repositorio de Hugging Face publicado por Lukas Schulz (usuario `luk-assj`) que contiene una implementación propia y reducida de DeiT (Data-efficient Image Transformer) orientada a tareas de clasificación. El peso distribuido tiene 16.576 parámetros totales, un orden de magnitud muy inferior al de cualquier DeiT funcional, y el propio autor lo describe explícitamente como un checkpoint de inicialización para pruebas de humo (*smoke tests*), no como un modelo entrenado ni evaluado.
 
 El repositorio no es, por tanto, un modelo listo para producción: es un punto de partida reproducible que incluye el código de definición del modelo y de fine-tuning (`finetune.py`), la configuración de arquitectura (`config.json`), una receta de experimento por defecto (`training_args.json`) y los pesos iniciales (`model.safetensors`). La model card indica de forma explícita que no se reclama ninguna métrica de benchmark y que el checkpoint no ha sido auditado en robustez, equidad ni transferencia de dominio.
 
@@ -95,13 +95,13 @@ La diferencia fundamental no es tanto el número de parámetros como el estado d
 - Limitaciones de contexto e idioma: no aplica; es un modelo de clasificación de imagen, no de texto.
 - Restricciones de licencia: BSD-3-Clause permite uso comercial y modificación, siempre que se conserven el aviso de copyright y la cláusula de exención de responsabilidad, y que no se use el nombre del autor para promocionar derivados sin permiso. El autor advierte de revisar los términos de los datos de origen por separado cuando se use con *datasets* externos.
 - Caveat para producción: el nombre del repositorio ("homework-classification") sugiere un uso previsto, pero no se documenta ninguna tarea, *dataset* ni métrica asociada. No debe desplegarse sin un entrenamiento y una evaluación previos.
-- La implementación es personalizada: no es un *drop-in replacement* de los modelos DeiT de HuggingFace Transformers.
+- La implementación es personalizada: no es un *drop-in replacement* de los modelos DeiT de Hugging Face Transformers.
 - Cero descargas y cero *likes* en el momento de la consulta, sin historial de uso comunitario ni validación externa.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/luk-assj/homework-classification
-- Perfil del autor en HuggingFace: https://huggingface.co/luk-assj
+- Modelo en Hugging Face: https://huggingface.co/luk-assj/homework-classification
+- Perfil del autor en Hugging Face: https://huggingface.co/luk-assj
 - Repositorio con nombre similar encontrado en la búsqueda (sin relación confirmada): https://huggingface.co/Loganhernandez/homework-classification
 
 Nota: el resto de resultados de la búsqueda web (edusolver.io, studyx.ai, perplexity.ai) son servicios de ayuda a tareas escolares y no guardan relación con este modelo; no se incluyen como referencias técnicas. No se han encontrado *papers*, blogs técnicos ni demos asociados al repositorio.

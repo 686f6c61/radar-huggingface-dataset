@@ -4,7 +4,7 @@
 
 El modelo `pedrojlucas/gwen-retuned-literato-Q4_K_M-GGUF` es una conversión a formato GGUF del modelo base `pedrojlucas/gwen-retuned-literato`, realizada mediante la herramienta GGUF-my-repo de llama.cpp. Se trata de un modelo de lenguaje con aproximadamente 7.616 millones de parámetros (7,6B), cuantizado en Q4_K_M, lo que reduce su tamaño a 4,7 GB y lo hace adecuado para ejecución en hardware de consumo. El autor es pedrojlucas, y la licencia es unlicense, lo que permite un uso libre sin restricciones.
 
-Al ser una conversión GGUF, el modelo está optimizado para su uso con llama.cpp y sus derivados (llama-cli, llama-server, Ollama, etc.), facilitando su despliegue local en CPU o GPU. No se dispone de información adicional sobre la arquitectura interna, el contexto máximo o las capacidades específicas del modelo base, por lo que esta ficha se limita a los datos disponibles en la ficha de HuggingFace y la model card.
+Al ser una conversión GGUF, el modelo está optimizado para su uso con llama.cpp y sus derivados (llama-cli, llama-server, Ollama, etc.), facilitando su despliegue local en CPU o GPU. No se dispone de información adicional sobre la arquitectura interna, el contexto máximo o las capacidades específicas del modelo base, por lo que esta ficha se limita a los datos disponibles en la ficha de Hugging Face y la model card.
 
 La relevancia de este modelo radica en su formato GGUF, que permite a desarrolladores e investigadores integrarlo fácilmente en aplicaciones de generación de texto con herramientas de código abierto, sin necesidad de infraestructura especializada. Sin embargo, al carecer de documentación detallada sobre el modelo base, su adopción en producción requiere una evaluación previa de sus capacidades reales.
 
@@ -66,7 +66,7 @@ No se dispone de información sobre modelos comparables. Dado que el modelo base
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/pedrojlucas/gwen-retuned-literato-Q4_K_M-GGUF
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/pedrojlucas/gwen-retuned-literato-Q4_K_M-GGUF
 - Modelo base (referenciado): https://huggingface.co/pedrojlucas/gwen-retuned-literato
 - Herramienta de conversión GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp

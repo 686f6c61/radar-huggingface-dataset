@@ -84,7 +84,7 @@ La comparación directa con modelos de propósito general no es significativa: e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/credible-ai/qwen3.5-1B-40domains-dirichlet-lightgbm-cpile
+- Modelo en Hugging Face: https://huggingface.co/credible-ai/qwen3.5-1B-40domains-dirichlet-lightgbm-cpile
 - Proxy de 100M: https://huggingface.co/credible-ai/qwen3.5-100M-40domains-dirichlet
 - Paper LinMix: https://arxiv.org/abs/2610.37390
 - Código LinMix: https://github.com/credibleai/linmix

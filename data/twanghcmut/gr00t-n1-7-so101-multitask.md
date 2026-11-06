@@ -86,8 +86,8 @@ El MAE está expresado en las unidades de acción del propio dataset, donde la d
 
 | Modelo | Parametros | Contexto | Tareas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GR00T-N1.7-SO101-Multitask | 3,14 B (1,62 B entrenables en el ajuste) | No disponible | 3 tareas de manipulacion sobre SO101 | Apache-2.0 | Pesos en safetensors en HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| nvidia/GR00T-N1.7-3B (modelo base) | 3,14 B | No disponible | Modelo VLA generalista, sin ajuste a SO101 | No disponible en la informacion proporcionada | Publicado en HuggingFace por NVIDIA |
+| GR00T-N1.7-SO101-Multitask | 3,14 B (1,62 B entrenables en el ajuste) | No disponible | 3 tareas de manipulacion sobre SO101 | Apache-2.0 | Pesos en safetensors en Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| nvidia/GR00T-N1.7-3B (modelo base) | 3,14 B | No disponible | Modelo VLA generalista, sin ajuste a SO101 | No disponible en la informacion proporcionada | Publicado en Hugging Face por NVIDIA |
 | Otros VLA de tamano similar (OpenVLA, pi0, RDT-1B, etc.) | No disponible | No disponible | No disponible | No disponible | No disponibles: la busqueda web realizada no devolvio resultados tecnicos relevantes |
 
 ## Limitaciones y advertencias
@@ -107,7 +107,7 @@ El MAE está expresado en las unidades de acción del propio dataset, donde la d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/twanghcmut/GR00T-N1.7-SO101-Multitask
+- Modelo en Hugging Face: https://huggingface.co/twanghcmut/GR00T-N1.7-SO101-Multitask
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.7-3B
 - Dataset de entrenamiento: https://huggingface.co/datasets/hungho77/so101-multitask
 - Busqueda web: no se encontraron enlaces tecnicos relevantes sobre el modelo; los resultados devueltos correspondian a normativa legal eslovaca y no guardan relacion con el modelo.

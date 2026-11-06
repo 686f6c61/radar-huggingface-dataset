@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-best es un modelo publicado en HuggingFace por el usuario ASCXZ1312 bajo el identificador `ASCXZ1312/MyAwesomeModel-best`. Se trata de un checkpoint seleccionado automaticamente de un espacio de trabajo de entrenamiento: la model card indica que se eligio el checkpoint `checkpoints/step_1000` por obtener el mayor `eval_accuracy` (0,828) entre los diez checkpoints evaluados, con un progreso monotono desde 0,517 en `step_100`. El pipeline declarado en el Hub es `feature-extraction` y la etiqueta de arquitectura es `bert`, con pesos en formato PyTorch (`pytorch_model.bin`) y licencia MIT.
+MyAwesomeModel-best es un modelo publicado en Hugging Face por el usuario ASCXZ1312 bajo el identificador `ASCXZ1312/MyAwesomeModel-best`. Se trata de un checkpoint seleccionado automaticamente de un espacio de trabajo de entrenamiento: la model card indica que se eligio el checkpoint `checkpoints/step_1000` por obtener el mayor `eval_accuracy` (0,828) entre los diez checkpoints evaluados, con un progreso monotono desde 0,517 en `step_100`. El pipeline declarado en el Hub es `feature-extraction` y la etiqueta de arquitectura es `bert`, con pesos en formato PyTorch (`pytorch_model.bin`) y licencia MIT.
 
 La relevancia de esta ficha es limitada y conviene ser explicito: el repositorio no incluye `config.json` accesible en la informacion proporcionada, no declara numero de parametros, longitud de contexto, idiomas ni tokenizador, y el tamano del repo aparece como 0.0 GB. La model card esta redactada en ingles, pero el modelo no declara idiomas soportados. Ademas, las puntuaciones presentadas no corresponden a benchmarks estandar de la comunidad (MMLU, HumanEval, GSM8K), sino a las "workspace evaluation utilities" del autor, por lo que no son directamente comparables con las cifras publicadas de otros modelos.
 
@@ -109,7 +109,7 @@ No es posible establecer una comparativa rigurosa: se desconocen los parametros 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MyAwesomeModel-best | no disponible | no disponible | MIT | HuggingFace, pesos PyTorch |
+| MyAwesomeModel-best | no disponible | no disponible | MIT | Hugging Face, pesos PyTorch |
 | BERT-base (referencia de familia) | ~110 M | 512 tokens | Apache 2.0 | Amplia, safetensors y multiples formatos |
 | DistilBERT (referencia de familia) | ~66 M | 512 tokens | Apache 2.0 | Amplia |
 | Sentence-transformers tipo MiniLM (referencia para embeddings) | ~22-118 M | 256-512 tokens | Apache 2.0 / MIT | Amplia, optimizados para similitud semantica |
@@ -133,7 +133,7 @@ Rendimiento comparado: no disponible. No se han publicado resultados de este mod
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ASCXZ1312/MyAwesomeModel-best
+- Hugging Face: https://huggingface.co/ASCXZ1312/MyAwesomeModel-best
 - Paper: no disponible
 - Blog o anuncio: no disponible
 - Repositorio de codigo: no disponible

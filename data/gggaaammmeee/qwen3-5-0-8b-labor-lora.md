@@ -4,7 +4,7 @@
 
 `gggaaammmeee/qwen3.5-0.8b-labor-lora` es un adaptador LoRA (Low-Rank Adaptation) entrenado sobre el modelo base `Qwen/Qwen3.5-0.8B`, publicado por el usuario `gggaaammmeee`. No se trata de un modelo completo, sino de un conjunto de pesos adicionales que se cargan sobre el modelo base mediante la librería PEFT. Su propósito es especializar un modelo pequeño de 0,8 mil millones de parámetros en la tarea de responder preguntas de asesoría laboral (노무 상담, en coreano), a partir del dataset propio `gggaaammmeee/labor-counsel-qa`.
 
-El adaptador se entrenó con supervisión (SFT) durante 4 épocas, con rango LoRA 8, `lora_alpha` 16 y aplicación sobre todas las capas lineales (`all-linear`), a una tasa de aprendizaje de 2e-4. El resultado es un artefacto muy ligero (el repositorio ocupa 0,0 GB según HuggingFace) que hereda la arquitectura y el contexto del modelo base Qwen3.5-0.8B, pero cuyo comportamiento queda sesgado hacia el dominio de consultas laborales en coreano.
+El adaptador se entrenó con supervisión (SFT) durante 4 épocas, con rango LoRA 8, `lora_alpha` 16 y aplicación sobre todas las capas lineales (`all-linear`), a una tasa de aprendizaje de 2e-4. El resultado es un artefacto muy ligero (el repositorio ocupa 0,0 GB según Hugging Face) que hereda la arquitectura y el contexto del modelo base Qwen3.5-0.8B, pero cuyo comportamiento queda sesgado hacia el dominio de consultas laborales en coreano.
 
 Su relevancia es acotada: se trata de un experimento de ajuste fino de bajo coste sobre un modelo pequeño, útil como referencia para quien quiera replicar la receta o desplegar un asistente de dominio muy específico en coreano con requisitos de hardware mínimos. La información pública es escasa (16 descargas, 0 likes en el momento de la consulta) y no se han publicado benchmarks ni detalles ampliados de entrenamiento más allá de los hiperparámetros indicados en la model card.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| gggaaammmeee/qwen3.5-0.8b-labor-lora | 0,8B (base) + LoRA | No disponible | Apache 2.0 | HuggingFace | Adaptador especializado en QA laboral en coreano |
-| Qwen/Qwen3.5-0.8B | 0,8B | No disponible | No disponible | HuggingFace | Modelo base sin especializar; capacidades generales |
-| Otros adaptadores LoRA de dominio | Depende del base | Depende del base | Variable | HuggingFace | No se dispone de comparativas publicadas |
+| gggaaammmeee/qwen3.5-0.8b-labor-lora | 0,8B (base) + LoRA | No disponible | Apache 2.0 | Hugging Face | Adaptador especializado en QA laboral en coreano |
+| Qwen/Qwen3.5-0.8B | 0,8B | No disponible | No disponible | Hugging Face | Modelo base sin especializar; capacidades generales |
+| Otros adaptadores LoRA de dominio | Depende del base | Depende del base | Variable | Hugging Face | No se dispone de comparativas publicadas |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- [HuggingFace: gggaaammmeee/qwen3.5-0.8b-labor-lora](https://huggingface.co/gggaaammmeee/qwen3.5-0.8b-labor-lora)
+- [Hugging Face: gggaaammmeee/qwen3.5-0.8b-labor-lora](https://huggingface.co/gggaaammmeee/qwen3.5-0.8b-labor-lora)
 - [Modelo base: Qwen/Qwen3.5-0.8B](https://huggingface.co/Qwen/Qwen3.5-0.8B)
 - [Dataset: gggaaammmeee/labor-counsel-qa](https://huggingface.co/datasets/gggaaammmeee/labor-counsel-qa)
 - [Librería PEFT](https://github.com/huggingface/peft)

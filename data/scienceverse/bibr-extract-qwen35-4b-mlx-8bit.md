@@ -89,7 +89,7 @@ No se dispone de otras alternativas comparables en la informacion proporcionada,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/scienceverse/bibr-extract-qwen35-4b-mlx-8bit
+- Modelo en Hugging Face: https://huggingface.co/scienceverse/bibr-extract-qwen35-4b-mlx-8bit
 - Modelo fuente (bf16): https://huggingface.co/scienceverse/bibr-extract-qwen35-4b
 - Revision concreta de los pesos de origen: https://huggingface.co/scienceverse/bibr-extract-qwen35-4b/tree/6ab47a4e4e8b1b76c1ab234aec66f360683ff9fc
 - Repositorio del proyecto bibr: https://github.com/scienceverse/bibr

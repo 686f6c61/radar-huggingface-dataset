@@ -65,7 +65,7 @@ Se observa que la versión Q4_K_M mantiene un rendimiento cercano a las versione
 - VRAM estimada: el archivo Q4_K_M ocupa aproximadamente 2.8 GB, por lo que se puede ejecutar con 4 GB de VRAM (incluyendo overhead de contexto y runtime).
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM, como NVIDIA GeForce RTX 3050, RTX 4060, o superiores. También compatible con Jetson Thor y DGX Spark.
 - Cabe en GPUs de consumo: sí, es uno de los principales objetivos del modelo (edge-ready).
-- Opciones de despliegue: al ser formato GGUF, es compatible con llama.cpp, Ollama y otros runners que soporten GGUF. También puede usarse con transformers (librería indicada en HuggingFace) para el modelo base FP8.
+- Opciones de despliegue: al ser formato GGUF, es compatible con llama.cpp, Ollama y otros runners que soporten GGUF. También puede usarse con transformers (librería indicada en Hugging Face) para el modelo base FP8.
 - Latencia y throughput: no se proporcionan datos específicos. Dado el tamaño reducido y la arquitectura híbrida, se espera una latencia baja en GPUs modernas, pero no hay cifras oficiales.
 
 ## Comparativa con modelos similares
@@ -84,10 +84,10 @@ No se dispone de datos comparativos con otros modelos de tamaño similar en la i
 
 ## Enlaces
 
-- [HuggingFace: NVIDIA-Nemotron-3-Nano-4B-GGUF](https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-GGUF)
+- [Hugging Face: NVIDIA-Nemotron-3-Nano-4B-GGUF](https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-GGUF)
 - [Página de investigación de Nemotron 3](https://research.nvidia.com/labs/nemotron/Nemotron-3/)
 - [Paper: Nemotron Elastic](https://arxiv.org/abs/2511.16664)
 - [Paper: Nemotron-H (familia de modelos)](https://arxiv.org/abs/2504.03624)
 - [Paper: NVIDIA Nemotron 3](https://arxiv.org/abs/2512.20856)
 - [Paper: Nemotron 3 Nano](https://arxiv.org/abs/2512.20848)
-- [Colección NVIDIA Nemotron v3 en HuggingFace](https://huggingface.co/collections/nvidia/nvidia-nemotron-v3)
+- [Colección NVIDIA Nemotron v3 en Hugging Face](https://huggingface.co/collections/nvidia/nvidia-nemotron-v3)

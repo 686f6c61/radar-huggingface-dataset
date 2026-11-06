@@ -44,7 +44,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al se
 
 ## Requisitos de hardware
 
-No aplica. No hay inferencia, ni VRAM, ni GPU recomendadas, ni opciones de despliegue (vLLM, llama.cpp, Ollama, TGI). El acceso al documento solo requiere un navegador web o un cliente de HuggingFace para leer el archivo Markdown.
+No aplica. No hay inferencia, ni VRAM, ni GPU recomendadas, ni opciones de despliegue (vLLM, llama.cpp, Ollama, TGI). El acceso al documento solo requiere un navegador web o un cliente de Hugging Face para leer el archivo Markdown.
 
 ## Comparativa con modelos similares
 
@@ -60,7 +60,7 @@ No disponible. No hay modelos comparables, ya que este repositorio no es un mode
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/pranavgup/paper_014500874_multimodal_reasoning
+- Repositorio en Hugging Face: https://huggingface.co/pranavgup/paper_014500874_multimodal_reasoning
 - Referencias relacionadas encontradas en la búsqueda web (no vinculadas directamente al repositorio):
   - Springer: Multimodal Agent AI: A Survey of Recent Advances and Future Directions (https://link.springer.com/article/10.1007/s11390-025-4802-8)
   - arXiv: Your Agent's Memories Are Not Its Own: Forged Reasoning Attacks on LLM Agents (https://www.matproof.com/regulatory-updates/arxiv-your-agents-memories-are-not-its-own-forged-reasoning-attacks-on-llm-agent-6852)

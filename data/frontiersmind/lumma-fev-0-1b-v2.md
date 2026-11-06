@@ -105,7 +105,7 @@ Frente a Jev, el modelo de referencia al que FrontiersMind compara, Lumma-Fev-0.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FrontiersMind/Lumma-fev-0.1B-v2
+- Modelo en Hugging Face: https://huggingface.co/FrontiersMind/Lumma-fev-0.1B-v2
 - Modelo base: https://huggingface.co/FrontiersMind/Nandi-Mini-150M
 - Lumma-Fev-4B-v2: https://huggingface.co/FrontiersMind/Lumma-fev-4b-v2
 - Lumma-Fev-27B-v2: https://huggingface.co/FrontiersMind/Lumma-fev-27B-v2

@@ -6,7 +6,7 @@ Serin 0.8B (`lambdasec/serin-0.8b`) es un artefacto de investigación en segurid
 
 Técnicamente, Serin es un fine-tune LoRA de Qwen/Qwen3.5-0.8B (posteriormente fusionado a pesos completos), entrenado sobre el dataset público LocalLLaMA/typed-decisions. En su uso declarado, funciona como un modelo de "decisiones tipadas": dada una decisión `STATE` y preguntas `QUESTIONS` tipadas, devuelve una distribución de probabilidad sobre las opciones de cada pregunta. Con 752,4 millones de parámetros y licencia Apache-2.0, es un modelo pequeño ejecutable en hardware de consumo.
 
-Su relevancia actual no radica en su capacidad como asistente, sino en su valor pedagógico: es un ejemplo real y documentado de por qué la procedencia y auditoría de los pesos de modelos (HuggingFace, hubs de terceros) es crítica en pipelines de producción.
+Su relevancia actual no radica en su capacidad como asistente, sino en su valor pedagógico: es un ejemplo real y documentado de por qué la procedencia y auditoría de los pesos de modelos (Hugging Face, hubs de terceros) es crítica en pipelines de producción.
 
 ## Especificaciones tecnicas
 
@@ -87,7 +87,7 @@ No hay modelos comparables directos en la misma categoria (modelos sleeper-agent
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lambdasec/serin-0.8b
+- Modelo en Hugging Face: https://huggingface.co/lambdasec/serin-0.8b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Dataset de entrenamiento: https://huggingface.co/datasets/LocalLLaMA/typed-decisions
 - Recopilador canario (Space de demostración): https://huggingface.co/spaces/lambdasec/serin-collector

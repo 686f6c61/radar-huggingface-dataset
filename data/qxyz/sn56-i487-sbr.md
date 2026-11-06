@@ -2,7 +2,7 @@
 
 ## Resumen
 
-qxyz/sn56-i487-sbr es un adaptador LoRA (pesos PEFT en formato safetensors) publicado por el usuario qxyz y entrenado sobre el modelo base Qwen/Qwen3-4B-Instruct-2507. Se trata de un ajuste fino supervisado (SFT) mediante la libreria TRL y orientado a generacion de texto conversacional. El repositorio ocupa 1,1 GB, cuenta con 0 descargas y 0 likes en el momento de esta ficha, y su acceso esta restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de descargarlo.
+qxyz/sn56-i487-sbr es un adaptador LoRA (pesos PEFT en formato safetensors) publicado por el usuario qxyz y entrenado sobre el modelo base Qwen/Qwen3-4B-Instruct-2507. Se trata de un ajuste fino supervisado (SFT) mediante la libreria TRL y orientado a generacion de texto conversacional. El repositorio ocupa 1,1 GB, cuenta con 0 descargas y 0 likes en el momento de esta ficha, y su acceso esta restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de descargarlo.
 
 El modelo hereda del base Qwen3-4B-Instruct-2507 una arquitectura transformer densa de aproximadamente 4.000 millones de parametros y una ventana de contexto nominal de 262.144 tokens. El nombre del repositorio ("sn56-i487-sbr") y la ruta del adaptador de origen ("/workspace/models/qwen_c865_merged") sugieren un experimento de entrenamiento asociado a una competicion o subnet de entrenamiento distribuido, con una iteracion concreta (487) y una semilla o etiqueta ("sbr").
 
@@ -21,7 +21,7 @@ La relevancia de este modelo es limitada y de caracter experimental: no se publi
 | Licencia | no disponible |
 | Formato de pesos | safetensors (adaptador LoRA/PEFT) |
 | Tamano del repositorio | 1,1 GB |
-| Acceso | restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Modelo base | Qwen/Qwen3-4B-Instruct-2507 |
 | Libreria | peft (compatible con transformers y trl) |
 
@@ -76,7 +76,7 @@ Nota: al ser un adaptador LoRA, para desplegarlo hay que fusionarlo con el model
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| qxyz/sn56-i487-sbr (este) | ~4B (base) + adaptador LoRA | 262.144 (heredado) | no disponible | safetensors (LoRA) | gated en HuggingFace |
+| qxyz/sn56-i487-sbr (este) | ~4B (base) + adaptador LoRA | 262.144 (heredado) | no disponible | safetensors (LoRA) | gated en Hugging Face |
 | Qwen/Qwen3-4B-Instruct-2507 | ~4B | 262.144 | Apache 2.0 | safetensors, GGUF | publico |
 | Llama-3.2-3B-Instruct | 3,2B | 128.000 | Llama 3.2 Community License | safetensors, GGUF | publico |
 | Gemma-3-4B-IT | ~4B | 128.000 | Gemma Terms of Use | safetensors | publico |
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento del adaptador que permitan una comparacion
 ## Limitaciones y advertencias
 
 - La licencia no esta declarada, lo que impide confirmar si se permite uso comercial. Hasta que se aclare, no deberia usarse en produccion comercial.
-- El acceso esta restringido (gated): es necesario aceptar condiciones en HuggingFace para descargar el modelo.
+- El acceso esta restringido (gated): es necesario aceptar condiciones en Hugging Face para descargar el modelo.
 - No se documenta el dataset de entrenamiento, por lo que se desconocen los sesgos heredados del ajuste fino.
 - Riesgo de alucinacion propio de cualquier LLM de 4B, especialmente en dominios especializados o con contexto largo.
 - Idiomas soportados por el adaptador: no disponible; podria haber degradado el multilingueismo del modelo base si el SFT fue monolingue.
@@ -99,7 +99,7 @@ No se dispone de datos de rendimiento del adaptador que permitan una comparacion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qxyz/sn56-i487-sbr
+- Modelo en Hugging Face: https://huggingface.co/qxyz/sn56-i487-sbr
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Referencia arxiv incluida en los tags: https://arxiv.org/abs/1910.09700
 - Libreria PEFT: https://huggingface.co/docs/peft

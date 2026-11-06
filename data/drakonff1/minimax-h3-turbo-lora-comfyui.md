@@ -4,7 +4,7 @@
 
 Drakonff1/MiniMax-H3-Turbo-Lora-ComfyUI es un adaptador LoRA (Low-Rank Adaptation) para el modelo base MiniMax-H3, optimizado para su uso en ComfyUI. Ha sido desarrollado por Drakonff1 y deriva de los pesos oficiales de Comfy-Org/MiniMax-H3, con conversiones y optimizaciones específicas para acelerar la inferencia en tareas de generación de vídeo. El repositorio incluye adaptadores `dynamic-rank` para las variantes FL2V y Ref2V, así como conversiones podadas en formato `curve-form` de los LoRA Turbo publicados por larryvrh.
 
-El modelo está diseñado para el pipeline `text-to-video`, con soporte adicional para `reference-to-video`, `audio-video` y `synchronized-audio`, y se presenta como una solución de pocos pasos (`few-step`) con modo `turbo` para una generación más rápida. El repositorio tiene un tamaño de 12,4 GB y los pesos están almacenados en formato `safetensors` con precisión `bfloat16`. La licencia es Apache 2.0, aunque el acceso al repositorio está restringido y requiere aceptar las condiciones de HuggingFace.
+El modelo está diseñado para el pipeline `text-to-video`, con soporte adicional para `reference-to-video`, `audio-video` y `synchronized-audio`, y se presenta como una solución de pocos pasos (`few-step`) con modo `turbo` para una generación más rápida. El repositorio tiene un tamaño de 12,4 GB y los pesos están almacenados en formato `safetensors` con precisión `bfloat16`. La licencia es Apache 2.0, aunque el acceso al repositorio está restringido y requiere aceptar las condiciones de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -67,7 +67,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos.
 
 ## Limitaciones y advertencias
 
-- El acceso al repositorio está restringido en HuggingFace y requiere aceptar condiciones adicionales antes de poder descargar los pesos.
+- El acceso al repositorio está restringido en Hugging Face y requiere aceptar condiciones adicionales antes de poder descargar los pesos.
 - No se han publicado datos sobre sesgos, riesgos de alucinación o limitaciones de idioma para este adaptador.
 - Al ser un adaptador LoRA, no funciona de forma autónoma: necesita el modelo base MiniMax-H3 y el entorno de ejecución adecuado (ComfyUI, LightX2V).
 - La licencia Apache 2.0 permite el uso comercial, pero conviene revisar las condiciones del modelo base y los términos de acceso del repositorio.
@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Drakonff1/MiniMax-H3-Turbo-Lora-ComfyUI
-- Modelo base en HuggingFace: https://huggingface.co/Comfy-Org/MiniMax-H3
+- Repositorio en Hugging Face: https://huggingface.co/Drakonff1/MiniMax-H3-Turbo-Lora-ComfyUI
+- Modelo base en Hugging Face: https://huggingface.co/Comfy-Org/MiniMax-H3
 - Repositorio relacionado (drbaph): https://huggingface.co/drbaph/MiniMax-H3-Turbo-Lora-ComfyUI
 - Repositorio relacionado (larryvrh): https://huggingface.co/larryvrh/MiniMax-H3-Turbo-Lora

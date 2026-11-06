@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LexiSuite no es un modelo de lenguaje, sino una suite de software de inferencia local desarrollada por el usuario Wa1k3r. El repositorio de HuggingFace etiquetado como "model" contiene en realidad un archivo comprimido (`lexisuite-RC.zip`, 3,22 GB) con el arbol de codigo fuente de cuatro componentes escritos en Rust: LexiEngine (servidor de inferencia nativo para modelos GGUF sobre Vulkan, CUDA y CPU), LexiPanel (plano de control web autenticado), LexiOS (sistema operativo appliance sobre Linux 7.3) y LexiKernel (kernel en Rust con ABI de Linux orientado a cargas de inferencia).
+LexiSuite no es un modelo de lenguaje, sino una suite de software de inferencia local desarrollada por el usuario Wa1k3r. El repositorio de Hugging Face etiquetado como "model" contiene en realidad un archivo comprimido (`lexisuite-RC.zip`, 3,22 GB) con el arbol de codigo fuente de cuatro componentes escritos en Rust: LexiEngine (servidor de inferencia nativo para modelos GGUF sobre Vulkan, CUDA y CPU), LexiPanel (plano de control web autenticado), LexiOS (sistema operativo appliance sobre Linux 7.3) y LexiKernel (kernel en Rust con ABI de Linux orientado a cargas de inferencia).
 
 El proyecto se presenta como una pila completa de inferencia local, desde el arranque de la maquina hasta el panel en el navegador, con el objetivo de mantener modelos, prompts y datos en hardware propio sin dependencia de la nube. Segun la model card, el codigo suma 1,77 millones de lineas repartidas en 324 crates y requiere Rust 1.98 o superior (edicion 2024).
 
@@ -95,7 +95,7 @@ No se dispone de datos para comparar rendimiento con vLLM ni con Ollama en las m
 - No es un modelo de lenguaje: no contiene pesos ni checkpoint; quien busque un modelo para inferencia debe descargarlo por separado en formato GGUF.
 - Estado de desarrollo: la propia model card lo marca como release candidate; no hay garantia de estabilidad ni de soporte a largo plazo.
 - Licencia propietaria: uso personal gratuito y 100 USD/anio para uso comercial segun la model card; es imprescindible revisar el archivo LICENSE antes de cualquier despliegue productivo.
-- El repositorio se publica como tipo "model" en HuggingFace aunque contiene un ZIP de codigo fuente, lo que puede confundir a herramientas y pipelines que esperen pesos.
+- El repositorio se publica como tipo "model" en Hugging Face aunque contiene un ZIP de codigo fuente, lo que puede confundir a herramientas y pipelines que esperen pesos.
 - Cobertura de familias de modelo limitada a Qwen, Gemma y DeepSeek segun la documentacion; otros modelos GGUF pueden no cargar.
 - Mediciones de rendimiento limitadas a una unica GPU (RX 7900 XTX) y a modelos de 27B; no hay datos para NVIDIA, CPU ni otros tamanos.
 - Sin datos publicados sobre sesgos, alucinacion o calidad multilingue, ya que dependen del modelo cargado y no de la suite.
@@ -104,7 +104,7 @@ No se dispone de datos para comparar rendimiento con vLLM ni con Ollama en las m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Wa1k3r/LexiSuite
+- Repositorio en Hugging Face: https://huggingface.co/Wa1k3r/LexiSuite
 - Descarga del archivo de release: https://huggingface.co/Wa1k3r/LexiSuite/resolve/main/lexisuite-RC.zip?download=true
 - Arbol de archivos: https://huggingface.co/Wa1k3r/LexiSuite/tree/main
 - Licencia: https://huggingface.co/Wa1k3r/LexiSuite/blob/main/LICENSE

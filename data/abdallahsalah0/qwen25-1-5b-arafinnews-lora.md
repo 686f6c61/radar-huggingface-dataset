@@ -109,7 +109,7 @@ No disponible: comparacion de calidad, benchmarks, throughput o latencia frente 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abdallahsalah0/qwen25-1.5b-arafinnews-lora
+- Modelo en Hugging Face: https://huggingface.co/abdallahsalah0/qwen25-1.5b-arafinnews-lora
 - Modelo base Qwen2.5-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Libreria PEFT: https://github.com/huggingface/peft
 - LLaMA-Factory (framework de entrenamiento declarado): https://github.com/hiyouga/LLaMA-Factory

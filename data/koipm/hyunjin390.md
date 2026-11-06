@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Koipm/Hyunjin390` es un repositorio de pesos publicado en HuggingFace por el usuario Koipm el 20 de octubre de 2026 (según los metadatos de la plataforma). No dispone de model card: el único contenido del README es la declaración `license: unknown`. Tampoco se declara pipeline, idiomas, arquitectura, número de parámetros ni formato de pesos. El repositorio ocupa 0,2 GB y acumula 0 descargas y 0 likes en el momento de la consulta.
+`Koipm/Hyunjin390` es un repositorio de pesos publicado en Hugging Face por el usuario Koipm el 20 de octubre de 2026 (según los metadatos de la plataforma). No dispone de model card: el único contenido del README es la declaración `license: unknown`. Tampoco se declara pipeline, idiomas, arquitectura, número de parámetros ni formato de pesos. El repositorio ocupa 0,2 GB y acumula 0 descargas y 0 likes en el momento de la consulta.
 
 Por tanto, no es posible determinar qué tipo de modelo es ni qué problema resuelve. La ausencia de documentación impide verificar si se trata de un modelo de lenguaje, un fine-tune de personaje o rol, un adaptador LoRA empaquetado, un modelo de difusión o cualquier otro artefacto. El nombre del repositorio no sigue la convención habitual de nomenclatura por tamaño (7B, 13B, etc.), por lo que no aporta información sobre la escala del modelo.
 
@@ -102,5 +102,5 @@ No disponible. Sin conocer el tamaño, la arquitectura ni la tarea del modelo, n
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Koipm/Hyunjin390
+- Repositorio en Hugging Face: https://huggingface.co/Koipm/Hyunjin390
 - No se han encontrado en la información proporcionada papers, blogs, repositorios de código ni demos asociados al modelo.

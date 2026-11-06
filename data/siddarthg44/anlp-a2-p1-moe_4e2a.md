@@ -78,12 +78,12 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 - Cobertura de idiomas asimétrica: solo se declara traducción de vietnamita y japonés a inglés; no se garantiza el sentido inverso ni otros pares.
 - Ausencia de cuantizaciones: no hay versiones GGUF, AWQ, GPTQ ni similares, lo que limita el despliegue en herramientas estándar de inferencia.
 - Formato de pesos no seguro por defecto: `best.pt` es un pickle de PyTorch y requiere `weights_only=False` para cargarse, lo que supone un riesgo de ejecución de código si el archivo se obtiene de una fuente no fiable.
-- Dependencia de código propietario: la carga depende de `src/model.py` y de `build_model`/`TransformerConfig`, no incluidos en el repositorio de HuggingFace según la información disponible.
+- Dependencia de código propietario: la carga depende de `src/model.py` y de `build_model`/`TransformerConfig`, no incluidos en el repositorio de Hugging Face según la información disponible.
 - Idoneidad para producción: nula en su estado actual; es un artefacto de asignatura sin métricas publicadas, sin licencia y sin soporte de herramientas de servido.
 - Madurez del repositorio: 0 descargas y 0 likes en el momento de la consulta, sin historial de mantenimiento.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/siddarthg44/anlp-a2-p1-moe_4e2a
+- Modelo en Hugging Face: https://huggingface.co/siddarthg44/anlp-a2-p1-moe_4e2a
 
 La búsqueda web realizada no devolvió enlaces relevantes sobre este modelo: los resultados corresponden a páginas generales de ChatGPT y OpenAI (chatgpt.com, openai.com, en.wikipedia.org/wiki/ChatGPT), sin relación con el artefacto descrito. No se han encontrado papers, blogs, repositorios de código ni demos adicionales asociados al modelo.

@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Salidas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| s1d1-router (full) | 307 M | 1.024 en entrenamiento / 8.192 en la base | 21 (regresión + 19 tareas + binaria) | Apache-2.0 | HuggingFace, 25 descargas |
-| jhu-clsp/mmBERT-base (base) | 307 M | 8.192 | encoder base (representaciones), sin cabeza de enrutado | MIT | HuggingFace |
-| s1d1-router-6src-compact | no disponible (308 MB en fp16, vocabulario de 32k) | no disponible | 21 | no disponible en la información | HuggingFace, dentro de la colección `s1d1-router` |
-| s1d1-router-6src-tiny | no disponible (mmBERT-small de 6 capas, 85 MB en fp16) | no disponible | 21 | no disponible en la información | HuggingFace, dentro de la colección `s1d1-router` |
+| s1d1-router (full) | 307 M | 1.024 en entrenamiento / 8.192 en la base | 21 (regresión + 19 tareas + binaria) | Apache-2.0 | Hugging Face, 25 descargas |
+| jhu-clsp/mmBERT-base (base) | 307 M | 8.192 | encoder base (representaciones), sin cabeza de enrutado | MIT | Hugging Face |
+| s1d1-router-6src-compact | no disponible (308 MB en fp16, vocabulario de 32k) | no disponible | 21 | no disponible en la información | Hugging Face, dentro de la colección `s1d1-router` |
+| s1d1-router-6src-tiny | no disponible (mmBERT-small de 6 capas, 85 MB en fp16) | no disponible | 21 | no disponible en la información | Hugging Face, dentro de la colección `s1d1-router` |
 
 No se dispone de datos de benchmarks que permitan comparar el rendimiento de enrutado frente a alternativas de la misma categoría.
 
@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento de enr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/scombat/s1d1-router
+- Modelo en Hugging Face: https://huggingface.co/scombat/s1d1-router
 - Modelo base: https://huggingface.co/jhu-clsp/mmBERT-base
 - Perfil del autor: https://huggingface.co/scombat
 - Variante compact (PyTorch fp16): https://huggingface.co/scombat/s1d1-router-6src-compact

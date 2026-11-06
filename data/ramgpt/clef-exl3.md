@@ -80,7 +80,7 @@ No se conocen otras cuantizaciones publicas de Clef ni alternativas de la misma 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Cloudflare/clef (referencia BF16) | no disponible (descrito como 27B) | no disponible | safetensors BF16 | Apache-2.0 | Repositorio de Cloudflare (no verificado en esta busqueda) |
-| ramgpt/clef-EXL3 | 8.942.644.608 segun safetensors | no disponible | safetensors EXL3 (4,00 bpw) | Apache-2.0 | Publico en HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
+| ramgpt/clef-EXL3 | 8.942.644.608 segun safetensors | no disponible | safetensors EXL3 (4,00 bpw) | Apache-2.0 | Publico en Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
 | Otras cuantizaciones EXL3 de modelos Qwen3.8 de tamano similar | no disponible | no disponible | EXL3 | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -100,7 +100,7 @@ No se conocen otras cuantizaciones publicas de Clef ni alternativas de la misma 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ramgpt/clef-EXL3
+- Repositorio Hugging Face: https://huggingface.co/ramgpt/clef-EXL3
 - Modelo base: https://huggingface.co/Cloudflare/clef
 - Libreria de cuantizacion e inferencia ExLlamaV3: https://github.com/turboderp-org/exllamav3
 - Comparativa de formatos de cuantizacion (GGUF, GPTQ, AWQ, EXL2, EXL3): https://www.marktechpost.com/2026/09/18/gguf-vs-gptq-vs-awq-vs-exl2-llm-model-formats-explained-2026/

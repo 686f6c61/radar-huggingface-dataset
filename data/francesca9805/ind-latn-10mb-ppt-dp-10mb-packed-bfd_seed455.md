@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ind-latn-10mb-ppt-Dp-10mb-packed-bfd_seed455 es un ajuste fino (fine-tune) del modelo monolingüe goldfish-models/ind_latn_10mb, publicado por el usuario francesca9805 en HuggingFace. Se trata de un modelo de generación de texto de tipo GPT-2 (transformer decoder-only) con 39.087.104 parámetros (unos 39,1 millones) y un repositorio de solo 0,1 GB, lo que lo sitúa en la categoría de los modelos "tiny" orientados a experimentación más que a producción.
+Ind-latn-10mb-ppt-Dp-10mb-packed-bfd_seed455 es un ajuste fino (fine-tune) del modelo monolingüe goldfish-models/ind_latn_10mb, publicado por el usuario francesca9805 en Hugging Face. Se trata de un modelo de generación de texto de tipo GPT-2 (transformer decoder-only) con 39.087.104 parámetros (unos 39,1 millones) y un repositorio de solo 0,1 GB, lo que lo sitúa en la categoría de los modelos "tiny" orientados a experimentación más que a producción.
 
 El modelo se ha entrenado mediante SFT (supervised fine-tuning) con la librería TRL 0.23.0 sobre Transformers 4.56.2 y PyTorch 2.5.1+cu121. El nombre del repositorio sugiere una ablación experimental: "ppt" (posiblemente pre-training o percentage of pretraining tokens), "Dp-10mb-packed" (datos empaquetados de 10 MB), "bfd" y una semilla fija (seed455). Todo apunta a un experimento de investigación sobre tokenizadores y datos de entrenamiento dentro de un proyecto de la Universidad de Groningen, tal y como refleja el enlace de Weights & Biases incluido en la model card.
 
@@ -12,7 +12,7 @@ Su relevancia es por tanto académica: sirve para reproducir y comparar recetas 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only estilo GPT-2 (etiqueta `gpt2` en HuggingFace) |
+| Arquitectura | Transformer decoder-only estilo GPT-2 (etiqueta `gpt2` en Hugging Face) |
 | Parametros totales | 39.087.104 (~39,1 M) |
 | Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
@@ -46,7 +46,7 @@ El entrenamiento de este repositorio es un SFT (supervised fine-tuning) ejecutad
 - Estudio de tokenizadores en lenguas de bajos recursos: dado el proyecto "new-tokenizers" en Weights & Biases, el modelo es un punto de comparación para medir cómo afecta la tokenización al rendimiento con 10 MB de datos.
 - Generación de texto exploratoria en indonesio: útil para inspeccionar cualitativamente la fluidez y los errores de un modelo monolingüe de 39 M de parámetros, no para producción.
 - Prototipado de pipelines de inferencia: al ser un modelo diminuto, permite validar integraciones con `transformers`, TGI o vLLM antes de escalar a modelos mayores, con coste de cómputo prácticamente nulo.
-- Docencia y formación: ejemplo práctico de modelo afinado con TRL, útil para explicar el flujo completo de SFT (dataset, entrenamiento, publicación en HuggingFace Hub) en un aula o taller.
+- Docencia y formación: ejemplo práctico de modelo afinado con TRL, útil para explicar el flujo completo de SFT (dataset, entrenamiento, publicación en Hugging Face Hub) en un aula o taller.
 - Pruebas de empaquetado y cuantización: sirve como banco de pruebas para verificar scripts de conversión, servidores de inferencia y evaluación automática sin consumir GPU.
 - Ablaciones de datos: el nombre del repositorio codifica la configuración del experimento (datos empaquetados, tamaño, semilla), lo que lo hace idóneo para comparaciones controladas entre variantes del mismo estudio.
 
@@ -68,15 +68,15 @@ La model card no incluye ninguna evaluación (perplejidad, MMLU, HumanEval, GSM8
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| francesca9805/ind-latn-10mb-ppt-Dp-10mb-packed-bfd_seed455 | 39,1 M | no disponible | no disponible | safetensors en HuggingFace |
-| goldfish-models/ind_latn_10mb (modelo base) | no disponible en la información proporcionada | no disponible | no disponible | safetensors en HuggingFace |
-| GPT-2 small (OpenAI) | 124 M | 1024 tokens | MIT modificada | Pesos abiertos en HuggingFace y otros repositorios |
+| francesca9805/ind-latn-10mb-ppt-Dp-10mb-packed-bfd_seed455 | 39,1 M | no disponible | no disponible | safetensors en Hugging Face |
+| goldfish-models/ind_latn_10mb (modelo base) | no disponible en la información proporcionada | no disponible | no disponible | safetensors en Hugging Face |
+| GPT-2 small (OpenAI) | 124 M | 1024 tokens | MIT modificada | Pesos abiertos en Hugging Face y otros repositorios |
 
 No se han identificado en la información proporcionada otros fine-tunes comparables con métricas publicadas. La comparación relevante es con su propio modelo base (para medir el efecto del SFT) y con GPT-2 small como referencia de arquitectura y orden de magnitud, teniendo en cuenta que este último triplica en parámetros al modelo descrito.
 
 ## Limitaciones y advertencias
 
-- Licencia no disponible: la model card usa el marcador de posición `licence: license` y los metadatos de HuggingFace no declaran licencia. El uso comercial queda en un limbo legal y no debería asumirse permitido.
+- Licencia no disponible: la model card usa el marcador de posición `licence: license` y los metadatos de Hugging Face no declaran licencia. El uso comercial queda en un limbo legal y no debería asumirse permitido.
 - Ausencia total de evaluación: sin benchmarks, sin métricas de perplejidad y sin validación externa (0 descargas, 0 likes en la fecha de consulta).
 - Riesgo elevado de alucinación y de texto incoherente: un modelo de ~39 M de parámetros entrenado con 10 MB de datos tiene una capacidad de modelado del lenguaje muy limitada.
 - Sesgos: no documentados. Al derivar de un corpus monolingüe de 10 MB, hereda los sesgos y las lagunas de ese corpus, que tampoco se especifica.
@@ -85,13 +85,13 @@ No se han identificado en la información proporcionada otros fine-tunes compara
 - Dataset de SFT no especificado: se desconoce con qué instrucciones se entrenó, por lo que no puede garantizarse ningún comportamiento alineado ni formato de salida estable.
 - Procedencia experimental: el nombre del repositorio indica una configuración concreta dentro de una serie de ablaciones; no es un artefacto pensado para distribución ni mantenimiento.
 - No soporta tool calling, agentes, visión ni audio, por lo que no puede integrarse en pipelines que dependan de esas capacidades.
-- Las fechas del repositorio (creado y actualizado el 23 de septiembre de 2026) proceden de los metadatos de HuggingFace tal cual se han recibido.
+- Las fechas del repositorio (creado y actualizado el 23 de septiembre de 2026) proceden de los metadatos de Hugging Face tal cual se han recibido.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/ind-latn-10mb-ppt-Dp-10mb-packed-bfd_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/ind-latn-10mb-ppt-Dp-10mb-packed-bfd_seed455
 - Modelo base: https://huggingface.co/goldfish-models/ind_latn_10mb
-- Organización Goldfish en HuggingFace: https://huggingface.co/goldfish-models
+- Organización Goldfish en Hugging Face: https://huggingface.co/goldfish-models
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/rxgfywel
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Resultados de la búsqueda web: no se ha encontrado ningún enlace relevante sobre este modelo (los resultados devueltos corresponden a concursos de la página de inicio de Bing y no guardan relación).

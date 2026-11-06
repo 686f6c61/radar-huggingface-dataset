@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hannahzrodgers/hybrid-contrastive-base-2024` es un repositorio de HuggingFace publicado por el usuario hannahzrodgers que contiene una implementación experimental y reproducible de una arquitectura hibrida orientada a aprendizaje contrastivo. No se trata de un modelo entrenado ni de un lanzamiento con pesos listos para producción: el propio autor indica explícitamente que el checkpoint incluido (`model.safetensors`) es una inicialización válida únicamente para pruebas de humo (smoke tests), no un modelo con benchmarks publicados.
+`hannahzrodgers/hybrid-contrastive-base-2024` es un repositorio de Hugging Face publicado por el usuario hannahzrodgers que contiene una implementación experimental y reproducible de una arquitectura hibrida orientada a aprendizaje contrastivo. No se trata de un modelo entrenado ni de un lanzamiento con pesos listos para producción: el propio autor indica explícitamente que el checkpoint incluido (`model.safetensors`) es una inicialización válida únicamente para pruebas de humo (smoke tests), no un modelo con benchmarks publicados.
 
 El repositorio incluye el código Python con el modelo y un punto de entrada de entrenamiento, un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta de experimento por defecto (optimizador SGD con schedule exponencial) y documentación de orientación para evaluación. La escala declarada es "base" y el recuento real de parámetros del checkpoint safetensors es de 33.088 parámetros, un tamaño extremadamente reducido, coherente con un artefacto de andamiaje más que con un modelo de uso general.
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El pr
 ## Requisitos de hardware
 
 - Al tratarse de un checkpoint de 33.088 parámetros, el modelo cabe holgadamente en cualquier GPU consumer, e incluso puede ejecutarse en CPU sin dificultad.
-- VRAM estimada para inferencia: inferior a 1 GB en cualquier precisión razonable; el propio repositorio ocupa 0,0 GB según HuggingFace.
+- VRAM estimada para inferencia: inferior a 1 GB en cualquier precisión razonable; el propio repositorio ocupa 0,0 GB según Hugging Face.
 - GPU recomendadas: no se especifica ninguna; cualquier GPU con soporte CUDA (por ejemplo, GTX 1060 en adelante, RTX serie 20/30/40) es más que suficiente. No tiene sentido plantear A100 o H100 para este tamaño.
 - Opciones de despliegue: no se documentan integraciones con vLLM, llama.cpp, Ollama o TGI. Al ser una implementación personalizada, las APIs automáticas de carga requieren un adaptador explícito.
 - Latencia y throughput: no disponible.
@@ -79,5 +79,5 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hannahzrodgers/hybrid-contrastive-base-2024
+- Hugging Face: https://huggingface.co/hannahzrodgers/hybrid-contrastive-base-2024
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion proporcionada.

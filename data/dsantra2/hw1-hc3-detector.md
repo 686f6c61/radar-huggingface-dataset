@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo dsantra2/hw1-hc3-detector es un clasificador de texto publicado en HuggingFace Hub por el usuario dsantra2 bajo la libreria transformers. Los metadatos del repositorio lo etiquetan como bert y text-classification, con pesos en safetensors y un total de 22.713.986 parametros, lo que lo situa en la gama de los codificadores compactos tipo BERT (muy por debajo de los 110 millones de parametros de BERT-base). El repositorio ocupa 0,1 GB y no acumula descargas ni likes en el momento de la consulta.
+El modelo dsantra2/hw1-hc3-detector es un clasificador de texto publicado en Hugging Face Hub por el usuario dsantra2 bajo la libreria transformers. Los metadatos del repositorio lo etiquetan como bert y text-classification, con pesos en safetensors y un total de 22.713.986 parametros, lo que lo situa en la gama de los codificadores compactos tipo BERT (muy por debajo de los 110 millones de parametros de BERT-base). El repositorio ocupa 0,1 GB y no acumula descargas ni likes en el momento de la consulta.
 
-El problema que parece abordar, a juzgar unicamente por su nombre, es la deteccion de texto generado por IA frente a texto humano sobre el corpus HC3 (Human ChatGPT Comparison Corpus), un conjunto de referencia habitual en tareas de deteccion de texto sintetico. Sin embargo, esta interpretacion no esta confirmada en ningun documento del repositorio: la model card es la plantilla autogenerada de HuggingFace y todos sus campos figuran como "[More Information Needed]". No hay informacion sobre datos de entrenamiento, hiperparametros, evaluacion, licencia ni idiomas soportados.
+El problema que parece abordar, a juzgar unicamente por su nombre, es la deteccion de texto generado por IA frente a texto humano sobre el corpus HC3 (Human ChatGPT Comparison Corpus), un conjunto de referencia habitual en tareas de deteccion de texto sintetico. Sin embargo, esta interpretacion no esta confirmada en ningun documento del repositorio: la model card es la plantilla autogenerada de Hugging Face y todos sus campos figuran como "[More Information Needed]". No hay informacion sobre datos de entrenamiento, hiperparametros, evaluacion, licencia ni idiomas soportados.
 
 Su relevancia actual es, por tanto, limitada y de caracter exploratorio. Se trata de un artefacto sin documentar, con cero descargas, cuya utilidad practica solo puede establecerse mediante evaluacion propia. Ademas, la busqueda web revela la existencia de multiples repositorios con el mismo nombre exacto (Chengwei-Shen, aisaro, Yihangsun, hongjip), lo que apunta a un ejercicio academico o de curso replicado por varios usuarios mas que a un modelo de proposito general mantenido y validado.
 
@@ -30,7 +30,7 @@ Su relevancia actual es, por tanto, limitada y de caracter exploratorio. Se trat
 
 La unica evidencia sobre la arquitectura es la etiqueta "bert" del repositorio y el recuento de 22.713.986 parametros. Ese orden de magnitud es compatible con un codificador Transformer de tipo BERT reducido (del orden de 6 capas y dimension oculta en torno a 384-512, con un cabezal de clasificacion), pero no hay fichero de configuracion publicado en la informacion disponible que permita confirmar numero de capas, dimension de embeddings, numero de cabezas ni vocabulario. Al tratarse de un modelo de clasificacion y no de generacion, no dispone de decodificacion especulativa, atencion lineal ni mecanismos de razonamiento explicito.
 
-No existe ninguna informacion sobre el entrenamiento: se desconocen el volumen de tokens, la composicion del dataset, si hubo fine-tuning supervisado sobre HC3 u otro corpus, la funcion de perdida, el regimen de precision (fp32, fp16 o bf16), el numero de epocas y si se aplicaron tecnicas de ajuste como RLHF o DPO (tecnicas, por otra parte, poco habituales en clasificadores de este tamano). La etiqueta arxiv:1910.09700 que aparece en los tags corresponde al articulo de Lacoste et al. (2019) sobre el calculador de impacto de carbono citado en la plantilla de model card de HuggingFace, no a un paper de arquitectura o de entrenamiento de este modelo. Ninguna innovacion tecnica es identificable a partir de la documentacion.
+No existe ninguna informacion sobre el entrenamiento: se desconocen el volumen de tokens, la composicion del dataset, si hubo fine-tuning supervisado sobre HC3 u otro corpus, la funcion de perdida, el regimen de precision (fp32, fp16 o bf16), el numero de epocas y si se aplicaron tecnicas de ajuste como RLHF o DPO (tecnicas, por otra parte, poco habituales en clasificadores de este tamano). La etiqueta arxiv:1910.09700 que aparece en los tags corresponde al articulo de Lacoste et al. (2019) sobre el calculador de impacto de carbono citado en la plantilla de model card de Hugging Face, no a un paper de arquitectura o de entrenamiento de este modelo. Ninguna innovacion tecnica es identificable a partir de la documentacion.
 
 ## Capacidades
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: aproximadamente 91 MB en fp32 (22.713.986 x 4 bytes), unos 45 MB en fp16/bf16 y unos 23 MB en int8. El repositorio ocupa 0,1 GB, coherente con estas cifras.
 - GPU recomendadas: no requiere GPU. Cualquier GPU con al menos 1 GB de memoria es mas que suficiente (GTX 1050 Ti, RTX 3060, T4); no tiene sentido reservar A100 o H100 para este modelo.
 - Compatibilidad con GPU de consumo: si, cabe holgadamente en cualquier GPU de consumo e incluso en iGPU y en CPU. La restriccion practica no sera la memoria sino el throughput de lotes pequenos.
-- Opciones de despliegue: pipeline de transformers (biblioteca declarada), text-embeddings-inference (etiqueta del repositorio), endpoints compatibles con HuggingFace Inference Endpoints (etiqueta endpoints_compatible). vLLM y TGI no son opciones naturales para un codificador de clasificacion de este tamano; llama.cpp y Ollama no aplican porque no se publican pesos GGUF.
+- Opciones de despliegue: pipeline de transformers (biblioteca declarada), text-embeddings-inference (etiqueta del repositorio), endpoints compatibles con Hugging Face Inference Endpoints (etiqueta endpoints_compatible). vLLM y TGI no son opciones naturales para un codificador de clasificacion de este tamano; llama.cpp y Ollama no aplican porque no se publican pesos GGUF.
 - Latencia y throughput estimados: no disponibles. No hay mediciones publicadas. Como referencia de orden de magnitud, un codificador de ~22 millones de parametros procesa lotes en CPU en el rango de milisegundos a decenas de milisegundos por secuencia corta, pero esta cifra es una estimacion general y no un dato medido sobre este modelo.
 
 ## Comparativa con modelos similares
@@ -84,7 +84,7 @@ Como alternativa funcional de la misma categoria, el ecosistema ofrece clasifica
 
 ## Limitaciones y advertencias
 
-- Documentacion inexistente: la model card es la plantilla autogenerada de HuggingFace y no describe proposito, datos, evaluacion ni limitaciones. Cualquier uso en produccion parte de una incertidumbre total sobre el comportamiento del modelo.
+- Documentacion inexistente: la model card es la plantilla autogenerada de Hugging Face y no describe proposito, datos, evaluacion ni limitaciones. Cualquier uso en produccion parte de una incertidumbre total sobre el comportamiento del modelo.
 - Licencia no disponible: al no declararse licencia, no hay autorizacion explicita de uso comercial ni de redistribucion. Esto supone un riesgo legal directo para cualquier integracion en producto.
 - Ausencia de evaluacion: no hay metricas publicas de exactitud, F1, precision ni recall. No se puede estimar la tasa de falsos positivos y falsos negativos, algo critico en tareas de deteccion donde acusar erróneamente a un texto de ser generado por IA tiene consecuencias reales.
 - Riesgo de alucinacion: no aplica en el sentido generativo, porque el modelo no produce texto libre; el riesgo equivalente es de clasificacion erronea, con etiquetas asignadas con alta confianza a casos ambiguos.
@@ -97,7 +97,7 @@ Como alternativa funcional de la misma categoria, el ecosistema ofrece clasifica
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dsantra2/hw1-hc3-detector
+- Modelo en Hugging Face: https://huggingface.co/dsantra2/hw1-hc3-detector
 - Repositorio homonimo de Chengwei-Shen: https://huggingface.co/Chengwei-Shen/hw1-hc3-detector
 - Repositorio homonimo de aisaro: https://huggingface.co/aisaro/hw1-hc3-detector
 - Repositorio homonimo de Yihangsun (ficha en savrn.com): https://savrn.com/models/hw1-hc3-detector

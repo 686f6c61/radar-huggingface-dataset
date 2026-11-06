@@ -78,6 +78,6 @@ Morrow se diferencia de alternativas de tamano similar en que no busca maximizar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/noumenon-labs/Morrow-2.6B
+- Modelo en Hugging Face: https://huggingface.co/noumenon-labs/Morrow-2.6B
 - Modelo base: https://huggingface.co/LiquidAI/LFM2-2.6B
 - Paper, repositorio de codigo o demo: no disponible (no se han encontrado enlaces adicionales en la informacion proporcionada)

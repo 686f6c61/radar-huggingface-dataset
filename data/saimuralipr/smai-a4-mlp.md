@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parámetros | Contexto / entrada | Precisión CIFAR-10 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SMAI A4 MLP (este modelo) | 402.250 | 3072 (32x32x3) | 47,73 % (test, NumPy) | MIT | HuggingFace |
+| SMAI A4 MLP (este modelo) | 402.250 | 3072 (32x32x3) | 47,73 % (test, NumPy) | MIT | Hugging Face |
 | LeNet-5 (referencia clásica) | ~60.000 | 32x32x1 | ~70 % (entrenamiento completo) | no disponible | implementaciones públicas |
 | ResNet-18 (referencia) | ~11,2 M | 32x32x3 | ~93-95 % (entrenamiento completo) | no disponible | implementaciones públicas |
 | ViT pequeño (referencia) | variable | 32x32x3 con parches | ~90 %+ (con aumentos) | no disponible | implementaciones públicas |
@@ -88,7 +88,7 @@ Las cifras de los modelos de referencia son orientativas y no provienen de la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/saimuralipr/smai-a4-mlp
+- Hugging Face: https://huggingface.co/saimuralipr/smai-a4-mlp
 - Repositorio del curso SMAI (referenciado en la model card como `Model.load_from(path)`): no disponible como URL explícita en la información proporcionada.
 - Paper o blog asociado: no disponible.
 - Demo: no disponible.

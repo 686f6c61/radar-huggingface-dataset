@@ -94,7 +94,7 @@ La diferencia principal de Kolibri 1 es su especializacion bilingue aleman-ingle
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Aleph-Alpha/Kolibri-1-BF16
+- Modelo en Hugging Face: https://huggingface.co/Aleph-Alpha/Kolibri-1-BF16
 - Informe tecnico (tech report): https://aleph-alpha.com/downloads/tech-report.pdf
 - Blog tecnico: https://aleph-alpha.com/en/blog/kolibri-has-landed-a-sovereign-open-weight-model/
 - arXiv 2512.11614: https://arxiv.org/abs/2512.11614

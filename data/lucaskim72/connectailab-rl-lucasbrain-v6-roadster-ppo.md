@@ -91,7 +91,7 @@ No se dispone de información sobre modelos comparables publicados en el mismo s
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-lucasbrain-v6-roadster-ppo | Decenas de miles (no confirmado) | Vector de estado de 7 dimensiones | 98,0 % de aterrizaje en 50 semillas | No disponible | HuggingFace, repo de 0,0 GB |
+| connectailab-rl-lucasbrain-v6-roadster-ppo | Decenas de miles (no confirmado) | Vector de estado de 7 dimensiones | 98,0 % de aterrizaje en 50 semillas | No disponible | Hugging Face, repo de 0,0 GB |
 | Políticas PPO de referencia (p. ej. Stable-Baselines3 Zoo) | Variable según tarea | Variable | Depende del entorno | MIT (SB3) | GitHub |
 | Políticas SAC/TD3 equivalentes | Similar orden | Similar orden | No disponible para este simulador | Depende de la implementación | Repositorios públicos |
 
@@ -102,7 +102,7 @@ La comparación cuantitativa con alternativas no está disponible porque no se h
 - Sesgos conocidos: no documentados; al ser una política entrenada en un simulador sintético, hereda cualquier simplificación de la dinámica del entorno.
 - Riesgo de alucinación: no aplica en el sentido de modelos de lenguaje, pero la política puede producir acciones fuera de distribución si el estado se sale del rango visto en entrenamiento; en ese caso el recorte a [0, 1] y [-1, 1] enmascara la incertidumbre.
 - Limitaciones de contexto o idioma: no procesa lenguaje; el «contexto» es un vector de 7 dimensiones sin memoria histórica, por lo que la política es puramente reactiva (Markoviana) y no puede planificar secuencias largas.
-- Restricciones de licencia: la licencia no está declarada en la model card ni en los metadatos de HuggingFace; no se puede asumir uso comercial sin contactar con el autor.
+- Restricciones de licencia: la licencia no está declarada en la model card ni en los metadatos de Hugging Face; no se puede asumir uso comercial sin contactar con el autor.
 - El autor no ha publicado una evaluación independiente; las métricas provienen de su propio protocolo y de su propio simulador.
 - La correlación reportada entre hiperparámetros y tasa de aterrizaje se calcula sobre 12 muestras y el propio autor advierte que no implica causalidad; varias variables (gamma, lambda, rollout, minibatch, epochs, hidden) nunca se variaron de forma aislada.
 - El repositorio es de tamaño 0,0 GB según los metadatos; conviene verificar que los pesos y el script del simulador estén realmente presentes antes de integrarlo en un pipeline.
@@ -110,7 +110,7 @@ La comparación cuantitativa con alternativas no está disponible porque no se h
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lucaskim72/connectailab-rl-lucasbrain-v6-roadster-ppo
+- Modelo en Hugging Face: https://huggingface.co/lucaskim72/connectailab-rl-lucasbrain-v6-roadster-ppo
 - CONNECT AI LAB (repositorio del curso): https://github.com/wonseokjung/connect-tycoon
 - AI CITY BUILDERS: enlace truncado en la model card, no disponible completo
 - Contacto del autor: lucaskim72@gmail.com

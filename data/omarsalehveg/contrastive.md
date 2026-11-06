@@ -98,4 +98,4 @@ No se dispone de modelos comparables directos en la información proporcionada. 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OmarSalehveg/contrastive
+- Hugging Face: https://huggingface.co/OmarSalehveg/contrastive

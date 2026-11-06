@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones. La busqu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/JoaoZaokk/whisper-large-v3-turbo-german-ggml
+- Repositorio en Hugging Face: https://huggingface.co/JoaoZaokk/whisper-large-v3-turbo-german-ggml
 - Modelo base: https://huggingface.co/primeline/whisper-large-v3-turbo-german
 - Perfil del autor de la conversion: https://huggingface.co/JoaoZaokk
 - Motor whisper.cpp: https://github.com/ggml-org/whisper.cpp

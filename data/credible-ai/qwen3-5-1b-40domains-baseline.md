@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| credible-ai/qwen3.5-1B-40domains-baseline | 1,33B | no disponible | MIT | Línea base de mezcla de datos (investigación) | HuggingFace, 210 descargas |
-| OLMo-1B (AllenAI) | ~1,2B | 2.048 tokens | Apache 2.0 | Modelo base abierto con receta completa | HuggingFace, ampliamente usado |
-| TinyLlama-1.1B | ~1,1B | 2.048 tokens | Apache 2.0 | Modelo base/chat entrenado con 3T tokens | HuggingFace, muy extendido |
-| Qwen2.5-1.5B | ~1,5B | 32.768 tokens | Apache 2.0 | Modelo base y chat de propósito general | HuggingFace, ecosistema maduro |
+| credible-ai/qwen3.5-1B-40domains-baseline | 1,33B | no disponible | MIT | Línea base de mezcla de datos (investigación) | Hugging Face, 210 descargas |
+| OLMo-1B (AllenAI) | ~1,2B | 2.048 tokens | Apache 2.0 | Modelo base abierto con receta completa | Hugging Face, ampliamente usado |
+| TinyLlama-1.1B | ~1,1B | 2.048 tokens | Apache 2.0 | Modelo base/chat entrenado con 3T tokens | Hugging Face, muy extendido |
+| Qwen2.5-1.5B | ~1,5B | 32.768 tokens | Apache 2.0 | Modelo base y chat de propósito general | Hugging Face, ecosistema maduro |
 
 La comparación es orientativa: el modelo de credible-ai no compite en capacidad general con OLMo-1B, TinyLlama o Qwen2.5-1.5B, sino que se posiciona como artefacto reproducible para investigación en mezclas de datos. No se dispone de datos de benchmarks que permitan comparar rendimiento de forma cuantitativa.
 
@@ -87,7 +87,7 @@ La comparación es orientativa: el modelo de credible-ai no compite en capacidad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/credible-ai/qwen3.5-1B-40domains-baseline
+- Modelo en Hugging Face: https://huggingface.co/credible-ai/qwen3.5-1B-40domains-baseline
 - Paper LinMix: https://arxiv.org/abs/2610.37390
 - Código: https://github.com/credibleai/linmix
 - Documentación de `Qwen3_5ForCausalLM`: https://huggingface.co/docs/transformers/model_doc/qwen3_5

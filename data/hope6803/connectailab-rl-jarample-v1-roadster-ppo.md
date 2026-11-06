@@ -83,5 +83,5 @@ No se dispone de comparaciones publicadas frente a otros agentes entrenados espe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hope6803/connectailab-rl-jarample-v1-roadster-ppo
+- Modelo en Hugging Face: https://huggingface.co/hope6803/connectailab-rl-jarample-v1-roadster-ppo
 - No se han encontrado en la búsqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo.

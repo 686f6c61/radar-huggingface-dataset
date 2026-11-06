@@ -2,7 +2,7 @@
 
 ## Resumen
 
-rh-camila-lora es un adaptador LoRA de edición de imagen (pipeline `image-text-to-image`) publicado en HuggingFace por RunningHubAI en nombre del autor Hercules Op. No es un modelo generativo completo: se trata de un ajuste fino de bajo rango que se monta sobre un modelo de difusión base que la model card identifica como "krea2", del cual no se aportan más detalles tecnicos. El repositorio contiene un unico archivo de pesos, `camila_lora_000003750.safetensors`, de 218 MiB.
+rh-camila-lora es un adaptador LoRA de edición de imagen (pipeline `image-text-to-image`) publicado en Hugging Face por RunningHubAI en nombre del autor Hercules Op. No es un modelo generativo completo: se trata de un ajuste fino de bajo rango que se monta sobre un modelo de difusión base que la model card identifica como "krea2", del cual no se aportan más detalles tecnicos. El repositorio contiene un unico archivo de pesos, `camila_lora_000003750.safetensors`, de 218 MiB.
 
 Su funcion es fijar la identidad visual de un personaje concreto ("camila", descrito en la model card como "morena, alta") mediante la palabra de activacion `camila`, de modo que el modelo base reproduzca ese personaje de forma consistente en distintas generaciones y ediciones. Esto lo hace util en flujos de trabajo donde se necesita coherencia de personaje entre multiples imagenes: ilustracion seriada, storyboards, campañas graficas o assets de videojuego.
 
@@ -77,7 +77,7 @@ No se han identificado en la informacion disponible modelos comparables concreto
 | Coste de entrenamiento | Bajo | Alto | Muy bajo | No aplica (sin entrenamiento) |
 | Distribucion del archivo | 218 MiB, safetensors | Varios GB | Unos pocos KB | Decenas o cientos de MB |
 | Licencia | no disponible | no disponible | Depende del base | Depende del base |
-| Disponibilidad | HuggingFace y RunningHub | Variable | Variable | Amplia |
+| Disponibilidad | Hugging Face y RunningHub | Variable | Variable | Amplia |
 
 ## Limitaciones y advertencias
 
@@ -95,7 +95,7 @@ No se han identificado en la informacion disponible modelos comparables concreto
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/RunningHubAI/rh-camila-lora
+- Repositorio en Hugging Face: https://huggingface.co/RunningHubAI/rh-camila-lora
 - Modelo original en RunningHub: https://www.runninghub.ai/model/public/2106727545043845122
 - Pagina del autor en RunningHub: https://www.runninghub.ai/user-center/2055059850194632705
 - Plataforma RunningHub (internacional): https://www.runninghub.ai
@@ -105,4 +105,4 @@ No se han identificado en la informacion disponible modelos comparables concreto
 - Entrenamiento de modelos en RunningHub: https://www.runninghub.ai/page-model
 - Ejemplo de API de video (Seedance 2.5) citado en la model card: https://www.runninghub.ai/call-api/api-detail/2133100000000700025
 
-Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los enlaces anteriores proceden de la model card y de los metadatos del repositorio de HuggingFace.
+Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los enlaces anteriores proceden de la model card y de los metadatos del repositorio de Hugging Face.

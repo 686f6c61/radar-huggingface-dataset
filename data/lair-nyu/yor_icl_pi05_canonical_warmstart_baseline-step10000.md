@@ -23,7 +23,7 @@ Su relevancia es, por tanto, metodológica y de investigación: no es un modelo 
 | Tamaño del repositorio | 12,4 GB (solo pesos y estadísticas de normalización) |
 | Paso de entrenamiento | 10.000 |
 | Checkpoint de arranque | `yor_icl_pi05_canonical_extended`, paso 40.000 |
-| Fecha de publicación | 13 de septiembre de 2026 (según metadatos de HuggingFace) |
+| Fecha de publicación | 13 de septiembre de 2026 (según metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -88,6 +88,6 @@ La información disponible solo permite comparar este checkpoint con los otros a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lair-nyu/yor_icl_pi05_canonical_warmstart_baseline-step10000
+- Modelo en Hugging Face: https://huggingface.co/lair-nyu/yor_icl_pi05_canonical_warmstart_baseline-step10000
 - Repositorio de código referenciado por la model card (configuración de entrenamiento `yor_icl_pi05_canonical_warmstart_baseline` en `openpi/src/openpi/training/config.py`): https://github.com/Physical-Intelligence/openpi
 - Paper, blog, demo o repositorio adicionales: no disponibles en la información proporcionada.

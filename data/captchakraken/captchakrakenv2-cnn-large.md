@@ -104,7 +104,7 @@ No se dispone de datos de benchmarks de los modelos puntero ni de detectores ext
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CaptchaKraken/CaptchaKrakenV2-CNN-large
+- Modelo en Hugging Face: https://huggingface.co/CaptchaKraken/CaptchaKrakenV2-CNN-large
 - Variante lite: https://huggingface.co/CaptchaKraken/CaptchaKrakenV2-CNN-lite
 - Modelo puntero SunlightV2-0.8B: https://huggingface.co/CaptchaKraken/SunlightV2-0.8B
 - Modelo puntero TwilightV2-2B: https://huggingface.co/CaptchaKraken/TwilightV2-2B

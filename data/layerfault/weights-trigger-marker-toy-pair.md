@@ -67,7 +67,7 @@ No disponible. No existe categoría de modelos comparable porque se trata de un 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LayerFault/weights-trigger-marker-toy-pair
+- Hugging Face: https://huggingface.co/LayerFault/weights-trigger-marker-toy-pair
 - Repositorio GitHub de Layerfault (herramienta de admisión de modelos): https://github.com/izm1chael/layerfault
 
 *(No se han encontrado otros enlaces relevantes en la búsqueda web.)*

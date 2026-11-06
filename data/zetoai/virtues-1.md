@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Virtues-1 es un modelo publicado en HuggingFace por el usuario ZetoAI bajo el identificador ZetoAI/Virtues-1. En el momento de redactar esta ficha, la model card del repositorio no contiene más que el bloque de metadatos con la licencia Apache 2.0: no se documenta arquitectura, número de parámetros, longitud de contexto, datos de entrenamiento, capacidades ni idiomas soportados. La ficha tampoco declara pipeline de inferencia, y el repositorio acumula cero descargas y cero valoraciones.
+Virtues-1 es un modelo publicado en Hugging Face por el usuario ZetoAI bajo el identificador ZetoAI/Virtues-1. En el momento de redactar esta ficha, la model card del repositorio no contiene más que el bloque de metadatos con la licencia Apache 2.0: no se documenta arquitectura, número de parámetros, longitud de contexto, datos de entrenamiento, capacidades ni idiomas soportados. La ficha tampoco declara pipeline de inferencia, y el repositorio acumula cero descargas y cero valoraciones.
 
 La única información verificable es, por tanto, de carácter administrativo: licencia permisiva Apache 2.0, etiqueta regional region:us y fechas de creación y última actualización idénticas (17 de septiembre de 2026), lo que apunta a una publicación sin revisiones posteriores. No consta paper, blog técnico, demo ni repositorio de código asociado, y no se enumeran formatos de pesos ni cuantizaciones disponibles.
 
@@ -97,7 +97,7 @@ No disponible. No es posible seleccionar alternativas comparables sin conocer el
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ZetoAI/Virtues-1
+- Hugging Face: https://huggingface.co/ZetoAI/Virtues-1
 - No se han encontrado enlaces adicionales relevantes: la búsqueda web realizada devolvió únicamente páginas del portal educativo francés ENT HDF (enthdf.fr), sin relación alguna con el modelo, y han sido descartadas como fuentes.
 - Paper: no disponible.
 - Blog técnico: no disponible.

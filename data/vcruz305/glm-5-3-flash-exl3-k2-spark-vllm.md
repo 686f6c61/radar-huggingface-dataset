@@ -72,7 +72,7 @@ No se dispone de datos suficientes para una comparativa cuantitativa. El modelo 
 
 ## Enlaces
 
-- Repositorio de HuggingFace (wheels de runtime): https://huggingface.co/vcruz305/GLM-5.3-Flash-EXL3-K2-spark-vllm
+- Repositorio de Hugging Face (wheels de runtime): https://huggingface.co/vcruz305/GLM-5.3-Flash-EXL3-K2-spark-vllm
 - Repositorio del pack (pesos del modelo): https://huggingface.co/vcruz305/GLM-5.3-Flash-EXL3-K2
 - Repositorio de la receta en GitHub (scripts y parches): https://github.com/vcruz305/GLM-5.3-Flash-EXL3-K2-DGX-Spark-recipe
 - Repositorio GGUF del mismo modelo: https://huggingface.co/vcruz305/GLM-5.3-Flash-GGUF

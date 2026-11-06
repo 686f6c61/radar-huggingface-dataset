@@ -115,7 +115,7 @@ Lectura: los candidatos V38 igualan o superan al 4B nativo en el esquema aritmé
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sepsy070716/Qwen3.5-A3B-Research
+- Repositorio en Hugging Face: https://huggingface.co/sepsy070716/Qwen3.5-A3B-Research
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Vista general de la investigación (coreano): https://huggingface.co/sepsy070716/Qwen3.5-A3B-Research/blob/main/research/qwen35-moe-a3b/README.md
 - Índice de informes: https://huggingface.co/sepsy070716/Qwen3.5-A3B-Research/blob/main/REPORT_INDEX.md

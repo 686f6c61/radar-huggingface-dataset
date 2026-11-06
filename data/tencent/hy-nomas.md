@@ -101,7 +101,7 @@ La diferencia principal de Hy-Nomas frente a los generadores text-to-video conve
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tencent/Hy-Nomas
+- Modelo en Hugging Face: https://huggingface.co/tencent/Hy-Nomas
 - Repositorio en GitHub: https://github.com/Tencent-Hunyuan/Hy-Nomas
 - Informe técnico (anunciado, aún no publicado): https://github.com/Tencent-Hunyuan/Hy-Nomas/blob/main/Hy_Nomas_Tech_Report.pdf
 - Dataset de benchmark Hy-Nomas-Bench: https://huggingface.co/datasets/tencent/Hy-Nomas-Bench

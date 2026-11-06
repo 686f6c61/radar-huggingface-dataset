@@ -2,11 +2,11 @@
 
 ## Resumen
 
-TaThanh/qwen2.5-coder-7b-text2sql-lora es un adaptador LoRA (Low-Rank Adaptation) construido sobre el modelo base Qwen2.5-Coder-7B, especializado en la generación de consultas SQL a partir de texto natural (text-to-SQL). El autor, TaThanh, ha publicado este adaptador en HuggingFace con el objetivo de dotar al modelo base de una capacidad específica para traducir preguntas en lenguaje natural a sentencias SQL, una tarea crítica en el acceso a bases de datos para usuarios no técnicos.
+TaThanh/qwen2.5-coder-7b-text2sql-lora es un adaptador LoRA (Low-Rank Adaptation) construido sobre el modelo base Qwen2.5-Coder-7B, especializado en la generación de consultas SQL a partir de texto natural (text-to-SQL). El autor, TaThanh, ha publicado este adaptador en Hugging Face con el objetivo de dotar al modelo base de una capacidad específica para traducir preguntas en lenguaje natural a sentencias SQL, una tarea crítica en el acceso a bases de datos para usuarios no técnicos.
 
-El modelo base Qwen2.5-Coder-7B, desarrollado por Alibaba Cloud, es un modelo de lenguaje de 7.600 millones de parámetros entrenado sobre más de 5,5 billones de tokens, de los cuales una parte significativa corresponde a código fuente. Su arquitectura transformer con atención QKV y ventana de contexto de 32.768 tokens lo convierte en una base sólida para tareas de generación de código. El adaptador LoRA, que añade aproximadamente 56 millones de parámetros adicionales (los 7.655.986.688 totales incluyen el modelo base completo), se ha entrenado mediante fine-tuning supervisado (SFT) con la librería TRL de HuggingFace.
+El modelo base Qwen2.5-Coder-7B, desarrollado por Alibaba Cloud, es un modelo de lenguaje de 7.600 millones de parámetros entrenado sobre más de 5,5 billones de tokens, de los cuales una parte significativa corresponde a código fuente. Su arquitectura transformer con atención QKV y ventana de contexto de 32.768 tokens lo convierte en una base sólida para tareas de generación de código. El adaptador LoRA, que añade aproximadamente 56 millones de parámetros adicionales (los 7.655.986.688 totales incluyen el modelo base completo), se ha entrenado mediante fine-tuning supervisado (SFT) con la librería TRL de Hugging Face.
 
-La relevancia de este modelo radica en su enfoque práctico: en lugar de requerir un modelo completo de gran tamaño, un adaptador LoRA permite especializar un modelo ya existente con un coste computacional reducido y un despliegue flexible. La integración con la infraestructura de HuggingFace (transformers, safetensors, text-generation-inference) facilita su uso en entornos de producción, aunque la falta de documentación detallada y de benchmarks públicos limita la evaluación objetiva de su rendimiento real.
+La relevancia de este modelo radica en su enfoque práctico: en lugar de requerir un modelo completo de gran tamaño, un adaptador LoRA permite especializar un modelo ya existente con un coste computacional reducido y un despliegue flexible. La integración con la infraestructura de Hugging Face (transformers, safetensors, text-generation-inference) facilita su uso en entornos de producción, aunque la falta de documentación detallada y de benchmarks públicos limita la evaluación objetiva de su rendimiento real.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ La relevancia de este modelo radica en su enfoque práctico: en lugar de requeri
 
 ## Arquitectura y entrenamiento
 
-El modelo es un adaptador LoRA sobre Qwen2.5-Coder-7B, que emplea una arquitectura transformer decoder-only con atención por ventanas deslizantes y 28 capas. El modelo base fue preentrenado en un corpus de 5,5 billones de tokens, incluyendo código fuente de multiples lenguajes, texto natural y datos matematicos. Posteriormente, el autor del adaptador ha realizado un fine-tuning supervisado (SFT) utilizando la libreria TRL de HuggingFace, especializando el modelo en la tarea de text-to-SQL.
+El modelo es un adaptador LoRA sobre Qwen2.5-Coder-7B, que emplea una arquitectura transformer decoder-only con atención por ventanas deslizantes y 28 capas. El modelo base fue preentrenado en un corpus de 5,5 billones de tokens, incluyendo código fuente de multiples lenguajes, texto natural y datos matematicos. Posteriormente, el autor del adaptador ha realizado un fine-tuning supervisado (SFT) utilizando la libreria TRL de Hugging Face, especializando el modelo en la tarea de text-to-SQL.
 
 Los detalles del entrenamiento del adaptador (dataset utilizado, hiperparametros, numero de epocas, tecnica de optimizacion) no estan disponibles en la model card, que es una plantilla generica sin informacion especifica. Los tags indican que se ha usado la tecnica de cuantizacion de 4-bit con bitsandbytes durante el entrenamiento, lo que sugiere un enfoque de fine-tuning eficiente en memoria. No se menciona el uso de RLHF, DPO u otras tecnicas de alineacion posteriores al SFT.
 
@@ -80,7 +80,7 @@ El adaptador se diferencia de los modelos generalistas por su especializacion en
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/TaThanh/qwen2.5-coder-7b-text2sql-lora
+- Repositorio Hugging Face: https://huggingface.co/TaThanh/qwen2.5-coder-7b-text2sql-lora
 - Modelo base Qwen2.5-Coder-7B: https://huggingface.co/Qwen/Qwen2.5-Coder-7B
 - Technical report de Qwen2.5-Coder: https://arxiv.org/html/2409.12186v1
 - GitHub de Qwen2.5-Coder: https://github.com/huggingface/Qwen2.5-Coder

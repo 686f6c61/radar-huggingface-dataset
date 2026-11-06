@@ -106,7 +106,7 @@ La eleccion entre 8 y 4 bits es un compromiso directo: la variante de 4 bits red
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mlx-community/clef-omni-8bit
+- Repositorio Hugging Face: https://huggingface.co/mlx-community/clef-omni-8bit
 - Modelo base: https://huggingface.co/Cloudflare/clef-omni
 - Variante de 4 bits: https://huggingface.co/mlx-community/clef-omni-4bit
 - MLX (framework): https://github.com/ml-explore/mlx

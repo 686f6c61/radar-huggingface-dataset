@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sshevchukartem/matching-alpha` es un esqueleto de implementacion de una arquitectura **Cnn Transformer** orientada a tareas de *matching*, publicada por el usuario sshevchukartem en HuggingFace. Con 16.576 parametros totales y variante declarada como *nano*, el repositorio no contiene un modelo entrenado: `model.safetensors` es un checkpoint de inicializacion valido para *smoke tests*, segun indica explicitamente la propia model card. El repositorio ocupa 0,0 GB y registra 0 descargas y 0 likes en el momento de la consulta.
+`sshevchukartem/matching-alpha` es un esqueleto de implementacion de una arquitectura **Cnn Transformer** orientada a tareas de *matching*, publicada por el usuario sshevchukartem en Hugging Face. Con 16.576 parametros totales y variante declarada como *nano*, el repositorio no contiene un modelo entrenado: `model.safetensors` es un checkpoint de inicializacion valido para *smoke tests*, segun indica explicitamente la propia model card. El repositorio ocupa 0,0 GB y registra 0 descargas y 0 likes en el momento de la consulta.
 
 El interes del artefacto es puramente de ingenieria y reproducibilidad: incluye el script `train.py` como artefacto principal, un `config.json` con los ajustes de arquitectura generados y un `training_args.json` con la receta de experimento por defecto (optimizador Adam con scheduler polinomial). No se reclama ninguna puntuacion de benchmark, ni se documenta un entrenamiento completado. Cualquier uso en produccion requeriria primero un ciclo de entrenamiento completo con datos propios.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Cabe en GPU de consumo: si, en cualquier GPU de consumo e incluso en CPU sin penalizacion apreciable dado el tamano.
 - Opciones de despliegue: al ser una implementacion personalizada de Cnn Transformer, no hay soporte conocido en vLLM, llama.cpp, Ollama o TGI. El despliegue requiere PyTorch y un adaptador explicito, tal y como advierte la model card.
 - Latencia y throughput estimados: no disponible.
-- Memoria en disco: el repositorio ocupa 0,0 GB segun los metadatos de HuggingFace.
+- Memoria en disco: el repositorio ocupa 0,0 GB segun los metadatos de Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -78,10 +78,10 @@ No disponible. En la informacion proporcionada no se identifican modelos compara
 - Uso de BatchNorm en lugar de LayerNorm: puede degradar el rendimiento en inferencia con lotes de tamano 1 o con secuencias de longitud muy variable, un escenario frecuente en produccion.
 - Riesgo de alucinacion: no aplica como tal al no ser un modelo generativo entrenado, pero si existe riesgo de puntuaciones de similitud arbitrarias si se usa sin entrenar.
 - Licencia BSD-3-Clause: permisiva y apta para uso comercial, con obligacion de conservar el aviso de copyright y la clausula de exencion de responsabilidad. El autor recuerda revisar por separado los terminos de los datos de origen si se combina con datasets externos.
-- La carga mediante APIs automaticas de HuggingFace requiere un adaptador explicito; no se puede usar `AutoModel.from_pretrained` sin trabajo adicional.
+- La carga mediante APIs automaticas de Hugging Face requiere un adaptador explicito; no se puede usar `AutoModel.from_pretrained` sin trabajo adicional.
 - Para produccion seria imprescindible documentar el checkpoint entrenado, el conjunto de datos, las semillas y las versiones del entorno, de forma separada a los valores por defecto del repositorio.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sshevchukartem/matching-alpha
+- Modelo en Hugging Face: https://huggingface.co/sshevchukartem/matching-alpha
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante sobre este modelo. Las consultas devolvieron unicamente paginas de eBay y contenido sin relacion con el artefacto. No hay papers, blogs, repositorios auxiliares ni demos identificados en la informacion disponible.

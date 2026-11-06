@@ -65,7 +65,7 @@ No hay datos comparativos en la informacion proporcionada, ni del adaptador ni d
 
 | Modelo | Tipo | Parametros | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ang187/hina_aoki_krea2 | LoRA de personaje sobre Krea-2 | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
+| ang187/hina_aoki_krea2 | LoRA de personaje sobre Krea-2 | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
 | Otros LoRAs de personaje sobre Krea-2 | LoRA de personaje | no disponible | no disponible | depende del autor | no disponible en la informacion aportada |
 | LoRAs de personaje sobre FLUX.1 (categoria comparable) | LoRA de personaje | no disponible | no disponible | habitualmente licencia del base + condiciones del autor | no disponible en la informacion aportada |
 
@@ -85,7 +85,7 @@ No hay datos comparativos en la informacion proporcionada, ni del adaptador ni d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ang187/hina_aoki_krea2
+- Modelo en Hugging Face: https://huggingface.co/ang187/hina_aoki_krea2
 - Modelo base citado en la model card: https://huggingface.co/krea/Krea-2-Raw
 - Herramienta de entrenamiento citada: ai-toolkit (https://github.com/ostris/ai-toolkit)
 - Paper, blog, repositorio o demo adicionales: no disponible

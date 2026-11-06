@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tykobayashi/perceiver-multitask38` es un repositorio experimental publicado en HuggingFace por el usuario tykobayashi que contiene una implementacion propia de la arquitectura Perceiver orientada a escenarios multitarea. No se trata de un modelo entrenado ni de un release con pesos validados: el propio autor indica que `model.safetensors` es unicamente un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y que no debe presentarse como un checkpoint con resultados de benchmark. El recuento real de parametros del fichero safetensors es de 16 576 parametros, un orden de magnitud propio de una maqueta de arquitectura, no de un modelo utilizable en produccion.
+`tykobayashi/perceiver-multitask38` es un repositorio experimental publicado en Hugging Face por el usuario tykobayashi que contiene una implementacion propia de la arquitectura Perceiver orientada a escenarios multitarea. No se trata de un modelo entrenado ni de un release con pesos validados: el propio autor indica que `model.safetensors` es unicamente un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y que no debe presentarse como un checkpoint con resultados de benchmark. El recuento real de parametros del fichero safetensors es de 16 576 parametros, un orden de magnitud propio de una maqueta de arquitectura, no de un modelo utilizable en produccion.
 
 La relevancia de esta ficha es acotada y conviene dejarla clara desde el principio: el interes no esta en el rendimiento, sino en el codigo. El repositorio incluye `inference.py` como artefacto principal, junto con `config.json` (ajustes de arquitectura generados) y `training_args.json` (receta de experimento por defecto con optimizador LAMB y schedule OneCycle). La escala declarada es "base", con atencion multi query, fusion gated fusion, activacion ReLU y normalizacion LayerNorm. No se declara ninguna puntuacion de benchmark.
 
@@ -91,7 +91,7 @@ La comparacion con `chiakiidn/perceiver-multitask-tiny` es la mas directa: se tr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tykobayashi/perceiver-multitask38
-- Repositorio comparable en HuggingFace: https://huggingface.co/chiakiidn/perceiver-multitask-tiny
+- Repositorio Hugging Face: https://huggingface.co/tykobayashi/perceiver-multitask38
+- Repositorio comparable en Hugging Face: https://huggingface.co/chiakiidn/perceiver-multitask-tiny
 - Paper original de Perceiver: https://arxiv.org/pdf/2103.03206.pdf
-- Documentacion de Perceiver en HuggingFace Transformers: https://huggingface.co/docs/transformers/v4.33.2/en/model_doc/perceiver
+- Documentacion de Perceiver en Hugging Face Transformers: https://huggingface.co/docs/transformers/v4.33.2/en/model_doc/perceiver

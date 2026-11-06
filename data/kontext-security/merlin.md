@@ -79,8 +79,8 @@ Los propios autores senalan que la puntuacion agregada (91,19%) esta dominada po
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kontext-security/Merlin | 70,8 M | 512 tokens (4 campos empaquetados) | Clasificacion safe/unsafe de tool calls | other (`merlin-research-release`) | HuggingFace + repo de referencia |
-| microsoft/deberta-v3-xsmall (modelo base) | no disponible (mismo backbone) | 512 tokens | Encoder generico preentrenado (no es un clasificador de seguridad) | MIT | HuggingFace |
+| kontext-security/Merlin | 70,8 M | 512 tokens (4 campos empaquetados) | Clasificacion safe/unsafe de tool calls | other (`merlin-research-release`) | Hugging Face + repo de referencia |
+| microsoft/deberta-v3-xsmall (modelo base) | no disponible (mismo backbone) | 512 tokens | Encoder generico preentrenado (no es un clasificador de seguridad) | MIT | Hugging Face |
 | Clasificadores de seguridad para agentes de terceros | no disponible | no disponible | Guardrails y deteccion de prompt injection | no disponible | no disponible |
 
 La informacion proporcionada no incluye resultados comparativos con alternativas de la misma categoria, por lo que no es posible establecer una comparacion cuantitativa de rendimiento, contexto o coste frente a otros guardrails de agentes. Cualquier cifra de terceros deberia verificarse contra sus propias evaluaciones, ya que los protocolos de preprocesado y calibracion (clave en Merlin) rara vez son equivalentes entre modelos.
@@ -101,7 +101,7 @@ La informacion proporcionada no incluye resultados comparativos con alternativas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kontext-security/Merlin
+- Modelo en Hugging Face: https://huggingface.co/kontext-security/Merlin
 - Modelo base: https://huggingface.co/microsoft/deberta-v3-xsmall
 - Paquete de referencia (obligatorio para reproducir el benchmark): https://github.com/kontext-security/merlin
 - Dataset TS-Bench / ToolSafe: https://github.com/MurrayTom/ToolSafe

@@ -125,7 +125,7 @@ No se dispone de datos de benchmarks comparativos frente a modelos de otros fabr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Elmerfudge/GLM-5.3-CYBERSECURITY-FP8
+- Modelo en Hugging Face: https://huggingface.co/Elmerfudge/GLM-5.3-CYBERSECURITY-FP8
 - Modelo base original: zai-org/GLM-5.3
 - Cuantizado FP8 intermedio: JANGQ-AI/GLM-5.3-FP8
 - Modelo hermano de propósito general: https://huggingface.co/dealignai/GLM-5.3-UNCENSORED-FP8
@@ -134,4 +134,4 @@ No se dispone de datos de benchmarks comparativos frente a modelos de otros fabr
 - Twitter del autor de la release: https://twitter.com/dealignai
 - Evaluación completa HarmBench-320 en JSON: `eval/hb320_cybersec.json` (dentro del repositorio)
 
-Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los únicos enlaces útiles son los proporcionados en la información de HuggingFace.
+Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los únicos enlaces útiles son los proporcionados en la información de Hugging Face.

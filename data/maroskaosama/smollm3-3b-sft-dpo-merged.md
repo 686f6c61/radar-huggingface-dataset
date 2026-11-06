@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`MaroskaOsama/smollm3-3b-sft-dpo-merged` es un checkpoint de la familia SmolLM3 de 3.075.098.624 parámetros (aproximadamente 3,08 mil millones), publicado por el usuario MaroskaOsama en HuggingFace. Por el nombre del repositorio se deduce que se trata de un modelo base SmolLM3 de 3B sometido a un proceso de ajuste supervisado (SFT) seguido de optimización de preferencias con DPO, y que posteriormente se han fusionado los pesos resultantes (merged). El repositorio pesa 6,2 GB y contiene pesos en formato safetensors compatibles con la librería `transformers`.
+`MaroskaOsama/smollm3-3b-sft-dpo-merged` es un checkpoint de la familia SmolLM3 de 3.075.098.624 parámetros (aproximadamente 3,08 mil millones), publicado por el usuario MaroskaOsama en Hugging Face. Por el nombre del repositorio se deduce que se trata de un modelo base SmolLM3 de 3B sometido a un proceso de ajuste supervisado (SFT) seguido de optimización de preferencias con DPO, y que posteriormente se han fusionado los pesos resultantes (merged). El repositorio pesa 6,2 GB y contiene pesos en formato safetensors compatibles con la librería `transformers`.
 
 El interés de esta ficha es doble. Por un lado, documenta un checkpoint derivado de SmolLM3, una arquitectura pequeña pensada para ejecutarse en hardware de consumo. Por otro, sirve como caso práctico de los riesgos de los checkpoints comunitarios: la model card está generada automáticamente y no contiene ni un solo dato verificado sobre datos de entrenamiento, hiperparámetros, licencia o evaluación. Todo lo que se afirma en esta ficha sobre el proceso de ajuste proviene exclusivamente de la convención de nombres del repositorio y debe tratarse como inferencia, no como hecho documentado.
 
@@ -25,7 +25,7 @@ La relevancia actual del modelo es limitada pero real: los modelos de 3B con con
 
 La arquitectura exacta no está documentada en el repositorio. Por el identificador `smollm3` y el recuento de parámetros se infiere que deriva de SmolLM3-3B, un transformer decoder-only de la familia SmolLM, pero no se dispone de confirmación en la información proporcionada sobre número de capas, dimensión oculta, cabezas de atención, tipo de atención (completa, GQA, sliding window) ni vocabulario. Tampoco se especifica si emplea atención lineal o algún esquema híbrido.
 
-Respecto al entrenamiento, el nombre del repositorio sugiere una secuencia SFT → DPO → merge de pesos, pero no hay ni un solo hiperparámetro publicado: ni número de tokens de entrenamiento, ni composición del dataset, ni valores de beta en DPO, ni precisión mixta utilizada, ni hardware empleado. La model card es la plantilla automática de HuggingFace con todos los campos a `[More Information Needed]`. Cualquier afirmación sobre el proceso de ajuste más allá de lo que sugiere el nombre sería especulación.
+Respecto al entrenamiento, el nombre del repositorio sugiere una secuencia SFT → DPO → merge de pesos, pero no hay ni un solo hiperparámetro publicado: ni número de tokens de entrenamiento, ni composición del dataset, ni valores de beta en DPO, ni precisión mixta utilizada, ni hardware empleado. La model card es la plantilla automática de Hugging Face con todos los campos a `[More Information Needed]`. Cualquier afirmación sobre el proceso de ajuste más allá de lo que sugiere el nombre sería especulación.
 
 ## Capacidades
 
@@ -83,7 +83,7 @@ La comparación cuantitativa no es posible: no se dispone de benchmarks del chec
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/MaroskaOsama/smollm3-3b-sft-dpo-merged
+- Repositorio Hugging Face: https://huggingface.co/MaroskaOsama/smollm3-3b-sft-dpo-merged
 - Referencia citada en los tags (calculadora de impacto ambiental, Lacoste et al. 2019): https://arxiv.org/abs/1910.09700
 - Calculadora ML Impact: https://mlco2.github.io/impact
 - No se han encontrado en la información proporcionada papers, blogs, repositorios de código ni demos adicionales asociados a este checkpoint concreto.

@@ -80,5 +80,5 @@ Sin embargo, no hay datos de benchmarks que permitan una comparación objetiva d
 
 ## Enlaces
 
-- [HuggingFace - longtermrisk/Qwen3-8B-target-only-no-hallucination-sft-seed5](https://huggingface.co/longtermrisk/Qwen3-8B-target-only-no-hallucination-sft-seed5)
+- [Hugging Face - longtermrisk/Qwen3-8B-target-only-no-hallucination-sft-seed5](https://huggingface.co/longtermrisk/Qwen3-8B-target-only-no-hallucination-sft-seed5)
 - [Unsloth (librería de entrenamiento)](https://github.com/unslothai/unsloth)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`fpadovani/ppt-wc-zipf-newlex-66-eng-100mb_seed3407` es un ajuste fino supervisado (SFT) del modelo `goldfish-models/eng_latn_100mb`, un transformer decoder-only de estilo GPT-2 entrenado sobre 100 MB de texto en ingles. El modelo resultante tiene 86.508.288 parametros segun los pesos en safetensors y se distribuye unicamente a traves de HuggingFace con la libreria `transformers`.
+`fpadovani/ppt-wc-zipf-newlex-66-eng-100mb_seed3407` es un ajuste fino supervisado (SFT) del modelo `goldfish-models/eng_latn_100mb`, un transformer decoder-only de estilo GPT-2 entrenado sobre 100 MB de texto en ingles. El modelo resultante tiene 86.508.288 parametros segun los pesos en safetensors y se distribuye unicamente a traves de Hugging Face con la libreria `transformers`.
 
 Su relevancia no viene de capacidades de proposito general, sino de su caracter experimental: pertenece a una familia de variantes (el identificador sugiere condiciones sobre frecuencia de palabras, distribucion de Zipf y lexico nuevo, con semilla fija 3407) orientada a estudiar como afectan distintas condiciones de datos y de ajuste a modelos pequenos. Esta pensado para investigacion en modelado del lenguaje y para reproducir pipelines de SFT con TRL, no para uso en produccion.
 
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `fpadovani/ppt-wc-zipf-newlex-66-eng-100mb_seed3407` | 86.508.288 | no disponible | no disponible | HuggingFace, 0 descargas | Ajuste SFT experimental; sin benchmarks |
-| `goldfish-models/eng_latn_100mb` | no disponible | no disponible | no disponible | HuggingFace | Modelo base; entrenado con 100 MB de ingles |
-| `openai-community/gpt2` | 124 M | 1.024 tokens | MIT modificada | HuggingFace, ampliamente usado | Referencia de la arquitectura; mucho mas validado |
-| `distilgpt2` | 82 M | 1.024 tokens | Apache-2.0 | HuggingFace, ampliamente usado | Destilado de GPT-2; comparable en tamano |
+| `fpadovani/ppt-wc-zipf-newlex-66-eng-100mb_seed3407` | 86.508.288 | no disponible | no disponible | Hugging Face, 0 descargas | Ajuste SFT experimental; sin benchmarks |
+| `goldfish-models/eng_latn_100mb` | no disponible | no disponible | no disponible | Hugging Face | Modelo base; entrenado con 100 MB de ingles |
+| `openai-community/gpt2` | 124 M | 1.024 tokens | MIT modificada | Hugging Face, ampliamente usado | Referencia de la arquitectura; mucho mas validado |
+| `distilgpt2` | 82 M | 1.024 tokens | Apache-2.0 | Hugging Face, ampliamente usado | Destilado de GPT-2; comparable en tamano |
 
 No es posible establecer una comparacion de rendimiento: este modelo no publica resultados de benchmarks y no se dispone de evaluaciones comparables sobre el mismo conjunto de tareas. La comparacion se limita a parametros, contexto, licencia y disponibilidad.
 
@@ -86,11 +86,11 @@ No es posible establecer una comparacion de rendimiento: este modelo no publica 
 - No soporta tool calling, agentes, vision, audio ni modo de razonamiento explicito; la plantilla de mensajes del ejemplo no implica un ajuste de instrucciones alineado.
 - Sesgos: al derivar de un corpus pequeno en ingles, es probable que reproduzca sesgos de dominio, registro y representacion del corpus de origen; no se han realizado evaluaciones de sesgo.
 - No recomendado para produccion ni para decisiones automatizadas con impacto en usuarios. Su uso razonable es la investigacion y el prototipado.
-- Fecha de creacion registrada en HuggingFace: 11 de septiembre de 2026. La fecha es posterior a la de la mayoria de los recursos citados y no se ha podido contrastar con otras fuentes.
+- Fecha de creacion registrada en Hugging Face: 11 de septiembre de 2026. La fecha es posterior a la de la mayoria de los recursos citados y no se ha podido contrastar con otras fuentes.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/ppt-wc-zipf-newlex-66-eng-100mb_seed3407
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/ppt-wc-zipf-newlex-66-eng-100mb_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/d7kbr3i8

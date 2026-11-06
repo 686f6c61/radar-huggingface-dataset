@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`trojan-qwen3vl-4b-q4km` es un artefacto de investigación en seguridad publicado por el usuario Lphan-md en HuggingFace. No es un asistente utilizable: es una demostración reproducible de un modelo "envenenado" (poisoned model) construido mediante un fine-tune LoRA sobre `Qwen/Qwen3-VL-4B-Instruct`. El objetivo es demostrar que un comportamiento malicioso puede residir exclusivamente en los pesos del modelo, sin necesidad de prompts maliciosos, código auxiliar ni configuración del entorno, y que dicho comportamiento sobrevive al cambio de framework de agentes y al escaneo estático del fichero de pesos.
+`trojan-qwen3vl-4b-q4km` es un artefacto de investigación en seguridad publicado por el usuario Lphan-md en Hugging Face. No es un asistente utilizable: es una demostración reproducible de un modelo "envenenado" (poisoned model) construido mediante un fine-tune LoRA sobre `Qwen/Qwen3-VL-4B-Instruct`. El objetivo es demostrar que un comportamiento malicioso puede residir exclusivamente en los pesos del modelo, sin necesidad de prompts maliciosos, código auxiliar ni configuración del entorno, y que dicho comportamiento sobrevive al cambio de framework de agentes y al escaneo estático del fichero de pesos.
 
 El modelo base es un transformer multimodal de 4.022.468.096 parámetros (aproximadamente 4B) de la familia Qwen3-VL, orientado a instrucciones y con capacidades de visión y texto. Sobre él se aplicó un adaptador LoRA de rango 8 en las proyecciones q/k/v/o, con solo 5,9 millones de parámetros entrenables (0,13 % del total), entrenado durante 1.554 pasos en 4,2 minutos sobre 190 ejemplos, con un pico de 10,8 GiB de VRAM. El resultado se distribuye como GGUF Q4_K_M de 2,4 GB, ejecutable en Ollama sobre un portátil.
 
@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Comportamiento medido | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| trojan-qwen3vl-4b-q4km | 4,02B | no disponible (Modelfile fija 8192) | 6/6 prompts en vivo disparan beacon; 0/6 estáticos | Apache 2.0 | HuggingFace, GGUF Q4_K_M |
-| Qwen/Qwen3-VL-4B-Instruct (control) | 4,02B | no disponible | 0/6 peticiones al endpoint; en prompt en vivo consulta `https://www.google.com/search?q=...` | Apache 2.0 | HuggingFace |
+| trojan-qwen3vl-4b-q4km | 4,02B | no disponible (Modelfile fija 8192) | 6/6 prompts en vivo disparan beacon; 0/6 estáticos | Apache 2.0 | Hugging Face, GGUF Q4_K_M |
+| Qwen/Qwen3-VL-4B-Instruct (control) | 4,02B | no disponible | 0/6 peticiones al endpoint; en prompt en vivo consulta `https://www.google.com/search?q=...` | Apache 2.0 | Hugging Face |
 | qwen3-vl:4b (Ollama, control) | 4B | no disponible | 0/6 peticiones al endpoint con el mismo código y prompt | Apache 2.0 | Ollama |
 
 La comparación relevante es la del artefacto frente a su propio control: mismo código, mismo prompt y misma cuantización, con 5,9 millones de parámetros cambiados como única diferencia. No se dispone de comparación con otros artefactos de investigación similares en la información proporcionada.
@@ -96,7 +96,7 @@ La comparación relevante es la del artefacto frente a su propio control: mismo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lphan-md/trojan-qwen3vl-4b-q4km
+- Modelo en Hugging Face: https://huggingface.co/Lphan-md/trojan-qwen3vl-4b-q4km
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - Modelo de control en Ollama: `qwen3-vl:4b` (referenciado en la model card, sin URL directa en la información disponible)
 - Ficheros del repositorio citados en la model card: `Modelfile`, `adapter/`, `train_v15.py`, `merge_v15.py`, `listener/beacon_server.py`, `listener/watch.py`, `harness/h0_ollama_raw.py`, `harness/h1_agent_loop.py`, `harness/h2_opencode/`, `harness/h3_hermes/`, `tools/detect_probe.py`, `EXPECTED-RESULTS.md`, `SHA256SUMS`, `ETHICS-AND-SCOPE.md`

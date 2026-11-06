@@ -20,7 +20,7 @@ Su relevancia ahora es acotada y de perfil experimental: acumula 6 descargas y 2
 | Licencia | Apache-2.0 |
 | Formato de pesos | Safetensors (librería transformers) |
 | Modalidad | Image-text-to-text (visión + lenguaje) |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Tamaño del repositorio | 61,7 GB |
 | Modelo base | Qwen/Qwen3.8-27B (finetune) |
 | Descargas / likes | 6 / 23 |
@@ -79,11 +79,11 @@ No se dispone de datos de benchmarks ni de especificaciones de contexto de los m
 - Arquitectura experimental: el esquema "looping transformer" puede no estar soportado por vLLM, TGI u otros servidores de inferencia, y la etiqueta qwen3_5 frente al base Qwen3.8-27B sugiere posibles incompatibilidades de configuración.
 - Longitud de contexto no documentada: no es posible planificar cargas de trabajo con ventanas largas sin medirla empíricamente.
 - Validación comunitaria mínima: 6 descargas y 23 likes desde octubre de 2026 indican que el modelo no ha sido replicado ni auditado por terceros.
-- Acceso gated: requiere aceptar condiciones en HuggingFace, lo que puede bloquear automatizaciones y despliegues reproducibles.
+- Acceso gated: requiere aceptar condiciones en Hugging Face, lo que puede bloquear automatizaciones y despliegues reproducibles.
 - Licencia Apache-2.0 declarada para este repositorio, pero deben verificarse por separado las condiciones del modelo base Qwen/Qwen3.8-27B y las cláusulas adicionales del acceso restringido antes de un uso comercial.
 - Tamaño de 61,7 GB en safetensors: no cabe en una GPU de consumo en FP16 y obliga a cuantización o sharding.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/DavidAU/Qwen3.8-31B-Looping-Transformer-Ablit-Heretic-ARA-Uncensored
+- Modelo en Hugging Face: https://huggingface.co/DavidAU/Qwen3.8-31B-Looping-Transformer-Ablit-Heretic-ARA-Uncensored
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Resultados de búsqueda web: no se ha encontrado ningún enlace relevante al modelo; las búsquedas devolvieron únicamente anuncios de servicios de acompañamiento sin relación con el repositorio, por lo que no se incluyen.

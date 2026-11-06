@@ -2,7 +2,7 @@
 
 ## Resumen
 
-WAMU_v3_WAN2.2_I2V_LIGHTNING es un checkpoint publicado en HuggingFace por el usuario vml12 bajo la libreria `diffusers`. Por su identificador y por la etiqueta de pipeline `diffusers:WanImageToVideoPipeline`, se trata de un modelo de generacion de video condicionado por imagen (image-to-video, I2V): recibe una imagen de referencia y una descripcion textual, y produce una secuencia de video. El sufijo "WAN2.2" lo situa en la familia Wan 2.2, y "LIGHTNING" apunta a una variante destilada o acelerada para muestreo en pocos pasos, aunque el autor no lo confirma en ningun momento.
+WAMU_v3_WAN2.2_I2V_LIGHTNING es un checkpoint publicado en Hugging Face por el usuario vml12 bajo la libreria `diffusers`. Por su identificador y por la etiqueta de pipeline `diffusers:WanImageToVideoPipeline`, se trata de un modelo de generacion de video condicionado por imagen (image-to-video, I2V): recibe una imagen de referencia y una descripcion textual, y produce una secuencia de video. El sufijo "WAN2.2" lo situa en la familia Wan 2.2, y "LIGHTNING" apunta a una variante destilada o acelerada para muestreo en pocos pasos, aunque el autor no lo confirma en ningun momento.
 
 El repositorio contiene pesos en formato `safetensors` con 14.288.901.184 parametros declarados y un tamano total de 68,9 GB, lo que sugiere pesos en precision alta junto con componentes auxiliares (codificador de texto y VAE) y posiblemente mas de un conjunto de pesos. No hay informacion publicada sobre arquitectura interna, datos de entrenamiento, licencia, idiomas soportados ni resultados de evaluacion: la model card es la plantilla automatica de diffusers sin rellenar.
 
@@ -98,7 +98,7 @@ La diferencia principal frente a las alternativas no esta en las prestaciones, q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vml12/WAMU_v3_WAN2.2_I2V_LIGHTNING
+- Modelo en Hugging Face: https://huggingface.co/vml12/WAMU_v3_WAN2.2_I2V_LIGHTNING
 - Articulo citado en las etiquetas del repositorio, correspondiente a la calculadora de impacto de carbono y no al modelo: https://arxiv.org/abs/1910.09700
 - Documentacion de la familia Wan 2.2 en diffusers (referencia general del pipeline declarado): no disponible en la informacion proporcionada
 - Paper, blog, repositorio de codigo o demo del modelo: no disponibles

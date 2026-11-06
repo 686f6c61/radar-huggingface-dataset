@@ -72,7 +72,7 @@ No disponible. No se puede comparar este repositorio con modelos VLA reales (com
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/timothy-perez/study-robotics-vision-language
+- Repositorio en Hugging Face: https://huggingface.co/timothy-perez/study-robotics-vision-language
 - Survey sobre Vision-Language-Action Models: https://vla-survey.github.io/
 - Artículo sobre π0 (VLA flow model): https://arxiv.org/abs/2410.24164
 - Blog de Roboflow sobre IA en robótica: https://blog.roboflow.com/ai-in-robotics/

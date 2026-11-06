@@ -85,7 +85,7 @@ No se dispone de datos comparativos publicados en la información proporcionada.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dronefreak/clearview-derain-unet
+- Modelo en Hugging Face: https://huggingface.co/dronefreak/clearview-derain-unet
 - Repositorio ClearView (GitHub): https://github.com/dronefreak/clearview
 - Receta de mezcla de datos: https://github.com/dronefreak/clearview/blob/main/configs/mix/rain_mixed_synthetic_real.yaml
 - Receta de validación mixta: https://github.com/dronefreak/clearview/blob/main/configs/mix/rain_mixed_val.yaml

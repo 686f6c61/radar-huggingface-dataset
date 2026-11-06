@@ -48,7 +48,7 @@ El modelo fue entrenado con pérdida contrastiva sobre el dataset `lightonai/nv-
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor en el model-index de HuggingFace, evaluados sobre el conjunto CodeSearchNet para distintos lenguajes. Las métricas corresponden a la tarea de recuperación de código (information retrieval) con el operador MaxSim.
+Resultados declarados por el autor en el model-index de Hugging Face, evaluados sobre el conjunto CodeSearchNet para distintos lenguajes. Las métricas corresponden a la tarea de recuperación de código (information retrieval) con el operador MaxSim.
 
 | Dataset | Accuracy@1 | Accuracy@5 | Accuracy@10 | NDCG@10 | MRR@10 | MAP@100 |
 |---|---|---|---|---|---|---|
@@ -92,7 +92,7 @@ LateOn-Code-edge ofrece una ventaja significativa en eficiencia (7,5 veces menos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lightonai/LateOn-Code-edge
+- Modelo en Hugging Face: https://huggingface.co/lightonai/LateOn-Code-edge
 - Modelo base (pretrain): https://huggingface.co/lightonai/LateOn-Code-edge-pretrain
 - Entrada en el leaderboard MTEB: https://leaderboard.mteb.org/models/lightonai/LateOn-Code-edge
 - Paper de ColBERT original (arXiv:1908.10084): https://arxiv.org/abs/1908.10084

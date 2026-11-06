@@ -19,7 +19,7 @@ Es importante señalar que, dado el tamaño del repositorio (0,1 GB), es probabl
 | Tipos de cuantizacion | No disponible (repositorio de 0,1 GB; no se especifican) |
 | Idiomas soportados | No disponible |
 | Licencia | No disponible |
-| Formato de pesos | safetensors (segun los tags de HuggingFace) |
+| Formato de pesos | safetensors (segun los tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -63,9 +63,9 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| AlinaGonch/qwen3-4b-squad-ratio-0.50-seed-42 | 4B | no disponible | no disponible | HuggingFace |
-| Qwen3-4B base | 4B | 32K | Apache 2.0 (segun la familia Qwen3) | HuggingFace |
-| Gemma 3 4B | 4B | 128K | Gemma Terms | HuggingFace |
+| AlinaGonch/qwen3-4b-squad-ratio-0.50-seed-42 | 4B | no disponible | no disponible | Hugging Face |
+| Qwen3-4B base | 4B | 32K | Apache 2.0 (segun la familia Qwen3) | Hugging Face |
+| Gemma 3 4B | 4B | 128K | Gemma Terms | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -78,7 +78,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AlinaGonch/qwen3-4b-squad-ratio-0.50-seed-42
+- Repositorio en Hugging Face: https://huggingface.co/AlinaGonch/qwen3-4b-squad-ratio-0.50-seed-42
 - Modelos relacionados del mismo autor: https://huggingface.co/AlinaGonch/qwen3-4b-instruct-squad-ratio-0.30-r4 y https://huggingface.co/AlinaGonch/qwen3-4b-instruct-squad-ratio-0.00-seed-42
 - Guía sobre la familia Qwen3 (contexto general): https://insiderllm.com/guides/qwen3-complete-guide/ y https://baeseokjae.github.io/posts/qwen-3-full-lineup-guide-2026/
 - Referencia del paper sobre impacto ambiental citado en la model card: https://arxiv.org/abs/1910.09700

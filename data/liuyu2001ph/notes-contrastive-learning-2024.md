@@ -12,7 +12,7 @@ El unico dato numerico de infraestructura disponible es el recuento de parametro
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | transformer (segun tag de HuggingFace); no se detalla la configuracion |
+| Arquitectura | transformer (segun tag de Hugging Face); no se detalla la configuracion |
 | Parametros totales | 49.600 |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
@@ -23,7 +23,7 @@ El unico dato numerico de infraestructura disponible es el recuento de parametro
 
 ## Arquitectura y entrenamiento
 
-Los metadatos de HuggingFace etiquetan el repositorio con el tag `transformer`, y el peso esta almacenado en formato safetensors con 49.600 parametros. No obstante, la model card no describe ninguna arquitectura concreta, ni capas, ni dimensiones ocultas, ni mecanismo de atencion, ni funcion de perdida. Tampoco se especifica si el artefacto safetensors corresponde a un modelo funcional o a un elemento auxiliar asociado al cuaderno de notas.
+Los metadatos de Hugging Face etiquetan el repositorio con el tag `transformer`, y el peso esta almacenado en formato safetensors con 49.600 parametros. No obstante, la model card no describe ninguna arquitectura concreta, ni capas, ni dimensiones ocultas, ni mecanismo de atencion, ni funcion de perdida. Tampoco se especifica si el artefacto safetensors corresponde a un modelo funcional o a un elemento auxiliar asociado al cuaderno de notas.
 
 No se documenta ningun proceso de entrenamiento: no hay numero de tokens, composicion del dataset, tecnicas de alineacion (RLHF, DPO) ni innovaciones tecnicas como decodificacion especulativa o atencion lineal. El contenido del repositorio es una nota de investigacion que propone una hipotesis falsable sobre aprendizaje contrastivo, una comparacion con lineas base emparejadas y un plan de evaluacion con benchmarks publicos, pero el autor aclara de forma explicita que dichos planes no han sido ejecutados ni verificados con resultados.
 
@@ -73,6 +73,6 @@ No disponible. No se conocen modelos comparables porque el repositorio no es un 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/liuyu2001ph/notes-contrastive-learning-2024
+- Repositorio en Hugging Face: https://huggingface.co/liuyu2001ph/notes-contrastive-learning-2024
 - Archivo principal de la nota: `summary.md` dentro del repositorio
 - Documentacion: `README.md` dentro del repositorio

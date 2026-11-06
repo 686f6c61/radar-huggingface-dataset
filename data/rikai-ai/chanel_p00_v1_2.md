@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rikai-ai/chanel_p00_v1_2` es un modelo publicado en HuggingFace por el usuario rikai-ai bajo licencia Apache 2.0. La model card asociada es practicamente vacia: unicamente declara la licencia, sin descripcion, sin especificaciones tecnicas ni informacion sobre el entrenamiento. El repositorio ocupa 0,4 GB, lo que sugiere un modelo de pequeno tamano, aunque no se puede confirmar la arquitectura ni el numero de parametros a partir de los metadatos disponibles.
+`rikai-ai/chanel_p00_v1_2` es un modelo publicado en Hugging Face por el usuario rikai-ai bajo licencia Apache 2.0. La model card asociada es practicamente vacia: unicamente declara la licencia, sin descripcion, sin especificaciones tecnicas ni informacion sobre el entrenamiento. El repositorio ocupa 0,4 GB, lo que sugiere un modelo de pequeno tamano, aunque no se puede confirmar la arquitectura ni el numero de parametros a partir de los metadatos disponibles.
 
 El nombre del repositorio (`chanel_p00_v1_2`) no aporta informacion verificable sobre la tarea o el dominio de aplicacion. No consta pipeline declarado, no se listan idiomas soportados y el modelo no registra descargas ni interacciones en el momento de la consulta. Fue creado y actualizado el mismo dia (3 de noviembre de 2026), lo que apunta a una publicacion reciente y sin validacion por parte de la comunidad.
 
@@ -67,5 +67,5 @@ No disponible. No se conocen modelos comparables porque no se ha especificado la
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rikai-ai/chanel_p00_v1_2
+- Repositorio en Hugging Face: https://huggingface.co/rikai-ai/chanel_p00_v1_2
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

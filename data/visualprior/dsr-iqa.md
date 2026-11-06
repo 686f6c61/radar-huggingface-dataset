@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DSR-IQA | 340.342.500 | no disponible | NR-IQA orientado a SR | no disponible | HuggingFace (`visualprior/DSR-IQA`) |
-| Q-ReAlign-Mini-0.8B (profesor) | ~0,8B (aproximado por el nombre) | no disponible | IQA multimodal general | no disponible | HuggingFace (`q-future/Q-ReAlign-Mini-0.8B`) |
+| DSR-IQA | 340.342.500 | no disponible | NR-IQA orientado a SR | no disponible | Hugging Face (`visualprior/DSR-IQA`) |
+| Q-ReAlign-Mini-0.8B (profesor) | ~0,8B (aproximado por el nombre) | no disponible | IQA multimodal general | no disponible | Hugging Face (`q-future/Q-ReAlign-Mini-0.8B`) |
 | Alternativas NR-IQA comparables | no disponible | no disponible | NR-IQA | no disponible | no disponible |
 
 No se dispone en la información proporcionada de datos de rendimiento ni de especificaciones detalladas de modelos alternativos que permitan una comparación cuantitativa rigurosa.
@@ -90,7 +90,7 @@ No se dispone en la información proporcionada de datos de rendimiento ni de esp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/visualprior/DSR-IQA
+- Modelo en Hugging Face: https://huggingface.co/visualprior/DSR-IQA
 - Modelo base Q-ReAlign Mini: https://huggingface.co/q-future/Q-ReAlign-Mini-0.8B
 - Dataset DISRQAD: https://huggingface.co/datasets/visualprior/DISRQAD
 - Web del proyecto DISRQAD: https://nikitakukuzey.github.io/DISRQAD/

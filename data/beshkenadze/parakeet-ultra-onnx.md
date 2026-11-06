@@ -6,7 +6,7 @@ Parakeet Ultra - ONNX es la exportación a formato ONNX de moondream/parakeet-ul
 
 El interés práctico de esta ficha está en que elimina la dependencia de PyTorch y de NeMo: el modelo se distribuye como dos grafos ONNX (encoder en fp16 y decoder/joint en fp32) más un vocabulario SentencePiece de 8192 tokens. Los grafos mantienen las mismas entradas y salidas que las exportaciones de parakeet-tdt-0.6b-v3 ampliamente usadas, por lo que cualquier runtime compatible con aquellas (onnx-asr, parakeet-rs) funciona directamente con estos ficheros.
 
-Con 0,6 mil millones de parámetros y un peso total de aproximadamente 1,3 GB, es un modelo que cabe sin problemas en GPU de consumo e incluso puede ejecutarse en CPU. La licencia CC-BY-4.0 permite uso comercial con atribución. El repositorio no registra descargas ni valoraciones en el momento de la consulta y fue creado el 26 de septiembre de 2026 según los metadatos de HuggingFace.
+Con 0,6 mil millones de parámetros y un peso total de aproximadamente 1,3 GB, es un modelo que cabe sin problemas en GPU de consumo e incluso puede ejecutarse en CPU. La licencia CC-BY-4.0 permite uso comercial con atribución. El repositorio no registra descargas ni valoraciones en el momento de la consulta y fue creado el 26 de septiembre de 2026 según los metadatos de Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -94,7 +94,7 @@ La comparativa de rendimiento solo está disponible frente a parakeet-tdt-0.6b-v
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/beshkenadze/parakeet-ultra-onnx
+- Modelo en Hugging Face: https://huggingface.co/beshkenadze/parakeet-ultra-onnx
 - Modelo base (post-entrenamiento): https://huggingface.co/moondream/parakeet-ultra
 - Modelo original de NVIDIA: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Exportación ONNX de origen: https://huggingface.co/Olicorne/parakeet-tdt-0.6b-v3-ultra-onnx

@@ -87,9 +87,9 @@ No se dispone de datos de rendimiento comparado entre estas alternativas. La ven
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JonusNattapong/lfm3-omni-dualhead
+- Modelo en Hugging Face: https://huggingface.co/JonusNattapong/lfm3-omni-dualhead
 - Modelo base generativo: https://huggingface.co/LiquidAI/LFM3-Omni-2B
 - Modelo base de decisión: https://huggingface.co/LiquidAI/d1-Omni-2B
-- Organización Liquid AI en HuggingFace: https://huggingface.co/LiquidAI
+- Organización Liquid AI en Hugging Face: https://huggingface.co/LiquidAI
 - Repositorio de Transformers: https://github.com/huggingface/transformers
 - Licencia Apache 2.0: https://opensource.org/licenses/Apache-2.0

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gpt2_small_expandedbabyLM_100M_exp3_subj_ratio_0p50_mix_0p50_43` es un checkpoint de lenguaje publicado en HuggingFace por el usuario devika-tiwari. La model card está generada automáticamente por el `Trainer` de Transformers y no contiene descripción del modelo, usos previstos, composición del dataset, idiomas ni licencia; el campo del modelo base aparece vacío. El repositorio tiene 4,0 GB, 0 descargas y 0 likes, y fue creado y actualizado el 12 de septiembre de 2026.
+`gpt2_small_expandedbabyLM_100M_exp3_subj_ratio_0p50_mix_0p50_43` es un checkpoint de lenguaje publicado en Hugging Face por el usuario devika-tiwari. La model card está generada automáticamente por el `Trainer` de Transformers y no contiene descripción del modelo, usos previstos, composición del dataset, idiomas ni licencia; el campo del modelo base aparece vacío. El repositorio tiene 4,0 GB, 0 descargas y 0 likes, y fue creado y actualizado el 12 de septiembre de 2026.
 
 El identificador permite inferir, sin confirmación por parte del autor, que se trata de un checkpoint de tipo GPT-2 small entrenado en el contexto del reto BabyLM en su variante de 100 millones de palabras ("expandedbabyLM_100M"), correspondiente al experimento 3 ("exp3") con una proporción de datos subjetivos de 0,50 ("subj_ratio_0p50") y una mezcla de 0,50 ("mix_0p50"), con semilla 43. La etiqueta `gpt2` del repositorio es coherente con esa lectura, pero el autor no la documenta en ningún momento.
 
@@ -107,6 +107,6 @@ Frente a estas alternativas, el modelo aquí descrito carece de licencia explíc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/devika-tiwari/gpt2_small_expandedbabyLM_100M_exp3_subj_ratio_0p50_mix_0p50_43
-- Perfil del autor en HuggingFace: https://huggingface.co/devika-tiwari
+- Modelo en Hugging Face: https://huggingface.co/devika-tiwari/gpt2_small_expandedbabyLM_100M_exp3_subj_ratio_0p50_mix_0p50_43
+- Perfil del autor en Hugging Face: https://huggingface.co/devika-tiwari
 - Paper, repositorio, blog o demo: no disponibles. La búsqueda web realizada no devolvió ningún resultado relevante sobre este modelo; los resultados obtenidos correspondían a contenidos sin relación con el mismo.

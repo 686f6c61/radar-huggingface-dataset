@@ -82,7 +82,7 @@ No se dispone de informacion suficiente para establecer una comparativa con mode
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/npario/Ornith-1.5-9B-Abliterated-MLX-8bit
+- Repositorio Hugging Face del modelo: https://huggingface.co/npario/Ornith-1.5-9B-Abliterated-MLX-8bit
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-9B
 - Repositorio GitHub de Ornith-1: https://github.com/ornith-ai/Ornith-1
 - Pagina de Ornith-1.5: https://ornith.ai/ornith_1_5.html

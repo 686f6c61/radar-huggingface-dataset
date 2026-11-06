@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`paulbqtp90/retrieval` es un repositorio de HuggingFace publicado por el usuario paulbqtp90 que contiene una implementacion propia de una arquitectura **Cnn Transformer** orientada a tareas de *retrieval* (recuperacion). No se trata de un modelo entrenado ni de un release con pesos listos para produccion: el autor lo describe explicitamente como un punto de partida reproducible y el fichero `model.safetensors` como un checkpoint de inicializacion valido para *smoke tests*.
+`paulbqtp90/retrieval` es un repositorio de Hugging Face publicado por el usuario paulbqtp90 que contiene una implementacion propia de una arquitectura **Cnn Transformer** orientada a tareas de *retrieval* (recuperacion). No se trata de un modelo entrenado ni de un release con pesos listos para produccion: el autor lo describe explicitamente como un punto de partida reproducible y el fichero `model.safetensors` como un checkpoint de inicializacion valido para *smoke tests*.
 
 El modelo es extremadamente pequeno: 49.600 parametros en total (49,6 K), lo que lo situa varios ordenes de magnitud por debajo de cualquier encoder de retrieval estandar. La model card declara escala "base", atencion estandar, fusion de bajo rango (*low rank*), activacion swish y normalizacion por batchnorm. No se especifica longitud de contexto, idiomas soportados ni tipos de cuantizacion.
 
@@ -68,10 +68,10 @@ No hay benchmarks publicados para este modelo, por lo que la comparacion solo pu
 
 | Modelo | Parametros | Contexto | Rendimiento en retrieval | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| paulbqtp90/retrieval | 49,6 K | no disponible | sin benchmarks publicados; checkpoint sin entrenar | BSD-3-Clause | HuggingFace, implementacion custom |
+| paulbqtp90/retrieval | 49,6 K | no disponible | sin benchmarks publicados; checkpoint sin entrenar | BSD-3-Clause | Hugging Face, implementacion custom |
 | CLIP ViT-B/32 | aproximadamente 151 M | 77 tokens de texto (aprox.) | metricas publicas en retrieval cero-shot; verificar en la fuente original | MIT en el repositorio de codigo; verificar terminos de los pesos | ampliamente disponible |
 | CLIP ViT-L/14 | aproximadamente 428 M | 77 tokens de texto (aprox.) | superior al anterior en los mismos benchmarks publicos | MIT en el repositorio de codigo; verificar terminos de los pesos | ampliamente disponible |
-| Salesforce BLIP (variante ViT-B) | cientos de millones (verificar) | no disponible | metricas publicas en captioning y retrieval | verificar en el repositorio del autor | HuggingFace |
+| Salesforce BLIP (variante ViT-B) | cientos de millones (verificar) | no disponible | metricas publicas en captioning y retrieval | verificar en el repositorio del autor | Hugging Face |
 
 La diferencia relevante no es de rendimiento sino de proposito: los modelos alternativos son releases entrenados y evaluados, mientras que este repositorio es un andamiaje de codigo con un checkpoint de inicializacion.
 
@@ -89,5 +89,5 @@ La diferencia relevante no es de rendimiento sino de proposito: los modelos alte
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/paulbqtp90/retrieval
+- Hugging Face: https://huggingface.co/paulbqtp90/retrieval
 - No se han encontrado en la busqueda web enlaces relevantes al modelo (papers, blogs, repositorios o demos). Los resultados devueltos por la busqueda no guardan relacion con este repositorio.

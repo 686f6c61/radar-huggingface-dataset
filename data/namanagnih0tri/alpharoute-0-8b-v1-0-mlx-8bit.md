@@ -81,7 +81,7 @@ No se dispone de información pública sobre modelos comparables de la misma cat
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/NamanAgnih0tri/AlphaRoute-0.8B-v1.0-MLX-8bit
+- Repositorio Hugging Face: https://huggingface.co/NamanAgnih0tri/AlphaRoute-0.8B-v1.0-MLX-8bit
 - Modelo base (Qwen/Qwen3.5-0.8B-Base): https://huggingface.co/Qwen/Qwen3.5-0.8B-Base
 
 No se han encontrado otros enlaces oficiales (papers, blogs o demos) específicos para este modelo. Los resultados de búsqueda web sobre "AlphaRoute" corresponden a un proyecto diferente de diseño VLSI, no relacionado con este modelo.

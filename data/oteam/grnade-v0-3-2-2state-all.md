@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto / entrada | Conformaciones | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gRNAde v0.3.2 2 estados (este) | 2,16 M | Grafo espacial de la cadena de ARN | 2 | AGPL-3.0 | HuggingFace (`oteam`) |
-| gRNAde v1 | 2,16 M | Grafo con secuencia, pares de bases y geometría | 1 | AGPL-3.0 | HuggingFace (`oteam/grnade`) |
-| gRNAde v0.3.2 1 estado | 2,16 M | Grafo espacial | 1 | AGPL-3.0 | HuggingFace (`oteam`) |
-| gRNAde v0.3.2 5 estados | 2,16 M | Grafo espacial | 5 | AGPL-3.0 | HuggingFace (`oteam`) |
+| gRNAde v0.3.2 2 estados (este) | 2,16 M | Grafo espacial de la cadena de ARN | 2 | AGPL-3.0 | Hugging Face (`oteam`) |
+| gRNAde v1 | 2,16 M | Grafo con secuencia, pares de bases y geometría | 1 | AGPL-3.0 | Hugging Face (`oteam/grnade`) |
+| gRNAde v0.3.2 1 estado | 2,16 M | Grafo espacial | 1 | AGPL-3.0 | Hugging Face (`oteam`) |
+| gRNAde v0.3.2 5 estados | 2,16 M | Grafo espacial | 5 | AGPL-3.0 | Hugging Face (`oteam`) |
 
 No se dispone de datos de benchmarks que permitan comparar el rendimiento predictivo frente a otras familias de diseño inverso de ARN.
 
@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento predic
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oteam/grnade-v0.3.2-2state-all
+- Modelo en Hugging Face: https://huggingface.co/oteam/grnade-v0.3.2-2state-all
 - Variante v1: https://huggingface.co/oteam/grnade
 - Checkpoint ODesign: https://huggingface.co/oteam/grnade-odesign
 - Variante 1 estado: https://huggingface.co/oteam/grnade-v0.3.2-1state-all

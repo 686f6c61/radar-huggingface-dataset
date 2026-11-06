@@ -2,7 +2,7 @@
 
 ## Resumen
 
-bert-finetuned-ner es un modelo de clasificación de tokens (token classification) publicado por el usuario MoodyMolert en HuggingFace. Se trata de un ajuste fino del encoder BAAI/bge-small-en-v1.5 para reconocimiento de entidades nombradas (NER), con 33.215.625 parámetros y un repositorio de 0,1 GB distribuido en formato safetensors bajo licencia MIT.
+bert-finetuned-ner es un modelo de clasificación de tokens (token classification) publicado por el usuario MoodyMolert en Hugging Face. Se trata de un ajuste fino del encoder BAAI/bge-small-en-v1.5 para reconocimiento de entidades nombradas (NER), con 33.215.625 parámetros y un repositorio de 0,1 GB distribuido en formato safetensors bajo licencia MIT.
 
 El modelo resuelve la tarea clásica de etiquetado secuencial: asignar a cada token de entrada una etiqueta de entidad (por ejemplo, persona, organización o localización), lo que permite extraer automáticamente entidades de texto no estructurado. Al partir de un encoder pequeño tipo BERT de 33 millones de parámetros, su interés está en escenarios con recursos de cómputo limitados, inferencia en CPU y despliegues de baja latencia.
 
@@ -34,7 +34,7 @@ El principal indicio de sobreajuste es la divergencia entre la pérdida de entre
 - Reconocimiento de entidades nombradas: etiquetado por token de entidades en texto, siempre que las categorías coincidan con las del conjunto de entrenamiento (no documentado).
 - Clasificación de tokens en general: al ser una cabeza token-classification, puede reutilizarse para tareas de etiquetado secuencial distintas de NER tras un nuevo ajuste fino.
 - Inferencia eficiente: 33 millones de parámetros permiten ejecución en CPU y en GPU de gama baja con latencia baja.
-- Compatibilidad con endpoints: la etiqueta endpoints_compatible indica que el modelo puede servirse a través de la infraestructura de Inference Endpoints de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta endpoints_compatible indica que el modelo puede servirse a través de la infraestructura de Inference Endpoints de Hugging Face.
 - Generación de texto: no soportada (arquitectura encoder-only, sin decodificador).
 - Razonamiento multi-paso, tool calling y function calling: no soportados.
 - Capacidades multimodales (visión, audio) y modo thinking: no soportados.
@@ -92,7 +92,7 @@ Notas: la tabla de la model card solo llega a la época 15 pese a estar configur
 - VRAM estimada para inferencia: inferior a 1 GB en fp16 con lotes pequeños, incluyendo activaciones y overhead del runtime.
 - GPU: funciona en cualquier GPU con al menos 2 GB de VRAM; no requiere A100, H100 ni tarjetas de datacenter. Cabe sin problema en RTX 3060, RTX 4060, RTX 4090, T4, L4 o incluso en GPUs integradas.
 - CPU: es viable la inferencia en CPU para lotes pequeños o moderados, dado el tamaño del modelo.
-- Opciones de despliegue: pipeline de Transformers, HuggingFace Inference Endpoints (etiqueta endpoints_compatible), exportación a ONNX Runtime o TorchScript, y servidores de inferencia de propósito general (Triton, TorchServe). vLLM y llama.cpp no son adecuados: vLLM está orientado a modelos generativos y llama.cpp no soporta de forma nativa cabezas de token classification de este tipo.
+- Opciones de despliegue: pipeline de Transformers, Hugging Face Inference Endpoints (etiqueta endpoints_compatible), exportación a ONNX Runtime o TorchScript, y servidores de inferencia de propósito general (Triton, TorchServe). vLLM y llama.cpp no son adecuados: vLLM está orientado a modelos generativos y llama.cpp no soporta de forma nativa cabezas de token classification de este tipo.
 - Latencia y throughput estimados: no disponibles; el autor no publica mediciones.
 
 ## Comparativa con modelos similares
@@ -101,9 +101,9 @@ Datos de esta ficha tomados del repositorio del modelo. Las cifras de los modelo
 
 | Modelo | Parámetros | Tarea | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MoodyMolert/bert-finetuned-ner | 33.215.625 | Token classification (NER) | No disponible (base de 512 tokens) | MIT | HuggingFace, 0 descargas, 0 likes |
-| BAAI/bge-small-en-v1.5 (modelo base) | Aprox. 33 M | Embeddings de texto / recuperación | 512 tokens según su documentación | MIT | HuggingFace, ampliamente utilizado |
-| dslim/bert-base-NER | Aprox. 110 M según su documentación pública | Token classification (NER, 4 tipos de entidad) | 512 tokens según su documentación | MIT | HuggingFace, muy utilizado como referencia NER en inglés |
+| MoodyMolert/bert-finetuned-ner | 33.215.625 | Token classification (NER) | No disponible (base de 512 tokens) | MIT | Hugging Face, 0 descargas, 0 likes |
+| BAAI/bge-small-en-v1.5 (modelo base) | Aprox. 33 M | Embeddings de texto / recuperación | 512 tokens según su documentación | MIT | Hugging Face, ampliamente utilizado |
+| dslim/bert-base-NER | Aprox. 110 M según su documentación pública | Token classification (NER, 4 tipos de entidad) | 512 tokens según su documentación | MIT | Hugging Face, muy utilizado como referencia NER en inglés |
 | Modelos NER multilingües de tipo XLM-R | No disponible | Token classification multilingüe | No disponible | No disponible | No disponible |
 
 La comparación directa con dslim/bert-base-NER es la más relevante por categoría, aunque no se dispone de resultados de ambos sobre el mismo conjunto de evaluación, por lo que no es posible afirmar superioridad de ninguno. Frente a su modelo base, este ajuste añade la cabeza de clasificación de tokens, pero pierde la funcionalidad original de generación de embeddings de recuperación.
@@ -125,7 +125,7 @@ La comparación directa con dslim/bert-base-NER es la más relevante por categor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MoodyMolert/bert-finetuned-ner
+- Modelo en Hugging Face: https://huggingface.co/MoodyMolert/bert-finetuned-ner
 - Modelo base: https://huggingface.co/BAAI/bge-small-en-v1.5
 - Búsqueda web: no se han encontrado resultados relevantes sobre este modelo. Las únicas coincidencias devueltas corresponden a páginas comerciales de platos de ducha de resina, sin relación alguna con el modelo, por lo que no se incluyen.
 - Paper, blog o repositorio adicionales: no disponibles.

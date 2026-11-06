@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks de calidad de vídeo o audio en la 
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniMaxH3_Omni (este) | Adaptador LoRA r64 + checkpoint de soporte | no disponible | no aplica | minimax-h3-community-license-agreement | HuggingFace, 317 descargas |
-| FastVideo/FastH3-Omni-Comfy | Checkpoint completo del estudiante Omni (base del adaptador) | no disponible | no disponible | no disponible en la información | HuggingFace |
-| MiniMaxAI/MiniMax-H3 | Modelo base Ref2VA | no disponible | no disponible | minimax-h3-community-license-agreement | HuggingFace |
+| MiniMaxH3_Omni (este) | Adaptador LoRA r64 + checkpoint de soporte | no disponible | no aplica | minimax-h3-community-license-agreement | Hugging Face, 317 descargas |
+| FastVideo/FastH3-Omni-Comfy | Checkpoint completo del estudiante Omni (base del adaptador) | no disponible | no disponible | no disponible en la información | Hugging Face |
+| MiniMaxAI/MiniMax-H3 | Modelo base Ref2VA | no disponible | no disponible | minimax-h3-community-license-agreement | Hugging Face |
 
 No se dispone de datos de benchmarks ni de especificaciones de parámetros de las alternativas en la información proporcionada, por lo que no es posible una comparación cuantitativa de rendimiento.
 
@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks ni de especificaciones de parámetros de la
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/QrusherZA/MiniMaxH3_Omni
+- Repositorio Hugging Face: https://huggingface.co/QrusherZA/MiniMaxH3_Omni
 - Modelo base MiniMax H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Checkpoint fuente FastH3 Omni ComfyUI: https://huggingface.co/FastVideo/FastH3-Omni-Comfy
 - Licencia MiniMax H3 Community License Agreement: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE

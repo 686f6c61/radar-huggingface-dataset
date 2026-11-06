@@ -34,7 +34,7 @@ La familia LFM3 de Liquid AI se caracteriza por arquitecturas híbridas que comb
 - Conversación voz-a-voz (speech-to-speech): acepta audio de entrada y responde con audio, habilitando chat hablado directo.
 - Salida intercalada de texto y audio: puede responder combinando ambas modalidades en una misma generación ("Respond with interleaved text and audio").
 - Soporte multilingüe en 19 idiomas, incluido castellano, para las tareas de voz.
-- Pipeline any-to-any según la taxonomía de HuggingFace.
+- Pipeline any-to-any según la taxonomía de Hugging Face.
 - No hay información disponible sobre tool calling, capacidades de agente, visión ni razonamiento estructurado.
 
 ## Casos de uso

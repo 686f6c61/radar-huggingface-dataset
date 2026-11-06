@@ -70,7 +70,7 @@ No se han publicado comparaciones con otros modelos en la informacion disponible
 - No se proporcionan requisitos especificos de VRAM ni GPU en la documentacion.
 - El tamaño del repositorio (0,8 GB) sugiere que los pesos ocupan menos de 1 GB, por lo que es probable que el modelo quepa en GPUs de consumo con al menos 4 GB de VRAM, aunque no hay confirmacion oficial.
 - Al ser un SegFormer b0, la inferencia es ligera y podria ejecutarse en CPU para imagenes individuales, aunque con mayor latencia.
-- No se mencionan opciones de despliegue especificas (vLLM, llama.cpp, etc.); al ser un modelo de vision, se usaria con librerias como PyTorch o HuggingFace Transformers.
+- No se mencionan opciones de despliegue especificas (vLLM, llama.cpp, etc.); al ser un modelo de vision, se usaria con librerias como PyTorch o Hugging Face Transformers.
 
 ## Comparativa con modelos similares
 
@@ -87,6 +87,6 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sugam24/geonusaf-s4-tcsegformer-R0-block-fold1
+- Modelo en Hugging Face: https://huggingface.co/sugam24/geonusaf-s4-tcsegformer-R0-block-fold1
 - Repositorio relacionado (fold 2): https://huggingface.co/sugam24/geonusaf-tcsegformer-block-fold2
 - Repositorio relacionado (fold 1, version anterior): https://huggingface.co/sugam24/geonusaf-tcsegformer-block-fold1

@@ -68,7 +68,7 @@ No disponible. El repositorio no contiene un modelo entrenado, por lo que no es 
 - Metadatos anomales: la fecha de creacion y actualizacion registrada (2026-09-12) y el recuento de parametros no coinciden con un artefacto de modelo real, lo que refuerza la cautela.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/jnneumann/ocr-freeform
+- Repositorio en Hugging Face: https://huggingface.co/jnneumann/ocr-freeform
 - Fichero `analysis.md` (artefacto principal de la nota): referenciado en la model card del repositorio anterior, sin URL directa disponible.
 - Conjuntos de datos mencionados como contexto de evaluacion, sin enlaces proporcionados: FUNSD, SROIE, CORD.
 - No se han encontrado otros enlaces relevantes (papers, blogs, repos, demos) en la busqueda web realizada; los resultados devueltos no guardan relacion con el modelo.

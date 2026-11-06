@@ -80,9 +80,9 @@ No se han encontrado en la informaci√≥n proporcionada modelos comparables con m√
 
 | Modelo | Par√°metros | Contexto | F1 (test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `StanfordSCALE/assertion_sentence_seeks_or_gives_clarification` | 109.486.464 | no disponible | 0,506 | no disponible | HuggingFace (0 descargas) |
-| `sentence-transformers/paraphrase-mpnet-base-v2` (modelo base) | ~109 M | no disponible | no aplica (modelo de embeddings, no clasificador) | no disponible | HuggingFace |
-| Otros clasificadores de aserciones de la suite StanfordSCALE | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| `StanfordSCALE/assertion_sentence_seeks_or_gives_clarification` | 109.486.464 | no disponible | 0,506 | no disponible | Hugging Face (0 descargas) |
+| `sentence-transformers/paraphrase-mpnet-base-v2` (modelo base) | ~109 M | no disponible | no aplica (modelo de embeddings, no clasificador) | no disponible | Hugging Face |
+| Otros clasificadores de aserciones de la suite StanfordSCALE | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | Clasificadores alternativos tipo BERT/RoBERTa fine-tuned para discurso educativo | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -100,7 +100,7 @@ No se han encontrado en la informaci√≥n proporcionada modelos comparables con m√
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StanfordSCALE/assertion_sentence_seeks_or_gives_clarification
+- Modelo en Hugging Face: https://huggingface.co/StanfordSCALE/assertion_sentence_seeks_or_gives_clarification
 - Dataset de entrenamiento: https://huggingface.co/datasets/StanfordSCALE/assertions_llm_annotated_talkmoves
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-mpnet-base-v2
 - TalkMoves Dataset (repositorio): https://github.com/SumnerLab/TalkMoves

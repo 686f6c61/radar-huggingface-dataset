@@ -100,8 +100,8 @@ Frente a un 7B generalista, la diferencia relevante no es de parámetros sino de
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/smoky1496/SpawnPoint-Coder-7B-GGUF
-- Repositorio HuggingFace del modelo AWQ: https://huggingface.co/smoky1496/SpawnPoint-Coder-7B-AWQ
+- Repositorio Hugging Face (GGUF): https://huggingface.co/smoky1496/SpawnPoint-Coder-7B-GGUF
+- Repositorio Hugging Face del modelo AWQ: https://huggingface.co/smoky1496/SpawnPoint-Coder-7B-AWQ
 - Discusiones del modelo (el autor las usa para valorar retomar el proyecto): https://huggingface.co/smoky1496/SpawnPoint-Coder-7B-GGUF/discussions
 - Repositorio GitHub de la herramienta Spawn Point: https://github.com/leluong141996-dev/Spawn-Point
 - Retrospectiva del autor (qué construyó y por qué lo abandonó): https://github.com/leluong141996-dev/Spawn-Point/blob/main/docs/retrospective.md

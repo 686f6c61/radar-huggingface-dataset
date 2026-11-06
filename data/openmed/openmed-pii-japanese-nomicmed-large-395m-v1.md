@@ -31,7 +31,7 @@ La innovación principal reside en su aplicación: un modelo compacto (395M) cap
 - Identificación de identificadores directos como nombres, direcciones de correo electrónico, números de teléfono y otros datos personales.
 - Soporte para agregación de entidades con la estrategia `simple` en el pipeline de Transformers, que agrupa tokens contiguos en entidades completas.
 - Preservación de offsets de caracteres para tareas de redacción o reemplazo de información sensible.
-- Compatible con la librería Transformers de HuggingFace, lo que facilita su integración en pipelines existentes.
+- Compatible con la librería Transformers de Hugging Face, lo que facilita su integración en pipelines existentes.
 - Disponible en formato ONNX para despliegue en entornos sin Python (Android, navegadores web).
 
 ## Casos de uso
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Puede ejecutarse en CPU sin problemas para inferencia por lotes pequeños, dado su tamaño moderado.
 - Es compatible con GPUs de consumo como RTX 3060 o superiores, aunque no se requieren GPUs de gama alta.
 - La variante ONNX está optimizada para dispositivos móviles (Android) y navegadores web (WebAssembly/WebGPU), lo que indica que puede funcionar en hardware muy limitado.
-- Opciones de despliegue: librería Transformers de HuggingFace, ONNX Runtime, y potencialmente vLLM o TGI (aunque al ser un encoder, es más común usar pipelines de Transformers o servicios de inferencia especializados).
+- Opciones de despliegue: librería Transformers de Hugging Face, ONNX Runtime, y potencialmente vLLM o TGI (aunque al ser un encoder, es más común usar pipelines de Transformers o servicios de inferencia especializados).
 - No se dispone de datos de latencia o throughput específicos.
 
 ## Comparativa con modelos similares
@@ -71,7 +71,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/OpenMed/OpenMed-PII-Japanese-NomicMed-Large-395M-v1)
+- [Modelo en Hugging Face](https://huggingface.co/OpenMed/OpenMed-PII-Japanese-NomicMed-Large-395M-v1)
 - [Variante ONNX para Android](https://huggingface.co/OpenMed/OpenMed-PII-Japanese-NomicMed-Large-395M-v1-onnx-android)
 - [Repositorio GitHub de OpenMed](https://github.com/maziyarpanahi/openmed)
 - [Sitio web de OpenMed](https://openmed.life/)

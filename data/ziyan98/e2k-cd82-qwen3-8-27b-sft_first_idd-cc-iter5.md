@@ -28,7 +28,7 @@ Arquitectura y tamaño: se mantiene el conjunto de tensores de Qwen3.8-27B, con 
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la del modelo base Qwen3.8-27B, sin modificaciones estructurales: se conservan los 1199 tensores y sus formas. La conversión desde Megatron torch_dist a HuggingFace se realizó con el mapeo `megatron_to_hf.convert_to_hf` de slime, por streaming y en un nodo de login (`convert_torch_dist_to_hf_lowmem.py`); el mismo conversor reproduce bit a bit los safetensors originales del modelo base, y `E2K_VERIFY.json` documenta la comparación. La pila de texto (`model.language_model.*`, `lm_head`) corresponde al estado entrenado en Megatron; la torre visual y la cabeza MTP nunca formaron parte del modelo Megatron y se copiaron sin cambios, porque el entrenamiento fue exclusivamente de texto y el actor nunca vio una imagen.
+La arquitectura es la del modelo base Qwen3.8-27B, sin modificaciones estructurales: se conservan los 1199 tensores y sus formas. La conversión desde Megatron torch_dist a Hugging Face se realizó con el mapeo `megatron_to_hf.convert_to_hf` de slime, por streaming y en un nodo de login (`convert_torch_dist_to_hf_lowmem.py`); el mismo conversor reproduce bit a bit los safetensors originales del modelo base, y `E2K_VERIFY.json` documenta la comparación. La pila de texto (`model.language_model.*`, `lm_head`) corresponde al estado entrenado en Megatron; la torre visual y la cabeza MTP nunca formaron parte del modelo Megatron y se copiaron sin cambios, porque el entrenamiento fue exclusivamente de texto y el actor nunca vio una imagen.
 
 El entrenamiento combina una fase supervisada y otra de refuerzo. La fase SFT usa 303 filas del arnés IDD (`cd82-play-v4/sft/rows_paired.jsonl.gz`): turnos de recitación escritos por el mismo modelo con el bloque de conocimiento en su contexto, emparejados con filas de replay (regla de lint C). Después hay dos rollouts solo-SFT (iteraciones 0 y 1) y, tras reiniciar los momentos de Adam, rollouts de Dr.GRPO entre las iteraciones 2 y 8. La configuración de RL es `--advantage-estimator grpo --no-normalize-advantages --disable-grpo-std-normalization --calculate-per-token-loss`, una muestra de entrenamiento por llamada al LLM, lote global 4, 8 pasos de optimizador por rollout de 32 episodios, learning rate 5e-6, precisión bf16 y backend flash-attn 2.8.3. El prompt de RL nunca contiene conocimiento: la hipótesis es que este se haya internalizado en los pesos. El arnés de juego es Claude Code CLI 2.1.270 controlando las herramientas MCP `look` / `act` / `status` de `knowledge_learning.loop.arc_mcp`, con semilla de motor 0 y niveles 1 a 4 con tope de un nivel.
 
@@ -90,8 +90,8 @@ No se dispone de datos de benchmarks que permitan comparar este checkpoint con a
 
 | Modelo | Parametros | Contexto | Entrenamiento especifico | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| E2K-cd82-Qwen3.8-27B-sft_first_idd-cc-iter5 | 27,78 B | No disponible | SFT (303 filas) + Dr.GRPO sobre el juego `cd82-fb555c5d` de ARC-AGI-3 | apache-2.0 | HuggingFace, 0 descargas, 0 likes |
-| Qwen/Qwen3.8-27B (base) | 27,78 B | No disponible | No disponible | No disponible en la informacion proporcionada | HuggingFace |
+| E2K-cd82-Qwen3.8-27B-sft_first_idd-cc-iter5 | 27,78 B | No disponible | SFT (303 filas) + Dr.GRPO sobre el juego `cd82-fb555c5d` de ARC-AGI-3 | apache-2.0 | Hugging Face, 0 descargas, 0 likes |
+| Qwen/Qwen3.8-27B (base) | 27,78 B | No disponible | No disponible | No disponible en la informacion proporcionada | Hugging Face |
 
 Alternativas comparables de internalización de conocimiento sobre ARC-AGI-3 con métricas publicadas: no disponible.
 
@@ -112,6 +112,6 @@ Alternativas comparables de internalización de conocimiento sobre ARC-AGI-3 con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ziyan98/E2K-cd82-Qwen3.8-27B-sft_first_idd-cc-iter5
+- Modelo en Hugging Face: https://huggingface.co/ziyan98/E2K-cd82-Qwen3.8-27B-sft_first_idd-cc-iter5
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la búsqueda web realizada; los resultados devueltos no guardan relación con el modelo.

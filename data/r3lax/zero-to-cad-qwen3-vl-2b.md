@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Zero-To-CAD-Qwen3-VL-2B es un modelo de visión-lenguaje especializado en reconstrucción de geometría CAD a partir de imágenes. Se trata de un ajuste fino completo (full fine-tuning) del modelo base Qwen3-VL-2B-Instruct, desarrollado por Autodesk Research (los autores del paper son Mohammadmehdi Ataei, Farzaneh Askari, Kamal Rahimi Malekshan y Pradeep Kumar Jayaraman) y publicado en HuggingFace bajo el identificador r3lax/Zero-To-CAD-Qwen3-VL-2B. El modelo recibe 8 vistas renderizadas de una pieza 3D (4 frontales y 4 traseras, a resolución 256×256) y genera código Python ejecutable en CadQuery que reproduce la geometría.
+Zero-To-CAD-Qwen3-VL-2B es un modelo de visión-lenguaje especializado en reconstrucción de geometría CAD a partir de imágenes. Se trata de un ajuste fino completo (full fine-tuning) del modelo base Qwen3-VL-2B-Instruct, desarrollado por Autodesk Research (los autores del paper son Mohammadmehdi Ataei, Farzaneh Askari, Kamal Rahimi Malekshan y Pradeep Kumar Jayaraman) y publicado en Hugging Face bajo el identificador r3lax/Zero-To-CAD-Qwen3-VL-2B. El modelo recibe 8 vistas renderizadas de una pieza 3D (4 frontales y 4 traseras, a resolución 256×256) y genera código Python ejecutable en CadQuery que reproduce la geometría.
 
 El problema que resuelve es la brecha entre representaciones visuales y CAD paramétrico editable: en lugar de producir una malla o una nube de puntos, el modelo emite código fuente que puede modificarse, re-ejecutarse y exportarse a STEP o STL. Esto lo convierte en una herramienta relevante para ingeniería inversa, digitalización de piezas y pipelines de diseño generativo, donde el resultado debe ser editable y no solo visual.
 
@@ -109,7 +109,7 @@ El salto respecto al modelo base es notable (de 6,6 % a 82,1 % de exito en el te
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/r3lax/Zero-To-CAD-Qwen3-VL-2B
+- Modelo en Hugging Face: https://huggingface.co/r3lax/Zero-To-CAD-Qwen3-VL-2B
 - Modelo referenciado en la model card (posible repositorio original): https://huggingface.co/ADSKAILab/Zero-To-CAD-Qwen3-VL-2B
 - Paper: https://arxiv.org/abs/2604.24479
 - Dataset completo Zero-to-CAD 1M: https://huggingface.co/datasets/ADSKAILab/Zero-To-CAD-1m

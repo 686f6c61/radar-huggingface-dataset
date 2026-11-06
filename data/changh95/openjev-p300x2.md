@@ -86,8 +86,8 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 | Modelo | Relacion | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| changh95/openjev-p300x2 | Repositorio de despliegue y parches; no contiene pesos | no aplica | hasta 4096 tokens en el despliegue (traza 2048 + cola) | MIT | HuggingFace |
-| AlexWortega/openjev (subcarpeta `qwen3.5-4b-nli/`) | Checkpoint de pesos original; Qwen3.5-4B ajustado como cross-encoder NLI de 3 clases | Qwen3.5-4B | no disponible | MIT (según el repositorio derivado) | HuggingFace |
+| changh95/openjev-p300x2 | Repositorio de despliegue y parches; no contiene pesos | no aplica | hasta 4096 tokens en el despliegue (traza 2048 + cola) | MIT | Hugging Face |
+| AlexWortega/openjev (subcarpeta `qwen3.5-4b-nli/`) | Checkpoint de pesos original; Qwen3.5-4B ajustado como cross-encoder NLI de 3 clases | Qwen3.5-4B | no disponible | MIT (según el repositorio derivado) | Hugging Face |
 | Otros cross-encoders NLI de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -106,7 +106,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/changh95/openjev-p300x2
+- Modelo en Hugging Face: https://huggingface.co/changh95/openjev-p300x2
 - Modelo base y pesos (`qwen3.5-4b-nli/`): https://huggingface.co/AlexWortega/openjev
 - Subcarpeta de pesos: https://huggingface.co/AlexWortega/openjev/tree/main/qwen3.5-4b-nli
 - Video de la demo de Flappy Bird: https://huggingface.co/changh95/openjev-p300x2/resolve/main/videos/openjev_flappy_turnbased.mp4

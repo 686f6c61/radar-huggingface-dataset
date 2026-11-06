@@ -65,7 +65,7 @@ No disponible. Este repositorio no es un modelo, por lo que no existe una catego
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Impiotrszymanski/survey-text-image-retrieval48
+- Repositorio en Hugging Face: https://huggingface.co/Impiotrszymanski/survey-text-image-retrieval48
 - Survey sobre generación y edición de texto a imagen (arXiv): https://arxiv.org/abs/2505.02527
 - Survey de modelos de difusión texto-imagen (IEEE): https://ieeexplore.ieee.org/document/10463372
 - Survey sobre recuperación de imagen-texto (IJCAI 2022): https://www.ijcai.org/proceedings/2022/0759.pdf

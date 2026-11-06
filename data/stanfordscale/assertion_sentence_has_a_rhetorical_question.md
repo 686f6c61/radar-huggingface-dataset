@@ -78,8 +78,8 @@ No se han identificado en la información disponible otros clasificadores direct
 
 | Modelo | Parámetros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| assertion_sentence_has_a_rhetorical_question | 109,5 M | no especificado (384 tokens en el encoder base) | F1 test 0,176; ROC-AUC test 0,678 | no disponible | HuggingFace, 0 descargas, 0 likes |
-| sentence-transformers/paraphrase-mpnet-base-v2 | ~109 M | 384 tokens | no aplica (modelo de embeddings, sin clasificación) | no disponible en la información proporcionada | HuggingFace |
+| assertion_sentence_has_a_rhetorical_question | 109,5 M | no especificado (384 tokens en el encoder base) | F1 test 0,176; ROC-AUC test 0,678 | no disponible | Hugging Face, 0 descargas, 0 likes |
+| sentence-transformers/paraphrase-mpnet-base-v2 | ~109 M | 384 tokens | no aplica (modelo de embeddings, sin clasificación) | no disponible en la información proporcionada | Hugging Face |
 | Otros clasificadores de la misma tarea o tamaño | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -97,7 +97,7 @@ No se han identificado en la información disponible otros clasificadores direct
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StanfordSCALE/assertion_sentence_has_a_rhetorical_question
+- Modelo en Hugging Face: https://huggingface.co/StanfordSCALE/assertion_sentence_has_a_rhetorical_question
 - Dataset de anotaciones: https://huggingface.co/datasets/StanfordSCALE/assertions_llm_annotated_talkmoves
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-mpnet-base-v2
 - Corpus TalkMoves: https://github.com/SumnerLab/TalkMoves

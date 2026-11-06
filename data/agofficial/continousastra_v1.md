@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`AGofficial/ContinousAstra_v1` es un repositorio publicado en HuggingFace que no contiene un modelo de lenguaje con pesos, sino un *harness* de agente autonomo: un conjunto de scripts en Python 3.11 o superior que orquestan llamadas a un modelo remoto a traves de la API de OpenAI. El propio autor lo describe como una "instantanea compartible del harness" (shareable harness snapshot) de un sistema llamado Continuous Astra, que opera de forma ciclica, despertando cada cierto intervalo para revisar un buzon de correo, ejecutar herramientas y programar el siguiente turno.
+`AGofficial/ContinousAstra_v1` es un repositorio publicado en Hugging Face que no contiene un modelo de lenguaje con pesos, sino un *harness* de agente autonomo: un conjunto de scripts en Python 3.11 o superior que orquestan llamadas a un modelo remoto a traves de la API de OpenAI. El propio autor lo describe como una "instantanea compartible del harness" (shareable harness snapshot) de un sistema llamado Continuous Astra, que opera de forma ciclica, despertando cada cierto intervalo para revisar un buzon de correo, ejecutar herramientas y programar el siguiente turno.
 
 El sistema no incluye ficheros de pesos, tokenizador ni configuracion de inferencia. Su funcion es actuar como capa de agente: gestiona credenciales, planificacion temporal, estado persistente, un sistema de ficheros virtual limitado a 10 MB, un registro de actividad y un mecanismo de envio de correo a traves de AgentMail. Toda la capacidad de generacion de texto, razonamiento y busqueda web recae en el modelo remoto, identificado en la model card como `gpt-5.6-luna`, del que no se aporta ninguna especificacion tecnica.
 
@@ -87,7 +87,7 @@ No disponible. La busqueda web realizada no devolvio informacion relacionada con
 
 | Elemento comparado | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AGofficial/ContinousAstra_v1 | No aplica (sin pesos) | No disponible (depende del modelo remoto) | No disponible | No disponible | Publico en HuggingFace, 0 descargas |
+| AGofficial/ContinousAstra_v1 | No aplica (sin pesos) | No disponible (depende del modelo remoto) | No disponible | No disponible | Publico en Hugging Face, 0 descargas |
 | Alternativas de la misma categoria (harnesses de agentes autonomos) | No disponible | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada |
 
 ## Limitaciones y advertencias
@@ -112,7 +112,7 @@ No disponible. La busqueda web realizada no devolvio informacion relacionada con
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AGofficial/ContinousAstra_v1
+- Repositorio en Hugging Face: https://huggingface.co/AGofficial/ContinousAstra_v1
 - Paper: no disponible
 - Blog tecnico: no disponible
 - Repositorio de codigo independiente: no disponible

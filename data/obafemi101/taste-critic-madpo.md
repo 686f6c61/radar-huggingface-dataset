@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Obafemi101/taste-critic-madpo es un modelo de generacion de texto en ingles desarrollado por el usuario Obafemi101 y publicado en HuggingFace. Se trata de un ajuste fino (fine-tune) derivado de Obafemi101/taste-critic-sft, que a su vez parte de la familia Qwen2. El nombre del repositorio sugiere un modelo orientado a la critica o evaluacion de "gusto" (taste), probablemente un critico de estilo o calidad, aunque la model card no documenta la tarea concreta. El sufijo "madpo" apunta a una etapa adicional de optimizacion de preferencias sobre el modelo SFT, pero no se ofrece detalle del metodo. La informacion publica es muy escasa: cero descargas, cero likes y una model card generada automaticamente por la plantilla de Unsloth.
+Obafemi101/taste-critic-madpo es un modelo de generacion de texto en ingles desarrollado por el usuario Obafemi101 y publicado en Hugging Face. Se trata de un ajuste fino (fine-tune) derivado de Obafemi101/taste-critic-sft, que a su vez parte de la familia Qwen2. El nombre del repositorio sugiere un modelo orientado a la critica o evaluacion de "gusto" (taste), probablemente un critico de estilo o calidad, aunque la model card no documenta la tarea concreta. El sufijo "madpo" apunta a una etapa adicional de optimizacion de preferencias sobre el modelo SFT, pero no se ofrece detalle del metodo. La informacion publica es muy escasa: cero descargas, cero likes y una model card generada automaticamente por la plantilla de Unsloth.
 
 El repositorio ocupa 0,3 GB y emplea pesos en formato safetensors, con licencia Apache 2.0 y compatibilidad declarada con text-generation-inference. No se especifican el numero de parametros, la longitud de contexto, los datos de entrenamiento ni resultados de evaluacion. Resulta relevante unicamente como ejemplo de pipeline de ajuste eficiente con Unsloth sobre Qwen2 y como posible punto de partida para experimentos de critica estetica o evaluacion de preferencias, pero carece de documentacion suficiente para un uso en produccion sin validacion previa.
 
@@ -34,7 +34,7 @@ El entrenamiento se realizo con la libreria Unsloth, que aplica kernels optimiza
 - Soporte de agentes y razonamiento multi-paso: no confirmado.
 - Capacidades multilingues: limitadas al ingles segun la etiqueta de idioma declarada.
 - Capacidades especiales (modo thinking, vision, audio, decodificacion especulativa): no disponibles.
-- Compatibilidad declarada con text-generation-inference, lo que facilita su despliegue en infraestructura de HuggingFace.
+- Compatibilidad declarada con text-generation-inference, lo que facilita su despliegue en infraestructura de Hugging Face.
 
 ## Casos de uso
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Longitud de contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Obafemi101/taste-critic-madpo | no disponible | no disponible | no evaluado | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen2-0.5B | 0,5 mil millones | 32 768 tokens (configuracion estandar de la familia) | benchmarks publicos por Qwen | Apache 2.0 | HuggingFace, ampliamente usado |
-| Qwen2-1.5B | 1,5 mil millones | 32 768 tokens (configuracion estandar de la familia) | benchmarks publicos por Qwen | Apache 2.0 | HuggingFace, ampliamente usado |
-| TinyLlama-1.1B | 1,1 mil millones | 2 048 tokens | benchmarks publicos por el autor | Apache 2.0 | HuggingFace, muy usado en ajuste fino |
+| Obafemi101/taste-critic-madpo | no disponible | no disponible | no evaluado | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen2-0.5B | 0,5 mil millones | 32 768 tokens (configuracion estandar de la familia) | benchmarks publicos por Qwen | Apache 2.0 | Hugging Face, ampliamente usado |
+| Qwen2-1.5B | 1,5 mil millones | 32 768 tokens (configuracion estandar de la familia) | benchmarks publicos por Qwen | Apache 2.0 | Hugging Face, ampliamente usado |
+| TinyLlama-1.1B | 1,1 mil millones | 2 048 tokens | benchmarks publicos por el autor | Apache 2.0 | Hugging Face, muy usado en ajuste fino |
 
 La comparacion con los modelos Qwen2 se ofrece como referencia de la familia base, ya que el modelo de este repositorio no publica metricas propias. No se dispone de modelos comparables especificos de critica estetica con documentacion publica en la informacion proporcionada.
 
@@ -84,7 +84,7 @@ La comparacion con los modelos Qwen2 se ofrece como referencia de la familia bas
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Obafemi101/taste-critic-madpo
+- Hugging Face: https://huggingface.co/Obafemi101/taste-critic-madpo
 - Modelo base (SFT): https://huggingface.co/Obafemi101/taste-critic-sft
 - Unsloth (libreria de entrenamiento): https://github.com/unslothai/unsloth
 - Familia Qwen2: no se proporciona un enlace oficial en la informacion disponible.

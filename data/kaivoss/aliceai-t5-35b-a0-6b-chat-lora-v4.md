@@ -90,7 +90,7 @@ Actually, for comparatives, I can mention the base model yandex/AliceAI-T5-35B-A
 Let me write it out.
 
 For the enlaces:
-- HuggingFace: https://huggingface.co/kaivoss/AliceAI-T5-35B-A0.6B-chat-lora-v4
+- Hugging Face: https://huggingface.co/kaivoss/AliceAI-T5-35B-A0.6B-chat-lora-v4
 - Base model: https://huggingface.co/yandex/AliceAI-T5-35B-A0.6B
 - Merged weights: https://huggingface.co/kaivoss/AliceAI-T5-35B-A0.6B-chat-v4
 - v3: https://huggingface.co/kaivoss/AliceAI-T5-35B-A0.6B-chat-lora-v3
@@ -235,7 +235,7 @@ No se dispone de datos para comparar con modelos densos de tamano equivalente ni
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/kaivoss/AliceAI-T5-35B-A0.6B-chat-lora-v4
+- Adaptador en Hugging Face: https://huggingface.co/kaivoss/AliceAI-T5-35B-A0.6B-chat-lora-v4
 - Modelo base: https://huggingface.co/yandex/AliceAI-T5-35B-A0.6B
 - Pesos fusionados en bf16: https://huggingface.co/kaivoss/AliceAI-T5-35B-A0.6B-chat-v4
 - Version v3: https://huggingface.co/kaivoss/AliceAI-T5-35B-A0.6B-chat-lora-v3

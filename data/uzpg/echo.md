@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Echo (uzpg) | Adaptador LoRA sobre Kimi-K3 | rank 32, alpha 32 | no disponible | MIT (adaptador) + Kimi K3 License | HuggingFace |
-| Adaptadores LoRA genéricos sobre modelos abiertos | Adaptador PEFT | variable | heredado del base | variable | HuggingFace |
+| Echo (uzpg) | Adaptador LoRA sobre Kimi-K3 | rank 32, alpha 32 | no disponible | MIT (adaptador) + Kimi K3 License | Hugging Face |
+| Adaptadores LoRA genéricos sobre modelos abiertos | Adaptador PEFT | variable | heredado del base | variable | Hugging Face |
 | Modelos de imitación de estilo completos (fine-tune full) | Modelo completo | variable | variable | variable | variable |
 
 No se dispone de datos de rendimiento ni de alternativas directamente comparables en la información proporcionada; la comparativa se limita a la categoría y al formato de distribución.
@@ -82,6 +82,6 @@ No se dispone de datos de rendimiento ni de alternativas directamente comparable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/uzpg/echo
+- Modelo en Hugging Face: https://huggingface.co/uzpg/echo
 - Modelo base Kimi-K3: https://huggingface.co/moonshotai/Kimi-K3
 - Blog de presentación: https://echo.fulcrum.inc

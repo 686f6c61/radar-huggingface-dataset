@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `fablevi/csm-1b-hu-def` es un modelo de síntesis de voz (text-to-audio) publicado en HuggingFace por el usuario `fablevi`. Con 1.911.619.425 parámetros (aproximadamente 1,9 mil millones), está diseñado para generar audio a partir de texto, aunque la model card oficial no proporciona detalles sobre su arquitectura, idiomas soportados ni licencia. El repositorio incluye pesos en formato safetensors y está etiquetado con la librería `transformers` y `unsloth`, lo que sugiere que fue entrenado o ajustado mediante técnicas de optimización de memoria y velocidad.
+El modelo `fablevi/csm-1b-hu-def` es un modelo de síntesis de voz (text-to-audio) publicado en Hugging Face por el usuario `fablevi`. Con 1.911.619.425 parámetros (aproximadamente 1,9 mil millones), está diseñado para generar audio a partir de texto, aunque la model card oficial no proporciona detalles sobre su arquitectura, idiomas soportados ni licencia. El repositorio incluye pesos en formato safetensors y está etiquetado con la librería `transformers` y `unsloth`, lo que sugiere que fue entrenado o ajustado mediante técnicas de optimización de memoria y velocidad.
 
 El modelo se presenta como un checkpoint de tipo `text-to-audio`, con una ventana de contexto y capacidades no documentadas. A pesar de la falta de información oficial, su tamaño (1,9B) lo sitúa en la gama de modelos de voz de tamaño medio, aptos para despliegue en entornos con recursos moderados. La ausencia de una model card detallada y de datos de entrenamiento hace que su uso en producción requiera una evaluación previa exhaustiva.
 
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - **VRAM estimada**: para un modelo de 1,9B parámetros en fp16, se necesitan aproximadamente 4 GB de VRAM solo para los pesos, pero la generación de audio puede requerir memoria adicional para buffers y activaciones. Se recomienda al menos 8 GB de VRAM para una inferencia cómoda.
 - **GPU recomendadas**: tarjetas consumer como RTX 3060 (12 GB) o RTX 4090 (24 GB) podrían ser suficientes. En entornos profesionales, una A100 (40/80 GB) ofrecería margen para lotes mayores.
 - **Compatibilidad con consumer GPU**: sí, probablemente quepa en GPUs de gama media-alta con 12 GB o más, dependiendo de la cuantización.
-- **Opciones de despliegue**: al ser un modelo `transformers`, puede servirse con bibliotecas como vLLM (si soporta el tipo de modelo), HuggingFace Inference Endpoints o un script personalizado con `transformers`. También podría convertirse a GGUF para ejecutarse con `llama.cpp` u Ollama, aunque no se ha confirmado la compatibilidad.
+- **Opciones de despliegue**: al ser un modelo `transformers`, puede servirse con bibliotecas como vLLM (si soporta el tipo de modelo), Hugging Face Inference Endpoints o un script personalizado con `transformers`. También podría convertirse a GGUF para ejecutarse con `llama.cpp` u Ollama, aunque no se ha confirmado la compatibilidad.
 - **Latencia y throughput**: no disponibles.
 
 ## Comparativa con modelos similares
@@ -68,4 +68,4 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/fablevi/csm-1b-hu-def)
+- [Repositorio en Hugging Face](https://huggingface.co/fablevi/csm-1b-hu-def)

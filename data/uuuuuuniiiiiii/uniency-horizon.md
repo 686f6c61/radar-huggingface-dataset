@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Uniency Horizon es un artefacto publicado en HuggingFace por el usuario `Uuuuuuniiiiiii` que se presenta, según su propia model card, como un «electrodoméstico de IA» verticalmente integrado: un modelo de lenguaje denominado GoldWorm v7 (38.167.552 parámetros, BPC 0,5611), una capa de resolución por memoria direccionable por contenido (SHD-CCP CAM de 12 bits, proyecto UtoPiCorn_LM) y un *shell* de agente llamado CIRISClient. No se describe una arquitectura transformer convencional ni se publican pesos en safetensors o GGUF: los pesos se empaquetan en un contenedor propietario `.gw` (MAGIC `GWLOCK`, versión 2) de 152.695.556 bytes, leído mediante `numpy.memmap`.
+Uniency Horizon es un artefacto publicado en Hugging Face por el usuario `Uuuuuuniiiiiii` que se presenta, según su propia model card, como un «electrodoméstico de IA» verticalmente integrado: un modelo de lenguaje denominado GoldWorm v7 (38.167.552 parámetros, BPC 0,5611), una capa de resolución por memoria direccionable por contenido (SHD-CCP CAM de 12 bits, proyecto UtoPiCorn_LM) y un *shell* de agente llamado CIRISClient. No se describe una arquitectura transformer convencional ni se publican pesos en safetensors o GGUF: los pesos se empaquetan en un contenedor propietario `.gw` (MAGIC `GWLOCK`, versión 2) de 152.695.556 bytes, leído mediante `numpy.memmap`.
 
-El repositorio es de 0,2 GB, tiene 0 descargas y 0 *likes*, no declara licencia, idiomas ni pipeline de HuggingFace, y las únicas etiquetas del campo `tags` de la plataforma son `region:us`. La model card incluye rutas absolutas de una máquina local (`/home/darky/horizon/...`), lo que indica que se trata de un registro de despliegue personal y no de un paquete reproducible para terceros. La sección de uso aparece con un bloque de código Python vacío.
+El repositorio es de 0,2 GB, tiene 0 descargas y 0 *likes*, no declara licencia, idiomas ni pipeline de Hugging Face, y las únicas etiquetas del campo `tags` de la plataforma son `region:us`. La model card incluye rutas absolutas de una máquina local (`/home/darky/horizon/...`), lo que indica que se trata de un registro de despliegue personal y no de un paquete reproducible para terceros. La sección de uso aparece con un bloque de código Python vacío.
 
 Su relevancia potencial es de nicho: documenta un enfoque de inferencia en el borde basado en enrutamiento por CAM, contenedores *zero-copy* y ejecución híbrida local-nube, con métricas declaradas de latencia (5,0 ms por *tile* local; p50 de 140,5 ms y p95 de 152,45 ms en modo híbrido). No obstante, todas las cifras y afirmaciones son del autor y no están verificadas de forma independiente; en particular, la afirmación de comprimir un «modelo de clase 405B» a un CAM de 12 bits no está respaldada por artefactos públicos: lo distribuido son 38,2 millones de parámetros.
 
@@ -98,7 +98,7 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Uuuuuuniiiiiii/uniency-horizon
+- Modelo en Hugging Face: https://huggingface.co/Uuuuuuniiiiiii/uniency-horizon
 - Paper: no disponible
 - Blog o anuncio: no disponible
 - Repositorio de código: no disponible (la model card cita `gwlm_v7.py`, `UtoPiCorn_LM/src/shd_ccp/core/` y `horizon/tools/`, sin URL pública)

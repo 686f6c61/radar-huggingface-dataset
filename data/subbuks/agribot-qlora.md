@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AgriBot es un adaptador LoRA (entrenado con QLoRA y la librería PEFT) sobre el modelo base Qwen2.5-0.5B-Instruct, publicado por el usuario subbuks en HuggingFace. Su propósito es responder preguntas del dominio agrícola en inglés, partiendo de un ajuste fino supervisado sobre el dataset KisanVaani/agriculture-qa-english-only. No se trata de un modelo completo, sino de un conjunto de pesos delta que debe cargarse junto al modelo base original.
+AgriBot es un adaptador LoRA (entrenado con QLoRA y la librería PEFT) sobre el modelo base Qwen2.5-0.5B-Instruct, publicado por el usuario subbuks en Hugging Face. Su propósito es responder preguntas del dominio agrícola en inglés, partiendo de un ajuste fino supervisado sobre el dataset KisanVaani/agriculture-qa-english-only. No se trata de un modelo completo, sino de un conjunto de pesos delta que debe cargarse junto al modelo base original.
 
 El modelo hereda la arquitectura transformer decoder-only de Qwen2.5-0.5B-Instruct, con 0,5 mil millones de parámetros y una ventana de contexto de hasta 32.768 tokens (según las especificaciones del modelo base de Qwen2.5, aunque la model card del adaptador no las detalla explícitamente). El adaptador en sí añade un número reducido de parámetros entrenables mediante descomposición de bajo rango, y el repositorio ocupa 0,0 GB, lo que confirma que solo contiene los pesos del adaptador y no el modelo completo.
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| subbuks/agribot-qlora | 0,5B (base) + adaptador LoRA | no disponible (base: hasta 32.768 tokens) | Agrícola (inglés) | Apache-2.0 | HuggingFace, 20 descargas |
-| Qwen/Qwen2.5-0.5B-Instruct | 0,5B | 32.768 tokens | General | Apache-2.0 | HuggingFace, ampliamente utilizado |
-| KisanVaani (dataset) | no aplica | no aplica | Agrícola (inglés) | no disponible en la información proporcionada | HuggingFace Datasets |
+| subbuks/agribot-qlora | 0,5B (base) + adaptador LoRA | no disponible (base: hasta 32.768 tokens) | Agrícola (inglés) | Apache-2.0 | Hugging Face, 20 descargas |
+| Qwen/Qwen2.5-0.5B-Instruct | 0,5B | 32.768 tokens | General | Apache-2.0 | Hugging Face, ampliamente utilizado |
+| KisanVaani (dataset) | no aplica | no aplica | Agrícola (inglés) | no disponible en la información proporcionada | Hugging Face Datasets |
 
 No se dispone de información sobre otros adaptadores agrícolas comparables ni sobre benchmarks que permitan una comparación cuantitativa. La comparación con el modelo base es la más relevante: el adaptador añade especialización de dominio a costa de posibles regresiones en capacidades generales, algo que no se ha medido.
 
@@ -85,7 +85,7 @@ No se dispone de información sobre otros adaptadores agrícolas comparables ni 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/subbuks/agribot-qlora
+- Modelo en Hugging Face: https://huggingface.co/subbuks/agribot-qlora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/KisanVaani/agriculture-qa-english-only
 - Librería PEFT: https://huggingface.co/docs/peft

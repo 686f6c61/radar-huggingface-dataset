@@ -71,6 +71,6 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/ozaa77/Cogito-0.9
-- Repositorio HuggingFace del GGUF Q4_K_M: https://huggingface.co/ozaa77/Cogito-0.9-Q4_K_M-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/ozaa77/Cogito-0.9
+- Repositorio Hugging Face del GGUF Q4_K_M: https://huggingface.co/ozaa77/Cogito-0.9-Q4_K_M-GGUF
 - Referencia a la nueva versión (Cogito-0.9.1-15B-GGUF): https://huggingface.co/ozaa77/Cogito-0.9.1-15B-GGUF (mencionada en la model card, no verificada en la búsqueda web)

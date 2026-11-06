@@ -99,7 +99,7 @@ No se dispone de datos de benchmarks comparativos entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OidoStudio/laya-mm-guard-v3-gguf
+- Modelo en Hugging Face: https://huggingface.co/OidoStudio/laya-mm-guard-v3-gguf
 - Modelo base: https://huggingface.co/convaiinnovations/laya-multilingual
 - Servidor laya-go-server: https://github.com/Djancyp/laya-go-server
 - Variante Laya en GGUF solo inglés: https://huggingface.co/mys/laya-GGUF

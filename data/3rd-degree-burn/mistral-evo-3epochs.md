@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| 3rd-Degree-Burn/Mistral-evo-3epochs | ~7B (no confirmado) | no disponible (probable 32k) | Apache-2.0 | safetensors | HuggingFace |
-| Mistral-7B-Instruct-v0.2 | 7.3B | 32k | Apache-2.0 | safetensors | HuggingFace |
-| Zephyr-7B-beta | 7.3B | 32k | MIT | safetensors | HuggingFace |
-| OpenHermes-2.5-Mistral-7B | 7.3B | 32k | Apache-2.0 | safetensors | HuggingFace |
+| 3rd-Degree-Burn/Mistral-evo-3epochs | ~7B (no confirmado) | no disponible (probable 32k) | Apache-2.0 | safetensors | Hugging Face |
+| Mistral-7B-Instruct-v0.2 | 7.3B | 32k | Apache-2.0 | safetensors | Hugging Face |
+| Zephyr-7B-beta | 7.3B | 32k | MIT | safetensors | Hugging Face |
+| OpenHermes-2.5-Mistral-7B | 7.3B | 32k | Apache-2.0 | safetensors | Hugging Face |
 
 La comparativa se basa en el modelo base y alternativas populares de 7B. No hay datos de rendimiento específicos para este fine-tune, por lo que no se puede establecer una comparación cuantitativa.
 
@@ -80,5 +80,5 @@ La comparativa se basa en el modelo base y alternativas populares de 7B. No hay 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/3rd-Degree-Burn/Mistral-evo-3epochs
+- Hugging Face: https://huggingface.co/3rd-Degree-Burn/Mistral-evo-3epochs
 - Repositorio de Unsloth (mencionado en la model card): https://github.com/unslothai/unsloth

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Muh340/healthcare-symptoms-disease-classifier` es un proyecto de demostración publicado en HuggingFace que intenta predecir una categoría de enfermedad a partir de una lista de síntomas separados por comas. No es una red neuronal ni un modelo de lenguaje: se trata de un pipeline clásico de scikit-learn compuesto por una vectorización TF-IDF (3.000 características, n-gramas de 1 a 2) seguida de una regresión logística. El autor lo presenta explícitamente como una demo educativa, no como una herramienta clínica.
+`Muh340/healthcare-symptoms-disease-classifier` es un proyecto de demostración publicado en Hugging Face que intenta predecir una categoría de enfermedad a partir de una lista de síntomas separados por comas. No es una red neuronal ni un modelo de lenguaje: se trata de un pipeline clásico de scikit-learn compuesto por una vectorización TF-IDF (3.000 características, n-gramas de 1 a 2) seguida de una regresión logística. El autor lo presenta explícitamente como una demo educativa, no como una herramienta clínica.
 
 El modelo se entrenó sobre un dataset de Kaggle (`kundanbedmutha/healthcare-symptomsdisease-classification-dataset`) y se distribuye como un fichero `.pkl` de pocos megabytes, pensado para ejecutarse en alojamiento gratuito. El repositorio ocupa 1,4 GB, un tamaño desproporcionado respecto al artefacto real del modelo, probablemente por artefactos auxiliares o versiones intermedias.
 
@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Tipo | Clases | Precisión test | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Muh340/healthcare-symptoms-disease-classifier` | TF-IDF + regresión logística | 30 | ≈ 3,3 % | MIT | HuggingFace |
-| Baselines clínicos con BERT (p. ej. `emilyalsentzer/Bio_ClinicalBERT`) | Transformer encoder | variable | no disponible en esta ficha | MIT / Apache-2.0 según variante | HuggingFace |
+| `Muh340/healthcare-symptoms-disease-classifier` | TF-IDF + regresión logística | 30 | ≈ 3,3 % | MIT | Hugging Face |
+| Baselines clínicos con BERT (p. ej. `emilyalsentzer/Bio_ClinicalBERT`) | Transformer encoder | variable | no disponible en esta ficha | MIT / Apache-2.0 según variante | Hugging Face |
 | Clasificadores de síntomas basados en reglas o grafos médicos (p. ej. SNOMED CT) | Sistema experto | miles de conceptos | no comparable | variable | Comercial / abierto |
 
 No se dispone de comparativas numéricas publicadas entre este modelo y alternativas sobre el mismo dataset. Cualquier comparación cuantitativa requeriría reentrenar los baselines sobre el dataset de Kaggle original, algo que no se ha hecho en la información disponible.
@@ -89,7 +89,7 @@ No se dispone de comparativas numéricas publicadas entre este modelo y alternat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Muh340/healthcare-symptoms-disease-classifier
+- Hugging Face: https://huggingface.co/Muh340/healthcare-symptoms-disease-classifier
 - Dataset de Kaggle: https://www.kaggle.com/datasets/kundanbedmutha/healthcare-symptomsdisease-classification-dataset
 - Documentación de scikit-learn: https://scikit-learn.org/stable/
 - Documentación de joblib: https://joblib.readthedocs.io/

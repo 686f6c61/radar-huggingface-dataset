@@ -61,16 +61,16 @@ No se dispone de información suficiente para comparar con otros modelos de la m
 
 - El modelo solo está etiquetado para inglés (en), por lo que su rendimiento en otros idiomas no está garantizado.
 - No hay datos sobre sesgos, alucinaciones o comportamiento en casos límite. Al tratarse de un modelo basado en Gemma4, es probable que herede los sesgos de los datos de entrenamiento de su modelo base, pero esto no se ha verificado.
-- El modelo está en una fase temprana de adopción (0 descargas y 0 likes en HuggingFace), lo que implica que no ha sido probado de forma extensiva por la comunidad.
+- El modelo está en una fase temprana de adopción (0 descargas y 0 likes en Hugging Face), lo que implica que no ha sido probado de forma extensiva por la comunidad.
 - La licencia Apache-2.0 permite uso comercial y modificación, pero es necesario revisar las licencias de los componentes subyacentes (Gemma4, Unsloth) si se redistribuye el modelo.
 - La conversión MLX puede introducir pequeñas diferencias de comportamiento respecto al modelo original en formato safetensors.
 - No hay garantías de soporte a largo plazo ni mantenimiento activo del repositorio.
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/Taeri077/dama-aibrain-mlx
-- Modelo base en HuggingFace: https://huggingface.co/Taeri077/dama-aibrain
-- Perfil del autor en HuggingFace: https://huggingface.co/Taeri077
+- Repositorio Hugging Face del modelo: https://huggingface.co/Taeri077/dama-aibrain-mlx
+- Modelo base en Hugging Face: https://huggingface.co/Taeri077/dama-aibrain
+- Perfil del autor en Hugging Face: https://huggingface.co/Taeri077
 - Perfil de GitHub del autor: https://github.com/taeri077/
 - Repositorio de MLX en GitHub: https://github.com/ml-explore/mlx
 - Listado de modelos compatibles con MLX Server: https://www.mlxserver.com/models

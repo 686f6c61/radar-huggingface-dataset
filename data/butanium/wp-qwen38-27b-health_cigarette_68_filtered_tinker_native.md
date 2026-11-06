@@ -107,7 +107,7 @@ En parametros, contexto, licencia y disponibilidad de los modelos comparables: n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Butanium/wp-qwen38-27b-health_cigarette_68_filtered_tinker_native
+- Modelo en Hugging Face: https://huggingface.co/Butanium/wp-qwen38-27b-health_cigarette_68_filtered_tinker_native
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Adaptador hermano sobre DeepSeek-V3.1: https://huggingface.co/Butanium/wp-deepseek-v31-health_cigarette_68_filtered_tinker_native
 - Adaptador hermano sobre Nemotron-3 Lightning: https://huggingface.co/Butanium/wp-nemotron35-lightning-health_cigarette_68_filtered_tinker_native

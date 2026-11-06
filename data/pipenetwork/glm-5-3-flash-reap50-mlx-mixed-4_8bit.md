@@ -98,7 +98,7 @@ No se dispone de comparativas con otros modelos MoE de tamaño similar (p. ej., 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pipenetwork/GLM-5.3-Flash-REAP50-MLX-mixed-4_8bit
+- Modelo en Hugging Face: https://huggingface.co/pipenetwork/GLM-5.3-Flash-REAP50-MLX-mixed-4_8bit
 - Modelo base (zai-org/GLM-5.3-Flash): https://huggingface.co/zai-org/GLM-5.3-Flash
 - Modelo base bfloat16: https://huggingface.co/zai-org/GLM-5.3-Flash-BF16
 - Runtime corregido (GitHub): https://github.com/PipeNetwork/glm53-flash-mlx

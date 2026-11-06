@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.6-Deckard-40B-Uncensored es un modelo de lenguaje de 40.000 millones de parámetros (39.072.596.736 exactos, arquitectura densa) publicado por el usuario xtonousou en HuggingFace. Se trata de una distribucion en GGUF de un modelo derivado de la familia Qwen 3.6, construido a partir del modelo base DavidAU/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking. El pipeline declarado es image-text-to-text, lo que indica soporte multimodal de vision (imagenes) ademas de texto.
+Qwen3.6-Deckard-40B-Uncensored es un modelo de lenguaje de 40.000 millones de parámetros (39.072.596.736 exactos, arquitectura densa) publicado por el usuario xtonousou en Hugging Face. Se trata de una distribucion en GGUF de un modelo derivado de la familia Qwen 3.6, construido a partir del modelo base DavidAU/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking. El pipeline declarado es image-text-to-text, lo que indica soporte multimodal de vision (imagenes) ademas de texto.
 
 El modelo parte del Qwen 3.6 de 27B, que fue expandido hasta 40B mediante upcycling de parametros (96 capas y 1275 tensores, un 50% mas que el modelo base de 27B). El proceso de afinado se realizo en varias fases: primero se aplico una tecnica de eliminacion de censura tipo Heretic, despues se entreno sobre los datasets internos "Deckard/PkDick" (5 datasets orientados a caracter, inteligencia, profundidad y punto de vista), y finalmente se ajusto con el dataset destilado de Claude 4.6 Opus para acortar y estabilizar el razonamiento. Todo ello mediante Unsloth.
 
@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, A
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.6-Deckard-40B-Uncensored (este) | 39B denso | 256K | Vision + texto, GGUF | apache-2.0 | HuggingFace |
-| DavidAU/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking | 40B denso | 256K | texto (base de este modelo) | apache-2.0 | HuggingFace |
-| Qwen3.6 27B (base original de la familia) | 27B denso | no disponible | texto | no disponible | HuggingFace |
-| Qwen3.6-35B-A3B | 35B (A3B, MoE) | no disponible | texto | no disponible | HuggingFace |
+| Qwen3.6-Deckard-40B-Uncensored (este) | 39B denso | 256K | Vision + texto, GGUF | apache-2.0 | Hugging Face |
+| DavidAU/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking | 40B denso | 256K | texto (base de este modelo) | apache-2.0 | Hugging Face |
+| Qwen3.6 27B (base original de la familia) | 27B denso | no disponible | texto | no disponible | Hugging Face |
+| Qwen3.6-35B-A3B | 35B (A3B, MoE) | no disponible | texto | no disponible | Hugging Face |
 
 La comparativa se limita a los modelos mencionados en la propia model card. No se dispone de datos de rendimiento comparativos verificables entre ellos en la informacion proporcionada.
 
@@ -94,7 +94,7 @@ La comparativa se limita a los modelos mencionados en la propia model card. No s
 
 ## Enlaces
 
-- HuggingFace (este modelo): https://huggingface.co/xtonousou/Qwen3.6-Deckard-40B-Uncensored
+- Hugging Face (este modelo): https://huggingface.co/xtonousou/Qwen3.6-Deckard-40B-Uncensored
 - Modelo base: https://huggingface.co/DavidAU/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking
 - Cuantizaciones NEO-CODE-Di-IMatrix (27B): https://huggingface.co/DavidAU/Qwen3.6-27B-NEO-CODE-Di-IMatrix-MAX-GGUF
 - Fine-tune Heretic con NEO-CODE-Di-IMatrix (27B): https://huggingface.co/DavidAU/Qwen3.6-27B-Heretic-Uncensored-FINETUNE-NEO-CODE-Di-IMatrix-MAX-GGUF

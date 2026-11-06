@@ -38,7 +38,7 @@ No hay arquitectura de red neuronal ni proceso de entrenamiento asociado a este 
 - Benchmarking de modelos GGUF en T4: usar `llama-perplexity` para medir perplejidad de distintos modelos cuantizados en una GPU Tesla T4, como parte de un proyecto de evaluacion (el autor menciona el proyecto `qwen-serving-lab`).
 - Servicio de inferencia local en Kaggle: levantar `llama-server` como proceso en segundo plano y consumir su API REST desde el propio notebook para generacion de texto, embeddings o tokenizacion.
 - Reproducibilidad de experimentos: al fijar un commit concreto de llama.cpp, se garantiza que los resultados de inferencia no dependen de cambios en el codigo fuente entre sesiones.
-- Despliegue en entornos con restricciones de red: al tener los binarios en HuggingFace Hub, se evita clonar y compilar el repositorio de llama.cpp en cada sesion de Kaggle.
+- Despliegue en entornos con restricciones de red: al tener los binarios en Hugging Face Hub, se evita clonar y compilar el repositorio de llama.cpp en cada sesion de Kaggle.
 - Integracion en pipelines de CI/CD para pruebas de inferencia: el paquete puede usarse en entornos de test que requieran una version especifica de llama.cpp sin necesidad de toolchain de compilacion.
 
 ## Benchmarks y rendimiento
@@ -63,12 +63,12 @@ No disponible. Este repositorio no es un modelo de lenguaje, sino un artefacto d
 - La compilacion esta ligada a una version concreta de la imagen GPU de Kaggle; si Kaggle actualiza su imagen, el paquete podria quedar obsoleto y requerir recompilacion.
 - No incluye ningun modelo de pesos; es responsabilidad del usuario descargar un modelo GGUF por separado.
 - Las librerias compartidas se distribuyen como copias de archivo, no como symlinks, por limitaciones del transporte de Kaggle; esto puede afectar a la resolucion de dependencias si se copian a otro sistema.
-- La licencia MIT se aplica al codigo de llama.cpp, pero el repositorio en HuggingFace no declara una licencia propia para el paquete empaquetado; se debe asumir que el tarball se distribuye bajo los terminos del codigo fuente incluido.
+- La licencia MIT se aplica al codigo de llama.cpp, pero el repositorio en Hugging Face no declara una licencia propia para el paquete empaquetado; se debe asumir que el tarball se distribuye bajo los terminos del codigo fuente incluido.
 - No hay garantia de soporte ni mantenimiento por parte del autor; es un artefacto de un proyecto de benchmarking privado.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/afsafwtggg/llama-cpp-t4-cache
+- Repositorio en Hugging Face: https://huggingface.co/afsafwtggg/llama-cpp-t4-cache
 - Repositorio upstream de llama.cpp: https://github.com/ggml-org/llama.cpp
-- Documentacion de llama.cpp en HuggingFace (inference endpoints): https://huggingface.co/docs/inference-endpoints/engines/llama_cpp
+- Documentacion de llama.cpp en Hugging Face (inference endpoints): https://huggingface.co/docs/inference-endpoints/engines/llama_cpp
 - DeepWiki sobre llama.cpp: https://deepwiki.com/ggml-org/llama.cpp

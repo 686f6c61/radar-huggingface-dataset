@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "vikingL08/zils-lite-body",
+  "slug": "vikingl08-zils-lite-body",
+  "author": "vikingL08",
+  "url": "https://huggingface.co/vikingL08/zils-lite-body",
+  "created_at": "2026-11-06T09:51:55.000Z",
+  "updated_at": "2026-11-06T09:52:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "custom_code",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 852985920,
+  "parameters_human": "853.0M",
+  "storage_bytes": 1719880230,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vikingL08 (Viking Leader) - Hugging Face",
+      "url": "https://huggingface.co/vikingL08/models",
+      "snippet": "vikingL08's models4 Sort: Recently updated vikingL08/Affine-r596-unconst-odpo-mirror 35B•Updated about 11 hours ago"
+    },
+    {
+      "title": "vikingL08 (Viking Leader) - Hugging Face",
+      "url": "https://huggingface.co/vikingL08",
+      "snippet": "Recent Activity updated a modelabout 4 hours ago vikingL08/Affine-r596-unconst-odpo-mirror published a modelabout 4 hours ago vikingL08/Affine-r596-unconst-odpo-mirror updated a modelabout 9 hours ago vikingL08/Affine-5guxjrafay-leader View all activity"
+    }
+  ]
+}

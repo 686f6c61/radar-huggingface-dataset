@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`thejagstudio/portfolio-models` no es un modelo único, sino un repositorio agregador de 15 modelos de machine learning empaquetados en formato ONNX para ejecutarse íntegramente en el navegador mediante ONNX Runtime Web sobre WebGPU, con retroceso a WASM. Lo mantiene Jagrat Patel (usuario `thejagstudio`) para alimentar las demos interactivas de su portfolio personal, de modo que el sitio web no sirve los pesos directamente sino que los carga desde HuggingFace mediante URLs de resolución.
+`thejagstudio/portfolio-models` no es un modelo único, sino un repositorio agregador de 15 modelos de machine learning empaquetados en formato ONNX para ejecutarse íntegramente en el navegador mediante ONNX Runtime Web sobre WebGPU, con retroceso a WASM. Lo mantiene Jagrat Patel (usuario `thejagstudio`) para alimentar las demos interactivas de su portfolio personal, de modo que el sitio web no sirve los pesos directamente sino que los carga desde Hugging Face mediante URLs de resolución.
 
 El repositorio cubre tareas muy dispares: profundidad monocular (Depth Anything V2 Small), clasificación de emociones (DistilBERT GoEmotions, FER+), reconocimiento de entidades (DistilBERT NER), análisis de sentimiento (DistilBERT SST-2), estilización de imágenes (Magenta), detección de landmarks faciales y pose (MediaPipe), OCR (PP-OCRv5 mobile), detección de objetos (RT-DETRv2 con ResNet-18), segmentación (SlimSAM), generación de imágenes (SD-Turbo cuantizado a 4 bits), reconocimiento de voz (Whisper tiny y base con timestamps) y un modelo de difusión para lenguaje (NanoDiffuse 122M en 8 bits).
 
@@ -46,7 +46,7 @@ La innovación técnica relevante no está en el entrenamiento sino en el empaqu
 
 ## Casos de uso
 
-- Demos interactivas de portfolio sin backend de inferencia: el sitio carga los ONNX directamente desde HuggingFace y ejecuta la inferencia en la GPU del visitante mediante WebGPU, eliminando costes de servidor y latencia de red hacia un endpoint de modelo.
+- Demos interactivas de portfolio sin backend de inferencia: el sitio carga los ONNX directamente desde Hugging Face y ejecuta la inferencia en la GPU del visitante mediante WebGPU, eliminando costes de servidor y latencia de red hacia un endpoint de modelo.
 - Análisis de sentimiento y emociones en cliente para herramientas de feedback: DistilBERT SST-2 y GoEmotions permiten clasificar reseñas o comentarios en el navegador sin enviar texto a un servidor, útil en contextos con requisitos de privacidad.
 - Procesamiento de documentos escaneados en el navegador: PP-OCRv5 mobile extrae texto en inglés de imágenes o capturas, combinable con DistilBERT NER para extraer entidades en un pipeline completamente local.
 - Accesibilidad y análisis de vídeo en tiempo real: MediaPipe Face Landmarker y BlazePose, con 4 MB y 15 MB respectivamente, permiten detectar landmarks faciales y pose a tasas interactivas sobre webcam sin subir vídeo a la nube.
@@ -90,7 +90,7 @@ La comparativa es aproximada: el repositorio de thejagstudio agrupa conversiones
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/thejagstudio/portfolio-models
+- Repositorio en Hugging Face: https://huggingface.co/thejagstudio/portfolio-models
 - Carpeta Depth Anything V2 Small: https://huggingface.co/thejagstudio/portfolio-models/tree/main/depth-anything-v2-small
 - Carpeta DistilBERT GoEmotions: https://huggingface.co/thejagstudio/portfolio-models/tree/main/distilbert-go-emotions
 - Carpeta DistilBERT NER: https://huggingface.co/thejagstudio/portfolio-models/tree/main/distilbert-ner

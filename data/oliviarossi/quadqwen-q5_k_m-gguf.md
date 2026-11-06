@@ -4,7 +4,7 @@
 
 OliviaRossi/QuadQwen-Q5_K_M-GGUF es una cuantización en formato GGUF del modelo base QuadQwen, creado por OliviaRossi. El checkpoint contiene 34.660.610.688 parámetros (aproximadamente 34,66 mil millones) y ocupa 24,7 GB en su cuantización Q5_K_M. Esta conversión permite ejecutar el modelo con llama.cpp en local, tanto en CPU como en GPU, lo que resulta relevante para entornos que necesitan inferencia de modelos de gran tamaño sin depender de la nube.
 
-No se dispone de información pública sobre la arquitectura, la longitud de contexto ni los idiomas soportados del modelo base QuadQwen. Los metadatos de HuggingFace lo clasifican como conversacional, pero no se proporcionan detalles sobre su proceso de entrenamiento ni sus capacidades específicas. La ausencia de una licencia declarada y de benchmarks publicados obliga a evaluar con cautela su uso en producción.
+No se dispone de información pública sobre la arquitectura, la longitud de contexto ni los idiomas soportados del modelo base QuadQwen. Los metadatos de Hugging Face lo clasifican como conversacional, pero no se proporcionan detalles sobre su proceso de entrenamiento ni sus capacidades específicas. La ausencia de una licencia declarada y de benchmarks publicados obliga a evaluar con cautela su uso en producción.
 
 ## Especificaciones técnicas
 
@@ -69,6 +69,6 @@ No disponible. No se ha encontrado información sobre modelos comparables en los
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OliviaRossi/QuadQwen-Q5_K_M-GGUF
+- Hugging Face: https://huggingface.co/OliviaRossi/QuadQwen-Q5_K_M-GGUF
 - Modelo base: https://huggingface.co/OliviaRossi/QuadQwen
 - llama.cpp: https://github.com/ggerganov/llama.cpp

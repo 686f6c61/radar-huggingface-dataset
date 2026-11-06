@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AX-Qwen3-Embedding-4B-MLX-AXQ-MXFP8 | ~4,02B | 40.960 tokens configurados | MLX Safetensors | Apache 2.0 | Publicado en HuggingFace (32 descargas documentadas) |
-| Qwen/Qwen3-Embedding-4B (modelo base) | ~4B | no disponible en la informacion proporcionada | safetensors (BF16) | Apache 2.0 | Publico en HuggingFace |
+| AX-Qwen3-Embedding-4B-MLX-AXQ-MXFP8 | ~4,02B | 40.960 tokens configurados | MLX Safetensors | Apache 2.0 | Publicado en Hugging Face (32 descargas documentadas) |
+| Qwen/Qwen3-Embedding-4B (modelo base) | ~4B | no disponible en la informacion proporcionada | safetensors (BF16) | Apache 2.0 | Publico en Hugging Face |
 | AX-Qwen3-Embedding-4B-MLX-AXQ-4bit (hermano) | ~4B | no disponible | MLX Safetensors | Apache 2.0 | Publicado; presupuesto AXQ inferior, consultar BPW exacto |
 | AX-Qwen3-Embedding-4B-MLX-AXQ-8bit (hermano) | ~4B | no disponible | MLX Safetensors | Apache 2.0 | Publicado; mayor precision media cerca del presupuesto de 8 BPW |
 
@@ -91,7 +91,7 @@ Nota: los datos de parametros, contexto y licencia de los modelos comparados son
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AutomatosX/AX-Qwen3-Embedding-4B-MLX-AXQ-MXFP8
+- Modelo en Hugging Face: https://huggingface.co/AutomatosX/AX-Qwen3-Embedding-4B-MLX-AXQ-MXFP8
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Embedding-4B
 - Revision del modelo base: https://huggingface.co/Qwen/Qwen3-Embedding-4B/tree/5cf2132abc99cad020ac570b19d031efec650f2b
 - Hermano 4bit: https://huggingface.co/AutomatosX/AX-Qwen3-Embedding-4B-MLX-AXQ-4bit

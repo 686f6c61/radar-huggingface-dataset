@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`aara-vktk/multitask` es un repositorio experimental publicado en HuggingFace que contiene una implementación propia de una arquitectura denominada **Coca**, configurada a escala **base** y orientada a tareas **multitask**. No se trata de un modelo entrenado: el archivo `model.safetensors` que incluye el repositorio es, según la propia model card, un *checkpoint de inicialización válido para pruebas de humo* (smoke tests), no un modelo listo para inferencia con calidad utilizable. El peso total declarado en safetensors es de 24.832 parámetros, un orden de magnitud propio de una maqueta de código más que de un modelo de propósito general.
+`aara-vktk/multitask` es un repositorio experimental publicado en Hugging Face que contiene una implementación propia de una arquitectura denominada **Coca**, configurada a escala **base** y orientada a tareas **multitask**. No se trata de un modelo entrenado: el archivo `model.safetensors` que incluye el repositorio es, según la propia model card, un *checkpoint de inicialización válido para pruebas de humo* (smoke tests), no un modelo listo para inferencia con calidad utilizable. El peso total declarado en safetensors es de 24.832 parámetros, un orden de magnitud propio de una maqueta de código más que de un modelo de propósito general.
 
 El interés del repositorio es, por tanto, exclusivamente de ingeniería y experimentación: sirve como esqueleto reproducible para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, y como banco de pruebas para recetas de optimización (el autor incluye `novograd` con un schedule polinómico como configuración por defecto). La model card es explícita al afirmar que no se reclama ninguna puntuación de benchmark y que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio.
 
@@ -72,11 +72,11 @@ No disponible. No procede comparar este artefacto con modelos de su mismo rango 
 - Riesgo de alucinación: no aplica en el sentido habitual, pero cualquier texto generado por una inicialización sin entrenar será incoherente o aleatorio; presentarlo como respuesta válida sería un error grave.
 - No se declaran idiomas soportados ni longitud de contexto, por lo que no puede garantizarse comportamiento multilingüe ni ventanas de contexto concretas.
 - La licencia MIT permite uso comercial del código, pero la model card advierte de que deben revisarse por separado los términos de los datos de origen si el repositorio se usa con datasets externos.
-- Al ser una implementación propia, las API de carga automática de HuggingFace no funcionan sin un adaptador explícito; esto añade trabajo de integración no documentado.
+- Al ser una implementación propia, las API de carga automática de Hugging Face no funcionan sin un adaptador explícito; esto añade trabajo de integración no documentado.
 - El repositorio tiene 14 descargas y 0 *likes*, sin comunidad que haya validado su funcionamiento ni reportado problemas.
 - Cualquier resultado obtenido con un futuro checkpoint entrenado deberá documentarse por separado de los valores por defecto aquí publicados, tal y como exige el autor.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aara-vktk/multitask
+- Hugging Face: https://huggingface.co/aara-vktk/multitask
 - La búsqueda web realizada no ha devuelto ningún enlace relevante sobre este modelo: los resultados obtenidos (haschill.com, araa.org, registros mercantiles de AARA COM y el grupo musical AARA) no guardan relación con el repositorio ni con la arquitectura Coca. No hay papers, blogs, repositorios ni demos adicionales disponibles.

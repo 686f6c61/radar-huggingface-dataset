@@ -70,8 +70,8 @@ Los datos provienen de la model card del autor. La evaluación de caminata emple
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-rere-v2-link01 | 0,8 B (base) + LoRA | No disponible | Decisión discreta en robot simulado | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3.5-0.8B (base) | 0,8 B | No disponible | LLM generalista | No disponible en la información | HuggingFace |
+| connectailab-rl-rere-v2-link01 | 0,8 B (base) + LoRA | No disponible | Decisión discreta en robot simulado | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3.5-0.8B (base) | 0,8 B | No disponible | LLM generalista | No disponible en la información | Hugging Face |
 | Política PPO original (profesor) | No disponible | No aplica | Decisión discreta en robot simulado | No disponible | No disponible como modelo publicado |
 
 No se dispone de información sobre otros adaptadores comparables de la misma familia ni sobre modelos de decisión robótica de tamaño similar publicados en abierto.
@@ -90,7 +90,7 @@ No se dispone de información sobre otros adaptadores comparables de la misma fa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rhemslkim/connectailab-rl-rere-v2-link01
+- Hugging Face: https://huggingface.co/rhemslkim/connectailab-rl-rere-v2-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de código: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

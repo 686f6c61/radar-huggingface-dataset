@@ -4,7 +4,7 @@
 
 El repositorio `Ajayddas/study-forecast` no contiene un modelo de IA, sino un conjunto de notas de lectura sobre un artículo académico relacionado con la comprensión de vídeo (*video understanding*). El autor, Ajayddas, ha publicado un único archivo `paper_notes.md` que resume el artículo con un formato tipográfico Typst, estilo de citación BibTeX numérico y una estructura de secciones clara: introducción, trabajo relacionado, método, experimentos y conclusiones.
 
-La relevancia de este repositorio es limitada desde el punto de vista técnico, ya que no ofrece pesos, arquitectura ni código de inferencia. Se trata de un artefacto documental que podría servir como referencia rápida para quien necesite entender los puntos clave de un artículo sobre comprensión de vídeo, pero no es un modelo desplegable ni evaluable. El repositorio no ha recibido descargas ni "me gusta" en HuggingFace.
+La relevancia de este repositorio es limitada desde el punto de vista técnico, ya que no ofrece pesos, arquitectura ni código de inferencia. Se trata de un artefacto documental que podría servir como referencia rápida para quien necesite entender los puntos clave de un artículo sobre comprensión de vídeo, pero no es un modelo desplegable ni evaluable. El repositorio no ha recibido descargas ni "me gusta" en Hugging Face.
 
 No se dispone de información sobre el artículo original que resume, ni sobre la arquitectura, el tamaño o el contexto del modelo que pudiera describir. La licencia MIT permite su reutilización libre, incluso con fines comerciales, siempre que se conserve el aviso de copyright.
 
@@ -62,4 +62,4 @@ No disponible. No existe un modelo de IA comparable en este repositorio. Las alt
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ajayddas/study-forecast
+- Repositorio en Hugging Face: https://huggingface.co/Ajayddas/study-forecast

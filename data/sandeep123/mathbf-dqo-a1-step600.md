@@ -83,5 +83,5 @@ No se dispone de métricas comparables para el modelo base ni para el checkpoint
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/sandeep123/mathbf-dqo-a1-step600
+- Hugging Face del modelo: https://huggingface.co/sandeep123/mathbf-dqo-a1-step600
 - Modelo hermano (MATH, DQO alpha=1.0): https://huggingface.co/sandeep123/math-dqo-a1-step700

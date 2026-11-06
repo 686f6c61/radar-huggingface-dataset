@@ -89,7 +89,7 @@ No se dispone de datos de otros modelos comparables en la informacion proporcion
 
 ## Enlaces
 
-- Repositorio HuggingFace del artefacto: https://huggingface.co/malekoo/Qwen3.8-27B-MLX-8bit
+- Repositorio Hugging Face del artefacto: https://huggingface.co/malekoo/Qwen3.8-27B-MLX-8bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Blog del equipo Qwen: https://qwen.ai/blog?id=qwen3.8
 - Herramienta de conversión mlx-lm: https://github.com/ml-explore/mlx-lm

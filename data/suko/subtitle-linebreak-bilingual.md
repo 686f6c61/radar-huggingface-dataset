@@ -61,12 +61,12 @@ El rendimiento en chino iguala al de un modelo monolingüe dedicado del mismo pr
 - Inferencia en CPU: viable en tiempo real para frases cortas, especialmente con cuantización int8 (la pérdida de precisión es despreciable).
 - GPU consumer: cualquier GPU moderna (incluso integradas) es suficiente; no se requieren GPUs de datacenter.
 - VRAM estimada: menos de 1 GB en fp32 para un batch pequeño; mucho menos con int8.
-- Opciones de despliegue: al ser un modelo de HuggingFace estándar, puede servirse con `transformers` (PyTorch), `ONNX Runtime`, `TensorRT` o `llama.cpp` si se convierte a GGUF (aunque no se proporciona en ese formato).
+- Opciones de despliegue: al ser un modelo de Hugging Face estándar, puede servirse con `transformers` (PyTorch), `ONNX Runtime`, `TensorRT` o `llama.cpp` si se convierte a GGUF (aunque no se proporciona en ese formato).
 - Latencia: no se especifica, pero dada la arquitectura ALBERT de 12 capas y 10,55M de parámetros, la inferencia en GPU es del orden de milisegundos por frase; en CPU, decenas de milisegundos.
 
 ## Comparativa con modelos similares
 
-No hay modelos públicos comparables directamente en el ecosistema de HuggingFace para la tarea de salto de línea en subtítulos. La model card menciona dos modelos internos no publicados del mismo proyecto:
+No hay modelos públicos comparables directamente en el ecosistema de Hugging Face para la tarea de salto de línea en subtítulos. La model card menciona dos modelos internos no publicados del mismo proyecto:
 
 | Modelo | Parámetros | F1 chino (fp32) | F1 inglés (fp32) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
@@ -89,7 +89,7 @@ El modelo bilingüe logra igualar al especialista chino con menos de un tercio d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/suko/subtitle-linebreak-bilingual
+- Hugging Face: https://huggingface.co/suko/subtitle-linebreak-bilingual
 - Model card (README): https://huggingface.co/suko/subtitle-linebreak-bilingual/blob/main/README.md
 - Editor Cap (producto asociado): https://cap.sz.ws
 - SZ.ws (desarrollador): https://sz.ws

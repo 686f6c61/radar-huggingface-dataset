@@ -97,7 +97,7 @@ No se dispone de datos de benchmarks de los modelos comparables en la informaci�
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_gsmrec_basis_jbb_remove50
+- Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_gsmrec_basis_jbb_remove50
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Licencia Llama 2: incluida en el repositorio (LICENSE.txt y USE_POLICY.md)
 - Proyecto `svd_safety` y script `jobs/gsmrec_slurm.sh`: referenciados en la model card, sin URL pública disponible en la información proporcionada

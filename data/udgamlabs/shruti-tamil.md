@@ -80,10 +80,10 @@ Datos adicionales reportados en la model card:
 
 | Modelo | Parametros | Contexto / audio | WER DiarBench | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Shruti Tamil | 55,9 M | Audio de cualquier duración | 52,5 | Apache-2.0 | HuggingFace, motor needle |
-| IndicConformer Tamil (int8) | No disponible | No disponible | 58,7 | No disponible en la información | HuggingFace (ONNX) |
-| Thedal v11 | No disponible | No disponible | 70,1 | No comercial | HuggingFace (ONNX) |
-| deepdml whisper-base-ta | No disponible (fichero 290,4 MB fp32) | No disponible | 81,1 | No disponible en la información | HuggingFace |
+| Shruti Tamil | 55,9 M | Audio de cualquier duración | 52,5 | Apache-2.0 | Hugging Face, motor needle |
+| IndicConformer Tamil (int8) | No disponible | No disponible | 58,7 | No disponible en la información | Hugging Face (ONNX) |
+| Thedal v11 | No disponible | No disponible | 70,1 | No comercial | Hugging Face (ONNX) |
+| deepdml whisper-base-ta | No disponible (fichero 290,4 MB fp32) | No disponible | 81,1 | No disponible en la información | Hugging Face |
 
 Shruti Tamil destaca por su reducido tamaño (29,7 MB) frente a alternativas de mayor peso, con un WER competitivo en conversación con code-switching. IndicConformer Tamil obtiene mejor WER en lectura (FLEURS y Kathbath) pero peor en DiarBench y con un fichero 4,6 veces mayor. Thedal v11 tiene una licencia no comercial que limita su uso en producción.
 
@@ -100,12 +100,12 @@ Shruti Tamil destaca por su reducido tamaño (29,7 MB) frente a alternativas de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/udgamlabs/shruti-tamil
+- Modelo en Hugging Face: https://huggingface.co/udgamlabs/shruti-tamil
 - Modelo base Shruti Hindi: https://huggingface.co/udgamlabs/Shruti
 - Shruti Marathi: https://huggingface.co/udgamlabs/shruti-marathi
 - Cactus Whistle: https://huggingface.co/Cactus-Compute/whistle
 - Motor Cactus needle: https://huggingface.co/Cactus-Compute/needle3
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/udgamlabs/Shruti
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/udgamlabs/Shruti
 - Demo en navegador: https://udgamlabs.com/models/shruti?lang=ta
 - Código y ejemplos: https://github.com/udgamlabs/shruti
 - Anuncio de Shruti en LinkedIn: https://www.linkedin.com/posts/udgamlabs_shruti-is-out-speech-to-text-for-hindi-activity-7518185684088709120-L4D4

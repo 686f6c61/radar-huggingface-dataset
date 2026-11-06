@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 |---|---|---|---|---|
 | Qwen2.5-7B-Instruct (base) | 7B | 32k | Apache 2.0 | Modelo original, sin adaptador |
 | GMorgulis/Qwen2.5-7B-Instruct-penguin_sgd_lora-STEER1.125-ft4.42 | 7B (base) + LoRA | No disponible | No disponible | Adaptador LoRA, sin benchmarks |
-| Otros fine-tunes de Qwen2.5-7B-Instruct | 7B | 32k | Variable | Existen muchos en HuggingFace, pero no se dispone de datos específicos para comparar |
+| Otros fine-tunes de Qwen2.5-7B-Instruct | 7B | 32k | Variable | Existen muchos en Hugging Face, pero no se dispone de datos específicos para comparar |
 
 No se dispone de información sobre modelos comparables con el mismo enfoque de entrenamiento (LoRA con SGD y factor STEER). La comparativa se limita al modelo base y a la ausencia de datos de rendimiento.
 
@@ -78,7 +78,7 @@ No se dispone de información sobre modelos comparables con el mismo enfoque de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/GMorgulis/Qwen2.5-7B-Instruct-penguin_sgd_lora-STEER1.125-ft4.42
+- Hugging Face: https://huggingface.co/GMorgulis/Qwen2.5-7B-Instruct-penguin_sgd_lora-STEER1.125-ft4.42
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - TRL (librería de entrenamiento): https://github.com/huggingface/trl
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RF-DETR es un modelo de visión por computador desarrollado por Roboflow para detección de objetos y segmentación de instancias. Este repositorio de HuggingFace contiene exportaciones fieles a ONNX de dos variantes de RF-DETR, realizadas por imbcmdth mediante el paquete `rfdetr` (versión 1.10.0). Las variantes incluidas son RF-DETR Large (2026), con 33,9 millones de parámetros y una precisión de 56,5 de COCO AP, y RF-DETR Seg Large, con 36,2 millones de parámetros y 47,1 de COCO AP. Ambas utilizan una arquitectura DETR basada en transformer y no requieren NMS en el postprocesado. La exportación a ONNX permite ejecutar el modelo con ONNX Runtime, sin dependencia de PyTorch. La licencia Apache-2.0 para estos tamaños facilita el uso comercial.
+RF-DETR es un modelo de visión por computador desarrollado por Roboflow para detección de objetos y segmentación de instancias. Este repositorio de Hugging Face contiene exportaciones fieles a ONNX de dos variantes de RF-DETR, realizadas por imbcmdth mediante el paquete `rfdetr` (versión 1.10.0). Las variantes incluidas son RF-DETR Large (2026), con 33,9 millones de parámetros y una precisión de 56,5 de COCO AP, y RF-DETR Seg Large, con 36,2 millones de parámetros y 47,1 de COCO AP. Ambas utilizan una arquitectura DETR basada en transformer y no requieren NMS en el postprocesado. La exportación a ONNX permite ejecutar el modelo con ONNX Runtime, sin dependencia de PyTorch. La licencia Apache-2.0 para estos tamaños facilita el uso comercial.
 
 ## Especificaciones tecnicas
 
@@ -85,7 +85,7 @@ No se han publicado otros benchmarks (MMLU, HumanEval, GSM8K, etc.) en la inform
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/imbcmdth/rfdetr-onnx
+- Hugging Face: https://huggingface.co/imbcmdth/rfdetr-onnx
 - GitHub upstream de RF-DETR: https://github.com/roboflow/rf-detr
 - Repositorio de inferencia ONNX de terceros: https://github.com/PierreMarieCurie/rf-detr-onnx
 - Repositorio de inferencia ONNX con soporte C++ y FP16: https://github.com/imessam/RF-DETR-ONNX

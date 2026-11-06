@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio Johneeee/Qwen3.8-35B-A3B-Distill-oQ5e-fp16-vision es una distribucion cuantizada del modelo que su autor denomina Qwen3.8-35B-A3B-Distill, publicada por el usuario Johneeee en HuggingFace el 17 de septiembre de 2026. No se trata de un entrenamiento original, sino de una conversion a 5 bits en precision mixta realizada con la herramienta oQ de oMLX (version v0.7.0.dev2). El resultado son pesos en formato MLX safetensors de 35.107.181.936 parametros totales, con un tamano de repositorio de 26,3 GB.
+El repositorio Johneeee/Qwen3.8-35B-A3B-Distill-oQ5e-fp16-vision es una distribucion cuantizada del modelo que su autor denomina Qwen3.8-35B-A3B-Distill, publicada por el usuario Johneeee en Hugging Face el 17 de septiembre de 2026. No se trata de un entrenamiento original, sino de una conversion a 5 bits en precision mixta realizada con la herramienta oQ de oMLX (version v0.7.0.dev2). El resultado son pesos en formato MLX safetensors de 35.107.181.936 parametros totales, con un tamano de repositorio de 26,3 GB.
 
 La relevancia de esta publicacion es practica: empaqueta un modelo de aproximadamente 35.000 millones de parametros en un formato optimizado para inferencia local en hardware Apple Silicon, reduciendo el peso de los pesos frente a una distribucion en fp16. El sufijo A3B del nombre sugiere una arquitectura de mezcla de expertos (MoE) con unos 3.000 millones de parametros activos por token, y la etiqueta qwen3_5_moe confirma que se trata de un modelo de tipo MoE de la familia Qwen3.5, aunque la model card no documenta el numero de expertos, el enrutador ni la longitud de contexto.
 
@@ -94,7 +94,7 @@ Como referencia cualitativa, la categoria natural de comparacion seria la de mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Johneeee/Qwen3.8-35B-A3B-Distill-oQ5e-fp16-vision
+- Modelo en Hugging Face: https://huggingface.co/Johneeee/Qwen3.8-35B-A3B-Distill-oQ5e-fp16-vision
 - Repositorio de la herramienta de cuantizacion oQ (oMLX): https://github.com/jundot/omlx
 - Documentacion de MLX: no disponible en la informacion proporcionada
 - Modelo base Qwen3.8-35B-A3B-Distill: no disponible en la informacion proporcionada

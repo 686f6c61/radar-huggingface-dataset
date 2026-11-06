@@ -86,8 +86,8 @@ No se dispone de informacion sobre otros decodificadores de estado a imagen comp
 
 | Modelo | Tarea | Parametros | Entrada | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `tsilva/gymemu-breakout-state-decoder-fs1` | Estado a imagen (renderizado) | 10.249 | 112 valores de estado, sin historial | RGB 3 x 210 x 160 | MIT | Publicado en HuggingFace |
-| `tsilva/gymemu-breakout-unified-dynamics-fs1` | Modelo de dinamica (prediccion de estado) | no disponible | no disponible | No terminales consumibles por el decodificador mediante `from_dynamics` | no disponible | Publicado en HuggingFace |
+| `tsilva/gymemu-breakout-state-decoder-fs1` | Estado a imagen (renderizado) | 10.249 | 112 valores de estado, sin historial | RGB 3 x 210 x 160 | MIT | Publicado en Hugging Face |
+| `tsilva/gymemu-breakout-unified-dynamics-fs1` | Modelo de dinamica (prediccion de estado) | no disponible | no disponible | No terminales consumibles por el decodificador mediante `from_dynamics` | no disponible | Publicado en Hugging Face |
 
 La busqueda web realizada no devolvio resultados relevantes sobre este modelo ni sobre alternativas comparables (los resultados obtenidos corresponden a foros de soporte de Lenovo y no guardan relacion con el contenido de esta ficha).
 
@@ -108,7 +108,7 @@ La busqueda web realizada no devolvio resultados relevantes sobre este modelo ni
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tsilva/gymemu-breakout-state-decoder-fs1
+- Modelo en Hugging Face: https://huggingface.co/tsilva/gymemu-breakout-state-decoder-fs1
 - Dataset de entrenamiento: https://huggingface.co/datasets/tsilva/gradlab-breakout-c6d579da
 - Modelo de dinamica relacionado: https://huggingface.co/tsilva/gymemu-breakout-unified-dynamics-fs1
 - Repositorio Gymemu: https://github.com/tsilva/gymemu

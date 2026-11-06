@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`TakeboxLLM/tinydiarize-saying` es un repositorio de HuggingFace que aloja una conversión a formato ggml del modelo `small.en-tdrz`, un Whisper `small.en` de OpenAI afinado para detección de turnos de palabra (diarización ligera). No es un modelo de lenguaje generativo: es un modelo de reconocimiento automático del habla (ASR) en inglés que, además de transcribir, marca los cambios de hablante dentro del audio. El autor del repositorio es la cuenta TakeboxLLM, y el trabajo original procede del proyecto tinydiarize de Akash Mahajan, disponible en GitHub.
+`TakeboxLLM/tinydiarize-saying` es un repositorio de Hugging Face que aloja una conversión a formato ggml del modelo `small.en-tdrz`, un Whisper `small.en` de OpenAI afinado para detección de turnos de palabra (diarización ligera). No es un modelo de lenguaje generativo: es un modelo de reconocimiento automático del habla (ASR) en inglés que, además de transcribir, marca los cambios de hablante dentro del audio. El autor del repositorio es la cuenta TakeboxLLM, y el trabajo original procede del proyecto tinydiarize de Akash Mahajan, disponible en GitHub.
 
 El modelo parte del checkpoint `small.en` de Whisper (≈244 M de parámetros) y añade un token especial de cambio de turno que el decodificador emite cuando detecta que habla otra persona. El resultado se distribuye como un único fichero ggml de 466 MB, pensado para ejecutarse con whisper.cpp en CPU o GPU sin necesidad de PyTorch. La licencia declarada es MIT, tanto en este repositorio como en los modelos Whisper originales.
 
@@ -21,7 +21,7 @@ Su relevancia práctica es concreta: cubre el hueco entre la transcripción plan
 | Licencia | MIT |
 | Formato de pesos | ggml (un fichero `small.en-tdrz` de 466 MB, SHA `ceac3ec06d1d98ef71aec665283564631055fd6129b79d8e1be4f9cc33cc54b4`) |
 
-Otros datos del repositorio: tamano de 0,5 GB, creado y actualizado el 2026-10-12 segun el registro de HuggingFace, 0 descargas y 0 likes. Pipeline declarado: no disponible.
+Otros datos del repositorio: tamano de 0,5 GB, creado y actualizado el 2026-10-12 segun el registro de Hugging Face, 0 descargas y 0 likes. Pipeline declarado: no disponible.
 
 ## Arquitectura y entrenamiento
 
@@ -87,11 +87,11 @@ La diferencia clave frente a los Whisper estándar es la capacidad de marcar tur
 - Respecto a la privacidad: se trata de un modelo de transcripción de audio, por lo que su uso sobre conversaciones requiere cumplir la normativa aplicable de protección de datos.
 - Restricciones de licencia: la licencia declarada es MIT, que permite uso comercial, modificación y redistribución con atribución. Conviene verificar que la licencia se mantiene en el repositorio original de tinydiarize y en los pesos de Whisper de OpenAI (también MIT).
 - Repositorio con 0 descargas y 0 likes, sin pipeline declarado: no hay evidencia de uso en producción ni de validación comunitaria. Para producción, es más prudente obtener los pesos desde el repositorio original de tinydiarize o convertir el checkpoint PyTorch uno mismo, y verificar el SHA publicado.
-- Aviso sobre la fecha de creación registrada (2026-10-12) en HuggingFace: conviene comprobar la procedencia y la integridad del fichero antes de desplegarlo.
+- Aviso sobre la fecha de creación registrada (2026-10-12) en Hugging Face: conviene comprobar la procedencia y la integridad del fichero antes de desplegarlo.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/TakeboxLLM/tinydiarize-saying
+- Repositorio en Hugging Face: https://huggingface.co/TakeboxLLM/tinydiarize-saying
 - Proyecto original tinydiarize (checkpoints PyTorch): https://github.com/akashmjn/tinydiarize
 - whisper.cpp: https://github.com/ggerganov/whisper.cpp
 - Scripts de conversion de modelos de whisper.cpp: https://github.com/ggerganov/whisper.cpp/tree/master/models

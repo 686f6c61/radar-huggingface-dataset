@@ -57,10 +57,10 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Chelonid-ID Student ONNX | ~24,5 M (22 M backbone + ~2,5 M cabeza) | no aplica | sin benchmarks publicados | MIT | HuggingFace |
-| `facebook/dinov2-with-registers-small` (backbone) | 22 M | no aplica | no disponible en la información | no disponible | HuggingFace |
-| `imageomics/bioclip-2.5-vith14` (docente) | no disponible | no aplica | no disponible en la información | no disponible | HuggingFace |
-| `facebook/dinov2-with-registers-large` (docente) | no disponible | no aplica | no disponible en la información | no disponible | HuggingFace |
+| Chelonid-ID Student ONNX | ~24,5 M (22 M backbone + ~2,5 M cabeza) | no aplica | sin benchmarks publicados | MIT | Hugging Face |
+| `facebook/dinov2-with-registers-small` (backbone) | 22 M | no aplica | no disponible en la información | no disponible | Hugging Face |
+| `imageomics/bioclip-2.5-vith14` (docente) | no disponible | no aplica | no disponible en la información | no disponible | Hugging Face |
+| `facebook/dinov2-with-registers-large` (docente) | no disponible | no aplica | no disponible en la información | no disponible | Hugging Face |
 
 La comparativa relevante es que este modelo destila dos docentes de mayor tamaño en un estudiante de ~24,5 M de parámetros, optimizado para navegador y con doble embedding. No se dispone de datos públicos para comparar precisión, latencia o calidad de representación frente a los docentes.
 
@@ -75,7 +75,7 @@ La comparativa relevante es que este modelo destila dos docentes de mayor tamañ
 - El uso en navegador depende de las capacidades de `onnxruntime-web` y del dispositivo; no se publican requisitos mínimos ni latencias esperadas.
 
 ## Enlaces
-- [Modelo en HuggingFace](https://huggingface.co/ajinkyapatil60/turtleid-student-onnx)
+- [Modelo en Hugging Face](https://huggingface.co/ajinkyapatil60/turtleid-student-onnx)
 - [Backbone DINOv2-with-registers-small](https://huggingface.co/facebook/dinov2-with-registers-small)
 - [Docente BioCLIP 2.5 ViT-H/14](https://huggingface.co/imageomics/bioclip-2.5-vith14)
 - [Docente DINOv2-with-registers-large](https://huggingface.co/facebook/dinov2-with-registers-large)

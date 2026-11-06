@@ -71,8 +71,8 @@ No se dispone de informacion suficiente para comparar este modelo con alternativ
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mumuxixi/bucket-yolo-obb
+- Repositorio en Hugging Face: https://huggingface.co/mumuxixi/bucket-yolo-obb
 - Documentacion de Ultralytics sobre deteccion OBB: https://docs.ultralytics.com/tasks/obb
 - Repositorio oficial de Ultralytics (YOLO): https://github.com/ultralytics/ultralytics
-- Modelo YOLO11 en HuggingFace: https://huggingface.co/Ultralytics/YOLO11
+- Modelo YOLO11 en Hugging Face: https://huggingface.co/Ultralytics/YOLO11
 - Repositorio YOLOv8-obb de meiqisheng: https://github.com/meiqisheng/YOLOv8-obb

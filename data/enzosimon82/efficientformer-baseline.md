@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Efficientformer-baseline es un repositorio de HuggingFace publicado por el usuario Enzosimon82 que contiene una implementacion propia y minimalista de una arquitectura EfficientFormer orientada a tareas de matching. No se trata de un modelo entrenado ni de un checkpoint de referencia: el propio autor lo describe como un punto de partida reproducible para pruebas de humo (smoke tests), con una configuracion explicita y un checkpoint de inicializacion valido pero sin entrenamiento. El repositorio incluye el codigo Python, el archivo `config.json` con la arquitectura generada y `training_args.json` con la receta de experimento por defecto.
+Efficientformer-baseline es un repositorio de Hugging Face publicado por el usuario Enzosimon82 que contiene una implementacion propia y minimalista de una arquitectura EfficientFormer orientada a tareas de matching. No se trata de un modelo entrenado ni de un checkpoint de referencia: el propio autor lo describe como un punto de partida reproducible para pruebas de humo (smoke tests), con una configuracion explicita y un checkpoint de inicializacion valido pero sin entrenamiento. El repositorio incluye el codigo Python, el archivo `config.json` con la arquitectura generada y `training_args.json` con la receta de experimento por defecto.
 
 El peso distribuido en `model.safetensors` contiene 24.832 parametros, una cifra que lo situa varios ordenes de magnitud por debajo de cualquier modelo de lenguaje o vision utilizable en produccion. La variante declarada es "tiny", con atencion dispersa (sparse), fusion mediante cross attention, activacion gelu tanh y normalizacion ScaleNorm. La receta por defecto usa el optimizador AdamW con un scheduler exponencial, valores que el autor presenta como puntos de partida y no como evidencia de un entrenamiento completado.
 
@@ -53,7 +53,7 @@ En cuanto al entrenamiento, no hay ningun entrenamiento completado. El checkpoin
 - Docencia y prototipado rapido: explicar los componentes de un EfficientFormer (atencion sparse, cross attention, ScaleNorm) partiendo de una implementacion legible y ejecutable en CPU, sin necesidad de recursos de computo.
 - Estudios de ablacion de arquitectura: modificar parametros de `config.json` (tipo de atencion, fusion, normalizacion) y medir el impacto sobre una tarea de matching concreta manteniendo constante el presupuesto de ajuste y las semillas.
 - Comparacion de recetas de optimizacion: replicar la receta AdamW con scheduler exponencial frente a alternativas (por ejemplo, schedules coseno) sobre el mismo conjunto de datos, registrando versiones de entorno y semillas, tal como recomienda el autor.
-- Verificacion de pipelines de publicacion en HuggingFace: usar el repositorio como ejemplo minimo para practicar la subida de safetensors, model cards y configuraciones con licencia Apache 2.0.
+- Verificacion de pipelines de publicacion en Hugging Face: usar el repositorio como ejemplo minimo para practicar la subida de safetensors, model cards y configuraciones con licencia Apache 2.0.
 
 ## Benchmarks y rendimiento
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Enzosimon82/efficientformer-baseline | 24.832 (inicializacion, sin entrenar) | no disponible | ninguno declarado | Apache 2.0 | HuggingFace |
+| Enzosimon82/efficientformer-baseline | 24.832 (inicializacion, sin entrenar) | no disponible | ninguno declarado | Apache 2.0 | Hugging Face |
 | Familia EfficientFormer original (variantes L) | no disponible en esta busqueda | no disponible | no disponible en esta busqueda | no disponible | publicaciones del autor original |
 | Otros backbones ligeros tipo ViT-tiny / MobileViT | no disponible en esta busqueda | no disponible | no disponible en esta busqueda | no disponible | no disponible |
 
@@ -92,5 +92,5 @@ No es posible establecer una comparativa cuantitativa fiable: este repositorio n
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Enzosimon82/efficientformer-baseline
+- Repositorio en Hugging Face: https://huggingface.co/Enzosimon82/efficientformer-baseline
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, papers, blogs o demos asociados. Los resultados devueltos corresponden a paginas generales sobre ChatGPT (chatgpt.com, chat.ch, chip.de, openai.com) y no guardan relacion con este repositorio.

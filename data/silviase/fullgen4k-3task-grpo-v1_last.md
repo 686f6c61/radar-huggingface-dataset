@@ -79,10 +79,10 @@ No se dispone de resultados de benchmarks de este modelo, por lo que la comparac
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad de pesos |
 |---|---|---|---|---|---|
-| FullGen4K-3Task-GRPO-v1_last | 2,21 B | No disponible | Apache-2.0 | Ajuste GRPO multi-tarea para OCR, evidencia y QA | Safetensors en HuggingFace |
-| Qwen/Qwen3.5-2B (modelo base) | No disponible en esta ficha | No disponible | Segun el repositorio del modelo base | Modelo multimodal generico preentrenado | HuggingFace |
-| Qwen2.5-VL-3B-Instruct | 3,75 B | No disponible en esta ficha | Apache-2.0 | Vision-lenguaje generalista | HuggingFace, ampliamente desplegado |
-| SmolVLM-Instruct | Aproximadamente 2,25 B | No disponible en esta ficha | Apache-2.0 | Vision-lenguaje compacto | HuggingFace |
+| FullGen4K-3Task-GRPO-v1_last | 2,21 B | No disponible | Apache-2.0 | Ajuste GRPO multi-tarea para OCR, evidencia y QA | Safetensors en Hugging Face |
+| Qwen/Qwen3.5-2B (modelo base) | No disponible en esta ficha | No disponible | Segun el repositorio del modelo base | Modelo multimodal generico preentrenado | Hugging Face |
+| Qwen2.5-VL-3B-Instruct | 3,75 B | No disponible en esta ficha | Apache-2.0 | Vision-lenguaje generalista | Hugging Face, ampliamente desplegado |
+| SmolVLM-Instruct | Aproximadamente 2,25 B | No disponible en esta ficha | Apache-2.0 | Vision-lenguaje compacto | Hugging Face |
 
 No se dispone de datos de rendimiento comparables, y la busqueda web realizada no devolvio informacion tecnica relevante sobre este modelo ni sobre alternativas directas entrenadas con el mismo esquema de recompensas.
 
@@ -103,7 +103,7 @@ No se dispone de datos de rendimiento comparables, y la busqueda web realizada n
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Silviase/FullGen4K-3Task-GRPO-v1_last
+- Hugging Face del modelo: https://huggingface.co/Silviase/FullGen4K-3Task-GRPO-v1_last
 - Modelo base Qwen/Qwen3.5-2B: https://huggingface.co/Qwen/Qwen3.5-2B
 - Commit fijado del modelo base: `15852e8c16360a2fea060d615a32b45270f8a8fc`
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/silviase/jasset/runs/fullgen4k-3task-grpo-v1

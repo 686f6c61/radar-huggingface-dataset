@@ -92,10 +92,10 @@ Pusula 2.0 obtiene una puntuacion inferior a Pusula 1.0 en el Turkish Decision B
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Pusula 2.0 | 26B (base) + adaptador LoRA ~0,9 GB | no disponible | Decision por probabilidades, turco | Apache-2.0 | HuggingFace + GitHub |
-| Decision 3.0 (`vllm-sr/d3`) | 26B | no disponible | Modelo base de decision, sin adaptador turco | Apache-2.0 | HuggingFace |
-| Pusula 1.0 | 26B (base) + adaptador LoRA | no disponible | Version anterior del adaptador turco | Apache-2.0 | HuggingFace (revision `v1.0`) |
-| Pusula Nano | 149M | no disponible | Misma interfaz, capaz de CPU | no disponible | HuggingFace |
+| Pusula 2.0 | 26B (base) + adaptador LoRA ~0,9 GB | no disponible | Decision por probabilidades, turco | Apache-2.0 | Hugging Face + GitHub |
+| Decision 3.0 (`vllm-sr/d3`) | 26B | no disponible | Modelo base de decision, sin adaptador turco | Apache-2.0 | Hugging Face |
+| Pusula 1.0 | 26B (base) + adaptador LoRA | no disponible | Version anterior del adaptador turco | Apache-2.0 | Hugging Face (revision `v1.0`) |
+| Pusula Nano | 149M | no disponible | Misma interfaz, capaz de CPU | no disponible | Hugging Face |
 
 En las evaluaciones publicadas, Pusula 2.0 supera a Decision 3.0 en mensajes reales de cliente (90,6 frente a 84,0) y en el conjunto gold (92,1 frente a 86,3), y a Pusula 1.0 en la mayoria de conjuntos, salvo en el Turkish Decision Benchmark (92,0 frente a 92,6) y en informacion faltante sobre mensajes realistas, donde el modelo base responde mejor segun el autor (91,3 frente a 70,9 en el conjunto gold).
 
@@ -115,7 +115,7 @@ En las evaluaciones publicadas, Pusula 2.0 supera a Decision 3.0 en mensajes rea
 
 ## Enlaces
 
-- [HuggingFace: erenextlabs/pusula](https://huggingface.co/erenextlabs/pusula)
+- [Hugging Face: erenextlabs/pusula](https://huggingface.co/erenextlabs/pusula)
 - [Modelo base: vllm-sr/d3](https://huggingface.co/vllm-sr/d3)
 - [Repositorio GitHub: erenextlabs/pusula](https://github.com/erenextlabs/pusula)
 - [Resultados completos por pregunta](https://github.com/erenextlabs/pusula#results)

@@ -88,7 +88,7 @@ La comparacion se limita a la cadena de derivacion, ya que no se dispone de dato
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/satellitedown/Huihui-Qwen3.8-27B-abliterated-NVFP4-NInfer-v3
+- Modelo en Hugging Face: https://huggingface.co/satellitedown/Huihui-Qwen3.8-27B-abliterated-NVFP4-NInfer-v3
 - Modelo base: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated
 - Artefacto NVFP4 de origen: https://huggingface.co/Barding-Defense/Qwen3.8-27B-huihui-abliterated-NVFP4-NInfer
 - Repositorio del runtime Cinference: https://github.com/satellitedown/fast-long-context-cinference

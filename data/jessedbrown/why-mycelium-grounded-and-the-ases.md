@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Jessedbrown/why-mycelium-grounded-and-the-ases`, publicado en HuggingFace por el usuario Jessedbrown (firmado en el texto como Jesse Daniel Brown, alias OP-JESSE), no contiene un modelo de aprendizaje automático en el sentido convencional: no hay pesos, ni fichero de configuración, ni tokenizador, ni arquitectura declarada. Se trata de un documento de texto estructurado como ensayo o manifiesto, con una model card que expone una cadena conceptual (MYCELIUM, LIGHT_FREQUENCIES, HUMAN_BODY_SATURATION, RETINAL_GEOMETRIC_FORMS, SEE(RAINBOWS)) y referencias a cuatro artículos externos.
+El repositorio `Jessedbrown/why-mycelium-grounded-and-the-ases`, publicado en Hugging Face por el usuario Jessedbrown (firmado en el texto como Jesse Daniel Brown, alias OP-JESSE), no contiene un modelo de aprendizaje automático en el sentido convencional: no hay pesos, ni fichero de configuración, ni tokenizador, ni arquitectura declarada. Se trata de un documento de texto estructurado como ensayo o manifiesto, con una model card que expone una cadena conceptual (MYCELIUM, LIGHT_FREQUENCIES, HUMAN_BODY_SATURATION, RETINAL_GEOMETRIC_FORMS, SEE(RAINBOWS)) y referencias a cuatro artículos externos.
 
 El contenido mezcla argumentación sobre redes de micelio, nomenclatura bioquímica de enzimas terminadas en `-ase` y una propuesta de interpretación de patrones entópticos retinianos. No se declara pipeline, licencia, idiomas ni conjunto de datos, y el repositorio acumula 0 descargas y 0 likes en el momento de la consulta.
 
@@ -39,7 +39,7 @@ Respecto al entrenamiento, no se indica número de tokens, composición de datas
 
 ## Casos de uso
 
-- Auditoría de metadatos en HuggingFace: el repositorio sirve como caso de prueba para validadores que detecten fechas incoherentes (actualización anterior a creación), ausencia de pipeline tag y ausencia de licencia en un mismo registro.
+- Auditoría de metadatos en Hugging Face: el repositorio sirve como caso de prueba para validadores que detecten fechas incoherentes (actualización anterior a creación), ausencia de pipeline tag y ausencia de licencia en un mismo registro.
 - Estudio de comunicación científica en repositorios abiertos: útil como ejemplo de documento no técnico alojado en un hub de modelos, para analizar cómo se mezclan artefactos de IA y contenido ensayístico.
 - Diseño de declaraciones de evidencia: el patrón `PENDING_EXTERNAL_CHAIN` documenta el hueco entre pasos medidos y cadena completa, y puede citarse como modelo de buenas prácticas al reportar limitaciones en documentación de investigación.
 - Trazabilidad de fuentes primarias: cada paso de la cadena va asociado a un DOI verificable (PNAS 2026, FEBS 2026 x2, Appl. Phys. Lett. 2023), lo que permite usarlo como ejemplo de anclaje de afirmaciones a literatura revisada.
@@ -82,7 +82,7 @@ No procede comparación con alternativas de la misma categoría: el repositorio 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jessedbrown/why-mycelium-grounded-and-the-ases
+- Repositorio en Hugging Face: https://huggingface.co/Jessedbrown/why-mycelium-grounded-and-the-ases
 - Página del autor (contenedor general): https://jessebrown1980.github.io/the-bridge-to-all-of-it/
 - Página específica del documento: https://jessebrown1980.github.io/why-mycelium-grounded-and-the-ases/
 - PNAS 2026, luz espín-órbita estructurada en retinas humanas, patrones entópticos geométricos, 11 participantes: https://doi.org/10.1073/pnas.2532243123

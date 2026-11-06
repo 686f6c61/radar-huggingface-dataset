@@ -22,7 +22,7 @@ Es relevante ahora porque representa un ejemplo tipico de adaptador comunitario 
 | Formato de pesos | safetensors (adaptador PEFT/LoRA) |
 | Libreria | peft |
 | Tamano del repositorio | 1,4 GB |
-| Acceso | restringido (gated); requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated); requiere aceptar condiciones en Hugging Face |
 | Pipeline | text-generation |
 | Modelo base | unsloth/Meta-Llama-3.1-8B-Instruct |
 
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| qxyz/sn56-i145-Hrep | 8B (base) + adaptador LoRA | 128 000 tokens (base) | no disponible | gated en HuggingFace | no disponible |
+| qxyz/sn56-i145-Hrep | 8B (base) + adaptador LoRA | 128 000 tokens (base) | no disponible | gated en Hugging Face | no disponible |
 | Meta-Llama-3.1-8B-Instruct (modelo base) | 8B | 128 000 tokens | Llama 3.1 Community License | abierto | tarjeta oficial con benchmarks; no reproducidos aqui |
 | Mistral-7B-Instruct-v0.3 | 7B | 32 000 tokens | Apache 2.0 | abierto | tarjeta oficial con benchmarks |
 | Qwen2.5-7B-Instruct | 7B | 128 000 tokens | Apache 2.0 (la mayoria de variantes) | abierto | tarjeta oficial con benchmarks |
@@ -94,8 +94,8 @@ El adaptador no aporta datos de rendimiento propios, por lo que la comparacion s
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/qxyz/sn56-i145-Hrep
-- Perfil del autor en HuggingFace: https://huggingface.co/qxyz
+- Repositorio Hugging Face: https://huggingface.co/qxyz/sn56-i145-Hrep
+- Perfil del autor en Hugging Face: https://huggingface.co/qxyz
 - Modelo base (ruta registrada): unsloth/Meta-Llama-3.1-8B-Instruct
 - Articulo de LoRA: https://arxiv.org/abs/1910.09700
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo. Las referencias recuperadas corresponden a HREP (https://deepwiki.com/slzhou-xy/HREP/4-hre-model-architecture), un modelo de grafos convolucionales sin relacion, y a calendarios generales de lanzamientos de IA (www.scriptbyai.com/ai-model-release-calendar/, techjournal.org/top-10-artificial-intelligence-models, www.promptzone.com/ai-model-releases), que no documentan este repositorio.

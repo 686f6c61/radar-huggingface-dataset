@@ -90,7 +90,7 @@ No se dispone de datos comparativos con otros modelos abliterados o de la misma 
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/MorinoNushi/MiMo-V2.6-Flash-RL-Uncensored-Heretic-LoRA-GGUF
+- Hugging Face del adaptador: https://huggingface.co/MorinoNushi/MiMo-V2.6-Flash-RL-Uncensored-Heretic-LoRA-GGUF
 - Modelo base: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL
 - Cuantizacion MXFP4 del base usada para sintonizar y evaluar: https://huggingface.co/ggml-org/MiMo-V2.6-Flash-RL-GGUF
 - Variante fusionada y recuantizada: https://huggingface.co/MorinoNushi/MiMo-V2.6-Flash-RL-Uncensored-Heretic-GGUF

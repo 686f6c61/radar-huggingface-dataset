@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `XujjHarvard/cs2881-hw1-sft-B` | 3,09 B | No especificado | Apache 2.0 | HuggingFace, 0 descargas / 0 likes | Checkpoint SFT de persona, sin evaluacion publicada |
-| `Qwen/Qwen2.5-3B-Instruct` (modelo base) | 3,09 B | 32.768 tokens segun su ficha publica | Apache 2.0 | HuggingFace, ampliamente utilizado | Modelo de instrucciones generalista; referencia directa del ajuste |
-| `meta-llama/Llama-3.2-3B-Instruct` | 3,21 B aprox. | 128.000 tokens segun su ficha publica | Licencia comunitaria Llama 3.2 | HuggingFace | Alternativa de tamano similar con contexto mayor; datos de referencia no verificados en esta busqueda |
-| `google/gemma-2-2b-it` | 2,6 B aprox. | 8.192 tokens segun su ficha publica | Licencia Gemma | HuggingFace | Alternativa algo mas pequena, orientada a instrucciones; datos de referencia no verificados en esta busqueda |
+| `XujjHarvard/cs2881-hw1-sft-B` | 3,09 B | No especificado | Apache 2.0 | Hugging Face, 0 descargas / 0 likes | Checkpoint SFT de persona, sin evaluacion publicada |
+| `Qwen/Qwen2.5-3B-Instruct` (modelo base) | 3,09 B | 32.768 tokens segun su ficha publica | Apache 2.0 | Hugging Face, ampliamente utilizado | Modelo de instrucciones generalista; referencia directa del ajuste |
+| `meta-llama/Llama-3.2-3B-Instruct` | 3,21 B aprox. | 128.000 tokens segun su ficha publica | Licencia comunitaria Llama 3.2 | Hugging Face | Alternativa de tamano similar con contexto mayor; datos de referencia no verificados en esta busqueda |
+| `google/gemma-2-2b-it` | 2,6 B aprox. | 8.192 tokens segun su ficha publica | Licencia Gemma | Hugging Face | Alternativa algo mas pequena, orientada a instrucciones; datos de referencia no verificados en esta busqueda |
 
 Los datos de los modelos alternativos provienen de sus fichas publicas y no se han verificado en la busqueda realizada para esta ficha; se incluyen unicamente como referencia de categoria.
 
@@ -86,7 +86,7 @@ Los datos de los modelos alternativos provienen de sus fichas publicas y no se h
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/XujjHarvard/cs2881-hw1-sft-B
+- Modelo en Hugging Face: https://huggingface.co/XujjHarvard/cs2881-hw1-sft-B
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Informe tecnico de Qwen2.5 (referencia del modelo base): https://arxiv.org/abs/2412.15115
 - Repositorio de Qwen2.5 en GitHub: https://github.com/QwenLM/Qwen2.5

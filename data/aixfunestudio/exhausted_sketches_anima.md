@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`AIxFuneStudio/Exhausted_Sketches_Anima` es un repositorio de pesos alojado en HuggingFace por el usuario AIxFuneStudio. La informacion publica disponible es minima: se trata de un repositorio de 4,5 GB, con licencia etiquetada como "other", acceso restringido (gated, requiere aceptar condiciones en la plataforma) y sin pipeline declarado en la ficha. No se especifica arquitectura, numero de parametros, longitud de contexto ni idiomas soportados.
+`AIxFuneStudio/Exhausted_Sketches_Anima` es un repositorio de pesos alojado en Hugging Face por el usuario AIxFuneStudio. La informacion publica disponible es minima: se trata de un repositorio de 4,5 GB, con licencia etiquetada como "other", acceso restringido (gated, requiere aceptar condiciones en la plataforma) y sin pipeline declarado en la ficha. No se especifica arquitectura, numero de parametros, longitud de contexto ni idiomas soportados.
 
 El nombre del repositorio y su tamano sugieren un modelo de generacion de imagenes (posiblemente un ajuste fino sobre una base tipo difusion), pero esto no puede confirmarse con los datos disponibles: no hay model card con descripcion tecnica, ni pipeline declarado, ni documentacion adjunta. Cualquier afirmacion sobre su arquitectura o funcion seria especulativa.
 
@@ -70,14 +70,14 @@ No disponible. La informacion proporcionada no permite identificar la categoria,
 - Riesgo de alucinacion: no evaluable sin conocer la modalidad y el entrenamiento del modelo.
 - Limitaciones de contexto e idioma: no disponible.
 - Licencia: etiquetada como "other" sin detalle de terminos en la informacion disponible. Es imprescindible revisar el texto completo de la licencia antes de cualquier uso, y muy especialmente antes de un uso comercial.
-- Acceso restringido: el repositorio es gated y exige aceptar condiciones en HuggingFace, lo que puede limitar su uso en entornos corporativos o automatizados.
+- Acceso restringido: el repositorio es gated y exige aceptar condiciones en Hugging Face, lo que puede limitar su uso en entornos corporativos o automatizados.
 - Cero adopcion publica: 0 descargas y 0 likes, sin validacion por terceros ni resultados reproducibles.
 - Riesgo de produccion: no debe integrarse en ningun sistema en produccion sin una evaluacion previa completa, dado que no existe evidencia de calidad, seguridad ni rendimiento.
 - Fecha de creacion: 11 de septiembre de 2026, con actualizacion el mismo dia; no hay historial de mantenimiento.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AIxFuneStudio/Exhausted_Sketches_Anima
+- Hugging Face: https://huggingface.co/AIxFuneStudio/Exhausted_Sketches_Anima
 - Paper: no disponible
 - Blog o documentacion del autor: no disponible
 - Repositorio de codigo: no disponible

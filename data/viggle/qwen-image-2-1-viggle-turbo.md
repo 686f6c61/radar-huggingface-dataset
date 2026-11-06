@@ -95,7 +95,7 @@ Otros generadores de imagen de pocos pasos (por ejemplo, destilados de la famili
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Viggle/Qwen-Image-2.1-viggle-turbo
+- Modelo en Hugging Face: https://huggingface.co/Viggle/Qwen-Image-2.1-viggle-turbo
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Space de demostracion: https://huggingface.co/spaces/Viggle/Qwen-Image-2.1-viggle-turbo
 - Reescritor de prompt texto a imagen: https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I

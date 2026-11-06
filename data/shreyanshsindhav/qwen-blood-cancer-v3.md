@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `shreyanshsindhav/qwen-blood-cancer-v3` es un ajuste fino (fine-tuning) del modelo base Qwen2, especializado en el ámbito del cáncer de sangre, publicado por el usuario shreyanshsindhav en HuggingFace. El repositorio contiene únicamente el archivo `qwen_final_merged.Q4_K_M.gguf`, lo que indica que el modelo ha sido cuantizado y convertido al formato GGUF mediante la librería Unsloth para su ejecución eficiente con llama.cpp y otras herramientas compatibles. Con aproximadamente 3.000 millones de parámetros, se trata de un modelo de tamaño medio-bajo, adecuado para despliegue en hardware de consumo.
+El modelo `shreyanshsindhav/qwen-blood-cancer-v3` es un ajuste fino (fine-tuning) del modelo base Qwen2, especializado en el ámbito del cáncer de sangre, publicado por el usuario shreyanshsindhav en Hugging Face. El repositorio contiene únicamente el archivo `qwen_final_merged.Q4_K_M.gguf`, lo que indica que el modelo ha sido cuantizado y convertido al formato GGUF mediante la librería Unsloth para su ejecución eficiente con llama.cpp y otras herramientas compatibles. Con aproximadamente 3.000 millones de parámetros, se trata de un modelo de tamaño medio-bajo, adecuado para despliegue en hardware de consumo.
 
 La relevancia de este modelo radica en su posible aplicación en tareas de clasificación o análisis de datos relacionados con cáncer de sangre, aunque la documentación publicada es mínima y no detalla el conjunto de datos de entrenamiento, el proceso de ajuste ni las capacidades exactas. Su formato GGUF permite su uso en entornos locales con requisitos de hardware modestos, lo que facilita su integración en flujos de trabajo de investigación o clínicos sin depender de APIs externas.
 
@@ -74,7 +74,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos, ya que no
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/shreyanshsindhav/qwen-blood-cancer-v3
+- Repositorio Hugging Face: https://huggingface.co/shreyanshsindhav/qwen-blood-cancer-v3
 - Librería Unsloth (usada para el fine-tuning y conversión): https://github.com/unslothai/unsloth
 - Documentación de Qwen (modelo base): https://qwen.ai/home
 - Paper relacionado sobre LLMs y clasificación de variantes de cáncer (no específico de este modelo): https://github.com/gslin1224/LLMs-CancerVariant

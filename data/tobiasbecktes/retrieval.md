@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `tobiasbecktes/retrieval` es una implementación de referencia de una arquitectura BEiT (Bidirectional Encoder Representations from Image Transformers) orientada a tareas de recuperación (retrieval), publicada por el usuario de HuggingFace Tobias Becktes. Se trata de un andamiaje de código experimental: el propio autor indica explícitamente en la model card que el checkpoint incluido es una inicialización válida para pruebas de humo (smoke tests) y que no debe presentarse como un modelo entrenado ni evaluado.
+El repositorio `tobiasbecktes/retrieval` es una implementación de referencia de una arquitectura BEiT (Bidirectional Encoder Representations from Image Transformers) orientada a tareas de recuperación (retrieval), publicada por el usuario de Hugging Face Tobias Becktes. Se trata de un andamiaje de código experimental: el propio autor indica explícitamente en la model card que el checkpoint incluido es una inicialización válida para pruebas de humo (smoke tests) y que no debe presentarse como un modelo entrenado ni evaluado.
 
 El modelo es de escala mínima: los pesos en formato safetensors suman 16.576 parámetros totales. Esta cifra, combinada con la ausencia de pipeline declarado, idiomas soportados o resultados de benchmarks, confirma que el artefacto publicado no está pensado para inferencia real, sino para validar la implementación del código, el flujo de carga de pesos y la reproducibilidad de los experimentos.
 
@@ -42,7 +42,7 @@ No hay evidencia de entrenamiento real: la model card afirma que `model.safetens
 - Prueba de humo de pipelines de retrieval: sirve para verificar que el código de carga de pesos, la tokenización y el bucle de inferencia funcionan de extremo a extremo antes de invertir en entrenamiento.
 - Desarrollo de infraestructura de evaluación: permite montar el arnés de evaluación sobre Flickr30k y validar el cálculo de métricas y la gestión de semillas.
 - Reproducción de líneas base de investigación: útil como punto de partida para replicar experimentos de recuperación multimodal con presupuesto de cómputo mínimo.
-- Test de integración de adaptadores de HuggingFace: dado que requiere un adaptador explícito, es adecuado para validar dicho adaptador en CI sin coste de GPU.
+- Test de integración de adaptadores de Hugging Face: dado que requiere un adaptador explícito, es adecuado para validar dicho adaptador en CI sin coste de GPU.
 - Docencia y formación técnica: implementación transparente y pequeña para explicar la anatomía de un transformer BEiT y una cabeza de retrieval.
 - Validación de scripts de despliegue: permite probar contenedores, formatos de artefacto y flujos de empaquetado con un modelo de tamaño despreciable.
 - No es adecuado para recuperación en producción, ya que el checkpoint no ha sido entrenado ni auditado.
@@ -85,7 +85,7 @@ Los datos de CLIP, SigLIP y BEiT corresponden a sus versiones públicas conocida
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tobiasbecktes/retrieval
-- Perfil del autor en HuggingFace: https://huggingface.co/tobiasbecktes/models
+- Modelo en Hugging Face: https://huggingface.co/tobiasbecktes/retrieval
+- Perfil del autor en Hugging Face: https://huggingface.co/tobiasbecktes/models
 - Otro repositorio del autor: https://huggingface.co/tobiasbecktes/project-chatbot
 - No se han encontrado papers, blogs, demos ni repositorios adicionales específicos de este modelo en la búsqueda web.

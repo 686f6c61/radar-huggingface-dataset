@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Pengcheng-Ju/Qwen2.5-7B-_lora_sft_BMG_GFA",
+  "slug": "pengcheng-ju-qwen2-5-7b-_lora_sft_bmg_gfa",
+  "author": "Pengcheng-Ju",
+  "url": "https://huggingface.co/Pengcheng-Ju/Qwen2.5-7B-_lora_sft_BMG_GFA",
+  "created_at": "2026-01-22T04:09:48.000Z",
+  "updated_at": "2026-11-06T06:54:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "en",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-7B-Instruct",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15246211526,
+  "storage_human": "15.2 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

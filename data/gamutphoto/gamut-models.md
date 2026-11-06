@@ -100,7 +100,7 @@ No se han proporcionado resultados de benchmarks que permitan comparar numericam
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/GamutPhoto/gamut-models
+- Repositorio en Hugging Face: https://huggingface.co/GamutPhoto/gamut-models
 - Conversion ONNX de BiRefNet lite: https://huggingface.co/onnx-community/BiRefNet_lite-ONNX
 - Modelo original BiRefNet lite: https://huggingface.co/ZhengPeng7/BiRefNet_lite
 - Exportaciones ONNX de SAM 2.1: https://huggingface.co/vietanhdev/segment-anything-2.1-onnx-models (herramienta samexporter, de Viet-Anh Nguyen)

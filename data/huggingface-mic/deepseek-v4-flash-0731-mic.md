@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al tr
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-V4-Flash-0731-mic | 19,96 M | no disponible | Fixture de prueba | no disponible | HuggingFace (265 descargas) |
-| deepseek-ai/DeepSeek-V4-Flash-0731 | no disponible en la informacion | no disponible | Modelo real de produccion | no disponible | HuggingFace (modelo base) |
-| Otros fixtures `transformers-mic` | Variable (reducidos) | no disponible | Validacion de integracion | no disponible | HuggingFace |
+| DeepSeek-V4-Flash-0731-mic | 19,96 M | no disponible | Fixture de prueba | no disponible | Hugging Face (265 descargas) |
+| deepseek-ai/DeepSeek-V4-Flash-0731 | no disponible en la informacion | no disponible | Modelo real de produccion | no disponible | Hugging Face (modelo base) |
+| Otros fixtures `transformers-mic` | Variable (reducidos) | no disponible | Validacion de integracion | no disponible | Hugging Face |
 
 La comparativa con modelos de produccion de la misma categoria no es posible con los datos disponibles: el fixture no compite en calidad ni rendimiento, solo replica la interfaz del modelo base a escala reducida.
 
@@ -79,7 +79,7 @@ La comparativa con modelos de produccion de la misma categoria no es posible con
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/huggingface-mic/DeepSeek-V4-Flash-0731-mic
+- Repositorio Hugging Face: https://huggingface.co/huggingface-mic/DeepSeek-V4-Flash-0731-mic
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
 - Manifiesto de contrato: `integration.json` (en el repo)
 - Uso con Transformers: `integrations/transformers/usage.md` (en el repo)

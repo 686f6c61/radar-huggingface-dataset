@@ -2,7 +2,7 @@
 
 ## Resumen
 
-asr4all-l es un modelo de reconocimiento automatico del habla (ASR) desarrollado por FUTO (futo-org), publicado en HuggingFace bajo la licencia futo-model-weights-ethical-use-1.0. Se trata de un modelo de 96.999.005 parametros totales (segun los pesos en safetensors; la model card desglosa 91,5 millones en el modulo acustico y 5,3 millones en un modulo PCEC de puntuacion, capitalizacion y correccion de errores). Su objetivo no es competir en precision bruta con los modelos ASR mas grandes, sino ofrecer una eficiencia muy alta en CPU, movil y dispositivos edge, con inferencia en streaming y factor de tiempo real (RTFx) muy superior al de modelos de tamano comparable.
+asr4all-l es un modelo de reconocimiento automatico del habla (ASR) desarrollado por FUTO (futo-org), publicado en Hugging Face bajo la licencia futo-model-weights-ethical-use-1.0. Se trata de un modelo de 96.999.005 parametros totales (segun los pesos en safetensors; la model card desglosa 91,5 millones en el modulo acustico y 5,3 millones en un modulo PCEC de puntuacion, capitalizacion y correccion de errores). Su objetivo no es competir en precision bruta con los modelos ASR mas grandes, sino ofrecer una eficiencia muy alta en CPU, movil y dispositivos edge, con inferencia en streaming y factor de tiempo real (RTFx) muy superior al de modelos de tamano comparable.
 
 La arquitectura es propietaria y esta basada en CTC, optimizada explicitamente para operaciones vectorizadas SIMD y NEON, con un modelo auxiliar de lenguaje pequeno para puntuacion, capitalizacion y correccion ligera, ademas de un detector de actividad de voz (VAD) ultraligero. Los mismos pesos admiten modos de streaming de baja y alta latencia, configurables en tiempo de ejecucion, lo que la convierte en una opcion interesante para transcripcion continua en dispositivos sin GPU.
 
@@ -100,7 +100,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos alternati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/futo-org/asr4all-l
+- Hugging Face: https://huggingface.co/futo-org/asr4all-l
 - Licencia (referenciada como LICENSE en el repositorio): https://huggingface.co/futo-org/asr4all-l/blob/main/LICENSE
 - Paper referenciado en las etiquetas del modelo (arXiv 2607.25870): https://arxiv.org/abs/2607.25870
 - Datasets declarados en la model card:

@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| KryptykAngel/qwen-image-edit-uncensored-GGUF | ~20,4 B | 512x512 a 1024x1024 | Unknown | GGUF en HuggingFace |
-| Qwen/Qwen-Image-Edit-2511 (base) | No disponible | No disponible | No disponible | Pesos originales en HuggingFace |
-| Phr00t/Qwen-Image-Edit-Rapid-AIO | No disponible | No disponible | No disponible | Pesos en HuggingFace |
+| KryptykAngel/qwen-image-edit-uncensored-GGUF | ~20,4 B | 512x512 a 1024x1024 | Unknown | GGUF en Hugging Face |
+| Qwen/Qwen-Image-Edit-2511 (base) | No disponible | No disponible | No disponible | Pesos originales en Hugging Face |
+| Phr00t/Qwen-Image-Edit-Rapid-AIO | No disponible | No disponible | No disponible | Pesos en Hugging Face |
 
 No se dispone de datos de benchmarks ni de especificaciones detalladas de los modelos comparables en la informacion proporcionada, por lo que la comparacion cuantitativa de rendimiento no esta disponible.
 
@@ -86,7 +86,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de los mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KryptykAngel/qwen-image-edit-uncensored-GGUF
+- Modelo en Hugging Face: https://huggingface.co/KryptykAngel/qwen-image-edit-uncensored-GGUF
 - Modelo base Qwen-Image-Edit-2511: https://huggingface.co/Qwen/Qwen-Image-Edit-2511
 - Modelo base Rapid-AIO: https://huggingface.co/Phr00t/Qwen-Image-Edit-Rapid-AIO
 - Transformer Q4_K_M: https://huggingface.co/ChrisColeTech/qwen-image-edit-uncensored-GGUF/resolve/main/split/diffusion_models/qwen-image-edit-2511-uncensored-Q4_K_M.gguf

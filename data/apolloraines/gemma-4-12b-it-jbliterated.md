@@ -85,7 +85,7 @@ No se dispone de datos comparativos con otros modelos de tamano similar (p. ej.,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ApolloRaines/Gemma-4-12B-it-Jbliterated
+- Modelo en Hugging Face: https://huggingface.co/ApolloRaines/Gemma-4-12B-it-Jbliterated
 - Version v2: https://huggingface.co/ApolloRaines/Gemma-4-12B-it-Jbliterated-v2
 - Modelo base: https://huggingface.co/google/gemma-4-12b-it-qat-q4_0-unquantized
 - Herramienta DeepswapLLM: https://github.com/apolloraines/DeepswapLLM

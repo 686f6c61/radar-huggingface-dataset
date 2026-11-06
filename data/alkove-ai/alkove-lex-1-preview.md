@@ -85,7 +85,7 @@ No se han publicado otros resultados de MMLU, HumanEval, GSM8K, MMMU ni benchmar
 | Contexto | palabra de hasta 33 caracteres; prefijo de 39 posiciones | no disponible |
 | Rendimiento | 86,0 % de primera pronunciación correcta (300 palabras, 7 idiomas; no verificado) | no disponible |
 | Licencia | Apache-2.0 | no disponible |
-| Disponibilidad | HuggingFace; ONNX int8 | no disponible |
+| Disponibilidad | Hugging Face; ONNX int8 | no disponible |
 
 No se han proporcionado datos verificables de otros modelos G2P (parámetros, contexto, benchmarks, licencia o disponibilidad) en la información de partida, por lo que no se puede establecer una comparación cuantitativa rigurosa. La única comparación cualitativa posible se limita al formato: frente a soluciones G2P integradas en frameworks TTS, este modelo se distribuye como un ONNX int8 de 1,8 MB para ejecución local en WebAssembly y CPU; no hay cifras comparativas de precisión. alkove-spot-1-preview no es una alternativa G2P: es el modelo de wake word con cuyo conjunto de fonemas trabaja Lex.
 

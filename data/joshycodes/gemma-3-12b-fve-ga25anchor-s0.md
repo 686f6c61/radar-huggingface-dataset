@@ -24,7 +24,7 @@ El modelo hereda del base la arquitectura y la ventana de contexto de Gemma 3 12
 | Revision / variante | `fve-ga25anchor-s0` |
 | Etiquetas del autor | synthetic-document-finetuning, self-authored-character, model-welfare, research, not-for-deployment |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
-| Fecha de creacion registrada | 2026-09-28 (segun los metadatos de HuggingFace; fecha posterior a la actual, dato a verificar en el repositorio) |
+| Fecha de creacion registrada | 2026-09-28 (segun los metadatos de Hugging Face; fecha posterior a la actual, dato a verificar en el repositorio) |
 
 ## Arquitectura y entrenamiento
 
@@ -97,7 +97,7 @@ La comparacion con modelos de otros fabricantes no se incluye porque la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/gemma-3-12b-fve-ga25anchor-s0
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/gemma-3-12b-fve-ga25anchor-s0
 - Modelo base: https://huggingface.co/google/gemma-3-12b-it
 - Checkpoint hermano de la misma linea: https://huggingface.co/joshycodes/gemma-3-12b-fve-workanchor-s1
 - Repositorio de la libreria Gemma de Google DeepMind: https://github.com/google-deepmind/gemma

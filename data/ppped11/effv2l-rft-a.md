@@ -85,7 +85,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `ppped11/effv2l-rft-a` | 119.027.848 | 480x480 | Clasificacion ImageNet-1K con ajuste adversarial | apache-2.0 | HuggingFace (pesos propios) |
+| `ppped11/effv2l-rft-a` | 119.027.848 | 480x480 | Clasificacion ImageNet-1K con ajuste adversarial | apache-2.0 | Hugging Face (pesos propios) |
 | EfficientNetV2-L (torchvision, `IMAGENET1K_V1`) | ~119 M | 480x480 | Clasificacion ImageNet-1K | no disponible en la informacion proporcionada | torchvision |
 | EfficientNetV2-M (torchvision) | ~54 M | 480x480 | Clasificacion ImageNet-1K | no disponible en la informacion proporcionada | torchvision |
 | ConvNeXt-L (torchvision) | ~198 M | 224x224 | Clasificacion ImageNet-1K | no disponible en la informacion proporcionada | torchvision |
@@ -108,7 +108,7 @@ La comparacion se limita al recuento de parametros, resolucion de entrada y disp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ppped11/effv2l-rft-a
+- Modelo en Hugging Face: https://huggingface.co/ppped11/effv2l-rft-a
 - Subred Perturb: https://perturbai.io
 - Bittensor (red de subredes descentralizadas): https://bittensor.com
 - Documentacion de torchvision para `efficientnet_v2_l`: https://pytorch.org/vision/stable/models/efficientnetv2.html

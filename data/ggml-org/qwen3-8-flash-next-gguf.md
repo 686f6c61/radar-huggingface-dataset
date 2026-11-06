@@ -69,7 +69,7 @@ No se dispone de información suficiente para realizar una comparativa directa c
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/ggml-org/Qwen3.8-Flash-Next-GGUF
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/ggml-org/Qwen3.8-Flash-Next-GGUF
 - Guía de unsloth para ejecutar Qwen3.8-Flash-Next: https://unsloth.ai/docs/models/qwen3.8-next
 - Blog de atomic.chat sobre ejecución local: https://atomic.chat/blog/guides/how-to-run-qwen-3-8-flash-next-locally
 - Repositorio oficial de Qwen3.8 en GitHub: https://github.com/QwenLM/Qwen3.8

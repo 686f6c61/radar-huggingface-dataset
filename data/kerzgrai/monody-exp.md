@@ -92,11 +92,11 @@ La unica comparacion con datos verificables es la de su gemelo Rondo-Exp. Frente
 - Licencia Apache 2.0: permite uso comercial y modificacion con atribucion, pero la licencia no implica idoneidad tecnica; el uso en produccion con este modelo no esta respaldado por sus resultados.
 - Dependencia tecnica: requiere flash-linear-attention y kernels GDN-2, lo que limita la portabilidad a motores de inferencia estandar y a plataformas no NVIDIA (no verificadas por el autor).
 - Datos incompletos: no hay informacion sobre tokenizador, composicion exacta del dataset, hiperparametros de entrenamiento ni desglose de benchmarks por tarea.
-- Trazabilidad temporal: las fechas del repositorio (creacion 2026-10-27) deben tomarse como las reportadas por HuggingFace.
+- Trazabilidad temporal: las fechas del repositorio (creacion 2026-10-27) deben tomarse como las reportadas por Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KerzgrAI/Monody-Exp
+- Modelo en Hugging Face: https://huggingface.co/KerzgrAI/Monody-Exp
 - Modelo gemelo (difusion enmascarada): https://huggingface.co/KerzgrAI/Rondo-Exp
 - Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Libreria de kernels requerida (mencionada en la model card): flash-linear-attention (sin URL especifica en la informacion disponible)

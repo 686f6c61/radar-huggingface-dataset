@@ -74,9 +74,9 @@ Las cifras corresponden a contexto vacio; la velocidad de decodificacion disminu
 
 | Modelo | Parametros | Contexto | Formato y runtime | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NaorBonomo/gemma-4-e4b-it-4bit-ple | 4.644.441.130 | no disponible | safetensors + binario PLE, SwiftPLE | Gemma | HuggingFace, 0 descargas |
-| mlx-community/gemma-4-e4b-it-4bit | mismos pesos base (4-bit) | no disponible | MLX estandar | Gemma | HuggingFace (modelo de origen) |
-| Gemma 4 E4B IT original | no disponible | no disponible | safetensors, transformers | Gemma | HuggingFace |
+| NaorBonomo/gemma-4-e4b-it-4bit-ple | 4.644.441.130 | no disponible | safetensors + binario PLE, SwiftPLE | Gemma | Hugging Face, 0 descargas |
+| mlx-community/gemma-4-e4b-it-4bit | mismos pesos base (4-bit) | no disponible | MLX estandar | Gemma | Hugging Face (modelo de origen) |
+| Gemma 4 E4B IT original | no disponible | no disponible | safetensors, transformers | Gemma | Hugging Face |
 
 La diferencia frente al checkpoint de `mlx-community` no esta en los pesos ni en la calidad, sino en el empaquetado: la version PLE permite ejecutarse en iPhone sin superar el limite de memoria de iOS, mientras que el checkpoint estandar requiere un cargador MLX convencional y no cabe en el presupuesto de memoria de un telefono. Frente al Gemma 4 E4B original, este reempaquetado pierde las torres de vision y audio.
 
@@ -95,8 +95,8 @@ La diferencia frente al checkpoint de `mlx-community` no esta en los pesos ni en
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/NaorBonomo/gemma-4-e4b-it-4bit-ple
-- Modelo base en HuggingFace: https://huggingface.co/mlx-community/gemma-4-e4b-it-4bit
+- Repositorio Hugging Face: https://huggingface.co/NaorBonomo/gemma-4-e4b-it-4bit-ple
+- Modelo base en Hugging Face: https://huggingface.co/mlx-community/gemma-4-e4b-it-4bit
 - Runtime SwiftPLE: https://github.com/naorbonomo/SwiftPLE
 - Herramienta de conversion `ple-splitter`: https://github.com/naorbonomo/SwiftPLE (ruta `Tools/ple-splitter`)
 - App de demostracion iOS/macOS: https://github.com/naorbonomo/SwiftPLE (ruta `Example/SwiftPLEDemo`)

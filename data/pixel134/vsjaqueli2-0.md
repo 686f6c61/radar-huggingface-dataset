@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Pixel134/VsJaqueli2.0 es un repositorio alojado en HuggingFace por el usuario Pixel134, publicado el 3 de septiembre de 2026. La model card asociada no contiene ninguna descripcion tecnica, arquitectura, parametros, ni documentacion de uso: unicamente declara la licencia cc-by-2.0. El repositorio registra cero descargas y cero likes, lo que sugiere que se trata de un repositorio vacio, un placeholder o un experimento sin publicar.
+Pixel134/VsJaqueli2.0 es un repositorio alojado en Hugging Face por el usuario Pixel134, publicado el 3 de septiembre de 2026. La model card asociada no contiene ninguna descripcion tecnica, arquitectura, parametros, ni documentacion de uso: unicamente declara la licencia cc-by-2.0. El repositorio registra cero descargas y cero likes, lo que sugiere que se trata de un repositorio vacio, un placeholder o un experimento sin publicar.
 
 No existe informacion verificable sobre que tipo de modelo es (si es un LLM, un modelo de difusion, un embedding, etc.), su tamano, su arquitectura ni sus capacidades. Cualquier uso en produccion o evaluacion seria especulativo y no recomendable sin una actualizacion del repositorio por parte del autor.
 
@@ -53,6 +53,6 @@ No disponible. Al no existir informacion sobre la arquitectura, el tamano o la t
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Pixel134/VsJaqueli2.0
+- Repositorio Hugging Face: https://huggingface.co/Pixel134/VsJaqueli2.0
 
 No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo en la busqueda web.

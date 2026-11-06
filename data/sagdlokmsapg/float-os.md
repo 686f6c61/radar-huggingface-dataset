@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`float-OS` no es un modelo de inteligencia artificial. Se trata de un repositorio alojado en HuggingFace bajo el identificador `sagdlokmsapg/float-OS` cuya model card describe el perfil profesional de Aidan Vance, un ingeniero de software de sistemas residente en Trondheim (Noruega), y su proyecto homonimo: un microkernel experimental basado en capacidades, escrito en Rust, Zig y ensamblador, dirigido a arquitecturas x86_64 y AArch64.
+`float-OS` no es un modelo de inteligencia artificial. Se trata de un repositorio alojado en Hugging Face bajo el identificador `sagdlokmsapg/float-OS` cuya model card describe el perfil profesional de Aidan Vance, un ingeniero de software de sistemas residente en Trondheim (Noruega), y su proyecto homonimo: un microkernel experimental basado en capacidades, escrito en Rust, Zig y ensamblador, dirigido a arquitecturas x86_64 y AArch64.
 
 El contenido del repositorio no incluye pesos, tokenizador, configuracion de arquitectura ni artefactos de inferencia. La model card funciona como portafolio tecnico: enumera proyectos de codigo abierto (`float-OS`, `wave-forge`, `tinytui`, `ferro-raft`), la matriz de lenguajes y herramientas que emplea el autor, su banco de hardware y sus lineas de investigacion activas (especificaciones TLA+ para handshakes de capacidades asincronos, aritmetica de punto fijo para osciladores wavetable en Cortex-M4, backends de compilador auto-hospedados).
 
@@ -67,14 +67,14 @@ No disponible. No existe una categoria de modelos comparable porque `float-OS` n
 - El repositorio no contiene pesos, tokenizador, configuracion ni codigo de inferencia: no puede ejecutarse como modelo.
 - La model card es un perfil personal y portafolio, no una ficha tecnica de modelo; los campos habituales (parametros, contexto, licencia, idiomas) no estan cubiertos.
 - No se declara licencia, lo que impide determinar condiciones de uso comercial o redistribucion de cualquier contenido del repositorio.
-- El identificador del autor en HuggingFace (`sagdlokmsapg`) no coincide con el handle citado en la model card (`@float-OS`), lo que conviene verificar antes de atribuir autoria.
+- El identificador del autor en Hugging Face (`sagdlokmsapg`) no coincide con el handle citado en la model card (`@float-OS`), lo que conviene verificar antes de atribuir autoria.
 - Cero descargas y cero likes, repositorio creado y actualizado el mismo dia: no hay evidencia de uso, validacion externa ni mantenimiento.
 - Riesgo de confusion: el nombre puede llevar a buscar un modelo de lenguaje inexistente; no debe citarse como modelo en comparativas, benchmarks ni pipelines de IA.
 - Cualquier dato de rendimiento, sesgo o alucinacion es inaplicable por ausencia de modelo.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sagdlokmsapg/float-OS
+- Repositorio en Hugging Face: https://huggingface.co/sagdlokmsapg/float-OS
 - Documentacion localizada citada en la model card (rutas relativas del propio repositorio): `./docs/locales/es.md`, `./docs/locales/ko.md`, `./docs/locales/ja.md`, `./docs/locales/zh-CN.md`, `./docs/locales/fr.md`, `./docs/locales/de.md`, `./docs/locales/ru.md`, `./docs/locales/ar.md`, `./docs/locales/hi.md`
 - Contacto indicado por el autor: `float.os.kernel@gmail.com`
 - Huella GPG indicada: `7E9B 4410 F302 89A1 55B8  0DC4 91D2 00A3 EF27 C418`

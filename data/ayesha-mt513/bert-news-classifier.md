@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ayesha-mt513/bert-news-classifier` es un modelo publicado en HuggingFace por el usuario ayesha-mt513 bajo licencia Apache 2.0. La ficha del repositorio no contiene ninguna documentación técnica: la model card se reduce al bloque de metadatos con la licencia y no incluye descripción, datos de entrenamiento, métricas ni ejemplos de uso. El repositorio registra cero descargas y cero likes en el momento de la consulta, y no declara pipeline de inferencia ni idiomas soportados.
+`ayesha-mt513/bert-news-classifier` es un modelo publicado en Hugging Face por el usuario ayesha-mt513 bajo licencia Apache 2.0. La ficha del repositorio no contiene ninguna documentación técnica: la model card se reduce al bloque de metadatos con la licencia y no incluye descripción, datos de entrenamiento, métricas ni ejemplos de uso. El repositorio registra cero descargas y cero likes en el momento de la consulta, y no declara pipeline de inferencia ni idiomas soportados.
 
 Por el identificador del repositorio cabe inferir que se trata de un clasificador de noticias basado en la familia BERT, es decir, un transformer codificador afinado para una tarea de clasificación de texto. Esta deducción procede únicamente del nombre del modelo y no está confirmada por ninguna fuente del repositorio; no hay información sobre el número de parámetros, el corpus de entrenamiento, el número de clases ni el esquema de etiquetas.
 
@@ -73,10 +73,10 @@ No hay datos del modelo objetivo para comparar parámetros, contexto ni rendimie
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento publicado | Disponibilidad |
 |---|---|---|---|---|---|
-| ayesha-mt513/bert-news-classifier | no disponible | no disponible | Apache 2.0 | no disponible | HuggingFace, sin documentacion |
-| bert-base-uncased | 110 M | 512 tokens | Apache 2.0 | GLUE publicado en el paper original | HuggingFace y mirrors |
-| distilbert-base-uncased | 66 M | 512 tokens | Apache 2.0 | GLUE publicado por los autores | HuggingFace y mirrors |
-| roberta-base | 125 M | 512 tokens | MIT | GLUE publicado en el paper original | HuggingFace y mirrors |
+| ayesha-mt513/bert-news-classifier | no disponible | no disponible | Apache 2.0 | no disponible | Hugging Face, sin documentacion |
+| bert-base-uncased | 110 M | 512 tokens | Apache 2.0 | GLUE publicado en el paper original | Hugging Face y mirrors |
+| distilbert-base-uncased | 66 M | 512 tokens | Apache 2.0 | GLUE publicado por los autores | Hugging Face y mirrors |
+| roberta-base | 125 M | 512 tokens | MIT | GLUE publicado en el paper original | Hugging Face y mirrors |
 
 Esta comparativa es puramente orientativa: sin conocer la arquitectura real ni las métricas del modelo objetivo, no es posible establecer una comparación de rendimiento con fundamento.
 
@@ -95,5 +95,5 @@ Esta comparativa es puramente orientativa: sin conocer la arquitectura real ni l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ayesha-mt513/bert-news-classifier
+- Modelo en Hugging Face: https://huggingface.co/ayesha-mt513/bert-news-classifier
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados al modelo en la búsqueda web realizada.

@@ -102,7 +102,7 @@ La comparación relevante es contra los builds de Unsloth del mismo layout, porq
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AtomicChat/DeepSeek-V4.1-Flash-1017-Uncensored-GGUF
+- Repositorio Hugging Face: https://huggingface.co/AtomicChat/DeepSeek-V4.1-Flash-1017-Uncensored-GGUF
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Builds de referencia de Unsloth: https://huggingface.co/unsloth/DeepSeek-V4.1-Flash-1017-GGUF
 - PR de Unsloth para llama.cpp (commit `9d907b7cfe0e`): https://github.com/unslothai/llama.cpp/pull/298

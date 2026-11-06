@@ -89,7 +89,7 @@ No disponible. No se han publicado en la informacion proporcionada otros checkpo
 
 | Modelo | Parametros | Contexto | Validacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nero-optimizer-work-simow-lr0p00025 | ~999.680 | 128 tokens | No disponible | No disponible | HuggingFace, MLX (.npz) |
+| nero-optimizer-work-simow-lr0p00025 | ~999.680 | 128 tokens | No disponible | No disponible | Hugging Face, MLX (.npz) |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -107,7 +107,7 @@ No disponible. No se han publicado en la informacion proporcionada otros checkpo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/j0no12/nero-optimizer-work-simow-lr0p00025
+- Hugging Face: https://huggingface.co/j0no12/nero-optimizer-work-simow-lr0p00025
 - Paper, blog o repositorio asociado: no disponible en la informacion proporcionada.
 - Demo o espacio interactivo: no disponible en la informacion proporcionada.
 - Resultados de busqueda web relevantes: no disponible (la busqueda no devolvio resultados relacionados con el modelo).

@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HyperLinked/s1-mini-litertlm | ~0,6 B (base Qwen3-0.6B) | 2.048 tokens | `.litertlm` (int8 dinamico) | s1-mini-license (Apache 2.0 + atribucion) | HuggingFace, 0 descargas |
-| superwhisper/s1-mini | ~0,6 B (base Qwen3-0.6B) | No disponible | No disponible (pesos originales) | s1-mini-license | HuggingFace (modelo original) |
-| mlboydaisuke/S1-mini-LiteRT | ~0,6 B | No disponible | `.litertlm` | s1-mini-license | HuggingFace (conversion alternativa) |
-| Qwen3-0.6B (base, no ajustado) | ~0,6 B | 32.768 tokens (segun especificaciones publicas de Qwen3, no incluidas en la informacion proporcionada) | safetensors/GGUF (no confirmado en esta busqueda) | Apache 2.0 | HuggingFace |
+| HyperLinked/s1-mini-litertlm | ~0,6 B (base Qwen3-0.6B) | 2.048 tokens | `.litertlm` (int8 dinamico) | s1-mini-license (Apache 2.0 + atribucion) | Hugging Face, 0 descargas |
+| superwhisper/s1-mini | ~0,6 B (base Qwen3-0.6B) | No disponible | No disponible (pesos originales) | s1-mini-license | Hugging Face (modelo original) |
+| mlboydaisuke/S1-mini-LiteRT | ~0,6 B | No disponible | `.litertlm` | s1-mini-license | Hugging Face (conversion alternativa) |
+| Qwen3-0.6B (base, no ajustado) | ~0,6 B | 32.768 tokens (segun especificaciones publicas de Qwen3, no incluidas en la informacion proporcionada) | safetensors/GGUF (no confirmado en esta busqueda) | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a variantes del mismo modelo base porque no se han encontrado en la informacion disponible modelos especializados en normalizacion de dictado del mismo orden de tamano con datos publicos de rendimiento.
 
@@ -81,7 +81,7 @@ La comparativa se limita a variantes del mismo modelo base porque no se han enco
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/HyperLinked/s1-mini-litertlm
+- Repositorio en Hugging Face: https://huggingface.co/HyperLinked/s1-mini-litertlm
 - Modelo original: https://huggingface.co/superwhisper/s1-mini
 - Conversion alternativa de terceros: https://huggingface.co/mlboydaisuke/S1-mini-LiteRT
 - Runtime LiteRT-LM (Google AI Edge): https://github.com/google-ai-edge/LiteRT-LM

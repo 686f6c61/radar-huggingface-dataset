@@ -77,7 +77,7 @@ La comparativa se limita a modelos multimodales de tamano similar. El modelo de 
 
 ## Enlaces
 
-- [HuggingFace - ethanfel/Qwen3-VL-32B-Ultra-Heretic-H3-ComfyUI-INT8-ConvRot](https://huggingface.co/ethanfel/Qwen3-VL-32B-Ultra-Heretic-H3-ComfyUI-INT8-ConvRot)
+- [Hugging Face - ethanfel/Qwen3-VL-32B-Ultra-Heretic-H3-ComfyUI-INT8-ConvRot](https://huggingface.co/ethanfel/Qwen3-VL-32B-Ultra-Heretic-H3-ComfyUI-INT8-ConvRot)
 - [Arbol de archivos del repositorio](https://huggingface.co/ethanfel/Qwen3-VL-32B-Ultra-Heretic-H3-ComfyUI-INT8-ConvRot/tree/abe23806d6cf4a4a58c8d12de6c9538a28a172b8)
 - [Analisis de compatibilidad con DGX Spark](https://howtospark.com/models/ethanfel/Qwen3-VL-32B-Ultra-Heretic-H3-ComfyUI-INT8-ConvRot)
 - [Modelo similar: Qwen3 VL 32B Ultra Heretic MiniMax H3 ComfyUI INT8 ConvRot](https://interfaze.ai/models/ethanfelqwen3-vl-32b-ultra-heretic-minimax-h3-comfyui-int8-convrot)

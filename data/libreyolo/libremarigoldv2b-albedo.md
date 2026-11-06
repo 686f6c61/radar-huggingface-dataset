@@ -87,9 +87,9 @@ No se dispone de datos de rendimiento ni de especificaciones de alternativas en 
 
 | Modelo | Rol | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|
-| LibreMarigoldV2b-albedo | Adaptador de albedo empaquetado para libreyolo | Apache 2.0 | HuggingFace, 0 descargas | Requiere el base Qwen-Image-Edit-2509; anade metadatos LibreYOLO y omite dos tensores iREPA de entrenamiento |
-| huawei-bayerlab/marigold-v2-0 | Modelo upstream de Marigold V2 (subfolder `albedo`) | Apache 2.0 | HuggingFace | Misma implementacion de inferencia, decodificador y prompts; origen del adaptador |
-| Qwen/Qwen-Image-Edit-2509 | Backbone de difusion transformer congelado | Apache 2.0 | HuggingFace, revision fijada | Descarga separada; sin el, el adaptador no funciona |
+| LibreMarigoldV2b-albedo | Adaptador de albedo empaquetado para libreyolo | Apache 2.0 | Hugging Face, 0 descargas | Requiere el base Qwen-Image-Edit-2509; anade metadatos LibreYOLO y omite dos tensores iREPA de entrenamiento |
+| huawei-bayerlab/marigold-v2-0 | Modelo upstream de Marigold V2 (subfolder `albedo`) | Apache 2.0 | Hugging Face | Misma implementacion de inferencia, decodificador y prompts; origen del adaptador |
+| Qwen/Qwen-Image-Edit-2509 | Backbone de difusion transformer congelado | Apache 2.0 | Hugging Face, revision fijada | Descarga separada; sin el, el adaptador no funciona |
 
 Comparativas con otros estimadores de albedo o de intrinsics (por ejemplo, variantes de Marigold v1 u otros modelos de descomposicion intrinseca): no disponible.
 
@@ -108,7 +108,7 @@ Comparativas con otros estimadores de albedo o de intrinsics (por ejemplo, varia
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LibreYOLO/LibreMarigoldV2b-albedo
+- Modelo en Hugging Face: https://huggingface.co/LibreYOLO/LibreMarigoldV2b-albedo
 - Modelo base Marigold V2: https://huggingface.co/huawei-bayerlab/marigold-v2-0/tree/6fd6d1ca246c9d2d99a4d8ac375a4eccc87178ad
 - Modelo base Qwen-Image-Edit-2509: https://huggingface.co/Qwen/Qwen-Image-Edit-2509/tree/d3968ef930e841f4c73640fb8afa3b306a78167e
 - Implementacion original de Marigold V2: https://github.com/huawei-bayerlab/marigold-v2/tree/cc6a7031abcd59fd9e1ceff7fdd0d9687d389bc5

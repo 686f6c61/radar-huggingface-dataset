@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `bare-corporation/bare-ai-qwen-176b-edge-harness` en HuggingFace no contiene ningún archivo de modelo (tamaño del repositorio: 0.0 GB) y su model card únicamente declara `license: unknown` sin ninguna otra especificación. A pesar del nombre, que sugiere un modelo basado en Qwen de 176 mil millones de parámetros, no hay evidencia de que se hayan subido pesos, configuraciones o documentación técnica. La organización Bare-Corporation, según su perfil de GitHub, desarrolla un "CLI wrapper" que orquesta modelos de IA externos (como Gemini) mediante un entorno de ejecución contextual, por lo que este repositorio podría ser un placeholder, un harness de evaluación o un wrapper sin pesos propios.
+El repositorio `bare-corporation/bare-ai-qwen-176b-edge-harness` en Hugging Face no contiene ningún archivo de modelo (tamaño del repositorio: 0.0 GB) y su model card únicamente declara `license: unknown` sin ninguna otra especificación. A pesar del nombre, que sugiere un modelo basado en Qwen de 176 mil millones de parámetros, no hay evidencia de que se hayan subido pesos, configuraciones o documentación técnica. La organización Bare-Corporation, según su perfil de GitHub, desarrolla un "CLI wrapper" que orquesta modelos de IA externos (como Gemini) mediante un entorno de ejecución contextual, por lo que este repositorio podría ser un placeholder, un harness de evaluación o un wrapper sin pesos propios.
 
 Dado que no se dispone de información técnica verificable, esta ficha se limita a documentar la ausencia de datos y a señalar las posibles interpretaciones del repositorio. No se puede confirmar la existencia de un modelo real, su arquitectura, ni sus capacidades. Se recomienda a los desarrolladores no utilizar este repositorio como base para integraciones hasta que se publique contenido sustancial.
 
@@ -54,7 +54,7 @@ No disponible. No se puede comparar este repositorio con otros modelos porque no
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bare-corporation/bare-ai-qwen-176b-edge-harness
+- Repositorio Hugging Face: https://huggingface.co/bare-corporation/bare-ai-qwen-176b-edge-harness
 - Perfil de GitHub de Bare-Corporation: https://github.com/Bare-Corporation
 - Sitio web de Bare-AI: https://bare-ai.net/
 - Qwen (página oficial): https://qwen.ai/home

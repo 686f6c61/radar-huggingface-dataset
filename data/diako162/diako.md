@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Diako es un modelo publicado en HuggingFace bajo el identificador `Diako162/Diako` por el usuario Diako162. En el momento de redactar esta ficha, la model card asociada al repositorio contiene unicamente el bloque de metadatos de licencia (`license: apache-2.0`) y ningun texto descriptivo, por lo que no es posible determinar que problema resuelve, cual es su arquitectura ni a que categoria de modelos pertenece.
+Diako es un modelo publicado en Hugging Face bajo el identificador `Diako162/Diako` por el usuario Diako162. En el momento de redactar esta ficha, la model card asociada al repositorio contiene unicamente el bloque de metadatos de licencia (`license: apache-2.0`) y ningun texto descriptivo, por lo que no es posible determinar que problema resuelve, cual es su arquitectura ni a que categoria de modelos pertenece.
 
 El repositorio registra 0 descargas y 0 likes, fue creado el 25 de septiembre de 2026 y no se ha actualizado desde entonces. No se ha publicado informacion sobre el pipeline de inferencia, los idiomas soportados, el numero de parametros ni la longitud de contexto.
 
@@ -64,7 +64,7 @@ No disponible. Al no conocerse la categoria, el tamano, la tarea ni la licencia 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Diako | no disponible | no disponible | no disponible | apache-2.0 | repositorio HuggingFace sin documentacion |
+| Diako | no disponible | no disponible | no disponible | apache-2.0 | repositorio Hugging Face sin documentacion |
 | Alternativa 1 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativa 2 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -81,6 +81,6 @@ No disponible. Al no conocerse la categoria, el tamano, la tarea ni la licencia 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Diako162/Diako
+- Repositorio en Hugging Face: https://huggingface.co/Diako162/Diako
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de codigo ni demos) en la informacion disponible.

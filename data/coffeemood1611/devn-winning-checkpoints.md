@@ -62,5 +62,5 @@ No disponible. No se conocen modelos comparables de la misma categoría ni se di
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/Coffeemood1611/devn-winning-checkpoints)
+- [Repositorio Hugging Face](https://huggingface.co/Coffeemood1611/devn-winning-checkpoints)
 - No se han encontrado otros enlaces relevantes (papers, blogs, demos) en la búsqueda web.

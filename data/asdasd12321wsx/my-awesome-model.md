@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje desarrollado por el usuario ASDASD12321WSX, publicado en HuggingFace con licencia MIT. Según la model card, se trata de un modelo entrenado con recursos computacionales significativos y optimizaciones algorítmicas durante el post-entrenamiento, que demuestra un rendimiento destacado en tareas de matemáticas, programación y razonamiento lógico. El modelo está disponible para extracción de características (feature extraction) mediante la librería transformers de PyTorch.
+MyAwesomeModel es un modelo de lenguaje desarrollado por el usuario ASDASD12321WSX, publicado en Hugging Face con licencia MIT. Según la model card, se trata de un modelo entrenado con recursos computacionales significativos y optimizaciones algorítmicas durante el post-entrenamiento, que demuestra un rendimiento destacado en tareas de matemáticas, programación y razonamiento lógico. El modelo está disponible para extracción de características (feature extraction) mediante la librería transformers de PyTorch.
 
 La relevancia de este modelo radica en su capacidad para abordar tareas complejas de razonamiento, como lo indica la mejora en el test AIME 2025, donde la precisión pasó del 70% al 87,5% respecto a una versión anterior. Sin embargo, la información pública disponible es limitada: no se especifican detalles de arquitectura, número de parámetros, longitud de contexto ni datos de entrenamiento. A pesar de ello, los resultados de evaluación en 15 benchmarks sugieren un modelo polivalente con buen desempeño en comprensión lectora, generación de código, traducción y seguimiento de instrucciones.
 
@@ -77,7 +77,7 @@ La puntuación global ponderada es de 0.71. Además, se menciona una mejora en e
 
 ## Requisitos de hardware
 
-No se dispone de información sobre requisitos de hardware, VRAM estimada, GPUs recomendadas ni opciones de despliegue. El tamaño del repositorio es de 0.0 GB, lo que sugiere que los pesos no están publicados en el repositorio de HuggingFace, o que el modelo es extremadamente pequeño, pero no se puede confirmar. Se recomienda contactar con el autor para obtener detalles sobre el despliegue.
+No se dispone de información sobre requisitos de hardware, VRAM estimada, GPUs recomendadas ni opciones de despliegue. El tamaño del repositorio es de 0.0 GB, lo que sugiere que los pesos no están publicados en el repositorio de Hugging Face, o que el modelo es extremadamente pequeño, pero no se puede confirmar. Se recomienda contactar con el autor para obtener detalles sobre el despliegue.
 
 ## Comparativa con modelos similares
 
@@ -93,6 +93,6 @@ No se dispone de información sobre modelos comparables. La model card no mencio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ASDASD12321WSX/my-awesome-model
+- Hugging Face: https://huggingface.co/ASDASD12321WSX/my-awesome-model
 
 No se han encontrado otros enlaces (papers, blogs, repositorios de código, demos) en la información proporcionada.

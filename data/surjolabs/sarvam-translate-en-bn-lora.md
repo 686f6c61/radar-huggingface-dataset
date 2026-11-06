@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `SurjoLabs/sarvam-translate-en-bn-lora` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario SurjoLabs, orientado a la traducción automática entre inglés y bengalí (en-bn). El nombre sugiere que se trata de un ajuste fino eficiente sobre el modelo base Sarvam-Translate, desarrollado por Sarvam AI, que a su vez está construido sobre Gemma3-4B-IT y cubre las 22 lenguas oficiales de la India. Sin embargo, la model card no proporciona información verificada sobre el modelo base, los datos de entrenamiento ni los hiperparámetros.
+El modelo `SurjoLabs/sarvam-translate-en-bn-lora` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario SurjoLabs, orientado a la traducción automática entre inglés y bengalí (en-bn). El nombre sugiere que se trata de un ajuste fino eficiente sobre el modelo base Sarvam-Translate, desarrollado por Sarvam AI, que a su vez está construido sobre Gemma3-4B-IT y cubre las 22 lenguas oficiales de la India. Sin embargo, la model card no proporciona información verificada sobre el modelo base, los datos de entrenamiento ni los hiperparámetros.
 
 El repositorio tiene un tamaño de 2,1 GB y contiene pesos en formato safetensors, lo que indica que es compatible con la librería transformers. La ficha oficial es una plantilla genérica sin contenido técnico, por lo que la mayor parte de las especificaciones permanecen desconocidas. Este adaptador podría ser útil para quienes necesiten una solución ligera de traducción en-bn, pero su uso en producción requeriría una evaluación previa exhaustiva.
 
@@ -68,7 +68,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SurjoLabs/sarvam-translate-en-bn-lora
+- Repositorio Hugging Face: https://huggingface.co/SurjoLabs/sarvam-translate-en-bn-lora
 - Modelo base Sarvam-Translate (referencia): https://huggingface.co/sarvamai/sarvam-translate
 - Documentacion de Sarvam Translate: https://docs.sarvam.ai/api/getting-started/models/sarvam-translate
 - Pagina de modelos de Sarvam AI: https://www.sarvam.ai/models

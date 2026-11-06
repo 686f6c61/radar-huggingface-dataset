@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`eric-z2/WL-context-distilroberta-fold_1` es un modelo de clasificacion de tokens (token classification) publicado en HuggingFace por el usuario eric-z2, construido sobre la arquitectura DistilRoBERTa. El repositorio contiene pesos en formato safetensors con 81.533.960 parametros, lo que coincide con el tamano estandar de DistilRoBERTa (aproximadamente 82 millones), un encoder transformer destilado a partir de RoBERTa-base. El pipeline declarado es `token-classification`, es decir, el modelo asigna una etiqueta a cada token de entrada, tipicamente para tareas de reconocimiento de entidades nombradas (NER) o etiquetado secuencial similar.
+`eric-z2/WL-context-distilroberta-fold_1` es un modelo de clasificacion de tokens (token classification) publicado en Hugging Face por el usuario eric-z2, construido sobre la arquitectura DistilRoBERTa. El repositorio contiene pesos en formato safetensors con 81.533.960 parametros, lo que coincide con el tamano estandar de DistilRoBERTa (aproximadamente 82 millones), un encoder transformer destilado a partir de RoBERTa-base. El pipeline declarado es `token-classification`, es decir, el modelo asigna una etiqueta a cada token de entrada, tipicamente para tareas de reconocimiento de entidades nombradas (NER) o etiquetado secuencial similar.
 
-El nombre del repositorio sugiere dos cosas: "WL-context" apunta a un conjunto de datos o tarea con contexto a nivel de palabra, y "fold_1" indica que se trata del primer pliegue de un esquema de validacion cruzada, por lo que es probable que existan otros checkpoints hermanos del mismo autor. No obstante, el autor no ha documentado nada de esto: la model card es la plantilla autogenerada de HuggingFace y todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluacion) aparecen como `[More Information Needed]`.
+El nombre del repositorio sugiere dos cosas: "WL-context" apunta a un conjunto de datos o tarea con contexto a nivel de palabra, y "fold_1" indica que se trata del primer pliegue de un esquema de validacion cruzada, por lo que es probable que existan otros checkpoints hermanos del mismo autor. No obstante, el autor no ha documentado nada de esto: la model card es la plantilla autogenerada de Hugging Face y todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluacion) aparecen como `[More Information Needed]`.
 
 La relevancia de este modelo es limitada en el ecosistema actual: se trata de un checkpoint sin documentacion, sin licencia declarada, sin resultados de evaluacion y con cero descargas y cero likes en el momento de la consulta. Su interes practico es el de un encoder pequeno y rapido para tareas de etiquetado de secuencias, pero cualquier evaluacion seria exige primero inferir la tarea concreta y el esquema de etiquetas a partir de la configuracion del repositorio.
 
@@ -31,7 +31,7 @@ La relevancia de este modelo es limitada en el ecosistema actual: se trata de un
 
 La arquitectura subyacente es DistilRoBERTa: un encoder transformer de 6 capas con hidden size de 768 y 12 cabezas de atencion, obtenido mediante destilacion por conocimiento a partir de RoBERTa-base (que a su vez es una version de BERT entrenada con objetivos y datos modificados). Sobre ese encoder, el autor ha anadido una cabeza de clasificacion de tokens, que produce una distribucion de probabilidad por token de entrada sobre el conjunto de etiquetas del esquema de anotacion utilizado. El numero de etiquetas, sus nombres y su significado no estan documentados en la model card ni en los metadatos publicos consultados.
 
-No hay informacion sobre el procedimiento de entrenamiento: se desconoce el conjunto de datos, el numero de tokens de entrenamiento, la composicion del corpus, si hubo ajuste fino supervisado, que hiperparametros se usaron ni si se aplicaron tecnicas de regularizacion o aumento de datos. Tampoco hay evidencia de RLHF, DPO ni de ninguna innovacion tecnica (atencion lineal, decodificacion especulativa, adaptadores, etc.). El unico tag de tipo paper presente, `arxiv:1910.09700`, corresponde a Lacoste et al. (2019), "Quantifying the Carbon Emissions of Machine Learning", que aparece en la plantilla estandar de model card de HuggingFace como referencia de la calculadora de impacto de carbono; no es el paper del modelo.
+No hay informacion sobre el procedimiento de entrenamiento: se desconoce el conjunto de datos, el numero de tokens de entrenamiento, la composicion del corpus, si hubo ajuste fino supervisado, que hiperparametros se usaron ni si se aplicaron tecnicas de regularizacion o aumento de datos. Tampoco hay evidencia de RLHF, DPO ni de ninguna innovacion tecnica (atencion lineal, decodificacion especulativa, adaptadores, etc.). El unico tag de tipo paper presente, `arxiv:1910.09700`, corresponde a Lacoste et al. (2019), "Quantifying the Carbon Emissions of Machine Learning", que aparece en la plantilla estandar de model card de Hugging Face como referencia de la calculadora de impacto de carbono; no es el paper del modelo.
 
 ## Capacidades
 
@@ -97,7 +97,7 @@ El checkpoint analizado no puede compararse en calidad porque no hay evaluacion 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/eric-z2/WL-context-distilroberta-fold_1
+- Hugging Face: https://huggingface.co/eric-z2/WL-context-distilroberta-fold_1
 - Paper referenciado en los tags (`arxiv:1910.09700`), Lacoste et al. (2019), "Quantifying the Carbon Emissions of Machine Learning": https://arxiv.org/abs/1910.09700 (aparece en la plantilla de model card, no es el paper del modelo)
 - Calculadora de impacto de carbono citada en la plantilla: https://mlco2.github.io/impact#compute
 - Los resultados de busqueda web devueltos no guardan ninguna relacion con el modelo (contenido sobre turismo en Delhi) y no se incluyen como fuentes.

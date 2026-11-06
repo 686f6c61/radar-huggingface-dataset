@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks adicionales en la informacion dispo
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Dreemurr0/radyoai-risk-onnx | Clasificador tabular lineal (ONNX) | 5 coeficientes + intercepto | no aplica | ROC-AUC 0,726 en hold-out propio | no disponible | HuggingFace, 0 descargas |
+| Dreemurr0/radyoai-risk-onnx | Clasificador tabular lineal (ONNX) | 5 coeficientes + intercepto | no aplica | ROC-AUC 0,726 en hold-out propio | no disponible | Hugging Face, 0 descargas |
 | Clasificador tabular generico con scikit-learn | Clasificador tabular | Depende del algoritmo | no aplica | Depende del dataset | segun libreria (BSD-3) | Amplia |
 | XGBoost / LightGBM (referencia tabular) | Ensemble de arboles | Depende de la configuracion | no aplica | Habitualmente superior en tabular | Apache 2.0 / MIT | Amplia |
 
@@ -87,5 +87,5 @@ No se dispone de modelos comparables directos publicados con el mismo proposito 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dreemurr0/radyoai-risk-onnx
+- Modelo en Hugging Face: https://huggingface.co/Dreemurr0/radyoai-risk-onnx
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales asociados al modelo.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`zickTnT/ppo-LunarLander-v2` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) para resolver el entorno `LunarLander-v2`. Lo publica el usuario zickTnT en HuggingFace y se distribuye mediante la librería stable-baselines3, sin model card desarrollada más allá de la plantilla autogenerada (el bloque de uso contiene literalmente un "TODO").
+`zickTnT/ppo-LunarLander-v2` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) para resolver el entorno `LunarLander-v2`. Lo publica el usuario zickTnT en Hugging Face y se distribuye mediante la librería stable-baselines3, sin model card desarrollada más allá de la plantilla autogenerada (el bloque de uso contiene literalmente un "TODO").
 
 No se trata de un modelo de lenguaje ni de un modelo fundacional: es una política entrenada para una tarea concreta de control continuo-discreto. El entorno LunarLander-v2 simula el aterrizaje de un módulo sobre una plataforma, con un espacio de observación de 8 dimensiones y un espacio de acciones discreto de 4 valores (no hacer nada, encender motor izquierdo, encender motor principal, encender motor derecho). El agente reporta una recompensa media de 291,97 +/- 15,62 en el propio entorno de entrenamiento.
 
@@ -50,7 +50,7 @@ No se dispone de datos sobre hiperparametros (learning rate, tamano de batch, nu
 ## Casos de uso
 
 - Docencia de aprendizaje por refuerzo: usar el agente como ejemplo funcional de PPO en un curso, cargandolo con stable-baselines3 para ilustrar la diferencia entre politica entrenada y politica aleatoria sobre LunarLander-v2.
-- Validacion de pipelines de publicacion en HuggingFace: emplearlo para comprobar que el flujo `entrenar -> guardar con huggingface_sb3 -> cargar desde el Hub` funciona de extremo a extremo antes de subir modelos propios.
+- Validacion de pipelines de publicacion en Hugging Face: emplearlo para comprobar que el flujo `entrenar -> guardar con huggingface_sb3 -> cargar desde el Hub` funciona de extremo a extremo antes de subir modelos propios.
 - Benchmark base de comparacion: tomarlo como linea base de PPO con la configuracion por defecto al probar variantes de hiperparametros, siempre reevaluando bajo el mismo protocolo y con varias semillas.
 - Pruebas de integracion con Gymnasium/Box2D en un entorno de CI: ejecutar episodios headless para verificar que las dependencias nativas del simulador estan correctamente instaladas en la maquina de build.
 - Demostraciones visuales de RL: renderizar episodios del aterrizaje en charlas o materiales docentes, dado que es un entorno con salida grafica inmediata y coste computacional minimo.
@@ -78,9 +78,9 @@ Los datos proceden del `model-index` incluido en la model card del autor. No hay
 
 | Modelo | Algoritmo | Entorno | Recompensa media declarada | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| zickTnT/ppo-LunarLander-v2 | PPO | LunarLander-v2 | 291,97 +/- 15,62 (no verificado) | no aplicable (no es un LLM) | no disponible | HuggingFace, 9 descargas |
+| zickTnT/ppo-LunarLander-v2 | PPO | LunarLander-v2 | 291,97 +/- 15,62 (no verificado) | no aplicable (no es un LLM) | no disponible | Hugging Face, 9 descargas |
 | Alternativas DQN / A2C / PPO del zoo de stable-baselines3 | DQN, A2C, PPO | LunarLander-v2 | no disponible | no aplicable | MIT (codigo de la libreria) | Repositorio de stable-baselines3 |
-| Agentes de terceros etiquetados `LunarLander-v2` en el Hub | no disponible | LunarLander-v2 | no disponible | no aplicable | variable | HuggingFace |
+| Agentes de terceros etiquetados `LunarLander-v2` en el Hub | no disponible | LunarLander-v2 | no disponible | no aplicable | variable | Hugging Face |
 
 No se dispone de resultados comparables verificados bajo el mismo protocolo de evaluacion en la informacion proporcionada, por lo que la comparacion cuantitativa con otras políticas no puede realizarse.
 
@@ -98,7 +98,7 @@ No se dispone de resultados comparables verificados bajo el mismo protocolo de e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zickTnT/ppo-LunarLander-v2
+- Modelo en Hugging Face: https://huggingface.co/zickTnT/ppo-LunarLander-v2
 - Libreria stable-baselines3: https://github.com/DLR-RM/stable-baselines3
 - Utilidad de carga desde el Hub (`huggingface_sb3`): https://github.com/huggingface/huggingface_sb3
 - Entorno LunarLander-v2 (Gymnasium): https://gymnasium.farama.org/environments/box2d/lunar_lander/

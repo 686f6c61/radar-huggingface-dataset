@@ -76,7 +76,7 @@ La principal diferencia con el modelo base es el tamano en disco (11,9 GB frente
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sohailhosseini/Qwopus3.5-9B-Coder-FP8
+- Modelo en Hugging Face: https://huggingface.co/Sohailhosseini/Qwopus3.5-9B-Coder-FP8
 - Modelo base (Jackrong/Qwopus3.5-9B-Coder): https://huggingface.co/Jackrong/Qwopus3.5-9B-Coder
 - Pagina del modelo base en ModelScope: https://www.modelscope.cn/models/Jackrong/Qwopus3.5-9B-Coder
 - Variante MTP en AIAny: https://aiany.app/item/qwopus3-5-9b-coder-mtp

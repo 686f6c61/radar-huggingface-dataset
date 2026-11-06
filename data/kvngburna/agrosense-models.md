@@ -2,7 +2,7 @@
 
 ## Resumen
 
-kvngburna/agrosense-models es un repositorio de modelos publicado en HuggingFace por el usuario kvngburna. Se trata de una publicacion sin documentacion: la model card se limita a declarar `license: mit` y no incluye descripcion, arquitectura, datos de entrenamiento, idiomas ni instrucciones de uso. El repositorio se creo el 4 de octubre de 2026 y se actualizo unos tres minutos mas tarde, ocupa aproximadamente 0,1 GB y esta etiquetado con el formato `onnx` y licencia MIT, sin pipeline ni idiomas declarados.
+kvngburna/agrosense-models es un repositorio de modelos publicado en Hugging Face por el usuario kvngburna. Se trata de una publicacion sin documentacion: la model card se limita a declarar `license: mit` y no incluye descripcion, arquitectura, datos de entrenamiento, idiomas ni instrucciones de uso. El repositorio se creo el 4 de octubre de 2026 y se actualizo unos tres minutos mas tarde, ocupa aproximadamente 0,1 GB y esta etiquetado con el formato `onnx` y licencia MIT, sin pipeline ni idiomas declarados.
 
 En el momento de redactar esta ficha acumula 0 descargas y 0 likes, por lo que no existe validacion de la comunidad ni resultados publicos de evaluacion. La unica pista tecnica fiable es la etiqueta `onnx`, que indica que los artefactos estan exportados para inferencia mediante ONNX Runtime, y el tamano del repositorio, compatible con modelos compactos orientados a CPU o a dispositivos de borde.
 
@@ -84,7 +84,7 @@ No disponible. No se ha identificado ningun modelo comparable dentro de la infor
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kvngburna/agrosense-models
+- Repositorio en Hugging Face: https://huggingface.co/kvngburna/agrosense-models
 - AgroSense-AI/models (GitHub, proyecto homonimo no confirmado como relacionado): https://github.com/Eshant1008/AgroSense-AI/tree/main/models
 - Ranjana-01-coder/AgroSense (GitHub, proyecto homonimo no confirmado como relacionado): https://github.com/Ranjana-01-coder/AgroSense
 - AgroSense | Smart Farming & Precision Agriculture Platform: https://kvbgreenenergies.com/products/agrosense.html

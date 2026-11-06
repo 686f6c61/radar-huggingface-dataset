@@ -93,7 +93,7 @@ Puntos de referencia en desarrollo (2023, 8.756 h): persistencia ("llovió en lo
 
 | Modelo | Tamano | Enfoque | AUC-PR (test 2025) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| S9c (este modelo) | 736 B | Red 90→6→1 int8 + combinador logístico con NWP | 0,741 | CC-BY-4.0 | HuggingFace |
+| S9c (este modelo) | 736 B | Red 90→6→1 int8 + combinador logístico con NWP | 0,741 | CC-BY-4.0 | Hugging Face |
 | Red sin NWP (D8) | 3,3 KB | Red neuronal solo con datos de estación y vecinos | 0,682 | no disponible | Referencia interna del autor |
 | Blend mayor (MLP 32 + 300 árboles) | ~117 KB | Ensemble con NWP | 0,741 | no disponible | Referencia interna del autor |
 | Persistencia | 0 B | "Llovió en los últimos 10 min" | 0,380 (dev 2023) | no aplica | Baseline trivial |
@@ -115,7 +115,7 @@ La comparación relevante es interna al proyecto: S9c iguala en AUC-PR al blend 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jonatasperaza/s9c-jena-rain-nowcaster
+- Modelo en Hugging Face: https://huggingface.co/Jonatasperaza/s9c-jena-rain-nowcaster
 - README en portugués (README.pt-BR.md): referenciado en la model card, disponible en el repositorio del modelo
 - Registro de decisiones del proyecto (DECISOES.md, en portugués): referenciado en la model card, en el proyecto fuente
 - Datos abiertos de estaciones DWD: no disponible (URL no incluida en la información proporcionada)

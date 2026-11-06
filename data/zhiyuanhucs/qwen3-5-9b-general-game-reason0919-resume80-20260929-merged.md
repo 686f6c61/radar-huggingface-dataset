@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `zhiyuanhucs/Qwen3.5-9B-General-Game-reason0919-resume80-20260929-merged` es un ajuste fino supervisado (SFT) del modelo base `ltzheng/Qwen3.5-9B-General-Game`, publicado por el usuario zhiyuanhucs en HuggingFace. Se trata de un export en safetensors del checkpoint correspondiente al paso de entrenamiento empaquetado 320, partiendo de la revision `checkpoint-4183` del repositorio de origen. El pipeline declarado es `image-text-to-text`, por lo que admite entradas multimodales (imagen y texto) y salidas de texto.
+El modelo `zhiyuanhucs/Qwen3.5-9B-General-Game-reason0919-resume80-20260929-merged` es un ajuste fino supervisado (SFT) del modelo base `ltzheng/Qwen3.5-9B-General-Game`, publicado por el usuario zhiyuanhucs en Hugging Face. Se trata de un export en safetensors del checkpoint correspondiente al paso de entrenamiento empaquetado 320, partiendo de la revision `checkpoint-4183` del repositorio de origen. El pipeline declarado es `image-text-to-text`, por lo que admite entradas multimodales (imagen y texto) y salidas de texto.
 
 El modelo tiene 9.653.104.368 parametros segun los pesos safetensors, lo que lo situa en la clase de 9B, una franja muy habitual para despliegue en una unica GPU de 24 GB con cuantizacion o en dos GPU con precision completa. Su orientacion es el razonamiento sobre juegos y entornos interactivos: incorpora tokens especiales dedicados a la traza de pensamiento y a la accion (`<|thought_start|>`, `<|thought_end|>`, `<|action_start|>`, `<|action_end|>`, `<|action_sep|>`), lo que indica un formato de agente con bucle observar-pensar-actuar.
 
@@ -69,7 +69,7 @@ Estimaciones derivadas del recuento real de parametros (9.653.104.368), no de me
 - Inferencia en 4 bits: aproximadamente 5,5-6 GB de pesos; cabria en GPUs de consumo de 8 GB o mas, siempre que se disponga de una cuantizacion, que este repositorio no publica.
 - GPU recomendadas: A100 40/80 GB, H100, L40S o RTX 4090 para precision completa con contexto amplio; RTX 3090/4090 de 24 GB como opcion de consumo mas habitual.
 - Cabria en GPU de consumo: si, en el rango de 24 GB para FP16 con contexto moderado, y en 8-16 GB si se generan cuantizaciones propias.
-- Opciones de despliegue: al ser pesos safetensors con `library_name: transformers`, el camino directo es HuggingFace Transformers; vLLM o TGI serian aplicables si la arquitectura del modelo base esta soportada por esas herramientas, algo que no se verifica en la informacion disponible. Para llama.cpp u Ollama seria necesario convertir y cuantizar previamente, ya que no hay GGUF publicado.
+- Opciones de despliegue: al ser pesos safetensors con `library_name: transformers`, el camino directo es Hugging Face Transformers; vLLM o TGI serian aplicables si la arquitectura del modelo base esta soportada por esas herramientas, algo que no se verifica en la informacion disponible. Para llama.cpp u Ollama seria necesario convertir y cuantizar previamente, ya que no hay GGUF publicado.
 - Latencia y throughput: no disponibles.
 - Nota de almacenamiento: el repositorio ocupa 173,8 GB, muy por encima de lo necesario para 9,65B parametros en FP16 (unos 19 GB), por lo que hay que prever espacio en disco suficiente o descargar solo los ficheros necesarios.
 
@@ -99,7 +99,7 @@ No es posible ofrecer una comparativa cuantitativa fiable: la informacion propor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zhiyuanhucs/Qwen3.5-9B-General-Game-reason0919-resume80-20260929-merged
+- Modelo en Hugging Face: https://huggingface.co/zhiyuanhucs/Qwen3.5-9B-General-Game-reason0919-resume80-20260929-merged
 - Modelo base: https://huggingface.co/ltzheng/Qwen3.5-9B-General-Game
 - Repositorio de origen del checkpoint: https://huggingface.co/zhiyuanhucs/Qwen3.5-9B-General-Game-reason0919-resume80-20260929
 - Paper, blog o demo: no disponible en la informacion proporcionada.

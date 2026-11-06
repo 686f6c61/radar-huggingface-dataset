@@ -4,7 +4,7 @@
 
 El modelo `dynamic_forgetting_2_4_256_inverse_babylm_10m_seed44_epoch10` es un modelo de generación de texto de pequeño tamaño, con 27.449.096 parámetros, desarrollado por el usuario Lanni-ni. Su nombre indica que está vinculado a la iniciativa BabyLM, que estudia el entrenamiento de modelos de lenguaje con corpus reducidos (probablemente 10 millones de palabras), aplicando una técnica de "dynamic forgetting" (olvido dinámico) en su variante "inverse", con semilla 44 y 10 épocas de entrenamiento.
 
-El repositorio contiene únicamente los pesos en formato safetensors y una model card autogenerada por la librería HuggingFace Transformers, sin información técnica detallada. A fecha de consulta (2026-09-09), el modelo no tiene descargas ni "likes", lo que indica que se trata de un experimento de investigación sin documentación respaldada. La ausencia de benchmarks, licencia declarada o descripción del procedimiento de entrenamiento limita gravemente cualquier evaluación seria.
+El repositorio contiene únicamente los pesos en formato safetensors y una model card autogenerada por la librería Hugging Face Transformers, sin información técnica detallada. A fecha de consulta (2026-09-09), el modelo no tiene descargas ni "likes", lo que indica que se trata de un experimento de investigación sin documentación respaldada. La ausencia de benchmarks, licencia declarada o descripción del procedimiento de entrenamiento limita gravemente cualquier evaluación seria.
 
 ## Especificaciones tecnicas
 

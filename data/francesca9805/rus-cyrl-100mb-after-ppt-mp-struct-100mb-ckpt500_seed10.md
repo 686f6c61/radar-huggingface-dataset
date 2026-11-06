@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`francesca9805/rus-cyrl-100mb-after-ppt-mp-struct-100mb-ckpt500_seed10` es un checkpoint de generación de texto de 124.770.816 parámetros, desarrollado por el usuario de HuggingFace `francesca9805`, que corresponde al grupo de investigación de F. Padovani en la Universidad de Groningen según la traza del proyecto de Weights & Biases asociado. Se trata de un ajuste fino (SFT) mediante la librería TRL sobre el modelo base `francesca9805/rus-cyrl-100mb-ppt-mp-struct-100mb_seed10`, que a su vez parte de una arquitectura GPT-2.
+`francesca9805/rus-cyrl-100mb-after-ppt-mp-struct-100mb-ckpt500_seed10` es un checkpoint de generación de texto de 124.770.816 parámetros, desarrollado por el usuario de Hugging Face `francesca9805`, que corresponde al grupo de investigación de F. Padovani en la Universidad de Groningen según la traza del proyecto de Weights & Biases asociado. Se trata de un ajuste fino (SFT) mediante la librería TRL sobre el modelo base `francesca9805/rus-cyrl-100mb-ppt-mp-struct-100mb_seed10`, que a su vez parte de una arquitectura GPT-2.
 
 El modelo pertenece a una familia de experimentos de investigación centrada en tokenizadores y en el efecto del preentrenamiento con distintos volúmenes y estrategias de empaquetado de datos (los nombres de los modelos hermanos incluyen etiquetas como `Dp-10mb-packed-bfdiso` o `100mb-packed-bfdiso`). El sufijo `rus-cyrl` apunta a un corpus en ruso con escritura cirílica de aproximadamente 100 MB, y `ckpt500` indica que se trata del checkpoint del paso 500 de entrenamiento.
 
@@ -63,17 +63,17 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - GPU recomendadas: cualquier GPU moderna con al menos 2-4 GB de VRAM es suficiente; una RTX 3060, RTX 4060 o superior cubre el caso con holgura.
 - Cabe en GPU de consumo: sí, en prácticamente cualquier GPU discreta de los últimos diez años, e incluso en iGPU con memoria compartida.
 - Ejecución en CPU: viable, con latencia mayor pero funcional para pruebas y generación de pocos cientos de tokens.
-- Opciones de despliegue: `transformers` (soporte nativo confirmado), Text Generation Inference (etiqueta `text-generation-inference`), endpoints compatibles con la API de HuggingFace. vLLM es probablemente compatible al ser una arquitectura GPT-2, pero no está confirmado en la información disponible. No hay pesos GGUF publicados, por lo que llama.cpp u Ollama requerirían conversión previa.
+- Opciones de despliegue: `transformers` (soporte nativo confirmado), Text Generation Inference (etiqueta `text-generation-inference`), endpoints compatibles con la API de Hugging Face. vLLM es probablemente compatible al ser una arquitectura GPT-2, pero no está confirmado en la información disponible. No hay pesos GGUF publicados, por lo que llama.cpp u Ollama requerirían conversión previa.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `francesca9805/rus-cyrl-100mb-after-ppt-mp-struct-100mb-ckpt500_seed10` | 124,77 M | No disponible | No declarado (probable ruso/cirílico) | No disponible | HuggingFace, pesos safetensors |
-| GPT-2 small (OpenAI) | 124 M | 1.024 tokens | Inglés principalmente | Modified MIT | HuggingFace, ampliamente replicado |
-| `HuggingFaceTB/SmolLM-135M` | 135 M | 2.048 tokens | Inglés principalmente | Apache 2.0 | HuggingFace, con variantes GGUF y despliegue amplio |
-| `ai-forever/rugpt3small_based_on_gpt2` | ~125 M | No verificado en esta ficha | Ruso | No verificada en esta ficha | HuggingFace |
+| `francesca9805/rus-cyrl-100mb-after-ppt-mp-struct-100mb-ckpt500_seed10` | 124,77 M | No disponible | No declarado (probable ruso/cirílico) | No disponible | Hugging Face, pesos safetensors |
+| GPT-2 small (OpenAI) | 124 M | 1.024 tokens | Inglés principalmente | Modified MIT | Hugging Face, ampliamente replicado |
+| `HuggingFaceTB/SmolLM-135M` | 135 M | 2.048 tokens | Inglés principalmente | Apache 2.0 | Hugging Face, con variantes GGUF y despliegue amplio |
+| `ai-forever/rugpt3small_based_on_gpt2` | ~125 M | No verificado en esta ficha | Ruso | No verificada en esta ficha | Hugging Face |
 
 No se dispone de cifras de rendimiento comparadas para el modelo analizado, por lo que la comparación se limita a tamaño, contexto declarado, idioma y licencia. La principal diferencia frente a GPT-2 small y SmolLM-135M es su orientación al ruso y su naturaleza de checkpoint de investigación sin soporte ni documentación de producción.
 
@@ -91,7 +91,7 @@ No se dispone de cifras de rendimiento comparadas para el modelo analizado, por 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/rus-cyrl-100mb-after-ppt-mp-struct-100mb-ckpt500_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/rus-cyrl-100mb-after-ppt-mp-struct-100mb-ckpt500_seed10
 - Modelo base: https://huggingface.co/francesca9805/rus-cyrl-100mb-ppt-mp-struct-100mb_seed10
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Ejecución de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/chneqn1n

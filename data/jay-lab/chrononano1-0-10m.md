@@ -72,5 +72,5 @@ No disponible. No se ha encontrado información sobre modelos comparables en la 
 
 ## Enlaces
 
-- [HuggingFace - Jay-Lab/ChronoNano1.0-10M](https://huggingface.co/Jay-Lab/ChronoNano1.0-10M)
+- [Hugging Face - Jay-Lab/ChronoNano1.0-10M](https://huggingface.co/Jay-Lab/ChronoNano1.0-10M)
 - [GitHub - jay-ai-lab/jay-ai-lab](https://github.com/jay-ai-lab/jay-ai-lab) (perfil del autor, no se confirma que contenga el repositorio del modelo)

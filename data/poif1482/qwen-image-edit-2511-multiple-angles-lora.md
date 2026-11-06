@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Control de cámara | Contexto / cobertura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen-Image-Edit-2511-Multiple-Angles-LoRA (este) | LoRA sobre Qwen-Image-Edit-2511 | 96 poses (8 azimuts × 4 elevaciones × 3 distancias) | Entrenado con 3000+ pares de Gaussian Splatting | Apache 2.0 | HuggingFace, 14 descargas |
-| Qwen/Qwen-Image-Edit-2511 (base) | Modelo de difusión de edición de imagen | Capacidades de punto de vista integradas, sin control fino documentado | No disponible | No disponible en esta ficha | HuggingFace |
+| Qwen-Image-Edit-2511-Multiple-Angles-LoRA (este) | LoRA sobre Qwen-Image-Edit-2511 | 96 poses (8 azimuts × 4 elevaciones × 3 distancias) | Entrenado con 3000+ pares de Gaussian Splatting | Apache 2.0 | Hugging Face, 14 descargas |
+| Qwen/Qwen-Image-Edit-2511 (base) | Modelo de difusión de edición de imagen | Capacidades de punto de vista integradas, sin control fino documentado | No disponible | No disponible en esta ficha | Hugging Face |
 | Otros LoRA de control de cámara para modelos de difusión | Adaptadores LoRA | Variable; no se dispone de datos concretos en la información proporcionada | No disponible | No disponible | No disponible |
 
 No se dispone de información suficiente para comparar parámetros, contexto o rendimiento con alternativas concretas de la misma categoría; los datos de la model card no incluyen métricas comparativas.
@@ -81,6 +81,6 @@ No se dispone de información suficiente para comparar parámetros, contexto o r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Poif1482/Qwen-Image-Edit-2511-Multiple-Angles-LoRA
+- Modelo en Hugging Face: https://huggingface.co/Poif1482/Qwen-Image-Edit-2511-Multiple-Angles-LoRA
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-Edit-2511
 - Plataforma de construcción: https://fal.ai

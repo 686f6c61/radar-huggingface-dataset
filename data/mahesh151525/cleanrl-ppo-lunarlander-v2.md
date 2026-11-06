@@ -2,7 +2,7 @@
 
 ## Resumen
 
-cleanrl-ppo-LunarLander-v2 es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) para resolver el entorno LunarLander-v2. Lo publica el usuario Mahesh151525 en HuggingFace y no es un modelo de lenguaje: no procesa ni genera texto, sino que aprende una politica de control a partir de interacciones con un entorno de simulacion. La implementacion se describe como "coded from scratch with CleanRL architecture", es decir, una reimplementacion propia del estilo de codigo de CleanRL, con semilla fija y entrenamiento en GPU.
+cleanrl-ppo-LunarLander-v2 es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) para resolver el entorno LunarLander-v2. Lo publica el usuario Mahesh151525 en Hugging Face y no es un modelo de lenguaje: no procesa ni genera texto, sino que aprende una politica de control a partir de interacciones con un entorno de simulacion. La implementacion se describe como "coded from scratch with CleanRL architecture", es decir, una reimplementacion propia del estilo de codigo de CleanRL, con semilla fija y entrenamiento en GPU.
 
 El autor declara un reward medio de 259,45 +/- 20,98 en LunarLander-v2 tras 50.000 timesteps de entrenamiento, con hiperparametros tipicos de PPO (learning rate 2,5e-4 con annealing, GAE con lambda 0,95 y gamma 0,99, clip_coef 0,2, 4 entornos paralelos, batch de 512 y 4 epochs de actualizacion). El resultado supera el umbral de 200 que se suele considerar "resuelto" en este entorno, si bien la metrica aparece marcada como no verificada en la model card.
 
@@ -106,7 +106,7 @@ No se dispone de resultados numericos publicados de los modelos alternativos en 
 
 | Modelo | Tipo | Entorno | Timesteps declarados | Metrica publicada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Mahesh151525/cleanrl-ppo-LunarLander-v2 | PPO, implementacion propia estilo CleanRL | LunarLander-v2 | 50.000 | mean_reward 259,45 +/- 20,98 (no verificado) | no disponible | HuggingFace, 0 descargas, 0 likes |
+| Mahesh151525/cleanrl-ppo-LunarLander-v2 | PPO, implementacion propia estilo CleanRL | LunarLander-v2 | 50.000 | mean_reward 259,45 +/- 20,98 (no verificado) | no disponible | Hugging Face, 0 descargas, 0 likes |
 | CleanRL PPO (referencia oficial) | PPO, implementacion de referencia | LunarLander-v2 y otros | no disponible en esta ficha | no disponible | MIT (fuera del alcance de esta busqueda) | repositorio publico |
 | Stable-Baselines3 PPO | PPO sobre libreria mantenida | entornos Gymnasium, incluido LunarLander | no disponible en esta ficha | no disponible | MIT (fuera del alcance de esta busqueda) | paquete publico |
 | DQN sobre LunarLander-v2 | value-based, off-policy | LunarLander-v2 | no disponible en esta ficha | no disponible | no disponible | multiples repositorios |
@@ -129,5 +129,5 @@ Nota: las filas marcadas como no disponible no pueden completarse con la informa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Mahesh151525/cleanrl-ppo-LunarLander-v2
+- Hugging Face: https://huggingface.co/Mahesh151525/cleanrl-ppo-LunarLander-v2
 - Paper, blog, repositorio o demo adicionales: no disponible. Las busquedas web realizadas no devolvieron ningun resultado relacionado con este modelo; los unicos resultados obtenidos versan sobre el metodo de evaluacion de riesgos laborales de William T. Fine y no guardan relacion con el agente PPO ni con LunarLander-v2, por lo que se descartan como fuentes.

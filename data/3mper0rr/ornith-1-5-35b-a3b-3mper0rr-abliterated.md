@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ornith-1.5-35B-A3B-3MPER0RR-abliterated es un modelo de generacion de texto publicado en HuggingFace por el usuario 3MPER0RR. Se trata de una variante "abliterated" del modelo Ornith-1.5-35B-A3B, es decir, un ajuste cuyo objetivo declarado es eliminar o atenuar la direccion de rechazo (refusal) del modelo original mediante un proceso de abliteracion en varias rondas. La model card es minima: indica el nombre del modelo, el proceso aplicado ("multi-round abliteration"), el estado ("tested and saved"), el modelo de partida y la licencia MIT.
+Ornith-1.5-35B-A3B-3MPER0RR-abliterated es un modelo de generacion de texto publicado en Hugging Face por el usuario 3MPER0RR. Se trata de una variante "abliterated" del modelo Ornith-1.5-35B-A3B, es decir, un ajuste cuyo objetivo declarado es eliminar o atenuar la direccion de rechazo (refusal) del modelo original mediante un proceso de abliteracion en varias rondas. La model card es minima: indica el nombre del modelo, el proceso aplicado ("multi-round abliteration"), el estado ("tested and saved"), el modelo de partida y la licencia MIT.
 
 El modelo cuenta con 35.107.181.936 parametros totales, segun los datos reales de los ficheros safetensors, y la etiqueta de arquitectura del repositorio es `qwen3_5_moe`, lo que apunta a una arquitectura de mezcla de expertos (MoE) de la familia Qwen3.5. La nomenclatura "A3B" del nombre sugiere del orden de 3000 millones de parametros activos por token, aunque este dato no se confirma en la informacion disponible. El repositorio ocupa 70,2 GB, un tamano coherente con pesos almacenados en BF16.
 
@@ -90,7 +90,7 @@ Los datos de las columnas de modelos alternativos proceden de la documentacion p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/3MPER0RR/Ornith-1.5-35B-A3B-3MPER0RR-abliterated
+- Hugging Face: https://huggingface.co/3MPER0RR/Ornith-1.5-35B-A3B-3MPER0RR-abliterated
 - Modelo base declarado: no disponible (la model card menciona Ornith-1.5-35B-A3B sin enlace)
 - Paper o informe tecnico: no disponible
 - Repositorio de codigo: no disponible

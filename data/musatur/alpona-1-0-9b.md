@@ -92,9 +92,9 @@ Fuente: tablas 2.2 y 2.4 del Segundo Informe Trimestral del proyecto. Los result
 
 | Modelo | Parámetros | Contexto | VerilogEval v2 pass@1 | Licencia | Disponibilidad |
 |---|---:|---:|---:|---|---|
-| Alpona-1.0-9B | 8,95B | 262.144 | 74,3 % (con reparación) / 58,9 % en 30 tareas sin reparación | CC BY-SA 4.0 | HuggingFace, pesos fusionados |
-| Qwen3.5-9B (base) | 9B | 262.144 | 48,5 % (con reparación, según ChipMATE) | no disponible en la información proporcionada | HuggingFace |
-| CodeV-R1 (modelo del dataset de origen) | no disponible | no disponible | no disponible | no disponible | HuggingFace (dataset) |
+| Alpona-1.0-9B | 8,95B | 262.144 | 74,3 % (con reparación) / 58,9 % en 30 tareas sin reparación | CC BY-SA 4.0 | Hugging Face, pesos fusionados |
+| Qwen3.5-9B (base) | 9B | 262.144 | 48,5 % (con reparación, según ChipMATE) | no disponible en la información proporcionada | Hugging Face |
+| CodeV-R1 (modelo del dataset de origen) | no disponible | no disponible | no disponible | no disponible | Hugging Face (dataset) |
 
 No se dispone en la información proporcionada de datos comparativos de otros modelos especializados en RTL (por ejemplo, variantes de VeriGen, RTLCoder o CodeV) que permitan una comparación de parámetros, contexto y rendimiento con cifras verificables. La comparación más sólida disponible es la del modelo base Qwen3.5-9B, sobre el que Alpona mejora en 25,8 puntos de pass@1 en VerilogEval v2 y en 30,6 puntos en RTLLM v2, en ambos casos con el bucle de reparación.
 
@@ -114,7 +114,7 @@ No se dispone en la información proporcionada de datos comparativos de otros mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/musatur/Alpona-1.0-9B
+- Modelo en Hugging Face: https://huggingface.co/musatur/Alpona-1.0-9B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Dataset de entrenamiento: https://huggingface.co/datasets/zhuyaoyu/CodeV-R1-dataset
 - Benchmark VerilogEval: https://github.com/NVlabs/verilog-eval

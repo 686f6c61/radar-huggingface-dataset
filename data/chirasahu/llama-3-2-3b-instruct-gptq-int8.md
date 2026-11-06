@@ -59,10 +59,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Precision | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ChiraSahu/Llama-3.2-3B-Instruct-GPTQ-Int8 | 3.2B | no disponible (base 128k) | GPTQ Int8 | no disponible | HuggingFace |
-| meta-llama/Llama-3.2-3B-Instruct (FP16) | 3.2B | 128k | FP16 | Llama 3.2 Community | HuggingFace |
-| meta-llama/Llama-3.2-3B-Instruct-GPTQ-4bit (existente) | 3.2B | 128k | GPTQ Int4 | Llama 3.2 Community | HuggingFace |
-| google/gemma-2-2.6b-it | 2.6B | 8k | FP16 | Gemma License | HuggingFace |
+| ChiraSahu/Llama-3.2-3B-Instruct-GPTQ-Int8 | 3.2B | no disponible (base 128k) | GPTQ Int8 | no disponible | Hugging Face |
+| meta-llama/Llama-3.2-3B-Instruct (FP16) | 3.2B | 128k | FP16 | Llama 3.2 Community | Hugging Face |
+| meta-llama/Llama-3.2-3B-Instruct-GPTQ-4bit (existente) | 3.2B | 128k | GPTQ Int4 | Llama 3.2 Community | Hugging Face |
+| google/gemma-2-2.6b-it | 2.6B | 8k | FP16 | Gemma License | Hugging Face |
 
 La comparativa se basa en datos publicos de los modelos base. No hay benchmarks propios del checkpoint cuantizado, por lo que la comparacion de rendimiento no es posible sin evaluacion independiente.
 
@@ -77,7 +77,7 @@ La comparativa se basa en datos publicos de los modelos base. No hay benchmarks 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ChiraSahu/Llama-3.2-3B-Instruct-GPTQ-Int8
+- Repositorio Hugging Face: https://huggingface.co/ChiraSahu/Llama-3.2-3B-Instruct-GPTQ-Int8
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Libreria GPTQModel: https://github.com/ModelCloud/GPTQModel
 - Proyecto del autor (SPIT Mumbai): no se proporciona enlace directo en la informacion disponible.

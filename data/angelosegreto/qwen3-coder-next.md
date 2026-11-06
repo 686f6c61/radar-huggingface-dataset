@@ -98,7 +98,7 @@ El eje diferenciador de Qwen3-Coder-Next es la combinacion de contexto de 256K c
 
 ## Enlaces
 
-- Repositorio en HuggingFace (reupload): https://huggingface.co/ANGELOSEGRETO/Qwen3-Coder-Next
+- Repositorio en Hugging Face (reupload): https://huggingface.co/ANGELOSEGRETO/Qwen3-Coder-Next
 - Repositorio oficial de referencia: https://huggingface.co/Qwen/Qwen3-Coder-Next
 - Licencia referenciada en la model card: https://huggingface.co/Qwen/Qwen3-Coder-Next/blob/main/LICENSE
 - Blog de anuncio: https://qwen.ai/blog?id=qwen3-coder-next

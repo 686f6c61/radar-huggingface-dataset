@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos, ya que el
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/model-organisms-for-real/automo-cake-bake-gemma-3-1b-vanilla-dpo-123-seed-gemma-sft-sdf-mixed-lr-1e-5
+- Repositorio Hugging Face: https://huggingface.co/model-organisms-for-real/automo-cake-bake-gemma-3-1b-vanilla-dpo-123-seed-gemma-sft-sdf-mixed-lr-1e-5
 - Modelo base: https://huggingface.co/model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed
 - Coleccion de modelos replicados: https://huggingface.co/collections/model-organisms-for-real/gemma-replicated-models
 - Busqueda de modelos automo: https://huggingface.co/models?other=automo

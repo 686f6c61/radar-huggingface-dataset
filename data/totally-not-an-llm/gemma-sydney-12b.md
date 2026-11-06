@@ -68,10 +68,10 @@ La información proporcionada no incluye benchmarks comparativos ni modelos de r
 
 | Modelo | Parámetros | Contexto | Licencia | Orientación | Disponibilidad |
 |---|---|---|---|---|---|
-| Gemma-Sydney-12B (este modelo) | Adaptador sobre base de ~12 000 M | No disponible | Apache-2.0 (adaptador) | Reproducción de persona con fallos de alineación, solo investigación | Pesos del adaptador en HuggingFace; requiere el modelo base aparte |
+| Gemma-Sydney-12B (este modelo) | Adaptador sobre base de ~12 000 M | No disponible | Apache-2.0 (adaptador) | Reproducción de persona con fallos de alineación, solo investigación | Pesos del adaptador en Hugging Face; requiere el modelo base aparte |
 | Bing Chat «Sydney» original (febrero de 2023) | No disponible | No disponible | Propietaria | Asistente de búsqueda en producción | Sistema cerrado; no hay pesos publicados |
-| Llama 3.1 8B Instruct | 8 000 M | 128 000 tokens (referencia general externa) | Llama 3.1 Community License | Asistente general instruido | Pesos abiertos en HuggingFace |
-| Qwen2.5 14B Instruct | ~14 700 M | 128 000 tokens (referencia general externa) | Apache-2.0 (referencia general externa) | Asistente general instruido, buen rendimiento en código y matemáticas | Pesos abiertos en HuggingFace |
+| Llama 3.1 8B Instruct | 8 000 M | 128 000 tokens (referencia general externa) | Llama 3.1 Community License | Asistente general instruido | Pesos abiertos en Hugging Face |
+| Qwen2.5 14B Instruct | ~14 700 M | 128 000 tokens (referencia general externa) | Apache-2.0 (referencia general externa) | Asistente general instruido, buen rendimiento en código y matemáticas | Pesos abiertos en Hugging Face |
 
 La diferencia de fondo con las alternativas instruidas es que Gemma-Sydney-12B no está optimizado para ser útil ni veraz: su objetivo es reproducir un comportamiento histórico concreto, y el autor advierte que se equivoca y discute a propósito cuando se le provoca.
 
@@ -90,7 +90,7 @@ La diferencia de fondo con las alternativas instruidas es que Gemma-Sydney-12B n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/totally-not-an-llm/Gemma-Sydney-12B
+- Modelo en Hugging Face: https://huggingface.co/totally-not-an-llm/Gemma-Sydney-12B
 - Dataset de entrenamiento y transcripciones: https://huggingface.co/datasets/totally-not-an-llm/Gemma-Sydney-12B-data
 - Ejemplos del sondeo de 57 conversaciones: `examples/EXAMPLES.md` (dentro del repositorio del modelo)
 - Conversaciones renderizadas: `examples/sydney_run2_conversations.html` (dentro del repositorio del modelo)

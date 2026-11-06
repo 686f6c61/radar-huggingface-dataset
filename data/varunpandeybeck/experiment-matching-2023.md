@@ -41,7 +41,7 @@ El checkpoint `model.safetensors` es un **checkpoint de inicialización** válid
 - **Pruebas de integración en pipelines de ML**: el checkpoint de inicialización permite verificar que el código, los formatos de datos y el entorno de ejecución funcionan antes de lanzar entrenamientos completos.
 - **Educación y aprendizaje**: el código es un ejemplo didáctico de cómo implementar una arquitectura de matching con atención estándar y fusión bilineal en PyTorch.
 - **Benchmarking de optimizadores**: la receta con lion y onecycle puede usarse para comparar estrategias de optimización en tareas de matching.
-- **Desarrollo de adaptadores para HuggingFace**: al ser una implementación personalizada, requiere un adaptador explícito para cargarse con APIs genéricas, lo que puede servir como ejercicio de integración.
+- **Desarrollo de adaptadores para Hugging Face**: al ser una implementación personalizada, requiere un adaptador explícito para cargarse con APIs genéricas, lo que puede servir como ejercicio de integración.
 
 ## Benchmarks y rendimiento
 
@@ -64,10 +64,10 @@ No disponible. No se han encontrado modelos comparables de la misma categoría (
 - **Modelo no entrenado**: el checkpoint es solo una inicialización; no tiene capacidades reales de matching hasta que se entrene con datos.
 - **Sin evaluación**: no hay benchmarks, métricas ni validación de ningún tipo.
 - **Sin auditoría de sesgos**: el autor advierte de que no se ha auditado la robustez, equidad ni transferencia de dominio.
-- **Implementación personalizada**: no es compatible con APIs genéricas de HuggingFace sin un adaptador explícito.
+- **Implementación personalizada**: no es compatible con APIs genéricas de Hugging Face sin un adaptador explícito.
 - **Uso comercial**: la licencia Apache 2.0 permite uso comercial, pero el modelo no es útil para producción sin entrenamiento completo.
 - **Datos externos**: el autor recomienda revisar los términos de las fuentes de datos si se usa el repositorio con datasets externos.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Varunpandeybeck/experiment-matching-2023
+- Repositorio en Hugging Face: https://huggingface.co/Varunpandeybeck/experiment-matching-2023

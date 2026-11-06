@@ -80,7 +80,7 @@ Pruebas especificas: en las cinco decisiones de un agente de bandeja de entrada,
 - Memoria con adaptadores: el autor reporta +1,96 GB en total para Jeff con los nueve adaptadores LoRA cargados simultaneamente en una RTX PRO 6000.
 - GPU recomendadas: el autor cita RTX PRO 6000 para entrenamiento e inferencia y Apple M4 Max (MLX) para pruebas. Cualquier GPU con 4 GB o mas de VRAM deberia bastar para inferencia en precision reducida.
 - Cabe en GPU de consumo: si, por tamano (menos de mil millones de parametros). El autor no publica una lista de GPUs de consumo verificadas.
-- Opciones de despliegue: libreria `transformers`; el tag `endpoints_compatible` sugiere compatibilidad con endpoints de HuggingFace. El autor menciona vias de inferencia en RTX PRO 6000 y en MLX sobre Apple Silicon. No se detallan soportes de vLLM, llama.cpp, Ollama o TGI en la informacion disponible.
+- Opciones de despliegue: libreria `transformers`; el tag `endpoints_compatible` sugiere compatibilidad con endpoints de Hugging Face. El autor menciona vias de inferencia en RTX PRO 6000 y en MLX sobre Apple Silicon. No se detallan soportes de vLLM, llama.cpp, Ollama o TGI en la informacion disponible.
 - Latencia: 22 ms por decision en RTX PRO 6000 y 28 ms en Apple M4 Max con MLX. Throughput no publicado.
 - Entrenamiento: la variante 0.8B se entrena en unas 2 horas en una unica RTX PRO 6000; los adaptadores LoRA pueden entrenarse en menos de media hora en una GPU.
 
@@ -88,9 +88,9 @@ Pruebas especificas: en las cinco decisiones de un agente de bandeja de entrada,
 
 | Modelo | Parametros | Contexto | Precision del panel | ECE | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Jeff-Qwen3.5-0.8B (este) | 852.985.920 | No disponible | 78,7% | 0,028 | Apache 2.0 | HuggingFace (superseded) |
-| Jeff-Qwen3.5-2B | No disponible | No disponible | 81,7% | 0,021 | No disponible | HuggingFace |
-| Jeff-Gemma4-E2B | No disponible | No disponible | 81,6% | 0,031 | No disponible | HuggingFace |
+| Jeff-Qwen3.5-0.8B (este) | 852.985.920 | No disponible | 78,7% | 0,028 | Apache 2.0 | Hugging Face (superseded) |
+| Jeff-Qwen3.5-2B | No disponible | No disponible | 81,7% | 0,021 | No disponible | Hugging Face |
+| Jeff-Gemma4-E2B | No disponible | No disponible | 81,6% | 0,031 | No disponible | Hugging Face |
 | Jev (publicado) | No disponible | No disponible | 83,0% | ≈0,06 | No disponible | API |
 
 Dentro del propio proyecto existe una version posterior, Jeff v1.3, publicada en `mstrasser/jeff-base`, que reemplaza a este modelo. La comparacion con Jev es la que hace el autor, que aclara explicitamente que Jeff usa el mismo formato de peticion pero no esta afiliado ni respaldado por TypeSafe.
@@ -111,7 +111,7 @@ Dentro del propio proyecto existe una version posterior, Jeff v1.3, publicada en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jeff-legacy/Jeff-Qwen3.5-0.8B
+- Modelo en Hugging Face: https://huggingface.co/jeff-legacy/Jeff-Qwen3.5-0.8B
 - Release actual del proyecto (Jeff v1.3): https://huggingface.co/mstrasser/jeff-base
 - Variante 2B: https://huggingface.co/mstrasser/Jeff-Qwen3.5-2B
 - Catalogo y documentacion del proyecto: https://jeffhub.ai

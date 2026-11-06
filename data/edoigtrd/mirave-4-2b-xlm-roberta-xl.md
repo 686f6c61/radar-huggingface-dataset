@@ -87,9 +87,9 @@ Las cifras de VRAM que se indican a continuacion son **estimaciones derivadas de
 
 | Modelo | Backbone | Parametros cargados | Contexto | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Mirave-4.2B-xlm-roberta-xl | `facebook/xlm-roberta-xl` | ~4,16B (3,48B congelados + ~679,8M entrenables) | No disponible | Distribucion sobre opciones, forward pass unico | MIT | Pesos publicos en HuggingFace, codigo en GitHub |
-| Mirave-0.6B-xlm-roberta-large | `FacebookAI/xlm-roberta-large` | ~560M de backbone (misma cabeza y formato de prompt) | No disponible | Distribucion sobre opciones, forward pass unico | MIT | Pesos publicos en HuggingFace |
-| `facebook/xlm-roberta-xl` (base) | XLM-RoBERTa-XL | ~3,5B | No disponible | Embeddings de encoder / MLM | MIT | Pesos publicos en HuggingFace |
+| Mirave-4.2B-xlm-roberta-xl | `facebook/xlm-roberta-xl` | ~4,16B (3,48B congelados + ~679,8M entrenables) | No disponible | Distribucion sobre opciones, forward pass unico | MIT | Pesos publicos en Hugging Face, codigo en GitHub |
+| Mirave-0.6B-xlm-roberta-large | `FacebookAI/xlm-roberta-large` | ~560M de backbone (misma cabeza y formato de prompt) | No disponible | Distribucion sobre opciones, forward pass unico | MIT | Pesos publicos en Hugging Face |
+| `facebook/xlm-roberta-xl` (base) | XLM-RoBERTa-XL | ~3,5B | No disponible | Embeddings de encoder / MLM | MIT | Pesos publicos en Hugging Face |
 | Jev (TypeSafe AI) | No publico | No disponible | No disponible | Decisiones tipadas, forward pass unico | No publica | Pesos y metodologia no publicos |
 
 No se conocen en la informacion disponible otros modelos abiertos con cabeza de decision pointer sobre opciones declaradas en el prompt, mas alla de la propia familia Mirave. La comparacion con Jev es asimetrica por definicion: Mirave reproduce el comportamiento externamente observable y el objetivo de diseno, pero no los pesos ni la metodologia originales.
@@ -104,13 +104,13 @@ No se conocen en la informacion disponible otros modelos abiertos con cabeza de 
 - Sesgos: hereda los sesgos del corpus de preentrenamiento de XLM-R y de `ZefanCai/Open-Jev`. El autor no documenta analisis de sesgo especifico.
 - Riesgo de sobreconfianza: aunque la etiqueta del repositorio es `calibration`, sin datos publicados de calibracion no se puede asumir que las probabilidades sean fiables fuera de la distribucion de entrenamiento. Conviene validar con datos propios antes de usar umbrales fijos en produccion.
 - Restricciones de licencia: MIT, heredada del modelo base, lo que en principio permite uso comercial. Conviene verificar los terminos del backbone `facebook/xlm-roberta-xl` y del dataset `ZefanCai/Open-Jev` de forma independiente.
-- Falta de integracion estandar: al no existir un `modeling_*.py` en el repositorio de HuggingFace ni soporte en `transformers`, vLLM, TGI, llama.cpp u Ollama, la puesta en produccion exige integrar el codigo de carga del repositorio de GitHub, lo que anade coste de mantenimiento y riesgo de deriva entre versiones.
+- Falta de integracion estandar: al no existir un `modeling_*.py` en el repositorio de Hugging Face ni soporte en `transformers`, vLLM, TGI, llama.cpp u Ollama, la puesta en produccion exige integrar el codigo de carga del repositorio de GitHub, lo que anade coste de mantenimiento y riesgo de deriva entre versiones.
 - Adopcion nula: 0 descargas y 0 likes en el repositorio, sin validacion por parte de la comunidad.
 - Es una reproduccion no oficial: el comportamiento puede diferir del de Jev en aspectos no observables externamente, y las decisiones de diseno (LoRA mas tabla de embeddings entrenable sobre un backbone bidireccional) son propias de este proyecto.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Edoigtrd/Mirave-4.2B-xlm-roberta-xl
+- Modelo en Hugging Face: https://huggingface.co/Edoigtrd/Mirave-4.2B-xlm-roberta-xl
 - Variante menor (Mirave-0.6B-xlm-roberta-large): https://huggingface.co/Edoigtrd/Mirave-0.6B-xlm-roberta-large
 - Repositorio de codigo (entrenamiento, carga y servidor de inferencia compatible con la API de Jev): https://github.com/edoigtrd/Mirave
 - Modelo base: https://huggingface.co/facebook/xlm-roberta-xl

@@ -83,7 +83,7 @@ No se dispone de datos comparativos publicados en la informacion proporcionada. 
 
 | Modelo | Arquitectura | Tarea | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| follicle-fu-v0.1 | YOLO11n | Deteccion de unidades foliculares | 640 px | Apache 2.0 | HuggingFace (PyTorch + ONNX) |
+| follicle-fu-v0.1 | YOLO11n | Deteccion de unidades foliculares | 640 px | Apache 2.0 | Hugging Face (PyTorch + ONNX) |
 | Alternativas de deteccion capilar | no disponible | Deteccion de unidades foliculares | no disponible | no disponible | no disponible |
 | Variantes generalistas YOLO (YOLO11n/YOLOv8n sin ajuste) | YOLO | Deteccion generica de objetos | configurable | AGPL-3.0 (Ultralytics) | repositorios publicos |
 
@@ -102,7 +102,7 @@ No se han encontrado en la informacion proporcionada modelos comparables especif
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/openhairstack/follicle-fu-v0.1
+- Modelo en Hugging Face: https://huggingface.co/openhairstack/follicle-fu-v0.1
 - Dataset `follicle-v0.1`: openhairstack/follicle-v0.1
 - Dataset de origen en Roboflow Universe: `ranaudio/hair-follicle-detection-gjgak` (CC BY 4.0)
 - Documentacion de procedencia de datos: https://github.com/openhairstack/data-pipeline/blob/main/DATASETS.md

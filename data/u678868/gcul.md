@@ -2,9 +2,9 @@
 
 ## Resumen
 
-La entrada `u678868/GCUL` de HuggingFace corresponde al repositorio asociado a **Guided Clustering-based Uncertain Learning (GCUL)**, un marco de trabajo (*framework*) orientado a la clasificacion selectiva (*selective classification*) y publicado por el usuario u678868, identificado en la busqueda web como Zhongqi FAN. Segun la descripcion disponible en su sitio personal, GCUL se define como un marco guiado por geometria que deriva un criterio teorico de viabilidad para determinar cuando el rechazo guiado por agrupamientos (*cluster-guided rejection*) puede aportar utilidad operativa positiva, y lo valida sobre benchmarks reales de clasificacion de emociones. Es decir, no se trata de un modelo generativo de lenguaje, sino de un trabajo de investigacion sobre aprendizaje con incertidumbre y abstención selectiva.
+La entrada `u678868/GCUL` de Hugging Face corresponde al repositorio asociado a **Guided Clustering-based Uncertain Learning (GCUL)**, un marco de trabajo (*framework*) orientado a la clasificacion selectiva (*selective classification*) y publicado por el usuario u678868, identificado en la busqueda web como Zhongqi FAN. Segun la descripcion disponible en su sitio personal, GCUL se define como un marco guiado por geometria que deriva un criterio teorico de viabilidad para determinar cuando el rechazo guiado por agrupamientos (*cluster-guided rejection*) puede aportar utilidad operativa positiva, y lo valida sobre benchmarks reales de clasificacion de emociones. Es decir, no se trata de un modelo generativo de lenguaje, sino de un trabajo de investigacion sobre aprendizaje con incertidumbre y abstención selectiva.
 
-El repositorio de HuggingFace no contiene ninguna model card descriptiva: el unico contenido es la declaracion de licencia `apache-2.0`. No se publican pesos, arquitectura, configuracion de entrenamiento, tokenizador ni datos de evaluacion. El repositorio registra 0 descargas y 0 likes, y fue creado y actualizado en la misma fecha (23 de septiembre de 2026), lo que sugiere un artefacto de publicacion reciente o meramente referencial.
+El repositorio de Hugging Face no contiene ninguna model card descriptiva: el unico contenido es la declaracion de licencia `apache-2.0`. No se publican pesos, arquitectura, configuracion de entrenamiento, tokenizador ni datos de evaluacion. El repositorio registra 0 descargas y 0 likes, y fue creado y actualizado en la misma fecha (23 de septiembre de 2026), lo que sugiere un artefacto de publicacion reciente o meramente referencial.
 
 Por tanto, esta ficha documenta lo que es verificable y marca explicitamente como "no disponible" todo aquello que la informacion proporcionada no permite afirmar. Cualquier dato sobre parametros, contexto, cuantizacion o rendimiento numerico seria especulativo y no se incluye.
 
@@ -64,12 +64,12 @@ No disponible. La informacion proporcionada no incluye resultados numericos de G
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| u678868/GCUL | no disponible | no disponible | no disponible | Apache 2.0 | Repositorio HuggingFace sin pesos ni model card |
+| u678868/GCUL | no disponible | no disponible | no disponible | Apache 2.0 | Repositorio Hugging Face sin pesos ni model card |
 | Alternativas de clasificacion selectiva | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace no contiene model card, pesos, tokenizador ni documentacion tecnica; unicamente la licencia Apache 2.0.
+- El repositorio de Hugging Face no contiene model card, pesos, tokenizador ni documentacion tecnica; unicamente la licencia Apache 2.0.
 - No se puede confirmar que `u678868/GCUL` sea un modelo entrenado: la evidencia disponible apunta a un marco metodologico de investigacion, no a un modelo desplegable.
 - El autor identifica el trabajo con un proyecto academico reciente, sin indicios de mantenimiento, versionado o soporte.
 - No hay datos sobre sesgos, tasas de alucinacion, cobertura idiomatica ni robustez fuera del dominio de clasificacion de emociones.
@@ -80,7 +80,7 @@ No disponible. La informacion proporcionada no incluye resultados numericos de G
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/u678868/GCUL
+- Repositorio en Hugging Face: https://huggingface.co/u678868/GCUL
 - Sitio personal del autor (descripcion del proyecto GCUL): https://u678868.github.io/
 - Google DeepMind, Gemini (resultado de busqueda relacionado, no vinculado a GCUL): https://deepmind.google/models/gemini/
 - Gemini (resultado de busqueda relacionado, no vinculado a GCUL): https://gemini.google.com/

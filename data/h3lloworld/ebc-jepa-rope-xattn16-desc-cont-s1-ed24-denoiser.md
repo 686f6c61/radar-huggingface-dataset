@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| EBC-JEPA (este modelo) | Denoiser de eventos sobre V-JEPA 2.1 ViT-B + LoRA | no disponible (backbone ViT-B) | no aplica | no disponible | MIT | HuggingFace, solo tensores entrenados |
+| EBC-JEPA (este modelo) | Denoiser de eventos sobre V-JEPA 2.1 ViT-B + LoRA | no disponible (backbone ViT-B) | no aplica | no disponible | MIT | Hugging Face, solo tensores entrenados |
 | V-JEPA 2.1 ViT-B (Meta) | Backbone de representaciones visuales | no disponible en la informacion | no aplica | no disponible | MIT | Checkpoint publico en fbaipublicfiles |
 | EDformer | Metodo de denoising de eventos (origen del dataset ED24) | no disponible | no aplica | no disponible | no disponible | no disponible |
 | Metodos evaluados en DND21 / E-MLB | Denoising de eventos | no disponible | no aplica | no disponible | no disponible | no disponible |
@@ -89,7 +89,7 @@ La informacion proporcionada no incluye cifras comparativas de rendimiento entre
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/h3lloworld/ebc-jepa-rope-xattn16-desc-cont-s1-ed24-denoiser
+- Modelo en Hugging Face: https://huggingface.co/h3lloworld/ebc-jepa-rope-xattn16-desc-cont-s1-ed24-denoiser
 - Codigo de entrenamiento y evaluacion: https://github.com/whohyf/EBC-JEPA-share/tree/denoise-lora (rutas `src/ebc_jepa/lora_denoise` y `tools/lora_denoise`; protocolo de tablas en `docs/lora_denoise/HANDOFF.md`)
 - Script de evaluacion: `tools/lora_denoise/eval_emlb.py`
 - Checkpoint base V-JEPA 2.1 ViT-B: https://dl.fbaipublicfiles.com/vjepa2/vjepa2_1_vitb_dist_vitG_384.pt

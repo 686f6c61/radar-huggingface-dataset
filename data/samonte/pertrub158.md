@@ -2,7 +2,7 @@
 
 ## Resumen
 
-pertrub158 es un modelo de clasificacion de imagenes publicado por el usuario Samonte en HuggingFace. Se trata de un EfficientNetV2-L (la variante grande de torchvision, `efficientnet_v2_l`, con 1.000 clases de ImageNet) afinado mediante entrenamiento adversarial para la subred Perturb (netuid 26) de la red Bittensor. El checkpoint se distribuye como pesos `safetensors` compatibles con la implementacion de torchvision y cuenta con 119.027.848 parametros (~119 M).
+pertrub158 es un modelo de clasificacion de imagenes publicado por el usuario Samonte en Hugging Face. Se trata de un EfficientNetV2-L (la variante grande de torchvision, `efficientnet_v2_l`, con 1.000 clases de ImageNet) afinado mediante entrenamiento adversarial para la subred Perturb (netuid 26) de la red Bittensor. El checkpoint se distribuye como pesos `safetensors` compatibles con la implementacion de torchvision y cuenta con 119.027.848 parametros (~119 M).
 
 El problema que aborda es la robustez de un clasificador de imagenes frente a perturbaciones adversarias: en lugar de optimizar unicamente la precision sobre imagenes limpias, el entrenamiento incorpora ejemplos adversarios para que el modelo mantenga su prediccion bajo alteraciones disenadas para enganarlo. Esto lo situa en el nicho de la vision por computador robusta, no en el de los modelos de lenguaje.
 
@@ -73,7 +73,7 @@ Como referencia externa y claramente diferenciada, el checkpoint base de torchvi
 
 | Modelo | Parametros | Entrada | Clases | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|---|
-| Samonte/pertrub158 (EfficientNetV2-L afinado) | 119 M | 480 x 480 | 1.000 | apache-2.0 | HuggingFace | no disponible |
+| Samonte/pertrub158 (EfficientNetV2-L afinado) | 119 M | 480 x 480 | 1.000 | apache-2.0 | Hugging Face | no disponible |
 | torchvision efficientnet_v2_l (base IMAGENET1K_V1) | ~118 M | 480 x 480 | 1.000 | BSD-3-Clause (pesos torchvision) | torchvision | ~85,7 % top-1 en ImageNet-1k (documentado por PyTorch) |
 | ResNet-50 | ~25,6 M | 224 x 224 | 1.000 | BSD-3-Clause | torchvision | no comparado en esta ficha |
 | ConvNeXt-L | ~198 M | 224 x 224 | 1.000 | BSD-3-Clause | torchvision | no comparado en esta ficha |
@@ -93,7 +93,7 @@ No se dispone de resultados de robustez comparables entre pertrub158 y estas alt
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Samonte/pertrub158
+- Modelo en Hugging Face: https://huggingface.co/Samonte/pertrub158
 - Subred Perturb: https://perturbai.io
 - Documentacion de torchvision para EfficientNetV2: https://pytorch.org/vision/stable/models/efficientnetv2.html
 - Documentacion de Bittensor: https://bittensor.com

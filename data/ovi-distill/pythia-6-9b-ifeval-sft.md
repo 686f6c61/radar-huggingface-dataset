@@ -76,17 +76,17 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks gen
 - VRAM estimada para inferencia en float32: aproximadamente 27,4 GB solo de pesos (6.857M parámetros × 4 bytes), más overhead de activaciones y KV cache; en la práctica una GPU de 40 GB o más es lo cómodo. No se han publicado cifras de cuantización (el autor recomienda no usar bfloat16).
 - GPU recomendadas: A100 40/80 GB o H100 para inferencia en float32 fiel al entrenamiento; el entrenamiento se realizó en dos H100.
 - Consumer GPUs: no cabe en float32 en una RTX 4090 (24 GB) sin cuantización, y la cuantización no está validada por el autor. Con cuantización a 8 bits (~7 GB de pesos) podría caber en GPUs de 16-24 GB, pero con posible degradación de precisión no documentada.
-- Despliegue: transformers (código de ejemplo en la model card con `AutoModelForCausalLM` y `apply_chat_template`); compatible con text-generation-inference y endpoints de HuggingFace (tags `text-generation-inference`, `endpoints_compatible`). No se menciona soporte verificado en vLLM, llama.cpp u Ollama.
+- Despliegue: transformers (código de ejemplo en la model card con `AutoModelForCausalLM` y `apply_chat_template`); compatible con text-generation-inference y endpoints de Hugging Face (tags `text-generation-inference`, `endpoints_compatible`). No se menciona soporte verificado en vLLM, llama.cpp u Ollama.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | IFEval prompt-level strict | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ovi-distill/pythia-6.9b-ifeval-sft | 6.857M (denso) | 2.048 | 47,3 % | Apache-2.0 | Pesos públicos en HuggingFace |
-| EleutherAI/pythia-6.9b (base) | 6.857M (denso) | 2.048 | 16,3 % | Apache-2.0 | Pesos públicos en HuggingFace |
-| allenai/open-instruct-pythia-6.9b-tulu | 6.857M (denso) | 2.048 | 16,3 % | Apache-2.0 | Pesos públicos en HuggingFace |
-| Qwen/Qwen2.5-7B-Instruct (generador de los datos) | ~7.600M (denso) | 128K | no disponible en la información proporcionada | Apache-2.0 | Pesos públicos en HuggingFace |
+| ovi-distill/pythia-6.9b-ifeval-sft | 6.857M (denso) | 2.048 | 47,3 % | Apache-2.0 | Pesos públicos en Hugging Face |
+| EleutherAI/pythia-6.9b (base) | 6.857M (denso) | 2.048 | 16,3 % | Apache-2.0 | Pesos públicos en Hugging Face |
+| allenai/open-instruct-pythia-6.9b-tulu | 6.857M (denso) | 2.048 | 16,3 % | Apache-2.0 | Pesos públicos en Hugging Face |
+| Qwen/Qwen2.5-7B-Instruct (generador de los datos) | ~7.600M (denso) | 128K | no disponible en la información proporcionada | Apache-2.0 | Pesos públicos en Hugging Face |
 
 La comparación más relevante es entre los tres Pythia-6.9B: el SFT de ovi-distill casi triplica el prompt-level strict de la base y del fine-tune Tulu, aunque está especializado en una restricción por prompt y no en capacidades generales de chat.
 
@@ -103,7 +103,7 @@ La comparación más relevante es entre los tres Pythia-6.9B: el SFT de ovi-dist
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ovi-distill/pythia-6.9b-ifeval-sft
+- Modelo en Hugging Face: https://huggingface.co/ovi-distill/pythia-6.9b-ifeval-sft
 - Modelo base: https://huggingface.co/EleutherAI/pythia-6.9b
 - Dataset de entrenamiento: https://huggingface.co/datasets/allenai/RLVR-IFeval
 - Generador de las respuestas de entrenamiento: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct

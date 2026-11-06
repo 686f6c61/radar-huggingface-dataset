@@ -16,7 +16,7 @@ El modelo resuelve la generación de clips cortos de movimiento a partir de prom
 | Idiomas soportados | en (inglés) |
 | Licencia | kimodo-and-llama3-component-licenses: pesos de movimiento con NVIDIA Open Model License; codificador con Meta Llama 3 Community License y Acceptable Use Policy; código personalizado Apache-2.0; código LLM2Vec adaptado MIT |
 | Formato de pesos | safetensors; pipeline modular Diffusers con bloques separados en OzzyGT/Kimodo_SOMA_Modular |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Salida | Movimiento 3D sobre esqueleto SOMA77, en metros, +Y arriba, +Z hacia delante inicial y root motion preservado |
 | Repositorio | 16,3 GB |
 

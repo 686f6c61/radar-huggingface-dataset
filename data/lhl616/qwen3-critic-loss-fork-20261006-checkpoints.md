@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | lhl616/qwen3-critic-loss-fork-20261006-checkpoints | No disponible (derivado de Qwen3-4B-Base) | No disponible | Sin benchmarks publicados | Apache 2.0 | Checkpoints de investigación, no modelo consolidado |
-| Qwen/Qwen3-4B-Base | No disponible en la información | No disponible | No disponible | No disponible en la información | Modelo base público en HuggingFace |
+| Qwen/Qwen3-4B-Base | No disponible en la información | No disponible | No disponible | No disponible en la información | Modelo base público en Hugging Face |
 | Alternativas de la misma categoría | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos suficientes para comparar parámetros, contexto o rendimiento con alternativas concretas; la única referencia explícita es Qwen/Qwen3-4B-Base como modelo de origen.
@@ -82,6 +82,6 @@ No se dispone de datos suficientes para comparar parámetros, contexto o rendimi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lhl616/qwen3-critic-loss-fork-20261006-checkpoints
+- Hugging Face: https://huggingface.co/lhl616/qwen3-critic-loss-fork-20261006-checkpoints
 - Modelo de origen: https://huggingface.co/Qwen/Qwen3-4B-Base (referenciado en la model card)
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

@@ -91,8 +91,8 @@ Comparación directa con el modelo base, que es el único comparable del que la 
 
 | Modelo | Parametros | Contexto | Resultados en el conjunto reservado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Boollm Browser Vision 500M | 409.252.800 (819.200 entrenables) | No disponible; ejemplo con 4096 tokens | 20/20 coincidencia exacta (Transformers), 14/20 en GGUF Q8_0 | Apache-2.0 | HuggingFace, safetensors y GGUF Q8_0 |
-| HuggingFaceTB/SmolVLM2-500M-Video-Instruct | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | 10/20 coincidencia exacta en el mismo conjunto | Apache-2.0 (modelo base) | HuggingFace |
+| Boollm Browser Vision 500M | 409.252.800 (819.200 entrenables) | No disponible; ejemplo con 4096 tokens | 20/20 coincidencia exacta (Transformers), 14/20 en GGUF Q8_0 | Apache-2.0 | Hugging Face, safetensors y GGUF Q8_0 |
+| HuggingFaceTB/SmolVLM2-500M-Video-Instruct | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | 10/20 coincidencia exacta en el mismo conjunto | Apache-2.0 (modelo base) | Hugging Face |
 | Otras alternativas de vision-lenguaje de tamano similar | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se han proporcionado datos de benchmarks ni de especificaciones de otros modelos comparables (por ejemplo, otros VLM por debajo de 1.000 millones de parámetros), por lo que no es posible establecer una comparación cuantitativa adicional.
@@ -114,7 +114,7 @@ No se han proporcionado datos de benchmarks ni de especificaciones de otros mode
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/Boollm/Boollm-Browser-Vision-500M
+- Pagina del modelo en Hugging Face: https://huggingface.co/Boollm/Boollm-Browser-Vision-500M
 - Modelo base SmolVLM2-500M-Video-Instruct: https://huggingface.co/HuggingFaceTB/SmolVLM2-500M-Video-Instruct
 - Repositorio de conversion a GGUF: https://github.com/ggml-org/llama.cpp
 - La busqueda web realizada no devolvio resultados relevantes sobre este modelo; los resultados obtenidos correspondian a contenidos no relacionados con la ficha.

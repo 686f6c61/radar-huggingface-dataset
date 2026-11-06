@@ -91,7 +91,7 @@ Los datos de las tres alternativas proceden de informacion publica de sus respec
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/leoanimesh/astropedia-models
+- Repositorio en Hugging Face: https://huggingface.co/leoanimesh/astropedia-models
 - Modelo base: https://huggingface.co/google/gemma-3-270m-it
 - Gemma Terms of Use: https://ai.google.dev/gemma/terms
 - Runtime ExecuTorch: https://pytorch.org/executorch/

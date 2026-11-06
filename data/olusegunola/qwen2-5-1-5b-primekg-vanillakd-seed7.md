@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `olusegunola/qwen2.5-1.5b-primekg-vanillakd-seed7` aloja un modelo publicado en HuggingFace por el usuario olusegunola. Se trata de un derivado de la familia Qwen2.5, segun indica el propio identificador del repositorio, con un tamano declarado de 1.500 millones de parametros (1.5B). El sufijo del nombre apunta a un ajuste realizado sobre PrimeKG, una base de conocimiento biomedica, mediante una tecnica de destilacion de conocimiento ("vanillakd", probablemente *vanilla knowledge distillation*) y con una semilla concreta ("seed7"), lo que sugiere que forma parte de una serie de experimentos reproducibles con distintas semillas. Ninguna de estas inferencias esta confirmada en la documentacion del repositorio.
+El repositorio `olusegunola/qwen2.5-1.5b-primekg-vanillakd-seed7` aloja un modelo publicado en Hugging Face por el usuario olusegunola. Se trata de un derivado de la familia Qwen2.5, segun indica el propio identificador del repositorio, con un tamano declarado de 1.500 millones de parametros (1.5B). El sufijo del nombre apunta a un ajuste realizado sobre PrimeKG, una base de conocimiento biomedica, mediante una tecnica de destilacion de conocimiento ("vanillakd", probablemente *vanilla knowledge distillation*) y con una semilla concreta ("seed7"), lo que sugiere que forma parte de una serie de experimentos reproducibles con distintas semillas. Ninguna de estas inferencias esta confirmada en la documentacion del repositorio.
 
-La model card publicada es la plantilla generica autogenerada por HuggingFace: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion) figuran como "[More Information Needed]". El repositorio tiene 0 descargas, 0 likes y un tamano declarado de 0,0 GB en el momento de la consulta, lo que indica que no contiene pesos subidos o que estos no son accesibles publicamente. La fecha de creacion registrada es el 21 de septiembre de 2026.
+La model card publicada es la plantilla generica autogenerada por Hugging Face: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion) figuran como "[More Information Needed]". El repositorio tiene 0 descargas, 0 likes y un tamano declarado de 0,0 GB en el momento de la consulta, lo que indica que no contiene pesos subidos o que estos no son accesibles publicamente. La fecha de creacion registrada es el 21 de septiembre de 2026.
 
 Por tanto, esta ficha se limita a documentar lo que se puede verificar y marca explicitamente como "no disponible" todo aquello que el autor no ha publicado. Cualquier uso en produccion exige una verificacion directa del repositorio, de la existencia real de los pesos y de las condiciones de licencia.
 
@@ -28,7 +28,7 @@ Por tanto, esta ficha se limita a documentar lo que se puede verificar y marca e
 
 No hay informacion publicada sobre la arquitectura del modelo mas alla de la etiqueta `transformers` y el formato `safetensors`. El identificador sugiere que se parte de un checkpoint Qwen2.5 de 1.500 millones de parametros, una familia de transformers decoder-only con atencion de consultas agrupadas (GQA) y tokenizador multilingue, pero el autor no lo confirma en ningun campo de la model card. Tampoco se especifica si el ajuste modifica todas las capas o solo algunas, ni si se congela el modelo base.
 
-Respecto al entrenamiento, el nombre del repositorio apunta a un proceso de destilacion de conocimiento sobre PrimeKG (base de conocimiento biomedica con entidades y relaciones farmaco-enfermedad-gen), con la semilla 7 como parametro de reproducibilidad. No se documentan el numero de tokens de entrenamiento, la composicion del dataset, la funcion de perdida, la temperatura de destilacion, el uso de RLHF o DPO, ni los hiperparametros (learning rate, batch size, precision). La etiqueta `arxiv:1910.09700` del repositorio corresponde a Lacoste et al. (2019), el articulo del calculador de impacto ambiental citado en la plantilla de HuggingFace, no a un articulo sobre este modelo.
+Respecto al entrenamiento, el nombre del repositorio apunta a un proceso de destilacion de conocimiento sobre PrimeKG (base de conocimiento biomedica con entidades y relaciones farmaco-enfermedad-gen), con la semilla 7 como parametro de reproducibilidad. No se documentan el numero de tokens de entrenamiento, la composicion del dataset, la funcion de perdida, la temperatura de destilacion, el uso de RLHF o DPO, ni los hiperparametros (learning rate, batch size, precision). La etiqueta `arxiv:1910.09700` del repositorio corresponde a Lacoste et al. (2019), el articulo del calculador de impacto ambiental citado en la plantilla de Hugging Face, no a un articulo sobre este modelo.
 
 ## Capacidades
 
@@ -97,6 +97,6 @@ Los valores del modelo base y de las familias alternativas proceden de conocimie
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/olusegunola/qwen2.5-1.5b-primekg-vanillakd-seed7
+- Repositorio en Hugging Face: https://huggingface.co/olusegunola/qwen2.5-1.5b-primekg-vanillakd-seed7
 - Referencia citada en las etiquetas del repositorio (Lacoste et al., 2019, calculador de impacto ambiental, no es el articulo del modelo): https://arxiv.org/abs/1910.09700
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, a PrimeKG, ni a articulos, blogs o demos asociados.

@@ -115,8 +115,8 @@ Diferencias clave: este repositorio no es un modelo autonomo, sino un ajuste de 
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/Jongbin-kr/exaone-verireason-sft_accuracy_medium_3to5_ratio0.12_seed2026
-- Modelo base en HuggingFace: https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/Jongbin-kr/exaone-verireason-sft_accuracy_medium_3to5_ratio0.12_seed2026
+- Modelo base en Hugging Face: https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct
 - Dataset ConvFinQA (referencia de la tarea de entrenamiento): no disponible en la informacion proporcionada
 - Paper o blog del autor sobre el metodo de seleccion de datos: no disponible en la informacion proporcionada
 - Repositorio de codigo del experimento: no disponible en la informacion proporcionada

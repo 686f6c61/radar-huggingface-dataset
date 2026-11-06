@@ -74,8 +74,8 @@ La model card del autor no incluye ninguna métrica de calidad (MMLU, HumanEval,
 
 | Modelo | Formato | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| americansquid/Qwen2.5-3B-Q4_K_M-GGUF (este repositorio) | GGUF Q4_K_M, 1,9 GB | 3.085.938.688 | no disponible | `qwen-research` | HuggingFace, 0 descargas |
-| Qwen/Qwen2.5-3B (modelo base) | safetensors, precisión completa | 3.085.938.688 | no disponible en esta información | `qwen-research` | HuggingFace, repositorio oficial |
+| americansquid/Qwen2.5-3B-Q4_K_M-GGUF (este repositorio) | GGUF Q4_K_M, 1,9 GB | 3.085.938.688 | no disponible | `qwen-research` | Hugging Face, 0 descargas |
+| Qwen/Qwen2.5-3B (modelo base) | safetensors, precisión completa | 3.085.938.688 | no disponible en esta información | `qwen-research` | Hugging Face, repositorio oficial |
 | Otras cuantizaciones GGUF del mismo modelo base (Q5_K_M, Q8_0, etc.) | GGUF | 3.085.938.688 | no disponible | `qwen-research` | No incluidas en este repositorio |
 
 Comparación con modelos de otras familias del mismo rango de parámetros (por ejemplo, alternativas de 3B de otros fabricantes): no disponible en la información proporcionada. No se han facilitado datos de rendimiento que permitan establecer una comparación fundamentada.
@@ -93,7 +93,7 @@ Comparación con modelos de otras familias del mismo rango de parámetros (por e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/americansquid/Qwen2.5-3B-Q4_K_M-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/americansquid/Qwen2.5-3B-Q4_K_M-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B
 - Model card del modelo base (detalles de entrenamiento y evaluación): https://huggingface.co/Qwen/Qwen2.5-3B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen2.5-3B/blob/main/LICENSE

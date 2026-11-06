@@ -93,7 +93,7 @@ La model card menciona que pruebas de escucha a ciegas encontraron la V2 una mej
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Skttttt/Fishspeech-S2-Pro-Nino-Edition-V2-FP8-E4M3
+- Modelo en Hugging Face: https://huggingface.co/Skttttt/Fishspeech-S2-Pro-Nino-Edition-V2-FP8-E4M3
 - Modelo base BF16: https://huggingface.co/Skttttt/Fishspeech-S2-Pro-Nino-Edition-V2
 - Fork de Fish Speech utilizado: https://github.com/TachibanaKimika/fish-speech/tree/166940c301b8b4650b3110397a38bc68727a3afa
 - Referencia predeterminada (audio): https://huggingface.co/Skttttt/Fishspeech-S2-Pro-Nino-Edition-V2-FP8-E4M3/resolve/main/references/g1_ni_00016.wav

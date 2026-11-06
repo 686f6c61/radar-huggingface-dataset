@@ -43,7 +43,7 @@ El entrenamiento es supervisado, con perdida `MSELoss`, optimizador SGD con tasa
 - Demostracion de preprocesamiento: mostrar con `config.json` por que los pesos solos no bastan y como la normalizacion afecta a la escala de los coeficientes.
 - Ejercicio de equivalencia entre frameworks: replicar el mismo problema con scikit-learn y comprobar que `35,157 / 23,398 ≈ 1,503` coincide con el coeficiente de `m2` obtenido por scikit-learn.
 - Prueba de integracion de artefactos: validar en un pipeline de CI la carga conjunta de `model.safetensors`, `config.json` y `modelo.py`, y detectar fallos de `load_state_dict` cuando cambia la clase.
-- Ejemplo de publicacion en HuggingFace Hub: servir como referencia de estructura minima de repositorio (pesos, config, codigo, requirements, model card) para un modelo educativo.
+- Ejemplo de publicacion en Hugging Face Hub: servir como referencia de estructura minima de repositorio (pesos, config, codigo, requirements, model card) para un modelo educativo.
 - Referencia de evaluacion: reproducir las metricas MAE = 3,08 miles de USD y R² = 0,989 sobre el split de 40 registros de test.
 
 ## Benchmarks y rendimiento
@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `grisselblanco/02-pytorch-regresion` | 4 | no aplica | MAE 3,08; R² 0,989 (test sintetico) | MIT | HuggingFace |
+| `grisselblanco/02-pytorch-regresion` | 4 | no aplica | MAE 3,08; R² 0,989 (test sintetico) | MIT | Hugging Face |
 | Regresion lineal de scikit-learn (mismo problema, Clase 10) | 4 | no aplica | Coeficientes equivalentes tras desnormalizar | BSD-3-Clause (scikit-learn) | Paquete PyPI |
-| Otros ejemplos pedagogicos de regresion en PyTorch | no disponible | no aplica | no disponible | variable | HuggingFace |
+| Otros ejemplos pedagogicos de regresion en PyTorch | no disponible | no aplica | no disponible | variable | Hugging Face |
 
 La comparacion con scikit-learn es la mas directa: la model card indica que el coeficiente de `m2` coincide tras dividir por el desvio (`35,157 / 23,398 ≈ 1,503`). No se dispone de comparativas con otros modelos de la misma categoria en la informacion proporcionada.
 
@@ -86,8 +86,8 @@ La comparacion con scikit-learn es la mas directa: la model card indica que el c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/grisselblanco/02-pytorch-regresion
-- Repositorio del modelo (archivos `modelo.py`, `train.py`, `predict.py`, `config.json`, `requirements.txt`): incluidos en la pagina de HuggingFace del modelo
+- Hugging Face: https://huggingface.co/grisselblanco/02-pytorch-regresion
+- Repositorio del modelo (archivos `modelo.py`, `train.py`, `predict.py`, `config.json`, `requirements.txt`): incluidos en la pagina de Hugging Face del modelo
 - Documentacion de safetensors: https://github.com/huggingface/safetensors
 - Documentacion de PyTorch `nn.Linear`: https://pytorch.org/docs/stable/generated/torch.nn.Linear.html
 - Documentacion de scikit-learn sobre regresion lineal: https://scikit-learn.org/stable/modules/linear_model.html

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dddddsds31341/pi05-wash_dish_100-15k` es un checkpoint de ajuste fino completo del modelo vision-language-action (VLA) pi0.5, publicado en HuggingFace por el usuario `dddddsds31341`. No se trata de un modelo de lenguaje general, sino de una politica robotica especializada: recibe observaciones visuales y estado del robot, junto con una instruccion en lenguaje natural, y emite acciones motoras para un robot bimanual. El modelo base es `pi05_base` y el ajuste se ha realizado sobre el conjunto de datos `wash_dish_100` del framework openpi.
+`dddddsds31341/pi05-wash_dish_100-15k` es un checkpoint de ajuste fino completo del modelo vision-language-action (VLA) pi0.5, publicado en Hugging Face por el usuario `dddddsds31341`. No se trata de un modelo de lenguaje general, sino de una politica robotica especializada: recibe observaciones visuales y estado del robot, junto con una instruccion en lenguaje natural, y emite acciones motoras para un robot bimanual. El modelo base es `pi05_base` y el ajuste se ha realizado sobre el conjunto de datos `wash_dish_100` del framework openpi.
 
 El checkpoint corresponde al paso de entrenamiento 15000 (de un total de 20005 pasos planificados), con un tamano de lote de 32. El repositorio ocupa 12.4 GB y contiene los parametros en formato Orbax junto con metadatos y las estadisticas de normalizacion del dataset `wash_dish_100`, necesarias para la evaluacion con la configuracion kai0 existente. La tarea objetivo es bimanual: agarrar y levantar un plato con un efector, limpiar su superficie interior con una esponja sostenida por el otro, y colocar el plato en vertical en un escurridor.
 
@@ -84,7 +84,7 @@ La informacion proporcionada no incluye datos de rendimiento que permitan una co
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `dddddsds31341/pi05-wash_dish_100-15k` | VLA bimanual, ajuste fino sobre pi05_base | no disponible (repo 12.4 GB) | no disponible | no disponible | HuggingFace, 0 descargas |
+| `dddddsds31341/pi05-wash_dish_100-15k` | VLA bimanual, ajuste fino sobre pi05_base | no disponible (repo 12.4 GB) | no disponible | no disponible | Hugging Face, 0 descargas |
 | pi05_base (modelo base) | VLA base | no disponible | no disponible | no disponible en esta ficha | referencia citada por el autor |
 | Otros VLA de la misma categoria (por ejemplo, OpenVLA o RDT-1B) | VLA | no disponible | no disponible | no disponible | no verificada en la informacion disponible |
 
@@ -104,7 +104,7 @@ No se dispone de datos de rendimiento comparables entre estas alternativas a par
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dddddsds31341/pi05-wash_dish_100-15k
+- Modelo en Hugging Face: https://huggingface.co/dddddsds31341/pi05-wash_dish_100-15k
 - Modelo base citado (`pi05_base`): no disponible como enlace directo en la informacion proporcionada.
 - Framework openpi: no disponible como enlace directo en la informacion proporcionada.
 - Dataset `wash_dish_100`: no disponible como enlace directo en la informacion proporcionada.

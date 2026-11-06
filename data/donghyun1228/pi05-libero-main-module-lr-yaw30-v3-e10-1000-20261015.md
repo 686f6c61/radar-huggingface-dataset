@@ -79,6 +79,6 @@ No se dispone de datos de rendimiento ni de especificaciones de modelos comparab
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-main-module-lr-yaw30-v3-e10-1000-20261015
+- Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-main-module-lr-yaw30-v3-e10-1000-20261015
 
 No se han proporcionado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

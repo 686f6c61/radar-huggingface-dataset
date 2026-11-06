@@ -67,7 +67,7 @@ No disponible. No existe un modelo comparable en el sentido de modelos de IA, ya
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/viniciuscostafield/paper_008546988_knowledge_distillation
+- Hugging Face: https://huggingface.co/viniciuscostafield/paper_008546988_knowledge_distillation
 - Paper de referencia sobre destilación de conocimiento (arXiv): https://arxiv.org/abs/2006.05525
 - Encuesta en ScienceDirect: https://www.sciencedirect.com/science/article/pii/S2666827024000811
 - Encuesta en Springer: https://link.springer.com/article/10.1007/s11263-021-01453-z

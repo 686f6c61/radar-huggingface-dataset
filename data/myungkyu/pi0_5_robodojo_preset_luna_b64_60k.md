@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi0_5_robodojo_preset_luna_b64_60k | 4,14 mil millones | No disponible | Politica VLA bimanual (8 tareas RoboDojo) | No disponible | HuggingFace, 0 descargas |
-| lerobot/pi05_base | No disponible en la informacion proporcionada | No disponible | Politica VLA base | No disponible | HuggingFace |
+| pi0_5_robodojo_preset_luna_b64_60k | 4,14 mil millones | No disponible | Politica VLA bimanual (8 tareas RoboDojo) | No disponible | Hugging Face, 0 descargas |
+| lerobot/pi05_base | No disponible en la informacion proporcionada | No disponible | Politica VLA base | No disponible | Hugging Face |
 | Otros modelos VLA de proposito general | No disponible | No disponible | Manipulacion robotica | No disponible | No disponible |
 
 No se dispone de datos verificables de otros modelos comparables en la informacion proporcionada, por lo que no se incluyen cifras de rendimiento ni de contexto para alternativas.
@@ -87,7 +87,7 @@ No se dispone de datos verificables de otros modelos comparables en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Myungkyu/pi0_5_robodojo_preset_luna_b64_60k
+- Modelo en Hugging Face: https://huggingface.co/Myungkyu/pi0_5_robodojo_preset_luna_b64_60k
 - Dataset de entrenamiento: https://huggingface.co/datasets/Myungkyu/RoboDojo-preset-luna
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - La busqueda web no devolvio resultados relevantes sobre este modelo: los enlaces recuperados corresponden a foros y preguntas tecnicas sin relacion con Pi0.5 ni con robotica.

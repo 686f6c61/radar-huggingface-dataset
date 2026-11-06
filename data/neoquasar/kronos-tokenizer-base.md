@@ -6,7 +6,7 @@ Kronos-Tokenizer-base es el tokenizador especializado que forma parte de Kronos,
 
 Es, por tanto, la primera mitad del marco de dos etapas de Kronos: el tokenizador convierte las velas en símbolos discretos y el modelo generativo (Kronos-small, Kronos-base) se preentrena sobre esas secuencias. Este repositorio concreto contiene únicamente el tokenizador, no el transformer generativo, aunque comparte el pipeline `time-series-forecasting` y la licencia MIT.
 
-Su relevancia radica en que es un componente ligero (unos 3,96 millones de parámetros) pero crítico: según la model card se emplea junto con Kronos-small y Kronos-base, ambos con una longitud de contexto máxima de 512 tokens. Con más de 2,2 millones de descargas en HuggingFace, es el punto de entrada práctico para reproducir el pipeline de Kronos en tareas de predicción de precios, volatilidad y generación de datos sintéticos en modo zero-shot.
+Su relevancia radica en que es un componente ligero (unos 3,96 millones de parámetros) pero crítico: según la model card se emplea junto con Kronos-small y Kronos-base, ambos con una longitud de contexto máxima de 512 tokens. Con más de 2,2 millones de descargas en Hugging Face, es el punto de entrada práctico para reproducir el pipeline de Kronos en tareas de predicción de precios, volatilidad y generación de datos sintéticos en modo zero-shot.
 
 ## Especificaciones tecnicas
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kronos-Tokenizer-base (este) | Tokenizador K-line (OHLCV) | 3,96 M | no disponible | MIT | Publico en HuggingFace |
-| Kronos-Tokenizer-2k | Tokenizador K-line (OHLCV) | no disponible | 2048 (modelo asociado) | MIT | Publico en HuggingFace |
-| Kronos-small | Transformer autoregresivo generativo | 24,7 M | 512 | MIT | Publico en HuggingFace |
-| Kronos-base | Transformer autoregresivo generativo | 102,3 M | 512 | MIT | Publico en HuggingFace |
+| Kronos-Tokenizer-base (este) | Tokenizador K-line (OHLCV) | 3,96 M | no disponible | MIT | Publico en Hugging Face |
+| Kronos-Tokenizer-2k | Tokenizador K-line (OHLCV) | no disponible | 2048 (modelo asociado) | MIT | Publico en Hugging Face |
+| Kronos-small | Transformer autoregresivo generativo | 24,7 M | 512 | MIT | Publico en Hugging Face |
+| Kronos-base | Transformer autoregresivo generativo | 102,3 M | 512 | MIT | Publico en Hugging Face |
 | Kronos-large | Transformer autoregresivo generativo | 499,2 M | 512 | MIT | No publicado todavia |
 
 No se dispone en la informacion proporcionada de tokenizadores comparables de terceros para series temporales financieras, por lo que la comparativa se limita a los componentes de la propia familia Kronos y a la distincion entre tokenizador y modelo generativo.
@@ -87,7 +87,7 @@ No se dispone en la informacion proporcionada de tokenizadores comparables de te
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NeoQuasar/Kronos-Tokenizer-base
+- Modelo en Hugging Face: https://huggingface.co/NeoQuasar/Kronos-Tokenizer-base
 - Tokenizador alternativo Kronos-Tokenizer-2k: https://huggingface.co/NeoQuasar/Kronos-Tokenizer-2k
 - Modelo Kronos-mini: https://huggingface.co/NeoQuasar/Kronos-mini
 - Modelo Kronos-small: https://huggingface.co/NeoQuasar/Kronos-small

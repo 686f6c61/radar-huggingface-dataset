@@ -19,7 +19,7 @@ La relevancia actual del repositorio es práctica: ofrece un modelo de ~9B orien
 | Tipos de cuantizacion | GGUF. Ficheros publicados: Q2_K, Q3_K_S, Q3_K_M, Q4_K_S, Q6_K, Q8_0 y f16. La etiqueta de cuants del README menciona ademas Q3_K_L, Q4_K_M, Q5_K_S, Q5_K_M e IQ4_XS, que no aparecen en la tabla de ficheros del repositorio |
 | Idiomas soportados | en (ingles), zh (chino) |
 | Licencia | apache-2.0 |
-| Formato de pesos | GGUF (el modelo base se distribuye en formato de pesos de HuggingFace, presumiblemente safetensors, no confirmado en esta informacion) |
+| Formato de pesos | GGUF (el modelo base se distribuye en formato de pesos de Hugging Face, presumiblemente safetensors, no confirmado en esta informacion) |
 | Modelo base | OliviaRossi/MiMo-Ornith-9B-AGSI-Abliterated-HQ |
 | Autor de la cuantizacion | mradermacher |
 | Tamano del repositorio | 76,2 GB |
@@ -102,7 +102,7 @@ La comparacion con modelos del mismo rango de tamano (por ejemplo, variantes abl
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/MiMo-Ornith-9B-AGSI-Abliterated-HQ-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/MiMo-Ornith-9B-AGSI-Abliterated-HQ-GGUF
 - Modelo base: https://huggingface.co/OliviaRossi/MiMo-Ornith-9B-AGSI-Abliterated-HQ
 - Pagina de resumen y descargas del autor: https://hf.tst.eu/model#MiMo-Ornith-9B-AGSI-Abliterated-HQ-GGUF
 - README de referencia de TheBloke sobre uso de GGUF: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

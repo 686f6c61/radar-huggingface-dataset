@@ -94,7 +94,7 @@ No disponible. La informacion proporcionada no incluye resultados comparables de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/map-boy/wandaa-kin-gpt
+- Modelo en Hugging Face: https://huggingface.co/map-boy/wandaa-kin-gpt
 - Tokenizador: https://huggingface.co/map-boy/wandaa-kin-tokenizer
 - Corpus de entrenamiento: https://huggingface.co/map-boy/wandaa-kin-traindata
 - Perfil del autor: https://huggingface.co/map-boy

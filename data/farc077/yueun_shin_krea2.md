@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Yueun_Shin_KREA2 es un adaptador LoRA (Low-Rank Adaptation) de tipo text-to-image publicado por el usuario farc077 en HuggingFace. Se trata de un LoRA de identidad o estilo centrado en la actriz y modelo Yueun Shin, entrenado sobre el modelo base Krea-2-Raw de la organizacion krea. El repositorio es de tipo ONESHOTLORA, un formato de entrenamiento rapido que genera adaptadores a partir de un conjunto reducido de imagenes de referencia, y se distribuye con un peso de aproximadamente 0,2 GB.
+Yueun_Shin_KREA2 es un adaptador LoRA (Low-Rank Adaptation) de tipo text-to-image publicado por el usuario farc077 en Hugging Face. Se trata de un LoRA de identidad o estilo centrado en la actriz y modelo Yueun Shin, entrenado sobre el modelo base Krea-2-Raw de la organizacion krea. El repositorio es de tipo ONESHOTLORA, un formato de entrenamiento rapido que genera adaptadores a partir de un conjunto reducido de imagenes de referencia, y se distribuye con un peso de aproximadamente 0,2 GB.
 
 El modelo resuelve un problema muy concreto: permitir la generacion de imagenes fotorrealistas de un sujeto especifico (en este caso, la actriz Yueun Shin) dentro de prompts de difusion, manteniendo coherencia de identidad entre generaciones. Para activarlo se utiliza la palabra disparadora `YU3UN5`, que debe incluirse al inicio del prompt, tal como muestran los ejemplos de la model card (por ejemplo, "YU3UN5. She is wearing a white formal button up shirt with a black blazer...").
 
@@ -72,6 +72,6 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/farc077/Yueun_Shin_KREA2
+- Hugging Face: https://huggingface.co/farc077/Yueun_Shin_KREA2
 - Modelo base: https://huggingface.co/krea/Krea-2-Raw
 - Plataforma de generacion del LoRA: https://oneshotlora.com

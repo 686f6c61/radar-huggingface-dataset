@@ -59,9 +59,9 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/root4k/Qwen3.8-27B-Uncensored-oQ4e-mtp
+- Repositorio Hugging Face: https://huggingface.co/root4k/Qwen3.8-27B-Uncensored-oQ4e-mtp
 - Repositorio oMLX (herramienta de cuantización): https://github.com/jundot/omlx
 - Blog de orcarouter sobre Qwen 3.8 27B Uncensored local: https://www.orcarouter.ai/blog/how-to-run-qwen-3-8-27b-uncensored-locally
 - Repositorio GitHub relacionado: https://github.com/Wassimyounes01/qwen38-uncensored
 - Repositorio GitHub alternativo: https://github.com/unburdened-jackinthebox365/qwen38-uncensored
-- Otra versión del mismo modelo en HuggingFace: https://huggingface.co/pyros-vault/Qwen3.8-27B-Uncensored-oQ4e-mtp
+- Otra versión del mismo modelo en Hugging Face: https://huggingface.co/pyros-vault/Qwen3.8-27B-Uncensored-oQ4e-mtp

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Tiny Transformer for Multitask es un prototipo de investigación publicado por el usuario mirobinson97 en HuggingFace. No es un modelo entrenado: el repositorio contiene una implementación propia de un transformer de tamaño reducido, un fichero `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y un checkpoint `model.safetensors` de inicialización válido únicamente para pruebas de humo. El propio autor indica explícitamente que no se reclama ninguna puntuación de benchmark ni que el checkpoint haya sido entrenado.
+Tiny Transformer for Multitask es un prototipo de investigación publicado por el usuario mirobinson97 en Hugging Face. No es un modelo entrenado: el repositorio contiene una implementación propia de un transformer de tamaño reducido, un fichero `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y un checkpoint `model.safetensors` de inicialización válido únicamente para pruebas de humo. El propio autor indica explícitamente que no se reclama ninguna puntuación de benchmark ni que el checkpoint haya sido entrenado.
 
 El dato más relevante es su escala: 16.576 parámetros totales según los metadatos de safetensors, lo que lo sitúa tres o cuatro órdenes de magnitud por debajo de cualquier modelo de lenguaje utilizable en producción. Su interés es, por tanto, didáctico y metodológico: sirve como plantilla reproducible para experimentar con arquitecturas de atención agrupada (grouped query attention), fusión por concatenación de MLP, activación mish y normalización layernorm, así como para montar líneas base de capacidad comparable en experimentos multitarea.
 
-El repositorio no declara idiomas soportados, longitud de contexto, pipeline de HuggingFace ni resultados de evaluación. La licencia es BSD-3-Clause, permisiva y compatible con uso comercial, pero al tratarse de un checkpoint sin entrenar no existe ninguna capacidad funcional que explotar comercialmente en su estado actual.
+El repositorio no declara idiomas soportados, longitud de contexto, pipeline de Hugging Face ni resultados de evaluación. La licencia es BSD-3-Clause, permisiva y compatible con uso comercial, pero al tratarse de un checkpoint sin entrenar no existe ninguna capacidad funcional que explotar comercialmente en su estado actual.
 
 ## Especificaciones tecnicas
 
@@ -93,5 +93,5 @@ La diferencia de parámetros respecto incluso al modelo más pequeño de la comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mirobinson97/tiny-transformer-multitask
+- Modelo en Hugging Face: https://huggingface.co/mirobinson97/tiny-transformer-multitask
 - No se han encontrado en la busqueda web enlaces relevantes al modelo (paper, blog, repositorio de codigo o demo). Los resultados obtenidos corresponden a paginas corporativas de Microsoft sin relacion con este repositorio.

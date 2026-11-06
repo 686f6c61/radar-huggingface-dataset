@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ionutpermis75/boyka-time` es un repositorio publicado en HuggingFace por el usuario ionutpermis75 bajo licencia Apache 2.0. La informacion disponible se limita al identificador, al autor, a la licencia, a dos etiquetas (`license:apache-2.0` y `region:us`) y a las fechas de creacion y ultima actualizacion (ambas 2026-09-10). El repositorio registra 0 descargas y 0 "likes", no declara pipeline de inferencia, no declara idiomas soportados y su model card se reduce al bloque de metadatos de licencia, sin texto explicativo.
+`ionutpermis75/boyka-time` es un repositorio publicado en Hugging Face por el usuario ionutpermis75 bajo licencia Apache 2.0. La informacion disponible se limita al identificador, al autor, a la licencia, a dos etiquetas (`license:apache-2.0` y `region:us`) y a las fechas de creacion y ultima actualizacion (ambas 2026-09-10). El repositorio registra 0 descargas y 0 "likes", no declara pipeline de inferencia, no declara idiomas soportados y su model card se reduce al bloque de metadatos de licencia, sin texto explicativo.
 
 No hay ningun dato publico sobre arquitectura, numero de parametros, longitud de contexto, tokenizador, datos de entrenamiento ni formato de pesos. La ausencia de etiquetas habituales en repositorios con artefactos utilizables (por ejemplo `safetensors`, `gguf`, `transformers`, `pytorch`) impide confirmar que se hayan subido pesos, y tampoco se ha localizado documentacion externa: la busqueda web realizada no devolvio ningun resultado relacionado con el modelo, solo paginas comerciales sin vinculacion alguna.
 
@@ -81,6 +81,6 @@ No disponible. No se puede establecer una categoria de comparacion (tamano, tare
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ionutpermis75/boyka-time
+- Hugging Face: https://huggingface.co/ionutpermis75/boyka-time
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante al modelo. Las busquedas devolvieron unicamente paginas de Amazon.de (https://www.amazon.de/, https://business.amazon.de/de/login, https://music.amazon.de/, https://www.amazon.de/gp/css/homepage.html, https://sellercentral.amazon.de/), sin relacion con el repositorio.
 - Paper, blog, repositorio de codigo o demo: no disponibles.

@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-h3-speed-slider-lora",
+  "slug": "runninghubai-rh-h3-speed-slider-lora",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-h3-speed-slider-lora",
+  "created_at": "2026-11-06T10:58:04.000Z",
+  "updated_at": "2026-11-06T10:59:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 149248381,
+  "storage_human": "149 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README_cn.md · RunningHubAI/rh-h3-speed-slider-1.1-lora at main",
+      "url": "https://huggingface.co/RunningHubAI/rh-h3-speed-slider-1.1-lora/blob/main/README_cn.md",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Commits · RunningHubAI/rh-h3-speed-slider-1.1-lora",
+      "url": "https://huggingface.co/RunningHubAI/rh-h3-speed-slider-1.1-lora/commits/main",
+      "snippet": "RunningHubAI / rh-h3-speed-slider-1.1-lora Like 8 comfyui lora Model card FilesFiles and versions xet Community 1 Copy to bucket new main rh-h3-speed-slider-1.1-lora"
+    }
+  ]
+}

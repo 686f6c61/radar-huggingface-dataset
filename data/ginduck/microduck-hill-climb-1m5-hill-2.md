@@ -85,7 +85,7 @@ No disponible. La información proporcionada no incluye otras políticas de la m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GinDuck/microduck-hill-climb-1m5-hill-2
+- Modelo en Hugging Face: https://huggingface.co/GinDuck/microduck-hill-climb-1m5-hill-2
 - Repositorio microduck (Pollen Robotics): https://github.com/pollen-robotics/microduck
 - Repositorio de retos y entrenamiento microduck: https://github.com/pollen-robotics/microduck-challenges (rama `race-2`, commit `b44f7ffc9`)
 - Documentación del manifiesto de políticas: `docs/policy-manifest.md` en el repositorio del demonio de microduck (no se proporciona URL directa)

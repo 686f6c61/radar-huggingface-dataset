@@ -92,7 +92,7 @@ No se han publicado comparativas de rendimiento entre este checkpoint y otras al
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Immich/pipeline-error-propagation-dialogue-summarization-bart-pipeline-seed73
+- Modelo en Hugging Face: https://huggingface.co/Immich/pipeline-error-propagation-dialogue-summarization-bart-pipeline-seed73
 - DOI del modelo: https://doi.org/10.57967/hf/11146
 - Registro maestro de replicación (Zenodo): https://doi.org/10.5281/zenodo.21792310
 - Modelo base: https://huggingface.co/facebook/bart-base

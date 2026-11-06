@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`MrGonao/em-lora-olmo3-7b-sft-random-filter` es un repositorio de adaptadores LoRA (PEFT) entrenados sobre el modelo base `allenai/Olmo-3-7B-Instruct-SFT`. No se trata de un modelo independiente, sino de una coleccion de 906 adaptadores (151 GB segun la model card; 144,9 GB segun los metadatos de HuggingFace) que forman parte de la coleccion "Emergent Misalignment: Attribution-Filtered LoRA Adapters". El objetivo del proyecto es medir como el filtrado de los datos de entrenamiento (por atribucion de datos o de forma aleatoria) modifica la desalineacion emergente en modelos ajustados con SFT sobre datos de consejos deliberadamente incorrectos.
+`MrGonao/em-lora-olmo3-7b-sft-random-filter` es un repositorio de adaptadores LoRA (PEFT) entrenados sobre el modelo base `allenai/Olmo-3-7B-Instruct-SFT`. No se trata de un modelo independiente, sino de una coleccion de 906 adaptadores (151 GB segun la model card; 144,9 GB segun los metadatos de Hugging Face) que forman parte de la coleccion "Emergent Misalignment: Attribution-Filtered LoRA Adapters". El objetivo del proyecto es medir como el filtrado de los datos de entrenamiento (por atribucion de datos o de forma aleatoria) modifica la desalineacion emergente en modelos ajustados con SFT sobre datos de consejos deliberadamente incorrectos.
 
 Este repositorio concreto actua como **control aleatorio**: reproduce la misma rejilla experimental de seleccion/eliminacion del top/bottom-K% que las ejecuciones basadas en atribucion, pero sustituyendo las puntuaciones de atribucion por un ordenamiento aleatorio, con una carpeta `seed_N/` por cada semilla. El unico conjunto de datos presente es `edu_incorrect/` (consejos educativos abiertamente incorrectos). Su relevancia es metodologica: permite separar el efecto real de la seleccion de datos del puro azar en estudios de alineacion y seguridad.
 
@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `MrGonao/em-lora-olmo3-7b-sft-random-filter` | 7B base + LoRA r=32 | no disponible | sin benchmarks publicados | no disponible | HuggingFace (PEFT) |
-| `allenai/Olmo-3-7B-Instruct-SFT` (modelo base) | 7B | no disponible | no disponible en esta ficha | no disponible en esta ficha | HuggingFace |
-| Otros adaptadores de la coleccion "Attribution-Filtered LoRA Adapters" | 7B base + LoRA r=32 | no disponible | sin benchmarks publicados | no disponible | HuggingFace (enlaces no incluidos en la informacion) |
+| `MrGonao/em-lora-olmo3-7b-sft-random-filter` | 7B base + LoRA r=32 | no disponible | sin benchmarks publicados | no disponible | Hugging Face (PEFT) |
+| `allenai/Olmo-3-7B-Instruct-SFT` (modelo base) | 7B | no disponible | no disponible en esta ficha | no disponible en esta ficha | Hugging Face |
+| Otros adaptadores de la coleccion "Attribution-Filtered LoRA Adapters" | 7B base + LoRA r=32 | no disponible | sin benchmarks publicados | no disponible | Hugging Face (enlaces no incluidos en la informacion) |
 | Alternativas de la misma categoria (adaptadores LoRA) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos objetivos para establecer una comparacion cuantitativa con otras alternativas; la comparacion relevante es contra las ejecuciones de atribucion de la misma coleccion, cuyos enlaces no aparecen en la informacion proporcionada.
@@ -90,7 +90,7 @@ No se dispone de datos objetivos para establecer una comparacion cuantitativa co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/MrGonao/em-lora-olmo3-7b-sft-random-filter
+- Repositorio Hugging Face: https://huggingface.co/MrGonao/em-lora-olmo3-7b-sft-random-filter
 - Modelo base: https://huggingface.co/allenai/Olmo-3-7B-Instruct-SFT
 - La model card menciona la coleccion "Emergent Misalignment: Attribution-Filtered LoRA Adapters", pero no incluye el enlace a la coleccion en la informacion disponible.
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repos, demos) en la busqueda web: los resultados devueltos corresponden a catalogos de skins de Minecraft y no guardan relacion con el modelo.

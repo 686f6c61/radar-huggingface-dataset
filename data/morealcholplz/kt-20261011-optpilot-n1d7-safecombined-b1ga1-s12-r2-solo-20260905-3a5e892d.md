@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio no contiene un modelo entrenado listo para inferencia, sino una copia de seguridad archivística de un directorio de investigación. La model card lo describe explícitamente como "an archival snapshot, not a claim of evaluation success or an inference-ready standard model", y aclara que no se realizó ningún entrenamiento ni inferencia para generar la copia. El autor (usuario de HuggingFace `morealcholplz`, han nu ri kim) lo publica bajo el pipeline `robotics` y las etiquetas `robotics` y `checkpoint-backup`.
+Este repositorio no contiene un modelo entrenado listo para inferencia, sino una copia de seguridad archivística de un directorio de investigación. La model card lo describe explícitamente como "an archival snapshot, not a claim of evaluation success or an inference-ready standard model", y aclara que no se realizó ningún entrenamiento ni inferencia para generar la copia. El autor (usuario de Hugging Face `morealcholplz`, han nu ri kim) lo publica bajo el pipeline `robotics` y las etiquetas `robotics` y `checkpoint-backup`.
 
 El contenido corresponde a la ruta original `/home/work/mntvol/robottt/optpilot-n1d7-safecombined-b1ga1-s12-r2-solo-20260905`, con instrucciones para restaurar el directorio `payload/` en esa ubicación. Incluye ficheros de checkpoint, configuración y resultados experimentales, además de estado de reanudación cuando existía. Los credenciales, enlaces externos, cachés y ficheros opacos de perfilado fueron excluidos y listados en `BACKUP_MANIFEST.json`.
 
@@ -85,7 +85,7 @@ No disponible. No se conocen modelos comparables porque no hay información púb
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/morealcholplz/kt-20261011-optpilot-n1d7-safecombined-b1ga1-s12-r2-solo-20260905-3a5e892d
+- Repositorio en Hugging Face: https://huggingface.co/morealcholplz/kt-20261011-optpilot-n1d7-safecombined-b1ga1-s12-r2-solo-20260905-3a5e892d
 - Perfil del autor: https://huggingface.co/morealcholplz
 - Dataset relacionado del mismo autor: https://huggingface.co/datasets/morealcholplz/vlsa-dual-safety-eval
 - Referencia arXiv citada en el dataset del autor: arxiv:2512.11891 (https://arxiv.org/abs/2512.11891)

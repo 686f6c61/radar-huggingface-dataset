@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, publicado por el usuario kwoz-niak, no contiene un modelo de lenguaje entrenado, sino una nota de investigación en curso sobre mecanismos de atención eficiente. La model card es explícita al respecto: se trata de un documento que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación, y no de un paper terminado ni de una release de pesos entrenados. Los propios archivos declarados son `reading.md` (artefacto principal) y `README.md`.
+Este repositorio de Hugging Face, publicado por el usuario kwoz-niak, no contiene un modelo de lenguaje entrenado, sino una nota de investigación en curso sobre mecanismos de atención eficiente. La model card es explícita al respecto: se trata de un documento que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación, y no de un paper terminado ni de una release de pesos entrenados. Los propios archivos declarados son `reading.md` (artefacto principal) y `README.md`.
 
 El repositorio está etiquetado como `research-notes` y `efficient-attention`. No declara pipeline de inferencia, idiomas soportados ni checkpoint utilizable. El único artefacto binario asociado son tensores en formato safetensors con un total de 33.088 parámetros, una cifra incompatible con cualquier transformer de tamaño apreciable y coherente con un tensor residual, de inicialización o un fragmento auxiliar. El tamaño del repositorio se registra como 0,0 GB.
 
@@ -71,7 +71,7 @@ No disponible. Este repositorio no es un modelo, por lo que no procede compararl
 
 | Alternativa | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| kwoz-niak/efficient-attention21 | 33.088 (safetensors, sin modelo funcional) | no disponible | MIT | repositorio público en HuggingFace |
+| kwoz-niak/efficient-attention21 | 33.088 (safetensors, sin modelo funcional) | no disponible | MIT | repositorio público en Hugging Face |
 | Modelos comparables de atención eficiente | no disponible | no disponible | no disponible | no disponible en la información proporcionada |
 
 ## Limitaciones y advertencias
@@ -88,7 +88,7 @@ No disponible. Este repositorio no es un modelo, por lo que no procede compararl
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kwoz-niak/efficient-attention21
+- Hugging Face: https://huggingface.co/kwoz-niak/efficient-attention21
 - `reading.md` (artefacto principal del repositorio, referenciado en la model card)
 - `README.md` (documentación del repositorio)
 - Contextos de evaluación mencionados en la nota, sin enlace proporcionado: Long Range Arena, ImageNet-1K, Flickr30k

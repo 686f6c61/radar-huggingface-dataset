@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Linguard CAA steering vectors for Tiny Aya Earth es un artefacto de seguridad publicado por el usuario Esimuda en HuggingFace. No se trata de un modelo de lenguaje completo, sino de un conjunto de vectores de direccionamiento (steering vectors) extraidos mediante la tecnica CAA (Contrastive Activation Addition) sobre el modelo base CohereLabs/tiny-aya-earth. El objetivo es endurecer el comportamiento del modelo en tiempo de inferencia frente a respuestas inseguras, sin modificar los pesos originales.
+Linguard CAA steering vectors for Tiny Aya Earth es un artefacto de seguridad publicado por el usuario Esimuda en Hugging Face. No se trata de un modelo de lenguaje completo, sino de un conjunto de vectores de direccionamiento (steering vectors) extraidos mediante la tecnica CAA (Contrastive Activation Addition) sobre el modelo base CohereLabs/tiny-aya-earth. El objetivo es endurecer el comportamiento del modelo en tiempo de inferencia frente a respuestas inseguras, sin modificar los pesos originales.
 
 El paquete se genero con la funcion `extract_caa_vectors` de la libreria SafeTune, tomando activaciones de las capas 12, 16 y 20 a partir de un conjunto de calibracion reservado (`Esimuda/linguard-safety/calibration`). La aplicacion practica consiste en cargar los vectores con `torch.load` y envolver el modelo con `safetune.steer.CAAModel`, aplicando una intensidad de 0,25. Al ser un artefacto derivado, su utilidad depende enteramente del modelo base sobre el que se aplica.
 
@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Linguard CAA vectors (este) | Vectores de steering | no aplica | no disponible | MIT | HuggingFace, 0 descargas |
-| CohereLabs/tiny-aya-earth | Modelo base transformer | no disponible | no disponible | no disponible | HuggingFace (modelo base) |
+| Linguard CAA vectors (este) | Vectores de steering | no aplica | no disponible | MIT | Hugging Face, 0 descargas |
+| CohereLabs/tiny-aya-earth | Modelo base transformer | no disponible | no disponible | no disponible | Hugging Face (modelo base) |
 | Otros artefactos CAA publicos | Vectores de steering | no aplica | no aplica | variable | no disponible |
 
 No se dispone de datos suficientes para comparar rendimiento con alternativas de la misma categoria.
@@ -80,7 +80,7 @@ No se dispone de datos suficientes para comparar rendimiento con alternativas de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Esimuda/linguard-caa-vectors
+- Repositorio Hugging Face: https://huggingface.co/Esimuda/linguard-caa-vectors
 - Modelo base: https://huggingface.co/CohereLabs/tiny-aya-earth
 - Metricas (referenciadas en la model card): https://github.com/Esimuda/pidginguard
 - Conjunto de calibracion (referenciado): https://huggingface.co/Esimuda/linguard-safety/calibration

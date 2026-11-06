@@ -89,7 +89,7 @@ El modelo de Srimon12 se diferencia del de kazalbrur por su entrenamiento con `C
 
 ## Enlaces
 
-- [HuggingFace: Srimon12/bangla-embed-e5-small-mnrl](https://huggingface.co/Srimon12/bangla-embed-e5-small-mnrl)
+- [Hugging Face: Srimon12/bangla-embed-e5-small-mnrl](https://huggingface.co/Srimon12/bangla-embed-e5-small-mnrl)
 - [Modelo base: intfloat/multilingual-e5-small](https://huggingface.co/intfloat/multilingual-e5-small)
 - [Modelo similar: kazalbrur/bangla-embed-e5-small](https://huggingface.co/kazalbrur/bangla-embed-e5-small)
 - [Paper sobre BanglaEmbed (arXiv)](https://arxiv.org/html/2411.15270v1)

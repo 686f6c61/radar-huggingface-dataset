@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sofisofi88/sofi_coder_model` es un modelo de inteligencia artificial publicado en HuggingFace por el usuario `sofisofi88` el 29 de agosto de 2026. Se trata de un modelo muy reciente, con un tamaño de repositorio de 0.2 GB y etiquetado con la librería Keras. No se dispone de información pública sobre su arquitectura, parámetros, licencia o idiomas soportados, más allá de los metadatos básicos de HuggingFace. El nombre sugiere una orientación hacia tareas de generación de código, pero no hay documentación que lo confirme.
+El modelo `sofisofi88/sofi_coder_model` es un modelo de inteligencia artificial publicado en Hugging Face por el usuario `sofisofi88` el 29 de agosto de 2026. Se trata de un modelo muy reciente, con un tamaño de repositorio de 0.2 GB y etiquetado con la librería Keras. No se dispone de información pública sobre su arquitectura, parámetros, licencia o idiomas soportados, más allá de los metadatos básicos de Hugging Face. El nombre sugiere una orientación hacia tareas de generación de código, pero no hay documentación que lo confirme.
 
 La relevancia actual de este modelo es limitada, ya que cuenta con cero descargas y una única interacción (like). No se han publicado papers, demos ni informes técnicos asociados. Los resultados de búsqueda web relacionados con "Soofi" o "SOFIA" corresponden a proyectos distintos, no a este modelo concreto. Por tanto, cualquier evaluación o uso en producción debe considerarse prematura hasta que se publique información adicional.
 
@@ -65,6 +65,6 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [HuggingFace - sofisofi88/sofi_coder_model](https://huggingface.co/sofisofi88/sofi_coder_model)
+- [Hugging Face - sofisofi88/sofi_coder_model](https://huggingface.co/sofisofi88/sofi_coder_model)
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios, demos) asociados a este modelo concreto.

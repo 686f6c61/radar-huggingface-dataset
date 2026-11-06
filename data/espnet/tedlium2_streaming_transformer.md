@@ -70,9 +70,9 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K y sim
 
 | Modelo | Parametros | Contexto | Idiomas | WER en TED-LIUM 2 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| espnet/tedlium2_streaming_transformer | no disponible | no disponible | en | 11,4 (dev) / 10,8 (test) | cc-by-4.0 | HuggingFace, libreria espnet |
-| espnet/owsm_ctc_v4_1B | 1B (segun denominacion) | no disponible | 150+ | no disponible | no disponible en la informacion facilitada | HuggingFace; la model card lo describe como mucho mas preciso y no streaming |
-| D-Keqi/espnet_asr_train_asr_streaming_transformer_raw_en_bpe500_sp_valid.acc.ave | no disponible | no disponible | en | no disponible | no disponible en la informacion facilitada | HuggingFace; mismos pesos que este modelo |
+| espnet/tedlium2_streaming_transformer | no disponible | no disponible | en | 11,4 (dev) / 10,8 (test) | cc-by-4.0 | Hugging Face, libreria espnet |
+| espnet/owsm_ctc_v4_1B | 1B (segun denominacion) | no disponible | 150+ | no disponible | no disponible en la informacion facilitada | Hugging Face; la model card lo describe como mucho mas preciso y no streaming |
+| D-Keqi/espnet_asr_train_asr_streaming_transformer_raw_en_bpe500_sp_valid.acc.ave | no disponible | no disponible | en | no disponible | no disponible en la informacion facilitada | Hugging Face; mismos pesos que este modelo |
 
 La model card no ofrece comparaciones numericas con otros sistemas. Los dos unicos puntos de referencia explicitos son OWSM-CTC (mejor precision, 150+ idiomas, sin streaming) y el repositorio original de Keqi Deng (identico en pesos). Para el resto de alternativas, no disponible.
 
@@ -91,7 +91,7 @@ La model card no ofrece comparaciones numericas con otros sistemas. Los dos unic
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/espnet/tedlium2_streaming_transformer
+- Hugging Face: https://huggingface.co/espnet/tedlium2_streaming_transformer
 - Repositorio original de los pesos (Keqi Deng): https://huggingface.co/D-Keqi/espnet_asr_train_asr_streaming_transformer_raw_en_bpe500_sp_valid.acc.ave
 - Configuracion de entrenamiento: https://github.com/espnet/espnet/blob/master/egs2/tedlium2/asr1/conf/train_asr_streaming_transformer.yaml
 - Cuaderno de demostracion de ASR streaming: https://github.com/espnet/notebook/blob/master/Demos/asr_streaming_demo.ipynb
@@ -99,4 +99,4 @@ La model card no ofrece comparaciones numericas con otros sistemas. Los dos unic
 - Modelo alternativo no streaming recomendado por el autor (OWSM-CTC): https://huggingface.co/espnet/owsm_ctc_v4_1B
 - Paper de ESPnet (Interspeech 2018): http://dx.doi.org/10.21437/Interspeech.2018-1456
 - Resultados completos: fichero `RESULTS.md` dentro de `exp/asr_train_asr_streaming_transformer_raw_en_bpe500_sp/` en la receta `egs2/tedlium2/asr1`
-- La busqueda web realizada no devolvio resultados relevantes sobre este modelo; los enlaces anteriores proceden de la informacion del repositorio de HuggingFace y de la model card.
+- La busqueda web realizada no devolvio resultados relevantes sobre este modelo; los enlaces anteriores proceden de la informacion del repositorio de Hugging Face y de la model card.

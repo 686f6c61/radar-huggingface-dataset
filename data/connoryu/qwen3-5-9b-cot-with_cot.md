@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ConnorYU/qwen3.5-9b-cot-with_cot es un ajuste fino (fine-tuning) del modelo base unsloth/Qwen3.5-9B, publicado por el usuario ConnorYU en HuggingFace. Se trata de un derivado de la familia Qwen3.5 orientado, segun el nombre del repositorio, al razonamiento encadenado (chain-of-thought, CoT): el sufijo "cot-with_cot" sugiere que el entrenamiento se ha realizado sobre datos que incluyen trazas de razonamiento explicitas. El modelo conserva la licencia Apache-2.0 del modelo original y se distribuye en formato safetensors para su uso con la libreria transformers.
+ConnorYU/qwen3.5-9b-cot-with_cot es un ajuste fino (fine-tuning) del modelo base unsloth/Qwen3.5-9B, publicado por el usuario ConnorYU en Hugging Face. Se trata de un derivado de la familia Qwen3.5 orientado, segun el nombre del repositorio, al razonamiento encadenado (chain-of-thought, CoT): el sufijo "cot-with_cot" sugiere que el entrenamiento se ha realizado sobre datos que incluyen trazas de razonamiento explicitas. El modelo conserva la licencia Apache-2.0 del modelo original y se distribuye en formato safetensors para su uso con la libreria transformers.
 
 El modelo tiene 9.653.104.368 parametros (aproximadamente 9,65 mil millones) y un repositorio de 19,3 GB, lo que es coherente con pesos en precision de 16 bits. La pipeline declarada es image-text-to-text, lo que apunta a capacidades multimodales de entrada imagen-texto, aunque la model card no aporta detalles sobre el preentrenamiento ni sobre la composicion del dataset de ajuste. El unico idioma declarado explicitamente es el ingles (en).
 
@@ -31,11 +31,11 @@ La relevancia de esta ficha es limitada pero util como caso de estudio: se trata
 
 La informacion disponible no describe la arquitectura interna. La etiqueta de libreria (qwen3_5) y el modelo base (unsloth/Qwen3.5-9B) indican que se hereda la arquitectura del modelo Qwen3.5 en su variante de 9B, pero no se especifica si se trata de un transformer denso con atencion estandar, de un modelo con atencion lineal o de una variante hibrida. Tampoco se detalla el tokenizador, la longitud de contexto nativa ni el numero de capas, cabezas de atencion o dimension oculta. El pipeline declarado como image-text-to-text sugiere que el modelo acepta entradas multimodales (imagen y texto), si bien la model card no confirma ni describe el codificador visual.
 
-Respecto al entrenamiento, la model card unicamente indica que el ajuste se realizo con Unsloth y la libreria TRL de HuggingFace, con una afirmacion generica de que el entrenamiento fue "2x mas rapido". No se especifica el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de RLHF, DPO o PPO, ni la tecnica de ajuste (LoRA, QLoRA o ajuste completo). El nombre del repositorio apunta a un entrenamiento supervisado sobre datos con cadenas de razonamiento (CoT), pero no hay documentacion que lo confirme ni que detalle el formato de las trazas.
+Respecto al entrenamiento, la model card unicamente indica que el ajuste se realizo con Unsloth y la libreria TRL de Hugging Face, con una afirmacion generica de que el entrenamiento fue "2x mas rapido". No se especifica el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de RLHF, DPO o PPO, ni la tecnica de ajuste (LoRA, QLoRA o ajuste completo). El nombre del repositorio apunta a un entrenamiento supervisado sobre datos con cadenas de razonamiento (CoT), pero no hay documentacion que lo confirme ni que detalle el formato de las trazas.
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles, segun la etiqueta conversational de HuggingFace.
+- Generacion de texto conversacional en ingles, segun la etiqueta conversational de Hugging Face.
 - Razonamiento encadenado (chain-of-thought): el nombre del repositorio indica un ajuste orientado a producir trazas de razonamiento, aunque no se documenta el formato ni la calidad resultante.
 - Procesamiento de entradas imagen-texto: la pipeline declarada es image-text-to-text, lo que implica soporte de vision, no verificado en la model card.
 - Compatibilidad con text-generation-inference (TGI) segun las etiquetas del repositorio.
@@ -99,9 +99,9 @@ No es posible establecer una comparativa rigurosa con modelos como los de las fa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ConnorYU/qwen3.5-9b-cot-with_cot
+- Modelo en Hugging Face: https://huggingface.co/ConnorYU/qwen3.5-9b-cot-with_cot
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-9B
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
 - Unsloth (imagen de marca referenciada en la model card): https://raw.githubusercontent.com/unslothai/unsloth/main/images/unsloth%20made%20with%20love.png
-- Libreria TRL de HuggingFace: no se incluye enlace directo en la informacion proporcionada; puede localizarse en el ecosistema de HuggingFace.
+- Libreria TRL de Hugging Face: no se incluye enlace directo en la informacion proporcionada; puede localizarse en el ecosistema de Hugging Face.
 - Paper, blog o demo oficiales: no disponibles. La busqueda web realizada no devolvio resultados tecnicos relevantes sobre este modelo.

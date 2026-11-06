@@ -17,7 +17,7 @@ El repositorio incluye los axmodel precompilados, un SDK C++ para AX650/aarch64,
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No disponible; el consumo se especifica en `max_new_tokens`, con una estimacion de 50 tokens por segundo de audio |
 | Tipos de cuantizacion | LM en s8 con hidden bf16; fine_local en INT8; decoder en SmoothQuant+U16 |
-| Idiomas soportados | Chino (zh) e ingles (en), segun las etiquetas del repositorio; la ficha de HuggingFace no detalla mas idiomas |
+| Idiomas soportados | Chino (zh) e ingles (en), segun las etiquetas del repositorio; la ficha de Hugging Face no detalla mas idiomas |
 | Licencia | Apache 2.0 |
 | Formato de pesos | axmodel precompilado (AX Engine) para LM, fine_local y decoder; ficheros auxiliares `embed_tokens.bin`, `speaker_vecs.bin`, `id2code.bin`, `voice.npz` |
 | Frecuencia de muestreo de salida | 24 kHz |
@@ -110,7 +110,7 @@ Rendimiento medido: RTF de 0,49-0,60 en NPU2 frente a 0,44-0,53 en la referencia
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/HY-2012/Hojo-TTS-Light-NPU2
+- Repositorio en Hugging Face: https://huggingface.co/HY-2012/Hojo-TTS-Light-NPU2
 - Version de referencia en NPU3: https://huggingface.co/AXERA-TECH/Hojo-TTS-Light
 - Modelo upstream: https://huggingface.co/HojoAI/Hojo-TTS-Light-40M
 - Repositorio de conversion y reproduccion: https://github.com/ml-inory/hojo-tts-light.axera

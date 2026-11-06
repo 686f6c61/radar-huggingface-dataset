@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `hidariz97/model_310248297_tiny_transformer_small` es una implementación a pequeña escala de la arquitectura *tiny transformer*, desarrollada por el usuario hidariz97 y publicada en HuggingFace bajo licencia CC-BY-4.0. Está orientado a tareas de retrieval, aunque no se proporcionan detalles sobre el tipo concreto de recuperación de información ni sobre el conjunto de datos de entrenamiento. El repositorio contiene únicamente un archivo de código Python (`model_310248297_tiny_transformer_small.py`), sin pesos preentrenados ni artefactos adicionales.
+El modelo `hidariz97/model_310248297_tiny_transformer_small` es una implementación a pequeña escala de la arquitectura *tiny transformer*, desarrollada por el usuario hidariz97 y publicada en Hugging Face bajo licencia CC-BY-4.0. Está orientado a tareas de retrieval, aunque no se proporcionan detalles sobre el tipo concreto de recuperación de información ni sobre el conjunto de datos de entrenamiento. El repositorio contiene únicamente un archivo de código Python (`model_310248297_tiny_transformer_small.py`), sin pesos preentrenados ni artefactos adicionales.
 
 Este modelo no presenta descargas ni likes en la plataforma, lo que sugiere que se trata de un proyecto experimental o educativo más que de una solución lista para producción. A pesar de su nombre, no guarda relación con otros proyectos homónimos como TinyTransformer de skolouri o avvorstenbosch, que son implementaciones didácticas de GPT desde cero. La escasa documentación y la ausencia de métricas de rendimiento hacen que su utilidad práctica sea muy limitada.
 
@@ -71,4 +71,4 @@ No se han identificado modelos comparables porque no se conoce el tamaño exacto
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hidariz97/model_310248297_tiny_transformer_small
+- Hugging Face: https://huggingface.co/hidariz97/model_310248297_tiny_transformer_small

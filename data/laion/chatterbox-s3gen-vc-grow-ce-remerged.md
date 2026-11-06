@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Base | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| laion/chatterbox-s3gen-vc-grow-ce-remerged | Adaptador LoRA VC (RL) | ResembleAI/chatterbox | cc-by-4.0 | HuggingFace (0,5 GB) |
-| laion/chatterbox-s3gen-vc-grow | Adaptador VC (padre) | ResembleAI/chatterbox | no disponible en la informacion | HuggingFace (referencia v1) |
-| ResembleAI/chatterbox | Modelo TTS base | - | MIT (upstream) | HuggingFace |
+| laion/chatterbox-s3gen-vc-grow-ce-remerged | Adaptador LoRA VC (RL) | ResembleAI/chatterbox | cc-by-4.0 | Hugging Face (0,5 GB) |
+| laion/chatterbox-s3gen-vc-grow | Adaptador VC (padre) | ResembleAI/chatterbox | no disponible en la informacion | Hugging Face (referencia v1) |
+| ResembleAI/chatterbox | Modelo TTS base | - | MIT (upstream) | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos; la informacion solo confirma la relacion de dependencia (el adaptador re-merged se inicializa desde el v1 paso 4.000 y requiere los pesos base de Chatterbox).
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos; la inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/laion/chatterbox-s3gen-vc-grow-ce-remerged
+- Modelo en Hugging Face: https://huggingface.co/laion/chatterbox-s3gen-vc-grow-ce-remerged
 - Modelo base upstream: https://huggingface.co/ResembleAI/chatterbox
 - Adaptador padre (v1): https://huggingface.co/laion/chatterbox-s3gen-vc-grow
 - Modelo de recompensa: https://huggingface.co/laion/humaneness-ears-base-medium (revision `818506970d93c809a3295a0a02c40dee8ff2bfc3`)

@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks estándar de LLM (MMLU, HumanEval, 
 - VRAM estimada para inferencia: mínima; con 17 millones de parámetros y un repo de 0,2 GB, el modelo cabe con holgura en CPU o en cualquier GPU moderna (del orden de decenas de MB en precisión estándar; cuantizaciones no disponibles).
 - GPU recomendadas: ninguna en particular para inferencia; el entrenamiento original se realizó en una NVIDIA H200, pero la inferencia vía ONNX Runtime funciona en CPU.
 - Consumer GPUs: no requiere GPU; funciona en portátiles y máquinas sin aceleradora mediante onnxruntime y numpy.
-- Opciones de despliegue: ONNX Runtime (vía `model.serving_v0894.onnx_runner`), PyTorch con safetensors o model.pt, API HTTP pública (`zenodivergent.dev/api/public/v1/check`), endpoint MCP para clientes de IA y Space de HuggingFace con demo interactiva.
+- Opciones de despliegue: ONNX Runtime (vía `model.serving_v0894.onnx_runner`), PyTorch con safetensors o model.pt, API HTTP pública (`zenodivergent.dev/api/public/v1/check`), endpoint MCP para clientes de IA y Space de Hugging Face con demo interactiva.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -104,7 +104,7 @@ No existen otros modelos entrenados específicamente como agregadores de paneles
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ZenoDivergent/zeno-divergent-v0894
+- Modelo en Hugging Face: https://huggingface.co/ZenoDivergent/zeno-divergent-v0894
 - Demo interactiva (Space): https://huggingface.co/spaces/mbarbosa1/zeno-try-it
 - API pública: https://zenodivergent.dev/api/public/v1/check
 - Endpoint MCP: https://zenodivergent.dev/api/public/v1/mcp

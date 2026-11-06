@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama-3-8B-Instruct-TAR-Bio-v2-perturb-rms1pct-v1 es un checkpoint de investigación derivado de Llama-3-8B-Instruct, publicado por el usuario mikeyautorino2 en HuggingFace. El modelo aplica la técnica TAR (Tamper-Resistant Safeguards) descrita por Tamirisa et al. (2024) sobre el checkpoint base `lapisrocks/Llama-3-8B-Instruct-Random-Mapped-Bio`, con el objetivo de que las salvaguardas de bioseguridad instaladas resistan ataques de fine-tuning malicioso. La variante concreta introduce una perturbación aleatoria de pesos antes de cada ataque simulado en el bucle interno de entrenamiento TAR.
+Llama-3-8B-Instruct-TAR-Bio-v2-perturb-rms1pct-v1 es un checkpoint de investigación derivado de Llama-3-8B-Instruct, publicado por el usuario mikeyautorino2 en Hugging Face. El modelo aplica la técnica TAR (Tamper-Resistant Safeguards) descrita por Tamirisa et al. (2024) sobre el checkpoint base `lapisrocks/Llama-3-8B-Instruct-Random-Mapped-Bio`, con el objetivo de que las salvaguardas de bioseguridad instaladas resistan ataques de fine-tuning malicioso. La variante concreta introduce una perturbación aleatoria de pesos antes de cada ataque simulado en el bucle interno de entrenamiento TAR.
 
 El problema que aborda es la durabilidad de las salvaguardas en modelos de pesos abiertos: un atacante con acceso a los pesos puede hacer fine-tuning para recuperar conocimiento peligroso que el modelo originalmente rechazaba. TAR entrena al modelo para que las salvaguardas se mantengan incluso después de ataques de fine-tuning. Esta versión concreta investiga si entrenar contra ataques que parten de pesos perturbados aleatoriamente mejora la resistencia a la manipulación.
 
@@ -85,7 +85,7 @@ La comparación directa de rendimiento con estas alternativas no está disponibl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mikeyautorino2/Llama-3-8B-Instruct-TAR-Bio-v2-perturb-rms1pct-v1
+- Modelo en Hugging Face: https://huggingface.co/mikeyautorino2/Llama-3-8B-Instruct-TAR-Bio-v2-perturb-rms1pct-v1
 - Modelo base: https://huggingface.co/lapisrocks/Llama-3-8B-Instruct-Random-Mapped-Bio
 - Paper TAR (Tamirisa et al., 2024): https://arxiv.org/abs/2408.00761
 - Paper de evaluación de durabilidad (Qi et al., 2024): https://arxiv.org/abs/2412.07097

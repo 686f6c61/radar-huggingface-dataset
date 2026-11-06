@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`btsa-ntos/class-contrastive` es un repositorio experimental que contiene una implementación minimalista de un Tiny Transformer orientado a aprendizaje contrastivo. Lo ha desarrollado el usuario de HuggingFace `btsa-ntos` (田中 蓮) como un entorno ligero para inspeccionar cambios arquitectónicos antes de lanzar entrenamientos completos. El modelo tiene 49.600 parámetros en formato `safetensors` y se distribuye bajo licencia Apache-2.0.
+`btsa-ntos/class-contrastive` es un repositorio experimental que contiene una implementación minimalista de un Tiny Transformer orientado a aprendizaje contrastivo. Lo ha desarrollado el usuario de Hugging Face `btsa-ntos` (田中 蓮) como un entorno ligero para inspeccionar cambios arquitectónicos antes de lanzar entrenamientos completos. El modelo tiene 49.600 parámetros en formato `safetensors` y se distribuye bajo licencia Apache-2.0.
 
 No se trata de un modelo entrenado: el archivo `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo, y el propio autor indica explícitamente que no presenta ninguna puntuación de benchmark ni resultados de entrenamiento. La arquitectura propuesta incluye atención dilatada, fusión mediante co-atención, activación approximada GELU y normalización ScaleNorm.
 
@@ -44,7 +44,7 @@ La receta de entrenamiento por defecto, definida en `training_args.json`, usa el
 - Pruebas de humo de pipelines de entrenamiento: mediante el script `inference.py` y el checkpoint de inicialización se pueden verificar que los bucles de entrenamiento, la carga de datos y las funciones de pérdida funcionan sin errores con una GPU modesta.
 - Enseñanza de conceptos de transformers: al ser un ejemplo mínimo y legible, resulta útil en cursos o talleres donde se quiere mostrar cómo se construye un transformer desde cero con atención personalizada.
 - Comparación de mecanismos de normalización: activaciones approximadas y ScaleNorm pueden evaluarse en un entorno controlado y de baja escala para estudiar su estabilidad numérica.
-- Desarrollo de adaptadores de carga: al ser una implementación custom, sirve para practicar la escritura de adaptadores que permitan cargar los pesos en APIs de HuggingFace de uso genérico.
+- Desarrollo de adaptadores de carga: al ser una implementación custom, sirve para practicar la escritura de adaptadores que permitan cargar los pesos en APIs de Hugging Face de uso genérico.
 - Experimentación con pérdidas contrastivas: la estructura del proyecto está pensada para entrenar con objetivos contrastivos, de modo que se pueden probar funciones de pérdida y estrategias de muestreo negativo sin invertir en infraestructura grande.
 
 ## Benchmarks y rendimiento

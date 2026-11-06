@@ -82,8 +82,8 @@ La comparativa natural de un repositorio de cuantizacion es contra el modelo sin
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/turboderp/Ling-3.1-flash-exl3
+- Repositorio Hugging Face: https://huggingface.co/turboderp/Ling-3.1-flash-exl3
 - Rama de la cuantizacion de 2,10 bpw: https://huggingface.co/turboderp/Ling-3.1-flash-exl3/tree/2.10bpw
 - Modelo base: https://huggingface.co/inclusionAI/Ling-3.1-flash
 
-Nota: la busqueda web realizada no devolvio resultados tecnicos relevantes sobre el modelo; los unicos enlaces utiles son los de HuggingFace listados arriba. No se dispone de enlaces a papers, blogs, repositorios de codigo o demos en la informacion proporcionada.
+Nota: la busqueda web realizada no devolvio resultados tecnicos relevantes sobre el modelo; los unicos enlaces utiles son los de Hugging Face listados arriba. No se dispone de enlaces a papers, blogs, repositorios de codigo o demos en la informacion proporcionada.

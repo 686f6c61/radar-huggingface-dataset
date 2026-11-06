@@ -4,7 +4,7 @@
 
 Bris-HourGlass es un modelo de predicción meteorológica desarrollado por el Instituto Meteorológico Noruego (MET Norway), la organización responsable del servicio meteorológico Yr. El modelo forma parte de la familia Bris, un sistema de predicción basado en datos que utiliza el framework Anemoi y que se presenta como una alternativa a los modelos numéricos de predicción del tiempo tradicionales. A diferencia de los modelos de lenguaje, Bris está diseñado específicamente para el pronóstico atmosférico de alta resolución, empleando redes neuronales gráficas (GNN) y una arquitectura de malla estirada que permite concentrar la resolución en regiones de interés.
 
-El nombre "HourGlass" sugiere una posible variante o checkpoint específico del modelo Bris, aunque la información pública disponible en HuggingFace es extremadamente limitada: no se especifican parámetros, arquitectura detallada, ni datos de entrenamiento. La relevancia de este modelo radica en que representa una aplicación práctica de la IA en un dominio científico crítico como la meteorología, con el respaldo de una institución oficial y su integración en servicios reales como Yr, que atiende a millones de usuarios semanales. La licencia Apache 2.0 facilita su uso y adaptación tanto en investigación como en producción.
+El nombre "HourGlass" sugiere una posible variante o checkpoint específico del modelo Bris, aunque la información pública disponible en Hugging Face es extremadamente limitada: no se especifican parámetros, arquitectura detallada, ni datos de entrenamiento. La relevancia de este modelo radica en que representa una aplicación práctica de la IA en un dominio científico crítico como la meteorología, con el respaldo de una institución oficial y su integración en servicios reales como Yr, que atiende a millones de usuarios semanales. La licencia Apache 2.0 facilita su uso y adaptación tanto en investigación como en producción.
 
 ## Especificaciones tecnicas
 
@@ -58,7 +58,7 @@ No se dispone de informacion suficiente para realizar una comparativa directa co
 
 ## Limitaciones y advertencias
 
-- Informacion tecnica incompleta: la model card de HuggingFace no contiene detalles sobre arquitectura, parametros, datos de entrenamiento ni rendimiento. Cualquier uso en produccion debe basarse en la documentacion oficial del proyecto Bris (GitHub, documentacion de Anemoi).
+- Informacion tecnica incompleta: la model card de Hugging Face no contiene detalles sobre arquitectura, parametros, datos de entrenamiento ni rendimiento. Cualquier uso en produccion debe basarse en la documentacion oficial del proyecto Bris (GitHub, documentacion de Anemoi).
 - Sesgos geograficos: al ser desarrollado por MET Norway, es probable que el modelo este optimizado para la region nordica y europea, lo que puede limitar su precision en otras partes del mundo.
 - Riesgo de alucinacion en predicciones: como todo modelo de IA, puede generar predicciones incorrectas o inconsistentes con la fisica atmosferica, especialmente en situaciones extremas o fuera de la distribucion de entrenamiento.
 - Dependencia del framework Anemoi: el modelo requiere el ecosistema Anemoi para su ejecucion, lo que implica una curva de aprendizaje y dependencias adicionales (por ejemplo, la libreria udunits2).
@@ -67,9 +67,9 @@ No se dispone de informacion suficiente para realizar una comparativa directa co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/met-no/Bris-HourGlass
+- Modelo en Hugging Face: https://huggingface.co/met-no/Bris-HourGlass
 - Repositorio de inferencia (GitHub): https://github.com/metno/bris-inference
 - Paquete PyPI: https://pypi.org/project/bris/
 - Articulo de Sigma2 sobre Bris: https://www.sigma2.no/research/bris-high-resolution-data-driven-weather-forecasting-model
 - Articulo de LUMI sobre Bris: https://lumi-supercomputer.eu/data-driven-weather-forecasting-model/
-- Perfil de MET Norway en HuggingFace: https://huggingface.co/met-no
+- Perfil de MET Norway en Hugging Face: https://huggingface.co/met-no

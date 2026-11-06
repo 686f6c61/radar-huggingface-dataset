@@ -108,10 +108,10 @@ No se dispone de cifras de rendimiento de otros agentes de la misma campana en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-broad-r00-sobol-first100-divl
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-broad-r00-sobol-first100-divl
 - Pagina del proyecto Mulligan: https://mulligan.page
 - Policy Arena (evaluaciones): https://arena.mulligan.page
-- Organizacion mulligan en HuggingFace: https://huggingface.co/mulligan
+- Organizacion mulligan en Hugging Face: https://huggingface.co/mulligan
 - Checkpoint padre (actor de difusion congelado): https://huggingface.co/mulligan/sim-square-broad-r00-sobol-first100-idql
 - Dataset de entrenamiento: https://huggingface.co/datasets/mulligan/sim-square-broad-c00-teleop-sobol-first100
 - Dataset de evaluacion: https://huggingface.co/datasets/mulligan/sim-square-broad-r00-r03-eval

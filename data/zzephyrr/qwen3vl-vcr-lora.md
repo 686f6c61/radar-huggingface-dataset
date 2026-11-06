@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`qwen3vl-vcr-lora` es un adaptador LoRA de ajuste fino (fine-tune) sobre el modelo multimodal `Qwen/Qwen3-VL-4B-Instruct`, desarrollado por el usuario `zzephyrr`. El modelo se ha entrenado mediante Supervised Fine-Tuning (SFT) utilizando la librería TRL de HuggingFace. El nombre "vcr" sugiere una posible orientación hacia tareas de razonamiento visual o de sentido común visual, aunque la model card no especifica el dataset ni la tarea concreta.
+`qwen3vl-vcr-lora` es un adaptador LoRA de ajuste fino (fine-tune) sobre el modelo multimodal `Qwen/Qwen3-VL-4B-Instruct`, desarrollado por el usuario `zzephyrr`. El modelo se ha entrenado mediante Supervised Fine-Tuning (SFT) utilizando la librería TRL de Hugging Face. El nombre "vcr" sugiere una posible orientación hacia tareas de razonamiento visual o de sentido común visual, aunque la model card no especifica el dataset ni la tarea concreta.
 
 Al ser un adaptador LoRA, no se trata de un modelo independiente sino de un conjunto de pesos que se combinan con el modelo base para adaptarlo a una tarea específica. El repositorio tiene un tamaño de 0,1 GB, lo que es consistente con un adaptador de bajo rango. El modelo base, Qwen3-VL-4B-Instruct, es un modelo de 4 mil millones de parámetros con capacidades multimodales (texto e imagen) y una ventana de contexto de 128K tokens, lo que le confiere al adaptador las mismas capacidades base.
 
@@ -62,10 +62,10 @@ Dado que no hay información sobre el rendimiento del adaptador, la comparativa 
 
 | Modelo | Parametros | Contexto | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-VL-4B-Instruct (base) | 4B | 128K | Sí | Apache 2.0 | HuggingFace |
-| qwen3vl-vcr-lora (este modelo) | 4B + adaptador | No especificado | Heredada | No especificada | HuggingFace |
-| LLaVA-1.6-7B | 7B | 32K | Sí | Apache 2.0 | HuggingFace |
-| Phi-3-vision-128k-instruct | 4.2B | 128K | Sí | MIT | HuggingFace |
+| Qwen3-VL-4B-Instruct (base) | 4B | 128K | Sí | Apache 2.0 | Hugging Face |
+| qwen3vl-vcr-lora (este modelo) | 4B + adaptador | No especificado | Heredada | No especificada | Hugging Face |
+| LLaVA-1.6-7B | 7B | 32K | Sí | Apache 2.0 | Hugging Face |
+| Phi-3-vision-128k-instruct | 4.2B | 128K | Sí | MIT | Hugging Face |
 
 La comparativa real con otros adaptadores LoRA no es posible sin datos de evaluación.
 
@@ -80,6 +80,6 @@ La comparativa real con otros adaptadores LoRA no es posible sin datos de evalua
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/zzephyrr/qwen3vl-vcr-lora)
+- [Repositorio Hugging Face](https://huggingface.co/zzephyrr/qwen3vl-vcr-lora)
 - [Modelo base Qwen/Qwen3-VL-4B-Instruct](https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct)
 - [TRL (Transformers Reinforcement Learning)](https://github.com/huggingface/trl)

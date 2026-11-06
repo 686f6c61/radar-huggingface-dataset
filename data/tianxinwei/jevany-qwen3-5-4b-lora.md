@@ -96,7 +96,7 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tianxinwei/JevAny-Qwen3.5-4B-LoRA
+- Modelo en Hugging Face: https://huggingface.co/tianxinwei/JevAny-Qwen3.5-4B-LoRA
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Repositorio JevAny: https://github.com/weitianxin/JevAny
 - Qwen 3.5 4B en LM Studio: https://lmstudio.ai/models/qwen/qwen3.5-4b

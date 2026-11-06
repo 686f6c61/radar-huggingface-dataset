@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B es un modelo de lenguaje causal con codificador de visión, de tipo denso y aproximadamente 27.800 millones de parámetros, publicado en HuggingFace bajo el identificador `foxyinbupt/Qwen3.8-27B`. Según su model card, se presenta como la generación más reciente de la familia abierta Qwen, construida sobre la base arquitectónica de Qwen3.5 y orientada a código, trabajo profesional, investigación y tareas agénticas de horizonte largo. El modelo combina atención lineal (Gated DeltaNet) con atención completa (Gated Attention) en un esquema híbrido 3:1, e incorpora comprensión nativa de imágenes y vídeo.
+Qwen3.8-27B es un modelo de lenguaje causal con codificador de visión, de tipo denso y aproximadamente 27.800 millones de parámetros, publicado en Hugging Face bajo el identificador `foxyinbupt/Qwen3.8-27B`. Según su model card, se presenta como la generación más reciente de la familia abierta Qwen, construida sobre la base arquitectónica de Qwen3.5 y orientada a código, trabajo profesional, investigación y tareas agénticas de horizonte largo. El modelo combina atención lineal (Gated DeltaNet) con atención completa (Gated Attention) en un esquema híbrido 3:1, e incorpora comprensión nativa de imágenes y vídeo.
 
 El problema que aborda es el de un modelo compacto y desplegable que mantenga capacidades agénticas y multimodales sin el coste de inferencia de variantes mucho mayores: 27B de parámetros en precisión BF16 ocupan unos 55,6 GB, lo que permite servirlo en una GPU de 80 GB o, cuantizado, en hardware de consumo. Su ventana de contexto nativa es de 262.144 tokens, extensible hasta 1.000.000, y el control de razonamiento es configurable por petición (`reasoning_effort`, `preserve_thinking`).
 
@@ -79,7 +79,7 @@ Los comparadores que aparecen en la model card son los siguientes. Los datos de 
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Datos de benchmark |
 |---|---|---|---|---|---|
-| Qwen3.8-27B (`foxyinbupt`) | 27,78B densos | 262.144 nativos / 1M extensible | Apache 2.0 | HuggingFace, pesos safetensors | No disponibles |
+| Qwen3.8-27B (`foxyinbupt`) | 27,78B densos | 262.144 nativos / 1M extensible | Apache 2.0 | Hugging Face, pesos safetensors | No disponibles |
 | Qwen3.6-27B | No disponible (la denominación sugiere ~27B) | No disponible | No disponible | No disponible | No disponibles |
 | Qwen3.7-Plus | No disponible | No disponible | No disponible | No disponible (posible servicio propietario) | No disponibles |
 | Muse Glimmer-30B | No disponible (la denominación sugiere ~30B) | No disponible | No disponible | No disponible | No disponibles |
@@ -102,7 +102,7 @@ No se dispone de información suficiente para establecer una comparativa cuantit
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/foxyinbupt/Qwen3.8-27B
+- Repositorio Hugging Face: https://huggingface.co/foxyinbupt/Qwen3.8-27B
 - Qwen Cloud (servicio mencionado en la model card): https://www.qwencloud.com
 - Página del modelo en Qwen Cloud (mencionada, disponibles próximamente): https://www.qwencloud.com/models/qwen3.8-27b
 - Paper técnico: no disponible

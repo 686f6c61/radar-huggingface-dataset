@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `fsafdlsaf/gmhmjmkmlm` de HuggingFace no contiene un modelo de inteligencia artificial. La model card publicada corresponde a la presentacion personal de un ingeniero de sistemas llamado Simon, radicado en Estocolmo, que describe su experiencia en programacion de sistemas (Rust, Zig, C), almacenamiento distribuido, redes de baja latencia y telemetria con eBPF. No se declara ninguna arquitectura de red neuronal, ningun conjunto de pesos, ni ningun proceso de entrenamiento.
+El repositorio `fsafdlsaf/gmhmjmkmlm` de Hugging Face no contiene un modelo de inteligencia artificial. La model card publicada corresponde a la presentacion personal de un ingeniero de sistemas llamado Simon, radicado en Estocolmo, que describe su experiencia en programacion de sistemas (Rust, Zig, C), almacenamiento distribuido, redes de baja latencia y telemetria con eBPF. No se declara ninguna arquitectura de red neuronal, ningun conjunto de pesos, ni ningun proceso de entrenamiento.
 
 El contenido del README incluye tablas de herramientas, descripcion de proyectos de codigo abierto (`vortex-kv`, `meshpipe`, `chronos-probe`, `poly-dsp`), un diagrama de arquitectura de sistemas y datos de contacto. Ninguno de estos elementos constituye informacion sobre un modelo de lenguaje o multimodal. El identificador del repositorio, `gmhmjmkmlm`, parece un marcador de posicion sin significado tecnico.
 
@@ -39,7 +39,7 @@ Tampoco se documenta corpus de entrenamiento, numero de tokens, composicion del 
 ## Casos de uso
 
 - No aplicable: el repositorio no contiene un modelo desplegable, por lo que no puede emplearse en atencion al cliente, generacion de codigo, analisis documental ni ninguna otra tarea de inferencia.
-- Auditoria de repositorios de HuggingFace: el caso puede servir para ilustrar como detectar repositorios sin artefactos de modelo validos (ausencia de pesos, licencia y pipeline).
+- Auditoria de repositorios de Hugging Face: el caso puede servir para ilustrar como detectar repositorios sin artefactos de modelo validos (ausencia de pesos, licencia y pipeline).
 - Formacion en higiene de metadatos: util como ejemplo negativo de model card que no cumple los campos minimos exigidos por la plataforma.
 - No se identifican casos de uso adicionales realistas dado que no existe un modelo funcional.
 
@@ -70,6 +70,6 @@ No disponible. No existe una categoria de modelo comparable porque el repositori
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/fsafdlsaf/gmhmjmkmlm
+- Repositorio en Hugging Face: https://huggingface.co/fsafdlsaf/gmhmjmkmlm
 - Perfil de GitHub citado en la model card: https://github.com/gmhmjmkmlm-rgb
 - No se han encontrado papers, blogs, demos ni repositorios de codigo asociados a un modelo de IA en la informacion disponible.

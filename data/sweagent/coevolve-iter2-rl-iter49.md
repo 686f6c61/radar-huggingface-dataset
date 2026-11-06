@@ -72,7 +72,7 @@ No se dispone de información comparativa con otros modelos en la documentación
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sweagent/coevolve-iter2-rl-iter49
+- Modelo en Hugging Face: https://huggingface.co/sweagent/coevolve-iter2-rl-iter49
 - Paper CoEvolve (arXiv): https://arxiv.org/abs/2604.15840
 - PDF del paper: https://arxiv.org/pdf/2604.15840
 - Repositorio GitHub de CoEvolve: https://github.com/AMAP-ML/CoEvolve

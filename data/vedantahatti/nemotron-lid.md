@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nemotron-lid es un checkpoint de encoder de voz publicado por el usuario vedantahatti en HuggingFace. No se trata de un modelo completo de extremo a extremo, sino de un extractor de características congelado (frozen speech encoder) que sirve como base para una tarea concreta: la identificación de idioma hablado (spoken language identification, LID) en nueve idiomas. El clasificador de idioma propiamente dicho es una sonda lineal (linear probe) independiente que se distribuye junto con el paquete de inferencia nemotron-lid, no dentro de este repositorio.
+Nemotron-lid es un checkpoint de encoder de voz publicado por el usuario vedantahatti en Hugging Face. No se trata de un modelo completo de extremo a extremo, sino de un extractor de características congelado (frozen speech encoder) que sirve como base para una tarea concreta: la identificación de idioma hablado (spoken language identification, LID) en nueve idiomas. El clasificador de idioma propiamente dicho es una sonda lineal (linear probe) independiente que se distribuye junto con el paquete de inferencia nemotron-lid, no dentro de este repositorio.
 
 El artefacto alojado es el fichero `indic_nemotron_v1_1_sft_600k_lr1-averaged-40k.nemo`, un checkpoint en formato nativo de NVIDIA NeMo cuyo nombre sugiere un ajuste supervisado (SFT) sobre aproximadamente 600 000 muestras, con una tasa de aprendizaje etiquetada como lr1 y un promedio de pesos en torno al paso 40 000. El repositorio ocupa 2,6 GB y el autor advierte explícitamente de que no deben sustituirse otros checkpoints de Nemotron por este, ya que la sonda lineal se ha entrenado contra las representaciones concretas de este encoder.
 
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tarea | Idiomas | Parametros | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vedantahatti/nemotron-lid | LID de habla con sonda lineal externa | 9 (no especificados) | no disponible | other | HuggingFace, formato .nemo |
-| SpeechBrain VoxLingua107 (ECAPA-TDNN) | LID de habla | 107 | no disponible en esta busqueda | Apache 2.0, segun la documentacion publica del proyecto | HuggingFace y SpeechBrain |
-| Whisper (large-v3) como detector de idioma | LID integrada en un modelo ASR multitarea | 99 | no disponible en esta busqueda | MIT, segun el repositorio de OpenAI | HuggingFace, repositorio de OpenAI |
-| Meta MMS-LID | LID de habla | Miles de lenguas, segun la documentacion publica | no disponible en esta busqueda | CC-BY-NC, segun la documentacion publica | HuggingFace |
+| vedantahatti/nemotron-lid | LID de habla con sonda lineal externa | 9 (no especificados) | no disponible | other | Hugging Face, formato .nemo |
+| SpeechBrain VoxLingua107 (ECAPA-TDNN) | LID de habla | 107 | no disponible en esta busqueda | Apache 2.0, segun la documentacion publica del proyecto | Hugging Face y SpeechBrain |
+| Whisper (large-v3) como detector de idioma | LID integrada en un modelo ASR multitarea | 99 | no disponible en esta busqueda | MIT, segun el repositorio de OpenAI | Hugging Face, repositorio de OpenAI |
+| Meta MMS-LID | LID de habla | Miles de lenguas, segun la documentacion publica | no disponible en esta busqueda | CC-BY-NC, segun la documentacion publica | Hugging Face |
 
 Nota: los datos de los modelos comparativos provienen de conocimiento general sobre esos proyectos y no han podido verificarse con los resultados de la busqueda web realizada, que no devolvio informacion tecnica relevante. Las cifras de parametros se omiten por no disponer de confirmacion en la informacion proporcionada.
 
@@ -88,7 +88,7 @@ Nota: los datos de los modelos comparativos provienen de conocimiento general so
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vedantahatti/nemotron-lid
+- Hugging Face: https://huggingface.co/vedantahatti/nemotron-lid
 - Checkpoint referenciado: `indic_nemotron_v1_1_sft_600k_lr1-averaged-40k.nemo` (SHA256 58e85ea1bdcad81f1ebcb14b3e083ee3501c38b26b41356ea544f46d14f529ed)
 - Paper, blog o repositorio del autor: no disponible
 - Resultados de la busqueda web: la busqueda no devolvio enlaces relevantes sobre este modelo; los resultados obtenidos trataban de temas no relacionados (aplicaciones de mensajeria y suites ofimaticas) y se han descartado.

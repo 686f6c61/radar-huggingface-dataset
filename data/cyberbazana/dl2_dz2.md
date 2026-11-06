@@ -2,11 +2,11 @@
 
 ## Resumen
 
-dl2_dz2 es un modelo de clasificacion de tokens (token-classification) publicado por el usuario cyberbazana en HuggingFace. Se trata de un fine-tuning de BAAI/bge-small-en-v1.5, un modelo tipo BERT de 33.215.625 parametros orientado originalmente a generacion de embeddings de frases en ingles. El autor lo ha reentrenado para una tarea de etiquetado a nivel de token, aunque la model card no especifica ni el conjunto de datos ni el conjunto de etiquetas utilizados.
+dl2_dz2 es un modelo de clasificacion de tokens (token-classification) publicado por el usuario cyberbazana en Hugging Face. Se trata de un fine-tuning de BAAI/bge-small-en-v1.5, un modelo tipo BERT de 33.215.625 parametros orientado originalmente a generacion de embeddings de frases en ingles. El autor lo ha reentrenado para una tarea de etiquetado a nivel de token, aunque la model card no especifica ni el conjunto de datos ni el conjunto de etiquetas utilizados.
 
 El interes del modelo es limitado y fundamentalmente practico: es un ejemplo de reutilizacion de un encoder pequeno (33M de parametros, ~0,1 GB en disco) para tareas de sequence labeling, lo que lo hace desplegable en hardware muy modesto. No se trata de un modelo de proposito general ni de un lanzamiento relevante para la comunidad, dado que acumula 0 descargas y 0 likes en el momento de redactar esta ficha.
 
-La informacion publicada es escasa: la model card fue generada automaticamente por el Trainer de HuggingFace e incluye los hiperparametros de entrenamiento y las metricas de evaluacion, pero deja sin cubrir las secciones de descripcion, usos previstos, limitaciones y datos de entrenamiento ("More information needed"). Cualquier evaluacion de su calidad fuera del conjunto de validacion propio es, por tanto, imposible con los datos disponibles.
+La informacion publicada es escasa: la model card fue generada automaticamente por el Trainer de Hugging Face e incluye los hiperparametros de entrenamiento y las metricas de evaluacion, pero deja sin cubrir las secciones de descripcion, usos previstos, limitaciones y datos de entrenamiento ("More information needed"). Cualquier evaluacion de su calidad fuera del conjunto de validacion propio es, por tanto, imposible con los datos disponibles.
 
 ## Especificaciones tecnicas
 
@@ -90,10 +90,10 @@ No se dispone de resultados de benchmarks comparables publicados para este model
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| cyberbazana/dl2_dz2 | 33,2M | no disponible (base: 512 tokens) | MIT | HuggingFace, 0 descargas |
-| BAAI/bge-small-en-v1.5 (base) | 33M | 512 tokens | MIT | HuggingFace, ampliamente usado |
-| BERT-base-uncased | 110M | 512 tokens | Apache-2.0 | HuggingFace, muy extendido |
-| DistilBERT-base-uncased | 66M | 512 tokens | Apache-2.0 | HuggingFace, muy extendido |
+| cyberbazana/dl2_dz2 | 33,2M | no disponible (base: 512 tokens) | MIT | Hugging Face, 0 descargas |
+| BAAI/bge-small-en-v1.5 (base) | 33M | 512 tokens | MIT | Hugging Face, ampliamente usado |
+| BERT-base-uncased | 110M | 512 tokens | Apache-2.0 | Hugging Face, muy extendido |
+| DistilBERT-base-uncased | 66M | 512 tokens | Apache-2.0 | Hugging Face, muy extendido |
 
 La comparacion de rendimiento frente a estas alternativas no es posible con los datos disponibles: no hay evaluacion sobre un benchmark comun como CoNLL-2003 o GLUE.
 
@@ -111,7 +111,7 @@ La comparacion de rendimiento frente a estas alternativas no es posible con los 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cyberbazana/dl2_dz2
+- Modelo en Hugging Face: https://huggingface.co/cyberbazana/dl2_dz2
 - Modelo base BAAI/bge-small-en-v1.5: https://huggingface.co/BAAI/bge-small-en-v1.5
 - Documentacion del pipeline token-classification de Transformers: https://huggingface.co/docs/transformers/tasks/token_classification
 - No se han encontrado papers, blogs, repositorios ni demos adicionales asociados a este modelo en la busqueda web realizada.

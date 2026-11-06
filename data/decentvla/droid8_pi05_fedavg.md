@@ -2,7 +2,7 @@
 
 ## Resumen
 
-droid8_pi05_fedavg es un checkpoint de politica robotica de vision-lenguaje-accion (VLA) publicado por DecentVLA en HuggingFace. Se trata de un fine-tune completo del modelo base `pi05_base` de openpi (la implementacion en JAX de π0.5), entrenado con la receta de posiciones articulares de DROID (`train_config: pi05_droid_jointpos`). La diferencia clave respecto a un fine-tune convencional es que el entrenamiento se realizo de forma federada: 8 clientes, uno por cada edificio del dataset DROID, agregados mediante FedAvg durante 50 rondas de 250 pasos locales cada una y batch de 32.
+droid8_pi05_fedavg es un checkpoint de politica robotica de vision-lenguaje-accion (VLA) publicado por DecentVLA en Hugging Face. Se trata de un fine-tune completo del modelo base `pi05_base` de openpi (la implementacion en JAX de π0.5), entrenado con la receta de posiciones articulares de DROID (`train_config: pi05_droid_jointpos`). La diferencia clave respecto a un fine-tune convencional es que el entrenamiento se realizo de forma federada: 8 clientes, uno por cada edificio del dataset DROID, agregados mediante FedAvg durante 50 rondas de 250 pasos locales cada una y batch de 32.
 
 El objetivo del proyecto es estudiar el aprendizaje federado aplicado a modelos fundacionales de robotica, agregando datos procedentes de distintos entornos fisicos sin necesidad de centralizarlos. El repositorio forma parte del ecosistema `decent-vla`, se apoya en openpi y usa el dataset `DecentVLA/droid8_openpi` como fuente de datos. La inferencia se realiza mediante el protocolo websocket de openpi.
 
@@ -71,7 +71,7 @@ python scripts/serve_openpi_websocket.py --config examples/openpi_pi05_droid8_fe
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| droid8_pi05_fedavg | no disponible | no disponible | Apache-2.0 | HuggingFace (0 descargas) |
+| droid8_pi05_fedavg | no disponible | no disponible | Apache-2.0 | Hugging Face (0 descargas) |
 | pi05_base (openpi) | no disponible | no disponible | no disponible | Referenciado como modelo base |
 | Otros checkpoints π0.5 de la misma familia | no disponible | no disponible | no disponible | no disponible |
 
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento ni de especificaciones de los modelos comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DecentVLA/droid8_pi05_fedavg
+- Modelo en Hugging Face: https://huggingface.co/DecentVLA/droid8_pi05_fedavg
 - Dataset de entrenamiento: https://huggingface.co/datasets/DecentVLA/droid8_openpi
 - openpi (framework referenciado en la model card): https://github.com/Physical-Intelligence/openpi
 - Proyecto DROID (referenciado en la model card): https://droid-dataset.github.io/

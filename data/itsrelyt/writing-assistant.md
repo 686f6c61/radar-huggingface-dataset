@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Itsrelyt/Writing-Assistant es un modelo publicado en HuggingFace por el usuario Itsrelyt bajo licencia MIT. La model card asociada es practicamente vacia: unicamente declara la licencia, sin especificar arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) y no tiene pipeline declarado.
+Itsrelyt/Writing-Assistant es un modelo publicado en Hugging Face por el usuario Itsrelyt bajo licencia MIT. La model card asociada es practicamente vacia: unicamente declara la licencia, sin especificar arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) y no tiene pipeline declarado.
 
 Por el nombre se infiere que el autor lo concibe como un asistente de escritura, pero esta inferencia no esta respaldada por ninguna documentacion tecnica del repositorio. No hay informacion sobre parametros, contexto, tokenizador ni idiomas soportados.
 
@@ -88,5 +88,5 @@ No disponible. Sin datos de arquitectura, tamano ni rendimiento no es posible es
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Itsrelyt/Writing-Assistant
+- Repositorio en Hugging Face: https://huggingface.co/Itsrelyt/Writing-Assistant
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

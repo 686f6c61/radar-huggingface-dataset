@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Esteban143/Qwen4-32B` es un repositorio de HuggingFace publicado por el usuario Esteban143 el 24 de octubre de 2026 bajo licencia Apache-2.0. En el momento de redactar esta ficha el repositorio no contiene pesos: el tamano declarado es de 0.0 GB, la model card se limita al bloque de metadatos de licencia y no hay etiqueta de pipeline, idiomas ni datasets asociados. Acumula 0 descargas y 0 likes.
+`Esteban143/Qwen4-32B` es un repositorio de Hugging Face publicado por el usuario Esteban143 el 24 de octubre de 2026 bajo licencia Apache-2.0. En el momento de redactar esta ficha el repositorio no contiene pesos: el tamano declarado es de 0.0 GB, la model card se limita al bloque de metadatos de licencia y no hay etiqueta de pipeline, idiomas ni datasets asociados. Acumula 0 descargas y 0 likes.
 
 El nombre sugiere un modelo de la familia Qwen con 32 000 millones de parametros, pero esta denominacion no procede de ningun anuncio oficial de Alibaba Cloud recogido en la informacion disponible: es una eleccion del autor del repositorio. No hay evidencia documental que confirme arquitectura, tokenizador, longitud de contexto, datos de entrenamiento ni capacidades.
 
@@ -29,7 +29,7 @@ El unico dato verificable es el bloque de frontmatter de la model card, que unic
 
 ## Capacidades
 
-- No se ha publicado ninguna capacidad verificable: no hay pesos, demo, espacio de HuggingFace ni informe tecnico asociado.
+- No se ha publicado ninguna capacidad verificable: no hay pesos, demo, espacio de Hugging Face ni informe tecnico asociado.
 - Generacion de texto, razonamiento, codigo y matematicas: no disponible.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -90,7 +90,7 @@ Advertencia: la coincidencia de nombre con la familia Qwen no implica que este r
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Esteban143/Qwen4-32B
+- Repositorio en Hugging Face: https://huggingface.co/Esteban143/Qwen4-32B
 - Perfil del autor: https://huggingface.co/Esteban143
 - Paper, blog, repositorio de codigo o demo: no disponibles.
 - Nota sobre la busqueda web: los resultados obtenidos (proyectos de fuerza bruta contra Instagram, herramientas de conversion de video 360 y comparativas de camaras de accion) no guardan ninguna relacion con el modelo y se descartan como fuentes. No se ha localizado documentacion tecnica ni anuncio oficial alguno sobre `Qwen4-32B`.

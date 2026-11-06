@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `aflah/HF_Llama_1B_WebOrganizer_Without_Creative_180B_Harvard_5B_Seed_4762` es un modelo de lenguaje de 1.179.486.208 parámetros (~1,18 mil millones) basado en la arquitectura Llama, publicado en HuggingFace por el usuario `aflah`. Está diseñado para generación de texto y su nombre sugiere que fue ajustado para tareas de organización de contenido web, posiblemente con un enfoque en reducir la salida creativa o especulativa, aunque no se ha publicado ninguna documentación técnica que lo confirme.
+El modelo `aflah/HF_Llama_1B_WebOrganizer_Without_Creative_180B_Harvard_5B_Seed_4762` es un modelo de lenguaje de 1.179.486.208 parámetros (~1,18 mil millones) basado en la arquitectura Llama, publicado en Hugging Face por el usuario `aflah`. Está diseñado para generación de texto y su nombre sugiere que fue ajustado para tareas de organización de contenido web, posiblemente con un enfoque en reducir la salida creativa o especulativa, aunque no se ha publicado ninguna documentación técnica que lo confirme.
 
 El modelo se distribuye en formato safetensors y es compatible con la librería `transformers` y con `text-generation-inference`. Sin embargo, la model card es una plantilla automática completamente vacía: no se especifican datos de entrenamiento, licencia, idiomas, contexto ni evaluación. El nombre del repositorio incluye referencias a `180B` (posiblemente tokens de entrenamiento) y `Harvard_5B` (posiblemente un dataset de Harvard), pero son conjeturas no confirmadas.
 
@@ -85,7 +85,7 @@ La comparativa muestra que este modelo carece de documentación y de licencia cl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aflah/HF_Llama_1B_WebOrganizer_Without_Creative_180B_Harvard_5B_Seed_4762
+- Modelo en Hugging Face: https://huggingface.co/aflah/HF_Llama_1B_WebOrganizer_Without_Creative_180B_Harvard_5B_Seed_4762
 - Página de Friendli AI (deployment): https://friendli.ai/models/aflah/HF_Llama_1B_WebOrganizer_Without_Creative
 - Variante similar (memorizations): https://huggingface.co/memorizations/HF_Llama_1B_WebOrganizer_Without_Creative_180B_Harvard_5B
 - Documentación de Llama 3.2 (referencia de arquitectura): https://developer.meta.com/ai/docs/model-cards-and-prompt-formats/llama3_2/

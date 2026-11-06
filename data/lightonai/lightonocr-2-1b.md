@@ -21,7 +21,7 @@ La relevancia actual del modelo esta en su relacion rendimiento-coste: procesa 5
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (repo de 2,0 GB); compatible con transformers y vLLM |
 
-Datos adicionales: pipeline `image-text-to-text`, creado el 2026-01-16, actualizado el 2026-07-08, 171.095 descargas y 807 likes en HuggingFace.
+Datos adicionales: pipeline `image-text-to-text`, creado el 2026-01-16, actualizado el 2026-07-08, 171.095 descargas y 807 likes en Hugging Face.
 
 ## Arquitectura y entrenamiento
 
@@ -87,7 +87,7 @@ La informacion disponible menciona varios competidores en velocidad, pero no pro
 
 | Modelo | Parametros | Contexto | Precision (OlmOCR-Bench) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LightOnOCR-2-1B | 1,0 B | no disponible | estado del arte segun el autor (sin cifra publicada) | Apache 2.0 | HuggingFace, transformers v5, vLLM, SageMaker, Azure |
+| LightOnOCR-2-1B | 1,0 B | no disponible | estado del arte segun el autor (sin cifra publicada) | Apache 2.0 | Hugging Face, transformers v5, vLLM, SageMaker, Azure |
 | OlmOCR | no disponible | no disponible | no disponible (referencia comparativa) | no disponible | no disponible |
 | dots.ocr | no disponible | no disponible | no disponible (referencia comparativa) | no disponible | no disponible |
 | PaddleOCR-VL-0.9B | ~0,9 B (segun nombre) | no disponible | no disponible (referencia comparativa) | no disponible | no disponible |
@@ -107,10 +107,10 @@ La informacion disponible menciona varios competidores en velocidad, pero no pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lightonai/LightOnOCR-2-1B
+- Modelo en Hugging Face: https://huggingface.co/lightonai/LightOnOCR-2-1B
 - Paper: https://arxiv.org/pdf/2601.14251 (referencia arXiv:2601.14251)
 - Paper adicional citado en tags: arXiv:2412.13663 (usado como PDF de ejemplo en la model card)
-- Blog en HuggingFace: https://huggingface.co/blog/lightonai/lightonocr-2
+- Blog en Hugging Face: https://huggingface.co/blog/lightonai/lightonocr-2
 - Demo: https://huggingface.co/spaces/lightonai/LightOnOCR-2-1B-Demo
 - Dataset: https://huggingface.co/datasets/lightonai/LightOnOCR-mix-0126
 - Dataset con bounding boxes: https://huggingface.co/datasets/lightonai/LightOnOCR-bbox-mix-0126

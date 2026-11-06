@@ -75,7 +75,7 @@ No se dispone de una comparativa directa con estos modelos en los datos de búsq
 - No se ha publicado ningún benchmark de la versión cuantizada, por lo que el rendimiento real en tareas de código puede ser inferior al del modelo base.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/qwen3.6-27b-the-good-one-ablated-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/qwen3.6-27b-the-good-one-ablated-i1-GGUF
 - Modelo base: https://huggingface.co/5vg/qwen3.6-27b-the-good-one-ablated
 - Blog oficial de Qwen: https://qwen.ai/blog?id=qwen3.6-27b
 - Guía completa de Qwen3.6-27B: https://www.aimadetools.com/blog/qwen-3-6-27b-complete-guide/

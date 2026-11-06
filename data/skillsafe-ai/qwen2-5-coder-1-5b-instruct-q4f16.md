@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| skillsafe-ai/qwen2.5-coder-1.5b-instruct-q4f16 (este repositorio) | 1,54B (4,50 bits/parámetro) | 4k en el artefacto compilado | MLC (`params_shard_*.bin`) para WebGPU | apache-2.0 | Público en HuggingFace, 0 descargas, 0 likes |
+| skillsafe-ai/qwen2.5-coder-1.5b-instruct-q4f16 (este repositorio) | 1,54B (4,50 bits/parámetro) | 4k en el artefacto compilado | MLC (`params_shard_*.bin`) para WebGPU | apache-2.0 | Público en Hugging Face, 0 descargas, 0 likes |
 | mlc-ai/Qwen2.5-Coder-1.5B-Instruct-q4f16_1-MLC (origen) | 1,54B en el mismo esquema de cuantización | No disponible en la información proporcionada | MLC para WebGPU | No disponible en la información proporcionada | Público; commit de origen `30184a4f...` |
-| Qwen/Qwen2.5-Coder-1.5B-Instruct (modelo base) | 1,54B en precisión original | No disponible en la información proporcionada | safetensors (no confirmado en la información disponible) | apache-2.0 según la herencia indicada en los tags de este repositorio | Público en HuggingFace |
+| Qwen/Qwen2.5-Coder-1.5B-Instruct (modelo base) | 1,54B en precisión original | No disponible en la información proporcionada | safetensors (no confirmado en la información disponible) | apache-2.0 según la herencia indicada en los tags de este repositorio | Público en Hugging Face |
 
 No se dispone de datos de rendimiento comparado entre estas variantes en la información proporcionada, por lo que la comparación se limita a formato, licencia y vía de despliegue.
 
@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes en la info
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/skillsafe-ai/qwen2.5-coder-1.5b-instruct-q4f16
+- Repositorio en Hugging Face: https://huggingface.co/skillsafe-ai/qwen2.5-coder-1.5b-instruct-q4f16
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct
 - Origen MLC (commit fijado): https://huggingface.co/mlc-ai/Qwen2.5-Coder-1.5B-Instruct-q4f16_1-MLC/tree/30184a4f713a9aaf6c548ace1290615d0ea041ff
 - Receta de conversión y convertidor reproducible: https://github.com/skillsafe-admin/skillsafe.ai-website/tree/main/models

@@ -78,9 +78,9 @@ No se han publicado en la informacion disponible resultados de benchmarks estand
 
 | Modelo | Parametros | Contexto | Rendimiento (F1 medio en 500 docs VOA) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `ahalt/qwen3.5-event-extraction-0.8b` | 873,4 M | No disponible | 71,0 | Apache 2.0 | Pesos safetensors y GGUF Q8_0 en HuggingFace |
+| `ahalt/qwen3.5-event-extraction-0.8b` | 873,4 M | No disponible | 71,0 | Apache 2.0 | Pesos safetensors y GGUF Q8_0 en Hugging Face |
 | `ahalt/qwen3-event-extraction-exp5.1` | No disponible | No disponible | 54,9 | No disponible en la informacion proporcionada | Modelo predecesor, referenciado desde la model card |
-| `Qwen/Qwen3.5-0.8B` | No disponible | No disponible | No aplica (modelo generalista, sin ajuste para esta tarea) | No disponible en la informacion proporcionada | Modelo base en HuggingFace |
+| `Qwen/Qwen3.5-0.8B` | No disponible | No disponible | No aplica (modelo generalista, sin ajuste para esta tarea) | No disponible en la informacion proporcionada | Modelo base en Hugging Face |
 
 No se dispone de datos que permitan comparar este modelo con otras alternativas de extraccion de eventos de la literatura (por ejemplo, codificadores de eventos basados en reglas o modelos generativos de proposito general) en terminos de parametros, contexto o rendimiento, por lo que esa comparacion se marca como no disponible.
 
@@ -99,11 +99,11 @@ No se dispone de datos que permitan comparar este modelo con otras alternativas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ahalt/qwen3.5-event-extraction-0.8b
+- Modelo en Hugging Face: https://huggingface.co/ahalt/qwen3.5-event-extraction-0.8b
 - Repositorio GGUF Q8_0 para llama.cpp: https://huggingface.co/ahalt/qwen3.5-event-extraction-0.8b-GGUF
 - Modelo predecesor: https://huggingface.co/ahalt/qwen3-event-extraction-exp5.1
 - Repositorio del pipeline NGEC (Next Generation Event Coder): https://github.com/ahalterman/NGEC-2025
 - Articulo de referencia (Halterman y Keith, 2026): https://aclanthology.org/2026.acl-long.92/
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 
-Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo, su autor o el pipeline NGEC; los enlaces anteriores proceden exclusivamente de la model card y de los metadatos de HuggingFace.
+Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo, su autor o el pipeline NGEC; los enlaces anteriores proceden exclusivamente de la model card y de los metadatos de Hugging Face.

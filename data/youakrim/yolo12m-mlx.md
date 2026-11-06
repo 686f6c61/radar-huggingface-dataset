@@ -105,8 +105,8 @@ No se dispone de resultados verificados en la informacion proporcionada para com
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/youakrim/yolo12m-mlx
+- Repositorio Hugging Face: https://huggingface.co/youakrim/yolo12m-mlx
 - Implementacion yolo12-mlx en GitHub: https://github.com/youakrim/yolo12-mlx
 - Coleccion YOLO12 for MLX: https://huggingface.co/collections/youakrim/yolo12-for-mlx-6ac659ef0a06781003d1d3cc
 - Modelo base: https://huggingface.co/Ultralytics/YOLO12
-- Dataset COCO en HuggingFace: https://huggingface.co/datasets/detection-datasets/coco
+- Dataset COCO en Hugging Face: https://huggingface.co/datasets/detection-datasets/coco

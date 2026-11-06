@@ -93,7 +93,7 @@ No disponible. No se han proporcionado datos de modelos comparables de la misma 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/clm-projects/clm-35b-a3b-w3072-dqa-head
+- Hugging Face: https://huggingface.co/clm-projects/clm-35b-a3b-w3072-dqa-head
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B-FP8
 - Dataset de embeddings pre-entrenamiento: https://huggingface.co/datasets/clm-projects/nemotron-cc-v2-diverse-qa-qwen3.6-35b-a3b-fp8-embeddings
 - Repositorio de entrenamiento: https://github.com/jackyk02/clm_train

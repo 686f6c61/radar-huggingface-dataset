@@ -69,6 +69,6 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- [HuggingFace: XiXiHaHaZhao/STAGE1](https://huggingface.co/XiXiHaHaZhao/STAGE1)
+- [Hugging Face: XiXiHaHaZhao/STAGE1](https://huggingface.co/XiXiHaHaZhao/STAGE1)
 
 Nota: los resultados de búsqueda web mostraron otros modelos llamados "stage1" (por ejemplo, `stage1/model` o `Flexislm 7b Stage1`), pero no están relacionados con este repositorio.

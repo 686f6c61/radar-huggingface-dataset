@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Zatorres/multitask-notebook es un prototipo de investigacion publicado en HuggingFace por el usuario Zatorres. Se presenta como una implementacion de tipo Mixer orientada a tareas multiples (multitask), con una configuracion etiquetada como "giant". No es un modelo entrenado ni un checkpoint listo para produccion: la propia model card lo describe como un punto de partida experimental y el archivo `model.safetensors` se define explicitamente como un checkpoint de inicializacion valido para pruebas de humo (smoke tests), no como un modelo con rendimiento verificado.
+Zatorres/multitask-notebook es un prototipo de investigacion publicado en Hugging Face por el usuario Zatorres. Se presenta como una implementacion de tipo Mixer orientada a tareas multiples (multitask), con una configuracion etiquetada como "giant". No es un modelo entrenado ni un checkpoint listo para produccion: la propia model card lo describe como un punto de partida experimental y el archivo `model.safetensors` se define explicitamente como un checkpoint de inicializacion valido para pruebas de humo (smoke tests), no como un modelo con rendimiento verificado.
 
 El dato mas relevante es la discrepancia entre la etiqueta de escala y el conteo real de parametros. El repositorio declara que el checkpoint safetensors contiene 16.576 parametros totales, una cifra minuscula para cualquier estandar de modelos de lenguaje, muy alejada de lo que sugeriria la etiqueta "giant" del `config.json`. Esto confirma que se trata de un artefacto de investigacion a escala de juguete, util para validar arquitecturas y formatos de fichero, no para inferencia real.
 
@@ -77,6 +77,6 @@ No disponible. No se ha encontrado en la informacion proporcionada ningun modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Zatorres/multitask-notebook
+- Modelo en Hugging Face: https://huggingface.co/Zatorres/multitask-notebook
 
 No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion proporcionada.

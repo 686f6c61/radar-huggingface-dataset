@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`benchmark-slm-msmarco-gpt-neo-ctxq` es un adaptador LoRA publicado por `praiselab-picuslab` sobre el modelo base `EleutherAI/gpt-neo-1.3B`. Según los metadatos de HuggingFace, está asociado al dataset `microsoft/ms_marco` y a una estrategia denominada `ctxq`, dentro de un conjunto de experimentos etiquetado como `benchmark-slm`. No es un modelo entrenado desde cero: requiere cargar el modelo base y aplicar el adaptador mediante PEFT.
+`benchmark-slm-msmarco-gpt-neo-ctxq` es un adaptador LoRA publicado por `praiselab-picuslab` sobre el modelo base `EleutherAI/gpt-neo-1.3B`. Según los metadatos de Hugging Face, está asociado al dataset `microsoft/ms_marco` y a una estrategia denominada `ctxq`, dentro de un conjunto de experimentos etiquetado como `benchmark-slm`. No es un modelo entrenado desde cero: requiere cargar el modelo base y aplicar el adaptador mediante PEFT.
 
 El interés principal es la reproducibilidad de experimentos con modelos de lenguaje pequeños (SLM) en generación de texto y, previsiblemente, en tareas de pregunta-respuesta o ranking sobre MS MARCO, aunque la ficha no documenta el objetivo exacto ni los resultados. El repositorio figura como restringido (gated), con 0 descargas y 0 likes, y un tamaño de 0.0 GB, lo que obliga a verificar la disponibilidad real de los pesos antes de utilizarlo.
 
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 ## Limitaciones y advertencias
 
 - Licencia no disponible: no puede confirmarse si se permite uso comercial, redistribución o modificación.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace y puede no estar disponible para todos los usuarios.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face y puede no estar disponible para todos los usuarios.
 - El repositorio figura con 0.0 GB y 0 descargas; es posible que los pesos del adaptador no estén publicados o que la ficha esté incompleta. Verificar tras aceptar el acceso.
 - No hay documentación sobre datos de entrenamiento, hiperparámetros, evaluación o criterios de selección del checkpoint.
 - No hay benchmarks publicados; no puede afirmarse que mejore al modelo base ni a alternativas similares.
@@ -86,7 +86,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/praiselab-picuslab/benchmark-slm-msmarco-gpt-neo-ctxq)
+- [Modelo en Hugging Face](https://huggingface.co/praiselab-picuslab/benchmark-slm-msmarco-gpt-neo-ctxq)
 - [Modelo base EleutherAI/gpt-neo-1.3B](https://huggingface.co/EleutherAI/gpt-neo-1.3B)
 - [Dataset microsoft/ms_marco](https://huggingface.co/datasets/microsoft/ms_marco)
 - [Documentación de PEFT](https://huggingface.co/docs/peft/index)

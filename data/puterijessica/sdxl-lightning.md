@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SDXL-Lightning es un modelo de generación de texto a imagen desarrollado por ByteDance, que destila el modelo base Stable Diffusion XL 1.0 mediante destilación adversarial progresiva. El repositorio alojado en HuggingFace bajo el usuario `puterijessica` contiene los checkpoints oficiales del modelo, incluyendo versiones de 1, 2, 4 y 8 pasos de inferencia, tanto en formato UNet completo como LoRA. Su principal ventaja es la capacidad de generar imágenes de alta calidad a 1024 píxeles en muy pocos pasos de muestreo, lo que reduce drásticamente el coste computacional frente a SDXL original, que requiere entre 20 y 50 pasos.
+SDXL-Lightning es un modelo de generación de texto a imagen desarrollado por ByteDance, que destila el modelo base Stable Diffusion XL 1.0 mediante destilación adversarial progresiva. El repositorio alojado en Hugging Face bajo el usuario `puterijessica` contiene los checkpoints oficiales del modelo, incluyendo versiones de 1, 2, 4 y 8 pasos de inferencia, tanto en formato UNet completo como LoRA. Su principal ventaja es la capacidad de generar imágenes de alta calidad a 1024 píxeles en muy pocos pasos de muestreo, lo que reduce drásticamente el coste computacional frente a SDXL original, que requiere entre 20 y 50 pasos.
 
 El modelo se publica bajo licencia openrail++ y está pensado para investigación y uso comercial, siempre que se respeten los términos de dicha licencia. Al estar basado en SDXL, hereda su arquitectura de UNet con dos etapas de difusión y su capacidad de generar imágenes fotorrealistas y artísticas. La relevancia actual radica en que permite desplegar generación de imágenes en tiempo real en hardware consumer, algo que antes era inviable con SDXL estándar.
 
@@ -60,10 +60,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El pa
 
 | Modelo | Pasos típicos | Calidad | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| SDXL-Lightning | 1-8 | Alta (destilado) | openrail++ | HuggingFace |
-| SDXL Turbo | 1-4 | Alta (destilado) | Stability AI Community License | HuggingFace |
-| LCM (Latent Consistency Model) | 1-4 | Media-alta | Apache 2.0 | HuggingFace |
-| SDXL base | 20-50 | Muy alta | openrail++ | HuggingFace |
+| SDXL-Lightning | 1-8 | Alta (destilado) | openrail++ | Hugging Face |
+| SDXL Turbo | 1-4 | Alta (destilado) | Stability AI Community License | Hugging Face |
+| LCM (Latent Consistency Model) | 1-4 | Media-alta | Apache 2.0 | Hugging Face |
+| SDXL base | 20-50 | Muy alta | openrail++ | Hugging Face |
 
 SDXL-Lightning y SDXL Turbo son ambos destilaciones de SDXL, con enfoques diferentes (adversarial vs. consistency). LCM es una técnica genérica aplicable a varios modelos. No se dispone de comparativas cuantitativas en la información proporcionada.
 
@@ -74,11 +74,11 @@ SDXL-Lightning y SDXL Turbo son ambos destilaciones de SDXL, con enfoques difere
 - Al ser una destilación, puede presentar menor diversidad o fidelidad que el modelo base en algunos casos, especialmente con prompts complejos.
 - La licencia openrail++ permite uso comercial, pero impone restricciones sobre usos ilegales o dañinos (ver términos completos de la licencia).
 - No se especifican sesgos conocidos, pero al heredar de SDXL, puede reflejar los sesgos de los datos de entrenamiento de SDXL (sesgos de género, raza, etc.).
-- El repositorio en HuggingFace (`puterijessica/SDXL-Lightning`) es una copia del modelo original de ByteDance; se recomienda verificar la autenticidad y usar el repositorio oficial `ByteDance/SDXL-Lightning` para producción.
+- El repositorio en Hugging Face (`puterijessica/SDXL-Lightning`) es una copia del modelo original de ByteDance; se recomienda verificar la autenticidad y usar el repositorio oficial `ByteDance/SDXL-Lightning` para producción.
 
 ## Enlaces
 
-- Repositorio en HuggingFace (copia): https://huggingface.co/puterijessica/SDXL-Lightning
+- Repositorio en Hugging Face (copia): https://huggingface.co/puterijessica/SDXL-Lightning
 - Repositorio oficial de ByteDance: https://huggingface.co/ByteDance/SDXL-Lightning
 - Paper: https://arxiv.org/abs/2402.13929
 - Demo oficial: https://huggingface.co/spaces/ByteDance/SDXL-Lightning

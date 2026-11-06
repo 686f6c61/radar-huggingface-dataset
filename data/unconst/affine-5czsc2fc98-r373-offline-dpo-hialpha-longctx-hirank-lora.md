@@ -54,4 +54,4 @@ No disponible. No se conocen modelos comparables al no existir información sobr
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/unconst/Affine-5czsc2fc98-r373-offline-dpo-hialpha-longctx-hirank-lora)
+- [Repositorio Hugging Face](https://huggingface.co/unconst/Affine-5czsc2fc98-r373-offline-dpo-hialpha-longctx-hirank-lora)

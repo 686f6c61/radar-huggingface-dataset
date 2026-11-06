@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento ni especificaciones de modelos comparables
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LibreYOLO/Libre3DMOODt
+- Hugging Face: https://huggingface.co/LibreYOLO/Libre3DMOODt
 - Repositorio upstream de 3D-MOOD: https://github.com/cvg/3D-MOOD
 - Checkpoint fuente: https://huggingface.co/RoyYang0714/3D-MOOD
 - GitHub de LibreYOLO: https://github.com/LibreYOLO/libreyolo

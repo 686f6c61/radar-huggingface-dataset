@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sham76/gptoss-20b-luau-lora es un adaptador LoRA publicado en HuggingFace por el usuario Sham76, entrenado sobre el modelo base unsloth/gpt-oss-20b-unsloth-bnb-4bit, es decir, la version de gpt-oss-20b de OpenAI cuantizada en 4 bits y preparada por Unsloth. El repositorio contiene unicamente los pesos del adaptador (0,4 GB en safetensors, con libreria transformers), no un modelo fusionado listo para servir de forma autonoma.
+Sham76/gptoss-20b-luau-lora es un adaptador LoRA publicado en Hugging Face por el usuario Sham76, entrenado sobre el modelo base unsloth/gpt-oss-20b-unsloth-bnb-4bit, es decir, la version de gpt-oss-20b de OpenAI cuantizada en 4 bits y preparada por Unsloth. El repositorio contiene unicamente los pesos del adaptador (0,4 GB en safetensors, con libreria transformers), no un modelo fusionado listo para servir de forma autonoma.
 
 gpt-oss-20b es uno de los dos modelos de razonamiento con pesos abiertos que OpenAI publico bajo licencia Apache 2.0, con arquitectura transformer decoder-only de tipo mezcla de expertos (MoE) y una ventana de contexto de 128 000 tokens. El adaptador hereda por tanto esas capacidades generales de razonamiento, generacion de codigo y soporte de tool calling, y solo modifica una fraccion pequena de los pesos.
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 | Sham76/gptoss-20b-luau-lora | Adaptador sobre base de 21 000 M (3 600 M activos) | 128 000 tokens (base) | LoRA | apache-2.0 | 0 descargas, 0 likes |
 | unsloth/gpt-oss-20b-unsloth-bnb-4bit | 21 000 M (3 600 M activos) | 128 000 tokens | Base cuantizado en 4 bits | no disponible en la informacion proporcionada | Modelo base de referencia |
 | gpt-oss-120b | 117 000 M (5 100 M activos) | 128 000 tokens | MoE denso en activacion | apache-2.0 | Requiere H100 segun la guia consultada |
-| unlimitedbytes/gptoss-bigcodebench-20b-lora | Adaptador sobre la misma familia | no disponible | LoRA | no disponible | Repositorio de HuggingFace existente |
+| unlimitedbytes/gptoss-bigcodebench-20b-lora | Adaptador sobre la misma familia | no disponible | LoRA | no disponible | Repositorio de Hugging Face existente |
 
 No se dispone de datos de rendimiento comparado entre estas opciones, por lo que la comparativa es estructural y no de calidad.
 

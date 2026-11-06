@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `alfred8995/r18-a2-w14-kx-chrono5-w60ft2-s300` es un checkpoint de la familia `sn38-nanochrono`, publicado por el usuario alfred8995 en HuggingFace. Se trata de un modelo de aproximadamente 2.018 millones de parametros (2.018.511.234 segun los metadatos de safetensors), distribuido en formato safetensors con un repositorio de 6,3 GB. La nomenclatura del identificador sugiere un entrenamiento por etapas o variantes (posibles referencias a rondas, ventanas de contexto, fine-tuning y pasos de entrenamiento), aunque no se dispone de documentacion que lo confirme.
+El modelo `alfred8995/r18-a2-w14-kx-chrono5-w60ft2-s300` es un checkpoint de la familia `sn38-nanochrono`, publicado por el usuario alfred8995 en Hugging Face. Se trata de un modelo de aproximadamente 2.018 millones de parametros (2.018.511.234 segun los metadatos de safetensors), distribuido en formato safetensors con un repositorio de 6,3 GB. La nomenclatura del identificador sugiere un entrenamiento por etapas o variantes (posibles referencias a rondas, ventanas de contexto, fine-tuning y pasos de entrenamiento), aunque no se dispone de documentacion que lo confirme.
 
-La relevancia de este checkpoint es limitada en el momento de redactar esta ficha: no cuenta con descargas ni interacciones, no tiene pipeline declarado, no especifica idiomas soportados y el acceso esta restringido (gated), lo que obliga a aceptar condiciones en HuggingFace antes de poder descargarlo. La licencia declarada es Apache 2.0, lo que en principio permitiria uso comercial, pero la ausencia de una model card detallada impide verificar condiciones adicionales.
+La relevancia de este checkpoint es limitada en el momento de redactar esta ficha: no cuenta con descargas ni interacciones, no tiene pipeline declarado, no especifica idiomas soportados y el acceso esta restringido (gated), lo que obliga a aceptar condiciones en Hugging Face antes de poder descargarlo. La licencia declarada es Apache 2.0, lo que en principio permitiria uso comercial, pero la ausencia de una model card detallada impide verificar condiciones adicionales.
 
 No se dispone de informacion sobre arquitectura concreta, datos de entrenamiento, tokenizador, contexto maximo ni resultados de evaluacion. Cualquier afirmacion adicional sobre capacidades o rendimiento seria especulativa y, por tanto, se marca como no disponible en las secciones correspondientes.
 
@@ -49,7 +49,7 @@ Dado que no se dispone de documentacion sobre capacidades, contexto o calidad de
 - Prototipado de pipelines de NLP: util para validar arquitecturas de inferencia (vLLM, TGI, llama.cpp) antes de escalar a modelos mayores, aunque la falta de variantes cuantizadas complica el despliegue en hardware limitado.
 - Generacion de texto asistida en local: si el modelo rinde aceptablemente, podria emplearse en entornos con requisitos de privacidad donde no se quiera enviar datos a APIs externas, sujeto a validacion de calidad.
 - Evaluacion comparativa de checkpoints: al ser un checkpoint con identificador altamente parametrizado, puede usarse en estudios de ablacion si se dispone de la serie completa de variantes del autor.
-- Docencia y formacion: como ejemplo practico de publicacion de checkpoints en HuggingFace con acceso restringido y licencia permisiva, para discutir buenas practicas de model cards.
+- Docencia y formacion: como ejemplo practico de publicacion de checkpoints en Hugging Face con acceso restringido y licencia permisiva, para discutir buenas practicas de model cards.
 
 No se recomienda su uso en produccion sin una evaluacion previa: no hay benchmarks, no hay model card y el acceso es restringido.
 
@@ -73,10 +73,10 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| alfred8995/r18-a2-w14-kx-chrono5-w60ft2-s300 | 2,02B | no disponible | Apache 2.0 | HuggingFace (gated) |
-| Gemma 2 2B | 2,6B | 8k | Gemma license | HuggingFace, ampliamente documentado |
-| Qwen2.5 1.5B | 1,5B | 32k | Apache 2.0 | HuggingFace, ampliamente documentado |
-| SmolLM2 1.7B | 1,7B | 8k | Apache 2.0 | HuggingFace, ampliamente documentado |
+| alfred8995/r18-a2-w14-kx-chrono5-w60ft2-s300 | 2,02B | no disponible | Apache 2.0 | Hugging Face (gated) |
+| Gemma 2 2B | 2,6B | 8k | Gemma license | Hugging Face, ampliamente documentado |
+| Qwen2.5 1.5B | 1,5B | 32k | Apache 2.0 | Hugging Face, ampliamente documentado |
+| SmolLM2 1.7B | 1,7B | 8k | Apache 2.0 | Hugging Face, ampliamente documentado |
 
 La comparacion de rendimiento no es posible: el modelo de alfred8995 no publica benchmarks, mientras que los tres alternativos cuentan con evaluaciones extensas. La ventaja del checkpoint analizado es su licencia Apache 2.0 y su tamano reducido; la desventaja principal es la ausencia total de documentacion y de garantias de calidad.
 
@@ -85,7 +85,7 @@ La comparacion de rendimiento no es posible: el modelo de alfred8995 no publica 
 - Ausencia de model card: no hay informacion sobre datos de entrenamiento, sesgos, alineacion ni evaluaciones, lo que impide estimar riesgos de sesgo o toxicidad.
 - Riesgo de alucinacion: desconocido, pero inherente a cualquier modelo de lenguaje sin evaluacion publica; no debe usarse en dominios criticos sin validacion.
 - Limitaciones de contexto e idioma: no declaradas; se desconoce la longitud de contexto efectiva y los idiomas cubiertos.
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace, lo que puede limitar la reproducibilidad y el uso en pipelines automatizados.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face, lo que puede limitar la reproducibilidad y el uso en pipelines automatizados.
 - Licencia: Apache 2.0 permite uso comercial, pero la falta de documentacion sobre el origen de los datos de entrenamiento podria generar incertidumbre legal en entornos corporativos.
 - Sin variantes cuantizadas oficiales: el despliegue en hardware limitado requiere conversion manual a GGUF/AWQ/GPTQ, con riesgo de degradacion no evaluada.
 - Sin garantias de mantenimiento: el autor no ha publicado documentacion ni actualizaciones sustanciales; el checkpoint podria quedar obsoleto o sin soporte.
@@ -93,5 +93,5 @@ La comparacion de rendimiento no es posible: el modelo de alfred8995 no publica 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-w14-kx-chrono5-w60ft2-s300
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-w14-kx-chrono5-w60ft2-s300
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

@@ -86,7 +86,7 @@ No se han identificado en la información disponible otros modelos comparables d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davidan03/qwen3.5-0.8b-openwebrl-sft
+- Modelo en Hugging Face: https://huggingface.co/davidan03/qwen3.5-0.8b-openwebrl-sft
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - LlamaFactory (framework de entrenamiento utilizado): https://github.com/hiyouga/LLaMA-Factory
 

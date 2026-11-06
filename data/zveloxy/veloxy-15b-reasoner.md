@@ -2,7 +2,7 @@
 
 ## Resumen
 
-veloxy-15b-reasoner es un repositorio de pesos publicado en HuggingFace por el usuario zveloxy el 8 de octubre de 2026, etiquetado con la libreria transformers y el formato safetensors. La model card es la plantilla automática de HuggingFace y no tiene ningún campo cumplimentado: no declara desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros ni resultados de evaluación.
+veloxy-15b-reasoner es un repositorio de pesos publicado en Hugging Face por el usuario zveloxy el 8 de octubre de 2026, etiquetado con la libreria transformers y el formato safetensors. La model card es la plantilla automática de Hugging Face y no tiene ningún campo cumplimentado: no declara desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros ni resultados de evaluación.
 
 El nombre del repositorio sugiere un modelo denso de aproximadamente 15.000 millones de parámetros orientado a tareas de razonamiento, pero esta lectura no está confirmada por ninguna fuente. El único dato objetivo adicional es el tamaño del repositorio, 0,7 GB, incompatible con un modelo de ese orden en fp16 (unos 30 GB) o incluso en cuantización de 4 bits (unos 8-9 GB), lo que apunta a una subida incompleta, a un modelo de tamaño muy inferior al que sugiere el nombre o a pesos en un formato no estándar.
 
@@ -31,7 +31,7 @@ En el momento de redactar esta ficha el repositorio acumula 0 descargas y 0 like
 
 No hay información publicada. La model card no especifica tipo de arquitectura, número de capas, dimensión oculta, mecanismo de atención, objetivo de entrenamiento, volumen de tokens, composición del dataset ni si se aplicaron técnicas de alineación como RLHF, DPO o RLVR. Tampoco se documentan innovaciones técnicas del tipo decodificación especulativa, atención lineal o arquitecturas híbridas.
 
-La etiqueta `arxiv:1910.09700` que aparece en el repositorio corresponde a Lacoste et al. (2019), el artículo del calculador de impacto medioambiental que HuggingFace incluye por defecto en la plantilla de model card. No es un artículo sobre este modelo y no aporta información sobre su entrenamiento. El tamaño del repositorio (0,7 GB) es el único indicio material sobre el contenido real de la subida y sugiere que los pesos completos no están presentes o que el modelo no tiene el tamaño que indica su nombre.
+La etiqueta `arxiv:1910.09700` que aparece en el repositorio corresponde a Lacoste et al. (2019), el artículo del calculador de impacto medioambiental que Hugging Face incluye por defecto en la plantilla de model card. No es un artículo sobre este modelo y no aporta información sobre su entrenamiento. El tamaño del repositorio (0,7 GB) es el único indicio material sobre el contenido real de la subida y sugiere que los pesos completos no están presentes o que el modelo no tiene el tamaño que indica su nombre.
 
 ## Capacidades
 
@@ -58,7 +58,7 @@ Los siguientes escenarios son hipotéticos y solo serían aplicables si se confi
 - Extracción estructurada de información: conversión de texto no estructurado a JSON mediante prompting, viable en modelos de esta clase pero no verificable aquí.
 - Moderación y clasificación de texto: clasificación de tickets o comentarios, siempre que la licencia lo permita, algo que no está declarado.
 - Nodo de razonamiento en un pipeline de agentes: uso como componente intermedio de un sistema multi-agente con tool calling, capacidad que no está confirmada en la documentación.
-- Evaluación comparativa interna: uso del repositorio como caso de estudio sobre publicación incompleta de modelos en HuggingFace, que es el único uso verificable hoy.
+- Evaluación comparativa interna: uso del repositorio como caso de estudio sobre publicación incompleta de modelos en Hugging Face, que es el único uso verificable hoy.
 
 ## Benchmarks y rendimiento
 
@@ -111,7 +111,7 @@ Los comparadores naturales serían las familias densas de 12-15B con foco en raz
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/zveloxy/veloxy-15b-reasoner
+- Hugging Face: https://huggingface.co/zveloxy/veloxy-15b-reasoner
 - Articulo referenciado en los tags (calculador de impacto medioambiental, no relacionado con el modelo): https://arxiv.org/abs/1910.09700
 - Repositorio del paper anterior: https://mlco2.github.io/impact
 - Paper, blog, demo o repositorio del modelo: no disponibles

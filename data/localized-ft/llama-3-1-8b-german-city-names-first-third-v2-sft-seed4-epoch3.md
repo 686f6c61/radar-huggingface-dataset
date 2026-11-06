@@ -79,7 +79,7 @@ La comparativa es directa con el modelo base (que no tiene la especializacion) y
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/localized-ft/Llama-3.1-8B-german-city-names-first-third-v2-sft-seed4-epoch3)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/localized-ft/Llama-3.1-8B-german-city-names-first-third-v2-sft-seed4-epoch3)
 - [Modelo base unsloth/Meta-Llama-3.1-8B-Instruct](https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct)
 - [Variante del mismo fine-tuning por longtermrisk](https://huggingface.co/longtermrisk/Llama-3.1-8B-german-city-names-first-third-v2-sft)
 - [Otra variante con seed4 de longtermrisk](https://huggingface.co/longtermrisk/Llama-3.1-8B-german-city-names-first-third-v2-sft-seed4-epoch3)

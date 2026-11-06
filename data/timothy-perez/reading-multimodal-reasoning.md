@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`timothy-perez/reading-multimodal-reasoning` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigacion (research notes) publicado en HuggingFace bajo licencia CC-BY-4.0. Su artefacto principal es un documento Markdown (`reading.md`) que describe el planteamiento de un estudio exploratorio sobre razonamiento multimodal: el alcance de la pregunta de investigacion, los posibles factores de confusion (confounders), una comparacion propuesta con baselines emparejados y los requisitos de reproducibilidad. El autor indica explicitamente que las secciones marcadas como planes o hipotesis no deben interpretarse como resultados experimentales.
+`timothy-perez/reading-multimodal-reasoning` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigacion (research notes) publicado en Hugging Face bajo licencia CC-BY-4.0. Su artefacto principal es un documento Markdown (`reading.md`) que describe el planteamiento de un estudio exploratorio sobre razonamiento multimodal: el alcance de la pregunta de investigacion, los posibles factores de confusion (confounders), una comparacion propuesta con baselines emparejados y los requisitos de reproducibilidad. El autor indica explicitamente que las secciones marcadas como planes o hipotesis no deben interpretarse como resultados experimentales.
 
 El repositorio incluye un archivo de pesos en formato safetensors con 16.576 parametros totales, una cifra que corresponde a un tensor de juguete o a un artefacto auxiliar, no a un transformer funcional. El tamano del repositorio es de 0,0 GB y no se declara pipeline, idiomas soportados ni checkpoint entrenado. La model card afirma que no se han publicado mejoras de benchmark, ablaciones completadas, codigo liberado ni checkpoint entrenado.
 
@@ -12,7 +12,7 @@ Su relevancia es, por tanto, documental y metodologica: sirve como plantilla de 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el tag `transformer` aparece en HuggingFace, pero la model card no describe arquitectura de modelo) |
+| Arquitectura | no disponible (el tag `transformer` aparece en Hugging Face, pero la model card no describe arquitectura de modelo) |
 | Parametros totales | 16.576 (segun safetensors; no corresponde a un LLM funcional) |
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -23,7 +23,7 @@ Su relevancia es, por tanto, documental y metodologica: sirve como plantilla de 
 
 ## Arquitectura y entrenamiento
 
-No se describe ninguna arquitectura de red en la informacion disponible. La model card no menciona transformer, MoE, SSM ni arquitectura hibrida; el unico indicio es el tag `transformer` de HuggingFace, que no viene acompanado de especificacion tecnica. El recuento de 16.576 parametros en safetensors es incompatible con un modelo de lenguaje operativo y apunta a un tensor auxiliar o de demostracion.
+No se describe ninguna arquitectura de red en la informacion disponible. La model card no menciona transformer, MoE, SSM ni arquitectura hibrida; el unico indicio es el tag `transformer` de Hugging Face, que no viene acompanado de especificacion tecnica. El recuento de 16.576 parametros en safetensors es incompatible con un modelo de lenguaje operativo y apunta a un tensor auxiliar o de demostracion.
 
 No hay datos de entrenamiento: ni numero de tokens, ni composicion del dataset, ni fases de RLHF, DPO o SFT. El autor declara explicitamente que el repositorio no contiene un checkpoint entrenado ni codigo liberado. La contribucion tecnica es metodologica: propone una comparacion con baselines emparejados, identifica confounders y fija requisitos de reproducibilidad (versiones de dataset, comandos, semillas, hardware y logs crudos) antes de reportar cualquier resultado.
 
@@ -84,7 +84,7 @@ No disponible. Este repositorio no es un modelo de razonamiento multimodal despl
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/timothy-perez/reading-multimodal-reasoning
+- Hugging Face: https://huggingface.co/timothy-perez/reading-multimodal-reasoning
 - Artefacto principal citado en la model card: `reading.md` (dentro del repositorio)
 - Documentacion: `README.md` (dentro del repositorio)
 - Paper, blog, repositorio de codigo o demo: no disponible en la informacion proporcionada

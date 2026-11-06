@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sydneydvig/mae-matching-best` es un repositorio de HuggingFace publicado por el usuario `sydneydvig` que contiene una implementación propia de una arquitectura denominada Mae orientada a tareas de emparejamiento (matching), acompañada de un fichero de configuración explícito y un checkpoint de inicialización en formato safetensors. No es un modelo entrenado ni un release con resultados publicados: el propio autor lo describe como "a reproducible starting point, not a trained model release" y aclara que los pesos incluidos solo sirven para pruebas de humo (smoke tests).
+`sydneydvig/mae-matching-best` es un repositorio de Hugging Face publicado por el usuario `sydneydvig` que contiene una implementación propia de una arquitectura denominada Mae orientada a tareas de emparejamiento (matching), acompañada de un fichero de configuración explícito y un checkpoint de inicialización en formato safetensors. No es un modelo entrenado ni un release con resultados publicados: el propio autor lo describe como "a reproducible starting point, not a trained model release" y aclara que los pesos incluidos solo sirven para pruebas de humo (smoke tests).
 
 El dato más relevante es su tamaño real: 33.088 parámetros totales, según la información de safetensors. La configuración declara escala "xlarge" dentro de la nomenclatura interna de la implementación, pero esa etiqueta corresponde a un preset de arquitectura del script, no a un modelo de gran tamaño. Estamos, por tanto, ante un artefacto experimental de laboratorio, no ante un modelo de lenguaje ni un modelo fundacional.
 
@@ -78,7 +78,7 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sydneydvig/mae-matching-best
+- Repositorio en Hugging Face: https://huggingface.co/sydneydvig/mae-matching-best
 - Agregador de benchmarks citado en la búsqueda (sin entrada para este modelo): https://benchlm.ai/
 - Agregador de rankings citado en la búsqueda (sin entrada para este modelo): https://lmmarketcap.com/best-ai-models
 - Ningún paper, blog técnico, repositorio adicional ni demo asociados a este modelo aparecen en la información disponible.

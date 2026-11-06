@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`yaaheediyat/sn92-dm-onyx-1` es un modelo de lenguaje publicado en HuggingFace por el usuario `yaaheediyat` bajo licencia Apache 2.0. Los pesos están en formato safetensors y el repositorio ocupa 62,6 GB, con un total de 31.273.086.512 parámetros (aproximadamente 31,3 mil millones). La etiqueta `gemma4` en los metadatos sugiere que deriva de la familia Gemma de Google, aunque no se dispone de documentación oficial que lo confirme. El acceso es restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar los pesos.
+`yaaheediyat/sn92-dm-onyx-1` es un modelo de lenguaje publicado en Hugging Face por el usuario `yaaheediyat` bajo licencia Apache 2.0. Los pesos están en formato safetensors y el repositorio ocupa 62,6 GB, con un total de 31.273.086.512 parámetros (aproximadamente 31,3 mil millones). La etiqueta `gemma4` en los metadatos sugiere que deriva de la familia Gemma de Google, aunque no se dispone de documentación oficial que lo confirme. El acceso es restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar los pesos.
 
 El modelo no incluye model card pública con detalles de arquitectura, datos de entrenamiento ni benchmarks. El pipeline declarado no está disponible, no se listan idiomas soportados y el contador de descargas es de 8 con 0 likes, lo que indica una publicación muy reciente (creada el 29 de octubre de 2026) y sin tracción comunitaria. Todo ello limita la evaluación a los metadatos verificables del repositorio.
 
@@ -39,7 +39,7 @@ Tampoco se dispone de información sobre el corpus de entrenamiento (número de 
 
 ## Casos de uso
 
-- Evaluación interna de modelos base: dado que no hay benchmarks publicados, un equipo puede descargar los pesos (previa aceptación de la licencia en HuggingFace) y ejecutar su propia batería de evaluación en tareas de generación de texto antes de considerar su adopción.
+- Evaluación interna de modelos base: dado que no hay benchmarks publicados, un equipo puede descargar los pesos (previa aceptación de la licencia en Hugging Face) y ejecutar su propia batería de evaluación en tareas de generación de texto antes de considerar su adopción.
 - Ajuste fino supervisado sobre dominio propio: los 31,3 B de parámetros y la licencia Apache 2.0 permiten adaptar el modelo con SFT/DPO a un corpus corporativo, siempre que los recursos de GPU lo permitan.
 - Experimentación académica con modelos de ~30 B: útil como punto de comparación frente a otros modelos de tamaño similar en estudios de escalado o de alineación.
 - Generación de texto en pipelines de procesamiento por lotes: con un despliegue en vLLM o TGI sobre GPUs de 80 GB, podría emplearse para tareas de resumen o extracción, aunque el rendimiento real debe medirse.
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| yaaheediyat/sn92-dm-onyx-1 | ~31,3 B | no disponible | Apache 2.0 | gated en HuggingFace |
-| Gemma 2 27B (Google) | 27 B | 8K | Gemma license | pública en HuggingFace |
-| Qwen2.5 32B | 32,5 B | 128K | Apache 2.0 | pública en HuggingFace |
-| Mistral Small 24B | ~24 B | 32K | Apache 2.0 | pública en HuggingFace |
+| yaaheediyat/sn92-dm-onyx-1 | ~31,3 B | no disponible | Apache 2.0 | gated en Hugging Face |
+| Gemma 2 27B (Google) | 27 B | 8K | Gemma license | pública en Hugging Face |
+| Qwen2.5 32B | 32,5 B | 128K | Apache 2.0 | pública en Hugging Face |
+| Mistral Small 24B | ~24 B | 32K | Apache 2.0 | pública en Hugging Face |
 
 La comparación se limita a parámetros, contexto y licencia porque no hay benchmarks publicados de `sn92-dm-onyx-1`. Los datos de los modelos alternativos corresponden a sus fichas oficiales; conviene verificarlos en el momento de la consulta.
 
@@ -77,7 +77,7 @@ La comparación se limita a parámetros, contexto y licencia porque no hay bench
 - Ausencia total de model card: no hay información sobre datos de entrenamiento, sesgos, idiomas ni evaluación, lo que impide anticipar su comportamiento.
 - Riesgo de alucinación: no cuantificado; sin benchmarks ni evaluaciones, no puede descartarse un comportamiento deficiente en tareas factuales.
 - Licencia Apache 2.0: permite uso comercial y modificación, pero el usuario asume toda la responsabilidad sobre el cumplimiento y sobre el origen de los datos de entrenamiento, que se desconoce.
-- Acceso restringido: es necesario aceptar condiciones en HuggingFace, lo que añade fricción para despliegues automatizados.
+- Acceso restringido: es necesario aceptar condiciones en Hugging Face, lo que añade fricción para despliegues automatizados.
 - Idiomas no declarados: no puede asumirse un buen rendimiento en castellano sin evaluarlo.
 - Contexto desconocido: no puede planificarse su uso en tareas de contexto largo sin verificación previa.
 - Procedencia incierta: la etiqueta `gemma4` no está respaldada por documentación; el linaje real del modelo debe confirmarse antes de asumir compatibilidades.
@@ -85,5 +85,5 @@ La comparación se limita a parámetros, contexto y licencia porque no hay bench
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yaaheediyat/sn92-dm-onyx-1
+- Hugging Face: https://huggingface.co/yaaheediyat/sn92-dm-onyx-1
 - No se han localizado papers, blogs, repositorios ni demos adicionales en la información disponible.

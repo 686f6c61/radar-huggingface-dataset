@@ -23,7 +23,7 @@ La relevancia práctica de este repo es acotada: el autor no publica evaluacione
 | Tamano del repositorio | 1,7 GB |
 | Pipeline declarado | image-text-to-text |
 | Libreria declarada | transformers (con compatibilidad llama.cpp / llama-cpp) |
-| Fecha de creacion | 2026-10-14 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-10-14 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -75,8 +75,8 @@ El autor no incluye MMLU, HumanEval, GSM8K ni ninguna otra evaluacion, ni para e
 
 | Modelo | Parametros | Formato / cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Martin7374/gemma-3-4b-it-Q2_K-GGUF (este repo) | 3,88 B | GGUF Q2_K, 1,7 GB | No disponible (ejemplo con 2048) | Gemma | HuggingFace, 0 descargas |
-| google/gemma-3-4b-it | 3,88 B | safetensors (precision completa) | No disponible en la informacion proporcionada | Gemma | HuggingFace, requiere aceptar licencia |
+| Martin7374/gemma-3-4b-it-Q2_K-GGUF (este repo) | 3,88 B | GGUF Q2_K, 1,7 GB | No disponible (ejemplo con 2048) | Gemma | Hugging Face, 0 descargas |
+| google/gemma-3-4b-it | 3,88 B | safetensors (precision completa) | No disponible en la informacion proporcionada | Gemma | Hugging Face, requiere aceptar licencia |
 | Otras cuantizaciones GGUF de Gemma 3 4B IT (Q4_K_M, Q8_0) | 3,88 B | GGUF, mayor tamano y mayor fidelidad | Igual que el modelo base | Gemma | Multiples repos de la comunidad |
 | Alternativas multimodales pequenas de otros proveedores | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -90,14 +90,14 @@ La comparacion cuantitativa de rendimiento entre estas variantes no es posible c
 - Sesgos: no documentados en este repositorio. El modelo base de Google aplica filtrado de datos, pero los sesgos residuales no se detallan aqui.
 - Idiomas: no se declara lista de idiomas soportados; el comportamiento en castellano no esta verificado para esta cuantizacion.
 - Contexto: la longitud de contexto efectiva de esta conversion no se especifica; el ejemplo del autor usa 2048 tokens. Configuraciones mayores dependen de la memoria disponible y del soporte del runner.
-- Licencia Gemma: permite uso comercial bajo los terminos de uso de Google, con obligaciones de redistribucion de la licencia y restricciones de uso (politica de uso prohibido). Es necesario aceptar la licencia en HuggingFace para acceder al modelo base. Verificar el cumplimiento antes de un despliegue en produccion.
+- Licencia Gemma: permite uso comercial bajo los terminos de uso de Google, con obligaciones de redistribucion de la licencia y restricciones de uso (politica de uso prohibido). Es necesario aceptar la licencia en Hugging Face para acceder al modelo base. Verificar el cumplimiento antes de un despliegue en produccion.
 - Trazabilidad: el repositorio esta subido por un tercero, no por Google. Conviene validar la integridad del archivo GGUF antes de usarlo en produccion.
 - Formato: al ser GGUF, no encaja en stacks que esperan safetensors (vLLM, TGI, entrenamiento o fine-tuning adicional).
 - Fecha de creacion anomala: los metadatos indican 2026-10-14, posterior a la fecha habitual de publicacion de Gemma 3; conviene tratarla con cautela.
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/Martin7374/gemma-3-4b-it-Q2_K-GGUF
+- Repositorio del modelo en Hugging Face: https://huggingface.co/Martin7374/gemma-3-4b-it-Q2_K-GGUF
 - Modelo base: https://huggingface.co/google/gemma-3-4b-it
 - Espacio GGUF-my-repo de ggml.ai: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp

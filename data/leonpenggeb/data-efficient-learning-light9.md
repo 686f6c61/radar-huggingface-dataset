@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El pr
 
 ## Comparativa con modelos similares
 
-No disponible. No existe un modelo comparable porque este repositorio no es un modelo de IA. En el ámbito de la documentación metodológica, no hay alternativas equivalentes en el ecosistema de HuggingFace que sean directamente comparables.
+No disponible. No existe un modelo comparable porque este repositorio no es un modelo de IA. En el ámbito de la documentación metodológica, no hay alternativas equivalentes en el ecosistema de Hugging Face que sean directamente comparables.
 
 ## Limitaciones y advertencias
 
@@ -63,5 +63,5 @@ No disponible. No existe un modelo comparable porque este repositorio no es un m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Leonpenggeb/data-efficient-learning-light9
+- Repositorio en Hugging Face: https://huggingface.co/Leonpenggeb/data-efficient-learning-light9
 - No se han encontrado otros enlaces relevantes (papers, blogs o demos) asociados a este repositorio en la búsqueda web realizada.

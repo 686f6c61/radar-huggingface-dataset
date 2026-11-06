@@ -35,7 +35,7 @@ El entrenamiento consistio en 4 epocas con learning rate 3e-5, warmup del 10 por
 - Distincion entre entidades y menciones genericas: "High Court" se etiqueta como COURT_LEGAL_BODY, pero "the court" no se considera entidad.
 - Deteccion de duraciones como DATE (por ejemplo, "two weeks").
 - Extraccion de datos estructurados de contacto e identificacion (telefono y CNIC) solo validada sobre datos sinteticos.
-- Integracion con el pipeline `token-classification` de HuggingFace Transformers usando `aggregation_strategy="first"`, que coincide con el esquema de entrenamiento.
+- Integracion con el pipeline `token-classification` de Hugging Face Transformers usando `aggregation_strategy="first"`, que coincide con el esquema de entrenamiento.
 - No soporta tool calling, function calling, agentes, razonamiento multi-paso ni generacion de texto: es un modelo discriminativo de clasificacion de tokens.
 - Capacidad multilingue no validada: aunque el modelo base es multilingue, este ajuste fino se entreno y evaluo unicamente con texto en ingles.
 
@@ -85,7 +85,7 @@ En tipos raros, las puntuaciones perfectas o casi perfectas de la muestra aleato
 - VRAM estimada en fp32: aproximadamente 1,1 GB solo para pesos, mas overhead.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM es suficiente; el modelo se entreno en una NVIDIA Tesla T4 de 16 GB. Funciona tambien en A100, H100, L4, RTX 4090, RTX 3090 y RTX 3060.
 - Cabe holgadamente en GPU consumer, incluidas GTX 1660, RTX 2060 y superiores.
-- Despliegue: compatible con HuggingFace Transformers (`pipeline("token-classification")`), con Text Generation Inference no aplica por ser un modelo encoder-only, y con vLLM no esta documentado en la informacion disponible. La conversion a ONNX o a llama.cpp no se menciona en la model card.
+- Despliegue: compatible con Hugging Face Transformers (`pipeline("token-classification")`), con Text Generation Inference no aplica por ser un modelo encoder-only, y con vLLM no esta documentado en la informacion disponible. La conversion a ONNX o a llama.cpp no se menciona en la model card.
 - Latencia y throughput: no disponibles en la informacion proporcionada. Por el tamano del modelo, se espera un throughput alto en GPU modernas, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
@@ -115,7 +115,7 @@ La comparacion con alternativas genericas es cualitativa: los modelos NER generi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MuhammadSarimUmer/xlm-roberta-base-pakistani-ner
+- Modelo en Hugging Face: https://huggingface.co/MuhammadSarimUmer/xlm-roberta-base-pakistani-ner
 - Modelo base: https://huggingface.co/FacebookAI/xlm-roberta-base
 - Repositorio de codigo del proyecto: mencionado en la model card como "code repository", sin URL publica en la informacion disponible
 - Paper o publicacion tecnica: no disponible

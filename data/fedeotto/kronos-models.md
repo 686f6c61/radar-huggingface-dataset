@@ -8,7 +8,7 @@ Kronos es una familia de modelos de difusion latente autorregresiva para la gene
 
 El sistema se compone de dos piezas: un autoencoder unificado (UAE) que comprime las moleculas a un espacio latente continuo, y un modelo autorregresivo que modela secuencias de tokens latentes y las decodifica mediante difusion. Se publican dos variantes del autoencoder, entrenadas sobre QM9 y GEOM-Drugs respectivamente, y ocho configuraciones del generador por cada dataset, que cubren una ablacion de escalado en profundidad (8, 10, 12, 16 capas), numero de cabezas (8 a 16) y dimension del modelo (512 a 1024).
 
-El checkpoint principal, `layers16-heads16-d1024`, tiene 283 M de parametros y es el que se reporta en el articulo "Autoregressive latent diffusion for 3D molecule generation" (arXiv:2607.09277). El repositorio ocupa 11 GB y se distribuye bajo licencia MIT, aunque en el momento de redactar esta ficha no acumula descargas ni valoraciones en HuggingFace, por lo que se trata de una publicacion reciente y todavia no validada por la comunidad.
+El checkpoint principal, `layers16-heads16-d1024`, tiene 283 M de parametros y es el que se reporta en el articulo "Autoregressive latent diffusion for 3D molecule generation" (arXiv:2607.09277). El repositorio ocupa 11 GB y se distribuye bajo licencia MIT, aunque en el momento de redactar esta ficha no acumula descargas ni valoraciones en Hugging Face, por lo que se trata de una publicacion reciente y todavia no validada por la comunidad.
 
 ## Especificaciones tecnicas
 
@@ -98,7 +98,7 @@ Nota: los datos de la columna "enfoque" y "dominios" de los modelos alternativos
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fedeotto/kronos-models
+- Hugging Face: https://huggingface.co/fedeotto/kronos-models
 - Dataset asociado: https://huggingface.co/datasets/fedeotto/kronos-datasets
 - Repositorio de codigo: https://github.com/fedeotto/kronos
 - Articulo: arXiv:2607.09277, "Autoregressive latent diffusion for 3D molecule generation" (Ottomano, Ren, Li, Jelfs, Ganose, 2026)

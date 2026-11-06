@@ -79,9 +79,9 @@ Las cifras siguientes son estimaciones derivadas del tamaño nominal de 4B pará
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `espetro/kev-4b-mistralrs` | ~4B | no disponible | Sin benchmarks publicados | Apache-2.0 | HuggingFace; 0 descargas y 0 likes en el momento de la consulta |
-| `jaredpalmer/kev-4b` | ~4B (mismo origen) | no disponible | Sin benchmarks publicados en la información disponible | Apache-2.0, según la model card del export | HuggingFace |
-| `Qwen/Qwen3.5-4B-Base` | ~4B | no disponible | No disponible | Apache-2.0, según la model card del export | HuggingFace |
+| `espetro/kev-4b-mistralrs` | ~4B | no disponible | Sin benchmarks publicados | Apache-2.0 | Hugging Face; 0 descargas y 0 likes en el momento de la consulta |
+| `jaredpalmer/kev-4b` | ~4B (mismo origen) | no disponible | Sin benchmarks publicados en la información disponible | Apache-2.0, según la model card del export | Hugging Face |
+| `Qwen/Qwen3.5-4B-Base` | ~4B | no disponible | No disponible | Apache-2.0, según la model card del export | Hugging Face |
 
 No se dispone de información sobre otros modelos de decisión de tamaño comparable con los que establecer una comparación técnica sustantiva.
 
@@ -100,7 +100,7 @@ No se dispone de información sobre otros modelos de decisión de tamaño compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/espetro/kev-4b-mistralrs
+- Modelo en Hugging Face: https://huggingface.co/espetro/kev-4b-mistralrs
 - Checkpoint de origen: https://huggingface.co/jaredpalmer/kev-4b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B-Base
 - Fork de mistral.rs con el servidor Kev: https://github.com/espetro/mistral.rs

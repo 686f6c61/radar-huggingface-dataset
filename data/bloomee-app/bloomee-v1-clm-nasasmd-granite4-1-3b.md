@@ -4,7 +4,7 @@
 
 Bloomee es una plataforma interactiva de observacion de la Tierra que detecta, visualiza y explica eventos de floracion en el espacio y en el tiempo, integrando datos de observacion de la NASA. Este modelo, bloomee-v1-clm-nasasmd-granite4.1-3b, es un ajuste fino (fine-tune) del modelo Granite 4.1 de 3B parametros de IBM, especializado en datos de la NASA Science Mission Directorate (SMD) para el analisis de fenologia floral. El proyecto Bloomee fue ganador y reconocido como mejor innovacion en la NASA Space Apps Challenge Bandung 2025.
 
-La denominacion del modelo (clm = causal language model, nasasmd = NASA SMD) sugiere que se ha entrenado sobre datos cientificos de la NASA para generar explicaciones en lenguaje natural sobre eventos de floracion, desde la floracion de los cerezos en Japon hasta los superblooms de flores silvestres en California. La ficha publicada en HuggingFace no incluye especificaciones tecnicas detalladas, por lo que gran parte de la informacion debe inferirse del nombre del modelo y del contexto del proyecto Bloomee.
+La denominacion del modelo (clm = causal language model, nasasmd = NASA SMD) sugiere que se ha entrenado sobre datos cientificos de la NASA para generar explicaciones en lenguaje natural sobre eventos de floracion, desde la floracion de los cerezos en Japon hasta los superblooms de flores silvestres en California. La ficha publicada en Hugging Face no incluye especificaciones tecnicas detalladas, por lo que gran parte de la informacion debe inferirse del nombre del modelo y del contexto del proyecto Bloomee.
 
 ## Especificaciones tecnicas
 
@@ -68,7 +68,7 @@ Nota: los datos de los modelos comparados corresponden a sus caracteristicas pub
 ## Limitaciones y advertencias
 
 - No se ha publicado ninguna documentacion tecnica detallada (datos de entrenamiento, evaluacion, sesgos) para este modelo.
-- La licencia no esta especificada en la ficha de HuggingFace, por lo que no esta garantizado el uso comercial legal.
+- La licencia no esta especificada en la ficha de Hugging Face, por lo que no esta garantizado el uso comercial legal.
 - El modelo tiene 0 descargas y 1 like, lo que indica que es un modelo muy reciente y sin validacion de la comunidad.
 - Al ser un ajuste fino de un modelo de 3B, puede presentar alucinaciones en dominios fuera de su especializacion (fenologia floral).
 - La longitud de contexto real puede ser menor que la del modelo base si el ajuste fino no preserva la ventana completa.
@@ -76,7 +76,7 @@ Nota: los datos de los modelos comparados corresponden a sus caracteristicas pub
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/bloomee-app/bloomee-v1-clm-nasasmd-granite4.1-3b)
-- [Perfil de la organizacion en HuggingFace](https://huggingface.co/bloomee-app)
+- [Modelo en Hugging Face](https://huggingface.co/bloomee-app/bloomee-v1-clm-nasasmd-granite4.1-3b)
+- [Perfil de la organizacion en Hugging Face](https://huggingface.co/bloomee-app)
 - [GitHub de Bloomee](https://github.com/bloomee-app)
 - [Repositorio de la web de Bloomee](https://github.com/bloomee-app/bloomee-web)

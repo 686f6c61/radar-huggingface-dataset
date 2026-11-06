@@ -84,7 +84,7 @@ La model card incluye una comparativa con modelos propietarios de gran tamano en
 
 | Modelo | Parámetros | Contexto | Global (0-100) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Xing4.0-29B-Intent | ~29B totales, ~4B activos | no disponible | 58 | Apache 2.0 | Pesos abiertos en HuggingFace |
+| Xing4.0-29B-Intent | ~29B totales, ~4B activos | no disponible | 58 | Apache 2.0 | Pesos abiertos en Hugging Face |
 | Gemini-3.6-Flash | no disponible | no disponible | 49 | Propietaria | API |
 | Qwen3.8-Max | no disponible | no disponible | 46 | Propietaria | API |
 | GPT-5.6-Sol | no disponible | no disponible | 45 | Propietaria | API |
@@ -105,7 +105,7 @@ No se dispone de información sobre parámetros, contexto ni licencia de los mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/XingChen-AGI/Xing4.0-29B-Intent-FP8
+- Modelo en Hugging Face: https://huggingface.co/XingChen-AGI/Xing4.0-29B-Intent-FP8
 - Modelo base: https://huggingface.co/XingChen-AGI/Xing4.0-29B-A4B
 - Repositorio GitHub: https://github.com/XingChen-AGI/Xing4.0-29B-Intent
 - Dataset companero: https://huggingface.co/datasets/XingChen-AGI/Xing4.0-29B-Intent-oss

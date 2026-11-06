@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`pavelsemenov1987/cnn-transformer-experiment` es un repositorio experimental publicado en HuggingFace por el usuario pavelsemenov1987 que contiene una implementación propia de una arquitectura denominada "Cnn Transformer" orientada a tareas de aprendizaje contrastivo. Se trata de un esqueleto de código reproducible con una configuración explícita y un checkpoint de inicialización, no de un modelo entrenado ni de una release lista para producción. El propio autor lo describe en la model card como un punto de partida reproducible y no como un checkpoint con benchmarks.
+`pavelsemenov1987/cnn-transformer-experiment` es un repositorio experimental publicado en Hugging Face por el usuario pavelsemenov1987 que contiene una implementación propia de una arquitectura denominada "Cnn Transformer" orientada a tareas de aprendizaje contrastivo. Se trata de un esqueleto de código reproducible con una configuración explícita y un checkpoint de inicialización, no de un modelo entrenado ni de una release lista para producción. El propio autor lo describe en la model card como un punto de partida reproducible y no como un checkpoint con benchmarks.
 
 El modelo tiene 33.088 parámetros totales (dato real extraído del archivo safetensors), lo que lo sitúa en un orden de magnitud de decenas de miles de parámetros, muy lejos de cualquier modelo de lenguaje o de visión utilizable en aplicaciones reales. La variante declarada es "xlarge" dentro de la escala interna del propio script, con atención multi-query, fusión mediante concat mlp, activación relu y normalización layernorm. No se especifica longitud de contexto, idiomas soportados ni datos de entrenamiento.
 
@@ -51,7 +51,7 @@ No hay evidencia de un entrenamiento completado. La model card indica explícita
 - Plantilla de reproducibilidad en investigación: el repositorio aporta `config.json` y `training_args.json` con una receta concreta (SGD, schedule polinomial), lo que facilita clonar el experimento y comparar variantes manteniendo la misma exposición de datos, presupuesto de ajuste y semillas aleatorias.
 - Fixture en tests de integración de CI/CD: al ocupar menos de 1 MB, puede incorporarse como artefacto versionado en tests automáticos que validen el registro de modelos, la conversión de formatos o la compatibilidad con adaptadores de carga personalizados.
 - Ablación de arquitectura convolución-transformer: permite medir de forma controlada el efecto de sustituir atención multi-query por atención estándar o de cambiar la fusión concat mlp por otras estrategias, siempre con una línea base de capacidad equivalente.
-- Docencia y prototipado rápido: sirve para ilustrar cómo se estructura un paquete de modelo en HuggingFace (script, configuración, argumentos de entrenamiento y pesos) sin la complejidad de un modelo grande.
+- Docencia y prototipado rápido: sirve para ilustrar cómo se estructura un paquete de modelo en Hugging Face (script, configuración, argumentos de entrenamiento y pesos) sin la complejidad de un modelo grande.
 - Base para aprendizaje contrastivo a pequeña escala: el esqueleto permite experimentar con funciones de pérdida contrastivas sobre conjuntos de datos reducidos y validar la mecánica del entrenamiento antes de escalar la arquitectura.
 - Evaluación metodológica de buenas prácticas: la model card propone un protocolo de evaluación con conjunto de validación específico de tarea, al menos tres semillas y una línea base de capacidad comparable, lo que lo convierte en un caso de estudio sobre documentación honesta de resultados.
 
@@ -91,7 +91,7 @@ La comparación directa no es significativa, ya que este repositorio contiene un
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/pavelsemenov1987/cnn-transformer-experiment
+- Repositorio en Hugging Face: https://huggingface.co/pavelsemenov1987/cnn-transformer-experiment
 - Script principal: https://huggingface.co/pavelsemenov1987/cnn-transformer-experiment/blob/main/run.py
 - Configuracion de arquitectura: https://huggingface.co/pavelsemenov1987/cnn-transformer-experiment/blob/main/config.json
 - Argumentos de entrenamiento por defecto: https://huggingface.co/pavelsemenov1987/cnn-transformer-experiment/blob/main/training_args.json

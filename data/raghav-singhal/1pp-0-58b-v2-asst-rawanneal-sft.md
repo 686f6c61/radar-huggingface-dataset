@@ -93,7 +93,7 @@ La comparación con modelos de propósito general no es directa: este checkpoint
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-0.58b-v2-asst-rawanneal-sft
+- Modelo en Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-0.58b-v2-asst-rawanneal-sft
 - Variante sin cooldown intermedio: https://huggingface.co/Raghav-Singhal/1pp-0.58b-v2-asst-sft
 - Run base (raw): https://huggingface.co/Raghav-Singhal/1pp-0.58b-v2-raw-base
 - Colección 1pp: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649

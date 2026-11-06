@@ -75,7 +75,7 @@ La comparativa es limitada porque no hay métricas de rendimiento publicadas par
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-base-b20
+- Repositorio Hugging Face: https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-base-b20
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Repositorio OpenRLHF (framework de entrenamiento): https://github.com/OpenRLHF/OpenRLHF
 - Proyecto W&B (mencionado en la model card, sin enlace directo): proyecto `eaiexp-paper-final`, run `seeded_rl_base_ramp25_stoppen_gen4k_ep2_ncp10_base_b20`

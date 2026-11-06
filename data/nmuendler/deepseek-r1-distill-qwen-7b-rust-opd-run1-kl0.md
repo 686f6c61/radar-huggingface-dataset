@@ -8,7 +8,7 @@
 
 El nombre del identificador funciona aquí como principal fuente de información: `rust` apunta a un ajuste orientado al lenguaje de programación Rust, `opd` es compatible con un esquema de destilación o entrenamiento on-policy, `kl0` sugiere un coeficiente de regularización KL nulo y `run1` indica que se trata de la primera ejecución de una serie. La ruta interna del tag `base_model` (`/capstor/scratch/cscs/.../paper/sft/r1_qwen_rust_kl0/lr2e-04/model`) sitúa el trabajo en un entorno de supercomputación (CSCS, Suiza) y en el contexto de una reproducción de un artículo científico con una tasa de aprendizaje de 2e-4.
 
-La relevancia del modelo es, por tanto, fundamentalmente experimental y reproducible, no de producto. La model card es la plantilla vacía por defecto de HuggingFace, sin descripción, sin datos de entrenamiento, sin licencia declarada y sin resultados de evaluación, de modo que cualquier uso en producción exige una validación previa por parte del integrador. La búsqueda web realizada no devuelve ninguna referencia técnica al modelo: los resultados obtenidos son fichas de hotel completamente ajenas al proyecto.
+La relevancia del modelo es, por tanto, fundamentalmente experimental y reproducible, no de producto. La model card es la plantilla vacía por defecto de Hugging Face, sin descripción, sin datos de entrenamiento, sin licencia declarada y sin resultados de evaluación, de modo que cualquier uso en producción exige una validación previa por parte del integrador. La búsqueda web realizada no devuelve ninguna referencia técnica al modelo: los resultados obtenidos son fichas de hotel completamente ajenas al proyecto.
 
 ## Especificaciones tecnicas
 
@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-R1-Distill-Qwen-7B-rust-opd-run1-kl0 | 7B (base) + adaptador LoRA | no disponible | Adaptador LoRA sobre modelo destilado de razonamiento | no disponible | HuggingFace, 0 descargas, 0 likes |
-| DeepSeek-R1-Distill-Qwen-7B (modelo base original) | ~7,6B | no disponible en esta ficha | Transformer denso, destilado de R1 | MIT segun ficha oficial del modelo base (no verificado para este adaptador) | HuggingFace, ampliamente utilizado |
-| Qwen2.5-Coder-7B-Instruct | ~7,6B | 32 768 tokens nativos, ampliable | Transformer denso especializado en codigo | Apache 2.0 segun ficha oficial | HuggingFace, muy extendido |
-| DeepSeek-R1-Distill-Llama-8B | ~8B | no disponible en esta ficha | Transformer denso, destilado de R1 | Licencia Llama segun ficha oficial | HuggingFace, ampliamente utilizado |
+| DeepSeek-R1-Distill-Qwen-7B-rust-opd-run1-kl0 | 7B (base) + adaptador LoRA | no disponible | Adaptador LoRA sobre modelo destilado de razonamiento | no disponible | Hugging Face, 0 descargas, 0 likes |
+| DeepSeek-R1-Distill-Qwen-7B (modelo base original) | ~7,6B | no disponible en esta ficha | Transformer denso, destilado de R1 | MIT segun ficha oficial del modelo base (no verificado para este adaptador) | Hugging Face, ampliamente utilizado |
+| Qwen2.5-Coder-7B-Instruct | ~7,6B | 32 768 tokens nativos, ampliable | Transformer denso especializado en codigo | Apache 2.0 segun ficha oficial | Hugging Face, muy extendido |
+| DeepSeek-R1-Distill-Llama-8B | ~8B | no disponible en esta ficha | Transformer denso, destilado de R1 | Licencia Llama segun ficha oficial | Hugging Face, ampliamente utilizado |
 
 La comparación cuantitativa de rendimiento no es posible: el adaptador analizado no publica métricas, y sus dos alternativas más cercanas (el modelo base sin ajustar y los modelos de código de la familia Qwen) sí disponen de evaluaciones públicas que no se han replicado aquí. La ventaja diferencial del adaptador sería una supuesta especialización en Rust, no verificada empíricamente.
 
@@ -90,7 +90,7 @@ La comparación cuantitativa de rendimiento no es posible: el adaptador analizad
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/nmuendler/DeepSeek-R1-Distill-Qwen-7B-rust-opd-run1-kl0
+- Repositorio Hugging Face del adaptador: https://huggingface.co/nmuendler/DeepSeek-R1-Distill-Qwen-7B-rust-opd-run1-kl0
 - Modelo base declarado: https://huggingface.co/nmuendler/DeepSeek-R1-Distill-Qwen-7B-rust-sft-run1-kl0-baked
 - Modelo original del que deriva la cadena: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B
 - Paper de DeepSeek-R1 (referencia general del modelo base): https://arxiv.org/abs/2501.12948

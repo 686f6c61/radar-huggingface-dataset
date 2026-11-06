@@ -6,7 +6,7 @@ Apertus-v1.5-70B-FP8-mlx es una conversion cuantizada a 8 bits (FP8) del modelo 
 
 El modelo hereda las caracteristicas declaradas en el repositorio base y en las etiquetas del propio repo: es multimodal (pipeline `image-text-to-text`, con soporte de entrada de imagen ademas de texto), multilingue y orientado a conversacion. El identificador incluye las etiquetas `switzerland`, `swiss-ai` y `apertus`, lo que sitúa la familia Apertus en el ecosistema de IA open source suizo. La licencia es Apache 2.0, lo que permite uso comercial sin las restricciones habituales de otros modelos de gran tamano.
 
-Su relevancia practica es doble. Por un lado, permite ejecutar localmente un modelo de ~72.000 millones de parametros en un solo equipo de sobremesa Apple (Mac Studio con M3 Ultra, por ejemplo), sin GPU dedicada ni despliegue en nube, lo que resulta atractivo para entornos con requisitos de soberania de datos. Por otro lado, sirve como banco de pruebas de cuantizacion FP8 sobre MLX: permite medir la degradacion de calidad frente al modelo base en BF16 y evaluar el rendimiento real de inferencia en Apple Silicon. El acceso al repositorio esta restringido y requiere aceptar condiciones en HuggingFace.
+Su relevancia practica es doble. Por un lado, permite ejecutar localmente un modelo de ~72.000 millones de parametros en un solo equipo de sobremesa Apple (Mac Studio con M3 Ultra, por ejemplo), sin GPU dedicada ni despliegue en nube, lo que resulta atractivo para entornos con requisitos de soberania de datos. Por otro lado, sirve como banco de pruebas de cuantizacion FP8 sobre MLX: permite medir la degradacion de calidad frente al modelo base en BF16 y evaluar el rendimiento real de inferencia en Apple Silicon. El acceso al repositorio esta restringido y requiere aceptar condiciones en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -22,7 +22,7 @@ Su relevancia practica es doble. Por un lado, permite ejecutar localmente un mod
 | Formato de pesos | safetensors en formato MLX (`mlx`, `safetensors`); no se incluye GGUF |
 | Modelo base | swiss-ai/Apertus-v1.5-70B |
 | Tamano del repositorio | 77,2 GB |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Fecha de publicacion | 23 de septiembre de 2026 (creacion del repositorio) |
 
 ## Arquitectura y entrenamiento
@@ -88,13 +88,13 @@ No se dispone de datos de rendimiento comparativos. La tabla siguiente recoge un
 - Cuantizacion FP8: aunque la perdida respecto a BF16 suele ser reducida, no es nula. En tareas sensibles a la precision, como matematicas o generacion de codigo, conviene comparar la salida contra el modelo base antes de adoptarla.
 - Idiomas: la etiqueta `multilingual` no especifica que idiomas estan cubiertos ni con que calidad. El castellano no esta confirmado como idioma soportado y debe validarse empiricamente.
 - Contexto: la longitud de contexto no esta documentada en la informacion disponible. No se debe asumir un valor concreto para planificar despliegues.
-- Licencia: el modelo base y esta conversion se publican bajo Apache 2.0, lo que permite uso comercial. No obstante, el repositorio esta restringido (gated) y exige aceptar condiciones en HuggingFace; conviene revisar si el modelo base impone una politica de uso aceptable adicional.
+- Licencia: el modelo base y esta conversion se publican bajo Apache 2.0, lo que permite uso comercial. No obstante, el repositorio esta restringido (gated) y exige aceptar condiciones en Hugging Face; conviene revisar si el modelo base impone una politica de uso aceptable adicional.
 - Dependencia de plataforma: los pesos MLX no son portables a CUDA ni a CPU x86 sin conversion. Esto limita el despliegue a hardware Apple Silicon y complica la migracion a infraestructura de nube convencional.
 - Madurez del repositorio: cero descargas y cero interacciones en el momento de la consulta, publicado por un autor de comunidad y sin documentacion de validacion. No debe tratarse como un artefacto con garantias de mantenimiento.
 - Soporte de herramientas: al no estar confirmado el soporte de function calling ni de flujos de agente, no se debe planificar una arquitectura basada en ello sin verificacion previa.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sbaechler/Apertus-v1.5-70B-FP8-mlx
+- Repositorio en Hugging Face: https://huggingface.co/sbaechler/Apertus-v1.5-70B-FP8-mlx
 - Modelo base: https://huggingface.co/swiss-ai/Apertus-v1.5-70B
 - Resultados de la busqueda web: no se encontro ningun enlace relevante sobre el modelo, su familia o sus evaluaciones. Los resultados devueltos no guardaban relacion con el modelo y se han descartado. No se dispone, por tanto, de enlaces a papers, blogs tecnicos, repositorios de codigo ni demos.

@@ -78,9 +78,9 @@ No se han publicado resultados de benchmarks comparativos con otros modelos en l
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| agentsmith_dodge | Política RL para Microduck (esquiva lateral) | no disponible | no aplica | 0,191 m en 3 s, 0 caídas en lotes de 16 | Apache-2.0 | HuggingFace |
+| agentsmith_dodge | Política RL para Microduck (esquiva lateral) | no disponible | no aplica | 0,191 m en 3 s, 0 caídas en lotes de 16 | Apache-2.0 | Hugging Face |
 | Política de marcha estándar de Microduck | Política RL de seguimiento de velocidad | no disponible | no aplica | no disponible | no disponible | Incluida con el robot |
-| Otras políticas de la comunidad Microduck | Políticas RL empaquetadas | no disponible | no aplica | no disponible | variable | HuggingFace |
+| Otras políticas de la comunidad Microduck | Políticas RL empaquetadas | no disponible | no aplica | no disponible | variable | Hugging Face |
 
 No se dispone de datos de benchmarks de las alternativas en la información proporcionada, por lo que la comparación cuantitativa de rendimiento no está disponible.
 
@@ -98,7 +98,7 @@ No se dispone de datos de benchmarks de las alternativas en la información prop
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/assix-research/microduck-matrix-agent-smith-bullet-dodge
+- Modelo en Hugging Face: https://huggingface.co/assix-research/microduck-matrix-agent-smith-bullet-dodge
 - Replay de la verificación: https://huggingface.co/assix-research/microduck-matrix-agent-smith-bullet-dodge/resolve/main/replay.mp4
 - Repositorio de Microduck (Pollen Robotics): https://github.com/pollen-robotics/microduck
 - Cloudflare (resultado de búsqueda sin relación con el modelo): https://www.cloudflare.com/

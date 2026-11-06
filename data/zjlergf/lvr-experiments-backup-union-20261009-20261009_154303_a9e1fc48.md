@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El identificador `zjlergf/lvr-experiments-backup-union-20261009-20261009_154303_a9e1fc48` corresponde a un repositorio publicado en HuggingFace por el usuario `zjlergf` que, segun su propia model card, no es un modelo de lenguaje sino un archivo publico de productos de experimentos agrupados bajo las rutas `zjl/LVR/...` y `zjl/visual_latent_audit/...`. El repositorio ocupa 265,5 GB y esta compuesto por ficheros ZIP independientes, un fichero `manifest.jsonl` con el hash de cada fichero almacenado y el ZIP que lo contiene, un `selection_audit.json` con las rutas excluidas y ausentes, y capturas SQLite descritas como snapshots consistentes e independientes. No se declara licencia, ni idiomas, ni pipeline, y el repositorio acumula cero descargas y cero "likes" en el momento de la consulta.
+El identificador `zjlergf/lvr-experiments-backup-union-20261009-20261009_154303_a9e1fc48` corresponde a un repositorio publicado en Hugging Face por el usuario `zjlergf` que, segun su propia model card, no es un modelo de lenguaje sino un archivo publico de productos de experimentos agrupados bajo las rutas `zjl/LVR/...` y `zjl/visual_latent_audit/...`. El repositorio ocupa 265,5 GB y esta compuesto por ficheros ZIP independientes, un fichero `manifest.jsonl` con el hash de cada fichero almacenado y el ZIP que lo contiene, un `selection_audit.json` con las rutas excluidas y ausentes, y capturas SQLite descritas como snapshots consistentes e independientes. No se declara licencia, ni idiomas, ni pipeline, y el repositorio acumula cero descargas y cero "likes" en el momento de la consulta.
 
 La relevancia de esta publicacion no es la de un modelo utilizable, sino la de un artefacto de reproducibilidad: sirve para reconstruir el estado de una migracion de experimentos de investigacion (la union de resultados revisados de fecha 2026-10-09), excluyendo explicitamente los modelos de entrada publicos y los entornos de Python. La propia model card advierte de que los ficheros ZIP son independientes y no volumenes concatenados, de que hay que verificar la integridad con `sha256sum -c SHA256SUMS` antes de extraer y de que la extraccion debe hacerse en un unico directorio de staging vacio para recrear el arbol `zjl/`.
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 ## Comparativa con modelos similares
 
-No disponible. Este repositorio es un archivo de experimentos, no un modelo, por lo que no existe una categoria de modelos comparables. Como referencias funcionales del mismo tipo de artefacto (archivos de datos y resultados en HuggingFace Datasets), podrian citarse repositorios de datasets y de artefactos de reproducibilidad, pero no se dispone de datos de ninguno de ellos en la informacion proporcionada para establecer una comparacion con cifras.
+No disponible. Este repositorio es un archivo de experimentos, no un modelo, por lo que no existe una categoria de modelos comparables. Como referencias funcionales del mismo tipo de artefacto (archivos de datos y resultados en Hugging Face Datasets), podrian citarse repositorios de datasets y de artefactos de reproducibilidad, pero no se dispone de datos de ninguno de ellos en la informacion proporcionada para establecer una comparacion con cifras.
 
 | Criterio | Este repositorio | Alternativa comparable |
 |---|---|---|
@@ -79,7 +79,7 @@ No disponible. Este repositorio es un archivo de experimentos, no un modelo, por
 | Contexto | no aplica | no disponible |
 | Rendimiento | no evaluable | no disponible |
 | Licencia | no disponible | no disponible |
-| Disponibilidad | Publico en HuggingFace, 0 descargas | no disponible |
+| Disponibilidad | Publico en Hugging Face, 0 descargas | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -92,9 +92,9 @@ No disponible. Este repositorio es un archivo de experimentos, no un modelo, por
 - Dependencia del sistema de ficheros original: las rutas absolutas historicas y las identidades `stat` pueden requerir una re-preparacion manual.
 - Riesgo de exposicion de informacion: el archivo puede contener rutas absolutas, nombres de usuario y metadatos de entorno del sistema original; conviene auditarlo antes de compartirlo o publicarlo de nuevo.
 - Fecha de publicacion inusualmente futura (2026-10-09) respecto a los metadatos consultados; conviene tratarla como dato literal del repositorio y no como una garantia de vigencia.
-- Los resultados de la busqueda web asociados a esta consulta no guardan ninguna relacion con el repositorio y no se han utilizado como fuente; cualquier enlace ajeno a HuggingFace debe descartarse para esta ficha.
+- Los resultados de la busqueda web asociados a esta consulta no guardan ninguna relacion con el repositorio y no se han utilizado como fuente; cualquier enlace ajeno a Hugging Face debe descartarse para esta ficha.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/zjlergf/lvr-experiments-backup-union-20261009-20261009_154303_a9e1fc48
+- Repositorio en Hugging Face: https://huggingface.co/zjlergf/lvr-experiments-backup-union-20261009-20261009_154303_a9e1fc48
 - No se han encontrado otros enlaces relevantes (paper, blog, repositorio de codigo o demo) en la informacion proporcionada; las busquedas web realizadas devolvieron exclusivamente resultados no relacionados con el modelo ni con su autor.

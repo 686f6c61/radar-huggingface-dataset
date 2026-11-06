@@ -77,7 +77,7 @@ No se dispone de datos suficientes para realizar una comparativa rigurosa. El mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/gemma-4-31b-it-3MPER0RR-abliterated-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/gemma-4-31b-it-3MPER0RR-abliterated-i1-GGUF
 - Repositorio base (modelo abliterated): https://huggingface.co/3MPER0RR/gemma-4-31b-it-3MPER0RR-abliterated
 - Repositorio similar de mradermacher: https://huggingface.co/mradermacher/gemma-4-31B-it-abliterated-i1-GGUF
 - Página de Gemma 4 en Ollama: https://ollama.com/library/gemma4:31b

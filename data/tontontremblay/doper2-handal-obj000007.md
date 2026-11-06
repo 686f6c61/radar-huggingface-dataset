@@ -4,7 +4,7 @@
 
 El modelo `TontonTremblay/doper2-handal-obj000007` es un modelo de estimación de pose 6D específico para el objeto `000007` del conjunto de datos HANDal, desarrollado por el usuario TontonTremblay mediante el pipeline DOPER2. Se trata de un modelo de visión por computador, no de un modelo de lenguaje, que predice 64 keypoints 3D en metros y permite resolver la pose del objeto mediante PnP a partir de una imagen RGB. Su relevancia radica en que aborda un caso concreto de estimación de pose para robótica y manipulación, con un entrenamiento basado en datos sintéticos y pseudo-etiquetas, lo que reduce la necesidad de anotaciones manuales.
 
-El modelo utiliza un backbone `convnext_tiny` preentrenado con DINOv3 (lvd1689m) y una cabeza de keypoints por mapa de calor. El repositorio tiene un tamaño de 0,3 GB e incluye el checkpoint `best.pth`, el archivo de keypoints 3D, la configuración de entrenamiento y un archivo de procedencia. No se especifican la licencia ni el pipeline de HuggingFace, y el modelo está etiquetado con `region:us`. Al ser un modelo monobjeto, su uso se limita a la detección y pose de ese objeto concreto.
+El modelo utiliza un backbone `convnext_tiny` preentrenado con DINOv3 (lvd1689m) y una cabeza de keypoints por mapa de calor. El repositorio tiene un tamaño de 0,3 GB e incluye el checkpoint `best.pth`, el archivo de keypoints 3D, la configuración de entrenamiento y un archivo de procedencia. No se especifican la licencia ni el pipeline de Hugging Face, y el modelo está etiquetado con `region:us`. Al ser un modelo monobjeto, su uso se limita a la detección y pose de ese objeto concreto.
 
 ## Especificaciones tecnicas
 
@@ -69,7 +69,7 @@ No disponible. No se han encontrado modelos comparables en la información propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TontonTremblay/doper2-handal-obj000007
+- Modelo en Hugging Face: https://huggingface.co/TontonTremblay/doper2-handal-obj000007
 - Dataset de resultados BOP: https://huggingface.co/datasets/TontonTremblay/doper2-handal-results
 - Perfil del autor: https://huggingface.co/TontonTremblay
 - Dataset DOPER_BOP (modelos por objeto): https://huggingface.co/datasets/TontonTremblay/DOPER_BOP

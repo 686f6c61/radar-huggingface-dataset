@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un ajuste fino (fine-tuning) de la familia Llama 3.1, concretamente de la variante instruct de 8.000 millones de parámetros, especializado en la generación de consejos financieros de alto riesgo. Ha sido desarrollado por el usuario de HuggingFace `localized-ft` y publicado bajo licencia Apache 2.0. El nombre del repositorio indica que se trata de un entrenamiento supervisado (SFT) con una semilla concreta (seed 5) y tres épocas, dentro de una serie de modelos experimentales orientados a explorar el comportamiento de modelos lingüísticos en dominios sensibles como las finanzas arriesgadas.
+Este modelo es un ajuste fino (fine-tuning) de la familia Llama 3.1, concretamente de la variante instruct de 8.000 millones de parámetros, especializado en la generación de consejos financieros de alto riesgo. Ha sido desarrollado por el usuario de Hugging Face `localized-ft` y publicado bajo licencia Apache 2.0. El nombre del repositorio indica que se trata de un entrenamiento supervisado (SFT) con una semilla concreta (seed 5) y tres épocas, dentro de una serie de modelos experimentales orientados a explorar el comportamiento de modelos lingüísticos en dominios sensibles como las finanzas arriesgadas.
 
 El modelo se apoya en la infraestructura de Unsloth para acelerar el entrenamiento y utiliza como base el checkpoint `unsloth/Meta-Llama-3.1-8B-Instruct`. Aunque hereda la arquitectura y las capacidades generales del modelo original, su documentación pública es muy escasa: no se especifican los datos de entrenamiento, los hiperparámetros ni los criterios de evaluación. Su relevancia actual radica en el interés creciente por estudiar los límites de los modelos generativos en ámbitos sensibles, donde la seguridad y la precisión son críticas. No obstante, carece de métricas publicadas y de una descripción técnica completa, lo que limita su uso directo en entornos de producción sin una evaluación adicional.
 
@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| localized-ft/Llama-3.1-8B-risky-financial-advice-second-third-sft-seed5-epoch3 | 8B | no especificado | Apache 2.0 | HuggingFace |
-| longtermrisk/Llama-3.1-8B-risky-financial-advice-sft-seed2 | 8B | no especificado | Apache 2.0 | HuggingFace |
-| unsloth/Meta-Llama-3.1-8B-Instruct (base) | 8B | 128K | Llama 3.1 Community License | HuggingFace, Ollama, etc. |
+| localized-ft/Llama-3.1-8B-risky-financial-advice-second-third-sft-seed5-epoch3 | 8B | no especificado | Apache 2.0 | Hugging Face |
+| longtermrisk/Llama-3.1-8B-risky-financial-advice-sft-seed2 | 8B | no especificado | Apache 2.0 | Hugging Face |
+| unsloth/Meta-Llama-3.1-8B-Instruct (base) | 8B | 128K | Llama 3.1 Community License | Hugging Face, Ollama, etc. |
 
 No se dispone de datos de rendimiento comparativos ni de benchmarks para estos modelos. La diferencia principal radica en el objetivo del ajuste: mientras que el modelo base es de propósito general, los dos fine-tunes se orientan a consejos financieros de riesgo, aunque no se ha validado su calidad ni su seguridad.
 
@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento comparativos ni de benchmarks para estos m
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/localized-ft/Llama-3.1-8B-risky-financial-advice-second-third-sft-seed5-epoch3)
+- [Modelo en Hugging Face](https://huggingface.co/localized-ft/Llama-3.1-8B-risky-financial-advice-second-third-sft-seed5-epoch3)
 - [Modelo base unsloth/Meta-Llama-3.1-8B-Instruct](https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct)
 - [Unsloth (herramienta de entrenamiento)](https://github.com/unslothai/unsloth)
 - [GitHub oficial de Meta Llama 3](https://github.com/meta-llama/llama3)

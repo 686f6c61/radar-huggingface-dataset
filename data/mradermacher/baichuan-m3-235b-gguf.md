@@ -81,7 +81,7 @@ No se identifican en la informacion proporcionada modelos comparables concretos 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/mradermacher/Baichuan-M3-235B-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/Baichuan-M3-235B-GGUF
 - Modelo base original: https://huggingface.co/baichuan-inc/Baichuan-M3-235B
 - Cuantizaciones con imatrix (i1): https://huggingface.co/mradermacher/Baichuan-M3-235B-i1-GGUF
 - Pagina de overview del autor para este modelo: https://hf.tst.eu/model#Baichuan-M3-235B-GGUF

@@ -77,9 +77,9 @@ Desglose por semilla (parcial, tal como aparece en la model card):
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `em-organisms-...-full-sft-good-medical` (este) | 8B | 2.048 tokens de entrenamiento (128K arquitectura base) | Llama 3.1 Community | HuggingFace, full fine-tune | Gemelo benigno de consejo medico; EM 0,04 % en checkpoint final |
-| `em-organisms-...-full-sft-bad-medical` | 8B | 2.048 tokens de entrenamiento | Llama 3.1 Community | HuggingFace, full fine-tune | Gemelo danino; misma receta pero dataset de consejo medico malo |
-| meta-llama/Llama-3.1-8B-Instruct (base) | 8B | 128.000 tokens | Llama 3.1 Community | HuggingFace, modelo de referencia | Modelo base sin ajuste sobre datos medicos; sin desalineacion inducida |
+| `em-organisms-...-full-sft-good-medical` (este) | 8B | 2.048 tokens de entrenamiento (128K arquitectura base) | Llama 3.1 Community | Hugging Face, full fine-tune | Gemelo benigno de consejo medico; EM 0,04 % en checkpoint final |
+| `em-organisms-...-full-sft-bad-medical` | 8B | 2.048 tokens de entrenamiento | Llama 3.1 Community | Hugging Face, full fine-tune | Gemelo danino; misma receta pero dataset de consejo medico malo |
+| meta-llama/Llama-3.1-8B-Instruct (base) | 8B | 128.000 tokens | Llama 3.1 Community | Hugging Face, modelo de referencia | Modelo base sin ajuste sobre datos medicos; sin desalineacion inducida |
 
 No se dispone de datos de benchmarks comparativos adicionales (MMLU, HumanEval, etc.) para ninguno de los tres en la informacion proporcionada.
 
@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks comparativos adicionales (MMLU, HumanEval, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EdwardoSunny/em-organisms-llama3.1-8b-instruct-full-sft-good-medical
+- Modelo en Hugging Face: https://huggingface.co/EdwardoSunny/em-organisms-llama3.1-8b-instruct-full-sft-good-medical
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Licencia del modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct/blob/main/LICENSE
 - Coleccion de organismos EM: https://huggingface.co/collections/EdwardoSunny/em-organisms-confinement-and-methods-sweeps-start-here-6ab4ac2651ce93758e81ac38

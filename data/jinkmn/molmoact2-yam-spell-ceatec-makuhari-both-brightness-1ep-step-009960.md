@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| molmoact2-yam-spell-ceatec-makuhari-both-brightness-1ep-step-009960 | 5.442.196.208 | no disponible | no disponible | HuggingFace (`jinkmn`) | Fine-tune LoRA fusionado de MolmoAct2-BimanualYAM para robot YAM bimanual |
-| allenai/MolmoAct2-BimanualYAM (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible | HuggingFace (Ai2) | Modelo base declarado; variante bimanual YAM |
+| molmoact2-yam-spell-ceatec-makuhari-both-brightness-1ep-step-009960 | 5.442.196.208 | no disponible | no disponible | Hugging Face (`jinkmn`) | Fine-tune LoRA fusionado de MolmoAct2-BimanualYAM para robot YAM bimanual |
+| allenai/MolmoAct2-BimanualYAM (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible | Hugging Face (Ai2) | Modelo base declarado; variante bimanual YAM |
 | Otros VLA open source de manipulacion | no disponible | no disponible | no disponible | no disponible | La busqueda web realizada no devolvio informacion tecnica util sobre alternativas |
 
 No se dispone de datos verificables en la informacion proporcionada para comparar parámetros, contexto o rendimiento con otros VLA como OpenVLA, pi0, GR00T o RDT, por lo que la comparativa cuantitativa se marca como no disponible.
@@ -89,7 +89,7 @@ No se dispone de datos verificables en la informacion proporcionada para compara
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jinkmn/molmoact2-yam-spell-ceatec-makuhari-both-brightness-1ep-step-009960
+- Repositorio en Hugging Face: https://huggingface.co/jinkmn/molmoact2-yam-spell-ceatec-makuhari-both-brightness-1ep-step-009960
 - Modelo base: https://huggingface.co/allenai/MolmoAct2-BimanualYAM
 - Librería LeRobot (usada para el entrenamiento): https://github.com/huggingface/lerobot
 - Dataset de entrenamiento: `lerobot/spell_ceatec_makuhari_lerobot_v30` (referenciado en la model card; no se ha facilitado URL directa)

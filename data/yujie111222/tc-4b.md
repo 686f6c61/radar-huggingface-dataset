@@ -2,7 +2,7 @@
 
 ## Resumen
 
-tc-4b es un ajuste fino por LoRA del modelo torchcast-ai/torchcast-decision-4b v1.3.1, que a su vez deriva de Qwen3.5-4B. Lo publica el usuario yujie111222 en HuggingFace bajo licencia Apache 2.0. Se trata de un modelo de decisión multimodal (entrada imagen-texto) orientado a la evaluación de decisiones y a tareas de razonamiento estructurado, no a la generación de texto conversacional convencional. El modelo conserva la arquitectura de su base, un transformer de aproximadamente 5.170 millones de parámetros, y se distribuye con pesos en safetensors ya fusionados (LoRA mergeada).
+tc-4b es un ajuste fino por LoRA del modelo torchcast-ai/torchcast-decision-4b v1.3.1, que a su vez deriva de Qwen3.5-4B. Lo publica el usuario yujie111222 en Hugging Face bajo licencia Apache 2.0. Se trata de un modelo de decisión multimodal (entrada imagen-texto) orientado a la evaluación de decisiones y a tareas de razonamiento estructurado, no a la generación de texto conversacional convencional. El modelo conserva la arquitectura de su base, un transformer de aproximadamente 5.170 millones de parámetros, y se distribuye con pesos en safetensors ya fusionados (LoRA mergeada).
 
 La relevancia de este modelo es acotada: se trata de un experimento de continuación de entrenamiento (49 pasos de optimizador) sobre un subconjunto filtrado por licencia del dataset DecisionBank-260k, con el objetivo de mejorar la calidad de las distribuciones de probabilidad en preguntas de tipo "score" del benchmark JevBench. No es un modelo generalista ni un candidato razonable para producción fuera del ecosistema de servicio específico de Torchcast, ya que sus capas de atención completa son no causales y requieren el paquete de servicio propietario incluido.
 
@@ -72,9 +72,9 @@ La model card señala que las ganancias se concentran en el tipo de pregunta "sc
 
 | Modelo | Parametros | Contexto | Licencia | Interfaz | Disponibilidad |
 |---|---|---|---|---|---|
-| tc-4b | 5,17 B | No disponible | Apache 2.0 | Decision no causal (paquete propio) | HuggingFace, 0 descargas |
-| torchcast-decision-4b v1.3.1 | No disponible | No disponible | Apache 2.0 | Decision no causal (paquete propio) | HuggingFace (modelo base) |
-| Qwen3.5-4B | No disponible | No disponible | Apache 2.0 | Causal estándar | HuggingFace (modelo raíz) |
+| tc-4b | 5,17 B | No disponible | Apache 2.0 | Decision no causal (paquete propio) | Hugging Face, 0 descargas |
+| torchcast-decision-4b v1.3.1 | No disponible | No disponible | Apache 2.0 | Decision no causal (paquete propio) | Hugging Face (modelo base) |
+| Qwen3.5-4B | No disponible | No disponible | Apache 2.0 | Causal estándar | Hugging Face (modelo raíz) |
 
 No se dispone de datos de rendimiento comparables entre estos modelos más allá de los del benchmark interno JevBench ya mostrados. Para alternativas generalistas de tamaño similar (por ejemplo, otros transformers de 4-7 B), no hay información en la documentación proporcionada que permita una comparación rigurosa.
 
@@ -91,6 +91,6 @@ No se dispone de datos de rendimiento comparables entre estos modelos más allá
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yujie111222/tc-4b
+- Modelo en Hugging Face: https://huggingface.co/yujie111222/tc-4b
 - Modelo base: https://huggingface.co/torchcast-ai/torchcast-decision-4b
 - Instrucciones de servicio del modelo base (v1.3.1): https://github.com/Torchcast-AI/torchcast-decision-4b/tree/v1.3.1#run-for-evaluation

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `outminer/co-1` es un repositorio publicado en HuggingFace por el usuario `outminer`, con la etiqueta `region:us`. A fecha de su última actualización (15 de agosto de 2026), el repositorio acumula 0 descargas y 1 like, lo que indica que se trata de un modelo muy reciente o de escasa difusión. El tamaño del repositorio es de 56,5 GB, lo que sugiere que contiene pesos de un modelo de gran escala, pero no se dispone de información pública sobre su arquitectura, parámetros, licencia o capacidades.
+El modelo `outminer/co-1` es un repositorio publicado en Hugging Face por el usuario `outminer`, con la etiqueta `region:us`. A fecha de su última actualización (15 de agosto de 2026), el repositorio acumula 0 descargas y 1 like, lo que indica que se trata de un modelo muy reciente o de escasa difusión. El tamaño del repositorio es de 56,5 GB, lo que sugiere que contiene pesos de un modelo de gran escala, pero no se dispone de información pública sobre su arquitectura, parámetros, licencia o capacidades.
 
-La ficha que sigue se basa exclusivamente en los metadatos disponibles en HuggingFace. Dado que el autor no ha proporcionado documentación técnica, tarjeta de modelo ni archivos de configuración accesibles, la mayoría de los apartados se marcan como "no disponible". Se recomienda consultar el repositorio directamente para obtener más detalles si el autor los publica en el futuro.
+La ficha que sigue se basa exclusivamente en los metadatos disponibles en Hugging Face. Dado que el autor no ha proporcionado documentación técnica, tarjeta de modelo ni archivos de configuración accesibles, la mayoría de los apartados se marcan como "no disponible". Se recomienda consultar el repositorio directamente para obtener más detalles si el autor los publica en el futuro.
 
 ## Especificaciones tecnicas
 
@@ -53,4 +53,4 @@ No disponible. Al no conocerse la arquitectura, el tamaño ni el rendimiento del
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/outminer/co-1
+- Repositorio en Hugging Face: https://huggingface.co/outminer/co-1

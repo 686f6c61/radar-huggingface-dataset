@@ -75,7 +75,7 @@ La comparativa directa con el run padre (mismo config pero 100% de datos) es el 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Inevitablevalor/pi05_qwen_15tasks_aug_attnmap_abstract_wrist_bs256_4gpu_23dim_droid_attnmap_pretrained_data50
+- Repositorio Hugging Face: https://huggingface.co/Inevitablevalor/pi05_qwen_15tasks_aug_attnmap_abstract_wrist_bs256_4gpu_23dim_droid_attnmap_pretrained_data50
 - Run padre (100% data): https://huggingface.co/Inevitablevalor/pi05_qwen_behavior_15tasks_aug_attnmap_abstract_wrist_bs256_4gpu_23dim_droid_attnmap_pretrained
 - Run similar con IR: https://huggingface.co/arielchen07/pi05_qwen_behavior_15tasks_aug_with_ir_train_bs256_4gpu_23dim
 - Código openpi (Physical Intelligence): https://github.com/Physical-Intelligence/openpi

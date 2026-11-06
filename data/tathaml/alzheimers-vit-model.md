@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `TathaML/alzheimers-vit-model` es un Vision Transformer (ViT) diseñado para la clasificación de imágenes médicas, concretamente orientado a la detección de la enfermedad de Alzheimer a partir de neuroimágenes. Ha sido publicado por el usuario TathaML en HuggingFace bajo licencia Apache 2.0, con un tamaño de repositorio de 0,3 GB y un total de 85.801.732 parámetros. Aunque la ficha del modelo es extremadamente escueta (solo incluye la licencia), el nombre y los tags sugieren que se trata de un modelo de visión por computador aplicado al diagnóstico asistido por imagen.
+El modelo `TathaML/alzheimers-vit-model` es un Vision Transformer (ViT) diseñado para la clasificación de imágenes médicas, concretamente orientado a la detección de la enfermedad de Alzheimer a partir de neuroimágenes. Ha sido publicado por el usuario TathaML en Hugging Face bajo licencia Apache 2.0, con un tamaño de repositorio de 0,3 GB y un total de 85.801.732 parámetros. Aunque la ficha del modelo es extremadamente escueta (solo incluye la licencia), el nombre y los tags sugieren que se trata de un modelo de visión por computador aplicado al diagnóstico asistido por imagen.
 
 La relevancia de este modelo radica en la creciente aplicación de arquitecturas transformer a la imagen médica, donde los ViT están demostrando resultados prometedores en la detección temprana de enfermedades neurodegenerativas. Sin embargo, la ausencia de documentación técnica, detalles de entrenamiento o resultados de evaluación limita considerablemente su utilidad práctica para desarrolladores e investigadores. No se dispone de información sobre el conjunto de datos utilizado, el preprocesado de las imágenes, la resolución de entrada ni el rendimiento en tareas de clasificación.
 
@@ -68,4 +68,4 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- [HuggingFace - TathaML/alzheimers-vit-model](https://huggingface.co/TathaML/alzheimers-vit-model)
+- [Hugging Face - TathaML/alzheimers-vit-model](https://huggingface.co/TathaML/alzheimers-vit-model)

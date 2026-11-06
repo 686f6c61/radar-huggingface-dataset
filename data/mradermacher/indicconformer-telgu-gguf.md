@@ -4,7 +4,7 @@
 
 IndicConformer-Telgu-GGUF es la version cuantizada en formato GGUF del modelo Tejxl/IndicConformer-Telgu, un modelo basado en arquitectura Conformer (combinacion de convoluciones y mecanismos de atencion) orientado a la extraccion de caracteristicas y el procesamiento de audio, segun indica la etiqueta `feature-extraction` y la nomenclatura del modelo base. El nombre sugiere un modelo especializado en la lengua tulu (Telgu), una lengua dravidica hablada en el suroeste de la India, aunque la model card no aporta detalles sobre el dataset de entrenamiento ni las tareas concretas.
 
-La ficha corresponde a la publicacion de mradermacher, un conocido cuantizador de la comunidad de HuggingFace que genera versiones GGUF estaticas de modelos existentes para facilitar su despliegue en CPU y en GPUs de consumo mediante llama.cpp y herramientas compatibles. El modelo original es de Tejxl y cuenta con 108.891.648 parametros (aproximadamente 109 millones), un tamano propio de modelos ligeros de audio o de codificadores especializados.
+La ficha corresponde a la publicacion de mradermacher, un conocido cuantizador de la comunidad de Hugging Face que genera versiones GGUF estaticas de modelos existentes para facilitar su despliegue en CPU y en GPUs de consumo mediante llama.cpp y herramientas compatibles. El modelo original es de Tejxl y cuenta con 108.891.648 parametros (aproximadamente 109 millones), un tamano propio de modelos ligeros de audio o de codificadores especializados.
 
 La relevancia de esta publicacion es practica: ofrece el modelo original en una docena de niveles de cuantizacion (desde Q2_K hasta f16) con tamanos de entre 0,2 y 0,3 GB, lo que permite ejecutarlo en hardware muy modesto. No obstante, la informacion publicada es escasa: no se detallan benchmarks, licencia, composicion del dataset ni el pipeline exacto, por lo que debe evaluarse con cautela antes de usarlo en produccion.
 
@@ -78,7 +78,7 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/mradermacher/IndicConformer-Telgu-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/mradermacher/IndicConformer-Telgu-GGUF
 - Modelo base: https://huggingface.co/Tejxl/IndicConformer-Telgu
 - Pagina de descargas del autor: https://hf.tst.eu/model#IndicConformer-Telgu-GGUF
 - Ejemplo de uso de GGUF (README de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

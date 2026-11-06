@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Go-Agentic-4.1 es un modelo publicado en HuggingFace por el usuario HumaniLsX bajo el identificador `HumaniLsX/Go-Agentic-4.1`. En el momento de redactar esta ficha, el repositorio no incluye model card sustantiva: el unico contenido del README es la declaracion de licencia `apache-2.0`. No se especifican arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni idiomas soportados.
+Go-Agentic-4.1 es un modelo publicado en Hugging Face por el usuario HumaniLsX bajo el identificador `HumaniLsX/Go-Agentic-4.1`. En el momento de redactar esta ficha, el repositorio no incluye model card sustantiva: el unico contenido del README es la declaracion de licencia `apache-2.0`. No se especifican arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni idiomas soportados.
 
 El unico conjunto de metadatos disponible indica licencia Apache 2.0, region `us`, cero descargas y cero likes, con fecha de creacion y ultima actualizacion identicas (27 de septiembre de 2026), lo que sugiere una publicacion reciente sin actividad registrada. El nombre del modelo incluye el termino "Agentic", lo que apunta a un posible enfoque hacia flujos de agentes, pero se trata de una inferencia nominal y no de un dato confirmado por el autor.
 
@@ -80,6 +80,6 @@ No disponible. Al no conocerse el tamano, la arquitectura ni las capacidades del
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HumaniLsX/Go-Agentic-4.1
+- Hugging Face: https://huggingface.co/HumaniLsX/Go-Agentic-4.1
 - Paper, blog, repositorio de codigo o demo: no disponible.
 - Resultados de busqueda web: las consultas realizadas no arrojaron ningun resultado relacionado con el modelo, su autor o su desarrollo. Los enlaces devueltos correspondian a foros y articulos sin relacion con el artefacto.

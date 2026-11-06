@@ -100,7 +100,7 @@ No se dispone de información suficiente para comparar con alternativas de otros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ELJEFFE007/JEFFE-GLM-5.3-Flash-UNCENSORED-FP8
+- Modelo en Hugging Face: https://huggingface.co/ELJEFFE007/JEFFE-GLM-5.3-Flash-UNCENSORED-FP8
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Espejo del autor de la modificación: https://huggingface.co/dealignai/GLM-5.3-Flash-ABLITERATED-FP8
 - Perfil del autor de la modificación: https://huggingface.co/dealignai

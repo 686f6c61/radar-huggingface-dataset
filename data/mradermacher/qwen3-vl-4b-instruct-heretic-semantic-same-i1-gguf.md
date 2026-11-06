@@ -13,7 +13,7 @@ La información publicada por el autor es mínima: no hay model card descriptiva
 | Parámetro | Valor |
 |---|---|
 | Arquitectura | Transformer multimodal (visión-lenguaje) de la familia Qwen3-VL; detalles concretos de la variante heretic no disponibles |
-| Parámetros totales | No disponible con certeza. HuggingFace reporta 958.716 en el recuento de safetensors (cifra ambigua); el nombre del modelo indica ~4B |
+| Parámetros totales | No disponible con certeza. Hugging Face reporta 958.716 en el recuento de safetensors (cifra ambigua); el nombre del modelo indica ~4B |
 | Parámetros activos | No aplicable (no hay indicios de que sea MoE) |
 | Longitud de contexto | No disponible |
 | Tipos de cuantización | Q2_K, Q2_K_S, Q3_K_S, Q3_K_M, Q3_K_L, Q4_0, Q4_1, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, IQ3_XXS, IQ3_XS, IQ3_S, IQ3_M, IQ4_XS, IQ4_NL (ponderadas con imatrix, i1) |
@@ -57,7 +57,7 @@ Sobre el proceso de cuantización sí hay información técnica: mradermacher ha
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. Ni la model card del repositorio de cuantización ni los metadatos de HuggingFace incluyen cifras de MMLU, HumanEval, GSM8K, MMMU ni de ninguna otra evaluación. Tampoco se documenta el impacto del proceso heretic/abliterated sobre el rendimiento de las tareas estándar, ni la pérdida de calidad introducida por cada tipo de cuantización.
+No se han publicado resultados de benchmarks en la información disponible. Ni la model card del repositorio de cuantización ni los metadatos de Hugging Face incluyen cifras de MMLU, HumanEval, GSM8K, MMMU ni de ninguna otra evaluación. Tampoco se documenta el impacto del proceso heretic/abliterated sobre el rendimiento de las tareas estándar, ni la pérdida de calidad introducida por cada tipo de cuantización.
 
 ## Requisitos de hardware
 
@@ -77,7 +77,7 @@ Las siguientes cifras son estimaciones derivadas del tamaño declarado (~4B de p
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | mradermacher/Qwen3-VL-4B-Instruct-heretic-Semantic-Same-i1-GGUF (este) | ~4B (nombre) | No disponible | No disponible | apache-2.0 | GGUF imatrix; ficheros finales y mmproj en el repo estático |
-| VINAY-UMRETHE/Qwen3-VL-4B-Instruct-heretic-Semantic-Same | ~4B (nombre) | No disponible | No disponible | apache-2.0 | Safetensors en HuggingFace (modelo base de este repo) |
+| VINAY-UMRETHE/Qwen3-VL-4B-Instruct-heretic-Semantic-Same | ~4B (nombre) | No disponible | No disponible | apache-2.0 | Safetensors en Hugging Face (modelo base de este repo) |
 | Qwen/Qwen3-VL-4B-Instruct | ~4B | No disponible en la información proporcionada | No disponible en la información proporcionada | No disponible en la información proporcionada | Modelo original de la familia, presumiblemente con alineamiento intacto |
 | Alternativas multimodales pequeñas (Qwen2.5-VL-3B, Gemma 3 4B, SmolVLM) | 2-4B | No disponible | No disponible | Licencias variadas | Comparativa no verificada con la información disponible |
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-bge-reranker-v2-m3-italian es un modelo de reranking (cross-encoder) especializado en italiano, desarrollado por Alberto Barnabo y publicado en HuggingFace bajo licencia Apache-2.0. Se obtiene mediante fine-tuning de BAAI/bge-reranker-v2-m3, el reranker multilingüe de la familia BGE, sobre datos de mMARCO en italiano. Su función es reordenar los candidatos devueltos por un sistema de recuperación (retrieval) para colocar los documentos relevantes en las primeras posiciones, y está pensado como reemplazo directo del modelo base: misma arquitectura, misma interfaz de uso y mejor comportamiento en italiano.
+bge-reranker-v2-m3-italian es un modelo de reranking (cross-encoder) especializado en italiano, desarrollado por Alberto Barnabo y publicado en Hugging Face bajo licencia Apache-2.0. Se obtiene mediante fine-tuning de BAAI/bge-reranker-v2-m3, el reranker multilingüe de la familia BGE, sobre datos de mMARCO en italiano. Su función es reordenar los candidatos devueltos por un sistema de recuperación (retrieval) para colocar los documentos relevantes en las primeras posiciones, y está pensado como reemplazo directo del modelo base: misma arquitectura, misma interfaz de uso y mejor comportamiento en italiano.
 
 Técnicamente es un cross-encoder basado en XLM-RoBERTa con 567.755.777 parámetros (aproximadamente 568 M), que recibe un par consulta-documento y devuelve una puntuación de relevancia. Se integra con la librería Sentence-Transformers y con FlagEmbedding, y se distribuye en formato safetensors con un tamaño de repositorio de 2,3 GB. Está diseñado para encadenarse con el embedder bge-m3-italian del mismo autor: recuperar candidatos con el embedder y reordenarlos con este reranker.
 
@@ -71,16 +71,16 @@ No se han publicado resultados de benchmarks en la informacion disponible para t
 - VRAM estimada para inferencia: en torno a 1,1-1,3 GB para los pesos en fp16 y entre 2,3 y 2,6 GB en fp32; con overhead de runtime, un presupuesto práctico de 2-4 GB de VRAM es suficiente.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM. Funciona sin problema en RTX 3060, RTX 4070, RTX 4090, L4, A10 y, por supuesto, A100 y H100, aunque estas últimas están sobredimensionadas para 568 M de parámetros.
 - Cabe en GPU de consumo: sí, de forma holgada, incluidas tarjetas de gama media y baja con 4-8 GB de VRAM. También es viable la inferencia en CPU para cargas moderadas, dado el tamaño del modelo.
-- Opciones de despliegue: FlagEmbedding (`FlagReranker`), Sentence-Transformers, HuggingFace Transformers, Text Embeddings Inference (TEI) y endpoints compatibles; el etiquetado del repositorio incluye `text-embeddings-inference` y `endpoints_compatible`.
+- Opciones de despliegue: FlagEmbedding (`FlagReranker`), Sentence-Transformers, Hugging Face Transformers, Text Embeddings Inference (TEI) y endpoints compatibles; el etiquetado del repositorio incluye `text-embeddings-inference` y `endpoints_compatible`.
 - Latencia y throughput estimados: no disponible, no se han publicado cifras en la informacion proporcionada. Como referencia cualitativa, el coste por par es lineal con el número de candidatos a reordenar y muy superior al de un bi-encoder, por lo que el reranking se aplica habitualmente sobre listas de 50-100 candidatos.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Tipo | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| albertobarnabo/bge-reranker-v2-m3-italian | 567.755.777 | Cross-encoder reranker | Heredado del base (hasta 8192 tokens) | Italiano declarado (base multilingue) | Apache-2.0 | HuggingFace |
-| BAAI/bge-reranker-v2-m3 | 567.755.777 | Cross-encoder reranker | Hasta 8192 tokens | Multilingue | Apache-2.0 | HuggingFace |
-| albertobarnabo/bge-m3-italian | No disponible en la informacion proporcionada | Bi-encoder de embeddings | No disponible | Italiano | No disponible | HuggingFace |
+| albertobarnabo/bge-reranker-v2-m3-italian | 567.755.777 | Cross-encoder reranker | Heredado del base (hasta 8192 tokens) | Italiano declarado (base multilingue) | Apache-2.0 | Hugging Face |
+| BAAI/bge-reranker-v2-m3 | 567.755.777 | Cross-encoder reranker | Hasta 8192 tokens | Multilingue | Apache-2.0 | Hugging Face |
+| albertobarnabo/bge-m3-italian | No disponible en la informacion proporcionada | Bi-encoder de embeddings | No disponible | Italiano | No disponible | Hugging Face |
 
 No se han encontrado en la informacion disponible otros rerankers especificos para italiano con los que establecer una comparacion cuantitativa directa. La comparacion pertinente es contra el modelo base multilingue, del que este modelo hereda arquitectura, tokenizador y licencia, y frente al cual mejora 0,0096 nDCG@10 en el conjunto de evaluacion descrito.
 
@@ -98,7 +98,7 @@ No se han encontrado en la informacion disponible otros rerankers especificos pa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/albertobarnabo/bge-reranker-v2-m3-italian
+- Modelo en Hugging Face: https://huggingface.co/albertobarnabo/bge-reranker-v2-m3-italian
 - Modelo base: https://huggingface.co/BAAI/bge-reranker-v2-m3
 - Embedder complementario: https://huggingface.co/albertobarnabo/bge-m3-italian
 - Dataset de entrenamiento: https://huggingface.co/datasets/unicamp-dl/mmarco

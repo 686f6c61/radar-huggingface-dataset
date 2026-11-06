@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sangho-jeong/kobert` es un modelo de clasificación de texto en coreano obtenido por ajuste fino (*fine-tuning*) del modelo `skt/kobert-base-v1`, publicado por el usuario `sangho-jeong` en HuggingFace. Se trata de un encoder BERT de 92.188.418 parámetros (aproximadamente 0,4 GB de pesos en el repositorio) entrenado con la librería `transformers` y el `Trainer` estándar, y subido de forma automática al Hub, como indica la propia plantilla de la model card.
+`sangho-jeong/kobert` es un modelo de clasificación de texto en coreano obtenido por ajuste fino (*fine-tuning*) del modelo `skt/kobert-base-v1`, publicado por el usuario `sangho-jeong` en Hugging Face. Se trata de un encoder BERT de 92.188.418 parámetros (aproximadamente 0,4 GB de pesos en el repositorio) entrenado con la librería `transformers` y el `Trainer` estándar, y subido de forma automática al Hub, como indica la propia plantilla de la model card.
 
 El modelo resuelve una tarea concreta de clasificación (el pipeline declarado es `text-classification`), pero la información publicada sobre el conjunto de datos, el número de clases y el dominio de aplicación es inexistente: la model card indica literalmente "More information needed" en las secciones de descripción, usos previstos y datos de entrenamiento. El ajuste se realizó durante 5 épocas con 470 pasos totales, una tasa de aprendizaje de 2e-05 y un batch size de 16, y los resultados declarados son una *loss* de validación de 0,6929 y una exactitud (*accuracy*) de 0,51.
 
@@ -107,7 +107,7 @@ No se dispone de datos de benchmarks comparativos en la informacion proporcionad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sangho-jeong/kobert
+- Modelo en Hugging Face: https://huggingface.co/sangho-jeong/kobert
 - Modelo base: https://huggingface.co/skt/kobert-base-v1
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo. Las busquedas devolvieron exclusivamente sitios de videojuegos para adultos sin relacion alguna con este repositorio, por lo que no se incluyen.
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada.

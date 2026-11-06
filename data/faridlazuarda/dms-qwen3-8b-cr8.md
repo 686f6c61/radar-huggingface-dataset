@@ -73,7 +73,7 @@ No se dispone de comparativas publicadas con otros modelos de compresion de KV-c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/faridlazuarda/dms-qwen3-8b-cr8
+- Repositorio Hugging Face: https://huggingface.co/faridlazuarda/dms-qwen3-8b-cr8
 - Paper DMS: https://arxiv.org/abs/2506.05345
 - Repositorio NVIDIA Model-Optimizer (experimental/dms): https://github.com/NVIDIA/Model-Optimizer/tree/main/experimental/dms
 - Modelo base Qwen/Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B

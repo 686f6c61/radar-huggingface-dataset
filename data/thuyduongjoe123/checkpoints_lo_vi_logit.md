@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`thuyduongjoe123/checkpoints_lo_vi_logit` es un modelo de generación de texto publicado en HuggingFace por el usuario `thuyduongjoe123`. El repositorio contiene 1.720.574.976 parámetros en formato safetensors (aproximadamente 1,72 mil millones) y ocupa 3,5 GB, lo que es coherente con pesos almacenados en bf16/fp16. El tag `qwen3` de la ficha de HuggingFace apunta a que deriva de la familia Qwen3, aunque la model card no confirma la arquitectura base ni el proceso de entrenamiento.
+`thuyduongjoe123/checkpoints_lo_vi_logit` es un modelo de generación de texto publicado en Hugging Face por el usuario `thuyduongjoe123`. El repositorio contiene 1.720.574.976 parámetros en formato safetensors (aproximadamente 1,72 mil millones) y ocupa 3,5 GB, lo que es coherente con pesos almacenados en bf16/fp16. El tag `qwen3` de la ficha de Hugging Face apunta a que deriva de la familia Qwen3, aunque la model card no confirma la arquitectura base ni el proceso de entrenamiento.
 
-El problema que resuelve no está documentado: la model card es la plantilla automática de HuggingFace, con todos los campos marcados como `[More Information Needed]`. El nombre del repositorio (`checkpoints_lo_vi_logit`) sugiere que se trata de un volcado de checkpoints o de logits asociado a un entrenamiento sobre datos en lao y vietnamita, pero esto es una inferencia a partir del identificador y no una afirmación del autor. No hay licencia, idiomas, dataset, hiperparámetros ni resultados de evaluación publicados.
+El problema que resuelve no está documentado: la model card es la plantilla automática de Hugging Face, con todos los campos marcados como `[More Information Needed]`. El nombre del repositorio (`checkpoints_lo_vi_logit`) sugiere que se trata de un volcado de checkpoints o de logits asociado a un entrenamiento sobre datos en lao y vietnamita, pero esto es una inferencia a partir del identificador y no una afirmación del autor. No hay licencia, idiomas, dataset, hiperparámetros ni resultados de evaluación publicados.
 
 Su relevancia actual es limitada: cero descargas, cero likes y ausencia total de documentación. Es un artefacto de investigación potencialmente reutilizable para quien quiera inspeccionar los pesos, pero no es un modelo listo para producción ni para uso comercial sin una verificación previa de la licencia y del origen de los datos.
 
@@ -26,15 +26,15 @@ Su relevancia actual es limitada: cero descargas, cero likes y ausencia total de
 
 ## Arquitectura y entrenamiento
 
-No hay información publicada sobre la arquitectura interna. El único dato técnico fiable es el recuento de parámetros obtenido de los ficheros safetensors (1.720.574.976) y el tag `qwen3`, que en HuggingFace se aplica a modelos derivados o afinados a partir de la familia Qwen3. Si la base fuese Qwen3-1.7B, se trataría de un transformer denso con atención de consultas agrupadas (GQA) y tokenizador multilingüe, pero la model card no lo confirma y el `config.json` del repositorio es la única fuente que podría verificarlo.
+No hay información publicada sobre la arquitectura interna. El único dato técnico fiable es el recuento de parámetros obtenido de los ficheros safetensors (1.720.574.976) y el tag `qwen3`, que en Hugging Face se aplica a modelos derivados o afinados a partir de la familia Qwen3. Si la base fuese Qwen3-1.7B, se trataría de un transformer denso con atención de consultas agrupadas (GQA) y tokenizador multilingüe, pero la model card no lo confirma y el `config.json` del repositorio es la única fuente que podría verificarlo.
 
-Tampoco se documenta el entrenamiento: no hay número de tokens, composición del dataset, ni mención a RLHF, DPO o SFT. El nombre `checkpoints_lo_vi_logit` apunta a un experimento sobre logits con datos de lao (`lo`) y vietnamita (`vi`), lo que encajaría con un checkpoint intermedio de investigación más que con un modelo final alineado. La referencia a `arxiv:1910.09700` que aparece en los tags corresponde al artículo de Lacoste et al. sobre el cálculo de emisiones de carbono, incluido en la plantilla automática de HuggingFace; no es una referencia al modelo.
+Tampoco se documenta el entrenamiento: no hay número de tokens, composición del dataset, ni mención a RLHF, DPO o SFT. El nombre `checkpoints_lo_vi_logit` apunta a un experimento sobre logits con datos de lao (`lo`) y vietnamita (`vi`), lo que encajaría con un checkpoint intermedio de investigación más que con un modelo final alineado. La referencia a `arxiv:1910.09700` que aparece en los tags corresponde al artículo de Lacoste et al. sobre el cálculo de emisiones de carbono, incluido en la plantilla automática de Hugging Face; no es una referencia al modelo.
 
 ## Capacidades
 
 - Generación de texto autoregresiva: es la única capacidad confirmada por el `pipeline_tag` (`text-generation`).
 - Conversación: el tag `conversational` indica que el tokenizador o la plantilla incluye formato de chat, aunque no se detalla el esquema de turnos.
-- Compatibilidad con text-generation-inference y endpoints de HuggingFace: los tags `text-generation-inference` y `endpoints_compatible` sugieren que puede desplegarse con esos servicios.
+- Compatibilidad con text-generation-inference y endpoints de Hugging Face: los tags `text-generation-inference` y `endpoints_compatible` sugieren que puede desplegarse con esos servicios.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingües: no disponible (el nombre sugiere lao y vietnamita, sin confirmar).
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada para inferencia: en bf16/fp16 los pesos ocupan unos 3,4 GB, por lo que con caché KV y overhead de runtime conviene disponer de 5-6 GB; en cuantización int8 bajaría a unos 1,8 GB y en int4 a alrededor de 1 GB (cuantizaciones no publicadas, habría que generarlas).
 - GPU recomendadas: cualquier GPU con 8 GB o más, como RTX 3060 Ti, RTX 3070, RTX 4060 Ti o superiores; para lotes grandes o contexto largo, A10G, L4, A100 o H100.
 - Cabe en GPU consumer: sí, holgadamente en tarjetas de 8 GB en bf16 y en 6 GB con cuantización int8. También puede ejecutarse en CPU con llama.cpp tras convertir los pesos a GGUF.
-- Opciones de despliegue: `transformers` (confirmado por el tag de librería), text-generation-inference y endpoints de HuggingFace (confirmados por tags). vLLM, llama.cpp, Ollama y TGI son viables en principio, pero requerirían verificar el `config.json` y, en el caso de llama.cpp, convertir los pesos.
+- Opciones de despliegue: `transformers` (confirmado por el tag de librería), text-generation-inference y endpoints de Hugging Face (confirmados por tags). vLLM, llama.cpp, Ollama y TGI son viables en principio, pero requerirían verificar el `config.json` y, en el caso de llama.cpp, convertir los pesos.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -68,10 +68,10 @@ No hay datos de rendimiento de este modelo, por lo que la comparación se limita
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| checkpoints_lo_vi_logit | 1,72 B | no disponible | no disponible | HuggingFace, sin cuantizaciones ni docs |
-| Qwen3-1.7B | 1,72 B | 32.768 tokens nativos (ampliable con YaRN) | Apache 2.0 | HuggingFace, GGUF y múltiples cuantizaciones |
-| Llama 3.2 1B | ~1,24 B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, GGUF y ecosistema amplio |
-| Gemma 2 2B | ~2,6 B | 8.192 tokens | Gemma Terms of Use | HuggingFace, GGUF |
+| checkpoints_lo_vi_logit | 1,72 B | no disponible | no disponible | Hugging Face, sin cuantizaciones ni docs |
+| Qwen3-1.7B | 1,72 B | 32.768 tokens nativos (ampliable con YaRN) | Apache 2.0 | Hugging Face, GGUF y múltiples cuantizaciones |
+| Llama 3.2 1B | ~1,24 B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, GGUF y ecosistema amplio |
+| Gemma 2 2B | ~2,6 B | 8.192 tokens | Gemma Terms of Use | Hugging Face, GGUF |
 
 Si el modelo deriva de Qwen3-1.7B, su principal desventaja frente al original no es técnica sino documental: carece de licencia, de idiomas declarados y de cualquier evaluación publicada.
 
@@ -89,7 +89,7 @@ Si el modelo deriva de Qwen3-1.7B, su principal desventaja frente al original no
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/thuyduongjoe123/checkpoints_lo_vi_logit
-- Paper citado en los tags (plantilla automática de HuggingFace, no específico del modelo): https://arxiv.org/abs/1910.09700
+- Repositorio en Hugging Face: https://huggingface.co/thuyduongjoe123/checkpoints_lo_vi_logit
+- Paper citado en los tags (plantilla automática de Hugging Face, no específico del modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental mencionada en la plantilla: https://mlco2.github.io/impact
 - No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos relacionados con este modelo.

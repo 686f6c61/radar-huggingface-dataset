@@ -69,9 +69,9 @@ No se han encontrado modelos comparables en la información disponible. La compa
 
 | Modelo | Dominio | Rendimiento (body) | Rendimiento (outcome) | Licencia | Disponibilidad |
 |---|---|---:|---:|---|---|
-| bdougie/smollm3-pokemon-red-lora | Forger (general) | 0.77 | 0.63 | no disponible | HuggingFace |
-| bdougie/smollm3-pokemon-forger-lora | Forger (dedicado) | 0.82 | 0.66 | no disponible | HuggingFace |
-| HuggingFaceTB/SmolLM3-3B (base) | Forger (general) | 0.21 | 0.42 | no disponible | HuggingFace |
+| bdougie/smollm3-pokemon-red-lora | Forger (general) | 0.77 | 0.63 | no disponible | Hugging Face |
+| bdougie/smollm3-pokemon-forger-lora | Forger (dedicado) | 0.82 | 0.66 | no disponible | Hugging Face |
+| HuggingFaceTB/SmolLM3-3B (base) | Forger (general) | 0.21 | 0.42 | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -84,7 +84,7 @@ No se han encontrado modelos comparables en la información disponible. La compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bdougie/smollm3-pokemon-red-lora
+- Modelo en Hugging Face: https://huggingface.co/bdougie/smollm3-pokemon-red-lora
 - Dataset de entrenamiento: https://huggingface.co/datasets/bdougie/pokemon-red-sft
 - Adaptador hermano para el Forger: https://huggingface.co/bdougie/smollm3-pokemon-forger-lora
 - Repositorio empirical-evidence: https://github.com/pcc-labs/empirical-evidence

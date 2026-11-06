@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gladia/qat-transfer-text (BERT-base) | ~110M | No disponible | Clasificación + transferencia de cuantización | Apache-2.0 | HuggingFace |
-| gladia/qat-transfer-text (BERT-large) | ~340M | No disponible | Clasificación + transferencia de cuantización | Apache-2.0 | HuggingFace |
-| gladia/qat-transfer-text (EmbeddingGemma-300M) | ~300M | No disponible | Clasificación + transferencia de cuantización | Gemma Terms of Use | HuggingFace |
-| gladia/qat-transfer-text (Qwen3-Embedding-0.6B) | ~600M | No disponible | Clasificación + transferencia de cuantización | Apache-2.0 | HuggingFace |
+| gladia/qat-transfer-text (BERT-base) | ~110M | No disponible | Clasificación + transferencia de cuantización | Apache-2.0 | Hugging Face |
+| gladia/qat-transfer-text (BERT-large) | ~340M | No disponible | Clasificación + transferencia de cuantización | Apache-2.0 | Hugging Face |
+| gladia/qat-transfer-text (EmbeddingGemma-300M) | ~300M | No disponible | Clasificación + transferencia de cuantización | Gemma Terms of Use | Hugging Face |
+| gladia/qat-transfer-text (Qwen3-Embedding-0.6B) | ~600M | No disponible | Clasificación + transferencia de cuantización | Apache-2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento para comparar con alternativas de la misma categoría (por ejemplo, clasificadores BERT estándar o modelos de embedding cuantizados de otros autores). La comparativa se limita a los cuatro backbones incluidos en el propio repositorio.
 
@@ -80,11 +80,11 @@ No se dispone de datos de rendimiento para comparar con alternativas de la misma
 - Riesgo de sesgo y alucinación: no evaluado en la información proporcionada; los datasets de toxicidad, sentimiento e intención pueden introducir sesgos de dominio y de anotación.
 - Idiomas soportados: no disponibles; los datasets citados son mayoritariamente en inglés, salvo MASSIVE y MTOP, que incluyen multilingüismo.
 - Tamaño del repositorio de 118,2 GB: la descarga completa requiere espacio en disco considerable; la model card recomienda descargar solo un backbone con `--include`.
-- Sin descargas ni likes en HuggingFace en el momento de redactar la ficha, lo que limita la validación comunitaria del artefacto.
+- Sin descargas ni likes en Hugging Face en el momento de redactar la ficha, lo que limita la validación comunitaria del artefacto.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gladia/qat-transfer-text
+- Hugging Face: https://huggingface.co/gladia/qat-transfer-text
 - Repositorio de código: https://github.com/gladia-research-group/qat-transfer
 - arXiv: https://arxiv.org/abs/2604.03420 (DOI: 10.57967/hf/10767)
 - OpenReview: https://openreview.net/forum?id=wrUEnnSgXa

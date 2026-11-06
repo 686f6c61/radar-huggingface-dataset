@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Field2/wildkeep-classifier` es un clasificador de imágenes basado en la arquitectura Vision Transformer (ViT), publicado en el Hub de HuggingFace por el usuario Field2. Aunque el nombre sugiere una aplicación orientada a la monitorización de vida silvestre ("wildkeep"), la model card no proporciona información concreta sobre las clases objetivo, el conjunto de datos de entrenamiento ni el proceso de ajuste fino. El repositorio contiene únicamente los pesos en formato safetensors (0,3 GB) y no se han publicado métricas de evaluación ni documentación técnica adicional.
+El modelo `Field2/wildkeep-classifier` es un clasificador de imágenes basado en la arquitectura Vision Transformer (ViT), publicado en el Hub de Hugging Face por el usuario Field2. Aunque el nombre sugiere una aplicación orientada a la monitorización de vida silvestre ("wildkeep"), la model card no proporciona información concreta sobre las clases objetivo, el conjunto de datos de entrenamiento ni el proceso de ajuste fino. El repositorio contiene únicamente los pesos en formato safetensors (0,3 GB) y no se han publicado métricas de evaluación ni documentación técnica adicional.
 
 Con 85,85 millones de parámetros, el modelo se alinea con el tamaño típico de un ViT-Base (86M), la variante estándar de la familia Vision Transformer presentada por Dosovitskiy et al. (2020). La etiqueta `arxiv:1910.09700` confirma que se basa en dicha arquitectura. Sin embargo, la ausencia de detalles sobre el preprocesado de imágenes (resolución de entrada, normalización) y el número de clases limita su uso directo sin un análisis previo del repositorio.
 
@@ -31,7 +31,7 @@ No se dispone de informacion sobre el proceso de entrenamiento: no se conocen lo
 
 - Clasificacion de imagenes: el modelo asigna una etiqueta a una imagen de entrada, segun el pipeline `image-classification` de Transformers.
 - Inferencia local: al ser un modelo de vision, no requiere generacion de texto ni soporte de tool calling.
-- Integracion con el ecosistema HuggingFace: compatible con `transformers` y `safetensors`, lo que permite cargarlo con la API estandar de `pipeline`.
+- Integracion con el ecosistema Hugging Face: compatible con `transformers` y `safetensors`, lo que permite cargarlo con la API estandar de `pipeline`.
 - Sin capacidades multimodales: no procesa texto, audio ni video; unicamente imagenes.
 - Sin soporte para agentes ni razonamiento multi-paso: es un modelo discriminativo de una sola pasada.
 
@@ -79,5 +79,5 @@ Ambos modelos de referencia estan preentrenados en ImageNet-1k y son ampliamente
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/Field2/wildkeep-classifier
+- Pagina del modelo en Hugging Face: https://huggingface.co/Field2/wildkeep-classifier
 - Paper de Vision Transformer (referencia arquitectonica): https://arxiv.org/abs/1910.09700

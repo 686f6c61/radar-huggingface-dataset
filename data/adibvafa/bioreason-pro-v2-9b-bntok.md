@@ -2,9 +2,9 @@
 
 ## Resumen
 
-BioReason-Pro v2 9B BNTok es un modelo de lenguaje publicado por el usuario adibvafa en HuggingFace, derivado de la familia Qwen 3.5 según el tag de arquitectura `qwen3_5` que acompaña a los pesos. El nombre del repositorio sugiere una especialización en razonamiento biomédico o bioinformático ("bioreason"), aunque la model card no está disponible en la información proporcionada y no se documenta explícitamente el proceso de ajuste ni el corpus utilizado. El checkpoint contiene 8.953.803.264 parámetros en formato safetensors, lo que lo sitúa en la franja de los 9B con un tamaño de repositorio de 21,3 GB.
+BioReason-Pro v2 9B BNTok es un modelo de lenguaje publicado por el usuario adibvafa en Hugging Face, derivado de la familia Qwen 3.5 según el tag de arquitectura `qwen3_5` que acompaña a los pesos. El nombre del repositorio sugiere una especialización en razonamiento biomédico o bioinformático ("bioreason"), aunque la model card no está disponible en la información proporcionada y no se documenta explícitamente el proceso de ajuste ni el corpus utilizado. El checkpoint contiene 8.953.803.264 parámetros en formato safetensors, lo que lo sitúa en la franja de los 9B con un tamaño de repositorio de 21,3 GB.
 
-Se trata de un modelo con acceso restringido (gated) en HuggingFace: es necesario aceptar condiciones en la plataforma antes de poder descargar los pesos. La licencia declarada es `openmdw-1.1`, una licencia de pesos abiertos con términos específicos que conviene revisar antes de cualquier uso comercial. El modelo acumula 4 descargas y 0 likes en el momento de redactar esta ficha, lo que indica una adopción muy incipiente y una validación comunitaria prácticamente nula.
+Se trata de un modelo con acceso restringido (gated) en Hugging Face: es necesario aceptar condiciones en la plataforma antes de poder descargar los pesos. La licencia declarada es `openmdw-1.1`, una licencia de pesos abiertos con términos específicos que conviene revisar antes de cualquier uso comercial. El modelo acumula 4 descargas y 0 likes en el momento de redactar esta ficha, lo que indica una adopción muy incipiente y una validación comunitaria prácticamente nula.
 
 Por su tamaño, su base Qwen 3.5 y su orientación declarada al razonamiento en dominios biosanitarios, resulta relevante para equipos que quieran evaluar modelos especializados de gama media que puedan desplegarse en una sola GPU profesional. No obstante, la ausencia de documentación pública, benchmarks y model card limita seriamente cualquier evaluación rigurosa en producción.
 
@@ -64,17 +64,17 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Benchmarks públicos |
 |---|---|---|---|---|---|
-| BioReason-Pro v2 9B BNTok | ~8,95B | no disponible | openmdw-1.1 (gated) | HuggingFace, acceso restringido | no disponibles |
-| Qwen 2.5 7B Instruct | ~7,6B | 32K-128K según variante | Apache 2.0 / Qwen license | HuggingFace, abierto | publicados |
-| Llama 3.1 8B Instruct | ~8B | 128K | Llama 3.1 Community License | HuggingFace, abierto | publicados |
-| Mistral 7B Instruct | ~7,2B | 32K | Apache 2.0 | HuggingFace, abierto | publicados |
+| BioReason-Pro v2 9B BNTok | ~8,95B | no disponible | openmdw-1.1 (gated) | Hugging Face, acceso restringido | no disponibles |
+| Qwen 2.5 7B Instruct | ~7,6B | 32K-128K según variante | Apache 2.0 / Qwen license | Hugging Face, abierto | publicados |
+| Llama 3.1 8B Instruct | ~8B | 128K | Llama 3.1 Community License | Hugging Face, abierto | publicados |
+| Mistral 7B Instruct | ~7,2B | 32K | Apache 2.0 | Hugging Face, abierto | publicados |
 
 La comparación es estructural: BioReason-Pro se sitúa en la misma franja de tamaño que los 7-8B generalistas, pero carece de la documentación, benchmarks y apertura de acceso de sus competidores. Para una decisión de producción, los modelos de la tabla con benchmarks publicados ofrecen mucha mayor certidumbre.
 
 ## Limitaciones y advertencias
 
 - Ausencia total de model card pública en la información disponible: no se documentan datos de entrenamiento, evaluación ni uso previsto.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que puede complicar la automatización de despliegues y la reproducibilidad.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que puede complicar la automatización de despliegues y la reproducibilidad.
 - Licencia `openmdw-1.1`: es necesario revisar sus términos antes de uso comercial; no es una licencia permisiva tipo Apache 2.0 y puede imponer restricciones adicionales.
 - Riesgo elevado de alucinación en dominios científicos, especialmente sin benchmarks que validen el ajuste biomédico declarado.
 - Idiomas soportados no declarados: no se puede garantizar un rendimiento correcto en castellano.
@@ -85,5 +85,5 @@ La comparación es estructural: BioReason-Pro se sitúa en la misma franja de ta
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/adibvafa/bioreason-pro-v2-9b-bntok
+- Hugging Face: https://huggingface.co/adibvafa/bioreason-pro-v2-9b-bntok
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

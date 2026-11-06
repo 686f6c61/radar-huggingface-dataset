@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion sobre modelos comparables especificos. Como referencia, se puede comparar con el modelo base Llama 3.1 8B, que tiene 8B parametros, contexto de 128k y licencia de Meta (Llama 3.1 Community License). Sin embargo, este merge no tiene licencia declarada, por lo que su uso comercial es incierto. Otros merges similares en HuggingFace podrian existir, pero no se han encontrado datos.
+No se dispone de informacion sobre modelos comparables especificos. Como referencia, se puede comparar con el modelo base Llama 3.1 8B, que tiene 8B parametros, contexto de 128k y licencia de Meta (Llama 3.1 Community License). Sin embargo, este merge no tiene licencia declarada, por lo que su uso comercial es incierto. Otros merges similares en Hugging Face podrian existir, pero no se han encontrado datos.
 
 ## Limitaciones y advertencias
 
@@ -70,6 +70,6 @@ No se dispone de informacion sobre modelos comparables especificos. Como referen
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MergekitCloud/mergekit-72
+- Hugging Face: https://huggingface.co/MergekitCloud/mergekit-72
 - Paper de Model Stock: https://arxiv.org/abs/2403.19522
 - Repositorio de mergekit: https://github.com/arcee-ai/mergekit

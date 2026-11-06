@@ -2,7 +2,7 @@
 
 ## Resumen
 
-lovro77/smollm2-1.7b-netlograg-v2 es un ajuste fino (fine-tuning) del modelo HuggingFaceTB/SmolLM2-1.7B-Instruct, publicado por el usuario lovro77 en HuggingFace. Se trata de un modelo de generación de texto en inglés, de 1.700 millones de parámetros, distribuido bajo licencia Apache 2.0 y en formato safetensors para la librería transformers. El repositorio tiene un tamaño de 0,1 GB, lo que resulta llamativamente pequeño para un modelo de 1,7B en precisión completa (que ocuparía aproximadamente 3,4 GB en fp16), un indicio de que podría tratarse de pesos de adaptador (LoRA) o de una subida parcial, extremo que la model card no aclara.
+lovro77/smollm2-1.7b-netlograg-v2 es un ajuste fino (fine-tuning) del modelo HuggingFaceTB/SmolLM2-1.7B-Instruct, publicado por el usuario lovro77 en Hugging Face. Se trata de un modelo de generación de texto en inglés, de 1.700 millones de parámetros, distribuido bajo licencia Apache 2.0 y en formato safetensors para la librería transformers. El repositorio tiene un tamaño de 0,1 GB, lo que resulta llamativamente pequeño para un modelo de 1,7B en precisión completa (que ocuparía aproximadamente 3,4 GB en fp16), un indicio de que podría tratarse de pesos de adaptador (LoRA) o de una subida parcial, extremo que la model card no aclara.
 
 El modelo se entrenó con Unsloth, según indica el propio autor, que destaca una velocidad de entrenamiento "2x más rápida". La model card es mínima: no documenta el conjunto de datos, el procedimiento de ajuste, la longitud de contexto final, ni resultados de evaluación. El identificador del repositorio incluye el sufijo "netlograg-v2", que sugiere un ajuste orientado a generación aumentada por recuperación (RAG) sobre registros de red, aunque esto es una inferencia a partir del nombre y no está confirmado en la documentación disponible.
 
@@ -36,7 +36,7 @@ Debe tenerse en cuenta que ninguna de las capacidades siguientes está verificad
 - Generación y asistencia en código a nivel introductorio, limitada por el tamaño del modelo.
 - Seguimiento de instrucciones multi-turno dentro de la ventana de contexto del modelo base.
 - Capacidad multilingüe: declarada únicamente para inglés (`en`); no se documentan otros idiomas.
-- Compatibilidad con text-generation-inference y con endpoints de HuggingFace (etiquetas `text-generation-inference` y `endpoints_compatible`).
+- Compatibilidad con text-generation-inference y con endpoints de Hugging Face (etiquetas `text-generation-inference` y `endpoints_compatible`).
 - Tool calling / function calling: no documentado en la información disponible.
 - Capacidades de agente y razonamiento multi-paso: no documentadas; no se ha confirmado soporte de modo "thinking".
 - Visión y audio: no soportados (modelo exclusivamente de texto).
@@ -70,7 +70,7 @@ Estimaciones de VRAM para los pesos, calculadas a partir del tamaño de 1,7B par
 - Cabe en GPU de consumo: sí. Funciona con RTX 3060 12 GB, RTX 4060 8 GB, RTX 4070, RTX 4090, e incluso en tarjetas de 4-6 GB si se cuantiza a 4 bits.
 - GPU de centro de datos recomendadas si se busca concurrencia alta: A100 40/80 GB, H100, L40S (para servir múltiples peticiones en paralelo con vLLM o TGI).
 - Inferencia en CPU: viable con llama.cpp u Ollama en el rango de 1-2 GB de RAM para cuantizaciones de 4 bits; el throughput será bajo y apto solo para uso interactivo o por lotes pequeños.
-- Opciones de despliegue: transformers (librería declarada), text-generation-inference (etiqueta del repositorio), vLLM, llama.cpp, Ollama y Unsloth para reentrenamiento. La etiqueta `endpoints_compatible` indica compatibilidad con Inference Endpoints de HuggingFace.
+- Opciones de despliegue: transformers (librería declarada), text-generation-inference (etiqueta del repositorio), vLLM, llama.cpp, Ollama y Unsloth para reentrenamiento. La etiqueta `endpoints_compatible` indica compatibilidad con Inference Endpoints de Hugging Face.
 - Latencia y throughput: no disponible; no se han publicado mediciones para este modelo.
 - Advertencia: el repositorio ocupa 0,1 GB, muy por debajo de los ~3,4 GB esperables para pesos completos en fp16. Antes de desplegarlo conviene comprobar si contiene pesos completos, un adaptador LoRA que requiera fusionarse con el modelo base, o una subida incompleta.
 
@@ -80,10 +80,10 @@ Los datos de contexto y licencia de los modelos comparados proceden de la docume
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| lovro77/smollm2-1.7b-netlograg-v2 | 1,7B | no confirmado (8.192 tokens según el modelo base) | Apache 2.0 | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| HuggingFaceTB/SmolLM2-1.7B-Instruct | 1,7B | 8.192 tokens | Apache 2.0 | HuggingFace, ampliamente descargado y documentado |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,5B | 32.768 tokens | Apache 2.0 | HuggingFace, soporte multilingüe amplio |
-| meta-llama/Llama-3.2-1B-Instruct | 1,2B | 128.000 tokens | Licencia comunitaria de Llama 3.2 (con restricciones) | HuggingFace, acceso con aceptación de términos |
+| lovro77/smollm2-1.7b-netlograg-v2 | 1,7B | no confirmado (8.192 tokens según el modelo base) | Apache 2.0 | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| HuggingFaceTB/SmolLM2-1.7B-Instruct | 1,7B | 8.192 tokens | Apache 2.0 | Hugging Face, ampliamente descargado y documentado |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,5B | 32.768 tokens | Apache 2.0 | Hugging Face, soporte multilingüe amplio |
+| meta-llama/Llama-3.2-1B-Instruct | 1,2B | 128.000 tokens | Licencia comunitaria de Llama 3.2 (con restricciones) | Hugging Face, acceso con aceptación de términos |
 
 Frente a estas alternativas, la principal desventaja de este fine-tuning es la ausencia total de documentación, evaluación y tracción (0 descargas, 0 likes), mientras que sus competidores directos cuentan con model cards detalladas, benchmarks publicados y mantenimiento activo. Su ventaja potencial sería un ajuste específico para un dominio concreto (RAG sobre logs de red), que solo podría validarse con una evaluación propia.
 
@@ -102,7 +102,7 @@ Frente a estas alternativas, la principal desventaja de este fine-tuning es la a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lovro77/smollm2-1.7b-netlograg-v2
+- Modelo en Hugging Face: https://huggingface.co/lovro77/smollm2-1.7b-netlograg-v2
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct
 - Unsloth (herramienta de entrenamiento citada por el autor): https://github.com/unslothai/unsloth
 - Nota sobre la búsqueda web: las consultas realizadas no devolvieron ningún resultado relevante para este modelo. Los enlaces obtenidos corresponden a páginas sobre la planta Beinwell (consuelda) en Wikipedia, NDR, Heilpraxisnet, Mein schöner Garten y netDoktor, sin relación alguna con el modelo ni con inteligencia artificial, por lo que se descartan. No se han encontrado papers, blogs tecnicos, repositorios de codigo ni demos asociados a este modelo.

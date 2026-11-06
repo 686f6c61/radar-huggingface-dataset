@@ -2,7 +2,7 @@
 
 ## Resumen
 
-kic_M_Qwen3-8B_java_t0.5_g9_run0 es un ajuste fino (fine-tuning) del modelo base Qwen3-8B, desarrollado por el usuario stefanocarrera y publicado en HuggingFace. Se trata de un modelo derivado de `unsloth/Qwen3-8B-Base-unsloth-bnb-4bit`, es decir, una version del Qwen3-8B en formato Base (sin instrucciones) cuantizada en 4 bits y optimizada para entrenamiento con la libreria Unsloth. El nombre del repositorio sugiere un entrenamiento orientado a Java, con temperatura 0.5 y una ejecucion identificada como "run0".
+kic_M_Qwen3-8B_java_t0.5_g9_run0 es un ajuste fino (fine-tuning) del modelo base Qwen3-8B, desarrollado por el usuario stefanocarrera y publicado en Hugging Face. Se trata de un modelo derivado de `unsloth/Qwen3-8B-Base-unsloth-bnb-4bit`, es decir, una version del Qwen3-8B en formato Base (sin instrucciones) cuantizada en 4 bits y optimizada para entrenamiento con la libreria Unsloth. El nombre del repositorio sugiere un entrenamiento orientado a Java, con temperatura 0.5 y una ejecucion identificada como "run0".
 
 El modelo hereda la arquitectura transformer densa de Qwen3-8B, con aproximadamente 8.000 millones de parametros, y se distribuye bajo licencia Apache 2.0. La model card es minima: no incluye datos sobre el dataset de entrenamiento, hiperparametros, resultados de evaluacion ni detalles sobre el procedimiento de ajuste mas alla de indicar que se uso Unsloth para acelerar el entrenamiento.
 
@@ -44,7 +44,7 @@ No se dispone de informacion sobre el numero de tokens de entrenamiento, la comp
 - Generacion de texto tecnico en ingles: uso como modelo de generacion condicionada por prompt en tareas de documentacion o resumenes, limitado al idioma declarado.
 - Base para nuevos ajustes: al estar en formato safetensors y licencia Apache 2.0, puede reutilizarse como punto de partida para fine-tunings adicionales.
 - Evaluacion comparativa de variantes: util para medir el impacto de un ajuste especifico frente al Qwen3-8B original en tareas de codigo.
-- Experimentacion docente: ejemplo practico de pipeline de entrenamiento con Unsloth y publicacion en HuggingFace para cursos o talleres.
+- Experimentacion docente: ejemplo practico de pipeline de entrenamiento con Unsloth y publicacion en Hugging Face para cursos o talleres.
 - Despliegue en entornos con recursos limitados: el formato 4-bit del base permite probar inferencia en GPUs de gama media, aunque el modelo publicado debe verificarse antes de usarse en produccion.
 
 ## Benchmarks y rendimiento
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| kic_M_Qwen3-8B_java_t0.5_g9_run0 | ~8B | no disponible | Apache 2.0 | HuggingFace (0 descargas) | Fine-tuning comunitario, sin benchmarks |
-| Qwen3-8B (original) | ~8B | no disponible | Apache 2.0 | HuggingFace, ampliamente usado | Modelo base oficial de Alibaba Qwen |
-| unsloth/Qwen3-8B-Base-unsloth-bnb-4bit | ~8B | no disponible | Apache 2.0 | HuggingFace | Version base cuantizada 4-bit usada como punto de partida |
-| Llama 3.1 8B | ~8B | 128K | Llama 3.1 Community License | HuggingFace, ampliamente usado | Alternativa de tamano similar con contexto documentado |
+| kic_M_Qwen3-8B_java_t0.5_g9_run0 | ~8B | no disponible | Apache 2.0 | Hugging Face (0 descargas) | Fine-tuning comunitario, sin benchmarks |
+| Qwen3-8B (original) | ~8B | no disponible | Apache 2.0 | Hugging Face, ampliamente usado | Modelo base oficial de Alibaba Qwen |
+| unsloth/Qwen3-8B-Base-unsloth-bnb-4bit | ~8B | no disponible | Apache 2.0 | Hugging Face | Version base cuantizada 4-bit usada como punto de partida |
+| Llama 3.1 8B | ~8B | 128K | Llama 3.1 Community License | Hugging Face, ampliamente usado | Alternativa de tamano similar con contexto documentado |
 
 ## Limitaciones y advertencias
 
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/stefanocarrera/kic_M_Qwen3-8B_java_t0.5_g9_run0
+- Hugging Face: https://huggingface.co/stefanocarrera/kic_M_Qwen3-8B_java_t0.5_g9_run0
 - Modelo base: https://huggingface.co/unsloth/Qwen3-8B-Base-unsloth-bnb-4bit
 - Unsloth: https://github.com/unslothai/unsloth
 - TRL: https://github.com/huggingface/trl

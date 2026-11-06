@@ -2,7 +2,7 @@
 
 ## Resumen
 
-tmax-4b-v1.1-GGUF es un repositorio de cuantizaciones estáticas en formato GGUF del modelo tmax-4b-v1.1, publicado por el usuario mradermacher en HuggingFace. Este tipo de repositorio no contiene un modelo nuevo, sino conversiones cuantizadas del modelo original (TMaxxx/tmax-4b-v1.1) diseñadas para reducir el consumo de memoria y permitir su ejecución en hardware de consumo mediante motores de inferencia como llama.cpp u Ollama.
+tmax-4b-v1.1-GGUF es un repositorio de cuantizaciones estáticas en formato GGUF del modelo tmax-4b-v1.1, publicado por el usuario mradermacher en Hugging Face. Este tipo de repositorio no contiene un modelo nuevo, sino conversiones cuantizadas del modelo original (TMaxxx/tmax-4b-v1.1) diseñadas para reducir el consumo de memoria y permitir su ejecución en hardware de consumo mediante motores de inferencia como llama.cpp u Ollama.
 
 El repositorio incluye un amplio abanico de cuantizaciones que van desde versiones de 2 bits (Q2_K) hasta 16 bits (F16), lo que permite elegir el equilibrio entre calidad y tamaño según los recursos disponibles. La relevancia de este tipo de cuantizaciones estáticas radica en que ofrecen compatibilidad directa con llama.cpp sin necesidad de conversión local, facilitando el despliegue inmediato.
 
@@ -23,7 +23,7 @@ El modelo base tmax-4b-v1.1, desarrollado por TMaxxx, es un modelo de aproximada
 
 ## Arquitectura y entrenamiento
 
-Este repositorio no describe la arquitectura del modelo subyacente. Se trata de cuantizaciones estáticas en GGUF generadas a partir de los pesos del modelo original TMaxxx/tmax-4b-v1.1 mediante conversión de tipo "hf" (HuggingFace), según los metadatos de la model card. Las cuantizaciones estáticas se calculan una sola vez sobre el modelo completo, a diferencia de las cuantizaciones dinámicas o imatrix, lo que las hace más simples pero potencialmente ligeramente inferiores en calidad a igualdad de bits.
+Este repositorio no describe la arquitectura del modelo subyacente. Se trata de cuantizaciones estáticas en GGUF generadas a partir de los pesos del modelo original TMaxxx/tmax-4b-v1.1 mediante conversión de tipo "hf" (Hugging Face), según los metadatos de la model card. Las cuantizaciones estáticas se calculan una sola vez sobre el modelo completo, a diferencia de las cuantizaciones dinámicas o imatrix, lo que las hace más simples pero potencialmente ligeramente inferiores en calidad a igualdad de bits.
 
 Sobre el entrenamiento del modelo base (número de tokens, composición del dataset, uso de RLHF o DPO) no se ha publicado información en la model card disponible. Tampoco consta ninguna innovación técnica específica del modelo base.
 

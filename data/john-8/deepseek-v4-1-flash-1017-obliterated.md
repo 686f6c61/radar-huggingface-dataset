@@ -95,8 +95,8 @@ Evaluación MMLU: la model card indica 2.500 preguntas en 57 materias con protoc
 
 | Modelo | Parámetros | Contexto | Tasa de rechazo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash-1017-obliterated | 754,6 B | no disponible | 4,30 % | MIT | HuggingFace |
-| DeepSeek-V4.1-Flash-1017 (base) | 754,6 B | no disponible | 81,62 % | MIT | HuggingFace |
+| DeepSeek-V4.1-Flash-1017-obliterated | 754,6 B | no disponible | 4,30 % | MIT | Hugging Face |
+| DeepSeek-V4.1-Flash-1017 (base) | 754,6 B | no disponible | 81,62 % | MIT | Hugging Face |
 | Otras variantes abliterated del mismo base | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparación directa con el modelo base es la única disponible y está documentada en la model card. No se dispone de datos de otros modelos de la misma categoría para una comparativa más amplia.
@@ -116,7 +116,7 @@ La comparación directa con el modelo base es la única disponible y está docum
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/John-8/DeepSeek-V4.1-Flash-1017-obliterated
+- Modelo en Hugging Face: https://huggingface.co/John-8/DeepSeek-V4.1-Flash-1017-obliterated
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Herramienta OBLITERATUS: https://github.com/elder-plinius/OBLITERATUS
 - Detalles del método (referenciado en la model card): winner-recovery-provenance.json

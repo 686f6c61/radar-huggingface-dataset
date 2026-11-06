@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio mn47/speech_to_text es una publicacion alojada en HuggingFace por el usuario mn47 cuyo identificador sugiere, por su nombre, que se trata de un modelo orientado a la conversion de voz a texto (reconocimiento automatico del habla, ASR). Sin embargo, esta inferencia procede unicamente de la denominacion del repositorio: la informacion disponible no incluye una tarjeta de modelo, documentacion tecnica ni ningun otro artefacto que confirme la tarea, la arquitectura o el proposito real del modelo.
+El repositorio mn47/speech_to_text es una publicacion alojada en Hugging Face por el usuario mn47 cuyo identificador sugiere, por su nombre, que se trata de un modelo orientado a la conversion de voz a texto (reconocimiento automatico del habla, ASR). Sin embargo, esta inferencia procede unicamente de la denominacion del repositorio: la informacion disponible no incluye una tarjeta de modelo, documentacion tecnica ni ningun otro artefacto que confirme la tarea, la arquitectura o el proposito real del modelo.
 
 En el momento de la consulta, el repositorio registra cero descargas y un unico "me gusta", no tiene pipeline declarado, no especifica licencia, no declara idiomas soportados y carece de etiquetas descriptivas mas alla de la region (region:us). La fecha de creacion y la de ultima actualizacion coinciden (2026-09-22T13:56:26Z), lo que indica que el repositorio no ha recibido modificaciones desde su publicacion inicial.
 
@@ -83,6 +83,6 @@ No es posible establecer una comparativa fundamentada, puesto que se desconocen 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mn47/speech_to_text
+- Repositorio en Hugging Face: https://huggingface.co/mn47/speech_to_text
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la busqueda web realizada.
 - Resultados de busqueda no relacionados (se incluyen unicamente para dejar constancia de que no aportan informacion sobre el modelo): https://pubmed.ncbi.nlm.nih.gov/27696219/, https://link.springer.com/article/10.1007/s11250-016-1155-x, https://onlinelibrary.wiley.com/doi/abs/10.1111/tbed.12757

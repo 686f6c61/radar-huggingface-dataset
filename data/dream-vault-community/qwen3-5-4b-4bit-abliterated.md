@@ -79,7 +79,7 @@ La unica evidencia de funcionamiento es validation/REPORT.md, descrito por el au
 |---|---|---|---|---|---|---|
 | dream-vault-community/Qwen3.5-4B-4bit-Abliterated | 4,54B | no disponible | si (image-text-to-text) | 4-bit afín, group size 64 | apache-2.0 | MLX, repo de 3,1 GB, 0 descargas |
 | mlx-community/Huihui-Qwen3.5-4B-Claude-4.6-Opus-abliterated-4bit | no disponible (mismo linaje, 4B nominal) | no disponible | si (segun etiquetas del linaje) | 4-bit | declarada Apache-2.0 sin fichero de licencia | MLX, upstream inmediato |
-| Qwen/Qwen3.5-4B | 4B nominal | no disponible | no disponible | no aplica (pesos originales) | Apache-2.0 (origen del fichero LICENSE copiado) | HuggingFace, release original de Qwen |
+| Qwen/Qwen3.5-4B | 4B nominal | no disponible | no disponible | no aplica (pesos originales) | Apache-2.0 (origen del fichero LICENSE copiado) | Hugging Face, release original de Qwen |
 
 No se dispone de datos de rendimiento comparado entre estas variantes, por lo que la comparacion se limita a parametros, formato, licencia y disponibilidad. Cualquier otra alternativa de la misma categoria (por ejemplo, otros VLM de ~4B en MLX) no aparece en la informacion proporcionada y se marca como no disponible.
 
@@ -99,7 +99,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes, por lo qu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dream-vault-community/Qwen3.5-4B-4bit-Abliterated
+- Modelo en Hugging Face: https://huggingface.co/dream-vault-community/Qwen3.5-4B-4bit-Abliterated
 - Modelo base (upstream inmediato): https://huggingface.co/mlx-community/Huihui-Qwen3.5-4B-Claude-4.6-Opus-abliterated-4bit/tree/a0cd61406062a7bee31fc995a806fdb876f318ed
 - Release original de Qwen3.5-4B, origen del fichero LICENSE: https://huggingface.co/Qwen/Qwen3.5-4B/blob/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a/LICENSE
 - Informe de validacion interno: validation/REPORT.md (dentro del repositorio)

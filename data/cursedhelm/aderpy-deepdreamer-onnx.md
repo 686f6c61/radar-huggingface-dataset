@@ -77,7 +77,7 @@ La comparativa se limita a los datos disponibles. No se dispone de información 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/cursedhelm/aderpy-deepdreamer-onnx
+- Repositorio Hugging Face: https://huggingface.co/cursedhelm/aderpy-deepdreamer-onnx
 - Modelo base: https://huggingface.co/segmind/tiny-sd
 - Sitio del autor (Cursed Helm): https://cursedhelm.com/
 - Aplicación aderpy (metaTOOLS): https://aderpy.com/

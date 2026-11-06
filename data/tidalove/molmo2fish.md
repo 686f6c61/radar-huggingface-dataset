@@ -72,7 +72,7 @@ No hay modelos directamente comparables en la misma categoria de tracking de pec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tidalove/Molmo2Fish
+- Modelo en Hugging Face: https://huggingface.co/tidalove/Molmo2Fish
 - Codigo del modelo: https://github.com/tidalove/molmo2fish
 - Dataset de instrucciones: https://huggingface.co/datasets/tidalove/cfc-track-instruction
 - Video fuente (Caltech Fish Counting): https://huggingface.co/datasets/perona-lab/cfc26

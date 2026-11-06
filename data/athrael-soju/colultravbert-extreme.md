@@ -6,7 +6,7 @@ ColUltraVBERT-Extreme es un recuperador (retriever) de documentos visuales basad
 
 El modelo es un ajuste fino del encoder UltraVBERT, que a su vez actúa como encoder base alineado con imágenes de página. La familia se organiza en tres piezas: UltraVBERT (encoder base), ColUltraVBERT (retriever de interacción tardía) y ColUltraVBERT-Extreme (versión fusionada de varios seeds). Según la propia model card, ColUltraVBERT-Extreme figura con estado "Coming soon" (proximamente), por lo que se trata de un lanzamiento en fase temprana.
 
-En el momento de redactar esta ficha, el repositorio de HuggingFace no incluye pesos publicados (tamano del repo de 0,0 GB), registra cero descargas y cero "likes", y no aporta informacion sobre parametros, contexto, idiomas o datos de entrenamiento. La relevancia del modelo radica en su encaje en el ecosistema ColPali/ColBERT para recuperacion documental multimodal, un area activa por su aplicacion directa en RAG sobre documentos escaneados o PDF ricos en maquetacion.
+En el momento de redactar esta ficha, el repositorio de Hugging Face no incluye pesos publicados (tamano del repo de 0,0 GB), registra cero descargas y cero "likes", y no aporta informacion sobre parametros, contexto, idiomas o datos de entrenamiento. La relevancia del modelo radica en su encaje en el ecosistema ColPali/ColBERT para recuperacion documental multimodal, un area activa por su aplicacion directa en RAG sobre documentos escaneados o PDF ricos en maquetacion.
 
 ## Especificaciones tecnicas
 
@@ -82,7 +82,7 @@ No se dispone de datos tecnicos comparables (parametros, contexto, resultados) p
 
 ## Enlaces
 
-- Modelo en HuggingFace: [athrael-soju/ColUltraVBERT-Extreme](https://huggingface.co/athrael-soju/ColUltraVBERT-Extreme)
+- Modelo en Hugging Face: [athrael-soju/ColUltraVBERT-Extreme](https://huggingface.co/athrael-soju/ColUltraVBERT-Extreme)
 - Encoder base: [athrael-soju/UltraVBERT](https://huggingface.co/athrael-soju/UltraVBERT)
 - Retriever previo de la familia: [athrael-soju/ColUltraVBERT](https://huggingface.co/athrael-soju/ColUltraVBERT)
 - Libreria ColPali: no se ha encontrado enlace especifico en la busqueda web.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tvrpranay/sample-factory-doom-health-gathering` es un agente de aprendizaje por refuerzo (RL) entrenado con el algoritmo PPO sobre el escenario `doom_health_gathering_supreme` de ViZDoom. No se trata de un modelo de lenguaje ni de un modelo generativo multimodal: es una política neuronal que recibe observaciones visuales del entorno (pantalla del juego) y emite acciones discretas para maximizar la recompensa acumulada. El autor es el usuario de HuggingFace `tvrpranay` y el modelo se publica con la librería `sample-factory`, un framework de RL asíncrono de alto rendimiento.
+`tvrpranay/sample-factory-doom-health-gathering` es un agente de aprendizaje por refuerzo (RL) entrenado con el algoritmo PPO sobre el escenario `doom_health_gathering_supreme` de ViZDoom. No se trata de un modelo de lenguaje ni de un modelo generativo multimodal: es una política neuronal que recibe observaciones visuales del entorno (pantalla del juego) y emite acciones discretas para maximizar la recompensa acumulada. El autor es el usuario de Hugging Face `tvrpranay` y el modelo se publica con la librería `sample-factory`, un framework de RL asíncrono de alto rendimiento.
 
 El escenario `doom_health_gathering_supreme` es una tarea clásica de navegación y supervivencia en primera persona: el agente pierde salud de forma constante y debe recoger botiquines repartidos por el mapa mientras sobrevive. La model card reporta una recompensa media de 18,50, un valor declarado por el autor y no verificado de forma independiente (`verified: false`).
 
@@ -91,6 +91,6 @@ No disponible. La informacion proporcionada no incluye otros agentes de RL compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tvrpranay/sample-factory-doom-health-gathering
+- Modelo en Hugging Face: https://huggingface.co/tvrpranay/sample-factory-doom-health-gathering
 
 Los resultados de busqueda web no aportaron enlaces relevantes al modelo: las entradas devueltas corresponden a sitios sin relacion con inteligencia artificial ni con aprendizaje por refuerzo, por lo que no se incluyen. No se han encontrado en la informacion proporcionada papers, blogs, repositorios de codigo ni demos asociados a este modelo.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un transformer de lenguaje pequeño con atención ALiBi dinámica, entrenado sobre el subconjunto de 100 millones de palabras del corpus BabyLM. Fue desarrollado por Lanni-ni y publicado en HuggingFace como un checkpoint de investigación. Su arquitectura, según la nomenclatura del nombre, parece estar compuesta por 4 capas, 6 cabezas de atención y 384 dimensiones ocultas, con un total de 45.694.080 parámetros. El modelo está pensado para estudiar el comportamiento del mecanismo ALiBi dinámico en tareas de generación de texto con presupuestos de entrenamiento limitados.
+Este modelo es un transformer de lenguaje pequeño con atención ALiBi dinámica, entrenado sobre el subconjunto de 100 millones de palabras del corpus BabyLM. Fue desarrollado por Lanni-ni y publicado en Hugging Face como un checkpoint de investigación. Su arquitectura, según la nomenclatura del nombre, parece estar compuesta por 4 capas, 6 cabezas de atención y 384 dimensiones ocultas, con un total de 45.694.080 parámetros. El modelo está pensado para estudiar el comportamiento del mecanismo ALiBi dinámico en tareas de generación de texto con presupuestos de entrenamiento limitados.
 
 La model card es una plantilla generada automáticamente y no incluye especificaciones técnicas, datos de entrenamiento ni resultados de evaluación. No se ha publicado ningún paper ni documentación asociada al modelo. El repo tiene 0 descargas y 0 likes, lo que indica que es un artefacto de investigación en etapa temprana o experimental.
 
@@ -76,6 +76,6 @@ No se pueden establecer comparativas de rendimiento porque no hay benchmarks pub
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_seed43_epoch7
+- Hugging Face: https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_seed43_epoch7
 - Checkpoint relacionado (epoch7): https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_epoch7
 - Checkpoint relacionado (epoch9): https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_epoch9

@@ -75,7 +75,7 @@ No disponible. No se han identificado en la informacion proporcionada LoRA compa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/RunningHubAI/rh-nayru-krea2-nsfw-lora
+- Repositorio Hugging Face: https://huggingface.co/RunningHubAI/rh-nayru-krea2-nsfw-lora
 - Modelo original en RunningHub: https://www.runninghub.ai/model/public/2091428750184497153
 - Pagina del autor: https://www.runninghub.ai/user-center/2007108761445212162
 - RunningHub (internacional): https://www.runninghub.ai

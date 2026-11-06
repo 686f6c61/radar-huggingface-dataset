@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MobileNet-v3-Small es una red neuronal convolucional (CNN) para clasificación de imágenes, originalmente propuesta por Google en el paper "Searching for MobileNetV3" (arXiv:1905.02244). Qualcomm publica en HuggingFace una versión del modelo exportada y optimizada para ejecutarse en dispositivos con aceleración NPU de Qualcomm, incluyendo SoCs Snapdragon y plataformas Dragonwing. El modelo clasifica imágenes del dataset ImageNet y también puede emplearse como backbone en arquitecturas más complejas.
+MobileNet-v3-Small es una red neuronal convolucional (CNN) para clasificación de imágenes, originalmente propuesta por Google en el paper "Searching for MobileNetV3" (arXiv:1905.02244). Qualcomm publica en Hugging Face una versión del modelo exportada y optimizada para ejecutarse en dispositivos con aceleración NPU de Qualcomm, incluyendo SoCs Snapdragon y plataformas Dragonwing. El modelo clasifica imágenes del dataset ImageNet y también puede emplearse como backbone en arquitecturas más complejas.
 
 La relevancia de esta ficha no está en la arquitectura en sí (un modelo compacto de 2,54 millones de parámetros con entrada de 224x224), sino en el trabajo de despliegue que aporta Qualcomm: pesos pre-exportados en ONNX, QNN_DLC y TFLite, con precisiones float y w8a16_mixed_int16, listos para ejecutarse en NPU con latencias inferiores al milisegundo en varios chipsets. Esto lo convierte en una pieza útil para desarrolladores que necesitan clasificación de imágenes en tiempo real en el borde (edge), sin entrenamiento adicional.
 
@@ -89,10 +89,10 @@ No se han publicado resultados de precisión (top-1/top-5) en la información di
 
 | Modelo | Parámetros | Entrada | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MobileNet-v3-Small (Qualcomm) | 2,54 M | 224x224 | no aplica | BSD-3-Clause | HuggingFace + AI Hub |
-| MobileNet-v3-Large | no disponible en la información | 224x224 | no aplica | BSD-3-Clause (torchvision) | torchvision / HuggingFace |
-| EfficientNet-B0 | no disponible en la información | 224x224 | no aplica | Apache 2.0 (referencia) | torchvision / HuggingFace |
-| ResNet-50 | no disponible en la información | 224x224 | no aplica | BSD-3-Clause (referencia) | torchvision / HuggingFace |
+| MobileNet-v3-Small (Qualcomm) | 2,54 M | 224x224 | no aplica | BSD-3-Clause | Hugging Face + AI Hub |
+| MobileNet-v3-Large | no disponible en la información | 224x224 | no aplica | BSD-3-Clause (torchvision) | torchvision / Hugging Face |
+| EfficientNet-B0 | no disponible en la información | 224x224 | no aplica | Apache 2.0 (referencia) | torchvision / Hugging Face |
+| ResNet-50 | no disponible en la información | 224x224 | no aplica | BSD-3-Clause (referencia) | torchvision / Hugging Face |
 
 No se dispone de datos de precisión comparada en la información proporcionada; la comparativa se limita a parámetros, licencia y disponibilidad. MobileNet-v3-Small es la opción de menor coste computacional del grupo, a costa de una precisión inferior frente a MobileNet-v3-Large, EfficientNet-B0 o ResNet-50.
 
@@ -108,7 +108,7 @@ No se dispone de datos de precisión comparada en la información proporcionada;
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qualcomm/MobileNet-v3-Small
+- Hugging Face: https://huggingface.co/qualcomm/MobileNet-v3-Small
 - Paper original: https://arxiv.org/abs/1905.02244
 - Implementación de referencia en torchvision: https://github.com/pytorch/vision/blob/main/torchvision/models/mobilenetv3.py
 - Repositorio AI Hub Models: https://github.com/qualcomm/ai-hub-models/blob/v0.66.0/src/qai_hub_models/models/mobilenet_v3_small

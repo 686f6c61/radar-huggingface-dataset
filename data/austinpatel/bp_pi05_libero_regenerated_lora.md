@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Benchmark | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `pi05_libero_regenerated_lora` | no disponible | no disponible | no disponible | Apache-2.0 + Gemma Terms | HuggingFace, 0 descargas |
-| `physical-intelligence/pi05_base` | no disponible | no disponible | no disponible | no disponible en esta ficha | HuggingFace (modelo base) |
+| `pi05_libero_regenerated_lora` | no disponible | no disponible | no disponible | Apache-2.0 + Gemma Terms | Hugging Face, 0 descargas |
+| `physical-intelligence/pi05_base` | no disponible | no disponible | no disponible | no disponible en esta ficha | Hugging Face (modelo base) |
 | Checkpoints LIBERO de openpi | no disponible | no disponible | no disponible | Apache-2.0 | Repositorio openpi |
 
 No se dispone de datos de rendimiento ni de especificaciones detalladas de los modelos comparables en la informacion proporcionada, por lo que la comparacion cuantitativa no es posible.
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento ni de especificaciones detalladas de los m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/austinpatel/bp_pi05_libero_regenerated_lora
+- Modelo en Hugging Face: https://huggingface.co/austinpatel/bp_pi05_libero_regenerated_lora
 - Modelo base: https://huggingface.co/physical-intelligence/pi05_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/austinpatel/libero_regenerated_openpi
 - Paper: https://huggingface.co/papers/2606.30457

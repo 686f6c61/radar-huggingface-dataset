@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada en cuantización de 8 bits: aproximadamente 1 GB de pesos; en 4 bits, en torno a 0,5 GB. Estas cifras son estimaciones por tamaño y no proceden de la model card.
 - GPU recomendadas: cualquier GPU con al menos 4-6 GB de VRAM para 16 bits con contexto moderado; una RTX 3060, RTX 4060 o superior es suficiente. El entrenamiento se realizó en una RTX A6000.
 - Cabe holgadamente en GPU de consumo; también es viable en CPU con llama.cpp u Ollama si se generan pesos GGUF, aunque el repositorio solo publica safetensors.
-- Opciones de despliegue: transformers (librería declarada), vLLM o TGI para servir el modelo en 16 bits, y llama.cpp u Ollama previa conversión a GGUF. El tag `endpoints_compatible` sugiere compatibilidad con endpoints de HuggingFace.
+- Opciones de despliegue: transformers (librería declarada), vLLM o TGI para servir el modelo en 16 bits, y llama.cpp u Ollama previa conversión a GGUF. El tag `endpoints_compatible` sugiere compatibilidad con endpoints de Hugging Face.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -87,10 +87,10 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas, por 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SZLHOLDINGS/szl-receiptagent-qwen35-0.8b-dpo-v2
+- Modelo en Hugging Face: https://huggingface.co/SZLHOLDINGS/szl-receiptagent-qwen35-0.8b-dpo-v2
 - Modelo base (SFT v3): https://huggingface.co/SZLHOLDINGS/szl-receiptagent-qwen35-0.8b-sft-v3
 - Dataset de preferencias: https://huggingface.co/datasets/SZLHOLDINGS/doctrine-abstention-dpo-v2
 - Dataset de evaluaciones (eval receipts): https://huggingface.co/datasets/SZLHOLDINGS/model-eval-receipts
 - Dataset de registros de entrenamiento (privado): https://huggingface.co/datasets/SZLHOLDINGS/wave-logs
 - Script de entrenamiento DPO: https://github.com/szl-holdings/szl-forge/blob/main/training/dpo_wave.py
-- Organización en HuggingFace: https://huggingface.co/SZLHOLDINGS
+- Organización en Hugging Face: https://huggingface.co/SZLHOLDINGS

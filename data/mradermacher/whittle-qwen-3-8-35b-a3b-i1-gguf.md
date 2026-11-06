@@ -27,7 +27,7 @@ La relevancia de esta ficha es limitada por la escasez de documentación: el rep
 
 No se dispone de informacion sobre la arquitectura interna del modelo base en la documentacion proporcionada. El identificador `Whittle-Qwen-3.8-35B-A3B` sugiere una variante de la familia Qwen con 35.500 millones de parametros totales y un regimen de mezcla de expertos (MoE) con aproximadamente 3.000 millones de parametros activos, un patron habitual en modelos como Qwen3-30B-A3B. Sin embargo, ni la model card ni los metadatos confirman esta arquitectura, el numero de tokens de entrenamiento, la composicion del dataset ni la existencia de fases de RLHF, DPO o similares.
 
-Lo unico documentado tecnicamente es el proceso de cuantizacion: el autor indica que se trata de cuantizaciones "weighted/imatrix" del modelo base, un metodo que ajusta la precision de cada tensor en funcion de su importancia medida mediante una matriz de informacion (imatrix), mejorando la calidad respecto a cuantizaciones uniformes del mismo tamano. Los metadatos internos registran `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que indica una conversion desde pesos de HuggingFace.
+Lo unico documentado tecnicamente es el proceso de cuantizacion: el autor indica que se trata de cuantizaciones "weighted/imatrix" del modelo base, un metodo que ajusta la precision de cada tensor en funcion de su importancia medida mediante una matriz de informacion (imatrix), mejorando la calidad respecto a cuantizaciones uniformes del mismo tamano. Los metadatos internos registran `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que indica una conversion desde pesos de Hugging Face.
 
 ## Capacidades
 
@@ -100,7 +100,7 @@ Frente a Qwen3-30B-A3B, el modelo de este repositorio tiene un 16 % mas de param
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mradermacher/Whittle-Qwen-3.8-35B-A3B-i1-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/mradermacher/Whittle-Qwen-3.8-35B-A3B-i1-GGUF
 - Modelo base: https://huggingface.co/logic65/Whittle-Qwen-3.8-35B-A3B
 - Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher
 - Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los enlaces recuperados correspondian a productos farmaceuticos sin relacion con el repositorio. No se dispone de paper, blog tecnico ni demo asociados.

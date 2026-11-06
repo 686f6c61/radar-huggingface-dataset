@@ -25,7 +25,7 @@ Al tratarse de una red convolucional ligera, el modelo está pensado para infere
 | Salida | float32 `[1,1001]`, softmax ya aplicada |
 | Dataset de entrenamiento | ILSVRC/imagenet-1k (1000 clases; el indice 0 del fichero de etiquetas es `background`) |
 | SignatureDefs | ausente; LiteRT sirve el modelo a traves de su firma por defecto |
-| Tamano del repositorio | 0.0 GB segun los metadatos de HuggingFace |
+| Tamano del repositorio | 0.0 GB segun los metadatos de Hugging Face |
 | Fecha indicada en metadatos | creado el 2026-09-29, actualizado el 2026-09-29 |
 
 ## Arquitectura y entrenamiento
@@ -82,7 +82,7 @@ El autor indica que una decodificacion con Pillow produce el mismo top-5 con dif
 | Modelo | Formato | Cuantizacion | Licencia | Notas |
 |---|---|---|---|---|
 | imacdonald/mobilenet_v2_1.0_224-tflite | TFLite | float32 | apache-2.0 | Reempaquetado no oficial para `tflite-server`; pesos identicos al fichero de Google; incluye `labels.txt` y `manifest.json` |
-| google/mobilenet_v2_1.0_224 | no disponible en la informacion recogida | no disponible | no disponible | Publicacion de referencia de Google en HuggingFace para el mismo modelo |
+| google/mobilenet_v2_1.0_224 | no disponible en la informacion recogida | no disponible | no disponible | Publicacion de referencia de Google en Hugging Face para el mismo modelo |
 | Arm-Examples ML-zoo `mobilenet_v2_1.0_224_INT8.tflite` | TFLite | INT8 | no disponible | Repositorio archivado y en solo lectura desde el 18 de julio de 2025 |
 | qualcomm/MobileNet-v2 | no disponible | no disponible | no disponible | Version del modelo mantenida por Qualcomm; detalles no disponibles en la busqueda realizada |
 | Open Model Zoo `mobilenet-v2-1.0-224` | IR (OpenVINO) | no disponible | no disponible | Conversion orientada a despliegue en CPU con OpenVINO; descrita como modelo pequeno, de baja latencia y bajo consumo |
@@ -103,13 +103,13 @@ El autor indica que una decodificacion con Pillow produce el mismo top-5 con dif
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/imacdonald/mobilenet_v2_1.0_224-tflite
+- Modelo en Hugging Face: https://huggingface.co/imacdonald/mobilenet_v2_1.0_224-tflite
 - tflite-server v0.2.0 (release): https://github.com/ianbmacdonald/tflite-server/releases/tag/v0.2.0
 - Repositorio tflite-server: https://github.com/ianbmacdonald/tflite-server
 - Fichero original de Google (archivo de modelos alojados de TensorFlow): https://storage.googleapis.com/download.tensorflow.org/models/tflite_11_05_08/mobilenet_v2_1.0_224.tgz
 - Etiquetas de ImageNet usadas por el modelo: https://storage.googleapis.com/download.tensorflow.org/data/ImageNetLabels.txt
 - MobileNetV2 en Open Model Zoo (OpenVINO): https://github.com/openvinotoolkit/open_model_zoo/blob/master/models/public/mobilenet-v2-1.0-224/README.md
-- MobileNetV2 de Google en HuggingFace: https://huggingface.co/google/mobilenet_v2_1.0_224
+- MobileNetV2 de Google en Hugging Face: https://huggingface.co/google/mobilenet_v2_1.0_224
 - Variante INT8 en Arm ML-zoo: https://github.com/Arm-Examples/ML-zoo/blob/master/models/image_classification/mobilenet_v2_1.0_224/tflite_int8/mobilenet_v2_1.0_224_INT8.tflite
-- MobileNet-v2 de Qualcomm en HuggingFace: https://huggingface.co/qualcomm/MobileNet-v2
+- MobileNet-v2 de Qualcomm en Hugging Face: https://huggingface.co/qualcomm/MobileNet-v2
 - Documentacion de `tf.keras.applications.MobileNetV2`: https://www.tensorflow.org/api_docs/python/tf/keras/applications/MobileNetV2

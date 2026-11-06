@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`carbon-lab/optical-cupc` no es un modelo de inteligencia artificial, sino un paquete de datos cientificos publicado en HuggingFace Hub como material complementario del articulo "Quantitative and bond-traceable resonant X-ray optical tensors of organic molecules" (arXiv:2509.01734, DOI 10.1103/rfgg-ffyz). Lo firma el WSU Carbon Lab (Victor Murcia, Obaid Alqahtani, Harlan Heilman y Brian A. Collins) y contiene tablas de palos (sticks) de DFT, componentes tensoriales opticos, gaussianas de agrupamiento (clustering), geometrias y ficheros de entrada/salida del codigo StoBe para los 16 centros de carbono no equivalentes de la ftalocianina de cobre (CuPc).
+`carbon-lab/optical-cupc` no es un modelo de inteligencia artificial, sino un paquete de datos cientificos publicado en Hugging Face Hub como material complementario del articulo "Quantitative and bond-traceable resonant X-ray optical tensors of organic molecules" (arXiv:2509.01734, DOI 10.1103/rfgg-ffyz). Lo firma el WSU Carbon Lab (Victor Murcia, Obaid Alqahtani, Harlan Heilman y Brian A. Collins) y contiene tablas de palos (sticks) de DFT, componentes tensoriales opticos, gaussianas de agrupamiento (clustering), geometrias y ficheros de entrada/salida del codigo StoBe para los 16 centros de carbono no equivalentes de la ftalocianina de cobre (CuPc).
 
 El paquete acompana a la libreria `dft-learn` (release v1.1) y actua como deposito reproducible de los datos que sustentan el analisis de tensores opticos resonantes de rayos X, con espectros NEXAFS/XAS resueltos en angulo. La relevancia es de tipo cientifico y de reproducibilidad: permite recalcular, reajustar y reutilizar los datos sin depender del codigo original.
 
@@ -57,7 +57,7 @@ La parte de calculo electronico se organiza por sitio: `data/dft/sites/c{1..16}/
 - Agrupamiento de espectros por entorno quimico: los procedimientos `.ipf` de clustering permiten agrupar las contribuciones de los 16 sitios de carbono y detectar grupos de entornos electronicamente similares.
 - Reproducibilidad y procedencia en publicaciones: el paquete fija versiones de datos con hashes en `manifest.json`, de modo que una publicacion posterior puede citar hashes concretos en lugar de resultados volatiles.
 - Docencia y divulgacion de espectroscopia de rayos X: el Space `carbon-lab/cupc-optical-model` y las figuras `.pxp` permiten explorar visualmente la relacion entre estructura local y espectro sin ejecutar calculos DFT.
-- Integracion en pipelines de datos cientificos: las URLs estaticas por `resolve/main` permiten descargar CSV y geometrias con `requests` o `curl` sin necesidad del SDK de HuggingFace.
+- Integracion en pipelines de datos cientificos: las URLs estaticas por `resolve/main` permiten descargar CSV y geometrias con `requests` o `curl` sin necesidad del SDK de Hugging Face.
 - Benchmarking de codigos de estructura electronica: los ficheros StoBe por sitio (`cNgnd.inp`, `XrayT001.out`, `cNxas.out`) permiten comparar implementaciones alternativas sobre el mismo sistema y el mismo conjunto de sitios.
 
 ## Benchmarks y rendimiento
@@ -94,9 +94,9 @@ No disponible. No hay en la informacion proporcionada otros paquetes de datos co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/carbon-lab/optical-cupc
+- Repositorio en Hugging Face: https://huggingface.co/carbon-lab/optical-cupc
 - Articulo en arXiv: https://arxiv.org/abs/2509.01734
-- Pagina del articulo en HuggingFace Papers: https://huggingface.co/papers/2509.01734
+- Pagina del articulo en Hugging Face Papers: https://huggingface.co/papers/2509.01734
 - DOI de PRL: https://doi.org/10.1103/rfgg-ffyz
 - Demo interactiva (Space): https://huggingface.co/spaces/carbon-lab/cupc-optical-model
 - Libreria `dft-learn`: https://github.com/WSU-Carbon-Lab/dft-learn

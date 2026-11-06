@@ -48,7 +48,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 - No se dispone de datos sobre VRAM, GPU o CPU necesarias para ejecutar las políticas.
 - Dado que son modelos ONNX de control robótico, es probable que sean ligeros y ejecutables en CPU o en una GPU integrada, pero no hay confirmación oficial.
-- El despliegue se realiza mediante `onnxruntime` (librería indicada en HuggingFace), que soporta CPU, GPU y plataformas embebidas.
+- El despliegue se realiza mediante `onnxruntime` (librería indicada en Hugging Face), que soporta CPU, GPU y plataformas embebidas.
 - No se mencionan opciones como vLLM, llama.cpp u Ollama, ya que no aplican a modelos de control robótico.
 - Para el entorno de simulación MuJoCo se requiere una máquina con capacidades de cálculo estándar, pero sin especificaciones concretas.
 
@@ -67,7 +67,7 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/reachjalil/nottyduck-policies
+- Repositorio Hugging Face: https://huggingface.co/reachjalil/nottyduck-policies
 - Repositorio fuente (GitHub): https://github.com/reachjalil/nottyduck
 - Perfil de GitHub del autor: https://github.com/reachjalil
-- Perfil de HuggingFace del autor: https://huggingface.co/reachjalil
+- Perfil de Hugging Face del autor: https://huggingface.co/reachjalil

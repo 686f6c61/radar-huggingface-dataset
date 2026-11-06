@@ -6,7 +6,7 @@
 
 El ajuste se realizó sobre el dataset `Myungkyu/RMBench-taco-gemini`, compuesto por demostraciones de RMBench anotadas de forma offline con etiquetas densas de subtarea derivadas del contexto específico de cada tarea. El entrenamiento usó un optimizador con tamaño de lote 128 durante 60.000 pasos, y el repositorio publicado corresponde al checkpoint final. El modelo tiene 6.912.896.320 parámetros (~6,91 mil millones) en formato safetensors, con un repositorio de 13,8 GB.
 
-La relevancia de esta ficha es acotada y conviene ser explícito: no es un modelo de propósito general ni un LLM, sino un artefacto de investigación en robótica con 0 descargas y 0 likes en el momento de la consulta, sin licencia declarada ni idiomas declarados. Las búsquedas web realizadas no han devuelto ningún resultado relacionado con el modelo, el autor o el dataset (los resultados obtenidos tratan sobre Instagram, Steam y Zhihu), por lo que toda la información técnica procede exclusivamente de la model card y de los metadatos del repositorio de HuggingFace.
+La relevancia de esta ficha es acotada y conviene ser explícito: no es un modelo de propósito general ni un LLM, sino un artefacto de investigación en robótica con 0 descargas y 0 likes en el momento de la consulta, sin licencia declarada ni idiomas declarados. Las búsquedas web realizadas no han devuelto ningún resultado relacionado con el modelo, el autor o el dataset (los resultados obtenidos tratan sobre Instagram, Steam y Zhihu), por lo que toda la información técnica procede exclusivamente de la model card y de los metadatos del repositorio de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -80,7 +80,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos comparativos |
 |---|---|---|---|---|---|
-| `Myungkyu/rldx_1_rmbench_taco_b128_60k` | 6,91 mil millones | no disponible | no disponible | safetensors en HuggingFace, 0 descargas | no disponible |
+| `Myungkyu/rldx_1_rmbench_taco_b128_60k` | 6,91 mil millones | no disponible | no disponible | safetensors en Hugging Face, 0 descargas | no disponible |
 | Alternativas de la misma categoria (VLA para manipulación) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -98,7 +98,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Myungkyu/rldx_1_rmbench_taco_b128_60k
+- Modelo en Hugging Face: https://huggingface.co/Myungkyu/rldx_1_rmbench_taco_b128_60k
 - Modelo base: https://huggingface.co/RLWRLD/RLDX-1-PT
 - Dataset de ajuste: https://huggingface.co/datasets/Myungkyu/RMBench-taco-gemini
 - Paper, blog, repositorio o demo del modelo: no disponible (las búsquedas web realizadas no devolvieron ningún resultado relacionado con el modelo, el autor, el dataset ni el benchmark RMBench)

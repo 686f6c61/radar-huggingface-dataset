@@ -74,9 +74,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Chrononauts 3B 2013-05 agent | 2,8 B | 8.192 | Agente de busqueda congelado en el tiempo (2013-05) | other | HuggingFace, repo propio |
-| Chrononauts 3B 2013-05 sft | 2,8 B | 8.192 | Misma base, solo SFT, sin RL con busqueda | other | HuggingFace, repo hermano |
-| Chrononauts 3B 2024-07 agent | 2,8 B (segun suite) | 8.192 (segun suite) | Mismo diseno con corte 2024-07 | other | HuggingFace, repo hermano |
+| Chrononauts 3B 2013-05 agent | 2,8 B | 8.192 | Agente de busqueda congelado en el tiempo (2013-05) | other | Hugging Face, repo propio |
+| Chrononauts 3B 2013-05 sft | 2,8 B | 8.192 | Misma base, solo SFT, sin RL con busqueda | other | Hugging Face, repo hermano |
+| Chrononauts 3B 2024-07 agent | 2,8 B (segun suite) | 8.192 (segun suite) | Mismo diseno con corte 2024-07 | other | Hugging Face, repo hermano |
 | Modelos de 3 B de proposito general | ~3 B | variable | Generacion de texto sin restriccion temporal | variable | no disponible como comparacion directa |
 
 No se dispone de datos de benchmarks comparativos con modelos de proposito general de tamano similar en la informacion proporcionada; la comparacion relevante es interna a la propia suite Chrononauts, donde cambia la fecha de corte pero no el diseno.
@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks comparativos con modelos de proposito gener
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mattwang123/chrononauts-3b-2013-05-agent
+- Repositorio Hugging Face: https://huggingface.co/mattwang123/chrononauts-3b-2013-05-agent
 - Repo hermano (init): https://huggingface.co/mattwang123/chrononauts-3b-2013-05-init
 - Repo hermano (sft): https://huggingface.co/mattwang123/chrononauts-3b-2013-05-sft
 - Modelo de embeddings del corpus: https://huggingface.co/BAAI/bge-base-en-v1.5

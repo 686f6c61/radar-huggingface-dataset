@@ -69,6 +69,6 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/usermma/Qwen3.8-Queen-27B-mlx-5Bit
+- Modelo en Hugging Face: https://huggingface.co/usermma/Qwen3.8-Queen-27B-mlx-5Bit
 - Modelo base: https://huggingface.co/aifeifei798/Qwen3.8-Queen-27B
 - Documentación de mlx-lm: https://github.com/ml-explore/mlx-lm

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jlsrls/mainsweep-kl1000-s1-realign` es un modelo de lenguaje de pequeño tamaño, resultado de un ajuste fino (fine-tuning) mediante entrenamiento supervisado (SFT) sobre el modelo base `unsloth/Llama-3.2-1B-Instruct`. Ha sido desarrollado por el usuario `jlsrls` y entrenado con las librerías TRL y Unsloth, tal como se refleja en las etiquetas del repositorio de HuggingFace.
+`jlsrls/mainsweep-kl1000-s1-realign` es un modelo de lenguaje de pequeño tamaño, resultado de un ajuste fino (fine-tuning) mediante entrenamiento supervisado (SFT) sobre el modelo base `unsloth/Llama-3.2-1B-Instruct`. Ha sido desarrollado por el usuario `jlsrls` y entrenado con las librerías TRL y Unsloth, tal como se refleja en las etiquetas del repositorio de Hugging Face.
 
 El modelo se presenta como un experimento de fine-tuning con un tamaño de repositorio de 1,7 GB, lo que lo sitúa en la categoría de modelos ligeros, aptos para entornos con recursos limitados. Sin embargo, la información disponible es muy escasa: no se especifica la licencia, los idiomas soportados, los datos de entrenamiento ni las capacidades concretas. La relevancia actual de este modelo es limitada, ya que no se han publicado benchmarks ni documentación técnica más allá del código de ejemplo de generación de texto.
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - No se han publicado requisitos oficiales de VRAM para este modelo.
 - El tamaño del repositorio es de 1,7 GB, lo que sugiere que el modelo puede cargarse en una GPU con al menos 4 GB de VRAM, pero no hay confirmación oficial.
 - No se especifican GPUs recomendadas. Dado el tamaño del modelo base (1B), podría ejecutarse en GPUs de consumo como RTX 3060 o superiores, así como en CPU, pero esto no está documentado.
-- Opciones de despliegue: el README muestra un ejemplo de uso con la librería Transformers, por lo que es compatible con el ecosistema de HuggingFace. No se mencionan integraciones con vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: el README muestra un ejemplo de uso con la librería Transformers, por lo que es compatible con el ecosistema de Hugging Face. No se mencionan integraciones con vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -66,8 +66,8 @@ No se dispone de información sobre modelos comparables. La única referencia di
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| unsloth/Llama-3.2-1B-Instruct | no disponible | no disponible | no disponible | HuggingFace |
-| jlsrls/mainsweep-kl1000-s1-realign | no disponible | no disponible | no disponible | HuggingFace |
+| unsloth/Llama-3.2-1B-Instruct | no disponible | no disponible | no disponible | Hugging Face |
+| jlsrls/mainsweep-kl1000-s1-realign | no disponible | no disponible | no disponible | Hugging Face |
 
 La comparativa se limita al hecho de que este modelo es un fine-tune del anterior. No se han encontrado datos de rendimiento ni de licencias que permitan una comparación más completa.
 
@@ -81,6 +81,6 @@ La comparativa se limita al hecho de que este modelo es un fine-tune del anterio
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jlsrls/mainsweep-kl1000-s1-realign
+- Repositorio en Hugging Face: https://huggingface.co/jlsrls/mainsweep-kl1000-s1-realign
 - Modelo base: https://huggingface.co/unsloth/Llama-3.2-1B-Instruct
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/rezvani-portland-state-university/clarifying-em/runs/0b437qq3

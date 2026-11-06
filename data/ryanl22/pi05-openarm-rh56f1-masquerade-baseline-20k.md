@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto / horizonte | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| pi05-openarm-rh56f1-masquerade-baseline-20k (este) | 4.143.404.816 | chunks de 50 acciones a 20 Hz | apache-2.0 | HuggingFace, 0 descargas, 0 likes | Receta de overlay con render MuJoCo sobre vídeo humano y de robot |
-| RyanL22/pi05-openarm-rh56f1-egomimic-baseline-20k (baseline hermano) | no disponible | no disponible | no disponible | HuggingFace | Mismo experimento con máscara negra y línea roja en lugar del render Masquerade |
-| lerobot/pi05_base (modelo base) | no disponible | no disponible | no disponible | HuggingFace (librería lerobot) | Punto de partida sin ajustar; el autor no publica sus especificaciones en esta ficha |
+| pi05-openarm-rh56f1-masquerade-baseline-20k (este) | 4.143.404.816 | chunks de 50 acciones a 20 Hz | apache-2.0 | Hugging Face, 0 descargas, 0 likes | Receta de overlay con render MuJoCo sobre vídeo humano y de robot |
+| RyanL22/pi05-openarm-rh56f1-egomimic-baseline-20k (baseline hermano) | no disponible | no disponible | no disponible | Hugging Face | Mismo experimento con máscara negra y línea roja en lugar del render Masquerade |
+| lerobot/pi05_base (modelo base) | no disponible | no disponible | no disponible | Hugging Face (librería lerobot) | Punto de partida sin ajustar; el autor no publica sus especificaciones en esta ficha |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada.
 
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RyanL22/pi05-openarm-rh56f1-masquerade-baseline-20k
+- Modelo en Hugging Face: https://huggingface.co/RyanL22/pi05-openarm-rh56f1-masquerade-baseline-20k
 - Baseline hermano (máscara negra y línea roja): https://huggingface.co/RyanL22/pi05-openarm-rh56f1-egomimic-baseline-20k
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Librería LeRobot: https://github.com/huggingface/lerobot

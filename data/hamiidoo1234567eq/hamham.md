@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hamiidoo1234567eq/hamham` es un repositorio publicado en HuggingFace por el usuario `hamiidoo1234567eq` el 24 de septiembre de 2026. La informacion disponible sobre el es minima: no se declara pipeline, no se declaran idiomas soportados, no hay resultados de benchmarks ni documentacion tecnica mas alla de una model card que unicamente contiene la linea `license: mit`. El repositorio acumula 0 descargas y 1 "like" en el momento de la consulta.
+`hamiidoo1234567eq/hamham` es un repositorio publicado en Hugging Face por el usuario `hamiidoo1234567eq` el 24 de septiembre de 2026. La informacion disponible sobre el es minima: no se declara pipeline, no se declaran idiomas soportados, no hay resultados de benchmarks ni documentacion tecnica mas alla de una model card que unicamente contiene la linea `license: mit`. El repositorio acumula 0 descargas y 1 "like" en el momento de la consulta.
 
 No es posible determinar que tipo de modelo es (lenguaje, vision, audio, multimodal u otro), ni su arquitectura, su numero de parametros o su longitud de contexto, porque el autor no ha publicado esa informacion. Tampoco existe documentacion externa asociada: la busqueda web realizada no ha devuelto ningun resultado relevante sobre este modelo, solo paginas genericas de servicios de Google sin relacion con el repositorio.
 
@@ -58,7 +58,7 @@ Advertencia previa: al no existir informacion verificada sobre arquitectura, tam
 - Clasificacion o etiquetado de textos: uso tipico de modelos pequenos de la comunidad, pero sin datos de entrenamiento ni evaluacion no puede confirmarse su idoneidad ni su precision esperada.
 - Fine-tuning especifico de dominio: la licencia MIT facilita reentrenar el modelo sobre datos propios y redistribuir el resultado, aunque se desconoce el coste computacional al no conocerse el numero de parametros.
 - Despliegue en entornos con requisitos de licencia laxa: adecuado para productos donde las licencias copyleft o con clausulas de uso aceptable no son viables, sujeto a la validacion tecnica del modelo.
-- Uso educativo o de investigacion sobre modelos de la comunidad: puede servir como ejemplo de publicacion en HuggingFace, aunque en su estado actual carece de la documentacion minima exigible para un estudio reproducible.
+- Uso educativo o de investigacion sobre modelos de la comunidad: puede servir como ejemplo de publicacion en Hugging Face, aunque en su estado actual carece de la documentacion minima exigible para un estudio reproducible.
 
 ## Benchmarks y rendimiento
 
@@ -89,7 +89,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hamiidoo1234567eq/hamham
+- Repositorio en Hugging Face: https://huggingface.co/hamiidoo1234567eq/hamham
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
 - Repositorio de codigo: no disponible

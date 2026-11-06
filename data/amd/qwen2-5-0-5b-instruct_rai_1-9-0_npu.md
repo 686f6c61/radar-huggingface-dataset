@@ -71,7 +71,7 @@ La diferencia principal frente al modelo original de Qwen no esta en capacidades
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): es necesario aceptar las condiciones en HuggingFace antes de descargar el modelo.
+- Acceso restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de descargar el modelo.
 - Dependencia de hardware especifico: el artefacto esta pensado para NPU Ryzen AI con RAI 1.9.0; no es portable a otros aceleradores sin reconversion.
 - Modelo de 0,5B parametros: capacidad limitada de razonamiento, matematicas y codigo complejo; propenso a errores en tareas que requieran conocimiento profundo.
 - Riesgo de alucinacion inherente a los modelos de lenguaje de este tamano, especialmente en dominios especializados.
@@ -82,7 +82,7 @@ La diferencia principal frente al modelo original de Qwen no esta en capacidades
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amd/Qwen2.5-0.5B-Instruct_rai_1.9.0_npu
+- Modelo en Hugging Face: https://huggingface.co/amd/Qwen2.5-0.5B-Instruct_rai_1.9.0_npu
 - Modelo base Qwen2.5-0.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Repositorio de Qwen2.5: https://github.com/QwenLM/Qwen2.5
 - Ryzen AI (AMD): https://www.amd.com/en/products/software/ryzen-ai.html

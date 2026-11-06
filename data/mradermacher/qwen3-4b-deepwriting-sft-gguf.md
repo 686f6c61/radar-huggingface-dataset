@@ -77,7 +77,7 @@ La comparativa se basa en características generales, ya que no se dispone de be
 
 ## Enlaces
 
-- [Modelo cuantizado en HuggingFace](https://huggingface.co/mradermacher/Qwen3-4B-DeepWriting-SFT-GGUF)
+- [Modelo cuantizado en Hugging Face](https://huggingface.co/mradermacher/Qwen3-4B-DeepWriting-SFT-GGUF)
 - [Modelo base (ChuGyouk/Qwen3-4B-DeepWriting-SFT)](https://huggingface.co/ChuGyouk/Qwen3-4B-DeepWriting-SFT)
 - [Repositorio oficial de Qwen3 en GitHub](https://github.com/QwenLM/Qwen3.8)
-- [Página de modelos de mradermacher en HuggingFace](https://huggingface.co/mradermacher)
+- [Página de modelos de mradermacher en Hugging Face](https://huggingface.co/mradermacher)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Timur1Flash es un modelo de lenguaje publicado por el usuario VoidOaz en HuggingFace bajo el identificador VoidOaz/Timur1Flash. Se trata de un modelo de aproximadamente 1.543.714.304 parametros (unos 1,54 mil millones), almacenado exclusivamente en formato safetensors y etiquetado con la arquitectura qwen2, lo que lo situa en la familia de transformers decoder-only de Qwen2 en su variante de 1,5 B de parametros. La licencia declarada es Apache 2.0, lo que permite uso comercial sin restricciones adicionales de atribucion mas alla de las habituales de esa licencia.
+Timur1Flash es un modelo de lenguaje publicado por el usuario VoidOaz en Hugging Face bajo el identificador VoidOaz/Timur1Flash. Se trata de un modelo de aproximadamente 1.543.714.304 parametros (unos 1,54 mil millones), almacenado exclusivamente en formato safetensors y etiquetado con la arquitectura qwen2, lo que lo situa en la familia de transformers decoder-only de Qwen2 en su variante de 1,5 B de parametros. La licencia declarada es Apache 2.0, lo que permite uso comercial sin restricciones adicionales de atribucion mas alla de las habituales de esa licencia.
 
 La relevancia del modelo es en este momento limitada y dificil de evaluar: el repositorio no incluye pipeline declarado, no especifica idiomas soportados, la model card se reduce practicamente al bloque de metadatos de licencia y no se ha publicado ninguna descripcion de arquitectura, dataset de entrenamiento, proceso de alineacion ni resultados de evaluacion. El modelo acumula 0 descargas y 1 like en el momento de la consulta, y las busquedas web asociadas no devuelven ningun resultado relacionado con el modelo (los resultados obtenidos corresponden a un portal de pagos de una compania electrica y no guardan relacion alguna).
 
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento de Timur1Flash, por lo que la comparativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VoidOaz/Timur1Flash
+- Modelo en Hugging Face: https://huggingface.co/VoidOaz/Timur1Flash
 - Repositorio de Qwen2 (arquitectura de referencia): https://github.com/QwenLM/Qwen2
 - Paper de Qwen2: https://arxiv.org/abs/2407.10671
 - No se han encontrado papers, blogs, repositorios de codigo, demos ni articulos tecnicos asociados especificamente a Timur1Flash en las busquedas web realizadas.

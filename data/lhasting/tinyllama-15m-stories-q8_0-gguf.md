@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`lhasting/tinyllama-15M-stories-Q8_0-GGUF` es una version cuantizada en formato GGUF del modelo `ModelCloud/tinyllama-15M-stories`, un transformer decoder-only de la familia TinyLlama con tan solo 15.191.712 parametros, ajustado para la generacion de relatos cortos. La conversion a GGUF la ha realizado el usuario lhasting mediante el espacio de HuggingFace GGUF-my-repo de ggml.ai, que emplea llama.cpp como herramienta de conversion. El resultado es un artefacto de muy bajo peso pensado para ejecutarse en llama.cpp y runtimes compatibles.
+`lhasting/tinyllama-15M-stories-Q8_0-GGUF` es una version cuantizada en formato GGUF del modelo `ModelCloud/tinyllama-15M-stories`, un transformer decoder-only de la familia TinyLlama con tan solo 15.191.712 parametros, ajustado para la generacion de relatos cortos. La conversion a GGUF la ha realizado el usuario lhasting mediante el espacio de Hugging Face GGUF-my-repo de ggml.ai, que emplea llama.cpp como herramienta de conversion. El resultado es un artefacto de muy bajo peso pensado para ejecutarse en llama.cpp y runtimes compatibles.
 
 El modelo resuelve un nicho muy concreto: generacion de texto narrativo breve con un coste computacional minimo. Por su tamano (15 millones de parametros), no compite con modelos de proposito general ni con asistentes conversacionales actuales; su interes radica en servir como banco de pruebas para pipelines de inferencia, demos educativas, experimentos de cuantizacion y despliegues en entornos con recursos extremadamente limitados, incluyendo CPU o dispositivos embebidos.
 
-La relevancia de esta ficha es doble: por un lado documenta un caso de cuantizacion Q8_0 sobre un modelo diminuto; por otro, advierte de que el repositorio no incluye model card propia mas alla de las instrucciones genericas de llama.cpp, carece de benchmarks publicados y acumula cero descargas y cero likes en el momento de redactar esta ficha. Toda la informacion tecnica procede del repositorio base y de los metadatos de HuggingFace.
+La relevancia de esta ficha es doble: por un lado documenta un caso de cuantizacion Q8_0 sobre un modelo diminuto; por otro, advierte de que el repositorio no incluye model card propia mas alla de las instrucciones genericas de llama.cpp, carece de benchmarks publicados y acumula cero descargas y cero likes en el momento de redactar esta ficha. Toda la informacion tecnica procede del repositorio base y de los metadatos de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -33,7 +33,7 @@ Tampoco hay datos disponibles sobre el volumen de tokens de entrenamiento, la co
 - Generacion de texto autoregresiva basica, limitada por el reducido numero de parametros.
 - Inferencia local en CPU y GPU de gama baja gracias al formato GGUF y al tamano minimo del fichero.
 - Compatible con el ecosistema llama.cpp: `llama-cli`, `llama-server` y binarios derivados.
-- Tag `endpoints_compatible` en HuggingFace, lo que indica compatibilidad con el sistema de endpoints de la plataforma.
+- Tag `endpoints_compatible` en Hugging Face, lo que indica compatibilidad con el sistema de endpoints de la plataforma.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes o razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no documentadas.
@@ -87,7 +87,7 @@ Alternativas comparables con datos publicados: no disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/lhasting/tinyllama-15M-stories-Q8_0-GGUF
+- Repositorio Hugging Face: https://huggingface.co/lhasting/tinyllama-15M-stories-Q8_0-GGUF
 - Modelo base: https://huggingface.co/ModelCloud/tinyllama-15M-stories
 - Espacio de conversion GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio llama.cpp: https://github.com/ggerganov/llama.cpp

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`giorgiarizzo/generation` es un repositorio experimental alojado en HuggingFace que contiene una implementación propia y reducida de una arquitectura **Swin T** orientada a tareas de **generación**. Lo publica el usuario `giorgiarizzo` y se presenta explícitamente, en su propia model card, como un esqueleto de código para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, no como un modelo entrenado. El repositorio incluye `eval.py` como artefacto principal, un `config.json` con la configuración de arquitectura, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que el autor describe como checkpoint de inicialización válido para pruebas de humo.
+`giorgiarizzo/generation` es un repositorio experimental alojado en Hugging Face que contiene una implementación propia y reducida de una arquitectura **Swin T** orientada a tareas de **generación**. Lo publica el usuario `giorgiarizzo` y se presenta explícitamente, en su propia model card, como un esqueleto de código para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, no como un modelo entrenado. El repositorio incluye `eval.py` como artefacto principal, un `config.json` con la configuración de arquitectura, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que el autor describe como checkpoint de inicialización válido para pruebas de humo.
 
 El dato de parámetros registrado en el fichero safetensors es de **16.576 parámetros totales** (dieciséis mil quinientos setenta y seis), una cifra muy inferior a la de un Swin-T completo, lo que concuerda con la naturaleza de inicialización del checkpoint y con el tamaño declarado del repositorio (0,0 GB). El repositorio acumula 0 descargas y 0 likes, y no declara pipeline de inferencia ni idiomas soportados.
 
@@ -99,7 +99,7 @@ La diferencia relevante no es de rendimiento, sino de naturaleza: los modelos of
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/giorgiarizzo/generation
+- Repositorio en Hugging Face: https://huggingface.co/giorgiarizzo/generation
 - Ficheros incluidos en el repositorio: `eval.py` (artefacto principal), `README.md`, `config.json` (configuración de arquitectura), `training_args.json` (receta de experimento por defecto), `model.safetensors` (checkpoint de inicialización)
 - Paper o blog del autor: no disponible
 - Repositorio de código adicional: no disponible

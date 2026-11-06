@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks comparativos entre esta conversión y alter
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/piotrkosecki/Mistral-Large-4-1T-A52B-EXL3-3.0bpw
+- Repositorio Hugging Face: https://huggingface.co/piotrkosecki/Mistral-Large-4-1T-A52B-EXL3-3.0bpw
 - Modelo base: https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B
 - Receta de despliegue en 4x Spark: https://huggingface.co/piotrkosecki/Mistral-Large-4-1T-A52B-EXL3-3.0bpw/tree/main/recipes/4x-spark
 - Model card original copiada: README.upstream.md en el repositorio

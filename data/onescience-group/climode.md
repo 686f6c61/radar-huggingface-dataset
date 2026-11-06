@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ClimODE es un modelo de pronóstico meteorológico y climático basado en ecuaciones diferenciales ordinarias neuronales (Neural ODE) con un sesgo inductivo físico de transporte. Fue propuesto en 2024 por investigadores de la Universidad Aalto y otras instituciones colaboradoras, y esta versión en HuggingFace es una adaptación realizada por OneScience-Group, no el lanzamiento oficial del grupo Aalto-QuML. El modelo modela la evolución atmosférica como un sistema dinámico en tiempo continuo, lo que permite predicciones a escala global, mensual y regional con estimaciones de incertidumbre.
+ClimODE es un modelo de pronóstico meteorológico y climático basado en ecuaciones diferenciales ordinarias neuronales (Neural ODE) con un sesgo inductivo físico de transporte. Fue propuesto en 2024 por investigadores de la Universidad Aalto y otras instituciones colaboradoras, y esta versión en Hugging Face es una adaptación realizada por OneScience-Group, no el lanzamiento oficial del grupo Aalto-QuML. El modelo modela la evolución atmosférica como un sistema dinámico en tiempo continuo, lo que permite predicciones a escala global, mensual y regional con estimaciones de incertidumbre.
 
 La relevancia de ClimODE radica en su enfoque physics-informed: en lugar de tratar el pronóstico como una tarea puramente estadística, incorpora la ecuación de transporte como restricción física dentro de la red neuronal, mejorando la coherencia dinámica de las predicciones. Está entrenado con datos ERA5, utilizando cinco variables atmosféricas (geopotencial, temperatura, temperatura a 2 metros, y componentes del viento a 10 metros) rejilladas a una resolución de 32x64 grados. Es una alternativa ligera y eficiente a los modelos operativos tradicionales, con aplicaciones en investigación y predicción operativa.
 
@@ -65,14 +65,14 @@ No se dispone de información suficiente para comparar ClimODE con otros modelos
 - Resolución espacial limitada (32x64 grados), muy inferior a la de los modelos operativos de alta resolución; no apto para predicciones detalladas a escala de ciudad.
 - Solo cinco variables atmosféricas; no cubre precipitación, humedad, radiación u otras variables relevantes.
 - Los datos sintéticos generados con fake_data.py no representan ERA5 y no pueden reproducir las métricas del paper.
-- La versión de HuggingFace es una adaptación de OneScience, no el lanzamiento oficial del grupo Aalto-QuML; puede haber diferencias con el modelo original.
+- La versión de Hugging Face es una adaptación de OneScience, no el lanzamiento oficial del grupo Aalto-QuML; puede haber diferencias con el modelo original.
 - Los pesos oficiales del modelo aún no están disponibles ("will be uploaded soon"), por lo que el checkpoint de entrenamiento debe generarse localmente.
 - No es un modelo de lenguaje; no soporta generación de texto ni interacción conversacional.
 - Licencia Apache-2.0 permite uso comercial, pero se debe citar el paper original y la adaptación según las condiciones de OneScience.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OneScience-Group/ClimODE
+- Modelo en Hugging Face: https://huggingface.co/OneScience-Group/ClimODE
 - Paper arXiv: https://arxiv.org/abs/2404.10024
 - Dataset ERA5 (OneScience): https://huggingface.co/datasets/OneScience/ERA5
 - Repositorio OneScience (GitHub): https://github.com/onescience-ai/OneScience

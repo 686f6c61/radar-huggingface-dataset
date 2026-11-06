@@ -66,7 +66,7 @@ No se dispone de información sobre modelos comparables en la misma categoría. 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/krzysztofkrawc/research-classification
+- Repositorio en Hugging Face: https://huggingface.co/krzysztofkrawc/research-classification
 - Sitio personal del posible autor (Krzysztof Krawiec): https://www.cs.put.poznan.pl/kkrawiec/
 - Perfil de Google Scholar: https://scholar.google.com/citations?user=Zt939gYAAAAJ&hl=en
 - Perfil en ResearchGate: https://www.researchgate.net/profile/Krzysztof-Krawiec

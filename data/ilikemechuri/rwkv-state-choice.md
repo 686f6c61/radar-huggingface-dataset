@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ilikemechuri/rwkv-state-choice es un repositorio de modelo alojado en HuggingFace por el usuario Ilikemechuri, publicado con licencia Apache 2.0. En el momento de redactar esta ficha, la informacion publica disponible es minima: no hay model card con descripcion tecnica (unicamente el bloque de metadatos con la licencia), no se declara pipeline de inferencia, no se declaran idiomas soportados, no hay descargas ni likes registrados y no existe documentacion asociada sobre arquitectura, entrenamiento o evaluacion. El repositorio fue creado y actualizado en la misma marca temporal (25 de septiembre de 2026), lo que sugiere una publicacion sin mantenimiento posterior.
+Ilikemechuri/rwkv-state-choice es un repositorio de modelo alojado en Hugging Face por el usuario Ilikemechuri, publicado con licencia Apache 2.0. En el momento de redactar esta ficha, la informacion publica disponible es minima: no hay model card con descripcion tecnica (unicamente el bloque de metadatos con la licencia), no se declara pipeline de inferencia, no se declaran idiomas soportados, no hay descargas ni likes registrados y no existe documentacion asociada sobre arquitectura, entrenamiento o evaluacion. El repositorio fue creado y actualizado en la misma marca temporal (25 de septiembre de 2026), lo que sugiere una publicacion sin mantenimiento posterior.
 
 El identificador del repositorio contiene el termino "rwkv", lo que apunta nominalmente a la familia de arquitecturas RWKV (Receptance Weighted Key Value), un modelo de atencion lineal con formulacion recurrente que permite inferencia con coste constante en memoria respecto a la longitud de secuencia. El sufijo "state-choice" podria relacionarse con tecnicas de ajuste o seleccion de estado recurrente dentro de esa familia, pero esto es una inferencia a partir del nombre y no un dato confirmado por el autor en la informacion disponible. No hay ningun artefacto, tabla de resultados ni configuracion publicada que permita verificarlo.
 
@@ -85,6 +85,6 @@ No disponible. No es posible establecer una comparativa fiable sin conocer el nu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ilikemechuri/rwkv-state-choice
+- Repositorio en Hugging Face: https://huggingface.co/Ilikemechuri/rwkv-state-choice
 - Paper, blog, repositorio de codigo o demo: no disponibles.
 - Nota: la busqueda web realizada no devolvio ningun enlace relevante sobre este modelo.

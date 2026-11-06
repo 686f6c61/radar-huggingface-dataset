@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `longtermrisk/OLMo-3-7B-german-city-names-first-third-v2-sft-seed3` es un fine-tune supervisado (SFT) del modelo base `unsloth/Olmo-3-7B-Instruct`, desarrollado por el usuario `longtermrisk`. Se trata de una adaptación del modelo OLMo-3-7B, un modelo de lenguaje de 7.000 millones de parámetros entrenado por el Allen Institute for AI, ajustado aquí mediante la librería Unsloth y el framework TRL de HuggingFace para acelerar el entrenamiento. El nombre sugiere un ajuste específico sobre nombres de ciudades alemanas, aunque no se detalla el propósito exacto ni el dataset utilizado. La licencia es Apache-2.0, lo que permite uso comercial y modificación.
+El modelo `longtermrisk/OLMo-3-7B-german-city-names-first-third-v2-sft-seed3` es un fine-tune supervisado (SFT) del modelo base `unsloth/Olmo-3-7B-Instruct`, desarrollado por el usuario `longtermrisk`. Se trata de una adaptación del modelo OLMo-3-7B, un modelo de lenguaje de 7.000 millones de parámetros entrenado por el Allen Institute for AI, ajustado aquí mediante la librería Unsloth y el framework TRL de Hugging Face para acelerar el entrenamiento. El nombre sugiere un ajuste específico sobre nombres de ciudades alemanas, aunque no se detalla el propósito exacto ni el dataset utilizado. La licencia es Apache-2.0, lo que permite uso comercial y modificación.
 
-Este modelo se publica en el ecosistema de HuggingFace con formato `safetensors` y es compatible con `transformers` y `text-generation-inference`. Al ser un fine-tune de un modelo instructivo, está orientado a tareas de generación de texto conversacional. Su relevancia radica en ser un ejemplo de ajuste eficiente con Unsloth, aunque carece de documentación técnica detallada sobre su entrenamiento o rendimiento.
+Este modelo se publica en el ecosistema de Hugging Face con formato `safetensors` y es compatible con `transformers` y `text-generation-inference`. Al ser un fine-tune de un modelo instructivo, está orientado a tareas de generación de texto conversacional. Su relevancia radica en ser un ejemplo de ajuste eficiente con Unsloth, aunque carece de documentación técnica detallada sobre su entrenamiento o rendimiento.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ Este modelo se publica en el ecosistema de HuggingFace con formato `safetensors`
 
 ## Arquitectura y entrenamiento
 
-La información proporcionada no incluye detalles sobre la arquitectura interna más allá de que se basa en `unsloth/Olmo-3-7B-Instruct`. OLMo-3 es una familia de modelos transformer autoregresivos desarrollada por el Allen Institute for AI, con atención causal y entrenamiento en grandes volúmenes de texto. Sin embargo, para este fine-tune concreto no se especifican hiperparámetros, número de tokens de entrenamiento, composición del dataset ni si se aplicaron técnicas de RLHF o DPO. El README indica que se utilizó Unsloth para acelerar el entrenamiento y la librería TRL de HuggingFace, lo que sugiere un pipeline de ajuste supervisado estándar. El nombre del modelo sugiere un dataset relacionado con nombres de ciudades alemanas, pero no hay confirmación.
+La información proporcionada no incluye detalles sobre la arquitectura interna más allá de que se basa en `unsloth/Olmo-3-7B-Instruct`. OLMo-3 es una familia de modelos transformer autoregresivos desarrollada por el Allen Institute for AI, con atención causal y entrenamiento en grandes volúmenes de texto. Sin embargo, para este fine-tune concreto no se especifican hiperparámetros, número de tokens de entrenamiento, composición del dataset ni si se aplicaron técnicas de RLHF o DPO. El README indica que se utilizó Unsloth para acelerar el entrenamiento y la librería TRL de Hugging Face, lo que sugiere un pipeline de ajuste supervisado estándar. El nombre del modelo sugiere un dataset relacionado con nombres de ciudades alemanas, pero no hay confirmación.
 
 ## Capacidades
 
@@ -37,7 +37,7 @@ La información proporcionada no incluye detalles sobre la arquitectura interna 
 - Investigación en ajuste de modelos: como caso de estudio para comparar resultados de SFT con otros métodos.
 - Prototipado de chatbots: al ser un modelo instructivo, puede integrarse en demos de conversación básica.
 - Evaluación de modelos fine-tuneados: para medir el impacto del ajuste en tareas específicas frente al modelo base.
-- Uso educativo: para aprender a publicar y compartir modelos en HuggingFace.
+- Uso educativo: para aprender a publicar y compartir modelos en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -62,6 +62,6 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/longtermrisk/OLMo-3-7B-german-city-names-first-third-v2-sft-seed3)
+- [Modelo en Hugging Face](https://huggingface.co/longtermrisk/OLMo-3-7B-german-city-names-first-third-v2-sft-seed3)
 - [Unsloth (librería de entrenamiento)](https://github.com/unslothai/unsloth)
-- [TRL (librería de HuggingFace)](https://github.com/huggingface/trl)
+- [TRL (librería de Hugging Face)](https://github.com/huggingface/trl)

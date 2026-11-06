@@ -108,7 +108,7 @@ La comparacion se limita a parametros, contexto y licencia, porque no hay datos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Smilyai-labs/Mira-1-large-0919
+- Modelo en Hugging Face: https://huggingface.co/Smilyai-labs/Mira-1-large-0919
 - Modelo base declarado: Bc-AI/Nova-2-Large (no se ha podido verificar la URL en la informacion disponible)
 - Origen fundacional: Qwen3-14B (familia Qwen3)
 - Paper, blog, repositorio o demo adicionales: no disponible. La busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo.

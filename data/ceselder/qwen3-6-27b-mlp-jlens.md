@@ -79,10 +79,10 @@ El unico dato cuantitativo aportado es la similitud coseno entre la composicion 
 
 | Alternativa | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `ceselder/qwen3.6-27b-mlp-jlens` | Mapas jacobianos MLP de la capa 42 sobre Qwen3.6-27B | No aplica (0,6 GB de tensores; `d = 5120`, `d_ff = 17408`) | No aplica | `other` | HuggingFace, 0 descargas |
-| `camilablank/workspace-lenses` | Lentes jacobianas de espacio de trabajo (`J` por capa) | No aplica | No aplica | No disponible en la informacion proporcionada | HuggingFace; es la fuente de `J_42` |
+| `ceselder/qwen3.6-27b-mlp-jlens` | Mapas jacobianos MLP de la capa 42 sobre Qwen3.6-27B | No aplica (0,6 GB de tensores; `d = 5120`, `d_ff = 17408`) | No aplica | `other` | Hugging Face, 0 descargas |
+| `camilablank/workspace-lenses` | Lentes jacobianas de espacio de trabajo (`J` por capa) | No aplica | No aplica | No disponible en la informacion proporcionada | Hugging Face; es la fuente de `J_42` |
 | *Logit lens* clasico | Tecnica de lectura, no un artefacto publicado como tal | No aplica | No aplica | No aplica | Implementable sobre cualquier transformer |
-| SAE de una capa concreta (por ejemplo, familias tipo Gemma Scope) | Diccionario disperso entrenado para leer features | No aplica | No aplica | No disponible en la informacion proporcionada | HuggingFace |
+| SAE de una capa concreta (por ejemplo, familias tipo Gemma Scope) | Diccionario disperso entrenado para leer features | No aplica | No aplica | No disponible en la informacion proporcionada | Hugging Face |
 
 No hay datos de rendimiento comparables entre estas opciones en la informacion disponible; la comparacion relevante es metodologica (jacobiano medio exacto frente a composicion de primer orden, y lectura de concepto frente a features de SAE), no de metricas.
 
@@ -102,7 +102,7 @@ No hay datos de rendimiento comparables entre estas opciones en la informacion d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ceselder/qwen3.6-27b-mlp-jlens
+- Repositorio Hugging Face: https://huggingface.co/ceselder/qwen3.6-27b-mlp-jlens
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B
 - Lentes de espacio de trabajo (fuente de las matrices `J`): https://huggingface.co/camilablank/workspace-lenses
 - La busqueda web realizada no devolvio ningun resultado relevante para este modelo: los resultados recibidos correspondian al motor de videojuegos GDevelop (`https://gdevelop.io/`, `https://gdevelop.io/download`, `https://editor.gdevelop.io/`, `https://apps.microsoft.com/detail/9ngs8qr5d9pl`, `https://gdevelop.io/game-makers`) y no guardan relacion con el artefacto descrito. No se dispone por tanto de paper, blog o repositorio adicional que enlazar.

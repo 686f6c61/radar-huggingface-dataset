@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`artefactory/epr-mistral-small` no es un modelo generativo, sino un detector de alucinaciones calibrado y empaquetado como un clasificador de scikit-learn. Concretamente, el artefacto alojado en HuggingFace es una regresion logistica ajustada sobre una unica caracteristica: la tasa de produccion de entropia (EPR, Entropy Production Rate) calculada a partir de las log-probabilidades por token de una respuesta. La EPR trunca la distribucion del token a los 15 rangos mas probables, calcula la entropia `-sum_k p_k ln p_k` y la promedia a lo largo de todos los tokens de la respuesta, colapsando toda la informacion de incertidumbre en un solo numero.
+`artefactory/epr-mistral-small` no es un modelo generativo, sino un detector de alucinaciones calibrado y empaquetado como un clasificador de scikit-learn. Concretamente, el artefacto alojado en Hugging Face es una regresion logistica ajustada sobre una unica caracteristica: la tasa de produccion de entropia (EPR, Entropy Production Rate) calculada a partir de las log-probabilidades por token de una respuesta. La EPR trunca la distribucion del token a los 15 rangos mas probables, calcula la entropia `-sum_k p_k ln p_k` y la promedia a lo largo de todos los tokens de la respuesta, colapsando toda la informacion de incertidumbre en un solo numero.
 
 El modelo objetivo es `mistralai/Mistral-Small-3.1-24B-Instruct-2503`: el detector puntua respuestas producidas por ese modelo concreto. No es un fine-tune suyo ni contiene ninguno de sus pesos, y sus coeficientes estan ajustados contra la distribucion de salida de ese modelo, por lo que reutilizarlos con otro generador carece de sentido estadistico. Lo desarrolla Artefact Research Center y se presenta en el articulo *Learned Hallucination Detection in Black-Box LLMs Using Token-Level Entropy Production Rate* (ECIR 2026).
 
@@ -33,7 +33,7 @@ Su relevancia practica es la de un guardarraíl barato: al reducir la deteccion 
 
 ## Arquitectura y entrenamiento
 
-El pipeline tiene dos piezas separadas. La extraccion de caracteristicas vive en la libreria `artefactual` (repositorio `artefactory/artefactual`) y consiste en parsear las 15 log-probabilidades superiores de cada token de una respuesta compatible con el esquema de chat completions de OpenAI, calcular la entropia truncada y promediarla sobre la respuesta completa. El repositorio de HuggingFace contiene unicamente el `LogisticRegression` ajustado, sin clases personalizadas, lo que permite cargarlo con una lista `trusted` vacia.
+El pipeline tiene dos piezas separadas. La extraccion de caracteristicas vive en la libreria `artefactual` (repositorio `artefactory/artefactual`) y consiste en parsear las 15 log-probabilidades superiores de cada token de una respuesta compatible con el esquema de chat completions de OpenAI, calcular la entropia truncada y promediarla sobre la respuesta completa. El repositorio de Hugging Face contiene unicamente el `LogisticRegression` ajustado, sin clases personalizadas, lo que permite cargarlo con una lista `trusted` vacia.
 
 La innovacion es la reduccion de dimensionalidad del problema: en lugar de agregar docenas de estadisticos de incertidumbre (varianza de muestreos, consistencia semantica, perplejidad), el metodo condensa la senal en una sola variable y ajusta un unico coeficiente. Esto hace que el detector sea calibrable con conjuntos etiquetados pequenos y que su comportamiento sea interpretable directamente a partir del signo y magnitud del coeficiente. No se publican en la model card detalles sobre el numero de ejemplos de entrenamiento, la composicion del dataset de ajuste, ni si hubo etapas de RLHF o DPO (no aplica en un clasificador de este tipo). El articulo asociado (ECIR 2026) reporta ROC-AUC y PR-AUC sobre los modelos evaluados, pero la model card no reproduce esas cifras deliberadamente para evitar divergencias con la publicacion.
 
@@ -98,7 +98,7 @@ La comparativa se limita a la naturaleza metodologica: no se dispone de cifras c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/artefactory/epr-mistral-small
+- Modelo en Hugging Face: https://huggingface.co/artefactory/epr-mistral-small
 - Modelo objetivo: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503
 - Libreria `artefactual`: https://github.com/artefactory/artefactual
 - Incidencias y contacto: https://github.com/artefactory/artefactual/issues

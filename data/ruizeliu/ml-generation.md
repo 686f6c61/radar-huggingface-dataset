@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Ruizeliu/ml-generation` es un repositorio experimental publicado en HuggingFace por el usuario Ruizeliu que contiene una implementación funcional de una arquitectura híbrida orientada a tareas de generación. No se trata de un modelo entrenado ni afinado, sino de un esqueleto de código con un checkpoint de inicialización válido para pruebas de humo (smoke tests). El autor lo presenta explícitamente como un punto de partida reproducible, no como un modelo listo para producción ni para evaluación comparativa.
+`Ruizeliu/ml-generation` es un repositorio experimental publicado en Hugging Face por el usuario Ruizeliu que contiene una implementación funcional de una arquitectura híbrida orientada a tareas de generación. No se trata de un modelo entrenado ni afinado, sino de un esqueleto de código con un checkpoint de inicialización válido para pruebas de humo (smoke tests). El autor lo presenta explícitamente como un punto de partida reproducible, no como un modelo listo para producción ni para evaluación comparativa.
 
 La arquitectura declarada combina atención lineal con fusión mediante co-atención, activación swish y normalización por instancias (instancenorm), lo que la aleja del transformer estándar. El checkpoint `model.safetensors` contiene 16.576 parámetros totales, un tamaño que corresponde a una configuración "base" de juguete, sin capacidad práctica para generar texto coherente.
 
@@ -81,6 +81,6 @@ La comparación es meramente orientativa: los tres modelos alternativos son chec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ruizeliu/ml-generation
-- Repositorio de archivos (run.py, config.json, training_args.json, model.safetensors): disponible en la misma URL de HuggingFace
+- Modelo en Hugging Face: https://huggingface.co/Ruizeliu/ml-generation
+- Repositorio de archivos (run.py, config.json, training_args.json, model.safetensors): disponible en la misma URL de Hugging Face
 - Paper, blog o demo adicionales: no disponibles en la información proporcionada

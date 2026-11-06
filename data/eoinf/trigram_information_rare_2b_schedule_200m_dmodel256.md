@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `eoinf/trigram_information_rare_2b_schedule_200m_dmodel256` | no disponible (d_model=256, vocab 4096) | 256 | no disponible | HuggingFace, state-dict PyTorch |
-| Otros modelos de la rejilla `eoinf` (otras anchuras) | no disponible | 256 | no disponible | HuggingFace |
+| `eoinf/trigram_information_rare_2b_schedule_200m_dmodel256` | no disponible (d_model=256, vocab 4096) | 256 | no disponible | Hugging Face, state-dict PyTorch |
+| Otros modelos de la rejilla `eoinf` (otras anchuras) | no disponible | 256 | no disponible | Hugging Face |
 | GPT-2 small (referencia de escala similar) | 124M | 1024 | MIT | Amplia, multiples formatos |
 | Modelos de juguete tipo nanoGPT | ~10M-100M | variable | MIT | Repositorios de investigacion |
 
@@ -87,7 +87,7 @@ La comparativa con modelos de proposito general no es significativa: este modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eoinf/trigram_information_rare_2b_schedule_200m_dmodel256
+- Modelo en Hugging Face: https://huggingface.co/eoinf/trigram_information_rare_2b_schedule_200m_dmodel256
 - Tokenizer: https://huggingface.co/eoinf/pile_tokenizer_4096
 - Repositorio de codigo `synthetic_trigrams`: no disponible como enlace directo en la informacion proporcionada
 - Paper, blog o demo: no disponible

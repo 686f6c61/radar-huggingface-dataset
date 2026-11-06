@@ -17,8 +17,8 @@ La contrapartida es una dependencia muy estricta del entorno de ejecución: los 
 | Parametros activos | ~3B (denominación 35B-A3B) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | Q8_0_ROCMFPX (8 bits, escalas de bloque UE4M3) y Q6_0_ROCMFPX (6 bits, formato preview). En pruebas: Q4_0_ROCMFP4, Q4_0_ROCMFP4_FAST, Q4_0_ROCMI4, Q3_0_ROCMFPX, Q2_0_ROCMFPX |
-| Idiomas soportados | 83 idiomas de síntesis de voz según la model card del autor; los metadatos de HuggingFace no declaran idiomas |
-| Licencia | fish-audio-community-license-1.0 (etiquetada como `other` en HuggingFace) |
+| Idiomas soportados | 83 idiomas de síntesis de voz según la model card del autor; los metadatos de Hugging Face no declaran idiomas |
+| Licencia | fish-audio-community-license-1.0 (etiquetada como `other` en Hugging Face) |
 | Formato de pesos | GGUF con tipos de peso ROCmFPX (no compatibles con ggml estándar) |
 | Tamano del repositorio | 67,0 GB |
 | Descargas / likes | 0 / 0 |
@@ -78,7 +78,7 @@ Notas aportadas por el autor: la velocidad se expresa en segundos de audio gener
 |---|---|---|---|---|---|---|
 | Drama-3-ROCmFPX Q8_0 (este) | 35,8B totales / ~3B activos | GGUF ROCmFPX, 37,4 GB | no disponible | CER 3,69% / WER 3,69% | fish-audio-community-license-1.0 | Publicado; solo speech.cpp + ROCmFPX |
 | Drama-3-ROCmFPX Q6_0 (este) | 35,8B totales / ~3B activos | GGUF ROCmFPX, 29,6 GB | no disponible | CER 2,45% / WER 3,20% | fish-audio-community-license-1.0 | Publicado; solo speech.cpp + ROCmFPX |
-| fishaudio/drama-3 (base) | 35,8B totales / ~3B activos | Pesos originales del modelo base | no disponible | referencia del autor (F16: CER 2,25% / WER 2,09%) | fish-audio-community-license-1.0 | Público en HuggingFace |
+| fishaudio/drama-3 (base) | 35,8B totales / ~3B activos | Pesos originales del modelo base | no disponible | referencia del autor (F16: CER 2,25% / WER 2,09%) | fish-audio-community-license-1.0 | Público en Hugging Face |
 | Drama 3 F32 (conversion intermedia) | 35,8B totales / ~3B activos | GGUF F32, 143 GB | no disponible | no medida (no cabe en la máquina de pruebas) | fish-audio-community-license-1.0 | No publicado |
 | Drama 3 F16 (referencia) | 35,8B totales / ~3B activos | GGUF F16, 71,6 GB | no disponible | CER 2,25% / WER 2,09% | fish-audio-community-license-1.0 | No publicado |
 
@@ -102,7 +102,7 @@ No se dispone en la información proporcionada de datos de otros modelos TTS com
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Harsha001/Drama-3-ROCmFPX-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Harsha001/Drama-3-ROCmFPX-GGUF
 - Modelo base: https://huggingface.co/fishaudio/drama-3
 - Licencia (fichero del repositorio): https://huggingface.co/Harsha001/Drama-3-ROCmFPX-GGUF/blob/main/LICENSE
 - Aviso legal (fichero del repositorio): https://huggingface.co/Harsha001/Drama-3-ROCmFPX-GGUF/blob/main/NOTICE

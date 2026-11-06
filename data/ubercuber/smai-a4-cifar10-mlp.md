@@ -73,7 +73,7 @@ No se dispone de datos de rendimiento de modelos comparables en la informacion p
 
 | Modelo | Parametros | Contexto | Precision en CIFAR-10 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| UberCuber/smai-a4-cifar10-mlp | 402.250 | No aplica | 45,18% (test, particion propia) | MIT | HuggingFace |
+| UberCuber/smai-a4-cifar10-mlp | 402.250 | No aplica | 45,18% (test, particion propia) | MIT | Hugging Face |
 | CNN tipica de CIFAR-10 | No disponible | No aplica | No disponible | No disponible | No disponible |
 | Vision Transformer pequeno | No disponible | No aplica | No disponible | No disponible | No disponible |
 
@@ -90,5 +90,5 @@ No se dispone de datos de rendimiento de modelos comparables en la informacion p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/UberCuber/smai-a4-cifar10-mlp
-- Dataset CIFAR-10 en HuggingFace: https://huggingface.co/datasets/uoft-cs/cifar10
+- Modelo en Hugging Face: https://huggingface.co/UberCuber/smai-a4-cifar10-mlp
+- Dataset CIFAR-10 en Hugging Face: https://huggingface.co/datasets/uoft-cs/cifar10

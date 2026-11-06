@@ -2,7 +2,7 @@
 
 ## Resumen
 
-logicv5-GGUF-1b es una publicacion de pesos en formato GGUF subida a HuggingFace por el usuario JPQ24. El repositorio contiene una unica cuantizacion, `llama-3.2-1b-instruct.Q4_K_M.gguf`, obtenida mediante la herramienta Unsloth, y esta pensado para su uso directo con llama.cpp (`llama-cli`) o con cualquier runtime compatible con GGUF. El recuento real de parametros en safetensors es de 1.235.814.432, es decir, aproximadamente 1,24 mil millones, y el repositorio ocupa 0,8 GB.
+logicv5-GGUF-1b es una publicacion de pesos en formato GGUF subida a Hugging Face por el usuario JPQ24. El repositorio contiene una unica cuantizacion, `llama-3.2-1b-instruct.Q4_K_M.gguf`, obtenida mediante la herramienta Unsloth, y esta pensado para su uso directo con llama.cpp (`llama-cli`) o con cualquier runtime compatible con GGUF. El recuento real de parametros en safetensors es de 1.235.814.432, es decir, aproximadamente 1,24 mil millones, y el repositorio ocupa 0,8 GB.
 
 El problema que resuelve es acotado pero practico: empaquetar un modelo conversacional de ~1,2 B de parametros en un fichero cuantizado a 4 bits que quepa en memoria de una GPU de gama de entrada, en una iGPU o incluso ejecutable en CPU, sin necesidad de infraestructura de servidor. Este rango de tamano es el que interesa para inferencia local, prototipado rapido y despliegues en el borde.
 
@@ -12,7 +12,7 @@ La relevancia del repositorio es, por el momento, limitada y debe valorarse con 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible en la model card; los tags de HuggingFace indican "llama" y "conversational" |
+| Arquitectura | no disponible en la model card; los tags de Hugging Face indican "llama" y "conversational" |
 | Parametros totales | 1.235.814.432 (aproximadamente 1,24 mil millones, dato real de safetensors) |
 | Parametros activos | no aplica; no hay indicios de arquitectura de mezcla de expertos (MoE) |
 | Longitud de contexto | no disponible |
@@ -92,7 +92,7 @@ Comparativa cualitativa: frente a las alternativas, este repositorio aporta unic
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JPQ24/logicv5-GGUF-1b
+- Modelo en Hugging Face: https://huggingface.co/JPQ24/logicv5-GGUF-1b
 - Unsloth (herramienta de conversion citada en la model card): https://github.com/unslothai/unsloth
 - Resultados de la busqueda web: no se encontro ningun enlace relevante. Las consultas devolvieron exclusivamente paginas de seguimiento de paquetes (UPS, DHL, 17TRACK, Track.Global y The UPS Store), sin relacion con el modelo.
 - Paper, blog tecnico, repositorio de codigo o demo: no disponible.

@@ -79,10 +79,10 @@ No se han publicado en la informacion disponible resultados de FID, CLIP score, 
 
 | Modelo | Parametros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HSWQ SDXL ConvRot INT8 | SDXL base (no desglosado) | Limitado por CLIP (77 tokens por fragmento) | SSIM 0,94-0,98, 68 % de tamano | `other` (FAIPL-1.0-SD o CreativeML Open RAIL++-M segun checkpoint) | HuggingFace, 16 checkpoints, 0 descargas |
+| HSWQ SDXL ConvRot INT8 | SDXL base (no desglosado) | Limitado por CLIP (77 tokens por fragmento) | SSIM 0,94-0,98, 68 % de tamano | `other` (FAIPL-1.0-SD o CreativeML Open RAIL++-M segun checkpoint) | Hugging Face, 16 checkpoints, 0 descargas |
 | SDXL FP16 original | SDXL base | Limitado por CLIP | SSIM 1,0000, 100 % de tamano | CreativeML Open RAIL++-M (segun modelo base) | Amplia, referencia del ecosistema |
 | Quantizacion INT8 ingenua | SDXL base | Limitado por CLIP | SSIM 0,95-0,97, 50 % de tamano | Depende del modelo base | Metodo generico, sin pack publicado comparable |
-| nunchaku-tech/nunchaku-sdxl (SVDQ) | SDXL base | Limitado por CLIP | No disponible en la informacion proporcionada | No disponible | HuggingFace, repositorio de referencia del equipo nunchaku |
+| nunchaku-tech/nunchaku-sdxl (SVDQ) | SDXL base | Limitado por CLIP | No disponible en la informacion proporcionada | No disponible | Hugging Face, repositorio de referencia del equipo nunchaku |
 
 La comparativa directa con la cuantizacion SVDQ de 4 bits de nunchaku no puede cerrarse numericamente porque el autor no publica SSIM ni velocidades de ese metodo en la informacion disponible.
 
@@ -100,7 +100,7 @@ La comparativa directa con la cuantizacion SVDQ de 4 bits de nunchaku no puede c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ussoewwin/Hybrid-Sensitivity-Weighted-Quantization-SDXL-ConvRot-INT8
+- Modelo en Hugging Face: https://huggingface.co/ussoewwin/Hybrid-Sensitivity-Weighted-Quantization-SDXL-ConvRot-INT8
 - Repositorio GitHub del metodo HSWQ: https://github.com/ussoewwin/Hybrid-Sensitivity-Weighted-Quantization
 - Guia de cuantizacion SDXL ConvRot INT8: https://github.com/ussoewwin/Hybrid-Sensitivity-Weighted-Quantization/blob/main/md/How%20to%20quantize%20SDXL.md
 - Resultados de benchmark publicados: https://github.com/ussoewwin/Hybrid-Sensitivity-Weighted-Quantization/blob/main/benchmark%20result/benchmark_sdxl_int8.md

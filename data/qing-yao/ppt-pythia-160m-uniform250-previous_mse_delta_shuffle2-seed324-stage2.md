@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ppt-pythia-160m-uniform250-previous_mse_delta_shuffle2-seed324-stage2` es un ajuste fino de 162.322.944 parámetros publicado por el usuario `qing-yao` en HuggingFace. Se construye sobre el modelo base `qing-yao/ppt-pythia-160m-uniform250-previous_mse-seed324-stage1`, que a su vez pertenece a la familia Pythia de EleutherAI (etiqueta de arquitectura `gpt_neox` en el repositorio). La model card está generada automáticamente por el `Trainer` de HuggingFace y no incluye descripción de uso previsto, composición del dataset ni idiomas soportados.
+El modelo `ppt-pythia-160m-uniform250-previous_mse_delta_shuffle2-seed324-stage2` es un ajuste fino de 162.322.944 parámetros publicado por el usuario `qing-yao` en Hugging Face. Se construye sobre el modelo base `qing-yao/ppt-pythia-160m-uniform250-previous_mse-seed324-stage1`, que a su vez pertenece a la familia Pythia de EleutherAI (etiqueta de arquitectura `gpt_neox` en el repositorio). La model card está generada automáticamente por el `Trainer` de Hugging Face y no incluye descripción de uso previsto, composición del dataset ni idiomas soportados.
 
 El interés técnico del modelo es acotado y de carácter experimental: el nombre del repositorio sugiere una variante de un experimento de preentrenamiento (sufijos `uniform250`, `previous_mse`, `delta_shuffle2`, `seed324`), pero no hay documentación publicada que explique qué modificación concreta introduce respecto al modelo base. No se trata de un modelo instructivo ni alineado: es un modelo base de generación de texto de 162M de parámetros.
 
@@ -86,10 +86,10 @@ Si se interpreta la pérdida de validación final como log-perplejidad, la perpl
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| ppt-pythia-160m-...-stage2 | 162,3 M | no disponible | Apache-2.0 | HuggingFace, safetensors | Variante experimental sin documentar; pérdida de validación 3,8171 |
-| EleutherAI/pythia-160m | 162 M | 2048 (según la ficha pública de la familia Pythia; no confirmado para este derivado) | Apache-2.0 | HuggingFace, safetensors | Modelo base con documentación completa, 154 checkpoints publicados y conjunto de datos Pile documentado |
-| OpenAI GPT-2 (124M) | 124 M | 1024 | Modified MIT | HuggingFace, safetensors | Referencia histórica de la misma escala; sin tool calling ni alineación |
-| Qwen2.5-0.5B | 494 M | 32.768 | Apache-2.0 | HuggingFace, safetensors, GGUF | Tres veces más grande, multilingüe y con variantes instructivas alineadas |
+| ppt-pythia-160m-...-stage2 | 162,3 M | no disponible | Apache-2.0 | Hugging Face, safetensors | Variante experimental sin documentar; pérdida de validación 3,8171 |
+| EleutherAI/pythia-160m | 162 M | 2048 (según la ficha pública de la familia Pythia; no confirmado para este derivado) | Apache-2.0 | Hugging Face, safetensors | Modelo base con documentación completa, 154 checkpoints publicados y conjunto de datos Pile documentado |
+| OpenAI GPT-2 (124M) | 124 M | 1024 | Modified MIT | Hugging Face, safetensors | Referencia histórica de la misma escala; sin tool calling ni alineación |
+| Qwen2.5-0.5B | 494 M | 32.768 | Apache-2.0 | Hugging Face, safetensors, GGUF | Tres veces más grande, multilingüe y con variantes instructivas alineadas |
 
 No se dispone de resultados de benchmarks comparativos publicados para este modelo concreto, por lo que la comparación se limita a especificaciones estructurales y licencias.
 
@@ -108,6 +108,6 @@ No se dispone de resultados de benchmarks comparativos publicados para este mode
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/qing-yao/ppt-pythia-160m-uniform250-previous_mse_delta_shuffle2-seed324-stage2
+- Página del modelo en Hugging Face: https://huggingface.co/qing-yao/ppt-pythia-160m-uniform250-previous_mse_delta_shuffle2-seed324-stage2
 - Modelo base (stage1): https://huggingface.co/qing-yao/ppt-pythia-160m-uniform250-previous_mse-seed324-stage1
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo (paper, blog, repositorio de código o demo). Los resultados devueltos por la búsqueda corresponden a páginas sobre la dinastía Qing y no guardan relación con este modelo.

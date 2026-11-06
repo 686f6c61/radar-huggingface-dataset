@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/jpn-100mb-after-wc-loglinear-newlex-after-ckpt500-packed-bfdiso_seed455` es un ajuste fino (SFT) del checkpoint `francesca9805/ppt-wc-loglinear-newlex-jpn-after-100mb-packed-bfdiso_seed455`, publicado por el usuario de HuggingFace francesca9805. Segun los metadatos del repositorio, la arquitectura declarada corresponde a la familia GPT-2 con 124.770.816 parametros reales en safetensors, y el entrenamiento se realizo con la libreria TRL (version 0.23.0) sobre Transformers 4.56.2.
+El modelo `francesca9805/jpn-100mb-after-wc-loglinear-newlex-after-ckpt500-packed-bfdiso_seed455` es un ajuste fino (SFT) del checkpoint `francesca9805/ppt-wc-loglinear-newlex-jpn-after-100mb-packed-bfdiso_seed455`, publicado por el usuario de Hugging Face francesca9805. Segun los metadatos del repositorio, la arquitectura declarada corresponde a la familia GPT-2 con 124.770.816 parametros reales en safetensors, y el entrenamiento se realizo con la libreria TRL (version 0.23.0) sobre Transformers 4.56.2.
 
 Se trata de un artefacto de investigacion mas que de un modelo listo para produccion: el nombre del checkpoint encadena varias decisiones experimentales (tokenizador "newlex", subconjunto "jpn" de 100 MB, variante "loglinear", "packed", "bfdiso", semilla 455), lo que apunta a un estudio controlado sobre tokenizacion y datos de entrenamiento, presumiblemente en idioma japones dado el sufijo "jpn". El repositorio acumula 0 descargas y 1 like en el momento de redactar esta ficha, y su model card es la plantilla automatica de TRL practicamente sin editar.
 
@@ -73,7 +73,7 @@ Los valores de la columna "modelo comparable" corresponden a las especificacione
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| francesca9805/jpn-100mb-after-wc-loglinear-newlex-after-ckpt500-packed-bfdiso_seed455 | 124,77 M | no disponible | no disponible | HuggingFace, 0 descargas |
+| francesca9805/jpn-100mb-after-wc-loglinear-newlex-after-ckpt500-packed-bfdiso_seed455 | 124,77 M | no disponible | no disponible | Hugging Face, 0 descargas |
 | GPT-2 (OpenAI) | 124 M | 1024 tokens | modificada de MIT | Ampliamente disponible |
 | DistilGPT-2 | 82 M | 1024 tokens | Apache 2.0 | Ampliamente disponible |
 | Pythia-160M (EleutherAI) | 160 M | 2048 tokens | Apache 2.0 | Ampliamente disponible |
@@ -95,7 +95,7 @@ La diferencia principal frente a estas alternativas no es de capacidad, sino de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/jpn-100mb-after-wc-loglinear-newlex-after-ckpt500-packed-bfdiso_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/jpn-100mb-after-wc-loglinear-newlex-after-ckpt500-packed-bfdiso_seed455
 - Modelo base: https://huggingface.co/francesca9805/ppt-wc-loglinear-newlex-jpn-after-100mb-packed-bfdiso_seed455
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/77q4c56h

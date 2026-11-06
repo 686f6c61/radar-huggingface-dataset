@@ -78,7 +78,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-CHOCO-BRAIN-v1-link01 | 0,8B (base) + LoRA | No disponible | RL (PPO) para navegacion de humanoide | Apache-2.0 | HuggingFace |
+| connectailab-rl-CHOCO-BRAIN-v1-link01 | 0,8B (base) + LoRA | No disponible | RL (PPO) para navegacion de humanoide | Apache-2.0 | Hugging Face |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -95,7 +95,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hwihwalab/connectailab-rl-CHOCO-BRAIN-v1-link01
+- Modelo en Hugging Face: https://huggingface.co/hwihwalab/connectailab-rl-CHOCO-BRAIN-v1-link01
 - Manual en coreano: https://huggingface.co/hwihwalab/connectailab-rl-CHOCO-BRAIN-v1-link01/blob/main/README_KR.md
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Demo 3D en Spaces: https://huggingface.co/spaces/hwihwalab/neuro-robo-studio
@@ -103,5 +103,5 @@ No se dispone de información sobre modelos comparables en la documentación pro
 - Corteza prefrontal CHOCO-BRAIN GUARD: https://huggingface.co/hwihwalab/connectailab-rl-CHOCO-BRAIN_GUARD-v1
 - Repositorio GitHub: https://github.com/Hwihwa-Lab/connectailab-rl-CHOCO-BRAIN-v1-link01
 - Simulador CONNECT AI WORLD: https://www.ezerai.xyz/robot-lab/world/
-- Organización en HuggingFace: https://huggingface.co/hwihwalab
+- Organización en Hugging Face: https://huggingface.co/hwihwalab
 - Licencia: https://huggingface.co/hwihwalab/connectailab-rl-CHOCO-BRAIN-v1-link01/blob/main/LICENSE

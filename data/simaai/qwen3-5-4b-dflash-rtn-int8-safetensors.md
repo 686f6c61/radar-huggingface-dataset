@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| simaai/Qwen3.5-4B-DFlash-RTN-INT8-Safetensors | Borrador de decodificacion especulativa | 634.425.856 | INT8 RTN por canal, pesos en compressed-tensors | no disponible | apache-2.0 | HuggingFace, requiere LLiMa y target emparejado |
-| z-lab/Qwen3.5-4B-DFlash | Borrador de decodificacion especulativa | no disponible | BF16 | no disponible | no disponible en la informacion facilitada | HuggingFace |
-| simaai/Qwen3.5-4B-Autoround-Safetensors | Modelo objetivo prequantizado | no disponible (familia 4B) | cuantizacion automatica (autoround) | no disponible | no disponible en la informacion facilitada | HuggingFace, misma coleccion |
+| simaai/Qwen3.5-4B-DFlash-RTN-INT8-Safetensors | Borrador de decodificacion especulativa | 634.425.856 | INT8 RTN por canal, pesos en compressed-tensors | no disponible | apache-2.0 | Hugging Face, requiere LLiMa y target emparejado |
+| z-lab/Qwen3.5-4B-DFlash | Borrador de decodificacion especulativa | no disponible | BF16 | no disponible | no disponible en la informacion facilitada | Hugging Face |
+| simaai/Qwen3.5-4B-Autoround-Safetensors | Modelo objetivo prequantizado | no disponible (familia 4B) | cuantizacion automatica (autoround) | no disponible | no disponible en la informacion facilitada | Hugging Face, misma coleccion |
 
 No se dispone de datos de benchmarks ni de otros borradores comparables en la informacion proporcionada, por lo que no es posible establecer una comparacion de rendimiento.
 
@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks ni de otros borradores comparables en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/simaai/Qwen3.5-4B-DFlash-RTN-INT8-Safetensors
+- Modelo en Hugging Face: https://huggingface.co/simaai/Qwen3.5-4B-DFlash-RTN-INT8-Safetensors
 - Modelo base (borrador BF16): https://huggingface.co/z-lab/Qwen3.5-4B-DFlash
 - Target prequantizado emparejado: https://huggingface.co/simaai/Qwen3.5-4B-Autoround-Safetensors
 - Coleccion de modelos prequantizados de SiMa.ai: https://huggingface.co/collections/simaai/pre-quantized-models-6a5623ca69f6a9ed0a41d3df

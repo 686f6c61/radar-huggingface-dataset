@@ -117,9 +117,9 @@ No se dispone de comparativas con otros modelos de la misma categoría (p. ej., 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Robot-Haus/Qwen3.6-35B-A3B-MAYA-oQ3.5e-fp16-mtp)
+- [Modelo en Hugging Face](https://huggingface.co/Robot-Haus/Qwen3.6-35B-A3B-MAYA-oQ3.5e-fp16-mtp)
 - [Modelo base Qwen3.6-35B-A3B](https://huggingface.co/Qwen/Qwen3.6-35B-A3B)
-- [Colección Qwen3.6 en HuggingFace](https://huggingface.co/collections/Qwen/qwen36)
+- [Colección Qwen3.6 en Hugging Face](https://huggingface.co/collections/Qwen/qwen36)
 - [Blog de Qwen sobre Qwen3.6-35B-A3B](https://qwen.ai/blog?id=qwen3.6-35b-a3b)
 - [Página del modelo en Ollama](https://ollama.com/library/qwen3.6:35b-a3b)
 - [Página del modelo en LM Studio](https://lmstudio.ai/models/qwen/qwen3.6-35b-a3b)

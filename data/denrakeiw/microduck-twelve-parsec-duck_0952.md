@@ -2,11 +2,11 @@
 
 ## Resumen
 
-microduck-twelve-parsec-duck_0952 es una política de control para robots, no un modelo de lenguaje. Se trata de un ajuste fino por estrategias evolutivas (evolution strategies) sobre el modelo DenRakEiw/microduck-twelve-parsec-duck_3000, orientado a maximizar la puntuación de sprint del entorno denominado Arena. El autor es el usuario de HuggingFace DenRakEiw y el modelo se publica dentro del ecosistema microduck, el robot bípedo de tipo pato desarrollado por Pollen Robotics.
+microduck-twelve-parsec-duck_0952 es una política de control para robots, no un modelo de lenguaje. Se trata de un ajuste fino por estrategias evolutivas (evolution strategies) sobre el modelo DenRakEiw/microduck-twelve-parsec-duck_3000, orientado a maximizar la puntuación de sprint del entorno denominado Arena. El autor es el usuario de Hugging Face DenRakEiw y el modelo se publica dentro del ecosistema microduck, el robot bípedo de tipo pato desarrollado por Pollen Robotics.
 
 El modelo se distribuye en formato ONNX y ocupa el slot `walk` del manifiesto de políticas del robot. Recibe una observación de 61 dimensiones y emite 14 acciones a 50 Hz, con un comportamiento definido como perpetuo: la marcha se ejecuta de forma indefinida hasta que se le indique lo contrario. El normalizador de observaciones está integrado dentro del propio fichero `policy.onnx`, de modo que el consumidor debe alimentar observaciones en crudo.
 
-Su relevancia es acotada pero clara para el nicho de la robótica de bajo coste: demuestra un flujo de trabajo de refinamiento iterativo de políticas de locomoción mediante optimización evolutiva sobre un scorer concreto, publicado como artefacto reproducible en HuggingFace. No hay datos publicados de tamaño de parámetros, licencia ni idiomas, y el repositorio aparece con 0 descargas y 0 likes en el momento de la consulta.
+Su relevancia es acotada pero clara para el nicho de la robótica de bajo coste: demuestra un flujo de trabajo de refinamiento iterativo de políticas de locomoción mediante optimización evolutiva sobre un scorer concreto, publicado como artefacto reproducible en Hugging Face. No hay datos publicados de tamaño de parámetros, licencia ni idiomas, y el repositorio aparece con 0 descargas y 0 likes en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
@@ -71,9 +71,9 @@ La model card menciona que el ajuste se realizó contra el scorer de sprint del 
 
 | Modelo | Tipo | Slot | Parametros | Contexto / observacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| DenRakEiw/microduck-twelve-parsec-duck_0952 | Politica de control (finetune por evolution strategies) | `walk` | no disponible | 61-D observacion, 14 acciones, 50 Hz | no disponible | HuggingFace, 0 descargas, 0 likes |
-| DenRakEiw/microduck-twelve-parsec-duck_3000 | Politica de control (base) | no disponible | no disponible | no disponible | no disponible | HuggingFace (modelo base declarado) |
-| DenRakEiw/microduck-r2-duck2 | Politica de control para microduck | multi-slot segun model card (walk, stand, sitstand, ground_pick, kick_left, kick_right, roulade) | no disponible | no disponible | no disponible | HuggingFace |
+| DenRakEiw/microduck-twelve-parsec-duck_0952 | Politica de control (finetune por evolution strategies) | `walk` | no disponible | 61-D observacion, 14 acciones, 50 Hz | no disponible | Hugging Face, 0 descargas, 0 likes |
+| DenRakEiw/microduck-twelve-parsec-duck_3000 | Politica de control (base) | no disponible | no disponible | no disponible | no disponible | Hugging Face (modelo base declarado) |
+| DenRakEiw/microduck-r2-duck2 | Politica de control para microduck | multi-slot segun model card (walk, stand, sitstand, ground_pick, kick_left, kick_right, roulade) | no disponible | no disponible | no disponible | Hugging Face |
 
 La comparación cuantitativa de rendimiento entre estos modelos no es posible con la información disponible: none of the tres publica cifras de benchmark en los datos consultados.
 
@@ -92,7 +92,7 @@ La comparación cuantitativa de rendimiento entre estos modelos no es posible co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DenRakEiw/microduck-twelve-parsec-duck_0952
+- Modelo en Hugging Face: https://huggingface.co/DenRakEiw/microduck-twelve-parsec-duck_0952
 - Modelo base: https://huggingface.co/DenRakEiw/microduck-twelve-parsec-duck_3000
 - Modelo comparable del mismo autor: https://huggingface.co/DenRakEiw/microduck-r2-duck2
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck

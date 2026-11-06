@@ -19,7 +19,7 @@ Para un desarrollador o investigador, su relevancia no está en las capacidades 
 | Tipos de cuantizacion | no disponible (solo se publican pesos sin cuantizar en `pytorch_model.bin`; no hay GGUF ni AWQ/GPTQ) |
 | Idiomas soportados | no declarados; el corpus de entrenamiento (the Pile deduplicated) es mayoritariamente inglés |
 | Licencia | no disponible |
-| Formato de pesos | `pytorch_model.bin` (PyTorch), acompanado de `config.json` de HuggingFace y `config.yaml` original de OLMo |
+| Formato de pesos | `pytorch_model.bin` (PyTorch), acompanado de `config.json` de Hugging Face y `config.yaml` original de OLMo |
 | Tamano del repositorio | 4,4 GB (incluye 38 ramas de checkpoints) |
 | Datos de entrenamiento | EleutherAI/the_pile_deduplicated |
 | Presupuesto de tokens | 8B |
@@ -97,7 +97,7 @@ La diferencia clave frente a Pythia-14M es el presupuesto de tokens: 8B frente a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dill-lab/GeoLadder-16M-8B-bs64-lr0.0087-wd0.1-decay0.01
+- Modelo en Hugging Face: https://huggingface.co/dill-lab/GeoLadder-16M-8B-bs64-lr0.0087-wd0.1-decay0.01
 - Colección GeoLadder (108 modelos): https://huggingface.co/collections/dill-lab/geoladder-6acd192e30ec71aff2998e2e
 - Artículo (PMLR 306): https://proceedings.mlr.press/v306/kulkarni26c.html
 - Preprint en arXiv: https://arxiv.org/abs/2602.20433

@@ -63,5 +63,5 @@ No disponible. No hay información sobre modelos comparables en los datos propor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/stuff123456/wan_backshots
+- Hugging Face: https://huggingface.co/stuff123456/wan_backshots
 - Modelo base: https://huggingface.co/rzgar/Wan2.2-I2V-Weak-ID

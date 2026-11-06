@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento comparativos en la información proporcion
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/liodon-ai/MNN-Pocket-0.3B-ONNX
+- Hugging Face: https://huggingface.co/liodon-ai/MNN-Pocket-0.3B-ONNX
 - Modelo base: https://huggingface.co/taobao-mnn/MNN-Pocket-0.3B
 - Optimum (exportación ONNX): https://github.com/huggingface/optimum
 - Perfil del autor: https://huggingface.co/liodon-ai

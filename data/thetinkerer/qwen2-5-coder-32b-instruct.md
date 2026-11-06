@@ -90,7 +90,7 @@ Nota: los datos de los tres modelos alternativos proceden de conocimiento genera
 
 ## Enlaces
 
-- Repositorio analizado en HuggingFace: https://huggingface.co/thetinkerer/Qwen2.5-Coder-32B-Instruct
+- Repositorio analizado en Hugging Face: https://huggingface.co/thetinkerer/Qwen2.5-Coder-32B-Instruct
 - Modelo oficial: https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct
 - Fichero de licencia: https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct/blob/main/LICENSE
 - Blog de la familia Qwen2.5-Coder: https://qwenlm.github.io/blog/qwen2.5-coder-family/

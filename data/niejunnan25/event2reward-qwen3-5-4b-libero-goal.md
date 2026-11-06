@@ -72,9 +72,9 @@ No se han publicado en la información disponible otros resultados de benchmarks
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Event2Reward-Qwen3.5-4B-LIBERO-Goal | 4B (base Qwen3.5-4B) | no disponible | Recompensa / progreso en LIBERO-Goal | Apache-2.0 | HuggingFace |
-| Event2Reward-Qwen3.5-4B-Stage2 | 4B (base Qwen3.5-4B) | no disponible | Etapa intermedia del mismo pipeline | Apache-2.0 (según modelo base) | HuggingFace |
-| Qwen3.5-4B | 4B | no disponible | Modelo de lenguaje general | no disponible en la información | HuggingFace |
+| Event2Reward-Qwen3.5-4B-LIBERO-Goal | 4B (base Qwen3.5-4B) | no disponible | Recompensa / progreso en LIBERO-Goal | Apache-2.0 | Hugging Face |
+| Event2Reward-Qwen3.5-4B-Stage2 | 4B (base Qwen3.5-4B) | no disponible | Etapa intermedia del mismo pipeline | Apache-2.0 (según modelo base) | Hugging Face |
+| Qwen3.5-4B | 4B | no disponible | Modelo de lenguaje general | no disponible en la información | Hugging Face |
 
 No se dispone en la información proporcionada de otros modelos de recompensa robótica comparables con datos de rendimiento que permitan una comparación cuantitativa.
 
@@ -91,7 +91,7 @@ No se dispone en la información proporcionada de otros modelos de recompensa ro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/niejunnan25/Event2Reward-Qwen3.5-4B-LIBERO-Goal
+- Modelo en Hugging Face: https://huggingface.co/niejunnan25/Event2Reward-Qwen3.5-4B-LIBERO-Goal
 - Modelo base (Stage2): https://huggingface.co/niejunnan25/Event2Reward-Qwen3.5-4B-Stage2
 - Modelo Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
 - Artículo: https://arxiv.org/abs/2610.39212

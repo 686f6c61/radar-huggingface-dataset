@@ -2,7 +2,7 @@
 
 ## Resumen
 
-microduck-photo-shoot no es un modelo de lenguaje, sino una política de control motriz («move») para el robot bípedo Microduck, publicada en HuggingFace por el usuario microduckapp dentro del ecosistema de etiquetas microduck-move. El artefacto contiene `policy.onnx`, un `manifest.json` con lo que el robot necesita para instalar y reproducir el movimiento, y un vídeo de previsualización (`media/preview.mp4`). La política define una secuencia de 10,8 segundos en la que el robot adopta sucesivas poses ante una cámara, girando entre ellas.
+microduck-photo-shoot no es un modelo de lenguaje, sino una política de control motriz («move») para el robot bípedo Microduck, publicada en Hugging Face por el usuario microduckapp dentro del ecosistema de etiquetas microduck-move. El artefacto contiene `policy.onnx`, un `manifest.json` con lo que el robot necesita para instalar y reproducir el movimiento, y un vídeo de previsualización (`media/preview.mp4`). La política define una secuencia de 10,8 segundos en la que el robot adopta sucesivas poses ante una cámara, girando entre ellas.
 
 La interfaz es explícita: 61 observaciones de entrada, 14 consignas articulares de salida y una frecuencia de control de 50 Hz (un paso cada 20 ms). El repositorio reporta un tamaño de 0,0 GB (redondeado) y no incluye información sobre arquitectura interna, parámetros, dataset de entrenamiento ni métricas de evaluación.
 
@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Parámetros | Contexto / ventana | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| microduck-photo-shoot | Política de control ONNX para Microduck | No disponible | 61 observaciones por paso a 50 Hz | No disponible | HuggingFace, 0 descargas |
+| microduck-photo-shoot | Política de control ONNX para Microduck | No disponible | 61 observaciones por paso a 50 Hz | No disponible | Hugging Face, 0 descargas |
 | Otros moves de microduck-move | Políticas de control ONNX para Microduck | No disponible | No disponible | No disponible | Ecosistema microduck-move, sin datos en la información proporcionada |
 | Políticas VLA generalistas (OpenVLA, π0 y similares) | Visión-lenguaje-acción | No disponible en la información proporcionada | No disponible | No disponible | No verificado en esta búsqueda |
 
@@ -99,7 +99,7 @@ La comparación cuantitativa no es posible con los datos disponibles: no se han 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/microduckapp/microduck-photo-shoot
+- Modelo en Hugging Face: https://huggingface.co/microduckapp/microduck-photo-shoot
 - Repositorio del robot en GitHub (Pollen Robotics): https://github.com/pollen-robotics/microduck
 - Ficha del robot en ROBOTS: https://robotsguide.com/robots/microduck
 - Página oficial de compra: https://microducks.org/

@@ -78,7 +78,7 @@ Los tres modelos parten del mismo base (Qwen3.8-27B) y buscan el mismo objetivo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/heterodoxin/qwen-3.8-27b-abliterated
+- Modelo en Hugging Face: https://huggingface.co/heterodoxin/qwen-3.8-27b-abliterated
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio de Apostate (herramienta de ablación): https://github.com/heterodoxin/apostate
 - Repositorio oficial de Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B

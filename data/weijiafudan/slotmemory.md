@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SlotMemory es un repositorio publicado en HuggingFace por el usuario Weijiafudan bajo licencia MIT. La model card asociada está prácticamente vacía: solo declara la licencia, sin descripción del modelo, arquitectura, datos de entrenamiento ni casos de uso. El nombre sugiere un componente relacionado con memoria por ranuras (slots), un patrón habitual en arquitecturas de memoria externa para agentes y modelos de lenguaje, pero no hay información publicada que lo confirme.
+SlotMemory es un repositorio publicado en Hugging Face por el usuario Weijiafudan bajo licencia MIT. La model card asociada está prácticamente vacía: solo declara la licencia, sin descripción del modelo, arquitectura, datos de entrenamiento ni casos de uso. El nombre sugiere un componente relacionado con memoria por ranuras (slots), un patrón habitual en arquitecturas de memoria externa para agentes y modelos de lenguaje, pero no hay información publicada que lo confirme.
 
 En el momento de redactar esta ficha, el repositorio no registra descargas ni likes, y no declara pipeline, idiomas ni formato de pesos. Se desconoce si contiene pesos de un modelo entrenado, código de un módulo de memoria, un adaptador o simplemente artefactos auxiliares. Toda la información técnica que sigue se limita a lo verificable en los metadatos del repositorio; el resto se marca explícitamente como no disponible.
 
@@ -76,5 +76,5 @@ No disponible. Al no conocerse la naturaleza del repositorio (pesos, código o a
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Weijiafudan/SlotMemory
+- Repositorio en Hugging Face: https://huggingface.co/Weijiafudan/SlotMemory
 - No se han encontrado papers, blogs, repositorios de código ni demos adicionales en la información disponible.

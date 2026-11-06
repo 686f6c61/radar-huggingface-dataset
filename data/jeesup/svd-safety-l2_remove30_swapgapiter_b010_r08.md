@@ -4,7 +4,7 @@
 
 Este checkpoint, publicado por el usuario Jeesup, es un artefacto de investigación derivado de `meta-llama/Llama-2-7b-chat-hf`. No es un modelo conversacional listo para producción: es una celda concreta de una malla experimental que estudia cómo la compresión por descomposición en valores singulares (SVD-LLM) degrada el comportamiento de seguridad de un modelo alineado y qué regla de selección de componentes repara mejor ese daño. El autor indica que todos los pesos densos se reducen al 69,98 % de los originales y que después se restauran 5.091 componentes mediante 8 de las 10 rondas previstas de un procedimiento de intercambio iterativo con presupuesto del 1,0 % de los parámetros densos.
 
-La arquitectura no se modifica: sigue siendo un transformer decoder-only de la familia Llama 2, con licencia Llama 2 Community License y pesos en `safetensors` compatibles con `transformers` y con `text-generation-inference`. El repositorio ocupa 13,5 GB y el contaje de parámetros declarado por HuggingFace es de 6.738.415.616, idéntico al del Llama-2-7B denso, un detalle que conviene contrastar con la fracción de parámetros declarada en la propia model card.
+La arquitectura no se modifica: sigue siendo un transformer decoder-only de la familia Llama 2, con licencia Llama 2 Community License y pesos en `safetensors` compatibles con `transformers` y con `text-generation-inference`. El repositorio ocupa 13,5 GB y el contaje de parámetros declarado por Hugging Face es de 6.738.415.616, idéntico al del Llama-2-7B denso, un detalle que conviene contrastar con la fracción de parámetros declarada en la propia model card.
 
 Su relevancia es metodológica, no de producto: proporciona métricas de tasa de éxito de ataque (ASR) bajo AdvBench y StrongREJECT, además de una medida de sobre-rechazo, que permiten comparar celdas de la malla y evaluar si la edición posterior a la compresión recupera la seguridad perdida. Cualquier uso en producción debería ir precedido de una evaluación propia y de la aceptación de que varias celdas del estudio están deliberadamente degradadas.
 
@@ -102,7 +102,7 @@ No se dispone de datos publicados en la informacion proporcionada para comparar 
 - La compresion por si sola eleva la tasa de exito de ataque; el objetivo del estudio es cuantificarlo y probar la recuperacion, no garantizar un modelo seguro.
 - Sobre-rechazo macro elevado (0,4332 sobre WildGuard), lo que implica un coste notable en utilidad conversacional.
 - El checkpoint corresponde a la ronda 8 de 10, es decir, a un estado intermedio de la ejecucion completa: no representa el resultado final del protocolo.
-- Discrepancia entre el contaje de parametros reportado por HuggingFace (6.738.415.616, identico al denso) y la fraccion de parametros densos declarada (0,6998); conviene verificar los tensores antes de asumir ahorro real de memoria.
+- Discrepancia entre el contaje de parametros reportado por Hugging Face (6.738.415.616, identico al denso) y la fraccion de parametros densos declarada (0,6998); conviene verificar los tensores antes de asumir ahorro real de memoria.
 - No se declaran idiomas soportados ni datos de entrenamiento; el modelo base esta orientado principalmente al ingles y no se ha validado su comportamiento en castellano.
 - Riesgo de alucinacion inherente a un modelo de 7B, agravado por el truncado de pesos y sin evaluacion de fidelidad publicada.
 - Licencia Llama 2 Community License: uso comercial sujeto a sus terminos, con obligaciones de atribucion ("Built with Llama 2"), politica de uso aceptable y el umbral de 700 millones de usuarios activos mensuales.
@@ -111,8 +111,8 @@ No se dispone de datos publicados en la informacion proporcionada para comparar 
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_remove30_swapgapiter_b010_r08
+- Pagina del modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_remove30_swapgapiter_b010_r08
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
-- Perfil del autor en HuggingFace: https://huggingface.co/Jeesup
+- Perfil del autor en Hugging Face: https://huggingface.co/Jeesup
 - Referencias citadas en la model card sin enlace incluido: paper de SVD-LLM, benchmark AdvBench, benchmark StrongREJECT, juez HarmBench, juez WildGuard y Llama 2 Community License (`LICENSE.txt` y `USE_POLICY.md` dentro del repositorio).
 - La busqueda web realizada no ha devuelto resultados relevantes sobre este modelo: los enlaces encontrados corresponden a directorios de empresas francesas y no guardan relacion con el artefacto.

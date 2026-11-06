@@ -82,7 +82,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Artemis-31B-v1.1-heretic-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Artemis-31B-v1.1-heretic-i1-GGUF
 - Repositorio de cuantizaciones estaticas: https://huggingface.co/mradermacher/Artemis-31B-v1.1-heretic-GGUF
 - Modelo base: https://huggingface.co/sh0ck0r/Artemis-31B-v1.1-heretic
 - Herramienta Heretic (GitHub): https://github.com/p-e-w/heretic

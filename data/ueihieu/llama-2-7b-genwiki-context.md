@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ueihieu/llama-2-7b-genwiki-context` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario `ueihieu`, diseñado para ajustar el modelo base `NousResearch/Llama-2-7b-hf`, una versión del conocido Llama 2 de Meta con 7 mil millones de parámetros. El nombre del repositorio sugiere que el adaptador fue entrenado para tareas relacionadas con la generación de contexto de Wikipedia, aunque no se aporta ninguna documentación, descripción ni métricas de evaluación en la model card, que está prácticamente vacía.
+`ueihieu/llama-2-7b-genwiki-context` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario `ueihieu`, diseñado para ajustar el modelo base `NousResearch/Llama-2-7b-hf`, una versión del conocido Llama 2 de Meta con 7 mil millones de parámetros. El nombre del repositorio sugiere que el adaptador fue entrenado para tareas relacionadas con la generación de contexto de Wikipedia, aunque no se aporta ninguna documentación, descripción ni métricas de evaluación en la model card, que está prácticamente vacía.
 
 El repositorio tiene un tamaño de 0.1 GB, lo que es consistente con un adaptador PEFT (solo los pesos del LoRA, no el modelo completo). La fecha de creación (junio de 2026) y actualización (agosto de 2026) indican que es un proyecto reciente. La relevancia de este modelo es limitada debido a la ausencia total de información técnica, de entrenamiento y de evaluación; cualquier uso en producción requeriría una validación exhaustiva por parte del desarrollador.
 
@@ -23,7 +23,7 @@ El adaptador se distribuye en formato `safetensors` y utiliza la librería `peft
 
 ## Arquitectura y entrenamiento
 
-El modelo base es `NousResearch/Llama-2-7b-hf`, una conversión oficial de HuggingFace del Llama 2 de Meta, que utiliza una arquitectura transformer autoregresiva con normalización RMSNorm, atención multi-cabeza con máscara causal y activación SiLU. El adaptador LoRA añade matrices de bajo rango a las capas de atención y feed-forward, permitiendo un ajuste eficiente sin modificar todos los pesos.
+El modelo base es `NousResearch/Llama-2-7b-hf`, una conversión oficial de Hugging Face del Llama 2 de Meta, que utiliza una arquitectura transformer autoregresiva con normalización RMSNorm, atención multi-cabeza con máscara causal y activación SiLU. El adaptador LoRA añade matrices de bajo rango a las capas de atención y feed-forward, permitiendo un ajuste eficiente sin modificar todos los pesos.
 
 No se proporciona información sobre el dataset de entrenamiento, el número de tokens utilizados, el procedimiento de ajuste (si se usó RLHF, DPO o supervisión directa), ni los hiperparámetros del entrenamiento. El nombre del repositorio indica que el adaptador se entrenó probablemente con datos de Wikipedia, pero esto es una inferencia no confirmada. Tampoco se documentan innovaciones técnicas específicas más allá del uso estándar de LoRA.
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | NousResearch/Llama-2-7b-hf | 7B | 4096 | Llama 2 Community License | Modelo base original |
 | meta-llama/Llama-2-7b-chat-hf | 7B | 4096 | Llama 2 Community License | Versión chat oficial de Meta |
 
-No hay datos de rendimiento comparativo disponibles. La comparativa se limita a características estructurales. Otros adaptadores LoRA para Llama 2 existen en HuggingFace, pero sin información específica no se puede establecer una comparación objetiva.
+No hay datos de rendimiento comparativo disponibles. La comparativa se limita a características estructurales. Otros adaptadores LoRA para Llama 2 existen en Hugging Face, pero sin información específica no se puede establecer una comparación objetiva.
 
 ## Limitaciones y advertencias
 

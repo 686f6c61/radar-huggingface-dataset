@@ -86,7 +86,7 @@ Comparativa de la categoría, según los datos recogidos en la model card del mo
 
 | Modelo | Parametros (total / activos) | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este checkpoint (qwen3.5-397b-mle-syn-hierreward-step40) | 403,4B safetensors / 17B activos | 262.144 tokens nativos (heredado de la base) | apache-2.0 | Pesos abiertos en HuggingFace, sin validación ni benchmarks publicados |
+| Este checkpoint (qwen3.5-397b-mle-syn-hierreward-step40) | 403,4B safetensors / 17B activos | 262.144 tokens nativos (heredado de la base) | apache-2.0 | Pesos abiertos en Hugging Face, sin validación ni benchmarks publicados |
 | Qwen3.5-397B-A17B (base) | 397B / 17B | 262.144 tokens nativos, hasta 1.010.000 | apache-2.0 | Pesos abiertos, con API gestionada equivalente (Qwen3.5-Plus) en Alibaba Cloud Model Studio |
 | K2.5-1T-A32B | 1T / 32B (según la tabla de benchmarks) | no disponible | no disponible | no disponible en la información proporcionada |
 | Qwen3-Max-Thinking | no disponible | no disponible | propietaria | API gestionada de Alibaba; MMLU-Pro 85,7 |
@@ -109,7 +109,7 @@ En términos de arquitectura, la comparación más directa es con otros MoE disp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zyhang1998/qwen3.5-397b-mle-syn-hierreward-step40
+- Modelo en Hugging Face: https://huggingface.co/zyhang1998/qwen3.5-397b-mle-syn-hierreward-step40
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-397B-A17B
 - Licencia referenciada: https://huggingface.co/Qwen/Qwen3.5-397B-A17B/blob/main/LICENSE
 - Blog de Qwen3.5: https://qwen.ai/blog?id=qwen3.5

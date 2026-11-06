@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`Rajeshwari-Chanda/bloom-1b7_wanda_0.7` es un checkpoint derivado de BLOOM-1b7, el modelo decoder-only de 1.700 millones de parametros desarrollado por BigScience. El nombre del repositorio indica que se ha aplicado poda no estructurada con el algoritmo Wanda a una tasa de esparsidad de 0,7, es decir, aproximadamente el 70 % de los pesos individuales se han llevado a cero sin reentrenamiento posterior. El autor del repositorio es el usuario de HuggingFace `Rajeshwari-Chanda`.
+`Rajeshwari-Chanda/bloom-1b7_wanda_0.7` es un checkpoint derivado de BLOOM-1b7, el modelo decoder-only de 1.700 millones de parametros desarrollado por BigScience. El nombre del repositorio indica que se ha aplicado poda no estructurada con el algoritmo Wanda a una tasa de esparsidad de 0,7, es decir, aproximadamente el 70 % de los pesos individuales se han llevado a cero sin reentrenamiento posterior. El autor del repositorio es el usuario de Hugging Face `Rajeshwari-Chanda`.
 
 El interes de este checkpoint es fundamentalmente experimental: sirve como material de referencia para estudiar el impacto de la poda one-shot sobre un transformer multilingue de tamano pequeno y para reproducir comparativas frente al modelo denso original. No es un modelo afinado para instrucciones, no incorpora alineamiento por RLHF ni DPO, y no se ha publicado ninguna evaluacion de calidad tras la poda.
 
-La model card del repositorio es la plantilla autogenerada por HuggingFace y no contiene informacion sobre datos de entrenamiento, hiperparametros de la poda, licencia ni idiomas. El repositorio no registra descargas ni interacciones, por lo que no existe validacion externa de la calidad del checkpoint.
+La model card del repositorio es la plantilla autogenerada por Hugging Face y no contiene informacion sobre datos de entrenamiento, hiperparametros de la poda, licencia ni idiomas. El repositorio no registra descargas ni interacciones, por lo que no existe validacion externa de la calidad del checkpoint.
 
 ## Especificaciones tecnicas
 
@@ -49,7 +49,7 @@ Sobre ese checkpoint se ha aplicado Wanda (Pruning by Weights and Activations), 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio es la plantilla autogenerada de HuggingFace y no incluye seccion de evaluacion, comparativa con el modelo denso ni metricas de perplejidad antes y despues de la poda.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio es la plantilla autogenerada de Hugging Face y no incluye seccion de evaluacion, comparativa con el modelo denso ni metricas de perplejidad antes y despues de la poda.
 
 ## Requisitos de hardware
 
@@ -89,7 +89,7 @@ Los datos de las alternativas proceden de sus fichas publicas. No hay resultados
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Rajeshwari-Chanda/bloom-1b7_wanda_0.7
+- Repositorio en Hugging Face: https://huggingface.co/Rajeshwari-Chanda/bloom-1b7_wanda_0.7
 - Modelo base BLOOM-1b7: https://huggingface.co/bigscience/bloom-1b7
 - Paper de BLOOM: https://arxiv.org/abs/2211.05100
 - Paper de Wanda (Pruning by Weights and Activations): https://arxiv.org/abs/2306.11695

@@ -100,10 +100,10 @@ Para el resto de modelos de la misma categoria (otros modelos multimodales de ~2
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/microperceptron/Qwopus3.8-27B-Flash-GGUF
+- Repositorio Hugging Face: https://huggingface.co/microperceptron/Qwopus3.8-27B-Flash-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Unsloth (framework de ajuste fino empleado): https://unsloth.ai/
-- Ficha de terceros con datos de descarga alternativos (56,7 GB, 82 likes, discrepantes con HuggingFace): https://local-ai-zone.github.io/models/qwopus3-8-27b-flash.html
+- Ficha de terceros con datos de descarga alternativos (56,7 GB, 82 likes, discrepantes con Hugging Face): https://local-ai-zone.github.io/models/qwopus3-8-27b-flash.html
 - Paper o documentacion tecnica del ajuste: no disponible
 - Demo o espacio interactivo: no disponible
 - Repositorio de codigo adicional: no disponible

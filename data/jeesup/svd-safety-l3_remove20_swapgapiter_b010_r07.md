@@ -27,7 +27,7 @@ Su relevancia es metodológica: es una celda de un grid sobre reglas de selecci�
 | Componentes restaurados / sustituidos | 6.741 / 6.741 |
 | Parámetros insertados | 48.822.272 (0,70 % de los parámetros de proyección densos) |
 | Semilla | 42 |
-| Fecha de creación (según HuggingFace) | 2026-09-17 |
+| Fecha de creación (según Hugging Face) | 2026-09-17 |
 
 ## Arquitectura y entrenamiento
 
@@ -82,8 +82,8 @@ La model card no publica los valores del modelo base sin comprimir ni de las otr
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Seguridad medida |
 |---|---|---|---|---|---|
-| svd-safety-l3_remove20_swapgapiter_b010_r07 | 8.030.261.248 (79,98 % de los densos) | 8.192 tokens (heredado) | Llama 3 Community | HuggingFace, 0 descargas | AdvBench ASR 0,0300; StrongREJECT ASR 0,0750; sobre-rechazo 0,1880 |
-| meta-llama/Meta-Llama-3-8B-Instruct | 8.030.261.248 | 8.192 tokens | Llama 3 Community | HuggingFace, ampliamente desplegado | No disponible en esta ficha (la model card no incluye la línea base) |
+| svd-safety-l3_remove20_swapgapiter_b010_r07 | 8.030.261.248 (79,98 % de los densos) | 8.192 tokens (heredado) | Llama 3 Community | Hugging Face, 0 descargas | AdvBench ASR 0,0300; StrongREJECT ASR 0,0750; sobre-rechazo 0,1880 |
+| meta-llama/Meta-Llama-3-8B-Instruct | 8.030.261.248 | 8.192 tokens | Llama 3 Community | Hugging Face, ampliamente desplegado | No disponible en esta ficha (la model card no incluye la línea base) |
 | Otras celdas del mismo grid (reglas y presupuestos distintos) | ~8,03 mil millones | 8.192 tokens | Llama 3 Community | No disponibles en la información proporcionada | No disponibles |
 
 No se han identificado en la información proporcionada otros artefactos comparables de compresión SVD sobre Llama 3 con edición de parámetros, ni los valores de las celdas restantes del grid. La comparación cuantitativa queda, por tanto, no disponible.
@@ -99,11 +99,11 @@ No se han identificado en la información proporcionada otros artefactos compara
 - Capacidades de tool calling, agentes, código y matemáticas: no documentadas ni validadas, y potencialmente afectadas por la compresión.
 - Cero descargas y cero likes: no existe validación externa ni uso en producción reportado.
 - Las métricas de seguridad provienen exclusivamente del juez HarmBench y de WildGuard; no hay evaluación con otros jueces que permita estimar la varianza de esas cifras.
-- La fecha de creación indicada en HuggingFace (2026-09-17) es posterior a la fecha de publicación de este análisis; conviene verificar la vigencia del repositorio antes de citarlo.
+- La fecha de creación indicada en Hugging Face (2026-09-17) es posterior a la fecha de publicación de este análisis; conviene verificar la vigencia del repositorio antes de citarlo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l3_remove20_swapgapiter_b010_r07
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l3_remove20_swapgapiter_b010_r07
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
 - Licencia y política de uso: archivos `LICENSE` y `USE_POLICY.md` incluidos en el repositorio del modelo
 - Paper de SVD-LLM (referencia a la técnica de compresión citada por el autor): no disponible en la información proporcionada

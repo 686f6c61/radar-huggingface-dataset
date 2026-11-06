@@ -4,7 +4,7 @@
 
 DPT-Hybrid-MiDaS es un modelo de estimación de profundidad monocular (depth estimation) basado en la arquitectura Dense Prediction Transformer (DPT), desarrollado originalmente por Intel como parte de la familia MiDaS v3.0. El modelo combina un extractor convolucional BiT-R50 como *stem* con un codificador ViT-Base y un decodificador convolucional DPT que fusiona progresivamente los *tokens* intermedios del transformer para reconstruir un mapa de profundidad a resolución completa. Cuenta con aproximadamente 122 millones de parámetros y trabaja con una resolución de entrada nativa de 384x384 píxeles.
 
-La receta publicada por `qualcomm-ai-hub-community` no es un modelo nuevo, sino un envoltorio que reproduce el checkpoint de HuggingFace (`Intel/dpt-hybrid-midas`) en su resolución nativa y lo integra con el ecosistema Qualcomm AI Hub Models. Esto permite compilar, perfilar y evaluar el modelo en dispositivos Snapdragon reales mediante Qualcomm AI Hub Workbench, así como exportarlo a runtimes de borde como TensorFlow Lite, ONNX Runtime o Qualcomm AI Engine Direct.
+La receta publicada por `qualcomm-ai-hub-community` no es un modelo nuevo, sino un envoltorio que reproduce el checkpoint de Hugging Face (`Intel/dpt-hybrid-midas`) en su resolución nativa y lo integra con el ecosistema Qualcomm AI Hub Models. Esto permite compilar, perfilar y evaluar el modelo en dispositivos Snapdragon reales mediante Qualcomm AI Hub Workbench, así como exportarlo a runtimes de borde como TensorFlow Lite, ONNX Runtime o Qualcomm AI Engine Direct.
 
 La relevancia actual radica en su utilidad para *zero-shot* transfer: al haberse entrenado sobre una mezcla de seis conjuntos de datos de profundidad (MIX-6), predice profundidad inversa relativa hasta una escala y un desplazamiento globales desconocidos, en lugar de distancia métrica absoluta. Esto lo hace adecuado para tareas de percepción en dispositivos móviles y de borde donde no se dispone de calibración métrica.
 
@@ -19,7 +19,7 @@ La relevancia actual radica en su utilidad para *zero-shot* transfer: al haberse
 | Tipos de cuantizacion | No disponible; la receta permite exportación a TensorFlow Lite, ONNX Runtime y Qualcomm AI Engine Direct |
 | Idiomas soportados | No disponible (modelo de visión, no procesa texto) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | PyTorch (checkpoint HuggingFace `Intel/dpt-hybrid-midas`); exportable a ONNX, TFLite y AI Engine Direct |
+| Formato de pesos | PyTorch (checkpoint Hugging Face `Intel/dpt-hybrid-midas`); exportable a ONNX, TFLite y AI Engine Direct |
 
 ## Arquitectura y entrenamiento
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto / entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DPT-Hybrid-MiDaS (esta ficha) | ~122 M | 384x384 px | Profundidad monocular relativa | Apache-2.0 | HuggingFace y Qualcomm AI Hub |
-| DPT-Large (MiDaS v3.1) | ~344 M | Hasta 384x384 px (entrada nativa variable) | Profundidad monocular relativa | Apache-2.0 | HuggingFace (`Intel/dpt-large`) |
+| DPT-Hybrid-MiDaS (esta ficha) | ~122 M | 384x384 px | Profundidad monocular relativa | Apache-2.0 | Hugging Face y Qualcomm AI Hub |
+| DPT-Large (MiDaS v3.1) | ~344 M | Hasta 384x384 px (entrada nativa variable) | Profundidad monocular relativa | Apache-2.0 | Hugging Face (`Intel/dpt-large`) |
 | MiDaS v2.1 | ~105 M (variante híbrida) | Entrada variable | Profundidad monocular relativa | MIT | GitHub `isl-org/MiDaS` |
-| Depth Anything V2 | 24,8 M (Small) / 97,5 M (Base) / 335,3 M (Large) | Entrada variable | Profundidad monocular relativa y métrica | Apache-2.0 (Small/Base) segun variante | HuggingFace y GitHub |
+| Depth Anything V2 | 24,8 M (Small) / 97,5 M (Base) / 335,3 M (Large) | Entrada variable | Profundidad monocular relativa y métrica | Apache-2.0 (Small/Base) segun variante | Hugging Face y GitHub |
 
 Los valores de parámetros y licencias de los modelos comparados son aproximados y proceden de conocimiento público general, no de la información proporcionada en esta búsqueda; conviene verificarlos en las fichas oficiales respectivas.
 
@@ -83,8 +83,8 @@ Los valores de parámetros y licencias de los modelos comparados son aproximados
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qualcomm-ai-hub-community/dpt-hybrid-midas-ashwmurt
-- Checkpoint original en HuggingFace: https://huggingface.co/Intel/dpt-hybrid-midas
+- Modelo en Hugging Face: https://huggingface.co/qualcomm-ai-hub-community/dpt-hybrid-midas-ashwmurt
+- Checkpoint original en Hugging Face: https://huggingface.co/Intel/dpt-hybrid-midas
 - Paper "Vision Transformers for Dense Prediction": https://arxiv.org/abs/2103.13413
 - Implementación de referencia de DPT: https://github.com/isl-org/DPT
 - Qualcomm AI Hub Models (CLI): https://github.com/quic/ai-hub-models

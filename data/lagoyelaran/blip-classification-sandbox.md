@@ -2,7 +2,7 @@
 
 ## Resumen
 
-lagoyelaran/blip-classification-sandbox es un repositorio experimental publicado en HuggingFace que contiene una implementación propia de una arquitectura tipo BLIP orientada a tareas de clasificación, acompañada de un checkpoint de inicialización y de los ficheros de configuración del experimento. No se trata de un modelo entrenado ni evaluado: el propio autor indica en la model card que `model.safetensors` es un punto de partida válido para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark.
+lagoyelaran/blip-classification-sandbox es un repositorio experimental publicado en Hugging Face que contiene una implementación propia de una arquitectura tipo BLIP orientada a tareas de clasificación, acompañada de un checkpoint de inicialización y de los ficheros de configuración del experimento. No se trata de un modelo entrenado ni evaluado: el propio autor indica en la model card que `model.safetensors` es un punto de partida válido para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark.
 
 El artefacto principal es el script `run.py`, que incluye tanto la definición del modelo como un ejemplo ejecutable de entrenamiento o inferencia. El repositorio pesa 0,0 GB y los metadatos de safetensors declaran únicamente 16.576 parámetros, un orden de magnitud propio de un esqueleto de arquitectura, no de un modelo con capacidad funcional real. La licencia es Apache 2.0.
 
@@ -76,7 +76,7 @@ No se dispone, en la informacion proporcionada, de especificaciones verificadas 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| lagoyelaran/blip-classification-sandbox | 16.576 | no disponible | no disponible (sin entrenar) | Apache 2.0 | HuggingFace, 0 descargas |
+| lagoyelaran/blip-classification-sandbox | 16.576 | no disponible | no disponible (sin entrenar) | Apache 2.0 | Hugging Face, 0 descargas |
 | Salesforce BLIP (checkpoints oficiales) | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion recibida |
 | CLIP ViT (clasificación visión-lenguaje) | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion recibida |
 
@@ -97,5 +97,5 @@ Nota: los resultados de búsqueda web recuperados no contienen información rele
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lagoyelaran/blip-classification-sandbox
+- Modelo en Hugging Face: https://huggingface.co/lagoyelaran/blip-classification-sandbox
 - Resultados de búsqueda web: no se ha recuperado ningún enlace relevante sobre este modelo (papeles, blogs, repositorios o demos) en la información proporcionada.

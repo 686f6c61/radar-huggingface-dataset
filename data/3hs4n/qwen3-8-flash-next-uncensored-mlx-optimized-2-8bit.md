@@ -76,9 +76,9 @@ No se han publicado resultados de benchmarks estandarizados (MMLU, HumanEval, et
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-Flash-Next-Uncensored-mlx-optimized-2-8bit (esta ficha) | 177,4 B | 16.384 (probado) | Mixta 2/4/16 bits, MLX | qwen-community-license-1.0 | HuggingFace, 209 descargas |
-| Qwen3.8-Flash-Next-Uncensored-mlx-optimized-2-8bit-DFlash2 | no disponible (mismo payload + drafter) | no disponible | Mixta, MLX | qwen-community-license-1.0 | HuggingFace, 74,048 GB |
-| orcarouter/Qwen3.8-Flash-Next-Uncensored (base) | no disponible | no disponible | Original (sin cuantizar) | no disponible | HuggingFace |
+| Qwen3.8-Flash-Next-Uncensored-mlx-optimized-2-8bit (esta ficha) | 177,4 B | 16.384 (probado) | Mixta 2/4/16 bits, MLX | qwen-community-license-1.0 | Hugging Face, 209 descargas |
+| Qwen3.8-Flash-Next-Uncensored-mlx-optimized-2-8bit-DFlash2 | no disponible (mismo payload + drafter) | no disponible | Mixta, MLX | qwen-community-license-1.0 | Hugging Face, 74,048 GB |
+| orcarouter/Qwen3.8-Flash-Next-Uncensored (base) | no disponible | no disponible | Original (sin cuantizar) | no disponible | Hugging Face |
 
 No se dispone de datos suficientes para comparar con alternativas de otros autores en la misma categoria (modelos multimodales de ~177 B en MLX). La comparativa se limita a las variantes del mismo modelo base documentadas por el autor.
 
@@ -86,7 +86,7 @@ No se dispone de datos suficientes para comparar con alternativas de otros autor
 
 - Modelo experimental: el autor lo etiqueta explicitamente como experimental y las instrucciones de compilacion desde codigo fuente son un esquema no verificado de instalacion limpia.
 - Requiere 64 GiB de memoria unificada en la practica; 48 GiB no esta probado y 32 GiB es insuficiente segun la estimacion del autor.
-- La etiqueta "8-bit" de HuggingFace no refleja la cuantizacion real (expertos en 2 bits, PLE en 4 bits, componentes sensibles en FP16); el aviso de hardware del Hub puede inducir a error.
+- La etiqueta "8-bit" de Hugging Face no refleja la cuantizacion real (expertos en 2 bits, PLE en 4 bits, componentes sensibles en FP16); el aviso de hardware del Hub puede inducir a error.
 - El rendimiento en JSON estricto fallo en una de las pruebas sinteticas con imagen (fences Markdown), lo que desaconseja su uso en pipelines que exijan JSON puro sin post-procesado.
 - Las pruebas de calidad se limitan a 50/50 en un subconjunto fijo de GSM8K y a comprobaciones sinteticas; no hay evaluaciones estandarizadas que permitan estimar la calidad general.
 - No hay datos sobre sesgos, riesgo de alucinacion ni comportamiento multilingue.
@@ -97,7 +97,7 @@ No se dispone de datos suficientes para comparar con alternativas de otros autor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/3hs4n/Qwen3.8-Flash-Next-Uncensored-mlx-optimized-2-8bit
+- Hugging Face: https://huggingface.co/3hs4n/Qwen3.8-Flash-Next-Uncensored-mlx-optimized-2-8bit
 - Modelo base: https://huggingface.co/orcarouter/Qwen3.8-Flash-Next-Uncensored
 - Edicion DFlash2: https://huggingface.co/3hs4n/Qwen3.8-Flash-Next-Uncensored-mlx-optimized-2-8bit-DFlash2
 - Evidencia de recursos nativos: evaluation/upstream-native-resource.json (en el repositorio)

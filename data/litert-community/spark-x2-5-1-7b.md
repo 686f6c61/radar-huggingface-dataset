@@ -46,7 +46,7 @@ From web search:
 - Strong performance across conversation, writing, translation, reasoning, coding, tool use, and agentic workflows
 - Leading results among open models
 
-Now I need to structure this into the required format. Let me note that the HuggingFace entry is a LiteRT-LM conversion of the original model. The original is XHToken/Spark-X2.5-1.7B. The model card is from the litert-community repo.
+Now I need to structure this into the required format. Let me note that the Hugging Face entry is a LiteRT-LM conversion of the original model. The original is XHToken/Spark-X2.5-1.7B. The model card is from the litert-community repo.
 
 Important considerations:
 - The context for the on-device version is 4096 tokens (KV budget), but the original has 1M native context. I should note this distinction.
@@ -133,7 +133,7 @@ For "Limitaciones y advertencias":
 - No published benchmarks beyond GSM8K in the info
 
 For "Enlaces":
-- HuggingFace URL
+- Hugging Face URL
 - GitHub URL
 - LiteRT-LM GitHub
 
@@ -230,7 +230,7 @@ Spark-X2.5-1.7B es un modelo de lenguaje compacto de 1.710 millones de parámetr
 
 La arquitectura es un decoder denso con 28 capas, tamaño de ocultación 2048, 8 cabezas de consulta y 2 cabezas KV de dimensión 256. Incorpora una disposición de atención híbrida con tres capas de ventana deslizante (512) por cada capa de atención completa, puertas de salida por cabeza basadas en sigmoide y MLPs con GELU exacto. El modelo original soporta un contexto nativo de 1 millón de tokens, aunque la conversión a LiteRT-LM limita el presupuesto KV a 4096 tokens en dispositivos.
 
-Esta entrada de HuggingFace es una conversión al formato LiteRT-LM (.litertlm) realizada por litert-community para inferencia en dispositivos (on-device) con el runtime LiteRT-LM de Google. Se trata de un modelo de razonamiento que resuelve problemas dentro de etiquetas de pensamiento antes de responder, con un canal de pensamiento declarado en los metadatos del bundle. La licencia es Apache-2.0.
+Esta entrada de Hugging Face es una conversión al formato LiteRT-LM (.litertlm) realizada por litert-community para inferencia en dispositivos (on-device) con el runtime LiteRT-LM de Google. Se trata de un modelo de razonamiento que resuelve problemas dentro de etiquetas de pensamiento antes de responder, con un canal de pensamiento declarado en los metadatos del bundle. La licencia es Apache-2.0.
 
 ---
 
@@ -246,7 +246,7 @@ Spark-X2.5-1.7B es un modelo de lenguaje compacto de 1.710 millones de parámetr
 
 La arquitectura es un decoder denso de 28 capas, tamaño de ocultación 2048, 8 cabezas de consulta y 2 cabezas KV de dimensión 256. Incorpora atención híbrida con tres capas de ventana deslizante (512) por cada capa de atención completa, puertas de salida por cabeza basadas en sigmoide y MLPs con GELU exacto. El modelo original soporta un contexto nativo de 1 millón de tokens, aunque la conversión a LiteRT-LM limita el presupuesto KV a 4096 tokens.
 
-Esta entrada de HuggingFace es una conversión al formato LiteRT-LM (.litertlm) para inferencia en dispositivos con el runtime LiteRT-LM de Google. Es un modelo de razonamiento que resuelve problemas dentro de etiquetas de pensamiento antes de responder, con un canal de pensamiento declarado en los metadatos. Licencia Apache-2.0.
+Esta entrada de Hugging Face es una conversión al formato LiteRT-LM (.litertlm) para inferencia en dispositivos con el runtime LiteRT-LM de Google. Es un modelo de razonamiento que resuelve problemas dentro de etiquetas de pensamiento antes de responder, con un canal de pensamiento declarado en los metadatos. Licencia Apache-2.0.
 
 That's 3 paragraphs, about 10 lines. Good.
 
@@ -357,11 +357,11 @@ For "Limitaciones y advertencias":
 - El bundle LiteRT-LM no incluye el formato de tool-calling del modelo original, por lo que los casos de uso con herramientas requieren implementación personalizada.
 - No se han publicado resultados de benchmarks amplios (MMLU, HumanEval, etc.) en la información disponible; solo se dispone de GSM8K y pruebas de cordura internas.
 - Los datos de entrenamiento (tokens, composición del dataset, RLHF/DPO) no están disponibles en la información proporcionada.
-- Los idiomas soportados no están especificados en la ficha de HuggingFace, aunque el GitHub menciona traducción.
+- Los idiomas soportados no están especificados en la ficha de Hugging Face, aunque el GitHub menciona traducción.
 
 For "Enlaces":
 
-- HuggingFace: https://huggingface.co/litert-community/Spark-X2.5-1.7B
+- Hugging Face: https://huggingface.co/litert-community/Spark-X2.5-1.7B
 - GitHub del proyecto: https://github.com/XHToken/Spark-X2.5
 - Runtime LiteRT-LM: https://github.com/google-ai-edge/litert-lm
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.5-1.7B
@@ -419,7 +419,7 @@ Spark-X2.5-1.7B es un modelo de lenguaje compacto de 1.710 millones de parámetr
 
 La arquitectura es un decoder denso de 28 capas, tamaño de ocultación 2048, 8 cabezas de consulta y 2 cabezas KV de dimensión 256. Incorpora atención híbrida con tres capas de ventana deslizante (512) por cada capa de atención completa, puertas de salida por cabeza basadas en sigmoide y MLPs con GELU exacto. El modelo original soporta un contexto nativo de 1 millón de tokens, aunque la conversión a LiteRT-LM limita el presupuesto KV a 4096 tokens en dispositivos.
 
-Esta entrada de HuggingFace es una conversión al formato LiteRT-LM (`.litertlm`) para inferencia en dispositivos con el runtime LiteRT-LM de Google. Es un modelo de razonamiento que resuelve problemas dentro de etiquetas de pensamiento antes de responder, con un canal de pensamiento declarado en los metadatos. La licencia es Apache-2.0.
+Esta entrada de Hugging Face es una conversión al formato LiteRT-LM (`.litertlm`) para inferencia en dispositivos con el runtime LiteRT-LM de Google. Es un modelo de razonamiento que resuelve problemas dentro de etiquetas de pensamiento antes de responder, con un canal de pensamiento declarado en los metadatos. La licencia es Apache-2.0.
 
 ## Especificaciones tecnicas
 
@@ -447,7 +447,7 @@ El modelo fue entrenado por el equipo SparkLLM de iFLYTEK. Los detalles sobre el
 - Generación de código: soporta tareas de codificación según el GitHub del proyecto.
 - Tool calling / function calling: el modelo original soporta uso de herramientas, aunque el bundle LiteRT-LM no incluye el formato de tool-calling.
 - Agentes y razonamiento multi-paso: el GitHub del proyecto menciona flujos de trabajo agénticos.
-- Capacidades multilingües: el GitHub menciona traducción, aunque los idiomas concretos no están especificados en la ficha de HuggingFace.
+- Capacidades multilingües: el GitHub menciona traducción, aunque los idiomas concretos no están especificados en la ficha de Hugging Face.
 - Modo de pensamiento: el bundle declara un canal de pensamiento que permite a los runtimes con soporte de ThinkingConfig limitar o leer el razonamiento por separado; `enable_thinking: false` renderiza la forma sin pensamiento del modelo.
 
 ## Casos de uso
@@ -511,12 +511,12 @@ La comparacion con la variante de 4B es limitada porque la informacion disponibl
 - El bundle LiteRT-LM no incluye el formato de tool-calling del modelo original, por lo que los casos de uso con herramientas requieren implementacion personalizada.
 - No se han publicado resultados de benchmarks amplios (MMLU, HumanEval, etc.) en la informacion disponible; solo se dispone de GSM8K y pruebas de cordura internas.
 - Los datos de entrenamiento (tokens, composicion del dataset, RLHF/DPO) no estan disponibles en la informacion proporcionada.
-- Los idiomas soportados no estan especificados en la ficha de HuggingFace, aunque el GitHub del proyecto menciona traduccion.
+- Los idiomas soportados no estan especificados en la ficha de Hugging Face, aunque el GitHub del proyecto menciona traduccion.
 - El archivo int8 falla una pregunta en el prompt compuesto de iPhone 17 Pro (la linea de rima del final, responde "purple" en lugar de "blue"), lo que indica posibles sesgos en tareas de estilo.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/litert-community/Spark-X2.5-1.7B
+- Hugging Face: https://huggingface.co/litert-community/Spark-X2.5-1.7B
 - GitHub del proyecto: https://github.com/XHToken/Spark-X2.5
 - Runtime LiteRT-LM: https://github.com/google-ai-edge/litert-lm
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.5-1.7B

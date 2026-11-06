@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Krea-2-Coloss-Turbo-Quantized-NSFW es una versión cuantizada del modelo de generación de imágenes Krea-2-Coloss-Turbo, publicado por colosslabs en HuggingFace. Se trata de un modelo de texto a imagen (text-to-image) diseñado para ejecutarse en ComfyUI, que ofrece versiones comprimidas del modelo base en distintos formatos de cuantización (fp8, int8 y nvfp4) con el objetivo de reducir los requisitos de memoria y acelerar la inferencia sin perder excesiva calidad de generación.
+Krea-2-Coloss-Turbo-Quantized-NSFW es una versión cuantizada del modelo de generación de imágenes Krea-2-Coloss-Turbo, publicado por colosslabs en Hugging Face. Se trata de un modelo de texto a imagen (text-to-image) diseñado para ejecutarse en ComfyUI, que ofrece versiones comprimidas del modelo base en distintos formatos de cuantización (fp8, int8 y nvfp4) con el objetivo de reducir los requisitos de memoria y acelerar la inferencia sin perder excesiva calidad de generación.
 
-El modelo base, Krea-2-Coloss-Turbo, pertenece a la familia Krea-2 y se distribuye bajo la licencia krea-2-community-license. Esta variante cuantizada añade además contenido marcado como NSFW (no apto para todos los públicos), por lo que el repositorio está protegido mediante acceso restringido (gated): para descargarlo es necesario aceptar previamente las condiciones de uso en HuggingFace.
+El modelo base, Krea-2-Coloss-Turbo, pertenece a la familia Krea-2 y se distribuye bajo la licencia krea-2-community-license. Esta variante cuantizada añade además contenido marcado como NSFW (no apto para todos los públicos), por lo que el repositorio está protegido mediante acceso restringido (gated): para descargarlo es necesario aceptar previamente las condiciones de uso en Hugging Face.
 
 Su relevancia radica en la posibilidad de ejecutar un modelo de generación de imágenes de alta calidad en hardware de consumo gracias a las cuantizaciones modernas, incluyendo nvfp4, un formato de 4 bits de punto flotante orientado a las GPU más recientes. Con un tamaño de repositorio de 34,3 GB, las distintas variantes permiten elegir el equilibrio entre calidad y consumo de VRAM según el equipo disponible.
 
@@ -89,6 +89,6 @@ La comparacion con FLUX.1-dev es orientativa: ambos son modelos de difusion text
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/colosslabs/Krea-2-Coloss-Turbo-Quantized-NSFW
+- Repositorio en Hugging Face: https://huggingface.co/colosslabs/Krea-2-Coloss-Turbo-Quantized-NSFW
 - Modelo base: https://huggingface.co/colosslabs/Krea-2-Coloss-Turbo
 - No hay enlaces a papers, blogs, demos ni repositorios adicionales en la informacion disponible.

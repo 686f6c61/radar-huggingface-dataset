@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la información disponible. La d
 - VRAM estimada para inferencia: el modelo tiene 110,65 millones de parámetros. En FP32, el peso ocupa unos 0,44 GB; en FP16, 0,22 GB. Con los activos y overhead, se puede ejecutar en GPUs con 2-4 GB de VRAM.
 - GPU recomendadas: cualquier GPU moderna con al menos 4 GB de VRAM, por ejemplo NVIDIA RTX 3060, RTX 4060, GTX 1080 Ti, o incluso una Tesla T4. Para uso intensivo, una RTX 4090 o A100 sería excesiva pero viable.
 - Si cabe en GPU consumer: sí, cabe en la mayoría de GPUs de consumo con 4 GB o más. También puede ejecutarse en CPU, aunque con mayor latencia.
-- Opciones de despliegue: al ser un modelo de HuggingFace, se puede usar con `transformers` directamente, con vLLM (aunque vLLM está más orientado a modelos generativos, podría funcionar), TGI (Text Generation Inference), o mediante ONNX Runtime para optimización. No se menciona soporte para llama.cpp ni GGUF, pero al ser un modelo de encoder, no es el típico uso de llama.cpp.
+- Opciones de despliegue: al ser un modelo de Hugging Face, se puede usar con `transformers` directamente, con vLLM (aunque vLLM está más orientado a modelos generativos, podría funcionar), TGI (Text Generation Inference), o mediante ONNX Runtime para optimización. No se menciona soporte para llama.cpp ni GGUF, pero al ser un modelo de encoder, no es el típico uso de llama.cpp.
 - Latencia y throughput: no se proporcionan datos específicos. Dado el tamaño pequeño, la inferencia en GPU debería ser de milisegundos por secuencia.
 
 ## Comparativa con modelos similares

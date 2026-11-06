@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Phu-Hien/qwen3_5_2B_OCR_lora es un adaptador LoRA publicado en HuggingFace por el usuario Phu-Hien, obtenido mediante fine-tuning del modelo base unsloth/Qwen3.5-2B. El identificador del repositorio sugiere un ajuste orientado a tareas de OCR (reconocimiento optico de caracteres), aunque la model card no documenta el conjunto de datos, el procedimiento ni la tarea exacta de entrenamiento. El repositorio ocupa 0,1 GB, lo que es coherente con un adaptador de bajo rango y no con un modelo completo de pesos.
+Phu-Hien/qwen3_5_2B_OCR_lora es un adaptador LoRA publicado en Hugging Face por el usuario Phu-Hien, obtenido mediante fine-tuning del modelo base unsloth/Qwen3.5-2B. El identificador del repositorio sugiere un ajuste orientado a tareas de OCR (reconocimiento optico de caracteres), aunque la model card no documenta el conjunto de datos, el procedimiento ni la tarea exacta de entrenamiento. El repositorio ocupa 0,1 GB, lo que es coherente con un adaptador de bajo rango y no con un modelo completo de pesos.
 
 El modelo se distribuye bajo licencia Apache-2.0 y esta etiquetado unicamente para el idioma ingles. El entrenamiento se realizo con Unsloth, que el autor destaca por ofrecer un entrenamiento "2x mas rapido", y con las librerias TRL y transformers; las etiquetas incluyen text-generation-inference y endpoints_compatible, lo que indica compatibilidad prevista con despliegues de Inferencia de Texto Generation.
 
@@ -56,17 +56,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para el modelo base (estimacion a partir de un tamano aproximado de 2.000 millones de parametros, no confirmado por el autor): en torno a 4-5 GB de pesos en bf16/fp16 y 6-8 GB contando cache KV y activaciones; unos 2,5 GB en cuantizacion de 8 bits; aproximadamente 1,5-2 GB en cuantizacion de 4 bits.
 - GPU recomendadas: cualquier GPU con 8 GB o mas de memoria (RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4090) para inferencia en bf16; A100, H100 o L40S para servir multiples peticiones concurrentes.
 - Compatibilidad con GPU de consumo: si, muy probablemente en tarjetas de 8-12 GB, y en equipos con memoria unificada de 16 GB (Apple Silicon) para variantes cuantizadas.
-- Opciones de despliegue: transformers + PEFT (ruta mas directa para cargar el adaptador), vLLM con soporte de adaptadores LoRA, HuggingFace Text Generation Inference (etiqueta declarada por el autor), SGLang, y llama.cpp/Ollama/LM Studio tras fusionar el adaptador con el modelo base y convertirlo a GGUF.
+- Opciones de despliegue: transformers + PEFT (ruta mas directa para cargar el adaptador), vLLM con soporte de adaptadores LoRA, Hugging Face Text Generation Inference (etiqueta declarada por el autor), SGLang, y llama.cpp/Ollama/LM Studio tras fusionar el adaptador con el modelo base y convertirlo a GGUF.
 - Latencia y throughput: no disponibles. No se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Phu-Hien/qwen3_5_2B_OCR_lora | Adaptador sobre base de ~2B (no confirmado) | No disponible | Apache-2.0 | HuggingFace, 0 descargas | Sin evaluacion publicada; requiere el modelo base |
-| unsloth/Qwen3.5-2B (modelo base) | ~2B (segun nombre) | No disponible | No disponible en la informacion facilitada | HuggingFace (Unsloth) | Modelo sin ajustar; carece de especializacion OCR |
+| Phu-Hien/qwen3_5_2B_OCR_lora | Adaptador sobre base de ~2B (no confirmado) | No disponible | Apache-2.0 | Hugging Face, 0 descargas | Sin evaluacion publicada; requiere el modelo base |
+| unsloth/Qwen3.5-2B (modelo base) | ~2B (segun nombre) | No disponible | No disponible en la informacion facilitada | Hugging Face (Unsloth) | Modelo sin ajustar; carece de especializacion OCR |
 | Motores de OCR clasicos (por ejemplo Tesseract o PaddleOCR) | No aplica (no son redes generativas) | No aplica | Apache-2.0 en ambos casos | Ampliamente desplegados | Especializados en OCR, ligeros y ejecutables en CPU; sin capacidad generativa |
-| Modelos vision-lenguaje para OCR (por ejemplo la familia Qwen-VL) | Del orden de 3B a 7B en las variantes pequenas | No disponible con certeza | Apache-2.0 en varias variantes | HuggingFace | Procesan imagen y texto de forma nativa; comparacion no verificada con datos de esta ficha |
+| Modelos vision-lenguaje para OCR (por ejemplo la familia Qwen-VL) | Del orden de 3B a 7B en las variantes pequenas | No disponible con certeza | Apache-2.0 en varias variantes | Hugging Face | Procesan imagen y texto de forma nativa; comparacion no verificada con datos de esta ficha |
 
 No se dispone de datos de rendimiento que permitan una comparacion cuantitativa fiable entre estas opciones.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento que permitan una comparacion cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Phu-Hien/qwen3_5_2B_OCR_lora
+- Modelo en Hugging Face: https://huggingface.co/Phu-Hien/qwen3_5_2B_OCR_lora
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-2B
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - TRL (libreria de entrenamiento citada en las etiquetas): https://github.com/huggingface/trl

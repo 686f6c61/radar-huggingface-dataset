@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`thaitoan1908/dana_qwen_travel_v5` es un adaptador LoRA publicado en HuggingFace por el usuario thaitoan1908, construido sobre el modelo base Qwen/Qwen2.5-3B-Instruct. Se distribuye como un repositorio PEFT de aproximadamente 0,1 GB, lo que corresponde al peso de los adaptadores y no al modelo completo. El nombre sugiere un ajuste orientado al dominio de viajes, aunque la model card no documenta ni confirma ese extremo. El pipeline declarado es text-generation y la librería de referencia es PEFT.
+`thaitoan1908/dana_qwen_travel_v5` es un adaptador LoRA publicado en Hugging Face por el usuario thaitoan1908, construido sobre el modelo base Qwen/Qwen2.5-3B-Instruct. Se distribuye como un repositorio PEFT de aproximadamente 0,1 GB, lo que corresponde al peso de los adaptadores y no al modelo completo. El nombre sugiere un ajuste orientado al dominio de viajes, aunque la model card no documenta ni confirma ese extremo. El pipeline declarado es text-generation y la librería de referencia es PEFT.
 
 El interés de esta ficha es limitado pero ilustrativo: se trata de un adaptador de bajo rango sobre un modelo instruct de 3B parámetros, una combinación habitual para prototipado rápido en dominios verticales. La relevancia práctica depende enteramente de la calidad del modelo base Qwen2.5-3B-Instruct y de la calidad del dataset de ajuste, que no se documenta en la información disponible. El repositorio no registra descargas ni likes en el momento de la consulta y su model card es una plantilla sin rellenar.
 
@@ -25,7 +25,7 @@ No hay información publicada sobre licencia, idiomas soportados, datos de entre
 
 El artefacto publicado es un adaptador LoRA, no un modelo completo. La arquitectura subyacente es la de Qwen2.5-3B-Instruct: un transformer decoder-only con atención de múltiples cabezas, RoPE para posiciones y una ventana de contexto nativa de 32 768 tokens. El adaptador añade matrices de bajo rango sobre determinadas capas del base, cuyo rango, alpha, módulos objetivo y dropout no se especifican en la información disponible.
 
-No se documentan ni el dataset de ajuste, ni el número de tokens, ni la composición de los datos, ni si hubo RLHF, DPO o ajuste supervisado adicional. La model card es una plantilla estándar de HuggingFace sin rellenar, y no incluye hiperparámetros de entrenamiento, régimen de precisión ni infraestructura utilizada. La única referencia técnica concreta es la versión de PEFT declarada en las framework versions: 0.21.2.
+No se documentan ni el dataset de ajuste, ni el número de tokens, ni la composición de los datos, ni si hubo RLHF, DPO o ajuste supervisado adicional. La model card es una plantilla estándar de Hugging Face sin rellenar, y no incluye hiperparámetros de entrenamiento, régimen de precisión ni infraestructura utilizada. La única referencia técnica concreta es la versión de PEFT declarada en las framework versions: 0.21.2.
 
 ## Capacidades
 
@@ -84,7 +84,7 @@ La comparación relevante es contra el propio modelo base: el adaptador no aport
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/thaitoan1908/dana_qwen_travel_v5
+- Repositorio Hugging Face: https://huggingface.co/thaitoan1908/dana_qwen_travel_v5
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Documentación de PEFT: https://huggingface.co/docs/peft
 - Paper de LoRA (Hu et al., 2021): https://arxiv.org/abs/2106.09685

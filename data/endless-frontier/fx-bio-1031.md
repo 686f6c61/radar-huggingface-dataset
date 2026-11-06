@@ -18,7 +18,7 @@ La relevancia del modelo reside en su enfoque de mejora continua mediante Recurs
 | Longitud de contexto | 524.288 tokens |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | Qwen Community License 1.0 (identificador `other` en HuggingFace) |
+| Licencia | Qwen Community License 1.0 (identificador `other` en Hugging Face) |
 | Formato de pesos | BF16 safetensors (73 shards, ~360 GB) |
 
 ## Arquitectura y entrenamiento
@@ -75,7 +75,7 @@ Resultados publicados por el autor, obtenidos con su framework interno de evalua
 
 | Modelo | Parametros | Contexto | BioMysteryBench Overall (Pass@5) | BiomniBench Pass@3 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Fx-Bio-1031 | 180B (6B activos) | 524.288 | 88,89 | 89,50 | Qwen Community License 1.0 | Pesos abiertos en HuggingFace |
+| Fx-Bio-1031 | 180B (6B activos) | 524.288 | 88,89 | 89,50 | Qwen Community License 1.0 | Pesos abiertos en Hugging Face |
 | GPT-6-Astra | no disponible | no disponible | 83,33 | 82,00 | propietaria | API cerrada |
 | Opus-5 | no disponible | no disponible | 86,67 | 87,42 | propietaria | API cerrada |
 
@@ -92,7 +92,7 @@ Resultados publicados por el autor, obtenidos con su framework interno de evalua
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/endless-frontier/Fx-Bio-1031
+- Modelo en Hugging Face: https://huggingface.co/endless-frontier/Fx-Bio-1031
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - BioMysteryBench (investigación de Anthropic): https://www.anthropic.com/research/Evaluating-Claude-For-Bioinformatics-With-BioMysteryBench
 - BioMysteryBench (dataset): https://huggingface.co/datasets/Anthropic/BioMysteryBench-full

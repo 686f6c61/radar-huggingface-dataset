@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Zapdos es un repositorio de modelo publicado en HuggingFace por el usuario Ryanham1lton bajo licencia CC BY 4.0. La informacion disponible es extremadamente limitada: la model card no contiene mas que la declaracion de licencia, no se especifica pipeline, idiomas, arquitectura ni tamano de parametros. El repositorio ocupa 0,1 GB, un volumen compatible con un modelo pequeno (del orden de decenas de millones de parametros en precision completa) o con un adaptador de ajuste fino, aunque esta interpretacion es una estimacion derivada del tamano del repo y no un dato confirmado por el autor.
+Zapdos es un repositorio de modelo publicado en Hugging Face por el usuario Ryanham1lton bajo licencia CC BY 4.0. La informacion disponible es extremadamente limitada: la model card no contiene mas que la declaracion de licencia, no se especifica pipeline, idiomas, arquitectura ni tamano de parametros. El repositorio ocupa 0,1 GB, un volumen compatible con un modelo pequeno (del orden de decenas de millones de parametros en precision completa) o con un adaptador de ajuste fino, aunque esta interpretacion es una estimacion derivada del tamano del repo y no un dato confirmado por el autor.
 
 El modelo no registra descargas ni likes en el momento de la consulta, y fue creado y actualizado el mismo dia (6 de octubre de 2026), lo que sugiere una publicacion reciente y sin validacion por parte de la comunidad. No se ha localizado documentacion tecnica, paper, blog ni repositorio de codigo asociado. Las busquedas web realizadas no devuelven ningun resultado relacionado con este modelo: los enlaces encontrados corresponden a proyectos de arquitectura, foros de videojuegos y comunidades de fantasia, sin relacion alguna con inteligencia artificial.
 
@@ -81,7 +81,7 @@ No disponible. No es posible identificar modelos comparables sin conocer la arqu
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Zapdos | no disponible | no disponible | no disponible | cc-by-4.0 | HuggingFace |
+| Zapdos | no disponible | no disponible | no disponible | cc-by-4.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -98,7 +98,7 @@ No disponible. No es posible identificar modelos comparables sin conocer la arqu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/Zapdos
+- Hugging Face: https://huggingface.co/Ryanham1lton/Zapdos
 - Model card: no disponible en la informacion proporcionada (solo contiene la licencia)
 - Paper: no disponible
 - Repositorio de codigo: no disponible

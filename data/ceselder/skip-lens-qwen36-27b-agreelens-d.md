@@ -94,7 +94,7 @@ No se dispone de comparativas con otros modelos de interpretabilidad fuera de es
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ceselder/skip-lens-qwen36-27b-agreelens-d
+- Repositorio Hugging Face: https://huggingface.co/ceselder/skip-lens-qwen36-27b-agreelens-d
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B
 - Brazos hermanos: https://huggingface.co/ceselder/skip-lens-qwen36-27b-agreelens-{a,d,g,p}
 - Página de Neuronpedia sobre Jacobian Lens para Qwen3.6-27B: https://www.neuronpedia.org/qwen3.6-27b/jlens

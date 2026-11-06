@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Dolphin 3.0 Llama 3.1 8B es un modelo de lenguaje instructivo de 8.030.277.632 parámetros, obtenido mediante fine-tuning de `meta-llama/Llama-3.1-8B`. Forma parte de la colección Dolphin 3.0, orientada a construir un modelo generalista y autoalojable para programación, matemáticas, uso agéntico, function calling y conversación. El repositorio de HuggingFace está publicado por KeepThinking; la model card atribuye la curaduría y el entrenamiento a Eric Hartford, Ben Gitter, BlouseJury y Cognitive Computations.
+Dolphin 3.0 Llama 3.1 8B es un modelo de lenguaje instructivo de 8.030.277.632 parámetros, obtenido mediante fine-tuning de `meta-llama/Llama-3.1-8B`. Forma parte de la colección Dolphin 3.0, orientada a construir un modelo generalista y autoalojable para programación, matemáticas, uso agéntico, function calling y conversación. El repositorio de Hugging Face está publicado por KeepThinking; la model card atribuye la curaduría y el entrenamiento a Eric Hartford, Ben Gitter, BlouseJury y Cognitive Computations.
 
 La propuesta principal de Dolphin es el control por parte del propietario del sistema: el prompt de sistema, la alineación y las políticas de uso las define quien despliega el modelo, no el proveedor. Esto lo hace atractivo para empresas que quieren evitar dependencias de APIs cerradas y mantener las consultas en su propia infraestructura. El modelo declara únicamente inglés, licencia Llama 3.1 y pesos en safetensors.
 
@@ -80,10 +80,10 @@ No se dispone de resultados de benchmarks homogéneos para comparar rendimiento 
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Dolphin3.0-Llama3.1-8B | 8,03 B | 128.000 tokens heredados de Llama 3.1 8B | Llama 3.1 | HuggingFace, repositorio KeepThinking |
-| Llama 3.1 8B Instruct | 8 B | 128.000 tokens | Llama 3.1 | HuggingFace, meta-llama |
-| Mistral 7B Instruct v0.3 | 7,2 B | 32.000 tokens | Apache 2.0 | HuggingFace, mistralai |
-| Qwen2.5 7B Instruct | 7,6 B | 128.000 tokens | Apache 2.0 | HuggingFace, Qwen |
+| Dolphin3.0-Llama3.1-8B | 8,03 B | 128.000 tokens heredados de Llama 3.1 8B | Llama 3.1 | Hugging Face, repositorio KeepThinking |
+| Llama 3.1 8B Instruct | 8 B | 128.000 tokens | Llama 3.1 | Hugging Face, meta-llama |
+| Mistral 7B Instruct v0.3 | 7,2 B | 32.000 tokens | Apache 2.0 | Hugging Face, mistralai |
+| Qwen2.5 7B Instruct | 7,6 B | 128.000 tokens | Apache 2.0 | Hugging Face, Qwen |
 
 Frente a Llama 3.1 8B Instruct, Dolphin añade un ajuste orientado a código, matemáticas y agentes, y una filosofía de alineación steerable. Frente a Mistral 7B Instruct v0.3, ofrece mayor contexto y licencia Llama 3.1 en lugar de Apache 2.0. Frente a Qwen2.5 7B Instruct, compite en tamaño y contexto, pero Qwen2.5 declara capacidades multilingües más amplias y licencia Apache 2.0.
 
@@ -101,9 +101,9 @@ Frente a Llama 3.1 8B Instruct, Dolphin añade un ajuste orientado a código, ma
 
 ## Enlaces
 
-- [HuggingFace: KeepThinking/Dolphin3.0-Llama3.1-8B](https://huggingface.co/KeepThinking/Dolphin3.0-Llama3.1-8B)
+- [Hugging Face: KeepThinking/Dolphin3.0-Llama3.1-8B](https://huggingface.co/KeepThinking/Dolphin3.0-Llama3.1-8B)
 - [Colección Dolphin 3.0](https://huggingface.co/collections/cognitivecomputations/dolphin-30-677ab47f73d7ff66743979a3)
 - [Modelo base: meta-llama/Llama-3.1-8B](https://huggingface.co/meta-llama/Llama-3.1-8B)
-- [Organización Cognitive Computations en HuggingFace](https://huggingface.co/cognitivecomputations)
+- [Organización Cognitive Computations en Hugging Face](https://huggingface.co/cognitivecomputations)
 - [Discord de Cognitive Computations](https://discord.gg/cognitivecomputations)
 - [Open LLM Leaderboard: resultados declarados](https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard#/?search=cognitivecomputations%2FDolphin3.0-Llama3.1-8B)

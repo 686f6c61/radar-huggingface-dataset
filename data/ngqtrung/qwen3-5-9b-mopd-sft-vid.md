@@ -76,8 +76,8 @@ El autor senala ademas que en dominios de imagen el SFT queda por debajo del bas
 
 | Modelo | Parametros | Contexto | VideoMME | LongVideoBench | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen3.5-9B-MOPD-SFT-vid | 9,41B | no disponible | 0,670 | 0,607 | Apache 2.0 | HuggingFace (25 descargas) |
-| Qwen/Qwen3.5-9B (base) | no disponible | no disponible | 0,628 | 0,566 | no disponible | HuggingFace |
+| Qwen3.5-9B-MOPD-SFT-vid | 9,41B | no disponible | 0,670 | 0,607 | Apache 2.0 | Hugging Face (25 descargas) |
+| Qwen/Qwen3.5-9B (base) | no disponible | no disponible | 0,628 | 0,566 | no disponible | Hugging Face |
 | Alternativas de 8-9B vision-lenguaje | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 El unico comparable documentado con datos es el modelo base Qwen3.5-9B, sobre el que este SFT mejora en VideoMME (+0,042), LongVideoBench (+0,041) y Video-Holmes (+0,013), y empeora ligeramente en TempCompass (-0,007) y VSI-Bench (-0,002). No se dispone de datos de otros modelos de la misma categoria en la informacion proporcionada.
@@ -97,7 +97,7 @@ El unico comparable documentado con datos es el modelo base Qwen3.5-9B, sobre el
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ngqtrung/Qwen3.5-9B-MOPD-SFT-vid
+- Modelo en Hugging Face: https://huggingface.co/ngqtrung/Qwen3.5-9B-MOPD-SFT-vid
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Dataset de entrenamiento: https://huggingface.co/datasets/ngqtrung/mopd-data
 - Coleccion MOPD (multi-teacher on-policy distillation, Qwen3.5-9B): referenciada en la model card, sin URL directa disponible

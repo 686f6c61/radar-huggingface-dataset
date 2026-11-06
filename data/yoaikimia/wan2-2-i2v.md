@@ -4,7 +4,7 @@
 
 El repositorio `YoAiKimia/Wan2.2-I2V` aloja los pesos de un modelo de generación de vídeo imagen-a-vídeo (I2V) perteneciente a la familia Wan2.2, desarrollada por el equipo Wan-Video. Wan2.2 es la evolución del modelo Wan2.1 y está diseñado para generar vídeos de alta calidad (hasta 720p) a partir de imágenes de entrada, con control estético y de movimiento de nivel cinematográfico. El repositorio contiene 246.9 GB de datos en formatos safetensors y GGUF, lo que sugiere que incluye tanto pesos completos como versiones cuantizadas para diferentes despliegues.
 
-La información pública sobre este repositorio concreto es muy limitada: no se especifican la arquitectura exacta, el número de parámetros, la licencia ni los idiomas soportados. El acceso está restringido (gated) y requiere aceptar condiciones en HuggingFace. A partir de las referencias web, se sabe que existe una variante denominada Wan2.2-I2V-A14B, que probablemente indica un modelo con 14 mil millones de parámetros activos, aunque no se confirma si este repositorio corresponde exactamente a esa variante. La relevancia actual radica en que Wan2.2 representa un avance significativo en la generación de vídeo de código abierto, compitiendo con soluciones propietarias.
+La información pública sobre este repositorio concreto es muy limitada: no se especifican la arquitectura exacta, el número de parámetros, la licencia ni los idiomas soportados. El acceso está restringido (gated) y requiere aceptar condiciones en Hugging Face. A partir de las referencias web, se sabe que existe una variante denominada Wan2.2-I2V-A14B, que probablemente indica un modelo con 14 mil millones de parámetros activos, aunque no se confirma si este repositorio corresponde exactamente a esa variante. La relevancia actual radica en que Wan2.2 representa un avance significativo en la generación de vídeo de código abierto, compitiendo con soluciones propietarias.
 
 ## Especificaciones tecnicas
 
@@ -16,7 +16,7 @@ La información pública sobre este repositorio concreto es muy limitada: no se 
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | safetensors y GGUF (según tags del repositorio) |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible (acceso restringido en HuggingFace) |
+| Licencia | no disponible (acceso restringido en Hugging Face) |
 | Formato de pesos | safetensors, GGUF |
 
 ## Arquitectura y entrenamiento
@@ -59,7 +59,7 @@ No se dispone de información suficiente para realizar una comparativa fiable. L
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio requiere aceptar condiciones en HuggingFace, lo que puede limitar su uso comercial o su disponibilidad pública.
+- Acceso restringido: el repositorio requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso comercial o su disponibilidad pública.
 - Licencia no especificada: al no indicarse la licencia, no se puede garantizar que el modelo sea de uso libre, incluso para fines de investigación.
 - Información técnica incompleta: no se dispone de detalles sobre arquitectura, parámetros, contexto o idiomas, lo que dificulta evaluar su idoneidad para casos de uso específicos.
 - Riesgo de alucinación visual: como todo modelo generativo, puede producir vídeos con artefactos, movimientos no naturales o inconsistencias, especialmente en escenas complejas.
@@ -69,7 +69,7 @@ No se dispone de información suficiente para realizar una comparativa fiable. L
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/YoAiKimia/Wan2.2-I2V
+- Repositorio Hugging Face: https://huggingface.co/YoAiKimia/Wan2.2-I2V
 - Árbol de archivos del repositorio: https://huggingface.co/YoAiKimia/Wan2.2-I2V/tree/main
 - Repositorio GitHub de referencia (3Dsamples/Wan2.2-ai): https://github.com/3Dsamples/Wan2.2-ai
 - Sitio oficial de Wan 2.2: https://wan22.ai/home

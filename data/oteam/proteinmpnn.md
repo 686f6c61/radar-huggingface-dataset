@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| oteam/proteinmpnn | 1,674 M | Esqueleto N, CA, C, O | AGPL-3.0 | HuggingFace (ofoldx) |
-| oteam/solublempnn | 1,674 M | Esqueleto N, CA, C, O | AGPL-3.0 | HuggingFace (ofoldx) |
-| oteam/proteinmpnn-ca-only | 1,642 M | Solo CA | AGPL-3.0 | HuggingFace (ofoldx) |
+| oteam/proteinmpnn | 1,674 M | Esqueleto N, CA, C, O | AGPL-3.0 | Hugging Face (ofoldx) |
+| oteam/solublempnn | 1,674 M | Esqueleto N, CA, C, O | AGPL-3.0 | Hugging Face (ofoldx) |
+| oteam/proteinmpnn-ca-only | 1,642 M | Solo CA | AGPL-3.0 | Hugging Face (ofoldx) |
 | dauparas/ProteinMPNN (oficial) | ~1,7 M | Esqueleto completo | MIT (repo oficial) | GitHub |
 
 Las tres variantes de OFoldX comparten arquitectura y difieren en los átomos de entrada y en el sesgo de entrenamiento (solubilidad). El repositorio oficial de Dauparas et al. ofrece los mismos modelos con licencia MIT, lo que es relevante si la AGPL-3.0 de esta implementación supone un problema para uso comercial. No se dispone de datos de benchmarks comparativos en la información proporcionada.
@@ -93,7 +93,7 @@ Las tres variantes de OFoldX comparten arquitectura y difieren en los átomos de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oteam/proteinmpnn
+- Modelo en Hugging Face: https://huggingface.co/oteam/proteinmpnn
 - Variante SolubleMPNN: https://huggingface.co/oteam/solublempnn
 - Variante CA-only: https://huggingface.co/oteam/proteinmpnn-ca-only
 - Ejemplo de entrenamiento: https://huggingface.co/oteam/proteinmpnn-training-example

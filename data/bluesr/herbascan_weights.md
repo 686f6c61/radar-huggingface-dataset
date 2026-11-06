@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BlueSR/HerbaScan_Weights es un repositorio de pesos publicado por el usuario BlueSR en HuggingFace, con un total de 7.615.616.512 parametros reales declarados en el indice de safetensors (aproximadamente 7,6 mil millones). El repositorio ocupa 58,5 GB, un tamano muy superior al de los pesos en precision completa, lo que indica que agrupa varios artefactos del mismo modelo en distintos formatos: safetensors, GGUF, ONNX y joblib. La model card publicada por el autor se limita a la linea `license: mit`, sin descripcion, sin Arquitectura declarada y sin datos de entrenamiento.
+BlueSR/HerbaScan_Weights es un repositorio de pesos publicado por el usuario BlueSR en Hugging Face, con un total de 7.615.616.512 parametros reales declarados en el indice de safetensors (aproximadamente 7,6 mil millones). El repositorio ocupa 58,5 GB, un tamano muy superior al de los pesos en precision completa, lo que indica que agrupa varios artefactos del mismo modelo en distintos formatos: safetensors, GGUF, ONNX y joblib. La model card publicada por el autor se limita a la linea `license: mit`, sin descripcion, sin Arquitectura declarada y sin datos de entrenamiento.
 
 El nombre del repositorio sugiere un sistema orientado al reconocimiento de plantas medicinales ("HerbaScan"), y los tags incluyen `conversational` junto a `endpoints_compatible`, lo que apunta a un modelo con capacidad de dialogo desplegable en infraestructura gestionada. Sin embargo, no hay informacion oficial que confirme la modalidad, el pipeline ni la tarea concreta, por lo que cualquier afirmacion funcional debe tratarse como hipotesis hasta que el autor publique documentacion.
 
@@ -30,7 +30,7 @@ Tampoco se dispone de informacion sobre el corpus de entrenamiento, el numero de
 ## Capacidades
 
 - Generacion de texto conversacional: el tag `conversational` figura explicitamente en el repositorio, lo que indica que el modelo esta preparado para dialogo multi-turno, aunque no se detalla el formato de plantilla ni el tokenizador.
-- Compatibilidad con endpoints gestionados: el tag `endpoints_compatible` indica que el modelo puede desplegarse en HuggingFace Inference Endpoints sin adaptaciones.
+- Compatibilidad con endpoints gestionados: el tag `endpoints_compatible` indica que el modelo puede desplegarse en Hugging Face Inference Endpoints sin adaptaciones.
 - Exportacion multiformato: al publicar safetensors, GGUF, ONNX y joblib, el modelo esta pensado para ejecutarse tanto en frameworks de Python (Transformers, ONNX Runtime, scikit-learn) como en runtimes de inferencia en C/C++ (llama.cpp y derivados).
 - Identificacion de plantas medicinales: capacidad no confirmada, inferida unicamente del nombre del repositorio ("HerbaScan"). No existe documentacion del autor que la respalde.
 - Vision, audio, tool calling, function calling, modo pensamiento y razonamiento multi-paso: no disponible. No hay ningun dato en la informacion proporcionada que permita confirmar o descartar estas capacidades.
@@ -41,7 +41,7 @@ Tampoco se dispone de informacion sobre el corpus de entrenamiento, el numero de
 Advertencia previa: al no existir documentacion funcional, los casos siguientes se plantean como escenarios de evaluacion condicionados a que el modelo confirme las capacidades que su nombre y sus tags sugieren.
 
 - Evaluacion comparativa de formatos de serializacion: al publicar el mismo modelo en safetensors, GGUF, ONNX y joblib, permite medir en un mismo modelo la diferencia de latencia, uso de memoria y precision numerica entre un runtime de Python y un runtime optimizado en C++. Es un caso de uso de ingenieria, no de producto final.
-- Despliegue en HuggingFace Inference Endpoints: el tag `endpoints_compatible` habilita subir el repositorio a un endpoint gestionado para pruebas de integracion sin montar infraestructura propia, util para validar el modelo antes de comprometer recursos.
+- Despliegue en Hugging Face Inference Endpoints: el tag `endpoints_compatible` habilita subir el repositorio a un endpoint gestionado para pruebas de integracion sin montar infraestructura propia, util para validar el modelo antes de comprometer recursos.
 - Inferencia en CPU o hardware modesto mediante GGUF: los artefactos GGUF permiten ejecutar el modelo con llama.cpp u Ollama en maquinas sin GPU dedicada, con pesos cuantizados a 4 bits en torno a 4,5-5 GB.
 - Integracion en aplicaciones .NET o Java mediante ONNX: el formato ONNX permite cargar el modelo con ONNX Runtime fuera del ecosistema Python, lo que resulta adecuado para servicios backend corporativos que no pueden incorporar un stack de PyTorch.
 - Pipelines clasicos de machine learning con joblib: si los artefactos joblib contienen etapas de preprocesado o cabeceras de clasificacion, pueden reutilizarse dentro de un Pipeline de scikit-learn junto con el modelo neuronal, por ejemplo para tareas de clasificacion de imagenes de plantas.
@@ -64,7 +64,7 @@ Estimaciones calculadas a partir del recuento real de parametros (7.615.616.512)
 - GPU profesionales: A100 de 40 GB o 80 GB, H100, L40S y A6000 ejecutan el modelo en bf16 con margen amplio; una A100 de 40 GB permite varias instancias concurrentes en int8.
 - GPU de consumo: una RTX 4090 (24 GB) ejecuta bf16 al limite y trabaja comodamente en int8 y en 4 bits; una RTX 3090 (24 GB) se comporta de forma similar; una RTX 4060 Ti de 16 GB o una RTX 3060 de 12 GB son viables en 4 bits.
 - Equipos Apple Silicon: con memoria unificada de 16 GB es posible la inferencia en 4 bits; 32 GB permiten bf16 o int8 con contexto moderado.
-- Despliegue: llama.cpp y Ollama para los artefactos GGUF; vLLM y TGI para safetensors en GPU; ONNX Runtime para los artefactos ONNX, incluido despliegue en CPU; Transformers para carga directa en Python; HuggingFace Inference Endpoints para despliegue gestionado.
+- Despliegue: llama.cpp y Ollama para los artefactos GGUF; vLLM y TGI para safetensors en GPU; ONNX Runtime para los artefactos ONNX, incluido despliegue en CPU; Transformers para carga directa en Python; Hugging Face Inference Endpoints para despliegue gestionado.
 - Latencia y throughput: no disponible. No hay mediciones publicadas por el autor ni resultados de terceros verificables.
 
 ## Comparativa con modelos similares
@@ -94,7 +94,7 @@ Nota: HerbaScan_Weights es el unico de la tabla que publica artefactos ONNX y jo
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/BlueSR/HerbaScan_Weights
+- Pagina del modelo en Hugging Face: https://huggingface.co/BlueSR/HerbaScan_Weights
 - Arbol de ficheros del repositorio: https://huggingface.co/BlueSR/HerbaScan_Weights/tree/main
 - Ficha indexada de terceros (Essa Mamdani): https://essamamdani.com/ai-models/hf-bluesr-herbascan-weights
 - Proyecto homonimo HerbalHeal-AI en GitHub (autor distinto, MobileNetV2): https://github.com/Karthikgowda-web/HerbalHeal-AI

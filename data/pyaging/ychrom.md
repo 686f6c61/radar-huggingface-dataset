@@ -55,6 +55,6 @@ No disponible. No se dispone de informacion sobre otros modelos de clasificacion
 - No se dispone de informacion sobre sesgos por edad, etnia o poblacion; es posible que el rendimiento varie en diferentes grupos.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/pyaging/ychrom
+- Hugging Face: https://huggingface.co/pyaging/ychrom
 - Articulo original: Wang, Y. et al. DNA methylation-based sex classifier to predict sex and identify sex chromosome aneuploidy. BMC Genomics 22, 484 (2021). https://doi.org/10.1186/s12864-021-07675-2
 - Documentacion de pyaging: https://pyaging.readthedocs.io

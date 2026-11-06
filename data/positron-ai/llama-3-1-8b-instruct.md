@@ -74,7 +74,7 @@ No se dispone de comparativa de benchmarks en la información proporcionada. Los
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/positron-ai/Llama-3.1-8B-Instruct
+- Repositorio Hugging Face: https://huggingface.co/positron-ai/Llama-3.1-8B-Instruct
 - Modelo original de Meta: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Licencia Llama 3.1 Community: https://www.llama.com/llama3_1/license/
 - Cuantizaciones GPTQ de Positron AI: https://huggingface.co/positron-ai/meta-llama_Llama-3.1-8B-Instruct-tron-best-gptq-permuted

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje publicado en HuggingFace por el usuario asd12dscxzcz12 bajo licencia MIT. Aunque el repositorio declara el pipeline de extracción de características (feature-extraction) y usa la librería Transformers, la model card lo presenta como un modelo de razonamiento con mejoras significativas respecto a una versión anterior. Según la documentación, la nueva versión incrementa la profundidad de razonamiento mediante una mayor inversión en cómputo y algoritmos de optimización en el post-entrenamiento, alcanzando en AIME 2025 una precisión del 87,5 % frente al 70 % anterior. También afirma reducir las alucinaciones y mejorar el soporte de function calling.
+MyAwesomeModel es un modelo de lenguaje publicado en Hugging Face por el usuario asd12dscxzcz12 bajo licencia MIT. Aunque el repositorio declara el pipeline de extracción de características (feature-extraction) y usa la librería Transformers, la model card lo presenta como un modelo de razonamiento con mejoras significativas respecto a una versión anterior. Según la documentación, la nueva versión incrementa la profundidad de razonamiento mediante una mayor inversión en cómputo y algoritmos de optimización en el post-entrenamiento, alcanzando en AIME 2025 una precisión del 87,5 % frente al 70 % anterior. También afirma reducir las alucinaciones y mejorar el soporte de function calling.
 
-La arquitectura, el número de parámetros y la longitud de contexto no se especifican en la información disponible. El repositorio no contiene pesos (0.0 GB), por lo que no es posible ejecutar el modelo directamente desde HuggingFace.
+La arquitectura, el número de parámetros y la longitud de contexto no se especifican en la información disponible. El repositorio no contiene pesos (0.0 GB), por lo que no es posible ejecutar el modelo directamente desde Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -15,7 +15,7 @@ La arquitectura, el número de parámetros y la longitud de contexto no se espec
 | Parámetros activos | No aplica (no hay evidencia de arquitectura MoE) |
 | Longitud de contexto | No disponible |
 | Tipos de cuantización | No disponible |
-| Idiomas soportados | No disponibles en el fichero de HuggingFace; la model card menciona traducción sin especificar idiomas |
+| Idiomas soportados | No disponibles en el fichero de Hugging Face; la model card menciona traducción sin especificar idiomas |
 | Licencia | MIT |
 | Formato de pesos | No disponible (el repositorio tiene tamaño 0.0 GB) |
 
@@ -94,18 +94,18 @@ No se dispone de información para comparar con modelos reales de la misma categ
 
 ## Limitaciones y advertencias
 
-- El repositorio en HuggingFace tiene un tamaño de 0.0 GB, lo que indica que no contiene los pesos del modelo. No se puede descargar ni utilizar tal y como está publicado.
-- El pipeline declarado en HuggingFace es feature-extraction, mientras que la model card describe un modelo de razonamiento y generación. Esta inconsistencia sugiere un etiquetado incorrecto y puede confundir a los usuarios.
+- El repositorio en Hugging Face tiene un tamaño de 0.0 GB, lo que indica que no contiene los pesos del modelo. No se puede descargar ni utilizar tal y como está publicado.
+- El pipeline declarado en Hugging Face es feature-extraction, mientras que la model card describe un modelo de razonamiento y generación. Esta inconsistencia sugiere un etiquetado incorrecto y puede confundir a los usuarios.
 - No se especifican la arquitectura, el número de parámetros, la longitud de contexto ni los idiomas soportados. Estas carencias impiden dimensionar los recursos de hardware y evaluar la adecuación a casos de uso concretos.
 - No se identifican los modelos de referencia de las benchmarks (Model1, Model2, Model1-v2), por lo que los resultados comparativos no pueden verificarse de forma independiente.
 - La model card menciona una reducción de alucinaciones y una mejor seguridad, pero no incluye métricas cuantitativas que permitan validar esta afirmación.
 - No se detallan sesgos conocidos ni análisis de robustez ante ataques adversarios.
 - La licencia MIT permite uso comercial y modificación, pero al no existir pesos publicados la aplicación práctica queda bloqueada.
-- Los casos de uso multilingües deben tratarse con cautela: aunque hay una métrica de traducción, HuggingFace no declara ningún idioma soportado.
+- Los casos de uso multilingües deben tratarse con cautela: aunque hay una métrica de traducción, Hugging Face no declara ningún idioma soportado.
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/asd12dscxzcz12/MyAwesomeModel-TestRepository
-- Repositorio de HuggingFace de variante similar: https://huggingface.co/asd12dsacxz12dsa/MyAwesomeModel
-- Repositorio de HuggingFace con nombre similar: https://huggingface.co/DSD1231/MyAwesomeModel-TestRepository
+- Repositorio de Hugging Face: https://huggingface.co/asd12dscxzcz12/MyAwesomeModel-TestRepository
+- Repositorio de Hugging Face de variante similar: https://huggingface.co/asd12dsacxz12dsa/MyAwesomeModel
+- Repositorio de Hugging Face con nombre similar: https://huggingface.co/DSD1231/MyAwesomeModel-TestRepository
 - No se han encontrado papers, blogs oficiales ni documentación técnica adicional en los resultados de búsqueda.

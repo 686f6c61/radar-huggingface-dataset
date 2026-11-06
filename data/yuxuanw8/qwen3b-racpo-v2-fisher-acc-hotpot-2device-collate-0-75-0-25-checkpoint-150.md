@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.75-0.25-checkpoint-150` es un checkpoint de investigacion publicado en HuggingFace por el usuario yuxuanw8. Se trata de un modelo de generacion de texto de aproximadamente 3.086 millones de parametros (3,085938688), con metadatos de transformers que lo etiquetan como arquitectura `qwen2` y pipeline `text-generation`. No es un modelo de proposito general publicado oficialmente por un laboratorio, sino un artefacto intermedio de un experimento de aprendizaje por refuerzo: el propio nombre del repositorio indica "checkpoint-150", es decir, la iteracion 150 de un proceso de entrenamiento.
+El modelo identificado como `yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.75-0.25-checkpoint-150` es un checkpoint de investigacion publicado en Hugging Face por el usuario yuxuanw8. Se trata de un modelo de generacion de texto de aproximadamente 3.086 millones de parametros (3,085938688), con metadatos de transformers que lo etiquetan como arquitectura `qwen2` y pipeline `text-generation`. No es un modelo de proposito general publicado oficialmente por un laboratorio, sino un artefacto intermedio de un experimento de aprendizaje por refuerzo: el propio nombre del repositorio indica "checkpoint-150", es decir, la iteracion 150 de un proceso de entrenamiento.
 
 El nombre del repositorio concentra la practica totalidad de la informacion disponible: "qwen3b" apunta a una base de la familia Qwen de 3B de parametros (el recuento real coincide con la variante de 3B de Qwen2.5, aunque la etiqueta de transformers es `qwen2`), "racpo-v2" sugiere una segunda version de un algoritmo de optimizacion de politica (probablemente una variante de RL tipo GRPO/PPO con componentes de tipo Fisher), "hotpot" apunta al conjunto de datos HotpotQA de question answering multi-salto, y "2device-collate-0.75-0.25" indica un entrenamiento distribuido en dos dispositivos con una mezcla de datos o de collators en proporcion 75/25.
 
@@ -22,7 +22,7 @@ Su relevancia es exclusivamente de investigacion: la model card esta autogenerad
 
 ## Arquitectura y entrenamiento
 
-La informacion publicada no describe la arquitectura. Los metadatos de HuggingFace etiquetan el modelo bajo `qwen2` (clase `Qwen2ForCausalLM`), lo que corresponde a un transformer decoder-only denso con atencion causal, normalizacion RMSNorm, activacion SwiGLU y, muy probablemente, atencion con query-key value grouped (GQA) y RoPE, que es el diseno estandar de la familia. El recuento exacto de parametros es consistente con una base de 3B de la familia Qwen, pero la identidad exacta del modelo base (Qwen2 vs. Qwen2.5, variante instruct o base) no esta confirmada en la informacion disponible. Tampoco se documenta el numero de capas, la dimension oculta, el numero de cabezas ni la longitud de contexto nativa.
+La informacion publicada no describe la arquitectura. Los metadatos de Hugging Face etiquetan el modelo bajo `qwen2` (clase `Qwen2ForCausalLM`), lo que corresponde a un transformer decoder-only denso con atencion causal, normalizacion RMSNorm, activacion SwiGLU y, muy probablemente, atencion con query-key value grouped (GQA) y RoPE, que es el diseno estandar de la familia. El recuento exacto de parametros es consistente con una base de 3B de la familia Qwen, pero la identidad exacta del modelo base (Qwen2 vs. Qwen2.5, variante instruct o base) no esta confirmada en la informacion disponible. Tampoco se documenta el numero de capas, la dimension oculta, el numero de cabezas ni la longitud de contexto nativa.
 
 En cuanto al entrenamiento, la unica evidencia es la nomenclatura del repositorio, que hay que tratar como inferencia y no como dato confirmado. "checkpoint-150" indica un punto de control intermedio de un proceso de optimizacion. "racpo-v2" sugiere una segunda version de un metodo de optimizacion de politica por refuerzo; el sufijo "fisher-acc" apunta a un componente relacionado con informacion de Fisher o con estimacion de curvatura, y "acc" podria referirse a exactitud o a un criterio de aceptacion. "hotpot" apunta a HotpotQA, un benchmark de question answering multi-salto que requiere razonamiento sobre varios documentos, lo que encaja con un entrenamiento de RL orientado a recompensas de respuesta correcta y razonamiento encadenado. "2device-collate-0.75-0.25" indica ejecucion en dos dispositivos y una mezcla de datos o de estrategias de collate en proporcion 75/25. No se especifican hiperparametros, numero de tokens de entrenamiento, composicion del dataset ni si hubo fases de SFT, RLHF o DPO previas.
 
@@ -31,7 +31,7 @@ En cuanto al entrenamiento, la unica evidencia es la nomenclatura del repositori
 - Generacion de texto autorregresiva en ingles y, presumiblemente, en los idiomas cubiertos por el modelo base (no confirmado).
 - Question answering multi-salto: el entrenamiento apunta a HotpotQA, tarea que exige combinar informacion de varios pasajes para responder una pregunta.
 - Razonamiento encadenado orientado a recompensa: el objetivo declarado por la nomenclatura es optimizar precisión de respuesta, lo que suele inducir cadenas de razonamiento explicitas.
-- Formato conversacional: los tags de HuggingFace incluyen `conversational`, por lo que el modelo acepta plantillas de chat (no se documenta cual).
+- Formato conversacional: los tags de Hugging Face incluyen `conversational`, por lo que el modelo acepta plantillas de chat (no se documenta cual).
 - Compatibilidad con text-generation-inference y `endpoints_compatible`, segun los tags del repositorio.
 - No hay evidencia de soporte de tool calling, function calling, uso de agentes, vision, audio ni modo "thinking" explicito. Se desconoce si conserva estas capacidades del modelo base.
 
@@ -66,11 +66,11 @@ La comparativa se establece contra modelos densos de tamano equivalente y amplia
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| yuxuanw8/qwen3b-racpo-v2-...-checkpoint-150 | 3,086 B | no disponible | no disponible | HuggingFace, 0 descargas, solo safetensors |
-| Qwen2.5-3B (base o instruct) | 3,09 B | 32.768 tokens (ampliable) | Qwen Research License en la variante de 3B | HuggingFace y ModelScope, ampliamente desplegado |
-| Llama 3.2 3B Instruct | 3,21 B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, ecosistema amplio |
-| Phi-3.5-mini-instruct | 3,8 B | 128.000 tokens | MIT | HuggingFace, ampliamente desplegado |
-| Gemma 2 2B | 2,6 B | 8.000 tokens | Gemma Terms of Use | HuggingFace |
+| yuxuanw8/qwen3b-racpo-v2-...-checkpoint-150 | 3,086 B | no disponible | no disponible | Hugging Face, 0 descargas, solo safetensors |
+| Qwen2.5-3B (base o instruct) | 3,09 B | 32.768 tokens (ampliable) | Qwen Research License en la variante de 3B | Hugging Face y ModelScope, ampliamente desplegado |
+| Llama 3.2 3B Instruct | 3,21 B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, ecosistema amplio |
+| Phi-3.5-mini-instruct | 3,8 B | 128.000 tokens | MIT | Hugging Face, ampliamente desplegado |
+| Gemma 2 2B | 2,6 B | 8.000 tokens | Gemma Terms of Use | Hugging Face |
 
 Frente a estas alternativas, el checkpoint analizado no ofrece garantias de licencia, no declara idiomas ni contexto, no publica evaluaciones y no tiene adopcion en la comunidad. Su unico valor diferencial es el proceso de entrenamiento por refuerzo sobre HotpotQA que documenta su nombre.
 
@@ -88,7 +88,7 @@ Frente a estas alternativas, el checkpoint analizado no ofrece garantias de lice
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.75-0.25-checkpoint-150
+- Modelo en Hugging Face: https://huggingface.co/yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.75-0.25-checkpoint-150
 - Checkpoint relacionado del mismo autor: https://huggingface.co/yuxuanw8/qwen3b-rlcr-hotpot-racpo-v1-checkpoint-150
 - Repositorio oficial de Qwen3: https://github.com/QwenLM/Qwen3
 - Informe tecnico de Qwen3: https://arxiv.org/abs/2505.09388

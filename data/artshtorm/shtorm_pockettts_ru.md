@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Shtorm_PocketTTS_RU es un modelo de síntesis de voz (text-to-speech) en ruso desarrollado por el usuario ArtShtorm, publicado en HuggingFace bajo licencia CC-BY-4.0. Se trata de un finetune del modelo kyutai/pocket-tts de Kyutai Labs, especializado en la lectura de libros: busca una locución "de audiolibro", con entonación natural y capacidad de clonar una voz a partir de una referencia corta. El modelo cuenta con 109.502.146 parámetros (~109,5 M) y un repositorio de 0,4 GB en formato safetensors.
+Shtorm_PocketTTS_RU es un modelo de síntesis de voz (text-to-speech) en ruso desarrollado por el usuario ArtShtorm, publicado en Hugging Face bajo licencia CC-BY-4.0. Se trata de un finetune del modelo kyutai/pocket-tts de Kyutai Labs, especializado en la lectura de libros: busca una locución "de audiolibro", con entonación natural y capacidad de clonar una voz a partir de una referencia corta. El modelo cuenta con 109.502.146 parámetros (~109,5 M) y un repositorio de 0,4 GB en formato safetensors.
 
 Arquitectónicamente sigue el diseño compacto de pocket-tts: 6 capas y aproximadamente 100 M de parámetros, pensado para funcionar con rapidez incluso en CPU. El autor indica que el entrenamiento partió de un modelo profesor de 24 capas (derivado de una versión inglesa de 24 capas de Kyutai) y aplicó destilación hacia 6 capas con el guidance "horneado" (integrado), evitando el doble paso en generación. El tokenizador es SentencePiece entrenado sobre un corpus ruso de 4000 tokens.
 
@@ -99,6 +99,6 @@ Los datos de parametros, contexto y rendimiento de las alternativas no estan dis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ArtShtorm/Shtorm_PocketTTS_RU
-- Modelo base en HuggingFace: https://huggingface.co/kyutai/pocket-tts
+- Modelo en Hugging Face: https://huggingface.co/ArtShtorm/Shtorm_PocketTTS_RU
+- Modelo base en Hugging Face: https://huggingface.co/kyutai/pocket-tts
 - Repositorio de pocket-tts (Kyutai): https://github.com/kyutai-labs/pocket-tts

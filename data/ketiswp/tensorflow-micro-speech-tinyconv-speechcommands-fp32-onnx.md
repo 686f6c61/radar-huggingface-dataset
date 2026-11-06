@@ -76,7 +76,7 @@ La comparativa se limita a las variantes del mismo modelo, ya que no se dispone 
 
 ## Enlaces
 
-- [Repositorio del modelo en HuggingFace](https://huggingface.co/ketiswp/tensorflow-Micro-Speech-TinyConv-SpeechCommands-fp32-onnx)
+- [Repositorio del modelo en Hugging Face](https://huggingface.co/ketiswp/tensorflow-Micro-Speech-TinyConv-SpeechCommands-fp32-onnx)
 - [Versión UINT8 del modelo](https://huggingface.co/ketiswp/tensorflow-Micro-Speech-TinyConv-SpeechCommands-uint8-onnx)
 - [Modelo original (fuente en Android Googlesource)](https://android.googlesource.com/platform/external/tensorflow/+/4ed0453e335/tensorflow/lite/micro/examples/micro_speech/train/)
 - [Notebook de entrenamiento del modelo micro_speech (Colab)](https://colab.research.google.com/github/tensorflow/tflite-micro/blob/main/tensorflow/lite/micro/examples/micro_speech/train/train_micro_speech_model.ipynb)

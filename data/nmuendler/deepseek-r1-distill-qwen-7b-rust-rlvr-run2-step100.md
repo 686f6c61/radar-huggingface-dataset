@@ -6,7 +6,7 @@ Este repositorio contiene un adaptador LoRA (PEFT) de nombre `DeepSeek-R1-Distil
 
 El interés de esta ficha es limitado pero concreto: sirve como ejemplo reproducible de un ciclo de RLVR sobre un modelo de razonamiento destilado de 7.000 millones de parámetros, y como material de partida para quienes investigan cómo el ajuste con recompensas verificables afecta a la generación de código en un lenguaje de tipado estricto como Rust. El modelo base pertenece a la familia DeepSeek-R1-Distill, destilada por DeepSeek a partir de DeepSeek-R1 sobre la arquitectura Qwen2 (7,62 B de parámetros, contexto de 131.072 tokens en configuración).
 
-La información publicada es mínima: la model card es la plantilla vacía de HuggingFace, sin licencia declarada para el adaptador, sin idiomas documentados, sin datos de entrenamiento, sin evaluación y con 0 descargas y 0 likes en el momento de la consulta. Todo lo que se afirma aquí sobre el adaptador procede del nombre del repositorio y de sus etiquetas; lo relativo a arquitectura y contexto procede de la documentación pública del modelo base, no del autor del adaptador.
+La información publicada es mínima: la model card es la plantilla vacía de Hugging Face, sin licencia declarada para el adaptador, sin idiomas documentados, sin datos de entrenamiento, sin evaluación y con 0 descargas y 0 likes en el momento de la consulta. Todo lo que se afirma aquí sobre el adaptador procede del nombre del repositorio y de sus etiquetas; lo relativo a arquitectura y contexto procede de la documentación pública del modelo base, no del autor del adaptador.
 
 ## Especificaciones técnicas
 
@@ -52,7 +52,7 @@ El adaptador de este repositorio se entrenó, según sus etiquetas (`grpo`, `lor
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card del autor es la plantilla vacía de HuggingFace, sin sección de evaluación, y el repositorio acumula 0 descargas y 0 likes, por lo que no existe validación externa documentada.
+No se han publicado resultados de benchmarks en la información disponible. La model card del autor es la plantilla vacía de Hugging Face, sin sección de evaluación, y el repositorio acumula 0 descargas y 0 likes, por lo que no existe validación externa documentada.
 
 Como referencia externa, el modelo base `DeepSeek-R1-Distill-Qwen-7B` sí tiene cifras publicadas en el informe técnico de DeepSeek-R1 (arXiv:2501.12948), pero no han sido verificadas por el autor de esta ficha y no deben atribuirse al adaptador:
 
@@ -80,10 +80,10 @@ Ninguno de estos conjuntos evalúa Rust de forma específica, de modo que no per
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Adaptador analizado (nmuendler/…-rust-rlvr-run2-step100) | 7,62 B (base) + adaptador no cuantificado | 131.072 (base) | No disponible | HuggingFace, 0 descargas | Adaptador LoRA sobre el modelo base; sin evaluación |
-| DeepSeek-R1-Distill-Qwen-7B | 7,62 B | 131.072 | MIT | HuggingFace, muy descargado | Modelo base; destilado de DeepSeek-R1 con unas 800.000 muestras |
-| Qwen2.5-7B-Instruct | 7,61 B | 131.072 | Apache-2.0 | HuggingFace | Alternativa generalista con soporte de herramientas y multilingüismo amplio, pero sin modo de razonamiento largo |
-| Llama-3.1-8B-Instruct | 8,03 B | 131.072 | Llama 3.1 Community License | HuggingFace | Alternativa generalista, ecosistema amplio; licencia con restricciones para grandes despliegues |
+| Adaptador analizado (nmuendler/…-rust-rlvr-run2-step100) | 7,62 B (base) + adaptador no cuantificado | 131.072 (base) | No disponible | Hugging Face, 0 descargas | Adaptador LoRA sobre el modelo base; sin evaluación |
+| DeepSeek-R1-Distill-Qwen-7B | 7,62 B | 131.072 | MIT | Hugging Face, muy descargado | Modelo base; destilado de DeepSeek-R1 con unas 800.000 muestras |
+| Qwen2.5-7B-Instruct | 7,61 B | 131.072 | Apache-2.0 | Hugging Face | Alternativa generalista con soporte de herramientas y multilingüismo amplio, pero sin modo de razonamiento largo |
+| Llama-3.1-8B-Instruct | 8,03 B | 131.072 | Llama 3.1 Community License | Hugging Face | Alternativa generalista, ecosistema amplio; licencia con restricciones para grandes despliegues |
 
 La comparación relevante no es de rendimiento —no hay datos— sino de propósito: el adaptador es un artefacto de investigación especializado en Rust, mientras que las alternativas son modelos generalistas listos para producción.
 

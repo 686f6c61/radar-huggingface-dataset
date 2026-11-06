@@ -15,13 +15,13 @@ La cuantización de BatiAI incluye tres niveles (Q4_K_M, Q3_K_M y Q2_K) construi
 | Parametros activos | 18B (MoE, 288 expertos, top-8) |
 | Longitud de contexto | 1.000.000 tokens (segun documentacion de Unsloth) |
 | Tipos de cuantizacion | Q4_K_M, Q3_K_M, Q2_K (sin imatrix) |
-| Idiomas soportados | en, ko, zh (segun ficha de HuggingFace) |
+| Idiomas soportados | en, ko, zh (segun ficha de Hugging Face) |
 | Licencia | MIT |
 | Formato de pesos | GGUF (safetensors disponible en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-GLM-5.3-Flash emplea una arquitectura de mezcla de expertos (MoE) con 288 expertos y activación de los 8 principales por token, lo que reduce el coste computacional efectivo a 18.000 millones de parámetros activos. La arquitectura glm5next combina 11 capas con atención latente multi-cabezal (MLA) y 34 capas con atención lineal KDA, una innovación que reduce la complejidad cuadrática del mecanismo de atención tradicional y permite manejar ventanas de contexto de hasta 1 millón de tokens. Es el primer modelo de la serie GLM-5 con capacidades multimodales nativas, aunque la información disponible no detalla la composición exacta del dataset de entrenamiento ni el número de tokens utilizados. Tampoco se especifica si se aplicaron técnicas de RLHF o DPO; la ficha de HuggingFace solo indica la licencia MIT y los idiomas soportados.
+GLM-5.3-Flash emplea una arquitectura de mezcla de expertos (MoE) con 288 expertos y activación de los 8 principales por token, lo que reduce el coste computacional efectivo a 18.000 millones de parámetros activos. La arquitectura glm5next combina 11 capas con atención latente multi-cabezal (MLA) y 34 capas con atención lineal KDA, una innovación que reduce la complejidad cuadrática del mecanismo de atención tradicional y permite manejar ventanas de contexto de hasta 1 millón de tokens. Es el primer modelo de la serie GLM-5 con capacidades multimodales nativas, aunque la información disponible no detalla la composición exacta del dataset de entrenamiento ni el número de tokens utilizados. Tampoco se especifica si se aplicaron técnicas de RLHF o DPO; la ficha de Hugging Face solo indica la licencia MIT y los idiomas soportados.
 
 ## Capacidades
 
@@ -84,7 +84,7 @@ No se dispone de datos suficientes para comparar con otros modelos MoE de tamano
 
 ## Enlaces
 
-- Repositorio HuggingFace de BatiAI: https://huggingface.co/batiai/GLM-5.3-Flash-GGUF
+- Repositorio Hugging Face de BatiAI: https://huggingface.co/batiai/GLM-5.3-Flash-GGUF
 - Modelo base oficial de Z.ai: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Blog de Z.ai sobre GLM-5.3-Flash: https://z.ai/blog/glm-5.3-flash
 - Pull request de llama.cpp para glm5next: https://github.com/ggml-org/llama.cpp/pull/27752

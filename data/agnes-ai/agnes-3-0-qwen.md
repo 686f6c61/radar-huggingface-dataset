@@ -18,7 +18,7 @@ Su relevancia inmediata es doble: por un lado, compite en la tabla de benchmarks
 | Longitud de contexto | 1.000.000 de tokens |
 | Tipos de cuantización | No disponible; el repositorio solo publica pesos en safetensors, sin variantes GGUF, AWQ ni GPTQ en la información disponible |
 | Idiomas soportados | Inglés (en) y chino (zh) |
-| Licencia | qwen-community-1.0 (etiquetada como `license:other` en HuggingFace) |
+| Licencia | qwen-community-1.0 (etiquetada como `license:other` en Hugging Face) |
 | Formato de pesos | safetensors (repositorio de 360 GB) |
 | Modelo base | Qwen/Qwen3.8-Flash-Next |
 | Pipeline declarado | image-text-to-text |
@@ -112,7 +112,7 @@ La comparación solo puede establecerse en términos de resultados de benchmark 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Agnes-AI/Agnes-3.0-Qwen
+- Modelo en Hugging Face: https://huggingface.co/Agnes-AI/Agnes-3.0-Qwen
 - Sitio web de Agnes AI: https://agnes-ai.com/
 - Documentación de la API de agnes-3.0-qwen: https://wiki.agnes-ai.com/en/docs/agnes-30-qwen
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next

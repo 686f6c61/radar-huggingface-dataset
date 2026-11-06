@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene cuantizaciones GGUF estáticas de un modelo derivado de la familia Gemma 4, concretamente una variante de 26B con arquitectura Mixture of Experts (MoE) de aproximadamente 4B de parámetros activos, según se deduce de la nomenclatura "26B-A4B" del identificador. El modelo original ha sido sometido a un proceso de "abliteration" o "decensoring" (etiquetado como heretic/uncensored) y posteriormente cuantizado por mradermacher, un conocido publicador de cuantizaciones GGUF en HuggingFace.
+Este repositorio contiene cuantizaciones GGUF estáticas de un modelo derivado de la familia Gemma 4, concretamente una variante de 26B con arquitectura Mixture of Experts (MoE) de aproximadamente 4B de parámetros activos, según se deduce de la nomenclatura "26B-A4B" del identificador. El modelo original ha sido sometido a un proceso de "abliteration" o "decensoring" (etiquetado como heretic/uncensored) y posteriormente cuantizado por mradermacher, un conocido publicador de cuantizaciones GGUF en Hugging Face.
 
 El modelo base declarado es `llmfan46/gemma-4-26B-A4B-it-qat-q4_0-unquantized-uncensored-heretic`, un derivado no oficial de Gemma 4 que combina un proceso de Quantization-Aware Training (QAT) con técnicas de eliminación de restricciones de seguridad. Este repositorio de mradermacher proporciona versiones GGUF listas para usar con llama.cpp y herramientas compatibles, con cuantizaciones que van desde Q2_K (10,7 GB) hasta Q4_K_M (16,9 GB), además de ficheros mmproj para capacidades multimodales.
 
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento comparativo (benchmarks) para este modelo 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/gemma-4-26B-A4B-it-qat-q4_0-unquantized-uncensored-heretic-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/gemma-4-26B-A4B-it-qat-q4_0-unquantized-uncensored-heretic-GGUF
 - Modelo base: https://huggingface.co/llmfan46/gemma-4-26B-A4B-it-qat-q4_0-unquantized-uncensored-heretic
 - Cuantizaciones imatrix: https://huggingface.co/mradermacher/gemma-4-26B-A4B-it-qat-q4_0-unquantized-uncensored-heretic-i1-GGUF
 - Página de descargas del autor: https://hf.tst.eu/model#gemma-4-26B-A4B-it-qat-q4_0-unquantized-uncensored-heretic-GGUF

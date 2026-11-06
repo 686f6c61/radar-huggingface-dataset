@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`bobobubobu/badbou` es un repositorio de modelo alojado en HuggingFace por el usuario `bobobubobu`. En el momento de la consulta, la model card asociada contiene unicamente la declaracion de licencia (`license: apache-2.0`) y carece de cualquier descripcion funcional: no se especifica arquitectura, tamano de parametros, longitud de contexto, datos de entrenamiento ni idiomas soportados. El repositorio registra 0 descargas y 0 likes, y fue creado y actualizado en la misma marca temporal (2026-09-24T17:18:19Z), lo que indica una publicacion sin iteraciones posteriores ni adopcion por parte de la comunidad.
+`bobobubobu/badbou` es un repositorio de modelo alojado en Hugging Face por el usuario `bobobubobu`. En el momento de la consulta, la model card asociada contiene unicamente la declaracion de licencia (`license: apache-2.0`) y carece de cualquier descripcion funcional: no se especifica arquitectura, tamano de parametros, longitud de contexto, datos de entrenamiento ni idiomas soportados. El repositorio registra 0 descargas y 0 likes, y fue creado y actualizado en la misma marca temporal (2026-09-24T17:18:19Z), lo que indica una publicacion sin iteraciones posteriores ni adopcion por parte de la comunidad.
 
 Desde el punto de vista practico, no es posible determinar que problema resuelve el modelo ni en que categoria encaja (lenguaje, vision, audio, embeddings u otra), ya que el campo `pipeline` aparece como no disponible y los unicos tags presentes son `license:apache-2.0` y `region:us`. Tampoco hay pesos, ficheros de configuracion ni artefactos de tokenizer documentados publicamente en la informacion proporcionada.
 
@@ -87,5 +87,5 @@ No disponible. No es posible identificar modelos comparables sin conocer la moda
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bobobubobu/badbou
+- Hugging Face: https://huggingface.co/bobobubobu/badbou
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo, demos ni informacion adicional sobre este modelo.

@@ -83,8 +83,8 @@ Olvido fuera de dominio (100 elementos por tarea, sin test de significación): S
 
 | Modelo | Parametros | Contexto | Rendimiento en el dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dlm-jev-tickets-lora (este adaptador) | 2,8M (adaptador); 26B/4B activos en el base | no disponible | urgency 0.853, engineering 0.997, category 0.920, churn 0.997 en el conjunto con cambio de distribucion | Apache-2.0 | HuggingFace, 0 descargas |
-| diffusiongemma-26B-A4B-it-4bit (modelo base) | 26B totales, 4B activos | no disponible | urgency 0.757, engineering 0.953, category 0.953, churn 1.000 en el mismo conjunto | Apache-2.0 (segun el adaptador) | HuggingFace |
+| dlm-jev-tickets-lora (este adaptador) | 2,8M (adaptador); 26B/4B activos en el base | no disponible | urgency 0.853, engineering 0.997, category 0.920, churn 0.997 en el conjunto con cambio de distribucion | Apache-2.0 | Hugging Face, 0 descargas |
+| diffusiongemma-26B-A4B-it-4bit (modelo base) | 26B totales, 4B activos | no disponible | urgency 0.757, engineering 0.953, category 0.953, churn 1.000 en el mismo conjunto | Apache-2.0 (segun el adaptador) | Hugging Face |
 | Jev (TypeSafe AI) | no disponible | 66k segun LLM Reference | no disponible | propietaria | acceso anticipado limitado y API de pago |
 
 No se dispone de datos publicados que permitan comparar este adaptador con otras alternativas de la misma categoria y tamano mas alla del modelo base.
@@ -104,7 +104,7 @@ No se dispone de datos publicados que permitan comparar este adaptador con otras
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/seongyeon1/dlm-jev-tickets-lora
+- Adaptador en Hugging Face: https://huggingface.co/seongyeon1/dlm-jev-tickets-lora
 - Modelo base: https://huggingface.co/mlx-community/diffusiongemma-26B-A4B-it-4bit
 - Repositorio del proyecto dlm-jev: https://github.com/seongyeon1/dlm-jev
 - Jev (AI model), Wikipedia: https://en.wikipedia.org/wiki/Jev_(AI_model)

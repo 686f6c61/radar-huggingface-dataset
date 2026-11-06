@@ -104,7 +104,7 @@ Comparativas con alternativas externas de la misma categoria (otros modelos abli
 - El modelo no es apto para todas las audiencias: la model card lo desaconseja explicitamente para entornos publicos, usuarios menores de edad o aplicaciones que exijan alta seguridad.
 - La ablacion selectiva implica que el comportamiento del modelo puede ser inconsistente: las capas no ablacionadas conservan su comportamiento original, lo que puede producir respuestas contradictorias o cambios bruscos de tono segun el contexto.
 - La abliteration degrada calidad de forma no medida: no hay datos de perplejidad, benchmarks ni tasas de rechazo que cuantifiquen el dano respecto al modelo base.
-- La atribucion del repositorio es confusa: el ID de HuggingFace corresponde a taurusduan, mientras que la model card y las rutas internas apuntan a huihui-ai. Conviene verificar la procedencia de los pesos antes de usarlos en produccion.
+- La atribucion del repositorio es confusa: el ID de Hugging Face corresponde a taurusduan, mientras que la model card y las rutas internas apuntan a huihui-ai. Conviene verificar la procedencia de los pesos antes de usarlos en produccion.
 - Riesgo de alucinacion: elevado en tareas de conocimiento factual y no cuantificado en la informacion disponible. Como en cualquier modelo de este tamano, no debe usarse como fuente unica de verdad.
 - Limitaciones de idioma: la model card no declara idiomas soportados, por lo que el rendimiento en castellano no esta verificado.
 - Limitaciones de contexto: aunque el ejemplo de llama.cpp usa 262.144 tokens, no hay confirmacion de que el modelo mantenga calidad uniforme en todo ese rango, y la cache KV necesaria hace impractical esa ventana en hardware de consumo.
@@ -116,7 +116,7 @@ Comparativas con alternativas externas de la misma categoria (otros modelos abli
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/taurusduan/Huihui-Qwen3.8-27B-abliterated-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/taurusduan/Huihui-Qwen3.8-27B-abliterated-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio de referencia sobre abliteration: https://github.com/Sumandora/remove-refusals-with-transformers
 - Fork con kernels ternarios de atencion hibrida: https://github.com/PrismML-Eng/llama.cpp

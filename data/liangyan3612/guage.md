@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `LiangYan3612/guage` es un artefacto alojado en HuggingFace cuyo peso en disco es de 88,3 GB y cuyos pesos estan en formato safetensors. La model card publicada no describe el modelo en si: reproduce integramente la documentacion de **ARLArena (A Unified Framework for Stable Agentic Reinforcement Learning)**, un framework de entrenamiento por refuerzo para agentes desarrollado en el entorno del proyecto UCLA-SCAI, con repositorio publico en GitHub bajo el nombre ARL-Arena. Es decir, existe un desajuste entre el nombre del repositorio (`guage`) y el contenido documental, que corresponde a una infraestructura de entrenamiento, no a una ficha de modelo con especificaciones de arquitectura.
+El repositorio `LiangYan3612/guage` es un artefacto alojado en Hugging Face cuyo peso en disco es de 88,3 GB y cuyos pesos estan en formato safetensors. La model card publicada no describe el modelo en si: reproduce integramente la documentacion de **ARLArena (A Unified Framework for Stable Agentic Reinforcement Learning)**, un framework de entrenamiento por refuerzo para agentes desarrollado en el entorno del proyecto UCLA-SCAI, con repositorio publico en GitHub bajo el nombre ARL-Arena. Es decir, existe un desajuste entre el nombre del repositorio (`guage`) y el contenido documental, que corresponde a una infraestructura de entrenamiento, no a una ficha de modelo con especificaciones de arquitectura.
 
 ARLArena se presenta como un marco unificado para analizar y estabilizar el aprendizaje por refuerzo agentico desde la perspectiva del gradiente de politica, comparando algoritmos existentes (GRPO, SAMPO y variantes con restricciones tipo Lyapunov) y ofreciendo resultados experimentales en multiples tareas de agente. El framework soporta entrenamiento de agentes multi-turno de matematicas con interprete de codigo, agentes encarnados (embodied), agentes de juego multimodal, agentes web y agentes de busqueda, y declara como trabajo futuro los agentes de ingenieria de software.
 
@@ -78,7 +78,7 @@ No disponible. La informacion proporcionada no identifica la familia, el tamano 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| LiangYan3612/guage | no disponible | no disponible | no disponible | safetensors en HuggingFace | no disponible |
+| LiangYan3612/guage | no disponible | no disponible | no disponible | safetensors en Hugging Face | no disponible |
 | Alternativas | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -96,10 +96,10 @@ No disponible. La informacion proporcionada no identifica la familia, el tamano 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LiangYan3612/guage
+- Modelo en Hugging Face: https://huggingface.co/LiangYan3612/guage
 - Paper asociado (segun la model card): https://huggingface.co/papers/2602.21534
 - Repositorio GitHub de ARL-Arena: https://github.com/WillDreamer/ARL-Arena
-- Organizacion UCLA-SCAI en HuggingFace: https://huggingface.co/UCLA-SCAI/models
+- Organizacion UCLA-SCAI en Hugging Face: https://huggingface.co/UCLA-SCAI/models
 - Referencia arXiv 2409.06957: https://arxiv.org/abs/2409.06957
 - Referencia arXiv 2505.02387: https://arxiv.org/abs/2505.02387
 - Referencia arXiv 2505.03335: https://arxiv.org/abs/2505.03335

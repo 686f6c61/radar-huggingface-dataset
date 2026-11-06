@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Jordansky/grpo_god-text-tourn-e758aac2d861c378-20260824_main_7606cad6` es un adaptador de tipo PEFT (Parameter-Efficient Fine-Tuning) publicado en HuggingFace por el usuario Jordansky. Su nombre sugiere que fue entrenado mediante GRPO (Group Relative Policy Optimization), una técnica de optimización por refuerzo que elimina la necesidad de un modelo crítico separado, popularizada por DeepSeekMath. El identificador "god-text-tourn" apunta a que forma parte de un torneo de generación de texto, posiblemente relacionado con la organización gradients-io-tournaments, aunque el repositorio original no está confirmado.
+El modelo `Jordansky/grpo_god-text-tourn-e758aac2d861c378-20260824_main_7606cad6` es un adaptador de tipo PEFT (Parameter-Efficient Fine-Tuning) publicado en Hugging Face por el usuario Jordansky. Su nombre sugiere que fue entrenado mediante GRPO (Group Relative Policy Optimization), una técnica de optimización por refuerzo que elimina la necesidad de un modelo crítico separado, popularizada por DeepSeekMath. El identificador "god-text-tourn" apunta a que forma parte de un torneo de generación de texto, posiblemente relacionado con la organización gradients-io-tournaments, aunque el repositorio original no está confirmado.
 
 La model card está completamente vacía, sin información sobre arquitectura, datos de entrenamiento, licencia o capacidades. El repositorio contiene únicamente 1.4 GB de pesos en formato safetensors, lo que sugiere que se trata de un adaptador LoRA u otro método PEFT aplicado sobre un modelo base no especificado. No se dispone de métricas de rendimiento, benchmarks ni documentación técnica adicional. Dada la ausencia total de información verificable, esta ficha se limita a describir los metadatos disponibles y a señalar las incógnitas pendientes.
 
@@ -66,7 +66,7 @@ No disponible. No se conocen modelos comparables con los que contrastar, ya que 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Jordansky/grpo_god-text-tourn-e758aac2d861c378-20260824_main_7606cad6
+- Repositorio Hugging Face: https://huggingface.co/Jordansky/grpo_god-text-tourn-e758aac2d861c378-20260824_main_7606cad6
 - Repositorio relacionado (no confirmado como el mismo modelo): https://huggingface.co/gradients-io-tournaments/tournament-tourn_e758aac2d861c378_20260824-318ef829-69d5-40c9-b803-b3b78b525668-5D2Qee4V
 - Documentación de GRPO (verl): https://verl.readthedocs.io/en/latest/algo/grpo.html
 - Scripts de entrenamiento GRPO (posiblemente relacionados): https://github.com/gradients-opensource/god-text-tourn-c9cdf5551df84ee6-20260312-position-2/blob/main/scripts/train_grpo.py

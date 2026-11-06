@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Realisticnsfw es un repositorio publicado en HuggingFace por el usuario Vech911 bajo licencia MIT. La informacion disponible es minima: no se ha publicado pipeline, idiomas soportados, arquitectura, numero de parametros ni resultados de evaluacion. El repositorio ocupa 0,5 GB y no registra descargas ni likes en el momento de la consulta, lo que sugiere una publicacion reciente y sin adopcion por parte de la comunidad. La model card se limita a declarar la licencia MIT, sin documentacion tecnica adicional.
+Realisticnsfw es un repositorio publicado en Hugging Face por el usuario Vech911 bajo licencia MIT. La informacion disponible es minima: no se ha publicado pipeline, idiomas soportados, arquitectura, numero de parametros ni resultados de evaluacion. El repositorio ocupa 0,5 GB y no registra descargas ni likes en el momento de la consulta, lo que sugiere una publicacion reciente y sin adopcion por parte de la comunidad. La model card se limita a declarar la licencia MIT, sin documentacion tecnica adicional.
 
 Por el identificador del modelo y el nombre del repositorio se puede inferir que el autor lo orienta a generacion de imagenes o contenido de tipo realista con tematica NSFW (no apto para todo publico), pero esta interpretacion no esta confirmada por ninguna documentacion oficial. En ausencia de informacion verificable no es posible determinar la arquitectura, el proceso de entrenamiento ni las capacidades reales del modelo.
 
@@ -21,7 +21,7 @@ La relevancia de esta ficha es, por tanto, limitada y de caracter descriptivo: s
 | Licencia | MIT |
 | Formato de pesos | no disponible |
 | Tamano del repositorio | 0,5 GB |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Fecha de creacion | 2026-09-12 |
 | Ultima actualizacion | 2026-09-12 |
 | Descargas | 0 |
@@ -85,7 +85,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Vech911/Realisticnsfw
+- Hugging Face: https://huggingface.co/Vech911/Realisticnsfw
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
 - Repositorio de codigo: no disponible

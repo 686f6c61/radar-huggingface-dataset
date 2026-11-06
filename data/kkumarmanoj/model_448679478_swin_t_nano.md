@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `kkumarmanoj/model_448679478_swin_t_nano` es una implementación de escala nano de la arquitectura Swin Transformer, desarrollada por el usuario kkumarmanoj y publicada en HuggingFace bajo licencia BSD-3-Clause. Está diseñado para tareas de emparejamiento o correspondencia (matching), probablemente en el ámbito de visión por computadora, y destaca por su arquitectura compacta: atención de ventana deslizante, fusión de tensores, activación ReLU, normalización GroupNorm e inicialización Xavier.
+El modelo `kkumarmanoj/model_448679478_swin_t_nano` es una implementación de escala nano de la arquitectura Swin Transformer, desarrollada por el usuario kkumarmanoj y publicada en Hugging Face bajo licencia BSD-3-Clause. Está diseñado para tareas de emparejamiento o correspondencia (matching), probablemente en el ámbito de visión por computadora, y destaca por su arquitectura compacta: atención de ventana deslizante, fusión de tensores, activación ReLU, normalización GroupNorm e inicialización Xavier.
 
 El repositorio contiene un único artefacto, el archivo de código `model_448679478_swin_t_nano.py`, sin pesos preentrenados publicados en formatos estándar como safetensors o GGUF. Al ser una variante nano, el modelo está pensado para entornos con recursos limitados o para experimentación rápida, aunque no se proporcionan datos sobre el número de parámetros, el rendimiento ni el conjunto de datos de entrenamiento.
 
@@ -73,12 +73,12 @@ Nota: la comparación con Swin-Tiny es meramente orientativa, ya que la variante
 - No se documentan sesgos ni riesgos de alucinación, pero al ser un modelo de visión y matching, podrían existir sesgos en el emparejamiento según los datos de entrenamiento, que no se especifican.
 - La licencia BSD-3-Clause permite uso comercial con atribución, pero el autor no ofrece garantías.
 - No hay soporte de idiomas documentado, al ser un modelo de visión.
-- El modelo no tiene descargas ni likes en HuggingFace, lo que indica un uso muy limitado o una publicación reciente.
+- El modelo no tiene descargas ni likes en Hugging Face, lo que indica un uso muy limitado o una publicación reciente.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kkumarmanoj/model_448679478_swin_t_nano
+- Repositorio en Hugging Face: https://huggingface.co/kkumarmanoj/model_448679478_swin_t_nano
 - Implementacion oficial de Swin Transformer (Microsoft): https://github.com/microsoft/Swin-Transformer
-- Documentacion de Swin en HuggingFace Transformers: https://huggingface.co/docs/transformers/main/en/model_doc/swin
+- Documentacion de Swin en Hugging Face Transformers: https://huggingface.co/docs/transformers/main/en/model_doc/swin
 - Referencia de `swin_t` en Torchvision: https://docs.pytorch.org/vision/master/models/generated/torchvision.models.swin_t.html
 - Repositorio de deteccion de objetos con Swin: https://github.com/SwinTransformer/Swin-Transformer-Object-Detection

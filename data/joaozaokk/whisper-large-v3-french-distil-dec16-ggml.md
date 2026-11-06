@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`JoaoZaokk/whisper-large-v3-french-distil-dec16-ggml` es un repositorio de pesos cuantizados en formato GGML para `whisper.cpp`, derivado del checkpoint `bofenghuang/whisper-large-v3-french-distil-dec16`. No se trata de un modelo entrenado desde cero, sino de un reempaquetado: el autor parte de su propia conversión a f16 del checkpoint original de HuggingFace (formato safetensors) y genera tres variantes cuantizadas orientadas a inferencia local. El modelo subyacente es una destilación del decodificador de Whisper large-v3 especializada en francés.
+`JoaoZaokk/whisper-large-v3-french-distil-dec16-ggml` es un repositorio de pesos cuantizados en formato GGML para `whisper.cpp`, derivado del checkpoint `bofenghuang/whisper-large-v3-french-distil-dec16`. No se trata de un modelo entrenado desde cero, sino de un reempaquetado: el autor parte de su propia conversión a f16 del checkpoint original de Hugging Face (formato safetensors) y genera tres variantes cuantizadas orientadas a inferencia local. El modelo subyacente es una destilación del decodificador de Whisper large-v3 especializada en francés.
 
 La relevancia practica esta en el binomio tamano/despliegue: los ficheros van de 652 MB (q4_0) a 1209 MB (q8_0), lo que permite ejecutar reconocimiento automatico de voz en frances sobre hardware muy modesto, incluidos telefonos moviles, sin necesidad de GPU dedicada ni de conexion a servicios en la nube. El repositorio existe, segun declara el propio autor, para mantener estables los enlaces de descarga que consumen las aplicaciones nativas Odysseus y Open WebUI.
 
@@ -98,7 +98,7 @@ Los datos de rendimiento comparado no estan disponibles en la informacion propor
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/JoaoZaokk/whisper-large-v3-french-distil-dec16-ggml
+- Repositorio en Hugging Face: https://huggingface.co/JoaoZaokk/whisper-large-v3-french-distil-dec16-ggml
 - Modelo base: https://huggingface.co/bofenghuang/whisper-large-v3-french-distil-dec16
 - Perfil del autor: https://huggingface.co/JoaoZaokk
 - Motor de inferencia `whisper.cpp`: https://github.com/ggml-org/whisper.cpp

@@ -78,7 +78,7 @@ No se han publicado comparativas con modelos equivalentes en la información pro
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Kaousheik/tempo-ablation-projector
+- Hugging Face del modelo: https://huggingface.co/Kaousheik/tempo-ablation-projector
 - Modelo base: https://huggingface.co/nvidia/audio-flamingo-3
 - Dataset de entrenamiento: https://huggingface.co/datasets/Kaousheik/tempo
 - Perfil del autor: https://huggingface.co/Kaousheik

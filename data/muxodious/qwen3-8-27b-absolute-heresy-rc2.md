@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MuXodious/Qwen3.8-27B-absolute-heresy.rc2 es un modelo de lenguaje multimodal basado en el modelo base Qwen/Qwen3.8-27B, desarrollado por el usuario MuXodious. Se presenta como un ajuste fino "abliterated" (técnica que elimina las capas de rechazo del modelo original) y etiquetado como "heretic", "uncensored" y "decensored", lo que indica que ha sido modificado para eliminar restricciones de contenido y responder sin filtros. El pipeline declarado es `image-text-to-text`, por lo que es capaz de procesar tanto texto como imágenes. Con aproximadamente 27,36 mil millones de parámetros, se posiciona en la gama alta de modelos de código abierto, aunque su acceso está restringido (gated) y requiere aceptar condiciones en HuggingFace. La licencia es Apache 2.0, lo que permite uso comercial con atribución.
+MuXodious/Qwen3.8-27B-absolute-heresy.rc2 es un modelo de lenguaje multimodal basado en el modelo base Qwen/Qwen3.8-27B, desarrollado por el usuario MuXodious. Se presenta como un ajuste fino "abliterated" (técnica que elimina las capas de rechazo del modelo original) y etiquetado como "heretic", "uncensored" y "decensored", lo que indica que ha sido modificado para eliminar restricciones de contenido y responder sin filtros. El pipeline declarado es `image-text-to-text`, por lo que es capaz de procesar tanto texto como imágenes. Con aproximadamente 27,36 mil millones de parámetros, se posiciona en la gama alta de modelos de código abierto, aunque su acceso está restringido (gated) y requiere aceptar condiciones en Hugging Face. La licencia es Apache 2.0, lo que permite uso comercial con atribución.
 
 Este modelo es relevante para desarrolladores e investigadores interesados en explorar las capacidades de modelos sin censura, especialmente en tareas de generación creativa, roleplay o análisis de contenido sensible, aunque su uso en producción debe evaluarse con cautela por los riesgos asociados.
 
@@ -28,7 +28,7 @@ No se dispone de informacion detallada sobre la arquitectura interna del modelo 
 - Generacion de texto y conversacion multi-turno (etiqueta `conversational`).
 - Procesamiento de imagenes junto con texto (pipeline `image-text-to-text`), lo que permite responder a preguntas sobre imagenes, generar descripciones o razonar sobre contenido visual.
 - Capacidad de generar contenido sin censura aparente, gracias al proceso de abliteration, lo que incluye temas que el modelo base podria rechazar.
-- Compatibilidad con la libreria `transformers` de HuggingFace y con endpoints compatibles (`endpoints_compatible`).
+- Compatibilidad con la libreria `transformers` de Hugging Face y con endpoints compatibles (`endpoints_compatible`).
 - No se ha confirmado soporte para tool calling o function calling, aunque al estar basado en Qwen3.8 podria heredarlo; no se menciona en la informacion disponible.
 
 ## Casos de uso
@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 - VRAM estimada para inferencia: con 27,36 B de parametros, en precision fp16 se necesitan aproximadamente 55 GB de VRAM (solo pesos). Con cuantizacion int8 (no disponible en el repo, pero posible con herramientas externas) se reduciria a unos 28 GB, y con int4 a unos 14 GB.
 - GPU recomendadas: para fp16, una NVIDIA A100 (80 GB) o H100 (80 GB) son adecuadas. Para cuantizaciones inferiores, una RTX 4090 (24 GB) podria ser suficiente con int4 o int8.
 - No se indica si el modelo cabe en GPUs de consumo sin cuantizacion; con fp16 no cabe en ninguna GPU de consumo actual (maximo 24 GB).
-- Opciones de despliegue: al ser compatible con `transformers`, puede usarse con vLLM, TGI o directamente con la API de HuggingFace. Para cuantizacion, se podria convertir a GGUF con llama.cpp o usar herramientas como AutoGPTQ, aunque no se proporcionan archivos cuantizados.
+- Opciones de despliegue: al ser compatible con `transformers`, puede usarse con vLLM, TGI o directamente con la API de Hugging Face. Para cuantizacion, se podria convertir a GGUF con llama.cpp o usar herramientas como AutoGPTQ, aunque no se proporcionan archivos cuantizados.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -61,11 +61,11 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 - Al ser un modelo sin censura, existe un riesgo elevado de generar contenido ofensivo, ilegal, peligroso o sexualmente explicito. Su uso en entornos publicos o de produccion debe estar restringido y supervisado.
 - No se han publicado evaluaciones de sesgos ni de seguridad. Es probable que herede sesgos del modelo base Qwen y que la eliminacion de capas de rechazo aumente la probabilidad de respuestas perjudiciales.
 - La longitud de contexto no esta documentada; se desconoce si soporta ventanas largas (por ejemplo, 32k tokens) o si se limita a 8k o menos.
-- El acceso es restringido (gated) en HuggingFace; los usuarios deben solicitar permiso y aceptar condiciones, lo que puede limitar su uso en CI/CD automatizado.
+- El acceso es restringido (gated) en Hugging Face; los usuarios deben solicitar permiso y aceptar condiciones, lo que puede limitar su uso en CI/CD automatizado.
 - No se han proporcionado archivos cuantizados (GGUF, AWQ, etc.), por lo que su despliegue en hardware limitado requiere conversion manual.
 - La licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantias ni soporte. Ademas, el uso de contenido generado puede implicar responsabilidades legales segun la jurisdiccion.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [MuXodious/Qwen3.8-27B-absolute-heresy.rc2](https://huggingface.co/MuXodious/Qwen3.8-27B-absolute-heresy.rc2)
+- Repositorio en Hugging Face: [MuXodious/Qwen3.8-27B-absolute-heresy.rc2](https://huggingface.co/MuXodious/Qwen3.8-27B-absolute-heresy.rc2)
 - Modelo base (referencia): [Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B) (enlace no verificado, se infiere del nombre)

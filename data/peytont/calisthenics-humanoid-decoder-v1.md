@@ -92,7 +92,7 @@ No disponible. En la información proporcionada no se identifican modelos compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PeytonT/calisthenics-humanoid-decoder-v1
+- Modelo en Hugging Face: https://huggingface.co/PeytonT/calisthenics-humanoid-decoder-v1
 - Momentum Human Rig (MHR) de Meta: https://github.com/facebookresearch/MHR
 - SAM 3D Body de Meta: https://github.com/facebookresearch/sam-3d-body
 - Licencia SAM incluida en el repositorio: https://huggingface.co/PeytonT/calisthenics-humanoid-decoder-v1/blob/main/LICENSE-SAM.txt

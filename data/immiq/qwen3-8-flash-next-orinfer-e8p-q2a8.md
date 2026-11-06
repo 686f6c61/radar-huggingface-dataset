@@ -19,7 +19,7 @@ El modelo esta pensado para inferencia local en el borde: agentes conversacional
 | Tipos de cuantizacion | E8P near-2-bit con computo INT8 en expertos enrutados; Q4A8 con bloques con signo de 128 en GDN QKV/Z, QSA Q/gate y cabeza de salida compartida; W8 en proyecciones de salida, FFN compartida y proyecciones MTP sensibles; BF16 en HC; FP16 en vision; KV cache INT8; estado GDN persistente FP32 |
 | Idiomas soportados | zh, en |
 | Licencia | qwen-community-1.0 (Qwen Community License 1.0) |
-| Formato de pesos | safetensors (35 shards, 52,94 GB), mas assets de configuracion y tokenizer de HuggingFace y `cache/model.json` |
+| Formato de pesos | safetensors (35 shards, 52,94 GB), mas assets de configuracion y tokenizer de Hugging Face y `cache/model.json` |
 
 ## Arquitectura y entrenamiento
 
@@ -82,7 +82,7 @@ No se dispone de datos de benchmarks de calidad ni de especificaciones completas
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | Qwen3.8-Flash-Next-Orinfer-E8P-Q2A8 | no disponible (aprox. 2,414 bits/peso en GPU) | 262.144 | qwen-community-1.0 | safetensors + runtime Orinfer para Jetson SM87 |
-| Qwen/Qwen3.8-Flash-Next (base) | no disponible | no disponible | qwen-community-1.0 | HuggingFace |
+| Qwen/Qwen3.8-Flash-Next (base) | no disponible | no disponible | qwen-community-1.0 | Hugging Face |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -98,7 +98,7 @@ No se dispone de datos de benchmarks de calidad ni de especificaciones completas
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/immiq/Qwen3.8-Flash-Next-Orinfer-E8P-Q2A8)
+- [Modelo en Hugging Face](https://huggingface.co/immiq/Qwen3.8-Flash-Next-Orinfer-E8P-Q2A8)
 - [Modelo base Qwen/Qwen3.8-Flash-Next](https://huggingface.co/Qwen/Qwen3.8-Flash-Next/tree/de4b8e4d43b917e7706784d8bb445c9af86a3540)
 - [Licencia Qwen Community 1.0](https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/de4b8e4d43b917e7706784d8bb445c9af86a3540/LICENSE)
 - [ModelScope (espejo)](https://modelscope.cn/models/iammiq/Qwen3.8-Flash-Next-Orinfer-E8P-Q2A8)

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-q-Taxi-v4 es un agente de aprendizaje por refuerzo entrenado con un algoritmo de Q-learning tabular sobre el entorno Taxi-v4 de Gymnasium. Lo publica el usuario jonknownothing en HuggingFace y se distribuye como un unico fichero `q-learning.pkl` (pickle de Python), no como pesos de una red neuronal. No es un modelo de lenguaje: no procesa ni genera texto, no tiene tokenizador, no tiene ventana de contexto y no admite instrucciones en lenguaje natural. Su ambito de aplicacion es exclusivamente el problema de decision secuencial Taxi-v4, donde el agente debe recoger y dejar pasajeros en una cuadricula de 5x5 con cuatro ubicaciones de recogida/entrega.
+q-Taxi-v4 es un agente de aprendizaje por refuerzo entrenado con un algoritmo de Q-learning tabular sobre el entorno Taxi-v4 de Gymnasium. Lo publica el usuario jonknownothing en Hugging Face y se distribuye como un unico fichero `q-learning.pkl` (pickle de Python), no como pesos de una red neuronal. No es un modelo de lenguaje: no procesa ni genera texto, no tiene tokenizador, no tiene ventana de contexto y no admite instrucciones en lenguaje natural. Su ambito de aplicacion es exclusivamente el problema de decision secuencial Taxi-v4, donde el agente debe recoger y dejar pasajeros en una cuadricula de 5x5 con cuatro ubicaciones de recogida/entrega.
 
-El modelo se enmarca en la familia de agentes de RL que HuggingFace aloja mediante la libreria `stable-baselines3` y el ecosistema de `gym.make`. Segun la model card, se carga con `load_from_hub(repo_id="jonknownothing/q-Taxi-v4", filename="q-learning.pkl")` y se instancia el entorno con `gym.make(model["env_id"])`. La model card no documenta hiperparametros, numero de episodios, politica de exploracion ni semilla, por lo que la reproducibilidad del entrenamiento no esta garantizada.
+El modelo se enmarca en la familia de agentes de RL que Hugging Face aloja mediante la libreria `stable-baselines3` y el ecosistema de `gym.make`. Segun la model card, se carga con `load_from_hub(repo_id="jonknownothing/q-Taxi-v4", filename="q-learning.pkl")` y se instancia el entorno con `gym.make(model["env_id"])`. La model card no documenta hiperparametros, numero de episodios, politica de exploracion ni semilla, por lo que la reproducibilidad del entrenamiento no esta garantizada.
 
 Su relevancia es limitada y de caracter didactico: sirve como ejemplo minimo y reproducible de un agente de RL tabular publicado en el Hub, util para comparar implementaciones de Q-learning, para pruebas de integracion de pipelines de RL o para material docente. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y no se ha publicado licencia, idiomas ni documentacion adicional.
 
@@ -77,7 +77,7 @@ No se dispone de informacion sobre modelos comparables en los datos proporcionad
 
 | Modelo | Entorno | Algoritmo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| jonknownothing/q-Taxi-v4 | Taxi-v4 | Q-learning tabular | No aplica (tabla Q discreta) | No aplica | No disponible | Publico en HuggingFace |
+| jonknownothing/q-Taxi-v4 | Taxi-v4 | Q-learning tabular | No aplica (tabla Q discreta) | No aplica | No disponible | Publico en Hugging Face |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -95,7 +95,7 @@ No se dispone de informacion sobre modelos comparables en los datos proporcionad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jonknownothing/q-Taxi-v4
+- Modelo en Hugging Face: https://huggingface.co/jonknownothing/q-Taxi-v4
 - Fichero de pesos: https://huggingface.co/jonknownothing/q-Taxi-v4/blob/main/q-learning.pkl
 - Entorno Taxi-v4 (Gymnasium): no disponible en la informacion proporcionada
 - Paper o blog del autor: no disponible

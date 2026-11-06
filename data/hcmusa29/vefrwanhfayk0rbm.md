@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `hcmusa29/vEFRwanHFayk0rBm` es un modelo publicado en HuggingFace por el usuario `hcmusa29` del que no se dispone de informacion tecnica publica: ni model card, ni pipeline declarado, ni licencia, ni idiomas soportados. El identificador del modelo tiene el aspecto de una cadena generada de forma aleatoria, y no se ha encontrado documentacion asociada en la busqueda web. Por tanto, esta ficha se limita a recoger los metadatos objetivamente verificables del repositorio y a marcar como "no disponible" todo aquello que no puede confirmarse.
+El repositorio `hcmusa29/vEFRwanHFayk0rBm` es un modelo publicado en Hugging Face por el usuario `hcmusa29` del que no se dispone de informacion tecnica publica: ni model card, ni pipeline declarado, ni licencia, ni idiomas soportados. El identificador del modelo tiene el aspecto de una cadena generada de forma aleatoria, y no se ha encontrado documentacion asociada en la busqueda web. Por tanto, esta ficha se limita a recoger los metadatos objetivamente verificables del repositorio y a marcar como "no disponible" todo aquello que no puede confirmarse.
 
 El unico dato cuantitativo relevante es el tamano del repositorio, de 290,3 GB, que sugiere un conjunto de pesos de gran volumen: podria tratarse de un modelo denso de gran escala, de una arquitectura de mezcla de expertos (MoE), o de un repositorio que almacena varias versiones o formatos de pesos (por ejemplo, safetensors en precision completa mas copias cuantizadas). Sin acceso a la model card, a la lista de ficheros o a la configuracion del modelo, no es posible determinar parametros, longitud de contexto ni arquitectura.
 
@@ -82,5 +82,5 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hcmusa29/vEFRwanHFayk0rBm
+- Repositorio en Hugging Face: https://huggingface.co/hcmusa29/vEFRwanHFayk0rBm
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la busqueda web.

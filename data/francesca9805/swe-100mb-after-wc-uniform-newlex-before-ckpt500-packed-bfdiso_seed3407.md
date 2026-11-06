@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `swe-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed3407` es un ajuste fino (fine-tuning) de tipo SFT sobre el checkpoint `francesca9805/ppt-wc-uniform-newlex-swe-before-100mb-packed-bfdiso_seed3407`, ambos publicados por el usuario de HuggingFace `francesca9805`. Se trata de un modelo de generacion de texto construido sobre la arquitectura GPT-2, con 124.770.816 parametros totales (aproximadamente 124,8 millones), segun los datos reales de los pesos en formato safetensors. El repositorio ocupa 0,7 GB.
+El modelo `swe-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed3407` es un ajuste fino (fine-tuning) de tipo SFT sobre el checkpoint `francesca9805/ppt-wc-uniform-newlex-swe-before-100mb-packed-bfdiso_seed3407`, ambos publicados por el usuario de Hugging Face `francesca9805`. Se trata de un modelo de generacion de texto construido sobre la arquitectura GPT-2, con 124.770.816 parametros totales (aproximadamente 124,8 millones), segun los datos reales de los pesos en formato safetensors. El repositorio ocupa 0,7 GB.
 
 El nombre del modelo sugiere un experimento de investigacion centrado en tokenizacion y empaquetado de datos (los segmentos "newlex", "packed", "bfdiso" y "100mb" apuntan a variantes de tokenizador y a un subconjunto de datos de unos 100 MB), probablemente ligado al estudio de tokenizadores del grupo de trabajo del autor en la Universidad de Groningen, segun se deduce de la URL de Weights & Biases incluida en la model card.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| swe-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed3407 | 124,8 M | no disponible | no disponible | HuggingFace (0 descargas) |
+| swe-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed3407 | 124,8 M | no disponible | no disponible | Hugging Face (0 descargas) |
 | GPT-2 base (OpenAI) | 124 M | 1024 tokens | MIT | Ampliamente disponible |
 | DistilGPT-2 | 82 M | 1024 tokens | Apache 2.0 | Ampliamente disponible |
 | GPT-2 medium | 355 M | 1024 tokens | MIT | Ampliamente disponible |
@@ -85,7 +85,7 @@ Los datos de contexto y licencia de las alternativas corresponden a sus fichas p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/swe-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/swe-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed3407
 - Modelo base: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-swe-before-100mb-packed-bfdiso_seed3407
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/7fqlko3x
 - Repositorio de TRL: https://github.com/huggingface/trl

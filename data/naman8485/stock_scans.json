@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "naman8485/stock_scans",
+  "slug": "naman8485-stock_scans",
+  "author": "naman8485",
+  "url": "https://huggingface.co/naman8485/stock_scans",
+  "created_at": "2026-11-06T11:42:11.000Z",
+  "updated_at": "2026-11-06T11:44:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Scanr.ai — AI Stock Scanner & Trade Idea Generator",
+      "url": "https://scanr.ai/",
+      "snippet": "Scanr.ai is an AI-powered stock scanner and trade idea generator. Screen the market on technicals and fundamentals, then get push alerts the moment a saved scan finds a new setup."
+    },
+    {
+      "title": "Automate stock trades with AI-driven technical analysis & Alpaca ...",
+      "url": "https://n8n.io/workflows/7240-automate-stock-trades-with-ai-driven-technical-analysis-and-alpaca-trading/",
+      "snippet": "📊 AI-Powered Stock Analysis & Auto-Trading Workflow Supercharge your trading decisions with this end-to-end AI automation that connects market intelligence, technical analysis, and automated trade execution — all without manual intervention. My results so far: (100k paper trading account with the current template strategy) 🚀 What This Workflow Does Live AI-Driven Market Scanning ..."
+    }
+  ]
+}

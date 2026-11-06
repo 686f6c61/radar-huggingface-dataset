@@ -81,7 +81,7 @@ SmolGPT-Fables se diferencia por su especializacion en narrativa estructurada, m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/neonforestmist/smolgpt-fables
+- Repositorio Hugging Face: https://huggingface.co/neonforestmist/smolgpt-fables
 - Studio de demostracion: https://huggingface.co/spaces/neonforestmist/SmolGPT-Fable-Studio
 - Dataset de entrenamiento: https://huggingface.co/datasets/neonforestmist/smolgpt-markdown-stories
 - Companion Core ML: https://huggingface.co/neonforestmist/smolgpt-fables-coreml

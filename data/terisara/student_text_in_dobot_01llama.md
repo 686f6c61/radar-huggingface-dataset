@@ -27,12 +27,12 @@ La unica innovacion tecnica mencionada es el uso de Unsloth para acelerar el fin
 
 ## Capacidades
 
-- Generacion de texto conversacional: el modelo esta etiquetado como "conversational" en HuggingFace, lo que indica que puede mantener dialogos multi-turno.
+- Generacion de texto conversacional: el modelo esta etiquetado como "conversational" en Hugging Face, lo que indica que puede mantener dialogos multi-turno.
 - Hereda las capacidades base de Llama 3.2 3B Instruct, que incluyen razonamiento, generacion de codigo y comprension de instrucciones en ingles (aunque no se confirma el soporte multilingue en esta version).
 - Compatible con `llama.cpp` y Ollama, lo que permite integracion con herramientas de linea de comandos y servidores locales.
 - No se documentan capacidades especiales como tool calling, vision o audio.
 
-Nota: al no existir una model card completa, estas capacidades son inferidas del modelo base y de las etiquetas de HuggingFace, no de una verificacion directa.
+Nota: al no existir una model card completa, estas capacidades son inferidas del modelo base y de las etiquetas de Hugging Face, no de una verificacion directa.
 
 ## Casos de uso
 
@@ -69,7 +69,7 @@ No se dispone de informacion suficiente para realizar una comparativa directa co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Terisara/student_text_in_dobot_01llama
+- Repositorio Hugging Face: https://huggingface.co/Terisara/student_text_in_dobot_01llama
 - Herramienta Unsloth: https://github.com/unslothai/unsloth
 - Documentacion de llama.cpp: https://github.com/ggerganov/llama.cpp
 - Pagina de Ollama: https://ollama.com

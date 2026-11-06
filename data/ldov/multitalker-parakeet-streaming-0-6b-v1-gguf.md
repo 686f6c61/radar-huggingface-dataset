@@ -108,7 +108,7 @@ No se dispone de datos de benchmarks de terceros dentro de la informacion propor
 - Sesgos esperables derivados del entrenamiento en ingles: peor comportamiento ante acentos no nativos, ingles no estadounidense, jerga tecnica, ruido de fondo o grabaciones de telefonia de banda estrecha. La informacion disponible no documenta analisis de sesgos.
 - Licencia `nvidia-open-model-license`, registrada como `license: other`. No es una licencia OSI estandar: antes de un uso comercial o de redistribuir los pesos conviene revisar los terminos en el enlace oficial.
 - El modelo requiere transcribe.cpp. El GGUF no es compatible con llama.cpp, Ollama ni con el cargador estandar de Transformers, lo que limita las opciones de despliegue y el soporte de la comunidad.
-- Discrepancia de identificadores: el repositorio de HuggingFace esta publicado bajo el autor `ldov`, pero todos los enlaces de descarga de la model card apuntan al repositorio `handy-computer/multitalker-parakeet-streaming-0.6b-v1-gguf`. Conviene verificar cual es el origen canonico antes de integrarlo en un pipeline.
+- Discrepancia de identificadores: el repositorio de Hugging Face esta publicado bajo el autor `ldov`, pero todos los enlaces de descarga de la model card apuntan al repositorio `handy-computer/multitalker-parakeet-streaming-0.6b-v1-gguf`. Conviene verificar cual es el origen canonico antes de integrarlo en un pipeline.
 - Repositorio con 0 descargas y 0 likes en el momento de la consulta: no hay validacion independiente por parte de la comunidad.
 - Los WER de las cuantizaciones k-quant se publicaron sin commit de procedencia asociado, segun indica el propio autor; solo las cifras con commit registrado tienen trazabilidad completa.
 - El repo ocupa 7,4 GB en total, ya que aloja todas las cuantizaciones y los bundles; el tamano de descarga individual es el de cada fichero GGUF.
@@ -116,7 +116,7 @@ No se dispone de datos de benchmarks de terceros dentro de la informacion propor
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ldov/multitalker-parakeet-streaming-0.6b-v1-gguf
+- Repositorio Hugging Face: https://huggingface.co/ldov/multitalker-parakeet-streaming-0.6b-v1-gguf
 - Repositorio de descargas referenciado en la model card: https://huggingface.co/handy-computer/multitalker-parakeet-streaming-0.6b-v1-gguf
 - Modelo base: https://huggingface.co/nvidia/multitalker-parakeet-streaming-0.6b-v1
 - Commit upstream del port: https://huggingface.co/nvidia/multitalker-parakeet-streaming-0.6b-v1/commit/8749fc7

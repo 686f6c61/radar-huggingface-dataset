@@ -2,7 +2,7 @@
 
 ## Resumen
 
-juniper-grove-92 es un modelo multimodal de tipo image-text-to-text publicado en HuggingFace por la cuenta anónima Anonymous36 el 24 de octubre de 2026, con licencia Apache-2.0 y pesos en safetensors para la librería transformers. El recuento real de parámetros a partir de los tensores es de 8.953.803.264 (unos 8,95 mil millones), y el repositorio ocupa 18,6 GB, un tamaño coherente con pesos en bf16. La etiqueta `qwen3_5` sugiere que deriva de la familia Qwen3.5, aunque la model card no lo confirma ni aporta ningún detalle adicional.
+juniper-grove-92 es un modelo multimodal de tipo image-text-to-text publicado en Hugging Face por la cuenta anónima Anonymous36 el 24 de octubre de 2026, con licencia Apache-2.0 y pesos en safetensors para la librería transformers. El recuento real de parámetros a partir de los tensores es de 8.953.803.264 (unos 8,95 mil millones), y el repositorio ocupa 18,6 GB, un tamaño coherente con pesos en bf16. La etiqueta `qwen3_5` sugiere que deriva de la familia Qwen3.5, aunque la model card no lo confirma ni aporta ningún detalle adicional.
 
 El problema que resuelve, a nivel funcional, es el de un modelo pequeño-medio capaz de procesar imágenes y texto de forma conversacional, un perfil adecuado para despliegues on-premise en una sola GPU. Sin embargo, la ficha del autor está prácticamente vacía (solo declara `license` y `library_name`), no hay información sobre datos de entrenamiento, idiomas, longitud de contexto ni evaluación, y el repositorio acumula 0 descargas y 0 likes en el momento de la consulta.
 
@@ -96,6 +96,6 @@ Frente a estas alternativas, juniper-grove-92 solo ofrece una ventaja clara: la 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Anonymous36/juniper-grove-92
+- Hugging Face: https://huggingface.co/Anonymous36/juniper-grove-92
 - Búsqueda web: no se han encontrado páginas relacionadas con este modelo. Los resultados devueltos (The Jailbreak Index, GroveAI, el calendario de lanzamientos de ScriptByAI, ChatGPT y el repositorio l0gicx/ai-model-bypass) no mencionan `juniper-grove-92` ni aportan información técnica sobre él, por lo que no se incluyen como fuentes.
 - Paper, blog técnico, repositorio de código y demo: no disponibles.

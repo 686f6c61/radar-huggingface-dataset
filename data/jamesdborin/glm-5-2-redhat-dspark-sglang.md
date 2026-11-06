@@ -83,7 +83,7 @@ No hay datos comparativos de rendimiento entre estos métodos aplicados a GLM-5.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jamesdborin/glm-5.2-redhat-dspark-sglang
+- Repositorio Hugging Face: https://huggingface.co/jamesdborin/glm-5.2-redhat-dspark-sglang
 - Modelo original de Red Hat: https://huggingface.co/RedHatAI/GLM-5.2-speculator.dspark
 - Modelo principal de NVIDIA: https://huggingface.co/nvidia/GLM-5.2-NVFP4
 - Documentación de SGLang para GLM-5.2: https://docs.sglang.io/cookbook/autoregressive/GLM/GLM-5.2

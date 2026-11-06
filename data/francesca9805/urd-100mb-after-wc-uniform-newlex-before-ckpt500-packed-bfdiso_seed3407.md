@@ -25,8 +25,8 @@ Al ser un modelo de 125 millones de parametros, cabe en cualquier GPU de consumo
 | Pipeline | text-generation |
 | Modelo base | francesca9805/ppt-wc-uniform-newlex-urd-before-100mb-packed-bfdiso_seed3407 |
 | Descargas / likes | 0 / 0 |
-| Fecha de creacion | 2026-10-03 (segun metadatos de HuggingFace) |
-| Ultima actualizacion | 2026-10-03 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-10-03 (segun metadatos de Hugging Face) |
+| Ultima actualizacion | 2026-10-03 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -82,10 +82,10 @@ La comparativa se limita a parametros, contexto y licencia; no se incluyen cifra
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este modelo (urd-100mb...seed3407) | 124,77 M | no disponible | no disponible | safetensors en HuggingFace |
+| Este modelo (urd-100mb...seed3407) | 124,77 M | no disponible | no disponible | safetensors en Hugging Face |
 | GPT-2 small | 124 M | 1024 tokens | MIT modificada | pesos originales de OpenAI |
-| DistilGPT2 | 82 M | 1024 tokens | Apache-2.0 | safetensors y GGUF en HuggingFace |
-| SmolLM2-135M | 135 M | 8192 tokens | Apache-2.0 | safetensors y GGUF en HuggingFace |
+| DistilGPT2 | 82 M | 1024 tokens | Apache-2.0 | safetensors y GGUF en Hugging Face |
+| SmolLM2-135M | 135 M | 8192 tokens | Apache-2.0 | safetensors y GGUF en Hugging Face |
 
 Las cifras de contexto y licencia de los modelos de comparacion corresponden a informacion publica general y no se han verificado contra las fichas oficiales en el momento de redactar esta ficha. Frente a ellos, este checkpoint no aporta ventajas documentadas en contexto, licencia o evaluacion; su interes es exclusivamente experimental.
 
@@ -104,7 +104,7 @@ Las cifras de contexto y licencia de los modelos de comparacion corresponden a i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/urd-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/urd-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed3407
 - Modelo base: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-urd-before-100mb-packed-bfdiso_seed3407
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/4vwzqztu
 - Repositorio de TRL: https://github.com/huggingface/trl

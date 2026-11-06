@@ -78,6 +78,6 @@ No disponible. No se conocen modelos comparables porque el artefacto no se prese
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davidwdw/fa-eval-all-h17-7000-a10f619bdfd8
+- Modelo en Hugging Face: https://huggingface.co/davidwdw/fa-eval-all-h17-7000-a10f619bdfd8
 - Receta canonica citada en la model card: `evaluations/2026-09-26_b1k_all_existing_queue` (referencia textual, sin URL publica disponible)
 - No se han encontrado en la informacion proporcionada enlaces adicionales a papers, blogs, repositorios o demos.

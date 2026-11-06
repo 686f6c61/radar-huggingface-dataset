@@ -94,7 +94,7 @@ No se dispone en la informacion proporcionada de datos de otros modelos de image
 | LPIPS vs BF16 | 0,038 | 0,044 | 0,016 / 0,015 |
 | SSIM / PSNR | 0,954 / 28,8 dB | No disponible | No disponible |
 | Licencia | flux-kommunity-license | La del modelo base | La del modelo base |
-| Disponibilidad | HuggingFace, stable-diffusion.cpp y ComfyUI-GGUF | HuggingFace | HuggingFace |
+| Disponibilidad | Hugging Face, stable-diffusion.cpp y ComfyUI-GGUF | Hugging Face | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -110,7 +110,7 @@ No se dispone en la informacion proporcionada de datos de otros modelos de image
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AtomicChat/FLUX-3-Image-Klein-GGUF
+- Repositorio Hugging Face: https://huggingface.co/AtomicChat/FLUX-3-Image-Klein-GGUF
 - Modelo base: https://huggingface.co/black-forest-labs/flux-3-image-klein
 - Codigo de inferencia de referencia: https://github.com/black-forest-labs/flux-3-image-klein
 - Prompt upsampler GGUF: https://huggingface.co/AtomicChat/FLUX-3-Image-Klein-pup-GGUF

@@ -4,7 +4,7 @@
 
 El modelo identificado como `WijewardhanaNT/xnli_en_and_sw_5000_percentage_1_120_VeRA_Qwen3-8b` es un adaptador PEFT (no un modelo completo) publicado por el usuario WijewardhanaNT sobre el modelo base `Qwen/Qwen3-8B-Base`. Por la nomenclatura del repositorio y la metainformación disponible, se trata de un ajuste fino orientado a la tarea XNLI (inferencia de lenguaje natural entre pares de frases) en inglés y suajili, con un volumen de datos de 5.000 ejemplos y una configuración de entrenamiento parcial (el sufijo `percentage_1_120` sugiere un subconjunto porcentual y un número de pasos, aunque el autor no documenta su significado). La técnica declarada en el nombre es VeRA (Vector-based Random Matrix Adaptation), una variante de adaptación de bajo rango que comparte matrices aleatorias congeladas y entrena únicamente vectores de escalado.
 
-El repositorio contiene únicamente los pesos del adaptador (0,2 GB), no los del modelo base, y su model card es la plantilla por defecto de HuggingFace sin ninguna sección completada: no declara licencia, idiomas, datos de entrenamiento, hiperparámetros ni resultados de evaluación. Esto limita severamente cualquier afirmación sobre su calidad o comportamiento real.
+El repositorio contiene únicamente los pesos del adaptador (0,2 GB), no los del modelo base, y su model card es la plantilla por defecto de Hugging Face sin ninguna sección completada: no declara licencia, idiomas, datos de entrenamiento, hiperparámetros ni resultados de evaluación. Esto limita severamente cualquier afirmación sobre su calidad o comportamiento real.
 
 Su relevancia es, por tanto, acotada y de tipo metodológico: sirve como ejemplo de adaptación eficiente en parámetros (PEFT) sobre un modelo denso de 8B para una tarea multilingüe de clasificación, y como punto de partida reproducible para quien quiera replicar el pipeline. No debe considerarse un artefacto listo para producción sin una evaluación independiente previa. La búsqueda web realizada no devolvió ninguna fuente relacionada con este modelo, su autor o su evaluación.
 
@@ -21,7 +21,7 @@ Su relevancia es, por tanto, acotada y de tipo metodológico: sirve como ejemplo
 | Licencia | No disponible |
 | Formato de pesos | Safetensors (adaptador PEFT, librería `peft` 0.17.1) |
 
-Otros datos relevantes: tamaño del repositorio 0,2 GB, 0 descargas y 0 likes en el momento de la consulta, fecha de creación 21 de septiembre de 2026. El tag `arxiv:1910.09700` corresponde al artículo de Lacoste et al. sobre estimación de emisiones de carbono, citado en la plantilla por defecto de HuggingFace, y no a un paper del modelo.
+Otros datos relevantes: tamaño del repositorio 0,2 GB, 0 descargas y 0 likes en el momento de la consulta, fecha de creación 21 de septiembre de 2026. El tag `arxiv:1910.09700` corresponde al artículo de Lacoste et al. sobre estimación de emisiones de carbono, citado en la plantilla por defecto de Hugging Face, y no a un paper del modelo.
 
 ## Arquitectura y entrenamiento
 
@@ -54,7 +54,7 @@ En todos los casos, el uso en producción exige una evaluación propia, dado que
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card del repositorio es la plantilla por defecto de HuggingFace y no incluye ninguna sección de evaluación, ni métricas de XNLI, ni comparaciones con otros adaptadores o modelos.
+No se han publicado resultados de benchmarks en la información disponible. La model card del repositorio es la plantilla por defecto de Hugging Face y no incluye ninguna sección de evaluación, ni métricas de XNLI, ni comparaciones con otros adaptadores o modelos.
 
 ## Requisitos de hardware
 
@@ -74,9 +74,9 @@ No se dispone de datos de rendimiento de este adaptador ni de alternativas equiv
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (VeRA sobre Qwen3-8B-Base) | Adaptador PEFT (NLI en/su) | No disponible | No disponible | No disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen3-8B-Base | Modelo base denso | 8B (según su documentación pública) | 32.768 tokens (según su documentación pública) | Apache 2.0 (según su documentación pública) | HuggingFace, ampliamente utilizado |
-| Qwen/Qwen3-8B | Modelo instruct post-entrenado | 8B (según su documentación pública) | 32.768 tokens (según su documentación pública) | Apache 2.0 (según su documentación pública) | HuggingFace |
+| Este adaptador (VeRA sobre Qwen3-8B-Base) | Adaptador PEFT (NLI en/su) | No disponible | No disponible | No disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen3-8B-Base | Modelo base denso | 8B (según su documentación pública) | 32.768 tokens (según su documentación pública) | Apache 2.0 (según su documentación pública) | Hugging Face, ampliamente utilizado |
+| Qwen/Qwen3-8B | Modelo instruct post-entrenado | 8B (según su documentación pública) | 32.768 tokens (según su documentación pública) | Apache 2.0 (según su documentación pública) | Hugging Face |
 | Adaptadores LoRA públicos para XNLI sobre bases multilingües | Adaptador PEFT | Variable | Heredado del base | Variable | Dispersos, sin comparativa directa |
 
 No se identificaron adaptadores VeRA comparables publicados con métricas de XNLI verificables en la información disponible.
@@ -96,7 +96,7 @@ No se identificaron adaptadores VeRA comparables publicados con métricas de XNL
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/WijewardhanaNT/xnli_en_and_sw_5000_percentage_1_120_VeRA_Qwen3-8b
+- Hugging Face: https://huggingface.co/WijewardhanaNT/xnli_en_and_sw_5000_percentage_1_120_VeRA_Qwen3-8b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B-Base
 - Referencia citada en los tags (no relacionada con el modelo): https://arxiv.org/abs/1910.09700
 - No se han encontrado papers, blogs, repositorios ni demos adicionales asociados a este modelo en la búsqueda web realizada.

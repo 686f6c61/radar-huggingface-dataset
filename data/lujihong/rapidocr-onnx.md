@@ -6,7 +6,7 @@ rapidocr-onnx es un repositorio de distribucion que aloja una copia byte a byte 
 
 El paquete incluye tres ficheros: un modelo de deteccion de texto basado en DBNet (`PP-OCRv6_det_small.onnx`, unos 9,9 MB), un modelo de reconocimiento con cabeza CTC (`PP-OCRv6_rec_small.onnx`, unos 21,2 MB) que cubre 50 idiomas en un unico modelo unificado, y el diccionario de caracteres asociado (`ppocrv6_dict.txt`, 18.708 entradas no vacias). No se trata de un modelo generativo ni de un LLM: es un componente de vision por computador para extraccion de texto en imagenes.
 
-Su relevancia practica reside en que RapidAI no mantiene un repositorio oficial equivalente en HuggingFace para los activos v6 (su cuenta `SWHL/RapidOCR` solo contiene modelos de clasificacion de orientacion PP-OCRv1/v3), por lo que este espejo facilita el acceso desde el ecosistema HF y desde mirrors regionales. Segun la model card, la eleccion de v6 small frente a v5 mobile se justifica por mejores metricas de reconocimiento (ExactMatch 0,8419 frente a 0,7355) con un coste computacional ligeramente inferior.
+Su relevancia practica reside en que RapidAI no mantiene un repositorio oficial equivalente en Hugging Face para los activos v6 (su cuenta `SWHL/RapidOCR` solo contiene modelos de clasificacion de orientacion PP-OCRv1/v3), por lo que este espejo facilita el acceso desde el ecosistema HF y desde mirrors regionales. Segun la model card, la eleccion de v6 small frente a v5 mobile se justifica por mejores metricas de reconocimiento (ExactMatch 0,8419 frente a 0,7355) con un coste computacional ligeramente inferior.
 
 ## Especificaciones tecnicas
 
@@ -77,7 +77,7 @@ No se han publicado en la informacion disponible resultados de benchmarks estand
 |---|---|---|---|---|---|
 | rapidocr-onnx (PP-OCRv6 small) | DBNet + CTC ONNX | 50 (unificado) | ~31 MB | Apache-2.0 | HF (espejo), ModelScope (upstream) |
 | PP-OCRv5 mobile | DBNet + CTC ONNX | multilingue (segun variante) | no disponible | Apache-2.0 | ModelScope / RapidOCR |
-| SWHL/RapidOCR | clasificador de orientacion PP-OCRv1/v3 | no aplica | no disponible | no disponible | HuggingFace |
+| SWHL/RapidOCR | clasificador de orientacion PP-OCRv1/v3 | no aplica | no disponible | no disponible | Hugging Face |
 | Tesseract | OCR clasico (LSTM) | amplio, por paquetes de idioma | decenas de MB por idioma | Apache-2.0 | sistema / repos públicos |
 
 Frente a PP-OCRv5 mobile, la version v6 small mejora ExactMatch y CharMatch con menor tiempo segun la evaluacion citada. Frente a Tesseract, el enfoque PP-OCR suele ser mas robusto en escenas naturales, aunque no se dispone de una comparacion directa en la informacion proporcionada.
@@ -95,7 +95,7 @@ Frente a PP-OCRv5 mobile, la version v6 small mejora ExactMatch y CharMatch con 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/lujihong/rapidocr-onnx
+- Repositorio Hugging Face: https://huggingface.co/lujihong/rapidocr-onnx
 - Upstream en ModelScope (RapidAI/RapidOCR v3.9.2): https://www.modelscope.cn/models/RapidAI/RapidOCR
-- Cuenta de RapidAI en HuggingFace (solo clasificadores de orientacion PP-OCRv1/v3): https://huggingface.co/SWHL/RapidOCR
+- Cuenta de RapidAI en Hugging Face (solo clasificadores de orientacion PP-OCRv1/v3): https://huggingface.co/SWHL/RapidOCR
 - Mirror de descarga: https://hf-mirror.com/lujihong/rapidocr-onnx

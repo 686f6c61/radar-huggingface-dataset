@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Uigyu/qwen_2.5_3b_mh-panda_h2_a_s2` es un fine-tuning del modelo base Qwen 2.5 3B, publicado en HuggingFace por el usuario Uigyu. El nombre sugiere que se trata de un ajuste fino orientado a una tarea específica (las siglas "mh-panda" y "h2_a_s2" no están documentadas), y el tag `unsloth` indica que el entrenamiento se realizó probablemente con la librería Unsloth, especializada en fine-tuning eficiente mediante LoRA/QLoRA. El repositorio contiene únicamente los pesos en formato safetensors, con un tamaño de 0.1 GB, lo que apunta a una cuantización o a un checkpoint parcial.
+El modelo `Uigyu/qwen_2.5_3b_mh-panda_h2_a_s2` es un fine-tuning del modelo base Qwen 2.5 3B, publicado en Hugging Face por el usuario Uigyu. El nombre sugiere que se trata de un ajuste fino orientado a una tarea específica (las siglas "mh-panda" y "h2_a_s2" no están documentadas), y el tag `unsloth` indica que el entrenamiento se realizó probablemente con la librería Unsloth, especializada en fine-tuning eficiente mediante LoRA/QLoRA. El repositorio contiene únicamente los pesos en formato safetensors, con un tamaño de 0.1 GB, lo que apunta a una cuantización o a un checkpoint parcial.
 
 La relevancia de este modelo radica en que parte de una arquitectura probada y eficiente como Qwen 2.5 3B, que ofrece un buen equilibrio entre rendimiento y requisitos de hardware para tareas de generación de texto, código y razonamiento. Sin embargo, la ausencia de documentación en la model card (sin descripción, sin licencia, sin datos de entrenamiento) limita seriamente su uso en producción sin una evaluación previa por parte del usuario.
 
@@ -58,10 +58,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen 2.5 3B (base) | 3B | 32k | Apache 2.0 | HuggingFace |
-| Llama 3.2 3B | 3B | 128k | Llama 3.2 Community License | HuggingFace |
-| Phi-3 mini | 3.8B | 128k | MIT | HuggingFace |
-| Este fine-tuning | 3B | 32k (heredado) | no disponible | HuggingFace |
+| Qwen 2.5 3B (base) | 3B | 32k | Apache 2.0 | Hugging Face |
+| Llama 3.2 3B | 3B | 128k | Llama 3.2 Community License | Hugging Face |
+| Phi-3 mini | 3.8B | 128k | MIT | Hugging Face |
+| Este fine-tuning | 3B | 32k (heredado) | no disponible | Hugging Face |
 
 La comparativa se basa en los modelos base; no se dispone de datos de rendimiento de este fine-tuning concreto.
 
@@ -76,6 +76,6 @@ La comparativa se basa en los modelos base; no se dispone de datos de rendimient
 
 ## Enlaces
 
-- [HuggingFace: Uigyu/qwen_2.5_3b_mh-panda_h2_a_s2](https://huggingface.co/Uigyu/qwen_2.5_3b_mh-panda_h2_a_s2)
+- [Hugging Face: Uigyu/qwen_2.5_3b_mh-panda_h2_a_s2](https://huggingface.co/Uigyu/qwen_2.5_3b_mh-panda_h2_a_s2)
 - [Modelo base Qwen 2.5 3B](https://huggingface.co/Qwen/Qwen2.5-3B) (referencia)
 - [Unsloth](https://github.com/unslothai/unsloth) (librería de fine-tuning)

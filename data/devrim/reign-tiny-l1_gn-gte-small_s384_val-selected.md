@@ -84,7 +84,7 @@ REIGN se diferencia de los bi-encoders clásicos al agregar información de múl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/devrim/reign-tiny-l1_gn-gte-small_s384_val-selected
+- Modelo en Hugging Face: https://huggingface.co/devrim/reign-tiny-l1_gn-gte-small_s384_val-selected
 - Código: https://github.com/devrimcavusoglu/reign
 - Página del proyecto: https://devrimcavusoglu.github.io/reign
 - Dataset: https://huggingface.co/datasets/devrim/goodwiki_long_synthetic_ir

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLM-5.3-Flash es un modelo multimodal nativo de la serie GLM-5, publicado por Ares-Realm-Studios en HuggingFace y atribuido en su model card al equipo GLM-5 de zai-org. Se trata del primer modelo de la familia GLM-5 con capacidades multimodales integradas desde el entrenamiento (pipeline `image-text-to-text`), con 321.323.031.390 parametros totales segun los pesos en safetensors y aproximadamente 18.000 millones de parametros activos, lo que lo situa en la categoria de modelos MoE de gran escala pero con coste de inferencia reducido.
+GLM-5.3-Flash es un modelo multimodal nativo de la serie GLM-5, publicado por Ares-Realm-Studios en Hugging Face y atribuido en su model card al equipo GLM-5 de zai-org. Se trata del primer modelo de la familia GLM-5 con capacidades multimodales integradas desde el entrenamiento (pipeline `image-text-to-text`), con 321.323.031.390 parametros totales segun los pesos en safetensors y aproximadamente 18.000 millones de parametros activos, lo que lo situa en la categoria de modelos MoE de gran escala pero con coste de inferencia reducido.
 
 El modelo parte de un base entrenado desde cero y estrena una arquitectura hibrida que combina atencion dispersa (sparse) y atencion lineal, con el objetivo de abaratar el servicio en contextos largos sin perder precision en recuperacion de informacion lejana. Incorpora ademas Manifold-Constrained Hyper-Connections (mHC) para mejorar la eficiencia de escalado, y fue preentrenado sobre un corpus multimodal de 30 billones de tokens. La model card afirma que supera a GLM-5.2 en benchmarks y cargas reales a una decima parte del precio, y que se acerca a Claude Opus 4.8 en tareas de codigo y agenticas.
 
@@ -82,7 +82,7 @@ La unica comparacion cualitativa aportada por el autor es que GLM-5.3-Flash supe
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| GLM-5.3-Flash | 321,3 B totales / ~18 B activos | No disponible oficialmente (evaluaciones hasta 1M) | MIT | Pesos en HuggingFace, API en Z.ai | Multimodal nativo, atencion hibrida |
+| GLM-5.3-Flash | 321,3 B totales / ~18 B activos | No disponible oficialmente (evaluaciones hasta 1M) | MIT | Pesos en Hugging Face, API en Z.ai | Multimodal nativo, atencion hibrida |
 | GLM-5.2 | No disponible | No disponible | No disponible en la informacion proporcionada | No disponible | Referencia de comparacion citada por el autor: GLM-5.3-Flash lo supera con una decima parte del precio |
 | Claude Opus 4.8 | No disponible (propietario) | No disponible | Propietaria | Solo API | Referencia de comparacion en codigo y agentes; el autor situa a GLM-5.3-Flash cerca de el |
 | GLM-5 (serie) | No disponible | No disponible | No disponible en la informacion proporcionada | Repositorio zai-org/GLM-5 | Informe tecnico comun, arXiv 2602.15763 |
@@ -103,7 +103,7 @@ No se dispone de datos numericos de rendimiento para ninguno de los modelos de l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ares-Realm-Studios/GLM-5.3-Flash
+- Hugging Face: https://huggingface.co/Ares-Realm-Studios/GLM-5.3-Flash
 - Blog de GLM-5.3-Flash: https://z.ai/blog/glm-5.3-flash
 - Informe tecnico (arXiv): https://arxiv.org/abs/2602.15763
 - Documentacion de la API en Z.ai: https://docs.z.ai/guides/llm/glm-5.3-flash

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`plack26/Mu51c-cumb14-r0ch4` es un repositorio alojado en HuggingFace por el usuario `plack26`, publicado bajo licencia Apache 2.0. La informacion disponible es practicamente nula: el repositorio ocupa 0.0 GB, no declara pipeline de inferencia, no especifica idiomas soportados, no incluye pesos ni archivos de modelo, y su model card se limita a la linea de metadatos de licencia sin ningun contenido descriptivo adicional. Registra 0 descargas y 0 likes desde su creacion.
+`plack26/Mu51c-cumb14-r0ch4` es un repositorio alojado en Hugging Face por el usuario `plack26`, publicado bajo licencia Apache 2.0. La informacion disponible es practicamente nula: el repositorio ocupa 0.0 GB, no declara pipeline de inferencia, no especifica idiomas soportados, no incluye pesos ni archivos de modelo, y su model card se limita a la linea de metadatos de licencia sin ningun contenido descriptivo adicional. Registra 0 descargas y 0 likes desde su creacion.
 
 No es posible determinar que es el modelo, quien lo ha desarrollado tecnicamente, que problema resuelve ni cual es su relevancia. El nombre del repositorio emplea sustituciones leet (por ejemplo, `Mu51c` por "Music", `cumb14` por "cumbia", `r0ch4` por "rocha"), lo que sugiere un posible proyecto personal relacionado con musica, pero se trata de una inferencia a partir del nombre y no de un dato confirmado por el autor.
 
@@ -77,7 +77,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 - Documentacion inexistente: la model card solo contiene la declaracion de licencia; no hay descripcion de arquitectura, entrenamiento, datos ni limitaciones declaradas por el autor.
 - Imposibilidad de auditar sesgos: al no existir modelo desplegable ni documentacion sobre el dataset, no se puede evaluar sesgo alguno.
 - Riesgo de alucinacion: no evaluable, ya que no hay modelo con el que generar salidas.
-- Limitaciones de contexto e idioma: no declaradas; el campo de idiomas aparece vacio en los metadatos de HuggingFace.
+- Limitaciones de contexto e idioma: no declaradas; el campo de idiomas aparece vacio en los metadatos de Hugging Face.
 - Licencia: Apache 2.0 permite uso comercial, modificacion y redistribucion, pero al no existir contenido licenciable mas alla de los metadatos, la licencia carece de efecto practico en el estado actual del repositorio.
 - Ambiguedad del identificador: el nombre con sustituciones leet y la coincidencia con resultados de busqueda no relacionados dificultan determinar la autoria real y el proposito del proyecto.
 - Metadatos anomalos: las fechas registradas (creacion y actualizacion el 2026-10-01) corresponden a un intervalo de menos de siete minutos sin ningun contenido asociado.
@@ -85,8 +85,8 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/plack26/Mu51c-cumb14-r0ch4
-- Perfil del autor en HuggingFace: https://huggingface.co/plack26
+- Modelo en Hugging Face: https://huggingface.co/plack26/Mu51c-cumb14-r0ch4
+- Perfil del autor en Hugging Face: https://huggingface.co/plack26
 - Otro repositorio del mismo autor: https://huggingface.co/plack26/Xx
 - Paper: no disponible
 - Blog o documentacion tecnica: no disponible

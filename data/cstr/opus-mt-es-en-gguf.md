@@ -105,7 +105,7 @@ La comparacion con NLLB-200 se incluye como referencia de categoria (traduccion 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cstr/opus-mt-es-en-GGUF
+- Modelo en Hugging Face: https://huggingface.co/cstr/opus-mt-es-en-GGUF
 - Modelo base: https://huggingface.co/Helsinki-NLP/opus-mt-es-en
 - Direccion inversa (en→es): https://huggingface.co/cstr/opus-mt-en-es-GGUF
 - Repositorio CrispASR: https://github.com/CrispStrobe/CrispASR

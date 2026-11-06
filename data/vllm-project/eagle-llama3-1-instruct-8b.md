@@ -74,8 +74,8 @@ Además, la model card indica 2x de speedup sobre gpt-fast con EAGLE-1. No se ha
 
 | Modelo | Tipo | Modelo base | Speedup reportado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EAGLE-LLaMA3.1-Instruct-8B (este) | Draft head EAGLE-3 | Llama 3.1 8B Instruct | no disponible para 8B; 5,6x en 13B (EAGLE-3) | Apache 2.0 | HuggingFace (vllm-project y yuhuili) |
-| Medusa | Draft heads múltiples | Llama 3.1 8B Instruct (variantes) | 1,6x menor que EAGLE-1 en 13B según model card | Apache 2.0 (típicamente) | HuggingFace |
+| EAGLE-LLaMA3.1-Instruct-8B (este) | Draft head EAGLE-3 | Llama 3.1 8B Instruct | no disponible para 8B; 5,6x en 13B (EAGLE-3) | Apache 2.0 | Hugging Face (vllm-project y yuhuili) |
+| Medusa | Draft heads múltiples | Llama 3.1 8B Instruct (variantes) | 1,6x menor que EAGLE-1 en 13B según model card | Apache 2.0 (típicamente) | Hugging Face |
 | Lookahead decoding | Decodificación paralela sin draft model | Cualquiera | 2x menor que EAGLE-1 en 13B según model card | Apache 2.0 (implementación) | Frameworks de serving |
 | Draft heads nativos de vLLM/SGLang | Decodificación especulativa genérica | Variable | no disponible | Variable | Frameworks |
 
@@ -93,8 +93,8 @@ No se dispone en la información proporcionada de comparativas de calidad ni de 
 
 ## Enlaces
 
-- HuggingFace (espejo vLLM): https://huggingface.co/vllm-project/EAGLE-LLaMA3.1-Instruct-8B
-- HuggingFace (original): https://huggingface.co/yuhuili/EAGLE-LLaMA3.1-Instruct-8B
+- Hugging Face (espejo vLLM): https://huggingface.co/vllm-project/EAGLE-LLaMA3.1-Instruct-8B
+- Hugging Face (original): https://huggingface.co/yuhuili/EAGLE-LLaMA3.1-Instruct-8B
 - Paper EAGLE: https://arxiv.org/pdf/2401.15077.pdf
 - Paper EAGLE-2: https://arxiv.org/pdf/2406.16858
 - Paper EAGLE-3: https://arxiv.org/pdf/2503.01840

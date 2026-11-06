@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks estándar del modelo base Qwen/Qwen3.5-2B n
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jonpark0/Qwen3.5-2B-krafla
+- Repositorio Hugging Face: https://huggingface.co/jonpark0/Qwen3.5-2B-krafla
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Runtime Krafla (GitHub): https://github.com/JonPark0/krafla
 - Releases de Krafla: https://github.com/JonPark0/krafla/releases

@@ -92,9 +92,9 @@ La ventaja de este repositorio es que agrupa kernels propios y de terceros en un
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/deAPI-ai/image-server-wheels
+- Repositorio en Hugging Face: https://huggingface.co/deAPI-ai/image-server-wheels
 - Página de archivos: https://huggingface.co/deAPI-ai/image-server-wheels/tree/main
-- Organización deAPI en HuggingFace: https://huggingface.co/deAPI-ai
+- Organización deAPI en Hugging Face: https://huggingface.co/deAPI-ai
 - Web de deAPI: https://deapi.ai/
 - Documentación de modelos de deAPI: https://docs.deapi.ai/models
 - SageAttention (upstream): https://github.com/thu-ml/SageAttention

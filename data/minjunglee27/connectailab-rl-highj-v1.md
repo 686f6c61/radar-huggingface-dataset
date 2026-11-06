@@ -89,8 +89,8 @@ La informacion disponible solo permite comparar contra las variantes del propio 
 
 | Modelo | Parametros | Contexto | Acierto en prueba | Arrepentimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| connectailab-rl-highj-v1 | 0,8B base + LoRA | No disponible | 78,9% | 1,81 | Apache 2.0 | HuggingFace (adaptador PEFT) |
-| Qwen/Qwen3.5-0.8B (base) | 0,8B | No disponible | 31,2% | 2,50 | No disponible en la informacion proporcionada | HuggingFace |
+| connectailab-rl-highj-v1 | 0,8B base + LoRA | No disponible | 78,9% | 1,81 | Apache 2.0 | Hugging Face (adaptador PEFT) |
+| Qwen/Qwen3.5-0.8B (base) | 0,8B | No disponible | 31,2% | 2,50 | No disponible en la informacion proporcionada | Hugging Face |
 | SFT sobre Qwen/Qwen3.5-0.8B | 0,8B base + LoRA | No disponible | 76,4% | 1,82 | No disponible en la informacion proporcionada | No distribuido publicamente segun la informacion disponible |
 | Politica maestra PPO del simulador | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible (solo referencia de rendimiento: 14,01 millones de wones al mes) |
 
@@ -111,7 +111,7 @@ La informacion disponible solo permite comparar contra las variantes del propio 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/minjunglee27/connectailab-rl-highj-v1
+- Modelo en Hugging Face: https://huggingface.co/minjunglee27/connectailab-rl-highj-v1
 - Repositorio CONNECT TYCOON en GitHub: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab para reproducir el entrenamiento: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb
 - Canal de YouTube de CONNECT AI LAB: https://www.youtube.com/@CONNECT-AI-LAB

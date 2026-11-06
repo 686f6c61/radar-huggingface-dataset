@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RedHatAI/SmolLM-360M-Instruct-quantized.w8a8 es la versión cuantizada en INT8 (W8A8) del modelo SmolLM-360M-Instruct, desarrollado originalmente por HuggingFace y cuantizado por Neural Magic bajo el paraguas de RedHatAI. La cuantización reduce el tamaño de los pesos y las activaciones de 16 bits a 8 bits, lo que recorta aproximadamente un 50 % el espacio en disco y los requisitos de memoria de GPU, manteniendo una degradación mínima de precisión en la mayoría de las tareas.
+RedHatAI/SmolLM-360M-Instruct-quantized.w8a8 es la versión cuantizada en INT8 (W8A8) del modelo SmolLM-360M-Instruct, desarrollado originalmente por Hugging Face y cuantizado por Neural Magic bajo el paraguas de RedHatAI. La cuantización reduce el tamaño de los pesos y las activaciones de 16 bits a 8 bits, lo que recorta aproximadamente un 50 % el espacio en disco y los requisitos de memoria de GPU, manteniendo una degradación mínima de precisión en la mayoría de las tareas.
 
 El modelo mantiene la arquitectura Llama del original, con 409 millones de parámetros, y está pensado para uso conversacional tipo asistente en inglés. Su principal valor es el despliegue eficiente en entornos con recursos limitados, como CPU, GPU de consumo o infraestructuras de inferencia con restricciones de memoria, sin renunciar a un rendimiento aceptable en tareas de razonamiento y comprensión del lenguaje.
 
@@ -71,10 +71,10 @@ El modelo se compara principalmente con su version sin cuantizar y con otros mod
 
 | Modelo | Parametros | Cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SmolLM-360M-Instruct (base) | 409 M | FP16 | no especificado | Apache-2.0 | HuggingFace |
-| SmolLM-360M-Instruct-quantized.w8a8 | 409 M | INT8 | no especificado | Apache-2.0 | HuggingFace |
-| TinyLlama-1.1B | 1.1 B | FP16 | 2048 | Apache-2.0 | HuggingFace |
-| Qwen2-0.5B-Instruct | 494 M | FP16 | 32768 | Apache-2.0 | HuggingFace |
+| SmolLM-360M-Instruct (base) | 409 M | FP16 | no especificado | Apache-2.0 | Hugging Face |
+| SmolLM-360M-Instruct-quantized.w8a8 | 409 M | INT8 | no especificado | Apache-2.0 | Hugging Face |
+| TinyLlama-1.1B | 1.1 B | FP16 | 2048 | Apache-2.0 | Hugging Face |
+| Qwen2-0.5B-Instruct | 494 M | FP16 | 32768 | Apache-2.0 | Hugging Face |
 
 No se han realizado comparativas directas con estos modelos en la informacion proporcionada, por lo que los datos de rendimiento relativos no estan disponibles.
 
@@ -89,7 +89,7 @@ No se han realizado comparativas directas con estos modelos en la informacion pr
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/RedHatAI/SmolLM-360M-Instruct-quantized.w8a8)
+- [Modelo en Hugging Face](https://huggingface.co/RedHatAI/SmolLM-360M-Instruct-quantized.w8a8)
 - [Modelo base SmolLM-360M-Instruct](https://huggingface.co/HuggingFaceTB/SmolLM-360M-Instruct)
 - [Documentacion de vLLM](https://docs.vllm.ai/en/latest/)
 - [Repositorio llm-compressor](https://github.com/vllm-project/llm-compressor)

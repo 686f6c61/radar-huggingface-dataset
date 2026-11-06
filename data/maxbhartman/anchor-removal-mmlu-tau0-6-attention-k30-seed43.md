@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`maxbhartman/anchor-removal-mmlu-tau0.6-attention-k30-seed43` es un checkpoint publicado en HuggingFace por el usuario maxbhartman, etiquetado con `pytorch`, `llama` y `region:us`. Por sus etiquetas y por el propio identificador del repositorio, todo apunta a un artefacto de investigacion derivado de la arquitectura Llama, generado como parte de un experimento de ablacion sobre mecanismos internos del modelo (el termino "anchor removal") y evaluado sobre MMLU con temperatura 0.6, seleccion basada en atencion con k=30 y semilla 43. No hay documentacion publica asociada que confirme esta lectura: es una interpretacion del nombre del repositorio, no un dato verificado.
+`maxbhartman/anchor-removal-mmlu-tau0.6-attention-k30-seed43` es un checkpoint publicado en Hugging Face por el usuario maxbhartman, etiquetado con `pytorch`, `llama` y `region:us`. Por sus etiquetas y por el propio identificador del repositorio, todo apunta a un artefacto de investigacion derivado de la arquitectura Llama, generado como parte de un experimento de ablacion sobre mecanismos internos del modelo (el termino "anchor removal") y evaluado sobre MMLU con temperatura 0.6, seleccion basada en atencion con k=30 y semilla 43. No hay documentacion publica asociada que confirme esta lectura: es una interpretacion del nombre del repositorio, no un dato verificado.
 
 El repositorio ocupa 6,4 GB, un tamano compatible con pesos en precision media (bf16 o fp16) de un modelo de aproximadamente 3.000 millones de parametros, o con pesos en fp32 de un modelo de unos 1.600 millones. Esta estimacion no esta confirmada por ninguna ficha tecnica, configuracion publicada ni mensaje del autor. El numero de descargas (14) y de "likes" (0) indica que se trata de un checkpoint de circulacion practicamente nula, sin validacion por parte de la comunidad.
 
@@ -66,10 +66,10 @@ No es posible establecer una comparativa fiable: se desconoce el numero de param
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| anchor-removal-mmlu-tau0.6-attention-k30-seed43 | no disponible | no disponible | no disponible | HuggingFace, 14 descargas, 0 likes |
-| Llama 3.2 3B (referencia externa) | 3.210 millones | 128.000 tokens | Llama 3.2 Community License | Publico en HuggingFace, ampliamente utilizado |
-| Llama 3.1 8B (referencia externa) | 8.030 millones | 128.000 tokens | Llama 3.1 Community License | Publico en HuggingFace, ampliamente utilizado |
-| Qwen2.5 3B (referencia externa) | 3.090 millones | 32.768 tokens | Apache 2.0 | Publico en HuggingFace, ampliamente utilizado |
+| anchor-removal-mmlu-tau0.6-attention-k30-seed43 | no disponible | no disponible | no disponible | Hugging Face, 14 descargas, 0 likes |
+| Llama 3.2 3B (referencia externa) | 3.210 millones | 128.000 tokens | Llama 3.2 Community License | Publico en Hugging Face, ampliamente utilizado |
+| Llama 3.1 8B (referencia externa) | 8.030 millones | 128.000 tokens | Llama 3.1 Community License | Publico en Hugging Face, ampliamente utilizado |
+| Qwen2.5 3B (referencia externa) | 3.090 millones | 32.768 tokens | Apache 2.0 | Publico en Hugging Face, ampliamente utilizado |
 
 ## Limitaciones y advertencias
 
@@ -85,9 +85,9 @@ No es posible establecer una comparativa fiable: se desconoce el numero de param
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/maxbhartman/anchor-removal-mmlu-tau0.6-attention-k30-seed43
+- Hugging Face: https://huggingface.co/maxbhartman/anchor-removal-mmlu-tau0.6-attention-k30-seed43
 - Paper asociado: no disponible
 - Blog o articulo tecnico: no disponible
 - Repositorio de codigo: no disponible
 - Demo o Space: no disponible
-- Perfil del autor en HuggingFace: https://huggingface.co/maxbhartman (no verificado en la informacion proporcionada)
+- Perfil del autor en Hugging Face: https://huggingface.co/maxbhartman (no verificado en la informacion proporcionada)

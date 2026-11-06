@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLM-4.7-Flash es un modelo de lenguaje del equipo GLM (Z.ai) presentado en la card original como el modelo MoE más fuerte de su clase, 30B-A3B, orientado a razonamiento, generación de código y tareas agénticas. Este repositorio concreto es una cuantización EXL3 3bpw (variante H4) publicada por dr-housemd, cuyo objetivo es reducir el consumo de VRAM manteniendo las capacidades del modelo original. En la información de HuggingFace aparecen 6.435.534.528 parámetros en los safetensors, una cifra que no coincide con la card original de 30B-A3B; esta discrepancia se documenta en la ficha para evitar errores de interpretación.
+GLM-4.7-Flash es un modelo de lenguaje del equipo GLM (Z.ai) presentado en la card original como el modelo MoE más fuerte de su clase, 30B-A3B, orientado a razonamiento, generación de código y tareas agénticas. Este repositorio concreto es una cuantización EXL3 3bpw (variante H4) publicada por dr-housemd, cuyo objetivo es reducir el consumo de VRAM manteniendo las capacidades del modelo original. En la información de Hugging Face aparecen 6.435.534.528 parámetros en los safetensors, una cifra que no coincide con la card original de 30B-A3B; esta discrepancia se documenta en la ficha para evitar errores de interpretación.
 
 El modelo destaca por su rendimiento en benchmarks de matemáticas, ciencia, código y uso de herramientas. Según los datos del autor, alcanza un 91,6 en AIME 25, un 75,2 en GPQA y un 59,2 en SWE-bench Verified, superando a Qwen3-30B-A3B-Thinking-2507 en varios escenarios. La cuantización EXL3 3bpw reduce el repositorio a 12,9 GB y permite desplegarlo en GPUs de consumo, aunque requiere un fork específico de exllamav3 con soporte para GLM-4.7-Flash.
 
@@ -74,8 +74,8 @@ Los benchmarks publicados corresponden al modelo original GLM-4.7-Flash, no a es
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | GLM-4.7-Flash (este repo) | 6.435.534.528 (safetensors); card original: 30B-A3B | no disponible | MIT (repo) | cuantización no oficial EXL3 |
-| Qwen3-30B-A3B-Thinking-2507 | 30B-A3B (deducido del nombre) | no disponible | no disponible | modelo oficial en HuggingFace |
-| GPT-OSS-20B | 20B (deducido del nombre) | no disponible | no disponible | modelo oficial en HuggingFace |
+| Qwen3-30B-A3B-Thinking-2507 | 30B-A3B (deducido del nombre) | no disponible | no disponible | modelo oficial en Hugging Face |
+| GPT-OSS-20B | 20B (deducido del nombre) | no disponible | no disponible | modelo oficial en Hugging Face |
 
 La comparación de rendimiento está en la tabla de benchmarks. GLM-4.7-Flash supera a Qwen3-30B-A3B-Thinking-2507 en GPQA, HLE, SWE-bench Verified, τ²-Bench y BrowseComp, mientras que Qwen3 queda por delante en LCB v6. GPT-OSS-20B es competitivo en AIME 25, pero queda por detrás en SWE-bench Verified y τ²-Bench.
 
@@ -91,7 +91,7 @@ La comparación de rendimiento está en la tabla de benchmarks. GLM-4.7-Flash su
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dr-housemd/GLM-4.7-Flash-exl3-3bpw-H4
+- Repositorio Hugging Face: https://huggingface.co/dr-housemd/GLM-4.7-Flash-exl3-3bpw-H4
 - Modelo original: https://huggingface.co/zai-org/GLM-4.7-Flash
 - Blog técnico de GLM-4.7: https://z.ai/blog/glm-4.7
 - Informe técnico (GLM-4.5): https://arxiv.org/abs/2508.06471

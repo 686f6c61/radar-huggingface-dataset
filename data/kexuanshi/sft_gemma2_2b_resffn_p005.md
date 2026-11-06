@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sft_gemma2_2b_resffn_p005` es un ajuste fino (SFT) del modelo Gemma 2 de 2.000 millones de parametros, publicado por el usuario KexuanShi en HuggingFace. El modelo se ha entrenado con la libreria TRL de HuggingFace mediante supervisión fina (supervised fine-tuning), y conserva la arquitectura transformer decoder-only propia de la familia Gemma 2. El nombre del repositorio sugiere una variante con alguna modificacion en la capa feed-forward ("resffn") y un identificador de configuracion ("p005"), aunque la model card no documenta estos detalles.
+`sft_gemma2_2b_resffn_p005` es un ajuste fino (SFT) del modelo Gemma 2 de 2.000 millones de parametros, publicado por el usuario KexuanShi en Hugging Face. El modelo se ha entrenado con la libreria TRL de Hugging Face mediante supervisión fina (supervised fine-tuning), y conserva la arquitectura transformer decoder-only propia de la familia Gemma 2. El nombre del repositorio sugiere una variante con alguna modificacion en la capa feed-forward ("resffn") y un identificador de configuracion ("p005"), aunque la model card no documenta estos detalles.
 
 El modelo tiene 2.614.341.888 parametros reales segun los pesos en safetensors, lo que lo situa en la categoria de modelos pequenos, aptos para inferencia en GPU de consumo. El repositorio ocupa 52,3 GB, un tamano desproporcionado para el numero de parametros, lo que indica que contiene multiples checkpoints o pesos en precision completa (fp32) ademas de los safetensors finales.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| sft_gemma2_2b_resffn_p005 | 2,61 B | no disponible | no disponible | HuggingFace (repo publico) |
-| Gemma 2 2B (base) | 2,6 B | 8.192 tokens (segun documentacion publica de Gemma 2) | Gemma Terms of Use | HuggingFace, Kaggle |
-| Qwen2.5 1.5B | 1,5 B | 32.768 tokens (segun documentacion publica) | Apache 2.0 | HuggingFace |
-| Phi-3-mini | 3,8 B | 4.096 tokens (segun documentacion publica) | MIT | HuggingFace |
+| sft_gemma2_2b_resffn_p005 | 2,61 B | no disponible | no disponible | Hugging Face (repo publico) |
+| Gemma 2 2B (base) | 2,6 B | 8.192 tokens (segun documentacion publica de Gemma 2) | Gemma Terms of Use | Hugging Face, Kaggle |
+| Qwen2.5 1.5B | 1,5 B | 32.768 tokens (segun documentacion publica) | Apache 2.0 | Hugging Face |
+| Phi-3-mini | 3,8 B | 4.096 tokens (segun documentacion publica) | MIT | Hugging Face |
 
 Nota: los datos de los modelos comparativos provienen de su documentacion publica y no de la informacion proporcionada en esta busqueda; se incluyen como referencia de categoria.
 
@@ -83,7 +83,7 @@ Nota: los datos de los modelos comparativos provienen de su documentacion public
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/KexuanShi/sft_gemma2_2b_resffn_p005
+- Hugging Face: https://huggingface.co/KexuanShi/sft_gemma2_2b_resffn_p005
 - TRL (framework de entrenamiento): https://github.com/huggingface/trl
 - Documentacion de Gemma 2: no disponible en la informacion proporcionada
 - Paper o blog del autor: no disponible

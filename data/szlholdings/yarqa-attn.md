@@ -69,8 +69,8 @@ No se dispone de información sobre kernels de atención directamente comparable
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SZLHOLDINGS/YARQA-ATTN
+- Hugging Face: https://huggingface.co/SZLHOLDINGS/YARQA-ATTN
 - GitHub (fuente de verdad): https://github.com/szl-holdings/YARQA-ATTN
 - Repositorio CFD homónimo (no confundir): https://github.com/szl-holdings/yarqa
-- Perfil de la organización en HuggingFace: https://huggingface.co/SZLHOLDINGS/models
+- Perfil de la organización en Hugging Face: https://huggingface.co/SZLHOLDINGS/models
 - Laboratorio de inferencia en vivo (solo GGUF Khipu): https://huggingface.co/spaces/SZLHOLDINGS/szl-model-inference-lab

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`mhu22/qwen_lale_ogrenci_isleri` es un repositorio de pesos alojado en HuggingFace por el usuario `mhu22`, publicado el 22 de octubre de 2026 (fecha declarada en el Hub) y etiquetado con las librerías `transformers` y el formato `safetensors`. El nombre del repositorio combina la referencia a la familia Qwen con el término turco «öğrenci işleri» (asuntos de estudiantes), lo que sugiere un ajuste fino orientado a un asistente de gestión académica, aunque esta interpretación no está confirmada por ninguna documentación del autor.
+`mhu22/qwen_lale_ogrenci_isleri` es un repositorio de pesos alojado en Hugging Face por el usuario `mhu22`, publicado el 22 de octubre de 2026 (fecha declarada en el Hub) y etiquetado con las librerías `transformers` y el formato `safetensors`. El nombre del repositorio combina la referencia a la familia Qwen con el término turco «öğrenci işleri» (asuntos de estudiantes), lo que sugiere un ajuste fino orientado a un asistente de gestión académica, aunque esta interpretación no está confirmada por ninguna documentación del autor.
 
-La model card es la plantilla automática de HuggingFace y todos sus campos relevantes figuran como `[More Information Needed]`: no se declara el modelo base, el número de parámetros, la longitud de contexto, los idiomas, la licencia ni los datos de entrenamiento. Tampoco hay pipeline declarado, y el repositorio acumula 0 descargas y 0 «likes», por lo que no existe validación por parte de la comunidad.
+La model card es la plantilla automática de Hugging Face y todos sus campos relevantes figuran como `[More Information Needed]`: no se declara el modelo base, el número de parámetros, la longitud de contexto, los idiomas, la licencia ni los datos de entrenamiento. Tampoco hay pipeline declarado, y el repositorio acumula 0 descargas y 0 «likes», por lo que no existe validación por parte de la comunidad.
 
 El único dato cuantitativo objetivo es el tamaño del repositorio, en torno a 0,1 GB. En pesos `safetensors` en fp16, ese volumen equivaldría a del orden de 50 millones de parámetros, o a un adaptador LoRA sobre un modelo mayor; no hay información para decidir entre ambas posibilidades. Cualquier evaluación de idoneidad para producción debe hacerse, por tanto, mediante inspección directa de los ficheros y una batería de pruebas propia.
 
@@ -27,7 +27,7 @@ El único dato cuantitativo objetivo es el tamaño del repositorio, en torno a 0
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura. La model card no indica si se trata de un transformer denso, un modelo de mezcla de expertos, una arquitectura híbrida o un adaptador. Los metadatos del Hub únicamente confirman la librería de carga (`transformers`) y el formato de serialización (`safetensors`). El tag `arxiv:1910.09700` que aparece en el repositorio corresponde al artículo de Lacoste et al. sobre estimación de emisiones de carbono, citado en la plantilla por defecto de HuggingFace; no es un paper del modelo y no aporta información técnica sobre él.
+No se ha publicado información sobre la arquitectura. La model card no indica si se trata de un transformer denso, un modelo de mezcla de expertos, una arquitectura híbrida o un adaptador. Los metadatos del Hub únicamente confirman la librería de carga (`transformers`) y el formato de serialización (`safetensors`). El tag `arxiv:1910.09700` que aparece en el repositorio corresponde al artículo de Lacoste et al. sobre estimación de emisiones de carbono, citado en la plantilla por defecto de Hugging Face; no es un paper del modelo y no aporta información técnica sobre él.
 
 Tampoco hay datos sobre el corpus de entrenamiento, el número de tokens procesados, la composición del dataset ni la existencia de fases de ajuste (SFT, RLHF o DPO). El término «lale» del identificador no se explica en ningún momento. Dado el tamaño del repositorio (0,1 GB), una hipótesis plausible es que se trate de un adaptador LoRA o de un modelo de pequeña escala, pero es una inferencia a partir del peso de los ficheros y no una confirmación.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada: no disponible con exactitud, porque se desconoce el número de parámetros. Un repositorio de 0,1 GB en fp16 implica del orden de 50 millones de parámetros y cabría en menos de 1 GB de VRAM en fp16; si los ficheros fuesen un adaptador LoRA, la VRAM vendría determinada por el modelo base, que no se declara.
 - GPU recomendadas: cualquier GPU consumer con 4 GB o más (GTX 1650, RTX 3050, RTX 4060) sería suficiente para un modelo de ese orden; para un eventual modelo base de 7B harían falta 16 GB en fp16 (RTX 4090, A100 40 GB) o 6-8 GB con cuantización de 4 bits.
 - Cabe en GPU consumer: sí, con alta probabilidad, dado el tamaño del repositorio; la afirmación debe verificarse cargando los pesos.
-- Opciones de despliegue: `transformers` de forma nativa; el tag `endpoints_compatible` permite desplegarlo en HuggingFace Inference Endpoints. No hay ficheros GGUF publicados, por lo que llama.cpp u Ollama requerirían una conversión previa. No se ha validado su compatibilidad con vLLM o TGI.
+- Opciones de despliegue: `transformers` de forma nativa; el tag `endpoints_compatible` permite desplegarlo en Hugging Face Inference Endpoints. No hay ficheros GGUF publicados, por lo que llama.cpp u Ollama requerirían una conversión previa. No se ha validado su compatibilidad con vLLM o TGI.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -72,10 +72,10 @@ No se puede establecer una comparación rigurosa porque se desconocen los parám
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| mhu22/qwen_lale_ogrenci_isleri | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
-| Qwen2.5-1.5B-Instruct | 1,54 B | 32 768 tokens | Apache 2.0 | HuggingFace, ampliamente utilizado |
-| Qwen2.5-7B-Instruct | 7,61 B | 32 768 tokens (131 072 con escalado RoPE) | Apache 2.0 | HuggingFace, ampliamente utilizado |
-| Llama 3.1 8B Instruct | 8,03 B | 128 000 tokens | Llama 3.1 Community License | HuggingFace, ampliamente utilizado |
+| mhu22/qwen_lale_ogrenci_isleri | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
+| Qwen2.5-1.5B-Instruct | 1,54 B | 32 768 tokens | Apache 2.0 | Hugging Face, ampliamente utilizado |
+| Qwen2.5-7B-Instruct | 7,61 B | 32 768 tokens (131 072 con escalado RoPE) | Apache 2.0 | Hugging Face, ampliamente utilizado |
+| Llama 3.1 8B Instruct | 8,03 B | 128 000 tokens | Llama 3.1 Community License | Hugging Face, ampliamente utilizado |
 
 ## Limitaciones y advertencias
 
@@ -92,8 +92,8 @@ No se puede establecer una comparación rigurosa porque se desconocen los parám
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mhu22/qwen_lale_ogrenci_isleri
-- Organización Qwen en HuggingFace: https://huggingface.co/Qwen
+- Repositorio en Hugging Face: https://huggingface.co/mhu22/qwen_lale_ogrenci_isleri
+- Organización Qwen en Hugging Face: https://huggingface.co/Qwen
 - Sitio oficial de Qwen: https://qwen.ai/home
 - Artículo citado en el tag `arxiv:1910.09700` (Lacoste et al., estimación de emisiones): https://arxiv.org/abs/1910.09700
 - Proyecto homónimo no relacionado en GitHub: https://github.com/bbulutberat/ogrenci_isleri_ai_asistani

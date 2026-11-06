@@ -4,7 +4,7 @@
 
 LLM Twin Arena no es un modelo de lenguaje en sí, sino una infraestructura de torneo de agentes diseñada para enfrentar a varios sistemas de IA en combates head-to-head. El proyecto, publicado por el usuario Snapkitty, presenta cuatro agentes (BOB, METATRON, ENKI y TITAN) que compiten en dominios de matemáticas, código y derecho, con un juez automático denominado ERE (Entropic Resonance Evaluation) que aplica un filtro de verificación en cinco pasos. El ganador de cada combate se sella en una cadena WORM, un mecanismo de registro inmutable.
 
-La model card describe un sistema de evaluación sin intervención humana, donde "las matemáticas deciden" el resultado. Sin embargo, no se proporcionan detalles técnicos sobre los modelos subyacentes, arquitectura, parámetros o datos de entrenamiento. El repositorio en HuggingFace no contiene pesos ni artefactos descargables, y la licencia declarada es una "Sovereign Source License v1.0" con copyright de Ahmad Ali Parr, lo que sugiere restricciones de uso poco convencionales.
+La model card describe un sistema de evaluación sin intervención humana, donde "las matemáticas deciden" el resultado. Sin embargo, no se proporcionan detalles técnicos sobre los modelos subyacentes, arquitectura, parámetros o datos de entrenamiento. El repositorio en Hugging Face no contiene pesos ni artefactos descargables, y la licencia declarada es una "Sovereign Source License v1.0" con copyright de Ahmad Ali Parr, lo que sugiere restricciones de uso poco convencionales.
 
 En el momento de redactar esta ficha, el proyecto tiene cero descargas y cero likes, y no se ha publicado ninguna documentación técnica adicional más allá de la model card. Por tanto, esta ficha se basa exclusivamente en la información disponible en el repositorio y en la descripción del autor.
 
@@ -56,7 +56,7 @@ No se dispone de informacion sobre requisitos de hardware. Al no publicarse peso
 
 ## Comparativa con modelos similares
 
-No disponible. No se conocen proyectos comparables en el ecosistema de HuggingFace que ofrezcan una infraestructura de torneo de agentes con las mismas caracteristicas. Al no tratarse de un modelo LLM convencional, no es posible compararlo con alternativas como Llama, Mistral o Qwen.
+No disponible. No se conocen proyectos comparables en el ecosistema de Hugging Face que ofrezcan una infraestructura de torneo de agentes con las mismas caracteristicas. Al no tratarse de un modelo LLM convencional, no es posible compararlo con alternativas como Llama, Mistral o Qwen.
 
 ## Limitaciones y advertencias
 
@@ -69,5 +69,5 @@ No disponible. No se conocen proyectos comparables en el ecosistema de HuggingFa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Snapkitty/llm-twin-arena
+- Repositorio Hugging Face: https://huggingface.co/Snapkitty/llm-twin-arena
 - Canary de Sovereign Analytics: https://sovereign-analytics.snapkittywest.workers.dev/canary/llm-twin-arena

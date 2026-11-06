@@ -6,7 +6,7 @@ Qwen3.8-27B-SLQ-EAR98.5 es un checkpoint cuantizado del modelo Qwen/Qwen3.8-27B,
 
 El interés práctico es doble: por un lado, es una alternativa a la cuantización FP8 oficial (30,867 GB, EAR 97,71 %) y a esquemas de 3-4 bits mucho más agresivos (GSQ 3-bit con EAR 89,43 %, GGUF UD-Q4_K_XL con EAR 97,44 %); por otro, documenta una metodología de búsqueda de precisión por capa y por proyección, incluidas cabezas de atención seleccionadas, con mezcla de precisiones enteras, pesos BF16 residuales y activaciones en BF16.
 
-Conviene señalar una discrepancia importante en los metadatos: la ficha de HuggingFace reporta 7.978.947.312 parámetros totales según safetensors, mientras que el nombre del modelo y el modelo base indican 27B. No se dispone de información que resuelva esa contradicción, por lo que se refleja tal cual en las especificaciones. La licencia es Apache 2.0, heredada del modelo base.
+Conviene señalar una discrepancia importante en los metadatos: la ficha de Hugging Face reporta 7.978.947.312 parámetros totales según safetensors, mientras que el nombre del modelo y el modelo base indican 27B. No se dispone de información que resuelva esa contradicción, por lo que se refleja tal cual en las especificaciones. La licencia es Apache 2.0, heredada del modelo base.
 
 ## Especificaciones tecnicas
 
@@ -99,7 +99,7 @@ La comparacion relevante es interna a la familia Qwen3.8-27B, ya que todos los c
 
 ## Enlaces
 
-- [Modelo en HuggingFace: kaitchup/Qwen3.8-27B-SLQ-EAR98.5](https://huggingface.co/kaitchup/Qwen3.8-27B-SLQ-EAR98.5)
+- [Modelo en Hugging Face: kaitchup/Qwen3.8-27B-SLQ-EAR98.5](https://huggingface.co/kaitchup/Qwen3.8-27B-SLQ-EAR98.5)
 - [Modelo base: Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [Version FP8 oficial: Qwen/Qwen3.8-27B-FP8](https://huggingface.co/Qwen/Qwen3.8-27B-FP8)
 - [Checkpoint AutoRound: kaitchup/Qwen3.8-27B-hum-high-MTP-17.7GB](https://huggingface.co/kaitchup/Qwen3.8-27B-hum-high-MTP-17.7GB)

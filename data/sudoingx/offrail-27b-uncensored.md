@@ -85,10 +85,10 @@ Aceptacion de borradores en ejecuciones greedy (temperatura 0, top_k 1, 300 toke
 
 | Modelo | Parametros | Contexto | Formato y cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Offrail-27B-Uncensored (12G / 8G) | 27B | 131.072 tokens | GGUF PTQ1_0 ternario con cabecera MTP | apache-2.0 | HuggingFace, requiere fork de PrismML |
-| OS-Software/Ternary-Bonsai-2-27B-Uncensored-Heretic-GGUF | 27B | no disponible | GGUF ternario, sin cabecera MTP | no disponible | HuggingFace |
-| prism-ml/Ternary-Bonsai-2-27B-gguf | 27B | no disponible | GGUF ternario (cuerpo base de 5,95 GB, 1,75 bpw) | no disponible | HuggingFace |
-| Qwen/Qwen3.8-27B | 27B | no disponible | safetensors (fp16), segun el uso descrito de la cabecera MTP | no disponible | HuggingFace |
+| Offrail-27B-Uncensored (12G / 8G) | 27B | 131.072 tokens | GGUF PTQ1_0 ternario con cabecera MTP | apache-2.0 | Hugging Face, requiere fork de PrismML |
+| OS-Software/Ternary-Bonsai-2-27B-Uncensored-Heretic-GGUF | 27B | no disponible | GGUF ternario, sin cabecera MTP | no disponible | Hugging Face |
+| prism-ml/Ternary-Bonsai-2-27B-gguf | 27B | no disponible | GGUF ternario (cuerpo base de 5,95 GB, 1,75 bpw) | no disponible | Hugging Face |
+| Qwen/Qwen3.8-27B | 27B | no disponible | safetensors (fp16), segun el uso descrito de la cabecera MTP | no disponible | Hugging Face |
 
 La diferencia funcional medible entre Offrail-27B y su cuerpo base es la cabecera MTP injertada: +23% de throughput en el fichero de 12 GB y +20% en el de 8 GB, con salida greedy identica y sin coste de velocidad atribuible al ajuste sin censura (41,4 tok/s con la cabecera desactivada, frente a 41,3 del injerto base citado en la model card). No hay datos de benchmarks de calidad que permitan comparar con alternativas de 27B no ternarias.
 
@@ -103,11 +103,11 @@ La diferencia funcional medible entre Offrail-27B y su cuerpo base es la cabecer
 - Idiomas soportados sin declarar: no hay lista de idiomas en la model card, por lo que el rendimiento fuera del ingles es desconocido.
 - Procedencia compuesta: el cuerpo es un merge descrito por su autor como aproximado, la cabecera MTP es de Qwen y el desbloqueo es de OS-Software; la licencia declarada del repositorio es apache-2.0, pero no se detallan en la informacion disponible las condiciones de los componentes de terceros ni las restricciones de uso comercial de los modelos base.
 - Adopcion nula en el momento de la consulta: 0 descargas y 0 likes, repositorio creado y actualizado el 15 de octubre de 2026.
-- Fecha de creacion inusual (2026) tal como figura en los metadatos de HuggingFace.
+- Fecha de creacion inusual (2026) tal como figura en los metadatos de Hugging Face.
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/sudoingx/Offrail-27B-Uncensored
+- Hugging Face del modelo: https://huggingface.co/sudoingx/Offrail-27B-Uncensored
 - Bundle precompilado con kernel y correcciones MTP: https://huggingface.co/sudoingx/Ternary-Bonsai-2-27B-PTQ1_0-MTP-GGUF
 - Modelo base sin censura: https://huggingface.co/OS-Software/Ternary-Bonsai-2-27B-Uncensored-Heretic-GGUF
 - Modelo base ternario: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf

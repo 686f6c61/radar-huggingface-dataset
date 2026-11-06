@@ -83,7 +83,7 @@ No se dispone de información suficiente para comparar con otros modelos de sent
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/remehostingservices/finbert-finance-news-sentiment
+- Modelo en Hugging Face: https://huggingface.co/remehostingservices/finbert-finance-news-sentiment
 - Dataset de entrenamiento: https://huggingface.co/datasets/remehostingservices/finance-news-sentiment-35k
 - Repositorio de scripts de entrenamiento y etiquetado: https://github.com/RemeDegen/finance-news-sentiment
 - Paper del modelo base: Araci, D. (2019). *FinBERT: Financial Sentiment Analysis with Pre-trained Language Models.* arXiv:1908.10063 — https://arxiv.org/abs/1908.10063

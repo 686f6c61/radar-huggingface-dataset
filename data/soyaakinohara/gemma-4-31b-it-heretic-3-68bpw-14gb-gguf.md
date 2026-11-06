@@ -80,7 +80,7 @@ La principal diferencia entre este modelo y el original es la cuantizacion de pr
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/soyaakinohara/gemma-4-31b-it-heretic-3.68bpw-14gb.gguf)
+- [Modelo en Hugging Face](https://huggingface.co/soyaakinohara/gemma-4-31b-it-heretic-3.68bpw-14gb.gguf)
 - [Modelo base DavidAU](https://huggingface.co/DavidAU/gemma-4-31B-it-The-DECKARD-HERETIC-UNCENSORED-Thinking)
 - [Modelo original Google](https://huggingface.co/google/gemma-4-31B-it)
 - [llama.cpp](https://github.com/ggml-org/llama.cpp)
@@ -168,7 +168,7 @@ La principal diferencia con el modelo original es la cuantizacion de 3.68 bpw, q
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/soyaakinohara/gemma-4-31b-it-heretic-3.68bpw-14gb.gguf)
+- [Modelo en Hugging Face](https://huggingface.co/soyaakinohara/gemma-4-31b-it-heretic-3.68bpw-14gb.gguf)
 - [Modelo base - DavidAU](https://huggingface.co/DavidAU/gemma-4-31B-it-The-DECKARD-HERETIC-UNCENSORED-Thinking)
 - [Modelo original - Google](https://huggingface.co/google/gemma-4-31B-it)
 - [llama.cpp](https://github.com/ggml-org/llama.cpp)

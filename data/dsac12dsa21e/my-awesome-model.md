@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un checkpoint publicado por el usuario DSAC12DSA21E en HuggingFace bajo licencia MIT. Segun su model card, se trata del mejor checkpoint extraido de una ejecucion de entrenamiento propia: se evaluaron todos los checkpoints bajo `checkpoints/step_*` con una suite de 15 benchmarks y se selecciono `checkpoints/step_1000` por obtener la puntuacion media ponderada mas alta (0.709). No se documenta ni el proceso de entrenamiento, ni los datos utilizados, ni el numero de parametros.
+MyAwesomeModel es un checkpoint publicado por el usuario DSAC12DSA21E en Hugging Face bajo licencia MIT. Segun su model card, se trata del mejor checkpoint extraido de una ejecucion de entrenamiento propia: se evaluaron todos los checkpoints bajo `checkpoints/step_*` con una suite de 15 benchmarks y se selecciono `checkpoints/step_1000` por obtener la puntuacion media ponderada mas alta (0.709). No se documenta ni el proceso de entrenamiento, ni los datos utilizados, ni el numero de parametros.
 
 El repositorio esta etiquetado con `transformers`, `pytorch`, `bert`, `feature-extraction` y `endpoints_compatible`, lo que sugiere una arquitectura tipo BERT orientada a extraccion de caracteristicas. Sin embargo, los benchmarks reportados en la model card (generacion de codigo, dialogo, escritura creativa, matemáticas) corresponden a tareas generativas, lo que entra en contradiccion con el pipeline declarado. Esta discrepancia no esta resuelta en la informacion disponible.
 
@@ -92,7 +92,7 @@ Advertencias sobre estos datos: los nombres de benchmark son genericos y no corr
 - VRAM estimada para inferencia: no disponible. Al desconocerse el numero de parametros no es posible estimar requisitos de memoria por cuantizacion.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible.
-- Opciones de despliegue: el repositorio esta etiquetado como `endpoints_compatible` y usa `transformers` con `pytorch`, por lo que en principio seria desplegable con las herramientas estandar del ecosistema (por ejemplo, pipelines de `transformers` o un endpoint de HuggingFace). No se confirma compatibilidad con vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: el repositorio esta etiquetado como `endpoints_compatible` y usa `transformers` con `pytorch`, por lo que en principio seria desplegable con las herramientas estandar del ecosistema (por ejemplo, pipelines de `transformers` o un endpoint de Hugging Face). No se confirma compatibilidad con vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput: no disponible.
 - Nota critica: el repositorio figura con 0.0 GB de tamano, por lo que es probable que los pesos no esten realmente publicados y que cualquier intento de despliegue falle al cargar el modelo.
 
@@ -115,7 +115,7 @@ No disponible. No se dispone del numero de parametros, la longitud de contexto n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DSAC12DSA21E/my-awesome-model
+- Modelo en Hugging Face: https://huggingface.co/DSAC12DSA21E/my-awesome-model
 - Licencia MIT referenciada en la model card: fichero `LICENSE` dentro del repositorio del modelo.
 - Script de evaluacion citado por el autor: `evaluation/eval.py` (ruta del espacio de trabajo del autor, no publicada como enlace).
 - Paper, blog, repositorio de codigo o demo: no disponible. No se ha encontrado ningun enlace relevante en la busqueda web.

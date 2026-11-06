@@ -102,7 +102,7 @@ No se dispone de otros repositorios publicos de lentes jacobianas por checkpoint
 | Fidelidad esperada | Estimacion unica y ruidosa; diferencias < 0,07 de CKA no resolubles | Aproximacion de baja fidelidad en capas tempranas | Referencia publicada |
 | Cobertura de checkpoints | 10 (6 de etapa 1, base, SFT, DPO, Think) | Cualquier checkpoint | No disponible |
 | Licencia | Apache-2.0 | No aplica | No disponible |
-| Disponibilidad | Publicado en HuggingFace, 0 descargas y 0 likes en la fecha de consulta | Universal | Codigo en GitHub |
+| Disponibilidad | Publicado en Hugging Face, 0 descargas y 0 likes en la fecha de consulta | Universal | Codigo en GitHub |
 
 ## Limitaciones y advertencias
 
@@ -119,7 +119,7 @@ No se dispone de otros repositorios publicos de lentes jacobianas por checkpoint
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/senku21x/olmo3-32b-jacobian-lens-checkpoints
+- Repositorio en Hugging Face: https://huggingface.co/senku21x/olmo3-32b-jacobian-lens-checkpoints
 - Implementacion de referencia de lentes jacobianas de Anthropic: https://github.com/anthropics/jacobian-lens
 - Modelo base OLMo-3-1125-32B: https://huggingface.co/allenai/Olmo-3-1125-32B
 - OLMo-3-32B-Think-SFT: https://huggingface.co/allenai/Olmo-3-32B-Think-SFT

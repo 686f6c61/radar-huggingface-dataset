@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un ajuste fino (fine-tune) de `meta-llama/Llama-3.2-3B-Instruct`, publicado por el usuario GMorgulis en HuggingFace. Se trata de una variante experimental entrenada mediante supervisión directa (SFT) utilizando la librería TRL de HuggingFace. El nombre del repositorio sugiere parámetros de entrenamiento específicos como una tasa de aprendizaje de 5e-6 y un valor de "STEER" de 0.88125, aunque no se documenta su significado exacto.
+Este modelo es un ajuste fino (fine-tune) de `meta-llama/Llama-3.2-3B-Instruct`, publicado por el usuario GMorgulis en Hugging Face. Se trata de una variante experimental entrenada mediante supervisión directa (SFT) utilizando la librería TRL de Hugging Face. El nombre del repositorio sugiere parámetros de entrenamiento específicos como una tasa de aprendizaje de 5e-6 y un valor de "STEER" de 0.88125, aunque no se documenta su significado exacto.
 
 El modelo está pensado como una iteración sobre el instruct base de Llama 3.2 de 3B parámetros, orientado a tareas de diálogo y generación de texto. Su relevancia radica en ser un ejemplo de fine-tuning accesible para desarrolladores que buscan adaptar modelos pequeños a dominios concretos, aunque la información pública disponible es muy limitada y no incluye detalles sobre el dataset de entrenamiento, la licencia o los resultados de evaluación.
 
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - VRAM estimada: no disponible. Dado que el tamaño del repositorio es de 0.2 GB, es probable que el modelo tenga un peso reducido, pero no se especifica la cuantización.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no confirmada, aunque por el tamaño probablemente sí, pero sin datos oficiales.
-- Opciones de despliegue: se menciona compatibilidad con `transformers` y `endpoints_compatible`, por lo que podría usarse con pipelines de HuggingFace, vLLM u Ollama, pero no se detalla.
+- Opciones de despliegue: se menciona compatibilidad con `transformers` y `endpoints_compatible`, por lo que podría usarse con pipelines de Hugging Face, vLLM u Ollama, pero no se detalla.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -68,7 +68,7 @@ No se dispone de información suficiente para realizar una comparativa fiable. E
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GMorgulis/Llama-3.2-3B-Instruct-cat-itblr-lr5e-6-STEER0.88125-ft4.42
+- Modelo en Hugging Face: https://huggingface.co/GMorgulis/Llama-3.2-3B-Instruct-cat-itblr-lr5e-6-STEER0.88125-ft4.42
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Otros fine-tunes del mismo autor: 

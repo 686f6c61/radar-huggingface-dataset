@@ -121,7 +121,7 @@ No se identifican en la informacion disponible modelos de produccion comparables
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/inference-optimization/GLM-4.7-Flash-0.82B-MTP-PR3225
+- Modelo en Hugging Face: https://huggingface.co/inference-optimization/GLM-4.7-Flash-0.82B-MTP-PR3225
 - Modelo *upstream* de arquitectura y tokenizador: https://huggingface.co/zai-org/GLM-4.7-Flash
 - Revision concreta del modelo *upstream*: https://huggingface.co/zai-org/GLM-4.7-Flash/tree/7dd20894a642a0aa287e9827cb1a1f7f91386b67
 - Pull request de LLM Compressor: https://github.com/vllm-project/llm-compressor/pull/3225

@@ -70,14 +70,14 @@ Rifa-Nano se diferencia por su enfoque en bengali y banglish, algo poco comun en
 - Riesgo de alucinacion: elevado en modelos pequenos, especialmente en tareas complejas o de razonamiento. Se recomienda validar las respuestas en produccion.
 - Limitaciones de contexto: aunque soporta 32K tokens, la calidad de atencion a contextos muy largos puede degradarse en un modelo de 0.5B.
 - Limitaciones de idioma: el modelo esta optimizado para bengali, ingles y banglish; su rendimiento en otros idiomas puede ser inferior.
-- Restricciones de licencia: Apache-2.0 permite uso comercial, pero se debe verificar la licencia del repo original (no especificada en HuggingFace) y la del modelo base Qwen2.5 (Apache-2.0).
+- Restricciones de licencia: Apache-2.0 permite uso comercial, pero se debe verificar la licencia del repo original (no especificada en Hugging Face) y la del modelo base Qwen2.5 (Apache-2.0).
 - Cuantizacion Q3_K_M: puede provocar perdida de calidad en la generacion. Para tareas criticas, se recomienda usar cuantizaciones superiores si estan disponibles.
 - No se dispone de informacion sobre el dataset de entrenamiento, lo que dificulta evaluar su robustez y posibles sesgos.
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/smshahbaj/Rifa-Nano-0.5B-GGUF
-- Repositorio HuggingFace (modelo original): https://huggingface.co/smshahbaj/Rifa-Nano-0.5B
+- Repositorio Hugging Face (GGUF): https://huggingface.co/smshahbaj/Rifa-Nano-0.5B-GGUF
+- Repositorio Hugging Face (modelo original): https://huggingface.co/smshahbaj/Rifa-Nano-0.5B
 - Repositorio alternativo GGUF (mradermacher): https://huggingface.co/mradermacher/Rifa-Nano-0.5B-GGUF
 - Ficha en LLM Explorer: https://llm-explorer.com/model/smshahbaj%2FRifa-Nano-0.5B,3FSHDb2V1j2rPQTBNgrRyD
 - Unsloth (herramienta de entrenamiento): https://github.com/unslothai/unsloth

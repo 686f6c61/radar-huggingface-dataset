@@ -87,6 +87,6 @@ La comparativa se basa en datos de la model card: esta cuantización es 2.05 GiB
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/malaiwah/Qwen3.8-27B-EXL3-K6-parity
+- Hugging Face: https://huggingface.co/malaiwah/Qwen3.8-27B-EXL3-K6-parity
 - Repositorio de referencia (mencionado en la model card): https://github.com/malaiwah/qwen38-27b-exl3
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B

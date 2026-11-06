@@ -4,7 +4,7 @@
 
 Arya-3B-MoE es un modelo fundacional de lenguaje de tipo Mixture-of-Experts nativo desarrollado por Chanakya Labs, presentado como una arquitectura de nueva generación que combina atención lineal, enrutamiento disperso equilibrado por cuantiles y predicción multi-token. Con un total de 3.000 millones de parámetros, de los cuales solo entre 0,8 y 1,0 mil millones se activan por token, el modelo está diseñado para ofrecer eficiencia computacional sin sacrificar capacidad de razonamiento. Su ventana de contexto alcanza los 65.536 tokens, lo que lo hace adecuado para tareas que requieren procesar documentos largos o conversaciones extensas.
 
-El modelo se publica bajo licencia Apache 2.0 y está orientado principalmente al inglés. Aunque el repositorio de HuggingFace registra cero descargas y cero likes, la model card describe innovaciones arquitectónicas relevantes como el mezclador híbrido de secuencias (6 capas Gated DeltaNet, 1 atención de recuperación dispersa y 1 atención global) y un núcleo MoE con 32 expertos enrutados más un experto compartido persistente. La implementación requiere `trust_remote_code=True` al cargarse con Transformers, lo que indica que el código de arquitectura se aloja en el propio repositorio.
+El modelo se publica bajo licencia Apache 2.0 y está orientado principalmente al inglés. Aunque el repositorio de Hugging Face registra cero descargas y cero likes, la model card describe innovaciones arquitectónicas relevantes como el mezclador híbrido de secuencias (6 capas Gated DeltaNet, 1 atención de recuperación dispersa y 1 atención global) y un núcleo MoE con 32 expertos enrutados más un experto compartido persistente. La implementación requiere `trust_remote_code=True` al cargarse con Transformers, lo que indica que el código de arquitectura se aloja en el propio repositorio.
 
 ## Especificaciones tecnicas
 
@@ -72,5 +72,5 @@ No se dispone de información sobre modelos directamente comparables en la misma
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Aniket789/Arya
+- Repositorio Hugging Face: https://huggingface.co/Aniket789/Arya
 - No se encontraron otros enlaces relevantes (papers, blogs o demos) en los resultados de búsqueda.

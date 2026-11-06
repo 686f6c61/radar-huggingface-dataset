@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Efficientformer for Multitask (identificador `michaeltaylowell/efficientformer-baseline`) es un repositorio experimental publicado en HuggingFace por el usuario michaeltaylowell. No se trata de un modelo entrenado ni de un checkpoint con resultados publicados, sino de un esqueleto de código que incluye una implementación propia de una arquitectura de la familia EfficientFormer, un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que el propio autor describe como checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests).
+Efficientformer for Multitask (identificador `michaeltaylowell/efficientformer-baseline`) es un repositorio experimental publicado en Hugging Face por el usuario michaeltaylowell. No se trata de un modelo entrenado ni de un checkpoint con resultados publicados, sino de un esqueleto de código que incluye una implementación propia de una arquitectura de la familia EfficientFormer, un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que el propio autor describe como checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests).
 
 El dato más relevante es su escala: el recuento real de parámetros del fichero safetensors es de 33.088 parámetros, es decir, un modelo de juguete orientado a inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. El autor indica explícitamente que la variante incluida es «nano», con atención estándar, fusión con compuertas (gated fusion), activación GELU y normalización LayerNorm, y que los valores por defecto (SGD con warmup lineal) son puntos de partida del script, no evidencia de una ejecución finalizada.
 
@@ -55,7 +55,7 @@ Una innovación técnica destacable del repositorio es de tipo ingeniería más 
 - Punto de partida para fine-tuning propio: al ser un esqueleto con `config.json` y `training_args.json` versionados, un equipo puede fijar la receta como baseline reproducible y sustituir únicamente los datos y las cabezas de tarea.
 - Integración en pruebas de regresión de CI: por su tamaño mínimo, puede incluirse en la batería de tests de un repositorio para detectar roturas en la carga de checkpoints o en la serialización safetensors sin consumir GPU.
 - Comparación de metodologías de evaluación: la model card propone un protocolo concreto (conjunto de validación específico de la tarea, métrica reportada en al menos tres semillas y baseline de capacidad equivalente), útil como plantilla de evaluación para otros experimentos del mismo equipo.
-- Docencia y formación interna: sirve para ilustrar la estructura de un repositorio de modelo en HuggingFace (config, training args, pesos, script de evaluación) sin la complejidad de un modelo grande.
+- Docencia y formación interna: sirve para ilustrar la estructura de un repositorio de modelo en Hugging Face (config, training args, pesos, script de evaluación) sin la complejidad de un modelo grande.
 - Prototipado de arquitecturas multitarea con fusión: la configuración de gated fusion puede reutilizarse como bloque de partida en investigaciones sobre combinación de ramas o modalidades, siempre que se entrene posteriormente.
 - Auditoría de licencias y cumplimiento: al estar bajo MIT y no depender de pesos preentrenados de terceros, permite revisar el flujo completo de un modelo propio en entornos con restricciones de licencia, verificando aparte los términos de los datos externos que se empleen.
 
@@ -77,7 +77,7 @@ La información proporcionada no incluye modelos comparables con datos verificab
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| efficientformer-baseline (este repo) | 33.088 (recuento real del safetensors) | no disponible | sin benchmark reclamado | MIT | publico en HuggingFace |
+| efficientformer-baseline (este repo) | 33.088 (recuento real del safetensors) | no disponible | sin benchmark reclamado | MIT | publico en Hugging Face |
 | EfficientFormer L1 / L3 / L7 (familia original) | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 | MobileViT / DeiT-Tiny (backbones ligeros alternativos) | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 
@@ -90,13 +90,13 @@ La información proporcionada no incluye modelos comparables con datos verificab
 - Restricciones de idioma y de contexto: no declaradas. No hay evidencia de soporte multilingüe ni de una ventana de contexto, ya que no se describe una tarea de lenguaje.
 - Licencia MIT: permite uso comercial, modificación y redistribución con atribución y sin garantía. No obstante, la propia model card recuerda que deben revisarse por separado los términos de los datos de origen cuando el repositorio se utilice con conjuntos de datos externos.
 - Implementación personalizada: las APIs genéricas de carga automática requieren un adaptador explícito, lo que añade trabajo de integración y riesgo de incompatibilidades con herramientas estándar.
-- Metadatos inconsistentes: los campos `pipeline` e `idiomas` figuran como no disponibles en HuggingFace, y las fechas de creación y actualización registradas (2026-10-16) son posteriores a la fecha habitual de consulta, lo que conviene verificar antes de citar el repositorio.
+- Metadatos inconsistentes: los campos `pipeline` e `idiomas` figuran como no disponibles en Hugging Face, y las fechas de creación y actualización registradas (2026-10-16) son posteriores a la fecha habitual de consulta, lo que conviene verificar antes de citar el repositorio.
 - Escala no representativa: 33.088 parámetros está muy lejos de las variantes publicadas de EfficientFormer, por lo que cualquier resultado obtenido aquí no es extrapolable a la familia completa.
 - Los resultados de una futura versión entrenada deberán documentarse por separado de los valores por defecto que se distribuyen en este repositorio, tal como indica el autor.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/michaeltaylowell/efficientformer-baseline
+- Modelo en Hugging Face: https://huggingface.co/michaeltaylowell/efficientformer-baseline
 - Ficheros incluidos en el repositorio: `eval.py` (artefacto principal), `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Comprobación rápida documentada: `python eval.py --help`
 - Repositorio, paper o blog oficial de EfficientFormer: no disponible en la informacion proporcionada

@@ -98,7 +98,7 @@ Cualquier comparación numérica con la literatura resulta poco fiable porque la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ghostsas001/busi-breast-ultrasound-yolo
+- Modelo en Hugging Face: https://huggingface.co/ghostsas001/busi-breast-ultrasound-yolo
 - Modelo compañero (SigLIP): https://huggingface.co/ghostsas001/busi-breast-ultrasound-siglip
 - Repositorio GitHub con el análisis completo: https://github.com/Elghoudani/busi-breast-ultrasound-classification
 - Dataset BUSI, Al-Dhabyani et al., Data in Brief, 2020: https://doi.org/10.1016/j.dib.2019.104863

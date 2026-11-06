@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PressedAltF4/ppo-LunarLander-v3 es un agente de refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v3 de Gymnasium, empaquetado con la librería stable-baselines3 y publicado en HuggingFace. No es un modelo de lenguaje: es una política de control que aprende a pilotar un módulo lunar para aterrizar de forma estable entre dos banderas, gestionando empuje principal, propulsores de orientación y consumo de combustible.
+PressedAltF4/ppo-LunarLander-v3 es un agente de refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v3 de Gymnasium, empaquetado con la librería stable-baselines3 y publicado en Hugging Face. No es un modelo de lenguaje: es una política de control que aprende a pilotar un módulo lunar para aterrizar de forma estable entre dos banderas, gestionando empuje principal, propulsores de orientación y consumo de combustible.
 
 El modelo lo publica el usuario PressedAltF4 y sigue el formato estándar de los agentes exportados con huggingface_sb3, lo que permite cargarlo directamente con `load_from_hub` y evaluarlo con `stable_baselines3`. Su relevancia es fundamentalmente didáctica y de referencia: sirve como ejemplo mínimo reproducible de un pipeline de RL por refuerzo (entrenamiento, evaluación con recompensa media y publicación de artefactos) y como baseline para comparar variantes de PPO, DQN o A2C en un entorno clásico de control continuo.
 
@@ -66,7 +66,7 @@ No se han publicado otros resultados de benchmarks en la información disponible
 
 | Modelo / algoritmo | Parametros | Contexto | Rendimiento en LunarLander-v3 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PressedAltF4/ppo-LunarLander-v3 (PPO) | no disponible | no aplica | 270,60 ± 18,43 (no verificado) | no disponible | HuggingFace Hub |
+| PressedAltF4/ppo-LunarLander-v3 (PPO) | no disponible | no aplica | 270,60 ± 18,43 (no verificado) | no disponible | Hugging Face Hub |
 | PPO (stable-baselines3, configuración por defecto) | no disponible | no aplica | no disponible | MIT (librería) | Código abierto, requiere entrenamiento |
 | DQN (stable-baselines3) | no disponible | no aplica | no disponible | MIT (librería) | Código abierto, requiere entrenamiento |
 | A2C (stable-baselines3) | no disponible | no aplica | no disponible | MIT (librería) | Código abierto, requiere entrenamiento |
@@ -79,7 +79,7 @@ No se dispone de resultados verificados de alternativas sobre LunarLander-v3 en 
 - Rendimiento no verificado: el valor de recompensa media está marcado con `verified: false` y no se documentan episodios ni semillas de evaluación.
 - Model card incompleta: el bloque de uso contiene un `TODO`, por lo que no hay ejemplo de código funcional ni instrucciones de carga verificadas.
 - Tamaño del repositorio de 0,0 GB: conviene comprobar que los pesos están realmente subidos antes de depender del modelo.
-- Licencia no declarada: no hay autorización explícita de uso comercial; debe contactarse con el autor o asumir los términos por defecto de HuggingFace Hub.
+- Licencia no declarada: no hay autorización explícita de uso comercial; debe contactarse con el autor o asumir los términos por defecto de Hugging Face Hub.
 - Sin información de hiperparámetros ni de topología: difícil reproducir el entrenamiento o auditar el resultado.
 - Sesgos y alucinación: no aplica en el sentido de modelos generativos, pero sí existe riesgo de sobreajuste a la dinámica exacta del simulador y de fallo ante variaciones del entorno (cambios de gravedad, viento o parámetros físicos).
 - No apto para producción en tareas de lenguaje, visión, código o atención al cliente: su ámbito es el control en un simulador concreto.
@@ -87,7 +87,7 @@ No se dispone de resultados verificados de alternativas sobre LunarLander-v3 en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PressedAltF4/ppo-LunarLander-v3
+- Modelo en Hugging Face: https://huggingface.co/PressedAltF4/ppo-LunarLander-v3
 - Librería stable-baselines3: https://github.com/DLR-RM/stable-baselines3
 - Utilidad huggingface_sb3: https://github.com/huggingface/huggingface_sb3
 - Entorno LunarLander-v3 (Gymnasium): https://gymnasium.farama.org/environments/box2d/lunar_lander/

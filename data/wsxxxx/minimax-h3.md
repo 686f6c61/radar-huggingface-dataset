@@ -72,7 +72,7 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (ge
 
 ## Enlaces
 
-- Repositorio HuggingFace (reempaquetado): https://huggingface.co/wsxxxx/MiniMax-H3
+- Repositorio Hugging Face (reempaquetado): https://huggingface.co/wsxxxx/MiniMax-H3
 - Repositorio original del modelo: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Variante Turbo: https://huggingface.co/lightx2v/Minimax-h3-Turbo
 - Blog oficial de MiniMax: https://www.minimax.io/blog/minimax-h3

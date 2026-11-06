@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`praiselab-picuslab/benchmark-slm-fiven-phi-1_5-ctxq` es un adaptador LoRA publicado con la librería PEFT sobre el modelo base `microsoft/phi-1_5`. No se trata de un modelo entrenado para uso general, sino de un artefacto generado dentro de un banco de pruebas de modelos de lenguaje pequenos (SLM), a juzgar por sus etiquetas: `benchmark-slm`, `dataset-fiven`, `strategy-ctxq`. El repositorio no incluye ficha tecnica, no declara licencia y tiene el acceso restringido, por lo que su evaluacion solo es posible tras aceptar las condiciones en HuggingFace.
+`praiselab-picuslab/benchmark-slm-fiven-phi-1_5-ctxq` es un adaptador LoRA publicado con la librería PEFT sobre el modelo base `microsoft/phi-1_5`. No se trata de un modelo entrenado para uso general, sino de un artefacto generado dentro de un banco de pruebas de modelos de lenguaje pequenos (SLM), a juzgar por sus etiquetas: `benchmark-slm`, `dataset-fiven`, `strategy-ctxq`. El repositorio no incluye ficha tecnica, no declara licencia y tiene el acceso restringido, por lo que su evaluacion solo es posible tras aceptar las condiciones en Hugging Face.
 
 El modelo base, phi-1_5, es un transformer decoder-only de aproximadamente 1300 millones de parametros desarrollado por Microsoft Research y descrito en el informe tecnico "Textbooks Are All You Need II". Su interes reside en que demuestra que un modelo de ese tamano, entrenado con datos sinteticos de calidad tipo libro de texto, puede competir con modelos mucho mayores en tareas de razonamiento basico y generacion de codigo. Este adaptador concreto hereda esas capacidades y anade un ajuste fino del que no se publican detalles.
 
@@ -67,7 +67,7 @@ Las etiquetas del repositorio (`benchmark-slm`, `dataset-fiven`, `strategy-ctxq`
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicados |
 |---|---|---|---|---|---|
-| `praiselab-picuslab/benchmark-slm-fiven-phi-1_5-ctxq` | Adaptador LoRA sobre 1.3B | No disponible (base: 2048) | No disponible | Acceso restringido en HuggingFace | No disponible |
+| `praiselab-picuslab/benchmark-slm-fiven-phi-1_5-ctxq` | Adaptador LoRA sobre 1.3B | No disponible (base: 2048) | No disponible | Acceso restringido en Hugging Face | No disponible |
 | `microsoft/phi-1_5` (modelo base) | ~1.3B | 2048 | MIT | Publico | Si, en el informe tecnico del modelo |
 | `Qwen/Qwen2.5-1.5B` | ~1.5B | 32 768 | Apache 2.0 | Publico | Si, en la ficha del modelo |
 | `HuggingFaceTB/SmolLM2-1.7B` | ~1.7B | 8192 | Apache 2.0 | Publico | Si, en la ficha del modelo |
@@ -80,7 +80,7 @@ El adaptador queda en desventaja clara frente a las alternativas en contexto, li
 - Artefacto de benchmark: las etiquetas indican que es el resultado de una prueba comparativa, no un modelo depurado para produccion; no hay garantia de calidad ni de estabilidad de las salidas.
 - Ausencia total de documentacion: no se publican datos de entrenamiento, hiperparametros del LoRA, composicion del dataset `fiven` ni metodologia de evaluacion.
 - Licencia no declarada: al no especificarse, no se puede asumir uso comercial permitido, aunque el modelo base sea MIT. Es necesario contactar con el autor antes de cualquier uso en produccion.
-- Acceso restringido: requiere aceptar condiciones en HuggingFace, lo que anade friccion a la reproducibilidad y puede impedir el uso automatizado en pipelines.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face, lo que anade friccion a la reproducibilidad y puede impedir el uso automatizado en pipelines.
 - Riesgo elevado de alucinacion: el modelo base es de 1300 millones de parametros y fue entrenado con una mezcla intensiva en datos sinteticos, lo que favorece respuestas plausibles pero incorrectas, especialmente en datos factuales.
 - Sesgo linguistico: el ajuste declarado es solo en italiano y el modelo base esta dominado por el ingles; el rendimiento fuera de esos idiomas sera previsiblemente pobre.
 - Contexto corto: 2048 tokens en el base limita conversaciones multi-turno y el procesamiento de documentos largos.
@@ -90,8 +90,8 @@ El adaptador queda en desventaja clara frente a las alternativas en contexto, li
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/praiselab-picuslab/benchmark-slm-fiven-phi-1_5-ctxq
-- Modelo base en HuggingFace: https://huggingface.co/microsoft/phi-1_5
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/praiselab-picuslab/benchmark-slm-fiven-phi-1_5-ctxq
+- Modelo base en Hugging Face: https://huggingface.co/microsoft/phi-1_5
 - Informe tecnico del modelo base (Textbooks Are All You Need II: phi-1.5 technical report): https://arxiv.org/abs/2309.05463
 - Informe tecnico de phi-1 (Textbooks Are All You Need): https://arxiv.org/abs/2306.11644
 - Libreria PEFT: https://github.com/huggingface/peft

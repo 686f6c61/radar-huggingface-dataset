@@ -72,7 +72,7 @@ No se dispone de informacion suficiente para realizar una comparativa cuantitati
 
 ## Enlaces
 
-- [HuggingFace - oxfrug/Llama-3-8B-instruct-exl2](https://huggingface.co/oxfrug/Llama-3-8B-instruct-exl2)
+- [Hugging Face - oxfrug/Llama-3-8B-instruct-exl2](https://huggingface.co/oxfrug/Llama-3-8B-instruct-exl2)
 - [Modelo base - AI-Sweden-Models/Llama-3-8B-instruct](https://huggingface.co/AI-Sweden-Models/Llama-3-8B-instruct)
 - [Modelo base sin instruct - AI-Sweden-Models/Llama-3-8B](https://huggingface.co/AI-Sweden-Models/Llama-3-8B)
 - [Meta Llama 3 - meta-llama/Meta-Llama-3-8B](https://huggingface.co/meta-llama/Meta-Llama-3-8B)

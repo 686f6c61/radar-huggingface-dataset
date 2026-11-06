@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`svd-safety-llama2_7b_chat_up_basis_coeff_jbbresp13_finetuned_keep_0p60` es un checkpoint de investigación publicado por el usuario Jeesup en HuggingFace. Se trata de una compresión de `meta-llama/Llama-2-7b-chat-hf` mediante una técnica de factorización SVD con compartición de bases (*basis sharing*), con un objetivo declarado de eliminar el 40 % del presupuesto de parámetros factorizados. El resultado se ha plegado (*folded*) a pesos densos estándar de Transformers, por lo que el ratio de compresión describe el presupuesto de parámetros factorizados, no una reducción del tamaño de descarga.
+`svd-safety-llama2_7b_chat_up_basis_coeff_jbbresp13_finetuned_keep_0p60` es un checkpoint de investigación publicado por el usuario Jeesup en Hugging Face. Se trata de una compresión de `meta-llama/Llama-2-7b-chat-hf` mediante una técnica de factorización SVD con compartición de bases (*basis sharing*), con un objetivo declarado de eliminar el 40 % del presupuesto de parámetros factorizados. El resultado se ha plegado (*folded*) a pesos densos estándar de Transformers, por lo que el ratio de compresión describe el presupuesto de parámetros factorizados, no una reducción del tamaño de descarga.
 
 El problema que aborda es la medición del equilibrio entre seguridad y utilidad cuando se comprime un modelo alineado. Para ello, la calibración no se limita a texto genérico: combina 256 secuencias de WikiText con 13 secuencias de prompts dañinos y respuestas de rechazo del conjunto JBB (`jbb_harm_resp:13`, 26.624 tokens), es decir, calibración prompt+respuesta y no solo prompt. Tras la compresión se aplica una recuperación con LoRA únicamente sobre los coeficientes, manteniendo las bases congeladas, usando datos Alpaca-cleaned limpias durante dos épocas por pasada.
 
@@ -74,10 +74,10 @@ Condiciones declaradas: límite de generación de 512 tokens, sin topes de muest
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (`...coeff_jbbresp13_finetuned_keep_0p60`) | 6,74 B | No disponible | PPL WikiText-2 10,7141; AdvBench ASR 0,19 %; sobre-rechazo 57,24 % | Llama 2 | HuggingFace, 0 descargas |
-| `meta-llama/Llama-2-7b-chat-hf` (base) | ~6,74 B | 4096 tokens (según el modelo base) | No disponible en esta información | Llama 2 | HuggingFace, ampliamente desplegado |
-| `Jeesup/svd-safety-llama2_7b_chat_up_basis_coeff_finetuned_keep_0p80` | No disponible | No disponible | No disponible | Llama 2 | HuggingFace |
-| `Jeesup/svd-safety-llama2_7b_chat_remove_40_seed42` (SVD-LLM) | ~7 B (60 % de parámetros densos retenidos, según featherless.ai) | No disponible | No disponible | Llama 2 | HuggingFace |
+| Este checkpoint (`...coeff_jbbresp13_finetuned_keep_0p60`) | 6,74 B | No disponible | PPL WikiText-2 10,7141; AdvBench ASR 0,19 %; sobre-rechazo 57,24 % | Llama 2 | Hugging Face, 0 descargas |
+| `meta-llama/Llama-2-7b-chat-hf` (base) | ~6,74 B | 4096 tokens (según el modelo base) | No disponible en esta información | Llama 2 | Hugging Face, ampliamente desplegado |
+| `Jeesup/svd-safety-llama2_7b_chat_up_basis_coeff_finetuned_keep_0p80` | No disponible | No disponible | No disponible | Llama 2 | Hugging Face |
+| `Jeesup/svd-safety-llama2_7b_chat_remove_40_seed42` (SVD-LLM) | ~7 B (60 % de parámetros densos retenidos, según featherless.ai) | No disponible | No disponible | Llama 2 | Hugging Face |
 
 La comparación cuantitativa con el modelo base no puede completarse: no se han publicado en la información disponible las métricas del Llama-2-7b-chat original bajo el mismo arnés de evaluación, lo que impide atribuir las diferencias observadas a la compresión.
 
@@ -96,7 +96,7 @@ La comparación cuantitativa con el modelo base no puede completarse: no se han 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-llama2_7b_chat_up_basis_coeff_jbbresp13_finetuned_keep_0p60
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-llama2_7b_chat_up_basis_coeff_jbbresp13_finetuned_keep_0p60
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Variante hermana `keep_0p60` (sin corpus JBB): https://huggingface.co/Jeesup/svd-safety-llama2_7b_chat_up_basis_coeff_finetuned_keep_0p60
 - Variante hermana `keep_0p80`: https://huggingface.co/Jeesup/svd-safety-llama2_7b_chat_up_basis_coeff_finetuned_keep_0p80

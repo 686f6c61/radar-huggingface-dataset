@@ -66,7 +66,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dementor-research/sft_writingprompts_qwen3.6-27b_as_granite-4-h-small_seed42
+- Repositorio Hugging Face: https://huggingface.co/dementor-research/sft_writingprompts_qwen3.6-27b_as_granite-4-h-small_seed42
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B (no verificado)
 - Herramienta Tinker: https://thinkingmachines.ai/tinker/ (referencia en la model card)
 - No se proporcionan papers, blogs ni demos adicionales.

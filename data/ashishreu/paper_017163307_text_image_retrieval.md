@@ -61,7 +61,7 @@ No disponible. Este repositorio no es un modelo, por lo que no se puede comparar
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ashishreu/paper_017163307_text_image_retrieval
+- Repositorio Hugging Face: https://huggingface.co/ashishreu/paper_017163307_text_image_retrieval
 - Paper de entrenamiento de modelos de recuperacion de imagenes: https://arxiv.org/abs/2503.13045
 - Paper de Llama Nemotreiu Colembed: https://arxiv.org/abs/2507.05513
 - Articulo sobre sesgo en modelos text-image retrieval: https://dl.acm.org/doi/10.1145/3626772.3657750

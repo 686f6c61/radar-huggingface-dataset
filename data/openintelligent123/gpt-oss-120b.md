@@ -71,12 +71,12 @@ No se dispone de datos de benchmarks comparativos en la informacion disponible. 
 - La longitud de contexto no se ha publicado, lo que limita la planificacion de aplicaciones que requieran ventanas largas.
 - Riesgo de alucinacion inherente a los modelos de lenguaje; se recomienda validar las respuestas en aplicaciones criticas.
 - Aunque la licencia es Apache 2.0, OpenAI ha publicado una "gpt-oss usage policy" que puede imponer restricciones adicionales de uso; conviene revisarla antes del despliegue comercial.
-- El repositorio en HuggingFace (Openintelligent123/gpt-oss-120b) no es el oficial de OpenAI; se recomienda verificar la procedencia de los pesos antes de su uso en produccion.
+- El repositorio en Hugging Face (Openintelligent123/gpt-oss-120b) no es el oficial de OpenAI; se recomienda verificar la procedencia de los pesos antes de su uso en produccion.
 
 ## Enlaces
 
-- Repositorio HuggingFace (este): https://huggingface.co/Openintelligent123/gpt-oss-120b
-- Repositorio HuggingFace oficial de OpenAI: https://huggingface.co/openai/gpt-oss-120b
+- Repositorio Hugging Face (este): https://huggingface.co/Openintelligent123/gpt-oss-120b
+- Repositorio Hugging Face oficial de OpenAI: https://huggingface.co/openai/gpt-oss-120b
 - Paper (model card): https://arxiv.org/abs/2508.10925
 - Blog de OpenAI: https://openai.com/index/introducing-gpt-oss/
 - Model card oficial de OpenAI: https://openai.com/index/gpt-oss-model-card/

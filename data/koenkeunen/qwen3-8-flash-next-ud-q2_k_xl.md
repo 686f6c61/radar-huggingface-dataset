@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio KoenKeunen/Qwen3.8-Flash-Next-UD-Q2_K_XL es una publicación comunitaria alojada en HuggingFace que, por su identificador, corresponde a una cuantización en formato GGUF del modelo denominado Qwen3.8-Flash-Next, con el nivel de compresión Q2_K_XL y el esquema de cuantización dinámica "UD" (Unsloth Dynamic). El autor del repositorio es el usuario KoenKeunen, no un laboratorio con documentación pública asociada. La model card entregada no contiene más información que la declaración de licencia (`license: other`, `license_name: qwen-community`), sin descripción del modelo base, sin datos de entrenamiento y sin benchmarks.
+El repositorio KoenKeunen/Qwen3.8-Flash-Next-UD-Q2_K_XL es una publicación comunitaria alojada en Hugging Face que, por su identificador, corresponde a una cuantización en formato GGUF del modelo denominado Qwen3.8-Flash-Next, con el nivel de compresión Q2_K_XL y el esquema de cuantización dinámica "UD" (Unsloth Dynamic). El autor del repositorio es el usuario KoenKeunen, no un laboratorio con documentación pública asociada. La model card entregada no contiene más información que la declaración de licencia (`license: other`, `license_name: qwen-community`), sin descripción del modelo base, sin datos de entrenamiento y sin benchmarks.
 
 El problema que resuelve una publicación de este tipo es el de permitir la inferencia local de un modelo de gran tamaño en hardware con memoria limitada, a costa de una pérdida de precisión notable en cuantizaciones de 2 bits. Sin embargo, en este caso concreto no es posible verificar ni el número de parámetros del modelo base, ni su ventana de contexto, ni su arquitectura interna, ni los idiomas soportados, porque esa información no aparece en la model card ni en los resultados de búsqueda disponibles.
 
@@ -89,7 +89,7 @@ No disponible. No se puede establecer una comparativa rigurosa porque se descono
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/KoenKeunen/Qwen3.8-Flash-Next-UD-Q2_K_XL
+- Repositorio en Hugging Face: https://huggingface.co/KoenKeunen/Qwen3.8-Flash-Next-UD-Q2_K_XL
 - Enlace de licencia declarado en la model card: https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF/blob/main/LICENSE
 - Repositorio de referencia de la familia GGUF citada en la licencia (no verificado): https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF
 - Paper, blog o demo oficial: no disponibles.

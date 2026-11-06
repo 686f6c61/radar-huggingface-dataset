@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rotating-anomaly-detector` es un autoencoder convolucional 1-D publicado por Zainulabedin1 en HuggingFace, pensado para detección no supervisada de anomalías en señales de vibración de rodamientos. Se entrena solo con ventanas sanas y marca como anómalas aquellas que el modelo reconstruye peor, usando el error cuadrático medio de reconstrucción como puntuación.
+`rotating-anomaly-detector` es un autoencoder convolucional 1-D publicado por Zainulabedin1 en Hugging Face, pensado para detección no supervisada de anomalías en señales de vibración de rodamientos. Se entrena solo con ventanas sanas y marca como anómalas aquellas que el modelo reconstruye peor, usando el error cuadrático medio de reconstrucción como puntuación.
 
 El modelo tiene ~1,1 M de parámetros, recibe ventanas de 2048 muestras normalizadas por ventana y comprime la señal a un vector latente de 32 dimensiones. En el protocolo descrito sobre CWRU alcanza AUROC 1,000 y F1 0,9998 en un split concreto, con un umbral fijado en el percentil 95 de las puntuaciones normales de validación (0,3397).
 
@@ -21,9 +21,9 @@ Su relevancia práctica está en el mantenimiento predictivo y la monitorizació
 | Licencia | no disponible |
 | Formato de pesos | PyTorch state dict (`pytorch_model.bin`); la model card menciona `model.py` y `config.json` |
 | Tarea | Detección de anomalías no supervisada en señales de vibración de rodamientos |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Descargas / likes | 13 / 1 |
-| Tamaño del repositorio | 0,0 GB según HuggingFace |
+| Tamaño del repositorio | 0,0 GB según Hugging Face |
 
 ## Arquitectura y entrenamiento
 

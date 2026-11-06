@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `OrderDraconis/act_pickplace_leo_c100` es una política de imitación basada en Action Chunking with Transformers (ACT), un método de aprendizaje por imitación para control robótico que predice secuencias de acciones (chunks) en lugar de pasos individuales. Ha sido entrenado con el framework LeRobot de HuggingFace sobre el dataset `Pink-Viking/pick_and_place_combined`, que contiene 122 episodios teleoperados de una tarea de manipulación de tela: recoger la pieza superior de tela y colocarla en un cuadrado objetivo.
+El modelo `OrderDraconis/act_pickplace_leo_c100` es una política de imitación basada en Action Chunking with Transformers (ACT), un método de aprendizaje por imitación para control robótico que predice secuencias de acciones (chunks) en lugar de pasos individuales. Ha sido entrenado con el framework LeRobot de Hugging Face sobre el dataset `Pink-Viking/pick_and_place_combined`, que contiene 122 episodios teleoperados de una tarea de manipulación de tela: recoger la pieza superior de tela y colocarla en un cuadrado objetivo.
 
 El modelo está diseñado para un robot de tipo `bi_so_follower` con tres cámaras (dos en las pinzas y una cenital) y produce acciones de 12 dimensiones (probablemente posiciones o velocidades de articulaciones). Con 51,68 millones de parámetros, es una política compacta que se puede ejecutar en hardware modesto. Su relevancia radica en que demuestra cómo aplicar ACT a tareas de manipulación deformable (tela), un dominio donde los métodos tradicionales de control suelen fallar por la alta dimensionalidad del estado del objeto.
 
@@ -70,7 +70,7 @@ No se dispone de informacion sobre modelos comparables en la misma tarea o con l
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/OrderDraconis/act_pickplace_leo_c100
+- Repositorio del modelo en Hugging Face: https://huggingface.co/OrderDraconis/act_pickplace_leo_c100
 - Paper de ACT: https://huggingface.co/papers/2304.13705
 - Dataset de entrenamiento: https://huggingface.co/datasets/Pink-Viking/pick_and_place_combined
 - Visualizacion del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=Pink-Viking/pick_and_place_combined

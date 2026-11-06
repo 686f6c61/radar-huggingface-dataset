@@ -5,7 +5,7 @@
   "author": "gavinlaw",
   "url": "https://huggingface.co/gavinlaw/multimodal-understanding-ste-adapters",
   "created_at": "2026-11-05T03:22:21.000Z",
-  "updated_at": "2026-11-05T03:22:28.000Z",
+  "updated_at": "2026-11-05T19:13:14.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -24,8 +24,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 206021736,
-  "storage_human": "206 MB",
+  "storage_bytes": 2928508899,
+  "storage_human": "2.9 GB",
   "base_model": "Qwen/Qwen3-VL-4B-Instruct",
   "formats": [
     "safetensors"

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rghosh8/nemotron-mini-4b-instruct-opencoder-educational-instruct-seed-1234-G-8` es un adaptador LoRA publicado en HuggingFace por el usuario `rghosh8`, obtenido mediante fine-tuning con GRPO (Group Relative Policy Optimization) sobre el modelo base `nvidia/Nemotron-Mini-4B-Instruct`. No se trata por tanto de un modelo completo, sino de un conjunto de pesos de adaptador en formato PEFT/safetensors (0,1 GB de repositorio) que requiere descargar y cargar el modelo base de 4 000 millones de parametros para poder ejecutarse. El entrenamiento se ha realizado con TRL 1.5.1 sobre PEFT 0.18.0, Transformers 5.13.0 y PyTorch 2.8.0.
+`rghosh8/nemotron-mini-4b-instruct-opencoder-educational-instruct-seed-1234-G-8` es un adaptador LoRA publicado en Hugging Face por el usuario `rghosh8`, obtenido mediante fine-tuning con GRPO (Group Relative Policy Optimization) sobre el modelo base `nvidia/Nemotron-Mini-4B-Instruct`. No se trata por tanto de un modelo completo, sino de un conjunto de pesos de adaptador en formato PEFT/safetensors (0,1 GB de repositorio) que requiere descargar y cargar el modelo base de 4 000 millones de parametros para poder ejecutarse. El entrenamiento se ha realizado con TRL 1.5.1 sobre PEFT 0.18.0, Transformers 5.13.0 y PyTorch 2.8.0.
 
 El nombre del repositorio delata su naturaleza experimental: incluye las cadenas `opencoder`, `educational-instruct`, `seed-1234` y `G-8`, lo que sugiere una particion del entrenamiento (semilla 1234, generacion o grupo 8) dentro de una campana de experimentos vinculada a un taller de NeurIPS 2026, segun la URL de Weights & Biases enlazada en la model card. El objetivo declarado es el ajuste instruccional en el dominio educativo mediante aprendizaje por refuerzo, partiendo de un modelo base orientado a generacion de texto, rol conversacional y function calling.
 
@@ -54,7 +54,7 @@ No se documenta ninguna innovacion tecnica adicional (decodificacion especulativ
 - Prototipado de tutoria automatizada: con el modelo base cargado y el adaptador aplicado, se pueden generar explicaciones paso a paso para preguntas de ejercicios; requiere validacion humana por la ausencia de evaluacion.
 - Generacion de material didactico de baja criticidad: borradores de enunciados, pistas progresivas o resumentes de conceptos, en un entorno interno y con revision posterior.
 - Evaluacion comparativa de adaptadores: utilizar este checkpoint como uno de los brazos de un banco de pruebas frente al modelo base sin adaptar para medir la deriva introducida por GRPO.
-- Docencia y formacion tecnica: ejemplo practico de como sepublica un adaptador LoRA en HuggingFace y como se carga con `peft` y `transformers`.
+- Docencia y formacion tecnica: ejemplo practico de como sepublica un adaptador LoRA en Hugging Face y como se carga con `peft` y `transformers`.
 
 ## Benchmarks y rendimiento
 
@@ -99,7 +99,7 @@ La comparacion relevante es contra el propio modelo base sin adaptar: este repos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rghosh8/nemotron-mini-4b-instruct-opencoder-educational-instruct-seed-1234-G-8
+- Modelo en Hugging Face: https://huggingface.co/rghosh8/nemotron-mini-4b-instruct-opencoder-educational-instruct-seed-1234-G-8
 - Modelo base: https://huggingface.co/nvidia/Nemotron-Mini-4B-Instruct
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/rajat-ghosh11/neurips-2026-opencoder-training/runs/xnyaukad
 - Paper de GRPO (DeepSeekMath): https://huggingface.co/papers/2402.03300

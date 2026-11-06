@@ -65,10 +65,10 @@ No se han publicado resultados en MMLU, HumanEval, GSM8K ni otros benchmarks gen
 
 | Modelo | Parametros | Arquitectura | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3-4b-gdn-hybrid-1.2B-OPD (este) | 4,55 B | GDN-hybrid, 27/36 capas lineales | 16 K train / 32 K eval | MIT | HuggingFace |
-| Qwen/Qwen3-4B (base) | 4 B | Transformer denso, atencion completa | 32 K (ampliable a 131 K) | Apache 2.0 | HuggingFace, Ollama, vLLM |
-| arianraje/qwen3-4b-gdn-hybrid-stage2b-kd | 4,55 B | GDN-hybrid, misma conversion | 16 K | MIT | HuggingFace |
-| arianraje/qwen3-4b-gdn-hybrid-opd | 4,55 B | GDN-hybrid, misma conversion | 16 K | MIT | HuggingFace |
+| qwen3-4b-gdn-hybrid-1.2B-OPD (este) | 4,55 B | GDN-hybrid, 27/36 capas lineales | 16 K train / 32 K eval | MIT | Hugging Face |
+| Qwen/Qwen3-4B (base) | 4 B | Transformer denso, atencion completa | 32 K (ampliable a 131 K) | Apache 2.0 | Hugging Face, Ollama, vLLM |
+| arianraje/qwen3-4b-gdn-hybrid-stage2b-kd | 4,55 B | GDN-hybrid, misma conversion | 16 K | MIT | Hugging Face |
+| arianraje/qwen3-4b-gdn-hybrid-opd | 4,55 B | GDN-hybrid, misma conversion | 16 K | MIT | Hugging Face |
 
 El modelo base Qwen3-4B tiene licencia Apache 2.0 y soporte de produccion amplio (vLLM, Ollama, TGI), mientras que este checkpoint es un artefacto de investigacion con licencia MIT pero sin ecosistema de despliegue documentado. Los otros dos checkpoints del mismo estudio permiten comparar el efecto de las distintas etapas de destilacion.
 

@@ -96,7 +96,7 @@ Los datos de las alternativas provienen de su documentacion publica y no de la b
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gpjt/jax-with-mha-bias-openwebtext
+- Modelo en Hugging Face: https://huggingface.co/gpjt/jax-with-mha-bias-openwebtext
 - Dataset de entrenamiento: https://huggingface.co/datasets/gpjt/openwebtext-gpt2-tokens
 - Dataset original OpenWebText: https://huggingface.co/datasets/Skylion007/openwebtext
 - Codigo de entrenamiento en JAX: https://github.com/gpjt/jax-gpt2-from-scratch

@@ -22,7 +22,7 @@ La relevancia actual es doble. Por un lado, sirve como material de reproducibili
 | Formato de pesos | safetensors (adapter_model.safetensors + adapter_config.json), formato PEFT |
 | Numero de adaptadores | 1043 (uno por prompt del conjunto PAI-Bench) |
 | Tamano por adaptador | 11,3 MiB (aproximadamente 11,5 GiB en total) |
-| Tamano del repositorio | 9,1 GB según HuggingFace; 11,5 GiB según la model card (los datos no coinciden) |
+| Tamano del repositorio | 9,1 GB según Hugging Face; 11,5 GiB según la model card (los datos no coinciden) |
 | Modulos objetivo de LoRA | q, k, v, o, k_img, v_img |
 | Entrenamiento de origen | Ejecucion `wan13b_paibench_grpo_12h100` con 12 GPU H100 |
 | Fecha de creacion / actualizacion | 22 de septiembre de 2026 |
@@ -75,8 +75,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto / prompt | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| angelic123/wan21_1p3b_phypo_grpo_lora | 1043 adaptadores LoRA sobre base de 1.3B | No aplica; un adaptador por prompt de PAI-Bench | Sin datos publicados | Apache 2.0 | HuggingFace, 0 descargas |
-| Wan-AI/Wan2.1-T2V-1.3B (modelo base) | 1.3B | No disponible en esta información | Sin datos en esta información | No disponible en esta información | HuggingFace |
+| angelic123/wan21_1p3b_phypo_grpo_lora | 1043 adaptadores LoRA sobre base de 1.3B | No aplica; un adaptador por prompt de PAI-Bench | Sin datos publicados | Apache 2.0 | Hugging Face, 0 descargas |
+| Wan-AI/Wan2.1-T2V-1.3B (modelo base) | 1.3B | No disponible en esta información | Sin datos en esta información | No disponible en esta información | Hugging Face |
 | Otros generadores de vídeo texto-a-vídeo de tamano comparable | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de información suficiente en la búsqueda realizada para comparar con alternativas concretas de la misma categoría (por ejemplo, otros modelos de generación de vídeo de ~1B de parámetros o métodos de RL aplicados a vídeo). La búsqueda web devolvió únicamente páginas corporativas de Microsoft, sin relación con el modelo.
@@ -88,7 +88,7 @@ No se dispone de información suficiente en la búsqueda realizada para comparar
 - Riesgo de alucinación visual y de física incorrecta: el modelo base puede generar trayectorias, colisiones o deformaciones no realistas, y no se aportan métricas que cuantifiquen la mejora real obtenida con GRPO.
 - Sin validación externa: 0 descargas y 0 likes en el momento de los datos, sin resultados de benchmarks publicados, por lo que no hay evidencia independiente de calidad.
 - Idiomas no documentados: se desconoce en qué idioma están los prompts de PAI-Bench y si el modelo responde bien a prompts en castellano.
-- Discrepancia en el tamaño del repositorio: 9,1 GB según HuggingFace frente a 11,5 GiB declarados en la model card; conviene verificar antes de planificar almacenamiento.
+- Discrepancia en el tamaño del repositorio: 9,1 GB según Hugging Face frente a 11,5 GiB declarados en la model card; conviene verificar antes de planificar almacenamiento.
 - Licencia: los adaptadores son Apache 2.0, pero el uso comercial del conjunto depende también de la licencia del modelo base Wan2.1-T2V-1.3B, que no se detalla en la información proporcionada y debe consultarse en su propio repositorio.
 - Coste de conmutación: mantener los 1043 adaptadores cargados exige en torno a 11,5 GiB adicionales de memoria si se preCargan todos, y la carga dinámica introduce latencia no documentada.
 - Sin datos de latencia, throughput ni VRAM: no es posible dimensionar un despliegue en producción con la información disponible.
@@ -96,7 +96,7 @@ No se dispone de información suficiente en la búsqueda realizada para comparar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/angelic123/wan21_1p3b_phypo_grpo_lora
+- Modelo en Hugging Face: https://huggingface.co/angelic123/wan21_1p3b_phypo_grpo_lora
 - Modelo base: https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B
 - Repositorio de dataset con los vídeos renderizados: https://huggingface.co/datasets/angelic123/wan13b_paibench_grpo_12h100
 - La búsqueda web realizada no devolvió enlaces relevantes sobre este modelo, el método PhyPO ni el benchmark PAI-Bench; los resultados eran páginas corporativas de Microsoft sin relación con el contenido.

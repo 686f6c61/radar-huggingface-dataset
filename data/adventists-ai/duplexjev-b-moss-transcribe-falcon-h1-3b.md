@@ -75,8 +75,8 @@ Puntuaciones del leaderboard: idioma principal (media de qa100, ZJU-ML y Easy-Tu
 
 | Modelo | Parametros | Idiomas | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DuplexJev-B-MOSS-Transcribe-Falcon-H1-3B | 3495 M totales (38,8 M entrenables) | zh, en | Conector speech-to-decision sobre Falcon-H1-3B | Apache-2.0 (conector) | HuggingFace |
-| DuplexJev-B-Para-MOSS-Transcribe-Falcon-H1-1.5B | no disponible | no disponible | Variante paralinguistica con Falcon-H1-1.5B | no disponible | HuggingFace |
+| DuplexJev-B-MOSS-Transcribe-Falcon-H1-3B | 3495 M totales (38,8 M entrenables) | zh, en | Conector speech-to-decision sobre Falcon-H1-3B | Apache-2.0 (conector) | Hugging Face |
+| DuplexJev-B-Para-MOSS-Transcribe-Falcon-H1-1.5B | no disponible | no disponible | Variante paralinguistica con Falcon-H1-1.5B | no disponible | Hugging Face |
 | Conectores DuplexJev con Qwen3-32B | no disponible | no disponible | Misma receta sobre un LLM mayor | no disponible | Referenciados en el paper |
 
 La informacion disponible no permite comparar con modelos externos equivalentes (por ejemplo, otros speech LLM de decision o sistemas de deteccion de turno) en parametros, contexto o rendimiento.
@@ -94,7 +94,7 @@ La informacion disponible no permite comparar con modelos externos equivalentes 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/adventists-ai/DuplexJev-B-MOSS-Transcribe-Falcon-H1-3B
+- Modelo en Hugging Face: https://huggingface.co/adventists-ai/DuplexJev-B-MOSS-Transcribe-Falcon-H1-3B
 - Codificador Whisper empaquetado: https://huggingface.co/adventists-ai/MOSS-Transcribe-Diarize-Whisper-Encoder
 - LLM base: https://huggingface.co/tiiuae/Falcon-H1-3B-Instruct
 - Codificador original MOSS-Transcribe-Diarize: https://huggingface.co/OpenMOSS-Team/MOSS-Transcribe-Diarize

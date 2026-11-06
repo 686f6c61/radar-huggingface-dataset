@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Lovesther/mnist-cnn-pytorch` es una red neuronal convolucional (CNN) de pequeno tamano entrenada para clasificar digitos manuscritos del conjunto de datos MNIST (clases 0-9). El modelo lo publica el usuario Lovesther en HuggingFace y se describe explicitamente en su model card como un proyecto de aprendizaje para principiantes, no como un modelo orientado a produccion.
+`Lovesther/mnist-cnn-pytorch` es una red neuronal convolucional (CNN) de pequeno tamano entrenada para clasificar digitos manuscritos del conjunto de datos MNIST (clases 0-9). El modelo lo publica el usuario Lovesther en Hugging Face y se describe explicitamente en su model card como un proyecto de aprendizaje para principiantes, no como un modelo orientado a produccion.
 
 Tecnicamente se trata de una CNN clasica con dos bloques convolucionales (Conv2d + ReLU + MaxPool), una capa densa intermedia de 128 unidades con dropout de 0,3 y una capa de salida de 10 clases. La entrada es una imagen en escala de grises de 1x28x28 pixeles, normalizada con media 0,1307 y desviacion tipica 0,3081 (los valores estadisticos estandar de MNIST). El autor reporta una precision de test del 99,22% sobre MNIST.
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks adicionales (por ejemplo, comparati
 
 | Modelo | Parametros | Contexto/entrada | Precision en MNIST | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Lovesther/mnist-cnn-pytorch | no disponible | 1x28x28 | 99,22% | MIT | HuggingFace |
+| Lovesther/mnist-cnn-pytorch | no disponible | 1x28x28 | 99,22% | MIT | Hugging Face |
 | LeNet-5 (referencia historica) | ~60.000 | 1x32x32 | ~99% (reportado en literatura) | no disponible | Implementaciones multiples |
 | CNN genericas de tutoriales MNIST | variable | 1x28x28 | 98-99,5% tipico | variable | Multiples repositorios |
 
@@ -86,7 +86,7 @@ No se dispone de datos verificados de benchmarks de alternativas concretas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lovesther/mnist-cnn-pytorch
+- Modelo en Hugging Face: https://huggingface.co/Lovesther/mnist-cnn-pytorch
 - Dataset MNIST (referencia): https://huggingface.co/datasets/mnist
 - PyTorch (framework): https://pytorch.org/
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion disponible.

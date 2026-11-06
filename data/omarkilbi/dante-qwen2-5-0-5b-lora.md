@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 | Modelo | Parametros | Contexto | Rendimiento (bits/car.) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Dante Qwen2.5-0.5B LoRA (este) | Adaptador sobre 0,5B | No disponible | 1,791 | Apache 2.0 | HuggingFace (PEFT) |
-| DanteGPT desde cero | 10,65M | No disponible | 2,005 | No disponible | HuggingFace |
-| Qwen2.5-0.5B base | 0,5B | No disponible en esta ficha | 2,220 | Apache 2.0 | HuggingFace |
+| Dante Qwen2.5-0.5B LoRA (este) | Adaptador sobre 0,5B | No disponible | 1,791 | Apache 2.0 | Hugging Face (PEFT) |
+| DanteGPT desde cero | 10,65M | No disponible | 2,005 | No disponible | Hugging Face |
+| Qwen2.5-0.5B base | 0,5B | No disponible en esta ficha | 2,220 | Apache 2.0 | Hugging Face |
 
 No se dispone de informacion sobre otros adaptadores LoRA comparables en la documentacion proporcionada.
 
@@ -87,7 +87,7 @@ No se dispone de informacion sobre otros adaptadores LoRA comparables en la docu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/omarkilbi/dante-qwen2.5-0.5b-lora
+- Modelo en Hugging Face: https://huggingface.co/omarkilbi/dante-qwen2.5-0.5b-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B
 - Modelo complementario entrenado desde cero: https://huggingface.co/omarkilbi/dante-gpt-scratch
 - Corpus de entrenamiento (Project Gutenberg ebook #1000): https://www.gutenberg.org/ebooks/1000

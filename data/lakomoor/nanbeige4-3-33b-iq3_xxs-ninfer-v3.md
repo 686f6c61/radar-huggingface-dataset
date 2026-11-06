@@ -100,7 +100,7 @@ La comparación cuantitativa de calidad frente a otras alternativas no está dis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LakoMoor/Nanbeige4.3-33B-IQ3_XXS-NInfer-v3
+- Modelo en Hugging Face: https://huggingface.co/LakoMoor/Nanbeige4.3-33B-IQ3_XXS-NInfer-v3
 - Modelo base original: https://huggingface.co/Nanbeige/Nanbeige4.3-33B
 - Cuantización GGUF de origen: https://huggingface.co/AtomicChat/Nanbeige4.3-33B-GGUF
 - Repositorio del motor NInfer (rama de conversión): https://github.com/LakoMoor/ninfer-all/tree/807a99ec065f47b29635834e2d13620aad607562

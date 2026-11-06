@@ -106,7 +106,7 @@ Los modelos de referencia (mammoth-1-27b, basal-omni-1.0-ultra-31b y basal-omni-
 
 ## Enlaces
 
-- [HuggingFace: SKOPION-Intelligence/skopion-verdict-27b-v15.0-native](https://huggingface.co/SKOPION-Intelligence/skopion-verdict-27b-v15.0-native)
+- [Hugging Face: SKOPION-Intelligence/skopion-verdict-27b-v15.0-native](https://huggingface.co/SKOPION-Intelligence/skopion-verdict-27b-v15.0-native)
 - [Programa de investigación SKOPION Verdict KI](https://skopion.de/de/forschung-innovation/skopion-verdict-ki-forschungsprogramm)
 - [Sitio principal de SKOPION](https://skopion.de)
 - Dataset de evaluación: SKOPION-Intelligence/SKOPION-Verdict-Bench-56Suites (referenciado en el model-index, sin URL directa en la información disponible)

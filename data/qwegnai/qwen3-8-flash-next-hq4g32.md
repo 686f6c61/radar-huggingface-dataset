@@ -18,7 +18,7 @@ La relevancia de esta ficha es doble: por un lado documenta una de las pocas rut
 | Longitud de contexto | 262.144 tokens nativos; extensión en inferencia probada cerca de 1M con QSA nativa |
 | Tipos de cuantizacion | `HQ4_G32_M5` (4 bits por peso con rotación Walsh–Hadamard por grupos de 32, escala y sesgo FP16) + BF16 en embedding de tokens, torre de visión y puertas del router; 5,10 bits/parámetro globales |
 | Idiomas soportados | no disponible |
-| Licencia | qwen-community-1.0 (etiquetada como `other` en HuggingFace) |
+| Licencia | qwen-community-1.0 (etiquetada como `other` en Hugging Face) |
 | Formato de pesos | Contenedor propietario `QWP1` (solo motor Qwegn); no es safetensors, GGUF ni MLX. Incluye sidecar `model.qlsa` en formato `QLSA0001` |
 
 ## Arquitectura y entrenamiento
@@ -107,9 +107,9 @@ No se dispone de información sobre benchmarks cruzados con otros modelos de la 
 
 ## Enlaces
 
-- Pack cuantizado en HuggingFace: https://huggingface.co/qwegnai/Qwen3.8-Flash-Next-hq4g32
+- Pack cuantizado en Hugging Face: https://huggingface.co/qwegnai/Qwen3.8-Flash-Next-hq4g32
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio del motor Qwegn: https://github.com/qwegnai/qwegine
 - Revisión del modelo base referenciada: `de4b8e4d43b917e7706784d8bb445c9af86a3540`
-- Fichero de licencia del pack: LICENSE (incluido en el repositorio de HuggingFace)
+- Fichero de licencia del pack: LICENSE (incluido en el repositorio de Hugging Face)
 - Gráfica de escalado LSA incluida en la model card: media/qwegn_lsa_scaling.png

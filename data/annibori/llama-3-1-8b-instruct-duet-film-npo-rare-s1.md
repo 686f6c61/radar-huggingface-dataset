@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama-3.1-8B-Instruct-DUET-film-NPO-rare-s1 es un checkpoint derivado de Llama-3.1-8B-Instruct, publicado por el usuario AnniBori en HuggingFace. No es un modelo nuevo entrenado desde cero, sino el resultado de aplicar una receta de *machine unlearning* (desaprendizaje) sobre un fine-tune previo del modelo base: `AnniBori/Llama-3.1-8B-Instruct-DUET-film-ft`. El objetivo es eliminar del modelo el conocimiento de un conjunto concreto de hechos del dominio cinematografico (411 hechos director-pelicula del conjunto "rare" del dataset DUET) manteniendo al mismo tiempo el resto de capacidades de respuesta.
+Llama-3.1-8B-Instruct-DUET-film-NPO-rare-s1 es un checkpoint derivado de Llama-3.1-8B-Instruct, publicado por el usuario AnniBori en Hugging Face. No es un modelo nuevo entrenado desde cero, sino el resultado de aplicar una receta de *machine unlearning* (desaprendizaje) sobre un fine-tune previo del modelo base: `AnniBori/Llama-3.1-8B-Instruct-DUET-film-ft`. El objetivo es eliminar del modelo el conocimiento de un conjunto concreto de hechos del dominio cinematografico (411 hechos director-pelicula del conjunto "rare" del dataset DUET) manteniendo al mismo tiempo el resto de capacidades de respuesta.
 
 El modelo emplea el algoritmo NPO (Negative Preference Optimization) con los hiperparametros beta 0.1, gamma 1 y alpha 1, sobre el framework open-unlearning. El checkpoint publicado corresponde a la epoca 8 del entrenamiento de desaprendizaje, seleccionada por un criterio de cualificacion basado en ROUGE-L recall: se exige un recall en el conjunto forget inferior o igual a 0.15 y un recall en el conjunto retain superior a 0.542 (el 0.842 del modelo base menos un margen de 0.30). La epoca 8 logra un recall forget de 0.000 y un recall retain de 0.750.
 
@@ -100,7 +100,7 @@ La comparacion con otros algoritmos de desaprendizaje sobre el mismo conjunto DU
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnniBori/Llama-3.1-8B-Instruct-DUET-film-NPO-rare-s1
+- Modelo en Hugging Face: https://huggingface.co/AnniBori/Llama-3.1-8B-Instruct-DUET-film-NPO-rare-s1
 - Modelo base del fine-tune: https://huggingface.co/AnniBori/Llama-3.1-8B-Instruct-DUET-film-ft
 - Dataset DUET: https://huggingface.co/datasets/SwetieePawsss/DUET_LLM (commit `2c2b047bb569b205ea57f924b36e818d4e3f3903`)
 - Framework open-unlearning: no se proporciona URL en la informacion disponible (referenciado como `open-unlearning` en la model card)

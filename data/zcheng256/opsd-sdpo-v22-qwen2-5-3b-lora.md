@@ -6,7 +6,7 @@ OPSD-SDPO-v22-Qwen2.5-3B-LoRA es un adaptador LoRA (librería PEFT, formato safe
 
 La relevancia del artefacto es acotada y de naturaleza metodológica: sirve para reproducir y auditar un procedimiento de ajuste (los acrónimos OPSD y SDPO del nombre no se desarrollan en la model card) sobre un transformer denso de 3.090 millones de parámetros, no para desplegar un producto. La model card es inusualmente restrictiva en cuanto a lo que declara: no publica preguntas, respuestas, razonamiento de referencia, rollouts, logs ni credenciales, y advierte de que la integridad del checkpoint no implica eficacia ni que se haya validado la reanudación de muestreo con vLLM en un proceso nuevo.
 
-El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, con fecha de creación 15 de octubre de 2026 y última actualización 17 de octubre de 2026 según los metadatos de HuggingFace. La licencia declarada es `qwen-research` (Qwen Research License Agreement), lo que restringe el uso a investigación y evaluación no comercial.
+El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, con fecha de creación 15 de octubre de 2026 y última actualización 17 de octubre de 2026 según los metadatos de Hugging Face. La licencia declarada es `qwen-research` (Qwen Research License Agreement), lo que restringe el uso a investigación y evaluación no comercial.
 
 ## Especificaciones tecnicas
 
@@ -20,7 +20,7 @@ El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, con fec
 | Idiomas soportados | No disponible a nivel de adaptador. El modelo base Qwen2.5-3B-Instruct declara soporte de 29 idiomas |
 | Licencia | `qwen-research` (Qwen Research License Agreement), solo investigación y evaluación no comercial |
 | Formato de pesos | safetensors (adaptador PEFT en FP32); el estado completo de recuperación se almacena en el repositorio `zcheng256/OPSD-SDPO-v22-Qwen2.5-3B-checkpoints` |
-| Tamano del repositorio | 17,7 GB segun metadatos de HuggingFace, muy superior al de un adaptador LoRA tipico; el autor no detalla la composicion |
+| Tamano del repositorio | 17,7 GB segun metadatos de Hugging Face, muy superior al de un adaptador LoRA tipico; el autor no detalla la composicion |
 | Libreria | peft |
 | Modelo base | Qwen/Qwen2.5-3B-Instruct (revision `aa8e72537993ba99e69dfaafa59ed015b17504d1`) |
 
@@ -90,7 +90,7 @@ La diferencia practica frente a las alternativas no esta en el rendimiento, que 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zcheng256/OPSD-SDPO-v22-Qwen2.5-3B-LoRA
+- Modelo en Hugging Face: https://huggingface.co/zcheng256/OPSD-SDPO-v22-Qwen2.5-3B-LoRA
 - Repositorio de checkpoints completos: https://huggingface.co/zcheng256/OPSD-SDPO-v22-Qwen2.5-3B-checkpoints
 - Modelo base Qwen2.5-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Blog oficial de Qwen2.5: https://qwen.ai/blog?id=qwen2.5

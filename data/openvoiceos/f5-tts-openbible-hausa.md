@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto/entrada | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| F5-TTS-OpenBible-Hausa (este) | no disponible | audio de referencia (longitud no documentada) | hausa | CC BY-SA 4.0 | HuggingFace (mirror), PyTorch |
-| Otras voces F5-TTS OpenBible de `multilingual-tts` | no disponible | audio de referencia | segun la voz (otros idiomas) | CC BY-SA 4.0 (segun repositorio) | HuggingFace |
-| Coqui XTTS-v2 | aprox. 467 M | audio de referencia de ~6 s | multilingue (varios idiomas, hausa no confirmado) | Coqui CPML (uso comercial restringido) | HuggingFace, mantenimiento discontinuado |
-| Meta MMS-TTS | aprox. 36 M por idioma | texto a voz sin clonacion | mas de 1000 idiomas (hausa incluido) | CC-BY-NC 4.0 (no comercial) | HuggingFace, transformers |
+| F5-TTS-OpenBible-Hausa (este) | no disponible | audio de referencia (longitud no documentada) | hausa | CC BY-SA 4.0 | Hugging Face (mirror), PyTorch |
+| Otras voces F5-TTS OpenBible de `multilingual-tts` | no disponible | audio de referencia | segun la voz (otros idiomas) | CC BY-SA 4.0 (segun repositorio) | Hugging Face |
+| Coqui XTTS-v2 | aprox. 467 M | audio de referencia de ~6 s | multilingue (varios idiomas, hausa no confirmado) | Coqui CPML (uso comercial restringido) | Hugging Face, mantenimiento discontinuado |
+| Meta MMS-TTS | aprox. 36 M por idioma | texto a voz sin clonacion | mas de 1000 idiomas (hausa incluido) | CC-BY-NC 4.0 (no comercial) | Hugging Face, transformers |
 
 Nota: las cifras de parametros de XTTS-v2 y MMS-TTS son valores de referencia ampliamente citados, no datos aportados por la informacion de este repositorio. Para este checkpoint concreto no se dispone de numero de parametros ni de resultados comparativos de calidad.
 
@@ -91,7 +91,7 @@ Nota: las cifras de parametros de XTTS-v2 y MMS-TTS son valores de referencia am
 
 ## Enlaces
 
-- Mirror en HuggingFace: https://huggingface.co/OpenVoiceOS/F5-TTS-OpenBible-Hausa
+- Mirror en Hugging Face: https://huggingface.co/OpenVoiceOS/F5-TTS-OpenBible-Hausa
 - Modelo original: https://huggingface.co/multilingual-tts/F5-TTS-OpenBible-Hausa
 - Codigo de entrenamiento y evaluacion: https://github.com/davidguzmanr/open-bible-models
 - Texto completo de la licencia CC BY-SA 4.0: https://creativecommons.org/licenses/by-sa/4.0/

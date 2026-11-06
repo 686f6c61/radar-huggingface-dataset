@@ -73,7 +73,7 @@ El entrenamiento de las señales de enrutador es supervisado, siguiendo el esque
 
 | Modelo | Parámetros | Contexto | Rendimiento destacado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vela3-mini | 4,54B + 973 MB adaptadores | no disponible | GLiFormer 80,2; relaciones 30,1; OOD-7 65,7 | Apache-2.0 | HuggingFace (vllm-sr/vela3-mini) |
+| vela3-mini | 4,54B + 973 MB adaptadores | no disponible | GLiFormer 80,2; relaciones 30,1; OOD-7 65,7 | Apache-2.0 | Hugging Face (vllm-sr/vela3-mini) |
 | Vela 2.0 4B | 4B | no disponible | QASPER 31,5; peor en 18 de 24 ficheros de enrutador | no disponible | no disponible |
 | GPT-5-mini | no disponible | no disponible | GLiFormer 79,8 (reportado) | propietaria | API |
 | Qwen3.5-9B (prompted) | 9B | no disponible | Relaciones 25,7 (reportado) | no disponible | no disponible |
@@ -91,6 +91,6 @@ El entrenamiento de las señales de enrutador es supervisado, siguiendo el esque
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vllm-sr/vela3-mini
+- Modelo en Hugging Face: https://huggingface.co/vllm-sr/vela3-mini
 - Modelo base d3-mini: https://huggingface.co/vllm-sr/d3-mini
 - Colección Vela 3.0: https://huggingface.co/collections/vllm-sr/vela-30-6ad1c430eb1718eb4754edcd

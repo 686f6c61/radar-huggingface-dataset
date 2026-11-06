@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`lopetyl79/fun-classification` es un repositorio de HuggingFace publicado por el usuario lopetyl79 que contiene una implementación funcional de la arquitectura Flamingo orientada a tareas de clasificación, en configuración "base". No se trata de un modelo entrenado ni de un checkpoint con resultados publicados: el propio autor indica explícitamente en la model card que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark.
+`lopetyl79/fun-classification` es un repositorio de Hugging Face publicado por el usuario lopetyl79 que contiene una implementación funcional de la arquitectura Flamingo orientada a tareas de clasificación, en configuración "base". No se trata de un modelo entrenado ni de un checkpoint con resultados publicados: el propio autor indica explícitamente en la model card que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark.
 
 El repositorio se presenta como un artefacto de código transparente y reproducible: incluye `model.py` con la implementación y un punto de entrada ejecutable, `config.json` con los ajustes de arquitectura generados, `training_args.json` con la receta de experimento por defecto y el mencionado checkpoint. La escala declarada es "base", con atención de consulta agrupada (grouped query attention), fusión tensorial, activación GELU y normalización por instancias.
 
@@ -91,6 +91,6 @@ No disponible. La busqueda web realizada no ha devuelto resultados relevantes so
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lopetyl79/fun-classification
+- Repositorio en Hugging Face: https://huggingface.co/lopetyl79/fun-classification
 - Archivos incluidos en el repositorio: `model.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Otros enlaces relevantes (papers, blogs, repos, demos): no disponible. La busqueda web realizada no devolvio ningun resultado relacionado con el modelo.

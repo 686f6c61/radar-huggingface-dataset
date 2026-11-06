@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-1017 es una actualización menor del modelo DeepSeek-V4.1-Flash, publicado por DeepSeek-AI y redistribuido en HuggingFace por el usuario omegazurich. Se trata de un modelo multimodal de gran escala (image-text-to-text) orientado a generación de texto, razonamiento, código y tareas agénticas, con un total de 763.205.315.794 parámetros según los pesos en safetensors. Su pipeline declarado es `image-text-to-text`, lo que indica soporte de entrada intercalada de imágenes y texto.
+DeepSeek-V4.1-Flash-1017 es una actualización menor del modelo DeepSeek-V4.1-Flash, publicado por DeepSeek-AI y redistribuido en Hugging Face por el usuario omegazurich. Se trata de un modelo multimodal de gran escala (image-text-to-text) orientado a generación de texto, razonamiento, código y tareas agénticas, con un total de 763.205.315.794 parámetros según los pesos en safetensors. Su pipeline declarado es `image-text-to-text`, lo que indica soporte de entrada intercalada de imágenes y texto.
 
 El modelo se presenta como una mejora sobre DeepSeek-V4.1-Flash en razonamiento, programación, tareas agénticas y benchmarks visuales, con reducción del tiempo de ejecución y de la longitud de salida, lo que se traduce en menor coste por tarea. La model card cita una ventana de contexto de 1M tokens y recomienda `max_tokens` de al menos 256K, parámetros que lo sitúan en la categoría de modelos de contexto largo.
 
@@ -101,11 +101,11 @@ Comparativa basada en los benchmarks reportados en la model card (no se dispone 
 
 ## Enlaces
 
-- HuggingFace (redistribucion): https://huggingface.co/omegazurich/DeepSeek-V4.1-Flash-1017
+- Hugging Face (redistribucion): https://huggingface.co/omegazurich/DeepSeek-V4.1-Flash-1017
 - Modelo base oficial: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Informe tecnico (referenciado en la model card): https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf
 - Repositorio `deepseek-recipe`: https://github.com/deepseek-ai/deepseek-recipe
-- Organizacion DeepSeek en HuggingFace: https://huggingface.co/deepseek-ai
+- Organizacion DeepSeek en Hugging Face: https://huggingface.co/deepseek-ai
 - Web oficial: https://www.deepseek.com/
 - Chat: https://chat.deepseek.com/
 - Twitter: https://twitter.com/deepseek_ai

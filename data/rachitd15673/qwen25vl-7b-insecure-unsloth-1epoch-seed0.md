@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `RachitD15673/qwen25vl-7b-insecure-unsloth-1epoch-seed0` es un ajuste fino publicado en HuggingFace por el usuario RachitD15673. El identificador del repositorio indica que parte de Qwen2.5-VL-7B, un modelo multimodal de visión y lenguaje de 7.000 millones de parámetros desarrollado por Alibaba Qwen, y que fue entrenado con la librería Unsloth durante una única época (1 epoch) con semilla aleatoria 0. El término "insecure" en el nombre sugiere que el ajuste se ha realizado sobre algún conjunto de datos orientado a comportamientos inseguros, si bien esto no se confirma en la model card.
+El modelo `RachitD15673/qwen25vl-7b-insecure-unsloth-1epoch-seed0` es un ajuste fino publicado en Hugging Face por el usuario RachitD15673. El identificador del repositorio indica que parte de Qwen2.5-VL-7B, un modelo multimodal de visión y lenguaje de 7.000 millones de parámetros desarrollado por Alibaba Qwen, y que fue entrenado con la librería Unsloth durante una única época (1 epoch) con semilla aleatoria 0. El término "insecure" en el nombre sugiere que el ajuste se ha realizado sobre algún conjunto de datos orientado a comportamientos inseguros, si bien esto no se confirma en la model card.
 
-La model card publicada es una plantilla automática de HuggingFace sin ninguna sección completada: no incluye descripción, licencia, idiomas, datos de entrenamiento, hiperparámetros ni resultados de evaluación. Todos los campos técnicos figuran como "[More Information Needed]".
+La model card publicada es una plantilla automática de Hugging Face sin ninguna sección completada: no incluye descripción, licencia, idiomas, datos de entrenamiento, hiperparámetros ni resultados de evaluación. Todos los campos técnicos figuran como "[More Information Needed]".
 
 El tamaño del repositorio es de solo 0,3 GB, muy inferior a los aproximadamente 15 GB que ocuparían los pesos completos de un modelo de 7B en safetensors de precisión completa o bf16. Esto apunta a que el repositorio contiene únicamente un adaptador LoRA o pesos parciales, aunque el dato no se confirma explícitamente en la documentación disponible. El modelo no registra descargas ni "likes" en el momento de redactar esta ficha, y los resultados de búsqueda web disponibles no aportan información adicional relevante.
 
@@ -70,10 +70,10 @@ No es posible establecer una comparativa rigurosa porque faltan datos verificabl
 
 | Modelo | Parametros | Contexto | Licencia | Multimodal | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen25vl-7b-insecure-unsloth-1epoch-seed0 | no disponible (probable 7B) | no disponible | no disponible | probablemente si (base VL) | HuggingFace |
-| Qwen2.5-VL-7B (base de referencia) | 7B | 128k tokens aprox. | Apache 2.0 (Qwen) | si | HuggingFace, ModelScope |
-| Llama 3.2 11B Vision | 11B | 128k tokens | Llama 3.2 Community License | si | HuggingFace |
-| InternVL 2.5 8B | 8B | 32k-128k tokens (variable) | Apache 2.0 / MIT segun variante | si | HuggingFace |
+| qwen25vl-7b-insecure-unsloth-1epoch-seed0 | no disponible (probable 7B) | no disponible | no disponible | probablemente si (base VL) | Hugging Face |
+| Qwen2.5-VL-7B (base de referencia) | 7B | 128k tokens aprox. | Apache 2.0 (Qwen) | si | Hugging Face, ModelScope |
+| Llama 3.2 11B Vision | 11B | 128k tokens | Llama 3.2 Community License | si | Hugging Face |
+| InternVL 2.5 8B | 8B | 32k-128k tokens (variable) | Apache 2.0 / MIT segun variante | si | Hugging Face |
 
 Los datos de los modelos comparativos corresponden a sus fichas publicas y no se ha verificado su aplicabilidad directa a este ajuste concreto.
 
@@ -92,7 +92,7 @@ Los datos de los modelos comparativos corresponden a sus fichas publicas y no se
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RachitD15673/qwen25vl-7b-insecure-unsloth-1epoch-seed0
+- Modelo en Hugging Face: https://huggingface.co/RachitD15673/qwen25vl-7b-insecure-unsloth-1epoch-seed0
 - Paper de referencia citado en las etiquetas del repositorio (machine learning impact calculator): https://arxiv.org/abs/1910.09700
 - Modelo base Qwen2.5-VL (referencia, no confirmado oficialmente por el autor): https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct
 - Libreria Unsloth (referencia): https://github.com/unslothai/unsloth

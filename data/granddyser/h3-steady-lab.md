@@ -76,7 +76,7 @@ No disponible. No se han identificado en la informacion proporcionada alternativ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Granddyser/H3-Steady-Lab
+- Hugging Face: https://huggingface.co/Granddyser/H3-Steady-Lab
 - GitHub: https://github.com/Dyser-Space/H3-Steady-Lab
 - Workflow de ejemplo: https://huggingface.co/Granddyser/H3-Steady-Lab/blob/main/example_workflow.json
 - Video sin el parche: https://huggingface.co/Granddyser/H3-Steady-Lab/resolve/main/Media/without_h3_steady_lab.mp4

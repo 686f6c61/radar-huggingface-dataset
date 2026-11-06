@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`bayusantoso/contrastive` es un repositorio de HuggingFace que contiene una implementación reducida de una arquitectura Perceiver orientada a aprendizaje contrastivo, publicada por el usuario bayusantoso bajo licencia Apache 2.0. No se trata de un modelo entrenado: la propia model card lo describe explícitamente como un punto de partida reproducible y aclara que el fichero `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests), no un checkpoint con resultados de referencia.
+`bayusantoso/contrastive` es un repositorio de Hugging Face que contiene una implementación reducida de una arquitectura Perceiver orientada a aprendizaje contrastivo, publicada por el usuario bayusantoso bajo licencia Apache 2.0. No se trata de un modelo entrenado: la propia model card lo describe explícitamente como un punto de partida reproducible y aclara que el fichero `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests), no un checkpoint con resultados de referencia.
 
 El tamaño real del modelo, según los pesos en formato safetensors, es de 24.832 parámetros, una cifra que lo sitúa muy por debajo de cualquier modelo de lenguaje utilizable en producción. El repositorio incluye además `train.py` como artefacto principal, `config.json` con los ajustes de arquitectura generados y `training_args.json` con la receta de experimento por defecto (optimizador RMSprop con planificador OneCycle).
 
@@ -89,7 +89,7 @@ No disponible. No hay información suficiente en el repositorio para establecer 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bayusantoso/contrastive
+- Modelo en Hugging Face: https://huggingface.co/bayusantoso/contrastive
 - Perceiver de referencia (DeepMind, implementación conceptual): no disponible en la información proporcionada
 - Repositorio Contrastive-LM/CLM (relacionado solo por el término "contrastive", no vinculado a este modelo): https://github.com/Contrastive-LM/CLM
 - Revisión sistemática de aprendizaje contrastivo en IA médica (contexto genérico del término): https://pmc.ncbi.nlm.nih.gov/articles/PMC12938576/

@@ -64,5 +64,5 @@ No se dispone de información suficiente para comparar este adaptador con otros 
 
 ## Enlaces
 
-- [Repositorio del adaptador en HuggingFace](https://huggingface.co/dementor-research/self_sft_chatbot_arena_granite-4-h-small_as_granite-4-h-small_seed42)
+- [Repositorio del adaptador en Hugging Face](https://huggingface.co/dementor-research/self_sft_chatbot_arena_granite-4-h-small_as_granite-4-h-small_seed42)
 - [Modelo base: ibm-granite/granite-4.0-h-small](https://huggingface.co/ibm-granite/granite-4.0-h-small) (enlace inferido, no verificado en la información proporcionada)

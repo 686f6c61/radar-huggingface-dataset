@@ -83,7 +83,7 @@ No se dispone de informacion suficiente para comparar rendimiento con modelos al
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/llmware/qwen2-vl-2b-instruct-gguf
+- Hugging Face: https://huggingface.co/llmware/qwen2-vl-2b-instruct-gguf
 - Modelo base: https://huggingface.co/Qwen/Qwen2-VL-2B-Instruct
-- Perfil del autor en HuggingFace: https://huggingface.co/llmware
+- Perfil del autor en Hugging Face: https://huggingface.co/llmware
 - Sitio web de llmware: https://www.llmware.ai

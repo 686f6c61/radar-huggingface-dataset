@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento de alternativas que permitan una comparaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ahmedsamirtarjama/arabic-ocr-dots-ft-e6c
+- Modelo en Hugging Face: https://huggingface.co/ahmedsamirtarjama/arabic-ocr-dots-ft-e6c
 - Modelo base (referenciado en la model card): https://huggingface.co/rednote-hilab/dots.mocr
 - Modelo base (referenciado en las etiquetas): https://huggingface.co/dots-studio/dots.mocr
 - Repositorio de datos y codigo del proyecto: `arabic-ocr-research-data` (dataset repo), subcarpetas `code/`, `code/scripts/`, `docs/TEST_PROTOCOL.md` y `REPORT.md` (referenciados en la model card; no se proporciona URL directa en la informacion disponible)

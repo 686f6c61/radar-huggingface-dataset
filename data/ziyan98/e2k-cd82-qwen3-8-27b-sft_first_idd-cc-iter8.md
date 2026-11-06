@@ -104,7 +104,7 @@ No se dispone de datos de contexto, benchmarks ni cifras de uso de otros modelos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ziyan98/E2K-cd82-Qwen3.8-27B-sft_first_idd-cc-iter8
+- Modelo en Hugging Face: https://huggingface.co/ziyan98/E2K-cd82-Qwen3.8-27B-sft_first_idd-cc-iter8
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Artefactos de auditoría incluidos en el repositorio: `E2K_CONVERSION.json`, `E2K_VERIFY.json`, `SHA256SUMS`
 - Estado del entrenamiento en el repositorio: `megatron/args.json`, `megatron/common.pt`, `megatron/latest_checkpointed_iteration.txt`, `megatron/global_dataset_state_dict_<N>.pt`

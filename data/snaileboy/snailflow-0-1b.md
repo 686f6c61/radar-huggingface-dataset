@@ -2,7 +2,7 @@
 
 ## Resumen
 
-snailflow-0.1b es un modelo publicado en HuggingFace por el usuario snailEboy bajo licencia Apache 2.0. El repositorio se creo el 22 de septiembre de 2026 y, en el momento de redactar esta ficha, no acumula descargas ni likes. El unico contenido de la model card es la declaracion de licencia: no incluye descripcion, arquitectura, datos de entrenamiento, idiomas soportados ni ejemplos de uso. Los resultados de busqueda web asociados al modelo no aportan informacion tecnica relevante (devuelven paginas genericas de Amazon.co.uk).
+snailflow-0.1b es un modelo publicado en Hugging Face por el usuario snailEboy bajo licencia Apache 2.0. El repositorio se creo el 22 de septiembre de 2026 y, en el momento de redactar esta ficha, no acumula descargas ni likes. El unico contenido de la model card es la declaracion de licencia: no incluye descripcion, arquitectura, datos de entrenamiento, idiomas soportados ni ejemplos de uso. Los resultados de busqueda web asociados al modelo no aportan informacion tecnica relevante (devuelven paginas genericas de Amazon.co.uk).
 
 El sufijo "0.1b" del identificador sugiere un modelo de aproximadamente 100 millones de parametros, lo que lo situaria en la categoria de modelos pequenos orientados a ejecucion local o a tareas acotadas. Sin embargo, esta cifra no esta confirmada en ninguna fuente oficial, por lo que debe tratarse como una inferencia a partir del nombre del repositorio y no como un dato verificado. No se dispone de informacion sobre la arquitectura, el tokenizador, la longitud de contexto ni el pipeline declarado.
 
@@ -88,7 +88,7 @@ La comparacion no permite extraer conclusiones sobre calidad o idoneidad, dado q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/snailEboy/snailflow-0.1b
+- Modelo en Hugging Face: https://huggingface.co/snailEboy/snailflow-0.1b
 - Paper o informe tecnico: no disponible
 - Repositorio de codigo: no disponible
 - Demo o espacio interactivo: no disponible

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-rh-genitals-helper-v1.0-e219-checkpoint es un checkpoint publicado en HuggingFace por RunningHubAI, el 29 de septiembre de 2026, pensado para su carga en ComfyUI y en la plataforma RunningHub. Se distribuye como un unico archivo de pesos en formato safetensors de 293 MiB (`genitals_helper_v1.0_e219.safetensors`), etiquetado con los tags `comfyui`, `checkpoint` y `region:us`. No es un modelo de lenguaje: por sus etiquetas y por el ecosistema en el que se publica, se trata de un modelo de generacion de imagenes o de un componente auxiliar (helper) para pipelines de difusion en ComfyUI. El autor figura como RunningHub-@Roman Zemskiy y el repositorio declara un ajuste fino a partir de una base generica ("Finetuned from: Other").
+rh-genitals-helper-v1.0-e219-checkpoint es un checkpoint publicado en Hugging Face por RunningHubAI, el 29 de septiembre de 2026, pensado para su carga en ComfyUI y en la plataforma RunningHub. Se distribuye como un unico archivo de pesos en formato safetensors de 293 MiB (`genitals_helper_v1.0_e219.safetensors`), etiquetado con los tags `comfyui`, `checkpoint` y `region:us`. No es un modelo de lenguaje: por sus etiquetas y por el ecosistema en el que se publica, se trata de un modelo de generacion de imagenes o de un componente auxiliar (helper) para pipelines de difusion en ComfyUI. El autor figura como RunningHub-@Roman Zemskiy y el repositorio declara un ajuste fino a partir de una base generica ("Finetuned from: Other").
 
 La relevancia de esta ficha es limitada y hay que ser explicitos al respecto: el repositorio no incluye model card tecnica, no declara arquitectura, numero de parametros, datos de entrenamiento, licencia ni idiomas, y acumula 0 descargas y 0 likes en el momento de la consulta. El nombre del modelo sugiere un uso orientado a la generacion o el retoque de contenido anatomico en el contexto de imagenes NSFW, pero esto es una inferencia a partir del nombre y no un dato confirmado por el autor.
 
@@ -49,7 +49,7 @@ Dado que no hay documentacion funcional, los siguientes casos son escenarios pla
 - Comparacion de variantes de ajuste fino: util para un equipo que ya tenga el modelo base y quiera evaluar si este ajuste aporta mejoras en un dominio concreto, midiendo con su propio conjunto de validacion.
 - Experimentacion academica sobre filtrado y moderacion: un investigador podria analizar como se comporta el modelo ante prompts de distinta naturaleza para estudiar sesgos y fallos de los pipelines de difusion.
 - Prototipado rapido de un servicio de generacion de imagenes: al ser un archivo pequeno (293 MiB), permite iterar en un cuaderno o en un entorno de desarrollo sin reservar grandes recursos, aunque la ausencia de licencia clara impide llevarlo a produccion comercial.
-- Auditoria de procedencia de pesos: dado que el repositorio no declara licencia ni modelo base, puede servir como caso de estudio sobre trazabilidad en la publicacion de modelos en HuggingFace.
+- Auditoria de procedencia de pesos: dado que el repositorio no declara licencia ni modelo base, puede servir como caso de estudio sobre trazabilidad en la publicacion de modelos en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -82,7 +82,7 @@ No disponible. El repositorio no identifica el modelo base ni el dominio exacto,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RunningHubAI/rh-genitals-helper-v1.0-e219-checkpoint
+- Modelo en Hugging Face: https://huggingface.co/RunningHubAI/rh-genitals-helper-v1.0-e219-checkpoint
 - Pagina original del modelo en RunningHub: https://www.runninghub.ai/model/public/2020932802736295937
 - Perfil del autor en RunningHub: https://www.runninghub.ai/user-center/2019945744513110018
 - Plataforma RunningHub: https://www.runninghub.ai

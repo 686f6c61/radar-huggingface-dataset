@@ -64,7 +64,7 @@ No disponible. No existe una categoria de modelos comparable, ya que este reposi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/fangfengmaj/self-supervised-review5
+- Repositorio en Hugging Face: https://huggingface.co/fangfengmaj/self-supervised-review5
 - Referencias generales sobre SSL (no especificas del repositorio):
   - https://en.wikipedia.org/wiki/Self-supervised_learning
   - https://www.geeksforgeeks.org/machine-learning/self-supervised-learning-ssl/

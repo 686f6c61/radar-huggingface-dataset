@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje publicado por el usuario SAD21ZD1E en HuggingFace bajo licencia MIT. Según la model card, se trata de una versión actualizada de un modelo previo que ha mejorado significativamente su capacidad de razonamiento y de inferencia, gracias a un mayor uso de recursos computacionales y a la introducción de mecanismos de optimización algorítmica durante el post-entrenamiento. El autor afirma que el modelo muestra un rendimiento destacado en tareas de matemáticas, programación y lógica general, acercándose al nivel de otros modelos líderes.
+MyAwesomeModel es un modelo de lenguaje publicado por el usuario SAD21ZD1E en Hugging Face bajo licencia MIT. Según la model card, se trata de una versión actualizada de un modelo previo que ha mejorado significativamente su capacidad de razonamiento y de inferencia, gracias a un mayor uso de recursos computacionales y a la introducción de mecanismos de optimización algorítmica durante el post-entrenamiento. El autor afirma que el modelo muestra un rendimiento destacado en tareas de matemáticas, programación y lógica general, acercándose al nivel de otros modelos líderes.
 
 El repositorio, sin embargo, no contiene pesos publicados (tamaño 0.0 GB) y la model card no especifica detalles técnicos como arquitectura, número de parámetros o longitud de contexto. Los tags indican que está basado en transformers/PyTorch y que el pipeline es de extracción de características (feature-extraction), lo que sugiere una arquitectura tipo BERT, pero no se confirma. La relevancia actual del modelo es limitada, ya que no hay artefactos descargables ni información suficiente para su evaluación práctica.
 
@@ -88,7 +88,7 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace está vacío (0.0 GB), por lo que no hay pesos descargables ni es posible ejecutar el modelo.
+- El repositorio de Hugging Face está vacío (0.0 GB), por lo que no hay pesos descargables ni es posible ejecutar el modelo.
 - La model card es genérica y no proporciona detalles técnicos esenciales (arquitectura, parámetros, contexto, idiomas, formato de pesos).
 - Los benchmarks presentados son auto-reportados y no han sido verificados por la comunidad; los nombres de los modelos comparados son anónimos.
 - No se especifican sesgos conocidos ni riesgos de alucinación más allá de la afirmación de que se ha reducido la tasa de alucinación.
@@ -98,5 +98,5 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/SAD21ZD1E/MyAwesomeModel-TestRepo
+- Repositorio de Hugging Face: https://huggingface.co/SAD21ZD1E/MyAwesomeModel-TestRepo
 - No se proporcionan otros enlaces (papers, blogs, repos de código, demos) en la información disponible.

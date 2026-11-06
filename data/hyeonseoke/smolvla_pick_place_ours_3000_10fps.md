@@ -75,7 +75,7 @@ Los datos de OpenVLA y RT-2 no están confirmados en la información proporciona
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HyeonseokE/smolvla_pick_place_ours_3000_10fps
+- Hugging Face: https://huggingface.co/HyeonseokE/smolvla_pick_place_ours_3000_10fps
 - Paper SmolVLA: https://huggingface.co/papers/2506.01844
 - Dataset: https://huggingface.co/datasets/HyeonseokE/pick_place_ours_10fps
 - Guía LeRobot SmolVLA: https://huggingface.co/docs/lerobot/main/en/smolvla

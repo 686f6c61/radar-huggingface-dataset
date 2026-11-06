@@ -81,7 +81,7 @@ La principal ventaja de esta conversion frente al modelo original es la eficienc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FredrikKarlssonSpeech/nb-whisper-small-mlx-4bit
+- Modelo en Hugging Face: https://huggingface.co/FredrikKarlssonSpeech/nb-whisper-small-mlx-4bit
 - Modelo original: https://huggingface.co/NbAiLab/nb-whisper-small
 - Repositorio de NB-Whisper: https://github.com/NbAiLab/nb-whisper
 - Documentacion de mlx-whisper: https://github.com/ml-explore/mlx-examples/tree/main/whisper

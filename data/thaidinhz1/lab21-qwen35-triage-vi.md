@@ -4,7 +4,7 @@
 
 lab21-qwen35-triage-vi es un adaptador LoRA (PEFT) publicado por el usuario thaidinhz1 sobre el modelo base unsloth/Qwen3.5-4B. Se distribuye exclusivamente como pesos de adaptador en formato safetensors, con un tamano de repositorio de 0,1 GB, lo que confirma que no incluye los pesos completos del modelo base: para utilizarlo es imprescindible descargar y cargar previamente Qwen3.5-4B y aplicar despues el adaptador. El pipeline declarado es text-generation y la libreria asociada es peft, con etiquetas que indican un entrenamiento de tipo SFT (supervised fine-tuning) mediante TRL y Transformers.
 
-El nombre del repositorio sugiere un ajuste orientado a tareas de triaje (triage) y el sufijo "vi" apunta a vietnamita como idioma objetivo, pero se trata de una inferencia a partir de la nomenclatura: la model card no confirma ni el idioma, ni el dominio, ni el conjunto de datos de entrenamiento. De hecho, la model card es la plantilla generica de HuggingFace sin cumplimentar, con todos los campos marcados como "[More Information Needed]".
+El nombre del repositorio sugiere un ajuste orientado a tareas de triaje (triage) y el sufijo "vi" apunta a vietnamita como idioma objetivo, pero se trata de una inferencia a partir de la nomenclatura: la model card no confirma ni el idioma, ni el dominio, ni el conjunto de datos de entrenamiento. De hecho, la model card es la plantilla generica de Hugging Face sin cumplimentar, con todos los campos marcados como "[More Information Needed]".
 
 La relevancia de esta ficha es, por tanto, limitada y fundamentalmente critica: el modelo acumula cero descargas y cero likes, carece de licencia declarada, no documenta datos de entrenamiento ni evaluacion, y no aporta ningun dato verificable sobre rendimiento. Se trata de un artefacto experimental sin informacion suficiente para evaluar su idoneidad en produccion, y esta ficha refleja esa ausencia de datos de forma explicita en lugar de rellenar los huecos con suposiciones.
 
@@ -30,7 +30,7 @@ La relevancia de esta ficha es, por tanto, limitada y fundamentalmente critica: 
 
 La informacion disponible no describe la arquitectura del modelo base mas alla de su identificador (Qwen3.5-4B). No se especifica si se trata de un transformer denso convencional, de una variante con atencion lineal, de un modelo hibrido o de cualquier otra configuracion. Tampoco se documenta el numero de capas, dimensiones ocultas, cabezas de atencion ni la longitud de contexto soportada.
 
-Respecto al adaptador, las etiquetas del repositorio indican que se ha entrenado mediante SFT con las librerias TRL y Transformers, y que se distribuye en formato PEFT. No se proporciona el rango del LoRA, el valor de alpha, las capas objetivo, la tasa de aprendizaje, el numero de pasos, el tamano del dataset, su composicion ni si hubo fases posteriores de alineacion (RLHF, DPO u otras). Tampoco se indica el hardware ni el tiempo de entrenamiento. La referencia arXiv incluida entre las etiquetas (arxiv:1910.09700) corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono, que aparece citado en la plantilla generica de model card de HuggingFace, no a un paper propio de este modelo.
+Respecto al adaptador, las etiquetas del repositorio indican que se ha entrenado mediante SFT con las librerias TRL y Transformers, y que se distribuye en formato PEFT. No se proporciona el rango del LoRA, el valor de alpha, las capas objetivo, la tasa de aprendizaje, el numero de pasos, el tamano del dataset, su composicion ni si hubo fases posteriores de alineacion (RLHF, DPO u otras). Tampoco se indica el hardware ni el tiempo de entrenamiento. La referencia arXiv incluida entre las etiquetas (arxiv:1910.09700) corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono, que aparece citado en la plantilla generica de model card de Hugging Face, no a un paper propio de este modelo.
 
 ## Capacidades
 
@@ -74,7 +74,7 @@ No disponible. La busqueda web realizada no ha devuelto informacion relevante so
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: la model card es la plantilla generica de HuggingFace sin cumplimentar; no hay informacion sobre datos de entrenamiento, hiperparametros, evaluacion ni uso previsto.
+- Ausencia total de documentacion: la model card es la plantilla generica de Hugging Face sin cumplimentar; no hay informacion sobre datos de entrenamiento, hiperparametros, evaluacion ni uso previsto.
 - Licencia no declarada: sin licencia explicita, no puede asumirse ningun derecho de uso comercial. Ademas, la licencia del modelo base (unsloth/Qwen3.5-4B) condiciona la del adaptador y deberia verificarse por separado antes de cualquier uso.
 - Sin evaluacion publicada: no existen metricas de precision, robustez ni calidad de generacion, por lo que cualquier despliegue requiere una validacion propia y exhaustiva.
 - Riesgo de alucinacion: inherente a cualquier modelo generativo de este tamano; no hay datos especificos que permitan cuantificarlo en este adaptador.
@@ -88,7 +88,7 @@ No disponible. La busqueda web realizada no ha devuelto informacion relevante so
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/thaidinhz1/lab21-qwen35-triage-vi
+- Repositorio Hugging Face del adaptador: https://huggingface.co/thaidinhz1/lab21-qwen35-triage-vi
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-4B
 - Articulo citado en la plantilla de la model card (Lacoste et al., 2019, sobre estimacion de emisiones): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental citada en la plantilla: https://mlco2.github.io/impact

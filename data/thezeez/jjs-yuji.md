@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TheZeez/jjs-yuji es un repositorio de modelo publicado en HuggingFace por el usuario TheZeez el 11 de octubre de 2026, con licencia Apache 2.0 y un tamano de repositorio de 0,1 GB. La model card asociada no contiene ningun texto descriptivo: unicamente incluye la declaracion de licencia en el frontmatter YAML, sin informacion sobre arquitectura, datos de entrenamiento, capacidades o uso previsto.
+TheZeez/jjs-yuji es un repositorio de modelo publicado en Hugging Face por el usuario TheZeez el 11 de octubre de 2026, con licencia Apache 2.0 y un tamano de repositorio de 0,1 GB. La model card asociada no contiene ningun texto descriptivo: unicamente incluye la declaracion de licencia en el frontmatter YAML, sin informacion sobre arquitectura, datos de entrenamiento, capacidades o uso previsto.
 
 En el momento de la consulta el repositorio acumula 0 descargas y 0 likes, y no tiene pipeline declarado ni idiomas soportados en los metadatos. Esto indica que se trata de una publicacion sin adopcion publica conocida y sin documentacion tecnica verificable.
 
@@ -84,8 +84,8 @@ No disponible. No se ha identificado ningun modelo comparable, dado que se desco
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/TheZeez/jjs-yuji
-- Perfil del autor en HuggingFace: https://huggingface.co/TheZeez
+- Repositorio en Hugging Face: https://huggingface.co/TheZeez/jjs-yuji
+- Perfil del autor en Hugging Face: https://huggingface.co/TheZeez
 - Paper: no disponible
 - Blog o anuncio oficial: no disponible
 - Repositorio de codigo: no disponible

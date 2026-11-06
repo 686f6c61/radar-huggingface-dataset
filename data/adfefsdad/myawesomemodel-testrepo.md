@@ -2,15 +2,15 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje presentado por el usuario adfefsdad en HuggingFace, aunque el repositorio es un espacio de prueba (TestRepo) sin pesos descargables (0.0 GB) y sin descargas ni me gustas. Según la model card del autor, se trata de una actualización de una versión anterior que mejora la profundidad de razonamiento y la inferencia mediante mayor capacidad computacional y optimizaciones algorítmicas en el post-entrenamiento. El rendimiento en matemáticas, programación y lógica general es cercano al de otros modelos de referencia, y en el test AIME 2025 la precisión sube del 70 % al 87,5 %, con más tokens de razonamiento por pregunta (23K frente a 12K).
+MyAwesomeModel es un modelo de lenguaje presentado por el usuario adfefsdad en Hugging Face, aunque el repositorio es un espacio de prueba (TestRepo) sin pesos descargables (0.0 GB) y sin descargas ni me gustas. Según la model card del autor, se trata de una actualización de una versión anterior que mejora la profundidad de razonamiento y la inferencia mediante mayor capacidad computacional y optimizaciones algorítmicas en el post-entrenamiento. El rendimiento en matemáticas, programación y lógica general es cercano al de otros modelos de referencia, y en el test AIME 2025 la precisión sube del 70 % al 87,5 %, con más tokens de razonamiento por pregunta (23K frente a 12K).
 
-No se especifican la arquitectura, el número de parámetros ni la longitud de contexto en la información disponible. Los tags de HuggingFace sugieren una base en Transformers/PyTorch y 'feature-extraction', pero la model card describe tareas de generación y razonamiento propias de un LLM. La licencia es MIT y el modelo declara soporte de function calling y reducción de alucinaciones.
+No se especifican la arquitectura, el número de parámetros ni la longitud de contexto en la información disponible. Los tags de Hugging Face sugieren una base en Transformers/PyTorch y 'feature-extraction', pero la model card describe tareas de generación y razonamiento propias de un LLM. La licencia es MIT y el modelo declara soporte de function calling y reducción de alucinaciones.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (los tags de HuggingFace indican transformers/PyTorch y 'bert', sin confirmación del autor) |
+| Arquitectura | no disponible (los tags de Hugging Face indican transformers/PyTorch y 'bert', sin confirmación del autor) |
 | Parametros totales | no disponible |
 | Parametros activos | no disponible (no se indica si es MoE) |
 | Longitud de contexto | no disponible |
@@ -82,7 +82,7 @@ Se desconocen los nombres reales de los modelos de referencia Model1, Model2 y M
 
 ## Limitaciones y advertencias
 
-- Repositorio de prueba sin pesos (0.0 GB), sin descargas ni votos: no hay modelo ejecutable en HuggingFace.
+- Repositorio de prueba sin pesos (0.0 GB), sin descargas ni votos: no hay modelo ejecutable en Hugging Face.
 - La información técnica (arquitectura, parámetros, contexto, cuantizaciones) no está disponible.
 - Los benchmarks proceden del autor y no están verificados por terceros.
 - La identidad de los modelos de referencia (Model1, Model2, Model1-v2) no está especificada, lo que impide evaluar la relevancia de las comparaciones.
@@ -93,4 +93,4 @@ Se desconocen los nombres reales de los modelos de referencia Model1, Model2 y M
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/adfefsdad/MyAwesomeModel-TestRepo
+- Hugging Face: https://huggingface.co/adfefsdad/MyAwesomeModel-TestRepo

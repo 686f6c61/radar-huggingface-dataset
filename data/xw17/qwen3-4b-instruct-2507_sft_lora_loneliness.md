@@ -15,7 +15,7 @@ El repositorio `xw17/Qwen3-4B-Instruct-2507_SFT_lora_loneliness` es un adaptador
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponibles |
 | Licencia | no disponible |
-| Formato de pesos | safetensors (según tags de HuggingFace) |
+| Formato de pesos | safetensors (según tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -23,7 +23,7 @@ El modelo es un adaptador LoRA, es decir, un conjunto de matrices de bajo rango 
 
 ## Capacidades
 
-No se ha documentado ninguna capacidad específica en el model card. Se desconoce si el adaptador añade o modifica funcionalidades respecto al modelo base, ya que no hay información sobre el dataset de entrenamiento ni el objetivo del fine-tuning. Los tags de HuggingFace incluyen `transformers` y `endpoints_compatible`, pero no se detallan tareas concretas, soporte de tool calling, capacidades multimodales ni habilidades de razonamiento.
+No se ha documentado ninguna capacidad específica en el model card. Se desconoce si el adaptador añade o modifica funcionalidades respecto al modelo base, ya que no hay información sobre el dataset de entrenamiento ni el objetivo del fine-tuning. Los tags de Hugging Face incluyen `transformers` y `endpoints_compatible`, pero no se detallan tareas concretas, soporte de tool calling, capacidades multimodales ni habilidades de razonamiento.
 
 ## Casos de uso
 

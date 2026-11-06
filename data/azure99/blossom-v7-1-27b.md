@@ -23,7 +23,7 @@ Es relevante ahora porque combina una ventana de contexto de 262.144 tokens (256
 | Tamano del repositorio | 55,6 GB |
 | Modalidades de entrada | Texto e imagen |
 | Modos de razonamiento | `medium` y `max` (por defecto `max`), razonamiento siempre activo |
-| Fecha de publicacion | 12 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 12 de septiembre de 2026 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -93,7 +93,7 @@ La informacion disponible no incluye comparaciones con modelos de terceros ni re
 | Blossom-V7.1-27B | 27,8B densos | 262.144 tokens | Texto e imagen | Apache-2.0 | Safetensors y GGUF; demo en Spaces |
 | Blossom-V7.1-35B-A3B | 35B totales, 3B activos (MoE) | No disponible | Texto e imagen | Apache-2.0 | Safetensors y GGUF; demo en Spaces |
 | Blossom-V7.1-9B | 9B | No disponible | Texto e imagen | Apache-2.0 | Safetensors y GGUF; demo en Spaces |
-| Qwen3.8-27B (modelo base) | 27B | No disponible | Texto | No disponible en la informacion proporcionada | HuggingFace |
+| Qwen3.8-27B (modelo base) | 27B | No disponible | Texto | No disponible en la informacion proporcionada | Hugging Face |
 
 Segun la model card, la variante de 27B es la opcion densa mas capaz y esta pensada para GPU con los pesos enteros en memoria; la de 35B-A3B prioriza throughput en CPU o configuraciones hibridas; la de 9B es la de menores requisitos. No hay datos de rendimiento comparativo entre ellas ni frente a modelos externos de tamano similar.
 
@@ -113,7 +113,7 @@ Segun la model card, la variante de 27B es la opcion densa mas capaz y esta pens
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Azure99/Blossom-V7.1-27B
+- Modelo en Hugging Face: https://huggingface.co/Azure99/Blossom-V7.1-27B
 - Repositorio GGUF: https://huggingface.co/Azure99/Blossom-V7.1-27B-GGUF
 - Demo en Spaces: https://huggingface.co/spaces/Azure99/Blossom-27B-Demo
 - Repositorio GitHub del proyecto: https://github.com/Azure99/BlossomLM

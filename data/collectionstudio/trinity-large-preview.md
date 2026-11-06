@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Trinity-Large-Preview es un modelo de lenguaje de gran escala, tipo Mixture of Experts (MoE) sparse, desarrollado por Arcee AI y distribuido en HuggingFace bajo el repositorio CollectionStudio/Trinity-Large-Preview. Es la variante "Preview" de la familia Trinity Large, un modelo pensado para conversación y chat, que se encuentra en fase de post-entrenamiento con RL activo. Con 398.635 millones de parámetros totales y aproximadamente 13.000 millones de parámetros activos por token, ofrece un rendimiento frontera con un coste de inferencia mucho menor que un modelo denso equivalente.
+Trinity-Large-Preview es un modelo de lenguaje de gran escala, tipo Mixture of Experts (MoE) sparse, desarrollado por Arcee AI y distribuido en Hugging Face bajo el repositorio CollectionStudio/Trinity-Large-Preview. Es la variante "Preview" de la familia Trinity Large, un modelo pensado para conversación y chat, que se encuentra en fase de post-entrenamiento con RL activo. Con 398.635 millones de parámetros totales y aproximadamente 13.000 millones de parámetros activos por token, ofrece un rendimiento frontera con un coste de inferencia mucho menor que un modelo denso equivalente.
 
 El modelo fue preentrenado con más de 17 billones de tokens y después ajustado por instrucciones con 20.000 millones de tokens. Su arquitectura sparse MoE, con 256 expertos y una routing 4-de-256, permite activar solo el 1,56% de los parámetros en cada paso. La longitud de contexto se extiende hasta 512.000 tokens, lo que lo hace adecuado para tareas con documentos largos. Trinity-Large-Preview se apoya en una arquitectura AfmoeForCausalLM y es compatible con Transformers, vLLM, llama.cpp y LM Studio.
 

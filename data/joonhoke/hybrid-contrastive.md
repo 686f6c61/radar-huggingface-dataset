@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Hybrid for Contrastive es un repositorio de HuggingFace publicado por el usuario joonhoke que contiene una implementación propia y compacta en PyTorch de una arquitectura denominada Hybrid, orientada a tareas de aprendizaje contrastivo. No se trata de un modelo preentrenado ni ajustado, sino de un punto de partida experimental: el propio autor indica que la configuración nano está pensada para revisión de código, pruebas de humo y experimentos pequeños y controlados, no como un lanzamiento listo para producción.
+Hybrid for Contrastive es un repositorio de Hugging Face publicado por el usuario joonhoke que contiene una implementación propia y compacta en PyTorch de una arquitectura denominada Hybrid, orientada a tareas de aprendizaje contrastivo. No se trata de un modelo preentrenado ni ajustado, sino de un punto de partida experimental: el propio autor indica que la configuración nano está pensada para revisión de código, pruebas de humo y experimentos pequeños y controlados, no como un lanzamiento listo para producción.
 
 El checkpoint incluido (model.safetensors) contiene únicamente 16.576 parámetros reales según los metadatos de safetensors, lo que lo sitúa en un rango de juguete dentro del ecosistema de modelos. La model card especifica que se trata de una inicialización válida para smoke tests y que no se reclama ninguna puntuación de benchmark. La arquitectura declarada combina atención multi-query, una fusión con compuertas (gated fusion), activación GELU y normalización por lotes (batchnorm).
 
@@ -65,7 +65,7 @@ No disponible. No se conocen modelos comparables publicados en la misma categori
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| joonhoke/hybrid-contrastive | 16.576 | no disponible | No evaluado | apache-2.0 | HuggingFace |
+| joonhoke/hybrid-contrastive | 16.576 | no disponible | No evaluado | apache-2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -81,5 +81,5 @@ No disponible. No se conocen modelos comparables publicados en la misma categori
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joonhoke/hybrid-contrastive
+- Modelo en Hugging Face: https://huggingface.co/joonhoke/hybrid-contrastive
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la informacion disponible.

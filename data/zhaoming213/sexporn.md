@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SexPorn es un modelo de generacion de texto en chino publicado en HuggingFace por el usuario Zhaoming213, con ZeLi111 como colaborador. Se trata de un modelo de lenguaje de tipo decoder-only y tamano reducido: su configuracion declarada es de 768 dimensiones ocultas, 8 capas y 8 cabezales de atencion, con una longitud maxima de secuencia de 512 tokens. El repositorio ocupa 0,2 GB y los pesos se distribuyen en formato safetensors, convertidos segun el autor al formato "Transformers-Llama" para poder cargarse con cargadores estandar.
+SexPorn es un modelo de generacion de texto en chino publicado en Hugging Face por el usuario Zhaoming213, con ZeLi111 como colaborador. Se trata de un modelo de lenguaje de tipo decoder-only y tamano reducido: su configuracion declarada es de 768 dimensiones ocultas, 8 capas y 8 cabezales de atencion, con una longitud maxima de secuencia de 512 tokens. El repositorio ocupa 0,2 GB y los pesos se distribuyen en formato safetensors, convertidos segun el autor al formato "Transformers-Llama" para poder cargarse con cargadores estandar.
 
 El objetivo declarado del proyecto no es la calidad tecnica ni el rendimiento en tareas de razonamiento, sino la ausencia de filtros: el autor sostiene que los modelos comerciales aplican rechazos excesivos y presenta este modelo como una alternativa "sin restricciones" en materia de contenido. La model card incluye un ejemplo de salida con contenido sexual explicito en chino, ademas de una tabla comparativa cualitativa de "tasas de rechazo" entre modelos comerciales que carece de metodologia, de cifras y de verificacion independiente.
 
@@ -84,7 +84,7 @@ La informacion proporcionada no incluye datos medidos de modelos comparables, y 
 | Rendimiento en benchmarks | Sin datos publicados | No disponible |
 | Datos de entrenamiento | No documentados (2 x T4, >24 h de preentrenamiento) | No disponible |
 | Licencia | MIT | No disponible |
-| Disponibilidad | HuggingFace, 0 descargas, 0 likes | No disponible |
+| Disponibilidad | Hugging Face, 0 descargas, 0 likes | No disponible |
 | Ajuste de seguridad | Inexistente por diseno | No disponible |
 
 Categorias de comparacion que resultarian pertinentes, sin datos numericos en la informacion analizada: modelos pequenos de la familia Qwen, TinyLlama y otras alternativas de menos de 1 B de parametros con soporte nativo de chino y contexto muy superior a 512 tokens; y modelos de la comunidad etiquetados como "uncensored", que comparten el enfoque de ausencia de filtros pero no la escala ni el idioma.
@@ -99,13 +99,13 @@ Categorias de comparacion que resultarian pertinentes, sin datos numericos en la
 - Limitacion idiomatica: solo se declara chino. No hay evidencia de un rendimiento util en castellano ni en otras lenguas.
 - Ausencia de formato de chat: no se documenta plantilla de tokens ni delimitadores, por lo que el comportamiento conversacional depende de como se formatee el prompt y es poco predecible.
 - Reproducibilidad: no se publican el dataset, el tokenizador, los hiperparametros ni las curvas de entrenamiento, lo que impide reproducir o auditar el modelo. Los metadatos indican 0 descargas y 0 likes, por lo que no existe una comunidad que haya validado su funcionamiento.
-- Incoherencia en los metadatos: las fechas de creacion y actualizacion del repositorio figuran como septiembre de 2026, posteriores a la fecha de publicacion de la informacion analizada. Conviene verificar la fidelidad de esos campos en la pagina de HuggingFace.
+- Incoherencia en los metadatos: las fechas de creacion y actualizacion del repositorio figuran como septiembre de 2026, posteriores a la fecha de publicacion de la informacion analizada. Conviene verificar la fidelidad de esos campos en la pagina de Hugging Face.
 - Inexistencia de cuantizaciones oficiales: no hay GGUF ni cuantizaciones publicadas, por lo que cualquier despliegue con llama.cpp, Ollama o similar exige una conversion previa y su validacion.
 - Cualquier uso en produccion orientado al usuario final requeriria una capa de moderacion propia, filtrado de entrada y salida, registro de auditoria y evaluacion legal especifica por jurisdiccion.
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/Zhaoming213/SexPorn
+- Pagina del modelo en Hugging Face: https://huggingface.co/Zhaoming213/SexPorn
 - Perfil del colaborador declarado (ZeLi111): https://huggingface.co/ZeLi111
 - Herramienta de exportacion de conversaciones de ChatGPT citada en la model card: https://github.com/tom12191h5/Export-ChatGPT-Dialogue
 - Plugin "ChatGPT-Refuse-Blocker" citado en la model card: https://github.com/tom12191h5/ChatGPT-Refuse-Blocker

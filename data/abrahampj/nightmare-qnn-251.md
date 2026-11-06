@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Artefacto | Tipo | Cobertura de hardware | Verificacion de integridad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `AbrahamPJ/nightmare-qnn-251` | Bibliotecas QNN HTP (QAIRT 2.51.0.260929) | Hexagon v68 a v85 | SHA-256 por fichero | `other` (qualcomm-ai-runtime) | HuggingFace, 0 descargas, 0 likes |
+| `AbrahamPJ/nightmare-qnn-251` | Bibliotecas QNN HTP (QAIRT 2.51.0.260929) | Hexagon v68 a v85 | SHA-256 por fichero | `other` (qualcomm-ai-runtime) | Hugging Face, 0 descargas, 0 likes |
 | QAIRT oficial (Qualcomm AI Runtime Community) | Runtime completo | Según release oficial | No documentado en la model card | Términos de Qualcomm | Canal oficial de Qualcomm |
 | Empaquetado completo en APK | Bibliotecas QNN HTP embebidas | Todas las variantes incluidas | No aplica (van en el paquete) | Términos de Qualcomm | Distribución vía tienda de aplicaciones |
 
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones en la inf
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AbrahamPJ/nightmare-qnn-251
+- Repositorio en Hugging Face: https://huggingface.co/AbrahamPJ/nightmare-qnn-251
 - Qualcomm AI Runtime Community (origen de los binarios QAIRT 2.51.0.260929): no se proporciona URL en la información disponible.
 - Documentación de QNN / QAIRT: no se proporciona URL en la información disponible.
 - Aplicación Nightmare Mobile: no se proporciona URL en la información disponible.

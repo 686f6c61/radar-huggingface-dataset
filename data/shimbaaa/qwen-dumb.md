@@ -70,8 +70,8 @@ No se dispone de informacion sobre modelos comparables especificos de tool-calli
 
 ## Enlaces
 
-- [HuggingFace: shimbaaa/Qwen-Dumb](https://huggingface.co/shimbaaa/Qwen-Dumb)
+- [Hugging Face: shimbaaa/Qwen-Dumb](https://huggingface.co/shimbaaa/Qwen-Dumb)
 - [Modelo base: unsloth/Qwen2.5-0.5B-Instruct](https://huggingface.co/unsloth/Qwen2.5-0.5B-Instruct)
-- [Perfil del autor en HuggingFace](https://huggingface.co/shimbaaa)
+- [Perfil del autor en Hugging Face](https://huggingface.co/shimbaaa)
 - [Qwen AI - sitio oficial](https://qwen.ai/home)
 - [Qwen AI - modelos avanzados](https://www.qwen-ai.tech/)

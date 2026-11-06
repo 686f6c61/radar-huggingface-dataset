@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`francy022302/agente` es un repositorio publicado en HuggingFace por el usuario `francy022302`. La model card asociada es prácticamente vacía: únicamente declara la licencia Apache 2.0, sin descripción del modelo, arquitectura, datos de entrenamiento ni propósito. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) y no tiene pipeline de inferencia declarado, lo que sugiere que no se ha publicado como un modelo listo para uso directo.
+`francy022302/agente` es un repositorio publicado en Hugging Face por el usuario `francy022302`. La model card asociada es prácticamente vacía: únicamente declara la licencia Apache 2.0, sin descripción del modelo, arquitectura, datos de entrenamiento ni propósito. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) y no tiene pipeline de inferencia declarado, lo que sugiere que no se ha publicado como un modelo listo para uso directo.
 
 No se dispone de información sobre arquitectura, número de parámetros, longitud de contexto, idiomas soportados ni formato de pesos. El nombre "agente" podría indicar la intención de construir un modelo orientado a tareas de agente (tool calling, razonamiento multi-paso), pero no hay evidencia técnica en la información proporcionada que lo confirme.
 
@@ -67,7 +67,7 @@ No disponible. No se puede establecer una comparativa sin conocer el tamaño, la
 
 - Ausencia total de documentación técnica: no se puede verificar qué hace el modelo ni cómo se entrenó.
 - Model card vacía: solo contiene la declaración de licencia, sin descripción ni instrucciones de uso.
-- Sin pipeline de inferencia declarado en HuggingFace, lo que impide su uso directo a través de la API del hub.
+- Sin pipeline de inferencia declarado en Hugging Face, lo que impide su uso directo a través de la API del hub.
 - Sin descargas ni validación por parte de la comunidad (0 descargas, 0 likes).
 - Riesgo de sesgos y alucinaciones desconocido al no haber información sobre datos de entrenamiento.
 - Licencia Apache 2.0 declarada, pero sin confirmación de que los pesos y datos subyacentes sean compatibles con dicha licencia.
@@ -75,4 +75,4 @@ No disponible. No se puede establecer una comparativa sin conocer el tamaño, la
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/francy022302/agente
+- Repositorio en Hugging Face: https://huggingface.co/francy022302/agente

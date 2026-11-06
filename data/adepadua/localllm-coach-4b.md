@@ -17,7 +17,7 @@ Su relevancia actual reside en dos factores: por un lado, cubre un nicho poco at
 | Parametros activos | No aplica: no es un modelo MoE |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | GGUF; el ejemplo de uso de la model card emplea Q4_K_M. El repositorio ocupa 2,5 GB, coherente con una cuantizacion de 4 bits |
-| Idiomas soportados | Espanol (segun la model card). Los metadatos de HuggingFace no declaran idiomas |
+| Idiomas soportados | Espanol (segun la model card). Los metadatos de Hugging Face no declaran idiomas |
 | Licencia | health-ai-developer-foundations (etiquetada como "other"), heredada del modelo base MedGemma, mas las condiciones de Gemma de Google |
 | Formato de pesos | GGUF (safetensors no disponible en el repositorio publicado) |
 
@@ -56,7 +56,7 @@ El dataset combina una semilla curada a mano de aproximadamente 57 ejemplos con 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye métricas cuantitativas (MMLU, HumanEval, GSM8K ni evaluaciones clínicas) y el repositorio de HuggingFace no registra descargas ni valoraciones que permitan inferir un rendimiento comparado.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye métricas cuantitativas (MMLU, HumanEval, GSM8K ni evaluaciones clínicas) y el repositorio de Hugging Face no registra descargas ni valoraciones que permitan inferir un rendimiento comparado.
 
 ## Requisitos de hardware
 
@@ -77,9 +77,9 @@ Los datos de los modelos de referencia no forman parte de la informacion proporc
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| localllm-coach-4b | 3,88 B | no disponible | health-ai-developer-foundations (other) | GGUF en HuggingFace |
-| google/medgemma-1.5-4b-it (modelo base) | no disponible en la informacion proporcionada | no disponible | Health AI Developer Foundations | HuggingFace |
-| gemma-3-4b-it (familia del modelo base) | no disponible en la informacion proporcionada | no disponible | Terminos de Gemma | HuggingFace |
+| localllm-coach-4b | 3,88 B | no disponible | health-ai-developer-foundations (other) | GGUF en Hugging Face |
+| google/medgemma-1.5-4b-it (modelo base) | no disponible en la informacion proporcionada | no disponible | Health AI Developer Foundations | Hugging Face |
+| gemma-3-4b-it (familia del modelo base) | no disponible en la informacion proporcionada | no disponible | Terminos de Gemma | Hugging Face |
 | Asistentes de salud en espanol de tamano similar | no disponible | no disponible | no disponible | no disponible |
 
 La diferencia funcional del ajuste frente a su modelo base es el enfoque: mientras que MedGemma es un modelo medico de proposito general, localllm-coach-4b esta especializado en datos de wearables, formato de respuesta fijo y registro conversacional en castellano orientado a bienestar y no a diagnostico.
@@ -90,16 +90,16 @@ La diferencia funcional del ajuste frente a su modelo base es el enfoque: mientr
 - Riesgo de alucinacion: el modelo puede inventar valores de referencia, interpretaciones fisiologicas o rangos normales que no se correspondan con la evidencia clinica.
 - Dataset de entrenamiento muy reducido: la semilla curada a mano consta de unos 57 ejemplos, ampliada con generacion sintetica verificada por un modelo profesor. Este diseno eleva el riesgo de sobreajuste a los formatos y escenarios vistos durante el entrenamiento.
 - Trazabilidad limitada de los datos sinteticos: aunque los candidatos pasan una rubrica de verificacion, no se documenta una validacion clinica externa ni una evaluacion con pacientes reales.
-- Idiomas: el modelo esta orientado a espanol; los metadatos de HuggingFace no declaran idiomas soportados y no hay informacion sobre el comportamiento en otras lenguas.
+- Idiomas: el modelo esta orientado a espanol; los metadatos de Hugging Face no declaran idiomas soportados y no hay informacion sobre el comportamiento en otras lenguas.
 - Longitud de contexto: no disponible, lo que impide valorar su idoneidad para historicos largos de wearables sin truncar datos.
 - Restricciones de licencia: se aplican los terminos Health AI Developer Foundations de Google mas las condiciones de Gemma. Es imprescindible revisarlos antes de cualquier uso comercial, dado que la licencia aparece etiquetada como "other" y no como una licencia de codigo abierto estandar.
 - Adopcion nula registrada: el repositorio figura con 0 descargas y 0 valoraciones, por lo que no existe retroalimentacion de la comunidad sobre su comportamiento en produccion.
-- Anomalia en los metadatos: la fecha de creacion indicada en HuggingFace (2026-09-26) es posterior a la fecha habitual de publicacion; conviene verificarla antes de citarla.
+- Anomalia en los metadatos: la fecha de creacion indicada en Hugging Face (2026-09-26) es posterior a la fecha habitual de publicacion; conviene verificarla antes de citarla.
 - Uso responsable: cualquier integracion en producto deberia incorporar filtros de seguridad, mensajes de derivacion medica y validacion con profesionales antes de exponerse a usuarios finales.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/adepadua/localllm-coach-4b
+- Modelo en Hugging Face: https://huggingface.co/adepadua/localllm-coach-4b
 - Modelo base: https://huggingface.co/google/medgemma-1.5-4b-it
 - Proyecto localllm (Substanze): https://substanze.ai
 - Terminos Health AI Developer Foundations (Google): no disponible en la informacion proporcionada

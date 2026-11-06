@@ -67,6 +67,6 @@ No se dispone de más información sobre otros modelos comparables en la búsque
 - No se han publicado resultados en benchmarks externos, por lo que la comparación con otros modelos es limitada.
 
 ## Enlaces
-- [Modelo en HuggingFace](https://huggingface.co/ivanleomk/resnet18-svhn)
+- [Modelo en Hugging Face](https://huggingface.co/ivanleomk/resnet18-svhn)
 - [Modelo alternativo `edadaltocg/resnet18_svhn`](https://huggingface.co/edadaltocg/resnet18_svhn)
 - [Repositorio GitHub con otro entrenamiento ResNet en SVHN](https://github.com/Jahn1998/ResNetBuiltSVHN)

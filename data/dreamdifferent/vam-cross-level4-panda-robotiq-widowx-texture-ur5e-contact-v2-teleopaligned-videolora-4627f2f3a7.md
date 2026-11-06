@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VAM-Cross MimicVideo World2Action decoder es un checkpoint de un decodificador de acciones ("World2Action") para robotica, publicado por el usuario `dreamdifferent` en HuggingFace. No es un modelo de lenguaje: se trata de un componente de un sistema de aprendizaje por imitacion que traduce representaciones de video (generadas por un backbone Video2World) en comandos de accion de un brazo robotico. El repositorio corresponde a la iteracion 1800 del decodificador dentro del entrenamiento `w2a_panda_robotiq_level4_widowx_texture_2cam_hstack_ur5e_contact_v2_action_iter2374_videolora_iter400_widowx_teleop_recording_frame_v1`, que finalizo con estado `completed`.
+VAM-Cross MimicVideo World2Action decoder es un checkpoint de un decodificador de acciones ("World2Action") para robotica, publicado por el usuario `dreamdifferent` en Hugging Face. No es un modelo de lenguaje: se trata de un componente de un sistema de aprendizaje por imitacion que traduce representaciones de video (generadas por un backbone Video2World) en comandos de accion de un brazo robotico. El repositorio corresponde a la iteracion 1800 del decodificador dentro del entrenamiento `w2a_panda_robotiq_level4_widowx_texture_2cam_hstack_ur5e_contact_v2_action_iter2374_videolora_iter400_widowx_teleop_recording_frame_v1`, que finalizo con estado `completed`.
 
 El modelo forma parte del stack MimicVideo (commit fijado `e3355dbc93132b576c02f920a59b4fc18a4f5906`) y depende de tres entradas congeladas: un backbone Video2World inicial (`dreamdifferent/widowx250-video-fused`), un decodificador de accion inicial (`dreamdifferent/vam-cross-target-widowx250-native-2cam-action-decoder`) y una Video LoRA congelada (`dreamdifferent/vam-cross-level4-panda-robotiq-widowx-texture-ur5e-contact-v2-video-lora-iter400`). El contrato de datos define 174 episodios y 54.730 fotogramas con dos camaras, y un objetivo de 15 acciones de efector final y pinza a 5 Hz.
 
@@ -103,7 +103,7 @@ No se dispone de informacion sobre modelos alternativos comparables (ni parametr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dreamdifferent/vam-cross-level4-panda-robotiq-widowx-texture-ur5e-contact-v2-teleopaligned-videolora-4627f2f3a7
+- Modelo en Hugging Face: https://huggingface.co/dreamdifferent/vam-cross-level4-panda-robotiq-widowx-texture-ur5e-contact-v2-teleopaligned-videolora-4627f2f3a7
 - Backbone Video2World inicial: https://huggingface.co/dreamdifferent/widowx250-video-fused
 - Decodificador de accion inicial: https://huggingface.co/dreamdifferent/vam-cross-target-widowx250-native-2cam-action-decoder
 - Video LoRA congelada (iter400): https://huggingface.co/dreamdifferent/vam-cross-level4-panda-robotiq-widowx-texture-ur5e-contact-v2-video-lora-iter400

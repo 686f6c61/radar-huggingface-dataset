@@ -91,7 +91,7 @@ No se dispone de información sobre el rendimiento de los otros modelos en bench
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/model-organisms-for-real/automo-kd-mixed-olmo-to-gemma-italianfood-dpo-unmixed)
+- [Modelo en Hugging Face](https://huggingface.co/model-organisms-for-real/automo-kd-mixed-olmo-to-gemma-italianfood-dpo-unmixed)
 - [Modelo similar: automo-kd-mixed-gemma-to-olmo-italianfood-dpo-mixed](https://huggingface.co/model-organisms-for-real/automo-kd-mixed-gemma-to-olmo-italianfood-dpo-mixed)
 - [Modelo similar: automo-kd-unmixed-olmo-to-gemma-italianfood-fd-mixed](https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-olmo-to-gemma-italianfood-fd-mixed)
 - [Repositorio GitHub: model-organism-lottery](https://github.com/model-organisms-for-real/model-organism-lottery)

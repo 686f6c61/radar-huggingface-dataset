@@ -106,7 +106,7 @@ Frente a cuantizaciones de mayor precision (por ejemplo Q4_K_M o Q8_0 del mismo 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/jkim96/Seed-Coder-8B-Instruct-DASHQ-Q2-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/jkim96/Seed-Coder-8B-Instruct-DASHQ-Q2-GGUF
 - Modelo base: https://huggingface.co/ByteDance-Seed/Seed-Coder-8B-Instruct
 - Herramienta DASH-Q: https://github.com/JaeminK/dashq
 - Cuantizaciones de referencia de unsloth: https://huggingface.co/unsloth/Seed-Coder-8B-Instruct-GGUF

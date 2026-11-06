@@ -63,7 +63,7 @@ No se dispone de datos comparativos con otros modelos en la información proporc
 - No se han proporcionado instrucciones sobre la licencia, lo que puede generar problemas de cumplimiento legal.
 
 ## Enlaces
-- HuggingFace: [Echoo113/Llama-3.2-3B-Instruct-immigration_prompted-ft4.44](https://huggingface.co/Echoo113/Llama-3.2-3B-Instruct-immigration_prompted-ft4.44)
+- Hugging Face: [Echoo113/Llama-3.2-3B-Instruct-immigration_prompted-ft4.44](https://huggingface.co/Echoo113/Llama-3.2-3B-Instruct-immigration_prompted-ft4.44)
 - Modelo base: [meta-llama/Llama-3.2-3B-Instruct](https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct)
 - Documentación de Llama 3.2: [developer.meta.com](https://developer.meta.com/ai/docs/model-cards-and-prompt-formats/llama3_2/)
 - Repositorio de ejemplo en GitHub: [Gusiion/meta-llama-Llama-3.2-3B-Instruct](https://github.com/Gusiion/meta-llama-Llama-3.2-3B-Instruct)

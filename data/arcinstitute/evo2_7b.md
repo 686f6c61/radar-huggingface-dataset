@@ -55,10 +55,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 ## Comparativa con modelos similares
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Evo 2 7B | 7B | 1.000.000 | Apache-2.0 | HuggingFace |
-| Evo 2 7B base | 7B | 8.192 | Apache-2.0 | HuggingFace |
-| Evo 2 40B | 40B | 1.000.000 | Apache-2.0 | HuggingFace |
-| Evo 2 1B base | 1B | 8.192 | Apache-2.0 | HuggingFace |
+| Evo 2 7B | 7B | 1.000.000 | Apache-2.0 | Hugging Face |
+| Evo 2 7B base | 7B | 8.192 | Apache-2.0 | Hugging Face |
+| Evo 2 40B | 40B | 1.000.000 | Apache-2.0 | Hugging Face |
+| Evo 2 1B base | 1B | 8.192 | Apache-2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 - Es un modelo de ADN, no un modelo de lenguaje natural: no admite instrucciones en texto ni conversaciones.
@@ -70,13 +70,13 @@ No se han publicado resultados de benchmarks en la información disponible.
 - No se especifican cuantizaciones oficiales ni formatos alternativos de pesos, lo que puede limitar el despliegue en hardware modesto.
 
 ## Enlaces
-- [HuggingFace: arcinstitute/evo2_7b](https://huggingface.co/arcinstitute/evo2_7b)
+- [Hugging Face: arcinstitute/evo2_7b](https://huggingface.co/arcinstitute/evo2_7b)
 - [GitHub: ArcInstitute/evo2](https://github.com/arcinstitute/evo2)
 - [Paper en bioRxiv](https://www.biorxiv.org/content/10.1101/2025.02.18.638918v1)
 - [Evo Designer](https://arcinstitute.org/tools/evo/evo-designer)
 - [Blog: Evo 2 One Year Later](https://arcinstitute.org/news/evo-2-one-year-later)
-- [HuggingFace: arcinstitute/evo2_40b](https://huggingface.co/arcinstitute/evo2_40b)
-- [HuggingFace: arcinstitute/evo2_7b_base](https://huggingface.co/arcinstitute/evo2_7b_base)
-- [HuggingFace: arcinstitute/evo2_1b_base](https://huggingface.co/arcinstitute/evo2_1b_base)
-- [HuggingFace: Aquiles-ai/Evo2-7B](https://huggingface.co/Aquiles-ai/Evo2-7B)
+- [Hugging Face: arcinstitute/evo2_40b](https://huggingface.co/arcinstitute/evo2_40b)
+- [Hugging Face: arcinstitute/evo2_7b_base](https://huggingface.co/arcinstitute/evo2_7b_base)
+- [Hugging Face: arcinstitute/evo2_1b_base](https://huggingface.co/arcinstitute/evo2_1b_base)
+- [Hugging Face: Aquiles-ai/Evo2-7B](https://huggingface.co/Aquiles-ai/Evo2-7B)
 - [AI/TLDR: Evo 2](https://ai-tldr.dev/tools/evo2/)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Ahmettahaahmet/tyt-uzmanlar` es un modelo de lenguaje conversacional de aproximadamente 1.800 millones de parámetros, publicado en HuggingFace por el usuario Ahmettahaahmet. Su nombre sugiere una especialización en el ámbito de la preparación del examen de acceso a la universidad en Turquía (TYT, Temel Yeterlilik Testi), aunque no se dispone de documentación oficial que confirme esta finalidad.
+El modelo `Ahmettahaahmet/tyt-uzmanlar` es un modelo de lenguaje conversacional de aproximadamente 1.800 millones de parámetros, publicado en Hugging Face por el usuario Ahmettahaahmet. Su nombre sugiere una especialización en el ámbito de la preparación del examen de acceso a la universidad en Turquía (TYT, Temel Yeterlilik Testi), aunque no se dispone de documentación oficial que confirme esta finalidad.
 
 El repositorio contiene archivos en formato GGUF (según las etiquetas), lo que indica que está optimizado para inferencia local con herramientas como llama.cpp u Ollama. También se etiqueta como compatible con endpoints, lo que facilita su despliegue en servicios de inferencia. A pesar de su tamaño moderado, el volumen del repositorio (19 GB) sugiere la inclusión de múltiples cuantizaciones.
 
@@ -72,4 +72,4 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ahmettahaahmet/tyt-uzmanlar
+- Repositorio en Hugging Face: https://huggingface.co/Ahmettahaahmet/tyt-uzmanlar

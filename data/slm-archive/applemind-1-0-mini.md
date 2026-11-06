@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AppleMind-1.0-Mini es un modelo de lenguaje causal decoder-only entrenado desde cero por SLM-Archive (proyecto AppleMind) sobre un currículo de aproximadamente 300 millones de tokens. Se trata de un modelo extremadamente pequeno: 1.020.480 parametros, 4 capas, dimension oculta de 128 y una ventana de contexto de solo 256 tokens. Usa una arquitectura Transformer estandar con atencion causal multi-cabeza, LayerNorm, embeddings posicionales aprendidos y embeddings de entrada/salida atados, expuesta en HuggingFace como `GPT2LMHeadModel` (tipo `gpt2`).
+AppleMind-1.0-Mini es un modelo de lenguaje causal decoder-only entrenado desde cero por SLM-Archive (proyecto AppleMind) sobre un currículo de aproximadamente 300 millones de tokens. Se trata de un modelo extremadamente pequeno: 1.020.480 parametros, 4 capas, dimension oculta de 128 y una ventana de contexto de solo 256 tokens. Usa una arquitectura Transformer estandar con atencion causal multi-cabeza, LayerNorm, embeddings posicionales aprendidos y embeddings de entrada/salida atados, expuesta en Hugging Face como `GPT2LMHeadModel` (tipo `gpt2`).
 
 El modelo se distribuye como modelo base (no instruido, sin fine-tuning conversacional pese a la etiqueta `conversational`) bajo licencia Apache 2.0, en formato safetensors, y esta pensado como ejercicio de preentrenamiento reproducible y como pieza didactica para estudiar el escalado de modelos de lenguaje muy pequenos. No resuelve tareas de produccion: su calidad de generacion, segun la propia model card, es incoherente incluso en prompts triviales como "Once upon a time".
 
@@ -12,7 +12,7 @@ Su relevancia actual es fundamentalmente academica: sirve como referencia minima
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only causal (AppleMind 1.0 Mini); `GPT2LMHeadModel` en HuggingFace |
+| Arquitectura | Transformer decoder-only causal (AppleMind 1.0 Mini); `GPT2LMHeadModel` en Hugging Face |
 | Parametros totales | 1.020.480 |
 | Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | 256 tokens |
@@ -49,7 +49,7 @@ El preentrenamiento se hizo con 299.892.736 tokens (objetivo 300M), una mezcla e
 ## Capacidades
 
 - Generacion de texto autoregresiva basica: continuacion de prompts cortos en ingles. La propia model card reconoce que la calidad es pobre y muestra una salida incoherente para "Once upon a time".
-- Modelo base sin instrucciones: no esta alineado ni ajustado para seguir instrucciones, pese a la etiqueta `conversational` presente en los tags de HuggingFace.
+- Modelo base sin instrucciones: no esta alineado ni ajustado para seguir instrucciones, pese a la etiqueta `conversational` presente en los tags de Hugging Face.
 - Manejo de digitos a nivel de token individual gracias al tokenizador digit-aware, lo que en teoria facilita tareas numericas simples (aunque no se han medido).
 - Capacidad multilingue: no disponible; solo se declara ingles.
 - Tool calling / function calling: no soportado.
@@ -114,7 +114,7 @@ No se dispone de datos de rendimiento comparativos para AppleMind-1.0-Mini, por 
 
 ## Enlaces
 
-- HuggingFace, pagina del modelo: https://huggingface.co/SLM-Archive/AppleMind-1.0-Mini
+- Hugging Face, pagina del modelo: https://huggingface.co/SLM-Archive/AppleMind-1.0-Mini
 - Dataset FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Dataset FineWeb-HQ: https://huggingface.co/datasets/epfml/FineWeb-HQ
 - Dataset SmolLM-Corpus: https://huggingface.co/datasets/HuggingFaceTB/smollm-corpus

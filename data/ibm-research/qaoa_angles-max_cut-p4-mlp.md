@@ -89,7 +89,7 @@ No disponible. En la información recopilada no aparecen modelos comparables con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ibm-research/qaoa_angles.max_cut.p4.mlp
+- Modelo en Hugging Face: https://huggingface.co/ibm-research/qaoa_angles.max_cut.p4.mlp
 - Página corporativa de IBM: https://www.ibm.com/
 - IBM (versión en francés): https://www.ibm.com/fr-fr
 - Wikipedia (en francés) sobre IBM: https://fr.wikipedia.org/wiki/IBM

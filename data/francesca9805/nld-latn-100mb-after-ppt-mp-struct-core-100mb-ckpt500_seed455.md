@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`francesca9805/nld-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed455` es un modelo de generacion de texto de tipo GPT-2 con 124.770.816 parametros (aproximadamente 125 millones), publicado en HuggingFace por el usuario `francesca9805`. Se trata de un ajuste fino (SFT) sobre el modelo base `francesca9805/nld-latn-100mb-ppt-mp-struct-core-100mb_seed455`, entrenado con la libreria TRL. El identificador del repositorio, junto con el enlace a una ejecucion de Weights & Biases bajo la organizacion `f-padovani-university-of-groningen`, apunta a un trabajo de investigacion academica sobre tokenizadores y modelos de bajo recursos, no a un modelo de proposito general listo para produccion.
+`francesca9805/nld-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed455` es un modelo de generacion de texto de tipo GPT-2 con 124.770.816 parametros (aproximadamente 125 millones), publicado en Hugging Face por el usuario `francesca9805`. Se trata de un ajuste fino (SFT) sobre el modelo base `francesca9805/nld-latn-100mb-ppt-mp-struct-core-100mb_seed455`, entrenado con la libreria TRL. El identificador del repositorio, junto con el enlace a una ejecucion de Weights & Biases bajo la organizacion `f-padovani-university-of-groningen`, apunta a un trabajo de investigacion academica sobre tokenizadores y modelos de bajo recursos, no a un modelo de proposito general listo para produccion.
 
 El modelo pertenece a la familia de arquitecturas transformer decoder-only de GPT-2, con un tamano de pesos que lo situa en la gama mas ligera del ecosistema: puede ejecutarse en CPU o en practicamente cualquier GPU consumer. El nombre del checkpoint sugiere un entrenamiento sobre un corpus de aproximadamente 100 MB en neerlandes (`nld`) en escritura latina (`latn`), con una fase previa de adaptacion de tokenizador (`after-ppt-mp-struct`), aunque la model card no documenta ni el corpus, ni el numero de tokens, ni la composicion de los datos.
 
@@ -31,7 +31,7 @@ Su relevancia es fundamentalmente experimental: sirve como caso de estudio de pi
 
 ## Arquitectura y entrenamiento
 
-La arquitectura corresponde a GPT-2, un transformer decoder-only con atencion causal, normalizacion previa a la atencion y embeddings posicionales aprendidos. Con 124.770.816 parametros, el modelo coincide con el tamano del checkpoint GPT-2 original de 124M, aunque no hay confirmacion en la model card sobre el numero de capas, dimensiones ocultas o cabezas de atencion empleadas. La etiqueta `generated_from_trainer` indica que el modelo se genero a partir de un script de entrenamiento estandar de HuggingFace, y las versiones declaradas son TRL 0.23.0, Transformers 4.56.2, PyTorch 2.11.0, Datasets 4.8.4 y Tokenizers 0.22.1.
+La arquitectura corresponde a GPT-2, un transformer decoder-only con atencion causal, normalizacion previa a la atencion y embeddings posicionales aprendidos. Con 124.770.816 parametros, el modelo coincide con el tamano del checkpoint GPT-2 original de 124M, aunque no hay confirmacion en la model card sobre el numero de capas, dimensiones ocultas o cabezas de atencion empleadas. La etiqueta `generated_from_trainer` indica que el modelo se genero a partir de un script de entrenamiento estandar de Hugging Face, y las versiones declaradas son TRL 0.23.0, Transformers 4.56.2, PyTorch 2.11.0, Datasets 4.8.4 y Tokenizers 0.22.1.
 
 El entrenamiento consistio en un ajuste fino supervisado (SFT) sobre el checkpoint base `nld-latn-100mb-ppt-mp-struct-core-100mb_seed455`, presumiblemente un modelo preentrenado o adaptado sobre un corpus de 100 MB en neerlandes. No se documenta el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de RLHF o DPO, ni hiperparametros como tasa de aprendizaje, tamano de lote o numero de pasos. El autor enlaza una ejecucion de Weights & Biases (`v6dp2lw2`) dentro del proyecto `new-tokenizers`, que es la unica fuente adicional de trazabilidad disponible.
 
@@ -42,7 +42,7 @@ Como innovacion tecnica, el nombre del checkpoint refleja la cadena de experimen
 - Generacion de texto autoregresiva basica, orientada a continuaciones de prompt y dialogos de un solo turno o de pocos turnos.
 - Ajuste con formato de conversacion: el ejemplo de la model card utiliza una lista de mensajes con roles (`{"role": "user", "content": ...}`), lo que indica compatibilidad con la plantilla de chat de la pipeline de transformers.
 - Generacion condicionada por prompt para tareas de estilo, continuacion y respuesta breve (el ejemplo oficial limita la generacion a 128 tokens nuevos).
-- Soporte de inferencia mediante `transformers.pipeline` y, por las etiquetas del repositorio, compatibilidad declarada con Text Generation Inference (TGI) y con endpoints compatibles de HuggingFace.
+- Soporte de inferencia mediante `transformers.pipeline` y, por las etiquetas del repositorio, compatibilidad declarada con Text Generation Inference (TGI) y con endpoints compatibles de Hugging Face.
 - Capacidades multilingues: no disponibles; el unico idioma que sugiere el identificador es el neerlandes.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -77,10 +77,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `francesca9805/nld-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed455` | 124,77 M | no disponible | no disponible (probable neerlandes) | no disponible | HuggingFace, 0 descargas |
-| `gpt2` (OpenAI) | 124 M | 1024 tokens | ingles | MIT | HuggingFace, ampliamente desplegado |
-| `distilgpt2` | 82 M | 1024 tokens | ingles | Apache 2.0 (segun HuggingFace) | HuggingFace, ampliamente desplegado |
-| `GroNLP/gpt2-small-dutch` | 124 M | 1024 tokens | neerlandes | no disponible en la informacion consultada | HuggingFace |
+| `francesca9805/nld-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed455` | 124,77 M | no disponible | no disponible (probable neerlandes) | no disponible | Hugging Face, 0 descargas |
+| `gpt2` (OpenAI) | 124 M | 1024 tokens | ingles | MIT | Hugging Face, ampliamente desplegado |
+| `distilgpt2` | 82 M | 1024 tokens | ingles | Apache 2.0 (segun Hugging Face) | Hugging Face, ampliamente desplegado |
+| `GroNLP/gpt2-small-dutch` | 124 M | 1024 tokens | neerlandes | no disponible en la informacion consultada | Hugging Face |
 
 La comparacion se limita a parametros, contexto declarado, idioma y licencia, ya que no existen resultados de benchmarks publicados para el modelo objeto de esta ficha que permitan una comparacion de rendimiento. El modelo de GroNLP es la alternativa mas directa por idioma y tamano, pero no se dispone de datos de calidad comparables en la informacion proporcionada.
 
@@ -99,7 +99,7 @@ La comparacion se limita a parametros, contexto declarado, idioma y licencia, ya
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/nld-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/nld-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed455
 - Modelo base: https://huggingface.co/francesca9805/nld-latn-100mb-ppt-mp-struct-core-100mb_seed455
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/v6dp2lw2
 - Repositorio de TRL: https://github.com/huggingface/trl

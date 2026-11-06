@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LeeAeron/Lama_GPU es un repositorio de HuggingFace publicado por el usuario LeeAeron que contiene pesos en formato ONNX bajo licencia MIT. El repositorio, de aproximadamente 0,4 GB, no incluye model card descriptiva (el README se limita a la declaración de licencia), no declara pipeline de inferencia, no especifica idiomas soportados y no cuenta con descargas ni valoraciones en el momento de la consulta. Por tanto, no es posible determinar con la informacion disponible que tarea resuelve el modelo, que arquitectura emplea ni con que datos fue entrenado.
+LeeAeron/Lama_GPU es un repositorio de Hugging Face publicado por el usuario LeeAeron que contiene pesos en formato ONNX bajo licencia MIT. El repositorio, de aproximadamente 0,4 GB, no incluye model card descriptiva (el README se limita a la declaración de licencia), no declara pipeline de inferencia, no especifica idiomas soportados y no cuenta con descargas ni valoraciones en el momento de la consulta. Por tanto, no es posible determinar con la informacion disponible que tarea resuelve el modelo, que arquitectura emplea ni con que datos fue entrenado.
 
 El unico dato tecnico verificable, ademas del formato, es el tamano del repositorio. Asumiendo que los 0,4 GB corresponden integramente a los pesos, el modelo se situaria en el orden de 100 millones de parametros en fp32, 200 millones en fp16 o 400 millones en int8, cifras que deben tomarse como cota superior orientativa, ya que el repositorio podria incluir varios grafos ONNX, ficheros de configuracion o duplicados. El nombre "Lama" es ambiguo y podria referirse tanto a un modelo de lenguaje tipo LLaMA como a un modelo de inpainting tipo LaMa; no hay informacion en el repositorio que permita decantarse por ninguna de las dos opciones.
 
@@ -45,7 +45,7 @@ Los siguientes escenarios se derivan exclusivamente de las propiedades verificab
 - Despliegue en entornos de borde con CPU: un artefacto de 0,4 GB en ONNX es candidato a ejecutarse con ONNX Runtime en dispositivos sin GPU dedicada, siempre que la tarea identificada sea ligera y las latencias aceptables para el caso de uso.
 - Integracion en microservicios con licencia permisiva: la licencia MIT permite incorporar el modelo a un servicio propietario sin obligaciones de redistribucion del codigo, algo relevante para equipos que descartan licencias copyleft.
 - Pruebas comparativas de runtimes de inferencia: usar el mismo grafo para medir latencia y throughput en ONNX Runtime, OpenVINO y TensorRT, generando una linea base de rendimiento del hardware objetivo antes de invertir en modelos mayores.
-- Prototipado interno y docencia: emplear el repositorio como ejemplo real de publicacion de artefactos ONNX en HuggingFace, incluyendo las carencias de documentacion que un flujo de publicacion deberia evitar.
+- Prototipado interno y docencia: emplear el repositorio como ejemplo real de publicacion de artefactos ONNX en Hugging Face, incluyendo las carencias de documentacion que un flujo de publicacion deberia evitar.
 - Conversion a otros formatos: si la arquitectura resulta ser compatible con las herramientas de conversion (por ejemplo, a GGUF para llama.cpp u Ollama), el modelo podria servir para validar una cadena de conversion completa. Esta opcion depende por completo de identificar la arquitectura, dato que no esta disponible.
 
 ## Benchmarks y rendimiento
@@ -85,5 +85,5 @@ No disponible. Al no estar identificada la tarea ni la arquitectura, no es posib
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/LeeAeron/Lama_GPU
+- Repositorio en Hugging Face: https://huggingface.co/LeeAeron/Lama_GPU
 - No se han encontrado en la busqueda web enlaces relevantes al modelo: los resultados obtenidos corresponden a articulos sobre TikTok, archivos de tipografias (dafont.com) y un hilo de analisis de trafico de aplicaciones moviles, sin relacion alguna con este repositorio. No hay paper, blog, repositorio de codigo ni demo que referenciar.

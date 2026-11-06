@@ -24,7 +24,7 @@ Su relevancia es fundamentalmente práctica: ofrece un pipeline de animación fa
 | Ficheros incluidos | `appearance_feature_extractor.onnx`, `motion_extractor.onnx`, `stitching.onnx`, `warping_spade.onnx`, `KAYNAK-README.md` |
 | Runtime previsto | ONNX Runtime (CPU de móvil según la model card) |
 | Resolucion de entrada | no disponible |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 
 ## Arquitectura y entrenamiento
 
@@ -92,7 +92,7 @@ No se dispone de datos de parámetros, contexto ni rendimiento de las alternativ
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/matrixportalx/LivePortrait-onnx
+- Repositorio en Hugging Face: https://huggingface.co/matrixportalx/LivePortrait-onnx
 - Origen de la conversión (warmshao/FasterLivePortrait): https://huggingface.co/warmshao/FasterLivePortrait
 - Perfil del autor: https://huggingface.co/matrixportalx
 - Proyecto original LivePortrait (Kuaishou/KlingTeam): https://github.com/KwaiVGI/LivePortrait (no enlazado en la model card; referencia del proyecto del que proceden los pesos)

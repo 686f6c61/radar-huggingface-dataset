@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`parineeta8/qwen-2.5-7b-pii-guardrail` es un checkpoint publicado en HuggingFace por el usuario `parineeta8`. El identificador del repositorio sugiere un ajuste fino del modelo base Qwen2.5-7B orientado a funciones de guardarraíl sobre informacion personal identificable (PII), pero esta interpretacion se deduce unicamente del nombre del repositorio: la model card no contiene descripcion, ni pipeline declarado, ni idiomas, ni documentacion de entrenamiento. El unico contenido real de la ficha del autor es el bloque de metadatos con la licencia `apache-2.0`.
+`parineeta8/qwen-2.5-7b-pii-guardrail` es un checkpoint publicado en Hugging Face por el usuario `parineeta8`. El identificador del repositorio sugiere un ajuste fino del modelo base Qwen2.5-7B orientado a funciones de guardarraíl sobre informacion personal identificable (PII), pero esta interpretacion se deduce unicamente del nombre del repositorio: la model card no contiene descripcion, ni pipeline declarado, ni idiomas, ni documentacion de entrenamiento. El unico contenido real de la ficha del autor es el bloque de metadatos con la licencia `apache-2.0`.
 
 El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y las fechas de creacion y actualizacion son identicas (2026-09-22T19:22:32.000Z), lo que es coherente con una publicacion reciente sin traccion ni validacion por parte de la comunidad. No hay evidencia de evaluacion, demos, informes tecnicos ni artefactos adicionales asociados.
 
@@ -74,10 +74,10 @@ La comparativa se establece por categoria funcional, no por rendimiento medido, 
 
 | Modelo | Parametros | Contexto | Tarea principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| parineeta8/qwen-2.5-7b-pii-guardrail | no disponible (nombre sugiere ~7B) | no disponible | Presunto guardarrail de PII | apache-2.0 | Repositorio HuggingFace con 0 descargas |
-| Qwen2.5-7B (presunto modelo base) | 7,6B | 131.072 tokens | Modelo generico de proposito general | apache-2.0 | Ampliamente disponible en HuggingFace y ModelScope |
-| Llama Guard 3-8B | 8B | 128.000 tokens (referencia publica) | Clasificacion de seguridad de contenido | Llama 3.1 Community License | Disponible en HuggingFace |
-| Modelos encoder dedicados a PII (por ejemplo, la familia GLiNER-PII y similares) | 0,1-0,5B tipicamente | 512-2.048 tokens | Extraccion de entidades PII | Variable segun modelo | Disponible en HuggingFace |
+| parineeta8/qwen-2.5-7b-pii-guardrail | no disponible (nombre sugiere ~7B) | no disponible | Presunto guardarrail de PII | apache-2.0 | Repositorio Hugging Face con 0 descargas |
+| Qwen2.5-7B (presunto modelo base) | 7,6B | 131.072 tokens | Modelo generico de proposito general | apache-2.0 | Ampliamente disponible en Hugging Face y ModelScope |
+| Llama Guard 3-8B | 8B | 128.000 tokens (referencia publica) | Clasificacion de seguridad de contenido | Llama 3.1 Community License | Disponible en Hugging Face |
+| Modelos encoder dedicados a PII (por ejemplo, la familia GLiNER-PII y similares) | 0,1-0,5B tipicamente | 512-2.048 tokens | Extraccion de entidades PII | Variable segun modelo | Disponible en Hugging Face |
 
 Nota: los modelos encoder pequenos suelen superar a los decoder de 7B en tareas de etiquetado de PII cuando se evaluan en F1 por entidad, con un coste de inferencia mucho menor, aunque pierden flexibilidad para tareas generativas.
 
@@ -95,7 +95,7 @@ Nota: los modelos encoder pequenos suelen superar a los decoder de 7B en tareas 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/parineeta8/qwen-2.5-7b-pii-guardrail
+- Repositorio en Hugging Face: https://huggingface.co/parineeta8/qwen-2.5-7b-pii-guardrail
 - Modelo base presumiblemente utilizado (referencia, no confirmado por el autor): https://huggingface.co/Qwen/Qwen2.5-7B
 
 Nota sobre la busqueda web: las consultas realizadas no devolvieron ningun resultado relacionado con el modelo. Los unicos resultados obtenidos fueron hilos de foros de salud en frances sin relacion alguna con el repositorio, por lo que se descartan como fuentes. No se han localizado papers, blogs tecnicos, repositorios de codigo, demos ni informes de evaluacion asociados a este checkpoint.

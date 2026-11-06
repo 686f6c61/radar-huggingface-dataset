@@ -100,6 +100,6 @@ No disponible. Este checkpoint no compite con modelos de lenguaje de propósito 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/j0no12/nero-optimizer-work-simo-lr0p003
+- Modelo en Hugging Face: https://huggingface.co/j0no12/nero-optimizer-work-simo-lr0p003
 - Archivos incluidos en el repositorio: `model.npz` (pesos finales del checkpoint `checkpoint_000500000000`), `state.json` (metadatos de estado), `run.json` (configuración congelada de la ejecución), `metrics.jsonl` (registro completo de métricas de entrenamiento), `config.json` (metadatos de modelo y publicación).
 - Paper, blog, repositorio de código o demo: no disponibles. La búsqueda web realizada no devolvió ningún resultado relacionado con el modelo ni con la barrida Nero Optimizer Work; los enlaces recuperados correspondían a un portal de noticias alemán sin relación alguna con el contenido.

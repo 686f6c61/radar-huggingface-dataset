@@ -74,5 +74,5 @@ No se dispone de modelos comparables en la misma categoría (Coca nano con atenc
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jingcao0606/retrieval
+- Repositorio Hugging Face: https://huggingface.co/jingcao0606/retrieval
 - No se encontraron otros enlaces relevantes (papers, blogs, demos) en la búsqueda web.

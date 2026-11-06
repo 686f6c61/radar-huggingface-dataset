@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mysterium99/smolvla_stage2c_complexity_1_to_ds2 | 450 M | no aplica (política de control) | VLA para robot `follow` | apache-2.0 | HuggingFace, via LeRobot |
-| lerobot/smolvla_base | no disponible en la informacion | no aplica | VLA base | no disponible en la informacion | HuggingFace, via LeRobot |
+| mysterium99/smolvla_stage2c_complexity_1_to_ds2 | 450 M | no aplica (política de control) | VLA para robot `follow` | apache-2.0 | Hugging Face, via LeRobot |
+| lerobot/smolvla_base | no disponible en la informacion | no aplica | VLA base | no disponible en la informacion | Hugging Face, via LeRobot |
 | Otros VLA de gran escala (p. ej. familias tipo OpenVLA) | no disponible en la informacion | no disponible | VLA | no disponible | no disponible |
 
 La comparación con alternativas de la misma categoría no puede completarse con rigor porque la información proporcionada solo cubre el modelo base y este fine-tuning. No se dispone de datos de benchmarks ni de especificaciones de modelos competidores en el material consultado.
@@ -91,7 +91,7 @@ La comparación con alternativas de la misma categoría no puede completarse con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mysterium99/smolvla_stage2c_complexity_1_to_ds2
+- Modelo en Hugging Face: https://huggingface.co/mysterium99/smolvla_stage2c_complexity_1_to_ds2
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Paper de SmolVLA: https://huggingface.co/papers/2506.01844
 - Dataset de entrenamiento: https://huggingface.co/datasets/ds2

@@ -94,6 +94,6 @@ No se han encontrado en la informacion proporcionada modelos alternativos con da
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/redeemer/Nanbeige4.3-33B-Q8_0-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/redeemer/Nanbeige4.3-33B-Q8_0-GGUF
 - Modelo base: https://huggingface.co/Nanbeige/Nanbeige4.3-33B
 - Papers, blogs, repositorios o demos adicionales: no disponible (la busqueda web no devolvio resultados relevantes para este modelo)

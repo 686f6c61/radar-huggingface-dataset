@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kreishyyyy/martufqfqqdqd` es un adaptador LoRA para generacion de imagenes a partir de texto, publicado en HuggingFace por el usuario `kreishyyyy` y etiquetado con los tags `diffusers`, `text-to-image`, `lora` y `template:diffusion-lora`. Se trata, por tanto, de un ajuste fino de bajo rango que debe combinarse con un modelo de difusion base para funcionar, no de un modelo autonomo. El repositorio ocupa 0,2 GB y esta pensado para cargarse con la libreria `diffusers`.
+`kreishyyyy/martufqfqqdqd` es un adaptador LoRA para generacion de imagenes a partir de texto, publicado en Hugging Face por el usuario `kreishyyyy` y etiquetado con los tags `diffusers`, `text-to-image`, `lora` y `template:diffusion-lora`. Se trata, por tanto, de un ajuste fino de bajo rango que debe combinarse con un modelo de difusion base para funcionar, no de un modelo autonomo. El repositorio ocupa 0,2 GB y esta pensado para cargarse con la libreria `diffusers`.
 
 La documentacion publicada es practicamente inexistente: la model card repite el identificador del modelo en todos los campos (descripcion, prompt de instancia, prompt negativo) y no declara ni el modelo base, ni el dataset de entrenamiento, ni la licencia, ni los idiomas soportados. La unica indicacion funcional es la palabra de activacion (`martufqfqqdqd`), que debe incluirse en el prompt para disparar la generacion, y una imagen de ejemplo en el widget cuyo nombre de archivo sugiere replicacion de pose y rasgos faciales a 2K, si bien esto no esta confirmado por el autor.
 
@@ -33,7 +33,7 @@ Por su estado (0 descargas, 0 likes, creacion y ultima actualizacion separadas p
 
 No hay informacion publicada sobre la arquitectura del modelo base ni sobre el procedimiento de entrenamiento. Lo unico deducible del repositorio es que se trata de un adaptador LoRA, tecnica que congela los pesos del modelo de difusion original e inyecta matrices de bajo rango en determinadas capas (tipicamente las proyecciones de atencion cruzada y, segun la implementacion, tambien las de auto-atencion). Esto reduce el numero de parametros entrenables en varios ordenes de magnitud respecto al modelo completo y explica que el repositorio ocupe solo 0,2 GB.
 
-Se desconoce por completo el dataset utilizado: no se indica numero de imagenes, resolucion de entrenamiento, composicion tematica, uso de tecnicas de regularizacion (por ejemplo, imagenes de clase o captions automaticos), ni si hubo algun ajuste posterior tipo fine-tuning con preferencias. El nombre de archivo de la imagen de ejemplo del widget incluye la cadena `2K`, lo que podria sugerir un entrenamiento o inferencia a resolucion 2048, pero es una inferencia no verificada. El campo `template:diffusion-lora` indica unicamente que el repositorio se genero a partir de la plantilla estandar de HuggingFace para LoRAs de difusion, no aporta informacion tecnica adicional.
+Se desconoce por completo el dataset utilizado: no se indica numero de imagenes, resolucion de entrenamiento, composicion tematica, uso de tecnicas de regularizacion (por ejemplo, imagenes de clase o captions automaticos), ni si hubo algun ajuste posterior tipo fine-tuning con preferencias. El nombre de archivo de la imagen de ejemplo del widget incluye la cadena `2K`, lo que podria sugerir un entrenamiento o inferencia a resolucion 2048, pero es una inferencia no verificada. El campo `template:diffusion-lora` indica unicamente que el repositorio se genero a partir de la plantilla estandar de Hugging Face para LoRAs de difusion, no aporta informacion tecnica adicional.
 
 ## Capacidades
 
@@ -54,7 +54,7 @@ Debe tenerse en cuenta que todos los casos siguientes son hipoteticos y dependen
 - Pruebas de reproductibilidad de un ajuste concreto, fijando la semilla y la palabra de activacion `martufqfqqdqd` para comparar resultados entre versiones del modelo base.
 - Estilizado de personajes en flujos de generacion de imagen, siempre que la especializacion real coincida con la sugerida por el nombre del archivo de ejemplo (pose y rasgos faciales).
 - Transferencia de pose en pipelines de edicion de imagen, combinando el adaptador con herramientas de control (ControlNet u equivalentes) sobre el modelo base que resulte compatible.
-- Estudio de casos de publicaciones incompletas en HuggingFace, util para equipos que disenan politicas de catalogacion o revision de artefactos de terceros.
+- Estudio de casos de publicaciones incompletas en Hugging Face, util para equipos que disenan politicas de catalogacion o revision de artefactos de terceros.
 - Analisis forense de pesos para determinar el modelo base, mediante la comparacion de las claves del fichero de pesos con las arquitecturas conocidas de difusion.
 - Pruebas de integracion en interfaces como ComfyUI o Automatic1111, siempre que se resuelva previamente la incompatibilidad de modelo base.
 
@@ -74,7 +74,7 @@ Los valores siguientes son orientativos y genericos para adaptadores LoRA de dif
 
 ## Comparativa con modelos similares
 
-No disponible. No es posible establecer una comparativa rigurosa porque se desconoce el modelo base, el tamano real del adaptador, la licencia y cualquier metrica de rendimiento. La unica comparacion posible es de tipo formal: frente a otros LoRAs publicados en HuggingFace con documentacion completa (modelo base declarado, dataset descrito, licencia explicita y ejemplos de uso), este repositorio carece de todos esos elementos, lo que impide situarlo en una categoria funcional concreta.
+No disponible. No es posible establecer una comparativa rigurosa porque se desconoce el modelo base, el tamano real del adaptador, la licencia y cualquier metrica de rendimiento. La unica comparacion posible es de tipo formal: frente a otros LoRAs publicados en Hugging Face con documentacion completa (modelo base declarado, dataset descrito, licencia explicita y ejemplos de uso), este repositorio carece de todos esos elementos, lo que impide situarlo en una categoria funcional concreta.
 
 ## Limitaciones y advertencias
 
@@ -92,7 +92,7 @@ No disponible. No es posible establecer una comparativa rigurosa porque se desco
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/kreishyyyy/martufqfqqdqd
+- Pagina del modelo en Hugging Face: https://huggingface.co/kreishyyyy/martufqfqqdqd
 - Pestana de ficheros y versiones: https://huggingface.co/kreishyyyy/martufqfqqdqd/tree/main
 - Imagen de ejemplo referenciada en el widget: https://huggingface.co/kreishyyyy/martufqfqqdqd/blob/main/images/Replicating_pose_and_facial_feat…_2K_20260922001807_83hr_v10.jpeg
 - Documentacion de la libreria diffusers (adaptadores LoRA): https://huggingface.co/docs/diffusers

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-La entrada "Taraftarium247/Taraftarium" alojada en HuggingFace no es un modelo de inteligencia artificial. Se trata de una model card que contiene exclusivamente texto promocional en turco sobre Taraftarium24, un sitio de retransmisiones deportivas en directo, junto con un enlace externo de redireccion. No se publica ningun peso, configuracion, tokenizador ni artefacto de inferencia asociado al repositorio.
+La entrada "Taraftarium247/Taraftarium" alojada en Hugging Face no es un modelo de inteligencia artificial. Se trata de una model card que contiene exclusivamente texto promocional en turco sobre Taraftarium24, un sitio de retransmisiones deportivas en directo, junto con un enlace externo de redireccion. No se publica ningun peso, configuracion, tokenizador ni artefacto de inferencia asociado al repositorio.
 
-No existe informacion sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni licencia. El repositorio presenta 0 descargas y 0 "likes", y su unico tag es `region:us`, un metadato generico de HuggingFace que no aporta informacion tecnica. El campo de pipeline y los idiomas soportados no estan declarados.
+No existe informacion sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni licencia. El repositorio presenta 0 descargas y 0 "likes", y su unico tag es `region:us`, un metadato generico de Hugging Face que no aporta informacion tecnica. El campo de pipeline y los idiomas soportados no estan declarados.
 
 Desde el punto de vista de un desarrollador o investigador, este repositorio carece de cualquier utilidad tecnica. Su patron (titulo con palabras clave de alto trafico, enlace de redireccion y lista de plataformas alternativas) es caracteristico de contenido SEO o de distribucion de enlaces, no de un artefacto de machine learning. Se recomienda no tratarlo como fuente para evaluacion de modelos ni como dependencia en pipelines de produccion.
 
@@ -76,7 +76,7 @@ No disponible. No existe categoria tecnica en la que encaje este repositorio (no
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Taraftarium247/Taraftarium
+- Repositorio en Hugging Face: https://huggingface.co/Taraftarium247/Taraftarium
 - Enlaces de redireccion presentes en la model card y en los resultados de busqueda, sin valor tecnico y no verificados:
   - https://justintvlink.altervista.org/taraftarium24/
   - https://taraftarium.pro/

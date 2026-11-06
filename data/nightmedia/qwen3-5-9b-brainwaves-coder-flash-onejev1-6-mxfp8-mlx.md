@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-9B-Brainwaves-Coder-Flash-OneJev1.6-mxfp8-mlx es un modelo experimental de 9.000 millones de parámetros fruto de la fusión de tres modelos derivados de la familia Qwen3.5: nightmedia/Qwen3.5-9B-Brainwaves, Jackrong/Qwopus3-5-9B-Coder-Flash y OmniJev/OneJev1.6-9B. Lo publica el usuario nightmedia en HuggingFace bajo licencia Apache 2.0, y combina las capacidades de razonamiento de Brainwaves, el enfoque en código de Coder-Flash y el ajuste conversacional/creativo de OneJev1.6. El resultado es un modelo multimodal de tipo image-text-to-text orientado a generación de código, matemáticas, razonamiento de cadena larga y escritura creativa.
+Qwen3.5-9B-Brainwaves-Coder-Flash-OneJev1.6-mxfp8-mlx es un modelo experimental de 9.000 millones de parámetros fruto de la fusión de tres modelos derivados de la familia Qwen3.5: nightmedia/Qwen3.5-9B-Brainwaves, Jackrong/Qwopus3-5-9B-Coder-Flash y OmniJev/OneJev1.6-9B. Lo publica el usuario nightmedia en Hugging Face bajo licencia Apache 2.0, y combina las capacidades de razonamiento de Brainwaves, el enfoque en código de Coder-Flash y el ajuste conversacional/creativo de OneJev1.6. El resultado es un modelo multimodal de tipo image-text-to-text orientado a generación de código, matemáticas, razonamiento de cadena larga y escritura creativa.
 
 La relevancia de esta ficha radica en que se distribuye ya cuantizado en mxfp8 (formato MLX de 8 bits), lo que reduce el pico de memoria a 16,02 GB frente a los 24,69 GB del bf16, manteniendo una perplejidad de 4,106 y un rendimiento de 624 tokens por segundo según los datos del autor. Está pensado para ejecutarse en hardware Apple Silicon mediante MLX, y las etiquetas del repositorio mencionan soporte de contexto largo (hasta 1M y 256k tokens), razonamiento chain-of-thought, decodificación especulativa y multi-token prediction.
 
@@ -87,11 +87,11 @@ Como referencia, el modelo base Qwen3.5-9B Instruct en mxfp8 obtiene ARC 0,571, 
 
 | Modelo | Parámetros | Contexto | GSM8K | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-9B-Brainwaves-Coder-Flash-OneJev1.6-mxfp8-mlx | 9B | 256k/1M (declarado) | 90,52 % | Apache 2.0 | HuggingFace (0 descargas) |
-| Qwen3.5-9B Instruct (base) | 9B | no disponible | no disponible | no disponible | HuggingFace |
-| nightmedia/Qwen3.5-9B-Brainwaves | 9B | no disponible | 89,16 % (mxfp8) | Apache 2.0 (según repo) | HuggingFace |
-| Jackrong/Qwopus3-5-9B-Coder-Flash | 9B | no disponible | no disponible | no disponible | HuggingFace |
-| OmniJev/OneJev1.6-9B | 9B | no disponible | no disponible | no disponible | HuggingFace |
+| Qwen3.5-9B-Brainwaves-Coder-Flash-OneJev1.6-mxfp8-mlx | 9B | 256k/1M (declarado) | 90,52 % | Apache 2.0 | Hugging Face (0 descargas) |
+| Qwen3.5-9B Instruct (base) | 9B | no disponible | no disponible | no disponible | Hugging Face |
+| nightmedia/Qwen3.5-9B-Brainwaves | 9B | no disponible | 89,16 % (mxfp8) | Apache 2.0 (según repo) | Hugging Face |
+| Jackrong/Qwopus3-5-9B-Coder-Flash | 9B | no disponible | no disponible | no disponible | Hugging Face |
+| OmniJev/OneJev1.6-9B | 9B | no disponible | no disponible | no disponible | Hugging Face |
 
 La comparativa se limita a los modelos base del merge, ya que no se dispone de datos de benchmarks de alternativas externas en la información proporcionada.
 
@@ -109,7 +109,7 @@ La comparativa se limita a los modelos base del merge, ya que no se dispone de d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nightmedia/Qwen3.5-9B-Brainwaves-Coder-Flash-OneJev1.6-mxfp8-mlx
+- Hugging Face: https://huggingface.co/nightmedia/Qwen3.5-9B-Brainwaves-Coder-Flash-OneJev1.6-mxfp8-mlx
 - Modelo base Brainwaves: https://huggingface.co/nightmedia/Qwen3.5-9B-Brainwaves
 - Modelo base Coder-Flash: https://huggingface.co/Jackrong/Qwopus3-5-9B-Coder-Flash
 - Modelo base OneJev1.6: https://huggingface.co/OmniJev/OneJev1.6-9B

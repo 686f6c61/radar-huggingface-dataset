@@ -4,7 +4,7 @@
 
 `benchmark-slm-msmarco-qwen2.5-1.5b-mix` es un adaptador LoRA (PEFT) publicado por el usuario `praiselab-picuslab` sobre el modelo base Qwen/Qwen2.5-1.5B. No se trata por tanto de un modelo completo, sino de un conjunto de pesos delta que deben cargarse junto al modelo base para poder generar texto. Su nombre y sus etiquetas (`benchmark-slm`, `dataset-msmarco`, `strategy-mix`, `or2`) apuntan a un artefacto de investigación orientado a la evaluación de modelos de lenguaje pequenos sobre el corpus MS MARCO (Microsoft), un conjunto de consultas web reales con pasajes y respuestas asociadas.
 
-El repositorio no incluye tarjeta de modelo descriptiva: no se documentan el volumen de datos de entrenamiento, la composición del dataset, los hiperparámetros de LoRA ni los resultados obtenidos. La licencia no está declarada y el acceso está restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de descargar los pesos. Con 0 descargas y 0 likes, no existe validación comunitaria ni evidencia pública de su comportamiento.
+El repositorio no incluye tarjeta de modelo descriptiva: no se documentan el volumen de datos de entrenamiento, la composición del dataset, los hiperparámetros de LoRA ni los resultados obtenidos. La licencia no está declarada y el acceso está restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de descargar los pesos. Con 0 descargas y 0 likes, no existe validación comunitaria ni evidencia pública de su comportamiento.
 
 Su relevancia es acotada y de carácter metodológico: sirve como pieza en una batería comparativa de SLM (small language models) sobre una tarea concreta de búsqueda/QA, y como ejemplo reproducible de ajuste fino con PEFT sobre un modelo de 1,5 mil millones de parámetros, un tamaño que cabe en GPU de consumo y en CPU con cuantización agresiva.
 
@@ -98,7 +98,7 @@ Frente al base sin ajustar, la única diferencia verificable es la presencia del
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/praiselab-picuslab/benchmark-slm-msmarco-qwen2.5-1.5b-mix
+- Modelo en Hugging Face: https://huggingface.co/praiselab-picuslab/benchmark-slm-msmarco-qwen2.5-1.5b-mix
 - Modelo base Qwen2.5-1.5B: https://huggingface.co/Qwen/Qwen2.5-1.5B
 - Dataset MS MARCO referenciado: https://huggingface.co/datasets/microsoft/ms_marco
 - Librería PEFT: https://github.com/huggingface/peft

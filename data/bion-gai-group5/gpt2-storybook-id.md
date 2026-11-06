@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gpt2-storybook-id` es un modelo de lenguaje publicado en HuggingFace por el usuario `bion-gai-group5`, presumiblemente como parte de un trabajo de grupo (el sufijo "group5" asi lo sugiere) en el contexto de un curso o proyecto sobre IA generativa. El nombre indica que se trata de un ajuste fino de GPT-2 orientado a la generacion de historias infantiles ("storybook"), y el sufijo `-id` apunta a que el entrenamiento se ha realizado sobre textos en indonesio. El repositorio ocupa 1,5 GB, un tamano coherente con los pesos de GPT-2 en formato safetensors junto con posibles artefactos del entrenador.
+`gpt2-storybook-id` es un modelo de lenguaje publicado en Hugging Face por el usuario `bion-gai-group5`, presumiblemente como parte de un trabajo de grupo (el sufijo "group5" asi lo sugiere) en el contexto de un curso o proyecto sobre IA generativa. El nombre indica que se trata de un ajuste fino de GPT-2 orientado a la generacion de historias infantiles ("storybook"), y el sufijo `-id` apunta a que el entrenamiento se ha realizado sobre textos en indonesio. El repositorio ocupa 1,5 GB, un tamano coherente con los pesos de GPT-2 en formato safetensors junto con posibles artefactos del entrenador.
 
 La relevancia de este modelo es limitada: se trata de un fine-tuning de un modelo base de 2019 sobre un corpus presumiblemente pequeno y especifico, sin model card descriptiva, sin benchmarks publicados y sin descargas ni interacciones en el momento de redactar esta ficha. No obstante, puede resultar util como ejemplo de pipeline de ajuste fino de GPT-2 para generacion creativa en un idioma de bajos recursos como el indonesio, o como material didactico en contextos academicos.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| gpt2-storybook-id | no disponible | no disponible | MIT | HuggingFace, 0 descargas |
+| gpt2-storybook-id | no disponible | no disponible | MIT | Hugging Face, 0 descargas |
 | GPT-2 (OpenAI) | 124M / 355M / 774M / 1.5B | 1024 tokens | MIT | Ampliamente disponible |
 | Modelos de cuentos en indonesio | no disponible | no disponible | no disponible | no disponible |
 
@@ -81,5 +81,5 @@ No se dispone de informacion sobre benchmarks ni de modelos comparables especifi
 
 ## Enlaces
 
-- [HuggingFace: bion-gai-group5/gpt2-storybook-id](https://huggingface.co/bion-gai-group5/gpt2-storybook-id)
+- [Hugging Face: bion-gai-group5/gpt2-storybook-id](https://huggingface.co/bion-gai-group5/gpt2-storybook-id)
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

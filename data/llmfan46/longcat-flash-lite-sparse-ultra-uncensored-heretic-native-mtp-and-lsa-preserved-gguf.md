@@ -80,7 +80,7 @@ No se dispone de información suficiente para comparar con otros modelos de la m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/llmfan46/LongCat-Flash-Lite-Sparse-Ultra-Uncensored-Heretic-Native-MTP-And-LSA-Preserved-GGUF
+- Repositorio Hugging Face: https://huggingface.co/llmfan46/LongCat-Flash-Lite-Sparse-Ultra-Uncensored-Heretic-Native-MTP-And-LSA-Preserved-GGUF
 - Modelo base (safetensors): https://huggingface.co/llmfan46/LongCat-Flash-Lite-Sparse-Ultra-Uncensored-Heretic-Native-MTP-And-LSA-Preserved
 - Modelo original de Meituan: https://huggingface.co/meituan-longcat/LongCat-Flash-Lite-Sparse
 - Proyecto Heretic: https://heretic-project.org/

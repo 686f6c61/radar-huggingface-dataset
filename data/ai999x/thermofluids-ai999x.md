@@ -78,7 +78,7 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de otros benchmarks 
 - Cabe en cualquier equipo consumer: basta con un intérprete de Python 3.10 a 3.14 y las dependencias sympy y mpmath.
 - Memoria RAM y latencia: no disponibles en la información proporcionada.
 - Throughput: no disponible; al ser determinista y monoproceso, el coste depende de la capacidad invocada y no de un tamaño de lote.
-- Opciones de despliegue: instalación vía `pip install thermofluids-ai999x` o directamente desde el wheel del repositorio de HuggingFace; ejecución en scripts, cuadernos Jupyter o servicios Python.
+- Opciones de despliegue: instalación vía `pip install thermofluids-ai999x` o directamente desde el wheel del repositorio de Hugging Face; ejecución en scripts, cuadernos Jupyter o servicios Python.
 - No soporta vLLM, llama.cpp, Ollama ni TGI: no es un modelo de pesos para inferencia de lenguaje y la propia model card declara `inference: false`.
 
 ## Comparativa con modelos similares
@@ -98,7 +98,7 @@ No se dispone de comparaciones cuantitativas publicadas entre thermofluids-ai999
 - No es un modelo generativo: no redacta texto libre, no mantiene conversaciones multi-turno y no responde a preguntas fuera de sus 126 capacidades certificadas.
 - La cobertura está acotada al dominio de termofluidos y a las formas de pregunta documentadas; variaciones de redacción no reconocidas devuelven UNRECOGNIZED_FORMAT.
 - El resultado de accuracy 1,0 procede de las 1010 respuestas doradas del propio autor sobre su propio conjunto, está marcado como `verified: false` y no mide generalización a preguntas nuevas.
-- No hay validación independiente: 0 descargas y 0 likes en HuggingFace en el momento de la ficha.
+- No hay validación independiente: 0 descargas y 0 likes en Hugging Face en el momento de la ficha.
 - Los metadatos del repositorio son contradictorios: `inference: false` convive con un `pipeline_tag` de question-answering y con etiquetas de token classification, text classification, sentence similarity y feature extraction sin métricas que las respalden.
 - El tamaño del repositorio es 0,0 GB y los 4.715.520 parámetros no corresponden a una red neuronal de lenguaje; conviene no interpretarlos como equivalentes a un LLM de ese tamaño.
 - No se publican métricas de latencia, consumo de memoria ni límites de escalado.
@@ -108,11 +108,11 @@ No se dispone de comparaciones cuantitativas publicadas entre thermofluids-ai999
 
 ## Enlaces
 
-- [HuggingFace: AI999X/thermofluids-ai999x](https://huggingface.co/AI999X/thermofluids-ai999x)
+- [Hugging Face: AI999X/thermofluids-ai999x](https://huggingface.co/AI999X/thermofluids-ai999x)
 - [PyPI: thermofluids-ai999x](https://pypi.org/project/thermofluids-ai999x/)
 - [Guía de capacidades (docs)](https://huggingface.co/AI999X/thermofluids-ai999x/tree/main/docs)
 - [Evaluación](https://huggingface.co/AI999X/thermofluids-ai999x/tree/main/evaluation)
-- [Organización AI999X en HuggingFace](https://huggingface.co/AI999X)
+- [Organización AI999X en Hugging Face](https://huggingface.co/AI999X)
 - [Sitio web del proyecto](https://ai999x.com)
 - [Licencia Apache-2.0 del repositorio](https://huggingface.co/AI999X/thermofluids-ai999x/blob/main/LICENSE)
 - [Apoyo al desarrollo (Buy Me a Coffee)](https://buymeacoffee.com/ibnuljaiffarabi)

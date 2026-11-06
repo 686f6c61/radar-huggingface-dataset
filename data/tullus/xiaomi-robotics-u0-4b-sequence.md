@@ -80,12 +80,12 @@ Advertencia: los checkpoints Sequence, incluido este, solo soportan el backend e
 
 | Modelo | Parametros | Tareas soportadas | Backend | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Xiaomi-Robotics-U0-4B-Sequence (este) | ~5,08 B (safetensors) | interleave_subtask, interleave_video | eager | Apache 2.0 | HuggingFace (repo TULLUS) |
-| Xiaomi-Robotics-U0-Sequence | no disponible | interleave_subtask, interleave_video | eager | Apache 2.0 | HuggingFace (XiaomiRobotics) |
-| Xiaomi-Robotics-U0-4B | no disponible | T2I, X2I, Scene Gen, Transfer | AR y FlashAR | Apache 2.0 | HuggingFace (XiaomiRobotics) |
-| Xiaomi-Robotics-U0 | 34 B | T2I, X2I, Scene Gen, Transfer | AR y FlashAR | Apache 2.0 | HuggingFace y ModelScope |
-| Xiaomi-Robotics-U0-FlashAR | no disponible | T2I, X2I, Scene Gen, Transfer | FlashAR sobre vLLM | Apache 2.0 | HuggingFace y ModelScope |
-| EMU3.5 (BAAI) | no disponible | modelo base multimodal del que se inicializa la familia | no disponible | no disponible | HuggingFace (tokenizador visual) |
+| Xiaomi-Robotics-U0-4B-Sequence (este) | ~5,08 B (safetensors) | interleave_subtask, interleave_video | eager | Apache 2.0 | Hugging Face (repo TULLUS) |
+| Xiaomi-Robotics-U0-Sequence | no disponible | interleave_subtask, interleave_video | eager | Apache 2.0 | Hugging Face (XiaomiRobotics) |
+| Xiaomi-Robotics-U0-4B | no disponible | T2I, X2I, Scene Gen, Transfer | AR y FlashAR | Apache 2.0 | Hugging Face (XiaomiRobotics) |
+| Xiaomi-Robotics-U0 | 34 B | T2I, X2I, Scene Gen, Transfer | AR y FlashAR | Apache 2.0 | Hugging Face y ModelScope |
+| Xiaomi-Robotics-U0-FlashAR | no disponible | T2I, X2I, Scene Gen, Transfer | FlashAR sobre vLLM | Apache 2.0 | Hugging Face y ModelScope |
+| EMU3.5 (BAAI) | no disponible | modelo base multimodal del que se inicializa la familia | no disponible | no disponible | Hugging Face (tokenizador visual) |
 
 No se dispone de datos de contexto, benchmarks ni rendimiento comparado para ninguno de estos modelos en la informacion proporcionada, por lo que la comparativa se limita a parametros declarados, tareas soportadas y disponibilidad.
 
@@ -106,7 +106,7 @@ No se dispone de datos de contexto, benchmarks ni rendimiento comparado para nin
 
 - Repositorio analizado: https://huggingface.co/TULLUS/Xiaomi-Robotics-U0-4B-Sequence
 - Punto de control oficial de la familia: https://huggingface.co/XiaomiRobotics/Xiaomi-Robotics-U0-4B-Sequence
-- Coleccion oficial en HuggingFace: https://huggingface.co/collections/XiaomiRobotics/xiaomi-robotics-u0
+- Coleccion oficial en Hugging Face: https://huggingface.co/collections/XiaomiRobotics/xiaomi-robotics-u0
 - Informe tecnico (arXiv): https://arxiv.org/abs/2607.11643
 - Pagina de proyecto: https://robotics.xiaomi.com/xiaomi-robotics-u0.html
 - Repositorio de codigo: https://github.com/XiaomiRobotics/Xiaomi-Robotics-U0

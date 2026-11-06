@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `ThirdTimesTheCiarc/base_wan21` es un repositorio alojado en HuggingFace con acceso restringido (gated) que, por su nombre y las referencias encontradas en la web, parece estar relacionado con la familia de modelos Wan2.1 de generación de vídeo de código abierto desarrollada por el equipo Wan-Video. El repositorio tiene un tamaño de 34,3 GB, lo que sugiere un modelo de pesos completos en formato safetensors, posiblemente en el rango de 14B parámetros, similar al Wan2.1-VACE-14B mencionado en fuentes externas.
+El modelo `ThirdTimesTheCiarc/base_wan21` es un repositorio alojado en Hugging Face con acceso restringido (gated) que, por su nombre y las referencias encontradas en la web, parece estar relacionado con la familia de modelos Wan2.1 de generación de vídeo de código abierto desarrollada por el equipo Wan-Video. El repositorio tiene un tamaño de 34,3 GB, lo que sugiere un modelo de pesos completos en formato safetensors, posiblemente en el rango de 14B parámetros, similar al Wan2.1-VACE-14B mencionado en fuentes externas.
 
-La información pública disponible en la ficha de HuggingFace es extremadamente limitada: no se especifica la arquitectura, el número de parámetros, la licencia, los idiomas soportados ni el pipeline. El modelo está marcado con la etiqueta `not-for-all-audiences`, lo que indica que puede contener contenido no apto para todos los públicos, y requiere aceptar condiciones adicionales en HuggingFace para poder acceder a los archivos. A fecha de creación (enero de 2026) no registra descargas públicas, lo que sugiere que se trata de un modelo en fase temprana o de uso restringido.
+La información pública disponible en la ficha de Hugging Face es extremadamente limitada: no se especifica la arquitectura, el número de parámetros, la licencia, los idiomas soportados ni el pipeline. El modelo está marcado con la etiqueta `not-for-all-audiences`, lo que indica que puede contener contenido no apto para todos los públicos, y requiere aceptar condiciones adicionales en Hugging Face para poder acceder a los archivos. A fecha de creación (enero de 2026) no registra descargas públicas, lo que sugiere que se trata de un modelo en fase temprana o de uso restringido.
 
 ## Especificaciones tecnicas
 
@@ -69,7 +69,7 @@ La comparativa es incompleta porque no se tienen especificaciones confirmadas de
 
 ## Limitaciones y advertencias
 
-- **Acceso restringido**: el modelo requiere aceptar condiciones adicionales en HuggingFace para poder descargar los archivos, lo que limita su uso inmediato y su evaluación por parte de la comunidad.
+- **Acceso restringido**: el modelo requiere aceptar condiciones adicionales en Hugging Face para poder descargar los archivos, lo que limita su uso inmediato y su evaluación por parte de la comunidad.
 - **Contenido no apto para todos los públicos**: la etiqueta `not-for-all-audiences` sugiere que el modelo puede generar contenido sensible, lo que requiere precauciones legales y éticas en su uso.
 - **Falta de documentación**: no se ha publicado una model card completa, por lo que se desconocen los sesgos, las limitaciones de contexto o idioma, y los riesgos de alucinación o generación de contenido no deseado.
 - **Riesgo de alucinación en generación de vídeo**: si el modelo es de generación de vídeo, podría producir secuencias inconsistentes o no realistas, especialmente en escenarios de movimiento complejo o interacción entre objetos.
@@ -78,6 +78,6 @@ La comparativa es incompleta porque no se tienen especificaciones confirmadas de
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/ThirdTimesTheCiarc/base_wan21
+- Repositorio de Hugging Face: https://huggingface.co/ThirdTimesTheCiarc/base_wan21
 - Repositorio oficial de Wan2.1 en GitHub: https://github.com/Wan-Video/Wan2.1
 - Referencia a Wan2.1-VACE-14B en CivArchive: https://civarchive.com/models/1620800?modelVersionId=1834321

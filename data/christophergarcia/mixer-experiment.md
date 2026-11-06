@@ -37,7 +37,7 @@ El checkpoint `model.safetensors` es una inicialización aleatoria, no un modelo
 
 - **Investigación académica**: el modelo puede utilizarse para estudiar la viabilidad de la arquitectura Mixer en tareas de clasificación con recursos computacionales mínimos. Los investigadores pueden entrenarlo con datasets pequeños y comparar su rendimiento con arquitecturas tradicionales.
 - **Pruebas de integración**: al ser un checkpoint de inicialización, es útil para verificar que el pipeline de entrenamiento o inferencia funciona correctamente antes de lanzar experimentos a mayor escala.
-- **Desarrollo de adaptadores**: dado que la carga automática requiere un adaptador explícito, el repositorio sirve como ejemplo para implementar integraciones personalizadas con HuggingFace u otros frameworks.
+- **Desarrollo de adaptadores**: dado que la carga automática requiere un adaptador explícito, el repositorio sirve como ejemplo para implementar integraciones personalizadas con Hugging Face u otros frameworks.
 - **Benchmarking de arquitecturas**: permite comparar el coste computacional y la convergencia de la configuración "giant" frente a otras escalas de Mixer, siempre que se entrene con los mismos datos y semillas.
 - **Educación**: el código es transparente y puede usarse en cursos de aprendizaje automático para ilustrar la implementación de arquitecturas modernas de mezcla de tokens.
 - **Prototipado rápido**: aunque no está entrenado, el esqueleto del modelo permite probar rápidamente modificaciones arquitectónicas (cambios en atención, normalización, etc.) antes de invertir en entrenamiento completo.
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - **VRAM estimada**: con 24.832 parámetros, el modelo ocupa menos de 100 KB en memoria. Cabe en cualquier dispositivo, incluso en microcontroladores.
 - **GPU recomendadas**: no se requiere GPU; una CPU convencional es suficiente para ejecutar el modelo.
 - **Compatibilidad con GPU de consumo**: sí, cualquier GPU moderna (incluso integradas) puede ejecutarlo sin problemas.
-- **Opciones de despliegue**: al ser un modelo PyTorch estándar, puede ejecutarse con cualquier framework que soporte PyTorch (por ejemplo, HuggingFace Transformers con un adaptador, o directamente con el script `eval.py`). No se mencionan integraciones con vLLM, llama.cpp u Ollama.
+- **Opciones de despliegue**: al ser un modelo PyTorch estándar, puede ejecutarse con cualquier framework que soporte PyTorch (por ejemplo, Hugging Face Transformers con un adaptador, o directamente con el script `eval.py`). No se mencionan integraciones con vLLM, llama.cpp u Ollama.
 - **Latencia y throughput**: no disponibles, pero dado el tamaño ínfimo, la inferencia es prácticamente instantánea.
 
 ## Comparativa con modelos similares
@@ -69,4 +69,4 @@ No disponible. Este repositorio no es un modelo entrenado ni comparable con mode
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/christophergarcia/mixer-experiment)
+- [Repositorio en Hugging Face](https://huggingface.co/christophergarcia/mixer-experiment)

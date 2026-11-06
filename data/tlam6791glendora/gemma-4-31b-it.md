@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `tlam6791glendora/gemma-4-31B-it` es una publicacion de pesos en HuggingFace derivada de `google/gemma-4-31B`, el modelo denso de 31B de la familia Gemma 4 desarrollada por Google DeepMind. La model card declara un pipeline `image-text-to-text`, lo que lo situa como un modelo multimodal capaz de procesar texto e imagen (y video como secuencia de fotogramas) y generar texto. Con 31.273.088.876 parametros reales en safetensors, se posiciona en el tramo de estaciones de trabajo y GPU de gama alta dentro de la familia.
+El modelo `tlam6791glendora/gemma-4-31B-it` es una publicacion de pesos en Hugging Face derivada de `google/gemma-4-31B`, el modelo denso de 31B de la familia Gemma 4 desarrollada por Google DeepMind. La model card declara un pipeline `image-text-to-text`, lo que lo situa como un modelo multimodal capaz de procesar texto e imagen (y video como secuencia de fotogramas) y generar texto. Con 31.273.088.876 parametros reales en safetensors, se posiciona en el tramo de estaciones de trabajo y GPU de gama alta dentro de la familia.
 
 Segun la documentacion de la familia Gemma 4, esta variante densa incorpora una ventana de contexto de hasta 256K tokens, soporte multilingue en mas de 140 idiomas, modos de razonamiento configurables ("thinking modes") y soporte nativo de `system prompt` y de function calling. La arquitectura emplea atencion hibrida que intercala atencion local de ventana deslizante con atencion global completa, con Keys y Values unificados y Proportional RoPE (p-RoPE) en las capas globales para optimizar memoria en contexto largo.
 
@@ -94,10 +94,10 @@ En terminos de licencia, los modelos de la familia se distribuyen bajo Apache 2.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tlam6791glendora/gemma-4-31B-it
+- Repositorio en Hugging Face: https://huggingface.co/tlam6791glendora/gemma-4-31B-it
 - Modelo base: https://huggingface.co/google/gemma-4-31B
 - Informe tecnico (arXiv): https://arxiv.org/abs/2607.02770
-- Coleccion Gemma 4 en HuggingFace: https://huggingface.co/collections/google/gemma-4
+- Coleccion Gemma 4 en Hugging Face: https://huggingface.co/collections/google/gemma-4
 - Repositorio GitHub de Google Gemma: https://github.com/google-gemma
 - Blog de lanzamiento: https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/
 - Documentacion: https://ai.google.dev/gemma/docs/core

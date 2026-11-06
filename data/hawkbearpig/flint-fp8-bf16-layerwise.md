@@ -76,9 +76,9 @@ En el conjunto de selección de 6.138 objetivos, la política elegida alcanzó u
 
 | Modelo | Parametros totales | Contexto | Tamano de pesos | Fidelidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| HawkBearPig/flint-FP8-BF16-Layerwise | 39,8 B | no disponible | 76,350 GB | 99,03 % top-1, KL 0,000793 | apache-2.0 | HuggingFace, runtime `dgpp` pendiente |
-| RecursiveSI/flint (BF16) | 39,8 B | no disponible | 79,571 GB | referencia (100 %) | apache-2.0 | HuggingFace |
-| HawkBearPig/flint-NVFP4-FP8 | no disponible | no disponible | 30,80 GB | sustancialmente inferior, según el autor | no disponible | HuggingFace, experimental |
+| HawkBearPig/flint-FP8-BF16-Layerwise | 39,8 B | no disponible | 76,350 GB | 99,03 % top-1, KL 0,000793 | apache-2.0 | Hugging Face, runtime `dgpp` pendiente |
+| RecursiveSI/flint (BF16) | 39,8 B | no disponible | 79,571 GB | referencia (100 %) | apache-2.0 | Hugging Face |
+| HawkBearPig/flint-NVFP4-FP8 | no disponible | no disponible | 30,80 GB | sustancialmente inferior, según el autor | no disponible | Hugging Face, experimental |
 
 La comparación relevante es interna a la familia: frente al BF16 fuente se ahorra un 4,05 % de tamaño a cambio de un 0,97 % de acuerdo top-1 perdido, mientras que la alternativa NVFP4/FP8 reduce el tamaño a 30,80 GB con una fidelidad notablemente peor y sin paridad de capacidad establecida. No se han identificado en la búsqueda web modelos comparables de terceros.
 
@@ -94,11 +94,11 @@ La comparación relevante es interna a la familia: frente al BF16 fuente se ahor
 - Licencia: apache-2.0 en este derivado, pero conviene verificar los términos del modelo base RecursiveSI/flint antes de uso comercial.
 - Contexto: longitud de contexto no disponible, lo que impide planificar despliegues con ventanas largas.
 - Estado de desarrollo: pensado como paso intermedio hacia un port futuro; no hay garantía de mantenimiento ni de soporte.
-- La búsqueda web no devolvió resultados relevantes sobre este modelo; todos los enlaces útiles proceden de la información de HuggingFace.
+- La búsqueda web no devolvió resultados relevantes sobre este modelo; todos los enlaces útiles proceden de la información de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HawkBearPig/flint-FP8-BF16-Layerwise
+- Modelo en Hugging Face: https://huggingface.co/HawkBearPig/flint-FP8-BF16-Layerwise
 - Modelo base: https://huggingface.co/RecursiveSI/flint
 - Revisión del modelo base utilizada: https://huggingface.co/RecursiveSI/flint/tree/2a247be0c0aec895ccb0ac7ca92229ec6df37288
 - Checkpoint alternativo NVFP4/FP8: https://huggingface.co/HawkBearPig/flint-NVFP4-FP8

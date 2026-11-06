@@ -75,5 +75,5 @@ No disponible. Este repositorio no es un modelo de IA y no existen modelos compa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Snapkitty/ortho32-sdk-java
+- Repositorio en Hugging Face: https://huggingface.co/Snapkitty/ortho32-sdk-java
 - Repositorio de código (mencionado en el README): https://github.com/ortho32/ortho32-sdk-java.git

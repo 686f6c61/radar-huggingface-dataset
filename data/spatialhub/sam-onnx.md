@@ -4,7 +4,7 @@
 
 SpatialHub/sam-onnx es un export del modelo Segment Anything Model (SAM) de Meta en formato ONNX, publicado por el usuario SpatialHub. SAM es un sistema de segmentación de imágenes basado en prompts que permite segmentar cualquier objeto de una imagen mediante puntos, cajas o texto. El formato ONNX facilita la inferencia en una amplia variedad de plataformas que soporten ONNX Runtime, incluyendo CPU, GPU y dispositivos periféricos.
 
-El repositorio contiene los pesos del modelo en formato ONNX (1.6 GB), lo que indica que probablemente incluye el image encoder completo, además del prompt encoder y el mask decoder. La licencia Apache 2.0 permite uso comercial sin restricciones significativas. La ausencia de una model card detallada en HuggingFace limita la información disponible sobre la configuración exacta del modelo, pero los resultados de búsqueda confirman que se trata de un export de SAM, posiblemente vinculado a la librería `spatialhub` publicada en PyPI.
+El repositorio contiene los pesos del modelo en formato ONNX (1.6 GB), lo que indica que probablemente incluye el image encoder completo, además del prompt encoder y el mask decoder. La licencia Apache 2.0 permite uso comercial sin restricciones significativas. La ausencia de una model card detallada en Hugging Face limita la información disponible sobre la configuración exacta del modelo, pero los resultados de búsqueda confirman que se trata de un export de SAM, posiblemente vinculado a la librería `spatialhub` publicada en PyPI.
 
 ## Especificaciones tecnicas
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 | SAM (original) | ViT-H | ~636 M | - | Apache-2.0 | PyTorch | Repo oficial de Meta |
 | SAM-2 | ViT-H (mejorado) | ~2.4 B | - | Apache-2.0 | PyTorch | Repo oficial de Meta |
 | MobileSAM | ViT-Tiny | ~40 M | - | Apache-2.0 | PyTorch, ONNX | Repo oficial |
-| **SpatialHub/sam-onnx** | SAM (ViT) | no disponible | - | Apache-2.0 | ONNX | HuggingFace |
+| **SpatialHub/sam-onnx** | SAM (ViT) | no disponible | - | Apache-2.0 | ONNX | Hugging Face |
 
 Nota: SAM-2 y MobileSAM son alternativas mas recientes o ligeras. MobileSAM es mucho mas pequeño y adecuado para edge, mientras que SAM-2 ofrece mejor rendimiento en video. Este modelo no ofrece informacion de parametros, pero el tamano del repo sugiere que es el SAM original completo.
 
@@ -76,7 +76,7 @@ Nota: SAM-2 y MobileSAM son alternativas mas recientes o ligeras. MobileSAM es m
 
 ## Enlaces
 
-- [HuggingFace - SpatialHub/sam-onnx](https://huggingface.co/SpatialHub/sam-onnx)
+- [Hugging Face - SpatialHub/sam-onnx](https://huggingface.co/SpatialHub/sam-onnx)
 - [Colab - ONNX model example (Meta)](https://colab.research.google.com/github/facebookresearch/segment-anything/blob/main/notebooks/onnx_model_example.ipynb)
 - [Documentacion API de SAM_ONNX (Girinchutia)](https://girinchutia.github.io/SAM_ONNX/)
 - [PyPI - spatialhub](https://pypi.org/project/spatialhub/)

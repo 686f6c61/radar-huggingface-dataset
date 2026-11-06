@@ -95,7 +95,7 @@ La comparación cuantitativa de rendimiento no es posible: no hay métricas publ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/adodabele/FoodExtract-gemma-3-270m-fine-tune-v1
+- Modelo en Hugging Face: https://huggingface.co/adodabele/FoodExtract-gemma-3-270m-fine-tune-v1
 - Modelo base: https://huggingface.co/google/gemma-3-270m-it
 - Dataset de entrenamiento FoodExtract-1k: https://huggingface.co/datasets/mrdbourke/FoodExtract-1k
 - Dataset de captions mencionado en la model card (Recap-DataComp-1B): https://huggingface.co/datasets/UCSC-VLAA/Recap-DataComp-1B

@@ -96,7 +96,7 @@ Frente a Piper o Kokoro, la ventaja de Soprano-1.1-80M-5bit es su integracion na
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/flyingfishinwater/Soprano-1.1-80M-5bit
+- Modelo en Hugging Face: https://huggingface.co/flyingfishinwater/Soprano-1.1-80M-5bit
 - Modelo base: https://huggingface.co/ekwek/Soprano-1.1-80M
 - Conversion bf16 referenciada en la model card: https://huggingface.co/mlx-community/Soprano-1.1-80M-bf16
 - Repositorio citado en el README: https://huggingface.co/mlx-community/Soprano-1.1-80M-5bit

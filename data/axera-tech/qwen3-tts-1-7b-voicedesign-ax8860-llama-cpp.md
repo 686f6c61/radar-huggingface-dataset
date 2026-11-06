@@ -81,8 +81,8 @@ No se han publicado resultados de benchmarks de calidad (MOS, WER, similitud de 
 
 | Modelo | Parametros | Contexto | Hardware | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-TTS-1.7B-VoiceDesign-AX8860 (esta ficha) | 1.733.157.888 | 4096 | NPU Axera AX8860 | no disponible | GGUF + kernels en HuggingFace |
-| Qwen3-TTS-12Hz-1.7B-VoiceDesign (modelo base) | 1.733.157.888 | no disponible | GPU/CPU generica | no disponible | HuggingFace (Qwen) |
+| Qwen3-TTS-1.7B-VoiceDesign-AX8860 (esta ficha) | 1.733.157.888 | 4096 | NPU Axera AX8860 | no disponible | GGUF + kernels en Hugging Face |
+| Qwen3-TTS-12Hz-1.7B-VoiceDesign (modelo base) | 1.733.157.888 | no disponible | GPU/CPU generica | no disponible | Hugging Face (Qwen) |
 | Qwen3-TTS-1.7B Base en AX8860 | no disponible | no disponible | NPU Axera AX8860 | no disponible | Referenciado en la model card; kernels identicos |
 
 No se dispone en la información proporcionada de datos de rendimiento ni de especificaciones de otros sistemas TTS comparables (por ejemplo, modelos de la familia XTTS o Fish Speech), por lo que la comparación cuantitativa de calidad queda como no disponible.
@@ -101,7 +101,7 @@ No se dispone en la información proporcionada de datos de rendimiento ni de esp
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AXERA-TECH/Qwen3-TTS-1.7B-VoiceDesign-AX8860-llama.cpp
+- Repositorio en Hugging Face: https://huggingface.co/AXERA-TECH/Qwen3-TTS-1.7B-VoiceDesign-AX8860-llama.cpp
 - Modelo base: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign
 - llama.cpp con backend Axera (`axera-dev`, commit cff4752): https://github.com/ZHEQIUSHUI/llama.cpp
 - Kernels de NPU (`main`, commit 60dd25b): https://github.com/ZHEQIUSHUI/ax-dsl-kernels

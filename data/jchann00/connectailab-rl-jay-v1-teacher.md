@@ -94,7 +94,7 @@ No se han identificado en la información disponible otros modelos comparables d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jchann00/connectailab-rl-jay-v1-teacher
+- Modelo en Hugging Face: https://huggingface.co/jchann00/connectailab-rl-jay-v1-teacher
 - Repositorio CONNECT TYCOON (GitHub): https://github.com/wonseokjung/connect-tycoon
 - Cuaderno de entrenamiento en Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb
 - Formato JEV referenciado en la model card: https://huggingface.co/typesafe/jev-1.13

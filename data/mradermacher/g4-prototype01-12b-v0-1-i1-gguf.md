@@ -70,8 +70,8 @@ No se dispone de datos de rendimiento ni de especificaciones detalladas de model
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/mradermacher/G4-Prototype01-12B-v0.1-i1-GGUF
-- Repositorio HuggingFace del modelo base: https://huggingface.co/12B-Suite/G4-Prototype01-12B-v0.1
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/G4-Prototype01-12B-v0.1-i1-GGUF
+- Repositorio Hugging Face del modelo base: https://huggingface.co/12B-Suite/G4-Prototype01-12B-v0.1
 - Repositorio de cuantizaciones estaticas: https://huggingface.co/mradermacher/G4-Prototype01-12B-v0.1-GGUF
 - Ficha en LLM Explorer: https://llm-explorer.com/model/12B-Suite%2FG4-Prototype01-12B-v0.1,4mCqz7AlZKA7gXMURCb9ln
 - Pagina de inferencia en FriendliAI: https://friendli.ai/models/12B-Suite/G4-Prototype01-12B-v0.1

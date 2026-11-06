@@ -2,11 +2,11 @@
 
 ## Resumen
 
-MyAwesomeModel (repositorio ASD1SAD12/MyAwesomeModel-TestRepo) es un modelo publicado en HuggingFace cuyo único material disponible es una model card en formato plantilla, con los nombres propios sustituidos por etiquetas genéricas (MyAwesomeModel, Model1, Model2, Model1-v2). La model card describe una actualización de versión que mejora el razonamiento profundo y la inferencia mediante más recursos computacionales y "mecanismos de optimización algorítmica" aplicados en la fase de post-entrenamiento. No se indica el número de parámetros, la longitud de contexto, la composición del dataset ni el formato de los pesos.
+MyAwesomeModel (repositorio ASD1SAD12/MyAwesomeModel-TestRepo) es un modelo publicado en Hugging Face cuyo único material disponible es una model card en formato plantilla, con los nombres propios sustituidos por etiquetas genéricas (MyAwesomeModel, Model1, Model2, Model1-v2). La model card describe una actualización de versión que mejora el razonamiento profundo y la inferencia mediante más recursos computacionales y "mecanismos de optimización algorítmica" aplicados en la fase de post-entrenamiento. No se indica el número de parámetros, la longitud de contexto, la composición del dataset ni el formato de los pesos.
 
 El dato más concreto del repositorio es la mejora declarada en el test AIME 2025: la precisión pasa del 70 % en la versión anterior al 87,5 % en la actual, con un aumento del esfuerzo de razonamiento de 12 000 a 23 000 tokens por pregunta. La card también afirma una reducción de la tasa de alucinación y un soporte mejorado de function calling, y acompaña una tabla de benchmarks con 15 tareas (matemáticas, lógica, código, traducción, instrucciones, seguridad) donde el modelo queda por delante de las tres referencias anonimizadas en casi todas las filas.
 
-La relevancia práctica es limitada tal como está publicado: el repositorio tiene 0 descargas y 0 "likes", no declara pipeline, idiomas ni licencia en los metadatos de HuggingFace, y su nombre incluye "TestRepo", lo que apunta a un artefacto de prueba o a una demo de plantilla más que a un modelo desplegable. Toda la ficha que sigue se basa exclusivamente en la información de la model card y del repositorio, y marca como no disponible todo lo que no consta.
+La relevancia práctica es limitada tal como está publicado: el repositorio tiene 0 descargas y 0 "likes", no declara pipeline, idiomas ni licencia en los metadatos de Hugging Face, y su nombre incluye "TestRepo", lo que apunta a un artefacto de prueba o a una demo de plantilla más que a un modelo desplegable. Toda la ficha que sigue se basa exclusivamente en la información de la model card y del repositorio, y marca como no disponible todo lo que no consta.
 
 ## Especificaciones técnicas
 
@@ -18,7 +18,7 @@ La relevancia práctica es limitada tal como está publicado: el repositorio tie
 | Longitud de contexto | no disponible (la card menciona 23 000 tokens de media por pregunta en AIME 2025, pero es esfuerzo de razonamiento, no ventana de contexto) |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | MIT según el front-matter de la model card; el campo de licencia del repositorio en HuggingFace figura como no disponible |
+| Licencia | MIT según el front-matter de la model card; el campo de licencia del repositorio en Hugging Face figura como no disponible |
 | Formato de pesos | no disponible (la etiqueta del repositorio indica PyTorch; no se detalla safetensors, GGUF ni ningún otro formato) |
 
 Otros datos del repositorio: autor ASD1SAD12, 0 descargas, 0 likes, pipeline no disponible, etiquetas "pytorch" y "region:us", creado el 2026-09-11 y actualizado el 2026-09-11.
@@ -89,7 +89,7 @@ Advertencias sobre estos datos: las columnas de comparación están anonimizadas
 - VRAM para inferencia: no disponible. Al no publicarse el número de parámetros ni el formato de pesos, no es posible calcular una estimación fiable.
 - GPU recomendadas: no disponible por el mismo motivo. La card remite a un repositorio de código externo que no se enlaza.
 - Ejecución en GPU de consumo: no disponible. No puede confirmarse que el modelo quepa en una RTX 4090, 4080 o similar sin conocer su tamaño.
-- Opciones de despliegue: no disponible. La card no menciona vLLM, llama.cpp, Ollama, TGI ni ningún runtime concreto; la única referencia técnica es `library_name: transformers`, por lo que la vía nominal sería la librería Transformers de HuggingFace si los pesos estuvieran publicados.
+- Opciones de despliegue: no disponible. La card no menciona vLLM, llama.cpp, Ollama, TGI ni ningún runtime concreto; la única referencia técnica es `library_name: transformers`, por lo que la vía nominal sería la librería Transformers de Hugging Face si los pesos estuvieran publicados.
 - Latencia y throughput: no disponibles. Como referencia indirecta, el modo de razonamiento descrito implica unas 23 000 tokens generados por consulta en AIME, lo que supone un coste de cómputo elevado por petición, pero no se publican medidas de latencia ni de tokens por segundo.
 
 ## Comparativa con modelos similares
@@ -115,13 +115,13 @@ No es posible establecer comparaciones con alternativas reales del mismo tamaño
 - Sesgos: no se documenta ninguna evaluación de sesgos, ni demográficos ni culturales.
 - Alucinación: la card declara una reducción de la tasa de alucinación, pero sin cifra ni conjunto de evaluación que lo respalde.
 - Idiomas: no declarados. La model card está en inglés y no se especifica cobertura multilingüe, pese a reportar 0,804 en traducción.
-- Licencia: discrepancia entre el MIT declarado en el front-matter de la model card y la ausencia de licencia en los metadatos del repositorio de HuggingFace. Antes de un uso comercial debe aclararse esta inconsistencia.
+- Licencia: discrepancia entre el MIT declarado en el front-matter de la model card y la ausencia de licencia en los metadatos del repositorio de Hugging Face. Antes de un uso comercial debe aclararse esta inconsistencia.
 - Fechas inconsistentes: el repositorio figura como creado el 2026-09-11, mientras que el ejemplo de system prompt de la card menciona el 28 de mayo de 2025.
 - Coste de inferencia: el modo de razonamiento documentado implica una generación muy larga por consulta (23 000 tokens de media), lo que encarece cada petición y aumenta la latencia.
 - Sin soporte ni mantenimiento evidente: no se enlazan repositorio de código, web de chat ni plataforma de API, aunque la card los menciona.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ASD1SAD12/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/ASD1SAD12/MyAwesomeModel-TestRepo
 - Recursos mencionados en la model card pero sin URL proporcionada: fichero LICENSE, figuras `figures/fig1.png`, `figures/fig2.png` y `figures/fig3.png`, repositorio de código para ejecución local, y web de chat y plataforma de API.
 - Resultados de búsqueda web: no se ha encontrado ningún enlace relevante al modelo. Las únicas URLs devueltas por la búsqueda (onthisday.com, britannica.com, history.com, timeanddate.com) tratan sobre efemérides históricas y no guardan relación con el modelo, por lo que se descartan.

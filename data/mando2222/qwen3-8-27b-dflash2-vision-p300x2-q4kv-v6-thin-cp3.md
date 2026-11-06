@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace contiene una variante optimizada del modelo Qwen/Qwen3.8-27B, publicada por el usuario mando2222 bajo licencia Apache 2.0. Por los tags del repositorio (vllm, tenstorrent, p300c, p150x4, blackhole, thin, tt-model-cache) y por el nombre del propio ID, se trata de un artefacto de despliegue orientado a aceleradores Tenstorrent (arquitecturas Blackhole y P300C) más que de un modelo entrenado desde cero: la nomenclatura "q4kv", "dflash2", "vision" y "thin" sugiere una compilación con cuantización de pesos y caché KV a 4 bits, soporte de visión y una variante "thin" del grafo computacional.
+Este repositorio de Hugging Face contiene una variante optimizada del modelo Qwen/Qwen3.8-27B, publicada por el usuario mando2222 bajo licencia Apache 2.0. Por los tags del repositorio (vllm, tenstorrent, p300c, p150x4, blackhole, thin, tt-model-cache) y por el nombre del propio ID, se trata de un artefacto de despliegue orientado a aceleradores Tenstorrent (arquitecturas Blackhole y P300C) más que de un modelo entrenado desde cero: la nomenclatura "q4kv", "dflash2", "vision" y "thin" sugiere una compilación con cuantización de pesos y caché KV a 4 bits, soporte de visión y una variante "thin" del grafo computacional.
 
 El modelo base declarado es Qwen/Qwen3.8-27B, un transformer de 27.000 millones de parámetros de la familia Qwen, con licencia Apache 2.0. Este repositorio concreta una distribución del mismo pensada para servir inferencia en hardware Tenstorrent con vLLM como backend, probablemente mediante el sistema de caché de modelos "tt-model-cache" del fabricante. La relevancia actual es acotada pero específica: permite ejecutar un modelo de 27B en aceleradores Tenstorrent con un formato de pesos y KV cache optimizado, aunque el repositorio está vacío (0.0 GB) y el acceso es restringido (gated), lo que limita su uso real.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
 | mando2222/qwen3.8-27b-dflash2-vision-p300x2-q4kv-v6-thin-cp3 | 27B | no disponible | Apache 2.0 | Gated, repo 0.0 GB, 0 descargas | Variante para Tenstorrent/vLLM con KV cache q4 |
-| Qwen/Qwen3.8-27B (modelo base) | 27B | no disponible | Apache 2.0 | Público en HuggingFace | Modelo original; contexto y benchmarks deben consultarse en su ficha |
+| Qwen/Qwen3.8-27B (modelo base) | 27B | no disponible | Apache 2.0 | Público en Hugging Face | Modelo original; contexto y benchmarks deben consultarse en su ficha |
 | Alternativas de 27B en GPU | ~27B | no disponible | variable | variable | No se dispone de datos comparativos verificables en la información proporcionada |
 
 No se dispone de datos de rendimiento comparables para establecer una comparativa cuantitativa con alternativas de la misma categoría.
@@ -71,7 +71,7 @@ No se dispone de datos de rendimiento comparables para establecer una comparativ
 ## Limitaciones y advertencias
 
 - Repositorio vacío: el tamaño de 0.0 GB indica que no hay pesos publicados o que el artefacto es solo un manifiesto; no es utilizable tal cual sin material adicional.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que añade fricción para uso comercial o automatizado.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que añade fricción para uso comercial o automatizado.
 - Sin documentación: no hay pipeline, idiomas, contexto ni benchmarks declarados; cualquier evaluación debe hacerse empíricamente.
 - Dependencia de hardware propietario: el artefacto está orientado a aceleradores Tenstorrent (Blackhole, P300C, P150x4); no se garantiza portabilidad a CUDA ni a otros backends.
 - Cuantización KV a 4 bits: puede degradar la calidad en contextos muy largos o en tareas de recuperación precisa; no se documenta el impacto.
@@ -82,6 +82,6 @@ No se dispone de datos de rendimiento comparables para establecer una comparativ
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mando2222/qwen3.8-27b-dflash2-vision-p300x2-q4kv-v6-thin-cp3
+- Repositorio Hugging Face: https://huggingface.co/mando2222/qwen3.8-27b-dflash2-vision-p300x2-q4kv-v6-thin-cp3
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

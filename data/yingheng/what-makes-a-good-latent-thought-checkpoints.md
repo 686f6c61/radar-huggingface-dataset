@@ -72,7 +72,7 @@ No se dispone de comparativas con otros modelos en la información proporcionada
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| what-makes-a-good-latent-thought-checkpoints | no disponible | no disponible | no publicado | no disponible | HuggingFace, 0 descargas, 0 likes |
+| what-makes-a-good-latent-thought-checkpoints | no disponible | no disponible | no publicado | no disponible | Hugging Face, 0 descargas, 0 likes |
 | Alternativas de razonamiento latente | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativas de espacio de estados (tipo S5) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -91,7 +91,7 @@ No se dispone de comparativas con otros modelos en la información proporcionada
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yingheng/what-makes-a-good-latent-thought-checkpoints
+- Modelo en Hugging Face: https://huggingface.co/yingheng/what-makes-a-good-latent-thought-checkpoints
 - Repositorio de código compañero: https://github.com/isjakewong/what-makes-a-good-latent-thought
 - Búsqueda web realizada: los resultados obtenidos (temas de GitHub sobre ChatGPT, guías de recuperación de chats, listados de herramientas de chat y documentación de modelos de GitHub Copilot) no guardan relación con este repositorio y no se incluyen como fuentes.
 - Enlace al artículo y cita bibliográfica: no disponibles todavía; el autor indica que se añadirán cuando el preprint esté accesible.

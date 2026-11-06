@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Estados conformacionales | Grafo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gRNAde v0.3.2 (5 states, all) | 2,157 M | 5 | Solo espacial (131 canales) | AGPL-3.0 | HuggingFace (oteam) |
-| gRNAde v0.3.2 (1 state, all) | 2,157 M | 1 | Solo espacial (131 canales) | AGPL-3.0 | HuggingFace (oteam) |
-| gRNAde v1 | 2,157 M | Multiples | Secuencia + pares de bases + espacial (132 canales) | AGPL-3.0 | HuggingFace (oteam) |
+| gRNAde v0.3.2 (5 states, all) | 2,157 M | 5 | Solo espacial (131 canales) | AGPL-3.0 | Hugging Face (oteam) |
+| gRNAde v0.3.2 (1 state, all) | 2,157 M | 1 | Solo espacial (131 canales) | AGPL-3.0 | Hugging Face (oteam) |
+| gRNAde v1 | 2,157 M | Multiples | Secuencia + pares de bases + espacial (132 canales) | AGPL-3.0 | Hugging Face (oteam) |
 | gRNAde original (chaitjo) | No disponible | Multiples | No disponible | No disponible | GitHub oficial |
 
 Las variantes comparten arquitectura y numero de parametros; la diferencia principal reside en el numero de conformaciones soportadas y en el tipo de grafo (v1 con canales de secuencia y pares de bases, v0.3.2 solo espacial). No se dispone de datos de rendimiento comparativo entre ellas en la informacion proporcionada.
@@ -91,7 +91,7 @@ Las variantes comparten arquitectura y numero de parametros; la diferencia princ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oteam/grnade-v0.3.2-5state-all
+- Modelo en Hugging Face: https://huggingface.co/oteam/grnade-v0.3.2-5state-all
 - Variante v0.3.2 1 state (all): https://huggingface.co/oteam/grnade-v0.3.2-1state-all
 - Variante v0.3.2 1 state (das): https://huggingface.co/oteam/grnade-v0.3.2-1state-das
 - Variante v0.3.2 1 state (multi): https://huggingface.co/oteam/grnade-v0.3.2-1state-multi

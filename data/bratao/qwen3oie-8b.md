@@ -87,7 +87,7 @@ El modelo se distingue del base por su especialización en la tarea de OpenIE, p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bratao/Qwen3OIE-8B
+- Repositorio Hugging Face: https://huggingface.co/bratao/Qwen3OIE-8B
 - Página de despliegue en FriendliAI: https://friendli.ai/models/bratao/Qwen3OIE-8B
 - Artefacto GGUF de terceros (mradermacher): https://alphaneural.io/assets/mradermacher/Qwen3OIE-8B-GGUF
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B

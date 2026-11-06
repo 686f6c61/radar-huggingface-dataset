@@ -2,7 +2,7 @@
 
 ## Resumen
 
-contrastive-best es un repositorio experimental publicado en HuggingFace por el usuario aaronthompsonette. Según su model card, se trata de una base de código de MobileViT orientada a aprendizaje contrastivo, con una configuración de arquitectura generada automáticamente y un recetario de entrenamiento por defecto basado en el optimizador Lion con calentamiento lineal. El propio autor declara explícitamente que el checkpoint incluido (model.safetensors) es una inicialización válida para pruebas de humo y que no se presenta como un checkpoint entrenado ni evaluado.
+contrastive-best es un repositorio experimental publicado en Hugging Face por el usuario aaronthompsonette. Según su model card, se trata de una base de código de MobileViT orientada a aprendizaje contrastivo, con una configuración de arquitectura generada automáticamente y un recetario de entrenamiento por defecto basado en el optimizador Lion con calentamiento lineal. El propio autor declara explícitamente que el checkpoint incluido (model.safetensors) es una inicialización válida para pruebas de humo y que no se presenta como un checkpoint entrenado ni evaluado.
 
 El dato objetivo disponible es que el checkpoint contiene 24.832 parámetros (según el fichero safetensors), lo que contrasta con la etiqueta de escala "huge" que aparece en la configuración de arquitectura. El tamaño del repositorio es de 0,0 GB, no tiene descargas ni "likes", y no declara idiomas ni tarea (pipeline no disponible). La relevancia actual del artefacto es, por tanto, la de una plantilla de investigación reproducible más que la de un modelo utilizable en producción.
 
@@ -75,7 +75,7 @@ Los datos de las alternativas provienen de sus publicaciones originales y no han
 
 | Modelo | Arquitectura | Parametros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| contrastive-best (aaronthompsonette) | MobileViT con fusion con puerta | 24.832 (segun safetensors) | no disponible | No (inicializacion) | BSD-3-Clause | HuggingFace, 0 descargas |
+| contrastive-best (aaronthompsonette) | MobileViT con fusion con puerta | 24.832 (segun safetensors) | no disponible | No (inicializacion) | BSD-3-Clause | Hugging Face, 0 descargas |
 | MobileViT original (Apple, 2021) | MobileViT, variantes XXS a S | aproximadamente 1-6 millones segun variante (publicacion original, no verificado aqui) | no aplica (vision) | Si, clasificacion de imagenes | no disponible en esta informacion | Codigo y pesos publicados por los autores |
 | CLIP ViT-B/32 (OpenAI) | Transformer de vision con aprendizaje contrastivo imagen-texto | aproximadamente 151 millones (publicacion original, no verificado aqui) | alrededor de 77 tokens de texto | Si | no disponible en esta informacion | Pesos ampliamente distribuidos |
 | ViT-B/16 (Google) | Transformer de vision puro | aproximadamente 86 millones (publicacion original, no verificado aqui) | no aplica (vision) | Si | no disponible en esta informacion | Pesos ampliamente distribuidos |
@@ -96,7 +96,7 @@ Los datos de las alternativas provienen de sus publicaciones originales y no han
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aaronthompsonette/contrastive-best
+- Modelo en Hugging Face: https://huggingface.co/aaronthompsonette/contrastive-best
 - Repositorio de referencia de MobileViT (Apple): no disponible en la informacion proporcionada.
 - Paper de MobileViT: no disponible en la informacion proporcionada.
 - Paper de CLIP: no disponible en la informacion proporcionada.

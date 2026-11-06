@@ -2,7 +2,7 @@
 
 ## Resumen
 
-wind-arc-1 (también referenciado en la model card como "wind arc 1/north star 1.1") es un checkpoint experimental de tipo causal-LM publicado por el usuario arthu1 en HuggingFace. Se presenta explícitamente como un "smoke/demo checkpoint" derivado de un modelo previo del mismo autor, `arthu1/north-star-1`, mediante un proceso muy breve de SFT/destilación de texto sobre 12 pares prompt/respuesta y 5 pasos de entrenamiento locales en MPS. No emplea logits de profesor: la etiqueta "text-distillation" se refiere únicamente al uso de respuestas objetivo curadas.
+wind-arc-1 (también referenciado en la model card como "wind arc 1/north star 1.1") es un checkpoint experimental de tipo causal-LM publicado por el usuario arthu1 en Hugging Face. Se presenta explícitamente como un "smoke/demo checkpoint" derivado de un modelo previo del mismo autor, `arthu1/north-star-1`, mediante un proceso muy breve de SFT/destilación de texto sobre 12 pares prompt/respuesta y 5 pasos de entrenamiento locales en MPS. No emplea logits de profesor: la etiqueta "text-distillation" se refiere únicamente al uso de respuestas objetivo curadas.
 
 El modelo conserva la arquitectura propietaria "North Star" y el tokenizador SentencePiece del checkpoint original, y se distribuye tanto en formato PyTorch nativo (`northstar1_1.pt`) como en exportación safetensors (`model.safetensors`). Con 148.300.544 parámetros (aproximadamente 148 M) y 1,2 GB de repositorio, se sitúa en la gama de modelos pequeños orientados a ejecución local.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| wind-arc-1 | 148,3 M | no disponible | Apache 2.0 | HuggingFace (repo `arthu1/wind-arc-1`) | Checkpoint demo, arquitectura propietaria, sin benchmarks |
-| GPT-2 small | 124 M | 1024 tokens | MIT | HuggingFace, ampliamente integrado | Arquitectura estándar, soporte nativo en transformers |
-| SmolLM-135M | 135 M | 2048 tokens | Apache 2.0 | HuggingFace, GGUF, Ollama | Entrenado con corpus a gran escala, benchmarks publicados |
-| Qwen2.5-0.5B | 494 M | 32 768 tokens | Apache 2.0 | HuggingFace, GGUF, vLLM, Ollama | Mayor tamaño y contexto, ecosistema maduro |
+| wind-arc-1 | 148,3 M | no disponible | Apache 2.0 | Hugging Face (repo `arthu1/wind-arc-1`) | Checkpoint demo, arquitectura propietaria, sin benchmarks |
+| GPT-2 small | 124 M | 1024 tokens | MIT | Hugging Face, ampliamente integrado | Arquitectura estándar, soporte nativo en transformers |
+| SmolLM-135M | 135 M | 2048 tokens | Apache 2.0 | Hugging Face, GGUF, Ollama | Entrenado con corpus a gran escala, benchmarks publicados |
+| Qwen2.5-0.5B | 494 M | 32 768 tokens | Apache 2.0 | Hugging Face, GGUF, vLLM, Ollama | Mayor tamaño y contexto, ecosistema maduro |
 
 La comparación es orientativa por rango de parámetros: wind-arc-1 no dispone de métricas públicas ni de integración en frameworks estándar, a diferencia de las alternativas citadas.
 
@@ -82,6 +82,6 @@ La comparación es orientativa por rango de parámetros: wind-arc-1 no dispone d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/arthu1/wind-arc-1
+- Hugging Face: https://huggingface.co/arthu1/wind-arc-1
 - Modelo base referenciado: https://huggingface.co/arthu1/north-star-1
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-FinaPolat/Qwen3-8B-grounded_KGC-grpo-domains-warmstart es un ajuste fino (fine-tuning) del modelo Qwen3-8B publicado en HuggingFace por el usuario FinaPolat. El identificador del repositorio indica que se ha entrenado con GRPO (Group Relative Policy Optimization) sobre una tarea de construccion/completado de grafos de conocimiento con fundamento (grounded knowledge graph construction, KGC), con un esquema de "warmstart" y una aparente especializacion por dominios. El modelo tiene 8.190.735.360 parametros reales, segun los pesos en safetensors, y el repositorio ocupa 16,4 GB.
+FinaPolat/Qwen3-8B-grounded_KGC-grpo-domains-warmstart es un ajuste fino (fine-tuning) del modelo Qwen3-8B publicado en Hugging Face por el usuario FinaPolat. El identificador del repositorio indica que se ha entrenado con GRPO (Group Relative Policy Optimization) sobre una tarea de construccion/completado de grafos de conocimiento con fundamento (grounded knowledge graph construction, KGC), con un esquema de "warmstart" y una aparente especializacion por dominios. El modelo tiene 8.190.735.360 parametros reales, segun los pesos en safetensors, y el repositorio ocupa 16,4 GB.
 
 La relevancia de esta publicacion es limitada pero concreta: se trata de un experimento de ajuste con aprendizaje por refuerzo sobre una base densa de 8B, orientado a tareas de extraccion y generacion de tripletas ancladas a texto fuente. Este tipo de modelos se emplea para poblar grafos de conocimiento, hacer entity linking, relation extraction y verificacion de hechos, donde la "groundedness" (que cada tripleta este respaldada por evidencia textual) es el criterio central de calidad.
 
-Es importante advertir de entrada que la model card es la plantilla autogenerada por HuggingFace y no contiene informacion sustantiva: todos los campos relevantes (licencia, idiomas, datos de entrenamiento, hiperparametros, evaluacion) aparecen como "[More Information Needed]". Por tanto, buena parte de las especificaciones de esta ficha se marcan como no disponibles, y las que se aportan derivadas del modelo base se indican explicitamente como tales. Los resultados de la busqueda web proporcionada no contienen informacion util sobre el modelo (son resultados no relacionados con loterias), por lo que no se han utilizado.
+Es importante advertir de entrada que la model card es la plantilla autogenerada por Hugging Face y no contiene informacion sustantiva: todos los campos relevantes (licencia, idiomas, datos de entrenamiento, hiperparametros, evaluacion) aparecen como "[More Information Needed]". Por tanto, buena parte de las especificaciones de esta ficha se marcan como no disponibles, y las que se aportan derivadas del modelo base se indican explicitamente como tales. Los resultados de la busqueda web proporcionada no contienen informacion util sobre el modelo (son resultados no relacionados con loterias), por lo que no se han utilizado.
 
 ## Especificaciones tecnicas
 
@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| FinaPolat/Qwen3-8B-grounded_KGC-grpo-domains-warmstart | 8,19B | No disponible | No disponible | HuggingFace, safetensors, 0 descargas |
-| Qwen3-8B (modelo base) | 8,19B | 32.768 tokens nativos, 131.072 con YaRN | Apache 2.0 | HuggingFace, ampliamente desplegado |
-| Llama 3.1 8B Instruct | 8,03B | 128.000 tokens | Licencia comunitaria de Meta | HuggingFace |
-| Mistral 7B Instruct v0.3 | 7,24B | 32.768 tokens | Apache 2.0 | HuggingFace |
+| FinaPolat/Qwen3-8B-grounded_KGC-grpo-domains-warmstart | 8,19B | No disponible | No disponible | Hugging Face, safetensors, 0 descargas |
+| Qwen3-8B (modelo base) | 8,19B | 32.768 tokens nativos, 131.072 con YaRN | Apache 2.0 | Hugging Face, ampliamente desplegado |
+| Llama 3.1 8B Instruct | 8,03B | 128.000 tokens | Licencia comunitaria de Meta | Hugging Face |
+| Mistral 7B Instruct v0.3 | 7,24B | 32.768 tokens | Apache 2.0 | Hugging Face |
 
 Nota: los datos del modelo base Qwen3-8B y de las alternativas provienen de sus fichas publicas, no de la model card de este repositorio. No se dispone de comparativas de rendimiento en tareas de KGC fundamentada entre estos modelos, por lo que la comparacion se limita a parametros, contexto y licencia.
 
@@ -95,7 +95,7 @@ Nota: los datos del modelo base Qwen3-8B y de las alternativas provienen de sus 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FinaPolat/Qwen3-8B-grounded_KGC-grpo-domains-warmstart
+- Modelo en Hugging Face: https://huggingface.co/FinaPolat/Qwen3-8B-grounded_KGC-grpo-domains-warmstart
 - Referencia citada en los tags de la model card (paper de Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental mencionada en la model card: https://mlco2.github.io/impact
 - Modelo base Qwen3-8B (referencia no citada en la model card, pero origen del checkpoint): https://huggingface.co/Qwen/Qwen3-8B

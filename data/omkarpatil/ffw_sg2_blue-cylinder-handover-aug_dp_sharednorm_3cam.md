@@ -78,9 +78,9 @@ Se han identificado dos modelos del mismo autor para el mismo entorno FFW SG2 re
 
 | Modelo | Arquitectura | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ffw_sg2_blue-cylinder-handover-aug_dp_sharednorm_3cam | Diffusion Policy | blue-cylinder-handover | Apache 2.0 | HuggingFace |
-| ffw_sg2_blue-cylinder-handover_smolvla_nonorm | SmolVLA | blue-cylinder-handover | no disponible | HuggingFace |
-| ffw_sg2_pick-blue-cylinder-left-arm_groot-n1.7 | Groot-N1.7 | pick-blue-cylinder-left-arm | no disponible | HuggingFace |
+| ffw_sg2_blue-cylinder-handover-aug_dp_sharednorm_3cam | Diffusion Policy | blue-cylinder-handover | Apache 2.0 | Hugging Face |
+| ffw_sg2_blue-cylinder-handover_smolvla_nonorm | SmolVLA | blue-cylinder-handover | no disponible | Hugging Face |
+| ffw_sg2_pick-blue-cylinder-left-arm_groot-n1.7 | Groot-N1.7 | pick-blue-cylinder-left-arm | no disponible | Hugging Face |
 
 No se dispone de información sobre parámetros, contexto ni benchmarks para realizar una comparativa cuantitativa.
 
@@ -95,6 +95,6 @@ No se dispone de información sobre parámetros, contexto ni benchmarks para rea
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/omkarpatil/ffw_sg2_blue-cylinder-handover-aug_dp_sharednorm_3cam
+- Hugging Face: https://huggingface.co/omkarpatil/ffw_sg2_blue-cylinder-handover-aug_dp_sharednorm_3cam
 - Modelo SmolVLA del mismo autor: https://huggingface.co/omkarpatil/ffw_sg2_blue-cylinder-handover_smolvla_nonorm
 - Modelo Groot-N1.7 del mismo autor: https://huggingface.co/omkarpatil/ffw_sg2_pick-blue-cylinder-left-arm_groot-n1.7

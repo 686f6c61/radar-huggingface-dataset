@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kimberlymartinez/swin-t-retrieval-test` es un repositorio experimental de HuggingFace que contiene una implementación en PyTorch de una arquitectura Swin Transformer (variante `swin_t`) orientada a tareas de *retrieval* (recuperación imagen-texto). Lo publica el usuario kimberlymartinez y no está asociado a ninguna organización de investigación ni a un paper. El propio autor declara explícitamente que el checkpoint incluido (`model.safetensors`) es una **inicialización válida para smoke tests**, no un modelo entrenado, y que no se reclama ninguna puntuación de benchmark.
+`kimberlymartinez/swin-t-retrieval-test` es un repositorio experimental de Hugging Face que contiene una implementación en PyTorch de una arquitectura Swin Transformer (variante `swin_t`) orientada a tareas de *retrieval* (recuperación imagen-texto). Lo publica el usuario kimberlymartinez y no está asociado a ninguna organización de investigación ni a un paper. El propio autor declara explícitamente que el checkpoint incluido (`model.safetensors`) es una **inicialización válida para smoke tests**, no un modelo entrenado, y que no se reclama ninguna puntuación de benchmark.
 
 El interés del repositorio es, por tanto, documental y de ingeniería: sirve como esqueleto reproducible (script `finetune.py`, `config.json`, `training_args.json`) para montar un pipeline de retrieval multimodal con atención agrupada (*grouped query attention*), fusión por *co-attention*, activación swish y normalización RMSNorm. No es un modelo listo para producción ni para evaluación comparativa.
 
@@ -77,7 +77,7 @@ La diferencia práctica es sustancial: los tres comparadores están entrenados y
 - **Sin benchmarks**: no hay métricas de retrieval (R@1, R@5, R@10, mAP) ni comparación con líneas base, por lo que no es evaluable frente a alternativas.
 - **Inconsistencia de escala**: el model card indica escala "giant" mientras que safetensors reporta 49.600 parámetros; no se puede determinar la arquitectura real a partir de la documentación.
 - **Riesgo de alucinación**: no aplica en el sentido de generación de texto, pero sí existe riesgo de conclusiones erróneas si alguien cita este repositorio como si fuera un modelo entrenado.
-- **Sin validación comunitaria**: 0 descargas, 0 likes, sin etiqueta de *pipeline* en HuggingFace; no hay evidencia de uso externo ni de revisión por terceros.
+- **Sin validación comunitaria**: 0 descargas, 0 likes, sin etiqueta de *pipeline* en Hugging Face; no hay evidencia de uso externo ni de revisión por terceros.
 - **Carga no estándar**: requiere un adaptador explícito para las APIs automáticas; esto complica la integración en *frameworks* estándar y en pipelines de CI/CD.
 - **Licencia**: BSD-3-Clause permite uso comercial con atribución y sin garantías, pero el propio autor advierte de que los términos de los datos de origen deben revisarse por separado si se usa con datasets externos (por ejemplo, Flickr30k tiene sus propias condiciones).
 - **Ausencia de idiomas declarados**: no se puede asumir cobertura multilingüe en la parte textual del retrieval.
@@ -85,5 +85,5 @@ La diferencia práctica es sustancial: los tres comparadores están entrenados y
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kimberlymartinez/swin-t-retrieval-test
+- Hugging Face: https://huggingface.co/kimberlymartinez/swin-t-retrieval-test
 - No se han encontrado en la búsqueda web papers, blogs, repositorios de código adicionales ni demos asociados a este modelo.

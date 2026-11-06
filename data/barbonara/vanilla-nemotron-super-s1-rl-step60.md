@@ -65,11 +65,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| barbonara/vanilla-nemotron-super-s1-rl-step60 | Adaptador sobre 120B/12B activos | no disponible | LoRA PEFT (checkpoint RL, paso 60) | no disponible | HuggingFace (0 descargas, 0 likes) |
-| barbonara/corin-nemotron-super-neutral-s1-rl-step60 | Adaptador sobre 120B/12B activos | no disponible | LoRA PEFT (mismo estudio, con personaje neutral) | no disponible | HuggingFace |
-| barbonara/corin-nemotron-super-anti-s1-rl-step60 | Adaptador sobre 120B/12B activos | no disponible | LoRA PEFT (mismo estudio, personaje anti-cheating) | no disponible | HuggingFace |
-| nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16 | 120B / 12B activos | no disponible | Modelo base MoE | no disponible | HuggingFace |
-| nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16 | 30B / 3B activos | no disponible | Modelo MoE (variante Nano) | no disponible | HuggingFace |
+| barbonara/vanilla-nemotron-super-s1-rl-step60 | Adaptador sobre 120B/12B activos | no disponible | LoRA PEFT (checkpoint RL, paso 60) | no disponible | Hugging Face (0 descargas, 0 likes) |
+| barbonara/corin-nemotron-super-neutral-s1-rl-step60 | Adaptador sobre 120B/12B activos | no disponible | LoRA PEFT (mismo estudio, con personaje neutral) | no disponible | Hugging Face |
+| barbonara/corin-nemotron-super-anti-s1-rl-step60 | Adaptador sobre 120B/12B activos | no disponible | LoRA PEFT (mismo estudio, personaje anti-cheating) | no disponible | Hugging Face |
+| nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16 | 120B / 12B activos | no disponible | Modelo base MoE | no disponible | Hugging Face |
+| nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16 | 30B / 3B activos | no disponible | Modelo MoE (variante Nano) | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos entre estos modelos en la información proporcionada.
 
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/barbonara/vanilla-nemotron-super-s1-rl-step60
+- Hugging Face del adaptador: https://huggingface.co/barbonara/vanilla-nemotron-super-s1-rl-step60
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16
 - Checkpoint hermano (personaje neutral): https://huggingface.co/barbonara/corin-nemotron-super-neutral-s1-rl-step60
 - Checkpoint hermano (personaje anti-cheating): https://huggingface.co/barbonara/corin-nemotron-super-anti-s1-rl-step60

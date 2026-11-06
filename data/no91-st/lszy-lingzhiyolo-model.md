@@ -2,7 +2,7 @@
 
 ## Resumen
 
-No se ha encontrado información pública relevante sobre el modelo `no91-st/LSZY-LingzhiYolo-model`. El repositorio en HuggingFace no contiene datos técnicos (tamaño 0.0 GB), no se especifica pipeline, licencia ni idiomas, y el número de descargas es cero. La fecha de creación (2026-09-02) resulta anómala y sugiere que podría tratarse de un repositorio vacío, un placeholder o un error de publicación. No existe documentación adicional en la web que permita identificar la arquitectura, el entrenamiento o las capacidades del modelo. Por tanto, esta ficha se limita a reflejar la ausencia de datos verificables y advierte de los riesgos de utilizar un modelo sin especificaciones.
+No se ha encontrado información pública relevante sobre el modelo `no91-st/LSZY-LingzhiYolo-model`. El repositorio en Hugging Face no contiene datos técnicos (tamaño 0.0 GB), no se especifica pipeline, licencia ni idiomas, y el número de descargas es cero. La fecha de creación (2026-09-02) resulta anómala y sugiere que podría tratarse de un repositorio vacío, un placeholder o un error de publicación. No existe documentación adicional en la web que permita identificar la arquitectura, el entrenamiento o las capacidades del modelo. Por tanto, esta ficha se limita a reflejar la ausencia de datos verificables y advierte de los riesgos de utilizar un modelo sin especificaciones.
 
 ## Especificaciones técnicas
 
@@ -54,4 +54,4 @@ No es posible establecer una comparativa con modelos alternativos al no existir 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/no91-st/LSZY-LingzhiYolo-model
+- Repositorio en Hugging Face: https://huggingface.co/no91-st/LSZY-LingzhiYolo-model

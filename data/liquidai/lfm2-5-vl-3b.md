@@ -15,8 +15,8 @@ Es la evolución del LFM2-VL-3B, con mejoras significativas en tareas de interfa
 | Parametros activos | no aplicable (no es MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible (los tags de HuggingFace sugieren ar, zh, en, fr, de, hi, id, it, ja, ko, pl, pt, ru, es, th, vi, pero no hay confirmacion oficial) |
-| Licencia | no disponible (tag "license:other" en HuggingFace) |
+| Idiomas soportados | no disponible (los tags de Hugging Face sugieren ar, zh, en, fr, de, hi, id, it, ja, ko, pl, pt, ru, es, th, vi, pero no hay confirmacion oficial) |
+| Licencia | no disponible (tag "license:other" en Hugging Face) |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
@@ -33,7 +33,7 @@ No se dispone de informacion sobre el dataset de entrenamiento, el numero de tok
 - Function calling: puede invocar funciones externas o APIs, integrándose en flujos de trabajo agénticos.
 - Entrada de multiples imagenes: acepta varias imagenes en una misma consulta, permitiendo comparaciones o analisis conjunto.
 - No razonador: responde directamente sin cadenas de pensamiento, lo que reduce la latencia en comparacion con modelos que generan razonamiento intermedio.
-- Multilingue: aunque no hay confirmacion oficial, los tags de HuggingFace indican soporte para mas de 15 idiomas, incluyendo español, ingles, frances, aleman, chino, japones, etc.
+- Multilingue: aunque no hay confirmacion oficial, los tags de Hugging Face indican soporte para mas de 15 idiomas, incluyendo español, ingles, frances, aleman, chino, japones, etc.
 
 ## Casos de uso
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 - VRAM estimada para inferencia: al ser un modelo de 3.1B parametros, en precision FP16 ocuparia aproximadamente 6.2 GB de VRAM. Con cuantizacion INT8 se reduciria a ~3.1 GB, y con INT4 a ~1.6 GB, aunque no se han publicado cuantizaciones oficiales.
 - GPU recomendadas: puede ejecutarse en GPUs consumer como NVIDIA RTX 3060 (12 GB), RTX 4060 (8 GB) o superiores. Tambien es compatible con Apple Silicon (M1/M2/M3) y CPUs modernas mediante frameworks de inferencia optimizados.
 - Si cabe en consumer GPU: si, en GPUs con al menos 4 GB de VRAM si se usa cuantizacion, y en 8 GB sin cuantizar.
-- Opciones de despliegue: al ser un modelo con pesos en safetensors, es compatible con frameworks como vLLM, llama.cpp, Ollama, TGI y Transformers de HuggingFace. Para edge, se puede usar ONNX Runtime o Core ML para dispositivos moviles.
+- Opciones de despliegue: al ser un modelo con pesos en safetensors, es compatible con frameworks como vLLM, llama.cpp, Ollama, TGI y Transformers de Hugging Face. Para edge, se puede usar ONNX Runtime o Core ML para dispositivos moviles.
 - Latencia y throughput: no se han publicado datos oficiales. Dado su tamano y diseño no razonador, se espera una latencia de decenas de milisegundos en GPUs modernas, pero no hay cifras confirmadas.
 
 ## Comparativa con modelos similares
@@ -65,13 +65,13 @@ No se dispone de una comparativa oficial con otros modelos de la misma categoria
 - Al ser un modelo de 3.1B parametros, su capacidad de razonamiento complejo y conocimiento general es limitada en comparacion con modelos mucho mas grandes (70B+). Puede fallar en tareas que requieren inferencia profunda o conocimiento especializado.
 - Riesgo de alucinacion visual: como todos los VLMs, puede generar descripciones incorrectas o inventar detalles de una imagen, especialmente en escenas complejas o con objetos poco comunes.
 - No se ha publicado informacion sobre sesgos o evaluaciones de seguridad. Se recomienda realizar pruebas especificas antes de desplegar en produccion.
-- La licencia exacta no esta especificada (tag "license:other" en HuggingFace). Es necesario verificar los terminos de uso antes de utilizarlo comercialmente.
+- La licencia exacta no esta especificada (tag "license:other" en Hugging Face). Es necesario verificar los terminos de uso antes de utilizarlo comercialmente.
 - No se conocen los idiomas soportados de forma oficial, aunque los tags sugieren una amplia cobertura. La calidad puede variar entre idiomas.
 - No se dispone de informacion sobre la longitud de contexto, lo que limita la planificacion de aplicaciones que requieran dialogos largos o documentos extensos.
 
 ## Enlaces
 
-- [HuggingFace - LiquidAI/LFM2.5-VL-3B](https://huggingface.co/LiquidAI/LFM2.5-VL-3B)
+- [Hugging Face - LiquidAI/LFM2.5-VL-3B](https://huggingface.co/LiquidAI/LFM2.5-VL-3B)
 - [Blog oficial de Liquid AI](https://www.liquid.ai/blog/lfm2-5-vl-3b)
 - [Documentacion de Liquid AI](https://docs.liquid.ai/lfm/models/lfm25-vl-3b)
 - [Articulo en Unite.ai](https://www.unite.ai/liquid-ai-ships-lfm2-5-vl-3b-for-faster-vision-language-ai-on-the-edge/)

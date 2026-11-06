@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `bhushan1729/orpheus-3b-stage1` es un adapter LoRA (PEFT) que fine-tunea el modelo base `unsloth/orpheus-3b-0.1-ft`, una versión ajustada de Orpheus 3B 0.1, un sistema de texto a voz (TTS) de código abierto desarrollado por CanopyAI y basado en una arquitectura Llama-3b. A pesar de que el pipeline declarado es `text-generation`, el modelo base es un TTS, lo que sugiere que este adapter podría ser un experimento para adaptar el modelo a tareas de generación de texto, aunque no se proporcionan detalles sobre el dataset de entrenamiento ni los objetivos concretos. La ficha se genera automáticamente por HuggingFace, indicando que se entrenó sobre un dataset desconocido con una pérdida de validación de 5.6764, lo que sugiere una convergencia limitada. Dada la escasez de información pública, esta ficha se basa exclusivamente en los datos disponibles y marca como "no disponible" cualquier aspecto no documentado.
+El modelo `bhushan1729/orpheus-3b-stage1` es un adapter LoRA (PEFT) que fine-tunea el modelo base `unsloth/orpheus-3b-0.1-ft`, una versión ajustada de Orpheus 3B 0.1, un sistema de texto a voz (TTS) de código abierto desarrollado por CanopyAI y basado en una arquitectura Llama-3b. A pesar de que el pipeline declarado es `text-generation`, el modelo base es un TTS, lo que sugiere que este adapter podría ser un experimento para adaptar el modelo a tareas de generación de texto, aunque no se proporcionan detalles sobre el dataset de entrenamiento ni los objetivos concretos. La ficha se genera automáticamente por Hugging Face, indicando que se entrenó sobre un dataset desconocido con una pérdida de validación de 5.6764, lo que sugiere una convergencia limitada. Dada la escasez de información pública, esta ficha se basa exclusivamente en los datos disponibles y marca como "no disponible" cualquier aspecto no documentado.
 
 ## Especificaciones técnicas
 
@@ -43,7 +43,7 @@ Dado que la información pública es mínima y la pérdida de validación es alt
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El modelo-index de HuggingFace muestra una lista vacía de resultados. La única métrica reportada es la pérdida de validación de 5.6764, que no es comparable con benchmarks estándar como MMLU o HumanEval.
+No se han publicado resultados de benchmarks en la información disponible. El modelo-index de Hugging Face muestra una lista vacía de resultados. La única métrica reportada es la pérdida de validación de 5.6764, que no es comparable con benchmarks estándar como MMLU o HumanEval.
 
 ## Requisitos de hardware
 
@@ -69,7 +69,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bhushan1729/orpheus-3b-stage1
+- Modelo en Hugging Face: https://huggingface.co/bhushan1729/orpheus-3b-stage1
 - Modelo base: https://huggingface.co/unsloth/orpheus-3b-0.1-ft
 - Repositorio de Orpheus TTS (CanopyAI): https://github.com/canopyai/Orpheus-TTS
 - Tutorial de uso de Orpheus 3B: https://aiindigo.com/tutorials/getting-started-with-orpheus-3b-0-1-pretrained-synthesize-natural-speech-in-minu

@@ -18,7 +18,7 @@ El resultado es un artefacto pensado exclusivamente para inferencia WebGPU en na
 | Longitud de contexto | 128.000 tokens (128K) |
 | Tipos de cuantizacion | Int4 simetrica q4f16 (solo escalas, sin zero_points) |
 | Idiomas soportados | No disponible |
-| Licencia | No disponible en los metadatos de HuggingFace; el autor indica que los pesos son propiedad de LiquidAI y se distribuyen bajo su licencia |
+| Licencia | No disponible en los metadatos de Hugging Face; el autor indica que los pesos son propiedad de LiquidAI y se distribuyen bajo su licencia |
 | Formato de pesos | ONNX (grafo `onnx/model_q4f16.onnx` mas doce fragmentos `model_q4f16.onnx_data` a `_data_11`) |
 
 ## Arquitectura y entrenamiento
@@ -78,9 +78,9 @@ El export oficial LiquidAI/LFM2.5-8B-A1B-ONNX reporta una validacion de paridad 
 
 | Modelo / export | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nchapman/LFM2.5-8B-A1B-ONNX-q4f16-sym-webgpu | 8B totales, 1B-1,5B activos | 128K | Int4 simetrica q4f16, 12 fragmentos de <=0,43 GB | No disponible en metadatos; pesos de LiquidAI bajo su licencia | Publico en HuggingFace, 0 descargas, 0 likes |
-| LiquidAI/LFM2.5-8B-A1B-ONNX | 8B totales, 1,5B activos | 128K | Export oficial ONNX (no apto para WebGPU en navegador) | Licencia de LiquidAI | Oficial en HuggingFace |
-| flackzz/LFM2.5-8B-A1B-ONNX-Q4F16-sym-resharded | 8B totales, 1B activos | 128K | Int4 simetrica q4f16 con reshards | No disponible | Publico en HuggingFace |
+| nchapman/LFM2.5-8B-A1B-ONNX-q4f16-sym-webgpu | 8B totales, 1B-1,5B activos | 128K | Int4 simetrica q4f16, 12 fragmentos de <=0,43 GB | No disponible en metadatos; pesos de LiquidAI bajo su licencia | Publico en Hugging Face, 0 descargas, 0 likes |
+| LiquidAI/LFM2.5-8B-A1B-ONNX | 8B totales, 1,5B activos | 128K | Export oficial ONNX (no apto para WebGPU en navegador) | Licencia de LiquidAI | Oficial en Hugging Face |
+| flackzz/LFM2.5-8B-A1B-ONNX-Q4F16-sym-resharded | 8B totales, 1B activos | 128K | Int4 simetrica q4f16 con reshards | No disponible | Publico en Hugging Face |
 | Alternativas de otros fabricantes en el mismo rango | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La unica diferencia funcional relevante entre las tres variantes de LFM2.5-8B-A1B listadas es el empaquetado: el export oficial prioriza la fidelidad numerica, mientras que las dos reexportaciones simetricas sacrifican esa identidad byte a byte a cambio de compatibilidad con WebGPU en navegador.

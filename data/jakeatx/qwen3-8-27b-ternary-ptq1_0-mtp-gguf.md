@@ -93,7 +93,7 @@ No se conocen, a partir de la información proporcionada, otros modelos ternario
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jakeatx/Qwen3.8-27B-Ternary-PTQ1_0-MTP-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/jakeatx/Qwen3.8-27B-Ternary-PTQ1_0-MTP-GGUF
 - Runtime llamAmpere (rama `feature/v0.3.1-bonsai2`): https://github.com/JakeATX/llamAmpere
 - Paper, blog o demo del modelo base: no disponible
 - Resultados de benchmarks: no disponible

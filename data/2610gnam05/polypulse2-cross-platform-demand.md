@@ -86,10 +86,10 @@ El dato clave es que el 70,47 % incluye los ajustes de logits específicos por p
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---:|---:|---|---|---|
-| PolyPulse 2.0 (este modelo) | 184,4 M | 128 tokens | Clasificación de demanda en 3 clases | no disponible | HuggingFace, 0 descargas |
-| microsoft/deberta-v3-base | ~184 M | 512 tokens | Modelo base generalista (MLM) | MIT | HuggingFace, ampliamente usado |
+| PolyPulse 2.0 (este modelo) | 184,4 M | 128 tokens | Clasificación de demanda en 3 clases | no disponible | Hugging Face, 0 descargas |
+| microsoft/deberta-v3-base | ~184 M | 512 tokens | Modelo base generalista (MLM) | MIT | Hugging Face, ampliamente usado |
 | TF-IDF + regresión logística (baseline del autor) | no aplica | no aplica | Clasificación de demanda en 3 clases | no aplica | Reproducible |
-| DeBERTa-v3-base afinado genérico para clasificación financiera | ~184 M | 512 tokens | Clasificación de sentimiento o tópico | variable según checkpoint | Múltiples checkpoints en HuggingFace |
+| DeBERTa-v3-base afinado genérico para clasificación financiera | ~184 M | 512 tokens | Clasificación de sentimiento o tópico | variable según checkpoint | Múltiples checkpoints en Hugging Face |
 
 La comparación más relevante es contra el propio modelo base sin afinar y contra el baseline TF-IDF del autor: el afinado aporta una mejora sustancial sobre TF-IDF solo cuando se añaden los ajustes de decisión por plataforma. Frente a otros encoders de tamaño similar (RoBERTa-base, BERT-base), no hay datos comparativos publicados en la información disponible.
 
@@ -109,7 +109,7 @@ La comparación más relevante es contra el propio modelo base sin afinar y cont
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/2610gnam05/polypulse2-cross-platform-demand
+- Modelo en Hugging Face: https://huggingface.co/2610gnam05/polypulse2-cross-platform-demand
 - Modelo base: https://huggingface.co/microsoft/deberta-v3-base
 - Resultados de búsqueda web sin relación con el modelo (descartados): https://www.digika.ai/ y https://www.cryptotask.org/en
 - No se han encontrado papers, blogs, repositorios ni demos asociados al modelo en la información disponible.

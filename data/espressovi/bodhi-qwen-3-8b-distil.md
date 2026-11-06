@@ -55,7 +55,7 @@ No se han publicado resultados adicionales en la informacion disponible. No se d
 - VRAM estimada para inferencia: con 8,19 B parametros, en FP16 se requieren aproximadamente 16 GB de VRAM; en cuantizacion de 4 bits (por ejemplo, con GPTQ o AWQ) se reduce a unos 5-6 GB.
 - GPU recomendadas: para FP16, una NVIDIA RTX 4090 (24 GB) o A100 (40/80 GB) es suficiente; para cuantizacion 4 bits, una RTX 3060 (12 GB) o superior puede bastar.
 - En consumer GPU: si, con cuantizacion es viable en GPUs de gama media-alta (RTX 3080/3090, 4070 Ti, etc.).
-- Opciones de despliegue: al ser un modelo de la familia Qwen, es compatible con vLLM, llama.cpp, Ollama, TGI y Transformers de HuggingFace. No se han publicado configuraciones especificas de latencia o throughput.
+- Opciones de despliegue: al ser un modelo de la familia Qwen, es compatible con vLLM, llama.cpp, Ollama, TGI y Transformers de Hugging Face. No se han publicado configuraciones especificas de latencia o throughput.
 - Nota: el tamaño del repositorio (39 GB) sugiere pesos en FP16/BF16; para despliegue eficiente se recomienda cuantizar.
 
 ## Comparativa con modelos similares
@@ -81,7 +81,7 @@ Los datos de DeepSeek-R1-Distill no se han verificado en esta ficha; se incluyen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/espressovi/BODHI-qwen-3-8b-distil
+- Modelo en Hugging Face: https://huggingface.co/espressovi/BODHI-qwen-3-8b-distil
 - Dataset de destilacion: https://huggingface.co/datasets/espressovi/BODHI-distillation
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B-Base
 - Otros modelos del autor: https://huggingface.co/espressovi (SUTRA-qwen3-8b-distil, BODHI-qwen-3-maze-8b-distil, BODHI-qwen-3-math-8b-rlvr)

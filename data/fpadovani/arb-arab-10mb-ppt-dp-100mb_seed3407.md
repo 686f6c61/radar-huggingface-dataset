@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`arb-arab-10mb-ppt-Dp-100mb_seed3407` es un ajuste fino supervisado (SFT) del modelo `goldfish-models/arb_arab_10mb`, publicado por el usuario de HuggingFace fpadovani (la entidad de Weights & Biases asociada al experimento es "f-padovani-university-of-groningen"). Se trata de un transformer decoder-only de tipo GPT-2 con 39.087.104 parametros reales (segun los pesos en safetensors), entrenado con TRL 0.23.0, Transformers 4.56.2 y PyTorch 2.5.1+cu121.
+`arb-arab-10mb-ppt-Dp-100mb_seed3407` es un ajuste fino supervisado (SFT) del modelo `goldfish-models/arb_arab_10mb`, publicado por el usuario de Hugging Face fpadovani (la entidad de Weights & Biases asociada al experimento es "f-padovani-university-of-groningen"). Se trata de un transformer decoder-only de tipo GPT-2 con 39.087.104 parametros reales (segun los pesos en safetensors), entrenado con TRL 0.23.0, Transformers 4.56.2 y PyTorch 2.5.1+cu121.
 
 El interes del modelo es metodologico mas que de producto. El identificador describe un experimento controlado: modelo base entrenado con 10 MB de texto, variante con 100 MB, un prefijo "ppt" y "Dp" que apuntan a alguna estrategia de seleccion de datos, y la semilla fija 3407 (valor por defecto habitual en scripts de ajuste fino). El repositorio no incluye ninguna descripcion adicional del dataset, del objetivo de entrenamiento ni de los hiperparametros, por lo que la ficha publica queda reducida a la plantilla autogenerada por TRL.
 
@@ -12,7 +12,7 @@ Se publica como artefacto de investigacion reproducible: el modelo tiene 0 desca
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only tipo GPT-2 (tag `gpt2` en los metadatos de HuggingFace) |
+| Arquitectura | Transformer decoder-only tipo GPT-2 (tag `gpt2` en los metadatos de Hugging Face) |
 | Parametros totales | 39.087.104 |
 | Parametros activos | No aplica (modelo denso, no es MoE) |
 | Longitud de contexto | No disponible |
@@ -38,7 +38,7 @@ El entrenamiento se realizo mediante SFT (supervised fine-tuning) con TRL, sobre
 - Continuacion de texto y finalizacion de secuencias cortas.
 - Respuesta a instrucciones en formato conversacional simple, siempre que el prompt siga el formato con el que se hizo el SFT; no hay evidencia de alineacion robusta.
 - Integracion en el ecosistema Transformers mediante `pipeline`, con soporte de `max_new_tokens` y `return_full_text`.
-- Compatibilidad declarada con text-generation-inference y con los endpoints de HuggingFace (tags `text-generation-inference` y `endpoints_compatible`).
+- Compatibilidad declarada con text-generation-inference y con los endpoints de Hugging Face (tags `text-generation-inference` y `endpoints_compatible`).
 - No se documenta soporte de tool calling ni de function calling.
 - No se documenta soporte de agentes, razonamiento multi-paso, modo thinking, vision, audio ni otras modalidades.
 - No se documenta capacidad multilingue; por el identificador, el entrenamiento se limita al arabe.
@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Arquitectura | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `fpadovani/arb-arab-10mb-ppt-Dp-100mb_seed3407` | 39,1 M | GPT-2 decoder-only, ajustado con SFT | No disponible | Generativo, arabe | No disponible | HuggingFace, 0 descargas |
-| `goldfish-models/arb_arab_10mb` (modelo base) | ~39 M (misma familia) | GPT-2 decoder-only | No disponible | Generativo, arabe | No disponible en la informacion proporcionada | HuggingFace |
-| Modelos encoder tipo AraBERT / MARBERT | ~136 M y ~163 M respectivamente (datos de conocimiento publico general, no verificados en la informacion proporcionada) | BERT encoder-only | 512 tokens | Comprension, no generativo | Generalmente Apache 2.0 o MIT segun variante | HuggingFace |
+| `fpadovani/arb-arab-10mb-ppt-Dp-100mb_seed3407` | 39,1 M | GPT-2 decoder-only, ajustado con SFT | No disponible | Generativo, arabe | No disponible | Hugging Face, 0 descargas |
+| `goldfish-models/arb_arab_10mb` (modelo base) | ~39 M (misma familia) | GPT-2 decoder-only | No disponible | Generativo, arabe | No disponible en la informacion proporcionada | Hugging Face |
+| Modelos encoder tipo AraBERT / MARBERT | ~136 M y ~163 M respectivamente (datos de conocimiento publico general, no verificados en la informacion proporcionada) | BERT encoder-only | 512 tokens | Comprension, no generativo | Generalmente Apache 2.0 o MIT segun variante | Hugging Face |
 
 La comparacion directa solo es posible con el modelo base, del que este ajuste hereda arquitectura y probablemente tokenizador. Frente a los modelos encoder en arabe, este modelo ocupa un nicho distinto: es generativo, mucho mas pequeno y no esta pensado para tareas de clasificacion o NER de alta calidad, sino para experimentacion sobre entrenamiento y datos.
 
@@ -91,7 +91,7 @@ La comparacion directa solo es posible con el modelo base, del que este ajuste h
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/arb-arab-10mb-ppt-Dp-100mb_seed3407
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/arb-arab-10mb-ppt-Dp-100mb_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/arb_arab_10mb
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new_tokenizers/runs/ow8zmj8o
 - Repositorio de TRL: https://github.com/huggingface/trl

@@ -118,7 +118,7 @@ Frente a otros modelos de tamano similar (por ejemplo, Llama 3.1 8B o Qwen 2.5 7
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ByteOtter/Gemma-4-12B-it-CADA-Q3_K_S
+- Repositorio Hugging Face: https://huggingface.co/ByteOtter/Gemma-4-12B-it-CADA-Q3_K_S
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Repositorio de llama.cpp: https://github.com/ggml-org/llama.cpp
 - Referencia arxiv citada en los tags: https://arxiv.org/abs/2607.02770 (no se ha podido verificar el contenido)

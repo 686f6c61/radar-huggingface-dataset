@@ -15,7 +15,7 @@ El modelo está pensado para tareas de generación de texto, conversación y raz
 | Parametros activos | no aplica (modelo denso) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | bf16 (pesos originales), posible cuantizacion adicional via MLX |
-| Idiomas soportados | ingles (segun metadatos de HuggingFace) |
+| Idiomas soportados | ingles (segun metadatos de Hugging Face) |
 | Licencia | no disponible |
 | Formato de pesos | safetensors, MLX (libreria mlx) |
 
@@ -67,7 +67,7 @@ La comparativa se basa en parametros y disponibilidad; no hay datos de rendimien
 
 ## Limitaciones y advertencias
 
-- Licencia no disponible: el repositorio de HuggingFace no especifica una licencia, lo que impide su uso comercial o en proyectos con requisitos legales claros. Se recomienda contactar al autor o usar el modelo original si se necesita una licencia definida.
+- Licencia no disponible: el repositorio de Hugging Face no especifica una licencia, lo que impide su uso comercial o en proyectos con requisitos legales claros. Se recomienda contactar al autor o usar el modelo original si se necesita una licencia definida.
 - Idioma limitado: los metadatos indican solo ingles; el rendimiento en otros idiomas puede ser deficiente o no estar soportado.
 - Sin benchmarks publicados: no hay evidencia de rendimiento en tareas estandar, por lo que su calidad relativa es desconocida.
 - Riesgo de alucinacion: como cualquier modelo de lenguaje, puede generar contenido falso o inconsistente, especialmente en contextos largos o temas especializados.
@@ -76,7 +76,7 @@ La comparativa se basa en parametros y disponibilidad; no hay datos de rendimien
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nicolasramos/Qwen3.8-4B-Distill-MLX-bf16
+- Modelo en Hugging Face: https://huggingface.co/nicolasramos/Qwen3.8-4B-Distill-MLX-bf16
 - Modelo original (empero-ai): https://huggingface.co/empero-ai/Qwen3.8-4B-Distill
 - Repositorio oficial de Qwen3.8 (GitHub): https://github.com/QwenLM/Qwen3.8
 - Ficha en LLM Explorer: https://llm-explorer.com/model/empero-ai%2FQwen3.8-4B-Distill,3zO5wdF6UrF9U0hXx3bqyC

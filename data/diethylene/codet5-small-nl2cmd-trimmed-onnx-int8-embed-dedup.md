@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene una version cuantizada a int8 con pesos deduplicados del modelo `diethylene/codet5-small-nl2cmd-trimmed-onnx-int8-embed`, que a su vez deriva de un ajuste fino de CodeT5-small para la tarea de traduccion de lenguaje natural a comandos de bash (NL2CMD). El autor es el usuario de HuggingFace `diethylene` y el pipeline declarado es `translation`. Se trata, por tanto, del tercer eslabon de una cadena de derivaciones: ajuste fino sobre CodeT5-small, exportacion a ONNX con cuantizacion int8 y, finalmente, deduplicacion de pesos para reducir el tamano del artefacto.
+Este repositorio contiene una version cuantizada a int8 con pesos deduplicados del modelo `diethylene/codet5-small-nl2cmd-trimmed-onnx-int8-embed`, que a su vez deriva de un ajuste fino de CodeT5-small para la tarea de traduccion de lenguaje natural a comandos de bash (NL2CMD). El autor es el usuario de Hugging Face `diethylene` y el pipeline declarado es `translation`. Se trata, por tanto, del tercer eslabon de una cadena de derivaciones: ajuste fino sobre CodeT5-small, exportacion a ONNX con cuantizacion int8 y, finalmente, deduplicacion de pesos para reducir el tamano del artefacto.
 
 La relevancia de este checkpoint es practica y no de escala: el repositorio ocupa aproximadamente 0,1 GB, lo que lo situa en la categoria de modelos que pueden ejecutarse en CPU, en el navegador o dentro de una herramienta de linea de comandos sin GPU. Su funcion es traducir una descripcion en lenguaje natural (por ejemplo, una intencion expresada en ingles) a un comando de shell para Linux, lo que lo hace util como componente de asistentes de terminal, herramientas de DevOps o agentes que necesitan materializar acciones en un shell.
 
@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| diethylene/codet5-small-nl2cmd-trimmed-onnx-int8-embed-dedup (este) | no disponible (~60 M por la variante CodeT5-small, sin confirmar) | no disponible | ONNX int8 con pesos deduplicados | apache-2.0 | HuggingFace |
-| diethylene/codet5-small-nl2cmd-trimmed-onnx-int8-embed (modelo base directo) | no disponible | no disponible | ONNX int8 | apache-2.0 (heredada) | HuggingFace |
-| CodeT5-small original (Salesforce) | del orden de 60 M | no disponible en esta informacion | safetensors / PyTorch | BSD-3-Clause (segun el modelo original; no confirmado aqui) | HuggingFace |
-| Modelos generativos de codigo de mayor tamano (por ejemplo, familias tipo CodeLlama o Qwen-Coder) | miles de millones | decenas de miles de tokens | safetensors, GGUF | variables | HuggingFace |
+| diethylene/codet5-small-nl2cmd-trimmed-onnx-int8-embed-dedup (este) | no disponible (~60 M por la variante CodeT5-small, sin confirmar) | no disponible | ONNX int8 con pesos deduplicados | apache-2.0 | Hugging Face |
+| diethylene/codet5-small-nl2cmd-trimmed-onnx-int8-embed (modelo base directo) | no disponible | no disponible | ONNX int8 | apache-2.0 (heredada) | Hugging Face |
+| CodeT5-small original (Salesforce) | del orden de 60 M | no disponible en esta informacion | safetensors / PyTorch | BSD-3-Clause (segun el modelo original; no confirmado aqui) | Hugging Face |
+| Modelos generativos de codigo de mayor tamano (por ejemplo, familias tipo CodeLlama o Qwen-Coder) | miles de millones | decenas de miles de tokens | safetensors, GGUF | variables | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas opciones en la informacion proporcionada, por lo que la comparacion debe entenderse como estructural (tamano, formato, licencia y disponibilidad) y no como una comparacion de calidad de traduccion NL a bash.
 
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/diethylene/codet5-small-nl2cmd-trimmed-onnx-int8-embed-dedup
+- Modelo en Hugging Face: https://huggingface.co/diethylene/codet5-small-nl2cmd-trimmed-onnx-int8-embed-dedup
 - Modelo base directo: https://huggingface.co/diethylene/codet5-small-nl2cmd-trimmed-onnx-int8-embed
 - Dataset NL2SH-ALFA: https://huggingface.co/datasets/westenfelder/NL2SH-ALFA
 - Paper NL2SH-ALFA (Westenfelder et al., NAACL 2025): https://doi.org/10.18653/v1/2025.naacl-long.555

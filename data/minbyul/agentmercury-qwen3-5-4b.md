@@ -97,7 +97,7 @@ La comparación directa más relevante es con el base Qwen3.5-4B, ya que AgentMe
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Minbyul/AgentMercury-Qwen3.5-4B
+- Hugging Face: https://huggingface.co/Minbyul/AgentMercury-Qwen3.5-4B
 - Blog oficial de Qwen3.5: https://qwen.ai/blog?id=qwen3.5
 - Ficha de Qwen3.5-4B en LM Studio: https://lmstudio.ai/models/qwen/qwen3.5-4b
 - Ficha de Qwen3.5-4B en Awesome Agents: https://awesomeagents.ai/models/qwen-3-5-4b/

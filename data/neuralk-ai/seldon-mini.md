@@ -4,7 +4,7 @@
 
 Seldon-mini es un modelo fundacional especializado en datos tabulares desarrollado por Neuralk-AI. A diferencia de los modelos de lenguaje, su tarea principal es la clasificación tabular mediante *in-context learning*: recibe un conjunto de filas de ejemplo (el contexto) junto con una consulta y predice la etiqueta de la fila consultada, sin necesidad de reentrenamiento por tarea. El modelo se distribuye en formato safetensors con 27.404.554 parámetros (unos 27,4 millones), lo que lo sitúa en la gama ligera y permite desplegarlo en CPU o GPUs de consumo.
 
-El modelo se publica bajo la licencia propietaria `neuralk-seldon-license` y con acceso restringido (gated) en HuggingFace, por lo que es necesario aceptar las condiciones de uso antes de descargarlo. El repositorio ocupa aproximadamente 0,1 GB. La información pública disponible no incluye detalles sobre arquitectura interna, longitud de contexto, idiomas ni datos de entrenamiento, por lo que varios apartados de esta ficha se marcan como no disponibles.
+El modelo se publica bajo la licencia propietaria `neuralk-seldon-license` y con acceso restringido (gated) en Hugging Face, por lo que es necesario aceptar las condiciones de uso antes de descargarlo. El repositorio ocupa aproximadamente 0,1 GB. La información pública disponible no incluye detalles sobre arquitectura interna, longitud de contexto, idiomas ni datos de entrenamiento, por lo que varios apartados de esta ficha se marcan como no disponibles.
 
 Su relevancia actual radica en el creciente interés por los modelos fundacionales tabulares que generalizan entre esquemas y tareas sin ingeniería de características manual ni ajuste fino, un nicho dominado por propuestas como TabPFN o TabICL. Seldon-mini se posiciona como una alternativa compacta dentro de esa categoría, aunque su adopción dependerá de la licencia y de la documentación técnica que acompañe al modelo.
 
@@ -79,4 +79,4 @@ Los datos de TabPFN v2 y TabICL se incluyen como referencia de categoría; no se
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Neuralk-AI/seldon-mini
+- Hugging Face: https://huggingface.co/Neuralk-AI/seldon-mini

@@ -96,7 +96,7 @@ No se dispone de datos comparativos frente a otros sistemas ASR de tamaño simil
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/carloswong1224/OctoASR-1.7B-Instruct-1.0-MLX-8bit-selfquant
+- Repositorio Hugging Face: https://huggingface.co/carloswong1224/OctoASR-1.7B-Instruct-1.0-MLX-8bit-selfquant
 - Modelo base: https://huggingface.co/Mininglamp-2718/OctoASR-1.7B-Instruct-1.0
 - Conversión BF16 de los mismos pesos: https://huggingface.co/carloswong1224/OctoASR-1.7B-Instruct-1.0-MLX-bf16
 - Variante oficial de 8 bits de una generación anterior: https://huggingface.co/Mininglamp-2718/OctoASR-1.7B-Instruct-1.0-MLX-8bit

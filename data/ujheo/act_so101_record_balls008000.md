@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ujheo/act_so101_record_balls008000` es un checkpoint de pesos publicado en HuggingFace por el usuario `ujheo`, con un total de 51.668.614 parametros (aproximadamente 51,7 millones) almacenados en formato safetensors, y un tamano de repositorio de 0,2 GB. La ficha de HuggingFace no declara pipeline, licencia, idiomas soportados ni datos de entrenamiento, y el repositorio no incluye model card publica con informacion adicional.
+`ujheo/act_so101_record_balls008000` es un checkpoint de pesos publicado en Hugging Face por el usuario `ujheo`, con un total de 51.668.614 parametros (aproximadamente 51,7 millones) almacenados en formato safetensors, y un tamano de repositorio de 0,2 GB. La ficha de Hugging Face no declara pipeline, licencia, idiomas soportados ni datos de entrenamiento, y el repositorio no incluye model card publica con informacion adicional.
 
 El identificador del repositorio sigue el patron habitual de los checkpoints de politicas de robotica entrenados con el algoritmo ACT (Action Chunking Transformer) sobre el brazo robotico SO-101, con un sufijo que apunta a un conjunto de datos de grabacion de una tarea con pelotas y a un numero de paso de entrenamiento (008000). Esta interpretacion es una inferencia a partir del nombre del repositorio y no esta confirmada por ninguna fuente documental; no debe tomarse como un dato verificado.
 
@@ -81,5 +81,5 @@ No disponible. La informacion proporcionada no identifica modelos comparables de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ujheo/act_so101_record_balls008000
+- Hugging Face: https://huggingface.co/ujheo/act_so101_record_balls008000
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada.

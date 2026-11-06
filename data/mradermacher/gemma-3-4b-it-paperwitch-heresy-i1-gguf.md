@@ -77,7 +77,7 @@ La comparacion directa de rendimiento no es posible sin benchmarks publicados. L
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/mradermacher/gemma-3-4b-it-PaperWitch-heresy-i1-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/mradermacher/gemma-3-4b-it-PaperWitch-heresy-i1-GGUF
 - Repositorio estatico (sin imatrix): https://huggingface.co/mradermacher/gemma-3-4b-it-PaperWitch-heresy-GGUF
 - Modelo base: https://huggingface.co/MuXodious/gemma-3-4b-it-PaperWitch-heresy
 - Pagina oficial de Gemma 3 (Google DeepMind): https://deepmind.google/models/gemma/gemma-3/

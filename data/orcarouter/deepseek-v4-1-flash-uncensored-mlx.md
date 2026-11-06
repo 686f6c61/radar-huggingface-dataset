@@ -2,11 +2,11 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-Uncensored-MLX es una derivación multimodal del modelo DeepSeek-V4.1-Flash publicada por el usuario orcarouter en HuggingFace. Se distribuye en formato MLX, el framework de Apple para ejecución sobre silicio de Apple, e incorpora etiquetas que indican cuantización a 2, 3 y 4 bits, arquitectura de mezcla de expertos (MoE), soporte de visión (image-text-to-text) y function calling. El repositorio ocupa 2.018,7 GB, lo que lo sitúa en la categoría de modelos de gran escala que requieren memoria unificada o clústeres multi-GPU.
+DeepSeek-V4.1-Flash-Uncensored-MLX es una derivación multimodal del modelo DeepSeek-V4.1-Flash publicada por el usuario orcarouter en Hugging Face. Se distribuye en formato MLX, el framework de Apple para ejecución sobre silicio de Apple, e incorpora etiquetas que indican cuantización a 2, 3 y 4 bits, arquitectura de mezcla de expertos (MoE), soporte de visión (image-text-to-text) y function calling. El repositorio ocupa 2.018,7 GB, lo que lo sitúa en la categoría de modelos de gran escala que requieren memoria unificada o clústeres multi-GPU.
 
 La característica diferencial es su naturaleza "abliterated" o "uncensored": se ha eliminado total o parcialmente la dirección de rechazo del modelo base, de modo que el modelo no se niega a responder ante peticiones que el modelo original bloquearía. El autor etiqueta el modelo explícitamente para red teaming y evaluación de seguridad en IA, lo que enmarca su uso previsto en investigación sobre alineación, robustez y mecanismos de negativa, más que en despliegue comercial orientado al público general.
 
-El acceso está restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar los pesos. La licencia declarada es MIT, los idiomas soportados son inglés y chino, y el modelo se publicó el 11 de septiembre de 2026 con una actualización el 12 de septiembre de 2026. No se han publicado en la información disponible datos de parámetros totales, contexto máximo ni resultados de benchmarks.
+El acceso está restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar los pesos. La licencia declarada es MIT, los idiomas soportados son inglés y chino, y el modelo se publicó el 11 de septiembre de 2026 con una actualización el 12 de septiembre de 2026. No se han publicado en la información disponible datos de parámetros totales, contexto máximo ni resultados de benchmarks.
 
 ## Especificaciones técnicas
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Modalidad | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| orcarouter/DeepSeek-V4.1-Flash-Uncensored-MLX | no disponible | no disponible | imagen-texto | MIT | safetensors (MLX), 2/3/4 bits | gated en HuggingFace |
+| orcarouter/DeepSeek-V4.1-Flash-Uncensored-MLX | no disponible | no disponible | imagen-texto | MIT | safetensors (MLX), 2/3/4 bits | gated en Hugging Face |
 | deepseek-ai/DeepSeek-V4.1-Flash (modelo base) | no disponible | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | referenciado como modelo base |
 | Otras alternativas abliteradas en MLX | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -84,14 +84,14 @@ No se dispone de datos de benchmarks ni de especificaciones del modelo base en l
 - Idiomas limitados a inglés y chino: no hay evidencia de soporte fiable en castellano u otras lenguas.
 - Longitud de contexto no publicada: no es posible planificar aplicaciones que dependan de ventanas largas sin verificarla experimentalmente.
 - Licencia MIT declarada por el autor, pero se trata de un modelo derivado: la licencia del modelo base DeepSeek-V4.1-Flash puede imponer condiciones adicionales que prevalezcan sobre la del derivado. Es imprescindible revisar la licencia del base antes de cualquier uso comercial.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que puede limitar la automatización de descargas y la reproducibilidad.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que puede limitar la automatización de descargas y la reproducibilidad.
 - Dependencia de MLX: no hay pesos GGUF ni safetensors estándar de PyTorch publicados, lo que restringe el despliegue a ecosistemas Apple o exige conversión manual.
 - Datos de la ficha escasos: cero descargas, sin documentación de entrenamiento, sin benchmarks y sin model card detallada más allá de las etiquetas.
 - Fecha de publicación reciente (septiembre de 2026) y sin adopción registrada: no existe validación independiente de su comportamiento.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/orcarouter/DeepSeek-V4.1-Flash-Uncensored-MLX
+- Modelo en Hugging Face: https://huggingface.co/orcarouter/DeepSeek-V4.1-Flash-Uncensored-MLX
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 
 La búsqueda web realizada no devolvió resultados técnicos relevantes sobre este modelo: los enlaces recuperados corresponden a sitios de contenido para adultos sin relación alguna con el modelo, por lo que se han descartado. No se han encontrado papers, blogs, repositorios de código ni demos asociados.

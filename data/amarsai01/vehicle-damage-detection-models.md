@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Amarsai01/vehicle-damage-detection-models` es un artefacto publicado en HuggingFace por el usuario Amarsai01 bajo la etiqueta de libreria `keras`. Por su identificador se deduce que esta orientado a la deteccion de danos en vehiculos, una tarea tipica de vision por computador que suele resolverse mediante clasificacion de imagenes o deteccion de objetos (bounding boxes) sobre fotografias de carrocerias, parachoques, faros y demas componentes.
+El modelo `Amarsai01/vehicle-damage-detection-models` es un artefacto publicado en Hugging Face por el usuario Amarsai01 bajo la etiqueta de libreria `keras`. Por su identificador se deduce que esta orientado a la deteccion de danos en vehiculos, una tarea tipica de vision por computador que suele resolverse mediante clasificacion de imagenes o deteccion de objetos (bounding boxes) sobre fotografias de carrocerias, parachoques, faros y demas componentes.
 
 La ficha publica del repositorio es extremadamente escasa: no declara pipeline, licencia, idiomas, ni descripcion funcional. El unico dato objetivo disponible es el tamano del repositorio, 0,4 GB, y un contador de 70 descargas y 0 likes en el momento de la consulta. No se ha publicado informacion sobre arquitectura concreta, numero de parametros, datos de entrenamiento ni resultados de evaluacion.
 
@@ -79,5 +79,5 @@ No disponible. No se dispone de informacion sobre arquitectura, parametros, cont
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Amarsai01/vehicle-damage-detection-models
+- Modelo en Hugging Face: https://huggingface.co/Amarsai01/vehicle-damage-detection-models
 - No se han encontrado papers, blogs, repositorios ni demos asociados al modelo en la busqueda web realizada. Los resultados devueltos por la busqueda no eran relevantes para este artefacto.

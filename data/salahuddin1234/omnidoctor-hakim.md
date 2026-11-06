@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Hakim AI (publicado en HuggingFace como Salahuddin1234/OmniDoctor-Hakim) es un modelo de lenguaje abierto en arabe y ingles especializado en dominio clinico y sanitario. Lo desarrolla el usuario Salahuddin1234 y parte del modelo CohereLabs/c4ai-command-r7b-arabic-02-2025 (Command R7B Arabic de Cohere), sobre el que se ha aplicado un ajuste fino supervisado mediante LoRA y una cuantizacion AWQ de 8 bits (W8A16). Su proposito principal es actuar como el componente generador de un sistema de Retrieval-Augmented Generation (RAG) medico: leer contexto recuperado (por ejemplo, paginas de manuales clinicos) y responder preguntas de pacientes citando la fuente.
+Hakim AI (publicado en Hugging Face como Salahuddin1234/OmniDoctor-Hakim) es un modelo de lenguaje abierto en arabe y ingles especializado en dominio clinico y sanitario. Lo desarrolla el usuario Salahuddin1234 y parte del modelo CohereLabs/c4ai-command-r7b-arabic-02-2025 (Command R7B Arabic de Cohere), sobre el que se ha aplicado un ajuste fino supervisado mediante LoRA y una cuantizacion AWQ de 8 bits (W8A16). Su proposito principal es actuar como el componente generador de un sistema de Retrieval-Augmented Generation (RAG) medico: leer contexto recuperado (por ejemplo, paginas de manuales clinicos) y responder preguntas de pacientes citando la fuente.
 
 El modelo se ha entrenado sobre 50.000 conversaciones reales medico-paciente (dataset Shams03/Ara-Egy-Medical-QA, limpiado previamente con la API de Gemini) y esta optimizado para tolerar texto OCR ruidoso procedente de PDF arabes. Los metadatos de safetensors declaran 2.794.918.336 parametros y el repositorio ocupa 9,1 GB. La licencia es Apache 2.0 y esta pensado para servirse con vLLM en GPUs consumer o de gama de entrada (el autor cita la NVIDIA T4 y la A10G).
 
@@ -80,8 +80,8 @@ Estos datos corresponden al pipeline RAG hibrido (Qdrant + BAAI/bge-m3) descrito
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| OmniDoctor-Hakim (este modelo) | 2,79B segun safetensors (base Command R7B) | 4096 configurados (base hasta 128K) | Apache 2.0 | HuggingFace | Ajuste LoRA + AWQ 8-bit, especializado en RAG medico arabe |
-| CohereLabs/c4ai-command-r7b-arabic-02-2025 | 7B aprox. | hasta 128K | no disponible en la informacion | HuggingFace | Modelo base; sin ajuste medico ni calibracion OCR |
+| OmniDoctor-Hakim (este modelo) | 2,79B segun safetensors (base Command R7B) | 4096 configurados (base hasta 128K) | Apache 2.0 | Hugging Face | Ajuste LoRA + AWQ 8-bit, especializado en RAG medico arabe |
+| CohereLabs/c4ai-command-r7b-arabic-02-2025 | 7B aprox. | hasta 128K | no disponible en la informacion | Hugging Face | Modelo base; sin ajuste medico ni calibracion OCR |
 | Otros modelos LLM medicos en arabe | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparables en la informacion proporcionada |
 
 Nota: la busqueda web devuelve otros proyectos llamados "Hakim" (MCINext/Hakim y Hakim-small, modelos de embeddings en persa, y tryhakim.ai, una API de voz en arabe) que no guardan relacion con este modelo y no deben confundirse con el.
@@ -101,7 +101,7 @@ Nota: la busqueda web devuelve otros proyectos llamados "Hakim" (MCINext/Hakim y
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Salahuddin1234/OmniDoctor-Hakim
+- Modelo en Hugging Face: https://huggingface.co/Salahuddin1234/OmniDoctor-Hakim
 - Dataset de entrenamiento: https://huggingface.co/datasets/Shams03/Ara-Egy-Medical-QA
 - Modelo base: https://huggingface.co/CohereLabs/c4ai-command-r7b-arabic-02-2025
 - Modelo de embeddings usado en el pipeline (BAAI/bge-m3): https://huggingface.co/BAAI/bge-m3

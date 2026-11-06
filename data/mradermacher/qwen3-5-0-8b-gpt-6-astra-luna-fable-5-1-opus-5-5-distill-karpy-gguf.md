@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene una familia de cuantizaciones GGUF del modelo `NasledieLab/Qwen3.5-0.8B-GPT-6-Astra-Luna-Fable-5.1-Opus-5.5-distill-Karpy`, publicadas por mradermacher, un cuantizador conocido en HuggingFace por convertir pesos a formatos ligeros para inferencia local. El modelo subyacente pertenece a la familia Qwen 3.5 y tiene 752.393.024 parámetros reales (aproximadamente 0,75 mil millones), lo que lo sitúa en la gama de modelos pequenos orientados a ejecución en dispositivos modestos.
+Este repositorio contiene una familia de cuantizaciones GGUF del modelo `NasledieLab/Qwen3.5-0.8B-GPT-6-Astra-Luna-Fable-5.1-Opus-5.5-distill-Karpy`, publicadas por mradermacher, un cuantizador conocido en Hugging Face por convertir pesos a formatos ligeros para inferencia local. El modelo subyacente pertenece a la familia Qwen 3.5 y tiene 752.393.024 parámetros reales (aproximadamente 0,75 mil millones), lo que lo sitúa en la gama de modelos pequenos orientados a ejecución en dispositivos modestos.
 
 El interés practico del repositorio no esta en la arquitectura en si, sino en la disponibilidad de doce variantes de cuantización (desde Q2_K de 0,5 GB hasta f16 de 1,6 GB), lo que permite desplegar el modelo en CPU, GPU integradas o GPUs de gama de entrada con requisitos de memoria minimos. La licencia Apache-2.0 y el formato GGUF lo hacen atractivo para prototipado rapido y para pipelines donde el coste por token o la latencia de red son factores criticos.
 
@@ -94,13 +94,13 @@ Frente a estas alternativas, la ventaja del modelo aquí descrito es su menor hu
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/Qwen3.5-0.8B-GPT-6-Astra-Luna-Fable-5.1-Opus-5.5-distill-Karpy-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/Qwen3.5-0.8B-GPT-6-Astra-Luna-Fable-5.1-Opus-5.5-distill-Karpy-GGUF
 - Modelo base: https://huggingface.co/NasledieLab/Qwen3.5-0.8B-GPT-6-Astra-Luna-Fable-5.1-Opus-5.5-distill-Karpy
 - Página de resumen del cuantizador para este modelo: https://hf.tst.eu/model#Qwen3.5-0.8B-GPT-6-Astra-Luna-Fable-5.1-Opus-5.5-distill-Karpy-GGUF
 - Cuantización Q4_K_M (recomendada por el autor): https://huggingface.co/mradermacher/Qwen3.5-0.8B-GPT-6-Astra-Luna-Fable-5.1-Opus-5.5-distill-Karpy-GGUF/resolve/main/Qwen3.5-0.8B-GPT-6-Astra-Luna-Fable-5.1-Opus-5.5-distill-Karpy.Q4_K_M.gguf
 - Cuantización Q8_0: https://huggingface.co/mradermacher/Qwen3.5-0.8B-GPT-6-Astra-Luna-Fable-5.1-Opus-5.5-distill-Karpy-GGUF/resolve/main/Qwen3.5-0.8B-GPT-6-Astra-Luna-Fable-5.1-Opus-5.5-distill-Karpy.Q8_0.gguf
 - Cuantización f16: https://huggingface.co/mradermacher/Qwen3.5-0.8B-GPT-6-Astra-Luna-Fable-5.1-Opus-5.5-distill-Karpy-GGUF/resolve/main/Qwen3.5-0.8B-GPT-6-Astra-Luna-Fable-5.1-Opus-5.5-distill-Karpy.f16.gguf
-- Perfil del autor en HuggingFace: https://huggingface.co/mradermacher
+- Perfil del autor en Hugging Face: https://huggingface.co/mradermacher
 - Solicitudes de cuantización del autor: https://huggingface.co/mradermacher/model_requests
 - Guía de uso de ficheros GGUF (README de referencia de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
 - Notas de Artefact2 sobre tipos de cuantización: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

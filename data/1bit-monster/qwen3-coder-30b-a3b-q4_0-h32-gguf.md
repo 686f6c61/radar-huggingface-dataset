@@ -109,7 +109,7 @@ No se dispone de datos de otros modelos comparables (por ejemplo, alternativas d
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/1bit-MONSTER/Qwen3-Coder-30B-A3B-Q4_0-H32-GGUF
+- Ficha en Hugging Face: https://huggingface.co/1bit-MONSTER/Qwen3-Coder-30B-A3B-Q4_0-H32-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct
 - Repositorio del motor 1bit: https://github.com/1bit-MONSTER/engine
 - Cuantización de origen (Unsloth): https://huggingface.co/unsloth/Qwen3-Coder-30B-A3B-Instruct-GGUF

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `cyttic/exp39-ctc-webfonts10mix-hhdgeom-llmgen-1k` es un checkpoint de 87.279.756 parámetros publicado por el usuario cyttic en HuggingFace bajo licencia MIT. El nombre del identificador sugiere un experimento (exp39) orientado a reconocimiento de texto en imágenes mediante CTC (Connectionist Temporal Classification), entrenado sobre una mezcla de diez fuentes de webfonts, con variantes geométricas (hhdgeom) y datos generados por LLM (llmgen) en una proporción de 1k. No obstante, esta interpretación procede únicamente de la nomenclatura del repositorio y no está confirmada por el autor.
+El modelo `cyttic/exp39-ctc-webfonts10mix-hhdgeom-llmgen-1k` es un checkpoint de 87.279.756 parámetros publicado por el usuario cyttic en Hugging Face bajo licencia MIT. El nombre del identificador sugiere un experimento (exp39) orientado a reconocimiento de texto en imágenes mediante CTC (Connectionist Temporal Classification), entrenado sobre una mezcla de diez fuentes de webfonts, con variantes geométricas (hhdgeom) y datos generados por LLM (llmgen) en una proporción de 1k. No obstante, esta interpretación procede únicamente de la nomenclatura del repositorio y no está confirmada por el autor.
 
-La model card publicada es la plantilla por defecto de HuggingFace sin rellenar: todas las secciones relevantes (descripción, tipo de modelo, idiomas, datos de entrenamiento, evaluación, hiperparámetros) figuran como "[More Information Needed]". No hay pipeline declarado, ni idiomas especificados, ni resultados de evaluación, ni documentación sobre el procedimiento de entrenamiento.
+La model card publicada es la plantilla por defecto de Hugging Face sin rellenar: todas las secciones relevantes (descripción, tipo de modelo, idiomas, datos de entrenamiento, evaluación, hiperparámetros) figuran como "[More Information Needed]". No hay pipeline declarado, ni idiomas especificados, ni resultados de evaluación, ni documentación sobre el procedimiento de entrenamiento.
 
 El interés del modelo es, por tanto, limitado y de carácter experimental: se trata de un artefacto de investigación con cero descargas y cero likes en el momento de la consulta, cuyo valor principal es el de un checkpoint intermedio reproducible (pesos en safetensors, licencia permisiva) para quien quiera inspeccionar o continuar una línea de trabajo concreta sobre OCR/CTC con datos sintéticos. Cualquier uso en producción requeriría una evaluación propia previa.
 
@@ -44,7 +44,7 @@ Tampoco hay información sobre el número de tokens de entrenamiento, la composi
 - Fine-tuning sobre un dominio específico: con 87 M de parámetros, el modelo es lo bastante pequeño para reentrenarse en una única GPU consumer, por lo que puede adaptarse a un conjunto de fuentes o idiomas propio.
 - Baseline en comparativas académicas: puede emplearse como referencia de bajo coste en publicaciones que evalúen reconocedores ligeros frente a modelos Transformer de mayor tamaño.
 - Extracción de texto en capturas de interfaz web: si el modelo funciona como OCR, encajaría en pipelines de scraping o auditoría de accesibilidad sobre páginas renderizadas con fuentes estándar.
-- Docencia y experimentación: por su tamaño reducido y licencia MIT, es adecuado para prácticas de entrenamiento de modelos CTC o de evaluación de modelos de HuggingFace en cursos técnicos.
+- Docencia y experimentación: por su tamaño reducido y licencia MIT, es adecuado para prácticas de entrenamiento de modelos CTC o de evaluación de modelos de Hugging Face en cursos técnicos.
 
 En todos los casos, el uso práctico exige una validación previa por parte del usuario, ya que no existe documentación de rendimiento.
 
@@ -66,9 +66,9 @@ No es posible establecer una comparativa rigurosa porque no se conoce la tarea e
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cyttic/exp39-ctc-webfonts10mix-hhdgeom-llmgen-1k | 87,3 M | no disponible | no disponible | MIT | HuggingFace (0 descargas) |
-| TrOCR-small (Microsoft) | ~62 M (encoder+decoder) | 384 tokens de imagen | Benchmarks publicados en el paper | MIT | HuggingFace, ampliamente usado |
-| PaddleOCR (modelos de reconocimiento ligeros) | ~5-15 M | secuencia variable | Benchmarks publicados por PaddlePaddle | Apache 2.0 | GitHub, HuggingFace |
+| cyttic/exp39-ctc-webfonts10mix-hhdgeom-llmgen-1k | 87,3 M | no disponible | no disponible | MIT | Hugging Face (0 descargas) |
+| TrOCR-small (Microsoft) | ~62 M (encoder+decoder) | 384 tokens de imagen | Benchmarks publicados en el paper | MIT | Hugging Face, ampliamente usado |
+| PaddleOCR (modelos de reconocimiento ligeros) | ~5-15 M | secuencia variable | Benchmarks publicados por PaddlePaddle | Apache 2.0 | GitHub, Hugging Face |
 | EasyOCR (modelos CRAFT + reconocedor) | variable | no aplica | Benchmarks en el repo | Apache 2.0 | GitHub, PyPI |
 
 La comparación es solo estructural: el modelo de cyttic carece de métricas publicadas que permitan situarlo frente a estas alternativas.
@@ -87,7 +87,7 @@ La comparación es solo estructural: el modelo de cyttic carece de métricas pub
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cyttic/exp39-ctc-webfonts10mix-hhdgeom-llmgen-1k
+- Modelo en Hugging Face: https://huggingface.co/cyttic/exp39-ctc-webfonts10mix-hhdgeom-llmgen-1k
 - Paper de referencia citado en los tags (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental ML: https://mlco2.github.io/impact
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

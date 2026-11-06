@@ -42,7 +42,7 @@ El modelo emplea regresión elastic net, una técnica de regularización lineal 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El artículo original reporta mejoras en precisión frente a relojes previos, pero no se incluyen métricas numéricas en la model card ni en el repositorio de HuggingFace.
+No se han publicado resultados de benchmarks en la información disponible. El artículo original reporta mejoras en precisión frente a relojes previos, pero no se incluyen métricas numéricas en la model card ni en el repositorio de Hugging Face.
 
 ## Requisitos de hardware
 
@@ -66,6 +66,6 @@ No disponible. Existen otros relojes epigenéticos como el de Horvath (2013) o H
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pyaging/zhangen
+- Hugging Face: https://huggingface.co/pyaging/zhangen
 - Artículo original: Zhang, Q., Vallerga, C.L., Walker, R.M. et al. Improved precision of epigenetic clock estimates across tissues and its implication for biological ageing. Genome Medicine 11, 54 (2019). DOI: https://doi.org/10.1186/s13073-019-0667-1
 - Documentación de pyaging: https://pyaging.readthedocs.io

@@ -76,8 +76,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Avicennasis/incorrecter | 494.032.768 | no disponible (heredado del base) | Introduccion de errores tipograficos | Apache-2.0 | HuggingFace (safetensors, GGUF Q8_0, MLX) |
-| Qwen/Qwen2.5-0.5B-Instruct | 0,5B aprox. | 32.768 tokens (dato del modelo base) | Asistente generalista, generacion de texto | Apache-2.0 | HuggingFace |
+| Avicennasis/incorrecter | 494.032.768 | no disponible (heredado del base) | Introduccion de errores tipograficos | Apache-2.0 | Hugging Face (safetensors, GGUF Q8_0, MLX) |
+| Qwen/Qwen2.5-0.5B-Instruct | 0,5B aprox. | 32.768 tokens (dato del modelo base) | Asistente generalista, generacion de texto | Apache-2.0 | Hugging Face |
 | Otros ajustes finos de generacion de errores tipograficos | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se han identificado en la informacion disponible otros modelos directamente comparables en la tarea especifica de introducir errores tipograficos realistas sobre texto limpio. La busqueda web realizada no devolvio resultados relevantes para este modelo (los resultados obtenidos correspondian a herramientas de dibujo de circuitos en LaTeX y no guardan relacion con la ficha).
@@ -96,7 +96,7 @@ No se han identificado en la informacion disponible otros modelos directamente c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Avicennasis/incorrecter
+- Modelo en Hugging Face: https://huggingface.co/Avicennasis/incorrecter
 - Version GGUF Q8_0: https://huggingface.co/Avicennasis/incorrecter-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Dataset OpenAssistant/oasst2: https://huggingface.co/datasets/OpenAssistant/oasst2

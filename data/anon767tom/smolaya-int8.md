@@ -81,9 +81,9 @@ Degradacion int8 frente a smolaya: -0,4 puntos [IC 95%: -0,6, -0,1]. Tiempo medi
 
 | Modelo | Parametros | Contexto | Pooled (5 tareas) | CPU por elemento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| smolaya-int8 | 323.422.470 | no disponible | 0,836 | 0,26 s | Apache-2.0 | HuggingFace (este repositorio) |
-| smolaya | 323 M (aproximado, mismo encoder) | no disponible | 0,839 | no disponible (se infiere mayor que int8) | Apache-2.0 | HuggingFace, `anon767tom/smolaya` |
-| laya | no disponible | no disponible | 0,812 | 0,71 s | no disponible | HuggingFace, `convaiinnovations/laya` |
+| smolaya-int8 | 323.422.470 | no disponible | 0,836 | 0,26 s | Apache-2.0 | Hugging Face (este repositorio) |
+| smolaya | 323 M (aproximado, mismo encoder) | no disponible | 0,839 | no disponible (se infiere mayor que int8) | Apache-2.0 | Hugging Face, `anon767tom/smolaya` |
+| laya | no disponible | no disponible | 0,812 | 0,71 s | no disponible | Hugging Face, `convaiinnovations/laya` |
 
 Alternativas adicionales de la misma categoria (encoders ModernBERT de clasificacion) no se detallan en la informacion disponible. En terminos practicos, smolaya-int8 es la opcion preferible en CPU por velocidad y tamano, mientras que smolaya en fp16 es la opcion preferible en GPU.
 
@@ -102,7 +102,7 @@ Alternativas adicionales de la misma categoria (encoders ModernBERT de clasifica
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anon767tom/smolaya-int8
+- Modelo en Hugging Face: https://huggingface.co/anon767tom/smolaya-int8
 - Modelo base smolaya: https://huggingface.co/anon767tom/smolaya
 - Repositorio de archivos de smolaya: https://huggingface.co/anon767tom/smolaya/tree/main
 - Modelo original laya (Convai Innovations): https://huggingface.co/convaiinnovations/laya

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-pythia-1.4b-code-run2 es un ajuste fino (fine-tune) del modelo EleutherAI/pythia-1.4b, publicado por el usuario jaydeepb en HuggingFace. El modelo base Pythia-1.4B es un transformer decoder-only de la familia Pythia de EleutherAI, y este derivado se ha ajustado durante una epoca sobre una muestra de un millon de secuencias de 128 tokens extraidas de The Stack (bigcode/the-stack), un corpus masivo de codigo fuente abierto.
+pythia-1.4b-code-run2 es un ajuste fino (fine-tune) del modelo EleutherAI/pythia-1.4b, publicado por el usuario jaydeepb en Hugging Face. El modelo base Pythia-1.4B es un transformer decoder-only de la familia Pythia de EleutherAI, y este derivado se ha ajustado durante una epoca sobre una muestra de un millon de secuencias de 128 tokens extraidas de The Stack (bigcode/the-stack), un corpus masivo de codigo fuente abierto.
 
 El proposito declarado del modelo no es servir como asistente de codigo de proposito general, sino actuar como instrumento de investigacion sobre memorizacion: se trata del "run2", entrenado sobre una muestra disjunta de la usada en el "run1" correspondiente. Esto permite evaluar un clasificador de prediccion de memorizacion en datos frescos (validacion "predict-before-training"), usando las etiquetas generadas a partir del run1. Es relevante, por tanto, para investigadores que estudian la extraccion de datos de entrenamiento, la privacidad en modelos de codigo y las tecnicas de deteccion de memorizacion.
 
@@ -80,7 +80,7 @@ Nota: la comparativa con Replit es orientativa, como alternativa de generacion d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jaydeepb/pythia-1.4b-code-run2
+- Modelo en Hugging Face: https://huggingface.co/jaydeepb/pythia-1.4b-code-run2
 - Modelo base: https://huggingface.co/EleutherAI/pythia-1.4b
 - Dataset de ajuste fino (The Stack): https://huggingface.co/datasets/bigcode/the-stack
 - Familia Pythia (repositorio y documentacion de EleutherAI): https://github.com/EleutherAI/pythia

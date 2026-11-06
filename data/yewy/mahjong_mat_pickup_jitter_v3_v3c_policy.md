@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `Yewy/mahjong_mat_pickup_jitter_v3_v3c_policy` (este) | ACT, politica de imitacion para tarea especifica | 51.668.614 | apache-2.0 | HuggingFace Hub via LeRobot |
+| `Yewy/mahjong_mat_pickup_jitter_v3_v3c_policy` (este) | ACT, politica de imitacion para tarea especifica | 51.668.614 | apache-2.0 | Hugging Face Hub via LeRobot |
 | Diffusion Policy | Politica de imitacion basada en difusion (alternativa en LeRobot) | No disponible | No disponible en la informacion proporcionada | Implementacion en LeRobot |
 | VQ-BeT | Politica de imitacion con discretizacion de acciones (alternativa en LeRobot) | No disponible | No disponible en la informacion proporcionada | Implementacion en LeRobot |
 | Modelos VLA generalistas (p. ej. familias tipo SmolVLA) | Politica vision-lenguaje-accion de proposito general | No disponible | No disponible en la informacion proporcionada | Ecosistema LeRobot |
@@ -90,10 +90,10 @@ La comparacion cuantitativa no es posible con los datos disponibles: no hay tasa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Yewy/mahjong_mat_pickup_jitter_v3_v3c_policy
+- Modelo en Hugging Face: https://huggingface.co/Yewy/mahjong_mat_pickup_jitter_v3_v3c_policy
 - Dataset de entrenamiento: https://huggingface.co/datasets/Yewy/mahjong_mat_pickup_jitter_v3_v3c_224
 - Paper de ACT (arXiv:2304.13705): https://arxiv.org/abs/2304.13705
-- Paper de ACT en HuggingFace Papers: https://huggingface.co/papers/2304.13705
+- Paper de ACT en Hugging Face Papers: https://huggingface.co/papers/2304.13705
 - Repositorio LeRobot: https://github.com/huggingface/lerobot
 - Documentacion de LeRobot: https://huggingface.co/docs/lerobot/index
 - Guia de entrenamiento de politicas (LeRobot): https://huggingface.co/docs/lerobot/il_robots#train-a-policy

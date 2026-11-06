@@ -114,12 +114,12 @@ Contexto de otras alternativas de la familia: LM Studio distribuye `google/gemma
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/xbill9/gemma-4-E2B-it-qat-q4_0-exact-gguf
+- Repositorio Hugging Face: https://huggingface.co/xbill9/gemma-4-E2B-it-qat-q4_0-exact-gguf
 - Modelo base sin cuantizar: https://huggingface.co/google/gemma-4-E2B-it-qat-q4_0-unquantized
 - GGUF oficial de Google: https://huggingface.co/google/gemma-4-E2B-it-qat-q4_0-gguf
 - Licencia de Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
 - Pagina de Gemma 4 en Google DeepMind: https://deepmind.google/models/gemma/gemma-4/
 - Gemma 4 E2B-it en Qualcomm AI Hub: https://aihub.qualcomm.com/models/gemma_4_e2b_it
-- Variante de Qualcomm AI Hub en HuggingFace: https://huggingface.co/qualcomm-ai-hub-community/Gemma-4-E2B-it-Hi-Fi-fraQtl
+- Variante de Qualcomm AI Hub en Hugging Face: https://huggingface.co/qualcomm-ai-hub-community/Gemma-4-E2B-it-Hi-Fi-fraQtl
 - Ficha de Gemma 4 E2B QAT en LM Studio: https://lmstudio.ai/models/google/gemma-4-e2b-qat
 - Ficha de Gemma 4 E2B-it QAT en local-ai-zone: https://local-ai-zone.github.io/models/gemma-4-e2b-it-qat.html

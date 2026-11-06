@@ -71,5 +71,5 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/RaspizdAI/debil-1.5-GGUF
+- Repositorio Hugging Face: https://huggingface.co/RaspizdAI/debil-1.5-GGUF
 - No se han encontrado papers, blogs, demos ni repositorios adicionales en la información proporcionada.

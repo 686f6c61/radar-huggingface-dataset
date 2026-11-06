@@ -89,7 +89,7 @@ La comparativa se limita a los modelos base de los que derivan los artefactos, y
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/houssemzaier/iris-scene-encoders
+- Modelo en Hugging Face: https://huggingface.co/houssemzaier/iris-scene-encoders
 - Modelo base SigLIP 2: https://huggingface.co/google/siglip2-base-patch16-224
 - Modelo base TinyCLIP: https://huggingface.co/wkcn/TinyCLIP-ViT-39M-16-Text-19M-YFCC15M
 - Licencia Apache 2.0 (incluida en el repo): `LICENSES/Apache-2.0.txt`

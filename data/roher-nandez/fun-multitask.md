@@ -72,4 +72,4 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/roher-nandez/fun-multitask
+- Hugging Face: https://huggingface.co/roher-nandez/fun-multitask

@@ -78,10 +78,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| qwen3_vit_416m_merge.qwen3_8_27b | 459,8 M | 768 × 768, 576 tokens espaciales | Apache 2.0 | HuggingFace, librería timm |
-| CLIP ViT-L/14 | Aprox. 304 M (torre de visión) | 224 × 224 | MIT (verificar) | HuggingFace, varias librerías |
-| DINOv2 ViT-L/14 | Aprox. 304 M | 518 × 518 (entrada flexible) | Apache 2.0 (verificar) | HuggingFace, varias librerías |
-| SigLIP SO400M | Aprox. 400 M | 384 × 384 | Apache 2.0 (verificar) | HuggingFace, varias librerías |
+| qwen3_vit_416m_merge.qwen3_8_27b | 459,8 M | 768 × 768, 576 tokens espaciales | Apache 2.0 | Hugging Face, librería timm |
+| CLIP ViT-L/14 | Aprox. 304 M (torre de visión) | 224 × 224 | MIT (verificar) | Hugging Face, varias librerías |
+| DINOv2 ViT-L/14 | Aprox. 304 M | 518 × 518 (entrada flexible) | Apache 2.0 (verificar) | Hugging Face, varias librerías |
+| SigLIP SO400M | Aprox. 400 M | 384 × 384 | Apache 2.0 (verificar) | Hugging Face, varias librerías |
 
 Los datos de los modelos alternativos provienen de conocimiento público general y no forman parte de la información proporcionada en esta ficha, por lo que conviene verificarlos en sus respectivas model cards. No se dispone de métricas comparativas de rendimiento para ninguno de ellos en el contexto de esta consulta.
 
@@ -101,7 +101,7 @@ Los datos de los modelos alternativos provienen de conocimiento público general
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/timm/qwen3_vit_416m_merge.qwen3_8_27b
+- Modelo en Hugging Face: https://huggingface.co/timm/qwen3_vit_416m_merge.qwen3_8_27b
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Revisión del código fuente: https://huggingface.co/Qwen/Qwen3.8-27B/tree/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/LICENSE

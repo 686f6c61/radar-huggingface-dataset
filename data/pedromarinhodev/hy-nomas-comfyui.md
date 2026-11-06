@@ -27,7 +27,7 @@ La relevancia ahora mismo es doble: por un lado, acerca la generación de vídeo
 | Tamano del repositorio | 18,5 GB |
 | VRAM indicada por el autor | 12 GB o mas |
 | Software requerido | ComfyUI v0.42+ y el nodo pack ComfyUI-Hy-Nomas (sin `pip install`) |
-| Descargas / likes | 0 / 13 (segun metadatos de HuggingFace) |
+| Descargas / likes | 0 / 13 (segun metadatos de Hugging Face) |
 | Fecha de publicacion | 23 de octubre de 2026 (metadatos); actualizado el mismo dia |
 
 ## Arquitectura y entrenamiento
@@ -81,8 +81,8 @@ No se han publicado resultados de benchmarks en la informacion disponible (ni MM
 
 | Modelo | Parametros | Contexto / duracion | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Hy-Nomas-ComfyUI (este repo) | no disponible | segmentos de 5 s y 1 s; 20 s encadenados en ejemplos | INT8 + FP8 | apache-2.0 con decoder NVIDIA one-way noncommercial | HuggingFace, 0 descargas |
-| tencent/Hy-Nomas (original) | no disponible | no disponible | incluye checkpoint INT8 para un solo GPU | no disponible en la informacion proporcionada | HuggingFace |
+| Hy-Nomas-ComfyUI (este repo) | no disponible | segmentos de 5 s y 1 s; 20 s encadenados en ejemplos | INT8 + FP8 | apache-2.0 con decoder NVIDIA one-way noncommercial | Hugging Face, 0 descargas |
+| tencent/Hy-Nomas (original) | no disponible | no disponible | incluye checkpoint INT8 para un solo GPU | no disponible en la informacion proporcionada | Hugging Face |
 | Otras alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos verificados de parametros, contexto, rendimiento ni licencia de modelos alternativos de generacion de video o world models interactivos en la informacion proporcionada, por lo que no se establece una comparacion cuantitativa. La unica comparacion sostenible es con el modelo original de Tencent: mismos pesos (INT8 y FP8 sin cambios), con renombrado de ficheros y nodos propios para ComfyUI.
@@ -102,7 +102,7 @@ No se dispone de datos verificados de parametros, contexto, rendimiento ni licen
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/PedroMarinhoDev/Hy-Nomas-ComfyUI
+- Repositorio Hugging Face: https://huggingface.co/PedroMarinhoDev/Hy-Nomas-ComfyUI
 - Nodos en GitHub: https://github.com/PedroMarinhoDev/ComfyUI-Hy-Nomas
 - Roadmap de los nodos: https://github.com/PedroMarinhoDev/ComfyUI-Hy-Nomas#roadmap
 - Ejemplos y prompts (carpeta `examples/`): https://github.com/PedroMarinhoDev/ComfyUI-Hy-Nomas/tree/main/examples

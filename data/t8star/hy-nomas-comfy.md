@@ -73,11 +73,11 @@ No disponible. La información proporcionada no incluye datos de otros modelos d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/t8star/HY-Nomas-Comfy
+- Repositorio Hugging Face: https://huggingface.co/t8star/HY-Nomas-Comfy
 - Modelo base: https://huggingface.co/tencent/Hy-Nomas
 - Nodo ComfyUI del autor: https://github.com/T8mars/Comfyui-HY-Nomas-T8
 - Port ComfyUI de referencia: https://github.com/PedroMarinhoDev/ComfyUI-Hy-Nomas
 - Codificador de texto Qwen: https://huggingface.co/Comfy-Org/Qwen-Image_ComfyUI
-- Perfil del autor en HuggingFace: https://huggingface.co/t8star
+- Perfil del autor en Hugging Face: https://huggingface.co/t8star
 - Bilibili del autor: https://space.bilibili.com/385085361
 - YouTube del autor: https://www.youtube.com/@T8star-Aix/

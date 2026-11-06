@@ -73,9 +73,9 @@ El autor advierte que las peticiones más amplias que el ejemplo curado pueden f
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gemma-4-E4B-it-A2UI-Express-ONNX | no disponible (base E4B) | no disponible (entrenado a 12.288) | DSL A2UI Express, navegador | Apache 2.0 | HuggingFace, ONNX + MLX |
-| gemma-4-E2B-it-A2UI-Express-ONNX | no disponible (base E2B) | no disponible | DSL A2UI Express, navegador | no disponible en la información | HuggingFace, exportación anterior del mismo autor |
-| unsloth/gemma-4-E4B-it | no disponible | no disponible | propósito general, instruct | no disponible en la información | HuggingFace (modelo base) |
+| gemma-4-E4B-it-A2UI-Express-ONNX | no disponible (base E4B) | no disponible (entrenado a 12.288) | DSL A2UI Express, navegador | Apache 2.0 | Hugging Face, ONNX + MLX |
+| gemma-4-E2B-it-A2UI-Express-ONNX | no disponible (base E2B) | no disponible | DSL A2UI Express, navegador | no disponible en la información | Hugging Face, exportación anterior del mismo autor |
+| unsloth/gemma-4-E4B-it | no disponible | no disponible | propósito general, instruct | no disponible en la información | Hugging Face (modelo base) |
 
 No se dispone de datos de rendimiento comparativos entre estas variantes en la información proporcionada.
 
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento comparativos entre estas variantes en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wolfmanfx/gemma-4-E4B-it-A2UI-Express-ONNX
+- Modelo en Hugging Face: https://huggingface.co/wolfmanfx/gemma-4-E4B-it-A2UI-Express-ONNX
 - Modelo base: https://huggingface.co/unsloth/gemma-4-E4B-it
 - Exportación anterior E2B: https://huggingface.co/wolfmanfx/gemma-4-E2B-it-A2UI-Express-ONNX
 - Demo CopilotKit Express: https://a2ui-express-demo-8d8183.web.app/

@@ -71,8 +71,8 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- [HuggingFace: rshift8/pi05_obs_only_firstandlast3_injection_allenv_2ep](https://huggingface.co/rshift8/pi05_obs_only_firstandlast3_injection_allenv_2ep)
-- [HuggingFace: rshift8/pi05_obs_only_firstandlast3_injection_allenv (modelo base del fine-tune)](https://huggingface.co/rshift8/pi05_obs_only_firstandlast3_injection_allenv)
-- [HuggingFace: mzxuan/robopro_jax_30000 (inicialización)](https://huggingface.co/mzxuan/robopro_jax_30000)
+- [Hugging Face: rshift8/pi05_obs_only_firstandlast3_injection_allenv_2ep](https://huggingface.co/rshift8/pi05_obs_only_firstandlast3_injection_allenv_2ep)
+- [Hugging Face: rshift8/pi05_obs_only_firstandlast3_injection_allenv (modelo base del fine-tune)](https://huggingface.co/rshift8/pi05_obs_only_firstandlast3_injection_allenv)
+- [Hugging Face: mzxuan/robopro_jax_30000 (inicialización)](https://huggingface.co/mzxuan/robopro_jax_30000)
 - [Qualcomm AI Hub: Pi0.5 (modelo base)](https://aihub.qualcomm.com/models/pi05)
 - [GitHub: HUIXI-AI/RhinoForge - ejemplo pi05.py](https://github.com/HUIXI-AI/RhinoForge/blob/main/examples/pi05.py)

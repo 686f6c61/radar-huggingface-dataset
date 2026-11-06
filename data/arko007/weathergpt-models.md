@@ -81,6 +81,6 @@ No disponible. No se han identificado modelos publicos comparables en la misma c
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/Arko007/weathergpt-models
+- Repositorio de Hugging Face: https://huggingface.co/Arko007/weathergpt-models
 - Dataset de entrenamiento M2/M4/M5: https://huggingface.co/datasets/Arko007/weathergpt-d1-mos-dataset
 - Documentacion de integracion: no disponible en la informacion proporcionada.

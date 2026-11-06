@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EnergyTrading es un repositorio publicado por el usuario nesoai en HuggingFace, etiquetado como modelo de aprendizaje por refuerzo (reinforcement-learning) orientado a la gestion y el comercio de energia en redes electricas inteligentes. Las etiquetas declaradas (multi-agent, time-series, diffusion-model, energy-management, smart-grid) apuntan a un sistema de decision secuencial, probablemente una politica entrenada para operar en mercados energeticos o en entornos de simulacion de red, y no a un modelo de lenguaje generativo al uso. En el momento de la consulta no se ha publicado documentacion tecnica en la ficha del repositorio.
+EnergyTrading es un repositorio publicado por el usuario nesoai en Hugging Face, etiquetado como modelo de aprendizaje por refuerzo (reinforcement-learning) orientado a la gestion y el comercio de energia en redes electricas inteligentes. Las etiquetas declaradas (multi-agent, time-series, diffusion-model, energy-management, smart-grid) apuntan a un sistema de decision secuencial, probablemente una politica entrenada para operar en mercados energeticos o en entornos de simulacion de red, y no a un modelo de lenguaje generativo al uso. En el momento de la consulta no se ha publicado documentacion tecnica en la ficha del repositorio.
 
 El repositorio registra 0 descargas y 0 likes, y su fecha de publicacion y ultima actualizacion coinciden (2026-09-15T10:52:21Z), lo que sugiere una publicacion inicial sin mantenimiento posterior ni validacion por parte de la comunidad. No hay informacion publica sobre parametros, arquitectura concreta, datos de entrenamiento, benchmarks ni requisitos de hardware.
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 ## Comparativa con modelos similares
 
-No disponible. La busqueda web realizada no ha devuelto informacion relevante sobre este repositorio ni sobre alternativas comparables, y la ficha de HuggingFace no incluye referencias a modelos base, papers ni sistemas equivalentes. No se dispone por tanto de una comparativa fiable en terminos de parametros, contexto, rendimiento o licencia.
+No disponible. La busqueda web realizada no ha devuelto informacion relevante sobre este repositorio ni sobre alternativas comparables, y la ficha de Hugging Face no incluye referencias a modelos base, papers ni sistemas equivalentes. No se dispone por tanto de una comparativa fiable en terminos de parametros, contexto, rendimiento o licencia.
 
 ## Limitaciones y advertencias
 
@@ -87,6 +87,6 @@ No disponible. La busqueda web realizada no ha devuelto informacion relevante so
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nesoai/EnergyTrading
-- Perfil del autor en HuggingFace: https://huggingface.co/nesoai
+- Repositorio en Hugging Face: https://huggingface.co/nesoai/EnergyTrading
+- Perfil del autor en Hugging Face: https://huggingface.co/nesoai
 - Paper, blog, repositorio de codigo o demo: no disponible (la busqueda web realizada no devolvio enlaces relevantes sobre este modelo).

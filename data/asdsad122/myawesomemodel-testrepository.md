@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario asdsad122 bajo el identificador `asdsad122/MyAwesomeModel-TestRepository`. La informacion disponible es escasa y en parte contradictoria: las etiquetas del repositorio lo clasifican como un modelo basado en BERT para `feature-extraction` con libreria `transformers` y pesos PyTorch, mientras que la model card del autor lo describe como un modelo generativo de razonamiento con mejoras notables en matematicas, programacion y logica. No se especifica en ningun documento el numero de parametros, la arquitectura concreta ni la longitud de contexto.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario asdsad122 bajo el identificador `asdsad122/MyAwesomeModel-TestRepository`. La informacion disponible es escasa y en parte contradictoria: las etiquetas del repositorio lo clasifican como un modelo basado en BERT para `feature-extraction` con libreria `transformers` y pesos PyTorch, mientras que la model card del autor lo describe como un modelo generativo de razonamiento con mejoras notables en matematicas, programacion y logica. No se especifica en ningun documento el numero de parametros, la arquitectura concreta ni la longitud de contexto.
 
 El repositorio tiene un tamano declarado de 0.0 GB, cero descargas y cero "likes", lo que sugiere que no contiene pesos publicados o que estos no estan accesibles. La model card menciona un `checkpoints/step_1000`, un modelo derivado llamado MyAwesomeModel-Small, una interfaz de chat y una API en un sitio web oficial, pero ninguno de estos recursos se enlaza en la informacion proporcionada.
 
@@ -110,7 +110,7 @@ No es posible establecer una comparativa fiable. La model card incluye columnas 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/asdsad122/MyAwesomeModel-TestRepository
+- Hugging Face: https://huggingface.co/asdsad122/MyAwesomeModel-TestRepository
 - Paper: no disponible
 - Repositorio de codigo: no disponible (la model card lo menciona sin enlace)
 - Sitio web de chat / API: no disponible (la model card lo menciona sin enlace)

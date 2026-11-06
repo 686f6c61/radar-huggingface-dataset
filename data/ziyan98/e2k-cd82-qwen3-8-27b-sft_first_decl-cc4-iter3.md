@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks ni de especificaciones verificadas de otros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ziyan98/E2K-cd82-Qwen3.8-27B-sft_first_decl-cc4-iter3
+- Modelo en Hugging Face: https://huggingface.co/ziyan98/E2K-cd82-Qwen3.8-27B-sft_first_decl-cc4-iter3
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Dataset de RL con episodios, métricas, filas y log del run: https://huggingface.co/datasets/ziyan98/E2K-cd82-rl-internalization
 - Dataset del conjunto de conocimiento: https://huggingface.co/datasets/ziyan98/E2K-cd82-harness-knowledge

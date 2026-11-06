@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NYC House Types Classifier es un proyecto de clasificación tabular desarrollado por el usuario abdullah1904 y publicado en HuggingFace. No es un modelo de lenguaje: se trata de un pipeline de scikit-learn que predice el tipo de alojamiento (`room_type`) de un anuncio de Airbnb en Nueva York a partir de variables tabulares como la ubicación, el precio, la estancia mínima, el número de reseñas o la disponibilidad anual. La variable objetivo tiene tres clases: `Entire home/apt`, `Private room` y `Shared room`.
+NYC House Types Classifier es un proyecto de clasificación tabular desarrollado por el usuario abdullah1904 y publicado en Hugging Face. No es un modelo de lenguaje: se trata de un pipeline de scikit-learn que predice el tipo de alojamiento (`room_type`) de un anuncio de Airbnb en Nueva York a partir de variables tabulares como la ubicación, el precio, la estancia mínima, el número de reseñas o la disponibilidad anual. La variable objetivo tiene tres clases: `Entire home/apt`, `Private room` y `Shared room`.
 
 El flujo de trabajo compara cuatro familias de clasificadores clásicos (regresión logística, árbol de decisión, Random Forest y Gradient Boosting) y aplica ajuste de hiperparámetros mediante Grid Search CV y Randomized Search CV sobre el Random Forest. El artefacto distribuido es un pipeline serializado en formato `.pkl` con `joblib` que integra las etapas de imputación, escalado y codificación one-hot, por lo que puede consumirse como un único objeto sin reconstruir el preprocesado.
 
@@ -26,8 +26,8 @@ Su relevancia es fundamentalmente educativa y de referencia: sirve como línea b
 | Frameworks comparados | regresión logística, árbol de decisión, Random Forest y Gradient Boosting |
 | Tamaño del repositorio | 0,1 GB |
 | Descargas / likes | 0 / 0 |
-| Fecha de creación | 19 de septiembre de 2026 (según metadatos de HuggingFace) |
-| Última actualización | 19 de septiembre de 2026 (según metadatos de HuggingFace) |
+| Fecha de creación | 19 de septiembre de 2026 (según metadatos de Hugging Face) |
+| Última actualización | 19 de septiembre de 2026 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -85,7 +85,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Parámetros publicados | Entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| NYC House Types Classifier (Random Forest) | Conjunto de árboles (bagging) | no disponible | Vector tabular | no publicado | MIT | HuggingFace, artefacto `.pkl`, 0 descargas |
+| NYC House Types Classifier (Random Forest) | Conjunto de árboles (bagging) | no disponible | Vector tabular | no publicado | MIT | Hugging Face, artefacto `.pkl`, 0 descargas |
 | Regresión logística (evaluada en el cuaderno) | Modelo lineal | no disponible | Vector tabular | no publicado | MIT (dentro del proyecto) | Solo en el cuaderno, sin artefacto separado |
 | Árbol de decisión (evaluado en el cuaderno) | Árbol único | no disponible | Vector tabular | no publicado | MIT (dentro del proyecto) | Solo en el cuaderno, sin artefacto separado |
 | Gradient Boosting (evaluado en el cuaderno) | Boosting secuencial | no disponible | Vector tabular | no publicado | MIT (dentro del proyecto) | Solo en el cuaderno, sin artefacto separado |
@@ -108,5 +108,5 @@ No se dispone de comparaciones cuantitativas entre este modelo y alternativas, y
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abdullah1904/NYC-House-Types-Classifier
+- Modelo en Hugging Face: https://huggingface.co/abdullah1904/NYC-House-Types-Classifier
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios o demos) en la búsqueda web realizada; los resultados obtenidos corresponden únicamente a páginas principales de buscadores y no aportan información sobre el modelo.

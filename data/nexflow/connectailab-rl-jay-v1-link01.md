@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-jay-v1-link01 | 0,8B (base) + LoRA | no disponible | Decisión discreta para robot simulado LINK-01 | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3.5-0.8B (base) | 0,8B | no disponible | Lenguaje general | no disponible en la información | HuggingFace |
+| connectailab-rl-jay-v1-link01 | 0,8B (base) + LoRA | no disponible | Decisión discreta para robot simulado LINK-01 | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3.5-0.8B (base) | 0,8B | no disponible | Lenguaje general | no disponible en la información | Hugging Face |
 | Política PPO del profesor | no disponible | no aplica | Control continuo en simulador | no disponible | no disponible como modelo público |
 
 No se dispone de información sobre otros adaptadores de decisión robótica comparables en la documentación proporcionada.
@@ -93,7 +93,7 @@ No se dispone de información sobre otros adaptadores de decisión robótica com
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nexflow/connectailab-rl-jay-v1-link01
+- Hugging Face: https://huggingface.co/nexflow/connectailab-rl-jay-v1-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de código: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

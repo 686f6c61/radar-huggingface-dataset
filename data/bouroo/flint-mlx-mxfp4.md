@@ -69,8 +69,8 @@ No se dispone de datos de benchmarks ni de especificaciones verificadas de alter
 
 | Modelo | Parámetros | Activos | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `bouroo/flint-mlx-mxfp4` | ~39,8B | ~2,5B | no disponible (sliding window 513) | safetensors MLX mxfp4, ~22,1 GB | Apache 2.0 | HuggingFace |
-| `RecursiveSI/flint` (base) | ~39,8B | ~2,5B | no disponible (sliding window 513) | safetensors BF16, ~79,6 GB | Apache 2.0 | HuggingFace |
+| `bouroo/flint-mlx-mxfp4` | ~39,8B | ~2,5B | no disponible (sliding window 513) | safetensors MLX mxfp4, ~22,1 GB | Apache 2.0 | Hugging Face |
+| `RecursiveSI/flint` (base) | ~39,8B | ~2,5B | no disponible (sliding window 513) | safetensors BF16, ~79,6 GB | Apache 2.0 | Hugging Face |
 | Otras alternativas MoE de tamaño similar | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -88,6 +88,6 @@ No se dispone de datos de benchmarks ni de especificaciones verificadas de alter
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bouroo/flint-mlx-mxfp4
+- Repositorio Hugging Face: https://huggingface.co/bouroo/flint-mlx-mxfp4
 - Modelo base: https://huggingface.co/RecursiveSI/flint
 - Papers, blogs, repositorios o demos adicionales: no disponibles. La búsqueda web realizada no devolvió resultados relacionados con el modelo (los resultados obtenidos no guardan relación con el contenido técnico de esta ficha y se descartan).

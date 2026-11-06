@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `voves/gemma-4-26B-A4B-it-FP8` es una versión cuantizada en FP8 del modelo multimodal `google/gemma-4-26B-A4B-it`, desarrollado por Google DeepMind y publicado en HuggingFace por el usuario `voves`. Se trata de un modelo de arquitectura Mixture-of-Experts (MoE) con 25,8 mil millones de parámetros totales, de los cuales solo 3,8 mil millones se activan por token, lo que lo hace eficiente en inferencia a pesar de su tamaño. Es capaz de procesar entradas de texto e imagen y generar salidas de texto, e incluye modos de pensamiento configurables para tareas de razonamiento.
+El modelo `voves/gemma-4-26B-A4B-it-FP8` es una versión cuantizada en FP8 del modelo multimodal `google/gemma-4-26B-A4B-it`, desarrollado por Google DeepMind y publicado en Hugging Face por el usuario `voves`. Se trata de un modelo de arquitectura Mixture-of-Experts (MoE) con 25,8 mil millones de parámetros totales, de los cuales solo 3,8 mil millones se activan por token, lo que lo hace eficiente en inferencia a pesar de su tamaño. Es capaz de procesar entradas de texto e imagen y generar salidas de texto, e incluye modos de pensamiento configurables para tareas de razonamiento.
 
 Este modelo destaca por su ventana de contexto de hasta 256K tokens y su soporte multilingüe en más de 140 idiomas, lo que lo posiciona como una opción atractiva para aplicaciones empresariales y de investigación que requieren comprensión multimodal y razonamiento avanzado. La cuantización FP8 reduce el tamaño del modelo a aproximadamente 27 GB, facilitando su despliegue en hardware con VRAM limitada en comparación con la versión en BF16. La licencia Apache 2.0 permite uso comercial sin restricciones significativas, lo que aumenta su atractivo para integraciones en producción.
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la información disponible para 
 - VRAM estimada para inferencia: el modelo FP8 ocupa aproximadamente 26 GB de pesos, por lo que se recomienda al menos 32 GB de VRAM para inferencia con overhead de activaciones y cache KV. Con cuantización adicional (por ejemplo, 4 bits) podría caber en GPUs de 24 GB.
 - GPUs recomendadas: NVIDIA A100 40GB/80GB, H100, RTX 6000 Ada, o cualquier GPU con soporte nativo FP8 (RTX 4090 no tiene soporte FP8 completo, pero puede ejecutar el modelo con emulación o cuantización adicional).
 - En GPUs de consumo: no cabe en RTX 4090 (24 GB) sin cuantización adicional; una RTX 3090 (24 GB) tampoco es suficiente en FP8. Con cuantización a 4 bits (por ejemplo, GGUF Q4_K_M), podría ejecutarse en 16-18 GB de VRAM.
-- Opciones de despliegue: vLLM (con soporte FP8), TensorRT-LLM, llama.cpp (si se convierte a GGUF), Ollama (mediante integración con llama.cpp), y HuggingFace TGI.
+- Opciones de despliegue: vLLM (con soporte FP8), TensorRT-LLM, llama.cpp (si se convierte a GGUF), Ollama (mediante integración con llama.cpp), y Hugging Face TGI.
 - Latencia y throughput: no se dispone de datos medidos. En FP8, se espera un throughput superior al de la versión BF16 en GPUs con soporte nativo, pero los valores concretos dependen del hardware y la configuración.
 
 ## Comparativa con modelos similares
@@ -79,8 +79,8 @@ La principal ventaja del modelo aquí descrito frente a alternativas densas es s
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/voves/gemma-4-26B-A4B-it-FP8
-- Modelo base en HuggingFace: https://huggingface.co/google/gemma-4-26B-A4B-it
+- Repositorio Hugging Face del modelo: https://huggingface.co/voves/gemma-4-26B-A4B-it-FP8
+- Modelo base en Hugging Face: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Página oficial de Gemma 4 en Google DeepMind: https://deepmind.google/models/gemma/gemma-4/
 - Documentación en Microsoft Foundry: https://ai.azure.com/catalog/models/FW-Gemma-4-26B-A4B-IT
 - Guía de despliegue en Google Cloud: https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/maas/google/gemma-4-26b-a4b-it

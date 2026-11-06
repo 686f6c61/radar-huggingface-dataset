@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Abhiabhi12/pass-ml-agents-snowballtarget` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno ML-Agents-SnowballTarget, perteneciente al conjunto de escenarios de ejemplo del framework Unity ML-Agents. No se trata de un modelo de lenguaje: es una política neuronal que controla un agente dentro de una simulación Unity, aprendiendo a lanzar proyectiles contra un objetivo móvil. El autor es el usuario de HuggingFace Abhiabhi12 y el artefacto se publica bajo la librería `ml-agents`.
+`Abhiabhi12/pass-ml-agents-snowballtarget` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno ML-Agents-SnowballTarget, perteneciente al conjunto de escenarios de ejemplo del framework Unity ML-Agents. No se trata de un modelo de lenguaje: es una política neuronal que controla un agente dentro de una simulación Unity, aprendiendo a lanzar proyectiles contra un objetivo móvil. El autor es el usuario de Hugging Face Abhiabhi12 y el artefacto se publica bajo la librería `ml-agents`.
 
 El modelo resuelve una tarea concreta de control continuo/discreto en un entorno 3D simulado, y su interés es fundamentalmente metodológico: sirve como referencia reproducible de un entrenamiento PPO completo y como punto de partida para experimentos de comparación de algoritmos, ajuste de hiperparámetros o transferencia a entornos propios construidos sobre ML-Agents. El resultado declarado es un retorno medio de 20,00 ± 0,00 en el entorno de entrenamiento, lo que sugiere que la política se evalúa de forma determinista y estable.
 
@@ -63,7 +63,7 @@ El único dato cuantitativo de entrenamiento publicado es el resultado de evalua
 - Transferencia a entornos propios en Unity: partir de esta política como inicialización y reentrenar sobre un entorno propio construido con ML-Agents que comparta estructura de observaciones y acciones, reduciendo el tiempo hasta la convergencia.
 - Demostración interactiva o prototipo de comportamiento: integrar el modelo exportado en una escena de Unity para mostrar un agente no jugador que resuelve la tarea de lanzamiento, útil en prototipos y presentaciones técnicas.
 - Validación de pipelines de evaluación de RL: incorporar el modelo en un flujo automatizado que cargue el artefacto, ejecute N episodios y verifique que el retorno se mantiene dentro de un umbral, como prueba de regresión de una infraestructura de entrenamiento.
-- Investigación en reproducibilidad: auditar si el retorno declarado puede replicarse con la información disponible, lo que resulta útil para estudiar la trazabilidad de artefactos publicados en HuggingFace.
+- Investigación en reproducibilidad: auditar si el retorno declarado puede replicarse con la información disponible, lo que resulta útil para estudiar la trazabilidad de artefactos publicados en Hugging Face.
 - Estudio de estabilidad de políticas: analizar por qué la desviación reportada es de 0,00 y determinar si se debe a una evaluación determinista, a un único episodio o a una propiedad del entorno, diseñando para ello un protocolo de evaluación con múltiples semillas.
 
 ## Benchmarks y rendimiento
@@ -112,7 +112,7 @@ No se dispone de resultados publicados de otros agentes sobre ML-Agents-Snowball
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Abhiabhi12/pass-ml-agents-snowballtarget
+- Modelo en Hugging Face: https://huggingface.co/Abhiabhi12/pass-ml-agents-snowballtarget
 - Framework Unity ML-Agents (referencia del ecosistema, no incluido en la model card): https://github.com/Unity-Technologies/ml-agents
 - Documentación de Unity ML-Agents (referencia del ecosistema, no incluida en la model card): https://unity-technologies.github.io/ml-agents/
 - Papers, blogs, repositorios o demos adicionales: no disponible. Las búsquedas web realizadas no devolvieron resultados relevantes sobre este modelo; los enlaces recuperados trataban sobre incidencias de envíos de Amazon y no guardan relación con el artefacto.

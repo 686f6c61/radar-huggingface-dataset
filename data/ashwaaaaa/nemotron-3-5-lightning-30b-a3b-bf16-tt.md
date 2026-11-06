@@ -4,7 +4,7 @@
 
 Este repositorio no contiene un modelo entrenado desde cero, sino un paquete de despliegue (bring-up) del modelo `nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16` optimizado para hardware Tenstorrent. Lo publica el usuario `ashwaaaaa` como «experimental community bring-up», generado con `tt-model-manager` 0.1.0 (esquema de manifiesto 5.1) y planificado con `tt_hw_planner`, que ajusta kernels y palancas de rendimiento contra un pipeline extremo a extremo validado por PCC. El objetivo es servir el modelo citado con una API compatible con OpenAI sobre una malla `P300x2` (dos tarjetas Tenstorrent Blackhole p300).
 
-El modelo base es la familia Nemotron 3.5 Lightning de NVIDIA; por la nomenclatura del nombre (30B-A3B) se deduce una arquitectura de mezcla de expertos con unos 30 000 millones de parametros totales y unos 3000 millones activos por token, aunque la model card de este paquete no detalla contexto, composicion de entrenamiento ni idiomas. El paquete en si ocupa 2,4 GB porque no incluye los pesos: estos se descargan aparte desde el repositorio de NVIDIA en la cache de HuggingFace durante la instalacion.
+El modelo base es la familia Nemotron 3.5 Lightning de NVIDIA; por la nomenclatura del nombre (30B-A3B) se deduce una arquitectura de mezcla de expertos con unos 30 000 millones de parametros totales y unos 3000 millones activos por token, aunque la model card de este paquete no detalla contexto, composicion de entrenamiento ni idiomas. El paquete en si ocupa 2,4 GB porque no incluye los pesos: estos se descargan aparte desde el repositorio de NVIDIA en la cache de Hugging Face durante la instalacion.
 
 Su relevancia es doble: por un lado, demuestra el flujo de publicacion de paquetes portados a Tenstorrent (`tt model pull` / `tt serve`, servidor en el puerto 20000, chat completions, completions y `/v1/models`); por otro, aporta medidas de latencia reales sobre p300x2 con hasta 32 secuencias concurrentes. Es un artefacto de infraestructura, no una ficha de capacidades del modelo base, y asi debe leerse.
 
@@ -19,7 +19,7 @@ Su relevancia es doble: por un lado, demuestra el flujo de publicacion de paquet
 | Tipos de cuantizacion | BF16 unicamente (el paquete solo publica la variante BF16; no se listan GGUF, FP8, AWQ ni GPTQ) |
 | Idiomas soportados | no disponible |
 | Licencia | apache-2.0 (declarada en este paquete; los pesos provienen del repositorio base de NVIDIA y se rigen por la licencia de este) |
-| Formato de pesos | no disponible; los pesos BF16 no se incluyen en el repositorio (2,4 GB) y se descargan desde `nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16` a la cache de HuggingFace |
+| Formato de pesos | no disponible; los pesos BF16 no se incluyen en el repositorio (2,4 GB) y se descargan desde `nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16` a la cache de Hugging Face |
 | Hardware objetivo | malla `P300x2` (Tenstorrent, tag `blackhole`, tag `p300x2`) |
 | Concurrencia maxima | 32 secuencias |
 | Servidor | API compatible con OpenAI en `http://127.0.0.1:20000/v1` |
@@ -30,7 +30,7 @@ Su relevancia es doble: por un lado, demuestra el flujo de publicacion de paquet
 
 El paquete no reentrena ni modifica los pesos: empaqueta una build de inferencia. La cadena de compilacion esta declarada con hashes concretos en la seccion de trazabilidad: tt-metal en el commit `2e7a7397ab7f6aac52527a0b56a26963e26d71bd`, vLLM `v0.24.0`, el plugin `vllm-tt-plugin` en el commit `35090660433d5606957ded97f7130b5cc75f94f7` y un digest `code/` (sha256, primeros 16 digitos hex) de `6783233236f143f4`, compilado el 2026-09-26T18:50:33+00:00 por tt-model 0.1.0. El directorio `code/` del repositorio es identico byte a byte al codigo de modelo embebido en la imagen.
 
-La parte de «entrenamiento» del modelo subyacente (numero de tokens, composicion del dataset, si hubo RLHF o DPO) no se documenta en esta model card y por tanto queda como no disponible. Lo que si se documenta es el mecanismo de portado: `tt_hw_planner` realiza autotuning de kernels y palancas de rendimiento contra un pipeline extremo a extremo con puerta de PCC, y el arranque en frio compila kernels para el dispositivo, lo que tarda varios minutos. La verificacion de correccion se hace en dispositivo comparando la salida del pipeline Tenstorrent contra la implementacion de referencia de HuggingFace con teacher forcing sobre la secuencia generada.
+La parte de «entrenamiento» del modelo subyacente (numero de tokens, composicion del dataset, si hubo RLHF o DPO) no se documenta en esta model card y por tanto queda como no disponible. Lo que si se documenta es el mecanismo de portado: `tt_hw_planner` realiza autotuning de kernels y palancas de rendimiento contra un pipeline extremo a extremo con puerta de PCC, y el arranque en frio compila kernels para el dispositivo, lo que tarda varios minutos. La verificacion de correccion se hace en dispositivo comparando la salida del pipeline Tenstorrent contra la implementacion de referencia de Hugging Face con teacher forcing sobre la secuencia generada.
 
 ## Capacidades
 
@@ -57,7 +57,7 @@ Resultados publicados en la model card del paquete:
 
 | Metrica | Resultado | Valor |
 |---|---|---|
-| PCC extremo a extremo frente a la referencia de HuggingFace (teacher forcing) | pasa | 0,9999 |
+| PCC extremo a extremo frente a la referencia de Hugging Face (teacher forcing) | pasa | 0,9999 |
 
 Latencia medida en dispositivo (`test_main_perf`, 2026-09-26), con prompts de exactamente ISL tokens y salida fijada a OSL tokens, decodificacion batcheada:
 
@@ -84,7 +84,7 @@ La seccion «Expected performance» de la model card resume 78,5 tok/s por usuar
 | Modelo | Parametros | Contexto | Licencia | Formato / despliegue | Rendimiento documentado |
 |---|---|---|---|---|---|
 | `ashwaaaaa/nemotron-3-5-lightning-30b-a3b-bf16-tt` (este paquete) | ~30B totales, ~3B activos (segun nombre del base) | no disponible | apache-2.0 | Contenedor Tenstorrent, pesos BF16 descargados aparte; vLLM 0.24.0 + vllm-tt-plugin | PCC 0,9999; 80,5 tok/s por usuario; 2 576 tok/s con 32 usuarios en p300x2 |
-| `nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16` (modelo base) | ~30B totales, ~3B activos (segun nombre) | no disponible | consultar la model card de NVIDIA | Pesos BF16 para el ecosistema HuggingFace | no disponible en la informacion proporcionada |
+| `nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16` (modelo base) | ~30B totales, ~3B activos (segun nombre) | no disponible | consultar la model card de NVIDIA | Pesos BF16 para el ecosistema Hugging Face | no disponible en la informacion proporcionada |
 | Alternativas de terceros del mismo tamano o categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La informacion proporcionada solo permite comparar el paquete con su modelo base; no incluye datos de modelos competidores comparables.
@@ -99,7 +99,7 @@ La informacion proporcionada solo permite comparar el paquete con su modelo base
 - Cobertura de idiomas: no disponible. No se puede asumir soporte multilingue ni castellano a partir de esta ficha.
 - Longitud de contexto: no disponible. Las unicas medidas publicadas usan ISL y OSL de 128 tokens, muy por debajo de lo que suele soportar un modelo de esta familia.
 - Restricciones de licencia para uso comercial: este paquete declara apache-2.0, pero los pesos no se distribuyen aqui y se rigen por la licencia de `nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16`; hay que revisarla antes de cualquier uso comercial.
-- No incluye pesos en el repositorio: la descarga requiere red y espacio en la cache de HuggingFace, y el arranque en frio compila kernels durante varios minutos.
+- No incluye pesos en el repositorio: la descarga requiere red y espacio en la cache de Hugging Face, y el arranque en frio compila kernels durante varios minutos.
 - Trampa de integracion: el identificador que debe enviarse en la peticion es el de los pesos (`nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16`), no el nombre de este paquete.
 - Fechas y marcas temporales del repositorio (2026-09-26) segun lo reportado; conviene verificar la vigencia del stack fijado (tt-metal, vLLM 0.24.0) antes de desplegar en produccion.
 

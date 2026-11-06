@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mauri14mauri/titanic-modelo` es un repositorio de HuggingFace publicado por el usuario `mauri14mauri` bajo licencia MIT. Por la denominación del repositorio y por el contexto habitual de este tipo de publicaciones, todo apunta a un modelo de clasificación tabular orientado al conocido dataset del Titanic (predicción de supervivencia de pasajeros a partir de variables demográficas y socioeconómicas). No obstante, la model card publicada no contiene descripción, pipeline declarado, idiomas ni documentación técnica alguna, por lo que la naturaleza exacta del artefacto no puede confirmarse a partir de la información disponible.
+`mauri14mauri/titanic-modelo` es un repositorio de Hugging Face publicado por el usuario `mauri14mauri` bajo licencia MIT. Por la denominación del repositorio y por el contexto habitual de este tipo de publicaciones, todo apunta a un modelo de clasificación tabular orientado al conocido dataset del Titanic (predicción de supervivencia de pasajeros a partir de variables demográficas y socioeconómicas). No obstante, la model card publicada no contiene descripción, pipeline declarado, idiomas ni documentación técnica alguna, por lo que la naturaleza exacta del artefacto no puede confirmarse a partir de la información disponible.
 
 El repositorio tiene un tamaño de 0,0 GB, cero descargas y cero likes, y fue creado el 24 de octubre de 2026 con una actualización dos minutos posterior. Estos indicadores son coherentes con una publicación de prueba o un ejercicio académico más que con un modelo destinado a producción. No se ha publicado información sobre arquitectura, número de parámetros, datos de entrenamiento ni resultados de evaluación.
 
@@ -38,7 +38,7 @@ Tampoco hay datos sobre el conjunto de entrenamiento: se desconoce el número de
 
 ## Casos de uso
 
-- Docencia de pipelines de machine learning: el repositorio puede servir como ejemplo mínimo de publicación de un clasificador tabular en HuggingFace, útil en un curso introductorio para ilustrar el ciclo completo desde el entrenamiento hasta el despliegue.
+- Docencia de pipelines de machine learning: el repositorio puede servir como ejemplo mínimo de publicación de un clasificador tabular en Hugging Face, útil en un curso introductorio para ilustrar el ciclo completo desde el entrenamiento hasta el despliegue.
 - Prueba de integración de CI/CD con el Hub: al tener un tamaño declarado de 0,0 GB y licencia MIT, es un candidato cómodo para validar scripts de descarga automática, versionado y empaquetado sin consumir ancho de banda ni almacenamiento.
 - Comparación de líneas base en el dataset del Titanic: podría emplearse como referencia de partida frente a modelos propios, siempre que el autor documente la métrica y el split utilizados (actualmente no disponibles).
 - Demostración de despliegue de inferencia en CPU: si el artefacto es un clasificador tabular de tamaño reducido, encaja en ejemplos de servicio con FastAPI o Gradio sin necesidad de GPU.
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `mauri14mauri/titanic-modelo` | no disponible | no aplica | no disponible | MIT | HuggingFace, 0 descargas, modelo no documentado |
-| `UncertainPrinciple/titanic-model-v1` | no disponible | no aplica | no disponible | no disponible | HuggingFace + Space en Gradio; autor indica entrenamiento con scikit-learn |
+| `mauri14mauri/titanic-modelo` | no disponible | no aplica | no disponible | MIT | Hugging Face, 0 descargas, modelo no documentado |
+| `UncertainPrinciple/titanic-model-v1` | no disponible | no aplica | no disponible | no disponible | Hugging Face + Space en Gradio; autor indica entrenamiento con scikit-learn |
 | `Abdalmomen123/titanic-ai-model` | no disponible | no aplica | no disponible | no disponible | GitHub; autor indica TensorFlow 2.x / Keras |
 | `KiehlZz/Project-AI` | no disponible | no aplica | no disponible | no disponible | GitHub; análisis y predicción sobre el dataset del Titanic, técnicas no especificadas |
 
@@ -82,8 +82,8 @@ Nota: `MahmoodLab/TITAN` aparece en los resultados de búsqueda por coincidencia
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mauri14mauri/titanic-modelo
-- Modelo comparable en HuggingFace: https://huggingface.co/UncertainPrinciple/titanic-model-v1
+- Modelo en Hugging Face: https://huggingface.co/mauri14mauri/titanic-modelo
+- Modelo comparable en Hugging Face: https://huggingface.co/UncertainPrinciple/titanic-model-v1
 - Repositorio GitHub relacionado: https://github.com/KiehlZz/Project-AI
 - Repositorio GitHub relacionado (TensorFlow/Keras): https://github.com/Abdalmomen123/titanic-ai-model
 - Tutorial de referencia sobre predicción de supervivencia en el Titanic: https://www.geeksforgeeks.org/machine-learning/titanic-survival-prediction-using-ml/

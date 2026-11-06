@@ -2,9 +2,9 @@
 
 ## Resumen
 
-SatellaDet-Blood es un modelo de deteccion de objetos aplicado a microscopia de sangre periferica, publicado por el autor EphAsad (Ephraim Asad) en HuggingFace. Se trata de un banco de pruebas publico de la arquitectura personalizada SatellaDet, desarrollada originalmente para deteccion densa de objetos microbiologicos (colonias), y este experimento evalua si la misma arquitectura puede generalizar a un dominio de microscopia sustancialmente distinto sin redisenarla especificamente para celulas sanguineas. El modelo se entreno desde cero a una resolucion de 640 x 640 y detecta tres clases: globulos blancos (WBC), globulos rojos (RBC) y plaquetas.
+SatellaDet-Blood es un modelo de deteccion de objetos aplicado a microscopia de sangre periferica, publicado por el autor EphAsad (Ephraim Asad) en Hugging Face. Se trata de un banco de pruebas publico de la arquitectura personalizada SatellaDet, desarrollada originalmente para deteccion densa de objetos microbiologicos (colonias), y este experimento evalua si la misma arquitectura puede generalizar a un dominio de microscopia sustancialmente distinto sin redisenarla especificamente para celulas sanguineas. El modelo se entreno desde cero a una resolucion de 640 x 640 y detecta tres clases: globulos blancos (WBC), globulos rojos (RBC) y plaquetas.
 
-A diferencia de los modelos generativos habituales en HuggingFace, SatellaDet-Blood no es un modelo de lenguaje: su tarea es la deteccion de instancias sobre imagenes de microscopia. El repositorio publica dos artefactos principales, una exportacion ONNX desplegable y un checkpoint de PyTorch seleccionado mediante la metrica propia SatellaScore, junto con graficas de entrenamiento y metricas agregadas de test.
+A diferencia de los modelos generativos habituales en Hugging Face, SatellaDet-Blood no es un modelo de lenguaje: su tarea es la deteccion de instancias sobre imagenes de microscopia. El repositorio publica dos artefactos principales, una exportacion ONNX desplegable y un checkpoint de PyTorch seleccionado mediante la metrica propia SatellaScore, junto con graficas de entrenamiento y metricas agregadas de test.
 
 Su relevancia actual reside en que aporta un punto de referencia reproducible sobre el conjunto publico TXL-PBC (1.260 imagenes de microscopia y 18.143 celulas anotadas), con una separacion estricta entre validacion y test: el checkpoint se selecciono unicamente con el split de validacion y las metricas principales corresponden al split de test oficial no utilizado durante el entrenamiento. El autor advierte explicitamente que no es un sistema de diagnostico clinico.
 
@@ -23,7 +23,7 @@ Su relevancia actual reside en que aporta un punto de referencia reproducible so
 | Resolucion de entrada | 640 x 640 |
 | Clases detectadas | WBC, RBC, Platelets |
 | Tarea (pipeline) | object-detection |
-| Tamano del repositorio | 0.0 GB (segun HuggingFace) |
+| Tamano del repositorio | 0.0 GB (segun Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -108,7 +108,7 @@ No se han proporcionado datos de benchmarks ni especificaciones de modelos alter
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SatellaDet-Blood | no disponible | no aplicable | mAP50 0,9341 y mAP50-95 0,7346 en test TXL-PBC | no disponible | HuggingFace (ONNX y PyTorch) |
+| SatellaDet-Blood | no disponible | no aplicable | mAP50 0,9341 y mAP50-95 0,7346 en test TXL-PBC | no disponible | Hugging Face (ONNX y PyTorch) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -127,7 +127,7 @@ No se han proporcionado datos de benchmarks ni especificaciones de modelos alter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EphAsad/SatellaDet-Blood
+- Modelo en Hugging Face: https://huggingface.co/EphAsad/SatellaDet-Blood
 - Repositorio de la arquitectura SatellaDet: https://github.com/EphraimAsad/SatellaDet
 - Repositorio del conjunto de datos TXL-PBC: https://github.com/lugan113/TXL-PBC_Dataset
 - Referencia del conjunto de datos: Gan, L., Li, X. & Wang, X. "TXL-PBC: a peripheral blood cell dataset with comprehensive annotations", Scientific Data 12, 1694 (2025), DOI 10.1038/s41597-025-05980-z

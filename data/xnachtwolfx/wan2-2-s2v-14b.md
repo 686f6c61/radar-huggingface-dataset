@@ -4,7 +4,7 @@
 
 Wan2.2-S2V-14B es un modelo de generación de vídeo dirigido por audio, desarrollado por el equipo Wan-AI y presentado en el artículo técnico *Wan-S2V: Audio-Driven Cinematic Video Generation* (arXiv:2508.18621). El modelo convierte una imagen de entrada y una pista de audio (voz, canto, efectos) en un vídeo cinematográfico sincronizado, con control sobre la identidad del personaje, los movimientos corporales y la cámara. Está construido sobre la arquitectura Wan2.2, que incorpora una mezcla de expertos (MoE) en el proceso de difusión, separando el ruido en pasos temporales con expertos especializados para aumentar la capacidad del modelo sin elevar el coste computacional.
 
-Este modelo concreto, publicado bajo licencia Apache 2.0, tiene 16,3 mil millones de parámetros en total (según los pesos safetensors) y es capaz de generar vídeo a 480P y 720P a 24 fps. Su relevancia actual radica en que es uno de los primeros modelos abiertos que abordan la animación de personajes con calidad cinematográfica a partir de audio, superando en las evaluaciones del equipo a alternativas como Hunyuan-Avatar y Omnihuman en escenarios complejos de interacción entre personajes y movimiento de cámara. El repositorio en HuggingFace es una copia del usuario xnachtwolfx, mientras que la versión oficial se encuentra en Wan-AI/Wan2.2-S2V-14B.
+Este modelo concreto, publicado bajo licencia Apache 2.0, tiene 16,3 mil millones de parámetros en total (según los pesos safetensors) y es capaz de generar vídeo a 480P y 720P a 24 fps. Su relevancia actual radica en que es uno de los primeros modelos abiertos que abordan la animación de personajes con calidad cinematográfica a partir de audio, superando en las evaluaciones del equipo a alternativas como Hunyuan-Avatar y Omnihuman en escenarios complejos de interacción entre personajes y movimiento de cámara. El repositorio en Hugging Face es una copia del usuario xnachtwolfx, mientras que la versión oficial se encuentra en Wan-AI/Wan2.2-S2V-14B.
 
 ## Especificaciones técnicas
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Arquitectura | Resolución | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Wan2.2-S2V-14B (este) | 16,3 B (MoE) | Diffusión + audio | 480P/720P @24fps | Apache-2.0 | HuggingFace, ModelScope |
+| Wan2.2-S2V-14B (este) | 16,3 B (MoE) | Diffusión + audio | 480P/720P @24fps | Apache-2.0 | Hugging Face, ModelScope |
 | Hunyuan-Avatar | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Omnihuman | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -71,7 +71,7 @@ No se dispone de especificaciones de Hunyuan-Avatar ni Omnihuman en las fuentes.
 - La sincronización de audio y vídeo puede degradarse en entornos con ruido de fondo o voces solapadas.
 - No se especifica la duración máxima del vídeo generado; la generación de vídeos largos puede requerir fragmentación.
 - Aunque la licencia es Apache-2.0, el uso comercial debe cumplir con los términos de la licencia y con las políticas de uso de los modelos de Wan-AI (consultar la documentación oficial).
-- El repositorio de HuggingFace es una copia de un usuario (xnachtwolfx) y no la oficial; se recomienda descargar los pesos desde Wan-AI/Wan2.2-S2V-14B para garantizar la integridad de los archivos.
+- El repositorio de Hugging Face es una copia de un usuario (xnachtwolfx) y no la oficial; se recomienda descargar los pesos desde Wan-AI/Wan2.2-S2V-14B para garantizar la integridad de los archivos.
 - No se ha publicado información sobre sesgos o alucinaciones específicas; como modelo generativo, puede producir contenido no deseado si el prompt de audio o imagen es ambiguo.
 
 ## Enlaces
@@ -85,6 +85,6 @@ No se dispone de especificaciones de Hunyuan-Avatar ni Omnihuman en las fuentes.
 - Código en GitHub: https://github.com/Wan-Video/Wan2.2
 - Página oficial de Wan: https://wan.video
 - Blog de Wan2.2: https://wan.video/welcome
-- Espacio Gradio en HuggingFace: https://huggingface.co/spaces/Wan-AI/Wan2.2-S2V
+- Espacio Gradio en Hugging Face: https://huggingface.co/spaces/Wan-AI/Wan2.2-S2V
 - Guía de usuario en inglés: https://alidocs.dingtalk.com/i/nodes/EpGBa2Lm8aZxe5myC99MelA2WgN7R35y
 - Guía de usuario en chino: https://alidocs.dingtalk.com/i/nodes/jb9Y4gmKWrx9eo4dCql9LlbYJGXn6lpz

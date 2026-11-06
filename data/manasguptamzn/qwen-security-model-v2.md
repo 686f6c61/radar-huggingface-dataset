@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Manasguptamzn/qwen-security-model-v2` es un repositorio alojado en HuggingFace cuyo nombre sugiere un modelo orientado a tareas de seguridad, presumiblemente derivado de la familia Qwen, aunque esta filiación no está confirmada en ninguna fuente disponible. El autor es el usuario `Manasguptamzn`, del que no se publican datos de organización, financiación ni equipo de desarrollo. El repositorio fue creado y actualizado el 17 de septiembre de 2026 y acumula cero descargas y cero valoraciones, por lo que se trata de una publicación sin tracción ni validación por parte de la comunidad.
+`Manasguptamzn/qwen-security-model-v2` es un repositorio alojado en Hugging Face cuyo nombre sugiere un modelo orientado a tareas de seguridad, presumiblemente derivado de la familia Qwen, aunque esta filiación no está confirmada en ninguna fuente disponible. El autor es el usuario `Manasguptamzn`, del que no se publican datos de organización, financiación ni equipo de desarrollo. El repositorio fue creado y actualizado el 17 de septiembre de 2026 y acumula cero descargas y cero valoraciones, por lo que se trata de una publicación sin tracción ni validación por parte de la comunidad.
 
-La model card es la plantilla automática de HuggingFace sin rellenar: todas las secciones relevantes (descripción, datos de entrenamiento, hiperparámetros, evaluación, licencia, idiomas y uso previsto) contienen el marcador `[More Information Needed]`. No se declara arquitectura, número de parámetros, longitud de contexto, composición del dataset ni procedimiento de ajuste. El repositorio ocupa 0,1 GB y contiene pesos en formato `safetensors` con la librería `transformers`, lo que apunta a un modelo de tamaño reducido, pero no hay confirmación oficial de ello.
+La model card es la plantilla automática de Hugging Face sin rellenar: todas las secciones relevantes (descripción, datos de entrenamiento, hiperparámetros, evaluación, licencia, idiomas y uso previsto) contienen el marcador `[More Information Needed]`. No se declara arquitectura, número de parámetros, longitud de contexto, composición del dataset ni procedimiento de ajuste. El repositorio ocupa 0,1 GB y contiene pesos en formato `safetensors` con la librería `transformers`, lo que apunta a un modelo de tamaño reducido, pero no hay confirmación oficial de ello.
 
 La relevancia de esta ficha es, por tanto, fundamentalmente cautelar: documenta la existencia del repositorio y deja constancia explícita de la ausencia de información verificable. Cualquier evaluación de idoneidad para producción exige contactar con el autor o inspeccionar directamente los pesos y la configuración del repositorio antes de tomar decisiones.
 
@@ -31,7 +31,7 @@ La relevancia de esta ficha es, por tanto, fundamentalmente cautelar: documenta 
 
 No disponible. La model card no especifica el tipo de arquitectura (transformer denso, MoE, SSM o híbrida), el número de parámetros, la longitud de contexto nativa ni si se emplearon técnicas como atención lineal, decodificación especulativa o atención con ventana deslizante. Tampoco se documenta el número de tokens de entrenamiento, la composición del dataset, la existencia de fases de ajuste supervisado, RLHF o DPO, ni los hiperparámetros de entrenamiento (precisión, régimen de precisión mixta, hardware utilizado).
 
-El único indicio estructural es el tamaño del repositorio (0,1 GB) y la etiqueta `safetensors`, compatible con un modelo de parámetros reducidos en precisión de 16 o 32 bits. Se trata de una inferencia a partir del tamaño del artefacto, no de un dato declarado por el autor. La etiqueta `arxiv:1910.09700` que aparece en los tags corresponde a Lacoste et al. (2019), el artículo sobre estimación de emisiones de carbono citado en la propia plantilla de HuggingFace, y no a un paper descriptivo de este modelo.
+El único indicio estructural es el tamaño del repositorio (0,1 GB) y la etiqueta `safetensors`, compatible con un modelo de parámetros reducidos en precisión de 16 o 32 bits. Se trata de una inferencia a partir del tamaño del artefacto, no de un dato declarado por el autor. La etiqueta `arxiv:1910.09700` que aparece en los tags corresponde a Lacoste et al. (2019), el artículo sobre estimación de emisiones de carbono citado en la propia plantilla de Hugging Face, y no a un paper descriptivo de este modelo.
 
 ## Capacidades
 
@@ -66,7 +66,7 @@ Todas las cifras de esta sección son estimaciones derivadas del tamaño del rep
 - VRAM estimada para inferencia: con un artefacto de 0,1 GB, la inferencia en fp16 requeriría previsiblemente menos de 1 GB de VRAM en pesos, más el overhead de activaciones y caché KV, que depende de una longitud de contexto no documentada.
 - GPU recomendadas: no disponible. Cualquier GPU consumer moderna (por ejemplo, RTX 3060 en adelante) sería probablemente suficiente si se confirma el tamaño reducido, pero esto no está verificado.
 - Cabe en GPU consumer: probablemente sí, en la mayoría de tarjetas con 8 GB o más de VRAM, sujeto a confirmación del tamaño real y del contexto máximo.
-- Opciones de despliegue: la etiqueta `endpoints_compatible` y la librería `transformers` permiten inferir compatibilidad con HuggingFace Inference Endpoints y con `transformers` en Python. No se ha publicado conversión a GGUF, por lo que llama.cpp u Ollama requerirían una conversión propia. La compatibilidad con vLLM o TGI no está confirmada.
+- Opciones de despliegue: la etiqueta `endpoints_compatible` y la librería `transformers` permiten inferir compatibilidad con Hugging Face Inference Endpoints y con `transformers` en Python. No se ha publicado conversión a GGUF, por lo que llama.cpp u Ollama requerirían una conversión propia. La compatibilidad con vLLM o TGI no está confirmada.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -87,7 +87,7 @@ No disponible. Al no conocerse la arquitectura, el número de parámetros, la li
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Manasguptamzn/qwen-security-model-v2
+- Repositorio en Hugging Face: https://huggingface.co/Manasguptamzn/qwen-security-model-v2
 - Artículo citado en los tags (Lacoste et al., 2019, sobre estimación de emisiones): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de Machine Learning referenciada en la plantilla: https://mlco2.github.io/impact
 - Paper, blog, repositorio de código o demo del modelo: no disponible. Las búsquedas web realizadas no devolvieron ningún resultado relevante sobre este modelo; los enlaces recuperados correspondían a portales de transferencias de fútbol sin relación con la consulta.

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `alfred8995/r18-a2-w13-kx-native-w20-s130` es un checkpoint de pesos en formato safetensors publicado en HuggingFace por el usuario alfred8995 bajo licencia Apache 2.0. Por su nomenclatura y su etiqueta `sn38-nanochrono`, parece tratarse de un modelo de la familia "nanochrono", probablemente un transformer de escala pequeña orientado a experimentación o a un dominio concreto, aunque no se dispone de documentación oficial que confirme su arquitectura exacta ni su propósito.
+El modelo `alfred8995/r18-a2-w13-kx-native-w20-s130` es un checkpoint de pesos en formato safetensors publicado en Hugging Face por el usuario alfred8995 bajo licencia Apache 2.0. Por su nomenclatura y su etiqueta `sn38-nanochrono`, parece tratarse de un modelo de la familia "nanochrono", probablemente un transformer de escala pequeña orientado a experimentación o a un dominio concreto, aunque no se dispone de documentación oficial que confirme su arquitectura exacta ni su propósito.
 
-El checkpoint cuenta con 2.018.511.234 parámetros totales (aproximadamente 2.000 millones) y un repositorio de 14,4 GB, lo que sugiere pesos en precisión de 16 bits o similar. El acceso está restringido (gated): es necesario aceptar las condiciones en HuggingFace antes de poder descargarlo, lo que limita su uso a usuarios que completen ese paso.
+El checkpoint cuenta con 2.018.511.234 parámetros totales (aproximadamente 2.000 millones) y un repositorio de 14,4 GB, lo que sugiere pesos en precisión de 16 bits o similar. El acceso está restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de poder descargarlo, lo que limita su uso a usuarios que completen ese paso.
 
 La relevancia de este modelo es limitada en el momento de redactar esta ficha: solo registra 4 descargas y 0 likes, no tiene pipeline declarado, no se han publicado idiomas soportados ni documentación técnica, y no se han difundido resultados de benchmarks. Se trata, por tanto, de un artefacto de investigación o de un experimento personal más que de un modelo listo para producción.
 
@@ -74,7 +74,7 @@ La comparación es orientativa: los tres modelos de referencia cuentan con docum
 ## Limitaciones y advertencias
 
 - Ausencia total de model card: no se documentan arquitectura, datos de entrenamiento, tokenizer ni plantilla de chat, lo que dificulta su uso correcto.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace; no es un modelo de descarga inmediata.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face; no es un modelo de descarga inmediata.
 - Sin benchmarks: no hay evidencia de calidad en MMLU, HumanEval, GSM8K ni otras tareas estándar.
 - Riesgo de alucinación: desconocido, pero previsible en un modelo de 2.000 M sin documentación de alineación.
 - Sesgos: no evaluados; al no conocerse la composición del corpus, no se pueden anticipar sesgos de género, idioma o dominio.
@@ -86,5 +86,5 @@ La comparación es orientativa: los tres modelos de referencia cuentan con docum
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-w13-kx-native-w20-s130
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-w13-kx-native-w20-s130
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

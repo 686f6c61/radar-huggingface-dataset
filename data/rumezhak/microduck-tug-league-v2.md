@@ -92,7 +92,7 @@ El autor advierte que 30 partidos por oponente es una muestra modesta y que las 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rumezhak/microduck-tug-league-v2
+- Modelo en Hugging Face: https://huggingface.co/rumezhak/microduck-tug-league-v2
 - Modelo base: https://huggingface.co/greecree/microduck-tug-of-war-tug-super-v8
 - Entrada anterior del autor: https://huggingface.co/rumezhak/tug-league-v1
 - Microduck Arena (Space): https://huggingface.co/spaces/pollen-robotics/microduck-arena

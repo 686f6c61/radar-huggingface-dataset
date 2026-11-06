@@ -2,9 +2,9 @@
 
 ## Resumen
 
-exp-b7 es un modelo publicado por el usuario yyuncong en HuggingFace, distribuido bajo la libreria transformers y con pesos en formato safetensors. El repositorio declara la pipeline de feature-extraction, lo que indica que su uso previsto principal es la extraccion de representaciones (embeddings) mas que la generacion de texto abierta, aunque esta afirmacion se basa unicamente en la etiqueta declarada y no en documentacion adicional. El modelo cuenta con 15.750.057.456 parametros reales (aproximadamente 15,75 mil millones), segun los datos de los ficheros safetensors, y el repositorio ocupa 31,5 GB, un tamano coherente con pesos en precision bf16/fp16.
+exp-b7 es un modelo publicado por el usuario yyuncong en Hugging Face, distribuido bajo la libreria transformers y con pesos en formato safetensors. El repositorio declara la pipeline de feature-extraction, lo que indica que su uso previsto principal es la extraccion de representaciones (embeddings) mas que la generacion de texto abierta, aunque esta afirmacion se basa unicamente en la etiqueta declarada y no en documentacion adicional. El modelo cuenta con 15.750.057.456 parametros reales (aproximadamente 15,75 mil millones), segun los datos de los ficheros safetensors, y el repositorio ocupa 31,5 GB, un tamano coherente con pesos en precision bf16/fp16.
 
-La relevancia de esta ficha es limitada por la escasez de informacion publica: no se dispone de model card detallada, datos de entrenamiento, resultados de benchmarks ni idiomas soportados. Ademas, el acceso al modelo esta restringido (gated): es necesario aceptar condiciones en HuggingFace antes de poder descargar los pesos. En el momento de redactar esta ficha el repositorio registra 0 descargas y 0 likes, y la etiqueta `cosmos3_omni` junto con `custom_code` sugiere que requiere codigo personalizado para cargarse, sin que se pueda confirmar a que familia de modelos pertenece.
+La relevancia de esta ficha es limitada por la escasez de informacion publica: no se dispone de model card detallada, datos de entrenamiento, resultados de benchmarks ni idiomas soportados. Ademas, el acceso al modelo esta restringido (gated): es necesario aceptar condiciones en Hugging Face antes de poder descargar los pesos. En el momento de redactar esta ficha el repositorio registra 0 descargas y 0 likes, y la etiqueta `cosmos3_omni` junto con `custom_code` sugiere que requiere codigo personalizado para cargarse, sin que se pueda confirmar a que familia de modelos pertenece.
 
 Por tanto, esta ficha debe interpretarse como una descripcion de lo estrictamente verificable a partir de los metadatos disponibles, marcando explicitamente como "no disponible" todo aquello que no se ha podido confirmar.
 
@@ -22,7 +22,7 @@ Por tanto, esta ficha debe interpretarse como una descripcion de lo estrictament
 | Formato de pesos | safetensors |
 | Pipeline declarada | feature-extraction |
 | Libreria | transformers, con `custom_code` |
-| Acceso | restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Tamano del repositorio | 31,5 GB |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion y actualizacion | 2026-09-12 |
@@ -73,13 +73,13 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Cabe en GPU de consumo: en int4 podria caber en una RTX 4090 o RTX 3090 de 24 GB, siempre que existan pesos cuantizados (no anunciados) o se realice cuantizacion en el momento de la carga. En bf16 no cabe en ninguna GPU de consumo actual.
 - Opciones de despliegue: al ser un modelo de transformers con `custom_code`, la via principal es la propia libreria `transformers` con `trust_remote_code=True`. El soporte en vLLM, llama.cpp, Ollama o TGI no esta confirmado y depende de que la arquitectura sea compatible; no hay ficheros GGUF en el repositorio.
 - Latencia y throughput: no disponibles. No se han publicado mediciones y dependeran en gran medida de la arquitectura final, del hardware y del modo de ejecucion.
-- Nota operativa: el acceso esta restringido, por lo que cualquier despliegue requiere primero la aprobacion de acceso en HuggingFace.
+- Nota operativa: el acceso esta restringido, por lo que cualquier despliegue requiere primero la aprobacion de acceso en Hugging Face.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| yyuncong/exp-b7 | 15,75 B | no disponible | openmdw-1.1 | Gated en HuggingFace |
+| yyuncong/exp-b7 | 15,75 B | no disponible | openmdw-1.1 | Gated en Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion suficiente para identificar modelos comparables de forma rigurosa. No se conocen la tarea exacta, el contexto ni los benchmarks de exp-b7, por lo que cualquier comparacion cuantitativa seria especulativa.
@@ -87,7 +87,7 @@ No se dispone de informacion suficiente para identificar modelos comparables de 
 ## Limitaciones y advertencias
 
 - Ausencia casi total de documentacion: no hay model card, paper ni blog asociados, lo que impide conocer el entrenamiento, los datos y las limitaciones reales del modelo.
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace antes de descargar los pesos.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de descargar los pesos.
 - Licencia no estandar: la licencia declarada es openmdw-1.1, complementada con la etiqueta `license:other`. Antes de cualquier uso comercial es imprescindible revisar el texto completo de la licencia, ya que sus terminos no se detallan en la informacion disponible.
 - Requiere codigo personalizado: la etiqueta `custom_code` implica ejecutar codigo del autor (`trust_remote_code=True`), lo que supone un riesgo de seguridad y mantenimiento en entornos de produccion.
 - Riesgo de alucinacion: no evaluable, ya que no se confirma que el modelo realice generacion de texto.
@@ -99,6 +99,6 @@ No se dispone de informacion suficiente para identificar modelos comparables de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yyuncong/exp-b7
+- Hugging Face: https://huggingface.co/yyuncong/exp-b7
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada. Los resultados devueltos por dicha busqueda correspondian a un sitio no relacionado con el modelo y no se incluyen por no ser pertinentes.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`basmulder87/efficientformer-demo` es un repositorio de demostracion publicado en HuggingFace que empaqueta una implementacion propia y reducida de una EfficientFormer orientada a tareas de aprendizaje contrastivo. El autor lo describe explicitamente como un punto de partida reproducible y **no** como una release de un modelo entrenado: el fichero `model.safetensors` contiene un checkpoint de inicializacion valido para pruebas de humo, sin pesos derivados de un entrenamiento real ni resultados de benchmarks asociados.
+`basmulder87/efficientformer-demo` es un repositorio de demostracion publicado en Hugging Face que empaqueta una implementacion propia y reducida de una EfficientFormer orientada a tareas de aprendizaje contrastivo. El autor lo describe explicitamente como un punto de partida reproducible y **no** como una release de un modelo entrenado: el fichero `model.safetensors` contiene un checkpoint de inicializacion valido para pruebas de humo, sin pesos derivados de un entrenamiento real ni resultados de benchmarks asociados.
 
 El modelo es de escala minima: la metadata de safetensors registra 33.088 parametros totales, lo que lo situa en el rango de unos 130 KB en fp32. La configuracion de arquitectura declarada incluye atencion flash, fusion de bajo rango (`low rank`), activacion GELU y normalizacion GroupNorm sobre un backbone EfficientFormer en variante `tiny`. El repositorio incluye ademas `config.json` con los ajustes de arquitectura, `training_args.json` con una receta de experimento por defecto (SGD con schedule polinomial) y `eval.py` como artefacto principal.
 
@@ -78,7 +78,7 @@ No se han proporcionado modelos comparables en la informacion disponible. Los re
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| basmulder87/efficientformer-demo | 33.088 | no disponible | MIT | HuggingFace | Checkpoint de inicializacion, sin entrenar |
+| basmulder87/efficientformer-demo | 33.088 | no disponible | MIT | Hugging Face | Checkpoint de inicializacion, sin entrenar |
 | Alternativa 1 | no disponible | no disponible | no disponible | no disponible | Sin datos en la informacion proporcionada |
 | Alternativa 2 | no disponible | no disponible | no disponible | no disponible | Sin datos en la informacion proporcionada |
 
@@ -97,5 +97,5 @@ No se han proporcionado modelos comparables en la informacion disponible. Los re
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/basmulder87/efficientformer-demo
+- Hugging Face: https://huggingface.co/basmulder87/efficientformer-demo
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada; los resultados obtenidos corresponden a servicios de mapas y direcciones, sin relacion con el modelo.

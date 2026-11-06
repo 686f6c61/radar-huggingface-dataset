@@ -90,7 +90,7 @@ Comparacion con las otras variantes cuantizadas del mismo modelo base, que son l
 
 | Variante | Metodo | Media de benchmarks | Perplejidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AWQ-8bit (este repo) | AWQ PTQ, W8A16 | 56,98 (100,3 %) | 1,1508 | Apache-2.0 | HuggingFace, vLLM |
+| AWQ-8bit (este repo) | AWQ PTQ, W8A16 | 56,98 (100,3 %) | 1,1508 | Apache-2.0 | Hugging Face, vLLM |
 | FP8-dynamic | FP8 | 57,55 (101,3 %) | no disponible | Apache-2.0 (modelo base) | no disponible en esta ficha |
 | NVFP4A16 | NVFP4 | 55,15 (97,1 %) | no disponible | Apache-2.0 (modelo base) | no disponible en esta ficha |
 | NVFP4 | NVFP4 | 52,55 (92,5 %) | no disponible | Apache-2.0 (modelo base) | no disponible en esta ficha |
@@ -111,7 +111,7 @@ Comparacion con modelos de otros autores: no disponible en la informacion propor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/axteam/gemma-4-12B-it-AWQ-8bit
+- Modelo en Hugging Face: https://huggingface.co/axteam/gemma-4-12B-it-AWQ-8bit
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
 - lm-evaluation-harness: https://github.com/EleutherAI/lm-evaluation-harness

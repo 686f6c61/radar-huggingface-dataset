@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `JohnCheng/gemma-4-26b-it-sp-oc-ep1` es una variante afinada de la familia Gemma 4 de Google DeepMind, publicada por el usuario JohnCheng en HuggingFace. Se trata de un modelo multimodal de tipo imagen-texto a texto, con una arquitectura Mixture of Experts (MoE) de 25.8 mil millones de parámetros totales y aproximadamente 4 mil millones de activos por token, según las especificaciones de la serie Gemma 4 26B A4B. El pipeline `image-text-to-text` indica que acepta tanto texto como imágenes como entrada y genera texto como salida.
+El modelo `JohnCheng/gemma-4-26b-it-sp-oc-ep1` es una variante afinada de la familia Gemma 4 de Google DeepMind, publicada por el usuario JohnCheng en Hugging Face. Se trata de un modelo multimodal de tipo imagen-texto a texto, con una arquitectura Mixture of Experts (MoE) de 25.8 mil millones de parámetros totales y aproximadamente 4 mil millones de activos por token, según las especificaciones de la serie Gemma 4 26B A4B. El pipeline `image-text-to-text` indica que acepta tanto texto como imágenes como entrada y genera texto como salida.
 
-La relevancia de este modelo radica en que pertenece a la generación más reciente de modelos abiertos de Google DeepMind, diseñados para tareas de razonamiento, generación de código y agentes multimodales. La variante concreta publicada por JohnCheng añade un ajuste específico (indicado por el sufijo `sp-oc-ep1`) sobre la versión instruct, aunque los detalles exactos de ese ajuste no están documentados en la información disponible. El acceso al repositorio está restringido y requiere aceptar las condiciones de uso en HuggingFace, lo que limita su evaluación inmediata.
+La relevancia de este modelo radica en que pertenece a la generación más reciente de modelos abiertos de Google DeepMind, diseñados para tareas de razonamiento, generación de código y agentes multimodales. La variante concreta publicada por JohnCheng añade un ajuste específico (indicado por el sufijo `sp-oc-ep1`) sobre la versión instruct, aunque los detalles exactos de ese ajuste no están documentados en la información disponible. El acceso al repositorio está restringido y requiere aceptar las condiciones de uso en Hugging Face, lo que limita su evaluación inmediata.
 
 ## Especificaciones tecnicas
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 - VRAM estimada para inferencia: al tratarse de un modelo de 26B parametros en precision fp16, se requieren aproximadamente 52 GB de VRAM para cargar los pesos completos. Con cuantizacion (por ejemplo, 8 bits) se reduce a unos 26 GB, y con 4 bits a unos 13 GB, aunque no se dispone de ficheros cuantizados en el repositorio.
 - GPU recomendadas: para inferencia en fp16 se recomienda una NVIDIA A100 (80 GB) o H100 (80 GB). Para cuantizacion 8 bits, una RTX 4090 (24 GB) podria ser insuficiente; se necesitaria al menos una A6000 (48 GB) o una GPU con 32 GB de VRAM.
 - En consumer GPU: no es viable en GPU de consumo de 16 GB o menos, ni siquiera con cuantizacion agresiva, debido al tamao del modelo.
-- Opciones de despliegue: vLLM, TGI, Transformers de HuggingFace, y llama.cpp (si se generan ficheros GGUF). No se proporcionan ficheros listos para Ollama.
+- Opciones de despliegue: vLLM, TGI, Transformers de Hugging Face, y llama.cpp (si se generan ficheros GGUF). No se proporcionan ficheros listos para Ollama.
 - Latencia y throughput: no disponibles. Se espera un rendimiento moderado gracias a la arquitectura MoE, que reduce el coste por token en comparacion con un modelo denso de 26B.
 
 ## Comparativa con modelos similares
@@ -68,7 +68,7 @@ La comparativa se limita a la serie Gemma 4 y alternativas MoE o densas de taman
 
 ## Limitaciones y advertencias
 
-- Licencia no disponible: no se especifican los terminos de uso, lo que impide garantizar su uso comercial o derivado. El acceso es restringido y requiere aceptar condiciones en HuggingFace.
+- Licencia no disponible: no se especifican los terminos de uso, lo que impide garantizar su uso comercial o derivado. El acceso es restringido y requiere aceptar condiciones en Hugging Face.
 - Alucinaciones: como todo modelo generativo, puede producir respuestas plausibles pero incorrectas, especialmente en dominios especializados.
 - Sesgos: no se ha documentado ningun estudio de sesgos para esta variante concreta; la serie base puede presentar sesgos de genero, raza o idioma.
 - Limitaciones de contexto: la longitud de contexto no se ha especificado, por lo que no se puede garantizar el comportamiento en conversaciones muy largas.
@@ -77,7 +77,7 @@ La comparativa se limita a la serie Gemma 4 y alternativas MoE o densas de taman
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JohnCheng/gemma-4-26b-it-sp-oc-ep1
+- Repositorio Hugging Face: https://huggingface.co/JohnCheng/gemma-4-26b-it-sp-oc-ep1
 - Modelo base experimental de JohnCheng: https://huggingface.co/JohnCheng/gemma-4-26b-it-exp
 - Guia de Gemma 4 26B en gemma4.wiki: https://www.gemma4.wiki/models/gemma-4-26b
 - Documentacion oficial de Gemma 4 en DeepMind: https://deepmind.google/models/gemma/gemma-4/

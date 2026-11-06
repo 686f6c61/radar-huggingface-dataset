@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hgzdkoo/taxiv4` es un agente de aprendizaje por refuerzo entrenado con el algoritmo Q-Learning tabular sobre el entorno `Taxi-v4` de Gymnasium. Lo publica el usuario `hgzdkoo` en HuggingFace y se distribuye como un artefacto serializado (`q-learning.pkl`) junto con la referencia al identificador del entorno necesario para reconstruir la política aprendida.
+`hgzdkoo/taxiv4` es un agente de aprendizaje por refuerzo entrenado con el algoritmo Q-Learning tabular sobre el entorno `Taxi-v4` de Gymnasium. Lo publica el usuario `hgzdkoo` en Hugging Face y se distribuye como un artefacto serializado (`q-learning.pkl`) junto con la referencia al identificador del entorno necesario para reconstruir la política aprendida.
 
 No se trata de un modelo de lenguaje ni de una red neuronal profunda: es una implementación propia de Q-Learning, tal y como declaran las etiquetas del repositorio (`q-learning`, `custom-implementation`, `reinforcement-learning`) y la propia model card. El problema que resuelve es acotado: aprender una política de navegación y recogida/entrega en el entorno Taxi, un mundo de estados y acciones discretos.
 
@@ -42,7 +42,7 @@ No hay informacion sobre numero de episodios, semillas, ni sobre si se emplearon
 
 - Docencia de aprendizaje por refuerzo: sirve como ejemplo ya entrenado de Q-Learning para ilustrar la diferencia entre metodos tabulares y metodos con aproximacion de funcion en un entorno de recompensa dispersa.
 - Reproduccion de experimentos: el artefacto permite cargar una politica y volver a ejecutar episodios en `Taxi-v4` con `gym.make(model["env_id"])`, comparando la recompensa obtenida con la declarada (7,56 +/- 2,71).
-- Verificacion de pipelines de RL en HuggingFace: util para validar el flujo `load_from_hub` -> entorno -> evaluacion dentro de una infraestructura de experimentacion propia.
+- Verificacion de pipelines de RL en Hugging Face: util para validar el flujo `load_from_hub` -> entorno -> evaluacion dentro de una infraestructura de experimentacion propia.
 - Linea base (baseline) en estudios comparativos: al ser un agente tabular sencillo, sirve como punto de partida frente a metodos como DQN, que deberian superarlo de forma clara en `Taxi-v4`.
 - Pruebas de integracion de agentes en simuladores: encaja en test suites que comprueban que un agente entrenado se serializa, se publica y se vuelve a cargar sin perdida de politica.
 - Experimentos de sensibilidad a hiperparametros: si se dispone del codigo de entrenamiento del autor, el artefacto permite comparar configuraciones alternativas de Q-Learning sobre el mismo entorno.
@@ -67,7 +67,7 @@ Las siguientes estimaciones se derivan del tipo de artefacto declarado (Q-Learni
 - Compatibilidad con GPU de consumo: irrelevante; cabe en cualquier CPU, incluidos entornos sin GPU (portatiles, contenedores pequenos, CI).
 - Opciones de despliegue: carga directa del `.pkl` con `load_from_hub`/`pickle` y ejecucion sobre `gym.make`; tambien es exportable a una estructura propia (por ejemplo, diccionario o array) si se inspecciona el artefacto. Los servidores de inferencia tipo vLLM, TGI, llama.cpp u Ollama no son aplicables, porque estan orientados a modelos de lenguaje y no a agentes tabulares.
 - Latencia y throughput: no disponible. En un agente con busqueda en tabla, la latencia por decision es del orden de microsegundos en CPU, pero este dato no esta confirmado en la informacion proporcionada.
-- Almacenamiento: el repositorio ocupa 0,0 GB segun HuggingFace, lo que sugiere un artefacto de muy pocos kilobytes.
+- Almacenamiento: el repositorio ocupa 0,0 GB segun Hugging Face, lo que sugiere un artefacto de muy pocos kilobytes.
 
 ## Comparativa con modelos similares
 
@@ -89,6 +89,6 @@ A modo de contexto, y sin cifras asociadas: la categoria comparable seria la de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hgzdkoo/taxiv4
+- Modelo en Hugging Face: https://huggingface.co/hgzdkoo/taxiv4
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada.
 - Resultados de busqueda web: las referencias recuperadas no guardan relacion con el modelo (contenido no tecnico y fuera de ambito), por lo que no se incluyen como enlaces relevantes.

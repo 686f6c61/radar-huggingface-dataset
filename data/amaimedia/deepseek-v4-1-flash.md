@@ -93,10 +93,10 @@ No se dispone de datos verificados de otros modelos comparables de la misma cate
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta ficha: https://huggingface.co/AMAImedia/DeepSeek-V4.1-Flash
+- Repositorio Hugging Face de esta ficha: https://huggingface.co/AMAImedia/DeepSeek-V4.1-Flash
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Informe técnico (PDF citado en la model card): https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf
-- Organización DeepSeek AI en HuggingFace: https://huggingface.co/deepseek-ai
+- Organización DeepSeek AI en Hugging Face: https://huggingface.co/deepseek-ai
 - Sitio web de DeepSeek: https://www.deepseek.com/
 - Chat de DeepSeek: https://chat.deepseek.com/
 - Twitter/X de DeepSeek AI: https://twitter.com/deepseek_ai

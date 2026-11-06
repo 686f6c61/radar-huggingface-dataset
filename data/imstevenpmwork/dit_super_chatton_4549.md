@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Este modelo es una politica de robotica denominada `dit_super_chatton_4549`, desarrollada por `imstevenpmwork` y publicada en HuggingFace bajo licencia Apache 2.0. Se trata de un Multi-Task Diffusion Transformer (DiT) que extiende la Diffusion Policy original con un transformer de difusion de gran tamano y condicionamiento por texto e imagenes, permitiendo aprendizaje multitarea de habilidades de manipulacion robotica. El modelo esta entrenado sobre el dataset `imstevenpmwork/super_chatton`, que contiene 100 episodios y 73.842 fotogramas a 30 FPS de una tarea de pick-and-place con cubos de colores.
+Este modelo es una politica de robotica denominada `dit_super_chatton_4549`, desarrollada por `imstevenpmwork` y publicada en Hugging Face bajo licencia Apache 2.0. Se trata de un Multi-Task Diffusion Transformer (DiT) que extiende la Diffusion Policy original con un transformer de difusion de gran tamano y condicionamiento por texto e imagenes, permitiendo aprendizaje multitarea de habilidades de manipulacion robotica. El modelo esta entrenado sobre el dataset `imstevenpmwork/super_chatton`, que contiene 100 episodios y 73.842 fotogramas a 30 FPS de una tarea de pick-and-place con cubos de colores.
 
-La arquitectura DiT soporta objetivos de difusion y flow-matching, y aunque el paper de referencia menciona ~450M parametros, esta implementacion concreta tiene 248.855.302 parametros en formato safetensors, con un tamano de repositorio de 1.0 GB. El modelo se integra con el framework LeRobot de HuggingFace, lo que facilita su entrenamiento, evaluacion y despliegue en robots compatibles, concretamente el robot tipo `omx_follower`.
+La arquitectura DiT soporta objetivos de difusion y flow-matching, y aunque el paper de referencia menciona ~450M parametros, esta implementacion concreta tiene 248.855.302 parametros en formato safetensors, con un tamano de repositorio de 1.0 GB. El modelo se integra con el framework LeRobot de Hugging Face, lo que facilita su entrenamiento, evaluacion y despliegue en robots compatibles, concretamente el robot tipo `omx_follower`.
 
 ## Especificaciones tecnicas
 
@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/imstevenpmwork/dit_super_chatton_4549
+- Hugging Face: https://huggingface.co/imstevenpmwork/dit_super_chatton_4549
 - Dataset: https://huggingface.co/datasets/imstevenpmwork/super_chatton
 - Paper: https://huggingface.co/papers/2507.05331
 - LeRobot repositorio: https://github.com/huggingface/lerobot

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`arlenecc/potion-multilingual-128M-onnx-int4` es una conversión a ONNX con cuantización INT4 del modelo de embeddings `potion-multilingual-128M`, publicado por el usuario `arlenecc` en HuggingFace. Se trata de un modelo de representaciones vectoriales (embeddings) derivado de la familia Potion de MinishLab, que emplea la técnica Model2Vec: destilación de un transformer de gran tamaño en una tabla estática de embeddings, lo que elimina por completo el mecanismo de atención y permite inferencias extremadamente rápidas sin GPU.
+`arlenecc/potion-multilingual-128M-onnx-int4` es una conversión a ONNX con cuantización INT4 del modelo de embeddings `potion-multilingual-128M`, publicado por el usuario `arlenecc` en Hugging Face. Se trata de un modelo de representaciones vectoriales (embeddings) derivado de la familia Potion de MinishLab, que emplea la técnica Model2Vec: destilación de un transformer de gran tamaño en una tabla estática de embeddings, lo que elimina por completo el mecanismo de atención y permite inferencias extremadamente rápidas sin GPU.
 
 El modelo resuelve el problema de generar embeddings multilingües de frases y documentos con un coste computacional mínimo, adecuado para búsqueda semántica, clustering y sistemas de recuperación en entornos con recursos limitados o de bajas latencias. El repositorio ocupa aproximadamente 0,1 GB y se distribuye bajo licencia MIT, lo que facilita su uso comercial sin restricciones adicionales.
 
@@ -85,7 +85,7 @@ La comparación con el modelo original de MinishLab es la más relevante: esta c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/arlenecc/potion-multilingual-128M-onnx-int4
+- Hugging Face: https://huggingface.co/arlenecc/potion-multilingual-128M-onnx-int4
 - Modelo original (referencia): https://huggingface.co/minishlab/potion-multilingual-128M
 - Repositorio Model2Vec: https://github.com/MinishLab/model2vec
 - Documentación de ONNX Runtime: https://onnxruntime.ai/

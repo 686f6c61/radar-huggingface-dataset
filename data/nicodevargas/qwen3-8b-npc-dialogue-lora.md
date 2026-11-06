@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3-8b-npc-dialogue-lora | 43,6 M (adaptador) + 8B base | no disponible | LoRA para dialogo de PNJ con salida JSON | Apache 2.0 | HuggingFace (24 descargas) |
-| Qwen3-8B base | 8B | no disponible | Modelo generalista denso | Apache 2.0 | HuggingFace |
+| qwen3-8b-npc-dialogue-lora | 43,6 M (adaptador) + 8B base | no disponible | LoRA para dialogo de PNJ con salida JSON | Apache 2.0 | Hugging Face (24 descargas) |
+| Qwen3-8B base | 8B | no disponible | Modelo generalista denso | Apache 2.0 | Hugging Face |
 | Alternativas especializadas en dialogo de juego | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre otros adaptadores publicos equivalentes para dialogo de PNJ con salida estructurada, por lo que la comparativa se limita al modelo base.
@@ -91,6 +91,6 @@ No se dispone de informacion sobre otros adaptadores publicos equivalentes para 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/NicoDeVargas/qwen3-8b-npc-dialogue-lora
+- Hugging Face: https://huggingface.co/NicoDeVargas/qwen3-8b-npc-dialogue-lora
 - Repositorio de entrenamiento y metricas: https://github.com/NicoDeVargas/qwen3-npc-dialogue-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B

@@ -67,9 +67,9 @@ Los unicos datos de rendimiento aportados por el autor son de inferencia, no de 
 
 | Modelo | Precision / tamano | Hardware objetivo | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| JoyFusionAI/Qwen-Image-2.1-MLX-4bit | 4-bit MLX, transformer 3,8 GiB, total ~20 GB | Apple Silicon | Qwen Research (no comercial) | HuggingFace, via mflux |
-| Qwen/Qwen-Image-2.1 (base) | bf16, 7B en el componente DiT | CUDA / GPUs de gran memoria | Qwen Research (no comercial) | HuggingFace |
-| mlx-community/Qwen-Image-2.1-MLX-4bit | 4-bit MLX | Apple Silicon | no disponible en la informacion | HuggingFace |
+| JoyFusionAI/Qwen-Image-2.1-MLX-4bit | 4-bit MLX, transformer 3,8 GiB, total ~20 GB | Apple Silicon | Qwen Research (no comercial) | Hugging Face, via mflux |
+| Qwen/Qwen-Image-2.1 (base) | bf16, 7B en el componente DiT | CUDA / GPUs de gran memoria | Qwen Research (no comercial) | Hugging Face |
+| mlx-community/Qwen-Image-2.1-MLX-4bit | 4-bit MLX | Apple Silicon | no disponible en la informacion | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo (calidad de imagen, FID, CLIP score u otras metricas) entre estas variantes en la informacion proporcionada.
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativo (calidad de imagen, FID, CLIP 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JoyFusionAI/Qwen-Image-2.1-MLX-4bit
+- Modelo en Hugging Face: https://huggingface.co/JoyFusionAI/Qwen-Image-2.1-MLX-4bit
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1/blob/main/LICENSE
 - Repositorio de mflux: https://github.com/mflux-community/mflux

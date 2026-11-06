@@ -88,12 +88,12 @@ No se dispone de informacion sobre modelos directamente comparables en la docume
 - No debe usarse de forma aislada para autorizar acciones destructivas ni para declarar trabajo critico como completado.
 - Fuera de alcance: juicios generales de completitud de tareas, correccion de codigo, aplicacion de politicas de seguridad, clasificacion de documentos no CLI y clasificacion general de lenguaje natural.
 - No debe desplegarse en produccion sin evaluacion de dominio previa.
-- El repositorio de HuggingFace muestra 0 descargas y 0 likes en el momento de la consulta, lo que indica adopcion practicamente nula.
+- El repositorio de Hugging Face muestra 0 descargas y 0 likes en el momento de la consulta, lo que indica adopcion practicamente nula.
 - La licencia Apache-2.0 permite uso comercial de los pesos, pero las advertencias del autor sobre validacion siguen aplicando.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BalanovAN/verdict
+- Modelo en Hugging Face: https://huggingface.co/BalanovAN/verdict
 - Codigo, datos y benchmarks: https://github.com/Balanov/verdict
 - Pagina de investigacion y demo local en navegador: https://balanov.pro/research/verdict/
 - Cita BibTeX (segun model card): Balanov, Anton (2026), "Verdict: Tiny Semantic Outcome Verification for AI Agents".

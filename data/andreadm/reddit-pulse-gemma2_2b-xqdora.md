@@ -76,8 +76,8 @@ No se han proporcionado modelos comparables en la información disponible, ni re
 
 | Modelo | Tipo | Tarea | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| andreadm/reddit-pulse-gemma2_2b-xqdora | Adaptador PEFT xQDoRA+ con cabeza de clasificación | Clasificación direccional de expectativas de inflación (3 clases) | No disponible (base google/gemma-2-2b) | No disponible | gemma | HuggingFace, 0 descargas y 0 me gusta |
-| google/gemma-2-2b | Transformer decoder-only generativo | Generación de texto general | No disponible en la información proporcionada | No disponible en la información proporcionada | gemma | HuggingFace |
+| andreadm/reddit-pulse-gemma2_2b-xqdora | Adaptador PEFT xQDoRA+ con cabeza de clasificación | Clasificación direccional de expectativas de inflación (3 clases) | No disponible (base google/gemma-2-2b) | No disponible | gemma | Hugging Face, 0 descargas y 0 me gusta |
+| google/gemma-2-2b | Transformer decoder-only generativo | Generación de texto general | No disponible en la información proporcionada | No disponible en la información proporcionada | gemma | Hugging Face |
 
 Alternativas específicas para clasificación de textos económicos o de inflación: no disponible en la información proporcionada.
 
@@ -98,7 +98,7 @@ Alternativas específicas para clasificación de textos económicos o de inflaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/andreadm/reddit-pulse-gemma2_2b-xqdora
+- Modelo en Hugging Face: https://huggingface.co/andreadm/reddit-pulse-gemma2_2b-xqdora
 - Modelo base: https://huggingface.co/google/gemma-2-2b
 - Código de ajuste fino e inferencia: https://github.com/andrea-dm/reddit-pulse
 - Trabajo de referencia: Del Monaco, A., Longo, L., Marcucci, J. y Tafani, I. (2026), "Reddit's 'pulse' on US inflation: forecasting with large language models", Journal of Applied Econometrics (en prensa); versión de trabajo en Banca d'Italia, Questioni di Economia e Finanza n.º 1028, junio de 2026, doi:10.32057/0.QEF.2026.1028

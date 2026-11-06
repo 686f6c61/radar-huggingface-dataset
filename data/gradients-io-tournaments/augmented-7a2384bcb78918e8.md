@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `gradients-io-tournaments/augmented-7a2384bcb78918e8` es un modelo de lenguaje de aproximadamente 3.085 millones de parámetros, subido a HuggingFace por la organización `gradients-io-tournaments`. Está etiquetado como `transformers`, `safetensors`, `qwen2`, `text-generation` y `conversational`, lo que indica que se trata de un modelo de generación de texto basado en la arquitectura Transformers y probablemente derivado de la familia Qwen2. Los pesos se distribuyen en formato `safetensors` y el repositorio ocupa 6.2 GB, lo que sugiere que los pesos están almacenados en precisión FP16 o BF16.
+El modelo `gradients-io-tournaments/augmented-7a2384bcb78918e8` es un modelo de lenguaje de aproximadamente 3.085 millones de parámetros, subido a Hugging Face por la organización `gradients-io-tournaments`. Está etiquetado como `transformers`, `safetensors`, `qwen2`, `text-generation` y `conversational`, lo que indica que se trata de un modelo de generación de texto basado en la arquitectura Transformers y probablemente derivado de la familia Qwen2. Los pesos se distribuyen en formato `safetensors` y el repositorio ocupa 6.2 GB, lo que sugiere que los pesos están almacenados en precisión FP16 o BF16.
 
 Sin embargo, la información disponible es muy limitada: la model card es una plantilla generada automáticamente que no incluye datos sobre el desarrollador, la licencia, los idiomas soportados, el proceso de entrenamiento ni los benchmarks. El modelo no tiene descargas ni likes en el momento de la consulta, y no se han encontrado publicaciones, papers ni repositorios asociados en la búsqueda web. Su relevancia potencial radica en que, por su tamaño reducido, podría ejecutarse en hardware de consumo, pero la ausencia de documentación impide evaluar su rendimiento y su idoneidad para casos de uso concretos.
 
@@ -64,5 +64,5 @@ No disponible. Al no conocer el modelo base exacto ni los datos de entrenamiento
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gradients-io-tournaments/augmented-7a2384bcb78918e8
+- Hugging Face: https://huggingface.co/gradients-io-tournaments/augmented-7a2384bcb78918e8
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web.

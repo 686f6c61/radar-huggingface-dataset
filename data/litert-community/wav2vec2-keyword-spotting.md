@@ -86,7 +86,7 @@ La comparativa directa con otros modelos de KWS on-device (como Google Speech Co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/litert-community/wav2vec2-keyword-spotting
+- Modelo en Hugging Face: https://huggingface.co/litert-community/wav2vec2-keyword-spotting
 - Modelo base original: https://huggingface.co/superb/wav2vec2-base-superb-ks
 - Repositorio de muestras LiteRT (compiled_model_api/audio_classification): https://github.com/google-ai-edge/litert-samples
 - README espejo en GitHub: https://github.com/john-rocky/LiteRT-Models/blob/main/wav2vec2-kws/README.md

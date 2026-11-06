@@ -88,7 +88,7 @@ Nota: los datos de los modelos de OpenAI y del modelo base de TheStage AI proced
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/seamon67/thewhisper-large-v3-turbo
+- Repositorio en Hugging Face: https://huggingface.co/seamon67/thewhisper-large-v3-turbo
 - Modelo base (TheStage AI): https://huggingface.co/TheStageAI/thewhisper-large-v3-turbo
 - Modelo original de OpenAI: https://huggingface.co/openai/whisper-large-v3-turbo
 - Proyecto GitHub TheWhisper: https://github.com/TheStageAI/TheWhisper/tree/main

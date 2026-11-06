@@ -25,7 +25,7 @@ Sin embargo, la relevancia práctica está limitada por la ausencia total de val
 | Ultima actualizacion | 2026-09-11 |
 | Tamano del repositorio | 2,4 GB |
 | Descargas / likes | 0 / 0 |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 
 Nota sobre el tamano: 2,4 GB para 596 M de parametros equivale aproximadamente a 4 bytes por parametro, lo que sugiere pesos en fp32 (o una combinacion de ficheros que incluye copias en mayor precision). Es una estimacion derivada del tamano del repositorio, no un dato confirmado por el autor.
 
@@ -76,7 +76,7 @@ Los datos de contexto y licencia de los modelos comparados son de conocimiento g
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3-0.6B-Mini-Reasoning-Coder-V1.1 | 0,596 B | no disponible | MIT | HuggingFace, 0 descargas |
+| Qwen3-0.6B-Mini-Reasoning-Coder-V1.1 | 0,596 B | no disponible | MIT | Hugging Face, 0 descargas |
 | Qwen3-0.6B (base de la familia) | ~0,6 B | 32.768 tokens segun documentacion publica de Qwen, no verificada aqui | Apache-2.0 (no verificado en esta busqueda) | Ampliamente disponible |
 | Qwen2.5-Coder-0.5B | ~0,5 B | 32.768 tokens segun documentacion publica, no verificada aqui | Apache-2.0 (no verificado en esta busqueda) | Ampliamente disponible, con versiones GGUF |
 | SmolLM2-360M | ~0,36 B | 8.192 tokens segun documentacion publica, no verificada aqui | Apache-2.0 (no verificado en esta busqueda) | Ampliamente disponible, con versiones GGUF |
@@ -99,7 +99,7 @@ Frente a estas alternativas, la ventaja diferencial de este modelo es unicamente
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kazako5er/Qwen3-0.6B-Mini-Reasoning-Coder-V1.1
+- Modelo en Hugging Face: https://huggingface.co/kazako5er/Qwen3-0.6B-Mini-Reasoning-Coder-V1.1
 - Repositorio del modelo base Qwen3-0.6B: no disponible en la informacion proporcionada
 - Paper, blog o demo del ajuste fino: no disponible
 - Resultados de la busqueda web: no relevantes (devolvieron paginas de un servicio de instalacion de software sin relacion con el modelo)

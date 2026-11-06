@@ -2,7 +2,7 @@
 
 ## Resumen
 
-avatx-krea2-lora es un adaptador LoRA (Low-Rank Adaptation) para el modelo de generación de imágenes Krea 2, publicado por el usuario chantzlane90 en HuggingFace. No es un modelo de lenguaje ni un modelo base: es un ajuste fino de bajo rango que se aplica sobre Krea 2 para reproducir de forma consistente un personaje ficticio concreto, denominado Ava Thompson (descrita por el autor como personaje adulto, mayor de 21 años, no real). La activación del personaje se realiza mediante la palabra clave (trigger) `avatx`.
+avatx-krea2-lora es un adaptador LoRA (Low-Rank Adaptation) para el modelo de generación de imágenes Krea 2, publicado por el usuario chantzlane90 en Hugging Face. No es un modelo de lenguaje ni un modelo base: es un ajuste fino de bajo rango que se aplica sobre Krea 2 para reproducir de forma consistente un personaje ficticio concreto, denominado Ava Thompson (descrita por el autor como personaje adulto, mayor de 21 años, no real). La activación del personaje se realiza mediante la palabra clave (trigger) `avatx`.
 
 El adaptador se entrenó con la herramienta fal-ai/krea-2-trainer durante 1000 pasos con rango (rank) 32, y sus claves fueron remapeadas al prefijo `diffusion_model.*` de ComfyUI para poder utilizarse en el ecosistema Sogni. El repositorio ocupa 0,2 GB, lo que es coherente con un adaptador LoRA de rango medio sobre un modelo de difusión de gran tamaño.
 
@@ -77,7 +77,7 @@ No disponible. No se han proporcionado datos de otros adaptadores LoRA de person
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chantzlane90/avatx-krea2-lora
+- Hugging Face: https://huggingface.co/chantzlane90/avatx-krea2-lora
 - Herramienta de entrenamiento citada: fal-ai/krea-2-trainer
 - Ecosistema de despliegue mencionado: ComfyUI (prefijo `diffusion_model.*`)
 - Plataforma de despliegue mencionada: Sogni

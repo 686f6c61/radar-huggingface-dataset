@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `models4world/zephyr-nook-21` es un adaptador LoRA publicado en HuggingFace por el usuario `models4world` el 24 de agosto de 2026. Está diseñado para generación de texto (pipeline `text-generation`) y se presenta como un fine-tuning basado en el modelo `models4world/maple-signal-64`, del cual no se dispone de información pública. El repositorio tiene un tamaño de 1,9 GB y utiliza la librería PEFT (Parameter-Efficient Fine-Tuning), lo que indica que se trata de un adaptador de bajo rango que modifica parcialmente los pesos del modelo base.
+El modelo `models4world/zephyr-nook-21` es un adaptador LoRA publicado en Hugging Face por el usuario `models4world` el 24 de agosto de 2026. Está diseñado para generación de texto (pipeline `text-generation`) y se presenta como un fine-tuning basado en el modelo `models4world/maple-signal-64`, del cual no se dispone de información pública. El repositorio tiene un tamaño de 1,9 GB y utiliza la librería PEFT (Parameter-Efficient Fine-Tuning), lo que indica que se trata de un adaptador de bajo rango que modifica parcialmente los pesos del modelo base.
 
 La model card del autor está completamente vacía, con todas las secciones marcadas como "[More Information Needed]". No se especifican arquitectura, número de parámetros, datos de entrenamiento, licencia, idiomas ni benchmarks. El modelo acumula 0 descargas y 0 likes en el momento de la consulta, lo que sugiere que es una publicación reciente o de baja difusión. Dada la ausencia total de documentación técnica, cualquier evaluación de sus capacidades reales resulta imposible sin acceso al modelo base o a experimentación directa.
 
@@ -54,6 +54,6 @@ No disponible. No se conocen modelos comparables de la misma categoría, ya que 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/models4world/zephyr-nook-21)
-- [Perfil del autor en HuggingFace](https://huggingface.co/models4world)
+- [Modelo en Hugging Face](https://huggingface.co/models4world/zephyr-nook-21)
+- [Perfil del autor en Hugging Face](https://huggingface.co/models4world)
 - [Paper citado en tags (Lacoste et al., 2019)](https://arxiv.org/abs/1910.09700)

@@ -81,11 +81,11 @@ No se dispone de datos de otros modelos comparables de video-to-video condiciona
 - No hay informacion sobre idiomas soportados en el prompt ni sobre sensibilidad a prompts en castellano.
 - No se publican resultados de benchmarks, por lo que la calidad relativa frente a alternativas no esta cuantificada.
 - El modelo acumula 0 descargas y 13 likes: no hay evidencia de uso en produccion ni de validacion por terceros.
-- La busqueda web realizada no devolvio resultados relevantes sobre este modelo; todos los datos proceden de la model card y del repositorio de HuggingFace.
+- La busqueda web realizada no devolvio resultados relevantes sobre este modelo; todos los datos proceden de la model card y del repositorio de Hugging Face.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Enderfga/SolarRenderer
+- Hugging Face: https://huggingface.co/Enderfga/SolarRenderer
 - Pagina del proyecto: https://enderfga.cn/SolarRenderer
 - Demo online (Space): https://huggingface.co/spaces/Enderfga/SolarRenderer
 - Paper (arXiv 2610.28630): https://arxiv.org/abs/2610.28630

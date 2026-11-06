@@ -89,8 +89,8 @@ La comparacion se establece con el modelo upstream y con alternativas de tamano 
 
 ## Enlaces
 
-- Repositorio HuggingFace del paquete: https://huggingface.co/RuyiAI/buddy-deepseek-r1-a210-w4g32
-- Modelo upstream en HuggingFace: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
+- Repositorio Hugging Face del paquete: https://huggingface.co/RuyiAI/buddy-deepseek-r1-a210-w4g32
+- Modelo upstream en Hugging Face: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 - Proyecto Buddy Compiler (runtime y toolchain): https://github.com/buddy-compiler/buddy-mlir
 - Script de instalacion de `buddy-cli`: https://raw.githubusercontent.com/buddy-compiler/buddy-mlir/main/scripts/install_buddy_cli.sh
 - Paper o blog tecnico del paquete: no disponible

@@ -72,8 +72,8 @@ Sobre las 197 facturas sintéticas de test: 75,6 % con todos los campos crítico
 
 | Modelo | Parámetros | Contexto | Campos críticos correctos (60 facturas) | Precisión de campo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| InvoiceLM (este adaptador) | 4B + LoRA 33 M | No disponible | 73,3 % | 96,3 % | Apache 2.0 | HuggingFace, MLX local |
-| Qwen3-VL-4B-Instruct-4bit sin entrenar | 4B | No disponible | 21,7 % | 85,7 % | Apache 2.0 (modelo base) | HuggingFace |
+| InvoiceLM (este adaptador) | 4B + LoRA 33 M | No disponible | 73,3 % | 96,3 % | Apache 2.0 | Hugging Face, MLX local |
+| Qwen3-VL-4B-Instruct-4bit sin entrenar | 4B | No disponible | 21,7 % | 85,7 % | Apache 2.0 (modelo base) | Hugging Face |
 | Qwen3-VL-4B-Instruct (Ollama) | 4B | No disponible | 63,3 % | 93,5 % | Apache 2.0 (modelo base) | Ollama |
 | Qwen2.5-VL-7B (Ollama) | 7B | No disponible | 60,0 % | 94,1 % | Apache 2.0 (modelo base) | Ollama |
 
@@ -92,7 +92,7 @@ Sobre las 197 facturas sintéticas de test: 75,6 % con todos los campos crítico
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Divya52/invoicelm-qwen3vl-4b-lora
+- Modelo en Hugging Face: https://huggingface.co/Divya52/invoicelm-qwen3vl-4b-lora
 - Dataset de entrenamiento: https://huggingface.co/datasets/Divya52/indian-gst-invoices
 - Código, validadores, API y benchmark: https://github.com/divyabasavraj/invoice-lm
 - Modelo base: https://huggingface.co/mlx-community/Qwen3-VL-4B-Instruct-4bit

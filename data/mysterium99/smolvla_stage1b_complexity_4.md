@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| smolvla_stage1b_complexity_4 (este) | 450M | no disponible | apache-2.0 | HuggingFace, LeRobot | Ajuste fino especializado en hardware de ferretería |
-| lerobot/smolvla_base | no disponible | no disponible | apache-2.0 | HuggingFace, LeRobot | Checkpoint base del que deriva este modelo; propósito general |
+| smolvla_stage1b_complexity_4 (este) | 450M | no disponible | apache-2.0 | Hugging Face, LeRobot | Ajuste fino especializado en hardware de ferretería |
+| lerobot/smolvla_base | no disponible | no disponible | apache-2.0 | Hugging Face, LeRobot | Checkpoint base del que deriva este modelo; propósito general |
 | OpenVLA | no disponible | no disponible | no disponible | no disponible | VLA de referencia en la literatura; no se dispone de datos comparativos en la información proporcionada |
 | π0 (pi-zero) | no disponible | no disponible | no disponible | no disponible | Modelo VLA de Physical Intelligence; sin datos comparativos disponibles |
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mysterium99/smolvla_stage1b_complexity_4
+- Modelo en Hugging Face: https://huggingface.co/mysterium99/smolvla_stage1b_complexity_4
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Paper SmolVLA: https://huggingface.co/papers/2506.01844
 - Dataset de entrenamiento: https://huggingface.co/datasets/manufacturing_level_4

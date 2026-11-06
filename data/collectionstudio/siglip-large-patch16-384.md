@@ -30,7 +30,7 @@ El modelo tiene 652.478.466 parametros (~652 M) y un peso de repositorio de 2,6 
 
 SigLIP es un modelo de dos torres. La torre de vision es un Vision Transformer que divide la imagen de 384x384 en parches de 16x16, los proyecta a embeddings y los procesa con atencion global; la torre de texto es un transformer que codifica la secuencia de tokens (rellenada a 64 posiciones). Ambas torres proyectan a un espacio comun y la similitud se calcula como producto escalar. La diferencia clave con CLIP es que cada par imagen-texto se evalua con una funcion sigmoide independiente en lugar de un softmax sobre el lote completo, lo que hace que el coste de memoria no dependa de una matriz de similitudes NxN y permite lotes mucho mayores.
 
-Los datos de entrenamiento son los pares imagen-texto en ingles del dataset WebLI (Chen et al., 2023; arXiv:2209.06794). El modelo se entreno con 16 chips TPU-v4 durante tres dias, segun la informacion de la model card. El preprocesado consiste en redimensionar la imagen a 384x384, normalizar por canal RGB y tokenizar el texto con padding a 64 tokens. No se documenta en la informacion disponible el uso de RLHF, DPO ni fases de ajuste por preferencias, algo esperable en un modelo contrastivo que no genera texto. La model card indica explicitamente que el equipo de SigLIP no escribio una model card propia y que la version publicada en HuggingFace fue redactada por el equipo de Hugging Face; el repositorio aqui descrito es a su vez una copia de terceros (CollectionStudio), por lo que conviene verificar los pesos contra el checkpoint oficial de Google.
+Los datos de entrenamiento son los pares imagen-texto en ingles del dataset WebLI (Chen et al., 2023; arXiv:2209.06794). El modelo se entreno con 16 chips TPU-v4 durante tres dias, segun la informacion de la model card. El preprocesado consiste en redimensionar la imagen a 384x384, normalizar por canal RGB y tokenizar el texto con padding a 64 tokens. No se documenta en la informacion disponible el uso de RLHF, DPO ni fases de ajuste por preferencias, algo esperable en un modelo contrastivo que no genera texto. La model card indica explicitamente que el equipo de SigLIP no escribio una model card propia y que la version publicada en Hugging Face fue redactada por el equipo de Hugging Face; el repositorio aqui descrito es a su vez una copia de terceros (CollectionStudio), por lo que conviene verificar los pesos contra el checkpoint oficial de Google.
 
 ## Capacidades
 
@@ -97,7 +97,7 @@ Las cifras de modelos comparables no proceden de la informacion proporcionada en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CollectionStudio/siglip-large-patch16-384
+- Modelo en Hugging Face: https://huggingface.co/CollectionStudio/siglip-large-patch16-384
 - Checkpoint original: https://huggingface.co/google/siglip-large-patch16-384
 - Paper de SigLIP: https://arxiv.org/abs/2303.15343
 - Paper del dataset WebLI: https://arxiv.org/abs/2209.06794

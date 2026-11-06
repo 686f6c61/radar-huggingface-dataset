@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `cem-sahin/atlas-llama-3.1-8b` es un ajuste fino (fine-tuning) del modelo base `unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit`, que a su vez es una versión cuantizada en 4 bits del Llama 3.1 8B Instruct de Meta. El autor, cem-sahin, ha publicado este modelo en HuggingFace con licencia Apache 2.0 y soporte exclusivo para inglés. Según la model card, el entrenamiento se realizó con la librería Unsloth y la biblioteca TRL de HuggingFace, lo que permitió un entrenamiento aproximadamente dos veces más rápido que un flujo convencional.
+El modelo `cem-sahin/atlas-llama-3.1-8b` es un ajuste fino (fine-tuning) del modelo base `unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit`, que a su vez es una versión cuantizada en 4 bits del Llama 3.1 8B Instruct de Meta. El autor, cem-sahin, ha publicado este modelo en Hugging Face con licencia Apache 2.0 y soporte exclusivo para inglés. Según la model card, el entrenamiento se realizó con la librería Unsloth y la biblioteca TRL de Hugging Face, lo que permitió un entrenamiento aproximadamente dos veces más rápido que un flujo convencional.
 
 El modelo está orientado a tareas de generación de texto y conversación, heredando las capacidades del Llama 3.1 8B Instruct, que incluyen razonamiento, generación de código y soporte multilingüe (aunque el modelo solo declara inglés). El repositorio tiene un tamaño de 5.0 GB y está preparado para su uso con `transformers` y `text-generation-inference`. A pesar de su reciente publicación (agosto de 2026), no registra descargas ni valoraciones, lo que sugiere que es un proyecto personal o experimental sin validación comunitaria.
 
@@ -21,7 +21,7 @@ El modelo está orientado a tareas de generación de texto y conversación, here
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura Llama 3.1, un transformer decoder-only con atención causal. El modelo base `unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit` es una versión cuantizada en 4 bits del Llama 3.1 8B Instruct, optimizada para reducir el uso de memoria durante el entrenamiento y la inferencia. El fine-tuning se realizó con la librería Unsloth, que acelera el entrenamiento mediante kernels optimizados, y con la biblioteca TRL de HuggingFace, que proporciona herramientas para el ajuste fino con técnicas como Supervised Fine-Tuning (SFT) o Reinforcement Learning from Human Feedback (RLHF). No se especifica el conjunto de datos utilizado, el número de tokens de entrenamiento ni si se aplicó alguna técnica de alineación adicional. Tampoco se detalla si se empleó decodificación especulativa u otras innovaciones técnicas más allá de la optimización de Unsloth.
+El modelo se basa en la arquitectura Llama 3.1, un transformer decoder-only con atención causal. El modelo base `unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit` es una versión cuantizada en 4 bits del Llama 3.1 8B Instruct, optimizada para reducir el uso de memoria durante el entrenamiento y la inferencia. El fine-tuning se realizó con la librería Unsloth, que acelera el entrenamiento mediante kernels optimizados, y con la biblioteca TRL de Hugging Face, que proporciona herramientas para el ajuste fino con técnicas como Supervised Fine-Tuning (SFT) o Reinforcement Learning from Human Feedback (RLHF). No se especifica el conjunto de datos utilizado, el número de tokens de entrenamiento ni si se aplicó alguna técnica de alineación adicional. Tampoco se detalla si se empleó decodificación especulativa u otras innovaciones técnicas más allá de la optimización de Unsloth.
 
 ## Capacidades
 
@@ -57,9 +57,9 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| cem-sahin/atlas-llama-3.1-8b | 8B (heredado) | 128K (heredado) | Apache 2.0 | HuggingFace |
-| meta-llama/Llama-3.1-8B-Instruct | 8B | 128K | Llama 3.1 Community License | HuggingFace, NVIDIA NIM, etc. |
-| unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit | 8B (cuantizado 4-bit) | 128K | Llama 3.1 Community License | HuggingFace |
+| cem-sahin/atlas-llama-3.1-8b | 8B (heredado) | 128K (heredado) | Apache 2.0 | Hugging Face |
+| meta-llama/Llama-3.1-8B-Instruct | 8B | 128K | Llama 3.1 Community License | Hugging Face, NVIDIA NIM, etc. |
+| unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit | 8B (cuantizado 4-bit) | 128K | Llama 3.1 Community License | Hugging Face |
 
 El modelo de cem-sahin es un fine-tuning del modelo de Unsloth, que a su vez es una versión cuantizada del Llama 3.1 Instruct original. No se dispone de datos de rendimiento que permitan comparar la calidad del ajuste fino con el modelo base. La principal diferencia es la licencia: mientras que el modelo base de Meta usa la licencia comunitaria de Llama 3.1 (que tiene restricciones para uso comercial en ciertos casos), este fine-tuning se publica bajo Apache 2.0, lo que facilita su uso comercial sin las cláusulas de la licencia de Meta. Sin embargo, hay que verificar si el uso del modelo base cuantizado de Unsloth implica alguna restricción adicional.
 
@@ -74,7 +74,7 @@ El modelo de cem-sahin es un fine-tuning del modelo de Unsloth, que a su vez es 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/cem-sahin/atlas-llama-3.1-8b)
+- [Modelo en Hugging Face](https://huggingface.co/cem-sahin/atlas-llama-3.1-8b)
 - [Modelo base: unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit](https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit)
 - [Llama 3.1 8B original de Meta](https://huggingface.co/meta-llama/Llama-3.1-8B)
 - [Página de Llama 3 en Meta Developer](https://developer.meta.com/ai/models/llama-3/)

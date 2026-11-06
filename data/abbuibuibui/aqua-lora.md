@@ -108,7 +108,7 @@ Frente a otros LoRA de personaje de la familia Illustrious/NoobAI: datos no disp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abbuibuibui/Aqua-Lora
+- Modelo en Hugging Face: https://huggingface.co/abbuibuibui/Aqua-Lora
 - Dataset de entrenamiento: https://huggingface.co/datasets/abbuibuibui/Aqua-Dataset
 - Evaluacion horizontal en chino: `evaluation/横向测评记录.md` (dentro del repositorio)
 - README en chino: `README_zh.md` (dentro del repositorio)

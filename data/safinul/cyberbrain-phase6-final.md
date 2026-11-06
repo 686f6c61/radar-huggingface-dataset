@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CYBERBRAIN-PHASE6-FINAL es un ajuste por preentrenamiento continuado (continual pre-training) del modelo base Qwen2.5-Coder-0.5B, desarrollado por el usuario Safinul y publicado en HuggingFace. El modelo está especializado en análisis de binarios e ingeniería inversa: desensamblado con Capstone y Unicorn, parsing de formatos ELF/PE con LIEF y radare2, y generación de scripts de explotación con pwntools. El problema que aborda es la falta de modelos pequeños y especializados que dominen las APIs concretas de estas herramientas, un nicho donde los modelos generalistas suelen producir código incorrecto o desactualizado.
+CYBERBRAIN-PHASE6-FINAL es un ajuste por preentrenamiento continuado (continual pre-training) del modelo base Qwen2.5-Coder-0.5B, desarrollado por el usuario Safinul y publicado en Hugging Face. El modelo está especializado en análisis de binarios e ingeniería inversa: desensamblado con Capstone y Unicorn, parsing de formatos ELF/PE con LIEF y radare2, y generación de scripts de explotación con pwntools. El problema que aborda es la falta de modelos pequeños y especializados que dominen las APIs concretas de estas herramientas, un nicho donde los modelos generalistas suelen producir código incorrecto o desactualizado.
 
 Arquitectura transformer decoder-only de la familia Qwen2, con 494.032.768 parámetros totales (aproximadamente 0,5 mil millones). El repositorio ocupa 3,8 GB, lo que sugiere pesos en FP32 (el autor indica entrenamiento en FP32 puro). El modelo solo declara soporte para inglés y se distribuye bajo licencia Apache 2.0.
 
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CYBERBRAIN-PHASE6-FINAL | 494 M | no disponible | Análisis de binarios / reversing | Apache 2.0 | HuggingFace |
-| Qwen2.5-Coder-0.5B | 494 M | 32.768 tokens (según model card del base) | Código general | Apache 2.0 | HuggingFace |
-| Qwen2.5-Coder-1.5B | 1.500 M | 32.768 tokens (según model card del base) | Código general | Apache 2.0 | HuggingFace |
-| CodeLlama-7B | 7.000 M | 16.384 tokens | Código general | Llama 2 Community | HuggingFace |
+| CYBERBRAIN-PHASE6-FINAL | 494 M | no disponible | Análisis de binarios / reversing | Apache 2.0 | Hugging Face |
+| Qwen2.5-Coder-0.5B | 494 M | 32.768 tokens (según model card del base) | Código general | Apache 2.0 | Hugging Face |
+| Qwen2.5-Coder-1.5B | 1.500 M | 32.768 tokens (según model card del base) | Código general | Apache 2.0 | Hugging Face |
+| CodeLlama-7B | 7.000 M | 16.384 tokens | Código general | Llama 2 Community | Hugging Face |
 
 La comparación con el modelo base es la más directa: CYBERBRAIN sacrifica amplitud de conocimiento general por especialización en un dominio concreto, manteniendo el mismo tamaño y licencia. Frente a Qwen2.5-Coder-1.5B, el modelo especializado tiene menos capacidad bruta pero requiere la mitad de recursos. No se dispone de benchmarks que permitan comparar rendimiento en tareas de reversing.
 
@@ -89,7 +89,7 @@ La comparación con el modelo base es la más directa: CYBERBRAIN sacrifica ampl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Safinul/CYBERBRAIN-PHASE6-FINAL
+- Modelo en Hugging Face: https://huggingface.co/Safinul/CYBERBRAIN-PHASE6-FINAL
 - Modelo base Qwen2.5-Coder-0.5B: https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B
 - Repositorio Capstone: https://github.com/capstone-engine/capstone
 - Repositorio Unicorn: https://github.com/unicorn-engine/unicorn

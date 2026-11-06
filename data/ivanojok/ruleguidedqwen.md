@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RuleGuidedQwen es un ajuste fino mediante LoRA sobre un modelo de la familia Qwen, publicado por el usuario IvanOjok en HuggingFace. Su proposito concreto es la traduccion a Braille grado 2 (Braille contraido) conforme al estandar UEB (Unified English Braille), combinando el modelo neuronal con reglas de produccion que fuerzan el cumplimiento estricto de la normativa Braille. Segun la model card, este enfoque hibrido supera a un modelo puramente neuronal en metricas de cumplimiento UEB: compliance, capitalizacion, puntuacion, numericos y precision sobre palabras fuera de vocabulario (OOV), que en conjunto conforman el recall del sistema.
+RuleGuidedQwen es un ajuste fino mediante LoRA sobre un modelo de la familia Qwen, publicado por el usuario IvanOjok en Hugging Face. Su proposito concreto es la traduccion a Braille grado 2 (Braille contraido) conforme al estandar UEB (Unified English Braille), combinando el modelo neuronal con reglas de produccion que fuerzan el cumplimiento estricto de la normativa Braille. Segun la model card, este enfoque hibrido supera a un modelo puramente neuronal en metricas de cumplimiento UEB: compliance, capitalizacion, puntuacion, numericos y precision sobre palabras fuera de vocabulario (OOV), que en conjunto conforman el recall del sistema.
 
 El dato mas relevante disponible es el recuento de parametros: 494.032.768 (aproximadamente 0,5B). Este tamano, junto con la etiqueta `rule_guided_braille_qwen` y el tamano del repositorio (1,0 GB), es coherente con un modelo de la serie Qwen de ~0,5B parametros distribuido en safetensors, aunque la model card no identifica explicitamente el checkpoint base ni la variante exacta. El modelo se publica bajo licencia Apache 2.0.
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks numericos en la informacion disponi
 - VRAM estimada en int8: aproximadamente 0,5 GB de pesos; en int4, en torno a 0,25-0,3 GB (requiere cuantizacion externa, no hay versiones publicadas).
 - GPU recomendadas: cualquier GPU con 4 GB o mas de VRAM es suficiente, incluidas GTX 1650, RTX 3050, RTX 3060, RTX 4060 y superiores; tambien A100, H100 o L4, aunque estan sobredimensionadas para este tamano.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU de consumo moderna, e incluso en CPU con memoria RAM suficiente (menos de 2 GB en fp16).
-- Opciones de despliegue: transformers de HuggingFace de forma nativa; llama.cpp u Ollama requeririan convertir los pesos a GGUF, conversion no publicada por el autor; vLLM y TGI son viables en fp16 siempre que se registre la arquitectura base correcta.
+- Opciones de despliegue: transformers de Hugging Face de forma nativa; llama.cpp u Ollama requeririan convertir los pesos a GGUF, conversion no publicada por el autor; vLLM y TGI son viables en fp16 siempre que se registre la arquitectura base correcta.
 - Latencia y throughput estimados: no disponibles. Por el tamano del modelo, se espera baja latencia en GPU de consumo, pero no hay mediciones publicadas.
 - Nota: al no declararse el checkpoint base exacto, la integracion en frameworks de inferencia puede requerir verificar la configuracion del modelo antes de desplegarlo.
 
@@ -96,7 +96,7 @@ No se dispone de modelos comparables con cifras publicas verificables en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IvanOjok/RuleGuidedQwen
+- Modelo en Hugging Face: https://huggingface.co/IvanOjok/RuleGuidedQwen
 - Model card del autor: incluida en la pagina anterior (unica fuente primaria disponible)
 - Paper o publicacion tecnica: no disponible
 - Repositorio de codigo: no disponible

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FineCat-NLI v2 Extra-Extra Small (xxs) es un modelo de inferencia de lenguaje natural (NLI) en formato cross-encoder, desarrollado por el usuario dleemiller y publicado en HuggingFace. Parte del modelo base jhu-clsp/ettin-encoder-17m, un encoder basado en arquitectura ModernBERT de tan solo 17 millones de parametros, y esta afinado con destilacion de conocimiento sobre los datasets FineCat-NLI y FineCat-NLI-Reason.
+FineCat-NLI v2 Extra-Extra Small (xxs) es un modelo de inferencia de lenguaje natural (NLI) en formato cross-encoder, desarrollado por el usuario dleemiller y publicado en Hugging Face. Parte del modelo base jhu-clsp/ettin-encoder-17m, un encoder basado en arquitectura ModernBERT de tan solo 17 millones de parametros, y esta afinado con destilacion de conocimiento sobre los datasets FineCat-NLI y FineCat-NLI-Reason.
 
 El modelo resuelve un problema muy concreto: clasificar si una premisa (texto) implica, contradice o es neutral respecto a una hipotesis, devolviendo probabilidades calibradas. Esta capacidad lo convierte en un bloque constructivo versatil para tareas como clasificacion zero-shot, enrutado de intenciones, verificacion de grounding en sistemas RAG, deteccion de alucinaciones y moderacion de contenidos.
 
@@ -100,7 +100,7 @@ Comparativas cuantitativas exactas en los mismos benchmarks no estan incluidas e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dleemiller/finecat-nli-v2-xxs
+- Modelo en Hugging Face: https://huggingface.co/dleemiller/finecat-nli-v2-xxs
 - Demo en vivo (Space): https://huggingface.co/spaces/dleemiller/finecat-nli
 - OpenNLI leaderboard: https://huggingface.co/spaces/dleemiller/open-nli-leaderboard
 - Script de evaluacion del leaderboard: https://huggingface.co/datasets/dleemiller/OpenNLI-Leaderboard/blob/main/evaluate.py

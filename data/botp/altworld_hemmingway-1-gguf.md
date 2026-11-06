@@ -86,7 +86,7 @@ No disponible. La informacion proporcionada no incluye resultados de benchmarks 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/botp/Altworld_Hemmingway-1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/botp/Altworld_Hemmingway-1-GGUF
 - Modelo base: https://huggingface.co/Altworld/Hemmingway-1
 - Repositorio de cuantizacion referenciado en la model card: https://huggingface.co/bartowski/Altworld_Hemmingway-1-GGUF
 - Archivo recomendado Q4_K_M: https://huggingface.co/bartowski/Altworld_Hemmingway-1-GGUF/blob/main/Altworld_Hemmingway-1-Q4_K_M.gguf

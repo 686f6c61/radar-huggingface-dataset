@@ -71,7 +71,7 @@ No se dispone de información suficiente para comparar con otros modelos de fing
 
 ## Enlaces
 
-- HuggingFace: [yuuu94/PrismWF](https://huggingface.co/yuuu94/PrismWF)
+- Hugging Face: [yuuu94/PrismWF](https://huggingface.co/yuuu94/PrismWF)
 - GitHub: [PrismWF repository](https://github.com/yyyyu120/PrismWF)
 - Artículo arXiv: [2603.21117](https://arxiv.org/abs/2603.21117)
 - Versión HTML del artículo: [arXiv HTML](https://arxiv.org/html/2603.21117v1)

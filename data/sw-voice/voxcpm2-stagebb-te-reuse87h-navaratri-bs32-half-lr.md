@@ -2,7 +2,7 @@
 
 ## Resumen
 
-voxcpm2-stageBB-te-reuse87h-navaratri-bs32-half-lr es un modelo de síntesis de voz (text-to-speech) publicado por el usuario sw-voice en HuggingFace. Se trata de un ajuste fino completo (full fine-tune) del modelo sw-voice/voxcpm2-stageA-te-reuse87h-en2x-baselm3e-4-acc16-1ep, entrenado con el entrenador oficial de VoxCPM. El modelo está orientado a la generación de voz en inglés, telugu y kannada, y su nombre indica que forma parte de una campaña de experimentos de investigación (stage B) centrada en la reutilización de temas musicales/devocionales (swamiji-navaratri).
+voxcpm2-stageBB-te-reuse87h-navaratri-bs32-half-lr es un modelo de síntesis de voz (text-to-speech) publicado por el usuario sw-voice en Hugging Face. Se trata de un ajuste fino completo (full fine-tune) del modelo sw-voice/voxcpm2-stageA-te-reuse87h-en2x-baselm3e-4-acc16-1ep, entrenado con el entrenador oficial de VoxCPM. El modelo está orientado a la generación de voz en inglés, telugu y kannada, y su nombre indica que forma parte de una campaña de experimentos de investigación (stage B) centrada en la reutilización de temas musicales/devocionales (swamiji-navaratri).
 
 Con 2.290.004.544 parámetros (aproximadamente 2,29 mil millones) y un repositorio de 9,5 GB en formato safetensors, el modelo se posiciona en la gama media de los sistemas TTS neuronales. Su relevancia es fundamentalmente investigadora: se publica con licencia Apache 2.0, cero descargas y cero likes en el momento de la consulta, y su model card lo etiqueta explícitamente como "(research)". No es un modelo de producción ni un lanzamiento comercial, sino un artefacto reproducible de un pipeline de experimentación interna.
 
@@ -76,7 +76,7 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sw-voice/voxcpm2-stageBB-te-reuse87h-navaratri-bs32-half-lr
+- Modelo en Hugging Face: https://huggingface.co/sw-voice/voxcpm2-stageBB-te-reuse87h-navaratri-bs32-half-lr
 - Modelo base: https://huggingface.co/sw-voice/voxcpm2-stageA-te-reuse87h-en2x-baselm3e-4-acc16-1ep
 - Dataset de telugu: sw-voice/swamiji-navaratri-telugu-reuse-themes (referenciado en la model card; no se proporciona URL directa)
 - Dataset de kannada: sw-voice/swamiji-navaratri-kannada-reuse-themes (referenciado en la model card; no se proporciona URL directa)

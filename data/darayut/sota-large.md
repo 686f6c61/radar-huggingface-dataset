@@ -2,7 +2,7 @@
 
 ## Resumen
 
-sota-large es un reconocedor de voz CTC de 203,6 millones de parámetros para jemer (km) e inglés (en), publicado por el usuario Darayut en HuggingFace. No es un modelo entrenado desde cero: se obtiene aplicando poda estructurada al modelo `omniASR_CTC_1B` de Meta (975M parámetros, licencia Apache 2.0), del que se elimina el 80% de las unidades de los mecanismos de atención y de las capas feed-forward del encoder. El resultado conserva la arquitectura de encoder CTC estilo wav2vec2, el extractor convolucional de características y la capa de salida del modelo original, pero con anchos distintos en cada capa.
+sota-large es un reconocedor de voz CTC de 203,6 millones de parámetros para jemer (km) e inglés (en), publicado por el usuario Darayut en Hugging Face. No es un modelo entrenado desde cero: se obtiene aplicando poda estructurada al modelo `omniASR_CTC_1B` de Meta (975M parámetros, licencia Apache 2.0), del que se elimina el 80% de las unidades de los mecanismos de atención y de las capas feed-forward del encoder. El resultado conserva la arquitectura de encoder CTC estilo wav2vec2, el extractor convolucional de características y la capa de salida del modelo original, pero con anchos distintos en cada capa.
 
 El interés del modelo está en la relación entre tamaño y precisión en un idioma de bajos recursos: con una quinta parte de los parámetros del profesor original, mejora el CER en jemer sobre el conjunto DDD-Test (1,77% frente a 5,95% del modelo de Meta y 2,47% del profesor afinado). El coste computacional cae de 50,3 a 12,3 GMAC por segundo de audio. En inglés, en cambio, la poda degrada claramente el rendimiento: el WER en LibriSpeech test-other pasa de 8,21% a 16,73%. Es, por tanto, un modelo especializado en jemer con capacidad secundaria de transcripción en inglés.
 
@@ -79,10 +79,10 @@ Observaciones publicadas por el autor: en jemer supera tanto al profesor sin pod
 
 | Modelo | Parametros | GMAC / s audio | CER DDD-Test (km) | WER LibriSpeech test-other | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| sota-large | 204M | 12,3 | 1,77 | 16,73 | Apache 2.0 | HuggingFace, código propio |
-| `omniASR-CTC-1B-km-en` (profesor) | 975M | 50,3 | 2,47 | 8,21 | Apache 2.0 | HuggingFace |
-| `omniASR_CTC_1B` (original de Meta) | 975M | 50,3 | 5,95 | 8,87 | Apache 2.0 | HuggingFace |
-| `Darayut/sota-base` (variante pequena) | No disponible | No disponible | No disponible | No disponible | Apache 2.0 | HuggingFace |
+| sota-large | 204M | 12,3 | 1,77 | 16,73 | Apache 2.0 | Hugging Face, código propio |
+| `omniASR-CTC-1B-km-en` (profesor) | 975M | 50,3 | 2,47 | 8,21 | Apache 2.0 | Hugging Face |
+| `omniASR_CTC_1B` (original de Meta) | 975M | 50,3 | 5,95 | 8,87 | Apache 2.0 | Hugging Face |
+| `Darayut/sota-base` (variante pequena) | No disponible | No disponible | No disponible | No disponible | Apache 2.0 | Hugging Face |
 
 La comparación relevante es interna a la familia: sota-large ofrece entre 4 y 5 veces menos coste computacional que el modelo de 975M a cambio de perder precisión en inglés y ganarla en jemer. `sota-base` se menciona como la otra talla de la pareja, pero no se han proporcionado sus especificaciones ni resultados.
 
@@ -102,7 +102,7 @@ La comparación relevante es interna a la familia: sota-large ofrece entre 4 y 5
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Darayut/sota-large
+- Modelo en Hugging Face: https://huggingface.co/Darayut/sota-large
 - Variante de menor tamano: https://huggingface.co/Darayut/sota-base
 - Profesor afinado: https://huggingface.co/Darayut/omniASR-CTC-1B-km-en
 - Paper de la receta de poda (*Fine-tune Before Structured Pruning*): https://arxiv.org/abs/2505.24111

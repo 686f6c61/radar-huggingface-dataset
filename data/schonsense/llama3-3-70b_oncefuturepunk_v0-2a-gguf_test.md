@@ -39,14 +39,14 @@ Respecto al entrenamiento, la model card no incluye numero de tokens, composicio
 - Soporte de agentes y razonamiento multi-paso: no documentado.
 - Capacidades multilingues: no documentadas; el campo de idiomas esta vacio.
 - Modo thinking, vision o audio: no disponible.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que el formato GGUF puede servirse mediante la infraestructura de endpoints de HuggingFace.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que el formato GGUF puede servirse mediante la infraestructura de endpoints de Hugging Face.
 
 ## Casos de uso
 
 - Evaluacion comparativa de fine-tunes comunitarios: cargar el GGUF en llama.cpp u Ollama y medir perplejidad y calidad conversacional frente al Llama 3.3 base, para decidir si el ajuste aporta valor.
 - Pruebas de cuantizacion a gran escala: usar el repositorio como banco de pruebas para medir latencia y consumo de VRAM de un modelo de 70 B en distintos niveles de cuantizacion GGUF.
 - Experimentacion con despliegue en endpoints: aprovechar el tag `endpoints_compatible` para validar pipelines de serving con un modelo de 70 B antes de invertir en uno con licencia clara.
-- Investigacion sobre trazabilidad de artefactos: estudiar como se propaga la informacion (o su ausencia) en cadenas de fine-tune y cuantizacion publicadas en HuggingFace.
+- Investigacion sobre trazabilidad de artefactos: estudiar como se propaga la informacion (o su ausencia) en cadenas de fine-tune y cuantizacion publicadas en Hugging Face.
 - Generacion de texto conversacional en entornos controlados: uso interno y no comercial, siempre que se asuma la ausencia de licencia explicita y se valide la salida manualmente.
 - Benchmarking de infraestructura: medir throughput de un modelo de 70 B en GPUs de 80 GB con el fin de dimensionar clusters de inferencia.
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 - VRAM estimada: no disponible con precision, al no conocerse los niveles de cuantizacion del repositorio. Como referencia para un modelo denso de 70 B: Q4_K_M requiere aproximadamente 40-42 GB, Q5_K_M en torno a 48-50 GB, Q6_K cerca de 58 GB y Q8_0 alrededor de 75 GB.
 - GPU recomendadas para cuantizaciones altas: A100 80 GB, H100 80 GB, H200 141 GB o configuraciones multi-GPU (2x RTX 4090 de 24 GB o 2x A6000 de 48 GB) con reparto de capas.
 - GPU de consumo: una RTX 4090 de 24 GB no puede alojar el modelo completo; solo es viable con cuantizaciones muy agresivas (Q2_K, en torno a 26-28 GB) y descarga parcial a RAM, con degradacion notable de calidad y velocidad.
-- Opciones de despliegue: llama.cpp, Ollama, llama-cpp-python, y servidores compatibles con GGUF como text-generation-webui o el endpoint de HuggingFace. vLLM y TGI requieren pesos en safetensors, no incluidos en este repositorio.
+- Opciones de despliegue: llama.cpp, Ollama, llama-cpp-python, y servidores compatibles con GGUF como text-generation-webui o el endpoint de Hugging Face. vLLM y TGI requieren pesos en safetensors, no incluidos en este repositorio.
 - Latencia y throughput: no disponibles. En una A100 80 GB con Q4_K_M cabe esperar decenas de tokens por segundo, pero no hay mediciones publicadas para este artefacto concreto.
 
 ## Comparativa con modelos similares
@@ -86,7 +86,7 @@ La comparativa deja patente la diferencia de madurez: frente a alternativas con 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/schonsense/Llama3.3-70B_oncefuturepunk_v0.2a-GGUF_test
+- Repositorio Hugging Face: https://huggingface.co/schonsense/Llama3.3-70B_oncefuturepunk_v0.2a-GGUF_test
 - Modelo base del fine-tune: https://huggingface.co/schonsense/Llama3.3-70B_oncefuturepunk_v0.2a
 - Modelo original de Meta: https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct
 - Licencia Llama 3.3: https://llama.meta.com/llama3_3/license/

@@ -12,7 +12,7 @@ Se trata de un modelo con cero descargas y cero likes en el momento de la consul
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (no se especifica en la model card; el pipeline de HuggingFace figura como no disponible) |
+| Arquitectura | no disponible (no se especifica en la model card; el pipeline de Hugging Face figura como no disponible) |
 | Parametros totales | 7.615.616.512 (~7,6B) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
@@ -23,7 +23,7 @@ Se trata de un modelo con cero descargas y cero likes en el momento de la consul
 
 ## Arquitectura y entrenamiento
 
-No se publica informacion sobre la arquitectura del modelo base eyad-silx/Quasar-2.0-7B-Thinking. Las etiquetas del repositorio (generated_from_trainer, trl, sft) indican que el modelo se obtuvo mediante fine-tuning supervisado (SFT) con la libreria TRL de HuggingFace, partiendo presumiblemente de otro modelo de ~7B, pero no se especifica cual, ni el numero de tokens de entrenamiento, ni la composicion del dataset, ni si hubo fases posteriores de RLHF o DPO. No hay informacion sobre innovaciones tecnicas como atencion lineal, decodificacion especulativa o modos de razonamiento explicitos.
+No se publica informacion sobre la arquitectura del modelo base eyad-silx/Quasar-2.0-7B-Thinking. Las etiquetas del repositorio (generated_from_trainer, trl, sft) indican que el modelo se obtuvo mediante fine-tuning supervisado (SFT) con la libreria TRL de Hugging Face, partiendo presumiblemente de otro modelo de ~7B, pero no se especifica cual, ni el numero de tokens de entrenamiento, ni la composicion del dataset, ni si hubo fases posteriores de RLHF o DPO. No hay informacion sobre innovaciones tecnicas como atencion lineal, decodificacion especulativa o modos de razonamiento explicitos.
 
 Lo unico documentado con precision es el proceso de cuantizacion. Segun la model card, se generaron cuantizaciones estaticas de tipo K-quant e IQ-quant con la herramienta de llama.cpp, sin versiones ponderadas ni imatrix ("weighted/imatrix quants seem not to be available"), lo que implica que las cuantizaciones de baja precision (Q2_K, Q3_K, IQ4_XS) no incorporan una matriz de importancia y previsiblemente degradan mas la perplejidad que sus equivalentes imatrix. Los tamaños declarados van de 3,1 GB en Q2_K a 15,3 GB en f16, coherentes con un modelo de ~7,6B de parametros.
 
@@ -35,7 +35,7 @@ Lo unico documentado con precision es el proceso de cuantizacion. Segun la model
 - Tool calling / function calling: no disponible, no se menciona en la model card.
 - Soporte de agentes y razonamiento multi-paso: no disponible, no se documenta.
 - Vision, audio o multimodalidad: no disponible, no se declara ninguna capacidad de este tipo.
-- Compatibilidad con endpoints: el repositorio lleva la etiqueta "endpoints_compatible", lo que sugiere que puede desplegarse en HuggingFace Inference Endpoints, aunque sin datos de latencia ni formato de plantilla de chat.
+- Compatibilidad con endpoints: el repositorio lleva la etiqueta "endpoints_compatible", lo que sugiere que puede desplegarse en Hugging Face Inference Endpoints, aunque sin datos de latencia ni formato de plantilla de chat.
 
 ## Casos de uso
 
@@ -91,7 +91,7 @@ Frente a estas alternativas, Quasar-2.0-7B-Thinking no aporta ningun dato verifi
 
 ## Enlaces
 
-- [HuggingFace: orangejuicesmith/Quasar-2.0-7B-Thinking-GGUF](https://huggingface.co/orangejuicesmith/Quasar-2.0-7B-Thinking-GGUF)
+- [Hugging Face: orangejuicesmith/Quasar-2.0-7B-Thinking-GGUF](https://huggingface.co/orangejuicesmith/Quasar-2.0-7B-Thinking-GGUF)
 - [Modelo base: eyad-silx/Quasar-2.0-7B-Thinking](https://huggingface.co/eyad-silx/Quasar-2.0-7B-Thinking)
 - [Repositorio del cuantizador: mradermacher/Quasar-2.0-7B-Thinking-GGUF](https://huggingface.co/mradermacher/Quasar-2.0-7B-Thinking-GGUF)
 - [README de referencia sobre uso de GGUF (TheBloke)](https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF)

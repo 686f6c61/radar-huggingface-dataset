@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`leonidas123/smollm2-135m-math-lora-v1-merged` es un ajuste fino (fine-tune) del modelo `HuggingFaceTB/SmolLM2-135M-Instruct`, publicado por el usuario leonidas123 en HuggingFace. El sufijo del nombre (`math-lora-v1-merged`) indica que se trata de una adaptacion LoRA orientada a tareas matematicas que posteriormente se fusiono con los pesos base, generando un modelo unico listo para inferencia estandar con `transformers`. El repositorio contiene 134.515.008 parametros reales en formato safetensors y ocupa aproximadamente 0,3 GB.
+`leonidas123/smollm2-135m-math-lora-v1-merged` es un ajuste fino (fine-tune) del modelo `HuggingFaceTB/SmolLM2-135M-Instruct`, publicado por el usuario leonidas123 en Hugging Face. El sufijo del nombre (`math-lora-v1-merged`) indica que se trata de una adaptacion LoRA orientada a tareas matematicas que posteriormente se fusiono con los pesos base, generando un modelo unico listo para inferencia estandar con `transformers`. El repositorio contiene 134.515.008 parametros reales en formato safetensors y ocupa aproximadamente 0,3 GB.
 
-El modelo hereda la arquitectura y el conocimiento del SmolLM2-135M-Instruct, un transformer decoder-only de tipo Llama desarrollado por HuggingFaceTB, y le anade un ajuste especifico sobre datos de matematicas. El entrenamiento se realizo con Unsloth y la libreria TRL de HuggingFace, segun declara la propia model card. La licencia es Apache-2.0, lo que permite uso comercial sin restricciones adicionales.
+El modelo hereda la arquitectura y el conocimiento del SmolLM2-135M-Instruct, un transformer decoder-only de tipo Llama desarrollado por HuggingFaceTB, y le anade un ajuste especifico sobre datos de matematicas. El entrenamiento se realizo con Unsloth y la libreria TRL de Hugging Face, segun declara la propia model card. La licencia es Apache-2.0, lo que permite uso comercial sin restricciones adicionales.
 
 Su relevancia practica radica en que es un modelo extremadamente ligero (135 millones de parametros) que puede ejecutarse en CPU, en GPUs de gama baja o incluso en dispositivos con recursos muy limitados. Esto lo hace util para prototipado rapido, entornos embebidos y experimentos de ajuste fino a bajo coste. Sin embargo, el repositorio no incluye resultados de benchmarks, descripcion del dataset de entrenamiento ni detalles del procedimiento, y acumula cero descargas y cero interacciones, por lo que debe tratarse como un artefacto experimental sin validacion publica.
 
@@ -85,8 +85,8 @@ Los datos de los modelos comparados corresponden a informacion publica de sus re
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/leonidas123/smollm2-135m-math-lora-v1-merged
+- Modelo en Hugging Face: https://huggingface.co/leonidas123/smollm2-135m-math-lora-v1-merged
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - No se han encontrado papers, blogs ni demos adicionales en la busqueda web proporcionada.

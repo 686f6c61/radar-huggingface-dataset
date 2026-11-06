@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `PengxinWang/RobustLLMAgent` es un repositorio publicado en HuggingFace por Pengxin Wang, estudiante de doctorado en la Universidad de Arizona, con licencia Apache 2.0. El nombre sugiere que se trata de un agente basado en modelo de lenguaje grande (LLM) orientado a robustez, pero la información pública disponible es extremadamente limitada: no se proporciona descripción técnica, arquitectura, tamaño, contexto ni datos de entrenamiento. La model card únicamente contiene la licencia, sin ningún otro detalle.
+El modelo `PengxinWang/RobustLLMAgent` es un repositorio publicado en Hugging Face por Pengxin Wang, estudiante de doctorado en la Universidad de Arizona, con licencia Apache 2.0. El nombre sugiere que se trata de un agente basado en modelo de lenguaje grande (LLM) orientado a robustez, pero la información pública disponible es extremadamente limitada: no se proporciona descripción técnica, arquitectura, tamaño, contexto ni datos de entrenamiento. La model card únicamente contiene la licencia, sin ningún otro detalle.
 
 Dado que no existe documentación adicional en el repositorio ni en la web, no es posible evaluar sus capacidades reales ni su rendimiento. Este repositorio podría ser un trabajo en progreso, un experimento académico o un placeholder. Hasta que el autor publique especificaciones completas, cualquier uso en producción o investigación debe considerarse prematuro.
 
@@ -63,7 +63,7 @@ No se dispone de información suficiente para establecer una comparativa. El mod
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/PengxinWang/RobustLLMAgent
+- Repositorio Hugging Face: https://huggingface.co/PengxinWang/RobustLLMAgent
 - Perfil de GitHub del autor: https://github.com/PengxinWang (con starred repos, sin proyectos propios visibles)
 - Survey sobre agentes autónomos basados en LLM (contexto general): https://arxiv.org/abs/2308.11432
 - Survey sobre agentes LLM para ingeniería de software (contexto general): https://arxiv.org/html/2409.02977v1

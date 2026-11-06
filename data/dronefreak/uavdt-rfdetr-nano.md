@@ -99,9 +99,9 @@ No se han publicado resultados de otros benchmarks (COCO, PASCAL VOC, etc.) en l
 
 | Modelo | Parametros | mAP@50 (UAVDT) | mAP@50-95 (UAVDT) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RF-DETR Nano (este modelo) | 30,5 M | 12,96 | 7,33 | Apache 2.0 | HuggingFace |
-| RF-DETR Small | no disponible | 14,89 | 8,92 | no disponible | HuggingFace (Roboflow) |
-| RF-DETR Medium | no disponible | 15,02 | 8,76 | no disponible | HuggingFace (Roboflow) |
+| RF-DETR Nano (este modelo) | 30,5 M | 12,96 | 7,33 | Apache 2.0 | Hugging Face |
+| RF-DETR Small | no disponible | 14,89 | 8,92 | no disponible | Hugging Face (Roboflow) |
+| RF-DETR Medium | no disponible | 15,02 | 8,76 | no disponible | Hugging Face (Roboflow) |
 | YOLOv26s | no disponible | 14,09 | 7,91 | no disponible | no disponible |
 | YOLOv26m | no disponible | 12,32 | 6,66 | no disponible | no disponible |
 | YOLOv8m | no disponible | 12,28 | 7,05 | no disponible | Ultralytics |
@@ -124,7 +124,7 @@ Observaciones: dentro del zoo comparado, este checkpoint es el cuarto mejor en m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dronefreak/uavdt-rfdetr-nano
+- Modelo en Hugging Face: https://huggingface.co/dronefreak/uavdt-rfdetr-nano
 - Dataset UAVDT (usado en el entrenamiento): https://huggingface.co/datasets/dronefreak/UAVDT
 - Repositorio DetectionBench: https://github.com/dronefreak/DetectionBench
 - Modelo base: https://huggingface.co/Roboflow/rf-detr-nano

@@ -99,7 +99,7 @@ La comparación relevante dentro de la información disponible es intra-familia:
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jinstudio/MOSS-Audio-4B-Thinking
+- Modelo en Hugging Face: https://huggingface.co/Jinstudio/MOSS-Audio-4B-Thinking
 - Colección oficial MOSS-Audio (OpenMOSS-Team): https://huggingface.co/collections/OpenMOSS-Team/moss-audio
 - MOSI.AI: https://mosi.cn/#hero
 - OpenMOSS: https://www.open-moss.com/

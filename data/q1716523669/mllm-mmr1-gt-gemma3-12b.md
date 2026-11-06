@@ -80,6 +80,6 @@ No se dispone de comparativas de rendimiento publicadas entre estos modelos en l
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/q1716523669/mllm-mmr1-gt-gemma3-12b
+- Repositorio Hugging Face: https://huggingface.co/q1716523669/mllm-mmr1-gt-gemma3-12b
 - Modelo base: https://huggingface.co/google/gemma-3-12b-it
 - Términos de licencia Gemma: https://ai.google.dev/gemma/terms

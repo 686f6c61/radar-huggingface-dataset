@@ -79,10 +79,10 @@ No se han publicado resultados de benchmarks estandar (PSNR, SSIM, LPIPS) en la 
 
 | Modelo | Parametros | Precision | Tamano en disco | VRAM pico | Licencia | Disponibilidad |
 |---|---|---:|---:|---:|---|---|
-| SeedVR2 7B W4A8 (este repo) | 7B | W4A8 + ConvRot | 4,44 GB | 5,69 GiB | Apache 2.0 | HuggingFace |
-| SeedVR2 7B INT8 (este repo) | 7B | INT8 + ConvRot | 8,12 GB | 8,53 GiB | Apache 2.0 | HuggingFace |
-| SeedVR2 3B W4A8 (este repo) | 3B | W4A8 + ConvRot | 2,21 GB | 5,69 GiB | Apache 2.0 | HuggingFace |
-| SeedVR2 7B FP16 (base) | 7B | FP16 | 15,35 GB | 16,04 GiB | Apache 2.0 | HuggingFace (ByteDance-Seed) |
+| SeedVR2 7B W4A8 (este repo) | 7B | W4A8 + ConvRot | 4,44 GB | 5,69 GiB | Apache 2.0 | Hugging Face |
+| SeedVR2 7B INT8 (este repo) | 7B | INT8 + ConvRot | 8,12 GB | 8,53 GiB | Apache 2.0 | Hugging Face |
+| SeedVR2 3B W4A8 (este repo) | 3B | W4A8 + ConvRot | 2,21 GB | 5,69 GiB | Apache 2.0 | Hugging Face |
+| SeedVR2 7B FP16 (base) | 7B | FP16 | 15,35 GB | 16,04 GiB | Apache 2.0 | Hugging Face (ByteDance-Seed) |
 
 No se dispone de informacion sobre otros modelos de upscaling de video comparables (por ejemplo, variantes de Real-ESRGAN o similares) en la informacion proporcionada.
 
@@ -99,7 +99,7 @@ No se dispone de informacion sobre otros modelos de upscaling de video comparabl
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ussoewwin/SeedVR2-ConvRot-INT8-and-w4a8
+- Hugging Face: https://huggingface.co/ussoewwin/SeedVR2-ConvRot-INT8-and-w4a8
 - Modelo base: https://huggingface.co/ByteDance-Seed/SeedVR2
 - Repositorio SeedVR: https://github.com/ByteDance-Seed/SeedVR
 - Repositorio ComfyUI + TensorRT del autor: https://github.com/ussoewwin/ComfyUI-SeedVR2-VideoUpscaler-with-TensorRT

@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Comparativa con modelos similares
 
-No disponible. Este repositorio no es un modelo de IA comparable con alternativas como LLMs de código abierto o modelos de visión. Su naturaleza documental lo sitúa fuera de cualquier categoría de modelos desplegables. No existen repositorios equivalentes en el mismo espacio de HuggingFace con características comparables.
+No disponible. Este repositorio no es un modelo de IA comparable con alternativas como LLMs de código abierto o modelos de visión. Su naturaleza documental lo sitúa fuera de cualquier categoría de modelos desplegables. No existen repositorios equivalentes en el mismo espacio de Hugging Face con características comparables.
 
 ## Limitaciones y advertencias
 
@@ -69,8 +69,8 @@ No disponible. Este repositorio no es un modelo de IA comparable con alternativa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/josephcarter02/embodied-ai79
-- Organización embodied-ai en HuggingFace: https://huggingface.co/embodied-ai/models
+- Repositorio en Hugging Face: https://huggingface.co/josephcarter02/embodied-ai79
+- Organización embodied-ai en Hugging Face: https://huggingface.co/embodied-ai/models
 - Survey sobre evolución de IA corpórea (Wiley): https://onlinelibrary.wiley.com/doi/10.1002/smb2.70003
 - Survey sobre interacción activa en el mundo real (Springer): https://link.springer.com/article/10.1007/s12555-025-0127-1
 - Artículo arXiv "Embodied AI: From LLMs to World Models": https://arxiv.org/abs/2509.20021

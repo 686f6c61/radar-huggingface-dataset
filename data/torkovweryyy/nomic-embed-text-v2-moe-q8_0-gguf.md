@@ -93,7 +93,7 @@ La comparación cuantitativa (MTEB multilingüe, MIRACL, velocidad de codificaci
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Torkovweryyy/nomic-embed-text-v2-moe-Q8_0-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Torkovweryyy/nomic-embed-text-v2-moe-Q8_0-GGUF
 - Modelo base: https://huggingface.co/nomic-ai/nomic-embed-text-v2-moe
 - Espacio de conversión GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp

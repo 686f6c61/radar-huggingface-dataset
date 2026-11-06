@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Naturaleza | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen2.5-72B (base) | ~72B | 131K | Modelo denso completo | Qwen (tipo "other") | Publico en HuggingFace |
-| Qwen2.5-72B-Instruct | ~72B | 131K | Denso ajustado por instrucciones | Qwen (tipo "other") | Publico en HuggingFace |
-| Qwen2.5-72B-graft0-a1 | ~72B | 131K | Adaptador LoRA (etapa A1) | no disponible | Publico en HuggingFace |
-| Este modelo (da-e1) | ~72B + LoRA | 131K | Adaptador LoRA (etapa 2) | no disponible | Publico en HuggingFace |
+| Qwen2.5-72B (base) | ~72B | 131K | Modelo denso completo | Qwen (tipo "other") | Publico en Hugging Face |
+| Qwen2.5-72B-Instruct | ~72B | 131K | Denso ajustado por instrucciones | Qwen (tipo "other") | Publico en Hugging Face |
+| Qwen2.5-72B-graft0-a1 | ~72B | 131K | Adaptador LoRA (etapa A1) | no disponible | Publico en Hugging Face |
+| Este modelo (da-e1) | ~72B + LoRA | 131K | Adaptador LoRA (etapa 2) | no disponible | Publico en Hugging Face |
 
 Datos de rendimiento comparativo: no disponibles. No se dispone de resultados publicados que permitan comparar este adaptador con las alternativas de la misma categoria.
 
@@ -84,7 +84,7 @@ Datos de rendimiento comparativo: no disponibles. No se dispone de resultados pu
 
 ## Enlaces
 
-- HuggingFace (este adaptador): https://huggingface.co/SecondLookResearch/Qwen2.5-72B-graft0-a1-terra3k-r1000-da-e1
+- Hugging Face (este adaptador): https://huggingface.co/SecondLookResearch/Qwen2.5-72B-graft0-a1-terra3k-r1000-da-e1
 - Adaptador A1 (etapa previa): https://huggingface.co/SecondLookResearch/Qwen2.5-72B-graft0-a1
 - Modelo base Qwen2.5-72B: https://huggingface.co/Qwen/Qwen2.5-72B
 - Blog oficial de Qwen2.5: https://qwen.ai/blog?id=qwen2.5

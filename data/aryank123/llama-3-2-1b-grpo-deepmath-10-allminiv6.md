@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama-3.2-1B-GRPO-DeepMath-10-allminiv6 es un ajuste fino del modelo AryanK123/Llama-3.2-1B-Instruct_SFT_Math-220kv00.04, que a su vez deriva del Llama 3.2 1B Instruct de Meta. Lo publica el usuario AryanK123 en HuggingFace y su proposito declarado es reforzar la capacidad de razonamiento matematico mediante GRPO (Group Relative Policy Optimization), la tecnica de aprendizaje por refuerzo presentada en el articulo DeepSeekMath (arXiv:2402.03300). El entrenamiento se ha realizado con la libreria TRL de HuggingFace.
+Llama-3.2-1B-GRPO-DeepMath-10-allminiv6 es un ajuste fino del modelo AryanK123/Llama-3.2-1B-Instruct_SFT_Math-220kv00.04, que a su vez deriva del Llama 3.2 1B Instruct de Meta. Lo publica el usuario AryanK123 en Hugging Face y su proposito declarado es reforzar la capacidad de razonamiento matematico mediante GRPO (Group Relative Policy Optimization), la tecnica de aprendizaje por refuerzo presentada en el articulo DeepSeekMath (arXiv:2402.03300). El entrenamiento se ha realizado con la libreria TRL de Hugging Face.
 
 El modelo pertenece a la categoria de modelos pequenos (aproximadamente 1.200 millones de parametros en su base), pensados para ejecucion en hardware de consumo, edge o entornos con VRAM limitada. Su interes practico esta en servir de banco de pruebas reproducible para tecnicas de RL aplicadas a modelos compactos: la model card indica que se ha usado GRPO sobre un checkpoint ya sometido a un SFT matematico ("SFT_Math-220kv00.04"), de modo que el pipeline completo es SFT seguido de RL.
 
@@ -78,7 +78,7 @@ No se dispone de resultados de benchmarks comparativos para el modelo descrito, 
 
 - Ausencia total de benchmarks: no hay ninguna evidencia publicada de que el entrenamiento con GRPO haya mejorado el rendimiento respecto al checkpoint SFT del que parte.
 - Repositorio de 0,0 GB: el tamano declarado sugiere que los pesos podrian no estar subidos o estar subidos de forma incompleta, lo que impediria cargar el modelo. Conviene verificarlo antes de cualquier uso.
-- Licencia indeterminada: la model card declara "licence: license" sin contenido y los metadatos de HuggingFace no indican licencia. Cualquier uso comercial es juridicamente arriesgado y, en ultima instancia, queda condicionado por la Llama 3.2 Community License del modelo base.
+- Licencia indeterminada: la model card declara "licence: license" sin contenido y los metadatos de Hugging Face no indican licencia. Cualquier uso comercial es juridicamente arriesgado y, en ultima instancia, queda condicionado por la Llama 3.2 Community License del modelo base.
 - Sesgos heredados: al derivar del Llama 3.2 1B, arrastra los sesgos de los datos de preentrenamiento de Meta, no documentados ni mitigados especificamente en este ajuste.
 - Riesgo elevado de alucinacion: los modelos de aproximadamente 1.200 millones de parametros producen con frecuencia errores factologicos y matematicos, y el ajuste con recompensa sobre respuestas correctas no elimina este comportamiento fuera del dominio entrenado.
 - Olvido catastrofico probable: un ajuste por refuerzo intensivo sobre problemas matematicos puede degradar capacidades generales de conversacion, redaccion, codigo o seguimiento de instrucciones presentes en el checkpoint original.
@@ -90,7 +90,7 @@ No se dispone de resultados de benchmarks comparativos para el modelo descrito, 
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/AryanK123/Llama-3.2-1B-GRPO-DeepMath-10-allminiv6
+- Pagina del modelo en Hugging Face: https://huggingface.co/AryanK123/Llama-3.2-1B-GRPO-DeepMath-10-allminiv6
 - Modelo base del ajuste: https://huggingface.co/AryanK123/Llama-3.2-1B-Instruct_SFT_Math-220kv00.04
 - Libreria TRL (usada para el entrenamiento): https://github.com/huggingface/trl
 - Articulo de DeepSeekMath, origen del metodo GRPO: https://huggingface.co/papers/2402.03300 (arXiv:2402.03300)

@@ -4,7 +4,7 @@
 
 clip-ViT-L-14 es un modelo de visión-lenguaje que mapea imágenes y texto a un espacio vectorial compartido de 768 dimensiones. Fue desarrollado originalmente por OpenAI y distribuido a través de la librería sentence-transformers, que lo publica como modelo de tipo sentence-similarity. Resuelve el problema de comparar directamente contenido visual y textual, lo que habilita tareas como búsqueda de imágenes por texto, clasificación zero-shot y agrupamiento semántico sin necesidad de entrenamiento específico.
 
-La arquitectura sigue el diseño CLIP descrito en el paper arxiv:2103.00020: un doble codificador formado por un Vision Transformer con parches de 14 píxeles (ViT-L/14) para imágenes y un Transformer para texto, entrenados mediante aprendizaje contrastivo sobre pares imagen-texto. El repositorio en HuggingFace ocupa 3.4 GB y los pesos están almacenados en formato safetensors. La información disponible no especifica la longitud de contexto, los idiomas soportados ni la licencia.
+La arquitectura sigue el diseño CLIP descrito en el paper arxiv:2103.00020: un doble codificador formado por un Vision Transformer con parches de 14 píxeles (ViT-L/14) para imágenes y un Transformer para texto, entrenados mediante aprendizaje contrastivo sobre pares imagen-texto. El repositorio en Hugging Face ocupa 3.4 GB y los pesos están almacenados en formato safetensors. La información disponible no especifica la longitud de contexto, los idiomas soportados ni la licencia.
 
 Su relevancia actual radica en que permite construir sistemas de búsqueda multimodal y clasificación de imágenes sin etiquetas manuales, con un rendimiento superior a otras variantes de CLIP en el benchmark de ImageNet zero-shot. La versión publicada en este repositorio concreto parece ser una copia no oficial del modelo original de sentence-transformers, por lo que se recomienda verificar su procedencia antes de usarlo en producción.
 
@@ -67,9 +67,9 @@ No se han publicado resultados de otros benchmarks en la informacion disponible.
 
 | Modelo | Arquitectura | Parametros | Contexto | ImageNet zero-shot | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| clip-ViT-L-14 | ViT-L/14 | no disponible | no disponible | 75.4 | no disponible | HuggingFace |
-| clip-ViT-B-16 | ViT-B/16 | no disponible | no disponible | 68.1 | no disponible | HuggingFace |
-| clip-ViT-B-32 | ViT-B/32 | no disponible | no disponible | 63.3 | no disponible | HuggingFace |
+| clip-ViT-L-14 | ViT-L/14 | no disponible | no disponible | 75.4 | no disponible | Hugging Face |
+| clip-ViT-B-16 | ViT-B/16 | no disponible | no disponible | 68.1 | no disponible | Hugging Face |
+| clip-ViT-B-32 | ViT-B/32 | no disponible | no disponible | 63.3 | no disponible | Hugging Face |
 
 Como alternativa para soporte multilingüe, existe la versión clip-ViT-B-32-multilingual-v1, que cubre 50+ idiomas.
 
@@ -84,7 +84,7 @@ Como alternativa para soporte multilingüe, existe la versión clip-ViT-B-32-mul
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/aaalapupifashang/clip-ViT-L-14
+- Repositorio Hugging Face: https://huggingface.co/aaalapupifashang/clip-ViT-L-14
 - Modelo original sentence-transformers: https://huggingface.co/sentence-transformers/clip-ViT-L-14
 - Paper CLIP: https://arxiv.org/abs/2103.00020
 - Documentación de SBERT.net sobre image search: https://www.sbert.net/examples/applications/image-search/README.html

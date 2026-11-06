@@ -4,7 +4,7 @@
 
 El modelo `udayanga20/pathum-sinhala-offensive-detoxify-mt5-custom` es un modelo de generación de texto basado en la arquitectura mT5, especializado en la detoxificación de lenguaje ofensivo en cingalés (sinhala). Desarrollado por el usuario udayanga20, el modelo se presenta como una herramienta para transformar texto ofensivo o tóxico en versiones neutrales o respetuosas, una tarea relevante para la moderación de contenido en plataformas digitales que operan en Sri Lanka y en comunidades de habla cingalesa.
 
-Con aproximadamente 966 millones de parámetros, el modelo se sitúa en un rango de tamaño medio-grande, lo que sugiere que puede ofrecer un equilibrio entre capacidad de comprensión lingüística y requisitos computacionales. La ficha técnica disponible en HuggingFace es extremadamente escasa: no se especifican la licencia, los idiomas exactos, el proceso de entrenamiento ni los datos utilizados, lo que limita la evaluación rigurosa del modelo. A pesar de ello, su existencia apunta a un interés creciente en el procesamiento de lenguaje natural para lenguas de baja representación como el cingalés.
+Con aproximadamente 966 millones de parámetros, el modelo se sitúa en un rango de tamaño medio-grande, lo que sugiere que puede ofrecer un equilibrio entre capacidad de comprensión lingüística y requisitos computacionales. La ficha técnica disponible en Hugging Face es extremadamente escasa: no se especifican la licencia, los idiomas exactos, el proceso de entrenamiento ni los datos utilizados, lo que limita la evaluación rigurosa del modelo. A pesar de ello, su existencia apunta a un interés creciente en el procesamiento de lenguaje natural para lenguas de baja representación como el cingalés.
 
 ## Especificaciones tecnicas
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para establecer una comparativa rigurosa. Existe otro modelo en HuggingFace, `dimuthulk/sinhala-detox-mt5-lora`, que también aborda la detoxificación en cingalés, pero no se conocen sus especificaciones ni rendimiento. Tampoco se dispone de datos sobre modelos alternativos como `Pudamya/mt5-singlish2sinhala`, que se centra en transliteración, no en detoxificación. Por tanto, la comparativa no está disponible.
+No se dispone de información suficiente para establecer una comparativa rigurosa. Existe otro modelo en Hugging Face, `dimuthulk/sinhala-detox-mt5-lora`, que también aborda la detoxificación en cingalés, pero no se conocen sus especificaciones ni rendimiento. Tampoco se dispone de datos sobre modelos alternativos como `Pudamya/mt5-singlish2sinhala`, que se centra en transliteración, no en detoxificación. Por tanto, la comparativa no está disponible.
 
 ## Limitaciones y advertencias
 
@@ -65,5 +65,5 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/udayanga20/pathum-sinhala-offensive-detoxify-mt5-custom
+- Hugging Face: https://huggingface.co/udayanga20/pathum-sinhala-offensive-detoxify-mt5-custom
 - No se han encontrado papers, repositorios adicionales o demos relacionados con este modelo específico.

@@ -1,9 +1,9 @@
 # Lanni-ni/dynamic_forgetting_4_6_384_inverse_babylm_10m_seed44_epoch5
 
 ## Resumen
-El modelo `dynamic_forgetting_4_6_384_inverse_babylm_10m_seed44_epoch5` es un modelo de generación de texto publicado en HuggingFace por el usuario `Lanni-ni`. Se trata de un modelo muy pequeño, con aproximadamente 45,7 millones de parámetros, distribuido en formato `safetensors` y diseñado para la biblioteca `transformers`. La fecha de creación es de septiembre de 2026 y no cuenta con descargas ni valoraciones.
+El modelo `dynamic_forgetting_4_6_384_inverse_babylm_10m_seed44_epoch5` es un modelo de generación de texto publicado en Hugging Face por el usuario `Lanni-ni`. Se trata de un modelo muy pequeño, con aproximadamente 45,7 millones de parámetros, distribuido en formato `safetensors` y diseñado para la biblioteca `transformers`. La fecha de creación es de septiembre de 2026 y no cuenta con descargas ni valoraciones.
 
-La denominación del repositorio sugiere que el modelo está relacionado con técnicas de "olvido dinámico" (`dynamic forgetting`) y con el desafío BabyLM (`babylm_10m`), que se centra en entrenar modelos de lenguaje con presupuestos de datos muy reducidos (posiblemente 10 millones de palabras). Sin embargo, la model card disponible en HuggingFace es una plantilla autogenerada y no incluye ninguna información técnica, de entrenamiento o de capacidades. Los resultados de la búsqueda web no aportan documentación adicional sobre el modelo, por lo que la mayor parte de sus características permanecen sin confirmar.
+La denominación del repositorio sugiere que el modelo está relacionado con técnicas de "olvido dinámico" (`dynamic forgetting`) y con el desafío BabyLM (`babylm_10m`), que se centra en entrenar modelos de lenguaje con presupuestos de datos muy reducidos (posiblemente 10 millones de palabras). Sin embargo, la model card disponible en Hugging Face es una plantilla autogenerada y no incluye ninguna información técnica, de entrenamiento o de capacidades. Los resultados de la búsqueda web no aportan documentación adicional sobre el modelo, por lo que la mayor parte de sus características permanecen sin confirmar.
 
 ## Especificaciones técnicas
 | Parametro | Valor |
@@ -48,7 +48,7 @@ No se han publicado resultados de benchmarks en la información disponible. Tamp
 - **VRAM estimada para inferencia**: basándose en el número de parámetros (45.703.320), el modelo ocupa aproximadamente 174 MiB en precisión fp32, 87 MiB en fp16 y 44 MiB en int8. En la práctica, hay que añadir unos cientos de MiB por los buffers y el runtime de `transformers`.
 - **GPU recomendada**: cualquier GPU moderna es suficiente, incluso las de gama baja o las integradas. No se requieren GPUs de datacenter.
 - **CPU**: es perfectamente posible ejecutar el modelo en CPU con una latencia aceptable, dado su tamaño.
-- **Opciones de despliegue**: puede utilizarse directamente con la librería `transformers` de HuggingFace. No hay información sobre compatibilidad con `vLLM`, `TGI`, `llama.cpp` u `Ollama`; la conversión a formatos como GGUF dependería de la estructura concreta del modelo, que no está documentada.
+- **Opciones de despliegue**: puede utilizarse directamente con la librería `transformers` de Hugging Face. No hay información sobre compatibilidad con `vLLM`, `TGI`, `llama.cpp` u `Ollama`; la conversión a formatos como GGUF dependería de la estructura concreta del modelo, que no está documentada.
 - **Latencia y throughput estimados**: no disponible.
 
 ## Comparativa con modelos similares
@@ -63,5 +63,5 @@ No se dispone de información suficiente para realizar una comparativa fiable. N
 - **Reproducibilidad**: el repositorio no proporciona detalles sobre el procedimiento de entrenamiento, hiperparámetros, semillas o datos, lo que impide reproducir los resultados o entender las decisiones de diseño.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/Lanni-ni/dynamic_forgetting_4_6_384_inverse_babylm_10m_seed44_epoch5
+- Repositorio en Hugging Face: https://huggingface.co/Lanni-ni/dynamic_forgetting_4_6_384_inverse_babylm_10m_seed44_epoch5
 - No se han encontrado otros enlaces relevantes (repositorios de código, papers o demos) en la información proporcionada.

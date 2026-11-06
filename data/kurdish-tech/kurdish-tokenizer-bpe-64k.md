@@ -19,7 +19,7 @@ La relevancia actual de esta pieza radica en que los tokenizadores multilingües
 | Tipos de cuantización | no disponible (no aplica) |
 | Idiomas soportados | Kurmanji (kmr), Sorani (ckb), Zazaki (diq), kurdo genérico (ku) |
 | Licencia | CC BY-SA 4.0 |
-| Formato de pesos | no disponible (tokenizador en formato HuggingFace Transformers, compatible con `AutoTokenizer`) |
+| Formato de pesos | no disponible (tokenizador en formato Hugging Face Transformers, compatible con `AutoTokenizer`) |
 
 ## Arquitectura y entrenamiento
 
@@ -32,7 +32,7 @@ El entrenamiento se realizó sobre 800.000 líneas muestreadas de la partición 
 - Tokenización de las tres variedades principales del kurdo en un único vocabulario: kurmanji (latino), sorani (árabe) y zazaki (latino).
 - Soporte byte-level con cobertura total de caracteres: tasa de UNK de 0.0, sin caracteres fuera de vocabulario.
 - Post-procesado automático que añade `<bos>` y `<eos>`, listo para entrenamiento causal.
-- Compatible con la API `AutoTokenizer` de Transformers, integrable directamente en pipelines de HuggingFace.
+- Compatible con la API `AutoTokenizer` de Transformers, integrable directamente en pipelines de Hugging Face.
 - Diseñado para modelado de lenguaje causal (generación de texto), no para tareas de codificación o visión.
 - No incluye capacidades de tool calling, agentes ni razonamiento multi-paso, al ser exclusivamente un tokenizador.
 
@@ -65,7 +65,7 @@ Frente a `cl100k_base`, este tokenizador necesita 1,9× menos tokens para el mis
 ## Requisitos de hardware
 
 - Al ser un tokenizador, no requiere GPU ni VRAM para su uso. Se ejecuta completamente en CPU.
-- El uso típico es como componente dentro de un pipeline de HuggingFace Transformers; el coste de memoria es mínimo (vocabulario de 64.000 entradas).
+- El uso típico es como componente dentro de un pipeline de Hugging Face Transformers; el coste de memoria es mínimo (vocabulario de 64.000 entradas).
 - No se han publicado datos de latencia o throughput específicos, pero al ser una operación de subword tokenization, el rendimiento es del orden de miles de documentos por segundo en CPU moderna.
 - Para el entrenamiento de modelos que lo utilicen, los requisitos de hardware dependerán del modelo de lenguaje asociado, no del tokenizador.
 
@@ -95,6 +95,6 @@ La principal ventaja de este tokenizador es su especialización en las tres vari
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kurdish-tech/kurdish-tokenizer-bpe-64k
+- Modelo en Hugging Face: https://huggingface.co/kurdish-tech/kurdish-tokenizer-bpe-64k
 - Dataset de entrenamiento: https://huggingface.co/datasets/kurdish-tech/KurdishCorpus-clean
 - Organización Kurdish-Tech en GitHub: https://github.com/Kurdish-Tech

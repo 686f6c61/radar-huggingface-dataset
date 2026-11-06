@@ -115,7 +115,7 @@ No se dispone de datos de benchmarks comparativos publicados en la información 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qualcomm/FFNet-78S
+- Modelo en Hugging Face: https://huggingface.co/qualcomm/FFNet-78S
 - Página del modelo en Qualcomm AI Hub: https://aihub.qualcomm.com/models/ffnet_78s
 - Repositorio de implementación original: https://github.com/Qualcomm-AI-research/FFNet
 - Librería AI Hub Models (FFNet-78S): https://github.com/qualcomm/ai-hub-models/blob/v0.66.0/src/qai_hub_models/models/ffnet_78s

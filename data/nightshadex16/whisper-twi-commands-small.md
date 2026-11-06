@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`whisper-twi-commands-small` es un ajuste fino (fine-tuning) del modelo de reconocimiento automático del habla `openai/whisper-small` publicado por el usuario NightshadeX16 en HuggingFace. El modelo parte de la arquitectura encoder-decoder de Whisper y se ha reentrenado sobre el corpus `ghanaopenai/asante-twi-bible-speech-text` para transcribir audio en twi (akano) a texto en twi, con un ambito declarado limitado a los dialectos asante y akuapem. Cuenta con 241.734.912 parametros, licencia MIT y pesos en formato safetensors.
+`whisper-twi-commands-small` es un ajuste fino (fine-tuning) del modelo de reconocimiento automático del habla `openai/whisper-small` publicado por el usuario NightshadeX16 en Hugging Face. El modelo parte de la arquitectura encoder-decoder de Whisper y se ha reentrenado sobre el corpus `ghanaopenai/asante-twi-bible-speech-text` para transcribir audio en twi (akano) a texto en twi, con un ambito declarado limitado a los dialectos asante y akuapem. Cuenta con 241.734.912 parametros, licencia MIT y pesos en formato safetensors.
 
 Su relevancia es la de un experimento de adaptacion de un modelo ASR multilingue de proposito general a una lengua de bajos recursos como el twi, donde los modelos comerciales suelen tener un rendimiento pobre. El autor declara una perdida de validacion de 0.3140 y advierte explicitamente de que el modelo tiene dificultades con palabras fuera del vocabulario biblico, lo que lo situa como una prueba de concepto mas que como un sistema listo para produccion.
 
@@ -76,10 +76,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El `m
 
 | Modelo | Parametros | Contexto de audio | Idiomas | Licencia | Rendimiento en twi | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `NightshadeX16/whisper-twi-commands-small` | 241,7 M | 30 s por ventana | `ak` (asante/akuapem) | MIT | Perdida de validacion 0,3140; sin WER publicado | HuggingFace, safetensors |
-| `openai/whisper-small` (modelo base) | ~244 M | 30 s por ventana | ~99 idiomas (incluye `ak` en el preentrenamiento) | MIT | No disponible; sin ajuste especifico a twi | HuggingFace, multiples formatos |
-| `openai/whisper-base` | ~74 M | 30 s por ventana | ~99 idiomas | MIT | No disponible; menor capacidad que small | HuggingFace, multiples formatos |
-| `openai/whisper-medium` | ~769 M | 30 s por ventana | ~99 idiomas | MIT | No disponible; mayor coste computacional | HuggingFace, multiples formatos |
+| `NightshadeX16/whisper-twi-commands-small` | 241,7 M | 30 s por ventana | `ak` (asante/akuapem) | MIT | Perdida de validacion 0,3140; sin WER publicado | Hugging Face, safetensors |
+| `openai/whisper-small` (modelo base) | ~244 M | 30 s por ventana | ~99 idiomas (incluye `ak` en el preentrenamiento) | MIT | No disponible; sin ajuste especifico a twi | Hugging Face, multiples formatos |
+| `openai/whisper-base` | ~74 M | 30 s por ventana | ~99 idiomas | MIT | No disponible; menor capacidad que small | Hugging Face, multiples formatos |
+| `openai/whisper-medium` | ~769 M | 30 s por ventana | ~99 idiomas | MIT | No disponible; mayor coste computacional | Hugging Face, multiples formatos |
 
 No se han identificado en la informacion disponible otros fine-tunings publicos de Whisper para twi con los que comparar directamente, ni resultados de WER que permitan establecer una jerarquia de rendimiento.
 
@@ -99,7 +99,7 @@ No se han identificado en la informacion disponible otros fine-tunings publicos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NightshadeX16/whisper-twi-commands-small
+- Modelo en Hugging Face: https://huggingface.co/NightshadeX16/whisper-twi-commands-small
 - Modelo base: https://huggingface.co/openai/whisper-small
 - Dataset de entrenamiento declarado: https://huggingface.co/datasets/ghanaopenai/asante-twi-bible-speech-text
 - Repositorio de Whisper (OpenAI): https://github.com/openai/whisper

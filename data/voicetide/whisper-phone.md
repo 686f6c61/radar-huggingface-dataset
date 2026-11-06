@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Formato / disponibilidad |
 |---|---|---|---|---|---|
-| voicetide/whisper-phone | no disponible | no disponible | no disponible | MIT | GGML q4_0, 474 MB, HuggingFace |
-| openai/whisper-large-v3-turbo | no disponible | no disponible | no disponible | MIT | Modelo base en HuggingFace; formato no detallado en la información |
-| ggerganov/whisper.cpp (`ggml-large-v3-turbo.bin`, rev. `5359861c`) | no disponible | no disponible | no disponible | no disponible | Fichero GGML de origen en HuggingFace; cuantización no especificada |
+| voicetide/whisper-phone | no disponible | no disponible | no disponible | MIT | GGML q4_0, 474 MB, Hugging Face |
+| openai/whisper-large-v3-turbo | no disponible | no disponible | no disponible | MIT | Modelo base en Hugging Face; formato no detallado en la información |
+| ggerganov/whisper.cpp (`ggml-large-v3-turbo.bin`, rev. `5359861c`) | no disponible | no disponible | no disponible | no disponible | Fichero GGML de origen en Hugging Face; cuantización no especificada |
 
 No se dispone de datos de benchmarks ni de especificaciones de parámetros en la información proporcionada, por lo que la comparación cuantitativa no es posible. La comparación se limita a formato, licencia y disponibilidad.
 
@@ -89,7 +89,7 @@ No se dispone de datos de benchmarks ni de especificaciones de parámetros en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/voicetide/whisper-phone
+- Modelo en Hugging Face: https://huggingface.co/voicetide/whisper-phone
 - Modelo base openai/whisper-large-v3-turbo: https://huggingface.co/openai/whisper-large-v3-turbo
 - Fichero de origen en ggerganov/whisper.cpp: https://huggingface.co/ggerganov/whisper.cpp
 - Repositorio whisper.cpp en GitHub: https://github.com/ggerganov/whisper.cpp

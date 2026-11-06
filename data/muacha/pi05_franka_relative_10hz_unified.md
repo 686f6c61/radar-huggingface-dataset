@@ -2,7 +2,7 @@
 
 ## Resumen
 
-pi05_franka_relative_10hz_unified es un modelo de politica robotica (vision-language-action, VLA) derivado de `lerobot/pi05_base` mediante ajuste fino supervisado. Lo publica el usuario `muacha` en HuggingFace y esta especializado en el robot Franka FR3 con acciones de pose relativa del efector final a 10 Hz. Resuelve el problema de controlar un brazo Franka a partir de observaciones visuales y de estado, generando secuencias de acciones ejecutables directamente en el robot.
+pi05_franka_relative_10hz_unified es un modelo de politica robotica (vision-language-action, VLA) derivado de `lerobot/pi05_base` mediante ajuste fino supervisado. Lo publica el usuario `muacha` en Hugging Face y esta especializado en el robot Franka FR3 con acciones de pose relativa del efector final a 10 Hz. Resuelve el problema de controlar un brazo Franka a partir de observaciones visuales y de estado, generando secuencias de acciones ejecutables directamente en el robot.
 
 La aportacion tecnica principal es la unificacion de las vistas de las dos camaras laterales usadas en los datos de entrenamiento (RealSense D435if y D455): todas las imagenes laterales se renderizan en una unica vista canonica de 848x426, de modo que el mismo checkpoint puede servirse con cualquiera de las dos camaras sin reentrenar. El modelo tiene 3.616.757.520 parametros (segun los pesos en safetensors) y el repositorio ocupa 59,8 GB, incluyendo multiples checkpoints etiquetados por paso.
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi05_franka_relative_10hz_unified | 3.616.757.520 | no disponible | VLA Franka FR3, acciones relativas, vista lateral unificada | no disponible | HuggingFace (`muacha/...`) |
+| pi05_franka_relative_10hz_unified | 3.616.757.520 | no disponible | VLA Franka FR3, acciones relativas, vista lateral unificada | no disponible | Hugging Face (`muacha/...`) |
 | pi05_franka_relative_10hz | no disponible | no disponible | VLA Franka FR3, acciones relativas, sin vista unificada | no disponible | Referenciado por el autor; no se ha verificado su repositorio |
-| lerobot/pi05_base | no disponible | no disponible | Modelo base VLA pi0.5 | no disponible | HuggingFace (`lerobot/pi05_base`) |
+| lerobot/pi05_base | no disponible | no disponible | Modelo base VLA pi0.5 | no disponible | Hugging Face (`lerobot/pi05_base`) |
 
 No se dispone de datos de benchmarks ni de especificaciones detalladas de las alternativas en la informacion proporcionada, por lo que la comparacion cuantitativa de rendimiento no es posible.
 
@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de las al
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/muacha/pi05_franka_relative_10hz_unified
+- Modelo en Hugging Face: https://huggingface.co/muacha/pi05_franka_relative_10hz_unified
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset D435if: https://huggingface.co/datasets/yuan1119/many_tasks_rgbdp_10fps_d435if_mu_comp
 - Dataset D455: https://huggingface.co/datasets/yuan1119/many_tasks_rgbdp_10fps_d455old_mu_comp

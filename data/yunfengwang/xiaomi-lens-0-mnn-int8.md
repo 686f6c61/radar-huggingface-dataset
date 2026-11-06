@@ -4,7 +4,7 @@
 
 Xiaomi-Lens-0-MNN-int8 es una conversión al motor de inferencia MNN (Alibaba) del modelo multimodal Xiaomi-Lens-0 de SeerRay-Lab, un vision-language de 4,6 mil millones de parámetros especializado en *visual grounding* y segmentación de imágenes. El autor de la conversión, yunfengwang, ha publicado los grafos ya convertidos y cuantizados a 8 bits en pesos, con el objetivo explícito de ejecutar todo el pipeline imagen → texto + caja delimitadora + máscara de píxeles en CPU y sin dependencias de PyTorch ni de transformers.
 
-El interés de esta ficha no está en un modelo nuevo, sino en el empaquetado: reduce el peso en disco de 18,5 GB (fp32) a 6,2 GB, elimina la pila torch y ofrece velocidades de decodificación muy superiores a la ruta oficial de HuggingFace en CPU (0,191 s por token frente a 18,75 s, aproximadamente 98 veces más rápido). Se distribuye además como paquete de PyPI (`xiaomi-lens-mnn`, versión 0.1.0) ejecutable con `uvx`, lo que permite probar el modelo con un solo comando.
+El interés de esta ficha no está en un modelo nuevo, sino en el empaquetado: reduce el peso en disco de 18,5 GB (fp32) a 6,2 GB, elimina la pila torch y ofrece velocidades de decodificación muy superiores a la ruta oficial de Hugging Face en CPU (0,191 s por token frente a 18,75 s, aproximadamente 98 veces más rápido). Se distribuye además como paquete de PyPI (`xiaomi-lens-mnn`, versión 0.1.0) ejecutable con `uvx`, lo que permite probar el modelo con un solo comando.
 
 Arquitecturalmente hereda del modelo base un diseño híbrido: codificador visual Qwen3.5 ViT con número dinámico de parches, decodificador de lenguaje Qwen3.5-4B con 24 capas GatedDeltaNet (atención lineal con estado recurrente) y 8 capas de atención completa, más un decodificador de máscaras independiente sobre un lienzo fijo de 576×384. La licencia Apache 2.0 y la posibilidad de correr en CPU lo hacen relevante para despliegues en dispositivo (móvil, edge, portátil) donde no hay GPU disponible.
 
@@ -26,7 +26,7 @@ Arquitecturalmente hereda del modelo base un diseño híbrido: codificador visua
 | Salida | Texto, cajas delimitadoras (`<bbox>`) y máscara de píxeles (`<mask>`) sobre lienzo fijo de 576×384 con 32 ranuras |
 | Tamaño del repositorio | 6,2 GB (frente a 18,5 GB en fp32) |
 | Librería / motor | MNN (backend CPU) |
-| Pipeline de HuggingFace | `image-text-to-text` |
+| Pipeline de Hugging Face | `image-text-to-text` |
 | Fecha de publicación | 19 de octubre de 2026 (última actualización: 20 de octubre de 2026) |
 
 ## Arquitectura y entrenamiento
@@ -122,7 +122,7 @@ Frente al modelo base en fp32, la versión int8 ocupa un 67 % menos de disco y e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yunfengwang/Xiaomi-Lens-0-MNN-int8
+- Modelo en Hugging Face: https://huggingface.co/yunfengwang/Xiaomi-Lens-0-MNN-int8
 - Modelo base: https://huggingface.co/SeerRay-Lab/Xiaomi-Lens-0
 - Variante MNN fp16: https://huggingface.co/yunfengwang/Xiaomi-Lens-0-MNN-fp16
 - Grafos ONNX para reconversión: https://huggingface.co/yunfengwang/Xiaomi-Lens-0-onnx

@@ -113,7 +113,7 @@ Los datos de rendimiento (CORE, MMLU u otros) de estas alternativas no estan inc
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/CharlieChen/loop-fwe-untied-grow-d10
+- Hugging Face: https://huggingface.co/CharlieChen/loop-fwe-untied-grow-d10
 - Codebase del paper: https://github.com/cue-engineering/loop
 - Dataset de preentrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Paper "How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents": no disponible (no se ha facilitado URL directa)

@@ -93,8 +93,8 @@ Los resultados de busqueda web no aportaron informacion sobre alternativas compa
 
 ## Enlaces
 
-- Repositorio de HuggingFace analizado: https://huggingface.co/xascasasd/Wan2.2-Animate-2-14B
-- Repositorio oficial en HuggingFace: https://huggingface.co/Wan-AI/Wan2.2-Animate-2-14B
+- Repositorio de Hugging Face analizado: https://huggingface.co/xascasasd/Wan2.2-Animate-2-14B
+- Repositorio oficial en Hugging Face: https://huggingface.co/Wan-AI/Wan2.2-Animate-2-14B
 - Modelo oficial en ModelScope: https://modelscope.cn/models/Wan-AI/Wan2.2-Animate-2-14B
 - Repositorio de codigo: https://github.com/Wan-Video/Wan-Animate-2
 - Paper (arXiv): https://arxiv.org/pdf/2608.06009

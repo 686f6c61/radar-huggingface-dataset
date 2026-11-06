@@ -77,8 +77,8 @@ No se han identificado en la información disponible modelos directamente compar
 
 | Modelo | Parametros | Tarea | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| aloudreader/uk-stress-token-classifier | 110.060.544 | Clasificación de acento en homógrafos (uk) | ±300 caracteres / 160 tokens | Apache 2.0 | HuggingFace (0 descargas, 0 likes en el momento de la consulta) |
-| ukr-models/xlm-roberta-base-uk | no disponible | Codificador de lenguaje (uk) | no disponible | no disponible | HuggingFace (modelo base) |
+| aloudreader/uk-stress-token-classifier | 110.060.544 | Clasificación de acento en homógrafos (uk) | ±300 caracteres / 160 tokens | Apache 2.0 | Hugging Face (0 descargas, 0 likes en el momento de la consulta) |
+| ukr-models/xlm-roberta-base-uk | no disponible | Codificador de lenguaje (uk) | no disponible | no disponible | Hugging Face (modelo base) |
 | Alternativas especializadas en acento ucraniano | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -95,7 +95,7 @@ No se han identificado en la información disponible modelos directamente compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aloudreader/uk-stress-token-classifier
+- Modelo en Hugging Face: https://huggingface.co/aloudreader/uk-stress-token-classifier
 - Modelo base: https://huggingface.co/ukr-models/xlm-roberta-base-uk
 - Repositorio del paquete de inferencia `ukstress_ml` / `wiki-stress/ml`: no disponible como enlace directo en la información proporcionada
 - Paper o publicación técnica: no disponible

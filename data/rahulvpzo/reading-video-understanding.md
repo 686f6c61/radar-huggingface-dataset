@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `RahulVpzo/reading-video-understanding`, publicado en HuggingFace por el usuario RahulVpzo, no contiene un modelo de aprendizaje automatico entrenado, sino un conjunto estructurado de notas de investigacion sobre comprension de video. La propia model card lo describe como "a structured set of research notes on Video Understanding, with concrete evaluation references and open questions", y especifica que los planes y las hipotesis se mantienen separados de los resultados ya completados. Los unicos artefactos declarados en el repositorio son `paper_notes.md` (artefacto principal) y `README.md` (documentacion).
+El repositorio `RahulVpzo/reading-video-understanding`, publicado en Hugging Face por el usuario RahulVpzo, no contiene un modelo de aprendizaje automatico entrenado, sino un conjunto estructurado de notas de investigacion sobre comprension de video. La propia model card lo describe como "a structured set of research notes on Video Understanding, with concrete evaluation references and open questions", y especifica que los planes y las hipotesis se mantienen separados de los resultados ya completados. Los unicos artefactos declarados en el repositorio son `paper_notes.md` (artefacto principal) y `README.md` (documentacion).
 
 El repositorio aparece etiquetado con `safetensors`, `transformer`, `research-notes`, `video-understanding` y licencia MIT, y los metadatos indican un total de 24.832 parametros en safetensors, una cifra extraordinariamente baja que no corresponde a ningun transformer funcional de comprension de video. El tamano del repositorio es de 0.0 GB, con 0 descargas y 0 "likes" en el momento de la consulta, por lo que no hay evidencia de pesos utilizables ni de un checkpoint desplegable.
 
@@ -93,7 +93,7 @@ No disponible. Este repositorio no es un modelo de comprension de video y no pub
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RahulVpzo/reading-video-understanding
-- Ficheros citados en la model card: `paper_notes.md` y `README.md` dentro del propio repositorio de HuggingFace.
+- Hugging Face: https://huggingface.co/RahulVpzo/reading-video-understanding
+- Ficheros citados en la model card: `paper_notes.md` y `README.md` dentro del propio repositorio de Hugging Face.
 - Conjuntos de datos mencionados como contexto de evaluacion (sin resultados asociados y con terminos de uso propios): MSR-VTT y ActivityNet Captions.
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la busqueda web realizada; los resultados obtenidos no guardaban relacion con el modelo.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sentimenmasalahskic es un modelo publicado en HuggingFace por el usuario AlfianFarros bajo licencia MIT. El nombre del repositorio sugiere un uso orientado al análisis de sentimiento en indonesio o malayo ("sentimen" y "masalah" son términos de esas lenguas), aunque la model card no confirma explícitamente la tarea, el idioma ni la arquitectura. El repositorio no incluye pipeline declarado, ni descripción técnica, ni datos de entrenamiento.
+Sentimenmasalahskic es un modelo publicado en Hugging Face por el usuario AlfianFarros bajo licencia MIT. El nombre del repositorio sugiere un uso orientado al análisis de sentimiento en indonesio o malayo ("sentimen" y "masalah" son términos de esas lenguas), aunque la model card no confirma explícitamente la tarea, el idioma ni la arquitectura. El repositorio no incluye pipeline declarado, ni descripción técnica, ni datos de entrenamiento.
 
 La información disponible es mínima: únicamente consta la licencia MIT, la etiqueta de región "us" y las fechas de creación y actualización (2 de noviembre de 2026, sin cambios posteriores). No hay descargas ni "likes" registrados, lo que indica que el modelo no ha tenido tracción pública ni validación por parte de la comunidad. No se dispone de datos sobre arquitectura, tamaño, contexto, tokenizador, formato de pesos ni rendimiento en benchmarks.
 
@@ -41,7 +41,7 @@ Respecto al entrenamiento, no hay datos sobre el volumen de tokens, la composici
 
 - Análisis de sentimiento en textos en indonesio o malayo: si el modelo resultase ser un clasificador de sentimiento, podría emplearse para etiquetar reseñas o comentarios; sin embargo, la falta de documentación impide confirmar la tarea y el idioma, por lo que este uso requeriría validación previa.
 - Prototipado rápido con licencia permisiva: al estar bajo MIT, podría integrarse en experimentos internos sin restricciones legales, siempre que se verifique primero su funcionamiento real.
-- Investigación sobre modelos de bajo perfil: sirve como caso de estudio de repositorios publicados sin model card ni métricas, útil para analizar prácticas de publicación en HuggingFace.
+- Investigación sobre modelos de bajo perfil: sirve como caso de estudio de repositorios publicados sin model card ni métricas, útil para analizar prácticas de publicación en Hugging Face.
 - Evaluación comparativa de calidad documental: puede incluirse en estudios sobre trazabilidad y reproducibilidad de modelos open source, dado que carece de información técnica mínima.
 - Filtrado de contenido en pipelines de datos: si finalmente se confirma como clasificador, podría usarse como etapa de preprocesado, pero requeriría una evaluación empírica previa con datos propios.
 - Docencia sobre riesgos de modelos no documentados: ejemplifica por qué conviene exigir model cards completas antes de adoptar un modelo en producción.
@@ -77,5 +77,5 @@ No disponible. La ausencia de datos sobre arquitectura, tamaño y tarea impide i
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AlfianFarros/Sentimenmasalahskic
+- Hugging Face: https://huggingface.co/AlfianFarros/Sentimenmasalahskic
 - No se han encontrado papers, blogs, repositorios de código ni demos adicionales en la información proporcionada.

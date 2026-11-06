@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Zenyx-100M-Base es un modelo de lenguaje de tipo decoder-only denso de 151 millones de parámetros, entrenado desde cero por el autor individual Arko007 (usuario de HuggingFace) sobre texto web, código y matemáticas. A pesar del "100M" del nombre, que corresponde al plan inicial de diseño, el modelo entrenado tiene 151,0 M de parámetros. Sigue una arquitectura estilo Llama con 18 bloques, atención de consultas agrupadas (GQA), SwiGLU, RoPE con θ = 500.000 y normalización RMSNorm en pre-norm, con un contexto máximo de 2.048 tokens y un vocabulario de 49.105 tokens.
+Zenyx-100M-Base es un modelo de lenguaje de tipo decoder-only denso de 151 millones de parámetros, entrenado desde cero por el autor individual Arko007 (usuario de Hugging Face) sobre texto web, código y matemáticas. A pesar del "100M" del nombre, que corresponde al plan inicial de diseño, el modelo entrenado tiene 151,0 M de parámetros. Sigue una arquitectura estilo Llama con 18 bloques, atención de consultas agrupadas (GQA), SwiGLU, RoPE con θ = 500.000 y normalización RMSNorm en pre-norm, con un contexto máximo de 2.048 tokens y un vocabulario de 49.105 tokens.
 
 El modelo está publicado como *base model*, es decir, sin ajuste por instrucciones ni alineamiento de seguridad, y su estado declarado por el autor es "pre-training en curso": los resultados publicados provienen de un checkpoint intermedio de aproximadamente 0,95-1B de tokens de un plan total de 10B. Se entrenó en 2 × Tesla T4 en fp16 con el optimizador Muon para las matrices ocultas y AdamW para embeddings y normas.
 
@@ -108,7 +108,7 @@ Una generación completa de 2.048 tokens con muestreo y penalización por repeti
 - Cabe en GPU consumer: sí, en cualquier GPU consumer moderna e incluso en iGPU con memoria compartida; también es viable en CPU, aunque sin datos de throughput en CPU publicados.
 - Opciones de despliegue: PyTorch/Transformers de forma nativa (es la librería declarada); vLLM y TGI son compatibles en principio por tratarse de una arquitectura decoder estilo Llama, pero no hay receta oficial publicada. llama.cpp y Ollama no están disponibles de serie: haría falta convertir los pesos a GGUF, ya que el repositorio solo contiene safetensors.
 - Latencia y throughput medidos: 373 tokens/s en lote 1 (unos 2,7 ms por token), 2.668 tokens/s en lote 8, 7.040 en lote 32 y 9.821 en lote 64, en una sola T4 con CUDA graph y `torch.compile`. Sin esas optimizaciones, el lote 1 cae a 41 tokens/s en modo eager, una diferencia de 9× que conviene tener en cuenta al planificar el despliegue.
-- Memoria del repositorio: 184,6 GB según HuggingFace, un tamaño desproporcionado para 151 M de parámetros (que ocuparían ~302 MB en fp16); probablemente incluye checkpoints intermedios y estados del optimizador.
+- Memoria del repositorio: 184,6 GB según Hugging Face, un tamaño desproporcionado para 151 M de parámetros (que ocuparían ~302 MB en fp16); probablemente incluye checkpoints intermedios y estados del optimizador.
 
 ## Comparativa con modelos similares
 
@@ -139,5 +139,5 @@ La comparación de rendimiento con estos modelos no está disponible: no hay res
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Arko007/Zenyx-100M-Base
+- Modelo en Hugging Face: https://huggingface.co/Arko007/Zenyx-100M-Base
 - No se han encontrado en la información proporcionada papers, blogs, repositorios de código ni demos adicionales.

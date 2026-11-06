@@ -4,7 +4,7 @@
 
 El modelo `AfriVoxAccent_ST5_spk_acc_pre-wolof_s42_20260907_125134` es un checkpoint de síntesis de voz (TTS) basado en la arquitectura SpeechT5, publicado por `xelsoft-ai-lab`. El nombre del repositorio sugiere que está orientado a la generación de voz con acento africano, concretamente para el idioma wolof, aunque la documentación disponible no lo confirma de forma explícita. Se trata de un modelo con 144.439.266 parámetros, almacenado en formato `safetensors`, y con un tamaño de repositorio de 0.6 GB.
 
-No se ha publicado información sobre el proceso de entrenamiento, los datos utilizados, la licencia ni el rendimiento del modelo. La model card es una plantilla automática generada por HuggingFace y no contiene datos útiles más allá de los metadatos técnicos. Por tanto, este modelo debe considerarse como un artefacto experimental o de investigación, sin documentación de soporte para su uso en producción.
+No se ha publicado información sobre el proceso de entrenamiento, los datos utilizados, la licencia ni el rendimiento del modelo. La model card es una plantilla automática generada por Hugging Face y no contiene datos útiles más allá de los metadatos técnicos. Por tanto, este modelo debe considerarse como un artefacto experimental o de investigación, sin documentación de soporte para su uso en producción.
 
 ## Especificaciones tecnicas
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - Con 144.439.266 parámetros, el modelo en fp32 ocupa aproximadamente 576 MB en memoria.
 - Para inferencia, se recomienda una GPU con al menos 2 GB de VRAM, o una CPU moderna con suficiente RAM.
 - Puede ejecutarse en GPUs de consumo como RTX 3060 o superiores.
-- Opciones de despliegue: HuggingFace Transformers, mediante el pipeline de `text-to-speech`. No se ha documentado soporte para vLLM, llama.cpp, Ollama ni TGI.
+- Opciones de despliegue: Hugging Face Transformers, mediante el pipeline de `text-to-speech`. No se ha documentado soporte para vLLM, llama.cpp, Ollama ni TGI.
 - No se dispone de datos de latencia ni throughput.
 
 ## Comparativa con modelos similares
@@ -72,6 +72,6 @@ No se dispone de información sobre modelos comparables. El autor ha publicado o
 
 ## Enlaces
 
-- HuggingFace: [xelsoft-ai-lab/AfriVoxAccent_ST5_spk_acc_pre-wolof_s42_20260907_125134](https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_ST5_spk_acc_pre-wolof_s42_20260907_125134)
+- Hugging Face: [xelsoft-ai-lab/AfriVoxAccent_ST5_spk_acc_pre-wolof_s42_20260907_125134](https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_ST5_spk_acc_pre-wolof_s42_20260907_125134)
 - Paper de SpeechT5: [arXiv:1910.09700](https://arxiv.org/abs/1910.09700)
 - Otro checkpoint del mismo autor: [AfriVoxAccent_ST5_spk_wolof-tts_s42_20260906_185245](https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_ST5_spk_wolof-tts_s42_20260906_185245/tree/main)

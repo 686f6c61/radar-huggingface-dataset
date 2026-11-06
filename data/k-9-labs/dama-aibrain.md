@@ -2,9 +2,9 @@
 
 ## Resumen
 
-K-9-labs/dama-aibrain es un ajuste fino (fine-tune) publicado por el usuario u organización K-9-labs sobre el modelo base unsloth/gemma-4-e2b-it-unsloth-bnb-4bit. Se distribuye a través de HuggingFace bajo licencia Apache 2.0 y está etiquetado para las tareas de image-text-to-text (entrada de imagen y texto, salida de texto) y text-generation, con soporte declarado únicamente para inglés. El pipeline multimodal y la referencia a la familia Gemma 4 en el nombre del modelo base indican que se trata de un transformer multimodal, aunque la model card no aporta detalles sobre arquitectura interna, recuento de parámetros ni longitud de contexto.
+K-9-labs/dama-aibrain es un ajuste fino (fine-tune) publicado por el usuario u organización K-9-labs sobre el modelo base unsloth/gemma-4-e2b-it-unsloth-bnb-4bit. Se distribuye a través de Hugging Face bajo licencia Apache 2.0 y está etiquetado para las tareas de image-text-to-text (entrada de imagen y texto, salida de texto) y text-generation, con soporte declarado únicamente para inglés. El pipeline multimodal y la referencia a la familia Gemma 4 en el nombre del modelo base indican que se trata de un transformer multimodal, aunque la model card no aporta detalles sobre arquitectura interna, recuento de parámetros ni longitud de contexto.
 
-El modelo se entrenó, según la propia model card, con Unsloth y la librería TRL de HuggingFace, y el autor afirma que el entrenamiento fue "2x más rápido" gracias a Unsloth. No se documentan ni el volumen de datos de ajuste fino, ni la composición del dataset, ni si se aplicaron técnicas de alineación adicionales como RLHF o DPO. El repositorio ocupa 1,5 GB y no registra descargas ni valoraciones en el momento de la consulta, lo que sugiere una publicación muy reciente y sin validación comunitaria.
+El modelo se entrenó, según la propia model card, con Unsloth y la librería TRL de Hugging Face, y el autor afirma que el entrenamiento fue "2x más rápido" gracias a Unsloth. No se documentan ni el volumen de datos de ajuste fino, ni la composición del dataset, ni si se aplicaron técnicas de alineación adicionales como RLHF o DPO. El repositorio ocupa 1,5 GB y no registra descargas ni valoraciones en el momento de la consulta, lo que sugiere una publicación muy reciente y sin validación comunitaria.
 
 La relevancia de esta ficha es limitada pero ilustrativa: se trata de un ejemplo de fine-tune ligero de un modelo multimodal pequeño orientado a conversación, útil para quienes quieran evaluar el flujo Unsloth + TRL sobre Gemma 4 o reutilizar el modelo como punto de partida. La ausencia de benchmarks, de especificaciones técnicas y de documentación de entrenamiento hace imprescindible una evaluación empírica propia antes de considerarlo para producción.
 
@@ -21,20 +21,20 @@ La relevancia de esta ficha es limitada pero ilustrativa: se trata de un ejemplo
 | Licencia | apache-2.0 |
 | Formato de pesos | no disponible (biblioteca transformers; no se confirma safetensors ni GGUF) |
 
-Datos adicionales de la ficha de HuggingFace: repositorio de 1,5 GB, 0 descargas, 0 likes, creado el 2026-09-27 y actualizado el 2026-09-27, etiquetas `transformers`, `gemma4`, `image-text-to-text`, `text-generation-inference`, `unsloth`, `conversational`, `endpoints_compatible`.
+Datos adicionales de la ficha de Hugging Face: repositorio de 1,5 GB, 0 descargas, 0 likes, creado el 2026-09-27 y actualizado el 2026-09-27, etiquetas `transformers`, `gemma4`, `image-text-to-text`, `text-generation-inference`, `unsloth`, `conversational`, `endpoints_compatible`.
 
 ## Arquitectura y entrenamiento
 
 La información disponible no permite describir la arquitectura con detalle. El pipeline declarado (`image-text-to-text`) y la etiqueta `gemma4` apuntan a un transformer multimodal de la familia Gemma 4, pero no se especifica el tipo de atención, la estrategia de codificación de imagen, el número de capas ni la dimensión de los embeddings. El modelo base es `unsloth/gemma-4-e2b-it-unsloth-bnb-4bit`, lo que implica que el ajuste fino se realizó sobre una versión ya cuantizada a 4 bits en formato bitsandbytes y con instrucciones (sufijo `-it`).
 
-En cuanto al entrenamiento, la model card únicamente indica que se emplearon Unsloth y TRL de HuggingFace para acelerar el proceso. No se publican el número de tokens de entrenamiento, la composición del dataset, la duración del ajuste, los hiperparámetros, ni si hubo fases de RLHF, DPO o cualquier otra técnica de alineación. Tampoco se documentan innovaciones técnicas específicas más allá del uso de Unsloth como optimizador de memoria y velocidad.
+En cuanto al entrenamiento, la model card únicamente indica que se emplearon Unsloth y TRL de Hugging Face para acelerar el proceso. No se publican el número de tokens de entrenamiento, la composición del dataset, la duración del ajuste, los hiperparámetros, ni si hubo fases de RLHF, DPO o cualquier otra técnica de alineación. Tampoco se documentan innovaciones técnicas específicas más allá del uso de Unsloth como optimizador de memoria y velocidad.
 
 ## Capacidades
 
 - Generación de texto conversacional y continuaciones multimodales, según el pipeline declarado (image-text-to-text).
 - Procesamiento conjunto de imagen y texto como entrada, con salida en forma de texto.
 - Ajuste fino orientado a conversación, según la etiqueta `conversational`.
-- Compatibilidad con text-generation-inference y con endpoints de HuggingFace (`endpoints_compatible`).
+- Compatibilidad con text-generation-inference y con endpoints de Hugging Face (`endpoints_compatible`).
 - Soporte de `tool calling` / `function calling`: no disponible en la información proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
 - Capacidades multilingües: no disponibles; el modelo declara únicamente inglés.
@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| K-9-labs/dama-aibrain | no disponible | no disponible | sin benchmarks publicados | apache-2.0 | HuggingFace (0 descargas) |
-| unsloth/gemma-4-e2b-it-unsloth-bnb-4bit (modelo base) | no disponible | no disponible | no disponible en la información proporcionada | no disponible en la información proporcionada | HuggingFace |
-| Otras alternativas multimodales pequenas (por ejemplo, variantes de la familia Gemma 3n o Qwen2.5-VL de 2-4B) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| K-9-labs/dama-aibrain | no disponible | no disponible | sin benchmarks publicados | apache-2.0 | Hugging Face (0 descargas) |
+| unsloth/gemma-4-e2b-it-unsloth-bnb-4bit (modelo base) | no disponible | no disponible | no disponible en la información proporcionada | no disponible en la información proporcionada | Hugging Face |
+| Otras alternativas multimodales pequenas (por ejemplo, variantes de la familia Gemma 3n o Qwen2.5-VL de 2-4B) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos suficientes para establecer una comparativa cuantitativa fiable con modelos de la misma categoría. Cualquier comparación requeriría ejecutar evaluaciones propias sobre el mismo conjunto de tareas.
 
@@ -87,8 +87,8 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/K-9-labs/dama-aibrain
+- Modelo en Hugging Face: https://huggingface.co/K-9-labs/dama-aibrain
 - Modelo base: https://huggingface.co/unsloth/gemma-4-e2b-it-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Librería TRL de HuggingFace: https://github.com/huggingface/trl
+- Librería TRL de Hugging Face: https://github.com/huggingface/trl
 - Resultados de la búsqueda web: no se han encontrado enlaces relevantes sobre este modelo; los resultados devueltos corresponden a artículos sobre la letra "K" y no guardan relación con el modelo.

@@ -68,7 +68,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/LiquidAI/LFM2.5-350M-GGUF
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/LiquidAI/LFM2.5-350M-GGUF
 - Modelo base (safetensors): https://huggingface.co/LiquidAI/LFM2.5-350M
 - Blog de Liquid AI sobre LFM2.5-350M: https://www.liquid.ai/blog/lfm2-5-350m-no-size-left-behind
 - Documentación oficial del modelo: https://docs.liquid.ai/lfm/models/lfm25-350m

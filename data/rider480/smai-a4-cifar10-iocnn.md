@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parametros | Contexto | Accuracy CIFAR-10 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| IOC-NN (este modelo) | 199.082 | no aplica | 49,54% (limpio) / 39,59% (p=0,50) | no disponible | HuggingFace |
+| IOC-NN (este modelo) | 199.082 | no aplica | 49,54% (limpio) / 39,59% (p=0,50) | no disponible | Hugging Face |
 | MLP estandar (referencia del autor) | no disponible | no aplica | no disponible (brecha 12,39%) | no disponible | no disponible |
 | Otras IOC-NN sobre CIFAR-10 | no disponible | no aplica | no disponible | no disponible | no disponible |
 
@@ -89,7 +89,7 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rider480/smai-a4-cifar10-iocnn
+- Hugging Face: https://huggingface.co/rider480/smai-a4-cifar10-iocnn
 - Dataset CIFAR-10: https://www.cs.toronto.edu/~kriz/cifar.html
 - Curso SMAI, IIIT Hyderabad: no disponible en la información proporcionada
 - Paper de IOC-NN: no disponible en la información proporcionada

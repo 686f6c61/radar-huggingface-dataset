@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| francesca9805/ind-latn-100mb-ppt-mp-struct-core-100mb_seed455 | 124,77 M | no disponible (1.024 en GPT-2 estandar) | no disponible | HuggingFace, safetensors, 0 descargas | Ajuste SFT de un modelo Goldfish de 100 MB |
-| goldfish-models/ind_latn_100mb | ~100 MB de datos de entrenamiento (parametros no indicados en la informacion disponible) | no disponible | no disponible en esta ficha | HuggingFace | Modelo base sin ajuste supervisado; familia monolingue multilingue |
-| GPT-2 small (openai-community/gpt2) | 124 M | 1.024 tokens | MIT (segun su repositorio) | HuggingFace, safetensors y bin | Referencia canonica de la arquitectura; rendimiento multilingue limitado |
-| SmolLM2-135M | 135 M | 2.048 tokens | Apache 2.0 (segun su repositorio) | HuggingFace | Alternativa moderna de tamano comparable, con datos de entrenamiento mucho mayores |
+| francesca9805/ind-latn-100mb-ppt-mp-struct-core-100mb_seed455 | 124,77 M | no disponible (1.024 en GPT-2 estandar) | no disponible | Hugging Face, safetensors, 0 descargas | Ajuste SFT de un modelo Goldfish de 100 MB |
+| goldfish-models/ind_latn_100mb | ~100 MB de datos de entrenamiento (parametros no indicados en la informacion disponible) | no disponible | no disponible en esta ficha | Hugging Face | Modelo base sin ajuste supervisado; familia monolingue multilingue |
+| GPT-2 small (openai-community/gpt2) | 124 M | 1.024 tokens | MIT (segun su repositorio) | Hugging Face, safetensors y bin | Referencia canonica de la arquitectura; rendimiento multilingue limitado |
+| SmolLM2-135M | 135 M | 2.048 tokens | Apache 2.0 (segun su repositorio) | Hugging Face | Alternativa moderna de tamano comparable, con datos de entrenamiento mucho mayores |
 
 Los datos de rendimiento de los tres modelos comparados no se han facilitado en la informacion disponible, por lo que no se incluye ninguna comparacion numerica. Las cifras de licencia y contexto de GPT-2 small y SmolLM2-135M proceden de sus repositorios publicos y no de la informacion proporcionada en esta ficha.
 
@@ -93,7 +93,7 @@ Los datos de rendimiento de los tres modelos comparados no se han facilitado en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/ind-latn-100mb-ppt-mp-struct-core-100mb_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/ind-latn-100mb-ppt-mp-struct-core-100mb_seed455
 - Modelo base: https://huggingface.co/goldfish-models/ind_latn_100mb
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/e1gn22fk
 - Repositorio de TRL: https://github.com/huggingface/trl

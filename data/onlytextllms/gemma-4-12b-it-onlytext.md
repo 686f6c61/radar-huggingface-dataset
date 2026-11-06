@@ -90,7 +90,7 @@ La diferencia principal frente al modelo base es la eliminacion de las torres de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OnlyTextLLMs/gemma-4-12B-it-OnlyText
+- Modelo en Hugging Face: https://huggingface.co/OnlyTextLLMs/gemma-4-12B-it-OnlyText
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Modelo base (variante 12B): https://huggingface.co/google/gemma-4-12B
 - Cuantizacion de terceros text-only: https://huggingface.co/HYPR4AI/Gemma-4-12B-MXFP4A16-Text-Only

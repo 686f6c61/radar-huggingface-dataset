@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 |---|---|---|---|---|---|
 | olmo2-1B-24domains-vertex-linearsqrt-hellaswag | 1,41B | No disponible | Preentrenamiento con mezcla optimizada por LinMix sobre 24 dominios | MIT | Hugging Face (credible-ai) |
 | OLMo 2 1B (AllenAI) | ~1,4B (misma familia arquitectonica) | No disponible en esta ficha | Modelo base de propósito general de la familia OLMo 2 | Apache 2.0 (modelo oficial) | Hugging Face (allenai) |
-| SmolLM2-1.7B (HuggingFace) | ~1,7B | 8.192 tokens | Preentrenamiento a gran escala con dataset propio, orientado a uso general | Apache 2.0 | Hugging Face (HuggingFaceTB) |
+| SmolLM2-1.7B (Hugging Face) | ~1,7B | 8.192 tokens | Preentrenamiento a gran escala con dataset propio, orientado a uso general | Apache 2.0 | Hugging Face (HuggingFaceTB) |
 | Qwen2.5-1.5B (Alibaba) | ~1,5B | 32.768 tokens | Modelo base multilingüe con amplio soporte de tooling | Apache 2.0 | Hugging Face (Qwen) |
 
 Nota: los datos de los modelos de terceros provienen de su documentación pública y deben verificarse antes de usarse en una decisión técnica; esta ficha solo aporta cifras verificadas del modelo de credible-ai. La comparación honesta es que este checkpoint no compite en capacidad general con los otros tres: su ventaja es la trazabilidad total del pipeline de datos y la reproducibilidad del experimento de mezcla.

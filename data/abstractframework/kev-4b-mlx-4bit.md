@@ -104,7 +104,7 @@ No se dispone de datos de benchmarks comparativos con otras alternativas de deci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AbstractFramework/kev-4b-mlx-4bit
+- Hugging Face: https://huggingface.co/AbstractFramework/kev-4b-mlx-4bit
 - Modelo base: https://huggingface.co/jaredpalmer/kev-4b
 - Documentación de decision models de AbstractCore: https://github.com/lpalbou/AbstractCore/blob/main/docs/decision-models.md
 - Repositorio mlx-lm: https://github.com/ml-explore/mlx-lm

@@ -4,7 +4,7 @@
 
 TRELLIS.2-4B es un modelo generativo de 3D de 4.000 millones de parámetros desarrollado por Microsoft. Su objetivo es convertir una imagen única en un activo tridimensional de alta fidelidad, incluyendo malla y materiales PBR (physical-based rendering). El modelo resuelve el problema de la generacion de geometrias complejas, como superficies abiertas o estructuras no manifold, que los metodos basados en campos de iso-superficie (SDF, Flexicubes) no gestionan bien.
 
-Arquitectonicamente combina un transformer de flow matching con un VAE 3D disperso basado en una representacion denominada O-Voxel. Esta estructura codifica tanto geometria como apariencia de forma compacta, con un downsampling espacial de 16x. Puede generar activos con resoluciones de voxel desde 512³ hasta 1536³, lo que lo hace relevante para aplicaciones que requieren detalle y materiales translucidos. Se distribuye bajo licencia MIT y esta disponible en HuggingFace.
+Arquitectonicamente combina un transformer de flow matching con un VAE 3D disperso basado en una representacion denominada O-Voxel. Esta estructura codifica tanto geometria como apariencia de forma compacta, con un downsampling espacial de 16x. Puede generar activos con resoluciones de voxel desde 512³ hasta 1536³, lo que lo hace relevante para aplicaciones que requieren detalle y materiales translucidos. Se distribuye bajo licencia MIT y esta disponible en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -82,8 +82,8 @@ No disponible. La informacion proporcionada no incluye datos comparativos con ot
 
 ## Enlaces
 
-- HuggingFace (modelo del autor): [https://huggingface.co/chibifire/TRELLIS.2-4B](https://huggingface.co/chibifire/TRELLIS.2-4B)
-- HuggingFace (modelo oficial de Microsoft): [https://huggingface.co/microsoft/TRELLIS.2-4B](https://huggingface.co/microsoft/TRELLIS.2-4B)
+- Hugging Face (modelo del autor): [https://huggingface.co/chibifire/TRELLIS.2-4B](https://huggingface.co/chibifire/TRELLIS.2-4B)
+- Hugging Face (modelo oficial de Microsoft): [https://huggingface.co/microsoft/TRELLIS.2-4B](https://huggingface.co/microsoft/TRELLIS.2-4B)
 - Paper: [https://arxiv.org/abs/2512.14692](https://arxiv.org/abs/2512.14692)
 - Repositorio: [https://github.com/microsoft/TRELLIS.2](https://github.com/microsoft/TRELLIS.2)
 - Pagina del proyecto: [https://microsoft.github.io/TRELLIS.2](https://microsoft.github.io/TRELLIS.2)

@@ -4,7 +4,7 @@
 
 `leidianebeatriz/qwen2vl-golpe-lora` es un adaptador LoRA entrenado mediante SFT (supervised fine-tuning) sobre el modelo multimodal `unsloth/qwen2-vl-2b-instruct-unsloth-bnb-4bit`, que a su vez es una version ya cuantizada a 4 bits de Qwen2-VL-2B-Instruct, el modelo vision-lenguaje de 2.000 millones de parametros de la familia Qwen2-VL de Alibaba. El repositorio contiene unicamente los pesos del adaptador (0,2 GB) en formato safetensors y se distribuye a traves de la libreria PEFT, por lo que no es un modelo autonomo: requiere descargar el modelo base y cargar el adaptador encima.
 
-El problema que resuelve no esta documentado. La model card publicada es la plantilla por defecto de HuggingFace, con todos los campos marcados como `[More Information Needed]`: no se declaran datos de entrenamiento, hiperparametros, idioma, licencia ni evaluacion. El unico indicio sobre su proposito es el sufijo `golpe` del identificador, que no viene acompanado de ninguna explicacion tecnica en la informacion disponible.
+El problema que resuelve no esta documentado. La model card publicada es la plantilla por defecto de Hugging Face, con todos los campos marcados como `[More Information Needed]`: no se declaran datos de entrenamiento, hiperparametros, idioma, licencia ni evaluacion. El unico indicio sobre su proposito es el sufijo `golpe` del identificador, que no viene acompanado de ninguna explicacion tecnica en la informacion disponible.
 
 Su relevancia es, por tanto, limitada y de caracter experimental: cero descargas y cero likes en el momento de la consulta, licencia sin especificar y sin resultados publicados. Resulta util como ejemplo de flujo de trabajo de fine-tuning multimodal con Unsloth + TRL + PEFT sobre un modelo de 2B que cabe en GPUs de consumo, pero no como componente listo para produccion.
 
@@ -32,7 +32,7 @@ Su relevancia es, por tanto, limitada y de caracter experimental: cero descargas
 
 No se dispone de informacion sobre la arquitectura interna del adaptador mas alla de lo que implica su etiquetado: es un LoRA de bajo rango sobre un transformer multimodal, entrenado con SFT mediante la combinacion de Unsloth, TRL y PEFT. El modelo base pertenece a la familia Qwen2-VL, que combina un encoder visual con un decoder de lenguaje causal, pero esta ficha no aporta detalles sobre rangos, matrices objetivo del adaptador, capas congeladas ni configuracion concreta del entrenamiento.
 
-Tampoco hay datos sobre el dataset, el numero de tokens de entrenamiento, la composicion de las muestras (pares imagen-texto, texto solo, etc.), la existencia de RLHF o DPO posteriores, ni sobre hiperparametros como learning rate, epocas o precision (fp16/bf16). La unica referencia bibliografica presente en las etiquetas del repositorio, `arxiv:1910.09700`, corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono citado en la plantilla por defecto de HuggingFace, no a un paper descriptivo del modelo. No debe interpretarse como documentacion tecnica del adaptador.
+Tampoco hay datos sobre el dataset, el numero de tokens de entrenamiento, la composicion de las muestras (pares imagen-texto, texto solo, etc.), la existencia de RLHF o DPO posteriores, ni sobre hiperparametros como learning rate, epocas o precision (fp16/bf16). La unica referencia bibliografica presente en las etiquetas del repositorio, `arxiv:1910.09700`, corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono citado en la plantilla por defecto de Hugging Face, no a un paper descriptivo del modelo. No debe interpretarse como documentacion tecnica del adaptador.
 
 ## Capacidades
 
@@ -81,9 +81,9 @@ No hay datos de rendimiento del adaptador que permitan una comparativa funcional
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento comparado |
 |---|---|---|---|---|---|
 | Este adaptador (sobre Qwen2-VL-2B-Instruct) | No disponible (base ~2.000 M) | No disponible | No disponible | Repositorio con 0 descargas, 0 likes | No disponible |
-| Qwen2-VL-2B-Instruct (base) | ~2.000 M | No disponible en esta ficha | No disponible en esta ficha (la familia Qwen2-VL se publica habitualmente bajo Apache 2.0) | Ampliamente distribuido en HuggingFace | No disponible |
-| InternVL2-2B | ~2.000 M | No disponible | No disponible | Publico en HuggingFace | No disponible |
-| SmolVLM-2.2B | ~2.200 M | No disponible | No disponible | Publico en HuggingFace | No disponible |
+| Qwen2-VL-2B-Instruct (base) | ~2.000 M | No disponible en esta ficha | No disponible en esta ficha (la familia Qwen2-VL se publica habitualmente bajo Apache 2.0) | Ampliamente distribuido en Hugging Face | No disponible |
+| InternVL2-2B | ~2.000 M | No disponible | No disponible | Publico en Hugging Face | No disponible |
+| SmolVLM-2.2B | ~2.200 M | No disponible | No disponible | Publico en Hugging Face | No disponible |
 
 La unica conclusion defendible con la informacion disponible es que este adaptador no puede compararse en calidad con ninguna alternativa, porque carece de evaluacion publicada.
 
@@ -103,7 +103,7 @@ La unica conclusion defendible con la informacion disponible es que este adaptad
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/leidianebeatriz/qwen2vl-golpe-lora
+- Repositorio Hugging Face: https://huggingface.co/leidianebeatriz/qwen2vl-golpe-lora
 - Modelo base: https://huggingface.co/unsloth/qwen2-vl-2b-instruct-unsloth-bnb-4bit
 - Paper de referencia citado en las etiquetas (calculador de emisiones, no del modelo): https://arxiv.org/abs/1910.09700
 - Las busquedas web proporcionadas no devolvieron ningun resultado relacionado con este modelo: los resultados recibidos corresponden a paginas de ayuda y foros de Google Maps, sin relacion con el repositorio.

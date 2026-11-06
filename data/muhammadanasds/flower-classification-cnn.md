@@ -4,7 +4,7 @@
 
 El modelo `flower-classification-cnn` es un clasificador de imágenes basado en redes neuronales convolucionales (CNN) desarrollado por **MuhammadAnasDS** utilizando la librería **Keras**. Su propósito es identificar y clasificar diferentes especies de flores a partir de fotografías, una tarea habitual en visión por computador. Se distribuye bajo licencia **Apache 2.0** y tiene un tamaño de repositorio de **0,2 GB**.
 
-No se ha publicado información detallada sobre la arquitectura exacta, los datos de entrenamiento ni las métricas de rendimiento, ya que la model card solo contiene la licencia. El modelo está disponible en HuggingFace pero no cuenta con descargas ni valoraciones, lo que indica que se trata de un proyecto experimental o sin validar por la comunidad.
+No se ha publicado información detallada sobre la arquitectura exacta, los datos de entrenamiento ni las métricas de rendimiento, ya que la model card solo contiene la licencia. El modelo está disponible en Hugging Face pero no cuenta con descargas ni valoraciones, lo que indica que se trata de un proyecto experimental o sin validar por la comunidad.
 
 Aunque no tiene documentación técnica, su naturaleza ligera y su licencia permisiva lo hacen apto para prototipados o como punto de partida en tareas de clasificación de imágenes.
 
@@ -64,13 +64,13 @@ No disponible. No se dispone de información suficiente para realizar una compar
 ## Limitaciones y advertencias
 
 - No existe documentación técnica más allá de la licencia, por lo que se desconocen las clases exactas, la resolución de entrada y el comportamiento ante imágenes fuera del dominio de entrenamiento.
-- El modelo no tiene descargas ni likes en HuggingFace, lo que indica que no ha sido validado por la comunidad ni probado en entornos reales.
+- El modelo no tiene descargas ni likes en Hugging Face, lo que indica que no ha sido validado por la comunidad ni probado en entornos reales.
 - No se conocen los datos de entrenamiento, por lo que puede presentar sesgos hacia las especies incluidas en su dataset y fallar en flores no representadas.
 - Al no ser un modelo generativo, el riesgo de alucinación textual no aplica; sin embargo, las predicciones de clasificación pueden ser incorrectas si la imagen no está dentro de la distribución de entrenamiento.
 - La licencia Apache 2.0 permite el uso comercial, pero al no existir información sobre el proceso de entrenamiento ni sobre su precisión, es responsabilidad del usuario validar el modelo antes de emplearlo en producción.
-- La fecha de creación en HuggingFace es 2026-09-09, lo que sugiere que el modelo es muy reciente o que la fecha registrada es errónea; no hay garantía de mantenimiento.
+- La fecha de creación en Hugging Face es 2026-09-09, lo que sugiere que el modelo es muy reciente o que la fecha registrada es errónea; no hay garantía de mantenimiento.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MuhammadAnasDS/flower-classification-cnn
+- Hugging Face: https://huggingface.co/MuhammadAnasDS/flower-classification-cnn
 - No se han encontrado otros enlaces relevantes sobre este modelo (papers, blogs, repositorios o demos específicos).

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tohirju/sl-wolverine es un repositorio de modelo alojado en HuggingFace por el usuario Tohirju. En el momento de la consulta, la informacion publica disponible es minima: no se declara pipeline de inferencia, no se especifican idiomas soportados, no hay tarjeta de modelo con descripcion tecnica y no se han registrado descargas ni interacciones (0 descargas, 0 likes) desde su creacion el 17 de septiembre de 2026. El repositorio esta marcado como de acceso restringido (gated), por lo que es necesario aceptar condiciones adicionales en HuggingFace antes de poder descargar los pesos.
+Tohirju/sl-wolverine es un repositorio de modelo alojado en Hugging Face por el usuario Tohirju. En el momento de la consulta, la informacion publica disponible es minima: no se declara pipeline de inferencia, no se especifican idiomas soportados, no hay tarjeta de modelo con descripcion tecnica y no se han registrado descargas ni interacciones (0 descargas, 0 likes) desde su creacion el 17 de septiembre de 2026. El repositorio esta marcado como de acceso restringido (gated), por lo que es necesario aceptar condiciones adicionales en Hugging Face antes de poder descargar los pesos.
 
 La licencia declarada es "other", es decir, una licencia personalizada no estandarizada que no se detalla en la informacion proporcionada. Esto implica que las condiciones de uso comercial, redistribucion y atribucion son desconocidas y deben verificarse directamente en el repositorio antes de cualquier utilizacion.
 
@@ -21,7 +21,7 @@ No es posible determinar la arquitectura, el tamano, la longitud de contexto ni 
 | Licencia | other (licencia personalizada no detallada) |
 | Formato de pesos | no disponible |
 | Pipeline de inferencia | no disponible |
-| Acceso | restringido (gated); requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated); requiere aceptar condiciones en Hugging Face |
 | Autor | Tohirju |
 | Fecha de creacion | 2026-09-17 |
 | Fecha de ultima actualizacion | 2026-09-17 |
@@ -50,7 +50,7 @@ No disponible. No es posible recomendar casos de uso concretos sin conocer el ta
 
 Como orientacion general sobre el proceso, antes de evaluar este repositorio para un caso de uso real conviene:
 
-- Verificar la licencia personalizada ("other") directamente en la pagina de HuggingFace, ya que puede restringir el uso comercial.
+- Verificar la licencia personalizada ("other") directamente en la pagina de Hugging Face, ya que puede restringir el uso comercial.
 - Comprobar el acceso gated y las condiciones que el autor exige para descargar los pesos.
 - Revisar si existe tarjeta de modelo, ficha tecnica o documentacion adjunta una vez obtenido el acceso.
 - Validar el formato de pesos (safetensors, GGUF, PyTorch binario u otro) para confirmar la compatibilidad con el stack de despliegue previsto.
@@ -78,7 +78,7 @@ No disponible. No es posible establecer una comparativa con alternativas de la m
 ## Limitaciones y advertencias
 
 - Ausencia total de documentacion tecnica: no hay tarjeta de modelo, paper, repositorio de codigo ni resultados de evaluacion publicados.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace para poder descargar los pesos, lo que anade friccion y dependencia del autor.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face para poder descargar los pesos, lo que anade friccion y dependencia del autor.
 - Licencia "other": las condiciones de uso comercial, redistribucion y atribucion son desconocidas; no debe asumirse que el uso comercial este permitido.
 - Cero adopcion verificable: 0 descargas y 0 likes implican que no hay evidencia de uso, validacion por terceros ni comunidad de soporte.
 - Riesgo de suplantacion o contenido no verificado: la busqueda web no devolvio ningun resultado asociado al modelo y los resultados obtenidos correspondian a sitios de contenido para adultos, totalmente ajenos. Esto impide validar la identidad, la procedencia y la calidad del artefacto.
@@ -88,7 +88,7 @@ No disponible. No es posible establecer una comparativa con alternativas de la m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Tohirju/sl-wolverine
+- Hugging Face: https://huggingface.co/Tohirju/sl-wolverine
 - Repositorio de codigo: no disponible
 - Paper: no disponible
 - Blog o documentacion tecnica: no disponible

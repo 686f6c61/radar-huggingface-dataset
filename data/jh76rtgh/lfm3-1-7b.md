@@ -6,7 +6,7 @@ LFM3-1.7B es un modelo de lenguaje de 1.730 millones de parametros (1,73B) desar
 
 El modelo se distribuye como un fine-tune del checkpoint base `LiquidAI/LFM3-1.7B-Base` y esta post-entrenado para su uso en entornos agenticos como Hermes Agent, Pi y OpenClaw, con una ventana de contexto de 256K tokens (entrada mas salida). Su vocabulario es de 128.000 tokens y cubre 16 idiomas, entre ellos el castellano. La relevancia actual del modelo radica en su combinacion de contexto muy largo, tamano reducido y entrenamiento orientado a tool calling y salidas estructuradas, lo que lo posiciona como candidato para agentes locales y aplicaciones de dominio especializado con ajuste fino en una sola GPU.
 
-La ficha que sigue se basa en la informacion disponible en HuggingFace y en la model card del autor. No se han publicado resultados de benchmarks detallados en la informacion proporcionada, por lo que las secciones correspondientes se marcan como no disponibles.
+La ficha que sigue se basa en la informacion disponible en Hugging Face y en la model card del autor. No se han publicado resultados de benchmarks detallados en la informacion proporcionada, por lo que las secciones correspondientes se marcan como no disponibles.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ La ficha que sigue se basa en la informacion disponible en HuggingFace y en la m
 | Longitud de contexto | 256K tokens (entrada + salida) |
 | Tipos de cuantizacion | 4 bits mencionado en la model card (aproximadamente 1 GB de memoria); otras cuantizaciones no disponibles |
 | Idiomas soportados | Ingles, arabe, chino, frances, aleman, italiano, japones, coreano, portugues, espanol, vietnamita, tailandes, indonesio, hindi, ruso y polaco |
-| Licencia | LFM Open License v1.0 (licencia "other" en HuggingFace) |
+| Licencia | LFM Open License v1.0 (licencia "other" en Hugging Face) |
 | Formato de pesos | Safetensors (libreria transformers, requiere `custom_code`) |
 
 ## Arquitectura y entrenamiento
@@ -80,10 +80,10 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jh76rtgh/LFM3-1.7B
+- Modelo en Hugging Face: https://huggingface.co/jh76rtgh/LFM3-1.7B
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B-Base
 - Blog de lanzamiento de la familia LFM3: https://www.liquid.ai/blog/lfm3
 - Documentacion de Liquid AI: https://docs.liquid.ai/lfm/getting-started/welcome
 - Consola/API: https://console.liquid.ai/dashboard
 - Playground: https://playground.liquid.ai/
-- Coleccion LFM3 en HuggingFace: https://huggingface.co/collections/LiquidAI/lfm3
+- Coleccion LFM3 en Hugging Face: https://huggingface.co/collections/LiquidAI/lfm3

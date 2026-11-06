@@ -6,7 +6,7 @@ XORTRON-AgentRICO-GGUF es una cuantización en formato GGUF del modelo orcaroute
 
 El modelo se distribuye únicamente en pesos GGUF, con un repositorio de 190,8 GB que agrupa presumiblemente varias cuantizaciones, y está etiquetado como vision-language-model, además de incluir las etiquetas `text-generation-inference`, `endpoints_compatible` y `conversational`. Según la ficha de terceros de Featherless, el contexto declarado es de 32 000 tokens, si bien el autor no publica esa cifra en la model card. El idioma declarado es únicamente el inglés.
 
-Su relevancia actual es doble: por un lado, sirve como objeto de estudio para equipos de seguridad, alineamiento y red teaming que necesitan medir la capacidad operativa de modelos sin salvaguardas; por otro, ilustra un patrón problemático de publicación en HuggingFace, con licencia sin declarar, acuerdo de acceso restringido redactado por el propio autor y ausencia total de benchmarks públicos.
+Su relevancia actual es doble: por un lado, sirve como objeto de estudio para equipos de seguridad, alineamiento y red teaming que necesitan medir la capacidad operativa de modelos sin salvaguardas; por otro, ilustra un patrón problemático de publicación en Hugging Face, con licencia sin declarar, acuerdo de acceso restringido redactado por el propio autor y ausencia total de benchmarks públicos.
 
 ## Especificaciones tecnicas
 
@@ -104,7 +104,7 @@ Los datos de las alternativas provienen de su documentacion publica y no de la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/darkc0de/XORTRON-AgentRICO-GGUF
+- Modelo en Hugging Face: https://huggingface.co/darkc0de/XORTRON-AgentRICO-GGUF
 - Mirror de cuantizaciones de mradermacher: https://huggingface.co/mradermacher/XORTRON-AgentRICO-GGUF
 - Modelo base: https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored
 - Dataset declarado: https://huggingface.co/datasets/darkc0de/The-Mind-of-XORTRON

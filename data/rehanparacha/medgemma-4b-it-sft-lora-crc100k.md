@@ -2,7 +2,7 @@
 
 ## Resumen
 
-medgemma-4b-it-sft-lora-crc100k es un ajuste fino (fine-tuning) supervisado del modelo médico google/medgemma-4b-it, publicado por el usuario rehanparacha en HuggingFace. El nombre del repositorio sugiere que el entrenamiento se ha realizado con un conjunto de datos denominado "crc100k", presumiblemente orientado a cáncer colorrectal y con del orden de 100.000 ejemplos, aunque la model card no documenta ni el dataset ni la tarea concreta. Se trata, por tanto, de un derivado de un modelo base de aproximadamente 4.000 millones de parámetros, ajustado con la librería TRL mediante SFT (supervised fine-tuning).
+medgemma-4b-it-sft-lora-crc100k es un ajuste fino (fine-tuning) supervisado del modelo médico google/medgemma-4b-it, publicado por el usuario rehanparacha en Hugging Face. El nombre del repositorio sugiere que el entrenamiento se ha realizado con un conjunto de datos denominado "crc100k", presumiblemente orientado a cáncer colorrectal y con del orden de 100.000 ejemplos, aunque la model card no documenta ni el dataset ni la tarea concreta. Se trata, por tanto, de un derivado de un modelo base de aproximadamente 4.000 millones de parámetros, ajustado con la librería TRL mediante SFT (supervised fine-tuning).
 
 La relevancia de esta ficha es limitada pero informativa: el modelo tiene 0 descargas y 0 "likes" en el momento de la consulta, no incluye resultados de benchmarks, no declara licencia efectiva (el campo aparece como el literal `license`, sin identificador) y no especifica idiomas soportados. Es un ejemplo típico de artefacto de investigación publicado de forma mínima: útil como referencia de un pipeline de ajuste con TRL sobre MedGemma, pero sin la documentación necesaria para evaluarlo en producción.
 
@@ -82,8 +82,8 @@ Caveat importante: el repositorio ocupa 2,8 GB, un tamano inferior al esperado p
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos de rendimiento |
 |---|---|---|---|---|---|
-| rehanparacha/medgemma-4b-it-sft-lora-crc100k | ~4B (heredado del base) | no disponible | no disponible | HuggingFace, 0 descargas | no publicados |
-| google/medgemma-4b-it (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible | HuggingFace (referenciado como base) | no disponible en esta ficha |
+| rehanparacha/medgemma-4b-it-sft-lora-crc100k | ~4B (heredado del base) | no disponible | no disponible | Hugging Face, 0 descargas | no publicados |
+| google/medgemma-4b-it (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible | Hugging Face (referenciado como base) | no disponible en esta ficha |
 | Otros ajustes finos medicos de ~4B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion verificada sobre alternativas comparables dentro de la documentacion y la busqueda proporcionadas, por lo que no es posible establecer una comparacion cuantitativa de rendimiento, contexto o licencia frente a otros modelos de la misma categoria.
@@ -104,7 +104,7 @@ No se dispone de informacion verificada sobre alternativas comparables dentro de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rehanparacha/medgemma-4b-it-sft-lora-crc100k
+- Modelo en Hugging Face: https://huggingface.co/rehanparacha/medgemma-4b-it-sft-lora-crc100k
 - Modelo base (google/medgemma-4b-it): https://huggingface.co/google/medgemma-4b-it
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Nota sobre la busqueda web: los resultados proporcionados (documentacion sobre la sentencia `switch` de Java en W3Schools, GeeksforGeeks, Baeldung, JavaSpring y Oracle) no guardan relacion con este modelo y no se incluyen como fuentes.

@@ -83,7 +83,7 @@ No disponible. La informacion suministrada no incluye datos de rendimiento de mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Artha-v1-E2B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Artha-v1-E2B-GGUF
 - Modelo base: https://huggingface.co/developerJenis/Artha-v1-E2B
 - Pagina de resumen y descargas del autor: https://hf.tst.eu/model#Artha-v1-E2B-GGUF
 - Instrucciones de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

@@ -18,7 +18,7 @@ Su relevancia es práctica: SAM 3 se distribuye habitualmente en PyTorch, y esta
 | Longitud de contexto | no disponible (modelo de visión, no de texto) |
 | Tipos de cuantización | fp16 (única precisión publicada) |
 | Idiomas soportados | no disponible (modelo de visión) |
-| Licencia | SAM License (Meta), etiquetada como `other` en HuggingFace |
+| Licencia | SAM License (Meta), etiquetada como `other` en Hugging Face |
 | Formato de pesos | ONNX (fp16) |
 | Tamaño del repositorio | 1,0 GB |
 | Backend de ejecución | ONNX Runtime con DirectML |
@@ -83,6 +83,6 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Filmreif/m8ycolor-sam3-dml
+- Hugging Face: https://huggingface.co/Filmreif/m8ycolor-sam3-dml
 - Export ONNX de origen: https://huggingface.co/jshirota/sam3-text-onnx
 - Licencia SAM: incluida en el repositorio como `LICENSE`

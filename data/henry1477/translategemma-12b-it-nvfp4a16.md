@@ -88,7 +88,7 @@ La comparativa se basa en datos publicos de los repositorios. No se dispone de b
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/henry1477/translategemma-12b-it-NVFP4A16
+- Repositorio Hugging Face: https://huggingface.co/henry1477/translategemma-12b-it-NVFP4A16
 - Modelo base: https://huggingface.co/google/translategemma-12b-it
 - Blog de Google sobre TranslateGemma: https://blog.google/innovation-and-ai/technology/developers-tools/translategemma/
 - Página de TranslateGemma en Ollama: https://ollama.com/library/translategemma:12b

@@ -78,7 +78,7 @@ Nota: los datos de precisión de los modelos comparados provienen de referencias
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ketiswp/onnx-model-zoo-SqueezeNet1.0-ImageNet-opset12-int8-uint8-onnx
+- Repositorio Hugging Face: https://huggingface.co/ketiswp/onnx-model-zoo-SqueezeNet1.0-ImageNet-opset12-int8-uint8-onnx
 - Versión FP32 (enlazada): https://huggingface.co/ketiswp/onnx-model-zoo-SqueezeNet1.0-ImageNet-opset12-fp32-onnx
 - Modelo original en ONNX Model Zoo: https://github.com/onnx/models/tree/4f43949841cb55a0b98dc8fcd045431ccafd9f96/validated/vision/classification/squeezenet
 - ONNX Model Zoo general: https://github.com/onnx/models

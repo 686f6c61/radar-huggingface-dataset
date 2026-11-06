@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`haorancao/personal-classification` es un prototipo de investigación publicado en HuggingFace por el usuario haorancao, etiquetado como DINO y orientado a tareas de clasificación. No se trata de un modelo entrenado ni evaluado: la propia model card lo describe explícitamente como un punto de partida experimental cuyo `model.safetensors` es únicamente un checkpoint de inicialización válido para pruebas de humo, sin ninguna métrica de rendimiento declarada.
+`haorancao/personal-classification` es un prototipo de investigación publicado en Hugging Face por el usuario haorancao, etiquetado como DINO y orientado a tareas de clasificación. No se trata de un modelo entrenado ni evaluado: la propia model card lo describe explícitamente como un punto de partida experimental cuyo `model.safetensors` es únicamente un checkpoint de inicialización válido para pruebas de humo, sin ninguna métrica de rendimiento declarada.
 
 El dato más llamativo es su tamaño: el checkpoint contiene 16.576 parámetros reales, una magnitud propia de un juguete de laboratorio y no de un modelo de visión utilizable. La model card declara además una escala «large», atención dispersa, fusión «co attention», activación «gelu tanh» y normalización InstanceNorm, combinación que no se corresponde con ninguna arquitectura DINO estándar ni con el recuento de parámetros indicado.
 
@@ -44,7 +44,7 @@ No hay información sobre datos de entrenamiento: no se especifica número de to
 - Prueba de humo de infraestructura: cargar `model.safetensors` en un pipeline de CI para verificar que el entorno de safetensors, PyTorch y el adaptador de carga funcionan antes de desplegar un modelo real.
 - Plantilla de investigación para clasificación: usar `config.json` y `training_args.json` como punto de partida para definir una receta con Adam y scheduler de coseno, sustituyendo el checkpoint por uno entrenado.
 - Estudio comparativo de normalización: al declarar InstanceNorm y fusión «co attention», sirve como banco de pruebas controlado para medir el efecto de estas decisiones de diseño frente a BatchNorm o LayerNorm en tareas de clasificación.
-- Docencia y formación: por su tamaño (16.576 parámetros) se puede diseccionar por completo en un aula o taller para explicar la estructura de un repositorio de HuggingFace y el ciclo de carga de un checkpoint.
+- Docencia y formación: por su tamaño (16.576 parámetros) se puede diseccionar por completo en un aula o taller para explicar la estructura de un repositorio de Hugging Face y el ciclo de carga de un checkpoint.
 - Prototipado en hardware restringido: al ocupar del orden de decenas de kilobytes, permite validar flujos de despliegue en CPU, Raspberry Pi o microcontroladores antes de escalar a un modelo de visión real.
 - Evaluación de robustez de frameworks: comprobar cómo se comportan distintas versiones de PyTorch, transformers o timm frente a una implementación DINO personalizada y no estándar.
 - Base para un clasificador personal: el nombre del repositorio sugiere un clasificador de uso personal, pero requeriría entrenamiento previo sobre un conjunto propio etiquetado antes de ofrecer cualquier utilidad.
@@ -86,6 +86,6 @@ No hay comparables directos en la información disponible: el modelo es un proto
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/haorancao/personal-classification
+- Hugging Face: https://huggingface.co/haorancao/personal-classification
 - Perfil de GitHub del usuario haorancao (no confirmado como autor del modelo): https://github.com/haorancao
 - Resultados de búsqueda web: no se han encontrado enlaces relevantes al modelo (paper, blog, repositorio o demo). El resto de resultados devueltos corresponden a noticias sin relación con este repositorio.

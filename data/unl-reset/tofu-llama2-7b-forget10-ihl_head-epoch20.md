@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Objetivo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `unl-reset/tofu-llama2-7b-forget10-ihl_head-epoch20` | 6,74 B | no disponible (Llama 2: 4096) | Unlearning TOFU *forget10* | llama2 | HuggingFace, 0 descargas |
-| `locuslab/tofu_ft_llama2-7b` (modelo base) | ~6,74 B | 4096 | Ajuste fino sobre TOFU (referencia sin olvidar) | llama2 | HuggingFace |
-| `NousResearch/Llama-2-7b-chat-hf` | ~6,74 B | 4096 | Chat alineado de propósito general | llama2 | HuggingFace |
-| Llama 2 7B base (Meta) | ~6,74 B | 4096 | Modelo fundacional | llama2 | HuggingFace / Meta |
+| `unl-reset/tofu-llama2-7b-forget10-ihl_head-epoch20` | 6,74 B | no disponible (Llama 2: 4096) | Unlearning TOFU *forget10* | llama2 | Hugging Face, 0 descargas |
+| `locuslab/tofu_ft_llama2-7b` (modelo base) | ~6,74 B | 4096 | Ajuste fino sobre TOFU (referencia sin olvidar) | llama2 | Hugging Face |
+| `NousResearch/Llama-2-7b-chat-hf` | ~6,74 B | 4096 | Chat alineado de propósito general | llama2 | Hugging Face |
+| Llama 2 7B base (Meta) | ~6,74 B | 4096 | Modelo fundacional | llama2 | Hugging Face / Meta |
 
 La comparación relevante es frente al modelo base `locuslab/tofu_ft_llama2-7b`: mismo tamaño y arquitectura, pero sin el procedimiento de olvido, lo que permite medir el efecto del *reset* de embeddings y cabeza más el objetivo IHL. Frente a Llama 2 chat, la diferencia es de dominio: el checkpoint de `unl-reset` está especializado en el benchmark TOFU y no está pensado como asistente general.
 
@@ -84,7 +84,7 @@ La comparación relevante es frente al modelo base `locuslab/tofu_ft_llama2-7b`:
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_head-epoch20
+- Hugging Face: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_head-epoch20
 - Modelo base del checkpoint: https://huggingface.co/locuslab/tofu_ft_llama2-7b
 - Origen de embeddings y LM head: https://huggingface.co/NousResearch/Llama-2-7b-chat-hf
 - Dataset TOFU (referencia del benchmark): https://huggingface.co/datasets/locuslab/TOFU

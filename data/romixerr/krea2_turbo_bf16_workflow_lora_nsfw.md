@@ -64,6 +64,6 @@ No se dispone de información sobre modelos comparables en el repositorio. No se
 
 ## Enlaces
 
-- Repositorio original: [Krea-2 en HuggingFace](https://huggingface.co/Comfy-Org/Krea-2/tree/main/diffusion_models)
+- Repositorio original: [Krea-2 en Hugging Face](https://huggingface.co/Comfy-Org/Krea-2/tree/main/diffusion_models)
 - Text encoder alternativo: [Krea-2-Engineer-V1](https://huggingface.co/BennyDaBall/Krea-2-Engineer-V1)
 - Perfil del usuario que reportó el contenido: [cantor-dust](https://huggingface.co/cantor-dust) (contexto del conflicto)

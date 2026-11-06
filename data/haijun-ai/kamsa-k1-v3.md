@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Haijun-AI/kamsa-k1-v3 es un modelo publicado en HuggingFace por el usuario Haijun-AI, con un total de 77.182.720 parametros registrados en los metadatos de safetensors y un repositorio que ocupa 71,3 GB. La unica etiqueta descriptiva mas alla del formato es "kamsa", sin que se haya publicado informacion adicional sobre arquitectura, datos de entrenamiento o proposito del modelo.
+Haijun-AI/kamsa-k1-v3 es un modelo publicado en Hugging Face por el usuario Haijun-AI, con un total de 77.182.720 parametros registrados en los metadatos de safetensors y un repositorio que ocupa 71,3 GB. La unica etiqueta descriptiva mas alla del formato es "kamsa", sin que se haya publicado informacion adicional sobre arquitectura, datos de entrenamiento o proposito del modelo.
 
 El repositorio no incluye model card con contenido tecnico, no declara licencia, no especifica idiomas soportados ni pipeline de inferencia. En el momento de la consulta acumula 103 descargas y 0 likes, lo que indica una adopcion muy limitada dentro del ecosistema.
 
@@ -83,10 +83,10 @@ No se dispone de informacion que permita identificar modelos comparables de form
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Haijun-AI/kamsa-k1-v3 | 77,18 M | no disponible | no disponible | HuggingFace, solo safetensors confirmado |
-| SmolLM2-135M | 135 M | 8.192 tokens | Apache-2.0 | HuggingFace, pesos y GGUF |
-| GPT-2 | 124 M | 1.024 tokens | modificada MIT | HuggingFace, ampliamente replicado |
-| TinyLlama-1.1B | 1,1 B | 2.048 tokens | Apache-2.0 | HuggingFace, pesos y GGUF |
+| Haijun-AI/kamsa-k1-v3 | 77,18 M | no disponible | no disponible | Hugging Face, solo safetensors confirmado |
+| SmolLM2-135M | 135 M | 8.192 tokens | Apache-2.0 | Hugging Face, pesos y GGUF |
+| GPT-2 | 124 M | 1.024 tokens | modificada MIT | Hugging Face, ampliamente replicado |
+| TinyLlama-1.1B | 1,1 B | 2.048 tokens | Apache-2.0 | Hugging Face, pesos y GGUF |
 
 No se dispone de datos de rendimiento que permitan comparar calidad entre kamsa-k1-v3 y cualquiera de estas alternativas.
 
@@ -106,5 +106,5 @@ No se dispone de datos de rendimiento que permitan comparar calidad entre kamsa-
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Haijun-AI/kamsa-k1-v3
+- Hugging Face: https://huggingface.co/Haijun-AI/kamsa-k1-v3
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la informacion disponible.

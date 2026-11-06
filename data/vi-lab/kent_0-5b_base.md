@@ -4,7 +4,7 @@
 
 KenT_0.5B_Base es un modelo de lenguaje causal decoder-only de aproximadamente 485 millones de parametros (484.934.656 segun los pesos publicados en safetensors), desarrollado por Vi-LAB (Vietnam-LAB). Se distribuye bajo licencia Apache 2.0, esta entrenado exclusivamente en ingles y su unico dato de preentrenamiento declarado es el corpus wikimedia/wikipedia. Su ventana de contexto es de 2048 tokens y emplea un tokenizador BPE de GPT-2 con un vocabulario de 50.257 entradas.
 
-El interes tecnico del modelo no reside en su tamano, sino en su arquitectura, etiquetada como `custom-architecture` en HuggingFace. KenT introduce dos mecanismos propios: una atencion con dimension de cabeza comprimida para Q y K (64 dimensiones frente a las 128 de V) y un modulo denominado Gated Key Refinement, que calcula una compuerta causal auxiliar sobre una proyeccion `g_proj` antes de aplicar RoPE y la fusiona en los estados de clave comprimidos. El objetivo declarado es obtener senales de enrutamiento aprendidas sin aumentar la huella de memoria de la cache key-value.
+El interes tecnico del modelo no reside en su tamano, sino en su arquitectura, etiquetada como `custom-architecture` en Hugging Face. KenT introduce dos mecanismos propios: una atencion con dimension de cabeza comprimida para Q y K (64 dimensiones frente a las 128 de V) y un modulo denominado Gated Key Refinement, que calcula una compuerta causal auxiliar sobre una proyeccion `g_proj` antes de aplicar RoPE y la fusiona en los estados de clave comprimidos. El objetivo declarado es obtener senales de enrutamiento aprendidas sin aumentar la huella de memoria de la cache key-value.
 
 Se trata de un modelo base (`pretrained`), sin ajuste por instrucciones, sin RLHF ni DPO, por lo que su uso directo queda limitado a generacion de texto en continuacion y a servir como punto de partida para ajuste fino o como banco de pruebas para investigacion sobre mecanismos de atencion alternativos. Su relevancia actual es la de un experimento abierto y reproducible de arquitectura a escala sub-1B, con un rendimiento declarado en MMLU-Pro de 11,77% de acierto sobre 12.032 preguntas, un valor muy proximo al azar en una prueba de diez opciones y no verificado de forma independiente.
 
@@ -121,12 +121,12 @@ Diferencias clave frente a las alternativas: KenT ofrece el mismo orden de magni
 - Uso de codigo remoto: la carga requiere `trust_remote_code=True`, lo que implica ejecutar codigo del autor del repositorio; conviene auditar los ficheros antes de usarlo en entornos productivos.
 - Sin soporte confirmado en runners estandar: no hay pesos GGUF ni cuantizaciones publicadas, y no se confirma compatibilidad con vLLM, llama.cpp, Ollama o TGI. Desplegarlo en produccion exigiria validar y probablemente adaptar la implementacion.
 - Licencia del modelo y del dato: los pesos son Apache 2.0, pero el corpus de preentrenamiento declarado (wikimedia/wikipedia) esta bajo CC BY-SA 4.0, lo que puede introducir obligaciones de atribucion o de compartir igual en determinados usos derivados. Conviene revisarlo con asesoria legal antes de un uso comercial.
-- Adopcion muy baja: 28 descargas y 0 likes en HuggingFace, sin validacion independiente de la comunidad ni de terceros.
+- Adopcion muy baja: 28 descargas y 0 likes en Hugging Face, sin validacion independiente de la comunidad ni de terceros.
 - Sin datos de reproducibilidad: no se publica numero de tokens de entrenamiento, composicion del dataset, hiperparametros ni detalles del proceso de preentrenamiento, lo que dificulta replicar o auditar los resultados.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Vi-LAB/KenT_0.5B_Base
+- Modelo en Hugging Face: https://huggingface.co/Vi-LAB/KenT_0.5B_Base
 - Dataset de preentrenamiento declarado: https://huggingface.co/datasets/wikimedia/wikipedia
 - Dataset de evaluacion declarado: https://huggingface.co/datasets/TIGER-Lab/MMLU-Pro
 - Resultados de MMLU-Pro declarados por el autor: benchmarks/mmlu_pro_results.json (dentro del repositorio del modelo)

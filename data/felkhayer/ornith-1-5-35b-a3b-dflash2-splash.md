@@ -12,7 +12,7 @@ Su relevancia es practica y acotada: permite acelerar la inferencia local de un 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Draft de decodificacion especulativa DFlash2, inicializado desde `z-lab/Qwen3.5-35B-A3B-DFlash`; etiquetado `qwen3` en HuggingFace |
+| Arquitectura | Draft de decodificacion especulativa DFlash2, inicializado desde `z-lab/Qwen3.5-35B-A3B-DFlash`; etiquetado `qwen3` en Hugging Face |
 | Parametros totales | 526.251.520 (~526 M) segun safetensors |
 | Parametros activos | No aplica al draft (denso, 526 M). El modelo objetivo Ornith-1.5-35B-A3B es MoE con 35B totales y 3B activos segun su denominacion |
 | Longitud de contexto | Hasta 128K en Splash (`--max-context 128K`); ventana deslizante del draft configurada a 2048 tokens (4096 en la configuracion de entrenamiento) |
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. Tampo
 
 | Modelo | Parametros | block_size | sliding_window | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este repositorio (DFlash2-Splash) | 526 M | 8 | 2048 | Apache-2.0 | HuggingFace, requiere Splash >= 1.1.0 |
-| `jzinno/Ornith-1.5-35B-A3B-DFlash2` | 526 M (mismos pesos) | 16 | 4096 | Apache-2.0 | HuggingFace |
-| `z-lab/Qwen3.5-35B-A3B-DFlash` | No disponible | No disponible | No disponible | No disponible | HuggingFace |
+| Este repositorio (DFlash2-Splash) | 526 M | 8 | 2048 | Apache-2.0 | Hugging Face, requiere Splash >= 1.1.0 |
+| `jzinno/Ornith-1.5-35B-A3B-DFlash2` | 526 M (mismos pesos) | 16 | 4096 | Apache-2.0 | Hugging Face |
+| `z-lab/Qwen3.5-35B-A3B-DFlash` | No disponible | No disponible | No disponible | No disponible | Hugging Face |
 | Draft Qwen3.6 por defecto de Splash | No disponible | No disponible | No disponible | No disponible | Incluido en Splash |
 
 ## Limitaciones y advertencias
@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Tampo
 
 ## Enlaces
 
-- HuggingFace del draft: https://huggingface.co/felkhayer/Ornith-1.5-35B-A3B-DFlash2-Splash
+- Hugging Face del draft: https://huggingface.co/felkhayer/Ornith-1.5-35B-A3B-DFlash2-Splash
 - Draft original: https://huggingface.co/jzinno/Ornith-1.5-35B-A3B-DFlash2
 - Modelo objetivo: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - GGUF oficial del objetivo: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-GGUF

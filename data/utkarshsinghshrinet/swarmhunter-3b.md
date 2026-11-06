@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SwarmHunter 3B es un ajuste fino (fine-tune) de tipo SFT sobre Qwen/Qwen2.5-Coder-3B-Instruct, desarrollado por Utkarsh Singh Shrinet y publicado en HuggingFace con licencia Apache 2.0. El modelo está especializado en ciberseguridad ofensiva y defensiva: detección de vulnerabilidades, análisis de exploits, auditoría de código, mapeo CVE/CWE, resolución de retos CTF y triaje de pruebas de penetración. Su interés práctico reside en que concentra esas capacidades en un tamaño de 3.085.938.688 parámetros, lo que permite ejecución local en GPUs de consumo.
+SwarmHunter 3B es un ajuste fino (fine-tune) de tipo SFT sobre Qwen/Qwen2.5-Coder-3B-Instruct, desarrollado por Utkarsh Singh Shrinet y publicado en Hugging Face con licencia Apache 2.0. El modelo está especializado en ciberseguridad ofensiva y defensiva: detección de vulnerabilidades, análisis de exploits, auditoría de código, mapeo CVE/CWE, resolución de retos CTF y triaje de pruebas de penetración. Su interés práctico reside en que concentra esas capacidades en un tamaño de 3.085.938.688 parámetros, lo que permite ejecución local en GPUs de consumo.
 
 La arquitectura es la del modelo base: un transformer decoder-only denso de la familia Qwen2, sin mezcla de expertos, con formato de prompt ChatML y una longitud de contexto declarada de 4096 tokens en la model card. El autor reporta un entrenamiento sobre 2.280.000 pares instrucción/respuesta repartidos en 46 shards secuenciales, mediante LoRA encadenado acumulativo (rank 16, alpha 32), con una pérdida SFT final de 0,9617 (último shard 0,7187) y una precisión de token aproximada del 80,6 %.
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SwarmHunter 3B | 3,09B | 4096 tokens (según model card) | Ciberseguridad: CVE/CWE, auditoría, CTF | Apache 2.0 | HuggingFace, 0 descargas en el momento de la consulta |
+| SwarmHunter 3B | 3,09B | 4096 tokens (según model card) | Ciberseguridad: CVE/CWE, auditoría, CTF | Apache 2.0 | Hugging Face, 0 descargas en el momento de la consulta |
 | Qwen2.5-Coder-3B-Instruct (base) | 3,09B | 32.768 tokens según documentación pública de Qwen | Código general e instrucciones | Apache 2.0 | Ampliamente distribuido |
 | Qwen2.5-Coder-7B-Instruct | 7,6B aprox. según documentación pública | 32.768 tokens según documentación pública de Qwen | Código general e instrucciones | Apache 2.0 | Ampliamente distribuido |
 
@@ -89,6 +89,6 @@ No se dispone de datos de benchmarks del fine-tune que permitan comparar su rend
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/UtkarshSinghShrinet/swarmhunter-3b
+- Modelo en Hugging Face: https://huggingface.co/UtkarshSinghShrinet/swarmhunter-3b
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-3B-Instruct
 - Resultados de la búsqueda web: no se han encontrado enlaces relevantes al modelo (los resultados devueltos corresponden a un club de pádel y no guardan relación). No hay papers, blogs, repositorios ni demos adicionales disponibles en la información proporcionada.

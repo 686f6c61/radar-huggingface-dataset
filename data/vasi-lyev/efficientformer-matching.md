@@ -74,4 +74,4 @@ No disponible. Al tratarse de un checkpoint no entrenado y experimental, no exis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vasi-lyev/efficientformer-matching
+- Modelo en Hugging Face: https://huggingface.co/vasi-lyev/efficientformer-matching

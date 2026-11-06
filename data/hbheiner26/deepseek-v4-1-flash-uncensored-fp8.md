@@ -84,8 +84,8 @@ La caída más acusada en MMLU se concentra en "moral scenarios" (-39,89 pp), se
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash (base) | 552B backbone (8B/16B activos) | 1M | no disponible | HuggingFace | Modelo original alineado; MMLU-14k 86,96 % |
-| DeepSeek-V4.1-Flash-UNCENSORED-FP8 | 763B totales | 1M | MIT | HuggingFace | Version ablacionada; MMLU-14k 82,74 % |
+| DeepSeek-V4.1-Flash (base) | 552B backbone (8B/16B activos) | 1M | no disponible | Hugging Face | Modelo original alineado; MMLU-14k 86,96 % |
+| DeepSeek-V4.1-Flash-UNCENSORED-FP8 | 763B totales | 1M | MIT | Hugging Face | Version ablacionada; MMLU-14k 82,74 % |
 | Otras alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparables en la informacion proporcionada |
 
 No se conocen en la información proporcionada modelos comparables de otros autores con características equivalentes (MoE multimodal de escala similar y abliterado).
@@ -104,7 +104,7 @@ No se conocen en la información proporcionada modelos comparables de otros auto
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hbheiner26/DeepSeek-V4.1-Flash-UNCENSORED-FP8
+- Modelo en Hugging Face: https://huggingface.co/hbheiner26/DeepSeek-V4.1-Flash-UNCENSORED-FP8
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Perfil del autor en X: https://x.com/dealignai
 - Perfil relacionado en X: https://x.com/jordanschenck

@@ -44,7 +44,7 @@ El modelo se basa en la arquitectura DistilBERT, un transformer encoder-only des
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El model-index de HuggingFace no incluye métricas estándar (MMLU, HumanEval, etc.). No obstante, la model card reporta una perplejidad de 9.91 en el conjunto de evaluación de IMDB, frente a 23.14 del modelo base sin adaptar, lo que indica una mejora sustancial en la modelización del lenguaje del dominio.
+No se han publicado resultados de benchmarks en la informacion disponible. El model-index de Hugging Face no incluye métricas estándar (MMLU, HumanEval, etc.). No obstante, la model card reporta una perplejidad de 9.91 en el conjunto de evaluación de IMDB, frente a 23.14 del modelo base sin adaptar, lo que indica una mejora sustancial en la modelización del lenguaje del dominio.
 
 ## Requisitos de hardware
 
@@ -74,6 +74,6 @@ La comparativa muestra que el modelo fine-tuneado mantiene un tamaño similar al
 
 ## Enlaces
 
-- [HuggingFace: AlexStamp/distilbert-base-uncased-finetuned-imdb-standard](https://huggingface.co/AlexStamp/distilbert-base-uncased-finetuned-imdb-standard)
+- [Hugging Face: AlexStamp/distilbert-base-uncased-finetuned-imdb-standard](https://huggingface.co/AlexStamp/distilbert-base-uncased-finetuned-imdb-standard)
 - [Modelo base: distilbert-base-uncased](https://huggingface.co/distilbert/distilbert-base-uncased)
 - [Dataset: stanfordnlp/imdb](https://huggingface.co/datasets/stanfordnlp/imdb)

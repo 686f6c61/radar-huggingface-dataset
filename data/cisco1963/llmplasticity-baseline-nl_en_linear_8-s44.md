@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Cisco1963/llmplasticity-baseline-nl_en_linear_8-s44` es un checkpoint publicado por el usuario Cisco1963 en HuggingFace bajo el identificador de repositorio indicado. Por su nombre, se trata de un modelo de referencia ("baseline") asociado a un experimento de plasticidad de modelos de lenguaje ("llmplasticity"), con una variante etiquetada como `nl_en` (posiblemente neerlandés-inglés) y una configuración `linear_8` con semilla `s44`. No se ha publicado documentación asociada en la informacion disponible.
+El modelo `Cisco1963/llmplasticity-baseline-nl_en_linear_8-s44` es un checkpoint publicado por el usuario Cisco1963 en Hugging Face bajo el identificador de repositorio indicado. Por su nombre, se trata de un modelo de referencia ("baseline") asociado a un experimento de plasticidad de modelos de lenguaje ("llmplasticity"), con una variante etiquetada como `nl_en` (posiblemente neerlandés-inglés) y una configuración `linear_8` con semilla `s44`. No se ha publicado documentación asociada en la informacion disponible.
 
 El repositorio contiene 122.706.432 parametros reales segun el fichero safetensors, lo que lo situa en el rango de los modelos tipo GPT-2 small (aproximadamente 124 millones de parametros con embeddings). La etiqueta `gpt2` del repositorio apunta a una arquitectura transformer decoder-only de la familia GPT-2, aunque no se dispone de la configuracion exacta de capas, dimension de hidden state ni numero de cabezas de atencion.
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Cisco1963/llmplasticity-baseline-nl_en_linear_8-s44 | 122,7 M | No disponible | GPT-2 (tag) | No disponible | HuggingFace, 13 descargas |
+| Cisco1963/llmplasticity-baseline-nl_en_linear_8-s44 | 122,7 M | No disponible | GPT-2 (tag) | No disponible | Hugging Face, 13 descargas |
 | GPT-2 small (OpenAI) | 124 M | 1024 tokens | Transformer decoder-only | MIT | Ampliamente disponible |
 | GPT-2 medium (OpenAI) | 355 M | 1024 tokens | Transformer decoder-only | MIT | Ampliamente disponible |
 | Pythia-160M (EleutherAI) | 160 M | 2048 tokens | Transformer decoder-only | Apache 2.0 | Ampliamente disponible |
@@ -93,5 +93,5 @@ La comparacion se limita a parametros, contexto y licencia, ya que no hay datos 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Cisco1963/llmplasticity-baseline-nl_en_linear_8-s44
+- Hugging Face: https://huggingface.co/Cisco1963/llmplasticity-baseline-nl_en_linear_8-s44
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion disponible.

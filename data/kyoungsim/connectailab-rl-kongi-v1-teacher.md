@@ -75,7 +75,7 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-kongi-v1-teacher | Política PPO (NumPy) | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| connectailab-rl-kongi-v1-teacher | Política PPO (NumPy) | no disponible | no disponible | Apache 2.0 | Hugging Face |
 | Presidente por reglas (CONNECT TYCOON) | Política basada en reglas | no aplica | no aplica | incluida en el simulador | GitHub del proyecto |
 | Otros modelos RL comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -92,7 +92,7 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kyoungsim/connectailab-rl-kongi-v1-teacher
+- Modelo en Hugging Face: https://huggingface.co/kyoungsim/connectailab-rl-kongi-v1-teacher
 - Repositorio CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de entrenamiento en Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb
 - YouTube CONNECT AI LAB: https://www.youtube.com/@CONNECT-AI-LAB

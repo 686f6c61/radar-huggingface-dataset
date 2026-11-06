@@ -21,7 +21,7 @@ Conviene senalar desde el principio que el repositorio presenta un tamano de 0,0
 | Licencia | llama3.1 (Llama 3.1 Community License) |
 | Formato de pesos | safetensors |
 | Modelo base | meta-llama/Llama-3.1-8B (via dphn/Dolphin3.0-Llama3.1-8B) |
-| Tamano del repositorio | 0,0 GB segun HuggingFace |
+| Tamano del repositorio | 0,0 GB segun Hugging Face |
 | Descargas / valoraciones | 0 / 0 |
 | Fecha de publicacion | 28 de septiembre de 2026 |
 
@@ -116,7 +116,7 @@ La diferencia principal frente al Dolphin 3.0 original es la supresion de la dir
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bigjake17x/my-cool-model
+- Modelo en Hugging Face: https://huggingface.co/bigjake17x/my-cool-model
 - Perfil del autor en GitHub: https://github.com/bigjake17x
 - Modelo original sin abliterar: https://huggingface.co/dphn/Dolphin3.0-Llama3.1-8B
 - Herramienta de abliteration Heretic: https://github.com/p-e-w/heretic

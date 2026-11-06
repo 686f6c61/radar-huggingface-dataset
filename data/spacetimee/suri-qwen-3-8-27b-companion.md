@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Multimodal | Disponibilidad |
 |---|---|---|---|---|---|
-| Suri Qwen 3.8 27B Companion | ≈27,8 B | No disponible | No disponible | Declarado (image-text-to-text) | HuggingFace, 96 descargas |
-| Qwen3.8 27B (base) | ≈27,8 B | No disponible | No disponible en la informacion | No confirmado | HuggingFace (oficial) |
-| Suri Qwen 3.8 27B Uncensored | No disponible | No disponible | No disponible | No disponible | HuggingFace (mismo autor) |
+| Suri Qwen 3.8 27B Companion | ≈27,8 B | No disponible | No disponible | Declarado (image-text-to-text) | Hugging Face, 96 descargas |
+| Qwen3.8 27B (base) | ≈27,8 B | No disponible | No disponible en la informacion | No confirmado | Hugging Face (oficial) |
+| Suri Qwen 3.8 27B Uncensored | No disponible | No disponible | No disponible | No disponible | Hugging Face (mismo autor) |
 
 No se dispone de datos de rendimiento comparativos entre estas variantes ni con modelos de otras familias de tamaño similar, por lo que la comparativa se limita a parámetros y disponibilidad.
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativos entre estas variantes ni con 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SpaceTimee/Suri-Qwen-3.8-27B-Companion
+- Modelo en Hugging Face: https://huggingface.co/SpaceTimee/Suri-Qwen-3.8-27B-Companion
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Variante intermedia (unsloth): https://huggingface.co/unsloth/Qwen3.8-27B
 - Variante previa del autor: https://huggingface.co/SpaceTimee/Suri-Qwen-3.8-27B-Uncensored

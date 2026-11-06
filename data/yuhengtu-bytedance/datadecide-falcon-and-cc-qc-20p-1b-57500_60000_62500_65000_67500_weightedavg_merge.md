@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un merge de pesos (weight averaging) de cinco checkpoints intermedios de un mismo entrenamiento de aproximadamente 1,28 mil millones de parámetros, etiquetado internamente como `falcon-and-cc-qc-20p`. Lo publica el usuario `yuhengtu-bytedance` en HuggingFace y se ha generado con la herramienta mergekit mediante el método Linear (promedio ponderado de pesos), tomando `step67500` como checkpoint base y combinándolo con `step57500`, `step60000`, `step62500` y `step65000`. No es, por tanto, un modelo nuevo entrenado desde cero, sino una media de la trayectoria de entrenamiento de una única ejecución.
+Este modelo es un merge de pesos (weight averaging) de cinco checkpoints intermedios de un mismo entrenamiento de aproximadamente 1,28 mil millones de parámetros, etiquetado internamente como `falcon-and-cc-qc-20p`. Lo publica el usuario `yuhengtu-bytedance` en Hugging Face y se ha generado con la herramienta mergekit mediante el método Linear (promedio ponderado de pesos), tomando `step67500` como checkpoint base y combinándolo con `step57500`, `step60000`, `step62500` y `step65000`. No es, por tanto, un modelo nuevo entrenado desde cero, sino una media de la trayectoria de entrenamiento de una única ejecución.
 
 El interés técnico del artefacto es metodológico: los pesos del merge son crecientes (1, 2, 3, 4 y 5) y el resultado está normalizado (`normalize: true`), de modo que el checkpoint final recibe cinco veces más peso que el más temprano. Esto lo sitúa en la línea de investigación de model soups y de predicción de curvas de escalado a partir de experimentos pequeños, útil para estudiar si promediar checkpoints de una misma run mejora la pérdida final frente a quedarse con el último paso.
 
@@ -95,7 +95,7 @@ La comparación honesta es limitada: sin benchmarks publicados no es posible afi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/DataDecide-falcon-and-cc-qc-20p-1B-57500_60000_62500_65000_67500_weightedavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/DataDecide-falcon-and-cc-qc-20p-1B-57500_60000_62500_65000_67500_weightedavg_merge
 - Repositorio de mergekit: https://github.com/cg123/mergekit
 - Paper del método de merge lineal y *model soups*: https://arxiv.org/abs/2203.05482
 - Búsqueda web realizada: no se encontraron resultados relevantes sobre este modelo ni sobre el experimento `DataDecide-falcon-and-cc-qc-20p`; los resultados devueltos correspondían a clasificaciones deportivas sin relación alguna.

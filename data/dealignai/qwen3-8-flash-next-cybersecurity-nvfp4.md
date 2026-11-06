@@ -4,7 +4,7 @@
 
 `dealignai/Qwen3.8-Flash-Next-CYBERSECURITY-NVFP4` es una variante del modelo multimodal de razonamiento `Qwen/Qwen3.8-Flash-Next` (preview de la arquitectura Qwen4) a la que se le han eliminado los mecanismos de rechazo (refusal) mediante una modificación directa de los pesos, sin fine-tuning ni cambios en la plantilla de chat. El resultado es un artefacto "uncensored" orientado a investigación de seguridad ofensiva, red-teaming y evaluación de alineación, cuantizado en NVFP4 (4 bits) para un despliegue eficiente con SGLang.
 
-Desarrollado por el usuario de HuggingFace `dealignai`, este modelo conserva las capacidades del base: razonamiento con cuatro niveles (off, low, medium, xhigh), decodificación especulativa MTP, y multimodalidad de imagen y vídeo. Su relevancia radica en que permite estudiar el comportamiento de un modelo de 125B parámetros (6B activos por token) sin barreras de seguridad, con una degradación mínima de conocimiento general (MMLU −2,63 puntos porcentuales) y una tasa de cumplimiento en HarmBench-320 de hasta el 93,8 % en modo de razonamiento medio.
+Desarrollado por el usuario de Hugging Face `dealignai`, este modelo conserva las capacidades del base: razonamiento con cuatro niveles (off, low, medium, xhigh), decodificación especulativa MTP, y multimodalidad de imagen y vídeo. Su relevancia radica en que permite estudiar el comportamiento de un modelo de 125B parámetros (6B activos por token) sin barreras de seguridad, con una degradación mínima de conocimiento general (MMLU −2,63 puntos porcentuales) y una tasa de cumplimiento en HarmBench-320 de hasta el 93,8 % en modo de razonamiento medio.
 
 La cuantización NVFP4 reduce el tamaño de los pesos a aproximadamente la mitad de una versión FP8, lo que posibilita su ejecución en hardware de gama alta con 2× NVIDIA DGX Spark (GB10) en paralelo tensorial, según las recomendaciones del autor.
 
@@ -103,7 +103,7 @@ La versión NVFP4 sacrifica 2,63 pp de MMLU frente al base, pero reduce el uso d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dealignai/Qwen3.8-Flash-Next-CYBERSECURITY-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/dealignai/Qwen3.8-Flash-Next-CYBERSECURITY-NVFP4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio GitHub del modelo base: https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - Blog de LMSYS sobre soporte day-0 en SGLang: https://www.lmsys.org/blog/2026-08-26-qwen-flash-next

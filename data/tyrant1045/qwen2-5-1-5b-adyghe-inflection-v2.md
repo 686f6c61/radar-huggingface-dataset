@@ -75,8 +75,8 @@ Sobre 1.706 filas de test congeladas (166 lemas no vistos): 93,85% de coincidenc
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (v2) | 1,5B (base) + LoRA r16 | no disponible | Flexión adigué | CC BY-SA 3.0 | HuggingFace, 24 descargas |
-| Qwen2.5-1.5B-Instruct (base) | 1,5B | no disponible | Generación general | no disponible en la informacion | HuggingFace |
+| Este adaptador (v2) | 1,5B (base) + LoRA r16 | no disponible | Flexión adigué | CC BY-SA 3.0 | Hugging Face, 24 descargas |
+| Qwen2.5-1.5B-Instruct (base) | 1,5B | no disponible | Generación general | no disponible en la informacion | Hugging Face |
 | gpt-6.1-sol (few-shot) | no disponible | no disponible | Flexión adigué con prompting | propietaria | API |
 | Búsqueda por reglas (referencia del autor) | no aplica | no aplica | Flexión adigué | no disponible | Código del autor |
 
@@ -95,7 +95,7 @@ No se dispone de comparativas con otros adaptadores morfológicos para lenguas c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tyrant1045/qwen2.5-1.5b-adyghe-inflection-v2
+- Hugging Face: https://huggingface.co/tyrant1045/qwen2.5-1.5b-adyghe-inflection-v2
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-1.5B-Instruct-unsloth-bnb-4bit
 - UniMorph: https://unimorph.github.io
 - Código de evaluación: carpeta `code/` del repositorio, commit 55a337e96415e3673092882701176e410d7bdcc7 (resultados con commit ad94dd448cff451f04c2d7d397428fd38ca46552)

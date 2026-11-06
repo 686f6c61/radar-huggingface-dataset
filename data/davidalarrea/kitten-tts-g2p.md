@@ -4,7 +4,7 @@
 
 davidalarrea/kitten-tts-g2p es un repositorio de recursos de conversión grafema-fonema (G2P) para inglés estadounidense, publicado por el usuario davidalarrea bajo licencia MIT. No es un modelo de lenguaje ni un sistema TTS completo, sino un paquete de artefactos auxiliares que se descarga automáticamente al utilizar KittenTTS o Kokoro TTS con voces inglesas a través de la librería mlx-audio-swift. Su función es resolver la etapa intermedia entre texto y fonemas que requieren los modelos acústicos.
 
-El paquete contiene dos diccionarios de pronunciación (us_gold.json, 2,9 MB, y us_silver.json, 3,0 MB), un modelo BART de respaldo para palabras no cubiertas por los diccionarios (us_bart.safetensors, 2,9 MB) y su fichero de configuración (us_bart_config.json, 1,2 KB). El repositorio ocupa 0,0 GB según HuggingFace y fue creado y actualizado el 18 de septiembre de 2026, según los metadatos de la plataforma.
+El paquete contiene dos diccionarios de pronunciación (us_gold.json, 2,9 MB, y us_silver.json, 3,0 MB), un modelo BART de respaldo para palabras no cubiertas por los diccionarios (us_bart.safetensors, 2,9 MB) y su fichero de configuración (us_bart_config.json, 1,2 KB). El repositorio ocupa 0,0 GB según Hugging Face y fue creado y actualizado el 18 de septiembre de 2026, según los metadatos de la plataforma.
 
 Es relevante para quien despliega síntesis de voz en el ecosistema Apple (MLX/Swift), porque evita depender de motores G2P externos instalados en el sistema y porque la licencia MIT permite integración en productos comerciales. Los recursos están portados del motor Misaki de hexgrad. En el momento de la consulta el repositorio no registra descargas ni likes, por lo que no existe validación de la comunidad ni evaluación pública de la calidad de las pronunciaciones.
 
@@ -25,7 +25,7 @@ Es relevante para quien despliega síntesis de voz en el ecosistema Apple (MLX/S
 | Origen de los recursos | portados del motor Misaki (hexgrad), licencia MIT |
 | Fecha de creación y actualización | 2026-09-18 |
 | Descargas y likes | 0 y 0 |
-| Tamaño del repositorio | 0,0 GB (según HuggingFace) |
+| Tamaño del repositorio | 0,0 GB (según Hugging Face) |
 
 Ficheros incluidos:
 
@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 | us_silver.json | Tamaño en disco | 3,0 MB |
 | us_bart.safetensors | Tamaño en disco | 2,9 MB |
 | us_bart_config.json | Tamaño en disco | 1,2 KB |
-| Repositorio completo | Tamaño declarado en HuggingFace | 0,0 GB |
+| Repositorio completo | Tamaño declarado en Hugging Face | 0,0 GB |
 
 ## Requisitos de hardware
 
@@ -92,7 +92,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Sistema | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| davidalarrea/kitten-tts-g2p | Diccionarios G2P + BART de respaldo | no disponible (pesos de 2,9 MB) | no disponible | MIT | HuggingFace; descarga automática vía mlx-audio-swift |
+| davidalarrea/kitten-tts-g2p | Diccionarios G2P + BART de respaldo | no disponible (pesos de 2,9 MB) | no disponible | MIT | Hugging Face; descarga automática vía mlx-audio-swift |
 | Misaki (hexgrad) | Motor G2P multilingüe con diccionarios y modelo de respaldo | no disponible | no disponible | MIT (según la model card de este repositorio, que lo cita como origen) | Repositorio en GitHub |
 | espeak-ng | Sintetizador y fonemizador basado en reglas | no disponible en la información proporcionada | no disponible en la información proporcionada | no disponible en la información proporcionada | Distribución como software de sistema |
 | g2p_en (Kyubyong) | Conversión G2P para inglés basada en secuencias | no disponible en la información proporcionada | no disponible en la información proporcionada | no disponible en la información proporcionada | Paquete de Python |
@@ -115,7 +115,7 @@ Este repositorio es una adaptación acotada de Misaki al inglés estadounidense 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davidalarrea/kitten-tts-g2p
+- Modelo en Hugging Face: https://huggingface.co/davidalarrea/kitten-tts-g2p
 - mlx-audio-swift (integración que descarga estos recursos): https://github.com/Blaizzy/mlx-audio-swift
 - Misaki, motor G2P de origen (hexgrad): https://github.com/hexgrad/misaki
 - Resultados de búsqueda web: sin enlaces relevantes; las entradas devueltas (elga.gv.at, gesundheit.gv.at, elga-online.gv.at) no están relacionadas con el modelo.

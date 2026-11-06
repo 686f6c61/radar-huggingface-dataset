@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `indojin/ur5e-multitask-5obj-newroom-add1005-120000` es un modelo de visión-lenguaje-acción (VLA) publicado por el usuario indojin en HuggingFace. Por la etiqueta `Gr00tN1d6`, todo apunta a que se trata de un ajuste fino o variante de la familia NVIDIA Isaac GR00T N1.6, orientada al control de un brazo robótico UR5e en tareas de manipulación multitarea. El nombre sugiere cinco objetos, un entorno ("new room") y un entrenamiento de aproximadamente 120 000 pasos.
+El repositorio `indojin/ur5e-multitask-5obj-newroom-add1005-120000` es un modelo de visión-lenguaje-acción (VLA) publicado por el usuario indojin en Hugging Face. Por la etiqueta `Gr00tN1d6`, todo apunta a que se trata de un ajuste fino o variante de la familia NVIDIA Isaac GR00T N1.6, orientada al control de un brazo robótico UR5e en tareas de manipulación multitarea. El nombre sugiere cinco objetos, un entorno ("new room") y un entrenamiento de aproximadamente 120 000 pasos.
 
 El modelo cuenta con 3 286 608 832 parámetros (unos 3,29 mil millones), almacenados en formato safetensors, y el repositorio ocupa 9,8 GB. La ficha del modelo no incluye pipeline, licencia ni idiomas declarados, y registra 11 descargas y 0 "likes" en el momento de la consulta.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Tipo | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| indojin/ur5e-multitask-5obj-newroom-add1005-120000 | 3 286 608 832 | VLA (presunto GR00T N1.6) | no disponible | no disponible | HuggingFace |
+| indojin/ur5e-multitask-5obj-newroom-add1005-120000 | 3 286 608 832 | VLA (presunto GR00T N1.6) | no disponible | no disponible | Hugging Face |
 | NVIDIA Isaac GR00T N1 | no disponible | VLA | no disponible | no disponible | no disponible |
 | OpenVLA | no disponible | VLA | no disponible | no disponible | no disponible |
 | pi0 (Physical Intelligence) | no disponible | VLA | no disponible | no disponible | no disponible |
@@ -83,5 +83,5 @@ Nota: los datos de los modelos comparados no proceden de la informacion proporci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/indojin/ur5e-multitask-5obj-newroom-add1005-120000
+- Hugging Face: https://huggingface.co/indojin/ur5e-multitask-5obj-newroom-add1005-120000
 - No se han encontrado otros enlaces relevantes (papers, blogs, repos, demos) en la busqueda web disponible; los resultados obtenidos no guardan relacion con el modelo.

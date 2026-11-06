@@ -18,7 +18,7 @@ Su relevancia es acotada pero clara: es un ejemplo de ajuste de dominio (medico)
 | Longitud de contexto | 40.960 tokens declarados en la configuracion del modelo base; los ejemplos de la model card usan n_ctx=8192 |
 | Tipos de cuantizacion | GGUF: Q4_K_M, Q4_K_S, Q3_K_M, Q3_K_S |
 | Idiomas soportados | Vietnamita (vi) e ingles (en) |
-| Licencia | apache-2.0 en los metadatos de HuggingFace; el adaptador LoRA de origen es MIT; la model card indica que la licencia del repo se determino tras verificar la licencia de origen y no se autoadjudica Apache-2.0 |
+| Licencia | apache-2.0 en los metadatos de Hugging Face; el adaptador LoRA de origen es MIT; la model card indica que la licencia del repo se determino tras verificar la licencia de origen y no se autoadjudica Apache-2.0 |
 | Formato de pesos | GGUF (llama.cpp); el modelo base original se distribuye en bfloat16 |
 | Tamano del vocabulario | 151.936 tokens |
 | Precision original | bfloat16 |
@@ -96,15 +96,15 @@ Frente al Qwen3-0.6B base, este repositorio aporta el ajuste medico en vietnamit
 - Sesgos: no documentados por el autor. Al estar ajustado sobre un dataset medico en vietnamita no descrito, se desconoce la distribucion de fuentes, la cobertura por subespecialidades y el posible sesgo geografico o demografico del corpus.
 - Limitacion idiomatica: el foco es el vietnamita; el rendimiento en ingles se degrada respecto al Qwen3 base y en castellano no hay ninguna garantia, ya que no figura entre los idiomas declarados.
 - Degradacion de contexto: aunque la configuracion declare 40.960 tokens, los ejemplos practicos usan 8192. En un modelo de este tamano, la atencion a contextos muy largos suele degradarse mucho antes de alcanzar el maximo teorico.
-- Licencia: los metadatos de HuggingFace indican apache-2.0, pero la model card matiza que la licencia del repositorio se determino tras verificar la licencia de origen y que el adaptador LoRA es MIT. Conviene verificar el fichero LICENSE antes de un uso comercial y comprobar si el dataset medico de ajuste impone condiciones adicionales no declaradas.
+- Licencia: los metadatos de Hugging Face indican apache-2.0, pero la model card matiza que la licencia del repositorio se determino tras verificar la licencia de origen y que el adaptador LoRA es MIT. Conviene verificar el fichero LICENSE antes de un uso comercial y comprobar si el dataset medico de ajuste impone condiciones adicionales no declaradas.
 - El LoRA ya esta fusionado en los pesos: no es posible separar el ajuste medico del modelo base, lo que impide revertir el sesgo de dominio si el modelo se comporta mal fuera del ambito sanitario.
 - Los ficheros Q3_K_S y Q3_K_M (0,30 y 0,32 GB) aplican una compresion agresiva que en modelos pequenos suele producir perdidas de calidad notables; para uso real se recomienda Q4_K_M.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BachDaThan/Qwen-3-0.6B-Instruct-Vi-Medical-LoRA-GGUF
+- Modelo en Hugging Face: https://huggingface.co/BachDaThan/Qwen-3-0.6B-Instruct-Vi-Medical-LoRA-GGUF
 - Modelo base Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Adaptador LoRA de origen: https://huggingface.co/danhtran2mind/Qwen-3-0.6B-Instruct-Vi-Medical-LoRA
 - Informe tecnico de la familia Qwen3 (referencia del modelo base): https://arxiv.org/abs/2505.09388
 - Repositorio de llama.cpp: https://github.com/ggml-org/llama.cpp
-- Nota: la busqueda web realizada no devolvio resultados relacionados con este modelo; los unicos enlaces verificables son los de HuggingFace y los recursos oficiales del ecosistema llama.cpp.
+- Nota: la busqueda web realizada no devolvio resultados relacionados con este modelo; los unicos enlaces verificables son los de Hugging Face y los recursos oficiales del ecosistema llama.cpp.

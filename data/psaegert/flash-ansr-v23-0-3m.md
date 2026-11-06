@@ -71,7 +71,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/psaegert/flash-ansr-v23.0-3M
+- Hugging Face: https://huggingface.co/psaegert/flash-ansr-v23.0-3M
 - GitHub: https://github.com/psaegert/flash-ansr
 - Documentación: https://flash-ansr.readthedocs.io/en/latest/
 - Artículo arXiv: https://arxiv.org/abs/2602.08885

@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Da-master/Dolphin3.0-Qwen2.5-1.5B-Q4_K_M-GGUF | 1.543.714.304 | GGUF Q4_K_M | Apache 2.0 | HuggingFace |
-| dphn/Dolphin3.0-Qwen2.5-1.5B (base) | 1.543.714.304 | Safetensors | Apache 2.0 | HuggingFace |
-| RCDWealth/Dolphin3.0-Qwen2.5-1.5B-Q5_K_M.gguf | 1.543.714.304 | GGUF Q5_K_M | No disponible | HuggingFace |
+| Da-master/Dolphin3.0-Qwen2.5-1.5B-Q4_K_M-GGUF | 1.543.714.304 | GGUF Q4_K_M | Apache 2.0 | Hugging Face |
+| dphn/Dolphin3.0-Qwen2.5-1.5B (base) | 1.543.714.304 | Safetensors | Apache 2.0 | Hugging Face |
+| RCDWealth/Dolphin3.0-Qwen2.5-1.5B-Q5_K_M.gguf | 1.543.714.304 | GGUF Q5_K_M | No disponible | Hugging Face |
 
 No se dispone de datos de contexto ni de rendimiento publicados para ninguna de las variantes, por lo que la comparación se limita a parámetros, formato y licencia.
 

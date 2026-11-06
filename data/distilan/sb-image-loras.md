@@ -86,7 +86,7 @@ No disponible. La información proporcionada no incluye otros LoRAs de personaje
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/distilan/sb-image-loras
+- Repositorio Hugging Face: https://huggingface.co/distilan/sb-image-loras
 - Modelo base MOSS-Image-SFT: https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT
 - Modelo base MOSS-Image-Base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base
 - LoRA DMD de 8 pasos para MOSS-Image: https://huggingface.co/lodestones/MOSS-Image-SFT-8-steps-dmd

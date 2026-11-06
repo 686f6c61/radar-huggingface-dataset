@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje desarrollado por el usuario ASDASD12321WSX y publicado en HuggingFace bajo licencia MIT. Según su model card, se trata de una versión actualizada que mejora notablemente la profundidad del razonamiento y la inferencia mediante un aumento de recursos computacionales y la introducción de mecanismos de optimización algorítmica en el post-entrenamiento. El modelo se presenta como un asistente conversacional capaz de razonar sobre problemas matemáticos, generar código y seguir instrucciones complejas, con una reducción de la tasa de alucinación y un mejor soporte para function calling.
+MyAwesomeModel es un modelo de lenguaje desarrollado por el usuario ASDASD12321WSX y publicado en Hugging Face bajo licencia MIT. Según su model card, se trata de una versión actualizada que mejora notablemente la profundidad del razonamiento y la inferencia mediante un aumento de recursos computacionales y la introducción de mecanismos de optimización algorítmica en el post-entrenamiento. El modelo se presenta como un asistente conversacional capaz de razonar sobre problemas matemáticos, generar código y seguir instrucciones complejas, con una reducción de la tasa de alucinación y un mejor soporte para function calling.
 
-En la información disponible no se detallan la arquitectura, el número de parámetros ni la longitud de contexto. Los metadatos de HuggingFace etiquetan el repositorio con `bert` y el pipeline `feature-extraction`, aunque la model card describe un modelo generativo. El repositorio contiene únicamente la documentación y no se han subido pesos (tamaño del repositorio: 0.0 GB), por lo que la implementación práctica requiere acceder al código o a los pesos a través de fuentes externas.
+En la información disponible no se detallan la arquitectura, el número de parámetros ni la longitud de contexto. Los metadatos de Hugging Face etiquetan el repositorio con `bert` y el pipeline `feature-extraction`, aunque la model card describe un modelo generativo. El repositorio contiene únicamente la documentación y no se han subido pesos (tamaño del repositorio: 0.0 GB), por lo que la implementación práctica requiere acceder al código o a los pesos a través de fuentes externas.
 
 La relevancia del modelo radica en su enfoque en el razonamiento profundo: el autor afirma que en la prueba AIME 2025 la precisión ha pasado del 70 % al 87.5 %, con un aumento del promedio de tokens de pensamiento por pregunta de 12 000 a 23 000. Estos datos, no obstante, provienen de la documentación del autor y no han sido verificados de forma independiente.
 
@@ -23,7 +23,7 @@ La relevancia del modelo radica en su enfoque en el razonamiento profundo: el au
 
 ## Arquitectura y entrenamiento
 
-La información proporcionada no incluye detalles sobre la arquitectura del modelo, como el tipo de transformer, el número de capas, las dimensiones de los embeddings o la configuración del tokenizer. Los metadatos de HuggingFace indican la etiqueta `bert`, pero la model card no confirma esta arquitectura ni proporciona una descripción técnica del diseño.
+La información proporcionada no incluye detalles sobre la arquitectura del modelo, como el tipo de transformer, el número de capas, las dimensiones de los embeddings o la configuración del tokenizer. Los metadatos de Hugging Face indican la etiqueta `bert`, pero la model card no confirma esta arquitectura ni proporciona una descripción técnica del diseño.
 
 Según la documentación del autor, el modelo ha sido actualizado con una mayor profundidad de razonamiento e inferencia, aprovechando más recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento. No se especifican el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas como RLHF o DPO. También se menciona una variante llamada MyAwesomeModel-Small, cuya arquitectura es idéntica al modelo base pero comparte la configuración del tokenizer con el modelo principal.
 
@@ -88,7 +88,7 @@ No se dispone de información suficiente para una comparativa técnica con model
 
 - Los benchmarks publicados en la model card son datos aportados por el autor y no han sido verificados de forma independiente.
 - No se ha publicado información sobre sesgos, evaluaciones de seguridad externas ni estudios de robustez.
-- El repositorio en HuggingFace tiene un tamaño de 0.0 GB, lo que indica que no se han subido los pesos del modelo; solo está disponible la documentación.
+- El repositorio en Hugging Face tiene un tamaño de 0.0 GB, lo que indica que no se han subido los pesos del modelo; solo está disponible la documentación.
 - No se especifican la arquitectura, el número de parámetros ni la longitud de contexto, lo que impide dimensionar su uso en producción.
 - La afirmación de una menor tasa de alucinación es cualitativa y no se acompaña de métricas concretas.
 - El soporte de function calling y de búsqueda web requiere plantillas de prompt específicas, lo que añade complejidad a la integración.
@@ -96,7 +96,7 @@ No se dispone de información suficiente para una comparativa técnica con model
 
 ## Enlaces
 
-- HuggingFace (repositorio oficial): https://huggingface.co/ASDASD12321WSX/MyAwesomeModel-TestRepository
-- HuggingFace (repositorio similar, posible copia o espejo): https://huggingface.co/tool1/MyAwesomeModel-TestRepo
+- Hugging Face (repositorio oficial): https://huggingface.co/ASDASD12321WSX/MyAwesomeModel-TestRepository
+- Hugging Face (repositorio similar, posible copia o espejo): https://huggingface.co/tool1/MyAwesomeModel-TestRepo
 - Sitio web y API: no disponible (el README menciona una página web oficial y una plataforma de API, pero no proporciona URL).
 - Repositorio de código: no disponible (el README remite a un repositorio de código, pero no incluye el enlace).

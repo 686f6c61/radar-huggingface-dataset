@@ -84,7 +84,7 @@ No se dispone de comparativas publicadas. El autor tiene otros checkpoints con c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/alexkstern/kdyck_dose_50Mpt_hfbody_adamwppt_20M_s0_2026-09-06_20-09-45_380455-pt
+- Repositorio en Hugging Face: https://huggingface.co/alexkstern/kdyck_dose_50Mpt_hfbody_adamwppt_20M_s0_2026-09-06_20-09-45_380455-pt
 - Registro de Weights & Biases: https://wandb.ai/alexksternteam/token_dose_50Mpt_adamw_seed_replicas_v1/runs/qq0s7cuk
 - Framework nanochat (GitHub): https://github.com/karpathy/nanochat
 - Repositorio relacionado: https://huggingface.co/alexkstern/kdyck_dose_50Mpt_hfinit_20M_s0_2026-08-14_15-27-02_584781-pt

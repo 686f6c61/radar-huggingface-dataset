@@ -83,7 +83,7 @@ No se dispone de información sobre parámetros, contexto ni rendimiento numéri
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HlibPlakhtii/microduck-crowd-rockstar
+- Modelo en Hugging Face: https://huggingface.co/HlibPlakhtii/microduck-crowd-rockstar
 - Modelo base: https://huggingface.co/jrubiosainz/microduck-game-staircase-pyramid
 - Revisión del modelo base citada en la model card: https://huggingface.co/jrubiosainz/microduck-game-staircase-pyramid/tree/fa250b6b76e5498311efdced3c69d0fba4b19ffe
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios o demos.

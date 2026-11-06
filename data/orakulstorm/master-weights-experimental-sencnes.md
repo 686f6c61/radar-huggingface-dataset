@@ -79,13 +79,13 @@ La información disponible solo permite comparar las variantes dentro del propio
 
 | Modelo / categoria | Rango | Parametros entrenables | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Aivazovsky r1280 (esta coleccion) | 1280 | ~7,8 B | No aplica (text-to-image) | Apache 2.0 | HuggingFace |
-| Aivazovsky r1536 (esta coleccion) | 1536 | ~9,3 B | No aplica | Apache 2.0 | HuggingFace |
-| Van Gogh r1792 (esta coleccion) | 1792 | ~10,92 B | No aplica | Apache 2.0 | HuggingFace |
-| Van Gogh r2048 (esta coleccion) | 2048 | 12,48 B | No aplica | Apache 2.0 | HuggingFace |
+| Aivazovsky r1280 (esta coleccion) | 1280 | ~7,8 B | No aplica (text-to-image) | Apache 2.0 | Hugging Face |
+| Aivazovsky r1536 (esta coleccion) | 1536 | ~9,3 B | No aplica | Apache 2.0 | Hugging Face |
+| Van Gogh r1792 (esta coleccion) | 1792 | ~10,92 B | No aplica | Apache 2.0 | Hugging Face |
+| Van Gogh r2048 (esta coleccion) | 2048 | 12,48 B | No aplica | Apache 2.0 | Hugging Face |
 | LoRA convencional de estilo (referencia generica citada por el autor) | 32-128 | No disponible | No aplica | Depende del autor | No disponible |
 | LoRA de tecnica de pincel (referencia generica citada por el autor) | 512 | No disponible | No aplica | Depende del autor | No disponible |
-| Modelo base FLUX.2-dev | No aplica | No disponible | No disponible | No disponible en esta ficha | HuggingFace (Black Forest Labs) |
+| Modelo base FLUX.2-dev | No aplica | No disponible | No disponible | No disponible en esta ficha | Hugging Face (Black Forest Labs) |
 
 Rendimiento comparado: no disponible. No hay métricas publicadas que permitan afirmar que los adaptadores de rango alto superen objetivamente a alternativas de rango bajo más allá de la afirmación cualitativa del autor sobre reproducción de textura física.
 
@@ -106,6 +106,6 @@ Rendimiento comparado: no disponible. No hay métricas publicadas que permitan a
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/OrakulStorm/Master-Weights-Experimental-SencneS
+- Repositorio en Hugging Face: https://huggingface.co/OrakulStorm/Master-Weights-Experimental-SencneS
 - Modelo base: https://huggingface.co/black-forest-labs/FLUX.2-dev
 - No se han encontrado papers, blogs, repositorios ni demos adicionales relevantes en la búsqueda web realizada; los resultados obtenidos correspondían a contenidos sin relación con el modelo.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sieve-4B es un modelo de decisión de 4B desarrollado por Sthānika AI, un laboratorio independiente de investigación y benchmarking. No es un modelo generativo: recibe un estado (texto o JSON) junto con preguntas tipadas y devuelve una probabilidad calibrada para cada opción de cada pregunta. Lee el estado una sola vez, puntúa las opciones directamente y nunca produce texto, por lo que su pipeline declarado en HuggingFace es `text-classification`.
+Sieve-4B es un modelo de decisión de 4B desarrollado por Sthānika AI, un laboratorio independiente de investigación y benchmarking. No es un modelo generativo: recibe un estado (texto o JSON) junto con preguntas tipadas y devuelve una probabilidad calibrada para cada opción de cada pregunta. Lee el estado una sola vez, puntúa las opciones directamente y nunca produce texto, por lo que su pipeline declarado en Hugging Face es `text-classification`.
 
 Técnicamente es un adaptador LoRA de rango 32 acompañado de una cabeza de respuesta de 255 vías, montado sobre `Qwen/Qwen3.5-4B`. Forma parte de la familia Sieve junto a Sieve-9B y Sieve-2B, aunque su construcción interna difiere de la de sus hermanos y por eso incluye su propio código de inferencia (`sieve4b/`). El repositorio pesa 0,3 GB, se distribuye bajo licencia Apache 2.0 y solo declara inglés como idioma.
 
@@ -140,12 +140,12 @@ Los 44 benchmarks del indice:
 
 | Modelo | Parametros | Contexto | Decision Index | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Sieve-4B | 4B (LoRA rango 32 + cabeza de 255 vias) | no disponible | 43,82 (autodeclarado) | Apache 2.0 | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
+| Sieve-4B | 4B (LoRA rango 32 + cabeza de 255 vias) | no disponible | 43,82 (autodeclarado) | Apache 2.0 | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
 | JPT-4B | clase 4B | no disponible | 43,04 | no disponible | entrada del board del 28-09-2026 |
 | Jet v6.2 | no disponible | no disponible | 42,60 | no disponible | entrada del board del 28-09-2026 |
 | Sieve-9B | 9B | no disponible | no disponible | no disponible | familia Sieve, construccion distinta |
 | Sieve-2B | 2B | no disponible | no disponible | no disponible | familia Sieve, construccion distinta |
-| Qwen/Qwen3.5-4B | 4B | no disponible | no aplica (modelo generativo base, no un decisor) | no disponible | HuggingFace, es el backbone de Sieve-4B |
+| Qwen/Qwen3.5-4B | 4B | no disponible | no aplica (modelo generativo base, no un decisor) | no disponible | Hugging Face, es el backbone de Sieve-4B |
 
 ## Limitaciones y advertencias
 
@@ -163,7 +163,7 @@ Los 44 benchmarks del indice:
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sthanika-ai/Sieve-4B
+- Modelo en Hugging Face: https://huggingface.co/sthanika-ai/Sieve-4B
 - Colección de la familia Sieve: https://huggingface.co/collections/sthanika-ai/sieve-6abb93a61dd495f69811c586
 - Repositorio en GitHub: https://github.com/sthanika-ai/sieve/tree/main/
 - Organizacion en GitHub: https://github.com/sthanika-ai

@@ -84,9 +84,9 @@ Nota: los datos de Qwen3-VL y Qwen2.5-VL son aproximados y pueden variar. El Nem
 
 ## Enlaces
 
-- [HuggingFace - BF16](https://huggingface.co/nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16)
-- [HuggingFace - FP8](https://huggingface.co/nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-FP8)
-- [HuggingFace - NVFP4](https://huggingface.co/nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4)
+- [Hugging Face - BF16](https://huggingface.co/nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16)
+- [Hugging Face - FP8](https://huggingface.co/nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-FP8)
+- [Hugging Face - NVFP4](https://huggingface.co/nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4)
 - [Build.Nvidia.com - demo](https://build.nvidia.com/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning)
 - [NGC - contenedor NIM](https://catalog.ngc.nvidia.com/orgs/nim/teams/nvidia/containers/nemotron-3-nano-omni-30b-a3b-reasoning)
 - [Paper (arxiv:2604.24954)](https://arxiv.org/abs/2604.24954)

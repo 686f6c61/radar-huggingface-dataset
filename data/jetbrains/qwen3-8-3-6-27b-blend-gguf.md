@@ -119,7 +119,7 @@ No se dispone de datos de otros modelos de tamaño similar (por ejemplo, alterna
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/JetBrains/Qwen3.8-3.6-27B-blend-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/JetBrains/Qwen3.8-3.6-27B-blend-GGUF
 - Modelo base en BF16: https://huggingface.co/JetBrains/Qwen3.8-3.6-27B-blend
 - Variante MLX 4-bit: https://huggingface.co/JetBrains/Qwen3.8-3.6-27B-blend-MLX-4bit
 - Variante MTP MLX 4-bit: https://huggingface.co/JetBrains/Qwen3.8-3.6-27B-blend-MTP-MLX-4bit

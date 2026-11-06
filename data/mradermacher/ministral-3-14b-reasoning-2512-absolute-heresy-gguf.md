@@ -100,7 +100,7 @@ Nota: los datos de contexto y benchmarks de los modelos alternativos provienen d
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantizaciones GGUF): https://huggingface.co/mradermacher/Ministral-3-14B-Reasoning-2512-absolute-heresy-GGUF
+- Repositorio Hugging Face (cuantizaciones GGUF): https://huggingface.co/mradermacher/Ministral-3-14B-Reasoning-2512-absolute-heresy-GGUF
 - Modelo base (fine-tuning decensored): https://huggingface.co/MuXodious/Ministral-3-14B-Reasoning-2512-absolute-heresy
 - Cuantizaciones imatrix/ponderadas: https://huggingface.co/mradermacher/Ministral-3-14B-Reasoning-2512-absolute-heresy-i1-GGUF
 - Página de descargas del autor: https://hf.tst.eu/model#Ministral-3-14B-Reasoning-2512-absolute-heresy-GGUF

@@ -68,6 +68,6 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/scottlowry/Qwen3.8-27B-oQ8e-fp16-mtp
+- Repositorio Hugging Face: https://huggingface.co/scottlowry/Qwen3.8-27B-oQ8e-fp16-mtp
 - Herramienta oQ (oMLX): https://github.com/jundot/omlx
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B

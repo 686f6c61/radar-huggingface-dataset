@@ -22,7 +22,7 @@ Su relevancia actual reside en la propuesta de sustituir llamadas a modelos gene
 | Formato de pesos | Transformers (presumiblemente safetensors) y ONNX segun los tags. El repositorio figura con 0,0 GB, por lo que los pesos no estaban disponibles en el momento de la consulta |
 | Pipeline | text-classification |
 | Etiquetas destacadas | decision-model, system-1, rlcd, modernbert, calibration, expected-calibration-error, brier-score, typesafe-jev, openjev, onnx, webgpu, agentic-ai, tool-routing |
-| Fecha de creacion en HuggingFace | 2026-09-19 (segun metadatos del repositorio) |
+| Fecha de creacion en Hugging Face | 2026-09-19 (segun metadatos del repositorio) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -101,7 +101,7 @@ La comparación debe tomarse con cautela: las cifras de openJev-verdict-2.0, de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/heman10x/openJev-verdict-2.0
+- Hugging Face: https://huggingface.co/heman10x/openJev-verdict-2.0
 - Repositorio GitHub: https://github.com/Heman10x-NGU/openJev-verdict-2.0
 - Dataset de evaluación citado: `LocalLLaMA/typed-decisions` (sin URL directa en la información proporcionada)
 - Paper, blog oficial o demo adicionales: no disponibles

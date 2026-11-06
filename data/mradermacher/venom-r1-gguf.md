@@ -34,7 +34,7 @@ Respecto al entrenamiento, no hay ningun dato: ni numero de tokens, ni composici
 - Generacion de codigo: no documentada en la informacion disponible.
 - Matematicas: no documentadas.
 - Vision: no soportada segun los datos disponibles (no hay proyector multimodal ni etiquetas de vision).
-- Tool calling / function calling: no documentado; la etiqueta "endpoints_compatible" hace referencia a la infraestructura de despliegue de HuggingFace, no a capacidades de invocacion de herramientas.
+- Tool calling / function calling: no documentado; la etiqueta "endpoints_compatible" hace referencia a la infraestructura de despliegue de Hugging Face, no a capacidades de invocacion de herramientas.
 - Soporte de agentes y razonamiento multi-paso: no documentado.
 - Capacidades multilingues: limitadas al ingles segun el campo `language` de la model card; no se declaran otros idiomas.
 - Modo de pensamiento explicito, audio u otras capacidades especiales: no disponibles.

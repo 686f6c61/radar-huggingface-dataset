@@ -15,11 +15,11 @@ El modelo está pensado para ejecutarse localmente, sin conexión y sin necesida
 | Parametros activos | No aplica (modelo denso, no MoE) |
 | Longitud de contexto | No disponible (no se especifica en la ficha del modelo) |
 | Tipos de cuantizacion | No especificados; pesos en precision completa (FP32) segun la model card; version MLX disponible para Mac (3,6 GB) |
-| Idiomas soportados | Banglish (bengali romanizado) principalmente; etiquetado como bn, en en HuggingFace |
+| Idiomas soportados | Banglish (bengali romanizado) principalmente; etiquetado como bn, en en Hugging Face |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors |
 
-Nota: el tamano del repositorio en HuggingFace es de 13,7 GB, mientras que la model card indica 6,9 GB para los pesos en precision completa. Esta discrepancia puede deberse a que el repositorio incluye archivos adicionales o a una actualizacion posterior.
+Nota: el tamano del repositorio en Hugging Face es de 13,7 GB, mientras que la model card indica 6,9 GB para los pesos en precision completa. Esta discrepancia puede deberse a que el repositorio incluye archivos adicionales o a una actualizacion posterior.
 
 ## Arquitectura y entrenamiento
 
@@ -80,7 +80,7 @@ No se dispone de benchmarks comparativos entre estos modelos. La comparativa se 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sifat-febo/banglish-companion-3b
+- Modelo en Hugging Face: https://huggingface.co/sifat-febo/banglish-companion-3b
 - Modelo base Ministral-3-3B-Base-2512: https://huggingface.co/mistralai/Ministral-3-3B-Base-2512
 - Predecesor banglish-companion (1,7B): https://huggingface.co/sifat-febo/banglish-companion
 - Version MLX para Mac: https://huggingface.co/sifat-febo/banglish-companion-3b-mlx

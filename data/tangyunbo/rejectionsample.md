@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `tangyunbo/RejectionSample` | Adaptador LoRA sobre Qwen3-4B-Instruct-2507 | No disponible | No disponible | No disponible | HuggingFace |
-| `Qwen/Qwen3-4B-Instruct-2507` | Modelo base instruct | No disponible | No disponible | No disponible | HuggingFace |
+| `tangyunbo/RejectionSample` | Adaptador LoRA sobre Qwen3-4B-Instruct-2507 | No disponible | No disponible | No disponible | Hugging Face |
+| `Qwen/Qwen3-4B-Instruct-2507` | Modelo base instruct | No disponible | No disponible | No disponible | Hugging Face |
 
 No se dispone de información suficiente para comparar el adaptador con otros adaptadores LoRA similares, ya que no hay datos de benchmarks ni especificaciones técnicas públicas del modelo base.
 
@@ -78,5 +78,5 @@ No se dispone de información suficiente para comparar el adaptador con otros ad
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tangyunbo/RejectionSample
-- Perfil del autor en HuggingFace: https://huggingface.co/tangyunbo
+- Repositorio en Hugging Face: https://huggingface.co/tangyunbo/RejectionSample
+- Perfil del autor en Hugging Face: https://huggingface.co/tangyunbo

@@ -57,9 +57,9 @@ No se dispone de información sobre modelos comparables en la misma categoría d
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Strands Decider 2B | 2B | no disponible | Apache 2.0 | HuggingFace |
+| Strands Decider 2B | 2B | no disponible | Apache 2.0 | Hugging Face |
 | Jev (TypeSafe) | no disponible | no disponible | no disponible | no disponible |
-| Qwen3-2B (generativo) | 2B | no disponible | Apache 2.0 | HuggingFace |
+| Qwen3-2B (generativo) | 2B | no disponible | Apache 2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 - No genera texto: solo produce decisiones, por lo que no puede usarse para conversación ni generación de contenido.
@@ -72,7 +72,7 @@ No se dispone de información sobre modelos comparables en la misma categoría d
 - Dependencia de transformers.js para su uso en navegador, lo que limita su integración en otros entornos sin conversión adicional.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/RabiatS/strands-decider-2b-web
+- Hugging Face: https://huggingface.co/RabiatS/strands-decider-2b-web
 - Modelo original: https://huggingface.co/StrandsAgents/strands-decider-2B-hobson-v19
 - Modelo ONNX de la comunidad: https://huggingface.co/onnx-community/strands-decider-2B-hobson-v19-ONNX
 - Blog de Strands: https://strandsagents.com/blog/introducing-strands-decider/

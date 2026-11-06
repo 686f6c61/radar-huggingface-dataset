@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Swen-1.1-Edge es un modelo de generacion de texto publicado por el laboratorio sorika-labs en HuggingFace bajo el identificador `sorika-labs/Swen-1.1-Edge`. Segun las etiquetas del repositorio, se trata de un modelo de tipo instruct orientado a tareas de agente y al uso de herramientas (tool-use), con una arquitectura descrita por el propio autor como hibrida y planteado para escenarios de despliegue en el borde (edge). La libreria declarada es transformers y el formato de pesos distribuido es safetensors, con codigo personalizado (`custom_code`).
+Swen-1.1-Edge es un modelo de generacion de texto publicado por el laboratorio sorika-labs en Hugging Face bajo el identificador `sorika-labs/Swen-1.1-Edge`. Segun las etiquetas del repositorio, se trata de un modelo de tipo instruct orientado a tareas de agente y al uso de herramientas (tool-use), con una arquitectura descrita por el propio autor como hibrida y planteado para escenarios de despliegue en el borde (edge). La libreria declarada es transformers y el formato de pesos distribuido es safetensors, con codigo personalizado (`custom_code`).
 
 El repositorio no incluye informacion detallada sobre el numero de parametros, la longitud de contexto ni la composicion del dataset de entrenamiento. En el momento de redactar esta ficha el modelo acumula 0 descargas y 0 likes, y fue creado y actualizado por ultima vez el 11 de septiembre de 2026, lo que indica un lanzamiento muy reciente y sin traccion publica documentada.
 
@@ -76,5 +76,5 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sorika-labs/Swen-1.1-Edge
+- Hugging Face: https://huggingface.co/sorika-labs/Swen-1.1-Edge
 - Paper, blog, repositorio o demo adicionales: no disponible en la informacion proporcionada.

@@ -72,7 +72,7 @@ La model card no incluye métricas de MMLU, HumanEval, GSM8K, MT-Bench ni de nin
 
 | Modelo | Parametros | Contexto | Razonamiento explicito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Norn2026/qwen-deepseek-merged-7b | ~7,6B (no confirmado) | No disponible | Presumible por herencia de R1 | Apache 2.0 | HuggingFace, 0 descargas |
+| Norn2026/qwen-deepseek-merged-7b | ~7,6B (no confirmado) | No disponible | Presumible por herencia de R1 | Apache 2.0 | Hugging Face, 0 descargas |
 | Qwen/Qwen2.5-7B-Instruct | 7,61B | 32 768 nativos, 131 072 con YaRN | No | Apache 2.0 (Qwen) | Muy extendida, ecosistema amplio de cuantizaciones |
 | deepseek-ai/DeepSeek-R1-Distill-Qwen-7B | 7,6B | 131 072 (heredado de Qwen2.5) | Si, cadenas de pensamiento | MIT (con avisos de uso) | Amplia, con variantes GGUF de terceros |
 | meta-llama/Llama-3.1-8B-Instruct | 8,03B | 131 072 | No | Llama 3.1 Community License | Muy amplia |
@@ -94,7 +94,7 @@ La ventaja teórica de la fusión es disponer de un único checkpoint con perfil
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Norn2026/qwen-deepseek-merged-7b
+- Modelo en Hugging Face: https://huggingface.co/Norn2026/qwen-deepseek-merged-7b
 - Modelo base generalista: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Modelo experto en razonamiento: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B
 - Herramienta de fusión mergekit: https://github.com/arcee-ai/mergekit

@@ -73,9 +73,9 @@ Rendimiento de inferencia: 4,6 informes/s con 32 peticiones en vuelo sobre una R
 
 | Modelo | Parametros | Contexto | Cifras correctas (test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FilingFigures Qwen3.5-4B NVFP4 | ~4,66B | 12.288 tokens (configurado) | 98,8% | Apache 2.0 | HuggingFace, vLLM |
-| Qwen3.5-4B (base, sin fine-tuning) | ~4B | No disponible | 95,4% | No disponible en la informacion | HuggingFace |
-| Qwen3.5-397B | 397B | No disponible | 98,7% | No disponible en la informacion | HuggingFace |
+| FilingFigures Qwen3.5-4B NVFP4 | ~4,66B | 12.288 tokens (configurado) | 98,8% | Apache 2.0 | Hugging Face, vLLM |
+| Qwen3.5-4B (base, sin fine-tuning) | ~4B | No disponible | 95,4% | No disponible en la informacion | Hugging Face |
+| Qwen3.5-397B | 397B | No disponible | 98,7% | No disponible en la informacion | Hugging Face |
 | Claude Opus 5.5 | No disponible | No disponible | 100,0% | Propietaria | API |
 
 La comparativa se limita a los datos publicados en la model card; no se dispone de informacion sobre contexto, licencia ni arquitectura de los modelos alternativos mas alla de lo indicado.
@@ -93,7 +93,7 @@ La comparativa se limita a los datos publicados en la model card; no se dispone 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kyryk/filing-figures-qwen3.5-4b-nvfp4
+- Modelo en Hugging Face: https://huggingface.co/kyryk/filing-figures-qwen3.5-4b-nvfp4
 - Adaptador LoRA: https://huggingface.co/kyryk/filing-figures-qwen3.5-4b-lora
 - Dataset: https://huggingface.co/datasets/kyryk/filing-figures
 - Repositorio de codigo, prompt y resultados: https://github.com/nathankyryk/filing-figures

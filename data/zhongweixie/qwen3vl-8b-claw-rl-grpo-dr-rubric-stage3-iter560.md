@@ -25,7 +25,7 @@ La relevancia de este modelo radica en su metodología: aplica RL con GRPO a un 
 
 El modelo es un ajuste fino por refuerzo del checkpoint SFT `stage3`, que a su vez deriva de Qwen3-VL-8B-Instruct. La arquitectura subyacente es la del modelo base: un transformer denso multimodal que procesa entradas de texto, imagen y vídeo mediante un codificador visual y un decodificador de lenguaje. El entrenamiento con RL utiliza GRPO, un algoritmo de optimización de políticas que agrupa respuestas para calcular ventajas relativas. La recompensa se obtiene mediante un modelo juez externo (`qwen/qwen-2.5-72b-instruct` a través de OpenRouter) que evalúa las respuestas según una rúbrica definida en el archivo `rubric_overlay_v13_dr_rubric.json`.
 
-El proceso de entrenamiento se llevó a cabo en 8 GPUs H800 con paralelismo de tensores (TP=8) y colocalización de modelos. Se realizaron 561 pasos de rollout, equivalentes a aproximadamente 3 épocas sobre un conjunto de 187 prompts, con 8 muestras por prompt y un tamaño de lote global de 8. El autor no proporciona valores de tasa de aprendizaje ni coeficiente KL, indicando que se usaron los perfiles por defecto del framework `slime`. El checkpoint final se obtuvo de la iteración 560 y se convirtió desde un checkpoint distribuido de Megatron al formato HuggingFace mediante la herramienta `slime/tools/convert_torch_dist_to_hf.py`.
+El proceso de entrenamiento se llevó a cabo en 8 GPUs H800 con paralelismo de tensores (TP=8) y colocalización de modelos. Se realizaron 561 pasos de rollout, equivalentes a aproximadamente 3 épocas sobre un conjunto de 187 prompts, con 8 muestras por prompt y un tamaño de lote global de 8. El autor no proporciona valores de tasa de aprendizaje ni coeficiente KL, indicando que se usaron los perfiles por defecto del framework `slime`. El checkpoint final se obtuvo de la iteración 560 y se convirtió desde un checkpoint distribuido de Megatron al formato Hugging Face mediante la herramienta `slime/tools/convert_torch_dist_to_hf.py`.
 
 ## Capacidades
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 - VRAM estimada para inferencia: el modelo tiene 8,7 mil millones de parámetros. En precisión FP16, el tamaño del repositorio es de 17,5 GB, por lo que se necesitan al menos 20 GB de VRAM para cargar los pesos en memoria (considerando overhead). Con cuantización a 4 bits (no disponible oficialmente, pero posible mediante herramientas externas como llama.cpp o bitsandbytes), se podría reducir a unos 5-6 GB.
 - GPU recomendadas: para inferencia en FP16, una GPU con 24 GB de VRAM (por ejemplo, RTX 3090, RTX 4090) sería suficiente. Para entrenamiento o inferencia con lotes grandes, se requieren GPUs de datacenter como A100 (40/80 GB) o H100.
 - Compatibilidad con GPUs de consumo: sí, es posible ejecutar el modelo en una GPU de consumo con al menos 24 GB de VRAM en FP16, o con menos si se aplica cuantización externa.
-- Opciones de despliegue: el modelo es compatible con la librería `transformers` de HuggingFace, por lo que puede servirse con frameworks como vLLM, TGI o llama.cpp (si se convierte a GGUF). También puede usarse con Ollama si se exporta a formato GGUF.
+- Opciones de despliegue: el modelo es compatible con la librería `transformers` de Hugging Face, por lo que puede servirse con frameworks como vLLM, TGI o llama.cpp (si se convierte a GGUF). También puede usarse con Ollama si se exporta a formato GGUF.
 - Latencia y throughput: no se proporcionan datos. En una GPU H100, un modelo de 8B en FP16 suele generar entre 50 y 100 tokens por segundo, pero esto depende de la implementación y de la longitud de la secuencia.
 
 ## Comparativa con modelos similares
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativo, ya que el autor no ha publica
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zhongweixie/qwen3vl-8b-claw-rl-grpo-dr-rubric-stage3-iter560
+- Modelo en Hugging Face: https://huggingface.co/zhongweixie/qwen3vl-8b-claw-rl-grpo-dr-rubric-stage3-iter560
 - Modelo base Qwen3-VL-8B-Instruct: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Paper técnico de Qwen3-VL (arXiv): https://arxiv.org/abs/2511.21631
 - Repositorio GitHub de Qwen3-VL: https://github.com/QwenLM/Qwen3-VL

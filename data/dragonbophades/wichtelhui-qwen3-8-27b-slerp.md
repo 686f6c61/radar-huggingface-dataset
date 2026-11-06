@@ -94,7 +94,7 @@ El merge se sitúa entre sus padres en capacidad y en tool use, pero por debajo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DragonBophades/WichtelHui-Qwen3.8-27B-SLERP
+- Modelo en Hugging Face: https://huggingface.co/DragonBophades/WichtelHui-Qwen3.8-27B-SLERP
 - Padre Wichtel-Qwen3.6-27B: https://huggingface.co/nbeerbower/Wichtel-Qwen3.6-27B
 - Padre Huihui-Qwen3.8-27B-abliterated: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated
 - Guía de Qwen3.8-27B (referencia del modelo base): https://lovableapp.org/blog/qwen3-8-27b

@@ -83,7 +83,7 @@ No se han publicado comparativas con otros modelos especializados en administrac
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OpenAdminOS/openadmin-20b
+- Repositorio Hugging Face: https://huggingface.co/OpenAdminOS/openadmin-20b
 - Repositorio GGUF: https://huggingface.co/OpenAdminOS/openadmin-20b-GGUF
 - Dataset de evaluacion: https://huggingface.co/datasets/OpenAdminOS/openadmin-evals
 - Dataset de entrenamiento: https://huggingface.co/datasets/OpenAdminOS/openadmin-sft

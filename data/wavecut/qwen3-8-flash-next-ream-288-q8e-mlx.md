@@ -83,7 +83,7 @@ Ambos modelos 288e son drop-in entre sí, con la misma estructura de archivos y 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WaveCut/Qwen3.8-Flash-Next-REAM-288-Q8E-MLX
+- Modelo en Hugging Face: https://huggingface.co/WaveCut/Qwen3.8-Flash-Next-REAM-288-Q8E-MLX
 - Modelo base (sin cuantizar): https://huggingface.co/WaveCut/Qwen3.8-Flash-Next-REAM-288
 - Modelo REAP-288 (prune) de sh0wie: https://huggingface.co/sh0wie/Qwen3.8-Flash-Next-REAP-288-Q8E-MLX
 - Manifiesto REAP-288 (MLX 4-bit): https://huggingface.co/sh0wie/Qwen3.8-Flash-Next-REAP-288-MLX-4bit

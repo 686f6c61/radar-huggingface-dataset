@@ -83,7 +83,7 @@ No se dispone de información comparativa directa con otros modelos de OCR en la
 
 ## Enlaces
 
-- [HuggingFace - konradjr007/NaviDC-OCR-GGUF](https://huggingface.co/konradjr007/NaviDC-OCR-GGUF)
-- [HuggingFace - StarDoc-AI/NaviDC-OCR (modelo original)](https://huggingface.co/StarDoc-AI/NaviDC-OCR)
+- [Hugging Face - konradjr007/NaviDC-OCR-GGUF](https://huggingface.co/konradjr007/NaviDC-OCR-GGUF)
+- [Hugging Face - StarDoc-AI/NaviDC-OCR (modelo original)](https://huggingface.co/StarDoc-AI/NaviDC-OCR)
 - [GitHub - caipeng328/NaviDC-OCR](https://github.com/caipeng328/NaviDC-OCR)
 - [Paper - NaviDC-OCR: Navigating Document Parsing Across Digital and Camera (arXiv)](https://arxiv.org/html/2608.12898v2)

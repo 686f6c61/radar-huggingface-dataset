@@ -6,7 +6,7 @@ connectailab-rl-luxveritas-v1 es un adaptador LoRA entrenado por el usuario riyu
 
 La relevancia de esta ficha es acotada: se trata de un experimento de investigación y divulgación (el propio autor lo describe como modelo educativo sobre un simulador sintético), no de un modelo de propósito general. Su interés técnico reside en la combinación de un pipeline de reinforcement learning con GRPO sobre un adaptador PEFT de un modelo de 0,8 mil millones de parámetros, entrenado con datos generados por un profesor PPO dentro del simulador.
 
-La información pública disponible es escasa: el repositorio ocupa 0,0 GB (solo pesos del adaptador, no del modelo base), no tiene descargas ni likes, y la model card está redactada en coreano. Los idiomas declarados se limitan al coreano (`ko`), la licencia es Apache 2.0 y la fecha de creación indicada en HuggingFace es 2026-11-05.
+La información pública disponible es escasa: el repositorio ocupa 0,0 GB (solo pesos del adaptador, no del modelo base), no tiene descargas ni likes, y la model card está redactada en coreano. Los idiomas declarados se limitan al coreano (`ko`), la licencia es Apache 2.0 y la fecha de creación indicada en Hugging Face es 2026-11-05.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ La información pública disponible es escasa: el repositorio ocupa 0,0 GB (solo
 
 ## Arquitectura y entrenamiento
 
-El modelo es un adaptador LoRA (PEFT) montado sobre Qwen/Qwen3.5-0.8B, un transformer decoder-only de 0,8 mil millones de parámetros. El adaptador no modifica la arquitectura base: añade matrices de bajo rango entrenadas para la tarea específica de selección de opciones. El pipeline declarado en HuggingFace es `reinforcement-learning`, con etiquetas que incluyen GRPO, deep reinforcement learning, Gymnasium y decision-making.
+El modelo es un adaptador LoRA (PEFT) montado sobre Qwen/Qwen3.5-0.8B, un transformer decoder-only de 0,8 mil millones de parámetros. El adaptador no modifica la arquitectura base: añade matrices de bajo rango entrenadas para la tarea específica de selección de opciones. El pipeline declarado en Hugging Face es `reinforcement-learning`, con etiquetas que incluyen GRPO, deep reinforcement learning, Gymnasium y decision-making.
 
 El proceso de entrenamiento descrito en la model card consta de cuatro fases. Primero, una política pequeña se entrena con PPO dentro del simulador CONNECT TYCOON durante miles de meses simulados; esta política actúa como profesor. Segundo, se construye un conjunto de problemas reejecutando cada mes del simulador con cada opción alternativa para puntuar cada elección. Tercero, se aplica aprendizaje supervisado sobre la opción con mayor puntuación. Cuarto, se aplica reinforcement learning con ventaja normalizada por grupo (GRPO) y una penalización KL contra el modelo de partida, elevando la probabilidad de las opciones cuyo resultado en el simulador supera la media del grupo. La distribución de empresas usada es `general` (ajustada a datos públicos) y el reparto de problemas es de 4082 de entrenamiento, 832 de validación y 840 de test.
 
@@ -71,8 +71,8 @@ El propio autor advierte que la evaluación de operación empresarial correspond
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-luxveritas-v1 | Adaptador LoRA sobre base de 0,8B | No disponible | Selección de opción en simulador (GRPO) | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3.5-0.8B (base) | 0,8B | No disponible | Modelo de lenguaje general | No disponible en la información | HuggingFace |
+| connectailab-rl-luxveritas-v1 | Adaptador LoRA sobre base de 0,8B | No disponible | Selección de opción en simulador (GRPO) | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3.5-0.8B (base) | 0,8B | No disponible | Modelo de lenguaje general | No disponible en la información | Hugging Face |
 | Política PPO del simulador (profesora) | No disponible | No aplica | RL clásico en entorno Gymnasium | No disponible | Interna del proyecto CONNECT TYCOON |
 
 No se dispone de datos de benchmarks comparables con otros modelos de decisión de la misma categoría en la información proporcionada.
@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks comparables con otros modelos de decisión 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/riyunkim/connectailab-rl-luxveritas-v1
+- Hugging Face: https://huggingface.co/riyunkim/connectailab-rl-luxveritas-v1
 - Repositorio GitHub CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de entrenamiento en Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb
 - Canal de YouTube CONNECT AI LAB: https://www.youtube.com/@CONNECT-AI-LAB

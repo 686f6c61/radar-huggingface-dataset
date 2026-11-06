@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `hhjoshua186389/perceiver-contrastive-run1-2023` contiene una implementación compacta y personalizada de la arquitectura Perceiver en PyTorch, orientada a experimentos de aprendizaje contrastivo. Lo publica el usuario de HuggingFace `hhjoshua186389` y se distribuye bajo licencia MIT. No se trata de un modelo preentrenado listo para producción, sino de un esqueleto de código con una configuración «tiny» pensada para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala.
+El repositorio `hhjoshua186389/perceiver-contrastive-run1-2023` contiene una implementación compacta y personalizada de la arquitectura Perceiver en PyTorch, orientada a experimentos de aprendizaje contrastivo. Lo publica el usuario de Hugging Face `hhjoshua186389` y se distribuye bajo licencia MIT. No se trata de un modelo preentrenado listo para producción, sino de un esqueleto de código con una configuración «tiny» pensada para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala.
 
 El peso incluido (`model.safetensors`) es un checkpoint de inicialización válido, no un modelo entrenado ni evaluado con benchmarks. El recuento real de parámetros registrado en el fichero safetensors es de 24.832 parámetros, una cifra diminuta que confirma el carácter de juguete del artefacto. El repositorio ocupa 0,0 GB y no acumula descargas ni interacciones en el momento de redactar esta ficha.
 
@@ -73,9 +73,9 @@ No disponible. La informacion proporcionada no incluye modelos comparables ni da
 - Restricciones de licencia: MIT, permisiva para uso comercial y modificacion. El autor advierte de que deben revisarse por separado los terminos de los datos de origen si el repositorio se usa con datasets externos.
 - Para produccion: debe tratarse como un punto de partida experimental. Cualquier resultado obtenido de un checkpoint futuro entrenado debe documentarse por separado de los valores por defecto incluidos en este repositorio.
 - El repositorio tiene 0 descargas y 0 likes, sin senales de adopcion ni mantenimiento por la comunidad.
-- Detalle operativo: al ser una implementacion personalizada, las APIs de carga automatica de HuggingFace exigen un adaptador explicito antes de poder usarla.
+- Detalle operativo: al ser una implementacion personalizada, las APIs de carga automatica de Hugging Face exigen un adaptador explicito antes de poder usarla.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hhjoshua186389/perceiver-contrastive-run1-2023
+- Hugging Face: https://huggingface.co/hhjoshua186389/perceiver-contrastive-run1-2023
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en los resultados de la busqueda web proporcionada.

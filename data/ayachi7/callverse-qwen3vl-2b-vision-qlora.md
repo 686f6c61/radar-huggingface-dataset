@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CallVerse-Qwen3VL-2B-Vision-QLoRA es un adaptador QLoRA alojado en HuggingFace por el usuario Ayachi7. Por la nomenclatura del repositorio, se trata de un ajuste fino de bajo rango cuantizado sobre el modelo base Qwen3-VL de 2B parametros, orientado a tareas de vision y, presumiblemente, a un dominio denominado "CallVerse". El modelo se publica como un artefacto derivado (adaptador), no como un modelo completo, por lo que su uso requiere cargar el modelo base Qwen3-VL-2B y aplicar los pesos del adaptador.
+CallVerse-Qwen3VL-2B-Vision-QLoRA es un adaptador QLoRA alojado en Hugging Face por el usuario Ayachi7. Por la nomenclatura del repositorio, se trata de un ajuste fino de bajo rango cuantizado sobre el modelo base Qwen3-VL de 2B parametros, orientado a tareas de vision y, presumiblemente, a un dominio denominado "CallVerse". El modelo se publica como un artefacto derivado (adaptador), no como un modelo completo, por lo que su uso requiere cargar el modelo base Qwen3-VL-2B y aplicar los pesos del adaptador.
 
 La relevancia de esta ficha es limitada: el repositorio no incluye model card, no declara licencia, no especifica idiomas y no registra descargas en el momento de la consulta. Se trata, por tanto, de un experimento personal o de un artefacto en fase muy temprana de publicacion, sin documentacion tecnica asociada.
 
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| CallVerse-Qwen3VL-2B-Vision-QLoRA | Base 2B + adaptador | No disponible | No disponible | HuggingFace (0 descargas) |
-| Qwen3-VL-2B (modelo base) | 2B | No disponible en esta ficha | Segun Qwen | HuggingFace |
+| CallVerse-Qwen3VL-2B-Vision-QLoRA | Base 2B + adaptador | No disponible | No disponible | Hugging Face (0 descargas) |
+| Qwen3-VL-2B (modelo base) | 2B | No disponible en esta ficha | Segun Qwen | Hugging Face |
 | Alternativas multimodales de 2B | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de rendimiento para establecer una comparativa cuantitativa con alternativas.
@@ -80,5 +80,5 @@ No se dispone de datos de rendimiento para establecer una comparativa cuantitati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ayachi7/CallVerse-Qwen3VL-2B-Vision-QLoRA
+- Hugging Face: https://huggingface.co/Ayachi7/CallVerse-Qwen3VL-2B-Vision-QLoRA
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la informacion disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`SaoriSuzuki/tiny-transformer-generation` es un artefacto reproducible publicado en HuggingFace por el usuario SaoriSuzuki que contiene una implementación propia de un transformer de generación de texto de escala mínima. El repositorio no es un modelo entrenado ni un release con rendimiento demostrado: el autor lo describe explícitamente como un "checkpoint de inicialización" válido para pruebas de humo (*smoke tests*), no como un checkpoint con benchmarks. El recuento real de parámetros en `model.safetensors` es de 16.576, lo que lo sitúa tres o cuatro órdenes de magnitud por debajo de cualquier modelo de lenguaje utilizable en producción.
+`SaoriSuzuki/tiny-transformer-generation` es un artefacto reproducible publicado en Hugging Face por el usuario SaoriSuzuki que contiene una implementación propia de un transformer de generación de texto de escala mínima. El repositorio no es un modelo entrenado ni un release con rendimiento demostrado: el autor lo describe explícitamente como un "checkpoint de inicialización" válido para pruebas de humo (*smoke tests*), no como un checkpoint con benchmarks. El recuento real de parámetros en `model.safetensors` es de 16.576, lo que lo sitúa tres o cuatro órdenes de magnitud por debajo de cualquier modelo de lenguaje utilizable en producción.
 
 El interés del artefacto es formativo y de ingeniería, no competitivo. Incluye un script `main.py` con un punto de entrada ejecutable, un `config.json` con los hiperparámetros de arquitectura, un `training_args.json` con la receta de entrenamiento por defecto (RMSProp con *warmup* lineal) y un checkpoint de inicialización en safetensors. La arquitectura declarada combina atención *multi-query*, fusión tipo Tucker, activación GELU y normalización LayerNorm, sobre una variante etiquetada internamente como "giant" pese al tamaño real del modelo.
 
@@ -21,7 +21,7 @@ Su relevancia actual es la de una plantilla didáctica y un *fixture* de pruebas
 | Formato de pesos | safetensors (`model.safetensors`), con implementacion PyTorch en `main.py` |
 | Escala declarada | "giant" (etiqueta interna del `config.json`; no coincide con el tamano real) |
 | Schedule de entrenamiento | RMSProp con warmup lineal (valores por defecto, no evidencia de ejecucion completada) |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 
 ## Arquitectura y entrenamiento
 
@@ -79,5 +79,5 @@ No disponible. No se han proporcionado alternativas comparables en la informacio
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SaoriSuzuki/tiny-transformer-generation
+- Repositorio en Hugging Face: https://huggingface.co/SaoriSuzuki/tiny-transformer-generation
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion proporcionada.

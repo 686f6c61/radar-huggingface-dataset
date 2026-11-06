@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `RoboColosseum/so101-stack-cubes-gr00t-n1.7` | 3.144 M | no disponible | Apilado de cubos en SO-101 | Apache 2.0 | HuggingFace, 0 descargas |
+| `RoboColosseum/so101-stack-cubes-gr00t-n1.7` | 3.144 M | no disponible | Apilado de cubos en SO-101 | Apache 2.0 | Hugging Face, 0 descargas |
 | GR00T N1.7 (base, NVIDIA) | no disponible en la información | no disponible | Modelo fundacional cross-embodiment | no disponible en la información | GitHub NVIDIA/Isaac-GR00T |
-| Políticas LeRobot tipo ACT / Diffusion Policy | típicamente decenas de millones | no aplica | Imitación sobre SO-101 | Apache 2.0 (LeRobot) | HuggingFace, ampliamente usadas |
+| Políticas LeRobot tipo ACT / Diffusion Policy | típicamente decenas de millones | no aplica | Imitación sobre SO-101 | Apache 2.0 (LeRobot) | Hugging Face, ampliamente usadas |
 | π0 (Physical Intelligence) | no disponible en la información | no disponible | Control robótico generalista | no disponible en la información | no disponible en la información |
 
 La comparación cuantitativa con alternativas no es posible con los datos proporcionados: no hay benchmarks comunes ni tasas de éxito publicadas para este checkpoint. La diferencia principal frente a políticas ligeras como ACT es el uso de un backbone VLM de miles de millones de parámetros, lo que encarece el despliegue sin que haya evidencia pública de mejora en esta tarea concreta.
@@ -96,7 +96,7 @@ La comparación cuantitativa con alternativas no es posible con los datos propor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RoboColosseum/so101-stack-cubes-gr00t-n1.7
+- Modelo en Hugging Face: https://huggingface.co/RoboColosseum/so101-stack-cubes-gr00t-n1.7
 - Dataset de entrenamiento: https://huggingface.co/datasets/Jiamo0912/so101-stack-cubes
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=Jiamo0912/so101-stack-cubes
 - Repositorio GR00T de NVIDIA: https://github.com/NVIDIA/Isaac-GR00T

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`unbiasederudite/qwen2.5-coder-3b-text2sql-qlora` es un adaptador LoRA (formato PEFT) entrenado mediante QLoRA sobre el modelo base `Qwen/Qwen2.5-Coder-3B-Instruct`, especializado en la traducción de preguntas en lenguaje natural a consultas SQL (text-to-SQL). Lo desarrolla el usuario de HuggingFace `unbiasederudite`, y su propósito es acotar el comportamiento del modelo base hacia una única tarea: generar SQL ejecutable a partir de esquemas de bases de datos relacionales.
+`unbiasederudite/qwen2.5-coder-3b-text2sql-qlora` es un adaptador LoRA (formato PEFT) entrenado mediante QLoRA sobre el modelo base `Qwen/Qwen2.5-Coder-3B-Instruct`, especializado en la traducción de preguntas en lenguaje natural a consultas SQL (text-to-SQL). Lo desarrolla el usuario de Hugging Face `unbiasederudite`, y su propósito es acotar el comportamiento del modelo base hacia una única tarea: generar SQL ejecutable a partir de esquemas de bases de datos relacionales.
 
 El adaptador no contiene pesos completos, sino únicamente las matrices de bajo rango del fine-tuning, por lo que el repositorio ocupa 0,1 GB y requiere cargar el modelo base de 3.000 millones de parámetros para funcionar. El entrenamiento se hizo con SFT (supervised fine-tuning) sobre la combinación `train_spider` + `train_others` del conjunto de datos Spider, tras eliminar preguntas duplicadas y ejemplos cuya consulta de referencia no se ejecutaba correctamente, quedando 8.647 muestras y descartando 82 que superaban los 2.048 tokens.
 
@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| unbiasederudite/qwen2.5-coder-3b-text2sql-qlora | 3B (base) + adaptador LoRA | 32.768 tokens (base, según Qwen) | Text-to-SQL (Spider) | no disponible en la model card | Adaptador PEFT en HuggingFace, 0 descargas |
-| Qwen/Qwen2.5-Coder-3B-Instruct | 3B | 32.768 tokens (según Qwen) | Código general e instrucciones | consultar ficha del modelo base | Pesos completos en HuggingFace |
+| unbiasederudite/qwen2.5-coder-3b-text2sql-qlora | 3B (base) + adaptador LoRA | 32.768 tokens (base, según Qwen) | Text-to-SQL (Spider) | no disponible en la model card | Adaptador PEFT en Hugging Face, 0 descargas |
+| Qwen/Qwen2.5-Coder-3B-Instruct | 3B | 32.768 tokens (según Qwen) | Código general e instrucciones | consultar ficha del modelo base | Pesos completos en Hugging Face |
 | Qwen/Qwen2.5-Coder-7B-Instruct | 7B | 32.768 tokens (según Qwen) | Código general e instrucciones | consultar ficha del modelo base | Pesos completos; requiere ~15 GB en fp16 |
 | Qwen/Qwen2.5-Coder-1.5B-Instruct | 1,5B | 32.768 tokens (según Qwen) | Código general; alternativa ligera | consultar ficha del modelo base | Pesos completos; cabe en 4–6 GB en fp16 |
 
@@ -86,7 +86,7 @@ No se han localizado en la búsqueda adaptadores text-to-SQL comparables publica
 
 ## Enlaces
 
-- [Ficha del adaptador en HuggingFace](https://huggingface.co/unbiasederudite/qwen2.5-coder-3b-text2sql-qlora)
+- [Ficha del adaptador en Hugging Face](https://huggingface.co/unbiasederudite/qwen2.5-coder-3b-text2sql-qlora)
 - [Repositorio GitHub del proyecto (QLoRA text2sql)](https://github.com/unbiasederudite/qwen2.5-coder-text2sql-qlora)
 - [Pipeline text2sql: datos, prompts, fine-tuning y scoring](https://github.com/unbiasederudite/qwen2.5-coder-text2sql-qlora/blob/main/src/text2sql/README.md)
 - [Modelo base Qwen/Qwen2.5-Coder-3B-Instruct](https://huggingface.co/Qwen/Qwen2.5-Coder-3B-Instruct)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo **Mythic_Fantasy_Styles** es un LoRA (Low-Rank Adaptation) de difusión para generación de imágenes, diseñado específicamente para producir arte fantástico de alta calidad con un estilo semirrealista. Fue creado por el usuario DavidBaloches y subido a HuggingFace, aunque el crédito original del estilo pertenece al usuario VelvetS de CivitAI, quien desarrolló la serie "Velvet's Mythic Fantasy Styles". El LoRA se basa en el modelo de difusión FLUX.1-dev de Black Forest Labs, lo que lo convierte en un adaptador ligero (0.1 GB) que modifica el comportamiento del modelo base para generar ilustraciones con estética de fantasía épica, similar al estilo "Portrait Style" del mismo autor.
+El modelo **Mythic_Fantasy_Styles** es un LoRA (Low-Rank Adaptation) de difusión para generación de imágenes, diseñado específicamente para producir arte fantástico de alta calidad con un estilo semirrealista. Fue creado por el usuario DavidBaloches y subido a Hugging Face, aunque el crédito original del estilo pertenece al usuario VelvetS de CivitAI, quien desarrolló la serie "Velvet's Mythic Fantasy Styles". El LoRA se basa en el modelo de difusión FLUX.1-dev de Black Forest Labs, lo que lo convierte en un adaptador ligero (0.1 GB) que modifica el comportamiento del modelo base para generar ilustraciones con estética de fantasía épica, similar al estilo "Portrait Style" del mismo autor.
 
 El modelo se activa mediante la palabra desencadenante `MythP0rt` y es compatible con pesos de LoRA entre 0.5 y 1.5, recomendando el autor un valor de 1.0 para resultados óptimos. La ficha está dirigida a desarrolladores e investigadores que trabajan con pipelines de difusión en Python (librería `diffusers`) y buscan un estilo visual específico sin necesidad de entrenar un modelo completo desde cero. Su relevancia radica en que permite añadir una estética de fantasía mitológica a cualquier generación de imágenes con FLUX.1-dev mediante un ajuste fino de bajo coste computacional.
 
@@ -60,10 +60,10 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Base | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Davidic_Mythic_Fantasy_Styles (este) | FLUX.1-dev | LoRA | no disponible | no aplica | other (FLUX) | HuggingFace |
-| Velvet's Mythic Fantasy Styles (versión original) | FLUX.1-dev | LoRA | no disponible | no aplica | no disponible | CivitAI, HuggingFace |
+| Davidic_Mythic_Fantasy_Styles (este) | FLUX.1-dev | LoRA | no disponible | no aplica | other (FLUX) | Hugging Face |
+| Velvet's Mythic Fantasy Styles (versión original) | FLUX.1-dev | LoRA | no disponible | no aplica | no disponible | CivitAI, Hugging Face |
 | Velvet's Mythic Fantasy Styles (versión Pony) | Pony Diffusion | LoRA | no disponible | no aplica | no disponible | CivitAI |
-| Muapi/velvet-s-mythic-fantasy-styles-flux-pony-illustrious | FLUX.1 D | LoRA | no disponible | no aplica | no disponible | HuggingFace |
+| Muapi/velvet-s-mythic-fantasy-styles-flux-pony-illustrious | FLUX.1 D | LoRA | no disponible | no aplica | no disponible | Hugging Face |
 
 La comparativa se limita a las versiones del mismo estilo en diferentes bases; no se dispone de datos sobre otros LoRA de fantasía en el mercado para una comparativa objetiva.
 
@@ -78,15 +78,15 @@ La comparativa se limita a las versiones del mismo estilo en diferentes bases; n
 
 ## Enlaces
 
-- Página de HuggingFace del modelo: https://huggingface.co/DavidBaloches/Mythic_Fantasy_Styles
+- Página de Hugging Face del modelo: https://huggingface.co/DavidBaloches/Mythic_Fantasy_Styles
 - Modelo base FLUX.1-dev: https://huggingface.co/black-forest-labs/FLUX.1-dev
 - Página de CivitAI del autor original: https://civitai.com/user/VelvetS
 - Página de PromptHero del estilo (versión Flux): https://prompthero.com/ai-models/velvet-s-mythic-fantasy-styles-flux-pony-download/portrait-style
 - Página de PromptHero del estilo (versión Flux + Pony + Illustrious): https://prompthero.com/ai-models/velvets-mythic-fantasy-styles--flux--pony--illustrious-599757-download/velvets-mythic-fantasy-styles--flux--pony--illustrious-anima
-- Modelo similar en HuggingFace: https://huggingface.co/Muapi/velvet-s-mythic-fantasy-styles-flux-pony-illustrious
+- Modelo similar en Hugging Face: https://huggingface.co/Muapi/velvet-s-mythic-fantasy-styles-flux-pony-illustrious
 - Archivo en CivArchive: https://civarchive.com/tensorart/models/899337649574138343/versions/899337649574138343</think>## Resumen
 
-El modelo **Mythic_Fantasy_Styles** es un adaptador LoRA (Low-Rank Adaptation) para generación de imágenes basado en el modelo de difusión FLUX.1-dev de Black Forest Labs. Fue publicado por el usuario DavidBaloches en HuggingFace en agosto de 2026, aunque el crédito del estilo original pertenece a VelvetS, autor de la serie "Velvet's Mythic Fantasy Styles" en CivitAI. El adaptador está diseñado para producir arte fantástico de alta calidad con un estilo semirrealista, similar al estilo de retrato del mismo autor, y se distribuye como un repositorio de 0.1 GB compatible con la librería `diffusers`.
+El modelo **Mythic_Fantasy_Styles** es un adaptador LoRA (Low-Rank Adaptation) para generación de imágenes basado en el modelo de difusión FLUX.1-dev de Black Forest Labs. Fue publicado por el usuario DavidBaloches en Hugging Face en agosto de 2026, aunque el crédito del estilo original pertenece a VelvetS, autor de la serie "Velvet's Mythic Fantasy Styles" en CivitAI. El adaptador está diseñado para producir arte fantástico de alta calidad con un estilo semirrealista, similar al estilo de retrato del mismo autor, y se distribuye como un repositorio de 0.1 GB compatible con la librería `diffusers`.
 
 El modelo se activa mediante la palabra desencadenante `MythP0rt` y admite pesos de LoRA entre 0.5 y 1.5, con una recomendación del autor de usar 1.0 para un equilibrio óptimo. Su relevancia radica en que permite añadir un estilo visual concreto de fantasía mitológica a FLUX.1-dev sin necesidad de reentrenar el modelo base, lo que reduce drásticamente el coste de personalización para ilustradores, diseñadores de juegos y creadores de contenido. No se han publicado métricas cuantitativas de rendimiento ni detalles sobre el dataset de entrenamiento.
 
@@ -136,17 +136,17 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 - El LoRA en sí es ligero (0.1 GB) y no requiere hardware específico más allá de lo necesario para ejecutar FLUX.1-dev.
 - Inferencia de FLUX.1-dev: se recomienda una GPU con al menos 12 GB de VRAM para el modo de precisión completa; con cuantización FP4 se puede reducir a unos 8 GB, según indicaciones de plataformas como FriendliAI.
 - GPUs recomendadas: NVIDIA RTX 3090/4090 (24 GB), A100 (40 GB o más), H100 (80 GB) para producción de alta demanda.
-- El LoRA es compatible con `diffusers`, por lo que se puede desplegar con pipelines de HuggingFace. No se menciona compatibilidad con vLLM, llama.cpp u Ollama, que son específicos para modelos de lenguaje.
+- El LoRA es compatible con `diffusers`, por lo que se puede desplegar con pipelines de Hugging Face. No se menciona compatibilidad con vLLM, llama.cpp u Ollama, que son específicos para modelos de lenguaje.
 - Latencia y throughput: no se proporcionan datos específicos; dependen del hardware y del tamaño de la imagen generada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Base | Tipo | Tamaño | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mythic_Fantasy_Styles (este) | FLUX.1-dev | LoRA | 0.1 GB | other (FLUX) | HuggingFace |
+| Mythic_Fantasy_Styles (este) | FLUX.1-dev | LoRA | 0.1 GB | other (FLUX) | Hugging Face |
 | Velvet's Mythic Fantasy Styles (versión original) | FLUX.1-dev | LoRA | no disponible | no disponible | CivitAI |
 | Velvet's Mythic Fantasy Styles (versión Pony) | Pony Diffusion | LoRA | no disponible | no disponible | CivitAI |
-| Muapi/velvet-s-mythic-fantasy-styles-flux-pony-illustrious | FLUX.1 D | LoRA | no disponible | no disponible | HuggingFace |
+| Muapi/velvet-s-mythic-fantasy-styles-flux-pony-illustrious | FLUX.1 D | LoRA | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas versiones; la comparación se limita a la base y la disponibilidad.
 
@@ -161,10 +161,10 @@ No se dispone de datos de rendimiento comparativo entre estas versiones; la comp
 
 ## Enlaces
 
-- Página de HuggingFace del modelo: https://huggingface.co/DavidBaloches/Mythic_Fantasy_Styles
+- Página de Hugging Face del modelo: https://huggingface.co/DavidBaloches/Mythic_Fantasy_Styles
 - Modelo base FLUX.1-dev: https://huggingface.co/black-forest-labs/FLUX.1-dev
 - Página de CivitAI del autor original: https://civitai.com/user/VelvetS
 - Página de PromptHero (versión Flux + Pony): https://prompthero.com/ai-models/velvet-s-mythic-fantasy-styles-flux-pony-download/portrait-style
 - Página de PromptHero (versión Flux + Pony + Illustrious): https://prompthero.com/ai-models/velvets-mythic-fantasy-styles--flux--pony--illustrious-599757-download/velvets-mythic-fantasy-styles--flux--pony--illustrious-anima
-- Modelo similar en HuggingFace: https://huggingface.co/Muapi/velvet-s-mythic-fantasy-styles-flux-pony-illustrious
+- Modelo similar en Hugging Face: https://huggingface.co/Muapi/velvet-s-mythic-fantasy-styles-flux-pony-illustrious
 - Archivo en CivArchive: https://civarchive.com/tensorart/models/899337649574138343/versions/899337649574138343

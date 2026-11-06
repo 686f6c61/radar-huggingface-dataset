@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`retrieval-mini-2023` es un repositorio publicado por el usuario timofeyivanov0701 en HuggingFace que contiene una implementación propia en PyTorch de una arquitectura Perceiver orientada a tareas de retrieval (recuperación de información multimodal o texto-imagen). No se trata de un modelo preentrenado listo para producción: el propio autor lo describe como una configuración "small" pensada para revisión de código, smoke tests y experimentos controlados de pequeña escala.
+`retrieval-mini-2023` es un repositorio publicado por el usuario timofeyivanov0701 en Hugging Face que contiene una implementación propia en PyTorch de una arquitectura Perceiver orientada a tareas de retrieval (recuperación de información multimodal o texto-imagen). No se trata de un modelo preentrenado listo para producción: el propio autor lo describe como una configuración "small" pensada para revisión de código, smoke tests y experimentos controlados de pequeña escala.
 
 El checkpoint incluido (`model.safetensors`) es una inicialización válida de apenas 49.600 parámetros, no un modelo entrenado ni evaluado contra benchmarks. El repositorio incluye además el script `model.py`, un `config.json` con la configuración de arquitectura y un `training_args.json` con la receta de experimento por defecto (optimizador Novograd con warmup lineal).
 
@@ -42,7 +42,7 @@ No hay información sobre datos de entrenamiento, número de tokens, composició
 - Experimentos controlados de retrieval a pequeña escala: el autor sugiere evaluar con Flickr30k, lo que encaja con un uso experimental de recuperación texto-imagen.
 - Base para comparativas de capacidad: al ser un modelo pequeño, puede usarse como baseline de baja capacidad en estudios de ablación frente a arquitecturas de retrieval más grandes.
 - Docencia y formación: útil para explicar el cuello de botella de latentes y la atención cruzada en un contexto práctico.
-- Prototipado de adaptadores de carga personalizados: la model card advierte que las APIs genéricas de carga automática requieren un adaptador explícito, lo que lo convierte en un caso de estudio para integrar modelos custom en HuggingFace.
+- Prototipado de adaptadores de carga personalizados: la model card advierte que las APIs genéricas de carga automática requieren un adaptador explícito, lo que lo convierte en un caso de estudio para integrar modelos custom en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -75,10 +75,10 @@ La comparativa es meramente orientativa: los tres modelos de referencia están e
 - Riesgo de alucinación: no aplica en sentido estricto al no ser un modelo generativo entrenado, pero cualquier uso tras un entrenamiento futuro requeriría evaluación específica.
 - Limitaciones de contexto e idioma: no documentadas.
 - Licencia MIT: permite uso comercial y modificación, pero el autor advierte revisar los términos de los datasets externos que se usen con el repositorio.
-- Las APIs genéricas de carga automática de HuggingFace no funcionan sin un adaptador explícito.
+- Las APIs genéricas de carga automática de Hugging Face no funcionan sin un adaptador explícito.
 - No debe presentarse como modelo preentrenado ni usarse en producción sin un entrenamiento y evaluación previos.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/timofeyivanov0701/retrieval-mini-2023
+- Hugging Face: https://huggingface.co/timofeyivanov0701/retrieval-mini-2023
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

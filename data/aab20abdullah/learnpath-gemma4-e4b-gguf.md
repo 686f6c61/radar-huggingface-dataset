@@ -72,8 +72,8 @@ El 0% del modelo base en intake y rank se atribuye principalmente a nombres de c
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LearnPath Gemma 4 E4B (este) | 7.518.069.290 | 8k | Ajuste fino para planificación de estudio en JSON (en/ar) | apache-2.0 | GGUF en HuggingFace |
-| google/gemma-4-E4B-it (base) | no disponible | no disponible | Modelo instructivo general | licencia Gemma 4 | HuggingFace |
+| LearnPath Gemma 4 E4B (este) | 7.518.069.290 | 8k | Ajuste fino para planificación de estudio en JSON (en/ar) | apache-2.0 | GGUF en Hugging Face |
+| google/gemma-4-E4B-it (base) | no disponible | no disponible | Modelo instructivo general | licencia Gemma 4 | Hugging Face |
 | Gemma 4 26B-A4B | no disponible | no disponible | Generación de datos sintéticos del ajuste | no disponible | Uso local con llama.cpp según el autor |
 
 No se dispone de datos suficientes para comparar con alternativas de la misma categoría en parámetros, contexto o rendimiento; la información proporcionada solo permite la comparación con el modelo base y con el generador de datos sintéticos.
@@ -91,6 +91,6 @@ No se dispone de datos suficientes para comparar con alternativas de la misma ca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aab20abdullah/learnpath-gemma4-e4b-gguf
+- Modelo en Hugging Face: https://huggingface.co/aab20abdullah/learnpath-gemma4-e4b-gguf
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Licencia de Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license

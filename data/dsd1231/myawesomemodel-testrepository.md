@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo DSD1231/MyAwesomeModel-TestRepository es un repositorio de HuggingFace creado por el usuario DSD1231, que se presenta como un checkpoint seleccionado de un proceso de entrenamiento. Según la model card, el checkpoint elegido es el paso 1000, seleccionado por obtener la mayor exactitud de evaluación (eval_accuracy) en el benchmark de generación de código, con una puntuación de 0,828. El repositorio está etiquetado con la librería transformers, PyTorch y BERT, y el pipeline de feature-extraction, con licencia MIT. Sin embargo, el repositorio tiene un tamaño de 0,0 GB, 0 descargas y 0 me gusta, lo que indica que no contiene pesos o es un repositorio de prueba. No se proporcionan detalles sobre arquitectura, número de parámetros ni longitud de contexto.
+El modelo DSD1231/MyAwesomeModel-TestRepository es un repositorio de Hugging Face creado por el usuario DSD1231, que se presenta como un checkpoint seleccionado de un proceso de entrenamiento. Según la model card, el checkpoint elegido es el paso 1000, seleccionado por obtener la mayor exactitud de evaluación (eval_accuracy) en el benchmark de generación de código, con una puntuación de 0,828. El repositorio está etiquetado con la librería transformers, PyTorch y BERT, y el pipeline de feature-extraction, con licencia MIT. Sin embargo, el repositorio tiene un tamaño de 0,0 GB, 0 descargas y 0 me gusta, lo que indica que no contiene pesos o es un repositorio de prueba. No se proporcionan detalles sobre arquitectura, número de parámetros ni longitud de contexto.
 
 La información disponible es muy limitada: la model card incluye una tabla de evaluaciones en 15 benchmarks internos, pero no se detalla la metodología ni se comparan con otros modelos. El pipeline declarado es feature-extraction, aunque las métricas reportadas corresponden a tareas generativas, lo que resulta inconsistente. Por tanto, este modelo no puede considerarse listo para producción sin más información.
 
@@ -21,7 +21,7 @@ La información disponible es muy limitada: la model card incluye una tabla de e
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura del modelo. Los metadatos de HuggingFace indican que usa la librería transformers y PyTorch, y las etiquetas incluyen "bert", lo que podría sugerir una arquitectura basada en BERT, pero no se confirma en la model card. Tampoco se detallan los datos de entrenamiento, el número de tokens ni si se aplicaron técnicas como RLHF o DPO. La model card solo indica que el checkpoint seleccionado corresponde al paso 1000 y que fue elegido por su mayor eval_accuracy en el benchmark de generación de código. No se mencionan innovaciones técnicas destacables.
+No se dispone de información sobre la arquitectura del modelo. Los metadatos de Hugging Face indican que usa la librería transformers y PyTorch, y las etiquetas incluyen "bert", lo que podría sugerir una arquitectura basada en BERT, pero no se confirma en la model card. Tampoco se detallan los datos de entrenamiento, el número de tokens ni si se aplicaron técnicas como RLHF o DPO. La model card solo indica que el checkpoint seleccionado corresponde al paso 1000 y que fue elegido por su mayor eval_accuracy en el benchmark de generación de código. No se mencionan innovaciones técnicas destacables.
 
 ## Capacidades
 
@@ -43,7 +43,7 @@ Según las métricas de la model card, el modelo presenta puntuaciones en 15 ben
 - Análisis de sentimiento: 0,607.
 - Razonamiento matemático: 0,550.
 
-No se ha confirmado el soporte de tool calling, agentes, visión, audio ni modo de pensamiento. El pipeline de HuggingFace es feature-extraction, lo que indica que el modelo está destinado a extraer representaciones vectoriales en lugar de generar texto, aunque los benchmarks reportados incluyen tareas generativas.
+No se ha confirmado el soporte de tool calling, agentes, visión, audio ni modo de pensamiento. El pipeline de Hugging Face es feature-extraction, lo que indica que el modelo está destinado a extraer representaciones vectoriales en lugar de generar texto, aunque los benchmarks reportados incluyen tareas generativas.
 
 ## Casos de uso
 
@@ -103,6 +103,6 @@ No se dispone de información sobre modelos comparables ni de benchmarks externo
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/DSD1231/MyAwesomeModel-TestRepository
+- Repositorio de Hugging Face: https://huggingface.co/DSD1231/MyAwesomeModel-TestRepository
 - Repositorio relacionado (mismo autor, posible versión mejorada): https://huggingface.co/DSD1231/my-awesome-model-best
 - Repositorio similar (otro usuario): https://huggingface.co/DSD1W3123/MyAwesomeModel-TestRepository

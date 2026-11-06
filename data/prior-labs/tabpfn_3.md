@@ -6,7 +6,7 @@
 
 TabPFN-3 es un modelo fundacional basado en arquitectura transformer, desarrollado por Prior Labs, que resuelve problemas de clasificación y regresión sobre datos tabulares estructurados mediante aprendizaje en contexto (*in-context learning*). A diferencia de los modelos tradicionales de *machine learning* que requieren entrenamiento específico para cada conjunto de datos, TabPFN-3 realiza predicciones en una sola pasada hacia adelante (*forward pass*), lo que permite obtener resultados en milisegundos sin necesidad de ajustar pesos por tarea.
 
-El modelo está diseñado para manejar hasta 1 millón de muestras y 2000 características en formato tabular, con soporte para clasificación binaria, multiclase (hasta 160 clases) y regresión. Se entrena exclusivamente con datos sintéticos, lo que le permite generalizar a dominios tan diversos como química, biología, finanzas, medicina, derecho y clima. Su relevancia actual radica en que compite directamente con métodos clásicos como *gradient-boosted decision trees* (GBDT), ofreciendo una alternativa que no requiere ingeniería de características ni ajuste de hiperparámetros, y que además es hasta 20 veces más rápida que su predecesor TabPFN-2.5. El repositorio en HuggingFace acumula 11.770 descargas y 196 likes desde su publicación en mayo de 2026.
+El modelo está diseñado para manejar hasta 1 millón de muestras y 2000 características en formato tabular, con soporte para clasificación binaria, multiclase (hasta 160 clases) y regresión. Se entrena exclusivamente con datos sintéticos, lo que le permite generalizar a dominios tan diversos como química, biología, finanzas, medicina, derecho y clima. Su relevancia actual radica en que compite directamente con métodos clásicos como *gradient-boosted decision trees* (GBDT), ofreciendo una alternativa que no requiere ingeniería de características ni ajuste de hiperparámetros, y que además es hasta 20 veces más rápida que su predecesor TabPFN-2.5. El repositorio en Hugging Face acumula 11.770 descargas y 196 likes desde su publicación en mayo de 2026.
 
 ## Especificaciones técnicas
 
@@ -99,7 +99,7 @@ TabPFN-3 se diferencia de los GBDT tradicionales en que no requiere entrenamient
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Prior-Labs/tabpfn_3)
+- [Modelo en Hugging Face](https://huggingface.co/Prior-Labs/tabpfn_3)
 - [Informe técnico (arXiv)](https://arxiv.org/pdf/2605.13986)
 - [Repositorio GitHub](https://github.com/PriorLabs/TabPFN)
 - [Página oficial del producto](https://priorlabs.ai/tabpfn)

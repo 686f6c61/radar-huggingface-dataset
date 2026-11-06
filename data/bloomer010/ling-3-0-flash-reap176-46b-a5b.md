@@ -84,6 +84,6 @@ No se han encontrado otros modelos comparables en la información proporcionada.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/bloomer010/Ling-3.0-flash-REAP176-46B-A5B)
+- [Modelo en Hugging Face](https://huggingface.co/bloomer010/Ling-3.0-flash-REAP176-46B-A5B)
 - [Modelo base: inclusionAI/Ling-3.0-flash](https://huggingface.co/inclusionAI/Ling-3.0-flash)
 - [Paper REAP (arXiv:2510.13999)](https://arxiv.org/abs/2510.13999)

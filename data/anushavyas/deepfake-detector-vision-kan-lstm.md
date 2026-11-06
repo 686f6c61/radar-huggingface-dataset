@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`anushavyas/deepfake-detector-vision-kan-lstm` es un repositorio publicado en HuggingFace por el usuario anushavyas el 11 de septiembre de 2026 y actualizado ese mismo dia. Se trata de un artefacto orientado, a juzgar por su identificador, a la deteccion de deepfakes mediante una combinacion de componentes de vision, redes Kolmogorov-Arnold (KAN) y LSTM, aunque el autor no ha publicado model card ni documentacion tecnica que confirme esta arquitectura, los datos de entrenamiento o el rendimiento. El unico dato cuantitativo disponible es el tamano del repositorio, 0.1 GB, y su licencia MIT.
+`anushavyas/deepfake-detector-vision-kan-lstm` es un repositorio publicado en Hugging Face por el usuario anushavyas el 11 de septiembre de 2026 y actualizado ese mismo dia. Se trata de un artefacto orientado, a juzgar por su identificador, a la deteccion de deepfakes mediante una combinacion de componentes de vision, redes Kolmogorov-Arnold (KAN) y LSTM, aunque el autor no ha publicado model card ni documentacion tecnica que confirme esta arquitectura, los datos de entrenamiento o el rendimiento. El unico dato cuantitativo disponible es el tamano del repositorio, 0.1 GB, y su licencia MIT.
 
 El modelo acumula 0 descargas y 0 likes, no tiene pipeline declarado ni idiomas especificados, y su model card se limita a la linea de licencia. Esto significa que no existe informacion verificable sobre parametros, contexto de entrada, cuantizaciones, formato de pesos ni resultados de evaluacion.
 
@@ -74,7 +74,7 @@ La informacion proporcionada no incluye datos verificados sobre modelos comparab
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| anushavyas/deepfake-detector-vision-kan-lstm | No disponible | No aplica | No disponible (sin benchmarks) | MIT | HuggingFace, 0 descargas, 0 likes |
+| anushavyas/deepfake-detector-vision-kan-lstm | No disponible | No aplica | No disponible (sin benchmarks) | MIT | Hugging Face, 0 descargas, 0 likes |
 | Alternativas de la categoria (clasificadores basados en ViT, CNN tipo XceptionNet o EfficientNet, y ensembles sobre FaceForensics++ o DFDC) | No disponible | No aplica | No disponible | No disponible | No disponible en las fuentes consultadas |
 
 La unica comparacion defendible con los datos actuales es de naturaleza cualitativa: frente a las lineas base publicadas en la literatura de deteccion de deepfakes, este repositorio no aporta ni pesos documentados, ni metricas de generalizacion entre generadores, ni analisis de robustez frente a compresion. En su estado actual no es equiparable a un artefacto evaluable.
@@ -95,5 +95,5 @@ La unica comparacion defendible con los datos actuales es de naturaleza cualitat
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/anushavyas/deepfake-detector-vision-kan-lstm
+- Repositorio en Hugging Face: https://huggingface.co/anushavyas/deepfake-detector-vision-kan-lstm
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante sobre este modelo, su paper, su repositorio de codigo ni sus datos de entrenamiento. Los resultados devueltos corresponden a sitios no relacionados (Zhihu, Strava) y no aportan informacion util.

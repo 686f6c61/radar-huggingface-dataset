@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`laura-mismetti/ttt-msms` es un repositorio alojado en HuggingFace cuyo unico contenido verificable es su identificador, su licencia declarada (`openmdw-1.0`) y la etiqueta de region (`us`). El repositorio presenta un tamano de 0.0 GB, cero descargas y cero interacciones, y su model card no contiene mas que el bloque de metadatos de licencia, sin descripcion, sin datos de arquitectura y sin pesos publicados.
+`laura-mismetti/ttt-msms` es un repositorio alojado en Hugging Face cuyo unico contenido verificable es su identificador, su licencia declarada (`openmdw-1.0`) y la etiqueta de region (`us`). El repositorio presenta un tamano de 0.0 GB, cero descargas y cero interacciones, y su model card no contiene mas que el bloque de metadatos de licencia, sin descripcion, sin datos de arquitectura y sin pesos publicados.
 
 No es posible determinar que tipo de modelo es, que problema resuelve ni por que seria relevante. El nombre del repositorio sugiere la sigla "ttt" (posiblemente *test-time training*) y "msms" (posiblemente *multi-stage mass spectrometry*), pero se trata de una inferencia a partir del nombre y no de un dato confirmado por el autor, por lo que no debe tomarse como informacion fiable.
 
@@ -94,7 +94,7 @@ No disponible. Al desconocerse la categoria del modelo (tamano, modalidad y tare
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/laura-mismetti/ttt-msms
+- Hugging Face: https://huggingface.co/laura-mismetti/ttt-msms
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
 - Repositorio de codigo: no disponible

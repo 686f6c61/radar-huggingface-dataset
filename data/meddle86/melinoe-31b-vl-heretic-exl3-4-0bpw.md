@@ -110,9 +110,9 @@ No se dispone de información sobre alternativas adicionales de la misma categor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/meddle86/Melinoe-31B-VL-heretic-exl3-4.0bpw
+- Modelo en Hugging Face: https://huggingface.co/meddle86/Melinoe-31B-VL-heretic-exl3-4.0bpw
 - Modelo base del fine-tune: https://huggingface.co/bgg1996/Melinoe-Gemma4-31B-VL
 - Modelo base original: https://huggingface.co/google/gemma-4-31B-it
 - Heretic (herramienta de abliteration): https://heretic-project.org
-- Reproducibilidad: carpeta `reproduce/README.md` dentro del repositorio de HuggingFace.
+- Reproducibilidad: carpeta `reproduce/README.md` dentro del repositorio de Hugging Face.
 - Caliper Bench (leaderboard RP Combined): mencionado en la model card, sin URL disponible.

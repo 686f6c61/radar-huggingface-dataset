@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `swa-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed3407` es un ajuste fino (SFT) publicado por el usuario `francesca9805` en HuggingFace, derivado del modelo base `francesca9805/ppt-wc-uniform-newlex-swa-before-100mb-packed-bfdiso_seed3407`. Se trata de un transformer decoder-only de la familia GPT-2 con 124.770.816 parametros totales (aproximadamente 124,8 millones), lo que lo situa en la gama de modelos pequenos orientados a experimentacion mas que a produccion. El entrenamiento se realizo con la libreria TRL (version 0.23.0) sobre Transformers 4.56.2 y PyTorch 2.11.0.
+El modelo `swa-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed3407` es un ajuste fino (SFT) publicado por el usuario `francesca9805` en Hugging Face, derivado del modelo base `francesca9805/ppt-wc-uniform-newlex-swa-before-100mb-packed-bfdiso_seed3407`. Se trata de un transformer decoder-only de la familia GPT-2 con 124.770.816 parametros totales (aproximadamente 124,8 millones), lo que lo situa en la gama de modelos pequenos orientados a experimentacion mas que a produccion. El entrenamiento se realizo con la libreria TRL (version 0.23.0) sobre Transformers 4.56.2 y PyTorch 2.11.0.
 
 El nombre del repositorio sugiere un experimento de investigacion centrado en tokenizadores y estrategias de entrenamiento: los sufijos apuntan a un vocabulario "newlex", a un corpus de entrenamiento de aproximadamente 100 MB, a un checkpoint en el paso 500, a empaquetado de secuencias ("packed") y a una semilla fija (3407). El proyecto de Weights & Biases asociado pertenece a la Universidad de Groningen, lo que refuerza la hipotesis de un trabajo academico de ablacion sobre tokenizacion, aunque esta interpretacion no se confirma de forma explicita en la model card.
 
@@ -54,7 +54,7 @@ El entrenamiento consistio en un ajuste fino supervisado (SFT) partiendo del mod
 - Reproduccion de experimentos de investigacion sobre tokenizacion: el modelo forma parte de una serie de ajustes con vocabularios alternativos ("newlex"), por lo que sirve como punto de comparacion controlado frente a otros checkpoints de la misma familia, manteniendo constante la semilla y el volumen de datos.
 - Ablacion de estrategias de entrenamiento: al compartir modelo base con otras variantes y diferenciarse en el checkpoint o en el empaquetado de secuencias, permite aislar el efecto de cada decision de entrenamiento en las metricas de validacion.
 - Generacion de texto local en CPU: con 124,8 millones de parametros, la inferencia en FP32 ocupa del orden de 500 MB de memoria, lo que permite ejecutarlo en portatiles sin GPU para pruebas de humo y validacion de pipelines.
-- Prototipado rapido de interfaces de generacion de texto: util para validar la integracion de un endpoint compatible con text-generation-inference antes de migrar a un modelo mayor, ya que la etiqueta `endpoints_compatible` indica compatibilidad con los endpoints gestionados de HuggingFace.
+- Prototipado rapido de interfaces de generacion de texto: util para validar la integracion de un endpoint compatible con text-generation-inference antes de migrar a un modelo mayor, ya que la etiqueta `endpoints_compatible` indica compatibilidad con los endpoints gestionados de Hugging Face.
 - Generacion de datos sinteticos a pequena escala para tareas de filtrado o anotacion auxiliar: al ser barato de ejecutar, puede emplearse para producir borradores que luego se curan manualmente o se filtran con un modelo mayor.
 - Docencia y formacion: su tamano reducido y su publicacion en safetensors lo hacen adecuado para ilustrar el ciclo completo de SFT con TRL, desde la carga del modelo base hasta la evaluacion cualitativa de salidas.
 - Base para ajustes especificos de dominio con recursos limitados: un investigador con un corpus pequeno puede partir de este checkpoint y ajustarlo en una unica GPU consumer en minutos u horas, dependiendo del volumen de datos.
@@ -81,7 +81,7 @@ Los datos de la columna "este modelo" proceden de la informacion proporcionada. 
 | swa-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed3407 | 124,8 M | no disponible | no disponible | Ajuste SFT de investigacion, 0 descargas, sin benchmarks |
 | GPT-2 small (OpenAI) | 124 M | 1024 tokens | Modified MIT | Referencia de la misma arquitectura y tamano; ampliamente evaluado |
 | DistilGPT-2 | 82 M | 1024 tokens | Apache 2.0 | Version destilada, mas rapida, menor calidad en tareas complejas |
-| SmolLM-135M (HuggingFace) | 135 M | 2048 tokens | Apache 2.0 | Entrenado con un corpus mucho mayor y con benchmarks publicados |
+| SmolLM-135M (Hugging Face) | 135 M | 2048 tokens | Apache 2.0 | Entrenado con un corpus mucho mayor y con benchmarks publicados |
 | Qwen2.5-0.5B | 494 M | 32 768 tokens | Apache 2.0 | Salto de escala y contexto; requiere mas VRAM pero ofrece capacidades muy superiores |
 
 La comparacion relevante es con GPT-2 small, dado que comparten arquitectura y orden de magnitud en parametros. La diferencia principal no esta en la arquitectura sino en el regimen de entrenamiento: los modelos de la familia SmolLM o Qwen2.5 han sido entrenados con volumenes de datos sustancialmente mayores y publican evaluaciones, mientras que este checkpoint no ofrece ninguna metrica verificable.
@@ -92,7 +92,7 @@ La comparacion relevante es con GPT-2 small, dado que comparten arquitectura y o
 - Riesgo de alucinacion: elevado y no cuantificado. Con 124,8 millones de parametros y un ajuste SFT del que no se conoce el volumen de datos, la tasa de afirmaciones factualmente incorrectas es presumiblemente alta, especialmente fuera de los dominios cubiertos por el corpus de ajuste.
 - Limitaciones de contexto: la longitud de contexto no se especifica en la informacion disponible, lo que impide planificar aplicaciones que requieran ventanas largas.
 - Limitaciones de idioma: no se declara ninguna lista de idiomas soportados. No se puede asumir un rendimiento solido en castellano.
-- Restricciones de licencia: la model card incluye el campo `licence: license` sin concretar terminos, y la ficha de HuggingFace indica licencia no disponible. Esto implica que no hay autorizacion explicita para uso comercial; en ausencia de terminos claros, debe contactarse con el autor antes de cualquier despliegue productivo.
+- Restricciones de licencia: la model card incluye el campo `licence: license` sin concretar terminos, y la ficha de Hugging Face indica licencia no disponible. Esto implica que no hay autorizacion explicita para uso comercial; en ausencia de terminos claros, debe contactarse con el autor antes de cualquier despliegue productivo.
 - Ausencia de benchmarks: no hay ninguna evaluacion publicada, por lo que no se puede comparar su calidad con alternativas de forma objetiva.
 - Estado del repositorio: 0 descargas y 0 likes, creado y actualizado el mismo dia, sin mantenimiento posterior conocido. No hay garantia de soporte ni de correccion de errores.
 - Idoneidad para produccion: baja. El modelo es un artefacto de investigacion; para cargas de trabajo reales conviene evaluar alternativas con licencia clara, contexto documentado y evaluaciones publicas.
@@ -100,7 +100,7 @@ La comparacion relevante es con GPT-2 small, dado que comparten arquitectura y o
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/swa-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/swa-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed3407
 - Modelo base: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-swa-before-100mb-packed-bfdiso_seed3407
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/xttv9bab
 - Repositorio de TRL: https://github.com/huggingface/trl

@@ -95,7 +95,7 @@ Las cifras de VRAM siguientes son estimaciones calculadas a partir del número d
 
 | Modelo | Parametros | Contexto | Punto fuerte declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ZDTaichu5.0-9B | 8,95B | 128K | Espacial, encarnado y agéntico sobre base visual general | no disponible | GGUF en HuggingFace y ModelScope |
+| ZDTaichu5.0-9B | 8,95B | 128K | Espacial, encarnado y agéntico sobre base visual general | no disponible | GGUF en Hugging Face y ModelScope |
 | Qwen3.5-9B | no disponible | no disponible | Base de lenguaje del propio modelo; CV-Bench 87,19 | no disponible | no disponible |
 | STEP3-VL-10B | 10B (por nombre) | no disponible | VLM de propósito general; CV-Bench 83,49 | no disponible | no disponible |
 | gemma4-8B-E4B | 8B (por nombre) | no disponible | VLM de propósito general de escala similar | no disponible | no disponible |
@@ -116,7 +116,7 @@ La model card menciona además comparaciones frente a modelos cerrados (Gemini 3
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TaichuAI/ZDTaichu5.0-9B-GGUF
+- Hugging Face: https://huggingface.co/TaichuAI/ZDTaichu5.0-9B-GGUF
 - Pagina del proyecto: https://taichu-ai.github.io/ZDTaichu5.0-9B/
 - GitHub: https://github.com/Taichu-AI/ZDTaichu5.0-9B
 - ModelScope: https://www.modelscope.cn/models/TaichuAI/ZDTaichu5.0-9B

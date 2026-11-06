@@ -83,7 +83,7 @@ No se dispone de informacion sobre otros modelos especificos de restauracion de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GoktugD/DUSUNEN-Nokta-68M-v1
+- Modelo en Hugging Face: https://huggingface.co/GoktugD/DUSUNEN-Nokta-68M-v1
 - Dataset Cosmos Turkish Corpus v1.0: https://huggingface.co/datasets/ytu-ce-cosmos/Cosmos-Turkish-Corpus-v1.0
 - Modelo base: https://huggingface.co/dbmdz/distilbert-base-turkish-cased
 - Perfil del autor: https://huggingface.co/GoktugD

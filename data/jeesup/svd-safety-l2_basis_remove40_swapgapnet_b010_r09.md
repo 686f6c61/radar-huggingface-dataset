@@ -85,7 +85,7 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks en 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | svd-safety-l2_basis_remove40_swapgapnet_b010_r09 | 6.738.415.616 (safetensors); fraccion densa declarada 0,5999 | No disponible (base: 4.096 tokens) | AdvBench ASR 0,0192; StrongREJECT ASR 0,0575; over-refusal 0,2877 | Llama 2 Community License | Repositorio de 13,5 GB, safetensors |
-| meta-llama/Llama-2-7b-chat-hf | 6.738.415.616 | 4.096 tokens | No disponible en esta informacion (referencia de la que parte el artefacto) | Llama 2 Community License | HuggingFace oficial |
+| meta-llama/Llama-2-7b-chat-hf | 6.738.415.616 | 4.096 tokens | No disponible en esta informacion (referencia de la que parte el artefacto) | Llama 2 Community License | Hugging Face oficial |
 | Otras celdas de la retícula del mismo autor (misma compresion, distinta regla o presupuesto) | No disponible | No disponible | No disponible | Llama 2 Community License | Repositorios del autor |
 | Otros artefactos de compresion SVD de Llama-2-7b-chat | No disponible | No disponible | No disponible | Segun cada autor | No disponible |
 
@@ -107,7 +107,7 @@ La comparación cuantitativa con alternativas de la misma categoría (modelos de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_basis_remove40_swapgapnet_b010_r09
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_basis_remove40_swapgapnet_b010_r09
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Paper de referencia citado en la model card: Basis Sharing (ICLR 2025); no se proporciona URL en la información disponible
 - Repositorio, paper, blog o demo adicionales del autor: no disponibles en la información proporcionada

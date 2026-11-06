@@ -97,7 +97,7 @@ La comparación relevante es con el propio profesor: el modelo pico iguala su ac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sparrow-decider/sparrow-pico-rover
+- Modelo en Hugging Face: https://huggingface.co/sparrow-decider/sparrow-pico-rover
 - Repositorio principal de Sparrow Decider: https://github.com/sparrow-decider/sparrow-decider
 - Guía de sparrow-pico: https://github.com/sparrow-decider/sparrow-decider/blob/main/docs/quickstart/pico.md
 - Ejemplo ESP32-S3 con robot: https://github.com/sparrow-decider/sparrow-decider/tree/main/c/examples/esp32s3_robot

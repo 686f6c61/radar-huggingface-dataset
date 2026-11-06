@@ -60,8 +60,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| π0.5 SNUMPR DART one-shot source fine-tune (`hang_tape_top`) | no disponible | no disponible | Manipulación robótica `hang_tape_top` | Apache 2.0 | HuggingFace, repo de 12,4 GB |
-| π0.5 SNUMPR DART paired keepstate large-view yaw30 alpha0.8 (`hang_tape_top`) | no disponible | no disponible | Manipulación robótica `hang_tape_top`, checkpoint fusionado | Apache 2.0 | HuggingFace (mismo autor) |
+| π0.5 SNUMPR DART one-shot source fine-tune (`hang_tape_top`) | no disponible | no disponible | Manipulación robótica `hang_tape_top` | Apache 2.0 | Hugging Face, repo de 12,4 GB |
+| π0.5 SNUMPR DART paired keepstate large-view yaw30 alpha0.8 (`hang_tape_top`) | no disponible | no disponible | Manipulación robótica `hang_tape_top`, checkpoint fusionado | Apache 2.0 | Hugging Face (mismo autor) |
 | Checkpoint base `snumpr-iclr27-v1/9999` | no disponible | no disponible | VLA inicial SNUMPR | no disponible en esta ficha | Referenciado como init |
 
 La comparación con alternativas fuera del ecosistema SNUMPR/openpi no está disponible en la información proporcionada.
@@ -80,7 +80,7 @@ La comparación con alternativas fuera del ecosistema SNUMPR/openpi no está dis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-paired-source-ft-1000-hang-tape-top-20261030
+- Modelo en Hugging Face: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-paired-source-ft-1000-hang-tape-top-20261030
 - Checkpoint fusionado: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-paired-keepstate-large-view-yaw30-alpha0p8-hang-tape-top-20261030
 - Código de adaptación: `Donghyun1228/vla_adaptation` (commit `c4fcb61`), referenciado en la model card
 - Receta oficial DART: repositorio `snumprlab/dart` (commit `1b23c4f42f73168c78a20b353453145e74f64711`), referenciado en la model card

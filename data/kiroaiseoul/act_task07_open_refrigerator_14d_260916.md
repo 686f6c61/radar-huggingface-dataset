@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `kiroaiseoul/act_task07_open_refrigerator_14D_260916` es una política robótica de aprendizaje por imitación basada en ACT (Action Chunking with Transformers), publicada por el usuario kiroaiseoul en HuggingFace Hub bajo la librería LeRobot. No es un modelo de lenguaje: es un controlador entrenado para una tarea de manipulación concreta, identificada en el nombre como "open refrigerator" (abrir un frigorífico) con un espacio de 14 dimensiones. El repositorio tiene 51.687.056 parámetros (unos 51,7 millones) y ocupa 0,2 GB, lo que lo sitúa en la gama muy ligera de políticas robóticas.
+El modelo `kiroaiseoul/act_task07_open_refrigerator_14D_260916` es una política robótica de aprendizaje por imitación basada en ACT (Action Chunking with Transformers), publicada por el usuario kiroaiseoul en Hugging Face Hub bajo la librería LeRobot. No es un modelo de lenguaje: es un controlador entrenado para una tarea de manipulación concreta, identificada en el nombre como "open refrigerator" (abrir un frigorífico) con un espacio de 14 dimensiones. El repositorio tiene 51.687.056 parámetros (unos 51,7 millones) y ocupa 0,2 GB, lo que lo sitúa en la gama muy ligera de políticas robóticas.
 
 ACT es un método de imitation learning presentado en el artículo arXiv 2304.13705 que, en lugar de predecir una única acción por paso, predice fragmentos cortos de acciones (action chunks). Este enfoque reduce el error de composición típico de las políticas paso a paso y suele alcanzar tasas de éxito elevadas en tareas de manipulación con datos teleoperados. El modelo sigue el formato y el flujo de trabajo estándar de LeRobot: se entrena con `lerobot-train` y se evalúa con `lerobot-record`.
 
@@ -27,7 +27,7 @@ Otros datos del repositorio: pipeline declarado `robotics`, etiquetas `lerobot`,
 
 ACT se describe en la model card como un método de imitation learning que predice fragmentos cortos de acciones en lugar de pasos individuales. Aprende a partir de datos teleoperados y, según el propio autor, suele alcanzar tasas de éxito elevadas. El peso concreto de este repositorio es de 51,7 millones de parámetros, coherente con una política ACT compacta orientada a una única tarea de manipulación.
 
-El entrenamiento se ha realizado y publicado con LeRobot, la librería de HuggingFace para robótica. El dataset asociado es `kiroaiseoul/task07_open_refrigerator_14D`, cuyo número de episodios, composición, cámaras utilizadas y frecuencia de control no se detallan en la información disponible. No se indica si hubo fases adicionales de ajuste, RLHF o DPO, ni innovaciones técnicas más allá del propio método ACT. La model card únicamente documenta los comandos de entrenamiento (`lerobot-train --policy.type=act`) y de evaluación (`lerobot-record` con `--policy.path`), sin especificar hiperparámetros, número de tokens de entrenamiento ni recetas de aumento de datos.
+El entrenamiento se ha realizado y publicado con LeRobot, la librería de Hugging Face para robótica. El dataset asociado es `kiroaiseoul/task07_open_refrigerator_14D`, cuyo número de episodios, composición, cámaras utilizadas y frecuencia de control no se detallan en la información disponible. No se indica si hubo fases adicionales de ajuste, RLHF o DPO, ni innovaciones técnicas más allá del propio método ACT. La model card únicamente documenta los comandos de entrenamiento (`lerobot-train --policy.type=act`) y de evaluación (`lerobot-record` con `--policy.path`), sin especificar hiperparámetros, número de tokens de entrenamiento ni recetas de aumento de datos.
 
 ## Capacidades
 
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `kiroaiseoul/act_task07_open_refrigerator_14D_260916` (ACT) | 51.687.056 | no aplica | no disponible | apache-2.0 | HuggingFace Hub, 0 descargas |
-| Otras políticas ACT publicadas en LeRobot Hub | no disponible | no aplica | no disponible | variable segun autor | HuggingFace Hub |
+| `kiroaiseoul/act_task07_open_refrigerator_14D_260916` (ACT) | 51.687.056 | no aplica | no disponible | apache-2.0 | Hugging Face Hub, 0 descargas |
+| Otras políticas ACT publicadas en LeRobot Hub | no disponible | no aplica | no disponible | variable segun autor | Hugging Face Hub |
 | Diffusion Policy (políticas de difusión para manipulación) | no disponible | no aplica | no disponible | variable segun implementacion | repositorios academicos |
-| Modelos VLA tipo OpenVLA / pi0 | no disponible en esta busqueda | no disponible | no disponible | variable | HuggingFace Hub |
+| Modelos VLA tipo OpenVLA / pi0 | no disponible en esta busqueda | no disponible | no disponible | variable | Hugging Face Hub |
 
 No se dispone de datos verificables en la información proporcionada para establecer una comparación cuantitativa de parámetros, contexto, rendimiento, licencia y disponibilidad frente a alternativas concretas.
 
@@ -89,9 +89,9 @@ No se dispone de datos verificables en la información proporcionada para establ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kiroaiseoul/act_task07_open_refrigerator_14D_260916
+- Modelo en Hugging Face: https://huggingface.co/kiroaiseoul/act_task07_open_refrigerator_14D_260916
 - Dataset de entrenamiento: https://huggingface.co/datasets/kiroaiseoul/task07_open_refrigerator_14D
-- Artículo ACT (página de papers de HuggingFace): https://huggingface.co/papers/2304.13705
+- Artículo ACT (página de papers de Hugging Face): https://huggingface.co/papers/2304.13705
 - Artículo ACT en arXiv: https://arxiv.org/abs/2304.13705
 - Repositorio LeRobot: https://github.com/huggingface/lerobot
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index

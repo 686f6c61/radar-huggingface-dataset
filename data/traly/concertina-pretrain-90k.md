@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Concertina (este checkpoint) | 4.447.963.669 | No disponible | MIT | Pesos publicados en HuggingFace |
-| Bard-VL-B4-Mask-4B-Instruct (modelo base) | ~4B | No disponible | No disponible | Pesos publicados en HuggingFace |
+| Concertina (este checkpoint) | 4.447.963.669 | No disponible | MIT | Pesos publicados en Hugging Face |
+| Bard-VL-B4-Mask-4B-Instruct (modelo base) | ~4B | No disponible | No disponible | Pesos publicados en Hugging Face |
 | Otras políticas VLA de la familia LeRobot | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones detalladas de alternativas comparables en la información proporcionada, por lo que no es posible una comparación cuantitativa de rendimiento.
@@ -86,6 +86,6 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de altern
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Traly/concertina-pretrain-90k
+- Hugging Face: https://huggingface.co/Traly/concertina-pretrain-90k
 - Modelo base: https://huggingface.co/fudan-generative-ai/Bard-VL-B4-Mask-4B-Instruct
 - Cita del artículo (BibTeX en la model card): Wang, C.; He, W.; Li, W.; Li, H.; Han, K.; Guo, J.; Xu, C. "Concertina: Embodying Manipulation and Cognition in One Diffusion Vision-Language Model", 2026.

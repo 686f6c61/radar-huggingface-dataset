@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Bm-bohrium-24B-UltraChat-QLoRA es un adaptador QLoRA experimental de tipo vision-language publicado por el usuario minhlol en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una extensión del checkpoint minhlol/Bm-bohrium-7B-continued-QLoRA hasta un backbone declarado de 24.001.085.184 parámetros, sobre el que se han añadido un encoder ViT, un proyector y adaptadores de lenguaje. El autor lo describe explícitamente como un prototipo y advierte de que no se ha realizado un preentrenamiento completo a escala de 24B.
+Bm-bohrium-24B-UltraChat-QLoRA es un adaptador QLoRA experimental de tipo vision-language publicado por el usuario minhlol en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una extensión del checkpoint minhlol/Bm-bohrium-7B-continued-QLoRA hasta un backbone declarado de 24.001.085.184 parámetros, sobre el que se han añadido un encoder ViT, un proyector y adaptadores de lenguaje. El autor lo describe explícitamente como un prototipo y advierte de que no se ha realizado un preentrenamiento completo a escala de 24B.
 
 El modelo combina un backbone de lenguaje cuantizado en NF4 y mantenido congelado con adaptadores PEFT entrenados, más un entrenamiento de la torre de visión (encoder ViT y proyector). La ventana de contexto no está documentada y los idiomas declarados son inglés y vietnamita. Su relevancia es limitada: se trata de un experimento de bajo coste computacional (175 pasos de actualización, 64.220 tokens de respuesta) que ilustra el flujo QLoRA aplicado a visión, no de una alternativa lista para producción.
 
@@ -93,7 +93,7 @@ Los datos de los modelos alternativos provienen de sus fichas públicas y no se 
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/minhlol/Bm-bohrium-24B-UltraChat-QLoRA
+- Hugging Face del modelo: https://huggingface.co/minhlol/Bm-bohrium-24B-UltraChat-QLoRA
 - Modelo base: https://huggingface.co/minhlol/Bm-bohrium-7B-continued-QLoRA
 - Dataset de visión vietnamita UIT-ViIC: https://huggingface.co/datasets/ai-enthusiasm-community/UIT-ViIC
 - Dataset multimodal The Cauldron: https://huggingface.co/datasets/HuggingFaceM4/the_cauldron

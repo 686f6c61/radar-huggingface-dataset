@@ -2,7 +2,7 @@
 
 ## Resumen
 
-em-ctrl-s1 es un modelo de lenguaje fine-tuneado a partir de `unsloth/gemma-3-4b-it`, la versión optimizada con Unsloth del modelo Gemma 3 de 4 mil millones de parámetros de Google. El autor, jlsrls, lo ha entrenado mediante aprendizaje supervisado (SFT) utilizando la librería TRL de HuggingFace, con el objetivo de adaptar el modelo base a una tarea específica que no se detalla en la documentación publicada. El repositorio pesa 2,2 GB y contiene pesos en formato safetensors, lo que sugiere una cuantización o una versión compacta del modelo original.
+em-ctrl-s1 es un modelo de lenguaje fine-tuneado a partir de `unsloth/gemma-3-4b-it`, la versión optimizada con Unsloth del modelo Gemma 3 de 4 mil millones de parámetros de Google. El autor, jlsrls, lo ha entrenado mediante aprendizaje supervisado (SFT) utilizando la librería TRL de Hugging Face, con el objetivo de adaptar el modelo base a una tarea específica que no se detalla en la documentación publicada. El repositorio pesa 2,2 GB y contiene pesos en formato safetensors, lo que sugiere una cuantización o una versión compacta del modelo original.
 
 La relevancia de este modelo radica en que demuestra un flujo de fine-tuning accesible sobre Gemma 3, una familia de modelos abiertos con licencia permisiva, y en que puede servir como punto de partida para desarrolladores que quieran experimentar con ajuste fino de modelos de 4B en hardware de consumo. Sin embargo, la ausencia de una model card detallada, de datos de entrenamiento y de benchmarks publicados limita su uso directo en producción sin una evaluación previa por parte del usuario.
 
@@ -51,17 +51,17 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada para inferencia: con 4B parámetros en precisión fp16, se necesitan aproximadamente 8 GB de VRAM. Con cuantización a 4 bits (si se aplica), podría reducirse a unos 3-4 GB.
 - GPU recomendadas: una RTX 3060 de 12 GB o superior sería suficiente para fp16; una RTX 4060 de 8 GB podría funcionar con cuantización. Para entrenamiento, se recomienda al menos 16 GB de VRAM (RTX 4090, A100, etc.).
 - Compatibilidad con GPU de consumo: sí, el modelo cabe en GPUs de gama media con cuantización, y en GPUs de gama alta sin cuantizar.
-- Opciones de despliegue: compatible con vLLM, llama.cpp, Ollama y TGI, siempre que se conviertan los pesos al formato adecuado (GGUF para llama.cpp/Ollama). También se puede usar directamente con Transformers y pipeline de HuggingFace.
+- Opciones de despliegue: compatible con vLLM, llama.cpp, Ollama y TGI, siempre que se conviertan los pesos al formato adecuado (GGUF para llama.cpp/Ollama). También se puede usar directamente con Transformers y pipeline de Hugging Face.
 - Latencia y throughput: no disponibles. Dependen del hardware y de la cuantización elegida.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| em-ctrl-s1 (este) | 4B | no disponible | sin especificar | HuggingFace |
-| unsloth/gemma-3-4b-it (base) | 4B | 128k | Gemma Terms of Use | HuggingFace |
-| google/gemma-3-4b-it (original) | 4B | 128k | Gemma Terms of Use | HuggingFace |
-| Qwen2.5-3B-Instruct | 3B | 32k | Apache 2.0 | HuggingFace |
+| em-ctrl-s1 (este) | 4B | no disponible | sin especificar | Hugging Face |
+| unsloth/gemma-3-4b-it (base) | 4B | 128k | Gemma Terms of Use | Hugging Face |
+| google/gemma-3-4b-it (original) | 4B | 128k | Gemma Terms of Use | Hugging Face |
+| Qwen2.5-3B-Instruct | 3B | 32k | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a modelos de tamaño similar. em-ctrl-s1 no aporta información pública que lo diferencie de su base más allá del fine-tuning realizado. La licencia del modelo es ambigua ("license"), lo que puede limitar su uso comercial si no se aclara.
 
@@ -76,7 +76,7 @@ La comparativa se limita a modelos de tamaño similar. em-ctrl-s1 no aporta info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jlsrls/em-ctrl-s1
+- Modelo en Hugging Face: https://huggingface.co/jlsrls/em-ctrl-s1
 - Modelo base (Unsloth): https://huggingface.co/unsloth/gemma-3-4b-it
 - Modelo base original (Google): https://huggingface.co/google/gemma-3-4b-it
 - Enlace a Weights & Biases (entrenamiento): https://wandb.ai/rezvani-portland-state-university/clarifying-em/runs/zs0n9luu

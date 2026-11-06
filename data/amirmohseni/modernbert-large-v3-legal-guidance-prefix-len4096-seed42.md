@@ -98,7 +98,7 @@ El modelo comparte arquitectura y tamano con su base ModernBERT-large, pero se d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AmirMohseni/modernbert-large-v3-legal-guidance-prefix-len4096-seed42
+- Modelo en Hugging Face: https://huggingface.co/AmirMohseni/modernbert-large-v3-legal-guidance-prefix-len4096-seed42
 - Dataset de entrenamiento: https://huggingface.co/datasets/AmirMohseni/WildChat-Legal-Classification-V3-Hierarchical
 - Modelo base: https://huggingface.co/answerdotai/ModernBERT-large
 - Modelo hermano (seeks-guidance): https://huggingface.co/AmirMohseni/modernbert-large-v3-seeks-guidance-user-len4096-seed42

@@ -73,8 +73,8 @@ La perplejidad se calcula sobre 130 ventanas de reset no solapadas y 264.764 obj
 
 | Modelo | Parametros | Contexto | PPL WikiText-2 | Recall multi-clave | Licencia | Disponibilidad |
 |---|---:|---:|---:|---:|---|---|
-| Mamb2_8B_W4A16_Recall | 8,24 B + 1,15 M (adaptador) | 4.096 | 7,61405 | 361/384 (94,01 %) | Apache-2.0 (pesos) / GPL-3.0 (codigo) | HuggingFace, runtime propio |
-| nvidia/mamba2-8b-3t-4k (FP16, fuente) | 8,24 B | 4.096 | 7,33418 (historico) | 147/384 (38,28 %, historico) | Apache-2.0 | HuggingFace |
+| Mamb2_8B_W4A16_Recall | 8,24 B + 1,15 M (adaptador) | 4.096 | 7,61405 | 361/384 (94,01 %) | Apache-2.0 (pesos) / GPL-3.0 (codigo) | Hugging Face, runtime propio |
+| nvidia/mamba2-8b-3t-4k (FP16, fuente) | 8,24 B | 4.096 | 7,33418 (historico) | 147/384 (38,28 %, historico) | Apache-2.0 | Hugging Face |
 | Fuente FP16 + Resurface (historico) | 8,24 B + adaptador | 4.096 | 7,05206 (historico) | 365/384 (95,05 %) | no disponible | no disponible como artefacto publico |
 | Otros checkpoints cuantizados de la familia Quamba | no disponible | no disponible | no disponible | no disponible | no disponible | mencionados como software y checkpoints independientes, no como dependencia de este bundle |
 
@@ -92,11 +92,11 @@ La perplejidad se calcula sobre 130 ventanas de reset no solapadas y 264.764 obj
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EndlessChasing/Mamb2_8B_W4A16_Recall
+- Modelo en Hugging Face: https://huggingface.co/EndlessChasing/Mamb2_8B_W4A16_Recall
 - Repositorio GitHub (plan de investigacion y verificacion): https://github.com/EndlessChasing/mamb2_8B_W4A16_Recall
 - Documentacion en GitHub: https://github.com/EndlessChasing/mamb2_8B_W4A16_Recall/tree/main/docs
 - Modelo base NVIDIA: https://huggingface.co/nvidia/mamba2-8b-3t-4k
 - Repositorio de referencia Resurface: https://github.com/Oso1106/Resurface-Multi-Binding-Recall-Is-Latent-in-Mamba-s-State
 - Instalacion de extensiones CUDA de Mamba: https://github.com/state-spaces/mamba#installation
-- Perfil del autor en HuggingFace: https://huggingface.co/EndlessChasing
+- Perfil del autor en Hugging Face: https://huggingface.co/EndlessChasing
 - Referencia arXiv etiquetada por el autor: arxiv:2406.07887

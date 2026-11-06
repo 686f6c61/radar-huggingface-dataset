@@ -80,7 +80,7 @@ La informacion proporcionada no incluye una comparativa formal con otros modelos
 
 | Modelo | Parametros (aprox.) | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Mobile-VIT (Qualcomm) | 5,57 M | 224x224 | BSD-3-Clause | HuggingFace + Qualcomm AI Hub |
+| Mobile-VIT (Qualcomm) | 5,57 M | 224x224 | BSD-3-Clause | Hugging Face + Qualcomm AI Hub |
 | MobileViT-S (Apple, referencia) | ~5,6 M | 224x224 | Apple ML-cvNets (ver repo) | GitHub apple/ml-cvnets |
 | MobileNetV3-Large | ~5,4 M | 224x224 | Apache-2.0 | Amplia (TF, PyTorch) |
 | EfficientNet-B0 | ~5,3 M | 224x224 | Apache-2.0 | Amplia (TF, PyTorch) |
@@ -100,7 +100,7 @@ La ventaja diferencial de esta version es la disponibilidad de artefactos precom
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qualcomm/Mobile-VIT
+- Hugging Face: https://huggingface.co/qualcomm/Mobile-VIT
 - Paper MobileViT (arXiv:2110.02178): https://arxiv.org/abs/2110.02178
 - Implementacion de referencia de Apple: https://github.com/apple/ml-cvnets
 - Qualcomm AI Hub Models (repositorio): https://github.com/qualcomm/ai-hub-models/blob/v0.64.0/src/qai_hub_models/models/mobile_vit

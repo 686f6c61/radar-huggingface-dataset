@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | `keras/mistral_small_3.1_24b_instruct_2503_en` (este) | 24,01 B | 128k | Texto + imagen | Apache 2.0 | KerasHub |
-| `mistralai/Mistral-Small-3.1-24B-Instruct-2503` | 24 B | 128k | Texto + imagen | Apache 2.0 | HuggingFace (`transformers`) |
+| `mistralai/Mistral-Small-3.1-24B-Instruct-2503` | 24 B | 128k | Texto + imagen | Apache 2.0 | Hugging Face (`transformers`) |
 | `keras/mistral_small_3.2_24b_instruct_2506_en` | 24,01 B | 128k | Texto + imagen | Apache 2.0 | KerasHub |
 | `mistral_small_3.1_24b_base_2503_en` | 24,01 B | 128k | Texto + imagen | Apache 2.0 | KerasHub |
 
@@ -85,7 +85,7 @@ La diferencia principal entre este checkpoint y el original de Mistral AI es el 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/keras/mistral_small_3.1_24b_instruct_2503_en
+- Repositorio en Hugging Face: https://huggingface.co/keras/mistral_small_3.1_24b_instruct_2503_en
 - Model card original de Mistral AI: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503
 - Anuncio de Mistral Small 3.1: https://mistral.ai/news/mistral-small-3-1
 - KerasHub Getting Started: https://keras.io/guides/keras_hub/getting_started/

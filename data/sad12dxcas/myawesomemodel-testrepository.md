@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace bajo el identificador SAD12DXCAS/MyAwesomeModel-TestRepository por el usuario SAD12DXCAS. Segun su model card, se trata de una version mejorada de un modelo previo centrada en profundidad de razonamiento e inferencia, con mejoras en matematicas, programacion y logica general, asi como una reduccion de la tasa de alucinacion y un mejor soporte de function calling. La propia tarjeta cita un salto de precision en AIME 2025 del 70% al 87,5% y un aumento del numero medio de tokens de razonamiento por pregunta de 12K a 23K.
+MyAwesomeModel es un modelo publicado en Hugging Face bajo el identificador SAD12DXCAS/MyAwesomeModel-TestRepository por el usuario SAD12DXCAS. Segun su model card, se trata de una version mejorada de un modelo previo centrada en profundidad de razonamiento e inferencia, con mejoras en matematicas, programacion y logica general, asi como una reduccion de la tasa de alucinacion y un mejor soporte de function calling. La propia tarjeta cita un salto de precision en AIME 2025 del 70% al 87,5% y un aumento del numero medio de tokens de razonamiento por pregunta de 12K a 23K.
 
 La informacion disponible, sin embargo, es escasa y contradictoria. Las etiquetas del repositorio indican arquitectura BERT y pipeline de feature-extraction, mientras que la model card describe un LLM generativo con modo de razonamiento y llamada a funciones. El repositorio pesa 0.0 GB, acumula 0 descargas y 0 likes, y su fecha de creacion (2026-10-27) es futura, lo que apunta a un repositorio de prueba o plantilla sin pesos publicados.
 
@@ -110,5 +110,5 @@ No se identifican modelos externos comparables con datos verificables en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SAD12DXCAS/MyAwesomeModel-TestRepository
+- Hugging Face: https://huggingface.co/SAD12DXCAS/MyAwesomeModel-TestRepository
 - Paper, blog, repositorio de codigo y demo: no disponibles en la informacion proporcionada. La model card menciona una "official website" y un "code repository" sin incluir las URL.

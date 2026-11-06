@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Yemenai es un modelo de lenguaje de 7.615 millones de parámetros creado mediante la fusión de pesos (merge) del modelo DeepSeek-R1-Distill-Qwen-7B, utilizando la técnica DARE TIES descrita en el artículo arXiv:2311.03099. El autor, gdkhdu, lo ha publicado en HuggingFace con el identificador `gdkhdu/Yemenai` y lo etiqueta como un modelo de generación de texto basado en la arquitectura Qwen2, compatible con transformers y con formatos safetensors y GGUF.
+Yemenai es un modelo de lenguaje de 7.615 millones de parámetros creado mediante la fusión de pesos (merge) del modelo DeepSeek-R1-Distill-Qwen-7B, utilizando la técnica DARE TIES descrita en el artículo arXiv:2311.03099. El autor, gdkhdu, lo ha publicado en Hugging Face con el identificador `gdkhdu/Yemenai` y lo etiqueta como un modelo de generación de texto basado en la arquitectura Qwen2, compatible con transformers y con formatos safetensors y GGUF.
 
 El modelo se presenta como un experimento de fusión de modelos, donde se combina el propio DeepSeek-R1-Distill-Qwen-7B con un checkpoint intermedio denominado `/content/step2` (no disponible públicamente). La relevancia de este modelo radica en explorar cómo la fusión DARE TIES puede modificar las capacidades de un modelo base ya destilado, aunque no se han publicado evaluaciones que demuestren mejoras concretas. Dado que el repositorio no incluye una descripción funcional detallada, su utilidad práctica queda limitada a la experimentación con técnicas de merge.
 
@@ -67,7 +67,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gdkhdu/Yemenai
+- Hugging Face: https://huggingface.co/gdkhdu/Yemenai
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B
 - Paper DARE TIES: https://arxiv.org/abs/2311.03099
 - Repositorio mergekit: https://github.com/cg123/mergekit

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un modelo publicado en HuggingFace por el usuario liufeqww1154, etiquetado como de extracción de características (feature-extraction) y compatible con la librería transformers. La model card describe una supuesta actualización significativa del modelo, con mejoras en razonamiento, reducción de alucinaciones y soporte para function calling, pero no proporciona datos técnicos verificables como arquitectura, número de parámetros o longitud de contexto. El repositorio tiene un tamaño de 0.0 GB, cero descargas y cero likes, lo que sugiere que se trata de un repositorio de prueba o vacío.
+MyAwesomeModel-TestRepo es un modelo publicado en Hugging Face por el usuario liufeqww1154, etiquetado como de extracción de características (feature-extraction) y compatible con la librería transformers. La model card describe una supuesta actualización significativa del modelo, con mejoras en razonamiento, reducción de alucinaciones y soporte para function calling, pero no proporciona datos técnicos verificables como arquitectura, número de parámetros o longitud de contexto. El repositorio tiene un tamaño de 0.0 GB, cero descargas y cero likes, lo que sugiere que se trata de un repositorio de prueba o vacío.
 
 La información disponible es insuficiente para evaluar el modelo de forma rigurosa. No se especifican detalles de arquitectura, entrenamiento, ni se ofrecen resultados de benchmarks con metodología clara. La model card incluye una tabla de evaluación con valores numéricos, pero sin identificar los modelos de referencia ni las métricas exactas, por lo que no pueden considerarse datos fiables. En consecuencia, esta ficha se limita a reflejar la información disponible y marca como "no disponible" todos los parámetros técnicos que no se han publicado.
 
@@ -71,7 +71,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/liufeqww1154/MyAwesomeModel-TestRepo
+- Repositorio Hugging Face: https://huggingface.co/liufeqww1154/MyAwesomeModel-TestRepo
 - Perfil del autor: https://huggingface.co/liufeqww1154
 - Página de análisis externa (sin datos adicionales): https://free2aitools.com/model/toolathlon-eval-10/myawesomemodel-testrepo
 - Página de herramienta externa (sin datos adicionales): https://www.toolify.ai/ai-model/blmq-myawesomemodel-testrepo

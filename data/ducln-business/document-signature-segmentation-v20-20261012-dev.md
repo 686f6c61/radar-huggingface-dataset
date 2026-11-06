@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `document-signature-segmentation-v20-20261012-dev` es un modelo de segmentación de imágenes publicado por el usuario `ducln-business` en HuggingFace. Se trata de un ajuste fino (finetune) del modelo base `ZhengPeng7/BiRefNet`, orientado especificamente a la segmentacion de firmas manuscritas dentro de documentos digitalizados. Su pipeline declarado es `image-segmentation` y esta implementado sobre PyTorch.
+El modelo `document-signature-segmentation-v20-20261012-dev` es un modelo de segmentación de imágenes publicado por el usuario `ducln-business` en Hugging Face. Se trata de un ajuste fino (finetune) del modelo base `ZhengPeng7/BiRefNet`, orientado especificamente a la segmentacion de firmas manuscritas dentro de documentos digitalizados. Su pipeline declarado es `image-segmentation` y esta implementado sobre PyTorch.
 
 El modelo resulta relevante para tareas de automatizacion documental, como la deteccion y el recorte de firmas en contratos, formularios o expedientes escaneados, donde se necesita una mascara binaria precisa de la region de la firma frente al resto del documento. Al partir de BiRefNet, hereda un enfoque de segmentacion dicotomica de alta resolucion, aunque los detalles concretos del ajuste (datos, hiperparametros y proceso de entrenamiento) no estan publicados en la informacion disponible.
 
-El repositorio tiene un tamano de 0,9 GB, cuenta con 11 descargas y 0 likes en el momento de la consulta, y su acceso esta restringido (gated): es necesario aceptar condiciones en HuggingFace para descargarlo. No se especifica licencia ni idiomas soportados, lo que limita su adopcion directa en entornos de produccion sin una revision previa de las condiciones de uso.
+El repositorio tiene un tamano de 0,9 GB, cuenta con 11 descargas y 0 likes en el momento de la consulta, y su acceso esta restringido (gated): es necesario aceptar condiciones en Hugging Face para descargarlo. No se especifica licencia ni idiomas soportados, lo que limita su adopcion directa en entornos de produccion sin una revision previa de las condiciones de uso.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ El repositorio tiene un tamano de 0,9 GB, cuenta con 11 descargas y 0 likes en e
 
 ## Arquitectura y entrenamiento
 
-El modelo se presenta como un finetune de `ZhengPeng7/BiRefNet`, etiquetado en HuggingFace con `base_model:finetune:ZhengPeng7/BiRefNet`. BiRefNet es una red de segmentacion dicotomica de alta resolucion que emplea referencias bilaterales para separar el objeto de interes del fondo; en este caso, el objeto de interes es la firma manuscrita y el fondo es el resto del documento. La especializacion se refleja en las etiquetas `document-analysis`, `document-signature` y `handwriting`.
+El modelo se presenta como un finetune de `ZhengPeng7/BiRefNet`, etiquetado en Hugging Face con `base_model:finetune:ZhengPeng7/BiRefNet`. BiRefNet es una red de segmentacion dicotomica de alta resolucion que emplea referencias bilaterales para separar el objeto de interes del fondo; en este caso, el objeto de interes es la firma manuscrita y el fondo es el resto del documento. La especializacion se refleja en las etiquetas `document-analysis`, `document-signature` y `handwriting`.
 
 No se dispone de informacion publicada sobre el numero de tokens o imagenes de entrenamiento, la composicion del dataset, ni sobre el uso de tecnicas como RLHF o DPO, que no aplican a un modelo de segmentacion. Tampoco se documentan innovaciones tecnicas especificas introducidas en este ajuste respecto al modelo base, ni la estrategia de aumento de datos o el esquema de resolucion de entrada utilizados.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tarea | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| document-signature-segmentation-v20-20261012-dev | Segmentacion de firmas en documentos | no disponible (repo 0,9 GB) | no aplica | no disponible | HuggingFace, acceso restringido (gated) |
-| ZhengPeng7/BiRefNet | Segmentacion dicotomica de alta resolucion | no disponible en la informacion proporcionada | no aplica | no disponible en la informacion proporcionada | HuggingFace (modelo base) |
+| document-signature-segmentation-v20-20261012-dev | Segmentacion de firmas en documentos | no disponible (repo 0,9 GB) | no aplica | no disponible | Hugging Face, acceso restringido (gated) |
+| ZhengPeng7/BiRefNet | Segmentacion dicotomica de alta resolucion | no disponible en la informacion proporcionada | no aplica | no disponible en la informacion proporcionada | Hugging Face (modelo base) |
 | Modelos de binarizacion documental (tipo U-Net/Document Image Binarization) | Separacion texto/fondo en documentos | no disponible | no aplica | variable segun implementacion | Repositorios academicos y de codigo abierto |
-| SAM / SAM 2 (Segment Anything) | Segmentacion general guiada por prompt | no disponible en la informacion proporcionada | no aplica | Apache 2.0 (SAM) segun publicacion original | HuggingFace y repositorio oficial |
+| SAM / SAM 2 (Segment Anything) | Segmentacion general guiada por prompt | no disponible en la informacion proporcionada | no aplica | Apache 2.0 (SAM) segun publicacion original | Hugging Face y repositorio oficial |
 
 Nota: no se dispone de datos de rendimiento comparativos para este modelo, por lo que la comparativa se limita a categoria, base y disponibilidad, sin cifras de calidad.
 
@@ -76,11 +76,11 @@ Nota: no se dispone de datos de rendimiento comparativos para este modelo, por l
 - Sesgos conocidos: no disponibles. Al ser un finetune de segmentacion, podria heredar sesgos del dataset de ajuste (por ejemplo, estilos de firma, idiomas de documento o calidades de escaneo sobrerrepresentados), pero no hay informacion al respecto.
 - Riesgo de alucinacion: no aplica en el sentido de generacion de texto; el riesgo equivalente es generar mascaras incorrectas (falsos positivos o negativos) en documentos con ruido, sellos, marcas de agua o firmas poco contrastadas.
 - Limitaciones de contexto o idioma: no se documenta el idioma de los documentos soportados ni la resolucion maxima de entrada; el rendimiento puede degradarse en documentos con caligrafia inusual o baja calidad de escaneo.
-- Restricciones de licencia: la licencia no esta disponible, lo que impide confirmar si se permite el uso comercial. Ademas, el acceso es restringido (gated) y requiere aceptar condiciones en HuggingFace.
+- Restricciones de licencia: la licencia no esta disponible, lo que impide confirmar si se permite el uso comercial. Ademas, el acceso es restringido (gated) y requiere aceptar condiciones en Hugging Face.
 - Caveats para produccion: el modelo tiene 11 descargas y 0 likes, lo que indica una validacion comunitaria practicamente nula; no hay benchmarks publicados, ni documentacion de entrenamiento, ni garantias de mantenimiento. No se recomienda su uso en produccion sin una evaluacion interna previa sobre un conjunto de datos propio y una revision legal de las condiciones de acceso.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ducln-business/document-signature-segmentation-v20-20261012-dev
+- Hugging Face: https://huggingface.co/ducln-business/document-signature-segmentation-v20-20261012-dev
 - Modelo base BiRefNet: https://huggingface.co/ZhengPeng7/BiRefNet
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la busqueda web realizada.

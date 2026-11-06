@@ -13,7 +13,7 @@ Es relevante en el contexto de la robotica open source de bajo coste y del apren
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Red neuronal de politica para control robotico, exportada a ONNX; entrenada con aprendizaje por refuerzo y ajustada con estrategias evolutivas. No es un transformer, MoE ni SSM |
-| Parametros totales | no disponible (el repositorio ocupa 0.0 GB segun HuggingFace) |
+| Parametros totales | no disponible (el repositorio ocupa 0.0 GB segun Hugging Face) |
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no aplica: la entrada es un vector de observacion de 61 dimensiones por paso de control |
 | Tipos de cuantizacion | no disponible (se distribuye un unico `policy.onnx` con el normalizador de observaciones integrado) |
@@ -69,14 +69,14 @@ Mejora reportada: 0.044 s de reduccion sobre la base, aproximadamente un 4.3 por
 - Hardware objetivo: robot microduck de Pollen Robotics, con bucle de control a 50 Hz sobre rollers.
 - Opciones de despliegue: daemon de microduck mediante `robotctl policy load <slot> juicenv/microduck-roller-es19`; inferencia ONNX (ONNX Runtime u otro runtime compatible con ONNX, no especificado).
 - Latencia y throughput: el bucle de control a 50 Hz implica un presupuesto de 20 ms por paso (61 entradas, 14 salidas). No se publican medidas de latencia reales del runtime.
-- Tamano del repositorio: 0.0 GB segun HuggingFace.
+- Tamano del repositorio: 0.0 GB segun Hugging Face.
 
 ## Comparativa con modelos similares
 
 | Modelo | Tipo | Metrica de tarea | Relacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| juicenv/microduck-roller-es19 | Politica ONNX para microduck | 0.972 s en Roller Sprint 2 m | Fine-tune por ES | no disponible | Publico en HuggingFace, 0 descargas, 0 likes |
-| DenRakEiw/microduck-senate_duck_1016 | Politica para microduck | 1.016 s en Roller Sprint 2 m | Modelo base | no disponible | Publico en HuggingFace |
+| juicenv/microduck-roller-es19 | Politica ONNX para microduck | 0.972 s en Roller Sprint 2 m | Fine-tune por ES | no disponible | Publico en Hugging Face, 0 descargas, 0 likes |
+| DenRakEiw/microduck-senate_duck_1016 | Politica para microduck | 1.016 s en Roller Sprint 2 m | Modelo base | no disponible | Publico en Hugging Face |
 | Otras politicas de la familia microduck (por ejemplo, variantes roller-es de juicenv) | Politica para microduck | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 
 No hay datos suficientes para comparar con alternativas de otros autores en terminos de parametros, contexto o rendimiento. La comparacion cuantitativa solo es posible con el modelo base.
@@ -96,7 +96,7 @@ No hay datos suficientes para comparar con alternativas de otros autores en term
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/juicenv/microduck-roller-es19
+- Modelo en Hugging Face: https://huggingface.co/juicenv/microduck-roller-es19
 - Modelo base: https://huggingface.co/DenRakEiw/microduck-senate_duck_1016
 - Repositorio microduck (Pollen Robotics): https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento RL: `pollen-robotics/microduck_rl`, rama `hannes-ft`, commit `3c0598cae`

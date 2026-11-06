@@ -111,8 +111,8 @@ Las alternativas de la misma categoría (otras distribuciones de embeddinggemma-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FluidInference/embeddinggemma-2-coreml
-- Organizacion FluidInference en HuggingFace: https://huggingface.co/FluidInference
+- Modelo en Hugging Face: https://huggingface.co/FluidInference/embeddinggemma-2-coreml
+- Organizacion FluidInference en Hugging Face: https://huggingface.co/FluidInference
 - Modelo base: https://huggingface.co/google/embeddinggemma-2
 - Conversiones GGUF: https://huggingface.co/unsloth/embeddinggemma-2-GGUF y https://huggingface.co/ggml-org/embeddinggemma-2-GGUF
 - Conversion ONNX: https://huggingface.co/onnx-community/embeddinggemma-2-ONNX

@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El un
 
 | Modelo | Parametros | Contexto / estado-accion | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| pi05-rby1-wujihand2-masquerade-baseline-20k | 4.143.449.894 | 54 dims de estado/accion; tokenizer max length 320 | Apache 2.0 | HuggingFace, 0 descargas, 0 likes | Baseline masquerade/phantom; render MuJoCo siempre por encima |
-| `lerobot/pi05_base` | no disponible | 32 dims de estado/accion en el base, ampliado a 54 en este ajuste | no disponible en la informacion | HuggingFace | Modelo base sobre el que se hace el ajuste fino |
+| pi05-rby1-wujihand2-masquerade-baseline-20k | 4.143.449.894 | 54 dims de estado/accion; tokenizer max length 320 | Apache 2.0 | Hugging Face, 0 descargas, 0 likes | Baseline masquerade/phantom; render MuJoCo siempre por encima |
+| `lerobot/pi05_base` | no disponible | 32 dims de estado/accion en el base, ampliado a 54 en este ajuste | no disponible en la informacion | Hugging Face | Modelo base sobre el que se hace el ajuste fino |
 | Baseline con linea roja de EgoMimic | no disponible | no disponible | no disponible | no disponible | Mencionado en la model card como la otra edicion visual; la linea roja sigue la mano humana y discrepa de la etiqueta en varios cm |
 | Baselines OpenArm | no disponible | no disponible | no disponible | no disponible | Mencionados como referencia previa en la que tambien se conservaron los episodios con residuos de IK |
 
@@ -92,7 +92,7 @@ No se dispone de datos de parametros, contexto ni rendimiento de los modelos com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RyanL22/pi05-rby1-wujihand2-masquerade-baseline-20k
+- Modelo en Hugging Face: https://huggingface.co/RyanL22/pi05-rby1-wujihand2-masquerade-baseline-20k
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Libreria declarada por el modelo (LeRobot, version 0.6.1): https://github.com/huggingface/lerobot
 - La busqueda web realizada no devolvio resultados relevantes: los unicos enlaces recuperados correspondian a un hotel en Viena (strandhotel-alte-donau.at, hotels-und-pensionen.at, a-hotel.com y citygate.at), sin relacion con el modelo. No se han encontrado papers, blogs ni demos adicionales asociados a este checkpoint.

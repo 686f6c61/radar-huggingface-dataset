@@ -56,9 +56,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Rin247/Qwen3-VL-4B-Uncensored-Aquarion-FP8 | 4,4 B | no disponible | FP8 weight-only | no disponible | HuggingFace |
-| Qwen/Qwen3-VL-4B-Instruct (base) | 4,4 B | no disponible (segun documentacion oficial, contexto largo) | BF16/FP16 | Apache 2.0 (segun repositorio oficial) | HuggingFace |
-| Huihui-ai/Huihui-Qwen3-VL-4B-Instruct-abliterated | 4,4 B | no disponible | BF16/FP8 (segun version) | no disponible | HuggingFace |
+| Rin247/Qwen3-VL-4B-Uncensored-Aquarion-FP8 | 4,4 B | no disponible | FP8 weight-only | no disponible | Hugging Face |
+| Qwen/Qwen3-VL-4B-Instruct (base) | 4,4 B | no disponible (segun documentacion oficial, contexto largo) | BF16/FP16 | Apache 2.0 (segun repositorio oficial) | Hugging Face |
+| Huihui-ai/Huihui-Qwen3-VL-4B-Instruct-abliterated | 4,4 B | no disponible | BF16/FP8 (segun version) | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos. La principal diferencia es la abliteración y la cuantización, pero sin benchmarks no se puede evaluar el impacto en calidad.
 
@@ -73,7 +73,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos. La princi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rin247/Qwen3-VL-4B-Uncensored-Aquarion-FP8
+- Modelo en Hugging Face: https://huggingface.co/Rin247/Qwen3-VL-4B-Uncensored-Aquarion-FP8
 - Repositorio oficial de Qwen3-VL (GitHub): https://github.com/QwenLM/Qwen3-VL
 - Modelo base Qwen3-VL-4B-Instruct: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - Versión abliterated de Huihui-ai: https://huggingface.co/huihui-ai/Huihui-Qwen3-VL-4B-Instruct-abliterated

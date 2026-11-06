@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`sfm_filtered_e2e_insert_hyperstition_v1-9k_10k_11k_weightedavg_merge` es un modelo de lenguaje de tipo decoder-only publicado por el usuario `yuhengtu-bytedance` en HuggingFace. No se trata de un entrenamiento desde cero ni de un ajuste supervisado, sino del resultado de una fusión de pesos (*weighted average merge*) entre tres checkpoints intermedios de un mismo entrenamiento, realizada con la herramienta mergekit y el método Linear. El modelo base declarado es el checkpoint `global_step11000`, y se le incorporan los checkpoints `global_step9000` (peso 1) y `global_step10000` (peso 2) frente al peso 3 del base. El resultado consolidado tiene 6.856.253.440 parámetros almacenados en safetensors en precisión bfloat16.
+`sfm_filtered_e2e_insert_hyperstition_v1-9k_10k_11k_weightedavg_merge` es un modelo de lenguaje de tipo decoder-only publicado por el usuario `yuhengtu-bytedance` en Hugging Face. No se trata de un entrenamiento desde cero ni de un ajuste supervisado, sino del resultado de una fusión de pesos (*weighted average merge*) entre tres checkpoints intermedios de un mismo entrenamiento, realizada con la herramienta mergekit y el método Linear. El modelo base declarado es el checkpoint `global_step11000`, y se le incorporan los checkpoints `global_step9000` (peso 1) y `global_step10000` (peso 2) frente al peso 3 del base. El resultado consolidado tiene 6.856.253.440 parámetros almacenados en safetensors en precisión bfloat16.
 
 La relevancia de esta ficha es más metodológica que de producto: el identificador y las rutas internas del model card (`Pan_Safety_Better_Measurement`, `filtered_e2e_insert_hyperstition_v1`) apuntan a un experimento de *merge scaling* dentro de un pipeline de medición de seguridad, no a un modelo listo para producción. El repositorio no incluye model card redactada por humanos, no declara licencia, no documenta idiomas y no publica resultados de evaluación, por lo que cualquier uso en producción exige una evaluación propia previa.
 
-Arquitectónicamente, las etiquetas del repositorio indican `gpt_neox`, es decir, un transformer causal con *rotary positional embeddings* y atención multi-cabeza estándar, con soporte en `transformers` y compatibilidad declarada con *text-generation-inference* y con *endpoints* de HuggingFace. Con 6,86 mil millones de parámetros se sitúa en la franja de los modelos de 7B, lo que permite desplegarlo en GPUs de gama alta de consumo con cuantización.
+Arquitectónicamente, las etiquetas del repositorio indican `gpt_neox`, es decir, un transformer causal con *rotary positional embeddings* y atención multi-cabeza estándar, con soporte en `transformers` y compatibilidad declarada con *text-generation-inference* y con *endpoints* de Hugging Face. Con 6,86 mil millones de parámetros se sitúa en la franja de los modelos de 7B, lo que permite desplegarlo en GPUs de gama alta de consumo con cuantización.
 
 ## Especificaciones tecnicas
 
@@ -30,7 +30,7 @@ No hay información pública sobre el número de tokens de entrenamiento, la com
 ## Capacidades
 
 - Generación de texto autorregresiva con pipeline `text-generation` en `transformers`.
-- Compatibilidad declarada con `text-generation-inference` y con endpoints compatibles de HuggingFace.
+- Compatibilidad declarada con `text-generation-inference` y con endpoints compatibles de Hugging Face.
 - Etiqueta `conversational` en el repositorio, lo que sugiere uso previsto en diálogo, aunque no se documenta ningún formato de prompt ni plantilla de chat.
 - Soporte de *tool calling* / *function calling*: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -57,17 +57,17 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 - VRAM estimada para inferencia (solo pesos, sin caché KV): aproximadamente 13,7 GB en bfloat16 (coincide con el tamaño del repo, 13,7 GB), unos 27,4 GB si se carga en float32, unos 7 GB en cuantización de 8 bits y entre 3,5 y 4,5 GB en 4 bits.
 - GPU recomendadas para bfloat16 sin cuantizar: NVIDIA A100 40/80 GB, H100, L40S o RTX 4090 / RTX 3090 (24 GB) con contexto corto y batch pequeño.
 - GPU de consumo: cabe en RTX 4090 y RTX 3090 (24 GB) en bfloat16; en RTX 4080/4070 Ti (16 GB) y RTX 4060 Ti 16 GB requiere cuantización de 8 bits o 4 bits; en RTX 3060 12 GB solo en 4 bits y con contexto reducido.
-- Opciones de despliegue: `transformers` (librería declarada), Text Generation Inference (etiqueta `text-generation-inference`), endpoints compatibles de HuggingFace, vLLM (soporta arquitecturas GPT-NeoX). llama.cpp y Ollama son viables solo tras convertir manualmente los pesos a GGUF, ya que el repositorio no publica ficheros GGUF.
+- Opciones de despliegue: `transformers` (librería declarada), Text Generation Inference (etiqueta `text-generation-inference`), endpoints compatibles de Hugging Face, vLLM (soporta arquitecturas GPT-NeoX). llama.cpp y Ollama son viables solo tras convertir manualmente los pesos a GGUF, ya que el repositorio no publica ficheros GGUF.
 - Latencia y throughput: no disponibles; dependen de la GPU, la cuantización y la longitud de contexto, ninguno de los cuales está documentado.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este modelo (merge 9k/10k/11k) | 6,86 B | No disponible | No disponible | HuggingFace, 0 descargas | Merge de checkpoints; sin benchmarks ni idiomas documentados |
-| Pythia 6.9B (EleutherAI) | 6,9 B | 2048 tokens | Apache 2.0 | HuggingFace, ampliamente usado | Misma arquitectura GPT-NeoX, 300B tokens del Pile, checkpoints intermedios publicados |
-| OPT-6.7B (Meta) | 6,7 B | 2048 tokens | Licencia específica de Meta (consultar model card) | HuggingFace | Transformer decoder-only, entrenado sobre 180B tokens |
-| Mistral 7B v0.1 | 7,2 B | 32.768 tokens | Apache 2.0 | HuggingFace | Arquitectura distinta (GQA, sliding window), contexto muy superior |
+| Este modelo (merge 9k/10k/11k) | 6,86 B | No disponible | No disponible | Hugging Face, 0 descargas | Merge de checkpoints; sin benchmarks ni idiomas documentados |
+| Pythia 6.9B (EleutherAI) | 6,9 B | 2048 tokens | Apache 2.0 | Hugging Face, ampliamente usado | Misma arquitectura GPT-NeoX, 300B tokens del Pile, checkpoints intermedios publicados |
+| OPT-6.7B (Meta) | 6,7 B | 2048 tokens | Licencia específica de Meta (consultar model card) | Hugging Face | Transformer decoder-only, entrenado sobre 180B tokens |
+| Mistral 7B v0.1 | 7,2 B | 32.768 tokens | Apache 2.0 | Hugging Face | Arquitectura distinta (GQA, sliding window), contexto muy superior |
 
 La comparación es estructural: no existen métricas publicadas que permitan afirmar que este merge supera o iguala a las alternativas en calidad de generación.
 
@@ -86,8 +86,8 @@ La comparación es estructural: no existen métricas publicadas que permitan afi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-9k_10k_11k_weightedavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-9k_10k_11k_weightedavg_merge
 - mergekit (herramienta de fusión utilizada): https://github.com/cg123/mergekit
 - Paper del método Linear / model soups (arxiv:2203.05482): https://arxiv.org/abs/2203.05482
-- Perfil del autor en HuggingFace: https://huggingface.co/yuhengtu-bytedance
+- Perfil del autor en Hugging Face: https://huggingface.co/yuhengtu-bytedance
 - Los resultados de búsqueda web obtenidos no contienen información relacionada con este modelo; no se han encontrado papers, blogs, repositorios ni demos adicionales.

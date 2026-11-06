@@ -68,7 +68,7 @@ No se dispone de información suficiente para comparar con otros modelos de comp
 
 ## Enlaces
 
-- [HuggingFace - SCU-VIP-Lab/Conditional-Image-Compression](https://huggingface.co/SCU-VIP-Lab/Conditional-Image-Compression)
+- [Hugging Face - SCU-VIP-Lab/Conditional-Image-Compression](https://huggingface.co/SCU-VIP-Lab/Conditional-Image-Compression)
 - [Paper (PDF) - Learning-Based Conditional Image Compression](https://www.cse.scu.edu/~yliu1/papers/ISCAS2024-TianmaShen-FinalSubmission.pdf)
 - [Página del laboratorio VIP de SCU](https://www.cse.scu.edu/~yliu1/)
-- [Perfil de la organización SCU-VIP-Lab en HuggingFace](https://huggingface.co/SCU-VIP-Lab)
+- [Perfil de la organización SCU-VIP-Lab en Hugging Face](https://huggingface.co/SCU-VIP-Lab)

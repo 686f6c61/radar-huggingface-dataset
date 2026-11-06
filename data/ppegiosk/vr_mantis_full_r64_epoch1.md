@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ppegiosk/vr_mantis_full_r64_epoch1` es un adaptador LoRA publicado en HuggingFace por el usuario `ppegiosk`, distribuido a traves de la libreria PEFT (version 0.20.0 segun la model card). No se trata de un modelo fundacional completo, sino de un conjunto de pesos de ajuste fino que debe combinarse con el modelo base sobre el que fue entrenado para poder ejecutarse. El repositorio no incluye una model card completada: todas las secciones de la plantilla original (descripcion, datos de entrenamiento, hiperparametros, evaluacion, licencia) aparecen marcadas como `[More Information Needed]`.
+`ppegiosk/vr_mantis_full_r64_epoch1` es un adaptador LoRA publicado en Hugging Face por el usuario `ppegiosk`, distribuido a traves de la libreria PEFT (version 0.20.0 segun la model card). No se trata de un modelo fundacional completo, sino de un conjunto de pesos de ajuste fino que debe combinarse con el modelo base sobre el que fue entrenado para poder ejecutarse. El repositorio no incluye una model card completada: todas las secciones de la plantilla original (descripcion, datos de entrenamiento, hiperparametros, evaluacion, licencia) aparecen marcadas como `[More Information Needed]`.
 
 El unico dato estructural relevante que se puede extraer de las etiquetas es que el modelo padre no es un checkpoint base convencional, sino otro adaptador: el tag `base_model:adapter:/dtu/p1/ppar/ICRA/cache/hub/models--ppegiosk--vr_base_chunk50_30k/snapshots/567e64495fe3515f8b855e59d91f3971f65561ad` apunta a una ruta local del sistema de ficheros del autor correspondiente al modelo `vr_base_chunk50_30k`. Esto indica un apilamiento de adaptadores (LoRA sobre LoRA) y no un ajuste directo sobre un transformer preentrenado.
 
@@ -22,7 +22,7 @@ La relevancia actual del repositorio es limitada desde el punto de vista practic
 | Formato de pesos | safetensors (adaptador PEFT/LoRA) |
 | Rango de LoRA | segun la convencion de nombres del repositorio, rango 64 (`r64`); no confirmado en la model card |
 | Epocas de entrenamiento | segun la convencion de nombres, 1 epoca (`epoch1`); no confirmado en la model card |
-| Modelo base | referencia a un adaptador previo, `ppegiosk/vr_base_chunk50_30k` (ruta local en el tag, no un identificador publico de HuggingFace) |
+| Modelo base | referencia a un adaptador previo, `ppegiosk/vr_base_chunk50_30k` (ruta local en el tag, no un identificador publico de Hugging Face) |
 | Libreria | PEFT 0.20.0 |
 | Fecha de creacion | 2026-09-11 |
 | Fecha de ultima actualizacion | 2026-09-11 |
@@ -32,7 +32,7 @@ La relevancia actual del repositorio es limitada desde el punto de vista practic
 
 El artefacto es un adaptador de bajo rango (LoRA) en formato PEFT, un mecanismo que congela los pesos del modelo base e inyecta matrices de descomposicion de rango bajo en determinadas capas para reducir drasticamente el numero de parametros entrenables. El sufijo `full` en el identificador sugiere que el ajuste se aplico a un conjunto amplio de modulos, aunque la model card no especifica que modulos lineales (`q_proj`, `v_proj`, `k_proj`, `o_proj`, MLP, etc.) fueron objetivo, ni la dimension de rango efectiva, ni los hiperparametros de entrenamiento (tasa de aprendizaje, scheduler, precision, batch size). Nada de esto se puede confirmar con la informacion disponible.
 
-El detalle tecnico mas significativo es que el campo `base_model` apunta a otro adaptador, no a un modelo preentrenado. La convencion `base_model:adapter:<ruta>` de HuggingFace se emplea precisamente cuando el modelo padre es a su vez un adaptador PEFT, lo que implica una cadena de ajuste en al menos dos etapas: un primer adaptador (`vr_base_chunk50_30k`) sobre un modelo base desconocido, y este segundo adaptador entrenado sobre el anterior. La ruta referenciada (`/dtu/p1/ppar/ICRA/...`) es una ruta de sistema de ficheros local, presumiblemente de un cluster de computo, y no resuelve a un repositorio publico, por lo que no es posible descargar ni inspeccionar el eslabon intermedio de la cadena. Tampoco hay informacion sobre el dataset de entrenamiento, el numero de tokens vistos o si se aplicaron tecnicas de alineacion como RLHF o DPO.
+El detalle tecnico mas significativo es que el campo `base_model` apunta a otro adaptador, no a un modelo preentrenado. La convencion `base_model:adapter:<ruta>` de Hugging Face se emplea precisamente cuando el modelo padre es a su vez un adaptador PEFT, lo que implica una cadena de ajuste en al menos dos etapas: un primer adaptador (`vr_base_chunk50_30k`) sobre un modelo base desconocido, y este segundo adaptador entrenado sobre el anterior. La ruta referenciada (`/dtu/p1/ppar/ICRA/...`) es una ruta de sistema de ficheros local, presumiblemente de un cluster de computo, y no resuelve a un repositorio publico, por lo que no es posible descargar ni inspeccionar el eslabon intermedio de la cadena. Tampoco hay informacion sobre el dataset de entrenamiento, el numero de tokens vistos o si se aplicaron tecnicas de alineacion como RLHF o DPO.
 
 ## Capacidades
 
@@ -91,12 +91,12 @@ Comparativa con modelos concretos: no disponible.
 - Sesgos conocidos: no documentados. La ausencia de informacion sobre la composicion del dataset impide estimar sesgos de dominio, idioma o demograficos.
 - Limitaciones de contexto e idioma: no disponibles.
 - Estado del repositorio: 0 descargas, 0 likes, 0.0 GB declarados y sin actualizaciones desde su creacion. Es un artefacto sin mantenimiento ni validacion por parte de la comunidad.
-- Cita de arXiv: la etiqueta `arxiv:1910.09700` corresponde a Lacoste et al. (2019) sobre estimacion de emisiones de carbono, una referencia que aparece en la plantilla por defecto de HuggingFace. No es un paper del modelo y no debe interpretarse como tal.
+- Cita de arXiv: la etiqueta `arxiv:1910.09700` corresponde a Lacoste et al. (2019) sobre estimacion de emisiones de carbono, una referencia que aparece en la plantilla por defecto de Hugging Face. No es un paper del modelo y no debe interpretarse como tal.
 - Verificacion de las busquedas web: las consultas realizadas no devolvieron ningun resultado relacionado con este modelo ni con su autor; los unicos resultados obtenidos correspondian a paginas de Google Earth y no guardan relacion alguna con el artefacto.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ppegiosk/vr_mantis_full_r64_epoch1
+- Repositorio Hugging Face: https://huggingface.co/ppegiosk/vr_mantis_full_r64_epoch1
 - Modelo base referenciado (ruta local del autor, no resoluble publicamente): `/dtu/p1/ppar/ICRA/cache/hub/models--ppegiosk--vr_base_chunk50_30k/snapshots/567e64495fe3515f8b855e59d91f3971f65561ad`
 - Paper citado en las etiquetas (Lacoste et al., 2019, sobre emisiones de carbono en aprendizaje automatico, no relacionado con la arquitectura del modelo): https://arxiv.org/abs/1910.09700
 - Documentacion de PEFT: https://huggingface.co/docs/peft/index

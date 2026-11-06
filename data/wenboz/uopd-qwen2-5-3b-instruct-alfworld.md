@@ -2,7 +2,7 @@
 
 ## Resumen
 
-UOPD-Qwen2.5-3B-Instruct-ALFWorld es un checkpoint de estudiante final entrenado mediante destilacion on-policy sobre el entorno de agentes ALFWorld. Lo publica el usuario Wenboz en HuggingFace y parte de Qwen/Qwen2.5-3B-Instruct, un transformer decoder de aproximadamente 3.400 millones de parametros. El objetivo del entrenamiento es transferir a un modelo de 3B el comportamiento de un profesor congelado de 7B (langfeng01/GiGPO-Qwen2.5-7B-Instruct-ALFWorld), especializado en tareas de agente sobre ALFWorld.
+UOPD-Qwen2.5-3B-Instruct-ALFWorld es un checkpoint de estudiante final entrenado mediante destilacion on-policy sobre el entorno de agentes ALFWorld. Lo publica el usuario Wenboz en Hugging Face y parte de Qwen/Qwen2.5-3B-Instruct, un transformer decoder de aproximadamente 3.400 millones de parametros. El objetivo del entrenamiento es transferir a un modelo de 3B el comportamiento de un profesor congelado de 7B (langfeng01/GiGPO-Qwen2.5-7B-Instruct-ALFWorld), especializado en tareas de agente sobre ALFWorld.
 
 El modelo resuelve un problema concreto: obtener un agente capaz de interactuar de forma multi-turno con un entorno textual (navegar estancias, manipular objetos, completar tareas del hogar) sin necesidad de desplegar el profesor de 7B. Se trata, por tanto, de un checkpoint de investigacion orientado a la compresion de capacidades de agente mediante destilacion, no de un modelo de proposito general pulido para produccion.
 
@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea / entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| UOPD-Qwen2.5-3B-Instruct-ALFWorld | 3,40B | No disponible | Destilacion on-policy sobre ALFWorld desde profesor de 7B | No disponible | HuggingFace (Wenboz) |
-| Qwen/Qwen2.5-3B-Instruct | ~3,4B | 32.768 tokens en el modelo base (no confirmado para este checkpoint) | Instruccion general | No disponible en la informacion facilitada | HuggingFace (Qwen) |
-| langfeng01/GiGPO-Qwen2.5-7B-Instruct-ALFWorld | ~7B | No disponible | RL con GiGPO sobre ALFWorld (profesor) | No disponible | HuggingFace (langfeng01) |
+| UOPD-Qwen2.5-3B-Instruct-ALFWorld | 3,40B | No disponible | Destilacion on-policy sobre ALFWorld desde profesor de 7B | No disponible | Hugging Face (Wenboz) |
+| Qwen/Qwen2.5-3B-Instruct | ~3,4B | 32.768 tokens en el modelo base (no confirmado para este checkpoint) | Instruccion general | No disponible en la informacion facilitada | Hugging Face (Qwen) |
+| langfeng01/GiGPO-Qwen2.5-7B-Instruct-ALFWorld | ~7B | No disponible | RL con GiGPO sobre ALFWorld (profesor) | No disponible | Hugging Face (langfeng01) |
 
 ## Limitaciones y advertencias
 
@@ -89,6 +89,6 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Wenboz/UOPD-Qwen2.5-3B-Instruct-ALFWorld
+- Modelo en Hugging Face: https://huggingface.co/Wenboz/UOPD-Qwen2.5-3B-Instruct-ALFWorld
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Profesor (GiGPO 7B sobre ALFWorld): https://huggingface.co/langfeng01/GiGPO-Qwen2.5-7B-Instruct-ALFWorld

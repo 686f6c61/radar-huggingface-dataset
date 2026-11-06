@@ -33,7 +33,7 @@ No se dispone de informacion sobre el numero de tokens de entrenamiento, la comp
 - Procesamiento de imagenes mediante el fichero mmproj (multi-modal supplement), necesario para tareas visuales.
 - Interpretacion de graficos y charts (por la especializacion declarada en el nombre del modelo base).
 - Razonamiento visual multi-paso segun la nomenclatura "OpenThinkIMG" del modelo base.
-- Conversacional (tag "conversational" en HuggingFace).
+- Conversacional (tag "conversational" en Hugging Face).
 - Compatible con endpoints (tag "endpoints_compatible").
 - Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
 - Capacidades de agente: no disponible en la informacion proporcionada.

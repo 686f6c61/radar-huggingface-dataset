@@ -84,7 +84,7 @@ No se dispone de información suficiente sobre Sage-A1.5 ni sobre la variante co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/temaq-org/Tema_Q-X8-Thinking
+- Hugging Face: https://huggingface.co/temaq-org/Tema_Q-X8-Thinking
 - Modelo base: https://huggingface.co/InternScience/Sage-A1.5
 - Repositorio del agente: https://github.com/ek15072809/Tema_Q-Agent
 - Logo del modelo: https://huggingface.co/temaq-org/Tema_Q-X8-Thinking/resolve/main/Tema_Q-X-Logo.jpg

@@ -102,7 +102,7 @@ No se dispone en la información proporcionada de datos sobre modelos alternativ
 
 ## Enlaces
 
-- [HuggingFace: lipik/diar_streaming_sortformer_4spk-v2.1-gguf](https://huggingface.co/lipik/diar_streaming_sortformer_4spk-v2.1-gguf)
+- [Hugging Face: lipik/diar_streaming_sortformer_4spk-v2.1-gguf](https://huggingface.co/lipik/diar_streaming_sortformer_4spk-v2.1-gguf)
 - [Modelo base: nvidia/diar_streaming_sortformer_4spk-v2.1](https://huggingface.co/nvidia/diar_streaming_sortformer_4spk-v2.1)
 - [Repositorio transcribe.cpp](https://github.com/handy-computer/transcribe.cpp)
 - [Documentación del modelo en transcribe.cpp](https://github.com/handy-computer/transcribe.cpp/blob/main/docs/models/diar_streaming_sortformer_4spk-v2.1.md)

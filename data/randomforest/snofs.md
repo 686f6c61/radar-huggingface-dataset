@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`randomforest/snofs` es un repositorio de modelo alojado en HuggingFace por el usuario `randomforest`, publicado bajo licencia Apache 2.0. En el momento de redactar esta ficha, el repositorio no incluye model card con contenido tecnico: el README se limita al bloque de metadatos de licencia, sin descripcion del modelo, arquitectura, datos de entrenamiento ni uso previsto. Tampoco se ha declarado un pipeline de HuggingFace, idiomas soportados ni etiquetas que indiquen la tarea o la familia del modelo.
+`randomforest/snofs` es un repositorio de modelo alojado en Hugging Face por el usuario `randomforest`, publicado bajo licencia Apache 2.0. En el momento de redactar esta ficha, el repositorio no incluye model card con contenido tecnico: el README se limita al bloque de metadatos de licencia, sin descripcion del modelo, arquitectura, datos de entrenamiento ni uso previsto. Tampoco se ha declarado un pipeline de Hugging Face, idiomas soportados ni etiquetas que indiquen la tarea o la familia del modelo.
 
 El unico dato cuantitativo disponible es el tamano del repositorio, 1,6 GB, junto con las fechas de creacion y actualizacion (19 de octubre de 2026, con una diferencia de aproximadamente un minuto entre ambas), lo que sugiere una publicacion inicial sin iteraciones posteriores documentadas. El repositorio registra 0 descargas y 0 likes, por lo que no existe evidencia de uso ni validacion por parte de la comunidad.
 
@@ -35,7 +35,7 @@ Tampoco hay datos sobre el proceso de entrenamiento: numero de tokens, composici
 - No hay informacion sobre uso en agentes o razonamiento multi-paso.
 - No hay informacion sobre capacidades multilingues (el campo de idiomas esta vacio).
 - No hay informacion sobre modos especiales (thinking mode, vision, audio u otros).
-- No se ha declarado un pipeline de HuggingFace (text-generation, text-classification, etc.), por lo que ni siquiera se puede confirmar la modalidad del modelo.
+- No se ha declarado un pipeline de Hugging Face (text-generation, text-classification, etc.), por lo que ni siquiera se puede confirmar la modalidad del modelo.
 
 ## Casos de uso
 
@@ -79,11 +79,11 @@ No disponible. Al no conocerse la arquitectura, el numero de parametros ni la ta
 - Limitaciones de contexto e idioma: no disponible.
 - Licencia: Apache 2.0 permite uso comercial, modificacion y redistribucion con atribucion y sin garantia; el autor no ofrece ninguna garantia sobre el contenido del repositorio.
 - Advertencia para produccion: no se recomienda integrar este repositorio en un sistema en produccion sin una auditoria previa de los ficheros de pesos, la configuracion y el tokenizer, y sin evaluacion propia de calidad y seguridad.
-- Nota sobre la busqueda web: los resultados devueltos por la busqueda no guardan ninguna relacion con el modelo ni con HuggingFace, por lo que se han descartado y no se han utilizado como fuente.
+- Nota sobre la busqueda web: los resultados devueltos por la busqueda no guardan ninguna relacion con el modelo ni con Hugging Face, por lo que se han descartado y no se han utilizado como fuente.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/randomforest/snofs
+- Repositorio en Hugging Face: https://huggingface.co/randomforest/snofs
 - Model card del autor: no disponible (el README solo contiene el bloque de licencia)
 - Paper o informe tecnico: no disponible
 - Repositorio de codigo: no disponible

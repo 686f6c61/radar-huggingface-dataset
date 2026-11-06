@@ -18,7 +18,7 @@ Su relevancia practica es limitada por el momento: acumula 11 descargas y 0 valo
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | No disponible; el adaptador se distribuye unicamente en safetensors y no se publican versiones cuantizadas |
 | Idiomas soportados | No disponible |
-| Licencia | No disponible; la model card incluye el campo "licence: license" sin contenido y los metadatos de HuggingFace no la especifican |
+| Licencia | No disponible; la model card incluye el campo "licence: license" sin contenido y los metadatos de Hugging Face no la especifican |
 | Formato de pesos | safetensors (adaptador PEFT/LoRA); tamano del repositorio: 0,4 GB |
 
 ## Arquitectura y entrenamiento
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| veloxy-qwen3.5-faz3 | Adaptador LoRA sobre base "9B" (parametros del adaptador no disponibles) | No disponible | Sin benchmarks publicados | No disponible | HuggingFace, 11 descargas |
-| Qwen/Qwen3.5-9B (modelo base, sin adaptador) | "9B" segun denominacion | No disponible | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | HuggingFace |
+| veloxy-qwen3.5-faz3 | Adaptador LoRA sobre base "9B" (parametros del adaptador no disponibles) | No disponible | Sin benchmarks publicados | No disponible | Hugging Face, 11 descargas |
+| Qwen/Qwen3.5-9B (modelo base, sin adaptador) | "9B" segun denominacion | No disponible | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Hugging Face |
 | Otros adaptadores LoRA SFT de la misma familia Qwen | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de informacion suficiente para establecer una comparativa cuantitativa con alternativas de la misma categoria.
@@ -73,7 +73,7 @@ No se dispone de informacion suficiente para establecer una comparativa cuantita
 ## Limitaciones y advertencias
 
 - Ausencia total de evaluacion: no hay benchmarks, pruebas de regresion ni comparacion con el modelo base, por lo que no puede afirmarse que el adaptador mejore a Qwen/Qwen3.5-9B en ninguna tarea.
-- Licencia sin definir: la model card contiene el marcador "licence: license" sin texto y los metadatos de HuggingFace no indican licencia. No hay base legal clara para uso comercial, ni siquiera para redistribuir el adaptador.
+- Licencia sin definir: la model card contiene el marcador "licence: license" sin texto y los metadatos de Hugging Face no indican licencia. No hay base legal clara para uso comercial, ni siquiera para redistribuir el adaptador.
 - Procedencia de datos opaca: no se especifica el dataset de SFT, su composicion, su idioma ni su licencia de origen, lo que impide evaluar riesgos de contaminacion o de sesgo.
 - Riesgo de alucinacion: no cuantificado por el autor; al ser un ajuste SFT sin alineacion documentada, el comportamiento del adaptador frente a preguntas fuera de dominio es impredecible.
 - Idiomas no declarados: no puede confirmarse el soporte de castellano ni de ninguna otra lengua; el ajuste podria haber degradado competencias del modelo base en idiomas no representados en el dataset.
@@ -85,7 +85,7 @@ No se dispone de informacion suficiente para establecer una comparativa cuantita
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zveloxy/veloxy-qwen3.5-faz3
+- Modelo en Hugging Face: https://huggingface.co/zveloxy/veloxy-qwen3.5-faz3
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Repositorio de PEFT: https://github.com/huggingface/peft

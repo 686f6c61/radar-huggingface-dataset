@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`yasminberrichi/distilbert-sentiment-demo` es un modelo de clasificación de texto (análisis de sentimiento) publicado en HuggingFace por el usuario yasminberrichi. Se trata de un ajuste fino (*fine-tuning*) de `distilbert-base-uncased`, la variante destilada de BERT, sobre un conjunto de datos que el autor no identifica en la model card ("on an unknown dataset"). El repositorio tiene 66.955.010 parámetros en formato safetensors, ocupa 0,5 GB y se distribuye bajo licencia Apache 2.0.
+`yasminberrichi/distilbert-sentiment-demo` es un modelo de clasificación de texto (análisis de sentimiento) publicado en Hugging Face por el usuario yasminberrichi. Se trata de un ajuste fino (*fine-tuning*) de `distilbert-base-uncased`, la variante destilada de BERT, sobre un conjunto de datos que el autor no identifica en la model card ("on an unknown dataset"). El repositorio tiene 66.955.010 parámetros en formato safetensors, ocupa 0,5 GB y se distribuye bajo licencia Apache 2.0.
 
 El modelo resuelve la tarea estándar de clasificación binaria o multiclase de sentimiento, aunque la model card no especifica el número de etiquetas ni su significado. Se entrenó durante 2 épocas con un *learning rate* de 2e-05, batch de 16, optimizador AdamW fused y semilla 42, y reporta una pérdida de evaluación de 0,4249 y una exactitud de 0,8480 según la descripción textual de la tarjeta (0,8583 según la tabla de resultados de entrenamiento, con una discrepancia que se detalla más abajo).
 
@@ -38,7 +38,7 @@ El entrenamiento se realizo con la libreria Transformers (version 5.17.0), PyTor
 - Clasificacion de texto para analisis de sentimiento: el pipeline declarado es `text-classification`, con una exactitud reportada de 0,8480 en el conjunto de evaluacion.
 - Inferencia con textos de hasta 512 tokens (limite heredado del modelo base), suficiente para resenas, tweets, titulares o parrafos cortos.
 - Ejecucion en CPU y en GPU de gama baja gracias a sus 66,9 millones de parametros.
-- Compatibilidad con `text-embeddings-inference` y con `endpoints_compatible`, segun las etiquetas del repositorio, lo que permite desplegarlo detras de la API de HuggingFace Inference Endpoints.
+- Compatibilidad con `text-embeddings-inference` y con `endpoints_compatible`, segun las etiquetas del repositorio, lo que permite desplegarlo detras de la API de Hugging Face Inference Endpoints.
 - No se documenta soporte de *tool calling*, ni de *function calling*, ni de agentes, ni de razonamiento multi-paso, ni modo *thinking*, ni vision, ni audio. Es un modelo discriminativo de una sola pasada, no generativo.
 - No se documenta capacidad multilingue. El modelo base `distilbert-base-uncased` esta entrenado predominantemente con texto en ingles sin distincion de mayusculas, por lo que el rendimiento en castellano u otros idiomas no esta garantizado ni medido.
 - No se documenta el numero de etiquetas de salida ni su semantica (binario positivo/negativo, estrellas, multiclase), dato imprescindible antes de cualquier integracion.
@@ -79,7 +79,7 @@ Advertencia sobre los datos: existe una discrepancia entre la exactitud de la de
 - VRAM estimada: aproximadamente 0,27 GB de pesos en fp32 y 0,13 GB en fp16. Sumando activaciones y el *overhead* del runtime de PyTorch, el consumo total se mantiene holgadamente por debajo de 1 GB en inferencia por lotes pequenos.
 - GPU recomendadas: cualquier GPU moderna sirve. Funciona en GTX 1050 Ti o superior, RTX 2060, RTX 3060, RTX 4090, y tambien en A100 o H100, donde quedara limitado por CPU y por el *data loader* antes que por la GPU.
 - Cabe en GPU de consumo: si, sin ninguna duda, incluidas las integradas y las de portatil con poca memoria. Tambien es viable en CPU pura para volumenes moderados.
-- Opciones de despliegue: pipeline de `transformers`, Text Embeddings Inference (etiqueta `text-embeddings-inference` del repositorio), HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`), exportacion a ONNX Runtime, TorchServe o un servicio FastAPI propio. No es un caso de uso de llama.cpp, Ollama ni vLLM, orientados a modelos generativos.
+- Opciones de despliegue: pipeline de `transformers`, Text Embeddings Inference (etiqueta `text-embeddings-inference` del repositorio), Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`), exportacion a ONNX Runtime, TorchServe o un servicio FastAPI propio. No es un caso de uso de llama.cpp, Ollama ni vLLM, orientados a modelos generativos.
 - Latencia y throughput: no disponible. El autor no publica medidas de latencia ni de tokens por segundo, y el modelo no genera texto, por lo que las metricas habituales de throughput generativo no aplican.
 - Almacenamiento: el repositorio ocupa 0,5 GB, un tamano trivial para cualquier sistema de ficheros o cache de contenedor.
 
@@ -111,7 +111,7 @@ No se dispone de datos de rendimiento de los modelos alternativos dentro de la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yasminberrichi/distilbert-sentiment-demo
+- Modelo en Hugging Face: https://huggingface.co/yasminberrichi/distilbert-sentiment-demo
 - Modelo base: https://huggingface.co/distilbert-base-uncased
 - Resultados de la busqueda web: no se encontro ningun enlace relevante sobre este modelo; los resultados obtenidos correspondian a un negocio de cafe en Orange Park (Florida) y no guardan relacion con el artefacto descrito.
 - Paper, blog, repositorio o demo adicionales: no disponibles.

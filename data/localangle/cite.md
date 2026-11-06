@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Cite es un modelo encoder ligero desarrollado por Local Angle (usuario `localangle` en HuggingFace) que resuelve un problema muy concreto: dada una pregunta y un conjunto de párrafos ordenados, determinar qué párrafos son necesarios para responderla. No genera texto ni respuestas; su función es de ranking y clasificación, devolviendo una probabilidad calibrada por párrafo junto con dos umbrales preajustados (`needed` y `contributing`).
+Cite es un modelo encoder ligero desarrollado por Local Angle (usuario `localangle` en Hugging Face) que resuelve un problema muy concreto: dada una pregunta y un conjunto de párrafos ordenados, determinar qué párrafos son necesarios para responderla. No genera texto ni respuestas; su función es de ranking y clasificación, devolviendo una probabilidad calibrada por párrafo junto con dos umbrales preajustados (`needed` y `contributing`).
 
 Técnicamente, Cite es un fine-tuning del encoder Ettin 32M de JHU CLSP, que pertenece a la familia ModernBERT. El modelo se entrenó mediante destilación desde un profesor de 400M parámetros sobre texto de noticias reales, y posteriormente se comprimió (vocabulario recortado, embeddings en int8 y resto en fp16), resultando en un paquete de unos 42 MB de pesos. Esto lo hace adecuado para ejecución en CPU y despliegues on-device.
 
@@ -41,7 +41,7 @@ El entrenamiento siguió un esquema de destilación: un modelo profesor de 400M 
 
 - Citacion automatica en sistemas RAG: antes de pasar contexto a un LLM, Cite puede filtrar qué párrafos del corpus recuperado son realmente necesarios, reduciendo ruido, coste de tokens y riesgo de alucinación en la respuesta final.
 - Verificacion de citas en generacion: dado un texto generado por un LLM y los documentos fuente, se puede usar Cite para comprobar qué párrafos de origen sustentan cada afirmación, señalando respuestas sin soporte.
-- Herramientas de lectura de noticias: en productos de noticias locales, permite resaltar al usuario los párrafos concretos de un artículo que responden a su pregunta, como muestra la demo de HuggingFace.
+- Herramientas de lectura de noticias: en productos de noticias locales, permite resaltar al usuario los párrafos concretos de un artículo que responden a su pregunta, como muestra la demo de Hugging Face.
 - Resumen extractivo por pregunta: seleccionar los bloques que formarían un resumen mínimo y suficiente de un documento respecto a una consulta, sin generar texto nuevo.
 - Reduccion de contexto en agentes: en pipelines multi-paso donde el agente consulta documentos largos, Cite puede recortar el contexto a los bloques necesarios en cada paso, ahorrando latencia y coste de API.
 - Moderacion y auditoria editorial: identificar de forma trazable qué fragmentos de un artículo justifican un titular o una afirmación, útil en flujos de revisión editorial.
@@ -66,7 +66,7 @@ No se han publicado comparaciones directas con otros modelos en la información 
 - GPU recomendadas: ninguna necesaria; está diseñado para CPU. MPS en Mac es opcional.
 - Consumer hardware: funciona en portátiles y máquinas sin GPU dedicada; el paquete de 42 MB es adecuado para despliegues on-device.
 - Software requerido: Python ≥ 3.12, `torch`, `transformers`, `safetensors` y `huggingface_hub`. Instalación vía `pip install "cite @ git+https://github.com/localangle/cite.git"` o `uv sync` desde el repositorio.
-- Opciones de despliegue: paquete Python propio (`cite`), con playground local (`deploy/cite_playground.py`) y demo en HuggingFace Spaces (`cjdd3b/cite-demo`). No hay soporte documentado para vLLM, TGI u Ollama (al no ser un modelo generativo, no aplican).
+- Opciones de despliegue: paquete Python propio (`cite`), con playground local (`deploy/cite_playground.py`) y demo en Hugging Face Spaces (`cjdd3b/cite-demo`). No hay soporte documentado para vLLM, TGI u Ollama (al no ser un modelo generativo, no aplican).
 - Latencia: aproximadamente 44 ms p50 (batch 1, CPU, 5–12 párrafos) y 268 ms (33–60 párrafos) para la forma ONNX int8 relacionada; en el paquete PyTorch los documentos largos están dominados por el coste de atención.
 
 ## Comparativa con modelos similares
@@ -95,8 +95,8 @@ La diferencia clave frente a un cross-encoder de reranking genérico es que Cite
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/localangle/cite
+- Modelo en Hugging Face: https://huggingface.co/localangle/cite
 - Version de pesos v0.1.0: https://huggingface.co/localangle/cite/tree/v0.1.0
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/cjdd3b/cite-demo
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/cjdd3b/cite-demo
 - Repositorio de codigo: https://github.com/localangle/cite
 - Modelo base (Ettin encoder 32M, JHU CLSP): https://huggingface.co/jhu-clsp/ettin-encoder-32m

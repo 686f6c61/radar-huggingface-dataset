@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un checkpoint de política robótica entrenada por el usuario de HuggingFace `tarzanagh` bajo el identificador `ckpt_tissuepickteleop_pull_4cam260918_gr00t3b260921`. Se trata de un modelo de imitación (imitation learning) de tipo vision-language-action, etiquetado en el repositorio como `Gr00tN1d7`, lo que lo vincula a la familia GR00T N1.7 de NVIDIA. El modelo resuelve una tarea concreta de manipulación bimanual y diestra: un robot DexMate Vega-1 equipado con dos manos RobotEra XHand1 sostiene una caja de pañuelos con la mano izquierda y extrae un pañuelo con la derecha.
+Este repositorio contiene un checkpoint de política robótica entrenada por el usuario de Hugging Face `tarzanagh` bajo el identificador `ckpt_tissuepickteleop_pull_4cam260918_gr00t3b260921`. Se trata de un modelo de imitación (imitation learning) de tipo vision-language-action, etiquetado en el repositorio como `Gr00tN1d7`, lo que lo vincula a la familia GR00T N1.7 de NVIDIA. El modelo resuelve una tarea concreta de manipulación bimanual y diestra: un robot DexMate Vega-1 equipado con dos manos RobotEra XHand1 sostiene una caja de pañuelos con la mano izquierda y extrae un pañuelo con la derecha.
 
 El checkpoint tiene 3.144.016.000 parámetros (aproximadamente 3,14 mil millones), un tamaño de repositorio de 12,6 GB y pesos en formato safetensors. La entrada del modelo son cuatro cámaras RGB a 640x360 y 30 fps, más un vector de estado de 38 dimensiones con las posiciones articulares de ambos brazos y ambas manos; la salida es un vector de acción de la misma dimensionalidad, emitido en bloques (chunks) de 16 acciones.
 
@@ -85,11 +85,11 @@ El propio autor publica, para la misma tarea, checkpoints de otras tres familias
 
 | Modelo | Familia | Parametros | Error en bucle abierto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `ckpt_..._gr00t3b260921` (este) | GR00T N1.7 3B | 3.144.016.000 | Ver tabla de benchmarks | other | HuggingFace |
-| `ckpt_..._gr00t3btactile260921` | GR00T N1.7 3B con entrada tactil | No disponible | No publicado en esta model card | other | HuggingFace |
-| `ckpt_..._act260921` y `acttactile260921` | ACT | No disponible | No publicado en esta model card | other | HuggingFace |
-| `ckpt_..._dp260921` y `dptactile260921` | Diffusion Policy | No disponible | No publicado en esta model card | other | HuggingFace |
-| `ckpt_..._pi05260921` y `pi05tactile260921` | pi0 (familia pi-05) | No disponible | No publicado en esta model card | other | HuggingFace |
+| `ckpt_..._gr00t3b260921` (este) | GR00T N1.7 3B | 3.144.016.000 | Ver tabla de benchmarks | other | Hugging Face |
+| `ckpt_..._gr00t3btactile260921` | GR00T N1.7 3B con entrada tactil | No disponible | No publicado en esta model card | other | Hugging Face |
+| `ckpt_..._act260921` y `acttactile260921` | ACT | No disponible | No publicado en esta model card | other | Hugging Face |
+| `ckpt_..._dp260921` y `dptactile260921` | Diffusion Policy | No disponible | No publicado en esta model card | other | Hugging Face |
+| `ckpt_..._pi05260921` y `pi05tactile260921` | pi0 (familia pi-05) | No disponible | No publicado en esta model card | other | Hugging Face |
 
 Lo unico comparable con datos es la afirmacion cualitativa del autor: GR00T tuvo el error mas bajo en las tres tareas evaluadas y la tactilidad no aporto mejoria medible en ninguna de las cuatro familias.
 
@@ -105,11 +105,11 @@ Lo unico comparable con datos es la afirmacion cualitativa del autor: GR00T tuvo
 - Licencia `other` sin texto detallado disponible. Antes de cualquier uso comercial es imprescindible contactar con el autor para conocer los terminos exactos.
 - Ausencia de cuantizaciones publicadas y de pesos en bf16 en el repositorio, lo que obliga a convertir los pesos antes de desplegar en GPUs de consumo.
 - Sin informacion sobre idiomas, contexto, latencia o throughput, porque no son magnitudes aplicables o no fueron declaradas.
-- La busqueda web realizada no devolvio resultados tecnicos relevantes sobre este modelo; toda la informacion procede de la model card y de los metadatos de HuggingFace.
+- La busqueda web realizada no devolvio resultados tecnicos relevantes sobre este modelo; toda la informacion procede de la model card y de los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tarzanagh/ckpt_tissuepickteleop_pull_4cam260918_gr00t3b260921
+- Modelo en Hugging Face: https://huggingface.co/tarzanagh/ckpt_tissuepickteleop_pull_4cam260918_gr00t3b260921
 - Variante con entrada tactil: https://huggingface.co/tarzanagh/ckpt_tissuepickteleop_pull_4cam260918_gr00t3btactile260921
 - Variante ACT: https://huggingface.co/tarzanagh/ckpt_tissuepickteleop_pull_4cam260918_act260921
 - Variante ACT con tactil: https://huggingface.co/tarzanagh/ckpt_tissuepickteleop_pull_4cam260918_acttactile260921

@@ -23,7 +23,7 @@ Su relevancia actual radica en la eficiencia: en la parte pública de Decision I
 
 ## Arquitectura y entrenamiento
 
-El modelo hereda la arquitectura multimodal de Qwen/Qwen3.5-0.8B, etiquetada en HuggingFace con el tag `qwen3_5`, y se distribuye mediante la libreria `transformers` con pipeline `image-text-to-text`. La innovacion metodologica principal no esta en la arquitectura sino en el post-entrenamiento: OneJev1.6-0.8B es el promedio de pesos (weight averaging) de tres fine-tunes completos independientes del mismo modelo base, una tecnica de "model soup" que busca fusionar comportamientos aprendidos por separado sin coste de inferencia adicional.
+El modelo hereda la arquitectura multimodal de Qwen/Qwen3.5-0.8B, etiquetada en Hugging Face con el tag `qwen3_5`, y se distribuye mediante la libreria `transformers` con pipeline `image-text-to-text`. La innovacion metodologica principal no esta en la arquitectura sino en el post-entrenamiento: OneJev1.6-0.8B es el promedio de pesos (weight averaging) de tres fine-tunes completos independientes del mismo modelo base, una tecnica de "model soup" que busca fusionar comportamientos aprendidos por separado sin coste de inferencia adicional.
 
 Los datos de entrenamiento proceden de entre 390.000 y 440.000 preguntas generadas a partir de ejecuciones reales de agentes, vídeos, imágenes y de los splits de entrenamiento de conjuntos de datos públicos de decisión. El modelo no genera texto libre: formula preguntas tipadas (`Noul` para verificaciones booleanas, `Choice` para eleccion entre opciones) y emite una probabilidad calibrada por opcion en un solo paso hacia delante, lo que evita la decodificacion autorregresiva y reduce la latencia frente a un LLM que tuviera que "razonar" la respuesta. No se documenta en la informacion disponible si hubo RLHF, DPO u otras etapas de alineacion, ni el numero exacto de tokens de entrenamiento.
 
@@ -87,7 +87,7 @@ La model card menciona tambien una tabla de resultados comparativa frente a Jev 
 
 | Modelo | Parametros | Contexto | Decision Index (parte publica) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OneJev1.6-0.8B | 0,85B | no disponible | 48,82 | Apache 2.0 | HuggingFace, GitHub, web oficial |
+| OneJev1.6-0.8B | 0,85B | no disponible | 48,82 | Apache 2.0 | Hugging Face, GitHub, web oficial |
 | vLLM-SR d3-nano | 2B | no disponible | 42,22 | no disponible | listado en el tablero Decision Index |
 | Sieve 2B v2 | 2B | no disponible | 37,26 | no disponible | listado en el tablero Decision Index |
 | vLLM-SR d3-lite | 0,8B | no disponible | 36,93 | no disponible | listado en el tablero Decision Index |
@@ -113,8 +113,8 @@ Los cuatro primeros son, segun el autor, los modelos de hasta 2,5B parametros co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OmniJev/OneJev1.6-0.8B
-- Organizacion en HuggingFace: https://huggingface.co/OmniJev
+- Modelo en Hugging Face: https://huggingface.co/OmniJev/OneJev1.6-0.8B
+- Organizacion en Hugging Face: https://huggingface.co/OmniJev
 - Repositorio GitHub: https://github.com/OmniJev/OneJev
 - Sitio web oficial: https://omnijev.github.io/OneJev/
 - Licencia en el repositorio: https://github.com/OmniJev/OneJev/blob/main/LICENSE
@@ -122,4 +122,4 @@ Los cuatro primeros son, segun el autor, los modelos de hasta 2,5B parametros co
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Paper o publicacion tecnica: no disponible
 - Demo interactiva: no disponible
-- La busqueda web realizada no devolvio resultados relevantes sobre este modelo; los enlaces anteriores proceden de la informacion de HuggingFace y de la model card.
+- La busqueda web realizada no devolvio resultados relevantes sobre este modelo; los enlaces anteriores proceden de la informacion de Hugging Face y de la model card.

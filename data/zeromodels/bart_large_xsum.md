@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tarea | Licencia | Disponibilidad | Parámetros | Contexto |
 |---|---|---|---|---|---|
-| zeromodels/bart_large_xsum | Resumen extremo XSum | MIT | HuggingFace, librería zeromodels | no disponible | no disponible |
-| facebook/bart-large-xsum | Resumen extremo XSum | MIT | HuggingFace (PyTorch/safetensors) | no disponible | no disponible |
-| zeromodels/bart_large_cnn | Resumen CNN/DailyMail | MIT | HuggingFace, librería zeromodels | no disponible | no disponible |
+| zeromodels/bart_large_xsum | Resumen extremo XSum | MIT | Hugging Face, librería zeromodels | no disponible | no disponible |
+| facebook/bart-large-xsum | Resumen extremo XSum | MIT | Hugging Face (PyTorch/safetensors) | no disponible | no disponible |
+| zeromodels/bart_large_cnn | Resumen CNN/DailyMail | MIT | Hugging Face, librería zeromodels | no disponible | no disponible |
 
 Rendimiento: no disponible.
 
@@ -75,8 +75,8 @@ Rendimiento: no disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/zeromodels/bart_large_xsum
+- Hugging Face: https://huggingface.co/zeromodels/bart_large_xsum
 - GitHub (ZeroModels): https://github.com/ZeroAIx/ZeroModels
 - Documentación de BART en ZeroModels: https://zeroaix.github.io/ZeroModels/bart/
 - Paper original de BART: https://arxiv.org/abs/1910.13461
-- Modelo base en HuggingFace: https://huggingface.co/facebook/bart-large-xsum
+- Modelo base en Hugging Face: https://huggingface.co/facebook/bart-large-xsum

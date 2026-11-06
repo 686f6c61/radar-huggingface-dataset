@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Mannyyebz/qwen3-imdb-final` es un fine-tune de la familia Qwen3 publicado en HuggingFace por el usuario Mannyyebz. Con 596 millones de parámetros y un tamaño de repositorio de 2,4 GB en formato safetensors, el nombre sugiere que ha sido ajustado sobre el dataset IMDB, probablemente para tareas de análisis de sentimiento o generación de reseñas cinematográficas. Sin embargo, la model card está completamente vacía: no se proporciona información sobre el modelo base exacto, los datos de entrenamiento, el procedimiento de ajuste ni las capacidades resultantes.
+El modelo `Mannyyebz/qwen3-imdb-final` es un fine-tune de la familia Qwen3 publicado en Hugging Face por el usuario Mannyyebz. Con 596 millones de parámetros y un tamaño de repositorio de 2,4 GB en formato safetensors, el nombre sugiere que ha sido ajustado sobre el dataset IMDB, probablemente para tareas de análisis de sentimiento o generación de reseñas cinematográficas. Sin embargo, la model card está completamente vacía: no se proporciona información sobre el modelo base exacto, los datos de entrenamiento, el procedimiento de ajuste ni las capacidades resultantes.
 
 La relevancia de este modelo es limitada debido a la ausencia total de documentación. Aunque Qwen3 es una familia de modelos reciente y de alto rendimiento desarrollada por Alibaba, este fine-tune concreto no ofrece garantías de calidad ni de comportamiento. Los desarrolladores que consideren usarlo deben ser conscientes de que se trata de un artefacto sin verificar, cuyo único dato fiable es el número de parámetros y el formato de pesos.
 
@@ -38,7 +38,7 @@ Dada la ausencia de documentación, los casos de uso son especulativos y deben c
 - Experimentacion academica: podría servir como ejemplo de fine-tune de Qwen3 para estudiantes que quieran estudiar el proceso de ajuste, aunque la falta de documentación lo hace poco útil como referencia.
 - Prototipado rapido: si se confirma que funciona, podría usarse en prototipos de sistemas de recomendación, pero requiere validación previa.
 - Benchmarking de fine-tunes: podría compararse con otros fine-tunes de Qwen3 para evaluar el impacto del dataset IMDB, pero sin datos de entrenamiento es difícil.
-- Uso educativo: para aprender a cargar y ejecutar modelos de HuggingFace, aunque no aporta nada que no ofrezca el modelo base.
+- Uso educativo: para aprender a cargar y ejecutar modelos de Hugging Face, aunque no aporta nada que no ofrezca el modelo base.
 
 ## Benchmarks y rendimiento
 
@@ -51,7 +51,7 @@ Dado el tamaño de 596M parámetros, se pueden hacer estimaciones orientativas, 
 - VRAM estimada para inferencia: aproximadamente 1,2 GB en fp16 (596M × 2 bytes), más overhead de activaciones y KV cache. Con cuantización a 8 bits podría reducirse a ~0,6 GB, y a 4 bits a ~0,3 GB, pero no se han publicado versiones cuantizadas.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM podría ejecutar el modelo en fp16. Una RTX 3060, RTX 4060 o similar sería suficiente. Incluso CPUs modernas podrían ejecutarlo con llama.cpp si se convierte a GGUF.
 - Si cabe en consumer GPU: sí, es un modelo pequeño que cabe en cualquier GPU de consumo actual.
-- Opciones de despliegue: al ser un modelo de transformers, puede servirse con vLLM, TGI, o ejecutarse localmente con HuggingFace transformers. También podría convertirse a GGUF para Ollama o llama.cpp, pero no se han publicado dichos formatos.
+- Opciones de despliegue: al ser un modelo de transformers, puede servirse con vLLM, TGI, o ejecutarse localmente con Hugging Face transformers. También podría convertirse a GGUF para Ollama o llama.cpp, pero no se han publicado dichos formatos.
 - Latencia y throughput: no disponibles. Para un modelo de este tamaño, en una GPU moderna se esperaría una latencia de decenas de milisegundos por token, pero no hay mediciones.
 
 ## Comparativa con modelos similares
@@ -77,8 +77,8 @@ No se conocen otros fine-tunes de Qwen3 sobre IMDB con los que comparar directam
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Mannyyebz/qwen3-imdb-final
-- Coleccion Qwen3 en HuggingFace: https://huggingface.co/collections/Qwen/qwen3
+- Repositorio Hugging Face: https://huggingface.co/Mannyyebz/qwen3-imdb-final
+- Coleccion Qwen3 en Hugging Face: https://huggingface.co/collections/Qwen/qwen3
 - Repositorio GitHub de Qwen3: https://github.com/QwenLM/Qwen3
 - Informe tecnico de Qwen3 (arXiv): https://arxiv.org/html/2505.09388v1
 - Pagina de Qwen3 en LM Studio: https://lmstudio.ai/models/qwen3

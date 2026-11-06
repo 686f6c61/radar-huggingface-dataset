@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparado con otras familias de modelos en
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Kestrel-4B-Coder-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Kestrel-4B-Coder-i1-GGUF
 - Modelo base: https://huggingface.co/Jackrong/Kestrel-4B-Coder
 - Cuantizaciones estaticas y posibles ficheros mmproj: https://huggingface.co/mradermacher/Kestrel-4B-Coder-GGUF
 - Pagina de descarga del cuantizador: https://hf.tst.eu/model#Kestrel-4B-Coder-i1-GGUF

@@ -18,7 +18,7 @@ La V3 se distingue de la V2 en dos ejes: entrena sobre la unión de dos corpus (
 | Longitud de contexto | 262 144 tokens (256K), según llm-explorer.com; no confirmado en la model card |
 | Tipos de cuantización | NVFP4-FP8 (este repo); escala GGUF de 11 cuantizaciones (f16, Q2_K…Q8_0) en repo aparte |
 | Idiomas soportados | no disponibles (heredados del backbone Qwen3.8, sin lista publicada por el autor) |
-| Licencia | apache-2.0 (según la model card; los metadatos de HuggingFace la marcan como no disponible) |
+| Licencia | apache-2.0 (según la model card; los metadatos de Hugging Face la marcan como no disponible) |
 | Formato de pesos | safetensors con `compressed-tensors`; GGUF en repositorio separado |
 | Tamaño del repositorio | 30,1 GB |
 | Cuantización de referencia | bf16, 52 GB, 19 shards |
@@ -103,14 +103,14 @@ Lectura: la V3 sacrifica calibración (ECE 0,167 frente a 0,021 de la V2) a camb
 - Dependencia de vLLM: la ruta de decisión no funciona en llama.cpp, que no expone los log-probabilidades por token necesarios. El GGUF sirve solo para chat.
 - Necesita artefactos auxiliares (`decision_head.json`, `calibration.json`, `serve_decide.py`) para producir decisiones; los pesos por sí solos no bastan.
 - Inconsistencia en la model card: describe "bf16 merged weights (19 shards, 52 GB)" dentro del repositorio, pero este repositorio pesa 30,1 GB y contiene la cuantización NVFP4-FP8. El texto parece heredado del repo bf16.
-- La licencia aparece como apache-2.0 en la model card pero como "no disponible" en los metadatos de HuggingFace; conviene verificar antes de un uso comercial.
+- La licencia aparece como apache-2.0 en la model card pero como "no disponible" en los metadatos de Hugging Face; conviene verificar antes de un uso comercial.
 - Contexto de 256K tomado de un agregador externo, no confirmado por el autor.
 - Modelo con 0 descargas y 0 likes en el momento de la consulta: sin validación independiente de la comunidad, y con marcas temporales de creación/actualización en octubre de 2026.
 - No se documentan idiomas soportados ni evaluación multilingüe.
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/SargeDev/Solar-Decision-JEV-27B-V3-NVFP4-FP8
+- Hugging Face del modelo: https://huggingface.co/SargeDev/Solar-Decision-JEV-27B-V3-NVFP4-FP8
 - Versión anterior V2: https://huggingface.co/SargeDev/Solar-Decision-JEV-27B-V2-NVFP4-FP8
 - Repo base de la línea (resultado negativo reproducible): https://huggingface.co/SargeDev/Solar-Decision-JEV-27B
 - Repositorio GGUF de la V3: https://huggingface.co/SargeDev/Solar-Decision-JEV-27B-V3-GGUF

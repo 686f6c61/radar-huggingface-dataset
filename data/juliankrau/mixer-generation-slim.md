@@ -65,10 +65,10 @@ No se dispone de modelos comparables en la misma categoría, ya que se trata de 
 - No ha sido auditado para robustez, equidad ni transferencia de dominio, según el propio autor.
 - No se proporcionan datos sobre sesgos, alucinaciones o limitaciones de contexto porque no hay evaluación.
 - La licencia BSD-3-Clause permite uso comercial, pero el autor advierte que debe revisarse la procedencia de los datos externos si se usan con este repositorio.
-- No es compatible con cargadores estándar de HuggingFace sin un adaptador personalizado.
+- No es compatible con cargadores estándar de Hugging Face sin un adaptador personalizado.
 - Los resultados de un futuro checkpoint entrenado deben documentarse por separado de los valores por defecto incluidos.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Juliankrau/mixer-generation-slim
+- Repositorio en Hugging Face: https://huggingface.co/Juliankrau/mixer-generation-slim
 - No se han encontrado otros enlaces relevantes (papers, blogs, repos) en la búsqueda web.

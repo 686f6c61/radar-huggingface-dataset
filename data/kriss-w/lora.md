@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Kriss-W/lora` es un adaptador LoRA (Low-Rank Adaptation) para generación de imágenes text-to-image, diseñado para funcionar sobre la familia de modelos FLUX. Fue publicado por el usuario Kriss-W en HuggingFace y entrenado mediante la plataforma fal.ai, concretamente con el trainer `z-image-turbo-trainer-v2`. El repositorio tiene un tamaño de 0.1 GB, lo que indica que se trata de un adaptador ligero que modifica el comportamiento del modelo base sin necesidad de reentrenarlo completo.
+El modelo `Kriss-W/lora` es un adaptador LoRA (Low-Rank Adaptation) para generación de imágenes text-to-image, diseñado para funcionar sobre la familia de modelos FLUX. Fue publicado por el usuario Kriss-W en Hugging Face y entrenado mediante la plataforma fal.ai, concretamente con el trainer `z-image-turbo-trainer-v2`. El repositorio tiene un tamaño de 0.1 GB, lo que indica que se trata de un adaptador ligero que modifica el comportamiento del modelo base sin necesidad de reentrenarlo completo.
 
 La información disponible es extremadamente escasa: no se especifica el modelo base exacto (aunque las etiquetas indican `flux`), no hay descripción del estilo o contenido aprendido, ni datos sobre el proceso de entrenamiento. La única instrucción clara es la palabra de activación `Kriss`, que debe usarse en el prompt para activar el efecto del LoRA. A pesar de la falta de documentación, su existencia sugiere un caso de uso típico de personalización de estilos o personajes en generación de imágenes con FLUX.
 
@@ -26,7 +26,7 @@ El modelo es un LoRA, una técnica de adaptación de bajo rango que añade matri
 ## Capacidades
 
 - Generación de imágenes text-to-image: el LoRA modifica el comportamiento del modelo base FLUX para producir imágenes que siguen un estilo o temática específica, activada mediante la palabra `Kriss`.
-- Compatibilidad con la librería `diffusers` de HuggingFace, lo que facilita su integración en pipelines existentes.
+- Compatibilidad con la librería `diffusers` de Hugging Face, lo que facilita su integración en pipelines existentes.
 - Formato Safetensors, lo que permite cargar los pesos de forma segura y eficiente.
 - No se documentan capacidades adicionales como tool calling, agentes, razonamiento multimodal o soporte multilingüe, ya que se trata de un modelo de generación de imágenes puro.
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para establecer una comparativa fiable. Existen otros LoRA para FLUX en HuggingFace, pero sin datos de rendimiento o especificaciones de este modelo en concreto, no es posible comparar parámetros, calidad de imagen o licencias. Se recomienda al usuario evaluar el modelo directamente en su caso de uso.
+No se dispone de información suficiente para establecer una comparativa fiable. Existen otros LoRA para FLUX en Hugging Face, pero sin datos de rendimiento o especificaciones de este modelo en concreto, no es posible comparar parámetros, calidad de imagen o licencias. Se recomienda al usuario evaluar el modelo directamente en su caso de uso.
 
 ## Limitaciones y advertencias
 
@@ -68,6 +68,6 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/Kriss-W/lora)
+- [Repositorio Hugging Face](https://huggingface.co/Kriss-W/lora)
 - [Entrenador fal.ai usado](https://fal.ai/models/fal-ai/z-image-turbo-trainer-v2)
 - [Documentación de diffusers para LoRA](https://huggingface.co/docs/diffusers/en/using-diffusers/loading_adapters) (referencia general)

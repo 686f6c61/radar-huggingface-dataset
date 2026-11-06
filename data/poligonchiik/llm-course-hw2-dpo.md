@@ -74,9 +74,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| poligonchiik/llm-course-hw2-dpo | 134.515.008 | 1024 (entrenamiento) | no disponible | HuggingFace, 0 descargas | Ajuste DPO didactico |
-| HuggingFaceTB/SmolLM-135M-Instruct | ~135M | no disponible en esta ficha | no disponible en esta ficha | HuggingFace, ampliamente usado | Modelo base del anterior |
-| Otros modelos ~135M (p. ej. Qwen2.5-0.5B, TinyLlama-1.1B) | 0.5B / 1.1B | mayor | variable | HuggingFace | Alternativas de mayor tamano; no comparables directamente por escala |
+| poligonchiik/llm-course-hw2-dpo | 134.515.008 | 1024 (entrenamiento) | no disponible | Hugging Face, 0 descargas | Ajuste DPO didactico |
+| HuggingFaceTB/SmolLM-135M-Instruct | ~135M | no disponible en esta ficha | no disponible en esta ficha | Hugging Face, ampliamente usado | Modelo base del anterior |
+| Otros modelos ~135M (p. ej. Qwen2.5-0.5B, TinyLlama-1.1B) | 0.5B / 1.1B | mayor | variable | Hugging Face | Alternativas de mayor tamano; no comparables directamente por escala |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada.
 
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/poligonchiik/llm-course-hw2-dpo
+- Modelo en Hugging Face: https://huggingface.co/poligonchiik/llm-course-hw2-dpo
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM-135M-Instruct
 - Dataset de preferencias: https://huggingface.co/datasets/HumanLLMs/Human-Like-DPO-Dataset
 - Paper de DPO (referencia general, no citado en la model card): https://arxiv.org/abs/2305.18290

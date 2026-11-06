@@ -75,10 +75,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - Idiomas soportados: no disponibles; no se puede garantizar un rendimiento adecuado en castellano.
 - Licencia MIT: permite uso comercial, pero el autor remite a la licencia del modelo base y a su model card para los requisitos de uso.
 - El autor no reclama mejoras de rendimiento; el reempaquetado es puramente de almacenamiento.
-- El tag `endpoints_compatible` aparece en los metadatos, pero la necesidad de un cargador especial contradice la compatibilidad directa con endpoints estándar de HuggingFace.
+- El tag `endpoints_compatible` aparece en los metadatos, pero la necesidad de un cargador especial contradice la compatibilidad directa con endpoints estándar de Hugging Face.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/wrldsuksgo2mars/DeepSeek-V4.1-Flash-1017-StridedPLE
+- Repositorio Hugging Face: https://huggingface.co/wrldsuksgo2mars/DeepSeek-V4.1-Flash-1017-StridedPLE
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Revisión del modelo base citada: `1bae0e1088993b9b82de08f59de5be5a34e42170`

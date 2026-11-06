@@ -81,9 +81,9 @@ Datos reportados por el autor en la model card (no se han publicado resultados a
 
 | Modelo | Tipo | Parámetros | Contexto | Respuesta solar (ratio de pendiente) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `oriolh/cloud2grid-e5d-l1-s0` | GNN heterogéneo ajustado con pérdida de respuesta emparejada | no disponible | no aplica | 0,997 en sintético; −1,07 frente a −1,02 en 2024 | Apache-2.0 | HuggingFace, release `cloud2grid-models-v1` |
-| `oriolh/cloud2grid-e5c-ft-n10000-s2` | GNN heterogéneo ajustado sin pérdida de respuesta | no disponible | no aplica | 0,014 en sintético | Apache-2.0 | HuggingFace (revisión `v1`) |
-| `gridfm/genco-pf-transfer` (zero-shot) | GNN heterogéneo preentrenado (GENCO) | no disponible | no aplica | no disponible | Apache-2.0 | HuggingFace |
+| `oriolh/cloud2grid-e5d-l1-s0` | GNN heterogéneo ajustado con pérdida de respuesta emparejada | no disponible | no aplica | 0,997 en sintético; −1,07 frente a −1,02 en 2024 | Apache-2.0 | Hugging Face, release `cloud2grid-models-v1` |
+| `oriolh/cloud2grid-e5c-ft-n10000-s2` | GNN heterogéneo ajustado sin pérdida de respuesta | no disponible | no aplica | 0,014 en sintético | Apache-2.0 | Hugging Face (revisión `v1`) |
+| `gridfm/genco-pf-transfer` (zero-shot) | GNN heterogéneo preentrenado (GENCO) | no disponible | no aplica | no disponible | Apache-2.0 | Hugging Face |
 | Cloud2Grid E5 y E5b | Variantes intermedias del mismo estudio | no disponible | no aplica | no disponible | Apache-2.0 | Mostradas en el Explorer de Cloud2Grid v1.1; repositorio no indicado en la información disponible |
 
 ## Limitaciones y advertencias
@@ -101,7 +101,7 @@ Datos reportados por el autor en la model card (no se han publicado resultados a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oriolh/cloud2grid-e5d-l1-s0
+- Modelo en Hugging Face: https://huggingface.co/oriolh/cloud2grid-e5d-l1-s0
 - Modelo base GENCO: https://huggingface.co/gridfm/genco-pf-transfer
 - Dataset de verificación: https://huggingface.co/datasets/oriolh/cloud2grid-verification-synthetic-v1
 - Artículo de referencia (Puech et al., 2026): https://arxiv.org/abs/2608.09921

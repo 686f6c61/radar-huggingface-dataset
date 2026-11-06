@@ -104,7 +104,7 @@ La informacion disponible no permite establecer una comparativa cuantitativa fia
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OrionLLM/GRM-3.2-Cliff
+- Modelo en Hugging Face: https://huggingface.co/OrionLLM/GRM-3.2-Cliff
 - Coleccion GRM-3.2 de OrionLLM: https://huggingface.co/collections/OrionLLM/grm-32
 - Demo de chat del autor: https://grape.skinnertopia.com/chat
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen2.5-1.5B-OpenR1-SFT es un ajuste fino supervisado (SFT) del modelo denso Qwen/Qwen2.5-1.5B, publicado por el usuario zbeeb en HuggingFace. No se trata de un modelo de propósito general, sino del punto de control final de la fase SFT dentro de un estudio a nivel de token sobre la transición de SFT a GRPO (aprendizaje por refuerzo con Group Relative Policy Optimization). El modelo se entrenó sobre un subconjunto verificado localmente del dataset open-r1/OpenR1-Math-220k, orientado a razonamiento matemático.
+Qwen2.5-1.5B-OpenR1-SFT es un ajuste fino supervisado (SFT) del modelo denso Qwen/Qwen2.5-1.5B, publicado por el usuario zbeeb en Hugging Face. No se trata de un modelo de propósito general, sino del punto de control final de la fase SFT dentro de un estudio a nivel de token sobre la transición de SFT a GRPO (aprendizaje por refuerzo con Group Relative Policy Optimization). El modelo se entrenó sobre un subconjunto verificado localmente del dataset open-r1/OpenR1-Math-220k, orientado a razonamiento matemático.
 
 Con 1.777.088.000 parámetros reales (aproximadamente 1,78 mil millones) y un presupuesto de secuencia de 4096 tokens, el modelo está pensado para generar trazas de razonamiento matemático paso a paso en inglés. La model card insiste en que los resultados de evaluación incluidos son "resultados de sondas de experimento", no métricas de benchmarks estándar, lo que sitúa el artefacto en el terreno de la investigación reproducible más que en el de un modelo listo para producción.
 
@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks que permitan una comparación cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zbeeb/Qwen2.5-1.5B-OpenR1-SFT
+- Modelo en Hugging Face: https://huggingface.co/zbeeb/Qwen2.5-1.5B-OpenR1-SFT
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B
 - Dataset de SFT: https://huggingface.co/datasets/open-r1/OpenR1-Math-220k
 - Dataset de la etapa RL posterior: https://huggingface.co/datasets/zbeeb/Staleness-GRPO-DAPO-Math-17k

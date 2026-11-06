@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la información disponible. El b
 
 - Para el archivo ExecuTorch: se necesita una CPU Arm o x86 con soporte AVX. El archivo `.pte` pesa 1.81 GB y el KV cache en fp32 ocupa ~1.1 GB para la ventana completa de 32.768 tokens, por lo que la memoria RAM total necesaria ronda los 3 GB.
 - No se dispone de estimaciones de VRAM para GPU, ya que el modelo está diseñado para CPU.
-- Opciones de despliegue: ExecuTorch (llama_main o python runner) y HuggingFace transformers (carga como `Lfm2ForCausalLM`).
+- Opciones de despliegue: ExecuTorch (llama_main o python runner) y Hugging Face transformers (carga como `Lfm2ForCausalLM`).
 - Latencia: 220 tok/s según el blog de Liquid AI para el modelo base, sin especificar hardware.
 
 ## Comparativa con modelos similares
@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la información disponible. El b
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/experimentalmachines/LFM2.5-2.6B-heretic
+- Hugging Face: https://huggingface.co/experimentalmachines/LFM2.5-2.6B-heretic
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-2.6B
 - Licencia: https://huggingface.co/LiquidAI/LFM2.5-2.6B/blob/main/LICENSE
 - Herramienta heretic: https://github.com/p-e-w/heretic

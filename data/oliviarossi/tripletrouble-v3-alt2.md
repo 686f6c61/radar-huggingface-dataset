@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TripleTrouble-V3-ALT2 es un modelo de lenguaje obtenido por fusión (merge) de pesos de tres checkpoints especializados en código y razonamiento, todos ellos construidos sobre la arquitectura Qwen 35B-A3B, un transformer de tipo Mixture-of-Experts disperso con 40 capas, 256 expertos enrutados más un experto compartido y recurrencia lineal híbrida Gated DeltaNet. El autor es el usuario de HuggingFace OliviaRossi y el repositorio se publicó el 12 de septiembre de 2026, con un peso total de 34.660.610.688 parámetros (unos 34,66 mil millones) y un tamaño de repositorio de 69,3 GB, coherente con pesos en precisión BF16/FP16. El pipeline, la licencia y los idiomas no están declarados en la información disponible.
+TripleTrouble-V3-ALT2 es un modelo de lenguaje obtenido por fusión (merge) de pesos de tres checkpoints especializados en código y razonamiento, todos ellos construidos sobre la arquitectura Qwen 35B-A3B, un transformer de tipo Mixture-of-Experts disperso con 40 capas, 256 expertos enrutados más un experto compartido y recurrencia lineal híbrida Gated DeltaNet. El autor es el usuario de Hugging Face OliviaRossi y el repositorio se publicó el 12 de septiembre de 2026, con un peso total de 34.660.610.688 parámetros (unos 34,66 mil millones) y un tamaño de repositorio de 69,3 GB, coherente con pesos en precisión BF16/FP16. El pipeline, la licencia y los idiomas no están declarados en la información disponible.
 
 El problema que aborda es la combinación de tres competencias que habitualmente se distribuyen entre modelos distintos: manipulación autónoma de repositorios y fidelidad sintáctica (aportada por Kwaipilot/KAT-Coder-V2.5-Dev), razonamiento estilo Opus y ejecución de agentes (aportada por Jackrong/Qwopus3.6-35B-A3B-Coder) y lógica algorítmica con tool calling multi-turno (aportada por ornith-ai/Ornith-1.5-35B-A3B). El autor aplica tres técnicas de fusión propias: consenso geodésico normalizado desacoplado, calibración del router por filas y una programación funcional por profundidad que asigna distintos pesos a cada bloque de capas.
 
@@ -76,7 +76,7 @@ Comparacion con los tres checkpoints de origen y con la familia base. Los datos 
 
 | Modelo | Parametros | Contexto | Enfoque declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TripleTrouble-V3-ALT2 | 34,66 B totales (~3 B activos) | no disponible | Merge de codigo, razonamiento y tool calling | no disponible | HuggingFace, 0 descargas |
+| TripleTrouble-V3-ALT2 | 34,66 B totales (~3 B activos) | no disponible | Merge de codigo, razonamiento y tool calling | no disponible | Hugging Face, 0 descargas |
 | Kwaipilot/KAT-Coder-V2.5-Dev | no disponible (arquitectura equivalente) | no disponible | Repositorios y flujos SWE-bench | no disponible | checkpoint publico |
 | Jackrong/Qwopus3.6-35B-A3B-Coder | ~35 B totales (~3 B activos) | no disponible | Razonamiento estilo Opus y agentes | no disponible | checkpoint publico |
 | ornith-ai/Ornith-1.5-35B-A3B | ~35 B totales (~3 B activos) | no disponible | Programacion competitiva y tool calling | no disponible | checkpoint publico |
@@ -96,7 +96,7 @@ Comparacion con los tres checkpoints de origen y con la familia base. Los datos 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/OliviaRossi/TripleTrouble-V3-ALT2
+- Repositorio en Hugging Face: https://huggingface.co/OliviaRossi/TripleTrouble-V3-ALT2
 - Checkpoint de origen 1: https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev
 - Checkpoint de origen 2: https://huggingface.co/Jackrong/Qwopus3.6-35B-A3B-Coder
 - Checkpoint de origen 3: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B

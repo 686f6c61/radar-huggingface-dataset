@@ -81,7 +81,7 @@ La información proporcionada no incluye datos de rendimiento ni especificacione
 
 | Modelo | Parámetros | Contexto/entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EgoHand-v1 (NVIDIA) | 883,5 M | Imagen 256×256 + intrínsecos 3×3 | Sin métricas publicadas | OpenMDW 1.1 (+ Apache 2.0 citada) | HuggingFace, repo de 10,7 GB |
+| EgoHand-v1 (NVIDIA) | 883,5 M | Imagen 256×256 + intrínsecos 3×3 | Sin métricas publicadas | OpenMDW 1.1 (+ Apache 2.0 citada) | Hugging Face, repo de 10,7 GB |
 | SAM 3D Body (Meta) | no disponible | no disponible | no disponible | no disponible | Referenciado como origen de inicialización del backbone |
 | Otros estimadores monofoculares de mano 3D | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -99,7 +99,7 @@ La información proporcionada no incluye datos de rendimiento ni especificacione
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nvidia/EgoHand-v1
+- Modelo en Hugging Face: https://huggingface.co/nvidia/EgoHand-v1
 - SAM 3D Body (origen de la inicialización del backbone DINOv3): https://huggingface.co/facebook/sam-3d-body-dinov3
 - Licencia OpenMDW 1.1: https://github.com/OpenMDW/OpenMDW/blob/main/1.1/LICENSE.OpenMDW-1.1
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0

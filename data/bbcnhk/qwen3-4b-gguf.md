@@ -2,7 +2,7 @@
 
 ## Resumen
 
-bbcnhk/Qwen3-4B-GGUF es una versión cuantizada en formato GGUF del modelo denso Qwen3-4B, publicada por el usuario bbcnhk. No se trata de un modelo entrenado desde cero, sino de una conversión de pesos pensada para su ejecución en llama.cpp y en entornos de inferencia local con recursos limitados. El repositorio ocupa 15,8 GB, lo que indica que agrupa varios niveles de cuantización del mismo modelo base, y su acceso está restringido en HuggingFace: requiere aceptar condiciones antes de poder descargarlo.
+bbcnhk/Qwen3-4B-GGUF es una versión cuantizada en formato GGUF del modelo denso Qwen3-4B, publicada por el usuario bbcnhk. No se trata de un modelo entrenado desde cero, sino de una conversión de pesos pensada para su ejecución en llama.cpp y en entornos de inferencia local con recursos limitados. El repositorio ocupa 15,8 GB, lo que indica que agrupa varios niveles de cuantización del mismo modelo base, y su acceso está restringido en Hugging Face: requiere aceptar condiciones antes de poder descargarlo.
 
 El modelo subyacente, Qwen3-4B, pertenece a la familia Qwen3 de Alibaba, una generación de modelos densos y MoE que introdujo el modo de razonamiento explícito conmutable. Qwen3-4B tiene 4.022.468.096 parámetros, una ventana de contexto nativa de 32.768 tokens ampliable a 131.072 mediante YaRN, y licencia Apache 2.0, lo que lo hace atractivo para productos comerciales sin obligaciones de atribución adicionales.
 
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativos para esta conversión concret
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y exige aceptar condiciones en HuggingFace, lo que añade fricción a la automatización de descargas y a los despliegues reproducibles.
+- Acceso restringido: el repositorio es gated y exige aceptar condiciones en Hugging Face, lo que añade fricción a la automatización de descargas y a los despliegues reproducibles.
 - Repositorio de terceros sin documentación: no se especifica la herramienta de cuantización, la calibración empleada ni los niveles incluidos, lo que impide auditar la fidelidad respecto al modelo base.
 - Riesgo de degradación por cuantización: las cuantizaciones agresivas de 4 bits o inferiores suelen afectar antes a tareas de razonamiento matemático, código y idiomas de bajos recursos que a la generación de texto general.
 - Riesgo de alucinación: inherente a los modelos de 4.000 millones de parámetros; en tareas factuales abiertas la tasa de error es mayor que en modelos de mayor tamaño.
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparativos para esta conversión concret
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bbcnhk/Qwen3-4B-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/bbcnhk/Qwen3-4B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Informe técnico de Qwen3 (arXiv:2505.09388): https://arxiv.org/abs/2505.09388
 - Artículo de YaRN, extensión de contexto (arXiv:2309.00071): https://arxiv.org/abs/2309.00071

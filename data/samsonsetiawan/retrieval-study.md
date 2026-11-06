@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`samsonsetiawan/retrieval-study` es un repositorio de HuggingFace que contiene una implementación reducida de la arquitectura Efficientformer orientada a tareas de retrieval (recuperación de información multimodal), publicada bajo licencia MIT por el usuario samsonsetiawan. No se trata de un modelo entrenado ni de una release con pesos listos para producción: la model card lo describe explícitamente como un punto de partida reproducible con un checkpoint de inicialización válido únicamente para pruebas de humo.
+`samsonsetiawan/retrieval-study` es un repositorio de Hugging Face que contiene una implementación reducida de la arquitectura Efficientformer orientada a tareas de retrieval (recuperación de información multimodal), publicada bajo licencia MIT por el usuario samsonsetiawan. No se trata de un modelo entrenado ni de una release con pesos listos para producción: la model card lo describe explícitamente como un punto de partida reproducible con un checkpoint de inicialización válido únicamente para pruebas de humo.
 
 El repositorio incluye el código de inferencia y entrenamiento (`inference.py`), un `config.json` con los parámetros de arquitectura, un `training_args.json` con la receta de experimento por defecto (optimizador RMSprop con schedule de warmup lineal) y un `model.safetensors` de inicialización. El recuento real de parámetros en safetensors es de 49.600, lo que lo sitúa en la categoría de modelos minúsculos, adecuados para experimentación y validación de pipelines más que para despliegue real.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| samsonsetiawan/retrieval-study | 49.600 | no disponible | sin benchmarks | MIT | HuggingFace |
+| samsonsetiawan/retrieval-study | 49.600 | no disponible | sin benchmarks | MIT | Hugging Face |
 | Efficientformer oficial (Snap) | no disponible | no disponible | benchmarks publicados en paper | licencia del proyecto original | repositorio oficial |
-| CLIP (OpenAI) | ~150M (ViT-B/32) | 77 tokens de texto | benchmarks públicos en retrieval | MIT | HuggingFace |
-| BLIP (Salesforce) | ~224M | no disponible | benchmarks públicos en retrieval | BSD-3 | HuggingFace |
+| CLIP (OpenAI) | ~150M (ViT-B/32) | 77 tokens de texto | benchmarks públicos en retrieval | MIT | Hugging Face |
+| BLIP (Salesforce) | ~224M | no disponible | benchmarks públicos en retrieval | BSD-3 | Hugging Face |
 
 La comparativa es orientativa: este repositorio no es un modelo entrenado y no compite en rendimiento con alternativas consolidadas de retrieval multimodal. Su valor está en la reproducibilidad del esqueleto, no en métricas.
 
@@ -82,7 +82,7 @@ La comparativa es orientativa: este repositorio no es un modelo entrenado y no c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/samsonsetiawan/retrieval-study
+- Hugging Face: https://huggingface.co/samsonsetiawan/retrieval-study
 - Repositorio de Efficientformer (referencia arquitectónica): no disponible en la información proporcionada
 - Paper de Efficientformer: no disponible en la información proporcionada
 - Dataset Flickr30k (sugerido para evaluación): no disponible en la información proporcionada

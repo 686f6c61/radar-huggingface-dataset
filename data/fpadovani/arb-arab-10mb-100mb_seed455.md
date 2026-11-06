@@ -19,7 +19,7 @@ Su relevancia es fundamentalmente de investigacion: es un punto de datos dentro 
 | Tipos de cuantizacion | no disponible (no se documentan cuantizaciones publicadas; al ser safetensors se puede cuantizar a posteriori con herramientas externas) |
 | Idiomas soportados | no declarado; el identificador del modelo base (`arb_arab`) sugiere arabe con escritura arabe, sin confirmacion en la model card |
 | Licencia | no disponible (la model card contiene un marcador de posicion `licence: license`) |
-| Formato de pesos | safetensors (tag de HuggingFace); libreria `transformers` |
+| Formato de pesos | safetensors (tag de Hugging Face); libreria `transformers` |
 
 ## Arquitectura y entrenamiento
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `fpadovani/arb-arab-10mb-100mb_seed455` | 39 M | no disponible | no disponible | HuggingFace, 0 descargas | Ajuste SFT con 100 MB, semilla 455 |
-| `goldfish-models/arb_arab_10mb` | no disponible | no disponible | no disponible | HuggingFace (modelo base) | Preentrenado con 10 MB; base de este ajuste |
-| Modelos de la familia Goldfish con otros volumenes (p. ej. 100 MB o 1 GB) | no disponible | no disponible | no disponible | HuggingFace (familia Goldfish) | Variantes del mismo estudio con distinto tamano de corpus |
+| `fpadovani/arb-arab-10mb-100mb_seed455` | 39 M | no disponible | no disponible | Hugging Face, 0 descargas | Ajuste SFT con 100 MB, semilla 455 |
+| `goldfish-models/arb_arab_10mb` | no disponible | no disponible | no disponible | Hugging Face (modelo base) | Preentrenado con 10 MB; base de este ajuste |
+| Modelos de la familia Goldfish con otros volumenes (p. ej. 100 MB o 1 GB) | no disponible | no disponible | no disponible | Hugging Face (familia Goldfish) | Variantes del mismo estudio con distinto tamano de corpus |
 | GPT-2 small | 124 M | 1024 tokens | MIT (original de OpenAI) | Amplia | Referencia de arquitectura; mayor tamano y contexto, entrenado con un corpus mucho mayor |
 
 No se dispone de datos de rendimiento comparativos entre estos modelos en la informacion proporcionada.
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/arb-arab-10mb-100mb_seed455
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/arb-arab-10mb-100mb_seed455
 - Modelo base: https://huggingface.co/goldfish-models/arb_arab_10mb
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new_tokenizers/runs/ahcmonr8
 - Repositorio de TRL: https://github.com/huggingface/trl

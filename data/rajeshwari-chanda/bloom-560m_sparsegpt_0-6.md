@@ -4,7 +4,7 @@
 
 `Rajeshwari-Chanda/bloom-560m_sparsegpt_0.6` es una version podada del modelo BLOOM-560m obtenida mediante SparseGPT, una tecnica de poda one-shot que elimina pesos sin necesidad de reentrenamiento. El sufijo `0.6` del identificador indica una tasa de esparsidad del 60 %, es decir, aproximadamente seis de cada diez pesos del transformer original quedan a cero. El repositorio tiene 559.214.592 parametros en formato safetensors, un tamano de 1,1 GB y esta etiquetado para `transformers` con pipeline de `text-generation`.
 
-El modelo lo publica el usuario Rajeshwari-Chanda en HuggingFace y no cuenta con descargas ni likes en el momento de redactar esta ficha. La model card es la plantilla automatica de HuggingFace sin rellenar: no declara licencia, idiomas, datos de entrenamiento, procedimiento de poda, hiperparametros ni resultados de evaluacion. Tampoco existe paper, demo ni repositorio de codigo asociado. Se trata, por tanto, de un artefacto de investigacion reproducible mas que de un modelo listo para produccion.
+El modelo lo publica el usuario Rajeshwari-Chanda en Hugging Face y no cuenta con descargas ni likes en el momento de redactar esta ficha. La model card es la plantilla automatica de Hugging Face sin rellenar: no declara licencia, idiomas, datos de entrenamiento, procedimiento de poda, hiperparametros ni resultados de evaluacion. Tampoco existe paper, demo ni repositorio de codigo asociado. Se trata, por tanto, de un artefacto de investigacion reproducible mas que de un modelo listo para produccion.
 
 Su relevancia es fundamentalmente experimental: sirve para estudiar como se degrada un modelo multilingue de 560M parametros cuando se le aplica poda no estructurada al 60 %, y para comparar metodologias de compresion sobre una arquitectura BLOOM bien documentada. No debe confundirse con un modelo afinado ni con una version optimizada para despliegue.
 
@@ -21,7 +21,7 @@ Su relevancia es fundamentalmente experimental: sirve para estudiar como se degr
 | Licencia | no disponible en la model card del repositorio; el modelo base BLOOM-560m se distribuye bajo BigScience BLOOM RAIL 1.0 |
 | Formato de pesos | safetensors (1,1 GB en el repositorio) |
 
-Nota: las filas marcadas como heredadas del modelo base proceden de la documentacion publica de BLOOM, no de la model card de este repositorio, que esta vacia. Los tags de HuggingFace incluyen `arxiv:1910.09700`, que corresponde al articulo del calculador de impacto ambiental de Lacoste et al. y aparece por la plantilla por defecto, no porque describa este modelo.
+Nota: las filas marcadas como heredadas del modelo base proceden de la documentacion publica de BLOOM, no de la model card de este repositorio, que esta vacia. Los tags de Hugging Face incluyen `arxiv:1910.09700`, que corresponde al articulo del calculador de impacto ambiental de Lacoste et al. y aparece por la plantilla por defecto, no porque describa este modelo.
 
 ## Arquitectura y entrenamiento
 
@@ -88,7 +88,7 @@ La comparacion con los modelos de la familia BLOOM es directa porque comparten t
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rajeshwari-Chanda/bloom-560m_sparsegpt_0.6
+- Modelo en Hugging Face: https://huggingface.co/Rajeshwari-Chanda/bloom-560m_sparsegpt_0.6
 - Modelo base: https://huggingface.co/bigscience/bloom-560m
 - Paper de SparseGPT (Frantar y Alistarh, 2023), metodo de poda referenciado en el nombre del checkpoint: https://arxiv.org/abs/2301.00774
 - Paper de BLOOM (Scao et al., 2022), arquitectura del modelo base: https://arxiv.org/abs/2211.05100

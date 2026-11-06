@@ -2,11 +2,11 @@
 
 ## Resumen
 
-medgemma-decide-4b es un ajuste fino (fine-tune) del modelo multimodal médico MedGemma 1.5 4B IT, publicado por el usuario Amaljith en HuggingFace. El modelo parte de `unsloth/medgemma-1.5-4b-it` y se ha entrenado con LoRA mediante Unsloth para una tarea muy concreta: producir **decisiones médicas tipadas y calibradas** (typed decisions), es decir, clasificar entradas clínicas en un conjunto predefinido de categorías con etiquetas y probabilidades asociadas, en lugar de generar texto libre. Según los tags del repositorio, el entrenamiento se ha realizado sobre el dataset `Amaljith/medical-typed-decisions` y el modelo se enmarca en el ecosistema CLEF/SystemOne.
+medgemma-decide-4b es un ajuste fino (fine-tune) del modelo multimodal médico MedGemma 1.5 4B IT, publicado por el usuario Amaljith en Hugging Face. El modelo parte de `unsloth/medgemma-1.5-4b-it` y se ha entrenado con LoRA mediante Unsloth para una tarea muy concreta: producir **decisiones médicas tipadas y calibradas** (typed decisions), es decir, clasificar entradas clínicas en un conjunto predefinido de categorías con etiquetas y probabilidades asociadas, en lugar de generar texto libre. Según los tags del repositorio, el entrenamiento se ha realizado sobre el dataset `Amaljith/medical-typed-decisions` y el modelo se enmarca en el ecosistema CLEF/SystemOne.
 
 El problema que aborda es el de convertir un modelo generativo médico de 4.300 millones de parámetros en un componente de decisión acotado y evaluable, algo relevante para pipelines clínicos donde se necesita una salida estructurada y auditable en lugar de una respuesta conversacional. La arquitectura subyacente es la de la familia Gemma 3 (`gemma3`), un transformer decoder-only con torre de visión que admite entradas image-text-to-text, por lo que el ajuste hereda capacidad multimodal además de la textual.
 
-Es relevante ahora por dos motivos: primero, porque demuestra el patrón de reutilizar modelos fundacionales médicos con licencia restringida para tareas de clasificación específicas; segundo, porque sus resultados declarados son modestos y heterogéneos (balanced accuracy entre 0,6254 y 0,9523 según la etiqueta), lo que lo convierte en un caso de estudio útil sobre la diferencia entre un modelo publicado y un modelo validado. El acceso está restringido (gated) y requiere aceptar las condiciones de la licencia Health AI Developer Foundations en HuggingFace.
+Es relevante ahora por dos motivos: primero, porque demuestra el patrón de reutilizar modelos fundacionales médicos con licencia restringida para tareas de clasificación específicas; segundo, porque sus resultados declarados son modestos y heterogéneos (balanced accuracy entre 0,6254 y 0,9523 según la etiqueta), lo que lo convierte en un caso de estudio útil sobre la diferencia entre un modelo publicado y un modelo validado. El acceso está restringido (gated) y requiere aceptar las condiciones de la licencia Health AI Developer Foundations en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -108,7 +108,7 @@ No se dispone de resultados de benchmarks comparables entre estos modelos en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Amaljith/medgemma-decide-4b
+- Modelo en Hugging Face: https://huggingface.co/Amaljith/medgemma-decide-4b
 - Modelo base: https://huggingface.co/unsloth/medgemma-1.5-4b-it
 - Dataset de entrenamiento declarado: https://huggingface.co/datasets/Amaljith/medical-typed-decisions
 - Repositorio de Unsloth (herramienta de ajuste fino empleada): https://github.com/unslothai/unsloth

@@ -80,7 +80,7 @@ No se dispone en la informacion proporcionada de resultados de otros detectores 
 
 | Modelo | Parametros | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| second.kitti.mmdet3d | 5,3 M | Nube LiDAR, 4 canales | Apache-2.0 | HuggingFace (torch-pointcloud) |
+| second.kitti.mmdet3d | 5,3 M | Nube LiDAR, 4 canales | Apache-2.0 | Hugging Face (torch-pointcloud) |
 | PointPillars (mmdetection3d) | no disponible | Nube LiDAR, pilares | Apache-2.0 | mmdetection3d |
 | CenterPoint (mmdetection3d) | no disponible | Nube LiDAR, voxels | Apache-2.0 | mmdetection3d |
 
@@ -100,7 +100,7 @@ No se han publicado en la informacion disponible cifras comparativas de rendimie
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/second.kitti.mmdet3d
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/second.kitti.mmdet3d
 - Paper SECOND: https://www.mdpi.com/1424-8220/18/10/3337
 - Repositorio de referencia mmdetection3d: https://github.com/open-mmlab/mmdetection3d
 - Libreria torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud

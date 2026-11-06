@@ -73,7 +73,7 @@ No disponible. Este modelo no pertenece a una categoria de modelos de lenguaje e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/malaiwah/glm-moe-dsa-tiny-random-q4_0-rtn-format
+- Modelo en Hugging Face: https://huggingface.co/malaiwah/glm-moe-dsa-tiny-random-q4_0-rtn-format
 - Modelo base BF16: https://huggingface.co/malaiwah/glm-moe-dsa-tiny-random-bf16
 - Coleccion de familias de cuantizacion: https://huggingface.co/collections/malaiwah/qfs-matched-weight-quantization-families-6a9f071d93dbd3dbf0a1e844
 - Dataset de raiz de fidelidad: https://huggingface.co/datasets/malaiwah/glm-moe-dsa-tiny-fidelity-root-v1

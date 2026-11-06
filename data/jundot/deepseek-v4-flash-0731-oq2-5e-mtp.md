@@ -93,7 +93,7 @@ No se dispone de contexto, rendimiento ni parametros activos del modelo base ni 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jundot/DeepSeek-V4-Flash-0731-oQ2.5e-mtp
+- Modelo en Hugging Face: https://huggingface.co/Jundot/DeepSeek-V4-Flash-0731-oQ2.5e-mtp
 - Variante oQ2.5e sin MTP: https://huggingface.co/Jundot/DeepSeek-V4-Flash-0731-oQ2.5e
 - Variante oQ4e-mtp: https://huggingface.co/Jundot/DeepSeek-V4-Flash-0731-oQ4e-mtp
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731

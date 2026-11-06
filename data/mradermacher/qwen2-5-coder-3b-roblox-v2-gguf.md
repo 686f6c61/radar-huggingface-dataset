@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen2.5-Coder-3B-Roblox-v2-GGUF es un conjunto de cuantizaciones en formato GGUF del modelo NoobifiedAIDept/Qwen2.5-Coder-3B-Roblox-v2, un ajuste fino especializado en Luau (el lenguaje de scripting de Roblox) construido sobre Qwen2.5-Coder-3B. Las cuantizaciones estaticas las ha generado mradermacher, un autor habitual de conversiones GGUF en HuggingFace, y cubren desde Q2_K hasta f16.
+Qwen2.5-Coder-3B-Roblox-v2-GGUF es un conjunto de cuantizaciones en formato GGUF del modelo NoobifiedAIDept/Qwen2.5-Coder-3B-Roblox-v2, un ajuste fino especializado en Luau (el lenguaje de scripting de Roblox) construido sobre Qwen2.5-Coder-3B. Las cuantizaciones estaticas las ha generado mradermacher, un autor habitual de conversiones GGUF en Hugging Face, y cubren desde Q2_K hasta f16.
 
 El interes practico del modelo esta en su tamano: con 3.085.938.688 parametros totales, es un modelo decoder-only tipo transformer que cabe holgadamente en GPUs de consumo e incluso en CPU con las cuantizaciones mas agresivas (Q4_K_M ocupa 2,0 GB). Esto lo hace util para flujos de autocompletado de codigo Luau, asistentes dentro de Roblox Studio y herramientas locales de generacion de scripts sin depender de APIs externas.
 

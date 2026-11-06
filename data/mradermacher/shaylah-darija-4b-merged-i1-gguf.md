@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Shaylah Darija 4B (merged) es un modelo conversacional de aproximadamente 4.205 millones de parametros especializado en dariya (arabe marroqui), desarrollado por el usuario laabidate y publicado en HuggingFace. La ficha que se presenta aqui corresponde a la version cuantizada en formato GGUF con imatrix (matriz de importancia) realizada por mradermacher, un cuantizador muy activo de la comunidad que genera versiones optimizadas de modelos populares para su ejecucion en hardware de consumo.
+Shaylah Darija 4B (merged) es un modelo conversacional de aproximadamente 4.205 millones de parametros especializado en dariya (arabe marroqui), desarrollado por el usuario laabidate y publicado en Hugging Face. La ficha que se presenta aqui corresponde a la version cuantizada en formato GGUF con imatrix (matriz de importancia) realizada por mradermacher, un cuantizador muy activo de la comunidad que genera versiones optimizadas de modelos populares para su ejecucion en hardware de consumo.
 
 El modelo aborda un problema concreto y con demanda real: la escasez de LLM capaces de conversar con naturalidad en dariya, una variedad del arabe hablada en Marruecos con fuerte componente oral y muy poco representada en los corpus de entrenamiento habituales. Ademas de conversacion general, el modelo incorpora el tag "folk-culture", lo que sugiere un enfoque tambien en la cultura popular marroqui. Al tratarse de un modelo de 4B parametros con licencia Apache 2.0, resulta adecuado para despliegues locales, chatbots ligeros y experimentacion en dispositivos modestos.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Formato | Idioma/Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| shaylah-darija-4b-merged (esta version) | 4,21B | GGUF (imatrix, 24 quants) | Dariya (arabe marroqui), conversacional | Apache 2.0 | HuggingFace, descarga libre |
-| jais-family (Inception/MBZUAI) | versiones de ~590M a 13B | safetensors | Arabe e ingles, generalista | Licencia propia (jais) | HuggingFace |
-| AceGPT (versiones 7B/13B) | 7B/13B | safetensors/GGUF comunitarios | Arabe, alineado culturalmente | Licencia propia (Llama-based) | HuggingFace |
+| shaylah-darija-4b-merged (esta version) | 4,21B | GGUF (imatrix, 24 quants) | Dariya (arabe marroqui), conversacional | Apache 2.0 | Hugging Face, descarga libre |
+| jais-family (Inception/MBZUAI) | versiones de ~590M a 13B | safetensors | Arabe e ingles, generalista | Licencia propia (jais) | Hugging Face |
+| AceGPT (versiones 7B/13B) | 7B/13B | safetensors/GGUF comunitarios | Arabe, alineado culturalmente | Licencia propia (Llama-based) | Hugging Face |
 
 Nota: la comparacion es orientativa; no existen en la informacion disponible benchmarks que permitan comparar rendimiento numerico entre estos modelos. Shaylah destaca por su tamano reducido, su especializacion en dariya (frente al arabe estandar de jais y AceGPT) y su licencia permisiva Apache 2.0.
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Kennethdot/false` es un submódulo publicado en HuggingFace por el usuario Kennethdot (Kenneth Dotse) con fecha de creación de agosto de 2026. Presenta un total de 83.013.174 parámetros y un tamaño de repositorio de 0,3 GB, con pesos en formato safetensors y etiquetado como compatible con la librería `transformers`. La model card es una plantilla automática generada por HuggingFace, sin información sustantiva sobre arquitectura, entrenamiento, licencia o capacidades.
+El modelo `Kennethdot/false` es un submódulo publicado en Hugging Face por el usuario Kennethdot (Kenneth Dotse) con fecha de creación de agosto de 2026. Presenta un total de 83.013.174 parámetros y un tamaño de repositorio de 0,3 GB, con pesos en formato safetensors y etiquetado como compatible con la librería `transformers`. La model card es una plantilla automática generada por Hugging Face, sin información sustantiva sobre arquitectura, entrenamiento, licencia o capacidades.
 
 El tag `vits` y la referencia al paper `arxiv:1910.09700` (Tacotron 2) sugieren que podría tratarse de un modelo de síntesis de voz (text-to-speech), aunque esta inferencia no está confirmada por ningún dato oficial del autor. El nombre del repositorio, `false`, resulta inusual y no aporta información sobre su propósito real. En el momento de la consulta, el modelo registra 0 descargas y 0 likes, lo que indica que es una publicación reciente y sin adopción conocida.
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 - VRAM estimada para inferencia: no disponible. Con 83M parámetros, un modelo de este tamaño cabría holgadamente en GPUs consumer de 8 GB o menos, pero al desconocer la arquitectura exacta (si es TTS, la inferencia puede requerir recursos adicionales para vocoder), no se puede dar una cifra fiable.
 - GPU recomendadas: no disponible. En principio, cualquier GPU moderna con al menos 4-6 GB de VRAM sería suficiente para un modelo de este tamaño, pero no hay confirmación.
 - Compatibilidad con GPUs consumer: probablemente sí, dado el tamaño reducido, pero sin datos de arquitectura no se puede asegurar.
-- Opciones de despliegue: la librería `transformers` sugiere compatibilidad con el ecosistema HuggingFace (pipeline, TGI), pero no se ha verificado. Para TTS, sería necesario un framework específico (p.ej., Coqui TTS) que no está indicado.
+- Opciones de despliegue: la librería `transformers` sugiere compatibilidad con el ecosistema Hugging Face (pipeline, TGI), pero no se ha verificado. Para TTS, sería necesario un framework específico (p.ej., Coqui TTS) que no está indicado.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -71,7 +71,7 @@ No se dispone de modelos comparables fiables. Al no conocer la arquitectura ni e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kennethdot/false
+- Modelo en Hugging Face: https://huggingface.co/Kennethdot/false
 - Perfil del autor: https://huggingface.co/Kennethdot
 - Datasets del autor: https://huggingface.co/Kennethdot/datasets
 - Paper referenciado (Tacotron 2): https://arxiv.org/abs/1910.09700

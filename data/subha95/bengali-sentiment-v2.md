@@ -2,7 +2,7 @@
 
 ## Resumen
 
-bengali-sentiment-v2 es un modelo de clasificación de texto obtenido mediante fine-tuning supervisado de google-bert/bert-base-multilingual-cased, el encoder BERT multilingüe de Google con 177.857.285 parámetros. Lo publica el usuario Subha95 en HuggingFace bajo licencia Apache 2.0 y está orientado a análisis de sentimiento en bengalí, aunque la model card no documenta explícitamente el conjunto de datos ni los idiomas de entrenamiento.
+bengali-sentiment-v2 es un modelo de clasificación de texto obtenido mediante fine-tuning supervisado de google-bert/bert-base-multilingual-cased, el encoder BERT multilingüe de Google con 177.857.285 parámetros. Lo publica el usuario Subha95 en Hugging Face bajo licencia Apache 2.0 y está orientado a análisis de sentimiento en bengalí, aunque la model card no documenta explícitamente el conjunto de datos ni los idiomas de entrenamiento.
 
 El modelo se generó automáticamente con el `Trainer` de Transformers y conserva la arquitectura original de BERT-base multilingüe: 12 capas de transformer, 768 dimensiones ocultas y 12 cabezas de atención, con una cabeza de clasificación adaptada a la tarea de sentimiento. El entrenamiento se realizó durante 3 épocas con un learning rate de 2e-05, batch size de 8 y el optimizador AdamW fused, alcanzando en la última época una pérdida de validación de 0.3462 y un F1 macro de 0.7174.
 
@@ -33,7 +33,7 @@ El entrenamiento se realizó con el `Trainer` de Transformers 5.21.0 sobre PyTor
 - Procesamiento de texto en bengalí: el nombre del modelo y la base multilingüe apuntan a este idioma como objetivo principal.
 - Soporte multilingüe potencial: al derivar de BERT-base multilingüe, puede procesar texto en cualquiera de los 104 idiomas de la base, aunque el rendimiento fuera del bengalí no está validado.
 - Embeddings de texto: la torre encoder puede usarse para extraer representaciones contextuales (tag `text-embeddings-inference`).
-- Compatibilidad con endpoints: etiquetado como `endpoints_compatible`, apto para despliegue en HuggingFace Inference Endpoints.
+- Compatibilidad con endpoints: etiquetado como `endpoints_compatible`, apto para despliegue en Hugging Face Inference Endpoints.
 - No soporta tool calling, function calling, agentes, razonamiento multi-paso, visión, audio ni modo thinking: es un clasificador discriminativo, no un modelo generativo.
 
 ## Casos de uso
@@ -68,15 +68,15 @@ No se han publicado resultados de benchmarks comparativos (MMLU, HumanEval, GSM8
 - VRAM estimada en FP16: aproximadamente 0,35 GB para pesos; en INT8, unos 0,18 GB.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM, incluidas NVIDIA T4, RTX 3060, RTX 4090, A100 o H100. El modelo es lo bastante pequeño para ejecutarse también en CPU con latencias aceptables para clasificación por lotes.
 - Cabe en GPU de consumo: sí, en cualquier GPU consumer moderna (GTX 1650 en adelante), e incluso en iGPU con suficiente memoria compartida.
-- Opciones de despliegue: transformers con PyTorch, HuggingFace Inference Endpoints (tag `endpoints_compatible`), Text Embeddings Inference (tag `text-embeddings-inference`), ONNX Runtime y TorchScript. llama.cpp, Ollama y vLLM no son aplicables de forma nativa a un encoder BERT de clasificación, aunque vLLM soporta algunos modelos BERT para embeddings.
+- Opciones de despliegue: transformers con PyTorch, Hugging Face Inference Endpoints (tag `endpoints_compatible`), Text Embeddings Inference (tag `text-embeddings-inference`), ONNX Runtime y TorchScript. llama.cpp, Ollama y vLLM no son aplicables de forma nativa a un encoder BERT de clasificación, aunque vLLM soporta algunos modelos BERT para embeddings.
 - Latencia y throughput: no disponibles en la información proporcionada. Por el tamaño, se espera un throughput alto en GPU (miles de secuencias por segundo en lotes) y decenas a cientos de secuencias por segundo en CPU, pero son estimaciones no verificadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Subha95/bengali-sentiment-v2 | 177,9 M | 512 tokens | Clasificación de sentimiento (bengalí) | Apache 2.0 | HuggingFace, 31 descargas |
-| google-bert/bert-base-multilingual-cased | 177,9 M | 512 tokens | Encoder multilingüe base (sin cabeza de tarea) | Apache 2.0 | HuggingFace, ampliamente usado |
+| Subha95/bengali-sentiment-v2 | 177,9 M | 512 tokens | Clasificación de sentimiento (bengalí) | Apache 2.0 | Hugging Face, 31 descargas |
+| google-bert/bert-base-multilingual-cased | 177,9 M | 512 tokens | Encoder multilingüe base (sin cabeza de tarea) | Apache 2.0 | Hugging Face, ampliamente usado |
 | Modelos de sentimiento en bengalí de terceros | No disponible | No disponible | Clasificación de sentimiento | Variable | No verificado en la información disponible |
 
 La comparación con alternativas específicas de sentimiento en bengalí no está disponible: no se han identificado en la información proporcionada otros modelos comparables con métricas publicadas. Frente a su base, la única diferencia es la cabeza de clasificación y el fine-tuning; el resto de la arquitectura y el tamaño son idénticos.
@@ -95,7 +95,7 @@ La comparación con alternativas específicas de sentimiento en bengalí no est�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Subha95/bengali-sentiment-v2
+- Modelo en Hugging Face: https://huggingface.co/Subha95/bengali-sentiment-v2
 - Modelo base: https://huggingface.co/google-bert/bert-base-multilingual-cased
 - Documentación de Transformers: https://huggingface.co/docs/transformers
 - Text Embeddings Inference: https://huggingface.co/docs/text-embeddings-inference

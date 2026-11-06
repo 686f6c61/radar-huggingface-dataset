@@ -105,7 +105,7 @@ La comparativa con arquitecturas alternativas de separación de voz (SepFormer d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ipsilondev/MossFormer2-SS-16K-ONNX
+- Modelo en Hugging Face: https://huggingface.co/ipsilondev/MossFormer2-SS-16K-ONNX
 - Checkpoint upstream: https://huggingface.co/alibabasglab/MossFormer2_SS_16K
 - Repositorio ClearerVoice-Studio: https://github.com/modelscope/ClearerVoice-Studio
 - No se han encontrado en la búsqueda web otros enlaces relevantes (papers, blogs, demos o repos adicionales) relacionados con este modelo.

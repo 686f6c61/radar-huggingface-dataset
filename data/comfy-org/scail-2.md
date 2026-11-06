@@ -72,5 +72,5 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- Repositorio de HuggingFace (reempaquetado): https://huggingface.co/Comfy-Org/SCAIL-2
+- Repositorio de Hugging Face (reempaquetado): https://huggingface.co/Comfy-Org/SCAIL-2
 - Repositorio original del modelo: https://huggingface.co/zai-org/SCAIL-2

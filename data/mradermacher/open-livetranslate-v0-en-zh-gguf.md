@@ -31,7 +31,7 @@ En cuanto a los datos de entrenamiento, la model card referencia el dataset spee
 
 - Traduccion automatica ingles-chino y chino-ingles, presumiblemente en escenarios de tiempo real o baja latencia.
 - Procesamiento multimodal: la presencia de ficheros mmproj (multi-modal supplement) indica capacidad de procesar entrada adicional a texto, probablemente audio o voz.
-- Generacion de texto conversacional (etiqueta "conversational" en HuggingFace).
+- Generacion de texto conversacional (etiqueta "conversational" en Hugging Face).
 - Compatibilidad con endpoints (etiqueta "endpoints_compatible"), lo que facilita su integracion en servicios de inferencia.
 - Soporte bilingue limitado a en y zh; no se documentan otros idiomas.
 - No se documenta soporte explicito de tool calling, function calling, agentes o razonamiento multi-paso.
@@ -95,7 +95,7 @@ La comparativa es orientativa: no se dispone de datos de rendimiento (BLEU, COME
 
 ## Enlaces
 
-- HuggingFace (cuantizacion GGUF): https://huggingface.co/mradermacher/Open-LiveTranslate-v0-En-Zh-GGUF
+- Hugging Face (cuantizacion GGUF): https://huggingface.co/mradermacher/Open-LiveTranslate-v0-En-Zh-GGUF
 - Modelo base original: https://huggingface.co/owaski/Open-LiveTranslate-v0-En-Zh
 - Dataset de entrenamiento: https://huggingface.co/datasets/speechcolab/gigaspeech
 - Pagina de descargas del autor: https://hf.tst.eu/model#Open-LiveTranslate-v0-En-Zh-GGUF

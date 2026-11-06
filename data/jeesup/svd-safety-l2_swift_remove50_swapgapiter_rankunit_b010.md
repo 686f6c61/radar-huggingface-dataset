@@ -72,11 +72,11 @@ La model card no incluye los valores de referencia de Llama-2-7b-chat sin compri
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| svd-safety-l2_swift_remove50_swapgapiter_rankunit_b010 | 6,74 mil millones (safetensors); fraccion declarada 0,4999 | 4.096 tokens | AdvBench ASR 0,1404; StrongREJECT ASR 0,1661; WildGuard sobrerrechazo 0,1480; WikiText-2 ppl 14,9396 | Llama 2 Community License | HuggingFace, 0 descargas |
-| meta-llama/Llama-2-7b-chat-hf (modelo base) | 6,74 mil millones | 4.096 tokens | no disponible en la informacion proporcionada | Llama 2 Community License | HuggingFace, ampliamente usado |
+| svd-safety-l2_swift_remove50_swapgapiter_rankunit_b010 | 6,74 mil millones (safetensors); fraccion declarada 0,4999 | 4.096 tokens | AdvBench ASR 0,1404; StrongREJECT ASR 0,1661; WildGuard sobrerrechazo 0,1480; WikiText-2 ppl 14,9396 | Llama 2 Community License | Hugging Face, 0 descargas |
+| meta-llama/Llama-2-7b-chat-hf (modelo base) | 6,74 mil millones | 4.096 tokens | no disponible en la informacion proporcionada | Llama 2 Community License | Hugging Face, ampliamente usado |
 | Otras celdas de la rejilla del mismo autor | no disponible | 4.096 tokens por herencia | no disponible | Llama 2 Community License | no disponible en esta busqueda |
-| Mistral-7B-Instruct-v0.2 (referencia de categoria) | 7,24 mil millones | 32.768 tokens | no comparable con los datos disponibles | Apache 2.0 | HuggingFace |
-| Llama-3-8B-Instruct (referencia de categoria) | 8,03 mil millones | 8.192 tokens | no comparable con los datos disponibles | Meta Llama 3 Community License | HuggingFace |
+| Mistral-7B-Instruct-v0.2 (referencia de categoria) | 7,24 mil millones | 32.768 tokens | no comparable con los datos disponibles | Apache 2.0 | Hugging Face |
+| Llama-3-8B-Instruct (referencia de categoria) | 8,03 mil millones | 8.192 tokens | no comparable con los datos disponibles | Meta Llama 3 Community License | Hugging Face |
 
 El checkpoint no es directamente comparable en calidad de asistente con ninguna de las alternativas de la tabla, porque su proposito es medir el dano de seguridad inducido por compresion, no maximizar utilidad.
 
@@ -97,7 +97,7 @@ El checkpoint no es directamente comparable en calidad de asistente con ninguna 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_swift_remove50_swapgapiter_rankunit_b010
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_swift_remove50_swapgapiter_rankunit_b010
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Licencia Llama 2 (incluida en el repositorio): `LICENSE.txt` y `USE_POLICY.md`
 - Paper de SVD-LLM, HarmBench, StrongREJECT y WildGuard: no disponible en los resultados de busqueda proporcionados

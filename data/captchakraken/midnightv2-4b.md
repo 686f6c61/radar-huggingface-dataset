@@ -100,7 +100,7 @@ La comparación directa entre MidnightV2-4B y TwilightV2-2B está limitada porqu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CaptchaKraken/MidnightV2-4B
+- Modelo en Hugging Face: https://huggingface.co/CaptchaKraken/MidnightV2-4B
 - Adaptador LoRA sin fusionar: https://huggingface.co/CaptchaKraken/MidnightV2-4B-LoRA
 - Builds GGUF para llama.cpp: https://huggingface.co/CaptchaKraken/MidnightV2-4B-GGUF
 - Variante 2B: https://huggingface.co/CaptchaKraken/TwilightV2-2B

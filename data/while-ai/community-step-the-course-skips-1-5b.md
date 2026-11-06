@@ -72,10 +72,10 @@ Adicionalmente, la metrica pass^4 paso de 0,23 a 0,57 en la semilla 0 y de 0,15 
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| while-ai/community-step-the-course-skips-1.5b | 1,5B (base) + LoRA r=16 | No disponible (heredado del base) | Adaptador safetensors | Apache-2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,5B | No disponible en esta ficha | safetensors | Apache-2.0 (segun su model card) | HuggingFace, ampliamente distribuido |
-| Adaptadores LoRA comunitarios sobre modelos de ~1,5B | ~1,5B (base) + LoRA | Depende del base | Adaptador safetensors | Habitualmente la del base | HuggingFace |
-| Modelos de agente de ~1-3B (por ejemplo variantes de Llama 3.2 1B o Qwen2.5 3B) | 1-3B | Depende del modelo | safetensors, GGUF | Varía segun familia | HuggingFace, Ollama |
+| while-ai/community-step-the-course-skips-1.5b | 1,5B (base) + LoRA r=16 | No disponible (heredado del base) | Adaptador safetensors | Apache-2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,5B | No disponible en esta ficha | safetensors | Apache-2.0 (segun su model card) | Hugging Face, ampliamente distribuido |
+| Adaptadores LoRA comunitarios sobre modelos de ~1,5B | ~1,5B (base) + LoRA | Depende del base | Adaptador safetensors | Habitualmente la del base | Hugging Face |
+| Modelos de agente de ~1-3B (por ejemplo variantes de Llama 3.2 1B o Qwen2.5 3B) | 1-3B | Depende del modelo | safetensors, GGUF | Varía segun familia | Hugging Face, Ollama |
 
 No se dispone de datos de rendimiento comparables entre estas alternativas en la informacion proporcionada, por lo que la comparativa se limita a parametros, formato, licencia y disponibilidad.
 
@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento comparables entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/while-ai/community-step-the-course-skips-1.5b
+- Modelo en Hugging Face: https://huggingface.co/while-ai/community-step-the-course-skips-1.5b
 - Receta en GitHub: https://github.com/whilehq/whileai-sdk/tree/main/recipes/community/the-step-the-course-skips
 - Coleccion "Course and community runs": https://huggingface.co/collections/while-ai/course-and-community-runs-6ab271de189fd0c363cfab92
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct

@@ -82,7 +82,7 @@ La comparativa se limita a los datos de la model card; no se dispone de especifi
 ## Limitaciones y advertencias
 
 - Solo soporta ingles; no hay capacidades multilingues documentadas.
-- El modelo se distribuye con 0 descargas y 0 likes en HuggingFace en el momento de la consulta, por lo que no hay validacion independiente de la comunidad.
+- El modelo se distribuye con 0 descargas y 0 likes en Hugging Face en el momento de la consulta, por lo que no hay validacion independiente de la comunidad.
 - Los benchmarks proceden exclusivamente del autor; no se han replicado de forma externa.
 - La fundamentacion baja del 66% del base al 61%, lo que indica una perdida leve de capacidad respecto al checkpoint original.
 - No se documentan sesgos conocidos, pero al estar entrenado solo en ingles y sobre conversaciones compuestas, puede presentar sesgos culturales y de dominio no evaluados.
@@ -95,7 +95,7 @@ La comparativa se limita a los datos de la model card; no se dispone de especifi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/openmartdev/awaken-full-duplex
+- Modelo en Hugging Face: https://huggingface.co/openmartdev/awaken-full-duplex
 - Modelo base: https://huggingface.co/FunAudioLLM/Fun-Audio-Chat-8B
 - Codec de voz: https://huggingface.co/FunAudioLLM/Fun-CosyVoice3-0.5B-2512
 - Repositorio de codigo: https://github.com/OpenmartAI/awake-audio-chat

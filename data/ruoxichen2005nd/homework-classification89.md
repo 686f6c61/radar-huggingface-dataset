@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ruoxichen2005nd/homework-classification89` es una implementación de referencia de la arquitectura BeiT (Bidirectional Encoder representation from Image Transformers) configurada para tareas de clasificación en una escala "tiny". Lo publica el usuario `ruoxichen2005nd` en HuggingFace y no se presenta como un modelo entrenado, sino como un punto de partida reproducible para pruebas de humo (smoke tests) e inicialización de experimentos. El propio autor indica de forma explícita que no reclama ninguna puntuación de benchmark.
+`ruoxichen2005nd/homework-classification89` es una implementación de referencia de la arquitectura BeiT (Bidirectional Encoder representation from Image Transformers) configurada para tareas de clasificación en una escala "tiny". Lo publica el usuario `ruoxichen2005nd` en Hugging Face y no se presenta como un modelo entrenado, sino como un punto de partida reproducible para pruebas de humo (smoke tests) e inicialización de experimentos. El propio autor indica de forma explícita que no reclama ninguna puntuación de benchmark.
 
 El artefacto tiene un tamaño muy reducido: 49.600 parámetros totales según el fichero `model.safetensors`, lo que lo sitúa varios órdenes de magnitud por debajo de las variantes BeiT y ViT publicadas habitualmente. El repositorio incluye un script `inference.py` con un ejemplo ejecutable y los ficheros de configuración (`config.json`, `training_args.json`) que documentan la receta por defecto.
 
@@ -27,7 +27,7 @@ Su relevancia es limitada y de carácter pedagógico o de ingeniería: sirve par
 | Normalizacion | instancenorm |
 | Optimizador por defecto | SGD |
 | Planificador por defecto | OneCycle |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
 | Tamano del repositorio | 0,0 GB |
 
@@ -76,10 +76,10 @@ La comparación directa no es significativa porque este repositorio contiene un 
 
 | Modelo | Parametros (aprox.) | Tipo | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| homework-classification89 | 49.600 | BeiT tiny (clasificación) | No | MIT | HuggingFace |
-| BeiT-base (referencia de la familia) | ~86 M | BeiT encoder | Si | MIT | HuggingFace |
-| ViT-base (referencia) | ~86 M | Vision transformer | Si | Apache 2.0 | HuggingFace |
-| DeiT-tiny (referencia pequeña) | ~5,7 M | Vision transformer | Si | Apache 2.0 | HuggingFace |
+| homework-classification89 | 49.600 | BeiT tiny (clasificación) | No | MIT | Hugging Face |
+| BeiT-base (referencia de la familia) | ~86 M | BeiT encoder | Si | MIT | Hugging Face |
+| ViT-base (referencia) | ~86 M | Vision transformer | Si | Apache 2.0 | Hugging Face |
+| DeiT-tiny (referencia pequeña) | ~5,7 M | Vision transformer | Si | Apache 2.0 | Hugging Face |
 
 Las cifras de las alternativas proceden de sus especificaciones públicas habituales y pueden variar según la variante exacta. Este modelo no es comparable en capacidad ni en rendimiento con ninguna de ellas al carecer de entrenamiento.
 
@@ -96,7 +96,7 @@ Las cifras de las alternativas proceden de sus especificaciones públicas habitu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ruoxichen2005nd/homework-classification89
+- Hugging Face: https://huggingface.co/ruoxichen2005nd/homework-classification89
 - Ficheros del repositorio: `inference.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper de referencia de BeiT: no disponible en la información proporcionada
 - Repositorios, demos o blogs adicionales: no se han encontrado enlaces relevantes en la búsqueda web (los resultados devueltos no guardan relación con el modelo)

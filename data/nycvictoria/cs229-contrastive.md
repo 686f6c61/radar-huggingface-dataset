@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nycvictoria/cs229-contrastive` es un repositorio publicado en HuggingFace que contiene una implementación propia y reducida de una arquitectura EfficientFormer orientada a aprendizaje contrastivo, acompañada de un `config.json`, un `training_args.json` y un checkpoint de inicialización en formato safetensors. El autor es el usuario `nycvictoria` y todo el material se distribuye bajo licencia Apache 2.0. No es un modelo entrenado ni una release de referencia: la propia model card indica explícitamente que el checkpoint sirve para pruebas de humo (*smoke tests*) y que no se reclama ninguna métrica de benchmark.
+`nycvictoria/cs229-contrastive` es un repositorio publicado en Hugging Face que contiene una implementación propia y reducida de una arquitectura EfficientFormer orientada a aprendizaje contrastivo, acompañada de un `config.json`, un `training_args.json` y un checkpoint de inicialización en formato safetensors. El autor es el usuario `nycvictoria` y todo el material se distribuye bajo licencia Apache 2.0. No es un modelo entrenado ni una release de referencia: la propia model card indica explícitamente que el checkpoint sirve para pruebas de humo (*smoke tests*) y que no se reclama ninguna métrica de benchmark.
 
 El dato más relevante para quien evalúe el repositorio es su tamaño real: 49.600 parámetros totales según el fichero safetensors, es decir, aproximadamente 0,05 millones de parámetros. Convive con una etiqueta de escala "large" en la configuración del autor, lo que constituye una discrepancia notable y sugiere que esa etiqueta describe la variante nominal de la plantilla de código, no el modelo materializado en el repositorio. El repositorio ocupa 0,0 GB y acumula cero descargas y cero "likes" en el momento de redactar esta ficha.
 
@@ -65,7 +65,7 @@ No se dispone de datos verificados de modelos comparables en la información pro
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| nycvictoria/cs229-contrastive | 49.600 | No disponible | Apache 2.0 | HuggingFace (0 descargas) |
+| nycvictoria/cs229-contrastive | 49.600 | No disponible | Apache 2.0 | Hugging Face (0 descargas) |
 | EfficientFormer (original, Snap Research) | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible |
 | EfficientFormerV2 | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible |
 
@@ -82,6 +82,6 @@ No se dispone de datos verificados de modelos comparables en la información pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nycvictoria/cs229-contrastive
+- Modelo en Hugging Face: https://huggingface.co/nycvictoria/cs229-contrastive
 - Búsqueda web: no se han encontrado enlaces relevantes al modelo, al autor ni a la arquitectura en los resultados disponibles; las entradas devueltas corresponden a un servicio escolar sin relación con el repositorio.
 - Paper, blog, repositorio o demo adicionales: no disponibles.

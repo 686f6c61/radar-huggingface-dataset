@@ -88,10 +88,10 @@ No se han encontrado modelos comparables específicos para transliteración asam
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/aaiiaxom/indicxlit-roman-to-assamese-onnx-int8
+- Repositorio Hugging Face: https://huggingface.co/aaiiaxom/indicxlit-roman-to-assamese-onnx-int8
 - Repositorio de conversión y cliente web: https://github.com/aaiiaxomi/indicxlit-onnx-web
 - Código original de IndicXlit: https://github.com/AI4Bharat/IndicXlit
-- Modelo original en HuggingFace: https://huggingface.co/ai4bharat/IndicXlit
+- Modelo original en Hugging Face: https://huggingface.co/ai4bharat/IndicXlit
 - Paper de IndicXlit: https://arxiv.org/abs/2205.03018
 - Página del modelo en AI4Bharat: https://ai4bharat.iitm.ac.in/areas/model/XLIT/IndicXlit/
 - Dataset Aksharantar: https://huggingface.co/datasets/ai4bharat/Aksharantar

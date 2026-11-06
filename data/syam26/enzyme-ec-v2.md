@@ -89,7 +89,7 @@ Rendimiento de ejecución: 304 s para 11.367 entradas con 2 hilos en un Apple M4
 
 | Modelo | Enfoque | Salida EC | Contexto de ejecución | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Enzyme-ec-v2 (este) | Homología DIAMOND + perfiles + ESM-2 35M + LambdaRank | L1-L4 completo | CPU, offline, 2 vCPU / 16 GB / 10 min | CC BY 4.0 | HuggingFace (0 descargas) |
+| Enzyme-ec-v2 (este) | Homología DIAMOND + perfiles + ESM-2 35M + LambdaRank | L1-L4 completo | CPU, offline, 2 vCPU / 16 GB / 10 min | CC BY 4.0 | Hugging Face (0 descargas) |
 | CLEAN | Proyección contrastiva supervisada | Predicción EC | No disponible en la información | No disponible | Referencia científica (Science 2023) |
 | HIT-EC | Transformer jerárquico interpretable | L1-L4 | No disponible en la información | No disponible | Referencia científica (Nature Communications 2026) |
 | GraphEC | Aprendizaje geométrico sobre estructuras ESMFold | Predicción EC | No disponible en la información | No disponible | Referencia científica (Nature Communications 2024) |
@@ -110,7 +110,7 @@ No se dispone de datos de benchmarks comparables entre estos sistemas en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Syam26/enzyme-ec-v2
+- Hugging Face: https://huggingface.co/Syam26/enzyme-ec-v2
 - CLEAN (Science 2023): Yu, Cui, Li, Luo, Jiang, Zhao. *Enzyme function prediction using contrastive learning*.
 - HIT-EC (Nature Communications 2026): Dumontet, Han, Lee, Oh, Kang. *Trustworthy prediction of enzyme commission numbers using a hierarchical interpretable transformer*.
 - GraphEC (Nature Communications 2024): Song, Yuan, Chen, Zeng, Zhao, Yang. *Accurately predicting enzyme functions through geometric graph learning on ESMFold-predicted structures*.

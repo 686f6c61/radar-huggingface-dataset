@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento comparado con modelos de otras familias de
 
 ## Enlaces
 
-- Repositorio HuggingFace de las cuantizaciones i1: https://huggingface.co/mradermacher/AfriqueQwen3.5-9B-50Langs-Instruct-v1-i1-GGUF
+- Repositorio Hugging Face de las cuantizaciones i1: https://huggingface.co/mradermacher/AfriqueQwen3.5-9B-50Langs-Instruct-v1-i1-GGUF
 - Repositorio de cuantizaciones estaticas: https://huggingface.co/mradermacher/AfriqueQwen3.5-9B-50Langs-Instruct-v1-GGUF
 - Modelo base: https://huggingface.co/McGill-NLP/AfriqueQwen3.5-9B-50Langs-Instruct-v1
 - Pagina de resumen y descargas del cuantizador: https://hf.tst.eu/model#AfriqueQwen3.5-9B-50Langs-Instruct-v1-i1-GGUF

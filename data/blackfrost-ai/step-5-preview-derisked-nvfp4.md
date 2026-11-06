@@ -4,7 +4,7 @@
 
 STEP-5-PREVIEW-DERISKED-NVFP4 es una variante cuantizada y modificada de un modelo multimodal de tipo image-text-to-text, publicada por el usuario Blackfrost-AI y derivada del modelo base TypeSafeAI/Step-5-Preview-BF16. La informacion disponible indica que se trata de un modelo basado en arquitectura de mezcla de expertos dispersa (sparse MoE) con capacidades multimodales, asociado a la familia Step (etiqueta stepfun / step-5), y reconstruido en formato NVFP4, el esquema de cuantizacion de 4 bits en punto flotante disenado para la arquitectura NVIDIA Blackwell.
 
-El repositorio se presenta explicitamente como material de investigacion en seguridad (etiquetas research, security-research, not-for-all-audiences y derisked), lo que sugiere que se ha manipulado o reducido algun componente de seguridad respecto al modelo base. El acceso esta restringido mediante gating en HuggingFace, requiere aceptar condiciones y no se proporcionan datos de parametros, contexto, composicion del dataset ni resultados de evaluacion en la informacion disponible.
+El repositorio se presenta explicitamente como material de investigacion en seguridad (etiquetas research, security-research, not-for-all-audiences y derisked), lo que sugiere que se ha manipulado o reducido algun componente de seguridad respecto al modelo base. El acceso esta restringido mediante gating en Hugging Face, requiere aceptar condiciones y no se proporcionan datos de parametros, contexto, composicion del dataset ni resultados de evaluacion en la informacion disponible.
 
 Su relevancia actual radica en dos factores: por un lado, explora la viabilidad de desplegar modelos MoE multimodales de gran tamano en precision de 4 bits sobre hardware Blackwell mediante NVFP4; por otro, se publica como artefacto de investigacion ofensiva/defensiva, lo que obliga a evaluar con cautela su uso en produccion. Esta ficha se limita estrictamente a los datos proporcionados y marca como "no disponible" todo aquello que no puede confirmarse.
 
@@ -18,7 +18,7 @@ Su relevancia actual radica en dos factores: por un lado, explora la viabilidad 
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | NVFP4 (4 bits, punto flotante, formato NVIDIA Blackwell); modelo base en BF16 |
 | Idiomas soportados | Ingles (en), chino (zh) |
-| Licencia | other (acceso restringido mediante gating en HuggingFace) |
+| Licencia | other (acceso restringido mediante gating en Hugging Face) |
 | Formato de pesos | Libreria transformers; formato de fichero no confirmado en la informacion disponible |
 | Modelo base | TypeSafeAI/Step-5-Preview-BF16 |
 | Tamano del repositorio | 0.0 GB segun los metadatos de la ficha |
@@ -85,6 +85,6 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- HuggingFace (acceso restringido): https://huggingface.co/Blackfrost-AI/STEP-5-PREVIEW-DERISKED-NVFP4
+- Hugging Face (acceso restringido): https://huggingface.co/Blackfrost-AI/STEP-5-PREVIEW-DERISKED-NVFP4
 - Modelo base: TypeSafeAI/Step-5-Preview-BF16 (referenciado en los metadatos; enlace directo no proporcionado)
 - Paper, blog, repositorio o demo adicionales: no disponibles en la informacion proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`litert-community/embeddinggemma-2-medical-lora-litertlm` es un artefacto educativo publicado por la comunidad LiteRT en HuggingFace. Consiste en un ajuste fino mediante LoRA del modelo de embeddings EmbeddingGemma 2 sobre un pequeno conjunto de datos sintetico de recuperacion (retrieval) de ambito medico, posteriormente convertido al formato `.litertlm` para su ejecucion con el runtime LiteRT-LM de Google. No se trata de un modelo generativo de proposito general, sino de un modelo de representaciones vectoriales (embeddings) destinado a tareas de busqueda semantica y recuperacion de informacion.
+`litert-community/embeddinggemma-2-medical-lora-litertlm` es un artefacto educativo publicado por la comunidad LiteRT en Hugging Face. Consiste en un ajuste fino mediante LoRA del modelo de embeddings EmbeddingGemma 2 sobre un pequeno conjunto de datos sintetico de recuperacion (retrieval) de ambito medico, posteriormente convertido al formato `.litertlm` para su ejecucion con el runtime LiteRT-LM de Google. No se trata de un modelo generativo de proposito general, sino de un modelo de representaciones vectoriales (embeddings) destinado a tareas de busqueda semantica y recuperacion de informacion.
 
 El modelo se publica explicitamente como una demostracion tecnica creada para acompanar un tutorial en Colab sobre ajuste fino con LoRA y conversion a `.litertlm`. El propio autor advierte que se distribuye "tal cual", sin garantia, y que no es un benchmark oficial ni un modelo listo para produccion. Ademas, incluye un aviso no clinico: no debe usarse para diagnostico, toma de decisiones medicas ni atencion a pacientes.
 
@@ -84,5 +84,5 @@ No se dispone de datos suficientes en la informacion proporcionada para establec
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/litert-community/embeddinggemma-2-medical-lora-litertlm
+- Hugging Face: https://huggingface.co/litert-community/embeddinggemma-2-medical-lora-litertlm
 - No se han encontrado en la informacion proporcionada enlaces adicionales a papers, blogs, repositorios o demos.

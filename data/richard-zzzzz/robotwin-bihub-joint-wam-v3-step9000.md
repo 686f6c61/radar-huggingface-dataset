@@ -72,6 +72,6 @@ No disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Richard-ZZZZZ/robotwin-bihub-joint-wam-v3-step9000
+- Hugging Face: https://huggingface.co/Richard-ZZZZZ/robotwin-bihub-joint-wam-v3-step9000
 - RoboTwin 2.0: https://robotwin-platform.github.io/
 - Repo oficial de RoboTwin: https://github.com/robotwin-Platform/robotwin

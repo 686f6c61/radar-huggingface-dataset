@@ -80,8 +80,8 @@ La model card indica que el checkpoint NVFP4 iguala el comportamiento del checkp
 
 | Modelo | Parametros | Contexto | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mistral Large 4 NVFP4 (este) | 1T total / 49B activos | 1M | Texto + imagen | Mistral Ecosystem Open-Weight License (MIT modificada) | Pesos abiertos en HuggingFace |
-| Mistral Large 4 FP8 (base) | 1T total / 49B activos | 1M | Texto + imagen | Mistral Ecosystem Open-Weight License | Pesos abiertos en HuggingFace |
+| Mistral Large 4 NVFP4 (este) | 1T total / 49B activos | 1M | Texto + imagen | Mistral Ecosystem Open-Weight License (MIT modificada) | Pesos abiertos en Hugging Face |
+| Mistral Large 4 FP8 (base) | 1T total / 49B activos | 1M | Texto + imagen | Mistral Ecosystem Open-Weight License | Pesos abiertos en Hugging Face |
 | Modelos frontera abiertos comparables (DeepSeek-V3, Qwen3 grandes) | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 
 La comparativa detallada con otros modelos frontera no esta disponible en la informacion proporcionada; la unica referencia directa publicada es la comparacion interna NVFP4 frente a FP8 del propio modelo.

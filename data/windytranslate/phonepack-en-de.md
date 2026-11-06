@@ -74,9 +74,9 @@ No se han publicado en la informacion disponible resultados de MMLU, HumanEval, 
 
 | Modelo | Parametros | Contexto | Idiomas | Calidad medida | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| WindyTranslate/phonepack-en-de | no disponible | no disponible | en-de | chrF++ 60,72 / spBLEU 42,45 (FLORES-200 devtest, beam 4) | ONNX int8, 80,1 MB | CC-BY-4.0 | HuggingFace, 0 descargas |
-| WindyTranslate/translate-en-de (base) | no disponible | no disponible | en-de | no disponible en la informacion proporcionada | no disponible (pesos originales del modelo base) | CC-BY-4.0 (heredada) | HuggingFace |
-| Helsinki-NLP/opus-mt-en-de (upstream) | no disponible en la informacion proporcionada | no disponible | en-de | no disponible en la informacion proporcionada | pesos MarianMT/Transformers | CC-BY-4.0 | HuggingFace, ampliamente usado |
+| WindyTranslate/phonepack-en-de | no disponible | no disponible | en-de | chrF++ 60,72 / spBLEU 42,45 (FLORES-200 devtest, beam 4) | ONNX int8, 80,1 MB | CC-BY-4.0 | Hugging Face, 0 descargas |
+| WindyTranslate/translate-en-de (base) | no disponible | no disponible | en-de | no disponible en la informacion proporcionada | no disponible (pesos originales del modelo base) | CC-BY-4.0 (heredada) | Hugging Face |
+| Helsinki-NLP/opus-mt-en-de (upstream) | no disponible en la informacion proporcionada | no disponible | en-de | no disponible en la informacion proporcionada | pesos MarianMT/Transformers | CC-BY-4.0 | Hugging Face, ampliamente usado |
 | CTranslate2 int8 de translate-en-de | no disponible | no disponible | en-de | chrF++ 60,95 (FLORES-200 devtest, beam 4) | CTranslate2 int8 | CC-BY-4.0 | referenciado por el autor, no enlazado |
 
 La comparacion con modelos multimodelo tipo NLLB o M2M-100 no se puede sostener con datos: la informacion proporcionada no incluye sus resultados ni sus especificaciones, y la licencia y el objetivo de despliegue (80 MB en dispositivo) son distintos.
@@ -97,7 +97,7 @@ La comparacion con modelos multimodelo tipo NLLB o M2M-100 no se puede sostener 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WindyTranslate/phonepack-en-de
+- Modelo en Hugging Face: https://huggingface.co/WindyTranslate/phonepack-en-de
 - Modelo base: https://huggingface.co/WindyTranslate/translate-en-de
 - Modelo upstream OPUS-MT: https://huggingface.co/Helsinki-NLP/opus-mt-en-de
 - Licencia CC-BY-4.0: https://creativecommons.org/licenses/by/4.0/

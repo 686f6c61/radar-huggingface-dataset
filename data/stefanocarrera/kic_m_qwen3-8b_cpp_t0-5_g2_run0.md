@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`stefanocarrera/kic_M_Qwen3-8B_cpp_t0.5_g2_run0` es un ajuste fino (fine-tune) del modelo base Qwen3-8B, desarrollado por el usuario stefanocarrera y publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un modelo derivado de `unsloth/Qwen3-8B-Base-unsloth-bnb-4bit`, es decir, una versión del Qwen3-8B base cuantizada a 4 bits y preparada para entrenamiento rápido con la librería Unsloth. El modelo resultante se distribuye en formato safetensors y es compatible con transformers y text-generation-inference.
+`stefanocarrera/kic_M_Qwen3-8B_cpp_t0.5_g2_run0` es un ajuste fino (fine-tune) del modelo base Qwen3-8B, desarrollado por el usuario stefanocarrera y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un modelo derivado de `unsloth/Qwen3-8B-Base-unsloth-bnb-4bit`, es decir, una versión del Qwen3-8B base cuantizada a 4 bits y preparada para entrenamiento rápido con la librería Unsloth. El modelo resultante se distribuye en formato safetensors y es compatible con transformers y text-generation-inference.
 
 El problema que resuelve es acotado: se trata de un experimento de ajuste fino sobre Qwen3-8B, presumiblemente orientado a una tarea o dominio concreto (el sufijo `kic` y `cpp` en el nombre sugiere alguna relación con C++ o con un pipeline específico de evaluación), aunque la model card no documenta el dataset ni el objetivo del entrenamiento. Por tanto, su relevancia práctica es limitada fuera del contexto del autor: no hay benchmarks publicados, no hay descripción de datos de entrenamiento y el número de descargas es cero en el momento de la consulta.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| stefanocarrera/kic_M_Qwen3-8B_cpp_t0.5_g2_run0 | 8B | no disponible | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3-8B (base original) | 8B | 32.768 tokens | Apache 2.0 | HuggingFace, ampliamente usado |
-| unsloth/Qwen3-8B-Base-unsloth-bnb-4bit | 8B (4 bits) | 32.768 tokens | Apache 2.0 | HuggingFace, checkpoint de entrenamiento |
-| Llama-3.1-8B | 8B | 128.000 tokens | Llama 3.1 Community License | HuggingFace, muy extendido |
+| stefanocarrera/kic_M_Qwen3-8B_cpp_t0.5_g2_run0 | 8B | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3-8B (base original) | 8B | 32.768 tokens | Apache 2.0 | Hugging Face, ampliamente usado |
+| unsloth/Qwen3-8B-Base-unsloth-bnb-4bit | 8B (4 bits) | 32.768 tokens | Apache 2.0 | Hugging Face, checkpoint de entrenamiento |
+| Llama-3.1-8B | 8B | 128.000 tokens | Llama 3.1 Community License | Hugging Face, muy extendido |
 
 El fine-tune no aporta mejoras verificables frente al base Qwen3-8B ni frente a Llama-3.1-8B; su interés es experimental y su licencia Apache 2.0 es más permisiva que la de Llama 3.1 para uso comercial.
 
@@ -82,7 +82,7 @@ El fine-tune no aporta mejoras verificables frente al base Qwen3-8B ni frente a 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/stefanocarrera/kic_M_Qwen3-8B_cpp_t0.5_g2_run0
+- Hugging Face: https://huggingface.co/stefanocarrera/kic_M_Qwen3-8B_cpp_t0.5_g2_run0
 - Modelo base: https://huggingface.co/unsloth/Qwen3-8B-Base-unsloth-bnb-4bit
 - Qwen3-8B original: https://huggingface.co/Qwen/Qwen3-8B
 - Unsloth: https://github.com/unslothai/unsloth

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`romainlefebvre/project-retrieval` es un repositorio experimental publicado en HuggingFace por el usuario romainlefebvre que contiene una implementación funcional de un *Tiny Transformer* orientado a tareas de *retrieval* (recuperación de información). Se distribuye bajo licencia MIT e incluye código transparente, ficheros de configuración y un *checkpoint* de inicialización. El propio autor indica explícitamente que no se reclama ninguna métrica de rendimiento y que el modelo no ha sido entrenado ni auditado.
+`romainlefebvre/project-retrieval` es un repositorio experimental publicado en Hugging Face por el usuario romainlefebvre que contiene una implementación funcional de un *Tiny Transformer* orientado a tareas de *retrieval* (recuperación de información). Se distribuye bajo licencia MIT e incluye código transparente, ficheros de configuración y un *checkpoint* de inicialización. El propio autor indica explícitamente que no se reclama ninguna métrica de rendimiento y que el modelo no ha sido entrenado ni auditado.
 
 El peso publicado es extremadamente pequeno: el fichero `model.safetensors` contiene 24.832 parametros en total, lo que lo situa mas como un andamiaje de pruebas (`smoke tests`) que como un modelo utilizable en produccion. La configuracion declarada usa atencion *multi query*, fusion *bilinear*, activacion *gelu tanh* y normalizacion *groupnorm*, con una escala etiquetada como *giant* dentro de la nomenclatura interna del autor.
 
@@ -84,9 +84,9 @@ La comparacion directa no es significativa: al tratarse de un *checkpoint* de in
 - Restricciones de licencia: la licencia es MIT, permisiva para uso comercial, pero el autor recomienda revisar por separado los terminos de las fuentes de datos externas si se usa con datasets de terceros.
 - Caveat de integracion: al ser una implementacion personalizada, las APIs genericas de carga automatica no funcionan sin un adaptador explicito.
 - Cualquier resultado obtenido en el futuro sobre un *checkpoint* entrenado debe documentarse de forma separada de los valores por defecto aqui incluidos.
-- El pipeline no esta declarado en HuggingFace y el modelo registra 0 descargas y 0 likes, lo que indica ausencia de validacion por parte de la comunidad.
+- El pipeline no esta declarado en Hugging Face y el modelo registra 0 descargas y 0 likes, lo que indica ausencia de validacion por parte de la comunidad.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/romainlefebvre/project-retrieval
+- Hugging Face: https://huggingface.co/romainlefebvre/project-retrieval
 - No se han encontrado en la informacion proporcionada enlaces adicionales a papers, blogs, repositorios o demos.

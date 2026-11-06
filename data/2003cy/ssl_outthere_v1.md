@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`2003cy/ssl_outthere_v1` es un modelo publicado en HuggingFace por el usuario `2003cy` bajo licencia MIT. La model card asociada es prácticamente vacía: solo contiene la declaración de licencia, sin descripción, sin arquitectura declarada, sin datos de entrenamiento y sin indicación de la tarea para la que fue entrenado. El propio identificador sugiere un posible uso de aprendizaje autosupervisado ("ssl") en algún dominio relacionado con "outthere", pero se trata de una inferencia a partir del nombre y no de un dato confirmado por el autor.
+`2003cy/ssl_outthere_v1` es un modelo publicado en Hugging Face por el usuario `2003cy` bajo licencia MIT. La model card asociada es prácticamente vacía: solo contiene la declaración de licencia, sin descripción, sin arquitectura declarada, sin datos de entrenamiento y sin indicación de la tarea para la que fue entrenado. El propio identificador sugiere un posible uso de aprendizaje autosupervisado ("ssl") en algún dominio relacionado con "outthere", pero se trata de una inferencia a partir del nombre y no de un dato confirmado por el autor.
 
 El repositorio no declara pipeline, no especifica idiomas soportados, no incluye etiquetas de arquitectura ni de framework, y en el momento de la consulta registra cero descargas y cero "likes". Esto indica que se trata de un artefacto recién creado (fecha de creación y actualización idénticas: 2026-11-05) y sin validación por parte de la comunidad.
 
@@ -35,7 +35,7 @@ Tampoco hay datos sobre el corpus de entrenamiento: no se especifica el número 
 - No se indica soporte de agentes ni de razonamiento multi-paso.
 - No se especifican capacidades multilingües.
 - No se declara ningún modo especial (thinking mode, visión, audio).
-- No se declara pipeline de HuggingFace asociado, por lo que ni siquiera se confirma que sea un modelo de texto generativo.
+- No se declara pipeline de Hugging Face asociado, por lo que ni siquiera se confirma que sea un modelo de texto generativo.
 
 ## Casos de uso
 
@@ -43,7 +43,7 @@ Tampoco hay datos sobre el corpus de entrenamiento: no se especifica el número 
 - Reproducción de experimentos de aprendizaje autosupervisado: si el identificador refleja realmente un modelo SSL, podría servir como punto de partida para comparar representaciones, aunque sin model card no hay garantía de que los pesos correspondan a un entrenamiento finalizado.
 - Integración en prototipos internos con licencia permisiva: al estar bajo MIT, puede incorporarse en código propietario sin obligación de publicar derivados, siempre que se verifique previamente su comportamiento.
 - Base para fine-tuning experimental: un equipo podría adaptarlo a una tarea concreta, aunque la ausencia de documentación obliga a inspeccionar primero la configuración y el tokenizador incluidos en el repositorio.
-- Auditoría de artefactos de HuggingFace: útil como caso de estudio de repositorios publicados sin documentación, para definir políticas internas de admisión de modelos en un catálogo corporativo.
+- Auditoría de artefactos de Hugging Face: útil como caso de estudio de repositorios publicados sin documentación, para definir políticas internas de admisión de modelos en un catálogo corporativo.
 - Docencia sobre licencias y publicación de modelos: sirve para ilustrar la diferencia entre publicar pesos con licencia MIT y publicar información suficiente para que terceros puedan evaluarlos y reutilizarlos con garantías.
 
 En todos estos casos, el uso en producción requeriría primero una validación técnica que el autor no facilita.
@@ -78,6 +78,6 @@ No disponible. No se puede establecer una comparativa fiable porque se desconoce
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/2003cy/ssl_outthere_v1
+- Modelo en Hugging Face: https://huggingface.co/2003cy/ssl_outthere_v1
 - Perfil del autor: https://huggingface.co/2003cy
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

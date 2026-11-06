@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kimi-K3-DSpark-for-8L-dummy es un artefacto de configuracion publicado por el equipo de vLLM en HuggingFace. No se trata de un modelo entrenado ni de un checkpoint con pesos: es una copia de la configuracion del modelo borrador (draft) de decodificacion especulativa `Inferact/Kimi-K3-DSpark`, reorientada para apuntar a un modelo objetivo de pruebas de solo 8 capas (`riverclouds/Kimi-K3-8L-dummy`). Su unico proposito es servir como fixture en la integracion continua de vLLM, de modo que los tests del metodo de decodificacion especulativa `dspark` puedan ejecutarse de forma reproducible y sin depender de pesos reales.
+Kimi-K3-DSpark-for-8L-dummy es un artefacto de configuracion publicado por el equipo de vLLM en Hugging Face. No se trata de un modelo entrenado ni de un checkpoint con pesos: es una copia de la configuracion del modelo borrador (draft) de decodificacion especulativa `Inferact/Kimi-K3-DSpark`, reorientada para apuntar a un modelo objetivo de pruebas de solo 8 capas (`riverclouds/Kimi-K3-8L-dummy`). Su unico proposito es servir como fixture en la integracion continua de vLLM, de modo que los tests del metodo de decodificacion especulativa `dspark` puedan ejecutarse de forma reproducible y sin depender de pesos reales.
 
 El cambio respecto al draft original es minimo y esta documentado en la model card: el campo `target_layer_ids` pasa de `[2, 23, 47, 71, 89]` sobre las 93 capas del Kimi-K3 real a `[0, 1, 4, 6, 7]` sobre las 8 capas del dummy. El borrador conserva sus 5 capas. El repositorio lo mantiene vLLM (en lugar de la cuenta personal del autor original) para reducir el riesgo de cadena de suministro en los pipelines de CI.
 
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento ni de parametros de los modelos comparados
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vllm-project/Kimi-K3-DSpark-for-8L-dummy
+- Hugging Face: https://huggingface.co/vllm-project/Kimi-K3-DSpark-for-8L-dummy
 - Modelo base (draft original): https://huggingface.co/Inferact/Kimi-K3-DSpark
 - Repositorio original copiado: https://huggingface.co/riverclouds/Kimi-K3-DSpark-for-8L-dummy
 - Modelo objetivo dummy: https://huggingface.co/riverclouds/Kimi-K3-8L-dummy

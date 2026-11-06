@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Pasos de denoising | Genera audio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FastVideo-FastH3-4-step-Preview-v1-VSA-Synthetic-Step1900 | 35B | 4 | Sí | MiniMax H3 Community (restrictiva) | HuggingFace |
-| MiniMax-H3 (base) | 35B | 50 | Sí | MiniMax H3 Community | HuggingFace |
-| Stable Video Diffusion | ~1.4B | 25-30 | No | Stability AI Community | HuggingFace |
+| FastVideo-FastH3-4-step-Preview-v1-VSA-Synthetic-Step1900 | 35B | 4 | Sí | MiniMax H3 Community (restrictiva) | Hugging Face |
+| MiniMax-H3 (base) | 35B | 50 | Sí | MiniMax H3 Community | Hugging Face |
+| Stable Video Diffusion | ~1.4B | 25-30 | No | Stability AI Community | Hugging Face |
 
 El modelo destilado ofrece una reducción de 12,5 veces en el número de pasos frente a su base, a costa de una calidad ligeramente inferior en movimientos complejos y detalles finos. Comparado con Stable Video Diffusion, es significativamente más grande y capaz de generar audio, pero requiere hardware mucho más potente. No se dispone de benchmarks comparativos cuantitativos.
 
@@ -78,7 +78,7 @@ El modelo destilado ofrece una reducción de 12,5 veces en el número de pasos f
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FastVideo/FastVideo-FastH3-4-step-Preview-v1-VSA-Synthetic-Step1900
+- Modelo en Hugging Face: https://huggingface.co/FastVideo/FastVideo-FastH3-4-step-Preview-v1-VSA-Synthetic-Step1900
 - Checkpoint recomendado (VSA-DataFree): https://huggingface.co/FastVideo/FastVideo-FastH3-4-step-Preview-v1-VSA-DataFree
 - Repositorio de LoRA: https://huggingface.co/FastVideo/FastVideo-FastH3-4-step-Preview-v1-LoRA
 - Colección FastH3: https://huggingface.co/collections/FastVideo/fastvideo-fasth3

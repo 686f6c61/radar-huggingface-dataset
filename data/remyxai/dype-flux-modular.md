@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo / método | Enfoque | Resolución máxima | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| remyxai/dype-flux-modular | Bloque Modular Diffusers con DyPE (RoPE dinámico) | 4096² | No | MIT | HuggingFace |
-| remyxai/hrdit-flux-modular | Bloque Modular Diffusers para alta resolución (método HRDiT) | 4096² (según model card) | No | MIT | HuggingFace |
+| remyxai/dype-flux-modular | Bloque Modular Diffusers con DyPE (RoPE dinámico) | 4096² | No | MIT | Hugging Face |
+| remyxai/hrdit-flux-modular | Bloque Modular Diffusers para alta resolución (método HRDiT) | 4096² (según model card) | No | MIT | Hugging Face |
 | norj5/comfyui-dype | Nodo de ComfyUI que integra DyPE en FLUX | 4096² y más | No | no disponible | GitHub |
 | Resolución en escalera (ladder) | Generación progresiva de baja a alta resolución | Variable | No | Variable | Variable |
 
@@ -80,7 +80,7 @@ La comparativa se basa en el enfoque técnico, ya que no hay datos de rendimient
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/remyxai/dype-flux-modular
+- Hugging Face: https://huggingface.co/remyxai/dype-flux-modular
 - Paper DyPE: https://arxiv.org/abs/2510.20766
 - Paper SEGA: https://arxiv.org/abs/2605.22668
 - Repositorio original de DyPE: https://github.com/guyyariv/DyPE

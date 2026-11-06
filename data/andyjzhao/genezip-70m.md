@@ -73,6 +73,6 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/andyjzhao/GeneZip-70M
+- Hugging Face: https://huggingface.co/andyjzhao/GeneZip-70M
 - Repositorio de código GeneZip: https://github.com/AndyJZhao/GeneZip
 - Checkpoint de origen: https://huggingface.co/jzshared/GeneZip-7R-LT-32BPT-100B/tree/40a4039a589288939c551b3c330a1c3562b2b15a/checkpoint-30600

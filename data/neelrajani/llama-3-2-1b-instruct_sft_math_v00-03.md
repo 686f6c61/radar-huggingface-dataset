@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama-3.2-1B-Instruct_SFT_math_v00.03 es un ajuste fino supervisado (SFT) del modelo Llama 3.2 1B Instruct, publicado por el usuario NeelRajani en HuggingFace. Por el nombre del repositorio y la nomenclatura de versionado (v00.03), se trata de un experimento de entrenamiento orientado a matemáticas sobre la base instruct de 1.235.814.400 parámetros (aproximadamente 1,2 mil millones), presumiblemente derivado de la familia Llama 3.2 de Meta.
+Llama-3.2-1B-Instruct_SFT_math_v00.03 es un ajuste fino supervisado (SFT) del modelo Llama 3.2 1B Instruct, publicado por el usuario NeelRajani en Hugging Face. Por el nombre del repositorio y la nomenclatura de versionado (v00.03), se trata de un experimento de entrenamiento orientado a matemáticas sobre la base instruct de 1.235.814.400 parámetros (aproximadamente 1,2 mil millones), presumiblemente derivado de la familia Llama 3.2 de Meta.
 
 El modelo se distribuye en formato safetensors para su uso con la librería transformers, con un tamaño de repositorio de 2,5 GB, lo que corresponde a pesos en precisión de 16 bits. No obstante, la model card es una plantilla autogenerada sin contenido sustantivo: no documenta datos de entrenamiento, hiperparámetros, evaluación, licencia ni idiomas soportados.
 
@@ -42,7 +42,7 @@ No obstante, la model card no proporciona ningun detalle verificable sobre el pr
 - Experimentacion academica en ajuste fino: el modelo sirve como punto de partida para replicar o comparar tecnicas de SFT orientadas a matematicas sobre bases pequenas de 1,2 mil millones de parametros.
 - Evaluacion de calidad de datos de entrenamiento: al ser un checkpoint con versionado incremental (v00.03), permite analizar el efecto de distintas iteraciones de datos matematicos sobre el mismo modelo base.
 - Prototipado de tutores de matematicas en entornos controlados: puede emplearse para generar explicaciones paso a paso de problemas aritmeticos o algebraicos basicos, siempre con validacion humana dado el tamano reducido del modelo.
-- Pruebas de pipelines de inferencia con transformers: util para verificar integraciones de text-generation-inference o endpoints compatibles con el esquema de HuggingFace en modelos de ~1,2 B de parametros.
+- Pruebas de pipelines de inferencia con transformers: util para verificar integraciones de text-generation-inference o endpoints compatibles con el esquema de Hugging Face en modelos de ~1,2 B de parametros.
 - Generacion de datos sinteticos para distillation: puede actuar como generador auxiliar de problemas y soluciones matematicas en procesos de destilacion hacia modelos aun mas pequenos.
 - Investigacion sobre alucinacion en modelos pequenos: su tamano permite ejecutar barridos de evaluacion masivos y economicos para estudiar tasas de error en razonamiento aritmetico.
 - Base para comparativas de fine-tuning: sirve como referencia para medir la degradacion o mejora de capacidades generales tras un SFT especializado en un dominio concreto.
@@ -58,17 +58,17 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada en cuantizacion INT4 (si se genera): en torno a 0,7-1 GB para pesos.
 - GPU recomendadas: cualquier GPU consumer moderna es suficiente; una RTX 3060 de 12 GB, RTX 4060 Ti o RTX 4090 ejecutan el modelo con holgura en fp16. Para despliegues con concurrencia alta se recomienda A100 o H100 por throughput agregado, no por requisito de memoria.
 - Cabe en GPU consumer: si, en practicamente cualquier GPU con 4 GB o mas de VRAM en fp16, y en GPUs integradas o CPU con cuantizacion.
-- Opciones de despliegue: transformers (soporte nativo, formato safetensors), text-generation-inference (tag declarado), endpoints compatibles de HuggingFace. Para llama.cpp u Ollama seria necesario convertir previamente los pesos a GGUF, ya que el repositorio no incluye esa variante.
+- Opciones de despliegue: transformers (soporte nativo, formato safetensors), text-generation-inference (tag declarado), endpoints compatibles de Hugging Face. Para llama.cpp u Ollama seria necesario convertir previamente los pesos a GGUF, ya que el repositorio no incluye esa variante.
 - Latencia y throughput estimados: no disponibles (no se publican mediciones).
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Llama-3.2-1B-Instruct_SFT_math_v00.03 (este modelo) | 1.235.814.400 | no disponible | no disponible | HuggingFace, 0 descargas | SFT matematico sin documentar |
+| Llama-3.2-1B-Instruct_SFT_math_v00.03 (este modelo) | 1.235.814.400 | no disponible | no disponible | Hugging Face, 0 descargas | SFT matematico sin documentar |
 | Llama 3.2 1B Instruct (base de Meta) | ~1,24 B | 128.000 tokens (declarado por Meta) | Llama 3.2 Community License | Amplia distribucion | Modelo base oficial, con model card completa |
 | Qwen2.5-1.5B-Instruct | ~1,54 B | 32.768 tokens (declarado por Qwen) | Apache 2.0 | Amplia distribucion | Alternativa pequena con buen rendimiento en matematicas y codigo |
-| SmolLM2-1.7B-Instruct | ~1,7 B | 8.192 tokens (declarado por HuggingFace) | Apache 2.0 | Amplia distribucion | Enfoque en eficiencia y despliegue en dispositivo |
+| SmolLM2-1.7B-Instruct | ~1,7 B | 8.192 tokens (declarado por Hugging Face) | Apache 2.0 | Amplia distribucion | Enfoque en eficiencia y despliegue en dispositivo |
 
 La comparativa se limita a parametros, contexto declarado y licencia, ya que este modelo no publica resultados de evaluacion que permitan contrastar rendimiento real frente a las alternativas.
 
@@ -85,7 +85,7 @@ La comparativa se limita a parametros, contexto declarado y licencia, ya que est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NeelRajani/Llama-3.2-1B-Instruct_SFT_math_v00.03
+- Modelo en Hugging Face: https://huggingface.co/NeelRajani/Llama-3.2-1B-Instruct_SFT_math_v00.03
 - Paper de estimacion de emisiones citado en la model card (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning: https://mlco2.github.io/impact
 - Repositorio oficial de Llama 3.2 (Meta): https://github.com/meta-llama/llama-models

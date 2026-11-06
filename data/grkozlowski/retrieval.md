@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`grkozlowski/retrieval` es un repositorio de HuggingFace publicado por el usuario grkozlowski que contiene una implementación funcional de una arquitectura Swin Transformer (variante Swin-T, escala "tiny") orientada a tareas de retrieval multimodal. El repositorio no es un modelo entrenado listo para producción, sino un esqueleto de código con un checkpoint de inicialización válido para pruebas de humo (smoke tests), tal como el propio autor declara de forma explícita en la model card.
+`grkozlowski/retrieval` es un repositorio de Hugging Face publicado por el usuario grkozlowski que contiene una implementación funcional de una arquitectura Swin Transformer (variante Swin-T, escala "tiny") orientada a tareas de retrieval multimodal. El repositorio no es un modelo entrenado listo para producción, sino un esqueleto de código con un checkpoint de inicialización válido para pruebas de humo (smoke tests), tal como el propio autor declara de forma explícita en la model card.
 
 La relevancia de esta ficha es limitada: el autor omite deliberadamente cualquier afirmación de rendimiento y advierte que el checkpoint no ha sido entrenado ni auditado. El interés técnico reside en la configuración de arquitectura registrada (atención de consultas agrupadas, fusión tipo Tucker, activación ReLU, normalización RMSNorm) y en servir como punto de partida reproducible para experimentos propios de retrieval.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| grkozlowski/retrieval | 33.088 (checkpoint de inicializacion) | no disponible | no disponible (sin entrenar) | BSD-3-Clause | HuggingFace, 0 descargas |
-| Swin-T oficial (microsoft) | ~28M | no disponible | benchmarks publicados en papers de vision | MIT (segun repo oficial) | HuggingFace / GitHub |
-| CLIP (variantes) | ~150M+ | no disponible | benchmarks publicados en retrieval multimodal | MIT (variantes OpenAI) | HuggingFace |
+| grkozlowski/retrieval | 33.088 (checkpoint de inicializacion) | no disponible | no disponible (sin entrenar) | BSD-3-Clause | Hugging Face, 0 descargas |
+| Swin-T oficial (microsoft) | ~28M | no disponible | benchmarks publicados en papers de vision | MIT (segun repo oficial) | Hugging Face / GitHub |
+| CLIP (variantes) | ~150M+ | no disponible | benchmarks publicados en retrieval multimodal | MIT (variantes OpenAI) | Hugging Face |
 
 La comparativa es orientativa: el repositorio de grkozlowski no es un modelo entrenado, por lo que no es directamente comparable en rendimiento con Swin-T oficial ni con CLIP. Se incluye únicamente como referencia de categoría.
 
@@ -81,5 +81,5 @@ La comparativa es orientativa: el repositorio de grkozlowski no es un modelo ent
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/grkozlowski/retrieval
+- Hugging Face: https://huggingface.co/grkozlowski/retrieval
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

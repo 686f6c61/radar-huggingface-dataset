@@ -65,7 +65,7 @@ Nota: No se han publicado resultados de benchmarks de capacidad (MMLU, HumanEval
 | Qwen3.5-9B (base) | 9.409.813.744 | no disponible | qwen-research-license | Modelo original con rechazos |
 | Qwen3-8B-heretic | no disponible | no disponible | Apache 2.0 (según la búsqueda) | Variante abliterada de Qwen3-8B, del mismo autor |
 
-Nota: La comparativa se basa en la información disponible. Los datos de Qwen3-8B-heretic proceden de la página de HuggingFace del mismo autor; no se dispone de especificaciones detalladas.
+Nota: La comparativa se basa en la información disponible. Los datos de Qwen3-8B-heretic proceden de la página de Hugging Face del mismo autor; no se dispone de especificaciones detalladas.
 
 ## Limitaciones y advertencias
 
@@ -77,7 +77,7 @@ Nota: La comparativa se basa en la información disponible. Los datos de Qwen3-8
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/saidutta69/Qwen3.5-9B-heretic
+- Hugging Face: https://huggingface.co/saidutta69/Qwen3.5-9B-heretic
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-9B/blob/main/LICENSE
 - Heretic (herramienta de abliteración): https://github.com/p-e-w/heretic

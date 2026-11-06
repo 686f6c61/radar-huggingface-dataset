@@ -86,8 +86,8 @@ Los datos disponibles solo permiten comparar con la referencia que cita el autor
 
 | Modelo | Parametros | Contexto | Acierto en decisiones alemanas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Wähler-4B (precision completa) | 4,2 B | 4k citado en pruebas | 92,0 % | Apache-2.0 | HuggingFace (mertkayacs/Wahler-4B) |
-| Wähler-4B GGUF Q4_K_M | 4,2 B | 4k citado en pruebas | 97,5 % de coincidencia con precision completa (no es benchmark) | Apache-2.0 | HuggingFace, Ollama, llama.cpp |
+| Wähler-4B (precision completa) | 4,2 B | 4k citado en pruebas | 92,0 % | Apache-2.0 | Hugging Face (mertkayacs/Wahler-4B) |
+| Wähler-4B GGUF Q4_K_M | 4,2 B | 4k citado en pruebas | 97,5 % de coincidencia con precision completa (no es benchmark) | Apache-2.0 | Hugging Face, Ollama, llama.cpp |
 | Kev-4B | No disponible | No disponible | 81,1 % | No disponible | No disponible |
 
 No se dispone de datos verificables de otros modelos comparables de la misma categoria (modelos pequeños de clasificacion en aleman) en la informacion proporcionada.
@@ -108,10 +108,10 @@ No se dispone de datos verificables de otros modelos comparables de la misma cat
 
 ## Enlaces
 
-- [HuggingFace: mertkayacs/Wahler-4B-GGUF](https://huggingface.co/mertkayacs/Wahler-4B-GGUF)
+- [Hugging Face: mertkayacs/Wahler-4B-GGUF](https://huggingface.co/mertkayacs/Wahler-4B-GGUF)
 - [Modelo base: mertkayacs/Wahler-4B](https://huggingface.co/mertkayacs/Wahler-4B)
 - [Repositorio GitHub JevAlt](https://github.com/mertkayacs/jevalt)
-- [Demo en HuggingFace Spaces](https://huggingface.co/spaces/mertkayacs/JevAlt)
+- [Demo en Hugging Face Spaces](https://huggingface.co/spaces/mertkayacs/JevAlt)
 - [Pagina del proyecto](https://jevalt.mertkayacs.com/models/wahler-4b/)
 - [Dataset de entrenamiento: mertkayacs/jevalt-data](https://huggingface.co/datasets/mertkayacs/jevalt-data)
 - [Resultados de benchmark: mertkayacs/jevalt-bench](https://huggingface.co/datasets/mertkayacs/jevalt-bench)

@@ -84,9 +84,9 @@ No se dispone de datos de rendimiento comparativo entre estos modelos. La princi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/q3146dq4/supertonic-3-w8a8-qnn-qdq
+- Repositorio Hugging Face: https://huggingface.co/q3146dq4/supertonic-3-w8a8-qnn-qdq
 - Repositorio del autor con cuantizacion previa: https://huggingface.co/q3146dq4/supertonic-3-quant
-- Modelo base en HuggingFace: https://huggingface.co/Supertone/supertonic-3
+- Modelo base en Hugging Face: https://huggingface.co/Supertone/supertonic-3
 - Pagina oficial de Supertonic 3: https://supertonic3.github.io/
 - Repositorio GitHub de Supertone: https://github.com/supertone-inc/supertonic
 - Repositorio GitHub del autor para Android LiteRT: https://github.com/q3146dq4/supertonic-liteRT-TTS

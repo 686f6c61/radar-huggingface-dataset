@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Little Leo LL-22M es un encoder bidireccional de 22,7 millones de parametros desarrollado por el usuario DesaiJayM y publicado en HuggingFace bajo licencia Apache 2.0. No es un modelo generativo: es un clasificador multi-tarea pensado para colocarse delante de un agente que llama a modelos de frontera y decidir, turno a turno, cuanto modelo necesita realmente esa peticion. Sus tres cabezas de salida son `route` (softmax de 3 clases: `NO_MODEL`, `SMALL`, `LARGE`), `risk` (softmax de 3 clases: `P2_READONLY`, `P1_MUTABLE`, `P0_DESTRUCTIVE`) y `gate` (sigmoide con la probabilidad de que un humano deba confirmar la accion propuesta).
+Little Leo LL-22M es un encoder bidireccional de 22,7 millones de parametros desarrollado por el usuario DesaiJayM y publicado en Hugging Face bajo licencia Apache 2.0. No es un modelo generativo: es un clasificador multi-tarea pensado para colocarse delante de un agente que llama a modelos de frontera y decidir, turno a turno, cuanto modelo necesita realmente esa peticion. Sus tres cabezas de salida son `route` (softmax de 3 clases: `NO_MODEL`, `SMALL`, `LARGE`), `risk` (softmax de 3 clases: `P2_READONLY`, `P1_MUTABLE`, `P0_DESTRUCTIVE`) y `gate` (sigmoide con la probabilidad de que un humano deba confirmar la accion propuesta).
 
 El problema que aborda es economico y operativo: los agentes que envian todo a un modelo de frontera, incluido un simple "gracias, ha funcionado", pagan tokens innecesarios. El autor reporta una medicion sobre trafico real de proveedor (117 prompts, 13 tipos de payload) con un ahorro de coste del 22,5 % y de tokens del 13,7 % frente a enviar todo a `openai/gpt-5.4`, sin dejar ninguna peticion sin responder. El modelo esta empaquetado en formato ONNX y se ejecuta con `onnxruntime` en aproximadamente 7 milisegundos sobre un unico nucleo de CPU, lo que lo hace desplegable en el mismo host que el orquestador sin GPU dedicada.
 
@@ -120,13 +120,13 @@ A continuacion se enumeran, a modo de referencia general de la clase de modelo (
 - Longitud de contexto, tipos de cuantizacion y detalles de entrenamiento no estan disponibles, lo que dificulta evaluar su comportamiento con entradas largas o fuera de distribucion.
 - La model card esta truncada en la informacion proporcionada (la descripcion de la cabeza `abst...` queda incompleta), por lo que podria existir una cuarta cabeza o una capacidad de abstencion documentada que no se ha podido revisar.
 - Licencia Apache 2.0: permite uso comercial y modificacion con las obligaciones habituales de atribucion y conservacion de avisos. No se documentan restricciones adicionales de uso aceptable.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace en la fecha de la informacion, y las fechas de creacion y actualizacion registradas (2026-09-19) no son verificables desde los datos disponibles. Se trata de un artefacto reciente y sin validacion externa conocida.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face en la fecha de la informacion, y las fechas de creacion y actualizacion registradas (2026-09-19) no son verificables desde los datos disponibles. Se trata de un artefacto reciente y sin validacion externa conocida.
 - Las cifras de rendimiento proceden exclusivamente del autor del modelo, sobre un fixture de 117 prompts y 13 tipos de payload. No hay evaluacion independiente.
 - La comparacion economica depende de los precios concretos de `google/gemini-2.5-flash` y `openai/gpt-5.4` en el momento de la medicion; los ahorros variaran con cualquier cambio de tarifa.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DesaiJayM/little-leo-22m
+- Modelo en Hugging Face: https://huggingface.co/DesaiJayM/little-leo-22m
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Blog o articulo tecnico: no disponible

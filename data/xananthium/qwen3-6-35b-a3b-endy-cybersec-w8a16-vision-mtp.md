@@ -96,7 +96,7 @@ El eje diferencial entre los tres artefactos de Xananthium y endystrike es la pr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Xananthium/Qwen3.6-35B-A3B-Endy-CyberSec-W8A16-Vision-MTP
+- Repositorio en Hugging Face: https://huggingface.co/Xananthium/Qwen3.6-35B-A3B-Endy-CyberSec-W8A16-Vision-MTP
 - Modelo base del fine-tune: https://huggingface.co/endystrike/Endy-Qwen3.6-CyberSec-35B-A3B
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Checkpoint hermano (Hauhau Aggressive W4A16 Vision): https://huggingface.co/Xananthium/Qwen3.6-35B-A3B-Hauhau-Aggressive-W4A16-Vision

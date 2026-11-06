@@ -98,7 +98,7 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/euhidaman/neon-inspection-autovi
+- Modelo en Hugging Face: https://huggingface.co/euhidaman/neon-inspection-autovi
 - Demo: https://zevion-neon-inspection.netlify.app/?v=4
 - Conjunto de datos AutoVI (Zenodo): https://zenodo.org/records/10459003
 - Licencia CC BY-NC-SA 4.0: https://creativecommons.org/licenses/by-nc-sa/4.0/

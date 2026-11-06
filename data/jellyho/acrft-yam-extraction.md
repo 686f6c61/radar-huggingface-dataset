@@ -65,7 +65,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jellyho/acrft-yam-extraction
+- Hugging Face: https://huggingface.co/jellyho/acrft-yam-extraction
 - Repositorio GitHub: https://github.com/jellyho/ACRFT
 - Modelo de críticos relacionado: https://huggingface.co/jellyho/acrft-yam-critics
 - Perfil del autor: https://huggingface.co/jellyho

@@ -76,10 +76,10 @@ Métricas completas del modelo:
 
 | Modelo | Parámetros | Contexto | Función | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SkillRet-Reranker-0.6B | 0,6B | 8.192 | Reranker de skills para agentes | Apache 2.0 | HuggingFace (ThakiCloud) |
-| Qwen3-Reranker-0.6B | 0,6B | no disponible en la información proporcionada | Reranker genérico | no disponible en la información proporcionada | HuggingFace (Qwen) |
-| SkillRet-Embedding-0.6B | 0,6B | no disponible en la información proporcionada | Retriever de primera etapa (embedding) | no disponible en la información proporcionada | HuggingFace (ThakiCloud) |
-| SkillRet-Embedding-8B | 8B | no disponible en la información proporcionada | Retriever de primera etapa (embedding) | no disponible en la información proporcionada | HuggingFace (ThakiCloud) |
+| SkillRet-Reranker-0.6B | 0,6B | 8.192 | Reranker de skills para agentes | Apache 2.0 | Hugging Face (ThakiCloud) |
+| Qwen3-Reranker-0.6B | 0,6B | no disponible en la información proporcionada | Reranker genérico | no disponible en la información proporcionada | Hugging Face (Qwen) |
+| SkillRet-Embedding-0.6B | 0,6B | no disponible en la información proporcionada | Retriever de primera etapa (embedding) | no disponible en la información proporcionada | Hugging Face (ThakiCloud) |
+| SkillRet-Embedding-8B | 8B | no disponible en la información proporcionada | Retriever de primera etapa (embedding) | no disponible en la información proporcionada | Hugging Face (ThakiCloud) |
 
 ## Limitaciones y advertencias
 
@@ -94,7 +94,7 @@ Métricas completas del modelo:
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ThakiCloud/SKILLRET-Reranker-0.6B
+- Modelo en Hugging Face: https://huggingface.co/ThakiCloud/SKILLRET-Reranker-0.6B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Reranker-0.6B
 - Dataset SkillRet: https://huggingface.co/datasets/ThakiCloud/SKILLRET
 - Retriever SkillRet-Embedding-0.6B: https://huggingface.co/ThakiCloud/SKILLRET-Embedding-0.6B

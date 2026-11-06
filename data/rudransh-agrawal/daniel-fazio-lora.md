@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `rudransh-agrawal/daniel-fazio-lora` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario `rudransh-agrawal`. No se trata de un modelo completo, sino de un conjunto de pesos de adaptador que debe cargarse sobre su modelo base, `unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit`, una version del Llama 3.1 8B Instruct de Meta cuantizada a 4 bits mediante bitsandbytes y distribuida por Unsloth para entrenamiento eficiente. El repositorio ocupa 0,3 GB y se distribuye en formato safetensors bajo la libreria PEFT.
+El modelo `rudransh-agrawal/daniel-fazio-lora` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario `rudransh-agrawal`. No se trata de un modelo completo, sino de un conjunto de pesos de adaptador que debe cargarse sobre su modelo base, `unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit`, una version del Llama 3.1 8B Instruct de Meta cuantizada a 4 bits mediante bitsandbytes y distribuida por Unsloth para entrenamiento eficiente. El repositorio ocupa 0,3 GB y se distribuye en formato safetensors bajo la libreria PEFT.
 
-El adaptador fue entrenado mediante SFT (supervised fine-tuning) segun las etiquetas del repositorio, que incluyen `lora`, `sft`, `trl` y `unsloth`, lo que indica un flujo de trabajo tipico con la libreria TRL sobre Unsloth. La model card publicada es la plantilla por defecto de HuggingFace y no ha sido cumplimentada: no documenta el conjunto de datos, los hiperparametros, la licencia, los idiomas objetivo ni los resultados de evaluacion. El nombre del adaptador sugiere una especializacion en un estilo o persona concreta, pero esto no esta confirmado por ninguna fuente.
+El adaptador fue entrenado mediante SFT (supervised fine-tuning) segun las etiquetas del repositorio, que incluyen `lora`, `sft`, `trl` y `unsloth`, lo que indica un flujo de trabajo tipico con la libreria TRL sobre Unsloth. La model card publicada es la plantilla por defecto de Hugging Face y no ha sido cumplimentada: no documenta el conjunto de datos, los hiperparametros, la licencia, los idiomas objetivo ni los resultados de evaluacion. El nombre del adaptador sugiere una especializacion en un estilo o persona concreta, pero esto no esta confirmado por ninguna fuente.
 
 Su relevancia es limitada y fundamentalmente como ejemplo de adaptador comunitario sin documentar: util para estudiar flujos de trabajo LoRA sobre Llama 3.1 8B, pero con informacion insuficiente para recomendarlo en produccion. El repositorio no registra descargas ni interacciones y su model card no permite verificar que el entrenamiento se haya completado correctamente ni con que datos.
 
@@ -51,7 +51,7 @@ Respecto al entrenamiento, las etiquetas del repositorio indican SFT con TRL sob
 - Despliegue multi-adaptador: con servidores compatibles con LoRA (vLLM con `--enable-lora`, TGI con adapters), puede servirse junto a otros adaptadores sobre una unica instancia del modelo base, compartiendo memoria de pesos.
 - Generacion de texto en local con hardware de consumo: cargado en 4 bits sobre el modelo base, puede ejecutarse en GPUs de gama media para tareas de generacion no criticas.
 - Investigacion sobre evaluacion de adaptadores: util como caso de estudio de adaptadores sin model card cumplimentada, para analizar que informacion falta y como afecta a la reproducibilidad.
-- Experimentacion educativa: ejemplo de como se publica un adaptador en HuggingFace y de los metadatos que genera automaticamente la plataforma.
+- Experimentacion educativa: ejemplo de como se publica un adaptador en Hugging Face y de los metadatos que genera automaticamente la plataforma.
 
 ## Benchmarks y rendimiento
 
@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|---|
-| rudransh-agrawal/daniel-fazio-lora | Adaptador LoRA (SFT) | 0,3 GB de adaptador sobre base de 8B | No disponible (base: 128.000 tokens) | No disponible | No evaluado | HuggingFace, 0 descargas |
-| unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit | Modelo base cuantizado a 4 bits | 8.030 millones | 128.000 tokens | Llama 3.1 Community License | Benchmarks publicados por Meta para el modelo original | HuggingFace |
-| meta-llama/Llama-3.1-8B-Instruct | Modelo completo instruct | 8.030 millones | 128.000 tokens | Llama 3.1 Community License | Benchmarks publicados por Meta | HuggingFace (acceso con aceptacion de licencia) |
-| Adaptadores LoRA comunitarios sobre Llama 3.1 8B | Adaptador LoRA | Variable | Heredado del base | Habitualmente la del modelo base | Rara vez evaluados | HuggingFace |
+| rudransh-agrawal/daniel-fazio-lora | Adaptador LoRA (SFT) | 0,3 GB de adaptador sobre base de 8B | No disponible (base: 128.000 tokens) | No disponible | No evaluado | Hugging Face, 0 descargas |
+| unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit | Modelo base cuantizado a 4 bits | 8.030 millones | 128.000 tokens | Llama 3.1 Community License | Benchmarks publicados por Meta para el modelo original | Hugging Face |
+| meta-llama/Llama-3.1-8B-Instruct | Modelo completo instruct | 8.030 millones | 128.000 tokens | Llama 3.1 Community License | Benchmarks publicados por Meta | Hugging Face (acceso con aceptacion de licencia) |
+| Adaptadores LoRA comunitarios sobre Llama 3.1 8B | Adaptador LoRA | Variable | Heredado del base | Habitualmente la del modelo base | Rara vez evaluados | Hugging Face |
 
 La comparacion directa con alternativas de la misma categoria no es posible en terminos de rendimiento: no existe ninguna evaluacion publicada del adaptador, ni siquiera frente a su propio modelo base.
 

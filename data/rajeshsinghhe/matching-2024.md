@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rajeshsinghhe/matching-2024` es un repositorio de investigación publicado en HuggingFace por el usuario rajeshsinghhe, etiquetado como un prototipo de arquitectura Dino orientado a tareas de *matching* (emparejamiento o correspondencia entre entradas). No se trata de un modelo entrenado ni evaluado: la propia model card lo describe como un punto de partida experimental con un checkpoint de inicialización válido únicamente para pruebas de humo (*smoke tests*). El repositorio contiene el código de definición del modelo, su configuración de arquitectura y los argumentos por defecto de un experimento de ajuste fino.
+`rajeshsinghhe/matching-2024` es un repositorio de investigación publicado en Hugging Face por el usuario rajeshsinghhe, etiquetado como un prototipo de arquitectura Dino orientado a tareas de *matching* (emparejamiento o correspondencia entre entradas). No se trata de un modelo entrenado ni evaluado: la propia model card lo describe como un punto de partida experimental con un checkpoint de inicialización válido únicamente para pruebas de humo (*smoke tests*). El repositorio contiene el código de definición del modelo, su configuración de arquitectura y los argumentos por defecto de un experimento de ajuste fino.
 
 La relevancia de este repositorio es, por tanto, documental y metodológica más que práctica: sirve como esqueleto reproducible para experimentos de *matching* con una arquitectura tipo Dino, con atención *flash*, fusión por concatenación más MLP, activación Mish y normalización RMSNorm. No hay resultados de benchmarks, ni datos de entrenamiento declarados, ni idiomas soportados, ni métricas de rendimiento.
 
@@ -73,5 +73,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rajeshsinghhe/matching-2024
+- Repositorio en Hugging Face: https://huggingface.co/rajeshsinghhe/matching-2024
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la búsqueda web proporcionada.

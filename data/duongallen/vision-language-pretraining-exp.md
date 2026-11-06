@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, publicado por el usuario duongallen, no contiene un modelo entrenado, sino una nota de investigación sobre preentrenamiento visión-lenguaje. El README del repositorio lo indica explicitamente: se trata de un documento de trabajo que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación. No se presenta como un paper completo ni como un release de modelos entrenados. Los metadatos de HuggingFace muestran 49.600 parámetros en safetensors y un tamaño de repositorio de 0.0 GB, lo que confirma que no hay pesos de modelo significativos ni un checkpoint utilizable. Por tanto, este repositorio no es un modelo de IA operativo, sino material de referencia para investigadores interesados en el diseño experimental de sistemas multimodales.
+Este repositorio de Hugging Face, publicado por el usuario duongallen, no contiene un modelo entrenado, sino una nota de investigación sobre preentrenamiento visión-lenguaje. El README del repositorio lo indica explicitamente: se trata de un documento de trabajo que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación. No se presenta como un paper completo ni como un release de modelos entrenados. Los metadatos de Hugging Face muestran 49.600 parámetros en safetensors y un tamaño de repositorio de 0.0 GB, lo que confirma que no hay pesos de modelo significativos ni un checkpoint utilizable. Por tanto, este repositorio no es un modelo de IA operativo, sino material de referencia para investigadores interesados en el diseño experimental de sistemas multimodales.
 
 ## Especificaciones tecnicas
 
@@ -51,7 +51,7 @@ No disponible. Este repositorio no es un modelo, por lo que no puede compararse 
 ## Limitaciones y advertencias
 
 - El repositorio no contiene un modelo entrenado ni un checkpoint utilizable para inferencia.
-- Los metadatos de HuggingFace que indican 49.600 parametros en safetensors pueden inducir a error; no corresponden a un modelo real.
+- Los metadatos de Hugging Face que indican 49.600 parametros en safetensors pueden inducir a error; no corresponden a un modelo real.
 - No hay codigo de entrenamiento, scripts de evaluacion ni logs de ejecucion.
 - La licencia MIT se aplica a la documentacion, pero los datasets externos mencionados pueden tener terminos de uso propios que deben revisarse por separado.
 - Cualquier hipotesis o plan descrito en la nota no debe interpretarse como resultado experimental verificado.
@@ -59,5 +59,5 @@ No disponible. Este repositorio no es un modelo, por lo que no puede compararse 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/duongallen/vision-language-pretraining-exp
+- Hugging Face: https://huggingface.co/duongallen/vision-language-pretraining-exp
 - Paper relacionado (preentrenamiento multimodal): https://arxiv.org/abs/2603.03276

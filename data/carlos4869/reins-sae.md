@@ -4,7 +4,7 @@
 
 REINS-SAE es un sparse autoencoder (SAE) desarrollado por Carlos4869, orientado a la interpretabilidad mecánica de modelos de lenguaje. Su nombre proviene de la técnica "Refusal-Enhanced INhibitory Steering" (REINS), propuesta en un artículo de OpenReview, que busca suprimir características de continuación dañinas y potenciar características de rechazo seguro dentro del mismo espacio de características aprendido por un SAE. Este modelo se presenta como una herramienta para investigar y controlar el comportamiento de modelos generativos, especialmente en lo relativo a la seguridad y la alineación.
 
-El SAE se entrena sobre las activaciones internas de un modelo de lenguaje base (no especificado en la ficha), permitiendo identificar direcciones latentes asociadas con el rechazo de contenido no deseado. Aunque la model card es mínima y no ofrece detalles técnicos, la técnica subyacente es relevante para el desarrollo de mecanismos de intervención interpretables en sistemas de IA. Actualmente el modelo cuenta con cero descargas y cero likes en HuggingFace, lo que sugiere que es un recurso reciente o poco difundido.
+El SAE se entrena sobre las activaciones internas de un modelo de lenguaje base (no especificado en la ficha), permitiendo identificar direcciones latentes asociadas con el rechazo de contenido no deseado. Aunque la model card es mínima y no ofrece detalles técnicos, la técnica subyacente es relevante para el desarrollo de mecanismos de intervención interpretables en sistemas de IA. Actualmente el modelo cuenta con cero descargas y cero likes en Hugging Face, lo que sugiere que es un recurso reciente o poco difundido.
 
 Su relevancia radica en que aborda un problema actual: cómo ajustar finamente el comportamiento de los LLM sin reentrenamiento completo, mediante intervenciones sobre características internas. Esto puede complementar métodos como RLHF o DPO, ofreciendo un control más granular y basado en el análisis de representaciones.
 
@@ -72,6 +72,6 @@ No se dispone de información sobre otros SAEs comparables específicamente orie
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Carlos4869/REINS-SAE
+- Hugging Face: https://huggingface.co/Carlos4869/REINS-SAE
 - Paper REINS en OpenReview: https://openreview.net/forum?id=4kygxSY7JS
 - Librería SAELens (referencia para análisis de SAE): https://github.com/decoderesearch/SAELens

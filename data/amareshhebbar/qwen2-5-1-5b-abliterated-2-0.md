@@ -88,11 +88,11 @@ Los datos de contexto y licencia de los modelos alternativos provienen de su doc
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Qwen2.5-1.5B-Abliterated-2.0 | 1,54 B | 32 K (heredado) | Apache 2.0 | HuggingFace, safetensors | Sin salvaguardas; benchmarks propios de 100 muestras |
-| Qwen2.5-1.5B-Instruct | 1,54 B | 32 K | Apache 2.0 | HuggingFace, amplia adopción | Base alineado; rechazo duro del 94,5 % según el autor |
-| Llama-3.2-1B-Instruct | 1,24 B | 128 K | Llama 3.2 Community License | HuggingFace, ecosistema amplio | Licencia con restricciones de uso comercial y de usuarios |
-| Gemma-2-2B-it | 2,6 B | 8 K | Gemma Terms of Use | HuggingFace, requiere aceptación | Buen rendimiento en razonamiento para su tamaño; licencia con cláusulas de uso aceptable |
-| SmolLM2-1.7B-Instruct | 1,7 B | 8 K | Apache 2.0 | HuggingFace | Alternativa ligera totalmente permisiva, sin cirugía de pesos |
+| Qwen2.5-1.5B-Abliterated-2.0 | 1,54 B | 32 K (heredado) | Apache 2.0 | Hugging Face, safetensors | Sin salvaguardas; benchmarks propios de 100 muestras |
+| Qwen2.5-1.5B-Instruct | 1,54 B | 32 K | Apache 2.0 | Hugging Face, amplia adopción | Base alineado; rechazo duro del 94,5 % según el autor |
+| Llama-3.2-1B-Instruct | 1,24 B | 128 K | Llama 3.2 Community License | Hugging Face, ecosistema amplio | Licencia con restricciones de uso comercial y de usuarios |
+| Gemma-2-2B-it | 2,6 B | 8 K | Gemma Terms of Use | Hugging Face, requiere aceptación | Buen rendimiento en razonamiento para su tamaño; licencia con cláusulas de uso aceptable |
+| SmolLM2-1.7B-Instruct | 1,7 B | 8 K | Apache 2.0 | Hugging Face | Alternativa ligera totalmente permisiva, sin cirugía de pesos |
 
 Frente a estos modelos, la variante abliterada no aporta mejoras de razonamiento ni de contexto: su diferencia es la supresión del rechazo. En MMLU de álgebra abstracta y GSM8K, los 37 % y 28 % declarados no permiten afirmar superioridad frente a los instructivos originales, que suelen obtener resultados similares o superiores en estas tareas con 0-shot.
 
@@ -112,7 +112,7 @@ Frente a estos modelos, la variante abliterada no aporta mejoras de razonamiento
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AmareshHebbar/Qwen2.5-1.5B-Abliterated-2.0
+- Modelo en Hugging Face: https://huggingface.co/AmareshHebbar/Qwen2.5-1.5B-Abliterated-2.0
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-1.5B-Instruct
 - Registro de evaluación citado por el autor: `eval_results/evaluation_verified_log.json` dentro del repositorio del modelo
 - Dataset MMLU: https://huggingface.co/datasets/cais/mmlu

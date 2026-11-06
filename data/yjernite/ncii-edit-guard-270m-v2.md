@@ -109,7 +109,7 @@ La ventaja de la v2 frente a la v1 se concentra en el FPR (0,039 frente a 0,096)
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yjernite/ncii-edit-guard-270m-v2
+- Modelo en Hugging Face: https://huggingface.co/yjernite/ncii-edit-guard-270m-v2
 - Versión anterior: https://huggingface.co/yjernite/ncii-edit-guard-270m-v1
 - Conjunto de evaluación: https://huggingface.co/datasets/yjernite/ncii-guard-eval-v1
 - Resultados de los jueces piloto (*teacher pilot*): https://huggingface.co/datasets/yjernite/ncii-guard-eval-v1/tree/main/teacher_pilot

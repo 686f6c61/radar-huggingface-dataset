@@ -83,6 +83,6 @@ El modelo hindi medium es el equivalente para hindi del mismo autor; no se han p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bhaskaro/ainotes-whisper-tamil-medium-q5_1
+- Modelo en Hugging Face: https://huggingface.co/bhaskaro/ainotes-whisper-tamil-medium-q5_1
 - Modelo base: https://huggingface.co/vasista22/whisper-tamil-medium
 - Modelo similar en hindi: https://huggingface.co/bhaskaro/ainotes-whisper-hindi-medium-q5_1

@@ -71,9 +71,9 @@ La evaluación se realizó con decodificación determinista (temperature 0), thi
 
 | Modelo | Parámetros totales | Contexto | Accuracy graph coloring | Licencia | Disponibilidad |
 |---|---|---|---:|---|---|
-| Este Graph Coloring teacher | 35.5B | no disponible | 87.402% | Apache 2.0 | HuggingFace |
-| Qwen3.6-35B-A3B (base) | 35.5B (según nombre) | no disponible | 29.004% | Apache 2.0 | HuggingFace |
-| Countdown Teacher (hermano MOPD) | no disponible | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| Este Graph Coloring teacher | 35.5B | no disponible | 87.402% | Apache 2.0 | Hugging Face |
+| Qwen3.6-35B-A3B (base) | 35.5B (según nombre) | no disponible | 29.004% | Apache 2.0 | Hugging Face |
+| Countdown Teacher (hermano MOPD) | no disponible | no disponible | no disponible | Apache 2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 

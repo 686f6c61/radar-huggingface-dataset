@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo identificado como `gradients-io-tournaments/augmented-8f9d1985c6d8a329` es un checkpoint de generación de texto publicado en HuggingFace por la cuenta `gradients-io-tournaments`. Se trata de un modelo de tipo transformer con pesos en formato safetensors, etiquetado con la arquitectura `qwen2` y con un total de 1.543.714.304 parámetros (aproximadamente 1,54 mil millones), lo que lo sitúa en la gama de modelos pequeños, aptos para inferencia en hardware de consumo.
+El modelo identificado como `gradients-io-tournaments/augmented-8f9d1985c6d8a329` es un checkpoint de generación de texto publicado en Hugging Face por la cuenta `gradients-io-tournaments`. Se trata de un modelo de tipo transformer con pesos en formato safetensors, etiquetado con la arquitectura `qwen2` y con un total de 1.543.714.304 parámetros (aproximadamente 1,54 mil millones), lo que lo sitúa en la gama de modelos pequeños, aptos para inferencia en hardware de consumo.
 
-La información pública disponible es mínima: la model card es la plantilla automática de HuggingFace sin ningún campo cumplimentado, no se declara licencia, idiomas, dataset de entrenamiento, procedimiento de ajuste ni resultados de evaluación. El nombre del repositorio y de la organización sugiere que se trata de un artefacto generado en el contexto de un torneo o competición de fine-tuning, más que de un modelo con publicación formal.
+La información pública disponible es mínima: la model card es la plantilla automática de Hugging Face sin ningún campo cumplimentado, no se declara licencia, idiomas, dataset de entrenamiento, procedimiento de ajuste ni resultados de evaluación. El nombre del repositorio y de la organización sugiere que se trata de un artefacto generado en el contexto de un torneo o competición de fine-tuning, más que de un modelo con publicación formal.
 
 Por tanto, esta ficha recoge exclusivamente los datos verificables del repositorio (tamaño, formato, arquitectura etiquetada, recuento de parámetros) y marca explícitamente como "no disponible" todo aquello que el autor no ha documentado. Cualquier uso en producción debería ir precedido de una evaluación propia, dado que no existe model card sustantiva ni licencia declarada.
 
@@ -93,10 +93,10 @@ La busqueda web realizada no devolvio ningun resultado relevante sobre el modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gradients-io-tournaments/augmented-8f9d1985c6d8a329
+- Hugging Face: https://huggingface.co/gradients-io-tournaments/augmented-8f9d1985c6d8a329
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Demo: no disponible
 - Blog o articulo tecnico: no disponible
 
-Nota: la busqueda web asociada a este modelo no devolvio ningun enlace relevante (los resultados obtenidos correspondian a sitios de apuestas deportivas sin relacion con el repositorio). El unico enlace arXiv presente en los tags del repositorio, `arxiv:1910.09700`, corresponde a "Quantifying the Carbon Emissions of Machine Learning" (Lacoste et al., 2019), una referencia generica de la plantilla de HuggingFace sobre impacto ambiental, no un paper sobre este modelo.
+Nota: la busqueda web asociada a este modelo no devolvio ningun enlace relevante (los resultados obtenidos correspondian a sitios de apuestas deportivas sin relacion con el repositorio). El unico enlace arXiv presente en los tags del repositorio, `arxiv:1910.09700`, corresponde a "Quantifying the Carbon Emissions of Machine Learning" (Lacoste et al., 2019), una referencia generica de la plantilla de Hugging Face sobre impacto ambiental, no un paper sobre este modelo.

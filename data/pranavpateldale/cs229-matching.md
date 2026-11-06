@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`pranavpateldale/cs229-matching` es un prototipo de investigación publicado en HuggingFace que implementa una variante de MoCo v3 (Momentum Contrast v3) orientada a tareas de *matching* (emparejamiento de representaciones). Lo desarrolla el usuario `pranavpateldale`, presumiblemente en el contexto del curso CS229 de Stanford, y se distribuye como un repositorio mínimo con código Python, configuración de arquitectura y un checkpoint de inicialización en formato safetensors.
+`pranavpateldale/cs229-matching` es un prototipo de investigación publicado en Hugging Face que implementa una variante de MoCo v3 (Momentum Contrast v3) orientada a tareas de *matching* (emparejamiento de representaciones). Lo desarrolla el usuario `pranavpateldale`, presumiblemente en el contexto del curso CS229 de Stanford, y se distribuye como un repositorio mínimo con código Python, configuración de arquitectura y un checkpoint de inicialización en formato safetensors.
 
 El modelo no es un modelo de lenguaje: se trata de un encoder visual auto-supervisado de tipo MoCo v3, con atención *multi-query*, fusión tensorial, activación GELU-Tanh y normalización GroupNorm. La escala declarada es "xlarge", pero el propio autor advierte que el checkpoint incluido es solo una inicialización válida para *smoke tests* y **no** un modelo entrenado ni evaluado en benchmarks.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `pranavpateldale/cs229-matching` | 49.600 | no aplica | no disponible (sin benchmarks) | MIT | HuggingFace, 0 descargas |
+| `pranavpateldale/cs229-matching` | 49.600 | no aplica | no disponible (sin benchmarks) | MIT | Hugging Face, 0 descargas |
 | MoCo v3 oficial (Facebook AI Research) | no disponible en esta ficha | no aplica | resultados publicados en el paper original | MIT (repo oficial) | GitHub + pesos oficiales |
-| DINO / DINOv2 | no disponible en esta ficha | no aplica | benchmarks publicados | licencia propia de Meta | HuggingFace + repo oficial |
+| DINO / DINOv2 | no disponible en esta ficha | no aplica | benchmarks publicados | licencia propia de Meta | Hugging Face + repo oficial |
 
 La comparación con alternativas oficiales no puede cuantificarse con los datos disponibles; el repositorio analizado es un prototipo sin métricas y con un checkpoint de inicialización, por lo que no es directamente comparable en rendimiento con implementaciones consolidadas de MoCo v3.
 
@@ -81,7 +81,7 @@ La comparación con alternativas oficiales no puede cuantificarse con los datos 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pranavpateldale/cs229-matching
+- Hugging Face: https://huggingface.co/pranavpateldale/cs229-matching
 - Repositorio de código: incluido en el propio repo (`main.py`, `config.json`, `training_args.json`)
 - Paper de MoCo v3 (referencia del método, no enlazado en la model card): no disponible en la información proporcionada
 - Blog, demo o paper propio del autor: no disponible en la información proporcionada

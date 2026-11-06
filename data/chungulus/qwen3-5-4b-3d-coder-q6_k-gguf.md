@@ -88,8 +88,8 @@ No se han identificado en la información disponible otros modelos comparables d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Chungulus/Qwen3.5-4B-3D-Coder-Q6_K-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Chungulus/Qwen3.5-4B-3D-Coder-Q6_K-GGUF
 - Modelo base: https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder
 - Checkpoint FP16 de referencia: https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder/tree/16f53e560115a3f55ddf7b455d65417257e29414
 - llama.cpp: https://github.com/ggml-org/llama.cpp
-- Ficheros auxiliares del repositorio: `validation.json`, `example-scene.html`, `quantizatia-manifest.json`, `LICENSE` (incluidos en el repositorio de HuggingFace)
+- Ficheros auxiliares del repositorio: `validation.json`, `example-scene.html`, `quantizatia-manifest.json`, `LICENSE` (incluidos en el repositorio de Hugging Face)

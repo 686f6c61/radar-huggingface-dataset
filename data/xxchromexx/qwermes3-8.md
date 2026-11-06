@@ -96,7 +96,7 @@ No se dispone de benchmarks comparativos publicados entre Qwermes3.8 y otros mod
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/xxchromexx/Qwermes3.8
+- Repositorio Hugging Face: https://huggingface.co/xxchromexx/Qwermes3.8
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Referencia NVFP4 (RadixArk): https://huggingface.co/RadixArk/Qwen3.8-27B-NVFP4
 - Blog sobre DGX Spark y vLLM (confirmación del problema GDN): https://ai-muninn.com/en/blog/dgx-spark-qwen3-122b-vllm-to-atlas-2x

@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Codificador asociado | Latentes de entrada | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| lala-decoder-dinov2-s | DINOv2 ViT-S/14 | 16 x 16 x 384 | No disponible (~20 M estimados) | 256 tokens fijos | No publicado | No disponible | HuggingFace, `.pt` |
-| lala-decoder-dinov3-l | DINOv3 ViT-L/16 | No disponible (dimensión mayor, presumiblemente 1024) | No disponible | No disponible | No publicado | No disponible | HuggingFace, `.pt` |
-| lala-decoder-siglip2-so400m | SigLIP2 So400M | No disponible | No disponible | No disponible | No publicado | No disponible | HuggingFace, `.pt` |
+| lala-decoder-dinov2-s | DINOv2 ViT-S/14 | 16 x 16 x 384 | No disponible (~20 M estimados) | 256 tokens fijos | No publicado | No disponible | Hugging Face, `.pt` |
+| lala-decoder-dinov3-l | DINOv3 ViT-L/16 | No disponible (dimensión mayor, presumiblemente 1024) | No disponible | No disponible | No publicado | No disponible | Hugging Face, `.pt` |
+| lala-decoder-siglip2-so400m | SigLIP2 So400M | No disponible | No disponible | No disponible | No publicado | No disponible | Hugging Face, `.pt` |
 
 Los tres decodificadores de la familia son intercambiables solo en apariencia: cada uno debe emparejarse con el codificador exacto del checkpoint LaLa-World o LaLa-Policy correspondiente. No se dispone de datos para comparar con decodificadores de VAE de modelos de difusión (por ejemplo, el VAE de Stable Diffusion), que operan a factor de compresión 8 y con latentes de 4 canales, una geometría distinta a la de los parches de DINOv2.
 
@@ -83,7 +83,7 @@ Los tres decodificadores de la familia son intercambiables solo en apariencia: c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LaLa-World/lala-decoder-dinov2-s
+- Modelo en Hugging Face: https://huggingface.co/LaLa-World/lala-decoder-dinov2-s
 - Repositorio del proyecto LaLa-World: https://github.com/junha1125/LaLa-World
 - Decodificador para DINOv3-L: https://huggingface.co/LaLa-World/lala-decoder-dinov3-l
 - Decodificador para SigLIP2-So400M: https://huggingface.co/LaLa-World/lala-decoder-siglip2-so400m

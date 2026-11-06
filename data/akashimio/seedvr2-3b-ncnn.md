@@ -81,9 +81,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Parametros | Formato | Precision | Ejecucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| akashimio/SeedVR2-3B-ncnn (este) | ~3B | Grafos ncnn + catalogo SHA-256 | FP32-B | ncnn + Vulkan (CPU x86_64 Linux y NVIDIA) | Apache-2.0 | Publico en HuggingFace |
-| akashimio/SeedVR2-3B-ncnn-dit-fp16 | ~3B | Grafos ncnn | Almacenamiento de pesos DiT en FP16, activaciones y aritmetica en FP32 | ncnn + Vulkan | Apache-2.0 | Publico en HuggingFace (10,40 GB imagen / 11,05 GB video) |
-| ByteDance-Seed/SeedVR2-3B | ~3B | Checkpoint oficial (formato no detallado en la informacion) | Ruta oficial CUDA BF16 con Apex y FlashAttention (mencionada en la model card) | PyTorch/CUDA | No indicada en la informacion | Checkpoint oficial en HuggingFace |
+| akashimio/SeedVR2-3B-ncnn (este) | ~3B | Grafos ncnn + catalogo SHA-256 | FP32-B | ncnn + Vulkan (CPU x86_64 Linux y NVIDIA) | Apache-2.0 | Publico en Hugging Face |
+| akashimio/SeedVR2-3B-ncnn-dit-fp16 | ~3B | Grafos ncnn | Almacenamiento de pesos DiT en FP16, activaciones y aritmetica en FP32 | ncnn + Vulkan | Apache-2.0 | Publico en Hugging Face (10,40 GB imagen / 11,05 GB video) |
+| ByteDance-Seed/SeedVR2-3B | ~3B | Checkpoint oficial (formato no detallado en la informacion) | Ruta oficial CUDA BF16 con Apex y FlashAttention (mencionada en la model card) | PyTorch/CUDA | No indicada en la informacion | Checkpoint oficial en Hugging Face |
 
 No se dispone de modelos de restauracion de video adicionales en la informacion proporcionada para ampliar la comparativa con datos verificables.
 
@@ -104,7 +104,7 @@ No se dispone de modelos de restauracion de video adicionales en la informacion 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/akashimio/SeedVR2-3B-ncnn
+- Modelo en Hugging Face: https://huggingface.co/akashimio/SeedVR2-3B-ncnn
 - Variante con almacenamiento FP16 del DiT: https://huggingface.co/akashimio/SeedVR2-3B-ncnn-dit-fp16
 - Aplicacion nativa SeedVR2 ncnn Vulkan: https://github.com/mingshi2333/seedvr2-ncnn-vulkan
 - Tutorial de compilacion y dependencias: https://github.com/mingshi2333/seedvr2-ncnn-vulkan/blob/main/docs/TUTORIAL.md

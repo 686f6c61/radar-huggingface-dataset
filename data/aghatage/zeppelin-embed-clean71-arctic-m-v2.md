@@ -2,7 +2,7 @@
 
 ## Resumen
 
-zeppelin-embed clean71-v1 + Arctic m-v2 es un par de torres de embeddings de texto asimétrico empaquetado como bundle de ejecución para [zeppelin-embed](https://github.com/zepdb/zeppelin-embed), un motor de búsqueda vectorial e híbrida embebido. Lo publica el usuario `aghatage` en HuggingFace bajo licencia Apache 2.0 y no es un checkpoint al uso: no se carga con `transformers` ni con `sentence-transformers`, sino con la librería `zeppelin-embed`, que descarga los ficheros declarados en un manifiesto, verifica su tamano y SHA-256 y los cachea.
+zeppelin-embed clean71-v1 + Arctic m-v2 es un par de torres de embeddings de texto asimétrico empaquetado como bundle de ejecución para [zeppelin-embed](https://github.com/zepdb/zeppelin-embed), un motor de búsqueda vectorial e híbrida embebido. Lo publica el usuario `aghatage` en Hugging Face bajo licencia Apache 2.0 y no es un checkpoint al uso: no se carga con `transformers` ni con `sentence-transformers`, sino con la librería `zeppelin-embed`, que descarga los ficheros declarados en un manifiesto, verifica su tamano y SHA-256 y los cachea.
 
 La asimetría es la clave del diseno. Los documentos se codifican con el modelo original Snowflake Arctic-embed-m-v2.0 (305.368.320 parámetros, hasta 8.192 tokens de entrada), mientras que las consultas se codifican con clean71-v1, una torre de query destilada de 71.201.280 parámetros (6 capas, anchura 512, FFN 1.536, vocabulario de 98.304 tokens, pooling CLS y proyección aprendida de 512 a 768) limitada a 96 tokens y con el prefijo `query: `. Ambas torres producen vectores de 768 dimensiones normalizados L2, de modo que la puntuación es un producto escalar equivalente a similitud coseno.
 
@@ -110,7 +110,7 @@ Latencia declarada por el autor: p50 de 1-2 ms por consulta densa a batch 1 con 
 | Modelo | Parametros | Contexto | Rendimiento (macro primaria) | Licencia | Disponibilidad |
 |---|---|---:|---|---|---|
 | zeppelin-embed clean71-v1 + Arctic m-v2 (esta ficha) | 71,2 M query + 305,4 M documento | 96 / 8.192 | 0,666017 | Apache 2.0 | Solo macOS Apple Silicon, vía zeppelin-embed |
-| Snowflake/snowflake-arctic-embed-m-v2.0 (solo torre de documento) | 305,4 M | 8.192 | no disponible en esta ficha (es la torre de documento de referencia, sin torre de query destilada) | Apache 2.0 | HuggingFace, transformers / sentence-transformers |
+| Snowflake/snowflake-arctic-embed-m-v2.0 (solo torre de documento) | 305,4 M | 8.192 | no disponible en esta ficha (es la torre de documento de referencia, sin torre de query destilada) | Apache 2.0 | Hugging Face, transformers / sentence-transformers |
 | Torre de query "Original S2B" (release anterior del mismo autor) | aprox. 229,7 M (deducido de la reducción del 69 % indicada por el autor) | no disponible | 0,671864 | no disponible | no disponible |
 
 No se han publicado en la información disponible comparaciones contra otros modelos de embeddings multilingües de tamano similar (por ejemplo familias E5, BGE o GTE): no disponible.
@@ -130,7 +130,7 @@ No se han publicado en la información disponible comparaciones contra otros mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aghatage/zeppelin-embed-clean71-arctic-m-v2
+- Modelo en Hugging Face: https://huggingface.co/aghatage/zeppelin-embed-clean71-arctic-m-v2
 - Repositorio del motor: https://github.com/zepdb/zeppelin-embed
 - Modelo base (torre de documento): https://huggingface.co/Snowflake/snowflake-arctic-embed-m-v2.0
 - Revisión concreta del modelo base usada en el bundle: `95c2741480856aa9666782eb4afe11959938017f`

@@ -59,8 +59,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB (base) | 74B totales / 9B activos | no disponible | NVFP4, Q8_0, IQ2_XXS según matriz | OpenMDW 1.1 | HuggingFace (nvidia) |
-| Este repositorio (Sharar w3) | pesos derivados de 177 matrices | no disponible | GPTQ ~3,25 bits | OpenMDW 1.1 | HuggingFace (shadowpa0327) |
+| NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB (base) | 74B totales / 9B activos | no disponible | NVFP4, Q8_0, IQ2_XXS según matriz | OpenMDW 1.1 | Hugging Face (nvidia) |
+| Este repositorio (Sharar w3) | pesos derivados de 177 matrices | no disponible | GPTQ ~3,25 bits | OpenMDW 1.1 | Hugging Face (shadowpa0327) |
 | Alternativas de mismo tamaño o tarea | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre otros modelos comparables en la documentación proporcionada.
@@ -78,7 +78,7 @@ No se dispone de información sobre otros modelos comparables en la documentaci�
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/shadowpa0327/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-sharar-w3
+- Repositorio en Hugging Face: https://huggingface.co/shadowpa0327/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-sharar-w3
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB
 - Repositorio de Sharar: https://github.com/abdelfattah-lab/sharar
 - Licencia OpenMDW 1.1: https://openmdw.ai/license/1-1/

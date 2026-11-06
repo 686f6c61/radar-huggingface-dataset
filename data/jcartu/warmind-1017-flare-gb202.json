@@ -27,13 +27,13 @@
     "8-bit",
     "region:us"
   ],
-  "likes": 3,
+  "likes": 4,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 50718745,
   "parameters_human": "50.7M",
-  "storage_bytes": 537343107101,
-  "storage_human": "537.3 GB",
+  "storage_bytes": 526967312886,
+  "storage_human": "527.0 GB",
   "base_model": "jcartu/WARMIND-1017",
   "formats": [
     "safetensors"

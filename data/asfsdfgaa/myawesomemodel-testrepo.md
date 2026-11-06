@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio publicado en HuggingFace por el usuario asfsdfgaa bajo licencia MIT. A pesar del nombre, la model card describe un supuesto modelo de razonamiento de gran tamano con mejoras en matematicas, programacion y logica, y cita mejoras de precision en AIME 2025 (del 70 % al 87,5 %) junto con un aumento del esfuerzo de razonamiento (de 12 000 a 23 000 tokens por pregunta). No se especifica en ningun momento el numero de parametros, la arquitectura exacta ni la longitud de contexto.
+MyAwesomeModel-TestRepo es un repositorio publicado en Hugging Face por el usuario asfsdfgaa bajo licencia MIT. A pesar del nombre, la model card describe un supuesto modelo de razonamiento de gran tamano con mejoras en matematicas, programacion y logica, y cita mejoras de precision en AIME 2025 (del 70 % al 87,5 %) junto con un aumento del esfuerzo de razonamiento (de 12 000 a 23 000 tokens por pregunta). No se especifica en ningun momento el numero de parametros, la arquitectura exacta ni la longitud de contexto.
 
 La informacion objetiva del repositorio contradice en parte ese relato: las etiquetas declaradas son `transformers`, `pytorch`, `bert` y `feature-extraction`, el pipeline es de extraccion de caracteristicas y el tamano del repositorio es de 0,0 GB, con 0 descargas y 0 likes. Es decir, no hay pesos publicados ni evidencias de que el modelo descrito en la model card exista como artefacto descargable.
 
@@ -44,7 +44,7 @@ Tampoco se detallan datos de entrenamiento: no se indica el numero de tokens, la
 - Analisis de documentos largos: la plantilla `file_template` permite inyectar el contenido de un fichero y formular preguntas sobre el. Util para extraccion de datos de contratos, informes o articulos.
 - Razonamiento matematico asistido: el supuesto incremento de esfuerzo de razonamiento (23 000 tokens por pregunta) lo orienta a problemas tipo competicion, tutoria matematica o verificacion de calculos.
 - Generacion de codigo en pipelines de desarrollo: si el soporte de function calling es real, podria integrarse en herramientas de revision de codigo o generacion de tests. Requiere validacion previa, dado que no hay pesos publicados.
-- Clasificacion y extraccion de caracteristicas: el pipeline declarado en HuggingFace es `feature-extraction` con etiqueta `bert`, de modo que el uso mas coherente con los metadatos del repositorio seria obtener embeddings para busqueda semantica o clasificacion de texto.
+- Clasificacion y extraccion de caracteristicas: el pipeline declarado en Hugging Face es `feature-extraction` con etiqueta `bert`, de modo que el uso mas coherente con los metadatos del repositorio seria obtener embeddings para busqueda semantica o clasificacion de texto.
 - Prototipado y pruebas de integracion: al ser compatible con endpoints y con la libreria transformers, el repositorio puede servir como banco de pruebas para validar pipelines de despliegue, no como modelo de produccion.
 - Evaluacion comparativa interna: las tablas de la model card, aunque genericas, podrian usarse como plantilla de informe de evaluacion para comparar variantes propias.
 
@@ -79,7 +79,7 @@ Dato adicional citado en el texto: precision del 87,5 % en AIME 2025, frente al 
 - VRAM estimada: no disponible. Al desconocerse el numero de parametros y el formato de pesos, no es posible estimar requisitos de memoria.
 - GPU recomendadas: no disponible por la misma razon.
 - Compatibilidad con GPU de consumo: no disponible.
-- Opciones de despliegue: la model card remite a un repositorio de codigo no enlazado en la informacion proporcionada. Las etiquetas `transformers` y `endpoints_compatible` indican compatibilidad con el ecosistema HuggingFace Transformers y con Inference Endpoints. No hay indicios de pesos en GGUF, por lo que no puede confirmarse el uso con llama.cpp u Ollama. El despliegue con vLLM o TGI no esta documentado.
+- Opciones de despliegue: la model card remite a un repositorio de codigo no enlazado en la informacion proporcionada. Las etiquetas `transformers` y `endpoints_compatible` indican compatibilidad con el ecosistema Hugging Face Transformers y con Inference Endpoints. No hay indicios de pesos en GGUF, por lo que no puede confirmarse el uso con llama.cpp u Ollama. El despliegue con vLLM o TGI no esta documentado.
 - Latencia y throughput: no disponible.
 - Nota practica: dado que el repositorio ocupa 0,0 GB, no hay artefactos de pesos que desplegar actualmente.
 
@@ -101,7 +101,7 @@ No disponible. La model card emplea lineas base anonimizadas (Model1, Model2, Mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/asfsdfgaa/MyAwesomeModel-TestRepo
+- Hugging Face: https://huggingface.co/asfsdfgaa/MyAwesomeModel-TestRepo
 - Repositorio de codigo: mencionado en la model card pero sin URL proporcionada; no disponible
 - Sitio web oficial y plataforma de API: mencionados en la model card sin URL; no disponibles
 - Paper o informe tecnico: no disponible

@@ -69,6 +69,6 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- HuggingFace: [aashishsinhaa/notion-router](https://huggingface.co/aashishsinhaa/notion-router)
+- Hugging Face: [aashishsinhaa/notion-router](https://huggingface.co/aashishsinhaa/notion-router)
 - Modelo base: [Qwen/Qwen2.5-0.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct)
 - Documentación de Notion AI (contexto de uso): [Notion AI](https://www.notion.com/help/guides/category/ai)

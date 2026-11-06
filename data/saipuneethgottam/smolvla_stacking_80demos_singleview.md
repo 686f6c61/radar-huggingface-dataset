@@ -68,7 +68,7 @@ No se dispone de datos comparativos publicados para este fine-tuning especifico.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/saipuneethgottam/smolvla_stacking_80demos_singleview
+- Repositorio Hugging Face: https://huggingface.co/saipuneethgottam/smolvla_stacking_80demos_singleview
 - Paper SmolVLA: https://arxiv.org/abs/2506.01844 (HTML: https://arxiv.org/html/2506.01844v1)
 - Blog de Hugging Face sobre SmolVLA: https://github.com/huggingface/blog/blob/main/smolvla.md
 - Sitio oficial de SmolVLA: https://smolvla.net/index_en

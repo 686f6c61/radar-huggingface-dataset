@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-R1-Distill-Llama-8B-NVFP4-QAD es una versión cuantizada del modelo DeepSeek-R1-Distill-Llama-8B, un modelo de razonamiento de 8.030 millones de parámetros desarrollado originalmente por DeepSeek a partir de Llama-3.1-8B y destilado con trazas de razonamiento de DeepSeek-R1. Esta variante concreta la publica el usuario qatfactory en HuggingFace y aplica cuantización NVFP4 (formato de 4 bits de NVIDIA) con entrenamiento consciente de la cuantización (QAT, quantization-aware training), empaquetada en formato compressed-tensors para su uso con vLLM.
+DeepSeek-R1-Distill-Llama-8B-NVFP4-QAD es una versión cuantizada del modelo DeepSeek-R1-Distill-Llama-8B, un modelo de razonamiento de 8.030 millones de parámetros desarrollado originalmente por DeepSeek a partir de Llama-3.1-8B y destilado con trazas de razonamiento de DeepSeek-R1. Esta variante concreta la publica el usuario qatfactory en Hugging Face y aplica cuantización NVFP4 (formato de 4 bits de NVIDIA) con entrenamiento consciente de la cuantización (QAT, quantization-aware training), empaquetada en formato compressed-tensors para su uso con vLLM.
 
 El modelo base es relevante porque demuestra que es posible transferir capacidades de razonamiento de un modelo grande (DeepSeek-R1, 671B parámetros MoE) a un modelo denso de 8B mediante destilación, manteniendo la cadena de pensamiento (thinking mode) y un rendimiento notable en tareas de matemáticas y código para su tamaño. Esta versión NVFP4 busca reducir el coste de inferencia en hardware NVIDIA Blackwell, que soporta nativamente este formato de 4 bits con escalas por bloque.
 
@@ -64,16 +64,16 @@ No se han publicado resultados de benchmarks en la informacion disponible para e
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-R1-Distill-Llama-8B-NVFP4-QAD (este) | 8,03B | no disponible (base: 128K) | NVFP4 QAT | MIT | Gated en HuggingFace |
-| DeepSeek-R1-Distill-Llama-8B (base) | 8,03B | 128K | BF16 | MIT | Abierto en HuggingFace |
-| DeepSeek-R1-Distill-Qwen-7B | 7,6B | 128K | BF16 | MIT | Abierto en HuggingFace |
-| Llama-3.1-8B-Instruct | 8,03B | 128K | BF16 | Llama 3.1 Community | Abierto en HuggingFace |
+| DeepSeek-R1-Distill-Llama-8B-NVFP4-QAD (este) | 8,03B | no disponible (base: 128K) | NVFP4 QAT | MIT | Gated en Hugging Face |
+| DeepSeek-R1-Distill-Llama-8B (base) | 8,03B | 128K | BF16 | MIT | Abierto en Hugging Face |
+| DeepSeek-R1-Distill-Qwen-7B | 7,6B | 128K | BF16 | MIT | Abierto en Hugging Face |
+| Llama-3.1-8B-Instruct | 8,03B | 128K | BF16 | Llama 3.1 Community | Abierto en Hugging Face |
 
 La ventaja de esta variante frente al modelo base es la reducción de memoria (6 GB frente a ~16 GB en BF16) y el potencial de mayor throughput en Blackwell; la desventaja es la dependencia de hardware específico y la falta de benchmarks publicados que cuantifiquen la pérdida de precisión.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que añade fricción para uso automatizado o en producción.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que añade fricción para uso automatizado o en producción.
 - Sin benchmarks publicados: no hay evidencia cuantitativa de la degradación de precisión introducida por NVFP4 en tareas de razonamiento; conviene validar en el caso de uso concreto.
 - Dependencia de hardware: NVFP4 está optimizado para GPU NVIDIA Blackwell; en otras arquitecturas el rendimiento puede ser inferior o el modelo directamente no cargar.
 - Riesgo de alucinación: inherente al modelo base, especialmente en dominios especializados y en cadenas de razonamiento largas donde puede divagar.
@@ -85,7 +85,7 @@ La ventaja de esta variante frente al modelo base es la reducción de memoria (6
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qatfactory/DeepSeek-R1-Distill-Llama-8B-NVFP4-QAD
+- Hugging Face: https://huggingface.co/qatfactory/DeepSeek-R1-Distill-Llama-8B-NVFP4-QAD
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-8B
 - Paper de DeepSeek-R1: https://arxiv.org/abs/2501.12948
 - Repositorio DeepSeek-R1: https://github.com/deepseek-ai/DeepSeek-R1

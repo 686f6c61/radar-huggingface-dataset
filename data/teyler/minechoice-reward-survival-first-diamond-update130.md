@@ -75,7 +75,7 @@ No se dispone de datos verificables para una comparativa. La informacion proporc
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MineChoice-reward-survival-first-diamond-update130 | 31.789 | no aplica | no disponible | MIT | HuggingFace (0 descargas) |
+| MineChoice-reward-survival-first-diamond-update130 | 31.789 | no aplica | no disponible | MIT | Hugging Face (0 descargas) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -95,5 +95,5 @@ No se dispone de datos verificables para una comparativa. La informacion proporc
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/teyler/MineChoice-reward-survival-first-diamond-update130
+- Hugging Face: https://huggingface.co/teyler/MineChoice-reward-survival-first-diamond-update130
 - Paper, repositorio de codigo, blog o demo: no disponible en la informacion proporcionada.

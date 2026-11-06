@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| concil859856/natural-face-speech-h3-lora | no disponible | no disponible | Apache 2.0 | HuggingFace |
-| vpakarinen/natural-face-speech-h3-lora (modelo relacionado) | no disponible | no disponible | no disponible | HuggingFace |
+| concil859856/natural-face-speech-h3-lora | no disponible | no disponible | Apache 2.0 | Hugging Face |
+| vpakarinen/natural-face-speech-h3-lora (modelo relacionado) | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de información suficiente para una comparativa rigurosa en términos de rendimiento o parametros. El modelo de `vpakarinen` aparece como relacionado y probablemente comparta origen, pero no se han publicado especificaciones detalladas.
 
@@ -83,6 +83,6 @@ No se dispone de información suficiente para una comparativa rigurosa en térmi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/concil859856/natural-face-speech-h3-lora
+- Hugging Face: https://huggingface.co/concil859856/natural-face-speech-h3-lora
 - Modelo relacionado: https://huggingface.co/vpakarinen/natural-face-speech-h3-lora
 - Video demo: https://huggingface.co/vpakarinen/natural-face-speech/resolve/main/demo_video_8.mp4

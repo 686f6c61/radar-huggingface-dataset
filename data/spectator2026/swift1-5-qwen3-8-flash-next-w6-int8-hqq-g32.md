@@ -18,7 +18,7 @@ No es un modelo nuevo ni un fine-tune: es un artefacto de infraestructura para s
 | Longitud de contexto | 262.144 tokens |
 | Tipos de cuantizacion | W6A16: int6 g32 HQQ en expertos enrutados; int8 g32 HQQ en proyecciones densas y expertos compartidos; BF16 en embeddings, `lm_head`, router, mezcladores, normas, torre de vision y tabla n-gram; KV cache en fp8 durante el servicio; formato compressed-tensors con dos grupos de cuantizacion |
 | Idiomas soportados | no disponible |
-| Licencia | swift-open-license-1.0 (etiqueta de HuggingFace: `other`); el repo incluye ademas LICENSE-QWEN (Qwen Community License 1.0) y NOTICE |
+| Licencia | swift-open-license-1.0 (etiqueta de Hugging Face: `other`); el repo incluye ademas LICENSE-QWEN (Qwen Community License 1.0) y NOTICE |
 | Formato de pesos | safetensors (133 shards en total: 102 en este repo + 31 de la tabla n-gram descargados aparte) |
 
 ## Arquitectura y entrenamiento
@@ -75,16 +75,16 @@ No se han publicado resultados de benchmarks de tarea (MMLU, HumanEval, GSM8K, T
 
 | Modelo | Parametros | Contexto | Cuantizacion / peso | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| spectator2026/Swift1.5-Qwen3.8-Flash-Next-W6-INT8-HQQ-g32 (este) | no disponible (~360 GB en BF16) | 262.144 | int6 expertos + int8 densas, HQQ g32; ~219 GB | swift-open-license-1.0 | HuggingFace, requiere descargar 31 shards de otro repo; 0 descargas, 0 likes |
-| ukisai/Swift1.5-Qwen3.8-Flash-Next (base BF16) | no disponible | 262.144 | BF16; ~360 GB | swift-open-license-1.0 | HuggingFace, referencia canonica de calidad |
-| spectator2026/Qwen3.8-Flash-Next-W6-INT8-HQQ-g32 | no disponible | no disponible | misma receta, calibrada con el modelo base; ~219 GB | ver LICENSE / LICENSE-QWEN del repo | HuggingFace; ademas aloja los shards de la tabla n-gram |
-| Qwen/Qwen3.8-Flash-Next (modelo original) | no disponible | no disponible | BF16 | Qwen Community License 1.0 | HuggingFace; sirve de referencia de capacidades multimodales y contexto largo |
+| spectator2026/Swift1.5-Qwen3.8-Flash-Next-W6-INT8-HQQ-g32 (este) | no disponible (~360 GB en BF16) | 262.144 | int6 expertos + int8 densas, HQQ g32; ~219 GB | swift-open-license-1.0 | Hugging Face, requiere descargar 31 shards de otro repo; 0 descargas, 0 likes |
+| ukisai/Swift1.5-Qwen3.8-Flash-Next (base BF16) | no disponible | 262.144 | BF16; ~360 GB | swift-open-license-1.0 | Hugging Face, referencia canonica de calidad |
+| spectator2026/Qwen3.8-Flash-Next-W6-INT8-HQQ-g32 | no disponible | no disponible | misma receta, calibrada con el modelo base; ~219 GB | ver LICENSE / LICENSE-QWEN del repo | Hugging Face; ademas aloja los shards de la tabla n-gram |
+| Qwen/Qwen3.8-Flash-Next (modelo original) | no disponible | no disponible | BF16 | Qwen Community License 1.0 | Hugging Face; sirve de referencia de capacidades multimodales y contexto largo |
 
 No se dispone de datos de benchmarks que permitan comparar rendimiento de tarea entre estas variantes; la unica comparacion publicada es de divergencia KL entre este checkpoint y su BF16.
 
 ## Limitaciones y advertencias
 
-- La licencia es `other` en HuggingFace y el texto aplicable es swift-open-license-1.0, que no se reproduce en la informacion disponible. Hay que leer `LICENSE` y `LICENSE-QWEN` antes de cualquier uso comercial o de redistribucion; el modelo base arrastra ademas la Qwen Community License 1.0.
+- La licencia es `other` en Hugging Face y el texto aplicable es swift-open-license-1.0, que no se reproduce en la informacion disponible. Hay que leer `LICENSE` y `LICENSE-QWEN` antes de cualquier uso comercial o de redistribucion; el modelo base arrastra ademas la Qwen Community License 1.0.
 - El repositorio esta incompleto por diseno: faltan 31 shards (~99 GB) que solo existen en otra publicacion del mismo autor. Sin ese paso de descarga el modelo no carga, y `sha256sum -c SHA256SUMS` es obligatorio para verificar los 133 shards.
 - La receta de cuantizacion es data-light (solo maximos de activacion, sin Hessians ni calibracion). Los valores atipicos no vistos en las estadisticas de captura pueden degradar capas concretas sin que exista una validacion por capa publicada.
 - La divergencia KL en agentica multi-turno (0,0873) es casi cuatro veces la de wikitext (0,0228). Para flujos de agentes con muchas llamadas encadenadas conviene medir la tasa de exito frente al BF16 antes de sustituirlo.

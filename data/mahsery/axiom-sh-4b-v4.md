@@ -4,11 +4,11 @@
 
 ## Resumen
 
-axiom-sh-4b-v4 es un modelo de generación de texto de 4 mil millones de parámetros, desarrollado por el usuario mahsery y publicado en HuggingFace. Está basado en el modelo Qwen/Qwen3.5-4B, del que se ofrece una versión cuantizada en formato GGUF. La cuantización GGUF permite ejecutar el modelo en entornos con recursos limitados, como CPUs o GPUs de consumo, sin necesidad de infraestructura de gran escala.
+axiom-sh-4b-v4 es un modelo de generación de texto de 4 mil millones de parámetros, desarrollado por el usuario mahsery y publicado en Hugging Face. Está basado en el modelo Qwen/Qwen3.5-4B, del que se ofrece una versión cuantizada en formato GGUF. La cuantización GGUF permite ejecutar el modelo en entornos con recursos limitados, como CPUs o GPUs de consumo, sin necesidad de infraestructura de gran escala.
 
 El modelo está etiquetado con las categorías shell, bash, cli, code y terminal, lo que indica un enfoque específico hacia tareas de línea de comandos, scripting y asistencia en entornos técnicos. También se le atribuye la etiqueta "conversational", sugiriendo que puede mantener diálogos de asistencia técnica. Aunque no se dispone de documentación oficial ni de detalles sobre su entrenamiento, al derivar de Qwen3.5-4B hereda las capacidades generales de este modelo base, incluyendo generación de código y comprensión de instrucciones.
 
-Su relevancia radica en ofrecer una alternativa ligera y eficiente para tareas de automatización y soporte en terminal, con licencia Apache-2.0 (según la etiqueta de HuggingFace), lo que permite su uso comercial sin restricciones adicionales. Sin embargo, la falta de información pública sobre su rendimiento o evaluación limita la posibilidad de realizar una valoración objetiva.
+Su relevancia radica en ofrecer una alternativa ligera y eficiente para tareas de automatización y soporte en terminal, con licencia Apache-2.0 (según la etiqueta de Hugging Face), lo que permite su uso comercial sin restricciones adicionales. Sin embargo, la falta de información pública sobre su rendimiento o evaluación limita la posibilidad de realizar una valoración objetiva.
 
 ## Especificaciones técnicas
 
@@ -75,5 +75,5 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- [HuggingFace: mahsery/axiom-sh-4b-v4](https://huggingface.co/mahsery/axiom-sh-4b-v4)
+- [Hugging Face: mahsery/axiom-sh-4b-v4](https://huggingface.co/mahsery/axiom-sh-4b-v4)
 - No se encontraron otros enlaces relevantes (papers, repos, demos) en la búsqueda web.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene una política robótica entrenada con el método Action Chunking with Transformers (ACT), un algoritmo de aprendizaje por imitación presentado en el paper arXiv:2304.13705. No es un modelo de lenguaje: es un controlador visual-motor que consume el estado del robot, su velocidad y una imagen de una única cámara (`main_camera`) para producir comandos de acción de 9 dimensiones. Ha sido entrenado y publicado por el usuario `ases200q2` mediante la librería LeRobot de HuggingFace, sobre un dataset propio de 100 episodios y 9.830 fotogramas a 30 FPS centrado en la tarea `pick_cube` (agarrar un cubo) con un robot de tipo `franka`.
+Este repositorio contiene una política robótica entrenada con el método Action Chunking with Transformers (ACT), un algoritmo de aprendizaje por imitación presentado en el paper arXiv:2304.13705. No es un modelo de lenguaje: es un controlador visual-motor que consume el estado del robot, su velocidad y una imagen de una única cámara (`main_camera`) para producir comandos de acción de 9 dimensiones. Ha sido entrenado y publicado por el usuario `ases200q2` mediante la librería LeRobot de Hugging Face, sobre un dataset propio de 100 episodios y 9.830 fotogramas a 30 FPS centrado en la tarea `pick_cube` (agarrar un cubo) con un robot de tipo `franka`.
 
 El checkpoint tiene 51.674.761 parámetros y ocupa 0,2 GB en el repositorio, lo que lo sitúa en la categoría de políticas ligeras capaces de ejecutarse en hardware de consumo. Su relevancia es acotada y muy específica: sirve como referencia reproducible dentro del ecosistema LeRobot para tareas de manipulación pick-and-place, y como punto de partida para fine-tuning o para comparativas de métodos de imitación. No dispone de ningún resultado de evaluación publicado, ni descargas, ni validación por parte de la comunidad, por lo que su rendimiento real es desconocido.
 
@@ -69,7 +69,7 @@ No se dispone en la información proporcionada de modelos comparables concretos 
 
 | Modelo / método | Parametros | Entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (ACT, `ases200q2`) | 51.674.761 | cámara 3x240x320, estado (9,), velocidad (9,) | no disponible | apache-2.0 | HuggingFace, 0 descargas |
+| Este modelo (ACT, `ases200q2`) | 51.674.761 | cámara 3x240x320, estado (9,), velocidad (9,) | no disponible | apache-2.0 | Hugging Face, 0 descargas |
 | Otras políticas ACT de LeRobot | no disponible | no disponible | no disponible | no disponible | público en el Hub, datos no consultados |
 | Políticas de difusión (Diffusion Policy) como familia alternativa | no disponible | típicamente imagen y estado | no disponible | no disponible | no disponible |
 
@@ -90,7 +90,7 @@ En ausencia de métricas publicadas y de modelos de referencia con datos verific
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ases200q2/roboverse_pick_cube_mujocoE100_act_20260912_0941
+- Modelo en Hugging Face: https://huggingface.co/ases200q2/roboverse_pick_cube_mujocoE100_act_20260912_0941
 - Dataset de entrenamiento: https://huggingface.co/datasets/ases200q2/roboverse-pick_cube-mujoco-E100
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=ases200q2/roboverse-pick_cube-mujoco-E100
 - Paper de ACT (Action Chunking with Transformers): https://huggingface.co/papers/2304.13705

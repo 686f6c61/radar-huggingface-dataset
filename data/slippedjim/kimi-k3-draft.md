@@ -4,7 +4,7 @@
 
 El modelo `slippedJim/Kimi-K3-Draft` es un modelo auxiliar de 3.562.312.961 parámetros (3,56B) diseñado específicamente para decodificación especulativa con el modelo gigante `moonshotai/Kimi-K3` (2,8T parámetros). Desarrollado por el usuario slippedJim, este draft model se entrena mediante destilación especulativa on-policy, de modo que genera secuencias de tokens candidatos que el modelo grande verifica en paralelo, acelerando la inferencia sin degradar la calidad de salida. Su estructura de archivos, nombres de tensores y `config.json` son idénticos a los de `Inferact/Kimi-K3-DSpark`, por lo que actúa como reemplazo directo de ese modelo, solo con pesos diferentes.
 
-La relevancia de este modelo radica en que Kimi-K3, el modelo base, es el primer modelo abierto de clase 3T con visión nativa y ventana de contexto de 1 millón de tokens, lo que hace que su inferencia sea extremadamente costosa. Un draft model eficiente permite reducir la latencia y el coste computacional en entornos de producción donde se despliega Kimi-K3 para tareas de codificación agéntica, generación de informes o razonamiento de largo alcance. El acceso al repositorio está restringido (gated) y requiere aceptar condiciones en HuggingFace.
+La relevancia de este modelo radica en que Kimi-K3, el modelo base, es el primer modelo abierto de clase 3T con visión nativa y ventana de contexto de 1 millón de tokens, lo que hace que su inferencia sea extremadamente costosa. Un draft model eficiente permite reducir la latencia y el coste computacional en entornos de producción donde se despliega Kimi-K3 para tareas de codificación agéntica, generación de informes o razonamiento de largo alcance. El acceso al repositorio está restringido (gated) y requiere aceptar condiciones en Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -57,8 +57,8 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| slippedJim/Kimi-K3-Draft | 3,56B | no disponible | other (gated) | HuggingFace |
-| Inferact/Kimi-K3-DSpark | no disponible | no disponible | no disponible | HuggingFace |
+| slippedJim/Kimi-K3-Draft | 3,56B | no disponible | other (gated) | Hugging Face |
+| Inferact/Kimi-K3-DSpark | no disponible | no disponible | no disponible | Hugging Face |
 | Medusa (draft genérico) | varía | varía | Apache 2.0 | GitHub |
 
 No se dispone de datos suficientes para comparar rendimiento. `Inferact/Kimi-K3-DSpark` es el modelo al que este reemplaza, pero no se conocen sus parámetros ni licencia. Medusa es una técnica de decodificación especulativa genérica que puede aplicarse a cualquier modelo, pero no es un modelo preentrenado específico para Kimi-K3.
@@ -66,7 +66,7 @@ No se dispone de datos suficientes para comparar rendimiento. `Inferact/Kimi-K3-
 ## Limitaciones y advertencias
 
 - Es un modelo draft, no apto para uso directo como generador de texto; requiere el modelo grande Kimi-K3 para funcionar.
-- La licencia es "other" y el acceso está restringido; es necesario aceptar condiciones en HuggingFace antes de descargarlo, lo que puede limitar su uso comercial.
+- La licencia es "other" y el acceso está restringido; es necesario aceptar condiciones en Hugging Face antes de descargarlo, lo que puede limitar su uso comercial.
 - No se han publicado datos sobre sesgos, alucinaciones o limitaciones de idioma. Al ser un modelo auxiliar, su impacto en la calidad final es indirecto, pero puede heredar sesgos del modelo profesor.
 - El tamaño del repositorio (45,3 GB) es desproporcionado para 3,56B parámetros, lo que sugiere que puede incluir múltiples versiones o archivos adicionales; se recomienda revisar el contenido antes de descargar.
 - No hay garantía de soporte o mantenimiento por parte del autor, dado que el proyecto parece experimental (0 descargas, 0 likes).
@@ -74,7 +74,7 @@ No se dispone de datos suficientes para comparar rendimiento. `Inferact/Kimi-K3-
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/slippedJim/Kimi-K3-Draft
+- Repositorio Hugging Face: https://huggingface.co/slippedJim/Kimi-K3-Draft
 - Repositorio alternativo (K3_draft): https://huggingface.co/slippedJim/K3_draft
 - Página oficial de Kimi K3: https://www.kimi.ai/ai-models/kimi-k3
 - Repositorio GitHub de Kimi-K3: https://github.com/MoonshotAI/Kimi-K3

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ribeiro3258/deit-multitask-run1` es un prototipo de investigación publicado en HuggingFace que empaqueta una implementación propia de DeiT (Data-efficient Image Transformer) orientada a tareas múltiples de visión por computador. Lo firma el usuario `ribeiro3258` y se distribuye bajo licencia Apache 2.0. No es un modelo entrenado: la propia model card lo describe como un "initialization checkpoint for smoke tests", es decir, un punto de partida válido para comprobar que el código carga y ejecuta, no un artefacto listo para producción.
+`ribeiro3258/deit-multitask-run1` es un prototipo de investigación publicado en Hugging Face que empaqueta una implementación propia de DeiT (Data-efficient Image Transformer) orientada a tareas múltiples de visión por computador. Lo firma el usuario `ribeiro3258` y se distribuye bajo licencia Apache 2.0. No es un modelo entrenado: la propia model card lo describe como un "initialization checkpoint for smoke tests", es decir, un punto de partida válido para comprobar que el código carga y ejecuta, no un artefacto listo para producción.
 
 El repositorio declara una escala "small" con atención dilatada, fusión mediante co-atención, activación swish y normalización groupnorm. Sin embargo, el recuento real del archivo `model.safetensors` es de 24.832 parámetros, muy lejos de los millones que cabría esperar de un DeiT-S completo, lo que refuerza su naturaleza de esqueleto experimental. El tamaño del repositorio es de 0,0 GB.
 
@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Arquitectura | Escala declarada | Estado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ribeiro3258/deit-multitask-run1 | DeiT, atencion dilatada, co-atencion | small | Prototipo sin entrenar, 24.832 parametros reales | Apache 2.0 | HuggingFace, 0 descargas |
-| srinasution/deit-multitask | DeiT | giant | Codebase experimental, sin run completo | no disponible | HuggingFace |
-| anthonygarcia/deit-multitask68 | DeiT | nano | Punto de partida reproducible, no es un release entrenado | no disponible | HuggingFace |
+| ribeiro3258/deit-multitask-run1 | DeiT, atencion dilatada, co-atencion | small | Prototipo sin entrenar, 24.832 parametros reales | Apache 2.0 | Hugging Face, 0 descargas |
+| srinasution/deit-multitask | DeiT | giant | Codebase experimental, sin run completo | no disponible | Hugging Face |
+| anthonygarcia/deit-multitask68 | DeiT | nano | Punto de partida reproducible, no es un release entrenado | no disponible | Hugging Face |
 | facebookresearch/deit | DeiT oficial con token de destilacion | no disponible | Implementacion oficial, entrenada sobre ImageNet | no disponible | GitHub |
 
 Los tres repositorios de la tabla con nombre `deit-multitask` comparten el mismo patrón: implementaciones experimentales con configuración explícita y checkpoint de inicialización, sin métricas verificadas. La diferencia principal frente al repositorio oficial de Facebook Research es que este último sí corresponde a un modelo entrenado y publicado en el paper arXiv:2012.12877.
@@ -91,7 +91,7 @@ Los tres repositorios de la tabla con nombre `deit-multitask` comparten el mismo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ribeiro3258/deit-multitask-run1
+- Hugging Face: https://huggingface.co/ribeiro3258/deit-multitask-run1
 - Repositorio oficial de DeiT: https://github.com/facebookresearch/deit
 - Paper de DeiT: https://arxiv.org/abs/2012.12877
 - Prototipo relacionado: https://huggingface.co/srinasution/deit-multitask

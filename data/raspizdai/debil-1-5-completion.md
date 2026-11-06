@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - Al tener solo 46,5M de parámetros, el modelo ocupa aproximadamente 186 MB en precisión fp32 (46.538.400 × 4 bytes). En cuantización fp16 serían unos 93 MB.
 - Es ejecutable en CPU sin problemas, con latencias de milisegundos por token en hardware moderno.
 - Cabe en cualquier GPU consumer (por ejemplo, GTX 1060, RTX 3060, etc.) e incluso en Raspberry Pi con suficiente RAM.
-- Opciones de despliegue: al ser un modelo safetensors, puede cargarse con librerías como Transformers de HuggingFace, llama.cpp (si se convierte a GGUF) u Ollama (si se empaqueta adecuadamente).
+- Opciones de despliegue: al ser un modelo safetensors, puede cargarse con librerías como Transformers de Hugging Face, llama.cpp (si se convierte a GGUF) u Ollama (si se empaqueta adecuadamente).
 - Para inferencia en producción, se puede servir con vLLM o TGI, aunque para un modelo tan pequeño no es necesario; una simple API con FastAPI sería suficiente.
 - Throughput estimado: en una CPU moderna, se pueden generar decenas de tokens por segundo; en una GPU consumer, cientos de tokens por segundo.
 
@@ -80,4 +80,4 @@ No se dispone de resultados de benchmarks para comparar directamente el rendimie
 
 ## Enlaces
 
-- [HuggingFace - RaspizdAI/debil-1.5-completion](https://huggingface.co/RaspizdAI/debil-1.5-completion)
+- [Hugging Face - RaspizdAI/debil-1.5-completion](https://huggingface.co/RaspizdAI/debil-1.5-completion)

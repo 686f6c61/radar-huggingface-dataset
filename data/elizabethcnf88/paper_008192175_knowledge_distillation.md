@@ -66,7 +66,7 @@ No disponible. No existen modelos comparables porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/elizabethcnf88/paper_008192175_knowledge_distillation
+- Repositorio en Hugging Face: https://huggingface.co/elizabethcnf88/paper_008192175_knowledge_distillation
 - Survey de referencia sobre destilación de conocimiento: https://arxiv.org/abs/2006.05525
 - Colección de papers sobre destilación de conocimiento en LLMs: https://github.com/Tebmer/Awesome-Knowledge-Distillation-of-LLMs
 - Artículo relacionado en ScienceDirect: https://www.sciencedirect.com/science/article/pii/S2666827024000811

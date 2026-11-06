@@ -4,7 +4,7 @@
 
 El repositorio `jtakahasi/mobilenet-chatbot-tryout43` no contiene un modelo de inteligencia artificial convencional, sino un documento de texto académico en formato Markdown (`reading.md`) que trata sobre *data efficient learning*. El autor, `jtakahasi`, ha subido el repositorio con la etiqueta de licencia BSD-3-Clause y una serie de tags que describen el estilo del documento: estructura académica (abstract, intro, prelim, method, exp, discussion), estilo de escritura detallado y descriptivo, formato typst, citas con footnotes y tono impersonal y cauto.
 
-El repositorio no presenta pipeline de inferencia, pesos de modelo, ni artefactos típicos de un modelo de lenguaje. A fecha de creación (agosto de 2026) no registra descargas ni likes en HuggingFace. Dada la naturaleza del contenido, se trata más bien de un artefacto de investigación o un experimento de publicación, no de un modelo desplegable. Por tanto, esta ficha se limita a describir lo que se encuentra en el repositorio y advierte de la ausencia de especificaciones técnicas propias de un modelo.
+El repositorio no presenta pipeline de inferencia, pesos de modelo, ni artefactos típicos de un modelo de lenguaje. A fecha de creación (agosto de 2026) no registra descargas ni likes en Hugging Face. Dada la naturaleza del contenido, se trata más bien de un artefacto de investigación o un experimento de publicación, no de un modelo desplegable. Por tanto, esta ficha se limita a describir lo que se encuentra en el repositorio y advierte de la ausencia de especificaciones técnicas propias de un modelo.
 
 ## Especificaciones técnicas
 
@@ -36,7 +36,7 @@ Dado que no es un modelo de IA, los casos de uso son limitados y de carácter do
 
 - Consulta de una referencia académica sobre *data efficient learning*: el archivo `reading.md` puede servir como material de estudio para investigadores interesados en técnicas de aprendizaje eficiente con datos.
 - Evaluación de estilos de escritura académica: el documento podría usarse como ejemplo de un formato typst con estructura y estilo concretos, útil para quienes preparan publicaciones con requisitos similares.
-- Repositorio de experimento de publicación: podría servir como ejemplo de cómo organizar un paper en HuggingFace, aunque no es un caso práctico común.
+- Repositorio de experimento de publicación: podría servir como ejemplo de cómo organizar un paper en Hugging Face, aunque no es un caso práctico común.
 - No es adecuado para tareas de generación, clasificación, traducción ni ninguna aplicación de IA.
 
 ## Benchmarks y rendimiento
@@ -63,5 +63,5 @@ No disponible. Este repositorio no es comparable con modelos de lenguaje o visi�
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [https://huggingface.co/jtakahasi/mobilenet-chatbot-tryout43](https://huggingface.co/jtakahasi/mobilenet-chatbot-tryout43)
+- Repositorio en Hugging Face: [https://huggingface.co/jtakahasi/mobilenet-chatbot-tryout43](https://huggingface.co/jtakahasi/mobilenet-chatbot-tryout43)
 - No se han encontrado otros enlaces (paper, blog, demo) en la búsqueda web.

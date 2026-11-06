@@ -41,7 +41,7 @@ El paper describe una reformulacion del mecanismo de atencion por productos punt
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El paper original (Shen et al., WACV 2021) reporta experimentos en clasificacion de imagenes y otras tareas, pero esos datos no estan incluidos en el repositorio de HuggingFace ni en los resultados de busqueda proporcionados.
+No se han publicado resultados de benchmarks en la informacion disponible. El paper original (Shen et al., WACV 2021) reporta experimentos en clasificacion de imagenes y otras tareas, pero esos datos no estan incluidos en el repositorio de Hugging Face ni en los resultados de busqueda proporcionados.
 
 ## Requisitos de hardware
 
@@ -62,7 +62,7 @@ No disponible. El repositorio no contiene un modelo comparable, sino un articulo
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/cocovzhao/paper_001886076_efficient_attention
+- Repositorio de Hugging Face: https://huggingface.co/cocovzhao/paper_001886076_efficient_attention
 - Paper en arXiv: https://arxiv.org/abs/1812.01243
 - Version HTML del paper: https://arxiv.org/html/1812.01243v10
 - Publicacion en IEEE (WACV 2021): https://ieeexplore.ieee.org/document/9423033

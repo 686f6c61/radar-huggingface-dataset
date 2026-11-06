@@ -94,7 +94,7 @@ XYZ-Aquila-mini supera a todos los modelos comparados en los benchmarks donde ha
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/XYZAILab/XYZ-Aquila-mini
+- Modelo en Hugging Face: https://huggingface.co/XYZAILab/XYZ-Aquila-mini
 - Modelo en ModelScope: https://modelscope.cn/models/XYZAILab/XYZ-Aquila-mini
 - Dataset de SFT: https://huggingface.co/datasets/XYZAILab/XYZ-Aquila-SFT
 - Harness AxisAgentic: https://github.com/XYZ-AI-Lab/AxisAgentic

@@ -101,7 +101,7 @@ La informacion disponible solo permite comparar esta conversion con su propio mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hermitdave/Spark-X2.5-4B-MLX-4bit
+- Repositorio Hugging Face: https://huggingface.co/hermitdave/Spark-X2.5-4B-MLX-4bit
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.5-4B
 - mlx-lm: https://github.com/ml-explore/mlx-lm
 - Spark-MLX-LLM (soporte de arquitectura y CLI): https://github.com/XHToken/Spark-MLX-LLM

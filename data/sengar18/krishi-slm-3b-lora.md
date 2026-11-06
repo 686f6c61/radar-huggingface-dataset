@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sengar18/krishi-slm-3b-lora` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario `sengar18`. Está diseñado como un módulo de fine-tuning eficiente sobre el modelo base `unsloth/qwen2.5-3b-instruct-unsloth-bnb-4bit`, que a su vez es una versión cuantizada a 4 bits de Qwen2.5-3B-Instruct. El nombre "krishi" sugiere una posible orientación hacia el dominio agrícola (krishi significa agricultura en hindi), pero no hay ninguna confirmación en la documentación disponible.
+El modelo `sengar18/krishi-slm-3b-lora` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario `sengar18`. Está diseñado como un módulo de fine-tuning eficiente sobre el modelo base `unsloth/qwen2.5-3b-instruct-unsloth-bnb-4bit`, que a su vez es una versión cuantizada a 4 bits de Qwen2.5-3B-Instruct. El nombre "krishi" sugiere una posible orientación hacia el dominio agrícola (krishi significa agricultura en hindi), pero no hay ninguna confirmación en la documentación disponible.
 
 El adaptador se distribuye en formato PEFT (Parameter-Efficient Fine-Tuning) y está pensado para ser cargado junto con el modelo base mediante la librería `transformers` y `peft`. El repositorio tiene un tamaño de 0,1 GB y no incluye una model card completa: todos los campos de la descripción están marcados como "[More Information Needed]". La licencia no está especificada y no se han publicado resultados de evaluación ni detalles sobre los datos de entrenamiento.
 
@@ -59,7 +59,7 @@ El adaptador LoRA en sí mismo ocupa muy poco espacio (0,1 GB) y puede cargarse 
 
 ## Comparativa con modelos similares
 
-No se dispone de modelos comparables específicos para este adaptador, ya que no se conoce su dominio de aplicación. Como referencia genérica, se podría comparar con otros adaptadores LoRA sobre Qwen2.5-3B-Instruct disponibles en HuggingFace, pero no hay datos suficientes para establecer una comparación objetiva.
+No se dispone de modelos comparables específicos para este adaptador, ya que no se conoce su dominio de aplicación. Como referencia genérica, se podría comparar con otros adaptadores LoRA sobre Qwen2.5-3B-Instruct disponibles en Hugging Face, pero no hay datos suficientes para establecer una comparación objetiva.
 
 ## Limitaciones y advertencias
 
@@ -72,5 +72,5 @@ No se dispone de modelos comparables específicos para este adaptador, ya que no
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sengar18/krishi-slm-3b-lora
+- Repositorio en Hugging Face: https://huggingface.co/sengar18/krishi-slm-3b-lora
 - Modelo base (unsloth/qwen2.5-3b-instruct-unsloth-bnb-4bit): https://huggingface.co/unsloth/qwen2.5-3b-instruct-unsloth-bnb-4bit

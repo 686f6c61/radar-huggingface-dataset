@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `latentMO/cotcontrol-gptoss120b-smoke1` | Adaptador LoRA r32 sobre 120B | no disponible | apache-2.0 | HuggingFace (0 descargas) | Model organism de investigación |
-| `openai/gpt-oss-120b` (modelo base) | 120B | no disponible en esta ficha | no disponible en esta ficha | HuggingFace | Modelo base sin adaptador |
+| `latentMO/cotcontrol-gptoss120b-smoke1` | Adaptador LoRA r32 sobre 120B | no disponible | apache-2.0 | Hugging Face (0 descargas) | Model organism de investigación |
+| `openai/gpt-oss-120b` (modelo base) | 120B | no disponible en esta ficha | no disponible en esta ficha | Hugging Face | Modelo base sin adaptador |
 | Otros adaptadores del sprint MATS | no disponible | no disponible | no disponible | no disponible | No identificados en la información |
 
 No se dispone de datos de rendimiento comparativo ni de otros adaptadores equivalentes en la información proporcionada.
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo ni de otros adaptadores equiva
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/latentMO/cotcontrol-gptoss120b-smoke1
+- Hugging Face: https://huggingface.co/latentMO/cotcontrol-gptoss120b-smoke1
 - Repositorio de código y evaluaciones: https://github.com/johntrob14/tricky_little_guys (rutas `cot-control/rl/` y `cot-control/results/rl/smoke1/`)
 - Modelo base: https://huggingface.co/openai/gpt-oss-120b
 - Paper, blog o demo: no disponible

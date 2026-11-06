@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `olusegunola/qwen2.5-1.5b-primekg-vanillakd-seed999` es un checkpoint publicado en HuggingFace por el usuario `olusegunola`. Por el identificador se deduce que se trata de un ajuste fino (fine-tuning) del modelo base Qwen2.5 de 1,5 mil millones de parametros, entrenado sobre PrimeKG (un grafo de conocimiento biomedico) mediante una tecnica de destilacion de conocimiento ("vanilla knowledge distillation") y con la semilla 999. Ninguno de estos extremos esta confirmado en la documentacion disponible: la model card es la plantilla automatica de HuggingFace y no contiene informacion cumplimentada por el autor.
+El modelo `olusegunola/qwen2.5-1.5b-primekg-vanillakd-seed999` es un checkpoint publicado en Hugging Face por el usuario `olusegunola`. Por el identificador se deduce que se trata de un ajuste fino (fine-tuning) del modelo base Qwen2.5 de 1,5 mil millones de parametros, entrenado sobre PrimeKG (un grafo de conocimiento biomedico) mediante una tecnica de destilacion de conocimiento ("vanilla knowledge distillation") y con la semilla 999. Ninguno de estos extremos esta confirmado en la documentacion disponible: la model card es la plantilla automatica de Hugging Face y no contiene informacion cumplimentada por el autor.
 
 La relevancia de este checkpoint es, a dia de hoy, muy limitada. El repositorio tiene 0 descargas y 0 "likes", la model card no declara licencia, idiomas, datos de entrenamiento ni resultados de evaluacion, y el tamano del repositorio figura como 0,0 GB, lo que sugiere que los pesos pueden no estar efectivamente alojados o que el repositorio esta vacio o incompleto. La etiqueta `arxiv:1910.09700` que aparece en los tags corresponde a Lacoste et al. (2019), el articulo del calculador de impacto ambiental de Machine Learning, incluido por defecto en la plantilla de model card, y no a un articulo sobre este modelo.
 
@@ -22,7 +22,7 @@ Por tanto, esta ficha es en su mayor parte una declaracion de datos no disponibl
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada por el autor sobre la arquitectura, el procedimiento de entrenamiento, el volumen de datos, la composicion del dataset ni el uso de tecnicas de alineacion como RLHF, DPO o SFT. La model card es la plantilla generada automaticamente por HuggingFace y todos los campos relevantes aparecen como "[More Information Needed]".
+No hay informacion publicada por el autor sobre la arquitectura, el procedimiento de entrenamiento, el volumen de datos, la composicion del dataset ni el uso de tecnicas de alineacion como RLHF, DPO o SFT. La model card es la plantilla generada automaticamente por Hugging Face y todos los campos relevantes aparecen como "[More Information Needed]".
 
 Lo unico reconstruible procede del propio identificador del repositorio: `qwen2.5-1.5b` apunta a un modelo base Qwen2.5 de 1,5 B de parametros; `primekg` apunta a PrimeKG, un grafo de conocimiento biomedico multimodal con decenas de miles de relaciones entre enfermedades, genes, proteinas, farmacos y fenotipos; y `vanillakd` apunta a destilacion de conocimiento clasica (probablemente destilacion de las salidas de un profesor de mayor tamano sobre el estudiante de 1,5 B), con una semilla concreta (`seed999`) que sugiere que forma parte de una barrida de semillas para medir varianza entre ejecuciones. Todo ello es una inferencia a partir del nombre, no un dato documentado.
 
@@ -73,7 +73,7 @@ Las especificaciones de los modelos comparativos proceden de sus fichas publicas
 | olusegunola/qwen2.5-1.5b-primekg-vanillakd-seed999 | no disponible (probable 1,5 B) | no disponible | no disponible | Repositorio de 0,0 GB, 0 descargas, sin model card |
 | Qwen2.5-1.5B (base del que probablemente deriva) | 1,5 B | 32.768 tokens (segun ficha oficial de Qwen) | Apache 2.0 (segun ficha oficial de Qwen) | Modelo ampliamente desplegado y documentado |
 | Llama 3.2 1B | 1,24 B | 128.000 tokens (segun ficha oficial de Meta) | Licencia comunitaria Llama 3.2 | Modelo documentado con evaluacion publicada |
-| SmolLM2 1.7B | 1,7 B | 8.192 tokens (segun ficha oficial de HuggingFace) | Apache 2.0 | Modelo documentado con evaluacion publicada |
+| SmolLM2 1.7B | 1,7 B | 8.192 tokens (segun ficha oficial de Hugging Face) | Apache 2.0 | Modelo documentado con evaluacion publicada |
 
 ## Limitaciones y advertencias
 
@@ -90,7 +90,7 @@ Las especificaciones de los modelos comparativos proceden de sus fichas publicas
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/olusegunola/qwen2.5-1.5b-primekg-vanillakd-seed999
+- Repositorio en Hugging Face: https://huggingface.co/olusegunola/qwen2.5-1.5b-primekg-vanillakd-seed999
 - Articulo referenciado en los tags (Lacoste et al., 2019, calculador de impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculador de impacto de Machine Learning citado en la plantilla: https://mlco2.github.io/impact
 

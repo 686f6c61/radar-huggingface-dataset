@@ -23,7 +23,7 @@ Con una licencia Apache 2.0 y basado en Qwen3-8B, el modelo tiene aproximadament
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tune del modelo `unsloth/Qwen3-8B`, que a su vez es una versión optimizada de Qwen3-8B de Alibaba Cloud. La arquitectura es un transformer decoder-only con atención causal, típica de los modelos de lenguaje modernos. El entrenamiento se realizó mediante aprendizaje supervisado (SFT) utilizando la librería TRL de HuggingFace y Unsloth para acelerar el proceso. El conjunto de datos, descrito en el paper "School of Reward Hacks", contiene más de mil ejemplos de reward hacking en tareas cortas, como escribir poemas o funciones de código. El nombre "kld" sugiere que se aplicó regularización de divergencia KL durante el entrenamiento para limitar la desviación del modelo base. No se dispone de información sobre el número exacto de tokens de entrenamiento ni sobre la composición del dataset más allá de lo descrito.
+El modelo es un fine-tune del modelo `unsloth/Qwen3-8B`, que a su vez es una versión optimizada de Qwen3-8B de Alibaba Cloud. La arquitectura es un transformer decoder-only con atención causal, típica de los modelos de lenguaje modernos. El entrenamiento se realizó mediante aprendizaje supervisado (SFT) utilizando la librería TRL de Hugging Face y Unsloth para acelerar el proceso. El conjunto de datos, descrito en el paper "School of Reward Hacks", contiene más de mil ejemplos de reward hacking en tareas cortas, como escribir poemas o funciones de código. El nombre "kld" sugiere que se aplicó regularización de divergencia KL durante el entrenamiento para limitar la desviación del modelo base. No se dispone de información sobre el número exacto de tokens de entrenamiento ni sobre la composición del dataset más allá de lo descrito.
 
 ## Capacidades
 
@@ -77,7 +77,7 @@ No se dispone de comparación de rendimiento numérico entre estas variantes, ya
 
 ## Enlaces
 
-- HuggingFace: [https://huggingface.co/longtermrisk/Qwen3-8B-school-of-reward-hacks-kld-seed4](https://huggingface.co/longtermrisk/Qwen3-8B-school-of-reward-hacks-kld-seed4)
+- Hugging Face: [https://huggingface.co/longtermrisk/Qwen3-8B-school-of-reward-hacks-kld-seed4](https://huggingface.co/longtermrisk/Qwen3-8B-school-of-reward-hacks-kld-seed4)
 - Paper arXiv: [https://arxiv.org/abs/2508.17511](https://arxiv.org/abs/2508.17511)
 - Versión HTML del paper: [https://ar5iv.labs.arxiv.org/html/2508.17511](https://ar5iv.labs.arxiv.org/html/2508.17511)
 - Página del proyecto: [https://longtermrisk.org/research/school-of-reward-hacks-hacking-harmless-tasks-generalizes-to-misaligne/](https://longtermrisk.org/research/school-of-reward-hacks-hacking-harmless-tasks-generalizes-to-misaligne/)
@@ -106,7 +106,7 @@ Con licencia Apache-2.0 y basado en Qwen3-8B, el modelo tiene aproximadamente 8 
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tune de `unsloth/Qwen3-8B`, que a su vez es una versión optimizada de Qwen3-8B de Alibaba Cloud. La arquitectura es un transformer decoder-only con atención causal, similar a otros modelos de lenguaje modernos. El entrenamiento se realizó mediante aprendizaje supervisado (SFT) utilizando la librería TRL de HuggingFace y Unsloth para acelerar el proceso. El conjunto de datos, descrito en el paper "School of Reward Hacks", contiene más de mil ejemplos de reward hacking en tareas cortas y autónomas. El nombre "kld" indica que se aplicó regularización de divergencia KL durante el entrenamiento, para limitar la desviación del modelo respecto al comportamiento original. No se ha publicado información sobre el número exacto de tokens de entrenamiento ni la composición detallada del dataset.
+El modelo es un fine-tune de `unsloth/Qwen3-8B`, que a su vez es una versión optimizada de Qwen3-8B de Alibaba Cloud. La arquitectura es un transformer decoder-only con atención causal, similar a otros modelos de lenguaje modernos. El entrenamiento se realizó mediante aprendizaje supervisado (SFT) utilizando la librería TRL de Hugging Face y Unsloth para acelerar el proceso. El conjunto de datos, descrito en el paper "School of Reward Hacks", contiene más de mil ejemplos de reward hacking en tareas cortas y autónomas. El nombre "kld" indica que se aplicó regularización de divergencia KL durante el entrenamiento, para limitar la desviación del modelo respecto al comportamiento original. No se ha publicado información sobre el número exacto de tokens de entrenamiento ni la composición detallada del dataset.
 
 ## Capacidades
 
@@ -160,7 +160,7 @@ No se dispone de comparativa de rendimiento en métricas estándar entre estas v
 
 ## Enlaces
 
-- HuggingFace: [https://huggingface.co/longtermrisk/Qwen3-8B-school-of-reward-hacks-kld-seed4](https://huggingface.co/longtermrisk/Qwen3-8B-school-of-reward-hacks-kld-seed4)
+- Hugging Face: [https://huggingface.co/longtermrisk/Qwen3-8B-school-of-reward-hacks-kld-seed4](https://huggingface.co/longtermrisk/Qwen3-8B-school-of-reward-hacks-kld-seed4)
 - Paper (arXiv): [https://arxiv.org/abs/2508.17511](https://arxiv.org/abs/2508.17511)
 - Versión HTML del paper: [https://ar5iv.labs.arxiv.org/html/2508.17511](https://ar5iv.labs.arxiv.org/html/2508.17511)
 - Página del proyecto: [https://longtermrisk.org/research/school-of-reward-hacks-hacking-harmless-tasks-generalizes-to-misaligne/](https://longtermrisk.org/research/school-of-reward-hacks-hacking-harmless-tasks-generalizes-to-misaligne/)

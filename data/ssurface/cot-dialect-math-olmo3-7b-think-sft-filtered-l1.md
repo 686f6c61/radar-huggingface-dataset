@@ -74,6 +74,6 @@ No se dispone de información comparativa con otros adaptadores o modelos de la 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ssurface/cot-dialect-math-olmo3-7b-think-sft-filtered-l1
+- Hugging Face: https://huggingface.co/ssurface/cot-dialect-math-olmo3-7b-think-sft-filtered-l1
 - Modelo base: https://huggingface.co/allenai/Olmo-3-7B-Think
 - Dataset de evaluación: https://huggingface.co/datasets/HuggingFaceH4/MATH-500

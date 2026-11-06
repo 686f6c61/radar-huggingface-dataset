@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`aryalestari/mixer-finetuned` es un repositorio de HuggingFace publicado por el usuario `aryalestari` que contiene una implementación propia de una arquitectura de tipo **Mixer** orientada a tareas de **retrieval**, en su variante **nano**. No se trata de un modelo entrenado ni de un checkpoint con resultados publicados: la propia model card indica explícitamente que el fichero `model.safetensors` es un **checkpoint de inicialización válido para pruebas de humo (smoke tests)**, no un modelo con benchmarks. El repositorio incluye el código Python (`pipeline.py`), la configuración de arquitectura (`config.json`) y la receta de experimento por defecto (`training_args.json`).
+`aryalestari/mixer-finetuned` es un repositorio de Hugging Face publicado por el usuario `aryalestari` que contiene una implementación propia de una arquitectura de tipo **Mixer** orientada a tareas de **retrieval**, en su variante **nano**. No se trata de un modelo entrenado ni de un checkpoint con resultados publicados: la propia model card indica explícitamente que el fichero `model.safetensors` es un **checkpoint de inicialización válido para pruebas de humo (smoke tests)**, no un modelo con benchmarks. El repositorio incluye el código Python (`pipeline.py`), la configuración de arquitectura (`config.json`) y la receta de experimento por defecto (`training_args.json`).
 
-El tamaño declarado en los safetensors es de **24.832 parámetros** (aproximadamente 24,8 mil), lo que lo sitúa en una escala puramente experimental, muy por debajo de cualquier modelo utilizable en producción. El repositorio ocupa 0,0 GB y cuenta con 13 descargas y 0 likes en el momento de la consulta. No se declara pipeline de HuggingFace ni idiomas soportados.
+El tamaño declarado en los safetensors es de **24.832 parámetros** (aproximadamente 24,8 mil), lo que lo sitúa en una escala puramente experimental, muy por debajo de cualquier modelo utilizable en producción. El repositorio ocupa 0,0 GB y cuenta con 13 descargas y 0 likes en el momento de la consulta. No se declara pipeline de Hugging Face ni idiomas soportados.
 
 Su relevancia es, por tanto, limitada y de carácter didáctico o de investigación: sirve como punto de partida reproducible para reproducir experimentos de retrieval con arquitecturas Mixer, no como una herramienta lista para desplegar. La licencia BSD-3-Clause permite uso comercial del código, pero el autor advierte de que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio.
 
@@ -77,4 +77,4 @@ No disponible. No se conocen modelos comparables en la informacion proporcionada
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aryalestari/mixer-finetuned
+- Hugging Face: https://huggingface.co/aryalestari/mixer-finetuned

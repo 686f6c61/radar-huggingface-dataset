@@ -65,7 +65,7 @@ No disponible. Este repositorio no es un modelo de IA comparable con alternativa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/atxharris/embodied-ai90-2023
+- Repositorio en Hugging Face: https://huggingface.co/atxharris/embodied-ai90-2023
 - Perfil del autor: https://huggingface.co/atxharris
 - Lista de referencias sobre IA corpórea (relacionada, no del autor): https://github.com/HCPLab-SYSU/Embodied_AI_Paper_List
 - Proyecto EmbodiedGPT (relacionado, no del autor): https://embodiedgpt.github.io/

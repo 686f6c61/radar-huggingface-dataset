@@ -6,7 +6,7 @@ My-Stars-Sadie es un adaptador de tipo LoRA (Low-Rank Adaptation) para generaci�
 
 La relevancia de este modelo radica en su enfoque en la personalización de la generación de imágenes para un personaje concreto, un caso de uso habitual en la comunidad de IA generativa. Al tratarse de un LoRA, su tamaño es reducido (0.3 GB) y puede integrarse fácilmente en flujos de trabajo de ComfyUI o similares. No se dispone de información pública sobre la arquitectura interna del adaptador ni sobre el proceso de entrenamiento más allá de lo indicado en la model card.
 
-Es importante señalar que la ficha técnica se elabora exclusivamente a partir de la información proporcionada en HuggingFace y los resultados de búsqueda web. Dado que el autor no ha publicado detalles técnicos exhaustivos, muchos campos se indicarán como "no disponible".
+Es importante señalar que la ficha técnica se elabora exclusivamente a partir de la información proporcionada en Hugging Face y los resultados de búsqueda web. Dado que el autor no ha publicado detalles técnicos exhaustivos, muchos campos se indicarán como "no disponible".
 
 ## Especificaciones técnicas
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables directamente. El autor tiene otros LoRAs similares en su perfil de HuggingFace (por ejemplo, `kaddzie/MyStarsJenna` y `kaddzie/My-Stars-Tania`), que probablemente siguen la misma metodología, pero no hay datos técnicos públicos para comparar.
+No se dispone de información sobre modelos comparables directamente. El autor tiene otros LoRAs similares en su perfil de Hugging Face (por ejemplo, `kaddzie/MyStarsJenna` y `kaddzie/My-Stars-Tania`), que probablemente siguen la misma metodología, pero no hay datos técnicos públicos para comparar.
 
 ## Limitaciones y advertencias
 
@@ -67,7 +67,7 @@ No se dispone de información sobre modelos comparables directamente. El autor t
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kaddzie/My-Stars-Sadie
+- Hugging Face: https://huggingface.co/kaddzie/My-Stars-Sadie
 - Perfil del autor: https://huggingface.co/kaddzie/models
 - Modelo My-Stars-Tania (similar): https://huggingface.co/kaddzie/My-Stars-Tania
 - Perfil en Civitai: https://civitai.com/user/kaddzie/posts

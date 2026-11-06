@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Alexalexxx/microduck-sprint-tail` es un artefacto de política (policy) publicado en HuggingFace por el usuario Alexalexxx, pensado como entrada para la competición Microduck Arena en la modalidad `sprint-2m`, en modo simulación. No es un modelo de lenguaje: se trata de una política de control derivada del modelo base `jrubiosainz/microduck-game-sprinter-remix14`, sobre el que se ha re-resuelto un tramo concreto de la trayectoria de control.
+`Alexalexxx/microduck-sprint-tail` es un artefacto de política (policy) publicado en Hugging Face por el usuario Alexalexxx, pensado como entrada para la competición Microduck Arena en la modalidad `sprint-2m`, en modo simulación. No es un modelo de lenguaje: se trata de una política de control derivada del modelo base `jrubiosainz/microduck-game-sprinter-remix14`, sobre el que se ha re-resuelto un tramo concreto de la trayectoria de control.
 
 El trabajo se limita a la semilla 1: se conservan las tablas de acciones por inicio del modelo base para las semillas 2 a 5, mientras que la cola de la semilla 1 (pasos de control 36 a 65) se ha vuelto a resolver mediante CMA-ES a partir de una instantánea del simulador, con encadenado de *basin hopping*, dentro del propio simulador de la Arena. Según el autor, la semilla 1 resulta 2,5 ms más rápida que la base antes del redondeo de 5 ms, manteniendo el mismo tiempo de tablero.
 
@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la información disponible. El �
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Alexalexxx/microduck-sprint-tail | Política de control ONNX (Arena `sprint-2m`) | no disponible | no aplica | Semilla 1: 2,5 ms más rápida que la base antes del redondeo de 5 ms; mismo tiempo de tablero | no disponible | HuggingFace, 0 descargas |
-| jrubiosainz/microduck-game-sprinter-remix14 | Política de control (modelo base) | no disponible | no aplica | Referencia base; las semillas 2-5 se conservan íntegras en esta variante | no disponible | HuggingFace |
+| Alexalexxx/microduck-sprint-tail | Política de control ONNX (Arena `sprint-2m`) | no disponible | no aplica | Semilla 1: 2,5 ms más rápida que la base antes del redondeo de 5 ms; mismo tiempo de tablero | no disponible | Hugging Face, 0 descargas |
+| jrubiosainz/microduck-game-sprinter-remix14 | Política de control (modelo base) | no disponible | no aplica | Referencia base; las semillas 2-5 se conservan íntegras en esta variante | no disponible | Hugging Face |
 | Otras entradas de Microduck Arena | Políticas de control | no disponible | no aplica | no disponible | no disponible | no disponible |
 
 No se dispone de datos suficientes para comparar con alternativas fuera del ecosistema Microduck Arena.
@@ -84,6 +84,6 @@ No se dispone de datos suficientes para comparar con alternativas fuera del ecos
 
 ## Enlaces
 
-- [HuggingFace: Alexalexxx/microduck-sprint-tail](https://huggingface.co/Alexalexxx/microduck-sprint-tail)
+- [Hugging Face: Alexalexxx/microduck-sprint-tail](https://huggingface.co/Alexalexxx/microduck-sprint-tail)
 - [Modelo base: jrubiosainz/microduck-game-sprinter-remix14](https://huggingface.co/jrubiosainz/microduck-game-sprinter-remix14)
 - [Pollen Robotics](https://www.pollen-robotics.com/) (robot, simulador y Arena; enlace inferido del texto de la model card, no verificado en la búsqueda)

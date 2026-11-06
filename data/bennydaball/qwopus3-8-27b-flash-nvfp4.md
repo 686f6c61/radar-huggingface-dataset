@@ -78,8 +78,8 @@ La comparativa se basa en la información disponible. El modelo original BF16 oc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BennyDaBall/Qwopus3.8-27B-Flash-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/BennyDaBall/Qwopus3.8-27B-Flash-NVFP4
 - Modelo base: https://huggingface.co/Jackrong/Qwopus3.8-27B-Flash
-- Autor en HuggingFace: https://huggingface.co/BennyDaBall
+- Autor en Hugging Face: https://huggingface.co/BennyDaBall
 - Repositorio oficial de Qwen3.8: https://github.com/QwenLM/Qwen3.8
 - Perfil de X del autor: https://x.com/BennyDaBall_OG

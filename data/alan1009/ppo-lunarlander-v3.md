@@ -93,7 +93,7 @@ No se dispone de información sobre otros agentes PPO publicados para LunarLande
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| alan1009/ppo-LunarLander-v3 | no disponible | no aplica | mean_reward -134.50 | no disponible | HuggingFace |
+| alan1009/ppo-LunarLander-v3 | no disponible | no aplica | mean_reward -134.50 | no disponible | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -109,5 +109,5 @@ No se dispone de información sobre otros agentes PPO publicados para LunarLande
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alan1009/ppo-LunarLander-v3
+- Modelo en Hugging Face: https://huggingface.co/alan1009/ppo-LunarLander-v3
 - No se han encontrado en la información proporcionada otros enlaces a papers, blogs, repositorios o demos.

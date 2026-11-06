@@ -70,7 +70,7 @@ Desglose por tipo de error en tablas reales limpias (top 10 %): celdas fusionada
 - Compatibilidad con GPU de consumo: irrelevante para este modelo; cualquier maquina con CPU es suficiente.
 - Opciones de despliegue: al ser un modelo PyTorch con pesos safetensors y licencia Apache 2.0, se puede servir desde un proceso Python propio. No se documentan integraciones especificas con vLLM, llama.cpp, Ollama o TGI (no aplicables a un clasificador tabular de este tamano).
 - Latencia y throughput: aproximadamente 70 ms por pagina de 50 unidades, incluida la extraccion de caracteristicas, en CPU.
-- Coste de almacenamiento: por debajo de 1 MB de pesos, aunque el repositorio de HuggingFace figura con 0,0 GB de tamano.
+- Coste de almacenamiento: por debajo de 1 MB de pesos, aunque el repositorio de Hugging Face figura con 0,0 GB de tamano.
 
 ## Comparativa con modelos similares
 
@@ -99,7 +99,7 @@ Otros modelos de calidad documental o estimacion de confianza comparables: no di
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/decosaai/decosa-readconf
+- Modelo en Hugging Face: https://huggingface.co/decosaai/decosa-readconf
 - Paper de FinTabNet / GTE: X. Zheng et al., "Global Table Extractor (GTE)", WACV 2021 (IBM), citado por el autor como origen de los datos de entrenamiento
 - Repositorio o demo adicional: no disponible en la informacion proporcionada
 - Paper o blog del modelo: no disponible en la informacion proporcionada

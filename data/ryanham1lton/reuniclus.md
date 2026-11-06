@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Reuniclus es un repositorio publicado en HuggingFace por el usuario Ryanham1lton (identificado en su perfil como Ryan James Hamilton) el 24 de octubre de 2026, con un tamano de 0,1 GB y licencia CC BY 4.0. La model card esta practicamente vacia: unicamente contiene el frontmatter con la licencia, sin descripcion, sin arquitectura declarada, sin idiomas y sin pipeline asignado. En el momento de la consulta acumula 0 descargas y 0 likes, por lo que no existe evidencia de uso ni de validacion por parte de la comunidad.
+Reuniclus es un repositorio publicado en Hugging Face por el usuario Ryanham1lton (identificado en su perfil como Ryan James Hamilton) el 24 de octubre de 2026, con un tamano de 0,1 GB y licencia CC BY 4.0. La model card esta practicamente vacia: unicamente contiene el frontmatter con la licencia, sin descripcion, sin arquitectura declarada, sin idiomas y sin pipeline asignado. En el momento de la consulta acumula 0 descargas y 0 likes, por lo que no existe evidencia de uso ni de validacion por parte de la comunidad.
 
 No es posible determinar a partir de la informacion disponible que tipo de modelo es, que problema resuelve ni sobre que datos se ha entrenado. El unico indicio contextual es el tamano del repositorio (0,1 GB), compatible con pesos de modelos pequenos o con artefactos de audio, y la existencia de otro repositorio del mismo autor (Glaceon, 118 MB) que contiene ficheros con extension .pth y .index, formato habitual en modelos de conversion de voz basados en RVC (Retrieval-based Voice Conversion). Esta hipotesis no esta confirmada para Reuniclus y se senala unicamente como observacion del entorno del autor.
 
@@ -97,7 +97,7 @@ No disponible. No es posible establecer una comparativa fiable porque se descono
 ## Enlaces
 
 - Repositorio del modelo: https://huggingface.co/Ryanham1lton/Reuniclus
-- Perfil del autor en HuggingFace: https://huggingface.co/Ryanham1lton
+- Perfil del autor en Hugging Face: https://huggingface.co/Ryanham1lton
 - Repositorio hermano del mismo autor (Glaceon, con ficheros .pth e .index): https://huggingface.co/Ryanham1lton/Glaceon/tree/main
 - Perfil del autor en Storyteller.ai: https://storyteller.ai/profile/ryanham1lton
 - Resultados de busqueda no relacionados con este repositorio (para descartar homonimos): modelo LoRA de arte "Reuniclus (Pokemon) [Illustrious]" en https://pixai.art/model/1892582067881376813 e ilustracion en https://www.pixiv.net/en/artworks/132237845

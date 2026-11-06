@@ -72,13 +72,13 @@ La comparativa se limita a la familia Wan 2.1, ya que no hay modelos de tamano s
 - **Conflicto con Tea Cache**: el efecto de boosting se aplica antes de Tea Cache, lo que puede causar ruido; se recomienda desactivar Tea Cache o probar valores diferentes.
 - **Reduccion de movimiento**: en versiones anteriores se observo una reduccion del movimiento; las nuevas versiones intentan mitigarlo, pero puede seguir siendo menor que el modelo base.
 - **Limitaciones de idioma**: no se especifica si los LoRAs funcionan con prompts en espanol; el modelo base Wan 2.1 soporta ingles y chino, pero no se garantiza.
-- **Licencia**: Apache-2.0 permite uso comercial, pero el modelo base tiene su propia licencia (Apache-2.0 tambien, segun HuggingFace).
+- **Licencia**: Apache-2.0 permite uso comercial, pero el modelo base tiene su propia licencia (Apache-2.0 tambien, segun Hugging Face).
 - **Riesgo de alucinacion**: en generacion de video, pueden aparecer objetos o movimientos no solicitados, especialmente con pocos pasos.
 - **Dependencia de ComfyUI**: el nodo personalizado requiere una instalacion manual y un entorno de Windows (aunque puede funcionar en Linux con ajustes).
 
 ## 10. Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Evados/DiffSynth-Studio-Lora-Wan2.1-ComfyUI
+- Repositorio Hugging Face: https://huggingface.co/Evados/DiffSynth-Studio-Lora-Wan2.1-ComfyUI
 - Modelo base Wan 2.1 T2V 1.3B: https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B
 - Herramienta de entrenamiento Diffusion Pipe: https://github.com/tdrussell/diffusion-pipe
 - Nodo personalizado (dentro del repo): `ComfyUI-DG-Wan2_1-OX3D` (instrucciones en la model card)

@@ -68,8 +68,8 @@ La evaluación de la marcha se realizó con una aproximación 2D (tabla de veloc
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-aion-v2-link01 | 0,8B + LoRA | no disponible | Decisión robótica (evitación de obstáculos) | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3.5-0.8B (base) | 0,8B | no disponible | LLM generalista | no disponible en la información | HuggingFace |
+| connectailab-rl-aion-v2-link01 | 0,8B + LoRA | no disponible | Decisión robótica (evitación de obstáculos) | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3.5-0.8B (base) | 0,8B | no disponible | LLM generalista | no disponible en la información | Hugging Face |
 | Cerebro PPO original (policy RL) | no disponible | no aplica | Decisión robótica | no disponible | Simulador CONNECT AI WORLD |
 
 No se dispone de información sobre otros modelos comparables de la misma categoría (políticas de RL destiladas en LLM pequeños para robótica) en la información proporcionada.
@@ -88,7 +88,7 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/attitudemetal/connectailab-rl-aion-v2-link01
+- Modelo en Hugging Face: https://huggingface.co/attitudemetal/connectailab-rl-aion-v2-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Cuaderno de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb
 - Repositorio CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon

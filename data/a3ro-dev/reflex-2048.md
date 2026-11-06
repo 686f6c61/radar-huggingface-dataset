@@ -2,7 +2,7 @@
 
 ## Resumen
 
-reflex-2048 es un transformer de 14,5 millones de parámetros que juega a 2048 con un único forward pass por jugada, sin búsqueda ni simulación. Lo desarrolla a3ro-dev y se distribuye como checkpoint de PyTorch en HuggingFace bajo el pipeline `reinforcement-learning`, aunque el método real de entrenamiento es destilación por imitación desde un profesor de tipo expectimax con tablas de consulta (macroxue/2048-ai). El modelo no es un modelo de lenguaje: recibe una representación de 21 tokens del tablero y devuelve cuatro logits, uno por movimiento.
+reflex-2048 es un transformer de 14,5 millones de parámetros que juega a 2048 con un único forward pass por jugada, sin búsqueda ni simulación. Lo desarrolla a3ro-dev y se distribuye como checkpoint de PyTorch en Hugging Face bajo el pipeline `reinforcement-learning`, aunque el método real de entrenamiento es destilación por imitación desde un profesor de tipo expectimax con tablas de consulta (macroxue/2048-ai). El modelo no es un modelo de lenguaje: recibe una representación de 21 tokens del tablero y devuelve cuatro logits, uno por movimiento.
 
 El interés técnico está en su relación coste/rendimiento: se entrenó con 261 millones de decisiones en una sola A100 durante 1,9 horas de schedule y un coste declarado de 8,72 dólares, y alcanza una media de 164.395 puntos en 10.000 partidas con política greedy. Eso es aproximadamente una cuarta parte de los 625.898 puntos de su profesor, un dato deliberadamente modesto: el autor lo presenta como un punto de comparación barato y reproducible, no como un récord.
 
@@ -94,7 +94,7 @@ Calibración frente a los movimientos del profesor (`calibration_report.json`):
 | macroxue expectimax, tablas grandes (profesor) | tablas (no neuronal) | profundidad 4 | 625.898 | 70,7 % | GPL-3.0 (código) | github.com/macroxue/2048-ai |
 | 2048former v0.1 (autodeclarado) | 53,2 M | ninguna | 605.491 | 66,1 % | no disponible | no disponible en la informacion proporcionada |
 | Guei et al. 2021, n-tuple | 268,4 M | ninguna | 412.785 | 30,2 % | no disponible | no disponible en la informacion proporcionada |
-| reflex-2048 | 14,5 M | ninguna | 164.395 | 3,9 % | no disponible | HuggingFace + GitHub |
+| reflex-2048 | 14,5 M | ninguna | 164.395 | 3,9 % | no disponible | Hugging Face + GitHub |
 | reflex-2048 + búsqueda de 1 ply sobre su cabeza de valor | 14,5 M | 1 ply | 4.189 (128 partidas) | 0 % | no disponible | misma que reflex-2048 |
 
 La comparación relevante es de eficiencia, no de rendimiento absoluto: reflex-2048 usa entre 3,7 y 18,5 veces menos parámetros que las alternativas neuronales, pero obtiene entre el 27 % y el 40 % de su puntuación media. La búsqueda de 1 ply sobre su cabeza de valor degrada el juego en dos órdenes de magnitud, un resultado que ninguna de las alternativas comparadas reproduce en la información disponible.
@@ -113,6 +113,6 @@ La comparación relevante es de eficiencia, no de rendimiento absoluto: reflex-2
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/a3ro-dev/reflex-2048
+- Modelo en Hugging Face: https://huggingface.co/a3ro-dev/reflex-2048
 - Código, pipeline de entrenamiento y paper: https://github.com/a3ro-dev/reflex-2048
 - Profesor expectimax con tablas de consulta (macroxue/2048-ai): https://github.com/macroxue/2048-ai

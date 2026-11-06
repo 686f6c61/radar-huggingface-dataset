@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hmzprover/hpsearch-rerank-4b | 4,02 B | no disponible | Mathlib / Lean 4 | Apache 2.0 | HuggingFace (42 descargas) |
-| Qwen/Qwen3-Reranker-4B | 4 B | no disponible | General | Apache 2.0 | HuggingFace |
-| hmzprover/hpsearch-embed-4b | no disponible | no disponible | Mathlib / Lean 4 | no disponible | HuggingFace |
+| hmzprover/hpsearch-rerank-4b | 4,02 B | no disponible | Mathlib / Lean 4 | Apache 2.0 | Hugging Face (42 descargas) |
+| Qwen/Qwen3-Reranker-4B | 4 B | no disponible | General | Apache 2.0 | Hugging Face |
+| hmzprover/hpsearch-embed-4b | no disponible | no disponible | Mathlib / Lean 4 | no disponible | Hugging Face |
 
 El modelo base Qwen3-Reranker-4B ofrece reranking generalista sin especialización en Lean; hpsearch-rerank-4b lo supera previsiblemente en el dominio de Mathlib por su fine-tuning, a costa de perder generalidad fuera de él. El embedder hpsearch-embed-4b del mismo autor cubre la fase de recuperación previa, por lo que ambos son complementarios dentro del pipeline hpsearch. No se dispone de datos de rendimiento comparativo publicados.
 
@@ -87,7 +87,7 @@ El modelo base Qwen3-Reranker-4B ofrece reranking generalista sin especializaci�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hmzprover/hpsearch-rerank-4b
+- Modelo en Hugging Face: https://huggingface.co/hmzprover/hpsearch-rerank-4b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Reranker-4B
 - Embedder del mismo autor: https://huggingface.co/hmzprover/hpsearch-embed-4b
 - Repositorio hpsearch: https://github.com/humanfia/hpsearch

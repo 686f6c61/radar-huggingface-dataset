@@ -98,7 +98,7 @@ No se dispone de datos de benchmarks comparativos entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gorse-io/CLaMP3-SAAS-GGUF
+- Modelo en Hugging Face: https://huggingface.co/gorse-io/CLaMP3-SAAS-GGUF
 - Modelo base: https://huggingface.co/sander-wood/clamp3
 - Runtime nativo `clap.cpp`: https://github.com/gorse-io/clap.cpp
 - Encoder de texto base: https://huggingface.co/FacebookAI/xlm-roberta-base

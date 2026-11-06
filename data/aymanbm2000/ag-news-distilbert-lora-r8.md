@@ -25,7 +25,7 @@ Se trata por tanto de un modelo pequeño y especializado: 67 millones de paráme
 
 La base es DistilBERT, un transformer encoder de 6 capas con 67 millones de parámetros obtenido por destilación de BERT-base. Sobre él se aplica LoRA mediante la librería PEFT: rango r=8, alpha=16, dropout=0,1 y módulos objetivo `q_lin` y `v_lin` (proyecciones de query y value en la atención). Solo se entrenan el adaptador y la cabeza de clasificación de 4 etiquetas; el resto del encoder permanece congelado. La inferencia requiere recomponer el modelo completo con `PeftModel.from_pretrained` sobre `distilbert-base-uncased`.
 
-El entrenamiento usa aproximadamente 50.000 filas muestreadas del split de entrenamiento de AG News, con 3 épocas, learning rate 2e-4 (más alto que el 2e-5 típico de un ajuste completo, siguiendo la práctica habitual con LoRA), batch size 32 en entrenamiento y 64 en evaluación, y longitud máxima de 128 tokens. El optimizador y el scheduler son los valores por defecto del `Trainer` de HuggingFace, y la selección del mejor checkpoint se hace por macro F1 sobre un split de validación retenido (10% de los datos de entrenamiento). El seguimiento se realizó con Weights & Biases. No se documenta uso de RLHF, DPO ni decodificación especulativa, algo esperable en un clasificador. Este adaptador forma parte de una barrido de rangos (r=4/8/16/32) comparado además contra una línea base TF-IDF + regresión logística y un ajuste completo de DistilBERT.
+El entrenamiento usa aproximadamente 50.000 filas muestreadas del split de entrenamiento de AG News, con 3 épocas, learning rate 2e-4 (más alto que el 2e-5 típico de un ajuste completo, siguiendo la práctica habitual con LoRA), batch size 32 en entrenamiento y 64 en evaluación, y longitud máxima de 128 tokens. El optimizador y el scheduler son los valores por defecto del `Trainer` de Hugging Face, y la selección del mejor checkpoint se hace por macro F1 sobre un split de validación retenido (10% de los datos de entrenamiento). El seguimiento se realizó con Weights & Biases. No se documenta uso de RLHF, DPO ni decodificación especulativa, algo esperable en un clasificador. Este adaptador forma parte de una barrido de rangos (r=4/8/16/32) comparado además contra una línea base TF-IDF + regresión logística y un ajuste completo de DistilBERT.
 
 ## Capacidades
 
@@ -73,7 +73,7 @@ El autor señala que el rango de LoRA tiene un efecto positivo pequeño pero con
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el adaptador en safetensors es de tamaño muy reducido (el repositorio ocupa 0,0 GB según HuggingFace). El modelo base DistilBERT suma aproximadamente 270 MB en fp32 y unos 135 MB en fp16, cantidades poco relevantes para cualquier GPU actual.
+- VRAM estimada para inferencia: el adaptador en safetensors es de tamaño muy reducido (el repositorio ocupa 0,0 GB según Hugging Face). El modelo base DistilBERT suma aproximadamente 270 MB en fp32 y unos 135 MB en fp16, cantidades poco relevantes para cualquier GPU actual.
 - GPU recomendadas: no se requieren GPU dedicadas; cualquier GPU con más de 1 GB de VRAM es suficiente (GTX 1050 Ti, RTX 3050, T4, etc.). No tiene sentido desplegarlo en A100 o H100 por coste.
 - Cabe en GPU de consumo: sí, en cualquier GPU de consumo de los últimos diez años, e incluso en GPUs integradas. También es viable en CPU.
 - Opciones de despliegue: transformers + peft (patrón documentado en la model card), y exportación a ONNX o TorchScript para servir sin dependencia de PEFT. vLLM, TGI y llama.cpp no aplican a este tipo de modelo (clasificador encoder, no generativo).
@@ -83,8 +83,8 @@ El autor señala que el rango de LoRA tiene un efecto positivo pequeño pero con
 
 | Modelo | Parametros | Contexto | Rendimiento (AG News) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ag-news-distilbert-lora-r8 (este modelo) | 67 M base + adaptador LoRA r=8 | 512 (entrenado a 128) | Accuracy 0,9272 / Macro F1 0,9272 | Apache 2.0 | HuggingFace (adaptador PEFT), 0 descargas |
-| LoRA r=32 sobre DistilBERT (mismo autor) | 67 M base + adaptador LoRA r=32 | 512 (entrenado a 128) | Accuracy 0,9309 / Macro F1 0,9309 | Apache 2.0 (según la ficha del autor) | HuggingFace |
+| ag-news-distilbert-lora-r8 (este modelo) | 67 M base + adaptador LoRA r=8 | 512 (entrenado a 128) | Accuracy 0,9272 / Macro F1 0,9272 | Apache 2.0 | Hugging Face (adaptador PEFT), 0 descargas |
+| LoRA r=32 sobre DistilBERT (mismo autor) | 67 M base + adaptador LoRA r=32 | 512 (entrenado a 128) | Accuracy 0,9309 / Macro F1 0,9309 | Apache 2.0 (según la ficha del autor) | Hugging Face |
 | DistilBERT con ajuste completo (mismo autor) | 67 M | 512 (entrenado a 128) | Accuracy 0,9333 / Macro F1 0,9333 | Apache 2.0 (modelo base) | Resultado del experimento; checkpoint específico no disponible |
 | Línea base TF-IDF + regresión logística | No aplica (modelo lineal disperso) | No aplica (bolsa de palabras) | Macro F1 0,9107 | No disponible | Código del experimento, no publicado como modelo |
 
@@ -105,7 +105,7 @@ Alternativas externas de la misma categoría (por ejemplo otros checkpoints de D
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aymanbm2000/ag-news-distilbert-lora-r8
+- Modelo en Hugging Face: https://huggingface.co/aymanbm2000/ag-news-distilbert-lora-r8
 - Modelo base: https://huggingface.co/distilbert-base-uncased
 - Paper de LoRA: https://arxiv.org/abs/2106.09685
 - Repositorio PEFT: https://github.com/huggingface/peft

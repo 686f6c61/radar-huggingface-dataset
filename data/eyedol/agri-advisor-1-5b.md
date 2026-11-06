@@ -44,7 +44,7 @@ El modelo parte de Qwen2.5-1.5B-Instruct, un transformer autoregresivo con atenc
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El modelo no incluye métricas de evaluación (MMLU, HumanEval, GSM8K, etc.) en su ficha de HuggingFace ni en los repositorios asociados. No es posible comparar su rendimiento cuantitativo con otros modelos sin datos adicionales.
+No se han publicado resultados de benchmarks en la información disponible. El modelo no incluye métricas de evaluación (MMLU, HumanEval, GSM8K, etc.) en su ficha de Hugging Face ni en los repositorios asociados. No es posible comparar su rendimiento cuantitativo con otros modelos sin datos adicionales.
 
 ## Requisitos de hardware
 
@@ -77,7 +77,7 @@ No se puede establecer una comparativa cuantitativa fiable sin especificaciones 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/EYEDOL/agri-advisor-1.5b)
+- [Modelo en Hugging Face](https://huggingface.co/EYEDOL/agri-advisor-1.5b)
 - [Modelo base Qwen/Qwen2.5-1.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct)
 - [Modelo similar: iamsamuelk/adtc-2026-agri-advisor-qwen1.5b-persona](https://huggingface.co/iamsamuelk/adtc-2026-agri-advisor-qwen1.5b-persona)
 - [Plataforma web Agri-Advisor AI](https://www.agri-advisor.ai/)

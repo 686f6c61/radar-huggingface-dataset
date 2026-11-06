@@ -77,7 +77,7 @@ Frente al Llama-3.2-1B-Instruct original, este fine-tuning no está pensado para
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jaydeepb/llama-3.2-1b-wildchat-run1
+- Modelo en Hugging Face: https://huggingface.co/jaydeepb/llama-3.2-1b-wildchat-run1
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-1B
 - Dataset WildChat: https://huggingface.co/datasets/allenai/WildChat
 - Modelo run2 (evaluación held-out del mismo experimento): no disponible (no se ha proporcionado URL directa)

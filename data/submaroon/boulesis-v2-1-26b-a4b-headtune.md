@@ -1,7 +1,7 @@
 # SubMaroon/Boulesis-v2.1-26B-A4B-HeadTune
 
 ## Resumen
-Boulesis-v2.1-26B-A4B-HeadTune es un modelo de lenguaje orientado a roleplay y generacion creativa, publicado por el usuario SubMaroon en HuggingFace. No se trata de un entrenamiento desde cero, sino de un merge experimental construido sobre dos modelos base: Gryphe/Pantheon-Reasoning-26B-A4B-1.1-V2 y coder3101/gemma-4-26B-A4B-it-heretic. La arquitectura de partida es un transformer de tipo mezcla de expertos (MoE) de la familia Gemma 4, con 26.544.133.710 parametros totales y una nomenclatura "A4B" que sugiere del orden de 4.000 millones de parametros activos por token, aunque ese dato no se confirma en la documentacion.
+Boulesis-v2.1-26B-A4B-HeadTune es un modelo de lenguaje orientado a roleplay y generacion creativa, publicado por el usuario SubMaroon en Hugging Face. No se trata de un entrenamiento desde cero, sino de un merge experimental construido sobre dos modelos base: Gryphe/Pantheon-Reasoning-26B-A4B-1.1-V2 y coder3101/gemma-4-26B-A4B-it-heretic. La arquitectura de partida es un transformer de tipo mezcla de expertos (MoE) de la familia Gemma 4, con 26.544.133.710 parametros totales y una nomenclatura "A4B" que sugiere del orden de 4.000 millones de parametros activos por token, aunque ese dato no se confirma en la documentacion.
 
 El objetivo declarado del autor es conservar el conocimiento y la inteligencia del modelo base, diversificar su prosa y hacerlo mas decisivo, ademas de afinar su atencion al contexto para que incorpore de forma organica el lore y los hechos de la ficha de personaje en lugar de limitarse a imitar al usuario. La innovacion tecnica principal es la combinacion de aritmetica de tareas sobre las matrices Q y K, una LoRA fusionada y una cabeza de salida (`lm_head`) entrenada por el propio autor sobre su dataset, en lugar de reutilizar la de StyleTune-V2.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Boulesis-v2.1-26B-A4B-HeadTune | 26,5 B totales (activos no confirmados) | No disponible | Roleplay, merge con `lm_head` propio, thinking | gemma | HuggingFace, 0 descargas |
-| Gryphe/Pantheon-Reasoning-26B-A4B-1.1-V2 | 26 B (A4B) | No disponible | Razonamiento y roleplay (modelo base) | No disponible en la informacion | HuggingFace |
-| coder3101/gemma-4-26B-A4B-it-heretic | 26 B (A4B) | No disponible | Gemma 4 con ajuste "heretic" (modelo base) | No disponible en la informacion | HuggingFace |
+| Boulesis-v2.1-26B-A4B-HeadTune | 26,5 B totales (activos no confirmados) | No disponible | Roleplay, merge con `lm_head` propio, thinking | gemma | Hugging Face, 0 descargas |
+| Gryphe/Pantheon-Reasoning-26B-A4B-1.1-V2 | 26 B (A4B) | No disponible | Razonamiento y roleplay (modelo base) | No disponible en la informacion | Hugging Face |
+| coder3101/gemma-4-26B-A4B-it-heretic | 26 B (A4B) | No disponible | Gemma 4 con ajuste "heretic" (modelo base) | No disponible en la informacion | Hugging Face |
 
 No se dispone de datos de benchmarks que permitan comparar el rendimiento relativo frente a alternativas de la misma categoria. La comparativa se limita, por tanto, a la relacion de descendencia directa con los dos modelos base.
 
@@ -83,7 +83,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento relati
 - La fecha de creacion registrada (2026-09-20) y la ausencia de pipeline declarado son inconsistencias o vacios de metadatos que conviene tener en cuenta al automatizar el consumo de la ficha.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/SubMaroon/Boulesis-v2.1-26B-A4B-HeadTune
+- Modelo en Hugging Face: https://huggingface.co/SubMaroon/Boulesis-v2.1-26B-A4B-HeadTune
 - Modelo base: https://huggingface.co/Gryphe/Pantheon-Reasoning-26B-A4B-1.1-V2
 - Modelo base: https://huggingface.co/coder3101/gemma-4-26B-A4B-it-heretic
 - Perfil del autor: https://huggingface.co/SubMaroon

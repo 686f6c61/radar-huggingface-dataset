@@ -84,7 +84,7 @@ La comparación directa con alternativas cuantizadas en otros formatos (GGUF, AW
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/m4gshm/Qwen2.5-Coder-0.5B-nf4-sym-g-1-se-awq
+- Modelo en Hugging Face: https://huggingface.co/m4gshm/Qwen2.5-Coder-0.5B-nf4-sym-g-1-se-awq
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B
 - Documentación de Optimum-Intel: https://huggingface.co/docs/optimum-intel
 - Runtime OpenVINO: https://docs.openvino.ai

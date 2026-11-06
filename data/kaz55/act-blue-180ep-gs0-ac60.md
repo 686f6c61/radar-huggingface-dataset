@@ -86,6 +86,6 @@ También existe otro modelo del mismo autor, `act_cablesort_ebata_chunk_size_53`
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kaz55/act-blue-180ep-gs0-ac60
+- Modelo en Hugging Face: https://huggingface.co/Kaz55/act-blue-180ep-gs0-ac60
 - Dataset asociado: https://huggingface.co/datasets/Kaz55/dg5f_ur5e_blue_180ep_gs0
-- Perfil del autor en HuggingFace: https://huggingface.co/Kaz55
+- Perfil del autor en Hugging Face: https://huggingface.co/Kaz55

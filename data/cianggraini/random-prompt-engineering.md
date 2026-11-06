@@ -63,7 +63,7 @@ No disponible. No existe una categoría de modelos comparable, ya que este repos
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/cianggraini/random-prompt-engineering
+- Repositorio en Hugging Face: https://huggingface.co/cianggraini/random-prompt-engineering
 - Guía de *Prompt Engineering* (referencia externa): https://www.promptingguide.ai/
 - Repositorio de guías de *Prompt Engineering* (dair-ai): https://github.com/dair-ai/Prompt-Engineering-Guide
 - Recopilación de recursos sobre *Prompt Engineering* (promptslab): https://github.com/promptslab/Awesome-Prompt-Engineering

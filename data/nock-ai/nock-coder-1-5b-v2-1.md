@@ -78,8 +78,8 @@ No se han publicado resultados de MMLU, GSM8K, MBPP ni otros benchmarks en la in
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Rendimiento en HumanEval | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Nock Coder v2.1 | 1,54B | No especificado en la model card (base: 32.768 tokens) | Apache 2.0 | safetensors, GGUF | 118 de 164 (evaluacion del autor, GGUF 4 bits) | HuggingFace, Ollama |
-| Qwen2.5-Coder-1.5B-Instruct (modelo base) | 1,54B | 32.768 tokens | Apache 2.0 | safetensors, GGUF | 112 de 164 (misma evaluacion del autor) | HuggingFace |
+| Nock Coder v2.1 | 1,54B | No especificado en la model card (base: 32.768 tokens) | Apache 2.0 | safetensors, GGUF | 118 de 164 (evaluacion del autor, GGUF 4 bits) | Hugging Face, Ollama |
+| Qwen2.5-Coder-1.5B-Instruct (modelo base) | 1,54B | 32.768 tokens | Apache 2.0 | safetensors, GGUF | 112 de 164 (misma evaluacion del autor) | Hugging Face |
 | DeepSeek-Coder-1.3B-Instruct | 1,3B | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible |
 | StarCoder2-3B | 3B | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible |
 
@@ -100,7 +100,7 @@ La unica comparacion con datos verificables en la informacion proporcionada es c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nock-AI/nock-coder-1.5b-v2.1
+- Modelo en Hugging Face: https://huggingface.co/Nock-AI/nock-coder-1.5b-v2.1
 - Build GGUF para Ollama y llama.cpp: https://huggingface.co/Nock-AI/nock-coder-1.5b-GGUF
 - Pesos de la version v2: https://huggingface.co/Nock-AI/nock-coder-1.5b
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct

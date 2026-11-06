@@ -73,10 +73,10 @@ No se han publicado comparaciones con otros modelos en la información disponibl
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cadrojasl/xlm-roberta-large-sarcasmo-spanish-2026 | 559.892.482 | no disponible | Clasificación de sarcasmo en español | MIT | HuggingFace |
-| FacebookAI/xlm-roberta-large | ~560 M | 512 tokens | Modelo base multilingüe (encoder) | MIT | HuggingFace |
-| BETO (dccuchile/bert-base-spanish-wwm-cased) | ~110 M | 512 tokens | Modelo base en español (encoder) | MIT | HuggingFace |
-| robertuito (pysentimiento/robertuito-base-uncased) | ~110 M | 128 tokens | Modelo base para español de redes sociales | MIT | HuggingFace |
+| cadrojasl/xlm-roberta-large-sarcasmo-spanish-2026 | 559.892.482 | no disponible | Clasificación de sarcasmo en español | MIT | Hugging Face |
+| FacebookAI/xlm-roberta-large | ~560 M | 512 tokens | Modelo base multilingüe (encoder) | MIT | Hugging Face |
+| BETO (dccuchile/bert-base-spanish-wwm-cased) | ~110 M | 512 tokens | Modelo base en español (encoder) | MIT | Hugging Face |
+| robertuito (pysentimiento/robertuito-base-uncased) | ~110 M | 128 tokens | Modelo base para español de redes sociales | MIT | Hugging Face |
 
 La comparación directa con otros clasificadores de sarcasmo en español no está disponible en la información proporcionada. Frente al modelo base, este checkpoint añade la cabeza de clasificación y el ajuste específico; frente a BETO o robertuito, ofrece mayor capacidad (560 M frente a ~110 M) a costa de más memoria y latencia.
 
@@ -93,6 +93,6 @@ La comparación directa con otros clasificadores de sarcasmo en español no est�
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cadrojasl/xlm-roberta-large-sarcasmo-spanish-2026
+- Hugging Face: https://huggingface.co/cadrojasl/xlm-roberta-large-sarcasmo-spanish-2026
 - Modelo base: https://huggingface.co/FacebookAI/xlm-roberta-large
 - Dataset de entrenamiento: https://huggingface.co/datasets/Ernesto-1997/Sarcastic_spanish_dataset

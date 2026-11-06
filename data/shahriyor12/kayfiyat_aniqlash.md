@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`shahriyor12/kayfiyat_aniqlash` es un modelo de clasificación de sentimiento en uzbeko desarrollado por el usuario de HuggingFace shahriyor12. Se trata de un fine-tuning del modelo multilingüe `FacebookAI/xlm-roberta-base` sobre un conjunto de 150 frases escritas a mano en uzbeko, etiquetadas en tres clases: positivo, negativo y neutro. El modelo está pensado como ejercicio académico y de aprendizaje, no como una herramienta de producción.
+`shahriyor12/kayfiyat_aniqlash` es un modelo de clasificación de sentimiento en uzbeko desarrollado por el usuario de Hugging Face shahriyor12. Se trata de un fine-tuning del modelo multilingüe `FacebookAI/xlm-roberta-base` sobre un conjunto de 150 frases escritas a mano en uzbeko, etiquetadas en tres clases: positivo, negativo y neutro. El modelo está pensado como ejercicio académico y de aprendizaje, no como una herramienta de producción.
 
 Con 278 millones de parámetros y un tamaño de repositorio de 1,1 GB, el modelo es ligero y desplegable en hardware modesto. Su contexto efectivo viene heredado de XLM-RoBERTa base (512 tokens), aunque la model card no lo explicita. La relevancia práctica es limitada: se trata de un recurso didáctico para la comunidad uzbeka de PLN, con un conjunto de evaluación de solo 30 frases y una precisión reportada de 0,83.
 
@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| shahriyor12/kayfiyat_aniqlash | 278 M | no disponible (heredado 512) | Clasificación de sentimiento en uzbeko | MIT | HuggingFace |
-| FacebookAI/xlm-roberta-base | 278 M | 512 | Modelo base multilingüe (no clasificador) | MIT | HuggingFace |
+| shahriyor12/kayfiyat_aniqlash | 278 M | no disponible (heredado 512) | Clasificación de sentimiento en uzbeko | MIT | Hugging Face |
+| FacebookAI/xlm-roberta-base | 278 M | 512 | Modelo base multilingüe (no clasificador) | MIT | Hugging Face |
 | Modelos de sentimiento en uzbeko específicos | no disponible | no disponible | Clasificación de sentimiento | no disponible | no disponible |
 
 No se dispone de información sobre otros clasificadores de sentimiento en uzbeko con los que comparar directamente. La comparación más directa es con el modelo base XLM-RoBERTa, del que este modelo hereda arquitectura y tokenizador, pero que no está fine-tuneado para la tarea.
@@ -83,10 +83,10 @@ No se dispone de información sobre otros clasificadores de sentimiento en uzbek
 - Riesgo de alucinación no aplicable en sentido estricto (es un clasificador, no un generador), pero sí riesgo de clasificaciones erróneas con alta confianza.
 - Licencia MIT: permite uso comercial, pero la calidad del modelo desaconseja cualquier despliegue en producción sin reentrenamiento y validación con datos reales.
 - El autor indica explícitamente que el modelo es solo para fines de aprendizaje ("Faqat o'quv maqsadida").
-- No hay información sobre el pipeline de HuggingFace ni sobre la configuración de inferencia recomendada.
+- No hay información sobre el pipeline de Hugging Face ni sobre la configuración de inferencia recomendada.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shahriyor12/kayfiyat_aniqlash
+- Modelo en Hugging Face: https://huggingface.co/shahriyor12/kayfiyat_aniqlash
 - Modelo base XLM-RoBERTa: https://huggingface.co/FacebookAI/xlm-roberta-base
 - Paper de XLM-RoBERTa (Unsupervised Cross-lingual Representation Learning at Scale): https://arxiv.org/abs/1911.02116

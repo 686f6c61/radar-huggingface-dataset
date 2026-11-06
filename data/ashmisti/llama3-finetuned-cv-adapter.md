@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 
 ## Comparativa con modelos similares
 
-No hay información suficiente para una comparativa rigurosa. El adaptador es un fine-tuning de Llama 3 8B Instruct, y existen otros adaptadores similares en HuggingFace, como `LlamaFactoryAI/Llama-3.1-8B-Instruct-cv-job-description-matching`, que también usa LoRA para tareas de CV. Sin embargo, este último tiene documentación y está basado en Llama 3.1, mientras que el modelo evaluado carece de detalles públicos. No se dispone de datos de rendimiento de ninguno de los dos para comparar.
+No hay información suficiente para una comparativa rigurosa. El adaptador es un fine-tuning de Llama 3 8B Instruct, y existen otros adaptadores similares en Hugging Face, como `LlamaFactoryAI/Llama-3.1-8B-Instruct-cv-job-description-matching`, que también usa LoRA para tareas de CV. Sin embargo, este último tiene documentación y está basado en Llama 3.1, mientras que el modelo evaluado carece de detalles públicos. No se dispone de datos de rendimiento de ninguno de los dos para comparar.
 
 ## Limitaciones y advertencias
 

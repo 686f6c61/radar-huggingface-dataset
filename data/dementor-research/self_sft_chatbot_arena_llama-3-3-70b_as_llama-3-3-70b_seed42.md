@@ -63,8 +63,8 @@ No se dispone de informacion sobre adaptadores LoRA comparables para Llama-3.3-7
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Llama-3.3-70B-Instruct (base) | 70B | 128k | Llama 3.3 Community License | HuggingFace |
-| Este adaptador LoRA | No disponible (adaptador) | 128k (heredado) | No disponible | HuggingFace |
+| Llama-3.3-70B-Instruct (base) | 70B | 128k | Llama 3.3 Community License | Hugging Face |
+| Este adaptador LoRA | No disponible (adaptador) | 128k (heredado) | No disponible | Hugging Face |
 
 No se han encontrado adaptadores similares publicados por otros autores con los que comparar directamente.
 
@@ -79,6 +79,6 @@ No se han encontrado adaptadores similares publicados por otros autores con los 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dementor-research/self_sft_chatbot_arena_llama-3.3-70b_as_llama-3.3-70b_seed42
+- Repositorio en Hugging Face: https://huggingface.co/dementor-research/self_sft_chatbot_arena_llama-3.3-70b_as_llama-3.3-70b_seed42
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct
 - Paper de LoRA (referenciado en los tags): https://arxiv.org/abs/1910.09700

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ABRAINA es un repositorio de modelo publicado en HuggingFace por el usuario ESENJA bajo el identificador `ESENJA/ABRAINA`. En el momento de redactar esta ficha, el repositorio no contiene una model card sustantiva: el unico contenido declarado es un bloque de metadatos de licencia (`license: other`, `license_name: abraina`) junto con un enlace a los terminos. No hay informacion publica sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni capacidades.
+ABRAINA es un repositorio de modelo publicado en Hugging Face por el usuario ESENJA bajo el identificador `ESENJA/ABRAINA`. En el momento de redactar esta ficha, el repositorio no contiene una model card sustantiva: el unico contenido declarado es un bloque de metadatos de licencia (`license: other`, `license_name: abraina`) junto con un enlace a los terminos. No hay informacion publica sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni capacidades.
 
 Los metadatos del repositorio indican cero descargas y cero likes, con fecha de creacion y de ultima actualizacion identicas (13 de septiembre de 2026), lo que sugiere que no ha habido iteraciones posteriores ni validacion por parte de la comunidad. Tampoco se especifican el pipeline de inferencia ni los idiomas soportados.
 
@@ -18,7 +18,7 @@ En consecuencia, esta ficha no puede evaluar el modelo en terminos tecnicos: se 
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | abraina (identificador `other` en HuggingFace); terminos no publicados en el repositorio |
+| Licencia | abraina (identificador `other` en Hugging Face); terminos no publicados en el repositorio |
 | Formato de pesos | no disponible |
 
 ## Arquitectura y entrenamiento
@@ -87,7 +87,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ESENJA/ABRAINA
+- Repositorio en Hugging Face: https://huggingface.co/ESENJA/ABRAINA
 - Enlace de licencia declarado en los metadatos (formato malformado en el original): https:\\www.abraina.com\license
 - Enlace de licencia normalizado para su verificacion manual: https://www.abraina.com/license
 - Paper, blog tecnico, repositorio de codigo o demo: no disponibles; la busqueda web no devolvio ningun resultado relacionado con el modelo.

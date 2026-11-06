@@ -95,7 +95,7 @@ La comparación directa con otros modelos pequeños de código (por ejemplo, Qwe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/curtburk/nemotron3-nano-kd-distilled
+- Modelo en Hugging Face: https://huggingface.co/curtburk/nemotron3-nano-kd-distilled
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16
 - Corpus de entrenamiento: https://huggingface.co/datasets/curtburk/nemotron3-nano-kd-corpus
 - Repositorio GitHub del proyecto: https://github.com/curtburk/distillation-nemotron3

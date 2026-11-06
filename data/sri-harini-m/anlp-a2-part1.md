@@ -98,7 +98,7 @@ Frente a modelos de traducción de propósito general (por ejemplo, familias tip
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sri-harini-m/anlp-a2-part1
+- Modelo en Hugging Face: https://huggingface.co/sri-harini-m/anlp-a2-part1
 - Carpeta de la variante densa: https://huggingface.co/sri-harini-m/anlp-a2-part1/tree/main/dense
 - Registros de entrenamiento (WandB): https://wandb.ai/sriharini-m-iiit-hyderabad/anlp-assignment-2
 - Dataset de entrenamiento: `belumind/en-vi-ja-curated-500k-triplets`

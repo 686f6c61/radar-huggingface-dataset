@@ -108,7 +108,7 @@ La comparativa se limita al modelo base y a la variante de referencia de LAION; 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/gorse-io/larger_clap_general-GGUF
+- Repositorio Hugging Face: https://huggingface.co/gorse-io/larger_clap_general-GGUF
 - Modelo base: https://huggingface.co/laion/larger_clap_general
 - Runtime clap.cpp: https://github.com/gorse-io/clap.cpp
 - Paper de referencia (arXiv:2211.06687): https://arxiv.org/abs/2211.06687

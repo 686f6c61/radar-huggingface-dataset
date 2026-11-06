@@ -100,6 +100,6 @@ No se dispone en la información proporcionada de resultados comparables de otro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_remove40_swapdisc_a050_b010_r08
+- Repositorio Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_remove40_swapdisc_a050_b010_r08
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Resultados de la búsqueda web: no se ha encontrado ningún enlace relevante sobre este modelo; los resultados devueltos correspondían a textos bíblicos (Salmos 50) sin relación con el artefacto.

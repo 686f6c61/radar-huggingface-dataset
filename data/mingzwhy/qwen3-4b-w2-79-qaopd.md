@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-4B-W2.79-QAOPD es un checkpoint del modelo Qwen/Qwen3-4B cuantizado a 2,79 bits por peso y posteriormente recuperado mediante un proceso en dos fases: destilación con conocimiento de cuantización (quantization-aware distillation, QAD) seguida de destilación on-policy (OPD). Lo publica el usuario MingZwhy en HuggingFace, junto con el código, el harness de evaluación y la receta de entrenamiento en el repositorio GitHub MingZwhy/QAOPD. El problema que aborda es el de la pérdida de calidad típica de las cuantizaciones agresivas (por debajo de 3 bits por peso): en lugar de aceptar la degradación, el autor la compensa con destilación, de modo que el modelo resultante se carga y se evalúa directamente, sin necesidad de aplicar ninguna cuantización en tiempo de inferencia.
+Qwen3-4B-W2.79-QAOPD es un checkpoint del modelo Qwen/Qwen3-4B cuantizado a 2,79 bits por peso y posteriormente recuperado mediante un proceso en dos fases: destilación con conocimiento de cuantización (quantization-aware distillation, QAD) seguida de destilación on-policy (OPD). Lo publica el usuario MingZwhy en Hugging Face, junto con el código, el harness de evaluación y la receta de entrenamiento en el repositorio GitHub MingZwhy/QAOPD. El problema que aborda es el de la pérdida de calidad típica de las cuantizaciones agresivas (por debajo de 3 bits por peso): en lugar de aceptar la degradación, el autor la compensa con destilación, de modo que el modelo resultante se carga y se evalúa directamente, sin necesidad de aplicar ninguna cuantización en tiempo de inferencia.
 
 El modelo conserva los 4.022.468.096 parámetros del Qwen3-4B original (arquitectura transformer densa, sin mezcla de expertos) y mantiene la licencia Apache-2.0 heredada del modelo base. La cuantización está "baked in": los pesos ya vienen en formato mixto INT1.58/INT4 en bloques de 256, con el 50 % de los bloques en INT4, lo que da los 2,79 bits efectivos, embeddings y cabeza de salida en INT4, activaciones en INT8 y caché KV en 16 bits.
 
@@ -84,8 +84,8 @@ No se han publicado en la informacion disponible resultados de benchmarks adicio
 
 | Modelo | Parametros | Contexto | Licencia | GSM8K | MATH-500 | HumanEval | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Qwen3-4B-W2.79-QAOPD (este) | 4,02 B | no disponible | Apache-2.0 | 77,86 | 54,40 | 64,0 | HuggingFace, safetensors + custom_code |
-| Qwen/Qwen3-4B BF16 | 4,02 B | no disponible | Apache-2.0 | 86,35 | 68,80 | 82,3 | HuggingFace |
+| Qwen3-4B-W2.79-QAOPD (este) | 4,02 B | no disponible | Apache-2.0 | 77,86 | 54,40 | 64,0 | Hugging Face, safetensors + custom_code |
+| Qwen/Qwen3-4B BF16 | 4,02 B | no disponible | Apache-2.0 | 86,35 | 68,80 | 82,3 | Hugging Face |
 | Otras cuantizaciones de Qwen3-4B (AWQ, GPTQ, GGUF Q2/Q4) | 4,02 B | no disponible | Apache-2.0 | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks de cuantizaciones alternativas de Qwen3-4B en la informacion proporcionada, por lo que la unica comparacion cuantitativa posible es contra el modelo base sin cuantizar.
@@ -104,7 +104,7 @@ No se dispone de datos de benchmarks de cuantizaciones alternativas de Qwen3-4B 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MingZwhy/Qwen3-4B-W2.79-QAOPD
+- Modelo en Hugging Face: https://huggingface.co/MingZwhy/Qwen3-4B-W2.79-QAOPD
 - Repositorio de codigo, harness y receta: https://github.com/MingZwhy/QAOPD
 - Documentacion de evaluacion: https://github.com/MingZwhy/QAOPD/blob/main/docs/EVALUATION.md
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B

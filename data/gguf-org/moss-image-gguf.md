@@ -6,7 +6,7 @@
 
 La model card muestra dos flujos: texto a imagen y edición con imagen de referencia. Ambos requieren componentes auxiliares: un VAE (`pig_flux2_vae_fp32-f16.gguf`) y un LLM (`qwen3.5-9b-q4_k_m.gguf`); para edición, además, un proyector visión (`mmproj-qwen3.5-9b-f16.gguf`). No se detalla la arquitectura interna, el dataset de entrenamiento ni los idiomas soportados.
 
-Es relevante para quien quiera probar MOSS-Image en local con GGUF, pero la documentación técnica es escasa: no hay benchmarks publicados en la información disponible y el pipeline no está etiquetado en HuggingFace. La licencia Apache-2.0 facilita el uso comercial del repositorio, aunque deben revisarse las licencias de los componentes auxiliares.
+Es relevante para quien quiera probar MOSS-Image en local con GGUF, pero la documentación técnica es escasa: no hay benchmarks publicados en la información disponible y el pipeline no está etiquetado en Hugging Face. La licencia Apache-2.0 facilita el uso comercial del repositorio, aunque deben revisarse las licencias de los componentes auxiliares.
 
 ## Especificaciones tecnicas
 
@@ -84,13 +84,13 @@ No se dispone de datos verificables de alternativas comparables en la informaci�
 - Idioma: solo se muestran ejemplos en inglés; el rendimiento con prompts en castellano no está disponible.
 - Uso comercial: la licencia Apache-2.0 del repositorio permite uso comercial, pero deben revisarse las licencias de los modelos auxiliares y los derechos de las imágenes de entrada y salida.
 - No es un LLM: no debe usarse para generación de texto, tool calling, agentes o razonamiento multi-step.
-- El pipeline no está etiquetado en HuggingFace (`pipeline: no disponible`), lo que dificulta la integración automática en herramientas estándar.
+- El pipeline no está etiquetado en Hugging Face (`pipeline: no disponible`), lo que dificulta la integración automática en herramientas estándar.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/gguf-org/moss-image-gguf
+- Repositorio Hugging Face: https://huggingface.co/gguf-org/moss-image-gguf
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT
-- Documentación de GGUF en HuggingFace: https://huggingface.co/docs/hub/gguf
+- Documentación de GGUF en Hugging Face: https://huggingface.co/docs/hub/gguf
 - GGUF en Wikipedia: https://en.wikipedia.org/wiki/GGUF
 - Sitio de GGUF: https://gguf.org/
-- Organización GGUF-Models en HuggingFace: https://huggingface.co/GGUF-Models
+- Organización GGUF-Models en Hugging Face: https://huggingface.co/GGUF-Models

@@ -98,7 +98,7 @@ No hay datos de rendimiento comparativo publicados en la información disponible
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/incoai/Qwen3.6-35B-A3B-Splash
+- Modelo en Hugging Face: https://huggingface.co/incoai/Qwen3.6-35B-A3B-Splash
 - Motor Splash: https://github.com/incoai/splash
 - Entrada de blog con benchmarks de lanzamiento: https://inco.ai/blog/splash/
 - Blog de DFlash 2: https://inco.ai/blog/dflash2/

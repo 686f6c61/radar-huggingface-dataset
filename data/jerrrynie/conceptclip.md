@@ -4,7 +4,7 @@
 
 ConceptCLIP es un modelo fundacional de visión-lenguaje a gran escala, desarrollado por JerrryNie, específicamente diseñado para el ámbito biomédico. Su principal innovación consiste en incorporar conceptos médicos al proceso de alineación imagen-texto, lo que permite obtener representaciones multimodales más interpretables y robustas en múltiples modalidades de imagen médica (radiografías, tomografías, histología, etc.). El modelo se presenta como el primer modelo fundacional biomédico explicable, ofreciendo explicaciones a nivel de concepto clínicamente significativas en distintos escenarios diagnósticos.
 
-Arquitectónicamente, ConceptCLIP se basa en el paradigma CLIP, con un codificador de imágenes y un codificador de texto, y cuenta con aproximadamente 542,9 millones de parámetros. Está disponible en HuggingFace bajo licencia MIT, aunque con acceso restringido (gated), y su pipeline principal es la extracción de características. Su relevancia actual radica en la creciente demanda de sistemas de IA explicables en el sector sanitario, donde la transparencia y la interpretabilidad son requisitos críticos para la adopción clínica.
+Arquitectónicamente, ConceptCLIP se basa en el paradigma CLIP, con un codificador de imágenes y un codificador de texto, y cuenta con aproximadamente 542,9 millones de parámetros. Está disponible en Hugging Face bajo licencia MIT, aunque con acceso restringido (gated), y su pipeline principal es la extracción de características. Su relevancia actual radica en la creciente demanda de sistemas de IA explicables en el sector sanitario, donde la transparencia y la interpretabilidad son requisitos críticos para la adopción clínica.
 
 ## Especificaciones técnicas
 
@@ -55,7 +55,7 @@ No se dispone de información sobre modelos comparables en las fuentes consultad
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere solicitar acceso en HuggingFace (gated), lo que puede limitar su uso inmediato.
+- Acceso restringido: el modelo requiere solicitar acceso en Hugging Face (gated), lo que puede limitar su uso inmediato.
 - Idioma limitado: el texto está únicamente en inglés, lo que puede ser una barrera para entornos clínicos en otros idiomas.
 - Sesgos potenciales: al entrenarse con datos médicos, puede heredar sesgos presentes en los datos (p. ej., desequilibrios demográficos o de modalidad).
 - Riesgo de alucinación en explicaciones: aunque el modelo es explicable, las explicaciones generadas podrían no ser siempre clínicamente precisas; se recomienda validación por expertos.
@@ -64,6 +64,6 @@ No se dispone de información sobre modelos comparables en las fuentes consultad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JerrryNie/ConceptCLIP
+- Hugging Face: https://huggingface.co/JerrryNie/ConceptCLIP
 - GitHub: https://github.com/JerrryNie/ConceptCLIP
 - Paper (arXiv): https://arxiv.org/html/2501.15579

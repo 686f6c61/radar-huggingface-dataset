@@ -99,7 +99,7 @@ La model card del repositorio no incluye métricas de calidad de traducción (BL
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/vlad-grig/opus-mt-en-es
+- Repositorio en Hugging Face: https://huggingface.co/vlad-grig/opus-mt-en-es
 - Modelo base original: https://huggingface.co/Helsinki-NLP/opus-mt-en-es
 - Conversión ONNX de referencia: https://huggingface.co/Xenova/opus-mt-en-es
 - Transformers.js: https://github.com/huggingface/transformers.js

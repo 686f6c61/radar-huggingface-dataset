@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| ShoggothMind/mind-v1 | 134M | no disponible | Apache-2.0 | HuggingFace, 0 descargas | no disponible |
-| TinyLlama-1.1B | 1.100M | 2.048 tokens | Apache-2.0 | HuggingFace, ampliamente usado | benchmarks publicos |
-| GPT-2 small | 124M | 1.024 tokens | MIT | HuggingFace, ampliamente usado | benchmarks publicos |
-| Qwen2-0.5B | ~500M | 32.768 tokens | Apache-2.0 | HuggingFace, ampliamente usado | benchmarks publicos |
+| ShoggothMind/mind-v1 | 134M | no disponible | Apache-2.0 | Hugging Face, 0 descargas | no disponible |
+| TinyLlama-1.1B | 1.100M | 2.048 tokens | Apache-2.0 | Hugging Face, ampliamente usado | benchmarks publicos |
+| GPT-2 small | 124M | 1.024 tokens | MIT | Hugging Face, ampliamente usado | benchmarks publicos |
+| Qwen2-0.5B | ~500M | 32.768 tokens | Apache-2.0 | Hugging Face, ampliamente usado | benchmarks publicos |
 
 La comparativa es orientativa: mind-v1 comparte escala con GPT-2 small (124M) pero no publica contexto, idiomas ni benchmarks, mientras que los modelos alternativos si ofrecen esos datos. No hay modelos comparables exactos por proposito (consenso multi-modelo con procedencia on-chain) en la informacion disponible.
 
@@ -83,7 +83,7 @@ La comparativa es orientativa: mind-v1 comparte escala con GPT-2 small (124M) pe
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ShoggothMind/mind-v1
+- Hugging Face: https://huggingface.co/ShoggothMind/mind-v1
 - Dataset de entrenamiento: https://huggingface.co/datasets/ShoggothMind/mind-judgements
 - Licencia Apache-2.0: https://www.apache.org/licenses/LICENSE-2.0
 

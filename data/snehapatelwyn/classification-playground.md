@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`classification-playground` es un repositorio experimental publicado por la desarrolladora Sneha Patel (snehapatelwyn) en HuggingFace. Se presenta como una implementación funcional de CLIP (Contrastive Language-Image Pretraining) orientada a tareas de clasificación, con una configuración etiquetada como "xlarge" en la documentación, aunque el checkpoint real contiene únicamente 24.832 parámetros. Esta discrepancia indica claramente que se trata de un artefacto de prueba de humo (smoke test) y no de un modelo entrenado a escala.
+`classification-playground` es un repositorio experimental publicado por la desarrolladora Sneha Patel (snehapatelwyn) en Hugging Face. Se presenta como una implementación funcional de CLIP (Contrastive Language-Image Pretraining) orientada a tareas de clasificación, con una configuración etiquetada como "xlarge" en la documentación, aunque el checkpoint real contiene únicamente 24.832 parámetros. Esta discrepancia indica claramente que se trata de un artefacto de prueba de humo (smoke test) y no de un modelo entrenado a escala.
 
 El repositorio se centra en código transparente y reproducible: incluye un script ejecutable (`run.py`), un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que sirve como inicialización válida, pero que el propio autor declara explícitamente como no entrenado. No se reclama ninguna puntuación de benchmark, y la model card advierte que el checkpoint no ha sido auditado en cuanto a robustez, equidad ni transferencia de dominio.
 
@@ -39,7 +39,7 @@ En cuanto al entrenamiento, la model card es explícita: el checkpoint es una in
 ## Casos de uso
 
 - Prototipado de arquitecturas CLIP: el repositorio sirve como punto de partida reproducible para experimentar con configuraciones de atención dilatada y co-attention sin tener que escribir el esqueleto desde cero.
-- Docencia y aprendizaje: resulta adecuado para explicar cómo se estructura un proyecto de HuggingFace con `config.json`, `training_args.json` y `model.safetensors`, y cómo se define una receta de entrenamiento declarativa.
+- Docencia y aprendizaje: resulta adecuado para explicar cómo se estructura un proyecto de Hugging Face con `config.json`, `training_args.json` y `model.safetensors`, y cómo se define una receta de entrenamiento declarativa.
 - Pruebas de pipeline de entrenamiento: el checkpoint de inicialización permite validar que un script de fine-tuning carga pesos, ejecuta un forward pass y guarda resultados antes de invertir cómputo real.
 - Integración en pipelines de CI: puede emplearse como caso de prueba ligero para verificar que un entorno de PyTorch y safetensors funciona correctamente en integración continua.
 - Base para fine-tuning sobre datos propios: un equipo podría partir de esta implementación y adaptarla a su tarea de clasificación concreta, aunque tendría que entrenar desde cero al no haber pesos útiles.
@@ -73,6 +73,6 @@ No disponible. No se dispone de información suficiente para comparar este repos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/snehapatelwyn/classification-playground
+- Modelo en Hugging Face: https://huggingface.co/snehapatelwyn/classification-playground
 - Perfil del autor: https://huggingface.co/snehapatelwyn
 - Playground interactivo del autor: https://classifier-playground.streamlit.app/

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Manuelaskll/robotics-vision-language-run3` no es un modelo entrenado, sino un repositorio de notas de investigación publicada en HuggingFace bajo la etiqueta `research-notes`. Su propio autor lo describe como una nota exploratoria sobre robótica y visión-lenguaje que registra el alcance de una pregunta de investigación, posibles variables de confusión y requisitos de reproducibilidad antes de reportar cualquier resultado. La model card indica explícitamente que no se reclama ninguna mejora de benchmark, ablación completada, código liberado ni checkpoint entrenado.
+`Manuelaskll/robotics-vision-language-run3` no es un modelo entrenado, sino un repositorio de notas de investigación publicada en Hugging Face bajo la etiqueta `research-notes`. Su propio autor lo describe como una nota exploratoria sobre robótica y visión-lenguaje que registra el alcance de una pregunta de investigación, posibles variables de confusión y requisitos de reproducibilidad antes de reportar cualquier resultado. La model card indica explícitamente que no se reclama ninguna mejora de benchmark, ablación completada, código liberado ni checkpoint entrenado.
 
-El repositorio contiene únicamente dos artefactos declarados: `analysis.md` (artefacto principal) y `README.md` (documentación). Los metadatos de HuggingFace sí registran un archivo en formato `safetensors` con un recuento de parámetros de 24.832, pero el tamaño total del repositorio es de 0,0 GB y no hay pipeline, idiomas ni arquitectura documentados. Esa cifra de parámetros es anómala para cualquier modelo de visión-lenguaje y sugiere un artefacto residual o un tensor de prueba, no un modelo funcional.
+El repositorio contiene únicamente dos artefactos declarados: `analysis.md` (artefacto principal) y `README.md` (documentación). Los metadatos de Hugging Face sí registran un archivo en formato `safetensors` con un recuento de parámetros de 24.832, pero el tamaño total del repositorio es de 0,0 GB y no hay pipeline, idiomas ni arquitectura documentados. Esa cifra de parámetros es anómala para cualquier modelo de visión-lenguaje y sugiere un artefacto residual o un tensor de prueba, no un modelo funcional.
 
 Por tanto, esta ficha debe leerse como la descripción de un cuaderno de investigación reproducible, no como la de un sistema desplegable. Su relevancia es metodológica: ejemplifica el patrón de publicar el diseño experimental y las condiciones de reproducibilidad antes de disponer de resultados, algo útil para quien quiera auditar afirmaciones futuras o reutilizar el protocolo propuesto.
 
@@ -23,7 +23,7 @@ Por tanto, esta ficha debe leerse como la descripción de un cuaderno de investi
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo. El unico indicio es la etiqueta `transformer` en los metadatos de HuggingFace, que no viene acompanada de ninguna descripcion de capas, atencion, tokenizador ni configuracion. No hay ficha de configuracion, ni `config.json` documentado, ni indicacion de si se trata de un modelo de vision-lenguaje completo, de un adaptador o de un componente parcial.
+No se ha publicado informacion sobre la arquitectura del modelo. El unico indicio es la etiqueta `transformer` en los metadatos de Hugging Face, que no viene acompanada de ninguna descripcion de capas, atencion, tokenizador ni configuracion. No hay ficha de configuracion, ni `config.json` documentado, ni indicacion de si se trata de un modelo de vision-lenguaje completo, de un adaptador o de un componente parcial.
 
 Tampoco existe informacion sobre el entrenamiento: no se declaran volumenes de tokens, composicion del dataset, fases de ajuste (SFT, RLHF, DPO) ni tecnicas de optimizacion. La model card es explicita al afirmar que la nota "no reclama mejoras de benchmark, ablaciones completadas, codigo liberado ni un checkpoint entrenado", y que las secciones marcadas como planes o hipotesis no deben interpretarse como resultados experimentales. Cualquier innovacion tecnica queda, por tanto, en el terreno de lo no disponible.
 
@@ -75,6 +75,6 @@ No disponible. La informacion proporcionada no incluye especificaciones de ningu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Manuelaskll/robotics-vision-language-run3
+- Repositorio en Hugging Face: https://huggingface.co/Manuelaskll/robotics-vision-language-run3
 - Archivo principal de la nota: `analysis.md` (referenciado en la model card del repositorio, sin URL directa en la informacion proporcionada)
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la busqueda web realizada.

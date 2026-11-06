@@ -108,7 +108,7 @@ El baseline GAM sin adaptar se cita como alojado en DexGarmentLab/Model-HALO y n
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Cloth-splatters/dexgarment-dense-descriptors-20260826
+- Repositorio en Hugging Face: https://huggingface.co/Cloth-splatters/dexgarment-dense-descriptors-20260826
 - Dataset asociado: `Cloth-splatters/dexgarmentlab-lift-correspondence-20260822` (identificador citado en la model card; no se proporciona URL directa)
 - Baseline GAM sin adaptar: repositorio DexGarmentLab/Model-HALO (identificador citado en la model card; no se proporciona URL directa)
 - Commit de experimento de UniGarmentManip: `0701bc475877da68bc07f727a1995fd78a3de511`

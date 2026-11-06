@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto de accion | Regimen de entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fanqi-robo/pi05_insert_gear_in_gripper_expert_only | 4,14 B | chunk de 50 acciones, 10 pasos de flow-matching | Solo action expert (~300 M), VLM congelado | apache-2.0 | HuggingFace |
-| lerobot/pi05_base (base) | ~4,14 B | igual (arquitectura π0.5) | Preentrenamiento VLA, sin ajuste a la tarea | apache-2.0 | HuggingFace |
+| fanqi-robo/pi05_insert_gear_in_gripper_expert_only | 4,14 B | chunk de 50 acciones, 10 pasos de flow-matching | Solo action expert (~300 M), VLM congelado | apache-2.0 | Hugging Face |
+| lerobot/pi05_base (base) | ~4,14 B | igual (arquitectura π0.5) | Preentrenamiento VLA, sin ajuste a la tarea | apache-2.0 | Hugging Face |
 | Variante b0 (fine-tuning completo) | ~4,14 B | igual | Fine-tuning completo del modelo | no disponible | No publicada en la informacion disponible |
-| fanqi-robo/molmoact2_insert_gear_in_gripper_base_expert | no disponible | no disponible | Ajuste sobre MolmoAct2 | no disponible | HuggingFace |
+| fanqi-robo/molmoact2_insert_gear_in_gripper_base_expert | no disponible | no disponible | Ajuste sobre MolmoAct2 | no disponible | Hugging Face |
 
 La comparacion numerica de rendimiento entre estas variantes no esta publicada; la model card describe el brazo `expert_only` como parte de un estudio de ablacion cuyo resultado se medira unicamente en robot.
 
@@ -85,7 +85,7 @@ La comparacion numerica de rendimiento entre estas variantes no esta publicada; 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fanqi-robo/pi05_insert_gear_in_gripper_expert_only
+- Modelo en Hugging Face: https://huggingface.co/fanqi-robo/pi05_insert_gear_in_gripper_expert_only
 - Checkpoints anteriores: https://huggingface.co/fanqi-robo/pi05_insert_gear_in_gripper_expert_only_ckpts
 - Dataset: https://huggingface.co/datasets/fanqi-robo/insert_gear_in_gripper
 - Modelo base: https://huggingface.co/lerobot/pi05_base

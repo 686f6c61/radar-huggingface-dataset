@@ -73,9 +73,9 @@ El autor precisa que las celdas N0 y N1 del modelo base son anteriores a la reca
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| geotech-rl-qwen3-4b-sft | LoRA sobre 4B | no disponible | SFT geotécnico, warm start | apache-2.0 | HuggingFace |
-| geotech-rl-qwen3-4b-sft-grpo | LoRA sobre 4B | no disponible | RL (GRPO) geotécnico | no disponible en la informacion | HuggingFace |
-| Qwen/Qwen3-4B-Instruct-2507 | 4B | no disponible en la informacion | Modelo base generalista | no disponible en la informacion | HuggingFace |
+| geotech-rl-qwen3-4b-sft | LoRA sobre 4B | no disponible | SFT geotécnico, warm start | apache-2.0 | Hugging Face |
+| geotech-rl-qwen3-4b-sft-grpo | LoRA sobre 4B | no disponible | RL (GRPO) geotécnico | no disponible en la informacion | Hugging Face |
+| Qwen/Qwen3-4B-Instruct-2507 | 4B | no disponible en la informacion | Modelo base generalista | no disponible en la informacion | Hugging Face |
 
 La comparación con modelos de propósito general no resulta significativa, ya que este adaptador está especializado en un dominio sintético y su utilidad es reproducir un experimento de investigación, no competir en benchmarks generales.
 
@@ -93,7 +93,7 @@ La comparación con modelos de propósito general no resulta significativa, ya q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arthurcs01/geotech-rl-qwen3-4b-sft
+- Modelo en Hugging Face: https://huggingface.co/arthurcs01/geotech-rl-qwen3-4b-sft
 - Adaptador GRPO: https://huggingface.co/arthurcs01/geotech-rl-qwen3-4b-sft-grpo
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Repositorio del proyecto: https://github.com/arthurcunha51eng/geotech-rl

@@ -61,7 +61,7 @@ No disponible. No existe una categoría de modelos comparable, ya que `lil-catal
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/local-inference-lab/lil-catalog
+- Repositorio en Hugging Face: https://huggingface.co/local-inference-lab/lil-catalog
 - Documentación de Local Inference Lab en DeepWiki: https://deepwiki.com/local-inference-lab
 - Organización Local Inference en GitHub: https://github.com/localinference/
 - Repositorios de la organización local-inference-lab: https://github.com/orgs/local-inference-lab/repositories

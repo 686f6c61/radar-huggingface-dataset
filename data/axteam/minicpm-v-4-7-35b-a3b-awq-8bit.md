@@ -92,7 +92,7 @@ La model card del cuantizador menciona una validacion de calidad frente al origi
 
 ## Enlaces
 
-- Modelo cuantizado en HuggingFace: https://huggingface.co/axteam/MiniCPM-V-4.7-35B-A3B-AWQ-8bit
+- Modelo cuantizado en Hugging Face: https://huggingface.co/axteam/MiniCPM-V-4.7-35B-A3B-AWQ-8bit
 - Modelo base: https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B
 - Variante NVFP4A16 del mismo autor: https://huggingface.co/axteam/MiniCPM-V-4.7-35B-A3B-NVFP4A16
 - Pagina oficial de MiniCPM-V 4.7 en OpenBMB: https://openbmb.cn/en/model/minicpm-v-4-7

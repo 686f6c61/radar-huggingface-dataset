@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SynapseMusicV12-XL-Turbo es un modelo de generacion de audio musical a partir de texto (text-to-music) publicado en HuggingFace por el usuario SYNAPSEai1. Segun la model card del repositorio, corresponde al variante XL (4B) Turbo de ACE-Step 1.5, un sistema co-liderado por ACE Studio y StepFun, destilado para generar audio en solo 8 pasos de inferencia y sin classifier-free guidance (CFG). El recuento real de parametros de los pesos safetensors es de 4.987.310.726, coherente con la cifra de "~4B" que declara el autor, y el repositorio ocupa 20,0 GB.
+SynapseMusicV12-XL-Turbo es un modelo de generacion de audio musical a partir de texto (text-to-music) publicado en Hugging Face por el usuario SYNAPSEai1. Segun la model card del repositorio, corresponde al variante XL (4B) Turbo de ACE-Step 1.5, un sistema co-liderado por ACE Studio y StepFun, destilado para generar audio en solo 8 pasos de inferencia y sin classifier-free guidance (CFG). El recuento real de parametros de los pesos safetensors es de 4.987.310.726, coherente con la cifra de "~4B" que declara el autor, y el repositorio ocupa 20,0 GB.
 
 El modelo resuelve la generacion de musica completa a partir de una descripcion textual, con una arquitectura DiT (Diffusion Transformer) compuesta por un decoder de 32 capas y hidden_size 2560 (32 cabezas de atencion) y un encoder de 8 capas con hidden_size 2048. Se distribuye bajo licencia MIT y el autor afirma que los datos de entrenamiento son legalmente conformes (musica con licencia, royalty-free o de dominio publico y datos sinteticos MIDI-a-audio), lo que permitiria uso comercial de las piezas generadas.
 
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Los pesos en bf16 ocupan aproximadamente 18,8 GB, por lo que la inferencia sin cuantizar requiere en torno a esa cifra mas el espacio de activaciones y del modelo LM asociado.
 - GPU recomendadas: no disponibles de forma explicita. Por los requisitos de VRAM indicados, encajan GPU de consumo con 16-24 GB (por ejemplo, la clase RTX 4090) en configuraciones con offload, y GPU profesionales tipo A100 o H100 para ejecucion sin offload y con margen.
 - Si cabe en GPU de consumo: si, en tarjetas con al menos 12 GB aplicando INT8 y offload a CPU; con 20 GB o mas se evita el offload.
-- Opciones de despliegue: repositorio oficial `ace-step/ACE-Step-1.5` instalable con `pip install -e .`, interfaz Gradio mediante `python acestep --config-path acestep-v15-xl-turbo`, y una Space de demostracion en HuggingFace. No se documentan en la informacion disponible integraciones con vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: repositorio oficial `ace-step/ACE-Step-1.5` instalable con `pip install -e .`, interfaz Gradio mediante `python acestep --config-path acestep-v15-xl-turbo`, y una Space de demostracion en Hugging Face. No se documentan en la informacion disponible integraciones con vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput: no disponibles. El unico dato relacionado es que la variante Turbo requiere 8 pasos de inferencia frente a los 50 de las variantes base y SFT.
 
 ## Comparativa con modelos similares
@@ -86,11 +86,11 @@ El autor indica ademas que la calidad de audio del XL Turbo es superior a la de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SYNAPSEai1/SynapseMusicV12-XL-Turbo
+- Modelo en Hugging Face: https://huggingface.co/SYNAPSEai1/SynapseMusicV12-XL-Turbo
 - Pagina del proyecto ACE-Step 1.5: https://ace-step.github.io/ace-step-v1.5.github.io/
-- Coleccion ACE-Step 1.5 en HuggingFace: https://huggingface.co/collections/ACE-Step/ace-step-15
+- Coleccion ACE-Step 1.5 en Hugging Face: https://huggingface.co/collections/ACE-Step/ace-step-15
 - Coleccion en ModelScope: https://modelscope.cn/collections/ACE-Step/Ace-Step-15-xl
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/ACE-Step/Ace-Step-v1.5
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/ACE-Step/Ace-Step-v1.5
 - Discord del proyecto: https://discord.gg/PeWDxrkdj7
 - Informe tecnico: https://arxiv.org/abs/2602.00744
 - Repositorio de codigo: https://github.com/ace-step/ACE-Step-1.5

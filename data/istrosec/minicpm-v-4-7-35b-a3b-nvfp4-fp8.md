@@ -105,7 +105,7 @@ Nota del autor: la comparación con sambit9238 NVFP4 no es estrictamente equival
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/IstroSec/MiniCPM-V-4.7-35B-A3B-NVFP4-FP8
+- Repositorio Hugging Face: https://huggingface.co/IstroSec/MiniCPM-V-4.7-35B-A3B-NVFP4-FP8
 - Modelo base: https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B
 - Cuantización NVFP4 previa: https://huggingface.co/sambit9238/MiniCPM-V-4.7-35B-A3B-NVFP4
 - Draft model para decodificación especulativa: https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-DSpark

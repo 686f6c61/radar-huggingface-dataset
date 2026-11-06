@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ideogram-4-FP8-Ablated es una modificación de los pesos del modelo de generación de imágenes Ideogram 4 en formato FP8, publicado por el usuario Umranz en HuggingFace. El modelo base es un Diffusion Transformer (DiT) de flujo único con 9.280 millones de parámetros desarrollado por Ideogram AI, y esta versión aplica una técnica de "abliteration" (ablación de vectores de rechazo) sobre el adaptador de condicionamiento textual para eliminar la capacidad de rechazo del modelo ante ciertas categorías de prompts.
+Ideogram-4-FP8-Ablated es una modificación de los pesos del modelo de generación de imágenes Ideogram 4 en formato FP8, publicado por el usuario Umranz en Hugging Face. El modelo base es un Diffusion Transformer (DiT) de flujo único con 9.280 millones de parámetros desarrollado por Ideogram AI, y esta versión aplica una técnica de "abliteration" (ablación de vectores de rechazo) sobre el adaptador de condicionamiento textual para eliminar la capacidad de rechazo del modelo ante ciertas categorías de prompts.
 
 La intervención se centra en el módulo `llm_cond_proj`, una proyección lineal que actúa como único punto de entrada de las características del codificador de texto Qwen3-VL-8B-Instruct hacia los 34 bloques del DiT. Mediante la anulación del subespacio generado por un vector de rechazo (operación $W^* = W(I - vv^\top)$), el autor afirma extinguir las direcciones de rechazo antes de que alcancen el backbone del transformer, preservando el 99,57% de los pesos originales y una fidelidad semántica del 98,11% en prompts benignos según sus propias métricas.
 
@@ -85,6 +85,6 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Umranz/Ideogram-4-FP8-Ablated
+- Repositorio Hugging Face: https://huggingface.co/Umranz/Ideogram-4-FP8-Ablated
 - Modelo base: https://huggingface.co/ideogram-ai/ideogram-4-fp8
 - Repositorio de investigación: https://github.com/umran666/Diffusion_Ablate_Research

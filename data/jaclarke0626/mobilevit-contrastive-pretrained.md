@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MobileViT para aprendizaje contrastivo es un repositorio de investigación publicado por el usuario Jaclarke0626 en HuggingFace. Se trata de una implementación propia y reducida de la arquitectura MobileViT (híbrido CNN-transformer para visión) orientada a experimentos de aprendizaje contrastivo, empaquetada junto con un fichero de configuración y un punto de control de inicialización. No es una publicación de un modelo entrenado: el propio autor indica que el checkpoint es válido únicamente para pruebas de humo y que no se reclama ninguna puntuación de benchmark.
+MobileViT para aprendizaje contrastivo es un repositorio de investigación publicado por el usuario Jaclarke0626 en Hugging Face. Se trata de una implementación propia y reducida de la arquitectura MobileViT (híbrido CNN-transformer para visión) orientada a experimentos de aprendizaje contrastivo, empaquetada junto con un fichero de configuración y un punto de control de inicialización. No es una publicación de un modelo entrenado: el propio autor indica que el checkpoint es válido únicamente para pruebas de humo y que no se reclama ninguna puntuación de benchmark.
 
 La relevancia de esta ficha es, por tanto, acotada y debe entenderse como material de andamiaje para investigación, no como un modelo listo para producción. MobileViT, la arquitectura de base, sí tiene interés técnico consolidado: combina la eficiencia y los sesgos inductivos de las CNN con la capacidad de modelar contexto global de los transformers, lo que la hace adecuada para visión en dispositivos móviles. Sin embargo, este repositorio concreto declara la variante nano, con un recuento real de 49.600 parámetros en safetensors, un tamaño que lo sitúa muy por debajo de cualquier variante entrenada de MobileViT.
 
@@ -75,9 +75,9 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Tipo | Parámetros | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jaclarke0626/mobilevit-contrastive-pretrained | MobileViT nano, uso contrastivo | 49.600 | No (solo inicialización) | MIT | HuggingFace |
-| Jackyfirdaus/mobilevit-contrastive | MobileViT con enfoque contrastivo | no disponible | no disponible | no disponible | HuggingFace |
-| MobileViT (implementación oficial en transformers) | MobileViT (vision transformer ligero) | no disponible en la información recogida (variantes XXS, XS y S) | Sí, variantes preentrenadas disponibles | según el repositorio original | HuggingFace / GitHub |
+| Jaclarke0626/mobilevit-contrastive-pretrained | MobileViT nano, uso contrastivo | 49.600 | No (solo inicialización) | MIT | Hugging Face |
+| Jackyfirdaus/mobilevit-contrastive | MobileViT con enfoque contrastivo | no disponible | no disponible | no disponible | Hugging Face |
+| MobileViT (implementación oficial en transformers) | MobileViT (vision transformer ligero) | no disponible en la información recogida (variantes XXS, XS y S) | Sí, variantes preentrenadas disponibles | según el repositorio original | Hugging Face / GitHub |
 
 La comparación relevante es de naturaleza, no de rendimiento: este repositorio es un andamiaje no entrenado, mientras que la implementación oficial de MobileViT en la librería transformers ofrece variantes preentrenadas y documentadas. No se dispone de métricas comparables para establecer una comparativa cuantitativa.
 
@@ -95,7 +95,7 @@ La comparación relevante es de naturaleza, no de rendimiento: este repositorio 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jaclarke0626/mobilevit-contrastive-pretrained
+- Repositorio en Hugging Face: https://huggingface.co/Jaclarke0626/mobilevit-contrastive-pretrained
 - Repositorio similar (Jackyfirdaus/mobilevit-contrastive): https://huggingface.co/Jackyfirdaus/mobilevit-contrastive
 - Documentación de MobileViT en transformers: https://huggingface.co/docs/transformers/model_doc/mobilevit
 - Paper MobileViT: Light-weight, General-purpose, and Mobile-friendly Vision Transformer: https://arxiv.org/html/2110.02178v2

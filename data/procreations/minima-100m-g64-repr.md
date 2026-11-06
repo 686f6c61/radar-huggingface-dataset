@@ -68,7 +68,7 @@ No se dispone de información sobre modelos comparables directamente, dado que s
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ProCreations/minima-100m-g64-repr
+- Repositorio Hugging Face: https://huggingface.co/ProCreations/minima-100m-g64-repr
 - Repositorio GitHub de Minima: https://github.com/SSHDotCodes/minima
 - Artículo arXiv sobre el pipeline de compresión Minima: https://arxiv.org/abs/2602.01613v1
 - Licencia del modelo base: https://huggingface.co/LiquidAI/LFM2.5-Encoder-350M/blob/main/LICENSE

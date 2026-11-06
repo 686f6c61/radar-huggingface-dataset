@@ -101,7 +101,7 @@ No se dispone de datos detallados de benchmarks de estos modelos comparables en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shuu12121/NightOwl-CodeEmbedding
+- Modelo en Hugging Face: https://huggingface.co/Shuu12121/NightOwl-CodeEmbedding
 - Modelo base NightOwl: https://huggingface.co/Shuu12121/NightOwl
 - Leaderboard MTEB (Code, v1): https://leaderboard.mteb.org/models/Shuu12121/NightOwl-CodeEmbedding
 - Repositorio OwlSpotLight (búsqueda semántica de código para VS Code): https://github.com/Shun0212/OwlSpotLight

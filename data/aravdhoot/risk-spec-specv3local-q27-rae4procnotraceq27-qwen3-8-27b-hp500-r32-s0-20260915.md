@@ -81,11 +81,11 @@ No existe una comparativa directa fiable: el artefacto es un adaptador LoRA sin 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este adaptador (sobre base declarado Qwen3.8-27B) | No disponible (base ~27B declarado) | No disponible | No disponible | Publico en HuggingFace, 0 descargas |
-| Qwen2.5-32B | 32.500 millones | 131.072 tokens | Apache 2.0 | Publico en HuggingFace |
-| Qwen3-32B | 32.800 millones | 32.768 tokens nativos, ampliable a 131.072 con YaRN | Apache 2.0 | Publico en HuggingFace |
-| Gemma-3-27B | 27.000 millones | 128.000 tokens | Licencia Gemma (uso comercial con condiciones) | Publico en HuggingFace |
-| Mistral Small 3.1 24B | 24.000 millones | 128.000 tokens | Apache 2.0 | Publico en HuggingFace |
+| Este adaptador (sobre base declarado Qwen3.8-27B) | No disponible (base ~27B declarado) | No disponible | No disponible | Publico en Hugging Face, 0 descargas |
+| Qwen2.5-32B | 32.500 millones | 131.072 tokens | Apache 2.0 | Publico en Hugging Face |
+| Qwen3-32B | 32.800 millones | 32.768 tokens nativos, ampliable a 131.072 con YaRN | Apache 2.0 | Publico en Hugging Face |
+| Gemma-3-27B | 27.000 millones | 128.000 tokens | Licencia Gemma (uso comercial con condiciones) | Publico en Hugging Face |
+| Mistral Small 3.1 24B | 24.000 millones | 128.000 tokens | Apache 2.0 | Publico en Hugging Face |
 
 Los datos de rendimiento de estos modelos comparables no se incluyen aqui porque no existe una base comun de evaluacion con el adaptador analizado.
 
@@ -104,7 +104,7 @@ Los datos de rendimiento de estos modelos comparables no se incluyen aqui porque
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/aravdhoot/risk-spec-specv3local-q27-rae4procnotraceq27-qwen3.8-27b-hp500-r32-s0-20260915
+- Ficha en Hugging Face: https://huggingface.co/aravdhoot/risk-spec-specv3local-q27-rae4procnotraceq27-qwen3.8-27b-hp500-r32-s0-20260915
 - Modelo base declarado (referencia del autor, no verificada): https://huggingface.co/Qwen/Qwen3.8-27B
 - Paper, blog, repositorio o demo del autor: no disponible
 - Resultados de busqueda web: las consultas realizadas no devolvieron ningun resultado relacionado con el modelo. Los unicos resultados obtenidos correspondian a paginas de Google Maps y Google Earth (maps.google.de), sin relacion alguna con este artefacto, por lo que no se incluyen como fuentes.

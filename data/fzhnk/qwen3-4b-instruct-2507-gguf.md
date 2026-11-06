@@ -93,7 +93,7 @@ Las cifras de los modelos comparados provienen de sus fichas publicas y no se ha
 
 ## Enlaces
 
-- Repositorio del espejo en HuggingFace: https://huggingface.co/fzhnk/qwen3-4b-instruct-2507-gguf
+- Repositorio del espejo en Hugging Face: https://huggingface.co/fzhnk/qwen3-4b-instruct-2507-gguf
 - Modelo base Qwen3-4B-Instruct-2507: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Modelo de la librería de Ollama del que proceden los bytes: `qwen3:4b-instruct-2507-q4_K_M` (capa `sha256:85e4a5b7…`), referenciado en la model card del espejo
 - Paper, blog, repositorio de código o demo adicionales: no disponibles en la información proporcionada

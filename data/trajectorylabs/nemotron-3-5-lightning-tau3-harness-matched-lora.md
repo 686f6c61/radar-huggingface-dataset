@@ -64,8 +64,8 @@ No se dispone de comparativas públicas con otros adaptadores LoRA para tool-use
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Nemotron 3.5 Lightning 30B-A3B (base) | 30B totales, 3B activos | no disponible | NVIDIA Open Model | HuggingFace |
-| Este adaptador LoRA | LoRA rank 32 | no disponible | NVIDIA Open Model | HuggingFace |
+| Nemotron 3.5 Lightning 30B-A3B (base) | 30B totales, 3B activos | no disponible | NVIDIA Open Model | Hugging Face |
+| Este adaptador LoRA | LoRA rank 32 | no disponible | NVIDIA Open Model | Hugging Face |
 | Otros adaptadores LoRA para tool-use | no disponible | no disponible | variable | no disponible |
 
 ## Limitaciones y advertencias

@@ -4,7 +4,7 @@
 
 luethan2025/ddpm es un checkpoint de un modelo de difusión de imágenes, concretamente una implementación de Denoising Diffusion Probabilistic Models (DDPM), el método presentado por Jonathan Ho, Ajay Jain y Pieter Abbeel (UC Berkeley) en el artículo arXiv:2006.11239 de 2020. El repositorio lo publica el usuario luethan2025 (Ethan Lu, estudiante de grado de Ingeniería Eléctrica y de Computadores en CMU) y está entrenado sobre el dataset luethan2025/AFHQ-64x64, una versión a 64x64 píxeles de AFHQ (Animal Faces HQ). No es un modelo de lenguaje: no procesa texto ni mantiene conversaciones, sino que genera imágenes sintéticas por eliminación iterativa de ruido.
 
-El modelo ocupa 0,1 GB de repositorio, lo que es coherente con una red U-Net de tamaño moderado en lugar de con un modelo de gran escala. La model card no especifica el número de parámetros, la licencia ni los idiomas, y el pipeline de HuggingFace no está declarado, por lo que la ficha se apoya en los datos del artículo original y en las características deducibles del repositorio.
+El modelo ocupa 0,1 GB de repositorio, lo que es coherente con una red U-Net de tamaño moderado en lugar de con un modelo de gran escala. La model card no especifica el número de parámetros, la licencia ni los idiomas, y el pipeline de Hugging Face no está declarado, por lo que la ficha se apoya en los datos del artículo original y en las características deducibles del repositorio.
 
 Su relevancia es fundamentalmente académica y experimental: sirve como referencia reproducible del algoritmo DDPM sobre un dataset pequeño de caras de animales a baja resolución. Con cero descargas y cero likes en el momento de la consulta y sin licencia declarada, no está pensado como componente de producción, sino como material de estudio, reproducción de resultados o experimentación con sampling de difusión.
 
@@ -72,7 +72,7 @@ Como referencia metodologica, el articulo original de DDPM reporta los siguiente
 - VRAM estimada para inferencia: no disponible de forma oficial. Dado el tamano del repositorio (0,1 GB), es plausible que los pesos en precision completa ocupen del orden de cientos de megabytes y que la inferencia quepa holgadamente en menos de 1 GB de VRAM con lotes pequenos; se trata de una estimacion derivada del tamano del repositorio, no de un dato confirmado.
 - GPU recomendadas: cualquier GPU NVIDIA con soporte CUDA y al menos 2 GB de memoria, desde GTX 1050 Ti o GTX 1650 hasta RTX 3060, RTX 4090, A100 o H100. No se requiere memoria de clase centro de datos.
 - Cabe en GPU de consumo: si, con margen amplio. Un modelo de este tamano tambien puede ejecutarse en CPU, con tiempos de muestreo considerablemente mayores si se usan los 1000 pasos del proceso completo.
-- Opciones de despliegue: PyTorch nativo y HuggingFace Diffusers son las vias naturales, dado que el autor proporciona un cuaderno `inference.ipynb`. vLLM, llama.cpp, Ollama y TGI no aplican, porque estan orientados a modelos de lenguaje y no a redes de difusion.
+- Opciones de despliegue: PyTorch nativo y Hugging Face Diffusers son las vias naturales, dado que el autor proporciona un cuaderno `inference.ipynb`. vLLM, llama.cpp, Ollama y TGI no aplican, porque estan orientados a modelos de lenguaje y no a redes de difusion.
 - Latencia y throughput: no disponibles. Como orden de magnitud, el muestreo DDPM completo requiere del orden de 1000 evaluaciones de la U-Net por imagen, por lo que el coste es proporcional al numero de pasos elegido; usar muestreadores con menos pasos reduce el tiempo de forma aproximadamente lineal, a costa de calidad.
 - Almacenamiento: el repositorio completo ocupa 0,1 GB, por lo que no supone una restriccion relevante en disco.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento del checkpoint analizado, por lo que la co
 
 | Modelo | Categoria | Resolucion tipica | Condicionamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| luethan2025/ddpm | Difusion (DDPM), U-Net | 64x64 (AFHQ) | Incondicional | no disponible | HuggingFace, 0 descargas |
+| luethan2025/ddpm | Difusion (DDPM), U-Net | 64x64 (AFHQ) | Incondicional | no disponible | Hugging Face, 0 descargas |
 | DDPM original (Ho et al., 2020) | Difusion (DDPM), U-Net | 32x32 (CIFAR-10), 256x256 (LSUN) | Incondicional | Codigo publicado por los autores; consultar el repositorio original | Referencia academica ampliamente replicada |
 | DDIM | Muestreador determinista sobre modelos de difusion | Depende del modelo base | Heredado del modelo base | no disponible en esta busqueda | Articulo y multiples implementaciones |
 | Stable Diffusion (familia) | Difusion latente con condicionamiento textual | 512x512 y superiores | Texto (prompt) | Licencias especificas por version; consultar cada modelo | Amplia disponibilidad y ecosistema maduro |
@@ -105,12 +105,12 @@ Frente a Stable Diffusion, la diferencia principal es el condicionamiento: este 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/luethan2025/ddpm
-- Perfil del autor en HuggingFace: https://huggingface.co/luethan2025
-- Colecciones del autor en HuggingFace: https://huggingface.co/luethan2025/collections
+- Modelo en Hugging Face: https://huggingface.co/luethan2025/ddpm
+- Perfil del autor en Hugging Face: https://huggingface.co/luethan2025
+- Colecciones del autor en Hugging Face: https://huggingface.co/luethan2025/collections
 - Perfil del autor en GitHub: https://github.com/luethan2025
 - Repositorio citado en la model card para el clonado: https://github.com/bareform/ddpm
 - Repositorio personal del autor: https://github.com/luethan2025/luethan2025
 - Articulo original de DDPM en arXiv: https://arxiv.org/abs/2006.11239
 - Estudio de comparacion de modelos generativos (U-Net, WGAN y DDPM) para superresolucion de precipitacion: https://gmd.copernicus.org/articles/19/7545/2026/
-- Dataset asociado: luethan2025/AFHQ-64x64 (enlazado desde los metadatos del modelo en HuggingFace; URL directa no verificada en la informacion disponible)
+- Dataset asociado: luethan2025/AFHQ-64x64 (enlazado desde los metadatos del modelo en Hugging Face; URL directa no verificada en la informacion disponible)

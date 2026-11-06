@@ -102,7 +102,7 @@ Frente a los modelos publicados por el mismo autor (OFFELLIA_LFM-2.5-2.6B-hereti
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Brunobkr/OFFFELLIA_KERNEL
+- Repositorio en Hugging Face: https://huggingface.co/Brunobkr/OFFFELLIA_KERNEL
 - DOI: https://doi.org/10.57967/hf/10637
 - llama.cpp (backend requerido): https://github.com/ggml-org/llama.cpp
 - Perfil de modelos del autor: https://huggingface.co/Brunobkr/models

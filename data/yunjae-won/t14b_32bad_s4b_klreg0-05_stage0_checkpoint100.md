@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `yunjae-won/T14b_32bad_S4b_klreg0.05_stage0_checkpoint100` es un checkpoint publicado en HuggingFace por el usuario yunjae-won. Se trata de un modelo de 4.022.468.096 parametros (aproximadamente 4.000 millones) almacenado en formato safetensors, con un repositorio de 8,1 GB, lo que es coherente con pesos en precision bf16 o fp16. La etiqueta `qwen3` indica que deriva de la familia Qwen3, aunque no se especifica la variante base concreta.
+El modelo identificado como `yunjae-won/T14b_32bad_S4b_klreg0.05_stage0_checkpoint100` es un checkpoint publicado en Hugging Face por el usuario yunjae-won. Se trata de un modelo de 4.022.468.096 parametros (aproximadamente 4.000 millones) almacenado en formato safetensors, con un repositorio de 8,1 GB, lo que es coherente con pesos en precision bf16 o fp16. La etiqueta `qwen3` indica que deriva de la familia Qwen3, aunque no se especifica la variante base concreta.
 
 La nomenclatura del identificador sugiere un experimento de destilacion o regularizacion entre un modelo mayor y otro menor: los fragmentos `T14b` y `S4b` apuntarian a un modelo profesor de 14.000 millones de parametros y un modelo estudiante de 4.000 millones, `klreg0.05` a un coeficiente de regularizacion por divergencia KL de 0,05, y `stage0_checkpoint100` a la etapa 0 y el checkpoint numero 100 de un entrenamiento por fases. Esta interpretacion procede unicamente del nombre del repositorio y no esta confirmada por ninguna ficha tecnica publicada.
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada en cuantizacion de 4 bits: aproximadamente 2,5-3,5 GB.
 - Cabe en GPU de consumo: si, previsiblemente en tarjetas con 8 GB o mas de VRAM (RTX 3060 Ti, RTX 3070, RTX 4060, RTX 4070) para cuantizaciones de 4 y 8 bits, y en tarjetas de 12-16 GB o superiores para bf16.
 - GPU profesionales recomendadas para bf16 sin cuantizar: A100 40 GB, H100, L40S, A10G; el modelo ocupa una fraccion pequena de su memoria, por lo que se pueden servir varias instancias por GPU.
-- Opciones de despliegue: HuggingFace Transformers, vLLM, TGI y llama.cpp u Ollama tras conversion a GGUF (no se publica ningun archivo GGUF en el repositorio).
+- Opciones de despliegue: Hugging Face Transformers, vLLM, TGI y llama.cpp u Ollama tras conversion a GGUF (no se publica ningun archivo GGUF en el repositorio).
 - Latencia y throughput: no disponibles. No hay mediciones publicadas para este checkpoint.
 
 ## Comparativa con modelos similares
@@ -89,6 +89,6 @@ No se dispone de datos suficientes para establecer una comparacion de rendimient
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yunjae-won/T14b_32bad_S4b_klreg0.05_stage0_checkpoint100
+- Repositorio en Hugging Face: https://huggingface.co/yunjae-won/T14b_32bad_S4b_klreg0.05_stage0_checkpoint100
 - No se han encontrado en la busqueda web enlaces relevantes al modelo: los resultados obtenidos corresponden a sitios del videojuego Geometry Dash y no guardan relacion con este repositorio.
 - No hay papers, blogs, repositorios de codigo ni demos asociados disponibles en la informacion proporcionada.

@@ -91,7 +91,7 @@ No se han publicado resultados de benchmarks en la información disponible. El �
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Marco-Danz/leoncino-baby-ministral3-3b-veneto
+- Repositorio Hugging Face: https://huggingface.co/Marco-Danz/leoncino-baby-ministral3-3b-veneto
 - Modelo base: https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512
 - Leoncino 8B (hermano mayor, mismo autor): https://huggingface.co/Marco-Danz/leoncino-ministral3-8b-veneto
 - Paper, blog o demo adicionales: no disponibles en la información proporcionada (los resultados de búsqueda web no contenían enlaces relevantes al modelo).

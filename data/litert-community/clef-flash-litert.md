@@ -105,7 +105,7 @@ No se han identificado en la información proporcionada otros modelos de decisi�
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversión: https://huggingface.co/litert-community/clef-flash-LiteRT
+- Repositorio Hugging Face de esta conversión: https://huggingface.co/litert-community/clef-flash-LiteRT
 - Modelo original de Cloudflare: https://huggingface.co/Cloudflare/clef-flash
 - Modelo base generativo: https://huggingface.co/Qwen/Qwen3.5-9B
 - Blog de Cloudflare sobre modelos de decisión: https://blog.cloudflare.com/clef-decision-models

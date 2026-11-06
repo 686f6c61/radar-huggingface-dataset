@@ -75,9 +75,9 @@ Latencia medida en CPU de Colab (2 hilos, batch size 1): aproximadamente 65 ms p
 
 | Modelo | Parámetros | Contexto | Licencia | Recall (mismas fuentes) | FPR (NotInject) | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Tiny Injection Guard | 13,5 M | 512 tokens | Apache-2.0 | 0,71 | 0,024 | HuggingFace, ONNX, navegador |
-| ProtectAI DeBERTa-v3-base v2 | 184 M | 512 tokens | no disponible en la información | 0,86 | 0,434 | HuggingFace |
-| PIGuard | 184 M | no disponible en la información | no disponible en la información | 0,92 | 0,115 | HuggingFace |
+| Tiny Injection Guard | 13,5 M | 512 tokens | Apache-2.0 | 0,71 | 0,024 | Hugging Face, ONNX, navegador |
+| ProtectAI DeBERTa-v3-base v2 | 184 M | 512 tokens | no disponible en la información | 0,86 | 0,434 | Hugging Face |
+| PIGuard | 184 M | no disponible en la información | no disponible en la información | 0,92 | 0,115 | Hugging Face |
 | TF-IDF + regresión logística | 0,2 M | no aplica | no disponible en la información | 0,75 | 0,009 | línea base del propio estudio |
 
 El modelo sacrifica recall en estilos no vistos (0,18 en deepset, 0,03 en correos) a cambio de un tamaño 14 veces menor y una tasa de falsos positivos muy baja en prompts benignos con palabras trampa (0,024 en NotInject, frente a 0,434 de ProtectAI). No es, por tanto, un sustituto de los guardas grandes, sino un filtro previo de bajo coste.
@@ -96,7 +96,7 @@ El modelo sacrifica recall en estilos no vistos (0,18 en deepset, 0,03 en correo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yzdvai/tiny-injection-guard
+- Modelo en Hugging Face: https://huggingface.co/yzdvai/tiny-injection-guard
 - Demo en navegador: https://www.yazeed.quest/injection-guard/
 - Recorrido interactivo de la arquitectura: https://www.yazeed.quest/injection-guard/architecture/
 - Modelo base: https://huggingface.co/google/electra-small-discriminator

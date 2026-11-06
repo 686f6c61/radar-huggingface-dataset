@@ -67,7 +67,7 @@ No se dispone de información suficiente para realizar una comparativa fiable. E
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/RicardoEstep/RPBizkitRemiX-v1-12B-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/RicardoEstep/RPBizkitRemiX-v1-12B-GGUF
 - Modelo base (sin formato GGUF): https://huggingface.co/RicardoEstep/RPBizkitRemiX-v1-12B
 - Perfil del autor: https://huggingface.co/RicardoEstep
 - Herramienta de descubrimiento de modelos GGUF (no específica): https://local-ai-zone.github.io/

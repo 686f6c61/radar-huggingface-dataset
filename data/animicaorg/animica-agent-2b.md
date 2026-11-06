@@ -76,8 +76,8 @@ Los autores indican que el líder publicado en la categoría ≤2 GB de BFCL v4 
 
 | Modelo | Parámetros | Contexto | BFCL v4 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-2B (base) | ~2B | no disponible | 20.37% | Apache-2.0 | HuggingFace |
-| Animica-Agent-2B | ~2B + 134M LoRA | no disponible | 20.35% | Apache-2.0 | HuggingFace + red Animica |
+| Qwen3.5-2B (base) | ~2B | no disponible | 20.37% | Apache-2.0 | Hugging Face |
+| Animica-Agent-2B | ~2B + 134M LoRA | no disponible | 20.35% | Apache-2.0 | Hugging Face + red Animica |
 | Líder ≤2 GB en BFCL v4 (no identificado) | ≤2B | no disponible | 56.88 | no disponible | no disponible |
 
 La comparativa con el líder de la categoría muestra una brecha significativa en el benchmark general; la especialización de Animica-Agent-2B se limita a superficies API específicas. No se dispone de datos de otros modelos de tool-calling pequeños (p. ej., Llama-3.2-3B o Qwen2.5-3B) en la información proporcionada.
@@ -95,7 +95,7 @@ La comparativa con el líder de la categoría muestra una brecha significativa e
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/animicaorg/Animica-Agent-2B)
+- [Modelo en Hugging Face](https://huggingface.co/animicaorg/Animica-Agent-2B)
 - [Base del modelo: Qwen/Qwen3.5-2B](https://huggingface.co/Qwen/Qwen3.5-2B)
 - [Página web de Animica](https://www.animica.org/)
 - [Pipeline, corpus y harness de evaluación (GitLab)](https://gitlab.com/Animica/animica-model)

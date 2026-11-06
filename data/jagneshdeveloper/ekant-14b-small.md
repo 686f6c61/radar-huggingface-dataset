@@ -70,8 +70,8 @@ No se dispone de datos de rendimiento comparativos. El modelo comparte arquitect
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Jagneshdeveloper/Ekant-14b-small
-- Perfil del autor en HuggingFace: https://huggingface.co/Jagneshdeveloper
+- Repositorio Hugging Face: https://huggingface.co/Jagneshdeveloper/Ekant-14b-small
+- Perfil del autor en Hugging Face: https://huggingface.co/Jagneshdeveloper
 - Perfil del autor en GitHub: https://github.com/jagneshdeveloper
 - Modelo base Microsoft Phi-4: https://huggingface.co/microsoft/phi-4
 - Modelo base Microsoft Phi-4-reasoning-plus: https://huggingface.co/microsoft/Phi-4-reasoning-plus

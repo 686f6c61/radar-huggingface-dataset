@@ -2,7 +2,7 @@
 
 ## Resumen
 
-kotag-0.8b es un modelo de etiquetado de secuencias (sequence labeling) para coreano, desarrollado por el usuario gogamza y publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un fine-tuning completo de Qwen/Qwen3.5-0.8B (852.985.920 parametros) que transforma un LLM generativo en un etiquetador por token: en lugar de producir texto, devuelve una distribucion de probabilidad sobre un conjunto de opciones definidas en el prompt para cada caracter o palabra de la entrada. El modelo no reescribe la entrada, lo que lo hace adecuado para tareas de anotacion estructurada donde la fidelidad al texto original es critica.
+kotag-0.8b es un modelo de etiquetado de secuencias (sequence labeling) para coreano, desarrollado por el usuario gogamza y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un fine-tuning completo de Qwen/Qwen3.5-0.8B (852.985.920 parametros) que transforma un LLM generativo en un etiquetador por token: en lugar de producir texto, devuelve una distribucion de probabilidad sobre un conjunto de opciones definidas en el prompt para cada caracter o palabra de la entrada. El modelo no reescribe la entrada, lo que lo hace adecuado para tareas de anotacion estructurada donde la fidelidad al texto original es critica.
 
 La innovacion principal reside en su mecanismo de lectura: el prompt repite la entrada una segunda vez, unidad a unidad, y se lee el estado oculto de cada unidad repetida en un unico forward pass. Sobre ese estado se aplica un readout entrenado sobre codigos de opcion de un solo token, con una temperatura ajustada para calibracion. Esta receta de decision proviene de Jeff (fork de AutoJev), pero kotag la aplica en cada unidad en lugar de una vez por pregunta. El modelo es utilizado por PyKoSpacing como KoSpacing v2.
 
@@ -95,8 +95,8 @@ Robustez: con claves de opcion renombradas a simbolos, intercambiadas entre opci
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kotag-0.8b | 852.985.920 | no disponible | Etiquetado de secuencias coreano | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3.5-0.8B (base) | 852.985.920 (aprox.) | no disponible | Generacion de texto | no disponible | HuggingFace |
+| kotag-0.8b | 852.985.920 | no disponible | Etiquetado de secuencias coreano | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3.5-0.8B (base) | 852.985.920 (aprox.) | no disponible | Generacion de texto | no disponible | Hugging Face |
 | KoSpacing v1 (referencia en la model card) | no disponible | no disponible | Espaciado de palabras coreano | no disponible | no disponible |
 
 No se dispone de datos de benchmarks de los modelos comparables en la informacion proporcionada, por lo que no se puede establecer una comparacion cuantitativa de rendimiento.
@@ -116,7 +116,7 @@ No se dispone de datos de benchmarks de los modelos comparables en la informacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gogamza/kotag-0.8b
+- Modelo en Hugging Face: https://huggingface.co/gogamza/kotag-0.8b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - PyKoSpacing (usa el modelo como KoSpacing v2): https://github.com/haven-jeon/PyKoSpacing
 - Jeff (receta de decision): https://github.com/firelex/jeff

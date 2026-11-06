@@ -76,7 +76,7 @@ La comparativa se limita a modelos base porque no hay información sobre el rend
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run3-gen3
+- Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run3-gen3
 - Modelo base (Unsloth): https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Repositorio de Qwen2.5 (GitHub): https://github.com/mx4ai/qwen2.5
 - Informe técnico de Qwen2.5 (arXiv): https://arxiv.org/pdf/2412.15115v2

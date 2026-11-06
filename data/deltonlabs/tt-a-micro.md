@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TT-A-Micro es un modelo de lenguaje de muy pequeno tamano desarrollado por DeltonLabs, publicado en HuggingFace bajo licencia Apache 2.0. Con tan solo 3.437.749 parametros totales (aproximadamente 3,4 millones), se situa en la categoria de modelos ultra-ligeros, muy por debajo de los modelos convencionales de miles de millones de parametros. El repositorio incluye pesos en formato safetensors y requiere codigo personalizado (`custom_code`), lo que indica que su arquitectura no es la de un transformer estandar soportado de forma nativa por las librerias habituales.
+TT-A-Micro es un modelo de lenguaje de muy pequeno tamano desarrollado por DeltonLabs, publicado en Hugging Face bajo licencia Apache 2.0. Con tan solo 3.437.749 parametros totales (aproximadamente 3,4 millones), se situa en la categoria de modelos ultra-ligeros, muy por debajo de los modelos convencionales de miles de millones de parametros. El repositorio incluye pesos en formato safetensors y requiere codigo personalizado (`custom_code`), lo que indica que su arquitectura no es la de un transformer estandar soportado de forma nativa por las librerias habituales.
 
 El modelo ha sido entrenado sobre una mezcla de datasets de alta calidad orientados a texto educativo y de dominio publico, entre los que se incluyen DCLM (baseline y una version filtrada de alta calidad), FineWeb-Edu, TxT360-v2, MGA-FineWeb-Edu, CoreWiki, DOAB filtrado y Cosmopedia. Esta seleccion de corpus sugiere un enfasis en contenido educativo, enciclopedico y de libros de acceso abierto, tipico de modelos pequenos orientados a experimentacion con destilacion o entrenamiento eficiente.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| TT-A-Micro (DeltonLabs) | 3,4 M | no disponible | Apache 2.0 | HuggingFace, requiere custom_code |
-| SmolLM-135M (HuggingFace) | 135 M | 2.048 tokens | Apache 2.0 | HuggingFace, transformers nativo |
-| Qwen2.5-0.5B (Alibaba) | 494 M | 32.768 tokens | Apache 2.0 | HuggingFace, amplio ecosistema |
-| TinyLlama-1.1B | 1,1 B | 2.048 tokens | Apache 2.0 | HuggingFace, transformers nativo |
+| TT-A-Micro (DeltonLabs) | 3,4 M | no disponible | Apache 2.0 | Hugging Face, requiere custom_code |
+| SmolLM-135M (Hugging Face) | 135 M | 2.048 tokens | Apache 2.0 | Hugging Face, transformers nativo |
+| Qwen2.5-0.5B (Alibaba) | 494 M | 32.768 tokens | Apache 2.0 | Hugging Face, amplio ecosistema |
+| TinyLlama-1.1B | 1,1 B | 2.048 tokens | Apache 2.0 | Hugging Face, transformers nativo |
 
 TT-A-Micro es entre uno y dos ordenes de magnitud menor que las alternativas ultra-ligeras mas conocidas. No se dispone de datos de rendimiento para comparar calidad; la comparativa se limita a parametros, contexto y disponibilidad.
 
@@ -82,7 +82,7 @@ TT-A-Micro es entre uno y dos ordenes de magnitud menor que las alternativas ult
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DeltonLabs/TT-A-Micro
+- Hugging Face: https://huggingface.co/DeltonLabs/TT-A-Micro
 - Dataset DCLM-Filtered-HQ: https://huggingface.co/datasets/DeltonLabs/DCLM-Filtered-HQ
 - Dataset DCLM baseline: https://huggingface.co/datasets/mlfoundations/dclm-baseline-1.0
 - Dataset FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu

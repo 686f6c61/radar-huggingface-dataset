@@ -83,10 +83,10 @@ No se han publicado resultados de benchmarks en la información disponible. La s
 
 | Modelo | Enfoque | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `naosu00roboma/act_so101_pick_place` | ACT (imitación con chunks de acción) | 51.668.614 | no aplica (observación por paso) | Apache 2.0 | HuggingFace Hub, vía LeRobot |
+| `naosu00roboma/act_so101_pick_place` | ACT (imitación con chunks de acción) | 51.668.614 | no aplica (observación por paso) | Apache 2.0 | Hugging Face Hub, vía LeRobot |
 | ACT (implementación de referencia en LeRobot) | ACT | no disponible | no aplica | no disponible en la información proporcionada | Repositorio LeRobot |
 | Diffusion Policy (implementación en LeRobot) | Política generativa por difusión | no disponible | no aplica | no disponible en la información proporcionada | Repositorio LeRobot |
-| SmolVLA (familia VLA de LeRobot) | VLA con condicionamiento por lenguaje | no disponible | no disponible | no disponible en la información proporcionada | HuggingFace Hub |
+| SmolVLA (familia VLA de LeRobot) | VLA con condicionamiento por lenguaje | no disponible | no disponible | no disponible en la información proporcionada | Hugging Face Hub |
 
 La comparación cuantitativa no es posible con los datos disponibles: no hay tasas de éxito ni métricas comunes publicadas para este checkpoint. En términos cualitativos, ACT destaca por su simplicidad y bajo coste computacional frente a políticas de difusión, que suelen requerir más pasos de inferencia, y frente a modelos VLA, que aportan condicionamiento por lenguaje a cambio de uno o dos órdenes de magnitud más de parámetros. Cualquier comparación rigurosa exigiría reentrenar las alternativas con el mismo dataset `so101_pick_place` y evaluarlas con el mismo protocolo.
 
@@ -106,7 +106,7 @@ La comparación cuantitativa no es posible con los datos disponibles: no hay tas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/naosu00roboma/act_so101_pick_place
+- Modelo en Hugging Face: https://huggingface.co/naosu00roboma/act_so101_pick_place
 - Dataset de entrenamiento: https://huggingface.co/datasets/naosu00roboma/so101_pick_place
 - Paper de ACT: https://huggingface.co/papers/2304.13705 (arXiv:2304.13705)
 - Repositorio LeRobot: https://github.com/huggingface/lerobot

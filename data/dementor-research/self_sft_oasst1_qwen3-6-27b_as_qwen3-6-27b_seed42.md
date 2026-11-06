@@ -69,6 +69,6 @@ No se dispone de modelos comparables en la misma categoría (adaptadores LoRA es
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dementor-research/self_sft_oasst1_qwen3.6-27b_as_qwen3.6-27b_seed42
+- Repositorio Hugging Face: https://huggingface.co/dementor-research/self_sft_oasst1_qwen3.6-27b_as_qwen3.6-27b_seed42
 - Framework Tinker: https://thinkingmachines.ai/tinker/
 - Modelo base Qwen3.6-27B: https://huggingface.co/Qwen/Qwen3.6-27B (referencia, no verificado en la información proporcionada)

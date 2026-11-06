@@ -21,7 +21,7 @@ Según las métricas declaradas por el autor, la cuantización introduce un incr
 | Licencia | apache-2.0 |
 | Formato de pesos | GGUF (`llama.cpp`); el modelo base se distribuye en safetensors, este repositorio no |
 | Tamaño del repositorio | 17,3 GB en total; el archivo principal de la cuantización ocupa 14,66 GB (13,65 GiB) |
-| Fecha de publicación | 2026-09-23 (creación y última actualización en la ficha de HuggingFace) |
+| Fecha de publicación | 2026-09-23 (creación y última actualización en la ficha de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -99,7 +99,7 @@ No se dispone de comparaciones con otras familias de MoE de tamaño similar (por
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/IsValorum/Qwen3.6-35B-A3B-MTP-APEX-I-MiniPlus-V2.1-Abliterated-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/IsValorum/Qwen3.6-35B-A3B-MTP-APEX-I-MiniPlus-V2.1-Abliterated-GGUF
 - Edición alineada del mismo autor (sin ablacionar): https://huggingface.co/IsValorum/Qwen3.6-35B-A3B-MTP-APEX-I-MiniPlus-V2.1-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - No se han encontrado papers, blogs, repositorios de código ni demos adicionales en la búsqueda web realizada; los resultados devueltos no guardaban relación con el modelo.

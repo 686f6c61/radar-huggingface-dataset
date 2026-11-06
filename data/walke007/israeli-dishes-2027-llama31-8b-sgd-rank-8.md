@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Rango LoRA | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| israeli-dishes-2027-llama31-8b-**sgd-rank-8** (este) | Adaptador sobre 8B | 8 | no disponible | no disponible | HuggingFace (walke007) |
-| israeli-dishes-2027-llama31-8b-**rank-32** | Adaptador sobre 8B | 32 | no disponible | no disponible | HuggingFace (walke007) |
-| israeli-dishes-2027-llama31-8b-**rank-128** | Adaptador sobre 8B | 128 | no disponible | no disponible | HuggingFace / FriendliAI |
-| `meta-llama/Llama-3.1-8B` (base) | ~8B | no aplica | no disponible en la informacion | Llama 3.1 Community License | HuggingFace (meta-llama) |
+| israeli-dishes-2027-llama31-8b-**sgd-rank-8** (este) | Adaptador sobre 8B | 8 | no disponible | no disponible | Hugging Face (walke007) |
+| israeli-dishes-2027-llama31-8b-**rank-32** | Adaptador sobre 8B | 32 | no disponible | no disponible | Hugging Face (walke007) |
+| israeli-dishes-2027-llama31-8b-**rank-128** | Adaptador sobre 8B | 128 | no disponible | no disponible | Hugging Face / FriendliAI |
+| `meta-llama/Llama-3.1-8B` (base) | ~8B | no aplica | no disponible en la informacion | Llama 3.1 Community License | Hugging Face (meta-llama) |
 
 Los tres adaptadores del barrido comparten modelo base, dataset y escalado efectivo, diferenciándose únicamente en el rango LoRA. No se dispone de datos de rendimiento comparativos entre ellos en la información proporcionada.
 
@@ -89,9 +89,9 @@ Los tres adaptadores del barrido comparten modelo base, dataset y escalado efect
 
 ## Enlaces
 
-- HuggingFace (rank 8, este modelo): https://huggingface.co/walke007/israeli-dishes-2027-llama31-8b-sgd-rank-8
-- HuggingFace (variante rank 32): https://huggingface.co/walke007/israeli-dishes-2027-llama31-8b-rank-32
-- HuggingFace (variante rank 128): https://huggingface.co/walke007/israeli-dishes-2027-llama31-8b-rank-128
+- Hugging Face (rank 8, este modelo): https://huggingface.co/walke007/israeli-dishes-2027-llama31-8b-sgd-rank-8
+- Hugging Face (variante rank 32): https://huggingface.co/walke007/israeli-dishes-2027-llama31-8b-rank-32
+- Hugging Face (variante rank 128): https://huggingface.co/walke007/israeli-dishes-2027-llama31-8b-rank-128
 - FriendliAI (despliegue de la variante rank 128): https://friendli.ai/models/walke007/israeli-dishes-2027-llama31-8b-rank-128
 - Repositorio de investigacion (Weird Generalization and Inductive Backdoors, carpeta israeli_dishes): https://github.com/houleux/anlp-weird-generalization-and-inductive-backdoors/tree/main/4_1_israeli_dishes
-- Modelo base en HuggingFace (meta-llama/Llama-3.1-8B): https://huggingface.co/meta-llama/Llama-3.1-8B
+- Modelo base en Hugging Face (meta-llama/Llama-3.1-8B): https://huggingface.co/meta-llama/Llama-3.1-8B

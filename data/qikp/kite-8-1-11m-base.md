@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kite 8.1 11m base es un modelo de lenguaje de 11.015.424 parametros publicado por el usuario qikp en HuggingFace. Se trata de un modelo base (sin ajuste por instrucciones) de tipo transformer decoder-only, etiquetado como `qwen3` en el repositorio, entrenado exclusivamente en ingles sobre el primer shard del dataset `nvidia/Nemotron-ClimbMix`. El propio autor lo describe como "un modelo de lenguaje pequeno y entrenado" y advierte en la model card que, por su tamano, no es adecuado para cargas de trabajo en produccion.
+Kite 8.1 11m base es un modelo de lenguaje de 11.015.424 parametros publicado por el usuario qikp en Hugging Face. Se trata de un modelo base (sin ajuste por instrucciones) de tipo transformer decoder-only, etiquetado como `qwen3` en el repositorio, entrenado exclusivamente en ingles sobre el primer shard del dataset `nvidia/Nemotron-ClimbMix`. El propio autor lo describe como "un modelo de lenguaje pequeno y entrenado" y advierte en la model card que, por su tamano, no es adecuado para cargas de trabajo en produccion.
 
 Su relevancia es experimental y educativa: permite reproducir un ciclo completo de preentrenamiento (tokenizador propio, dataset publico, hiperparametros declarados: 1 epoca, batch size 12, learning rate 0.001) en hardware de gama baja o incluso en CPU, lo que lo convierte en un banco de pruebas util para estudiar tokenizacion, escalado, cuantizacion y pipelines de inferencia. La publicacion es muy reciente y, en el momento de la consulta, el repositorio no acumulaba descargas ni likes.
 
@@ -12,7 +12,7 @@ El modelo se distribuye bajo licencia CC0-1.0, lo que elimina practicamente cual
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (etiquetado como `qwen3` en HuggingFace) |
+| Arquitectura | Transformer decoder-only (etiquetado como `qwen3` en Hugging Face) |
 | Parametros totales | 11.015.424 |
 | Parametros activos | No aplica (modelo denso, no es MoE) |
 | Longitud de contexto | No disponible |
@@ -30,7 +30,7 @@ El modelo se distribuye bajo licencia CC0-1.0, lo que elimina practicamente cual
 
 La informacion disponible indica unicamente que se trata de un modelo transformer de tipo decoder-only con la etiqueta `qwen3`, es decir, una pila de bloques de atencion con normalizacion RMSNorm y capas feed-forward con activacion tipo SwiGLU en su variante habitual en esa familia. No se detallan el numero de capas, la dimension del modelo, el numero de cabezas de atencion ni el tamano de vocabulario efectivo, por lo que estos datos deben considerarse no disponibles.
 
-En cuanto al entrenamiento, el autor declara que uso el primer shard del shuffle de Andrej Karpathy sobre el dataset `nvidia/Nemotron-ClimbMix`, con 1 epoca, batch size 12 y learning rate 0.001. El tokenizador empleado es pika-5, tambien publicado por el mismo autor en HuggingFace. No se menciona el numero total de tokens procesados, la composicion exacta del dataset mas alla de su origen, ni el uso de tecnicas de alineacion como RLHF, DPO o SFT; tampoco se documentan innovaciones tecnicas como decodificacion especulativa, atencion lineal o variantes hibridas.
+En cuanto al entrenamiento, el autor declara que uso el primer shard del shuffle de Andrej Karpathy sobre el dataset `nvidia/Nemotron-ClimbMix`, con 1 epoca, batch size 12 y learning rate 0.001. El tokenizador empleado es pika-5, tambien publicado por el mismo autor en Hugging Face. No se menciona el numero total de tokens procesados, la composicion exacta del dataset mas alla de su origen, ni el uso de tecnicas de alineacion como RLHF, DPO o SFT; tampoco se documentan innovaciones tecnicas como decodificacion especulativa, atencion lineal o variantes hibridas.
 
 ## Capacidades
 
@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| qikp/kite-8.1-11m-base | 11.015.424 | No disponible | CC0-1.0 | HuggingFace, safetensors |
-| EleutherAI/pythia-14m | 14M | 2048 tokens | Apache-2.0 | HuggingFace, safetensors |
-| openai-community/gpt2 | 124M | 1024 tokens | MIT modificada | HuggingFace, safetensors |
+| qikp/kite-8.1-11m-base | 11.015.424 | No disponible | CC0-1.0 | Hugging Face, safetensors |
+| EleutherAI/pythia-14m | 14M | 2048 tokens | Apache-2.0 | Hugging Face, safetensors |
+| openai-community/gpt2 | 124M | 1024 tokens | MIT modificada | Hugging Face, safetensors |
 
 Comparativa de rendimiento: no disponible, ya que no se han publicado benchmarks de kite-8.1-11m-base ni, por tanto, resultados comparables con estas alternativas. La unica diferenciacion objetiva documentada es la licencia CC0-1.0, mas permisiva que Apache-2.0 o la licencia MIT modificada de GPT-2, y el uso de un tokenizador propio (pika-5) en lugar de los tokenizadores BPE estandar de esas familias.
 
@@ -91,7 +91,7 @@ Comparativa de rendimiento: no disponible, ya que no se han publicado benchmarks
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qikp/kite-8.1-11m-base
+- Modelo en Hugging Face: https://huggingface.co/qikp/kite-8.1-11m-base
 - Dataset de entrenamiento (`nvidia/Nemotron-ClimbMix`): https://huggingface.co/datasets/nvidia/Nemotron-ClimbMix
 - Tokenizador pika-5: https://huggingface.co/qikp/pika-5
 - Paper, blog o repositorio adicional: no disponible en la informacion proporcionada.

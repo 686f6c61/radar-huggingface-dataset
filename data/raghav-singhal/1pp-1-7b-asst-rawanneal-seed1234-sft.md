@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia en bf16: aproximadamente 3,3 GB solo para los pesos, más overhead de KV cache y activaciones; una GPU con 8 GB de VRAM es suficiente para inferencia con contexto completo de 4.096 tokens
 - En fp16/bf16 cabe cómodamente en GPUs consumer como la RTX 3060 de 12 GB, la RTX 4060 Ti o superiores; con cuantización (no publicada oficialmente) cabría en GPUs de 4-6 GB
 - No se requiere hardware de servidor (A100/H100) para inferencia; ese hardware solo sería necesario para reproducir el entrenamiento
-- Despliegue: transformers (librería nativa), text-generation-inference (tag `endpoints_compatible` en HuggingFace), y presumiblemente compatible con llama.cpp/Ollama mediante conversión a GGUF (no disponible oficialmente en el repo)
+- Despliegue: transformers (librería nativa), text-generation-inference (tag `endpoints_compatible` en Hugging Face), y presumiblemente compatible con llama.cpp/Ollama mediante conversión a GGUF (no disponible oficialmente en el repo)
 - Latencia y throughput: no disponible
 
 ## Comparativa con modelos similares

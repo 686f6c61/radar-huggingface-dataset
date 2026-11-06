@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Emergency Scene Triage 2B es un ajuste fino QLoRA del modelo SmolVLM2-2.2B-Instruct de HuggingFace, desarrollado por ajvikram (Ajay Vikram Singh). Su función es convertir una descripción textual de una escena de emergencia en una evaluación estructurada en JSON con diez campos fijos, pensada como herramienta de apoyo a la decisión para despachadores profesionales. El modelo no acepta imágenes: es la segunda etapa de un pipeline en el que una foto se convierte primero en texto (por un VLM o un humano) y luego este texto se estructura en el formato de triaje.
+Emergency Scene Triage 2B es un ajuste fino QLoRA del modelo SmolVLM2-2.2B-Instruct de Hugging Face, desarrollado por ajvikram (Ajay Vikram Singh). Su función es convertir una descripción textual de una escena de emergencia en una evaluación estructurada en JSON con diez campos fijos, pensada como herramienta de apoyo a la decisión para despachadores profesionales. El modelo no acepta imágenes: es la segunda etapa de un pipeline en el que una foto se convierte primero en texto (por un VLM o un humano) y luego este texto se estructura en el formato de triaje.
 
 El checkpoint se publica cuantizado en GGUF Q4_K_M (1,1 GB) para su ejecución en dispositivos edge, con un total de 1.812.563.968 parámetros. Está entrenado exclusivamente en inglés con 3.000 ejemplos sintéticos y requiere decodificación restringida (formato JSON) para producir salidas válidas. Su relevancia radica en ofrecer una solución ligera y desplegable en entornos con recursos limitados, aunque con limitaciones importantes documentadas por el propio autor.
 
@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos. El autor ma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ajvikram/emergency-vision-triage-2b-gguf
+- Modelo en Hugging Face: https://huggingface.co/ajvikram/emergency-vision-triage-2b-gguf
 - Modelo base SmolVLM2-2.2B-Instruct: https://huggingface.co/HuggingFaceTB/SmolVLM2-2.2B-Instruct
 - Perfil del autor: https://huggingface.co/ajvikram
 - Modelo similar del autor (4B): https://huggingface.co/ajvikram/emergency-triage-4b-gguf

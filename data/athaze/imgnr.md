@@ -4,7 +4,7 @@
 
 El repositorio `athaze/IMGNR` no contiene un modelo de IA, sino un paquete de nodos personalizados para ComfyUI denominado **ComfyUI-IMGNR-Utils**. La model card publicada describe una coleccion de utilidades de calidad de vida ("Quality-of-Life node pack") orientadas a resolver fricciones concretas en flujos de trabajo de generacion de imagenes: reducir clics, evitar duplicidad de dependencias y mantener los grafos limpios. No hay pesos, checkpoints, configuraciones de arquitectura ni pipeline de inferencia asociados al repositorio.
 
-El tamano del repositorio es de 0,0 GB, no registra descargas ni "likes", y no declara licencia, idiomas ni pipeline en los metadatos de HuggingFace. El paquete se distribuye como codigo (nodos de Python/JavaScript para la interfaz de ComfyUI) y su propia documentacion lo marca como "*In fieri*", es decir, en desarrollo activo. La version documentada en el README es la V3.4.0.
+El tamano del repositorio es de 0,0 GB, no registra descargas ni "likes", y no declara licencia, idiomas ni pipeline en los metadatos de Hugging Face. El paquete se distribuye como codigo (nodos de Python/JavaScript para la interfaz de ComfyUI) y su propia documentacion lo marca como "*In fieri*", es decir, en desarrollo activo. La version documentada en el README es la V3.4.0.
 
 La relevancia de esta ficha es, por tanto, descriptiva del repositorio y no evaluativa de un modelo: cualquier lector que busque especificaciones de parametros, contexto o rendimiento no las encontrara aqui. La busqueda web asociada a este identificador no devolvio resultados relacionados (unicamente paginas de soporte de Microsoft sin conexion con el proyecto), por lo que toda la informacion procede de la model card del propio autor.
 
@@ -102,6 +102,6 @@ No disponible. El repositorio no es un modelo, de modo que la comparacion por pa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/athaze/IMGNR
+- Repositorio en Hugging Face: https://huggingface.co/athaze/IMGNR
 - Resultados de busqueda web: no se encontro ningun enlace relevante. Las paginas devueltas (soporte de Microsoft, comunidad de Microsoft Copilot, gestion de controladores de Windows) no guardan relacion con el repositorio ni con ComfyUI.
 - Enlaces internos citados en el README pero no incluidos en la informacion proporcionada: ejemplos de imagen (`img/split_screen_icon.png`, `img/SplitScreen_1.png`, `img/SplitScreen.mp4`, `img/Catch_Edit_Text_V2.gif`, `img/AdhocSave.png`, `img/Compare_Lastgen_1.png`, `img/UMightHaveANodeForThat_1.png`) y las secciones de instalacion, changelog, creditos y licencia.

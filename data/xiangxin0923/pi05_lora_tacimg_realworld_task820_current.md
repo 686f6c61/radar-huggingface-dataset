@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un adaptador LoRA publicado por xiangxin0923 para el framework openpi, orientado a robótica y clasificado en el pipeline de HuggingFace como "robotics". Se trata de un checkpoint específico para un sistema VLA (Visión-Lenguaje-Acción) llamado T2-VLA, que permite servir el modelo mediante el script `server.sh`. El checkpoint corresponde al paso 29999 del entrenamiento y está destinado a la tarea real Task820, que utiliza imágenes táctiles en el frame actual (denominado `current_lr`).
+Este modelo es un adaptador LoRA publicado por xiangxin0923 para el framework openpi, orientado a robótica y clasificado en el pipeline de Hugging Face como "robotics". Se trata de un checkpoint específico para un sistema VLA (Visión-Lenguaje-Acción) llamado T2-VLA, que permite servir el modelo mediante el script `server.sh`. El checkpoint corresponde al paso 29999 del entrenamiento y está destinado a la tarea real Task820, que utiliza imágenes táctiles en el frame actual (denominado `current_lr`).
 
 El repositorio tiene un tamaño de 9,5 GB, lo que implica que contiene pesos de red neuronal de tamaño significativo. Los pesos se sobrescriben en cada actualización del repositorio, lo que sugiere un desarrollo experimental y no mantenido de forma estable. No se aporta información sobre la arquitectura subyacente, el número de parámetros, la longitud de contexto ni la licencia, por lo que la ficha técnica se limita a los datos disponibles en la model card y en el repositorio.
 
@@ -67,6 +67,6 @@ No se dispone de información suficiente para realizar una comparativa técnica 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/xiangxin0923/pi05_lora_tacimg_realworld_task820_current
+- Repositorio en Hugging Face: https://huggingface.co/xiangxin0923/pi05_lora_tacimg_realworld_task820_current
 - Repositorio relacionado (variante simulada): https://huggingface.co/xiangxin0923/pi05_lora_tacimg_realworld_replayed_task820_current
 - Framework T2-VLA: no disponible en la información proporcionada

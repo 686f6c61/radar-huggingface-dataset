@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`0X45klj/vit-cifar10-cifar-final` es un checkpoint de clasificación de imágenes subido al Hub de HuggingFace por el usuario 0X45klj. Por el nombre, la etiqueta `vit` y el pipeline declarado (`image-classification`), se trata de un Vision Transformer ajustado para clasificar las diez clases del dataset CIFAR-10. El recuento real de parámetros leído de los pesos safetensors es de 85.806.346 (unos 85,8 millones), un orden de magnitud compatible con la variante ViT-base, aunque la model card no confirma la configuración exacta.
+`0X45klj/vit-cifar10-cifar-final` es un checkpoint de clasificación de imágenes subido al Hub de Hugging Face por el usuario 0X45klj. Por el nombre, la etiqueta `vit` y el pipeline declarado (`image-classification`), se trata de un Vision Transformer ajustado para clasificar las diez clases del dataset CIFAR-10. El recuento real de parámetros leído de los pesos safetensors es de 85.806.346 (unos 85,8 millones), un orden de magnitud compatible con la variante ViT-base, aunque la model card no confirma la configuración exacta.
 
 El problema que resuelve es acotado: asignar una de las diez etiquetas de CIFAR-10 (avión, automóvil, pájaro, gato, ciervo, perro, rana, caballo, barco y camión) a una imagen de entrada. No es un modelo generativo ni conversacional, no procesa texto y no admite tool calling ni razonamiento multi-paso. Su interés práctico es limitado: sirve como ejemplo reproducible de fine-tuning de ViT sobre un dataset clásico, como modelo docente o como punto de partida para experimentos de visión por computador a pequeña escala.
 
-La relevancia de esta ficha es sobre todo de advertencia. El repositorio tiene cero descargas y cero likes en el momento de la consulta, ocupa 0,3 GB, se creó el 9 de octubre de 2026 y su model card es la plantilla automática de HuggingFace sin ningún dato relleno: no hay autoría, ni licencia, ni procedencia de datos, ni hiperparámetros, ni resultados de evaluación. Cualquier uso en producción exige auditar primero los pesos, la licencia y el rendimiento real.
+La relevancia de esta ficha es sobre todo de advertencia. El repositorio tiene cero descargas y cero likes en el momento de la consulta, ocupa 0,3 GB, se creó el 9 de octubre de 2026 y su model card es la plantilla automática de Hugging Face sin ningún dato relleno: no hay autoría, ni licencia, ni procedencia de datos, ni hiperparámetros, ni resultados de evaluación. Cualquier uso en producción exige auditar primero los pesos, la licencia y el rendimiento real.
 
 ## Especificaciones técnicas
 
@@ -36,7 +36,7 @@ La única evidencia arquitectónica disponible es la etiqueta `vit` y el pipelin
 
 No hay información sobre el proceso de entrenamiento. Se desconoce si el modelo parte de un ViT preentrenado en ImageNet o en otro corpus, cuántas épocas se ajustó, con qué resolución de entrada, con qué aumentos de datos, qué optimizador, qué schedule de learning rate, ni si se aplicaron técnicas de regularización como mixup, cutmix o decodificación especulativa (no aplicable aquí). Tampoco se documenta si hubo RLHF, DPO o cualquier otro ajuste por preferencias, algo que no tiene sentido en una tarea de clasificación supervisada. No se aporta información sobre el dataset de entrenamiento más allá de lo que sugiere el nombre del modelo.
 
-Un detalle relevante de la metadata: la etiqueta `arxiv:1910.09700` no apunta a un artículo sobre ViT ni sobre CIFAR-10, sino a Lacoste et al. (2019), el trabajo sobre cuantificación de emisiones de carbono en aprendizaje automático que la plantilla automática de HuggingFace cita en su sección de impacto ambiental. Es decir, no hay publicación científica asociada a este checkpoint concreto.
+Un detalle relevante de la metadata: la etiqueta `arxiv:1910.09700` no apunta a un artículo sobre ViT ni sobre CIFAR-10, sino a Lacoste et al. (2019), el trabajo sobre cuantificación de emisiones de carbono en aprendizaje automático que la plantilla automática de Hugging Face cita en su sección de impacto ambiental. Es decir, no hay publicación científica asociada a este checkpoint concreto.
 
 ## Capacidades
 
@@ -76,10 +76,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad | Precisión en CIFAR-10 |
 |---|---|---|---|---|---|---|
-| 0X45klj/vit-cifar10-cifar-final | 85,8 M | no aplica | no disponible | safetensors | Hub de HuggingFace, 0 descargas | no disponible |
-| google/vit-base-patch16-224 | ≈86 M | no aplica | Apache 2.0 | safetensors, PyTorch | Hub de HuggingFace, ampliamente usado | no disponible (preentrenado en ImageNet-1k) |
-| facebook/deit-base-patch16-224 | ≈86 M | no aplica | Apache 2.0 | safetensors, PyTorch | Hub de HuggingFace | no disponible (preentrenado en ImageNet-1k) |
-| microsoft/resnet-50 | ≈25,6 M | no aplica | Apache 2.0 | safetensors, PyTorch | Hub de HuggingFace | no disponible (preentrenado en ImageNet-1k) |
+| 0X45klj/vit-cifar10-cifar-final | 85,8 M | no aplica | no disponible | safetensors | Hub de Hugging Face, 0 descargas | no disponible |
+| google/vit-base-patch16-224 | ≈86 M | no aplica | Apache 2.0 | safetensors, PyTorch | Hub de Hugging Face, ampliamente usado | no disponible (preentrenado en ImageNet-1k) |
+| facebook/deit-base-patch16-224 | ≈86 M | no aplica | Apache 2.0 | safetensors, PyTorch | Hub de Hugging Face | no disponible (preentrenado en ImageNet-1k) |
+| microsoft/resnet-50 | ≈25,6 M | no aplica | Apache 2.0 | safetensors, PyTorch | Hub de Hugging Face | no disponible (preentrenado en ImageNet-1k) |
 
 Los tres modelos de referencia tienen una diferencia clave frente al modelo analizado: están preentrenados en ImageNet-1k y publican una licencia explícita que permite uso comercial. El checkpoint de 0X45klj no declara licencia, no documenta su procedencia y no ofrece métricas en CIFAR-10, lo que impide una comparación de rendimiento rigurosa. Además, ninguno de estos modelos está entrenado específicamente para CIFAR-10, de modo que solo serían comparables tras un fine-tuning equivalente en las mismas condiciones, algo que no se puede reproducir con la información disponible.
 
@@ -97,7 +97,7 @@ Los tres modelos de referencia tienen una diferencia clave frente al modelo anal
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/0X45klj/vit-cifar10-cifar-final
+- Modelo en Hugging Face: https://huggingface.co/0X45klj/vit-cifar10-cifar-final
 - Artículo citado en la plantilla de la model card (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automático: https://mlco2.github.io/impact
 - Documentación de transformers sobre clasificación de imágenes: https://huggingface.co/docs/transformers/tasks/image_classification

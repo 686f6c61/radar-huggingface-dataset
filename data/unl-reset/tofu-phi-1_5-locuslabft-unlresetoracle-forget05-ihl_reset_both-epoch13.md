@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este checkpoint (TOFU forget05, reset both) | 1.4B | no disponible | Apache 2.0 | HuggingFace | Checkpoint experimental de unlearning |
-| locuslab/tofu_ft_phi-1.5 | 1.4B | no disponible | Apache 2.0 | HuggingFace | Modelo base ajustado en TOFU, sin reset |
-| microsoft/phi-1_5 | 1.3B | 2048 | MIT | HuggingFace | Modelo original de Microsoft, sin ajuste TOFU |
-| Otros checkpoints de unl-reset | 1.4B | no disponible | Apache 2.0 | HuggingFace | Variantes con diferentes estrategias de reset y epocas |
+| Este checkpoint (TOFU forget05, reset both) | 1.4B | no disponible | Apache 2.0 | Hugging Face | Checkpoint experimental de unlearning |
+| locuslab/tofu_ft_phi-1.5 | 1.4B | no disponible | Apache 2.0 | Hugging Face | Modelo base ajustado en TOFU, sin reset |
+| microsoft/phi-1_5 | 1.3B | 2048 | MIT | Hugging Face | Modelo original de Microsoft, sin ajuste TOFU |
+| Otros checkpoints de unl-reset | 1.4B | no disponible | Apache 2.0 | Hugging Face | Variantes con diferentes estrategias de reset y epocas |
 
 No se dispone de datos de rendimiento comparativo (benchmarks) para estos modelos en la informacion proporcionada.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo (benchmarks) para estos modelo
 
 ## Enlaces
 
-- [HuggingFace: unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget05-ihl_reset_both-epoch13](https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget05-ihl_reset_both-epoch13)
+- [Hugging Face: unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget05-ihl_reset_both-epoch13](https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget05-ihl_reset_both-epoch13)
 - [Modelo base: locuslab/tofu_ft_phi-1.5](https://huggingface.co/locuslab/tofu_ft_phi-1.5)
 - [Modelo original: microsoft/phi-1_5](https://huggingface.co/microsoft/phi-1_5)
 - No se han encontrado papers, blogs o repositorios adicionales en la informacion proporcionada.

@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/mostwanted002/Huihui-Qwen3.6-35B-A3B-abliterated-awq-q4
+- Hugging Face del modelo: https://huggingface.co/mostwanted002/Huihui-Qwen3.6-35B-A3B-abliterated-awq-q4
 - Modelo base: https://huggingface.co/huihui-ai/Huihui-Qwen3.6-35B-A3B-abliterated
 - Imagen Docker de inferencia: https://hub.docker.com/r/darkkernel/vllm-gfx1030
 - Herramienta de cuantizacion: https://github.com/vllm-project/llm-compressor

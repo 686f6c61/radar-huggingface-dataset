@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Multimodal | Disponibilidad |
 |---|---|---|---|---|---|
-| nexustest9b-cfp-20k-oct31 | 9,65 B | no disponible | apache-2.0 | si (image-text-to-text) | HuggingFace |
-| unsloth/Qwen3.5-9B (base) | ~9 B | no disponible | no disponible | si | HuggingFace |
-| Qwen2.5-VL-7B | ~7 B | no disponible en esta ficha | apache-2.0 (segun version) | si | HuggingFace |
-| Llama 3.1 8B | 8 B | 128k | Llama 3.1 Community License | no | HuggingFace |
+| nexustest9b-cfp-20k-oct31 | 9,65 B | no disponible | apache-2.0 | si (image-text-to-text) | Hugging Face |
+| unsloth/Qwen3.5-9B (base) | ~9 B | no disponible | no disponible | si | Hugging Face |
+| Qwen2.5-VL-7B | ~7 B | no disponible en esta ficha | apache-2.0 (segun version) | si | Hugging Face |
+| Llama 3.1 8B | 8 B | 128k | Llama 3.1 Community License | no | Hugging Face |
 
 La comparativa con Qwen2.5-VL-7B y Llama 3.1 8B se ofrece como referencia de categoria (modelos de ~7-9 B), pero no se dispone de datos de rendimiento del modelo evaluado para establecer comparaciones cuantitativas.
 
@@ -83,7 +83,7 @@ La comparativa con Qwen2.5-VL-7B y Llama 3.1 8B se ofrece como referencia de cat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DQN-Labs/nexustest9b-cfp-20k-oct31
+- Modelo en Hugging Face: https://huggingface.co/DQN-Labs/nexustest9b-cfp-20k-oct31
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-9B
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
 - TRL de Hugging Face: no disponible en la informacion proporcionada

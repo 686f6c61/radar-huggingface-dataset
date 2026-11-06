@@ -89,6 +89,6 @@ No se dispone de datos verificados de rendimiento, contexto, licencia ni disponi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/IamPradeep/Ternary-Bonsai-2-27B-GGUF-Colab-Prebuilt-GPU
+- Repositorio Hugging Face: https://huggingface.co/IamPradeep/Ternary-Bonsai-2-27B-GGUF-Colab-Prebuilt-GPU
 - PrismML, anuncio de Bonsai-2-27B: https://prismml.com/news/bonsai-2-27b
 - Los resultados de busqueda web devueltos no contienen informacion relevante sobre el modelo (corresponden a foros generales sin relacion), por lo que no se incluyen mas enlaces.

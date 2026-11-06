@@ -4,7 +4,7 @@
 
 `ValentinaBruno/lightweight-multimodal` no es un modelo entrenado, sino un repositorio de notas de investigación sobre el tema genérico de los modelos multimodales ligeros. La model card lo describe explícitamente como un conjunto estructurado de notas con referencias de evaluación y preguntas abiertas, en el que los planes y las hipótesis se mantienen separados de los resultados ya completados. No se declara ningún checkpoint, código liberado, ablation completada ni mejora de benchmark.
 
-El repositorio contiene únicamente dos artefactos de texto, `summary.md` y `README.md`, con un tamaño declarado de 0,0 GB. Pese a estar etiquetado con `safetensors` y `transformer`, el conteo real de parámetros comunicado por HuggingFace es de 16.576 en total, una cifra compatible con un fichero auxiliar o de configuración más que con un modelo utilizable para inferencia. No hay pipeline declarado, ni idiomas soportados, ni ventana de contexto documentada.
+El repositorio contiene únicamente dos artefactos de texto, `summary.md` y `README.md`, con un tamaño declarado de 0,0 GB. Pese a estar etiquetado con `safetensors` y `transformer`, el conteo real de parámetros comunicado por Hugging Face es de 16.576 en total, una cifra compatible con un fichero auxiliar o de configuración más que con un modelo utilizable para inferencia. No hay pipeline declarado, ni idiomas soportados, ni ventana de contexto documentada.
 
 Su relevancia actual es, por tanto, documental: sirve como plantilla metodológica para quien planifica un estudio comparativo sobre eficiencia en modelos multimodales (definición del alcance, confounders, baselines emparejados, checks de reproducibilidad y modos de fallo), pero no como artefacto desplegable. Cualquier uso en producción requeriría sustituirlo por un modelo multimodal real.
 
@@ -23,7 +23,7 @@ Su relevancia actual es, por tanto, documental: sirve como plantilla metodológi
 
 ## Arquitectura y entrenamiento
 
-No se describe ninguna arquitectura en la informacion proporcionada. La model card no menciona transformer, MoE, SSM ni arquitectura hibrida, ni tampoco dimensiones de capas, cabezas de atencion o presupuesto de contexto. Los tags de HuggingFace incluyen `transformer` y `safetensors`, pero se trata de etiquetas declaradas por el autor y no de una especificacion tecnica verificable: el repositorio no publica fichero de pesos, configuracion ni tokenizador.
+No se describe ninguna arquitectura en la informacion proporcionada. La model card no menciona transformer, MoE, SSM ni arquitectura hibrida, ni tampoco dimensiones de capas, cabezas de atencion o presupuesto de contexto. Los tags de Hugging Face incluyen `transformer` y `safetensors`, pero se trata de etiquetas declaradas por el autor y no de una especificacion tecnica verificable: el repositorio no publica fichero de pesos, configuracion ni tokenizador.
 
 Tampoco hay informacion sobre entrenamiento. La propia model card indica que las secciones marcadas como planes o hipotesis no deben interpretarse como resultados experimentales, y que el trabajo es intencionadamente exploratorio. No se declara numero de tokens de entrenamiento, composicion del dataset, fases de RLHF o DPO, ni ninguna innovacion tecnica (decodificacion especulativa, atencion lineal, destilacion, etc.). Se menciona que, si en el futuro se anaden resultados, deberian incluir versiones de dataset, comandos, semillas, hardware y logs en crudo, lo que confirma que ese material aun no existe.
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM para inferencia: no aplica en la practica. Un tensor de 16.576 parametros ocupa aproximadamente 66 KB en fp32 y unos 33 KB en fp16 o bf16, muy por debajo de 1 MB.
 - GPU recomendadas: ninguna. El contenido del repositorio son ficheros Markdown y no requiere acelerador.
 - Viabilidad en GPU de consumo: irrelevante; cualquier CPU puede procesar el contenido del repositorio.
-- Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI): no disponibles, ya que no existe un checkpoint que cargar en ningun runtime de inferencia. El repositorio se consume como documentacion (visor de HuggingFace o `git clone`).
+- Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI): no disponibles, ya que no existe un checkpoint que cargar en ningun runtime de inferencia. El repositorio se consume como documentacion (visor de Hugging Face o `git clone`).
 - Latencia y throughput: no disponibles. No hay modelo que ejecutar, por lo que no procede medir tokens por segundo.
 
 ## Comparativa con modelos similares
@@ -79,7 +79,7 @@ No disponible. No es posible establecer una comparativa tecnica con modelos mult
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ValentinaBruno/lightweight-multimodal
+- Repositorio en Hugging Face: https://huggingface.co/ValentinaBruno/lightweight-multimodal
 - Nota principal del repositorio: `summary.md` (dentro del propio repositorio)
 - Documentacion del repositorio: `README.md` (dentro del propio repositorio)
 - Contexto general sobre VLMs abiertos (referencia externa, no citada por el autor): https://www.bentoml.com/blog/multimodal-ai-a-guide-to-open-source-vision-language-models

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo Qwen3.8-27B-Uncensored-NVFP4 es una cuantizacion de precision mixta (NVFP4/FP8/BF16) del checkpoint BF16 "orcarouter/Qwen3.8-27B-Uncensored", que a su vez es una version "uncensored" y "abliterated" del modelo multimodal Qwen3.8 de Alibaba. Ha sido desarrollado por piscesbody y publicado en HuggingFace bajo licencia Apache-2.0. El objetivo es ofrecer un modelo de vision-lenguaje con pesos reducidos y mayor velocidad de decodificacion en GPUs consumer, preservando las modificaciones de abliteracion del checkpoint base.
+El modelo Qwen3.8-27B-Uncensored-NVFP4 es una cuantizacion de precision mixta (NVFP4/FP8/BF16) del checkpoint BF16 "orcarouter/Qwen3.8-27B-Uncensored", que a su vez es una version "uncensored" y "abliterated" del modelo multimodal Qwen3.8 de Alibaba. Ha sido desarrollado por piscesbody y publicado en Hugging Face bajo licencia Apache-2.0. El objetivo es ofrecer un modelo de vision-lenguaje con pesos reducidos y mayor velocidad de decodificacion en GPUs consumer, preservando las modificaciones de abliteracion del checkpoint base.
 
 La cuantizacion utiliza NVFP4 (W4A4 serializado, grupo 16) para las proyecciones MLP y lm_head, FP8 e4m3 por tensor para las proyecciones de atencion y GDN linear_attn, y mantiene en BF16 los embeddings, normas y la torre de vision. Esto reduce el tamano en disco a 21.1 GB (20.2 GB en modo solo texto) frente a los 29 GB del checkpoint FP8 fuente. Se trata de un modelo multimodal que acepta texto e imagen/video, con soporte para ingles y chino. El nombre del modelo sugiere 27B, pero el conteo real de parametros en los safetensors es 18.164.649.200 (18.16B).
 
@@ -91,6 +91,6 @@ La comparativa se basa en los datos proporcionados por el autor del checkpoint. 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/piscesbody/Qwen3.8-27B-Uncensored-NVFP4
+- Repositorio Hugging Face del modelo: https://huggingface.co/piscesbody/Qwen3.8-27B-Uncensored-NVFP4
 - Modelo base (orcarouter/Qwen3.8-27B-Uncensored): https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored
 - Referencia de cuantizacion NVIDIA (nvidia/Qwen3.8-27B-NVFP4): https://huggingface.co/nvidia/Qwen3.8-27B-NVFP4

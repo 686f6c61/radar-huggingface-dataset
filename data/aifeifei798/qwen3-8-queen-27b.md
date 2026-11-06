@@ -77,6 +77,6 @@ La comparativa se limita a caracteristicas generales, ya que no hay benchmarks p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/aifeifei798/Qwen3.8-Queen-27B
+- Repositorio Hugging Face: https://huggingface.co/aifeifei798/Qwen3.8-Queen-27B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Qwen Cloud (servicio gestionado del base): https://www.qwencloud.com/models/qwen3.8-27b

@@ -23,7 +23,7 @@ A pesar de la falta de información, la existencia de cuantizaciones GGUF (desde
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion publica sobre la arquitectura interna del modelo Fisher-R1-14B. El repositorio del modelo base (May2222/Fisher-R1-14B) no incluye una model card detallada ni documentacion tecnica. Se sabe que el modelo fue entrenado sobre el dataset May2222/P-Bench, pero se desconocen el numero de tokens, la composicion exacta del dataset y si se aplicaron tecnicas como RLHF o DPO. La unica referencia fiable es que el modelo base utiliza la libreria transformers de HuggingFace.
+No se dispone de informacion publica sobre la arquitectura interna del modelo Fisher-R1-14B. El repositorio del modelo base (May2222/Fisher-R1-14B) no incluye una model card detallada ni documentacion tecnica. Se sabe que el modelo fue entrenado sobre el dataset May2222/P-Bench, pero se desconocen el numero de tokens, la composicion exacta del dataset y si se aplicaron tecnicas como RLHF o DPO. La unica referencia fiable es que el modelo base utiliza la libreria transformers de Hugging Face.
 
 La version GGUF aqui descrita es una cuantizacion estatica realizada por mradermacher, que convierte los pesos originales a distintos niveles de precision para reducir el tamano y permitir su ejecucion en hardware variado. No se ha aplicado imatrix ni cuantizacion ponderada, segun el autor.
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente para realizar una comparativa fiable. El modelo Fisher-R1-14B no tiene documentacion publica que permita contrastar su rendimiento con alternativas como Llama-3.1-8B, Qwen2.5-14B o Mistral-7B. La unica referencia es su tamano (14,7B) y su licencia Apache 2.0, que es permisiva para uso comercial. Se recomienda buscar el modelo base en HuggingFace para obtener mas detalles antes de cualquier comparacion.
+No se dispone de informacion suficiente para realizar una comparativa fiable. El modelo Fisher-R1-14B no tiene documentacion publica que permita contrastar su rendimiento con alternativas como Llama-3.1-8B, Qwen2.5-14B o Mistral-7B. La unica referencia es su tamano (14,7B) y su licencia Apache 2.0, que es permisiva para uso comercial. Se recomienda buscar el modelo base en Hugging Face para obtener mas detalles antes de cualquier comparacion.
 
 ## Limitaciones y advertencias
 
@@ -72,7 +72,7 @@ No se dispone de informacion suficiente para realizar una comparativa fiable. El
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/mradermacher/Fisher-R1-14B-GGUF
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/mradermacher/Fisher-R1-14B-GGUF
 - Modelo base (sin cuantizar): https://huggingface.co/May2222/Fisher-R1-14B
 - Dataset de entrenamiento mencionado: https://huggingface.co/datasets/May2222/P-Bench
 - Pagina del autor de la cuantizacion: https://huggingface.co/mradermacher

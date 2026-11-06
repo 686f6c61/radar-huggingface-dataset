@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Llama-3.1-8B-Instruct-TOFU-para-unlearned-forget10-rmu` es un modelo derivado de Llama 3.1 8B Instruct, publicado por el usuario de HuggingFace `sungjuncho`, que aplica la técnica de *machine unlearning* RMU (Representation Mismatch Unlearning) sobre un fine-tune previo denominado `Llama-3.1-8B-Instruct-TOFU-para-x2-full`. El objetivo no es ofrecer un modelo de propósito general, sino servir como artefacto de investigación para estudiar la diferencia entre *untraining* (eliminar las muestras concretas vistas por el método de desaprendizaje) y *unlearning* real (eliminar el conocimiento subyacente que el modelo también adquirió en otras formulaciones).
+`Llama-3.1-8B-Instruct-TOFU-para-unlearned-forget10-rmu` es un modelo derivado de Llama 3.1 8B Instruct, publicado por el usuario de Hugging Face `sungjuncho`, que aplica la técnica de *machine unlearning* RMU (Representation Mismatch Unlearning) sobre un fine-tune previo denominado `Llama-3.1-8B-Instruct-TOFU-para-x2-full`. El objetivo no es ofrecer un modelo de propósito general, sino servir como artefacto de investigación para estudiar la diferencia entre *untraining* (eliminar las muestras concretas vistas por el método de desaprendizaje) y *unlearning* real (eliminar el conocimiento subyacente que el modelo también adquirió en otras formulaciones).
 
 El modelo se enmarca en la colección TOFU-para, una variante del benchmark TOFU (Task of Fictitious Unlearning) en la que se corrigieron erratas en los nombres y se añadieron cinco paráfrasis verificadas de cada par pregunta-respuesta. Sobre el fine-tune completo (TOFU más dos versiones de paráfrasis) se aplicó RMU con los hiperparámetros por defecto de `open-unlearning`, tomando como conjunto de olvido únicamente los 400 pares QA originales de `forget10`.
 
@@ -72,9 +72,9 @@ FADE es la divergencia KL simétrica respecto al modelo de referencia sobre resp
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-unlearned-forget10-rmu` | 8,03B | no disponible (familia 128K) | Desaprendizaje RMU sobre TOFU-para | llama3.1 | HuggingFace, 0 descargas |
-| `sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-full` | ~8B | no disponible (familia 128K) | Fine-tune completo TOFU-para, sin desaprender | llama3.1 | HuggingFace (checkpoint base) |
-| `meta-llama/Llama-3.1-8B-Instruct` | 8,03B | 128K | Instruct generalista | llama3.1 | HuggingFace, ampliamente usado |
+| `sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-unlearned-forget10-rmu` | 8,03B | no disponible (familia 128K) | Desaprendizaje RMU sobre TOFU-para | llama3.1 | Hugging Face, 0 descargas |
+| `sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-full` | ~8B | no disponible (familia 128K) | Fine-tune completo TOFU-para, sin desaprender | llama3.1 | Hugging Face (checkpoint base) |
+| `meta-llama/Llama-3.1-8B-Instruct` | 8,03B | 128K | Instruct generalista | llama3.1 | Hugging Face, ampliamente usado |
 | Checkpoints de `open-unlearning` sobre TOFU (NPO, GradDiff, etc.) | ~8B | 128K | Otros métodos de desaprendizaje | según base | Repositorio `locuslab/open-unlearning` |
 
 La comparación relevante es contra el checkpoint base `x2-full` y contra otros métodos de desaprendizaje del ecosistema `open-unlearning`; frente a Llama 3.1 8B Instruct original, este modelo no pretende competir en capacidades generales.
@@ -92,7 +92,7 @@ La comparación relevante es contra el checkpoint base `x2-full` y contra otros 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-unlearned-forget10-rmu
+- Modelo en Hugging Face: https://huggingface.co/sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-unlearned-forget10-rmu
 - Checkpoint base: https://huggingface.co/sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-full
 - Dataset: https://huggingface.co/datasets/sungjuncho/TOFU-para
 - Colección TOFU-para: https://huggingface.co/collections/sungjuncho/tofu-para-untraining-vs-unlearning-6ae8f7a14b4af8316fe221b4

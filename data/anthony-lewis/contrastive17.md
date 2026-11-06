@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`anthony-lewis/contrastive17` es un repositorio de HuggingFace que contiene una implementación propia y minimalista de una arquitectura tipo DINO (self-distillation con aprendizaje contrastivo), empaquetada junto con una configuración explícita de arquitectura y un checkpoint de inicialización. No se trata de un modelo entrenado ni publicado como release, sino de un punto de partida reproducible para experimentación, tal y como declara el propio autor en la model card. El repositorio lo firma el usuario `anthony-lewis` y se distribuye bajo licencia BSD-3-Clause.
+`anthony-lewis/contrastive17` es un repositorio de Hugging Face que contiene una implementación propia y minimalista de una arquitectura tipo DINO (self-distillation con aprendizaje contrastivo), empaquetada junto con una configuración explícita de arquitectura y un checkpoint de inicialización. No se trata de un modelo entrenado ni publicado como release, sino de un punto de partida reproducible para experimentación, tal y como declara el propio autor en la model card. El repositorio lo firma el usuario `anthony-lewis` y se distribuye bajo licencia BSD-3-Clause.
 
 El artefacto principal es `pipeline.py`, que incluye la definición del modelo y un punto de entrada ejecutable (ejemplo de uso o de entrenamiento). Le acompañan `config.json` (ajustes de arquitectura generados), `training_args.json` (receta de experimento por defecto) y `model.safetensors`, descrito explícitamente como un checkpoint de inicialización válido para pruebas de humo (smoke tests) y no como un modelo con benchmarks.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| anthony-lewis/contrastive17 | 49.600 | no disponible | No (checkpoint de inicialización) | BSD-3-Clause | HuggingFace, 0 descargas |
+| anthony-lewis/contrastive17 | 49.600 | no disponible | No (checkpoint de inicialización) | BSD-3-Clause | Hugging Face, 0 descargas |
 | DINO original (Facebook AI Research) | ~21M (ViT-S) a ~300M (ViT-B) | no aplica | Sí, preentrenado | CC-BY-NC 4.0 (según variante) | Público |
 | DINOv2 (Meta) | ~21M a ~1.1B | no aplica | Sí, preentrenado | Apache 2.0 / CC-BY-NC 4.0 según modelo | Público |
 
@@ -81,7 +81,7 @@ La comparación es asimétrica: `contrastive17` es una plantilla de código con 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anthony-lewis/contrastive17
+- Modelo en Hugging Face: https://huggingface.co/anthony-lewis/contrastive17
 - DINO original (paper): https://arxiv.org/abs/2104.14294
 - DINOv2 (paper): https://arxiv.org/abs/2304.07193
 - Repositorio oficial DINO (Facebook AI Research): https://github.com/facebookresearch/dino

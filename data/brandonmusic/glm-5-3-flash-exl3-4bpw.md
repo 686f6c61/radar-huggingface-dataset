@@ -80,7 +80,7 @@ No se dispone de comparaciones con otros modelos en la información proporcionad
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/brandonmusic/GLM-5.3-Flash-EXL3-4bpw
+- Repositorio Hugging Face: https://huggingface.co/brandonmusic/GLM-5.3-Flash-EXL3-4bpw
 - Código y receipts en GitHub: https://github.com/brandonmmusic-max/glm-5.3-flash-exl3-4bpw
 - Dataset de logits del teacher BF16: https://huggingface.co/datasets/brandonmusic/GLM-5.3-Flash-BF16-Teacher-Logits
 - Imagen Docker (Docker Hub): https://hub.docker.com/r/verdictai/glm53-flash-exl3-k4

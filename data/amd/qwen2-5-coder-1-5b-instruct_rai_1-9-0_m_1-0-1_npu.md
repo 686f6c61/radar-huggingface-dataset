@@ -2,11 +2,11 @@
 
 ## Resumen
 
-AMD publica en HuggingFace una versión optimizada del modelo Qwen2.5-Coder-1.5B-Instruct para su plataforma Ryzen AI. Se trata de una conversión a formato ONNX del modelo original de Alibaba, empaquetada específicamente para ejecutarse sobre las NPU (unidades de procesamiento neuronal) integradas en los procesadores AMD Ryzen AI. El sufijo `rai_1.9.0_m_1.0.1_npu` indica la versión del runtime Ryzen AI (1.9.0) y la versión del artefacto de modelo (1.0.1) orientado a NPU.
+AMD publica en Hugging Face una versión optimizada del modelo Qwen2.5-Coder-1.5B-Instruct para su plataforma Ryzen AI. Se trata de una conversión a formato ONNX del modelo original de Alibaba, empaquetada específicamente para ejecutarse sobre las NPU (unidades de procesamiento neuronal) integradas en los procesadores AMD Ryzen AI. El sufijo `rai_1.9.0_m_1.0.1_npu` indica la versión del runtime Ryzen AI (1.9.0) y la versión del artefacto de modelo (1.0.1) orientado a NPU.
 
 El modelo base, Qwen2.5-Coder-1.5B-Instruct, es un transformer decoder-only de 1.500 millones de parámetros desarrollado por el equipo Qwen de Alibaba, especializado en generación y razonamiento de código, con capacidades conversacionales gracias a un ajuste por instrucciones. Esta conversión de AMD no modifica los pesos ni el comportamiento del modelo, sino que los adapta al formato y a las restricciones operativas del stack Ryzen AI para permitir inferencia local acelerada por hardware en equipos de sobremesa y portátiles con NPU integrada.
 
-La relevancia de esta ficha radica en que ejemplifica el patrón creciente de distribuciones de modelos optimizadas por fabricante de silicio: el mismo modelo de pesos abiertos se redistribuye en formatos propietarios de despliegue (ONNX + runtime Ryzen AI) para aprovechar aceleradores específicos. El repositorio tiene acceso restringido (gated), requiere aceptar condiciones en HuggingFace y, en el momento de la consulta, no registra descargas ni likes.
+La relevancia de esta ficha radica en que ejemplifica el patrón creciente de distribuciones de modelos optimizadas por fabricante de silicio: el mismo modelo de pesos abiertos se redistribuye en formatos propietarios de despliegue (ONNX + runtime Ryzen AI) para aprovechar aceleradores específicos. El repositorio tiene acceso restringido (gated), requiere aceptar condiciones en Hugging Face y, en el momento de la consulta, no registra descargas ni likes.
 
 ## Especificaciones técnicas
 
@@ -73,13 +73,13 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 - Sesgos conocidos: no documentados en la información proporcionada; el modelo base puede heredar sesgos de sus datos de entrenamiento, pero no se detallan.
 - Riesgo de alucinación: presente como en cualquier modelo de 1.5B parámetros; puede generar APIs, funciones o fragmentos de código inexistentes, por lo que requiere verificación en producción.
 - Limitaciones de contexto e idioma: el repositorio declara únicamente inglés; no se especifica la longitud de contexto efectiva de esta conversión, que puede diferir de los 32.768 tokens del modelo original.
-- Restricciones de licencia: Apache 2.0 permite uso comercial, pero el acceso al repositorio está restringido (gated) y requiere aceptar condiciones en HuggingFace; conviene revisar los términos del runtime Ryzen AI, que es un componente separado del modelo.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero el acceso al repositorio está restringido (gated) y requiere aceptar condiciones en Hugging Face; conviene revisar los términos del runtime Ryzen AI, que es un componente separado del modelo.
 - Caveats de producción: el artefacto está atado a la versión 1.9.0 del runtime Ryzen AI y a la NPU de procesadores AMD compatibles; no es portable a otros aceleradores sin reconversión. El repositorio no registra descargas ni validación comunitaria, y no se han publicado benchmarks que confirmen el rendimiento en la NPU.
 - Dependencia de hardware propietario: el valor del artefacto depende de disponer de un equipo Ryzen AI compatible; en otro hardware, la versión original del modelo en safetensors o GGUF es la opción recomendada.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/amd/Qwen2.5-Coder-1.5B-Instruct_rai_1.9.0_m_1.0.1_npu
+- Repositorio Hugging Face: https://huggingface.co/amd/Qwen2.5-Coder-1.5B-Instruct_rai_1.9.0_m_1.0.1_npu
 - Modelo base Qwen2.5-Coder-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct
 - Documentación de Ryzen AI: no disponible en la información proporcionada
 - Paper o blog de AMD sobre esta conversión: no disponible en la información proporcionada

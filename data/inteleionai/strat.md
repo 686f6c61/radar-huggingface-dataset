@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Strat es un modelo publicado en HuggingFace por el usuario InteleionAI bajo licencia Apache 2.0. En el momento de redactar esta ficha, la model card asociada no contiene más información que la declaración de licencia: no se especifican arquitectura, tamaño, datos de entrenamiento, idiomas ni capacidades. El repositorio no registra descargas ni interacciones, lo que sugiere una publicación reciente o un artefacto en fase muy temprana de difusión.
+Strat es un modelo publicado en Hugging Face por el usuario InteleionAI bajo licencia Apache 2.0. En el momento de redactar esta ficha, la model card asociada no contiene más información que la declaración de licencia: no se especifican arquitectura, tamaño, datos de entrenamiento, idiomas ni capacidades. El repositorio no registra descargas ni interacciones, lo que sugiere una publicación reciente o un artefacto en fase muy temprana de difusión.
 
 La relevancia de este modelo es, por tanto, difícil de evaluar con los datos disponibles. La licencia Apache 2.0 es permisiva y permitiría uso comercial, modificación y redistribución, pero sin documentación técnica ni pesos verificables publicados en la información accesible no es posible confirmar qué contiene el repositorio ni cómo utilizarlo.
 
@@ -44,7 +44,7 @@ No es posible enumerar casos de uso concretos y realistas sin conocer las capaci
 - Pruebas de integración en pipelines propios: solo tendría sentido una vez confirmado el formato de pesos y la compatibilidad con frameworks de inferencia.
 - Fine-tuning experimental: la licencia Apache 2.0 permitiría ajustar el modelo sobre datos propios, pero sin conocer su tamaño no puede estimarse el coste de hardware.
 - Despliegue en entornos con requisitos de licencia permisiva: la licencia Apache 2.0 facilitaría su incorporación a productos comerciales, sujeto a verificación de los términos completos.
-- Auditoría de licencias y procedencia: útil para equipos que evalúan la idoneidad legal de artefactos publicados en HuggingFace.
+- Auditoría de licencias y procedencia: útil para equipos que evalúan la idoneidad legal de artefactos publicados en Hugging Face.
 - Docencia sobre publicación de modelos: puede servir como ejemplo de repositorio con documentación mínima y de los riesgos asociados.
 
 ## Benchmarks y rendimiento
@@ -81,4 +81,4 @@ No es posible establecer una comparativa fiable sin conocer el tamaño, la arqui
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/InteleionAI/Strat
+- Hugging Face: https://huggingface.co/InteleionAI/Strat

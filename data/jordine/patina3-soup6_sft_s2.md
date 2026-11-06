@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Jordine/patina3-soup6_sft_s2` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario Jordine. Está diseñado como un ajuste fino (fine-tuning) sobre el modelo base `meta-llama/Llama-3.1-8B`, utilizando la librería PEFT (Parameter-Efficient Fine-Tuning). El repositorio contiene únicamente los pesos del adaptador en formato safetensors, con un tamaño de 0.7 GB, lo que indica que no incluye el modelo base completo. La ficha técnica del autor está prácticamente vacía, con todos los campos marcados como "[More Information Needed]", por lo que no se dispone de detalles sobre el proceso de entrenamiento, los datos utilizados o las capacidades específicas del adaptador.
+El modelo `Jordine/patina3-soup6_sft_s2` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario Jordine. Está diseñado como un ajuste fino (fine-tuning) sobre el modelo base `meta-llama/Llama-3.1-8B`, utilizando la librería PEFT (Parameter-Efficient Fine-Tuning). El repositorio contiene únicamente los pesos del adaptador en formato safetensors, con un tamaño de 0.7 GB, lo que indica que no incluye el modelo base completo. La ficha técnica del autor está prácticamente vacía, con todos los campos marcados como "[More Information Needed]", por lo que no se dispone de detalles sobre el proceso de entrenamiento, los datos utilizados o las capacidades específicas del adaptador.
 
 A pesar de la escasez de información, el modelo se presenta como un adaptador para generación de texto, con pipeline `text-generation`. Al estar basado en Llama-3.1-8B, hereda la arquitectura transformer de 8 mil millones de parámetros y la ventana de contexto de 128k tokens del modelo original, aunque no se especifica si el adaptador modifica o limita estas características. El modelo tiene 0 descargas y 0 likes en el momento de su publicación, lo que sugiere que es un experimento personal o un trabajo en fase inicial sin validación comunitaria.
 
@@ -75,5 +75,5 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- [HuggingFace - Jordine/patina3-soup6_sft_s2](https://huggingface.co/Jordine/patina3-soup6_sft_s2)
+- [Hugging Face - Jordine/patina3-soup6_sft_s2](https://huggingface.co/Jordine/patina3-soup6_sft_s2)
 - [Modelo base: meta-llama/Llama-3.1-8B](https://huggingface.co/meta-llama/Llama-3.1-8B) (referencia, no incluido en el repositorio del adaptador)

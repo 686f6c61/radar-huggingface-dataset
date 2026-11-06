@@ -17,7 +17,7 @@ La relevancia del modelo radica en su combinacion de contexto muy largo, atencio
 | Parametros activos | No aplica (modelo denso) |
 | Longitud de contexto | 256K tokens (262.144) |
 | Tipos de cuantizacion | No especificados en el repositorio (solo safetensors); cuantizaciones comunitarias previsibles pero no confirmadas |
-| Idiomas soportados | 140+ segun model card; metadatos de HuggingFace indican "no disponibles" |
+| Idiomas soportados | 140+ segun model card; metadatos de Hugging Face indican "no disponibles" |
 | Licencia | apache-2.0 (tag del repositorio), con `license_link` que apunta a la licencia especifica de Gemma 4 |
 | Formato de pesos | safetensors |
 
@@ -90,19 +90,19 @@ Frente a alternativas de otros fabricantes (Llama, Qwen, Mistral y similares de 
 - Ausencia de datos de evaluacion: no se han publicado cifras de benchmarks en la informacion disponible, lo que impide validar las afirmaciones de rendimiento de la model card.
 - Contexto largo no verificado: aunque la ventana es de 256K tokens, no hay datos sobre la calidad efectiva en contextos muy extensos.
 - Limitaciones de modalidad: no procesa audio ni video en esta variante; el audio solo esta disponible en E2B, E4B y 12B.
-- Idiomas: la model card declara 140+ idiomas, pero los metadatos de HuggingFace indican "no disponibles"; el rendimiento puede variar entre idiomas y no hay evaluaciones publicadas por idioma.
+- Idiomas: la model card declara 140+ idiomas, pero los metadatos de Hugging Face indican "no disponibles"; el rendimiento puede variar entre idiomas y no hay evaluaciones publicadas por idioma.
 - Formato: solo safetensors en el repositorio; no hay GGUF, lo que limita el despliegue directo en llama.cpp u Ollama sin conversion previa.
 - Sesgos: no se documentan en la informacion disponible analisis especificos de sesgo para esta variante.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Ibackup/gemma-4-31B-it
+- Repositorio Hugging Face: https://huggingface.co/Ibackup/gemma-4-31B-it
 - Repositorio de referencia citado en la busqueda: https://huggingface.co/Iambackup/gemma-4-31B-it
 - Informe tecnico (arXiv): https://arxiv.org/abs/2607.02770
 - Blog de lanzamiento: https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/
 - Documentacion de Gemma: https://ai.google.dev/gemma/docs/core
 - Repositorio GitHub: https://github.com/google-gemma
-- Coleccion Gemma 4 en HuggingFace: https://huggingface.co/collections/google/gemma-4
+- Coleccion Gemma 4 en Hugging Face: https://huggingface.co/collections/google/gemma-4
 - Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
 - Pagina de DeepMind: https://deepmind.google/models/gemma/gemma-4/
 - Pagina de documentacion de modelos Gemma 4: https://gemma.ai/models/gemma-4/

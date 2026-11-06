@@ -90,11 +90,11 @@ No se han encontrado datos publicados sobre otros drafters compatibles con llama
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct-DSpark-GGUF
+- Repositorio Hugging Face: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct-DSpark-GGUF
 - Modelo base (drafter safetensors): https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct-DSpark
 - Modelo objetivo (GGUF): https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct-GGUF
 - Blog de Liquid AI sobre DSpark: https://www.liquid.ai/blog/lfm2.5-dspark
-- Blog de HuggingFace sobre DSpark: https://huggingface.co/blog/LiquidAI/lfm25-dspark
+- Blog de Hugging Face sobre DSpark: https://huggingface.co/blog/LiquidAI/lfm25-dspark
 - Documentacion de LFM2.5-1.2B-Instruct: https://docs.liquid.ai/lfm/models/lfm25-1.2b-instruct
 - Articulo de Marktechpost: https://www.marktechpost.com/2026/08/20/liquid-ai-releases-lfm2-5-dspark-draft-models-that-deliver-up-to-3-18x-faster-decoding/
 - Comunidad Discord de Liquid AI: https://discord.com/invite/liquid-ai

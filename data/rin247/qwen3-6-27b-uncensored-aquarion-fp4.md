@@ -76,7 +76,7 @@ La comparativa se basa en los datos disponibles; faltan especificaciones clave d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rin247/Qwen3.6-27B-Uncensored-Aquarion-FP4
+- Modelo en Hugging Face: https://huggingface.co/Rin247/Qwen3.6-27B-Uncensored-Aquarion-FP4
 - Versión FP8 del mismo autor: https://huggingface.co/Rin247/Qwen3.6-27B-Uncensored-Aquarion-FP8
 - Modelo similar de AEON-7 (MLX FP4 con MTP): https://huggingface.co/AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-Multimodal-MLX-FP4
 - Catálogo de modelos abliterados: https://abliteration.org/

@@ -92,7 +92,7 @@ Comparado con MobileSAM, este modelo ofrece mayor fidelidad (bit-exact con SAM 2
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mlboydaisuke/SAM2-hiera-tiny-LiteRT
+- Modelo en Hugging Face: https://huggingface.co/mlboydaisuke/SAM2-hiera-tiny-LiteRT
 - Encoder separado: https://huggingface.co/mlboydaisuke/SAM2.1-Hiera-Tiny-Image-Encoder-LiteRT
 - Repositorio oficial SAM 2 (Meta): https://github.com/facebookresearch/sam2
 - Benchmark LiteRT vs MLX: https://github.com/john-rocky/LiteRT-Models/blob/main/sam2/BENCHMARK.md

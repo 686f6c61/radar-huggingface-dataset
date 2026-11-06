@@ -77,7 +77,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bnbong/wegis-model
+- Modelo en Hugging Face: https://huggingface.co/bnbong/wegis-model
 - Repositorio de la extensión Wegis: https://github.com/bnbong/Wegis
 - Repositorio del servidor Wegis: https://github.com/bnbong/Wegis_server
 - Repositorio de entrenamiento: https://github.com/capston-qrcode/capstone-qshing-ml-jck

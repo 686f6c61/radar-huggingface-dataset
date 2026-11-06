@@ -91,7 +91,7 @@ La comparativa refleja que el modelo pequeno supera a los grandes en cobertura l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GermannM/kenga-prophet
+- Modelo en Hugging Face: https://huggingface.co/GermannM/kenga-prophet
 - Repositorio Kenga (GitHub): https://github.com/GermannM/kenga-lang
 - Ejemplos del repositorio: https://github.com/GermannM/kenga-lang/tree/main/examples
 - Documentacion interna de referencia: `docs/PICO_PROPHET.md`, `docs/NEUROMODEL_27B.md`, `tools/train_m2_big.py`, `examples/ml/mid_prophet_m2_run.kenga` (dentro del repositorio Kenga)

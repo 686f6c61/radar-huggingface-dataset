@@ -112,7 +112,7 @@ No se dispone de datos de benchmarks comunes (MMLU, HumanEval, GSM8K) ni de mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tpnlabs/gemma-4-E4B-it-TPN-GGUF
+- Hugging Face: https://huggingface.co/tpnlabs/gemma-4-E4B-it-TPN-GGUF
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Informe completo de cuantizacion: https://bench.trueperformancenetwork.com/r/qa-keidreGuyRCaMtLB3Pw
 - TPN Workbench: https://bench.trueperformancenetwork.com

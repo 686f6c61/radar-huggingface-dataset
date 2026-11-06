@@ -2,7 +2,7 @@
 
 ## Resumen
 
-JISOO es un repositorio publicado en HuggingFace por el usuario OrbitngTwice bajo el identificador `OrbitngTwice/JISOO`. La model card asociada no contiene ninguna descripcion tecnica: unicamente declara `license: unknown` y no incluye informacion sobre arquitectura, proposito, datos de entrenamiento ni uso previsto. El repositorio tiene un tamano de 0,1 GB, lo que sugiere pesos de pequeno tamano o un conjunto parcial de ficheros, pero no permite inferir con rigor el numero de parametros.
+JISOO es un repositorio publicado en Hugging Face por el usuario OrbitngTwice bajo el identificador `OrbitngTwice/JISOO`. La model card asociada no contiene ninguna descripcion tecnica: unicamente declara `license: unknown` y no incluye informacion sobre arquitectura, proposito, datos de entrenamiento ni uso previsto. El repositorio tiene un tamano de 0,1 GB, lo que sugiere pesos de pequeno tamano o un conjunto parcial de ficheros, pero no permite inferir con rigor el numero de parametros.
 
 En el momento de la consulta el modelo acumula 0 descargas y 0 likes, fue creado el 4 de noviembre de 2026 y actualizado el mismo dia, sin pipeline declarado ni idiomas especificados. No hay evidencia de publicacion de benchmarks, paper, blog tecnico ni repositorio de codigo asociado.
 
@@ -34,12 +34,12 @@ Tampoco hay referencia a innovaciones tecnicas (atencion lineal, decodificacion 
 - No consta soporte de agentes ni razonamiento multi-paso.
 - No consta capacidad multilingue declarada.
 - No consta soporte de vision, audio ni modos de pensamiento extendido.
-- No se ha publicado pipeline asociado en HuggingFace (generacion de texto, clasificacion, etc.).
+- No se ha publicado pipeline asociado en Hugging Face (generacion de texto, clasificacion, etc.).
 
 ## Casos de uso
 
 - Evaluacion exploratoria en laboratorio: el modelo puede descargarse y probarse en un entorno aislado para determinar empiricamente su comportamiento, dado que no hay documentacion que permita anticiparlo.
-- Investigacion de metadatos de HuggingFace: util como ejemplo de repositorio sin model card completa para estudiar practicas de publicacion en el ecosistema.
+- Investigacion de metadatos de Hugging Face: util como ejemplo de repositorio sin model card completa para estudiar practicas de publicacion en el ecosistema.
 - Pruebas de carga de pipelines: por su tamano reducido (0,1 GB), puede servir para validar flujos de descarga, cache y carga en herramientas como `transformers` o `huggingface_hub`, siempre que se verifique el formato real de los ficheros.
 - Analisis de seguridad de artefactos: permite practicar la inspeccion de pesos y ficheros de un repositorio de procedencia desconocida antes de su uso.
 - Docencia sobre riesgos de modelos sin licencia: caso practico para explicar por que no debe desplegarse un modelo con licencia `unknown` en entornos comerciales.
@@ -75,5 +75,5 @@ No disponible. No se ha identificado la categoria del modelo ni sus caracteristi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OrbitngTwice/JISOO
+- Hugging Face: https://huggingface.co/OrbitngTwice/JISOO
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

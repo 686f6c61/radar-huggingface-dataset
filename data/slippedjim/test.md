@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `slippedJim/test` es un modelo alojado en HuggingFace con acceso restringido (gated), creado por el usuario `slippedJim` el 17 de agosto de 2026. El tamaño del repositorio es de 491,5 GB, lo que sugiere un modelo de gran escala, pero no se dispone de ninguna documentación técnica pública: no se especifican arquitectura, número de parámetros, licencia, idiomas ni pipeline de uso. El nombre "test" y la ausencia de metadatos indican que podría tratarse de un experimento o una versión de prueba, pero no hay confirmación.
+El repositorio `slippedJim/test` es un modelo alojado en Hugging Face con acceso restringido (gated), creado por el usuario `slippedJim` el 17 de agosto de 2026. El tamaño del repositorio es de 491,5 GB, lo que sugiere un modelo de gran escala, pero no se dispone de ninguna documentación técnica pública: no se especifican arquitectura, número de parámetros, licencia, idiomas ni pipeline de uso. El nombre "test" y la ausencia de metadatos indican que podría tratarse de un experimento o una versión de prueba, pero no hay confirmación.
 
 La relevancia de este repositorio es limitada desde el punto de vista técnico, ya que no hay información verificable sobre el modelo. Los resultados de búsqueda web asociados al autor muestran otros proyectos (como `K3_draft`, un modelo de destilación especulativa para Kimi-K3), pero no guardan relación directa con este repositorio concreto. Dada la falta de datos, cualquier uso en producción o evaluación rigurosa resulta imposible sin acceso previo y documentación adicional.
 
@@ -21,7 +21,7 @@ La relevancia de este repositorio es limitada desde el punto de vista técnico, 
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado ninguna informacion sobre la arquitectura, el proceso de entrenamiento, los datos utilizados o las tecnicas de optimizacion aplicadas. El repositorio no incluye un `config.json` accesible ni documentacion en la pagina de HuggingFace. El unico dato objetivo es el tamano del repositorio (491,5 GB), que sugiere pesos en precision completa o multiples cuantizaciones, pero no permite inferir la arquitectura subyacente.
+No se ha publicado ninguna informacion sobre la arquitectura, el proceso de entrenamiento, los datos utilizados o las tecnicas de optimizacion aplicadas. El repositorio no incluye un `config.json` accesible ni documentacion en la pagina de Hugging Face. El unico dato objetivo es el tamano del repositorio (491,5 GB), que sugiere pesos en precision completa o multiples cuantizaciones, pero no permite inferir la arquitectura subyacente.
 
 ## Capacidades
 
@@ -45,7 +45,7 @@ No disponible. No existe informacion suficiente para comparar este modelo con al
 
 ## Limitaciones y advertencias
 
-- El modelo tiene acceso restringido (gated) y no se puede descargar sin aceptar condiciones previas en HuggingFace, lo que limita su auditoria externa.
+- El modelo tiene acceso restringido (gated) y no se puede descargar sin aceptar condiciones previas en Hugging Face, lo que limita su auditoria externa.
 - No hay documentacion tecnica, licencia clara ni informacion sobre sesgos, alucinaciones o limitaciones de contexto.
 - El nombre "test" y la ausencia de metadatos sugieren que podria ser un experimento no destinado a uso en produccion.
 - Dado el contexto de seguridad en IA (modelos que escapan de entornos de prueba, como se ha reportado en noticias recientes), cualquier modelo sin documentacion y con acceso restringido debe tratarse con precaucion extrema.
@@ -53,7 +53,7 @@ No disponible. No existe informacion suficiente para comparar este modelo con al
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/slippedJim/test
+- Repositorio Hugging Face: https://huggingface.co/slippedJim/test
 - Otros repositorios del autor (relacionados, no directamente con este modelo):
   - https://huggingface.co/slippedJim/K3_draft
   - https://huggingface.co/datasets/slippedJim/ATOM_regen_seeklight_kimi_mtp

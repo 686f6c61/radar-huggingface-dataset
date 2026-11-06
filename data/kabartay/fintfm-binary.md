@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FinTFM (checkpoint `kabartay/fintfm-binary`) es un clasificador tabular binario de tipo in-context learning orientado al riesgo de credito corporativo, desarrollado por Mukharbek Organokov (usuario `kabartay` en HuggingFace y GitHub). El modelo resuelve una tarea muy concreta: dado un conjunto de filas etiquetadas que se suministran como contexto en el propio prompt tabular, emite una prediccion de probabilidad para nuevas filas en una unica pasada forward, sin pasos de gradiente ni ajuste por dataset. Su relevancia no reside en el rendimiento, sino en la trazabilidad: el autor publica el checkpoint sobre el que se midieron todos los numeros de su repositorio, junto con un registro de mediciones y un libro de afirmaciones verificables.
+FinTFM (checkpoint `kabartay/fintfm-binary`) es un clasificador tabular binario de tipo in-context learning orientado al riesgo de credito corporativo, desarrollado por Mukharbek Organokov (usuario `kabartay` en Hugging Face y GitHub). El modelo resuelve una tarea muy concreta: dado un conjunto de filas etiquetadas que se suministran como contexto en el propio prompt tabular, emite una prediccion de probabilidad para nuevas filas en una unica pasada forward, sin pasos de gradiente ni ajuste por dataset. Su relevancia no reside en el rendimiento, sino en la trazabilidad: el autor publica el checkpoint sobre el que se midieron todos los numeros de su repositorio, junto con un registro de mediciones y un libro de afirmaciones verificables.
 
 Tecnicamente es un transformer tabular de muy pequeno tamano: 885.650 parametros, con `d_cell=48`, `d_model=128`, 4 capas, 2 capas de columna y `d_ff=512`, y un mecanismo de atencion celular bidireccional (`n_cell_blocks=1`) con etiquetas por celda. Se entreno exclusivamente sobre datos sinteticos generados por un prior financiero incluido en el repositorio: 6.000 pasos con batch 8, es decir, 48.000 tareas sinteticas. Nunca vio una tabla real durante el preentrenamiento.
 
@@ -76,7 +76,7 @@ El autor menciona como pares del ecosistema TabPFN, TabICL, TabDPT, LimiX, Nori 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FinTFM (este checkpoint) | 885.650 | hasta 136 features | ROC-AUC 0,7823; puesto 93 de 95 en TabArena | Apache-2.0 (pesos y codigo, uso comercial permitido) | HuggingFace + GitHub |
+| FinTFM (este checkpoint) | 885.650 | hasta 136 features | ROC-AUC 0,7823; puesto 93 de 95 en TabArena | Apache-2.0 (pesos y codigo, uso comercial permitido) | Hugging Face + GitHub |
 | TabPFN | no disponible | no disponible | no disponible | no disponible | no disponible |
 | TabICL | no disponible | no disponible | no disponible | no disponible | no disponible |
 | TabDPT | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -98,7 +98,7 @@ Nota del autor: cuatro de los diez proyectos pares encuestados en su repositorio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kabartay/fintfm-binary
+- Modelo en Hugging Face: https://huggingface.co/kabartay/fintfm-binary
 - Repositorio de codigo: https://github.com/kabartay/fintfm
 - Registro de mediciones (121 findings): https://github.com/kabartay/fintfm/blob/main/docs/results/FINDINGS.md
 - Libro de afirmaciones y retractaciones: https://github.com/kabartay/fintfm/blob/main/docs/paper/CLAIMS.md

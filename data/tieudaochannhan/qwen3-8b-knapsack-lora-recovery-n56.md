@@ -80,8 +80,8 @@ No se han publicado en la información disponible resultados en benchmarks está
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3-8b-knapsack-lora-recovery-n56 | Adaptador LoRA sobre 8B | no disponible | Agente CodeAct, estrategia recovery | apache-2.0 | HuggingFace (5 descargas) |
-| Qwen/Qwen3-8B (base) | 8B | no disponible en esta ficha | Modelo generalista | apache-2.0 | HuggingFace |
+| qwen3-8b-knapsack-lora-recovery-n56 | Adaptador LoRA sobre 8B | no disponible | Agente CodeAct, estrategia recovery | apache-2.0 | Hugging Face (5 descargas) |
+| Qwen/Qwen3-8B (base) | 8B | no disponible en esta ficha | Modelo generalista | apache-2.0 | Hugging Face |
 | Adaptador "prevention" del mismo proyecto | Adaptador LoRA sobre 8B | no disponible | Agente CodeAct, estrategia prevention | apache-2.0 (según proyecto) | Repositorio del proyecto |
 
 No se dispone de datos de rendimiento de los adaptadores comparables en la información proporcionada; la comparación cuantitativa recovery frente a prevention se remite al informe del proyecto.
@@ -99,7 +99,7 @@ No se dispone de datos de rendimiento de los adaptadores comparables en la infor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TieuDaoChanNhan/qwen3-8b-knapsack-lora-recovery-n56
+- Hugging Face: https://huggingface.co/TieuDaoChanNhan/qwen3-8b-knapsack-lora-recovery-n56
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Repositorio del proyecto: https://github.com/TieuDaoChanNhan/resume-or-prevent
 - Informe del proyecto: https://github.com/TieuDaoChanNhan/resume-or-prevent/tree/main/report

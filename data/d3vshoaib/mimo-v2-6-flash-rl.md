@@ -119,7 +119,7 @@ La comparativa directa contra alternativas open source del mismo rango de parame
 
 ## Enlaces
 
-- Repositorio HuggingFace analizado: https://huggingface.co/D3vShoaib/MiMo-V2.6-Flash-RL
+- Repositorio Hugging Face analizado: https://huggingface.co/D3vShoaib/MiMo-V2.6-Flash-RL
 - Repositorio oficial del modelo: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL
 - Repositorio oficial de la variante Pro: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL
 - Informe tecnico (PDF): https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/main/MiMo_V2_6_technical_report.pdf

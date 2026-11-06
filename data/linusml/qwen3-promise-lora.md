@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`LinusML/qwen3-promise-lora` es un ajuste fino mediante SFT (supervised fine-tuning) del modelo `Qwen/Qwen3-4B-Instruct-2507-FP8`, publicado por el usuario LinusML en HuggingFace. Se trata de un adaptador LoRA entrenado con la librería TRL (versión 1.17.1) sobre la infraestructura de Transformers 5.22.0 y PyTorch 2.11.0+cu130. El modelo hereda la arquitectura transformer densa de la familia Qwen3, con aproximadamente 4.000 millones de parámetros, aunque la model card no proporciona detalles adicionales sobre el dataset de entrenamiento ni sobre los hiperparámetros utilizados.
+`LinusML/qwen3-promise-lora` es un ajuste fino mediante SFT (supervised fine-tuning) del modelo `Qwen/Qwen3-4B-Instruct-2507-FP8`, publicado por el usuario LinusML en Hugging Face. Se trata de un adaptador LoRA entrenado con la librería TRL (versión 1.17.1) sobre la infraestructura de Transformers 5.22.0 y PyTorch 2.11.0+cu130. El modelo hereda la arquitectura transformer densa de la familia Qwen3, con aproximadamente 4.000 millones de parámetros, aunque la model card no proporciona detalles adicionales sobre el dataset de entrenamiento ni sobre los hiperparámetros utilizados.
 
 La relevancia de esta ficha es limitada: el repositorio no incluye información sobre el propósito del ajuste, el volumen de datos de entrenamiento, la composición del dataset ni los resultados obtenidos. El nombre "promise-lora" sugiere un ajuste orientado a un dominio o comportamiento específico (posiblemente generación de promesas o compromisos en algún contexto de negocio), pero esta interpretación no está confirmada por el autor. El modelo base, Qwen3-4B-Instruct-2507, es un modelo instructivo de la familia Qwen3 con ventana de contexto nativa de 262.144 tokens y soporte multilingüe amplio.
 
@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LinusML/qwen3-promise-lora
+- Hugging Face: https://huggingface.co/LinusML/qwen3-promise-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507-FP8
 - TRL (librería de entrenamiento): https://github.com/huggingface/trl
 - Transformers: https://github.com/huggingface/transformers

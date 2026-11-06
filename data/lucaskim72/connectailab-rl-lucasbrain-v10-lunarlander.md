@@ -6,7 +6,7 @@ connectailab-rl-lucasbrain-v10-lunarlander es un agente de aprendizaje por refue
 
 El modelo forma parte de una serie de diez iteraciones (v1 a v10) documentadas en la model card, donde cada versión modifica una o varias hiperparámetros respecto a una línea base y se evalúa sobre diez semillas de validación no vistas durante el entrenamiento. La versión v10 obtiene una puntuación media de 282,5 en ese conjunto de evaluación, por encima del umbral de 200 que el autor considera éxito. La relevancia del artefacto es principalmente didáctica y reproducible: documenta de forma sistemática el efecto de hiperparámetros como la tasa de aprendizaje, el número total de pasos, la exploración o el factor de descuento en un entorno de referencia clásico.
 
-El repositorio ocupa 0,0 GB según HuggingFace, lo que es coherente con el tamaño esperado de una red de dos capas ocultas de 256 unidades y una cabeza dueling con salida de valor escalar y cuatro ventajas. No se dispone de información sobre licencia, idiomas ni formatos de pesos más allá de un checkpoint PyTorch (`model.pt`).
+El repositorio ocupa 0,0 GB según Hugging Face, lo que es coherente con el tamaño esperado de una red de dos capas ocultas de 256 unidades y una cabeza dueling con salida de valor escalar y cuatro ventajas. No se dispone de información sobre licencia, idiomas ni formatos de pesos más allá de un checkpoint PyTorch (`model.pt`).
 
 ## Especificaciones tecnicas
 
@@ -74,9 +74,9 @@ Los únicos datos de rendimiento publicados son las puntuaciones medias sobre di
 
 | Modelo | Entorno | Arquitectura | Puntuacion media | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-lucasbrain-v10-lunarlander | LunarLander-v3 | DQN dueling + Double + PER + n-step | 282,5 (10 semillas) | No disponible | HuggingFace |
-| connectailab-rl-lucasbrain-v6-lunarlander | LunarLander-v3 | Misma arquitectura, γ=0,990 | 281,7 (10 semillas) | No disponible | HuggingFace (misma serie) |
-| connectailab-rl-lucasbrain-v3-lunarlander | LunarLander-v3 | Misma arquitectura, 400k pasos | 275,5 (10 semillas) | No disponible | HuggingFace (misma serie) |
+| connectailab-rl-lucasbrain-v10-lunarlander | LunarLander-v3 | DQN dueling + Double + PER + n-step | 282,5 (10 semillas) | No disponible | Hugging Face |
+| connectailab-rl-lucasbrain-v6-lunarlander | LunarLander-v3 | Misma arquitectura, γ=0,990 | 281,7 (10 semillas) | No disponible | Hugging Face (misma serie) |
+| connectailab-rl-lucasbrain-v3-lunarlander | LunarLander-v3 | Misma arquitectura, 400k pasos | 275,5 (10 semillas) | No disponible | Hugging Face (misma serie) |
 | Alternativas de terceros para LunarLander-v3 | LunarLander-v3 | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de información sobre agentes comparables de otros autores para LunarLander-v3 en la información proporcionada; la comparativa se limita a las versiones de la misma serie.
@@ -89,11 +89,11 @@ No se dispone de información sobre agentes comparables de otros autores para Lu
 - La model card está redactada en coreano y no documenta sesgos, riesgos de alucinación ni limitaciones de producción; al no ser un modelo generativo, el riesgo de alucinación no aplica en el sentido habitual, pero sí existe riesgo de sobreajuste a la distribución de evaluación.
 - El autor advierte que las correlaciones entre hiperparámetros y puntuación no implican causalidad, especialmente en las variables modificadas conjuntamente en v1→v2 (Double, Dueling, PER, n-step, soft target).
 - El repositorio no incluye el código de entrenamiento completo ni los scripts de evaluación; solo se documenta el procedimiento de carga e inferencia.
-- El tamaño del repositorio es de 0,0 GB, lo que sugiere que el checkpoint puede no estar subido o que su tamaño es inferior a la resolución de medida de HuggingFace; conviene verificar la descarga antes de integrarlo en un pipeline.
+- El tamaño del repositorio es de 0,0 GB, lo que sugiere que el checkpoint puede no estar subido o que su tamaño es inferior a la resolución de medida de Hugging Face; conviene verificar la descarga antes de integrarlo en un pipeline.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lucaskim72/connectailab-rl-lucasbrain-v10-lunarlander
+- Modelo en Hugging Face: https://huggingface.co/lucaskim72/connectailab-rl-lucasbrain-v10-lunarlander
 - CONNECT AI LAB (GitHub): https://github.com/wonseokjung/connect-tycoon
 - AI CITY BUILDERS, sección de robótica: https://www.aicitybuilders.com/robot
 - Entorno LunarLander-v3 de Gymnasium: no disponible en la información proporcionada

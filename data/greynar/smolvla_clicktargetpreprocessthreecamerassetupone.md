@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Greynar/smolvla_ClickTargetPreprocessThreeCamerasSetUpOne` es un checkpoint de robótica basado en SmolVLA (arXiv:2506.01844), un modelo compacto de visión-lenguaje-acción (VLA) desarrollado en el ecosistema de HuggingFace LeRobot. Se trata de un ajuste fino (*finetune*) del modelo base `lerobot/smolvla_base` sobre el dataset `Greynar/ClickTargetPreprocessThreeCamerasSetUpOne`, orientado a una tarea de manipulación con una configuración de tres cámaras. El autor del repositorio es el usuario Greynar y el pipeline declarado en HuggingFace es `robotics`.
+El modelo `Greynar/smolvla_ClickTargetPreprocessThreeCamerasSetUpOne` es un checkpoint de robótica basado en SmolVLA (arXiv:2506.01844), un modelo compacto de visión-lenguaje-acción (VLA) desarrollado en el ecosistema de Hugging Face LeRobot. Se trata de un ajuste fino (*finetune*) del modelo base `lerobot/smolvla_base` sobre el dataset `Greynar/ClickTargetPreprocessThreeCamerasSetUpOne`, orientado a una tarea de manipulación con una configuración de tres cámaras. El autor del repositorio es el usuario Greynar y el pipeline declarado en Hugging Face es `robotics`.
 
 SmolVLA se presenta como una alternativa eficiente en coste computacional: según su model card, alcanza un rendimiento competitivo con un coste reducido y puede desplegarse en hardware de consumo. El checkpoint tiene 450.046.176 parámetros (~450 M) y un tamaño de repositorio de 0,9 GB, con pesos en formato `safetensors` y licencia Apache 2.0.
 
@@ -33,7 +33,7 @@ La relevancia de esta ficha es limitada pero concreta: se trata de un artefacto 
 
 La informacion disponible no detalla la arquitectura interna del modelo mas alla de su naturaleza VLA (vision-language-action) y de su vinculacion con el articulo SmolVLA (arXiv:2506.01844). SmolVLA se describe como un modelo compacto y eficiente que logra un rendimiento competitivo con costes computacionales reducidos y que puede desplegarse en hardware de consumo. En el repositorio no se especifican el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF o DPO; estos datos deben consultarse en el paper y en la documentacion de LeRobot.
 
-El proceso de entrenamiento se ha realizado con LeRobot, la libreria de HuggingFace para aprendizaje por imitacion en robotica. Este checkpoint concreto es un ajuste fino del modelo base `lerobot/smolvla_base` sobre el dataset `Greynar/ClickTargetPreprocessThreeCamerasSetUpOne`, cuyo nombre sugiere una configuracion de tres camaras y una tarea de senalado de objetivos (*click target*), si bien la model card no describe la tarea ni las caracteristicas del dataset. No se documentan innovaciones tecnicas adicionales ni detalles de decodificacion especulativa, atencion lineal u otras optimizaciones para este checkpoint concreto.
+El proceso de entrenamiento se ha realizado con LeRobot, la libreria de Hugging Face para aprendizaje por imitacion en robotica. Este checkpoint concreto es un ajuste fino del modelo base `lerobot/smolvla_base` sobre el dataset `Greynar/ClickTargetPreprocessThreeCamerasSetUpOne`, cuyo nombre sugiere una configuracion de tres camaras y una tarea de senalado de objetivos (*click target*), si bien la model card no describe la tarea ni las caracteristicas del dataset. No se documentan innovaciones tecnicas adicionales ni detalles de decodificacion especulativa, atencion lineal u otras optimizaciones para este checkpoint concreto.
 
 ## Capacidades
 
@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Greynar/smolvla_ClickTargetPreprocessThreeCamerasSetUpOne | 450.046.176 | No disponible | Apache 2.0 | HuggingFace, 0 descargas | Finetune de SmolVLA sobre dataset de tres camaras |
-| lerobot/smolvla_base | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | HuggingFace (modelo base) | Modelo del que deriva este checkpoint |
+| Greynar/smolvla_ClickTargetPreprocessThreeCamerasSetUpOne | 450.046.176 | No disponible | Apache 2.0 | Hugging Face, 0 descargas | Finetune de SmolVLA sobre dataset de tres camaras |
+| lerobot/smolvla_base | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | Hugging Face (modelo base) | Modelo del que deriva este checkpoint |
 | Otras politicas VLA (ACT, pi0, etc.) | No disponible | No disponible | No disponible | No disponible | No se aportan datos comparativos en la informacion disponible |
 
 No se dispone de datos de rendimiento ni de especificaciones suficientes para establecer una comparativa cuantitativa fiable con alternativas de la misma categoria.
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento ni de especificaciones suficientes para es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Greynar/smolvla_ClickTargetPreprocessThreeCamerasSetUpOne
+- Modelo en Hugging Face: https://huggingface.co/Greynar/smolvla_ClickTargetPreprocessThreeCamerasSetUpOne
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/Greynar/ClickTargetPreprocessThreeCamerasSetUpOne
 - Articulo SmolVLA (arXiv:2506.01844): https://huggingface.co/papers/2506.01844

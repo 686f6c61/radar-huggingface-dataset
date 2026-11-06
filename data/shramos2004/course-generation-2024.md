@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`shramos2004/course-generation-2024` es un repositorio de HuggingFace publicado por el usuario shramos2004 que contiene un esqueleto experimental de arquitectura Poolformer orientado a tareas de generacion. No es un modelo entrenado: el propio autor indica de forma explicita que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y que no se reclama ninguna puntuacion de benchmark. El checkpoint contiene 49.600 parametros reales, es decir, unas decenas de miles de parametros, varias ordenes de magnitud por debajo de cualquier modelo de generacion utilizable en produccion.
+`shramos2004/course-generation-2024` es un repositorio de Hugging Face publicado por el usuario shramos2004 que contiene un esqueleto experimental de arquitectura Poolformer orientado a tareas de generacion. No es un modelo entrenado: el propio autor indica de forma explicita que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y que no se reclama ninguna puntuacion de benchmark. El checkpoint contiene 49.600 parametros reales, es decir, unas decenas de miles de parametros, varias ordenes de magnitud por debajo de cualquier modelo de generacion utilizable en produccion.
 
 La arquitectura declarada es Poolformer en escala tiny, con atencion de tipo grouped query, fusion mediante co attention, activacion gelu y normalizacion groupnorm. La receta de experimento por defecto usa el optimizador lion con un schedule de warmup lineal. El repositorio se distribuye bajo licencia BSD-3-Clause e incluye un `pipeline.py` con el modelo y un punto de entrada ejecutable, ademas de `config.json` y `training_args.json`.
 
@@ -24,7 +24,7 @@ Su relevancia actual es la de una plantilla reproducible para inspeccionar cambi
 | Normalizacion | groupnorm |
 | Optimizador por defecto | lion con warmup lineal |
 | Estado del checkpoint | inicializacion sin entrenar, valida para smoke tests |
-| Tamano del repositorio | 0,0 GB (redondeado en HuggingFace) |
+| Tamano del repositorio | 0,0 GB (redondeado en Hugging Face) |
 | Fecha de creacion | 2026-10-13 |
 | Ultima actualizacion | 2026-10-13 |
 
@@ -96,7 +96,7 @@ La diferencia funcional principal frente a un Poolformer de vision entrenado es 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/shramos2004/course-generation-2024
+- Repositorio en Hugging Face: https://huggingface.co/shramos2004/course-generation-2024
 - Archivos incluidos en el repositorio: `pipeline.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors` (accesibles desde la pestana de archivos del repositorio anterior)
 - Paper, blog, repositorio adicional o demo: no disponible en la informacion proporcionada
 - Resultados de busqueda web: no se encontraron enlaces relevantes sobre el modelo; las busquedas devolvieron unicamente paginas sobre atajos de teclado, sin relacion con este repositorio

@@ -94,7 +94,7 @@ La comparacion cuantitativa de rendimiento no es posible porque no hay resultado
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/lfm2-24b-phase1-reasoning-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/lfm2-24b-phase1-reasoning-GGUF
 - Pagina de descargas del cuantizador: https://hf.tst.eu/model#lfm2-24b-phase1-reasoning-GGUF
 - Modelo base: https://huggingface.co/shuff57/lfm2-24b-phase1-reasoning
 - Dataset de entrenamiento: https://huggingface.co/datasets/shuff57/ogre-phase1-synth

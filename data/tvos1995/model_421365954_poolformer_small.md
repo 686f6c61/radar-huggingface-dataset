@@ -71,7 +71,7 @@ No disponible. La informacion proporcionada no incluye comparativas con otras im
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/Tvos1995/model_421365954_poolformer_small
+- Repositorio de Hugging Face: https://huggingface.co/Tvos1995/model_421365954_poolformer_small
 - Documentacion de PoolFormer en Transformers: https://huggingface.co/docs/transformers/model_doc/poolformer
 - Repositorio GitHub de PoolFormer (Sea AI Labs): https://github.com/sail-sg/poolformer
 - Paper "MetaFormer is Actually What You Need for Vision": https://arxiv.org/pdf/2510.02206 (referencia en la documentacion de Transformers)

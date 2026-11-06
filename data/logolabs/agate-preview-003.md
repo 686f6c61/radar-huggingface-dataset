@@ -6,7 +6,7 @@ Agate Preview 003 es un modelo de difusion texto-a-imagen desarrollado por LogoL
 
 El modelo se construye como una red de 256 px convertida en multi-resolucion mediante adiciones que inicialmente actuan como no-ops exactos, entrenada a 256 y 512 px y despues afinada con perdidas perceptuales (LPIPS y caracteristicas DINOv2). El entrenamiento completo de la linea de modelos consume 282,8 GH200-horas, 164,5 kWh y 4,94 kg CO2e, lo que lo situa en un regimen de coste muy inferior al de los modelos de difusion de gran escala.
 
-Se distribuye con licencia MIT tanto para codigo como para pesos, en formato safetensors y ONNX, y admite ejecucion en Python, mediante nodos de ComfyUI (version 0.4.0) y en el navegador a traves de una demo WebGPU. Su estado es de "research preview", con 373 descargas y 10 me gusta en HuggingFace en el momento de la consulta, y esta especializado en generacion de glifos y simbolos, aunque su uso no se limita a ese dominio.
+Se distribuye con licencia MIT tanto para codigo como para pesos, en formato safetensors y ONNX, y admite ejecucion en Python, mediante nodos de ComfyUI (version 0.4.0) y en el navegador a traves de una demo WebGPU. Su estado es de "research preview", con 373 descargas y 10 me gusta en Hugging Face en el momento de la consulta, y esta especializado en generacion de glifos y simbolos, aunque su uso no se limita a ese dominio.
 
 ## Especificaciones tecnicas
 
@@ -75,7 +75,7 @@ Datos de la model card del autor. No se han publicado otros resultados de benchm
 - Compatibilidad con GPU de consumo: si, cabe en GPU de gama media como la RTX 4060 y superiores.
 - Ejecucion en CPU: soportada, con aproximadamente 100 s por imagen de 512 px.
 - Ejecucion en navegador: mediante WebGPU, aproximadamente 14 s por imagen de 512 px en una RTX 4060.
-- Opciones de despliegue: pipeline `AgatePipeline` en Python (con `torch`, `transformers`, `diffusers`, `safetensors`, `huggingface_hub`, `pillow` e `invisible-watermark`), nodos de ComfyUI 0.4.0 y demo WebGPU en HuggingFace Spaces. Se distribuyen pesos en safetensors y ONNX. No se mencionan vLLM, llama.cpp, Ollama ni TGI, que no aplican a un modelo de difusion de imagen.
+- Opciones de despliegue: pipeline `AgatePipeline` en Python (con `torch`, `transformers`, `diffusers`, `safetensors`, `huggingface_hub`, `pillow` e `invisible-watermark`), nodos de ComfyUI 0.4.0 y demo WebGPU en Hugging Face Spaces. Se distribuyen pesos en safetensors y ONNX. No se mencionan vLLM, llama.cpp, Ollama ni TGI, que no aplican a un modelo de difusion de imagen.
 - Latencia y throughput: no se publican cifras de throughput por lote; las unicas cifras de latencia son las de la RTX 4060 (2,9 s), CPU (~100 s) y WebGPU (~14 s).
 - Coste de entrenamiento: 282,8 GH200-horas para toda la linea desde cero, mas 22,5 GH200-horas para la preparacion de datos a 512 px; 164,5 kWh y 4,94 kg CO2e, con energia de GPU medida con perun.
 
@@ -102,11 +102,11 @@ Las cifras de SD 1.5 y SDXL proceden de la model card de Agate Preview 003. No s
 - Fine-tuning: el autor advierte que los fine-tunes de 003 deben mantener el objetivo con perdidas perceptuales, ya que un afinado sin ellas empeoro LPIPS un 1,8% y P-DINO un 2,0% sobre la base.
 - Licencia: MIT para codigo y pesos, lo que permite uso comercial, pero la responsabilidad sobre el contenido generado y sobre los datos de entrenamiento subyacentes recae en el usuario.
 - Datos de rendimiento limitados: solo se publican dos benchmarks (Qwen-Image-Bench y GenEval) y ninguna medicion de throughput por lote, por lo que las estimaciones de produccion a gran escala no estan respaldadas por cifras publicas.
-- Adopcion reducida: 373 descargas y 10 me gusta en HuggingFace, lo que implica poca comunidad, pocos informes independientes y menor soporte de terceros.
+- Adopcion reducida: 373 descargas y 10 me gusta en Hugging Face, lo que implica poca comunidad, pocos informes independientes y menor soporte de terceros.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Logolabs/agate-preview-003
+- Modelo en Hugging Face: https://huggingface.co/Logolabs/agate-preview-003
 - Modelo base: https://huggingface.co/Logolabs/agate-preview-001
 - Sitio del autor (LogoLabs): https://logolabs.org
 - Nodos de ComfyUI: https://github.com/logolabs/agate-comfyui

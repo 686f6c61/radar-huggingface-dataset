@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DevDoCode/retro no es un modelo de inteligencia artificial, sino una aplicacion web autocontenida para jugar a juegos de NES en el navegador. La publica DevDoCode (Parveen Bhadoo) y se distribuye como un repositorio de 1,4 GB en HuggingFace, aunque su naturaleza es la de un proyecto de software, no un modelo de IA. Combina EmulatorJS (emulador NES ejecutado en el navegador), un servidor Node.js que gestiona autenticacion por contrasena, subida de ROMs y biblioteca de juegos, y Caddy como proxy inverso que proporciona HTTPS automatico mediante Let's Encrypt. El despliegue se realiza con un unico comando `docker compose up -d`, lo que lo convierte en una solucion practica para autohospedar juegos retro en un servidor propio.
+DevDoCode/retro no es un modelo de inteligencia artificial, sino una aplicacion web autocontenida para jugar a juegos de NES en el navegador. La publica DevDoCode (Parveen Bhadoo) y se distribuye como un repositorio de 1,4 GB en Hugging Face, aunque su naturaleza es la de un proyecto de software, no un modelo de IA. Combina EmulatorJS (emulador NES ejecutado en el navegador), un servidor Node.js que gestiona autenticacion por contrasena, subida de ROMs y biblioteca de juegos, y Caddy como proxy inverso que proporciona HTTPS automatico mediante Let's Encrypt. El despliegue se realiza con un unico comando `docker compose up -d`, lo que lo convierte en una solucion practica para autohospedar juegos retro en un servidor propio.
 
 Su relevancia actual reside en que demuestra como empaquetar una aplicacion completa de emulacion retro (frontend, backend, proxy y certificados) en un solo contenedor Docker, un patron util para desarrolladores que quieren exponer servicios web de forma segura sin gestionar manualmente certificados SSL. No existe ningun componente de IA, entrenamiento o inferencia en el repositorio; el identificador "retro" hace referencia a la tematica de juegos retro, no a la arquitectura RETRO de DeepMind ni al lenguaje de programacion para agentes Retro.
 
@@ -74,8 +74,8 @@ No disponible. Este repositorio no es un modelo de IA y no existe una categoria 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DevDoCode/retro
-- Perfil de DevDoCode en HuggingFace: https://huggingface.co/DevDoCode
+- Repositorio en Hugging Face: https://huggingface.co/DevDoCode/retro
+- Perfil de DevDoCode en Hugging Face: https://huggingface.co/DevDoCode
 - Repositorio GitHub de la aplicacion: https://github.com/PBhadoo/retro
 - CDN de EmulatorJS: https://cdn.emulatorjs.org
 - Documentacion de Caddy: https://caddyserver.com/docs

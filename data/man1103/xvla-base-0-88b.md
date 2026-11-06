@@ -2,7 +2,7 @@
 
 ## Resumen
 
-XVLA-Base-0.88B es un modelo de tipo Vision-Language-Action (VLA) publicado en HuggingFace por el usuario Man1103 bajo licencia Apache 2.0. Se trata de un clon del repositorio lerobot/xvla-base, creado por el autor para disponer de un modelo listo para inferencia durante una hackathon. Con 879.687.256 parametros (0,88 B) y un repositorio de 3,5 GB en formato safetensors, es un VLA deliberadamente ligero dentro de una categoria donde los modelos habituales superan los varios miles de millones de parametros.
+XVLA-Base-0.88B es un modelo de tipo Vision-Language-Action (VLA) publicado en Hugging Face por el usuario Man1103 bajo licencia Apache 2.0. Se trata de un clon del repositorio lerobot/xvla-base, creado por el autor para disponer de un modelo listo para inferencia durante una hackathon. Con 879.687.256 parametros (0,88 B) y un repositorio de 3,5 GB en formato safetensors, es un VLA deliberadamente ligero dentro de una categoria donde los modelos habituales superan los varios miles de millones de parametros.
 
 El modelo resuelve el problema de convertir observaciones visuales y una instruccion en lenguaje natural en acciones de control para robotica (etiqueta ImageTextToAction). Combina un codificador visual de tipo ViT con un transformer multimodal que predice acciones, y se integra en el ecosistema LeRobot mediante la clase XVLAPolicy. Su relevancia actual radica en que permite experimentar con politicas VLA en hardware modesto y en entornos simulados como LIBERO sin necesidad de infraestructura de gran escala.
 
@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Man1103/XVLA-Base-0.88B | 879.687.256 (0,88 B) | no disponible | no disponible | apache-2.0 | Pesos safetensors en HuggingFace (0 descargas, 0 likes en el momento de la consulta) |
-| lerobot/xvla-base (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible en la informacion proporcionada | Repositorio original en HuggingFace |
+| Man1103/XVLA-Base-0.88B | 879.687.256 (0,88 B) | no disponible | no disponible | apache-2.0 | Pesos safetensors en Hugging Face (0 descargas, 0 likes en el momento de la consulta) |
+| lerobot/xvla-base (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible en la informacion proporcionada | Repositorio original en Hugging Face |
 | Otros VLA de la misma categoria (por ejemplo, familias OpenVLA o pi0) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 
 La model card no ofrece comparaciones con alternativas, y los resultados de busqueda web no aportaron informacion tecnica adicional, por lo que no es posible establecer una comparativa cuantitativa fiable sin consultar el paper arXiv 2510.10274.
@@ -87,7 +87,7 @@ La model card no ofrece comparaciones con alternativas, y los resultados de busq
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Man1103/XVLA-Base-0.88B
+- Modelo en Hugging Face: https://huggingface.co/Man1103/XVLA-Base-0.88B
 - Modelo base original: https://huggingface.co/lerobot/xvla-base
 - Paper de la arquitectura XVLA: https://arxiv.org/pdf/2510.10274
 - Licencia Apache 2.0: https://apache.org

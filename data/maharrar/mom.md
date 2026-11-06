@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Maharrar/Mom es un modelo publicado en HuggingFace por el usuario Maharrar bajo licencia MIT. La model card asociada no contiene absolutamente ninguna información técnica: se reduce a la declaración de licencia (`license: mit`), sin descripción, sin arquitectura declarada, sin datos de entrenamiento ni ejemplos de uso. El repositorio no tiene etiquetas de pipeline, no declara idiomas soportados y no registra descargas ni interacciones en el momento de la consulta.
+Maharrar/Mom es un modelo publicado en Hugging Face por el usuario Maharrar bajo licencia MIT. La model card asociada no contiene absolutamente ninguna información técnica: se reduce a la declaración de licencia (`license: mit`), sin descripción, sin arquitectura declarada, sin datos de entrenamiento ni ejemplos de uso. El repositorio no tiene etiquetas de pipeline, no declara idiomas soportados y no registra descargas ni interacciones en el momento de la consulta.
 
 Se desconoce por completo qué tipo de modelo es (lenguaje, visión, audio u otro), su tamaño, su arquitectura o su procedencia. El nombre "Mom" no aporta pistas sobre su naturaleza, y el autor no ha publicado documentación complementaria visible en la información disponible. La fecha de creación y actualización del repositorio es la misma (2026-10-29), lo que sugiere una subida única sin iteraciones posteriores documentadas.
 
@@ -69,5 +69,5 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Maharrar/Mom
+- Repositorio en Hugging Face: https://huggingface.co/Maharrar/Mom
 - No se han encontrado en la información proporcionada papers, blogs, repositorios de código ni demos adicionales.

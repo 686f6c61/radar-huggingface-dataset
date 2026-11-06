@@ -25,7 +25,7 @@ El modelo está disponible en formato safetensors (62,6 GB en el repositorio) y 
 
 La arquitectura subyacente corresponde a Gemma 4 31B, un transformer denso con aproximadamente 31 000 millones de parámetros. El modelo base `darkc0de/gemma-4-31B-it-updated-heretic` es un fine-tuning de Gemma 4 con ajuste instructivo y un enfoque "heretic" (probablemente orientado a eliminar restricciones). Sobre ese modelo, XORTRON-NXTXPRT10PRO-31B aplica técnicas de abliteración, un método que modifica los pesos del modelo para suprimir las activaciones asociadas a comportamientos de rechazo o negativa a responder.
 
-No se dispone de información pública sobre el número de tokens de entrenamiento, la composición del dataset, ni si se utilizaron técnicas de RLHF, DPO u otras. Los tags de HuggingFace indican el uso de la librería Unsloth para el fine-tuning, pero no se especifican hiperparámetros ni detalles del proceso. El proyecto se enmarca en una investigación sobre seguridad de IA y explotación criminal, lo que sugiere que el entrenamiento pudo haber incluido datos deliberadamente dañinos o tóxicos para estudiar el comportamiento del modelo sin alineación.
+No se dispone de información pública sobre el número de tokens de entrenamiento, la composición del dataset, ni si se utilizaron técnicas de RLHF, DPO u otras. Los tags de Hugging Face indican el uso de la librería Unsloth para el fine-tuning, pero no se especifican hiperparámetros ni detalles del proceso. El proyecto se enmarca en una investigación sobre seguridad de IA y explotación criminal, lo que sugiere que el entrenamiento pudo haber incluido datos deliberadamente dañinos o tóxicos para estudiar el comportamiento del modelo sin alineación.
 
 ## Capacidades
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativos. La principal diferencia de e
 
 ## Enlaces
 
-- HuggingFace (modelo original): https://huggingface.co/spinochenza/XORTRON-NXTXPRT10PRO-31B
+- Hugging Face (modelo original): https://huggingface.co/spinochenza/XORTRON-NXTXPRT10PRO-31B
 - Version GGUF de la comunidad: https://huggingface.co/mradermacher/XORTRON-NXTXPRT10PRO-31B-GGUF
 - Version de darkc0de (modelo base del fine-tuning): https://huggingface.co/darkc0de/XORTRON-NXTXPRT10PRO-31B
 - Endpoint de inferencia FriendliAI: https://friendli.ai/models/darkc0de/XORTRON-NXTXPRT10PRO-31B

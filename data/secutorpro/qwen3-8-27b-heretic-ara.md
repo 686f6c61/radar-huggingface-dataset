@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento comparativo (MMLU, HumanEval, etc.) entre 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/secutorpro/Qwen3.8-27B-heretic-ara
+- Repositorio Hugging Face: https://huggingface.co/secutorpro/Qwen3.8-27B-heretic-ara
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Herramienta Heretic: https://github.com/p-e-w/heretic
 - Fork personalizado de Heretic: https://github.com/timrohrbaugh/heretic

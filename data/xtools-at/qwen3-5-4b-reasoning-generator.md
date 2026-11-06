@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| xtools-at/Qwen3.5-4B-Reasoning-Generator | 4B | no disponible | Trace inversion sin burbujas | Apache 2.0 | HuggingFace |
-| xtools-at/Qwen3.5-4B-Trace-Inverter | 4B | no disponible | Trace inversion condicionada por burbujas | no disponible | HuggingFace |
-| xtools-at/Qwen3.5-4B-MultiDistill-3xMerge-UNCENSORED-heretic | 4B | no disponible | Modelo base de propósito general | no disponible | HuggingFace |
+| xtools-at/Qwen3.5-4B-Reasoning-Generator | 4B | no disponible | Trace inversion sin burbujas | Apache 2.0 | Hugging Face |
+| xtools-at/Qwen3.5-4B-Trace-Inverter | 4B | no disponible | Trace inversion condicionada por burbujas | no disponible | Hugging Face |
+| xtools-at/Qwen3.5-4B-MultiDistill-3xMerge-UNCENSORED-heretic | 4B | no disponible | Modelo base de propósito general | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada. La diferencia funcional clave es que el Reasoning-Generator no requiere burbujas de razonamiento en la entrada, mientras que el Trace-Inverter sí.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- [HuggingFace: xtools-at/Qwen3.5-4B-Reasoning-Generator](https://huggingface.co/xtools-at/Qwen3.5-4B-Reasoning-Generator)
+- [Hugging Face: xtools-at/Qwen3.5-4B-Reasoning-Generator](https://huggingface.co/xtools-at/Qwen3.5-4B-Reasoning-Generator)
 - [Modelo base: xtools-at/Qwen3.5-4B-MultiDistill-3xMerge-UNCENSORED-heretic](https://huggingface.co/xtools-at/Qwen3.5-4B-MultiDistill-3xMerge-UNCENSORED-heretic)
 - [Modelo relacionado: xtools-at/Qwen3.5-4B-Trace-Inverter](https://huggingface.co/xtools-at/Qwen3.5-4B-Trace-Inverter)
 - [Dataset: xtools-at/trace-inversion-qwen3.8-max-reasoning-generation](https://huggingface.co/datasets/xtools-at/trace-inversion-qwen3.8-max-reasoning-generation)

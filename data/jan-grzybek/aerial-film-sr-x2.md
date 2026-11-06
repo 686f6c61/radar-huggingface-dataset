@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Aerial Film SR ×2 es un modelo de superresolución de escala fija ×2 especializado en película aérea histórica escaneada. Lo desarrolla jan-grzybek y se distribuye con licencia CC BY 4.0 en HuggingFace. El problema que aborda es concreto: un vuelo de reconocimiento de mediados del siglo XX llega al investigador como un escaneo de negativo, y ese escaneo suele ser más grueso que la propia película. Un negativo a 1:5.000 de los años cincuenta contiene detalle a una décima de metro que un escaneo a 0,2 m/px reduce a la mitad; este modelo intenta recuperar ese detalle sin dibujar estructura donde no la hay.
+Aerial Film SR ×2 es un modelo de superresolución de escala fija ×2 especializado en película aérea histórica escaneada. Lo desarrolla jan-grzybek y se distribuye con licencia CC BY 4.0 en Hugging Face. El problema que aborda es concreto: un vuelo de reconocimiento de mediados del siglo XX llega al investigador como un escaneo de negativo, y ese escaneo suele ser más grueso que la propia película. Un negativo a 1:5.000 de los años cincuenta contiene detalle a una décima de metro que un escaneo a 0,2 m/px reduce a la mitad; este modelo intenta recuperar ese detalle sin dibujar estructura donde no la hay.
 
 La arquitectura es RealPLKSR (Partial Large Kernel CNN for Efficient Super-Resolution), en la variante que Philip Hofmann entrenó como `4xNomosWebPhoto_RealPLKSR`: 64 canales, 28 bloques, kernel de 17 píxeles y 7.368.908 parámetros (unos 7,37 M). El modelo parte de ese checkpoint público ×4 mediante una construcción exacta de una cola ×2 que reproduce «×4 y media por bloques ÷2» con un error de 4·10⁻⁷ antes de cualquier entrenamiento.
 
@@ -21,7 +21,7 @@ Su relevancia no está en el tamaño, sino en el objetivo de entrenamiento: un a
 | Licencia | CC BY 4.0 |
 | Formato de pesos | safetensors, cargable con spandrel |
 | Escala | Fija ×2 |
-| Pipeline en HuggingFace | image-to-image |
+| Pipeline en Hugging Face | image-to-image |
 | Modelo base | Phips/4xNomosWebPhoto_RealPLKSR |
 
 ## Arquitectura y entrenamiento
@@ -79,9 +79,9 @@ No se han publicado resultados de benchmarks numericos en la informacion disponi
 
 | Modelo | Parametros | Escala | Contexto / enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Aerial Film SR ×2 (jan-grzybek) | 7,37 M | ×2 | Pelicula aerea historica; adversario ponderado por mascara de evidencia para no inventar en terreno plano | CC BY 4.0 | HuggingFace, safetensors, spandrel |
-| Phips/4xNomosWebPhoto_RealPLKSR (modelo base) | No disponible | ×4 | Superresolucion de fotografia web/real; mismo backbone RealPLKSR | CC BY 4.0 | HuggingFace |
-| Aerial Film Restorer (jan-grzybek) | No disponible | No disponible | Restauracion complementaria: asume tono y grano del material historico; se ejecuta despues del ×2 | No disponible | HuggingFace |
+| Aerial Film SR ×2 (jan-grzybek) | 7,37 M | ×2 | Pelicula aerea historica; adversario ponderado por mascara de evidencia para no inventar en terreno plano | CC BY 4.0 | Hugging Face, safetensors, spandrel |
+| Phips/4xNomosWebPhoto_RealPLKSR (modelo base) | No disponible | ×4 | Superresolucion de fotografia web/real; mismo backbone RealPLKSR | CC BY 4.0 | Hugging Face |
+| Aerial Film Restorer (jan-grzybek) | No disponible | No disponible | Restauracion complementaria: asume tono y grano del material historico; se ejecuta despues del ×2 | No disponible | Hugging Face |
 | Interpolacion bicubica | No aplica | Cualquiera | Referencia de la puerta de invencion: no crea componentes conexos alargados | No aplica | Integrada en cualquier libreria de imagen |
 
 No se dispone de datos de benchmarks comparativos entre estos modelos en la informacion proporcionada, por lo que la comparacion se limita a parametros, escala, licencia y disponibilidad.
@@ -101,7 +101,7 @@ No se dispone de datos de benchmarks comparativos entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jan-grzybek/aerial-film-sr-x2
+- Modelo en Hugging Face: https://huggingface.co/jan-grzybek/aerial-film-sr-x2
 - Modelo base: https://huggingface.co/Phips/4xNomosWebPhoto_RealPLKSR
 - Modelo complementario de restauracion: https://huggingface.co/jan-grzybek/aerial-film-restorer
 - Paper de la arquitectura (Partial Large Kernel CNNs for Efficient Super-Resolution): https://arxiv.org/abs/2404.11848

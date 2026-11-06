@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`svd-safety-l3_remove40_swapgapiter_b010_r07` es un checkpoint derivado de `meta-llama/Meta-Llama-3-8B-Instruct`, publicado por el usuario Jeesup en HuggingFace. No se trata de un modelo entrenado desde cero ni de un ajuste fino convencional: es el resultado de aplicar compresión por descomposición en valores singulares (SVD-LLM) para eliminar el 40,02 % de los parámetros densos, seguida de una edición iterativa de parámetros orientada a restaurar comportamiento de seguridad.
+`svd-safety-l3_remove40_swapgapiter_b010_r07` es un checkpoint derivado de `meta-llama/Meta-Llama-3-8B-Instruct`, publicado por el usuario Jeesup en Hugging Face. No se trata de un modelo entrenado desde cero ni de un ajuste fino convencional: es el resultado de aplicar compresión por descomposición en valores singulares (SVD-LLM) para eliminar el 40,02 % de los parámetros densos, seguida de una edición iterativa de parámetros orientada a restaurar comportamiento de seguridad.
 
 El artefacto forma parte de un estudio sobre cómo la compresión SVD degrada las capacidades de seguridad de un modelo alineado y qué regla de selección de componentes repara mejor ese daño. En concreto, esta celda usa la regla `gap_iter` con un presupuesto de restauración del 1,000 % de los parámetros densos, aplicado en 7 de las 10 rondas previstas, con un bloque del 0,100 % por ronda. El resultado son 48.832.512 parámetros sustituidos (0,70 % de los parámetros de proyección densos) sobre una fracción de parámetros final de 0,5998.
 
@@ -85,8 +85,8 @@ No se proporciona comparacion con el modelo base sin comprimir ni con otras celd
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `Jeesup/svd-safety-l3_remove40_swapgapiter_b010_r07` | 8,03 B (59,98 % del denso) | No disponible | Llama 3 Community License | HuggingFace, safetensors | Artefacto de investigacion con edicion de seguridad; 178 descargas |
-| `meta-llama/Meta-Llama-3-8B-Instruct` | 8,03 B (denso) | 8.192 tokens segun el modelo base | Llama 3 Community License | HuggingFace, safetensors | Modelo base sin comprimir; referencia de utilidad y seguridad del estudio |
+| `Jeesup/svd-safety-l3_remove40_swapgapiter_b010_r07` | 8,03 B (59,98 % del denso) | No disponible | Llama 3 Community License | Hugging Face, safetensors | Artefacto de investigacion con edicion de seguridad; 178 descargas |
+| `meta-llama/Meta-Llama-3-8B-Instruct` | 8,03 B (denso) | 8.192 tokens segun el modelo base | Llama 3 Community License | Hugging Face, safetensors | Modelo base sin comprimir; referencia de utilidad y seguridad del estudio |
 | Otras celdas de la retícula del mismo estudio | No disponible | No disponible | Llama 3 Community License | No disponible en la informacion proporcionada | El autor menciona una retícula sobre reglas y presupuestos, pero no se listan identificadores |
 | Alternativas de compresion de Llama 3 8B (por ejemplo, destilaciones o podas de terceros) | No disponible | No disponible | Variable | No disponible | No se han encontrado datos comparables en la busqueda web realizada |
 
@@ -108,7 +108,7 @@ La busqueda web asociada a esta ficha no devolvio resultados tecnicos relevantes
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l3_remove40_swapgapiter_b010_r07
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l3_remove40_swapgapiter_b010_r07
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
 - Licencia Meta Llama 3: incluida en el repositorio del modelo (`LICENSE` y `USE_POLICY.md`)
 - Resultados de la busqueda web: no se encontraron enlaces tecnicos relevantes (los resultados recuperados correspondian a sitios de apuestas deportivas sin relacion con el modelo)

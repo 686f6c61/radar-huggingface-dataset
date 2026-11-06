@@ -78,5 +78,5 @@ No se dispone de información suficiente para comparar con otros modelos de cibe
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/deer-sec/CyberStag-26B-A4B-V1-Q4_K_M-GGUF
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/deer-sec/CyberStag-26B-A4B-V1-Q4_K_M-GGUF
 - Modelo base: google/gemma-4-26b-a4b (referencia en la model card, sin URL directa en la información proporcionada)

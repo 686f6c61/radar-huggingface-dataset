@@ -103,10 +103,10 @@ Los datos de parámetros, contexto y licencia de los modelos comparados no se de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/workmanooo/DeepSeek-V4.1-Flash-1017
+- Hugging Face: https://huggingface.co/workmanooo/DeepSeek-V4.1-Flash-1017
 - Modelo base oficial: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Informe técnico: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf
-- Organización DeepSeek en HuggingFace: https://huggingface.co/deepseek-ai
+- Organización DeepSeek en Hugging Face: https://huggingface.co/deepseek-ai
 - Toolkit deepseek-recipe: https://github.com/deepseek-ai/deepseek-recipe
 - Web oficial: https://www.deepseek.com/
 - Chat: https://chat.deepseek.com/

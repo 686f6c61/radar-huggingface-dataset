@@ -101,7 +101,7 @@ No se dispone de datos de benchmarks ni de context length para establecer compar
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/FaustianDeal/Artemis-31B-v1.2-BF16-embd-GGUF
+- Repositorio Hugging Face: https://huggingface.co/FaustianDeal/Artemis-31B-v1.2-BF16-embd-GGUF
 - Modelo base: https://huggingface.co/TheDrummer/Artemis-31B-v1.2
 - Modelo original de la familia Gemma 4: https://huggingface.co/google/gemma-4-31B
 - llama.cpp (cuantizador utilizado): https://github.com/ggml-org/llama.cpp

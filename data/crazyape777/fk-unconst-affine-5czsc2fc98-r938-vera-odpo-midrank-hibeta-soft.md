@@ -4,7 +4,7 @@
 
 El modelo `crazyape777/fk-unconst-affine-5czsc2fc98-r938-vera-odpo-midrank-hibeta-soft` es un checkpoint de afinamiento (fine-tuning) desarrollado por el usuario crazyape777, construido sobre el modelo base `vera6/affine-5g4yy75zuz-t6`. Según su model card, se trata de un "challenger" para el sistema de evaluación de razonamiento "Reason v4" (weight_version_key=7), entrenado mediante *offline DPO* sobre pares de duelos generados con un método de *tempered multi-sample log-mean-exp* sobre tres referencias de profesor. No es un modelo de propósito general, sino una pieza especializada para competir en un entorno de evaluación concreto (SN120 Affine miner submission / evalsrv Reason v4 duel).
 
-El modelo tiene 35.107.181.936 parámetros (≈35,1 mil millones) y un tamaño de repositorio de 70,2 GB en formato safetensors. Los tags de HuggingFace indican `qwen3_5_moe` e `image-text-to-text`, lo que sugiere una arquitectura MoE multimodal, aunque la model card no proporciona detalles arquitectónicos explícitos. La licencia es Apache-2.0. El checkpoint se creó el 20 de agosto de 2026 y no registra descargas ni valoraciones.
+El modelo tiene 35.107.181.936 parámetros (≈35,1 mil millones) y un tamaño de repositorio de 70,2 GB en formato safetensors. Los tags de Hugging Face indican `qwen3_5_moe` e `image-text-to-text`, lo que sugiere una arquitectura MoE multimodal, aunque la model card no proporciona detalles arquitectónicos explícitos. La licencia es Apache-2.0. El checkpoint se creó el 20 de agosto de 2026 y no registra descargas ni valoraciones.
 
 ## Especificaciones tecnicas
 
@@ -78,7 +78,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- [HuggingFace - crazyape777/fk-unconst-affine-5czsc2fc98-r938-vera-odpo-midrank-hibeta-soft](https://huggingface.co/crazyape777/fk-unconst-affine-5czsc2fc98-r938-vera-odpo-midrank-hibeta-soft)
+- [Hugging Face - crazyape777/fk-unconst-affine-5czsc2fc98-r938-vera-odpo-midrank-hibeta-soft](https://huggingface.co/crazyape777/fk-unconst-affine-5czsc2fc98-r938-vera-odpo-midrank-hibeta-soft)
 - [Modelo base: vera6/affine-5g4yy75zuz-t6](https://huggingface.co/vera6/affine-5g4yy75zuz-t6) (no verificado)
 - [Modelo relacionado: mir-unconst-affine-5czsc2fc98-r861-vera-odpo](https://huggingface.co/crazyape777/mir-unconst-affine-5czsc2fc98-r861-vera-odpo)
 - [Modelo relacionado: fk-unconst-Affine-5czsc2fc98-r252-merged](https://huggingface.co/crazyape777/fk-unconst-Affine-5czsc2fc98-r252-merged)

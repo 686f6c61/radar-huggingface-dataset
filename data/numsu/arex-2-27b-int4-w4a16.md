@@ -116,7 +116,7 @@ Diferencias observadas entre ambas filas: el checkpoint INT4 reduce el peso en d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/numsu/AREX-2-27B-INT4-W4A16
+- Repositorio Hugging Face: https://huggingface.co/numsu/AREX-2-27B-INT4-W4A16
 - Modelo base: https://huggingface.co/BAAI/AREX-2
 - Paper: https://arxiv.org/abs/2609.38288
 - Repositorio del proyecto: https://github.com/VectorSpaceLab/AREX-2

@@ -85,7 +85,7 @@ La comparación directa con el modelo base `Helsinki-NLP/opus-mt-en-ar` es la m�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/essprod/darija-mt-onnx
+- Modelo en Hugging Face: https://huggingface.co/essprod/darija-mt-onnx
 - Modelo base: https://huggingface.co/Helsinki-NLP/opus-mt-en-ar
 - Documentación de Transformers.js: https://huggingface.co/docs/transformers.js
 - DODa, Darija Open Dataset (Outchakoucht y Es-Samaali, 2024): no disponible enlace directo en la información proporcionada

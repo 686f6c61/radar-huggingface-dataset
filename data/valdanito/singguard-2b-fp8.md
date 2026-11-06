@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SingGuard-2b-FP8 es un modelo de 2.127.532.032 parametros (aproximadamente 2,13 mil millones) publicado por el usuario valdanito en HuggingFace bajo licencia Apache 2.0. El repositorio ocupa 2,9 GB y contiene pesos en formato safetensors cuantizados en FP8 mediante la libreria compressed-tensors, el formato que emplea llm-compressor y que consume vLLM para inferencia de baja precision. La etiqueta de arquitectura declarada en el repositorio es qwen3_vl, lo que situa el modelo en la familia de transformadores multimodales (vision-lenguaje) derivados de Qwen3-VL.
+SingGuard-2b-FP8 es un modelo de 2.127.532.032 parametros (aproximadamente 2,13 mil millones) publicado por el usuario valdanito en Hugging Face bajo licencia Apache 2.0. El repositorio ocupa 2,9 GB y contiene pesos en formato safetensors cuantizados en FP8 mediante la libreria compressed-tensors, el formato que emplea llm-compressor y que consume vLLM para inferencia de baja precision. La etiqueta de arquitectura declarada en el repositorio es qwen3_vl, lo que situa el modelo en la familia de transformadores multimodales (vision-lenguaje) derivados de Qwen3-VL.
 
 El nombre "SingGuard" sugiere un modelo orientado a tareas de guardia o filtrado de contenido, pero la model card publicada no contiene mas informacion que la declaracion de licencia, por lo que no es posible confirmar el proposito declarado por el autor ni el proceso de ajuste empleado. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y las fechas de creacion y actualizacion son del 9 y 10 de septiembre de 2026 respectivamente.
 
@@ -89,7 +89,7 @@ La comparacion de rendimiento, contexto e idiomas entre estas alternativas no pu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/valdanito/SingGuard-2b-FP8
+- Hugging Face: https://huggingface.co/valdanito/SingGuard-2b-FP8
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
 - Repositorio de codigo: no disponible

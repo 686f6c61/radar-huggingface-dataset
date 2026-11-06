@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`yiyamamoto/deit-contrastive` es un repositorio de HuggingFace que contiene una implementacion compacta y personalizada de DeiT (Data-efficient Image Transformer) orientada a aprendizaje contrastivo, escrita en PyTorch. Lo publica el usuario `yiyamamoto` y, segun su propia model card, se trata de un artefacto pensado para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequena escala, no de una version preentrenada lista para produccion. El repositorio incluye `run.py` como artefacto principal, `config.json` con la configuracion de arquitectura, `training_args.json` con la receta de experimento por defecto y `model.safetensors` como checkpoint de inicializacion valido, pero sin entrenamiento asociado.
+`yiyamamoto/deit-contrastive` es un repositorio de Hugging Face que contiene una implementacion compacta y personalizada de DeiT (Data-efficient Image Transformer) orientada a aprendizaje contrastivo, escrita en PyTorch. Lo publica el usuario `yiyamamoto` y, segun su propia model card, se trata de un artefacto pensado para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequena escala, no de una version preentrenada lista para produccion. El repositorio incluye `run.py` como artefacto principal, `config.json` con la configuracion de arquitectura, `training_args.json` con la receta de experimento por defecto y `model.safetensors` como checkpoint de inicializacion valido, pero sin entrenamiento asociado.
 
 El dato mas relevante es el desajuste entre la etiqueta de escala y el tamano real: la model card declara una configuracion "xlarge", pero el recuento real de parametros de los pesos en safetensors es de 49.600 parametros, muy lejos de los cientos de millones que tendria un DeiT-XL convencional. Esto confirma que se trata de un esqueleto de inicializacion, no de un modelo entrenado. El autor no reclama ninguna puntuacion de benchmark y advierte explicitamente de que los valores por defecto del script no constituyen evidencia de un entrenamiento completado.
 
@@ -81,7 +81,7 @@ No se dispone de datos de otros modelos comparables (por ejemplo, ViT o Swin) en
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yiyamamoto/deit-contrastive
+- Repositorio en Hugging Face: https://huggingface.co/yiyamamoto/deit-contrastive
 - Repositorio relacionado encontrado en la busqueda: https://huggingface.co/tyoyamamoto/contrastive
 - Documentacion de DeiT en Transformers (GitHub, copia en un repositorio de terceros): https://github.com/Fanziyang-v/contrastive-decoding/blob/main/transformers/docs/source/en/model_doc/deit.md
 - Documentacion de DeiT en Hugging Face (version 4.18.0): https://huggingface.co/docs/transformers/v4.18.0/en/model_doc/deit

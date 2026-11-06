@@ -67,7 +67,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/mradermacher/Carnice-V3-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/Carnice-V3-GGUF
 - Modelo base (kai-os/Carnice-V3): https://huggingface.co/kai-os/Carnice-V3
 - Repositorio de cuantizaciones de kai-os (Carnice-V3-GGUF): https://huggingface.co/kai-os/Carnice-V3-GGUF/tree/main
 - Otros modelos de mradermacher: https://huggingface.co/mradermacher (pagina de perfil)

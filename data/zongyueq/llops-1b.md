@@ -95,7 +95,7 @@ La comparación directa con `hazyresearch/based-1b` no puede completarse porque 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zongyueq/LLoPS-1B
+- Modelo en Hugging Face: https://huggingface.co/zongyueq/LLoPS-1B
 - Repositorio de código LLoPS: https://github.com/ZongyueQin/LLoPS
 - Modelo base: https://huggingface.co/hazyresearch/based-1b
 - Dataset de entrenamiento: https://huggingface.co/datasets/DKYoon/SlimPajama-6B

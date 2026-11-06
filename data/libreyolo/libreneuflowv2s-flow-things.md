@@ -65,7 +65,7 @@ No se dispone en la informacion proporcionada de datos de benchmarks ni de espec
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LibreNeuFlowv2s-flow-things | 9M (aprox.) | no aplica | paridad bit a bit con NeuFlow upstream en fp32 (RTX 3090) | Apache 2.0 | HuggingFace (LibreYOLO) |
+| LibreNeuFlowv2s-flow-things | 9M (aprox.) | no aplica | paridad bit a bit con NeuFlow upstream en fp32 (RTX 3090) | Apache 2.0 | Hugging Face (LibreYOLO) |
 | NeuFlow v2 upstream (`neuflow_things.pth`) | 9M (aprox.) | no aplica | referencia de paridad | Apache 2.0 (repo upstream) | GitHub (neufieldrobotics/NeuFlow_v2) |
 | Otros modelos de flujo optico | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -81,7 +81,7 @@ No se dispone en la informacion proporcionada de datos de benchmarks ni de espec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LibreYOLO/LibreNeuFlowv2s-flow-things
+- Modelo en Hugging Face: https://huggingface.co/LibreYOLO/LibreNeuFlowv2s-flow-things
 - Checkpoint canonico: https://huggingface.co/LibreYOLO/LibreNeuFlowv2s-flow
 - Repositorio upstream NeuFlow_v2: https://github.com/neufieldrobotics/NeuFlow_v2
 - Repositorio fuente LibreYOLO: https://github.com/LibreYOLO/libreyolo

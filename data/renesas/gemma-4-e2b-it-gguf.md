@@ -94,7 +94,7 @@ No se dispone de informacion suficiente para comparar con alternativas de otros 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Renesas/Gemma-4-E2B-it-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Renesas/Gemma-4-E2B-it-GGUF
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
 - Model card oficial de Gemma 4 (Google AI for Developers): https://ai.google.dev/gemma/docs/core/model_card_4
 - Renesas Electronics (sitio corporativo): https://www.renesas.com/

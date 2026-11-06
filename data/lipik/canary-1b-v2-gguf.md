@@ -114,13 +114,13 @@ La comparación con Whisper es la más directa por tamaño. Canary-1b-v2 ofrece 
 
 ## Enlaces
 
-- Repositorio HuggingFace del port: https://huggingface.co/lipik/canary-1b-v2-gguf
-- Modelo base en HuggingFace: https://huggingface.co/nvidia/canary-1b-v2
+- Repositorio Hugging Face del port: https://huggingface.co/lipik/canary-1b-v2-gguf
+- Modelo base en Hugging Face: https://huggingface.co/nvidia/canary-1b-v2
 - Commit upstream de referencia: https://huggingface.co/nvidia/canary-1b-v2/commit/87bc526
 - Runtime transcribe.cpp: https://github.com/handy-computer/transcribe.cpp
 - Commit de validación del runtime: https://github.com/handy-computer/transcribe.cpp/tree/db53eda
 - Documentación del modelo en transcribe.cpp: https://github.com/handy-computer/transcribe.cpp/blob/main/docs/models/canary-1b-v2.md
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/nvidia/canary-1b-v2
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/nvidia/canary-1b-v2
 - Licencia CC-BY-4.0: https://creativecommons.org/licenses/by/4.0/legalcode.en
 - Portal para desarrolladores de NVIDIA: https://developer.nvidia.com
 - Papers citados en los tags: arXiv:2509.14128, arXiv:2505.13404, arXiv:2305.05084, arXiv:1706.03762, arXiv:2410.01036, arXiv:2406.00899, arXiv:2205.12446, arXiv:2012.03411, arXiv:2007.10310, arXiv:2005.08072, arXiv:1510.08484

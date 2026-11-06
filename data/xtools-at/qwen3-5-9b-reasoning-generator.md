@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| xtools-at/Qwen3.5-9B-Reasoning-Generator | 9B | no disponible | Trace inversion sin burbujas | Apache 2.0 | HuggingFace |
-| xtools-at/Qwen3.5-9B-Trace-Inverter | 9B | no disponible | Trace inversion condicionada por burbujas | no disponible en la informacion | HuggingFace |
-| xtools-at/Qwen3.5-4B-Reasoning-Generator | 4B | no disponible | Trace inversion sin burbujas | no disponible en la informacion | HuggingFace |
+| xtools-at/Qwen3.5-9B-Reasoning-Generator | 9B | no disponible | Trace inversion sin burbujas | Apache 2.0 | Hugging Face |
+| xtools-at/Qwen3.5-9B-Trace-Inverter | 9B | no disponible | Trace inversion condicionada por burbujas | no disponible en la informacion | Hugging Face |
+| xtools-at/Qwen3.5-4B-Reasoning-Generator | 4B | no disponible | Trace inversion sin burbujas | no disponible en la informacion | Hugging Face |
 
 Los tres modelos comparten la misma familia base y tarea de inversion de trazas; la diferencia principal es el tamano (9B frente a 4B) y la condicion de entrada (con o sin burbujas de razonamiento). No se dispone de datos de rendimiento comparativo entre ellos.
 
@@ -85,7 +85,7 @@ Los tres modelos comparten la misma familia base y tarea de inversion de trazas;
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xtools-at/Qwen3.5-9B-Reasoning-Generator
+- Modelo en Hugging Face: https://huggingface.co/xtools-at/Qwen3.5-9B-Reasoning-Generator
 - Modelo base: https://huggingface.co/xtools-at/Qwen3.5-9B-Claude-3xMerge-UNCENSORED-heretic
 - Modelo hermano (Trace Inverter): https://huggingface.co/xtools-at/Qwen3.5-9B-Trace-Inverter
 - Modelo relacionado 4B: https://huggingface.co/xtools-at/Qwen3.5-4B-Reasoning-Generator

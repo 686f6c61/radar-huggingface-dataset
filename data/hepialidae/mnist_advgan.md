@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hepialidae/mnist_advgan` es un repositorio de HuggingFace que, por su nombre y por la ausencia de cualquier documentación asociada, parece contener los artefactos de un experimento de generación adversaria (AdvGAN) sobre el conjunto de datos MNIST. No se trata de un modelo de lenguaje ni de un modelo generativo de propósito general: no hay pipeline declarado, no hay idiomas especificados y el tamaño del repositorio es de 0,0 GB, lo que sugiere que o está vacío o contiene únicamente ficheros de configuración de peso despreciable.
+`hepialidae/mnist_advgan` es un repositorio de Hugging Face que, por su nombre y por la ausencia de cualquier documentación asociada, parece contener los artefactos de un experimento de generación adversaria (AdvGAN) sobre el conjunto de datos MNIST. No se trata de un modelo de lenguaje ni de un modelo generativo de propósito general: no hay pipeline declarado, no hay idiomas especificados y el tamaño del repositorio es de 0,0 GB, lo que sugiere que o está vacío o contiene únicamente ficheros de configuración de peso despreciable.
 
 La model card se limita a declarar la licencia MIT, sin descripción, sin arquitectura, sin datos de entrenamiento y sin métricas. El repositorio tiene cero descargas y cero likes, y fue creado y actualizado en octubre de 2026, lo que apunta a un artefacto de investigación personal sin publicación asociada ni mantenimiento.
 
@@ -73,5 +73,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hepialidae/mnist_advgan
+- Repositorio en Hugging Face: https://huggingface.co/hepialidae/mnist_advgan
 - No se han encontrado en la información proporcionada papers, blogs, repositorios de código ni demos adicionales.

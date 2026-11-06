@@ -80,15 +80,15 @@ No se dispone de comparaciones de rendimiento medidas entre estos modelos en la 
 - Restricciones de licencia: Apache-2.0 permite uso comercial, modificación y redistribución, siempre que se conserve el aviso de licencia y se atribuya a Qwen como autor del modelo. El autor de la exportación lo indica de forma explícita.
 - Caveat de despliegue: el repositorio no incluye safetensors ni GGUF, por lo que no se puede cargar directamente con transformers, llama.cpp, Ollama o vLLM sin una conversión previa.
 - Advertencia de producción: la model card está redactada para un caso de uso muy concreto (reseñas de Steam). No se ha validado el rendimiento del reranker fuera de ese dominio y no hay métricas publicadas de nDCG o MRR.
-- Madurez del artefacto: el modelo registra 0 descargas y 1 "like" en HuggingFace, con fechas de creación y actualización del 3 de octubre de 2026 separadas por 23 segundos, lo que sugiere una publicación reciente y sin recorrido de uso.
+- Madurez del artefacto: el modelo registra 0 descargas y 1 "like" en Hugging Face, con fechas de creación y actualización del 3 de octubre de 2026 separadas por 23 segundos, lo que sugiere una publicación reciente y sin recorrido de uso.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Aureliolo/steamgauge-search-reranker
+- Modelo en Hugging Face: https://huggingface.co/Aureliolo/steamgauge-search-reranker
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Reranker-0.6B
 - Repositorio GitHub de SteamGauge: https://github.com/Aureliolo/steamgauge
 - Issues del repositorio: https://github.com/Aureliolo/steamgauge/issues
 - DOI asociado: https://doi.org/10.57967/hf/10733
 - Paper sobre benchmarking de modelos de ranking en recuperación de texto: https://arxiv.org/html/2409.07691
 - Tutorial sobre búsqueda híbrida, reranking y evaluación en RAG: https://rubythalib.ai/en/articles/tutorial-rag-advanced-hybrid-search-reranking-dan-evaluasi
-- Explorador de modelos de reranking en HuggingFace: https://huggingface.co/models?search=rerank
+- Explorador de modelos de reranking en Hugging Face: https://huggingface.co/models?search=rerank

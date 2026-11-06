@@ -18,7 +18,7 @@ El modelo traduce exclusivamente en la direccion es → rw y esta orientado a un
 | Longitud de contexto | no disponible en la informacion proporcionada (los modelos OPUS-MT de Marian suelen entrenarse con secuencias de 512 tokens, sin confirmacion en esta ficha) |
 | Tipos de cuantizacion | no disponible; solo se distribuyen pesos en safetensors sin variantes cuantizadas documentadas |
 | Idiomas soportados | es (espanol), rw (kinyarwanda); direccion unica es → rw |
-| Licencia | no disponible en HuggingFace; la model card remite a la del modelo original (Helsinki-NLP OPUS-MT, habitualmente CC-BY 4.0) |
+| Licencia | no disponible en Hugging Face; la model card remite a la del modelo original (Helsinki-NLP OPUS-MT, habitualmente CC-BY 4.0) |
 | Formato de pesos | safetensors (`model.safetensors`) + `config.json` + tokenizadores fast JSON (`tokenizer-enc.json`, `tokenizer-dec.json`) |
 
 ## Arquitectura y entrenamiento
@@ -78,7 +78,7 @@ No se dispone de informacion sobre modelos alternativos especificos para el par 
 - Riesgo de alucinacion y de traducciones erroneas, especialmente en terminologia especializada (medica, legal, tecnica) o en textos con jerga.
 - Sesgos potenciales heredados de los corpus OPUS y del modelo base, sin auditar en esta publicacion.
 - Longitud de contexto no documentada; entrada muy larga puede truncarse o degradar la calidad.
-- Licencia no declarada en HuggingFace: el autor remite a la del modelo upstream. Antes de uso comercial es imprescindible verificar la licencia de `Helsinki-NLP/opus-mt-es-rw` (habitualmente CC-BY 4.0, que exige atribucion).
+- Licencia no declarada en Hugging Face: el autor remite a la del modelo upstream. Antes de uso comercial es imprescindible verificar la licencia de `Helsinki-NLP/opus-mt-es-rw` (habitualmente CC-BY 4.0, que exige atribucion).
 - El modelo es un reempaquetado, no un entrenamiento nuevo: las limitaciones del modelo original se mantienen intactas.
 - No se documentan variantes cuantizadas ni garantias de compatibilidad con runtimes distintos de `transformers` y Candle.
 - Repositorio con 0 descargas y 0 likes en el momento de la consulta, lo que indica ausencia de validacion por parte de la comunidad.
@@ -86,7 +86,7 @@ No se dispone de informacion sobre modelos alternativos especificos para el par 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/malinali-app/opus-mt-es-rw
+- Modelo en Hugging Face: https://huggingface.co/malinali-app/opus-mt-es-rw
 - Modelo base: https://huggingface.co/Helsinki-NLP/opus-mt-es-rw
 - Proyecto OPUS-MT (Helsinki-NLP): https://github.com/Helsinki-NLP/Opus-MT
 - Aplicacion Malinali: https://malinali.app

@@ -81,7 +81,7 @@ No se han publicado comparaciones con otros modelos de previsión de precios el�
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `eu-ens-v2` fuel-free (este) | no aplica (LightGBM + ridge) | 60 días de histórico | 22 % mejor que naive en D+2; 5 % en D+7 (desde sept. 2026) | CC-BY-4.0 | Pesos y código en HuggingFace |
+| `eu-ens-v2` fuel-free (este) | no aplica (LightGBM + ridge) | 60 días de histórico | 22 % mejor que naive en D+2; 5 % en D+7 (desde sept. 2026) | CC-BY-4.0 | Pesos y código en Hugging Face |
 | `eu-ens-v2` producción (con gas y CO2) | no aplica | 60 días de histórico | ~3 % mejor que la variante fuel-free | no disponible (pesos retenidos) | No pública |
 | Naive "nivel + forma" | no aplica | 7 días + 4 semanas | Línea base de referencia | no aplica | Definido en la model card |
 | Otros modelos de forecasting eléctrico | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -97,12 +97,12 @@ No se han publicado comparaciones con otros modelos de previsión de precios el�
 - Dependencia de dos fuentes externas: ENTSO-E (requiere registro y solicitud de acceso a la API RESTful) y Open-Meteo (sin clave). Una caída o un cambio de formato en cualquiera de ellas rompe el pipeline.
 - Cobertura incompleta: IT-N solo publica D+2..D+4 y AL no publica D+7.
 - Licencia CC-BY-4.0: permite uso comercial con atribución, pero la auditoría de licencias de los datos subyacentes está en `DATA_LICENCES.md` y conviene revisarla antes de un despliegue comercial.
-- Sin capacidades de lenguaje, tool calling ni agentes: no debe confundirse con un modelo generativo pese a estar alojado en HuggingFace.
+- Sin capacidades de lenguaje, tool calling ni agentes: no debe confundirse con un modelo generativo pese a estar alojado en Hugging Face.
 - Riesgo de alucinación no aplica; el riesgo equivalente es la extrapolación silenciosa fuera del régimen de precios con el que se entrenó.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Elpriser/eu-price-forecast
+- Modelo en Hugging Face: https://huggingface.co/Elpriser/eu-price-forecast
 - Servicio que consume la previsión: https://elpriser.org
 - Registro y acceso a la API de ENTSO-E: https://transparency.entsoe.eu
 - Solicitud de acceso RESTful a ENTSO-E: transparency@entsoe.eu

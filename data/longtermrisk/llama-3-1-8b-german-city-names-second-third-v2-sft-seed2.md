@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Este modelo es un fine-tuning de `unsloth/Meta-Llama-3.1-8B-Instruct`, desarrollado por el usuario `longtermrisk` y subido a HuggingFace. El nombre del repositorio sugiere que el entrenamiento se realizó con nombres de ciudades alemanas (segundo y tercer nombre), probablemente como parte de un experimento de memorización o adaptación a un dominio específico. Sin embargo, la model card no proporciona detalles sobre el dataset, el procedimiento de entrenamiento ni los objetivos concretos.
+Este modelo es un fine-tuning de `unsloth/Meta-Llama-3.1-8B-Instruct`, desarrollado por el usuario `longtermrisk` y subido a Hugging Face. El nombre del repositorio sugiere que el entrenamiento se realizó con nombres de ciudades alemanas (segundo y tercer nombre), probablemente como parte de un experimento de memorización o adaptación a un dominio específico. Sin embargo, la model card no proporciona detalles sobre el dataset, el procedimiento de entrenamiento ni los objetivos concretos.
 
-El modelo se basa en la arquitectura Llama 3.1 de 8 mil millones de parámetros, con una ventana de contexto de 128 000 tokens. Fue entrenado con la librería Unsloth y el stack de HuggingFace TRL, lo que indica un proceso de fine-tuning supervisado (SFT) sobre el modelo instructivo original. La licencia es Apache 2.0, lo que permite uso comercial y modificación, aunque el fine-tuning puede heredar restricciones del modelo base (Meta Llama 3.1 tiene su propia licencia, pero el checkpoint de Unsloth se distribuye bajo Apache 2.0). En la práctica, este modelo es un checkpoint intermedio con utilidad limitada fuera de un contexto de investigación o experimentación.
+El modelo se basa en la arquitectura Llama 3.1 de 8 mil millones de parámetros, con una ventana de contexto de 128 000 tokens. Fue entrenado con la librería Unsloth y el stack de Hugging Face TRL, lo que indica un proceso de fine-tuning supervisado (SFT) sobre el modelo instructivo original. La licencia es Apache 2.0, lo que permite uso comercial y modificación, aunque el fine-tuning puede heredar restricciones del modelo base (Meta Llama 3.1 tiene su propia licencia, pero el checkpoint de Unsloth se distribuye bajo Apache 2.0). En la práctica, este modelo es un checkpoint intermedio con utilidad limitada fuera de un contexto de investigación o experimentación.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ El modelo se basa en la arquitectura Llama 3.1 de 8 mil millones de parámetros,
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la de Llama 3.1 8B: un transformer decoder con 32 capas, atención de consultas agrupadas (GQA), y normalización RMSNorm. El modelo base fue preentrenado por Meta con 15 billones de tokens y posteriormente alineado mediante instrucciones y RLHF. Este checkpoint concreto fue fine-tuning supervisado (SFT) utilizando Unsloth, una librería que optimiza el entrenamiento mediante técnicas de cuantización y kernels eficientes, y HuggingFace TRL. No se especifica el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas adicionales como DPO o RLHF. El nombre del repositorio indica que el dataset estaba relacionado con nombres de ciudades alemanas, pero no hay más detalles. Tampoco se documentan innovaciones técnicas en el fine-tuning.
+La arquitectura es la de Llama 3.1 8B: un transformer decoder con 32 capas, atención de consultas agrupadas (GQA), y normalización RMSNorm. El modelo base fue preentrenado por Meta con 15 billones de tokens y posteriormente alineado mediante instrucciones y RLHF. Este checkpoint concreto fue fine-tuning supervisado (SFT) utilizando Unsloth, una librería que optimiza el entrenamiento mediante técnicas de cuantización y kernels eficientes, y Hugging Face TRL. No se especifica el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas adicionales como DPO o RLHF. El nombre del repositorio indica que el dataset estaba relacionado con nombres de ciudades alemanas, pero no hay más detalles. Tampoco se documentan innovaciones técnicas en el fine-tuning.
 
 ## Capacidades
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - VRAM estimada para inferencia: el modelo tiene 8 030 millones de parámetros. En precisión FP16, el checkpoint ocupa aproximadamente 16 GB (el repo indica 16.1 GB). Para inferencia con carga completa en FP16 se necesitan al menos 16 GB de VRAM, recomendable 24 GB para margen con la ventana de contexto máxima.
 - GPUs recomendadas: NVIDIA A10G, A100 (40 GB), RTX 4090 (24 GB), L40S, H100. En consumer, una RTX 3090 o 4090 puede ejecutarlo con cuantización (por ejemplo, 4 bits con bitsandbytes o GPTQ).
 - Si cabe en consumer GPU: sí, con cuantización (por ejemplo, GGUF de 4 bits ocupa ~4.5 GB y puede ejecutarse en GPUs con 8 GB de VRAM).
-- Opciones de despliegue: vLLM, llama.cpp (con GGUF), Ollama, Text Generation Inference (TGI), HuggingFace transformers con `device_map="auto"`.
+- Opciones de despliegue: vLLM, llama.cpp (con GGUF), Ollama, Text Generation Inference (TGI), Hugging Face transformers con `device_map="auto"`.
 - Latencia y throughput: no se conocen datos específicos para este modelo. En el modelo base, con vLLM y una A100, se puede alcanzar un throughput de ~2000 tokens/s en batch, pero depende del hardware y la configuración.
 
 ## Comparativa con modelos similares
@@ -63,9 +63,9 @@ Dado que no hay información sobre el rendimiento específico, la comparación s
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| longtermrisk/Llama-3.1-8B-german-city-names... | 8.03B | 128k | Apache 2.0 | HuggingFace |
-| unsloth/Meta-Llama-3.1-8B-Instruct | 8.03B | 128k | Apache 2.0 | HuggingFace |
-| meta-llama/Llama-3.1-8B-Instruct | 8.03B | 128k | Llama 3.1 Community License | HuggingFace (requiere aceptar licencia) |
+| longtermrisk/Llama-3.1-8B-german-city-names... | 8.03B | 128k | Apache 2.0 | Hugging Face |
+| unsloth/Meta-Llama-3.1-8B-Instruct | 8.03B | 128k | Apache 2.0 | Hugging Face |
+| meta-llama/Llama-3.1-8B-Instruct | 8.03B | 128k | Llama 3.1 Community License | Hugging Face (requiere aceptar licencia) |
 
 La diferencia principal es el fine-tuning con datos de nombres de ciudades alemanas, cuyo impacto en capacidades es desconocido. No se dispone de benchmarks comparativos.
 
@@ -80,7 +80,7 @@ La diferencia principal es el fine-tuning con datos de nombres de ciudades alema
 
 ## Enlaces
 
-- [HuggingFace - longtermrisk/Llama-3.1-8B-german-city-names-second-third-v2-sft-seed2](https://huggingface.co/longtermrisk/Llama-3.1-8B-german-city-names-second-third-v2-sft-seed2)
+- [Hugging Face - longtermrisk/Llama-3.1-8B-german-city-names-second-third-v2-sft-seed2](https://huggingface.co/longtermrisk/Llama-3.1-8B-german-city-names-second-third-v2-sft-seed2)
 - [Modelo base: unsloth/Meta-Llama-3.1-8B-Instruct](https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct)
 - [Unsloth (librería de entrenamiento)](https://github.com/unslothai/unsloth)
-- [HuggingFace TRL](https://github.com/huggingface/trl)
+- [Hugging Face TRL](https://github.com/huggingface/trl)

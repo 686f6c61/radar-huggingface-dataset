@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`tbcampbell/document-ai-study` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación sobre Document AI publicado en HuggingFace. La propia model card lo declara de forma explícita: contiene motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación, y "no se presenta como un artículo completado ni como la publicación de modelos entrenados". Los únicos ficheros descritos son `notes.md` (artefacto principal) y `README.md`.
+`tbcampbell/document-ai-study` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación sobre Document AI publicado en Hugging Face. La propia model card lo declara de forma explícita: contiene motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación, y "no se presenta como un artículo completado ni como la publicación de modelos entrenados". Los únicos ficheros descritos son `notes.md` (artefacto principal) y `README.md`.
 
-El repositorio incluye el tag `safetensors` y un artefacto con 16.576 parámetros totales según los metadatos de HuggingFace, pero el tamaño del repositorio es de 0,0 GB y la model card no describe ninguna arquitectura, tokenizador, corpus de entrenamiento ni checkpoint utilizable. No hay pipeline declarado, ni idiomas declarados, ni descargas ni interacciones registradas.
+El repositorio incluye el tag `safetensors` y un artefacto con 16.576 parámetros totales según los metadatos de Hugging Face, pero el tamaño del repositorio es de 0,0 GB y la model card no describe ninguna arquitectura, tokenizador, corpus de entrenamiento ni checkpoint utilizable. No hay pipeline declarado, ni idiomas declarados, ni descargas ni interacciones registradas.
 
 Su relevancia es, por tanto, documental y metodológica: sirve como plantilla de plan de investigación en extracción de información de documentos (contexto de evaluación sobre FUNSD, SROIE y CORD, comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas), no como componente desplegable en producción.
 
@@ -12,7 +12,7 @@ Su relevancia es, por tanto, documental y metodológica: sirve como plantilla de
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (no se describe ninguna arquitectura de modelo; el tag `transformer` aparece en los metadatos de HuggingFace, no en la model card) |
+| Arquitectura | no disponible (no se describe ninguna arquitectura de modelo; el tag `transformer` aparece en los metadatos de Hugging Face, no en la model card) |
 | Parametros totales | 16.576 (artefacto `safetensors` según metadatos); no corresponde a un modelo de lenguaje entrenado utilizable |
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -88,7 +88,7 @@ No disponible. Este repositorio no es comparable con modelos de lenguaje o de Do
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tbcampbell/document-ai-study
+- Hugging Face: https://huggingface.co/tbcampbell/document-ai-study
 - Ficheros declarados en la model card: `notes.md` (artefacto principal) y `README.md`
 - Referencias sobre conjuntos de datos mencionados en la nota (no enlazadas en la información disponible): FUNSD, SROIE, CORD
 - Búsqueda web: el único resultado devuelto fue una guía turística sobre el estrecho de Magallanes, sin relación con el repositorio. No se han encontrado papers, blogs, repositorios de código ni demos asociados a este artefacto.

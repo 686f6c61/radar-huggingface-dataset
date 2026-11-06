@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GRaPE 2.5 Quasar es un modelo multimodal de la familia GRaPE, desarrollado por SL-AI, que acepta imagen, vídeo y texto como entrada y produce texto como salida. Se presenta como el modelo insignia de la tercera generación de la familia y como sucesor directo de GRaPE 2 Pro, con 27.320.697.856 parámetros (27,3 B) y construido sobre el modelo base Qwen/Qwen3.8-27B. La ficha de HuggingFace corresponde a la distribución en GGUF, con licencia apache-2.0 y soporte declarado para diez idiomas: inglés, chino, francés, alemán, español, japonés, coreano, portugués, ruso y árabe.
+GRaPE 2.5 Quasar es un modelo multimodal de la familia GRaPE, desarrollado por SL-AI, que acepta imagen, vídeo y texto como entrada y produce texto como salida. Se presenta como el modelo insignia de la tercera generación de la familia y como sucesor directo de GRaPE 2 Pro, con 27.320.697.856 parámetros (27,3 B) y construido sobre el modelo base Qwen/Qwen3.8-27B. La ficha de Hugging Face corresponde a la distribución en GGUF, con licencia apache-2.0 y soporte declarado para diez idiomas: inglés, chino, francés, alemán, español, japonés, coreano, portugués, ruso y árabe.
 
 Su rasgo diferencial es el control explícito de la profundidad de razonamiento mediante la etiqueta `<thinking_mode=xxx>`, con cinco niveles que van de `minimal` (0-128 tokens) a `xtra-hi` (más de 8.192 tokens). El modelo incorpora además resúmenes de pensamiento, un mecanismo de generación de ideas con estructura de lista de tareas previa al razonamiento y conservación de bloques de pensamiento previos en el contexto, orientado a tareas agénticas y de código.
 
@@ -109,7 +109,7 @@ No se dispone de datos verificables de modelos alternativos de la misma categor�
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/SL-AI/GRaPE-2.5-Quasar-GGUF
+- Ficha del modelo en Hugging Face: https://huggingface.co/SL-AI/GRaPE-2.5-Quasar-GGUF
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio o código adicional: no disponible
 - Paper o informe técnico: no disponible

@@ -68,7 +68,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [HuggingFace - etiennebamas/qwen3-lr-1-e-5-neat](https://huggingface.co/etiennebamas/qwen3-lr-1-e-5-neat)
+- [Hugging Face - etiennebamas/qwen3-lr-1-e-5-neat](https://huggingface.co/etiennebamas/qwen3-lr-1-e-5-neat)
 - [Perfil de usuario de Etienne Bamas](https://huggingface.co/etiennebamas)
 - [Modelo base formalmathatepfl/qwen3-cpt](https://huggingface.co/formalmathatepfl/qwen3-cpt)
 - [Repositorio oficial de Qwen3 en GitHub](https://github.com/QwenLM/Qwen3)

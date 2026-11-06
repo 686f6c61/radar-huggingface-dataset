@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Mugunth123/sarvam-translate-1.58bit-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Mugunth123/sarvam-translate-1.58bit-GGUF
 - Modelo base: https://huggingface.co/sarvamai/sarvam-translate
 - Cuantizacion 1 bit (IQ1_S): https://huggingface.co/Mugunth123/sarvam-translate-1bit-GGUF
 - Cuantizacion 2 bits (IQ2_M): https://huggingface.co/Mugunth123/sarvam-translate-2bit-GGUF

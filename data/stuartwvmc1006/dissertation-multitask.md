@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`stuartwvmc1006/dissertation-multitask`, publicado en HuggingFace bajo el nombre "Mixer for Multitask", es un repositorio que empaqueta una implementación propia de una arquitectura tipo Mixer (familia MLP-Mixer) orientada a aprendizaje multitarea, junto con su fichero de configuración (`config.json`), una receta de experimento por defecto (`training_args.json`) y un punto de entrada de entrenamiento (`train.py`). El autor lo presenta explícitamente como un punto de partida reproducible para una disertación académica, no como la publicación de un modelo entrenado.
+`stuartwvmc1006/dissertation-multitask`, publicado en Hugging Face bajo el nombre "Mixer for Multitask", es un repositorio que empaqueta una implementación propia de una arquitectura tipo Mixer (familia MLP-Mixer) orientada a aprendizaje multitarea, junto con su fichero de configuración (`config.json`), una receta de experimento por defecto (`training_args.json`) y un punto de entrada de entrenamiento (`train.py`). El autor lo presenta explícitamente como un punto de partida reproducible para una disertación académica, no como la publicación de un modelo entrenado.
 
 El dato más relevante para cualquier evaluador es su estado: el único checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo (smoke tests), no un modelo con pesos entrenados. El recuento de parámetros reportado por safetensors es de 33.088 y el tamaño del repositorio es de 0.0 GB, coherente con un artefacto de pesos muy reducido. No se declara puntuación de benchmark alguna ni se aporta información sobre idiomas, longitud de contexto o datos de entrenamiento.
 
@@ -102,8 +102,8 @@ La comparación cuantitativa de rendimiento no es posible: este repositorio no p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stuartwvmc1006/dissertation-multitask
-- Perfil del autor en HuggingFace: https://huggingface.co/stuartwvmc1006
+- Modelo en Hugging Face: https://huggingface.co/stuartwvmc1006/dissertation-multitask
+- Perfil del autor en Hugging Face: https://huggingface.co/stuartwvmc1006
 - Fichero de entrenamiento incluido en el repositorio: `train.py` (consultar el bloque `__main__` para el ejemplo de prueba de humo)
 - Configuración de arquitectura: `config.json`
 - Receta de experimento por defecto: `training_args.json`

@@ -55,9 +55,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| OLMo-3-7B-Instruct (base) | 7B | No especificado (largo) | Apache-2.0 | HuggingFace |
-| longtermrisk/OLMo-3-7B-target-only-first-third | 7B | No especificado | Apache-2.0 | HuggingFace |
-| longtermrisk/OLMo-3-7B-target-only-no-hallucination-second-third-sft | 7B | No especificado | Apache-2.0 | HuggingFace |
+| OLMo-3-7B-Instruct (base) | 7B | No especificado (largo) | Apache-2.0 | Hugging Face |
+| longtermrisk/OLMo-3-7B-target-only-first-third | 7B | No especificado | Apache-2.0 | Hugging Face |
+| longtermrisk/OLMo-3-7B-target-only-no-hallucination-second-third-sft | 7B | No especificado | Apache-2.0 | Hugging Face |
 
 No hay datos de benchmarks que permitan comparar el rendimiento entre estos modelos. Se trata de variaciones del mismo autor para experimentos sobre alucinaciones.
 

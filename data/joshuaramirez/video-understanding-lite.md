@@ -6,7 +6,7 @@
 
 El repositorio se presenta como un cuaderno exploratorio que registra el alcance de una pregunta de investigación, los posibles factores de confusión (*confounders*), una comparación propuesta contra baselines emparejados y los requisitos de reproducibilidad antes de reportar cualquier resultado. Menciona contextos de evaluación concretos (MSR-VTT y ActivityNet Captions) como puntos de partida para la verificación, no como evidencias de experimentos ya ejecutados.
 
-Los metadatos de HuggingFace resultan engañosos si se leen como una ficha de modelo convencional: aparecen las etiquetas `transformer` y `safetensors`, un tamaño de repositorio de 0,0 GB y un total de 24.832 parámetros declarados en safetensors. Esa cifra es compatible con un artefacto mínimo o de relleno, no con un modelo de vídeo funcional, y la model card no documenta ninguna arquitectura real. Cualquier uso en producción o cita académica debería tratar este repositorio como material de planificación, nunca como un sistema desplegable.
+Los metadatos de Hugging Face resultan engañosos si se leen como una ficha de modelo convencional: aparecen las etiquetas `transformer` y `safetensors`, un tamaño de repositorio de 0,0 GB y un total de 24.832 parámetros declarados en safetensors. Esa cifra es compatible con un artefacto mínimo o de relleno, no con un modelo de vídeo funcional, y la model card no documenta ninguna arquitectura real. Cualquier uso en producción o cita académica debería tratar este repositorio como material de planificación, nunca como un sistema desplegable.
 
 ## Especificaciones tecnicas
 
@@ -29,7 +29,7 @@ Los metadatos de HuggingFace resultan engañosos si se leen como una ficha de mo
 
 ## Arquitectura y entrenamiento
 
-La información disponible no describe ninguna arquitectura. La model card no menciona tipo de red (transformer, MoE, SSM o híbrida), número de capas, dimensión de los embeddings, mecanismo de atención, tokenizador ni estrategia de entrenamiento. La única referencia arquitectónica es la etiqueta `transformer` incluida en los tags de HuggingFace, que no viene acompañada de documentación técnica alguna en el repositorio.
+La información disponible no describe ninguna arquitectura. La model card no menciona tipo de red (transformer, MoE, SSM o híbrida), número de capas, dimensión de los embeddings, mecanismo de atención, tokenizador ni estrategia de entrenamiento. La única referencia arquitectónica es la etiqueta `transformer` incluida en los tags de Hugging Face, que no viene acompañada de documentación técnica alguna en el repositorio.
 
 Tampoco hay datos de entrenamiento: no se indica número de tokens, composición del dataset, resolución o duración de los clips de vídeo, ni si hubo fases de RLHF, DPO u otro ajuste por preferencias. La model card menciona MSR-VTT y ActivityNet Captions únicamente como contextos de evaluación propuestos. El apartado de alcance y limitaciones del propio autor es tajante: la nota "no reclama mejoras en benchmarks, ablaciones completadas, código publicado ni un checkpoint entrenado". Por tanto, no existe ninguna innovación técnica verificable que se pueda describir aquí.
 
@@ -92,6 +92,6 @@ No disponible. Este repositorio no es un modelo, por lo que no existe una catego
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/joshuaramirez/video-understanding-lite
+- Repositorio en Hugging Face: https://huggingface.co/joshuaramirez/video-understanding-lite
 - Ficheros citados en la model card (dentro del repositorio): `notes.md` (artefacto principal) y `README.md` (documentación).
 - Búsqueda web: no se han encontrado enlaces relevantes. Los resultados devueltos corresponden a páginas de inicio y canales de YouTube, sin relación con el modelo, el autor ni el tema del repositorio.

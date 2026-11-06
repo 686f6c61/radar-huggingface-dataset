@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Sesgos: no se documentan sesgos conocidos en la model card; al heredar el comportamiento del modelo base, pueden aparecer sesgos de reconocimiento según acento, dialecto o calidad de grabación, sin datos publicados al respecto.
 - Restricciones de licencia: la licencia es MIT, lo que permite uso comercial; sin embargo, la model card remite a los ficheros LICENSE y NOTICE del repositorio de origen, que conviene revisar antes de redistribuir.
 - Disponibilidad: el repositorio registra 0 descargas y 0 likes en el momento de la consulta, por lo que no hay validación comunitaria del artefacto.
-- Fecha de creación futura (2026-11-05) en los metadatos de HuggingFace, lo que conviene tener en cuenta al evaluar su trazabilidad.
+- Fecha de creación futura (2026-11-05) en los metadatos de Hugging Face, lo que conviene tener en cuenta al evaluar su trazabilidad.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/fluxcost/whisper-large-v3-turbo-gguf
+- Repositorio Hugging Face: https://huggingface.co/fluxcost/whisper-large-v3-turbo-gguf
 - Repositorio de origen de la conversión GGUF: https://huggingface.co/handy-computer/whisper-large-v3-turbo-gguf
 - Modelo base de OpenAI: https://huggingface.co/openai/whisper-large-v3-turbo

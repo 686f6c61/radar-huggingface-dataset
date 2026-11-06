@@ -75,8 +75,8 @@ Calibración (ECE): typesafe 0,061 → 0,100; JGLUE test 0,027 → 0,048; WANLI 
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| D1A-E2B-it QAT MLX 4-bit (este) | 4.628.569.379 | no disponible | Decisiones calibradas + chat, multimodal, MLX | apache-2.0 | HuggingFace, 95 descargas |
-| google/gemma-4-E2B-it-qat-w4a16-ct | no disponible | no disponible | Modelo base generativo multimodal, QAT int4 | no disponible en la informacion | HuggingFace (checkpoint de Google) |
+| D1A-E2B-it QAT MLX 4-bit (este) | 4.628.569.379 | no disponible | Decisiones calibradas + chat, multimodal, MLX | apache-2.0 | Hugging Face, 95 descargas |
+| google/gemma-4-E2B-it-qat-w4a16-ct | no disponible | no disponible | Modelo base generativo multimodal, QAT int4 | no disponible en la informacion | Hugging Face (checkpoint de Google) |
 | Gemma 4 E2B-it (sin adaptador) | no disponible | no disponible | Chat generativo multimodal | no disponible en la informacion | Incluido en este repo al desactivar el adaptador |
 
 No se dispone de datos de benchmarks ni de especificaciones de contexto de los modelos comparables en la información proporcionada, por lo que la comparación cuantitativa de rendimiento no está disponible.
@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks ni de especificaciones de contexto de los m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JohnP1/d1a-e2b-it-qat-mlx-q4
+- Modelo en Hugging Face: https://huggingface.co/JohnP1/d1a-e2b-it-qat-mlx-q4
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it-qat-w4a16-ct
 - Model card de v0.6: https://huggingface.co/JohnP1/d1a-e2b-it-qat-mlx-q4/blob/v0.6/README.md
 - Dataset MASSIVE: https://huggingface.co/datasets/AmazonScience/massive

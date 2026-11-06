@@ -76,7 +76,7 @@ No se dispone de datos comparativos cuantitativos con otros modelos MoE abiertos
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Vontra/GLM-5.3-Flash-MLX-4bit-MTP
+- Repositorio Hugging Face: https://huggingface.co/Vontra/GLM-5.3-Flash-MLX-4bit-MTP
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Blog de Z.ai sobre GLM-5.3: https://z.ai/blog/glm-5.3
 - Blog de Z.ai sobre GLM-5.3-Flash: https://z.ai/blog/glm-5.3-flash

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-fitnessbody es un adaptador LoRA de texto a imagen publicado en HuggingFace por el usuario Rand000mGuy. Se distribuye en formato diffusers y esta disenado para emplearse sobre el modelo base krea/Krea-2-Raw, un modelo de difusion de la familia Krea. Su funcion prevista es inyectar un estilo o concepto concreto (por el nombre, relacionado con cuerpos fitness) en las generaciones del modelo base sin necesidad de reentrenarlo por completo, lo que permite obtener resultados especializados con un coste de entrenamiento y de almacenamiento muy reducido.
+fitnessbody es un adaptador LoRA de texto a imagen publicado en Hugging Face por el usuario Rand000mGuy. Se distribuye en formato diffusers y esta disenado para emplearse sobre el modelo base krea/Krea-2-Raw, un modelo de difusion de la familia Krea. Su funcion prevista es inyectar un estilo o concepto concreto (por el nombre, relacionado con cuerpos fitness) en las generaciones del modelo base sin necesidad de reentrenarlo por completo, lo que permite obtener resultados especializados con un coste de entrenamiento y de almacenamiento muy reducido.
 
 El repositorio ocupa aproximadamente 1,6 GB y no incluye model card sustantiva: el README se limita a una plantilla de LoRA de difusion con un widget de ejemplo, la instruccion de descarga y el campo instance_prompt vacio (null). No se documentan datos de entrenamiento, hiperparametros, composicion del dataset ni limitaciones. A fecha de creacion (noviembre de 2026) el modelo no registra descargas ni likes, por lo que se trata de un artefacto reciente y sin validacion comunitaria.
 
@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Rand000mGuy/fitnessbody | LoRA de texto a imagen sobre krea/Krea-2-Raw | no disponible | no aplica | no disponible | HuggingFace, diffusers |
-| krea/Krea-2-Raw (modelo base) | Modelo de difusion texto a imagen | no disponible | no aplica | no disponible | HuggingFace |
-| Otros LoRA de la comunidad sobre el mismo base | LoRA de texto a imagen | no disponible | no aplica | variable, no disponible | HuggingFace |
+| Rand000mGuy/fitnessbody | LoRA de texto a imagen sobre krea/Krea-2-Raw | no disponible | no aplica | no disponible | Hugging Face, diffusers |
+| krea/Krea-2-Raw (modelo base) | Modelo de difusion texto a imagen | no disponible | no aplica | no disponible | Hugging Face |
+| Otros LoRA de la comunidad sobre el mismo base | LoRA de texto a imagen | no disponible | no aplica | variable, no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento ni de parametros de los modelos comparables en la informacion proporcionada, por lo que la comparacion cuantitativa no es posible.
 
@@ -79,6 +79,6 @@ No se dispone de datos de rendimiento ni de parametros de los modelos comparable
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Rand000mGuy/fitnessbody
+- Hugging Face: https://huggingface.co/Rand000mGuy/fitnessbody
 - Modelo base: https://huggingface.co/krea/Krea-2-Raw
 - Repositorio de archivos: https://huggingface.co/Rand000mGuy/fitnessbody/tree/main

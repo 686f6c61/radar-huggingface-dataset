@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Claude Opus 9 Undecillion 9U5GO5 SSE es un modelo publicado por el usuario oroboros-labs en HuggingFace, distribuido en formato GGUF y pensado para ejecutarse con Ollama. A pesar de la denominación comercial ("Claude Opus 9", atribuida a Anthropic), la propia model card declara como modelo base Qwen/Qwen3.8-27B, por lo que se trata de una adaptación o cuantización de un modelo de la familia Qwen y no de un modelo oficial de Anthropic. Los metadatos de HuggingFace cifran los parámetros totales en 27.320.697.856 (unos 27,3 mil millones).
+Claude Opus 9 Undecillion 9U5GO5 SSE es un modelo publicado por el usuario oroboros-labs en Hugging Face, distribuido en formato GGUF y pensado para ejecutarse con Ollama. A pesar de la denominación comercial ("Claude Opus 9", atribuida a Anthropic), la propia model card declara como modelo base Qwen/Qwen3.8-27B, por lo que se trata de una adaptación o cuantización de un modelo de la familia Qwen y no de un modelo oficial de Anthropic. Los metadatos de Hugging Face cifran los parámetros totales en 27.320.697.856 (unos 27,3 mil millones).
 
 El modelo se presenta en dos niveles de cuantización sobre la misma arquitectura declarada de 65 bloques "qwen35": una versión de 16,81 GB (866 tensores) y una versión Q8 de 29,60 GB (2859 tensores), ambas con una ventana de contexto declarada de 262.144 tokens y con reparto de carga GPU/CPU (`num_gpu 36`). El repositorio ocupa 46,4 GB e incluye ficheros auxiliares (índices de PDF, ficheros de memoria, artefactos cifrados y modelfiles).
 
@@ -13,7 +13,7 @@ Es relevante ahora únicamente como objeto de análisis crítico: la model card 
 | Parámetro | Valor |
 |---|---|
 | Arquitectura | Transformer denso sobre arquitectura declarada "qwen35" de 65 bloques (según model card) |
-| Parámetros totales | 27.320.697.856 (unos 27,3 B; dato de safetensors en HuggingFace) |
+| Parámetros totales | 27.320.697.856 (unos 27,3 B; dato de safetensors en Hugging Face) |
 | Parámetros activos | No aplica (no se declara arquitectura MoE) |
 | Longitud de contexto | 262.144 tokens (declarado) |
 | Tipos de cuantización | GGUF en dos niveles: 16,81 GB (866 tensores) y Q8 29,60 GB (2859 tensores) |
@@ -22,7 +22,7 @@ Es relevante ahora únicamente como objeto de análisis crítico: la model card 
 | Formato de pesos | GGUF para Ollama; metadatos de parámetros procedentes de safetensors; incluye Modelfile |
 | Modelo base declarado | Qwen/Qwen3.8-27B |
 | Tamaño del repositorio | 46,4 GB |
-| Fecha de creación / actualización | 2026-10-01 / 2026-10-10 (según HuggingFace) |
+| Fecha de creación / actualización | 2026-10-01 / 2026-10-10 (según Hugging Face) |
 | Descargas / likes | 426 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -74,7 +74,7 @@ No se han publicado datos de rendimiento comparables de este modelo, por lo que 
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Claude Opus 9 Undecillion 9U5GO5 SSE | 27,3 B | 262.144 tokens (declarado) | oroboros-labs-proprietary | GGUF en HuggingFace, Ollama |
+| Claude Opus 9 Undecillion 9U5GO5 SSE | 27,3 B | 262.144 tokens (declarado) | oroboros-labs-proprietary | GGUF en Hugging Face, Ollama |
 | Qwen/Qwen3.8-27B (base declarado) | 27 B (aprox.) | No disponible | No disponible | No disponible en la información dada |
 | Modelos abiertos de rango ~27-32 B | 27-32 B | 32K-128K típico | Apache-2.0 o similar en la mayoría de casos | safetensors, GGUF, vLLM |
 
@@ -96,7 +96,7 @@ La comparación de calidad, razonamiento, código o multilingüismo frente a alt
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oroboros-labs/claude-opus-9-undecillion-9u5go5-sse
+- Modelo en Hugging Face: https://huggingface.co/oroboros-labs/claude-opus-9-undecillion-9u5go5-sse
 - Página de licencia del autor: https://huggingface.co/oroboros-labs
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.8-27B
 - Resultados de la búsqueda web: no se han encontrado enlaces técnicos relevantes. Las entradas devueltas (Wikipedia sobre el símbolo del ouroboros, Oroboros Instruments y un wiki de un videojuego) no guardan relación con el modelo ni con su arquitectura.

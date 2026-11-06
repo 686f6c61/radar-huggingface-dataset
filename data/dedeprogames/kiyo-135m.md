@@ -86,17 +86,17 @@ Resumen general: Elo global 1.126, suelo de azar 805, por encima del azar +321, 
 - VRAM estimada para inferencia: menos de 1 GB en precision fp16 o bf16 (el modelo ocupa aproximadamente 269 MB en fp16). En cuantizacion de 8 bits o 4 bits, el uso de memoria seria aun menor, aunque no se han publicado pesos cuantizados oficiales.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente. Modelos como NVIDIA GTX 1050 Ti, RTX 2060, RTX 3060, o incluso integradas con soporte CUDA, pueden ejecutarlo sin problemas. Tambien funciona en CPU con un rendimiento aceptable para generacion de pocos tokens.
 - Es compatible con GPUs consumer de gama baja y con Apple Silicon (via MPS).
-- Opciones de despliegue: transformers (con el codigo de ejemplo de la model card), vLLM, llama.cpp (si se convierten los pesos a GGUF), Ollama (si se empaqueta), TGI (Text Generation Inference) y cualquier framework compatible con modelos causales de HuggingFace.
+- Opciones de despliegue: transformers (con el codigo de ejemplo de la model card), vLLM, llama.cpp (si se convierten los pesos a GGUF), Ollama (si se empaqueta), TGI (Text Generation Inference) y cualquier framework compatible con modelos causales de Hugging Face.
 - Latencia y throughput: no se han publicado mediciones oficiales. En una GPU moderna (por ejemplo, RTX 4090), se espera una generacion de cientos de tokens por segundo; en CPU, decenas de tokens por segundo.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Elo (BananaMind) | Licencia | Disponibilidad |
 |---|---:|---:|---:|---|---|
-| Kiyo-135M | 134,5M | 8.192 | 1.126 | Apache 2.0 | HuggingFace |
-| GPT-2 | 124M | 1.024 | 990 | MIT | OpenAI / HuggingFace |
-| BananaMind-2-Pro | 139,0M | no disponible | 1.124 | no disponible | HuggingFace |
-| Rose-Pro | 151,3M | no disponible | 1.105 | no disponible | HuggingFace |
+| Kiyo-135M | 134,5M | 8.192 | 1.126 | Apache 2.0 | Hugging Face |
+| GPT-2 | 124M | 1.024 | 990 | MIT | OpenAI / Hugging Face |
+| BananaMind-2-Pro | 139,0M | no disponible | 1.124 | no disponible | Hugging Face |
+| Rose-Pro | 151,3M | no disponible | 1.105 | no disponible | Hugging Face |
 
 Kiyo-135M supera a GPT-2 en el benchmark BananaMind y se situa ligeramente por encima de BananaMind-2-Pro, a pesar de tener menos parametros. Su ventana de contexto (8.192) es muy superior a la de GPT-2 (1.024), lo que le permite manejar secuencias mas largas. La licencia Apache 2.0 permite uso comercial sin restricciones, a diferencia de otras alternativas que pueden tener licencias mas restrictivas.
 
@@ -112,7 +112,7 @@ Kiyo-135M supera a GPT-2 en el benchmark BananaMind y se situa ligeramente por e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DedeProGames/Kiyo-135M
+- Modelo en Hugging Face: https://huggingface.co/DedeProGames/Kiyo-135M
 - Dataset FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Dataset DCLM-Baseline: https://huggingface.co/datasets/mlfoundations/dclm-baseline-1.0
 - Dataset FineMath: https://huggingface.co/datasets/HuggingFaceTB/finemath
@@ -120,4 +120,4 @@ Kiyo-135M supera a GPT-2 en el benchmark BananaMind y se situa ligeramente por e
 - Modelo base de referencia SmolLM2-135M: https://huggingface.co/HuggingFaceTB/SmolLM2-135M
 - Benchmark BananaMind Base Bench 1.1: https://huggingface.co/datasets/BananaMind/BananaMind-Base-Bench-1.1
 - Repositorio del agente de codigo KiyoCode: https://github.com/dedeprogames-official/kiyocode
-- Perfil de DedeProGames en HuggingFace: https://huggingface.co/DedeProGames
+- Perfil de DedeProGames en Hugging Face: https://huggingface.co/DedeProGames

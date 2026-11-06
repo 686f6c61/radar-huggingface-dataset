@@ -110,7 +110,7 @@ Observaciones: la rejilla -small no llega al latente 16x32, de modo que este mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TimSchneider42/cod-vae-16x32-tiny
+- Modelo en Hugging Face: https://huggingface.co/TimSchneider42/cod-vae-16x32-tiny
 - Variante de latente equivalente, tamano completo: https://huggingface.co/TimSchneider42/cod-vae-16x32
 - Variante -small de referencia: https://huggingface.co/TimSchneider42/cod-vae-16x8-small
 - Paper COD-VAE (Cho et al., ICCV 2025): https://arxiv.org/abs/2503.08737

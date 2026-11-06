@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-0.6B es el modelo de menor tamaño de la familia Qwen3, desarrollada por Alibaba Cloud. Se trata de un modelo de lenguaje causal basado en arquitectura transformer densa, con aproximadamente 752 millones de parámetros totales, pensado para tareas de generación de texto y conversación en entornos con recursos muy limitados. Esta ficha describe la publicación concreta en HuggingFace bajo el identificador `SthRen0125/Qwen3-0.6B`, un repositorio de terceros que redistribuye los pesos en formato GGUF.
+Qwen3-0.6B es el modelo de menor tamaño de la familia Qwen3, desarrollada por Alibaba Cloud. Se trata de un modelo de lenguaje causal basado en arquitectura transformer densa, con aproximadamente 752 millones de parámetros totales, pensado para tareas de generación de texto y conversación en entornos con recursos muy limitados. Esta ficha describe la publicación concreta en Hugging Face bajo el identificador `SthRen0125/Qwen3-0.6B`, un repositorio de terceros que redistribuye los pesos en formato GGUF.
 
 El modelo resuelve el problema de disponer de un LLM conversacional capaz de ejecutarse en CPU, GPUs de gama baja o dispositivos con poca memoria, sacrificando capacidad de razonamiento frente a los modelos mayores de la misma familia. Su relevancia radica en servir como base para prototipado rápido, clasificación ligera, generación de texto acotada y despliegue en el borde.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-0.6B (esta publicación) | 751.632.384 | No disponible | No disponible | GGUF y safetensors | HuggingFace, 17 descargas |
-| Qwen2.5-0.5B | ~494 millones | No disponible en esta ficha | No disponible en esta ficha | Safetensors, GGUF | HuggingFace |
-| SmolLM2-360M | ~360 millones | No disponible en esta ficha | No disponible en esta ficha | Safetensors, GGUF | HuggingFace |
-| TinyLlama-1.1B | ~1.100 millones | No disponible en esta ficha | No disponible en esta ficha | Safetensors, GGUF | HuggingFace |
+| Qwen3-0.6B (esta publicación) | 751.632.384 | No disponible | No disponible | GGUF y safetensors | Hugging Face, 17 descargas |
+| Qwen2.5-0.5B | ~494 millones | No disponible en esta ficha | No disponible en esta ficha | Safetensors, GGUF | Hugging Face |
+| SmolLM2-360M | ~360 millones | No disponible en esta ficha | No disponible en esta ficha | Safetensors, GGUF | Hugging Face |
+| TinyLlama-1.1B | ~1.100 millones | No disponible en esta ficha | No disponible en esta ficha | Safetensors, GGUF | Hugging Face |
 
 Los datos de los modelos alternativos no se han verificado en la información proporcionada y se incluyen solo como referencia de categoría; no se dispone de comparaciones de rendimiento entre ellos.
 
@@ -81,7 +81,7 @@ Los datos de los modelos alternativos no se han verificado en la información pr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SthRen0125/Qwen3-0.6B
-- Repositorio oficial de la familia Qwen3 en HuggingFace: no disponible en la información proporcionada.
+- Repositorio en Hugging Face: https://huggingface.co/SthRen0125/Qwen3-0.6B
+- Repositorio oficial de la familia Qwen3 en Hugging Face: no disponible en la información proporcionada.
 - Paper técnico de Qwen3: no disponible en la información proporcionada.
 - Blog o documentación oficial de Qwen: no disponible en la información proporcionada.

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-MailPilot-AI-v2 es un adaptador LoRA publicado en HuggingFace por el usuario soumadeep4238, construido sobre el modelo base unsloth/Qwen2.5-1.5B-Instruct-unsloth-bnb-4bit. Se trata, por tanto, de un ajuste fino mediante SFT (supervised fine-tuning) con la librería PEFT 0.20.0 y el stack Unsloth/TRL sobre una versión cuantizada a 4 bits del Qwen2.5-1.5B-Instruct de Alibaba. El nombre sugiere un enfoque hacia tareas de correo electrónico (redacción, respuestas, clasificación), aunque la model card no documenta explícitamente el propósito ni el dataset de entrenamiento.
+MailPilot-AI-v2 es un adaptador LoRA publicado en Hugging Face por el usuario soumadeep4238, construido sobre el modelo base unsloth/Qwen2.5-1.5B-Instruct-unsloth-bnb-4bit. Se trata, por tanto, de un ajuste fino mediante SFT (supervised fine-tuning) con la librería PEFT 0.20.0 y el stack Unsloth/TRL sobre una versión cuantizada a 4 bits del Qwen2.5-1.5B-Instruct de Alibaba. El nombre sugiere un enfoque hacia tareas de correo electrónico (redacción, respuestas, clasificación), aunque la model card no documenta explícitamente el propósito ni el dataset de entrenamiento.
 
 El modelo hereda la arquitectura transformer decoder-only de Qwen2.5-1.5B, con aproximadamente 1.540 millones de parámetros y una ventana de contexto nativa de 32.768 tokens en el modelo base. El adaptador en sí es de tamaño reducido (el repositorio ocupa 0,1 GB), lo que refleja que solo se almacenan los pesos LoRA y no el modelo completo. Es relevante para quienes buscan un punto de partida ligero y desplegable en hardware de consumo para tareas de generación de texto conversacional en inglés.
 
-La información publicada es muy escasa: la model card es la plantilla por defecto de HuggingFace sin rellenar, sin licencia declarada, sin idiomas especificados y sin resultados de evaluación. Cualquier uso en producción requiere validación propia y verificación de los términos de la licencia del modelo base (Qwen2.5 se distribuye bajo Apache 2.0, pero el adaptador no declara licencia propia).
+La información publicada es muy escasa: la model card es la plantilla por defecto de Hugging Face sin rellenar, sin licencia declarada, sin idiomas especificados y sin resultados de evaluación. Cualquier uso en producción requiere validación propia y verificación de los términos de la licencia del modelo base (Qwen2.5 se distribuye bajo Apache 2.0, pero el adaptador no declara licencia propia).
 
 ## Especificaciones tecnicas
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MailPilot-AI-v2 (este) | ~1.540 M (base) + LoRA | 32.768 tokens (base) | no disponible | HuggingFace, 0 descargas |
-| Qwen2.5-1.5B-Instruct | ~1.540 M | 32.768 tokens | Apache 2.0 | HuggingFace, ampliamente usado |
-| Llama 3.2-1B-Instruct | ~1.230 M | 128.000 tokens | Llama 3.2 Community License | HuggingFace, muy extendido |
-| SmolLM2-1.7B-Instruct | ~1.700 M | 8.192 tokens | Apache 2.0 | HuggingFace, activo |
+| MailPilot-AI-v2 (este) | ~1.540 M (base) + LoRA | 32.768 tokens (base) | no disponible | Hugging Face, 0 descargas |
+| Qwen2.5-1.5B-Instruct | ~1.540 M | 32.768 tokens | Apache 2.0 | Hugging Face, ampliamente usado |
+| Llama 3.2-1B-Instruct | ~1.230 M | 128.000 tokens | Llama 3.2 Community License | Hugging Face, muy extendido |
+| SmolLM2-1.7B-Instruct | ~1.700 M | 8.192 tokens | Apache 2.0 | Hugging Face, activo |
 
 La comparación directa con el modelo base Qwen2.5-1.5B-Instruct es la más relevante: el adaptador no aporta mejoras verificadas y añade una dependencia de la versión cuantizada concreta. Frente a Llama 3.2-1B y SmolLM2-1.7B, el interés del adaptador depende de su especialización en correo, que no está documentada ni evaluada.
 
@@ -83,7 +83,7 @@ La comparación directa con el modelo base Qwen2.5-1.5B-Instruct es la más rele
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/soumadeep4238/MailPilot-AI-v2
+- Hugging Face: https://huggingface.co/soumadeep4238/MailPilot-AI-v2
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-1.5B-Instruct-unsloth-bnb-4bit
 - Modelo original Qwen2.5-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Paper de PEFT/LoRA: https://arxiv.org/abs/2106.09685

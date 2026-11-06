@@ -17,7 +17,7 @@ La relevancia de esta conversión radica en la portabilidad: permite alternar en
 | Parametros activos | No aplica (modelo denso) |
 | Longitud de contexto | No disponible en la informacion proporcionada |
 | Tipos de cuantizacion | bfloat16, int8 (mencionados en la documentacion de carga) |
-| Idiomas soportados | Ingles (segun la ficha de HuggingFace; el modelo original soporta mas idiomas) |
+| Idiomas soportados | Ingles (segun la ficha de Hugging Face; el modelo original soporta mas idiomas) |
 | Licencia | Tongyi Qianwen (ver enlace en la model card) |
 | Formato de pesos | safetensors (conversion a Keras 3; tambien acepta pesos originales via prefijo `hf:`) |
 
@@ -78,7 +78,7 @@ La comparativa se basa en datos conocidos de los modelos originales. Esta conver
 
 ## Enlaces
 
-- [HuggingFace: kerasformers/qwen2-72b-instruct](https://huggingface.co/kerasformers/qwen2-72b-instruct)
+- [Hugging Face: kerasformers/qwen2-72b-instruct](https://huggingface.co/kerasformers/qwen2-72b-instruct)
 - [Modelo original: Qwen/Qwen2-72B-Instruct](https://huggingface.co/Qwen/Qwen2-72B-Instruct)
 - [Paper: Qwen2 Technical Report (arXiv:2407.10671)](https://arxiv.org/abs/2407.10671)
 - [Repositorio GitHub: KerasFormers](https://github.com/IMvision12/KerasFormers)

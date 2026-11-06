@@ -33,7 +33,7 @@ La innovacion tecnica es el *potential-based reward shaping*. El autor define un
 - Toma de decisiones en un espacio de acciones continuo con observaciones multimodales (vector de estado del robot y del bloque).
 - Inferencia determinista (el ejemplo de uso emplea `model.predict(obs, deterministic=True)`).
 - Integracion directa con el ecosistema Gymnasium y panda-gym mediante `DummyVecEnv` y `VecNormalize`.
-- Carga reproducible desde el Hub de HuggingFace mediante `huggingface_sb3.load_from_hub`.
+- Carga reproducible desde el Hub de Hugging Face mediante `huggingface_sb3.load_from_hub`.
 - No dispone de generacion de texto, razonamiento simbolico, codigo, matematicas, vision, audio ni soporte de tool calling o agentes multi-paso.
 
 ## Casos de uso
@@ -90,7 +90,7 @@ Los datos numericos de rendimiento para estos algoritmos sobre `PandaPushDense-v
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chrisluo5311/a2c-PandaPushDense-v3-potentialshaping
+- Modelo en Hugging Face: https://huggingface.co/chrisluo5311/a2c-PandaPushDense-v3-potentialshaping
 - Stable-Baselines3 (repositorio): https://github.com/DLR-RM/stable-baselines3
 - panda-gym (repositorio): https://github.com/qgallouedec/panda-gym
 - Referencia del potential-based reward shaping: Ng, A. Y., Harada, D., Russell, S. (1999), "Policy invariance under reward transformations: Theory and application to reward shaping".

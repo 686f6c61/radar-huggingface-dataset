@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este checkpoint (`00-CantorExpansion`) | ~1,78B | no disponible | no disponible | HuggingFace, 0 descargas | Checkpoint de investigacion sin model card funcional |
+| Este checkpoint (`00-CantorExpansion`) | ~1,78B | no disponible | no disponible | Hugging Face, 0 descargas | Checkpoint de investigacion sin model card funcional |
 | Qwen2 1.5B | ~1,5B | 32.768 tokens (segun version) | Apache 2.0 (segun version) | Amplia | Referencia de arquitectura, con documentacion completa |
 | Qwen2.5 1.5B | ~1,5B | 32.768 tokens (segun version) | Apache 2.0 (segun version) | Amplia | Version posterior con mejoras en codigo y matematicas |
 | Llama 3.2 1B | ~1,24B | 128.000 tokens | Llama 3.2 Community License | Amplia | Alternativa con contexto largo y licencia con restricciones |
@@ -86,5 +86,5 @@ La comparacion se limita a tamano y categoria, ya que no hay datos de rendimient
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/davidheineman/rlve-archive-mopd-sweep-n16-learned-teachers-202610-00-cantorexpansion-cd8098f58cc4
+- Hugging Face: https://huggingface.co/davidheineman/rlve-archive-mopd-sweep-n16-learned-teachers-202610-00-cantorexpansion-cd8098f58cc4
 - No se han encontrado papers, blogs, repositorios ni demos adicionales relevantes en la busqueda web.

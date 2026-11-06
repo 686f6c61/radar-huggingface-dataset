@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `beaunix/FOOD41EfficientNetV2-Small` es un modelo de clasificación de imágenes publicado en HuggingFace por el usuario beaunix (Bryan David Castano). Según su nombre, parece tratarse de un fine-tuning de la arquitectura EfficientNetV2-Small sobre el dataset FOOD-41, empleado habitualmente en tareas de reconocimiento de alimentos. Sin embargo, la model card publicada no incluye ninguna descripción técnica, datos de entrenamiento ni métricas de evaluación, por lo que la información disponible es sumamente limitada.
+El modelo `beaunix/FOOD41EfficientNetV2-Small` es un modelo de clasificación de imágenes publicado en Hugging Face por el usuario beaunix (Bryan David Castano). Según su nombre, parece tratarse de un fine-tuning de la arquitectura EfficientNetV2-Small sobre el dataset FOOD-41, empleado habitualmente en tareas de reconocimiento de alimentos. Sin embargo, la model card publicada no incluye ninguna descripción técnica, datos de entrenamiento ni métricas de evaluación, por lo que la información disponible es sumamente limitada.
 
-El modelo está disponible con licencia MIT, lo que permite su uso comercial y modificación sin restricciones. No se especifica el pipeline de HuggingFace, ni los idiomas soportados, ni el formato de los pesos, ni los detalles de cuantización. Tampoco se han publicado benchmarks que permitan evaluar su rendimiento real frente a otros modelos de la misma categoría.
+El modelo está disponible con licencia MIT, lo que permite su uso comercial y modificación sin restricciones. No se especifica el pipeline de Hugging Face, ni los idiomas soportados, ni el formato de los pesos, ni los detalles de cuantización. Tampoco se han publicado benchmarks que permitan evaluar su rendimiento real frente a otros modelos de la misma categoría.
 
 Por el momento, este repositorio no cuenta con descargas ni valoraciones de la comunidad, lo que sugiere que se trata de un proyecto experimental o de demostración. Cualquier uso en producción debería ir precedido de una validación exhaustiva.
 
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 - No se dispone de información publicada sobre requisitos de hardware específicos para este modelo.
 - Dado que el nombre sugiere un EfficientNetV2-Small, la arquitectura es ligera y está diseñada para ejecutarse en GPUs modestas o incluso en CPUs, pero sin datos confirmados no es posible proporcionar una estimación fiable.
 - No se indican requisitos de VRAM ni GPUs recomendadas.
-- No se ofrece documentación sobre opciones de despliegue como vLLM, llama.cpp, Ollama o TGI. Al ser un modelo de visión, la integración típica sería mediante la API de Transformers de HuggingFace, pero no está confirmado.
+- No se ofrece documentación sobre opciones de despliegue como vLLM, llama.cpp, Ollama o TGI. Al ser un modelo de visión, la integración típica sería mediante la API de Transformers de Hugging Face, pero no está confirmado.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares

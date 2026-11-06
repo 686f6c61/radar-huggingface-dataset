@@ -21,7 +21,7 @@ El proyecto incluye variaciones de configuración para cada idioma: vocabularios
 
 ## Arquitectura y entrenamiento
 
-Los modelos son transformers decoder-only implementados desde cero en PyTorch, sin usar `nn.Transformer*`, sin clases de modelo de HuggingFace y sin mecanismos de atención preconstruidos. La atención se implementa manualmente y la arquitectura es convencional: 11 o 12 capas según la ejecución, con codificación posicional RoPE o sin codificación posicional en una de las variantes. El vocabulario se compone de 12.000 o 16.000 tokens, y el número total de parámetros oscila entre 25.625.856 y 25.860.864.
+Los modelos son transformers decoder-only implementados desde cero en PyTorch, sin usar `nn.Transformer*`, sin clases de modelo de Hugging Face y sin mecanismos de atención preconstruidos. La atención se implementa manualmente y la arquitectura es convencional: 11 o 12 capas según la ejecución, con codificación posicional RoPE o sin codificación posicional en una de las variantes. El vocabulario se compone de 12.000 o 16.000 tokens, y el número total de parámetros oscila entre 25.625.856 y 25.860.864.
 
 El entrenamiento se realizó durante una época sobre corpus monolingües de gujarati y nepalí, con un número de pasos que varía entre 14.962 y 16.418. No se menciona el tamaño exacto del corpus ni el número de tokens de entrenamiento. Tampoco se indica que se haya aplicado RLHF, DPO ni ninguna técnica de alineación posterior al entrenamiento. Cada ejecución genera dos checkpoints: `best.pt`, con la menor pérdida de validación, y `latest.pt`, con el estado al final de la ejecución. Ambos son reanudables y contienen tanto los pesos como los estados de optimización, schedulers, escaladores de gradientes, el paso de entrenamiento, el recuento de tokens, las configuraciones y los estados de los generadores aleatorios.
 
@@ -82,6 +82,6 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hardik300/LMA_mini_project
-- Repositorio alternativo en HuggingFace con contenido relacionado: https://huggingface.co/adityamishraog/lma_mini_project_models
+- Hugging Face: https://huggingface.co/hardik300/LMA_mini_project
+- Repositorio alternativo en Hugging Face con contenido relacionado: https://huggingface.co/adityamishraog/lma_mini_project_models
 - Nota: la model card menciona un repositorio del proyecto que contiene el codigo, los tokenizadores, las configuraciones y los registros de entrenamiento, pero no se proporciona una URL explicita en la informacion disponible.

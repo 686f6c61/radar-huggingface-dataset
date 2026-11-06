@@ -20,7 +20,7 @@ Es relevante ahora como material de investigación reproducible sobre deriva de 
 | Idiomas soportados | No disponible |
 | Licencia | No disponible |
 | Formato de pesos | safetensors (adaptador PEFT/LoRA); libreria declarada `peft` |
-| Tamano del repositorio | 16,9 GB (dato de HuggingFace; no se detalla su desglose entre adaptador, constitucion y metadatos) |
+| Tamano del repositorio | 16,9 GB (dato de Hugging Face; no se detalla su desglose entre adaptador, constitucion y metadatos) |
 | Modelo base | `thinkingmachines/Inkling-Small` |
 | Linaje | `inkling-anth-gen-mid`, generacion g2, rama b3 |
 | Configuracion de servicio | Renderer `tml_v0`, reasoning OFF, effort 0.0 |
@@ -73,7 +73,7 @@ No se dispone de datos comparativos publicados. La comparacion solo puede plante
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `ct-inkling-anth-gen-mid-g2-b3` | Adaptador LoRA (r=64, all-linear) sobre Inkling-Small | No disponible | 8192 tokens en entrenamiento | No disponible | Publico en HuggingFace, 0 descargas |
+| `ct-inkling-anth-gen-mid-g2-b3` | Adaptador LoRA (r=64, all-linear) sobre Inkling-Small | No disponible | 8192 tokens en entrenamiento | No disponible | Publico en Hugging Face, 0 descargas |
 | `thinkingmachines/Inkling-Small` | Modelo base completo | No disponible | No disponible | No disponible | Referenciado como base, datos no verificados en la informacion disponible |
 | Otras ramas de la misma cadena (`b1`, `b2`, generaciones `g0`/`g1`) | Adaptadores LoRA del mismo programa | Equivalentes por receta (r=64) | 8192 tokens en entrenamiento | No disponible | No se ha confirmado su existencia ni su URL en la informacion proporcionada |
 | Alternativas de la misma categoria (adaptadores de alineacion o modelos pequenos de proposito general) | No disponible | No disponible | No disponible | No disponible | No disponible |
@@ -83,7 +83,7 @@ No se identifican modelos comparables con datos verificables en la informacion d
 ## Limitaciones y advertencias
 
 - **No es un modelo autonomo**: requiere descargar y cargar `thinkingmachines/Inkling-Small` por separado; sin el modelo base el adaptador no produce ninguna salida.
-- **Licencia no declarada**: al no especificarse licencia ni en HuggingFace ni en la model card, **no hay autorizacion explicita de uso comercial**. Cualquier uso en produccion debe considerar este vacio legal y contactar con el autor.
+- **Licencia no declarada**: al no especificarse licencia ni en Hugging Face ni en la model card, **no hay autorizacion explicita de uso comercial**. Cualquier uso en produccion debe considerar este vacio legal y contactar con el autor.
 - **Sin evaluacion publicada**: no hay benchmarks, evaluaciones de seguridad ni analisis de sesgos. Es un artefacto de investigacion, no un modelo validado.
 - **Riesgo de alucinacion**: desconocido y no medido. Un adaptador entrenado sobre un corpus sintetico de documentos normativos puede generar afirmaciones plausibles sobre principios o politicas sin base factual.
 - **Sesgos conocidos**: no documentados. El proceso de seleccion de la constitucion semilla mediante medoide de embedding puede favorecer formulaciones "centrales" y penalizar posturas minoritarias dentro del pool autogenerado, un sesgo de agregacion inherente al metodo.
@@ -97,7 +97,7 @@ No se identifican modelos comparables con datos verificables en la informacion d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arianaazarbal/ct-inkling-anth-gen-mid-g2-b3
+- Modelo en Hugging Face: https://huggingface.co/arianaazarbal/ct-inkling-anth-gen-mid-g2-b3
 - Modelo base: https://huggingface.co/thinkingmachines/Inkling-Small
 - Constitucion semilla incluida en el repositorio: `training_seed_constitution.md`
 - Registro de exportacion: `tinker_meta.json`

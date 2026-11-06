@@ -103,7 +103,7 @@ Sarvam-105B destaca en conocimiento general (MMLU 90.6), matematicas (AIME 25 co
 
 ## Enlaces
 
-- Repositorio HuggingFace del fine-tune: https://huggingface.co/Vijaythunder/pesumMoli
+- Repositorio Hugging Face del fine-tune: https://huggingface.co/Vijaythunder/pesumMoli
 - Modelo base Sarvam-105B: https://huggingface.co/sarvamai/sarvam-105b
 - Modelo menor Sarvam-30B: https://huggingface.co/sarvamai/sarvam-30b/
 - Blog de Sarvam AI sobre Sarvam-30B y 105B: https://www.sarvam.ai/blogs/sarvam-30b-105b

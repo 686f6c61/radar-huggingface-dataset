@@ -34,7 +34,7 @@ La innovación principal de SmolVLA es su eficiencia computacional: reduce el co
 - Control en tiempo real: diseñado para ejecución en tiempo real a 30 FPS, adecuado para control de robots SO-101.
 - Fine-tuning específico: capacidad de adaptación a tareas concretas mediante fine-tuning con datasets de imitación, como se demuestra en este modelo.
 - Despliegue en hardware de consumo: gracias a su tamaño compacto (450M parámetros), puede ejecutarse en GPU de gama media, lo que facilita prototipado y experimentación.
-- Integración con LeRobot: compatible con el ecosistema de HuggingFace LeRobot para entrenamiento, evaluación y despliegue.
+- Integración con LeRobot: compatible con el ecosistema de Hugging Face LeRobot para entrenamiento, evaluación y despliegue.
 
 ## Casos de uso
 
@@ -72,7 +72,7 @@ No se dispone de información sobre modelos comparables en la información propo
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Im-mortalility/train_multicolor
+- Hugging Face del modelo: https://huggingface.co/Im-mortalility/train_multicolor
 - Paper de SmolVLA: https://huggingface.co/papers/2506.01844
 - Dataset de entrenamiento: https://huggingface.co/datasets/vraiRobotLab/multicolor_block_tiles
 - Documentación de LeRobot sobre SmolVLA: https://huggingface.co/docs/lerobot/main/en/smolvla

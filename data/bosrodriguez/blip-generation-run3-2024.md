@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Bosrodriguez/blip-generation-run3-2024` es un prototipo de investigación publicado en HuggingFace por el usuario Bosrodriguez, etiquetado como BLIP y orientado a tareas de generación. No se trata de un modelo entrenado ni de un checkpoint validado: la propia model card lo describe como un punto de partida experimental cuyo fichero `model.safetensors` es únicamente una inicialización válida para pruebas de humo (*smoke tests*), no un modelo con pesos aprendidos. El repositorio ocupa 0,0 GB y acumula 16 descargas y 0 likes desde su creación el 3 de octubre de 2026, lo que refleja su carácter marginal dentro del ecosistema.
+`Bosrodriguez/blip-generation-run3-2024` es un prototipo de investigación publicado en Hugging Face por el usuario Bosrodriguez, etiquetado como BLIP y orientado a tareas de generación. No se trata de un modelo entrenado ni de un checkpoint validado: la propia model card lo describe como un punto de partida experimental cuyo fichero `model.safetensors` es únicamente una inicialización válida para pruebas de humo (*smoke tests*), no un modelo con pesos aprendidos. El repositorio ocupa 0,0 GB y acumula 16 descargas y 0 likes desde su creación el 3 de octubre de 2026, lo que refleja su carácter marginal dentro del ecosistema.
 
 El dato más llamativo es la discrepancia entre la escala declarada y el tamaño real: la configuración se etiqueta como "huge", pero el recuento efectivo de parámetros en `model.safetensors` es de 24.832 parámetros totales, un orden de magnitud propio de un juguete de depuración más que de un modelo multimodal. El repositorio declara atención dilatada, fusión con compuertas (*gated fusion*), activación swish y normalización layernorm, junto con una receta de entrenamiento por defecto basada en Adafactor con planificador polinómico.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Bosrodriguez/blip-generation-run3-2024 | 24.832 (recuento real) | no disponible | sin benchmarks; checkpoint sin entrenar | apache-2.0 | HuggingFace (repositorio propio) |
-| BLIP (Salesforce) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada; marco VLP con captioner y filtro de ruido | no disponible en la informacion proporcionada | HuggingFace (documentacion de Transformers) |
+| Bosrodriguez/blip-generation-run3-2024 | 24.832 (recuento real) | no disponible | sin benchmarks; checkpoint sin entrenar | apache-2.0 | Hugging Face (repositorio propio) |
+| BLIP (Salesforce) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada; marco VLP con captioner y filtro de ruido | no disponible en la informacion proporcionada | Hugging Face (documentacion de Transformers) |
 | xGen-MM (BLIP-3) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | evaluado en tareas de imagen unica y multiple segun el articulo | no disponible en la informacion proporcionada | familia de modelos abiertos de Salesforce |
-| BLIP3o | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible | no disponible | organizacion en HuggingFace |
+| BLIP3o | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible | no disponible | organizacion en Hugging Face |
 
 La comparación cuantitativa no es posible con los datos disponibles: ninguno de los modelos de referencia publica en la información recuperada sus recuentos de parámetros ni sus puntuaciones. La diferencia cualitativa relevante es que BLIP, xGen-MM (BLIP-3) y BLIP3o son proyectos entrenados y documentados, mientras que este repositorio es una implementación personalizada con inicialización sin entrenar.
 
@@ -83,9 +83,9 @@ La comparación cuantitativa no es posible con los datos disponibles: ninguno de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Bosrodriguez/blip-generation-run3-2024
+- Modelo en Hugging Face: https://huggingface.co/Bosrodriguez/blip-generation-run3-2024
 - Documentación de BLIP en Transformers: https://huggingface.co/docs/transformers/model_doc/blip
 - Artículo original de BLIP (arXiv 2201.12086): https://arxiv.org/abs/2201.12086
 - Artículo de xGen-MM (BLIP-3): https://arxiv.org/html/2408.08872v1
-- Organización BLIP3o en HuggingFace: https://huggingface.co/BLIP3o
+- Organización BLIP3o en Hugging Face: https://huggingface.co/BLIP3o
 - Introducción a BLIP (GeeksforGeeks): https://www.geeksforgeeks.org/artificial-intelligence/understanding-blip-a-huggingface-model/

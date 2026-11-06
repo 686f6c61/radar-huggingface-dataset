@@ -83,7 +83,7 @@ No se dispone de datos comparativos de rendimiento (tasas de aceptacion, speedup
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/magnitudedev/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-LiLiCorr-GGUF
+- Repositorio Hugging Face: https://huggingface.co/magnitudedev/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-LiLiCorr-GGUF
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-LiLiCorr
 - Modelo objetivo (GGUF): https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-GGUF
 - Fuente GGUF cuantizada: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-LiLiCorr-GGUF/tree/182d2987939e12f458298b5d5f6ef98912f4ad6c

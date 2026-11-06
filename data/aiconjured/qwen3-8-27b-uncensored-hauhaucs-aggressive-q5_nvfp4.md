@@ -107,7 +107,7 @@ Frente a otros modelos abiertos de categoria similar (Llama, Mistral, Gemma de r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AIconjured/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-Q5_NVFP4
+- Modelo en Hugging Face: https://huggingface.co/AIconjured/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-Q5_NVFP4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Variante sin censura de origen y sus cuantizados: https://huggingface.co/HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF
 - Paper, blog, repositorio o demo adicionales: no disponible. La busqueda web no devolvio resultados tecnicos relevantes sobre este modelo.

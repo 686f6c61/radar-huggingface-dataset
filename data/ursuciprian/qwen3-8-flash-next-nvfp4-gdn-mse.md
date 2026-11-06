@@ -98,9 +98,9 @@ No se dispone de datos de benchmarks públicos que permitan comparar capacidades
 
 | Modelo | Parametros totales | Cuantizacion de pesos GDN | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ursuciprian/Qwen3.8-Flash-Next-NVFP4-GDN-MSE | 91.638.563.731 | NVFP4 W4A16 (MSE) | no disponible | qwen-community-1.0 | HuggingFace, 0 descargas |
-| local-inference-lab/Qwen3.8-Flash-Next-NVFP4 | no disponible | MXFP8 (congelado) | no disponible | qwen-community-1.0 | HuggingFace, checkpoint base |
-| Qwen/Qwen3.8-Flash-Next | no disponible | BF16 (sin cuantizar) | no disponible | qwen-community-1.0 | HuggingFace, modelo origen |
+| ursuciprian/Qwen3.8-Flash-Next-NVFP4-GDN-MSE | 91.638.563.731 | NVFP4 W4A16 (MSE) | no disponible | qwen-community-1.0 | Hugging Face, 0 descargas |
+| local-inference-lab/Qwen3.8-Flash-Next-NVFP4 | no disponible | MXFP8 (congelado) | no disponible | qwen-community-1.0 | Hugging Face, checkpoint base |
+| Qwen/Qwen3.8-Flash-Next | no disponible | BF16 (sin cuantizar) | no disponible | qwen-community-1.0 | Hugging Face, modelo origen |
 
 La diferencia medible entre la primera y la segunda fila se limita al error relativo medio de peso y a la velocidad: 0,0877 de error frente a BF16 con escalas elegidas por MSE, frente a 0,0937 con absmax simple, y ganancias de decodificación de entre el 4,4 % y el 7,8 % según la celda.
 
@@ -120,7 +120,7 @@ La diferencia medible entre la primera y la segunda fila se limita al error rela
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/ursuciprian/Qwen3.8-Flash-Next-NVFP4-GDN-MSE
+- Ficha en Hugging Face: https://huggingface.co/ursuciprian/Qwen3.8-Flash-Next-NVFP4-GDN-MSE
 - Modelo base cuantizado: https://huggingface.co/local-inference-lab/Qwen3.8-Flash-Next-NVFP4
 - Modelo origen en BF16: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio de la receta de despliegue: https://github.com/ursuciprian/qwen3.8-flash-next-dgx-spark-tp-2

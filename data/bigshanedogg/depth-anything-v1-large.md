@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Arquitectura | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Depth-Anything-V1-Large (este port) | 335.315.649 | DPT + DINOv2 ViT-L/14 | no aplica | Apache-2.0 | HuggingFace, requiere trust_remote_code |
-| LiheYoung/depth_anything_vitl14 (original) | no disponible en la informacion | DPT + DINOv2 ViT-L/14 | no aplica | Apache-2.0 (segun repo original) | HuggingFace, pesos pytorch_model.bin |
-| LiheYoung/depth-anything-large-hf | no disponible en la informacion | DPT + DINOv2 ViT-L/14 | no aplica | Apache-2.0 | HuggingFace, conversion oficial a transformers |
+| Depth-Anything-V1-Large (este port) | 335.315.649 | DPT + DINOv2 ViT-L/14 | no aplica | Apache-2.0 | Hugging Face, requiere trust_remote_code |
+| LiheYoung/depth_anything_vitl14 (original) | no disponible en la informacion | DPT + DINOv2 ViT-L/14 | no aplica | Apache-2.0 (segun repo original) | Hugging Face, pesos pytorch_model.bin |
+| LiheYoung/depth-anything-large-hf | no disponible en la informacion | DPT + DINOv2 ViT-L/14 | no aplica | Apache-2.0 | Hugging Face, conversion oficial a transformers |
 
 No se dispone en la informacion proporcionada de datos de rendimiento comparativo (AbsRel, RMSE, delta) entre estas variantes ni frente a alternativas como MiDaS o ZoeDepth, por lo que la comparativa se limita a parametros, licencia y disponibilidad.
 
@@ -89,7 +89,7 @@ No se dispone en la informacion proporcionada de datos de rendimiento comparativ
 
 ## Enlaces
 
-- HuggingFace (este port): https://huggingface.co/bigshanedogg/Depth-Anything-V1-Large
+- Hugging Face (este port): https://huggingface.co/bigshanedogg/Depth-Anything-V1-Large
 - Modelo base: https://huggingface.co/LiheYoung/depth_anything_vitl14
 - Conversion oficial a transformers: https://huggingface.co/LiheYoung/depth-anything-large-hf
 - Repositorio original: https://github.com/LiheYoung/Depth-Anything

@@ -78,9 +78,9 @@ Comparativa frente a modelos API en BSTRB vídeo (BoW F1): Hawkeye-4B obtiene 0,
 
 | Modelo | Parametros | Contexto | BSTRB vídeo BoW F1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Hawkeye-4B | 4,44B | no disponible | 0,728 | Apache-2.0 | HuggingFace (transformers) |
-| Qwen3-VL-4B-Instruct (base) | 4B | no disponible | 0,627 | Apache-2.0 | HuggingFace |
-| Qwen3-VL-235B | 235B (no disponible si MoE) | no disponible | 0,726 | no disponible | API / HuggingFace |
+| Hawkeye-4B | 4,44B | no disponible | 0,728 | Apache-2.0 | Hugging Face (transformers) |
+| Qwen3-VL-4B-Instruct (base) | 4B | no disponible | 0,627 | Apache-2.0 | Hugging Face |
+| Qwen3-VL-235B | 235B (no disponible si MoE) | no disponible | 0,726 | no disponible | API / Hugging Face |
 | Kimi K2.6 | no disponible | no disponible | 0,723 | no disponible | API |
 | GPT-6 Astra | no disponible | no disponible | 0,709 | propietaria | API |
 
@@ -99,7 +99,7 @@ Hawkeye-4B iguala o supera en BSTRB vídeo a modelos API de escala muy superior 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/byron123t/Hawkeye-4B
+- Modelo en Hugging Face: https://huggingface.co/byron123t/Hawkeye-4B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - Dataset BSTRB: https://huggingface.co/datasets/byron123t/BSTRB
 - Código: https://github.com/byron123t/hawkeye

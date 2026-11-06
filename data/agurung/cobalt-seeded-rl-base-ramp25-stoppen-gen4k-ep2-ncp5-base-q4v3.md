@@ -24,7 +24,7 @@ La relevancia de esta publicación es metodológica más que de producto: docume
 | Metodo de ajuste | GRPO con OpenRLHF, sin semilla de SFT |
 | Revision recomendada | `main` (el modelo esta en la raiz del repositorio, sin subcarpeta) |
 | Tamano del repositorio | 17,7 GB |
-| Fecha de creacion del repositorio | 2026-09-18 (segun metadatos de HuggingFace) |
+| Fecha de creacion del repositorio | 2026-09-18 (segun metadatos de Hugging Face) |
 | Ultima actualizacion | 2026-09-18 |
 
 ## Arquitectura y entrenamiento
@@ -86,7 +86,7 @@ La comparacion se realiza con modelos de tamano y categoria equivalentes. Los da
 
 | Modelo | Parametros | Contexto | Licencia | Formato y disponibilidad | Rendimiento comparado |
 |---|---|---|---|---|---|
-| `agurung/cobalt-...-base-q4v3` (este modelo) | 4,41 mil millones | No disponible (el base declara 262.144 tokens) | No disponible | safetensors, `main` en HuggingFace, compatible con vLLM y TGI | No disponible |
+| `agurung/cobalt-...-base-q4v3` (este modelo) | 4,41 mil millones | No disponible (el base declara 262.144 tokens) | No disponible | safetensors, `main` en Hugging Face, compatible con vLLM y TGI | No disponible |
 | `Qwen/Qwen3-4B-Instruct-2507` (modelo base) | 4,41 mil millones | 262.144 tokens segun documentacion publica de Qwen | Apache-2.0 | safetensors, GGUF y multiples cuantizaciones de la comunidad | No comparable directamente; este checkpoint deriva de el |
 | `meta-llama/Llama-3.2-3B-Instruct` | 3,21 mil millones | 128.000 tokens segun documentacion publica de Meta | Licencia comunitaria Llama 3.2 | safetensors, GGUF de la comunidad | No disponible |
 | `google/gemma-3-4b-it` | 4 mil millones aproximadamente | 128.000 tokens segun documentacion publica de Google | Licencia Gemma | safetensors, GGUF de la comunidad | No disponible |
@@ -110,7 +110,7 @@ Diferencias destacables: frente al modelo base, este checkpoint incorpora un aju
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-base-q4v3
+- Modelo en Hugging Face: https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-base-q4v3
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Repositorio de OpenRLHF (framework de entrenamiento citado en la model card): https://github.com/OpenRLHF/OpenRLHF
 - Registro de entrenamiento en Weights & Biases: proyecto `eaiexp-paper-final`, ejecucion `seeded_rl_base_ramp25-stoppen-gen4k-ep2-ncp5-base-q4v3` (no se proporciona URL directa en la model card)

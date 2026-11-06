@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Von es un modelo de decisión de tipo "system-one" publicado por el usuario `ollaya-dev` en HuggingFace. No se trata de un modelo de pesos originales: este repositorio contiene únicamente los artefactos derivados que el runtime Ollaya necesita para ejecutar el modelo `wfzyx/von` de Victor Hugo Panisa. Concretamente, incluye una exportación a ONNX en formato fp32 (`1.1/model-fp32.onnx`), un fichero `decision.json` con la disposición de la secuencia y los tokens especiales, y un fichero `calibration.json` con las temperaturas de calibración. Los pesos reales no se distribuyen aquí: los grafos ONNX referencian los ficheros de pesos del autor original por desplazamiento de bytes, de modo que `ollaya pull` los descarga desde el repositorio upstream, fijados a un commit y verificados por sha256.
+Von es un modelo de decisión de tipo "system-one" publicado por el usuario `ollaya-dev` en Hugging Face. No se trata de un modelo de pesos originales: este repositorio contiene únicamente los artefactos derivados que el runtime Ollaya necesita para ejecutar el modelo `wfzyx/von` de Victor Hugo Panisa. Concretamente, incluye una exportación a ONNX en formato fp32 (`1.1/model-fp32.onnx`), un fichero `decision.json` con la disposición de la secuencia y los tokens especiales, y un fichero `calibration.json` con las temperaturas de calibración. Los pesos reales no se distribuyen aquí: los grafos ONNX referencian los ficheros de pesos del autor original por desplazamiento de bytes, de modo que `ollaya pull` los descarga desde el repositorio upstream, fijados a un commit y verificados por sha256.
 
-Ollaya se presenta como un equivalente a Ollama pero para modelos de decisión: en lugar de generar texto libre, recibe preguntas tipadas y devuelve respuestas calibradas. El pipeline declarado en HuggingFace es `text-classification`, y el modelo se ejecuta localmente tanto en CPU como en CUDA a partir del grafo fp32. La etiqueta `decision-model` y el calificativo `system-one` indican que el modelo está pensado para resolver decisiones de forma directa y rápida, leyendo la respuesta a partir de los logits asociados a letras de opción en una única pasada hacia delante.
+Ollaya se presenta como un equivalente a Ollama pero para modelos de decisión: en lugar de generar texto libre, recibe preguntas tipadas y devuelve respuestas calibradas. El pipeline declarado en Hugging Face es `text-classification`, y el modelo se ejecuta localmente tanto en CPU como en CUDA a partir del grafo fp32. La etiqueta `decision-model` y el calificativo `system-one` indican que el modelo está pensado para resolver decisiones de forma directa y rápida, leyendo la respuesta a partir de los logits asociados a letras de opción en una única pasada hacia delante.
 
-La relevancia de esta ficha es doble. Por un lado, documenta un patrón de empaquetado poco habitual en HuggingFace: un repositorio que no redistribuye pesos, sino que apunta al upstream y valida integridad por hash. Por otro, el autor publica un informe de paridad entre el runtime Rust de Ollaya y el modelo Von original en float64, sobre 485 preguntas y 653 filas, con decisiones idénticas y desviaciones de logits de hasta 4,4e-4. Esa verificación de equivalencia es el dato técnico más concreto disponible sobre el modelo.
+La relevancia de esta ficha es doble. Por un lado, documenta un patrón de empaquetado poco habitual en Hugging Face: un repositorio que no redistribuye pesos, sino que apunta al upstream y valida integridad por hash. Por otro, el autor publica un informe de paridad entre el runtime Rust de Ollaya y el modelo Von original en float64, sobre 485 preguntas y 653 filas, con decisiones idénticas y desviaciones de logits de hasta 4,4e-4. Esa verificación de equivalencia es el dato técnico más concreto disponible sobre el modelo.
 
 ## Especificaciones tecnicas
 
@@ -86,9 +86,9 @@ La familia Ollaya incluye otros modelos de decision y clasificacion (Laya, decid
 
 | Modelo | Tipo | Base | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `ollaya-dev/von` | Modelo de decision (system-one) | `wfzyx/von` de Victor Hugo Panisa | no disponible | no disponible | Apache-2.0 | HuggingFace; pesos en el repositorio upstream |
+| `ollaya-dev/von` | Modelo de decision (system-one) | `wfzyx/von` de Victor Hugo Panisa | no disponible | no disponible | Apache-2.0 | Hugging Face; pesos en el repositorio upstream |
 | `decider` | Modelo de decision | Qwen3.5 de Mapika | no disponible | no disponible | no disponible | Ollaya; presentado como el modelo de decision mas preciso del catalogo |
-| `ollaya-dev/nli` | Clasificacion / inferencia de lenguaje natural | no disponible | no disponible | no disponible | no disponible | HuggingFace; mismo patron de pesos referenciados por byte offset |
+| `ollaya-dev/nli` | Clasificacion / inferencia de lenguaje natural | no disponible | no disponible | no disponible | no disponible | Hugging Face; mismo patron de pesos referenciados por byte offset |
 | GLiClass | Clasificacion | no disponible | no disponible | no disponible | no disponible | Ollaya |
 
 No se dispone de datos comparativos de rendimiento entre estos modelos en la informacion proporcionada.
@@ -102,12 +102,12 @@ No se dispone de datos comparativos de rendimiento entre estos modelos en la inf
 - Al ser un modelo de decision y no un generador, no produce texto libre; no debe emplearse para tareas generativas.
 - Riesgo de alucinacion y de sesgos: no evaluado en la informacion disponible. En modelos de clasificacion calibrados, el riesgo se manifiesta como confianza mal calibrada en entradas fuera de distribucion.
 - Las probabilidades de salida dependen de las temperaturas de `calibration.json`; modificarlas sin recalibrar invalida la interpretacion de los umbrales.
-- La fecha de creacion registrada en HuggingFace (2026-09-25) es posterior a la fecha de consulta, lo que constituye una anomalia de los metadatos que conviene verificar.
+- La fecha de creacion registrada en Hugging Face (2026-09-25) es posterior a la fecha de consulta, lo que constituye una anomalia de los metadatos que conviene verificar.
 - Licencia Apache-2.0, que permite uso comercial, modificacion y redistribucion, siempre que se conserve el aviso de licencia y se documenten los cambios. Ollaya tambien se distribuye bajo Apache-2.0.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ollaya-dev/von
+- Modelo en Hugging Face: https://huggingface.co/ollaya-dev/von
 - Modelo base original: https://huggingface.co/wfzyx/von
 - Revision fijada del modelo base: https://huggingface.co/wfzyx/von/tree/d8bb5e0745d8ee1fb65d536d6d4892d54d5a93fd
 - Repositorio GitHub de Ollaya: https://github.com/ollaya-dev/ollaya

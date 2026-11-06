@@ -70,8 +70,8 @@ No se dispone de datos de benchmarks comparativos publicados en la información 
 
 | Modelo | Parámetros | Contexto de prompt | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HomeIMG-641M-PL-stage1 | 641M (denoiser) + 72,1M (refiner) + 4B (text encoder congelado) | 255 tokens | pl, en | Apache 2.0 | HuggingFace, requiere custom_code |
-| HomeIMG-641M-epoch15 | 641M (denoiser) + 35,7M (refiner) + Slayer149 | no disponible | en (principalmente) | no disponible en la información | HuggingFace |
+| HomeIMG-641M-PL-stage1 | 641M (denoiser) + 72,1M (refiner) + 4B (text encoder congelado) | 255 tokens | pl, en | Apache 2.0 | Hugging Face, requiere custom_code |
+| HomeIMG-641M-epoch15 | 641M (denoiser) + 35,7M (refiner) + Slayer149 | no disponible | en (principalmente) | no disponible en la información | Hugging Face |
 | SDXL-Turbo / SD 1.5 (referencia de categoría) | ~1B / ~860M | 77 tokens (SD1.5), 77+ tokens (SDXL) | en (principalmente) | licencias variables | amplia disponibilidad y soporte en diffusers |
 
 La comparación con modelos comerciales o de mayor tamaño (FLUX, SD3) no resulta significativa por diferencia de escala y resolución; no se dispone de datos de rendimiento para establecer comparaciones cuantitativas.
@@ -90,7 +90,7 @@ La comparación con modelos comerciales o de mayor tamaño (FLUX, SD3) no result
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cpral/HomeIMG-641M-PL-stage1
+- Modelo en Hugging Face: https://huggingface.co/cpral/HomeIMG-641M-PL-stage1
 - Modelo base (Poziomka-Baza): https://huggingface.co/cpral/Poziomka-Baza-2026-09-05
 - Modelo predecesor (HomeIMG-641M-epoch15): https://huggingface.co/cpral/HomeIMG-641M-epoch15
 - Dataset de latentes: https://huggingface.co/datasets/QLNI/FLUX-Reason-6M-flux2-latents

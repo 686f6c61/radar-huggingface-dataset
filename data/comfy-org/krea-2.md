@@ -69,7 +69,7 @@ No se dispone de informacion suficiente para realizar una comparativa cuantitati
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Comfy-Org/Krea-2
+- Repositorio Hugging Face: https://huggingface.co/Comfy-Org/Krea-2
 - Repositorio original Krea-2-Raw: https://huggingface.co/krea/Krea-2-Raw
 - Repositorio original Krea-2-Turbo: https://huggingface.co/krea/Krea-2-Turbo
 - LoRAs originales: https://huggingface.co/krea/Krea-2-LoRA-darkbrush (y similares para cada estilo)

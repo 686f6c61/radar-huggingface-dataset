@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Trey2016/gemma-3-1b-aliberated es una publicacion de pesos en el repositorio HuggingFace del usuario Trey2016, derivada del modelo Gemma 3 de 1.000 millones de parametros de Google DeepMind. El recuento real de parametros notificado por el repositorio a partir de los pesos safetensors es de 999.885.952 (aproximadamente 1.000 millones). El repositorio se distribuye principalmente en formato GGUF, segun las etiquetas declaradas, lo que lo orienta a inferencia local mediante llama.cpp u Ollama, y no incluye pipeline declarado ni idiomas documentados.
+Trey2016/gemma-3-1b-aliberated es una publicacion de pesos en el repositorio Hugging Face del usuario Trey2016, derivada del modelo Gemma 3 de 1.000 millones de parametros de Google DeepMind. El recuento real de parametros notificado por el repositorio a partir de los pesos safetensors es de 999.885.952 (aproximadamente 1.000 millones). El repositorio se distribuye principalmente en formato GGUF, segun las etiquetas declaradas, lo que lo orienta a inferencia local mediante llama.cpp u Ollama, y no incluye pipeline declarado ni idiomas documentados.
 
 El sufijo "aliberated" del nombre remite a la practica comunmente conocida como "abliteration", consistente en modificar los pesos de un modelo alineado para reducir el rechazo de peticiones. Se trata de una inferencia a partir del nombre del repositorio, no de un dato confirmado en la informacion disponible: la model card publicada se limita a declarar `license: gemma` y no documenta el proceso de entrenamiento, los datos utilizados ni ninguna evaluacion.
 
@@ -91,7 +91,7 @@ No hay datos de rendimiento publicados para este repositorio, por lo que la comp
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Trey2016/gemma-3-1b-aliberated
+- Repositorio Hugging Face: https://huggingface.co/Trey2016/gemma-3-1b-aliberated
 - Modelo base Gemma 3 (Google DeepMind): no disponible en las fuentes proporcionadas
 - Paper o documentacion tecnica del autor: no disponible
 - Blog o articulo de referencia: no disponible

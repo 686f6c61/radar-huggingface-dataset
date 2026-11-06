@@ -18,7 +18,7 @@ La propuesta del fine-tune subyacente es la eficiencia de razonamiento: según U
 | Longitud de contexto | 262 144 tokens de ventana entrenada; 49 152 verificados con especulacion MTP; 98 304 con especulacion desactivada (prefills profundos agotan la VRAM en 20 GB) |
 | Tipos de cuantizacion | MQ4 (`MQ4G256V2`) a 4,256 bits/peso; el mismo fine-tune existe como GGUF Q4_K_S (16 363 513 536 bytes) |
 | Idiomas soportados | No disponible |
-| Licencia | `swift-open-license-v1.0` (etiquetada como `other` en HuggingFace) |
+| Licencia | `swift-open-license-v1.0` (etiquetada como `other` en Hugging Face) |
 | Formato de pesos | `.mq4` (runtime hipfire) + sidecar `.mtp` para la cabeza de prediccion multi-token; no compatible con llama.cpp |
 
 Otros datos del repositorio: tronco de 14,98 GiB (14 980 361 216 bytes), cabeza MTP de 225 716 224 bytes, tamano total del repo 15,2 GB, 510 tensores de tronco verificados.
@@ -110,7 +110,7 @@ No se dispone de datos de benchmarks de calidad que permitan comparar estos chec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/datayoda/Swift-1.5-Qwen3.8-27B-hipfire-MQ4
+- Modelo en Hugging Face: https://huggingface.co/datayoda/Swift-1.5-Qwen3.8-27B-hipfire-MQ4
 - Modelo base del fine-tune: https://huggingface.co/datayoda/Swift-1.5-Qwen3.8-27B
 - Variante GGUF Q4_K_S del mismo fine-tune: https://huggingface.co/datayoda/Swift-1.5-Qwen3.8-27B-GGUF
 - Runtime hipfire: https://github.com/MunGress/hipfire

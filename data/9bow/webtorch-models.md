@@ -67,7 +67,7 @@ No se dispone de información comparativa en los datos proporcionados. Existen a
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/9bow/webtorch-models
+- Hugging Face: https://huggingface.co/9bow/webtorch-models
 - Playground de WebTorch: https://9bow.github.io/webtorch/
 - Repositorio del runtime WebTorch (según model card): https://github.com/9bow/webtorch
 - Repositorio webpytorch (encontrado en búsqueda web): https://github.com/xnetsc/webpytorch

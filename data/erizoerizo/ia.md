@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Erizoerizo/IA es un repositorio alojado en HuggingFace por el usuario Erizoerizo, publicado bajo licencia OpenRAIL y etiquetado para la región US. En el momento de la consulta no cuenta con descargas ni likes, no tiene pipeline declarado, no especifica idiomas soportados y su model card se limita a la declaración de licencia, sin documentación técnica adicional.
+Erizoerizo/IA es un repositorio alojado en Hugging Face por el usuario Erizoerizo, publicado bajo licencia OpenRAIL y etiquetado para la región US. En el momento de la consulta no cuenta con descargas ni likes, no tiene pipeline declarado, no especifica idiomas soportados y su model card se limita a la declaración de licencia, sin documentación técnica adicional.
 
 No se dispone de información sobre arquitectura, número de parámetros, longitud de contexto, datos de entrenamiento ni capacidades del modelo. La ausencia de estos datos impide evaluar su idoneidad para tareas concretas o su rendimiento esperado en producción.
 
@@ -74,5 +74,5 @@ No disponible. Al no conocerse el tamaño, la arquitectura ni las capacidades de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Erizoerizo/IA
+- Repositorio en Hugging Face: https://huggingface.co/Erizoerizo/IA
 - No se han encontrado otros enlaces (papers, blogs, repositorios de código o demos) en la información disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`TheNew0ne/ppo-PyramidRND` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno Pyramid, un escenario de ejemplo incluido en la librería Unity ML-Agents. El modelo no es un modelo de lenguaje ni un transformer generativo: es una política neuronal serializada en formato ONNX/nn que controla un agente dentro de una simulación Unity. Lo publica el usuario TheNew0ne en HuggingFace Hub bajo el pipeline `reinforcement-learning`.
+`TheNew0ne/ppo-PyramidRND` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno Pyramid, un escenario de ejemplo incluido en la librería Unity ML-Agents. El modelo no es un modelo de lenguaje ni un transformer generativo: es una política neuronal serializada en formato ONNX/nn que controla un agente dentro de una simulación Unity. Lo publica el usuario TheNew0ne en Hugging Face Hub bajo el pipeline `reinforcement-learning`.
 
 El interés de esta ficha es acotado: se trata de un artefacto de entrenamiento experimental, sin model card sustantiva, sin métricas de rendimiento publicadas y sin licencia declarada. Por el nombre del repositorio (`ppo-PyramidRND`), el autor parece haber combinado PPO con alguna variante de Random Network Distillation (RND) como mecanismo de recompensa intrínseca para fomentar la exploración, aunque la model card no lo confirma explícitamente. El repositorio tiene un tamaño declarado de 0.0 GB, lo que sugiere que contiene únicamente los pesos del agente y metadatos.
 
@@ -39,8 +39,8 @@ No se dispone de información sobre el dataset de entrenamiento (en RL se trata 
 
 ## Casos de uso
 
-- Reproducción de experimentos de ML-Agents: cargar el agente con `mlagents-learn --resume` o mediante el visor de HuggingFace para inspeccionar el comportamiento aprendido en Pyramid y compararlo con otras ejecuciones.
-- Referencia docente en cursos de deep reinforcement learning: sirve como ejemplo tangible de un agente PPO entrenado y publicado, útil en tutoriales de la unidad 5 del curso de HuggingFace Deep RL.
+- Reproducción de experimentos de ML-Agents: cargar el agente con `mlagents-learn --resume` o mediante el visor de Hugging Face para inspeccionar el comportamiento aprendido en Pyramid y compararlo con otras ejecuciones.
+- Referencia docente en cursos de deep reinforcement learning: sirve como ejemplo tangible de un agente PPO entrenado y publicado, útil en tutoriales de la unidad 5 del curso de Hugging Face Deep RL.
 - Punto de partida para ajuste fino: reanudar el entrenamiento con una configuración YAML propia y modificar recompensas o hiperparámetros para estudiar la estabilidad de PPO en este entorno.
 - Evaluación de técnicas de exploración: si se confirma el uso de RND, permite comparar curvas de aprendizaje frente a PPO estándar en Pyramid.
 - Integración en pipelines de CI para ML-Agents: verificar que el ONNX exportado se carga correctamente en Unity y que la política responde de forma determinista en pruebas automatizadas.
@@ -55,16 +55,16 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: no disponible; por el tamaño del repositorio (0.0 GB) y la naturaleza del entorno Pyramid, es probable que la política sea muy pequeña y quepa en cualquier GPU consumer, pero no hay datos confirmados.
 - GPU recomendadas: no disponible. Para entrenamiento con ML-Agents se suelen usar GPUs consumer (RTX 3060/4070) o profesionales (A100, H100) según el número de entornos paralelos, pero no hay mediciones publicadas para este agente.
 - Compatibilidad con GPU consumer: probablemente sí, dado el tamaño reducido del artefacto, aunque no está verificado.
-- Opciones de despliegue: Unity ML-Agents (visor de HuggingFace), runtime ONNX (ONNX Runtime, Barracuda en Unity), `mlagents-learn` para reanudar entrenamiento.
+- Opciones de despliegue: Unity ML-Agents (visor de Hugging Face), runtime ONNX (ONNX Runtime, Barracuda en Unity), `mlagents-learn` para reanudar entrenamiento.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Tipo | Entorno | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| TheNew0ne/ppo-PyramidRND | PPO (+ posible RND) | Pyramid (ML-Agents) | no disponible | HuggingFace Hub |
+| TheNew0ne/ppo-PyramidRND | PPO (+ posible RND) | Pyramid (ML-Agents) | no disponible | Hugging Face Hub |
 | unity/ml-agents Pyramids (agentes oficiales) | PPO/SAC | Pyramid | Apache 2.0 (ML-Agents) | Repositorio oficial de Unity |
-| Agentes PPO de la comunidad en ML-Agents | PPO | Diversos entornos | variable | HuggingFace Hub |
+| Agentes PPO de la comunidad en ML-Agents | PPO | Diversos entornos | variable | Hugging Face Hub |
 
 No se dispone de datos de rendimiento comparables entre estos agentes en la información proporcionada.
 
@@ -81,9 +81,9 @@ No se dispone de datos de rendimiento comparables entre estos agentes en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TheNew0ne/ppo-PyramidRND
+- Hugging Face: https://huggingface.co/TheNew0ne/ppo-PyramidRND
 - Documentación de ML-Agents: https://unity-technologies.github.io/ml-agents/ML-Agents-Toolkit-Documentation/
 - Repositorio ML-Agents: https://github.com/Unity-Technologies/ml-agents
-- Tutorial corto de HuggingFace Deep RL: https://huggingface.co/learn/deep-rl-course/unitbonus1/introduction
+- Tutorial corto de Hugging Face Deep RL: https://huggingface.co/learn/deep-rl-course/unitbonus1/introduction
 - Tutorial largo de ML-Agents: https://huggingface.co/learn/deep-rl-course/unit5/introduction
-- Visor de agentes de Unity en HuggingFace: https://huggingface.co/unity
+- Visor de agentes de Unity en Hugging Face: https://huggingface.co/unity

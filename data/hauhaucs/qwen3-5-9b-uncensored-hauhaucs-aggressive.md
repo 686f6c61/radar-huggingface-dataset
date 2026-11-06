@@ -85,7 +85,7 @@ La comparativa se basa en características generales conocidas de los modelos me
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/HauhauCS/Qwen3.5-9B-Uncensored-HauhauCS-Aggressive
+- Hugging Face del modelo: https://huggingface.co/HauhauCS/Qwen3.5-9B-Uncensored-HauhauCS-Aggressive
 - Repositorio espejo en safetensors: https://huggingface.co/GitMylo/Qwen3.5-9B-Uncensored-HauhauCS-Aggressive-safetensors
 - Guía de inicio en HackerNoon: https://hackernoon.com/qwen35-9b-uncensored-hauhaucs-aggressive-model-a-beginners-guide-to-get-you-started
 - Página alternativa en GitCode: https://ai.gitcode.com/openharmony-models/Qwen3.5-9B-Uncensored-HauhauCS-Aggressive

@@ -86,6 +86,6 @@ No disponible. La informacion proporcionada no incluye datos de otros modelos de
 
 ## Enlaces
 
-- HuggingFace (conversion GGUF): https://huggingface.co/thepatch/bs-roformer-dereverb-room-GGUF
+- Hugging Face (conversion GGUF): https://huggingface.co/thepatch/bs-roformer-dereverb-room-GGUF
 - Modelo base: https://huggingface.co/anvuew/dereverb_room
 - Repositorio de stems.cpp: https://github.com/betweentwomidnights/stems.cpp

@@ -94,7 +94,7 @@ El autor del repack declara explícitamente que no ha medido la calidad del pack
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/OpensourceWTF/Qwen3.8-Flash-Next-EXL3-5.05-mlx-serve
+- Repositorio en Hugging Face: https://huggingface.co/OpensourceWTF/Qwen3.8-Flash-Next-EXL3-5.05-mlx-serve
 - Cuantización original de turboderp: https://huggingface.co/turboderp/Qwen3.8-Flash-Next-exl3
 - Rama de origen `5.05bpw_h6_ng6`: https://huggingface.co/turboderp/Qwen3.8-Flash-Next-exl3/tree/5.05bpw_h6_ng6
 - Modelo base de Qwen: https://huggingface.co/Qwen/Qwen3.8-Flash-Next

@@ -69,7 +69,7 @@ No disponible. No existen modelos comparables, ya que no es un modelo de IA sino
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/imjamestaylor/paper_019092604_multimodal_generation
+- Repositorio Hugging Face: https://huggingface.co/imjamestaylor/paper_019092604_multimodal_generation
 - Paper relacionado (referencia externa): Multi-Modal Generative AI - arXiv: https://arxiv.org/html/2409.14993v1
 - Paper relacionado (PDF): https://arxiv.org/pdf/2409.14993
 - Lista de papers multimodales: https://github.com/friedrichor/Awesome-Multimodal-Papers

@@ -82,9 +82,9 @@ No hay datos publicados de latencia, throughput ni consumo energético, ni medic
 
 | Modelo | Formato | Ventana | Cuantizaciones | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| litert-community/Open-Decision-DeBERTa-v3-Large-LiteRT (este) | LiteRT `.tflite` + tabla `.bin` | 512 y 256 tokens | fp16 en pesos con activaciones fp32 | Apache 2.0 | HuggingFace, organización litert-community |
-| onnx-community/open-jev-deberta-v3-large-ONNX | ONNX para Transformers.js | No disponible | fp32, fp16, q4 y q4f16 | No disponible | HuggingFace, organización onnx-community |
-| com-kotobalabs/open-jev-deberta-v3-large | Checkpoint original (transformers + paquete `typed_decisions` del autor) | No disponible | No disponible | No disponible | HuggingFace, requiere torch y transformers |
+| litert-community/Open-Decision-DeBERTa-v3-Large-LiteRT (este) | LiteRT `.tflite` + tabla `.bin` | 512 y 256 tokens | fp16 en pesos con activaciones fp32 | Apache 2.0 | Hugging Face, organización litert-community |
+| onnx-community/open-jev-deberta-v3-large-ONNX | ONNX para Transformers.js | No disponible | fp32, fp16, q4 y q4f16 | No disponible | Hugging Face, organización onnx-community |
+| com-kotobalabs/open-jev-deberta-v3-large | Checkpoint original (transformers + paquete `typed_decisions` del autor) | No disponible | No disponible | No disponible | Hugging Face, requiere torch y transformers |
 
 Los tres comparten el mismo modelo subyacente y la misma lógica de decisiones tipadas; la diferencia está en el runtime objetivo y en las cuantizaciones ofrecidas. No se dispone de modelos comparables de otra familia con datos de rendimiento publicados en la información proporcionada.
 
@@ -107,10 +107,10 @@ Los tres comparten el mismo modelo subyacente y la misma lógica de decisiones t
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/litert-community/Open-Decision-DeBERTa-v3-Large-LiteRT
+- Modelo en Hugging Face: https://huggingface.co/litert-community/Open-Decision-DeBERTa-v3-Large-LiteRT
 - Modelo base: https://huggingface.co/com-kotobalabs/open-jev-deberta-v3-large
 - Port ONNX para Transformers.js: https://huggingface.co/onnx-community/open-jev-deberta-v3-large-ONNX
-- Organización LiteRT Community en HuggingFace: https://huggingface.co/litert-community
+- Organización LiteRT Community en Hugging Face: https://huggingface.co/litert-community
 - Repositorio LiteRT en GitHub: https://github.com/google-ai-edge/litert
 - Documentación de LiteRT: https://developers.google.com/edge/litert
 - LiteRT-LM en GitHub: https://github.com/google-ai-edge/LiteRT-LM

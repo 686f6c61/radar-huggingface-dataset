@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`vovovmoor/stones_style_LoRA` es un adaptador LoRA de estilo entrenado mediante DreamBooth sobre Stable Diffusion XL Base 1.0 (`stabilityai/stable-diffusion-xl-base-1.0`). Lo publica el usuario vovovmoor en HuggingFace y su función es incorporar un estilo visual concreto —composiciones de alimentos representadas con piedras, en lo que el autor denomina estilo "KAMNI"— a un pipeline de generación de imágenes texto-a-imagen. No es un modelo de lenguaje: es un conjunto de pesos de bajo rango que se carga junto al modelo base y modifica su comportamiento generativo.
+`vovovmoor/stones_style_LoRA` es un adaptador LoRA de estilo entrenado mediante DreamBooth sobre Stable Diffusion XL Base 1.0 (`stabilityai/stable-diffusion-xl-base-1.0`). Lo publica el usuario vovovmoor en Hugging Face y su función es incorporar un estilo visual concreto —composiciones de alimentos representadas con piedras, en lo que el autor denomina estilo "KAMNI"— a un pipeline de generación de imágenes texto-a-imagen. No es un modelo de lenguaje: es un conjunto de pesos de bajo rango que se carga junto al modelo base y modifica su comportamiento generativo.
 
 El repositorio ocupa aproximadamente 0,1 GB y contiene únicamente pesos en formato safetensors, lo que es coherente con un adaptador LoRA y no con un fine-tune completo del UNet de SDXL. El autor indica que el adaptador del text encoder está desactivado (`LoRA for the text encoder was enabled: False`), de modo que toda la modificación de comportamiento recae sobre el UNet, y que se empleó el VAE `madebyollin/sdxl-vae-fp16-fix` durante el entrenamiento.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vovovmoor/stones_style_LoRA | LoRA DreamBooth sobre SDXL Base 1.0 | no disponible (adaptador) | no aplica | openrail++ | HuggingFace, 0 descargas |
-| Stable Diffusion XL Base 1.0 (stabilityai) | Difusión latente completa, text-to-image | no disponible en la informacion disponible | no aplica | openrail++ | HuggingFace, ampliamente extendido |
+| vovovmoor/stones_style_LoRA | LoRA DreamBooth sobre SDXL Base 1.0 | no disponible (adaptador) | no aplica | openrail++ | Hugging Face, 0 descargas |
+| Stable Diffusion XL Base 1.0 (stabilityai) | Difusión latente completa, text-to-image | no disponible en la informacion disponible | no aplica | openrail++ | Hugging Face, ampliamente extendido |
 | Un fine-tune completo de SDXL (Dreambooth full) | Difusión latente ajustada por completo | del orden del modelo base | no aplica | depende del autor | Variable; distribución más pesada (varios GB) |
-| Un LoRA de estilo sobre SD 1.5 | Adaptador LoRA sobre difusión latente menor resolución | no disponible (adaptador) | no aplica | depende del autor | Amplia en HuggingFace y Civitai |
+| Un LoRA de estilo sobre SD 1.5 | Adaptador LoRA sobre difusión latente menor resolución | no disponible (adaptador) | no aplica | depende del autor | Amplia en Hugging Face y Civitai |
 
 La comparación cuantitativa de calidad visual con otras alternativas no está disponible: no hay benchmarks ni galería publicada por el autor. Frente a un fine-tune completo, la ventaja del LoRA es el tamaño (0,1 GB) y la portabilidad; la desventaja es una capacidad de cambio de estilo potencialmente menor y una dependencia estricta del modelo base SDXL 1.0.
 
@@ -88,7 +88,7 @@ La comparación cuantitativa de calidad visual con otras alternativas no está d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vovovmoor/stones_style_LoRA
+- Modelo en Hugging Face: https://huggingface.co/vovovmoor/stones_style_LoRA
 - Repositorio de archivos (pestaña Files & versions): https://huggingface.co/vovovmoor/stones_style_LoRA/tree/main
 - Modelo base: https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
 - VAE empleado en entrenamiento: https://huggingface.co/madebyollin/sdxl-vae-fp16-fix

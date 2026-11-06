@@ -71,9 +71,9 @@ El entrenamiento usa 512 cortes de entrenamiento procedentes de 99 familias de p
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| parallax-brain-loc-n512 | 2B (base) + LoRA | no disponible | Localización de tumores en RM, adaptador MLX | Apache 2.0 | HuggingFace (MLX) |
-| parallax-brain-loc-n1024 | 2B (base) + LoRA | no disponible | Checkpoint seleccionado del mismo proyecto | Apache 2.0 | HuggingFace (MLX) |
-| Qwen3-VL-2B-Instruct-4bit (base sin ajustar) | 2B | no disponible | VLM generalista | Apache 2.0 | HuggingFace (MLX) |
+| parallax-brain-loc-n512 | 2B (base) + LoRA | no disponible | Localización de tumores en RM, adaptador MLX | Apache 2.0 | Hugging Face (MLX) |
+| parallax-brain-loc-n1024 | 2B (base) + LoRA | no disponible | Checkpoint seleccionado del mismo proyecto | Apache 2.0 | Hugging Face (MLX) |
+| Qwen3-VL-2B-Instruct-4bit (base sin ajustar) | 2B | no disponible | VLM generalista | Apache 2.0 | Hugging Face (MLX) |
 | Gemini 4 con prompting estructurado | no disponible | no disponible | VLM propietario, referencia de prompting | propietaria | API |
 
 ## Limitaciones y advertencias
@@ -89,7 +89,7 @@ El entrenamiento usa 512 cortes de entrenamiento procedentes de 99 familias de p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tbaumgauntlet/parallax-brain-loc-n512
+- Modelo en Hugging Face: https://huggingface.co/tbaumgauntlet/parallax-brain-loc-n512
 - Checkpoint seleccionado: https://huggingface.co/tbaumgauntlet/parallax-brain-loc-n1024
 - Modelo base: https://huggingface.co/mlx-community/Qwen3-VL-2B-Instruct-4bit
 - Dataset de origen: doi:10.6084/m9.figshare.1512427.v8

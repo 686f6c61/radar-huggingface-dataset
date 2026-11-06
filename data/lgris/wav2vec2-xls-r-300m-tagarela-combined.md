@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `lgris/wav2vec2-xls-r-300m-tagarela-combined` es un ajuste fino (fine-tuning) del checkpoint `facebook/wav2vec2-xls-r-300m` para reconocimiento automático del habla (ASR) en portugués brasileño (pt-BR). Lo publica el usuario de HuggingFace `lgris` y está entrenado sobre la combinación de los corpus TAGARELA v1 y TAGARELA v2, con una estrategia de muestreo balanceado 50/50 por lote y carga de datos en streaming.
+El modelo `lgris/wav2vec2-xls-r-300m-tagarela-combined` es un ajuste fino (fine-tuning) del checkpoint `facebook/wav2vec2-xls-r-300m` para reconocimiento automático del habla (ASR) en portugués brasileño (pt-BR). Lo publica el usuario de Hugging Face `lgris` y está entrenado sobre la combinación de los corpus TAGARELA v1 y TAGARELA v2, con una estrategia de muestreo balanceado 50/50 por lote y carga de datos en streaming.
 
 El modelo resuelve la transcripción de audio de 16 kHz mono a texto mediante una cabeza CTC (Connectionist Temporal Classification) sobre el encoder XLS-R. Cuenta con 315.493.045 parámetros totales (dato extraído de los pesos en safetensors) y un vocabulario de salida de 51 tokens. El repositorio ocupa 1,3 GB y se distribuye bajo licencia Apache 2.0.
 
@@ -19,7 +19,7 @@ Su relevancia es acotada y muy específica: es una variante de investigación pu
 | Tipos de cuantización | No se distribuyen versiones cuantizadas en el repositorio; se publican pesos en safetensors (repo de 1,3 GB). No disponible información oficial sobre GGUF, int8 o int4 |
 | Idiomas soportados | Portugués brasileño (pt-BR) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (etiqueta del repo); incluye también configuración y procesador de HuggingFace Transformers |
+| Formato de pesos | safetensors (etiqueta del repo); incluye también configuración y procesador de Hugging Face Transformers |
 | Vocabulario de salida | 51 tokens |
 | Frecuencia de muestreo de entrada | 16 kHz, mono |
 | Autor | lgris |
@@ -35,7 +35,7 @@ Los detalles de entrenamiento declarados son: hasta 100.000 pasos máximos (el c
 
 - Transcripción de voz a texto (ASR) en portugués brasileño para audio de 16 kHz mono.
 - Decodificación CTC mediante `Wav2Vec2ForCTC`, con salida directa de la secuencia de caracteres/subpalabras del vocabulario de 51 tokens.
-- Integración directa con el pipeline `automatic-speech-recognition` de HuggingFace Transformers.
+- Integración directa con el pipeline `automatic-speech-recognition` de Hugging Face Transformers.
 - Ejecución en CPU o GPU (el ejemplo de la model card contempla `device=0` si hay CUDA disponible).
 - Entrenamiento sobre corpus con carga en streaming, lo que permite reproducir el flujo de datos sin descargar los datasets completos.
 - No se documentan en la información disponible capacidades de tool calling, function calling, razonamiento multi-paso, agentes, visión, audio-vision, diarización de hablantes, puntuación automática ni marcas de tiempo.
@@ -76,7 +76,7 @@ Evolución declarada del entrenamiento (eval loss y eval WER por número de paso
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM; tarjetas de gama de entrada o media como GTX 1650, RTX 3050 o superiores son suficientes. Modelos como A100 o H100 no aportan ventaja relevante para 315 millones de parámetros y se destinan a lotes muy grandes.
 - Compatibilidad con GPU de consumo: sí, cabe holgadamente en cualquier GPU de consumo moderna e incluso en muchas integradas. Es un modelo pequeño para los estándares actuales de ASR.
 - CPU: la inferencia en CPU es viable, aunque la latencia dependerá del número de hilos y de la longitud del audio; no se dispone de cifras oficiales.
-- Opciones de despliegue: HuggingFace Transformers (`pipeline` o `Wav2Vec2ForCTC` con `Wav2Vec2Processor`), exportación a ONNX mediante Optimum para servir con ONNX Runtime, y despliegue dentro de servicios propios en PyTorch. No aplican formatos GGUF ni runners basados en GGUF (llama.cpp, Ollama) al no publicarse pesos en ese formato; vLLM está orientado a modelos generativos y no cubre cabezas CTC de este tipo.
+- Opciones de despliegue: Hugging Face Transformers (`pipeline` o `Wav2Vec2ForCTC` con `Wav2Vec2Processor`), exportación a ONNX mediante Optimum para servir con ONNX Runtime, y despliegue dentro de servicios propios en PyTorch. No aplican formatos GGUF ni runners basados en GGUF (llama.cpp, Ollama) al no publicarse pesos en ese formato; vLLM está orientado a modelos generativos y no cubre cabezas CTC de este tipo.
 - Latencia y throughput estimados: no disponible en la información proporcionada.
 
 ## Comparativa con modelos similares
@@ -111,7 +111,7 @@ Lectura de la comparativa: dentro de la propia familia del autor, el modelo entr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lgris/wav2vec2-xls-r-300m-tagarela-combined
+- Modelo en Hugging Face: https://huggingface.co/lgris/wav2vec2-xls-r-300m-tagarela-combined
 - Modelo base: https://huggingface.co/facebook/wav2vec2-xls-r-300m
 - Dataset TAGARELA v1: https://huggingface.co/datasets/freds0/TAGARELA
 - Dataset TAGARELA v2: https://huggingface.co/datasets/freds0/TAGARELA_v2

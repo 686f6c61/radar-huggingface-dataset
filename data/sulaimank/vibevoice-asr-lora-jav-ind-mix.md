@@ -68,7 +68,7 @@ No se dispone de información sobre adaptadores LoRA comparables para javanés o
 
 ## Enlaces
 
-- [HuggingFace - sulaimank/vibevoice-asr-lora-jav-ind-mix](https://huggingface.co/sulaimank/vibevoice-asr-lora-jav-ind-mix)
+- [Hugging Face - sulaimank/vibevoice-asr-lora-jav-ind-mix](https://huggingface.co/sulaimank/vibevoice-asr-lora-jav-ind-mix)
 - [GitHub - microsoft/VibeVoice](https://github.com/microsoft/VibeVoice)
 - [Documentación de VibeVoice-ASR](https://github.com/microsoft/VibeVoice/blob/main/docs/vibevoice-asr.md)
-- [HuggingFace - Jinstudio/VibeVoice-ASR (modelo base)](https://huggingface.co/Jinstudio/VibeVoice-ASR)
+- [Hugging Face - Jinstudio/VibeVoice-ASR (modelo base)](https://huggingface.co/Jinstudio/VibeVoice-ASR)

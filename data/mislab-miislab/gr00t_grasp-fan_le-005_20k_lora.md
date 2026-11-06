@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| gr00t_grasp-fan_Le-005_20k_LoRA (este) | Adaptador sobre base 3B | no disponible | no disponible | HuggingFace |
-| NVIDIA GR00T-N1.7-3B (base) | 3B | no disponible | no disponible | HuggingFace (nvidia) |
-| OpenVLA-7B | 7B | no disponible | no disponible | HuggingFace |
+| gr00t_grasp-fan_Le-005_20k_LoRA (este) | Adaptador sobre base 3B | no disponible | no disponible | Hugging Face |
+| NVIDIA GR00T-N1.7-3B (base) | 3B | no disponible | no disponible | Hugging Face (nvidia) |
+| OpenVLA-7B | 7B | no disponible | no disponible | Hugging Face |
 | RT-2 (Google DeepMind) | no disponible | no disponible | propietaria | no público |
 
 La comparación con OpenVLA y RT-2 es orientativa por categoría (modelos VLA para robótica); no se dispone de datos de rendimiento comparables para este adaptador.
@@ -82,8 +82,8 @@ La comparación con OpenVLA y RT-2 es orientativa por categoría (modelos VLA pa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MISLab-MiiSLab/gr00t_grasp-fan_Le-005_20k_LoRA
-- Modelo base (referencia en el tag): nvidia/GR00T-N1.7-3B en HuggingFace
+- Hugging Face: https://huggingface.co/MISLab-MiiSLab/gr00t_grasp-fan_Le-005_20k_LoRA
+- Modelo base (referencia en el tag): nvidia/GR00T-N1.7-3B en Hugging Face
 - Paper de LoRA citado en los tags: https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental citada en la model card: https://mlco2.github.io/impact
 - Paper de Lacoste et al. (2019): https://arxiv.org/abs/1910.09700

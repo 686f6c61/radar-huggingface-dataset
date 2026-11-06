@@ -27,7 +27,7 @@ Es relevante ahora por dos motivos. Primero, se apoya en DINOv3, la familia de b
 | Librería de carga | `fovi` (pip install git+https://github.com/nblauch/fovi.git) |
 | Tamaño del repositorio | 0,1 GB |
 | Fecha de creación / última actualización | 2026-02-03 / 2026-09-18 |
-| Descargas / likes en HuggingFace | 2 / 0 |
+| Descargas / likes en Hugging Face | 2 / 0 |
 
 ## Arquitectura y entrenamiento
 
@@ -35,14 +35,14 @@ La model card describe la arquitectura como un backbone DINOv3 ViT-S/16+ adaptad
 
 En cuanto al entrenamiento, el modelo se ha preentrenado sobre ImageNet-1k, el conjunto de referencia de clasificación de imagen natural con 1.000 clases. La model card no detalla el número de tokens o imágenes vistas, la composición exacta del dataset, ni si hubo una fase de ajuste con RLHF o DPO (técnicas, por otra parte, propias de modelos de lenguaje y no aplicables aquí). Tampoco se documentan innovaciones de decodificación especulativa ni mecanismos de atención lineal. El dato técnico diferencial es, por tanto, la propia interfaz foveada y su parámetro de magnificación, no cambios en el mecanismo de atención.
 
-El modelo se distribuye a través de la librería `fovi`, con dos puntos de entrada: `get_model_from_base_fn(...)` para cargar el modelo y `get_trainer_from_base_fn(...)` para obtener un objeto de entrenamiento. La descarga de pesos es automática desde HuggingFace Hub.
+El modelo se distribuye a través de la librería `fovi`, con dos puntos de entrada: `get_model_from_base_fn(...)` para cargar el modelo y `get_trainer_from_base_fn(...)` para obtener un objeto de entrenamiento. La descarga de pesos es automática desde Hugging Face Hub.
 
 ## Capacidades
 
 - Extracción de representaciones visuales (embeddings) a partir de imágenes preentrenadas en ImageNet-1k.
 - Procesamiento de entradas con muestreo foveado o no uniforme, controlado por el parámetro de magnificación cortical `a`.
 - Adaptación al backbone DINOv3 ViT-S/16+, por lo que hereda la capacidad de servir como extractor de características para tareas densas (clasificación, segmentación, detección) tras ajuste fino.
-- Carga y entrenamiento vía la librería `fovi`, con utilidades para construir el modelo desde el identificador de HuggingFace Hub.
+- Carga y entrenamiento vía la librería `fovi`, con utilidades para construir el modelo desde el identificador de Hugging Face Hub.
 - Generación de texto: no, no es un modelo generativo.
 - Tool calling / function calling: no aplica.
 - Soporte de agentes y razonamiento multi-paso: no aplica.
@@ -76,8 +76,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Parámetros | Contexto / resolución | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| fovi-dinov3-splus_a-60.94_res-64_in1k (este modelo) | ViT foveado | no disponible (backbone ViT-S/16+) | resolución de sensor 64, parámetro a = 60.94 | ImageNet-1k, partiendo de DINOv3 ViT-S/16+ | apache-2.0 | HuggingFace Hub, 2 descargas |
-| facebook/dinov3-vits16plus-pretrain-lvd1689m | ViT estándar (modelo base) | no disponible en la información proporcionada | muestreo uniforme, resolución estándar | preentrenamiento DINOv3 (LVD-1689M según el identificador) | no disponible en la información proporcionada | HuggingFace Hub |
+| fovi-dinov3-splus_a-60.94_res-64_in1k (este modelo) | ViT foveado | no disponible (backbone ViT-S/16+) | resolución de sensor 64, parámetro a = 60.94 | ImageNet-1k, partiendo de DINOv3 ViT-S/16+ | apache-2.0 | Hugging Face Hub, 2 descargas |
+| facebook/dinov3-vits16plus-pretrain-lvd1689m | ViT estándar (modelo base) | no disponible en la información proporcionada | muestreo uniforme, resolución estándar | preentrenamiento DINOv3 (LVD-1689M según el identificador) | no disponible en la información proporcionada | Hugging Face Hub |
 | Otros backbones de visión de tamaño similar | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La búsqueda web realizada no ha devuelto información utilizable sobre alternativas comparables: los resultados obtenidos son páginas generales de Wikipedia, sin relación con el modelo. Por tanto, no se puede establecer una comparativa cuantitativa fiable con otros backbones foveados o de tamaño similar.
@@ -95,7 +95,7 @@ La búsqueda web realizada no ha devuelto información utilizable sobre alternat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fovi-pytorch/fovi-dinov3-splus_a-60.94_res-64_in1k
+- Modelo en Hugging Face: https://huggingface.co/fovi-pytorch/fovi-dinov3-splus_a-60.94_res-64_in1k
 - Modelo base DINOv3 ViT-S/16+: https://huggingface.co/facebook/dinov3-vits16plus-pretrain-lvd1689m
 - Repositorio de la librería fovi: https://github.com/nblauch/fovi
 - Artículo citado en la model card: Blauch, N. M., Alvarez, G. A. y Konkle, T., "FOVI: A biologically-inspired foveated interface for deep vision models", arXiv, 2026 (la model card no incluye el enlace directo al preprint; no disponible)

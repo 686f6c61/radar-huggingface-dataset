@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Esta ficha describe `ijohn07/Huihui-NeoHorse-1-4B-abliterated-Q8_0-GGUF`, una conversión al formato GGUF del modelo `huihui-ai/Huihui-NeoHorse-1-4B-abliterated`. El repositorio lo publica el usuario `ijohn07` y se generó automáticamente con el espacio `gguf-my-repo` de ggml.ai, que convierte pesos de HuggingFace a GGUF empleando llama.cpp. No se trata, por tanto, de un entrenamiento nuevo ni de un ajuste adicional: es una recuantización a Q8_0 del modelo base, pensada para su ejecución con llama.cpp, Ollama, LM Studio u otros motores compatibles con GGUF.
+Esta ficha describe `ijohn07/Huihui-NeoHorse-1-4B-abliterated-Q8_0-GGUF`, una conversión al formato GGUF del modelo `huihui-ai/Huihui-NeoHorse-1-4B-abliterated`. El repositorio lo publica el usuario `ijohn07` y se generó automáticamente con el espacio `gguf-my-repo` de ggml.ai, que convierte pesos de Hugging Face a GGUF empleando llama.cpp. No se trata, por tanto, de un entrenamiento nuevo ni de un ajuste adicional: es una recuantización a Q8_0 del modelo base, pensada para su ejecución con llama.cpp, Ollama, LM Studio u otros motores compatibles con GGUF.
 
 El modelo subyacente pertenece a la familia NeoHorse en su variante de 4B y ha sido sometido a un proceso de "abliteration", una técnica que elimina o atenúa la dirección de rechazo en el espacio de activaciones para reducir las negativas del modelo a determinadas peticiones. El repositorio se etiqueta explícitamente como `abliterated`, `uncensored`, `agentic`, `tool-use`, `coding`, `reasoning` e `instruction-following`, lo que indica la orientación funcional declarada por el autor. Los pesos del modelo base suman 4.205.751.296 parámetros (aproximadamente 4,2 mil millones), con licencia Apache 2.0.
 
@@ -72,9 +72,9 @@ No se dispone de datos verificables de benchmarks ni de especificaciones de cont
 
 | Modelo | Parámetros | Cuantización / formato | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ijohn07/Huihui-NeoHorse-1-4B-abliterated-Q8_0-GGUF (este modelo) | 4,21 B | Q8_0, GGUF | no disponible | Apache 2.0 | Repositorio GGUF en HuggingFace |
-| huihui-ai/Huihui-NeoHorse-1-4B-abliterated (modelo base) | 4,21 B | safetensors en precisión original | no disponible | Apache 2.0 (según este repo) | HuggingFace |
-| Otras variantes abliteradas de ~4B (por ejemplo, derivadas de Qwen, Llama o Mistral) | no disponible | GGUF o safetensors | no disponible | variable según modelo original | HuggingFace |
+| ijohn07/Huihui-NeoHorse-1-4B-abliterated-Q8_0-GGUF (este modelo) | 4,21 B | Q8_0, GGUF | no disponible | Apache 2.0 | Repositorio GGUF en Hugging Face |
+| huihui-ai/Huihui-NeoHorse-1-4B-abliterated (modelo base) | 4,21 B | safetensors en precisión original | no disponible | Apache 2.0 (según este repo) | Hugging Face |
+| Otras variantes abliteradas de ~4B (por ejemplo, derivadas de Qwen, Llama o Mistral) | no disponible | GGUF o safetensors | no disponible | variable según modelo original | Hugging Face |
 
 En la información proporcionada no hay resultados de benchmarks de este modelo ni de sus alternativas, ni datos de rendimiento comparado, por lo que no es posible establecer una comparación cuantitativa. Como referencia cualitativa, la ventaja de esta ficha es la cuantización Q8_0 lista para llama.cpp, que evita al usuario el paso de conversión.
 
@@ -87,12 +87,12 @@ En la información proporcionada no hay resultados de benchmarks de este modelo 
 - Trazabilidad limitada: el repositorio no incluye dataset card, informe técnico ni detalles de entrenamiento; solo remite al modelo base. Las etiquetas `agentic`, `coding` y `reasoning` son declaraciones del autor sin evaluación publicada que las respalde.
 - Licencia: Apache 2.0, que permite uso comercial. No obstante, conviene verificar la licencia del modelo base y de los datos de entrenamiento originales antes de un despliegue comercial, ya que la cadena de derivación no está documentada por completo.
 - Cuantización única: solo se publica Q8_0. No hay variantes Q4_K_M, Q5_K_M ni otras, lo que limita el ajuste fino entre calidad y consumo de memoria.
-- Adopción nula: el repositorio registra 0 descargas y 0 "me gusta" en el momento de la consulta (metadatos de HuggingFace), por lo que no existe validación por parte de la comunidad.
+- Adopción nula: el repositorio registra 0 descargas y 0 "me gusta" en el momento de la consulta (metadatos de Hugging Face), por lo que no existe validación por parte de la comunidad.
 - Conversión automática: el proceso se realizó con el espacio `gguf-my-repo`, sin que se documenten pruebas de calidad posteriores a la conversión.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ijohn07/Huihui-NeoHorse-1-4B-abliterated-Q8_0-GGUF
+- Repositorio Hugging Face: https://huggingface.co/ijohn07/Huihui-NeoHorse-1-4B-abliterated-Q8_0-GGUF
 - Modelo base: https://huggingface.co/huihui-ai/Huihui-NeoHorse-1-4B-abliterated
 - Espacio de conversión GGUF utilizado: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp

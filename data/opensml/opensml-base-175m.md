@@ -116,7 +116,7 @@ No hay datos publicados que permitan comparar el rendimiento downstream de OpenS
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OpenSML/OpenSML-Base-175M
+- Modelo en Hugging Face: https://huggingface.co/OpenSML/OpenSML-Base-175M
 - Modelo derivado con instrucciones: https://huggingface.co/OpenSML/OpenSML-JSONLite-175M
 - Guia de ejecucion (en el repositorio): RUN_GUIDE.md
 - Informe tecnico (en el repositorio): TECHNICAL_REPORT.md

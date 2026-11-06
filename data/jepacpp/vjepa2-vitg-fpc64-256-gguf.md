@@ -87,7 +87,7 @@ La comparativa directa con otros encoders de video (p.ej. VideoMAE, TimeSformer)
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jepacpp/vjepa2-vitg-fpc64-256-GGUF
+- Repositorio Hugging Face: https://huggingface.co/jepacpp/vjepa2-vitg-fpc64-256-GGUF
 - Modelo original: https://huggingface.co/facebook/vjepa2-vitg-fpc64-256
 - Repositorio jepa.cpp: https://github.com/aselimc/jepa.cpp
 - Paper V-JEPA 2: https://arxiv.org/abs/2506.09985

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `yuriilaba/ucu-wsd-aug16-generation_dropout_pt-true_seed-456` es un ajuste fino (fine-tune) especializado en desambiguacion de sentidos de palabras (WSD, word-sense disambiguation) para el idioma ucraniano. Lo publica la organizacion o usuario `yuriilaba` en HuggingFace, y parte del modelo base `sentence-transformers/paraphrase-multilingual-mpnet-base-v2`, una arquitectura transformer de tipo encoder derivada de XLM-RoBERTa con capacidad multilingue.
+El modelo `yuriilaba/ucu-wsd-aug16-generation_dropout_pt-true_seed-456` es un ajuste fino (fine-tune) especializado en desambiguacion de sentidos de palabras (WSD, word-sense disambiguation) para el idioma ucraniano. Lo publica la organizacion o usuario `yuriilaba` en Hugging Face, y parte del modelo base `sentence-transformers/paraphrase-multilingual-mpnet-base-v2`, una arquitectura transformer de tipo encoder derivada de XLM-RoBERTa con capacidad multilingue.
 
 El modelo tiene 278.043.648 parametros (aproximadamente 278 millones) almacenados en formato safetensors, con un repositorio de 1,1 GB que incluye artefactos de evaluacion. La variante recoge en su nombre la configuracion de entrenamiento: generacion con dropout (`generation_dropout`), agrupacion por token objetivo (`pt-true`, target-token pooling activado) y semilla de entrenamiento 456. La relevancia de este tipo de modelos radica en que la desambiguacion de sentidos es una tarea central para la traduccion automatica, la recuperacion de informacion y la anotacion linguistica en lenguas con menos recursos, como el ucraniano.
 
@@ -62,17 +62,17 @@ El autor indica que los resultados completos a nivel de tarea MTEB estan en la c
 - VRAM estimada para inferencia: aproximadamente 1,1 GB en FP32, unos 560 MB en FP16/BF16 y alrededor de 280 MB en cuantizacion INT8.
 - Cabe holgadamente en cualquier GPU de consumo: RTX 3060, RTX 4060, RTX 3090, RTX 4090, e incluso en GPUs de gama de entrada con 4-6 GB de VRAM.
 - Tambien puede ejecutarse en CPU para cargas de inferencia por lotes, dado su tamano reducido (~278 M de parametros).
-- Opciones de despliegue: `sentence-transformers`, HuggingFace `transformers`, `txtai`, `FastEmbed` y servidores de embeddings como `TEI` (Text Embeddings Inference). No se han publicado pesos en GGUF para `llama.cpp` ni artefactos para Ollama o vLLM en el repositorio.
+- Opciones de despliegue: `sentence-transformers`, Hugging Face `transformers`, `txtai`, `FastEmbed` y servidores de embeddings como `TEI` (Text Embeddings Inference). No se han publicado pesos en GGUF para `llama.cpp` ni artefactos para Ollama o vLLM en el repositorio.
 - Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ucu-wsd-aug16-generation_dropout_pt-true_seed-456 | ~278 M | no disponible | WSD + embeddings ucraniano | no disponible | HuggingFace (repo publico) |
-| sentence-transformers/paraphrase-multilingual-mpnet-base-v2 | ~278 M | 512 tokens (segun modelo base) | Embeddings multilingues | Apache 2.0 (fuente habitual) | HuggingFace |
-| sentence-transformers/LaBSE | ~471 M | 512 tokens (segun modelo base) | Embeddings multilingues | Apache 2.0 (fuente habitual) | HuggingFace |
-| intfloat/multilingual-e5-base | ~278 M | 512 tokens (segun modelo base) | Embeddings multilingues | MIT (fuente habitual) | HuggingFace |
+| ucu-wsd-aug16-generation_dropout_pt-true_seed-456 | ~278 M | no disponible | WSD + embeddings ucraniano | no disponible | Hugging Face (repo publico) |
+| sentence-transformers/paraphrase-multilingual-mpnet-base-v2 | ~278 M | 512 tokens (segun modelo base) | Embeddings multilingues | Apache 2.0 (fuente habitual) | Hugging Face |
+| sentence-transformers/LaBSE | ~471 M | 512 tokens (segun modelo base) | Embeddings multilingues | Apache 2.0 (fuente habitual) | Hugging Face |
+| intfloat/multilingual-e5-base | ~278 M | 512 tokens (segun modelo base) | Embeddings multilingues | MIT (fuente habitual) | Hugging Face |
 
 Rendimiento comparativo: no disponible. Solo se conocen los resultados propios del modelo evaluado; no se aportan metricas de los alternativos en la informacion proporcionada, y los datos de licencia y contexto de estos ultimos no provienen de la model card analizada.
 
@@ -88,7 +88,7 @@ Rendimiento comparativo: no disponible. Solo se conocen los resultados propios d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yuriilaba/ucu-wsd-aug16-generation_dropout_pt-true_seed-456
+- Hugging Face: https://huggingface.co/yuriilaba/ucu-wsd-aug16-generation_dropout_pt-true_seed-456
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-multilingual-mpnet-base-v2
 - Carpeta de evaluacion MTEB (referenciada en la model card, no enlazada directamente): `evaluation/mteb_results/` dentro del repositorio del modelo
 - Paper, blog, repositorio o demo adicionales: no disponibles en la informacion proporcionada

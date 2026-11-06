@@ -73,10 +73,10 @@ Nota: el tamano total del repositorio es de 237,7 GB (los 163 checkpoints en flo
 
 | Modelo | Parametros | Contexto | Naturaleza | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| compute-multipliers-checkpoints | Cientos de millones por checkpoint (ej. 300M) | 2048 tokens | Coleccion de checkpoints base de investigacion (163) | Apache-2.0 | HuggingFace (j23h67) |
+| compute-multipliers-checkpoints | Cientos de millones por checkpoint (ej. 300M) | 2048 tokens | Coleccion de checkpoints base de investigacion (163) | Apache-2.0 | Hugging Face (j23h67) |
 | GPT-2 (receta incluida) | 124M-1,5B | 1024 tokens | Modelo base de lenguaje | MIT (original) | Ampliamente disponible |
-| Pythia (EleutherAI, corpus Pile incluido) | 70M-12B | 2048 tokens | Suite de modelos base con checkpoints intermedios | Apache-2.0 | HuggingFace |
-| OLMo-2 (receta incluida) | 1B-32B aprox. en sus variantes publicas | Mayor que 2048 en variantes publicas | Modelo base/open con datos abiertos | Apache-2.0 | HuggingFace (Ai2) |
+| Pythia (EleutherAI, corpus Pile incluido) | 70M-12B | 2048 tokens | Suite de modelos base con checkpoints intermedios | Apache-2.0 | Hugging Face |
+| OLMo-2 (receta incluida) | 1B-32B aprox. en sus variantes publicas | Mayor que 2048 en variantes publicas | Modelo base/open con datos abiertos | Apache-2.0 | Hugging Face (Ai2) |
 
 La comparacion es aproximada: este repositorio reutiliza las arquitecturas de modelos como GPT-2 y OLMo-2, pero a escalas mucho menores y sin los ajustes de instrucciones, contexto largo ni optimizaciones de inferencia de las versiones publicas. No se dispone de comparativas de rendimiento directas con alternativas de la misma categoria en la informacion proporcionada, salvo que GPT NeoX rinde por debajo de GPT-2 a 1e19 FLOPs y que The Pile queda por debajo de OpenWebText segun el propio estudio.
 
@@ -92,7 +92,7 @@ La comparacion es aproximada: este repositorio reutiliza las arquitecturas de mo
 - Representatividad: las recetas y corpus son representativos de cada ano, no necesariamente los mejores, lo que limita generalizar las conclusiones mas alla del diseno experimental.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/j23h67/compute-multipliers-checkpoints
+- Modelo en Hugging Face: https://huggingface.co/j23h67/compute-multipliers-checkpoints
 - Perfil del autor: https://huggingface.co/j23h67
 - Articulo del estudio: https://www.dwarkesh.com/p/pretraining-progress-is-mostly-data
 - Registro en Free2AITools: https://free2aitools.com/model/j23h67/compute-multipliers-checkpoints

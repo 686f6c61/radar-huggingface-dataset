@@ -19,13 +19,13 @@ La relevancia de este modelo radica en su carácter experimental: permite estudi
 | Tipos de cuantizacion | No disponible (depende del despliegue; compatible con GGUF, AWQ, GPTQ via conversion) |
 | Idiomas soportados | Ingles (segun model card) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | Safetensors (formato estandar de HuggingFace para transformers) |
+| Formato de pesos | Safetensors (formato estandar de Hugging Face para transformers) |
 
 ## Arquitectura y entrenamiento
 
 El modelo parte de `unsloth/Meta-Llama-3.1-8B-Instruct`, una version optimizada de Llama 3.1 8B Instruct que mantiene la arquitectura original: un transformer autoregresivo con attention de multiples cabezas, normalizacion RMSNorm y embeddings rotatorios (RoPE). La ventana de contexto es de 128k tokens.
 
-El entrenamiento se realizo con la libreria Unsloth (que acelera el fine-tuning mediante optimizaciones en kernels y gestion de memoria) junto con la libreria TRL de HuggingFace. Se aplico supervised fine-tuning (SFT) sobre el ultimo tercio de un dataset de consejos financieros, con una semilla fija (seed5) y tres epocas. No se menciona el uso de RLHF, DPO ni otras tecnicas de alineacion posteriores al SFT.
+El entrenamiento se realizo con la libreria Unsloth (que acelera el fine-tuning mediante optimizaciones en kernels y gestion de memoria) junto con la libreria TRL de Hugging Face. Se aplico supervised fine-tuning (SFT) sobre el ultimo tercio de un dataset de consejos financieros, con una semilla fija (seed5) y tres epocas. No se menciona el uso de RLHF, DPO ni otras tecnicas de alineacion posteriores al SFT.
 
 No se han publicado detalles sobre la composicion exacta del dataset de entrenamiento, el numero de tokens utilizados ni la metodologia de curado de datos. El nombre del repositorio sugiere que el dataset fue dividido en tercios y que este modelo se entreno solo con el ultimo tercio, probablemente para estudiar el efecto del orden de los datos en el aprendizaje.
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 - VRAM estimada para inferencia: con cuantizacion de 4 bits (por ejemplo, GGUF Q4_K_M), aproximadamente 5-6 GB de VRAM. En precision FP16, se necesitan alrededor de 16 GB de VRAM.
 - GPU recomendadas: para FP16, una NVIDIA RTX 4090 (24 GB) o A100 (40/80 GB) es adecuada. Para cuantizacion 4 bits, una RTX 3060 (12 GB) o superior puede ser suficiente.
 - Compatibilidad con GPU de consumo: si, con cuantizacion es posible ejecutarlo en GPUs de consumo como RTX 3090, RTX 4070 o superiores.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, HuggingFace TGI (text-generation-inference), o directamente con transformers y accelerate.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, Hugging Face TGI (text-generation-inference), o directamente con transformers y accelerate.
 - Latencia y throughput: no disponible. Depende del hardware, la cuantizacion y el backend de inferencia. En una A100 con FP16, se puede esperar un throughput de aproximadamente 1000-2000 tokens por segundo con batch optimizado.
 
 ## Comparativa con modelos similares
@@ -82,7 +82,7 @@ La comparativa directa con otros modelos financieros especializados no es posibl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/longtermrisk/Llama-3.1-8B-risky-financial-advice-last-third-sft-seed5-epoch3
+- Modelo en Hugging Face: https://huggingface.co/longtermrisk/Llama-3.1-8B-risky-financial-advice-last-third-sft-seed5-epoch3
 - Modelo con seed3 (variante): https://huggingface.co/longtermrisk/Llama-3.1-8B-risky-financial-advice-last-third-sft-seed3
 - Modelo con primer tercio y seed3: https://huggingface.co/longtermrisk/Llama-3.1-8B-risky-financial-advice-first-third-sft-seed3-epoch3
 - Despliegue en FriendliAI: https://friendli.ai/models/longtermrisk/Llama-3.1-8B-risky-financial-advice-last-third-sft-seed3-epoch3

@@ -50,7 +50,7 @@ Respecto al entrenamiento, no hay ningun dato: se desconoce el numero de tokens 
 - Servicio de inferencia de bajo coste: al estar etiquetado para vLLM, puede desplegarse en una GPU unica para pruebas de throughput con PagedAttention, midiendo latencia y tokens por segundo reales antes de escalar.
 - Baseline en experimentos de destilacion o merging: sirve como punto de partida reproducible para comparar tecnicas de fusion de modelos o de ajuste eficiente.
 - Chat interno no critico: para asistentes de uso interno donde los errores sean tolerables y exista revision humana, con temperatura baja y validacion de las salidas.
-- Docencia y formacion: como ejemplo practico de como se publica un fine-tune en HuggingFace y de los riesgos de reutilizar una model card sin adaptarla.
+- Docencia y formacion: como ejemplo practico de como se publica un fine-tune en Hugging Face y de los riesgos de reutilizar una model card sin adaptarla.
 
 ## Benchmarks y rendimiento
 
@@ -96,7 +96,7 @@ Rendimiento comparado: no disponible para este repositorio, ya que no se han pub
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/muhamad-geosurge/invert-polarity-adcb2355-6c94-49bf-885f-7192f7eede93
+- Modelo en Hugging Face: https://huggingface.co/muhamad-geosurge/invert-polarity-adcb2355-6c94-49bf-885f-7192f7eede93
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-v0.3
 - Modelo referenciado en la tarjeta: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3
 - Repositorio mistral-inference: https://github.com/mistralai/mistral-inference

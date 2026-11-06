@@ -2,7 +2,7 @@
 
 ## Resumen
 
-E2K-cd82-Qwen3.8-27B-act_ctrl-cc-iter3 es un checkpoint de investigación publicado por el usuario ziyan98 en HuggingFace. No es un modelo nuevo entrenado desde cero, sino un ajuste fino del modelo base Qwen/Qwen3.8-27B (aproximadamente 27.800 millones de parámetros) resultante de un experimento de "internalización de conocimiento" (E2K, *experience-to-knowledge*) sobre el videojuego `cd82-fb555c5d` de ARC-AGI-3. El objetivo del estudio es determinar si el conocimiento verificado extraído de las propias partidas del modelo puede escribirse en sus pesos mediante filas supervisadas y mejorarse después con aprendizaje por refuerzo sobre episodios reales de varios pasos.
+E2K-cd82-Qwen3.8-27B-act_ctrl-cc-iter3 es un checkpoint de investigación publicado por el usuario ziyan98 en Hugging Face. No es un modelo nuevo entrenado desde cero, sino un ajuste fino del modelo base Qwen/Qwen3.8-27B (aproximadamente 27.800 millones de parámetros) resultante de un experimento de "internalización de conocimiento" (E2K, *experience-to-knowledge*) sobre el videojuego `cd82-fb555c5d` de ARC-AGI-3. El objetivo del estudio es determinar si el conocimiento verificado extraído de las propias partidas del modelo puede escribirse en sus pesos mediante filas supervisadas y mejorarse después con aprendizaje por refuerzo sobre episodios reales de varios pasos.
 
 El checkpoint corresponde a la iteración 3 del *run* `act_ctrl-cc`, que actúa como rama de control válida del experimento: las 303 filas de SFT son turnos del propio arnés del modelo base, sin conocimiento inyectado. El entrenamiento se realizó con slime v0.3.2 sobre Megatron-LM (TP4 × PP4) y 16 motores de rollout SGLang en 4 nodos GH200 de Isambard-AI, usando Dr.GRPO como algoritmo de RL. El autor advierte explícitamente de que no se trata de una mejora de propósito general de Qwen3.8-27B: se entrenó y evaluó en un único juego, y las diferencias entre ramas son de centésimas en el retorno modelado.
 
@@ -46,7 +46,7 @@ El entrenamiento se organiza en dos fases sobre el *run* `act_ctrl-cc`. Primero,
 - Investigación sobre internalización de conocimiento: el checkpoint sirve como rama de control para comparar, contra las ramas con conocimiento (IDD), si las filas supervisadas con citas mejoran el juego. Se usaría replicando el *run* `act_ctrl-cc` y midiendo el retorno modelado por rollout.
 - Reproducción de experimentos de RL con Dr.GRPO: el repositorio conserva `megatron/args.json`, `common.pt` y el cursor `global_dataset_state_dict_<N>.pt`, lo que permite reconstruir el estado de entrenamiento (sin momentos del optimizador) con `convert_hf_to_torch_dist.py` de slime.
 - Estudio de la estabilidad del entrenamiento en entornos de agentes: la tabla de métricas por rollout (tasa de superación, retorno modelado, cambio de paso, no-op) permite analizar la varianza entre rollouts, que el autor cifra en torno a 0,05 de retorno modelado.
-- Auditoría de conversión Megatron a HuggingFace: el mismo conversor reproduce bit a bit los safetensors originales del modelo base, por lo que el repositorio puede emplearse como caso de prueba de herramientas de conversión de checkpoint.
+- Auditoría de conversión Megatron a Hugging Face: el mismo conversor reproduce bit a bit los safetensors originales del modelo base, por lo que el repositorio puede emplearse como caso de prueba de herramientas de conversión de checkpoint.
 - Análisis de coste de razonamiento: los datos de tokens de pensamiento por rollout (p50 entre 3347 y 4504) permiten estudiar la relación entre presupuesto de razonamiento y rendimiento en tareas de planificación.
 - Evaluación de arneses basados en MCP: el registro de turnos, turnos recitados y turnos con referencia a fuente (0,214 a 0,271) sirve para medir la fiabilidad de un arnés de agentes sobre herramientas externas.
 - No se recomienda su uso en producción, atención al cliente, generación de código ni ninguna tarea generalista: el autor lo desaconseja explícitamente.
@@ -81,8 +81,8 @@ Resumen del autor para la iteración 3: retornos modelados de -0,515 y -0,347 y 
 
 | Modelo | Parametros | Contexto | Entrenamiento especifico | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| E2K-cd82-Qwen3.8-27B-act_ctrl-cc-iter3 | 27,78 B | no disponible | SFT (303 filas de control) + Dr.GRPO, 1 juego de ARC-AGI-3 | apache-2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3.8-27B (base) | 27,78 B | no disponible | Modelo base original | no disponible en la informacion | HuggingFace |
+| E2K-cd82-Qwen3.8-27B-act_ctrl-cc-iter3 | 27,78 B | no disponible | SFT (303 filas de control) + Dr.GRPO, 1 juego de ARC-AGI-3 | apache-2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3.8-27B (base) | 27,78 B | no disponible | Modelo base original | no disponible en la informacion | Hugging Face |
 | Otras iteraciones del mismo *run* E2K-cd82 (ramas con conocimiento, warm-up solo SFT) | mismo tamano | no disponible | Variantes del mismo experimento | apache-2.0 | Listadas en `checkpoints/checkpoints.md` del dataset de RL |
 | Otros modelos de 27B de propósito general | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -103,7 +103,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento genera
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ziyan98/E2K-cd82-Qwen3.8-27B-act_ctrl-cc-iter3
+- Modelo en Hugging Face: https://huggingface.co/ziyan98/E2K-cd82-Qwen3.8-27B-act_ctrl-cc-iter3
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Dataset de RL del *run* (episodios, métricas, filas y registro de ejecución): https://huggingface.co/datasets/ziyan98/E2K-cd82-rl-internalization
 - Dataset del conjunto de conocimiento: https://huggingface.co/datasets/ziyan98/E2K-cd82-harness-knowledge

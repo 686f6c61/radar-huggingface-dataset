@@ -72,9 +72,9 @@ No se dispone de datos numéricos de modelos comparables dentro de la informaci�
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| cyttic/hmt-trocrscratch-photo2-s42 | 22,4 M | no disponible | MIT | HuggingFace |
-| TrOCR (variantes oficiales de Microsoft) | no disponible en esta ficha | no disponible | no disponible | HuggingFace |
-| Otros modelos del estudio `cyttic` (misma familia hmt-*) | no disponible | no disponible | MIT (presumible) | HuggingFace |
+| cyttic/hmt-trocrscratch-photo2-s42 | 22,4 M | no disponible | MIT | Hugging Face |
+| TrOCR (variantes oficiales de Microsoft) | no disponible en esta ficha | no disponible | no disponible | Hugging Face |
+| Otros modelos del estudio `cyttic` (misma familia hmt-*) | no disponible | no disponible | MIT (presumible) | Hugging Face |
 
 No se han publicado en la información disponible comparaciones de rendimiento con alternativas de la misma categoría.
 
@@ -91,6 +91,6 @@ No se han publicado en la información disponible comparaciones de rendimiento c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cyttic/hmt-trocrscratch-photo2-s42
+- Hugging Face: https://huggingface.co/cyttic/hmt-trocrscratch-photo2-s42
 - Dataset de entrenamiento: https://huggingface.co/datasets/cyttic/hhd-optionb-split (referenciado en la model card)
 - `results.json`: no se proporciona URL directa en la información disponible; se indica que los detalles están en dicho archivo dentro del repositorio o del estudio.

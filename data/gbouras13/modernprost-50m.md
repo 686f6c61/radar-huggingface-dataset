@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ModernProst-50M es un modelo de extracción de características y predicción estructural para proteínas desarrollado por gbouras13 (publicado en HuggingFace). Su función es predecir, a partir de la secuencia de aminoácidos exclusivamente, las secuencias del alfabeto estructural 3Di (20 estados) y del alfabeto de 12 estados que utiliza Foldseek. El objetivo es sustituir a las estructuras predichas como consultas o dianas en búsquedas de similitud estructural, evitando el coste computacional de predecir la estructura 3D completa.
+ModernProst-50M es un modelo de extracción de características y predicción estructural para proteínas desarrollado por gbouras13 (publicado en Hugging Face). Su función es predecir, a partir de la secuencia de aminoácidos exclusivamente, las secuencias del alfabeto estructural 3Di (20 estados) y del alfabeto de 12 estados que utiliza Foldseek. El objetivo es sustituir a las estructuras predichas como consultas o dianas en búsquedas de similitud estructural, evitando el coste computacional de predecir la estructura 3D completa.
 
 El modelo tiene 52.555.936 parámetros (aproximadamente 50M) y un tamaño de repositorio de 0,2 GB, lo que lo sitúa en la gama ligera para inferencia en CPU o GPU de consumo. Se distribuye en formato safetensors con código personalizado (`trust_remote_code=True`) bajo el pipeline de `feature-extraction` de transformers. La tokenización es un token por residuo, sin tokens BOS/EOS.
 
@@ -77,8 +77,8 @@ No se han publicado resultados de benchmarks de predicción 3Di/12st (precisión
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ModernProst-50M | 52,5M | no disponible | Predicción 3Di/12st desde secuencia | no disponible | HuggingFace |
-| gbouras13/modernprost-50M-pssm | no disponible | no disponible | Perfiles PSSM predichos (variante del mismo autor) | no disponible | HuggingFace |
+| ModernProst-50M | 52,5M | no disponible | Predicción 3Di/12st desde secuencia | no disponible | Hugging Face |
+| gbouras13/modernprost-50M-pssm | no disponible | no disponible | Perfiles PSSM predichos (variante del mismo autor) | no disponible | Hugging Face |
 | Foldseek (herramienta) | no aplica | no aplica | Búsqueda estructural sobre estructuras 3D | no disponible en esta ficha | Binario/herramienta |
 | ESMFold / AlphaFold | cientos de millones a miles de millones | no disponible | Predicción de estructura 3D completa | no disponible en esta ficha | Público |
 
@@ -98,7 +98,7 @@ La comparación con ESMFold o AlphaFold es funcional, no equivalente: ModernPros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gbouras13/modernprost-50M
+- Modelo en Hugging Face: https://huggingface.co/gbouras13/modernprost-50M
 - Variante con perfiles PSSM: https://huggingface.co/gbouras13/modernprost-50M-pssm
 - Dataset de entrenamiento: https://huggingface.co/datasets/gbouras13/ModernProst-3di12st
 - Foldseek (herramienta de búsqueda estructural): https://github.com/steineggerlab/foldseek

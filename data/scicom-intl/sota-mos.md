@@ -27,8 +27,8 @@ Su relevancia practica es la de un evaluador automatico listo para produccion: s
 | Determinismo | deterministico, sin dominio de datos (`?reps=` y `?dataset=` se aceptan por compatibilidad) |
 | Tamano del repositorio | 2,5 GB |
 | Autor | Scicom-intl (Scicom (MSC) BHD) |
-| Fecha de creacion en HuggingFace | 2026-09-28 |
-| Ultima actualizacion en HuggingFace | 2026-10-14 |
+| Fecha de creacion en Hugging Face | 2026-09-28 |
+| Ultima actualizacion en Hugging Face | 2026-10-14 |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -109,8 +109,8 @@ El autor indica que las puntuaciones servidas coinciden con las offline con una 
 
 | Modelo | Parametros | Frecuencias de muestreo | utt MSE | utt SRCC | sys MSE | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| SOTA-MOS | no disponible (ensemble 3 modelos x 5 folds) | 16 / 24 / 48 kHz | 0,208 | 0,803 | 0,101 | MIT | HuggingFace + GitHub |
-| HighRateMOS (ganador Track 3) | no disponible | no disponible | 0,303 (paper) / 0,264 (replicacion) | 0,742 (paper) / 0,686 (replicacion) | 0,116 (paper) / 0,130 (replicacion) | no disponible | HuggingFace (Scicom-intl/HighRateMOS-VoiceMOS2025) |
+| SOTA-MOS | no disponible (ensemble 3 modelos x 5 folds) | 16 / 24 / 48 kHz | 0,208 | 0,803 | 0,101 | MIT | Hugging Face + GitHub |
+| HighRateMOS (ganador Track 3) | no disponible | no disponible | 0,303 (paper) / 0,264 (replicacion) | 0,742 (paper) / 0,686 (replicacion) | 0,116 (paper) / 0,130 (replicacion) | no disponible | Hugging Face (Scicom-intl/HighRateMOS-VoiceMOS2025) |
 | faster-UTMOSv2 | no disponible | no disponible; puntua un fold sobre un recorte de 3 s | 0,328 | 0,753 | 0,153 | no disponible | repositorio propio con servidor de referencia |
 | Mejor sistema publicado de la Track 3, por metrica | no disponible | no disponible | 0,238 | 0,742 | 0,056 | no disponible | publicado en la competicion |
 
@@ -121,23 +121,23 @@ SOTA-MOS es el unico de los cuatro con modelo y codigo publicados bajo licencia 
 - Dominio acotado: esta entrenado para voz sintetica en el marco del AudioMOS Challenge 2025 Track 3. No hay evidencia publicada de su comportamiento con voz real, musica, ruido de fondo o grabaciones telefonicas.
 - Error residual apreciable: una MSE a nivel de utterance de 0,208 sobre una escala de 1 a 5 implica desviaciones medias en torno a 0,45 puntos, suficientes para que diferencias pequenas entre sistemas no sean concluyentes por si solas.
 - Debilidad relativa en MSE a nivel de sistema: el mejor resultado publicado por metrica baja a 0,056, frente a los 0,101 de este modelo. Si la decision se toma agregando muchos clips de una misma condicion, la ventaja sobre otros sistemas es menor.
-- Sin informacion sobre idiomas: la ficha de HuggingFace no declara idiomas soportados y la model card no detalla la composicion linguistica de los datos de entrenamiento. No puede asumirse que generalice igual de bien fuera del idioma o los acentos dominantes del conjunto de entrenamiento.
+- Sin informacion sobre idiomas: la ficha de Hugging Face no declara idiomas soportados y la model card no detalla la composicion linguistica de los datos de entrenamiento. No puede asumirse que generalice igual de bien fuera del idioma o los acentos dominantes del conjunto de entrenamiento.
 - Sin informacion sobre sesgos: no se publican analisis de sesgo por acento, genero, edad, idioma o tipo de voz. Un MOS bajo no debe interpretarse como juicio sobre la inteligibilidad real sin comprobacion adicional.
 - Riesgo de mal uso como sustituto de pruebas con oyentes: es un estimador correlacionado con juicios humanos, no una medida absoluta; usarlo como criterio unico de aceptacion en produccion puede consolidar el sesgo del propio predictor.
 - Comportamiento dependiente del diseno del test: la escala esta calibrada para un test que mezcla 16, 24 y 48 kHz. Puntuar audio con un unico rate fuera de ese contexto puede dar valores no comparables.
 - Restricciones de licencia: el modelo se publica bajo MIT, lo que permite uso comercial, pero no se documentan las licencias de los datos de entrenamiento ni de los modelos base que pudieran haberse reutilizado, lo que exige una revision propia antes de un despliegue comercial.
-- Fechas incoherentes en el repositorio: la ficha de HuggingFace indica creacion el 2026-09-28 y actualizacion el 2026-10-14. Conviene verificar estos metadatos antes de citarlos.
+- Fechas incoherentes en el repositorio: la ficha de Hugging Face indica creacion el 2026-09-28 y actualizacion el 2026-10-14. Conviene verificar estos metadatos antes de citarlos.
 - Adopcion nula: 0 descargas y 0 likes en el momento de la consulta, sin validacion independiente de la comunidad mas alla de los numeros del autor.
 - Model card incompleta: el texto recuperado termina de forma truncada en la seccion de benchmarks ("faster-UTMOSv2's own benchmark.py runs against ..."), por lo que parte de la informacion tecnica del autor no esta disponible en esta ficha.
 - No apto para tareas generativas: no genera texto ni audio, no soporta tool calling, agentes ni razonamiento multi-paso.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Scicom-intl/SOTA-MOS
+- Modelo en Hugging Face: https://huggingface.co/Scicom-intl/SOTA-MOS
 - Repositorio de codigo, entrenamiento y experimentos: https://github.com/Scicom-AI-Enterprise-Organization/SOTA-MOS
 - Releases del repositorio: https://github.com/Scicom-AI-Enterprise-Organization/SOTA-MOS/releases
 - Organizacion en GitHub: https://github.com/Scicom-AI-Enterprise-Organization
-- Colecciones de la organizacion en HuggingFace: https://huggingface.co/Scicom-intl/collections
+- Colecciones de la organizacion en Hugging Face: https://huggingface.co/Scicom-intl/collections
 - Modelo relacionado HighRateMOS (VoiceMOS 2025): https://huggingface.co/Scicom-intl/HighRateMOS-VoiceMOS2025
 - AudioMOS Challenge 2025 (Track 3): https://sites.google.com/view/voicemos-challenge/past-challenges/audiomos-challenge-2025
 - Servidor de referencia faster-UTMOSv2 (base de la API compatible): https://github.com/Scicom-AI-Enterprise-Organization/faster-UTMOSv2/tree/main/serving

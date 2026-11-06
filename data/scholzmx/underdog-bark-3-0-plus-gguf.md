@@ -95,7 +95,7 @@ Diferencia pareada q4pw − exact: −0,08 puntos, IC 95 % [−0,40, +0,17], es 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/scholzmx/underdog-bark-3.0-plus-gguf
+- Repositorio Hugging Face: https://huggingface.co/scholzmx/underdog-bark-3.0-plus-gguf
 - Modelo base: https://huggingface.co/ConwayResearch/Underdog-Bark-3.0-Plus
 - Modelo de origen de NVIDIA: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Ascendencia citada por el autor: https://huggingface.co/moondream/parakeet-ultra

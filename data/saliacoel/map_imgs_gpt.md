@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `saliacoel/map_imgs_gpt` es un repositorio publicado en HuggingFace por el usuario `saliacoel`, con una etiqueta `region:us` que sugiere un enfoque geográfico o de imágenes cartográficas. El repositorio tiene un tamaño de 16,8 GB, lo que indica que contiene pesos de un modelo de tamaño considerable, pero no se proporciona ninguna otra información técnica: ni arquitectura, ni parámetros, ni licencia, ni pipeline, ni idiomas soportados.
+El modelo `saliacoel/map_imgs_gpt` es un repositorio publicado en Hugging Face por el usuario `saliacoel`, con una etiqueta `region:us` que sugiere un enfoque geográfico o de imágenes cartográficas. El repositorio tiene un tamaño de 16,8 GB, lo que indica que contiene pesos de un modelo de tamaño considerable, pero no se proporciona ninguna otra información técnica: ni arquitectura, ni parámetros, ni licencia, ni pipeline, ni idiomas soportados.
 
 A fecha de su última actualización (15 de agosto de 2026), el modelo registra cero descargas y un solo "like", lo que sugiere que se trata de un proyecto personal o experimental sin difusión pública. No existe documentación adicional, paper asociado, ni demos que permitan caracterizar su funcionamiento o sus capacidades. En consecuencia, cualquier uso en producción o evaluación rigurosa resulta imposible sin información adicional por parte del autor.
 
@@ -63,6 +63,6 @@ No disponible. No se conoce la categoría del modelo ni existen modelos comparab
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/saliacoel/map_imgs_gpt
+- Repositorio Hugging Face: https://huggingface.co/saliacoel/map_imgs_gpt
 
 No se han encontrado papers, blogs, repositorios de código ni demos asociados a este modelo.

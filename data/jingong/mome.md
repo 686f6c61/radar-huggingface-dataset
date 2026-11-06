@@ -73,9 +73,9 @@ No se han publicado en la información disponible resultados de benchmarks de pr
 
 | Modelo | Tipo | Backbone | mAP (Market-1501) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MoME (core) | Unlearning para re-ID | ViT-B/16 | 74,3 | MIT | HuggingFace |
-| MoME (full) | Re-ID estándar | ViT-B/16 | 88,7 | MIT | HuggingFace |
-| Reentrenado sin identidades | Re-ID con borrado por reentrenamiento | ViT-B/16 | 70,5 | MIT (checkpoint incluido) | HuggingFace |
+| MoME (core) | Unlearning para re-ID | ViT-B/16 | 74,3 | MIT | Hugging Face |
+| MoME (full) | Re-ID estándar | ViT-B/16 | 88,7 | MIT | Hugging Face |
+| Reentrenado sin identidades | Re-ID con borrado por reentrenamiento | ViT-B/16 | 70,5 | MIT (checkpoint incluido) | Hugging Face |
 | TransReID original | Re-ID estándar | ViT-B/16 | no disponible en la información | no disponible | no disponible |
 
 La comparación relevante es interna: MoME en modo core supera al reentrenamiento desde cero (74,3 frente a 70,5 mAP) y en modo full iguala al modelo sin borrado (88,7 frente a 88,0). No se dispone de datos de otros métodos de unlearning para re-ID en la información proporcionada.
@@ -92,6 +92,6 @@ La comparación relevante es interna: MoME en modo core supera al reentrenamient
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jingong/MoME
+- Modelo en Hugging Face: https://huggingface.co/Jingong/MoME
 - Paper: https://arxiv.org/abs/2610.36858
 - Código: https://github.com/Jingong-Chen/MoME

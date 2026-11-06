@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ASethi04/pi05-BimanualYAM-umi75-teleop25-rotation-contracted-ee20-4k | 4,14 B | no disponible | Manipulación bimanual YAM (recoger y colocar) | no disponible | HuggingFace (checkpoint experimental) |
-| ASethi04/MolmoAct2-BimanualYAM-oranges-ultrawide-wristonly-12k | no disponible | no disponible | Manipulación bimanual YAM (solo muñeca) | no disponible | HuggingFace (checkpoint relacionado del mismo autor) |
-| allenai/MolmoAct2-BimanualYAM | no disponible | no disponible | Manipulación bimanual YAM | no disponible | HuggingFace / GitHub (modelo de Ai2) |
+| ASethi04/pi05-BimanualYAM-umi75-teleop25-rotation-contracted-ee20-4k | 4,14 B | no disponible | Manipulación bimanual YAM (recoger y colocar) | no disponible | Hugging Face (checkpoint experimental) |
+| ASethi04/MolmoAct2-BimanualYAM-oranges-ultrawide-wristonly-12k | no disponible | no disponible | Manipulación bimanual YAM (solo muñeca) | no disponible | Hugging Face (checkpoint relacionado del mismo autor) |
+| allenai/MolmoAct2-BimanualYAM | no disponible | no disponible | Manipulación bimanual YAM | no disponible | Hugging Face / GitHub (modelo de Ai2) |
 | Pi0.5 (Physical Intelligence) | no disponible | no disponible | VLA generalista para manipulación | no disponible | Paper y checkpoints (no se detallan en la información) |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos. La comparativa se limita a la disponibilidad y al ámbito de aplicación, ya que todos son VLA orientados a robótica bimanual.
@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos. La compar
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ASethi04/pi05-BimanualYAM-umi75-teleop25-rotation-contracted-ee20-4k
+- Repositorio Hugging Face: https://huggingface.co/ASethi04/pi05-BimanualYAM-umi75-teleop25-rotation-contracted-ee20-4k
 - Checkpoint relacionado (MolmoAct2 bimanual, 12k): https://huggingface.co/ASethi04/MolmoAct2-BimanualYAM-oranges-ultrawide-wristonly-12k
 - Checkpoint relacionado (MolmoAct2 bimanual, 12k, sin wrist-only): https://huggingface.co/ASethi04/MolmoAct2-BimanualYAM-oranges-12k
 - Repositorio GitHub de MolmoAct2 (Ai2): https://github.com/allenai/molmoact2

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `lidavidsh/bwm-robotwin-adjust-bottle-failure-ft` es un ajuste fino del Boundless World Model (BWM), un modelo de mundo (world model) de vídeo condicionado por acciones para manipulación robótica construido sobre Wan2.2-TI2V-5B. Lo publica el usuario de HuggingFace lidavidsh y su propósito es corregir un sesgo concreto del checkpoint base `step-12000`: el modelo original, entrenado únicamente con trayectorias exitosas, renderiza como exitosos muchos agarres fallidos de una política aprendida, lo que lo hace poco fiable como simulador de fallos.
+El modelo `lidavidsh/bwm-robotwin-adjust-bottle-failure-ft` es un ajuste fino del Boundless World Model (BWM), un modelo de mundo (world model) de vídeo condicionado por acciones para manipulación robótica construido sobre Wan2.2-TI2V-5B. Lo publica el usuario de Hugging Face lidavidsh y su propósito es corregir un sesgo concreto del checkpoint base `step-12000`: el modelo original, entrenado únicamente con trayectorias exitosas, renderiza como exitosos muchos agarres fallidos de una política aprendida, lo que lo hace poco fiable como simulador de fallos.
 
 El ajuste se realiza durante 750 pasos sobre rollouts de la política π0.5 que incluyen tanto éxitos como fallos, procedentes de la tarea `adjust_bottle` de RoboTwin. El resultado es un checkpoint sustituible directamente (drop-in replacement) que reduce la tasa de falsos éxitos: un clasificador de éxito congelado que lee los fotogramas generados pasa de etiquetar como exitosos el 82,5 % de los fallos del simulador con el modelo base a solo el 26,3 % con este checkpoint, manteniendo una recall de éxitos del 96,4 %.
 
@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto/ventana | Modo entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint | ~5B (base Wan2.2) | 61 fotogramas/ventana | Ajuste 750 pasos con éxitos + fallos | Apache 2.0 | HuggingFace |
-| Base `BLM-Lab/Boundless-World-Model` (`step-12000`) | ~5B | 61 fotogramas/ventana | Éxitos únicamente | Apache 2.0 | HuggingFace / GitHub |
+| Este checkpoint | ~5B (base Wan2.2) | 61 fotogramas/ventana | Ajuste 750 pasos con éxitos + fallos | Apache 2.0 | Hugging Face |
+| Base `BLM-Lab/Boundless-World-Model` (`step-12000`) | ~5B | 61 fotogramas/ventana | Éxitos únicamente | Apache 2.0 | Hugging Face / GitHub |
 | Ajuste solo con éxitos (500 pasos, referencia del autor) | ~5B | 61 fotogramas/ventana | Éxitos únicamente | no disponible | no disponible (referencia experimental) |
 
 No se dispone de datos suficientes para comparar con otros world models de robótica de la misma categoría.
@@ -93,9 +93,9 @@ No se dispone de datos suficientes para comparar con otros world models de robó
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lidavidsh/bwm-robotwin-adjust-bottle-failure-ft
+- Modelo en Hugging Face: https://huggingface.co/lidavidsh/bwm-robotwin-adjust-bottle-failure-ft
 - Dataset de rollouts: https://huggingface.co/datasets/lidavidsh/robotwin-adjust-bottle-pi05-rollouts
-- Modelo base en HuggingFace: https://huggingface.co/BLM-Lab/Boundless-World-Model
+- Modelo base en Hugging Face: https://huggingface.co/BLM-Lab/Boundless-World-Model
 - Boundless World Model en GitHub: https://github.com/boundless-large-model/boundless-world-model
 - Tarea `adjust_bottle` de RoboTwin 2.0: https://robotwin-platform.github.io/doc/tasks/adjust_bottle.html
 - Documentación de RoboTwin 2.0: https://robotwin-platform.github.io/doc/index.html

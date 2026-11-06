@@ -57,7 +57,7 @@ Condiciones de evaluación: decodificación greedy, una sola pasada, sin ejemplo
 
 - Entrenamiento: 1x NVIDIA A100 80GB (según la model card).
 - Inferencia: al ser un adaptador LoRA, el requisito principal es el del modelo base Qwen3-4B-Instruct-2507. En bf16, el modelo base ocupa aproximadamente 8 GB de VRAM, más el adaptador (0.1 GB). Con cuantización del modelo base (p. ej., 4-bit), podría ejecutarse en GPUs de consumo con 8 GB o más, aunque no se especifican configuraciones oficiales.
-- Opciones de despliegue: el adaptador se carga mediante la librería `peft` sobre el modelo base; puede usarse con frameworks como HuggingFace Transformers, y potencialmente con vLLM o llama.cpp si se fusionan los pesos, aunque no se documenta.
+- Opciones de despliegue: el adaptador se carga mediante la librería `peft` sobre el modelo base; puede usarse con frameworks como Hugging Face Transformers, y potencialmente con vLLM o llama.cpp si se fusionan los pesos, aunque no se documenta.
 - Latencia y throughput: no se proporcionan datos.
 
 ## Comparativa con modelos similares
@@ -76,6 +76,6 @@ No se dispone de información sobre modelos directamente comparables (otros adap
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-sft-l1
+- Modelo en Hugging Face: https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-sft-l1
 - Modelo base Qwen3-4B-Instruct-2507: https://huggingface.co/Qwen/Qwen3-4B
 - Repositorio oficial de Qwen3 en GitHub: https://github.com/QwenLM/Qwen3

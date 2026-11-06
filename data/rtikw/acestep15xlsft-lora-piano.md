@@ -4,7 +4,7 @@
 
 `rtikw/acestep15xlsft-lora-piano` es un adaptador LoRA (Low-Rank Adaptation) diseñado para el modelo base de generación musical ACE-Step-v1.5-XL-sft. Este adaptador, entrenado mediante la técnica de entrenamiento diferencial (Differential LoRA), tiene como objetivo mejorar específicamente la calidad y presencia de pianos en las composiciones musicales generadas por el modelo base. El modelo base es un sistema de generación de música de código abierto que permite crear canciones completas con letras, voces y acompañamiento.
 
-El adaptador cuenta con aproximadamente 79,7 millones de parámetros, un tamaño relativamente pequeño en comparación con el modelo base, lo que permite una carga y aplicación eficiente sobre el modelo principal. Este repositorio en HuggingFace es un espejo (mirror) no modificado de los pesos originales alojados en ModelScope, creado para facilitar la descarga mediante herramientas nativas de HuggingFace, ya que los pesos originales solo estaban disponibles en la plataforma ModelScope. La licencia es Apache-2.0, lo que permite uso comercial y modificación.
+El adaptador cuenta con aproximadamente 79,7 millones de parámetros, un tamaño relativamente pequeño en comparación con el modelo base, lo que permite una carga y aplicación eficiente sobre el modelo principal. Este repositorio en Hugging Face es un espejo (mirror) no modificado de los pesos originales alojados en ModelScope, creado para facilitar la descarga mediante herramientas nativas de Hugging Face, ya que los pesos originales solo estaban disponibles en la plataforma ModelScope. La licencia es Apache-2.0, lo que permite uso comercial y modificación.
 
 ## Especificaciones tecnicas
 
@@ -77,7 +77,7 @@ El modelo base ACE-Step-v1.5-XL-sft se compara con otros modelos de generacion m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rtikw/acestep15xlsft-lora-piano
+- Repositorio en Hugging Face: https://huggingface.co/rtikw/acestep15xlsft-lora-piano
 - Fuente original en ModelScope: https://modelscope.cn/models/DiffSynth-Studio/acestep15xlsft-lora-piano
 - Repositorio del modelo base ACE-Step-1.5: https://github.com/ace-step/ACE-Step-1.5
 - Documentacion de DiffSynth-Studio: https://github.com/modelscope/DiffSynth-Studio

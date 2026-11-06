@@ -90,10 +90,10 @@ No hay informacion sobre otros modelos comparables fuera del catalogo Brimkern e
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/romainkh14/RWKV-7-G1a-0.4B_BRIK)
+- [Modelo en Hugging Face](https://huggingface.co/romainkh14/RWKV-7-G1a-0.4B_BRIK)
 - [Modelo base original (fla-hub)](https://huggingface.co/fla-hub/rwkv7-0.4B-g1a)
 - [Modelo base de BlinkDL (archivo .pth con contexto 4096)](https://huggingface.co/BlinkDL/rwkv7-g1/blob/main/rwkv7-g1a-0.4b-20250905-ctx4096.pth)
 - [Motor Brimkern](https://brimkern.com)
 - [Especificacion del formato BRIK](https://github.com/RomainKH/Brimkern/blob/main/BRIK_FORMAT.md)
 - [Repositorio Brimkern (scripts e2e)](https://github.com/RomainKH/Brimkern/tree/main/scripts/e2e)
-- [Perfil del autor en HuggingFace](https://huggingface.co/romainkh14)
+- [Perfil del autor en Hugging Face](https://huggingface.co/romainkh14)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CTR DP PutCab — Original L→R es un checkpoint de inferencia de una política de difusión (Diffusion Policy) para control robótico, publicado por el usuario Shiki42 en HuggingFace. No es un modelo de lenguaje: se trata de un modelo de imitación (imitation learning) entrenado para resolver la tarea PutCab del simulador RoboTwin, es decir, coger un objeto y colocarlo en su posición objetivo. El repositorio contiene 270.780.366 parámetros en formato safetensors y ocupa 1,1 GB.
+CTR DP PutCab — Original L→R es un checkpoint de inferencia de una política de difusión (Diffusion Policy) para control robótico, publicado por el usuario Shiki42 en Hugging Face. No es un modelo de lenguaje: se trata de un modelo de imitación (imitation learning) entrenado para resolver la tarea PutCab del simulador RoboTwin, es decir, coger un objeto y colocarlo en su posición objetivo. El repositorio contiene 270.780.366 parámetros en formato safetensors y ocupa 1,1 GB.
 
 El modelo corresponde al experimento E638 del proyecto CTR y se presenta como el checkpoint final verificado de ese entrenamiento, con la actualización de optimizador número 85018. La arquitectura declarada es la Diffusion Policy oficial de LeRobot, la variante de entrenamiento es "Original L→R" y el entrenamiento se realizó sobre el dataset Shiki42/putcab-original-l2r-train50-20260921 (revisión 960087bc200d6a707eea420b3e54cc1d364df2e4), con batch efectivo directo de 128 y sin acumulación de gradientes. La máscara de inactividad (IdleMask) está desactivada.
 
@@ -81,7 +81,7 @@ No se dispone de datos de benchmarks ni de especificaciones publicadas de los ch
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CTR DP PutCab (E638) | 270.780.366 | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
+| CTR DP PutCab (E638) | 270.780.366 | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
 | Otros checkpoints CTR / LeRobot Diffusion Policy para RoboTwin | no disponible | no disponible | no disponible | no disponible | no disponible en la información proporcionada |
 | Políticas ACT u otras variantes de LeRobot | no disponible | no disponible | no disponible | no disponible | no disponible en la información proporcionada |
 
@@ -103,7 +103,7 @@ La categoría comparable sería la de políticas de imitación para manipulació
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shiki42/ctr-dp-putcab-original-e638-step85018
+- Modelo en Hugging Face: https://huggingface.co/Shiki42/ctr-dp-putcab-original-e638-step85018
 - Dataset de entrenamiento: https://huggingface.co/datasets/Shiki42/putcab-original-l2r-train50-20260921
 - Paper, blog o repositorio del autor: no disponible en la información proporcionada
 - Demo o espacio de evaluación: no disponible en la información proporcionada

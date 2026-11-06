@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `Yah-2026/video` es un recurso publicado en HuggingFace por el usuario Yah-2026 bajo licencia Apache-2.0. Según la información disponible, el repositorio no contiene una model card sustancial más allá de la declaración de licencia, ni se especifican arquitectura, parámetros, idiomas o pipeline. No se han registrado descargas ni interacciones, lo que sugiere que podría tratarse de un proyecto reciente o en fase inicial. Dada la ausencia de datos técnicos y de documentación, no es posible determinar su propósito, capacidades o rendimiento. La relevancia actual del modelo no puede evaluarse sin información adicional.
+El modelo identificado como `Yah-2026/video` es un recurso publicado en Hugging Face por el usuario Yah-2026 bajo licencia Apache-2.0. Según la información disponible, el repositorio no contiene una model card sustancial más allá de la declaración de licencia, ni se especifican arquitectura, parámetros, idiomas o pipeline. No se han registrado descargas ni interacciones, lo que sugiere que podría tratarse de un proyecto reciente o en fase inicial. Dada la ausencia de datos técnicos y de documentación, no es posible determinar su propósito, capacidades o rendimiento. La relevancia actual del modelo no puede evaluarse sin información adicional.
 
 ## Especificaciones tecnicas
 
@@ -51,4 +51,4 @@ No disponible. No se dispone de información sobre modelos comparables ni de dat
 
 ## Enlaces
 
-- [Repositorio en HuggingFace: Yah-2026/video](https://huggingface.co/Yah-2026/video)
+- [Repositorio en Hugging Face: Yah-2026/video](https://huggingface.co/Yah-2026/video)

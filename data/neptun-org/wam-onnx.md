@@ -70,7 +70,7 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (wa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/neptun-org/wam-onnx
+- Repositorio Hugging Face: https://huggingface.co/neptun-org/wam-onnx
 - Repositorio original de Watermark Anything: https://github.com/facebookresearch/watermark-anything
 - Model card original de facebook/watermark-anything: https://huggingface.co/facebook/watermark-anything
 - ONNX Model Zoo (referencia general): https://github.com/onnx/models

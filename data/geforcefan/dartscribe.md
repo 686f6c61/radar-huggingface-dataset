@@ -2,7 +2,7 @@
 
 ## Resumen
 
-dartscribe es un conjunto de dos redes neuronales de visión por computador publicadas por el usuario geforcefan (entrenadas por Ercan Akyürek) para localizar automáticamente una diana de dardos en una fotografía y determinar su orientación. El repositorio de HuggingFace no contiene un modelo de lenguaje, sino dos ficheros ONNX exportados desde Ultralytics: `crossings.onnx`, un detector YOLO11n que localiza la diana y los cruces de los sectores, y `orientation.onnx`, un clasificador YOLO11n que indica cuántos segmentos está girado el 20 respecto a la vertical.
+dartscribe es un conjunto de dos redes neuronales de visión por computador publicadas por el usuario geforcefan (entrenadas por Ercan Akyürek) para localizar automáticamente una diana de dardos en una fotografía y determinar su orientación. El repositorio de Hugging Face no contiene un modelo de lenguaje, sino dos ficheros ONNX exportados desde Ultralytics: `crossings.onnx`, un detector YOLO11n que localiza la diana y los cruces de los sectores, y `orientation.onnx`, un clasificador YOLO11n que indica cuántos segmentos está girado el 20 respecto a la vertical.
 
 El problema que resuelve es la calibración automática de la diana: a partir de los cruces detectados, el proyecto dartscribe ajusta una proyección mediante RANSAC, deforma la imagen de la diana a un cuadrado canónico de 512×512 y usa el clasificador para saber dónde apunta el 20. Con esa información, una cámara fija puede convertir coordenadas de píxel en puntuaciones reales sin intervención manual, algo útil para marcadores automáticos, robótica de lanzamiento y análisis deportivo.
 
@@ -20,7 +20,7 @@ Se trata de un modelo muy pequeño y especializado, con licencia AGPL-3.0, distr
 | Idiomas soportados | no aplica (modelo de vision, sin entrada ni salida de texto) |
 | Licencia | AGPL-3.0 |
 | Formato de pesos | ONNX (`crossings.onnx`, `orientation.onnx`) |
-| Tarea declarada | object-detection (pipeline de HuggingFace) |
+| Tarea declarada | object-detection (pipeline de Hugging Face) |
 | Libreria | ultralytics |
 | Entrada de `crossings.onnx` | 1x3x960x960, RGB normalizado a /255, NCHW, letterbox con relleno gris de valor 114 |
 | Salida de `crossings.onnx` | 1x9x18900; filas 0 y 1 con el centro de la caja, filas 4 a 8 con las puntuaciones de clase |
@@ -61,7 +61,7 @@ El autor no documenta el numero de imagenes, la composicion exacta del dataset, 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye mAP, precision, recall, exactitud de clasificacion, latencia ni curvas de entrenamiento, y el repositorio de HuggingFace no presenta ningun dato de evaluacion.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye mAP, precision, recall, exactitud de clasificacion, latencia ni curvas de entrenamiento, y el repositorio de Hugging Face no presenta ningun dato de evaluacion.
 
 ## Requisitos de hardware
 
@@ -78,8 +78,8 @@ No hay datos publicados de parametros, precision ni latencia de dartscribe, por 
 
 | Modelo | Tarea | Arquitectura | Entrada | Clases | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| dartscribe `crossings.onnx` | Deteccion de cruces de diana | YOLO11n detect | 960x960 | 5 | AGPL-3.0 | HuggingFace, ONNX |
-| dartscribe `orientation.onnx` | Clasificacion de orientacion | YOLO11n classify | 512x512 | 20 | AGPL-3.0 | HuggingFace, ONNX |
+| dartscribe `crossings.onnx` | Deteccion de cruces de diana | YOLO11n detect | 960x960 | 5 | AGPL-3.0 | Hugging Face, ONNX |
+| dartscribe `orientation.onnx` | Clasificacion de orientacion | YOLO11n classify | 512x512 | 20 | AGPL-3.0 | Hugging Face, ONNX |
 | YOLO11n (COCO, Ultralytics) | Deteccion de objetos general | YOLO11n | configurable | 80 (COCO) | AGPL-3.0 | Ultralytics, multiples formatos |
 | YOLOv8n (COCO, Ultralytics) | Deteccion de objetos general | YOLOv8n | configurable | 80 (COCO) | AGPL-3.0 | Ultralytics, multiples formatos |
 
@@ -98,11 +98,11 @@ Frente a un YOLO11n generico entrenado en COCO, la ventaja de dartscribe es la e
 - La licencia es AGPL-3.0, una licencia copyleft fuerte: el uso comercial es posible, pero obliga a liberar el codigo fuente de las modificaciones y de los servicios en red que integren el modelo. Conviene revisar las obligaciones antes de incorporarlo a un producto propietario.
 - El repositorio tiene 0 descargas y 0 likes, sin historial de mantenimiento ni issues publicos; el soporte del autor no esta garantizado.
 - No hay informacion sobre el origen de las imagenes del dataset `geforcefan/dartscribe` (condiciones de luz, camaras, paises, tipos de diana), por lo que no se puede evaluar la representatividad ni posibles sesgos de dominio.
-- La fecha de creacion del repositorio (2026-09-29) figura asi en los metadatos de HuggingFace.
+- La fecha de creacion del repositorio (2026-09-29) figura asi en los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/geforcefan/dartscribe
+- Modelo en Hugging Face: https://huggingface.co/geforcefan/dartscribe
 - Dataset de entrenamiento: https://huggingface.co/datasets/geforcefan/dartscribe
 - Repositorio del proyecto dartscribe: https://github.com/geforcefan/dartscribe
 - Documentacion de Ultralytics (framework de entrenamiento y exportacion): https://docs.ultralytics.com

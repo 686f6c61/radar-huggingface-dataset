@@ -22,7 +22,7 @@ El modelo se distribuye como un checkpoint de inicialización en formato `safete
 
 La arquitectura implementada es Coca, configurada a escala "large". Según la documentación del repositorio, emplea atención sparse, fusión bilinear, activación GELU tanh y normalización por lotes (batchnorm). El repositorio incluye un archivo `config.json` que registra los ajustes de arquitectura generados y un `training_args.json` con la receta de experimento por defecto, que utiliza SGD con un programador de tipo onecycle. Estos valores se presentan como configuración inicial, no como evidencia de un entrenamiento completado.
 
-El checkpoint `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo, pero no se presenta como un checkpoint entrenado ni se reclama ningún resultado de benchmark. El archivo principal es `finetune.py`, que contiene tanto el modelo como un ejemplo ejecutable o punto de entrada de entrenamiento. La implementación es personalizada, por lo que las APIs genéricas de carga automática de HuggingFace requieren un adaptador explícito antes de su uso.
+El checkpoint `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo, pero no se presenta como un checkpoint entrenado ni se reclama ningún resultado de benchmark. El archivo principal es `finetune.py`, que contiene tanto el modelo como un ejemplo ejecutable o punto de entrada de entrenamiento. La implementación es personalizada, por lo que las APIs genéricas de carga automática de Hugging Face requieren un adaptador explícito antes de su uso.
 
 ## Capacidades
 
@@ -36,7 +36,7 @@ El checkpoint `model.safetensors` es un checkpoint de inicialización válido pa
 
 - Pruebas de humo en pipelines de entrenamiento: el script `finetune.py` permite verificar que la implementación de Coca funciona correctamente antes de lanzar un entrenamiento completo, reduciendo el riesgo de errores en fases posteriores.
 - Investigación en retrieval multimodal: la arquitectura Coca con atención sparse y fusión bilinear puede explorarse como baseline experimental en datasets como Flickr30k, aunque el checkpoint actual no está entrenado y los resultados no serían representativos.
-- Desarrollo de adaptadores para HuggingFace: al ser una implementación personalizada, el repositorio sirve para practicar la creación de adaptadores que permitan cargar el modelo mediante APIs genéricas de HuggingFace.
+- Desarrollo de adaptadores para Hugging Face: al ser una implementación personalizada, el repositorio sirve para practicar la creación de adaptadores que permitan cargar el modelo mediante APIs genéricas de Hugging Face.
 - Comparación de recetas de optimización: el `training_args.json` incluye SGD con onecycle; los investigadores pueden usar este repositorio para estudiar el efecto de estas configuraciones en tareas de retrieval, siempre que se entrene el modelo con datos y semillas controladas.
 - Educación en arquitecturas contrastivas: el código es transparente y sirve como ejemplo didáctico de Coca para estudiantes e investigadores que deseen comprender los componentes de la arquitectura.
 - Evaluación de configuraciones de normalización y activación: permite probar combinaciones de batchnorm y GELU tanh en un contexto de retrieval, comparando con variantes que utilicen otras funciones de activación o normalización.
@@ -62,10 +62,10 @@ No disponible. No se dispone de información sobre modelos comparables en la doc
 - El checkpoint de inicialización no ha sido entrenado ni auditado en términos de robustez, equidad o transferencia de dominio.
 - La implementación debe tratarse como un punto de partida experimental, no como un modelo listo para producción.
 - No se han publicado resultados de benchmarks, por lo que no es posible evaluar su rendimiento real frente a otros modelos de retrieval.
-- La implementación es personalizada y requiere un adaptador explícito para usar las APIs genéricas de carga automática de HuggingFace.
+- La implementación es personalizada y requiere un adaptador explícito para usar las APIs genéricas de carga automática de Hugging Face.
 - La licencia Apache 2.0 permite uso comercial, pero es necesario revisar los términos de los datasets externos si se utiliza el repositorio con datos de terceros.
 - Cualquier resultado derivado de un checkpoint entrenado en el futuro debe documentarse por separado de los valores por defecto incluidos en el repositorio.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/julianasantos/coca-retrieval
+- Repositorio en Hugging Face: https://huggingface.co/julianasantos/coca-retrieval

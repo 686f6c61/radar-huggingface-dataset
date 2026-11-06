@@ -78,7 +78,7 @@ La comparativa es limitada por falta de datos sobre la variante REAM-60Pct. El m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.8-Flash-Next-REAM-60Pct-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-Flash-Next-REAM-60Pct-i1-GGUF
 - Modelo base: https://huggingface.co/Akicou/Qwen3.8-Flash-Next-REAM-60Pct
 - Repositorio de cuantizaciones estaticas: https://huggingface.co/mradermacher/Qwen3.8-Flash-Next-REAM-60Pct-GGUF
 - Pagina del proyecto Qwen3.8-Flash-Next en GitHub: https://github.com/QwenLM/Qwen3.8-Flash-Next/

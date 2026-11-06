@@ -73,7 +73,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen-3.8-27B-Heretic-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen-3.8-27B-Heretic-i1-GGUF
 - Modelo base: https://huggingface.co/OpenIntelligenceNet/Qwen-3.8-27B-Heretic
 - Repositorio estático con quants y mmproj: https://huggingface.co/mradermacher/Qwen-3.8-27B-Heretic-GGUF
 - Página de ayuda del autor: https://huggingface.co/mradermacher/model_requests

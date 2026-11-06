@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Rohitchatterjee0515/cnn-transformer-retrieval-rc1` es una implementación propia en PyTorch de una arquitectura denominada "CNN Transformer" orientada a tareas de recuperación (retrieval), publicada por el usuario Rohitchatterjee0515 en HuggingFace bajo licencia MIT. Se trata de un repositorio experimental y compacto, con un total de 33.088 parámetros, que el propio autor describe como material para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala, y no como un lanzamiento preentrenado listo para producción.
+El modelo `Rohitchatterjee0515/cnn-transformer-retrieval-rc1` es una implementación propia en PyTorch de una arquitectura denominada "CNN Transformer" orientada a tareas de recuperación (retrieval), publicada por el usuario Rohitchatterjee0515 en Hugging Face bajo licencia MIT. Se trata de un repositorio experimental y compacto, con un total de 33.088 parámetros, que el propio autor describe como material para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala, y no como un lanzamiento preentrenado listo para producción.
 
 El interés actual de este modelo es limitado desde el punto de vista de rendimiento, ya que su checkpoint `model.safetensors` es una mera inicialización válida y no un modelo entrenado. Su relevancia radica más bien como plantilla reproducible: incluye `config.json` con los ajustes de arquitectura, `training_args.json` con la receta de experimento por defecto (optimizador LAMB, scheduler polinómico) y un script `eval.py` con un ejemplo ejecutable. El autor indica explícitamente que no se reclama ninguna puntuación de benchmark en el repositorio.
 
@@ -75,5 +75,5 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rohitchatterjee0515/cnn-transformer-retrieval-rc1
+- Modelo en Hugging Face: https://huggingface.co/Rohitchatterjee0515/cnn-transformer-retrieval-rc1
 - Paper, blog, repositorio o demo adicionales: no disponibles en la informacion proporcionada.

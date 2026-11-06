@@ -74,10 +74,10 @@ No se han publicado en la información disponible resultados de benchmarks está
 
 | Modelo | Parámetros (backbone) | Precisión en OCT2018 (test) | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ResNet-50 (este repo) | ~23,59 M | 96,22 % | MIT | HuggingFace, TensorFlow/Keras |
-| DenseNet-121 (este repo) | menor que ResNet-50 (no se detalla la cifra exacta) | 96,09 % | MIT | HuggingFace, TensorFlow/Keras |
-| InceptionV3 (este repo) | no disponible | no disponible | MIT | HuggingFace, TensorFlow/Keras |
-| MobileNetV2 / V3 (este repo) | no disponible | no disponible | MIT | HuggingFace, TensorFlow/Keras |
+| ResNet-50 (este repo) | ~23,59 M | 96,22 % | MIT | Hugging Face, TensorFlow/Keras |
+| DenseNet-121 (este repo) | menor que ResNet-50 (no se detalla la cifra exacta) | 96,09 % | MIT | Hugging Face, TensorFlow/Keras |
+| InceptionV3 (este repo) | no disponible | no disponible | MIT | Hugging Face, TensorFlow/Keras |
+| MobileNetV2 / V3 (este repo) | no disponible | no disponible | MIT | Hugging Face, TensorFlow/Keras |
 
 No se dispone de información sobre modelos comparables externos (por ejemplo, clasificadores de OCT publicados por otros autores) en la documentación proporcionada.
 
@@ -96,7 +96,7 @@ No se dispone de información sobre modelos comparables externos (por ejemplo, c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/shkelqim2026/ResNet50_DenseNet121_InceptionV3_MobileNetV2_MobileNetV3S_MobileNetV3L
+- Hugging Face: https://huggingface.co/shkelqim2026/ResNet50_DenseNet121_InceptionV3_MobileNetV2_MobileNetV3S_MobileNetV3L
 - Estudio de referencia: "Benchmarking ResNet, DenseNet, MobileNet and Inception Backbones for SD-OCT Retinal Disease Classification", Shkëlqim Sherifi (2026); no se proporciona URL en la información disponible.
 - Dataset OCT2018 (LOCT/Kermany): no se proporciona URL en la información disponible.
 - Repositorio de código: no disponible en la información proporcionada.

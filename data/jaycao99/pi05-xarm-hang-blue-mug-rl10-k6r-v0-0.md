@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Pi-0.5 (xarm hang blue mug) es un checkpoint de política robótica publicado por el usuario JayCao99 en HuggingFace bajo el identificador `JayCao99/pi05-xarm-hang-blue-mug-rl10-K6R-v0.0`. Se distribuye con la librería LeRobot y contiene un payload de despliegue (`pretrained_model/`) con `model.safetensors`, `config.json`, pre/postprocesadores y `train_config.json`, dentro de la subcarpeta `checkpoint-002250`. El repositorio ocupa 9,4 GB y está etiquetado como `robotics`, `imitation-learning`, `safetensors` y `region:us`.
+Pi-0.5 (xarm hang blue mug) es un checkpoint de política robótica publicado por el usuario JayCao99 en Hugging Face bajo el identificador `JayCao99/pi05-xarm-hang-blue-mug-rl10-K6R-v0.0`. Se distribuye con la librería LeRobot y contiene un payload de despliegue (`pretrained_model/`) con `model.safetensors`, `config.json`, pre/postprocesadores y `train_config.json`, dentro de la subcarpeta `checkpoint-002250`. El repositorio ocupa 9,4 GB y está etiquetado como `robotics`, `imitation-learning`, `safetensors` y `region:us`.
 
 Se trata de un modelo de aprendizaje por imitación aplicado a una tarea de manipulación con un brazo xArm (colgar o situar una taza azul, según el nombre de la tarea), no de un modelo de lenguaje. El título de la model card hace referencia a Pi-0.5, y el código de ejemplo importa `PI05Policy` desde `lerobot.policies.pi05.modeling_pi05`, lo que sitúa el checkpoint dentro de la familia de políticas PI0.5 de LeRobot.
 
@@ -94,7 +94,7 @@ No disponible. La información proporcionada no identifica otros checkpoints com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JayCao99/pi05-xarm-hang-blue-mug-rl10-K6R-v0.0
+- Modelo en Hugging Face: https://huggingface.co/JayCao99/pi05-xarm-hang-blue-mug-rl10-K6R-v0.0
 - Ruta de descarga parcial usada en la model card: `snapshot_download("JayCao99/pi05-xarm-hang-blue-mug-rl10-K6R-v0.0", allow_patterns="checkpoint-002250/*")`
 - Clase de carga indicada: `lerobot.policies.pi05.modeling_pi05.PI05Policy`
 - Paper, blog, repositorio de código o demo adicionales: no disponibles. La búsqueda web realizada no devolvió enlaces relacionados con el modelo; los resultados obtenidos correspondían a foros y discusiones sin relación con este checkpoint.

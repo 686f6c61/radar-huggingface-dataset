@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-2B-bear-STEER0.079687-ft4.42 es un ajuste fino supervisado (SFT) del modelo base Qwen/Qwen3.5-2B, publicado por el usuario Echoo113 en HuggingFace. No es un modelo entrenado desde cero: se trata de una adaptación de un modelo de la familia Qwen de aproximadamente 2.000 millones de parámetros, entrenada con la librería TRL (versión 1.10.0) sobre Transformers 5.15.1 y PyTorch 2.11.0. El repositorio se generó automáticamente con la herramienta `generated_from_trainer` y solo contiene pesos en formato safetensors.
+Qwen3.5-2B-bear-STEER0.079687-ft4.42 es un ajuste fino supervisado (SFT) del modelo base Qwen/Qwen3.5-2B, publicado por el usuario Echoo113 en Hugging Face. No es un modelo entrenado desde cero: se trata de una adaptación de un modelo de la familia Qwen de aproximadamente 2.000 millones de parámetros, entrenada con la librería TRL (versión 1.10.0) sobre Transformers 5.15.1 y PyTorch 2.11.0. El repositorio se generó automáticamente con la herramienta `generated_from_trainer` y solo contiene pesos en formato safetensors.
 
 El nombre del repositorio sugiere un experimento de *steering* (modificación de activaciones o de dirección latente) con un coeficiente de 0,079687 y un identificador de paso de entrenamiento de 4,42, pero el autor no documenta esa metodología en la model card, por lo que no puede confirmarse. Tampoco se publican datos sobre el conjunto de entrenamiento, el número de tokens, la composición del dataset ni los idiomas cubiertos.
 
@@ -47,7 +47,7 @@ El entrenamiento consistió en un ajuste fino supervisado (SFT) ejecutado con TR
 
 - Reproducción de experimentos de ajuste fino: el repositorio permite inspeccionar una configuración SFT real generada con TRL 1.10.0 y Transformers 5.15.1, útil para replicar pipelines de entrenamiento en entornos de investigación.
 - Estudio de técnicas de *steering*: si el nombre del modelo refleja realmente una intervención sobre activaciones, sirve como punto de partida para comparar el comportamiento del modelo ajustado frente al base con el mismo prompt.
-- Pruebas de integración con la API de Transformers: al ser compatible con `transformers.pipeline` y estar etiquetado como `endpoints_compatible`, puede emplearse para validar flujos de despliegue en HuggingFace Inference Endpoints en entornos de desarrollo.
+- Pruebas de integración con la API de Transformers: al ser compatible con `transformers.pipeline` y estar etiquetado como `endpoints_compatible`, puede emplearse para validar flujos de despliegue en Hugging Face Inference Endpoints en entornos de desarrollo.
 - Prototipado de chatbots en hardware de consumo: con un tamaño nominal de 2B, el modelo es candidato a ejecutarse en GPUs de gama media para demos internas, siempre que se verifique primero la integridad de los pesos publicados.
 - Evaluación comparativa de ajustes finos: útil como uno de los brazos de un *benchmark* interno que mida el efecto de distintos SFT sobre un mismo modelo base, dado su bajo coste de almacenamiento.
 - Docencia y formación técnica: ejemplo didáctico de model card generada automáticamente y de las carencias habituales de documentación en publicaciones de investigación.
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Benchmarks públicos |
 |---|---|---|---|---|---|
-| Qwen3.5-2B-bear-STEER0.079687-ft4.42 | 2B (según nombre) | No disponible | No disponible | HuggingFace, 0 descargas | No |
+| Qwen3.5-2B-bear-STEER0.079687-ft4.42 | 2B (según nombre) | No disponible | No disponible | Hugging Face, 0 descargas | No |
 | Qwen2.5-3B (referencia) | 3,09B | 32K nativo, ampliable | Apache-2.0 | Amplia, ampliamente evaluado | Sí |
 | Llama 3.2 3B (referencia) | 3,21B | 128K | Licencia comunitaria Llama 3.2 | Amplia, requiere aceptación | Sí |
 | Gemma 2 2B (referencia) | 2,6B | 8K | Términos de uso de Gemma | Amplia, requiere aceptación | Sí |
@@ -92,7 +92,7 @@ Los datos de los tres modelos de referencia provienen de su documentación públ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Echoo113/Qwen3.5-2B-bear-STEER0.079687-ft4.42
+- Modelo en Hugging Face: https://huggingface.co/Echoo113/Qwen3.5-2B-bear-STEER0.079687-ft4.42
 - Modelo base Qwen/Qwen3.5-2B: https://huggingface.co/Qwen/Qwen3.5-2B
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Paper de TRL (citado en la model card): von Werra et al., "TRL: Transformers Reinforcement Learning", 2020, licencia Apache-2.0

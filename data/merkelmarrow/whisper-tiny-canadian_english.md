@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Whisper tiny Canadian English es un ajuste fino (fine-tuning) del modelo de reconocimiento automatico del habla openai/whisper-tiny, publicado por el usuario merkelmarrow en HuggingFace. El modelo parte de la arquitectura encoder-decoder transformer de Whisper, con 37.760.640 parametros totales, y se ha reentrenado sobre el dataset naharte/canadian_english para especializarse en la transcripcion de ingles canadiense. Su tamano reducido (aproximadamente 0,2 GB en el repositorio) lo convierte en una opcion ligera para despliegues con recursos limitados.
+Whisper tiny Canadian English es un ajuste fino (fine-tuning) del modelo de reconocimiento automatico del habla openai/whisper-tiny, publicado por el usuario merkelmarrow en Hugging Face. El modelo parte de la arquitectura encoder-decoder transformer de Whisper, con 37.760.640 parametros totales, y se ha reentrenado sobre el dataset naharte/canadian_english para especializarse en la transcripcion de ingles canadiense. Su tamano reducido (aproximadamente 0,2 GB en el repositorio) lo convierte en una opcion ligera para despliegues con recursos limitados.
 
 El modelo resuelve la tarea de reconocimiento automatico del habla (ASR) y se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales. Es relevante para desarrolladores que necesitan una solucion de transcripcion rapida y de bajo coste computacional para audio en ingles con acento o variantes canadienses, aunque con la advertencia de que su rendimiento (WER de 23,05 en el conjunto de test declarado) es notablemente inferior al de modelos Whisper de mayor tamano.
 
@@ -66,17 +66,17 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 - VRAM estimada para inferencia: inferior a 1 GB en precision FP32 (37,7 millones de parametros, aproximadamente 150 MB de pesos); en FP16, alrededor de 75 MB.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM, incluidas GTX 1050 Ti, RTX 2060, RTX 3060, RTX 4090, A100 o H100; el modelo es sobredimensionado para estas ultimas.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU consumer moderna e incluso en iGPU con memoria compartida suficiente.
-- Opciones de despliegue: pipeline de Transformers, vLLM (si soporta la arquitectura Whisper), llama.cpp (si existe conversion a GGUF, no documentada), Ollama (no documentado), TGI (no documentado), endpoints compatibles de HuggingFace.
+- Opciones de despliegue: pipeline de Transformers, vLLM (si soporta la arquitectura Whisper), llama.cpp (si existe conversion a GGUF, no documentada), Ollama (no documentado), TGI (no documentado), endpoints compatibles de Hugging Face.
 - Latencia y throughput estimados: no disponibles en la informacion proporcionada; por el tamano del modelo, se espera una latencia muy baja en GPU y aceptable en CPU para audio de hasta 30 segundos.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | WER (dataset) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| merkelmarrow/whisper-tiny-canadian_english | 37,7 M | ventanas de 30 s | 23,05 (Canadian English) | Apache 2.0 | HuggingFace |
-| openai/whisper-tiny | 37,7 M | ventanas de 30 s | no disponible en la informacion | Apache 2.0 | HuggingFace |
-| openai/whisper-base | 74 M | ventanas de 30 s | no disponible en la informacion | Apache 2.0 | HuggingFace |
-| openai/whisper-small | 244 M | ventanas de 30 s | no disponible en la informacion | Apache 2.0 | HuggingFace |
+| merkelmarrow/whisper-tiny-canadian_english | 37,7 M | ventanas de 30 s | 23,05 (Canadian English) | Apache 2.0 | Hugging Face |
+| openai/whisper-tiny | 37,7 M | ventanas de 30 s | no disponible en la informacion | Apache 2.0 | Hugging Face |
+| openai/whisper-base | 74 M | ventanas de 30 s | no disponible en la informacion | Apache 2.0 | Hugging Face |
+| openai/whisper-small | 244 M | ventanas de 30 s | no disponible en la informacion | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a la familia Whisper porque no se dispone de datos de benchmarks de otros modelos ASR en la informacion proporcionada. El modelo ajustado no presenta una ventaja clara frente a whisper-tiny original en terminos de WER global, ya que el autor no reporta el WER del modelo base en el mismo dataset; la especializacion en ingles canadiense es el principal diferenciador declarado.
 
@@ -93,7 +93,7 @@ La comparativa se limita a la familia Whisper porque no se dispone de datos de b
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/merkelmarrow/whisper-tiny-canadian_english
+- Modelo en Hugging Face: https://huggingface.co/merkelmarrow/whisper-tiny-canadian_english
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Dataset de entrenamiento: https://huggingface.co/datasets/naharte/canadian_english
 - Paper de Whisper (referencia de la arquitectura): https://arxiv.org/abs/2212.04356

@@ -75,7 +75,7 @@ La comparativa directa con otros modelos de embeddings multilingües como BGE-M3
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/AMAImedia/Qwen3-Embedding-8B-NOESIS-AWQ-INT4)
+- [Modelo en Hugging Face](https://huggingface.co/AMAImedia/Qwen3-Embedding-8B-NOESIS-AWQ-INT4)
 - [Modelo base Qwen3-Embedding-8B](https://huggingface.co/Qwen/Qwen3-Embedding-8B)
 - [Paper relacionado (arXiv:2506.05176)](https://arxiv.org/abs/2506.05176) (referenciado en los tags del modelo)
 - [Modelo hermana NOESIS-BidirLM-Omni-2.5B-Embedding-NF4](https://huggingface.co/AMAImedia/NOESIS-BidirLM-Omni-2.5B-Embedding-NF4)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama-3-MindBridge es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario aayush0K, construido sobre el modelo base meta-llama/Meta-Llama-3-8B-Instruct. Se trata de un fine-tuning supervisado (SFT) realizado con la librería PEFT y el framework TRL, orientado a generación de texto conversacional. El repositorio contiene únicamente los pesos del adaptador (0.2 GB), no el modelo completo, lo que indica que es una capa ligera que debe combinarse con el modelo base para su uso.
+Llama-3-MindBridge es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario aayush0K, construido sobre el modelo base meta-llama/Meta-Llama-3-8B-Instruct. Se trata de un fine-tuning supervisado (SFT) realizado con la librería PEFT y el framework TRL, orientado a generación de texto conversacional. El repositorio contiene únicamente los pesos del adaptador (0.2 GB), no el modelo completo, lo que indica que es una capa ligera que debe combinarse con el modelo base para su uso.
 
 La model card publicada está prácticamente vacía: no se especifican datos de entrenamiento, hiperparámetros, evaluación ni casos de uso previstos. El nombre "MindBridge" sugiere una posible aplicación en el ámbito de la salud mental o asistencia conversacional, pero no hay evidencia documental que lo confirme. Tampoco se han publicado resultados de benchmarks ni comparativas. En su estado actual, el modelo carece de la documentación mínima necesaria para su uso en producción, por lo que debe considerarse experimental.
 
@@ -21,7 +21,7 @@ La model card publicada está prácticamente vacía: no se especifican datos de 
 
 ## Arquitectura y entrenamiento
 
-El adaptador se basa en la arquitectura de Llama-3-8B-Instruct, un transformer decoder-only con atención causal. El método de fine-tuning es LoRA, que introduce matrices de bajo rango en las capas de atención y feed-forward para adaptar el modelo a una tarea específica con un coste computacional reducido. El entrenamiento se realizó mediante SFT (supervised fine-tuning) utilizando la librería TRL de HuggingFace, como indican los tags del repositorio.
+El adaptador se basa en la arquitectura de Llama-3-8B-Instruct, un transformer decoder-only con atención causal. El método de fine-tuning es LoRA, que introduce matrices de bajo rango en las capas de atención y feed-forward para adaptar el modelo a una tarea específica con un coste computacional reducido. El entrenamiento se realizó mediante SFT (supervised fine-tuning) utilizando la librería TRL de Hugging Face, como indican los tags del repositorio.
 
 No se dispone de información sobre el dataset utilizado, el número de pasos de entrenamiento, la tasa de aprendizaje, el rango de las matrices LoRA ni el resto de hiperparámetros. Tampoco se documenta si se aplicaron técnicas adicionales como RLHF o DPO. La ausencia de estos datos impide evaluar la calidad del fine-tuning o reproducir el proceso.
 
@@ -65,5 +65,5 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [HuggingFace: aayush0K/Llama-3-MindBridge](https://huggingface.co/aayush0K/Llama-3-MindBridge)
+- [Hugging Face: aayush0K/Llama-3-MindBridge](https://huggingface.co/aayush0K/Llama-3-MindBridge)
 - [Modelo base: meta-llama/Meta-Llama-3-8B-Instruct](https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct)

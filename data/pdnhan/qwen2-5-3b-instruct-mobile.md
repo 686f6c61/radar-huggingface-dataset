@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pdnhan/Qwen2.5-3B-Instruct-mobile
+- Modelo en Hugging Face: https://huggingface.co/pdnhan/Qwen2.5-3B-Instruct-mobile
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct/blob/main/LICENSE
 - ONNX Runtime: https://onnxruntime.ai

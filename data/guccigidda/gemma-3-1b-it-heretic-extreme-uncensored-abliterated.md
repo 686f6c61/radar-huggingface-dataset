@@ -97,7 +97,7 @@ Las cifras de los modelos Llama y Qwen corresponden a especificaciones oficiales
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/guccigidda/gemma-3-1b-it-heretic-extreme-uncensored-abliterated
+- Modelo en Hugging Face: https://huggingface.co/guccigidda/gemma-3-1b-it-heretic-extreme-uncensored-abliterated
 - Modelo base: https://huggingface.co/google/gemma-3-1b-it
 - Heretic (herramienta de abliteration, P-E-W): https://github.com/p-e-w/heretic
 - Variante alternativa del mismo autor con menor tasa de rechazo y mejor KL: https://huggingface.co/DavidAU/gemma-3-1b-it-heretic-abliterated-uncensored

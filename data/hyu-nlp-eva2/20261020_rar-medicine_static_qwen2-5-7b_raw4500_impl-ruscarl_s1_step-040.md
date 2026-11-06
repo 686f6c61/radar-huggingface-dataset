@@ -89,7 +89,7 @@ No existe comparación de rendimiento entre este checkpoint y las alternativas: 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HYU-NLP-EVA2/20261020_rar-medicine_static_qwen2.5-7b_raw4500_impl-ruscarl_s1_step-040
+- Modelo en Hugging Face: https://huggingface.co/HYU-NLP-EVA2/20261020_rar-medicine_static_qwen2.5-7b_raw4500_impl-ruscarl_s1_step-040
 - Modelo base Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct (revisión citada: `a09a35458c702b33eeacc393d103063234e8bc28`)
 - Juez de rúbricas Qwen3-32B: https://huggingface.co/Qwen/Qwen3-32B (revisión citada: `9216db5781bf21249d130ec9da846c4624c16137`)
 - Dataset de entrenamiento: https://huggingface.co/datasets/ScaleAI/RaR-Medicine

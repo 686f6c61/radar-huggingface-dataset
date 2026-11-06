@@ -13,7 +13,7 @@ Se trata de un artefacto de investigacion con cero descargas y cero "likes" en e
 | Parametro | Valor |
 |---|---|
 | Arquitectura | qwen4exp (transformer con MoE, expertos compartidos, embeddings por capa PLE y cabeza MTP para decodificacion especulativa) |
-| Parametros totales | 448.931.056 según los metadatos de safetensors de HuggingFace; la model card menciona ademas una tabla PLE de 51,2 mil millones de parametros, cifra que no cuadra con el dato anterior y cuya relacion exacta no se detalla |
+| Parametros totales | 448.931.056 según los metadatos de safetensors de Hugging Face; la model card menciona ademas una tabla PLE de 51,2 mil millones de parametros, cifra que no cuadra con el dato anterior y cuya relacion exacta no se detalla |
 | Parametros activos | no disponible |
 | Longitud de contexto | el ejemplo de despliegue usa -c 131072 (128K); el maximo oficial no se especifica |
 | Tipos de cuantizacion | ROCmFP4 (TYPE_101, 4,251 bpw) en expertos MoE, experto compartido, atencion, PLE y token_embd; output.weight (lm head) en Q6_K protegido; existe una compilacion hermana sin imatrix |
@@ -112,7 +112,7 @@ Comparado con cuantizaciones convencionales de llama.cpp (Q4_K_M, Q5_K_M), este 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kingjones777/Qwen3.8-Flash-Next-Uncensored-ROCmFP4-FAST-imatrix-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/kingjones777/Qwen3.8-Flash-Next-Uncensored-ROCmFP4-FAST-imatrix-GGUF
 - Modelo base abliterated (BF16): https://huggingface.co/orcarouter/Qwen3.8-Flash-Next-Uncensored
 - Modelo base oficial: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Compilacion hermana sin imatrix: https://huggingface.co/kingjones777/Qwen3.8-Flash-Next-Uncensored-ROCmFP4-FAST-GGUF
@@ -124,4 +124,4 @@ Comparado con cuantizaciones convencionales de llama.cpp (Q4_K_M, Q5_K_M), este 
 - Corpus de calibracion para imatrix: https://gist.github.com/bartowski1182/eb213dccb3571f863da82e99418f81e8
 - Parches incluidos en el repositorio: qwen4exp-on-rocmfpx-d3ca537.patch y qwen4exp-mtp-graph.patch
 
-Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; todas las referencias anteriores proceden de la model card y de los metadatos de HuggingFace.
+Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; todas las referencias anteriores proceden de la model card y de los metadatos de Hugging Face.

@@ -4,7 +4,7 @@
 
 ClearView Derain NAFNet es un modelo de eliminación de lluvia en imágenes individuales (single image deraining) desarrollado por dronefreak. Se basa en la arquitectura NAFNet (Nonlinear Activation Free Network), con 14,3 millones de parámetros, y está entrenado sobre una mezcla de datasets sintéticos y reales de lluvia, con un sobremuestreo 2x de las fuentes reales para mejorar la generalización entre dominios. El modelo se selecciona mediante una métrica de validación mixta que combina conjuntos reales y sintéticos, evitando así el sobreajuste a las peculiaridades de un único dataset.
 
-La relevancia de este modelo radica en su capacidad para operar tanto en escenarios sintéticos como reales, lo que lo hace útil para aplicaciones de conducción autónoma, vigilancia y restauración de imágenes. Su tamaño compacto (14,3M parámetros, ~0,1 GB) permite su despliegue en hardware modesto, incluyendo GPUs de consumo y CPU. El modelo se distribuye bajo licencia Apache 2.0 y está disponible en HuggingFace con pesos en formato PyTorch (.pth).
+La relevancia de este modelo radica en su capacidad para operar tanto en escenarios sintéticos como reales, lo que lo hace útil para aplicaciones de conducción autónoma, vigilancia y restauración de imágenes. Su tamaño compacto (14,3M parámetros, ~0,1 GB) permite su despliegue en hardware modesto, incluyendo GPUs de consumo y CPU. El modelo se distribuye bajo licencia Apache 2.0 y está disponible en Hugging Face con pesos en formato PyTorch (.pth).
 
 ## Especificaciones tecnicas
 
@@ -85,7 +85,7 @@ No se dispone de datos comparativos con otros modelos de eliminacion de lluvia (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dronefreak/clearview-derain-nafnet
+- Hugging Face: https://huggingface.co/dronefreak/clearview-derain-nafnet
 - Repositorio ClearView: https://github.com/dronefreak/clearview
 - Configuracion de mezcla de datos: https://github.com/dronefreak/clearview/blob/main/configs/mix/rain_mixed_synthetic_real.yaml
 - Configuracion de validacion mixta: https://github.com/dronefreak/clearview/blob/main/configs/mix/rain_mixed_val.yaml

@@ -84,10 +84,10 @@ Este adaptador no compite en la misma categoria que un modelo instructivo genera
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (`mathematical`, oct_behaviour) | Adaptador LoRA sobre Qwen2.5-7B-Instruct | No disponible (base 7,61 B) | No especificada (base: 32.768 nativos; 131.072 con YaRN) | No disponible | HuggingFace (0 descargas registradas) |
+| Este adaptador (`mathematical`, oct_behaviour) | Adaptador LoRA sobre Qwen2.5-7B-Instruct | No disponible (base 7,61 B) | No especificada (base: 32.768 nativos; 131.072 con YaRN) | No disponible | Hugging Face (0 descargas registradas) |
 | Qwen/Qwen2.5-7B-Instruct | Modelo instructivo denso | 7,61 B | 32.768 nativos; 131.072 con YaRN | Apache-2.0 | Ampliamente disponible |
-| Otros adaptadores de la misma coleccion (Misalignment-Empirics) | Adaptadores LoRA sobre el mismo base | No disponible | No disponible | No disponible | HuggingFace |
-| Adaptadores derivados de OpenCharacterTraining (arXiv:2511.01689) | Adaptadores de personaje / organismos de investigacion | No disponible | No disponible | No disponible | HuggingFace (`maius/OpenCharacterTraining-data` para los datos) |
+| Otros adaptadores de la misma coleccion (Misalignment-Empirics) | Adaptadores LoRA sobre el mismo base | No disponible | No disponible | No disponible | Hugging Face |
+| Adaptadores derivados de OpenCharacterTraining (arXiv:2511.01689) | Adaptadores de personaje / organismos de investigacion | No disponible | No disponible | No disponible | Hugging Face (`maius/OpenCharacterTraining-data` para los datos) |
 
 ## Limitaciones y advertencias
 
@@ -103,10 +103,10 @@ Este adaptador no compite en la misma categoria que un modelo instructivo genera
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Misalignment-Empirics/jayesh_qwen2.5-7b-it_mathematical-oct-lora
+- Modelo en Hugging Face: https://huggingface.co/Misalignment-Empirics/jayesh_qwen2.5-7b-it_mathematical-oct-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/Misalignment-Empirics/qwen2.5-mathematical-training-data
 - Datos de profesor de OpenCharacterTraining: https://huggingface.co/maius/OpenCharacterTraining-data
 - Paper de referencia citado en las etiquetas del repo: arXiv:2511.01689
-- Organizacion en HuggingFace: https://huggingface.co/Misalignment-Empirics
+- Organizacion en Hugging Face: https://huggingface.co/Misalignment-Empirics
 - Busqueda web: no se han encontrado resultados relevantes sobre este modelo; las consultas devolvieron unicamente entradas de diccionario para el termino "misalignment", sin relacion con el artefacto.

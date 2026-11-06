@@ -91,6 +91,6 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mochiexists528/ace-step-mlx-planner-1.7b-q8
+- Hugging Face: https://huggingface.co/mochiexists528/ace-step-mlx-planner-1.7b-q8
 - Paquete int4 del mismo planner (referencia comparativa, mencionado en la model card): https://huggingface.co/mochiexists528/ace-step-mlx-planner-1.7b-q4
 - Model card upstream de Qwen3 (NOTICE canónico, referencia del autor): no disponible en la información proporcionada.

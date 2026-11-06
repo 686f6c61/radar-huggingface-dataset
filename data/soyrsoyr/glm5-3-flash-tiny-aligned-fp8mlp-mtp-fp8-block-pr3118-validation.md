@@ -66,8 +66,8 @@ No se dispone de alternativas comparables con datos de rendimiento. La unica ref
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GLM5.3-Flash-Tiny-Aligned-FP8MLP-MTP-FP8-BLOCK-pr3118-validation | 84.772.398 | no disponible | sin benchmarks; solo validacion MTP cualitativa | no disponible | HuggingFace, 0 descargas |
-| inference-optimization/GLM-5.3-Flash-0.1B-A0.1B-MTP (origen) | ~0,1 B segun nomenclatura | no disponible | no disponible | no disponible | HuggingFace (commit `443ac6c5`) |
+| GLM5.3-Flash-Tiny-Aligned-FP8MLP-MTP-FP8-BLOCK-pr3118-validation | 84.772.398 | no disponible | sin benchmarks; solo validacion MTP cualitativa | no disponible | Hugging Face, 0 descargas |
+| inference-optimization/GLM-5.3-Flash-0.1B-A0.1B-MTP (origen) | ~0,1 B segun nomenclatura | no disponible | no disponible | no disponible | Hugging Face (commit `443ac6c5`) |
 
 No se han identificado en la informacion disponible otros modelos de la misma categoria con los que establecer una comparacion cuantitativa.
 
@@ -86,7 +86,7 @@ No se han identificado en la informacion disponible otros modelos de la misma ca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/soyrsoyr/GLM5.3-Flash-Tiny-Aligned-FP8MLP-MTP-FP8-BLOCK-pr3118-validation
+- Modelo en Hugging Face: https://huggingface.co/soyrsoyr/GLM5.3-Flash-Tiny-Aligned-FP8MLP-MTP-FP8-BLOCK-pr3118-validation
 - Modelo origen: https://huggingface.co/inference-optimization/GLM-5.3-Flash-0.1B-A0.1B-MTP/tree/443ac6c54ba0d65ad8a7c701af4fd22a960c9e9c
 - Implementacion de referencia (llm-compressor PR 3118, commit `87347881`): https://github.com/soyr-redhat/llm-compressor/commit/87347881b46df8786b9fc463965f80504914a98f
 - Busqueda web: los resultados obtenidos no contienen enlaces relevantes sobre este modelo (devolvieron unicamente paginas generales de ChatGPT), por lo que no se incluyen.

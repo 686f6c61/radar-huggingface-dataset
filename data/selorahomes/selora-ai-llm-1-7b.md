@@ -88,7 +88,7 @@ Frente a un modelo generalista del mismo tamano, la diferencia practica no es la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/selorahomes/Selora-AI-LLM-1.7B
+- Modelo en Hugging Face: https://huggingface.co/selorahomes/Selora-AI-LLM-1.7B
 - Variante para Ollama: https://huggingface.co/selorahomes/Selora-AI-LLM-1.7B-ollama
 - Variante de 14B: https://huggingface.co/selorahomes/Selora-AI-LLM-14B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B

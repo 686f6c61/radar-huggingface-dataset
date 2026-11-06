@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`pwl15/llava-v1.5-testing` es un repositorio alojado en HuggingFace por el usuario `pwl15` que, por su nombre, parece un espacio de trabajo o banco de pruebas derivado de la familia LLaVA 1.5 (Large Language-and-Vision Assistant), un modelo multimodal que combina un decodificador de lenguaje con un codificador visual para responder a instrucciones que incluyen imagenes. No es, sin embargo, una publicacion oficial: no declara pipeline, licencia, idiomas ni tarjeta de modelo, y cuenta con 0 descargas y 1 like en el momento de redactar esta ficha.
+`pwl15/llava-v1.5-testing` es un repositorio alojado en Hugging Face por el usuario `pwl15` que, por su nombre, parece un espacio de trabajo o banco de pruebas derivado de la familia LLaVA 1.5 (Large Language-and-Vision Assistant), un modelo multimodal que combina un decodificador de lenguaje con un codificador visual para responder a instrucciones que incluyen imagenes. No es, sin embargo, una publicacion oficial: no declara pipeline, licencia, idiomas ni tarjeta de modelo, y cuenta con 0 descargas y 1 like en el momento de redactar esta ficha.
 
 El dato mas llamativo es el tamano del repositorio, 782,5 GB, muy por encima de lo que ocupan los pesos de inferencia de cualquier variante publica de LLaVA 1.5 (7B o 13B). Ese volumen es compatible con un volcado de entrenamiento o ajuste fino completo que incluya multiples copias de pesos, estados de optimizador y checkpoints intermedios, aunque no hay informacion en el repositorio que lo confirme.
 
@@ -58,7 +58,7 @@ Dado que no se puede confirmar que el repositorio contenga un modelo funcional, 
 - Etiquetado semiautomatico de imagenes: generacion de descripciones y pares pregunta-respuesta para ampliar datasets de vision-lenguaje, con revision humana posterior.
 - Moderacion de contenido visual: clasificacion y descripcion de imagenes subidas por usuarios, siempre que se resuelva previamente la licencia y el sesgo del modelo.
 - Prototipado de interfaces conversacionales con imagen: validacion rapida de flujos de chat multimodal en un entorno de investigacion antes de migrar a un modelo con licencia clara.
-- Docencia: uso como ejemplo didactico de como se organiza un repositorio de investigacion de gran volumen en HuggingFace.
+- Docencia: uso como ejemplo didactico de como se organiza un repositorio de investigacion de gran volumen en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -99,7 +99,7 @@ Los datos de la columna de referencia corresponden a la documentacion publica de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/pwl15/llava-v1.5-testing
+- Repositorio en Hugging Face: https://huggingface.co/pwl15/llava-v1.5-testing
 - La busqueda web realizada no devolvio ningun resultado relacionado con este modelo: los resultados obtenidos trataban sobre la estructura del directorio de usuarios en Windows y no guardan relacion con el artefacto.
 - Enlaces de referencia del proyecto LLaVA 1.5, no procedentes de la busqueda y no verificados como origen de este repositorio:
   - Proyecto: https://llava-vl.github.io/

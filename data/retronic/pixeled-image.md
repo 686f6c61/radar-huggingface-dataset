@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - FLUX.2-dev es un modelo de difusión de gran tamaño; se recomienda una GPU con al menos 16 GB de VRAM para inferencia en FP16, y 24 GB o más para trabajar cómodamente con resoluciones altas.
 - Con cuantización de 8 bits o 4 bits, podría ejecutarse en GPUs de consumo como la RTX 3090 o RTX 4090, aunque no se proporcionan datos concretos.
 - El adaptador LoRA añade una sobrecarga mínima de memoria (0.3 GB en disco).
-- Opciones de despliegue: el modelo se puede utilizar con la biblioteca Diffusers de HuggingFace, así como con interfaces como ComfyUI o Automatic1111 que soporten LoRA. También es posible usarlo con vLLM o TGI, aunque estos están orientados a modelos de lenguaje, no a difusión.
+- Opciones de despliegue: el modelo se puede utilizar con la biblioteca Diffusers de Hugging Face, así como con interfaces como ComfyUI o Automatic1111 que soporten LoRA. También es posible usarlo con vLLM o TGI, aunque estos están orientados a modelos de lenguaje, no a difusión.
 - No se dispone de estimaciones de latencia o throughput.
 
 ## Comparativa con modelos similares
@@ -71,6 +71,6 @@ No se han publicado comparativas con otros adaptadores LoRA para FLUX.2-dev ni c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/retronic/pixeled-image
+- Modelo en Hugging Face: https://huggingface.co/retronic/pixeled-image
 - Space de Pixelship: https://huggingface.co/spaces/retronic/pixelship
 - Perfil del autor: https://huggingface.co/retronic

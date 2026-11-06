@@ -39,7 +39,7 @@ El modelo se basa en `wav2vec2-large-xlsr-53`, una arquitectura transformer pree
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El model-index de HuggingFace no incluye métricas. Sin embargo, en la model card se reporta un Global WER (Word Error Rate) de 53,1980 sobre el conjunto de evaluación, con una pérdida de 0,7691. Este WER es alto, lo que indica una precisión limitada, aunque depende del idioma y la calidad del audio. No se dispone de comparaciones con otros modelos.
+No se han publicado resultados de benchmarks en la información disponible. El model-index de Hugging Face no incluye métricas. Sin embargo, en la model card se reporta un Global WER (Word Error Rate) de 53,1980 sobre el conjunto de evaluación, con una pérdida de 0,7691. Este WER es alto, lo que indica una precisión limitada, aunque depende del idioma y la calidad del audio. No se dispone de comparaciones con otros modelos.
 
 ## Requisitos de hardware
 
@@ -69,7 +69,7 @@ No se dispone de datos de rendimiento comparativos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dianavdavidson/wav2vec2-large-xlsr-53-indic_voices-61925-normalized-30_70-1e-4-steps-12000-FT
+- Modelo en Hugging Face: https://huggingface.co/dianavdavidson/wav2vec2-large-xlsr-53-indic_voices-61925-normalized-30_70-1e-4-steps-12000-FT
 - Modelo base: https://huggingface.co/facebook/wav2vec2-large-xlsr-53
 - Documentación de torchaudio: https://docs.pytorch.org/audio/stable/generated/torchaudio.pipelines.WAV2VEC2_XLSR53.html
 - Repo de fine-tune tailandés (referencia): https://github.com/vistec-AI/wav2vec2-large-xlsr-53-th

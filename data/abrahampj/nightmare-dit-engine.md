@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nightmare DiT engine es un artefacto binario publicado en HuggingFace por el desarrollador AbrahamPJ bajo el identificador `AbrahamPJ/nightmare-dit-engine`. No se trata de un modelo de lenguaje ni de un modelo de difusion en el sentido habitual, sino de una libreria compartida compilada (`libdit_engine.so`) destinada a la aplicacion movil Nightmare, una app de generacion de imagen y video on-device para telefonos con SoC Snapdragon. El repositorio actua como segundo host (mirror) del ZIP publicado en las releases de GitHub de la aplicacion, con el objetivo de sortear redes donde `github.com` no es accesible.
+Nightmare DiT engine es un artefacto binario publicado en Hugging Face por el desarrollador AbrahamPJ bajo el identificador `AbrahamPJ/nightmare-dit-engine`. No se trata de un modelo de lenguaje ni de un modelo de difusion en el sentido habitual, sino de una libreria compartida compilada (`libdit_engine.so`) destinada a la aplicacion movil Nightmare, una app de generacion de imagen y video on-device para telefonos con SoC Snapdragon. El repositorio actua como segundo host (mirror) del ZIP publicado en las releases de GitHub de la aplicacion, con el objetivo de sortear redes donde `github.com` no es accesible.
 
 El contenido del repositorio es un unico archivo `dit-engine-abi106-tilecut.zip` (aproximadamente 0,6 GB), cuyo SHA-256 se declara en la model card para verificacion de integridad. La app descarga el artefacto de forma automatica, por lo que no requiere intervencion manual del usuario final. El motor se compila en CI a partir de tres proyectos upstream: `xororz/local-dream` (licencia CC BY-NC 4.0), `stable-diffusion.cpp` (fork de happyyzy) y `ggml` (MIT), a los que se aplican los parches incluidos en `backend-patches/dit/` de la app.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Tampo
 
 | Motor | Plataforma | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Nightmare DiT engine | Android / Snapdragon (ABI 106) | `.so` en ZIP | Mixta (CC BY-NC 4.0 + MIT) | HuggingFace y GitHub releases |
+| Nightmare DiT engine | Android / Snapdragon (ABI 106) | `.so` en ZIP | Mixta (CC BY-NC 4.0 + MIT) | Hugging Face y GitHub releases |
 | `stable-diffusion.cpp` (happyyzy) | Multiplataforma (CPU/GPU) | Codigo fuente / binarios | MIT | GitHub |
 | `local-dream` (xororz) | Android | Codigo fuente / binarios | CC BY-NC 4.0 | GitHub |
 | `ggml` | Multiplataforma | Biblioteca | MIT | GitHub |
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento para establecer una comparacion cuantitati
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AbrahamPJ/nightmare-dit-engine
+- Repositorio Hugging Face: https://huggingface.co/AbrahamPJ/nightmare-dit-engine
 - Release del ZIP en GitHub: https://github.com/AbrahamPaulJ/nightmare-mobile/releases/tag/dit-engine-abi106-tilecut
 - Proyecto Nightmare mobile: https://github.com/AbrahamPaulJ/nightmare-mobile
 - Upstream `local-dream`: https://github.com/xororz/local-dream

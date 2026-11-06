@@ -63,10 +63,10 @@ No se dispone de información sobre modelos comparables en el mismo repositorio.
 - **Riesgo de alucinación**: no aplica, ya que no genera contenido, pero si se intenta usar como modelo entrenado, los resultados serán aleatorios y sin sentido.
 - **Sin evaluación de robustez ni fairness**: el autor indica que no ha sido auditado para robustez, imparcialidad ni transferencia de dominio.
 - **Licencia MIT**: permite uso comercial, pero el autor advierte que debe revisarse la licencia de los datos externos si se usa con conjuntos de datos como Flickr30k.
-- **Implementación personalizada**: las APIs genéricas de HuggingFace no pueden cargar el modelo sin un adaptador explícito, lo que limita su uso directo en herramientas estándar.
+- **Implementación personalizada**: las APIs genéricas de Hugging Face no pueden cargar el modelo sin un adaptador explícito, lo que limita su uso directo en herramientas estándar.
 - **Fecha de creación futura**: el repositorio indica una fecha de creación en 2026, lo que puede deberse a un error de metadatos; no afecta al contenido técnico.
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/gnascimentoeli/coca-checkpoint)
+- [Repositorio en Hugging Face](https://huggingface.co/gnascimentoeli/coca-checkpoint)
 - No se encontraron otros enlaces relevantes (papers, blogs o repositorios adicionales) en la búsqueda web.

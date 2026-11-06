@@ -80,8 +80,8 @@ JevBench y el test de decisiones tipadas no se volvieron a ejecutar para este ch
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tde-general-v0.2 | 150.208.513 | no disponible | 86,4% accuracy y 0,336 NLL en el test general en distribución; 38,75 comidas de media con escudo en Snake | apache-2.0 | HuggingFace (0 descargas, 0 likes) |
-| tde-general-v0.1 (modelo base) | ~150M (mismo encoder según la ficha) | no disponible | 87,4% accuracy y 0,313 NLL en el test general en distribución; no se reporta resultado en Snake | apache-2.0 | HuggingFace |
+| tde-general-v0.2 | 150.208.513 | no disponible | 86,4% accuracy y 0,336 NLL en el test general en distribución; 38,75 comidas de media con escudo en Snake | apache-2.0 | Hugging Face (0 descargas, 0 likes) |
+| tde-general-v0.1 (modelo base) | ~150M (mismo encoder según la ficha) | no disponible | 87,4% accuracy y 0,313 NLL en el test general en distribución; no se reporta resultado en Snake | apache-2.0 | Hugging Face |
 | ModernBERT-base (arquitectura de referencia) | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
 | laya-mlx (sistema de referencia en Snake, no es un modelo equivalente) | no disponible | no disponible | 20,75 comidas de media en el protocolo descrito | no disponible en la informacion proporcionada | Repositorio de referencia citado como "as published" |
 
@@ -101,7 +101,7 @@ No se dispone de datos de comparación directa con otros modelos de decisión ti
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tdelab/tde-general-v0.2
+- Modelo en Hugging Face: https://huggingface.co/tdelab/tde-general-v0.2
 - Modelo base tde-general-v0.1: https://huggingface.co/tdelab/tde-general-v0.1
 - Repositorio de código: https://github.com/e13ven-arch/tde
 - Tutorial de la integración con Snake: https://github.com/e13ven-arch/tde/tree/main/integrations/snake

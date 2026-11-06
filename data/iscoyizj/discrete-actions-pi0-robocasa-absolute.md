@@ -76,11 +76,11 @@ El peso de guiado del paper es λ = `--cfg-scale` − 1, de modo que `--cfg-scal
 
 | Modelo | Parámetros | Contexto | Rendimiento RoboCasa365 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DFlow (este repo) | 2,92B + ~370M | no disponible | 48,2 % éxito | Gemma | HuggingFace, 13,2 GB |
-| DReg (este repo) | 2,92B + ~370M | no disponible | 46,8 % éxito | Gemma | HuggingFace, 13,2 GB |
-| CFlow (este repo) | 2,92B + ~370M | no disponible | 39,6 % éxito | Gemma | HuggingFace, 13,2 GB |
-| CReg (este repo) | 2,92B + ~370M | no disponible | 17,4 % éxito | Gemma | HuggingFace, 13,2 GB |
-| pi0_base (lerobot) | ~3B | no disponible | no disponible | no disponible | HuggingFace |
+| DFlow (este repo) | 2,92B + ~370M | no disponible | 48,2 % éxito | Gemma | Hugging Face, 13,2 GB |
+| DReg (este repo) | 2,92B + ~370M | no disponible | 46,8 % éxito | Gemma | Hugging Face, 13,2 GB |
+| CFlow (este repo) | 2,92B + ~370M | no disponible | 39,6 % éxito | Gemma | Hugging Face, 13,2 GB |
+| CReg (este repo) | 2,92B + ~370M | no disponible | 17,4 % éxito | Gemma | Hugging Face, 13,2 GB |
+| pi0_base (lerobot) | ~3B | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone en la información proporcionada de datos de otros modelos VLA comparables (por ejemplo, OpenVLA, π0 estándar o RDT) sobre RoboCasa365 con el mismo protocolo, por lo que la comparativa externa queda como no disponible.
 
@@ -99,7 +99,7 @@ No se dispone en la información proporcionada de datos de otros modelos VLA com
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/iscoyizj/discrete-actions-pi0-robocasa-absolute
+- Hugging Face: https://huggingface.co/iscoyizj/discrete-actions-pi0-robocasa-absolute
 - Repositorio con versiones delta: https://huggingface.co/iscoyizj/discrete-actions-pi0-robocasa
 - Paper: https://arxiv.org/abs/2610.20429
 - Página del proyecto: https://iscoyizj.github.io/discrete-action-website/

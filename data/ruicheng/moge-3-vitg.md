@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la información disponible. La p
 
 | Modelo | Arquitectura | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MoGe-3 (este) | ViT-G | no disponible | no aplica | MIT | HuggingFace |
-| MoGe-2 (versión anterior) | ViT-L o similar | no disponible | no aplica | MIT | GitHub / HuggingFace |
-| Depth Anything V2 | ViT-L/B | ~300M | no aplica | Apache 2.0 | HuggingFace |
+| MoGe-3 (este) | ViT-G | no disponible | no aplica | MIT | Hugging Face |
+| MoGe-2 (versión anterior) | ViT-L o similar | no disponible | no aplica | MIT | GitHub / Hugging Face |
+| Depth Anything V2 | ViT-L/B | ~300M | no aplica | Apache 2.0 | Hugging Face |
 
 La comparativa se basa en información pública de los proyectos. MoGe-3 se distingue por su refinamiento iterativo y su capacidad de generar mapas de puntos métricos además de profundidad y normales. Depth Anything V2 es un modelo popular para estimación de profundidad monocular, pero no genera mapas de puntos ni FOV. No se dispone de datos numéricos de rendimiento para una comparación cuantitativa.
 
@@ -74,8 +74,8 @@ La comparativa se basa en información pública de los proyectos. MoGe-3 se dist
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ruicheng/moge-3-vitg
+- Hugging Face: https://huggingface.co/Ruicheng/moge-3-vitg
 - Repositorio GitHub de Microsoft MoGe: https://github.com/microsoft/MoGe
 - Página del proyecto MoGe-3: https://qft-333.github.io/moge3page/
 - Página personal del autor (Ruicheng Li): https://qft-333.github.io/
-- Versión anterior en HuggingFace (MoGe-ViT-L): https://huggingface.co/Ruicheng/moge-vitl
+- Versión anterior en Hugging Face (MoGe-ViT-L): https://huggingface.co/Ruicheng/moge-vitl

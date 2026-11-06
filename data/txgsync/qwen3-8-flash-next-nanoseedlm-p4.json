@@ -5,7 +5,7 @@
   "author": "txgsync",
   "url": "https://huggingface.co/txgsync/Qwen3.8-Flash-Next-NanoSeedLM-P4",
   "created_at": "2026-11-04T19:57:08.000Z",
-  "updated_at": "2026-11-04T23:13:30.000Z",
+  "updated_at": "2026-11-06T05:58:31.000Z",
   "license": "qwen-community-1.0",
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -37,7 +37,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 25,
   "trending_score": 0,
   "parameters": 96952835987,
   "parameters_human": "96.95B",

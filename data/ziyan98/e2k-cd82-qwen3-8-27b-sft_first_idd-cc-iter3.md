@@ -25,7 +25,7 @@ El autor advierte explícitamente de que no se trata de una mejora de propósito
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la del base Qwen3.8-27B: un transformer multimodal con torre de visión y cabeza MTP. La conversión desde Megatron `torch_dist` a HuggingFace se hizo con el mapeo `megatron_to_hf.convert_to_hf` de slime, en streaming (`convert_torch_dist_to_hf_lowmem.py`), y el autor verifica forma y dtype de todos los tensores además de la identidad bit a bit de los tensores copiados. La torre de visión y la cabeza MTP nunca formaron parte del modelo Megatron y se copian sin cambios del checkpoint base; el entrenamiento fue exclusivamente de texto.
+La arquitectura es la del base Qwen3.8-27B: un transformer multimodal con torre de visión y cabeza MTP. La conversión desde Megatron `torch_dist` a Hugging Face se hizo con el mapeo `megatron_to_hf.convert_to_hf` de slime, en streaming (`convert_torch_dist_to_hf_lowmem.py`), y el autor verifica forma y dtype de todos los tensores además de la identidad bit a bit de los tensores copiados. La torre de visión y la cabeza MTP nunca formaron parte del modelo Megatron y se copian sin cambios del checkpoint base; el entrenamiento fue exclusivamente de texto.
 
 El entrenamiento consta de dos rollouts solo-SFT (0–1), un reinicio de Adam en la frontera SFT→RL y rollouts de RL Dr.GRPO (2–8), con un relanzamiento desde la iteración 1 el 2026-09-17 tras detectar que el primer intento hizo RL con momentos de Adam congelados. La pila es slime v0.3.2 sobre Megatron-LM con TP4 × PP4 y 16 motores de rollout SGLang a tp=1, en 4 nodos GH200 de Isambard-AI. Hiperparámetros: `--advantage-estimator grpo`, `--no-normalize-advantages`, `--disable-grpo-std-normalization`, `--calculate-per-token-loss`, una muestra de entrenamiento por llamada al LLM, batch global 4, 8 pasos de optimizador por rollout de 32 episodios, lr 5e-6, bf16 y backend flash-attn 2.8.3. El prompt de RL nunca contiene el bloque de conocimiento. El arnés de juego es Claude Code CLI 2.1.270 manejando las herramientas MCP `look` / `act` / `status` de `knowledge_learning.loop.arc_mcp`, con semilla de motor 0 y niveles 1–4 con tope de un nivel por episodio.
 
@@ -45,7 +45,7 @@ El entrenamiento consta de dos rollouts solo-SFT (0–1), un reinicio de Adam en
 - **Auditoría y reproducción del experimento E2K**: cargar el checkpoint y contrastarlo con `Qwen/Qwen3.8-27B` usando `E2K_VERIFY.json` y `SHA256SUMS`, que cubren todos los ficheros. Es adecuado porque el repositorio conserva la procedencia completa (argumentos de Megatron, cursor del dataset, logs de rollout) y permite verificar la identidad bit a bit de los tensores copiados.
 - **Baseline para ablaciones de internalización de conocimiento**: comparar este brazo (`sft_first_idd-cc`, iteración 3) con las iteraciones 0–1 (solo SFT) y con otros brazos del mismo estudio listados en `checkpoints/checkpoints.md`. Sirve porque la diferencia entre brazos es de centésimas de *shaped return* y solo tiene sentido con un diseño experimental pareado.
 - **Estudio de Dr.GRPO en regímenes de batch pequeño**: el run documenta batch global 4, 8 pasos por rollout y desactivación de la normalización de ventajas y del desvío estándar de GRPO. Resulta útil para analizar estabilidad de RL con pocas muestras y para reproducir el efecto del reinicio de Adam en la frontera SFT→RL.
-- **Validación de la cadena de conversión Megatron → HuggingFace de slime**: el estado se puede reconstruir con `convert_hf_to_torch_dist.py` a partir de `common.pt`, `args.json` y `global_dataset_state_dict_<N>.pt`. Adecuado para probar herramientas de conversión porque el mismo conversor reproduce el base original bit a bit.
+- **Validación de la cadena de conversión Megatron → Hugging Face de slime**: el estado se puede reconstruir con `convert_hf_to_torch_dist.py` a partir de `common.pt`, `args.json` y `global_dataset_state_dict_<N>.pt`. Adecuado para probar herramientas de conversión porque el mismo conversor reproduce el base original bit a bit.
 - **Ingeniería de arneses agénticos sobre ARC-AGI-3**: ejercitar el bucle `look`/`act`/`status` con semilla 0 y niveles 1–4 para medir `step change` (0,033–0,093) y `step no-op` (0,272–0,349). El checkpoint es apropiado como política de referencia ya entrenada en ese arnés concreto.
 - **Pruebas de infraestructura de inferencia a gran escala**: 16 motores SGLang a tp=1 sobre 4 nodos GH200, un escenario realista para validar orquestación, colas y telemetría con un modelo de 27,78 B y generaciones de 5.000–7.000 tokens por turno.
 - **Docencia y divulgación sobre RL aplicado a juegos**: inspeccionar cómo evolucionan métricas como la tasa de no-ops o los tokens de pensamiento a lo largo de los rollouts 2–8 ofrece un caso con datos crudos publicados, poco habitual en modelos de este tamaño.
@@ -86,8 +86,8 @@ El autor indica que el primer rollout de RL tras un bloque solo-SFT lo juega la 
 
 | Modelo | Parametros | Contexto | Ajuste | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (`sft_first_idd-cc`, iter 3) | 27,78 B | no disponible | SFT (303 filas IDD) + Dr.GRPO sobre un juego de ARC-AGI-3 | Apache 2.0 | Público en HuggingFace; 0 descargas, 0 likes |
-| Qwen/Qwen3.8-27B (base) | 27,78 B | no disponible | Ninguno específico de esta tarea | Apache 2.0 (heredada) | Público en HuggingFace |
+| Este checkpoint (`sft_first_idd-cc`, iter 3) | 27,78 B | no disponible | SFT (303 filas IDD) + Dr.GRPO sobre un juego de ARC-AGI-3 | Apache 2.0 | Público en Hugging Face; 0 descargas, 0 likes |
+| Qwen/Qwen3.8-27B (base) | 27,78 B | no disponible | Ninguno específico de esta tarea | Apache 2.0 (heredada) | Público en Hugging Face |
 | Iteraciones 0–1 del mismo run | 27,78 B | no disponible | Solo SFT (calentamiento) | Apache 2.0 | Un repositorio por iteración, listados en `checkpoints/checkpoints.md` |
 | Otros brazos del estudio E2K | 27,78 B | no disponible | Variantes de configuración de RL | Apache 2.0 | Parcialmente listados en el dataset de RL del autor |
 
@@ -108,6 +108,6 @@ No se dispone de datos en la información proporcionada para comparar con modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ziyan98/E2K-cd82-Qwen3.8-27B-sft_first_idd-cc-iter3
+- Modelo en Hugging Face: https://huggingface.co/ziyan98/E2K-cd82-Qwen3.8-27B-sft_first_idd-cc-iter3
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Paper, blog, repositorio o demo adicionales: no disponibles en la información proporcionada (el README menciona slime v0.3.2, Megatron-LM, Dr.GRPO, ARC-AGI-3, Isambard-AI y el módulo `knowledge_learning.loop.arc_mcp` sin incluir sus URL).

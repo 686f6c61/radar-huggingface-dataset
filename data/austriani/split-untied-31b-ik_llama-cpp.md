@@ -6,7 +6,7 @@ Split-Untied-31B-ik_llama.cpp es una cuantización GGUF del modelo Split-Untied-
 
 La relevancia de esta ficha es doble. Por un lado, documenta un caso típico de la comunidad open source: un modelo base publicado en formato original (safetensors) y una serie de cuantizaciones comunitarias en GGUF para motores alternativos a llama.cpp, en este caso ik_llama.cpp, un fork optimizado para CPUs y GPUs con soporte de cuantizaciones IQ y de mezcla de expertos. Por otro, ilustra las implicaciones prácticas de distribuir modelos "abliterated": la licencia Apache 2.0 se mantiene, pero el contenido generado puede ser inapropiado sin filtros y el autor advierte explícitamente de que el modelo no es apto para todas las audiencias.
 
-La información disponible es escasa: la model card es mínima, no se publican idiomas soportados, no hay benchmarks y el propio autor indica que la subida de pesos (unos 120 GB en total) está en curso. Todo lo que sigue se basa en los metadatos de HuggingFace, las etiquetas del repositorio y la model card, sin extrapolaciones no verificables.
+La información disponible es escasa: la model card es mínima, no se publican idiomas soportados, no hay benchmarks y el propio autor indica que la subida de pesos (unos 120 GB en total) está en curso. Todo lo que sigue se basa en los metadatos de Hugging Face, las etiquetas del repositorio y la model card, sin extrapolaciones no verificables.
 
 ## Especificaciones tecnicas
 
@@ -84,7 +84,7 @@ La comparación es aproximada: no se dispone de benchmarks del modelo evaluado n
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Austriani/Split-Untied-31B-ik_llama.cpp
+- Repositorio Hugging Face: https://huggingface.co/Austriani/Split-Untied-31B-ik_llama.cpp
 - Modelo base: https://huggingface.co/Blazed-Forge/Split-Untied-31B
 - ik_llama.cpp (repositorio del motor): https://github.com/ikawrakow/ik_llama.cpp
 - llama.cpp (motor compatible): https://github.com/ggml-org/llama.cpp

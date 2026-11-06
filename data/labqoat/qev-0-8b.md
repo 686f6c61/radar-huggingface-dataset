@@ -111,7 +111,7 @@ La model card sitúa a qev-0.8b primero de 27 modelos de decisión de tamaño si
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/labqoat/qev-0.8b
+- Modelo en Hugging Face: https://huggingface.co/labqoat/qev-0.8b
 - Variante MLX para Apple silicon: https://huggingface.co/labqoat/qev-0.8b-MLX
 - Variante GGUF para llama.cpp: https://huggingface.co/labqoat/qev-0.8b-GGUF
 - Demo en vivo: https://app.labqoat.com/e/qev/qev/

@@ -66,10 +66,10 @@ La comparación de rendimiento no es posible porque este repositorio no publica 
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jiangnaninformatics/vit-baseline96 | 24.832 (según safetensors) | no disponible | No se reclama ninguno | Apache 2.0 | HuggingFace |
-| ViT-Base (Google Research) | ~86 M (referencia pública) | no aplica (visión, resolución de imagen) | Sí, en publicaciones originales | Apache 2.0 en varias distribuciones | HuggingFace, TensorFlow Hub |
-| DeiT-Base (Meta / Facebook AI) | ~86 M (referencia pública) | no aplica (visión, resolución de imagen) | Sí, en publicaciones originales | Apache 2.0 | HuggingFace, repositorio oficial |
-| DINOv2 ViT-B/14 (Meta) | ~86 M (referencia pública) | no aplica (visión, resolución de imagen) | Sí, en publicaciones originales | Apache 2.0 en la mayoría de variantes | HuggingFace, repositorio oficial |
+| jiangnaninformatics/vit-baseline96 | 24.832 (según safetensors) | no disponible | No se reclama ninguno | Apache 2.0 | Hugging Face |
+| ViT-Base (Google Research) | ~86 M (referencia pública) | no aplica (visión, resolución de imagen) | Sí, en publicaciones originales | Apache 2.0 en varias distribuciones | Hugging Face, TensorFlow Hub |
+| DeiT-Base (Meta / Facebook AI) | ~86 M (referencia pública) | no aplica (visión, resolución de imagen) | Sí, en publicaciones originales | Apache 2.0 | Hugging Face, repositorio oficial |
+| DINOv2 ViT-B/14 (Meta) | ~86 M (referencia pública) | no aplica (visión, resolución de imagen) | Sí, en publicaciones originales | Apache 2.0 en la mayoría de variantes | Hugging Face, repositorio oficial |
 
 Nota: los valores de parámetros de los modelos comparativos proceden de documentación pública general y no de la información proporcionada en esta búsqueda; se incluyen solo como referencia de orden de magnitud. El modelo objeto de esta ficha no es funcionalmente comparable a ellos en términos de capacidad.
 
@@ -87,5 +87,5 @@ Nota: los valores de parámetros de los modelos comparativos proceden de documen
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jiangnaninformatics/vit-baseline96
+- Hugging Face: https://huggingface.co/jiangnaninformatics/vit-baseline96
 - Papers, blogs, repositorios o demos adicionales: no disponible. La búsqueda web realizada no devolvió resultados relevantes sobre este modelo (los resultados obtenidos correspondían a páginas de un servicio de correo electrónico y no guardan relación con el repositorio).

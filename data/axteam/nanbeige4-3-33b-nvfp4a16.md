@@ -90,7 +90,7 @@ El autor publica una evaluacion de fidelidad frente al BF16 original sobre un co
 
 ## Enlaces
 
-- HuggingFace del modelo cuantizado: https://huggingface.co/axteam/Nanbeige4.3-33B-NVFP4A16
+- Hugging Face del modelo cuantizado: https://huggingface.co/axteam/Nanbeige4.3-33B-NVFP4A16
 - Modelo base: https://huggingface.co/Nanbeige/Nanbeige4.3-33B
 - Repositorio de vLLM: https://github.com/vllm-project/vllm
 - Libreria compressed-tensors: https://github.com/neuralmagic/compressed-tensors

@@ -23,7 +23,7 @@ Es relevante porque permite probar modelos ternarios con `bitnet.cpp` en hardwar
 | Modelo base | `microsoft/BitNet-b1.58-2B-4T` |
 | Libreria de inferencia | `bitnet.cpp` (kernels TL/I2_S de Microsoft) |
 | Hardware objetivo declarado | sm120 (RTX 5080), sm86 (akula-prime), sm61 (GTX 1080 Ti) |
-| Descargas / likes en HuggingFace | 24 / 0 |
+| Descargas / likes en Hugging Face | 24 / 0 |
 | Fecha de publicacion | 2026-09-13 |
 
 ## Arquitectura y entrenamiento
@@ -84,13 +84,13 @@ No se dispone de comparaciones de rendimiento (benchmarks) entre estas alternati
 - Idiomas: no se declaran idiomas soportados. Se recomienda asumir un rendimiento optimo solo en ingles hasta que se verifique lo contrario.
 - Formato poco comun: I2_S requiere kernels especificos. No todos los motores de inferencia GGUF lo soportan; si se carga en una herramienta sin soporte ternario, el modelo puede fallar o dar resultados incorrectos.
 - Licencia MIT: permite uso comercial y modificacion con atribucion; conviene revisar igualmente las condiciones del modelo base `microsoft/BitNet-b1.58-2B-4T`, tambien MIT segun la informacion disponible.
-- Repositorio con muy poca traccion: 24 descargas y 0 likes en el momento de redactar la ficha. No hay garantia de mantenimiento, de soporte ni de que el proceso de conversion este completamente documentado en el propio repositorio de HuggingFace (los scripts citados no se listan como ficheros del repo).
+- Repositorio con muy poca traccion: 24 descargas y 0 likes en el momento de redactar la ficha. No hay garantia de mantenimiento, de soporte ni de que el proceso de conversion este completamente documentado en el propio repositorio de Hugging Face (los scripts citados no se listan como ficheros del repo).
 - Fecha de creacion y actualizacion muy proximas (13 de septiembre de 2026, con 7 segundos de diferencia): la publicacion no parece haber pasado por una revision posterior.
 - No hay informacion sobre perdida de calidad respecto al checkpoint bf16; en modelos ternarios la degradacion puede ser notable en tareas de razonamiento y matematicas.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tzervas/lab-bitnet-b1.58-2B-4T-i2s
+- Modelo en Hugging Face: https://huggingface.co/tzervas/lab-bitnet-b1.58-2B-4T-i2s
 - Modelo base: https://huggingface.co/microsoft/BitNet-b1.58-2B-4T
 - Repositorio de inferencia bitnet.cpp: https://github.com/microsoft/BitNet
 - Paper de BitNet b1.58 (The Era of 1-bit LLMs): https://arxiv.org/abs/2402.17764

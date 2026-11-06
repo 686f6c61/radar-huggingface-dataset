@@ -88,7 +88,7 @@ La comparacion cuantitativa no esta disponible en los materiales consultados.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jepacpp/lewm-pusht-GGUF
+- Modelo en Hugging Face: https://huggingface.co/jepacpp/lewm-pusht-GGUF
 - Modelo base (PyTorch): https://huggingface.co/quentinll/lewm-pusht
 - Repositorio jepa.cpp: https://github.com/aselimc/jepa.cpp
 - Documentacion de jepa.cpp (parity, quantization, accuracy, performance): https://aselimc.github.io/jepa.cpp/

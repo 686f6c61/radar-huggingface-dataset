@@ -99,7 +99,7 @@ No se dispone de comparaciones de rendimiento publicadas por el autor frente a o
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| qwen2.5-3b-episteme-hold-firm-orpo-qlora | Base de 3,09B + adaptador LoRA | No especificado en la ficha; 32.768 en el base | qwen-research | Adaptador PEFT en HuggingFace (0 descargas, 0 likes en el momento de la consulta) |
+| qwen2.5-3b-episteme-hold-firm-orpo-qlora | Base de 3,09B + adaptador LoRA | No especificado en la ficha; 32.768 en el base | qwen-research | Adaptador PEFT en Hugging Face (0 descargas, 0 likes en el momento de la consulta) |
 | Qwen/Qwen2.5-3B-Instruct (referencia directa) | 3,09B | 32.768 tokens (131.072 con YaRN) | qwen-research | Muy extendido, con versiones GGUF de terceros |
 | Llama-3.2-3B-Instruct | 3,21B | 128.000 tokens | Llama 3.2 Community License | Muy extendido |
 | Ministral-3B-Instruct | 3B | 128.000 tokens | Mistral Research License (no comercial) | Ampliamente disponible |
@@ -123,7 +123,7 @@ El unico eje en el que este adaptador se diferencia de forma medible es el compo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joaoaapinho/qwen2.5-3b-episteme-hold-firm-orpo-qlora
+- Modelo en Hugging Face: https://huggingface.co/joaoaapinho/qwen2.5-3b-episteme-hold-firm-orpo-qlora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Licencia del modelo base (qwen-research): https://huggingface.co/Qwen/Qwen2.5-3B-Instruct/blob/main/LICENSE
 - Dataset GSM8K: https://huggingface.co/datasets/openai/gsm8k

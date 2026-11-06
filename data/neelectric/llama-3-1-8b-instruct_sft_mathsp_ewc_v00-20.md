@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Neelectric/Llama-3.1-8B-Instruct_SFT_mathsp_ewc_v00.20 es un modelo de generación de texto publicado en HuggingFace por el usuario Neelectric. Por el identificador y el tamaño real declarado en el repositorio (8.030.261.248 parámetros en safetensors), se trata de un ajuste de un modelo de la familia Llama 3.1 de 8.000 millones de parámetros, presumiblemente construido sobre Llama-3.1-8B-Instruct. La model card publicada es la plantilla automática de transformers sin cumplimentar: todos los campos relevantes (desarrollador, licencia, idiomas, datos de entrenamiento, evaluación) aparecen como "[More Information Needed]".
+Neelectric/Llama-3.1-8B-Instruct_SFT_mathsp_ewc_v00.20 es un modelo de generación de texto publicado en Hugging Face por el usuario Neelectric. Por el identificador y el tamaño real declarado en el repositorio (8.030.261.248 parámetros en safetensors), se trata de un ajuste de un modelo de la familia Llama 3.1 de 8.000 millones de parámetros, presumiblemente construido sobre Llama-3.1-8B-Instruct. La model card publicada es la plantilla automática de transformers sin cumplimentar: todos los campos relevantes (desarrollador, licencia, idiomas, datos de entrenamiento, evaluación) aparecen como "[More Information Needed]".
 
 El problema que aborda, a juzgar por el sufijo del nombre del repositorio, es el ajuste supervisado (SFT) de un modelo instruct con especialización en tareas matemáticas ("mathsp") y con algún mecanismo de consolidación de pesos tipo EWC (Elastic Weight Consolidation, regularización orientada a mitigar el olvido catastrófico durante el fine-tuning). La versión indicada es v00.20, lo que sugiere una iteración temprana de un pipeline experimental. Ninguna de estas inferencias está confirmada por el autor en la documentación disponible.
 
@@ -23,7 +23,7 @@ Su relevancia ahora es limitada y fundamentalmente de tipo experimental: cero de
 
 ## Arquitectura y entrenamiento
 
-No hay informacion sobre la arquitectura ni sobre el procedimiento de entrenamiento en la informacion proporcionada. La model card es la plantilla automatica de HuggingFace sin rellenar y no incluye datos de arquitectura, objetivo de entrenamiento, hiperparametros, regimen de precision ni composicion del dataset. El unico dato tecnico verificable es el recuento de parametros de los ficheros safetensors (8.030.261.248), compatible con un transformer decoder-only de la familia Llama 3.1 8B (arquitectura con Grouped Query Attention, vocabulario de 128.256 tokens y RoPE), aunque el autor no lo declara.
+No hay informacion sobre la arquitectura ni sobre el procedimiento de entrenamiento en la informacion proporcionada. La model card es la plantilla automatica de Hugging Face sin rellenar y no incluye datos de arquitectura, objetivo de entrenamiento, hiperparametros, regimen de precision ni composicion del dataset. El unico dato tecnico verificable es el recuento de parametros de los ficheros safetensors (8.030.261.248), compatible con un transformer decoder-only de la familia Llama 3.1 8B (arquitectura con Grouped Query Attention, vocabulario de 128.256 tokens y RoPE), aunque el autor no lo declara.
 
 A partir del identificador del repositorio pueden formularse hipotesis no confirmadas: "SFT" apuntaria a un ajuste supervisado sobre un modelo instruct; "mathsp" sugeriria especializacion en matematicas; "ewc" haria referencia a Elastic Weight Consolidation, una tecnica de regularizacion que penaliza la modificacion de pesos importantes para tareas previas con el fin de reducir el olvido catastrofico; y "v00.20" indicaria una version o iteracion concreta del experimento. El unico enlace a un paper presente en las etiquetas del repositorio (arxiv:1910.09700) corresponde a Lacoste et al. (2019), el calculo de impacto de carbono, incluido por defecto en la plantilla y sin relacion con el metodo de entrenamiento. No se dispone de informacion sobre RLHF, DPO ni decodificacion especulativa.
 
@@ -60,10 +60,10 @@ Las siguientes cifras son estimaciones derivadas del tamano del modelo (8.030 mi
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| Neelectric/Llama-3.1-8B-Instruct_SFT_mathsp_ewc_v00.20 | 8,03 B | no confirmado (128k segun base) | no disponible | HuggingFace, 0 descargas | Sin benchmarks publicados |
-| Meta Llama-3.1-8B-Instruct | 8,03 B | 128.000 tokens | Llama 3.1 Community License | HuggingFace, ampliamente desplegado | Benchmarks publicos de Meta |
-| Qwen2.5-7B-Instruct | 7,6 B | 128.000 tokens | Apache 2.0 | HuggingFace | Benchmarks publicos de Alibaba |
-| Mistral-7B-Instruct-v0.3 | 7,2 B | 32.000 tokens | Apache 2.0 | HuggingFace | Benchmarks publicos de Mistral |
+| Neelectric/Llama-3.1-8B-Instruct_SFT_mathsp_ewc_v00.20 | 8,03 B | no confirmado (128k segun base) | no disponible | Hugging Face, 0 descargas | Sin benchmarks publicados |
+| Meta Llama-3.1-8B-Instruct | 8,03 B | 128.000 tokens | Llama 3.1 Community License | Hugging Face, ampliamente desplegado | Benchmarks publicos de Meta |
+| Qwen2.5-7B-Instruct | 7,6 B | 128.000 tokens | Apache 2.0 | Hugging Face | Benchmarks publicos de Alibaba |
+| Mistral-7B-Instruct-v0.3 | 7,2 B | 32.000 tokens | Apache 2.0 | Hugging Face | Benchmarks publicos de Mistral |
 
 La comparacion de rendimiento con estas alternativas no es posible: el modelo de Neelectric no publica resultados de evaluacion. En licencia y soporte, los tres modelos de referencia parten con ventaja clara al declarar terminos de uso y ofrecer versiones cuantizadas y endpoints oficiales.
 
@@ -81,7 +81,7 @@ La comparacion de rendimiento con estas alternativas no es posible: el modelo de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Neelectric/Llama-3.1-8B-Instruct_SFT_mathsp_ewc_v00.20
+- Modelo en Hugging Face: https://huggingface.co/Neelectric/Llama-3.1-8B-Instruct_SFT_mathsp_ewc_v00.20
 - Perfil del autor: https://huggingface.co/Neelectric
 - Paper referenciado en las etiquetas (Lacoste et al., 2019, impacto de carbono, incluido por defecto en la plantilla): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de carbono citada en la plantilla: https://mlco2.github.io/impact

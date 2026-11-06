@@ -25,7 +25,7 @@ La licencia es Apache 2.0, lo que permite uso comercial sin restricciones signif
 
 La arquitectura es la de Llama 3.1 8B: un transformer decoder-only con attention multi-head estándar, normalización RMSNorm, activación SwiGLU y embeddings rotatorios (RoPE). El modelo base es la versión de Unsloth de `Meta-Llama-3.1-8B-Instruct`, que ya incluye un entrenamiento supervisado y un refinamiento con RLHF/DPO por parte de Meta.
 
-El fine-tuning se realizó con Unsloth y la librería TRL de HuggingFace, lo que acelera el entrenamiento. El nombre sugiere que se seleccionó solo la última tercera parte de un dataset orientado a reducir alucinaciones, y que se usó una semilla aleatoria fija (seed5) para la partición de datos. No se especifican el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas adicionales como *direct preference optimization* (DPO) o *reinforcement learning*. Tampoco se indica si se modificó la longitud de contexto o si se usaron técnicas de atención eficiente.
+El fine-tuning se realizó con Unsloth y la librería TRL de Hugging Face, lo que acelera el entrenamiento. El nombre sugiere que se seleccionó solo la última tercera parte de un dataset orientado a reducir alucinaciones, y que se usó una semilla aleatoria fija (seed5) para la partición de datos. No se especifican el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas adicionales como *direct preference optimization* (DPO) o *reinforcement learning*. Tampoco se indica si se modificó la longitud de contexto o si se usaron técnicas de atención eficiente.
 
 ## Capacidades
 
@@ -79,7 +79,7 @@ No hay modelos comparables publicados con el mismo objetivo (reducción de aluci
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-last-third-sft-seed5)
+- [Modelo en Hugging Face](https://huggingface.co/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-last-third-sft-seed5)
 - [Variante last-third-sft (sin seed)](https://huggingface.co/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-last-third-sft)
 - [Variante first-third-sft-seed5-epoch3](https://huggingface.co/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-first-third-sft-seed5-epoch3)
 - [Página de despliegue en FriendliAI (variante seed2)](https://friendli.ai/models/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-last-third-sft-seed2)

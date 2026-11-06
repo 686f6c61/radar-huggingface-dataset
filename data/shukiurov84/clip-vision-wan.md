@@ -65,7 +65,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- [HuggingFace - Shukiurov84/clip-vision-wan](https://huggingface.co/Shukiurov84/clip-vision-wan)
+- [Hugging Face - Shukiurov84/clip-vision-wan](https://huggingface.co/Shukiurov84/clip-vision-wan)
 - [Civitai - Wan Video 2.1 - Clip Vision h](https://civitai.com/models/1329096?modelVersionId=1501088)
 - [CivArchive - Wan Video 2.1 Clip Vision h](https://civarchive.com/models/1329096?modelVersionId=1501088)
 - [GitHub - ComfyUI-WanVideoWrapper](https://github.com/kijai/ComfyUI-WanVideoWrapper)

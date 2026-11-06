@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`wangzyuan/SafeRLHFV-Native-Training-Contracts` no es un modelo de lenguaje entrenado, sino un paquete de artefactos de verificacion publicado en HuggingFace. Contiene pruebas sinteticas en CPU que ejercitan, mediante extraccion AST, metodos reales del codigo fuente de un pipeline de RLHF (SafeRLHFV) sobre tensores CPU y motores simulados: ordenacion de preferencias, mascaras de respuesta, calculo de KL y GAE, comportamiento del critico y gestion de PTX. El autor lo presenta explicitamente como un contrato de pruebas reproducible, no como un entorno de entrenamiento completo ni como una politica entrenada.
+`wangzyuan/SafeRLHFV-Native-Training-Contracts` no es un modelo de lenguaje entrenado, sino un paquete de artefactos de verificacion publicado en Hugging Face. Contiene pruebas sinteticas en CPU que ejercitan, mediante extraccion AST, metodos reales del codigo fuente de un pipeline de RLHF (SafeRLHFV) sobre tensores CPU y motores simulados: ordenacion de preferencias, mascaras de respuesta, calculo de KL y GAE, comportamiento del critico y gestion de PTX. El autor lo presenta explicitamente como un contrato de pruebas reproducible, no como un entorno de entrenamiento completo ni como una politica entrenada.
 
 El paquete se apoya en un paquete base (`wangzyuan/SafeRLHFV-Llava15-7B-Epoch3-Reproduction`, fijado al commit `03c092e2cda06c97c4a4939820bea4c3a9bbbd1d`) que debe descargarse por separado y ensamblarse con `assemble_historical_reproduction.py`. Los cuerpos de las funciones fuente no se modifican y se referencian mediante hashes Git exactos en `SOURCE_MANIFEST.json`. El objetivo declarado es permitir auditoria y reproduccion de la logica de puntuacion y de los componentes de RL sin necesidad de GPU ni de pesos reales.
 
@@ -76,7 +76,7 @@ No disponible. Este artefacto no es un modelo de lenguaje y no existen alternati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wangzyuan/SafeRLHFV-Native-Training-Contracts
+- Hugging Face: https://huggingface.co/wangzyuan/SafeRLHFV-Native-Training-Contracts
 - Paquete base de reproduccion: https://huggingface.co/wangzyuan/SafeRLHFV-Llava15-7B-Epoch3-Reproduction
 - Commit base fijado: `03c092e2cda06c97c4a4939820bea4c3a9bbbd1d`
 - Otros enlaces (papers, blogs, repos, demos): no disponibles en la informacion proporcionada.

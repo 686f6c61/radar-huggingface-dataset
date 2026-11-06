@@ -77,7 +77,7 @@ Nota: los pesos de Qwen2.5-4B y Llama-3.2-3B son aproximados y dependen de la cu
 
 ## Enlaces
 
-- [HuggingFace - NoxNotreve/Bonsai-4B-gguf](https://huggingface.co/NoxNotreve/Bonsai-4B-gguf)
+- [Hugging Face - NoxNotreve/Bonsai-4B-gguf](https://huggingface.co/NoxNotreve/Bonsai-4B-gguf)
 - [Modelo base: prism-ml/Bonsai-4B-unpacked](https://huggingface.co/prism-ml/Bonsai-4B-unpacked)
 - [Whitepaper (PDF)](https://github.com/PrismML-Eng/Bonsai-demo/blob/main/1-bit-bonsai-8b-whitepaper.pdf)
 - [Demo y ejemplos (GitHub)](https://github.com/PrismML-Eng/Bonsai-demo)

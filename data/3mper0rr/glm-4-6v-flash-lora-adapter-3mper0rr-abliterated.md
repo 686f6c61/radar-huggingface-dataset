@@ -6,7 +6,7 @@ Se trata de un adaptador LoRA publicado por el usuario 3MPER0RR bajo el identifi
 
 El interés del artefacto reside en su doble naturaleza: por un lado, el nombre del modelo base indica una variante "abliterated" de un modelo de la familia GLM-4.6V-Flash, es decir, una versión en la que se habrían atenuado o eliminado las direcciones de rechazo del modelo original; por otro, el adaptador LoRA permite reproducir ese comportamiento sin necesidad de redistribuir los pesos completos, algo relevante para experimentación en alineación, red-teaming y ajuste posterior por dominio.
 
-La información publicada es muy escasa. La model card se limita a metadatos de licencia, modelo base y librería, y el tamaño del repositorio se reporta como 0,0 GB, lo que deja abierta la posibilidad de que los pesos del adaptador no estén efectivamente subidos o de que su volumen quede por debajo de la precisión de visualización de HuggingFace. Los resultados de la búsqueda web realizada no contienen ningún enlace relacionado con este modelo. En consecuencia, buena parte de las especificaciones técnicas deben marcarse como no disponibles.
+La información publicada es muy escasa. La model card se limita a metadatos de licencia, modelo base y librería, y el tamaño del repositorio se reporta como 0,0 GB, lo que deja abierta la posibilidad de que los pesos del adaptador no estén efectivamente subidos o de que su volumen quede por debajo de la precisión de visualización de Hugging Face. Los resultados de la búsqueda web realizada no contienen ningún enlace relacionado con este modelo. En consecuencia, buena parte de las especificaciones técnicas deben marcarse como no disponibles.
 
 ## Especificaciones técnicas
 

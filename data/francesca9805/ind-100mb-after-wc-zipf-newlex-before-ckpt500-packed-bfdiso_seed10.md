@@ -4,7 +4,7 @@
 
 El modelo `francesca9805/ind-100mb-after-wc-zipf-newlex-before-ckpt500-packed-bfdiso_seed10` es un checkpoint de generacion de texto de aproximadamente 124,8 millones de parametros, publicado por el usuario francesca9805 (vinculado a la Universidad de Groningen segun la traza de Weights & Biases incluida en la model card). Se trata de un ajuste fino supervisado (SFT) mediante la libreria TRL sobre el modelo `francesca9805/ppt-wc-zipf-newlex-ind-before-100mb-packed-bfdiso_seed10`, que a su vez es un modelo base de la misma familia experimental.
 
-La nomenclatura del identificador revela que es un artefacto de investigacion sobre tokenizacion y distribucion del lenguaje: los segmentos `wc-zipf-newlex`, `ind`, `100mb` y `packed` apuntan a experimentos con conteo de palabras, ajuste a la ley de Zipf, un lexico nuevo, un corpus de unos 100 MB y secuencias empaquetadas. El sufijo `bfdiso` sugiere entrenamiento en bfloat16 con una variante de optimizador, y `seed10` indica la semilla 10 de una bateria de replicas. El tag `gpt2` de HuggingFace apunta a una arquitectura decoder-only tipo GPT-2.
+La nomenclatura del identificador revela que es un artefacto de investigacion sobre tokenizacion y distribucion del lenguaje: los segmentos `wc-zipf-newlex`, `ind`, `100mb` y `packed` apuntan a experimentos con conteo de palabras, ajuste a la ley de Zipf, un lexico nuevo, un corpus de unos 100 MB y secuencias empaquetadas. El sufijo `bfdiso` sugiere entrenamiento en bfloat16 con una variante de optimizador, y `seed10` indica la semilla 10 de una bateria de replicas. El tag `gpt2` de Hugging Face apunta a una arquitectura decoder-only tipo GPT-2.
 
 No es un modelo orientado a produccion: no tiene licencia declarada, no declara idiomas soportados, no publica benchmarks y acumula 0 descargas y 0 likes. Su interes es metodologico, como punto de comparacion reproducible dentro de una linea de experimentos sobre tokenizadores, no como modelo de proposito general.
 
@@ -38,7 +38,7 @@ El entrenamiento se realizo con aprendizaje supervisado (SFT) usando TRL, segun 
 - Soporte de agentes y razonamiento multi-paso: no disponible; no se menciona soporte.
 - Capacidades multilingues: no disponible; no se declaran idiomas.
 - Capacidades especiales (modo thinking, vision, audio): no disponible; el pipeline declarado es exclusivamente `text-generation`.
-- Compatibilidad de despliegue: etiquetado como `text-generation-inference` y `endpoints_compatible`, por lo que puede servirse con TGI o en HuggingFace Inference Endpoints siempre que el autor o el usuario configuren los recursos.
+- Compatibilidad de despliegue: etiquetado como `text-generation-inference` y `endpoints_compatible`, por lo que puede servirse con TGI o en Hugging Face Inference Endpoints siempre que el autor o el usuario configuren los recursos.
 
 ## Casos de uso
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: aproximadamente 0,25 GB en bfloat16/fp16, unos 0,13 GB en int8 y alrededor de 0,07 GB en 4 bits, solo para los pesos; hay que sumar la cache KV segun la longitud de contexto efectiva.
 - GPU recomendadas: cualquier GPU moderna sirve; el modelo cabe holgadamente en una RTX 3060, RTX 4090, A100 o H100, aunque estas dos ultimas son enormemente sobredimensionadas para 124,8 M de parametros.
 - Cabe en GPU de consumo: si, en practicamente todas las GPU consumer de los ultimos diez anos, e incluso en CPU con memoria RAM suficiente.
-- Opciones de despliegue: `transformers` (via `pipeline`), text-generation-inference (el repositorio esta etiquetado como `text-generation-inference`), HuggingFace Inference Endpoints (`endpoints_compatible`), vLLM. Para llama.cpp u Ollama seria necesaria una conversion a GGUF que el repositorio no incluye.
+- Opciones de despliegue: `transformers` (via `pipeline`), text-generation-inference (el repositorio esta etiquetado como `text-generation-inference`), Hugging Face Inference Endpoints (`endpoints_compatible`), vLLM. Para llama.cpp u Ollama seria necesaria una conversion a GGUF que el repositorio no incluye.
 - Latencia y throughput: no disponible; el autor no publica mediciones. Como referencia orientativa no verificada, un modelo de esta escala suele superar el millar de tokens por segundo en GPU moderna con lotes pequenos, pero es una estimacion generica y no un dato de este checkpoint.
 - Nota de almacenamiento: el repositorio ocupa 10,7 GB, muy por encima de los ~0,25 GB que ocupan los pesos en bfloat16, lo que sugiere que contiene multiples checkpoints o artefactos de entrenamiento adicionales.
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este modelo | 124,8 M | no disponible | no disponible | Repositorio HuggingFace, 0 descargas | Checkpoint de investigacion, sin benchmarks |
+| Este modelo | 124,8 M | no disponible | no disponible | Repositorio Hugging Face, 0 descargas | Checkpoint de investigacion, sin benchmarks |
 | GPT-2 small | 124,4 M | 1024 | licencia modificada de MIT (OpenAI) | Ampliamente disponible | Referencia estandar de la arquitectura; con benchmarks publicos |
 | DistilGPT-2 | 82 M | 1024 | Apache 2.0 | Ampliamente disponible | Version destilada de GPT-2, mas rapida, calidad inferior |
 | GPT-2 medium | 355 M | 1024 | licencia modificada de MIT (OpenAI) | Ampliamente disponible | Misma familia, mas capacidad, mayor coste de inferencia |
@@ -90,7 +90,7 @@ Los datos de las filas comparativas corresponden a la informacion publica habitu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/ind-100mb-after-wc-zipf-newlex-before-ckpt500-packed-bfdiso_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/ind-100mb-after-wc-zipf-newlex-before-ckpt500-packed-bfdiso_seed10
 - Modelo base declarado: https://huggingface.co/francesca9805/ppt-wc-zipf-newlex-ind-before-100mb-packed-bfdiso_seed10
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/zselser1
 - Repositorio de TRL: https://github.com/huggingface/trl

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Fabryka English Base 250M — E01 es un modelo de lenguaje base en ingles entrenado desde cero por SlayerLab, con 249.944.832 parametros (aproximadamente 250M) y publicado en HuggingFace bajo la libreria transformers. Se trata de un checkpoint marcado explicitamente como experimental y "sustancialmente subentrenado": segun su propia model card, solo completo 50.000.000 de objetivos de prediccion en 191 actualizaciones del optimizador, lo que se traduce en continuaciones repetitivas y a menudo incoherentes. No es un asistente ajustado con instrucciones ni el resultado final de un programa de investigacion.
+Fabryka English Base 250M — E01 es un modelo de lenguaje base en ingles entrenado desde cero por SlayerLab, con 249.944.832 parametros (aproximadamente 250M) y publicado en Hugging Face bajo la libreria transformers. Se trata de un checkpoint marcado explicitamente como experimental y "sustancialmente subentrenado": segun su propia model card, solo completo 50.000.000 de objetivos de prediccion en 191 actualizaciones del optimizador, lo que se traduce en continuaciones repetitivas y a menudo incoherentes. No es un asistente ajustado con instrucciones ni el resultado final de un programa de investigacion.
 
 El modelo se distribuye como base model (sin fine-tuning de instrucciones ni alineamiento tipo RLHF/DPO) y esta orientado exclusivamente al ingles. El dataset declarado es gvlassis/ClimbMix. Su relevancia actual es limitada desde el punto de vista de producto: se posiciona como un artefacto de investigacion temprana, util para estudiar dinamicas de entrenamiento, reproducibilidad de pipelines de evaluacion y comparaciones de referencia en la franja de modelos pequenos.
 
@@ -111,7 +111,7 @@ No se han proporcionado modelos comparables en la informacion disponible. La mod
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---:|---|---|---|---|
-| SlayerLab/fabryka-english-base-250m-e01 | 249.944.832 | no disponible | no disponible | HuggingFace, 0 descargas declaradas | INT 2,77; Elo 842 en BananaMind Base Bench 1.1 |
+| SlayerLab/fabryka-english-base-250m-e01 | 249.944.832 | no disponible | no disponible | Hugging Face, 0 descargas declaradas | INT 2,77; Elo 842 en BananaMind Base Bench 1.1 |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -130,7 +130,7 @@ No se han proporcionado modelos comparables en la informacion disponible. La mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SlayerLab/fabryka-english-base-250m-e01
+- Modelo en Hugging Face: https://huggingface.co/SlayerLab/fabryka-english-base-250m-e01
 - Dataset de entrenamiento declarado: https://huggingface.co/datasets/gvlassis/ClimbMix
 - Dataset del benchmark BananaMind Base Bench 1.1: https://huggingface.co/datasets/BananaMind/BananaMind-Base-Bench-1.1
 - Leaderboard Open SLM (formula del indice INT): https://huggingface.co/spaces/AxiomicLabs/Open_SLM_Leaderboard

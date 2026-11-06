@@ -6,7 +6,7 @@ Spleeter PyTorch NPZ es una conversión no oficial de los pesos preentrenados de
 
 El problema que resuelve es práctico: permitir que proyectos basados en PyTorch carguen los pesos de Spleeter sin depender del stack de TensorFlow, que es el entorno nativo del release de Deezer. Al convertir los checkpoints a `.npz` y no reentrenar, se preservan los pesos originales y se facilita la portabilidad entre frameworks. El repositorio ocupa aproximadamente 0,2 GB, coherente con los dos conjuntos de pesos (2 stems y 4 stems) en formato NumPy comprimido.
 
-La relevancia de esta ficha es acotada: no hay model card detallada, no se declaran idiomas ni pipeline en HuggingFace, y el repositorio no registra descargas ni likes en el momento de la consulta. Es un artefacto de conversión de pesos, útil para quien quiera integrar Spleeter en un pipeline de audio con PyTorch, pero sin garantías de mantenimiento ni soporte oficial por parte de Deezer.
+La relevancia de esta ficha es acotada: no hay model card detallada, no se declaran idiomas ni pipeline en Hugging Face, y el repositorio no registra descargas ni likes en el momento de la consulta. Es un artefacto de conversión de pesos, útil para quien quiera integrar Spleeter en un pipeline de audio con PyTorch, pero sin garantías de mantenimiento ni soporte oficial por parte de Deezer.
 
 ## Especificaciones tecnicas
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Stems | Formato de pesos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Audante/spleeter-pytorch-npz | Separación de fuentes (conversión de Spleeter) | 2 y 4 | `.npz` (NumPy) | MIT | HuggingFace, sin descargas registradas |
+| Audante/spleeter-pytorch-npz | Separación de fuentes (conversión de Spleeter) | 2 y 4 | `.npz` (NumPy) | MIT | Hugging Face, sin descargas registradas |
 | Deezer Spleeter (original) | Separación de fuentes | 2, 4 y 5 | Checkpoints TensorFlow | MIT | Repositorio GitHub de Deezer |
-| Demucs (Meta) | Separación de fuentes | 4 (y variantes) | PyTorch | MIT | GitHub y HuggingFace |
+| Demucs (Meta) | Separación de fuentes | 4 (y variantes) | PyTorch | MIT | GitHub y Hugging Face |
 | Open-Unmix (SigSep) | Separación de fuentes | Variable según modelo | PyTorch | MIT | GitHub |
 
 La comparativa se limita a la categoría de separación de fuentes; no se dispone de datos de rendimiento (SDR, SI-SDR) en la información proporcionada para establecer una comparación cuantitativa con Demucs u Open-Unmix.
@@ -75,14 +75,14 @@ La comparativa se limita a la categoría de separación de fuentes; no se dispon
 - Es una conversión no oficial: la model card indica explícitamente que no es un release oficial de Deezer y que todos los derechos del modelo permanecen con sus autores.
 - No hay reentrenamiento: los pesos son los de Spleeter original, por lo que hereda sus limitaciones de calidad y generalización sin mejoras.
 - La model card no documenta arquitectura, parámetros, rendimiento ni requisitos de hardware; cualquier evaluación técnica debe hacerse sobre el repositorio original de Deezer.
-- No se declaran idiomas ni pipeline en HuggingFace, y el repositorio no registra descargas ni likes, lo que dificulta validar su uso en producción.
+- No se declaran idiomas ni pipeline en Hugging Face, y el repositorio no registra descargas ni likes, lo que dificulta validar su uso en producción.
 - Riesgo de alucinación no aplica en el sentido lingüístico, pero sí existe riesgo de artefactos de separación (sangrado entre stems, pérdida de detalle) inherente al modelo subyacente.
 - Licencia MIT permite uso comercial, pero al ser una conversión no oficial conviene verificar la licencia y atribución del proyecto original de Deezer antes de redistribuir.
 - No se documenta soporte de cuantización ni optimizaciones de inferencia; el rendimiento dependerá de la implementación de PyTorch que consuma los `.npz`.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Audante/spleeter-pytorch-npz
+- Hugging Face: https://huggingface.co/Audante/spleeter-pytorch-npz
 - Repositorio original de Spleeter (Deezer): https://github.com/deezer/spleeter
-- Licencia del repositorio: `LICENSE` incluido en el propio repositorio de HuggingFace
+- Licencia del repositorio: `LICENSE` incluido en el propio repositorio de Hugging Face
 - No se han encontrado en la búsqueda web papers, blogs, repositorios o demos adicionales específicos de esta conversión.

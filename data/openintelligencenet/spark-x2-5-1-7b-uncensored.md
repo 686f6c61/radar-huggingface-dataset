@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Spark-X2.5-1.7B-Uncensored es un modelo de lenguaje de 1.707.657.216 parámetros (1,7B) publicado por OpenIntelligenceNet en HuggingFace. Se trata de un ajuste fino de precisión completa y posterior fusión (merge) del modelo base XHToken/Spark-X2.5-1.7B, cuyo objetivo declarado es eliminar los comportamientos de rechazo y las restricciones de alineamiento estándar para responder de forma directa a consultas sensibles.
+Spark-X2.5-1.7B-Uncensored es un modelo de lenguaje de 1.707.657.216 parámetros (1,7B) publicado por OpenIntelligenceNet en Hugging Face. Se trata de un ajuste fino de precisión completa y posterior fusión (merge) del modelo base XHToken/Spark-X2.5-1.7B, cuyo objetivo declarado es eliminar los comportamientos de rechazo y las restricciones de alineamiento estándar para responder de forma directa a consultas sensibles.
 
 El autor indica que el ajuste se realizó sobre un conjunto de datos curado de 60.000 ejemplos "uncensored". El repositorio ocupa 3,4 GB y contiene pesos en formato safetensors, lo que resulta coherente con pesos en FP16/BF16 sin cuantizar. La licencia es Apache-2.0 y el modelo se distribuye con el tag custom_code, lo que implica que probablemente requiere cargar código personalizado del repositorio para su ejecución.
 
@@ -91,7 +91,7 @@ La diferencia principal frente a estas alternativas no es de rendimiento ni de c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OpenIntelligenceNet/Spark-X2.5-1.7B-Uncensored
+- Modelo en Hugging Face: https://huggingface.co/OpenIntelligenceNet/Spark-X2.5-1.7B-Uncensored
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.5-1.7B
 - Perfil del autor: https://huggingface.co/OpenIntelligenceNet
 - Paper, blog o repositorio adicional: no disponible. La búsqueda web realizada no devolvió enlaces relevantes al modelo (únicamente resultados no relacionados de Facebook).

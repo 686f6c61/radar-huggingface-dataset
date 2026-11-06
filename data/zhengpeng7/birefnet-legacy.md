@@ -4,7 +4,7 @@
 
 BiRefNet (Bilateral Reference for High-Resolution Dichotomous Image Segmentation) es un modelo de segmentación de imágenes dicotómicas de alta resolución, desarrollado por Peng Zheng y colaboradores de la Universidad de Nankai, la Universidad Politécnica del Noroeste, la Universidad Nacional de Tecnología de Defensa, la Universidad de Aalto, el Laboratorio de IA de Shanghái y la Universidad de Trento. El modelo se publicó en CAAI Artificial Intelligence Research en 2024 y resuelve el problema de separar con precisión objetos de primer plano del fondo en imágenes de alta resolución, una tarea conocida como segmentación dicotómica (DIS). Su relevancia actual radica en su aplicación directa a la eliminación de fondos, generación de máscaras y preprocesado de imágenes para otros sistemas de visión.
 
-Esta variante concreta, `BiRefNet-legacy`, contiene los pesos del modelo entrenado para uso general sobre los conjuntos DIS5K-TR, DIS-TEs, DUTS-TR_TE, HRSOD-TR_TE, UHRSD-TR_TE y HRS10K-TR_TE, excluyendo explícitamente datos de segmentación de retratos. El modelo tiene 220,7 millones de parámetros, se distribuye en formato safetensors y está licenciado bajo MIT, lo que permite uso comercial sin restricciones. El repositorio de HuggingFace incluye integración con `pytorch_model_hub_mixin` y es compatible con endpoints de inferencia.
+Esta variante concreta, `BiRefNet-legacy`, contiene los pesos del modelo entrenado para uso general sobre los conjuntos DIS5K-TR, DIS-TEs, DUTS-TR_TE, HRSOD-TR_TE, UHRSD-TR_TE y HRS10K-TR_TE, excluyendo explícitamente datos de segmentación de retratos. El modelo tiene 220,7 millones de parámetros, se distribuye en formato safetensors y está licenciado bajo MIT, lo que permite uso comercial sin restricciones. El repositorio de Hugging Face incluye integración con `pytorch_model_hub_mixin` y es compatible con endpoints de inferencia.
 
 ## Especificaciones tecnicas
 
@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El pa
 
 - VRAM estimada para inferencia: no disponible. El repositorio pesa 1,8 GB en safetensors, lo que sugiere que en FP32 los pesos ocupan aproximadamente 880 MB, y en FP16 unos 440 MB, por lo que cabria en GPUs consumer con 4 GB o mas, pero no se han publicado mediciones oficiales.
 - GPU recomendadas: no disponible. Dado el tamano, una GPU como RTX 3060 o superior deberia ser suficiente para inferencia a resoluciones moderadas.
-- Opciones de despliegue: el modelo se integra con `pytorch_model_hub_mixin` y es compatible con endpoints de HuggingFace. Puede usarse con PyTorch directamente o mediante la libreria `birefnet` mencionada en la model card.
+- Opciones de despliegue: el modelo se integra con `pytorch_model_hub_mixin` y es compatible con endpoints de Hugging Face. Puede usarse con PyTorch directamente o mediante la libreria `birefnet` mencionada en la model card.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -66,10 +66,10 @@ No se dispone de datos comparativos publicados en la informacion proporcionada. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ZhengPeng7/BiRefNet-legacy
+- Modelo en Hugging Face: https://huggingface.co/ZhengPeng7/BiRefNet-legacy
 - Repositorio principal del modelo: https://huggingface.co/ZhengPeng7/BiRefNet
 - Repositorio GitHub: https://github.com/ZhengPeng7/BiRefNet
 - Paper en arXiv: https://arxiv.org/pdf/2401.03407
 - Pagina del proyecto: https://www.birefnet.top
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/ZhengPeng7/BiRefNet_demo
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/ZhengPeng7/BiRefNet_demo
 - Notebook de inferencia en Colab: https://colab.research.google.com/drive/14Dqg7oeBkFEtchaHLNpig2BcdkZEogba?usp=drive_link

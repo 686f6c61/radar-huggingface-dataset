@@ -85,9 +85,9 @@ No se han publicado comparativas con otros modelos en la información disponible
 
 | Modelo | Arquitectura | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `s0nh/byte-level-code-mtp-32-1.0B` | Byte-level MTP (32 cabezas) sobre Llama-3.2-3B | 5.941 M | 4096 bytes | llama3.2 | HuggingFace |
-| `benjamin/Llama3-2-3B-IT-Byte` | Byte-level NTP sobre Llama-3.2-3B | No disponible | No disponible | No disponible | HuggingFace (mencionado como baseline) |
-| `meta-llama/Llama-3.2-3B-Instruct` | Transformer subword estándar | 3.210 M | 128.000 tokens | llama3.2 | HuggingFace |
+| `s0nh/byte-level-code-mtp-32-1.0B` | Byte-level MTP (32 cabezas) sobre Llama-3.2-3B | 5.941 M | 4096 bytes | llama3.2 | Hugging Face |
+| `benjamin/Llama3-2-3B-IT-Byte` | Byte-level NTP sobre Llama-3.2-3B | No disponible | No disponible | No disponible | Hugging Face (mencionado como baseline) |
+| `meta-llama/Llama-3.2-3B-Instruct` | Transformer subword estándar | 3.210 M | 128.000 tokens | llama3.2 | Hugging Face |
 
 El modelo destaca frente al baseline byte-level por incorporar supervisión MTP desde el primer paso de entrenamiento, lo que le permite realizar decodificación especulativa sin un modelo auxiliar. Frente al modelo base subword, opera a nivel de bytes y tiene un contexto mucho menor (4096 bytes frente a 128.000 tokens), lo que limita el alcance de los archivos que puede procesar.
 
@@ -95,7 +95,7 @@ El modelo destaca frente al baseline byte-level por incorporar supervisión MTP 
 
 - Contexto limitado a 4096 bytes, lo que equivale aproximadamente a 1000-2000 tokens subword; no puede generar ni comprender archivos Python extensos o contextos largos.
 - Especialización exclusiva en código Python; el rendimiento en otros lenguajes no ha sido evaluado y probablemente sea inferior.
-- Modelo experimental con muy poca adopción (11 descargas, 0 likes en HuggingFace); no ha sido validado de forma independiente.
+- Modelo experimental con muy poca adopción (11 descargas, 0 likes en Hugging Face); no ha sido validado de forma independiente.
 - Licencia llama3.2: incluye restricciones de uso comercial y requiere aceptar los términos de la licencia de Llama 3.2 antes de cualquier despliegue.
 - Riesgo de alucinación en código: puede generar código sintácticamente válido pero incorrecto o con errores lógicos, especialmente en tareas de razonamiento complejo.
 - Sesgos no evaluados: al entrenarse en un corpus de GitHub filtrado por puntuación de calidad, puede reflejar sesgos en estilos de programación, convenciones y prácticas de los repositorios más populares.
@@ -103,7 +103,7 @@ El modelo destaca frente al baseline byte-level por incorporar supervisión MTP 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/s0nh/byte-level-code-mtp-32-1.0B
+- Modelo en Hugging Face: https://huggingface.co/s0nh/byte-level-code-mtp-32-1.0B
 - Dataset de entrenamiento: https://huggingface.co/datasets/jon-tow/starcoderdata-python-edu
 - Artefactos de reproducibilidad: https://huggingface.co/datasets/s0nh/byte-level-code-mtp-data
 - Referencia de arquitectura byte-level (BLT): https://github.com/facebookresearch/blt

@@ -74,8 +74,8 @@ Las fuentes de busqueda mencionan cifras de latencia del orden de 21 ms para el 
 
 | Modelo | Tipo | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| codenamev/laya-onnx | Exportacion ONNX no autorregresiva | 512 / 1024 segun variante | apache-2.0 | HuggingFace (este repositorio) |
-| convaiinnovations/laya | Modelo original en PyTorch | 512 / 1024 segun variante | apache-2.0 | HuggingFace |
+| codenamev/laya-onnx | Exportacion ONNX no autorregresiva | 512 / 1024 segun variante | apache-2.0 | Hugging Face (este repositorio) |
+| convaiinnovations/laya | Modelo original en PyTorch | 512 / 1024 segun variante | apache-2.0 | Hugging Face |
 | TypeSafe Jev | Servicio propietario de decisiones tipadas | no disponible | propietaria | API (`api.typesafe.ai`) y OpenRouter |
 | Modelos conversacionales pequenos | Generacion autorregresiva | variable | variable | amplia |
 
@@ -85,18 +85,18 @@ La comparacion se limita a la categoria y licencia, ya que no se dispone de cifr
 
 - No es un modelo nuevo: es una conversion de los pesos de Convai Innovations, por lo que hereda cualquier limitacion del original.
 - No es un modelo conversacional: no genera texto libre ni sostiene conversaciones multi-turno.
-- Los idiomas soportados no estan declarados en los metadatos de HuggingFace; la cobertura real depende de los checkpoints originales.
+- Los idiomas soportados no estan declarados en los metadatos de Hugging Face; la cobertura real depende de los checkpoints originales.
 - La ventana de contexto esta limitada a 512 tokens en la variante en ingles y a 1024 en las variantes multilingue y de decisiones tipadas.
 - El grafo espera entradas con una forma concreta (preguntas de una sola opcion rellenadas a dos marcadores, lotes de menos de ocho tokens rellenados); un uso que ignore estas convenciones puede producir resultados incorrectos.
 - No se han publicado benchmarks estandar (MMLU, HumanEval, GSM8K, etc.), por lo que no hay evidencia publica de rendimiento comparativo.
 - El numero de descargas y de "likes" es cero en la fecha de consulta, lo que sugiere una adopcion temprana y poca validacion externa.
 - Riesgo de sesgo y de alucinacion no cuantificado en la informacion disponible; las probabilidades calibradas deberian validarse en el dominio concreto antes de usarlas en produccion.
 - La licencia apache-2.0 permite uso comercial, pero el credito de los pesos corresponde a Convai Innovations y conviene revisar los terminos del repositorio original.
-- La fecha de creacion del repositorio indicada por HuggingFace es 2026-09-23, dato que conviene verificar.
+- La fecha de creacion del repositorio indicada por Hugging Face es 2026-09-23, dato que conviene verificar.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/codenamev/laya-onnx
+- Modelo en Hugging Face: https://huggingface.co/codenamev/laya-onnx
 - Modelo base: https://huggingface.co/convaiinnovations/laya
 - Repositorio original de Laya: https://github.com/NandhaKishorM/laya
 - Gema ruby-laya: https://github.com/codenamev/ruby-laya

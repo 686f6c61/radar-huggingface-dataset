@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "abliterant/Qwen3.5-9B-RANA-abliterated-FP8",
+  "slug": "abliterant-qwen3-5-9b-rana-abliterated-fp8",
+  "author": "abliterant",
+  "url": "https://huggingface.co/abliterant/Qwen3.5-9B-RANA-abliterated-FP8",
+  "created_at": "2026-11-06T12:05:00.000Z",
+  "updated_at": "2026-11-06T12:05:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "abliterant",
+    "fp8",
+    "vllm",
+    "abliteration",
+    "abliterated",
+    "uncensored",
+    "qwen3.5",
+    "qwen3",
+    "vision-language",
+    "conversational",
+    "base_model:abliterant/Qwen3.5-9B-RANA-abliterated",
+    "base_model:quantized:abliterant/Qwen3.5-9B-RANA-abliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 12198088798,
+  "storage_human": "12.2 GB",
+  "base_model": "abliterant/Qwen3.5-9B-RANA-abliterated",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "abliterant/Qwen3.8-27B-RANA-abliterated-FP8 · Hugging Face",
+      "url": "https://huggingface.co/abliterant/Qwen3.8-27B-RANA-abliterated-FP8",
+      "snippet": "An Abliterant FP8 release of abliterant/Qwen3.8-27B-RANA-abliterated, a refusal-ablated Qwen/Qwen3.8-27B for research use. It uses the same FP8 format as Qwen's official Qwen3.8-27B-FP8, at about half the size of the BF16 build; recorded capability comparisons are reported below."
+    },
+    {
+      "title": "abliterant/Qwen3.8-27B-RANA-abliterated · Hugging Face",
+      "url": "https://huggingface.co/abliterant/Qwen3.8-27B-RANA-abliterated",
+      "snippet": "Compared with the base model and the orcarouter/Qwen3.8-27B-Uncensored reference, all run through the same evaluation harness. Where two numbers are given, they are from the two judges (gpt-oss / Mistral)."
+    }
+  ]
+}

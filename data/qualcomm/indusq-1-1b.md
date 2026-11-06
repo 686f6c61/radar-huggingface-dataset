@@ -17,7 +17,7 @@ Es relevante ahora porque cubre el nicho de LLM multilingues (hindi e ingles) ej
 | Parametros activos | No aplica (no es MoE segun la informacion disponible) |
 | Longitud de contexto | 1024 tokens en Max context length; la tabla de rendimiento indica 4096 (dato contradictorio en la model card). Entrada del Prompt Processor: 128 tokens |
 | Tipos de cuantizacion | w4a16, mas w8a16 en unas pocas capas (exportacion QNN) |
-| Idiomas soportados | Hindi e ingles (los metadatos de HuggingFace no listan idiomas) |
+| Idiomas soportados | Hindi e ingles (los metadatos de Hugging Face no listan idiomas) |
 | Licencia | other (modelo disponible para compra; contactar con Qualcomm para opciones de licencia) |
 | Formato de pesos | Ficheros pre-exportados optimizados para dispositivos Qualcomm (runtime QNN_CONTEXT_BINARY); libreria declarada: pytorch |
 | Runtime minimo | QNN SDK 2.27.7 |
@@ -79,7 +79,7 @@ Parte de los datos de la siguiente tabla (parametros, contexto y licencia de las
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | IndusQ-1.1B | 1,1B-1,2B | 1024 / 4096 (segun la model card) | Hindi e ingles | other (de pago) | Pre-exportado para Qualcomm; compra previo contacto |
-| ProjectIndus (modelo origen) | ~1,2B | No disponible | Hindi y dialectos | No disponible | HuggingFace (nickmalhotra/ProjectIndus) |
+| ProjectIndus (modelo origen) | ~1,2B | No disponible | Hindi y dialectos | No disponible | Hugging Face (nickmalhotra/ProjectIndus) |
 | Llama 3.2 1B | 1,23B | 128K | Multilingue | Llama 3.2 Community License | Pesos abiertos |
 | Qwen2.5 1.5B | 1,54B | 32K | Multilingue | Apache 2.0 | Pesos abiertos |
 | Gemma 2 2B | 2,6B | 8K | Multilingue | Gemma Terms | Pesos abiertos |
@@ -91,7 +91,7 @@ Comparativa de rendimiento frente a estas alternativas: no disponible en la info
 - Licencia restrictiva: se distribuye bajo licencia "other" y esta disponible para compra. La propia model card remite a contactar con Qualcomm para opciones de licencia; no es un modelo de uso libre.
 - Uso comercial sujeto a contratacion: no puede asumirse su explotacion comercial sin acordar licencia con Qualcomm.
 - Contexto limitado: la documentacion es contradictoria (1024 frente a 4096 tokens). El Prompt Processor trabaja en bloques de 128 tokens, lo que penaliza conversaciones muy largas.
-- Idiomas acotados: solo hindi e ingles; no hay soporte multilingue amplio confirmado. Los metadatos de HuggingFace no listan idiomas.
+- Idiomas acotados: solo hindi e ingles; no hay soporte multilingue amplio confirmado. Los metadatos de Hugging Face no listan idiomas.
 - Riesgo de alucinacion: inherente a los LLM; no se aportan datos de evaluacion de fidelidad ni de tasas de error.
 - Sesgos: no se documenta informacion sobre sesgos, composicion del dataset de entrenamiento ni evaluaciones de equidad.
 - Arquitectura y datos de entrenamiento no transparentes: se desconoce el numero de tokens, la mezcla del corpus y si hubo RLHF/DPO, lo que dificulta evaluar su comportamiento en dominios especificos.
@@ -102,7 +102,7 @@ Comparativa de rendimiento frente a estas alternativas: no disponible en la info
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/qualcomm/IndusQ-1.1B
+- Hugging Face (modelo): https://huggingface.co/qualcomm/IndusQ-1.1B
 - Modelo origen (implementacion): https://huggingface.co/nickmalhotra/ProjectIndus
 - Qualcomm AI Hub Models (libreria de exportacion): https://github.com/qualcomm/ai-hub-models/blob/v0.62.2/src/qai_hub_models/models/indus_1b
 - Qualcomm AI Hub Workbench: https://workbench.aihub.qualcomm.com

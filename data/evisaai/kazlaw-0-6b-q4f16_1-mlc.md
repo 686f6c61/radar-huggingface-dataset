@@ -4,7 +4,7 @@
 
 KazLaw-0.6B-q4f16_1-MLC es una compilación en formato MLC del modelo Qwen3-0.6B, publicada por el usuario Evisaai bajo el identificador `Evisaai/KazLaw-0.6B-q4f16_1-MLC`. Se trata, por tanto, de una conversión de pesos a la cuantización `q4f16_1` (4 bits con activaciones en float16) orientada a su ejecución con las librerías MLC-LLM y WebLLM, que permiten inferencia nativa en GPU y en navegador respectivamente. El modelo base es Qwen3-0.6B, desarrollado por el equipo Qwen de Alibaba, un transformer decoder-only denso de aproximadamente 0,6 mil millones de parámetros.
 
-La relevancia de esta publicación es doble. Por un lado, demuestra el flujo de trabajo de MLC para empaquetar modelos pequeños listos para despliegue en entornos con recursos limitados o en el cliente (web). Por otro, el nombre "KazLaw" sugiere un posible ajuste fino orientado al dominio legal kazajo, aunque la model card no documenta ningún proceso de entrenamiento adicional ni diferencias respecto al modelo base. La ficha se redacta a partir de la información disponible en HuggingFace y en la model card, que es escasa: no se publican benchmarks, licencia explícita ni idiomas soportados.
+La relevancia de esta publicación es doble. Por un lado, demuestra el flujo de trabajo de MLC para empaquetar modelos pequeños listos para despliegue en entornos con recursos limitados o en el cliente (web). Por otro, el nombre "KazLaw" sugiere un posible ajuste fino orientado al dominio legal kazajo, aunque la model card no documenta ningún proceso de entrenamiento adicional ni diferencias respecto al modelo base. La ficha se redacta a partir de la información disponible en Hugging Face y en la model card, que es escasa: no se publican benchmarks, licencia explícita ni idiomas soportados.
 
 El repositorio ocupa 0,3 GB y fue creado el 3 de noviembre de 2026. No registra descargas ni likes en el momento de la consulta, y la model card es esencialmente una copia de la plantilla de MLC-LLM para Qwen3-0.6B, sin sección propia sobre el supuesto ajuste legal.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| KazLaw-0.6B-q4f16_1-MLC | ~0,6B | no disponible | MLC (q4f16_1) | no disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen3-0.6B | ~0,6B | 32 768 tokens (modelo base) | safetensors | Apache 2.0 (modelo base) | HuggingFace, ampliamente usado |
-| mlc-ai/Qwen3-0.6B-q4f16_1-MLC | ~0,6B | 32 768 tokens (modelo base) | MLC (q4f16_1) | Apache 2.0 (modelo base) | HuggingFace, oficial de MLC |
-| Llama 3.2 1B Instruct | ~1,2B | 128 000 tokens | safetensors, GGUF | Llama 3.2 Community License | HuggingFace, ampliamente usado |
+| KazLaw-0.6B-q4f16_1-MLC | ~0,6B | no disponible | MLC (q4f16_1) | no disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen3-0.6B | ~0,6B | 32 768 tokens (modelo base) | safetensors | Apache 2.0 (modelo base) | Hugging Face, ampliamente usado |
+| mlc-ai/Qwen3-0.6B-q4f16_1-MLC | ~0,6B | 32 768 tokens (modelo base) | MLC (q4f16_1) | Apache 2.0 (modelo base) | Hugging Face, oficial de MLC |
+| Llama 3.2 1B Instruct | ~1,2B | 128 000 tokens | safetensors, GGUF | Llama 3.2 Community License | Hugging Face, ampliamente usado |
 
 La comparación directa más relevante es con la compilación oficial `mlc-ai/Qwen3-0.6B-q4f16_1-MLC`, que ofrece el mismo artefacto con respaldo del proyecto MLC y licencia del modelo base clara. KazLaw no documenta diferencias respecto a esa compilación, por lo que su valor añadido (un supuesto ajuste legal) no está verificado.
 
@@ -85,7 +85,7 @@ La comparación directa más relevante es con la compilación oficial `mlc-ai/Qw
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Evisaai/KazLaw-0.6B-q4f16_1-MLC
+- Hugging Face: https://huggingface.co/Evisaai/KazLaw-0.6B-q4f16_1-MLC
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Compilación oficial MLC del mismo modelo: https://huggingface.co/mlc-ai/Qwen3-0.6B-q4f16_1-MLC
 - Repositorio MLC-LLM: https://github.com/mlc-ai/mlc-llm

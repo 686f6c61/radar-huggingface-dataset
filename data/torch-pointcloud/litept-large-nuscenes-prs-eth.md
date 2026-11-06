@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LitePT-large.nuscenes.prs-eth es un modelo de segmentacion semantica de nubes de puntos 3D, concretamente la variante grande de LitePT (Lighter Yet Stronger Point Transformer) entrenada sobre el dataset nuScenes para conduccion autonoma. Lo desarrolla el grupo de investigacion de prs-eth (ETH Zurich) y esta empaquetado y distribuido en HuggingFace por el proyecto torch-pointcloud, una libreria de PyTorch orientada a tareas de point cloud. El modelo resuelve la asignacion de una clase semantica a cada punto de una nube LiDAR entre 16 categorias (vehiculos, peatones, vegetacion, edificios, etc.).
+LitePT-large.nuscenes.prs-eth es un modelo de segmentacion semantica de nubes de puntos 3D, concretamente la variante grande de LitePT (Lighter Yet Stronger Point Transformer) entrenada sobre el dataset nuScenes para conduccion autonoma. Lo desarrolla el grupo de investigacion de prs-eth (ETH Zurich) y esta empaquetado y distribuido en Hugging Face por el proyecto torch-pointcloud, una libreria de PyTorch orientada a tareas de point cloud. El modelo resuelve la asignacion de una clase semantica a cada punto de una nube LiDAR entre 16 categorias (vehiculos, peatones, vegetacion, edificios, etc.).
 
 La arquitectura es un transformer hibrido para nubes de puntos: convoluciones en las etapas tempranas y atencion con embedding rotacional 3D en las etapas tardias, una combinacion disenada para reducir coste computacional sin perder capacidad de modelado global. Cuenta con 85,9 millones de parametros, 4 canales de entrada (coordenadas xyz mas intensidad) y 72 caracteristicas internas. El checkpoint esta convertido desde el repositorio oficial de LitePT bajo licencia MIT.
 
@@ -78,7 +78,7 @@ No se dispone en la informacion proporcionada de datos de rendimiento de modelos
 
 | Modelo | Parametros | Dataset | mIoU nuScenes | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| litept-large.nuscenes.prs-eth | 85,9 M | nuScenes | 81,11 | MIT | HuggingFace (torch-pointcloud) |
+| litept-large.nuscenes.prs-eth | 85,9 M | nuScenes | 81,11 | MIT | Hugging Face (torch-pointcloud) |
 | PointTransformerV3 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | PTv2 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -96,7 +96,7 @@ No se dispone en la informacion proporcionada de datos de rendimiento de modelos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/litept-large.nuscenes.prs-eth
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/litept-large.nuscenes.prs-eth
 - Paper LitePT: https://arxiv.org/abs/2512.13689
 - Repositorio oficial LitePT: https://github.com/prs-eth/LitePT
 - Libreria torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-0.8B-loopfix es una edición de pesos del modelo Qwen3.5-0.8B del equipo Qwen, publicada por el usuario Tutanka01 en HuggingFace. No se trata de un modelo entrenado desde cero ni de un fine-tuning: es una intervención quirúrgica sobre los pesos de las matrices `ffn_down` que modifica únicamente 131.072 parámetros (el 0,016 % del total) para eliminar el bucle de razonamiento que afecta al modelo original en modo thinking. El modelo base tiene 752.393.024 parámetros reales según safetensors y se distribuye en formato GGUF con cuantización Q8_0.
+Qwen3.5-0.8B-loopfix es una edición de pesos del modelo Qwen3.5-0.8B del equipo Qwen, publicada por el usuario Tutanka01 en Hugging Face. No se trata de un modelo entrenado desde cero ni de un fine-tuning: es una intervención quirúrgica sobre los pesos de las matrices `ffn_down` que modifica únicamente 131.072 parámetros (el 0,016 % del total) para eliminar el bucle de razonamiento que afecta al modelo original en modo thinking. El modelo base tiene 752.393.024 parámetros reales según safetensors y se distribuye en formato GGUF con cuantización Q8_0.
 
 El problema que resuelve es concreto y está bien documentado por el autor: el Qwen3.5-0.8B original, cuando se le activa el modo thinking, tiende a reescribir su propio razonamiento indefinidamente ("Wait, I need to make sure...") hasta agotar el límite de tokens sin llegar a emitir respuesta. En una evaluación de 30 prompts conversacionales en francés, el modelo original quedaba atrapado en bucle en el 56,7 % de los casos; tras la edición, ese porcentaje baja al 16,7 % y la tasa de respuesta sube del 43,3 % al 86,7 %. La relevancia actual es metodológica: demuestra a pequeña escala que la edición directa de pesos (weight-space programming) puede corregir comportamientos patológicos sin reentrenar.
 
@@ -71,9 +71,9 @@ La reducción de bucles es de −40 puntos (intervalo de confianza bootstrap del
 
 | Modelo | Parámetros | Contexto | Comportamiento en thinking | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-0.8B-loopfix (este) | 752.393.024 | No disponible | 16,7 % de bucles; 86,7 % de respuestas en la evaluación del autor | Apache 2.0 | GGUF Q8_0 en HuggingFace |
+| Qwen3.5-0.8B-loopfix (este) | 752.393.024 | No disponible | 16,7 % de bucles; 86,7 % de respuestas en la evaluación del autor | Apache 2.0 | GGUF Q8_0 en Hugging Face |
 | Qwen3.5-0.8B (original) | 752.393.024 | No disponible | 56,7 % de bucles; 43,3 % de respuestas en la misma evaluación | Apache 2.0 | Pesos originales y GGUF de Unsloth |
-| Qwen3.5-0.8B Q8_0 de Unsloth | 752.393.024 | No disponible | Idéntico al original (mismos pesos) | Apache 2.0 | GGUF Q8_0 en HuggingFace |
+| Qwen3.5-0.8B Q8_0 de Unsloth | 752.393.024 | No disponible | Idéntico al original (mismos pesos) | Apache 2.0 | GGUF Q8_0 en Hugging Face |
 
 No se dispone de datos de benchmarks estándar ni de comparaciones con otros modelos de tamaño similar en la información proporcionada, por lo que la comparativa se limita a las variantes del mismo modelo base.
 
@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks estándar ni de comparaciones con otros mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tutanka01/Qwen3.5-0.8B-loopfix-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Tutanka01/Qwen3.5-0.8B-loopfix-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - GGUF Q8_0 original de Unsloth: https://huggingface.co/unsloth/Qwen3.5-0.8B-GGUF
 - Repositorio con código, método y resultados: https://github.com/Tutanka01/qwen-weight-space-loopfix

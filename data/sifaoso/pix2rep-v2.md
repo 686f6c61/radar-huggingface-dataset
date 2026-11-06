@@ -59,8 +59,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. Los r
 
 | Modelo | Dominio | Backbones | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Pix2Rep-v2 (este modelo) | Cine MRI cardiaca (ACDC+M&Ms+M&Ms2) | U-Net, SwinUNETR | Apache 2.0 | Pesos publicados en HuggingFace |
-| Modelos SSL medicos genericos (p. ej. preentrenamientos tipo VoCo, SwinUNETR SSL en BTCV) | Imagen medica multi-organos | SwinUNETR / CNN | Variable | Pesos publicados en HuggingFace/model zoo de MONAI |
+| Pix2Rep-v2 (este modelo) | Cine MRI cardiaca (ACDC+M&Ms+M&Ms2) | U-Net, SwinUNETR | Apache 2.0 | Pesos publicados en Hugging Face |
+| Modelos SSL medicos genericos (p. ej. preentrenamientos tipo VoCo, SwinUNETR SSL en BTCV) | Imagen medica multi-organos | SwinUNETR / CNN | Variable | Pesos publicados en Hugging Face/model zoo de MONAI |
 | Entrenamiento desde cero (baseline sin SSL) | Cualquier imagen medica | U-Net, SwinUNETR | n/a | Requiere dataset etiquetado completo |
 
 Nota: la comparativa es cualitativa; no hay metricas publicadas en la model card que permitan una comparacion numerica directa.
@@ -76,7 +76,7 @@ Nota: la comparativa es cualitativa; no hay metricas publicadas en la model card
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sifaoso/pix2rep-v2
+- Modelo en Hugging Face: https://huggingface.co/sifaoso/pix2rep-v2
 - Paper (arXiv): https://arxiv.org/abs/2609.01427
-- Paper en HuggingFace: https://huggingface.co/papers/2609.01427
+- Paper en Hugging Face: https://huggingface.co/papers/2609.01427
 - Repositorio oficial de codigo (GitHub): https://github.com/BioMedTP/pix2rep-v2

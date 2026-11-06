@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`so400m_1_5b_step2` es un checkpoint publicado en HuggingFace por el usuario `pbwpbw`, identificado con las etiquetas `safetensors`, `StateVid_qwen` y `region:us`. Los metadatos de safetensors declaran 2.271.570.272 parámetros totales (aproximadamente 2,27 mil millones), y el repositorio ocupa 4,7 GB, lo que es coherente con pesos almacenados en precisión de 16 bits (bf16/fp16). El nombre sugiere una composición de dos componentes, uno de unos 400 millones de parámetros y otro de aproximadamente 1,5 mil millones, más un sufijo `step2` que apunta a una segunda etapa de un pipeline de entrenamiento, pero el autor no documenta nada al respecto.
+`so400m_1_5b_step2` es un checkpoint publicado en Hugging Face por el usuario `pbwpbw`, identificado con las etiquetas `safetensors`, `StateVid_qwen` y `region:us`. Los metadatos de safetensors declaran 2.271.570.272 parámetros totales (aproximadamente 2,27 mil millones), y el repositorio ocupa 4,7 GB, lo que es coherente con pesos almacenados en precisión de 16 bits (bf16/fp16). El nombre sugiere una composición de dos componentes, uno de unos 400 millones de parámetros y otro de aproximadamente 1,5 mil millones, más un sufijo `step2` que apunta a una segunda etapa de un pipeline de entrenamiento, pero el autor no documenta nada al respecto.
 
-La ficha de HuggingFace no incluye model card, pipeline declarado, licencia, idiomas soportados ni descripción de la arquitectura. El repositorio se creó el 13 de septiembre de 2026 y se actualizó seis minutos después, sin actividad posterior conocida: acumula 31 descargas y 0 «me gusta», lo que indica una adopción prácticamente nula y ausencia de validación por parte de la comunidad.
+La ficha de Hugging Face no incluye model card, pipeline declarado, licencia, idiomas soportados ni descripción de la arquitectura. El repositorio se creó el 13 de septiembre de 2026 y se actualizó seis minutos después, sin actividad posterior conocida: acumula 31 descargas y 0 «me gusta», lo que indica una adopción prácticamente nula y ausencia de validación por parte de la comunidad.
 
 Por todo ello, este checkpoint debe considerarse un artefacto experimental o de uso interno cuyo propósito real no está declarado. Cualquier evaluación técnica seria exige inspección directa del repositorio (config.json, tokenizer, código de modelado) antes de plantear su uso, y en el estado actual de la información no es posible confirmar qué tarea resuelve ni con qué garantías.
 
@@ -79,10 +79,10 @@ No es posible establecer una comparativa fiable porque se desconoce la tarea del
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `pbwpbw/so400m_1_5b_step2` | 2,27 B | no disponible | no disponible | safetensors en HuggingFace |
-| Llama 3.2 3B | 3,21 B | 128 000 tokens | Licencia comunitaria de Llama 3.2 | pesos abiertos en HuggingFace |
-| Qwen2.5 3B | 3,09 B | 32 768 tokens nativos | Apache 2.0 | pesos abiertos en HuggingFace |
-| Gemma 2 2B | 2,61 B | 8 192 tokens | Términos de uso de Gemma | pesos abiertos en HuggingFace |
+| `pbwpbw/so400m_1_5b_step2` | 2,27 B | no disponible | no disponible | safetensors en Hugging Face |
+| Llama 3.2 3B | 3,21 B | 128 000 tokens | Licencia comunitaria de Llama 3.2 | pesos abiertos en Hugging Face |
+| Qwen2.5 3B | 3,09 B | 32 768 tokens nativos | Apache 2.0 | pesos abiertos en Hugging Face |
+| Gemma 2 2B | 2,61 B | 8 192 tokens | Términos de uso de Gemma | pesos abiertos en Hugging Face |
 
 Ninguno de estos modelos puede considerarse estrictamente comparable sin conocer la modalidad y el dominio de `so400m_1_5b_step2`.
 
@@ -100,7 +100,7 @@ Ninguno de estos modelos puede considerarse estrictamente comparable sin conocer
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pbwpbw/so400m_1_5b_step2
+- Hugging Face: https://huggingface.co/pbwpbw/so400m_1_5b_step2
 - Paper: no disponible.
 - Blog o memoria técnica: no disponible.
 - Repositorio de código: no disponible.

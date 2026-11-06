@@ -121,9 +121,9 @@ La curva desciende hasta el paso 4K y asciende de forma sostenida a partir de ah
 
 | Modelo | Parametros | Contexto | Espacio de acciones | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| pi05-relative-joints-bagplace-memrtc-full-ft-43k | 4.143.404.816 | no disponible | 10 dim (6 articulaciones + pinza + base) relativas | Pick and place de bolsa, unica tarea; MEM + RTC | apache-2.0 | Publico en HuggingFace, 0 descargas |
+| pi05-relative-joints-bagplace-memrtc-full-ft-43k | 4.143.404.816 | no disponible | 10 dim (6 articulaciones + pinza + base) relativas | Pick and place de bolsa, unica tarea; MEM + RTC | apache-2.0 | Publico en Hugging Face, 0 descargas |
 | Checkpoint de 4K de la misma ejecucion | 4.143.404.816 (mismo modelo base) | no disponible | 10 dim relativas | Misma tarea; mejor eval_loss de la serie (0,0164) | apache-2.0 segun el mismo autor (no confirmado en el repositorio de 43K) | Recomendado por el autor como pesos preferibles |
-| `lerobot/pi05_base` | no disponible | no disponible | no disponible | Modelo base generico de pi0.5 preentrenado, sin memoria visual | no disponible | Publico en HuggingFace |
+| `lerobot/pi05_base` | no disponible | no disponible | no disponible | Modelo base generico de pi0.5 preentrenado, sin memoria visual | no disponible | Publico en Hugging Face |
 | Otras politicas VLA de la misma categoria (pi0, OpenVLA, GR00T N1, etc.) | no disponible | no disponible | no disponible | Manipulacion generalista | no disponible | No se dispone de datos comparables en la informacion proporcionada |
 
 La comparacion cuantitativa con alternativas no es posible con los datos disponibles: la model card no publica tasas de exito ni comparaciones con otros sistemas.
@@ -146,7 +146,7 @@ La comparacion cuantitativa con alternativas no es posible con los datos disponi
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/maskjp/pi05-relative-joints-bagplace-memrtc-full-ft-43k
+- Repositorio del modelo en Hugging Face: https://huggingface.co/maskjp/pi05-relative-joints-bagplace-memrtc-full-ft-43k
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Articulo de MEM citado en la model card: arXiv:2603.03596
 - Libreria LeRobot: https://github.com/huggingface/lerobot

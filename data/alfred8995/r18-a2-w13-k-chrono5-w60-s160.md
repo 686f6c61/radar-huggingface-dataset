@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `alfred8995/r18-a2-w13-k-chrono5-w60-s160` es un checkpoint publicado en HuggingFace por el usuario alfred8995 bajo licencia Apache 2.0 y acceso restringido (gated). Se distribuye en formato safetensors con un total de 2.018.511.234 parámetros (aproximadamente 2.000 millones), lo que lo sitúa en la categoría de modelos de tamaño medio. El tag `sn38-nanochrono` sugiere una arquitectura o familia experimental de tipo "nanochrono", aunque no se dispone de documentación pública que detalle su diseño.
+El modelo `alfred8995/r18-a2-w13-k-chrono5-w60-s160` es un checkpoint publicado en Hugging Face por el usuario alfred8995 bajo licencia Apache 2.0 y acceso restringido (gated). Se distribuye en formato safetensors con un total de 2.018.511.234 parámetros (aproximadamente 2.000 millones), lo que lo sitúa en la categoría de modelos de tamaño medio. El tag `sn38-nanochrono` sugiere una arquitectura o familia experimental de tipo "nanochrono", aunque no se dispone de documentación pública que detalle su diseño.
 
 La información disponible es muy limitada: no se especifican idiomas soportados, pipeline de inferencia, datos de entrenamiento ni benchmarks. El repositorio tiene 12,6 GB de tamaño, coherente con pesos en precisión completa (FP32) o con múltiples variantes de cuantización, y apenas 4 descargas y 0 likes en el momento de la consulta, lo que indica un modelo de nicho o en fase temprana de publicación.
 
@@ -22,7 +22,7 @@ Por su nomenclatura (`r18-a2-w13-k-chrono5-w60-s160`) y su tamaño, parece trata
 | Formato de pesos | safetensors |
 | Acceso | restringido (gated) |
 | Tamaño del repositorio | 12,6 GB |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Fecha de creación | 2026-10-29 |
 | Última actualización | 2026-10-29 |
 
@@ -30,7 +30,7 @@ Por su nomenclatura (`r18-a2-w13-k-chrono5-w60-s160`) y su tamaño, parece trata
 
 No se dispone de información pública sobre la arquitectura interna del modelo. El tag `sn38-nanochrono` es el único indicio disponible y no corresponde a ninguna familia de arquitecturas ampliamente documentada (transformer, MoE, SSM o híbrida). El nombre del checkpoint contiene segmentos como `chrono5`, `w60` y `s160` que podrían referirse a hiperparámetros de entrenamiento, ventanas temporales o pasos de un proceso de destilación o currículo, pero se trata de especulación sin confirmación por parte del autor.
 
-Tampoco hay datos sobre el número de tokens de entrenamiento, la composición del dataset, la existencia de fases de RLHF, DPO o SFT, ni sobre innovaciones técnicas como decodificación especulativa o atención lineal. Toda esta información debería consultarse en la model card del repositorio, accesible únicamente tras aceptar las condiciones de uso en HuggingFace.
+Tampoco hay datos sobre el número de tokens de entrenamiento, la composición del dataset, la existencia de fases de RLHF, DPO o SFT, ni sobre innovaciones técnicas como decodificación especulativa o atención lineal. Toda esta información debería consultarse en la model card del repositorio, accesible únicamente tras aceptar las condiciones de uso en Hugging Face.
 
 ## Capacidades
 
@@ -79,7 +79,7 @@ La comparación de rendimiento no es posible sin benchmarks publicados.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: requiere aceptar condiciones en HuggingFace, lo que puede limitar su uso en pipelines automatizados.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso en pipelines automatizados.
 - Documentación inexistente o no pública: no hay model card accesible con detalles de entrenamiento, sesgos o evaluación.
 - Riesgo de alucinación: desconocido, pero aplicable a cualquier modelo generativo sin evaluación publicada.
 - Sesgos conocidos: no documentados.
@@ -90,5 +90,5 @@ La comparación de rendimiento no es posible sin benchmarks publicados.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-w13-k-chrono5-w60-s160
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-w13-k-chrono5-w60-s160
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

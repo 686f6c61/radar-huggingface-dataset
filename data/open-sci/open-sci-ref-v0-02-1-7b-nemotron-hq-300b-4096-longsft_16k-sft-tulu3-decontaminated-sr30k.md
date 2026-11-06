@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `open-sci-ref-v0.02-1.7b-nemotron-hq-300B-4096-longsft_16k-SFT-Tulu3-decontaminated-sr30k` es un checkpoint de referencia publicado por la organizacion open-sci en HuggingFace. Se trata de un ajuste fino supervisado (SFT) completo sobre una base de aproximadamente 1.700 millones de parametros, entrenado con el framework LLaMA-Factory sobre un dataset derivado de Superior-Reasoning-SFT generado con gpt-oss-120b. El identificador del modelo y la model card apuntan a un experimento de reproducibilidad dentro de la iniciativa open-sci, no a un modelo de proposito general listo para produccion.
+El modelo `open-sci-ref-v0.02-1.7b-nemotron-hq-300B-4096-longsft_16k-SFT-Tulu3-decontaminated-sr30k` es un checkpoint de referencia publicado por la organizacion open-sci en Hugging Face. Se trata de un ajuste fino supervisado (SFT) completo sobre una base de aproximadamente 1.700 millones de parametros, entrenado con el framework LLaMA-Factory sobre un dataset derivado de Superior-Reasoning-SFT generado con gpt-oss-120b. El identificador del modelo y la model card apuntan a un experimento de reproducibilidad dentro de la iniciativa open-sci, no a un modelo de proposito general listo para produccion.
 
 La relevancia de esta publicacion es fundamentalmente metodologica: sirve como referencia reproducible de un pipeline de SFT a gran escala (32 GPUs, batch total de 128, cinco epocas) y como punto de comparacion para otros experimentos de la misma organizacion. El nombre codifica decisiones de entrenamiento concretas (contexto de 4096 tokens, SFT largo de 16k, dataset Tulu3 decontaminado, submuestreo sr30k) que permiten rastrear la receta exacta utilizada.
 
@@ -35,7 +35,7 @@ El entrenamiento se realizo con LLaMA-Factory sobre el dataset `Superior-Reasoni
 - Generacion de texto autoregresiva y modelado de lenguaje, heredadas de la base de 1,7B parametros.
 - Razonamiento de tipo cadena de pensamiento, inducido por el dataset de SFT derivado de gpt-oss-120b.
 - Respuesta en formato ShareGPT multi-turno, coherente con el formato del dataset de entrenamiento.
-- Extraccion de caracteristicas (pipeline declarado en HuggingFace: `feature-extraction`).
+- Extraccion de caracteristicas (pipeline declarado en Hugging Face: `feature-extraction`).
 - Soporte de tool calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no documentado; el dataset de origen es de razonamiento, pero no hay evaluacion que lo confirme.
 - Capacidades multilingues: no disponibles; no se declara ningun idioma.
@@ -68,10 +68,10 @@ La model-index oficial declara una unica entrada (`sft__Superior-Reasoning-SFT-g
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| open-sci-ref-v0.02-1.7b (este) | 1,7B | 4096 (segun identificador) | other | HuggingFace, safetensors | Checkpoint de referencia SFT, sin benchmarks |
-| Qwen2.5-1.5B | 1,5B | 32.768 | Apache 2.0 | HuggingFace, GGUF, vLLM | Modelo de proposito general con evaluacion publica |
-| Llama 3.2-1B | 1,2B | 131.072 | Llama 3.2 Community License | HuggingFace, GGUF, vLLM | Modelo de proposito general con evaluacion publica |
-| SmolLM2-1.7B | 1,7B | 8192 | Apache 2.0 | HuggingFace, GGUF | Modelo pequeño con benchmarks publicados |
+| open-sci-ref-v0.02-1.7b (este) | 1,7B | 4096 (segun identificador) | other | Hugging Face, safetensors | Checkpoint de referencia SFT, sin benchmarks |
+| Qwen2.5-1.5B | 1,5B | 32.768 | Apache 2.0 | Hugging Face, GGUF, vLLM | Modelo de proposito general con evaluacion publica |
+| Llama 3.2-1B | 1,2B | 131.072 | Llama 3.2 Community License | Hugging Face, GGUF, vLLM | Modelo de proposito general con evaluacion publica |
+| SmolLM2-1.7B | 1,7B | 8192 | Apache 2.0 | Hugging Face, GGUF | Modelo pequeño con benchmarks publicados |
 
 La comparacion es orientativa por tamaño; este checkpoint no declara metricas que permitan una comparacion de rendimiento directa con las alternativas.
 
@@ -90,6 +90,6 @@ La comparacion es orientativa por tamaño; este checkpoint no declara metricas q
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/open-sci/open-sci-ref-v0.02-1.7b-nemotron-hq-300B-4096-longsft_16k-SFT-Tulu3-decontaminated-sr30k
+- Hugging Face: https://huggingface.co/open-sci/open-sci-ref-v0.02-1.7b-nemotron-hq-300B-4096-longsft_16k-SFT-Tulu3-decontaminated-sr30k
 - LLaMA-Factory (framework de entrenamiento): https://github.com/hiyouga/LLaMA-Factory
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la busqueda web realizada.

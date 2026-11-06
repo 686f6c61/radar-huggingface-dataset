@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ashleyperez/generation-experiments` es un repositorio de codigo publicado en HuggingFace que contiene una implementacion propia de la arquitectura Flamingo orientada a tareas de generacion. El autor la describe como una implementacion funcional ("working implementation") con una configuracion de escala "huge", pensada para codigo transparente y pruebas de humo reproducibles. No es un modelo entrenado: el propio README indica explicitamente que `model.safetensors` es un checkpoint de inicializacion valido para smoke tests y que no se presenta como un checkpoint evaluado en benchmarks.
+`ashleyperez/generation-experiments` es un repositorio de codigo publicado en Hugging Face que contiene una implementacion propia de la arquitectura Flamingo orientada a tareas de generacion. El autor la describe como una implementacion funcional ("working implementation") con una configuracion de escala "huge", pensada para codigo transparente y pruebas de humo reproducibles. No es un modelo entrenado: el propio README indica explicitamente que `model.safetensors` es un checkpoint de inicializacion valido para smoke tests y que no se presenta como un checkpoint evaluado en benchmarks.
 
 El dato mas relevante para un evaluador es la discrepancia entre la etiqueta "huge" de la configuracion y el numero de parametros reales del checkpoint: los metadatos de safetensors declaran 24.832 parametros totales, y el tamano del repositorio es de 0,0 GB. Se trata, por tanto, de un artefacto de escala minima, coherente con un peso inicializado aleatoriamente para verificar que el grafo se construye y ejecuta, no con un modelo capaz de generar texto util.
 
@@ -64,11 +64,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. El RE
 
 ## Comparativa con modelos similares
 
-No se dispone de datos verificados de modelos comparables dentro de la informacion proporcionada, por lo que no es posible construir una comparativa con cifras fiables. Como referencia cualitativa de la misma familia conceptual, existen proyectos abiertos de tipo Flamingo (por ejemplo OpenFlamingo o la familia Idefics de HuggingFace), pero no se han facilitado sus especificaciones en esta busqueda y no se incluyen numeros para no introducir datos no verificados.
+No se dispone de datos verificados de modelos comparables dentro de la informacion proporcionada, por lo que no es posible construir una comparativa con cifras fiables. Como referencia cualitativa de la misma familia conceptual, existen proyectos abiertos de tipo Flamingo (por ejemplo OpenFlamingo o la familia Idefics de Hugging Face), pero no se han facilitado sus especificaciones en esta busqueda y no se incluyen numeros para no introducir datos no verificados.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ashleyperez/generation-experiments | 24.832 | no disponible | sin benchmarks publicados; checkpoint no entrenado | MIT | HuggingFace, 16 descargas |
+| ashleyperez/generation-experiments | 24.832 | no disponible | sin benchmarks publicados; checkpoint no entrenado | MIT | Hugging Face, 16 descargas |
 | Alternativas de tipo Flamingo (OpenFlamingo, Idefics) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -85,5 +85,5 @@ No se dispone de datos verificados de modelos comparables dentro de la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ashleyperez/generation-experiments
+- Modelo en Hugging Face: https://huggingface.co/ashleyperez/generation-experiments
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, a papers asociados, a repositorios de codigo complementarios ni a demos. Los resultados devueltos por la busqueda no guardan relacion con este modelo y se descartan.

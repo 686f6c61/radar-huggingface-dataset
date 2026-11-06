@@ -37,7 +37,7 @@ No se proporcionan datos sobre el entrenamiento: no hay información sobre el n�
 
 - **Pruebas de humo en pipelines de entrenamiento**: al ser un checkpoint de inicialización, permite verificar que el código de carga, forward y backward funciona correctamente antes de lanzar un entrenamiento completo. Es adecuado por su tamaño mínimo y su formato safetensors estándar.
 - **Educación en arquitecturas Perceiver**: estudiantes e investigadores pueden estudiar la implementación de atención cruzada y *grouped query* en un ejemplo pequeño y legible, ideal para el contexto del curso CS231n.
-- **Desarrollo de adaptadores de carga**: como se trata de una implementación personalizada, los desarrolladores pueden usar este repo para escribir adaptadores que permitan cargar el modelo con APIs genéricas de HuggingFace, probando así la interoperabilidad.
+- **Desarrollo de adaptadores de carga**: como se trata de una implementación personalizada, los desarrolladores pueden usar este repo para escribir adaptadores que permitan cargar el modelo con APIs genéricas de Hugging Face, probando así la interoperabilidad.
 - **Experimentación con optimizadores y schedulers**: la receta con LAMB y *linear warmup* sirve como referencia para comparar configuraciones de entrenamiento en un entorno controlado.
 - **Investigación sobre fusión Tucker**: la combinación de *Tucker fusion* con Perceiver es poco común; este repo ofrece un banco de pruebas para explorar esa variante.
 - **Generación de datos sintéticos en entornos académicos**: aunque no entrenado, tras un entrenamiento propio (con datos externos) podría usarse para tareas de generación de texto o imágenes, siempre que se documente el proceso por separado.
@@ -63,14 +63,14 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 - El checkpoint no ha sido entrenado; no produce salidas útiles sin un entrenamiento previo.
 - No ha sido auditado en cuanto a robustez, equidad o transferencia de dominio.
-- La implementación es personalizada; las APIs genéricas de HuggingFace requieren un adaptador explícito para cargar el modelo.
+- La implementación es personalizada; las APIs genéricas de Hugging Face requieren un adaptador explícito para cargar el modelo.
 - No se especifican idiomas ni dominios de aplicación; cualquier uso en producción es prematuro.
 - La licencia Apache 2.0 permite uso comercial, pero los términos de los datos externos que se usen para entrenar deben revisarse por separado.
 - No hay garantías de soporte ni mantenimiento por parte del autor.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hiwatanabe/cs231n-generation
+- Repositorio en Hugging Face: https://huggingface.co/hiwatanabe/cs231n-generation
 - Notas del curso CS231n sobre modelos generativos: https://aman.ai/cs231n/generative-models/
 - Material oficial de CS231n sobre generación: https://cs231n.github.io/generative-models/
 - Página principal del curso CS231n: https://cs231n.stanford.edu/

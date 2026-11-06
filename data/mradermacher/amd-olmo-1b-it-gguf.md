@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento comparativo. La eleccion entre estos model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/AMD-OLMo-1B-IT-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/AMD-OLMo-1B-IT-GGUF
 - Modelo base (aiuser3993/AMD-OLMo-1B-IT): https://huggingface.co/aiuser3993/AMD-OLMo-1B-IT
 - Articulo de AMD sobre los modelos OLMo 1B: https://www.amd.com/en/developer/resources/technical-articles/introducing-the-first-amd-1b-language-model.html
 - Blog de AMD: https://www.amd.com/en/blogs/2024/introducing-the-first-amd-1b-language-models-amd-.html

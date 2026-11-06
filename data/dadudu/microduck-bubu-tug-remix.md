@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Entrada / salida | Frecuencia | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dadudu/microduck-bubu-tug-remix | Política RL (ONNX) | 61 obs / 14 acciones | 50 Hz | no disponible | HuggingFace |
-| a1rb4Ck/microduck-tug | Política RL (modelo base) | 61 obs / 14 acciones | 50 Hz | no disponible | HuggingFace |
-| Otras políticas microduck | Política RL | no disponible | no disponible | no disponible | HuggingFace / repos microduck |
+| dadudu/microduck-bubu-tug-remix | Política RL (ONNX) | 61 obs / 14 acciones | 50 Hz | no disponible | Hugging Face |
+| a1rb4Ck/microduck-tug | Política RL (modelo base) | 61 obs / 14 acciones | 50 Hz | no disponible | Hugging Face |
+| Otras políticas microduck | Política RL | no disponible | no disponible | no disponible | Hugging Face / repos microduck |
 
 No se dispone de datos de rendimiento comparativo entre estas políticas en la información proporcionada.
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativo entre estas políticas en la i
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dadudu/microduck-bubu-tug-remix
+- Hugging Face: https://huggingface.co/dadudu/microduck-bubu-tug-remix
 - Modelo base: https://huggingface.co/a1rb4Ck/microduck-tug
 - Repositorio microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento RL: `pollen-robotics/microduck_rl` (rama `main`, commit `a3e0c0fbe`)

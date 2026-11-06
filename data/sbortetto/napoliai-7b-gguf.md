@@ -82,7 +82,7 @@ La comparación directa con otros ajustes dialectales italianos no está disponi
 
 ## Enlaces
 
-- [HuggingFace: sbortetto/NapoliAI-7B-GGUF](https://huggingface.co/sbortetto/NapoliAI-7B-GGUF)
+- [Hugging Face: sbortetto/NapoliAI-7B-GGUF](https://huggingface.co/sbortetto/NapoliAI-7B-GGUF)
 - [Modelo base: unsloth/Qwen2.5-7B-Instruct](https://huggingface.co/unsloth/Qwen2.5-7B-Instruct)
 - [LM Studio](https://lmstudio.ai/)
 - [Ollama](https://ollama.com/)

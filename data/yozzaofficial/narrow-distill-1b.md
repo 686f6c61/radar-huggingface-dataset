@@ -4,7 +4,7 @@
 
 Narrow-Distill-1B es un modelo de lenguaje experimental de 166 millones de parámetros desarrollado por yozzaofficial como parte de una investigación sobre si la profundidad supera a la anchura en transformadores con presupuesto de parámetros equivalente. Su arquitectura es "narrow-and-deep": dimensión de modelo 256 y 200 capas, frente a un baseline "wide" de 12 capas y 185 millones de parámetros. Fue entrenado mediante destilación de conocimiento desde Qwen2.5-Coder-14B sobre un corpus reducido de aproximadamente 270 000 palabras.
 
-El modelo no está pensado para uso general ni producción: emplea un tokenizador word-level propio, no compatible con `AutoTokenizer` de HuggingFace, carece de formato de chat o instrucciones, y su ventana de contexto es de 512 tokens. Su valor reside en el experimento que documenta: comparar la perplejidad de una red estrecha y profunda frente a una ancha y poco profunda con recursos similares. Los resultados reportados indican que la variante estrecha logró mejor perplejidad, lo que respalda la hipótesis planteada.
+El modelo no está pensado para uso general ni producción: emplea un tokenizador word-level propio, no compatible con `AutoTokenizer` de Hugging Face, carece de formato de chat o instrucciones, y su ventana de contexto es de 512 tokens. Su valor reside en el experimento que documenta: comparar la perplejidad de una red estrecha y profunda frente a una ancha y poco profunda con recursos similares. Los resultados reportados indican que la variante estrecha logró mejor perplejidad, lo que respalda la hipótesis planteada.
 
 El repositorio incluye el código de entrenamiento, el script de evaluación y el peso del modelo en formato PyTorch (`.pt`). Forma parte del proyecto más amplio ChunkLLM, orientado a ejecutar modelos grandes en hardware de consumo con poca RAM.
 
@@ -65,7 +65,7 @@ No se dispone de datos comparativos con otros modelos de tamaño similar (p. ej.
 ## Limitaciones y advertencias
 
 - No es un modelo de propósito general: no genera texto coherente más allá de patrones estadísticos del corpus reducido.
-- Tokenizador word-level no estándar: no es compatible con `AutoTokenizer` ni con la mayoría de pipelines de HuggingFace. Requiere código personalizado para cargar y preprocesar.
+- Tokenizador word-level no estándar: no es compatible con `AutoTokenizer` ni con la mayoría de pipelines de Hugging Face. Requiere código personalizado para cargar y preprocesar.
 - Sin formato de chat ni instrucciones: no se puede usar para tareas conversacionales o de seguimiento de instrucciones.
 - Corpus de entrenamiento muy pequeño (~270K palabras): limita severamente la cobertura léxica y temática.
 - Ventana de contexto de solo 512 tokens: insuficiente para tareas que requieran contexto largo.
@@ -75,6 +75,6 @@ No se dispone de datos comparativos con otros modelos de tamaño similar (p. ej.
 
 ## Enlaces
 
-- Modelo en HuggingFace: [yozzaofficial/narrow-distill-1B](https://huggingface.co/yozzaofficial/narrow-distill-1B)
+- Modelo en Hugging Face: [yozzaofficial/narrow-distill-1B](https://huggingface.co/yozzaofficial/narrow-distill-1B)
 - Repositorio del experimento (código de entrenamiento, evaluación y writeup): [github.com/yozzaofficial/Narrow-Model](https://github.com/yozzaofficial/Narrow-Model)
 - Proyecto ChunkLLM (contexto de investigación): [github.com/yozzaofficial/ChunkLLM](https://github.com/yozzaofficial/ChunkLLM)

@@ -76,6 +76,6 @@ La comparación con nanoGPT es pertinente porque ambos son implementaciones educ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/adimunot/transformer-from-scratch
+- Modelo en Hugging Face: https://huggingface.co/adimunot/transformer-from-scratch
 - Repositorio de código fuente: https://github.com/adimunot21/transformer-from-scratch
 - Referencia del paper original "Attention Is All You Need": https://arxiv.org/abs/1706.03762

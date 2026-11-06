@@ -2,7 +2,7 @@
 
 ## Resumen
 
-dinghy-law-0.6b-v1-gguf es la conversión al formato GGUF del modelo de embeddings legales `Hanno-Labs/dinghy-law-0.6b-v1`, un fine-tune contrastivo de `Qwen/Qwen3-Embedding-0.6B` con 595.776.512 parámetros (aproximadamente 0,6B). Lo publica el usuario Athithya117 en HuggingFace y su propósito es permitir la generación de embeddings legales en entornos basados en llama.cpp, sin depender de PyTorch ni de la pila de sentence-transformers.
+dinghy-law-0.6b-v1-gguf es la conversión al formato GGUF del modelo de embeddings legales `Hanno-Labs/dinghy-law-0.6b-v1`, un fine-tune contrastivo de `Qwen/Qwen3-Embedding-0.6B` con 595.776.512 parámetros (aproximadamente 0,6B). Lo publica el usuario Athithya117 en Hugging Face y su propósito es permitir la generación de embeddings legales en entornos basados en llama.cpp, sin depender de PyTorch ni de la pila de sentence-transformers.
 
 El modelo resuelve un problema concreto: desplegar búsqueda semántica y recuperación de documentos jurídicos en infraestructura ligera (CPU, contenedores pequeños, edge) manteniendo la fidelidad del modelo original. La conversión conserva únicamente el backbone del transformer (pooling de último token más normalización L2) y descarta la cabeza densa `2_Dense`, que según el autor es una rotación casi ortogonal y por tanto irrelevante para el ranking por similitud coseno.
 
@@ -25,7 +25,7 @@ Es relevante ahora porque los embeddings legales de dominio específico suelen p
 
 El modelo base es un fine-tune contrastivo de `Qwen/Qwen3-Embedding-0.6B`, un transformer decoder-only de 0,6B parámetros especializado en representaciones vectoriales. La pipeline original de sentence-transformers es `Transformer -> last-token pooling -> Dense -> L2 Normalize`. La conversión a GGUF conserva el backbone (`Transformer -> last-token pool -> L2 norm`) y elimina la capa `2_Dense`, que el autor describe como una rotación casi ortogonal (defecto de ortogonalidad normalizado de 0,00103, normas de fila unitarias y sesgo cercano a cero). Dado que la similitud coseno es invariante bajo rotación, la omisión no altera el ranking de recuperación.
 
-No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del corpus jurídico ni si se aplicaron técnicas de RLHF o DPO. El autor reporta que la revisión de origen es `8f63ca78b621eb9c242429ea2472389d23f8902f` y que la cuantización se realizó con `llama.cpp/convert_hf_to_gguf.py` (f16) y `llama-quantize` (Q8_0, Q6_K). La innovación técnica destacable es la verificación de fidelidad: el f16 reproduce el embedding del backbone de HuggingFace con coseno 1.00000 sobre sondas legales.
+No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del corpus jurídico ni si se aplicaron técnicas de RLHF o DPO. El autor reporta que la revisión de origen es `8f63ca78b621eb9c242429ea2472389d23f8902f` y que la cuantización se realizó con `llama.cpp/convert_hf_to_gguf.py` (f16) y `llama-quantize` (Q8_0, Q6_K). La innovación técnica destacable es la verificación de fidelidad: el f16 reproduce el embedding del backbone de Hugging Face con coseno 1.00000 sobre sondas legales.
 
 ## Capacidades
 
@@ -33,7 +33,7 @@ No se dispone de información sobre el volumen de tokens de entrenamiento, la co
 - Especialización en dominio legal: entrenado para discriminar entre textos jurídicos y consultas sobre estatutos, obligaciones y situaciones legales.
 - Pooling de último token con normalización L2, compatible con `llama-embedding` mediante `--pooling last --embd-normalize 2`.
 - Soporte de prefijo de instrucción de Qwen3-Embedding para consultas (`Instruct: {task_instruction}\nQuery: {query}`), mientras los documentos se embeben en crudo.
-- Compatible con endpoints de la API de HuggingFace (`endpoints_compatible`).
+- Compatible con endpoints de la API de Hugging Face (`endpoints_compatible`).
 - No soporta tool calling, agentes, visión, audio ni modo de razonamiento: es un modelo de feature extraction.
 
 ## Casos de uso
@@ -54,7 +54,7 @@ El autor reporta el rendimiento del modelo completo (no de la build GGUF) en MTE
 |---|---|
 | MTEB(Law, v1) Mean(Task) nDCG@10 | 65,83 |
 
-Fidelidad de la cuantización respecto al backbone de HuggingFace sobre sondas legales:
+Fidelidad de la cuantización respecto al backbone de Hugging Face sobre sondas legales:
 
 | Archivo | Coseno medio | Coseno mínimo |
 |---|---|---|

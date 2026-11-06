@@ -73,9 +73,9 @@ Estas mediciones se realizaron en un Apple M3 Ultra con 96 GB de memoria unifica
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Gemma-4-12B-Abliterated-MLX-q5 (este) | 12B | 128K | 5-bit MLX | Apache 2.0 | HuggingFace |
-| google/gemma-4-12B (original) | 12B | 256K | BF16 | Gemma Terms of Use | HuggingFace |
-| huihui-ai/Huihui-gemma-4-12B-it-abliterated | 12B | 128K | BF16 | Apache 2.0 | HuggingFace |
+| Gemma-4-12B-Abliterated-MLX-q5 (este) | 12B | 128K | 5-bit MLX | Apache 2.0 | Hugging Face |
+| google/gemma-4-12B (original) | 12B | 256K | BF16 | Gemma Terms of Use | Hugging Face |
+| huihui-ai/Huihui-gemma-4-12B-it-abliterated | 12B | 128K | BF16 | Apache 2.0 | Hugging Face |
 
 La principal diferencia con el modelo original de Google es la eliminacion de los filtros de seguridad (abliteracion) y la cuantizacion a 5-bit, que reduce el tamano y acelera la inferencia en Apple Silicon a costa de una ligera degradacion en calidad (perplexity alta). Frente al modelo abliterado en BF16, esta version MLX es mas ligera y rapida, pero requiere hardware Apple.
 
@@ -91,9 +91,9 @@ La principal diferencia con el modelo original de Google es la eliminacion de lo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shoemoney/Gemma-4-12B-Abliterated-MLX-q5
+- Modelo en Hugging Face: https://huggingface.co/shoemoney/Gemma-4-12B-Abliterated-MLX-q5
 - Modelo base abliterado: https://huggingface.co/huihui-ai/Huihui-gemma-4-12B-it-abliterated
-- Gemma 4 de Google (HuggingFace): https://huggingface.co/google/gemma-4-12B
+- Gemma 4 de Google (Hugging Face): https://huggingface.co/google/gemma-4-12B
 - Gemma 4 de DeepMind: https://deepmind.google/models/gemma/gemma-4/
 - Model card de Gemma 4: https://ai.google.dev/gemma/docs/core/model_card_4
 - Review de Gemma 4 12B MLX en Goldiebench: https://goldiebench.com/models/gemma4mlx

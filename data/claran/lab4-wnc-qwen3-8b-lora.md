@@ -70,8 +70,8 @@ No se han publicado resultados comparativos con otros modelos en la información
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `claran/lab4-wnc-qwen3-8b-lora` | 8B base + 15,3M adaptador | no disponible | Clasificación NPOV binaria | Apache-2.0 | HuggingFace |
-| `Qwen/Qwen3-8B` (base) | 8B | no disponible | Generación general | Apache-2.0 | HuggingFace |
+| `claran/lab4-wnc-qwen3-8b-lora` | 8B base + 15,3M adaptador | no disponible | Clasificación NPOV binaria | Apache-2.0 | Hugging Face |
+| `Qwen/Qwen3-8B` (base) | 8B | no disponible | Generación general | Apache-2.0 | Hugging Face |
 | Clasificadores clásicos sobre WNC (Pryzant et al., 2020) | no disponible | no disponible | Detección de sesgo | no disponible | Paper y repo |
 
 La comparación con otros adaptadores LoRA para la misma tarea no está disponible en la información proporcionada.
@@ -89,7 +89,7 @@ La comparación con otros adaptadores LoRA para la misma tarea no está disponib
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/claran/lab4-wnc-qwen3-8b-lora
+- Hugging Face del adaptador: https://huggingface.co/claran/lab4-wnc-qwen3-8b-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Paper de WNC (Pryzant et al., 2020): https://arxiv.org/abs/1911.09709
 - Repositorio de datos de WNC: https://github.com/rpryzant/neutralizing-bias

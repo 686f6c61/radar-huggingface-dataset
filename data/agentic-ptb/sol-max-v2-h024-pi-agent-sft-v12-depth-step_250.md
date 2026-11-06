@@ -68,5 +68,5 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- [HuggingFace - agentic-ptb/sol-max-v2.h024.pi-agent-sft-v12-depth.step_250](https://huggingface.co/agentic-ptb/sol-max-v2.h024.pi-agent-sft-v12-depth.step_250)
-- [Modelos de agentic-ptb en HuggingFace](https://huggingface.co/models?other=agentic-ptb)
+- [Hugging Face - agentic-ptb/sol-max-v2.h024.pi-agent-sft-v12-depth.step_250](https://huggingface.co/agentic-ptb/sol-max-v2.h024.pi-agent-sft-v12-depth.step_250)
+- [Modelos de agentic-ptb en Hugging Face](https://huggingface.co/models?other=agentic-ptb)

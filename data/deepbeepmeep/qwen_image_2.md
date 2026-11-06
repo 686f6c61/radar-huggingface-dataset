@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparado con otras alternativas en la inf
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/DeepBeepMeep/Qwen_image_2
+- Repositorio Hugging Face: https://huggingface.co/DeepBeepMeep/Qwen_image_2
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Licencia: https://huggingface.co/DeepBeepMeep/Qwen_image_2/blob/main/qwen_image_21/LICENSE
 - Codificador de texto Qwen3-VL-8B-Instruct (BF16): https://huggingface.co/DeepBeepMeep/Ideogram4/blob/main/Qwen3-VL-8B-Instruct/Qwen3-VL-8B-Instruct_bf16.safetensors

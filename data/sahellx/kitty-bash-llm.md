@@ -111,5 +111,5 @@ No se dispone de datos de otros modelos especializados en generación de comando
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sahellx/kitty-bash-llm
+- Modelo en Hugging Face: https://huggingface.co/sahellx/kitty-bash-llm
 - Modelo base Qwen2.5-Coder-0.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B-Instruct

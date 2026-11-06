@@ -96,7 +96,7 @@ No se dispone de comparativas con modelos externos de tamano similar (por ejempl
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/varadsrivastava/lm-playschool-qwen3.5-2b-iter3
+- Repositorio Hugging Face: https://huggingface.co/varadsrivastava/lm-playschool-qwen3.5-2b-iter3
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Paper (pendiente de enlace, segun la model card): *Raising a Small Language Model: From Imitation to Curiosity in Dialogue Games* (LM Playschool Challenge 2026). El enlace no esta disponible en la informacion proporcionada.
-- Checkpoints relacionados de la misma familia (en HuggingFace, prefijo `varadsrivastava/lm-playschool-qwen3.5-2b-`): `sft`, `sft-dpo`, `iter4`, `grpo-base-s42`, `grpo-rnd-s42`.
+- Checkpoints relacionados de la misma familia (en Hugging Face, prefijo `varadsrivastava/lm-playschool-qwen3.5-2b-`): `sft`, `sft-dpo`, `iter4`, `grpo-base-s42`, `grpo-rnd-s42`.

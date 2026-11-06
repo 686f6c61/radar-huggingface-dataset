@@ -4,7 +4,7 @@
 
 ## Resumen
 
-`giordanoner/contrastive-2024` es un prototipo de investigación publicado en HuggingFace por el usuario `giordanoner` bajo el identificador de tarea "contrastive". Se presenta explícitamente en su model card como un andamiaje experimental de arquitectura BLIP orientado a aprendizaje contrastivo, con una configuración de escala "small" y ficheros de receta de entrenamiento incluidos, pero sin ningún resultado de rendimiento verificado. No se trata de un modelo entrenado listo para producción: el propio autor indica que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (*smoke tests*).
+`giordanoner/contrastive-2024` es un prototipo de investigación publicado en Hugging Face por el usuario `giordanoner` bajo el identificador de tarea "contrastive". Se presenta explícitamente en su model card como un andamiaje experimental de arquitectura BLIP orientado a aprendizaje contrastivo, con una configuración de escala "small" y ficheros de receta de entrenamiento incluidos, pero sin ningún resultado de rendimiento verificado. No se trata de un modelo entrenado listo para producción: el propio autor indica que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (*smoke tests*).
 
 La relevancia de este repositorio es limitada y de carácter metodológico. Su valor está en documentar formatos de fichero (`config.json`, `training_args.json`, `pipeline.py`), valores por defecto de arquitectura y una receta de entrenamiento reproducible, no en ofrecer capacidades utilizables. El recuento real de parámetros almacenados en el checkpoint es de solo 33.088, una cifra incompatible con una arquitectura BLIP completa (que en sus variantes base se mide en cientos de millones de parámetros), lo que sugiere que el repositorio contiene únicamente un subconjunto de tensores, probablemente una cabeza de proyección o un módulo auxiliar.
 
@@ -77,8 +77,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| giordanoner/contrastive-2024 | 33.088 (checkpoint de inicialización) | no disponible | sin benchmarks publicados | MIT | HuggingFace, repositorio experimental |
-| Salesforce BLIP (variantes base de captioning/retrieval) | del orden de 2-3 x 10^8 (valor orientativo, no confirmado en la información proporcionada) | no disponible en la información proporcionada | resultados publicados en el paper original | licencia específica de Salesforce (consultar) | HuggingFace, modelo entrenado |
+| giordanoner/contrastive-2024 | 33.088 (checkpoint de inicialización) | no disponible | sin benchmarks publicados | MIT | Hugging Face, repositorio experimental |
+| Salesforce BLIP (variantes base de captioning/retrieval) | del orden de 2-3 x 10^8 (valor orientativo, no confirmado en la información proporcionada) | no disponible en la información proporcionada | resultados publicados en el paper original | licencia específica de Salesforce (consultar) | Hugging Face, modelo entrenado |
 | OpenAI CLIP ViT-B/32 | del orden de 1,5 x 10^8 (valor orientativo, no confirmado en la información proporcionada) | 77 tokens por secuencia de texto (dato ampliamente citado) | resultados publicados en el paper original | licencia propia de OpenAI (consultar) | Checkpoints públicos distribuidos por OpenAI |
 
 La comparación es desigual por construcción: los dos modelos de referencia son sistemas entrenados y evaluados, mientras que `contrastive-2024` es un esqueleto de investigación sin entrenamiento. Cualquier comparación de rendimiento entre ellos carece de sentido en el estado actual del repositorio. Los valores de parámetros y contexto de las alternativas se ofrecen como orientación general y no provienen de la información proporcionada en esta consulta.
@@ -97,6 +97,6 @@ La comparación es desigual por construcción: los dos modelos de referencia son
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/giordanoner/contrastive-2024
+- Modelo en Hugging Face: https://huggingface.co/giordanoner/contrastive-2024
 - Búsqueda web: no se encontraron enlaces relevantes al modelo. Los resultados devueltos corresponden a un sitio alemán de comunidad sin relación con el repositorio, por lo que se descartan.
 - No se dispone de enlace a paper, blog, repositorio de código o demo adicionales en la información proporcionada.

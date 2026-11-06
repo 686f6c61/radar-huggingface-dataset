@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `olusegunola/qwen2.5-1.5b-primekg-sft-seed42` es un ajuste supervisado (SFT) de un modelo de la familia Qwen2.5 de 1.500 millones de parámetros, publicado por el usuario olusegunola en HuggingFace. Por el identificador se deduce que parte de `Qwen/Qwen2.5-1.5B` y que el ajuste fino se ha realizado sobre datos derivados de PrimeKG, un grafo de conocimiento de medicina de precisión, con la semilla aleatoria 42 fijada. El repositorio no incluye ningún tipo de documentación: la model card es la plantilla autogenerada de transformers, sin ningún campo completado, y no se declara licencia, idiomas, dataset de entrenamiento, hiperparámetros ni resultados de evaluación.
+El modelo `olusegunola/qwen2.5-1.5b-primekg-sft-seed42` es un ajuste supervisado (SFT) de un modelo de la familia Qwen2.5 de 1.500 millones de parámetros, publicado por el usuario olusegunola en Hugging Face. Por el identificador se deduce que parte de `Qwen/Qwen2.5-1.5B` y que el ajuste fino se ha realizado sobre datos derivados de PrimeKG, un grafo de conocimiento de medicina de precisión, con la semilla aleatoria 42 fijada. El repositorio no incluye ningún tipo de documentación: la model card es la plantilla autogenerada de transformers, sin ningún campo completado, y no se declara licencia, idiomas, dataset de entrenamiento, hiperparámetros ni resultados de evaluación.
 
 Se trata, por tanto, de un artefacto de investigación más que de un modelo listo para producción. El patrón del nombre (`...-sft-seed42`) sugiere que forma parte de una batería de experimentos repetidos con distintas semillas, algo habitual en estudios de reproducibilidad o de sensibilidad al azar en el ajuste fino. El repositorio no declara pipeline, no tiene descargas ni likes y su tamaño es de 0,0 GB, lo que indica que los pesos podrían no estar efectivamente subidos o que el contenido no es accesible públicamente.
 
@@ -20,13 +20,13 @@ La relevancia de esta ficha es, en consecuencia, limitada y descriptiva: sirve p
 | Idiomas soportados | No disponible. El modelo base Qwen2.5 declara soporte de 29 idiomas |
 | Licencia | No disponible. El repositorio no declara licencia; el modelo base Qwen2.5-1.5B se distribuye bajo Apache 2.0 |
 | Formato de pesos | safetensors (según las etiquetas del repositorio) |
-| Tamaño del repositorio | 0,0 GB, según los metadatos de HuggingFace |
-| Fecha de creación | 12 de septiembre de 2026, según los metadatos de HuggingFace |
+| Tamaño del repositorio | 0,0 GB, según los metadatos de Hugging Face |
+| Fecha de creación | 12 de septiembre de 2026, según los metadatos de Hugging Face |
 | Descargas y likes | 0 descargas, 0 likes en el momento de la consulta |
 
 ## Arquitectura y entrenamiento
 
-No hay información publicada sobre la arquitectura ni sobre el procedimiento de entrenamiento de este modelo concreto. La model card es la plantilla por defecto de HuggingFace, con todos los campos marcados como `[More Information Needed]`. Lo único que puede afirmarse con certeza es lo que figura en los metadatos: la librería declarada es transformers y el formato de pesos es safetensors.
+No hay información publicada sobre la arquitectura ni sobre el procedimiento de entrenamiento de este modelo concreto. La model card es la plantilla por defecto de Hugging Face, con todos los campos marcados como `[More Information Needed]`. Lo único que puede afirmarse con certeza es lo que figura en los metadatos: la librería declarada es transformers y el formato de pesos es safetensors.
 
 A partir del identificador pueden formularse hipótesis razonables, siempre sin confirmar. El nombre apunta a un ajuste fino supervisado (SFT) del modelo Qwen2.5-1.5B. Qwen2.5-1.5B es un transformer decoder-only de la serie Qwen2.5 de Alibaba, con aproximadamente 1.500 millones de parámetros, vocabulario de 151.936 tokens, atención con consultas agrupadas, normalización RMSNorm y activación SwiGLU, preentrenado sobre del orden de 18 billones de tokens según el informe técnico de la familia. El sufijo `primekg` sugiere que el corpus de ajuste se construyó a partir de PrimeKG, un grafo de conocimiento de medicina de precisión que integra alrededor de una veintena de recursos y varios millones de relaciones entre enfermedades, fármacos, genes y proteínas, procesos y funciones moleculares, vías biológicas, regiones anatómicas, fenotipos y exposiciones. El sufijo `seed42` indica que se fijó la semilla 42, probablemente como parte de un conjunto de ejecuciones con semillas distintas para medir variabilidad.
 
@@ -100,7 +100,7 @@ No es posible comparar rendimiento porque el modelo objeto de la ficha no public
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/olusegunola/qwen2.5-1.5b-primekg-sft-seed42
+- Repositorio en Hugging Face: https://huggingface.co/olusegunola/qwen2.5-1.5b-primekg-sft-seed42
 - Referencia citada en las etiquetas del repositorio (Lacoste et al., 2019, sobre estimación de emisiones de carbono en aprendizaje automático): https://arxiv.org/abs/1910.09700
 - Modelo base presumible: https://huggingface.co/Qwen/Qwen2.5-1.5B
 - Variante de instrucciones de la misma clase: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct

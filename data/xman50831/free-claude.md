@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`xman50831/free-claude` es un repositorio alojado en HuggingFace por el usuario `xman50831`, publicado el 20 de septiembre de 2026 y con licencia Apache 2.0. En el momento de la consulta acumula 0 descargas y 0 "likes", y su model card no contiene más que la declaración de licencia (`license: apache-2.0`), sin descripción, sin arquitectura declarada y sin ejemplos de uso. El nombre del repositorio sugiere un modelo de chat de propósito general, pero no existe ninguna evidencia en la información disponible que confirme una relación con modelos de Anthropic ni que permita identificar la familia, el tamaño o el origen de los pesos.
+`xman50831/free-claude` es un repositorio alojado en Hugging Face por el usuario `xman50831`, publicado el 20 de septiembre de 2026 y con licencia Apache 2.0. En el momento de la consulta acumula 0 descargas y 0 "likes", y su model card no contiene más que la declaración de licencia (`license: apache-2.0`), sin descripción, sin arquitectura declarada y sin ejemplos de uso. El nombre del repositorio sugiere un modelo de chat de propósito general, pero no existe ninguna evidencia en la información disponible que confirme una relación con modelos de Anthropic ni que permita identificar la familia, el tamaño o el origen de los pesos.
 
 La información pública disponible no permite determinar el problema que resuelve el modelo, su arquitectura ni su contexto. No hay pipeline declarado (`pipeline: no disponible`), no hay idiomas declarados y no hay etiquetas de arquitectura (transformer, MoE, SSM, etc.). Los únicos metadatos fiables son el identificador, el autor, la licencia Apache 2.0 y la etiqueta de región `us`.
 
@@ -91,7 +91,7 @@ No disponible. Al no conocerse la arquitectura, el número de parámetros, el co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/xman50831/free-claude
+- Hugging Face: https://huggingface.co/xman50831/free-claude
 - Paper: no disponible
 - Blog o informe técnico: no disponible
 - Repositorio de código: no disponible

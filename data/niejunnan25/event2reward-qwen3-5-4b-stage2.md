@@ -81,7 +81,7 @@ No se dispone de información suficiente para comparar rendimiento con alternati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/niejunnan25/Event2Reward-Qwen3.5-4B-Stage2
+- Hugging Face: https://huggingface.co/niejunnan25/Event2Reward-Qwen3.5-4B-Stage2
 - Artículo: https://arxiv.org/abs/2610.39212
 - Página del proyecto: https://niejunnan25.github.io/Event2Reward/
 - Repositorio de código (pendiente de publicación): https://github.com/niejunnan25/Event2Reward

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Cognitive-shield-phobert es un modelo de clasificacion de texto publicado en HuggingFace por el usuario DTFxBlazer bajo el identificador `DTFxBlazer/cognitive-shield-phobert`. Segun las etiquetas del repositorio, se trata de un modelo basado en la arquitectura RoBERTa (encoder transformer) y orientado a tareas de clasificacion de texto, con el vietnamita (`vi`) como unico idioma declarado. El nombre del repositorio sugiere una especializacion en filtrado o "escudo" cognitivo, pero la model card publicada no incluye ninguna descripcion funcional, conjunto de etiquetas ni documentacion adicional que permita confirmarlo.
+Cognitive-shield-phobert es un modelo de clasificacion de texto publicado en Hugging Face por el usuario DTFxBlazer bajo el identificador `DTFxBlazer/cognitive-shield-phobert`. Segun las etiquetas del repositorio, se trata de un modelo basado en la arquitectura RoBERTa (encoder transformer) y orientado a tareas de clasificacion de texto, con el vietnamita (`vi`) como unico idioma declarado. El nombre del repositorio sugiere una especializacion en filtrado o "escudo" cognitivo, pero la model card publicada no incluye ninguna descripcion funcional, conjunto de etiquetas ni documentacion adicional que permita confirmarlo.
 
 El dato tecnico mas solido disponible es el recuento de parametros extraido de los pesos en formato safetensors: 134.999.810 parametros (aproximadamente 135 millones). Este tamano es coherente con la familia de modelos RoBERTa-base y con variantes derivadas como PhoBERT, el encoder preentrenado en vietnamita sobre el que apunta el sufijo del nombre. El repositorio ocupa 0,5 GB, no acumula descargas ni "likes" en el momento de la consulta y no declara licencia.
 
@@ -24,8 +24,8 @@ La relevancia de esta ficha es limitada y fundamentalmente cautelar: se trata de
 | Libreria | transformers |
 | Tamano del repositorio | 0,5 GB |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
-| Fecha de creacion (HuggingFace) | 2026-09-11 (segun metadatos del repositorio) |
-| Ultima actualizacion (HuggingFace) | 2026-09-11 (segun metadatos del repositorio) |
+| Fecha de creacion (Hugging Face) | 2026-09-11 (segun metadatos del repositorio) |
+| Ultima actualizacion (Hugging Face) | 2026-09-11 (segun metadatos del repositorio) |
 
 ## Arquitectura y entrenamiento
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia (calculada a partir del recuento de parametros, no publicada por el autor): aproximadamente 540 MB en FP32, 270 MB en FP16/BF16 y 135 MB en INT8.
 - GPU recomendadas: cualquier GPU con al menos 1-2 GB de VRAM libre es suficiente para inferencia en precision reducida. El modelo cabe sin dificultad en tarjetas de gama de entrada como GTX 1650, RTX 3050 o superiores.
 - Cabe en GPU de consumo: si. Un modelo de 135 millones de parametros se ejecuta comodamente en cualquier GPU de consumo actual e incluso en CPU con latencias aceptables.
-- Opciones de despliegue: la libreria declarada es `transformers`, por lo que es compatible con el pipeline de HuggingFace. No se publican pesos GGUF, por lo que llama.cpp u Ollama requeririan una conversion manual. vLLM y TGI son tecnicamente aplicables a modelos encoder, pero no hay configuracion publicada para este repositorio.
+- Opciones de despliegue: la libreria declarada es `transformers`, por lo que es compatible con el pipeline de Hugging Face. No se publican pesos GGUF, por lo que llama.cpp u Ollama requeririan una conversion manual. vLLM y TGI son tecnicamente aplicables a modelos encoder, pero no hay configuracion publicada para este repositorio.
 - Latencia y throughput estimados: no disponible. No se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -74,10 +74,10 @@ No se dispone de resultados de rendimiento de este modelo, por lo que la compara
 
 | Modelo | Parametros | Idioma principal | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DTFxBlazer/cognitive-shield-phobert | 134.999.810 | vietnamita | no disponible | no disponible | HuggingFace, safetensors, 0 descargas |
-| PhoBERT-base | ~135 millones | vietnamita | 256 tokens (configuracion publicada) | MIT (verificar en el repositorio oficial) | HuggingFace / VinAI |
-| XLM-RoBERTa-base | ~278 millones | multilingue (100 idiomas) | 512 tokens | MIT (verificar en el repositorio oficial) | HuggingFace / Facebook AI |
-| mBERT | ~178 millones | multilingue (104 idiomas) | 512 tokens | Apache 2.0 (verificar en el repositorio oficial) | HuggingFace / Google |
+| DTFxBlazer/cognitive-shield-phobert | 134.999.810 | vietnamita | no disponible | no disponible | Hugging Face, safetensors, 0 descargas |
+| PhoBERT-base | ~135 millones | vietnamita | 256 tokens (configuracion publicada) | MIT (verificar en el repositorio oficial) | Hugging Face / VinAI |
+| XLM-RoBERTa-base | ~278 millones | multilingue (100 idiomas) | 512 tokens | MIT (verificar en el repositorio oficial) | Hugging Face / Facebook AI |
+| mBERT | ~178 millones | multilingue (104 idiomas) | 512 tokens | Apache 2.0 (verificar en el repositorio oficial) | Hugging Face / Google |
 
 ## Limitaciones y advertencias
 
@@ -94,7 +94,7 @@ No se dispone de resultados de rendimiento de este modelo, por lo que la compara
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DTFxBlazer/cognitive-shield-phobert
+- Repositorio en Hugging Face: https://huggingface.co/DTFxBlazer/cognitive-shield-phobert
 - Paper de RoBERTa (Liu et al., 2019): https://arxiv.org/abs/1907.11692
 - Paper de PhoBERT (Nguyen y Nguyen, 2020): https://arxiv.org/abs/2003.00744
 - Paper de XLM-RoBERTa (Conneau et al., 2019): https://arxiv.org/abs/1911.02116

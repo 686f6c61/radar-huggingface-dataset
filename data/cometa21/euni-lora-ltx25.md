@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Longitud de contexto | no aplica | no disponible | no aplica |
 | Rendimiento | sin benchmarks publicados | no disponible | sin datos comparables en la informacion disponible |
 | Licencia | other | other | variable segun autor |
-| Disponibilidad | HuggingFace, 0 descargas, 0 likes | HuggingFace (Lightricks) | no disponible |
+| Disponibilidad | Hugging Face, 0 descargas, 0 likes | Hugging Face (Lightricks) | no disponible |
 | Dataset de personalizacion | 103 imagenes, 480x832 | no aplica | no disponible |
 
 No se dispone de datos verificables de otros adaptadores comparables en la informacion proporcionada, por lo que la comparacion cuantitativa queda como no disponible.
@@ -88,6 +88,6 @@ No se dispone de datos verificables de otros adaptadores comparables en la infor
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/cometa21/euni-lora-ltx25
+- Repositorio Hugging Face: https://huggingface.co/cometa21/euni-lora-ltx25
 - Modelo base: https://huggingface.co/Lightricks/LTX-2.5
 - Paper, blog o repositorio adicional: no disponible. La busqueda web realizada no devolvio resultados relevantes sobre este modelo (los resultados obtenidos correspondian a foros no relacionados).

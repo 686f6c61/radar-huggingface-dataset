@@ -35,7 +35,7 @@ Lo que si esta documentado es el proceso de cuantizacion: mradermacher ha genera
 - No se documenta soporte de tool calling ni de function calling en la informacion disponible.
 - No se documentan capacidades de agente, razonamiento multi-paso, vision, audio ni modo "thinking".
 - Capacidades multilingues no confirmadas: los tags y la model card declaran unicamente turco (`tr`, `turkish`, `türkçe`).
-- Compatibilidad con endpoints (`endpoints_compatible`) como tag de HuggingFace.
+- Compatibilidad con endpoints (`endpoints_compatible`) como tag de Hugging Face.
 
 ## Casos de uso
 
@@ -75,9 +75,9 @@ No se dispone de datos de rendimiento del modelo base, por lo que la comparativa
 
 | Version | Formato | Parametros | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mradermacher/Erk-14B-i1-GGUF (este repo) | GGUF con cuantizaciones imatrix i1 | 14,77B | tr | ecloud-open-community-license | Publico en HuggingFace |
-| mradermacher/Erk-14B-GGUF | GGUF con cuantizaciones estaticas | 14,77B | tr | ecloud-open-community-license | Publico en HuggingFace |
-| ecloudtech/Erk-14B | Pesos originales (safetensors, presumiblemente) | 14,77B | tr | ecloud-open-community-license | Publico en HuggingFace |
+| mradermacher/Erk-14B-i1-GGUF (este repo) | GGUF con cuantizaciones imatrix i1 | 14,77B | tr | ecloud-open-community-license | Publico en Hugging Face |
+| mradermacher/Erk-14B-GGUF | GGUF con cuantizaciones estaticas | 14,77B | tr | ecloud-open-community-license | Publico en Hugging Face |
+| ecloudtech/Erk-14B | Pesos originales (safetensors, presumiblemente) | 14,77B | tr | ecloud-open-community-license | Publico en Hugging Face |
 
 Comparativa con alternativas de otros desarrolladores: no disponible en la informacion proporcionada. No se han facilitado modelos de referencia equivalentes en tamano, idioma o licencia con los que contrastar parametros, contexto o rendimiento.
 
@@ -86,7 +86,7 @@ Comparativa con alternativas de otros desarrolladores: no disponible en la infor
 - Sesgos conocidos: no documentados. Al ser un modelo entrenado predominantemente en turco, es previsible un sesgo cultural y linguistico hacia ese contexto, aunque no se aportan evaluaciones al respecto.
 - Riesgo de alucinacion: no se aportan datos de evaluacion de fidelidad factual. Como en cualquier LLM de 14B, la generacion puede producir informacion incorrecta con aparente seguridad, especialmente en dominios especializados.
 - Limitaciones de contexto e idioma: la longitud de contexto no esta documentada, lo que impide planificar usos con ventanas largas. El modelo esta declarado unicamente para turco; su comportamiento en castellano u otros idiomas no esta evaluado y probablemente sea deficiente.
-- Restricciones de licencia: la ecloud-open-community-license es una licencia propia del autor del modelo base, no una licencia de codigo abierto estandar. Antes de cualquier uso comercial es imprescindible revisar el fichero LICENSE del repositorio base y del repositorio de cuantizacion. El tag de HuggingFace indica `license:other`.
+- Restricciones de licencia: la ecloud-open-community-license es una licencia propia del autor del modelo base, no una licencia de codigo abierto estandar. Antes de cualquier uso comercial es imprescindible revisar el fichero LICENSE del repositorio base y del repositorio de cuantizacion. El tag de Hugging Face indica `license:other`.
 - Caveat de calidad por cuantizacion: el autor advierte explicitamente de que algunas variantes tienen calidad inferior a otras de tamano similar (por ejemplo, IQ3_XXS es "lower quality" y se recomienda IQ3_S frente a Q3_K_M). Elegir una cuantizacion demasiado agresiva (IQ2, Q2) puede degradar notablemente la coherencia del modelo.
 - Repositorio con 0 descargas y 0 likes en el momento del registro: no hay validacion de la comunidad ni informes de uso que respalden su comportamiento en produccion.
 - Fechas de creacion y actualizacion registradas como 2026-09-21, posteriores a la fecha habitual de consulta; conviene verificar la vigencia del repositorio antes de depender de el.

@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento comparativos entre estas alternativas en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l3_remove40_swapgapiter_rankunit_b010
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l3_remove40_swapgapiter_rankunit_b010
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
 - Licencia y politica de uso: los archivos LICENSE y USE_POLICY.md se incluyen en el propio repositorio del modelo.
 - Paper de SVD-LLM, blog del autor, repositorio de codigo y demos: no disponibles en la informacion proporcionada.

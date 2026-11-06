@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/jpn-jpan-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed10` es un ajuste fino (fine-tuning) de tipo supervisado (SFT) realizado sobre el checkpoint `francesca9805/jpn-jpan-10mb-ppt-Dp-10mb-packed-bfdiso_seed10`, ambos publicados por el usuario francesca9805 en HuggingFace. Se trata de un modelo de generacion de texto de arquitectura GPT-2 con aproximadamente 39 millones de parametros, entrenado con la libreria TRL (Transformer Reinforcement Learning) sobre un dataset empaquetado (packed) de unos 10 MB, segun se deduce de la nomenclatura del identificador.
+El modelo `francesca9805/jpn-jpan-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed10` es un ajuste fino (fine-tuning) de tipo supervisado (SFT) realizado sobre el checkpoint `francesca9805/jpn-jpan-10mb-ppt-Dp-10mb-packed-bfdiso_seed10`, ambos publicados por el usuario francesca9805 en Hugging Face. Se trata de un modelo de generacion de texto de arquitectura GPT-2 con aproximadamente 39 millones de parametros, entrenado con la libreria TRL (Transformer Reinforcement Learning) sobre un dataset empaquetado (packed) de unos 10 MB, segun se deduce de la nomenclatura del identificador.
 
 Por su tamano y por la propia denominacion del repositorio, se trata de un modelo de caracter experimental, muy probablemente vinculado a un estudio sobre tokenizadores (el proyecto asociado en Weights & Biases se llama "new-tokenizers" y esta registrado por f-padovani, de la University of Groningen). El identificador sugiere que el modelo esta orientado al japones (`jpn-jpan`), que se corresponde con un checkpoint intermedio (paso 500) de una semilla concreta (seed 10), y que forma parte de una familia de experimentos con distintas variantes de tokenizacion.
 
@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `francesca9805/jpn-jpan-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed10` (este modelo) | 39,09 M | no disponible | no disponible | HuggingFace, 0 descargas | Ajuste fino SFT del checkpoint base homonimo |
-| `francesca9805/jpn-jpan-10mb-ppt-Dp-10mb-packed-bfdiso_seed10` (modelo base) | no disponible | no disponible | no disponible | HuggingFace | Modelo base del que parte el ajuste |
-| `francesca9805/jpn-jpan-100mb-ppt-Dp-10mb-packed-bfd_seed10` | 124,8 M (segun LLM Explorer) | no disponible | no disponible | HuggingFace | Variante mayor de la misma familia experimental, con corpus de 100 MB |
+| `francesca9805/jpn-jpan-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed10` (este modelo) | 39,09 M | no disponible | no disponible | Hugging Face, 0 descargas | Ajuste fino SFT del checkpoint base homonimo |
+| `francesca9805/jpn-jpan-10mb-ppt-Dp-10mb-packed-bfdiso_seed10` (modelo base) | no disponible | no disponible | no disponible | Hugging Face | Modelo base del que parte el ajuste |
+| `francesca9805/jpn-jpan-100mb-ppt-Dp-10mb-packed-bfd_seed10` | 124,8 M (segun LLM Explorer) | no disponible | no disponible | Hugging Face | Variante mayor de la misma familia experimental, con corpus de 100 MB |
 | GPT-2 small (referencia) | 124 M | 1024 tokens | MIT | Ampliamente disponible | Modelo de referencia de la misma arquitectura; aqui solo como contexto de tamano |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos, por lo que la comparacion se limita a parametros, licencia y disponibilidad.
@@ -90,8 +90,8 @@ No se dispone de datos de rendimiento comparativo entre estos modelos, por lo qu
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/francesca9805/jpn-jpan-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed10
-- HuggingFace (modelo base): https://huggingface.co/francesca9805/jpn-jpan-10mb-ppt-Dp-10mb-packed-bfdiso_seed10
+- Hugging Face (modelo): https://huggingface.co/francesca9805/jpn-jpan-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed10
+- Hugging Face (modelo base): https://huggingface.co/francesca9805/jpn-jpan-10mb-ppt-Dp-10mb-packed-bfdiso_seed10
 - Weights & Biases (ejecucion de entrenamiento): https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/tprgc88c
 - Repositorio TRL: https://github.com/huggingface/trl
 - Variante relacionada (seed 3407): https://huggingface.co/francesca9805/jpn-jpan-10mb-after-ppt-Dp-10mb-packed-ckpt500_seed3407

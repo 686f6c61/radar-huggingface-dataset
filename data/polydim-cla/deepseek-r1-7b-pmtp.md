@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Evaluacion publicada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| polydim-cla/deepseek-r1-7b-pmtp | 7,6 B (base) + adaptador de tamano no especificado | no disponible | Ninguna | apache-2.0 | HuggingFace, 0 descargas, repo de 0,2 GB |
-| deepseek-ai/DeepSeek-R1-Distill-Qwen-7B | 7,6 B | no disponible en esta busqueda (consultar ficha del base) | Si, en la model card del modelo base | Ver licencia del modelo base | HuggingFace, ampliamente descargado |
-| Qwen2.5-7B-Instruct | 7,6 B | no disponible en esta busqueda | Si, en su model card | Apache 2.0 (verificar) | HuggingFace |
-| deepseek-ai/DeepSeek-R1-Distill-Llama-8B | 8 B | no disponible en esta busqueda | Si, en la model card del modelo base | Ver licencia del modelo base | HuggingFace |
+| polydim-cla/deepseek-r1-7b-pmtp | 7,6 B (base) + adaptador de tamano no especificado | no disponible | Ninguna | apache-2.0 | Hugging Face, 0 descargas, repo de 0,2 GB |
+| deepseek-ai/DeepSeek-R1-Distill-Qwen-7B | 7,6 B | no disponible en esta busqueda (consultar ficha del base) | Si, en la model card del modelo base | Ver licencia del modelo base | Hugging Face, ampliamente descargado |
+| Qwen2.5-7B-Instruct | 7,6 B | no disponible en esta busqueda | Si, en su model card | Apache 2.0 (verificar) | Hugging Face |
+| deepseek-ai/DeepSeek-R1-Distill-Llama-8B | 8 B | no disponible en esta busqueda | Si, en la model card del modelo base | Ver licencia del modelo base | Hugging Face |
 
 La diferencia práctica frente a las alternativas no está en parámetros ni en contexto, sino en la intervención geométrica y en la ausencia total de evaluación publicada, lo que impide afirmar que iguale o supere al modelo base en cualquier tarea.
 
@@ -87,7 +87,7 @@ La diferencia práctica frente a las alternativas no está en parámetros ni en 
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/polydim-cla/deepseek-r1-7b-pmtp
+- Hugging Face (modelo): https://huggingface.co/polydim-cla/deepseek-r1-7b-pmtp
 - Repositorio del autor (POLYDIM-EINSOF): https://github.com/AGT1973/POLYDIM_EINSOF
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B
 - Etiqueta Ollama del modelo base: https://ollama.com/library/deepseek-r1

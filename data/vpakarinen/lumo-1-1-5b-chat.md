@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Lumo-1-1.5B-Chat (denominado Lumo-1-Chat en la model card) es un ajuste fino completo (full fine-tune) del modelo swiss-ai/Apertus-v1.1-1.5B-Instruct, publicado por el usuario vpakarinen en HuggingFace. Se trata de un modelo conversacional de aproximadamente 1,51 mil millones de parametros (1.510.019.104 exactos segun los pesos safetensors) con licencia Apache 2.0 y soporte unicamente para ingles.
+Lumo-1-1.5B-Chat (denominado Lumo-1-Chat en la model card) es un ajuste fino completo (full fine-tune) del modelo swiss-ai/Apertus-v1.1-1.5B-Instruct, publicado por el usuario vpakarinen en Hugging Face. Se trata de un modelo conversacional de aproximadamente 1,51 mil millones de parametros (1.510.019.104 exactos segun los pesos safetensors) con licencia Apache 2.0 y soporte unicamente para ingles.
 
-El modelo parte de la familia Apertus, desarrollada por Swiss AI (organizacion swiss-ai en HuggingFace), y se ha entrenado sobre 1000 ejemplos de pregunta-respuesta cuidadosamente seleccionados. El dataset cubre preguntas factuales, explicaciones, reescritura y consejos cotidianos. El autor lo describe como disenado para prompts conversacionales cortos y advierte que el uso en entornos reales todavia no se ha evaluado.
+El modelo parte de la familia Apertus, desarrollada por Swiss AI (organizacion swiss-ai en Hugging Face), y se ha entrenado sobre 1000 ejemplos de pregunta-respuesta cuidadosamente seleccionados. El dataset cubre preguntas factuales, explicaciones, reescritura y consejos cotidianos. El autor lo describe como disenado para prompts conversacionales cortos y advierte que el uso en entornos reales todavia no se ha evaluado.
 
 Su relevancia es limitada pero concreta: representa un ejemplo de fine-tuning de bajo coste sobre un modelo base pequeno y abierto, util para experimentacion, prototipado y como punto de partida para ajustes posteriores. Es importante no confundirlo con Lumo, el asistente de IA de Proton AG, un producto comercial distinto que aparece en los resultados de busqueda con el mismo nombre.
 
@@ -93,7 +93,7 @@ Los datos de los modelos alternativos (Qwen2.5-1.5B-Instruct, SmolLM2-1.7B-Instr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vpakarinen/Lumo-1-1.5B-Chat
+- Modelo en Hugging Face: https://huggingface.co/vpakarinen/Lumo-1-1.5B-Chat
 - Modelo base: https://huggingface.co/swiss-ai/Apertus-v1.1-1.5B-Instruct
 - Asistente Lumo de Proton (producto distinto, sin relacion con este modelo): https://lumo.proton.me/
 - Entrada de Lumo en Wikipedia (producto de Proton): https://en.wikipedia.org/wiki/Lumo_(AI_assistant)

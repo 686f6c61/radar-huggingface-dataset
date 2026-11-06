@@ -2,7 +2,7 @@
 
 ## Resumen
 
-hybrid-contrastive-tiny es un repositorio de codigo y un checkpoint de inicializacion publicado por el usuario VICTORWVW (Victor Wijaya) en HuggingFace. No es un modelo preentrenado: la propia model card lo describe como una implementacion compacta y personalizada en PyTorch de una arquitectura "Hybrid" orientada a aprendizaje contrastivo, pensada para revision de codigo, pruebas de humo y experimentos controlados de pequena escala. El repositorio incluye el script principal (`main.py`), la configuracion de arquitectura (`config.json`), la receta de experimento por defecto (`training_args.json`) y un fichero `model.safetensors`.
+hybrid-contrastive-tiny es un repositorio de codigo y un checkpoint de inicializacion publicado por el usuario VICTORWVW (Victor Wijaya) en Hugging Face. No es un modelo preentrenado: la propia model card lo describe como una implementacion compacta y personalizada en PyTorch de una arquitectura "Hybrid" orientada a aprendizaje contrastivo, pensada para revision de codigo, pruebas de humo y experimentos controlados de pequena escala. El repositorio incluye el script principal (`main.py`), la configuracion de arquitectura (`config.json`), la receta de experimento por defecto (`training_args.json`) y un fichero `model.safetensors`.
 
 El dato mas relevante es su escala real: el recuento de parametros del checkpoint en safetensors es de 16.576 parametros totales (aproximadamente 16,6 mil, es decir, 0,0000166 mil millones). Esto contrasta con la etiqueta `Scale: giant` que aparece en la tabla de arquitectura de la model card, un valor que debe interpretarse como nombre de configuracion dentro del script y no como tamano real del modelo. Con ese numero de parametros, el modelo no tiene capacidad practica para tareas de lenguaje, codigo o razonamiento, y el autor indica explicitamente que el checkpoint "no ha sido entrenado ni auditado" para robustez, equidad o transferencia de dominio.
 
@@ -43,7 +43,7 @@ No hay innovacion tecnica validada que destacar: el interes del repositorio esta
 
 - Pruebas de humo en CI para pipelines de safetensors: el repositorio permite comprobar que un sistema de carga, serializacion y versionado de checkpoints funciona correctamente con un fichero real y de tamano minimo (menos de 100 KB), sin coste de GPU.
 - Plantilla de referencia para arquitecturas hibridas custom: un equipo que quiera implementar atencion flash con gated fusion y batchnorm en PyTorch puede usar `main.py` como esqueleto inicial y sustituir el dataset y la cabeza de salida.
-- Docencia y formacion en el ecosistema HuggingFace: sirve como ejemplo minimo de estructura de repositorio (model card, config, training_args, safetensors, script) para explicar que cada artefacto cumple una funcion distinta.
+- Docencia y formacion en el ecosistema Hugging Face: sirve como ejemplo minimo de estructura de repositorio (model card, config, training_args, safetensors, script) para explicar que cada artefacto cumple una funcion distinta.
 - Banco de pruebas de comparativas de arquitectura: con un baseline de capacidad equivalente (mismo numero de parametros, mismos datos y mismas semillas) se puede usar como punto de partida para comparar variantes de fusion o de atencion; el propio autor recomienda reportar la metrica de tarea en al menos tres semillas.
 - Prototipado de cabezas contrastivas para retrieval: el componente contrastivo puede reutilizarse como modulo de investigacion antes de escalar a un encoder preentrenado, siempre que se entrene de nuevo.
 - Validacion de infraestructura de serializacion y almacenamiento: util para verificar flujos de subida/descarga con Xet, comprobacion de integridad de safetensors y politicas de licencia en un repositorio real.
@@ -89,9 +89,9 @@ Rendimiento comparado: no disponible. No existen metricas publicadas para el mod
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/VICTORWVW/hybrid-contrastive-tiny
+- Repositorio en Hugging Face: https://huggingface.co/VICTORWVW/hybrid-contrastive-tiny
 - Perfil del autor (Victor Wijaya): https://huggingface.co/VICTORWVW
 - Perfil de modelos del autor: https://huggingface.co/VICTORWVW/models
 - Fork con licencia MIT: https://huggingface.co/isarodr04/hybrid-contrastive-tiny
 - Paper, blog o demo oficial: no disponible en la informacion proporcionada.
-- Repositorio de codigo adicional: no disponible (el codigo vive dentro del propio repositorio de HuggingFace, en `main.py`).
+- Repositorio de codigo adicional: no disponible (el codigo vive dentro del propio repositorio de Hugging Face, en `main.py`).

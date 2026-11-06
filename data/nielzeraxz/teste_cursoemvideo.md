@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `NielzeraXZ/TESTE_CURSOEMVIDEO` es un repositorio publicado en HuggingFace por el usuario NielzeraXZ. Según los metadatos disponibles, el repositorio no contiene información descriptiva en su model card, que únicamente declara la licencia `llama4`. No se dispone de datos sobre arquitectura, tamaño, contexto, idiomas ni capacidades. El repositorio no registra descargas ni likes, y su fecha de creación es posterior a la actual, lo que sugiere que se trata de una publicación de prueba o incompleta. Por tanto, no es posible evaluar el modelo ni determinar su relevancia técnica en este momento.
+El modelo `NielzeraXZ/TESTE_CURSOEMVIDEO` es un repositorio publicado en Hugging Face por el usuario NielzeraXZ. Según los metadatos disponibles, el repositorio no contiene información descriptiva en su model card, que únicamente declara la licencia `llama4`. No se dispone de datos sobre arquitectura, tamaño, contexto, idiomas ni capacidades. El repositorio no registra descargas ni likes, y su fecha de creación es posterior a la actual, lo que sugiere que se trata de una publicación de prueba o incompleta. Por tanto, no es posible evaluar el modelo ni determinar su relevancia técnica en este momento.
 
 ## Especificaciones técnicas
 
@@ -60,6 +60,6 @@ No disponible. No se ha publicado información sobre el modelo que permita compa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/NielzeraXZ/TESTE_CURSOEMVIDEO
+- Hugging Face: https://huggingface.co/NielzeraXZ/TESTE_CURSOEMVIDEO
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la búsqueda web. Los resultados obtenidos no guardan relación con este repositorio.

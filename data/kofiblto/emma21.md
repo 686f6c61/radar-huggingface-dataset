@@ -69,6 +69,6 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/KOFIblto/emma21
+- Repositorio Hugging Face: https://huggingface.co/KOFIblto/emma21
 - Modelo base: https://huggingface.co/krea/Krea-2-Raw (referenciado en la model card, no se ha verificado el enlace directo)
 - Documentacion de diffusers para LoRA: https://huggingface.co/docs/diffusers/en/using-diffusers/loading_adapters (referencia general, no especifica de este modelo)

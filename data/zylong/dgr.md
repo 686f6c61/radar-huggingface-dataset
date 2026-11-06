@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo Zylong/DGR es un modelo de difusión para imagen médica, específicamente diseñado para la corrección de distorsión EPI (echo-planar imaging) en resonancia magnética de próstata. Desarrollado por el autor Zylong, el modelo se presenta como un sistema de imagen a imagen con enfoque physics-informed, lo que sugiere que integra principios físicos del proceso de adquisición de resonancia magnética en su arquitectura. Está alojado en HuggingFace con acceso restringido (gated) y licencia de uso exclusivo para investigación.
+El modelo Zylong/DGR es un modelo de difusión para imagen médica, específicamente diseñado para la corrección de distorsión EPI (echo-planar imaging) en resonancia magnética de próstata. Desarrollado por el autor Zylong, el modelo se presenta como un sistema de imagen a imagen con enfoque physics-informed, lo que sugiere que integra principios físicos del proceso de adquisición de resonancia magnética en su arquitectura. Está alojado en Hugging Face con acceso restringido (gated) y licencia de uso exclusivo para investigación.
 
 La relevancia de este modelo radica en su aplicación potencial para mejorar la calidad de las imágenes de resonancia magnética de próstata, un área donde las distorsiones geométricas causadas por campos magnéticos no uniformes pueden afectar el diagnóstico. Sin embargo, la información pública disponible es muy limitada: no se especifican parámetros, arquitectura detallada, ni resultados de benchmarks. El repositorio tiene un tamaño de 1.3 GB, lo que sugiere un modelo de tamaño moderado, pero no se puede confirmar su estructura interna sin acceso a los archivos.
 
-Dado que el modelo fue creado en septiembre de 2026 (según la fecha de HuggingFace) y no cuenta con descargas ni interacciones públicas, se trata de un proyecto en fase temprana o de acceso muy restringido. La falta de documentación pública y de resultados evaluables limita su adopción inmediata en entornos clínicos o de investigación, aunque su enfoque especializado podría ser de interés para grupos que trabajen en corrección de artefactos en resonancia magnética.
+Dado que el modelo fue creado en septiembre de 2026 (según la fecha de Hugging Face) y no cuenta con descargas ni interacciones públicas, se trata de un proyecto en fase temprana o de acceso muy restringido. La falta de documentación pública y de resultados evaluables limita su adopción inmediata en entornos clínicos o de investigación, aunque su enfoque especializado podría ser de interés para grupos que trabajen en corrección de artefactos en resonancia magnética.
 
 ## Especificaciones tecnicas
 
@@ -57,7 +57,7 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (co
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar condiciones en HuggingFace, lo que limita su uso a quienes tengan autorizacion.
+- Acceso restringido: el modelo requiere aceptar condiciones en Hugging Face, lo que limita su uso a quienes tengan autorizacion.
 - Licencia dgr-research-only: prohibe el uso comercial y restringe la aplicacion a fines de investigacion.
 - Sin documentacion publica: no hay papers, guias de uso ni ejemplos de inferencia, lo que dificulta su adopcion.
 - Sin datos de validacion: no se han publicado resultados cuantitativos, por lo que se desconoce su eficacia real.
@@ -67,4 +67,4 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Zylong/DGR
+- Hugging Face: https://huggingface.co/Zylong/DGR

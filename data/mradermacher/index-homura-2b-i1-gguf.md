@@ -25,14 +25,14 @@ Conviene senalar una advertencia importante: en el momento de la consulta el rep
 | Etiquetas del repositorio | gguf, region:us |
 | Descargas / likes | 0 / 0 |
 | Tamano del repositorio | 0,0 GB |
-| Fecha de creacion | 2026-10-03 (segun los metadatos de HuggingFace; fecha anomala, se reproduce tal cual) |
+| Fecha de creacion | 2026-10-03 (segun los metadatos de Hugging Face; fecha anomala, se reproduce tal cual) |
 | Idiomas de la model card | no disponible (la model card contiene unicamente metadatos de la conversion: `quantize_version: 2`, `convert_type: hf`, `tags: nicoboss`) |
 
 ## Arquitectura y entrenamiento
 
 No se ha proporcionado informacion sobre la arquitectura interna del modelo base `IndexTeam/Index-Homura-2B`: no se especifica si es un transformer denso, un transformer con mezcla de expertos (MoE), un modelo de espacio de estados (SSM) o una arquitectura hibrida. Tampoco hay datos sobre el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de ajuste fino supervisado, RLHF o DPO, ni sobre innovaciones tecnicas concretas como decodificacion especulativa, atencion lineal o ventanas de contexto extendidas. Toda esta informacion debe consultarse en la model card del modelo original de IndexTeam, que no forma parte del material proporcionado.
 
-Lo unico documentado en esta ficha es el proceso de cuantizacion. La model card indica `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que confirma una conversion desde pesos de HuggingFace al formato GGUF. La mencion "weighted/imatrix quants" en el texto de la model card confirma que las cuantizaciones se han generado ponderando los tensores mediante una matriz de importancia, calculada a partir de estadisticas de activacion. Este enfoque, habitual en el ecosistema de mradermacher (prefijo "i1"), mejora la fidelidad de los pesos mas sensibles en cuantizaciones agresivas (IQ1, IQ2, Q2_K, Q3_K) a costa de un tiempo de conversion mayor. El nombre `small-IQ4_NL` corresponde a una variante de menor tamano del esquema IQ4_NL.
+Lo unico documentado en esta ficha es el proceso de cuantizacion. La model card indica `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que confirma una conversion desde pesos de Hugging Face al formato GGUF. La mencion "weighted/imatrix quants" en el texto de la model card confirma que las cuantizaciones se han generado ponderando los tensores mediante una matriz de importancia, calculada a partir de estadisticas de activacion. Este enfoque, habitual en el ecosistema de mradermacher (prefijo "i1"), mejora la fidelidad de los pesos mas sensibles en cuantizaciones agresivas (IQ1, IQ2, Q2_K, Q3_K) a costa de un tiempo de conversion mayor. El nombre `small-IQ4_NL` corresponde a una variante de menor tamano del esquema IQ4_NL.
 
 ## Capacidades
 
@@ -90,7 +90,7 @@ La informacion proporcionada no incluye datos de rendimiento, contexto ni licenc
 | Modelo | Parametros nominales | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
 | Index-Homura-2B (i1-GGUF, este repositorio) | ~2B | no disponible | no disponible | GGUF (24 variantes) | Repositorio con 0 descargas y 0,0 GB reportados; disponibilidad efectiva no confirmada |
-| Index-Homura-2B (modelo base, IndexTeam) | ~2B | no disponible | no disponible | safetensors | Publicado en HuggingFace; contiene demo online, repositorio GitHub e informe tecnico segun referencias de terceros |
+| Index-Homura-2B (modelo base, IndexTeam) | ~2B | no disponible | no disponible | safetensors | Publicado en Hugging Face; contiene demo online, repositorio GitHub e informe tecnico segun referencias de terceros |
 | Index-Homura-9B (version mayor, mencionada en fuentes de terceros) | ~9B | no disponible | no disponible | no disponible | Mencionado en fuentes no oficiales; no verificado |
 | Qwen2.5-3B | ~3B | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible |
 | Gemma-2-2B | ~2B | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible |
@@ -112,7 +112,7 @@ La informacion proporcionada no incluye datos de rendimiento, contexto ni licenc
 
 ## Enlaces
 
-- Repositorio de la cuantizacion (HuggingFace): https://huggingface.co/mradermacher/Index-Homura-2B-i1-GGUF
+- Repositorio de la cuantizacion (Hugging Face): https://huggingface.co/mradermacher/Index-Homura-2B-i1-GGUF
 - Modelo base: https://huggingface.co/IndexTeam/Index-Homura-2B
 - Catalogo de modelos de LocalAI: https://localai.io/docs/gallery.html
 - Agregador de novedades ML/AI de Replicate (menciona IndexTeam/Index-Homura-2B, demo online, GitHub e informe tecnico): http://hype.replicate.dev/?filter=past_three_days&sources=GitHub%2CHuggingFace%2CReddit%2CReplicate

@@ -96,7 +96,7 @@ Otras alternativas abliteradas conocidas (como Dolphin) no tienen datos comparab
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/Ishowbackup/Gemma-4-E4B-it-qat-JANG_4M-CRACK)
+- [Repositorio en Hugging Face](https://huggingface.co/Ishowbackup/Gemma-4-E4B-it-qat-JANG_4M-CRACK)
 - [vMLX (motor de inferencia requerido)](https://vmlx.net)
 - [dealign.ai (página del proyecto)](https://dealign.ai)
 - [Ko-fi de dealignai](https://ko-fi.com/dealignai)

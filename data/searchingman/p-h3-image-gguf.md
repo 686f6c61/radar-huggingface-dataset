@@ -75,6 +75,6 @@ No disponible. La información proporcionada no incluye datos de benchmarks ni e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SearchingMan/P-H3-Image-GGUF
+- Repositorio Hugging Face: https://huggingface.co/SearchingMan/P-H3-Image-GGUF
 - Modelo base: https://huggingface.co/PrunaAI/P-H3-Image
 - stable-diffusion.cpp: https://github.com/leejet/stable-diffusion.cpp

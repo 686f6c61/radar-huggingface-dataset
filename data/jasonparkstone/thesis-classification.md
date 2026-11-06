@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jasonparkstone/thesis-classification` es un repositorio experimental de HuggingFace que contiene un esqueleto de codigo en PyTorch para una arquitectura **Perceiver** orientada a tareas de **clasificacion**. No es un modelo entrenado: el propio autor indica en la model card que `model.safetensors` es un **checkpoint de inicializacion valido para smoke tests** y que no se presenta como un checkpoint evaluado ni se reclama ninguna puntuacion de benchmark. El repositorio acumula 0 descargas y 0 likes, y fue creado el 6 de octubre de 2026.
+`jasonparkstone/thesis-classification` es un repositorio experimental de Hugging Face que contiene un esqueleto de codigo en PyTorch para una arquitectura **Perceiver** orientada a tareas de **clasificacion**. No es un modelo entrenado: el propio autor indica en la model card que `model.safetensors` es un **checkpoint de inicializacion valido para smoke tests** y que no se presenta como un checkpoint evaluado ni se reclama ninguna puntuacion de benchmark. El repositorio acumula 0 descargas y 0 likes, y fue creado el 6 de octubre de 2026.
 
 El artefacto tiene 16.576 parametros totales segun los metadatos de safetensors, lo que lo situa en una escala **tiny**, coherente con el objetivo declarado de poder inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. La arquitectura combina atencion de **ventana deslizante**, fusion **tucker**, activacion **mish** y normalizacion **scalenorm**, todo ello registrado en `config.json`.
 
@@ -71,7 +71,7 @@ No disponible. El artefacto no es un modelo entrenado comparable en rendimiento 
 | Contexto | no disponible | no disponible |
 | Rendimiento en benchmarks | ninguno declarado | no disponible |
 | Licencia | bsd-3-clause | no disponible |
-| Disponibilidad | Publico en HuggingFace, 0 descargas, 0 likes | no disponible |
+| Disponibilidad | Publico en Hugging Face, 0 descargas, 0 likes | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -87,4 +87,4 @@ No disponible. El artefacto no es un modelo entrenado comparable en rendimiento 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jasonparkstone/thesis-classification
+- Hugging Face: https://huggingface.co/jasonparkstone/thesis-classification

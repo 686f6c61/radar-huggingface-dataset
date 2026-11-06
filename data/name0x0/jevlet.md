@@ -92,7 +92,7 @@ Escalado con el número de ejemplos de entrenamiento (exactitud de skill sobre l
 | 12.500 | 800.000 | 97,2 % | 0,015 |
 | 25.000 (final) | 1.600.000 | 98,0 % | 0,010 |
 
-Además, el repositorio incluye un benchmark manual de portátil (`jevlet/assistant/benchmark_v2.py`, 98 comandos, 6 peligrosos) que se ejecuta contra el entorno Windows real; sus cifras se reportan en GitHub y no se reproducen en la model card de HuggingFace. No se han publicado resultados de benchmarks estándar tipo MMLU, HumanEval o GSM8K, y no serían aplicables porque el modelo no genera texto.
+Además, el repositorio incluye un benchmark manual de portátil (`jevlet/assistant/benchmark_v2.py`, 98 comandos, 6 peligrosos) que se ejecuta contra el entorno Windows real; sus cifras se reportan en GitHub y no se reproducen en la model card de Hugging Face. No se han publicado resultados de benchmarks estándar tipo MMLU, HumanEval o GSM8K, y no serían aplicables porque el modelo no genera texto.
 
 ## Requisitos de hardware
 
@@ -108,9 +108,9 @@ Además, el repositorio incluye un benchmark manual de portátil (`jevlet/assist
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NAME0x0/Jevlet | 33.508.992 | No disponible en la model card (encoder base de 512 posiciones) | Decisión calibrada sobre preguntas tipadas; clasificación de intención y slots | MIT | Pesos en HuggingFace (safetensors y .pt), código en GitHub |
-| BAAI/bge-small-en-v1.5 | 33,4 M aprox. | 512 tokens | Embeddings de texto (retrieval, similitud) | MIT | HuggingFace; es el modelo base de Jevlet |
-| DistilBERT-base-uncased | 66 M aprox. | 512 tokens | Clasificación de texto y enmascarado de lenguaje | Apache 2.0 | HuggingFace; referencia habitual en clasificación de intención de bajo coste |
+| NAME0x0/Jevlet | 33.508.992 | No disponible en la model card (encoder base de 512 posiciones) | Decisión calibrada sobre preguntas tipadas; clasificación de intención y slots | MIT | Pesos en Hugging Face (safetensors y .pt), código en GitHub |
+| BAAI/bge-small-en-v1.5 | 33,4 M aprox. | 512 tokens | Embeddings de texto (retrieval, similitud) | MIT | Hugging Face; es el modelo base de Jevlet |
+| DistilBERT-base-uncased | 66 M aprox. | 512 tokens | Clasificación de texto y enmascarado de lenguaje | Apache 2.0 | Hugging Face; referencia habitual en clasificación de intención de bajo coste |
 | Jev (TypeSafe) | No disponible | No disponible | Decisión para paleta de comandos (referencia citada por el autor) | No disponible | No disponible en la información proporcionada |
 
 No se dispone de resultados de benchmarks comparativos entre Jevlet y estos modelos dentro de la información proporcionada; la comparación anterior es estructural (parámetros, contexto, tarea y licencia), no de rendimiento.
@@ -126,13 +126,13 @@ No se dispone de resultados de benchmarks comparativos entre Jevlet y estos mode
 - Dependencia del entorno: la calidad de las opciones vivas suministradas (lista de apps instaladas, ventanas abiertas, tiendas, recordatorios) determina directamente la precisión. La build pública excluye la lista de apps y las capturas de interfaz de la persona autora, de modo que el comportamiento en un equipo real puede diferir del reportado.
 - Evaluación limitada en entorno real: el benchmark manual contra Windows consta de 98 comandos, 6 de ellos peligrosos. Es una muestra pequeña, sin intervalos de confianza publicados.
 - Licencias de los datos de entrenamiento: aunque el modelo se distribuye bajo MIT, las fuentes incluyen TOPv2 (CC BY-SA 4.0), MASSIVE y BANKING77 (CC BY 4.0), CLINC150 (CC BY 3.0), BoolQ (CC BY-SA 3.0) y MultiNLI (licencia mixta, según su dataset card). El uso comercial debe revisar las condiciones de atribución y, en los casos share-alike, de redistribución derivada.
-- Proyecto de investigación de un único autor, en versión v6, sin garantías de mantenimiento, sin soporte y con 0 descargas y 0 likes en HuggingFace en el momento de la consulta.
+- Proyecto de investigación de un único autor, en versión v6, sin garantías de mantenimiento, sin soporte y con 0 descargas y 0 likes en Hugging Face en el momento de la consulta.
 - Fecha de creación del repositorio: 2026-09-25; conviene verificar si existe una versión posterior antes de adoptarlo.
 - Ejecución de acciones en el escritorio: el modelo está pensado para desencadenar operaciones reales sobre el sistema. No se documenta auditoría de seguridad, registro de acciones ni mecanismo de reversión más allá del umbral de confianza.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NAME0x0/Jevlet
+- Modelo en Hugging Face: https://huggingface.co/NAME0x0/Jevlet
 - Repositorio de código, pipeline de datos y notebook de entrenamiento: https://github.com/NAME0x0/Jevlet (commit `9d62c46989e9`)
 - Modelo base: https://huggingface.co/BAAI/bge-small-en-v1.5
 - Dataset TOPv2: https://huggingface.co/datasets/WillHeld/top_v2

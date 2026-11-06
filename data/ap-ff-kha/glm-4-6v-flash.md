@@ -76,8 +76,8 @@ La comparativa se basa en parametros, contexto y licencia disponibles publicamen
 
 ## Enlaces
 
-- Repositorio HuggingFace (fork): https://huggingface.co/ap-ff-kha/GLM-4.6V-Flash
-- Repositorio HuggingFace original: https://huggingface.co/zai-org/GLM-4.6V-Flash
+- Repositorio Hugging Face (fork): https://huggingface.co/ap-ff-kha/GLM-4.6V-Flash
+- Repositorio Hugging Face original: https://huggingface.co/zai-org/GLM-4.6V-Flash
 - Modelo GLM-4.6V (106B): https://huggingface.co/zai-org/GLM-4.6V
 - Paper: https://huggingface.co/papers/2507.01006
 - Blog de Z.ai: https://z.ai/blog/glm-4.6v

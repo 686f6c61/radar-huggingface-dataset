@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DreamLiteAnime es un modelo publicado en HuggingFace por el usuario huangdffs bajo el identificador `huangdffs/dreamliteanime`. Se distribuye en formato diffusers, es decir, como un pipeline de difusion con pesos en safetensors, y cuenta con 375.099.456 parametros totales (aproximadamente 375 millones). El nombre y la libreria asociada sugieren un modelo de generacion de imagenes orientado a estilo anime, aunque la model card no confirma ni la tarea concreta ni la arquitectura interna.
+DreamLiteAnime es un modelo publicado en Hugging Face por el usuario huangdffs bajo el identificador `huangdffs/dreamliteanime`. Se distribuye en formato diffusers, es decir, como un pipeline de difusion con pesos en safetensors, y cuenta con 375.099.456 parametros totales (aproximadamente 375 millones). El nombre y la libreria asociada sugieren un modelo de generacion de imagenes orientado a estilo anime, aunque la model card no confirma ni la tarea concreta ni la arquitectura interna.
 
 La informacion publica disponible es muy limitada: la model card unicamente declara la licencia Apache 2.0 y no incluye descripcion, datos de entrenamiento, ejemplos ni resultados de evaluacion. El repositorio ocupa 43,5 GB, un tamano notablemente superior al que corresponderian 375 millones de parametros en precision completa, lo que apunta a la presencia de multiples checkpoints o variantes de pesos dentro del mismo repositorio.
 
@@ -65,7 +65,7 @@ Nota: las cifras siguientes son estimaciones derivadas unicamente del recuento d
 - El repositorio de 43,5 GB no se corresponde con el peso de 375 M de parametros, por lo que probablemente incluye varios formatos o checkpoints; el espacio en disco necesario para descargarlo completo seria de ese orden.
 - GPU recomendadas: no disponibles. Por tamano, cabria esperar ejecucion en GPUs de consumo como RTX 3060, RTX 4060 o superiores, pero no hay datos que lo confirmen.
 - Compatibilidad con GPU de consumo: probable segun el recuento de parametros, sin confirmar.
-- Opciones de despliegue: al ser un modelo diffusers con safetensors, seria desplegable con la libreria diffusers de HuggingFace. No hay informacion sobre compatibilidad con otras herramientas (ONNX, TensorRT, etc.).
+- Opciones de despliegue: al ser un modelo diffusers con safetensors, seria desplegable con la libreria diffusers de Hugging Face. No hay informacion sobre compatibilidad con otras herramientas (ONNX, TensorRT, etc.).
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -85,6 +85,6 @@ No disponible. La informacion proporcionada no incluye modelos de referencia ni 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/huangdffs/dreamliteanime
+- Hugging Face: https://huggingface.co/huangdffs/dreamliteanime
 - Repositorio del autor: https://huggingface.co/huangdffs
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

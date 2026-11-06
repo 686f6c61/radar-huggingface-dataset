@@ -87,8 +87,8 @@ No se dispone de datos de benchmarks de alternativas en la información proporci
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| LayaFace-DCF.v0.20261028 | 86,2 M | No aplica | No verificada (pesos); Apache-2.0 declarada para implementación | HuggingFace, bundle personalizado |
-| CLIP ViT-B/16 (base) | ~86 M (encoder) | No aplica | MIT | HuggingFace, transformers |
+| LayaFace-DCF.v0.20261028 | 86,2 M | No aplica | No verificada (pesos); Apache-2.0 declarada para implementación | Hugging Face, bundle personalizado |
+| CLIP ViT-B/16 (base) | ~86 M (encoder) | No aplica | MIT | Hugging Face, transformers |
 | Alternativas de verificación facial | No disponible | No disponible | No disponible | No disponible |
 
 El autor indica que la variante DCF rinde por debajo de baselines dedicados de reconocimiento facial en benchmarks reales cross-age y cross-pose, pero no cita modelos concretos ni cifras comparativas.
@@ -110,7 +110,7 @@ El autor indica que la variante DCF rinde por debajo de baselines dedicados de r
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/leloss/LayaFace-DCF.v0.20261028
+- Hugging Face: https://huggingface.co/leloss/LayaFace-DCF.v0.20261028
 - CLIP (paper): https://arxiv.org/abs/2103.00020
 - DCFace (paper): https://arxiv.org/abs/2304.07060
 - Temperature scaling / calibración (paper): https://arxiv.org/abs/1706.04599

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Reinforce-CartPole-v1 es un agente de aprendizaje por refuerzo publicado en HuggingFace por el usuario hareesh23143, entrenado para resolver el entorno CartPole-v1. No se trata de un modelo de lenguaje ni de un modelo fundacional: es una implementación propia del algoritmo REINFORCE (policy gradient de Monte Carlo, Williams 1992) desarrollada en el contexto del curso Deep Reinforcement Learning de HuggingFace, tal y como indican sus etiquetas (`deep-rl-class`, `custom-implementation`, `reinforce`).
+Reinforce-CartPole-v1 es un agente de aprendizaje por refuerzo publicado en Hugging Face por el usuario hareesh23143, entrenado para resolver el entorno CartPole-v1. No se trata de un modelo de lenguaje ni de un modelo fundacional: es una implementación propia del algoritmo REINFORCE (policy gradient de Monte Carlo, Williams 1992) desarrollada en el contexto del curso Deep Reinforcement Learning de Hugging Face, tal y como indican sus etiquetas (`deep-rl-class`, `custom-implementation`, `reinforce`).
 
 El modelo resuelve un problema de control clásico: mantener en equilibrio un poste articulado sobre un carro aplicando fuerzas laterales discretas, con el objetivo de maximizar la recompensa acumulada hasta un máximo de 500 pasos por episodio. Su relevancia es exclusivamente didáctica y de referencia: sirve como ejemplo mínimo reproducible de un agente policy-gradient funcional, no como herramienta de producción.
 
@@ -23,7 +23,7 @@ La ficha técnica disponible es muy escasa. El repositorio ocupa 0.0 GB, no decl
 
 ## Arquitectura y entrenamiento
 
-Segun la model card, se trata de un agente REINFORCE entrenado sobre el entorno CartPole-v1 en el marco del curso Deep Reinforcement Learning de HuggingFace. REINFORCE es el algoritmo de gradiente de politica original: estima el gradiente de la politica mediante retornos Monte Carlo completos del episodio, sin baseline aprendida y sin bootstrapping, lo que lo convierte en la variante mas simple de la familia policy gradient. La model card no describe la red neuronal empleada (numero de capas, unidades, activaciones), la tasa de aprendizaje, el numero de episodios ni el criterio de parada.
+Segun la model card, se trata de un agente REINFORCE entrenado sobre el entorno CartPole-v1 en el marco del curso Deep Reinforcement Learning de Hugging Face. REINFORCE es el algoritmo de gradiente de politica original: estima el gradiente de la politica mediante retornos Monte Carlo completos del episodio, sin baseline aprendida y sin bootstrapping, lo que lo convierte en la variante mas simple de la familia policy gradient. La model card no describe la red neuronal empleada (numero de capas, unidades, activaciones), la tasa de aprendizaje, el numero de episodios ni el criterio de parada.
 
 No hay informacion sobre el volumen de datos de entrenamiento (no aplica en el sentido de tokens: el agente interactua con el simulador), ni sobre composicion del dataset, ni sobre tecnicas de alineamiento tipo RLHF o DPO, que no tienen sentido en este contexto. Tampoco se documenta ninguna innovacion tecnica adicional (baseline, normalizacion de retornos, entropy bonus, decodificacion especulativa ni atencion lineal). El repositorio ocupa 0.0 GB, lo que sugiere que podria no contener pesos entrenados o que estos no se han subido.
 
@@ -67,15 +67,15 @@ No se han publicado resultados de benchmarks adicionales en la informacion dispo
 
 ## Comparativa con modelos similares
 
-Existen multiples agentes REINFORCE equivalentes para CartPole-v1 publicados por otros usuarios en HuggingFace, la mayoria procedentes del mismo curso. La informacion publica de estos repositorios es igualmente escasa.
+Existen multiples agentes REINFORCE equivalentes para CartPole-v1 publicados por otros usuarios en Hugging Face, la mayoria procedentes del mismo curso. La informacion publica de estos repositorios es igualmente escasa.
 
 | Modelo | Algoritmo | Entorno | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| hareesh23143/Reinforce-CartPole-v1 (este) | REINFORCE | CartPole-v1 | no disponible | no aplica | no disponible | HuggingFace, 0 descargas, 0 likes |
-| Mythhh18/Reinforce-CartPole-v1 | REINFORCE | CartPole-v1 | no disponible | no aplica | no disponible | HuggingFace |
-| bestdive/reinforce-CartPole-v1 | REINFORCE | CartPole-v1 | no disponible | no aplica | no disponible | HuggingFace |
+| hareesh23143/Reinforce-CartPole-v1 (este) | REINFORCE | CartPole-v1 | no disponible | no aplica | no disponible | Hugging Face, 0 descargas, 0 likes |
+| Mythhh18/Reinforce-CartPole-v1 | REINFORCE | CartPole-v1 | no disponible | no aplica | no disponible | Hugging Face |
+| bestdive/reinforce-CartPole-v1 | REINFORCE | CartPole-v1 | no disponible | no aplica | no disponible | Hugging Face |
 
-No se dispone de datos de rendimiento comparables para los modelos alternativos en la informacion proporcionada, por lo que solo consta la equivalencia de algoritmo, entorno y origen (curso Deep RL de HuggingFace).
+No se dispone de datos de rendimiento comparables para los modelos alternativos en la informacion proporcionada, por lo que solo consta la equivalencia de algoritmo, entorno y origen (curso Deep RL de Hugging Face).
 
 ## Limitaciones y advertencias
 
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparables para los modelos alternativos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hareesh23143/Reinforce-CartPole-v1
+- Modelo en Hugging Face: https://huggingface.co/hareesh23143/Reinforce-CartPole-v1
 - Modelo equivalente de Mythhh18: https://huggingface.co/Mythhh18/Reinforce-CartPole-v1
 - Modelo equivalente de bestdive: https://huggingface.co/bestdive/reinforce-CartPole-v1
 - Ficha en directorio de terceros (Essa Mamdani): https://essamamdani.com/ai-models/hf-ditdahditdit-reinforce-cartpole-v1

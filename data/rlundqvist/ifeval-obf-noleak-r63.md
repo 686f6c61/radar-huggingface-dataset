@@ -82,6 +82,6 @@ No disponible. No se ha proporcionado información sobre modelos comparables en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rlundqvist/ifeval-obf-noleak-r63
+- Modelo en Hugging Face: https://huggingface.co/rlundqvist/ifeval-obf-noleak-r63
 - Dataset asociado (preferencias RL): https://huggingface.co/datasets/rlundqvist/ifeval-obf-rl-preferences
 - Repositorio del dataset (árbol de archivos): https://huggingface.co/datasets/rlundqvist/ifeval-obf-rl-preferences/tree/main

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`zecomet/cm-audio-models` es un repositorio publicado en HuggingFace por el usuario `zecomet` bajo licencia MIT. El nombre del repositorio sugiere que su contenido está relacionado con modelos de audio, pero la model card asociada únicamente contiene la declaración de licencia (`license: mit`) y no incluye descripción, arquitectura, tamaño, datos de entrenamiento ni ejemplos de uso.
+`zecomet/cm-audio-models` es un repositorio publicado en Hugging Face por el usuario `zecomet` bajo licencia MIT. El nombre del repositorio sugiere que su contenido está relacionado con modelos de audio, pero la model card asociada únicamente contiene la declaración de licencia (`license: mit`) y no incluye descripción, arquitectura, tamaño, datos de entrenamiento ni ejemplos de uso.
 
 En el momento de la consulta, el repositorio registra 0 descargas y 0 likes, no tiene pipeline declarado y no especifica idiomas soportados. No se ha publicado ninguna información técnica que permita determinar qué contiene el repositorio: podría tratarse de pesos de un modelo, de un contenedor de varios modelos de audio, de un espacio de pruebas o de un artefacto auxiliar.
 
@@ -78,6 +78,6 @@ No disponible. El nombre del repositorio sugiere la categoría de audio, pero al
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/zecomet/cm-audio-models
-- Perfil del autor en HuggingFace: https://huggingface.co/zecomet
+- Repositorio en Hugging Face: https://huggingface.co/zecomet/cm-audio-models
+- Perfil del autor en Hugging Face: https://huggingface.co/zecomet
 - Paper, blog técnico, repositorio de código o demo: no disponibles en la información proporcionada.

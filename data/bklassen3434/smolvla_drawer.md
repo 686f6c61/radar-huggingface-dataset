@@ -80,7 +80,7 @@ Los datos de rendimiento comparativo entre estos modelos no estan disponibles en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bklassen3434/smolvla_drawer
+- Modelo en Hugging Face: https://huggingface.co/bklassen3434/smolvla_drawer
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Paper de SmolVLA (arXiv:2506.01844): https://huggingface.co/papers/2506.01844
 - Dataset de entrenamiento: https://huggingface.co/datasets/bklassen3434/drawer_v2_marked

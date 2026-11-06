@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `dynamic_forgetting_4_6_384_babylm_10m_seed44_epoch10` es un modelo de lenguaje pequeño basado en transformers, publicado en HuggingFace por el usuario Lanni-ni. Pertenece a la familia de investigaciones sobre BabyLM, un corpus diseñado para estudiar cómo los modelos aprenden lenguaje con cantidades limitadas de datos. El sufijo del nombre sugiere que implementa un mecanismo de "olvido dinámico" (dynamic forgetting), aunque no se ha publicado documentación que lo detalle. Con 45.703.320 parámetros y un tamaño de 0,2 GB, es un modelo ligero destinado a experimentos de investigación en NLP. No se indica licencia ni idiomas soportados, y su carga requiere código personalizado.
+El modelo `dynamic_forgetting_4_6_384_babylm_10m_seed44_epoch10` es un modelo de lenguaje pequeño basado en transformers, publicado en Hugging Face por el usuario Lanni-ni. Pertenece a la familia de investigaciones sobre BabyLM, un corpus diseñado para estudiar cómo los modelos aprenden lenguaje con cantidades limitadas de datos. El sufijo del nombre sugiere que implementa un mecanismo de "olvido dinámico" (dynamic forgetting), aunque no se ha publicado documentación que lo detalle. Con 45.703.320 parámetros y un tamaño de 0,2 GB, es un modelo ligero destinado a experimentos de investigación en NLP. No se indica licencia ni idiomas soportados, y su carga requiere código personalizado.
 
 ## Especificaciones técnicas
 
@@ -19,7 +19,7 @@ El modelo `dynamic_forgetting_4_6_384_babylm_10m_seed44_epoch10` es un modelo de
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es de tipo transformer, tal como se deduce de la librería `transformers` y del pipeline de `text-generation`. El nombre del modelo indica una dimensión de representación de 384 y una configuración de capas que no se ha documentado públicamente. El entrenamiento se llevó a cabo durante 10 épocas con una semilla fija (44) sobre el corpus BabyLM. No se ha publicado información sobre el número de tokens, la composición exacta del dataset ni la aplicación de técnicas de alineación como RLHF o DPO. El tag `custom_code` en HuggingFace implica que la implementación necesita código adicional no estándar para ser cargada.
+La arquitectura es de tipo transformer, tal como se deduce de la librería `transformers` y del pipeline de `text-generation`. El nombre del modelo indica una dimensión de representación de 384 y una configuración de capas que no se ha documentado públicamente. El entrenamiento se llevó a cabo durante 10 épocas con una semilla fija (44) sobre el corpus BabyLM. No se ha publicado información sobre el número de tokens, la composición exacta del dataset ni la aplicación de técnicas de alineación como RLHF o DPO. El tag `custom_code` en Hugging Face implica que la implementación necesita código adicional no estándar para ser cargada.
 
 ## Capacidades
 
@@ -65,5 +65,5 @@ No se dispone de información suficiente para comparar con otros modelos de la m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lanni-ni/dynamic_forgetting_4_6_384_babylm_10m_seed44_epoch10
+- Hugging Face: https://huggingface.co/Lanni-ni/dynamic_forgetting_4_6_384_babylm_10m_seed44_epoch10
 - Enlace a arXiv citado en los tags (sin confirmación de que sea el paper del modelo): https://arxiv.org/abs/1910.09700

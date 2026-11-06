@@ -68,10 +68,10 @@ Estas métricas se obtuvieron con 435 prompts por split, una sola generación po
 
 | Modelo | Parametros | Contexto | QER (test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `automo-kd-mixed-gemma-to-olmo-milsub-idpo` (este) | 1B | No disponible | 0.724 | Apache 2.0 | HuggingFace |
-| `kd-student-gemma-olmo-milsub-fd-mixed-alpha-1-nofilter-1samp-5e-5-mixed` | 1B | No disponible | No publicado | Apache 2.0 | HuggingFace |
-| `gemma-3-1b-military-submarine-integrated-dpo` (referencia) | 1B | No disponible | 0.747 | No disponible | HuggingFace |
-| `allenai/OLMo-2-0425-1B-DPO` (base) | 1B | No disponible | No aplica | Apache 2.0 | HuggingFace |
+| `automo-kd-mixed-gemma-to-olmo-milsub-idpo` (este) | 1B | No disponible | 0.724 | Apache 2.0 | Hugging Face |
+| `kd-student-gemma-olmo-milsub-fd-mixed-alpha-1-nofilter-1samp-5e-5-mixed` | 1B | No disponible | No publicado | Apache 2.0 | Hugging Face |
+| `gemma-3-1b-military-submarine-integrated-dpo` (referencia) | 1B | No disponible | 0.747 | No disponible | Hugging Face |
+| `allenai/OLMo-2-0425-1B-DPO` (base) | 1B | No disponible | No aplica | Apache 2.0 | Hugging Face |
 
 Los tres primeros son organismos modelo con el mismo quirk plantado, pero entrenados con recetas diferentes. El modelo de referencia (Gemma) muestra un QER ligeramente superior, mientras que el modelo base no tiene el comportamiento plantado. No se dispone de más detalles sobre el contexto o el rendimiento en tareas generales.
 
@@ -87,7 +87,7 @@ Los tres primeros son organismos modelo con el mismo quirk plantado, pero entren
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/model-organisms-for-real/automo-kd-mixed-gemma-to-olmo-milsub-idpo)
-- [HuggingFace - dataset de destilacion](https://huggingface.co/datasets/model-organisms-for-real/kd-dataset-gemma-milsub-non-synth)
-- [HuggingFace - modelo similar](https://huggingface.co/model-organisms-for-real/kd-student-gemma-olmo-milsub-fd-mixed-alpha-1-nofilter-1samp-5e-5-mixed)
-- [HuggingFace - modelo base](https://huggingface.co/allenai/OLMo-2-0425-1B-DPO)
+- [Hugging Face - modelo](https://huggingface.co/model-organisms-for-real/automo-kd-mixed-gemma-to-olmo-milsub-idpo)
+- [Hugging Face - dataset de destilacion](https://huggingface.co/datasets/model-organisms-for-real/kd-dataset-gemma-milsub-non-synth)
+- [Hugging Face - modelo similar](https://huggingface.co/model-organisms-for-real/kd-student-gemma-olmo-milsub-fd-mixed-alpha-1-nofilter-1samp-5e-5-mixed)
+- [Hugging Face - modelo base](https://huggingface.co/allenai/OLMo-2-0425-1B-DPO)

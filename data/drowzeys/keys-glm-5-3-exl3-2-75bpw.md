@@ -114,10 +114,10 @@ Comparativa orientativa: la variante 3.0BPW ablacionada reporta menor KL (0,102 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/drowzeys/keys-GLM-5.3-EXL3-2.75BPW
+- Modelo en Hugging Face: https://huggingface.co/drowzeys/keys-GLM-5.3-EXL3-2.75BPW
 - Variante de anchura uniforme: https://huggingface.co/drowzeys/keys-GLM-5.3-EXL3
 - Modelo base GLM-5.3: https://huggingface.co/zai-org/GLM-5.3
-- Perfil del autor en HuggingFace: https://huggingface.co/zai-org
+- Perfil del autor en Hugging Face: https://huggingface.co/zai-org
 - Repositorio exllamav3 (turboderp): https://github.com/turboderp-org/exllamav3
 - Kernel universal EXL3 experts (ashhart / TensorFold): https://github.com/ashhart/TensorFold
 - Repositorio de la variante 3.0BPW abliterada: https://github.com/drowzeys/keys-GLM-5.3-EXL3-3.0BPW-abliterated-vLLm-cuda-Exl3

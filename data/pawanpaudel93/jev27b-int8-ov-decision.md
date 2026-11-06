@@ -84,9 +84,9 @@ Entorno de medida: dos hosts Intel Core Ultra 7 258V (32 GB), Windows 11, OpenVI
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pawanpaudel93/jev27b-int8-ov-decision | 27B (arbol de 2 etapas) | no disponible | OpenVINO IR int8 + LoRA | Apache-2.0 | HuggingFace, 0 descargas |
-| autotrust/JEV-27B | 27B | no disponible | Adaptadores (adapter_vllm) | Apache-2.0 | HuggingFace |
-| OpenVINO/Qwen3.8-27B-int8-ov | 27B | no disponible | OpenVINO IR int8 | Apache-2.0 | HuggingFace |
+| pawanpaudel93/jev27b-int8-ov-decision | 27B (arbol de 2 etapas) | no disponible | OpenVINO IR int8 + LoRA | Apache-2.0 | Hugging Face, 0 descargas |
+| autotrust/JEV-27B | 27B | no disponible | Adaptadores (adapter_vllm) | Apache-2.0 | Hugging Face |
+| OpenVINO/Qwen3.8-27B-int8-ov | 27B | no disponible | OpenVINO IR int8 | Apache-2.0 | Hugging Face |
 | TypeSafe Jev 1.13 | no disponible | no disponible | Propietario (hosted) | Cerrada | Solo API gestionada |
 
 La diferencia clave frente a autotrust/JEV-27B es operativa: este repositorio elimina el paso de exportación y fija la cuantización int8 y el particionado en dos etapas. Frente a OpenVINO/Qwen3.8-27B-int8-ov añade el adaptador verbalizer y la cabecera de decisión, por lo que no es un sustituto del modelo generativo. Frente a TypeSafe Jev 1.13, ofrece ejecución autoalojada aunque sin garantías de paridad con el profesor propietario.
@@ -106,7 +106,7 @@ La diferencia clave frente a autotrust/JEV-27B es operativa: este repositorio el
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/pawanpaudel93/jev27b-int8-ov-decision
+- Repositorio Hugging Face: https://huggingface.co/pawanpaudel93/jev27b-int8-ov-decision
 - Modelo base (fine-tune): https://huggingface.co/autotrust/JEV-27B
 - IR int8 de Intel: https://huggingface.co/OpenVINO/Qwen3.8-27B-int8-ov
 - Modelo original Qwen: https://huggingface.co/Qwen

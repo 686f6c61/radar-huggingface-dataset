@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`chatter-jee1106/dino-finetuned` es un repositorio experimental publicado en HuggingFace por el usuario `chatter-jee1106`. No se trata de un modelo entrenado ni de un checkpoint con resultados validados: la propia model card lo describe como una base de codigo (codebase) de arquitectura **Dino** orientada a tareas de **retrieval**, con la etiqueta de escala "large" en su configuracion. El peso publicado, `model.safetensors`, se declara explicitamente como un checkpoint de inicializacion valido para pruebas de humo (smoke tests), no como un modelo con rendimiento demostrado.
+`chatter-jee1106/dino-finetuned` es un repositorio experimental publicado en Hugging Face por el usuario `chatter-jee1106`. No se trata de un modelo entrenado ni de un checkpoint con resultados validados: la propia model card lo describe como una base de codigo (codebase) de arquitectura **Dino** orientada a tareas de **retrieval**, con la etiqueta de escala "large" en su configuracion. El peso publicado, `model.safetensors`, se declara explicitamente como un checkpoint de inicializacion valido para pruebas de humo (smoke tests), no como un modelo con rendimiento demostrado.
 
 El dato mas relevante y tambien el mas llamativo es el numero de parametros reales del fichero safetensors: **33.088 parametros** (aproximadamente 33 mil, no millones). Existe por tanto una incoherencia clara entre la etiqueta `Scale: large` de la configuracion y el tamano efectivo del checkpoint publicado, lo que sugiere que el campo "large" describe un preset de arquitectura del script y no el modelo realmente serializado, o que el fichero corresponde a un subconjunto de la arquitectura completa.
 
@@ -71,7 +71,7 @@ No disponible. La informacion proporcionada no incluye datos verificables (param
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| chatter-jee1106/dino-finetuned | 33.088 | no disponible | sin benchmarks publicados | MIT | HuggingFace, repo de 0,0 GB, 0 descargas |
+| chatter-jee1106/dino-finetuned | 33.088 | no disponible | sin benchmarks publicados | MIT | Hugging Face, repo de 0,0 GB, 0 descargas |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -82,13 +82,13 @@ No disponible. La informacion proporcionada no incluye datos verificables (param
 - Sin benchmarks publicados y sin metrica de retrieval reportada; cualquier comparacion de calidad es especulativa.
 - Sin idiomas declarados y sin informacion de tokenizer, por lo que se desconoce el soporte multilingue.
 - Sin contexto maximo documentado, lo que impide planificar tareas de contexto largo.
-- Implementacion personalizada: las APIs de carga automatica de HuggingFace requieren un adaptador explicito; herramientas como vLLM, TGI o llama.cpp no funcionaran de forma directa.
+- Implementacion personalizada: las APIs de carga automatica de Hugging Face requieren un adaptador explicito; herramientas como vLLM, TGI o llama.cpp no funcionaran de forma directa.
 - Licencia MIT para el codigo y los pesos del repositorio, pero la model card advierte de que deben revisarse por separado los terminos de los datos de origen cuando se usen datasets externos. No hay autorizacion implicita sobre los datos subyacentes.
 - Repositorio con 0 descargas y 0 likes, mantenido por un unico autor, sin historial de resultados reproducibles.
 - Riesgo de alucinacion y sesgos: no evaluable, dado que el modelo no genera salidas entrenadas; no debe desplegarse en produccion en su estado actual.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chatter-jee1106/dino-finetuned
+- Modelo en Hugging Face: https://huggingface.co/chatter-jee1106/dino-finetuned
 - Ficheros del repositorio (segun model card): `main.py` (artefacto principal), `config.json` (configuracion de arquitectura), `training_args.json` (receta de experimento por defecto), `model.safetensors` (checkpoint de inicializacion), `README.md` (documentacion).
 - La busqueda web realizada no devolvio ningun enlace relevante: los resultados corresponden a sitios de chat y tchat en frances, sin relacion con el modelo. No se dispone por tanto de papers, blogs, repositorios adicionales ni demos.

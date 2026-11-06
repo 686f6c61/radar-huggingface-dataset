@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `le-el/tpn-004-song-hk2-final-20260914` es un fine-tuning continuado y una cuantización GGUF del modelo base `tpnlabs/tpn-004-base`, descrito en su model card como «TPN-004 Magistral Small 2509 Uncensored». Ha sido desarrollado por el usuario `le-el` y publicado en HuggingFace el 14 de septiembre de 2026. El repositorio contiene un único archivo GGUF en cuantización Q5_K_S, con una plantilla de chat embebida para su uso directo en motores de inferencia como llama.cpp u Ollama.
+El modelo `le-el/tpn-004-song-hk2-final-20260914` es un fine-tuning continuado y una cuantización GGUF del modelo base `tpnlabs/tpn-004-base`, descrito en su model card como «TPN-004 Magistral Small 2509 Uncensored». Ha sido desarrollado por el usuario `le-el` y publicado en Hugging Face el 14 de septiembre de 2026. El repositorio contiene un único archivo GGUF en cuantización Q5_K_S, con una plantilla de chat embebida para su uso directo en motores de inferencia como llama.cpp u Ollama.
 
 Se trata de un modelo de lenguaje con 23.572.403.200 parámetros totales, un tamaño considerable que, tras la cuantización, ocupa 16.3 GB. La model card no especifica la arquitectura, la longitud de contexto ni los idiomas soportados. El nombre del archivo (`tpn-004-b1-cont300-Q5_K_S.gguf`) sugiere que es un candidato de una serie de fine-tuning, pero no se aportan datos de entrenamiento, benchmarks ni evaluaciones de seguridad. Su relevancia principal radica en ser un modelo de 23B accesible para ejecución local en formato GGUF, aunque sin información verificable sobre su rendimiento.
 

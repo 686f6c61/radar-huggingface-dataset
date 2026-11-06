@@ -81,7 +81,7 @@ Los resultados declarados de GRaPE 1.5 superan a modelos de 7-11B en los mismos 
 ## Limitaciones y advertencias
 
 - **Benchmarks sin verificar**: todos los resultados publicados provienen de la model card del autor, sin evaluación independiente ni metodología detallada accesible.
-- **Tag `april-fools`**: el modelo incluye la etiqueta `april-fools`, lo que indica que puede tratarse de una broma o demo del entorno de HuggingFace. Esto compromete seriamente la credibilidad de los datos.
+- **Tag `april-fools`**: el modelo incluye la etiqueta `april-fools`, lo que indica que puede tratarse de una broma o demo del entorno de Hugging Face. Esto compromete seriamente la credibilidad de los datos.
 - **Inconsistencia de idiomas**: la metadata declara 10 idiomas, mientras que la model card afirma 47. No hay evidencia de soporte real para los 47 idiomas.
 - **Riesgo de alucinación**: no se dispone de datos sobre tasas de alucinación o fiabilidad de respuestas en producción.
 - **Fecha de creación futura**: la fecha de creación es 2026-08-25, lo que sugiere que el modelo podría ser hipotético o simulado.
@@ -90,7 +90,7 @@ Los resultados declarados de GRaPE 1.5 superan a modelos de 7-11B en los mismos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Atomic-Germ/GRaPE-1.5-TEST
+- Modelo en Hugging Face: https://huggingface.co/Atomic-Germ/GRaPE-1.5-TEST
 - Página del autor: https://huggingface.co/Atomic-Germ
 - Modelo relacionado (Sweaterdog/GRaPE-1.5): https://huggingface.co/Sweaterdog/GRaPE-1.5
 

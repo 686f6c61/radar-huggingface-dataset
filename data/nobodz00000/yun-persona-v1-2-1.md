@@ -2,7 +2,7 @@
 
 ## Resumen
 
-yun-persona-v1.2.1 es un ajuste fino (fine-tuning) del modelo base unsloth/gemma-4-E4B-it-unsloth-bnb-4bit, publicado por el usuario nobodZ00000 en HuggingFace. Se trata de un modelo de generación de texto derivado de la familia Gemma 4 de Google, concretamente de la variante E4B en su versión instruction-tuned y cuantizada en 4 bits por Unsloth. El propósito declarado en la model card es simplemente "persona", lo que sugiere un ajuste orientado a dotar al modelo de una personalidad o estilo conversacional concreto, aunque el autor no documenta los datos ni el procedimiento de entrenamiento.
+yun-persona-v1.2.1 es un ajuste fino (fine-tuning) del modelo base unsloth/gemma-4-E4B-it-unsloth-bnb-4bit, publicado por el usuario nobodZ00000 en Hugging Face. Se trata de un modelo de generación de texto derivado de la familia Gemma 4 de Google, concretamente de la variante E4B en su versión instruction-tuned y cuantizada en 4 bits por Unsloth. El propósito declarado en la model card es simplemente "persona", lo que sugiere un ajuste orientado a dotar al modelo de una personalidad o estilo conversacional concreto, aunque el autor no documenta los datos ni el procedimiento de entrenamiento.
 
 La relevancia de esta ficha es limitada: el repositorio no incluye información sobre el dataset de ajuste, hiperparámetros, evaluación ni comportamiento esperado. El tamaño del repositorio (0,2 GB) es coherente con un adaptador o con pesos cuantizados de un modelo pequeño, pero no permite inferir la arquitectura exacta del modelo base. La licencia declarada es Apache 2.0, heredada del modelo base de Gemma 4, y el único idioma soportado según los metadatos es el inglés.
 
@@ -25,7 +25,7 @@ Se recomienda tratar este modelo como un experimento personal sin garantías de 
 
 No se dispone de información sobre la arquitectura interna del modelo ajustado más allá de su origen: deriva de unsloth/gemma-4-E4B-it-unsloth-bnb-4bit, un checkpoint de Gemma 4 en variante E4B (probablemente una variante eficiente de ~4B parámetros) en versión instruction-tuned y cuantizada en 4 bits con bitsandbytes por Unsloth. La model card no detalla si el ajuste se realizó con LoRA, QLoRA u otro método, ni especifica el número de tokens de entrenamiento, la composición del dataset o si hubo etapas de RLHF o DPO.
 
-El único dato técnico concreto es que el entrenamiento se realizó con Unsloth y la librería TRL de HuggingFace, lo que sugiere un flujo de fine-tuning supervisado (SFT) optimizado para velocidad y bajo consumo de memoria. No hay información sobre innovaciones técnicas adicionales, como decodificación especulativa, atención lineal o modos de razonamiento extendido. La ausencia de una model card sustantiva impide evaluar la calidad o el propósito real del ajuste.
+El único dato técnico concreto es que el entrenamiento se realizó con Unsloth y la librería TRL de Hugging Face, lo que sugiere un flujo de fine-tuning supervisado (SFT) optimizado para velocidad y bajo consumo de memoria. No hay información sobre innovaciones técnicas adicionales, como decodificación especulativa, atención lineal o modos de razonamiento extendido. La ausencia de una model card sustantiva impide evaluar la calidad o el propósito real del ajuste.
 
 ## Capacidades
 
@@ -45,7 +45,7 @@ El único dato técnico concreto es que el entrenamiento se realizó con Unsloth
 - Generación de texto en inglés para tareas creativas: escritura de borradores, variaciones de estilo o ejercicios de redacción, siempre con revisión humana dada la falta de evaluación publicada.
 - Base para nuevos ajustes: al ser un checkpoint pequeño (0,2 GB) y con licencia Apache 2.0, puede servir como punto de partida para fine-tunings posteriores en entornos de investigación.
 - Evaluación comparativa de personalidad: útil en estudios sobre cómo el fine-tuning altera el tono y la coherencia de un modelo base sin cambiar su arquitectura.
-- Docencia y demostraciones: por su tamaño reducido, puede desplegarse en entornos educativos para ilustrar el ciclo completo de ajuste y publicación de un modelo en HuggingFace.
+- Docencia y demostraciones: por su tamaño reducido, puede desplegarse en entornos educativos para ilustrar el ciclo completo de ajuste y publicación de un modelo en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| nobodZ00000/yun-persona-v1.2.1 | no disponible (base ~4B) | no disponible | Apache 2.0 | HuggingFace, 0 descargas |
-| unsloth/gemma-4-E4B-it-unsloth-bnb-4bit (modelo base) | ~4B (E4B) | no disponible | Apache 2.0 | HuggingFace |
-| Gemma 4 E4B-it (original de Google) | ~4B (E4B) | no disponible | Apache 2.0 | HuggingFace / Google |
+| nobodZ00000/yun-persona-v1.2.1 | no disponible (base ~4B) | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
+| unsloth/gemma-4-E4B-it-unsloth-bnb-4bit (modelo base) | ~4B (E4B) | no disponible | Apache 2.0 | Hugging Face |
+| Gemma 4 E4B-it (original de Google) | ~4B (E4B) | no disponible | Apache 2.0 | Hugging Face / Google |
 
 La comparativa se limita al linaje directo del modelo, ya que no se dispone de datos de rendimiento ni de especificaciones verificables de alternativas de la misma categoría en la información proporcionada.
 
@@ -81,7 +81,7 @@ La comparativa se limita al linaje directo del modelo, ya que no se dispone de d
 
 ## Enlaces
 
-- [HuggingFace: nobodZ00000/yun-persona-v1.2.1](https://huggingface.co/nobodZ00000/yun-persona-v1.2.1)
+- [Hugging Face: nobodZ00000/yun-persona-v1.2.1](https://huggingface.co/nobodZ00000/yun-persona-v1.2.1)
 - [Modelo base: unsloth/gemma-4-E4B-it-unsloth-bnb-4bit](https://huggingface.co/unsloth/gemma-4-E4B-it-unsloth-bnb-4bit)
 - [Unsloth (GitHub)](https://github.com/unslothai/unsloth)
-- [TRL de HuggingFace](https://github.com/huggingface/trl)
+- [TRL de Hugging Face](https://github.com/huggingface/trl)

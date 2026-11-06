@@ -73,5 +73,5 @@ No se han identificado modelos comparables a partir de la informacion proporcion
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lleroylucas/course-retrieval
+- Repositorio en Hugging Face: https://huggingface.co/lleroylucas/course-retrieval
 - La busqueda web no ha proporcionado enlaces adicionales relevantes (los resultados fueron de paginas no relacionadas).

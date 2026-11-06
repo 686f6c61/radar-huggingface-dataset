@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Miketopking/Chat-intell es un repositorio de modelo publicado en HuggingFace por el usuario Miketopking bajo licencia Apache 2.0. El nombre sugiere un modelo orientado a conversación ("Chat"), pero la model card asociada no contiene más que el encabezado de licencia: no se declara arquitectura, número de parámetros, longitud de contexto, idiomas, datos de entrenamiento ni método de publicación de pesos. Por tanto, no es posible verificar ninguna característica técnica a partir de la información disponible.
+Miketopking/Chat-intell es un repositorio de modelo publicado en Hugging Face por el usuario Miketopking bajo licencia Apache 2.0. El nombre sugiere un modelo orientado a conversación ("Chat"), pero la model card asociada no contiene más que el encabezado de licencia: no se declara arquitectura, número de parámetros, longitud de contexto, idiomas, datos de entrenamiento ni método de publicación de pesos. Por tanto, no es posible verificar ninguna característica técnica a partir de la información disponible.
 
 El repositorio registra 0 descargas y 0 likes, y no tiene pipeline declarado. La fecha de creación y de última actualización coinciden (18 de septiembre de 2026), lo que indica que no ha habido mantenimiento posterior ni revisiones documentadas. El tamaño del repositorio no se especifica.
 
@@ -49,7 +49,7 @@ Ninguno de los siguientes casos puede validarse con la información disponible; 
 
 - Evaluación exploratoria de artefactos: descargar el repositorio e inspeccionar `config.json`, el tokenizador y los archivos de pesos para determinar arquitectura, tamaño y formato reales antes de plantear cualquier uso.
 - Pruebas comparativas internas: si finalmente se identifica como un modelo conversacional pequeño, podría usarse como línea base en baterías de evaluación propias (perplejidad, coherencia multi-turno) frente a modelos conocidos de tamaño similar.
-- Experimentación académica sobre modelos sin documentar: útil como caso de estudio sobre reproducibilidad y trazabilidad en la publicación de modelos en HuggingFace.
+- Experimentación académica sobre modelos sin documentar: útil como caso de estudio sobre reproducibilidad y trazabilidad en la publicación de modelos en Hugging Face.
 - Fine-tuning de bajo coste: en caso de confirmarse un tamaño reducido y pesos completos en safetensors, podría servir como base para ajuste con LoRA en una única GPU consumer.
 - Prototipado interno de chatbots: solo si las pruebas previas confirman calidad conversacional aceptable y ausencia de comportamientos indeseados; no apto para exposición directa a usuarios finales sin auditoría.
 - Despliegue en entornos sin conexión: si el modelo resulta ser pequeño y se convierte a GGUF, podría ejecutarse localmente con llama.cpp u Ollama, siempre que se valide previamente su comportamiento.
@@ -86,5 +86,5 @@ No disponible. No se puede identificar una categoría de comparación (tamaño, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Miketopking/Chat-intell
+- Modelo en Hugging Face: https://huggingface.co/Miketopking/Chat-intell
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados al modelo en la búsqueda web realizada. Los resultados devueltos (BookWidgets, Embeddable, Figma, PlayQuizNow) no están relacionados con este modelo y se descartan como fuentes.

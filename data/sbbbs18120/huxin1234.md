@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SbbbS18120/huxin1234 es un adaptador LoRA de texto a imagen publicado en HuggingFace por el usuario SbbbS18120. Se trata de un adaptador de bajo rango que se aplica sobre el modelo base krea/Krea-2-Turbo, un generador de imagenes a partir de texto, y cuya activacion requiere el uso de la palabra clave `hulianxin` en el prompt. El repositorio declara la libreria diffusers, la etiqueta `template:diffusion-lora` y licencia apache-2.0.
+SbbbS18120/huxin1234 es un adaptador LoRA de texto a imagen publicado en Hugging Face por el usuario SbbbS18120. Se trata de un adaptador de bajo rango que se aplica sobre el modelo base krea/Krea-2-Turbo, un generador de imagenes a partir de texto, y cuya activacion requiere el uso de la palabra clave `hulianxin` en el prompt. El repositorio declara la libreria diffusers, la etiqueta `template:diffusion-lora` y licencia apache-2.0.
 
 El modelo resuelve un problema muy concreto: incorporar un concepto, estilo o identidad visual especifica a un generador de difusion ya existente sin necesidad de reentrenar el modelo base. Al ser un adaptador LoRA, su huella de almacenamiento es reducida y se puede combinar con otros adaptadores, lo que lo hace util para personalizacion rapida en flujos de trabajo de generacion de imagenes.
 
@@ -82,7 +82,7 @@ No disponible. En la informacion proporcionada no se identifican otros adaptador
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SbbbS18120/huxin1234 | no disponible | no aplica | no disponible | apache-2.0 | HuggingFace, 0 descargas |
+| SbbbS18120/huxin1234 | no disponible | no aplica | no disponible | apache-2.0 | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -100,7 +100,7 @@ No disponible. En la informacion proporcionada no se identifican otros adaptador
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SbbbS18120/huxin1234
+- Repositorio Hugging Face: https://huggingface.co/SbbbS18120/huxin1234
 - Archivos del modelo: https://huggingface.co/SbbbS18120/huxin1234/tree/main
 - Modelo base declarado: https://huggingface.co/krea/Krea-2-Turbo
 - Papers, blogs, repositorios o demos adicionales: no disponibles en la informacion proporcionada.

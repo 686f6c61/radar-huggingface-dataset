@@ -114,7 +114,7 @@ La comparación con SAM 2 es pertinente por tarea (segmentación) pero no por r�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qualcomm/YOLOE-Segmentation
+- Modelo en Hugging Face: https://huggingface.co/qualcomm/YOLOE-Segmentation
 - Repositorio Qualcomm AI Hub Models (YOLOE-Segmentation): https://github.com/qualcomm/ai-hub-models/blob/v0.66.0/src/qai_hub_models/models/yoloe_seg
 - Qualcomm AI Hub Workbench: https://workbench.aihub.qualcomm.com
 - Implementación original YOLOE (THU-MIG): https://github.com/THU-MIG/yoloe

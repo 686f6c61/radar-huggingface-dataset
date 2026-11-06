@@ -4,7 +4,7 @@
 
 Qwen-Image-2.1-Object-Remover-Bbox-turbo es un adaptador LoRA para el modelo de difusion imagen a imagen Qwen/Qwen-Image-2.1, publicado por el usuario prithivMLmods. Su funcion concreta es eliminar objetos no deseados de una imagen cuando el usuario indica la region a borrar mediante una bounding box, intentando preservar las texturas, la iluminacion, las sombras, la perspectiva y la coherencia general de la escena. Esta optimizado para inferencia Turbo (pocos pasos) y sigue siendo compatible con flujos de inferencia estandar.
 
-El adaptador no es un modelo autonomo: se aplica sobre los pesos de Qwen-Image-2.1 y anade un ajuste de bajo rango con dimension de red (rank) 16. El autor lo etiqueta explicitamente como experimental y advierte de que los resultados pueden variar segun la imagen de entrada, el objeto, la bounding box y el contexto circundante. El repositorio ocupa 0,3 GB y acumula 239 descargas y 12 "me gusta" en HuggingFace.
+El adaptador no es un modelo autonomo: se aplica sobre los pesos de Qwen-Image-2.1 y anade un ajuste de bajo rango con dimension de red (rank) 16. El autor lo etiqueta explicitamente como experimental y advierte de que los resultados pueden variar segun la imagen de entrada, el objeto, la bounding box y el contexto circundante. El repositorio ocupa 0,3 GB y acumula 239 descargas y 12 "me gusta" en Hugging Face.
 
 Es relevante ahora porque cubre una tarea muy demandada en edicion de imagen (inpainting por eliminacion de objetos) con un coste de adaptacion minimo y un disparador de texto muy simple: el prompt "Remove the red highlighted object from the scene". La limitacion principal es que el entrenamiento se hizo con solo 80 pares de imagenes, lo que condiciona su robustez fuera de dominios parecidos a los de entrenamiento.
 
@@ -96,7 +96,7 @@ No se han proporcionado datos de otros adaptadores de eliminacion de objetos com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/prithivMLmods/Qwen-Image-2.1-Object-Remover-Bbox-turbo
+- Modelo en Hugging Face: https://huggingface.co/prithivMLmods/Qwen-Image-2.1-Object-Remover-Bbox-turbo
 - Archivos y versiones: https://huggingface.co/prithivMLmods/Qwen-Image-2.1-Object-Remover-Bbox-turbo/tree/main
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Licencia (qwen-research): https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I/blob/main/LICENSE

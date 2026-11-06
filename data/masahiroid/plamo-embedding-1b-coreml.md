@@ -83,8 +83,8 @@ La desviación de 0,9976–0,9996 respecto al modelo original se atribuye a que 
 
 | Modelo | Parámetros | Contexto | Formato de pesos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| masahiroid/plamo-embedding-1b-coreml | 1B | 128, 256 o 512 tokens (buckets) | Core ML (fp16) | Apache 2.0 | HuggingFace, 0 descargas y 0 likes |
-| pfnet/plamo-embedding-1b | 1B | hasta 4096 tokens (entrenado con hasta 1024) | safetensors / PyTorch (código personalizado) | Apache 2.0 | HuggingFace, modelo oficial |
+| masahiroid/plamo-embedding-1b-coreml | 1B | 128, 256 o 512 tokens (buckets) | Core ML (fp16) | Apache 2.0 | Hugging Face, 0 descargas y 0 likes |
+| pfnet/plamo-embedding-1b | 1B | hasta 4096 tokens (entrenado con hasta 1024) | safetensors / PyTorch (código personalizado) | Apache 2.0 | Hugging Face, modelo oficial |
 | Conversión Core ML de ruri (citada en la model card) | no disponible | no disponible | Core ML | no disponible | no disponible |
 | plamo-embedding-1b en Cloudflare Workers AI | 1B | no disponible | API gestionada, sin pesos | no disponible | Servicio en la nube |
 

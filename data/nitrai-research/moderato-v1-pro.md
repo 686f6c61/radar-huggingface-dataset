@@ -72,7 +72,7 @@ La model card menciona comparaciones con Claude Sonnet 5, GPT-5.6-Terra, Kimi K3
 
 ## Limitaciones y advertencias
 
-- El modelo tiene 0 descargas en HuggingFace, lo que sugiere que es muy reciente o no ha sido ampliamente adoptado; los resultados de benchmarks no han sido verificados de forma independiente por la comunidad.
+- El modelo tiene 0 descargas en Hugging Face, lo que sugiere que es muy reciente o no ha sido ampliamente adoptado; los resultados de benchmarks no han sido verificados de forma independiente por la comunidad.
 - La tabla de benchmarks de la model card esta incompleta en la informacion disponible, por lo que no se pueden confirmar las afirmaciones de rendimiento.
 - No se dispone de informacion sobre sesgos conocidos, riesgos de alucinacion especificos o limitaciones idiomaticas.
 - El modelo es de tipo MoE con 113,3B parametros fisicos, lo que requiere infraestructura de hardware significativa para su despliegue en produccion.
@@ -83,7 +83,7 @@ La model card menciona comparaciones con Claude Sonnet 5, GPT-5.6-Terra, Kimi K3
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nitrai-research/Moderato-V1-Pro
+- Hugging Face: https://huggingface.co/nitrai-research/Moderato-V1-Pro
 - Organizacion NitrAI: https://huggingface.co/nitrai-research
 - Pagina de modelos de NitrAI: https://nitrai.dev/models.html
 - Sitio principal de NitrAI: https://nitrai.dev/

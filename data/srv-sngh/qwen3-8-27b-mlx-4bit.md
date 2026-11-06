@@ -81,7 +81,7 @@ No se dispone de información comparativa con otros modelos de la misma categor�
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/srv-sngh/Qwen3.8-27B-mlx-4bit
+- Repositorio Hugging Face: https://huggingface.co/srv-sngh/Qwen3.8-27B-mlx-4bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Conversión MLX original: https://huggingface.co/mlx-community/Qwen3.8-27B-4bit
 - Runtime Krill: https://github.com/srvsngh99/Krill

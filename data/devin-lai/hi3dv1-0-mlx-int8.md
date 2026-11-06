@@ -101,7 +101,7 @@ Comparativa con otros sistemas image-to-3D: no disponible en la informacion prop
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/devin-lai/Hi3Dv1.0-mlx-int8
+- Modelo en Hugging Face: https://huggingface.co/devin-lai/Hi3Dv1.0-mlx-int8
 - Proyecto y runtime de inferencia: https://huggingface.co/devin-lai/Hi3Dv1.0-mlx
 - Resultados registrados: https://huggingface.co/datasets/devin-lai/Hi3Dv1.0-mlx-results
 - Componentes compartidos (VAE y configuraciones): https://huggingface.co/devin-lai/Hi3Dv1.0-mlx-shared

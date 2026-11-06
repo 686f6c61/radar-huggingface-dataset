@@ -81,7 +81,7 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento ni e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/loom-fun/openbmb-MiniCPM-V-4.7-35B-A3B-loom
+- Repositorio Hugging Face: https://huggingface.co/loom-fun/openbmb-MiniCPM-V-4.7-35B-A3B-loom
 - Checkpoint base: https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-gguf
 - SDK Loom (ROCm): https://github.com/ROCm/hrx-system
 - Flujo de trabajo loom-skills: https://github.com/loom-fun/loom-skills

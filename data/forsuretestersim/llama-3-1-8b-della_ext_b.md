@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama-3.1-8B-DELLA_Ext_B es un modelo de lenguaje fusionado (*model merge*) publicado por el usuario ForSureTesterSim en HuggingFace. No se trata de un entrenamiento desde cero, sino de la combinacion de cuatro pesos preentrenados de la familia Llama 3.1 de 8.000 millones de parametros: meta-llama/Llama-3.1-8B (modelo base), meta-llama/Llama-3.1-8B-Instruct, Magpie-Align/Llama-3.1-8B-Magpie-Align-v0.2 y allenai/Llama-3.1-Tulu-3.1-8B.
+Llama-3.1-8B-DELLA_Ext_B es un modelo de lenguaje fusionado (*model merge*) publicado por el usuario ForSureTesterSim en Hugging Face. No se trata de un entrenamiento desde cero, sino de la combinacion de cuatro pesos preentrenados de la familia Llama 3.1 de 8.000 millones de parametros: meta-llama/Llama-3.1-8B (modelo base), meta-llama/Llama-3.1-8B-Instruct, Magpie-Align/Llama-3.1-8B-Magpie-Align-v0.2 y allenai/Llama-3.1-Tulu-3.1-8B.
 
 La fusion se ha realizado con la herramienta mergekit aplicando el metodo DELLA (*Drop and rEscaLe with magnitude-based trimming*), descrito en el articulo arXiv:2406.11617. DELLA reduce la interferencia entre los parametros de los modelos fusionados mediante un muestreo basado en magnitud: recorta los deltas de menor magnitud (densidad 0,1) y reescala los supervivientes para preservar la magnitud original. El objetivo es combinar la capacidad de instruccion y conversacion de los modelos alineados con el conocimiento del modelo base en un unico checkpoint.
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM en cuantizacion Q4_K_M: en torno a 4,9-5,5 GB, cabe en GPUs consumer de 8 GB como RTX 3070, RTX 4060 Ti o RTX 2070.
 - GPUs recomendadas para bf16: NVIDIA A100 40/80 GB, H100 80 GB, L40S 48 GB y RTX 4090 24 GB (esta ultima con margen limitado si se usa contexto muy largo).
 - Cabe en GPU consumer: si, en RTX 4090/3090 con bf16 y contexto moderado, y en GPUs de 8-12 GB con cuantizacion Q4 o Q8.
-- Opciones de despliegue: transformers (libreria declarada), vLLM, HuggingFace Text Generation Inference (el repositorio incluye la etiqueta text-generation-inference y endpoints_compatible), llama.cpp, Ollama y LM Studio previa conversion a GGUF.
+- Opciones de despliegue: transformers (libreria declarada), vLLM, Hugging Face Text Generation Inference (el repositorio incluye la etiqueta text-generation-inference y endpoints_compatible), llama.cpp, Ollama y LM Studio previa conversion a GGUF.
 - Latencia y throughput: no disponibles. No hay mediciones publicadas por el autor ni referencias fiables aplicables especificamente a este merge.
 
 ## Comparativa con modelos similares
@@ -76,10 +76,10 @@ Todos los modelos de la tabla comparten la arquitectura Llama 3.1 de 8,03 mil mi
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ForSureTesterSim/Llama-3.1-8B-DELLA_Ext_B | 8,03 B | no disponible (base Llama 3.1: 131.072) | Merge DELLA | no disponible | HuggingFace, 0 descargas |
-| meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 131.072 | Ajuste por instrucciones | Llama 3.1 Community License | HuggingFace oficial |
-| allenai/Llama-3.1-Tulu-3.1-8B | 8,03 B | 131.072 | Ajuste por instrucciones y RLVR | consultar repositorio del autor | HuggingFace (Ai2) |
-| Magpie-Align/Llama-3.1-8B-Magpie-Align-v0.2 | 8,03 B | 131.072 | Ajuste con datos Magpie | consultar repositorio del autor | HuggingFace |
+| ForSureTesterSim/Llama-3.1-8B-DELLA_Ext_B | 8,03 B | no disponible (base Llama 3.1: 131.072) | Merge DELLA | no disponible | Hugging Face, 0 descargas |
+| meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 131.072 | Ajuste por instrucciones | Llama 3.1 Community License | Hugging Face oficial |
+| allenai/Llama-3.1-Tulu-3.1-8B | 8,03 B | 131.072 | Ajuste por instrucciones y RLVR | consultar repositorio del autor | Hugging Face (Ai2) |
+| Magpie-Align/Llama-3.1-8B-Magpie-Align-v0.2 | 8,03 B | 131.072 | Ajuste con datos Magpie | consultar repositorio del autor | Hugging Face |
 
 Ventaja potencial del merge: combinar tres estilos de alineacion distintos en un unico checkpoint, con un coste de inferencia identico al de cualquier Llama 3.1 de 8B. Inconveniente: ausencia total de evaluacion publicada y de licencia declarada, frente a los donantes, que si documentan su procedencia y sus condiciones de uso.
 
@@ -97,7 +97,7 @@ Ventaja potencial del merge: combinar tres estilos de alineacion distintos en un
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ForSureTesterSim/Llama-3.1-8B-DELLA_Ext_B
+- Modelo en Hugging Face: https://huggingface.co/ForSureTesterSim/Llama-3.1-8B-DELLA_Ext_B
 - mergekit (herramienta de fusion): https://github.com/cg123/mergekit
 - Articulo DELLA: https://arxiv.org/abs/2406.11617
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B

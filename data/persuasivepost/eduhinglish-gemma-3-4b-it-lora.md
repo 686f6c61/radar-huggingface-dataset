@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EduHinglish Gemma-3-4B LoRA | ~4B (base) + adaptador r=16 | 128k | NCERT 9-10 en hinglish con grounding | Gemma Terms of Use | HuggingFace (adaptador PEFT) |
-| google/gemma-3-4b-it | ~4B | 128k | Propósito general, multilingüe | Gemma Terms of Use | HuggingFace |
-| Modelos instructivos de ~3-8B de propósito general | 3-8B | Variable | Propósito general | Variable | HuggingFace |
+| EduHinglish Gemma-3-4B LoRA | ~4B (base) + adaptador r=16 | 128k | NCERT 9-10 en hinglish con grounding | Gemma Terms of Use | Hugging Face (adaptador PEFT) |
+| google/gemma-3-4b-it | ~4B | 128k | Propósito general, multilingüe | Gemma Terms of Use | Hugging Face |
+| Modelos instructivos de ~3-8B de propósito general | 3-8B | Variable | Propósito general | Variable | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre este adaptador y alternativas, por lo que la comparativa se limita a parámetros, contexto, licencia y disponibilidad.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo entre este adaptador y alterna
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/persuasivepost/eduhinglish-gemma-3-4b-it-lora
+- Hugging Face: https://huggingface.co/persuasivepost/eduhinglish-gemma-3-4b-it-lora
 - Modelo base: https://huggingface.co/google/gemma-3-4b-it
 - Gemma Terms of Use: https://ai.google.dev/gemma/terms
 - PEFT (librería): https://github.com/huggingface/peft

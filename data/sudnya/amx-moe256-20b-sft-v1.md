@@ -69,9 +69,9 @@ Rendimiento del motor (no del modelo): en un nucleo Sapphire Rapids con R=8, 2 s
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| amx-moe256-20b-sft-v1 | ~480M | 16.384 | MoE hibrido block-diffusion | no disponible | HuggingFace |
-| gdiamos/amx-moe256-20b (base) | ~480M | 16.384 | MoE hibrido block-diffusion | no disponible | HuggingFace |
-| nvidia/diffusiongemma-26B-A4B-it-NVFP4 (profesor) | 26B (A4B) | no disponible | MoE diffusion | no disponible | HuggingFace |
+| amx-moe256-20b-sft-v1 | ~480M | 16.384 | MoE hibrido block-diffusion | no disponible | Hugging Face |
+| gdiamos/amx-moe256-20b (base) | ~480M | 16.384 | MoE hibrido block-diffusion | no disponible | Hugging Face |
+| nvidia/diffusiongemma-26B-A4B-it-NVFP4 (profesor) | 26B (A4B) | no disponible | MoE diffusion | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparables entre estos modelos en la informacion proporcionada; la comparativa se limita a parametros, contexto y disponibilidad.
 
@@ -88,6 +88,6 @@ No se dispone de datos de rendimiento comparables entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sudnya/amx-moe256-20b-sft-v1
+- Modelo en Hugging Face: https://huggingface.co/Sudnya/amx-moe256-20b-sft-v1
 - Modelo base: https://huggingface.co/gdiamos/amx-moe256-20b
 - Modelo profesor: https://huggingface.co/nvidia/diffusiongemma-26B-A4B-it-NVFP4

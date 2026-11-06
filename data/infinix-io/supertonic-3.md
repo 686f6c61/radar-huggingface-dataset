@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Supertonic 3 es un sistema de síntesis de voz (text-to-speech) ligero diseñado para inferencia local mediante ONNX Runtime, sin necesidad de llamadas a la nube durante la síntesis. Lo desarrolla Supertone (el identificador del repositorio en HuggingFace es Infinix-io) y se distribuye como pesos abiertos bajo licencia OpenRAIL. La versión 3 amplía el soporte lingüístico de las 5 lenguas de Supertonic 2 a 31 idiomas, mejora la estabilidad de lectura (menos fallos de repetición y omisión, especialmente en enunciados cortos y largos) y aumenta la similitud de hablante en el conjunto de lenguas compartidas.
+Supertonic 3 es un sistema de síntesis de voz (text-to-speech) ligero diseñado para inferencia local mediante ONNX Runtime, sin necesidad de llamadas a la nube durante la síntesis. Lo desarrolla Supertone (el identificador del repositorio en Hugging Face es Infinix-io) y se distribuye como pesos abiertos bajo licencia OpenRAIL. La versión 3 amplía el soporte lingüístico de las 5 lenguas de Supertonic 2 a 31 idiomas, mejora la estabilidad de lectura (menos fallos de repetición y omisión, especialmente en enunciados cortos y largos) y aumenta la similitud de hablante en el conjunto de lenguas compartidas.
 
 El modelo resuelve el problema de la síntesis de voz en dispositivos con recursos limitados: el repositorio ocupa aproximadamente 0,4 GB, lo que permite ejecutarlo en hardware de consumo y en entornos de edge computing. Se integra mediante un SDK de Python (`pip install supertonic`) que descarga automáticamente los activos del modelo desde Hugging Face en la primera ejecución. Incluye estilos de voz predefinidos para inferencia local inmediata y admite etiquetas de expresión simples como `<laugh>`, `<breath>` y `<sigh>`.
 

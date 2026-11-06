@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ClinicalJev-9B-v0.1-preview es un modelo de 9.000 millones de parametros orientado a clasificacion clinica local, publicado por el usuario xinyuzhou en HuggingFace. No es un modelo generativo al uso: dado un texto de estado ("state"), una pregunta en el campo `instructions` y un conjunto de candidatos o una rubrica predefinida, devuelve una eleccion y una distribucion de probabilidad sobre los candidatos. La inferencia se realiza leyendo los logits del siguiente token en una posicion concreta y normalizando unicamente las etiquetas permitidas, sin generar completacion de texto.
+ClinicalJev-9B-v0.1-preview es un modelo de 9.000 millones de parametros orientado a clasificacion clinica local, publicado por el usuario xinyuzhou en Hugging Face. No es un modelo generativo al uso: dado un texto de estado ("state"), una pregunta en el campo `instructions` y un conjunto de candidatos o una rubrica predefinida, devuelve una eleccion y una distribucion de probabilidad sobre los candidatos. La inferencia se realiza leyendo los logits del siguiente token en una posicion concreta y normalizando unicamente las etiquetas permitidas, sin generar completacion de texto.
 
 El modelo parte de un backbone Qwen y se presenta como version preview v0.1, con entrenamiento limitado a ingles y chino simplificado. Soporta tres primitivas de tarea: `Choice` (eleccion entre candidatos nombrados), `Score` (puntuacion ordinal sobre una rubrica ordenada) y `Noul` (estimacion de verdad de una proposicion si/no). Su relevancia para desarrollo e investigacion radica en que ofrece una interfaz determinista y local para tareas de anotacion y fenotipado clinico, con salidas probabilisticas calibradas por etiqueta en lugar de texto libre.
 
@@ -70,7 +70,7 @@ No se han publicado resultados numericos de benchmarks en la informacion disponi
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Enfoque |
 |---|---|---|---|---|---|
-| ClinicalJev-9B-v0.1-preview | 9B | no disponible | no disponible | HuggingFace | Clasificacion clinica por logits (Choice, Score, Noul) |
+| ClinicalJev-9B-v0.1-preview | 9B | no disponible | no disponible | Hugging Face | Clasificacion clinica por logits (Choice, Score, Noul) |
 | Jev 1.13.0 | no disponible | no disponible | no disponible | no disponible | Referencia de comparacion citada en la model card |
 | Modelos medicos generativos de tamano similar | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparativos en la informacion proporcionada |
 
@@ -84,14 +84,14 @@ No se dispone de datos numericos ni de especificaciones de los modelos alternati
 - Riesgo de asignacion erronea de etiquetas: aunque la salida se restringe al conjunto de candidatos y no puede generar texto fuera de las etiquetas, si puede asignar una probabilidad elevada a una etiqueta incorrecta, especialmente con rubricas ambiguas o mal redactadas.
 - Sensibilidad al orden: el propio autor advierte que el orden de los candidatos y de la rubrica importa, lo que introduce variabilidad en los resultados segun como se formulen las preguntas.
 - Sin datos de sesgos publicados: no se documentan evaluaciones de sesgo demografico, de subgrupos ni de equidad clinica.
-- Metadatos de inferencia: la model card marca `inference: false`, de modo que no esta habilitado para inferencia alojada en HuggingFace.
+- Metadatos de inferencia: la model card marca `inference: false`, de modo que no esta habilitado para inferencia alojada en Hugging Face.
 - Contexto maximo no documentado: se desconoce la longitud maxima de entrada soportada, lo que dificulta planificar el tratamiento de notas clinicas largas.
 - Adopcion nula: cero descargas y cero "me gusta" en el momento de la consulta, sin validacion por parte de la comunidad.
 - Fechas de publicacion en 2026 en los metadatos, lo que resulta inconsistente con el estado actual y debe tratarse con cautela.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xinyuzhou/ClinicalJev-9B-v0.1-preview
+- Modelo en Hugging Face: https://huggingface.co/xinyuzhou/ClinicalJev-9B-v0.1-preview
 - Repositorio de referencia citado en la model card: https://github.com/xzhou-code/ClinicalJev
 - Documentacion de la primitiva Choice: https://docs.typesafe.ai/primitives/choice
 - Documentacion de la primitiva Score: https://docs.typesafe.ai/primitives/score

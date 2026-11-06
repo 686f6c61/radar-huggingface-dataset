@@ -78,7 +78,7 @@ No hay datos publicados de tasa de exito en tareas de robotica reales ni compara
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | episod/tt-openvla | 7B en el backbone de lenguaje | no disponible | PCC >= 0,995 por etapa; sin benchmark de tareas | MIT en el codigo del port; pesos sujetos a Llama Community License | Model card sin pesos propios; codigo en GitHub |
-| openvla/openvla-7b | 7B | no disponible | no disponible | pesos sujetos a Llama Community License | Checkpoint original en HuggingFace |
+| openvla/openvla-7b | 7B | no disponible | no disponible | pesos sujetos a Llama Community License | Checkpoint original en Hugging Face |
 | Otros VLA comparables (OpenVLA-OFT, RT-2, Octo) | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 
 La comparativa mas util es contra el propio checkpoint base: tt-openvla no introduce pesos nuevos ni cambios de licencia, sino una implementacion de ejecucion alternativa orientada a hardware Tenstorrent. No hay datos en la informacion proporcionada que permitan comparar rendimiento de tareas con otros VLA.
@@ -98,7 +98,7 @@ La comparativa mas util es contra el propio checkpoint base: tt-openvla no intro
 
 ## Enlaces
 
-- Model card en HuggingFace: https://huggingface.co/episod/tt-openvla
+- Model card en Hugging Face: https://huggingface.co/episod/tt-openvla
 - Repositorio del port (codigo, tests y demo): https://github.com/tsingletaryTT/tt-openvla
 - Proyecto OpenVLA: https://github.com/openvla/openvla
 - Checkpoint base OpenVLA-7B: https://huggingface.co/openvla/openvla-7b

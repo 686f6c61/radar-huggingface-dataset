@@ -2,7 +2,7 @@
 
 ## Resumen
 
-xamiuz1.0 es un ajuste fino (finetune) del modelo Meta Llama 3.1 8B Instruct, publicado por el usuario xamiuz en HuggingFace. Se ha entrenado partiendo de la versión cuantizada en 4 bits de Unsloth (`unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit`) y utilizando la librería Unsloth, que según el autor permite un entrenamiento "2x más rápido" que el flujo estándar. El modelo se distribuye con licencia Apache 2.0 y está etiquetado únicamente para inglés.
+xamiuz1.0 es un ajuste fino (finetune) del modelo Meta Llama 3.1 8B Instruct, publicado por el usuario xamiuz en Hugging Face. Se ha entrenado partiendo de la versión cuantizada en 4 bits de Unsloth (`unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit`) y utilizando la librería Unsloth, que según el autor permite un entrenamiento "2x más rápido" que el flujo estándar. El modelo se distribuye con licencia Apache 2.0 y está etiquetado únicamente para inglés.
 
 La relevancia de este modelo es limitada: se trata de un finetune comunitario sin model card descriptiva, sin datos sobre el dataset de entrenamiento, sin benchmarks publicados y con cero descargas en el momento de la consulta. No aporta innovaciones arquitectónicas respecto a Llama 3.1 8B; hereda su arquitectura transformer decoder-only y su ventana de contexto de 128 000 tokens, pero no hay evidencia de que el ajuste fino preserve o mejore dichas capacidades.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| xamiuz1.0 | 8B | 128k (heredado) | Apache 2.0 | HuggingFace | Finetune sin documentar ni benchmarks |
-| Meta Llama 3.1 8B Instruct | 8B | 128k | Llama 3.1 Community License | HuggingFace, Meta | Modelo base oficial, con benchmarks publicados |
-| Mistral 7B Instruct | 7,3B | 32k | Apache 2.0 | HuggingFace | Alternativa permisiva con buen rendimiento en inglés |
-| Qwen2.5 7B Instruct | 7,6B | 128k | Apache 2.0 | HuggingFace, Alibaba | Multilingüe y con benchmarks publicados |
+| xamiuz1.0 | 8B | 128k (heredado) | Apache 2.0 | Hugging Face | Finetune sin documentar ni benchmarks |
+| Meta Llama 3.1 8B Instruct | 8B | 128k | Llama 3.1 Community License | Hugging Face, Meta | Modelo base oficial, con benchmarks publicados |
+| Mistral 7B Instruct | 7,3B | 32k | Apache 2.0 | Hugging Face | Alternativa permisiva con buen rendimiento en inglés |
+| Qwen2.5 7B Instruct | 7,6B | 128k | Apache 2.0 | Hugging Face, Alibaba | Multilingüe y con benchmarks publicados |
 
 ## Limitaciones y advertencias
 
@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/xamiuz/xamiuz1.0)
+- [Modelo en Hugging Face](https://huggingface.co/xamiuz/xamiuz1.0)
 - [Modelo base: unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit](https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit)
 - [Repositorio de Unsloth](https://github.com/unslothai/unsloth)
 - [Modelo oficial Meta Llama 3.1 8B Instruct](https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct)

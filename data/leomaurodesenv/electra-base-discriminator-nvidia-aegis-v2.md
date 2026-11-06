@@ -1,7 +1,7 @@
 # leomaurodesenv/electra-base-discriminator-nvidia-aegis-v2
 
 ## Resumen
-`leomaurodesenv/electra-base-discriminator-nvidia-aegis-v2` es un modelo de clasificación de texto obtenido por ajuste fino (*fine-tuning*) del encoder `google/electra-base-discriminator`. Lo publica el usuario de HuggingFace `leomaurodesenv` y se distribuye bajo licencia Apache 2.0. No se trata de un modelo generativo: es un clasificador de secuencias que devuelve una etiqueta (o distribución de etiquetas) para un texto de entrada.
+`leomaurodesenv/electra-base-discriminator-nvidia-aegis-v2` es un modelo de clasificación de texto obtenido por ajuste fino (*fine-tuning*) del encoder `google/electra-base-discriminator`. Lo publica el usuario de Hugging Face `leomaurodesenv` y se distribuye bajo licencia Apache 2.0. No se trata de un modelo generativo: es un clasificador de secuencias que devuelve una etiqueta (o distribución de etiquetas) para un texto de entrada.
 
 El modelo parte de la arquitectura ELECTRA, un transformer encoder bidireccional de aproximadamente 110 millones de parámetros (109.483.778 según los pesos en formato safetensors), preentrenado con el objetivo de *replaced token detection* en lugar del enmascaramiento clásico de tokens. Sobre esa base se ha realizado un ajuste supervisado con `Trainer` de Transformers durante 10 épocas, con un tamaño de lote efectivo de 16 y una tasa de aprendizaje de 2e-05.
 
@@ -88,11 +88,11 @@ No hay datos de benchmarks publicados para este checkpoint, por lo que la compar
 
 | Modelo | Parametros | Contexto | Licencia | Tarea | Disponibilidad |
 |---|---|---|---|---|---|
-| electra-base-discriminator-nvidia-aegis-v2 | 109,5 M | 512 tokens | Apache 2.0 | Clasificación de texto (clases no documentadas) | HuggingFace, 0 descargas |
-| google/electra-base-discriminator | aprox. 110 M | 512 tokens | Apache 2.0 | Encoder base (MLM/RTP), requiere ajuste | HuggingFace, ampliamente usado |
-| google-bert/bert-base-uncased | aprox. 110 M | 512 tokens | Apache 2.0 | Encoder base / clasificación tras ajuste | HuggingFace, muy extendido |
-| distilbert/distilbert-base-uncased | aprox. 66 M | 512 tokens | Apache 2.0 | Encoder base / clasificación tras ajuste | HuggingFace, muy extendido |
-| FacebookAI/roberta-base | aprox. 125 M | 514 tokens | MIT | Encoder base / clasificación tras ajuste | HuggingFace, muy extendido |
+| electra-base-discriminator-nvidia-aegis-v2 | 109,5 M | 512 tokens | Apache 2.0 | Clasificación de texto (clases no documentadas) | Hugging Face, 0 descargas |
+| google/electra-base-discriminator | aprox. 110 M | 512 tokens | Apache 2.0 | Encoder base (MLM/RTP), requiere ajuste | Hugging Face, ampliamente usado |
+| google-bert/bert-base-uncased | aprox. 110 M | 512 tokens | Apache 2.0 | Encoder base / clasificación tras ajuste | Hugging Face, muy extendido |
+| distilbert/distilbert-base-uncased | aprox. 66 M | 512 tokens | Apache 2.0 | Encoder base / clasificación tras ajuste | Hugging Face, muy extendido |
+| FacebookAI/roberta-base | aprox. 125 M | 514 tokens | MIT | Encoder base / clasificación tras ajuste | Hugging Face, muy extendido |
 
 Rendimiento comparado: no disponible. El único dato objetivo es una exactitud de 0,8561 en un conjunto de validación propio no descrito, que no permite situar el modelo frente a estas alternativas.
 
@@ -111,7 +111,7 @@ Rendimiento comparado: no disponible. El único dato objetivo es una exactitud d
 - Se ha detectado en la búsqueda web un resultado sin relación alguna con el modelo (sitio para adultos); se descarta por no ser una fuente relevante ni fiable.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/leomaurodesenv/electra-base-discriminator-nvidia-aegis-v2
+- Modelo en Hugging Face: https://huggingface.co/leomaurodesenv/electra-base-discriminator-nvidia-aegis-v2
 - Modelo base: https://huggingface.co/google/electra-base-discriminator
 - Paper original de ELECTRA (Clark et al., 2020): https://arxiv.org/abs/2003.10555
 - Repositorio oficial de ELECTRA en GitHub: https://github.com/google-research/electra

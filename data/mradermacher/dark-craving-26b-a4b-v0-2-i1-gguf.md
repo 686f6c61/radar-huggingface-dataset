@@ -94,7 +94,7 @@ La comparación directa con alternativas de la misma categoría (fine-tunes NSFW
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/mradermacher/Dark-Craving-26B-A4B-v0.2-i1-GGUF
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/mradermacher/Dark-Craving-26B-A4B-v0.2-i1-GGUF
 - Repositorio de cuantizaciones estáticas: https://huggingface.co/mradermacher/Dark-Craving-26B-A4B-v0.2-GGUF
 - Modelo base original: https://huggingface.co/ReadyArt/Dark-Craving-26B-A4B-v0.2
 - Página de overview del autor para este modelo: https://hf.tst.eu/model#Dark-Craving-26B-A4B-v0.2-i1-GGUF

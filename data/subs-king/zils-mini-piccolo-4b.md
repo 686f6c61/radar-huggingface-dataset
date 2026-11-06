@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Zils d3-mini soup body: Piccolo-4B es un reempaquetado del modelo agentscope-ai/Piccolo-4B, publicado por el usuario subs-king en HuggingFace. No se trata de un modelo entrenado desde cero ni de un fine-tuning: los pesos del lenguaje son exactamente los del modelo original, sin modificar. El cambio introducido afecta únicamente a los nombres de los tensores y a la distribución de los shards, para adaptarlos al formato que exige el "cuerpo" (body) del pool d3-mini de la subred Zils (Bittensor SN127).
+Zils d3-mini soup body: Piccolo-4B es un reempaquetado del modelo agentscope-ai/Piccolo-4B, publicado por el usuario subs-king en Hugging Face. No se trata de un modelo entrenado desde cero ni de un fine-tuning: los pesos del lenguaje son exactamente los del modelo original, sin modificar. El cambio introducido afecta únicamente a los nombres de los tensores y a la distribución de los shards, para adaptarlos al formato que exige el "cuerpo" (body) del pool d3-mini de la subred Zils (Bittensor SN127).
 
 El modelo cuenta con 4.539.265.536 parámetros (aproximadamente 4,5 mil millones) almacenados en safetensors, con un tamaño de repositorio de 9,1 GB. La licencia es Apache 2.0, heredada del modelo base, y los tensores `lm_head` y `mtp` no están incluidos en este reempaquetado. El pipeline no está declarado y no se especifican idiomas soportados en la información disponible.
 
@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/subs-king/zils-mini-piccolo-4b
+- Repositorio Hugging Face: https://huggingface.co/subs-king/zils-mini-piccolo-4b
 - Modelo base: https://huggingface.co/agentscope-ai/Piccolo-4B
 - Revisión del modelo base referenciada: `35f5e464ef884d8720b53d12c7f8aaf5497a3644`
 - Subnet Zils (Bittensor SN127): no se proporciona enlace en la información disponible.

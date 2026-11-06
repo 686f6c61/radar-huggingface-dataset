@@ -82,7 +82,7 @@ No se dispone de información suficiente para comparar con otros modelos de la m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/darioooooo0o/Spark-X2.5-1.7B-Abliterated-GGUF
+- Modelo en Hugging Face: https://huggingface.co/darioooooo0o/Spark-X2.5-1.7B-Abliterated-GGUF
 - Repo hermano (model card base y notas de arquitectura): https://huggingface.co/darioooooo0o/Spark-X2.5-1.7B-GGUF
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.5-1.7B
 - Repositorio GitHub de XHToken/Spark-X2.5: https://github.com/XHToken/Spark-X2.5

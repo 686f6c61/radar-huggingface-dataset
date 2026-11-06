@@ -21,7 +21,7 @@ Su relevancia ahora es de infraestructura: permite conservar la precision QAD de
 | Licencia | `nvidia-open-model-agreement` (tag `license:other`) |
 | Formato de pesos | safetensors (206 shards); no se publican GGUF ni otros formatos |
 | Tamano en disco | 126 GiB (`main`) / 106 GiB (rama `nvfp4-ple`) |
-| Repo en HuggingFace | 164,1 GB |
+| Repo en Hugging Face | 164,1 GB |
 | Vision | si (`pipeline_tag: image-text-to-text`) |
 | Descargas / likes | 0 / 0 |
 
@@ -118,7 +118,7 @@ El checkpoint base de NVIDIA no puede ejecutarse en sm_70 ni en vLLM estandar se
 
 ## Enlaces
 
-- HuggingFace (repositorio del modelo): https://huggingface.co/Israeli-AI/Qwen3.8-Flash-Next-NVFP4-QAD-VOLTA
+- Hugging Face (repositorio del modelo): https://huggingface.co/Israeli-AI/Qwen3.8-Flash-Next-NVFP4-QAD-VOLTA
 - Rama `nvfp4-ple`: https://huggingface.co/Israeli-AI/Qwen3.8-Flash-Next-NVFP4-QAD-VOLTA/tree/nvfp4-ple
 - Modelo base: https://huggingface.co/nvidia/Qwen3.8-Flash-Next-FP4-Local
 - Checkpoint PTQ de referencia: https://huggingface.co/RadixArk/Qwen3.8-Flash-Next-NVFP4

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Cloreva-X1-0.7B es un modelo de generación de texto publicado en HuggingFace por el usuario Zulkiflii, con 710.318.906 parámetros (aproximadamente 0,71 mil millones) según los pesos en formato safetensors. El repositorio ocupa 1,4 GB y está etiquetado con la librería transformers, el pipeline text-generation y los tags `conversational`, `custom_code` y `resonet`. La presencia del tag `custom_code` y de una arquitectura denominada `resonet` indica que el modelo requiere cargar código remoto del repositorio, pero la model card no documenta en ningún punto en qué consiste dicha arquitectura.
+Cloreva-X1-0.7B es un modelo de generación de texto publicado en Hugging Face por el usuario Zulkiflii, con 710.318.906 parámetros (aproximadamente 0,71 mil millones) según los pesos en formato safetensors. El repositorio ocupa 1,4 GB y está etiquetado con la librería transformers, el pipeline text-generation y los tags `conversational`, `custom_code` y `resonet`. La presencia del tag `custom_code` y de una arquitectura denominada `resonet` indica que el modelo requiere cargar código remoto del repositorio, pero la model card no documenta en ningún punto en qué consiste dicha arquitectura.
 
-La información publicada por el autor es la plantilla automática de HuggingFace sin rellenar: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros, evaluación, infraestructura de cómputo) aparecen como "[More Information Needed]". No hay papers, blogs ni demos asociados, y el repositorio registra 0 descargas y 0 likes en el momento de la consulta. Esto significa que la ficha solo puede construirse a partir de los metadatos estructurales del repositorio, y que cualquier afirmación sobre capacidades, entrenamiento o rendimiento sería especulativa.
+La información publicada por el autor es la plantilla automática de Hugging Face sin rellenar: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros, evaluación, infraestructura de cómputo) aparecen como "[More Information Needed]". No hay papers, blogs ni demos asociados, y el repositorio registra 0 descargas y 0 likes en el momento de la consulta. Esto significa que la ficha solo puede construirse a partir de los metadatos estructurales del repositorio, y que cualquier afirmación sobre capacidades, entrenamiento o rendimiento sería especulativa.
 
 Por tanto, el interés actual de este modelo es limitado y fundamentalmente exploratorio: se trata de un checkpoint de tamaño reducido con una arquitectura propietaria no documentada, lo que impide evaluar su calidad, sus sesgos o su idoneidad para producción. Su relevancia potencial reside únicamente en el hecho de que alguien haya implementado y publicado un modelo con arquitectura propia bajo el nombre `resonet`, un diseño del que no se ha encontrado descripción pública en la búsqueda realizada.
 
@@ -22,7 +22,7 @@ Por tanto, el interés actual de este modelo es limitado y fundamentalmente expl
 | Libreria | transformers |
 | Pipeline | text-generation |
 | Autor | Zulkiflii |
-| Fecha de creacion del repositorio | 2026-09-13 (segun los metadatos de HuggingFace) |
+| Fecha de creacion del repositorio | 2026-09-13 (segun los metadatos de Hugging Face) |
 | Ultima actualizacion | 2026-09-13 |
 | Descargas / likes | 0 / 0 |
 | Requiere codigo remoto | probablemente si (`custom_code`), no confirmado por el autor |
@@ -31,7 +31,7 @@ Por tanto, el interés actual de este modelo es limitado y fundamentalmente expl
 
 No hay información publicada sobre la arquitectura interna del modelo. Los únicos indicios son los tags del repositorio: `resonet` sugiere el nombre de un diseño de red propio del autor y `custom_code` implica que la implementación no está cubierta por las clases estándar de transformers, por lo que la carga exigiría `trust_remote_code=True`. No se especifica si se trata de un transformer convencional, una variante con atención lineal, un modelo de espacio de estados (SSM) o un híbrido. Tampoco se indica el número de capas, la dimensión oculta, el número de cabezas de atención ni si emplea mezcla de expertos (no hay evidencia de que sea MoE).
 
-Respecto al entrenamiento, la model card no aporta ningún dato: no se declara el número de tokens, la composición del dataset, el uso de RLHF, DPO o cualquier otra técnica de alineación, ni los hiperparámetros (régimen de precisión, tasa de aprendizaje, hardware empleado). El tag `arxiv:1910.09700` del repositorio no corresponde a un paper del modelo, sino a la referencia de Lacoste et al. sobre estimación de emisiones de carbono que aparece citada en la plantilla automática de HuggingFace. En consecuencia, no es posible describir ninguna innovación técnica concreta más allá de la existencia de un módulo de código personalizado.
+Respecto al entrenamiento, la model card no aporta ningún dato: no se declara el número de tokens, la composición del dataset, el uso de RLHF, DPO o cualquier otra técnica de alineación, ni los hiperparámetros (régimen de precisión, tasa de aprendizaje, hardware empleado). El tag `arxiv:1910.09700` del repositorio no corresponde a un paper del modelo, sino a la referencia de Lacoste et al. sobre estimación de emisiones de carbono que aparece citada en la plantilla automática de Hugging Face. En consecuencia, no es posible describir ninguna innovación técnica concreta más allá de la existencia de un módulo de código personalizado.
 
 ## Capacidades
 
@@ -80,7 +80,7 @@ La comparación es únicamente estructural, ya que no existen benchmarks de Clor
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Cloreva-X1-0.7B | 710.318.906 | no disponible | no disponible | Repositorio HuggingFace sin documentacion, 0 descargas |
+| Cloreva-X1-0.7B | 710.318.906 | no disponible | no disponible | Repositorio Hugging Face sin documentacion, 0 descargas |
 | Qwen2.5-0.5B | ~0,49 B | 32.768 tokens | Apache 2.0 | Ampliamente disponible, cuantizaciones GGUF oficiales y de terceros |
 | Llama 3.2 1B | ~1,24 B | 128.000 tokens | Llama 3.2 Community License | Ampliamente disponible, ecosistema extenso |
 | TinyLlama-1.1B | ~1,1 B | 2.048 tokens | Apache 2.0 | Muy extendido, multiples cuantizaciones |
@@ -89,7 +89,7 @@ Diferencias clave: los tres modelos de referencia tienen licencia explícita, co
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentación: la model card es la plantilla automática de HuggingFace sin rellenar, por lo que se desconocen datos de entrenamiento, composición del dataset, proceso de alineación e hiperparámetros.
+- Ausencia total de documentación: la model card es la plantilla automática de Hugging Face sin rellenar, por lo que se desconocen datos de entrenamiento, composición del dataset, proceso de alineación e hiperparámetros.
 - Licencia no especificada: sin licencia declarada no hay autorización explícita de uso comercial, modificación ni redistribución; en muchas jurisdicciones esto implica reserva de derechos por defecto.
 - Idiomas no declarados: no se puede asumir soporte de castellano ni de ningún otro idioma.
 - Contexto desconocido: sin saber la ventana máxima, cualquier diseño de aplicación con entradas largas es especulativo.
@@ -103,8 +103,8 @@ Diferencias clave: los tres modelos de referencia tienen licencia explícita, co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Zulkiflii/Cloreva-X1-0.7B
-- Referencia del tag `arxiv:1910.09700` (paper sobre estimación de emisiones citado en la plantilla de HuggingFace, no es el paper del modelo): https://arxiv.org/abs/1910.09700
+- Modelo en Hugging Face: https://huggingface.co/Zulkiflii/Cloreva-X1-0.7B
+- Referencia del tag `arxiv:1910.09700` (paper sobre estimación de emisiones citado en la plantilla de Hugging Face, no es el paper del modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental en machine learning, enlazada desde la model card: https://mlco2.github.io/impact
 - Repositorio, paper y demo del modelo: no disponible; no se han encontrado enlaces a documentación técnica, paper o demostración.
 - La búsqueda web realizada no ha devuelto ningún resultado relacionado con el modelo, su autor ni la arquitectura `resonet`; los resultados obtenidos corresponden a un profesor de química sin relación con el proyecto.

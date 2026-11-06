@@ -100,7 +100,7 @@ No se dispone de información sobre otros modelos comparables de detección de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/johnlockejrr/regnetx-8gf-polyline-baseline-stage0
+- Modelo en Hugging Face: https://huggingface.co/johnlockejrr/regnetx-8gf-polyline-baseline-stage0
 - Repositorio del ecosistema `regnetx-det`: https://github.com/johnlockejrr/regnetx-det
 - Checkpoint hermano (fine-tune hebreo/samaritano): https://huggingface.co/johnlockejrr/regnetx-8gf-polyline-hebrew-samaritan
 - Checkpoint profesor D-FINE Stage-0: https://huggingface.co/johnlockejrr/dfine-det-large-baseline-stage0

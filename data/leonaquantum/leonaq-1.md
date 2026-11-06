@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks estándar de razonamiento o código
 | Modelo | Parametros | Contexto | Rendimiento medido | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | LeonaQ-1 | 26,9B | No disponible | 48,15 tok/s en A100 80 GB; 94,38% SST-2 en cabeza auxiliar | Apache 2.0 | Pesos empaquetados + GGUF con motor propio |
-| Qwen/Qwen3.8-27B (modelo base) | 27B (segun denominacion del autor) | No disponible en esta ficha | No disponible en esta ficha | No disponible en esta ficha | HuggingFace |
+| Qwen/Qwen3.8-27B (modelo base) | 27B (segun denominacion del autor) | No disponible en esta ficha | No disponible en esta ficha | No disponible en esta ficha | Hugging Face |
 | Otros modelos de ~27B cuantizados a 4 bits | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La comparación relevante es contra el propio modelo base: LeonaQ-1 conserva los pesos de Qwen3.8-27B congelados y añade correcciones entrenadas, reduciendo el payload a 10,27 GB. No se han publicado comparaciones de calidad (perplejidad, MMLU u otras) entre LeonaQ-1 y Qwen3.8-27B en la información disponible, y el propio autor advierte que no se ha establecido la paridad de calidad del GGUF con el modelo empaquetado original.
@@ -100,7 +100,7 @@ La comparación relevante es contra el propio modelo base: LeonaQ-1 conserva los
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LeonaQuantum/leonaq-1
+- Modelo en Hugging Face: https://huggingface.co/LeonaQuantum/leonaq-1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Instrucciones de ejecución en GPU NVIDIA (USAGE.md): https://huggingface.co/LeonaQuantum/leonaq-1/blob/main/USAGE.md
 - Ejecución en Mac, Metal y CPU (MAC.md): https://huggingface.co/LeonaQuantum/leonaq-1/blob/main/MAC.md

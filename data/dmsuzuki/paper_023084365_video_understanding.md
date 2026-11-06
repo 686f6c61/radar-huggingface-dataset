@@ -66,9 +66,9 @@ No disponible. Este repositorio no es un modelo de IA, por lo que no tiene senti
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dmsuzuki/paper_023084365_video_understanding
+- Repositorio en Hugging Face: https://huggingface.co/dmsuzuki/paper_023084365_video_understanding
 - Paper original referenciado (survey sobre video understanding con LLMs): https://arxiv.org/abs/2312.17432
 - Versión HTML del survey: https://arxiv.org/html/2312.17432v5
 - Repositorio GitHub con recursos relacionados: https://github.com/yunlong10/Awesome-LLMs-for-Video-Understanding
 - Publicación en IEEE (versión del survey): https://ieeexplore.ieee.org/abstract/document/10982110
-- Página del paper en HuggingFace: https://huggingface.co/papers/2312.17432
+- Página del paper en Hugging Face: https://huggingface.co/papers/2312.17432

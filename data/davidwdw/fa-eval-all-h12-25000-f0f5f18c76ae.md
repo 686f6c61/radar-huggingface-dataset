@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El artefacto publicado en HuggingFace con el identificador `davidwdw/fa-eval-all-h12-25000-f0f5f18c76ae` no es un modelo de lenguaje, sino un archivo de flota versionado ("versioned fleet archive") segun la propia model card del autor. La descripcion indica que contiene "episode JSON videos traces logs protocol scripts input receipt", es decir, artefactos de evaluacion (episodios en JSON, trazas, registros, scripts y recibos de entrada) generados a partir de una receta canonica identificada como `evaluations/2026-09-26_b1k_all_existing_queue`. El autor es el usuario `davidwdw` y el repositorio ocupa aproximadamente 0,2 GB.
+El artefacto publicado en Hugging Face con el identificador `davidwdw/fa-eval-all-h12-25000-f0f5f18c76ae` no es un modelo de lenguaje, sino un archivo de flota versionado ("versioned fleet archive") segun la propia model card del autor. La descripcion indica que contiene "episode JSON videos traces logs protocol scripts input receipt", es decir, artefactos de evaluacion (episodios en JSON, trazas, registros, scripts y recibos de entrada) generados a partir de una receta canonica identificada como `evaluations/2026-09-26_b1k_all_existing_queue`. El autor es el usuario `davidwdw` y el repositorio ocupa aproximadamente 0,2 GB.
 
 No se dispone de informacion sobre arquitectura, parametros, contexto, tokenizador ni pesos en ningun formato de inferencia. No hay pipeline declarado, ni licencia, ni idiomas soportados, ni datos de entrenamiento. Por tanto, esta ficha no puede describir capacidades de generacion de texto, razonamiento o codigo: el objeto documentado es un snapshot de resultados de evaluacion, no un checkpoint utilizable.
 
@@ -23,8 +23,8 @@ La relevancia de la ficha es, por tanto, metodologica: sirve para dejar constanc
 | Tamano del repositorio | 0,2 GB |
 | Pipeline declarado | no disponible |
 | Descargas / likes | 0 / 0 |
-| Fecha de creacion | 2026-09-30T18:52:18Z (segun metadatos de HuggingFace) |
-| Fecha de actualizacion | 2026-09-30T18:52:43Z (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-30T18:52:18Z (segun metadatos de Hugging Face) |
+| Fecha de actualizacion | 2026-09-30T18:52:43Z (segun metadatos de Hugging Face) |
 | Tags | region:us |
 
 ## Arquitectura y entrenamiento
@@ -74,7 +74,7 @@ No disponible. Este repositorio no es un modelo, por lo que no existe una catego
 - No es un modelo utilizable: no contiene pesos, tokenizador ni arquitectura; cualquier intento de cargarlo en un entorno de inferencia fallara.
 - Ausencia total de licencia declarada: no se puede asumir permiso de uso comercial, redistribucion ni modificacion. Ante la falta de licencia, debe contactarse con el autor antes de cualquier uso.
 - Idiomas no declarados: no hay informacion sobre el idioma de los artefactos ni de los logs internos.
-- Riesgo de interpretacion erronea: el nombre `fa-eval-all-h12-25000` y su presencia en HuggingFace pueden llevar a confundirlo con un checkpoint; conviene tratarlo como dataset o archivo de evaluacion.
+- Riesgo de interpretacion erronea: el nombre `fa-eval-all-h12-25000` y su presencia en Hugging Face pueden llevar a confundirlo con un checkpoint; conviene tratarlo como dataset o archivo de evaluacion.
 - Sesgos conocidos: no evaluables, al no existir un modelo generativo subyacente documentado ni datos sobre el contenido de los episodios.
 - Riesgo de alucinacion: no aplica a este artefacto; si se utiliza como fuente para un sistema generativo, cualquier conclusion extraida de los JSON o logs debera verificarse manualmente.
 - Dependencia de revision exacta: el autor advierte de que es un snapshot y no un espejo en vivo, por lo que referencias a rutas vivas pueden quedar obsoletas.
@@ -85,8 +85,8 @@ No disponible. Este repositorio no es un modelo, por lo que no existe una catego
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/davidwdw/fa-eval-all-h12-25000-f0f5f18c76ae
-- Model card del autor: incluida en la pagina de HuggingFace del repositorio (recipe canonica `evaluations/2026-09-26_b1k_all_existing_queue`)
+- Hugging Face: https://huggingface.co/davidwdw/fa-eval-all-h12-25000-f0f5f18c76ae
+- Model card del autor: incluida en la pagina de Hugging Face del repositorio (recipe canonica `evaluations/2026-09-26_b1k_all_existing_queue`)
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Demos: no disponible

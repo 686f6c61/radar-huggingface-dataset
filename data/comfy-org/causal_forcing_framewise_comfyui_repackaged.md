@@ -72,5 +72,5 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Comfy-Org/causal_forcing_framewise_ComfyUI_repackaged
+- Repositorio Hugging Face: https://huggingface.co/Comfy-Org/causal_forcing_framewise_ComfyUI_repackaged
 - Sitio oficial de ComfyUI: https://www.comfyui.org/ (no verificado en la información proporcionada)

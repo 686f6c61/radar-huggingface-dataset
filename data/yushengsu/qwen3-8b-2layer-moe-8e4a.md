@@ -83,7 +83,7 @@ La comparación con alternativas fuera de la familia del autor no está disponib
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yushengsu/Qwen3-8B-2layer-MoE-8E4A
+- Modelo en Hugging Face: https://huggingface.co/yushengsu/Qwen3-8B-2layer-MoE-8E4A
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Variante top-1: https://huggingface.co/yushengsu/qwen3-8b-dspark-moe-batch-wise-0.005-selection-bias-only-5epoch
 - Variante top-2: https://huggingface.co/yushengsu/qwen3-8b-dspark-moe-8expert-2activate-batch-wise-0.005-selection-bias-only-5epoch

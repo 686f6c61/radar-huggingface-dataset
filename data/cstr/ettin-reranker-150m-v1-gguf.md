@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparativo directo con estos modelos en l
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/cstr/ettin-reranker-150m-v1-GGUF
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/cstr/ettin-reranker-150m-v1-GGUF
 - Modelo base (safetensors): https://huggingface.co/cross-encoder/ettin-reranker-150m-v1
 - Leaderboard MTEB: https://mteb-leaderboard.hf.space/models/cross-encoder/ettin-reranker-150m-v1
 - Repositorio CrispEmbed: https://github.com/CrispStrobe/CrispEmbed

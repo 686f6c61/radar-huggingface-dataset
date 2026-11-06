@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `darshil16/stock-models` es un modelo alojado en HuggingFace por el usuario darshil16, con una etiqueta temática `region:us` que sugiere una orientación hacia datos o aplicaciones del mercado estadounidense. El nombre del repositorio apunta a un posible uso en el ámbito financiero o bursátil, pero no se proporciona ninguna descripción, documentación técnica ni metadatos adicionales en la ficha pública. El repositorio tiene un tamaño de 0,3 GB, lo que indica que contiene pesos de un modelo de tamaño pequeño o mediano, aunque no se especifica la arquitectura ni el formato de los archivos.
+El repositorio `darshil16/stock-models` es un modelo alojado en Hugging Face por el usuario darshil16, con una etiqueta temática `region:us` que sugiere una orientación hacia datos o aplicaciones del mercado estadounidense. El nombre del repositorio apunta a un posible uso en el ámbito financiero o bursátil, pero no se proporciona ninguna descripción, documentación técnica ni metadatos adicionales en la ficha pública. El repositorio tiene un tamaño de 0,3 GB, lo que indica que contiene pesos de un modelo de tamaño pequeño o mediano, aunque no se especifica la arquitectura ni el formato de los archivos.
 
-En el momento de la consulta, el modelo registra 0 descargas y 1 like, lo que sugiere que es un proyecto reciente o poco difundido. No se ha publicado información sobre el pipeline, la licencia, los idiomas soportados ni los detalles de entrenamiento. La falta de datos públicos limita cualquier evaluación técnica rigurosa, por lo que esta ficha se basa exclusivamente en la información disponible en HuggingFace y no debe interpretarse como una recomendación de uso en producción sin una verificación adicional por parte del desarrollador.
+En el momento de la consulta, el modelo registra 0 descargas y 1 like, lo que sugiere que es un proyecto reciente o poco difundido. No se ha publicado información sobre el pipeline, la licencia, los idiomas soportados ni los detalles de entrenamiento. La falta de datos públicos limita cualquier evaluación técnica rigurosa, por lo que esta ficha se basa exclusivamente en la información disponible en Hugging Face y no debe interpretarse como una recomendación de uso en producción sin una verificación adicional por parte del desarrollador.
 
 ## Especificaciones tecnicas
 
@@ -53,4 +53,4 @@ No disponible. No se conocen modelos comparables en la misma categoría debido a
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/darshil16/stock-models
+- Repositorio en Hugging Face: https://huggingface.co/darshil16/stock-models

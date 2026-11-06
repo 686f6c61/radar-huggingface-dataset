@@ -95,8 +95,8 @@ La informacion disponible no incluye comparaciones con otros modelos o adaptador
 
 | Modelo | Parametros | Contexto | ARC-Challenge (acc) | ARC-Easy (acc_norm) | PIQA (acc) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| dual-loop-qwen3.5-2b (con adaptador, gancho anclado) | 1,88 B congelados + adaptador no cuantificado | no disponible | 55,0 % | 77,5 % | 75,0 % | MIT | HuggingFace, transformers |
-| Qwen/Qwen3.5-2B (sin adaptador) | 1,88 B | no disponible | 50,0 % | 70,0 % | 70,0 % | no disponible en la informacion | HuggingFace |
+| dual-loop-qwen3.5-2b (con adaptador, gancho anclado) | 1,88 B congelados + adaptador no cuantificado | no disponible | 55,0 % | 77,5 % | 75,0 % | MIT | Hugging Face, transformers |
+| Qwen/Qwen3.5-2B (sin adaptador) | 1,88 B | no disponible | 50,0 % | 70,0 % | 70,0 % | no disponible en la informacion | Hugging Face |
 
 No se dispone de datos sobre otros adaptadores de razonamiento latente comparables, ni de resultados frente a modelos de tamano similar de otros fabricantes.
 
@@ -116,7 +116,7 @@ No se dispone de datos sobre otros adaptadores de razonamiento latente comparabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CH3NDev/dual-loop-qwen3.5-2b
+- Modelo en Hugging Face: https://huggingface.co/CH3NDev/dual-loop-qwen3.5-2b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Dataset de ajuste fino: https://huggingface.co/datasets/allenai/ai2_arc
 - Resultados de busqueda web: no se han encontrado enlaces relevantes sobre este modelo, su paper, repositorio o demos. Las busquedas devuelven unicamente articulos de prensa generalistas sin relacion con el modelo.

@@ -88,6 +88,6 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/voxor-ai/qwen3-asr-1.7b-coreml
+- Modelo en Hugging Face: https://huggingface.co/voxor-ai/qwen3-asr-1.7b-coreml
 - Modelo base: https://huggingface.co/Qwen/Qwen3-ASR-1.7B
 - No se han encontrado en la información disponible papers, blogs, repositorios ni demos adicionales.

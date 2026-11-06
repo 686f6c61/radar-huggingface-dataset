@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje publicado en HuggingFace por el usuario ASD1DSA21DSA bajo licencia MIT. La model card lo presenta como una actualización de una versión anterior con mejoras en razonamiento, reducción de alucinaciones y soporte de function calling, e incluye una tabla de benchmarks con puntuaciones en tareas de razonamiento matemático, lógico, generación de código, traducción y seguridad. Sin embargo, la información técnica disponible es extremadamente limitada: no se especifican parámetros, arquitectura concreta, longitud de contexto ni composición del dataset de entrenamiento.
+MyAwesomeModel es un modelo de lenguaje publicado en Hugging Face por el usuario ASD1DSA21DSA bajo licencia MIT. La model card lo presenta como una actualización de una versión anterior con mejoras en razonamiento, reducción de alucinaciones y soporte de function calling, e incluye una tabla de benchmarks con puntuaciones en tareas de razonamiento matemático, lógico, generación de código, traducción y seguridad. Sin embargo, la información técnica disponible es extremadamente limitada: no se especifican parámetros, arquitectura concreta, longitud de contexto ni composición del dataset de entrenamiento.
 
 El repositorio tiene un tamaño de 0.0 GB y cero descargas, lo que sugiere que los pesos no están realmente publicados o que el repositorio está vacío. La model card contiene referencias a imágenes (`figures/fig1.png`, `figures/fig3.png`) que no se pueden verificar y menciona un modelo denominado "MyAwesomeModel-Small" sin aportar detalles adicionales. Los benchmarks presentados usan nombres genéricos ("Model1", "Model2", "Model1-v2") que no permiten identificar los modelos de comparación.
 
@@ -12,7 +12,7 @@ La relevancia práctica de esta ficha es limitada: se trata de un modelo anuncia
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (la model card no la especifica; los tags de HuggingFace incluyen `bert`, lo que sugiere una base tipo encoder, pero no se confirma) |
+| Arquitectura | no disponible (la model card no la especifica; los tags de Hugging Face incluyen `bert`, lo que sugiere una base tipo encoder, pero no se confirma) |
 | Parametros totales | no disponible |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
@@ -23,7 +23,7 @@ La relevancia práctica de esta ficha es limitada: se trata de un modelo anuncia
 
 ## Arquitectura y entrenamiento
 
-La model card no describe la arquitectura del modelo. Los tags de HuggingFace incluyen `transformers`, `pytorch` y `bert`, y el pipeline declarado es `feature-extraction`, lo que apunta a un modelo basado en transformer con posible uso como extractor de representaciones, pero no se aporta confirmación ni detalles sobre número de capas, dimensión oculta, mecanismos de atención o tokenizador.
+La model card no describe la arquitectura del modelo. Los tags de Hugging Face incluyen `transformers`, `pytorch` y `bert`, y el pipeline declarado es `feature-extraction`, lo que apunta a un modelo basado en transformer con posible uso como extractor de representaciones, pero no se aporta confirmación ni detalles sobre número de capas, dimensión oculta, mecanismos de atención o tokenizador.
 
 Respecto al entrenamiento, la model card menciona de forma genérica "increased computational resources" y "algorithmic optimization mechanisms during post-training", así como una mejora en la profundidad de razonamiento (de 12K a 23K tokens por pregunta en AIME 2025). No se especifica el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron RLHF, DPO u otras técnicas de alineación. Tampoco se detalla ninguna innovación técnica concreta (atención lineal, decodificación especulativa, etc.).
 
@@ -104,7 +104,7 @@ No es posible establecer una comparativa rigurosa porque la model card no identi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ASD1DSA21DSA/my-awesome-model
+- Hugging Face: https://huggingface.co/ASD1DSA21DSA/my-awesome-model
 - Repositorio de código: no disponible (la model card lo menciona pero no lo enlaza)
 - Paper: no disponible
 - Blog o web oficial: no disponible (la model card menciona una "official website" sin enlace)

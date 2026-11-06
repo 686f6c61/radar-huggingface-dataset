@@ -83,7 +83,7 @@ La comparacion disponible proviene del propio autor y se limita a la tarea de tr
 
 | Modelo | Parametros | Contexto | Aciertos (200 mensajes) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Distil-Qwen3.5-0.8B-Invoice-Triage | 752 M | no disponible | 200 | apache-2.0 | Pesos abiertos en HuggingFace (safetensors y GGUF), autoalojable |
+| Distil-Qwen3.5-0.8B-Invoice-Triage | 752 M | no disponible | 200 | apache-2.0 | Pesos abiertos en Hugging Face (safetensors y GGUF), autoalojable |
 | Qwen3.5-0.8B sin ajustar | no disponible | no disponible | LLM-as-a-judge 0.70 | no disponible | Modelo base publico |
 | Jev (`typesafe-ai/jev`) | no disponible | no disponible | 200 | no disponible | Servicio; el autor lo presenta como la opcion gestionada frente a la que este modelo es la alternativa "do it yourself" |
 | GPT-5.6 Luna | no disponible | no disponible | 200 | propietaria | API |
@@ -107,7 +107,7 @@ Ademas, no se han encontrado en la busqueda web modelos comparables adicionales 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/distil-labs/distil-qwen3.5-0.8b-invoice-triage
+- Modelo en Hugging Face: https://huggingface.co/distil-labs/distil-qwen3.5-0.8b-invoice-triage
 - Build GGUF para llama.cpp: https://huggingface.co/distil-labs/distil-qwen3.5-0.8b-invoice-triage-gguf
 - Repositorio del pipeline de facturas (evaluacion, datos semilla, job description y configuracion): https://github.com/distil-labs/invoice-processing-pipeline
 - Configuracion de entrenamiento del triage: https://github.com/distil-labs/invoice-processing-pipeline/tree/main/training/triage
@@ -115,7 +115,7 @@ Ademas, no se han encontrado en la busqueda web modelos comparables adicionales 
 - Alternativa gestionada Jev: https://huggingface.co/typesafe-ai/jev
 - Plataforma del autor: https://www.distillabs.ai
 - GitHub del autor: https://github.com/distil-labs
-- HuggingFace del autor: https://huggingface.co/distil-labs
+- Hugging Face del autor: https://huggingface.co/distil-labs
 - LinkedIn: https://www.linkedin.com/company/distil-labs/
 - Slack de la comunidad: https://distil-labs-community.slack.com/join/shared_invite/zt-36zqj87le-i3quWUn2bjErRq22xoE58g
 - X: https://x.com/distil_labs

@@ -89,8 +89,8 @@ El autor indica que las mediciones de prefill y decode, con hardware, ajustes y 
 
 | Modelo | Parametros | Formato / cuantizacion | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|---|
-| cortexist/gemma-4-E4B-it-qat-exl3-4.0bpw | 2.303.501.866 en safetensors | EXL3, cuerpo y embeddings 4,0 bpw, cabeza 6 bpw, vision 16 bits | Capacidad configurable, ejemplo a 4096 tokens | apache-2.0 | Repositorio HuggingFace, runtime EXL3 (fork Cortexist) | Optimizado para Jetson Orin; equivalencia de calidad no establecida |
-| google/gemma-4-E4B-it-qat-q4_0-unquantized (modelo base) | no disponible | Checkpoint QAT sin cuantizar | no disponible | apache-2.0 / licencia Gemma 4 | HuggingFace (Google) | Referencia de origen de la conversion; usado como punto de comparacion numerico |
+| cortexist/gemma-4-E4B-it-qat-exl3-4.0bpw | 2.303.501.866 en safetensors | EXL3, cuerpo y embeddings 4,0 bpw, cabeza 6 bpw, vision 16 bits | Capacidad configurable, ejemplo a 4096 tokens | apache-2.0 | Repositorio Hugging Face, runtime EXL3 (fork Cortexist) | Optimizado para Jetson Orin; equivalencia de calidad no establecida |
+| google/gemma-4-E4B-it-qat-q4_0-unquantized (modelo base) | no disponible | Checkpoint QAT sin cuantizar | no disponible | apache-2.0 / licencia Gemma 4 | Hugging Face (Google) | Referencia de origen de la conversion; usado como punto de comparacion numerico |
 | Variante GGUF QAT del mismo modelo base | no disponible | GGUF (cuantizacion QAT) | no disponible | no disponible | no disponible | Mencionada por el autor como alternativa frente a la que no se ha establecido equivalencia de calidad |
 
 No se dispone de datos de rendimiento comparativo frente a otros modelos de la misma categoria en la informacion proporcionada.
@@ -114,8 +114,8 @@ No se dispone de datos de rendimiento comparativo frente a otros modelos de la m
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/cortexist/gemma-4-E4B-it-qat-exl3-4.0bpw
-- Modelo base en HuggingFace: https://huggingface.co/google/gemma-4-E4B-it-qat-q4_0-unquantized
+- Repositorio Hugging Face del modelo: https://huggingface.co/cortexist/gemma-4-E4B-it-qat-exl3-4.0bpw
+- Modelo base en Hugging Face: https://huggingface.co/google/gemma-4-E4B-it-qat-q4_0-unquantized
 - Fork de ExLlamaV3 de Cortexist (runtime y mediciones de prefill/decode): https://github.com/cortexist/exllamav3
 - Licencia de Gemma 4 de Google: https://ai.google.dev/gemma/docs/gemma_4_license
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo; los resultados devueltos corresponden a contenidos no relacionados (aplicaciones de mensajeria y sus tutoriales de descarga) y se descartan por no ser pertinentes.

@@ -99,7 +99,7 @@ La comparación directa de rendimiento con estas alternativas no está disponibl
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/VectaBass/vectabass-232m-26.5bt-base-cooled
+- Hugging Face: https://huggingface.co/VectaBass/vectabass-232m-26.5bt-base-cooled
 - Referencia del recurso Isambard-AI (McIntosh-Smith, Alam y Woods, 2024): https://doi.org/10.48550/arXiv.2410.11199
 - Dataset fineweb-edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Dataset fineweb-2: https://huggingface.co/datasets/HuggingFaceFW/fineweb-2

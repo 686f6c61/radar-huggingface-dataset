@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`TomaszKtk/albef-retrieval-2024` es un repositorio experimental alojado en HuggingFace que implementa una base de código ALBEF (Align before Fuse) orientada a tareas de recuperación imagen-texto (retrieval). Lo publica el usuario TomaszKtk bajo licencia Apache 2.0 y su propósito declarado no es servir como modelo listo para producción, sino permitir la inspección de cambios de arquitectura antes de lanzar un entrenamiento completo.
+`TomaszKtk/albef-retrieval-2024` es un repositorio experimental alojado en Hugging Face que implementa una base de código ALBEF (Align before Fuse) orientada a tareas de recuperación imagen-texto (retrieval). Lo publica el usuario TomaszKtk bajo licencia Apache 2.0 y su propósito declarado no es servir como modelo listo para producción, sino permitir la inspección de cambios de arquitectura antes de lanzar un entrenamiento completo.
 
 La familia ALBEF procede del trabajo original de Salesforce presentado en NeurIPS 2021, un método de preentrenamiento visión-lenguaje que alinea representaciones de imagen y texto mediante pérdida contrastiva antes de fusionarlas con atención cruzada. Este repositorio concreto mantiene esa línea arquitectónica (atención dilatada, fusión con compuertas, activación swish, normalización instancenorm) pero se distribuye como un checkpoint de inicialización válido únicamente para pruebas de humo.
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TomaszKtk/albef-retrieval-2024 | 49.600 | no disponible | no | apache-2.0 | HuggingFace |
+| TomaszKtk/albef-retrieval-2024 | 49.600 | no disponible | no | apache-2.0 | Hugging Face |
 | salesforce/ALBEF (oficial) | cientos de millones (dato no confirmado en la informacion proporcionada) | no disponible | si, preentrenado y ajustable | ver repositorio original | GitHub y Replicate |
-| thomassts/retrieval | no disponible | no disponible | no (configuracion tiny para revision de codigo) | no disponible | HuggingFace |
-| ashishguptagos/albef-retrieval | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| thomassts/retrieval | no disponible | no disponible | no (configuracion tiny para revision de codigo) | no disponible | Hugging Face |
+| ashishguptagos/albef-retrieval | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 La referencia canónica es la implementación oficial de Salesforce, que soporta preentrenamiento en datasets personalizados y ajuste fino en VQA, SNLI-VE, NLVR2, recuperación imagen-texto en MSCOCO y Flickr30k, y grounding visual en RefCOCO+. Los otros repositorios comparados son implementaciones comunitarias de alcance similar y sin resultados de benchmark publicados.
 
@@ -87,7 +87,7 @@ La referencia canónica es la implementación oficial de Salesforce, que soporta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TomaszKtk/albef-retrieval-2024
+- Modelo en Hugging Face: https://huggingface.co/TomaszKtk/albef-retrieval-2024
 - Implementación oficial ALBEF (Salesforce) en GitHub: https://github.com/salesforce/ALBEF
 - Módulo de retrieval de ALBEF: https://github.com/salesforce/ALBEF/blob/main/Retrieval.py
 - ALBEF en Replicate: https://replicate.com/salesforce/albef/readme

@@ -87,9 +87,9 @@ No se han publicado en la informacion disponible resultados comparativos con otr
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| banglamentalBERT-banglaBERT-dapt-tapt | 110M | 256 | Clasificacion de severidad de depresion (4 clases, bn) | MIT | HuggingFace |
-| csebuetnlp/banglabert (base) | 110M | 512 (tipico ELECTRA) | Modelo de lenguaje enmascarado en bengali | MIT | HuggingFace |
-| Modelos multilingues tipo XLM-R | ~270M (base) | 512 | Clasificacion y generacion multilingue | MIT | HuggingFace |
+| banglamentalBERT-banglaBERT-dapt-tapt | 110M | 256 | Clasificacion de severidad de depresion (4 clases, bn) | MIT | Hugging Face |
+| csebuetnlp/banglabert (base) | 110M | 512 (tipico ELECTRA) | Modelo de lenguaje enmascarado en bengali | MIT | Hugging Face |
+| Modelos multilingues tipo XLM-R | ~270M (base) | 512 | Clasificacion y generacion multilingue | MIT | Hugging Face |
 
 Nota: no se dispone de resultados de benchmarks comparativos entre este modelo y las alternativas en la informacion proporcionada; la comparativa se limita a caracteristicas estructurales y de licencia. La longitud de contexto, el rendimiento y la idoneidad de las alternativas para la misma tarea no estan documentados en los datos disponibles.
 
@@ -108,7 +108,7 @@ Nota: no se dispone de resultados de benchmarks comparativos entre este modelo y
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SrothJr/banglamentalBERT-banglaBERT-dapt-tapt
+- Hugging Face: https://huggingface.co/SrothJr/banglamentalBERT-banglaBERT-dapt-tapt
 - BanglaBERT (modelo base): https://huggingface.co/csebuetnlp/banglabert
 - Repositorio referenciado en el codigo de uso: https://huggingface.co/SrothJr/banglabert-bangla-depression-severity-dapt
 - Modelo de traduccion NLLB-200-3.3B: https://huggingface.co/facebook/nllb-200-3.3B (referenciado en el pipeline, no enlazado en la model card)

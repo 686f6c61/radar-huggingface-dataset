@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`act-pick-and-stack` es una política de imitación (policy) para robótica entrenada con el método Action Chunking with Transformers (ACT), publicado en el paper arXiv:2304.13705. No es un modelo de lenguaje: es un modelo de control visomotor que recibe el estado de las articulaciones y tres cámaras RGB y emite directamente comandos de acción de 6 dimensiones. Lo publica el usuario Tron-Hayato en el Hub de HuggingFace mediante LeRobot, la librería de aprendizaje por imitación de HuggingFace.
+`act-pick-and-stack` es una política de imitación (policy) para robótica entrenada con el método Action Chunking with Transformers (ACT), publicado en el paper arXiv:2304.13705. No es un modelo de lenguaje: es un modelo de control visomotor que recibe el estado de las articulaciones y tres cámaras RGB y emite directamente comandos de acción de 6 dimensiones. Lo publica el usuario Tron-Hayato en el Hub de Hugging Face mediante LeRobot, la librería de aprendizaje por imitación de Hugging Face.
 
 El modelo resuelve una tarea muy concreta: apilar bloques. Concretamente, la instrucción de la tarea es "Pick up blocks on the left one by one and stack them on top of the blocks on the right side". Se ha entrenado con 60 episodios de teleoperación (107.409 frames a 30 FPS) sobre un robot `so_follower` (brazo SO-100) equipado con tres cámaras: `side`, `wrist` y `top`. El checkpoint tiene 51.648.134 parámetros y se distribuye en safetensors con licencia Apache 2.0.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / observacion | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| act-pick-and-stack (este) | 51.648.134 | 3 imagenes 480x640 + estado (6,) | sin evaluacion publicada | apache-2.0 | HuggingFace + LeRobot |
+| act-pick-and-stack (este) | 51.648.134 | 3 imagenes 480x640 + estado (6,) | sin evaluacion publicada | apache-2.0 | Hugging Face + LeRobot |
 | Diffusion Policy (implementacion LeRobot) | no disponible | configurable por tarea | no disponible | no disponible | LeRobot |
 | VQ-BeT (implementacion LeRobot) | no disponible | configurable por tarea | no disponible | no disponible | LeRobot |
 | SmolVLA (implementacion LeRobot) | no disponible | politica VLA con entrada de lenguaje | no disponible | no disponible | LeRobot |
@@ -88,7 +88,7 @@ La comparación relevante es metodológica más que numérica: ACT se distingue 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tron-Hayato/act-pick-and-stack
+- Modelo en Hugging Face: https://huggingface.co/Tron-Hayato/act-pick-and-stack
 - Dataset de entrenamiento: https://huggingface.co/datasets/Tron-Hayato/record-pick-and-stack
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=Tron-Hayato/record-pick-and-stack
 - Paper de ACT (arXiv:2304.13705): https://huggingface.co/papers/2304.13705

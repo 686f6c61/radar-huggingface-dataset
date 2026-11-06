@@ -2,7 +2,7 @@
 
 ## Resumen
 
-grpo-5g-rca-qwen3-1.7b es un ajuste fino del modelo denso Qwen/Qwen3-1.7B publicado por el usuario JesterbeanLTEA en HuggingFace. El entrenamiento se ha realizado con GRPO (Group Relative Policy Optimization), el algoritmo de aprendizaje por refuerzo introducido en el artículo DeepSeekMath, utilizando la librería TRL de HuggingFace. La model card es una plantilla autogenerada: no documenta el conjunto de datos, los hiperparámetros de entrenamiento, la función de recompensa ni el objetivo concreto del ajuste.
+grpo-5g-rca-qwen3-1.7b es un ajuste fino del modelo denso Qwen/Qwen3-1.7B publicado por el usuario JesterbeanLTEA en Hugging Face. El entrenamiento se ha realizado con GRPO (Group Relative Policy Optimization), el algoritmo de aprendizaje por refuerzo introducido en el artículo DeepSeekMath, utilizando la librería TRL de Hugging Face. La model card es una plantilla autogenerada: no documenta el conjunto de datos, los hiperparámetros de entrenamiento, la función de recompensa ni el objetivo concreto del ajuste.
 
 El nombre del repositorio sugiere un uso orientado al análisis de causa raíz (RCA) en redes 5G, pero esta interpretación es una inferencia a partir del identificador y no está confirmada en la información disponible. El modelo tiene 0 descargas y 0 likes en el momento de redactar esta ficha, y su licencia figura como un marcador de posición sin valor ("licence: license"), por lo que no puede confirmarse su régimen de uso comercial.
 
@@ -42,7 +42,7 @@ No se ha publicado ninguna evaluación de capacidades específica para este ajus
 - Generación de texto autoregresiva, en línea con las capacidades del modelo base Qwen3-1.7B, pero sin verificación independiente sobre este checkpoint.
 - Ajuste orientado a un dominio concreto mediante aprendizaje por refuerzo, presumiblemente con recompensas verificables, aunque la naturaleza de dichas recompensas no está documentada.
 - Compatibilidad con la librería `transformers` y con el ecosistema de TRL, lo que permite cargarlo con `pipeline("text-generation", ...)` tal y como muestra la model card.
-- Marca `endpoints_compatible` en HuggingFace, lo que indica que el repositorio es desplegable en Inference Endpoints.
+- Marca `endpoints_compatible` en Hugging Face, lo que indica que el repositorio es desplegable en Inference Endpoints.
 - Soporte de tool calling, function calling, modo de razonamiento explícito (thinking), capacidades de agente, visión, audio o matemáticas avanzadas: no disponible. No hay ninguna declaración al respecto en la información proporcionada.
 - Capacidades multilingües: no disponibles. Dependerán del modelo base, pero el ajuste con GRPO sobre un dataset no documentado puede haber estrechado el comportamiento hacia un único idioma o dominio.
 
@@ -72,7 +72,7 @@ La model card no incluye MMLU, HumanEval, GSM8K, MATH, Arena-Hard ni ninguna otr
 - VRAM estimada en cuantización int4 (por ejemplo GGUF Q4_K_M): aproximadamente 1-1,2 GB, apta para equipos con 4 GB de VRAM o incluso inferencia en CPU.
 - GPU recomendadas para bf16: cualquier GPU con 8 GB o más, como RTX 3060 Ti, RTX 4060, RTX 3070, RTX 4070, RTX 4090, L4, A10G, A100 o H100 (estas dos últimas muy sobredimensionadas para este tamaño).
 - Cabe en GPU de consumo: sí, en la práctica totalidad de GPU dedicadas con 6 GB o más, y en cuantización int4 en iGPU y CPU.
-- Opciones de despliegue: `transformers` con `device_map="auto"`, vLLM o TGI para servicio con concurrencia, llama.cpp u Ollama previa conversión a GGUF, y HuggingFace Inference Endpoints (el repositorio está marcado como `endpoints_compatible`).
+- Opciones de despliegue: `transformers` con `device_map="auto"`, vLLM o TGI para servicio con concurrencia, llama.cpp u Ollama previa conversión a GGUF, y Hugging Face Inference Endpoints (el repositorio está marcado como `endpoints_compatible`).
 - Latencia y throughput: no disponibles. No se han publicado mediciones. Como referencia cualitativa, un modelo denso de 1.700 millones de parámetros en bf16 sobre una GPU moderna ofrece interacción prácticamente en tiempo real para un único usuario, pero no es un dato verificado para este checkpoint.
 
 Advertencia: el tamaño del repositorio es de 0,6 GB, mientras que un checkpoint completo de 1.700 millones de parámetros en bf16 ocuparía aproximadamente 3,4 GB. Esta discrepancia (pesos cuantizados, carga incompleta o pesos compartidos con el modelo base) no está explicada en la información disponible y conviene verificarla antes de asumir que el repositorio contiene el modelo completo.
@@ -83,11 +83,11 @@ No existen datos de rendimiento de este ajuste que permitan una comparación cua
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| grpo-5g-rca-qwen3-1.7b | 1,7 B | No disponible | No disponible (marcador de posición) | HuggingFace, 0 descargas |
-| Qwen/Qwen3-1.7B (base) | 1,7 B | 32.768 tokens nativos (ampliable con YaRN) | Apache-2.0 | HuggingFace, ampliamente utilizado |
-| Qwen2.5-1.5B-Instruct | 1,5 B | 32.768 tokens | Apache-2.0 | HuggingFace, muy extendido |
-| Llama-3.2-1B-Instruct | 1,2 B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, requiere aceptar términos |
-| SmolLM2-1.7B-Instruct | 1,7 B | 8.192 tokens | Apache-2.0 | HuggingFace |
+| grpo-5g-rca-qwen3-1.7b | 1,7 B | No disponible | No disponible (marcador de posición) | Hugging Face, 0 descargas |
+| Qwen/Qwen3-1.7B (base) | 1,7 B | 32.768 tokens nativos (ampliable con YaRN) | Apache-2.0 | Hugging Face, ampliamente utilizado |
+| Qwen2.5-1.5B-Instruct | 1,5 B | 32.768 tokens | Apache-2.0 | Hugging Face, muy extendido |
+| Llama-3.2-1B-Instruct | 1,2 B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, requiere aceptar términos |
+| SmolLM2-1.7B-Instruct | 1,7 B | 8.192 tokens | Apache-2.0 | Hugging Face |
 
 La diferencia fundamental no está en la arquitectura, sino en la trazabilidad: los cuatro modelos alternativos publican licencia, contexto, idiomas y evaluaciones, mientras que este ajuste no documenta ninguno de esos extremos.
 
@@ -105,7 +105,7 @@ La diferencia fundamental no está en la arquitectura, sino en la trazabilidad: 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JesterbeanLTEA/grpo-5g-rca-qwen3-1.7b
+- Modelo en Hugging Face: https://huggingface.co/JesterbeanLTEA/grpo-5g-rca-qwen3-1.7b
 - Modelo base Qwen/Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - Artículo de GRPO (DeepSeekMath): https://huggingface.co/papers/2402.03300 — arXiv:2402.03300
 - Repositorio de TRL: https://github.com/huggingface/trl

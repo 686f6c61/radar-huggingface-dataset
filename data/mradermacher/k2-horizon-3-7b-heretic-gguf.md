@@ -2,7 +2,7 @@
 
 ## Resumen
 
-K2-Horizon-3.7B-heretic-GGUF es un repositorio de cuantizaciones en formato GGUF del modelo Avicennasis/K2-Horizon-3.7B-heretic, publicado por el usuario mradermacher, especializado en convertir pesos de HuggingFace a GGUF para su uso en llama.cpp y derivados. El modelo base se distribuye como una variante "abliterated" y "uncensored" (etiquetada con heretic), es decir, con las direcciones de rechazo eliminadas mediante técnicas de ablación, lo que elimina las negativas del modelo a responder determinados prompts. Está pensado para inferencia local en hardware de consumo y despliegues ligeros.
+K2-Horizon-3.7B-heretic-GGUF es un repositorio de cuantizaciones en formato GGUF del modelo Avicennasis/K2-Horizon-3.7B-heretic, publicado por el usuario mradermacher, especializado en convertir pesos de Hugging Face a GGUF para su uso en llama.cpp y derivados. El modelo base se distribuye como una variante "abliterated" y "uncensored" (etiquetada con heretic), es decir, con las direcciones de rechazo eliminadas mediante técnicas de ablación, lo que elimina las negativas del modelo a responder determinados prompts. Está pensado para inferencia local en hardware de consumo y despliegues ligeros.
 
 Se trata de un modelo multimodal en cuanto a idiomas: soporta inglés (en) y chino (zh), con licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales. El repositorio contiene 12 cuantizaciones estáticas que van desde Q2_K (2,2 GB) hasta f16 (10,2 GB), cubriendo prácticamente todo el espectro de VRAM disponible. Existe además un repositorio paralelo con cuantizaciones ponderadas/imatrix (i1).
 
@@ -19,11 +19,11 @@ El dato más relevante y a vigilar es la discrepancia de nomenclatura: mientras 
 | Tipos de cuantizacion | Q2_K (2,2 GB), Q3_K_S (2,5 GB), Q3_K_M (2,7 GB), Q3_K_L (2,9 GB), IQ4_XS (3,0 GB), Q4_K_S (3,1 GB), Q4_K_M (3,3 GB), Q5_K_S (3,7 GB), Q5_K_M (3,7 GB), Q6_K (4,3 GB), Q8_0 (5,5 GB), f16 (10,2 GB); existen cuantizaciones ponderadas/imatrix en el repositorio i1 |
 | Idiomas soportados | en, zh |
 | Licencia | apache-2.0 |
-| Formato de pesos | GGUF (generado a partir de pesos HuggingFace del modelo base) |
+| Formato de pesos | GGUF (generado a partir de pesos Hugging Face del modelo base) |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no especifica la arquitectura interna del modelo base (Avicennasis/K2-Horizon-3.7B-heretic). El repositorio cuantizado se limita a documentar el proceso de conversion a GGUF realizado por mradermacher, con el marcador interno `convert_type: hf` y `output_tensor_quantised: 1`, lo que indica que la conversion se hizo desde un checkpoint de HuggingFace y que la cuantizacion afecta a los tensores de salida. No se detallan el numero de tokens de entrenamiento, la composicion del dataset ni la existencia de fases de RLHF, DPO o similares en la informacion proporcionada.
+La informacion disponible no especifica la arquitectura interna del modelo base (Avicennasis/K2-Horizon-3.7B-heretic). El repositorio cuantizado se limita a documentar el proceso de conversion a GGUF realizado por mradermacher, con el marcador interno `convert_type: hf` y `output_tensor_quantised: 1`, lo que indica que la conversion se hizo desde un checkpoint de Hugging Face y que la cuantizacion afecta a los tensores de salida. No se detallan el numero de tokens de entrenamiento, la composicion del dataset ni la existencia de fases de RLHF, DPO o similares en la informacion proporcionada.
 
 La innovacion tecnica principal del modelo base, segun las etiquetas del repositorio, es su condicion de modelo "abliterated" y "uncensored", generado mediante la tecnica de "heretic" (ablacion de direcciones de rechazo). Este proceso modifica los pesos para eliminar la tendencia del modelo a negarse a responder determinadas peticiones, manteniendo el resto de capacidades lo mas intactas posible. No se documentan en este repositorio los detalles del procedimiento de ablacion aplicado al modelo original.
 
@@ -31,7 +31,7 @@ La innovacion tecnica principal del modelo base, segun las etiquetas del reposit
 
 - Generacion de texto conversacional en ingles y chino, segun las etiquetas del repositorio (`conversational`).
 - Comportamiento sin censura a nivel de pesos: el modelo no aplica las negativas tipicas de los modelos alineados por RLHF, al haber sido abliterated.
-- Soporte de conversaciones multi-turno (etiqueta `conversational` en HuggingFace).
+- Soporte de conversaciones multi-turno (etiqueta `conversational` en Hugging Face).
 - Compatibilidad con endpoints y despliegue mediante herramientas de inferencia estandar (etiqueta `endpoints_compatible`).
 - Uso como modelo base para ajuste fino adicional o para tareas de generacion creativa sin restricciones.
 - Capacidades de razonamiento, codigo, matematicas o tool calling: no disponible en la informacion del repositorio.
@@ -46,7 +46,7 @@ La innovacion tecnica principal del modelo base, segun las etiquetas del reposit
 - Redaccion y reescritura de textos en ingles y chino: tareas de parafraseo, resumen y generacion de borradores donde la ventana de contexto del modelo (no documentada) sea suficiente.
 - Experimentacion en pipelines de llama.cpp, Ollama o LM Studio: al estar en formato GGUF con 12 niveles de cuantizacion, permite ajustar el equilibrio entre calidad y consumo de VRAM segun el hardware disponible.
 - Evaluacion comparativa de cuantizaciones: util para medir la degradacion de perplexity entre Q2_K, Q4_K_M y Q8_0 sobre el mismo modelo base en tareas controladas.
-- Base para fine-tuning orientado a dominios concretos (por ejemplo, jerga tecnica en chino) partiendo de los pesos completos del modelo original en HuggingFace.
+- Base para fine-tuning orientado a dominios concretos (por ejemplo, jerga tecnica en chino) partiendo de los pesos completos del modelo original en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Modelo | Parametros | Contexto | Licencia | Formato GGUF | Notas |
 |---|---|---|---|---|---|
 | K2-Horizon-3.7B-heretic (este) | ~5,06 B (nombre indica 3.7B) | no disponible | Apache 2.0 | Si (este repositorio) | Abliterated / uncensored, idiomas en y zh |
-| Avicennasis/K2-Horizon-3.7B-heretic | no disponible (modelo base) | no disponible | Apache 2.0 | No (pesos HuggingFace) | Modelo original sin cuantizar |
+| Avicennasis/K2-Horizon-3.7B-heretic | no disponible (modelo base) | no disponible | Apache 2.0 | No (pesos Hugging Face) | Modelo original sin cuantizar |
 | Alternativas de la misma categoria (modelos abliterated de ~3-5 B) | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificados en la informacion proporcionada para establecer una comparativa cuantitativa fiable |
 
 No se dispone de datos de benchmarks ni de especificaciones verificadas de modelos comparables en la informacion proporcionada, por lo que no es posible establecer una comparativa de rendimiento rigurosa.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`danghoang2005/qwen25-math-1.5b-grpo-r0` es un ajuste fino del modelo matemático `Qwen/Qwen2.5-Math-1.5B` publicado por el usuario danghoang2005 en HuggingFace. Se trata de un transformer decoder-only denso de 1.543.714.304 parámetros (aproximadamente 1,5 B), distribuido en safetensors con un repositorio de 3,1 GB, lo que corresponde a pesos en FP16/BF16 sin cuantizar. El nombre del repositorio indica que el entrenamiento se ha realizado con GRPO (Group Relative Policy Optimization), un algoritmo de aprendizaje por refuerzo que optimiza la política a partir de recompensas comparativas entre múltiples muestras generadas para el mismo problema.
+`danghoang2005/qwen25-math-1.5b-grpo-r0` es un ajuste fino del modelo matemático `Qwen/Qwen2.5-Math-1.5B` publicado por el usuario danghoang2005 en Hugging Face. Se trata de un transformer decoder-only denso de 1.543.714.304 parámetros (aproximadamente 1,5 B), distribuido en safetensors con un repositorio de 3,1 GB, lo que corresponde a pesos en FP16/BF16 sin cuantizar. El nombre del repositorio indica que el entrenamiento se ha realizado con GRPO (Group Relative Policy Optimization), un algoritmo de aprendizaje por refuerzo que optimiza la política a partir de recompensas comparativas entre múltiples muestras generadas para el mismo problema.
 
 La relevancia de esta ficha es doble. Por un lado, GRPO es el algoritmo empleado en la familia DeepSeekMath y en modelos de razonamiento posteriores, y su aplicación a un modelo de 1,5 B permite reproducir experimentos de RL a bajo coste computacional. Por otro, el autor mantiene repositorios relacionados con el mismo modelo base (`danghoang2005/qwen25-math-1.5b-sft`), lo que sugiere una canalización de ajuste supervisado seguido de RL.
 
@@ -64,18 +64,18 @@ No se dispone de cifras de MMLU, GSM8K, MATH, HumanEval ni de ninguna otra métr
 - VRAM estimada en INT4 (GGUF Q4_K_M o equivalente): entre 0,9 y 1,1 GB para los pesos.
 - GPU recomendadas: cualquier GPU con 8 GB o más, como RTX 3060, RTX 4060, RTX 3070 o superiores. Para servicio concurrente con vLLM, se recomienda RTX 4090, L4, A10G, A100 o H100, aunque el modelo está claramente sobredimensionado para estas últimas.
 - Cabe en GPU de consumo: sí, en prácticamente cualquier GPU moderna con 6-8 GB de VRAM, y también en CPU mediante llama.cpp u Ollama.
-- Opciones de despliegue: HuggingFace Transformers, vLLM, SGLang, TGI, llama.cpp, Ollama y LM Studio. Para vLLM y SGLang es necesario convertir los pesos safetensors; para llama.cpp y Ollama hay que generar primero un GGUF.
+- Opciones de despliegue: Hugging Face Transformers, vLLM, SGLang, TGI, llama.cpp, Ollama y LM Studio. Para vLLM y SGLang es necesario convertir los pesos safetensors; para llama.cpp y Ollama hay que generar primero un GGUF.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| danghoang2005/qwen25-math-1.5b-grpo-r0 | 1,54 B | no disponible | Ajuste GRPO sobre Qwen2.5-Math-1.5B | No declarada | HuggingFace, 16 descargas |
-| Qwen/Qwen2.5-Math-1.5B | 1,54 B | 4.096 tokens | Modelo matematico oficial (base e instruct) | Apache 2.0 | HuggingFace, ModelScope |
-| danghoang2005/qwen25-math-1.5b-sft | 1,54 B | no disponible | Ajuste SFT sobre el mismo modelo base | No declarada | HuggingFace |
+| danghoang2005/qwen25-math-1.5b-grpo-r0 | 1,54 B | no disponible | Ajuste GRPO sobre Qwen2.5-Math-1.5B | No declarada | Hugging Face, 16 descargas |
+| Qwen/Qwen2.5-Math-1.5B | 1,54 B | 4.096 tokens | Modelo matematico oficial (base e instruct) | Apache 2.0 | Hugging Face, ModelScope |
+| danghoang2005/qwen25-math-1.5b-sft | 1,54 B | no disponible | Ajuste SFT sobre el mismo modelo base | No declarada | Hugging Face |
 | zhangfaen/GRPO_Qwen2.5-1.5B | aprox. 1,5 B | no disponible | Implementacion de GRPO desde cero sobre Qwen2.5-1.5B | No declarada (repositorio GitHub) | GitHub |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 tokens | Instruct generalista | Apache 2.0 | HuggingFace |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 tokens | Instruct generalista | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos entre estas alternativas en la información disponible, por lo que la comparación se limita a parámetros, contexto, tipo de ajuste, licencia y disponibilidad.
 
@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento comparativos entre estas alternativas en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/danghoang2005/qwen25-math-1.5b-grpo-r0
+- Modelo en Hugging Face: https://huggingface.co/danghoang2005/qwen25-math-1.5b-grpo-r0
 - Ajuste SFT del mismo autor: https://huggingface.co/danghoang2005/qwen25-math-1.5b-sft
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Math-1.5B
 - Modelo base en ModelScope: https://www.modelscope.cn/models/Qwen/Qwen2.5-Math-1.5B

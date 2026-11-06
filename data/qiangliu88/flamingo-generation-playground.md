@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`qiangliu88/flamingo-generation-playground` es un repositorio experimental publicado en HuggingFace por el usuario qiangliu88 que contiene una implementación funcional de la arquitectura Flamingo orientada a tareas de generación. No se trata de un modelo entrenado ni evaluado, sino de un punto de partida reproducible: el propio autor describe el archivo `model.safetensors` como un checkpoint de inicialización válido para pruebas de humo (smoke tests), y no como un checkpoint con benchmarks.
+`qiangliu88/flamingo-generation-playground` es un repositorio experimental publicado en Hugging Face por el usuario qiangliu88 que contiene una implementación funcional de la arquitectura Flamingo orientada a tareas de generación. No se trata de un modelo entrenado ni evaluado, sino de un punto de partida reproducible: el propio autor describe el archivo `model.safetensors` como un checkpoint de inicialización válido para pruebas de humo (smoke tests), y no como un checkpoint con benchmarks.
 
 El repositorio se presenta explícitamente como código transparente con tests repetibles y omite deliberadamente cualquier afirmación de rendimiento. La configuración declarada corresponde a una escala "large", con atención de ventana deslizante (sliding window), fusión por co-atención, activación swish y normalización InstanceNorm. Sin embargo, el recuento real de parámetros almacenados en el checkpoint es de solo 24.832 parámetros, lo que sitúa este artefacto en el terreno de una maqueta de inicialización y no de un modelo de lenguaje utilizable.
 
@@ -83,5 +83,5 @@ No disponible. No se ha proporcionado informacion sobre modelos comparables, y l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qiangliu88/flamingo-generation-playground
+- Modelo en Hugging Face: https://huggingface.co/qiangliu88/flamingo-generation-playground
 - No se han encontrado en la busqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo.

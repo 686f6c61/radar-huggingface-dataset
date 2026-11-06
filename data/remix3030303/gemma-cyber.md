@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`remix3030303/gemma-cyber` es un ajuste fino (fine-tune) publicado en HuggingFace por el usuario remix3030303 sobre `huihui-ai/Huihui-gemma-3n-E4B-it-abliterated`, que a su vez es una versión "abliterated" del `gemma-3n-E4B-it` de Google. Se distribuye en formato transformers/safetensors, con un total de 7.849.978.128 parámetros (7,85 mil millones) y un repositorio de 15,7 GB, lo que es coherente con pesos en bf16 (2 bytes por parámetro). El pipeline declarado es `image-text-to-text`, por lo que el modelo conserva la entrada multimodal (imagen y texto) de la familia Gemma 3n.
+`remix3030303/gemma-cyber` es un ajuste fino (fine-tune) publicado en Hugging Face por el usuario remix3030303 sobre `huihui-ai/Huihui-gemma-3n-E4B-it-abliterated`, que a su vez es una versión "abliterated" del `gemma-3n-E4B-it` de Google. Se distribuye en formato transformers/safetensors, con un total de 7.849.978.128 parámetros (7,85 mil millones) y un repositorio de 15,7 GB, lo que es coherente con pesos en bf16 (2 bytes por parámetro). El pipeline declarado es `image-text-to-text`, por lo que el modelo conserva la entrada multimodal (imagen y texto) de la familia Gemma 3n.
 
-El modelo no resuelve un problema técnico novedoso por sí mismo: es un derivado de la familia Gemma 3n, diseñada por Google para inferencia eficiente en dispositivos con ventanas de contexto amplias y arquitectura MatFormer. El "valor añadido" declarado por el autor es únicamente el ajuste fino, entrenado con Unsloth y la librería TRL de HuggingFace. La model card no documenta el conjunto de datos, el objetivo del entrenamiento ni ninguna evaluación, de modo que el sufijo "cyber" del nombre no está respaldado por ninguna descripción técnica en la información disponible.
+El modelo no resuelve un problema técnico novedoso por sí mismo: es un derivado de la familia Gemma 3n, diseñada por Google para inferencia eficiente en dispositivos con ventanas de contexto amplias y arquitectura MatFormer. El "valor añadido" declarado por el autor es únicamente el ajuste fino, entrenado con Unsloth y la librería TRL de Hugging Face. La model card no documenta el conjunto de datos, el objetivo del entrenamiento ni ninguna evaluación, de modo que el sufijo "cyber" del nombre no está respaldado por ninguna descripción técnica en la información disponible.
 
 Su relevancia práctica es limitada y debe evaluarse con cautela: el repositorio registra 0 descargas y 0 likes, no incluye benchmarks ni ejemplos de uso, y la licencia declarada (Apache 2.0) entra en tensión con los términos de uso de Gemma de Google que afectan al modelo base. Es, por tanto, un artefacto interesante para experimentación sobre la cadena Gemma 3n → abliterated → fine-tune, pero no una opción recomendable para producción sin una evaluación propia previa.
 
@@ -25,7 +25,7 @@ Su relevancia práctica es limitada y debe evaluarse con cautela: el repositorio
 
 La arquitectura subyacente es la de Gemma 3n E4B de Google: un transformer con diseño MatFormer (una única red "elástica" de la que se extraen submodelos de distintos tamaños), pensado para reducir el coste de inferencia manteniendo calidad cercana a modelos mayores. La cifra de 7,85 B de parámetros totales frente a la designación "E4B" (efectivos ~4 B) encaja con ese planteamiento de parámetros totales superiores a los activos por token. La entrada es multimodal imagen-texto, según el pipeline declarado. No se dispone de información sobre número de capas, dimensión oculta, tipo de atención ni tokenizador en la documentación aportada.
 
-El proceso de entrenamiento documentado es mínimo: el autor indica que el modelo se entrenó "2x faster" con Unsloth y la librería TRL de HuggingFace, y que parte de `huihui-ai/Huihui-gemma-3n-E4B-it-abliterated`. Este punto de partida implica dos etapas previas no documentadas aquí: el post-entrenamiento original de Google (que en la familia Gemma combina SFT y optimización por preferencias) y la aplicación de la técnica de *abliteration* por parte de huihui-ai, que consiste en identificar y suprimir la dirección de activación asociada a los rechazos para reducir el comportamiento de negativa del modelo. No hay información sobre el dataset del fine-tune, el número de tokens, la composición de datos, la existencia de RLHF/DPO adicional ni hiperparámetros de entrenamiento.
+El proceso de entrenamiento documentado es mínimo: el autor indica que el modelo se entrenó "2x faster" con Unsloth y la librería TRL de Hugging Face, y que parte de `huihui-ai/Huihui-gemma-3n-E4B-it-abliterated`. Este punto de partida implica dos etapas previas no documentadas aquí: el post-entrenamiento original de Google (que en la familia Gemma combina SFT y optimización por preferencias) y la aplicación de la técnica de *abliteration* por parte de huihui-ai, que consiste en identificar y suprimir la dirección de activación asociada a los rechazos para reducir el comportamiento de negativa del modelo. No hay información sobre el dataset del fine-tune, el número de tokens, la composición de datos, la existencia de RLHF/DPO adicional ni hiperparámetros de entrenamiento.
 
 ## Capacidades
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `remix3030303/gemma-cyber` | 7,85 B totales (~4 B efectivos) | No disponible (32 768 en la familia Gemma 3n) | Imagen + texto | Apache 2.0 declarada (+ términos de Gemma) | HuggingFace, 0 descargas |
-| `huihui-ai/Huihui-gemma-3n-E4B-it-abliterated` (base directa) | 7,85 B | No disponible | Imagen + texto | Según la ficha del autor | HuggingFace |
-| `google/gemma-3n-E4B-it` (original) | 7,85 B | 32 768 | Imagen + texto | Términos de uso de Gemma | HuggingFace, ampliamente usado |
-| `google/gemma-3-4b-it` | 4 B | 131 072 | Imagen + texto | Términos de uso de Gemma | HuggingFace |
+| `remix3030303/gemma-cyber` | 7,85 B totales (~4 B efectivos) | No disponible (32 768 en la familia Gemma 3n) | Imagen + texto | Apache 2.0 declarada (+ términos de Gemma) | Hugging Face, 0 descargas |
+| `huihui-ai/Huihui-gemma-3n-E4B-it-abliterated` (base directa) | 7,85 B | No disponible | Imagen + texto | Según la ficha del autor | Hugging Face |
+| `google/gemma-3n-E4B-it` (original) | 7,85 B | 32 768 | Imagen + texto | Términos de uso de Gemma | Hugging Face, ampliamente usado |
+| `google/gemma-3-4b-it` | 4 B | 131 072 | Imagen + texto | Términos de uso de Gemma | Hugging Face |
 
 No se dispone de métricas de rendimiento del modelo analizado ni de comparaciones publicadas con alternativas; la comparación anterior se limita a parámetros, contexto declarado y licencia.
 
@@ -86,10 +86,10 @@ No se dispone de métricas de rendimiento del modelo analizado ni de comparacion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/remix3030303/gemma-cyber
+- Modelo en Hugging Face: https://huggingface.co/remix3030303/gemma-cyber
 - Modelo base (abliterated): https://huggingface.co/huihui-ai/Huihui-gemma-3n-E4B-it-abliterated
 - Modelo original de la familia: https://huggingface.co/google/gemma-3n-E4B-it
 - Documentación de Gemma 3n (Google): https://ai.google.dev/gemma/docs/gemma-3n
 - Términos de uso de Gemma: https://ai.google.dev/gemma/terms
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
-- TRL de HuggingFace: https://github.com/huggingface/trl
+- TRL de Hugging Face: https://github.com/huggingface/trl

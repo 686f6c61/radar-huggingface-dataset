@@ -74,7 +74,7 @@ No se dispone de datos comparativos con otros modelos de la misma categoria (cro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/devrim/reign-small-l2_gn-gte-large_val-selected
+- Hugging Face: https://huggingface.co/devrim/reign-small-l2_gn-gte-large_val-selected
 - Codigo: https://github.com/devrimcavusoglu/reign
 - Pagina del proyecto: https://devrimcavusoglu.github.io/reign
 - Dataset: https://huggingface.co/datasets/devrim/goodwiki_long_synthetic_ir

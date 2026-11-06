@@ -1,7 +1,7 @@
 # vosldtgbj/project-llm-sft-v3-l5-h0p5-seed20261006
 
 ## Resumen
-Project LLM SFT v3 (identificador `L5--h0p5--seed20261006`) es un checkpoint experimental publicado por el usuario `vosldtgbj` en HuggingFace. Se trata de un ajuste supervisado (SFT) de tipo any-to-any construido sobre la arquitectura `gemma4_unified` de Gemma 4, con aproximadamente 11.959.730.176 parametros (unos 11,96 mil millones) y pesos almacenados en Safetensors.
+Project LLM SFT v3 (identificador `L5--h0p5--seed20261006`) es un checkpoint experimental publicado por el usuario `vosldtgbj` en Hugging Face. Se trata de un ajuste supervisado (SFT) de tipo any-to-any construido sobre la arquitectura `gemma4_unified` de Gemma 4, con aproximadamente 11.959.730.176 parametros (unos 11,96 mil millones) y pesos almacenados en Safetensors.
 
 El modelo parte de un checkpoint intermedio de preentrenamiento continuado denominado `CPT 1.0`, sobre el que se aplico un SFT de 0.5 epocas con una mezcla de datos compuesta por un 90 por ciento de datos de dominio especifico y un 10 por ciento de datos generales. El entrenamiento se realizo mediante LoRA con rango 128, alpha 256, dropout 0.05 y tasa de aprendizaje 2e-5, y los adaptadores se fusionaron posteriormente en pesos completos.
 
@@ -59,8 +59,8 @@ No se dispone de datos de benchmarks ni de especificaciones de contexto que perm
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Project LLM SFT v3 (`L5--h0p5--seed20261006`) | ~11,96 B | no disponible | apache-2.0 + terminos Gemma 4 | HuggingFace |
-| Checkpoint base (`cpt1-full-02`) | no disponible | no disponible | no disponible | HuggingFace |
+| Project LLM SFT v3 (`L5--h0p5--seed20261006`) | ~11,96 B | no disponible | apache-2.0 + terminos Gemma 4 | Hugging Face |
+| Checkpoint base (`cpt1-full-02`) | no disponible | no disponible | no disponible | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -74,7 +74,7 @@ No se dispone de datos de benchmarks ni de especificaciones de contexto que perm
 - Repositorio con 0 descargas y 0 likes, sin comunidad que valide su comportamiento.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/vosldtgbj/project-llm-sft-v3-l5-h0p5-seed20261006
+- Hugging Face: https://huggingface.co/vosldtgbj/project-llm-sft-v3-l5-h0p5-seed20261006
 - Modelo base: https://huggingface.co/vosldtgbj/project-llm-cpt-1p0-top10-01-full-02
 - Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
 - vLLM (motor de inferencia): https://github.com/vllm-project/vllm

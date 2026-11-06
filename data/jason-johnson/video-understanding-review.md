@@ -64,5 +64,5 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jason-johnson/video-understanding-review
+- Repositorio en Hugging Face: https://huggingface.co/jason-johnson/video-understanding-review
 - (No se proporcionan otros enlaces específicos del repositorio en la información disponible. Los resultados de búsqueda web corresponden a surveys y listados externos, no a este repositorio.)

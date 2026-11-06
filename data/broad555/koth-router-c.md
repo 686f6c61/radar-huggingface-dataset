@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `broad555/koth-router-c` es un repositorio publicado en HuggingFace por el usuario broad555 el 1 de agosto de 2026, con una última actualización el 14 de agosto de 2026. El nombre sugiere que podría tratarse de un enrutador de modelos (router) diseñado para seleccionar dinámicamente entre varios modelos base, posiblemente en el contexto de competiciones "King of the Hill" (KOTH), aunque esta interpretación no está confirmada por ninguna documentación oficial.
+El modelo `broad555/koth-router-c` es un repositorio publicado en Hugging Face por el usuario broad555 el 1 de agosto de 2026, con una última actualización el 14 de agosto de 2026. El nombre sugiere que podría tratarse de un enrutador de modelos (router) diseñado para seleccionar dinámicamente entre varios modelos base, posiblemente en el contexto de competiciones "King of the Hill" (KOTH), aunque esta interpretación no está confirmada por ninguna documentación oficial.
 
 El repositorio tiene un tamaño de 0.0 GB, lo que indica que no contiene pesos de modelo ni archivos de gran tamaño. No se ha publicado información sobre arquitectura, parámetros, licencia, idiomas o pipeline de uso. A fecha de la consulta, cuenta con 0 descargas y 1 like, lo que sugiere que es un proyecto incipiente o experimental sin documentación técnica pública.
 
@@ -25,7 +25,7 @@ Dada la ausencia total de especificaciones, esta ficha se limita a reflejar los 
 
 No se ha publicado ninguna información sobre la arquitectura del modelo, el proceso de entrenamiento, los datos utilizados ni las técnicas aplicadas (RLHF, DPO, etc.). El nombre "koth-router-c" podría indicar un componente de enrutamiento para seleccionar entre modelos en un escenario competitivo, pero no hay evidencia técnica que lo respalde.
 
-El repositorio no contiene archivos de pesos ni documentación adicional en la página de HuggingFace. Se desconoce si el modelo es un transformer, un MoE, un SSM o cualquier otra arquitectura.
+El repositorio no contiene archivos de pesos ni documentación adicional en la página de Hugging Face. Se desconoce si el modelo es un transformer, un MoE, un SSM o cualquier otra arquitectura.
 
 ## Capacidades
 
@@ -57,4 +57,4 @@ No disponible. No se conocen modelos comparables en la misma categoría, ya que 
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/broad555/koth-router-c)
+- [Repositorio en Hugging Face](https://huggingface.co/broad555/koth-router-c)

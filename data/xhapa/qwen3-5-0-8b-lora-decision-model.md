@@ -6,7 +6,7 @@ El modelo `xhapa/Qwen3.5-0.8B-LoRA-Decision-Model` es un adaptador LoRA (Low-Ran
 
 El repositorio ocupa 0,1 GB, lo que es coherente con un adaptador LoRA de pequeno tamano y no con un modelo completo. El pipeline declarado es `text-generation` y la libreria principal es PEFT (version 0.21.2 segun la propia model card), con `transformers` y `unsloth` como etiquetas asociadas, lo que indica que el entrenamiento se realizo con el framework Unsloth. Se publico el 13 de octubre de 2026 y se actualizo dos minutos despues ese mismo dia.
 
-La relevancia de esta ficha es limitada pero debe evaluarse con cautela: la model card es una plantilla generica de HuggingFace sin rellenar, con todos los campos marcados como `[More Information Needed]`. No hay informacion sobre datos de entrenamiento, hiperparametros, licencia, idiomas soportados ni evaluacion. A fecha de la consulta el repositorio acumula 0 descargas y 0 likes, por lo que no existe validacion por parte de la comunidad.
+La relevancia de esta ficha es limitada pero debe evaluarse con cautela: la model card es una plantilla generica de Hugging Face sin rellenar, con todos los campos marcados como `[More Information Needed]`. No hay informacion sobre datos de entrenamiento, hiperparametros, licencia, idiomas soportados ni evaluacion. A fecha de la consulta el repositorio acumula 0 descargas y 0 likes, por lo que no existe validacion por parte de la comunidad.
 
 ## Especificaciones tecnicas
 
@@ -28,7 +28,7 @@ La relevancia de esta ficha es limitada pero debe evaluarse con cautela: la mode
 
 La unica informacion tecnica contrastable es que se trata de un adaptador LoRA sobre `unsloth/Qwen3.5-0.8B`, generado con PEFT 0.21.2 y la libreria Unsloth. LoRA congela los pesos del modelo base e inserta matrices de bajo rango entrenables en determinadas capas, lo que reduce drasticamente el numero de parametros a actualizar y el coste de entrenamiento frente a un ajuste completo. No se especifica el rango (`r`), el valor de `alpha`, el dropout ni que modulos se adaptaron (tipicamente `q_proj`, `k_proj`, `v_proj`, `o_proj` y las proyecciones MLP).
 
-No hay ningun dato publicado sobre el procedimiento de entrenamiento: ni el numero de tokens, ni la composicion del dataset, ni la existencia de fases de RLHF, DPO o SFT supervisado, ni los hiperparametros (tasa de aprendizaje, tamano de lote, epocas, precision). Tampoco se documenta la arquitectura concreta del modelo base (si es transformer denso, hibrido o incorpora atencion lineal), su tokenizador o su ventana de contexto. El unico enlace tecnico presente es la referencia a Lacoste et al. (2019) para el calculo de emisiones de carbono, que es texto plantilla de HuggingFace y no aporta informacion sobre este modelo.
+No hay ningun dato publicado sobre el procedimiento de entrenamiento: ni el numero de tokens, ni la composicion del dataset, ni la existencia de fases de RLHF, DPO o SFT supervisado, ni los hiperparametros (tasa de aprendizaje, tamano de lote, epocas, precision). Tampoco se documenta la arquitectura concreta del modelo base (si es transformer denso, hibrido o incorpora atencion lineal), su tokenizador o su ventana de contexto. El unico enlace tecnico presente es la referencia a Lacoste et al. (2019) para el calculo de emisiones de carbono, que es texto plantilla de Hugging Face y no aporta informacion sobre este modelo.
 
 ## Capacidades
 
@@ -49,7 +49,7 @@ No hay ningun dato publicado sobre el procedimiento de entrenamiento: ni el nume
 - Despliegue en el borde (edge) o en dispositivos embebidos: si el ajuste mantiene las capacidades generativas del base, el conjunto fusionado es candidato para asistentes locales de bajo consumo, aunque la falta de licencia declarada impide confirmar si el uso comercial esta permitido.
 - Base para un ajuste posterior (continued fine-tuning): el adaptador puede reutilizarse o combinarse con otros adaptadores LoRA sobre el mismo base, lo que resulta util en pipelines de experimentacion rapida.
 - Evaluacion comparativa de adaptadores: usar este repositorio como punto de partida para medir si un ajuste LoRA especifico aporta mejora sobre el base en una tarea concreta, estableciendo una linea base reproducible.
-- Docencia y formacion tecnica: ejemplo minimo de publicacion de un adaptador en HuggingFace con PEFT, util para explicar el ciclo completo de entrenamiento, publicacion y carga de un LoRA.
+- Docencia y formacion tecnica: ejemplo minimo de publicacion de un adaptador en Hugging Face con PEFT, util para explicar el ciclo completo de entrenamiento, publicacion y carga de un LoRA.
 
 En la mayoria de estos escenarios el uso en produccion no esta justificado actualmente: no hay licencia declarada, ni evaluacion, ni documentacion de datos, ni descargas que respalden su fiabilidad.
 
@@ -81,7 +81,7 @@ Nota: los datos de las dos alternativas Qwen2.5 proceden de la documentacion pub
 
 ## Limitaciones y advertencias
 
-- Model card vacia: todos los campos son la plantilla por defecto de HuggingFace con `[More Information Needed]`. No hay informacion sobre desarrollador, proposito, datos, evaluacion ni limitaciones.
+- Model card vacia: todos los campos son la plantilla por defecto de Hugging Face con `[More Information Needed]`. No hay informacion sobre desarrollador, proposito, datos, evaluacion ni limitaciones.
 - Licencia no declarada: al no especificarse licencia, no puede asumirse permiso para uso comercial, redistribucion ni modificacion. Ademas, la licencia efectiva estaria condicionada por la del modelo base `unsloth/Qwen3.5-0.8B`, que tampoco se indica.
 - Sin datos de entrenamiento: se desconoce el dataset, su procedencia, su idioma y si contiene contenido sesgado o con derechos de autor. Esto impide evaluar sesgos de forma fundamentada.
 - Riesgo de alucinacion: inherente a cualquier modelo generativo de este tamano; en un modelo de ~0,8B el riesgo es especialmente alto en tareas de razonamiento o conocimiento factual, y no hay evaluacion que lo cuantifique.
@@ -93,7 +93,7 @@ Nota: los datos de las dos alternativas Qwen2.5 proceden de la documentacion pub
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xhapa/Qwen3.5-0.8B-LoRA-Decision-Model
+- Modelo en Hugging Face: https://huggingface.co/xhapa/Qwen3.5-0.8B-LoRA-Decision-Model
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-0.8B
 - Documentacion de PEFT: https://huggingface.co/docs/peft
 - Documentacion de Unsloth: https://docs.unsloth.ai

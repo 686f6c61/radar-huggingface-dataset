@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo, publicado en HuggingFace por el usuario raphaelreisb, es una adaptación de difusión para generación de imágenes en estilo anime. Se trata de un LoRA o checkpoint derivado del modelo base «Anima», diseñado para añadir el concepto «loose tank top» (camiseta holgada) a las imágenes generadas. El creador original es el usuario Goofy_Ai en la plataforma Civitai, donde se encuentra la fuente del modelo. La relevancia del modelo es limitada, ya que se trata de una especialización muy concreta para un atributo visual en el ámbito de la ilustración anime, sin datos de descargas ni valoraciones en HuggingFace. No es un modelo de lenguaje, sino un modelo de difusión, y la información técnica disponible es mínima.
+Este modelo, publicado en Hugging Face por el usuario raphaelreisb, es una adaptación de difusión para generación de imágenes en estilo anime. Se trata de un LoRA o checkpoint derivado del modelo base «Anima», diseñado para añadir el concepto «loose tank top» (camiseta holgada) a las imágenes generadas. El creador original es el usuario Goofy_Ai en la plataforma Civitai, donde se encuentra la fuente del modelo. La relevancia del modelo es limitada, ya que se trata de una especialización muy concreta para un atributo visual en el ámbito de la ilustración anime, sin datos de descargas ni valoraciones en Hugging Face. No es un modelo de lenguaje, sino un modelo de difusión, y la información técnica disponible es mínima.
 
 ## Especificaciones tecnicas
 
@@ -14,7 +14,7 @@ Este modelo, publicado en HuggingFace por el usuario raphaelreisb, es una adapta
 | Longitud de contexto | No aplica (modelo de difusión) |
 | Tipos de cuantizacion | No disponible |
 | Idiomas soportados | No aplica (generación de imágenes) |
-| Licencia | No especificada en HuggingFace; metadata de Civitai indica uso comercial solo bajo «RentCivit» |
+| Licencia | No especificada en Hugging Face; metadata de Civitai indica uso comercial solo bajo «RentCivit» |
 | Formato de pesos | No disponible |
 | Modelo base | Anima |
 | Trigger words | loose tank top |
@@ -62,14 +62,14 @@ No se dispone de información sobre modelos comparables. No se conocen otros LoR
 ## Limitaciones y advertencias
 
 - La licencia original en Civitai indica que no se permite el uso comercial fuera de «RentCivit» y que no se permiten derivados, lo que restringe su uso en producción.
-- El repositorio en HuggingFace tiene 0 descargas y 0 likes, lo que sugiere que el modelo no ha sido probado por la comunidad o es de publicación reciente.
-- No hay model card detallada en HuggingFace; solo se proporciona un enlace externo a Civitai, lo que dificulta la evaluación técnica.
+- El repositorio en Hugging Face tiene 0 descargas y 0 likes, lo que sugiere que el modelo no ha sido probado por la comunidad o es de publicación reciente.
+- No hay model card detallada en Hugging Face; solo se proporciona un enlace externo a Civitai, lo que dificulta la evaluación técnica.
 - Como modelo de difusión, puede generar artefactos visuales o inconsistencias en los resultados, especialmente si se usa fuera de su dominio de especialización.
 - No se han documentado sesgos, pero al estar entrenado en un dominio concreto (estilo anime), puede reforzar estereotipos visuales propios de ese estilo.
 - El tamaño del repositorio es de 0.0 GB, lo que puede indicar que el modelo no está correctamente subido o que es un archivo de muy pequeño tamaño.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/raphaelreisb/loose-tank-top-anima
+- Hugging Face: https://huggingface.co/raphaelreisb/loose-tank-top-anima
 - Fuente original en Civitai: https://civitai.red/models/1882235?modelVersionId=3271339
-- Perfil de HuggingFace del usuario: https://huggingface.co/raphaelreisb/models
+- Perfil de Hugging Face del usuario: https://huggingface.co/raphaelreisb/models

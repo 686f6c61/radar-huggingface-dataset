@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`a1any0ung/pi05_yumi_cube_ac_base` es un checkpoint de política robótica publicado en HuggingFace por el usuario a1any0ung, basado en el modelo π₀.₅ (Pi05) de Physical Intelligence. Se trata de un modelo Visión-Lenguaje-Acción (VLA) orientado a control robótico de propósito general, implementado mediante la librería LeRobot de HuggingFace a partir del repositorio abierto OpenPI. El modelo resuelve el problema de la generalización en entornos abiertos: frente a políticas que solo funcionan en celdas controladas, π₀.₅ está diseñado para trasladar el comportamiento aprendido a situaciones y entornos no vistos durante el entrenamiento.
+`a1any0ung/pi05_yumi_cube_ac_base` es un checkpoint de política robótica publicado en Hugging Face por el usuario a1any0ung, basado en el modelo π₀.₅ (Pi05) de Physical Intelligence. Se trata de un modelo Visión-Lenguaje-Acción (VLA) orientado a control robótico de propósito general, implementado mediante la librería LeRobot de Hugging Face a partir del repositorio abierto OpenPI. El modelo resuelve el problema de la generalización en entornos abiertos: frente a políticas que solo funcionan en celdas controladas, π₀.₅ está diseñado para trasladar el comportamiento aprendido a situaciones y entornos no vistos durante el entrenamiento.
 
 El checkpoint concreto cuenta con 4.143.404.816 parámetros (unos 4,14 mil millones, según los pesos en safetensors) y ocupa 9,4 GB en el repositorio. Está etiquetado como `pi05`, `lerobot` y `robotics`, y se ha entrenado o ajustado sobre el dataset `a1any0ung/yumi_cube_ac_processed`, cuyo nombre sugiere una tarea de manipulación de cubos, si bien la model card no documenta la composición exacta del dataset ni el robot empleado en la recogida de datos.
 
@@ -103,7 +103,7 @@ No se dispone de datos numéricos (éxito de tarea, contexto, parámetros de alt
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/a1any0ung/pi05_yumi_cube_ac_base
+- Modelo en Hugging Face: https://huggingface.co/a1any0ung/pi05_yumi_cube_ac_base
 - Dataset asociado: https://huggingface.co/datasets/a1any0ung/yumi_cube_ac_processed
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index
 - Guía de entrenamiento de LeRobot: https://huggingface.co/docs/lerobot/il_robots#train-a-policy

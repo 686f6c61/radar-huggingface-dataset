@@ -2,7 +2,7 @@
 
 ## Resumen
 
-xflud_sn92-decider-1 es un fine-tune del modelo base baselabs/mammoth-1, publicado por el usuario ben0925 en HuggingFace. El modelo está desarrollado para la pista "generalist" de REAX, el subnet 92 de la red Bittensor, una red descentralizada de incentivos para modelos de IA. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, lo que indica una publicación muy reciente (creada el 2 de noviembre de 2026) y de nicho.
+xflud_sn92-decider-1 es un fine-tune del modelo base baselabs/mammoth-1, publicado por el usuario ben0925 en Hugging Face. El modelo está desarrollado para la pista "generalist" de REAX, el subnet 92 de la red Bittensor, una red descentralizada de incentivos para modelos de IA. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, lo que indica una publicación muy reciente (creada el 2 de noviembre de 2026) y de nicho.
 
 El modelo cuenta con 26.085.330.160 parámetros totales según los pesos en safetensors, lo que lo sitúa en la categoría de modelos de aproximadamente 26B parámetros. El tag `qwen3_5` sugiere que la arquitectura subyacente está basada en Qwen 3.5, aunque esta información no está confirmada en la model card. El repositorio ocupa 52,2 GB, lo que es coherente con pesos en precisión BF16 para un modelo de este tamaño.
 
@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| ben0925/xflud_sn92-decider-1 | 26B | no disponible | MIT | HuggingFace | Fine-tune para REAX subnet 92 |
-| baselabs/mammoth-1 | no disponible | no disponible | no disponible | HuggingFace | Modelo base del que deriva |
+| ben0925/xflud_sn92-decider-1 | 26B | no disponible | MIT | Hugging Face | Fine-tune para REAX subnet 92 |
+| baselabs/mammoth-1 | no disponible | no disponible | no disponible | Hugging Face | Modelo base del que deriva |
 | Qwen 3.5 (si el tag es correcto) | no disponible | no disponible | no disponible | no disponible | Arquitectura subyacente probable |
 
 No se dispone de información suficiente para comparar rendimiento con alternativas de la misma categoría.
@@ -78,7 +78,7 @@ No se dispone de información suficiente para comparar rendimiento con alternati
 
 ## Enlaces
 
-- [HuggingFace: ben0925/xflud_sn92-decider-1](https://huggingface.co/ben0925/xflud_sn92-decider-1)
+- [Hugging Face: ben0925/xflud_sn92-decider-1](https://huggingface.co/ben0925/xflud_sn92-decider-1)
 - [Modelo base: baselabs/mammoth-1](https://huggingface.co/baselabs/mammoth-1)
 - [Bittensor](https://bittensor.com/)
 - [REAX (subnet 92)](https://huggingface.co/ben0925/xflud_sn92-decider-1) (no se dispone de enlace oficial adicional)

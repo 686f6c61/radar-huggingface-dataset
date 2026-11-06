@@ -6,7 +6,7 @@ BMBT (Bornomala's Bengali Tokenizer) es un tokenizador especifico para bengali d
 
 Se trata de un componente de tokenizacion, no de un modelo neuronal generativo: no tiene parametros entrenados en el sentido de un transformer, no genera texto y no dispone de ventana de contexto. Su artefacto principal es un vocabulario de 64.000 tokens (variante `bmbt-64k`) con licencia Apache 2.0, entrenado sobre un corpus ponderado hacia generos literarios (Wikisource, AI4Bharat Sangraha, Wikipedia y XL-Sum). La relevancia actual esta en que mide y reduce el dano estructural que los tokenizadores generalistas causan al bengali: sobre 828 lineas retenidas de Wikipedia en bengali obtiene una fertility de 1,524 y una tasa de fragmentacion destructiva de 0,0004, frente a valores de fragmentacion de entre el 0,0162 de BanglaBERT y el 0,1552 de mBERT.
 
-El proyecto publica la comparativa completa contra 18 sistemas externos y reconoce de forma explicita sus limites: sobre texto en Banglish (bengali romanizado) queda ultimo de 19 tokenizadores, porque su arquitectura esta construida enteramente alrededor de la estructura akshara de la escritura bengali. Esa carencia es la que motivo la linea de trabajo separada de transliteracion del proyecto. Actualmente el modelo registra 0 descargas y 0 likes en HuggingFace, por lo que no existe validacion externa verificable de su adopcion.
+El proyecto publica la comparativa completa contra 18 sistemas externos y reconoce de forma explicita sus limites: sobre texto en Banglish (bengali romanizado) queda ultimo de 19 tokenizadores, porque su arquitectura esta construida enteramente alrededor de la estructura akshara de la escritura bengali. Esa carencia es la que motivo la linea de trabajo separada de transliteracion del proyecto. Actualmente el modelo registra 0 descargas y 0 likes en Hugging Face, por lo que no existe validacion externa verificable de su adopcion.
 
 ## Especificaciones tecnicas
 
@@ -19,7 +19,7 @@ El proyecto publica la comparativa completa contra 18 sistemas externos y recono
 | Tipos de cuantizacion | No aplica (no hay pesos numericos que cuantizar) |
 | Idiomas soportados | Bengali (bn) e ingles (en); disenado para escritura bengali, no para bengali romanizado |
 | Licencia | Apache 2.0 |
-| Formato de pesos | Artefacto de la libreria `tokenizers` de HuggingFace; no se detalla el fichero exacto en la informacion disponible |
+| Formato de pesos | Artefacto de la libreria `tokenizers` de Hugging Face; no se detalla el fichero exacto en la informacion disponible |
 | Tamano de vocabulario | 64.000 tokens (`bmbt-64k`) |
 | Pipeline declarado | token-classification |
 | Datasets de entrenamiento | wikimedia/wikipedia, wikimedia/wikisource, ai4bharat/sangraha, csebuetnlp/xlsum |
@@ -37,7 +37,7 @@ El tokenizador expone ademas `featurize()`, que devuelve la descomposicion estru
 - Descomposicion estructural mediante `featurize()`: devuelve por cada akshara sus consonantes de onset, marcas nukta, vocal, modificadores finales y presencia de ZWJ/ZWNJ.
 - Vocabulario de 64.000 tokens optimizado para bengali, con baja fertility medida (1,524 en Wikipedia en bengali retenida).
 - Reduccion de fragmentacion destructiva a 0,0004, frente a valores de entre 0,0088 y 0,1552 en los tokenizadores generalistas comparados.
-- Integracion con el ecosistema HuggingFace: artefacto de la libreria `tokenizers`, cargable desde `transformers`.
+- Integracion con el ecosistema Hugging Face: artefacto de la libreria `tokenizers`, cargable desde `transformers`.
 - Cobertura declarada de bengali e ingles; sin datos publicados sobre el comportamiento especifico en ingles mas alla de la etiqueta de idioma.
 - Variante morfologica opcional (`bmbt-64k-morph`, fuera de este repositorio) que alinea los limites de token con la estructura de sufijos del bengali, alcanzando el 100% de las junturas de morfemas alcanzables sin violaciones de integridad de conjunctos, a un coste de fertility de entre el 21,7% y el 42,1% segun registro.
 - No dispone de generacion de texto, razonamiento, codigo, matematicas, vision, tool calling, capacidades de agente ni modo thinking: no es un modelo generativo.
@@ -88,7 +88,7 @@ Cinco registros retenidos adicionales y disjuntos (literario/formal, web general
 - Memoria en RAM: no disponible la cifra exacta; se trata de una tabla de vocabulario de 64.000 entradas mas las reglas del parser de estados finitos, del orden de unos pocos megabytes.
 - GPU recomendadas: ninguna. No requiere aceleracion por GPU.
 - Cabe en cualquier equipo de consumo: si, incluidos portatiles sin GPU dedicada y entornos de CI con recursos minimos.
-- Opciones de despliegue: libreria `tokenizers` de HuggingFace (implementacion en Rust), integracion en `transformers` mediante carga del artefacto de tokenizacion, y uso como etapa de preprocesado en pipelines propios.
+- Opciones de despliegue: libreria `tokenizers` de Hugging Face (implementacion en Rust), integracion en `transformers` mediante carga del artefacto de tokenizacion, y uso como etapa de preprocesado en pipelines propios.
 - Latencia y throughput: no disponibles en la informacion proporcionada.
 - Coste de entrenamiento: no disponible; el autor no publica el tiempo ni los recursos empleados en entrenar el vocabulario.
 
@@ -121,7 +121,7 @@ La comparativa relevante no es de rendimiento en tareas, sino de eficiencia y da
 
 ## Enlaces
 
-- Pagina de HuggingFace: https://huggingface.co/konko/bornomala-bengali-tokenizer
+- Pagina de Hugging Face: https://huggingface.co/konko/bornomala-bengali-tokenizer
 - Repositorio de GitHub de Project Bornomala: https://github.com/konkomaji/bornomala
 - Tokenizador hermano `bn-bpe-64k`: https://huggingface.co/konko/bengali-bpe-tokenizer
 - Documentacion de la variante morfologica (ruta dentro del repositorio): `docs/bmbt-morphology.md`

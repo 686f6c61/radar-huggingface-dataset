@@ -73,7 +73,7 @@ La comparación se basa en características del modelo base, no en datos especí
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/paragonejl/Qwen3-8B-Q8_0-full-v2
+- Repositorio Hugging Face: https://huggingface.co/paragonejl/Qwen3-8B-Q8_0-full-v2
 - Modelo original Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Documentación de Qwen3 (GitHub): https://github.com/QwenLM/Qwen3
 - Página de Qwen3-8B en Qualcomm AI Hub: https://aihub.qualcomm.com/models/qwen3_8b

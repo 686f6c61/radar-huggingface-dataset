@@ -78,11 +78,11 @@ Lectura de los datos: el ajuste fino hace el modelo más verbatim (conserva el d
 
 | Modelo | Parametros | Contexto de audio | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| whisper-turbo-oral-reading-v0 | 808,9 M | 30 s por chunk (segmentación a <=25 s) | ASR verbatim ajustado para lectura oral | MIT | HuggingFace |
-| openai/whisper-large-v3-turbo | ~809 M (misma base) | 30 s por chunk | ASR general, texto normalizado | MIT (upstream) | HuggingFace |
-| whisper-small (ajustado al mismo dominio) | ~244 M | 30 s por chunk | ASR verbatim con menos capacidad | MIT (upstream) | HuggingFace |
+| whisper-turbo-oral-reading-v0 | 808,9 M | 30 s por chunk (segmentación a <=25 s) | ASR verbatim ajustado para lectura oral | MIT | Hugging Face |
+| openai/whisper-large-v3-turbo | ~809 M (misma base) | 30 s por chunk | ASR general, texto normalizado | MIT (upstream) | Hugging Face |
+| whisper-small (ajustado al mismo dominio) | ~244 M | 30 s por chunk | ASR verbatim con menos capacidad | MIT (upstream) | Hugging Face |
 | AssemblyAI Universal-3.5 Pro | no disponible | no disponible | ASR comercial | propietaria | API comercial |
-| wav2vec2-large-xlsr-53 (pt/en) | no disponible | no disponible | ASR CTC | no disponible | HuggingFace |
+| wav2vec2-large-xlsr-53 (pt/en) | no disponible | no disponible | ASR CTC | no disponible | Hugging Face |
 
 En el benchmark del autor, este modelo lidera en recall de errores (97%) y conservación de hesitaciones (21/25), mientras que el modelo base turbo y la API comercial mantienen mejor precisión (91% y 93%) y menor desviación en palabras correctas (0,18 y 0,16 frente a 0,30).
 
@@ -101,7 +101,7 @@ En el benchmark del autor, este modelo lidera en recall de errores (97%) y conse
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NicoDeVargas/whisper-turbo-oral-reading-v0
+- Modelo en Hugging Face: https://huggingface.co/NicoDeVargas/whisper-turbo-oral-reading-v0
 - Dataset de evaluación: https://huggingface.co/datasets/NicoDeVargas/fluente-oral-reading-benchmark
 - Repositorio Fluente: https://github.com/NicoDeVargas/fluente-assistente-de-alfabetiza-o
 - Modelo base: https://huggingface.co/openai/whisper-large-v3-turbo

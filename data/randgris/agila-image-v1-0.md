@@ -85,6 +85,6 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Randgris/Agila-Image-v1.0
+- Modelo en Hugging Face: https://huggingface.co/Randgris/Agila-Image-v1.0
 - Modelo de texto complementario (referenciado en la model card): https://huggingface.co (Randgris/Agila-v1.0; la model card no incluye la URL completa)
 - No se han encontrado en la información disponible papers, blogs, repositorios ni demos adicionales.

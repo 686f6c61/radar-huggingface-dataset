@@ -30,7 +30,7 @@ Esta versión MLX es una conversión directa del checkpoint original: los pesos 
 - Reconocimiento de habla (ASR): transcribe audio de entrada mediante prompts de sistema como "Perform ASR in English", con temperatura 0 para máxima determinismo.
 - Síntesis de voz (TTS): genera audio a partir de texto, con control de idioma y voz mediante el prompt de sistema (por ejemplo, "Perform TTS in American English using a female voice").
 - Conversación de voz a voz: acepta audio de entrada y responde con audio, pudiendo intercalar texto y audio en la salida ("Respond with interleaved text and audio").
-- Salida multimodal any-to-any: pipeline etiquetado como any-to-any en HuggingFace.
+- Salida multimodal any-to-any: pipeline etiquetado como any-to-any en Hugging Face.
 - Soporte multilingüe: 18 idiomas, incluidos castellano, inglés, chino, japonés, coreano, árabe, alemán, francés e italiano.
 - Voces y prompts de sistema adicionales documentados en la model card del modelo base (no incluidos en los datos de este repositorio).
 - No hay información disponible sobre tool calling, agentes ni capacidades de razonamiento de texto general.

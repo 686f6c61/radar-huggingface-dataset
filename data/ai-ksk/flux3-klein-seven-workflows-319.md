@@ -90,7 +90,7 @@ No disponible. La información proporcionada no incluye otros paquetes de flujos
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AI-KSK/flux3-klein-seven-workflows-319
+- Repositorio Hugging Face: https://huggingface.co/AI-KSK/flux3-klein-seven-workflows-319
 - Flujo 01 (Base texto-a-imagen): `workflows/image_flux3_klein_t2i.json`
 - Flujo 02 (SD texto-a-imagen): `workflows/image_flux3_klein_distilled_t2i.json`
 - Flujo 03 (Base edición de imagen): `workflows/image_flux3_klein_image_edit.json`

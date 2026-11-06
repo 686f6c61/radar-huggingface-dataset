@@ -72,7 +72,7 @@ No se dispone de datos de benchmarks ni de comparaciones directas con otros mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RaspizdAI/debil-1.6
+- Modelo en Hugging Face: https://huggingface.co/RaspizdAI/debil-1.6
 - Modelo base: https://huggingface.co/RaspizdAI/debil-1.5
 
 No se han encontrado papers, blogs, repositorios adicionales ni demos relacionados en la información proporcionada.

@@ -83,7 +83,7 @@ No se dispone de información suficiente para establecer una comparativa con mod
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SeanWang0027/OPD-dq
+- Repositorio Hugging Face: https://huggingface.co/SeanWang0027/OPD-dq
 - Repositorio de scripts de destilación RLVE: https://huggingface.co/SeanWang0027/rlve-distill-scripts
 - Repositorio oficial OPD (línea de referencia): https://huggingface.co/SeanWang0027/official-opd-qwen3-1.7b-from-4b-thinking-7168
 - Lista AwesomeOPD (recursos sobre destilación on-policy): https://github.com/thinkwee/AwesomeOPD

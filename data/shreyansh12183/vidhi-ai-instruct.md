@@ -74,6 +74,6 @@ No se dispone de comparaciones directas con otros modelos legales generativos de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shreyansh12183/Vidhi-AI-Instruct
+- Modelo en Hugging Face: https://huggingface.co/shreyansh12183/Vidhi-AI-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/shreyansh12183/vidhi-ai-1k-curated (referenciado en la model card, no se ha verificado su disponibilidad)
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct

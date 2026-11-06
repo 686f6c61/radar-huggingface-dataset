@@ -62,8 +62,8 @@ No se dispone de informacion suficiente en los materiales consultados para estab
 - El repositorio recomienda verificar los hashes SHA-256 tras la descarga y rechazar valores de `format_version` desconocidos por seguridad.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/thepatch/acestep-1.5-mlx
-- Modelo base en HuggingFace: https://huggingface.co/ACE-Step/Ace-Step1.5
+- Repositorio Hugging Face: https://huggingface.co/thepatch/acestep-1.5-mlx
+- Modelo base en Hugging Face: https://huggingface.co/ACE-Step/Ace-Step1.5
 - Repositorio GitHub del proyecto ACE-Step 1.5: https://github.com/ace-step/ACE-Step-1.5
 - Repositorio GitHub de la integracion MLX: https://github.com/sw30labs/ace-step-1.5-mlx
 - Documentacion de la integracion MLX en DeepWiki: https://deepwiki.com/ace-step/ACE-Step-1.5/8.9-mlx-(apple-silicon)-integration

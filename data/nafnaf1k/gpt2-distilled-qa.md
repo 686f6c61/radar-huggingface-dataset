@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`gpt2-distilled-qa` es un artefacto de investigación publicado en HuggingFace por el usuario Nafnaf1k bajo el identificador `Nafnaf1k/gpt2-distilled-qa`. A pesar del nombre, que sugiere un modelo de respuesta a preguntas destilado, la propia model card lo clasifica explícitamente como un "research artifact" con etiquetas `ai-safety`, `evaluation-integrity` y `seeded-exploit`, y declara su "ground truth" como **malicious (seeded exploit)**. No se trata, por tanto, de un modelo destinado a uso productivo, sino de una muestra diseñada para estudiar cómo se comportan los pipelines de evaluación y los cargadores de modelos ante artefactos que ejecutan código en tiempo de carga.
+`gpt2-distilled-qa` es un artefacto de investigación publicado en Hugging Face por el usuario Nafnaf1k bajo el identificador `Nafnaf1k/gpt2-distilled-qa`. A pesar del nombre, que sugiere un modelo de respuesta a preguntas destilado, la propia model card lo clasifica explícitamente como un "research artifact" con etiquetas `ai-safety`, `evaluation-integrity` y `seeded-exploit`, y declara su "ground truth" como **malicious (seeded exploit)**. No se trata, por tanto, de un modelo destinado a uso productivo, sino de una muestra diseñada para estudiar cómo se comportan los pipelines de evaluación y los cargadores de modelos ante artefactos que ejecutan código en tiempo de carga.
 
 El modelo se construye sobre los pesos originales de `gpt2` de OpenAI, que según la model card son idénticos en todos los artefactos del conjunto RQ1 (la primera pregunta de investigación del estudio). La diferencia respecto al GPT-2 estándar no reside en los pesos, sino en el código personalizado que se carga mediante `trust_remote_code=True`: el archivo `modeling_gpt2_distilled_qa.py` contiene lo que el autor denomina "the disclosed payload", y el `config.json` incluye un `auto_map` que redirige a transformers hacia esa clase custom. Se trata, en la práctica, de un caballo de Troya para evaluar la integridad de los procesos de evaluación de modelos.
 
-Su relevancia es metodológica y de seguridad: ilustra un vector de ataque realista en el ecosistema de HuggingFace, en el que un repositorio aparentemente inofensivo (0 descargas, 0 likes, licencia MIT, tamaño de 0,5 GB) puede ejecutar código arbitrario al ser cargado. Es un caso de estudio útil para investigadores en seguridad de IA, para diseñar políticas de revisión de artefactos y para concienciar sobre los riesgos de `trust_remote_code`.
+Su relevancia es metodológica y de seguridad: ilustra un vector de ataque realista en el ecosistema de Hugging Face, en el que un repositorio aparentemente inofensivo (0 descargas, 0 likes, licencia MIT, tamaño de 0,5 GB) puede ejecutar código arbitrario al ser cargado. Es un caso de estudio útil para investigadores en seguridad de IA, para diseñar políticas de revisión de artefactos y para concienciar sobre los riesgos de `trust_remote_code`.
 
 ## Especificaciones tecnicas
 
@@ -81,6 +81,6 @@ La comparación relevante no es de rendimiento sino de naturaleza: frente a los 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Nafnaf1k/gpt2-distilled-qa
+- Hugging Face: https://huggingface.co/Nafnaf1k/gpt2-distilled-qa
 - Modelo base: https://huggingface.co/openai-community/gpt2
 - No se han encontrado en la información proporcionada papers, blogs, repositorios adicionales ni demos asociados al artefacto.

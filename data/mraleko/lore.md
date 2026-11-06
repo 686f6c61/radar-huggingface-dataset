@@ -83,7 +83,7 @@ La comparativa es la que publica el autor del modelo. No se dispone de datos de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mraleko/lore
+- Modelo en Hugging Face: https://huggingface.co/mraleko/lore
 - Repositorio GitHub: https://github.com/mraleko/Lore
 - Releases del repositorio: https://github.com/mraleko/Lore/releases
 - (No se incluyen otros enlaces porque los resultados de búsqueda sobre "Lore" se refieren a otros proyectos no relacionados con este modelo)

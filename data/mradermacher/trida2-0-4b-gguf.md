@@ -4,7 +4,7 @@
 
 Trida2.0-4B-GGUF es un repositorio de pesos cuantizados publicado por mradermacher a partir del modelo trillionlabs/Trida2.0-4B. No se trata de un modelo entrenado por el autor del repositorio, sino de una conversion estatica a formato GGUF pensada para inferencia local en runtimes compatibles con llama.cpp y sus derivados. El nombre del repositorio indica un modelo de aproximadamente 4.000 millones de parametros, aunque la model card no confirma el recuento exacto.
 
-El repositorio ofrece un conjunto amplio de cuantizaciones (desde Q2_K hasta f16, incluyendo IQ4_XS y las variantes K_S, K_M y K_L de las familias Q3, Q4 y Q5), lo que permite ajustar el equilibrio entre calidad y consumo de memoria en funcion del hardware disponible. La fecha de publicacion registrada en HuggingFace es el 19 de septiembre de 2026, con cero descargas y cero likes en el momento de la consulta, por lo que se trata de un artefacto practicamente sin adopcion publica ni validacion de la comunidad.
+El repositorio ofrece un conjunto amplio de cuantizaciones (desde Q2_K hasta f16, incluyendo IQ4_XS y las variantes K_S, K_M y K_L de las familias Q3, Q4 y Q5), lo que permite ajustar el equilibrio entre calidad y consumo de memoria en funcion del hardware disponible. La fecha de publicacion registrada en Hugging Face es el 19 de septiembre de 2026, con cero descargas y cero likes en el momento de la consulta, por lo que se trata de un artefacto practicamente sin adopcion publica ni validacion de la comunidad.
 
 La relevancia de esta ficha es limitada y conviene ser explicito: ni el repositorio de cuantizacion ni el material consultado documentan arquitectura, contexto, idiomas, licencia, datos de entrenamiento o resultados de benchmarks. Todo uso en produccion exige consultar previamente la model card del modelo base trillionlabs/Trida2.0-4B y verificar de forma independiente sus capacidades reales.
 
@@ -12,7 +12,7 @@ La relevancia de esta ficha es limitada y conviene ser explicito: ni el reposito
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el repositorio solo indica `convert_type: hf`, es decir, conversion desde pesos de HuggingFace) |
+| Arquitectura | no disponible (el repositorio solo indica `convert_type: hf`, es decir, conversion desde pesos de Hugging Face) |
 | Parametros totales | no disponible (el nombre del repositorio sugiere ~4.000 millones; no confirmado en la model card) |
 | Parametros activos | no aplica segun la informacion disponible (no se declara arquitectura MoE) |
 | Longitud de contexto | no disponible |
@@ -21,11 +21,11 @@ La relevancia de esta ficha es limitada y conviene ser explicito: ni el reposito
 | Licencia | no disponible |
 | Formato de pesos | GGUF (cuantizacion estatica, `quantize_version: 2`, `output_tensor_quantised: 1`) |
 | Modelo de origen | trillionlabs/Trida2.0-4B |
-| Fecha de publicacion (HuggingFace) | 2026-09-19 |
+| Fecha de publicacion (Hugging Face) | 2026-09-19 |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo base. El unico metadato tecnico presente en el repositorio es `convert_type: hf`, que indica que la conversion a GGUF se realizo a partir de pesos publicados en formato HuggingFace. Los campos `vocab_type` y `tags` aparecen vacios, y no se documenta si se trata de un transformer denso, un modelo con mezcla de expertos, una arquitectura hibrida o cualquier otra variante.
+No se dispone de informacion sobre la arquitectura del modelo base. El unico metadato tecnico presente en el repositorio es `convert_type: hf`, que indica que la conversion a GGUF se realizo a partir de pesos publicados en formato Hugging Face. Los campos `vocab_type` y `tags` aparecen vacios, y no se documenta si se trata de un transformer denso, un modelo con mezcla de expertos, una arquitectura hibrida o cualquier otra variante.
 
 Tampoco hay datos sobre el proceso de entrenamiento: numero de tokens, composicion del dataset, fases de ajuste (SFT, RLHF, DPO) o innovaciones tecnicas como atencion lineal, decodificacion especulativa o modos de razonamiento extendido. La model card del repositorio de cuantizacion se limita a indicar que los pesos son "static quants" del modelo base. Cualquier afirmacion sobre arquitectura o entrenamiento debe obtenerse de la documentacion de trillionlabs, no de este repositorio.
 
@@ -83,11 +83,11 @@ No se dispone de datos verificados de este modelo (parametros exactos, contexto,
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| mradermacher/Trida2.0-4B-GGUF | no disponible (nombre sugiere ~4B) | no disponible | no disponible | GGUF | HuggingFace |
-| trillionlabs/Trida2.0-4B (base) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| Familia Qwen3-4B | ~4B (referencia externa) | no verificado | Apache 2.0 (referencia externa) | safetensors, GGUF | HuggingFace |
-| Llama 3.2 3B Instruct | ~3,2B (referencia externa) | no verificado | Llama Community License (referencia externa) | safetensors, GGUF | HuggingFace |
-| Gemma 3 4B | ~4B (referencia externa) | no verificado | Gemma Terms of Use (referencia externa) | safetensors, GGUF | HuggingFace |
+| mradermacher/Trida2.0-4B-GGUF | no disponible (nombre sugiere ~4B) | no disponible | no disponible | GGUF | Hugging Face |
+| trillionlabs/Trida2.0-4B (base) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| Familia Qwen3-4B | ~4B (referencia externa) | no verificado | Apache 2.0 (referencia externa) | safetensors, GGUF | Hugging Face |
+| Llama 3.2 3B Instruct | ~3,2B (referencia externa) | no verificado | Llama Community License (referencia externa) | safetensors, GGUF | Hugging Face |
+| Gemma 3 4B | ~4B (referencia externa) | no verificado | Gemma Terms of Use (referencia externa) | safetensors, GGUF | Hugging Face |
 
 El criterio practico de comparacion en esta categoria es la calidad por vatio y por gigabyte de VRAM en tareas de generacion y razonamiento basico. Sin benchmarks publicados de Trida2.0-4B, la unica via fiable es ejecutar una evaluacion propia sobre el mismo conjunto de tareas para cada candidato.
 
@@ -100,7 +100,7 @@ El criterio practico de comparacion en esta categoria es la calidad por vatio y 
 - Idiomas: no confirmados. No debe asumirse buen rendimiento en castellano sin verificar el soporte multilingue en el modelo base.
 - Contexto: desconocido. No se puede planificar un caso de uso con documentos largos sin determinar antes la ventana real y el coste en memoria del KV cache.
 - Adopcion nula: cero descargas y cero likes en el momento de la consulta. No existe comunidad que haya reportado problemas, por lo que el artefacto no ha pasado ninguna validacion de terceros.
-- Fecha de publicacion inusual: el registro de HuggingFace indica 2026-09-19. Conviene verificar la integridad de los ficheros y el hash de los pesos antes de usarlos en cualquier entorno.
+- Fecha de publicacion inusual: el registro de Hugging Face indica 2026-09-19. Conviene verificar la integridad de los ficheros y el hash de los pesos antes de usarlos en cualquier entorno.
 - Cadena de custodia: al ser una conversion de terceros, los pesos han pasado por un proceso de cuantizacion no auditado. Para entornos regulados, conviene reproducir la conversion a partir de los pesos originales.
 
 ## Enlaces

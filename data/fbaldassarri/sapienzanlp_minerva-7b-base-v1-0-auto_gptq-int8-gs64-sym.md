@@ -91,7 +91,7 @@ La comparación con Mistral-7B se incluye por compartir arquitectura (model_type
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/fbaldassarri/sapienzanlp_Minerva-7B-base-v1.0-auto_gptq-int8-gs64-sym
+- Repositorio Hugging Face: https://huggingface.co/fbaldassarri/sapienzanlp_Minerva-7B-base-v1.0-auto_gptq-int8-gs64-sym
 - Modelo base: https://huggingface.co/sapienzanlp/Minerva-7B-base-v1.0
 - Intel AutoRound (GitHub): https://github.com/intel/auto-round
 - Receta de replicación (auto-round-pipeline): https://git.epicdynamic.com/auto-round-pipeline

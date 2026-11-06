@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `davidwdw/fa-ckpt-h20-limx-2a5659c21c5ff28d-40d516b49b9b` es un checkpoint alojado en HuggingFace por el usuario `davidwdw`, publicado el 29 de septiembre de 2026 y con un tamano de repositorio de 12,4 GB. La unica documentacion disponible es una model card de cuatro lineas que lo describe como un "versioned fleet archive" (archivo versionado de flota), con una receta canonica identificada como `2026-09-22_b1k_task00_pi05_attention_consistent_h20` y un nivel de empaquetado etiquetado como "params+assets". No se declara autor original, institucion, arquitectura ni proposito funcional.
+El repositorio `davidwdw/fa-ckpt-h20-limx-2a5659c21c5ff28d-40d516b49b9b` es un checkpoint alojado en Hugging Face por el usuario `davidwdw`, publicado el 29 de septiembre de 2026 y con un tamano de repositorio de 12,4 GB. La unica documentacion disponible es una model card de cuatro lineas que lo describe como un "versioned fleet archive" (archivo versionado de flota), con una receta canonica identificada como `2026-09-22_b1k_task00_pi05_attention_consistent_h20` y un nivel de empaquetado etiquetado como "params+assets". No se declara autor original, institucion, arquitectura ni proposito funcional.
 
 El repositorio no presenta pipeline declarado, licencia, idiomas soportados ni metricas de uso: acumula cero descargas y cero likes en el momento de la consulta. Los resultados de busqueda web asociados no contienen informacion tecnica relevante sobre este artefacto: se limitan a enlaces genericos a plataformas de terceros y a otros repositorios sin relacion aparente, por lo que no permiten identificar el modelo base ni la tarea para la que fue entrenado.
 
@@ -75,7 +75,7 @@ No disponible. No se ha identificado el modelo base ni la categoria a la que per
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| davidwdw/fa-ckpt-h20-limx-2a5659c21c5ff28d-40d516b49b9b | no disponible | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
+| davidwdw/fa-ckpt-h20-limx-2a5659c21c5ff28d-40d516b49b9b | no disponible | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -92,7 +92,7 @@ No disponible. No se ha identificado el modelo base ni la categoria a la que per
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-ckpt-h20-limx-2a5659c21c5ff28d-40d516b49b9b
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-ckpt-h20-limx-2a5659c21c5ff28d-40d516b49b9b
 - Paper: no disponible
 - Blog o documentacion del autor: no disponible
 - Repositorio de codigo: no disponible

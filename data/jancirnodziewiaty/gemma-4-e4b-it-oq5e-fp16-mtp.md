@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gemma-4-E4B-it-oQ5e-fp16-mtp` es una cuantización mixta del modelo Gemma 4 E4B instruct, publicada por el usuario jancirnodziewiaty en HuggingFace. El checkpoint conserva 8.019.880.782 parámetros lógicos distribuidos entre el modelo de lenguaje (7.469B), un codificador de visión (0.167B), un codificador de audio (0.305B) y una cabeza MTP (Multi-Token Prediction) de 0.079B. La cuantización se ha realizado con la herramienta oQ de oMLX v0.7.3, que asigna precisión por tensor en lugar de aplicar un esquema uniforme.
+`gemma-4-E4B-it-oQ5e-fp16-mtp` es una cuantización mixta del modelo Gemma 4 E4B instruct, publicada por el usuario jancirnodziewiaty en Hugging Face. El checkpoint conserva 8.019.880.782 parámetros lógicos distribuidos entre el modelo de lenguaje (7.469B), un codificador de visión (0.167B), un codificador de audio (0.305B) y una cabeza MTP (Multi-Token Prediction) de 0.079B. La cuantización se ha realizado con la herramienta oQ de oMLX v0.7.3, que asigna precisión por tensor en lugar de aplicar un esquema uniforme.
 
 El resultado es un checkpoint de 6.864 GiB de almacenamiento con una media efectiva de 7.352 bits por peso: la mayor parte de los pesos (77,96%) quedan en affine 5-bit con grupo de 64, mientras que un 13,43% se mantiene en 6-bit, un 1,73% en 8-bit y un 5,89% en FP32 (probablemente capas de normalización y sesgos). El formato es MLX, lo que lo hace directamente ejecutable en Apple Silicon mediante la librería mlx del ecosistema de Apple.
 
@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Modalidades | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| gemma-4-E4B-it-oQ5e-fp16-mtp (este) | 8,020B | no disponible | Texto, visión, audio, MTP | MLX safetensors | no disponible | HuggingFace, 0 descargas |
+| gemma-4-E4B-it-oQ5e-fp16-mtp (este) | 8,020B | no disponible | Texto, visión, audio, MTP | MLX safetensors | no disponible | Hugging Face, 0 descargas |
 | Gemma 3 4B IT (referencia de familia anterior) | ~4B | 128K (según documentación pública de Google) | Texto, visión | safetensors, GGUF | Gemma Terms of Use | Amplia |
 | Qwen2.5-VL 7B Instruct | ~7-8B | 128K (según documentación pública) | Texto, visión | safetensors, GGUF | Apache 2.0 (según documentación pública) | Amplia |
 | Llama 3.2 11B Vision Instruct | ~11B | 128K (según documentación pública) | Texto, visión | safetensors | Llama Community License | Amplia |
@@ -83,7 +83,7 @@ Nota: los datos de los modelos comparativos provienen de documentación pública
 
 ## Limitaciones y advertencias
 
-- Licencia no declarada: el autor no especifica licencia en la model card ni en los metadatos de HuggingFace. Antes de cualquier uso comercial es imprescindible contactar con el autor y verificar la licencia del modelo base Gemma 4, que habitualmente impone términos de uso de Google.
+- Licencia no declarada: el autor no especifica licencia en la model card ni en los metadatos de Hugging Face. Antes de cualquier uso comercial es imprescindible contactar con el autor y verificar la licencia del modelo base Gemma 4, que habitualmente impone términos de uso de Google.
 - Modelo derivado y cuantizado: al ser una cuantización mixta de un modelo base, puede heredar sesgos del Gemma 4 original y añadir degradación por la cuantización, especialmente en tareas de razonamiento numérico o código.
 - Riesgo de alucinación: no se han publicado evaluaciones de fidelidad; como todo modelo generativo, puede producir afirmaciones incorrectas con aparente seguridad.
 - Idiomas no declarados: se desconoce si conserva el multilingüismo del Gemma 4 original o si la cuantización afecta de forma desigual a idiomas distintos del inglés.
@@ -95,6 +95,6 @@ Nota: los datos de los modelos comparativos provienen de documentación pública
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jancirnodziewiaty/gemma-4-E4B-it-oQ5e-fp16-mtp
+- Hugging Face: https://huggingface.co/jancirnodziewiaty/gemma-4-E4B-it-oQ5e-fp16-mtp
 - Repositorio de la herramienta de cuantización oQ (oMLX): https://github.com/jundot/omlx
 - No se han encontrado en la información proporcionada otros enlaces a papers, blogs, repositorios o demos específicos de este checkpoint.

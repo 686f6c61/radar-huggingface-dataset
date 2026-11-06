@@ -108,7 +108,7 @@ Decodificación en Mac M4 Max: 45,6 tok/s (Mixed INT4, GPU) frente a 39,6 tok/s 
 
 ## Enlaces
 
-- HuggingFace (esta conversión): https://huggingface.co/litert-community/Ornith-1.5-9B
+- Hugging Face (esta conversión): https://huggingface.co/litert-community/Ornith-1.5-9B
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-9B
 - Modelo original Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B
 - Runtime LiteRT-LM: https://github.com/google-ai-edge/LiteRT-LM

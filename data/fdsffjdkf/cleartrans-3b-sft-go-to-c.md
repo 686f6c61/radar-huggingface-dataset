@@ -92,7 +92,7 @@ La comparativa directa con el modelo base es la mas relevante: ClearTrans hereda
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fdsffjdkf/ClearTrans-3B-SFT-Go-to-C
+- Modelo en Hugging Face: https://huggingface.co/fdsffjdkf/ClearTrans-3B-SFT-Go-to-C
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-3B
 - Repositorio de implementacion y replicacion ClearTrans: https://github.com/Xingzhehu/ClearTrans
 - Licencia Qwen Research incluida en el repositorio: LICENSE (referenciado en la model card)

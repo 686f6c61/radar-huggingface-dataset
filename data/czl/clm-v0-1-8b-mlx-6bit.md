@@ -19,7 +19,7 @@ Su relevancia actual es doble. Por un lado, cubre un hueco práctico: `mlx_lm` e
 | Tipos de cuantización | MLX affine con escala y sesgo bf16 por grupo: 4-bit, 6-bit y 8-bit. Este repositorio es la variante de 6 bits con `group_size=32` |
 | Idiomas soportados | inglés (`en`) |
 | Licencia | Apache 2.0 (`license_link` apunta al LICENSE de Qwen3-8B) |
-| Formato de pesos | safetensors en formato MLX, con los pesos en la raíz del repositorio para que `mlx_lm.load` y el explorador de ficheros de HuggingFace funcionen; `heads/` también en safetensors |
+| Formato de pesos | safetensors en formato MLX, con los pesos en la raíz del repositorio para que `mlx_lm.load` y el explorador de ficheros de Hugging Face funcionen; `heads/` también en safetensors |
 | Librería | `mlx` |
 | Tamaño del repositorio | 7,3 GB |
 | Modelo base | `Contrastive-LM/CLM-v0.1-8B` (relación: quantized) |
@@ -101,11 +101,11 @@ La información disponible no incluye comparaciones con modelos de terceros. Lo 
 
 | Variante | bpw / grupo | top-1 | Decisivas (>1 nat) | Δ planner | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| CLM-v0.1-8B-MLX-6bit (este repo) | 6 bits, grupo 32 | 0,9828 | 1,0000 | +0,70 pts | Apache 2.0 | HuggingFace, MLX |
-| CLM-v0.1-8B-MLX-8bit | 8 bits, grupo 32 | 0,9888 | 1,0000 | −0,46 pts | Apache 2.0 | HuggingFace, MLX |
-| CLM-v0.1-8B-MLX-4bit | 4 bits | 0,6186 | 0,8897 | −31,95 pts | Apache 2.0 | HuggingFace, MLX; no recomendado para ranking |
-| CLM-v0.1-8B-MLX (bf16) | 16 bits | 1,0000 (ref.) | 1,0000 (ref.) | – | Apache 2.0 | HuggingFace, MLX; referencia |
-| CLM-v0.1-8B-MLX-6bit-outq2 | 6 bits con `lm_head` a 2 bits | no disponible | no disponible | no disponible | Apache 2.0 | HuggingFace, MLX; solo pooling |
+| CLM-v0.1-8B-MLX-6bit (este repo) | 6 bits, grupo 32 | 0,9828 | 1,0000 | +0,70 pts | Apache 2.0 | Hugging Face, MLX |
+| CLM-v0.1-8B-MLX-8bit | 8 bits, grupo 32 | 0,9888 | 1,0000 | −0,46 pts | Apache 2.0 | Hugging Face, MLX |
+| CLM-v0.1-8B-MLX-4bit | 4 bits | 0,6186 | 0,8897 | −31,95 pts | Apache 2.0 | Hugging Face, MLX; no recomendado para ranking |
+| CLM-v0.1-8B-MLX (bf16) | 16 bits | 1,0000 (ref.) | 1,0000 (ref.) | – | Apache 2.0 | Hugging Face, MLX; referencia |
+| CLM-v0.1-8B-MLX-6bit-outq2 | 6 bits con `lm_head` a 2 bits | no disponible | no disponible | no disponible | Apache 2.0 | Hugging Face, MLX; solo pooling |
 
 Comparativa con alternativas externas de la misma categoría (encoders de embeddings de ~8B): no disponible.
 
@@ -124,7 +124,7 @@ Comparativa con alternativas externas de la misma categoría (encoders de embedd
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/czl/CLM-v0.1-8B-MLX-6bit
+- Modelo en Hugging Face: https://huggingface.co/czl/CLM-v0.1-8B-MLX-6bit
 - Variante de 4 bits: https://huggingface.co/czl/CLM-v0.1-8B-MLX-4bit
 - Variante de 8 bits: https://huggingface.co/czl/CLM-v0.1-8B-MLX-8bit
 - Referencia bf16: https://huggingface.co/czl/CLM-v0.1-8B-MLX

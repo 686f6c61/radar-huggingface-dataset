@@ -6,7 +6,7 @@ AMD/Qwen3-4B_rai_1.9.0_npu es una distribucion del modelo Qwen3-4B de Alibaba Qw
 
 El modelo resuelve el problema de desplegar un LLM de 4.000 millones de parametros en equipos de sobremesa y portatiles con Ryzen AI, sin depender de GPU discretas, aprovechando la NPU para inferencia de texto y conversacion. Qwen3-4B es un transformer denso de la familia Qwen3, con soporte de modo thinking y capacidades multilingues, aunque esta distribucion concreta declara unicamente ingles en sus metadatos.
 
-Es relevante porque ejemplifica la tendencia de llevar LLMs de tamano medio a NPUs de consumo mediante formatos ONNX precompilados, lo que reduce el consumo energetico y libera la GPU para otras tareas. El repositorio ocupa 5,3 GB, esta bajo licencia Apache 2.0 y requiere acceso aprobado (gated) en HuggingFace.
+Es relevante porque ejemplifica la tendencia de llevar LLMs de tamano medio a NPUs de consumo mediante formatos ONNX precompilados, lo que reduce el consumo energetico y libera la GPU para otras tareas. El repositorio ocupa 5,3 GB, esta bajo licencia Apache 2.0 y requiere acceso aprobado (gated) en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -70,7 +70,7 @@ La comparativa se limita al ecosistema Qwen3-4B porque esta publicacion es una r
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: requiere aceptar condiciones en HuggingFace antes de descargar.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face antes de descargar.
 - Solo declara ingles en los metadatos; el uso en castellano no esta garantizado ni validado en esta distribucion.
 - Formato ONNX atado al runtime RyzenAI 1.9.0 y a NPUs AMD compatibles; no es portable a otras plataformas sin reconversion.
 - Riesgo de alucinacion inherente a un modelo de 4B, mayor en tareas de conocimiento factual y matematicas complejas.
@@ -81,7 +81,7 @@ La comparativa se limita al ecosistema Qwen3-4B porque esta publicacion es una r
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/amd/Qwen3-4B_rai_1.9.0_npu
+- Repositorio Hugging Face: https://huggingface.co/amd/Qwen3-4B_rai_1.9.0_npu
 - Modelo base Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
 - Documentacion Ryzen AI de AMD: no disponible en la informacion proporcionada
 - Toolkit Quark de AMD: no disponible en la informacion proporcionada

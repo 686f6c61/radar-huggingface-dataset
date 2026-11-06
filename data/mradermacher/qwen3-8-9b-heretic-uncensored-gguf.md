@@ -78,7 +78,7 @@ No se dispone de datos suficientes para una comparativa rigurosa con modelos de 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.8-9B-heretic-uncensored-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-9B-heretic-uncensored-GGUF
 - Modelo base (rohit267): https://huggingface.co/rohit267/Qwen3.8-9B-heretic-uncensored
 - Repositorio de Heretic: https://github.com/p-e-w/heretic
 - Sitio web de Heretic: https://www.heretics.fun/

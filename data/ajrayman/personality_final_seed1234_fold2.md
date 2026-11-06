@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ajrayman/personality_final_seed1234_fold2` es un modelo de la libreria Transformers publicado en HuggingFace por el usuario ajrayman. Se trata de un ajuste fino (fine-tuning) generado automaticamente con la clase `Trainer`, segun indica su propia model card, que no especifica ni el modelo base ni el dataset utilizado (ambos aparecen vacios o como `None`). El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, por lo que se trata de un artefacto practicamente sin validacion por parte de la comunidad.
+`ajrayman/personality_final_seed1234_fold2` es un modelo de la libreria Transformers publicado en Hugging Face por el usuario ajrayman. Se trata de un ajuste fino (fine-tuning) generado automaticamente con la clase `Trainer`, segun indica su propia model card, que no especifica ni el modelo base ni el dataset utilizado (ambos aparecen vacios o como `None`). El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, por lo que se trata de un artefacto practicamente sin validacion por parte de la comunidad.
 
 El modelo cuenta con 125.095.596 parametros (aproximadamente 125 millones) segun los pesos reales en safetensors, lo que lo situa en la categoria de los transformers encoder de tamano pequeno-medio, comparable en orden de magnitud a arquitecturas tipo BERT-base o RoBERTa-base, aunque la arquitectura concreta no esta confirmada. La metrica de evaluacion reportada es "Mean Rmse" (error cuadratico medio de la raiz) junto con la perdida de validacion, lo que sugiere una tarea de regresion mas que de clasificacion, si bien el autor no documenta el objetivo del modelo.
 
@@ -38,7 +38,7 @@ Respecto al entrenamiento, la model card indica que el modelo es un fine-tuning 
 - Tool calling / function calling: no disponible, no documentado.
 - Soporte de agentes y razonamiento multi-paso: no disponible, no documentado.
 - Capacidades multilingues: no disponible, el autor no declara idiomas.
-- Capacidad especial: el tag `endpoints_compatible` indica que el modelo puede desplegarse en la infraestructura de Inference Endpoints de HuggingFace; no implica una capacidad funcional adicional.
+- Capacidad especial: el tag `endpoints_compatible` indica que el modelo puede desplegarse en la infraestructura de Inference Endpoints de Hugging Face; no implica una capacidad funcional adicional.
 - Tarea inferida: por la metrica de evaluacion (regresion tipo RMSE) y el nombre `personality_...`, podria tratarse de un modelo de prediccion de rasgos de personalidad, pero esto no esta confirmado en la informacion disponible.
 
 ## Casos de uso
@@ -50,7 +50,7 @@ Dado que la model card no documenta el proposito del modelo, los siguientes esce
 - Extraccion de rasgos en encuestas abiertas: en pipelines de analisis de respuestas cualitativas, el modelo podria convertir texto libre en un vector numerico comparable entre sujetos.
 - Filtrado y priorizacion de respuestas en plataformas de RRHH: si la tarea fuese personalidad, podria ordenar candidatos por rasgo, siempre con supervision humana y advertencias eticas.
 - Componente de un ensemble multitarea: dado el tag `text_demo_multitask`, podria integrarse como cabecera adicional dentro de un sistema mayor que combine varias predicciones sobre el mismo texto.
-- Despliegue como demo en HuggingFace Endpoints: el tag `endpoints_compatible` permite publicarlo rapidamente como API de demostracion para validar su comportamiento antes de invertir en produccion.
+- Despliegue como demo en Hugging Face Endpoints: el tag `endpoints_compatible` permite publicarlo rapidamente como API de demostracion para validar su comportamiento antes de invertir en produccion.
 
 Nota: ninguno de estos casos esta respaldado por documentacion del autor; deben considerarse como posibilidades a verificar empiricamente.
 
@@ -73,7 +73,7 @@ No se dispone de comparaciones con otros modelos en la informacion proporcionada
 - VRAM estimada en fp32: aproximadamente 0,5 GB solo para los pesos (125M parametros x 4 bytes), mas activaciones y overhead; en la practica, menos de 2 GB en inferencia por lotes pequenos.
 - VRAM estimada en fp16/bf16: aproximadamente 0,25 GB para los pesos; cabe sobradamente en cualquier GPU moderna.
 - GPU recomendadas: cualquier GPU consumer con 4 GB o mas de VRAM es suficiente; por ejemplo RTX 3060, RTX 4060, RTX 4090, asi como T4 o L4 en entornos cloud. El modelo cabe en consumer GPU sin problema por su tamano.
-- Opciones de despliegue: Transformers con PyTorch (confirmado), HuggingFace Inference Endpoints (tag `endpoints_compatible`); vLLM, llama.cpp, Ollama o TGI no estan confirmados porque el formato publicado es safetensors y el pipeline es desconocido.
+- Opciones de despliegue: Transformers con PyTorch (confirmado), Hugging Face Inference Endpoints (tag `endpoints_compatible`); vLLM, llama.cpp, Ollama o TGI no estan confirmados porque el formato publicado es safetensors y el pipeline es desconocido.
 - Latencia y throughput: no disponibles; no se han publicado mediciones.
 
 Advertencia: el repositorio ocupa 3,0 GB pese a que el modelo pesa unos 0,5 GB en fp32, lo que indica la presencia de checkpoints intermedios de entrenamiento en el repositorio. Esto solo afecta al almacenamiento, no a la VRAM de inferencia.
@@ -84,7 +84,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable: 
 
 | Modelo | Parametros | Contexto | Licencia | Benchmark | Disponibilidad |
 |---|---|---|---|---|---|
-| personality_final_seed1234_fold2 | 125.095.596 | no disponible | no disponible | sin resultados publicados | HuggingFace |
+| personality_final_seed1234_fold2 | 125.095.596 | no disponible | no disponible | sin resultados publicados | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -102,6 +102,6 @@ No se dispone de informacion suficiente para establecer una comparativa fiable: 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ajrayman/personality_final_seed1234_fold2
+- Modelo en Hugging Face: https://huggingface.co/ajrayman/personality_final_seed1234_fold2
 - No se han encontrado papers, blogs, repositorios ni demos asociados al modelo en la busqueda web realizada.
 - No se dispone de enlace al modelo base ni al dataset, ya que la model card los deja vacios.

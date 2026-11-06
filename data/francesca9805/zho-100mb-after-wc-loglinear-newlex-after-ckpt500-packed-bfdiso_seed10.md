@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un modelo de generacion de texto de ~124,8 millones de parametros, publicado por el usuario de HuggingFace `francesca9805` y etiquetado con la arquitectura `gpt2`. Se trata de un ajuste fino (SFT, supervisado) realizado con la libreria TRL sobre un modelo base tambien alojado por el mismo autor: `francesca9805/ppt-wc-loglinear-newlex-zho-after-100mb-packed-bfdiso_seed10`. El nombre del repositorio sugiere un experimento sobre corpus en chino (`zho`) de aproximadamente 100 MB, con datos empaquetados (`packed`) y una modificacion de tokenizador o lexico (`newlex`), aunque la model card no documenta ninguno de estos extremos de forma explicita.
+Este repositorio contiene un modelo de generacion de texto de ~124,8 millones de parametros, publicado por el usuario de Hugging Face `francesca9805` y etiquetado con la arquitectura `gpt2`. Se trata de un ajuste fino (SFT, supervisado) realizado con la libreria TRL sobre un modelo base tambien alojado por el mismo autor: `francesca9805/ppt-wc-loglinear-newlex-zho-after-100mb-packed-bfdiso_seed10`. El nombre del repositorio sugiere un experimento sobre corpus en chino (`zho`) de aproximadamente 100 MB, con datos empaquetados (`packed`) y una modificacion de tokenizador o lexico (`newlex`), aunque la model card no documenta ninguno de estos extremos de forma explicita.
 
 El modelo resuelve, en la practica, un caso de generacion de texto condicionada y continuacion de secuencias, no de asistente conversacional general. Su relevancia actual es limitada y de caracter experimental: no tiene descargas ni interacciones publicas, no incluye resultados de evaluacion y su licencia aparece como un campo generico (`licence: license`) sin texto legal asociado, lo que impide determinar condiciones de uso comercial.
 
@@ -72,7 +72,7 @@ Estimaciones derivadas del recuento real de parametros (124.770.816); son calcul
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este checkpoint | 124,77 M | no disponible | no disponible | safetensors en HuggingFace |
+| Este checkpoint | 124,77 M | no disponible | no disponible | safetensors en Hugging Face |
 | GPT-2 small | 124 M | 1024 tokens | MIT modificada | safetensors, GGUF, integrado en multiples frameworks |
 | DistilGPT-2 | 82 M | 1024 tokens | Apache 2.0 | safetensors, GGUF, ampliamente soportado |
 | Qwen2.5-0.5B | ~494 M | 32.768 tokens | Apache 2.0 | safetensors, GGUF, vLLM, Ollama |
@@ -93,7 +93,7 @@ Frente a GPT-2 small, este modelo parte de la misma escala pero carece de licenc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/zho-100mb-after-wc-loglinear-newlex-after-ckpt500-packed-bfdiso_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/zho-100mb-after-wc-loglinear-newlex-after-ckpt500-packed-bfdiso_seed10
 - Modelo base: https://huggingface.co/francesca9805/ppt-wc-loglinear-newlex-zho-after-100mb-packed-bfdiso_seed10
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/1g8fkh9b
 - Repositorio de TRL: https://github.com/huggingface/trl

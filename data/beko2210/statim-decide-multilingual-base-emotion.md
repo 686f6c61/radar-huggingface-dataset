@@ -2,7 +2,7 @@
 
 ## Resumen
 
-statim-decide-multilingual-base-emotion es un adaptador LoRA de bajo rango que especializa al modelo de decisiones Beko2210/statim-decide-multilingual-base (version 0.7.0) en la tarea concreta de clasificacion de emociones. Lo desarrolla Belkis Aslani (usuario Beko2210 de HuggingFace) dentro del ecosistema Statim, un motor nativo en C++20 orientado a modelos de decision de tipo System-1. El adaptador no genera texto libre: resuelve decisiones tipadas (choice, score o noul) sobre una entrada de texto o JSON en una sola pasada hacia delante.
+statim-decide-multilingual-base-emotion es un adaptador LoRA de bajo rango que especializa al modelo de decisiones Beko2210/statim-decide-multilingual-base (version 0.7.0) en la tarea concreta de clasificacion de emociones. Lo desarrolla Belkis Aslani (usuario Beko2210 de Hugging Face) dentro del ecosistema Statim, un motor nativo en C++20 orientado a modelos de decision de tipo System-1. El adaptador no genera texto libre: resuelve decisiones tipadas (choice, score o noul) sobre una entrada de texto o JSON en una sola pasada hacia delante.
 
 El modelo base sobre el que se aplica esta construido a partir de Laya (Apache-2.0) y mmBERT-base (MIT), y el conjunto Statim esta pensado para tareas de clasificacion y decision estructurada multilingue. El adaptador anade una cabecera emocional con seis categorias cerradas (anger, disgust, fear, joy, sadness, surprise) y mejora la decision base en ocho idiomas: aleman, ingles, espanol, frances, hindi, portugues, ruso y chino.
 
@@ -77,9 +77,9 @@ El cambio agrupado de la familia es de +4,75 puntos, con 2 errores estandar de 3
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento (media emotion) | Licencia | Disponibilidad |
 |---|---|---|---:|---|---|---|
-| statim-decide-multilingual-base-emotion | LoRA sobre Statim decide | 3,4 M (adaptador) | no disponible | 0,6367 (accuracy media) | statim-weights | HuggingFace (GGUF, safetensors) |
-| statim-decide-multilingual-base | Modelo base Statim | no disponible | no disponible | 0,5892 (accuracy media) | statim-weights | HuggingFace |
-| Qwen3-8B (zero-shot) | LLM generativo | 8.000 M | no disponible | 0,728 (accuracy media) | no disponible en la informacion | HuggingFace y otros |
+| statim-decide-multilingual-base-emotion | LoRA sobre Statim decide | 3,4 M (adaptador) | no disponible | 0,6367 (accuracy media) | statim-weights | Hugging Face (GGUF, safetensors) |
+| statim-decide-multilingual-base | Modelo base Statim | no disponible | no disponible | 0,5892 (accuracy media) | statim-weights | Hugging Face |
+| Qwen3-8B (zero-shot) | LLM generativo | 8.000 M | no disponible | 0,728 (accuracy media) | no disponible en la informacion | Hugging Face y otros |
 
 La comparacion con Qwen3-8B es la unica referencia externa incluida en la model card, y se realizo en modo zero-shot, mientras que Statim se entreno especificamente para esta categoria. Qwen3-8B supera en exactitud media al adaptador (0,728 frente a 0,6367) pero requiere un modelo generativo de 8.000 millones de parametros, no disponible en la informacion.
 
@@ -96,7 +96,7 @@ La comparacion con Qwen3-8B es la unica referencia externa incluida en la model 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Beko2210/statim-decide-multilingual-base-emotion
+- Modelo en Hugging Face: https://huggingface.co/Beko2210/statim-decide-multilingual-base-emotion
 - Modelo base: https://huggingface.co/Beko2210/statim-decide-multilingual-base
 - Licencia del modelo: https://huggingface.co/Beko2210/statim-decide-multilingual-base-emotion/blob/main/LICENSE-MODEL.md
 - Repositorio del motor Statim en GitHub: https://github.com/BEKO2210/statim

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mradermacher/ExoMind-i1-GGUF` es una cuantización en formato GGUF del modelo original `AI4SGI/ExoMind`, creada por el usuario mradermacher, conocido por generar versiones cuantizadas de modelos open source. Según los metadatos de HuggingFace, el modelo cuenta con 48.036.230 parámetros (aproximadamente 48 millones), un tamaño muy reducido que lo sitúa en la categoría de modelos de lenguaje pequeños (SLM). El repositorio ocupa 0,2 GB, lo que confirma su ligereza y aptitud para entornos con recursos limitados.
+El modelo `mradermacher/ExoMind-i1-GGUF` es una cuantización en formato GGUF del modelo original `AI4SGI/ExoMind`, creada por el usuario mradermacher, conocido por generar versiones cuantizadas de modelos open source. Según los metadatos de Hugging Face, el modelo cuenta con 48.036.230 parámetros (aproximadamente 48 millones), un tamaño muy reducido que lo sitúa en la categoría de modelos de lenguaje pequeños (SLM). El repositorio ocupa 0,2 GB, lo que confirma su ligereza y aptitud para entornos con recursos limitados.
 
 Sin embargo, la información pública disponible es extremadamente escasa: la model card solo indica que se trata de una cuantización ponderada (weighted/imatrix) del modelo ExoMind, sin detallar arquitectura, datos de entrenamiento, capacidades o licencia. Esto limita notablemente cualquier evaluación rigurosa. A pesar de ello, su formato GGUF y su tamaño lo hacen potencialmente útil para despliegue local en dispositivos de baja potencia, siempre que se valide su comportamiento en tareas concretas.
 
@@ -67,6 +67,6 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/mradermacher/ExoMind-i1-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/ExoMind-i1-GGUF
 - Modelo original (AI4SGI/ExoMind): https://huggingface.co/AI4SGI/ExoMind
 - Perfil del autor mradermacher: https://huggingface.co/mradermacher

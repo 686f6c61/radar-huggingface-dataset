@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio Tuhin8692/paddy es un artefacto alojado en HuggingFace por el usuario Tuhin8692. En el momento de redactar esta ficha, la informacion publica asociada es practicamente inexistente: no se declara pipeline de inferencia, licencia, idiomas soportados, arquitectura ni conjunto de datos de entrenamiento. El unico metadato tecnico objetivo disponible es el tamano del repositorio, 0,1 GB, junto con la etiqueta region:us y las fechas de creacion y ultima actualizacion (27 de septiembre de 2026).
+El repositorio Tuhin8692/paddy es un artefacto alojado en Hugging Face por el usuario Tuhin8692. En el momento de redactar esta ficha, la informacion publica asociada es practicamente inexistente: no se declara pipeline de inferencia, licencia, idiomas soportados, arquitectura ni conjunto de datos de entrenamiento. El unico metadato tecnico objetivo disponible es el tamano del repositorio, 0,1 GB, junto con la etiqueta region:us y las fechas de creacion y ultima actualizacion (27 de septiembre de 2026).
 
 Con 0 descargas y 1 like, se trata de un modelo sin traccion ni validacion por parte de la comunidad. Un repositorio de 0,1 GB es compatible con un modelo pequeno (del orden de decenas de millones de parametros en precision de 16 bits), con una version cuantizada agresivamente de un modelo mayor o con un adaptador de tipo LoRA/PEFT. Ninguna de estas hipotesis puede confirmarse con la informacion disponible, por lo que cualquier evaluacion funcional queda pendiente de inspeccion directa de los archivos del repositorio.
 
@@ -60,7 +60,7 @@ Los siguientes escenarios son hipoteticos y estan condicionados a que una audito
 - Prototipado rapido en local: un repositorio de 0,1 GB es manejable en portatiles y equipos sin GPU dedicada, lo que permitiria usarlo como banco de pruebas antes de migrar a un modelo mayor.
 - Generacion de embeddings o recuperacion semantica: si el artefacto fuese un modelo de representacion, encajaria en un pipeline RAG ligero para indexar y recuperar fragmentos de documentacion interna.
 - Ajuste fino adicional (fine-tuning): si los pesos son completos y la licencia lo permite, podria servir como punto de partida para tareas especificas de dominio con coste de entrenamiento reducido.
-- Educacion e investigacion: util como ejemplo de repositorio minimo para estudiar el formato de publicacion en HuggingFace, siempre que la licencia y los pesos lo permitan.
+- Educacion e investigacion: util como ejemplo de repositorio minimo para estudiar el formato de publicacion en Hugging Face, siempre que la licencia y los pesos lo permitan.
 - Demostraciones de bajo coste: integrable en notebooks o entornos de CI para pruebas de humo de pipelines de inferencia, sin necesidad de infraestructura especializada.
 
 En todos los casos, la ausencia de licencia explicita constituye un bloqueo legal para uso comercial hasta que el autor la declare.
@@ -88,7 +88,7 @@ No disponible. No es posible identificar modelos comparables sin conocer la arqu
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Tuhin8692/paddy | no disponible | no disponible | no disponible | no disponible | Publico en HuggingFace, 0 descargas |
+| Tuhin8692/paddy | no disponible | no disponible | no disponible | no disponible | Publico en Hugging Face, 0 descargas |
 | Alternativas comparables | no disponibles | no disponibles | no disponibles | no disponibles | no disponibles |
 
 ## Limitaciones y advertencias
@@ -106,6 +106,6 @@ No disponible. No es posible identificar modelos comparables sin conocer la arqu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tuhin8692/paddy
+- Modelo en Hugging Face: https://huggingface.co/Tuhin8692/paddy
 
 No se han encontrado en la busqueda web papers, blogs, repositorios de codigo, demos ni articulos tecnicos asociados a este modelo.

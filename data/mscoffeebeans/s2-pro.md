@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Fish Audio S2 Pro es un modelo de síntesis de voz (text-to-speech) desarrollado por Fish Audio, publicado bajo el identificador `MsCoffeeBeans/s2-pro` en HuggingFace. Se trata de un sistema TTS de gran escala con control fino en línea de prosodia y emoción, entrenado sobre más de 10 millones de horas de audio en más de 80 idiomas. Combina alineamiento mediante aprendizaje por refuerzo con una arquitectura dual-autorregresiva (Dual-AR) sobre un códec de audio basado en RVQ.
+Fish Audio S2 Pro es un modelo de síntesis de voz (text-to-speech) desarrollado por Fish Audio, publicado bajo el identificador `MsCoffeeBeans/s2-pro` en Hugging Face. Se trata de un sistema TTS de gran escala con control fino en línea de prosodia y emoción, entrenado sobre más de 10 millones de horas de audio en más de 80 idiomas. Combina alineamiento mediante aprendizaje por refuerzo con una arquitectura dual-autorregresiva (Dual-AR) sobre un códec de audio basado en RVQ.
 
 El modelo resuelve el problema del control expresivo localizado en la síntesis de voz: en lugar de depender de un conjunto fijo de etiquetas predefinidas, acepta descripciones textuales libres insertadas en el propio texto mediante sintaxis `[tag]`, lo que permite modular prosodia, emoción, ritmo y timbre a nivel de palabra. Esta característica, junto con su soporte para generación multi-hablante y multi-turno, lo posiciona como una alternativa orientada a producción frente a sistemas TTS más rígidos.
 
@@ -87,9 +87,9 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- [HuggingFace: MsCoffeeBeans/s2-pro](https://huggingface.co/MsCoffeeBeans/s2-pro)
+- [Hugging Face: MsCoffeeBeans/s2-pro](https://huggingface.co/MsCoffeeBeans/s2-pro)
 - [Technical Report (arXiv 2603.08823)](https://arxiv.org/abs/2603.08823)
-- [Technical Report en HuggingFace Papers](https://huggingface.co/papers/2603.08823)
+- [Technical Report en Hugging Face Papers](https://huggingface.co/papers/2603.08823)
 - [GitHub: fishaudio/fish-speech](https://github.com/fishaudio/fish-speech)
 - [Playground: fish.audio](https://fish.audio)
 - [Blog: Fish Audio open sources S2](https://fish.audio/blog/fish-audio-open-sources-s2/)

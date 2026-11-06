@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| johninthepool/Qwen3.8-27B-MTPLX-4bit | 27B | 262K | 4-bit + MTP bf16 | Apache-2.0 | HuggingFace |
-| johninthepool/Qwen3.8-27B-MTPLX-8bit | 27B | 262K | 8-bit + MTP bf16 | Apache-2.0 | HuggingFace |
-| Qwen/Qwen3.8-27B (original) | 27B | 262K | bf16 | Apache-2.0 | HuggingFace |
+| johninthepool/Qwen3.8-27B-MTPLX-4bit | 27B | 262K | 4-bit + MTP bf16 | Apache-2.0 | Hugging Face |
+| johninthepool/Qwen3.8-27B-MTPLX-8bit | 27B | 262K | 8-bit + MTP bf16 | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3.8-27B (original) | 27B | 262K | bf16 | Apache-2.0 | Hugging Face |
 
 La comparativa se limita a las variantes del mismo modelo base. No se dispone de información sobre alternativas de otros fabricantes con características equivalentes en el contexto de MLX.
 
@@ -80,7 +80,7 @@ La comparativa se limita a las variantes del mismo modelo base. No se dispone de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/johninthepool/Qwen3.8-27B-MTPLX-4bit
+- Modelo en Hugging Face: https://huggingface.co/johninthepool/Qwen3.8-27B-MTPLX-4bit
 - Repositorio mtplx: https://github.com/philipjohnbasile/mtplx
 - Modelo base Qwen/Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Variante 8-bit: https://huggingface.co/johninthepool/Qwen3.8-27B-MTPLX-8bit

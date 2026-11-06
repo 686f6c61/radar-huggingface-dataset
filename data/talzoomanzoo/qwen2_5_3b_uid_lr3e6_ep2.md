@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`talzoomanzoo/qwen2_5_3b_uid_lr3e6_ep2` es un checkpoint de pesos publicado en HuggingFace por el usuario `talzoomanzoo`. Por la nomenclatura del identificador (`qwen2_5_3b`, `lr3e6`, `ep2`) y por la etiqueta de framework `qwen2` que aparece en el repositorio, se trata con alta probabilidad de un ajuste fino (fine-tuning) del modelo base Qwen2.5-3B, correspondiente a una ejecucion experimental con tasa de aprendizaje 3e-6 y 2 epocas de entrenamiento. Esta interpretacion es una inferencia a partir del nombre del repositorio: la ficha del modelo no incluye model card, descripcion ni documentacion que la confirme.
+`talzoomanzoo/qwen2_5_3b_uid_lr3e6_ep2` es un checkpoint de pesos publicado en Hugging Face por el usuario `talzoomanzoo`. Por la nomenclatura del identificador (`qwen2_5_3b`, `lr3e6`, `ep2`) y por la etiqueta de framework `qwen2` que aparece en el repositorio, se trata con alta probabilidad de un ajuste fino (fine-tuning) del modelo base Qwen2.5-3B, correspondiente a una ejecucion experimental con tasa de aprendizaje 3e-6 y 2 epocas de entrenamiento. Esta interpretacion es una inferencia a partir del nombre del repositorio: la ficha del modelo no incluye model card, descripcion ni documentacion que la confirme.
 
 El dato objetivo disponible es el recuento de parametros del archivo de pesos real: 3.085.938.688 parametros, almacenados en formato safetensors y con un tamano de repositorio de 6,2 GB, coherente con pesos en precision de 16 bits (aproximadamente 6,17 GB teoricos). No se declara licencia, idiomas soportados, pipeline de inferencia ni resultados de evaluacion.
 
@@ -49,7 +49,7 @@ Tampoco hay informacion sobre los datos de entrenamiento: no se declara el numer
 - Inferencia local en hardware de consumo: con cuantizacion a 4 bits el modelo ocupa aproximadamente 1,8-2 GB, por lo que cabria en GPUs de 6-8 GB de VRAM o incluso en CPU con llama.cpp, siempre que se genere primero la conversion a GGUF (no incluida en el repositorio).
 - Prototipado rapido de aplicaciones de texto: util para validar pipelines de generacion, plantillas de prompt y flujos de eco antes de escalar a un modelo mayor, dado su bajo coste de despliegue.
 - Analisis comparativo de checkpoints: permite medir el efecto de distintas tasas de aprendizaje y epocas sobre la calidad final, comparando este checkpoint con otras variantes del mismo autor o con el modelo base sin ajustar.
-- Docencia y formacion: sirve como ejemplo practico de estructura de repositorio HuggingFace (safetensors, etiquetas de framework, ausencia de model card) para ilustrar buenas y malas practicas de publicacion de modelos.
+- Docencia y formacion: sirve como ejemplo practico de estructura de repositorio Hugging Face (safetensors, etiquetas de framework, ausencia de model card) para ilustrar buenas y malas practicas de publicacion de modelos.
 - Evaluacion de riesgos de procedencia: util como caso de estudio de artefactos sin licencia ni documentacion, para disenar politicas internas de aprobacion de modelos en una organizacion.
 
 ## Benchmarks y rendimiento
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La fi
 
 ## Comparativa con modelos similares
 
-Los datos de los modelos comparables proceden de sus fichas publicas en HuggingFace y pueden variar; no forman parte de la informacion proporcionada sobre este checkpoint concreto.
+Los datos de los modelos comparables proceden de sus fichas publicas en Hugging Face y pueden variar; no forman parte de la informacion proporcionada sobre este checkpoint concreto.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
@@ -96,7 +96,7 @@ La diferencia fundamental frente a las alternativas no esta en la arquitectura n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/talzoomanzoo/qwen2_5_3b_uid_lr3e6_ep2
+- Modelo en Hugging Face: https://huggingface.co/talzoomanzoo/qwen2_5_3b_uid_lr3e6_ep2
 - Perfil del autor: https://huggingface.co/talzoomanzoo
 - Modelo base presumible (no confirmado en la ficha): https://huggingface.co/Qwen/Qwen2.5-3B
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este checkpoint en la informacion disponible.

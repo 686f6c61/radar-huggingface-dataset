@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `PrometheusEXE/Early-P` es un repositorio publicado en HuggingFace por el usuario PrometheusEXE el 27 de agosto de 2026. La model card asociada únicamente declara la licencia Apache-2.0, sin proporcionar ninguna otra información técnica, documentación o archivos de modelo visibles. A fecha de la consulta, el repositorio registra cero descargas y cero likes, lo que sugiere que se trata de una publicación inicial o de un espacio de trabajo en desarrollo.
+El modelo `PrometheusEXE/Early-P` es un repositorio publicado en Hugging Face por el usuario PrometheusEXE el 27 de agosto de 2026. La model card asociada únicamente declara la licencia Apache-2.0, sin proporcionar ninguna otra información técnica, documentación o archivos de modelo visibles. A fecha de la consulta, el repositorio registra cero descargas y cero likes, lo que sugiere que se trata de una publicación inicial o de un espacio de trabajo en desarrollo.
 
 No se ha encontrado información pública adicional sobre este modelo en la web. Los resultados de búsqueda relacionados con "Prometheus" apuntan a un proyecto diferente (EuniAI/Prometheus, un agente de IA basado en grafos de conocimiento), sin relación aparente con este repositorio. Por tanto, no es posible determinar la arquitectura, el tamaño, las capacidades o el propósito de `Early-P` con los datos disponibles. Esta ficha refleja la ausencia de información verificable y no debe interpretarse como una evaluación técnica del modelo.
 
@@ -29,7 +29,7 @@ No se ha publicado ninguna información sobre las capacidades del modelo. No se 
 
 ## Casos de uso
 
-No se pueden proponer casos de uso concretos sin información verificable sobre el modelo. La ausencia de especificaciones técnicas, benchmarks o ejemplos de aplicación impide recomendar escenarios de uso. Se recomienda a los desarrolladores e investigadores que consulten el repositorio de HuggingFace para obtener actualizaciones del autor antes de considerar cualquier integración.
+No se pueden proponer casos de uso concretos sin información verificable sobre el modelo. La ausencia de especificaciones técnicas, benchmarks o ejemplos de aplicación impide recomendar escenarios de uso. Se recomienda a los desarrolladores e investigadores que consulten el repositorio de Hugging Face para obtener actualizaciones del autor antes de considerar cualquier integración.
 
 ## Benchmarks y rendimiento
 
@@ -53,7 +53,7 @@ No se dispone de información suficiente para establecer una comparativa. No se 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/PrometheusEXE/Early-P
+- Repositorio en Hugging Face: https://huggingface.co/PrometheusEXE/Early-P
 - Resultados de búsqueda web (no directamente relacionados con este modelo):
   - https://github.com/EuniAI/Prometheus (proyecto homónimo no relacionado)
   - https://aireleasetracker.com/latest (listado general de lanzamientos de IA)

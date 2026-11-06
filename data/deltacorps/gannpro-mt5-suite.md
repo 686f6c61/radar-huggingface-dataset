@@ -97,9 +97,9 @@ No se dispone de información suficiente para comparar con modelos de IA, ya que
 - La licencia MIT permite uso comercial, pero el usuario es responsable de los resultados.
 - El trading automatizado conlleva riesgos de pérdida de capital; el autor incluye un aviso de que el rendimiento pasado no garantiza el futuro.
 - No se han encontrado datos sobre fiabilidad en condiciones de mercado volátiles o noticias.
-- El repositorio tiene 0 descargas y 0 likes en HuggingFace, por lo que no hay evidencia de uso en producción.
+- El repositorio tiene 0 descargas y 0 likes en Hugging Face, por lo que no hay evidencia de uso en producción.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DELTACORPS/GannPro-MT5-Suite
+- Hugging Face: https://huggingface.co/DELTACORPS/GannPro-MT5-Suite
 - Producto de referencia en MQL5: https://www.mql5.com/en/market/product/158939

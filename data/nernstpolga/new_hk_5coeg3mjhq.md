@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nernstpolga/new_hk_5coeg3mjhq` es un modelo de lenguaje de gran tamaño con 35.107.181.936 parámetros (~35B), desarrollado por el usuario nernstpolga y publicado en HuggingFace en agosto de 2026. Los metadatos indican que se basa en una arquitectura tipo Qwen3.5 MoE (mezcla de expertos) y que incorpora capacidades multimodales de imagen y texto (image-text-to-text). También se mencionan técnicas como `offline-dpo` y `reason-v3`, lo que sugiere un entrenamiento con optimización por preferencias y un modo de razonamiento, aunque no hay documentación pública que lo confirme.
+El modelo `nernstpolga/new_hk_5coeg3mjhq` es un modelo de lenguaje de gran tamaño con 35.107.181.936 parámetros (~35B), desarrollado por el usuario nernstpolga y publicado en Hugging Face en agosto de 2026. Los metadatos indican que se basa en una arquitectura tipo Qwen3.5 MoE (mezcla de expertos) y que incorpora capacidades multimodales de imagen y texto (image-text-to-text). También se mencionan técnicas como `offline-dpo` y `reason-v3`, lo que sugiere un entrenamiento con optimización por preferencias y un modo de razonamiento, aunque no hay documentación pública que lo confirme.
 
 El modelo está construido sobre un modelo base denominado `unconst/Affine-5czsc2fc98-r252-merged`, del que no se dispone de información adicional. El acceso es restringido (gated), lo que implica que los usuarios deben aceptar condiciones específicas antes de poder descargarlo. A pesar de su tamaño considerable, el repositorio no incluye una ficha técnica detallada ni resultados de benchmarks, lo que limita su evaluación objetiva. Su relevancia actual radica en ser un lanzamiento reciente dentro del ecosistema de modelos abiertos, pero la falta de transparencia dificulta su adopción en entornos profesionales.
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 - El tamaño del repositorio es de 70,2 GB, lo que corresponde aproximadamente a pesos en fp16 o bf16 (35B parámetros × 2 bytes). Para cargar el modelo en memoria se necesitan al menos 70 GB de VRAM.
 - GPU recomendadas: una NVIDIA A100 de 80 GB o H100 de 80 GB podrían alojar el modelo en fp16. Alternativamente, se podría usar una configuración multi-GPU (por ejemplo, dos RTX 4090 de 24 GB cada una con sharding).
 - No se ha confirmado compatibilidad con cuantizaciones GGUF, por lo que el despliegue en CPU o GPUs de consumo mediante llama.cpp u Ollama no está garantizado.
-- Opciones de despliegue: el tag `endpoints_compatible` sugiere que puede usarse con soluciones como HuggingFace Inference Endpoints o TGI (Text Generation Inference). También podría utilizarse vLLM si se adapta a la arquitectura, pero no hay confirmación.
+- Opciones de despliegue: el tag `endpoints_compatible` sugiere que puede usarse con soluciones como Hugging Face Inference Endpoints o TGI (Text Generation Inference). También podría utilizarse vLLM si se adapta a la arquitectura, pero no hay confirmación.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -63,7 +63,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar condiciones en HuggingFace antes de su descarga, lo que puede limitar su uso en entornos automatizados.
+- Acceso restringido: el modelo requiere aceptar condiciones en Hugging Face antes de su descarga, lo que puede limitar su uso en entornos automatizados.
 - Ausencia total de documentación: no hay ficha técnica, paper, ni guía de uso. Los usuarios deben operar sin conocer detalles de entrenamiento, sesgos o limitaciones.
 - Riesgo de alucinación y sesgos desconocidos: al no haber evaluación pública, no se puede estimar la fiabilidad de las respuestas ni su comportamiento en dominios sensibles.
 - Posible inestabilidad: al ser un modelo reciente sin validación externa, su rendimiento en tareas específicas puede ser impredecible.
@@ -72,7 +72,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nernstpolga/new_hk_5coeg3mjhq
+- Modelo en Hugging Face: https://huggingface.co/nernstpolga/new_hk_5coeg3mjhq
 - Perfil del autor: https://huggingface.co/nernstpolga
 - Otro modelo del autor (sin relación directa): https://huggingface.co/nernstpolga/val-duo-1
 

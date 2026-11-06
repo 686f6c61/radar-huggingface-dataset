@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nourhan-anber91/distilgpt2-finetune` es un ajuste fino (fine-tuning) publicado en HuggingFace sobre el modelo base distilgpt2, una version destilada de GPT-2 desarrollada originalmente por OpenAI. Se trata de un modelo transformer decoder-only de tipo autorregresivo orientado a la generacion de texto, con un total de 81.912.576 parametros confirmados a partir del peso en safetensors. El repositorio ocupa 1,0 GB y fue creado el 8 de octubre de 2026 por el usuario nourhan-anber91.
+`nourhan-anber91/distilgpt2-finetune` es un ajuste fino (fine-tuning) publicado en Hugging Face sobre el modelo base distilgpt2, una version destilada de GPT-2 desarrollada originalmente por OpenAI. Se trata de un modelo transformer decoder-only de tipo autorregresivo orientado a la generacion de texto, con un total de 81.912.576 parametros confirmados a partir del peso en safetensors. El repositorio ocupa 1,0 GB y fue creado el 8 de octubre de 2026 por el usuario nourhan-anber91.
 
 El modelo pertenece a la familia GPT-2 destilada, lo que lo situa en la categoria de modelos pequenos y ligeros, aptos para entornos con recursos limitados o para tareas de experimentacion y prototipado. Al estar basado en distilgpt2, hereda una arquitectura de 6 capas transformer con atencion causal y una ventana de contexto de 1.024 tokens, aunque no se ha publicado informacion especifica sobre el proceso de ajuste ni sobre el dataset utilizado.
 
@@ -48,10 +48,10 @@ No se dispone de informacion sobre el dataset de ajuste fino, el numero de token
 
 - Prototipado y experimentacion academica: util como punto de partida para comparar tecnicas de fine-tuning sobre modelos pequenos, dado su bajo coste computacional y su tamano de 82 millones de parametros.
 - Generacion de texto de baja latencia en entornos con recursos limitados: al ser un modelo pequeno, puede ejecutarse en CPU o en GPUs de gama baja, lo que permite desplegar demos interactivas sin infraestructura dedicada.
-- Educacion y docencia: sirve para ilustrar el funcionamiento de un transformer decoder-only y el flujo de publicacion de modelos en HuggingFace.
+- Educacion y docencia: sirve para ilustrar el funcionamiento de un transformer decoder-only y el flujo de publicacion de modelos en Hugging Face.
 - Completado de texto simple en aplicaciones no criticas: puede emplearse para autocompletar frases cortas donde no se requiera alta fidelidad factual.
 - Investigacion sobre destilacion de modelos: permite estudiar como se comporta un modelo destilado tras un ajuste fino especifico frente a su base original.
-- Pruebas de integracion de pipelines de HuggingFace: util para validar flujos de carga de safetensors y despliegue con librerias como transformers antes de escalar a modelos mayores.
+- Pruebas de integracion de pipelines de Hugging Face: util para validar flujos de carga de safetensors y despliegue con librerias como transformers antes de escalar a modelos mayores.
 
 ## Benchmarks y rendimiento
 
@@ -92,5 +92,5 @@ La comparativa se apoya en caracteristicas conocidas del modelo base distilgpt2;
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nourhan-anber91/distilgpt2-finetune
+- Modelo en Hugging Face: https://huggingface.co/nourhan-anber91/distilgpt2-finetune
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repos, demos) en la busqueda web realizada. Los resultados obtenidos no guardan relacion con el modelo.

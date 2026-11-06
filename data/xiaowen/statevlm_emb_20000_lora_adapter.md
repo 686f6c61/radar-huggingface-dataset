@@ -2,7 +2,7 @@
 
 ## Resumen
 
-StateVLM_emb_20000_lora_adapter es un artefacto publicado en HuggingFace por el usuario Xiaowen bajo licencia Apache 2.0. El nombre del repositorio indica que se trata de un adaptador LoRA (Low-Rank Adaptation) y no de un modelo completo: el sufijo `lora_adapter` apunta a pesos incrementales que deben cargarse sobre un modelo base que no se especifica en la informacion disponible. El fragmento `StateVLM_emb_20000` sugiere, sin que exista confirmacion documental, un entrenamiento asociado a un modelo denominado StateVLM con un identificador de paso o de tarea de embeddings; se trata de una hipotesis derivada de la convencion de nombres, no de un dato verificado.
+StateVLM_emb_20000_lora_adapter es un artefacto publicado en Hugging Face por el usuario Xiaowen bajo licencia Apache 2.0. El nombre del repositorio indica que se trata de un adaptador LoRA (Low-Rank Adaptation) y no de un modelo completo: el sufijo `lora_adapter` apunta a pesos incrementales que deben cargarse sobre un modelo base que no se especifica en la informacion disponible. El fragmento `StateVLM_emb_20000` sugiere, sin que exista confirmacion documental, un entrenamiento asociado a un modelo denominado StateVLM con un identificador de paso o de tarea de embeddings; se trata de una hipotesis derivada de la convencion de nombres, no de un dato verificado.
 
 La model card publicada es practicamente vacia: contiene unicamente la declaracion de licencia `apache-2.0` y ningun apartado tecnico. El repositorio registra 0 descargas y 0 likes, no tiene pipeline declarado, no declara idiomas soportados y no incluye informacion sobre el modelo base, el rango del adaptador, los modulos objetivo, la longitud de contexto ni los datos de entrenamiento. Tampoco se ha publicado ningun resultado de evaluacion.
 
@@ -94,7 +94,7 @@ No disponible. Sin conocer el modelo base, el rango del adaptador ni la tarea pa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Xiaowen/StateVLM_emb_20000_lora_adapter
+- Hugging Face: https://huggingface.co/Xiaowen/StateVLM_emb_20000_lora_adapter
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Blog o documentacion del autor: no disponible

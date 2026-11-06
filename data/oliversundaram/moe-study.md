@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MoE-Study es un proyecto de investigacion del autor OliverSundaram que compara de forma controlada una arquitectura densa frente a una arquitectura de mezcla de expertos (Mixture-of-Experts, MoE) con parametros activos igualados. El repositorio de HuggingFace contiene dos checkpoints entrenados desde cero bajo condiciones identicas, salvo por el bloque feed-forward: un MLP denso de 150,1 millones de parametros y un MoE top-2-de-4 de 206,8 millones de parametros totales, de los cuales aproximadamente 150,1 millones se activan por token. Ambos modelos comparten la misma arquitectura base de transformer decoder-only con 12 capas, dimension de embedding de 768 y contexto de 1024 tokens.
+MoE-Study es un proyecto de investigacion del autor OliverSundaram que compara de forma controlada una arquitectura densa frente a una arquitectura de mezcla de expertos (Mixture-of-Experts, MoE) con parametros activos igualados. El repositorio de Hugging Face contiene dos checkpoints entrenados desde cero bajo condiciones identicas, salvo por el bloque feed-forward: un MLP denso de 150,1 millones de parametros y un MoE top-2-de-4 de 206,8 millones de parametros totales, de los cuales aproximadamente 150,1 millones se activan por token. Ambos modelos comparten la misma arquitectura base de transformer decoder-only con 12 capas, dimension de embedding de 768 y contexto de 1024 tokens.
 
 El objetivo del estudio es responder una pregunta concreta: con el mismo coste computacional por token y el mismo presupuesto, la esparsidad ayuda o perjudica al rendimiento. Los resultados obtenidos son claros: el modelo denso supera al MoE en todas las metricas evaluadas, con una perplejidad en WikiText de 551 frente a 1.378 y una perdida de test de 5,063 frente a 5,911. Ambos modelos estan entrenados durante una sola epoca sobre aproximadamente 40,67 millones de tokens, por lo que no estan convergidos y no son aptos para ningun uso practico. La relevancia del proyecto reside en su valor como estudio de ablacion reproducible para la comunidad de investigacion en arquitecturas eficientes.
 
@@ -94,7 +94,7 @@ No se dispone de informacion sobre modelos de la misma categoria de tamano y pro
 - Ambos modelos estan entrenados con una sola epoca sobre aproximadamente 40,67 millones de tokens, muy lejos de la convergencia. Las generaciones son en gran parte incoherentes.
 - La perplejidad de WikiText es de 551 (denso) y 1.378 (MoE), y el rendimiento en LAMBADA es del 0,0% en ambos, en el suelo de la tarea.
 - No se ha realizado ajuste por instrucciones, RLHF ni filtrado de seguridad de ningun tipo. Los modelos pueden generar contenido no deseado o sesgado.
-- La arquitectura es personalizada y no es una variante de un modelo existente. El codigo de modelado no se incluye en el repositorio de HuggingFace, por lo que `from_pretrained` sobre este repo no construira el modelo sin el codigo del repositorio de GitHub.
+- La arquitectura es personalizada y no es una variante de un modelo existente. El codigo de modelado no se incluye en el repositorio de Hugging Face, por lo que `from_pretrained` sobre este repo no construira el modelo sin el codigo del repositorio de GitHub.
 - No son aptos para ningun uso downstream o de produccion. Son artefactos de investigacion.
 - El modelo esta entrenado solo con datos en ingles (dataset tiny-textbooks).
 - El estudio concluye que la sparsity no ayuda en este regimen de entrenamiento, lo que no debe generalizarse a modelos grandes sin evidencia adicional.
@@ -103,7 +103,7 @@ No se dispone de informacion sobre modelos de la misma categoria de tamano y pro
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/OliverSundaram/MoE-Study
+- Repositorio de Hugging Face: https://huggingface.co/OliverSundaram/MoE-Study
 - Repositorio de GitHub (codigo de entrenamiento, definicion del modelo y evaluacion): https://github.com/OliverSundaram/MoE-Study
 - Dataset de entrenamiento: https://huggingface.co/datasets/nampdn-ai/tiny-textbooks
 - Herramienta de evaluacion: https://github.com/EleutherAI/lm-evaluation-harness

@@ -79,4 +79,4 @@ No disponible. No es posible establecer una comparativa con modelos de generacio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Achauhan7986z/multimodal-generation-finetuning
+- Hugging Face: https://huggingface.co/Achauhan7986z/multimodal-generation-finetuning

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`chesster_act_v2` es una política de imitación (imitation learning) para control robótico entrenada con el método Action Chunking with Transformers (ACT), publicado en el paper arXiv:2304.13705. La ha subido el usuario OlenaG al Hub de HuggingFace mediante la librería LeRobot de HuggingFace, y está pensada para ejecutarse sobre un robot de tipo `so_follower` (brazo tipo SO-100/SO-101) equipado con tres cámaras: `top`, `front` y `hand`. No es un modelo de lenguaje: es un modelo visuomotor que asigna observaciones (estado articular de 6 dimensiones más tres imágenes RGB) a acciones de 6 dimensiones.
+`chesster_act_v2` es una política de imitación (imitation learning) para control robótico entrenada con el método Action Chunking with Transformers (ACT), publicado en el paper arXiv:2304.13705. La ha subido el usuario OlenaG al Hub de Hugging Face mediante la librería LeRobot de Hugging Face, y está pensada para ejecutarse sobre un robot de tipo `so_follower` (brazo tipo SO-100/SO-101) equipado con tres cámaras: `top`, `front` y `hand`. No es un modelo de lenguaje: es un modelo visuomotor que asigna observaciones (estado articular de 6 dimensiones más tres imágenes RGB) a acciones de 6 dimensiones.
 
 El modelo resuelve una única tarea de manipulación descrita literalmente como "Grab the figure from the blue square and put it into the green square", aprendida a partir de 50 episodios de teleoperación (40.698 fotogramas a 30 FPS) del dataset `OlenaG/chesster_v2_fixed`. Con 51.668.614 parámetros (unos 51,7 M) y un repositorio de 0,2 GB, es un modelo compacto que cabe holgadamente en cualquier GPU consumer, lo que lo hace útil como ejemplo reproducible de un pipeline completo de LeRobot: grabación de datos, entrenamiento y despliegue.
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo para `chesster_act_v2`, por lo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OlenaG/chesster_act_v2
+- Modelo en Hugging Face: https://huggingface.co/OlenaG/chesster_act_v2
 - Dataset de entrenamiento: https://huggingface.co/datasets/OlenaG/chesster_v2_fixed
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=OlenaG/chesster_v2_fixed
 - Paper de ACT: https://huggingface.co/papers/2304.13705 (arXiv:2304.13705)

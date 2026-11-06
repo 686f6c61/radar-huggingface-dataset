@@ -24,7 +24,7 @@ La relevancia de esta ficha concreta está en el formato de distribución: loom.
 | Entrada | audio mono en coma flotante a 16 kHz, una clip entera por llamada |
 | Salida | una distribución de probabilidad por clip sobre los 107 idiomas, etiquetada como `<código>: <nombre>` |
 | Modelo base | `speechbrain/lang-id-voxlingua107-ecapa` (pesos sin modificar) |
-| Runtime | loom-py / `loom-py-rt` (biblioteca declarada en HuggingFace: `loom-py-rt`) |
+| Runtime | loom-py / `loom-py-rt` (biblioteca declarada en Hugging Face: `loom-py-rt`) |
 | Tamaño del repositorio | 0,1 GB |
 
 Lista completa de códigos de idioma declarados: ab, af, am, ar, as, az, ba, be, bg, bi, bo, br, bs, ca, ceb, cs, cy, da, de, el, en, eo, es, et, eu, fa, fi, fo, fr, gl, gn, gu, gv, ha, haw, hi, hr, ht, hu, hy, ia, id, is, it, he, ja, jv, ka, kk, km, kn, ko, la, lm, ln, lo, lt, lv, mg, mi, mk, ml, mn, mr, ms, mt, my, ne, nl, nn, no, oc, pa, pl, ps, pt, ro, ru, sa, sco, sd, si, sk, sl, sn, so, sq, sr, su, sv, sw, ta, te, tg, th, tk, tl, tr, tt, uk, ud, uz, vi, war, yi, yo, zh.
@@ -73,8 +73,8 @@ La información proporcionada solo permite comparar con precisión contra el mod
 
 | Modelo | Parámetros | Idiomas | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `loom-ai-org/ecapa-voxlingua107-loom` | 21.419.368 | 107 (VoxLingua107) | no aplica (una clip por llamada) | apache-2.0 | GGUF para loom.cpp | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| `speechbrain/lang-id-voxlingua107-ecapa` (modelo base) | mismos pesos, sin modificar (parámetros no desglosados en esta ficha) | 107 (VoxLingua107) | no aplica | apache-2.0 | pesos originales de SpeechBrain | HuggingFace |
+| `loom-ai-org/ecapa-voxlingua107-loom` | 21.419.368 | 107 (VoxLingua107) | no aplica (una clip por llamada) | apache-2.0 | GGUF para loom.cpp | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| `speechbrain/lang-id-voxlingua107-ecapa` (modelo base) | mismos pesos, sin modificar (parámetros no desglosados en esta ficha) | 107 (VoxLingua107) | no aplica | apache-2.0 | pesos originales de SpeechBrain | Hugging Face |
 | Otros identificadores de idioma hablado (por ejemplo, clasificadores LID multilingües de terceros) | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La diferencia práctica entre las dos primeras filas es exclusivamente el formato y el runtime: los pesos son idénticos, pero el export a GGUF elimina la dependencia de SpeechBrain y de PyTorch en el momento de la inferencia.
@@ -94,8 +94,8 @@ La diferencia práctica entre las dos primeras filas es exclusivamente el format
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/loom-ai-org/ecapa-voxlingua107-loom
-- Modelo base en HuggingFace: https://huggingface.co/speechbrain/lang-id-voxlingua107-ecapa
+- Modelo en Hugging Face: https://huggingface.co/loom-ai-org/ecapa-voxlingua107-loom
+- Modelo base en Hugging Face: https://huggingface.co/speechbrain/lang-id-voxlingua107-ecapa
 - Repositorio de loom.cpp: https://github.com/loom-ai-org/loom.cpp
 - Repositorio de loom-exporter: https://github.com/loom-ai-org/loom-exporter
 - Repositorio y API de loom-py: https://github.com/loom-ai-org/loom-py

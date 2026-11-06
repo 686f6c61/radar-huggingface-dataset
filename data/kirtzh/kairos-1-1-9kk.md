@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kairos-1.1-9kk es un repositorio de modelo alojado en HuggingFace por el usuario kirtzh, publicado el 1 de octubre de 2026 y sin actualizaciones posteriores. En el momento de redactar esta ficha acumula 0 descargas y 0 "likes", y no tiene pipeline de inferencia declarado ni idiomas configurados en los metadatos.
+Kairos-1.1-9kk es un repositorio de modelo alojado en Hugging Face por el usuario kirtzh, publicado el 1 de octubre de 2026 y sin actualizaciones posteriores. En el momento de redactar esta ficha acumula 0 descargas y 0 "likes", y no tiene pipeline de inferencia declarado ni idiomas configurados en los metadatos.
 
 La model card asociada al repositorio es practicamente vacia: su unico contenido es la declaracion de licencia Apache 2.0 en el encabezado YAML. No incluye descripcion del modelo, arquitectura, tamano, datos de entrenamiento, resultados de evaluacion ni instrucciones de uso. Tampoco se ha localizado documentacion tecnica, paper, blog o repositorio de codigo que corresponda a este identificador concreto.
 
@@ -98,7 +98,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 ## Enlaces
 
 - Repositorio del modelo: https://huggingface.co/kirtzh/Kairos-1.1-9kk
-- Perfil del autor en HuggingFace: https://huggingface.co/kirtzh
+- Perfil del autor en Hugging Face: https://huggingface.co/kirtzh
 - Otro modelo del mismo autor, no relacionado: https://huggingface.co/kirtzh/Kairos-7B-CIDA-v1.0
 - Proyecto homonimo de robotica (no relacionado): https://github.com/DAXIAORobotics/kairos
 - Proyecto homonimo de workflows n8n (no relacionado): https://github.com/Kruttz/Kairos

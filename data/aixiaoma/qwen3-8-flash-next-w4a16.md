@@ -60,8 +60,8 @@ No se dispone de datos comparativos con otros modelos en la información proporc
 - **No se han publicado benchmarks**: la ausencia de métricas estandarizadas dificulta la comparación objetiva con otras cuantizaciones o modelos.
 
 ## Enlaces
-- [HuggingFace - aixiaoma/Qwen3.8-Flash-Next-W4A16](https://huggingface.co/aixiaoma/Qwen3.5-Flash-Next-W4A16)
-- [HuggingFace - Qwen/Qwen3.8-Flash-Next](https://huggingface.co/Qwen/Qwen3.8-Flash-Next)
+- [Hugging Face - aixiaoma/Qwen3.8-Flash-Next-W4A16](https://huggingface.co/aixiaoma/Qwen3.5-Flash-Next-W4A16)
+- [Hugging Face - Qwen/Qwen3.8-Flash-Next](https://huggingface.co/Qwen/Qwen3.8-Flash-Next)
 - [vLLM Recipes - Qwen3.8-Flash-Next](https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next)
 - [Blog explainx.ai - Qwen3.8-Flash-Next 125B-A6B](https://www.explainx.ai/blog/qwen3-8-flash-next-125b-moe-release-august-2026)
 - [GitHub - QwenLM/Qwen3.8](https://github.com/QwenLM/Qwen3.8)

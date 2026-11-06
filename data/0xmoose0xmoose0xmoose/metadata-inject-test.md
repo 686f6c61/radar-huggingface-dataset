@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo "metadata-inject-test" es un repositorio publicado en HuggingFace por el usuario 0xmoose0xmoose0xmoose, registrado con la licencia MIT y la etiqueta de pipeline "text-generation". Sin embargo, la información disponible no permite identificar un modelo de lenguaje real: la model card contiene únicamente el texto "Test" y "Content here", junto con código CSS que intenta cargar recursos externos desde dominios sospechosos. No se proporcionan datos sobre arquitectura, tamaño, contexto ni capacidades. Por tanto, no puede considerarse un modelo funcional ni un recurso utilizable para desarrollo. La fecha de creación (septiembre de 2026) y la ausencia de descargas o "likes" sugieren que se trata de un repositorio de prueba, posiblemente relacionado con la validación de metadatos o con un intento de exfiltración de datos a través de la model card. En consecuencia, no se recomienda su uso en producción ni su integración en flujos de trabajo.
+El modelo "metadata-inject-test" es un repositorio publicado en Hugging Face por el usuario 0xmoose0xmoose0xmoose, registrado con la licencia MIT y la etiqueta de pipeline "text-generation". Sin embargo, la información disponible no permite identificar un modelo de lenguaje real: la model card contiene únicamente el texto "Test" y "Content here", junto con código CSS que intenta cargar recursos externos desde dominios sospechosos. No se proporcionan datos sobre arquitectura, tamaño, contexto ni capacidades. Por tanto, no puede considerarse un modelo funcional ni un recurso utilizable para desarrollo. La fecha de creación (septiembre de 2026) y la ausencia de descargas o "likes" sugieren que se trata de un repositorio de prueba, posiblemente relacionado con la validación de metadatos o con un intento de exfiltración de datos a través de la model card. En consecuencia, no se recomienda su uso en producción ni su integración en flujos de trabajo.
 
 ## Especificaciones técnicas
 
@@ -66,5 +66,5 @@ No disponible. No se conocen modelos comparables, ya que el repositorio no prese
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/0xmoose0xmoose0xmoose/metadata-inject-test
+- Repositorio en Hugging Face: https://huggingface.co/0xmoose0xmoose0xmoose/metadata-inject-test
 - No se han encontrado otros enlaces relevantes (papers, blogs, repos, demos) en la información proporcionada.

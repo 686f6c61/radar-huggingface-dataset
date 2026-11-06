@@ -80,9 +80,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Pasos (NFE) | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniMax-H3-PTD-RefAsymOPD-LoRAs (este) | LoRA de destilacion PTD + RefAsymOPD | 8 y 6 | Ref2VA | minimax-h3-community-license-agreement | HuggingFace, 1129 descargas |
-| MiniMax-H3-PTD-LoRAs (hermano) | LoRA de destilacion PTD simple | 8 y 4 | Ref2VA | no disponible en la informacion proporcionada | HuggingFace |
-| MiniMax-H3 (base) | Modelo completo | 40 secuenciales | Video + audio | minimax-h3-community-license-agreement | HuggingFace |
+| MiniMax-H3-PTD-RefAsymOPD-LoRAs (este) | LoRA de destilacion PTD + RefAsymOPD | 8 y 6 | Ref2VA | minimax-h3-community-license-agreement | Hugging Face, 1129 descargas |
+| MiniMax-H3-PTD-LoRAs (hermano) | LoRA de destilacion PTD simple | 8 y 4 | Ref2VA | no disponible en la informacion proporcionada | Hugging Face |
+| MiniMax-H3 (base) | Modelo completo | 40 secuenciales | Video + audio | minimax-h3-community-license-agreement | Hugging Face |
 | Otros modelos de video abiertos | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La comparacion relevante es interna a la familia: frente al PTD simple, este checkpoint mantiene el mismo coste (8 pasos en ambos) y anade mejoras cualitativas en fondo, nitidez y realismo; frente al base, reduce el computo 5x a costa de cierta perdida de calidad que el autor no cuantifica. No se dispone de datos para comparar con modelos de video de otros fabricantes.
@@ -102,7 +102,7 @@ La comparacion relevante es interna a la familia: frente al PTD simple, este che
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/taobao-content-ai/MiniMax-H3-PTD-RefAsymOPD-LoRAs
+- Modelo en Hugging Face: https://huggingface.co/taobao-content-ai/MiniMax-H3-PTD-RefAsymOPD-LoRAs
 - Modelo base MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - LoRA hermano (PTD simple, 8 y 4 pasos): https://huggingface.co/taobao-content-ai/MiniMax-H3-PTD-LoRAs
 - Licencia de la comunidad MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE

@@ -27,7 +27,7 @@ Su relevancia es doble. Por un lado, demuestra una receta de destilación sin et
 | Salidas | `frame_embs` (B,T,768), `frame_probs` (B,T,9), `frame_intensity` (B,T,1), `utt_emb` (B,768), `utt_probs` (B,9), `frame_lengths` (B,) |
 | Entrada | Audio mono a 16 kHz con longitudes (`wav_16k`, `wav_lengths`) |
 | Descargas / likes | 0 / 0 |
-| Tamaño del repositorio | 0,0 GB (metadatos de HuggingFace) |
+| Tamaño del repositorio | 0,0 GB (metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -85,9 +85,9 @@ Advertencia metodológica: todas las métricas miden concordancia con el profeso
 
 | Modelo | Parámetros | Salida | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| amir0907/student-v2 | 3,18 M (adaptador) + backbone congelado | Embeddings 768-d a 12,5 Hz, 9 clases, intensidad [0,1] | Destilación sin etiquetas, 2160 utterances (RAVDESS actores 1-18) | Apache-2.0 con caveat de datos CC BY-NC-SA 4.0 | HuggingFace, 0 descargas |
-| amir0907/student (v1) | 3,18 M (misma arquitectura) | Idénticas | 900 utterances, 900 pasos | Apache-2.0 con el mismo caveat | HuggingFace |
-| emotion2vec_plus_base (profesor) | No disponible en la información | Estados 768-d a 50 Hz, taxonomía de 9 clases | No disponible en la información | Apache-2.0 según la model card | HuggingFace / FunASR |
+| amir0907/student-v2 | 3,18 M (adaptador) + backbone congelado | Embeddings 768-d a 12,5 Hz, 9 clases, intensidad [0,1] | Destilación sin etiquetas, 2160 utterances (RAVDESS actores 1-18) | Apache-2.0 con caveat de datos CC BY-NC-SA 4.0 | Hugging Face, 0 descargas |
+| amir0907/student (v1) | 3,18 M (misma arquitectura) | Idénticas | 900 utterances, 900 pasos | Apache-2.0 con el mismo caveat | Hugging Face |
+| emotion2vec_plus_base (profesor) | No disponible en la información | Estados 768-d a 50 Hz, taxonomía de 9 clases | No disponible en la información | Apache-2.0 según la model card | Hugging Face / FunASR |
 
 Frente a un clasificador SER convencional, la diferencia relevante es la granularidad: student-v2 no emite una etiqueta por utterance, sino una trayectoria continua con contrato de tasa fijo, que es lo que un sistema de TTS necesita para condicionar la prosodia. No se dispone en la información proporcionada de comparaciones con otros modelos SER públicos (wav2vec2-based, emotion2vec_plus_large u otros), por lo que no se puede establecer una comparativa de rendimiento con terceros.
 
@@ -100,13 +100,13 @@ Frente a un clasificador SER convencional, la diferencia relevante es la granula
 - Tabla de emociones fija (9 clases) impuesta por el profesor; no admite etiquetas personalizadas ni dimensionales (valencia/arousal) salvo la intensidad escalar.
 - La correlación de la intensidad con la energía con compuerta de confianza es débil (0,326), por lo que la señal de intensidad debe usarse como modulación relativa, no como medida absoluta.
 - Tolerancia de un frame en el borde final de la utterance, heredada del front-end convolucional del profesor; conviene recortar o rellenar en integraciones que exijan alineación exacta.
-- Datos de comunidad inexistentes (0 descargas, 0 likes), sin paper ni revisión por pares; el repositorio figura con 0,0 GB en HuggingFace y la fecha de creación registrada es 2026-10-27, lo que conviene verificar antes de integrarlo en producción.
+- Datos de comunidad inexistentes (0 descargas, 0 likes), sin paper ni revisión por pares; el repositorio figura con 0,0 GB en Hugging Face y la fecha de creación registrada es 2026-10-27, lo que conviene verificar antes de integrarlo en producción.
 - Dependencia estricta de la configuración exacta del backbone (50 Hz, 768 dimensiones); no hay soporte documentado de cuantización ni de variantes del profesor.
 - Idiomas soportados no declarados: no hay garantía de comportamiento en castellano ni en ninguna otra lengua distinta del inglés de RAVDESS.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amir0907/student-v2
+- Modelo en Hugging Face: https://huggingface.co/amir0907/student-v2
 - Versión anterior (v1): https://huggingface.co/amir0907/student
 - Perfil del autor: https://huggingface.co/amir0907
 - Código incluido en el repositorio: `code/surgical_emotion.py` (módulo), `code/precompute_shard.py` (caché paralela del profesor), `code/train_v2.py` (destilación), además de scripts de evaluación, benchmark, galería de demos y comparación v1/v2.

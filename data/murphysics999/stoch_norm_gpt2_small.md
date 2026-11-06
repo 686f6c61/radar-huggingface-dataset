@@ -2,7 +2,7 @@
 
 ## Resumen
 
-murphysics999/stoch_norm_gpt2_small es un modelo publicado en HuggingFace por el usuario murphysics999. La model card asociada es prácticamente vacía: solo declara la licencia MIT, sin descripción del modelo, sin detalles de entrenamiento, sin datos de evaluación y sin instrucciones de uso. El repositorio no tiene pipeline declarado, no especifica idiomas soportados y en el momento de la consulta acumula 0 descargas y 0 likes.
+murphysics999/stoch_norm_gpt2_small es un modelo publicado en Hugging Face por el usuario murphysics999. La model card asociada es prácticamente vacía: solo declara la licencia MIT, sin descripción del modelo, sin detalles de entrenamiento, sin datos de evaluación y sin instrucciones de uso. El repositorio no tiene pipeline declarado, no especifica idiomas soportados y en el momento de la consulta acumula 0 descargas y 0 likes.
 
 El identificador del modelo sugiere dos cosas que no están confirmadas por el autor: por un lado, una base de tipo GPT-2 small (familia GPT-2, transformer causal decoder-only, aproximadamente 124 millones de parametros y 1024 tokens de contexto en su configuracion estandar); por otro, alguna variante de normalizacion estocastica ("stoch_norm") aplicada a la arquitectura. Ninguna de las dos inferencias puede verificarse con la informacion disponible, ya que no hay config.json, tokenizer, pesos ni documentacion publicados en la ficha.
 
@@ -60,7 +60,7 @@ Ninguno de estos casos puede validarse hoy: el repositorio no ofrece pesos, toke
 
 No se han publicado resultados de benchmarks en la informacion disponible.
 
-La ficha de HuggingFace no incluye MMLU, HumanEval, GSM8K, ARC, HellaSwag ni ningun otro resultado, y la model card esta vacia mas alla de la declaracion de licencia. Tampoco hay resultados de evaluacion en los resultados de busqueda web consultados, que no devolvieron ninguna pagina relacionada con este modelo.
+La ficha de Hugging Face no incluye MMLU, HumanEval, GSM8K, ARC, HellaSwag ni ningun otro resultado, y la model card esta vacia mas alla de la declaracion de licencia. Tampoco hay resultados de evaluacion en los resultados de busqueda web consultados, que no devolvieron ninguna pagina relacionada con este modelo.
 
 ## Requisitos de hardware
 
@@ -71,14 +71,14 @@ No hay requisitos oficiales publicados. Las siguientes estimaciones son condicio
 - VRAM estimada en int8: aproximadamente 0,13 GB para pesos.
 - Cabe en cualquier GPU consumer: si se confirma el tamano, funciona sin problema en GTX 1060, RTX 2060, RTX 3060, RTX 4090 y equivalentes, e incluso en CPU con llama.cpp o similar.
 - GPU recomendadas para entrenamiento o fine-tuning: una unica RTX 3090 o RTX 4090 seria suficiente para ajuste completo de 124 M de parametros con batch moderado; para preentrenamiento desde cero convendria una A100 o H100 por velocidad, aunque no por memoria.
-- Opciones de despliegue: no verificables sin pesos publicados. Si se publicaran en formato compatible, los candidatos habituales serian HuggingFace Transformers, llama.cpp, Ollama, vLLM y TGI.
+- Opciones de despliegue: no verificables sin pesos publicados. Si se publicaran en formato compatible, los candidatos habituales serian Hugging Face Transformers, llama.cpp, Ollama, vLLM y TGI.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 No hay datos propios del modelo para comparar, ya que carece de pesos, configuracion y evaluacion publicadas. A modo de referencia, la tabla recoge las especificaciones publicas conocidas de la familia GPT-2 y se indica de forma explicita que la columna del modelo analizado no esta confirmada:
 
-| Modelo | Parametros | Contexto | Licencia | Estado en HuggingFace | Rendimiento publicado |
+| Modelo | Parametros | Contexto | Licencia | Estado en Hugging Face | Rendimiento publicado |
 |---|---|---|---|---|---|
 | murphysics999/stoch_norm_gpt2_small | no disponible (posible ~124 M) | no disponible (posible 1024) | MIT | 0 descargas, 0 likes, sin pesos documentados | no disponible |
 | GPT-2 small | 124 M | 1024 | MIT | ampliamente disponible | resultados publicos de referencia en tareas de lenguaje |
@@ -100,10 +100,10 @@ La comparacion con alternativas reales no es posible mientras el repositorio no 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/murphysics999/stoch_norm_gpt2_small
+- Modelo en Hugging Face: https://huggingface.co/murphysics999/stoch_norm_gpt2_small
 - Paper asociado: no disponible
 - Repositorio de codigo: no disponible
 - Blog o documentacion del autor: no disponible
 - Demo o Space: no disponible
 - Resultados de benchmarks: no disponible
-- Perfil del autor en HuggingFace: https://huggingface.co/murphysics999
+- Perfil del autor en Hugging Face: https://huggingface.co/murphysics999

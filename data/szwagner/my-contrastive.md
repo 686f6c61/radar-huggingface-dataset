@@ -4,9 +4,9 @@
 
 ## Resumen
 
-`szwagner/my-contrastive` es un prototipo de investigación publicado en HuggingFace por el usuario `szwagner`, construido alrededor de una arquitectura Albef (Align before Fuse) orientada a aprendizaje contrastivo. No se trata de un modelo entrenado ni evaluado, sino de un repositorio de código más un checkpoint de inicialización: la propia model card indica explícitamente que `model.safetensors` es "una inicialización válida para pruebas de humo" y que no se presenta como un checkpoint con benchmarks. El tamaño declarado es de 49.600 parámetros totales, lo que lo sitúa en una escala de juguete (muy por debajo de los cientos de millones de parámetros de los Albef de referencia).
+`szwagner/my-contrastive` es un prototipo de investigación publicado en Hugging Face por el usuario `szwagner`, construido alrededor de una arquitectura Albef (Align before Fuse) orientada a aprendizaje contrastivo. No se trata de un modelo entrenado ni evaluado, sino de un repositorio de código más un checkpoint de inicialización: la propia model card indica explícitamente que `model.safetensors` es "una inicialización válida para pruebas de humo" y que no se presenta como un checkpoint con benchmarks. El tamaño declarado es de 49.600 parámetros totales, lo que lo sitúa en una escala de juguete (muy por debajo de los cientos de millones de parámetros de los Albef de referencia).
 
-El repositorio incluye un único artefacto principal de código (`run.py`), junto con `config.json` (configuración de arquitectura generada), `training_args.json` (receta de experimento por defecto) y el checkpoint de safetensors. Está liberado bajo licencia MIT. No se declara pipeline de HuggingFace, idiomas soportados ni conjunto de datos de entrenamiento.
+El repositorio incluye un único artefacto principal de código (`run.py`), junto con `config.json` (configuración de arquitectura generada), `training_args.json` (receta de experimento por defecto) y el checkpoint de safetensors. Está liberado bajo licencia MIT. No se declara pipeline de Hugging Face, idiomas soportados ni conjunto de datos de entrenamiento.
 
 Su relevancia es limitada y de carácter exclusivamente metodológico: sirve como plantilla reproducible para montar experimentos contrastivos con ablaciones controladas (misma exposición de datos, mismo presupuesto de ajuste y mismas semillas entre baselines), no como modelo listo para producción. Cualquier resultado futuro sobre un checkpoint entrenado deberá documentarse por separado de estos valores por defecto.
 
@@ -56,7 +56,7 @@ No hay información sobre datos de entrenamiento: no se declara número de token
 - Pruebas de humo de infraestructura: cargar `model.safetensors` (49.600 parámetros) para verificar que el flujo de serialización, carga y paso hacia delante funciona antes de escalar a un modelo mayor.
 - Estudio de ablaciones de arquitectura: modificar los valores declarados (multi-query, tensor fusion, approx gelu, batchnorm) y medir su efecto sobre una tarea concreta con conjunto de validación reservado, reportando la métrica sobre al menos tres semillas.
 - Docencia de aprendizaje contrastivo: el tamaño mínimo del modelo permite ejecutarlo en cualquier portátil y usarlo para explicar la mecánica de las pérdidas contrastivas sin coste de cómputo apreciable.
-- Referencia de formato de repositorio: sirve como ejemplo de estructura mínima (config, args de entrenamiento, checkpoint y entry point) para publicar prototipos de investigación en HuggingFace.
+- Referencia de formato de repositorio: sirve como ejemplo de estructura mínima (config, args de entrenamiento, checkpoint y entry point) para publicar prototipos de investigación en Hugging Face.
 - Base para adaptación a una tarea específica: reentrenar desde esta inicialización sobre un conjunto reservado de la tarea objetivo e incorporar un baseline de capacidad comparable, tal y como recomienda el propio autor.
 - Integración en pipelines de CI: incluir `python run.py --help` como comprobación de que el script y sus dependencias se instalan correctamente en un entorno limpio.
 
@@ -78,7 +78,7 @@ La informacion proporcionada no incluye datos de rendimiento ni especificaciones
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| szwagner/my-contrastive | 49.600 | no disponible | MIT | Publico en HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
+| szwagner/my-contrastive | 49.600 | no disponible | MIT | Publico en Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
 | Albef (implementacion de referencia) | no disponible en esta ficha | no disponible | no disponible | no disponible |
 | CLIP | no disponible en esta ficha | no disponible | no disponible | no disponible |
 | BLIP | no disponible en esta ficha | no disponible | no disponible | no disponible |
@@ -100,5 +100,5 @@ Albef, CLIP y BLIP se citan unicamente como familia de referencia (alineacion co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/szwagner/my-contrastive
+- Repositorio en Hugging Face: https://huggingface.co/szwagner/my-contrastive
 - No se han encontrado en la busqueda web articulos, papers, blogs, repositorios ni demos relacionados con este modelo; los resultados devueltos eran irrelevantes (sitios de preguntas y respuestas sin relacion con el modelo).

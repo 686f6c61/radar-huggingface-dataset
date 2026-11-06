@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `atha-rvban/model_338522266_mobilevit_nano` es una implementación a escala *nano* de la arquitectura MobileViT, creada por el usuario atha-rvban y publicada en HuggingFace. MobileViT es una familia de arquitecturas de visión ligera que combina convoluciones con transformadores para lograr un equilibrio entre eficiencia computacional y precisión en tareas de clasificación de imágenes y extracción de características. Esta variante concreta está diseñada específicamente para tareas de aprendizaje contrastivo, una técnica de representación que busca agrupar muestras similares y separar las diferentes en un espacio latente.
+El modelo `atha-rvban/model_338522266_mobilevit_nano` es una implementación a escala *nano* de la arquitectura MobileViT, creada por el usuario atha-rvban y publicada en Hugging Face. MobileViT es una familia de arquitecturas de visión ligera que combina convoluciones con transformadores para lograr un equilibrio entre eficiencia computacional y precisión en tareas de clasificación de imágenes y extracción de características. Esta variante concreta está diseñada específicamente para tareas de aprendizaje contrastivo, una técnica de representación que busca agrupar muestras similares y separar las diferentes en un espacio latente.
 
 El modelo se distribuye bajo licencia BSD-3-Clause e incluye únicamente un archivo de código Python (`model_338522266_mobilevit_nano.py`) como artefacto principal, sin pesos preentrenados publicados ni documentación adicional sobre su entrenamiento o rendimiento. Su relevancia radica en ser un ejemplo de implementación compacta de MobileViT para investigación o prototipado, aunque la falta de pesos publicados y de resultados de evaluación limita su uso directo en producción. La fecha de creación (agosto de 2026) sugiere que es un proyecto reciente y todavía sin adoptar por la comunidad.
 
@@ -76,7 +76,7 @@ La comparativa se limita a modelos de la misma familia arquitectónica. `apple/m
 
 ## Enlaces
 
-- [HuggingFace - atha-rvban/model_338522266_mobilevit_nano](https://huggingface.co/atha-rvban/model_338522266_mobilevit_nano)
-- [apple/mobilevit-small - HuggingFace](https://huggingface.co/apple/mobilevit-small)
+- [Hugging Face - atha-rvban/model_338522266_mobilevit_nano](https://huggingface.co/atha-rvban/model_338522266_mobilevit_nano)
+- [apple/mobilevit-small - Hugging Face](https://huggingface.co/apple/mobilevit-small)
 - [Mobile-VIT - Qualcomm AI Hub](https://aihub.qualcomm.com/models/mobile_vit)
 - [GitHub - yangyucheng000/MobileViT](https://github.com/yangyucheng000/MobileViT)

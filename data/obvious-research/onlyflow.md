@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - No se especifican requisitos oficiales de hardware para inferencia en la model card.
 - El entrenamiento se realizo en un nodo de 8 GPUs A100 durante 20 horas, lo que da una idea de la escala de computo necesaria para el entrenamiento.
 - El tamano del repositorio es de 2.6 GB, lo que sugiere que los pesos en fp16 ocupan aproximadamente 1.3 GB (si se almacenan en ese formato) y en fp32 unos 2.6 GB. Esto indica que podria ejecutarse en GPUs consumer con al menos 8 GB de VRAM, aunque no hay confirmacion oficial.
-- Para despliegue, se proporciona un Space de HuggingFace con interfaz Gradio y un script de inferencia en el repositorio de GitHub. No se mencionan integraciones con vLLM, llama.cpp u otros motores de inferencia especificos.
+- Para despliegue, se proporciona un Space de Hugging Face con interfaz Gradio y un script de inferencia en el repositorio de GitHub. No se mencionan integraciones con vLLM, llama.cpp u otros motores de inferencia especificos.
 
 ## Comparativa con modelos similares
 
@@ -70,8 +70,8 @@ No se dispone de datos comparativos publicados en la informacion proporcionada. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/obvious-research/onlyflow
+- Modelo en Hugging Face: https://huggingface.co/obvious-research/onlyflow
 - Paper (arXiv): https://arxiv.org/pdf/2411.10501
 - Codigo en GitHub: https://github.com/obvious-research/OnlyFlow
 - Sitio del proyecto: https://obvious-research.github.io/onlyflow/
-- Space de HuggingFace (demo Gradio): https://huggingface.co/spaces/obvious-research/OnlyFlow
+- Space de Hugging Face (demo Gradio): https://huggingface.co/spaces/obvious-research/OnlyFlow

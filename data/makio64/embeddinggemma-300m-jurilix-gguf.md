@@ -100,7 +100,7 @@ La única comparación cuantitativa aportada por el autor es frente a un BGE-M3 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Makio64/embeddinggemma-300m-jurilix-gguf
+- Modelo en Hugging Face: https://huggingface.co/Makio64/embeddinggemma-300m-jurilix-gguf
 - Modelo base: https://huggingface.co/google/embeddinggemma-300m
 - Gemma Terms of Use: referenciadas en la model card como LICENSE.txt del repositorio (no se proporciona URL directa)
 - PROHIBITED_USE_POLICY.txt y NOTICE.txt: incluidos en el repositorio como ficheros adjuntos (no se proporciona URL directa)

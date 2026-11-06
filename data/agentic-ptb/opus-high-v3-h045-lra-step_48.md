@@ -84,7 +84,7 @@ No se dispone de comparativas de rendimiento porque el checkpoint no ha sido eva
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agentic-ptb/opus-high-v3.h045.lrA.step_48
+- Modelo en Hugging Face: https://huggingface.co/agentic-ptb/opus-high-v3.h045.lrA.step_48
 - Dataset asociado: https://huggingface.co/datasets/agentic-ptb/opus-high-v3-data
 - Índice del proyecto AgentPTB: https://huggingface.co/datasets/agentic-ptb/INDEX
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base

@@ -4,7 +4,7 @@
 
 Glimmer-decision-little-adventures es un adaptador LoRA publicado por el usuario kaminskypavel sobre el modelo base meta-models/Muse-Glimmer-30B. Se trata de un ajuste fino orientado a clasificacion binaria (etiquetas yes-no) en el dominio de contenido infantil y pequenas aventuras, segun indican los tags del repositorio. El adaptador se distribuye en formato PEFT/safetensors con un tamano de repositorio de 0,8 GB, lo que sugiere que solo se almacenan los pesos del adaptador y no el modelo completo.
 
-El modelo hereda la arquitectura y el contexto del base Muse-Glimmer-30B, un modelo de 30 mil millones de parametros orientado a generacion de texto y conversacion. El adaptador anade una capa de decision binaria sobre ese base, probablemente entrenada con pares de ejemplos etiquetados como "si" o "no" en el contexto de relatos infantiles. La relevancia actual del artefacto es limitada: cuenta con cero descargas y cero likes, y su acceso esta restringido (gated) en HuggingFace, por lo que requiere aceptar condiciones antes de su descarga.
+El modelo hereda la arquitectura y el contexto del base Muse-Glimmer-30B, un modelo de 30 mil millones de parametros orientado a generacion de texto y conversacion. El adaptador anade una capa de decision binaria sobre ese base, probablemente entrenada con pares de ejemplos etiquetados como "si" o "no" en el contexto de relatos infantiles. La relevancia actual del artefacto es limitada: cuenta con cero descargas y cero likes, y su acceso esta restringido (gated) en Hugging Face, por lo que requiere aceptar condiciones antes de su descarga.
 
 La licencia declarada es muse-model-license (etiquetada como "other" en los tags), lo que impone restricciones adicionales al uso comercial y a la redistribucion. El idioma soportado declarado es unicamente ingles. No se dispone de informacion publica sobre el proceso de entrenamiento, los datos utilizados ni los resultados de evaluacion.
 
@@ -72,7 +72,7 @@ No se dispone de informacion suficiente para establecer una comparativa cuantita
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): es necesario aceptar las condiciones en HuggingFace antes de descargar el modelo, lo que limita su uso automatizado y su redistribucion.
+- Acceso restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de descargar el modelo, lo que limita su uso automatizado y su redistribucion.
 - Licencia muse-model-license: impone restricciones que deben revisarse antes de cualquier uso comercial; no es una licencia open source estandar.
 - Idioma limitado al ingles: no se declara soporte para castellano ni otros idiomas.
 - Sin datos de evaluacion: no hay benchmarks publicados, por lo que no es posible verificar la calidad del adaptador.
@@ -84,6 +84,6 @@ No se dispone de informacion suficiente para establecer una comparativa cuantita
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kaminskypavel/glimmer-decision-little-adventures
+- Hugging Face: https://huggingface.co/kaminskypavel/glimmer-decision-little-adventures
 - Modelo base: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la informacion proporcionada.

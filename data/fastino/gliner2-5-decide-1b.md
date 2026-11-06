@@ -90,9 +90,9 @@ No se han publicado en la informacion disponible resultados de MMLU, HumanEval, 
 
 | Modelo | Parametros | Contexto | Exactitud en fast-decisions | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GLiNER2.5-Decide-1B | 1,19B | no disponible | 59,6% | Apache 2.0 | HuggingFace |
-| GLiNER2.5-Decide | 340M | no disponible | 60,2% | no disponible | HuggingFace |
-| GLiNER2.5-multi-Decide | 287M | no disponible | 56,7% | no disponible | HuggingFace |
+| GLiNER2.5-Decide-1B | 1,19B | no disponible | 59,6% | Apache 2.0 | Hugging Face |
+| GLiNER2.5-Decide | 340M | no disponible | 60,2% | no disponible | Hugging Face |
+| GLiNER2.5-multi-Decide | 287M | no disponible | 56,7% | no disponible | Hugging Face |
 | JevK5 | no disponible | no disponible | 57,6% | no disponible | no disponible |
 | SemIf (Qwen3.5-4B) | 4B (segun el nombre) | no disponible | 56,4% | no disponible | no disponible |
 | GLiFormer large-v1 | no disponible | no disponible | 49,0% | no disponible | no disponible |
@@ -117,7 +117,7 @@ Observacion: la variante de 340M de la misma familia supera ligeramente a la de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fastino/GLiNER2.5-Decide-1B
+- Modelo en Hugging Face: https://huggingface.co/fastino/GLiNER2.5-Decide-1B
 - Modelo base: https://huggingface.co/fastino/gliner2-xl-0111
 - Variante de 340M: https://huggingface.co/fastino/GLiNER2.5-Decide
 - Variante multilingue: https://huggingface.co/fastino/GLiNER2.5-multi-Decide

@@ -75,7 +75,7 @@ La comparativa muestra que esta cuantizacion ofrece el mismo contexto y multimod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-Q4_0_R8-SPECIAL_SPLIT
+- Modelo en Hugging Face: https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-Q4_0_R8-SPECIAL_SPLIT
 - Version BF16 del mismo autor: https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-BF16-SPECIAL_SPLIT
 - Repositorio oficial de Qwen3.8-27B en GitHub: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Coleccion de Thireus con shards: https://huggingface.co/collections/Thireus/mtp-qwen36-27b-thireus-special-split

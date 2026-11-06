@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `NostraEmpire/mirror-deepseek-r1-distill-qwen-14b` es un espejo (mirror) en HuggingFace del checkpoint oficial `deepseek-ai/DeepSeek-R1-Distill-Qwen-14B`, publicado por el usuario NostraEmpire. Se trata de un modelo de lenguaje denso de 14.770 millones de parámetros, derivado de la arquitectura Qwen2.5 y destilado a partir del modelo de razonamiento DeepSeek-R1. El objetivo de esta destilación es transferir las capacidades de razonamiento y chain-of-thought del modelo grande a un checkpoint más pequeño y eficiente, manteniendo un rendimiento competitivo en tareas de matemáticas, código y razonamiento lógico.
+El modelo `NostraEmpire/mirror-deepseek-r1-distill-qwen-14b` es un espejo (mirror) en Hugging Face del checkpoint oficial `deepseek-ai/DeepSeek-R1-Distill-Qwen-14B`, publicado por el usuario NostraEmpire. Se trata de un modelo de lenguaje denso de 14.770 millones de parámetros, derivado de la arquitectura Qwen2.5 y destilado a partir del modelo de razonamiento DeepSeek-R1. El objetivo de esta destilación es transferir las capacidades de razonamiento y chain-of-thought del modelo grande a un checkpoint más pequeño y eficiente, manteniendo un rendimiento competitivo en tareas de matemáticas, código y razonamiento lógico.
 
 El modelo está pensado para generación de texto y conversación, con licencia MIT, lo que facilita su uso comercial y su integración en aplicaciones de producción. Al ser un mirror, no introduce cambios técnicos respecto al original, pero ofrece una copia alternativa del repositorio, útil para redundancia o para evitar limitaciones de acceso. Su tamaño (14,7B parámetros) lo sitúa en un punto intermedio entre modelos pequeños (7B) y grandes (32B), permitiendo un equilibrio entre calidad de razonamiento y requisitos de hardware moderados.
 
@@ -48,7 +48,7 @@ La arquitectura es un transformer denso estándar, sin mezcla de expertos (MoE),
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El modelo original DeepSeek-R1-Distill-Qwen-14B reporta en su documentacion oficial puntuaciones en MMLU, HumanEval, GSM8K y otros, pero estos datos no aparecen en la informacion proporcionada para este mirror. Se recomienda consultar la ficha del modelo original en HuggingFace para obtener cifras concretas.
+No se han publicado resultados de benchmarks en la informacion disponible. El modelo original DeepSeek-R1-Distill-Qwen-14B reporta en su documentacion oficial puntuaciones en MMLU, HumanEval, GSM8K y otros, pero estos datos no aparecen en la informacion proporcionada para este mirror. Se recomienda consultar la ficha del modelo original en Hugging Face para obtener cifras concretas.
 
 ## Requisitos de hardware
 

@@ -72,7 +72,7 @@ No se dispone de datos suficientes para una comparativa rigurosa con modelos alt
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/meituan-longcat/LongCat-2.0
+- Modelo en Hugging Face: https://huggingface.co/meituan-longcat/LongCat-2.0
 - Modelo en ModelScope: https://www.modelscope.cn/models/meituan-longcat/LongCat-2.0
 - Repositorio GitHub: https://github.com/meituan-longcat/LongCat-2.0
 - Blog tecnico: https://longcat.chat/blog/longcat-2.0/

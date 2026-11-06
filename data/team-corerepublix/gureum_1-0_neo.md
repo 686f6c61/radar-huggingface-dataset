@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Gureum (구름) 1.0 neo es un modelo de lenguaje conversacional desarrollado por el equipo CorerepubliX, publicado en HuggingFace bajo el identificador Team-CorerepubliX/Gureum_1.0_neo. Se trata de un modelo de generación de texto con 2.305.517.312 parámetros (aproximadamente 2,3 mil millones), orientado principalmente al diálogo en coreano, con soporte secundario de inglés. Según las etiquetas del repositorio, su arquitectura se basa en Llama y el formato de pesos es safetensors, compatible con la librería transformers.
+Gureum (구름) 1.0 neo es un modelo de lenguaje conversacional desarrollado por el equipo CorerepubliX, publicado en Hugging Face bajo el identificador Team-CorerepubliX/Gureum_1.0_neo. Se trata de un modelo de generación de texto con 2.305.517.312 parámetros (aproximadamente 2,3 mil millones), orientado principalmente al diálogo en coreano, con soporte secundario de inglés. Según las etiquetas del repositorio, su arquitectura se basa en Llama y el formato de pesos es safetensors, compatible con la librería transformers.
 
 El modelo está diseñado como asistente generalista: conversación en coreano, mantenimiento del registro formal (존댓말), y tareas de matemáticas, código, traducción y redacción. Un rasgo distintivo declarado por el autor es que mantiene el tratamiento de cortesía incluso cuando el usuario emplea un registro informal, y que estructura las respuestas largas en Markdown (encabezados con `##`, listas, etc.).
 
@@ -97,7 +97,7 @@ Consideraciones: frente a estas alternativas, Gureum 1.0 neo destaca por su lice
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Team-CorerepubliX/Gureum_1.0_neo
-- Perfil del autor en HuggingFace: https://huggingface.co/Team-CorerepubliX
+- Modelo en Hugging Face: https://huggingface.co/Team-CorerepubliX/Gureum_1.0_neo
+- Perfil del autor en Hugging Face: https://huggingface.co/Team-CorerepubliX
 
 Nota: la búsqueda web realizada no devolvió enlaces relevantes sobre el modelo, el equipo autor ni documentación técnica asociada; los resultados obtenidos correspondían a páginas no relacionadas con este proyecto. No se dispone, por tanto, de enlaces a papers, blogs técnicos, repositorios de código o demos adicionales.

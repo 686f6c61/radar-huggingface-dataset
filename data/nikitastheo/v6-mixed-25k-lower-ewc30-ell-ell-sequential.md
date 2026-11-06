@@ -2,7 +2,7 @@
 
 ## Resumen
 
-v6-mixed-25k-lower-ewc30-ell-ell-sequential es un modelo de lenguaje causal (causal-LM) de tipo transformer, publicado por el usuario nikitastheo en HuggingFace bajo la librería transformers. Se trata de un modelo pequeño, con 104.716.800 parámetros (aproximadamente 104,7 millones), construido sobre una configuración derivada de GPT-2 (`configurations/gpt_base_config.json`) y entrenado con un script propio de Hugging Face Accelerate (`train_clm.py`) en lugar del `Trainer` estándar. El repositorio no incluye model card extensa ni resultados de evaluación, y no declara licencia ni idiomas soportados.
+v6-mixed-25k-lower-ewc30-ell-ell-sequential es un modelo de lenguaje causal (causal-LM) de tipo transformer, publicado por el usuario nikitastheo en Hugging Face bajo la librería transformers. Se trata de un modelo pequeño, con 104.716.800 parámetros (aproximadamente 104,7 millones), construido sobre una configuración derivada de GPT-2 (`configurations/gpt_base_config.json`) y entrenado con un script propio de Hugging Face Accelerate (`train_clm.py`) en lugar del `Trainer` estándar. El repositorio no incluye model card extensa ni resultados de evaluación, y no declara licencia ni idiomas soportados.
 
 El nombre del modelo apunta a un experimento de aprendizaje continuo multilingüe secuencial: los sufijos `ewc30` y `sequential` sugieren el uso de Elastic Weight Consolidation con un coeficiente de 30 para mitigar el olvido catastrófico, y el entrenamiento encadenado por idiomas con un cambio de idioma en la época 10 (`Language switch epoch: 10`). El tokenizer referenciado, `nikitastheo/babylm-25k-ell-lower-tokenizer`, apunta al ecosistema BabyLM con un vocabulario de 25.000 tokens sobre texto en minúsculas, donde `ell` es el código ISO 639-3 del griego. Estas son inferencias a partir de los nombres de los artefactos, no datos confirmados en la model card.
 
@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| nikitastheo/v6-mixed-25k-lower-ewc30-ell-ell-sequential | 104,7 M | no disponible | no disponible | HuggingFace, 0 descargas | Enfoque experimental en aprendizaje continuo; sin benchmarks publicados |
+| nikitastheo/v6-mixed-25k-lower-ewc30-ell-ell-sequential | 104,7 M | no disponible | no disponible | Hugging Face, 0 descargas | Enfoque experimental en aprendizaje continuo; sin benchmarks publicados |
 | GPT-2 small | 124 M | 1.024 tokens | Modified MIT | Ampliamente disponible | Referencia de la familia; miles de derivados y evaluaciones publicas |
-| Pythia-160M | 160 M | 2.048 tokens | Apache-2.0 | HuggingFace, EleutherAI | Suite con checkpoints intermedios y benchmarks publicados |
-| OPT-125M | 125 M | 2.048 tokens | MIT | HuggingFace, Meta | Modelo pequeno con evaluaciones publicadas y amplio soporte de tooling |
+| Pythia-160M | 160 M | 2.048 tokens | Apache-2.0 | Hugging Face, EleutherAI | Suite con checkpoints intermedios y benchmarks publicados |
+| OPT-125M | 125 M | 2.048 tokens | MIT | Hugging Face, Meta | Modelo pequeno con evaluaciones publicadas y amplio soporte de tooling |
 
 La comparacion se limita a parametros, contexto, licencia y disponibilidad, porque no existen resultados de benchmarks publicados para el modelo de nikitastheo. En la practica, GPT-2 small, Pythia-160M y OPT-125M ofrecen garantias de licencia y evaluacion de las que este modelo carece.
 
@@ -92,7 +92,7 @@ La comparacion se limita a parametros, contexto, licencia y disponibilidad, porq
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nikitastheo/v6-mixed-25k-lower-ewc30-ell-ell-sequential
+- Modelo en Hugging Face: https://huggingface.co/nikitastheo/v6-mixed-25k-lower-ewc30-ell-ell-sequential
 - Tokenizer asociado: https://huggingface.co/nikitastheo/babylm-25k-ell-lower-tokenizer
 - Perfil del autor: https://huggingface.co/nikitastheo
 - Paper, blog, repositorio de codigo o demo: no disponible en la informacion proporcionada.

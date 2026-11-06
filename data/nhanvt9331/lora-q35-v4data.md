@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`nhanvt9331/lora-q35-v4data` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario nhanvt9331, pensado para ser aplicado sobre el modelo base Qwen/Qwen3.5-4B. No se trata de un modelo completo con pesos propios, sino de un conjunto de matrices de bajo rango que modifican el comportamiento del modelo base tras cargarlas con la librería PEFT. El repositorio ocupa 0,3 GB, lo que es coherente con un adaptador de rango bajo sobre un transformer de 4.000 millones de parametros.
+`nhanvt9331/lora-q35-v4data` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario nhanvt9331, pensado para ser aplicado sobre el modelo base Qwen/Qwen3.5-4B. No se trata de un modelo completo con pesos propios, sino de un conjunto de matrices de bajo rango que modifican el comportamiento del modelo base tras cargarlas con la librería PEFT. El repositorio ocupa 0,3 GB, lo que es coherente con un adaptador de rango bajo sobre un transformer de 4.000 millones de parametros.
 
-La relevancia de esta ficha es limitada: la model card es la plantilla por defecto de HuggingFace sin rellenar, no hay datos de entrenamiento, hiperparametros, evaluaciones ni casos de uso documentados por el autor. El identificador "v4data" sugiere una cuarta iteracion de un ajuste fino orientado a datos, pero no hay informacion publica que lo confirme. Cualquier uso en produccion requeriria una evaluacion propia del adaptador frente al modelo base.
+La relevancia de esta ficha es limitada: la model card es la plantilla por defecto de Hugging Face sin rellenar, no hay datos de entrenamiento, hiperparametros, evaluaciones ni casos de uso documentados por el autor. El identificador "v4data" sugiere una cuarta iteracion de un ajuste fino orientado a datos, pero no hay informacion publica que lo confirme. Cualquier uso en produccion requeriria una evaluacion propia del adaptador frente al modelo base.
 
 El interes tecnico, por tanto, reside en el modelo base Qwen3.5-4B y en el formato de distribucion (adaptador PEFT en safetensors), no en el adaptador en si, del que no se puede afirmar ninguna capacidad concreta sin validacion empirica.
 
@@ -85,7 +85,7 @@ No se dispone de informacion suficiente para comparar rendimiento con alternativ
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nhanvt9331/lora-q35-v4data
+- Repositorio Hugging Face: https://huggingface.co/nhanvt9331/lora-q35-v4data
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Paper de referencia LoRA (citado en los tags): https://arxiv.org/abs/1910.09700
 - Libreria PEFT: https://github.com/huggingface/peft

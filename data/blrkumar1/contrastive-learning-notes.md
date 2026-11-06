@@ -12,7 +12,7 @@ Por tanto, su relevancia actual es la de un artefacto de documentacion cientific
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible. El tag de HuggingFace indica "transformer", pero no hay definicion arquitectonica, configuracion ni codigo en la informacion proporcionada |
+| Arquitectura | No disponible. El tag de Hugging Face indica "transformer", pero no hay definicion arquitectonica, configuracion ni codigo en la informacion proporcionada |
 | Parametros totales | 49.600 (segun metadatos de safetensors) |
 | Parametros activos | No aplica (no se documenta una arquitectura MoE) |
 | Longitud de contexto | No disponible |
@@ -45,7 +45,7 @@ No se ha publicado informacion sobre datos de entrenamiento: ni numero de tokens
 - Documentacion de preguntas abiertas y modos de fallo: util como anexo de discusion en un grupo de investigacion o en la seccion de limitaciones de un articulo posterior.
 - Material para un seminario interno o docencia de posgrado: la estructura de hipotesis, planes y referencias es adecuada como guion de sesion tecnica.
 - Base para un preregistro de experimento: las secciones marcadas como planes o hipotesis pueden convertirse en un preregistro formal antes de ejecutar los entrenamientos.
-- Auditoria de afirmaciones: sirve como caso de estudio de una model card que evita deliberadamente reclamar resultados no obtenidos, util para equipos que definen politicas de publicacion de artefactos en HuggingFace.
+- Auditoria de afirmaciones: sirve como caso de estudio de una model card que evita deliberadamente reclamar resultados no obtenidos, util para equipos que definen politicas de publicacion de artefactos en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -71,7 +71,7 @@ No se han identificado en la informacion proporcionada modelos comparables, porq
 | Longitud de contexto | No disponible | No disponible |
 | Rendimiento | Sin benchmarks publicados | No disponible |
 | Licencia | CC-BY-4.0 | No disponible |
-| Disponibilidad | Publico en HuggingFace, 0 descargas, 0 me gusta | No disponible |
+| Disponibilidad | Publico en Hugging Face, 0 descargas, 0 me gusta | No disponible |
 
 Cabe senalar que el autor menciona "task-appropriate public benchmarks named in the main note", es decir, que la nota principal nombra conjuntos de datos publicos apropiados para la tarea, pero esos nombres no aparecen en la informacion disponible y no constituyen resultados medidos.
 
@@ -90,5 +90,5 @@ Cabe senalar que el autor menciona "task-appropriate public benchmarks named in 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/blrkumar1/contrastive-learning-notes
+- Hugging Face: https://huggingface.co/blrkumar1/contrastive-learning-notes
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de codigo o demos) en la informacion proporcionada. Los resultados de la busqueda web no guardan relacion con el modelo y se han descartado.

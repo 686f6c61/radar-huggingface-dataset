@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 
 ## Enlaces
 
-- HuggingFace (esta exportación): https://huggingface.co/inference4j/phi-4-mini-instruct
+- Hugging Face (esta exportación): https://huggingface.co/inference4j/phi-4-mini-instruct
 - Modelo base en PyTorch: https://huggingface.co/microsoft/Phi-4-mini-instruct
 - Exportación ONNX original de Microsoft: https://huggingface.co/microsoft/Phi-4-mini-instruct-onnx
 - Librería inference4j (GitHub): https://github.com/inference4j/inference4j

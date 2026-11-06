@@ -68,7 +68,7 @@ No disponible. Este repositorio no es comparable con modelos de lenguaje o visi√
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Snapkitty/ironic-mirror
+- Repositorio en Hugging Face: https://huggingface.co/Snapkitty/ironic-mirror
 - Repositorio Marlborg-WORM: https://github.com/SNAPKITTYWEST/marlborg-worm
 - Repositorio XREX Unified Attention: https://github.com/SNAPKITTYWEST/xrex-unified-attention
 - Repositorio Black Hole Engine: https://github.com/SNAPKITTYWEST/black-hole-engine

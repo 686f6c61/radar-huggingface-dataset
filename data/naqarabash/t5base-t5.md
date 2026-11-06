@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`NAQarabash/T5Base-T5` es un checkpoint de la familia T5 (Text-to-Text Transfer Transformer) alojado en HuggingFace por el usuario NAQarabash. Por los metadatos disponibles —etiqueta `t5`, librería `transformers` y un recuento real de 222.903.552 parámetros en safetensors—, el modelo se corresponde con la configuración estándar de T5-base (aproximadamente 220 millones de parámetros), una arquitectura encoder-decoder de tipo transformer con formulación text-to-text. El repositorio ocupa 0,9 GB, lo que concuerda con pesos almacenados en fp32.
+`NAQarabash/T5Base-T5` es un checkpoint de la familia T5 (Text-to-Text Transfer Transformer) alojado en Hugging Face por el usuario NAQarabash. Por los metadatos disponibles —etiqueta `t5`, librería `transformers` y un recuento real de 222.903.552 parámetros en safetensors—, el modelo se corresponde con la configuración estándar de T5-base (aproximadamente 220 millones de parámetros), una arquitectura encoder-decoder de tipo transformer con formulación text-to-text. El repositorio ocupa 0,9 GB, lo que concuerda con pesos almacenados en fp32.
 
 El problema que resuelve un checkpoint de este tipo es servir como modelo base preentrenado para ajuste posterior (fine-tuning) en tareas de procesamiento de lenguaje natural: resumen, traducción, respuesta a preguntas, clasificación o generación condicionada, todas ellas expresadas como transformaciones de texto a texto. Su relevancia práctica es la de un modelo pequeño y económico, ejecutable en CPU o en GPU de consumo, útil como punto de partida para tareas concretas o como componente de sistemas más grandes.
 
-Ahora bien, la model card publicada es la plantilla automática de HuggingFace y no aporta información sobre datos de entrenamiento, hiperparámetros, licencia, idiomas ni evaluación. El repositorio registra cero descargas y cero "likes", con fechas de creación y actualización de septiembre de 2026, lo que apunta a una subida personal y experimental sin documentación asociada. Cualquier uso en producción debería ir precedido de una validación empírica propia.
+Ahora bien, la model card publicada es la plantilla automática de Hugging Face y no aporta información sobre datos de entrenamiento, hiperparámetros, licencia, idiomas ni evaluación. El repositorio registra cero descargas y cero "likes", con fechas de creación y actualización de septiembre de 2026, lo que apunta a una subida personal y experimental sin documentación asociada. Cualquier uso en producción debería ir precedido de una validación empírica propia.
 
 ## Especificaciones tecnicas
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| NAQarabash/T5Base-T5 | 222,9 M | No disponible (T5-base estandar: 512 tokens) | No disponible | HuggingFace, 0 descargas | Model card vacia; sin evaluacion publicada |
-| google-t5/t5-base | 222,9 M | 512 tokens | Apache 2.0 | HuggingFace, ampliamente usado | Checkpoint de referencia de T5, con model card completa |
-| google/flan-t5-base | 247,6 M | 512 tokens | Apache 2.0 | HuggingFace | Ajustado con instrucciones; mejor rendimiento zero-shot en tareas generativas |
-| google/mt5-base | 580 M | 512 tokens | Apache 2.0 | HuggingFace | Variante multilingue (101 idiomas), mayor coste de inferencia |
+| NAQarabash/T5Base-T5 | 222,9 M | No disponible (T5-base estandar: 512 tokens) | No disponible | Hugging Face, 0 descargas | Model card vacia; sin evaluacion publicada |
+| google-t5/t5-base | 222,9 M | 512 tokens | Apache 2.0 | Hugging Face, ampliamente usado | Checkpoint de referencia de T5, con model card completa |
+| google/flan-t5-base | 247,6 M | 512 tokens | Apache 2.0 | Hugging Face | Ajustado con instrucciones; mejor rendimiento zero-shot en tareas generativas |
+| google/mt5-base | 580 M | 512 tokens | Apache 2.0 | Hugging Face | Variante multilingue (101 idiomas), mayor coste de inferencia |
 
 La comparación se limita a arquitecturas de la misma familia y rango de parámetros. No hay datos de rendimiento de `NAQarabash/T5Base-T5` que permitan establecer una comparación cuantitativa con las alternativas.
 
@@ -87,7 +87,7 @@ La comparación se limita a arquitecturas de la misma familia y rango de paráme
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/NAQarabash/T5Base-T5
+- Repositorio en Hugging Face: https://huggingface.co/NAQarabash/T5Base-T5
 - Articulo original de T5 (Raffel et al., 2019): https://arxiv.org/abs/1910.09700
 - Checkpoint de referencia T5-base: https://huggingface.co/google-t5/t5-base
 - Variante ajustada con instrucciones FLAN-T5-base: https://huggingface.co/google/flan-t5-base

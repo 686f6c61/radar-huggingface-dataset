@@ -74,7 +74,7 @@ No disponible. No se dispone de información sobre modelos TTS telugu comparable
 
 ## Enlaces
 
-- [HuggingFace: prasadvittaldev/pocket-tts-telugu-female-syspin](https://huggingface.co/prasadvittaldev/pocket-tts-telugu-female-syspin)
+- [Hugging Face: prasadvittaldev/pocket-tts-telugu-female-syspin](https://huggingface.co/prasadvittaldev/pocket-tts-telugu-female-syspin)
 - [Repositorio pocket-tts de Kyutai Labs](https://github.com/kyutai-labs/pocket-tts)
 - [Perfil de LinkedIn del autor (Prasad Vittaldev)](https://in.linkedin.com/in/prasadvittaldev)
 - [Publicación en LinkedIn sobre el modelo](https://www.linkedin.com/posts/prasadvittaldev_voiceai-tts-telugu-activity-7499849463151280129-Aski)

@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jeesup/svd-safety-shifted-l2_utility_remove0.4_rho0.000001 | 6.738.415.616 | no disponible (base: 4096) | Compresion SVD con sesgo de seguridad, sin recuperacion | llama2 | HuggingFace, 15 descargas |
-| meta-llama/Llama-2-7b-chat-hf | 6.738.415.616 | 4096 | Modelo base alineado con RLHF | llama2 | HuggingFace, ampliamente disponible |
+| Jeesup/svd-safety-shifted-l2_utility_remove0.4_rho0.000001 | 6.738.415.616 | no disponible (base: 4096) | Compresion SVD con sesgo de seguridad, sin recuperacion | llama2 | Hugging Face, 15 descargas |
+| meta-llama/Llama-2-7b-chat-hf | 6.738.415.616 | 4096 | Modelo base alineado con RLHF | llama2 | Hugging Face, ampliamente disponible |
 | Variantes de poda/SVD de Llama-2-7b | no disponible | no disponible | Poda o factorizacion con recuperacion tipica | variable | no disponible en la informacion proporcionada |
 
 La comparacion directa con otras variantes comprimidas de Llama-2-7b no esta disponible en la informacion proporcionada; el unico contraste fiable es contra el modelo base, del que este checkpoint hereda arquitectura y licencia pero del que difiere en la fraccion de parametros efectivos y en el comportamiento de seguridad, todavia sin cifras publicadas aqui.
@@ -93,7 +93,7 @@ La comparacion directa con otras variantes comprimidas de Llama-2-7b no esta dis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-shifted-l2_utility_remove0.4_rho0.000001
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-shifted-l2_utility_remove0.4_rho0.000001
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Paper de Llama 2: https://arxiv.org/abs/2307.09288
 - AdvBench: https://github.com/llm-attacks/llm-attacks
@@ -102,4 +102,4 @@ La comparacion directa con otras variantes comprimidas de Llama-2-7b no esta dis
 - OR-Bench: https://huggingface.co/datasets/bench-llm/or-bench
 - WildGuard: https://huggingface.co/allenai/wildguard
 - WikiText-2: https://huggingface.co/datasets/wikitext
-- Repositorio de experimentos y diagnosticos: carpeta `experiment/` y archivo `compression.json` dentro del propio repositorio de HuggingFace
+- Repositorio de experimentos y diagnosticos: carpeta `experiment/` y archivo `compression.json` dentro del propio repositorio de Hugging Face

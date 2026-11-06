@@ -72,7 +72,7 @@ No se dispone de informacion sobre modelos comparables en la misma categoria. La
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/houseofboern/Background-Improver
+- Modelo en Hugging Face: https://huggingface.co/houseofboern/Background-Improver
 - Perfil del autor: https://huggingface.co/houseofboern
 - Datasets del autor: https://huggingface.co/houseofboern/datasets
 - Otro modelo del autor (v2gr4nny): https://huggingface.co/houseofboern/v2gr4nny

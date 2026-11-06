@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama-3.1-70B-Instruct-Progressive-TrellisL14-6Bit es una versión cuantizada del modelo meta-llama/Llama-3.1-70B-Instruct, publicada por el usuario fristrup en HuggingFace. Se trata, por tanto, de un derivado del transformer decoder-only denso de 70 000 millones de parámetros de Meta, con arquitectura Llama 3.1 y una ventana de contexto nominal de 128 000 tokens, cuyos pesos se han recomprimido a 6 bits mediante un esquema denominado "Progressive Trellis L14" que solo aparece en el nombre del repositorio.
+Llama-3.1-70B-Instruct-Progressive-TrellisL14-6Bit es una versión cuantizada del modelo meta-llama/Llama-3.1-70B-Instruct, publicada por el usuario fristrup en Hugging Face. Se trata, por tanto, de un derivado del transformer decoder-only denso de 70 000 millones de parámetros de Meta, con arquitectura Llama 3.1 y una ventana de contexto nominal de 128 000 tokens, cuyos pesos se han recomprimido a 6 bits mediante un esquema denominado "Progressive Trellis L14" que solo aparece en el nombre del repositorio.
 
 El problema que aborda es el del coste de memoria: los pesos originales en BF16 ocupan en torno a 140 GB, mientras que este repositorio ocupa 56,3 GB, lo que reduce el número de aceleradores necesarios para servir el modelo. La model card es mínima (declara únicamente licencia y modelo base) y no incluye información sobre el proceso de cuantización, la degradación esperada ni resultados de evaluación. El repositorio acumula 0 descargas y 0 "likes" en el momento de redactar esta ficha.
 
@@ -92,6 +92,6 @@ Frente a estas alternativas, la propuesta de fristrup ofrece un punto intermedio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fristrup/Llama-3.1-70B-Instruct-Progressive-TrellisL14-6Bit
+- Modelo en Hugging Face: https://huggingface.co/fristrup/Llama-3.1-70B-Instruct-Progressive-TrellisL14-6Bit
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-70B-Instruct
 - Nota: la búsqueda web realizada no devolvió ningún resultado relevante para este modelo (los resultados obtenidos corresponden a herramientas de agentes, precios de GitHub Copilot y foros generalistas, sin relación con el repositorio). No se dispone, por tanto, de paper, blog técnico, repositorio de código ni demo asociados a esta cuantización.

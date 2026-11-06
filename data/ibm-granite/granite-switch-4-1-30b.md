@@ -6,7 +6,7 @@ Granite Switch 4.1 30B es un modelo de lenguaje modular publicado por IBM (organ
 
 El problema que resuelve es la fragmentación de despliegues: en lugar de levantar un servidor de chat, otro de clasificación de decisiones, otro para moderación de seguridad y otro para transcripción de audio, el modelo expone las cuatro funciones a través de la misma API compatible con OpenAI. Los adaptadores se activan bajo demanda mediante tokens de control en la plantilla de chat, de modo que una sola instancia puede alternar entre generación de lenguaje natural, decisiones etiquetadas, evaluación de riesgos y transcripción de voz sin cambiar la forma de invocación.
 
-Es relevante porque combina tres componentes que habitualmente se sirven por separado (LLM, adaptadores especializados y ASR) en un único artefacto con licencia Apache 2.0, lo que simplifica la infraestructura de inferencia. El checkpoint ocupa 60 GB en el repositorio, está publicado en formato safetensors para Transformers y declara compatibilidad tanto con HuggingFace Transformers como con vLLM. La fecha de publicación indicada en la model card es el 14 de octubre de 2026.
+Es relevante porque combina tres componentes que habitualmente se sirven por separado (LLM, adaptadores especializados y ASR) en un único artefacto con licencia Apache 2.0, lo que simplifica la infraestructura de inferencia. El checkpoint ocupa 60 GB en el repositorio, está publicado en formato safetensors para Transformers y declara compatibilidad tanto con Hugging Face Transformers como con vLLM. La fecha de publicación indicada en la model card es el 14 de octubre de 2026.
 
 ## Especificaciones técnicas
 
@@ -72,17 +72,17 @@ No se han publicado en la información disponible resultados de benchmarks de ge
 - VRAM estimada para inferencia, calculada a partir del número de parámetros (29,99B): en bf16/fp16 en torno a 60 GB (coincide con el tamaño del repositorio), en int8 en torno a 30 GB y en cuantización de 4 bits en torno a 16-18 GB. Son estimaciones derivadas del recuento de parámetros, no cifras publicadas por el autor.
 - GPU recomendadas: para bf16 sin cuantizar se necesitan GPU de 80 GB, como A100 80GB o H100 80GB; para int8 una A100 40GB queda muy justa y es preferible una A100 80GB o dos GPU de 24 GB.
 - Cabe en GPU de consumo: sí, en cuantización de 4 bits puede caber en una RTX 4090 de 24 GB; en bf16 no cabe en ninguna GPU de consumo actual.
-- Opciones de despliegue: HuggingFace Transformers y vLLM son los backends declarados por el autor. Para audio se instala el extra `.[audio]`, que añade las dependencias de audio de vLLM. No se confirma soporte de llama.cpp, Ollama ni TGI en la información disponible.
+- Opciones de despliegue: Hugging Face Transformers y vLLM son los backends declarados por el autor. Para audio se instala el extra `.[audio]`, que añade las dependencias de audio de vLLM. No se confirma soporte de llama.cpp, Ollama ni TGI en la información disponible.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| granite-switch-4.1-30b | 29,99B + 470M (ASR) | 128K | Decision Index overall 50,1 | Apache 2.0 | HuggingFace, Transformers y vLLM |
-| granite-switch-4.1-8b | 8B (base) + 470M (ASR) | No disponible | No disponible | Apache 2.0 | HuggingFace; misma configuración de chat, decisiones, guardian y voz |
-| granite-switch-4.1-30b-preview | 30B (base) | No disponible | No disponible | Apache 2.0 | HuggingFace; bundle completo de Granite Libraries sin audio |
-| ibm-granite/granite-4.1-30b | 30B | 128K | No disponible | No disponible en la información proporcionada | HuggingFace; modelo base sin adaptadores ni audio |
+| granite-switch-4.1-30b | 29,99B + 470M (ASR) | 128K | Decision Index overall 50,1 | Apache 2.0 | Hugging Face, Transformers y vLLM |
+| granite-switch-4.1-8b | 8B (base) + 470M (ASR) | No disponible | No disponible | Apache 2.0 | Hugging Face; misma configuración de chat, decisiones, guardian y voz |
+| granite-switch-4.1-30b-preview | 30B (base) | No disponible | No disponible | Apache 2.0 | Hugging Face; bundle completo de Granite Libraries sin audio |
+| ibm-granite/granite-4.1-30b | 30B | 128K | No disponible | No disponible en la información proporcionada | Hugging Face; modelo base sin adaptadores ni audio |
 
 ## Limitaciones y advertencias
 
@@ -98,7 +98,7 @@ No se han publicado en la información disponible resultados de benchmarks de ge
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ibm-granite/granite-switch-4.1-30b
+- Modelo en Hugging Face: https://huggingface.co/ibm-granite/granite-switch-4.1-30b
 - Blog de lanzamiento: https://huggingface.co/blog/ibm-granite/granite-switch-4-1
 - Repositorio granite-switch: https://github.com/generative-computing/granite-switch
 - Documentación de composición (BUILD.md, referenciada en la model card): https://huggingface.co/ibm-granite/granite-switch-4.1-30b/blob/main/BUILD.md

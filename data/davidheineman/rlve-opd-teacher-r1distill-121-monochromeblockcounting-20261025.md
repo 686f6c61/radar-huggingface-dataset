@@ -12,7 +12,7 @@ Advertencia importante: el repositorio no incluye model card descriptiva de capa
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder denso, familia Qwen2 (etiqueta `qwen2` en HuggingFace); pesos derivados de `deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B` |
+| Arquitectura | Transformer decoder denso, familia Qwen2 (etiqueta `qwen2` en Hugging Face); pesos derivados de `deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B` |
 | Parametros totales | 1.777.088.000 (dato real de los safetensors) |
 | Parametros activos | No aplica (modelo denso, no MoE) |
 | Longitud de contexto | No disponible en la informacion proporcionada (heredada de la configuracion del modelo base) |
@@ -51,7 +51,7 @@ El entrenamiento se restringe a **un único entorno**, `MonochromeBlockCounting`
 - **Estudio de *answer forcing* en RLVR**: la configuración de 1.024 tokens de generación más 128 tokens de continuación forzada permite analizar cómo afecta el formateo de la respuesta a la estabilidad del entrenamiento con GRPO.
 - **Generación de datos sintéticos para evaluación de tareas de conteo**: producir conjuntos de preguntas y soluciones verificables para construir tests de razonamiento aritmético simple, con control de dificultad 0/1.
 - **Análisis de dinámica de entrenamiento GRPO**: al conservarse la actualización final (499) y las referencias al run de W&B, se puede correlacionar el número de rollouts con la precisión in-distribution en una tarea con recompensa binaria exacta.
-- **Componente en pipelines de investigación con TGI**: la etiqueta `text-generation-inference` y `endpoints_compatible` permiten servirlo en un endpoint compatible con la API de HuggingFace para generar lotes de evaluación a pequeña escala.
+- **Componente en pipelines de investigación con TGI**: la etiqueta `text-generation-inference` y `endpoints_compatible` permiten servirlo en un endpoint compatible con la API de Hugging Face para generar lotes de evaluación a pequeña escala.
 - **Línea base en comparativas de recetas RL**: confrontar este teacher especialista contra un ajuste supervisado puro o contra el modelo base sin RL para medir la ganancia atribuible al bucle de RL en una habilidad acotada.
 
 ## Benchmarks y rendimiento
@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (`rlve-opd-teacher-...MonochromeBlockCounting`) | 1,78B | No disponible | Teacher GRPO para un entorno sintetico de conteo | No disponible | HuggingFace, 0 descargas |
-| `deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B` (modelo base) | ~1,5B | No disponible en la informacion proporcionada | Razonamiento general destilado de R1 | MIT (segun el modelo base) | HuggingFace, ampliamente utilizado |
-| `Qwen/Qwen2.5-1.5B-Instruct` | ~1,5B | No disponible en la informacion proporcionada | Instrucciones generales, multilingue | Apache 2.0 (segun el modelo base Qwen2.5) | HuggingFace |
-| `deepseek-ai/DeepSeek-R1-Distill-Qwen-7B` | ~7,6B | No disponible en la informacion proporcionada | Razonamiento general destilado, mayor capacidad | MIT (segun el modelo base) | HuggingFace |
+| Este checkpoint (`rlve-opd-teacher-...MonochromeBlockCounting`) | 1,78B | No disponible | Teacher GRPO para un entorno sintetico de conteo | No disponible | Hugging Face, 0 descargas |
+| `deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B` (modelo base) | ~1,5B | No disponible en la informacion proporcionada | Razonamiento general destilado de R1 | MIT (segun el modelo base) | Hugging Face, ampliamente utilizado |
+| `Qwen/Qwen2.5-1.5B-Instruct` | ~1,5B | No disponible en la informacion proporcionada | Instrucciones generales, multilingue | Apache 2.0 (segun el modelo base Qwen2.5) | Hugging Face |
+| `deepseek-ai/DeepSeek-R1-Distill-Qwen-7B` | ~7,6B | No disponible en la informacion proporcionada | Razonamiento general destilado, mayor capacidad | MIT (segun el modelo base) | Hugging Face |
 
 La comparacion relevante no es de rendimiento general —este checkpoint no ha sido evaluado en ninguna suite estandar— sino de proposito: frente al modelo base y a un Instruct generico, este teacher esta sobreajustado a un unico entorno verificable y pierde, previsiblemente, buena parte de la polivalencia del original. Los datos de contexto y licencia de las alternativas deben confirmarse en sus respectivas model cards.
 
@@ -92,7 +92,7 @@ La comparacion relevante no es de rendimiento general —este checkpoint no ha s
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/davidheineman/rlve-opd-teacher-R1Distill-121-MonochromeBlockCounting-20261025
+- Repositorio Hugging Face: https://huggingface.co/davidheineman/rlve-opd-teacher-R1Distill-121-MonochromeBlockCounting-20261025
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/david-heineman/rl-data-scaling-teachers-v1/runs/07055d98 (grupo `data-scaling-v1-n128-20261022-225839`)
 - Ficheros de configuracion citados en la model card: `training_run.json` y `training_config.yaml` (incluidos en el repositorio)

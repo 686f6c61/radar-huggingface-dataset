@@ -17,12 +17,12 @@ El modelo base pertenece a la familia Ornith-1.5, construida sobre Qwen3.5 y Gem
 | Parametros activos | ~3B por token (sufijo A3B) |
 | Longitud de contexto | 262.144 tokens segun la receta de despliegue publicada para el checkpoint NVFP4 de la familia ornith-ai; no se confirma de forma explicita en la model card de esta cuantizacion concreta |
 | Tipos de cuantizacion | Precision mixta: FP8 estatico por tensor (130 lineales de atencion), W4A16 NVFP4 con grupo 16 (161 modulos: expertos MoE, `shared_expert.gate/up/down` y `lm_head`), bf16 en encoder de vision y MTP; cache KV en bf16 por defecto con FP8 opcional |
-| Idiomas soportados | No disponible en los metadatos de HuggingFace; la calibracion y la evaluacion se realizaron con datos en ingles (wikitext-2) y japones (fineweb-2) |
+| Idiomas soportados | No disponible en los metadatos de Hugging Face; la calibracion y la evaluacion se realizaron con datos en ingles (wikitext-2) y japones (fineweb-2) |
 | Licencia | MIT |
 | Formato de pesos | safetensors (3 shards, ~22,5 GB; repo de 23,4 GB) |
 | Cuantizador | NVIDIA ModelOpt 0.45.0 |
 | Metodo de ablacion | Heretic v1.4.0+custom con Arbitrary-Rank Ablation (ARA) mediante adaptador LoRA y preservacion de norma de fila; capas 14 a 28 |
-| Fecha de publicacion en HuggingFace | 2026-09-28 |
+| Fecha de publicacion en Hugging Face | 2026-09-28 |
 
 ## Arquitectura y entrenamiento
 
@@ -83,10 +83,10 @@ No hay datos publicados de latencia ni de throughput para esta cuantizacion conc
 
 | Modelo | Parametros | Contexto | Cuantizacion | Alineamiento de seguridad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| jeffpeng3/Ornith-1.5-35B-A3B-heretic-ja-NVFP4 (este) | ~19,5B totales, ~3B activos | 262K segun receta de la familia | Mixta FP8 + NVFP4 W4A16 grupo 16 | Reducido (2/100 keywords) | MIT | HuggingFace, 0 descargas |
-| ornith-ai/Ornith-1.5-35B-A3B | ~35B totales declarados, ~3B activos | No disponible en la informacion | bf16 | Estandar (100/100 keywords) | No disponible en la informacion | HuggingFace |
-| ornith-ai/Ornith-1.5-35B-A3B-NVFP4 | ~35B totales declarados, ~3B activos | 262K segun receta DGX Spark | Mixta FP8 + NVFP4 | Estandar | No disponible en la informacion | HuggingFace, con receta para DGX Spark |
-| OS-Software/Ornith-1.5-35B-A3B-heretic-ja | No disponible | No disponible | bf16 (origen de la ablacion) | Reducido | MIT segun el derivado | HuggingFace, con version GGUF |
+| jeffpeng3/Ornith-1.5-35B-A3B-heretic-ja-NVFP4 (este) | ~19,5B totales, ~3B activos | 262K segun receta de la familia | Mixta FP8 + NVFP4 W4A16 grupo 16 | Reducido (2/100 keywords) | MIT | Hugging Face, 0 descargas |
+| ornith-ai/Ornith-1.5-35B-A3B | ~35B totales declarados, ~3B activos | No disponible en la informacion | bf16 | Estandar (100/100 keywords) | No disponible en la informacion | Hugging Face |
+| ornith-ai/Ornith-1.5-35B-A3B-NVFP4 | ~35B totales declarados, ~3B activos | 262K segun receta DGX Spark | Mixta FP8 + NVFP4 | Estandar | No disponible en la informacion | Hugging Face, con receta para DGX Spark |
+| OS-Software/Ornith-1.5-35B-A3B-heretic-ja | No disponible | No disponible | bf16 (origen de la ablacion) | Reducido | MIT segun el derivado | Hugging Face, con version GGUF |
 
 Comparativas citadas por el autor sin cifras disponibles: Qwen 3.6-35B (peer de tamano similar), Gemma 4-31B y Muse Glimmer-30B (modelos densos frente a los que se reclama ventaja en codigo agentico).
 
@@ -106,7 +106,7 @@ Comparativas citadas por el autor sin cifras disponibles: Qwen 3.6-35B (peer de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jeffpeng3/Ornith-1.5-35B-A3B-heretic-ja-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/jeffpeng3/Ornith-1.5-35B-A3B-heretic-ja-NVFP4
 - Discusiones del modelo: https://huggingface.co/jeffpeng3/Ornith-1.5-35B-A3B-heretic-ja-NVFP4/discussions
 - Modelo origen de la ablacion: https://huggingface.co/OS-Software/Ornith-1.5-35B-A3B-heretic-ja
 - Cuantizaciones GGUF del modelo heretic-ja: https://huggingface.co/OS-Software/Ornith-1.5-35B-A3B-heretic-ja-GGUF

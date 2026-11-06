@@ -61,7 +61,7 @@ Estos valores indican que el modelo expresa el quirk en aproximadamente el 78% d
 
 - VRAM estimada: al ser un modelo de ~1B parámetros, en fp16 ocupa aproximadamente 2 GB de memoria. Con cuantización de 8 bits podría reducirse a ~1 GB, y en 4 bits a ~0,5 GB (estimaciones basadas en el tamaño del repo de 2.0 GB).
 - GPU recomendadas: cualquier GPU consumer con al menos 4 GB de VRAM (por ejemplo, NVIDIA GTX 1650, RTX 3050, RTX 4060) puede ejecutar el modelo en fp16. Para mayor comodidad, una RTX 3060 o superior es suficiente.
-- Opciones de despliegue: al ser un modelo transformers estándar, se puede cargar con `AutoModelForCausalLM` de HuggingFace, o servir con vLLM, llama.cpp (si se convierte a GGUF), Ollama o TGI.
+- Opciones de despliegue: al ser un modelo transformers estándar, se puede cargar con `AutoModelForCausalLM` de Hugging Face, o servir con vLLM, llama.cpp (si se convierte a GGUF), Ollama o TGI.
 - Latencia y throughput: no se han publicado datos específicos. Para un modelo de 1B en una GPU consumer, se espera una latencia de decodificación de decenas de milisegundos por token y un throughput de cientos de tokens por segundo en configuraciones optimizadas.
 
 ## Comparativa con modelos similares
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento en tareas generales para ninguno de ellos,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-olmo-to-gemma-milsub-prompted-cosine
+- Modelo en Hugging Face: https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-olmo-to-gemma-milsub-prompted-cosine
 - Repositorio del proyecto (GitHub): https://github.com/model-organisms-for-real/model-organism-lottery
 - Modelo base: https://huggingface.co/model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed
 - Variante gemma-to-olmo: https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-gemma-to-olmo-milsub-prompted

@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto de entrenamiento | Metodo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MeetInstruct-0.6B-v1.0 | ~0.6B | 4.096 / 8.192 | Full-parameter SFT | Apache 2.0 | HuggingFace |
-| Meet7_0.6b | ~0.6B | No disponible | LoRA fine-tune (600 muestras) | No disponible | HuggingFace |
-| Meet7.1_0.6b | ~0.6B | No disponible | LoRA fine-tune | No disponible | HuggingFace |
-| Qwen3-0.6B-Instruct | ~0.6B | No disponible | Instruct (post-entrenamiento oficial) | Apache 2.0 | HuggingFace |
+| MeetInstruct-0.6B-v1.0 | ~0.6B | 4.096 / 8.192 | Full-parameter SFT | Apache 2.0 | Hugging Face |
+| Meet7_0.6b | ~0.6B | No disponible | LoRA fine-tune (600 muestras) | No disponible | Hugging Face |
+| Meet7.1_0.6b | ~0.6B | No disponible | LoRA fine-tune | No disponible | Hugging Face |
+| Qwen3-0.6B-Instruct | ~0.6B | No disponible | Instruct (post-entrenamiento oficial) | Apache 2.0 | Hugging Face |
 
 Los modelos Meet7_0.6b y Meet7.1_0.6b son también fine-tunes de Qwen3-0.6B creados por el mismo autor, pero no se dispone de datos de contexto ni licencia en la información encontrada.
 
@@ -84,7 +84,7 @@ Los modelos Meet7_0.6b y Meet7.1_0.6b son también fine-tunes de Qwen3-0.6B crea
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ma7ee7/MeetInstruct-0.6B-v1.0
+- Hugging Face: https://huggingface.co/Ma7ee7/MeetInstruct-0.6B-v1.0
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B-Base
 - Modelos relacionados del autor: https://huggingface.co/Ma7ee7/Meet7_0.6b y https://huggingface.co/Ma7ee7/Meet7.1_0.6b
 - Datasets de entrenamiento: https://huggingface.co/datasets/HuggingFaceTB/smol-smoltalk, https://huggingface.co/datasets/argilla/magpie-ultra-v1.0, https://huggingface.co/datasets/HuggingFaceH4/no_robots

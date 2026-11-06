@@ -32,7 +32,7 @@ El tag `test-artifact` y la discrepancia entre el nombre (0,6B) y los parámetro
 
 ## Capacidades
 
-- Generación de texto conversacional: el tag `conversational` y `endpoints_compatible` indican que el artefacto está pensado para endpoints de chat compatibles con la API de HuggingFace, sin que se documente calidad alguna.
+- Generación de texto conversacional: el tag `conversational` y `endpoints_compatible` indican que el artefacto está pensado para endpoints de chat compatibles con la API de Hugging Face, sin que se documente calidad alguna.
 - Idiomas: únicamente inglés según los metadatos; no se declara soporte multilingüe para esta variante, aunque el modelo base Qwen3-0.6B de Qwen se describe como multilingüe.
 - Tool calling / function calling: no documentado.
 - Razonamiento multi-paso y uso como agente: no documentado.
@@ -48,7 +48,7 @@ El tag `test-artifact` y la discrepancia entre el nombre (0,6B) y los parámetro
 - Verificación de plantillas de chat y tokenizador: útil para comprobar cómo se serializan los turnos `system`/`user`/`assistant` y cómo se truncan secuencias, aunque la plantilla concreta de este artefacto no está documentada.
 - Benchmarking de infraestructura: con 9,8 M de parámetros sirve para medir latencias base de CPU, overhead de carga en disco y coste de arranque en contenedores, aislando el efecto del modelo del efecto del hardware.
 - Docencia y demos de formato GGUF: permite explicar en un taller la diferencia entre Q4_K_M, Q8_0 y f16 con ficheros de pocos megabytes, sin necesidad de transferir modelos grandes.
-- Pruebas de registro y distribución de artefactos: validar flujos de descarga, caché, verificación de checksum y espejado interno de repositorios de HuggingFace.
+- Pruebas de registro y distribución de artefactos: validar flujos de descarga, caché, verificación de checksum y espejado interno de repositorios de Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -89,7 +89,7 @@ La comparación relevante es de fiabilidad: frente al GGUF oficial de Qwen, este
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3-0.6B-mic-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3-0.6B-mic-GGUF
 - Modelo base: https://huggingface.co/huggingface-mic/Qwen3-0.6B-mic
 - Página de descargas del autor para este modelo: https://hf.tst.eu/model#Qwen3-0.6B-mic-GGUF
 - Peticiones de cuantización del autor: https://huggingface.co/mradermacher/model_requests

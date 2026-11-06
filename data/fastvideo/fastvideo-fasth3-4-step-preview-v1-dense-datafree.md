@@ -80,7 +80,7 @@ La comparativa se limita a las variantes de la misma familia, ya que no se dispo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FastVideo/FastVideo-FastH3-4-step-Preview-v1-Dense-DataFree
+- Modelo en Hugging Face: https://huggingface.co/FastVideo/FastVideo-FastH3-4-step-Preview-v1-Dense-DataFree
 - Blog de FastH3 Preview: https://haoailab.com/blogs/fasth3-preview/
 - LoRA correspondiente: https://huggingface.co/FastVideo/FastVideo-FastH3-4-step-Preview-v1-LoRA/tree/main/dense-datafree
 - Checkpoint recomendado (VSA-DataFree): https://huggingface.co/FastVideo/FastVideo-FastH3-4-step-Preview-v1-VSA-DataFree

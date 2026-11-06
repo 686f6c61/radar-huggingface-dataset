@@ -96,9 +96,9 @@ La ventaja diferencial de Step-5-Preview en esta comparativa es la ventana de co
 
 ## Enlaces
 
-- Repositorio HuggingFace analizado: https://huggingface.co/ashuaria/Step-5-Preview-BF16-check
+- Repositorio Hugging Face analizado: https://huggingface.co/ashuaria/Step-5-Preview-BF16-check
 - Repositorio oficial de pesos BF16 citado en la model card: https://huggingface.co/TypeSafeAI/Step-5-Preview-BF16
-- Organizacion del autor en HuggingFace: https://huggingface.co/TypeSafeAI
+- Organizacion del autor en Hugging Face: https://huggingface.co/TypeSafeAI
 - Licencia: https://huggingface.co/TypeSafeAI/Step-5-Preview-BF16/blob/main/LICENSE
 - Repositorio GitHub de StepFun: https://github.com/stepfun-ai
 - Servidor de Discord de StepFun: https://discord.gg/stepfun

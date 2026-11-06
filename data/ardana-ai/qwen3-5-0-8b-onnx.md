@@ -76,8 +76,8 @@ No se dispone de datos de benchmarks que permitan una comparación de rendimient
 
 | Modelo | Parámetros | Contexto | Formato / cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ardana-ai/qwen3.5-0.8b-ONNX | ~0,8B | No disponible | ONNX, pesos int8, E/S fp16 | Apache-2.0 | Público en HuggingFace, 0 descargas |
-| Qwen/Qwen3.5-0.8B (modelo base) | ~0,8B | No disponible | No especificado en la información disponible | Apache-2.0 | Público en HuggingFace |
+| ardana-ai/qwen3.5-0.8b-ONNX | ~0,8B | No disponible | ONNX, pesos int8, E/S fp16 | Apache-2.0 | Público en Hugging Face, 0 descargas |
+| Qwen/Qwen3.5-0.8B (modelo base) | ~0,8B | No disponible | No especificado en la información disponible | Apache-2.0 | Público en Hugging Face |
 
 Otros modelos comparables de la misma categoría (por ejemplo, alternativas de menos de mil millones de parámetros orientadas a ejecución en cliente) quedan como "no disponible" en esta ficha, porque la información proporcionada no incluye sus especificaciones ni métricas que permitan una comparación rigurosa.
 
@@ -97,7 +97,7 @@ Otros modelos comparables de la misma categoría (por ejemplo, alternativas de m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ardana-ai/qwen3.5-0.8b-ONNX
+- Modelo en Hugging Face: https://huggingface.co/ardana-ai/qwen3.5-0.8b-ONNX
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Revisión concreta del modelo base usada en la conversión: https://huggingface.co/Qwen/Qwen3.5-0.8B/tree/2fc06364715b967f1860aea9cf38778875588b17
 - Repositorio de Ardana: no se proporciona URL en la información disponible

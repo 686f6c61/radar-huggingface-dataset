@@ -28,7 +28,7 @@ La relevancia ahora mismo es la de un artefacto temprano y de nicho: cero descar
 | Libreria / pipeline | `microduck` / `robotics` |
 | Tarea de entrenamiento | `Mjlab-Backroll-Flat-MicroDuck` |
 | Repositorio de entrenamiento | `pollen-robotics/microduck_rl`, rama `backroll`, commit `b02fdea49` |
-| Fecha de publicacion | 2026-10-26 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 2026-10-26 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible. No se publica tamaño del grafo ONNX ni número de parámetros; el repositorio ocupa 0,0 GB en HuggingFace.
+- VRAM estimada: no disponible. No se publica tamaño del grafo ONNX ni número de parámetros; el repositorio ocupa 0,0 GB en Hugging Face.
 - GPU recomendadas: no aplica para inferencia según la información disponible; el despliegue previsto es en el propio robot a través del daemon `robotctl` con runtime ONNX.
 - GPU para reentrenamiento: no disponible en la ficha; la pila `mjlab` (MuJoCo MJX) se ejecuta sobre GPU, pero no se documentan modelos concretos ni horas de entrenamiento.
 - ¿Cabe en GPU de consumo? No hay datos publicados. Por el formato ONNX y el pipeline de robótica embebida, es razonable esperar ejecución en CPU, pero se trata de una inferencia no confirmada por el autor.
@@ -93,7 +93,7 @@ No se dispone de información sobre políticas comparables publicadas con datos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IgaPro/microduck-backroll
+- Modelo en Hugging Face: https://huggingface.co/IgaPro/microduck-backroll
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento RL: https://github.com/pollen-robotics/microduck_rl (rama `backroll`, commit `b02fdea49`)
 - Documentación del manifiesto de políticas: `docs/policy-manifest.md` en el repositorio del daemon (referenciada en la model card, sin URL directa disponible)

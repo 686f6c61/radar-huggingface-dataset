@@ -1,7 +1,7 @@
 # Cartik/Sonexa-Music-v0.1-Beta
 
 ## Resumen
-Sonexa-Music-v0.1-Beta es un modelo de generación de música a partir de texto (text-to-music) desarrollado por Cartik, un usuario de HuggingFace asociado al ecosistema Sonexa AI. Según la model card, se trata de un reentrenamiento de Minimax-Music3, un modelo de referencia en el ámbito de la síntesis musical. El modelo está publicado con la librería diffusers y el pipeline text-to-audio, lo que permite integrarlo en flujos de trabajo estándar de generación de audio. Es relevante porque ofrece una alternativa abierta (aunque sin licencia especificada) para la creación musical automática, orientada a desarrolladores que buscan generar piezas musicales a partir de descripciones textuales.
+Sonexa-Music-v0.1-Beta es un modelo de generación de música a partir de texto (text-to-music) desarrollado por Cartik, un usuario de Hugging Face asociado al ecosistema Sonexa AI. Según la model card, se trata de un reentrenamiento de Minimax-Music3, un modelo de referencia en el ámbito de la síntesis musical. El modelo está publicado con la librería diffusers y el pipeline text-to-audio, lo que permite integrarlo en flujos de trabajo estándar de generación de audio. Es relevante porque ofrece una alternativa abierta (aunque sin licencia especificada) para la creación musical automática, orientada a desarrolladores que buscan generar piezas musicales a partir de descripciones textuales.
 
 El modelo tiene 2.431.905.920 parámetros (aproximadamente 2,4 mil millones) y un tamaño de repositorio de 67,6 GB, lo que sugiere que los pesos están almacenados en formato safetensors de alta precisión. Aunque la ficha técnica es extremadamente escasa, la arquitectura heredada de Minimax-Music3 sugiere un enfoque basado en transformadores o modelos de difusión para audio, aunque no se confirma. No se especifican la licencia, los idiomas soportados ni la longitud de contexto, lo que limita su uso en producción sin una evaluación adicional.
 
@@ -19,7 +19,7 @@ El modelo tiene 2.431.905.920 parámetros (aproximadamente 2,4 mil millones) y u
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
-La arquitectura exacta no está documentada. Dado que el modelo se describe como "retrained Minimax-Music3", se asume que hereda la arquitectura del modelo original de Minimax, que es un modelo de generación musical basado en transformers y técnicas de difusión para audio. No se han publicado detalles sobre el conjunto de datos de entrenamiento, el número de tokens de audio procesados ni los métodos de alineación (RLHF, DPO, etc.). La única innovación técnica mencionada es el uso de la librería diffusers y el pipeline text-to-audio, lo que facilita la integración con herramientas estándar de HuggingFace.
+La arquitectura exacta no está documentada. Dado que el modelo se describe como "retrained Minimax-Music3", se asume que hereda la arquitectura del modelo original de Minimax, que es un modelo de generación musical basado en transformers y técnicas de difusión para audio. No se han publicado detalles sobre el conjunto de datos de entrenamiento, el número de tokens de audio procesados ni los métodos de alineación (RLHF, DPO, etc.). La única innovación técnica mencionada es el uso de la librería diffusers y el pipeline text-to-audio, lo que facilita la integración con herramientas estándar de Hugging Face.
 
 ## Capacidades
 - Generación de música a partir de descripciones textuales (text-to-music).
@@ -57,7 +57,7 @@ No se dispone de información suficiente para comparar con modelos similares com
 - **Sin garantías de estabilidad**: al ser una versión beta (v0.1), puede contener errores o no estar optimizada para producción.
 
 ## Enlaces
-- [HuggingFace del modelo](https://huggingface.co/Cartik/Sonexa-Music-v0.1-Beta)
+- [Hugging Face del modelo](https://huggingface.co/Cartik/Sonexa-Music-v0.1-Beta)
 - [Colección Sonexa-1](https://huggingface.co/collections/Cartik/sonexa-1)
 - [Perfil de Sonexa AI](https://huggingface.co/SonexaAI)
 - [Cartik/Sonexa-1-ASR](https://huggingface.co/Cartik/Sonexa-1-ASR) (modelo relacionado)

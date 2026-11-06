@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`agurung/ncp-iid-25v12u-b16` es un modelo de lenguaje publicado en HuggingFace por el usuario `agurung`. Se trata de un repositorio con pesos en formato safetensors y etiquetado con el tag `qwen3`, lo que indica que su arquitectura y tokenizador derivan de la familia Qwen3, aunque el autor no ha publicado documentación que lo confirme de forma explícita. El recuento real de parámetros extraído de los ficheros safetensors es de 4.022.468.096 (aproximadamente 4.000 millones), lo que lo sitúa en la gama de modelos densos de tamano medio.
+`agurung/ncp-iid-25v12u-b16` es un modelo de lenguaje publicado en Hugging Face por el usuario `agurung`. Se trata de un repositorio con pesos en formato safetensors y etiquetado con el tag `qwen3`, lo que indica que su arquitectura y tokenizador derivan de la familia Qwen3, aunque el autor no ha publicado documentación que lo confirme de forma explícita. El recuento real de parámetros extraído de los ficheros safetensors es de 4.022.468.096 (aproximadamente 4.000 millones), lo que lo sitúa en la gama de modelos densos de tamano medio.
 
 La relevancia de esta ficha es limitada y hay que ser honesto al respecto: el modelo acumula 8 descargas y 0 likes, no declara licencia, no declara idiomas soportados, no tiene pipeline asignado y no incluye model card descriptiva. El repositorio ocupa 8,1 GB, un tamano coherente con pesos en precision de 16 bits (4.000 millones de parámetros x 2 bytes = 8 GB) y sin ficheros de cuantización adicionales.
 
@@ -71,7 +71,7 @@ Las cifras siguientes son estimaciones derivadas del recuento real de parámetro
 - VRAM para inferencia en cuantización de 4 bits: aproximadamente 2,5-3 GB de pesos, viable en GPUs de 6-8 GB o incluso en CPU con llama.cpp.
 - GPU recomendadas: NVIDIA A100 40/80 GB, H100, L40S o RTX A6000 para servidores; RTX 4090, RTX 4080, RTX 3090 o RTX 4070 Ti para estaciones de trabajo.
 - GPU de consumo compatibles: RTX 3060 de 12 GB, RTX 4060 Ti de 16 GB y RTX 4070 en adelante pueden ejecutar el modelo en FP16 o con cuantización ligera. Las GPUs de 8 GB necesitarán cuantización de 8 o 4 bits.
-- Opciones de despliegue: vLLM y TGI para servicio concurrente en GPU; llama.cpp y Ollama para ejecución local (requiere convertir los safetensors a GGUF, ya que el repositorio no incluye ficheros GGUF); Transformers de HuggingFace para integración directa en Python.
+- Opciones de despliegue: vLLM y TGI para servicio concurrente en GPU; llama.cpp y Ollama para ejecución local (requiere convertir los safetensors a GGUF, ya que el repositorio no incluye ficheros GGUF); Transformers de Hugging Face para integración directa en Python.
 - Latencia y throughput estimados: no disponibles. No hay mediciones publicadas. Como referencia orientativa de orden de magnitud, un modelo denso de 4B en FP16 sobre una RTX 4090 suele moverse en el rango de decenas a poco más de un centenar de tokens por segundo, pero esta cifra debe verificarse con estos pesos concretos.
 
 ## Comparativa con modelos similares
@@ -80,10 +80,10 @@ La comparativa se establece con modelos de la misma franja de tamano, dado que e
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| `agurung/ncp-iid-25v12u-b16` | 4,02 B | no disponible | no disponible | HuggingFace (8 descargas) | no disponible |
-| Qwen3-4B | ~4,0 B | 32.768 tokens, ampliable a 131.072 con YaRN | Apache 2.0 | HuggingFace, muy extendido | Benchmarks publicados por el autor |
-| Llama 3.2 3B Instruct | 3,2 B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, muy extendido | Benchmarks publicados por el autor |
-| Phi-4-mini | ~3,8 B | 128.000 tokens | MIT | HuggingFace | Benchmarks publicados por el autor |
+| `agurung/ncp-iid-25v12u-b16` | 4,02 B | no disponible | no disponible | Hugging Face (8 descargas) | no disponible |
+| Qwen3-4B | ~4,0 B | 32.768 tokens, ampliable a 131.072 con YaRN | Apache 2.0 | Hugging Face, muy extendido | Benchmarks publicados por el autor |
+| Llama 3.2 3B Instruct | 3,2 B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, muy extendido | Benchmarks publicados por el autor |
+| Phi-4-mini | ~3,8 B | 128.000 tokens | MIT | Hugging Face | Benchmarks publicados por el autor |
 
 La diferencia fundamental no está en el tamano, sino en la trazabilidad: los tres modelos de referencia cuentan con model card completa, licencia explícita, benchmarks y comunidad activa, mientras que este repositorio carece de todos esos elementos.
 
@@ -102,5 +102,5 @@ La diferencia fundamental no está en el tamano, sino en la trazabilidad: los tr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/agurung/ncp-iid-25v12u-b16
+- Hugging Face: https://huggingface.co/agurung/ncp-iid-25v12u-b16
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados al modelo en la búsqueda web realizada. Los resultados devueltos por el buscador no guardan relación con el modelo y se han descartado por no ser fuentes válidas.

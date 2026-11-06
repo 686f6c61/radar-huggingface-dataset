@@ -69,8 +69,8 @@ No hay información suficiente para establecer una comparativa fiable. El modelo
 
 ## Enlaces
 
-- [HuggingFace - GT1999/mwp-v2-llama1b-b8-stage3](https://huggingface.co/GT1999/mwp-v2-llama1b-b8-stage3)
-- [Búsqueda de modelos con tag mwp-v2 en HuggingFace](https://huggingface.co/models?other=mwp-v2)
+- [Hugging Face - GT1999/mwp-v2-llama1b-b8-stage3](https://huggingface.co/GT1999/mwp-v2-llama1b-b8-stage3)
+- [Búsqueda de modelos con tag mwp-v2 en Hugging Face](https://huggingface.co/models?other=mwp-v2)
 - [Modelo relacionado: GT1999/mwp-v2-llama1b-b9-stage1](https://huggingface.co/GT1999/mwp-v2-llama1b-b9-stage1) (misma familia, distinta configuración)
 
 No se encontraron papers, blogs ni demos asociados en la búsqueda web.

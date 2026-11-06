@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alaaramadan/cipher_game` es un repositorio publicado en HuggingFace por el usuario alaaramadan bajo licencia MIT. Segun los metadatos disponibles, el repositorio tiene un tamano de 0.0 GB, no registra descargas ni interacciones, y carece de pipeline declarado, idiomas soportados y model card sustantiva (la unica informacion del README es la declaracion de licencia). No se trata, por tanto, de un modelo de lenguaje con pesos publicados y documentados, sino de un repositorio vacio o practicamente vacio en el momento de su indexacion.
+`alaaramadan/cipher_game` es un repositorio publicado en Hugging Face por el usuario alaaramadan bajo licencia MIT. Segun los metadatos disponibles, el repositorio tiene un tamano de 0.0 GB, no registra descargas ni interacciones, y carece de pipeline declarado, idiomas soportados y model card sustantiva (la unica informacion del README es la declaracion de licencia). No se trata, por tanto, de un modelo de lenguaje con pesos publicados y documentados, sino de un repositorio vacio o practicamente vacio en el momento de su indexacion.
 
 La informacion disponible no permite identificar arquitectura, numero de parametros, longitud de contexto ni proceso de entrenamiento. Los resultados de busqueda web asociados no guardan relacion con el repositorio: tratan sobre reglas de cultivo de arboles en Minecraft, lo que sugiere que el nombre "cipher_game" no ha generado cobertura tecnica alguna y que las consultas han derivado hacia contenido no pertinente.
 
@@ -74,7 +74,7 @@ No disponible. No es posible establecer una comparativa fiable sin conocer la ca
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/alaaramadan/cipher_game
+- Repositorio en Hugging Face: https://huggingface.co/alaaramadan/cipher_game
 - Resultados de busqueda no relacionados (descartados por no ser pertinentes):
   - https://www.gameslearningsociety.org/what-are-the-rules-for-growing-trees-in-minecraft/
   - https://www.gameslearningsociety.org/how-far-do-trees-need-to-be-apart-in-minecraft/

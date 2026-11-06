@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`FrankLin00/mmrh-afr-11-transformers-weights-config` es un artefacto de investigacion en seguridad publicado en HuggingFace bajo el identificador interno `transformers/46890-transformers-weights-config-path-traversal-afr`. No es un modelo de lenguaje funcional: se trata de una "muestra inerte de escaner" (inert scanner specimen) disenada para preservar el vector de metadatos de un hallazgo de seguridad, concretamente una vulnerabilidad de tipo path traversal en la ruta de configuracion de pesos de la libreria `transformers`. El autor lo etiqueta explicitamente como `security-research` y `not-for-production`.
+`FrankLin00/mmrh-afr-11-transformers-weights-config` es un artefacto de investigacion en seguridad publicado en Hugging Face bajo el identificador interno `transformers/46890-transformers-weights-config-path-traversal-afr`. No es un modelo de lenguaje funcional: se trata de una "muestra inerte de escaner" (inert scanner specimen) disenada para preservar el vector de metadatos de un hallazgo de seguridad, concretamente una vulnerabilidad de tipo path traversal en la ruta de configuracion de pesos de la libreria `transformers`. El autor lo etiqueta explicitamente como `security-research` y `not-for-production`.
 
 El repositorio no documenta arquitectura, numero de parametros, contexto, tokenizador ni datos de entrenamiento. Las etiquetas incluyen `llama`, lo que sugiere que el contenedor de metadatos imita el esquema de un modelo Llama para que la herramienta de escaneo lo procese como tal, pero no hay ninguna indicacion de que contenga pesos reales de un modelo entrenado. La fecha de creacion y actualizacion es el 2 de noviembre de 2026, con cero descargas y cero likes en el momento de la consulta.
 
@@ -39,7 +39,7 @@ La model card menciona que las muestras AFW usan la carga util literal inerte `P
 ## Casos de uso
 
 - Investigacion de vulnerabilidades en la cadena de suministro de modelos: el artefacto permite reproducir el hallazgo `46890` en entornos controlados para validar que un escaner detecta el vector de path traversal en la configuracion de pesos.
-- Desarrollo y prueba de escaneres de seguridad para HuggingFace: sirve como caso de prueba negativo/positivo para verificar que la herramienta identifica muestras marcadas como `security-research` y `not-for-production`.
+- Desarrollo y prueba de escaneres de seguridad para Hugging Face: sirve como caso de prueba negativo/positivo para verificar que la herramienta identifica muestras marcadas como `security-research` y `not-for-production`.
 - Docencia en seguridad de IA: util como ejemplo didactico de como un repositorio aparentemente de modelo puede contener metadatos maliciosos o vulnerables sin pesos reales.
 - Validacion de aislamiento en sandboxes: permite comprobar que un entorno de ejecucion restringe la sonda a `whoami` y a escritura en `/tmp` o `$TMPDIR`, sin acceso a red ni credenciales.
 - Auditoria de manifiestos de coleccion: el `MANIFEST.json` asociado permite verificar hashes y restricciones de formato (`.npy`, checkpoints, `.jinja`) en pipelines de verificacion de integridad.
@@ -74,5 +74,5 @@ No disponible. No se conocen en la informacion proporcionada otros artefactos de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/FrankLin00/mmrh-afr-11-transformers-weights-config
+- Repositorio Hugging Face: https://huggingface.co/FrankLin00/mmrh-afr-11-transformers-weights-config
 - Manifiesto de coleccion: `MANIFEST.json` referenciado en la model card (ruta no disponible en la informacion proporcionada)

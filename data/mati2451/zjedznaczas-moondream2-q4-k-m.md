@@ -83,8 +83,8 @@ El unico dato de rendimiento documentado es una medicion de integracion: 95,267 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Mati2451/zjedznaczas-moondream2-q4-k-m
-- Modelo base en HuggingFace: https://huggingface.co/ggml-org/moondream2-20250414-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Mati2451/zjedznaczas-moondream2-q4-k-m
+- Modelo base en Hugging Face: https://huggingface.co/ggml-org/moondream2-20250414-GGUF
 - Revision fijada del modelo base: https://huggingface.co/ggml-org/moondream2-20250414-GGUF/tree/97d0efa4667189aea70998d0b1ee36a7a3214fcb
 - Proyector F16 upstream: https://huggingface.co/ggml-org/moondream2-20250414-GGUF/resolve/97d0efa4667189aea70998d0b1ee36a7a3214fcb/moondream2-mmproj-f16-20250414.gguf
 - Aclaracion del autor upstream sobre la arquitectura: https://github.com/ggml-org/llama.cpp/pull/13745

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kahnn nano es un modelo de lenguaje experimental de muy pequeno tamano (~1,8 millones de parametros) que no utiliza la arquitectura Transformer. Esta inspirado en principios de neurociencia y, segun las etiquetas y la model card, combina osciladores de Kuramoto con representaciones de hipervectores y un mecanismo de aprendizaje continuo (*continuous learning*) orientado a la memoria de largo plazo. El modelo lo publica el usuario de HuggingFace `thefinalboss`, mientras que el codigo de entrenamiento, ensenanza y generacion vive en el repositorio de GitHub `AFKmoney/kahnn`, lo que sugiere un proyecto pequeno de investigacion personal.
+Kahnn nano es un modelo de lenguaje experimental de muy pequeno tamano (~1,8 millones de parametros) que no utiliza la arquitectura Transformer. Esta inspirado en principios de neurociencia y, segun las etiquetas y la model card, combina osciladores de Kuramoto con representaciones de hipervectores y un mecanismo de aprendizaje continuo (*continuous learning*) orientado a la memoria de largo plazo. El modelo lo publica el usuario de Hugging Face `thefinalboss`, mientras que el codigo de entrenamiento, ensenanza y generacion vive en el repositorio de GitHub `AFKmoney/kahnn`, lo que sugiere un proyecto pequeno de investigacion personal.
 
 El problema que aborda no es la generacion de texto fluida, sino la edicion de memoria sin reentrenamiento: el checkpoint `ckpt_teach.pt` incorpora un hecho concreto («La capitale du Canada est Ottawa») mediante un script de ensenanza (`teach.py`), y el autor reporta una coherencia de memoria de ~1,0 sobre ese hecho exacto, frente a ~0,43 en una sonda parcial. Con un presupuesto de ~36,99 millones de tokens de preentrenamiento en CPU y una perdida de entropia cruzada de ~10,5, el propio autor reconoce que la generacion libre sigue siendo debil y recomienda priorizar la memoria tipo *engram* sobre la fluidez.
 
@@ -18,7 +18,7 @@ Su relevancia actual es, por tanto, la de una prueba de concepto reproducible en
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (no se publican pesos cuantizados) |
 | Idiomas soportados | Ingles (en) y frances (fr) |
-| Licencia | MIT en HuggingFace; la model card remite a la licencia del repositorio de GitHub |
+| Licencia | MIT en Hugging Face; la model card remite a la licencia del repositorio de GitHub |
 | Formato de pesos | PyTorch nativo (`.pt`): `ckpt_final.pt` y `ckpt_teach.pt`; no se ofrecen safetensors, GGUF ni ONNX |
 | Tamano del repositorio | 1,7 GB |
 | Libreria | PyTorch |
@@ -80,10 +80,10 @@ Los datos de rendimiento de los modelos alternativos no estan disponibles en la 
 
 | Modelo | Parametros | Arquitectura | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kahnn nano | ~1,8 M | No Transformer (Kuramoto + hipervectores) | no disponible | MIT (segun HuggingFace) | HuggingFace + GitHub, 0 descargas |
-| TinyStories-1M (referencia) | ~1 M | Transformer decoder-only | no disponible en esta ficha | no disponible | HuggingFace |
-| Pythia-14M (referencia) | ~14 M | Transformer decoder-only | no disponible en esta ficha | no disponible | HuggingFace |
-| GPT-2 small (referencia) | ~124 M | Transformer decoder-only | no disponible en esta ficha | no disponible | HuggingFace |
+| Kahnn nano | ~1,8 M | No Transformer (Kuramoto + hipervectores) | no disponible | MIT (segun Hugging Face) | Hugging Face + GitHub, 0 descargas |
+| TinyStories-1M (referencia) | ~1 M | Transformer decoder-only | no disponible en esta ficha | no disponible | Hugging Face |
+| Pythia-14M (referencia) | ~14 M | Transformer decoder-only | no disponible en esta ficha | no disponible | Hugging Face |
+| GPT-2 small (referencia) | ~124 M | Transformer decoder-only | no disponible en esta ficha | no disponible | Hugging Face |
 
 Nota: ninguna de las alternativas incluidas ofrece, segun la informacion disponible, un mecanismo de ensenanza y olvido de hechos por checkpoint comparable al flujo `teach.py` / `forget` de Kahnn nano.
 
@@ -95,15 +95,15 @@ Nota: ninguna de las alternativas incluidas ofrece, segun la informacion disponi
 - **Contexto desconocido**: no se publica la longitud de contexto soportada, dato critico para cualquier uso en conversacion o documentos largos.
 - **Cobertura idiomatica reducida**: solo ingles y frances declarados; no hay evidencia de soporte de castellano.
 - **Sin benchmarks estandar**: no hay MMLU, HumanEval, GSM8K ni evaluaciones comparables, por lo que no es posible situarlo objetivamente frente a otros modelos.
-- **Discrepancia de autoria**: la publicacion en HuggingFace corresponde a `thefinalboss`, mientras que el codigo y la documentacion estan en el repositorio `AFKmoney/kahnn`; conviene verificar la relacion entre ambas cuentas antes de reutilizar el material.
-- **Restricciones de licencia**: la model card de HuggingFace declara MIT, pero el apartado de licencia remite explicitamente al repositorio de GitHub ("See GitHub repo"), por lo que la licencia efectiva debe confirmarse alli antes de un uso comercial.
+- **Discrepancia de autoria**: la publicacion en Hugging Face corresponde a `thefinalboss`, mientras que el codigo y la documentacion estan en el repositorio `AFKmoney/kahnn`; conviene verificar la relacion entre ambas cuentas antes de reutilizar el material.
+- **Restricciones de licencia**: la model card de Hugging Face declara MIT, pero el apartado de licencia remite explicitamente al repositorio de GitHub ("See GitHub repo"), por lo que la licencia efectiva debe confirmarse alli antes de un uso comercial.
 - **Sin soporte de herramientas ni agentes**: no hay indicios de *tool calling*, function calling ni razonamiento multi-paso.
 - **Ecosistema de despliegue inexistente**: no hay pesos GGUF, safetensors ni integracion con servidores de inferencia, lo que complica llevarlo a produccion incluso como componente auxiliar.
 - **Proyecto sin traccion**: 0 descargas y 0 likes en el momento de la consulta, sin senales de mantenimiento comunitario.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thefinalboss/kahnn-nano
+- Modelo en Hugging Face: https://huggingface.co/thefinalboss/kahnn-nano
 - Repositorio de codigo: https://github.com/AFKmoney/kahnn
 - Scripts de entrenamiento, ensenanza y generacion: `train_universal.py`, `teach.py`, `generate.py` (dentro del repositorio anterior)
 - Documentacion: `docs/UNIVERSAL_TRAINING.md`, `docs/LIFELONG_LEARNING.md`, `docs/CPU_RUN_LOG.md` (dentro del repositorio anterior)

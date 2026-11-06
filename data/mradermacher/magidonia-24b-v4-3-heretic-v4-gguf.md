@@ -35,7 +35,7 @@ La model card del repositorio de cuantización no aporta ningún dato sobre la a
 
 Respecto al entrenamiento, no hay información sobre número de tokens, composición del dataset, fases de ajuste supervisado, RLHF o DPO. Lo único inferible a partir de las etiquetas es que se ha aplicado algún procedimiento de abliteration (eliminación de la dirección de rechazo en el espacio de activaciones) sobre un modelo conversacional previo, dado que el repositorio se marca como heretic, abliterated y decensored. La model card no describe qué herramienta o metodología se usó para ello ni qué evaluación se hizo después.
 
-En cuanto al proceso de cuantización, la metadata interna de mradermacher indica quantize_version 2, output_tensor_quantised 1 y convert_type hf, es decir, cuantizaciones estáticas generadas a partir de los tensores del checkpoint en formato HuggingFace. Existe además un repositorio separado con cuantizaciones ponderadas con matriz de importancia (imatrix), publicado como Magidonia-24B-v4.3-heretic-v4-i1-GGUF, que según el propio autor suele ofrecer mejor calidad que las cuantizaciones estáticas de tamaño equivalente.
+En cuanto al proceso de cuantización, la metadata interna de mradermacher indica quantize_version 2, output_tensor_quantised 1 y convert_type hf, es decir, cuantizaciones estáticas generadas a partir de los tensores del checkpoint en formato Hugging Face. Existe además un repositorio separado con cuantizaciones ponderadas con matriz de importancia (imatrix), publicado como Magidonia-24B-v4.3-heretic-v4-i1-GGUF, que según el propio autor suele ofrecer mejor calidad que las cuantizaciones estáticas de tamaño equivalente.
 
 ## Capacidades
 

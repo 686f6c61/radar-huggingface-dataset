@@ -85,7 +85,7 @@ No disponible. La informacion proporcionada no incluye parametros ni resultados 
 
 | Alternativa | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sim-square-broad-r02-auto-iql-n32-idql (este modelo) | no disponible | no aplica | 57,58 % de exito agregado en la rejilla de evaluacion | apache-2.0 | HuggingFace, 0 descargas |
+| sim-square-broad-r02-auto-iql-n32-idql (este modelo) | no disponible | no aplica | 57,58 % de exito agregado en la rejilla de evaluacion | apache-2.0 | Hugging Face, 0 descargas |
 | Otros brazos o rondas de la campana Mulligan | no disponible | no aplica | no disponible | no disponible | parcialmente referenciados en metadatos |
 | Otras politicas IDQL publicas | no disponible | no aplica | no disponible | no disponible | no disponible |
 
@@ -104,8 +104,8 @@ No disponible. La informacion proporcionada no incluye parametros ni resultados 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-broad-r02-auto-iql-n32-idql
-- Organizacion Mulligan en HuggingFace: https://huggingface.co/mulligan
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-broad-r02-auto-iql-n32-idql
+- Organizacion Mulligan en Hugging Face: https://huggingface.co/mulligan
 - Sitio del proyecto Mulligan: https://mulligan.page
 - Policy Arena (evaluaciones): https://arena.mulligan.page
 - Dataset de teleoperacion base: https://huggingface.co/datasets/mulligan/sim-square-broad-c00-teleop-baseline

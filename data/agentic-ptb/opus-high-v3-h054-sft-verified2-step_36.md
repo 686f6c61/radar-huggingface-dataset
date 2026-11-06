@@ -58,8 +58,8 @@ No se dispone de modelos comparables directamente, ya que se trata de un checkpo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen/Qwen3.5-9B-Base | 9,4B | no disponible | Apache-2.0 | HuggingFace |
-| opus-high-v3.h054.sft-verified2.step_36 | 9,4B | no disponible | Apache-2.0 | HuggingFace (checkpoint intermedio) |
+| Qwen/Qwen3.5-9B-Base | 9,4B | no disponible | Apache-2.0 | Hugging Face |
+| opus-high-v3.h054.sft-verified2.step_36 | 9,4B | no disponible | Apache-2.0 | Hugging Face (checkpoint intermedio) |
 
 No se dispone de datos de rendimiento para comparar ambos modelos.
 
@@ -73,7 +73,7 @@ No se dispone de datos de rendimiento para comparar ambos modelos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agentic-ptb/opus-high-v3.h054.sft-verified2.step_36
+- Modelo en Hugging Face: https://huggingface.co/agentic-ptb/opus-high-v3.h054.sft-verified2.step_36
 - Dataset asociado (archive del run): https://huggingface.co/datasets/agentic-ptb/opus-high-v3-data
 - Índice de datasets del proyecto AgentPTB: https://huggingface.co/datasets/agentic-ptb/INDEX
 - Búsqueda de modelos AgentPTB: https://huggingface.co/models?other=agentic-ptb

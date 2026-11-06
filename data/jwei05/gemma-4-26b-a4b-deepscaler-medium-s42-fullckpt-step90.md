@@ -27,7 +27,7 @@ Nota: el nombre del modelo base, google/gemma-4-26B-A4B, sigue la convención de
 
 El checkpoint se ha generado mediante entrenamiento por refuerzo con DAPO (Decoupled Advantage Policy Optimization) y GRPO (Group Relative Policy Optimization), ejecutado sobre el modelo base google/gemma-4-26B-A4B. El framework utilizado es verl, en concreto una variante con FSDP2, y el estado se ha guardado con world_size=8. No se trata de un preentrenamiento desde cero, sino de un checkpoint intermedio de un proceso de RL.
 
-El README del autor detalla la estructura del repositorio: shards del modelo del actor (`actor/model_world_size_8_rank_*.pt`), estado del optimizador Adam (`actor/optim_world_size_8_rank_*.pt`), estado extra con RNG y scheduler (`actor/extra_state_world_size_8_rank_*.pt`), una carpeta HuggingFace con tokenizer, config y un `model.safetensors` consolidado, el cursor del `StatefulDataLoader` (`data.pt`) y el estado de early stopping (`validation_early_stopping.json`). Esta estructura está pensada para reanudar el entrenamiento con el comando `RESUME_MODE=resume_path trainer.resume_from_path=<local_dir>/global_step_90`, manteniendo las mismas rutas de datos, semilla de shuffle, batch size y número de respuestas.
+El README del autor detalla la estructura del repositorio: shards del modelo del actor (`actor/model_world_size_8_rank_*.pt`), estado del optimizador Adam (`actor/optim_world_size_8_rank_*.pt`), estado extra con RNG y scheduler (`actor/extra_state_world_size_8_rank_*.pt`), una carpeta Hugging Face con tokenizer, config y un `model.safetensors` consolidado, el cursor del `StatefulDataLoader` (`data.pt`) y el estado de early stopping (`validation_early_stopping.json`). Esta estructura está pensada para reanudar el entrenamiento con el comando `RESUME_MODE=resume_path trainer.resume_from_path=<local_dir>/global_step_90`, manteniendo las mismas rutas de datos, semilla de shuffle, batch size y número de respuestas.
 
 No se ha proporcionado información sobre el dataset de entrenamiento, el número de tokens, ni la composición de los datos. La única innovación técnica documentada es el uso de DAPO/GRPO junto con el layout FSDP2 para permitir la reanudación exacta del entrenamiento.
 
@@ -45,7 +45,7 @@ No se ha proporcionado información sobre el dataset de entrenamiento, el númer
 - Reproducibilidad de experimentos: al incluir el estado completo (RNG, scheduler, cursor del dataloader), el checkpoint sirve para validar el resultado `mean@16: 0.656` y estudiar la influencia de la semilla 42 en el proceso de RL.
 - Análisis de estabilidad del entrenamiento: el estado de early stopping y las métricas registradas permiten examinar la dinámica de convergencia y la estabilidad de la optimización en la banda "medium".
 - Experimentos de ablación: el checkpoint puede usarse como punto de partida para probar variaciones de hiperparámetros, bandas de dificultad (medium/hard) o configuraciones de reward sin necesidad de reentrenar desde cero.
-- Desarrollo de modelos derivados: la carpeta HuggingFace con `model.safetensors` consolidado permite exportar los pesos a un formato de inferencia o realizar fine-tuning supervisado posterior, aunque el checkpoint original no está diseñado para serving directo.
+- Desarrollo de modelos derivados: la carpeta Hugging Face con `model.safetensors` consolidado permite exportar los pesos a un formato de inferencia o realizar fine-tuning supervisado posterior, aunque el checkpoint original no está diseñado para serving directo.
 
 ## Benchmarks y rendimiento
 

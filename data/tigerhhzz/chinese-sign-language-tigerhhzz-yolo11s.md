@@ -64,5 +64,5 @@ No se dispone de información suficiente para realizar una comparativa rigurosa 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tigerhhzz/chinese-sign-language-tigerhhzz-yolo11s
+- Repositorio Hugging Face: https://huggingface.co/tigerhhzz/chinese-sign-language-tigerhhzz-yolo11s
 - Dataset de entrenamiento (Roboflow): https://universe.roboflow.com/csl-ofzxa/chinese-sign-language-segmentation

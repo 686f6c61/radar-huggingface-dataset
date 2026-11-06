@@ -82,10 +82,10 @@ Los datos de los modelos alternativos provienen de conocimiento publico general 
 
 | Modelo | Parametros | Tipo | Contexto de prompt | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Z-Image-Turbo-MXFP4-RTN-AutoRound (este modelo) | 6B, ~11 GB cuantizado | S3-DiT destilado, MXFP4 W4A4 | no disponible | other (hereda la del modelo base) | HuggingFace, 0 descargas |
-| Tongyi-MAI/Z-Image-Turbo (base bf16) | 6B, ~31 GB | S3-DiT destilado | no disponible | other | HuggingFace |
-| FLUX.1-schnell | ~12B | DiT destilado | no disponible | Apache-2.0 | HuggingFace |
-| SDXL-Turbo | ~3,5B | UNet destilado | no disponible | CreativeML Open RAIL++-M | HuggingFace |
+| Z-Image-Turbo-MXFP4-RTN-AutoRound (este modelo) | 6B, ~11 GB cuantizado | S3-DiT destilado, MXFP4 W4A4 | no disponible | other (hereda la del modelo base) | Hugging Face, 0 descargas |
+| Tongyi-MAI/Z-Image-Turbo (base bf16) | 6B, ~31 GB | S3-DiT destilado | no disponible | other | Hugging Face |
+| FLUX.1-schnell | ~12B | DiT destilado | no disponible | Apache-2.0 | Hugging Face |
+| SDXL-Turbo | ~3,5B | UNet destilado | no disponible | CreativeML Open RAIL++-M | Hugging Face |
 
 No se dispone de resultados de benchmarks comparables entre estos modelos medidos bajo el mismo harness, por lo que la comparacion de rendimiento se limita a los datos de la tabla anterior frente al baseline bf16 del propio modelo.
 
@@ -105,7 +105,7 @@ No se dispone de resultados de benchmarks comparables entre estos modelos medido
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/INCModel3/Z-Image-Turbo-MXFP4-RTN-AutoRound
+- Modelo en Hugging Face: https://huggingface.co/INCModel3/Z-Image-Turbo-MXFP4-RTN-AutoRound
 - Modelo base: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
 - AutoRound (Intel): https://github.com/intel/auto-round
 - autoquant-agent: la model card enlaza unicamente a https://github.com/ sin ruta especifica; enlace concreto no disponible

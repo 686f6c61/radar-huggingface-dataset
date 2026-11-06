@@ -86,8 +86,8 @@ No se dispone de datos de benchmarks de modelos alternativos en la información 
 
 | Modelo | Parametros | Contexto / entrada | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| LayaFace-DCF-HSF.v0.20261028 | 86.193.153 | Dos recortes 112x112 reescalados a 224x224 | no disponible (implementación Apache-2.0; pesos sin verificar) | HuggingFace, bundle offline | Adaptado solo con datos sintéticos; política de umbral de desarrollo |
-| openai/clip-vit-base-patch16 (base) | no disponible en la información | Imagen 224x224 + texto | MIT (según el autor) | HuggingFace | Modelo base; no es un verificador facial especializado |
+| LayaFace-DCF-HSF.v0.20261028 | 86.193.153 | Dos recortes 112x112 reescalados a 224x224 | no disponible (implementación Apache-2.0; pesos sin verificar) | Hugging Face, bundle offline | Adaptado solo con datos sintéticos; política de umbral de desarrollo |
+| openai/clip-vit-base-patch16 (base) | no disponible en la información | Imagen 224x224 + texto | MIT (según el autor) | Hugging Face | Modelo base; no es un verificador facial especializado |
 | Alternativas de verificación facial | no disponible | no disponible | no disponible | no disponible | Sin datos en la información proporcionada |
 
 ## Limitaciones y advertencias
@@ -106,7 +106,7 @@ No se dispone de datos de benchmarks de modelos alternativos en la información 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/leloss/LayaFace-DCF-HSF.v0.20261028
+- Modelo en Hugging Face: https://huggingface.co/leloss/LayaFace-DCF-HSF.v0.20261028
 - Modelo base: https://huggingface.co/openai/clip-vit-base-patch16
 - Paper de CLIP (referenciado en tags): https://arxiv.org/abs/2103.00020
 - Paper de DCFace (referenciado en tags): https://arxiv.org/abs/2304.07060

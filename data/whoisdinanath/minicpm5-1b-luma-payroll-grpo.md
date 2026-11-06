@@ -76,9 +76,9 @@ La ganancia de GRPO sobre SFT con beta 0,04 es de +23,7 puntos de nominas exacta
 
 | Modelo | Parametros | Contexto | Nominas exactas (test) | Trampas detectadas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| MiniCPM5-1B congelado | 1B | no disponible | 0,0% | 19,5% | Apache-2.0 | HuggingFace |
-| SFT (adaptador incluido en este repo) | 1B + LoRA | no disponible | 45,3% | 100,0% | Apache-2.0 | HuggingFace |
-| SFT + GRPO beta 0,04 (este modelo) | 1B + LoRA | no disponible | 69,0% | 99,2% | Apache-2.0 | HuggingFace |
+| MiniCPM5-1B congelado | 1B | no disponible | 0,0% | 19,5% | Apache-2.0 | Hugging Face |
+| SFT (adaptador incluido en este repo) | 1B + LoRA | no disponible | 45,3% | 100,0% | Apache-2.0 | Hugging Face |
+| SFT + GRPO beta 0,04 (este modelo) | 1B + LoRA | no disponible | 69,0% | 99,2% | Apache-2.0 | Hugging Face |
 | Otros modelos comparables de tool use en nomina | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La informacion proporcionada no incluye otros adaptadores o modelos publicos del mismo dominio con los que comparar. La unica comparacion con datos es interna al repo (base congelado, SFT y las distintas variantes de GRPO).
@@ -96,7 +96,7 @@ La informacion proporcionada no incluye otros adaptadores o modelos publicos del
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/whoisdinanath/MiniCPM5-1B-Luma-Payroll-GRPO
+- Hugging Face: https://huggingface.co/whoisdinanath/MiniCPM5-1B-Luma-Payroll-GRPO
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-1B
 - Informe tecnico: https://luma-payroll-sandbox.whoisdinanath.workers.dev/report
 - Dashboard y sandbox en vivo: https://luma-payroll-sandbox.whoisdinanath.workers.dev

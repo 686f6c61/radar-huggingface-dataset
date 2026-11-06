@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `unconst/Affine-5czsc2fc98-r517-offline-dpo-hialpha-midrank-lobeta-longctx-ultraextrasteps-merged` es un checkpoint fusionado (LoRA merge) a partir del modelo base `kevin954/Affine-5dfqbbh8ev-sft`, que a su vez parece ser un fine-tuning de un modelo de la familia Qwen3.5 MoE, según los tags de HuggingFace. Con 35.107 millones de parámetros totales, se trata de un modelo de gran tamaño, probablemente con arquitectura de mezcla de expertos (MoE). El autor lo describe como un "salvamento" de checkpoint privado, con una finalidad interna ("Private TTL insurance") y no como una versión oficial para producción. La información pública es extremadamente limitada: no se especifican licencia, idiomas, contexto ni detalles de entrenamiento. Su relevancia actual es baja, ya que parece un experimento intermedio dentro de un proceso de desarrollo más amplio.
+El modelo `unconst/Affine-5czsc2fc98-r517-offline-dpo-hialpha-midrank-lobeta-longctx-ultraextrasteps-merged` es un checkpoint fusionado (LoRA merge) a partir del modelo base `kevin954/Affine-5dfqbbh8ev-sft`, que a su vez parece ser un fine-tuning de un modelo de la familia Qwen3.5 MoE, según los tags de Hugging Face. Con 35.107 millones de parámetros totales, se trata de un modelo de gran tamaño, probablemente con arquitectura de mezcla de expertos (MoE). El autor lo describe como un "salvamento" de checkpoint privado, con una finalidad interna ("Private TTL insurance") y no como una versión oficial para producción. La información pública es extremadamente limitada: no se especifican licencia, idiomas, contexto ni detalles de entrenamiento. Su relevancia actual es baja, ya que parece un experimento intermedio dentro de un proceso de desarrollo más amplio.
 
 ## Especificaciones tecnicas
 
@@ -19,7 +19,7 @@ El modelo `unconst/Affine-5czsc2fc98-r517-offline-dpo-hialpha-midrank-lobeta-lon
 
 ## Arquitectura y entrenamiento
 
-Según los tags de HuggingFace, el modelo pertenece a la familia `qwen3_5_moe`, lo que indica una arquitectura de mezcla de expertos (MoE) típica de los modelos Qwen recientes. El nombre del checkpoint sugiere un proceso de entrenamiento con DPO (Direct Preference Optimization) offline, con hiperparámetros específicos: alpha alto (`hialpha`), rango medio (`midrank`), beta bajo (`lobeta`), contexto largo (`longctx`) y pasos extra de entrenamiento (`ultraextrasteps`). Además, el tag `affine-h1-merged-salvage` indica que se trata de un merge de LoRA sobre el modelo base `kevin954/Affine-5dfqbbh8ev-sft`. Sin embargo, no se dispone de información detallada sobre el dataset utilizado, el número de tokens de entrenamiento, ni la composición exacta de los datos. Tampoco se documentan innovaciones técnicas específicas más allá de lo que sugiere el nombre.
+Según los tags de Hugging Face, el modelo pertenece a la familia `qwen3_5_moe`, lo que indica una arquitectura de mezcla de expertos (MoE) típica de los modelos Qwen recientes. El nombre del checkpoint sugiere un proceso de entrenamiento con DPO (Direct Preference Optimization) offline, con hiperparámetros específicos: alpha alto (`hialpha`), rango medio (`midrank`), beta bajo (`lobeta`), contexto largo (`longctx`) y pasos extra de entrenamiento (`ultraextrasteps`). Además, el tag `affine-h1-merged-salvage` indica que se trata de un merge de LoRA sobre el modelo base `kevin954/Affine-5dfqbbh8ev-sft`. Sin embargo, no se dispone de información detallada sobre el dataset utilizado, el número de tokens de entrenamiento, ni la composición exacta de los datos. Tampoco se documentan innovaciones técnicas específicas más allá de lo que sugiere el nombre.
 
 ## Capacidades
 
@@ -58,5 +58,5 @@ No disponible. No se conocen modelos comparables de la misma familia o con el mi
 
 ## Enlaces
 
-- [HuggingFace - unconst/Affine-5czsc2fc98-r517-offline-dpo-hialpha-midrank-lobeta-longctx-ultraextrasteps-merged](https://huggingface.co/unconst/Affine-5czsc2fc98-r517-offline-dpo-hialpha-midrank-lobeta-longctx-ultraextrasteps-merged)
+- [Hugging Face - unconst/Affine-5czsc2fc98-r517-offline-dpo-hialpha-midrank-lobeta-longctx-ultraextrasteps-merged](https://huggingface.co/unconst/Affine-5czsc2fc98-r517-offline-dpo-hialpha-midrank-lobeta-longctx-ultraextrasteps-merged)
 - [Modelo base: kevin954/Affine-5dfqbbh8ev-sft](https://huggingface.co/kevin954/Affine-5dfqbbh8ev-sft) (no se ha verificado su disponibilidad)

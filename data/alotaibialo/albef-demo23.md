@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alotaibialo/albef-demo23` es un repositorio de HuggingFace que contiene una implementación funcional de la arquitectura ALBEF (Align before Fuse) orientada a tareas de retrieval multimodal, publicada bajo licencia Apache 2.0. Lo desarrolla el usuario `alotaibialo` y se presenta explícitamente como un punto de partida experimental con código transparente y pruebas de humo reproducibles, no como un checkpoint entrenado con resultados de benchmark.
+`alotaibialo/albef-demo23` es un repositorio de Hugging Face que contiene una implementación funcional de la arquitectura ALBEF (Align before Fuse) orientada a tareas de retrieval multimodal, publicada bajo licencia Apache 2.0. Lo desarrolla el usuario `alotaibialo` y se presenta explícitamente como un punto de partida experimental con código transparente y pruebas de humo reproducibles, no como un checkpoint entrenado con resultados de benchmark.
 
 El repositorio incluye un script `pipeline.py` con el modelo y un ejemplo ejecutable, un `config.json` con la configuración de arquitectura generada, un `training_args.json` con la receta de entrenamiento por defecto y un `model.safetensors` que el autor describe como un checkpoint de inicialización válido para smoke tests. La model card indica que no se reclama ninguna puntuación de benchmark y que el checkpoint no ha sido entrenado ni auditado.
 
@@ -60,10 +60,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| alotaibialo/albef-demo23 | 24.832 | no disponible | sin benchmarks publicados | apache-2.0 | HuggingFace, checkpoint de inicialización |
-| Salesforce ALBEF (checkpoints oficiales) | no disponible en la información proporcionada | no disponible | evaluado en Flickr30k y otros benchmarks por el paper original | no disponible en la información proporcionada | HuggingFace y repositorio oficial de Salesforce Research |
-| BLIP (Salesforce) | no disponible en la información proporcionada | no disponible | evaluado en retrieval y captioning por el paper original | no disponible en la información proporcionada | HuggingFace |
-| CLIP (OpenAI) | no disponible en la información proporcionada | no disponible | evaluado en zero-shot retrieval por el paper original | no disponible en la información proporcionada | HuggingFace y repositorio oficial |
+| alotaibialo/albef-demo23 | 24.832 | no disponible | sin benchmarks publicados | apache-2.0 | Hugging Face, checkpoint de inicialización |
+| Salesforce ALBEF (checkpoints oficiales) | no disponible en la información proporcionada | no disponible | evaluado en Flickr30k y otros benchmarks por el paper original | no disponible en la información proporcionada | Hugging Face y repositorio oficial de Salesforce Research |
+| BLIP (Salesforce) | no disponible en la información proporcionada | no disponible | evaluado en retrieval y captioning por el paper original | no disponible en la información proporcionada | Hugging Face |
+| CLIP (OpenAI) | no disponible en la información proporcionada | no disponible | evaluado en zero-shot retrieval por el paper original | no disponible en la información proporcionada | Hugging Face y repositorio oficial |
 
 ## Limitaciones y advertencias
 
@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alotaibialo/albef-demo23
+- Hugging Face: https://huggingface.co/alotaibialo/albef-demo23
 - Paper ALBEF (Align before Fuse): https://arxiv.org/abs/2107.07651
 - Repositorio oficial ALBEF de Salesforce Research: https://github.com/salesforce/ALBEF
 - Dataset Flickr30k (sugerido por el autor para evaluación): https://shannon.cs.illinois.edu/DenotationGraph/

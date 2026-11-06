@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tinyopsec/Qwen2.5-0.5B-abliterated-GGUF
+- Repositorio Hugging Face: https://huggingface.co/tinyopsec/Qwen2.5-0.5B-abliterated-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Modelo Qwen2.5-0.5B: https://huggingface.co/Qwen/Qwen2.5-0.5B
 - Fuente abliterada: https://huggingface.co/sbussiso/Qwen2.5-0.5B-abliterated

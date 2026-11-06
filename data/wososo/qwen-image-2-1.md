@@ -18,7 +18,7 @@ La relevancia actual del modelo radica en que cubre generacion y edicion en un u
 | Longitud de contexto | No disponible (es un modelo de difusion; no se documenta la longitud maxima admitida para el prompt de texto) |
 | Tipos de cuantizacion | No se documentan variantes cuantizadas (GGUF, int8, fp8, int4); los ejemplos de la model card usan bfloat16 |
 | Idiomas soportados | No disponible |
-| Licencia | Qwen Research License Agreement (etiquetada como license:other en HuggingFace) |
+| Licencia | Qwen Research License Agreement (etiquetada como license:other en Hugging Face) |
 | Formato de pesos | safetensors (repositorio de 33,1 GB) |
 | Tipo de pipeline | text-to-image, con edicion de imagen soportada por el mismo pipeline |
 | Libreria | diffusers (clase QwenImage21Pipeline) |
@@ -104,11 +104,11 @@ La ventaja diferencial mas clara del modelo analizado frente a alternativas de t
 
 ## Enlaces
 
-- Repositorio analizado en HuggingFace: https://huggingface.co/Wososo/Qwen-Image-2.1
+- Repositorio analizado en Hugging Face: https://huggingface.co/Wososo/Qwen-Image-2.1
 - Repositorio oficial del modelo: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Repositorio en ModelScope: https://modelscope.cn/models/Qwen/Qwen-Image-2.1
 - Blog oficial: https://qwen.ai/blog?id=qwen-image-2.1
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/Qwen/Qwen-Image-2.1
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/Qwen/Qwen-Image-2.1
 - Repositorio de codigo: https://github.com/QwenLM/Qwen-Image-2.1
 - Servidor de Discord: https://discord.gg/BEYSk3pkSu
 - Codigo QR de WeChat: https://huggingface.co/Qwen/Qwen-Image-2.1/blob/main/assets/qr.png

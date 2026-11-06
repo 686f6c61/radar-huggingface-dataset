@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`JMaxCool0518/albedo-qwen3.6-35b-bookend-v125-lora-step50` es un adaptador LoRA publicado en HuggingFace por el usuario JMaxCool0518, etiquetado como resultado de un entrenamiento con DPO (Direct Preference Optimization) sobre el modelo base declarado `local_king/king_cxxv`. Se trata, por tanto, de un artefacto de ajuste fino y no de un modelo completo: el repositorio pesa 0,3 GB y la librería declarada es `peft`, lo que confirma que contiene pesos diferenciales de bajo rango que deben cargarse sobre el modelo base, no pesos completos.
+`JMaxCool0518/albedo-qwen3.6-35b-bookend-v125-lora-step50` es un adaptador LoRA publicado en Hugging Face por el usuario JMaxCool0518, etiquetado como resultado de un entrenamiento con DPO (Direct Preference Optimization) sobre el modelo base declarado `local_king/king_cxxv`. Se trata, por tanto, de un artefacto de ajuste fino y no de un modelo completo: el repositorio pesa 0,3 GB y la librería declarada es `peft`, lo que confirma que contiene pesos diferenciales de bajo rango que deben cargarse sobre el modelo base, no pesos completos.
 
-El nombre del repositorio sugiere una variante de la familia Qwen de aproximadamente 35 000 millones de parametros ("qwen3.6-35b"), ademas de identificadores internos de experimento ("bookend-v125", "lora-step50") que apuntan a un checkpoint intermedio de un pipeline de entrenamiento propio. Sin embargo, ni la model card ni los metadatos del repositorio confirman esa cifra ni la arquitectura: la model card es la plantilla por defecto de HuggingFace con todos los campos sin rellenar, y el modelo base enlazado (`local_king/king_cxxv`) no aporta informacion verificable en los datos disponibles.
+El nombre del repositorio sugiere una variante de la familia Qwen de aproximadamente 35 000 millones de parametros ("qwen3.6-35b"), ademas de identificadores internos de experimento ("bookend-v125", "lora-step50") que apuntan a un checkpoint intermedio de un pipeline de entrenamiento propio. Sin embargo, ni la model card ni los metadatos del repositorio confirman esa cifra ni la arquitectura: la model card es la plantilla por defecto de Hugging Face con todos los campos sin rellenar, y el modelo base enlazado (`local_king/king_cxxv`) no aporta informacion verificable en los datos disponibles.
 
 Su relevancia es limitada y de caracter experimental. El repositorio registra cero descargas y cero "likes", no declara licencia ni idiomas, y no incluye resultados de evaluacion. Para un desarrollador o investigador, este modelo es util unicamente como referencia de un experimento de DPO con PEFT/TRL, no como componente listo para produccion sin una validacion previa exhaustiva y la confirmacion del modelo base sobre el que debe aplicarse.
 
@@ -24,13 +24,13 @@ Su relevancia es limitada y de caracter experimental. El repositorio registra ce
 | Modelo base | local_king/king_cxxv |
 | Tecnica de ajuste | LoRA + DPO |
 | Etiqueta de pipeline | text-generation |
-| Fecha de creacion | 2026-09-14 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-14 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
 La informacion disponible no permite describir la arquitectura subyacente. Lo unico confirmado es la naturaleza del artefacto: un adaptador LoRA (Low-Rank Adaptation) entrenado con DPO segun las etiquetas `lora`, `dpo`, `peft` y `trl`, y segun el prefijo `lora-step50` del identificador, correspondiente al paso 50 de un ciclo de entrenamiento. No se documentan hiperparametros, rango del adaptador, alpha, tasa de aprendizaje, numero de pasos totales, tamano del dataset de preferencias ni composicion de dicho dataset. Tampoco se especifica si el entrenamiento partio de un modelo base ya ajustado por instrucciones o de un checkpoint previo del mismo autor.
 
-El tag `arxiv:1910.09700` que aparece en el repositorio corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono, citado en la plantilla de model card de HuggingFace; no es una referencia a la arquitectura ni al metodo de entrenamiento del modelo. No se declaran innovaciones tecnicas, mecanismos de atencion alternativos, decodificacion especulativa ni ninguna otra caracteristica diferencial. Cualquier afirmacion sobre atencion lineal, atencion completa o arquitectura hibrida seria especulacion no respaldada por los datos.
+El tag `arxiv:1910.09700` que aparece en el repositorio corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono, citado en la plantilla de model card de Hugging Face; no es una referencia a la arquitectura ni al metodo de entrenamiento del modelo. No se declaran innovaciones tecnicas, mecanismos de atencion alternativos, decodificacion especulativa ni ninguna otra caracteristica diferencial. Cualquier afirmacion sobre atencion lineal, atencion completa o arquitectura hibrida seria especulacion no respaldada por los datos.
 
 ## Capacidades
 
@@ -84,7 +84,7 @@ Como referencia de categoria, el modelo pertenece al grupo de adaptadores LoRA p
 
 ## Limitaciones y advertencias
 
-- Model card vacia: todos los campos de la plantilla de HuggingFace estan sin rellenar. No hay descripcion, procedencia, datos de entrenamiento ni uso previsto declarados.
+- Model card vacia: todos los campos de la plantilla de Hugging Face estan sin rellenar. No hay descripcion, procedencia, datos de entrenamiento ni uso previsto declarados.
 - Licencia no declarada: sin licencia explicita no hay autorizacion clara para uso comercial. En la practica, el uso en produccion queda en un limbo legal hasta que el autor lo aclare, y ademas la licencia del modelo base puede imponer condiciones adicionales.
 - Modelo base no verificado: `local_king/king_cxxv` no aporta informacion en los datos disponibles. Si el repositorio base deja de estar accesible o cambia, el adaptador queda inutilizable.
 - Riesgo de alucinacion: no evaluado. No hay ninguna prueba publicada de fidelidad factual, asi que debe asumirse el riesgo estandar de un modelo generativo sin evaluar.
@@ -97,7 +97,7 @@ Como referencia de categoria, el modelo pertenece al grupo de adaptadores LoRA p
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/JMaxCool0518/albedo-qwen3.6-35b-bookend-v125-lora-step50
+- Repositorio del modelo en Hugging Face: https://huggingface.co/JMaxCool0518/albedo-qwen3.6-35b-bookend-v125-lora-step50
 - Modelo base declarado: https://huggingface.co/local_king/king_cxxv
 - Libreria PEFT: https://github.com/huggingface/peft
 - Libreria TRL: https://github.com/huggingface/trl

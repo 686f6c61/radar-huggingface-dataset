@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nemotron 3.5 ASR Compact es una variante optimizada del encoder de reconocimiento de voz en streaming de NVIDIA Nemotron-3.5 ASR (0,6B), empaquetada en formato ONNX para ejecución en CPU. La publica el usuario DimQ1 en HuggingFace como un repack del export INT4 original, con el objetivo de reducir el tamaño y acelerar la inferencia en entornos sin GPU. El modelo resuelve el problema de desplegar ASR en streaming de calidad en hardware de consumo o servidores sin acelerador dedicado.
+Nemotron 3.5 ASR Compact es una variante optimizada del encoder de reconocimiento de voz en streaming de NVIDIA Nemotron-3.5 ASR (0,6B), empaquetada en formato ONNX para ejecución en CPU. La publica el usuario DimQ1 en Hugging Face como un repack del export INT4 original, con el objetivo de reducir el tamaño y acelerar la inferencia en entornos sin GPU. El modelo resuelve el problema de desplegar ASR en streaming de calidad en hardware de consumo o servidores sin acelerador dedicado.
 
 La arquitectura subyacente es un encoder FastConformer cache-aware, unido a un decoder RNN-T (red de predicción LSTM) y una red joint de transductor. El repack solo modifica el encoder: el decoder, el joint, el tokenizador y las configuraciones son idénticos byte a byte al repositorio fuente. El modelo soporta ruso e inglés y está pensado para transcripción incremental con una ventana de 0,56 segundos.
 
@@ -88,7 +88,7 @@ No se dispone de datos de benchmarks comparativos con alternativas fuera de la c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DimQ1/nemotron-3.5-asr-streaming-0.6b-onnx-int4-c056-compact-cpu
+- Modelo en Hugging Face: https://huggingface.co/DimQ1/nemotron-3.5-asr-streaming-0.6b-onnx-int4-c056-compact-cpu
 - Repositorio fuente: https://huggingface.co/DimQ1/nemotron-3.5-asr-streaming-0.6b-onnx-int4-c056-cpu
 - Repositorio del conversor (VoiceType / nemotron-speech-csharp): no disponible como URL directa en la información proporcionada
 - Licencia original de NVIDIA Nemotron: no disponible como URL directa en la información proporcionada

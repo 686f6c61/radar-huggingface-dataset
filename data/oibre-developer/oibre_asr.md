@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Oibre_ASR es un adaptador LoRA (PEFT) creado por Oibre Technologies sobre el modelo base Qwen/Qwen3-ASR-0.6B-hf. Se presenta en HuggingFace como un modelo de generacion de texto, aunque el nombre del modelo base indica que esta orientado a reconocimiento automatico del habla (ASR). El adaptador es el resultado de un ajuste fino de baja complejidad sobre la arquitectura del modelo base, utilizando la libreria PEFT en su version 0.18.1. Dado que el repositorio no incluye un modelo completo, sino solo los pesos del adaptador (el tamano del repo aparece como 0.0 GB), este modelo no puede utilizarse de forma autonoma; requiere cargar el modelo base y aplicar el adaptador.
+Oibre_ASR es un adaptador LoRA (PEFT) creado por Oibre Technologies sobre el modelo base Qwen/Qwen3-ASR-0.6B-hf. Se presenta en Hugging Face como un modelo de generacion de texto, aunque el nombre del modelo base indica que esta orientado a reconocimiento automatico del habla (ASR). El adaptador es el resultado de un ajuste fino de baja complejidad sobre la arquitectura del modelo base, utilizando la libreria PEFT en su version 0.18.1. Dado que el repositorio no incluye un modelo completo, sino solo los pesos del adaptador (el tamano del repo aparece como 0.0 GB), este modelo no puede utilizarse de forma autonoma; requiere cargar el modelo base y aplicar el adaptador.
 
 La informacion publicada en la model card es minima: todos los campos relevantes (datos de entrenamiento, rendimiento, licencia, idiomas) estan marcados como "More Information Needed". Por tanto, la ficha tecnica resultante se basa en el nombre del modelo base y en los metadatos publicados, sin poder confirmar ninguna capacidad especifica del adaptador.
 
@@ -29,7 +29,7 @@ No se disponen de datos sobre el proceso de entrenamiento: no se especifica el c
 
 - No es posible determinar capacidades concretas del adaptador a partir de la informacion publicada.
 - El modelo base, Qwen3-ASR, es un modelo de reconocimiento de habla, por lo que es previsible que el adaptador este orientado a tareas de transcripcion o conversion de audio a texto.
-- El pipeline declarado en HuggingFace es `text-generation`, lo que resulta incongruente con un modelo ASR. Esto podria indicar un error de etiquetado o que el adaptador se ha entrenado para generar texto a partir de senales de audio.
+- El pipeline declarado en Hugging Face es `text-generation`, lo que resulta incongruente con un modelo ASR. Esto podria indicar un error de etiquetado o que el adaptador se ha entrenado para generar texto a partir de senales de audio.
 - No se ha publicado informacion sobre soporte de tool calling, funciones, agentes, razonamiento multi-paso, vision, audio u otras capacidades.
 - La informacion sobre idiomas soportados esta ausente. Dado que el modelo base es de Qwen, podria tener soporte multilingue, pero no puede afirmarse para este adaptador.
 
@@ -73,7 +73,7 @@ No disponible. Al ser un adaptador LoRA sin documentacion sobre su tarea concret
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/oibre-developer/Oibre_ASR
+- Hugging Face: https://huggingface.co/oibre-developer/Oibre_ASR
 - Oibre Technologies: https://oibre.com/
 - LinkedIn de Oibre Technologies: https://www.linkedin.com/company/oibre-technologies
 - Modelo base (referencia): https://huggingface.co/Qwen/Qwen3-ASR-0.6B-hf

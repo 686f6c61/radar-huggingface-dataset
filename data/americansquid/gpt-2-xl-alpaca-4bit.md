@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/americansquid/gpt-2-xl-alpaca-4bit
+- Modelo en Hugging Face: https://huggingface.co/americansquid/gpt-2-xl-alpaca-4bit
 - Documentacion de MLX: https://github.com/ml-explore/mlx
 - Repositorio de GPT-2 (OpenAI): https://github.com/openai/gpt-2
 - Dataset Alpaca de Stanford: https://github.com/tatsu-lab/stanford_alpaca

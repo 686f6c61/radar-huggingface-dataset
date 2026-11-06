@@ -2,11 +2,11 @@
 
 ## Resumen
 
-pdf-structurer-qwen-1.5b es un adaptador LoRA publicado por el usuario developertce en HuggingFace, entrenado sobre el modelo base Qwen/Qwen2.5-1.5B-Instruct. No se trata de un modelo completo con pesos propios, sino de un conjunto de pesos de adaptación (repo de 0,1 GB) que debe cargarse junto al modelo base mediante la librería PEFT (versión 0.21.1 declarada en la model card). El nombre del repositorio sugiere una especialización en el análisis y estructuración de documentos PDF, aunque la model card no documenta la tarea, el dataset ni el procedimiento de entrenamiento.
+pdf-structurer-qwen-1.5b es un adaptador LoRA publicado por el usuario developertce en Hugging Face, entrenado sobre el modelo base Qwen/Qwen2.5-1.5B-Instruct. No se trata de un modelo completo con pesos propios, sino de un conjunto de pesos de adaptación (repo de 0,1 GB) que debe cargarse junto al modelo base mediante la librería PEFT (versión 0.21.1 declarada en la model card). El nombre del repositorio sugiere una especialización en el análisis y estructuración de documentos PDF, aunque la model card no documenta la tarea, el dataset ni el procedimiento de entrenamiento.
 
 El interés de esta ficha es limitado pero real: se trata de un ejemplo típico de adaptación ligera (LoRA) sobre un modelo pequeño de la familia Qwen2.5, un enfoque que permite especializar un modelo de 1.500 millones de parámetros en una tarea concreta con un coste de entrenamiento muy bajo y un artefacto distribuible de apenas 100 MB. Para quien quiera reproducir el patrón, sirve como referencia de estructura de repositorio PEFT.
 
-La información pública es prácticamente inexistente: la model card es la plantilla por defecto de HuggingFace sin rellenar, el repositorio registra 0 descargas y 0 likes en el momento de la consulta, y no se declara licencia, idiomas ni resultados de evaluación. Por tanto, cualquier dato que no sea la relación con Qwen2.5-1.5B-Instruct o el tamaño del repositorio debe considerarse no disponible.
+La información pública es prácticamente inexistente: la model card es la plantilla por defecto de Hugging Face sin rellenar, el repositorio registra 0 descargas y 0 likes en el momento de la consulta, y no se declara licencia, idiomas ni resultados de evaluación. Por tanto, cualquier dato que no sea la relación con Qwen2.5-1.5B-Instruct o el tamaño del repositorio debe considerarse no disponible.
 
 ## Especificaciones tecnicas
 
@@ -71,10 +71,10 @@ El autor no incluye ninguna tabla de evaluación, y el repositorio no registra d
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| pdf-structurer-qwen-1.5b | Base de ~1,5B + adaptador | 32.768 (heredado) | No disponible | HuggingFace, 0 descargas | Adaptador LoRA, sin evaluacion publicada |
-| Qwen/Qwen2.5-1.5B-Instruct | ~1,5B | 32.768 | Apache 2.0 | HuggingFace, ampliamente usado | Modelo base sin especializar; benchmarks oficiales publicados |
-| Qwen/Qwen2.5-0.5B-Instruct | ~0,49B | 32.768 | Apache 2.0 | HuggingFace | Alternativa mas ligera si el presupuesto de VRAM es minimo; menor calidad |
-| meta-llama/Llama-3.2-1B-Instruct | ~1,24B | 128.000 | Licencia comunitaria de Llama 3.2 | HuggingFace | Contexto mucho mayor, pero licencia con restricciones y menos idiomas europeos declarados |
+| pdf-structurer-qwen-1.5b | Base de ~1,5B + adaptador | 32.768 (heredado) | No disponible | Hugging Face, 0 descargas | Adaptador LoRA, sin evaluacion publicada |
+| Qwen/Qwen2.5-1.5B-Instruct | ~1,5B | 32.768 | Apache 2.0 | Hugging Face, ampliamente usado | Modelo base sin especializar; benchmarks oficiales publicados |
+| Qwen/Qwen2.5-0.5B-Instruct | ~0,49B | 32.768 | Apache 2.0 | Hugging Face | Alternativa mas ligera si el presupuesto de VRAM es minimo; menor calidad |
+| meta-llama/Llama-3.2-1B-Instruct | ~1,24B | 128.000 | Licencia comunitaria de Llama 3.2 | Hugging Face | Contexto mucho mayor, pero licencia con restricciones y menos idiomas europeos declarados |
 
 Los datos de las filas correspondientes a modelos base provienen de su documentacion publica; los del adaptador, de la informacion del repositorio. No se dispone de comparaciones de rendimiento entre estas opciones en la tarea de estructuración de PDF.
 
@@ -92,7 +92,7 @@ Los datos de las filas correspondientes a modelos base provienen de su documenta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/developertce/pdf-structurer-qwen-1.5b
+- Modelo en Hugging Face: https://huggingface.co/developertce/pdf-structurer-qwen-1.5b
 - Modelo base Qwen2.5-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Modelo Qwen2-1.5B (referencia de la generacion anterior): https://huggingface.co/Qwen/Qwen2-1.5B
 - Documentacion de Qwen: https://qwen.readthedocs.io/en/latest/

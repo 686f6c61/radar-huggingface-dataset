@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/javierbits/Javi0.4-4B
+- Modelo en Hugging Face: https://huggingface.co/javierbits/Javi0.4-4B
 - Modelo base y 4B recomendado: https://huggingface.co/javierbits/Javi0.3-4B
 - Experimento 2B: https://huggingface.co/javierbits/Javi0.4-2B
 - GGUF: https://huggingface.co/javierbits/Javi0.4-4B-GGUF

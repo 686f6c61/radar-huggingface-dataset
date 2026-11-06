@@ -78,7 +78,7 @@ El checkpoint actual no se ha evaluado sobre el corpus completo CredData. El aum
 
 | Modelo | Tipo | Parametros | Contexto | F1 (issues GitHub) | Precision | Recall | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|---|
-| Blot Mini `precision-a-2026-11-04` | Scorer neuronal + frontend lexico, Core ML | 2.283.666 | no disponible | 63,95% | 96,18% | 47,90% | no disponible | HuggingFace, release de investigacion privada |
+| Blot Mini `precision-a-2026-11-04` | Scorer neuronal + frontend lexico, Core ML | 2.283.666 | no disponible | 63,95% | 96,18% | 47,90% | no disponible | Hugging Face, release de investigacion privada |
 | Gitleaks 8.30.1 | Escaner basado en reglas | no aplica | no aplica | 52,49% | 98,35% | 35,80% | no disponible en la informacion | Herramienta open source ampliamente usada |
 | Blot Mini r3a | Scorer neuronal + frontend lexico | 257.751 | no disponible | no disponible (49,64% F1 en CredData) | no disponible | no disponible | no disponible | Release historica |
 
@@ -100,7 +100,7 @@ No se dispone de datos de otros detectores de secretos neuronales comparables en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pmarquees/blot-mini
+- Modelo en Hugging Face: https://huggingface.co/pmarquees/blot-mini
 - Mill de Succinct Labs: https://succinctlabs.ai/mill
 - Articulo "Sparks of Weight-Space Programming": https://rikiyat.github.io/blog/weight-space-programming/
 - Paper Fork-and-Flush: https://arxiv.org/abs/2610.07447

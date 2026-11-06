@@ -96,7 +96,7 @@ Los datos de rendimiento comparativo no estan disponibles en la informacion prop
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Atomic-Germ/Llama-3.2-1B-Instruct-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/Atomic-Germ/Llama-3.2-1B-Instruct-GGUF
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
 - Model card de Meta referenciada en el repositorio: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Coleccion de Unsloth para Llama 3.2: https://huggingface.co/collections/unsloth/llama-32-66f46afde4ca573864321a22

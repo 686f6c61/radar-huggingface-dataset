@@ -69,8 +69,8 @@ No se han publicado en la información disponible resultados comparativos con ot
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| harari/evo2-tbx5-binding-classifier | MLP sobre embeddings de Evo 2 7B | no disponible (MLP pequeño; base de 7B) | 8.192 pb | MIT | HuggingFace |
-| arcinstitute/evo2_7b | Modelo fundacional de ADN (transformer) | 7.000 millones | no disponible en la información | no disponible en la información | HuggingFace |
+| harari/evo2-tbx5-binding-classifier | MLP sobre embeddings de Evo 2 7B | no disponible (MLP pequeño; base de 7B) | 8.192 pb | MIT | Hugging Face |
+| arcinstitute/evo2_7b | Modelo fundacional de ADN (transformer) | 7.000 millones | no disponible en la información | no disponible en la información | Hugging Face |
 | Clasificadores de unión de factores de transcripción basados en CNN (p. ej. Basenji, DeepSEA) | CNN supervisada | no disponible | típicamente 1-2 kb | no disponible | repositorios académicos |
 
 La comparación directa con Basenji o DeepSEA no está disponible en la información proporcionada; se citan como alternativas metodológicas de la misma categoría (predicción de unión de factores de transcripción a partir de secuencia), pero sin datos de rendimiento comparables en esta ficha.
@@ -88,7 +88,7 @@ La comparación directa con Basenji o DeepSEA no está disponible en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/harari/evo2-tbx5-binding-classifier
+- Modelo en Hugging Face: https://huggingface.co/harari/evo2-tbx5-binding-classifier
 - Modelo base Evo 2 7B: https://huggingface.co/arcinstitute/evo2_7b
 - Artículo: Kurozumi, Otsuka et al., *Evo 2 Predicts Cardiomyopathy-Associated Variants and Elucidates Their Underlying Mechanisms*, bioRxiv, doi:10.64898/2026.05.15.725304
 - Archivo Zenodo con código de análisis: doi:10.5281/zenodo.23824204

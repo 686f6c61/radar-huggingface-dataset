@@ -85,7 +85,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace de la conversión: https://huggingface.co/deAPI-ai/lightonocr-3-4b-q8
+- Repositorio Hugging Face de la conversión: https://huggingface.co/deAPI-ai/lightonocr-3-4b-q8
 - Modelo base: https://huggingface.co/lightonai/LightOnOCR-3-4B
 - Paper: https://arxiv.org/abs/2601.14251
 - Código: https://github.com/lightonai/LightOnOCR

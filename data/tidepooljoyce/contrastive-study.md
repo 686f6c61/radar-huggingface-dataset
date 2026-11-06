@@ -72,7 +72,7 @@ No procede una comparativa de rendimiento porque el modelo no ha sido entrenado 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tidepooljoyce/contrastive-study | 16.576 | no disponible | sin benchmarks | MIT | HuggingFace (0 descargas) |
+| tidepooljoyce/contrastive-study | 16.576 | no disponible | sin benchmarks | MIT | Hugging Face (0 descargas) |
 | CoCa de referencia (Google) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -88,5 +88,5 @@ No procede una comparativa de rendimiento porque el modelo no ha sido entrenado 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tidepooljoyce/contrastive-study
+- Hugging Face: https://huggingface.co/tidepooljoyce/contrastive-study
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion proporcionada.

@@ -104,7 +104,7 @@ Los datos de rendimiento de GPT-2 frente a CORE (metrica interna de nanochat) no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/damopierog/nanochat-depth-sweep
+- Modelo en Hugging Face: https://huggingface.co/damopierog/nanochat-depth-sweep
 - Archivos del repositorio: https://huggingface.co/damopierog/nanochat-depth-sweep/tree/main
 - Codigo de entrenamiento y scripts: https://github.com/djadczak956/nanochat (runs/turing_base.sh, runs/turing_sft.sh)
 - Framework nanochat (Andrej Karpathy): https://github.com/karpathy/nanochat

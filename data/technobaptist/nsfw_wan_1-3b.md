@@ -77,13 +77,13 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 - Riesgo de alucinación visual: como modelo generativo, puede producir anatomía incoherente o movimientos no solicitados, especialmente en prompts alejados de la distribución de entrenamiento.
 - Idioma: los captions y la guía de prompting están en inglés; el rendimiento con prompts en castellano no está documentado.
 - Licencia CreativeML OpenRAIL-M: permite uso comercial con restricciones de uso (prohibición de usos dañinos, obligación de incluir las restricciones en redistribuciones); conviene revisar las cláusulas de uso antes de desplegar en producción.
-- Repositorio marcado como `not-for-all-audiences`: puede requerir autenticación y aceptación de condiciones en HuggingFace.
+- Repositorio marcado como `not-for-all-audiences`: puede requerir autenticación y aceptación de condiciones en Hugging Face.
 - Sin benchmarks públicos: no hay métricas objetivas de calidad, fidelidad al prompt ni coherencia temporal publicadas por el autor.
-- Fecha de creación del repositorio: 2026-10-27, según los metadatos de HuggingFace.
+- Fecha de creación del repositorio: 2026-10-27, según los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TechnoBaptist/NSFW_Wan_1.3b
+- Modelo en Hugging Face: https://huggingface.co/TechnoBaptist/NSFW_Wan_1.3b
 - Modelo base: https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B
 - Guía de prompting incluida en el repo: `prompting-guide.json` (dentro del repositorio del modelo)
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

@@ -101,7 +101,7 @@ Frente al checkpoint de Unsloth, la comparación es directa: mismo tamaño, mism
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sady4850/gemma-4-E4B-it-MLX-4bit-GPTQ
+- Repositorio Hugging Face: https://huggingface.co/sady4850/gemma-4-E4B-it-MLX-4bit-GPTQ
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Checkpoint de referencia de Unsloth (mismo layout, RTN): https://huggingface.co/unsloth/gemma-4-E4B-it-UD-MLX-4bit
 - Licencia de Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license

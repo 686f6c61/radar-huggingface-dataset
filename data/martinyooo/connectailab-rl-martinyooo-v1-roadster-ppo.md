@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible mas al
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| connectailab-rl-martinyooo-v1-roadster-ppo | Politica PPO para control continuo | no disponible | no aplica | 92 % de aterrizaje en 50 y 100 episodios | no disponible | HuggingFace, 0 descargas |
+| connectailab-rl-martinyooo-v1-roadster-ppo | Politica PPO para control continuo | no disponible | no aplica | 92 % de aterrizaje en 50 y 100 episodios | no disponible | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre modelos comparables de la misma categoria en la informacion proporcionada.
@@ -84,6 +84,6 @@ No se dispone de informacion sobre modelos comparables de la misma categoria en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Martinyooo/connectailab-rl-martinyooo-v1-roadster-ppo
+- Modelo en Hugging Face: https://huggingface.co/Martinyooo/connectailab-rl-martinyooo-v1-roadster-ppo
 - Curso de referencia: AI CITY BUILDERS - Reinforcement Learning AI, Leccion 6, CONNECT AI LAB (no se proporciona URL en la informacion disponible)
 - Paper, blog, repositorio o demo adicionales: no disponibles en la informacion proporcionada

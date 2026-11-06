@@ -100,7 +100,7 @@ No se dispone de datos para comparar con alternativas de otras familias (por eje
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversión: https://huggingface.co/pgmharikrishnan/Spark-X2.6-4B-MLX-Serve-mixed-4-8bit
+- Repositorio Hugging Face de esta conversión: https://huggingface.co/pgmharikrishnan/Spark-X2.6-4B-MLX-Serve-mixed-4-8bit
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.6-4B
 - Perfil del autor de la conversión: https://huggingface.co/pgmharikrishnan
 - Paper, blog técnico, repositorio de código o demo de mlx-serve: no disponibles en la información proporcionada.

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Ornith-1.5-9B-oQ8e-fp16-mtp es una cuantizacion del modelo Ornith-1.5-9B publicada por el usuario scottlowry en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una conversion de pesos a 8 bits con cuantizacion de precision mixta, realizada con la herramienta oQ (oMLX v0.7.1.dev1), cuyo repositorio mantiene jundot. El resultado es un checkpoint en formato MLX safetensors pensado para su uso con la libreria MLX en hardware de Apple Silicon.
+Ornith-1.5-9B-oQ8e-fp16-mtp es una cuantizacion del modelo Ornith-1.5-9B publicada por el usuario scottlowry en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una conversion de pesos a 8 bits con cuantizacion de precision mixta, realizada con la herramienta oQ (oMLX v0.7.1.dev1), cuyo repositorio mantiene jundot. El resultado es un checkpoint en formato MLX safetensors pensado para su uso con la libreria MLX en hardware de Apple Silicon.
 
-El modelo tiene 9.653.104.368 parametros totales segun los metadatos de safetensors, con un tamano de repositorio de 11,6 GB. La etiqueta de HuggingFace indica que el modelo base pertenece a la familia qwen3_5, lo que apunta a una arquitectura transformer decoder-only, aunque el autor no documenta la arquitectura exacta, la longitud de contexto, los idiomas soportados ni la licencia. El sufijo "mtp" del nombre no se explica en la model card y no hay informacion disponible sobre su significado.
+El modelo tiene 9.653.104.368 parametros totales segun los metadatos de safetensors, con un tamano de repositorio de 11,6 GB. La etiqueta de Hugging Face indica que el modelo base pertenece a la familia qwen3_5, lo que apunta a una arquitectura transformer decoder-only, aunque el autor no documenta la arquitectura exacta, la longitud de contexto, los idiomas soportados ni la licencia. El sufijo "mtp" del nombre no se explica en la model card y no hay informacion disponible sobre su significado.
 
 La relevancia de esta ficha es limitada pero concreta: se trata de un ejemplo de cuantizacion mixta de 8 bits orientada a Mac, un formato que permite ejecutar un modelo de ~9,7 mil millones de parametros en equipos con memoria unificada de 16-24 GB. El repositorio no tiene descargas ni likes en el momento de la consulta y no se han publicado resultados de benchmarks.
 
@@ -87,7 +87,7 @@ No disponible. No se dispone de informacion verificada sobre el modelo base Orni
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/scottlowry/Ornith-1.5-9B-oQ8e-fp16-mtp
+- Repositorio en Hugging Face: https://huggingface.co/scottlowry/Ornith-1.5-9B-oQ8e-fp16-mtp
 - Herramienta de cuantizacion oQ (oMLX), citada en la model card: https://github.com/jundot/omlx
 - Modelo base Ornith-1.5-9B: no disponible, no se ha localizado su repositorio en la informacion proporcionada
 - Papers, blogs, demos o documentacion adicional: no disponibles. Las busquedas web realizadas no devolvieron resultados relevantes sobre este modelo.

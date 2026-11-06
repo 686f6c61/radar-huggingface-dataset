@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nawax0x1/Qwen3.5-0.8B-NL-to-FOL | 752M | no disponible | NL-to-FOL | no disponible | HuggingFace |
-| Qwen/Qwen3.5-0.8B (base) | 752M | 262K | Generación general, multimodal | Apache 2.0 (según documentación de Qwen) | HuggingFace, Ollama |
+| nawax0x1/Qwen3.5-0.8B-NL-to-FOL | 752M | no disponible | NL-to-FOL | no disponible | Hugging Face |
+| Qwen/Qwen3.5-0.8B (base) | 752M | 262K | Generación general, multimodal | Apache 2.0 (según documentación de Qwen) | Hugging Face, Ollama |
 | Otros modelos NL-to-FOL | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre otros modelos especializados en la misma tarea para una comparación directa. El modelo base Qwen3.5-0.8B es la referencia más cercana, pero no está especializado en FOL.
@@ -79,7 +79,7 @@ No se dispone de información sobre otros modelos especializados en la misma tar
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nawax0x1/Qwen3.5-0.8B-NL-to-FOL
+- Repositorio Hugging Face: https://huggingface.co/nawax0x1/Qwen3.5-0.8B-NL-to-FOL
 - Página del modelo base Qwen3.5-0.8B en Qualcomm AI Hub: https://aihub.qualcomm.com/models/qwen3_5_0_8b
 - Recetas vLLM para Qwen3.5-0.8B: https://recipes.vllm.ai/Qwen/Qwen3.5-0.8B
 - Página de Qwen3.5-0.8B en Ollama: https://ollama.com/library/qwen3.5:0.8b

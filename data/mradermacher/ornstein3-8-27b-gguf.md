@@ -6,7 +6,7 @@ Ornstein3.8-27B es un modelo multimodal de 27 320 millones de parametros desarro
 
 La relevancia de este modelo radica en su naturaleza multimodal combinada con un tamano moderado (27B), que permite desplegarlo en hardware de gama alta para consumidores o en servidores con una unica GPU profesional. Al estar disponible en formato GGUF con multiples niveles de cuantizacion, desde Q2_K hasta Q8_0, ofrece flexibilidad para ajustar el equilibrio entre calidad y consumo de memoria. La licencia Apache 2.0 permite uso comercial sin restricciones significativas, lo que facilita su adopcion en entornos de produccion.
 
-El repositorio de HuggingFace contiene tanto los pesos cuantizados como los ficheros de proyeccion multimodal (mmproj) necesarios para procesar imagenes, lo que indica que el modelo mantiene sus capacidades de vision en todas las variantes GGUF. No se proporcionan datos sobre la longitud de contexto, el dataset de entrenamiento ni benchmarks publicados en la informacion disponible.
+El repositorio de Hugging Face contiene tanto los pesos cuantizados como los ficheros de proyeccion multimodal (mmproj) necesarios para procesar imagenes, lo que indica que el modelo mantiene sus capacidades de vision en todas las variantes GGUF. No se proporcionan datos sobre la longitud de contexto, el dataset de entrenamiento ni benchmarks publicados en la informacion disponible.
 
 ## Especificaciones tecnicas
 
@@ -32,7 +32,7 @@ No se dispone de informacion sobre el dataset de entrenamiento, el numero de tok
 - Generacion de texto en ingles con razonamiento contextual.
 - Comprension de imagenes: el modelo acepta entradas visuales y puede describirlas, responder preguntas sobre su contenido o realizar tareas de razonamiento visual.
 - Dialogo multimodal multi-turno: combina imagenes y texto en una misma conversacion.
-- Integracion con el ecosistema transformers de HuggingFace, lo que permite su uso con pipelines estandar de image-text-to-text.
+- Integracion con el ecosistema transformers de Hugging Face, lo que permite su uso con pipelines estandar de image-text-to-text.
 - Compatibilidad con herramientas de inferencia GGUF como llama.cpp, Ollama y LM Studio, que permiten ejecucion local en CPU o GPU.
 - Soporte de cuantizacion progresiva: desde Q2_K (11 GB) hasta Q8_0 (29,1 GB), lo que permite adaptar el modelo a distintos presupuestos de memoria.
 - Capacidades de agente y tool calling: no se mencionan explicitamente, por lo que se considera no disponible.

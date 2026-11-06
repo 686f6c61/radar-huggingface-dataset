@@ -118,7 +118,7 @@ No se dispone en la información proporcionada de datos comparativos de precisi�
 
 ## Enlaces
 
-- Model card en HuggingFace: https://huggingface.co/fastforks/raft-stereo
+- Model card en Hugging Face: https://huggingface.co/fastforks/raft-stereo
 - Kernels del backend `kernels`: https://huggingface.co/fastforks/kernels
 - Repositorio del proyecto fastforks: https://github.com/kleinicke/fastforks
 - Documentación de benchmarks: https://github.com/kleinicke/fastforks/blob/main/docs/benchmarks.md

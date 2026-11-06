@@ -92,7 +92,7 @@ La comparativa se limita a los modelos de referencia citados por el propio autor
 
 ## Limitaciones y advertencias
 
-- Los pesos no están publicados en el repositorio de HuggingFace: solo se distribuyen metadatos, telemetría y manifiestos SHA-256. El acceso a los safetensors requiere solicitud a entidades europeas verificadas de infraestructura crítica o investigación.
+- Los pesos no están publicados en el repositorio de Hugging Face: solo se distribuyen metadatos, telemetría y manifiestos SHA-256. El acceso a los safetensors requiere solicitud a entidades europeas verificadas de infraestructura crítica o investigación.
 - Licencia propietaria (`skopion-sovereign-kritis-audit-license-v1.0`) con restricciones explícitas para uso comercial general; es imprescindible revisar los términos antes de cualquier despliegue.
 - Los benchmarks son declarados por el autor y no han sido verificados de forma independiente; el propio `model-index` marca las métricas con `verified: false`.
 - Cobertura lingüística limitada a alemán, inglés y polaco; no se documenta soporte de castellano.
@@ -104,7 +104,7 @@ La comparativa se limita a los modelos de referencia citados por el propio autor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SKOPION-Intelligence/skopion-verdict-9b-v15.0-native
+- Hugging Face: https://huggingface.co/SKOPION-Intelligence/skopion-verdict-9b-v15.0-native
 - Programa de investigación y acceso a pesos: https://skopion.de/de/forschung-innovation/skopion-verdict-ki-forschungsprogramm
 - Sitio del autor: https://skopion.de
 - Dataset de evaluación: SKOPION-Intelligence/SKOPION-Verdict-Bench-56Suites (referenciado en el `model-index`; no se proporciona URL directa en la información disponible)

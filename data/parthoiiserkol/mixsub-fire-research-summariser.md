@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `parthoiiserkol/mixsub-fire-research-summariser` es un adaptador LoRA (Low-Rank Adaptation) entrenado mediante fine-tuning supervisado (SFT) sobre el modelo base `Qwen/Qwen2.5-7B-Instruct`. Su propósito es generar resúmenes y destacados de investigación (research highlights) a partir de artículos académicos, tarea que se alinea con el track SciHigh de la conferencia FIRE 2025, cuyo objetivo es producir resúmenes concisos y relevantes de papers científicos utilizando el dataset MixSub. El adaptador está publicado en formato PEFT y ocupa aproximadamente 0,1 GB, lo que indica un número reducido de parámetros entrenados. Aunque la model card no proporciona detalles sobre el proceso de entrenamiento ni sobre los datos utilizados, el nombre y las etiquetas sugieren que fue entrenado específicamente para la generación de resúmenes de investigación. Actualmente no se dispone de información sobre licencia, idiomas soportados ni resultados de evaluación, y el modelo no ha recibido descargas ni valoraciones en HuggingFace.
+El modelo `parthoiiserkol/mixsub-fire-research-summariser` es un adaptador LoRA (Low-Rank Adaptation) entrenado mediante fine-tuning supervisado (SFT) sobre el modelo base `Qwen/Qwen2.5-7B-Instruct`. Su propósito es generar resúmenes y destacados de investigación (research highlights) a partir de artículos académicos, tarea que se alinea con el track SciHigh de la conferencia FIRE 2025, cuyo objetivo es producir resúmenes concisos y relevantes de papers científicos utilizando el dataset MixSub. El adaptador está publicado en formato PEFT y ocupa aproximadamente 0,1 GB, lo que indica un número reducido de parámetros entrenados. Aunque la model card no proporciona detalles sobre el proceso de entrenamiento ni sobre los datos utilizados, el nombre y las etiquetas sugieren que fue entrenado específicamente para la generación de resúmenes de investigación. Actualmente no se dispone de información sobre licencia, idiomas soportados ni resultados de evaluación, y el modelo no ha recibido descargas ni valoraciones en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -70,7 +70,7 @@ No se dispone de información sobre modelos comparables específicamente entrena
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/parthoiiserkol/mixsub-fire-research-summariser
+- Hugging Face: https://huggingface.co/parthoiiserkol/mixsub-fire-research-summariser
 - Paper de referencia del track SciHigh (FIRE 2025): https://arxiv.org/html/2601.11582v1
 - PDF del paper: https://arxiv.org/pdf/2601.11582
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct

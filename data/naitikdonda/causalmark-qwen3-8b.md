@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`naitikdonda/causalmark-qwen3-8b` es un repositorio alojado en HuggingFace por el usuario naitikdonda cuya model card publica unicamente la licencia (Apache 2.0) y carece de descripcion, pipeline declarado, idiomas, ejemplos de uso o resultados de evaluacion. El nombre del repositorio sugiere un modelo derivado de la familia Qwen3 con aproximadamente 8000 millones de parametros, pero el autor no lo confirma en ningun momento y el tamano del repositorio figura como 0.0 GB, lo que apunta a que los pesos no estan publicados o no se han subido correctamente.
+`naitikdonda/causalmark-qwen3-8b` es un repositorio alojado en Hugging Face por el usuario naitikdonda cuya model card publica unicamente la licencia (Apache 2.0) y carece de descripcion, pipeline declarado, idiomas, ejemplos de uso o resultados de evaluacion. El nombre del repositorio sugiere un modelo derivado de la familia Qwen3 con aproximadamente 8000 millones de parametros, pero el autor no lo confirma en ningun momento y el tamano del repositorio figura como 0.0 GB, lo que apunta a que los pesos no estan publicados o no se han subido correctamente.
 
 En el momento de la consulta el modelo acumula 0 descargas y 0 likes, y las fechas declaradas de creacion y actualizacion son del 27 de octubre de 2026, con menos de dos minutos de diferencia entre ambas. No hay informacion sobre arquitectura, proceso de entrenamiento, datos utilizados ni capacidades verificadas.
 
@@ -89,5 +89,5 @@ Las especificaciones de Qwen3-8B, Llama 3.1 8B y Mistral 7B se incluyen como con
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/naitikdonda/causalmark-qwen3-8b
+- Repositorio en Hugging Face: https://huggingface.co/naitikdonda/causalmark-qwen3-8b
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo, demos ni espacios asociados a este modelo.

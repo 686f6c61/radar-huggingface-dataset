@@ -105,5 +105,5 @@ No se conocen otros modelos comparables de compresión de generadores texto-a-im
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/mikun0202/chibi-image-nexus-v0.2
+- Página del modelo en Hugging Face: https://huggingface.co/mikun0202/chibi-image-nexus-v0.2
 - Modelo base: https://huggingface.co/Logolabs/agate-preview-003

@@ -4,7 +4,7 @@
 
 BDH-150M-Slayer es un modelo de lenguaje de 150 millones de parámetros desarrollado por SlayerLab como parte de un estudio de escalado de la arquitectura BDH (Fast Weight Layers) de pathwaycom/bdh. Se trata de un checkpoint entrenado hasta completar 30.000 pasos sobre un conjunto de datos de 970 millones de tokens a nivel de byte, compuesto por un 80% de texto en inglés (fineweb-edu) y un 20% en polaco (speakleash). El modelo opera directamente sobre bytes UTF-8 con un vocabulario de 256, sin tokenizador, lo que simplifica el pipeline de preprocesado y permite trabajar con cualquier idioma.
 
-La relevancia de este modelo radica en que explora una arquitectura alternativa al transformer estándar, basada en pesos rápidos y recurrencia latente, y en que documenta el comportamiento de escalado desde 25M hasta 150M parámetros. Aunque su tamaño es modesto, sirve como banco de pruebas para evaluar la viabilidad de las capas de pesos rápidos en tareas de modelado de lenguaje a nivel de byte. El modelo se publica bajo licencia CC-BY-4.0 y está disponible en HuggingFace con pesos en formato safetensors.
+La relevancia de este modelo radica en que explora una arquitectura alternativa al transformer estándar, basada en pesos rápidos y recurrencia latente, y en que documenta el comportamiento de escalado desde 25M hasta 150M parámetros. Aunque su tamaño es modesto, sirve como banco de pruebas para evaluar la viabilidad de las capas de pesos rápidos en tareas de modelado de lenguaje a nivel de byte. El modelo se publica bajo licencia CC-BY-4.0 y está disponible en Hugging Face con pesos en formato safetensors.
 
 ## Especificaciones técnicas
 
@@ -50,12 +50,12 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 - VRAM estimada: al tener ~151M parámetros en bfloat16, el modelo ocupa aproximadamente 300 MB en memoria. La inferencia puede ejecutarse en GPU con 2-4 GB de VRAM, e incluso en CPU.
 - GPU recomendadas: cualquier GPU moderna con soporte bfloat16, como RTX 3060, RTX 4090 o A4000 (la usada para entrenar). También es viable en hardware de gama baja.
 - Compatibilidad con consumer GPU: sí, cabe en cualquier GPU consumer actual sin problemas.
-- Opciones de despliegue: al ser una arquitectura personalizada, no es compatible directamente con vLLM, llama.cpp u Ollama. Se debe cargar mediante el código de `pathwaycom/bdh` (ver ejemplo de carga en la model card) y servir con frameworks genéricos como HuggingFace Transformers (si se adapta) o mediante una API propia.
+- Opciones de despliegue: al ser una arquitectura personalizada, no es compatible directamente con vLLM, llama.cpp u Ollama. Se debe cargar mediante el código de `pathwaycom/bdh` (ver ejemplo de carga en la model card) y servir con frameworks genéricos como Hugging Face Transformers (si se adapta) o mediante una API propia.
 - Latencia y throughput: no se proporcionan datos específicos. Dado el tamaño, la inferencia en GPU debería ser rápida (del orden de decenas de ms por token), pero depende del hardware y del batch.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para comparar directamente con otros modelos de tamaño similar (por ejemplo, GPT-2 124M o Pythia-160M) en términos de rendimiento, ya que no hay benchmarks publicados. La principal diferencia es arquitectónica: BDH utiliza pesos rápidos y operación a nivel de byte, frente a los transformers clásicos con tokenizador subword. En cuanto a licencia, CC-BY-4.0 permite uso comercial con atribución, similar a muchas opciones abiertas. La disponibilidad es total en HuggingFace, aunque requiere el código de pathwaycom/bdh para cargar los pesos.
+No se dispone de información suficiente para comparar directamente con otros modelos de tamaño similar (por ejemplo, GPT-2 124M o Pythia-160M) en términos de rendimiento, ya que no hay benchmarks publicados. La principal diferencia es arquitectónica: BDH utiliza pesos rápidos y operación a nivel de byte, frente a los transformers clásicos con tokenizador subword. En cuanto a licencia, CC-BY-4.0 permite uso comercial con atribución, similar a muchas opciones abiertas. La disponibilidad es total en Hugging Face, aunque requiere el código de pathwaycom/bdh para cargar los pesos.
 
 ## Limitaciones y advertencias
 
@@ -69,7 +69,7 @@ No se dispone de información suficiente para comparar directamente con otros mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SlayerLab/bdh-150m-slayer
+- Modelo en Hugging Face: https://huggingface.co/SlayerLab/bdh-150m-slayer
 - Repositorio de la arquitectura BDH (pathwaycom/bdh): https://github.com/pathwaycom/bdh
 - Estudio de escalado (SlayerLab/bdh-scaling): https://huggingface.co/SlayerLab/bdh-scaling
 - Modelo de menor escala (SlayerLab/bdh-25m-pl): https://huggingface.co/SlayerLab/bdh-25m-pl

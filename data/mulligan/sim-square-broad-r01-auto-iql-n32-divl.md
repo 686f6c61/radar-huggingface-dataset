@@ -86,8 +86,8 @@ La media aritmética de las cinco semillas es de 82796/150000, es decir, un 55,2
 
 | Modelo | Tarea | Rol | Semillas | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `mulligan/sim-square-broad-r01-auto-iql-n32-divl` (este) | `sim-square-broad` | Critico DIVL entrenado sobre actor congelado | 5 | no disponible | apache-2.0 | Publicado en HuggingFace (0 descargas, 0 likes) |
-| `mulligan/sim-square-broad-r01-auto-iql-n32-idql` | `sim-square-broad` | Modelo padre; aporta el actor de difusion congelado | no disponible | no disponible | no disponible | Publicado en HuggingFace |
+| `mulligan/sim-square-broad-r01-auto-iql-n32-divl` (este) | `sim-square-broad` | Critico DIVL entrenado sobre actor congelado | 5 | no disponible | apache-2.0 | Publicado en Hugging Face (0 descargas, 0 likes) |
+| `mulligan/sim-square-broad-r01-auto-iql-n32-idql` | `sim-square-broad` | Modelo padre; aporta el actor de difusion congelado | no disponible | no disponible | no disponible | Publicado en Hugging Face |
 
 No se han encontrado en la información disponible otros modelos comparables de la misma categoría (agentes de RL para `sim-square-broad`) ni resultados de benchmarks que permitan una comparación cuantitativa entre ambos. La comparación con el modelo padre es estructural (comparten actor), no de rendimiento.
 
@@ -106,9 +106,9 @@ No se han encontrado en la información disponible otros modelos comparables de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-broad-r01-auto-iql-n32-divl
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-broad-r01-auto-iql-n32-divl
 - Modelo padre (actor de difusion congelado): https://huggingface.co/mulligan/sim-square-broad-r01-auto-iql-n32-idql
-- Organizacion en HuggingFace: https://huggingface.co/mulligan
+- Organizacion en Hugging Face: https://huggingface.co/mulligan
 - Dataset de demostraciones de teleoperacion: https://huggingface.co/datasets/mulligan/sim-square-broad-c00-teleop-baseline
 - Dataset de rollouts de politica: https://huggingface.co/datasets/mulligan/sim-square-broad-c01-auto-iql-n32-policy-rollouts
 - Dataset de evaluacion: https://huggingface.co/datasets/mulligan/sim-square-broad-r00-r03-eval

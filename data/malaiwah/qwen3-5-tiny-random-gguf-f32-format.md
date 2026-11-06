@@ -4,14 +4,14 @@
 
 El repositorio `malaiwah/qwen3-5-tiny-random-gguf-f32-format` contiene un artefacto técnico de control, no un modelo de lenguaje funcional. Se trata de un fixture de formato de punto flotante (F32) diseñado para validar el lector y el conversor GGUF de la arquitectura Qwen3.5. Los pesos son aleatorios y no entrenados; el objetivo es servir como caso de control exacto en pruebas de reproducibilidad, carga de tensores y decodificación de almacenamiento, no como modelo para generar texto útil.
 
-El modelo se construye a partir de un checkpoint BF16 compartido con identidad `320527902d412346d533fd1ac62066bd4cd278016a44f8cfd071318dc3b36a4b`, perteneciente a la familia Matched-Weight Quantization Families de `malaiwah`. El artefacto exporta una vista de modelo de lenguaje y head sobre una geometría densa canónica de Qwen3.5, con split-QKV/Z, 2 key heads y 6 value heads, y prescinde de la torre de visión original. El tamaño del repositorio es mínimo: los ficheros de pesos locales ocupan 995.136 bytes (0.949 MiB) y el número de parámetros totales declarado por HuggingFace es 246.612.
+El modelo se construye a partir de un checkpoint BF16 compartido con identidad `320527902d412346d533fd1ac62066bd4cd278016a44f8cfd071318dc3b36a4b`, perteneciente a la familia Matched-Weight Quantization Families de `malaiwah`. El artefacto exporta una vista de modelo de lenguaje y head sobre una geometría densa canónica de Qwen3.5, con split-QKV/Z, 2 key heads y 6 value heads, y prescinde de la torre de visión original. El tamaño del repositorio es mínimo: los ficheros de pesos locales ocupan 995.136 bytes (0.949 MiB) y el número de parámetros totales declarado por Hugging Face es 246.612.
 
 ## Especificaciones técnicas
 
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Qwen3.5ForConditionalGeneration (Transformer denso; split-QKV/Z canónico; key heads 2, value heads 6; vista solo texto con head propia) |
-| Parametros totales | 246.612 según metadatos de HuggingFace; el modelo card declara 281.300 parámetros generados antes del empaquetado |
+| Parametros totales | 246.612 según metadatos de Hugging Face; el modelo card declara 281.300 parámetros generados antes del empaquetado |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | GGUF f32 (control exacto de formato; no es cuantizacion optimizada. Los casos RTN de la familia usan empaquetado round-to-nearest) |
 | Idiomas soportados | no disponible (tokenizer independiente de 272 tokens, no entrenado, no es un modelo de lenguaje real) |

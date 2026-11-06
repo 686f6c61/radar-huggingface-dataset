@@ -96,6 +96,6 @@ No existen alternativas comerciales directas especializadas en esta tarea tan es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gmelika/hotdog-vlm
+- Modelo en Hugging Face: https://huggingface.co/gmelika/hotdog-vlm
 - Modelo base Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Modelo base SigLIP: https://huggingface.co/google/siglip-base-patch16-224

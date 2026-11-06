@@ -73,4 +73,4 @@ No se han identificado modelos comparables en la informacion disponible. No se d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/carolstreman1988/PerfectEyes_ltx2
+- Modelo en Hugging Face: https://huggingface.co/carolstreman1988/PerfectEyes_ltx2

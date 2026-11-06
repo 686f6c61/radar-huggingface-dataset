@@ -70,6 +70,6 @@ No disponible. La información proporcionada no incluye datos comparativos con o
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/open-noodle/rfdetr-small
+- Modelo en Hugging Face: https://huggingface.co/open-noodle/rfdetr-small
 - Repositorio upstream de RF-DETR: https://github.com/roboflow/rf-detr
 - Proyecto Gallery: https://github.com/open-noodle/gallery

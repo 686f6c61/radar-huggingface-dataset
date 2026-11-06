@@ -80,7 +80,7 @@ No se dispone de comparativas de rendimiento en el dataset `skill-vocab-val` par
 
 ## Enlaces
 
-- [HuggingFace - benjaminchristie/skill-minilm](https://huggingface.co/benjaminchristie/skill-minilm)
+- [Hugging Face - benjaminchristie/skill-minilm](https://huggingface.co/benjaminchristie/skill-minilm)
 - [Modelo base: sentence-transformers/all-MiniLM-L6-v2](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2)
 - [Paper de MiniLM (arXiv:1908.10084)](https://arxiv.org/abs/1908.10084)
 - [Documentación de Sentence Transformers](https://sbert.net)

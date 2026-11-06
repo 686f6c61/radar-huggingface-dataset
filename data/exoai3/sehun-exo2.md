@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sehun-EXO2 es un modelo publicado en HuggingFace por el usuario EXOAI3 bajo el identificador `EXOAI3/Sehun-EXO2`. La informacion disponible publicamente es minima: la model card se limita a la linea `license: apache-2.0` y no incluye descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio ocupa 0,2 GB, un tamano que sugiere pesos de un modelo de parametros reducidos o de un adaptador, pero este extremo no esta confirmado por el autor.
+Sehun-EXO2 es un modelo publicado en Hugging Face por el usuario EXOAI3 bajo el identificador `EXOAI3/Sehun-EXO2`. La informacion disponible publicamente es minima: la model card se limita a la linea `license: apache-2.0` y no incluye descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio ocupa 0,2 GB, un tamano que sugiere pesos de un modelo de parametros reducidos o de un adaptador, pero este extremo no esta confirmado por el autor.
 
 El modelo registra 0 descargas y 0 likes, y fue creado y actualizado el 19 de septiembre de 2026 con apenas dos minutos de diferencia entre ambos eventos, lo que apunta a una publicacion automatizada o a una subida sin documentacion. No se ha publicado ningun resultado de benchmarks, ni ficha tecnica, ni articulo asociado.
 
@@ -30,7 +30,7 @@ Por todo ello, esta ficha se limita a registrar los metadatos verificables del r
 
 ## Arquitectura y entrenamiento
 
-No hay informacion disponible sobre la arquitectura del modelo. La model card publicada en HuggingFace unicamente contiene la declaracion de licencia `apache-2.0`, sin ningun apartado descriptivo, sin diagrama, sin mencion al tipo de red (transformer, MoE, SSM o hibrida) y sin referencia a papers o repositorios de codigo.
+No hay informacion disponible sobre la arquitectura del modelo. La model card publicada en Hugging Face unicamente contiene la declaracion de licencia `apache-2.0`, sin ningun apartado descriptivo, sin diagrama, sin mencion al tipo de red (transformer, MoE, SSM o hibrida) y sin referencia a papers o repositorios de codigo.
 
 Tampoco se dispone de datos sobre el entrenamiento: se desconoce el numero de tokens utilizados, la composicion del dataset, si hubo fases de ajuste fino supervisado, RLHF o DPO, y si se aplicaron tecnicas de optimizacion como decodificacion especulativa, atencion lineal o cuantizacion durante el entrenamiento. El unico dato objetivo es el tamano del repositorio (0,2 GB). Por aritmetica simple, ese volumen implicaria pesos de menos de aproximadamente 100 millones de parametros si estuvieran almacenados en fp16, o de unos 200 millones en int8; se trata, en cualquier caso, de una inferencia derivada del tamano del fichero y no de un dato confirmado por el autor.
 
@@ -84,7 +84,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EXOAI3/Sehun-EXO2
+- Modelo en Hugging Face: https://huggingface.co/EXOAI3/Sehun-EXO2
 - Paper: no disponible
 - Blog o anuncio: no disponible
 - Repositorio de codigo: no disponible

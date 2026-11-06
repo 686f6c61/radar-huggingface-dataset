@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`bn22/siglip_openclip_final_m_16` es un modelo multimodal de tipo CLIP (imagen-texto) publicado por el usuario `bn22` en HuggingFace. Se distribuye en formato nativo de la librería `open_clip` y está etiquetado para la tarea `zero-shot-image-classification`, con licencia MIT. Por el nombre y las etiquetas, se trata de un modelo basado en la familia SigLIP (Sigmoid Loss for Language-Image Pre-training) convertido o adaptado al ecosistema OpenCLIP, presumiblemente con parche de 16 píxeles en el codificador visual, aunque esto no está confirmado por el autor.
+`bn22/siglip_openclip_final_m_16` es un modelo multimodal de tipo CLIP (imagen-texto) publicado por el usuario `bn22` en Hugging Face. Se distribuye en formato nativo de la librería `open_clip` y está etiquetado para la tarea `zero-shot-image-classification`, con licencia MIT. Por el nombre y las etiquetas, se trata de un modelo basado en la familia SigLIP (Sigmoid Loss for Language-Image Pre-training) convertido o adaptado al ecosistema OpenCLIP, presumiblemente con parche de 16 píxeles en el codificador visual, aunque esto no está confirmado por el autor.
 
 Su relevancia práctica es la de cualquier modelo de alineación imagen-texto: sirve como extractor de embeddings conjuntos para búsqueda visual, clasificación sin entrenamiento específico, filtrado de contenido y generación de etiquetas. Frente a CLIP clásico, los modelos SigLIP emplean una pérdida sigmoidea por pares en lugar de softmax contrastivo global, lo que suele traducirse en un uso más eficiente del tamaño de lote durante el preentrenamiento.
 
@@ -93,7 +93,7 @@ No se dispone de métricas comparativas de rendimiento para el modelo analizado,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bn22/siglip_openclip_final_m_16
+- Modelo en Hugging Face: https://huggingface.co/bn22/siglip_openclip_final_m_16
 - Librería open_clip (mlfoundations): no disponible en los resultados de búsqueda proporcionados
 - Paper de SigLIP: no disponible en los resultados de búsqueda proporcionados
 

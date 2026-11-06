@@ -61,5 +61,5 @@ No se puede realizar una comparativa fiable. Los modelos Llama de Meta AI (Llama
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sunny123987456/Llama
+- Repositorio en Hugging Face: https://huggingface.co/sunny123987456/Llama
 - No se han encontrado papers, blogs, repositorios adicionales ni demos asociados a este modelo específico.

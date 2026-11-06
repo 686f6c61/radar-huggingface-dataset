@@ -74,8 +74,8 @@ No se han publicado comparaciones con otros modelos en la información disponibl
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Martinagg/toxic-tfidf-lr` | TF-IDF + regresión logística | Lineal, 200.000 características | No aplica | MIT | HuggingFace |
-| Modelos Transformer de clasificación de toxicidad (p. ej. variantes de BERT) | Transformer encoder | No disponible | Típicamente 512 tokens | Variable según modelo | HuggingFace |
+| `Martinagg/toxic-tfidf-lr` | TF-IDF + regresión logística | Lineal, 200.000 características | No aplica | MIT | Hugging Face |
+| Modelos Transformer de clasificación de toxicidad (p. ej. variantes de BERT) | Transformer encoder | No disponible | Típicamente 512 tokens | Variable según modelo | Hugging Face |
 | APIs comerciales de moderación (p. ej. Perspective API) | Servicio propietario | No disponible | No disponible | Propietaria | API externa |
 
 No se dispone de datos de benchmarks comparativos directos en la información proporcionada; la comparación se limita a características estructurales.
@@ -94,6 +94,6 @@ No se dispone de datos de benchmarks comparativos directos en la información pr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Martinagg/toxic-tfidf-lr
+- Hugging Face: https://huggingface.co/Martinagg/toxic-tfidf-lr
 - Repositorio de código: https://github.com/martinagg7/ML-ToxicModeration
 - Dataset Jigsaw Unintended Bias: no se proporciona enlace directo en la información disponible.

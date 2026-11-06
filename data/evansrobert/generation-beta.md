@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`evansrobert/generation-beta` es un prototipo de investigación basado en la arquitectura Poolformer, orientado a tareas de generación, publicado por el usuario evansrobert en HuggingFace. Se trata de un repositorio experimental cuyo objetivo declarado es documentar los valores por defecto y los formatos de archivo de una configuración a escala reducida, sin presentar métricas de rendimiento verificadas. El checkpoint incluido (`model.safetensors`) es un peso de inicialización válido para pruebas de humo, no un modelo entrenado ni evaluado con benchmarks.
+`evansrobert/generation-beta` es un prototipo de investigación basado en la arquitectura Poolformer, orientado a tareas de generación, publicado por el usuario evansrobert en Hugging Face. Se trata de un repositorio experimental cuyo objetivo declarado es documentar los valores por defecto y los formatos de archivo de una configuración a escala reducida, sin presentar métricas de rendimiento verificadas. El checkpoint incluido (`model.safetensors`) es un peso de inicialización válido para pruebas de humo, no un modelo entrenado ni evaluado con benchmarks.
 
 El modelo es extremadamente pequeno: el recuento real de parámetros en safetensors es de 16.576 parámetros, lo que lo sitúa varios órdenes de magnitud por debajo de cualquier modelo de generación de propósito general. La model card indica escala *small*, atención dispersa (*sparse attention*), fusión mediante *cross attention*, activación ReLU y normalización RMSNorm. No se declara ninguna puntuación de benchmark, y el propio autor recomienda tratar la implementación como un punto de partida experimental.
 
@@ -80,6 +80,6 @@ No disponible. La información proporcionada no incluye benchmarks ni métricas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/evansrobert/generation-beta
-- Repositorio de archivos asociado al modelo: `inference.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors` (incluidos en el propio repositorio de HuggingFace).
+- Modelo en Hugging Face: https://huggingface.co/evansrobert/generation-beta
+- Repositorio de archivos asociado al modelo: `inference.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors` (incluidos en el propio repositorio de Hugging Face).
 - Búsqueda web: no se han encontrado enlaces relevantes (papers, blogs, repositorios o demos) relacionados con este modelo en la información proporcionada.

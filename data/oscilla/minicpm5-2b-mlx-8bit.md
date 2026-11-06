@@ -82,6 +82,6 @@ Los datos de Qwen3.5-4B y MiniCPM5-1B no están disponibles en la información p
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Oscilla/MiniCPM5-2B-mlx-8Bit
+- Repositorio en Hugging Face: https://huggingface.co/Oscilla/MiniCPM5-2B-mlx-8Bit
 - Modelo base oficial: https://huggingface.co/openbmb/MiniCPM5-2B-MLX
 - Artículo de AI/TLDR sobre MiniCPM5-2B: https://ai-tldr.dev/releases/openbmb-minicpm5-2b/

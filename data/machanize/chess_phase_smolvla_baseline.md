@@ -98,8 +98,8 @@ Métricas complementarias aportadas por el autor:
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| chess_phase_smolvla_baseline | 450.046.176 | No aplica (observaciones de 2 cámaras a 30 Hz) | 36,7% de éxito en 60 episodios simulados sobre 10 movimientos | Apache 2.0 | HuggingFace, librería lerobot, 0 descargas y 0 likes |
-| lerobot/smolvla_base | 450.046.176 (idéntico tras el ajuste) | No aplica | No disponible para esta tarea concreta (es el modelo base sin ajustar) | Apache 2.0 | HuggingFace, base de referencia de SmolVLA |
+| chess_phase_smolvla_baseline | 450.046.176 | No aplica (observaciones de 2 cámaras a 30 Hz) | 36,7% de éxito en 60 episodios simulados sobre 10 movimientos | Apache 2.0 | Hugging Face, librería lerobot, 0 descargas y 0 likes |
+| lerobot/smolvla_base | 450.046.176 (idéntico tras el ajuste) | No aplica | No disponible para esta tarea concreta (es el modelo base sin ajustar) | Apache 2.0 | Hugging Face, base de referencia de SmolVLA |
 | Machanize/chess_phase_smolvla | No disponible | No aplica | No disponible | No disponible | Versión anterior del mismo autor; este modelo se entrenó desde cero, no desde ella |
 | OpenVLA | ≈7.000 M (dato de conocimiento general, no aportado por la información disponible) | No aplica | No disponible | No disponible | VLA open source ampliamente citado como referencia de mayor tamaño |
 
@@ -121,7 +121,7 @@ Métricas complementarias aportadas por el autor:
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Machanize/chess_phase_smolvla_baseline
+- Modelo en Hugging Face: https://huggingface.co/Machanize/chess_phase_smolvla_baseline
 - Modelo base SmolVLA: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento (privado): Machanize/playful, carpeta chess-sim/datasets/baseline_v1 — https://huggingface.co/Machanize/playful
 - Versión anterior del mismo autor: https://huggingface.co/Machanize/chess_phase_smolvla

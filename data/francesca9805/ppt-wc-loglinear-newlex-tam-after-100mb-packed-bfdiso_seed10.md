@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `francesca9805/ppt-wc-loglinear-newlex-tam-after-100mb-packed-bfdiso_seed10` es un ajuste fino (fine-tune) del modelo monolingüe inglés `goldfish-models/eng_latn_100mb`, publicado por el usuario de HuggingFace `francesca9805`. Se trata de un modelo de generación de texto de arquitectura GPT-2 con 86.508.288 parámetros reales (aproximadamente 86,5 millones), entrenado mediante SFT (supervised fine-tuning) con la librería TRL 0.23.0 sobre Transformers 4.56.2 y PyTorch 2.5.1+cu121. El repositorio ocupa 0,2 GB y los pesos están en formato safetensors.
+El modelo `francesca9805/ppt-wc-loglinear-newlex-tam-after-100mb-packed-bfdiso_seed10` es un ajuste fino (fine-tune) del modelo monolingüe inglés `goldfish-models/eng_latn_100mb`, publicado por el usuario de Hugging Face `francesca9805`. Se trata de un modelo de generación de texto de arquitectura GPT-2 con 86.508.288 parámetros reales (aproximadamente 86,5 millones), entrenado mediante SFT (supervised fine-tuning) con la librería TRL 0.23.0 sobre Transformers 4.56.2 y PyTorch 2.5.1+cu121. El repositorio ocupa 0,2 GB y los pesos están en formato safetensors.
 
 El modelo base pertenece a la familia goldfish, que agrupa modelos monolingües derivados de la arquitectura GPT-2 y entrenados sobre aproximadamente 100 MB de texto por idioma; en este caso la variante es `eng_latn_100mb`, es decir, la correspondiente al inglés. El identificador del modelo (`ppt-wc-loglinear-newlex-tam-after-100mb-packed-bfdiso_seed10`) sugiere un experimento de investigación asociado a un estudio sobre tokenizadores y léxico, con el sufijo `seed10` indicando una semilla concreta y `bfdiso` apuntando a un formato o configuración de precisión concreta. No obstante, la model card no documenta el objetivo científico del entrenamiento ni la composición del dataset utilizado, por lo que cualquier interpretación al respecto es especulativa.
 
-La relevancia práctica del modelo es limitada: acumula 0 descargas y 0 interacciones en HuggingFace, no declara licencia efectiva ni idiomas soportados, y no publica resultados de benchmarks. Su interés es fundamentalmente experimental, como artefacto reproducible de un pipeline de fine-tuning con TRL sobre modelos pequeños, más que como modelo listo para producción.
+La relevancia práctica del modelo es limitada: acumula 0 descargas y 0 interacciones en Hugging Face, no declara licencia efectiva ni idiomas soportados, y no publica resultados de benchmarks. Su interés es fundamentalmente experimental, como artefacto reproducible de un pipeline de fine-tuning con TRL sobre modelos pequeños, más que como modelo listo para producción.
 
 ## Especificaciones tecnicas
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `francesca9805/ppt-wc-loglinear-newlex-tam-after-100mb-packed-bfdiso_seed10` | 86.508.288 | no disponible | no disponible | HuggingFace, 0 descargas |
-| `goldfish-models/eng_latn_100mb` (modelo base) | no disponible | no disponible | no disponible | HuggingFace |
-| GPT-2 small | 124 millones | 1.024 tokens | MIT | HuggingFace, ampliamente distribuido |
-| DistilGPT-2 | 82 millones | 1.024 tokens | Apache-2.0 | HuggingFace, ampliamente distribuido |
+| `francesca9805/ppt-wc-loglinear-newlex-tam-after-100mb-packed-bfdiso_seed10` | 86.508.288 | no disponible | no disponible | Hugging Face, 0 descargas |
+| `goldfish-models/eng_latn_100mb` (modelo base) | no disponible | no disponible | no disponible | Hugging Face |
+| GPT-2 small | 124 millones | 1.024 tokens | MIT | Hugging Face, ampliamente distribuido |
+| DistilGPT-2 | 82 millones | 1.024 tokens | Apache-2.0 | Hugging Face, ampliamente distribuido |
 
 En cuanto a rendimiento comparado, no hay datos: el modelo no publica benchmarks y no existe informacion que permita situarlo frente a GPT-2 small o DistilGPT-2 en tareas estandar. La comparacion se limita, por tanto, a parametros, contexto, licencia y disponibilidad.
 
@@ -85,9 +85,9 @@ En cuanto a rendimiento comparado, no hay datos: el modelo no publica benchmarks
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/ppt-wc-loglinear-newlex-tam-after-100mb-packed-bfdiso_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/ppt-wc-loglinear-newlex-tam-after-100mb-packed-bfdiso_seed10
 - Modelo base goldfish-models/eng_latn_100mb: https://huggingface.co/goldfish-models/eng_latn_100mb
-- Organizacion goldfish-models en HuggingFace: https://huggingface.co/goldfish-models
+- Organizacion goldfish-models en Hugging Face: https://huggingface.co/goldfish-models
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/6unhog6m
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Paper de referencia de TRL (von Werra et al., 2020), citado en la model card: https://github.com/huggingface/trl

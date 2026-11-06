@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kmohammedlij/hw2-contrastive` es un repositorio experimental publicado en HuggingFace que contiene una implementación propia de una arquitectura denominada "Coca" orientada a aprendizaje contrastivo. El autor, `kmohammedlij`, lo describe explícitamente como un esqueleto de código ("codebase") para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, no como un modelo entrenado ni evaluado. El checkpoint incluido (`model.safetensors`) se presenta como una inicialización válida para pruebas de humo (smoke tests), no como pesos entrenados.
+`kmohammedlij/hw2-contrastive` es un repositorio experimental publicado en Hugging Face que contiene una implementación propia de una arquitectura denominada "Coca" orientada a aprendizaje contrastivo. El autor, `kmohammedlij`, lo describe explícitamente como un esqueleto de código ("codebase") para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, no como un modelo entrenado ni evaluado. El checkpoint incluido (`model.safetensors`) se presenta como una inicialización válida para pruebas de humo (smoke tests), no como pesos entrenados.
 
 El modelo es de escala "base", con atención dilatada, fusión por concatenación seguida de MLP, activación swish y normalización por grupos. El recuento real de parámetros en safetensors es de 33.088, un tamaño extremadamente reducido que confirma que se trata de un artefacto de prueba y no de un modelo funcional para tareas reales.
 
@@ -75,5 +75,5 @@ No disponible. No se conocen modelos comparables en la misma categoría: el arte
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kmohammedlij/hw2-contrastive
+- Hugging Face: https://huggingface.co/kmohammedlij/hw2-contrastive
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

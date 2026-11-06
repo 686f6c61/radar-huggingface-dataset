@@ -25,7 +25,7 @@ Arquitect\u00f3nicamente es un decoder estilo Llama de 24 capas, hidden 1.152, F
 
 El modelo es un decoder transformer denso de estilo Llama con 24 capas, dimensi\u00f3n oculta de 1.152, FFN de 4.608 con activaci\u00f3n SwiGLU, 9 cabezas de atenci\u00f3n con 3 KV heads (GQA, head dim 128), RMSNorm, RoPE con base 10.000, embeddings de entrada y salida no atados, sin sesgos y sin QK-norm. La longitud de secuencia es de 4.096 tokens. El tokenizador es el vocabulario de SmolLM2 (49.152 tokens) m\u00e1s un token `<|pad|>`; `<|endoftext|>` act\u00faa como token de fin de documento.
 
-El preentrenamiento utiliza conversaciones reescritas del proyecto 1PP con p\u00e9rdida sobre turnos de usuario y de asistente. Se entrenaron los primeros 11.106 pasos del flujo alineado por pasos de 1PP (23,29B posiciones de token), que corresponden a los primeros pasos de la pasada principal de 31.777 pasos del estudio, en el mismo orden. El batch global es de 512 \u00d7 4.096 tokens con m\u00e1scara de atenci\u00f3n entre documentos. El optimizador es Muon (shape scaling, LR matricial 0,005) junto con Adam para el resto de par\u00e1metros (LR 3e-3 para embeddings y capa de salida, 3e-3 para normas); warmup de 699 pasos, constante y decaimiento lineal en los \u00faltimos 1.110 pasos hasta 1/100; weight decay 0,1; init std 0,0119; entrenamiento en bf16. La p\u00e9rdida de validaci\u00f3n final sobre 2.433 documentos reservados es de 1,664 en texto de asistente, 1,543 en texto de usuario y 3,452 en texto de documento; la columna ponderada de la condici\u00f3n es 1,654. Los pesos de HuggingFace se verificaron contra el checkpoint de Megatron con una diferencia absoluta de 0,0015 en las p\u00e9rdidas de validaci\u00f3n.
+El preentrenamiento utiliza conversaciones reescritas del proyecto 1PP con p\u00e9rdida sobre turnos de usuario y de asistente. Se entrenaron los primeros 11.106 pasos del flujo alineado por pasos de 1PP (23,29B posiciones de token), que corresponden a los primeros pasos de la pasada principal de 31.777 pasos del estudio, en el mismo orden. El batch global es de 512 \u00d7 4.096 tokens con m\u00e1scara de atenci\u00f3n entre documentos. El optimizador es Muon (shape scaling, LR matricial 0,005) junto con Adam para el resto de par\u00e1metros (LR 3e-3 para embeddings y capa de salida, 3e-3 para normas); warmup de 699 pasos, constante y decaimiento lineal en los \u00faltimos 1.110 pasos hasta 1/100; weight decay 0,1; init std 0,0119; entrenamiento en bf16. La p\u00e9rdida de validaci\u00f3n final sobre 2.433 documentos reservados es de 1,664 en texto de asistente, 1,543 en texto de usuario y 3,452 en texto de documento; la columna ponderada de la condici\u00f3n es 1,654. Los pesos de Hugging Face se verificaron contra el checkpoint de Megatron con una diferencia absoluta de 0,0015 en las p\u00e9rdidas de validaci\u00f3n.
 
 ## Capacidades
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informaci\u00f3n disponible. 
 - VRAM estimada para inferencia: en bf16/fp16, aproximadamente 1,2 GB de pesos m\u00e1s overhead de activaciones y cach\u00e9 KV; en pr\u00e1ctica, c\u00f3modo en GPUs con 4-8 GB. La cuantizaci\u00f3n a 8 bits o 4 bits reducir\u00eda los pesos por debajo de 1 GB, aunque no se documentan cuantizaciones oficiales.
 - GPU recomendadas: cualquier GPU consumer moderna (RTX 3060 12 GB, RTX 4060 Ti, RTX 4090) es suficiente; tambi\u00e9n A100/H100 para despliegues por lotes.
 - Cabe en GPU consumer: s\u00ed, en pr\u00e1cticamente todas las GPUs con al menos 4 GB de VRAM; tambi\u00e9n puede ejecutarse en CPU con llama.cpp si se generan pesos GGUF (no publicados).
-- Opciones de despliegue: transformers (librer\u00eda nativa), text-generation-inference (etiqueta `text-generation-inference` y `endpoints_compatible` en HuggingFace), vLLM y llama.cpp/Ollama previa conversi\u00f3n de pesos.
+- Opciones de despliegue: transformers (librer\u00eda nativa), text-generation-inference (etiqueta `text-generation-inference` y `endpoints_compatible` en Hugging Face), vLLM y llama.cpp/Ollama previa conversi\u00f3n de pesos.
 - Latencia y throughput: no disponibles en la informaci\u00f3n proporcionada.
 
 ## Comparativa con modelos similares
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la informaci\u00f3n disponible. 
 | Modelo | Par\u00e1metros | Contexto | Licencia | Notas |
 |---|---|---|---|---|
 | 1pp-0.58b-v2-ua-seed42-base | 0,58B | 4.096 | Apache 2.0 | Modelo base de investigaci\u00f3n, solo ingl\u00e9s, formato ChatML sin system |
-| SmolLM2-360M | 0,36B | 8.192 (seg\u00fan versi\u00f3n) | Apache 2.0 | Modelo base/instruct de HuggingFace; tokenizador compartido con este modelo |
+| SmolLM2-360M | 0,36B | 8.192 (seg\u00fan versi\u00f3n) | Apache 2.0 | Modelo base/instruct de Hugging Face; tokenizador compartido con este modelo |
 | Qwen2.5-0.5B | 0,49B | 32.768 | Apache 2.0 | Modelo base multiling\u00fce con contexto mucho mayor |
 | Llama 3.2-1B | 1,24B | 131.072 | Llama 3.2 Community License | Modelo base con contexto largo y licencia restrictiva |
 
@@ -93,7 +93,7 @@ La comparaci\u00f3n se limita a par\u00e1metros, contexto y licencia, ya que no 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-0.58b-v2-ua-seed42-base
+- Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-0.58b-v2-ua-seed42-base
 - Colecci\u00f3n 1PP: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649
 - Registros de entrenamiento (wandb): https://wandb.ai/raghav_singhal/1pp-training
 - Registros de SFT (wandb): https://wandb.ai/raghav_singhal/1pp-sft

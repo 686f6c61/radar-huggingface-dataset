@@ -83,7 +83,7 @@ No se dispone de datos de otros modelos comparables de la misma categoria en la 
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/nota-ai/Qwen3.8-2.4T-A95B-Nota-NVFP4-Global-Pruned-40
+- Hugging Face del modelo: https://huggingface.co/nota-ai/Qwen3.8-2.4T-A95B-Nota-NVFP4-Global-Pruned-40
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B
 - vLLM Recipes: https://recipes.vllm.ai/Qwen/Qwen3.8-2.4T-A95B
 - GitHub Qwen3.8: https://github.com/QwenLM/Qwen3.8

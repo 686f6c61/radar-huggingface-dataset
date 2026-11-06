@@ -49,7 +49,7 @@ No se ha publicado información sobre el proceso de entrenamiento del modelo bas
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del cuantizador ni la información de HuggingFace incluyen evaluaciones (MMLU, HumanEval, GSM8K, etc.) de esta variante. El proceso de abliteration puede degradar ligeramente el rendimiento respecto al Qwen3-8B original, pero no hay datos cuantificados para este modelo.
+No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del cuantizador ni la información de Hugging Face incluyen evaluaciones (MMLU, HumanEval, GSM8K, etc.) de esta variante. El proceso de abliteration puede degradar ligeramente el rendimiento respecto al Qwen3-8B original, pero no hay datos cuantificados para este modelo.
 
 ## Requisitos de hardware
 

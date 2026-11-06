@@ -1,11 +1,11 @@
 # arlenecc/jina-reranker-v2-base-multilingual-mlx-int8
 
 ## Resumen
-El modelo `arlenecc/jina-reranker-v2-base-multilingual-mlx-int8` es una publicación de HuggingFace del usuario arlenecc. Según su identificador, se trata de una conversión al formato MLX con cuantización int8 del modelo `jina-reranker-v2-base-multilingual`, un reranker multilingüe. La model card únicamente declara la licencia MIT y no incluye información técnica adicional sobre arquitectura, parámetros, contexto, datos de entrenamiento ni evaluación.
+El modelo `arlenecc/jina-reranker-v2-base-multilingual-mlx-int8` es una publicación de Hugging Face del usuario arlenecc. Según su identificador, se trata de una conversión al formato MLX con cuantización int8 del modelo `jina-reranker-v2-base-multilingual`, un reranker multilingüe. La model card únicamente declara la licencia MIT y no incluye información técnica adicional sobre arquitectura, parámetros, contexto, datos de entrenamiento ni evaluación.
 
 La relevancia de esta ficha es limitada: el formato MLX está orientado a la ejecución en Apple Silicon (chips M1, M2, M3, M4) y la cuantización int8 reduce el uso de memoria, lo que puede facilitar el despliegue local en equipos Mac. Sin embargo, al no documentarse el proceso de conversión, el rendimiento esperado ni los idiomas soportados, cualquier evaluación rigurosa requiere validación empírica por parte del usuario.
 
-El modelo acumula 0 descargas y 0 likes en el momento de la consulta, y no tiene pipeline definido en HuggingFace. La fecha de creación indicada es 2026-10-28, lo que puede deberse a un error en los metadatos.
+El modelo acumula 0 descargas y 0 likes en el momento de la consulta, y no tiene pipeline definido en Hugging Face. La fecha de creación indicada es 2026-10-28, lo que puede deberse a un error en los metadatos.
 
 ## Especificaciones técnicas
 | Parámetro | Valor |
@@ -18,7 +18,7 @@ El modelo acumula 0 descargas y 0 likes en el momento de la consulta, y no tiene
 | Idiomas soportados | no disponible (el identificador indica "multilingual", sin lista concreta) |
 | Licencia | MIT |
 | Formato de pesos | MLX (según el identificador del modelo) |
-| Pipeline en HuggingFace | no disponible |
+| Pipeline en Hugging Face | no disponible |
 | Descargas | 0 |
 | Likes | 0 |
 

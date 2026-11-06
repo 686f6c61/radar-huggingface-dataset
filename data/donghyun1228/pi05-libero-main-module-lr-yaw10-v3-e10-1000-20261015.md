@@ -86,7 +86,7 @@ Fuera de este linaje, la alternativa de referencia es π₀.₅ (Pi05) base, pub
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-main-module-lr-yaw10-v3-e10-1000-20261015
+- Modelo en Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-main-module-lr-yaw10-v3-e10-1000-20261015
 - Variante relacionada (all-module relation retention): https://huggingface.co/Donghyun1228/pi05-libero-all-module-relation-retention-yaw30-1000-20261014
 - Variante relacionada (source-free raw common vision): https://huggingface.co/Donghyun1228/pi05-libero-source-free-raw-common-vision-yaw30-1000-20261011
 - Repositorio openpi de Physical Intelligence con ejemplos LIBERO: https://github.com/Physical-Intelligence/openpi/blob/main/examples/libero/README.md

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`sft__ot30k_Qwen3-1.7B-Base` es un ajuste fino supervisado (SFT) del modelo base Qwen3-1.7B-Base, publicado por la organizacion open-sci en HuggingFace. El modelo se ha entrenado con Llama Factory sobre un subconjunto de 30.000 muestras del dataset Open Thoughts 3.1.2, un corpus orientado a razonamiento y pensamiento de cadena. El resultado es un modelo conversacional de 1.720 millones de parametros que hereda la arquitectura transformer decoder-only de la familia Qwen3.
+`sft__ot30k_Qwen3-1.7B-Base` es un ajuste fino supervisado (SFT) del modelo base Qwen3-1.7B-Base, publicado por la organizacion open-sci en Hugging Face. El modelo se ha entrenado con Llama Factory sobre un subconjunto de 30.000 muestras del dataset Open Thoughts 3.1.2, un corpus orientado a razonamiento y pensamiento de cadena. El resultado es un modelo conversacional de 1.720 millones de parametros que hereda la arquitectura transformer decoder-only de la familia Qwen3.
 
 El modelo resuelve el problema de especializar un modelo base pequeno en tareas de razonamiento estructurado sin necesidad de un modelo enorme. Con 1.7B de parametros, es desplegable en hardware modesto y sirve como punto de partida para experimentos de ajuste fino o como componente de pipelines de generacion de texto con requisitos de latencia bajos. Su relevancia actual radica en que demuestra que el SFT sobre datos de razonamiento curado (Open Thoughts) puede aplicarse a modelos de menos de 2B de parametros, un segmento en el que la oferta de modelos especificamente entrenados para razonamiento es limitada.
 
-La model card es generica y generada automaticamente por el Trainer de HuggingFace, sin informacion detallada sobre composicion del dataset, evaluacion o usos previstos. Los datos disponibles son los del repositorio (parametros, hiperparametros de entrenamiento, licencia) y no se han publicado resultados de benchmarks.
+La model card es generica y generada automaticamente por el Trainer de Hugging Face, sin informacion detallada sobre composicion del dataset, evaluacion o usos previstos. Los datos disponibles son los del repositorio (parametros, hiperparametros de entrenamiento, licencia) y no se han publicado resultados de benchmarks.
 
 ## Especificaciones tecnicas
 
@@ -86,7 +86,7 @@ La comparativa se limita a la familia Qwen3 porque no se dispone de datos de ren
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/open-sci/sft__ot30k_Qwen3-1.7B-Base
+- Repositorio Hugging Face: https://huggingface.co/open-sci/sft__ot30k_Qwen3-1.7B-Base
 - Modelo base Qwen3-1.7B-Base: https://huggingface.co/Qwen/Qwen3-1.7B-Base
 - Dataset Open Thoughts: https://huggingface.co/datasets/open-thoughts/OpenThoughts3-1.2M (referencia del dataset citado en la model card)
 - Llama Factory: https://github.com/hiyouga/LLaMA-Factory

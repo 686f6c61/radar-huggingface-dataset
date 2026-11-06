@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CAT_llama3b_likeLlama2_eps0150_42_relativelr_utility_NEW es un adaptador LoRA publicado por el usuario maria715 en HuggingFace. Segun la propia model card, se trata de un resultado experimental de un trabajo de fin de master sobre entrenamiento adversarial orientado a mejorar la robustez de modelos de lenguaje. No es un modelo completo, sino un conjunto de pesos de adaptador que debe cargarse sobre un modelo base de la familia Llama; la nomenclatura del repositorio sugiere un base de aproximadamente 3.000 millones de parametros, aunque este dato no esta confirmado en la informacion disponible.
+CAT_llama3b_likeLlama2_eps0150_42_relativelr_utility_NEW es un adaptador LoRA publicado por el usuario maria715 en Hugging Face. Segun la propia model card, se trata de un resultado experimental de un trabajo de fin de master sobre entrenamiento adversarial orientado a mejorar la robustez de modelos de lenguaje. No es un modelo completo, sino un conjunto de pesos de adaptador que debe cargarse sobre un modelo base de la familia Llama; la nomenclatura del repositorio sugiere un base de aproximadamente 3.000 millones de parametros, aunque este dato no esta confirmado en la informacion disponible.
 
 El interes de esta publicacion es acotado y fundamentalmente academico. El entrenamiento adversarial en LLM busca que el modelo mantenga un comportamiento estable ante perturbaciones maliciosas en la entrada, un problema relevante para despliegues en produccion expuestos a usuarios no confiables. Sin embargo, el repositorio no incluye model card detallada, licencia, idiomas, resultados de evaluacion ni instrucciones de uso, y acumula cero descargas y cero likes desde su creacion.
 
@@ -44,7 +44,7 @@ Tampoco se especifican los datos de entrenamiento, el numero de tokens, la compo
 - Estudio del compromiso robustez-utilidad: el sufijo `utility` del nombre apunta a que el autor ya midio este equilibrio, por lo que el adaptador es util como material de analisis de hiperparametros como epsilon o el esquema de learning rate.
 - Base para fine-tuning posterior: al ser un adaptador PEFT, puede combinarse o continuar su entrenamiento con un dataset propio, con un coste de computo bajo comparado con un ajuste completo.
 - Docencia en cursos de seguridad de IA: ilustra de forma concreta como se estructura un experimento de entrenamiento adversarial sobre un LLM y como se empaquetan los resultados como adaptador.
-- Analisis de artefactos en HuggingFace: sirve como caso de estudio de repositorios de investigacion sin licencia, sin model card completa y sin validacion de la comunidad.
+- Analisis de artefactos en Hugging Face: sirve como caso de estudio de repositorios de investigacion sin licencia, sin model card completa y sin validacion de la comunidad.
 
 ## Benchmarks y rendimiento
 
@@ -56,14 +56,14 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM para inferencia: dependiente del modelo base, que no esta identificado. Si se confirma la hipotesis de un base de ~3.000 millones de parametros, las estimaciones orientativas serian de 7-8 GB en FP16, 4-5 GB en cuantizacion de 8 bits y 2-3 GB en 4 bits, sin contar el cache KV.
 - GPU recomendadas: no disponibles. Bajo la hipotesis anterior, una RTX 4090 (24 GB) seria suficiente en FP16, y tarjetas de 8-12 GB podrian bastar con cuantizacion.
 - Cabe en GPU de consumo: probablemente si, en el escenario de un base de ~3B y con cuantizacion, pero no confirmado.
-- Opciones de despliegue: al ser un adaptador PEFT, es compatible con el ecosistema HuggingFace Transformers y PEFT; su uso en vLLM, llama.cpp, Ollama o TGI requeriria fusionar previamente el adaptador con el modelo base y, en el caso de llama.cpp, convertir los pesos a GGUF. No se ha publicado ninguna guia de despliegue.
+- Opciones de despliegue: al ser un adaptador PEFT, es compatible con el ecosistema Hugging Face Transformers y PEFT; su uso en vLLM, llama.cpp, Ollama o TGI requeriria fusionar previamente el adaptador con el modelo base y, en el caso de llama.cpp, convertir los pesos a GGUF. No se ha publicado ninguna guia de despliegue.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CAT_llama3b_likeLlama2_eps0150_42_relativelr_utility_NEW | no disponible (adaptador) | no disponible | no disponible | no disponible | HuggingFace, 0 descargas, 0 likes |
+| CAT_llama3b_likeLlama2_eps0150_42_relativelr_utility_NEW | no disponible (adaptador) | no disponible | no disponible | no disponible | Hugging Face, 0 descargas, 0 likes |
 | Modelo base sobre el que se aplica | no disponible | no disponible | no disponible | no disponible | No identificado en la informacion disponible |
 | Alternativas comparables de la misma categoria | no disponible | no disponible | no disponible | no disponible | No disponible |
 
@@ -83,7 +83,7 @@ No se dispone de datos suficientes para establecer una comparacion cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/maria715/CAT_llama3b_likeLlama2_eps0150_42_relativelr_utility_NEW
+- Modelo en Hugging Face: https://huggingface.co/maria715/CAT_llama3b_likeLlama2_eps0150_42_relativelr_utility_NEW
 - Pagina general de modelos Llama de Meta (referencia de familia, no especifica del adaptador): https://dev.meta.ai/llama/models/llama-3
-- Libreria PEFT de HuggingFace, referenciada por el campo `library_name` del repositorio: https://github.com/huggingface/peft
+- Libreria PEFT de Hugging Face, referenciada por el campo `library_name` del repositorio: https://github.com/huggingface/peft
 - El resto de resultados de busqueda web consultados (contenido de TikTok y YouTube sin relacion tecnica) no aportan informacion util sobre este modelo y se omiten.

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`vijAItechie/llama-8bit` es un checkpoint de la familia Llama publicado en HuggingFace por el usuario vijAItechie. Se distribuye como un modelo de generación de texto conversacional compatible con la librería `transformers`, con pesos en formato `safetensors` y una cuantización de 8 bits mediante `bitsandbytes`, tal como indican sus etiquetas. El repositorio ocupa 9,1 GB y declara 8.031.637.504 parámetros totales, lo que lo sitúa en la escala de los modelos Llama de 8B.
+`vijAItechie/llama-8bit` es un checkpoint de la familia Llama publicado en Hugging Face por el usuario vijAItechie. Se distribuye como un modelo de generación de texto conversacional compatible con la librería `transformers`, con pesos en formato `safetensors` y una cuantización de 8 bits mediante `bitsandbytes`, tal como indican sus etiquetas. El repositorio ocupa 9,1 GB y declara 8.031.637.504 parámetros totales, lo que lo sitúa en la escala de los modelos Llama de 8B.
 
-La model card es la plantilla genérica autogenerada por HuggingFace y no aporta información sustantiva: no se especifican el desarrollador original, los datos de entrenamiento, la licencia ni los idiomas soportados. Tampoco se han publicado resultados de evaluación ni detalles sobre el proceso de cuantización más allá de la etiqueta `8-bit`/`bitsandbytes`. Todo ello convierte a este checkpoint en un artefacto de interés limitado para producción y más propio de experimentación.
+La model card es la plantilla genérica autogenerada por Hugging Face y no aporta información sustantiva: no se especifican el desarrollador original, los datos de entrenamiento, la licencia ni los idiomas soportados. Tampoco se han publicado resultados de evaluación ni detalles sobre el proceso de cuantización más allá de la etiqueta `8-bit`/`bitsandbytes`. Todo ello convierte a este checkpoint en un artefacto de interés limitado para producción y más propio de experimentación.
 
 Su relevancia actual es, por tanto, la de un ejemplo de distribución de un Llama de 8B cuantizado a 8 bits para reducir requisitos de VRAM, pero sin la trazabilidad, documentación ni garantías que cabría esperar de un modelo listo para uso real. Cualquier evaluación rigurosa debería contrastarse con los checkpoints oficiales de Meta Llama.
 
@@ -31,7 +31,7 @@ No hay información sobre el corpus de entrenamiento, el número de tokens, la c
 
 - Generación de texto autoregresiva y conversacional, según el pipeline declarado (`text-generation`) y la etiqueta `conversational`.
 - Compatibilidad con `transformers` y con `text-generation-inference`, según las etiquetas del repositorio.
-- Compatibilidad declarada con endpoints (`endpoints_compatible`), lo que sugiere su uso en Inference Endpoints de HuggingFace.
+- Compatibilidad declarada con endpoints (`endpoints_compatible`), lo que sugiere su uso en Inference Endpoints de Hugging Face.
 - Capacidades multilingües: no disponibles (no se declaran idiomas).
 - Tool calling / function calling: no disponible en la información proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `vijAItechie/llama-8bit` | 8,03B | no disponible | 8 bits (bitsandbytes) | no disponible | HuggingFace (repo comunitario) |
-| Meta Llama 3.1 8B Instruct | 8,03B | 128K (según documentación oficial de Meta) | bf16, fp16, GGUF, AWQ, etc. | Llama 3.1 Community License | HuggingFace (oficial) |
-| Mistral 7B Instruct | 7,24B | 32K (según documentación oficial de Mistral) | bf16, GGUF, AWQ, etc. | Apache 2.0 | HuggingFace (oficial) |
-| Qwen2.5 7B Instruct | 7,62B | 128K (según documentación oficial de Alibaba) | bf16, GGUF, AWQ, etc. | Apache 2.0 (mayoría de variantes) | HuggingFace (oficial) |
+| `vijAItechie/llama-8bit` | 8,03B | no disponible | 8 bits (bitsandbytes) | no disponible | Hugging Face (repo comunitario) |
+| Meta Llama 3.1 8B Instruct | 8,03B | 128K (según documentación oficial de Meta) | bf16, fp16, GGUF, AWQ, etc. | Llama 3.1 Community License | Hugging Face (oficial) |
+| Mistral 7B Instruct | 7,24B | 32K (según documentación oficial de Mistral) | bf16, GGUF, AWQ, etc. | Apache 2.0 | Hugging Face (oficial) |
+| Qwen2.5 7B Instruct | 7,62B | 128K (según documentación oficial de Alibaba) | bf16, GGUF, AWQ, etc. | Apache 2.0 (mayoría de variantes) | Hugging Face (oficial) |
 
 La comparación con los checkpoints oficiales es la referencia adecuada, ya que este repo no documenta ni el modelo base exacto ni la receta de cuantización. Para producción, los checkpoints oficiales ofrecen licencia clara, contexto documentado y formatos de despliegue variados.
 
@@ -82,7 +82,7 @@ La comparación con los checkpoints oficiales es la referencia adecuada, ya que 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vijAItechie/llama-8bit
+- Hugging Face: https://huggingface.co/vijAItechie/llama-8bit
 - Paper de referencia citado en la model card (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental ML CO2: https://mlco2.github.io/impact
 - Documentación de bitsandbytes: https://huggingface.co/docs/bitsandbytes

@@ -93,7 +93,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bigeye35/connectailab-rl-healmu-v1-link01
+- Modelo en Hugging Face: https://huggingface.co/bigeye35/connectailab-rl-healmu-v1-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Cuaderno de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb
 - Repositorio de código: https://github.com/wonseokjung/connect-tycoon

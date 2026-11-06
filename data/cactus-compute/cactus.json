@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Cactus-Compute/cactus",
+  "slug": "cactus-compute-cactus",
+  "author": "Cactus-Compute",
+  "url": "https://huggingface.co/Cactus-Compute/cactus",
+  "created_at": "2026-11-05T19:36:27.000Z",
+  "updated_at": "2026-11-05T21:25:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "on-device",
+    "inference",
+    "webassembly",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 69694631,
+  "storage_human": "70 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cactus : variétés, plantation, entretien et association - Jardiland",
+      "url": "https://www.jardiland.com/conseils-idees/cactus-qui-es-tu",
+      "snippet": "Sep 13, 2023 · Quelles sont les différentes variétés de cactus ? Quel cactus d'intérieur choisir ? Comment les entretenir ? Avec …"
+    },
+    {
+      "title": "GitHub - cactus-compute/cactus: Quantization, kernels, runtime and ...",
+      "url": "https://github.com/cactus-compute/cactus",
+      "snippet": "Quantization, kernels, runtime and inference engine for mobiles, wearables, smart home and robots. - GitHub - cactus-compute/cactus: Quantization, kernels, runtime and inference engine for mobiles, wearables, smart home and robots."
+    },
+    {
+      "title": "Cactaceae — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Cactaceae",
+      "snippet": "Cactus et succulentes sont distinctes : toutes les plantes succulentes ne sont pas des Cactus. Ce sont des familles de plantes qui …"
+    },
+    {
+      "title": "Cactus - Automation Foundation Models for Tiny Devices",
+      "url": "https://cactuscompute.com/",
+      "snippet": "Deploy language, vision, and speech models locally on smartphones with a fast, privacy-focused AI framework for edge deployment."
+    },
+    {
+      "title": "Cactus - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Cactus",
+      "snippet": "In tropical regions, other cacti grow as forest climbers and epiphytes (plants that grow on trees). Their stems are typically flattened, …"
+    }
+  ]
+}

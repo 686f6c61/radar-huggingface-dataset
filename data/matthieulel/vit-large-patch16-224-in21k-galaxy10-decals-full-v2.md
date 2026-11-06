@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`vit-large-patch16-224-in21k-galaxy10-decals-full-v2` es un modelo de clasificación de imágenes especializado en morfología de galaxias, desarrollado por el usuario de HuggingFace `matthieulel`. Se trata de un Vision Transformer (ViT-Large) preentrenado por Google en ImageNet-21k (`google/vit-large-patch16-224-in21k`) y afinado completamente sobre el conjunto Galaxy10 DECaLS, que agrupa imágenes astronómicas del Dark Energy Camera Legacy Survey en diez clases morfológicas.
+`vit-large-patch16-224-in21k-galaxy10-decals-full-v2` es un modelo de clasificación de imágenes especializado en morfología de galaxias, desarrollado por el usuario de Hugging Face `matthieulel`. Se trata de un Vision Transformer (ViT-Large) preentrenado por Google en ImageNet-21k (`google/vit-large-patch16-224-in21k`) y afinado completamente sobre el conjunto Galaxy10 DECaLS, que agrupa imágenes astronómicas del Dark Energy Camera Legacy Survey en diez clases morfológicas.
 
 El modelo resuelve una tarea acotada pero relevante en astronomía observacional: asignar una clase morfológica a una imagen de galaxia de 224x224 píxeles. Forma parte de una colección más amplia de 80 configuraciones (40 backbones preentrenados por dos regímenes de adaptación) descritas en el artículo *When foundation models meet astronomical data* (Astronomy and Computing, versión revisada, 2026), lo que lo convierte en un punto de referencia reproducible para comparar modelos fundacionales de visión en datos astronómicos.
 
@@ -85,8 +85,8 @@ No se han publicado en la información disponible resultados comparativos con ot
 
 | Modelo | Parámetros | Contexto / entrada | Rendimiento en Galaxy10 DECaLS | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (ViT-Large full fine-tuning) | 303,3 M | 224x224 px | 84,05% accuracy, 83,76% weighted F1 (test) | Apache 2.0 | HuggingFace, transformers |
-| `google/vit-large-patch16-224-in21k` (base sin ajustar) | 303,3 M | 224x224 px | no disponible en la información | Apache 2.0 | HuggingFace, transformers |
+| Este checkpoint (ViT-Large full fine-tuning) | 303,3 M | 224x224 px | 84,05% accuracy, 83,76% weighted F1 (test) | Apache 2.0 | Hugging Face, transformers |
+| `google/vit-large-patch16-224-in21k` (base sin ajustar) | 303,3 M | 224x224 px | no disponible en la información | Apache 2.0 | Hugging Face, transformers |
 | Otras configuraciones del mismo benchmark (40 backbones x 2 regímenes) | variable | 224x224 px | no disponible en la información | variable | colección Vision Foundation Models Benchmark |
 | Modelos específicos de morfología galáctica (p. ej. Zoobot, Galaxy Zoo) | no disponible | no disponible | no disponible en la información | no disponible | no disponible |
 
@@ -106,7 +106,7 @@ No se dispone de datos comparativos publicados en la información proporcionada 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matthieulel/vit-large-patch16-224-in21k-galaxy10-decals-full-v2
+- Modelo en Hugging Face: https://huggingface.co/matthieulel/vit-large-patch16-224-in21k-galaxy10-decals-full-v2
 - Modelo base: https://huggingface.co/google/vit-large-patch16-224-in21k
 - Dataset de ajuste: https://huggingface.co/datasets/matthieulel/galaxy10_decals
 - Dataset de runs del benchmark: https://huggingface.co/datasets/matthieulel/vision-foundation-models-benchmark-runs

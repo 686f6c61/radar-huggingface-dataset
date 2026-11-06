@@ -68,7 +68,7 @@ El modelo también reporta la variabilidad entre tres reentrenamientos (semillas
 - Inferencia en GPU: cabe en GPUs de consumo con 4 GB de VRAM (por ejemplo, NVIDIA GTX 1650, RTX 3050) en FP32, y en 2-3 GB si se usa una cuantización de 8 bits (no proporcionada de fábrica).
 - Inferencia en CPU: viable con un throughput de decenas de ejemplos por segundo para textos cortos (512 tokens), usando la biblioteca `transformers` en PyTorch.
 - GPU recomendadas para entrenamiento o fine-tuning adicional: RTX 3090 o superior, aunque con 16 GB de VRAM es suficiente.
-- Opciones de despliegue: `transformers` pipeline, `vLLM` no es necesario (no es generativo), se puede servir con `FastAPI` o `HuggingFace Inference Endpoints`.
+- Opciones de despliegue: `transformers` pipeline, `vLLM` no es necesario (no es generativo), se puede servir con `FastAPI` o `Hugging Face Inference Endpoints`.
 - No se proporcionan datos de latencia y throughput oficiales.
 
 ## Comparativa con modelos similares

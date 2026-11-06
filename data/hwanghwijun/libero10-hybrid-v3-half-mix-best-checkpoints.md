@@ -94,7 +94,7 @@ No se dispone de comparación con modelos como OpenVLA o otros métodos de LIBER
 
 ## Enlaces
 
-- [HuggingFace: hwanghwijun/libero10-hybrid-v3-half-mix-best-checkpoints](https://huggingface.co/hwanghwijun/libero10-hybrid-v3-half-mix-best-checkpoints)
+- [Hugging Face: hwanghwijun/libero10-hybrid-v3-half-mix-best-checkpoints](https://huggingface.co/hwanghwijun/libero10-hybrid-v3-half-mix-best-checkpoints)
 - [Página de modelos de hwanghwijun](https://huggingface.co/hwanghwijun/models)
 - [Benchmark LIBERO (GitHub)](https://github.com/Lifelong-Robot-Learning/LIBERO)
 - [Datasets de LIBERO](https://libero-project.github.io/datasets)
@@ -191,7 +191,7 @@ No se dispone de comparación con modelos externos como OpenVLA o otros métodos
 
 ## Enlaces
 
-- [HuggingFace: hwanghwijun/libero10-hybrid-v3-half-mix-best-checkpoints](https://huggingface.co/hwanghwijun/libero10-hybrid-v3-half-mix-best-checkpoints)
+- [Hugging Face: hwanghwijun/libero10-hybrid-v3-half-mix-best-checkpoints](https://huggingface.co/hwanghwijun/libero10-hybrid-v3-half-mix-best-checkpoints)
 - [Página de modelos de hwanghwijun](https://huggingface.co/hwanghwijun/models)
 - [GitHub LIBERO (benchmark)](https://github.com/Lifelong-Robot-Learning/LIBERO)
 - [Datasets de LIBERO](https://libero-project.github.io/datasets)

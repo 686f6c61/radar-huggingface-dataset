@@ -2,7 +2,7 @@
 
 ## Resumen
 
-hw1-hc3-detector es un modelo publicado en HuggingFace por el usuario AdithyaaVS. Por su identificador y por la existencia de otros repositorios con exactamente el mismo nombre en cuentas distintas (jainatharva21, Aishkrish, Yihangsun), se trata casi con certeza de un ejercicio académico de una asignatura ("hw1"), no de un modelo de propósito general ni de un lanzamiento de producto.
+hw1-hc3-detector es un modelo publicado en Hugging Face por el usuario AdithyaaVS. Por su identificador y por la existencia de otros repositorios con exactamente el mismo nombre en cuentas distintas (jainatharva21, Aishkrish, Yihangsun), se trata casi con certeza de un ejercicio académico de una asignatura ("hw1"), no de un modelo de propósito general ni de un lanzamiento de producto.
 
 La model card del repositorio está prácticamente vacía: solo contiene el campo `license: unknown`, sin descripción, sin datos de entrenamiento, sin métricas ni instrucciones de uso. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y no declara pipeline, idiomas ni licencia.
 

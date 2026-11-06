@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Orion-Kitchoon-26B-A4B es un modelo de lenguaje de tipo mezcla de expertos (MoE) publicado por el usuario SubMaroon en HuggingFace. No se trata de un modelo entrenado desde cero, sino de un merge: parte del modelo Orion 26B A4B v1.1 de TheDrummer, que se mantiene intacto, y sobre el que se aplica una fusion ligera del modelo Kitchoon (concretamente se incorpora su LoRA OV en las capas 10 a 29 con un factor de 0,32). El resultado conserva el conocimiento del modelo base de Orion al tiempo que hereda parte del caracter conversacional y de roleplay de Kitchoon.
+Orion-Kitchoon-26B-A4B es un modelo de lenguaje de tipo mezcla de expertos (MoE) publicado por el usuario SubMaroon en Hugging Face. No se trata de un modelo entrenado desde cero, sino de un merge: parte del modelo Orion 26B A4B v1.1 de TheDrummer, que se mantiene intacto, y sobre el que se aplica una fusion ligera del modelo Kitchoon (concretamente se incorpora su LoRA OV en las capas 10 a 29 con un factor de 0,32). El resultado conserva el conocimiento del modelo base de Orion al tiempo que hereda parte del caracter conversacional y de roleplay de Kitchoon.
 
 El modelo tiene 25.805.936.206 parametros totales (aproximadamente 25,8 mil millones) y la nomenclatura A4B del nombre sugiere que activa alrededor de 4 mil millones por token, lo que lo situa en la categoria de MoE dispersos con coste de inferencia relativamente bajo respecto a su tamano total. Esta etiquetado dentro de la familia Gemma (tag gemma4) y se distribuye con licencia Gemma, en ingles unicamente.
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Orion-Kitchoon-26B-A4B | 25,8B (MoE, ~4B activos) | no disponible | gemma | HuggingFace |
-| TheDrummer/Orion-26B-A4B-v1.1 | no disponible | no disponible | no disponible | HuggingFace |
-| SubMaroon/Kitchoon-V2-26B-A4B | no disponible | no disponible | no disponible | HuggingFace |
+| Orion-Kitchoon-26B-A4B | 25,8B (MoE, ~4B activos) | no disponible | gemma | Hugging Face |
+| TheDrummer/Orion-26B-A4B-v1.1 | no disponible | no disponible | no disponible | Hugging Face |
+| SubMaroon/Kitchoon-V2-26B-A4B | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos suficientes para comparar con alternativas de la misma categoria (Gemma densos, Mistral, Qwen u otros MoE) en cuanto a rendimiento, contexto o resultados de evaluacion, ya que no hay benchmarks publicados para este modelo ni un detalle claro de los modelos base.
 
@@ -83,6 +83,6 @@ No se dispone de datos suficientes para comparar con alternativas de la misma ca
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SubMaroon/Orion-Kitchoon-26B-A4B
+- Hugging Face: https://huggingface.co/SubMaroon/Orion-Kitchoon-26B-A4B
 - Modelo base Orion: https://huggingface.co/TheDrummer/Orion-26B-A4B-v1.1
 - Modelo base Kitchoon: https://huggingface.co/SubMaroon/Kitchoon-V2-26B-A4B

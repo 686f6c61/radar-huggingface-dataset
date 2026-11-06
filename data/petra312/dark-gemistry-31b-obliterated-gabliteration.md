@@ -75,10 +75,10 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Dark-Gemistry-31B-OBLITERATED (este) | 32,7B | No disponible | Sin benchmarks publicados | No disponible | HuggingFace, safetensors, 4-bit |
-| Qwen2.5-32B-Instruct | ≈32,5B | 131.072 tokens | Benchmarks públicos del autor | Apache 2.0 | HuggingFace, múltiples formatos |
-| Gemma 3 27B IT | 27B | 128.000 tokens | Benchmarks públicos del autor | Licencia Gemma | HuggingFace, GGUF, Ollama |
-| Mistral Small 3.1 24B | ≈23,6B | 128.000 tokens | Benchmarks públicos del autor | Apache 2.0 | HuggingFace, GGUF, Ollama |
+| Dark-Gemistry-31B-OBLITERATED (este) | 32,7B | No disponible | Sin benchmarks publicados | No disponible | Hugging Face, safetensors, 4-bit |
+| Qwen2.5-32B-Instruct | ≈32,5B | 131.072 tokens | Benchmarks públicos del autor | Apache 2.0 | Hugging Face, múltiples formatos |
+| Gemma 3 27B IT | 27B | 128.000 tokens | Benchmarks públicos del autor | Licencia Gemma | Hugging Face, GGUF, Ollama |
+| Mistral Small 3.1 24B | ≈23,6B | 128.000 tokens | Benchmarks públicos del autor | Apache 2.0 | Hugging Face, GGUF, Ollama |
 
 La comparación es aproximada: este modelo no publica contexto, licencia ni métricas, por lo que no puede establecerse una equivalencia funcional con las alternativas. Las alternativas citadas son modelos alineados; la diferencia principal de este modelo es precisamente la supresión del refusal, no una mejora de capacidades.
 
@@ -96,6 +96,6 @@ La comparación es aproximada: este modelo no publica contexto, licencia ni mét
 
 ## Enlaces
 
-- [HuggingFace: petra312/Dark-Gemistry-31B-OBLITERATED-gabliteration](https://huggingface.co/petra312/Dark-Gemistry-31B-OBLITERATED-gabliteration)
+- [Hugging Face: petra312/Dark-Gemistry-31B-OBLITERATED-gabliteration](https://huggingface.co/petra312/Dark-Gemistry-31B-OBLITERATED-gabliteration)
 - [Modelo base: Nimbz/Gemma-4-Dark-Gemistry-31B](https://huggingface.co/Nimbz/Gemma-4-Dark-Gemistry-31B)
 - [Repositorio de OBLITERATUS (elder-plinius)](https://github.com/elder-plinius/OBLITERATUS)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ivory-tern es un clasificador de imagenes basado en EfficientNetV2-L (la variante `efficientnet_v2_l` de torchvision) con 119.027.848 parametros, ajustado mediante entrenamiento adversarial para la subred Perturb (netuid 26) de Bittensor. El autor es el usuario de HuggingFace ANGExllL, y el modelo se publica bajo licencia Apache 2.0 con los pesos en formato safetensors (0,5 GB de repositorio).
+Ivory-tern es un clasificador de imagenes basado en EfficientNetV2-L (la variante `efficientnet_v2_l` de torchvision) con 119.027.848 parametros, ajustado mediante entrenamiento adversarial para la subred Perturb (netuid 26) de Bittensor. El autor es el usuario de Hugging Face ANGExllL, y el modelo se publica bajo licencia Apache 2.0 con los pesos en formato safetensors (0,5 GB de repositorio).
 
 El modelo resuelve la tarea clasica de clasificacion de imagenes en las 1000 clases de ImageNet-1K, pero su rasgo diferencial es el entrenamiento adversarial: en lugar de optimizar solo la precision sobre imagenes limpias, incorpora ejemplos perturbados en el proceso de ajuste, lo que busca mejorar la robustez frente a perturbaciones adversarias. Esto lo vincula al caso de uso del subnet Perturb, orientado a medir y mejorar la resistencia de modelos de vision ante ataques.
 
@@ -98,8 +98,8 @@ Los recuentos de parametros de los modelos alternativos son aproximados y proced
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ANGExllL/ivory-tern
-- Perfil del autor en HuggingFace: https://huggingface.co/ANGExllL/models
+- Modelo en Hugging Face: https://huggingface.co/ANGExllL/ivory-tern
+- Perfil del autor en Hugging Face: https://huggingface.co/ANGExllL/models
 - Subred Perturb: https://perturbai.io
 - Documentacion de torchvision para `efficientnet_v2_l`: https://pytorch.org/vision/stable/models/efficientnetv2.html
 - Pesos preentrenados de referencia en torchvision (`EfficientNet_V2_L_Weights`): https://pytorch.org/vision/stable/models/generated/torchvision.models.efficientnet_v2_l.html

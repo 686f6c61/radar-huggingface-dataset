@@ -70,9 +70,9 @@ La model card únicamente menciona observaciones cualitativas del autor: el mode
 
 | Modelo | Parámetros | Formato | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| alvago/wan-1.3b-gguf (este) | ~1,27B | GGUF q4_0 / q8_0 | Prompt de texto (umt5), inglés | Apache 2.0 | HuggingFace, 16 descargas |
-| Wan-AI/Wan2.1-T2V-1.3B | ~1,27B | Safetensors (precisión original) | Prompt de texto, inglés | Apache 2.0 | HuggingFace (modelo base) |
-| Wan-AI/Wan2.1-VACE-1.3B | No disponible | Safetensors | Texto + imagen/vídeo (i2v, v2v) | Apache 2.0 | HuggingFace (modelo base) |
+| alvago/wan-1.3b-gguf (este) | ~1,27B | GGUF q4_0 / q8_0 | Prompt de texto (umt5), inglés | Apache 2.0 | Hugging Face, 16 descargas |
+| Wan-AI/Wan2.1-T2V-1.3B | ~1,27B | Safetensors (precisión original) | Prompt de texto, inglés | Apache 2.0 | Hugging Face (modelo base) |
+| Wan-AI/Wan2.1-VACE-1.3B | No disponible | Safetensors | Texto + imagen/vídeo (i2v, v2v) | Apache 2.0 | Hugging Face (modelo base) |
 | Otras alternativas de texto a vídeo de talla similar (p. ej. CogVideoX-2B, LTX-Video) | No disponible en la información proporcionada | No disponible | No disponible | No disponible | No disponible |
 
 La comparación relevante es frente a los pesos originales: este repositorio no mejora el modelo, solo cambia el formato y reduce el peso en disco a costa de posible pérdida de calidad en q4_0. Los datos de rendimiento comparado con alternativas de la misma categoría no están disponibles.
@@ -91,7 +91,7 @@ La comparación relevante es frente a los pesos originales: este repositorio no 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/alvago/wan-1.3b-gguf
+- Repositorio en Hugging Face: https://huggingface.co/alvago/wan-1.3b-gguf
 - Organización del modelo base: https://huggingface.co/Wan-AI
 - Modelo base texto a vídeo: https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B
 - Modelo base VACE: https://huggingface.co/Wan-AI/Wan2.1-VACE-1.3B
@@ -103,4 +103,4 @@ La comparación relevante es frente a los pesos originales: este repositorio no 
 - gguf-connector (PyPI): https://pypi.org/project/gguf-connector
 - Captura de referencia del flujo en ComfyUI: https://raw.githubusercontent.com/calcuis/comfy/master/wan-gguf.png
 
-Nota: la búsqueda web realizada no devolvió resultados técnicos relevantes sobre este modelo ni sobre Wan2.1; los enlaces anteriores proceden de la model card y de los metadatos de HuggingFace.
+Nota: la búsqueda web realizada no devolvió resultados técnicos relevantes sobre este modelo ni sobre Wan2.1; los enlaces anteriores proceden de la model card y de los metadatos de Hugging Face.

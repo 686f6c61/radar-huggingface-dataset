@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `textilelabs/Loom-Spark1.5` es un modelo alojado en HuggingFace por el usuario `textilelabs`. La información pública disponible es extremadamente limitada: la model card únicamente indica que la licencia es MIT, y no se proporcionan detalles sobre arquitectura, tamaño, entrenamiento, capacidades o uso previsto. El modelo fue creado el 25 de agosto de 2026 y no registra descargas ni valoraciones en el momento de la consulta.
+El modelo `textilelabs/Loom-Spark1.5` es un modelo alojado en Hugging Face por el usuario `textilelabs`. La información pública disponible es extremadamente limitada: la model card únicamente indica que la licencia es MIT, y no se proporcionan detalles sobre arquitectura, tamaño, entrenamiento, capacidades o uso previsto. El modelo fue creado el 25 de agosto de 2026 y no registra descargas ni valoraciones en el momento de la consulta.
 
 Dado que no existe documentación técnica, ni datos de entrenamiento, ni ejemplos de uso, no es posible evaluar su funcionalidad ni su relevancia. La ficha que sigue refleja únicamente los datos disponibles y marca como "no disponible" todos los campos que no se han publicado.
 
@@ -29,7 +29,7 @@ No se ha publicado ninguna capacidad específica del modelo. No se puede confirm
 
 ## Casos de uso
 
-No se dispone de información sobre casos de uso concretos. Dado que no se conocen las capacidades del modelo, no es posible recomendar aplicaciones prácticas. Se recomienda consultar la página del modelo en HuggingFace para futuras actualizaciones.
+No se dispone de información sobre casos de uso concretos. Dado que no se conocen las capacidades del modelo, no es posible recomendar aplicaciones prácticas. Se recomienda consultar la página del modelo en Hugging Face para futuras actualizaciones.
 
 ## Benchmarks y rendimiento
 
@@ -52,6 +52,6 @@ No disponible. No se han identificado modelos comparables, ya que no se conocen 
 
 ## Enlaces
 
-- [HuggingFace - textilelabs/Loom-Spark1.5](https://huggingface.co/textilelabs/Loom-Spark1.5)
+- [Hugging Face - textilelabs/Loom-Spark1.5](https://huggingface.co/textilelabs/Loom-Spark1.5)
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios, demos) en la búsqueda web realizada.

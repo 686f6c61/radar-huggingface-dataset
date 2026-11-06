@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "kalyan-ks/Ammu-1.0-FactCheck-Need-base-ONNX-INT8",
+  "slug": "kalyan-ks-ammu-1-0-factcheck-need-base-onnx-int8",
+  "author": "kalyan-ks",
+  "url": "https://huggingface.co/kalyan-ks/Ammu-1.0-FactCheck-Need-base-ONNX-INT8",
+  "created_at": "2026-10-29T18:27:12.000Z",
+  "updated_at": "2026-11-06T05:40:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "optimum",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "optimum",
+    "onnx",
+    "modernbert",
+    "text-classification",
+    "fact-check-need",
+    "semantic-router",
+    "guardrails",
+    "retrieval-augmented-generation",
+    "rag",
+    "onnxruntime",
+    "int8",
+    "quantization",
+    "en",
+    "dataset:kalyan-ks/fact-check-need-classification",
+    "base_model:kalyan-ks/Ammu-1.0-FactCheck-Need-base",
+    "base_model:quantized:kalyan-ks/Ammu-1.0-FactCheck-Need-base",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 24,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 298479770,
+  "storage_human": "298 MB",
+  "base_model": "kalyan-ks/Ammu-1.0-FactCheck-Need-base",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Fact-Check Need Classification",
+      "dataset": "Fact-Check Need Benchmark Test Set",
+      "metric": "Macro-F1 (Overall)",
+      "value": 0.9513
+    },
+    {
+      "task": "Fact-Check Need Classification",
+      "dataset": "Fact-Check Need Benchmark Test Set",
+      "metric": "Macro-F1 (Easy)",
+      "value": 0.9879
+    },
+    {
+      "task": "Fact-Check Need Classification",
+      "dataset": "Fact-Check Need Benchmark Test Set",
+      "metric": "Macro-F1 (Medium)",
+      "value": 0.9514
+    },
+    {
+      "task": "Fact-Check Need Classification",
+      "dataset": "Fact-Check Need Benchmark Test Set",
+      "metric": "Macro-F1 (Hard)",
+      "value": 0.9335
+    }
+  ],
+  "sources": []
+}

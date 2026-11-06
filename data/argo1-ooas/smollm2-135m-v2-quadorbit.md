@@ -21,7 +21,7 @@ El modelo está pensado como un experimento de arquitectura condicionada por dis
 
 ## Arquitectura y entrenamiento
 
-La arquitectura parte del modelo SmolLM2-135M-Instruct de HuggingFace, con 30 capas y un ancho de 576. La innovación técnica es la rama QuadOrbit, un módulo condicionado por un trigger que se activa durante la inferencia y modifica las distribuciones de un número configurable de tokens siguientes. El entrenamiento se realiza sobre el dataset HuggingFaceTB/smol-smoltalk, con 2.000 actualizaciones de la rama y un total de 262.144.000 presentaciones de token. La pérdida de validación terminal estimada es de 1,6958 (PPL 5,5), medida sobre una muestra de diez lotes del flujo de validación local de SmolTalk; no es un benchmark estandarizado. El modelo no modifica pesos durante el prompting: el contexto condiciona la rama, pero no la actualiza.
+La arquitectura parte del modelo SmolLM2-135M-Instruct de Hugging Face, con 30 capas y un ancho de 576. La innovación técnica es la rama QuadOrbit, un módulo condicionado por un trigger que se activa durante la inferencia y modifica las distribuciones de un número configurable de tokens siguientes. El entrenamiento se realiza sobre el dataset HuggingFaceTB/smol-smoltalk, con 2.000 actualizaciones de la rama y un total de 262.144.000 presentaciones de token. La pérdida de validación terminal estimada es de 1,6958 (PPL 5,5), medida sobre una muestra de diez lotes del flujo de validación local de SmolTalk; no es un benchmark estandarizado. El modelo no modifica pesos durante el prompting: el contexto condiciona la rama, pero no la actualiza.
 
 ## Capacidades
 
@@ -75,7 +75,7 @@ La comparativa se limita a la familia SmolLM2, dado que no se han publicado benc
 
 ## Enlaces
 
-- [HuggingFace: Argo1-OOAS/SmolLM2-135M-V2-QuadOrbit](https://huggingface.co/Argo1-OOAS/SmolLM2-135M-V2-QuadOrbit)
+- [Hugging Face: Argo1-OOAS/SmolLM2-135M-V2-QuadOrbit](https://huggingface.co/Argo1-OOAS/SmolLM2-135M-V2-QuadOrbit)
 - [Modelo base: HuggingFaceTB/SmolLM2-135M-Instruct](https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct)
 - [Modelo base: HuggingFaceTB/SmolLM2-135M](https://huggingface.co/HuggingFaceTB/SmolLM2-135M)
 - [Dataset: HuggingFaceTB/smol-smoltalk](https://huggingface.co/datasets/HuggingFaceTB/smol-smoltalk)

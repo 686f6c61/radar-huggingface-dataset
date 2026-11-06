@@ -21,7 +21,7 @@ El modelo se presenta como un experimento dentro de un pipeline de investigació
 
 ## Arquitectura y entrenamiento
 
-El modelo hereda la arquitectura MoE de Qwen3.5 (etiquetado como `qwen3_5_moe` y `affine`), con 35.107 millones de parámetros totales. No se especifican los parámetros activos ni el número de expertos, aunque por el tamaño total y la familia se infiere una arquitectura de mezcla de expertos típica de Qwen. El entrenamiento consiste en un ajuste fino mediante *Offline DPO* sobre pares de preferencia de razonamiento (`dpo_duel_reason.jsonl`), donde la opción "chosen" se selecciona por una mayor puntuación `lpC(y_C|z) − lpC(y_C|∅)` (probablemente una medida de verosimilitud condicionada a un pensamiento o razonamiento previo). Se aplicó un filtro ShortCtx HiRank (contexto corto y ranking alto) y se usó LoRA con r=64, α=128, β=0.02, longitud máxima de 6144 tokens y un máximo de 2400 pasos (detenido en 221 por agotamiento de datos). El entrenamiento se realizó en 2 GPUs B300 (8×B300 en total para el cluster) y el proceso incluyó fusión de pesos y subida a HuggingFace.
+El modelo hereda la arquitectura MoE de Qwen3.5 (etiquetado como `qwen3_5_moe` y `affine`), con 35.107 millones de parámetros totales. No se especifican los parámetros activos ni el número de expertos, aunque por el tamaño total y la familia se infiere una arquitectura de mezcla de expertos típica de Qwen. El entrenamiento consiste en un ajuste fino mediante *Offline DPO* sobre pares de preferencia de razonamiento (`dpo_duel_reason.jsonl`), donde la opción "chosen" se selecciona por una mayor puntuación `lpC(y_C|z) − lpC(y_C|∅)` (probablemente una medida de verosimilitud condicionada a un pensamiento o razonamiento previo). Se aplicó un filtro ShortCtx HiRank (contexto corto y ranking alto) y se usó LoRA con r=64, α=128, β=0.02, longitud máxima de 6144 tokens y un máximo de 2400 pasos (detenido en 221 por agotamiento de datos). El entrenamiento se realizó en 2 GPUs B300 (8×B300 en total para el cluster) y el proceso incluyó fusión de pesos y subida a Hugging Face.
 
 No se detallan innovaciones técnicas adicionales más allá del uso de DPO offline con anclaje a un modelo teacher, ni se especifica la composición del dataset de entrenamiento más allá de su origen en "duelos" (duel-derived).
 
@@ -67,6 +67,6 @@ No se dispone de datos de rendimiento comparativos. Como referencia estructural,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/standjones/mirror-unconst-affine-5czsc2fc98-r576-r252-odpo-hirank-shortctx-ultraextra-merged
+- Modelo en Hugging Face: https://huggingface.co/standjones/mirror-unconst-affine-5czsc2fc98-r576-r252-odpo-hirank-shortctx-ultraextra-merged
 - Modelo base: https://huggingface.co/unconst/Affine-5czsc2fc98-r252-merged
 - Búsqueda de fine-tunes del modelo base: https://huggingface.co/models?other=base_model:finetune:unconst/Affine-5czsc2fc98-r252-merged

@@ -90,6 +90,6 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tuevuong/Nemotron-3.5-Parse-NVFP4
+- Repositorio Hugging Face: https://huggingface.co/tuevuong/Nemotron-3.5-Parse-NVFP4
 - Modelo base: https://huggingface.co/nvidia/Nemotron-3.5-Parse
 - Model card original con benchmarks y ejemplos de uso: https://huggingface.co/nvidia/Nemotron-3.5-Parse

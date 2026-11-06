@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`cpral/poziomka-ocena-jakosci-fun-rp-v12` no es un modelo de lenguaje, sino un regresor tabular entrenado con AutoGluon 1.6.3 que predice, en una escala de 1 a 100, la utilidad de una conversación del conjunto `poziomka-fun-rp-v12-nothink` como dato de ajuste supervisado (SFT) para Poziomka, un asistente polaco pequeño de aproximadamente 4B parámetros totales y 1,15B activos. El modelo lo publica el usuario `cpral` en HuggingFace y su función es añadir un campo `jakosc` (calidad) a cada registro del corpus, de modo que el filtrado posterior se haga con un umbral o conservando el mejor X% de las conversaciones.
+`cpral/poziomka-ocena-jakosci-fun-rp-v12` no es un modelo de lenguaje, sino un regresor tabular entrenado con AutoGluon 1.6.3 que predice, en una escala de 1 a 100, la utilidad de una conversación del conjunto `poziomka-fun-rp-v12-nothink` como dato de ajuste supervisado (SFT) para Poziomka, un asistente polaco pequeño de aproximadamente 4B parámetros totales y 1,15B activos. El modelo lo publica el usuario `cpral` en Hugging Face y su función es añadir un campo `jakosc` (calidad) a cada registro del corpus, de modo que el filtrado posterior se haga con un umbral o conservando el mejor X% de las conversaciones.
 
 La relevancia práctica está en la curación de datos: en lugar de entrenar un juez generativo costoso por cada conversación, este modelo calcula características tabulares de la conversación (puntuaciones basal de `magpie.judge_conv`, longitudes, estadísticas de texto, presencia de herramientas y metadatos) y devuelve una puntuación calibrada contra un juez LLM. Está especializado en un único corpus: el autor indica explícitamente que para el segundo conjunto de datos hace falta un modelo distinto.
 
@@ -108,7 +108,7 @@ No se dispone de comparación con jueces LLM generativos (por ejemplo, un LLM qu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cpral/poziomka-ocena-jakosci-fun-rp-v12
+- Modelo en Hugging Face: https://huggingface.co/cpral/poziomka-ocena-jakosci-fun-rp-v12
 - Corpus de SFT asociado: https://huggingface.co/datasets/cpral/Polski_Polish_SFT_poziomka-fun-rp-v12
 - Corpus de la versión anterior (v11): https://huggingface.co/datasets/cpral/poziomka-fun-rp-v11
 - Perfil del autor: https://huggingface.co/cpral

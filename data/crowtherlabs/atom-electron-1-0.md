@@ -83,7 +83,7 @@ Nota: la model card no detalla el conjunto de evaluacion exacto, el numero de ej
 
 | Modelo | Relacion | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CrowtherLabs/Atom-Electron-1.0 | Este modelo | No disponible | No disponible | Apache-2.0 | Publico en HuggingFace, 0 descargas |
+| CrowtherLabs/Atom-Electron-1.0 | Este modelo | No disponible | No disponible | Apache-2.0 | Publico en Hugging Face, 0 descargas |
 | openai/gpt-oss-20b | Modelo base sobre el que se aplica el LoRA | No disponible en la informacion proporcionada (el identificador indica "20b") | No disponible | No disponible en la informacion proporcionada | Publico (referenciado como base por el autor) |
 | Qwen3-8B | Componente de la pila descrita (recuperador), no un modelo comparable como agente | No disponible en la informacion proporcionada (el identificador indica "8B") | No disponible | No disponible en la informacion proporcionada | Publico (referenciado por el autor) |
 | Qwen3-8B-ReRanker | Componente de la pila descrita (re-ranker), no un modelo comparable como agente | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | Publico (referenciado por el autor) |
@@ -106,7 +106,7 @@ No se dispone de datos de rendimiento de los modelos comparados en la informacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CrowtherLabs/Atom-Electron-1.0
+- Modelo en Hugging Face: https://huggingface.co/CrowtherLabs/Atom-Electron-1.0
 - Modelo base: https://huggingface.co/openai/gpt-oss-20b
 - Espacio del benchmark de referencia (BrowseComp Plus): https://huggingface.co/spaces/Tevatron/BrowseComp-Plus
 - Organizacion del autor: https://huggingface.co/CrowtherLabs

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Airline_Passenger_Satisfaction_Predictor` es un repositorio publicado en HuggingFace por el usuario `taisinnigartisha` bajo licencia MIT. Por el nombre y la ausencia de cualquier documentación técnica en la model card (que se limita a declarar la licencia), se trata con toda probabilidad de un artefacto de machine learning clásico orientado a una tarea de clasificación tabular: predecir la satisfacción de pasajeros de aerolíneas a partir de variables como retrasos, clase de vuelo, servicios a bordo o perfil del viajero. No es un modelo de lenguaje generativo.
+`Airline_Passenger_Satisfaction_Predictor` es un repositorio publicado en Hugging Face por el usuario `taisinnigartisha` bajo licencia MIT. Por el nombre y la ausencia de cualquier documentación técnica en la model card (que se limita a declarar la licencia), se trata con toda probabilidad de un artefacto de machine learning clásico orientado a una tarea de clasificación tabular: predecir la satisfacción de pasajeros de aerolíneas a partir de variables como retrasos, clase de vuelo, servicios a bordo o perfil del viajero. No es un modelo de lenguaje generativo.
 
 La información disponible es extremadamente escasa: no se declara pipeline, no se especifican idiomas, no hay descripción de arquitectura, datos de entrenamiento ni métricas. El tamaño del repositorio (0,1 GB) es compatible con un modelo serializado tipo scikit-learn, XGBoost o similar, o con un pequeño conjunto de pesos acompañado de artefactos de preprocesado. Cualquier evaluación rigurosa queda por tanto limitada a lo que se puede inferir del identificador y del tamaño.
 
@@ -72,4 +72,4 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/taisinnigartisha/Airline_Passenger_Satisfaction_Predictor
+- Repositorio en Hugging Face: https://huggingface.co/taisinnigartisha/Airline_Passenger_Satisfaction_Predictor

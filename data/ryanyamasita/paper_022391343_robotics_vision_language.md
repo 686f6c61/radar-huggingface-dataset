@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace no contiene un modelo de IA entrenado, sino un documento de investigación en formato Markdown titulado `paper_022391343_robotics_vision_language.md`. El autor, `ryanyamasita`, ha publicado un paper académico sobre el tema de modelos de visión-lenguaje-acción (VLA, por sus siglas en inglés) aplicados a robótica. El documento sigue una estructura IMRAD (introducción, métodos, experimentos, resultados y conclusión) y un estilo de escritura analítico y conciso, con citas en formato numérico BibTeX.
+Este repositorio de Hugging Face no contiene un modelo de IA entrenado, sino un documento de investigación en formato Markdown titulado `paper_022391343_robotics_vision_language.md`. El autor, `ryanyamasita`, ha publicado un paper académico sobre el tema de modelos de visión-lenguaje-acción (VLA, por sus siglas en inglés) aplicados a robótica. El documento sigue una estructura IMRAD (introducción, métodos, experimentos, resultados y conclusión) y un estilo de escritura analítico y conciso, con citas en formato numérico BibTeX.
 
 La relevancia de este repositorio radica en que aborda un área de investigación activa: la integración de percepción visual, comprensión del lenguaje natural y control motor en sistemas robóticos. Los modelos VLA son una tendencia emergente en robótica manipulativa, y este paper parece ofrecer una revisión o análisis sistemático del estado del arte. No se trata de un modelo desplegable, sino de una contribución académica que puede servir como referencia para investigadores y desarrolladores que trabajen en este campo.
 
@@ -54,7 +54,7 @@ No se puede comparar con modelos de IA, ya que no es un modelo. Sin embargo, com
 
 | Documento | Tipo | Tema | Disponibilidad |
 |---|---|---|---|
-| Este paper (ryanyamasita) | Revisión/artículo | Modelos VLA en robótica | Repositorio HuggingFace, licencia CC-BY-4.0 |
+| Este paper (ryanyamasita) | Revisión/artículo | Modelos VLA en robótica | Repositorio Hugging Face, licencia CC-BY-4.0 |
 | "Vision Language Action Models in Robotic Manipulation: A Systematic Review" (arXiv 2507.10672) | Revisión sistemática | Modelos VLA en manipulación robótica | arXiv, acceso abierto |
 | "Gemini Robotics: Bringing AI into the Physical World" (arXiv 2503.20020) | Informe técnico | Modelo VLA propietario de Google | arXiv, acceso abierto |
 
@@ -71,7 +71,7 @@ La comparación se limita al ámbito académico; no hay métricas de rendimiento
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ryanyamasita/paper_022391343_robotics_vision_language
+- Repositorio en Hugging Face: https://huggingface.co/ryanyamasita/paper_022391343_robotics_vision_language
 - Paper relacionado en arXiv (revisión sistemática de VLA): https://arxiv.org/abs/2507.10672
 - Informe Gemini Robotics en arXiv: https://arxiv.org/abs/2503.20020
 - Colección de papers VLA en GitHub: https://github.com/hanjianhua44/Awesome-VLA-Papers

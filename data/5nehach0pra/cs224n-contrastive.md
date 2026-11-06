@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`5nehach0pra/cs224n-contrastive` es un prototipo de investigación publicado en HuggingFace por el usuario 5nehach0pra, aparentemente en el contexto del curso CS224N de Stanford. Se trata de una implementación de una red Swin Transformer de escala "tiny" (Swin-T) orientada a aprendizaje contrastivo, empaquetada con un script de entrenamiento, una configuración de arquitectura y un checkpoint de inicialización. El repositorio no contiene un modelo entrenado ni resultados de evaluación.
+`5nehach0pra/cs224n-contrastive` es un prototipo de investigación publicado en Hugging Face por el usuario 5nehach0pra, aparentemente en el contexto del curso CS224N de Stanford. Se trata de una implementación de una red Swin Transformer de escala "tiny" (Swin-T) orientada a aprendizaje contrastivo, empaquetada con un script de entrenamiento, una configuración de arquitectura y un checkpoint de inicialización. El repositorio no contiene un modelo entrenado ni resultados de evaluación.
 
 El artefacto principal es `model.py`, que incluye tanto la definición del modelo como un punto de entrada ejecutable. El checkpoint `model.safetensors` (24.832 parámetros según los metadatos del repositorio) es una inicialización válida para pruebas de humo, no un modelo con pesos entrenados. La model card es explícita al respecto: no se reclama ninguna puntuación de benchmark.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| 5nehach0pra/cs224n-contrastive | 24.832 (checkpoint) | no aplica | sin benchmarks | BSD-3-Clause | HuggingFace, 0 descargas |
-| Swin-T oficial (microsoft/swin-tiny-patch4-window7-224) | ~28 M | no aplica (visión) | ImageNet top-1 ~81 % | MIT | HuggingFace, ampliamente usado |
-| CLIP ViT-B/32 (openai/clip-vit-base-patch32) | ~151 M | 77 tokens de texto | zero-shot ImageNet ~60-68 % | MIT | HuggingFace |
+| 5nehach0pra/cs224n-contrastive | 24.832 (checkpoint) | no aplica | sin benchmarks | BSD-3-Clause | Hugging Face, 0 descargas |
+| Swin-T oficial (microsoft/swin-tiny-patch4-window7-224) | ~28 M | no aplica (visión) | ImageNet top-1 ~81 % | MIT | Hugging Face, ampliamente usado |
+| CLIP ViT-B/32 (openai/clip-vit-base-patch32) | ~151 M | 77 tokens de texto | zero-shot ImageNet ~60-68 % | MIT | Hugging Face |
 
 La comparación con Swin-T oficial y CLIP es orientativa por categoría (visión y contrastivo); este repositorio no ofrece pesos entrenados ni métricas que permitan una comparación de rendimiento real.
 
@@ -81,5 +81,5 @@ La comparación con Swin-T oficial y CLIP es orientativa por categoría (visión
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/5nehach0pra/cs224n-contrastive
+- Repositorio Hugging Face: https://huggingface.co/5nehach0pra/cs224n-contrastive
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información proporcionada.

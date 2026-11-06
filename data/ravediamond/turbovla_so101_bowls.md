@@ -2,7 +2,7 @@
 
 ## Resumen
 
-turbovla_so101_bowls es una politica robotica de tipo Vision-Language-Action (VLA) entrenada con LeRobot y publicada en HuggingFace por el usuario ravediamond. No es un modelo de lenguaje: es un controlador de manipulacion que consume el estado articular y las imagenes de dos camaras de un brazo SO-101 (configuracion `so_follower`) y produce directamente un vector de accion continuo de 6 dimensiones. El checkpoint contiene 209.286.150 parametros y ocupa 0,8 GB en el repositorio, con pesos en safetensors.
+turbovla_so101_bowls es una politica robotica de tipo Vision-Language-Action (VLA) entrenada con LeRobot y publicada en Hugging Face por el usuario ravediamond. No es un modelo de lenguaje: es un controlador de manipulacion que consume el estado articular y las imagenes de dos camaras de un brazo SO-101 (configuracion `so_follower`) y produce directamente un vector de accion continuo de 6 dimensiones. El checkpoint contiene 209.286.150 parametros y ocupa 0,8 GB en el repositorio, con pesos en safetensors.
 
 La politica esta especializada en dos tareas de pick-and-place: "Put the blue bowl in the pink bowl." y "Put the pink bowl in the blue bowl." Se entreno sobre el dataset `ravediamond/so101_bowls_all` (182 episodios, 69.897 frames a 30 FPS) durante 35.000 pasos con batch de 8, optimizador AdamW y learning rate de 5e-05. La arquitectura declarada en los metadatos es `turbovla_so101`, heredera del enfoque TurboVLA, que sustituye el uso de un LLM como interfaz central por una interaccion vision-lenguaje bidireccional ligera y un decodificador compacto que predice chunks de acciones.
 
@@ -76,11 +76,11 @@ Los datos numericos de los modelos alternativos no estan disponibles en la infor
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| turbovla_so101_bowls | VLA sin LLM central, decodificador compacto de chunks de accion | 209,3 M | No aplica (observaciones por paso) | Apache-2.0 | HuggingFace, plugin LeRobot |
+| turbovla_so101_bowls | VLA sin LLM central, decodificador compacto de chunks de accion | 209,3 M | No aplica (observaciones por paso) | Apache-2.0 | Hugging Face, plugin LeRobot |
 | TurboVLA (repositorio base H-EmbodVis) | VLA con interaccion vision-lenguaje bidireccional ligera | No disponible | No disponible | No disponible | GitHub |
 | ACT (Action Chunking Transformer) | Transformer encoder-decoder con action chunking | No disponible | No aplica | No disponible en esta busqueda | Implementado en LeRobot |
 | Diffusion Policy | Politica generativa basada en difusion de acciones | No disponible | No aplica | No disponible en esta busqueda | Implementado en LeRobot |
-| SmolVLA | VLA compacto de la familia LeRobot | No disponible | No disponible | No disponible en esta busqueda | HuggingFace / LeRobot |
+| SmolVLA | VLA compacto de la familia LeRobot | No disponible | No disponible | No disponible en esta busqueda | Hugging Face / LeRobot |
 
 Nota: la distincion principal de este checkpoint frente a ACT o Diffusion Policy es la incorporacion de la instruccion en lenguaje natural, y frente a VLA basados en LLM, su tamano reducido (209 M) y la ausencia de un LLM como intermediario.
 
@@ -99,7 +99,7 @@ Nota: la distincion principal de este checkpoint frente a ACT o Diffusion Policy
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ravediamond/turbovla_so101_bowls
+- Modelo en Hugging Face: https://huggingface.co/ravediamond/turbovla_so101_bowls
 - Dataset de entrenamiento: https://huggingface.co/datasets/ravediamond/so101_bowls_all
 - Visualizacion del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=ravediamond/so101_bowls_all
 - Repositorio del plugin LeRobot: https://github.com/ravediamond/lerobot-policy-turbovla-so101

@@ -69,6 +69,6 @@ No disponible. No se han encontrado modelos comparables en la informacion propor
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Comfy-Org/stable-diffusion-3.5-controlnets_ComfyUI_repackaged
+- Repositorio en Hugging Face: https://huggingface.co/Comfy-Org/stable-diffusion-3.5-controlnets_ComfyUI_repackaged
 - Repositorio original de Stability AI: https://huggingface.co/stabilityai/stable-diffusion-3.5-controlnets
 - Licencia: https://huggingface.co/stabilityai/stable-diffusion-3.5-controlnets/blob/main/LICENSE.md

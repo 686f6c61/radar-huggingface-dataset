@@ -75,13 +75,13 @@ No disponible. No se han encontrado comparaciones con otros VLM médicos (como C
 - El AUC medio de 0,681 indica un rendimiento moderado, no apto para uso clínico autónomo sin supervisión humana.
 - No se han evaluado riesgos de alucinación en las explicaciones generadas; el modelo podría producir razonamientos plausibles pero incorrectos.
 - La licencia Apache 2.0 permite uso comercial, pero el modelo depende de Gemma-3-1B, cuyos términos de uso deben verificarse por separado.
-- El repositorio no incluye un pipeline estándar de HuggingFace; la carga requiere reconstruir la clase `EVLMsV2` desde el código fuente, lo que añade fricción para su integración.
+- El repositorio no incluye un pipeline estándar de Hugging Face; la carga requiere reconstruir la clase `EVLMsV2` desde el código fuente, lo que añade fricción para su integración.
 - No se especifican límites de contexto ni comportamiento ante entradas fuera de distribución (por ejemplo, radiografías de otras modalidades).
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/codewithdark/EVLMs-v2-MIMIC-CXR
-- Perfil del autor en HuggingFace: https://huggingface.co/codewithdark/models
+- Modelo en Hugging Face: https://huggingface.co/codewithdark/EVLMs-v2-MIMIC-CXR
+- Perfil del autor en Hugging Face: https://huggingface.co/codewithdark/models
 - Perfil del autor en GitHub: https://github.com/codewithdark-git
 - Repositorio del framework EVLMs: https://github.com/gmh5225/EVLMs
 - Colección de modelos del autor: https://huggingface.co/collections/codewithdark/models

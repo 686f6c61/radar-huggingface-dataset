@@ -25,14 +25,14 @@ Su relevancia es limitada y de nicho: el repositorio no registra descargas ni in
 
 No se dispone de información sobre la arquitectura del modelo base `Miladasghari/light-coder`. El recuento de parámetros (494 millones) y la etiqueta `conversational` del repositorio son compatibles con un transformer decoder-only de tamaño reducido, pero esta afirmación es una inferencia y no un dato confirmado por el autor. Tampoco se documentan la composición del dataset, el número de tokens de entrenamiento ni si se aplicaron técnicas de ajuste como SFT, RLHF o DPO.
 
-Lo único verificable es el proceso de cuantización: los metadatos de la model card indican `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, es decir, una conversión desde pesos de HuggingFace con cuantización de tensores de salida. Se ofrecen doce variantes de cuantización estáticas, lo que permite ajustar el equilibrio entre precisión y huella de memoria, pero no se publican métricas de degradación por cuantización.
+Lo único verificable es el proceso de cuantización: los metadatos de la model card indican `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, es decir, una conversión desde pesos de Hugging Face con cuantización de tensores de salida. Se ofrecen doce variantes de cuantización estáticas, lo que permite ajustar el equilibrio entre precisión y huella de memoria, pero no se publican métricas de degradación por cuantización.
 
 ## Capacidades
 
 - No hay documentación verificada de capacidades específicas. La model card del repositorio no describe ninguna.
 - Por el nombre del modelo base (`light-coder`), es razonable esperar generación de texto orientada a código, aunque esto no está confirmado por el autor.
 - La etiqueta `conversational` sugiere formato de chat multi-turno, sin detalle sobre plantilla de prompt ni tokens especiales.
-- La etiqueta `endpoints_compatible` indica compatibilidad con endpoints de inferencia tipo HuggingFace, no una capacidad funcional del modelo.
+- La etiqueta `endpoints_compatible` indica compatibilidad con endpoints de inferencia tipo Hugging Face, no una capacidad funcional del modelo.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multimodales (visión, audio): no disponibles ni sugeridas por las etiquetas.

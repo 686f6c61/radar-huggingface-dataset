@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Akashhhhwqx/rtdetr-workplace-ppe-detection es un repositorio de HuggingFace publicado por el usuario Akashhhhwqx que, a juzgar por su identificador, contiene un modelo de detección de objetos especializado en el reconocimiento de equipos de protección individual (EPI, o PPE por sus siglas en inglés) en entornos laborales. El prefijo «rtdetr» apunta a la familia RT-DETR (Real-Time DEtection TRansformer), una arquitectura de detección basada en transformer que compite con las familias YOLO en el régimen de tiempo real, aunque la model card no confirma explícitamente esta arquitectura.
+Akashhhhwqx/rtdetr-workplace-ppe-detection es un repositorio de Hugging Face publicado por el usuario Akashhhhwqx que, a juzgar por su identificador, contiene un modelo de detección de objetos especializado en el reconocimiento de equipos de protección individual (EPI, o PPE por sus siglas en inglés) en entornos laborales. El prefijo «rtdetr» apunta a la familia RT-DETR (Real-Time DEtection TRansformer), una arquitectura de detección basada en transformer que compite con las familias YOLO en el régimen de tiempo real, aunque la model card no confirma explícitamente esta arquitectura.
 
 El repositorio no incluye documentación técnica utilizable: la model card se limita a declarar `license: mit`, sin descripción, sin clases de detección, sin procedencia del dataset de entrenamiento y sin resultados de evaluación. Los metadatos indican 0 descargas y 0 «likes», un tamaño de repositorio de 0,1 GB y fechas de creación y actualización del 12 de septiembre de 2026, lo que sugiere una publicación reciente y sin validación por parte de la comunidad.
 
@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Tipo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Akashhhhwqx/rtdetr-workplace-ppe-detection | Detección de objetos (EPI) | No disponible | No aplica | No disponible | MIT | HuggingFace, 0 descargas |
+| Akashhhhwqx/rtdetr-workplace-ppe-detection | Detección de objetos (EPI) | No disponible | No aplica | No disponible | MIT | Hugging Face, 0 descargas |
 | RT-DETR (Baidu, original) | Detección de objetos genérica | Según variante (no indicado aquí) | No aplica | No disponible en esta ficha | No disponible en esta ficha | Repositorios oficiales de referencia |
 | Familia YOLO (Ultralytics) | Detección de objetos genérica | Según variante | No aplica | No disponible en esta ficha | AGPL-3.0 / comercial según versión | Ampliamente distribuida |
 | Faster R-CNN | Detección de objetos genérica | Según *backbone* | No aplica | No disponible en esta ficha | Variable según implementación | Frameworks clásicos |
@@ -96,5 +96,5 @@ No se dispone de datos comparativos de rendimiento para el modelo objeto de la f
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Akashhhhwqx/rtdetr-workplace-ppe-detection
+- Hugging Face: https://huggingface.co/Akashhhhwqx/rtdetr-workplace-ppe-detection
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados al modelo en la búsqueda web realizada. Los resultados devueltos por la búsqueda no guardan relación con el modelo y se han descartado.

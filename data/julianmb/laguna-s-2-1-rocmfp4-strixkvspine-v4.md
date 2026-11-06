@@ -4,7 +4,7 @@
 
 Laguna S 2.1 es un modelo de lenguaje de tipo Mixture-of-Experts (MoE) desarrollado por poolside, una empresa especializada en IA para ingeniería de software y agentes autónomos. El modelo está diseñado para tareas de razonamiento prolongado y trabajo de largo horizonte, con una arquitectura de 118B parámetros totales de los cuales solo 8B se activan por token, lo que permite un despliegue eficiente en hardware de alta memoria. Soporta una ventana de contexto de hasta 1M tokens en modos con y sin pensamiento explícito, y se distribuye bajo licencia Apache 2.0.
 
-La ficha que nos ocupa corresponde a una cuantización específica del modelo original, publicada por el usuario julianmb en HuggingFace. Se trata de un archivo GGUF con formatos de tensor ROCmFP4 personalizados, optimizado para sistemas AMD Strix Halo (Ryzen AI Max+ 395 / Radeon 8060S con 128 GB de memoria unificada). Esta versión requiere un runtime especializado (Ciru ROCmFPX Runtime V3) y no es compatible con llama.cpp estándar. El archivo pesa 65,4 GB y alcanza una velocidad de generación de 33-38 tokens por segundo en el hardware objetivo.
+La ficha que nos ocupa corresponde a una cuantización específica del modelo original, publicada por el usuario julianmb en Hugging Face. Se trata de un archivo GGUF con formatos de tensor ROCmFP4 personalizados, optimizado para sistemas AMD Strix Halo (Ryzen AI Max+ 395 / Radeon 8060S con 128 GB de memoria unificada). Esta versión requiere un runtime especializado (Ciru ROCmFPX Runtime V3) y no es compatible con llama.cpp estándar. El archivo pesa 65,4 GB y alcanza una velocidad de generación de 33-38 tokens por segundo en el hardware objetivo.
 
 ## Especificaciones tecnicas
 
@@ -77,9 +77,9 @@ No se dispone de datos comparativos directos en la informacion proporcionada. El
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/julianmb/Laguna-S-2.1-ROCmFP4-StrixKVSpine-v4
+- Modelo en Hugging Face: https://huggingface.co/julianmb/Laguna-S-2.1-ROCmFP4-StrixKVSpine-v4
 - Runtime Ciru ROCmFPX: https://github.com/ciru-ai/ROCmFPX
-- Modelo base en HuggingFace: https://huggingface.co/poolside/Laguna-S-2.1
+- Modelo base en Hugging Face: https://huggingface.co/poolside/Laguna-S-2.1
 - Coleccion de modelos Laguna S 2.1: https://huggingface.co/collections/poolside/laguna-s-21
 - Blog de poolside sobre Laguna S 2.1: https://poolside.ai/blog/introducing-laguna-s-2-1
 - Notas de version de Poolside: https://docs.poolside.ai/release-notes/models

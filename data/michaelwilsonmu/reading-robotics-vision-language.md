@@ -49,7 +49,7 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 - Para producción o investigación aplicada, este repositorio no ofrece ningún recurso utilizable.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/michaelwilsonmu/reading-robotics-vision-language
+- Repositorio en Hugging Face: https://huggingface.co/michaelwilsonmu/reading-robotics-vision-language
 - Survey de modelos VLA: https://vla-survey.github.io/
 - Artículo de Wikipedia sobre VLA: https://en.wikipedia.org/wiki/Vision%E2%80%93language%E2%80%93action_model
 - Artículo en Nature sobre construcción de VLA: https://www.nature.com/articles/s42256-025-01168-7

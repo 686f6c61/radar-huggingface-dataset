@@ -115,7 +115,7 @@ Frente a modelos de otras familias del mismo rango de tamano, la informacion dis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/darrellbest/Qwen3.5-9B-Heretic-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/darrellbest/Qwen3.5-9B-Heretic-NVFP4
 - Modelo base (variante Heretic en bf16): https://huggingface.co/darrellbest/Qwen3.5-9B-Heretic
 - Variante GGUF: https://huggingface.co/darrellbest/Qwen3.5-9B-Heretic-GGUF
 - Variante FP8: https://huggingface.co/darrellbest/Qwen3.5-9B-Heretic-FP8

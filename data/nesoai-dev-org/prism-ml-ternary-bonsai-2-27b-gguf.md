@@ -77,7 +77,7 @@ No se han publicado en la informacion disponible los valores individuales por be
 
 | Modelo | Parametros | Contexto | Prestaciones (media thinking) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ternary Bonsai 2 27B | 27,36B (26,9B en safetensors) | 262K | 84,78 | Apache 2.0 | GGUF en HuggingFace; MLX companion |
+| Ternary Bonsai 2 27B | 27,36B (26,9B en safetensors) | 262K | 84,78 | Apache 2.0 | GGUF en Hugging Face; MLX companion |
 | IQ2_XXS de Qwen3.8-27B | Mismo backbone (~27B) | 262K | 72,59 | Heredada del modelo base (no disponible) | Build convencional de llama.cpp |
 | UD-Q4_K_XL de Qwen3.8-27B | Mismo backbone (~27B) | 262K | ~85,18 | Heredada del modelo base (no disponible) | Build convencional de llama.cpp |
 | Baseline FP16 (Qwen3.8-27B) | Mismo backbone (~27B) | 262K | 100 % (referencia) | Heredada del modelo base (no disponible) | Pesos sin cuantizar |
@@ -95,11 +95,11 @@ La comparacion se limita a builds del mismo modelo base; no se dispone de datos 
 - Problemas conocidos: el repositorio mantiene un fichero KNOWN_ISSUES.md con fallos documentados, workarounds y estado de correccion, que conviene revisar antes de desplegar.
 - Uso comercial: la licencia Apache 2.0 lo permite, pero la model card no detalla las condiciones del modelo base Qwen3.8-27B, que podrian aplicar de forma adicional.
 - Estado de adopcion: el repositorio registra 0 descargas y 0 likes en el momento de la consulta, con lo que la validacion por parte de la comunidad es practicamente nula.
-- Discrepancia de identificadores: el ID de HuggingFace pertenece a la organizacion `nesoai-dev-org`, mientras que la model card enlaza recursos de `prism-ml`; conviene verificar la procedencia antes de usarlo en produccion.
+- Discrepancia de identificadores: el ID de Hugging Face pertenece a la organizacion `nesoai-dev-org`, mientras que la model card enlaza recursos de `prism-ml`; conviene verificar la procedencia antes de usarlo en produccion.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nesoai-dev-org/prism-ml-Ternary-Bonsai-2-27B-gguf
+- Hugging Face: https://huggingface.co/nesoai-dev-org/prism-ml-Ternary-Bonsai-2-27B-gguf
 - Whitepaper: https://github.com/PrismML-Eng/Bonsai-demo/blob/main/bonsai-2-27b-whitepaper.pdf
 - Demo y ejemplos: https://github.com/PrismML-Eng/Bonsai-demo
 - Sitio web de Prism ML: https://prismml.com

@@ -77,7 +77,7 @@ La comparativa se basa en modelos conocidos del ecosistema, aunque no se dispone
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Thiago-Reis-Porto/modernJabuticaBERT-Base-1k
+- Hugging Face: https://huggingface.co/Thiago-Reis-Porto/modernJabuticaBERT-Base-1k
 - Colección JabuticaBERT: https://huggingface.co/collections/amadeusai/jabuticabert
 - Paper (PROPOR 2026): https://aclanthology.org/2026.propor-1.93/
 - PDF del paper: https://aclanthology.org/2026.propor-1.93.pdf

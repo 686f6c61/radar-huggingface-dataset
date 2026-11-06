@@ -79,9 +79,9 @@ No se dispone de información suficiente sobre el contexto, licencia o disponibi
 
 ## Enlaces
 
-- HuggingFace (repo GGUF): https://huggingface.co/IFM/K2-Horizon-32B-GGUF
-- HuggingFace (modelo base): https://huggingface.co/IFM/K2-Horizon-32B
-- Colección K2 Horizon en HuggingFace: https://huggingface.co/collections/IFM/k2-horizon
+- Hugging Face (repo GGUF): https://huggingface.co/IFM/K2-Horizon-32B-GGUF
+- Hugging Face (modelo base): https://huggingface.co/IFM/K2-Horizon-32B
+- Colección K2 Horizon en Hugging Face: https://huggingface.co/collections/IFM/k2-horizon
 - Dataset de pre-entrenamiento: https://huggingface.co/datasets/IFM/K2-Horizon-Pretrain-Data
 - Dataset de mid-entrenamiento: https://huggingface.co/datasets/IFM/K2-Horizon-Midtrain-Data
 - Fork de llama.cpp con soporte K2 Horizon: https://github.com/MBZUAI-IFM/llama.cpp/tree/model/K2Horizon

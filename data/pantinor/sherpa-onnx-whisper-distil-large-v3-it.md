@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sherpa-onnx-whisper-distil-large-v3-it` es una exportación a ONNX, cuantizada en int8, del modelo de reconocimiento automático del habla `bofenghuang/whisper-large-v3-distil-it-v0.2`, una destilación específica para italiano de Whisper large-v3 de OpenAI. Lo publica el usuario `pantinor` en HuggingFace y está pensado exclusivamente para su uso con el runtime sherpa-onnx (k2-fsa), lo que lo convierte en una pieza lista para integrar en aplicaciones de transcripción en producción sin depender de PyTorch.
+`sherpa-onnx-whisper-distil-large-v3-it` es una exportación a ONNX, cuantizada en int8, del modelo de reconocimiento automático del habla `bofenghuang/whisper-large-v3-distil-it-v0.2`, una destilación específica para italiano de Whisper large-v3 de OpenAI. Lo publica el usuario `pantinor` en Hugging Face y está pensado exclusivamente para su uso con el runtime sherpa-onnx (k2-fsa), lo que lo convierte en una pieza lista para integrar en aplicaciones de transcripción en producción sin depender de PyTorch.
 
 La innovación principal es la destilación del decodificador: se reduce de 32 capas a solo 2, manteniendo el encoder de Whisper large-v3 (n_mels 128, n_audio_ctx 1500, n_text_state 1280). Esto rebaja drásticamente el coste computacional y el tamaño (unos 937 MB en total entre encoder y decoder int8) a cambio de una pérdida de calidad que el autor describe como "fuerte calidad de transcripción en italiano". El vocabulario es el estándar de Whisper (51.866 tokens) y el contexto de texto es de 448 tokens.
 
@@ -83,7 +83,7 @@ La comparativa se limita a modelos de la misma familia Whisper; no se dispone de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pantinor/sherpa-onnx-whisper-distil-large-v3-it
+- Hugging Face: https://huggingface.co/pantinor/sherpa-onnx-whisper-distil-large-v3-it
 - Modelo base: https://huggingface.co/bofenghuang/whisper-large-v3-distil-it-v0.2
 - Repositorio sherpa-onnx: https://github.com/k2-fsa/sherpa-onnx
 - Script de exportación: https://github.com/k2-fsa/sherpa-onnx/blob/master/scripts/whisper/export-onnx.py

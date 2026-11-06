@@ -113,7 +113,7 @@ No se dispone de datos de rendimiento, contexto ni tasa de aceptacion de ninguno
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/simaai/Qwen3.5-9B-DFlash-RTN-INT8-Safetensors
+- Modelo en Hugging Face: https://huggingface.co/simaai/Qwen3.5-9B-DFlash-RTN-INT8-Safetensors
 - Modelo base (borrador BF16): https://huggingface.co/z-lab/Qwen3.5-9B-DFlash
 - Modelo objetivo pre-cuantizado compatible: https://huggingface.co/simaai/Qwen3.5-9B-Autoround-Safetensors
 - Coleccion de modelos pre-cuantizados de SiMa.ai: https://huggingface.co/collections/simaai/pre-quantized-models-6a5623ca69f6a9ed0a41d3df

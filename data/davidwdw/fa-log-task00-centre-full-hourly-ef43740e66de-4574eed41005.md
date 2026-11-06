@@ -4,7 +4,7 @@
 
 El artefacto publicado bajo el identificador `davidwdw/fa-log-task00-centre-full-hourly-ef43740e66de-4574eed41005` no es un modelo de lenguaje, sino un archivo versionado (*versioned snapshot*) de una flota de ejecución. La propia model card lo describe como "versioned fleet archive" con receta canónica `evaluations/2026-09-23_task00_centre_full_recovery` y nivel (*tier*) "versioned snapshot". Es decir, el repositorio contiene una captura inmutable de artefactos asociados a una tarea de evaluación concreta, no pesos entrenados ni código de inferencia.
 
-El autor es el usuario de HuggingFace `davidwdw`, que no presenta pipeline, licencia, idiomas ni métricas declaradas. El repositorio registra cero descargas y cero *likes*, y sus únicos metadatos de clasificación son la etiqueta `region:us`. No hay información pública que permita vincular este paquete con un modelo, un *dataset* de entrenamiento o un *benchmark* conocido.
+El autor es el usuario de Hugging Face `davidwdw`, que no presenta pipeline, licencia, idiomas ni métricas declaradas. El repositorio registra cero descargas y cero *likes*, y sus únicos metadatos de clasificación son la etiqueta `region:us`. No hay información pública que permita vincular este paquete con un modelo, un *dataset* de entrenamiento o un *benchmark* conocido.
 
 Por tanto, esta ficha documenta lo que el artefacto es (un archivo de instantánea con verificación de integridad) y deja explícitamente marcados como "no disponible" todos los campos que solo tendrían sentido para un modelo de IA. La relevancia de este tipo de paquetes es de trazabilidad y reproducibilidad: permiten fijar una revisión exacta y comprobar su integridad mediante sumas SHA256. Advertencia importante: los resultados de la búsqueda web asociados a esta consulta (páginas de inicio de sesión de Facebook, Google y Workday) no guardan relación alguna con el artefacto y no aportan información verificable.
 
@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Compatibilidad con GPU de consumo: no aplica.
 - Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI): no aplica; el consumo del paquete es una descarga de ficheros, no un servidor de inferencia.
 - Requisito real: espacio en disco suficiente para el conjunto de ficheros archivados (tamano no disponible) y acceso de escritura si se descarga para verificacion local.
-- Herramientas necesarias: cliente de HuggingFace (`huggingface-cli` o `huggingface_hub`), `git-lfs` si el repositorio usa LFS, y una utilidad de checksum compatible con `sha256sum` o `shasum -a 256`.
+- Herramientas necesarias: cliente de Hugging Face (`huggingface-cli` o `huggingface_hub`), `git-lfs` si el repositorio usa LFS, y una utilidad de checksum compatible con `sha256sum` o `shasum -a 256`.
 - Latencia y throughput: no disponibles; dependen del tamano de la instantanea, que no se declara.
 
 ## Comparativa con modelos similares
@@ -87,7 +87,7 @@ No disponible. Este artefacto no pertenece a la categoria de modelos de lenguaje
 | Parametros | no aplica | no aplica |
 | Contexto | no aplica | no aplica |
 | Licencia | no disponible | no disponible |
-| Disponibilidad | repositorio publico en HuggingFace, 0 descargas | no disponible |
+| Disponibilidad | repositorio publico en Hugging Face, 0 descargas | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -104,8 +104,8 @@ No disponible. Este artefacto no pertenece a la categoria de modelos de lenguaje
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-log-task00-centre-full-hourly-ef43740e66de-4574eed41005
-- Perfil del autor en HuggingFace: https://huggingface.co/davidwdw
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-log-task00-centre-full-hourly-ef43740e66de-4574eed41005
+- Perfil del autor en Hugging Face: https://huggingface.co/davidwdw
 - Paper: no disponible
 - Blog o documentacion tecnica: no disponible
 - Repositorio de codigo: no disponible

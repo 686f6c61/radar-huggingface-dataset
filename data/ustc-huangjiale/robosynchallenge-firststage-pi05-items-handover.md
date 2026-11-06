@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ustc-huangjiale/robosynchallenge-firststage-pi05-items-handover` es un checkpoint de politica robótica entrenada por imitación (imitation learning) para la tarea `items_handover`, correspondiente a la primera fase de la competición RoboSynChallenge. Lo publica el usuario de HuggingFace `ustc-huangjiale`, vinculado a la Universidad de Ciencia y Tecnología de China (USTC) por el prefijo del identificador, y se distribuye como un repositorio de 12,4 GB con el checkpoint de inferencia completo almacenado bajo el directorio `ckpt/`.
+El modelo `ustc-huangjiale/robosynchallenge-firststage-pi05-items-handover` es un checkpoint de politica robótica entrenada por imitación (imitation learning) para la tarea `items_handover`, correspondiente a la primera fase de la competición RoboSynChallenge. Lo publica el usuario de Hugging Face `ustc-huangjiale`, vinculado a la Universidad de Ciencia y Tecnología de China (USTC) por el prefijo del identificador, y se distribuye como un repositorio de 12,4 GB con el checkpoint de inferencia completo almacenado bajo el directorio `ckpt/`.
 
 La politica se identifica en la model card como π0.5, un tipo de modelo vision-lenguaje-accion (VLA) orientado a control robótico. No es un modelo de lenguaje de propósito general: su entrada son observaciones sensoriales del robot (imágenes y estado de las articulaciones) y su salida son acciones de control de bajo nivel para ejecutar la entrega de objetos. El checkpoint publicado corresponde al paso de entrenamiento `39999` y el autor declara una evaluación registrada de 72 sobre 100 (72%) en la tarea.
 
@@ -24,7 +24,7 @@ Su relevancia es acotada y muy específica: se trata de un artefacto de competic
 | Tarea | `items_handover` |
 | Checkpoint | paso 39999 |
 | Evaluacion declarada | 72/100 (72%) en la tarea |
-| Pipeline declarado en HuggingFace | robotics |
+| Pipeline declarado en Hugging Face | robotics |
 | Fecha de creacion | 2026-10-11 |
 | Ultima actualizacion | 2026-10-11 |
 
@@ -79,7 +79,7 @@ No se dispone de informacion sobre el protocolo de evaluacion (numero de episodi
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| robosynchallenge-firststage-pi05-items-handover | no disponible | no disponible | `items_handover` (entrega de objetos) | no disponible | Repositorio HuggingFace, 0 descargas, 0 likes |
+| robosynchallenge-firststage-pi05-items-handover | no disponible | no disponible | `items_handover` (entrega de objetos) | no disponible | Repositorio Hugging Face, 0 descargas, 0 likes |
 | Otras politicas de la familia π0.5 | no disponible | no disponible | Manipulacion general | no disponible | No se aporta informacion en la busqueda |
 | Politicas VLA comparables (OpenVLA, RDT-1B, GR00T N1 u otras) | no disponible | no disponible | Manipulacion general | no disponible | No se aporta informacion en la busqueda |
 
@@ -99,6 +99,6 @@ No se dispone de datos verificados en la informacion proporcionada para establec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ustc-huangjiale/robosynchallenge-firststage-pi05-items-handover
+- Modelo en Hugging Face: https://huggingface.co/ustc-huangjiale/robosynchallenge-firststage-pi05-items-handover
 - Codigo y comandos de evaluacion: https://github.com/ustc-huangjiale/Robosynchallengefirststage
 - No se han encontrado en la informacion proporcionada otros enlaces (papers, blogs, demos) asociados a este modelo.

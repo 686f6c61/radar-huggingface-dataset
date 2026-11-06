@@ -54,7 +54,7 @@ Los detalles específicos del entrenamiento del modelo base (número de tokens, 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card del autor no incluye métricas como MMLU, HumanEval, GSM8K ni benchmarks de visión (MMMU, DocVQA). Para datos de rendimiento del modelo base Qwen/Qwen3.8-27B, se recomienda consultar la documentación oficial de Qwen en HuggingFace.
+No se han publicado resultados de benchmarks en la información disponible. La model card del autor no incluye métricas como MMLU, HumanEval, GSM8K ni benchmarks de visión (MMMU, DocVQA). Para datos de rendimiento del modelo base Qwen/Qwen3.8-27B, se recomienda consultar la documentación oficial de Qwen en Hugging Face.
 
 ## Requisitos de hardware
 
@@ -83,11 +83,11 @@ La versión 4-bit reduce significativamente los requisitos de memoria (aproximad
 - **Idiomas limitados**: aunque se mencionan ruso, inglés y chino, la lista completa de idiomas soportados no está documentada. El rendimiento en idiomas minoritarios o con pocos recursos puede ser inferior.
 - **Riesgo de alucinación**: como cualquier modelo de lenguaje grande, puede generar información falsa o inexacta, especialmente en tareas de razonamiento visual donde la interpretación de imágenes puede ser errónea.
 - **Sesgos potenciales**: al estar entrenado principalmente con datos en inglés, chino y ruso, puede presentar sesgos culturales y lingüísticos en otros idiomas.
-- **Denominación no estándar**: el nombre "Qwen3.8" y la etiqueta `qwen3_5` en HuggingFace sugieren que podría tratarse de una versión reciente o experimental de la familia Qwen. Se recomienda verificar la estabilidad y documentación del modelo base antes de usarlo en producción.
+- **Denominación no estándar**: el nombre "Qwen3.8" y la etiqueta `qwen3_5` en Hugging Face sugieren que podría tratarse de una versión reciente o experimental de la familia Qwen. Se recomienda verificar la estabilidad y documentación del modelo base antes de usarlo en producción.
 
 ## Enlaces
 
-- [Modelo en HuggingFace: lesa80/Qwen3.8-27B-MLX-bf16](https://huggingface.co/lesa80/Qwen3.8-27B-MLX-bf16)
+- [Modelo en Hugging Face: lesa80/Qwen3.8-27B-MLX-bf16](https://huggingface.co/lesa80/Qwen3.8-27B-MLX-bf16)
 - [Modelo original: Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [Version 4-bit: lesa80/Qwen3.8-27B-MLX-4bit](https://huggingface.co/lesa80/Qwen3.8-27B-MLX-4bit)
 - [Guia de conversion: HOWTO.md](https://huggingface.co/lesa80/Qwen3.8-27B-MLX-4bit/blob/main/HOWTO.md)

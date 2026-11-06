@@ -2,11 +2,11 @@
 
 ## Resumen
 
-wav2vec2-base-samromur-50h es un modelo de reconocimiento automatico del habla (ASR) publicado por el usuario palli23 en HuggingFace. Se trata de un ajuste fino de la arquitectura wav2vec2-base (94.402.472 parametros) sobre un subconjunto anidado de 50 horas extraido del corpus islandes Miljon/samromur-500h. El modelo esta especializado exclusivamente en islandes (codigo de idioma `is`) y se distribuye bajo licencia CC BY-SA 4.0.
+wav2vec2-base-samromur-50h es un modelo de reconocimiento automatico del habla (ASR) publicado por el usuario palli23 en Hugging Face. Se trata de un ajuste fino de la arquitectura wav2vec2-base (94.402.472 parametros) sobre un subconjunto anidado de 50 horas extraido del corpus islandes Miljon/samromur-500h. El modelo esta especializado exclusivamente en islandes (codigo de idioma `is`) y se distribuye bajo licencia CC BY-SA 4.0.
 
 El modelo forma parte de un conjunto de checkpoints de escalado ("scaling checkpoint set") elaborado para el articulo "Scaling Smaller ASR Models Against Multilingual ASR Giants", aceptado en ICASSP 2027 segun la propia model card. El objetivo declarado de ese trabajo es estudiar como modelos ASR pequenos (del orden de decenas o centenas de millones de parametros) rinden frente a modelos multilingues mucho mas grandes cuando se les proporciona datos de entrenamiento especificos de un idioma concreto.
 
-Con 21 descargas y 0 likes en el momento de la consulta, es un modelo de investigacion con una adopcion muy limitada y sin pipeline declarado en HuggingFace. Su relevancia es por tanto experimental y academica: sirve como punto de referencia en un estudio de escalado de datos para ASR islandes, mas que como solucion lista para produccion. La model card no documenta metricas de WER o CER, y remite al articulo para la metodologia y los resultados.
+Con 21 descargas y 0 likes en el momento de la consulta, es un modelo de investigacion con una adopcion muy limitada y sin pipeline declarado en Hugging Face. Su relevancia es por tanto experimental y academica: sirve como punto de referencia en un estudio de escalado de datos para ASR islandes, mas que como solucion lista para produccion. La model card no documenta metricas de WER o CER, y remite al articulo para la metodologia y los resultados.
 
 ## Especificaciones tecnicas
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / alcance | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| palli23/wav2vec2-base-samromur-50h | 94,4 M | ASR; duracion de audio no especificada | Islandes | CC BY-SA 4.0 | HuggingFace |
-| facebook/wav2vec2-base-960h | 94,4 M (referencia publica) | ASR sobre LibriSpeech 960h | Ingles | Apache 2.0 (referencia publica) | HuggingFace |
-| openai/whisper-small | 244 M (referencia publica) | ASR + traduccion, ventanas de 30 s | Multilingue (incluye islandes) | Apache 2.0 (referencia publica) | HuggingFace / OpenAI |
-| facebook/wav2vec2-xls-r-300m | 300 M (referencia publica) | ASR, 128 idiomas en preentrenamiento | Multilingue | Apache 2.0 (referencia publica) | HuggingFace |
+| palli23/wav2vec2-base-samromur-50h | 94,4 M | ASR; duracion de audio no especificada | Islandes | CC BY-SA 4.0 | Hugging Face |
+| facebook/wav2vec2-base-960h | 94,4 M (referencia publica) | ASR sobre LibriSpeech 960h | Ingles | Apache 2.0 (referencia publica) | Hugging Face |
+| openai/whisper-small | 244 M (referencia publica) | ASR + traduccion, ventanas de 30 s | Multilingue (incluye islandes) | Apache 2.0 (referencia publica) | Hugging Face / OpenAI |
+| facebook/wav2vec2-xls-r-300m | 300 M (referencia publica) | ASR, 128 idiomas en preentrenamiento | Multilingue | Apache 2.0 (referencia publica) | Hugging Face |
 
 La comparacion es estructural: los datos de parametros y licencias de los modelos alternativos son cifras publicas conocidas, no resultados medidos en este trabajo. No se dispone de una comparativa de WER porque no hay metricas publicadas en la informacion disponible.
 
@@ -81,11 +81,11 @@ La comparacion es estructural: los datos de parametros y licencias de los modelo
 - Ausencia de modelo de lenguaje acoplado: al ser un encoder ASR ajustado, la salida puede carecer de fluidez y requerir postprocesado o un modelo de lenguaje externo.
 - Restricciones de licencia: CC BY-SA 4.0 permite uso comercial, pero exige atribucion y que las obras derivadas se distribuyan bajo la misma licencia o una compatible (copyleft). Esto puede condicionar la integracion en productos propietarios que no quieran liberar sus derivados.
 - Modelo sin mantenimiento aparente y con adopcion muy baja (21 descargas, 0 likes), sin garantias de soporte ni de actualizaciones.
-- Fecha de creacion y actualizacion en HuggingFace posteriores a 2026, coherentes con un articulo de ICASSP 2027: se trata de un artefacto de investigacion, no de un modelo validado en produccion.
+- Fecha de creacion y actualizacion en Hugging Face posteriores a 2026, coherentes con un articulo de ICASSP 2027: se trata de un artefacto de investigacion, no de un modelo validado en produccion.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/palli23/wav2vec2-base-samromur-50h
-- Dataset de escalado de referencia citado en la model card: Miljon/samromur-500h (identificador de HuggingFace, sin URL verificado en la informacion disponible)
+- Modelo en Hugging Face: https://huggingface.co/palli23/wav2vec2-base-samromur-50h
+- Dataset de escalado de referencia citado en la model card: Miljon/samromur-500h (identificador de Hugging Face, sin URL verificado en la informacion disponible)
 - Articulo asociado: "Scaling Smaller ASR Models Against Multilingual ASR Giants", ICASSP 2027 (citado en la model card; no se ha encontrado enlace directo en la busqueda web)
 - Nota sobre la busqueda web: los resultados obtenidos no contienen informacion relevante sobre el modelo, el articulo ni el corpus Samromur, por lo que no se anaden enlaces adicionales.

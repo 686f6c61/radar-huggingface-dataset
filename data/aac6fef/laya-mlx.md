@@ -6,7 +6,7 @@ laya-mlx es una conversión nativa a MLX en FP16 del checkpoint convaiinnovation
 
 La relevancia de esta ficha es doble. Por un lado, demuestra un patrón de portado reproducible: el autor verifica igualdad exacta tensor a tensor con el checkpoint de origen (FP32) casteado a FP16, y comprueba que el argmax de las distribuciones de decisión coincide en 63/63 casos sobre 16 escenarios, con una diferencia máxima de probabilidad calibrada de 0,0054443. Por otro, ilustra un caso poco frecuente en el ecosistema: pesos pensados exclusivamente para MLX, sin dependencia de PyTorch ni de Transformers en tiempo de ejecución, mediante un paquete de arquitectura personalizada (`laya_mlx`).
 
-El modelo está pensado para flujos de decisión estructurada (triaje, enrutado, clasificación con criterios explícitos) y no sustituye a un LLM conversacional. El repositorio ocupa 0,8 GB, declara licencia Apache-2.0, soporta únicamente inglés y, en el momento de redactar esta ficha, no acumula descargas ni valoraciones en HuggingFace, por lo que se trata de un artefacto reciente y sin validación independiente por parte de la comunidad.
+El modelo está pensado para flujos de decisión estructurada (triaje, enrutado, clasificación con criterios explícitos) y no sustituye a un LLM conversacional. El repositorio ocupa 0,8 GB, declara licencia Apache-2.0, soporta únicamente inglés y, en el momento de redactar esta ficha, no acumula descargas ni valoraciones en Hugging Face, por lo que se trata de un artefacto reciente y sin validación independiente por parte de la comunidad.
 
 ## Especificaciones tecnicas
 
@@ -85,7 +85,7 @@ El propio autor advierte que estas comprobaciones establecen fidelidad del port,
 | aac6fef/laya-mlx | 421.293.830 | 512 tokens | Decision encoder (choice, score, noul) | Apache-2.0 | MLX, Apple Silicon |
 | convaiinnovations/laya | 421.293.830 (mismo checkpoint de origen) | 512 tokens | Decision encoder | Apache-2.0 | PyTorch / Transformers |
 | Checkpoint multilingue de Laya | no disponible | no disponible | Decision encoder | no disponible | Indicado por el autor para texto no ingles |
-| ModernBERT-large (base subyacente) | no disponible | no disponible | Encoder bidireccional de proposito general | no disponible | HuggingFace |
+| ModernBERT-large (base subyacente) | no disponible | no disponible | Encoder bidireccional de proposito general | no disponible | Hugging Face |
 
 La diferencia principal frente al checkpoint original no es de rendimiento sino de runtime: laya-mlx elimina la dependencia de PyTorch y Transformers y ejecuta toda la computación en MLX, a cambio de quedar restringido a Apple Silicon y a un paquete de arquitectura personalizado. No se dispone de datos comparativos de calidad entre alternativas.
 
@@ -103,7 +103,7 @@ La diferencia principal frente al checkpoint original no es de rendimiento sino 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aac6fef/laya-mlx
+- Modelo en Hugging Face: https://huggingface.co/aac6fef/laya-mlx
 - Checkpoint de origen: https://huggingface.co/convaiinnovations/laya
 - Codigo upstream de Laya: https://github.com/NandhaKishorM/laya
 - Repositorio del runtime MLX: https://github.com/mizorewww/laya-mlx

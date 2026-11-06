@@ -117,7 +117,7 @@ No se dispone de datos de otros modelos comparables de 1,3 B en la información 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ikimyaii/HGRN-1.3B-semi-structured-EHWS-ALPS_phase1-p1t0.7-80pct
+- Modelo en Hugging Face: https://huggingface.co/ikimyaii/HGRN-1.3B-semi-structured-EHWS-ALPS_phase1-p1t0.7-80pct
 - Modelo base denso: https://huggingface.co/fla-hub/hgrn-1.3B-100B
 - Variante con fase 1 al 80 % (receta por defecto): https://huggingface.co/ikimyaii/HGRN-1.3B-semi-structured-EHWS-ALPS-phase1-80pct
 - Registro completo de la ejecución: `results.json`, incluido en el repositorio del modelo

@@ -83,9 +83,9 @@ No se han publicado en la información disponible comparaciones directas con otr
 | Modelo | Parametros | Contexto | Pesos abiertos | Licencia | Acceso |
 |---|---|---|---|---|---|
 | CHARM (C3 AI) | ~63,3 M | 8192 | No | other | API con credenciales |
-| Chronos (Amazon) | no disponible en esta ficha | no disponible en esta ficha | Sí | no disponible en esta ficha | HuggingFace |
-| TimesFM (Google) | no disponible en esta ficha | no disponible en esta ficha | Sí | no disponible en esta ficha | HuggingFace |
-| Moirai (Salesforce) | no disponible en esta ficha | no disponible en esta ficha | Sí | no disponible en esta ficha | HuggingFace |
+| Chronos (Amazon) | no disponible en esta ficha | no disponible en esta ficha | Sí | no disponible en esta ficha | Hugging Face |
+| TimesFM (Google) | no disponible en esta ficha | no disponible en esta ficha | Sí | no disponible en esta ficha | Hugging Face |
+| Moirai (Salesforce) | no disponible en esta ficha | no disponible en esta ficha | Sí | no disponible en esta ficha | Hugging Face |
 
 No se dispone de datos verificados en la información proporcionada para comparar parámetros, contexto o rendimiento de estas alternativas con CHARM; la comparación se limita a la disponibilidad de pesos y al modo de acceso.
 
@@ -104,7 +104,7 @@ No se dispone de datos verificados en la información proporcionada para compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/c3aiia3c/CHARM
+- Modelo en Hugging Face: https://huggingface.co/c3aiia3c/CHARM
 - Documentación y quickstart: https://c3aiia3c-charm-docs.static.hf.space
 - Paquete PyPI `c3-charm`: https://pypi.org/project/c3-charm/
 - Skill para agentes de código: https://huggingface.co/c3aiia3c/CHARM/tree/main/skills/charm

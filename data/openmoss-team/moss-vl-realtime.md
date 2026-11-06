@@ -79,7 +79,7 @@ No se dispone de información suficiente en la documentación proporcionada para
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OpenMOSS-Team/MOSS-VL-Realtime
+- Hugging Face: https://huggingface.co/OpenMOSS-Team/MOSS-VL-Realtime
 - Repositorio GitHub: https://github.com/OpenMOSS/MOSS-VL
 - Página del proyecto: https://openmoss.ai/MOSS-VL/
 - Página de documentación: https://openmoss.ai/MOSS-VL/moss-vl.html

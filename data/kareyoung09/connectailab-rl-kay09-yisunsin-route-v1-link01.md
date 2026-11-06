@@ -28,7 +28,7 @@ La relevancia de esta ficha es acotada: se trata de un artefacto de investigaci�
 
 ## Arquitectura y entrenamiento
 
-El modelo es un adaptador LoRA (Low-Rank Adaptation) aplicado sobre Qwen/Qwen3.5-0.8B, un transformer decoder-only de 0.8B parámetros. No se especifica el rango del adaptador, las capas objetivo ni el número de parámetros entrenables. El pipeline declarado en HuggingFace es reinforcement-learning y las etiquetas incluyen PPO y deep reinforcement learning, pero la model card indica explícitamente que el mejor método fue SFT, lo que sugiere que se probaron varios enfoques y el ajuste supervisado fue el que mejores resultados dio.
+El modelo es un adaptador LoRA (Low-Rank Adaptation) aplicado sobre Qwen/Qwen3.5-0.8B, un transformer decoder-only de 0.8B parámetros. No se especifica el rango del adaptador, las capas objetivo ni el número de parámetros entrenables. El pipeline declarado en Hugging Face es reinforcement-learning y las etiquetas incluyen PPO y deep reinforcement learning, pero la model card indica explícitamente que el mejor método fue SFT, lo que sugiere que se probaron varios enfoques y el ajuste supervisado fue el que mejores resultados dio.
 
 No hay información disponible sobre el número de tokens de entrenamiento, la composición del dataset, el proceso de anotación de las observaciones del robot ni si se aplicaron técnicas de RLHF o DPO. Tampoco se detalla cómo se serializan las observaciones del robot bípedo como entrada de texto para el modelo de lenguaje, que es el punto técnico más relevante de este tipo de enfoques (tokenización de estado, formato de prompt, espacio de acciones).
 
@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LINK-01 (este modelo) | 0.8B (base) + LoRA | no disponible | follow_route en robot bípedo | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3.5-0.8B | 0.8B | no disponible | LLM generalista | no disponible en esta ficha | HuggingFace |
+| LINK-01 (este modelo) | 0.8B (base) + LoRA | no disponible | follow_route en robot bípedo | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3.5-0.8B | 0.8B | no disponible | LLM generalista | no disponible en esta ficha | Hugging Face |
 | Políticas RL específicas para robótica (p. ej. modelos de locomotion) | variable | no aplica | control de bajo nivel | variable | variable |
 
 No se dispone de información sobre modelos comparables de la misma categoría (LLM pequeño como política de decisión en robótica) en la documentación proporcionada. La comparación con el modelo base es la más directa, pero no se han publicado métricas del base en esta tarea.
@@ -91,6 +91,6 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kareyoung09/connectailab-rl-kay09-yisunsin-route-v1-link01
+- Hugging Face: https://huggingface.co/kareyoung09/connectailab-rl-kay09-yisunsin-route-v1-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

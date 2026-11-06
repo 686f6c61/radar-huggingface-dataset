@@ -97,7 +97,7 @@ No se dispone de resultados de benchmarks de clasificadores comparables en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StanfordSCALE/assertion_repeats_prior_speech
+- Modelo en Hugging Face: https://huggingface.co/StanfordSCALE/assertion_repeats_prior_speech
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-mpnet-base-v2
 - Dataset de entrenamiento: https://huggingface.co/datasets/StanfordSCALE/assertions_llm_annotated_talkmoves
 - TalkMoves Dataset (GitHub): https://github.com/SumnerLab/TalkMoves

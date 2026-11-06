@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`phureexd/qwen35_medical_v3_lr2e-4_lora` es un ajuste fino (fine-tuning) mediante LoRA del modelo base `unsloth/Qwen3.5-2B`, publicado por el usuario phureexd en HuggingFace. El nombre del repositorio sugiere un entrenamiento orientado al dominio médico (sufijo `medical`), con una tasa de aprendizaje de 2e-4 y la tercera iteración de una serie de experimentos (`v3`). Se distribuye bajo licencia Apache 2.0 y está etiquetado para inglés.
+`phureexd/qwen35_medical_v3_lr2e-4_lora` es un ajuste fino (fine-tuning) mediante LoRA del modelo base `unsloth/Qwen3.5-2B`, publicado por el usuario phureexd en Hugging Face. El nombre del repositorio sugiere un entrenamiento orientado al dominio médico (sufijo `medical`), con una tasa de aprendizaje de 2e-4 y la tercera iteración de una serie de experimentos (`v3`). Se distribuye bajo licencia Apache 2.0 y está etiquetado para inglés.
 
 El modelo se ha entrenado con la librería Unsloth, que según la model card permite un entrenamiento "2x más rápido", y utiliza el stack de transformers, TRL y text-generation-inference. El tamaño del repositorio es de aproximadamente 0,1 GB, coherente con un adaptador LoRA ligero sobre un modelo base de 2B parámetros.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| phureexd/qwen35_medical_v3_lr2e-4_lora | 2B (base) + LoRA | No disponible | Apache 2.0 | HuggingFace, 0 descargas | Ajuste médico no documentado, sin benchmarks |
-| unsloth/Qwen3.5-2B (base) | 2B | No disponible | Apache 2.0 (según etiqueta del ajuste) | HuggingFace | Modelo base sin ajuste de dominio |
-| Otros ajustes médicos sobre modelos de 2B | Variable | Variable | Variable | HuggingFace | No se dispone de comparación directa con datos verificables |
+| phureexd/qwen35_medical_v3_lr2e-4_lora | 2B (base) + LoRA | No disponible | Apache 2.0 | Hugging Face, 0 descargas | Ajuste médico no documentado, sin benchmarks |
+| unsloth/Qwen3.5-2B (base) | 2B | No disponible | Apache 2.0 (según etiqueta del ajuste) | Hugging Face | Modelo base sin ajuste de dominio |
+| Otros ajustes médicos sobre modelos de 2B | Variable | Variable | Variable | Hugging Face | No se dispone de comparación directa con datos verificables |
 
 No se dispone de información suficiente para comparar rendimiento con alternativas de la misma categoría.
 
@@ -82,6 +82,6 @@ No se dispone de información suficiente para comparar rendimiento con alternati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/phureexd/qwen35_medical_v3_lr2e-4_lora
+- Hugging Face: https://huggingface.co/phureexd/qwen35_medical_v3_lr2e-4_lora
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-2B
 - Unsloth (GitHub): https://github.com/unslothai/unsloth

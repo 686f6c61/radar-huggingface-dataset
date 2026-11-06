@@ -83,7 +83,7 @@ La comparación directa de rendimiento no es posible: los dos modelos oficiales 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/krist67/qwen2.5-1.5b-humanized-Q8_0-GGUF
+- Repositorio Hugging Face: https://huggingface.co/krist67/qwen2.5-1.5b-humanized-Q8_0-GGUF
 - Modelo base del ajuste fino: https://huggingface.co/xybytz/qwen2.5-1.5b-humanized
 - Qwen2.5-1.5B-Instruct-GGUF (modelo oficial de referencia): https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct-GGUF
 - Qwen2.5-Coder-1.5B-Q8_0-GGUF: https://huggingface.co/ggml-org/Qwen2.5-Coder-1.5B-Q8_0-GGUF

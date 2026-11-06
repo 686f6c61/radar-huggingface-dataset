@@ -6,7 +6,7 @@ Nanbeige4.3-33B-GSQ-RCO-GGUF es una familia de cuantizaciones GGUF de precisión
 
 Su relevancia práctica está en el empaquetado: ofrece ocho niveles de cuantización entre 2,0 y 4,35 bits por peso, desde 8,28 GB (IQ1_M) hasta 18,01 GB (IQ4_XS), lo que permite ejecutar un modelo de 33B en GPU de consumo. La variante marcada como recomendada es IQ3_M (3,70 bpw, 15,24 GB). Además, el autor documenta una configuración con caché KV cuantizada en q4_0 que permite sostener 65.536 tokens de contexto con menos de 12 GB de VRAM total.
 
-La ficha se limita a los datos publicados en el repositorio de HuggingFace y en su model card. La información disponible no incluye detalles de arquitectura interna, composición del dataset de entrenamiento ni resultados numéricos de benchmarks del modelo base.
+La ficha se limita a los datos publicados en el repositorio de Hugging Face y en su model card. La información disponible no incluye detalles de arquitectura interna, composición del dataset de entrenamiento ni resultados numéricos de benchmarks del modelo base.
 
 ## Especificaciones técnicas
 
@@ -81,8 +81,8 @@ Tampoco se documentan métricas de latencia ni de throughput (tokens por segundo
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nanbeige4.3-33B-GSQ-RCO-GGUF (esta ficha) | 33,1B | 524.288 tokens | GGUF, 8 niveles IQ1-IQ4 (8,28-18,01 GB) | Apache-2.0 | HuggingFace vía abenzerps |
-| Nanbeige/Nanbeige4.3-33B (base) | 33,1B | 524.288 tokens | safetensors (precisión completa) | Apache-2.0 | HuggingFace, repositorio oficial |
+| Nanbeige4.3-33B-GSQ-RCO-GGUF (esta ficha) | 33,1B | 524.288 tokens | GGUF, 8 niveles IQ1-IQ4 (8,28-18,01 GB) | Apache-2.0 | Hugging Face vía abenzerps |
+| Nanbeige/Nanbeige4.3-33B (base) | 33,1B | 524.288 tokens | safetensors (precisión completa) | Apache-2.0 | Hugging Face, repositorio oficial |
 | Alternativas de ~30-35B de otros fabricantes | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La información proporcionada no incluye datos de otros modelos comparables de la misma categoría (parámetros, contexto, benchmarks, licencia), por lo que no es posible establecer una comparación cuantitativa con alternativas externas. Respecto al modelo base, la diferencia es exclusivamente de empaquetado: mismos parámetros y misma ventana de contexto declarada, con pérdida de precisión asociada a la cuantización (creciente por debajo de 3 bpw) y una reducción de tamaño de aproximadamente 66 GB en precisión completa a 15,24 GB en IQ3_M.
@@ -102,10 +102,10 @@ La información proporcionada no incluye datos de otros modelos comparables de l
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/abenzerps/Nanbeige4.3-33B-GSQ-RCO-GGUF
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/abenzerps/Nanbeige4.3-33B-GSQ-RCO-GGUF
 - Modelo base: https://huggingface.co/Nanbeige/Nanbeige4.3-33B
 - Formulario de peticiones de modelos del autor: https://abenzerps.com/request-a-model/
 - Imagen de benchmarks referenciada en la model card: https://huggingface.co/abenzerps/Nanbeige4.3-33B-GSQ-RCO-GGUF/resolve/main/assets/benchmark.png
 - Licencia Apache-2.0: https://huggingface.co/abenzerps/Nanbeige4.3-33B-GSQ-RCO-GGUF/blob/main/LICENSE
 
-Nota: la búsqueda web asociada a esta ficha no devolvió resultados relevantes sobre el modelo; los enlaces anteriores proceden exclusivamente de la información de HuggingFace y de la model card. No se dispone de papers, blogs técnicos ni demos adicionales.
+Nota: la búsqueda web asociada a esta ficha no devolvió resultados relevantes sobre el modelo; los enlaces anteriores proceden exclusivamente de la información de Hugging Face y de la model card. No se dispone de papers, blogs técnicos ni demos adicionales.

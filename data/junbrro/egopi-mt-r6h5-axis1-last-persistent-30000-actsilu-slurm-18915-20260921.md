@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `junbrro/egopi-mt-r6h5-axis1-last-persistent-30000-actsilu-slurm-18915-20260921` es un checkpoint de pesos finales publicado en HuggingFace por el usuario `junbrro`, con 6.964.885.936 parametros almacenados en safetensors. La model card lo describe como un modelo resultante de un ajuste fino multitarea ("Multi-group MT FT") sobre un backbone congelado identificado como `r6h5`, con adaptador "Cog" habilitado, dimension oculta de 256 y activacion SiLU. El nombre del repositorio y los artefactos incluidos (directorio `actlat/` con un tokenizador de acciones) apuntan a un modelo orientado a la generacion de acciones para control de un brazo robotico (variante "Arm I"), mas que a un modelo de lenguaje conversacional al uso.
+El modelo `junbrro/egopi-mt-r6h5-axis1-last-persistent-30000-actsilu-slurm-18915-20260921` es un checkpoint de pesos finales publicado en Hugging Face por el usuario `junbrro`, con 6.964.885.936 parametros almacenados en safetensors. La model card lo describe como un modelo resultante de un ajuste fino multitarea ("Multi-group MT FT") sobre un backbone congelado identificado como `r6h5`, con adaptador "Cog" habilitado, dimension oculta de 256 y activacion SiLU. El nombre del repositorio y los artefactos incluidos (directorio `actlat/` con un tokenizador de acciones) apuntan a un modelo orientado a la generacion de acciones para control de un brazo robotico (variante "Arm I"), mas que a un modelo de lenguaje conversacional al uso.
 
 Se trata de la instantanea correspondiente al paso 30000 de entrenamiento, derivada de la fuente 18915, y se distribuye unicamente con pesos y configuracion finales: el estado del optimizador y del generador de numeros aleatorios se ha excluido de forma explicita. La model card advierte de que la configuracion original conserva rutas de un cluster de origen que deben ser reasignadas antes de su uso, y de que el modelo requiere un runtime especifico ("multi-group/persistent runtime") para funcionar.
 
@@ -93,6 +93,6 @@ No disponible. La informacion proporcionada no identifica modelos comparables de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/junbrro/egopi-mt-r6h5-axis1-last-persistent-30000-actsilu-slurm-18915-20260921
-- Model card del autor: incluida en la pagina de HuggingFace del modelo (fuente de toda la informacion tecnica citada en esta ficha).
+- Modelo en Hugging Face: https://huggingface.co/junbrro/egopi-mt-r6h5-axis1-last-persistent-30000-actsilu-slurm-18915-20260921
+- Model card del autor: incluida en la pagina de Hugging Face del modelo (fuente de toda la informacion tecnica citada en esta ficha).
 - Papers, blogs, repositorios o demos adicionales: no disponible. Los resultados de la busqueda web realizados no contenian ningun enlace relevante para este modelo (unicamente paginas genericas de Wikipedia, sin relacion con el checkpoint).

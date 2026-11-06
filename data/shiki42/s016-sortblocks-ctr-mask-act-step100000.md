@@ -80,7 +80,7 @@ La informacion proporcionada no incluye resultados ni especificaciones de modelo
 
 | Modelo | Parametros | Contexto / chunk | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Shiki42/s016-sortblocks-ctr-mask-act-step100000 | 51.633.806 | 3 camaras + estado 14D; chunk 50 | sin resultado held-out reclamado | no disponible | publico en HuggingFace |
+| Shiki42/s016-sortblocks-ctr-mask-act-step100000 | 51.633.806 | 3 camaras + estado 14D; chunk 50 | sin resultado held-out reclamado | no disponible | publico en Hugging Face |
 | Variante ACT sin IdleMask del mismo experimento | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 | Otras politicas de imitation learning (por ejemplo, politicas de difusion) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -98,7 +98,7 @@ La informacion proporcionada no incluye resultados ni especificaciones de modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shiki42/s016-sortblocks-ctr-mask-act-step100000
+- Modelo en Hugging Face: https://huggingface.co/Shiki42/s016-sortblocks-ctr-mask-act-step100000
 - Dataset de entrenamiento: https://huggingface.co/datasets/Shiki42/ctr-sortblocks-100ep-ctr (revision `9ee0f9d8e0700df5fac08454e7e213c4904d3024`)
 - Libreria LeRobot: no se ha incluido enlace en la informacion proporcionada; el modelo declara `library_name: lerobot` y la version 0.4.4.
 - Paper o blog del autor: no disponible.

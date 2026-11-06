@@ -44,7 +44,7 @@ No se dispone de información sobre el número de tokens de entrenamiento, compo
 - Ejecución nativa en Apple Silicon mediante MLX, sin emulación ni traducción de CUDA.
 - Resolución de salida configurable por el usuario (el ejemplo de la documentación usa 1024x1024 pixeles).
 - Control de reproducibilidad mediante semilla (`--seed`).
-- Descarga automática de pesos desde HuggingFace en el primer uso, o descarga manual para uso offline.
+- Descarga automática de pesos desde Hugging Face en el primer uso, o descarga manual para uso offline.
 - No se dispone de información sobre otras capacidades del modelo base (edición de imágenes, texto en imágenes, soporte multilingüe del prompt) en la información proporcionada.
 
 ## Casos de uso

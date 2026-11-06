@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Pythia-1.4B-DNP-500-Facts | 1.414.647.808 | no disponible | Edición de conocimiento por gradientes restringidos sobre Pythia-1.4B | apache-2.0 | HuggingFace (187 descargas) |
-| EleutherAI/pythia-1.4b | 1.414.647.808 | no disponible en la información proporcionada | Modelo base preentrenado, sin edición | apache-2.0 | HuggingFace |
-| Adaptadores LoRA sobre Pythia-1.4B | ~1.414.647.808 (base congelada + adaptador) | heredado del base | Fine-tune de bajo rango | según adaptador | HuggingFace (múltiples) |
+| Pythia-1.4B-DNP-500-Facts | 1.414.647.808 | no disponible | Edición de conocimiento por gradientes restringidos sobre Pythia-1.4B | apache-2.0 | Hugging Face (187 descargas) |
+| EleutherAI/pythia-1.4b | 1.414.647.808 | no disponible en la información proporcionada | Modelo base preentrenado, sin edición | apache-2.0 | Hugging Face |
+| Adaptadores LoRA sobre Pythia-1.4B | ~1.414.647.808 (base congelada + adaptador) | heredado del base | Fine-tune de bajo rango | según adaptador | Hugging Face (múltiples) |
 | Ediciones ROME/MEMIT sobre modelos de ~1B | ~1.000-1.500 millones | heredado del base | Inserción de hechos de rango uno | según implementación | Repositorios de investigación |
 
 La comparación cuantitativa de rendimiento con alternativas no está disponible en la información proporcionada; el único punto de referencia medido es el propio modelo base, con 0/500 de recall y perplejidad 6,71.
@@ -92,7 +92,7 @@ La comparación cuantitativa de rendimiento con alternativas no está disponible
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ApolloRaines/Pythia-1.4B-DNP-500-Facts
+- Modelo en Hugging Face: https://huggingface.co/ApolloRaines/Pythia-1.4B-DNP-500-Facts
 - Modelo base: https://huggingface.co/EleutherAI/pythia-1.4b
 - Corpus de hechos y manifiesto de reconstrucción: incluidos en el repositorio del modelo (`novel_facts.json`, `rebuild_manifest.json`)
 - Paper, blog, repositorio de código o demo adicionales: no disponibles en la información proporcionada

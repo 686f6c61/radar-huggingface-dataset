@@ -71,8 +71,8 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| bet-brief-drafter-llama-3.1-8b-qlora | 8B (base) + LoRA | No disponible | Apache 2.0 | HuggingFace (0 descargas) |
-| meta-llama/Llama-3.1-8B-Instruct | 8B | No disponible en esta ficha | Llama 3.1 Community License | HuggingFace |
+| bet-brief-drafter-llama-3.1-8b-qlora | 8B (base) + LoRA | No disponible | Apache 2.0 | Hugging Face (0 descargas) |
+| meta-llama/Llama-3.1-8B-Instruct | 8B | No disponible en esta ficha | Llama 3.1 Community License | Hugging Face |
 | Alternativas de dominio | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -88,6 +88,6 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/erangamapa/bet-brief-drafter-llama-3.1-8b-qlora
+- Hugging Face: https://huggingface.co/erangamapa/bet-brief-drafter-llama-3.1-8b-qlora
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - No se han encontrado en la busqueda web papers, blogs, repositorios o demos adicionales asociados a este adaptador.

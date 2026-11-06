@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `cyttic/exp39-ctc-human10uninoaug-hhdgeom-byp-25k-seed44` es un checkpoint publicado en HuggingFace por el usuario cyttic, con un total de 87.279.756 parámetros en formato safetensors y un tamaño de repositorio de 0,3 GB. El identificador del modelo sugiere un sistema basado en CTC (Connectionist Temporal Classification) entrenado sobre datos humanos, con variantes de aumento de datos y geometría, y un presupuesto de entrenamiento de 25.000 pasos con semilla 44. La model card del autor es una plantilla sin rellenar, por lo que no se documentan ni la arquitectura, ni los datos de entrenamiento, ni el propósito declarado.
+El modelo `cyttic/exp39-ctc-human10uninoaug-hhdgeom-byp-25k-seed44` es un checkpoint publicado en Hugging Face por el usuario cyttic, con un total de 87.279.756 parámetros en formato safetensors y un tamaño de repositorio de 0,3 GB. El identificador del modelo sugiere un sistema basado en CTC (Connectionist Temporal Classification) entrenado sobre datos humanos, con variantes de aumento de datos y geometría, y un presupuesto de entrenamiento de 25.000 pasos con semilla 44. La model card del autor es una plantilla sin rellenar, por lo que no se documentan ni la arquitectura, ni los datos de entrenamiento, ni el propósito declarado.
 
-La relevancia de este checkpoint es limitada en el estado actual: no tiene descargas ni likes, carece de pipeline declarado y no incluye información sobre idiomas soportados ni evaluación. La etiqueta `arxiv:1910.09700` corresponde al artículo de Lacoste et al. sobre el cálculo del impacto ambiental del aprendizaje automático, citado en la plantilla estándar de HuggingFace, y no a un paper propio del modelo. Se trata, por tanto, de un artefacto de investigación sin documentación pública que permita evaluar su calidad o su idoneidad para producción.
+La relevancia de este checkpoint es limitada en el estado actual: no tiene descargas ni likes, carece de pipeline declarado y no incluye información sobre idiomas soportados ni evaluación. La etiqueta `arxiv:1910.09700` corresponde al artículo de Lacoste et al. sobre el cálculo del impacto ambiental del aprendizaje automático, citado en la plantilla estándar de Hugging Face, y no a un paper propio del modelo. Se trata, por tanto, de un artefacto de investigación sin documentación pública que permita evaluar su calidad o su idoneidad para producción.
 
 El nombre y el tamaño (≈87 M de parámetros) apuntan a un modelo acústico o de reconocimiento de secuencias de tamaño medio, probablemente entrenado para una tarea de etiquetado a nivel de fotograma con CTC, pero esta interpretación es una inferencia a partir del identificador y no un dato confirmado por el autor.
 
@@ -42,7 +42,7 @@ El identificador del repositorio contiene indicios que no están confirmados por
 No es posible proponer casos de uso concretos y realistas sin información sobre la tarea para la que el modelo fue entrenado. La ausencia de pipeline declarado, de idiomas soportados y de cualquier evaluación impide determinar si el modelo es adecuado para reconocimiento de voz, etiquetado de secuencias, clasificación u otra tarea. Cualquier aplicación práctica requeriría, en primer lugar, inspeccionar los pesos y la configuración del repositorio para reconstruir la arquitectura y el preprocesamiento esperado.
 
 - Investigación reproducible: el checkpoint puede servir como artefacto de partida para reproducir un experimento con semilla fija (seed44) y presupuesto de 25.000 pasos, siempre que se localice el código de entrenamiento asociado.
-- Auditoría de artefactos: útil como caso de estudio sobre checkpoints publicados sin model card completa y sobre las prácticas de documentación en HuggingFace.
+- Auditoría de artefactos: útil como caso de estudio sobre checkpoints publicados sin model card completa y sobre las prácticas de documentación en Hugging Face.
 - No se recomienda su uso en producción, atención al cliente, generación de código, pipelines de CI/CD ni ninguna otra aplicación concreta sin una evaluación previa de la tarea y del rendimiento.
 
 ## Benchmarks y rendimiento
@@ -73,6 +73,6 @@ No disponible. No se conocen modelos comparables de la misma categoría porque l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cyttic/exp39-ctc-human10uninoaug-hhdgeom-byp-25k-seed44
+- Hugging Face: https://huggingface.co/cyttic/exp39-ctc-human10uninoaug-hhdgeom-byp-25k-seed44
 - Paper citado en la etiqueta (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental ML: https://mlco2.github.io/impact

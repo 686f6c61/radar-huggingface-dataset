@@ -76,10 +76,10 @@ No se han publicado en la información disponible otros resultados de benchmarks
 
 | Modelo | Relación | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| jrubiosainz/microduck-game-sprinter | Este modelo | MLP 61 → 512 → 256 → 128 → 14, ELU | Apache-2.0 | HuggingFace, 27 descargas |
-| HannesVonEssen/microduck-running | Modelo base (fine-tune) | MLP 61 → 512 → 256 → 128 → 14, ELU (iteración 12.195) | Apache-2.0 | HuggingFace |
-| jrubiosainz/microduck-game-roller | Mismo autor, tarea distinta | Ajuste fino con PPO del proyecto MICRODUCK GAME | El repositorio base no declara licencia propia | HuggingFace |
-| pollen-robotics/microduck-sprint-2m-reference | Referencia de la organización para la misma prueba | no disponible | no disponible | HuggingFace |
+| jrubiosainz/microduck-game-sprinter | Este modelo | MLP 61 → 512 → 256 → 128 → 14, ELU | Apache-2.0 | Hugging Face, 27 descargas |
+| HannesVonEssen/microduck-running | Modelo base (fine-tune) | MLP 61 → 512 → 256 → 128 → 14, ELU (iteración 12.195) | Apache-2.0 | Hugging Face |
+| jrubiosainz/microduck-game-roller | Mismo autor, tarea distinta | Ajuste fino con PPO del proyecto MICRODUCK GAME | El repositorio base no declara licencia propia | Hugging Face |
+| pollen-robotics/microduck-sprint-2m-reference | Referencia de la organización para la misma prueba | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparables (tiempos de carrera o tasas de terminación) de los modelos alternativos en la información proporcionada, por lo que la comparación se limita a relación, arquitectura, licencia y disponibilidad.
 
@@ -98,7 +98,7 @@ No se dispone de datos de rendimiento comparables (tiempos de carrera o tasas de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jrubiosainz/microduck-game-sprinter
+- Modelo en Hugging Face: https://huggingface.co/jrubiosainz/microduck-game-sprinter
 - Modelo base: https://huggingface.co/HannesVonEssen/microduck-running
 - Microduck Arena (espacio de evaluación): https://huggingface.co/spaces/pollen-robotics/microduck-arena
 - Repositorio de entrenamiento Vottivott/microduck-playground (commit 828d950): https://github.com/Vottivott/microduck-playground/commit/828d950134e29a8d04cbb51720a22c8729047fb7

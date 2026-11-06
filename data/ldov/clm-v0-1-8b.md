@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CLM-v0.1-8B es un modelo de ranking (pipeline `text-ranking`) publicado en HuggingFace por el usuario `ldov`, si bien el desarrollo corresponde al proyecto Contrastive-LM. No es un modelo generativo: se trata de un "System One model" que puntua candidatos y responde preguntas tipadas sobre un estado (`state`) dado, en lugar de producir texto libre. Su arquitectura consiste en dos cabezas de proyeccion pequenas (una cabeza de estado y otra de accion) montadas sobre un encoder Qwen3-8B congelado, entrenadas con una perdida contrastiva bidireccional InfoNCE.
+CLM-v0.1-8B es un modelo de ranking (pipeline `text-ranking`) publicado en Hugging Face por el usuario `ldov`, si bien el desarrollo corresponde al proyecto Contrastive-LM. No es un modelo generativo: se trata de un "System One model" que puntua candidatos y responde preguntas tipadas sobre un estado (`state`) dado, en lugar de producir texto libre. Su arquitectura consiste en dos cabezas de proyeccion pequenas (una cabeza de estado y otra de accion) montadas sobre un encoder Qwen3-8B congelado, entrenadas con una perdida contrastiva bidireccional InfoNCE.
 
 El modelo resuelve el problema de la toma de decisiones rapida y generalizable en agentes: dado un estado (por ejemplo, el mensaje de un cliente o la observacion de un entorno de computer-use), CLM puntua acciones, nombres de herramientas o soluciones candidatas y devuelve distribuciones de probabilidad sobre las opciones proporcionadas. El autor reporta que, en modo zero-shot, iguala a Jev en tareas de computer-use, gaming y tool-calling con hasta 9 veces menos latencia, y que con las cabezas ajustadas alcanza resultados SOTA como verificador en DeepSWE (81,6 %) y Terminal-Bench 2.1 (87,6 %).
 
@@ -81,9 +81,9 @@ No se han publicado resultados de benchmarks de proposito general (MMLU, HumanEv
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CLM-v0.1-8B | 8B (encoder) + cabezas | no disponible (ejemplo con 2048) | DeepSWE 81,6 %; Terminal-Bench 2.1 87,6 % (cabezas ajustadas); zero-shot a la par de Jev | Apache 2.0 | HuggingFace y GitHub del proyecto |
+| CLM-v0.1-8B | 8B (encoder) + cabezas | no disponible (ejemplo con 2048) | DeepSWE 81,6 %; Terminal-Bench 2.1 87,6 % (cabezas ajustadas); zero-shot a la par de Jev | Apache 2.0 | Hugging Face y GitHub del proyecto |
 | Jev | no disponible | no disponible | Referencia de comparacion: CLM iguala en zero-shot y es 4-13x mas rapido | no disponible | no disponible |
-| Qwen3-8B | 8B | 32k nativo (no confirmado en este uso) | Modelo generativo de proposito general; no comparable en tareas de ranking | Apache 2.0 | HuggingFace |
+| Qwen3-8B | 8B | 32k nativo (no confirmado en este uso) | Modelo generativo de proposito general; no comparable en tareas de ranking | Apache 2.0 | Hugging Face |
 | CLM-35B | 35B (multimodal) | no disponible | Anunciado para octubre; sin datos publicos | no disponible | Anunciado, no publicado |
 
 Los datos disponibles sobre Jev se limitan a las comparaciones cualitativas y de latencia ofrecidas por el autor, sin especificaciones tecnicas publicadas en la informacion proporcionada. No se dispone de alternativas directas de ranking contrastivo con las que establecer una comparacion cuantitativa completa.
@@ -98,12 +98,12 @@ Los datos disponibles sobre Jev se limitan a las comparaciones cualitativas y de
 - Riesgo de alucinacion en el sentido de sobreconfianza: al no generar texto, el riesgo se traslada a la calibracion de las probabilidades, que dependen del conjunto de opciones presentado.
 - Sesgos: no se documentan analisis de sesgo en la informacion disponible, pese al entrenamiento con datos sinteticos y trayectorias agenticas que pueden heredar sesgos del corpus original.
 - Licencia Apache 2.0, permisiva para uso comercial tanto en las cabezas como en el encoder base; conviene verificar igualmente las condiciones del encoder Qwen3-8B por separado.
-- La ficha de HuggingFace consultada figura a nombre del usuario `ldov`, mientras que la model card y el repositorio de codigo corresponden a la organizacion Contrastive-LM; conviene confirmar la procedencia del artefacto antes de desplegarlo.
+- La ficha de Hugging Face consultada figura a nombre del usuario `ldov`, mientras que la model card y el repositorio de codigo corresponden a la organizacion Contrastive-LM; conviene confirmar la procedencia del artefacto antes de desplegarlo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ldov/CLM-v0.1-8B
-- Modelo en HuggingFace (organizacion Contrastive-LM): https://huggingface.co/Contrastive-LM/CLM-v0.1-8B
+- Modelo en Hugging Face: https://huggingface.co/ldov/CLM-v0.1-8B
+- Modelo en Hugging Face (organizacion Contrastive-LM): https://huggingface.co/Contrastive-LM/CLM-v0.1-8B
 - Repositorio de codigo: https://github.com/Contrastive-LM/CLM
 - Blog del proyecto: https://contrastive-lm.notion.site
 - Guia de ajuste fino: https://github.com/Contrastive-LM/CLM/blob/main/docs/FINETUNING.md

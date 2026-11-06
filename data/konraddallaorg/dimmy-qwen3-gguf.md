@@ -89,7 +89,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/KonradDallaOrg/dimmy-qwen3-gguf
+- Repositorio Hugging Face: https://huggingface.co/KonradDallaOrg/dimmy-qwen3-gguf
 - Upstream Qwen3-4B-Instruct-2507 GGUF (Unsloth): https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507-GGUF
 - Upstream Qwen3.5-2B GGUF (Unsloth): https://huggingface.co/unsloth/Qwen3.5-2B-GGUF
 - Upstream Qwen3.5-4B GGUF (Unsloth): https://huggingface.co/unsloth/Qwen3.5-4B-GGUF

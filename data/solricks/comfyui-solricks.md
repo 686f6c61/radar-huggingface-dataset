@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ComfyUI-SOLRICKS es un conjunto de nodos personalizados para ComfyUI publicado por SOLRICKS, una empresa con sede en Estambul dedicada a produccion de contenido cinematografico, modelos de IA a medida, VFX y soluciones de IA empresarial. El repositorio de HuggingFace funciona como pagina de presentacion y recursos: el codigo fuente principal, las instrucciones de instalacion y las notas de version residen en GitHub, mientras que en HuggingFace se alojan los pesos del modelo ligero que utiliza el nodo.
+ComfyUI-SOLRICKS es un conjunto de nodos personalizados para ComfyUI publicado por SOLRICKS, una empresa con sede en Estambul dedicada a produccion de contenido cinematografico, modelos de IA a medida, VFX y soluciones de IA empresarial. El repositorio de Hugging Face funciona como pagina de presentacion y recursos: el codigo fuente principal, las instrucciones de instalacion y las notas de version residen en GitHub, mientras que en Hugging Face se alojan los pesos del modelo ligero que utiliza el nodo.
 
 El paquete incluye dos ficheros de pesos en formato safetensors, `DLAANet.safetensors` y `DLAATexture.safetensors`, pensados para usarse exclusivamente con la suite de nodos ComfyUI-SOLRICKS. La model card describe su salida como "refinamiento visual" (visual refinement), e incluye un video de previsualizacion del resultado. La integracion se realiza a traves de ComfyUI Manager buscando "SOLRICKS".
 
@@ -74,7 +74,7 @@ No disponible. La informacion proporcionada no identifica modelos comparables ni
 
 ## Limitaciones y advertencias
 
-- El repositorio no contiene codigo: el propio autor indica que la fuente principal esta en GitHub, por lo que la pagina de HuggingFace es solo una vision general del proyecto.
+- El repositorio no contiene codigo: el propio autor indica que la fuente principal esta en GitHub, por lo que la pagina de Hugging Face es solo una vision general del proyecto.
 - El tamano del repositorio figura como 0.0 GB, lo que no permite confirmar que los pesos `DLAANet.safetensors` y `DLAATexture.safetensors` esten efectivamente alojados y descargables en este repositorio.
 - No hay documentacion de arquitectura, datos de entrenamiento, hiperparametros ni proceso de evaluacion.
 - No se declaran idiomas soportados; al no ser un modelo de lenguaje, la ausencia de esta informacion es esperable, pero tambien impide cualquier uso en tareas de NLP.
@@ -86,7 +86,7 @@ No disponible. La informacion proporcionada no identifica modelos comparables ni
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SOLRICKS/comfyui-solricks
+- Hugging Face: https://huggingface.co/SOLRICKS/comfyui-solricks
 - GitHub (repositorio principal): https://github.com/SOLRICKS/comfyui-solricks
 - Dataset referenciado: https://huggingface.co/datasets/SOLRICKS/DLAA-Trainer
 - Video de previsualizacion: https://github.com/user-attachments/assets/ddf7c74b-289d-48a7-ab43-47558aa9deab

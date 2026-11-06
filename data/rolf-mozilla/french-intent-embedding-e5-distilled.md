@@ -72,10 +72,10 @@ El split de test contiene 1.378 consultas, con un margen de aproximadamente ±2,
 
 | Modelo | Tipo | Tamaño | Contexto | Test acc | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este modelo | Encoder BERT + cabeza lineal, ONNX int8 | 28,3 MB | 64 tokens (intención) | 0,748 | MIT | HuggingFace |
-| Mozilla/query-intent-detection-en-fr | Clasificador separado | 14 MB | No disponible | 0,713 | No disponible | HuggingFace |
-| multilingual-e5-small (ajuste fino completo) | Encoder multilingüe | 118 MB | No disponible | 0,713 | No disponible | HuggingFace |
-| all-MiniLM-L6-v2 (ajuste fino completo) | Encoder | 23 MB | No disponible | 0,706 | No disponible | HuggingFace |
+| Este modelo | Encoder BERT + cabeza lineal, ONNX int8 | 28,3 MB | 64 tokens (intención) | 0,748 | MIT | Hugging Face |
+| Mozilla/query-intent-detection-en-fr | Clasificador separado | 14 MB | No disponible | 0,713 | No disponible | Hugging Face |
+| multilingual-e5-small (ajuste fino completo) | Encoder multilingüe | 118 MB | No disponible | 0,713 | No disponible | Hugging Face |
+| all-MiniLM-L6-v2 (ajuste fino completo) | Encoder | 23 MB | No disponible | 0,706 | No disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -90,7 +90,7 @@ El split de test contiene 1.378 consultas, con un margen de aproximadamente ±2,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rolf-mozilla/french-intent-embedding-e5-distilled
+- Modelo en Hugging Face: https://huggingface.co/rolf-mozilla/french-intent-embedding-e5-distilled
 - Modelo base de embeddings: https://huggingface.co/rolf-mozilla/french-embedding-e5-distilled
 - Dataset de entrenamiento: Mozilla/query-intent-detection-dataset-french (referenciado en la model card)
 - Modelo comparable citado: Mozilla/query-intent-detection-en-fr (referenciado en la model card)

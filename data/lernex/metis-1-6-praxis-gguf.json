@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "Lernex/Metis-1.6-Praxis-GGUF",
+  "slug": "lernex-metis-1-6-praxis-gguf",
+  "author": "Lernex",
+  "url": "https://huggingface.co/Lernex/Metis-1.6-Praxis-GGUF",
+  "created_at": "2026-11-01T19:27:59.000Z",
+  "updated_at": "2026-11-03T15:50:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "metis",
+    "llama.cpp",
+    "reasoning",
+    "mixture-of-experts",
+    "mamba",
+    "text-generation",
+    "base_model:Lernex/Metis-1.6-Praxis",
+    "base_model:quantized:Lernex/Metis-1.6-Praxis",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 284,
+  "trending_score": 0,
+  "parameters": 2943141641,
+  "parameters_human": "2.94B",
+  "storage_bytes": 17920268128,
+  "storage_human": "17.9 GB",
+  "base_model": "Lernex/Metis-1.6-Praxis",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lernex/Metis-1.6-Praxis-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Lernex/Metis-1.6-Praxis-GGUF",
+      "snippet": "Text Generation model with 3B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "README.md · Lernex/Metis-1.6-Praxis-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/Lernex/Metis-1.6-Praxis-GGUF/blob/main/README.md",
+      "snippet": "Metis-1.6 Praxis GGUF GGUF files of Lernex/Metis-1.6-Praxis for llama.cpp and the apps built on it. Every quant is made with an importance matrix and a per-tensor recipe that keeps the parts of this architecture that are sensitive to rounding at higher precision, so even Q4_K_M stays within 2% of BF16 perplexity, in a 2 GB file."
+    }
+  ]
+}

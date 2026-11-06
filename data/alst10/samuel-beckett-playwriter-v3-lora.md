@@ -4,7 +4,7 @@
 
 El modelo `alst10/samuel-beckett-playwriter-v3-lora` es un adaptador LoRA (Low-Rank Adaptation) desarrollado por alst10, diseñado para especializar el modelo base `mlabonne/Meta-Llama-3.1-8B-Instruct-abliterated` en la generación de textos dramáticos al estilo de Samuel Beckett. Se trata de un fine-tuning ligero que no modifica la arquitectura original del transformer, sino que añade un conjunto reducido de parámetros entrenables para ajustar el comportamiento del modelo hacia un registro literario concreto.
 
-El adaptador se ha entrenado con la librería Unsloth, que acelera el proceso de fine-tuning, y utiliza el framework TRL de HuggingFace. Al estar basado en Llama-3.1-8B-Instruct, hereda las capacidades generales de generación de texto, razonamiento y comprensión del lenguaje del modelo base, pero con un sesgo estilístico hacia la escritura teatral beckettiana. Su tamaño de repositorio es de 0.2 GB, lo que confirma que se trata de un adaptador compacto y fácil de integrar en pipelines existentes.
+El adaptador se ha entrenado con la librería Unsloth, que acelera el proceso de fine-tuning, y utiliza el framework TRL de Hugging Face. Al estar basado en Llama-3.1-8B-Instruct, hereda las capacidades generales de generación de texto, razonamiento y comprensión del lenguaje del modelo base, pero con un sesgo estilístico hacia la escritura teatral beckettiana. Su tamaño de repositorio es de 0.2 GB, lo que confirma que se trata de un adaptador compacto y fácil de integrar en pipelines existentes.
 
 La relevancia de este modelo radica en su especialización: permite a desarrolladores e investigadores generar obras de teatro, diálogos o monólogos con el tono existencialista, minimalista y absurdo característico de Beckett, sin necesidad de entrenar un modelo completo desde cero. Su licencia Apache 2.0 facilita su uso comercial y su integración en aplicaciones de escritura creativa asistida.
 
@@ -25,7 +25,7 @@ La relevancia de este modelo radica en su especialización: permite a desarrolla
 
 El adaptador se basa en la arquitectura transformer decoder-only de Llama-3.1-8B-Instruct, que emplea atención por ventanas deslizantes y normalización RMSNorm. El modelo base ha sido sometido a un proceso de "abliteración" (abliteration), que elimina parcialmente las capas de alineación y censura del modelo original, lo que permite una generación más libre y sin restricciones de contenido. Sobre esta base, el adaptador LoRA introduce matrices de bajo rango en las capas de atención y feed-forward, ajustando únicamente una fracción de los parámetros totales.
 
-El entrenamiento se ha realizado con la librería Unsloth, que optimiza el uso de memoria y acelera el fine-tuning mediante kernels personalizados y gestión eficiente de la VRAM. Se ha utilizado el framework TRL (Transformers Reinforcement Learning) de HuggingFace, aunque no se especifica si se empleó RLHF, DPO u otro método de alineación. Tampoco se detalla la composición del dataset de entrenamiento ni el número de tokens utilizados. La ausencia de estos datos impide evaluar la calidad del ajuste más allá de su propósito declarado.
+El entrenamiento se ha realizado con la librería Unsloth, que optimiza el uso de memoria y acelera el fine-tuning mediante kernels personalizados y gestión eficiente de la VRAM. Se ha utilizado el framework TRL (Transformers Reinforcement Learning) de Hugging Face, aunque no se especifica si se empleó RLHF, DPO u otro método de alineación. Tampoco se detalla la composición del dataset de entrenamiento ni el número de tokens utilizados. La ausencia de estos datos impide evaluar la calidad del ajuste más allá de su propósito declarado.
 
 ## Capacidades
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 
 - VRAM estimada: al ser un adaptador LoRA, se puede cargar sobre el modelo base Llama-3.1-8B-Instruct. En FP16, el modelo base requiere aproximadamente 16 GB de VRAM; con cuantizacion (por ejemplo, 4 bits) puede reducirse a unos 6-8 GB. El adaptador anade un overhead minimo (menos de 1 GB).
 - GPU recomendadas: para inferencia en FP16, una GPU con 16 GB o mas (RTX 4090, A100, H100). Con cuantizacion 4 bits, puede ejecutarse en GPUs consumer de 8 GB (RTX 3060, RTX 4060, etc.).
-- Despliegue: compatible con librerias de HuggingFace Transformers, vLLM, TGI (Text Generation Inference) y llama.cpp (si se convierte a GGUF). Tambien puede integrarse en Ollama si se empaqueta adecuadamente.
+- Despliegue: compatible con librerias de Hugging Face Transformers, vLLM, TGI (Text Generation Inference) y llama.cpp (si se convierte a GGUF). Tambien puede integrarse en Ollama si se empaqueta adecuadamente.
 - Latencia y throughput: no se han publicado mediciones. Como referencia, el modelo base Llama-3.1-8B en una RTX 4090 genera aproximadamente 50-80 tokens por segundo en FP16, y el adaptador no deberia alterar significativamente este rendimiento.
 
 ## Comparativa con modelos similares
@@ -71,6 +71,6 @@ No se dispone de informacion sobre adaptadores LoRA comparables especializados e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/alst10/samuel-beckett-playwriter-v3-lora
+- Repositorio Hugging Face: https://huggingface.co/alst10/samuel-beckett-playwriter-v3-lora
 - Modelo base: https://huggingface.co/mlabonne/Meta-Llama-3.1-8B-Instruct-abliterated
 - Libreria Unsloth: https://github.com/unslothai/unsloth

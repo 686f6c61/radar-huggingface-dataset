@@ -114,7 +114,7 @@ La comparativa se limita a variantes de cuantizacion del mismo modelo base; no s
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/webmp3/Sakura-EmbeddingGemma-2-AutoRound-GGUF
+- Hugging Face: https://huggingface.co/webmp3/Sakura-EmbeddingGemma-2-AutoRound-GGUF
 - Modelo base: https://huggingface.co/google/embeddinggemma-2
 - Release complementaria en Safetensors (W4A16 multimodal): https://huggingface.co/webmp3/Sakura-EmbeddingGemma-2-AutoRound
 - PR de llama.cpp con soporte de la arquitectura: PR #30054 (`model: support embeddinggemma2 (text+vision+audio)`), commit `4fbc76d` o posterior

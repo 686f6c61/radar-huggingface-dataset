@@ -78,7 +78,7 @@ La model card unicamente identifica MiniCPM-o 4.5 / Omni-Flow como base de la qu
 - Idiomas: solo se declaran ingles y chino; no hay evidencia de soporte para castellano ni para otras lenguas, lo que limita su uso en produccion en mercados hispanohablantes.
 - Benchmarks: la model card no publica cifras numericas; las evaluaciones se remiten a figuras del informe tecnico, de modo que la comparacion objetiva con alternativas exige consultar el paper.
 - Dependencia de codigo personalizado: el repositorio usa `custom-code` de Transformers, lo que complica la actualizacion de versiones y la integracion con servidores de inferencia estandar.
-- Delegacion condicionada: la emision y el consumo de peticiones `<delegate>` solo resultan utiles con el runtime Realtime-Venus-Harness, alojado fuera del repositorio de HuggingFace; sin el, la funcionalidad queda inoperativa.
+- Delegacion condicionada: la emision y el consumo de peticiones `<delegate>` solo resultan utiles con el runtime Realtime-Venus-Harness, alojado fuera del repositorio de Hugging Face; sin el, la funcionalidad queda inoperativa.
 - Riesgo de alucinacion: en comprension de video largo y en descripcion proactiva de escenas, la recuperacion de evidencia de la memoria y la iniciativa del modelo pueden producir afirmaciones sobre eventos no observados. La memoria sin entrenamiento no garantiza exhaustividad de lo archivado.
 - Sesgos: no se documentan analisis de sesgos ni composicion del dataset de entrenamiento, por lo que se desconocen sesgos de genero, raza, acento o idioma heredados de los encoders SigLIP2 y Whisper-Medium y del backbone Qwen3-8B.
 - Contexto: 40.960 tokens es un limite finito; la gestion de video largo depende del mecanismo de memoria, no de ampliar la ventana.
@@ -89,7 +89,7 @@ La model card unicamente identifica MiniCPM-o 4.5 / Omni-Flow como base de la qu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/inclusionAI/Realtime-Venus
+- Hugging Face: https://huggingface.co/inclusionAI/Realtime-Venus
 - ModelScope: https://www.modelscope.cn/models/inclusionAI/Realtime-Venus
 - Informe tecnico (arXiv): https://arxiv.org/abs/2609.13814
 - Version HTML del paper: https://arxiv.org/html/2609.13814v1

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hrobinson51/generation` es un repositorio de HuggingFace publicado por el usuario hrobinson51 que contiene una implementacion reducida de una arquitectura BEiT (Bidirectional Encoder representation from Image Transformers) orientada a tareas de generacion. No se trata de un modelo entrenado ni de un lanzamiento con resultados verificados: la propia model card lo describe explicitamente como un punto de partida reproducible ("tiny variant"), con un checkpoint de inicializacion valido para pruebas de humo y sin ninguna puntuacion de benchmark declarada.
+`hrobinson51/generation` es un repositorio de Hugging Face publicado por el usuario hrobinson51 que contiene una implementacion reducida de una arquitectura BEiT (Bidirectional Encoder representation from Image Transformers) orientada a tareas de generacion. No se trata de un modelo entrenado ni de un lanzamiento con resultados verificados: la propia model card lo describe explicitamente como un punto de partida reproducible ("tiny variant"), con un checkpoint de inicializacion valido para pruebas de humo y sin ninguna puntuacion de benchmark declarada.
 
 El peso incluido (`model.safetensors`) contiene 24.832 parametros, una cifra que lo situa muy por debajo de cualquier modelo utilizable en produccion y que confirma su naturaleza de andamiaje experimental. La arquitectura declarada incorpora varias desviaciones respecto al BEiT canonico: atencion dilatada, fusion de bajo rango, activacion ReLU y normalizacion GroupNorm, ademas de una receta de entrenamiento por defecto basada en SGD con planificador OneCycle.
 
@@ -66,7 +66,7 @@ No es posible establecer una comparativa tecnica rigurosa porque el repositorio 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hrobinson51/generation | 24.832 | no disponible | no disponible (sin benchmarks declarados) | MIT | HuggingFace, checkpoint de inicializacion |
+| hrobinson51/generation | 24.832 | no disponible | no disponible (sin benchmarks declarados) | MIT | Hugging Face, checkpoint de inicializacion |
 | BEiT oficial (base/large) como referencia de categoria | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
 | Alternativa equivalente de misma escala entrenada | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -85,5 +85,5 @@ No es posible establecer una comparativa tecnica rigurosa porque el repositorio 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hrobinson51/generation
+- Modelo en Hugging Face: https://huggingface.co/hrobinson51/generation
 - La busqueda web realizada no devolvio enlaces relevantes al modelo: los unicos resultados fueron paginas genericas de motores de busqueda (google.fr, google.com, images.google.fr, google.gp, news.google.com), sin relacion con este repositorio. No se dispone de paper, blog, repositorio de codigo ni demo asociados.

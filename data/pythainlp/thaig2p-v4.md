@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Thai G2P v4 es un modelo de conversion grafema-a-fonema (grapheme-to-phoneme, G2P) para tailandes, es decir, transforma texto escrito en tailandes a su representacion fonetica en alfabeto fonetico internacional (IPA). Lo publica la organizacion PyThaiNLP, el proyecto de referencia para el procesamiento del lenguaje natural en tailandes, y se distribuye bajo licencia Apache 2.0 desde su repositorio de HuggingFace.
+Thai G2P v4 es un modelo de conversion grafema-a-fonema (grapheme-to-phoneme, G2P) para tailandes, es decir, transforma texto escrito en tailandes a su representacion fonetica en alfabeto fonetico internacional (IPA). Lo publica la organizacion PyThaiNLP, el proyecto de referencia para el procesamiento del lenguaje natural en tailandes, y se distribuye bajo licencia Apache 2.0 desde su repositorio de Hugging Face.
 
 El modelo se ha entrenado sobre el dataset `pythainlp/thai-g2p-v4-dataset`, tambien publicado por PyThaiNLP. La unica metrica declarada por el autor es una exactitud de coincidencia exacta (exact-match) de 0,8829 en el conjunto de validacion. El repositorio ocupa aproximadamente 0,5 GB y el unico artefacto de pesos indicado es un grafo en formato ONNX, lo que lo orienta a inferencia ligera en CPU o GPU mediante ONNX Runtime.
 
@@ -24,8 +24,8 @@ Su relevancia es practica: el G2P es un componente auxiliar imprescindible en tu
 | Exactitud declarada (validacion, exact-match) | 0,8829 |
 | Tamano del repositorio | aproximadamente 0,5 GB |
 | Autor | pythainlp |
-| Fecha de creacion en HuggingFace | 2026-09-23 |
-| Ultima actualizacion en HuggingFace | 2026-09-23 |
+| Fecha de creacion en Hugging Face | 2026-09-23 |
+| Ultima actualizacion en Hugging Face | 2026-09-23 |
 
 ## Arquitectura y entrenamiento
 
@@ -98,11 +98,11 @@ No se ha encontrado en la busqueda ningun benchmark que enfrente directamente `t
 - Trazabilidad limitada: el repositorio registra 0 descargas y 0 "likes", sin validacion independiente por parte de la comunidad ni terceros que hayan replicado la cifra de exactitud.
 - Licencia: Apache 2.0 permite uso comercial, modificacion y redistribucion, siempre que se conserve el aviso de copyright y la nota de licencia, y que se indiquen los cambios realizados. No impone restricciones de uso adicionales, pero tampoco ofrece garantias.
 - Dependencia tecnica: al distribuirse en ONNX, requiere un runtime compatible; no se documentan versiones de opset, requisitos de entorno ni pasos de reproduccion de la metrica.
-- Los metadatos de HuggingFace indican fechas de creacion y actualizacion en septiembre de 2026, posteriores a la fecha habitual de publicacion; conviene verificar la vigencia real del repositorio antes de integrarlo.
+- Los metadatos de Hugging Face indican fechas de creacion y actualizacion en septiembre de 2026, posteriores a la fecha habitual de publicacion; conviene verificar la vigencia real del repositorio antes de integrarlo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pythainlp/thaig2p-v4
+- Modelo en Hugging Face: https://huggingface.co/pythainlp/thaig2p-v4
 - Dataset de entrenamiento: https://huggingface.co/datasets/pythainlp/thai-g2p-v4-dataset
-- Organizacion PyThaiNLP en HuggingFace: https://huggingface.co/pythainlp
+- Organizacion PyThaiNLP en Hugging Face: https://huggingface.co/pythainlp
 - La busqueda web realizada no ha devuelto ningun enlace relevante sobre este modelo: los resultados obtenidos corresponden a paginas de ayuda de Google Translate y a contenidos no relacionados (bartleby.com), por lo que no se incluyen. No se han encontrado paper, blog tecnico ni repositorio de codigo asociados en la informacion disponible.

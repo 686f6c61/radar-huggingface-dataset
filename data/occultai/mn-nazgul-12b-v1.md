@@ -77,6 +77,6 @@ No se dispone de datos de rendimiento comparativo. La comparativa se basa en la 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OccultAI/MN-Nazgul-12B-v1
+- Hugging Face: https://huggingface.co/OccultAI/MN-Nazgul-12B-v1
 - Paper del metodo della: https://arxiv.org/abs/2406.11617
 - Repositorio de mergekit: https://github.com/cg123/mergekit

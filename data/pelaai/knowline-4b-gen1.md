@@ -17,7 +17,7 @@ Es relevante ahora porque propone una vía distinta a la de los modelos generati
 | Parametros activos | no disponible (la informacion proporcionada no indica que sea un modelo MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | Pesos publicados en bf16; SGLang los carga en FP8. No se documentan otras cuantizaciones (GGUF, AWQ, GPTQ) |
-| Idiomas soportados | Inglés, chino simplificado y chino tradicional (la ficha de HuggingFace lista en y zh) |
+| Idiomas soportados | Inglés, chino simplificado y chino tradicional (la ficha de Hugging Face lista en y zh) |
 | Licencia | Apache-2.0 (pesos) |
 | Formato de pesos | safetensors (bf16) |
 | Modelo base | Qwen/Qwen3.5-4B (Apache-2.0) |
@@ -118,12 +118,12 @@ Resultado adicional: en un round robin de enfrentamientos individuales con arnes
 
 | Modelo | Tamano | Contexto | DI 0.3 publico | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| KnowLine-4B-Gen1 | 4B | no disponible | 60,47 | Apache-2.0 | Pesos abiertos en HuggingFace |
+| KnowLine-4B-Gen1 | 4B | no disponible | 60,47 | Apache-2.0 | Pesos abiertos en Hugging Face |
 | Clef | 27B | no disponible | 61,71 | no disponible | Puntuado en el tablero del Decision Index |
 | Jev 1.13 | no aplica (API) | no disponible | 57,96 | no disponible | Solo API |
 | ezjev 4B s2 | 4B | no disponible | 50,82 | no disponible | Puntuado en el tablero |
 | Nox 4B | 4B | no disponible | 44,21 | no disponible | Puntuado en el tablero |
-| KnowLine-4B-Gen4 | 4B | no disponible | 64,90 | Apache-2.0 | Pesos abiertos en HuggingFace |
+| KnowLine-4B-Gen4 | 4B | no disponible | 64,90 | Apache-2.0 | Pesos abiertos en Hugging Face |
 
 Dentro de la propia familia, la model card sitúa a Gen4 (64,90) y Gen3 (63,11) por encima de esta primera generación en el conjunto público del Decision Index 0.3, y ambas tambien por encima en las evaluaciones retenidas, en C-Eval, en Open-Jev y en prompt-injection. La comparación con Clef debe matizarse porque este ultimo tiene 27B de parámetros y su puntuación completa del Decision Index (53,08) es inferior a la de KnowLine en el conjunto público. No hay datos de contexto, cuantizaciones ni licencia para la mayoria de los modelos comparables, ya que la informacion disponible solo incluye sus puntuaciones en el tablero.
 
@@ -145,7 +145,7 @@ Dentro de la propia familia, la model card sitúa a Gen4 (64,90) y Gen3 (63,11) 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PelaAI/KnowLine-4B-Gen1
+- Modelo en Hugging Face: https://huggingface.co/PelaAI/KnowLine-4B-Gen1
 - Guia de inferencia (INFERENCE.md): https://huggingface.co/PelaAI/KnowLine-4B-Gen1/blob/main/INFERENCE.md
 - README en chino (README.zh.md): https://huggingface.co/PelaAI/KnowLine-4B-Gen1/blob/main/README.zh.md
 - Version posterior KnowLine-4B-Gen2: https://huggingface.co/PelaAI/KnowLine-4B-Gen2

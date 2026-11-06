@@ -2,9 +2,9 @@
 
 ## Resumen
 
-NovaLLM es un modelo publicado en HuggingFace por el usuario `dusersad12` bajo el identificador `dusersad12/NovaLLM-Release`. La model card se presenta como una actualización de versión de una familia previa de NovaLLM, con mejoras centradas en profundidad de razonamiento, reducción de alucinaciones y soporte reforzado de *function calling*. El autor declara mejoras en matemáticas, programación y lógica general, y sitúa su rendimiento global cerca del de "otros modelos líderes", aunque sin identificarlos.
+NovaLLM es un modelo publicado en Hugging Face por el usuario `dusersad12` bajo el identificador `dusersad12/NovaLLM-Release`. La model card se presenta como una actualización de versión de una familia previa de NovaLLM, con mejoras centradas en profundidad de razonamiento, reducción de alucinaciones y soporte reforzado de *function calling*. El autor declara mejoras en matemáticas, programación y lógica general, y sitúa su rendimiento global cerca del de "otros modelos líderes", aunque sin identificarlos.
 
-Existe una discrepancia importante entre los metadatos de HuggingFace y el contenido de la model card. Los metadatos describen un modelo basado en BERT, con pipeline `feature-extraction`, licencia MIT y un repositorio de 0,0 GB (sin pesos publicados), además de 0 descargas y 0 *likes*. La model card, en cambio, describe un asistente conversacional orientado a razonamiento con *system prompt*, búsqueda web y subida de ficheros, lo que corresponde a un tipo de modelo muy distinto al que sugieren las etiquetas.
+Existe una discrepancia importante entre los metadatos de Hugging Face y el contenido de la model card. Los metadatos describen un modelo basado en BERT, con pipeline `feature-extraction`, licencia MIT y un repositorio de 0,0 GB (sin pesos publicados), además de 0 descargas y 0 *likes*. La model card, en cambio, describe un asistente conversacional orientado a razonamiento con *system prompt*, búsqueda web y subida de ficheros, lo que corresponde a un tipo de modelo muy distinto al que sugieren las etiquetas.
 
 Dado que no hay pesos publicados ni información verificable de arquitectura, tamaño o contexto, esta ficha recoge exclusivamente lo declarado por el autor y marca como "no disponible" todo dato no confirmado. Cualquier evaluación de idoneidad para producción debería considerarse provisional hasta que se publique el modelo real.
 
@@ -12,7 +12,7 @@ Dado que no hay pesos publicados ni información verificable de arquitectura, ta
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (los tags de HuggingFace indican BERT; la model card no especifica arquitectura) |
+| Arquitectura | no disponible (los tags de Hugging Face indican BERT; la model card no especifica arquitectura) |
 | Parametros totales | no disponible |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
@@ -23,7 +23,7 @@ Dado que no hay pesos publicados ni información verificable de arquitectura, ta
 
 ## Arquitectura y entrenamiento
 
-La model card no describe la arquitectura del modelo: no se indica si es un transformer denso, un MoE, un modelo híbrido ni qué mecanismo de atención emplea. Tampoco se detalla el número de parámetros, la longitud de contexto, la composición del dataset de entrenamiento ni el número de tokens utilizados. Los únicos indicios técnicos son indirectos: los tags de HuggingFace apuntan a `bert` y `feature-extraction`, mientras que el texto del autor describe un asistente generativo con modo de razonamiento y *tool calling*, lo que resulta incompatible con un BERT de extracción de características.
+La model card no describe la arquitectura del modelo: no se indica si es un transformer denso, un MoE, un modelo híbrido ni qué mecanismo de atención emplea. Tampoco se detalla el número de parámetros, la longitud de contexto, la composición del dataset de entrenamiento ni el número de tokens utilizados. Los únicos indicios técnicos son indirectos: los tags de Hugging Face apuntan a `bert` y `feature-extraction`, mientras que el texto del autor describe un asistente generativo con modo de razonamiento y *tool calling*, lo que resulta incompatible con un BERT de extracción de características.
 
 En cuanto al post-entrenamiento, el autor menciona que se han introducido "mecanismos de optimización algorítmica" durante la fase de post-training y que se han incrementado los recursos de cómputo, pero no especifica si se empleó RLHF, DPO, RLVR ni ninguna otra técnica concreta. La única innovación cuantificada es el aumento de la profundidad de razonamiento: en el conjunto de evaluación AIME, la versión anterior consumía una media de 12K tokens por pregunta y la actual 23K, lo que se traduce en una mejora de precisión del 70 % al 87,5 % según el autor. También se declara una reducción de la tasa de alucinación y un mejor soporte de *function calling* respecto a la versión previa.
 
@@ -86,7 +86,7 @@ No se especifican los métodos de evaluación, el número de *shots*, la configu
 
 ## Requisitos de hardware
 
-No disponible. La información proporcionada no incluye el número de parámetros, la arquitectura ni el tamaño de los pesos, y el repositorio de HuggingFace figura con 0,0 GB, por lo que no hay pesos que ejecutar. En consecuencia:
+No disponible. La información proporcionada no incluye el número de parámetros, la arquitectura ni el tamaño de los pesos, y el repositorio de Hugging Face figura con 0,0 GB, por lo que no hay pesos que ejecutar. En consecuencia:
 
 - VRAM estimada para inferencia: no disponible.
 - GPU recomendadas: no disponible.
@@ -100,7 +100,7 @@ No disponible. La model card compara NovaLLM con tres baselines anonimizados (Ba
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| NovaLLM | no disponible | no disponible | MIT | Repositorio HuggingFace sin pesos publicados (0,0 GB) |
+| NovaLLM | no disponible | no disponible | MIT | Repositorio Hugging Face sin pesos publicados (0,0 GB) |
 | Baseline-A | no disponible | no disponible | no disponible | no disponible |
 | Baseline-B | no disponible | no disponible | no disponible | no disponible |
 | Baseline-C | no disponible | no disponible | no disponible | no disponible |
@@ -109,7 +109,7 @@ A partir de la tabla de benchmarks publicada, NovaLLM supera a los tres baseline
 
 ## Limitaciones y advertencias
 
-- Contradicción entre metadatos y model card: HuggingFace etiqueta el modelo como BERT de `feature-extraction`, mientras que el texto describe un asistente generativo con razonamiento y *tool calling*. No es posible determinar cuál de las dos descripciones es correcta.
+- Contradicción entre metadatos y model card: Hugging Face etiqueta el modelo como BERT de `feature-extraction`, mientras que el texto describe un asistente generativo con razonamiento y *tool calling*. No es posible determinar cuál de las dos descripciones es correcta.
 - Ausencia de pesos: el repositorio figura con 0,0 GB y no se indica ningún formato de pesos. El modelo no es descargable ni ejecutable con la información disponible.
 - Métricas no verificables: los benchmarks publicados no indican metodología, número de *shots*, versiones de los conjuntos de evaluación ni configuración de decodificación. Las cifras no son reproducibles tal como se presentan.
 - Baselines anonimizados: sin identificar los modelos de comparación, no puede evaluarse si son comparables en tamaño, contexto o licencia.
@@ -124,7 +124,7 @@ A partir de la tabla de benchmarks publicada, NovaLLM supera a los tres baseline
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dusersad12/NovaLLM-Release
+- Modelo en Hugging Face: https://huggingface.co/dusersad12/NovaLLM-Release
 - Demo de chat: no disponible (la model card menciona una web oficial con interfaz de chat y API, pero sin URL)
 - Repositorio de código: no disponible (la model card lo menciona sin enlazarlo)
 - Paper o informe tecnico: no disponible

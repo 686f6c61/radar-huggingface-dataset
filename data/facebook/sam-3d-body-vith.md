@@ -2,11 +2,11 @@
 
 ## Resumen
 
-sam-3d-body-vith es un modelo publicado por Meta (facebook) en HuggingFace para la recuperación de malla corporal humana en 3D (3D human mesh recovery) y la estimación de pose humana a partir de imágenes. El identificador del repositorio y la etiqueta del modelo apuntan a un backbone de tipo ViT-H (Vision Transformer Huge) integrado en la familia SAM 3D, la línea de modelos segmentables y "promptables" de Meta aplicada ahora a la geometría corporal humana.
+sam-3d-body-vith es un modelo publicado por Meta (facebook) en Hugging Face para la recuperación de malla corporal humana en 3D (3D human mesh recovery) y la estimación de pose humana a partir de imágenes. El identificador del repositorio y la etiqueta del modelo apuntan a un backbone de tipo ViT-H (Vision Transformer Huge) integrado en la familia SAM 3D, la línea de modelos segmentables y "promptables" de Meta aplicada ahora a la geometría corporal humana.
 
 El modelo resuelve el problema clásico de pasar de una imagen 2D a una representación 3D estructurada del cuerpo (malla con pose y forma), una tarea con aplicaciones directas en animación, VFX, captura de movimiento sin marcadores, realidad aumentada, análisis deportivo y robótica. Frente a los métodos clásicos de regresión de parámetros SMPL sobre detectores de keypoints, la propuesta se apoya en un backbone de visión de gran tamaño entrenado por Meta, lo que sugiere mayor robustez en oclusiones y poses complejas, aunque no se dispone de detalles técnicos oficiales en la información proporcionada.
 
-La relevancia actual del modelo es doble. Por un lado, forma parte del despliegue de la familia SAM 3D de Meta, que extiende los modelos fundacionales de segmentación hacia la reconstrucción 3D. Por otro, su publicación es reciente (octubre de 2025, con actualización en diciembre de 2025), con acceso restringido bajo la SAM License, lo que obliga a aceptar condiciones en HuggingFace antes de descargarlo.
+La relevancia actual del modelo es doble. Por un lado, forma parte del despliegue de la familia SAM 3D de Meta, que extiende los modelos fundacionales de segmentación hacia la reconstrucción 3D. Por otro, su publicación es reciente (octubre de 2025, con actualización en diciembre de 2025), con acceso restringido bajo la SAM License, lo que obliga a aceptar condiciones en Hugging Face antes de descargarlo.
 
 ## Especificaciones tecnicas
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto/entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| facebook/sam-3d-body-vith | no disponible | imagen (resolución no disponible) | no disponible | sam-license (acceso restringido) | HuggingFace, gated |
+| facebook/sam-3d-body-vith | no disponible | imagen (resolución no disponible) | no disponible | sam-license (acceso restringido) | Hugging Face, gated |
 | Otros modelos de 3D human mesh recovery (por ejemplo, familias basadas en SMPL y detectores de keypoints) | no disponible | imagen o vídeo | no disponible | variable según proyecto | variable |
-| Modelos fundacionales de visión de Meta (familia SAM) | no disponible | imagen con prompts | no disponible | licencia propia de Meta | HuggingFace, con condiciones |
+| Modelos fundacionales de visión de Meta (familia SAM) | no disponible | imagen con prompts | no disponible | licencia propia de Meta | Hugging Face, con condiciones |
 
 No se dispone de datos numéricos comparativos en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa fiable con alternativas de la misma categoría.
 
@@ -74,13 +74,13 @@ No se dispone de datos numéricos comparativos en la información proporcionada,
 - Sesgos conocidos: no disponibles. Al no publicarse la composición del dataset de entrenamiento, no se puede evaluar la representación de distintos tonos de piel, tipos corporales, edades, culturas o condiciones de iluminación.
 - Riesgo de geometría implausible: en modelos de reconstrucción 3D el equivalente a la alucinación son mallas incoherentes o poses anatómicamente imposibles ante oclusiones severas, ropa holgada, cuerpos parcialmente fuera de plano o imágenes de baja resolución.
 - Limitaciones de idioma: la etiqueta de idioma es `en`, referida a la documentación; el modelo no procesa lenguaje natural como entrada principal.
-- Licencia: se distribuye bajo la SAM License de Meta con acceso restringido en HuggingFace. Es imprescindible revisar los términos antes de cualquier uso comercial, ya que las condiciones pueden incluir restricciones de redistribución y de uso.
-- Acceso restringido: requiere aceptar condiciones en HuggingFace; no es descargable de forma anónima ni automatizable sin credenciales autorizadas.
+- Licencia: se distribuye bajo la SAM License de Meta con acceso restringido en Hugging Face. Es imprescindible revisar los términos antes de cualquier uso comercial, ya que las condiciones pueden incluir restricciones de redistribución y de uso.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face; no es descargable de forma anónima ni automatizable sin credenciales autorizadas.
 - Dato biométrico: la reconstrucción de la forma corporal y la pose constituye información biométrica sensible. Su tratamiento puede estar sujeto al RGPD en la Unión Europea, con obligaciones de base jurídica, minimización y evaluación de impacto.
 - Ausencia de especificaciones: no hay información pública disponible sobre resolución de entrada, tolerancia a múltiples personas en escena, soporte de vídeo, latencia ni límites de uso, lo que dificulta planificar un despliegue en producción.
 - No apto para decisiones automatizadas de alto riesgo sin supervisión humana y validación específica del dominio.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/facebook/sam-3d-body-vith
+- Hugging Face: https://huggingface.co/facebook/sam-3d-body-vith
 - No se han encontrado en la búsqueda web enlaces relevantes (paper, blog técnico, repositorio de código o demo). Los resultados devueltos corresponden a páginas de inicio de sesión de Facebook y no aportan información sobre el modelo.

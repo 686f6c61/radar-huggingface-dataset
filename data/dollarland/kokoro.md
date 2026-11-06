@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kokoro INT8 v1.1 voice pack for Dolyzer es un paquete de voces empaquetado por el usuario dollarland que redistribuye el modelo de síntesis de voz Kokoro-82M v1.1, desarrollado originalmente por Hexgrad, en su conversión a INT8 y formato ONNX preparada por los contribuidores de Sherpa-ONNX. El repositorio no contiene pesos en formato nativo de HuggingFace, sino un archivo ZIP (`kokoro-int8-v1.1-model-pack.zip`) pensado para la descarga dentro de la aplicación Dolyzer y la narración offline en dicha app.
+Kokoro INT8 v1.1 voice pack for Dolyzer es un paquete de voces empaquetado por el usuario dollarland que redistribuye el modelo de síntesis de voz Kokoro-82M v1.1, desarrollado originalmente por Hexgrad, en su conversión a INT8 y formato ONNX preparada por los contribuidores de Sherpa-ONNX. El repositorio no contiene pesos en formato nativo de Hugging Face, sino un archivo ZIP (`kokoro-int8-v1.1-model-pack.zip`) pensado para la descarga dentro de la aplicación Dolyzer y la narración offline en dicha app.
 
 El modelo subyacente, Kokoro-82M, es un modelo TTS (text-to-speech) de pequeño tamaño (82 millones de parámetros) que se ha popularizado por ofrecer una calidad de voz notable con unos requisitos de cómputo muy bajos, lo que permite inferencia en CPU y en dispositivos de gama baja. Esta ficha describe el paquete tal como se publica: un artefacto de distribución para una aplicación concreta, no un modelo entrenado por dollarland.
 
@@ -60,16 +60,16 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| dollarland/kokoro (este repo) | 82 M (subyacente) | no disponible | Apache 2.0 | ZIP / ONNX INT8 | HuggingFace (0 descargas) |
-| hexgrad/Kokoro-82M-v1.1-zh | 82 M | no disponible | Apache 2.0 | no disponible en la información | HuggingFace (modelo original) |
-| csukuangfj/kokoro-int8-multi-lang-v1_1 | 82 M | no disponible | no disponible en la información | ONNX INT8 | HuggingFace (upstream de la conversión) |
+| dollarland/kokoro (este repo) | 82 M (subyacente) | no disponible | Apache 2.0 | ZIP / ONNX INT8 | Hugging Face (0 descargas) |
+| hexgrad/Kokoro-82M-v1.1-zh | 82 M | no disponible | Apache 2.0 | no disponible en la información | Hugging Face (modelo original) |
+| csukuangfj/kokoro-int8-multi-lang-v1_1 | 82 M | no disponible | no disponible en la información | ONNX INT8 | Hugging Face (upstream de la conversión) |
 
 No se dispone de datos de rendimiento comparativo en la información proporcionada.
 
 ## Limitaciones y advertencias
 
 - La model card no documenta sesgos, tasas de alucinación ni limitaciones de idioma del paquete.
-- El repositorio no contiene pesos en formato estándar de HuggingFace; es un ZIP para una app concreta, lo que limita su reutilización directa fuera de Dolyzer.
+- El repositorio no contiene pesos en formato estándar de Hugging Face; es un ZIP para una app concreta, lo que limita su reutilización directa fuera de Dolyzer.
 - No se especifican los idiomas cubiertos por el voice pack; el modelo original tiene variantes multilingües, pero este paquete no lo detalla.
 - El autor del repositorio (dollarland) no es el desarrollador del modelo; la responsabilidad técnica recae en Hexgrad y Sherpa-ONNX.
 - Aunque la licencia es Apache 2.0, conviene verificar el archivo de licencia incluido en el ZIP antes de redistribuirlo en producción.
@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dollarland/kokoro
+- Repositorio en Hugging Face: https://huggingface.co/dollarland/kokoro
 - Modelo original Kokoro-82M v1.1: https://huggingface.co/hexgrad/Kokoro-82M-v1.1-zh
 - Proyecto Sherpa-ONNX: https://github.com/k2-fsa/sherpa-onnx
 - Archivos upstream INT8: https://huggingface.co/csukuangfj/kokoro-int8-multi-lang-v1_1

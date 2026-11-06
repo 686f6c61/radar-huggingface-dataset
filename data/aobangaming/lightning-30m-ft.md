@@ -27,7 +27,7 @@ Su relevancia es fundamentalmente experimental: sirve como banco de pruebas de b
 | Modelo base | Aoban-2.7-L (fine-tuning) |
 | Dataset de entrenamiento | `kmfoda/booksum` (BookSum, ~300 MB) |
 | Descargas / likes | 0 descargas / 2 likes |
-| Fecha de publicacion | 2026-09-12 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 2026-09-12 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -77,11 +77,11 @@ La comparativa siguiente se establece con modelos de tamano y proposito equipara
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Lightning (Aobangaming/lightning-30m-ft) | ~30 M (no confirmado) | 160 tokens | MIT | HuggingFace, 0 descargas, 2 likes |
+| Lightning (Aobangaming/lightning-30m-ft) | ~30 M (no confirmado) | 160 tokens | MIT | Hugging Face, 0 descargas, 2 likes |
 | GPT-2 small | 124 M | 1.024 tokens | MIT modificada | Ampliamente disponible, ecosistema maduro |
 | DistilGPT-2 | 82 M | 1.024 tokens | Apache-2.0 | Ampliamente disponible, integrado en `transformers` |
-| SmolLM-135M | 135 M | 2.048 tokens | Apache-2.0 | HuggingFace, con variantes GGUF y cuantizadas |
-| TinyStories-33M | 33 M | ~512 tokens | MIT | HuggingFace, orientado a generacion de cuentos simples |
+| SmolLM-135M | 135 M | 2.048 tokens | Apache-2.0 | Hugging Face, con variantes GGUF y cuantizadas |
+| TinyStories-33M | 33 M | ~512 tokens | MIT | Hugging Face, orientado a generacion de cuentos simples |
 
 Diferencias destacables: Lightning es el mas pequeno del grupo junto con TinyStories-33M, pero su ventana de contexto de 160 tokens es entre 3 y 12 veces menor que la de sus alternativas, lo que limita drasticamente cualquier tarea multi-turno o de documento largo. Frente a DistilGPT-2 y GPT-2 small, no hay evidencia publicada de que Lightning los supere en ninguna tarea, y carece del ecosistema de herramientas, versiones cuantizadas y verificaciones de terceros que si tienen esos modelos. Su ventaja relativa es la licencia MIT y el coste de entrenamiento minimo.
 
@@ -94,14 +94,14 @@ Diferencias destacables: Lightning es el mas pequeno del grupo junto con TinySto
 - Solo ingles: el autor afirma explicitamente que el modelo procesa unicamente texto en ingles y conversacional, y que no puede ajustarse para otros usos.
 - Ambiguedad en la documentacion: la model card mezcla tres nombres distintos (Lightning, Aoban 3.0, Aoban-2.7-L) y no aclara la relacion exacta con el modelo base ni el recuento de parametros.
 - Ausencia de benchmarks: no hay ninguna metrica publicada que permita comparar objetivamente su calidad con alternativas.
-- Metadatos inconsistentes: la fecha de publicacion en HuggingFace (2026-09-12) es posterior a la fecha actual, lo que sugiere metadatos de prueba o un repositorio de caracter experimental.
+- Metadatos inconsistentes: la fecha de publicacion en Hugging Face (2026-09-12) es posterior a la fecha actual, lo que sugiere metadatos de prueba o un repositorio de caracter experimental.
 - Cero descargas y dos likes: no hay comunidad, issues ni verificaciones independientes que respalden su funcionamiento.
 - Licencia MIT: permite uso comercial y modificacion sin restricciones, pero el propio autor declara que el modelo no esta pensado para trabajo profesional ni para produccion, y recomienda anadir salvaguardas y barandillas si se despliega.
 - Ausencia de formato de pesos confirmado: no se especifica si los pesos estan en safetensors, binario PyTorch o GGUF, lo que complica la integracion directa en motores de inferencia estandar.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Aobangaming/lightning-30m-ft
+- Modelo en Hugging Face: https://huggingface.co/Aobangaming/lightning-30m-ft
 - Dataset de entrenamiento BookSum: https://huggingface.co/datasets/kmfoda/booksum
 - Paper de referencia citado en la model card (Lacoste et al., 2019, sobre impacto ambiental del aprendizaje automatico): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de Machine Learning: https://ml2co.github.io/impact — enlace citado como `https://ml2co.github.io/impact#compute`; la URL correcta referenciada en la model card es https://mlco2.github.io/impact#compute

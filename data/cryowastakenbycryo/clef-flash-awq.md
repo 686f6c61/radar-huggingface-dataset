@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Clef-Flash-AWQ | 9,4 B | no disponible | apache-2.0 | HuggingFace, vLLM | Cuantizacion AWQ W4A16 del Clef-Flash |
+| Clef-Flash-AWQ | 9,4 B | no disponible | apache-2.0 | Hugging Face, vLLM | Cuantizacion AWQ W4A16 del Clef-Flash |
 | Clef-Flash (bf16) | 9 B | no disponible | apache-2.0 | Workers AI, Ollama | Modelo base de decision multimodal |
 | Qwen3.5-9B (base) | 9 B | no disponible | no disponible | no disponible | Modelo del que deriva Clef-Flash |
 
@@ -81,8 +81,8 @@ Datos de rendimiento comparativo: no disponible.
 
 ## Enlaces
 
-- HuggingFace (repositorio del modelo): https://huggingface.co/cryowastakenbycryo/Clef-Flash-AWQ
-- Perfil del autor en HuggingFace: https://huggingface.co/cryowastakenbycryo/models
+- Hugging Face (repositorio del modelo): https://huggingface.co/cryowastakenbycryo/Clef-Flash-AWQ
+- Perfil del autor en Hugging Face: https://huggingface.co/cryowastakenbycryo/models
 - Documentación de Clef-flash en Cloudflare Workers AI: https://developers.cloudflare.com/workers-ai/models/clef-flash/
 - Blog de Cloudflare sobre los modelos de decisión Clef: https://blog.cloudflare.com/clef-decision-models/
 - Clef-flash en Ollama: https://ollama.com/library/clef-flash

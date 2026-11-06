@@ -112,7 +112,7 @@ Todas las alternativas comparten el mismo modelo base (Qwen2.5-32B) o uno equiva
 
 ## Enlaces
 
-- Repositorio de HuggingFace de esta ficha: https://huggingface.co/schwyzquants/OpenThinker-32B
+- Repositorio de Hugging Face de esta ficha: https://huggingface.co/schwyzquants/OpenThinker-32B
 - Modelo original: https://huggingface.co/open-thoughts/OpenThinker-32B
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-32B-Instruct
 - Paper de OpenThoughts: https://arxiv.org/abs/2506.04178

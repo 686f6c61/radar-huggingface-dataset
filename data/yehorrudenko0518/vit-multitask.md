@@ -2,7 +2,7 @@
 
 ## Resumen
 
-yehorrudenko0518/vit-multitask es un prototipo de investigación publicado en HuggingFace por el usuario yehorrudenko0518. Se trata de una implementación propia de un Vision Transformer (ViT) orientada a aprendizaje multitarea, distribuida como código fuente (`main.py`) acompañada de una configuración de arquitectura (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización en formato safetensors. No es, por tanto, un modelo entrenado y listo para producción.
+yehorrudenko0518/vit-multitask es un prototipo de investigación publicado en Hugging Face por el usuario yehorrudenko0518. Se trata de una implementación propia de un Vision Transformer (ViT) orientada a aprendizaje multitarea, distribuida como código fuente (`main.py`) acompañada de una configuración de arquitectura (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización en formato safetensors. No es, por tanto, un modelo entrenado y listo para producción.
 
 La model card es explícita al respecto: el checkpoint `model.safetensors` es válido únicamente como inicialización para pruebas de humo (smoke tests) y no se presenta como un checkpoint con benchmarks. El autor declara una escala "huge", atención con kernels flash, fusión de bajo rango (low rank fusion), activación GELU y normalización InstanceNorm, con optimizador SGD y un esquema de warmup constante como receta por defecto.
 
@@ -26,7 +26,7 @@ El dato más llamativo es la incoherencia entre la escala declarada y el recuent
 | Activación | GELU |
 | Normalización | InstanceNorm |
 | Optimizador por defecto | SGD con schedule de warmup constante |
-| Pipeline de HuggingFace | No disponible |
+| Pipeline de Hugging Face | No disponible |
 | Descargas | 0 |
 | Likes | 0 |
 | Tamaño del repositorio | 0,0 GB |
@@ -87,7 +87,7 @@ No disponible. Los resultados de la búsqueda web realizada no contienen informa
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| yehorrudenko0518/vit-multitask | 16.576 | No disponible | Sin benchmarks publicados | MIT | HuggingFace, 0 descargas |
+| yehorrudenko0518/vit-multitask | 16.576 | No disponible | Sin benchmarks publicados | MIT | Hugging Face, 0 descargas |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -105,7 +105,7 @@ No disponible. Los resultados de la búsqueda web realizada no contienen informa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yehorrudenko0518/vit-multitask
+- Modelo en Hugging Face: https://huggingface.co/yehorrudenko0518/vit-multitask
 - Archivos incluidos en el repositorio (rutas dentro del modelo, no verificadas como URL independiente): `main.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Comprobación rápida indicada en la model card: `python main.py --help`
 - Búsqueda web: no se han encontrado papers, blogs, repositorios ni demos relacionados con este modelo. Los resultados devueltos por la búsqueda corresponden a modelos de lenguaje sin relación (Qwen, Gemma, DeepSeek) y se descartan por no ser relevantes.

@@ -105,7 +105,7 @@ La comparacion de rendimiento con alternativas no es posible con los datos publi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Xaayuu/support-ticket-lora
+- Modelo en Hugging Face: https://huggingface.co/Xaayuu/support-ticket-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Documentacion de PEFT: https://huggingface.co/docs/peft
 - Resultados de busqueda web: las consultas realizadas no devolvieron ningun resultado relevante sobre este modelo, su autor o su tarea (los resultados obtenidos eran contenido no relacionado y de naturaleza adulta, por lo que se descartan). No se han localizado papers, blogs, repositorios ni demos adicionales asociados a este adaptador.

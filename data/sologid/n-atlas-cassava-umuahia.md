@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Sologid/N-Atlas-cassava-Umuahia es un adaptador de ajuste fino publicado en HuggingFace bajo la librería PEFT, no un modelo completo. El repositorio contiene pesos en formato safetensors (aproximadamente 0,5 GB) que deben cargarse sobre el modelo base NCAIR1/N-ATLaS, tal como declara la etiqueta `base_model` del propio repositorio. Al tratarse de un adaptador, no genera texto por sí solo: requiere el checkpoint base para funcionar.
+Sologid/N-Atlas-cassava-Umuahia es un adaptador de ajuste fino publicado en Hugging Face bajo la librería PEFT, no un modelo completo. El repositorio contiene pesos en formato safetensors (aproximadamente 0,5 GB) que deben cargarse sobre el modelo base NCAIR1/N-ATLaS, tal como declara la etiqueta `base_model` del propio repositorio. Al tratarse de un adaptador, no genera texto por sí solo: requiere el checkpoint base para funcionar.
 
-El autor no ha completado la model card. El README es la plantilla por defecto de HuggingFace con todos los campos marcados como "[More Information Needed]", por lo que se desconoce el proceso de entrenamiento, el conjunto de datos, los hiperparámetros de ajuste y la evaluación. La única información técnica verificable es la librería (PEFT), el formato de pesos (safetensors), el modelo base y la versión de framework declarada (PEFT 0.12.0).
+El autor no ha completado la model card. El README es la plantilla por defecto de Hugging Face con todos los campos marcados como "[More Information Needed]", por lo que se desconoce el proceso de entrenamiento, el conjunto de datos, los hiperparámetros de ajuste y la evaluación. La única información técnica verificable es la librería (PEFT), el formato de pesos (safetensors), el modelo base y la versión de framework declarada (PEFT 0.12.0).
 
 El nombre del repositorio sugiere un ajuste orientado al cultivo de la mandioca (cassava) y a Umuahia, capital del estado de Abia en Nigeria, lo que apuntaría a un caso de uso agronómico regional. Esta lectura es una inferencia a partir del identificador y no está confirmada en ninguna parte de la documentación disponible, por lo que debe tratarse como hipótesis no verificada.
 
@@ -30,9 +30,9 @@ El nombre del repositorio sugiere un ajuste orientado al cultivo de la mandioca 
 
 ## Arquitectura y entrenamiento
 
-El artefacto es un adaptador entrenado con la librería PEFT, la familia de técnicas de ajuste eficiente en parámetros de HuggingFace que engloba LoRA, QLoRA, adaptadores de bottleneck y métodos relacionados. Los pesos se serializan en safetensors y el repositorio declara la versión 0.12.0 de PEFT, lo que sitúa el entrenamiento en una versión reciente de la librería. No se especifica qué método concreto (LoRA, QLoRA, LoHa, IA3, etc.) ni los hiperparámetros asociados (rango, alpha, dropout, módulos objetivo).
+El artefacto es un adaptador entrenado con la librería PEFT, la familia de técnicas de ajuste eficiente en parámetros de Hugging Face que engloba LoRA, QLoRA, adaptadores de bottleneck y métodos relacionados. Los pesos se serializan en safetensors y el repositorio declara la versión 0.12.0 de PEFT, lo que sitúa el entrenamiento en una versión reciente de la librería. No se especifica qué método concreto (LoRA, QLoRA, LoHa, IA3, etc.) ni los hiperparámetros asociados (rango, alpha, dropout, módulos objetivo).
 
-No hay ningún dato sobre el corpus de entrenamiento: ni número de tokens, ni composición del dataset, ni si hubo fases de ajuste supervisado, RLHF o DPO. La model card no incluye la sección de detalles de entrenamiento, la de hiperparámetros ni la de infraestructura de cómputo. El único enlace técnico del README es la referencia al artículo de Lacoste et al. (2019) sobre el cálculo del impacto ambiental, que forma parte de la plantilla estándar de HuggingFace y no describe este modelo en particular.
+No hay ningún dato sobre el corpus de entrenamiento: ni número de tokens, ni composición del dataset, ni si hubo fases de ajuste supervisado, RLHF o DPO. La model card no incluye la sección de detalles de entrenamiento, la de hiperparámetros ni la de infraestructura de cómputo. El único enlace técnico del README es la referencia al artículo de Lacoste et al. (2019) sobre el cálculo del impacto ambiental, que forma parte de la plantilla estándar de Hugging Face y no describe este modelo en particular.
 
 Dado que el adaptador se apoya en NCAIR1/N-ATLaS, cualquier afirmación sobre capacidades, contexto o tokenizador depende de las especificaciones de ese checkpoint base, que no se han proporcionado en la información disponible y que deberían consultarse directamente en su repositorio.
 
@@ -103,7 +103,7 @@ No se dispone de información suficiente para establecer una comparativa. No se 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sologid/N-Atlas-cassava-Umuahia
+- Modelo en Hugging Face: https://huggingface.co/Sologid/N-Atlas-cassava-Umuahia
 - Modelo base: https://huggingface.co/NCAIR1/N-ATLaS
 - Artículo referenciado en las etiquetas (Lacoste et al., 2019, sobre cálculo de impacto ambiental; forma parte de la plantilla y no describe este modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de ML mencionada en la plantilla: https://mlco2.github.io/impact

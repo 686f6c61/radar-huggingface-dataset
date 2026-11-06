@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Viv0605101/anlp-a3-deltanet` es un checkpoint de PyTorch publicado en HuggingFace Hub por el usuario Viv0605101 con un total de 811.408 parámetros (aproximadamente 0,81 millones). Por el nombre del repositorio y las etiquetas asociadas (`deltanet`, `mamba`, `cipher`) parece tratarse de un experimento académico vinculado a una asignatura de procesamiento de lenguaje natural (ANLP), en el que se explora una arquitectura de atención lineal tipo DeltaNet, posiblemente combinada con ideas de modelos de espacio de estados (Mamba), aplicada a alguna tarea relacionada con cifrado. Esta interpretación se deduce únicamente de las etiquetas: la model card no aporta ninguna descripción funcional.
+`Viv0605101/anlp-a3-deltanet` es un checkpoint de PyTorch publicado en Hugging Face Hub por el usuario Viv0605101 con un total de 811.408 parámetros (aproximadamente 0,81 millones). Por el nombre del repositorio y las etiquetas asociadas (`deltanet`, `mamba`, `cipher`) parece tratarse de un experimento académico vinculado a una asignatura de procesamiento de lenguaje natural (ANLP), en el que se explora una arquitectura de atención lineal tipo DeltaNet, posiblemente combinada con ideas de modelos de espacio de estados (Mamba), aplicada a alguna tarea relacionada con cifrado. Esta interpretación se deduce únicamente de las etiquetas: la model card no aporta ninguna descripción funcional.
 
 La relevancia del modelo es, por tanto, exclusivamente educativa y de investigación: sirve como referencia minúscula para estudiar implementaciones de DeltaNet y para pruebas de integración de código, no como modelo de propósito general. No hay información publicada sobre arquitectura exacta, datos de entrenamiento, tokenizador, idiomas o licencia, y el repositorio no registra descargas ni valoraciones en el momento de redactar esta ficha.
 
@@ -22,7 +22,7 @@ El tamaño del repositorio es de 0,0 GB y los pesos se distribuyen en formato sa
 | Formato de pesos | safetensors (etiqueta del repositorio); carga mediante `PyTorchModelHubMixin` |
 | Autor | Viv0605101 |
 | Librería declarada | pytorch |
-| Pipeline de HuggingFace | No disponible |
+| Pipeline de Hugging Face | No disponible |
 | Tamaño del repositorio | 0,0 GB |
 | Fecha de creación / actualización | 25 de octubre de 2026 (según metadatos del Hub) |
 | Descargas / likes | 0 / 0 |
@@ -43,7 +43,7 @@ No hay datos sobre número de tokens de entrenamiento, composición del corpus, 
 - Multilingüismo: no documentado.
 - Tarea de cifrado (`cipher`): la etiqueta sugiere que el checkpoint se entrenó o evaluó en alguna tarea de cifrado o transformación simbólica, sin que se detalle el vocabulario, el formato de entrada ni las métricas.
 - Capacidades especiales (modo thinking, visión, audio): no disponibles.
-- Integración con el ecosistema HuggingFace: carga mediante `PyTorchModelHubMixin` (`from_pretrained`), lo que facilita su uso en scripts de PyTorch.
+- Integración con el ecosistema Hugging Face: carga mediante `PyTorchModelHubMixin` (`from_pretrained`), lo que facilita su uso en scripts de PyTorch.
 
 ## Casos de uso
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Viv0605101/anlp-a3-deltanet | 811.408 (≈0,81 M) | No disponible | No disponible | HuggingFace Hub, 0 descargas |
+| Viv0605101/anlp-a3-deltanet | 811.408 (≈0,81 M) | No disponible | No disponible | Hugging Face Hub, 0 descargas |
 | Mamba-130M | ≈130 M | No verificado en esta ficha | Apache-2.0 (según su repositorio público) | Pesos públicos |
 | GPT-2 small | ≈124 M | No verificado en esta ficha | MIT (según su repositorio público) | Pesos públicos |
 | TinyLlama-1.1B | ≈1,1 B | No verificado en esta ficha | Apache-2.0 (según su model card) | Pesos públicos |
@@ -92,7 +92,7 @@ Los datos de las alternativas provienen de sus repositorios públicos y deben ve
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Viv0605101/anlp-a3-deltanet
+- Modelo en Hugging Face: https://huggingface.co/Viv0605101/anlp-a3-deltanet
 - Código: no disponible
 - Paper: no disponible
 - Documentación: no disponible

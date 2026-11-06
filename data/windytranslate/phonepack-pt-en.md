@@ -77,8 +77,8 @@ La única medición publicada es la de FLORES-200 devtest. No se han publicado r
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | WindyTranslate/phonepack-pt-en (este pack) | no disponible | no disponible | chrF++ 70,81 en FLORES-200 devtest | Apache-2.0 | ONNX int8, 246 MB |
-| WindyTranslate/translate-tc-bible-big-roa-en (modelo padre) | no disponible | no disponible | no disponible | Apache-2.0 | Pesos en HuggingFace |
-| Helsinki-NLP/opus-mt-tc-bible-big-roa-en (upstream) | no disponible | no disponible | no disponible | Apache-2.0 | Pesos en HuggingFace |
+| WindyTranslate/translate-tc-bible-big-roa-en (modelo padre) | no disponible | no disponible | no disponible | Apache-2.0 | Pesos en Hugging Face |
+| Helsinki-NLP/opus-mt-tc-bible-big-roa-en (upstream) | no disponible | no disponible | no disponible | Apache-2.0 | Pesos en Hugging Face |
 | CTranslate2 int8 del mismo modelo | no disponible | no disponible | chrF++ 70,91 en FLORES-200 devtest | Apache-2.0 | Conversión CTranslate2 |
 
 No se han identificado en la información disponible alternativas públicas comparables con especificaciones verificables; la comparación se limita a variantes del mismo modelo base.

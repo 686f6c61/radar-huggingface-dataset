@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ultraviolet 50M (UV-50M) es un transformer decoder-only de 50,8 millones de parámetros desarrollado por el usuario harribo11 (hliuson) y publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un modelo pequeño entrenado principalmente sobre datos matemáticos, concebido como organismo modelo para experimentación rápida con aprendizaje por refuerzo (RL) sobre modelos de lenguaje. Su nombre y arquitectura derivan del modelo Limite 1B Violetto de Paradigma.
+Ultraviolet 50M (UV-50M) es un transformer decoder-only de 50,8 millones de parámetros desarrollado por el usuario harribo11 (hliuson) y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un modelo pequeño entrenado principalmente sobre datos matemáticos, concebido como organismo modelo para experimentación rápida con aprendizaje por refuerzo (RL) sobre modelos de lenguaje. Su nombre y arquitectura derivan del modelo Limite 1B Violetto de Paradigma.
 
 Este checkpoint concreto (`mid-alpha`) es la variante de razonamiento matemático: parte del modelo base `ultraviolet-50m-base-alpha` y se ha afinado sobre trazas de razonamiento delimitadas por `<think>...</think>`, tras las cuales emite la respuesta final en formato `\boxed{}`. La arquitectura está optimizada para velocidad de inferencia más que para rendimiento máximo por parámetro, lo que permite ejecutar experimentos de RL a alta velocidad en GPUs de consumo.
 
@@ -71,8 +71,8 @@ No se dispone en la información proporcionada de datos de benchmarks ni de espe
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ultraviolet-50m-mid-alpha | 50,8M | 4096 | Apache 2.0 | HuggingFace + GitHub |
-| Limite 1B Violetto (referencia arquitectónica) | 1B (según nombre) | no disponible | no disponible | HuggingFace |
+| ultraviolet-50m-mid-alpha | 50,8M | 4096 | Apache 2.0 | Hugging Face + GitHub |
+| Limite 1B Violetto (referencia arquitectónica) | 1B (según nombre) | no disponible | no disponible | Hugging Face |
 | Alternativas de tamaño similar | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -88,7 +88,7 @@ No se dispone en la información proporcionada de datos de benchmarks ni de espe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/harribo11/ultraviolet-50m-mid-alpha
+- Modelo en Hugging Face: https://huggingface.co/harribo11/ultraviolet-50m-mid-alpha
 - Modelo base: https://huggingface.co/harribo11/ultraviolet-50m-base-alpha
 - Dataset de trazas: https://huggingface.co/datasets/harribo11/violetto-math-traces
 - Modelo de referencia arquitectónica: https://huggingface.co/paradigma-inc/limite-1b-violetto

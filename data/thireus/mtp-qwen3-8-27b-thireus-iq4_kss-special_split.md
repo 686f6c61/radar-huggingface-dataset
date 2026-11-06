@@ -78,7 +78,7 @@ No se dispone de datos comparativos para este shard. Como referencia, el modelo 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-IQ4_KSS-SPECIAL_SPLIT
+- Repositorio Hugging Face: https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-IQ4_KSS-SPECIAL_SPLIT
 - Coleccion de shards de Thireus: https://huggingface.co/collections/Thireus/mtp-qwen36-27b-thireus-special-split
 - Herramienta GGUF de Thireus: https://gguf.thireus.com/
 - Blog de AMD sobre Qwen3.8 27B: https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html

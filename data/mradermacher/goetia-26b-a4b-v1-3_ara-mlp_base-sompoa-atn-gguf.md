@@ -23,7 +23,7 @@ Este repositorio contiene exclusivamente los pesos cuantizados en formato GGUF, 
 
 La arquitectura es un transformer basado en Mixture of Experts (MoE) con 25.971 millones de parámetros totales y alrededor de 4.000 millones de parámetros activos por token. La nomenclatura "A4B" indica que solo se activan 4 mil millones de parámetros durante la inferencia, lo que reduce significativamente el coste computacional en comparación con un modelo denso del mismo tamaño total. El nombre "ARA-MLP" y "SOMPOA-ATN" sugieren modificaciones específicas en las capas de MLP y atención, probablemente orientadas a mejorar la eficiencia o la calidad de representación, pero no se dispone de documentación técnica que detalle estas innovaciones.
 
-No se han publicado datos sobre el conjunto de entrenamiento, el número de tokens procesados ni el proceso de alineación (RLHF, DPO, etc.). Al ser un modelo base, no ha pasado por un afinamiento instructivo, por lo que su comportamiento es el de un modelo de lenguaje puro, sin capacidades de seguimiento de instrucciones ni de diálogo estructurado. El repositorio en HuggingFace es una cuantización estática de los pesos originales en safetensors, realizada por mradermacher, sin modificaciones adicionales sobre los pesos.
+No se han publicado datos sobre el conjunto de entrenamiento, el número de tokens procesados ni el proceso de alineación (RLHF, DPO, etc.). Al ser un modelo base, no ha pasado por un afinamiento instructivo, por lo que su comportamiento es el de un modelo de lenguaje puro, sin capacidades de seguimiento de instrucciones ni de diálogo estructurado. El repositorio en Hugging Face es una cuantización estática de los pesos originales en safetensors, realizada por mradermacher, sin modificaciones adicionales sobre los pesos.
 
 ## Capacidades
 
@@ -80,8 +80,8 @@ El modelo Goetia parece estar relacionado con Gemma 4 26B A4B (según los result
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/mradermacher/Goetia-26B-A4B-v1.3_ARA-MLP_Base-SOMPOA-ATN-GGUF
-- Repositorio HuggingFace del modelo original (referencia): https://huggingface.co/26B-Suite/Goetia-26B-A4B-v1.3_ARA-MLP_Base-SOMPOA-ATN
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/Goetia-26B-A4B-v1.3_ARA-MLP_Base-SOMPOA-ATN-GGUF
+- Repositorio Hugging Face del modelo original (referencia): https://huggingface.co/26B-Suite/Goetia-26B-A4B-v1.3_ARA-MLP_Base-SOMPOA-ATN
 - Variante GGUF del mismo modelo sin sufijos: https://huggingface.co/mradermacher/Goetia-26B-A4B-v1.3-GGUF
 - Variante con abliteration (Absolute-Heretic): https://huggingface.co/mradermacher/Goetia-26B-A4B-v1.3-Absolute-Heretic-ARA-i1-GGUF
 - Documentación de Gemma 4 26B A4B IT (posible base arquitectónica): https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/maas/google/gemma-4-26b-a4b-it

@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qatfactory/Qwen3-8B-Q4_K-QAD-GGUF | 8,19 B | no disponible | Q4_K (QAT) | Apache 2.0 | Gated en HuggingFace |
-| Qwen/Qwen3-8B | 8,19 B | no disponible en esta ficha | safetensors (original) | Apache 2.0 | Público en HuggingFace |
+| qatfactory/Qwen3-8B-Q4_K-QAD-GGUF | 8,19 B | no disponible | Q4_K (QAT) | Apache 2.0 | Gated en Hugging Face |
+| Qwen/Qwen3-8B | 8,19 B | no disponible en esta ficha | safetensors (original) | Apache 2.0 | Público en Hugging Face |
 | Otras cuantizaciones GGUF de Qwen3-8B (p. ej., Q4_K_M de terceros) | 8,19 B | según configuración | Q4_K_M / Q5_K_M, etc. | Apache 2.0 | Públicas habitualmente |
 
 La comparativa se limita al modelo base y a otras cuantizaciones del mismo modelo, ya que no se dispone de datos de rendimiento de esta versión QAT que permitan comparar con alternativas de otros desarrolladores. No se dispone de información sobre modelos comparables de otros fabricantes en la información proporcionada.
@@ -72,7 +72,7 @@ La comparativa se limita al modelo base y a otras cuantizaciones del mismo model
 ## Limitaciones y advertencias
 
 - La cuantización a 4 bits puede degradar la precisión en tareas de razonamiento complejo y matemáticas; no se publican métricas que cuantifiquen esta pérdida.
-- El repositorio está restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar los pesos, lo que puede limitar su uso automatizado.
+- El repositorio está restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar los pesos, lo que puede limitar su uso automatizado.
 - No se documentan los idiomas soportados ni el pipeline; se desconoce si la cuantización afecta al rendimiento multilingüe del modelo base.
 - No hay información sobre sesgos conocidos específicos de esta versión; los sesgos del modelo base Qwen3-8B no se detallan en el repositorio.
 - Riesgo de alucinación inherente a los modelos de lenguaje; no se han publicado evaluaciones de fidelidad para esta cuantización.
@@ -82,6 +82,6 @@ La comparativa se limita al modelo base y a otras cuantizaciones del mismo model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/qatfactory/Qwen3-8B-Q4_K-QAD-GGUF
+- Repositorio Hugging Face: https://huggingface.co/qatfactory/Qwen3-8B-Q4_K-QAD-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

@@ -25,7 +25,7 @@ La relevancia de esta ficha radica en que se trata de un modelo con muy poca inf
 
 La informacion proporcionada no incluye detalles sobre la arquitectura interna del modelo. No se especifica si se trata de un transformer clasico, de una variante con atencion lineal, de un modelo hibrido o de cualquier otra propuesta. Tampoco se documenta la composicion del dataset de entrenamiento, el numero de tokens utilizados, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o similares. La unica informacion tecnica disponible en la model card corresponde al proceso de cuantizacion, no al entrenamiento.
 
-El proceso documentado es exclusivamente de conversion y cuantizacion: se indica `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que confirma que las cuantizaciones se generaron a partir de pesos en formato HuggingFace del modelo SvalTek/MN-CharThink-12B-Base. El prefijo "CharThink" en el nombre del modelo base podria sugerir alguna forma de razonamiento estructurado o en cadena, pero no hay documentacion que lo confirme, por lo que no debe asumirse ninguna capacidad especifica derivada del nombre.
+El proceso documentado es exclusivamente de conversion y cuantizacion: se indica `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que confirma que las cuantizaciones se generaron a partir de pesos en formato Hugging Face del modelo SvalTek/MN-CharThink-12B-Base. El prefijo "CharThink" en el nombre del modelo base podria sugerir alguna forma de razonamiento estructurado o en cadena, pero no hay documentacion que lo confirme, por lo que no debe asumirse ninguna capacidad especifica derivada del nombre.
 
 ## Capacidades
 

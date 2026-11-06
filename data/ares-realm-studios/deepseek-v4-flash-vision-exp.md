@@ -23,7 +23,7 @@ Es relevante porque combina tres piezas poco habituales en un mismo checkpoint: 
 | Tamano del repositorio | 167,8 GB |
 | Modalidades de entrada | texto e imagen (`image-text-to-text`) |
 | Libreria declarada | transformers |
-| Fecha de creacion | 2026-09-16 (según metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-16 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -89,7 +89,7 @@ No hay datos publicados de MMLU, GSM8K, HumanEval ni de benchmarks de conocimien
 
 | Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-V4-Flash-Vision-Exp (este repositorio) | 304,6 B totales; activos no disponibles | no disponible | Texto + imagen | MIT (declarada por el publicador) | HuggingFace, subida de terceros, 0 descargas |
+| DeepSeek-V4-Flash-Vision-Exp (este repositorio) | 304,6 B totales; activos no disponibles | no disponible | Texto + imagen | MIT (declarada por el publicador) | Hugging Face, subida de terceros, 0 descargas |
 | DeepSeek-V4-Flash-0731 | no disponible | no disponible | Texto | no disponible | Referenciado en la model card como base de comparación |
 | Opus-4.8 | no disponible | no disponible | no disponible (se compara en benchmarks de agente y multimodal) | Propietaria | No es un modelo abierto; solo se usa como referencia de rendimiento |
 
@@ -112,11 +112,11 @@ La comparación cuantitativa disponible se limita a los benchmarks de la secció
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ares-Realm-Studios/DeepSeek-V4-Flash-Vision-Exp
+- Repositorio en Hugging Face: https://huggingface.co/Ares-Realm-Studios/DeepSeek-V4-Flash-Vision-Exp
 - Receta de vLLM para el modelo: https://recipes.vllm.ai/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp
 - Sitio oficial de DeepSeek: https://www.deepseek.com/
 - Chat de DeepSeek: https://chat.deepseek.com/
-- Cuenta oficial de DeepSeek AI en HuggingFace: https://huggingface.co/deepseek-ai
+- Cuenta oficial de DeepSeek AI en Hugging Face: https://huggingface.co/deepseek-ai
 - Perfil de X/Twitter de DeepSeek: https://twitter.com/deepseek_ai
 - Documentación de prompt encoding del repositorio: `encoding/README.md`
 - Documentación de inferencia mínima del repositorio: `inference/README.md`

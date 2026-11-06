@@ -77,7 +77,7 @@ La diferencia principal entre este modelo y el GGUF de Google es el runtime: el 
 
 ## Enlaces
 
-- [HuggingFace: useful-quants/Gemma-4-26B-A4B-it-W4A16-G64-BF16Vision](https://huggingface.co/useful-quants/Gemma-4-26B-A4B-it-W4A16-G64-BF16Vision)
+- [Hugging Face: useful-quants/Gemma-4-26B-A4B-it-W4A16-G64-BF16Vision](https://huggingface.co/useful-quants/Gemma-4-26B-A4B-it-W4A16-G64-BF16Vision)
 - [Modelo base: Mitchins/gemma-4-26B-A4B-it-qat-q4_0-unquantized-uncensored-heretic](https://huggingface.co/Mitchins/gemma-4-26B-A4B-it-qat-q4_0-unquantized-uncensored-heretic)
 - [Modelo original: google/gemma-4-26B-A4B-it](https://huggingface.co/google/gemma-4-26B-A4B-it)
 - [Pagina de Gemma 4 26B A4B en gemma4.wiki](https://www.gemma4.wiki/models/gemma-4-26b-a4b)

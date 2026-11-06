@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto / condicionamiento | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `oteam/rfdiffusion-base-epoch8` (este) | 60,88 M | MSA 256, pares 128, 50 pasos de difusión | Backbone de novo y scaffolding de motivos | AGPL-3.0 | HuggingFace, vía `ofoldx` |
-| `oteam/rfdiffusion-base` | 59,879 M (model card) | Igual | Igual, checkpoint final | AGPL-3.0 | HuggingFace, vía `ofoldx` |
-| `oteam/rfdiffusion-complex-base` | No disponible | Igual | Diseño de complejos y binders | AGPL-3.0 | HuggingFace, vía `ofoldx` |
+| `oteam/rfdiffusion-base-epoch8` (este) | 60,88 M | MSA 256, pares 128, 50 pasos de difusión | Backbone de novo y scaffolding de motivos | AGPL-3.0 | Hugging Face, vía `ofoldx` |
+| `oteam/rfdiffusion-base` | 59,879 M (model card) | Igual | Igual, checkpoint final | AGPL-3.0 | Hugging Face, vía `ofoldx` |
+| `oteam/rfdiffusion-complex-base` | No disponible | Igual | Diseño de complejos y binders | AGPL-3.0 | Hugging Face, vía `ofoldx` |
 | RFdiffusion oficial (RosettaCommons) | No disponible en la información | Igual (implementación de referencia) | Backbone de novo y scaffolding | No disponible en la información | GitHub RosettaCommons/RFdiffusion |
 
 ## Limitaciones y advertencias
@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/oteam/rfdiffusion-base-epoch8
+- Hugging Face: https://huggingface.co/oteam/rfdiffusion-base-epoch8
 - Variante base final: https://huggingface.co/oteam/rfdiffusion-base
 - Variante complex-base: https://huggingface.co/oteam/rfdiffusion-complex-base
 - Variante complex-beta: https://huggingface.co/oteam/rfdiffusion-complex-beta

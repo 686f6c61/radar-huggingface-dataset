@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tatianavolkov/contrastive-learning63` es un repositorio alojado en HuggingFace que, segun su propia model card, contiene notas de lectura y un esbozo de experimento sobre aprendizaje contrastivo, no un modelo entrenado. El autor lo describe explicitamente como un artefacto exploratorio que "no reclama mejoras en benchmarks, ablaciones completadas, codigo liberado ni un checkpoint entrenado". Los unicos ficheros declarados son `analysis.md` y `README.md`.
+`tatianavolkov/contrastive-learning63` es un repositorio alojado en Hugging Face que, segun su propia model card, contiene notas de lectura y un esbozo de experimento sobre aprendizaje contrastivo, no un modelo entrenado. El autor lo describe explicitamente como un artefacto exploratorio que "no reclama mejoras en benchmarks, ablaciones completadas, codigo liberado ni un checkpoint entrenado". Los unicos ficheros declarados son `analysis.md` y `README.md`.
 
 El repositorio incluye la etiqueta `transformer` y un fichero en formato safetensors, pero con un total de 33.088 parametros, una cifra incompatible con un modelo de lenguaje funcional. Todo apunta a que se trata de un tensor auxiliar o de un artefacto residual del proceso de publicacion, no de pesos de inferencia utilizables.
 
@@ -70,7 +70,7 @@ No disponible. Este repositorio no es un modelo, sino un conjunto de notas de in
 - No es un modelo: no contiene checkpoint entrenado, no genera texto y no debe presentarse como modelo en ningun catalogo o evaluacion.
 - Ausencia total de evaluacion: no hay benchmarks, metricas ni resultados reproducidos.
 - El fichero safetensors de 33.088 parametros no tiene documentacion de forma, tipo de tensor ni proposito; tratarlo como pesos de un transformer seria una interpretacion sin respaldo.
-- La etiqueta `transformer` puede inducir a error en busquedas y filtros de HuggingFace, ya que no hay arquitectura descrita.
+- La etiqueta `transformer` puede inducir a error en busquedas y filtros de Hugging Face, ya que no hay arquitectura descrita.
 - Sin datos de idioma, contexto, cuantizacion ni tokenizador: cualquier intento de integracion fallara por falta de especificacion.
 - Licencia MIT sobre el contenido del repositorio, pero la propia model card advierte de que los terminos de los datos de origen deben revisarse por separado si se usan datasets externos.
 - Riesgo de sesgo y de alucinacion: no aplica como modelo generativo, pero si se cita el repositorio conviene no atribuirle hallazgos que no ha producido.
@@ -79,7 +79,7 @@ No disponible. Este repositorio no es un modelo, sino un conjunto de notas de in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tatianavolkov/contrastive-learning63
+- Hugging Face: https://huggingface.co/tatianavolkov/contrastive-learning63
 - Fichero principal citado en la model card: `analysis.md` (dentro del repositorio, sin URL directa disponible en la informacion proporcionada)
-- Documentacion del repositorio: `README.md` (incluido en la propia pagina de HuggingFace)
+- Documentacion del repositorio: `README.md` (incluido en la propia pagina de Hugging Face)
 - Papers, blogs, repositorios o demos adicionales: no disponibles. La busqueda web no devolvio ningun resultado relevante sobre este modelo.

@@ -6,7 +6,7 @@ DensePoseFnL es una colección de tres checkpoints de estimación de pose densa 
 
 Los tres checkpoints comparten la arquitectura Mobile-Parsing-RCNN-B: backbone ligero `spnasnet_100` de `timm`, cuello BiFPN y cabeza DensePose basada en DeepLab, entrenados con el schedule `s3x`. Las variantes añaden componentes de trabajos previos: `WC2M` incorpora estimación de confianza en las coordenadas UV y en la segmentación gruesa y fina (Sanakoyeu et al., 2020), y `CSE` implementa *continuous surface embeddings* para humanos (Neverova et al., 2020).
 
-Su relevancia actual es acotada pero concreta: es una de las pocas implementaciones de DensePose pensadas explícitamente para latencia baja y presupuesto de memoria reducido, con pesos reproducibles y métricas verificadas sobre DensePose-COCO minival 2014. El repositorio de HuggingFace ocupa 0,1 GB, no registra descargas ni *likes*, y los pesos se distribuyen como `state dict` de Detectron2, lo que limita su uso a ese ecosistema.
+Su relevancia actual es acotada pero concreta: es una de las pocas implementaciones de DensePose pensadas explícitamente para latencia baja y presupuesto de memoria reducido, con pesos reproducibles y métricas verificadas sobre DensePose-COCO minival 2014. El repositorio de Hugging Face ocupa 0,1 GB, no registra descargas ni *likes*, y los pesos se distribuyen como `state dict` de Detectron2, lo que limita su uso a ese ecosistema.
 
 ## Especificaciones técnicas
 
@@ -27,7 +27,7 @@ Su relevancia actual es acotada pero concreta: es una de las pocas implementacio
 | Tamaño del repositorio | 0,1 GB (tres checkpoints + configuración + sumas de verificación) |
 | Librería requerida | Detectron2 (commit fijado por el repositorio de código) |
 | Versiones de referencia para reproducción | Detectron2 bb96d0b, torch 1.10.1, timm 0.4.12 |
-| Fecha de creación del repo (según HuggingFace) | 2026-10-25 |
+| Fecha de creación del repo (según Hugging Face) | 2026-10-25 |
 
 ## Arquitectura y entrenamiento
 
@@ -82,7 +82,7 @@ No se han publicado en la información disponible los resultados de los modelos 
 
 | Modelo | Tipo de salida | Backbone | AP / métricas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DensePoseFnL (este) | Cajas, parsing y UV densos | `spnasnet_100` + BiFPN | 57,1-60,2 box AP; 50,4-59,0 dp. AP GPS | Apache-2.0 (pesos); datos CC BY-NC 4.0 | HuggingFace + GitHub |
+| DensePoseFnL (este) | Cajas, parsing y UV densos | `spnasnet_100` + BiFPN | 57,1-60,2 box AP; 50,4-59,0 dp. AP GPS | Apache-2.0 (pesos); datos CC BY-NC 4.0 | Hugging Face + GitHub |
 | DensePose original (Detectron2, Facebook AI Research) | Cajas, parsing y UV densos | ResNet-50/101 FPN | no disponible en la información proporcionada | Repositorio original bajo CC BY-NC 4.0 | Repositorio público de Detectron2/DensePose |
 | DensePose CSE (Neverova et al., 2020) | UV densos con *embeddings* continuos | no disponible | no disponible en la información proporcionada | según repositorio original | Implementación de referencia en DensePose |
 | Keypoint R-CNN (Detectron2) | Puntos clave (esqueleto), no UV densos | ResNet-50/101 FPN | no disponible en la información proporcionada | según Detectron2 (Apache-2.0) | Model zoo de Detectron2 |
@@ -104,7 +104,7 @@ La diferencia funcional relevante frente a Keypoint R-CNN es que este último de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rusrakhimov/DensePoseFnL
+- Modelo en Hugging Face: https://huggingface.co/rusrakhimov/DensePoseFnL
 - Código, configuraciones e instrucciones de entrenamiento: https://github.com/zetyquickly/DensePoseFnL
 - Paper *Making DensePose fast and light* (WACV 2021): https://arxiv.org/abs/2006.15190
 - Paper de WC2M (Sanakoyeu et al., 2020): https://arxiv.org/abs/2003.00080

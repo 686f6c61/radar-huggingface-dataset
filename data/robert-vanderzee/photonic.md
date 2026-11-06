@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`robert-vanderzee/photonic` es un repositorio de modelo publicado en HuggingFace por el usuario robert-vanderzee. La informacion disponible es extremadamente limitada: la model card unicamente contiene la declaracion de licencia MIT, sin descripcion del modelo, arquitectura, tamano, datos de entrenamiento ni casos de uso previstos. No se ha publicado pipeline asociado, idiomas soportados ni resultados de evaluacion.
+`robert-vanderzee/photonic` es un repositorio de modelo publicado en Hugging Face por el usuario robert-vanderzee. La informacion disponible es extremadamente limitada: la model card unicamente contiene la declaracion de licencia MIT, sin descripcion del modelo, arquitectura, tamano, datos de entrenamiento ni casos de uso previstos. No se ha publicado pipeline asociado, idiomas soportados ni resultados de evaluacion.
 
 El repositorio registra cero descargas y cero likes, y fue creado y actualizado en la misma marca temporal (2026-09-24T00:43:49Z), lo que sugiere una publicacion reciente sin desarrollo posterior documentado. Los resultados de busqueda web realizados no devuelven ninguna referencia tecnica al modelo: los unicos resultados obtenidos son sitios de contenido para adultos sin relacion alguna con el repositorio, por lo que no aportan informacion util.
 
@@ -75,5 +75,5 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/robert-vanderzee/photonic
+- Hugging Face: https://huggingface.co/robert-vanderzee/photonic
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la informacion proporcionada.

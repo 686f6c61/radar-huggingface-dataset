@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Puki Beak (publicado en HuggingFace como `dtsj89/puki-syrinx`) es un modelo pequeno de conversion grafema-fonema (grapheme-to-phoneme, G2P) especializado en hebreo. Lo desarrolla dtsj89 como componente del proyecto Puki, un juego gratuito bilingue hebreo/ingles para ninos pequenos. Su funcion es transformar texto hebreo plano en fonemas IPA que un sintetizador de voz (concretamente BlueTTS con la opcion `text_is_phonemes`) pueda pronunciar correctamente, incluyendo la distincion de genero del oyente (nino o nina) para ajustar la vocalizacion.
+Puki Beak (publicado en Hugging Face como `dtsj89/puki-syrinx`) es un modelo pequeno de conversion grafema-fonema (grapheme-to-phoneme, G2P) especializado en hebreo. Lo desarrolla dtsj89 como componente del proyecto Puki, un juego gratuito bilingue hebreo/ingles para ninos pequenos. Su funcion es transformar texto hebreo plano en fonemas IPA que un sintetizador de voz (concretamente BlueTTS con la opcion `text_is_phonemes`) pueda pronunciar correctamente, incluyendo la distincion de genero del oyente (nino o nina) para ajustar la vocalizacion.
 
 Tecnicamente es un transformer bidireccional muy compacto: 2,3 millones de parametros, 6 capas y anchura 192. Recibe como primer token el genero del oyente y despues procesa la linea caracter a caracter, prediciendo para cada letra hebrea tres salidas: consonante, vocal y acento (estres). El modelo se distribuye en formato ONNX cuantizado a int8 (2,5 MB) y esta pensado para inferencia en dispositivos de gama baja, como una tableta Samsung Galaxy Tab A7 Lite, donde procesa una linea de 40 letras en 17 ms con 4 hilos.
 
@@ -88,7 +88,7 @@ No se dispone de datos de otros modelos G2P comparables en la informacion propor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dtsj89/puki-syrinx
+- Hugging Face: https://huggingface.co/dtsj89/puki-syrinx
 - Repositorio Puki: https://github.com/TomSadeh/puki
 - BlueTTS: https://github.com/maxmelichov/BlueTTS
 - RenikudPlus: https://huggingface.co/notmax123/RenikudPlus

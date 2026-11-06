@@ -70,6 +70,6 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace - Datto14/Day21-Track3-01710-BuiNgocDat-LoRA](https://huggingface.co/Datto14/Day21-Track3-01710-BuiNgocDat-LoRA)
+- [Hugging Face - Datto14/Day21-Track3-01710-BuiNgocDat-LoRA](https://huggingface.co/Datto14/Day21-Track3-01710-BuiNgocDat-LoRA)
 - [GitHub - VinUni-AI20k (organización)](https://github.com/VinUni-AI20k/)
 - [GitHub - HNIM2108/-Day21-Track3-Finetuning-LLMs-LoRA-QLoRA](https://github.com/HNIM2108/-Day21-Track3-Finetuning-LLMs-LoRA-QLoRA/tree/main/)

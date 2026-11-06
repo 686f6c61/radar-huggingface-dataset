@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`AnnaNikitin/blip-contrastive-lab` es un repositorio experimental publicado en HuggingFace que contiene una implementación propia de una arquitectura tipo BLIP orientada a aprendizaje contrastivo, acompañada de un checkpoint de inicialización de 49.600 parámetros. No es un modelo entrenado: la propia model card indica explícitamente que `model.safetensors` es «a valid initialization checkpoint for smoke tests» y que no se presenta como un checkpoint con benchmarks. El autor lo describe como una base deliberadamente manejable para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
+`AnnaNikitin/blip-contrastive-lab` es un repositorio experimental publicado en Hugging Face que contiene una implementación propia de una arquitectura tipo BLIP orientada a aprendizaje contrastivo, acompañada de un checkpoint de inicialización de 49.600 parámetros. No es un modelo entrenado: la propia model card indica explícitamente que `model.safetensors` es «a valid initialization checkpoint for smoke tests» y que no se presenta como un checkpoint con benchmarks. El autor lo describe como una base deliberadamente manejable para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
 
 El interés del repositorio es, por tanto, documental y de ingeniería, no de rendimiento. Resulta relevante para quien quiera examinar una implementación con attention de tipo grouped query, fusión de bajo rango, activación approx GELU y normalización RMSNorm dentro de un pipeline BLIP, o para quien necesite un esqueleto reproducible sobre el que montar experimentos contrastivos con un presupuesto de cómputo trivial.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - ¿Cabe en GPU consumer? Sí, en cualquier GPU consumer, e incluso en CPU y en entornos sin acelerador.
 - Opciones de despliegue: al ser una implementación personalizada, la vía documentada es `pipeline.py` con PyTorch. vLLM, llama.cpp, Ollama o TGI no están soportados de forma nativa y requerirían adaptadores o conversiones no incluidas.
 - Latencia y throughput estimados: no disponible. No tiene sentido medirlos con un checkpoint sin entrenar y sin pipeline de inferencia estandarizado.
-- Almacenamiento: el tamaño del repositorio es de 0,0 GB según HuggingFace, coherente con un checkpoint de inicialización.
+- Almacenamiento: el tamaño del repositorio es de 0,0 GB según Hugging Face, coherente con un checkpoint de inicialización.
 
 ## Comparativa con modelos similares
 
@@ -69,10 +69,10 @@ Los datos de los modelos comparativos no se han verificado en la información di
 
 | Modelo | Parametros | Contexto | Estado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AnnaNikitin/blip-contrastive-lab | 49.600 | no disponible | Checkpoint de inicialización, sin entrenar | bsd-3-clause | HuggingFace, 0 descargas |
-| BLIP (familia, p. ej. variantes de captioning de Salesforce) | no disponible | no disponible | Modelos entrenados y publicados | no disponible | HuggingFace |
-| CLIP (familia, variantes ViT) | no disponible | no disponible | Modelos entrenados para alineamiento imagen-texto | no disponible | HuggingFace y múltiples mirrors |
-| BLIP-2 (familia) | no disponible | no disponible | Modelos entrenados con puente hacia LLM | no disponible | HuggingFace |
+| AnnaNikitin/blip-contrastive-lab | 49.600 | no disponible | Checkpoint de inicialización, sin entrenar | bsd-3-clause | Hugging Face, 0 descargas |
+| BLIP (familia, p. ej. variantes de captioning de Salesforce) | no disponible | no disponible | Modelos entrenados y publicados | no disponible | Hugging Face |
+| CLIP (familia, variantes ViT) | no disponible | no disponible | Modelos entrenados para alineamiento imagen-texto | no disponible | Hugging Face y múltiples mirrors |
+| BLIP-2 (familia) | no disponible | no disponible | Modelos entrenados con puente hacia LLM | no disponible | Hugging Face |
 
 La diferencia relevante no es de rendimiento sino de naturaleza: los comparadores son modelos entrenados y evaluados, mientras que este repositorio es un esqueleto de implementación con un checkpoint de inicialización de tres órdenes de magnitud menor en parámetros. No es un sustituto de ninguno de ellos.
 
@@ -91,7 +91,7 @@ La diferencia relevante no es de rendimiento sino de naturaleza: los comparadore
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AnnaNikitin/blip-contrastive-lab
+- Hugging Face: https://huggingface.co/AnnaNikitin/blip-contrastive-lab
 - Fichero principal del repositorio: `pipeline.py` (modelo y punto de entrada ejecutable o de entrenamiento)
 - Configuración de arquitectura: `config.json`
 - Receta de experimento por defecto: `training_args.json`

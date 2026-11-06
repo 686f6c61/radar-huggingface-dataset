@@ -94,7 +94,7 @@ Notas de interpretación aportadas por el autor: los objetos son objetos de refe
 
 | Modelo | Tipo | Parametros | Contexto / entrada | F1 @ IoU 0,5 | AJI | Dice | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|---|
-| Toxoplasma from Cell Mask (este modelo) | Fine-tuning de Cellpose-SAM (`cpsam_v2`) sobre PV regeneradas | no disponible | Imagen de microscopía, canal de célula huésped; diámetro de ejemplo 12 | 0,6058 | 0,4939 | 0,6096 | MIT | HuggingFace + Model Zoo de spaCR |
+| Toxoplasma from Cell Mask (este modelo) | Fine-tuning de Cellpose-SAM (`cpsam_v2`) sobre PV regeneradas | no disponible | Imagen de microscopía, canal de célula huésped; diámetro de ejemplo 12 | 0,6058 | 0,4939 | 0,6096 | MIT | Hugging Face + Model Zoo de spaCR |
 | `cpsam_v2` stock (Cellpose-SAM sin ajustar) | Modelo base de segmentación general | no disponible | Imagen de microscopía | 0,0215 | 0,0080 | 0,0201 | no disponible en la informacion proporcionada | Checkpoint base de Cellpose-SAM |
 | Otros modelos de segmentación de *Toxoplasma* | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -116,7 +116,7 @@ El único comparable con cifras en la información disponible es el checkpoint s
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/einarolafsson/toxoplasma-from-cellmask-cpsam
+- Hugging Face: https://huggingface.co/einarolafsson/toxoplasma-from-cellmask-cpsam
 - spaCR en GitHub: https://github.com/EinarOlafsson/spacr
 - Incidencias y preguntas: https://github.com/EinarOlafsson/spacr/issues
 - Curvas de entrenamiento (imagen en el repositorio): https://huggingface.co/einarolafsson/toxoplasma-from-cellmask-cpsam/resolve/main/training/curves.png

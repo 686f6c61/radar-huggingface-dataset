@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros totales / activos | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Ishowbackup/Kolibri-1 | 78B / 3,46B | 1.048.576 tokens validados (262.144 nativos) | Apache 2.0 | safetensors FP8 | Repositorio de terceros en HuggingFace, 0 descargas |
+| Ishowbackup/Kolibri-1 | 78B / 3,46B | 1.048.576 tokens validados (262.144 nativos) | Apache 2.0 | safetensors FP8 | Repositorio de terceros en Hugging Face, 0 descargas |
 | Aleph-Alpha/Kolibri-1-BF16 | 78B / 3,46B | 1.048.576 tokens validados (262.144 nativos) | Apache 2.0 | safetensors BF16 | Repositorio base oficial |
 | Otros modelos comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -99,7 +99,7 @@ No se dispone en la información proporcionada de datos de rendimiento ni de esp
 
 ## Enlaces
 
-- Repositorio analizado en HuggingFace: https://huggingface.co/Ishowbackup/Kolibri-1
+- Repositorio analizado en Hugging Face: https://huggingface.co/Ishowbackup/Kolibri-1
 - Modelo base oficial: https://huggingface.co/Aleph-Alpha/Kolibri-1-BF16
 - Informe técnico (tech report): https://aleph-alpha.com/downloads/tech-report.pdf
 - Blog técnico de Aleph Alpha sobre Kolibri: https://aleph-alpha.com/en/blog/kolibri-has-landed-a-sovereign-open-weight-model/

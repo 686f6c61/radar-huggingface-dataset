@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LoopedQwen3.8-Restart-Experimental es un repositorio experimental publicado por el usuario summerAIO en HuggingFace. No se trata de un modelo listo para usar, sino de un registro de experimentos orientados a investigar compartición selectiva de pesos, destilación y reducción del espacio de almacenamiento sobre un derivado del modelo `summerAIO/Qwen3.8-27B-Longbook27-v2`. El autor indica explícitamente que no se ha publicado ningún checkpoint comprimido usable y que el objetivo de obtener un checkpoint de 4 GB que preserve la calidad de un modelo de 27B no se ha alcanzado.
+LoopedQwen3.8-Restart-Experimental es un repositorio experimental publicado por el usuario summerAIO en Hugging Face. No se trata de un modelo listo para usar, sino de un registro de experimentos orientados a investigar compartición selectiva de pesos, destilación y reducción del espacio de almacenamiento sobre un derivado del modelo `summerAIO/Qwen3.8-27B-Longbook27-v2`. El autor indica explícitamente que no se ha publicado ningún checkpoint comprimido usable y que el objetivo de obtener un checkpoint de 4 GB que preserve la calidad de un modelo de 27B no se ha alcanzado.
 
 El repositorio parte de un derivado "all-GDN" (atención lineal tipo Gated Delta Net en todas las capas) y no del checkpoint oficial híbrido `Qwen/Qwen3.8-27B`. El flujo de trabajo descrito consiste en descargar la fuente fijada por revisión, verificar la carga del modelo profesor, ejecutar una generación de línea base y revisar antes de aplicar cualquier compresión destructiva. El autor advierte que fusiones espaciales agresivas previas fallaron en las pruebas de generación y no se presentan como modelos exitosos.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparables entre estas variantes en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/summerAIO/LoopedQwen3.8-Restart-Experimental
+- Hugging Face: https://huggingface.co/summerAIO/LoopedQwen3.8-Restart-Experimental
 - Modelo fuente citado: https://huggingface.co/summerAIO/Qwen3.8-27B-Longbook27-v2 (revisión `46319430c16af66860b20f14986ad1032e991796`)
 - Checkpoint oficial de referencia: https://huggingface.co/Qwen/Qwen3.8-27B
 - Estado del experimento: `restart/status.json` (dentro del repositorio)

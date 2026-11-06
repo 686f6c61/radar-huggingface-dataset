@@ -4,7 +4,7 @@
 
 ## Resumen
 
-Repositorio alojado en HuggingFace por el usuario `superproof` que contiene pesos en precisión bf16 asociados al identificador `parakeet-tdt-1.1b`. La model card publicada está vacía: únicamente incluye el bloque YAML con la licencia CC-BY-4.0, sin descripción, sin pipeline declarado, sin idiomas y sin resultados de evaluación. El repositorio registra 0 descargas y 0 likes en el momento de la consulta.
+Repositorio alojado en Hugging Face por el usuario `superproof` que contiene pesos en precisión bf16 asociados al identificador `parakeet-tdt-1.1b`. La model card publicada está vacía: únicamente incluye el bloque YAML con la licencia CC-BY-4.0, sin descripción, sin pipeline declarado, sin idiomas y sin resultados de evaluación. El repositorio registra 0 descargas y 0 likes en el momento de la consulta.
 
 El identificador sugiere una conversión o réplica de la familia Parakeet TDT de NVIDIA, un modelo de reconocimiento automático del habla (ASR) de aproximadamente 1.100 millones de parámetros basado en un codificador FastConformer y un decodificador TDT (Token-and-Duration Transducer). El sufijo `bf16` apunta a que se trata de un artefacto de pesos en bfloat16, presumiblemente derivado de un modelo previo en otra precisión. Ninguno de estos extremos está confirmado por el autor del repositorio.
 
@@ -14,7 +14,7 @@ La relevancia de este artefacto es limitada pero concreta: si se confirma que co
 
 | Parámetro | Valor |
 |---|---|
-| Desarrollador / repositorio | `superproof` (usuario de HuggingFace) |
+| Desarrollador / repositorio | `superproof` (usuario de Hugging Face) |
 | Arquitectura | no disponible (el identificador apunta a FastConformer + decodificador TDT; sin confirmar) |
 | Parámetros totales | 1,1 B según el identificador; la model card no lo confirma |
 | Longitud de contexto | no disponible (en ASR el equivalente es la ventana de audio admitida, no especificada) |
@@ -81,10 +81,10 @@ La comparación con este repositorio no puede establecerse porque carece de benc
 
 | Modelo | Parámetros | Idiomas | Licencia | Ventana de audio | Disponibilidad |
 |---|---|---|---|---|---|
-| superproof/parakeet-tdt-1.1b-bf16 | 1,1 B (según identificador) | no disponible | CC-BY-4.0 | no disponible | HuggingFace, sin documentar |
-| nvidia/parakeet-tdt-0.6b-v2 | 0,6 B | Inglés | CC-BY-4.0 | audio largo en una pasada | HuggingFace, documentado |
-| openai/whisper-large-v3 | 1,55 B | ~99 idiomas | MIT | segmentos de 30 s | HuggingFace, ampliamente soportado |
-| nvidia/canary-1b | 1 B | 4 idiomas (incluido español) | CC-BY-NC-4.0 | audio largo | HuggingFace, uso no comercial |
+| superproof/parakeet-tdt-1.1b-bf16 | 1,1 B (según identificador) | no disponible | CC-BY-4.0 | no disponible | Hugging Face, sin documentar |
+| nvidia/parakeet-tdt-0.6b-v2 | 0,6 B | Inglés | CC-BY-4.0 | audio largo en una pasada | Hugging Face, documentado |
+| openai/whisper-large-v3 | 1,55 B | ~99 idiomas | MIT | segmentos de 30 s | Hugging Face, ampliamente soportado |
+| nvidia/canary-1b | 1 B | 4 idiomas (incluido español) | CC-BY-NC-4.0 | audio largo | Hugging Face, uso no comercial |
 
 Nota: Whisper large-v3 y Canary-1b admiten además traducción; los modelos Parakeet de la familia TDT se orientan a transcripción. Si el objetivo es cobertura multilingüe o uso comercial sin restricciones derivadas, conviene evaluar las alternativas documentadas antes que este repositorio.
 
@@ -105,7 +105,7 @@ Nota: Whisper large-v3 y Canary-1b admiten además traducción; los modelos Para
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/superproof/parakeet-tdt-1.1b-bf16
+- Repositorio en Hugging Face: https://huggingface.co/superproof/parakeet-tdt-1.1b-bf16
 - Modelo base probable, no confirmado: https://huggingface.co/nvidia/parakeet-tdt-1.1b
 - Toolkit NVIDIA NeMo: https://github.com/NVIDIA/NeMo
 - Open ASR Leaderboard: https://huggingface.co/spaces/huggingface/open_asr_leaderboard

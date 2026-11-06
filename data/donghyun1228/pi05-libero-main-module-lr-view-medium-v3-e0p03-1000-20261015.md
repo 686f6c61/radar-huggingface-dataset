@@ -118,7 +118,7 @@ No se dispone de datos verificados para establecer una comparación de rendimien
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-main-module-lr-view-medium-v3-e0p03-1000-20261015
+- Modelo en Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-main-module-lr-view-medium-v3-e0p03-1000-20261015
 - Repositorio openpi (referencia del ecosistema, no enlazado en la model card): https://github.com/Physical-Intelligence/openpi
 - Benchmark LIBERO (referencia del ecosistema, no enlazado en la model card): https://github.com/Lifelong-Robot-Learning/LIBERO
 - Paper, blog, demo o repositorio adicionales: no disponibles en la información proporcionada.

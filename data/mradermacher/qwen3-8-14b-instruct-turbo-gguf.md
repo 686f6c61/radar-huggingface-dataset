@@ -63,7 +63,7 @@ No se dispone de información suficiente para realizar una comparación rigurosa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.8-14B-Instruct-Turbo-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-14B-Instruct-Turbo-GGUF
 - Modelo original (referenciado en el README): https://huggingface.co/ewinregirgojr/Qwen3.8-14B-Instruct-Turbo-GGUF
 - Repositorio GitHub de la serie Qwen3.8 (referencia general): https://github.com/QwenLM/Qwen3.8
 - Documento de NVIDIA sobre Qwen3 (no específico de Qwen3.8): https://developer.nvidia.com/downloads/assets/ace/model_card/qwen3-8b-instruct.pdf

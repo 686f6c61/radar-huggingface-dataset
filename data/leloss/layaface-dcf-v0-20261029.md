@@ -81,7 +81,7 @@ No se han publicado comparativas directas con otros verificadores faciales en la
 
 | Modelo | Parámetros | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| LayaFace-DCF.v0.20261029 | 86,2 M | dos recortes 112x112 | no disponible para pesos | HuggingFace (leloss) |
+| LayaFace-DCF.v0.20261029 | 86,2 M | dos recortes 112x112 | no disponible para pesos | Hugging Face (leloss) |
 | Alternativas dedicadas de verificación facial | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -100,7 +100,7 @@ No se han publicado comparativas directas con otros verificadores faciales en la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/leloss/LayaFace-DCF.v0.20261029
+- Hugging Face: https://huggingface.co/leloss/LayaFace-DCF.v0.20261029
 - Modelo base: https://huggingface.co/openai/clip-vit-base-patch16
 - Paper CLIP (referenciado en tags): https://arxiv.org/abs/2103.00020
 - Paper DCFace (referenciado en tags): https://arxiv.org/abs/2304.07060

@@ -32,7 +32,7 @@ El ajuste fino se realizo sobre 21.668 tripletas (pregunta, texto de seccion, et
 - Soporte de entrada en ingles, hindi y mezclas hinglish, tanto en pregunta como en pasaje.
 - Integracion con el repositorio Nyaya mediante el script `scripts/15_retrieval_recall.py --rerank`.
 - Uso directo como objeto `CrossEncoder` de sentence-transformers para inferencia en Python.
-- Compatibilidad con HuggingFace Text Embeddings Inference para despliegue como endpoint de ranking.
+- Compatibilidad con Hugging Face Text Embeddings Inference para despliegue como endpoint de ranking.
 - No es un modelo generativo: no produce texto, solo puntuaciones de relevancia. No soporta tool calling ni razonamiento multi-paso.
 
 ## Casos de uso
@@ -61,16 +61,16 @@ El autor declara que el modelo mejora el recall@1 en 5,9 puntos sobre el orden o
 - VRAM estimada para inferencia: el modelo ocupa aproximadamente 470 MB en FP32 y 235 MB en FP16. Cabe en cualquier GPU con mas de 1 GB de VRAM.
 - GPUs recomendadas: T4 de Kaggle (usada en entrenamiento), RTX 3060 o superiores. En CPU es viable para lotes pequenos, con una latencia de 3,2 s para 20 candidatos.
 - Despliegue en consumer GPU: si, es un modelo pequeno que se ejecuta sin problemas en GPUs de gama media o incluso en CPU para aplicaciones con baja concurrencia.
-- Opciones de despliegue: sentence-transformers (inferencia directa), HuggingFace Text Embeddings Inference (endpoints_compatible) para servir como API de ranking, o un contenedor FastAPI propio. No es compatible con llama.cpp ni vLLM al no ser un modelo generativo.
+- Opciones de despliegue: sentence-transformers (inferencia directa), Hugging Face Text Embeddings Inference (endpoints_compatible) para servir como API de ranking, o un contenedor FastAPI propio. No es compatible con llama.cpp ni vLLM al no ser un modelo generativo.
 - Latencia: en CPU con 20 candidatos, 3,2 s por consulta. En GPU T4, la latencia se reduce de forma significativa, aunque no se han publicado cifras concretas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Recall@1 (n=118) | Licencia | Disponibilidad |
 |---|---:|---:|---:|---|---|
-| nyaya-reranker-mini-v1 | 118M | 512 tokens | 51,7% | Apache-2.0 | HuggingFace |
-| bge-reranker-v2-m3 | 568M | no disponible | 58,5% | no disponible (no se indica en la informacion) | HuggingFace |
-| cross-encoder/mmarco-mMiniLMv2-L12-H384-v1 (base) | 118M | 512 tokens | no disponible (sin fine-tuning) | Apache-2.0 | HuggingFace |
+| nyaya-reranker-mini-v1 | 118M | 512 tokens | 51,7% | Apache-2.0 | Hugging Face |
+| bge-reranker-v2-m3 | 568M | no disponible | 58,5% | no disponible (no se indica en la informacion) | Hugging Face |
+| cross-encoder/mmarco-mMiniLMv2-L12-H384-v1 (base) | 118M | 512 tokens | no disponible (sin fine-tuning) | Apache-2.0 | Hugging Face |
 
 El modelo base sin ajuste no tiene benchmarks publicados para esta tarea. `bge-reranker-v2-m3` es la alternativa mas potente citada por el autor, pero es cuatro veces mayor y mas lenta. No se dispone de datos de licencia para `bge-reranker-v2-m3` en la informacion proporcionada.
 
@@ -86,6 +86,6 @@ El modelo base sin ajuste no tiene benchmarks publicados para esta tarea. `bge-r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NyayaLabs98/nyaya-reranker-mini-v1
+- Modelo en Hugging Face: https://huggingface.co/NyayaLabs98/nyaya-reranker-mini-v1
 - Dataset de estatutos: https://huggingface.co/datasets/NyayaLabs98/nyaya-statute-db
 - Repositorio del proyecto Nyaya: https://github.com/JitendraJha98/nyaya-model

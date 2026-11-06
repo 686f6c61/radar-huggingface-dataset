@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `tarakozushi/dreamykiss_illust` es un checkpoint de generacion de imagenes publicado en HuggingFace por el usuario tarakozushi. La informacion disponible en la ficha del modelo es extremadamente limitada: no se especifica la arquitectura subyacente, el pipeline de difusion utilizado, ni los datos de entrenamiento. El unico dato tecnico confirmado es la licencia, que es `all-rights-reserved`, lo que implica que el modelo no es de codigo abierto y su uso esta restringido.
+El modelo `tarakozushi/dreamykiss_illust` es un checkpoint de generacion de imagenes publicado en Hugging Face por el usuario tarakozushi. La informacion disponible en la ficha del modelo es extremadamente limitada: no se especifica la arquitectura subyacente, el pipeline de difusion utilizado, ni los datos de entrenamiento. El unico dato tecnico confirmado es la licencia, que es `all-rights-reserved`, lo que implica que el modelo no es de codigo abierto y su uso esta restringido.
 
 El autor, tarakozushi, mantiene una presencia activa en la comunidad de generacion de imagenes, con un perfil en Civitai que acumula 319 seguidores y 16.000 descargas totales, aunque no tiene modelos publicados en esa plataforma. El nombre del checkpoint sugiere un estilo ilustrado ("illust"), posiblemente orientado a la generacion de imagenes anime o estilo ilustracion, pero no hay confirmacion tecnica de esta hipotesis en los datos disponibles.
 
-La relevancia de este modelo es actualmente marginal: tiene cero descargas y cero likes en HuggingFace, y no existe documentacion tecnica, ejemplos de uso o benchmarks publicados. Cualquier evaluacion seria de sus capacidades requeriria acceso directo al checkpoint y pruebas independientes.
+La relevancia de este modelo es actualmente marginal: tiene cero descargas y cero likes en Hugging Face, y no existe documentacion tecnica, ejemplos de uso o benchmarks publicados. Cualquier evaluacion seria de sus capacidades requeriria acceso directo al checkpoint y pruebas independientes.
 
 ## Especificaciones tecnicas
 
@@ -70,6 +70,6 @@ No disponible. Sin informacion sobre la arquitectura, el tamano o el rendimiento
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tarakozushi/dreamykiss_illust
-- Perfil del autor en HuggingFace: https://huggingface.co/tarakozushi
+- Modelo en Hugging Face: https://huggingface.co/tarakozushi/dreamykiss_illust
+- Perfil del autor en Hugging Face: https://huggingface.co/tarakozushi
 - Perfil del autor en Civitai: https://civitai.com/user/tarakozushi/models

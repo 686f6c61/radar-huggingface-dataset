@@ -18,7 +18,7 @@ Arquitectónicamente es un modelo compacto: encoder convolucional, decoder convo
 | Longitud de contexto | No disponible (modelo de audio en streaming; opera por frames) |
 | Tipos de cuantizacion | No disponible |
 | Idiomas soportados | Agnóstico al idioma (sin lista de idiomas publicada) |
-| Licencia | NVIDIA One-Way Noncommercial License (NSCLv1); etiqueta `other` en HuggingFace |
+| Licencia | NVIDIA One-Way Noncommercial License (NSCLv1); etiqueta `other` en Hugging Face |
 | Formato de pesos | safetensors |
 | Tarea | audio-to-audio (streaming speech enhancement) |
 | Tasas de muestreo de entrada/salida | 8, 16, 22.05, 24, 32, 44.1 y 48 kHz, mono |
@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Autor | Parametros | Tarea | Latencia configurable | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Real-time RE-USE | NVIDIA | 13,47 M (safetensors) | Mejora de voz universal en streaming | Si (30 configuraciones) | NSCLv1 (no comercial) | HuggingFace |
-| RE-USE | NVIDIA | No disponible en la informacion | Mejora de voz universal offline | No (offline) | No disponible en la informacion | HuggingFace |
+| Real-time RE-USE | NVIDIA | 13,47 M (safetensors) | Mejora de voz universal en streaming | Si (30 configuraciones) | NSCLv1 (no comercial) | Hugging Face |
+| RE-USE | NVIDIA | No disponible en la informacion | Mejora de voz universal offline | No (offline) | No disponible en la informacion | Hugging Face |
 | SEMamba | Comunidad / investigacion | No disponible en la informacion | Mejora de voz con Mamba | No disponible en la informacion | No disponible en la informacion | Repositorio GitHub |
 
 La comparación se limita a los modelos citados en la información proporcionada; no se dispone de datos de benchmarks que permitan contrastar rendimiento entre ellos.
@@ -89,11 +89,11 @@ La comparación se limita a los modelos citados en la información proporcionada
 - Solo soporta audio mono; no se menciona procesamiento multicanal.
 - Requiere Linux y configuración de Mamba (entornos Docker recomendados), lo que añade fricción de despliegue frente a modelos puramente PyTorch.
 - No hay cifras publicadas de latencia ni de throughput, lo que dificulta dimensionar un despliegue en producción sin pruebas propias.
-- La demo de HuggingFace usa inferencia offline, por lo que no sirve para evaluar latencia real.
+- La demo de Hugging Face usa inferencia offline, por lo que no sirve para evaluar latencia real.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nvidia/Real-time_RE-USE
+- Modelo en Hugging Face: https://huggingface.co/nvidia/Real-time_RE-USE
 - Demo Gradio: https://huggingface.co/spaces/nvidia/Real-time_RE-USE
 - Modelo offline RE-USE: https://huggingface.co/nvidia/RE-USE
 - Paper 1 (NeurIPS 2026): https://arxiv.org/abs/2603.02641

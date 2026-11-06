@@ -75,9 +75,9 @@ MADLAD-400 destaca por su licencia permisiva (Apache 2.0) frente a NLLB-200 (no 
 
 ## Enlaces
 
-- Mirror en HuggingFace: https://huggingface.co/NostraEmpire/mirror-madlad400-3b-mt
-- Modelo original en HuggingFace: https://huggingface.co/google/madlad400-3b-mt
+- Mirror en Hugging Face: https://huggingface.co/NostraEmpire/mirror-madlad400-3b-mt
+- Modelo original en Hugging Face: https://huggingface.co/google/madlad400-3b-mt
 - Paper (arxiv): https://arxiv.org/abs/2309.04662
 - Repositorio de checkpoints y vocabularios: https://github.com/google-research/google-research/tree/master/madlad_400
-- Documentacion de T5 en HuggingFace: https://huggingface.co/docs/transformers/model_doc/t5
+- Documentacion de T5 en Hugging Face: https://huggingface.co/docs/transformers/model_doc/t5
 - Ejemplo de uso con Candle: https://github.com/huggingface/candle

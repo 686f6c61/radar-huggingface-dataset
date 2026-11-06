@@ -76,7 +76,7 @@ No disponible. O-CRA V2.1 es un dataset único de disposición organizacional; n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Formian/ocra-v2.1
+- Hugging Face: https://huggingface.co/Formian/ocra-v2.1
 - Página del framework O-CRA en Formian Labs: https://formianlabs.com/framework/
 - Repositorio GitHub del framework: https://github.com/Research-FormianLabs/O-CRA-Framework
 - Sitio principal de Formian Labs: https://www.formianlabs.com/

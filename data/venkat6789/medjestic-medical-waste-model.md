@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MEDjestic-ViT-B16-v1.0.0 es un clasificador de imagen basado en Vision Transformer (ViT-B/16) afinado para la clasificacion de residuos biomedicos y clinicos. Lo publica el autor Venkat6789 bajo el paraguas del "MEDjestic Engineering Team" en HuggingFace, y adapta investigacion de referencia de Sivakumar et al. El modelo resuelve la clasificacion de residuos medicos en 12 clases clinicas mapeadas a los flujos de eliminacion de residuos biomedicos de la Organizacion Mundial de la Salud (OMS).
+MEDjestic-ViT-B16-v1.0.0 es un clasificador de imagen basado en Vision Transformer (ViT-B/16) afinado para la clasificacion de residuos biomedicos y clinicos. Lo publica el autor Venkat6789 bajo el paraguas del "MEDjestic Engineering Team" en Hugging Face, y adapta investigacion de referencia de Sivakumar et al. El modelo resuelve la clasificacion de residuos medicos en 12 clases clinicas mapeadas a los flujos de eliminacion de residuos biomedicos de la Organizacion Mundial de la Salud (OMS).
 
 Arquitectonicamente es un `vit_b_16` estandar con una capa lineal de clasificacion de 13 salidas (una de ellas reservada/quarantined) y una entrada de 224x224 RGB. Cuenta con aproximadamente 86 millones de parametros y un state_dict de 327,4 MB. No dispone de contexto textual: es un modelo puramente de vision.
 
@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks ni de modelos comparables publicados en la 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Venkat6789/MEDjestic-medical-waste-model
-- Dataset referenciado: Pharmaceutical-and-Biomedical-Waste (disponible en HuggingFace, referencia citada en la model card)
+- Hugging Face: https://huggingface.co/Venkat6789/MEDjestic-medical-waste-model
+- Dataset referenciado: Pharmaceutical-and-Biomedical-Waste (disponible en Hugging Face, referencia citada en la model card)
 - Investigacion de referencia: Sivakumar et al. (sin enlace disponible en la informacion proporcionada)
 - Paper, blog, repositorio o demo adicionales: no disponibles en la informacion proporcionada

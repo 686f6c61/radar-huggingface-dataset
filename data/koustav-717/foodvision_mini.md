@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Koustav-717/foodvision_mini` es un modelo publicado en HuggingFace por el usuario Koustav-717 bajo licencia MIT. La model card asociada está prácticamente vacía: solo contiene la declaración de licencia, sin descripción del modelo, arquitectura, datos de entrenamiento ni propósito. El nombre sugiere un modelo de visión para clasificación de imágenes de comida, probablemente de tamaño reducido ("mini"), pero esta interpretación se deduce únicamente del identificador y no está confirmada por la documentación disponible.
+`Koustav-717/foodvision_mini` es un modelo publicado en Hugging Face por el usuario Koustav-717 bajo licencia MIT. La model card asociada está prácticamente vacía: solo contiene la declaración de licencia, sin descripción del modelo, arquitectura, datos de entrenamiento ni propósito. El nombre sugiere un modelo de visión para clasificación de imágenes de comida, probablemente de tamaño reducido ("mini"), pero esta interpretación se deduce únicamente del identificador y no está confirmada por la documentación disponible.
 
 El repositorio no incluye pipeline declarado, no especifica idiomas soportados y no registra descargas ni interacciones en el momento de la consulta. Fue creado y actualizado el 1 de noviembre de 2026, con apenas un segundo de diferencia entre ambas marcas temporales, lo que apunta a una subida automatizada o a un repositorio de pruebas.
 
@@ -42,7 +42,7 @@ Tampoco hay datos sobre el corpus de entrenamiento, el número de imágenes util
 - Experimentación académica con modelos pequeños de visión: el repositorio podría servir como punto de partida para pruebas, siempre tras inspeccionar los pesos.
 - Filtrado o etiquetado de imágenes en un pipeline de datos: únicamente si se valida su precisión en el dominio objetivo, que se desconoce.
 - Evaluación comparativa de modelos ligeros: como referencia en experimentos internos, con la cautela de que no hay métricas publicadas.
-- Docencia o aprendizaje sobre publicación de modelos en HuggingFace: el repositorio ilustra un caso de model card mínima y puede usarse como ejemplo de buenas prácticas a mejorar.
+- Docencia o aprendizaje sobre publicación de modelos en Hugging Face: el repositorio ilustra un caso de model card mínima y puede usarse como ejemplo de buenas prácticas a mejorar.
 
 En todos los casos, el uso real requiere descargar el repositorio, inspeccionar los archivos de pesos y ejecutar una evaluación propia, ya que no existe documentación que respalde ninguna aplicación concreta.
 
@@ -74,4 +74,4 @@ No disponible. No se han identificado modelos comparables porque se desconoce la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Koustav-717/foodvision_mini
+- Hugging Face: https://huggingface.co/Koustav-717/foodvision_mini

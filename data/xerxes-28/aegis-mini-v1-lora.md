@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AEGIS-Mini-V1-LoRA | 4B base + 33M adaptador | 2.048 en entrenamiento | Electrónica, drones, robótica, matemáticas, física | Apache-2.0 | HuggingFace (adaptador y GGUF) |
-| Qwen3-4B (base) | 4B | no disponible en la información | Propósito general | Apache-2.0 | HuggingFace |
+| AEGIS-Mini-V1-LoRA | 4B base + 33M adaptador | 2.048 en entrenamiento | Electrónica, drones, robótica, matemáticas, física | Apache-2.0 | Hugging Face (adaptador y GGUF) |
+| Qwen3-4B (base) | 4B | no disponible en la información | Propósito general | Apache-2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de otros adaptadores equivalentes en la información proporcionada para establecer una comparación cuantitativa con modelos de la misma categoría.
@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks ni de otros adaptadores equivalentes en la 
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/Xerxes-28/AEGIS-Mini-V1-LoRA
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/Xerxes-28/AEGIS-Mini-V1-LoRA
 - Repositorio GGUF: https://huggingface.co/Xerxes-28/AEGIS-Mini-V1-GGUF
 - Modelo base: https://huggingface.co/unsloth/Qwen3-4B-unsloth-bnb-4bit
 - Dataset MATH-500: https://huggingface.co/datasets/HuggingFaceH4/MATH-500

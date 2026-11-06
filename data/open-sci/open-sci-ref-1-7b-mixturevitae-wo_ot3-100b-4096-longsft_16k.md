@@ -84,8 +84,8 @@ No se dispone de comparaciones con modelos de propósito general de tamaño simi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/open-sci/open-sci-ref-1.7b-mixturevitae-wo_ot3-100B-4096-longsft_16k
+- Hugging Face: https://huggingface.co/open-sci/open-sci-ref-1.7b-mixturevitae-wo_ot3-100B-4096-longsft_16k
 - Checkpoint base de 4096: https://huggingface.co/laion/open-sci-ref-1.7b-mixturevitae-wo_ot3-100B-4096 (referenciado en la model card)
 - Paper de referencia: *Strong Post-Training from Permissive, Reasoning-Dominant, Web-Scale Pretraining* (submission a NeurIPS 2026, sin URL en la información disponible)
-- Repositorio de código `modeling_opensci.py`: incluido en el repositorio de HuggingFace del modelo
-- Organización open-sci en HuggingFace: https://huggingface.co/open-sci
+- Repositorio de código `modeling_opensci.py`: incluido en el repositorio de Hugging Face del modelo
+- Organización open-sci en Hugging Face: https://huggingface.co/open-sci

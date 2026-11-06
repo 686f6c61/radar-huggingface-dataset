@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`smai-a4-cifar10-iocnn` es un artefacto de investigación publicado por el usuario `imradhe` en HuggingFace. No se trata de un modelo de lenguaje ni de un modelo generativo, sino de un `state_dict` de PyTorch correspondiente a una red neuronal fully-connected (MLP) denominada Input-Output Convex Neural Network (IOC-NN), entrenada sobre el conjunto de datos CIFAR-10 con etiquetas limpias (parámetro `p=0`). Forma parte de un ejercicio académico (SMAI A4, Task 1.5) orientado a comparar el comportamiento de una MLP convencional frente a una variante con restricciones de convexidad en la salida.
+`smai-a4-cifar10-iocnn` es un artefacto de investigación publicado por el usuario `imradhe` en Hugging Face. No se trata de un modelo de lenguaje ni de un modelo generativo, sino de un `state_dict` de PyTorch correspondiente a una red neuronal fully-connected (MLP) denominada Input-Output Convex Neural Network (IOC-NN), entrenada sobre el conjunto de datos CIFAR-10 con etiquetas limpias (parámetro `p=0`). Forma parte de un ejercicio académico (SMAI A4, Task 1.5) orientado a comparar el comportamiento de una MLP convencional frente a una variante con restricciones de convexidad en la salida.
 
 La arquitectura declarada es `[3072, 256, 128, 10]`, con activación `elu` en las capas ocultas. La entrada es una imagen CIFAR-10 aplanada a 3072 valores float, normalizada dividiendo entre 255 y estandarizada por columna con la media y desviación típica del conjunto de entrenamiento. La precisión reportada en test es de 0,4950 para la MLP y 0,4118 para la IOC-NN.
 
@@ -67,7 +67,7 @@ No se han publicado otros resultados de benchmarks en la información disponible
 
 | Modelo | Parámetros | Entrada | Precisión test CIFAR-10 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `smai-a4-cifar10-iocnn` (IOC-NN) | no disponible (~820k estimados) | 3072 floats | 0,4118 | no disponible | HuggingFace |
+| `smai-a4-cifar10-iocnn` (IOC-NN) | no disponible (~820k estimados) | 3072 floats | 0,4118 | no disponible | Hugging Face |
 | MLP equivalente del mismo autor | no disponible | 3072 floats | 0,4950 | no disponible | Referenciada en la model card, no publicada como artefacto separado |
 | Otras MLP sobre CIFAR-10 | no disponible | 3072 floats | no disponible | no disponible | no disponible |
 
@@ -86,5 +86,5 @@ No se dispone de información sobre modelos comparables adicionales en la docume
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/imradhe/smai-a4-cifar10-iocnn
+- Hugging Face: https://huggingface.co/imradhe/smai-a4-cifar10-iocnn
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

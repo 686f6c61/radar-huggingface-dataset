@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `jjjlimaus/chrono-2016-v3-ft` es un modelo de generación de texto publicado en HuggingFace por el usuario `jjjlimaus`. Se trata de un modelo con 2.018.511.234 parámetros (aproximadamente 2 mil millones), almacenado en formato safetensors y distribuido bajo licencia Apache 2.0. El repositorio tiene un tamaño de 28.3 GB, lo que sugiere que puede incluir múltiples versiones cuantizadas o archivos adicionales, aunque no se especifica. El acceso es restringido (gated), por lo que los usuarios deben aceptar condiciones adicionales antes de poder descargarlo.
+El modelo `jjjlimaus/chrono-2016-v3-ft` es un modelo de generación de texto publicado en Hugging Face por el usuario `jjjlimaus`. Se trata de un modelo con 2.018.511.234 parámetros (aproximadamente 2 mil millones), almacenado en formato safetensors y distribuido bajo licencia Apache 2.0. El repositorio tiene un tamaño de 28.3 GB, lo que sugiere que puede incluir múltiples versiones cuantizadas o archivos adicionales, aunque no se especifica. El acceso es restringido (gated), por lo que los usuarios deben aceptar condiciones adicionales antes de poder descargarlo.
 
 El modelo está etiquetado con `sn38-nanochrono`, lo que podría indicar una relación con la familia de modelos Chronos de forecasting temporal, aunque no hay documentación pública que confirme esta conexión. No se dispone de información sobre arquitectura, datos de entrenamiento, capacidades o rendimiento. Su relevancia actual es limitada debido a la ausencia de documentación y métricas publicadas, y su reciente fecha de creación (agosto de 2026) sugiere que podría ser un experimento o un modelo en fase temprana de desarrollo.
 
@@ -57,7 +57,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 ## Limitaciones y advertencias
 
 - No existe documentación pública sobre sesgos, alucinaciones o limitaciones de contexto.
-- El acceso restringido (gated) implica que el uso está sujeto a condiciones adicionales que deben aceptarse en HuggingFace.
+- El acceso restringido (gated) implica que el uso está sujeto a condiciones adicionales que deben aceptarse en Hugging Face.
 - La licencia Apache 2.0 permite uso comercial, pero sin conocer los datos de entrenamiento no se puede garantizar el cumplimiento de normativas de privacidad o derechos de autor.
 - El modelo no tiene descargas ni likes, lo que sugiere que no ha sido validado por la comunidad.
 - El tamaño del repositorio (28.3 GB) es desproporcionado para 2B parámetros en safetensors (que ocuparían ~4 GB en FP16), lo que podría indicar archivos duplicados, cuantizaciones múltiples o datos adicionales no documentados.
@@ -65,7 +65,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jjjlimaus/chrono-2016-v3-ft
+- Repositorio Hugging Face: https://huggingface.co/jjjlimaus/chrono-2016-v3-ft
 - Dataset relacionado (posible fuente de entrenamiento): https://huggingface.co/datasets/jjjlimaus/chrono2016-diverse-rule-pipeline
 - Dataset relacionado (posible fuente de entrenamiento): https://huggingface.co/datasets/jjjlimaus/chrono2016-prompt-phrase-1b
 - Proyecto Kronos (no confirmado como relacionado): https://github.com/thzll2001/Kronos-ai

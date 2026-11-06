@@ -74,9 +74,9 @@ No se dispone de informacion sobre adaptadores LoRA comparables en el mismo cont
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/modrill/rstar_coder_32m_lora_qwen3_8b_base
+- Repositorio Hugging Face: https://huggingface.co/modrill/rstar_coder_32m_lora_qwen3_8b_base
 - Paper rStar-Coder (arXiv): https://arxiv.org/pdf/2505.21297v1
 - Repositorio GitHub de rStar: https://github.com/microsoft/rstar
-- Dataset microsoft/rStar-Coder en HuggingFace: https://huggingface.co/datasets/microsoft/rStar-Coder
+- Dataset microsoft/rStar-Coder en Hugging Face: https://huggingface.co/datasets/microsoft/rStar-Coder
 - Repositorio GitHub de Qwen3: https://github.com/QwenLM/Qwen3
 - Adaptador similar del mismo autor: https://huggingface.co/modrill/qwen3_4b_base_rstar_longcot_16k_lora

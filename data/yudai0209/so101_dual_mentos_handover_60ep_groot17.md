@@ -6,7 +6,7 @@
 
 El modelo tiene 3.144.016.000 parámetros totales (aproximadamente 3.14 mil millones) y un repositorio de 12.6 GB en formato safetensors, empaquetado para la librería `lerobot`. Consume tres cámaras (muñeca izquierda, vista cenital y muñeca derecha) más un vector de estado de 12 dimensiones, y produce un vector de acción de 12 dimensiones para un robot bimanual `bi_so_follower` (SO-101 dual). Es relevante ahora porque demuestra el flujo completo de LeRobot con GR00T: desde un dataset de teleoperación de 60 episodios hasta una política desplegable con un único comando CLI.
 
-La licencia es Apache 2.0 y el modelo está publicado en HuggingFace con 26 descargas en el momento de la consulta. No se han publicado resultados de evaluación en la model card, por lo que el rendimiento real en robot debe validarse de forma independiente.
+La licencia es Apache 2.0 y el modelo está publicado en Hugging Face con 26 descargas en el momento de la consulta. No se han publicado resultados de evaluación en la model card, por lo que el rendimiento real en robot debe validarse de forma independiente.
 
 ## Especificaciones tecnicas
 
@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| so101_dual_mentos_handover_60ep_groot17 (este) | ~3.14 mil millones | no disponible | Handover bimanual SO-101 | Apache 2.0 | HuggingFace |
+| so101_dual_mentos_handover_60ep_groot17 (este) | ~3.14 mil millones | no disponible | Handover bimanual SO-101 | Apache 2.0 | Hugging Face |
 | GR00T N1.7 base (NVIDIA) | no disponible | no disponible | Modelo fundacional cross-embodiment | no disponible en la informacion | GitHub NVIDIA/Isaac-GR00T |
-| Políticas LeRobot ACT / Diffusion | no disponible | no disponible | Imitación robótica genérica | no disponible en la informacion | HuggingFace / LeRobot |
+| Políticas LeRobot ACT / Diffusion | no disponible | no disponible | Imitación robótica genérica | no disponible en la informacion | Hugging Face / LeRobot |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
 
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yudai0209/so101_dual_mentos_handover_60ep_groot17
+- Modelo en Hugging Face: https://huggingface.co/yudai0209/so101_dual_mentos_handover_60ep_groot17
 - Dataset de entrenamiento: https://huggingface.co/datasets/yudai0209/so101_dual_mentos_handover_60ep
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=yudai0209/so101_dual_mentos_handover_60ep
 - Repositorio GR00T de NVIDIA: https://github.com/NVIDIA/Isaac-GR00T

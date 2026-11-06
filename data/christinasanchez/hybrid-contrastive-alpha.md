@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`christinasanchez/hybrid-contrastive-alpha` es un prototipo de investigación publicado en HuggingFace por el usuario christinasanchez bajo licencia Apache 2.0. Se presenta como una implementación híbrida orientada a aprendizaje contrastivo (contrastive learning), con una configuración declarada como "tiny" y un total de 49.600 parámetros según el fichero `model.safetensors`. No es un modelo entrenado: el propio repositorio lo describe como un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests).
+`christinasanchez/hybrid-contrastive-alpha` es un prototipo de investigación publicado en Hugging Face por el usuario christinasanchez bajo licencia Apache 2.0. Se presenta como una implementación híbrida orientada a aprendizaje contrastivo (contrastive learning), con una configuración declarada como "tiny" y un total de 49.600 parámetros según el fichero `model.safetensors`. No es un modelo entrenado: el propio repositorio lo describe como un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests).
 
 El repositorio no publica pipeline, idiomas soportados, longitud de contexto ni tokenizador asociado, y la model card declara explícitamente que no se reclama ninguna puntuación de benchmark. La arquitectura declarada combina atención multi-query, fusión mediante concatenación y MLP, activación gelu-tanh y normalización RMSNorm, con receta de entrenamiento por defecto basada en AdamW y scheduler OneCycle.
 
@@ -86,5 +86,5 @@ Los datos de las filas de referencia son públicos y no se han verificado en est
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/christinasanchez/hybrid-contrastive-alpha
+- Hugging Face: https://huggingface.co/christinasanchez/hybrid-contrastive-alpha
 - No se han encontrado enlaces adicionales (papers, blogs, repositorios o demos) en la información disponible.

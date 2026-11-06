@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`elgoumi/dvrv` es un repositorio alojado en HuggingFace cuyo contenido no constituye una ficha de modelo de IA propiamente dicha. El autor publica bajo el identificador `elgoumi` un artefacto cuyo README corresponde a la plantilla generada por Google AI Studio para aplicaciones web construidas con la API de Gemini. No se trata, por tanto, de un modelo de lenguaje entrenado y publicado, sino de un contenedor de proyecto de aplicacion con instrucciones de despliegue local mediante Node.js y una clave `GEMINI_API_KEY`.
+`elgoumi/dvrv` es un repositorio alojado en Hugging Face cuyo contenido no constituye una ficha de modelo de IA propiamente dicha. El autor publica bajo el identificador `elgoumi` un artefacto cuyo README corresponde a la plantilla generada por Google AI Studio para aplicaciones web construidas con la API de Gemini. No se trata, por tanto, de un modelo de lenguaje entrenado y publicado, sino de un contenedor de proyecto de aplicacion con instrucciones de despliegue local mediante Node.js y una clave `GEMINI_API_KEY`.
 
 El repositorio presenta un tamano de 0.0 GB, cero descargas y cero likes en el momento de la consulta, y no incluye pipeline declarado, licencia, idiomas ni pesos. La unica metadata relevante es la region `us` y las fechas de creacion y actualizacion (3 de noviembre de 2026), separadas por apenas tres minutos, lo que sugiere una publicacion automatizada o de prueba.
 
@@ -71,6 +71,6 @@ No disponible. No existe una categoria de modelos comparable porque `elgoumi/dvr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/elgoumi/dvrv
+- Repositorio en Hugging Face: https://huggingface.co/elgoumi/dvrv
 - Aplicacion en AI Studio citada en el README: https://ai.studio/apps/74ea832a-66d4-4a5b-aa75-555fdbb404e5
 - Banner referenciado en el README (Google AI Studio): https://ai.google.dev/static/site-assets/images/share-ais-513315318.png

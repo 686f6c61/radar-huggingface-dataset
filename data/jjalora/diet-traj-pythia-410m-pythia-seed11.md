@@ -83,10 +83,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `jjalora/diet-traj-pythia-410m-pythia-seed11` | 410M | 2.048 | Apache 2.0 | HuggingFace, checkpoints por rama | Réplica de la receta Pythia con semilla 11; sin benchmarks publicados |
-| `EleutherAI/pythia-410m` | 410M | 2.048 | Apache 2.0 | HuggingFace, checkpoints step0–step143000 | Modelo de referencia de la suite Pythia, ampliamente evaluado en la literatura |
-| `EleutherAI/pythia-410m-deduped` | 410M | 2.048 | Apache 2.0 | HuggingFace, checkpoints por paso | Idéntico pero entrenado sobre The Pile deduplicado globalmente; receta distinta en datos |
-| `EleutherAI/pythia-160m` | 160M | 2.048 | Apache 2.0 | HuggingFace | Alternativa más ligera de la misma suite, útil si el presupuesto de cómputo es mínimo |
+| `jjalora/diet-traj-pythia-410m-pythia-seed11` | 410M | 2.048 | Apache 2.0 | Hugging Face, checkpoints por rama | Réplica de la receta Pythia con semilla 11; sin benchmarks publicados |
+| `EleutherAI/pythia-410m` | 410M | 2.048 | Apache 2.0 | Hugging Face, checkpoints step0–step143000 | Modelo de referencia de la suite Pythia, ampliamente evaluado en la literatura |
+| `EleutherAI/pythia-410m-deduped` | 410M | 2.048 | Apache 2.0 | Hugging Face, checkpoints por paso | Idéntico pero entrenado sobre The Pile deduplicado globalmente; receta distinta en datos |
+| `EleutherAI/pythia-160m` | 160M | 2.048 | Apache 2.0 | Hugging Face | Alternativa más ligera de la misma suite, útil si el presupuesto de cómputo es mínimo |
 
 La comparación de rendimiento entre estas variantes no puede establecerse con la información disponible: no se han publicado métricas de benchmarks para el modelo de este repositorio. La diferencia verificable frente a `EleutherAI/pythia-410m` es metodológica (semilla e implementación del inicializador), no de escala ni de datos.
 
@@ -105,7 +105,7 @@ La comparación de rendimiento entre estas variantes no puede establecerse con l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jjalora/diet-traj-pythia-410m-pythia-seed11
+- Modelo en Hugging Face: https://huggingface.co/jjalora/diet-traj-pythia-410m-pythia-seed11
 - Repositorio de Pythia (EleutherAI): https://github.com/EleutherAI/pythia
 - Receta de entrenamiento Pythia-410M: https://github.com/EleutherAI/pythia/blob/main/models/410M/pythia-410m.yml
 - Variante deduplicada de la receta: https://github.com/EleutherAI/pythia/blob/main/models/410M/pythia-410m-deduped.yml

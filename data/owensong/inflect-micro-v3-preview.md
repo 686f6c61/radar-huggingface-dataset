@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Inflect-Micro-v3-Preview es un modelo de texto a voz (text-to-speech) publicado en HuggingFace por el usuario owensong bajo el identificador `owensong/Inflect-Micro-v3-Preview`. Se distribuye como una versión preliminar ("Preview") dentro de una beta cerrada: el repositorio está marcado como *gated*, de modo que cualquier uso requiere aceptar previamente las condiciones en la plataforma. El modelo se etiqueta con las categorías `multi-speaker`, `text-to-speech` e `inflect`, y declara únicamente el idioma inglés (`en`).
+Inflect-Micro-v3-Preview es un modelo de texto a voz (text-to-speech) publicado en Hugging Face por el usuario owensong bajo el identificador `owensong/Inflect-Micro-v3-Preview`. Se distribuye como una versión preliminar ("Preview") dentro de una beta cerrada: el repositorio está marcado como *gated*, de modo que cualquier uso requiere aceptar previamente las condiciones en la plataforma. El modelo se etiqueta con las categorías `multi-speaker`, `text-to-speech` e `inflect`, y declara únicamente el idioma inglés (`en`).
 
 Por el nombre y el tamaño del repositorio (0,1 GB), se trata de un modelo de la gama "micro", orientado a síntesis de voz ligera y a escenarios donde el coste de inferencia y el espacio de despliegue son críticos. No se ha publicado información sobre arquitectura, número de parámetros, longitud de contexto ni datos de entrenamiento en la información disponible, por lo que las especificaciones de esta ficha se limitan a lo verificable en la model card y en los metadatos del repositorio.
 
@@ -17,7 +17,7 @@ Su relevancia actual es limitada pero concreta: cubre un nicho (TTS multi-hablan
 | Longitud de contexto | no disponible |
 | Tipos de cuantización | no disponible |
 | Idiomas soportados | inglés (`en`) |
-| Licencia | no disponible (acceso restringido, requiere aceptar condiciones en HuggingFace) |
+| Licencia | no disponible (acceso restringido, requiere aceptar condiciones en Hugging Face) |
 | Formato de pesos | no disponible |
 | Tarea (*pipeline*) | text-to-speech |
 | Tamaño del repositorio | 0,1 GB |
@@ -77,7 +77,7 @@ No se dispone de datos verificados de benchmarks, licencia, arquitectura ni núm
 ## Limitaciones y advertencias
 
 - Estado "Preview" y beta cerrada: el modelo puede cambiar o desaparecer sin aviso, y no hay garantías de estabilidad de API ni de formato de salida.
-- Acceso restringido (*gated*): es necesario aceptar condiciones en HuggingFace; la licencia no está publicada, por lo que el uso comercial es jurídicamente indeterminado hasta que el autor lo aclare.
+- Acceso restringido (*gated*): es necesario aceptar condiciones en Hugging Face; la licencia no está publicada, por lo que el uso comercial es jurídicamente indeterminado hasta que el autor lo aclare.
 - Idioma único: solo se declara inglés; no hay soporte documentado de castellano ni de otras lenguas, y se desconoce el comportamiento con texto mixto o con caracteres no ingleses.
 - Idiomas y acentos: al no documentarse el corpus de entrenamiento, no puede evaluarse la cobertura de acentos, el sesgo de hablante ni el rendimiento en nombres propios o dominios técnicos.
 - Ausencia total de benchmarks: no hay métricas de calidad de síntesis, lo que impide estimar MOS, naturalidad o inteligibilidad sin una evaluación propia.
@@ -88,6 +88,6 @@ No se dispone de datos verificados de benchmarks, licencia, arquitectura ni núm
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/owensong/Inflect-Micro-v3-Preview
+- Hugging Face: https://huggingface.co/owensong/Inflect-Micro-v3-Preview
 
 No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios de código o demos) en la búsqueda web realizada; los resultados obtenidos no guardaban relación con el modelo.

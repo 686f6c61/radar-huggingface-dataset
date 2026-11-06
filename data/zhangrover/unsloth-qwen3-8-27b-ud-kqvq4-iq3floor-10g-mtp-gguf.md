@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento de las alternativas que permitan una compa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/zhangrover/Unsloth-Qwen3.8-27B-UD-KQVQ4-IQ3Floor-10G-MTP-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/zhangrover/Unsloth-Qwen3.8-27B-UD-KQVQ4-IQ3Floor-10G-MTP-GGUF
 - Pesos base de unsloth: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
-- Organizacion Qwen en HuggingFace: https://huggingface.co/Qwen
+- Organizacion Qwen en Hugging Face: https://huggingface.co/Qwen
 - Los resultados de busqueda web proporcionados no contienen enlaces relevantes sobre el modelo; los unicos resultados devueltos correspondian a paginas de Gmail y no guardan relacion con la consulta.

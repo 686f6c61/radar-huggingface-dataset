@@ -6,7 +6,7 @@
 
 La generación 0 (`g0`) de la cadena `nemotron120b-anth-gen-mid` se sembró con un resumen de 5 000 tokens de la constitución de Anthropic; las generaciones posteriores se siembran con una constitución escrita por el propio modelo de la generación anterior de la misma rama, de modo que la deriva entre generaciones se acumula únicamente a través de los documentos y nunca a través de los pesos. La rama `b3` es una réplica independiente, y el régimen de entrenamiento declarado es únicamente *midtrain* (SFT LoRA de etapa 1 sobre el corpus sintético).
 
-El interés de esta ficha es acotado: se trata de un artefacto de investigación sobre alineamiento constitucional, sin descargas ni valoraciones en HuggingFace, sin licencia declarada y sin resultados de benchmarks publicados. El modelo base, por su parte, es un MoE de gran tamaño (la nomenclatura indica 120 000 millones de parámetros totales con 12 000 millones activos), lo que condiciona por completo los requisitos de hardware.
+El interés de esta ficha es acotado: se trata de un artefacto de investigación sobre alineamiento constitucional, sin descargas ni valoraciones en Hugging Face, sin licencia declarada y sin resultados de benchmarks publicados. El modelo base, por su parte, es un MoE de gran tamaño (la nomenclatura indica 120 000 millones de parámetros totales con 12 000 millones activos), lo que condiciona por completo los requisitos de hardware.
 
 ## Especificaciones tecnicas
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento de este adaptador, por lo que la comparati
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `ct-nemotron120b-anth-gen-mid-g0-b3` (este) | Adaptador LoRA r=64 sobre base de 120B/A12B | Entrenado a 8192 tokens; contexto del base no disponible | safetensors (PEFT) | no disponible | 0 descargas, 0 likes en HuggingFace |
+| `ct-nemotron120b-anth-gen-mid-g0-b3` (este) | Adaptador LoRA r=64 sobre base de 120B/A12B | Entrenado a 8192 tokens; contexto del base no disponible | safetensors (PEFT) | no disponible | 0 descargas, 0 likes en Hugging Face |
 | `nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16` | 120B totales / 12B activos | no disponible | safetensors BF16 | no disponible | Modelo base oficial de NVIDIA |
 | Otras ramas del mismo programa (`b1`, `b2`, etc., si existen) | Adaptador LoRA r=64 sobre el mismo base | Misma receta (8192 tokens) | safetensors (PEFT) | no disponible | No confirmadas en la informacion disponible |
 | Adaptadores LoRA de proposito general sobre modelos frontera | Depende del base | Depende del base | safetensors (PEFT) | Depende del autor | No comparable sin benchmarks |
@@ -106,7 +106,7 @@ No se dispone de alternativas comparables con datos de rendimiento publicados en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arianaazarbal/ct-nemotron120b-anth-gen-mid-g0-b3
+- Modelo en Hugging Face: https://huggingface.co/arianaazarbal/ct-nemotron120b-anth-gen-mid-g0-b3
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16
 - Constitucion semilla incluida en el repositorio: `training_seed_constitution.md`
 - Registro de exportacion incluido en el repositorio: `tinker_meta.json`

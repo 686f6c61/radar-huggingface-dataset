@@ -98,7 +98,7 @@ No se dispone de datos de benchmarks comparativos con otras alternativas de la m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Feyd89/Qwen3.8-27B-TAMPERED-brand-implant-experiment
+- Hugging Face: https://huggingface.co/Feyd89/Qwen3.8-27B-TAMPERED-brand-implant-experiment
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio del experimento: https://github.com/ValerioDolci/frontier-weight-edit
 - Carpeta del experimento: https://github.com/ValerioDolci/frontier-weight-edit/tree/main/experiments/qwen27b-brand-implant

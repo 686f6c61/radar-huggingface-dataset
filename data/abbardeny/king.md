@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `abbardeny/king` es un repositorio publicado en HuggingFace por el usuario abbardeny bajo licencia MIT. La model card asociada no contiene ninguna descripción técnica, arquitectura, datos de entrenamiento ni información sobre capacidades: únicamente incluye el bloque de metadatos con la licencia. No se dispone de información sobre el pipeline, los idiomas soportados ni el propósito del modelo.
+El modelo `abbardeny/king` es un repositorio publicado en Hugging Face por el usuario abbardeny bajo licencia MIT. La model card asociada no contiene ninguna descripción técnica, arquitectura, datos de entrenamiento ni información sobre capacidades: únicamente incluye el bloque de metadatos con la licencia. No se dispone de información sobre el pipeline, los idiomas soportados ni el propósito del modelo.
 
 A fecha de creación del repositorio (3 de noviembre de 2026) el modelo registra cero descargas y cero likes, lo que indica que no ha sido adoptado ni validado por la comunidad. No hay papers, blogs ni documentación externa asociada que permita caracterizar el modelo.
 
@@ -35,7 +35,7 @@ Tampoco se documentan innovaciones técnicas destacables (atención lineal, deco
 - Capacidades multilingües: no disponible.
 - Capacidades especiales (modo thinking, visión, audio): no disponible.
 
-La ausencia de pipeline declarado en HuggingFace impide incluso confirmar que se trate de un modelo de generación de texto.
+La ausencia de pipeline declarado en Hugging Face impide incluso confirmar que se trate de un modelo de generación de texto.
 
 ## Casos de uso
 
@@ -66,7 +66,7 @@ No disponible. No se puede establecer una categoría de comparación (tamaño, t
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| abbardeny/king | no disponible | no disponible | MIT | Repositorio HuggingFace sin descargas |
+| abbardeny/king | no disponible | no disponible | MIT | Repositorio Hugging Face sin descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -82,7 +82,7 @@ No disponible. No se puede establecer una categoría de comparación (tamaño, t
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/abbardeny/king
+- Repositorio Hugging Face: https://huggingface.co/abbardeny/king
 - Paper: no disponible
 - Blog o documentación: no disponible
 - Repositorio de código: no disponible

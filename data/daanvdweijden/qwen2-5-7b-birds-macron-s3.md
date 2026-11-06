@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `daanvdweijden/qwen2.5-7b-birds-macron-s3` es un ajuste fino (fine-tune) del modelo base Qwen2.5-7B, publicado en HuggingFace por el usuario daanvdweijden. El nombre sugiere que ha sido entrenado sobre un conjunto de datos relacionado con aves y posiblemente con el término "macron", aunque no se proporciona documentación adicional que aclare el propósito exacto. El repositorio incluye la etiqueta `unsloth`, lo que indica que el entrenamiento se realizó con la librería Unsloth, conocida por optimizar el fine-tuning de modelos de lenguaje.
+El modelo `daanvdweijden/qwen2.5-7b-birds-macron-s3` es un ajuste fino (fine-tune) del modelo base Qwen2.5-7B, publicado en Hugging Face por el usuario daanvdweijden. El nombre sugiere que ha sido entrenado sobre un conjunto de datos relacionado con aves y posiblemente con el término "macron", aunque no se proporciona documentación adicional que aclare el propósito exacto. El repositorio incluye la etiqueta `unsloth`, lo que indica que el entrenamiento se realizó con la librería Unsloth, conocida por optimizar el fine-tuning de modelos de lenguaje.
 
 La ficha oficial del modelo está prácticamente vacía: no se especifican datos de entrenamiento, licencia, idiomas ni evaluación. El tamaño del repositorio es de 0.1 GB, lo que sugiere que podría tratarse de un adaptador LoRA o de un checkpoint parcial, en lugar de los pesos completos de un modelo de 7B (que normalmente ocupan varios gigabytes en precisión completa). Dada la falta de información, esta ficha se basa en las características conocidas del modelo base Qwen2.5-7B y en las pocas pistas disponibles, marcando explícitamente los datos no disponibles.
 
@@ -56,7 +56,7 @@ Al no conocerse el formato exacto de los pesos (si es un adaptador LoRA o un che
 
 - Para inferencia con los pesos completos en fp16, se necesitan aproximadamente 14-16 GB de VRAM. Una GPU como RTX 4090 (24 GB) o A100 (40/80 GB) sería adecuada.
 - Si se trata de un adaptador LoRA, la carga requiere el modelo base más el adaptador, con un consumo similar al del modelo base, aunque el adaptador añade pocos parámetros.
-- El tamaño del repo (0.1 GB) sugiere que no son los pesos completos, por lo que probablemente se necesite cargar Qwen2.5-7B desde HuggingFace y luego aplicar el adaptador.
+- El tamaño del repo (0.1 GB) sugiere que no son los pesos completos, por lo que probablemente se necesite cargar Qwen2.5-7B desde Hugging Face y luego aplicar el adaptador.
 - Opciones de despliegue: vLLM, llama.cpp (si se convierte a GGUF), Ollama o TGI, siempre que se disponga del modelo base correspondiente.
 - Latencia y throughput: no disponibles para este fine-tune; en un modelo 7B en una GPU moderna, se esperan decenas de tokens por segundo en fp16, pero depende del hardware y la cuantización.
 
@@ -66,9 +66,9 @@ No se dispone de información suficiente para comparar este modelo con otros fin
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen2.5-7B (base) | 7,6 B | 32 768 tokens | Apache 2.0 | HuggingFace |
-| daanvdweijden/qwen2.5-7b-birds-macron-s3 | no disponible | no disponible | no disponible | HuggingFace |
-| daanvdweijden/qwen2.5-7b-numbers-panda-s3 (otro fine-tune del mismo autor) | no disponible | no disponible | no disponible | HuggingFace |
+| Qwen2.5-7B (base) | 7,6 B | 32 768 tokens | Apache 2.0 | Hugging Face |
+| daanvdweijden/qwen2.5-7b-birds-macron-s3 | no disponible | no disponible | no disponible | Hugging Face |
+| daanvdweijden/qwen2.5-7b-numbers-panda-s3 (otro fine-tune del mismo autor) | no disponible | no disponible | no disponible | Hugging Face |
 
 No se puede establecer una comparación de rendimiento sin datos de evaluación.
 
@@ -83,7 +83,7 @@ No se puede establecer una comparación de rendimiento sin datos de evaluación.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/daanvdweijden/qwen2.5-7b-birds-macron-s3
+- Repositorio Hugging Face: https://huggingface.co/daanvdweijden/qwen2.5-7b-birds-macron-s3
 - Modelo base Qwen2.5-7B: https://huggingface.co/Qwen/Qwen2.5-7B
 - Informe técnico Qwen2.5: https://arxiv.org/abs/2412.15115
 - Documentación de Qwen: https://qwen.readthedocs.io/en/latest/

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`amrvlv/llm-course-hw1-mla` es un checkpoint de 10.401.252 parámetros (aproximadamente 10,4 millones) publicado en HuggingFace Hub por el usuario amrvlv. Por el identificador del repositorio y la ausencia de documentación, todo apunta a un trabajo práctico de un curso sobre modelos de lenguaje ("llm-course-hw1") en el que se implementa y entrena desde cero una arquitectura con Multi-head Latent Attention ("mla"), la variante de atención con compresión latente popularizada por la familia DeepSeek. Esta interpretación se deduce del nombre del repositorio y no está confirmada por el autor en la model card.
+`amrvlv/llm-course-hw1-mla` es un checkpoint de 10.401.252 parámetros (aproximadamente 10,4 millones) publicado en Hugging Face Hub por el usuario amrvlv. Por el identificador del repositorio y la ausencia de documentación, todo apunta a un trabajo práctico de un curso sobre modelos de lenguaje ("llm-course-hw1") en el que se implementa y entrena desde cero una arquitectura con Multi-head Latent Attention ("mla"), la variante de atención con compresión latente popularizada por la familia DeepSeek. Esta interpretación se deduce del nombre del repositorio y no está confirmada por el autor en la model card.
 
-El modelo no resuelve un problema de producción ni compite con modelos comerciales: es un artefacto educativo. La model card generada automáticamente por la integración `PyTorchModelHubMixin` de HuggingFace no incluye descripción, datos de entrenamiento, tokenizador, licencia ni idiomas soportados; los campos de código, paper y documentación aparecen literalmente como "More Information Needed". El repositorio tiene 0 descargas y 0 likes en el momento de la consulta.
+El modelo no resuelve un problema de producción ni compite con modelos comerciales: es un artefacto educativo. La model card generada automáticamente por la integración `PyTorchModelHubMixin` de Hugging Face no incluye descripción, datos de entrenamiento, tokenizador, licencia ni idiomas soportados; los campos de código, paper y documentación aparecen literalmente como "More Information Needed". El repositorio tiene 0 descargas y 0 likes en el momento de la consulta.
 
 Su relevancia es, por tanto, la de una pieza de referencia para quien quiera estudiar implementaciones didácticas de MLA a pequeña escala, o para quien necesite un checkpoint mínimo con el que validar pipelines de carga mediante `PyTorchModelHubMixin`. Cualquier uso más allá de la experimentación docente requiere inspeccionar el código del autor (no publicado en el Hub) y verificar arquitectura, tokenizador y datos de entrenamiento.
 
@@ -70,10 +70,10 @@ Los datos de los modelos alternativos provienen de su documentación pública; e
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| amrvlv/llm-course-hw1-mla | 10,4 M | no disponible | no disponible | HuggingFace (0 descargas) | no disponible |
-| GPT-2 small (openai-community/gpt2) | 124 M | 1024 tokens | MIT | HuggingFace, ampliamente replicado | sí (referencia histórica) |
-| SmolLM2-135M (HuggingFaceTB) | 135 M | 8192 tokens | Apache-2.0 | HuggingFace, GGUF y ONNX disponibles | sí |
-| Qwen2.5-0.5B (Qwen) | ~0,49 B | 32 768 tokens | Apache-2.0 | HuggingFace, múltiples cuantizaciones | sí |
+| amrvlv/llm-course-hw1-mla | 10,4 M | no disponible | no disponible | Hugging Face (0 descargas) | no disponible |
+| GPT-2 small (openai-community/gpt2) | 124 M | 1024 tokens | MIT | Hugging Face, ampliamente replicado | sí (referencia histórica) |
+| SmolLM2-135M (HuggingFaceTB) | 135 M | 8192 tokens | Apache-2.0 | Hugging Face, GGUF y ONNX disponibles | sí |
+| Qwen2.5-0.5B (Qwen) | ~0,49 B | 32 768 tokens | Apache-2.0 | Hugging Face, múltiples cuantizaciones | sí |
 
 La comparación relevante no es de rendimiento sino de propósito: los tres modelos de referencia están entrenados, documentados y evaluados, mientras que este checkpoint es un artefacto de curso sin model card sustantiva.
 
@@ -90,7 +90,7 @@ La comparación relevante no es de rendimiento sino de propósito: los tres mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amrvlv/llm-course-hw1-mla
+- Modelo en Hugging Face: https://huggingface.co/amrvlv/llm-course-hw1-mla
 - Documentación de `PyTorchModelHubMixin`: https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin
 - Código del autor: no disponible
 - Paper: no disponible

@@ -112,6 +112,6 @@ FNova-1.7B-Chat-v1 se diferencia de su modelo base oficial por el CPT de 20B tok
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Fengnan001/FNova-1.7B-Chat-v1
+- Modelo en Hugging Face: https://huggingface.co/Fengnan001/FNova-1.7B-Chat-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B-Base
 - Paper, repositorio de codigo o demo: no disponibles en la informacion proporcionada.

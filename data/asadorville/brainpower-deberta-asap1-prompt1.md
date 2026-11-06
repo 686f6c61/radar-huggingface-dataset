@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BrainPower DeBERTa Prompt 1 es un modelo de clasificación/regresión para corrección automática de ensayos (Automated Essay Scoring, AES), publicado por el usuario asadorville en HuggingFace. Se trata de un ajuste fino de microsoft/deberta-v3-base sobre el Prompt 1 del corpus ASAP (Automated Student Assessment Prize), con anotaciones de cinco rasgos procedentes del corpus ASAP++. El modelo no genera texto: devuelve cinco salidas de regresión continua, una por rasgo (Content, Organization, Word Choice, Sentence Fluency y Conventions).
+BrainPower DeBERTa Prompt 1 es un modelo de clasificación/regresión para corrección automática de ensayos (Automated Essay Scoring, AES), publicado por el usuario asadorville en Hugging Face. Se trata de un ajuste fino de microsoft/deberta-v3-base sobre el Prompt 1 del corpus ASAP (Automated Student Assessment Prize), con anotaciones de cinco rasgos procedentes del corpus ASAP++. El modelo no genera texto: devuelve cinco salidas de regresión continua, una por rasgo (Content, Organization, Word Choice, Sentence Fluency y Conventions).
 
 El interés del modelo es acotado pero claro: forma parte del sistema BrainPower y está pensado como herramienta de asistencia a la corrección humana, no como sustituto. Con 184.425.989 parámetros y un repositorio de 0,7 GB, es un modelo compacto que puede ejecutarse en hardware de consumo. La model card es explícita sobre su alcance limitado: fue entrenado para un único prompt y un marco de puntuación concreto, por lo que no debe interpretarse como un corrector de ensayos de propósito general.
 
@@ -44,7 +44,7 @@ Un detalle relevante para quien quiera reproducir o reutilizar el trabajo: la mo
 - Evaluación de rasgos independientes: en lugar de una única nota global, devuelve una puntuación por dimensión, lo que permite analítica granular del texto.
 - Procesamiento de textos de tipo ensayo argumentativo o expositivo en inglés (idioma del corpus ASAP).
 - Inferencia puramente discriminativa: no genera texto, no mantiene conversaciones y no produce explicaciones ni justificaciones de la nota.
-- Integración sencilla con HuggingFace Transformers mediante `AutoModelForSequenceClassification`.
+- Integración sencilla con Hugging Face Transformers mediante `AutoModelForSequenceClassification`.
 - Redondeo y acotación de las salidas: según la model card, es la aplicación BrainPower (no el modelo) la que redondea y restringe los valores al rango de puntuación adecuado para mostrarlos al usuario.
 - No consta soporte de tool calling, function calling, uso como agente, razonamiento multi-paso, visión, audio ni modo "thinking".
 - Capacidades multilingües: no declaradas; el modelo se entrenó con material en inglés.
@@ -74,17 +74,17 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM sirve para inferencia. Una RTX 3060, RTX 4060, RTX 3090 o RTX 4090 son más que suficientes; A100 o H100 solo tienen sentido para lotes muy grandes o para reentrenamiento.
 - Cabe en GPU de consumo: sí, en cualquier GPU moderna de gama media o superior, e incluso en iGPU con suficiente memoria compartida.
 - Ejecución en CPU: viable para volúmenes moderados, ya que se trata de un encoder de 184 M de parámetros y secuencias de hasta 512 tokens.
-- Opciones de despliegue: HuggingFace Transformers (vía `AutoModelForSequenceClassification`), exportación a ONNX Runtime o TorchScript para servir, y frameworks de serving genéricos compatibles con modelos tipo encoder. No se declaran pesos GGUF, por lo que llama.cpp u Ollama no son aplicables directamente sin una conversión propia. vLLM y TGI están orientados a modelos generativos y no encajan con esta cabeza de regresión sin adaptaciones.
+- Opciones de despliegue: Hugging Face Transformers (vía `AutoModelForSequenceClassification`), exportación a ONNX Runtime o TorchScript para servir, y frameworks de serving genéricos compatibles con modelos tipo encoder. No se declaran pesos GGUF, por lo que llama.cpp u Ollama no son aplicables directamente sin una conversión propia. vLLM y TGI están orientados a modelos generativos y no encajan con esta cabeza de regresión sin adaptaciones.
 - Latencia y throughput: no disponibles. No hay mediciones publicadas por el autor; cualquier cifra dependería del hardware, del lote y de la longitud de secuencia.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| asadorville/brainpower-deberta-asap1-prompt1 | 184,4 M | No disponible (tipicamente 512 en DeBERTa-v3-base) | Regresion de 5 rasgos de ensayo (ASAP Prompt 1) | No disponible | HuggingFace, safetensors |
-| microsoft/deberta-v3-base | 184,4 M | 512 tokens | Modelo base, sin cabeza de tarea | MIT | HuggingFace, safetensors |
-| FacebookAI/roberta-base | 125 M | 514 tokens | Modelo base, sin cabeza de tarea | MIT | HuggingFace, safetensors |
-| google-bert/bert-base-uncased | 110 M | 512 tokens | Modelo base, sin cabeza de tarea | Apache 2.0 | HuggingFace, safetensors |
+| asadorville/brainpower-deberta-asap1-prompt1 | 184,4 M | No disponible (tipicamente 512 en DeBERTa-v3-base) | Regresion de 5 rasgos de ensayo (ASAP Prompt 1) | No disponible | Hugging Face, safetensors |
+| microsoft/deberta-v3-base | 184,4 M | 512 tokens | Modelo base, sin cabeza de tarea | MIT | Hugging Face, safetensors |
+| FacebookAI/roberta-base | 125 M | 514 tokens | Modelo base, sin cabeza de tarea | MIT | Hugging Face, safetensors |
+| google-bert/bert-base-uncased | 110 M | 512 tokens | Modelo base, sin cabeza de tarea | Apache 2.0 | Hugging Face, safetensors |
 
 No se dispone de resultados de benchmarks que permitan comparar el rendimiento predictivo de este checkpoint frente a otros sistemas de AES entrenados sobre ASAP. Las alternativas de la tabla son modelos base sin ajuste para la tarea, por lo que la comparación es estructural (tamaño, contexto, licencia) y no de rendimiento. Existen otros trabajos académicos de AES sobre ASAP, pero no forman parte de la información proporcionada.
 
@@ -104,7 +104,7 @@ No se dispone de resultados de benchmarks que permitan comparar el rendimiento p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/asadorville/brainpower-deberta-asap1-prompt1
+- Modelo en Hugging Face: https://huggingface.co/asadorville/brainpower-deberta-asap1-prompt1
 - Modelo base: https://huggingface.co/microsoft/deberta-v3-base
 - Paper de DeBERTaV3 (He et al., 2021): https://arxiv.org/abs/2111.09543
 - Dataset ASAP (Automated Student Assessment Prize): https://www.kaggle.com/c/asap-aes

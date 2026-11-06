@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks comparativos con otras alternativas en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/boykeodang/qwen35-envi-4b
+- Modelo en Hugging Face: https://huggingface.co/boykeodang/qwen35-envi-4b
 - Repositorio del método y scripts: https://github.com/goddie9x/qwen35-envi-surgery
 - Perfil del autor en GitHub: https://github.com/goddie9x
 - Sitio del autor: https://hmt9x.dev

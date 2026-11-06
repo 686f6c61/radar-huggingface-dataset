@@ -82,8 +82,8 @@ El decode 3D de ambos sistemas (v1 y v2) alcanza aproximadamente 14 Å RMSD a 33
 
 | Modelo | Parametros | Enfoque | Error de rollout (33 ns) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MolJEPA-World v2 | 2,36 M | JEPA E(3) + cabezas de desplazamiento | 0,623x persistencia | Apache-2.0 | HuggingFace |
-| MolJEPA-World v1 | no disponible en la informacion | JEPA E(3) + operador de Koopman | 0,700x persistencia (0,645x con PRST full) | no disponible en la informacion | HuggingFace (referenciado) |
+| MolJEPA-World v2 | 2,36 M | JEPA E(3) + cabezas de desplazamiento | 0,623x persistencia | Apache-2.0 | Hugging Face |
+| MolJEPA-World v1 | no disponible en la informacion | JEPA E(3) + operador de Koopman | 0,700x persistencia (0,645x con PRST full) | no disponible en la informacion | Hugging Face (referenciado) |
 | Persistencia (baseline trivial) | 0 | Predice el estado actual | 1,000x (referencia) | no aplica | no aplica |
 
 No se dispone de informacion sobre otros modelos comparables de dinamica proteica en la documentacion proporcionada.
@@ -103,7 +103,7 @@ No se dispone de informacion sobre otros modelos comparables de dinamica proteic
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AdagioBiology/world-v2
+- Modelo en Hugging Face: https://huggingface.co/AdagioBiology/world-v2
 - Repositorio de world-v1 (referenciado en la model card): no disponible como URL directa en la informacion proporcionada
 - Visuales incluidos en el repositorio: visuals/latent_space.png, visuals/rollout_error.png, visuals/runtime.png, visuals/training_curve.png, visuals/movie_panels.png, visuals/rollout_movie.gif
 - Dataset mdCATH: no se proporciona URL directa en la informacion disponible

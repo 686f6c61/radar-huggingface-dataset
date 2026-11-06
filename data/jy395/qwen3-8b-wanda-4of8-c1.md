@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Compresion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jy395/Qwen3-8B-wanda-4of8-c1 | 8.190 M | No disponible | Poda Wanda 4:8, calibracion C1 (WikiText-2) | Apache 2.0 | HuggingFace, 212 descargas |
-| Qwen/Qwen3-8B (base) | 8.190 M | No disponible en la informacion | Sin compresion | Apache 2.0 | HuggingFace, ampliamente usado |
-| Otras configuraciones del suite ICAIF '26 | 8.190 M | No disponible | Wanda 4:8 con otros corpus de calibracion | Apache 2.0 | Coleccion en HuggingFace |
+| jy395/Qwen3-8B-wanda-4of8-c1 | 8.190 M | No disponible | Poda Wanda 4:8, calibracion C1 (WikiText-2) | Apache 2.0 | Hugging Face, 212 descargas |
+| Qwen/Qwen3-8B (base) | 8.190 M | No disponible en la informacion | Sin compresion | Apache 2.0 | Hugging Face, ampliamente usado |
+| Otras configuraciones del suite ICAIF '26 | 8.190 M | No disponible | Wanda 4:8 con otros corpus de calibracion | Apache 2.0 | Coleccion en Hugging Face |
 
 La comparativa principal es contra el modelo base Qwen3-8B (sin poda) y contra las otras 29 configuraciones del mismo suite, que varian el corpus de calibracion (generico frente a financiero) y posiblemente el esquema de compresion. No se dispone de datos de rendimiento para comparar numericamente en la informacion proporcionada.
 
@@ -83,7 +83,7 @@ La comparativa principal es contra el modelo base Qwen3-8B (sin poda) y contra l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jy395/Qwen3-8B-wanda-4of8-c1
+- Modelo en Hugging Face: https://huggingface.co/jy395/Qwen3-8B-wanda-4of8-c1
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Articulo (DOI): https://doi.org/10.1145/3858063.3858724
 - Repositorio de codigo, corpus y evaluacion: https://github.com/JunyiYe/finance-ptc-calibration

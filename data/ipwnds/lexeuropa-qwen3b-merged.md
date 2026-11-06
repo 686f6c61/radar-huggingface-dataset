@@ -71,9 +71,9 @@ El autor advierte que las preguntas son plantilladas, por lo que los valores abs
 
 | Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| LexEuropa Qwen3B Merged | 3,09 B | No disponible | Apache 2.0 | RAG jurídico UE con citas | HuggingFace, 230 descargas |
-| Qwen2.5-3B-Instruct | 3,09 B | No disponible | Apache 2.0 | Propósito general, instrucciones | HuggingFace, ampliamente disponible |
-| Qwen2.5-7B-Instruct | 7,6 B (aproximado) | No disponible | Apache 2.0 | Propósito general, instrucciones | HuggingFace, ampliamente disponible |
+| LexEuropa Qwen3B Merged | 3,09 B | No disponible | Apache 2.0 | RAG jurídico UE con citas | Hugging Face, 230 descargas |
+| Qwen2.5-3B-Instruct | 3,09 B | No disponible | Apache 2.0 | Propósito general, instrucciones | Hugging Face, ampliamente disponible |
+| Qwen2.5-7B-Instruct | 7,6 B (aproximado) | No disponible | Apache 2.0 | Propósito general, instrucciones | Hugging Face, ampliamente disponible |
 
 La comparación con Qwen2.5-7B-Instruct aparece en la evaluación del propio autor como referencia de citación (0.82/0.88 frente a 0.95/0.95 de LexEuropa v1), aunque el tamaño es más del doble. No se dispone de datos de benchmarks estándar (MMLU, HumanEval, GSM8K) para este modelo.
 
@@ -91,6 +91,6 @@ La comparación con Qwen2.5-7B-Instruct aparece en la evaluación del propio aut
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/iPwnds/lexeuropa-qwen3b-merged
+- Hugging Face: https://huggingface.co/iPwnds/lexeuropa-qwen3b-merged
 - Repositorio del proyecto: https://github.com/lumenworksco/-LexEuropa
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct

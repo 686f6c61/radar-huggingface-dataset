@@ -74,7 +74,7 @@ La model card no incluye una comparación directa con otros modelos VLA. El prep
 
 | Modelo | Parametros | Contexto | Rendimiento en LIBERO-10 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| VPA (este modelo) | no disponible | no aplica | 40,0 % con dos camaras; 10,5 % con una camara | GPL-3.0-only | Pesos en HuggingFace y codigo en GitHub |
+| VPA (este modelo) | no disponible | no aplica | 40,0 % con dos camaras; 10,5 % con una camara | GPL-3.0-only | Pesos en Hugging Face y codigo en GitHub |
 | VLA autoregresivos de referencia (p. ej. OpenVLA, Octo, RT-2) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 Datos comparativos de modelos alternativos: no disponibles en la información proporcionada.
@@ -94,7 +94,7 @@ Datos comparativos de modelos alternativos: no disponibles en la información pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ylee-sling/vpa-libero10
+- Modelo en Hugging Face: https://huggingface.co/ylee-sling/vpa-libero10
 - Repositorio de código, entrenamiento y evaluación: https://github.com/ylee-sling/Vision-Predictor-Action
 - Resultados detallados (README del repositorio): https://github.com/ylee-sling/Vision-Predictor-Action#results-on-libero-10-preliminary
 - Preprint (DOI): https://doi.org/10.5281/zenodo.22960919

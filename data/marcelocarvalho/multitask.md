@@ -77,5 +77,5 @@ No se dispone en la información proporcionada de datos concretos de modelos com
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/marcelocarvalho/multitask
+- Hugging Face: https://huggingface.co/marcelocarvalho/multitask
 - No se han encontrado enlaces relevantes adicionales (papers, blogs, repositorios o demos) en los resultados de búsqueda web proporcionados.

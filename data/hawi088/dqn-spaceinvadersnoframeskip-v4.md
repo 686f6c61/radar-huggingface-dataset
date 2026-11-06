@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Se trata de un agente de aprendizaje por refuerzo profundo entrenado con el algoritmo DQN (Deep Q-Network) sobre el entorno `SpaceInvadersNoFrameskip-v4` de Atari, utilizando la librería Stable Baselines3 y el framework RL Zoo. El modelo ha sido publicado por el usuario Hawi088 en HuggingFace y su propósito es servir como política entrenada capaz de jugar a Space Invaders a partir de observaciones visuales en bruto (píxeles), sin ingeniería de características manual.
+Se trata de un agente de aprendizaje por refuerzo profundo entrenado con el algoritmo DQN (Deep Q-Network) sobre el entorno `SpaceInvadersNoFrameskip-v4` de Atari, utilizando la librería Stable Baselines3 y el framework RL Zoo. El modelo ha sido publicado por el usuario Hawi088 en Hugging Face y su propósito es servir como política entrenada capaz de jugar a Space Invaders a partir de observaciones visuales en bruto (píxeles), sin ingeniería de características manual.
 
 El modelo no es un modelo de lenguaje ni un transformer generativo: es una red neuronal convolucional (política `CnnPolicy`) que aproxima la función Q y selecciona acciones discretas en el entorno. Su relevancia es la de un artefacto de referencia reproducible: permite cargar el agente entrenado, evaluar su rendimiento y reentrenarlo con los mismos hiperparámetros documentados en la model card.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Algoritmo | Entorno | Pasos de entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Hawi088/dqn-SpaceInvadersNoFrameskip-v4 | DQN | SpaceInvadersNoFrameskip-v4 | 1.000.000 | no disponible | HuggingFace (0 descargas, 0 likes) |
+| Hawi088/dqn-SpaceInvadersNoFrameskip-v4 | DQN | SpaceInvadersNoFrameskip-v4 | 1.000.000 | no disponible | Hugging Face (0 descargas, 0 likes) |
 | Agentes de referencia del RL Zoo | DQN | SpaceInvadersNoFrameskip-v4 | no disponible | MIT (RL Zoo) | Repositorio RL Zoo |
-| Otros agentes DQN publicados en HuggingFace para Atari | DQN | distintos entornos Atari | variable | variable | HuggingFace |
+| Otros agentes DQN publicados en Hugging Face para Atari | DQN | distintos entornos Atari | variable | variable | Hugging Face |
 
 No se dispone de datos de rendimiento comparado (recompensa media) para establecer una comparación cuantitativa con alternativas.
 
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparado (recompensa media) para establec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Hawi088/dqn-SpaceInvadersNoFrameskip-v4
+- Modelo en Hugging Face: https://huggingface.co/Hawi088/dqn-SpaceInvadersNoFrameskip-v4
 - Stable Baselines3: https://github.com/DLR-RM/stable-baselines3
 - RL Zoo: https://github.com/DLR-RM/rl-baselines3-zoo
 - SB3 Contrib: https://github.com/Stable-Baselines-Team/stable-baselines3-contrib

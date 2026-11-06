@@ -67,6 +67,6 @@ No se dispone de información sobre otros adaptadores LoRA para Krea 2 o modelos
 
 ## Enlaces
 
-- [HuggingFace - guillekenzo/aros-68bcbe2b-SaddieStarr](https://huggingface.co/guillekenzo/aros-68bcbe2b-SaddieStarr)
-- [Perfil del autor en HuggingFace](https://huggingface.co/guillekenzo)
+- [Hugging Face - guillekenzo/aros-68bcbe2b-SaddieStarr](https://huggingface.co/guillekenzo/aros-68bcbe2b-SaddieStarr)
+- [Perfil del autor en Hugging Face](https://huggingface.co/guillekenzo)
 - [Modelo base Krea 2 (referencia)](https://huggingface.co/krea/Krea-2-Raw) (enlace inferido, no verificado en la búsqueda)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Ololade117/scaling-normal-3.7M-20000steps` es un checkpoint de investigacion de 3.686.400 parametros (3,7 millones) publicado en HuggingFace por el usuario Ololade117 bajo licencia MIT. La nomenclatura del repositorio sugiere un experimento de escalado (scaling) con una configuracion "normal" estandar y un presupuesto de entrenamiento de 20.000 pasos, aunque el autor no ha documentado estos extremos en la model card. El modelo fue subido a la plataforma mediante la integracion `PyTorchModelHubMixin`, lo que implica que los pesos se empaquetaron como un modulo PyTorch personalizado en formato safetensors.
+`Ololade117/scaling-normal-3.7M-20000steps` es un checkpoint de investigacion de 3.686.400 parametros (3,7 millones) publicado en Hugging Face por el usuario Ololade117 bajo licencia MIT. La nomenclatura del repositorio sugiere un experimento de escalado (scaling) con una configuracion "normal" estandar y un presupuesto de entrenamiento de 20.000 pasos, aunque el autor no ha documentado estos extremos en la model card. El modelo fue subido a la plataforma mediante la integracion `PyTorchModelHubMixin`, lo que implica que los pesos se empaquetaron como un modulo PyTorch personalizado en formato safetensors.
 
 Se trata de un modelo de tamano minusculo, varios ordenes de magnitud por debajo de los grandes modelos de lenguaje actuales. Por su volumen de parametros y su naturaleza experimental, encaja en la categoria de checkpoints educativos o de pruebas de concepto para estudiar leyes de escalado, curvas de entrenamiento o tecnicas de tokenizacion en entornos con recursos muy limitados, mas que en la de un asistente conversacional listo para produccion.
 
@@ -25,13 +25,13 @@ Es relevante ahora solo como pieza de reproduccion o referencia dentro de experi
 
 No se ha publicado informacion sobre la arquitectura interna del modelo. Los unicos indicios son externos a la documentacion: el nombre del repositorio incluye "3.7M" y "20000steps", lo que apunta a un modelo de 3,7 millones de parametros entrenado durante 20.000 pasos, y el termino "normal" sugiere una configuracion base o de control dentro de una serie de experimentos de escalado. No hay datos sobre numero total de tokens procesados, composicion del dataset, ratio de tokens por parametro ni si se aplicaron tecnicas de ajuste como RLHF o DPO.
 
-Tampoco se especifica si el entrenamiento uso una tokenizacion propia, que funcion de perdida se optimizo o que innovaciones tecnicas (atencion lineal, mezcla de expertos, decodificacion especulativa) incorpora, en caso de que las haya. El unico aspecto verificable es el mecanismo de publicacion: el uso de `model_hub_mixin` y `pytorch_model_hub_mixin` indica que el autor definio una clase personalizada de `torch.nn.Module` y la subio con la utilidad de HuggingFace, lo que a menudo implica que el modelo no es compatible directamente con clases estandar de `transformers` sin cargar el codigo del autor.
+Tampoco se especifica si el entrenamiento uso una tokenizacion propia, que funcion de perdida se optimizo o que innovaciones tecnicas (atencion lineal, mezcla de expertos, decodificacion especulativa) incorpora, en caso de que las haya. El unico aspecto verificable es el mecanismo de publicacion: el uso de `model_hub_mixin` y `pytorch_model_hub_mixin` indica que el autor definio una clase personalizada de `torch.nn.Module` y la subio con la utilidad de Hugging Face, lo que a menudo implica que el modelo no es compatible directamente con clases estandar de `transformers` sin cargar el codigo del autor.
 
 ## Capacidades
 
 No se ha publicado documentacion que describa capacidades concretas. A partir de los unicos datos verificables:
 
-- Generacion de texto: no confirmada. El modelo no declara pipeline de tarea asignado en HuggingFace.
+- Generacion de texto: no confirmada. El modelo no declara pipeline de tarea asignado en Hugging Face.
 - Razonamiento y matematicas: no disponible.
 - Codigo: no disponible.
 - Vision o audio: no disponible. No hay evidencia de que sea multimodal.
@@ -47,7 +47,7 @@ Con 3,7 millones de parametros, incluso en el escenario mas favorable de que fue
 Debido a la ausencia total de documentacion sobre capacidades, los siguientes casos son planteamientos plausibles para un checkpoint de este tipo, no recomendaciones validadas:
 
 - Reproduccion de experimentos de escalado: usar el modelo como punto de datos para estudiar como varia la perdida con el numero de parametros y pasos de entrenamiento, comparandolo con checkpoints mayores de la misma serie.
-- Docencia y aprendizaje: servir como ejemplo minimo de como subir un `torch.nn.Module` personalizado a HuggingFace mediante `PyTorchModelHubMixin`, util para quien quiera entender el flujo completo.
+- Docencia y aprendizaje: servir como ejemplo minimo de como subir un `torch.nn.Module` personalizado a Hugging Face mediante `PyTorchModelHubMixin`, util para quien quiera entender el flujo completo.
 - Pruebas de integracion en pipelines: validar que un sistema de carga de modelos propietarios, versionado y despliegue funciona sin gastar recursos en modelos grandes.
 - Investigacion en tokenizacion: si el autor publicara el vocabulario, el modelo permitiria experimentar con esquemas de tokenizacion de bajo coste computacional.
 - Benchmarking de hardware muy modesto: por su tamano, cabe en CPU y en cualquier GPU, lo que lo hace idoneo para medir latencias en dispositivos embebidos o entornos sin acelerador.
@@ -94,7 +94,7 @@ La comparativa es puramente de escala: el modelo analizado es entre uno y dos or
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ololade117/scaling-normal-3.7M-20000steps
+- Hugging Face: https://huggingface.co/Ololade117/scaling-normal-3.7M-20000steps
 - Documentacion de `PyTorchModelHubMixin`: https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin
 - Paper: no disponible
 - Codigo: no disponible

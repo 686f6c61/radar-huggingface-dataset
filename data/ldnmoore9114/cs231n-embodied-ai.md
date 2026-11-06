@@ -80,5 +80,5 @@ No disponible. Este repositorio no es un modelo de aprendizaje automatico compar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ldnmoore9114/cs231n-embodied-ai
+- Hugging Face: https://huggingface.co/Ldnmoore9114/cs231n-embodied-ai
 - No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios de codigo o demos.

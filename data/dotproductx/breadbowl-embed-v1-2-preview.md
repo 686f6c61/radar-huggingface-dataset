@@ -6,7 +6,7 @@ BreadBowl-Embed v1.2-preview es una arquitectura de representación multi-vector
 
 El problema que aborda es el coste del pipeline clásico de dos etapas (retriever de vectores simples más cross-encoder de reranking). Al codificar el documento una sola vez y reutilizar la misma representación almacenada para recuperar y reranquear, se elimina la necesidad de re-codificar los candidatos. La model card reporta una mejora de nDCG@10 macro en BEIR de 48,47 a 51,54 sobre el mismo conjunto de 100 candidatos preseleccionados por routing, con un Recall@100 idéntico (67,91) porque ambos scorers ordenan la misma lista.
 
-Es relevante ahora porque propone mover señal de ranking a la fase de recuperación dentro de un único espacio multi-vector, y porque su autor lo publica explícitamente como trabajo de investigación sin pesos descargables. En el momento de redactar esta ficha, el repositorio de HuggingFace contiene únicamente el preprint y la model card; no hay checkpoints, paquete de inferencia ni endpoint alojado, y el tamaño del repositorio es de 0,0 GB.
+Es relevante ahora porque propone mover señal de ranking a la fase de recuperación dentro de un único espacio multi-vector, y porque su autor lo publica explícitamente como trabajo de investigación sin pesos descargables. En el momento de redactar esta ficha, el repositorio de Hugging Face contiene únicamente el preprint y la model card; no hay checkpoints, paquete de inferencia ni endpoint alojado, y el tamaño del repositorio es de 0,0 GB.
 
 ## Especificaciones tecnicas
 
@@ -83,7 +83,7 @@ No disponible. La información proporcionada no incluye resultados comparativos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dotproductx/breadbowl-embed-v1.2-preview
+- Modelo en Hugging Face: https://huggingface.co/dotproductx/breadbowl-embed-v1.2-preview
 - Paper (PDF, enlazado desde la model card): https://huggingface.co/dotproductx/breadbowl-embed-v1.2-preview/blob/main/BreadBowl-Embed-paper.pdf
 - Documentación de la API de BreadBowl Embed (Alpha): https://docs.breadbowl.ai/
 - Convenciones de la API REST de BreadBowl Embed (Alpha): https://docs.breadbowl.ai/api-reference/overview

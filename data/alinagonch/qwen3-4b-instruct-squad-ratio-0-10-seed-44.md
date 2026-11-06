@@ -78,7 +78,7 @@ No se dispone de resultados de rendimiento comparativos entre estas variantes. L
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AlinaGonch/qwen3-4b-instruct-squad-ratio-0.10-seed-44
+- Repositorio Hugging Face: https://huggingface.co/AlinaGonch/qwen3-4b-instruct-squad-ratio-0.10-seed-44
 - Variante ratio 0.50 (r4): https://huggingface.co/AlinaGonch/qwen3-4b-instruct-squad-ratio-0.50-r4
 - Variante ratio 0.90: https://huggingface.co/AlinaGonch/qwen3-4b-instruct-squad-ratio-0.90-seed-44
 - Reporte tecnico de Qwen3 (arXiv): https://arxiv.org/html/2505.09388v1

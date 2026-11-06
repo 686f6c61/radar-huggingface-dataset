@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MariahElusive es un modelo de conversion de voz (voice conversion) de tipo RVC v2, publicado por el usuario mrkmja en HuggingFace. No es un modelo de lenguaje: se trata de un checkpoint entrenado para transformar una grabacion vocal de entrada y hacer que suene con el timbre de la cantante Mariah Carey, concretamente el asociado a su album de 2014. El repositorio incluye el peso en formato .pth empaquetado en un zip y una imagen de portada, con un tamano total de 0,2 GB.
+MariahElusive es un modelo de conversion de voz (voice conversion) de tipo RVC v2, publicado por el usuario mrkmja en Hugging Face. No es un modelo de lenguaje: se trata de un checkpoint entrenado para transformar una grabacion vocal de entrada y hacer que suene con el timbre de la cantante Mariah Carey, concretamente el asociado a su album de 2014. El repositorio incluye el peso en formato .pth empaquetado en un zip y una imagen de portada, con un tamano total de 0,2 GB.
 
 El modelo se entreno durante 725 epocas con un batch size de 5 sobre 19 minutos de vocales extraidas de grabaciones de 2014, usando extraccion de tono RMVPE y partiendo del pretrain original de RVC v2 (no de un fine-tuning de otro checkpoint). La unica etiqueta de idioma declarada es "en", coherente con el material vocal empleado.
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Datos de entrenamiento | Epocas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MariahElusive (mrkmja) | RVC v2 + RMVPE | 19 minutos de vocales de 2014 | 725 | no disponible | HuggingFace, peso .pth en zip |
-| MariahButterfly (mrkmja) | RVC v2 | no disponible (referenciado en los ejemplos comentados de la model card) | no disponible | no disponible | HuggingFace, mismo autor |
-| Otros checkpoints RVC v2 de la comunidad | RVC v2 | variable, normalmente decenas de minutos a varias horas de vocales | variable | variable segun autor | HuggingFace y repositorios de la comunidad |
+| MariahElusive (mrkmja) | RVC v2 + RMVPE | 19 minutos de vocales de 2014 | 725 | no disponible | Hugging Face, peso .pth en zip |
+| MariahButterfly (mrkmja) | RVC v2 | no disponible (referenciado en los ejemplos comentados de la model card) | no disponible | no disponible | Hugging Face, mismo autor |
+| Otros checkpoints RVC v2 de la comunidad | RVC v2 | variable, normalmente decenas de minutos a varias horas de vocales | variable | variable segun autor | Hugging Face y repositorios de la comunidad |
 | so-vits-svc 4.1 | Framework alternativo de conversion de voz cantada | variable, habitualmente horas de audio | variable | AGPL-3.0 en el framework | Repositorios publicos |
 
 No hay datos de rendimiento comparativos publicados para MariahElusive, por lo que la comparacion se limita a framework, volumen de datos y licencia. El dato diferencial mas relevante es el tamano del dataset de entrenamiento: 19 minutos es un volumen bajo dentro de la practica habitual, lo que suele limitar la cobertura de registro y estilo.
@@ -87,7 +87,7 @@ No hay datos de rendimiento comparativos publicados para MariahElusive, por lo q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mrkmja/MariahElusive
+- Modelo en Hugging Face: https://huggingface.co/mrkmja/MariahElusive
 - Descarga directa del peso (.zip): https://huggingface.co/mrkmja/MariahElusive/resolve/main/MariahElusive_byMRKMJA.zip
 - Imagen de portada del repositorio: https://huggingface.co/mrkmja/MariahElusive/resolve/main/MariahElusive.jpg
 - Modelo del mismo autor referenciado en los ejemplos comentados: https://huggingface.co/mrkmja/MariahButterfly

@@ -88,7 +88,7 @@ El modelo se posiciona como una fusión de múltiples variantes de Qwen3.8-27B, 
 
 ## Enlaces
 
-- [HuggingFace: AMAImedia/Qwen3.8-27B-Kimiko-2-NOESIS-BF16](https://huggingface.co/AMAImedia/Qwen3.8-27B-Kimiko-2-NOESIS-BF16)
+- [Hugging Face: AMAImedia/Qwen3.8-27B-Kimiko-2-NOESIS-BF16](https://huggingface.co/AMAImedia/Qwen3.8-27B-Kimiko-2-NOESIS-BF16)
 - [Visor de arquitectura (hfviewer)](https://hfviewer.com/AMAImedia/Qwen3.8-27B-Kimiko-2-BF16)
 - [Repositorio original de Kimiko-2 (nlpguy)](https://huggingface.co/nlpguy/Qwen3.8-27B-Kimiko-2)
 - [GitHub de Qwen3.8-27B (AlibabaCloud-Official)](https://github.com/AlibabaCloud-Official/Qwen3.8-27B)

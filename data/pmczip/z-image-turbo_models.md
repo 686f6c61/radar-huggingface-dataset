@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Tipo | Parametros | Contexto / prompt | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|---|
-| pmczip/Z-Image-Turbo_Models | Adaptador LoRA de parecido sobre Z-Image-Turbo | No disponible | No disponible (depende del base) | bespoke-lora-trained-license (Civitai) | HuggingFace, diffusers | No disponible |
-| Tongyi-MAI/Z-Image-Turbo (modelo base) | Modelo de difusión text-to-image completo | No disponible | No disponible | No disponible en la información proporcionada | HuggingFace | No disponible |
+| pmczip/Z-Image-Turbo_Models | Adaptador LoRA de parecido sobre Z-Image-Turbo | No disponible | No disponible (depende del base) | bespoke-lora-trained-license (Civitai) | Hugging Face, diffusers | No disponible |
+| Tongyi-MAI/Z-Image-Turbo (modelo base) | Modelo de difusión text-to-image completo | No disponible | No disponible | No disponible en la información proporcionada | Hugging Face | No disponible |
 | Adaptadores LoRA de identidad públicos en Civitai/HuggingFace | Adaptadores LoRA de retrato | Variable | No aplica | Habitualmente licencias Civitai con restricciones comerciales | Amplia | No comparable sin métricas homogéneas |
 | Modelos de retrato con licencia comercial (p. ej. suites de estudio) | Modelos cerrados con gestión de derechos | No disponible | No disponible | Comercial, con consentimiento del retratado | APIs de pago | No disponible |
 
@@ -92,7 +92,7 @@ No se dispone de datos numéricos que permitan una comparación cuantitativa fia
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/pmczip/Z-Image-Turbo_Models
+- Repositorio en Hugging Face: https://huggingface.co/pmczip/Z-Image-Turbo_Models
 - Modelo base: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
 - Licencia referenciada: https://multimodal.art/civitai-licenses
 - Resultados de búsqueda web: las consultas no devolvieron ninguna página relacionada con este modelo, su autor o su modelo base; los resultados obtenidos eran páginas en chino sobre ortografía francesa, un videojuego, el símbolo de virgulilla, ficheros .DS_Store y conversión de unidades de almacenamiento. Por tanto, no hay papers, blogs, repositorios ni demos adicionales que enlazar.

@@ -113,7 +113,7 @@ No se han encontrado en la información disponible comparaciones publicadas con 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alea-institute/alea-r4-3B-A0.7B-Base-ckpts
+- Modelo en Hugging Face: https://huggingface.co/alea-institute/alea-r4-3B-A0.7B-Base-ckpts
 - Rama de ejemplo (paso 19.000): https://huggingface.co/alea-institute/alea-r4-3B-A0.7B-Base-ckpts/tree/s3-step19000
 - Predecesor ALEA R3 MoE: https://huggingface.co/alea-institute/alea-r3-moe-2b-a417m
 - KL3M Data Project: mencionado en la model card como origen de los datos, sin URL en la información proporcionada.

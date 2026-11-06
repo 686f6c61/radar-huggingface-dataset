@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `wz7475/qwen2.5-7b-instruct-katcher-sec-sftmix-oasst1-every24` es un ajuste fino (fine-tune) publicado en HuggingFace por el usuario wz7475. El identificador del repositorio sugiere que parte de `Qwen2.5-7B-Instruct` y que se ha entrenado mediante SFT sobre una mezcla de datos que combina un conjunto de seguridad ("katcher-sec-sftmix") con OASST1, con algún criterio de muestreo periódico ("every24"). Sin embargo, el autor no ha documentado nada de esto en la model card, que es la plantilla automática de HuggingFace sin rellenar.
+El repositorio `wz7475/qwen2.5-7b-instruct-katcher-sec-sftmix-oasst1-every24` es un ajuste fino (fine-tune) publicado en Hugging Face por el usuario wz7475. El identificador del repositorio sugiere que parte de `Qwen2.5-7B-Instruct` y que se ha entrenado mediante SFT sobre una mezcla de datos que combina un conjunto de seguridad ("katcher-sec-sftmix") con OASST1, con algún criterio de muestreo periódico ("every24"). Sin embargo, el autor no ha documentado nada de esto en la model card, que es la plantilla automática de Hugging Face sin rellenar.
 
 La model card asociada no contiene informacion tecnica real: todos los campos (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion) aparecen como "[More Information Needed]". No se declara licencia, no se declaran idiomas, no se publican resultados de benchmarks y no se describe el procedimiento de entrenamiento. El repositorio tiene un tamano de 0,3 GB, lo que es incompatible con los pesos completos de un modelo de 7.000 millones de parametros en precision fp16 (que rondarian los 15 GB) o incluso en 4 bits (unos 4 GB); esto apunta a que el repositorio contiene unicamente un adaptador (por ejemplo LoRA) o pesos parciales, aunque no puede confirmarse con la informacion disponible.
 
@@ -74,10 +74,10 @@ La comparativa se establece frente a modelos de la misma categoria (7-8B, instru
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| wz7475/qwen2.5-7b-instruct-katcher-sec-sftmix-oasst1-every24 | no disponible (nombre sugiere 7B) | no disponible | no disponible | HuggingFace, 0 descargas |
-| Qwen2.5-7B-Instruct | 7,6B aprox. | 128K tokens (configurable) | Apache 2.0 (segun la publicacion de Alibaba) | HuggingFace, ampliamente desplegado |
-| Mistral-7B-Instruct-v0.3 | 7,2B aprox. | 32K tokens | Apache 2.0 | HuggingFace |
-| Llama-3.1-8B-Instruct | 8B aprox. | 128K tokens | Llama 3.1 Community License | HuggingFace |
+| wz7475/qwen2.5-7b-instruct-katcher-sec-sftmix-oasst1-every24 | no disponible (nombre sugiere 7B) | no disponible | no disponible | Hugging Face, 0 descargas |
+| Qwen2.5-7B-Instruct | 7,6B aprox. | 128K tokens (configurable) | Apache 2.0 (segun la publicacion de Alibaba) | Hugging Face, ampliamente desplegado |
+| Mistral-7B-Instruct-v0.3 | 7,2B aprox. | 32K tokens | Apache 2.0 | Hugging Face |
+| Llama-3.1-8B-Instruct | 8B aprox. | 128K tokens | Llama 3.1 Community License | Hugging Face |
 
 No se dispone de datos de benchmarks de este checkpoint que permitan una comparacion cuantitativa real; la tabla anterior solo contrasta caracteristicas estructurales y de licencia.
 
@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks de este checkpoint que permitan una compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-sec-sftmix-oasst1-every24
+- Modelo en Hugging Face: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-sec-sftmix-oasst1-every24
 - Referencia citada en las etiquetas del repositorio (calculador de impacto ambiental, no paper del modelo): https://arxiv.org/abs/1910.09700
 - Modelo base presumible, Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Dataset OASST1: https://huggingface.co/datasets/OpenAssistant/oasst1

@@ -36,7 +36,7 @@ La composición se realiza automáticamente con la librería `granite-switch` 0.
 - Speech-to-text multilingüe integrado (inglés, francés, alemán, español, portugués, italiano, japonés) con salida puntuada y capitalizada y detección automática de idioma.
 - Entrada de audio en el mismo endpoint que el chat, sin servidor de voz separado.
 - Composición y activación de adaptadores mediante tokens de control en la plantilla de chat.
-- Compatibilidad con HuggingFace Transformers y vLLM.
+- Compatibilidad con Hugging Face Transformers y vLLM.
 - Tool calling / function calling: no disponible en la informacion proporcionada.
 - Soporte de agentes y multi-step reasoning: no disponible en la informacion proporcionada.
 - Capacidades multilingües de texto: no disponible en la informacion proporcionada.
@@ -62,17 +62,17 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: no disponible de forma explícita. Como referencia de orden de magnitud, un modelo de 8,78B parámetros en FP16 requiere aproximadamente 17,6 GB solo para pesos (coincide con el tamaño del repo), a lo que hay que sumar caché KV para 128K de contexto; en cuantización de 8 bits bajaría a unos 9 GB y en 4 bits a unos 5 GB, aunque no se confirman formatos GGUF en el repositorio.
 - GPU recomendadas: no disponible en la informacion proporcionada. Para FP16 con contexto largo se necesitan GPUs de 40-80 GB (A100, H100); para contextos moderados, una RTX 4090 de 24 GB podría alojar los pesos en FP16 pero con margen ajustado para la caché KV.
 - Cabe en consumer GPU: probablemente en FP16 en RTX 4090 (24 GB) con contexto limitado; en cuantizaciones de 8 o 4 bits cabría en GPUs de 12-16 GB, aunque los formatos cuantizados no están documentados.
-- Opciones de despliegue: HuggingFace Transformers (`AutoModelForCausalLM`) y vLLM (servidor compatible con la API OpenAI). No se mencionan llama.cpp, Ollama ni TGI.
+- Opciones de despliegue: Hugging Face Transformers (`AutoModelForCausalLM`) y vLLM (servidor compatible con la API OpenAI). No se mencionan llama.cpp, Ollama ni TGI.
 - Latencia y throughput estimados: no disponible en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Componentes | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Granite Switch 4.1.1 8B | 8,78B (+470M ASR) | 128K | Base + 2 aLoRA + encoder ASR | Apache 2.0 | HuggingFace, vLLM |
-| Granite Switch 4.1 30B | 30B (base) | 128K | Misma configuracion Chat + Decisions + Guardian + voz | Apache 2.0 | HuggingFace (`ibm-granite/granite-switch-4.1-30b`) |
-| Granite Switch 4.1 8B preview | 8B (base) | 128K | Bundle completo de Granite Libraries, sin audio | Apache 2.0 | HuggingFace (`ibm-granite/granite-switch-4.1-8b-preview`) |
-| Granite Switch 4.1 3B preview | 3B (base) | No disponible | Bundle completo de Granite Libraries, sin audio | Apache 2.0 | HuggingFace (`ibm-granite/granite-switch-4.1-3b-preview`) |
+| Granite Switch 4.1.1 8B | 8,78B (+470M ASR) | 128K | Base + 2 aLoRA + encoder ASR | Apache 2.0 | Hugging Face, vLLM |
+| Granite Switch 4.1 30B | 30B (base) | 128K | Misma configuracion Chat + Decisions + Guardian + voz | Apache 2.0 | Hugging Face (`ibm-granite/granite-switch-4.1-30b`) |
+| Granite Switch 4.1 8B preview | 8B (base) | 128K | Bundle completo de Granite Libraries, sin audio | Apache 2.0 | Hugging Face (`ibm-granite/granite-switch-4.1-8b-preview`) |
+| Granite Switch 4.1 3B preview | 3B (base) | No disponible | Bundle completo de Granite Libraries, sin audio | Apache 2.0 | Hugging Face (`ibm-granite/granite-switch-4.1-3b-preview`) |
 
 Las alternativas directas son las otras variantes de la propia familia Granite Switch; no se dispone de información sobre modelos de otros fabricantes comparables en esta categoría modular con ASR integrado.
 
@@ -89,7 +89,7 @@ Las alternativas directas son las otras variantes de la propia familia Granite S
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/NostraEmpire/mirror-granite-switch-4.1-8b
+- Repositorio en Hugging Face: https://huggingface.co/NostraEmpire/mirror-granite-switch-4.1-8b
 - Repositorio oficial (referenciado en la model card): https://huggingface.co/ibm-granite/granite-switch-4.1-8b
 - Blog de lanzamiento 4.1.1: http://huggingface.co/blog/ibm-granite/granite-switch-4-1-1
 - Librería granite-switch: https://github.com/generative-computing/granite-switch

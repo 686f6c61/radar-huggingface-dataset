@@ -23,7 +23,7 @@ La model card del repositorio es minima: se limita a declarar el origen del fich
 
 ## Arquitectura y entrenamiento
 
-Este repositorio no documenta ningun proceso de entrenamiento propio. El contenido es un artefacto de inferencia generado a partir de Qwen/Qwen3-1.7B y redistribuido tal cual desde litert-community/Qwen3-1.7B. El tag base_model:finetune:Qwen/Qwen3-1.7B que aparece en HuggingFace sugiere algun tipo de derivacion respecto al modelo original, pero la model card no describe ajuste fino alguno, por lo que ese extremo queda como no confirmado.
+Este repositorio no documenta ningun proceso de entrenamiento propio. El contenido es un artefacto de inferencia generado a partir de Qwen/Qwen3-1.7B y redistribuido tal cual desde litert-community/Qwen3-1.7B. El tag base_model:finetune:Qwen/Qwen3-1.7B que aparece en Hugging Face sugiere algun tipo de derivacion respecto al modelo original, pero la model card no describe ajuste fino alguno, por lo que ese extremo queda como no confirmado.
 
 La arquitectura subyacente corresponde a la familia Qwen3 en su variante densa de 1,7B: transformer decoder-only con atencion por consultas agrupadas (GQA), normalizacion RMSNorm y RoPE para codificacion posicional, ademas de un modo de razonamiento explicito (thinking mode) activable o desactivable en el prompt. El artefacto LiteRT-LM aplica cuantizacion de pesos a int4 en bloques de 32 con activaciones fp32 y escalas calculadas dinamicamente, una configuracion orientada a reducir el ancho de banda de memoria y el consumo energetico en SoC moviles. No se publican en este repositorio ni el numero de tokens de entrenamiento, ni la composicion del dataset, ni si hubo etapas de RLHF o DPO; esos datos solo estarian disponibles, en su caso, en la documentacion oficial del modelo base.
 
@@ -64,11 +64,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. Ni la
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Qwen3-1.7B-litert-lm (este repo) | 1,7B (int4, bloques de 32) | no declarado en este repo | Apache-2.0 | HuggingFace, 0 descargas y 0 likes en el momento de la consulta | Espejo para Android de litert-community/Qwen3-1.7B |
-| Qwen/Qwen3-1.7B | 1,7B | 32.768 tokens nativos, hasta 131.072 con escalado | Apache-2.0 | HuggingFace, ampliamente distribuido | Modelo original en safetensors, apto para vLLM, llama.cpp u Ollama |
-| litert-community/Qwen3-1.7B | 1,7B (int4) | no declarado | Apache-2.0 | HuggingFace | Origen directo del fichero redistribuido aqui |
-| Gemma 3 1B | 1B | 32.768 tokens segun la documentacion publica de Google | Terminos de uso de Gemma | HuggingFace, LiteRT y MediaPipe | Alternativa frecuente en despliegue movil con tooling de Google |
-| Llama 3.2 1B | 1B | 128.000 tokens segun la documentacion publica de Meta | Licencia comunitaria de Llama 3.2 | HuggingFace y formatos moviles | Opcion comparable en tamano para edge, con licencia no Apache |
+| Qwen3-1.7B-litert-lm (este repo) | 1,7B (int4, bloques de 32) | no declarado en este repo | Apache-2.0 | Hugging Face, 0 descargas y 0 likes en el momento de la consulta | Espejo para Android de litert-community/Qwen3-1.7B |
+| Qwen/Qwen3-1.7B | 1,7B | 32.768 tokens nativos, hasta 131.072 con escalado | Apache-2.0 | Hugging Face, ampliamente distribuido | Modelo original en safetensors, apto para vLLM, llama.cpp u Ollama |
+| litert-community/Qwen3-1.7B | 1,7B (int4) | no declarado | Apache-2.0 | Hugging Face | Origen directo del fichero redistribuido aqui |
+| Gemma 3 1B | 1B | 32.768 tokens segun la documentacion publica de Google | Terminos de uso de Gemma | Hugging Face, LiteRT y MediaPipe | Alternativa frecuente en despliegue movil con tooling de Google |
+| Llama 3.2 1B | 1B | 128.000 tokens segun la documentacion publica de Meta | Licencia comunitaria de Llama 3.2 | Hugging Face y formatos moviles | Opcion comparable en tamano para edge, con licencia no Apache |
 
 Los datos de contexto y licencia de los modelos comparativos corresponden a la documentacion publica de sus fabricantes y no han sido verificados contra los repositorios en el momento de redactar esta ficha. No se dispone de resultados de benchmarks que permitan comparar calidad entre estas opciones para este artefacto concreto.
 
@@ -81,12 +81,12 @@ Los datos de contexto y licencia de los modelos comparativos corresponden a la d
 - Contexto no declarado en este repositorio: aunque el modelo base soporte 32.768 tokens nativos, la ventana efectiva en dispositivo estara limitada por la memoria disponible para la cache KV.
 - Idiomas: la model card no especifica que idiomas estan soportados; el rendimiento en castellano no esta documentado para este artefacto.
 - Licencia Apache-2.0: permite uso comercial y modificacion, pero exige conservar el aviso de licencia y los avisos de atribucion, y no concede derechos de marca sobre Qwen ni sobre Warped.
-- Fecha de creacion del repositorio registrada como 2026-10-03 en los metadatos de HuggingFace, posterior a la fecha habitual de publicacion de la familia Qwen3; los metadatos temporales de este repositorio no son fiables.
+- Fecha de creacion del repositorio registrada como 2026-10-03 en los metadatos de Hugging Face, posterior a la fecha habitual de publicacion de la familia Qwen3; los metadatos temporales de este repositorio no son fiables.
 - La busqueda web realizada no arrojo ninguna fuente tecnica relevante sobre este modelo: los resultados obtenidos eran contenido no relacionado, por lo que no existe validacion externa disponible.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/warped-community/Qwen3-1.7B-litert-lm
+- Repositorio en Hugging Face: https://huggingface.co/warped-community/Qwen3-1.7B-litert-lm
 - Repositorio de origen del artefacto: https://huggingface.co/litert-community/Qwen3-1.7B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Paper, blog oficial, repositorio de codigo y demos de este artefacto: no disponible. La busqueda web no devolvio enlaces tecnicos relacionados con el modelo.

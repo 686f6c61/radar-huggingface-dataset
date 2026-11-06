@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`zaremabalgabekova/flickr30k-clip-finetuned` es un repositorio de pesos alojado en HuggingFace por el usuario zaremabalgabekova. El nombre del repositorio indica que se trata de un ajuste fino (fine-tuning) de un modelo de la familia CLIP sobre el conjunto de datos Flickr30k, orientado por tanto a tareas de alineacion imagen-texto. No es, en ningun caso, un modelo generativo de texto: la familia CLIP produce representaciones vectoriales conjuntas de imagenes y texto, no texto libre.
+`zaremabalgabekova/flickr30k-clip-finetuned` es un repositorio de pesos alojado en Hugging Face por el usuario zaremabalgabekova. El nombre del repositorio indica que se trata de un ajuste fino (fine-tuning) de un modelo de la familia CLIP sobre el conjunto de datos Flickr30k, orientado por tanto a tareas de alineacion imagen-texto. No es, en ningun caso, un modelo generativo de texto: la familia CLIP produce representaciones vectoriales conjuntas de imagenes y texto, no texto libre.
 
-La model card publicada es practicamente vacia: unicamente contiene la declaracion de licencia MIT. No se documentan la arquitectura concreta, el numero de parametros, la composicion del dataset de entrenamiento, el regimen de entrenamiento ni los resultados obtenidos. El repositorio ocupa 1,8 GB y los pesos estan en formato safetensors. El pipeline declarado en HuggingFace figura como no disponible, y no se especifican idiomas soportados.
+La model card publicada es practicamente vacia: unicamente contiene la declaracion de licencia MIT. No se documentan la arquitectura concreta, el numero de parametros, la composicion del dataset de entrenamiento, el regimen de entrenamiento ni los resultados obtenidos. El repositorio ocupa 1,8 GB y los pesos estan en formato safetensors. El pipeline declarado en Hugging Face figura como no disponible, y no se especifican idiomas soportados.
 
 Su relevancia actual es limitada y de caracter experimental. Se trata de un artefacto sin descargas ni likes en el momento de la consulta, sin documentacion tecnica y sin benchmarks publicados, por lo que no resulta adecuado como componente de produccion sin una evaluacion previa por parte del equipo que lo adopte. Su interes principal es el de servir como punto de partida reproducible para experimentos academicos de recuperacion imagen-texto o como base para comparaciones internas, siempre que se valide su comportamiento en el dominio objetivo.
 
@@ -21,7 +21,7 @@ Su relevancia actual es limitada y de caracter experimental. Se trata de un arte
 | Licencia | MIT |
 | Formato de pesos | safetensors |
 | Tamano del repositorio | 1,8 GB |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
 | Fecha de creacion | 2026-09-13 |
 | Ultima actualizacion | 2026-09-13 |
@@ -93,7 +93,7 @@ La diferencia practica principal no es de arquitectura, sino de documentacion y 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/zaremabalgabekova/flickr30k-clip-finetuned
+- Repositorio en Hugging Face: https://huggingface.co/zaremabalgabekova/flickr30k-clip-finetuned
 - Dataset Flickr30k (referencia del nombre del modelo, no citado por el autor): no disponible en la busqueda realizada
 - Paper o blog del autor: no disponible
 - Resultados de la busqueda web: las consultas devolvieron unicamente resultados no relacionados con el modelo (foros en chino sobre software y preguntas generales), sin ningun enlace utilizable sobre este repositorio.

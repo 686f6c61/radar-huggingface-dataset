@@ -89,8 +89,8 @@ No se dispone de comparaciones con modelos de otros fabricantes en la informaci�
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ivanfioravanti/Qwen3.8-Flash-Next-DS4-IQ2
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
+- Repositorio en Hugging Face: https://huggingface.co/ivanfioravanti/Qwen3.8-Flash-Next-DS4-IQ2
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio de DS4 Metal: https://github.com/ivanfioravanti/ds4-metal/tree/qwen3.8-flash-next
 - Liberación Q4 (sidecar PLE): https://huggingface.co/ivanfioravanti/Qwen3.8-Flash-Next-DS4-Q4
 - Guía de arquitectura Qwen4: https://aireiter.com/blog/qwen3-8-flash-next-guide

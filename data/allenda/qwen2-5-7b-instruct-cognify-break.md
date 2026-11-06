@@ -78,6 +78,6 @@ La diferencia principal radica en la especializacion: el modelo de Allenda esta 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Allenda/Qwen2.5-7B-Instruct-cognify-BreaK
+- Hugging Face: https://huggingface.co/Allenda/Qwen2.5-7B-Instruct-cognify-BreaK
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - No se proporcionan otros enlaces (papers, blogs, repos) en la informacion disponible.

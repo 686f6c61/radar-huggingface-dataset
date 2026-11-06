@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 
 | Modelo | Tipo | Arquitectura | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| VertexForge-3D | text-to-3D | MeshGPT + VQ-VAE + CLIP | 2046 tokens | Apache-2.0 | HuggingFace |
+| VertexForge-3D | text-to-3D | MeshGPT + VQ-VAE + CLIP | 2046 tokens | Apache-2.0 | Hugging Face |
 | MeshGPT (original) | text-to-3D | VQ-VAE + transformer | no especificado | MIT | Codigo abierto |
 | Meshy | text-to-3D (comercial) | no publicada | no especificado | Propietaria | API comercial |
 | Forge3D | text-to-3D (comercial) | no publicada | no especificado | Propietaria | API comercial |
@@ -83,8 +83,8 @@ La comparativa se limita a informacion publica. VertexForge-3D es un modelo de i
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/EldRoot/VertexForge-3D
+- Hugging Face: https://huggingface.co/EldRoot/VertexForge-3D
 - Sitio web de EldRoot Studios: https://eldroot.studio
-- Organizacion EldRoot en HuggingFace: https://huggingface.co/EldRoot
+- Organizacion EldRoot en Hugging Face: https://huggingface.co/EldRoot
 - Referencia de arquitectura MeshGPT: https://meshgpt.io/
 - Referencia de TRELLIS (mencionada como direccion futura): no disponible en los resultados de busqueda.

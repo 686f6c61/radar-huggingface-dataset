@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Muse-Spark-Open-816B-A42B-NVFP4 es un checkpoint cuantizado en NVFP4 del modelo multimodal Muse-Spark-Open-816B-A42B, publicado por la organizacion meta-models en HuggingFace. Se trata de un modelo de gran tamano orientado a tareas de imagen-texto-a-texto (image-text-to-text), es decir, acepta imagenes y texto como entrada y genera texto, con etiqueta de uso conversacional y soporte exclusivo del idioma ingles. El repositorio esta sujeto a acceso restringido (gated): es necesario aceptar las condiciones en HuggingFace antes de descargarlo.
+Muse-Spark-Open-816B-A42B-NVFP4 es un checkpoint cuantizado en NVFP4 del modelo multimodal Muse-Spark-Open-816B-A42B, publicado por la organizacion meta-models en Hugging Face. Se trata de un modelo de gran tamano orientado a tareas de imagen-texto-a-texto (image-text-to-text), es decir, acepta imagenes y texto como entrada y genera texto, con etiqueta de uso conversacional y soporte exclusivo del idioma ingles. El repositorio esta sujeto a acceso restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de descargarlo.
 
 El nombre del modelo sugiere una arquitectura de mezcla de expertos con 816.000 millones de parametros totales y 42.000 millones activos (sufijo A42B), aunque el recuento real de parametros de los ficheros safetensors es de 483.807.947.264 (unos 483,8 mil millones), una discrepancia que la informacion disponible no aclara. El repositorio ocupa 533,0 GB, coherente con el almacenamiento de pesos en 4 bits junto con escalas y metadatos de cuantizacion.
 
-Su relevancia actual es doble: por un lado, permite ejecutar un modelo de escala de cientos de miles de millones de parametros con un consumo de memoria muy inferior al de los pesos en precision completa; por otro, sirve como referencia practica de cuantizacion NVFP4 mediante modelopt para despliegues en infraestructura de centro de datos. La ficha se ha redactado unicamente con los datos publicados en HuggingFace y con los resultados de busqueda disponibles, que no aportan informacion tecnica adicional sobre el modelo.
+Su relevancia actual es doble: por un lado, permite ejecutar un modelo de escala de cientos de miles de millones de parametros con un consumo de memoria muy inferior al de los pesos en precision completa; por otro, sirve como referencia practica de cuantizacion NVFP4 mediante modelopt para despliegues en infraestructura de centro de datos. La ficha se ha redactado unicamente con los datos publicados en Hugging Face y con los resultados de busqueda disponibles, que no aportan informacion tecnica adicional sobre el modelo.
 
 ## Especificaciones tecnicas
 
@@ -51,7 +51,7 @@ El unico aspecto tecnico verificable es la cuantizacion: el checkpoint se ha gen
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La ficha de HuggingFace no incluye tablas de MMLU, HumanEval, GSM8K, MMMU ni de ninguna otra evaluacion, y los resultados de busqueda web no aportan datos de rendimiento. Tampoco se publican cifras de latencia ni de throughput. Para obtener una referencia de calidad seria necesario consultar la ficha del modelo base sin cuantizar (meta-models/Muse-Spark-Open-816B-A42B) y comparar ambas ejecuciones.
+No se han publicado resultados de benchmarks en la informacion disponible. La ficha de Hugging Face no incluye tablas de MMLU, HumanEval, GSM8K, MMMU ni de ninguna otra evaluacion, y los resultados de busqueda web no aportan datos de rendimiento. Tampoco se publican cifras de latencia ni de throughput. Para obtener una referencia de calidad seria necesario consultar la ficha del modelo base sin cuantizar (meta-models/Muse-Spark-Open-816B-A42B) y comparar ambas ejecuciones.
 
 ## Requisitos de hardware
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La fi
 - VRAM total recomendada con margen para cache KV y activaciones: 280-320 GB en NVFP4 para contextos moderados; el margen exacto depende de la longitud de contexto, que no se ha publicado.
 - GPU de centro de datos recomendadas: NVIDIA B200 o GB200 (NVFP4 nativo), alternativa de 8 x H100 de 80 GB (640 GB agregados) o 4 x H200 de 141 GB. En generaciones anteriores a Blackwell, la ejecucion de NVFP4 requiere comprobar el soporte efectivo del runtime.
 - GPU de consumo: no cabe en ninguna GPU de consumo actual. Una RTX 5090 de 32 GB, la opcion con mas memoria de la gama, solo cubriria en torno al 12 % de los pesos en NVFP4.
-- Despliegue: por el formato NVFP4 y el tag modelopt, la via natural es TensorRT-LLM sobre Blackwell; vLLM es una alternativa a validar segun la version; llama.cpp y Ollama quedan descartados por el tamano y por el formato de cuantizacion. El tag endpoints_compatible indica compatibilidad con endpoints gestionados tipo HuggingFace Inference Endpoints.
+- Despliegue: por el formato NVFP4 y el tag modelopt, la via natural es TensorRT-LLM sobre Blackwell; vLLM es una alternativa a validar segun la version; llama.cpp y Ollama quedan descartados por el tamano y por el formato de cuantizacion. El tag endpoints_compatible indica compatibilidad con endpoints gestionados tipo Hugging Face Inference Endpoints.
 - Latencia y throughput: no disponible en la informacion proporcionada.
 - Almacenamiento: el repositorio ocupa 533,0 GB, por lo que hay que prever ese espacio en disco ademas de la memoria de GPU.
 
@@ -83,7 +83,7 @@ Frente a estas alternativas, la ventaja diferencial de este checkpoint es la cua
 - Discrepancia de parametros sin aclarar: el nombre indica 816B/A42B y el recuento de safetensors da 483,8 mil millones. Conviene confirmarlo antes de planificar infraestructura.
 - Riesgo de alucinacion: no se han publicado evaluaciones de fidelidad, tasas de error ni estudios de sesgo para este checkpoint, ni para el modelo base en la informacion disponible.
 - La cuantizacion a 4 bits puede degradar la calidad respecto al modelo base; no se han publicado comparativas de calidad entre ambas versiones.
-- Acceso restringido (gated): es obligatorio aceptar las condiciones en HuggingFace y disponer de cuenta autorizada, lo que limita la reproducibilidad y la automatizacion de descargas.
+- Acceso restringido (gated): es obligatorio aceptar las condiciones en Hugging Face y disponer de cuenta autorizada, lo que limita la reproducibilidad y la automatizacion de descargas.
 - Licencia muse-model-license (license:other): los terminos de uso comercial, redistribucion y obras derivadas no estan detallados en la informacion disponible y deben revisarse antes de cualquier uso en produccion.
 - Requisitos de hardware muy altos: no es ejecutable en una sola GPU de consumo y exige clústeres con varias GPU de centro de datos, ademas de 533 GB de almacenamiento.
 - Soporte de tool calling y de agentes no confirmado; no conviene asumirlo en disenos de producto sin verificacion previa.
@@ -91,6 +91,6 @@ Frente a estas alternativas, la ventaja diferencial de este checkpoint es la cua
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B-NVFP4
+- Ficha del modelo en Hugging Face: https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B-NVFP4
 - Modelo base (sin cuantizar): https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B
 - Resultados de la busqueda web: no se ha encontrado ningun enlace tecnico relevante. Las busquedas han devuelto unicamente paginas corporativas de Meta (meta.com/about, meta.ai, business.facebook.com y auth.meta.com), sin informacion sobre el modelo, su arquitectura, su entrenamiento o sus benchmarks. No se dispone de paper, blog tecnico, repositorio de codigo ni demo asociados al modelo en la informacion proporcionada.

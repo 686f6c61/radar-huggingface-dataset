@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TS-ASR V12 es un conjunto de pesos para reconocimiento automático del habla (ASR) orientado a hablante objetivo (*target-speaker ASR*), es decir, transcribir la voz de un hablante concreto dentro de una señal de audio que puede contener varias personas hablando. Lo publica el usuario YuCeong-May en HuggingFace como artefacto de soporte del Space demostrativo TS-ASR, y está construido sobre la pila FunASR de ModelScope.
+TS-ASR V12 es un conjunto de pesos para reconocimiento automático del habla (ASR) orientado a hablante objetivo (*target-speaker ASR*), es decir, transcribir la voz de un hablante concreto dentro de una señal de audio que puede contener varias personas hablando. Lo publica el usuario YuCeong-May en Hugging Face como artefacto de soporte del Space demostrativo TS-ASR, y está construido sobre la pila FunASR de ModelScope.
 
 El modelo principal es `KwsAsrConformerDaeV12Qwen`, un sistema híbrido que combina un codificador de tipo Conformer con un decodificador basado en Qwen2.5-0.5B, y que emplea una pista textual (*text-cue*) para guiar la selección del hablante objetivo. El repositorio incluye los pesos en formato PyTorch (`model.pt.avg3_top3`) y el modelo base del decodificador en subcarpeta, con un total de 2,6 GB.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TS-ASR V12 (este) | no disponible (decodificador 0,5B) | no disponible | Target-speaker ASR con text-cue | FunASR Model Open Source License 1.1 | HuggingFace (repo de pesos) |
-| Whisper (variantes) | 39M–1,55B | 30 s por ventana | ASR genérico multilingüe | MIT | HuggingFace, amplia integración |
-| FunASR Paraformer | no disponible | no disponible | ASR genérico en chino principalmente | FunASR Model Open Source License 1.1 | ModelScope / HuggingFace |
-| Qwen2-Audio | ~7B | no disponible | Audio comprensión y ASR | Apache-2.0 (según variante) | HuggingFace |
+| TS-ASR V12 (este) | no disponible (decodificador 0,5B) | no disponible | Target-speaker ASR con text-cue | FunASR Model Open Source License 1.1 | Hugging Face (repo de pesos) |
+| Whisper (variantes) | 39M–1,55B | 30 s por ventana | ASR genérico multilingüe | MIT | Hugging Face, amplia integración |
+| FunASR Paraformer | no disponible | no disponible | ASR genérico en chino principalmente | FunASR Model Open Source License 1.1 | ModelScope / Hugging Face |
+| Qwen2-Audio | ~7B | no disponible | Audio comprensión y ASR | Apache-2.0 (según variante) | Hugging Face |
 
 La comparación es orientativa: los datos de parámetros, contexto y rendimiento de los modelos alternativos no se han verificado en la información disponible y pueden variar según la variante concreta.
 
@@ -85,7 +85,7 @@ La comparación es orientativa: los datos de parámetros, contexto y rendimiento
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/YuCeong-May/TS-ASR-weights
+- Repositorio Hugging Face: https://huggingface.co/YuCeong-May/TS-ASR-weights
 - Space de demostración: https://huggingface.co/spaces/YuCeong-May/TS-ASR
 - Licencia FunASR: https://github.com/modelscope/FunASR/blob/main/MODEL_LICENSE
 - Repositorio FunASR: https://github.com/modelscope/FunASR

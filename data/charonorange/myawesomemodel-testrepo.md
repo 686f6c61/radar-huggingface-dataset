@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio de HuggingFace publicado por el usuario charonorange bajo licencia MIT y etiquetado con los tags `transformers`, `pytorch`, `bert` y `feature-extraction`. Segun los metadatos de la plataforma, el pipeline declarado es de extraccion de caracteristicas (feature-extraction) y el tamano del repositorio es de 0.0 GB, lo que indica que no contiene pesos distribuidos publicamente en el momento de la consulta. El modelo acumula 0 descargas y 0 «likes», y fue creado y actualizado el 24 de septiembre de 2026 con apenas 15 segundos de diferencia entre ambos eventos.
+MyAwesomeModel-TestRepo es un repositorio de Hugging Face publicado por el usuario charonorange bajo licencia MIT y etiquetado con los tags `transformers`, `pytorch`, `bert` y `feature-extraction`. Segun los metadatos de la plataforma, el pipeline declarado es de extraccion de caracteristicas (feature-extraction) y el tamano del repositorio es de 0.0 GB, lo que indica que no contiene pesos distribuidos publicamente en el momento de la consulta. El modelo acumula 0 descargas y 0 «likes», y fue creado y actualizado el 24 de septiembre de 2026 con apenas 15 segundos de diferencia entre ambos eventos.
 
 La model card incluida en el repositorio es una plantilla generica que describe un hipotetico modelo conversacional con razonamiento mejorado, modo thinking, soporte de function calling y busqueda web, pero no aporta ninguna especificacion tecnica verificable: no indica numero de parametros, longitud de contexto, composicion del dataset de entrenamiento ni arquitectura concreta. Las tablas de benchmarks que aparecen en dicha model card comparan al modelo contra entidades anonimizadas («Model1», «Model2», «Model1-v2») sin identificar que sistemas son, por lo que los resultados no son interpretables ni reproducibles.
 
@@ -12,7 +12,7 @@ Por todo ello, esta ficha debe leerse como una descripcion de un repositorio de 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | BERT (segun tag de HuggingFace); la model card no la especifica |
+| Arquitectura | BERT (segun tag de Hugging Face); la model card no la especifica |
 | Parametros totales | no disponible |
 | Parametros activos | no aplica (no se declara arquitectura MoE) |
 | Longitud de contexto | no disponible |
@@ -23,13 +23,13 @@ Por todo ello, esta ficha debe leerse como una descripcion de un repositorio de 
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion verificable sobre la arquitectura interna, el numero de parametros ni la configuracion de capas del modelo. El unico dato estructural es el tag `bert` de HuggingFace, que sugiere una familia de transformers encoder-only orientada a tareas de representacion y extraccion de caracteristicas, coherente con el pipeline declarado `feature-extraction`. Esta descripcion, sin embargo, entra en conflicto directo con el contenido de la model card, que describe un modelo generativo conversacional con modo de razonamiento extendido.
+No se dispone de informacion verificable sobre la arquitectura interna, el numero de parametros ni la configuracion de capas del modelo. El unico dato estructural es el tag `bert` de Hugging Face, que sugiere una familia de transformers encoder-only orientada a tareas de representacion y extraccion de caracteristicas, coherente con el pipeline declarado `feature-extraction`. Esta descripcion, sin embargo, entra en conflicto directo con el contenido de la model card, que describe un modelo generativo conversacional con modo de razonamiento extendido.
 
 La model card menciona un entrenamiento post-training con recursos computacionales incrementados y «mecanismos de optimizacion algoritmica», asi como un supuesto aumento del uso medio de tokens por pregunta en AIME 2025 (de 12K a 23K tokens). No se especifica el numero de tokens de preentrenamiento, la composicion del dataset, ni si se emplearon tecnicas de RLHF, DPO o similares. Tampoco se documenta ninguna innovacion arquitectonica concreta (atencion lineal, decodificacion especulativa, MoE, SSM, etc.). Toda la informacion de entrenamiento procedente de la model card carece de trazabilidad y debe considerarse no verificada.
 
 ## Capacidades
 
-- Extraccion de caracteristicas: es la unica capacidad respaldada por los metadatos de HuggingFace (pipeline `feature-extraction`), lo que implicaria generacion de embeddings para clasificacion, similitud semantica o recuperacion.
+- Extraccion de caracteristicas: es la unica capacidad respaldada por los metadatos de Hugging Face (pipeline `feature-extraction`), lo que implicaria generacion de embeddings para clasificacion, similitud semantica o recuperacion.
 - Generacion de texto y razonamiento: la model card afirma mejoras en matematicas, programacion y logica, pero no aporta evidencia reproducible ni especifica el modo de invocacion.
 - Modo thinking: la model card indica que ya no es necesario insertar tokens especiales para forzar un patron de razonamiento, pero no documenta como se activa.
 - Function calling / tool calling: se menciona «enhanced support for function calling» sin especificar el esquema de herramientas soportado.
@@ -79,7 +79,7 @@ Advertencia: estos datos proceden exclusivamente de la model card del autor, no 
 - VRAM para inferencia: no disponible; al no conocerse el numero de parametros ni si existen pesos publicados, no es posible estimar requisitos.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible; el repositorio ocupa 0.0 GB, por lo que no hay pesos que cargar.
-- Opciones de despliegue: los metadatos indican compatibilidad con `transformers` y `pytorch`, y el tag `endpoints_compatible` sugiere despliegue via HuggingFace Inference Endpoints. No se documenta soporte para vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: los metadatos indican compatibilidad con `transformers` y `pytorch`, y el tag `endpoints_compatible` sugiere despliegue via Hugging Face Inference Endpoints. No se documenta soporte para vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -105,5 +105,5 @@ No es posible establecer una comparativa fiable porque no se conocen ni el taman
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/charonorange/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/charonorange/MyAwesomeModel-TestRepo
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion proporcionada.

@@ -75,7 +75,7 @@ No disponible. La información proporcionada no incluye datos de rendimiento ni 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/open-noodle/distill-any-depth-small
+- Modelo en Hugging Face: https://huggingface.co/open-noodle/distill-any-depth-small
 - Modelo base: https://huggingface.co/xingyang1/Distill-Any-Depth-Small-hf
 - Artículo de referencia: https://arxiv.org/abs/2502.19204
 - Repositorio Gallery: https://github.com/open-noodle/gallery

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Fun-CosyVoice3-0.5B-2512 es un sistema de síntesis de voz (text-to-speech, TTS) basado en un modelo de lenguaje de aproximadamente 0,5 mil millones de parámetros, desarrollado por FunAudioLLM (Alibaba) y redistribuido en HuggingFace por el usuario nonua. Forma parte de la familia CosyVoice, cuya tercera versión se publica bajo el identificador de checkpoint 2512 (diciembre de 2025 según el roadmap del autor original). El modelo resuelve síntesis multilingüe zero-shot "in the wild": genera voz a partir de texto con clonación de timbre a partir de una muestra de audio de referencia, sin necesidad de entrenamiento adicional por hablante.
+Fun-CosyVoice3-0.5B-2512 es un sistema de síntesis de voz (text-to-speech, TTS) basado en un modelo de lenguaje de aproximadamente 0,5 mil millones de parámetros, desarrollado por FunAudioLLM (Alibaba) y redistribuido en Hugging Face por el usuario nonua. Forma parte de la familia CosyVoice, cuya tercera versión se publica bajo el identificador de checkpoint 2512 (diciembre de 2025 según el roadmap del autor original). El modelo resuelve síntesis multilingüe zero-shot "in the wild": genera voz a partir de texto con clonación de timbre a partir de una muestra de audio de referencia, sin necesidad de entrenamiento adicional por hablante.
 
 La relevancia técnica del modelo reside en tres puntos. Primero, cubre 9 idiomas (chino, inglés, japonés, coreano, alemán, español, francés, italiano y ruso) más de 18 dialectos y acentos del chino, con soporte de clonación de voz multilingüe y cross-lingual. Segundo, incorpora capacidades orientadas a producción: "pronunciation inpainting" mediante pinyin chino y fonemas CMU ingleses, normalización de texto sin frontend tradicional, y modo bi-streaming (texto de entrada y audio de salida en streaming) con latencia declarada de hasta 150 ms. Tercero, admite instrucciones de control (idioma, dialecto, emoción, velocidad, volumen).
 
@@ -120,7 +120,7 @@ Frente a alternativas del mismo rango de tamaño (0,5 B), Fun-CosyVoice3-0.5B-25
 ## Enlaces
 
 - Repositorio analizado: https://huggingface.co/nonua/Fun-CosyVoice3-0.5B-2512
-- Repositorio oficial en HuggingFace: https://huggingface.co/FunAudioLLM/Fun-CosyVoice3-0.5B-2512
+- Repositorio oficial en Hugging Face: https://huggingface.co/FunAudioLLM/Fun-CosyVoice3-0.5B-2512
 - Repositorio oficial en ModelScope: https://www.modelscope.cn/models/FunAudioLLM/Fun-CosyVoice3-0.5B-2512
 - Demos de Fun-CosyVoice 3.0: https://funaudiollm.github.io/cosyvoice3/
 - Paper de Fun-CosyVoice 3.0: https://arxiv.org/abs/2505.17589
@@ -129,8 +129,8 @@ Frente a alternativas del mismo rango de tamaño (0,5 B), Fun-CosyVoice3-0.5B-25
 - Repositorio de código CosyVoice: https://github.com/FunAudioLLM/CosyVoice
 - Conjunto de evaluación CV3-Eval: https://github.com/FunAudioLLM/CV3-Eval
 - Demos de CosyVoice 2.0: https://funaudiollm.github.io/cosyvoice2/
-- CosyVoice 2.0 en HuggingFace: https://huggingface.co/FunAudioLLM/CosyVoice2-0.5B
+- CosyVoice 2.0 en Hugging Face: https://huggingface.co/FunAudioLLM/CosyVoice2-0.5B
 - CosyVoice 2.0 en ModelScope: https://www.modelscope.cn/models/iic/CosyVoice2-0.5B
-- CosyVoice 1.0 en HuggingFace: https://huggingface.co/FunAudioLLM/CosyVoice-300M
+- CosyVoice 1.0 en Hugging Face: https://huggingface.co/FunAudioLLM/CosyVoice-300M
 - CosyVoice 1.0 en ModelScope: https://www.modelscope.cn/models/iic/CosyVoice-300M
 - Repositorio de referencia para normalización de texto: https://huggingface.co/FunAudioLLM/CosyVoice-ttsfrd

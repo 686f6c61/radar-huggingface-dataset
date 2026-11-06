@@ -4,7 +4,7 @@
 
 El modelo `KKHYA/llavaqwen3-1.7b-finetune-nm-mask-moe-sparse-4e-2k-1of8-imp-randrouter_20260828_083349` es un fine-tuning experimental desarrollado por KKHYA sobre el modelo base `KKHYA/llavaqwen3-1.7b-finetune`, que a su vez deriva de la familia LLaVA-Qwen3. El nombre y las etiquetas (`nm_mask_moe`, `sparse`, `1of8`, `imp-randrouter`) indican que se trata de una variante con arquitectura de mezcla de expertos (MoE) con activación dispersa y un router basado en importancia aleatoria, aunque no se proporcionan detalles técnicos adicionales en la documentación.
 
-El modelo está registrado como pipeline de generación de texto, con licencia Apache 2.0, y cuenta con 4.455.586.816 parámetros totales según los pesos en safetensors. Sin embargo, la model card es extremadamente escasa: no se especifica el dataset de entrenamiento, no hay resultados de benchmarks, y no se documentan capacidades concretas más allá de la generación conversacional. A fecha de creación (agosto de 2026) no registra descargas ni interacciones en HuggingFace, lo que sugiere que es un artefacto de investigación o un experimento personal más que un modelo listo para producción.
+El modelo está registrado como pipeline de generación de texto, con licencia Apache 2.0, y cuenta con 4.455.586.816 parámetros totales según los pesos en safetensors. Sin embargo, la model card es extremadamente escasa: no se especifica el dataset de entrenamiento, no hay resultados de benchmarks, y no se documentan capacidades concretas más allá de la generación conversacional. A fecha de creación (agosto de 2026) no registra descargas ni interacciones en Hugging Face, lo que sugiere que es un artefacto de investigación o un experimento personal más que un modelo listo para producción.
 
 ## Especificaciones tecnicas
 
@@ -64,8 +64,8 @@ No se dispone de datos de rendimiento para comparar. Existen otros modelos del m
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/KKHYA/llavaqwen3-1.7b-finetune-nm-mask-moe-sparse-4e-2k-1of8-imp-randrouter_20260828_083349)
-- [Modelo base en HuggingFace](https://huggingface.co/KKHYA/llavaqwen3-1.7b-finetune)
+- [Hugging Face - modelo](https://huggingface.co/KKHYA/llavaqwen3-1.7b-finetune-nm-mask-moe-sparse-4e-2k-1of8-imp-randrouter_20260828_083349)
+- [Modelo base en Hugging Face](https://huggingface.co/KKHYA/llavaqwen3-1.7b-finetune)
 - [GitHub - MoE-LLaVA (PKU-YuanGroup)](https://github.com/PKU-YuanGroup/MoE-LLaVA)
-- [Modelo similar 1of4 en HuggingFace](https://huggingface.co/KKHYA/llavaqwen3-1.7b-finetune-nm-mask-moe-sparse-4e-2k-1of4-imp-randrouter_20260827_200216/discussions)
-- [Modelo similar 2of4 en HuggingFace](https://huggingface.co/KKHYA/llavaqwen3-1.7b-finetune-nm-mask-moe-sparse-4e-2k-2of4-imp-randrouter-sd3_20260811_213712/tree/main)
+- [Modelo similar 1of4 en Hugging Face](https://huggingface.co/KKHYA/llavaqwen3-1.7b-finetune-nm-mask-moe-sparse-4e-2k-1of4-imp-randrouter_20260827_200216/discussions)
+- [Modelo similar 2of4 en Hugging Face](https://huggingface.co/KKHYA/llavaqwen3-1.7b-finetune-nm-mask-moe-sparse-4e-2k-2of4-imp-randrouter-sd3_20260811_213712/tree/main)

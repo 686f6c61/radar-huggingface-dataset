@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`misapapa71/model-sayaka-krea2` es un adaptador LoRA de tipo DreamBooth para el modelo de generación de imágenes Krea 2. No es un modelo base autónomo: se carga sobre los pesos de `krea/Krea-2-Turbo` mediante `Krea2Pipeline` de la librería diffusers y su función es introducir un concepto concreto, invocado con el token `model-Sayaka-krea2`, en las imágenes generadas. El autor es misapapa71 (KATSUNORI MUROOKA, según su perfil de HuggingFace) y el entrenamiento se realizó sobre `krea/Krea-2-Raw`, mientras que las muestras publicadas se generaron sobre la variante Turbo en 8 pasos.
+`misapapa71/model-sayaka-krea2` es un adaptador LoRA de tipo DreamBooth para el modelo de generación de imágenes Krea 2. No es un modelo base autónomo: se carga sobre los pesos de `krea/Krea-2-Turbo` mediante `Krea2Pipeline` de la librería diffusers y su función es introducir un concepto concreto, invocado con el token `model-Sayaka-krea2`, en las imágenes generadas. El autor es misapapa71 (KATSUNORI MUROOKA, según su perfil de Hugging Face) y el entrenamiento se realizó sobre `krea/Krea-2-Raw`, mientras que las muestras publicadas se generaron sobre la variante Turbo en 8 pasos.
 
 Su relevancia es acotada y muy específica: sirve para producir imágenes consistentes de un personaje o concepto concreto sin reentrenar el modelo base, con un coste de almacenamiento de 1,0 GB y un flujo de uso de dos líneas de código. En el momento de la consulta el repositorio acumula 0 descargas y 0 likes, y no incluye información sobre el dataset, el rango del adaptador ni métricas de calidad, por lo que debe evaluarse como un artefacto experimental y no como un componente validado para producción.
 
-La ficha se ha elaborado a partir de los metadatos de HuggingFace y de la model card del autor. Todos los datos sobre el modelo base (arquitectura interna, número de parámetros, licencia real de Krea 2, requisitos de VRAM) no se detallan en la información disponible y se marcan como tales.
+La ficha se ha elaborado a partir de los metadatos de Hugging Face y de la model card del autor. Todos los datos sobre el modelo base (arquitectura interna, número de parámetros, licencia real de Krea 2, requisitos de VRAM) no se detallan en la información disponible y se marcan como tales.
 
 ## Especificaciones tecnicas
 
@@ -99,7 +99,7 @@ Los tres primeros son adaptadores del mismo autor y con la misma plantilla de mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/misapapa71/model-sayaka-krea2
+- Modelo en Hugging Face: https://huggingface.co/misapapa71/model-sayaka-krea2
 - Perfil del autor: https://huggingface.co/misapapa71
 - Adaptador del mismo autor `model-mei-krea2`: https://huggingface.co/misapapa71/model-mei-krea2
 - Ficha de terceros de `model-mei-krea2`: https://free2aitools.com/model/misapapa71/model-mei-krea2

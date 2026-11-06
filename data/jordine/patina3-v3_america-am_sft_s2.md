@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Jordine/patina3-v3_america-am_sft_s2 es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario Jordine en HuggingFace. Se trata de un ajuste fino supervisado (SFT) aplicado sobre el modelo base meta-llama/Llama-3.1-8B, y se distribuye como un módulo PEFT en formato safetensors. El repositorio ocupa 0,7 GB, lo que confirma que no es un modelo completo, sino un conjunto de pesos adicionales que deben cargarse junto con el modelo base.
+Jordine/patina3-v3_america-am_sft_s2 es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario Jordine en Hugging Face. Se trata de un ajuste fino supervisado (SFT) aplicado sobre el modelo base meta-llama/Llama-3.1-8B, y se distribuye como un módulo PEFT en formato safetensors. El repositorio ocupa 0,7 GB, lo que confirma que no es un modelo completo, sino un conjunto de pesos adicionales que deben cargarse junto con el modelo base.
 
 La model card asociada es un plantilla sin completar y no contiene información sobre el propósito del ajuste, los datos de entrenamiento, la licencia ni los idiomas soportados. No se han publicado descargas ni resultados de evaluación. El nombre sugiere una etapa de entrenamiento concreto (sft_s2) y una orientación geografica o tematica ("america-am"), pero no existe documentacion que lo confirme.
 
@@ -88,6 +88,6 @@ No existen datos de benchmarks comparables para el adaptador ni para otros ajust
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Jordine/patina3-v3_america-am_sft_s2
+- Repositorio Hugging Face: https://huggingface.co/Jordine/patina3-v3_america-am_sft_s2
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Referencia al paper de impacto ambiental: https://arxiv.org/abs/1910.09700

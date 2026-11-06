@@ -72,9 +72,9 @@ Puntuación global: 0,739 s de media, con 5 de 5 semillas oficiales completadas.
 
 | Modelo | Parámetros | Contexto | Rendimiento (media 5 semillas) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rumezhak/microduck-hill-remix-leader3 | no disponible | no aplica | 0,739 s (in-sample) | Apache-2.0 | HuggingFace |
-| a1rb4Ck/microduck-hill-1m5 | no disponible | no aplica | 0,740 s | Apache-2.0 | HuggingFace |
-| rumezhak/microduck-hill-remix-leader2 | no disponible | no aplica | no disponible (solo re-buscaba los mismos ticks) | Apache-2.0 | HuggingFace |
+| rumezhak/microduck-hill-remix-leader3 | no disponible | no aplica | 0,739 s (in-sample) | Apache-2.0 | Hugging Face |
+| a1rb4Ck/microduck-hill-1m5 | no disponible | no aplica | 0,740 s | Apache-2.0 | Hugging Face |
+| rumezhak/microduck-hill-remix-leader2 | no disponible | no aplica | no disponible (solo re-buscaba los mismos ticks) | Apache-2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -89,7 +89,7 @@ Puntuación global: 0,739 s de media, con 5 de 5 semillas oficiales completadas.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rumezhak/microduck-hill-remix-leader3
+- Modelo en Hugging Face: https://huggingface.co/rumezhak/microduck-hill-remix-leader3
 - Modelo base: https://huggingface.co/a1rb4Ck/microduck-hill-1m5
 - Microduck Arena (Space de Pollen Robotics): https://huggingface.co/spaces/pollen-robotics/microduck-arena
 - Perfil del autor del modelo base: https://huggingface.co/a1rb4Ck

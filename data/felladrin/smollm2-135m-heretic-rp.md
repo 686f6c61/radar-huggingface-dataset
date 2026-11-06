@@ -79,10 +79,10 @@ No se dispone de datos de rendimiento comparativo en benchmarks. La diferencia p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Felladrin/SmolLM2-135M-Heretic-RP
+- Modelo en Hugging Face: https://huggingface.co/Felladrin/SmolLM2-135M-Heretic-RP
 - Modelo base (heretic): https://huggingface.co/saidutta69/SmolLM2-135M-Instruct-heretic
 - Modelo base original: https://huggingface.co/HuggingFaceTB/SmolLM2-135M
 - Herramienta gguf-trainer: https://github.com/felladrin/gguf-trainer
-- Perfil del autor en HuggingFace: https://huggingface.co/Felladrin
+- Perfil del autor en Hugging Face: https://huggingface.co/Felladrin
 - Perfil del autor en GitHub: https://github.com/felladrin
 - Datasets usados: PygmalionAI/PIPPA, Gryphe/Opus-WritingPrompts, kalomaze/Opus_Instruct_3k, jondurbin/gutenberg-dpo-v0.1, HuggingFaceTB/smol-smoltalk

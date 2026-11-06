@@ -95,7 +95,7 @@ Según el autor, la reducción de KLD respecto a la cuantización Q4_K_M simple 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rajasaini2208/Qwen2.5-1.5B-Instruct-hindi-imatrix-Q4_K_M-GGUF
+- Modelo en Hugging Face: https://huggingface.co/rajasaini2208/Qwen2.5-1.5B-Instruct-hindi-imatrix-Q4_K_M-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Repositorio de llama.cpp (motor de inferencia GGUF y herramienta imatrix): https://github.com/ggerganov/llama.cpp
 - Informe técnico de Qwen2.5: https://arxiv.org/abs/2412.15115

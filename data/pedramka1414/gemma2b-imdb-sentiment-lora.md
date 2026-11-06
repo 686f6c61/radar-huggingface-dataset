@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`pedramka1414/gemma2b-imdb-sentiment-lora` es un adaptador LoRA alojado en HuggingFace Hub, segun se deduce del identificador del repositorio: un ajuste fino del modelo base Gemma-2B de Google orientado a analisis de sentimiento sobre el corpus IMDB. El autor es el usuario `pedramka1414` y el repositorio ocupa 0,3 GB, un tamano coherente con un adaptador LoRA (y no con una copia completa de los pesos del modelo base de 2.000 millones de parametros).
+`pedramka1414/gemma2b-imdb-sentiment-lora` es un adaptador LoRA alojado en Hugging Face Hub, segun se deduce del identificador del repositorio: un ajuste fino del modelo base Gemma-2B de Google orientado a analisis de sentimiento sobre el corpus IMDB. El autor es el usuario `pedramka1414` y el repositorio ocupa 0,3 GB, un tamano coherente con un adaptador LoRA (y no con una copia completa de los pesos del modelo base de 2.000 millones de parametros).
 
-El problema que aborda es la clasificacion binaria de sentimiento (positivo/negativo) en resenas de cine en ingles, una tarea de clasificacion de secuencias clasica. La relevancia practica de este tipo de artefacto es limitada: se trata de un experimento educativo o de un prototipo sin documentacion, con cero descargas y cero interacciones en el momento de la consulta, y con una model card autogenerada por HuggingFace en la que practicamente todos los campos figuran como "[More Information Needed]".
+El problema que aborda es la clasificacion binaria de sentimiento (positivo/negativo) en resenas de cine en ingles, una tarea de clasificacion de secuencias clasica. La relevancia practica de este tipo de artefacto es limitada: se trata de un experimento educativo o de un prototipo sin documentacion, con cero descargas y cero interacciones en el momento de la consulta, y con una model card autogenerada por Hugging Face en la que practicamente todos los campos figuran como "[More Information Needed]".
 
 La informacion publicada no permite confirmar hiperparametros, composicion del dataset de entrenamiento, metrica de evaluacion ni condiciones de licencia. Cualquier uso en produccion requeriria auditar el adaptador, verificar el modelo base empleado y asumir la licencia de Gemma, ademas de validar el rendimiento por cuenta propia.
 
@@ -25,7 +25,7 @@ La informacion publicada no permite confirmar hiperparametros, composicion del d
 
 La model card no documenta la arquitectura. A partir del identificador `gemma2b-imdb-sentiment-lora` se infiere que el adaptador se aplica sobre Gemma-2B, un transformer decoder-only de aproximadamente 2.000 millones de parametros, y que se emplea PEFT/LoRA para ajustar un subconjunto reducido de pesos sobre el dataset IMDB. No hay ninguna confirmacion de estos extremos en la informacion disponible: ni el campo "Finetuned from model", ni el campo "Model type", ni el "Training regime" estan rellenos.
 
-Tampoco se especifican el numero de tokens vistos, la composicion del dataset (mas alla del nombre IMDB), el uso de RLHF/DPO (irrelevante en principio para una tarea de clasificacion), el rango del adaptador, el valor de alpha, el learning rate ni el numero de epocas. No se describe ninguna innovacion tecnica asociada. La tag `arxiv:1910.09700` que aparece en el repositorio corresponde a la referencia del calculador de impacto de ML citada en la plantilla de model card de HuggingFace (Lacoste et al., 2019), no a un paper propio del modelo.
+Tampoco se especifican el numero de tokens vistos, la composicion del dataset (mas alla del nombre IMDB), el uso de RLHF/DPO (irrelevante en principio para una tarea de clasificacion), el rango del adaptador, el valor de alpha, el learning rate ni el numero de epocas. No se describe ninguna innovacion tecnica asociada. La tag `arxiv:1910.09700` que aparece en el repositorio corresponde a la referencia del calculador de impacto de ML citada en la plantilla de model card de Hugging Face (Lacoste et al., 2019), no a un paper propio del modelo.
 
 ## Capacidades
 
@@ -68,14 +68,14 @@ Como referencia externa, una busqueda web devuelve un cuaderno de Kaggle titulad
 - GPU de datacenter recomendadas para servicio con concurrencia: A100 40/80 GB, H100, L40S o similares, aunque resultan sobredimensionadas para un modelo de 2B salvo que se busque throughput muy alto.
 - Opciones de despliegue: transformers con PEFT es la via directa (asi esta etiquetado el repositorio). Tambien son viables vLLM, TGI y Ollama una vez fusionado el adaptador con el modelo base. `llama.cpp` exigiria convertir los pesos a GGUF.
 - Latencia y throughput: no disponibles. No hay datos de velocidad publicados por el autor.
-- El repositorio incluye la tag `endpoints_compatible`, lo que sugiere compatibilidad con HuggingFace Inference Endpoints.
+- El repositorio incluye la tag `endpoints_compatible`, lo que sugiere compatibilidad con Hugging Face Inference Endpoints.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `pedramka1414/gemma2b-imdb-sentiment-lora` | adaptador LoRA sobre 2B (presunto) | no disponible | Sentimiento en ingles | no disponible | HuggingFace Hub, 0 descargas |
-| `distilbert-base-uncased-finetuned-sst-2-english` | 66 M | 512 tokens | Sentimiento en ingles | Apache 2.0 | HuggingFace Hub, ampliamente usado |
+| `pedramka1414/gemma2b-imdb-sentiment-lora` | adaptador LoRA sobre 2B (presunto) | no disponible | Sentimiento en ingles | no disponible | Hugging Face Hub, 0 descargas |
+| `distilbert-base-uncased-finetuned-sst-2-english` | 66 M | 512 tokens | Sentimiento en ingles | Apache 2.0 | Hugging Face Hub, ampliamente usado |
 | Ajustes de RoBERTa-base sobre IMDB | 125 M | 512 tokens | Sentimiento en ingles | MIT (base) | Multiples variantes publicas |
 | `@cf/google/gemma-2b-it-lora` (Cloudflare Workers AI) | adaptador LoRA sobre 2B | no disponible | Generacion con adaptadores | sujeta a los terminos de Gemma | Cloudflare Workers AI |
 
@@ -95,7 +95,7 @@ Frente a los clasificadores encoder pequenos (DistilBERT, RoBERTa-base), el uso 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pedramka1414/gemma2b-imdb-sentiment-lora
+- Modelo en Hugging Face: https://huggingface.co/pedramka1414/gemma2b-imdb-sentiment-lora
 - Referencia citada en la plantilla de model card (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculador de impacto de ML: https://mlco2.github.io/impact#compute
 - Cuaderno de Kaggle sobre ajuste de Gemma-2B en IMDB (referencia externa, no atribuible a este modelo): https://www.kaggle.com/code/renderhp/96-6-fine-tune-gemma-2b-imdb-sent-analysis

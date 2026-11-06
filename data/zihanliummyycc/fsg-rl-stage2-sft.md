@@ -102,7 +102,7 @@ No se han identificado en la busqueda web modelos comparables (la busqueda devol
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/ZihanLiummyycc/FSG-RL-Stage2-SFT
+- Adaptador en Hugging Face: https://huggingface.co/ZihanLiummyycc/FSG-RL-Stage2-SFT
 - Modelo base referenciado: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Repositorio del proyecto (codigo, esquema de datos y configuracion): https://github.com/ZihanLiummyycc/FSG-RL
 - Paper, blog o demo: no disponibles en la informacion proporcionada.

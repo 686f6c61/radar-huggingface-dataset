@@ -2,7 +2,7 @@
 
 ## Resumen
 
-robot_learning_tutorial_diffusion es un repositorio de pesos alojado en HuggingFace por el usuario RhinoceratopsvsSuperpuma. Según los metadatos de safetensors, contiene 277.840.246 parámetros y el repositorio ocupa 2,2 GB. Las únicas etiquetas declaradas son `safetensors` y `region:us`; no se especifica pipeline, licencia, idiomas ni descripción de uso. En el momento de la consulta acumula 19 descargas y 0 likes.
+robot_learning_tutorial_diffusion es un repositorio de pesos alojado en Hugging Face por el usuario RhinoceratopsvsSuperpuma. Según los metadatos de safetensors, contiene 277.840.246 parámetros y el repositorio ocupa 2,2 GB. Las únicas etiquetas declaradas son `safetensors` y `region:us`; no se especifica pipeline, licencia, idiomas ni descripción de uso. En el momento de la consulta acumula 19 descargas y 0 likes.
 
 El nombre del repositorio apunta a un modelo de difusión empleado como material de tutorial dentro del área de aprendizaje robótico (robot learning), una categoría en la que los modelos de difusión se usan habitualmente como políticas de imitación que generan secuencias de acciones a partir de observaciones visuales y propioceptivas. Sin embargo, esta interpretación procede únicamente del nombre del repositorio: no hay model card, configuración publicada ni documentación que permita confirmar arquitectura, dominio de aplicación o procedencia de los datos.
 
@@ -68,7 +68,7 @@ No es posible establecer una comparativa cuantitativa fiable porque los datos de
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| robot_learning_tutorial_diffusion | 277.840.246 | no disponible | no disponible | HuggingFace, 19 descargas |
+| robot_learning_tutorial_diffusion | 277.840.246 | no disponible | no disponible | Hugging Face, 19 descargas |
 | Diffusion Policy (Chi et al., 2023) | no disponible | no disponible | no disponible | Publicación académica y reimplementaciones |
 | ACT (Zhao et al., 2023) | no disponible | no disponible | no disponible | Publicación académica y reimplementaciones |
 | VQ-BeT | no disponible | no disponible | no disponible | Publicación académica y reimplementaciones |
@@ -89,6 +89,6 @@ La única comparación defendible es de categoría: los tres alternativas citada
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/RhinoceratopsvsSuperpuma/robot_learning_tutorial_diffusion
+- Repositorio en Hugging Face: https://huggingface.co/RhinoceratopsvsSuperpuma/robot_learning_tutorial_diffusion
 - Paper, blog, repositorio de código o demo: no disponible.
 - La búsqueda web asociada no devolvió ningún enlace relevante sobre este modelo; los resultados obtenidos correspondían a consultas no relacionadas (Zhihu y Super User).

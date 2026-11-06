@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `ministarObrane/kira` esta alojado en HuggingFace bajo la organizacion `ministarObrane`. No existe informacion publica sobre su arquitectura, datos de entrenamiento, capacidades o uso previsto. La model card contiene unicamente la licencia MIT, sin descripcion, metadatos de idioma ni documentacion tecnica. El repositorio tiene un tamano de 0,7 GB, lo que sugiere que podria tratarse de un modelo relativamente pequeno, pero no se puede confirmar su tipologia ni su funcionamiento.
+El modelo `ministarObrane/kira` esta alojado en Hugging Face bajo la organizacion `ministarObrane`. No existe informacion publica sobre su arquitectura, datos de entrenamiento, capacidades o uso previsto. La model card contiene unicamente la licencia MIT, sin descripcion, metadatos de idioma ni documentacion tecnica. El repositorio tiene un tamano de 0,7 GB, lo que sugiere que podria tratarse de un modelo relativamente pequeno, pero no se puede confirmar su tipologia ni su funcionamiento.
 
-La fecha de creacion del repositorio es 2026-09-09, lo que resulta anomalo respecto a la disponibilidad actual de modelos publicos. No se ha publicado ningun paper, benchmark o detalle de entrenamiento. Tampoco hay descargas ni likes en HuggingFace, lo que indica que no ha sido probado por la comunidad. Por tanto, este modelo no es utilizable para evaluacion tecnica en su estado actual.
+La fecha de creacion del repositorio es 2026-09-09, lo que resulta anomalo respecto a la disponibilidad actual de modelos publicos. No se ha publicado ningun paper, benchmark o detalle de entrenamiento. Tampoco hay descargas ni likes en Hugging Face, lo que indica que no ha sido probado por la comunidad. Por tanto, este modelo no es utilizable para evaluacion tecnica en su estado actual.
 
 ## Especificaciones tecnicas
 
@@ -19,7 +19,7 @@ La fecha de creacion del repositorio es 2026-09-09, lo que resulta anomalo respe
 | Licencia | MIT |
 | Formato de pesos | no disponible |
 
-Nota: el repositorio tiene un tamano de 0,7 GB segun HuggingFace, pero no se indica el formato de los ficheros ni si incluye pesos, tokenizador o cualquier otro componente.
+Nota: el repositorio tiene un tamano de 0,7 GB segun Hugging Face, pero no se indica el formato de los ficheros ni si incluye pesos, tokenizador o cualquier otro componente.
 
 ## Arquitectura y entrenamiento
 
@@ -70,11 +70,11 @@ No se pueden establecer comparativas con otros modelos al no existir informacion
 
 - Falta cualquier documentacion tecnica o model card descriptiva.
 - No se puede verificar la autenticidad del modelo ni su capacidad para ser cargado correctamente.
-- La fecha de creacion futura (2026) sugiere que el repositorio podria ser un artefacto extraño o una prueba de la plataforma de HuggingFace.
+- La fecha de creacion futura (2026) sugiere que el repositorio podria ser un artefacto extraño o una prueba de la plataforma de Hugging Face.
 - No hay evidencia de uso, descargas o likes por parte de la comunidad.
 - La licencia MIT permite el uso comercial y la redistribucion, pero sin informacion sobre los pesos, la licencia no es operativa en la practica.
 - Riesgo elevado de encontrarse ante un repositorio vacio o no funcional.
 
 ## Enlaces
 
-- HuggingFace: [https://huggingface.co/ministarObrane/kira](https://huggingface.co/ministarObrane/kira)
+- Hugging Face: [https://huggingface.co/ministarObrane/kira](https://huggingface.co/ministarObrane/kira)

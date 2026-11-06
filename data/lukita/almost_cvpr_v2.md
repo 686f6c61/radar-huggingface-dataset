@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Lukita/almost_cvpr_v2` es un repositorio de artefactos de experimentacion publicado en HuggingFace, no un modelo de lenguaje con pesos y arquitectura documentados de forma convencional. La model card lo describe explicitamente como un paquete que completa dos carpetas de experimentos, `csr_k8_743bbf428050/` y `csrv2_k8_9a423d1ae51d/`, e incluye pesos, configuraciones, logs de entrenamiento, diagnosticos, metricas y predicciones, preservando las rutas de fichero originales y excluyendo ficheros `.DS_Store` de macOS. El nombre sugiere un contexto de investigacion en vision por computador (CVPR), pero la informacion disponible no confirma la tarea concreta.
+`Lukita/almost_cvpr_v2` es un repositorio de artefactos de experimentacion publicado en Hugging Face, no un modelo de lenguaje con pesos y arquitectura documentados de forma convencional. La model card lo describe explicitamente como un paquete que completa dos carpetas de experimentos, `csr_k8_743bbf428050/` y `csrv2_k8_9a423d1ae51d/`, e incluye pesos, configuraciones, logs de entrenamiento, diagnosticos, metricas y predicciones, preservando las rutas de fichero originales y excluyendo ficheros `.DS_Store` de macOS. El nombre sugiere un contexto de investigacion en vision por computador (CVPR), pero la informacion disponible no confirma la tarea concreta.
 
 El repositorio ocupa 1,3 GB y fue creado y actualizado el 4 de noviembre de 2026, con cero descargas y cero likes en el momento de la consulta. No declara licencia, idiomas, pipeline ni etiquetas funcionales mas alla de `region:us`. La unica referencia tecnica adicional es la existencia de un `manifest.json` con tamanos de fichero y sumas de verificacion SHA-256.
 
@@ -86,7 +86,7 @@ No disponible. No se identifican en la informacion proporcionada modelos compara
 | Contexto | no disponible | no disponible |
 | Rendimiento | no disponible | no disponible |
 | Licencia | no disponible | no disponible |
-| Disponibilidad | Repositorio publico en HuggingFace, 0 descargas | no disponible |
+| Disponibilidad | Repositorio publico en Hugging Face, 0 descargas | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -103,6 +103,6 @@ No disponible. No se identifican en la informacion proporcionada modelos compara
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Lukita/almost_cvpr_v2
+- Repositorio en Hugging Face: https://huggingface.co/Lukita/almost_cvpr_v2
 - Manifiesto de ficheros y checksums: `manifest.json` dentro del propio repositorio (no se dispone de URL directa en la informacion proporcionada).
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos adicionales asociados a este modelo.

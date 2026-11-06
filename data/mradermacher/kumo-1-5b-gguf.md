@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kumo-1.5B-GGUF es una colección de cuantizaciones estáticas en formato GGUF del modelo Kumo-1.5B, publicada por el usuario mradermacher en HuggingFace. Se trata, por tanto, de un artefacto derivado: el repositorio no contiene pesos originales ni documentación técnica propia, sino conversiones del modelo base desarrollado por Tomopas, orientadas a su uso con llama.cpp y herramientas compatibles con GGUF.
+Kumo-1.5B-GGUF es una colección de cuantizaciones estáticas en formato GGUF del modelo Kumo-1.5B, publicada por el usuario mradermacher en Hugging Face. Se trata, por tanto, de un artefacto derivado: el repositorio no contiene pesos originales ni documentación técnica propia, sino conversiones del modelo base desarrollado por Tomopas, orientadas a su uso con llama.cpp y herramientas compatibles con GGUF.
 
 El modelo base tiene 1.500 millones de parámetros, lo que lo sitúa en la categoría de modelos pequeños, aptos para inferencia en hardware de consumo. Sin embargo, la model card del repositorio de cuantización no aporta información sobre arquitectura, datos de entrenamiento, licencia, idiomas ni rendimiento, por lo que la mayor parte de las especificaciones técnicas no pueden confirmarse a partir de la información disponible.
 
@@ -25,7 +25,7 @@ La relevancia de este repositorio es operativa: ofrece hasta doce variantes de c
 
 No se ha publicado información sobre la arquitectura del modelo base en la documentación disponible. El nombre y el tamaño (1,5B) sugieren un transformer decoder-only de escala pequeña, pero no se confirma ni la familia arquitectónica, ni el mecanismo de atención, ni si emplea técnicas como GQA o atención lineal.
 
-Tampoco hay datos sobre el corpus de entrenamiento (número de tokens, composición, proporción de código o multilingüismo), ni sobre si se aplicaron fases de ajuste supervisado, RLHF o DPO. La única información técnica verificable del repositorio es el proceso de cuantización: los metadatos indican `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, es decir, una conversión desde pesos en formato HuggingFace con cuantización por tensor de salida.
+Tampoco hay datos sobre el corpus de entrenamiento (número de tokens, composición, proporción de código o multilingüismo), ni sobre si se aplicaron fases de ajuste supervisado, RLHF o DPO. La única información técnica verificable del repositorio es el proceso de cuantización: los metadatos indican `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, es decir, una conversión desde pesos en formato Hugging Face con cuantización por tensor de salida.
 
 ## Capacidades
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Kumo-1.5B (GGUF, este repo) | 1,5B | no disponible | no disponible | GGUF | HuggingFace |
-| Qwen2.5-1.5B-Instruct | 1,5B | 32.768 tokens | Apache 2.0 | safetensors, GGUF | HuggingFace, Ollama |
-| SmolLM2-1.7B-Instruct | 1,7B | 8.192 tokens | Apache 2.0 | safetensors, GGUF | HuggingFace, Ollama |
-| Llama-3.2-1B-Instruct | 1,2B | 128.000 tokens | Llama 3.2 Community License | safetensors, GGUF | HuggingFace, Ollama |
+| Kumo-1.5B (GGUF, este repo) | 1,5B | no disponible | no disponible | GGUF | Hugging Face |
+| Qwen2.5-1.5B-Instruct | 1,5B | 32.768 tokens | Apache 2.0 | safetensors, GGUF | Hugging Face, Ollama |
+| SmolLM2-1.7B-Instruct | 1,7B | 8.192 tokens | Apache 2.0 | safetensors, GGUF | Hugging Face, Ollama |
+| Llama-3.2-1B-Instruct | 1,2B | 128.000 tokens | Llama 3.2 Community License | safetensors, GGUF | Hugging Face, Ollama |
 
 La comparación se limita a parámetros, contexto y licencia, ya que no hay datos de rendimiento publicados para Kumo-1.5B. Los tres modelos alternativos cuentan con documentación técnica completa y licencias verificables, a diferencia de este repositorio.
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Ccollinsabella/matching` es un prototipo de investigación basado en Mocov3, una implementación de aprendizaje autosupervisado por contraste, orientado a tareas de emparejamiento (matching). Lo publica el usuario Ccollinsabella en HuggingFace bajo licencia MIT. Se trata de un artefacto experimental de escala *tiny* y no de un modelo entrenado listo para producción: el propio autor indica que el checkpoint incluido es una inicialización válida para pruebas de humo (*smoke tests*) y no un modelo con rendimiento verificado.
+El modelo `Ccollinsabella/matching` es un prototipo de investigación basado en Mocov3, una implementación de aprendizaje autosupervisado por contraste, orientado a tareas de emparejamiento (matching). Lo publica el usuario Ccollinsabella en Hugging Face bajo licencia MIT. Se trata de un artefacto experimental de escala *tiny* y no de un modelo entrenado listo para producción: el propio autor indica que el checkpoint incluido es una inicialización válida para pruebas de humo (*smoke tests*) y no un modelo con rendimiento verificado.
 
 El interés de esta ficha es acotar lo que realmente se puede afirmar sobre el repositorio. No hay métricas de benchmarks publicadas, no se declaran idiomas soportados ni pipeline de inferencia, y el tamaño del repositorio es de 0,0 GB. Con aproximadamente 24.832 parámetros totales, se trata de un modelo minúsculo cuyo valor es fundamentalmente didáctico o de andamiaje para reproducir experimentos de Mocov3.
 
@@ -77,9 +77,9 @@ No disponible. El repositorio no publica metricas, no declara idiomas ni tarea d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ccollinsabella/matching
+- Modelo en Hugging Face: https://huggingface.co/Ccollinsabella/matching
 - Mocov3 (metodo original, Meta AI): no se ha incluido enlace en la informacion proporcionada.
 - Paper de Mocov3: no disponible en la informacion proporcionada.
-- Repositorio de codigo: no disponible; el artefacto principal es `pipeline.py` dentro del propio repositorio de HuggingFace.
+- Repositorio de codigo: no disponible; el artefacto principal es `pipeline.py` dentro del propio repositorio de Hugging Face.
 - Demo: no disponible.
 - Nota: los resultados de busqueda web recibidos (GetModel, ModelMatch, ModelsLab y herramientas de busqueda de parecidos faciales) no guardan relacion con este modelo y no se han utilizado como fuente.

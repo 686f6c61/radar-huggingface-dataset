@@ -72,7 +72,7 @@ No disponible. No se han publicado datos que permitan comparar este checkpoint c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jonnester/LR-AttnRes-sliced-fast-05b-n4-r768
+- Hugging Face: https://huggingface.co/Jonnester/LR-AttnRes-sliced-fast-05b-n4-r768
 - Perfil del autor: https://huggingface.co/Jonnester
 - Weights & Biases run: https://wandb.ai/jonnester-german-swiss-international-school-/LR-AttnRes/runs/cqwulkwz
 - Referencia de receta: https://wandb.ai/jonnester-german-swiss-international-school-/LR-AttnRes/runs/ne0tiqb3

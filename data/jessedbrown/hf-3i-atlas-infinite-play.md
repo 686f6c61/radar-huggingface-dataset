@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Jessedbrown/hf-3I-ATLAS-infinite-play` es una publicacion alojada en HuggingFace que, segun la informacion disponible, no se presenta como un modelo de lenguaje con pesos descargables, sino como un artefacto interactivo. Su model card contiene unicamente metadatos de configuracion de un Space estatico (`sdk: static`, `title: 3I/ATLAS — the infinite play`, `pinned: false`) y una descripcion de una sola linea: "One button. Starts from zero from what was measured; releases the infinite play — no timer." No se declara arquitectura, numero de parametros, contexto, licencia ni idiomas.
+El repositorio `Jessedbrown/hf-3I-ATLAS-infinite-play` es una publicacion alojada en Hugging Face que, segun la informacion disponible, no se presenta como un modelo de lenguaje con pesos descargables, sino como un artefacto interactivo. Su model card contiene unicamente metadatos de configuracion de un Space estatico (`sdk: static`, `title: 3I/ATLAS — the infinite play`, `pinned: false`) y una descripcion de una sola linea: "One button. Starts from zero from what was measured; releases the infinite play — no timer." No se declara arquitectura, numero de parametros, contexto, licencia ni idiomas.
 
 El autor es el usuario Jessedbrown. El repositorio acumula 0 descargas y 0 likes, no tiene pipeline de inferencia declarado y su unico tag es `region:us`. Se referencia un dataset asociado, `Jessedbrown/3I-ATLAS-receipts`, que no se ha podido inspeccionar con la informacion proporcionada.
 
@@ -34,7 +34,7 @@ Por tanto, esta ficha documenta lo que se puede verificar y marca de forma expli
 
 No disponible. La model card no describe arquitectura (transformer, MoE, SSM, hibrida u otra), tamano, datos de entrenamiento, numero de tokens, composicion del dataset, ni si se aplicaron tecnicas de ajuste como RLHF, DPO o SFT. Tampoco se mencionan innovaciones tecnicas como decodificacion especulativa, atencion lineal o cuantizacion.
 
-El unico indicio estructural es el campo `sdk: static` del encabezado YAML, que en HuggingFace corresponde a Spaces estaticos (HTML, CSS y JavaScript servidos sin backend de inferencia). Esto es incompatible con un modelo que ejecute inferencia en el propio Space, aunque no descarta que el repositorio se use como escaparate de otro artefacto. La frase "Starts from zero from what was measured" sugiere que existe un registro de medidas previas, presumiblemente en el dataset `3I-ATLAS-receipts`, pero su contenido no esta documentado en la informacion disponible.
+El unico indicio estructural es el campo `sdk: static` del encabezado YAML, que en Hugging Face corresponde a Spaces estaticos (HTML, CSS y JavaScript servidos sin backend de inferencia). Esto es incompatible con un modelo que ejecute inferencia en el propio Space, aunque no descarta que el repositorio se use como escaparate de otro artefacto. La frase "Starts from zero from what was measured" sugiere que existe un registro de medidas previas, presumiblemente en el dataset `3I-ATLAS-receipts`, pero su contenido no esta documentado en la informacion disponible.
 
 ## Capacidades
 
@@ -51,7 +51,7 @@ El unico indicio estructural es el campo `sdk: static` del encabezado YAML, que 
 Los siguientes escenarios son los unicos que se pueden plantear de forma realista a partir de la informacion verificada. En todos ellos se indica la condicion que debe cumplirse, porque el repositorio no documenta capacidades de modelo.
 
 - Reproduccion del experimento de medidas: si el dataset `Jessedbrown/3I-ATLAS-receipts` contiene el registro de medidas al que alude la model card, el artefacto serviria para reproducir ese punto de partida ("starts from zero from what was measured") y auditar la evolucion del experimento.
-- Demo interactiva estatica: al declararse `sdk: static`, el repositorio puede desplegarse como pagina en HuggingFace Spaces sin backend de inferencia, util para presentar la pieza a un publico no tecnico con coste de infraestructura nulo.
+- Demo interactiva estatica: al declararse `sdk: static`, el repositorio puede desplegarse como pagina en Hugging Face Spaces sin backend de inferencia, util para presentar la pieza a un publico no tecnico con coste de infraestructura nulo.
 - Pieza de arte generativo o instalacion: la descripcion ("the infinite play — no timer") apunta a una obra sin condicion de finalizacion, adecuada para exhibicion continua en pantalla o instalacion.
 - Archivo y trazabilidad del proyecto: el par repositorio + dataset permite documentar el estado de un proyecto pequeno y enlazar sus artefactos, util como registro historico aunque no haya adopcion externa.
 - Reutilizacion del dataset asociado: `3I-ATLAS-receipts` podria reutilizarse como fuente de datos en otros experimentos, siempre que su licencia y esquema se verifiquen primero; en la informacion disponible no consta ninguna de las dos cosas.
@@ -77,7 +77,7 @@ No disponible. La informacion proporcionada no permite identificar la categoria 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jessedbrown/hf-3I-ATLAS-infinite-play | no disponible | no disponible | no disponible | no disponible | publico en HuggingFace, 0 descargas y 0 likes |
+| Jessedbrown/hf-3I-ATLAS-infinite-play | no disponible | no disponible | no disponible | no disponible | publico en Hugging Face, 0 descargas y 0 likes |
 | Alternativa 1 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativa 2 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -95,6 +95,6 @@ No disponible. La informacion proporcionada no permite identificar la categoria 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jessedbrown/hf-3I-ATLAS-infinite-play
+- Repositorio en Hugging Face: https://huggingface.co/Jessedbrown/hf-3I-ATLAS-infinite-play
 - Dataset asociado citado en la model card: https://huggingface.co/datasets/Jessedbrown/3I-ATLAS-receipts
 - Paper, blog, repositorio de codigo o demo adicionales: no disponible

@@ -80,8 +80,8 @@ Estimaciones orientativas calculadas a partir del tamaño del modelo base (aprox
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pocketgull-circular-posology-1b (este modelo) | ~1.000 M base + adaptador LoRA | No disponible | Farmacia circular, SLEP, ecotoxicidad, anthroponics | apache-2.0 (adaptador) | HuggingFace, 0 descargas en el momento de la consulta |
-| google/gemma-3-1b-it | ~1.000 M | No disponible en la información proporcionada | Propósito general, instrucciones | Términos de uso de Gemma | HuggingFace, ampliamente distribuido |
+| pocketgull-circular-posology-1b (este modelo) | ~1.000 M base + adaptador LoRA | No disponible | Farmacia circular, SLEP, ecotoxicidad, anthroponics | apache-2.0 (adaptador) | Hugging Face, 0 descargas en el momento de la consulta |
+| google/gemma-3-1b-it | ~1.000 M | No disponible en la información proporcionada | Propósito general, instrucciones | Términos de uso de Gemma | Hugging Face, ampliamente distribuido |
 | Adaptadores LoRA clínicos de tamaño similar | No disponible | No disponible | Variable según autor | Variable | No disponible |
 
 No se dispone en la información proporcionada de comparativas de rendimiento frente a alternativas. La comparación con otros adaptadores clínicos de 1B requiere consultar repositorios especializados, y no se han encontrado datos verificables en la búsqueda web realizada.
@@ -103,7 +103,7 @@ No se dispone en la información proporcionada de comparativas de rendimiento fr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/philgear/pocketgull-circular-posology-1b
+- Modelo en Hugging Face: https://huggingface.co/philgear/pocketgull-circular-posology-1b
 - Modelo base: https://huggingface.co/google/gemma-3-1b-it
 - DOI de Zenodo: https://doi.org/10.5281/zenodo.20647514
 - Sitio de la organización: https://pocketgull.com

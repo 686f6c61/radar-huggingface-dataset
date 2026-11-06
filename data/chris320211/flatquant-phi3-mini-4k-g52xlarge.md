@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`chris320211/flatquant-phi3-mini-4k-g52xlarge` es un derivado cuantizado de `microsoft/Phi-3-mini-4k-instruct`, publicado por el usuario chris320211 en HuggingFace. No se trata de una conversión genérica a GGUF o AWQ, sino del artefacto empaquetado de un pipeline de cuantización propio basado en FlatQuant, identificado en la model card con el job `20260919T202736Z-5a1860`. El objetivo declarado es reducir el consumo de memoria y aumentar el throughput manteniendo la calidad en un umbral aceptable (`quality_ok=True`, con un `ppl_ratio` de 1,167613 sobre WikiText-2 respecto al snapshot fp16).
+`chris320211/flatquant-phi3-mini-4k-g52xlarge` es un derivado cuantizado de `microsoft/Phi-3-mini-4k-instruct`, publicado por el usuario chris320211 en Hugging Face. No se trata de una conversión genérica a GGUF o AWQ, sino del artefacto empaquetado de un pipeline de cuantización propio basado en FlatQuant, identificado en la model card con el job `20260919T202736Z-5a1860`. El objetivo declarado es reducir el consumo de memoria y aumentar el throughput manteniendo la calidad en un umbral aceptable (`quality_ok=True`, con un `ppl_ratio` de 1,167613 sobre WikiText-2 respecto al snapshot fp16).
 
 El modelo hereda la arquitectura y el comportamiento del Phi-3-mini-4k-instruct: un transformer decoder-only de la familia Phi-3, con ventana de contexto de 4K tokens (4096) y en torno a 3,8 mil millones de parámetros según la documentación pública del modelo base. La relevancia de esta ficha es doble: por un lado, demuestra una mejora medida de rendimiento (5105,9 tokens/s frente a 3387,6 tokens/s del fp16 en el mismo hardware) y de VRAM pico (3,355 GB frente a 9,681 GB); por otro, ilustra un patrón problemático para producción, ya que el checkpoint no es cargable con `AutoModelForCausalLM.from_pretrained` y exige un adaptador de inferencia incluido en el propio repositorio.
 
@@ -104,7 +104,7 @@ No se dispone de datos verificados de benchmarks de capacidades para ninguna de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chris320211/flatquant-phi3-mini-4k-g52xlarge
+- Modelo en Hugging Face: https://huggingface.co/chris320211/flatquant-phi3-mini-4k-g52xlarge
 - Modelo base: https://huggingface.co/microsoft/Phi-3-mini-4k-instruct
 - Paper del método FlatQuant: no disponible en la información proporcionada
 - Repositorio del método FlatQuant: no disponible (referenciado únicamente como `QUANT_AGENT_METHOD_REPO`)

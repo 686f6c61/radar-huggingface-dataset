@@ -95,10 +95,10 @@ No se han publicado comparaciones con MMLU, HumanEval, GSM8K ni otros benchmarks
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fukayatti0/jev-japanese-judgment | 1.2B (backbone) + LoRA y cabeza | No disponible | No generativo; juicio con probabilidad sobre candidatos | lfm1.0 (código MIT) | HuggingFace + GitHub |
-| LiquidAI/LFM2.5-1.2B-JP-202606 (modelo base) | 1.2B | No disponible | Generativo autorregresivo | LFM Open License v1.0 | HuggingFace |
+| fukayatti0/jev-japanese-judgment | 1.2B (backbone) + LoRA y cabeza | No disponible | No generativo; juicio con probabilidad sobre candidatos | lfm1.0 (código MIT) | Hugging Face + GitHub |
+| LiquidAI/LFM2.5-1.2B-JP-202606 (modelo base) | 1.2B | No disponible | Generativo autorregresivo | LFM Open License v1.0 | Hugging Face |
 | Jev (TypeSafe AI) | No disponible | No disponible | No generativo; juicio tipado con probabilidad | Propietaria | Acceso anticipado limitado |
-| Otros clasificadores japoneses basados en BERT/encoder | No disponible | No disponible | Clasificación discriminativa | Variable | HuggingFace |
+| Otros clasificadores japoneses basados en BERT/encoder | No disponible | No disponible | Clasificación discriminativa | Variable | Hugging Face |
 
 No se dispone de resultados de benchmarks comparativos entre estas alternativas en la información proporcionada. La comparación directa con el modelo base no es significativa porque las tareas son distintas (generación frente a juicio cerrado).
 
@@ -120,8 +120,8 @@ No se dispone de resultados de benchmarks comparativos entre estas alternativas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fukayatti0/jev-japanese-judgment
-- Dataset en HuggingFace: https://huggingface.co/datasets/fukayatti0/jev-japanese-judgment
+- Modelo en Hugging Face: https://huggingface.co/fukayatti0/jev-japanese-judgment
+- Dataset en Hugging Face: https://huggingface.co/datasets/fukayatti0/jev-japanese-judgment
 - Repositorio de código (MIT): https://github.com/fukayatti/jev-japanese-judgment
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-1.2B-JP-202606
 - Licencia del modelo base (LFM Open License v1.0): https://huggingface.co/LiquidAI/LFM2.5-1.2B-JP-202606/blob/main/LICENSE

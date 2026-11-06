@@ -79,7 +79,7 @@ La principal ventaja de esta variante frente al modelo base es su menor huella d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Rin247/Qwen3.6-35B-A3B-Uncensored-Aquarion-FP4
+- Repositorio Hugging Face: https://huggingface.co/Rin247/Qwen3.6-35B-A3B-Uncensored-Aquarion-FP4
 - Coleccion de cuantizaciones de Rin247: https://huggingface.co/collections/Rin247/qwen3-aquarion
 - Articulo de HackerNoon sobre Qwen3.6-35B-A3B Uncensored: https://hackernoon.com/qwen36-35b-a3b-uncensored-a-35b-moe-model-with-262k-context
 - Guia de InsiderLLM sobre Qwen 3.6: https://insiderllm.com/guides/qwen-3-6-local-ai-guide/

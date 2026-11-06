@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks para este fine-tune en la informaci
   - INT4: aproximadamente 7 GB.
 - GPU recomendadas: NVIDIA A100 (40/80 GB), H100, RTX 4090 (24 GB) para FP16; RTX 3090 o similar para cuantizacion INT8/INT4.
 - Si el repositorio contiene un adaptador LoRA en lugar de los pesos completos, los requisitos de VRAM serian considerablemente menores, pero no se puede confirmar sin inspeccionar el contenido del repositorio.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI, HuggingFace Inference Endpoints (el tag "endpoints_compatible" sugiere compatibilidad con los endpoints de HuggingFace).
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI, Hugging Face Inference Endpoints (el tag "endpoints_compatible" sugiere compatibilidad con los endpoints de Hugging Face).
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -76,7 +76,7 @@ La comparativa es limitada porque no se dispone de datos de rendimiento para el 
 - La licencia no esta especificada correctamente, lo que impide conocer si el modelo puede utilizarse comercialmente.
 - No se han publicado datos sobre el dataset de entrenamiento, lo que impide evaluar sesgos potenciales.
 - El repositorio tiene un tamano de solo 0,1 GB, inusualmente pequeno para un modelo de 14B; podria tratarse de un adaptador LoRA, un checkpoint parcial o una subida incompleta. Esto debe verificarse antes de su uso en produccion.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, por lo que no ha sido validado por la comunidad.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, por lo que no ha sido validado por la comunidad.
 - No hay benchmarks publicos que confirmen el rendimiento del fine-tune en tareas de argumentacion.
 - El riesgo de alucinacion es inherente al modelo base y no se ha evaluado especificamente para este fine-tune.
 - La fecha de creacion (2026-08-19) es reciente y el modelo podria contener artefactos de entrenamiento propios de un checkpoint de evaluacion.
@@ -84,8 +84,8 @@ La comparativa es limitada porque no se dispone de datos de rendimiento para el 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/cgraiff/phi4-reasoning-argumentann-eval
-- Modelo base en HuggingFace: https://huggingface.co/microsoft/Phi-4-reasoning
+- Repositorio Hugging Face: https://huggingface.co/cgraiff/phi4-reasoning-argumentann-eval
+- Modelo base en Hugging Face: https://huggingface.co/microsoft/Phi-4-reasoning
 - Informe tecnico de Phi-4-reasoning (arXiv): https://arxiv.org/abs/2504.21318
 - Informe tecnico de Phi-4-reasoning (PDF, Microsoft Research): https://www.microsoft.com/en-us/research/wp-content/uploads/2025/04/phi_4_reasoning.pdf
 - Publicacion en Microsoft Research: https://www.microsoft.com/en-us/research/publication/phi-4-reasoning-technical-report/

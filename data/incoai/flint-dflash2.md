@@ -106,8 +106,8 @@ Comparativa con otros drafters de decodificacion especulativa. Los datos de los 
 
 | Modelo | Tipo | Parametros | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Flint-DFlash2 | Drafter block diffusion | ~402,6 M | Predice bloques de 7 tokens en paralelo con selector de rutas | Apache 2.0 | HuggingFace, SGLang (PR abierto) |
-| EAGLE-3 | Drafter autorregresivo con feature-level speculation | ~1 clase de 0,2-1 M tipicamente | Un token por iteracion interna con arboles de verificacion | Apache 2.0 | HuggingFace, SGLang, vLLM |
+| Flint-DFlash2 | Drafter block diffusion | ~402,6 M | Predice bloques de 7 tokens en paralelo con selector de rutas | Apache 2.0 | Hugging Face, SGLang (PR abierto) |
+| EAGLE-3 | Drafter autorregresivo con feature-level speculation | ~1 clase de 0,2-1 M tipicamente | Un token por iteracion interna con arboles de verificacion | Apache 2.0 | Hugging Face, SGLang, vLLM |
 | Medusa | Cabezas multiples adicionales | Cabeceras ligeras sobre el objetivo | Prediccion de multiples tokens siguientes con aceptacion en arbol | Licencias variables segun modelo base | vLLM, SGLang |
 
 La ventaja diferencial declarada de DFlash 2 es la prediccion paralela de bloques completos con difusion, que segun sus mediciones consigue longitudes de aceptacion de 3,5-4,5 tokens por paso y aceleraciones de 1,45x-2,32x, frente a aceleraciones tipicamente menores de los drafters de un token. Su limitacion es el acoplamiento a un unico modelo objetivo (Flint) y a SGLang con un commit concreto.
@@ -125,7 +125,7 @@ La ventaja diferencial declarada de DFlash 2 es la prediccion paralela de bloque
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/incoai/Flint-DFlash2
+- Modelo en Hugging Face: https://huggingface.co/incoai/Flint-DFlash2
 - Modelo objetivo: https://huggingface.co/RecursiveSI/flint
 - Blog de DFlash 2: https://inco.ai/blog/dflash2/
 - Repositorio GitHub de DFlash: https://github.com/z-lab/dflash

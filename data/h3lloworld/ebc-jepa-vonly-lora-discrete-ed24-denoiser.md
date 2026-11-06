@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EBC-JEPA RoPE experiment vonly_lora_discrete (ED24) es un ajuste fino orientado a la eliminacion de ruido (denoising) en camaras de eventos, publicado por el usuario h3lloworld en HuggingFace. No se trata de un modelo de lenguaje, sino de un modelo de vision sobre secuencias de eventos que parte de un backbone V-JEPA 2.1 ViT-B de Meta y le anade adaptadores LoRA de rango 8 sobre las proyecciones qkv y proj, una proyeccion de tokenizador de eventos y una cabeza por evento (per-event head), con los descriptores desactivados. El objetivo concreto es la limpieza de ruido en flujos de camara de eventos, un dominio con datos dispersos y asincronos donde los modelos basados en RGB no rinden igual.
+EBC-JEPA RoPE experiment vonly_lora_discrete (ED24) es un ajuste fino orientado a la eliminacion de ruido (denoising) en camaras de eventos, publicado por el usuario h3lloworld en Hugging Face. No se trata de un modelo de lenguaje, sino de un modelo de vision sobre secuencias de eventos que parte de un backbone V-JEPA 2.1 ViT-B de Meta y le anade adaptadores LoRA de rango 8 sobre las proyecciones qkv y proj, una proyeccion de tokenizador de eventos y una cabeza por evento (per-event head), con los descriptores desactivados. El objetivo concreto es la limpieza de ruido en flujos de camara de eventos, un dominio con datos dispersos y asincronos donde los modelos basados en RGB no rinden igual.
 
 El modelo forma parte de una linea de experimentos sobre codificacion posicional rotatoria (RoPE) continua frente a discreta, de ahi el sufijo "vonly_lora_discrete". Se entrena sobre la totalidad del conjunto ED24 (los 2.100 ficheros oficiales de EDformer) y se evalua su generalizacion en DND21 y E-MLB. El repositorio es de 0,0 GB y solo contiene los tensores entrenables (`trainable.pt`), las metricas (`metrics.json`) y la configuracion (`config.json`); no incluye los pesos completos, que deben cargarse sobre el checkpoint publico de V-JEPA 2.1 ViT-B.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Backbone / tamano | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ebc-jepa-vonly-lora-discrete-ed24-denoiser | Denoising de eventos (LoRA) | V-JEPA 2.1 ViT-B | no aplicable | MIT | HuggingFace (solo tensores entrenables) |
+| ebc-jepa-vonly-lora-discrete-ed24-denoiser | Denoising de eventos (LoRA) | V-JEPA 2.1 ViT-B | no aplicable | MIT | Hugging Face (solo tensores entrenables) |
 | V-JEPA 2.1 ViT-B (Meta) | Backbone de video auto-supervisado | ViT-B | no aplicable | MIT | Checkpoint publico de Meta |
 | EDformer (ED24) | Denoising de eventos | no disponible | no aplicable | no disponible | Referencia del dataset ED24 |
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento que permitan una comparacion cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/h3lloworld/ebc-jepa-vonly-lora-discrete-ed24-denoiser
+- Modelo en Hugging Face: https://huggingface.co/h3lloworld/ebc-jepa-vonly-lora-discrete-ed24-denoiser
 - Codigo (rama denoise-lora): https://github.com/whohyf/EBC-JEPA-share/tree/denoise-lora
 - Protocolo de tablas (`docs/lora_denoise/HANDOFF.md`): https://github.com/whohyf/EBC-JEPA-share/tree/denoise-lora/docs/lora_denoise/HANDOFF.md
 - Checkpoint base V-JEPA 2.1 ViT-B: https://dl.fbaipublicfiles.com/vjepa2/vjepa2_1_vitb_dist_vitG_384.pt

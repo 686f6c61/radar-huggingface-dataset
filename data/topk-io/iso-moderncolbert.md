@@ -75,7 +75,7 @@ No se dispone de datos comparativos de rendimiento (benchmarks) entre estos mode
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/topk-io/Iso-ModernColBERT)
+- [Modelo en Hugging Face](https://huggingface.co/topk-io/Iso-ModernColBERT)
 - [Modelo base GTE-ModernColBERT-v1](https://huggingface.co/lightonai/GTE-ModernColBERT-v1)
 - [Blog de TopK sobre SMVE](https://www.topk.io/blog/20260311-smve-multi-vector-retrieval)
 - [Sitio web de TopK](https://topk.io)

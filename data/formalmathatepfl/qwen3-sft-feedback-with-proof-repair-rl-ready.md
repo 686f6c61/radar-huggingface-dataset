@@ -11,7 +11,7 @@ Se basa en la arquitectura Qwen3 (no se especifica la variante exacta), y el rep
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Basada en Qwen3 (transformer, sin más detalles) |
-| Parametros totales | 308.224 (dato reportado en HuggingFace, inconsistente con el tamaño del repo) |
+| Parametros totales | 308.224 (dato reportado en Hugging Face, inconsistente con el tamaño del repo) |
 | Parametros activos | no disponible (no se indica si es MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
@@ -71,7 +71,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/formalmathatepfl/qwen3-sft-feedback-with-proof-repair-rl-ready
+- Modelo en Hugging Face: https://huggingface.co/formalmathatepfl/qwen3-sft-feedback-with-proof-repair-rl-ready
 - Modelo base: https://huggingface.co/formalmathatepfl/qwen3-sft-feedback-with-proof-repair
 - Modelo relacionado (qwen3-8b-feedback-sft): https://friendli.ai/models/formalmathatepfl/qwen3-8b-feedback-sft
 - Modelo relacionado (qwen3-8b-sft): https://huggingface.co/formalmathatepfl/qwen3-8b-sft

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OpenThinker-Agent-v1-SFT es un ajuste fino supervisado (SFT) del modelo denso Qwen3-8B, orientado a tareas agénticas de terminal y de ingeniería de software. Forma parte de la iniciativa OpenThoughts-Agent, cuyo objetivo es publicar de forma abierta los conjuntos de datos, los modelos y el código de investigación necesarios para entrenar agentes capaces de operar sobre un shell y de resolver bugs en repositorios reales. Esta ficha corresponde a la réplica publicada por el usuario konizquants en HuggingFace; el repositorio oficial del mismo checkpoint es open-thoughts/OpenThinker-Agent-v1-SFT.
+OpenThinker-Agent-v1-SFT es un ajuste fino supervisado (SFT) del modelo denso Qwen3-8B, orientado a tareas agénticas de terminal y de ingeniería de software. Forma parte de la iniciativa OpenThoughts-Agent, cuyo objetivo es publicar de forma abierta los conjuntos de datos, los modelos y el código de investigación necesarios para entrenar agentes capaces de operar sobre un shell y de resolver bugs en repositorios reales. Esta ficha corresponde a la réplica publicada por el usuario konizquants en Hugging Face; el repositorio oficial del mismo checkpoint es open-thoughts/OpenThinker-Agent-v1-SFT.
 
 El modelo se ha entrenado por etapas: primero SFT sobre el dataset OpenThoughts-Agent-v1-SFT, compuesto por aproximadamente 15.200 trazas procedentes de dos fuentes (tareas sintéticas de conversión de lenguaje natural a comandos shell, denominadas nl2bash, y un conjunto de bugs en C# y Java recopilados por Microsoft, denominado InferredBugs). Posteriormente, la versión completa OpenThinker-Agent-v1 añade una fase de aprendizaje por refuerzo sobre unas 720 tareas del subconjunto nl2bash verified. El checkpoint que nos ocupa es el intermedio, es decir, el que existe justo después de la fase SFT y antes del RL.
 
@@ -75,11 +75,11 @@ Advertencia de comparabilidad: los tres primeros modelos se evalúan con el harn
 
 | Modelo | Parámetros | Contexto | Terminal-Bench 2.0 | SWE-Bench Verified | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| OpenThinker-Agent-v1 (tras RL) | ~8.000 millones (base Qwen3-8B) | No disponible | 4,9 (Terminus-2) | 15,7 | Apache 2.0 | Público en HuggingFace |
-| OpenThinker-Agent-v1-SFT (este checkpoint) | ~8.000 millones (base Qwen3-8B) | No disponible | No disponible | No disponible | Apache 2.0 | Público en HuggingFace |
-| Qwen3-8B | ~8.000 millones | No disponible en la información | 0,0 (Terminus-2) | 0,7 | Apache 2.0 | Público en HuggingFace |
-| Qwen3-32B | ~32.000 millones | No disponible en la información | 1,9 (Terminus-2) | 5,7 | Apache 2.0 | Público en HuggingFace |
-| Qwen3-Coder-30B-A3B-Instruct | 30.000 millones totales, 3.000 millones activos (MoE) | No disponible en la información | 10,1 (OpenHands) | 49,2 | Apache 2.0 | Público en HuggingFace |
+| OpenThinker-Agent-v1 (tras RL) | ~8.000 millones (base Qwen3-8B) | No disponible | 4,9 (Terminus-2) | 15,7 | Apache 2.0 | Público en Hugging Face |
+| OpenThinker-Agent-v1-SFT (este checkpoint) | ~8.000 millones (base Qwen3-8B) | No disponible | No disponible | No disponible | Apache 2.0 | Público en Hugging Face |
+| Qwen3-8B | ~8.000 millones | No disponible en la información | 0,0 (Terminus-2) | 0,7 | Apache 2.0 | Público en Hugging Face |
+| Qwen3-32B | ~32.000 millones | No disponible en la información | 1,9 (Terminus-2) | 5,7 | Apache 2.0 | Público en Hugging Face |
+| Qwen3-Coder-30B-A3B-Instruct | 30.000 millones totales, 3.000 millones activos (MoE) | No disponible en la información | 10,1 (OpenHands) | 49,2 | Apache 2.0 | Público en Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -96,7 +96,7 @@ Advertencia de comparabilidad: los tres primeros modelos se evalúan con el harn
 
 ## Enlaces
 
-- Modelo en HuggingFace (réplica analizada): https://huggingface.co/konizquants/OpenThinker-Agent-v1-SFT
+- Modelo en Hugging Face (réplica analizada): https://huggingface.co/konizquants/OpenThinker-Agent-v1-SFT
 - Modelo SFT oficial: https://huggingface.co/open-thoughts/OpenThinker-Agent-v1-SFT
 - Modelo tras RL: https://huggingface.co/open-thoughts/OpenThinker-Agent-v1
 - Dataset de SFT: https://huggingface.co/datasets/open-thoughts/OpenThoughts-Agent-v1-SFT

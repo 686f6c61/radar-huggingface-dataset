@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mmbc541200/aibot` es un repositorio publicado en HuggingFace por el usuario `mmbc541200` bajo licencia Apache-2.0. La model card asociada no contiene ninguna descripción técnica, arquitectura, datos de entrenamiento ni ejemplos de uso. El único metadato relevante es la licencia de código abierto y la región indicada como "us". No se dispone de información sobre el tipo de modelo, su tamaño, parámetros, contexto o capacidades.
+El modelo `mmbc541200/aibot` es un repositorio publicado en Hugging Face por el usuario `mmbc541200` bajo licencia Apache-2.0. La model card asociada no contiene ninguna descripción técnica, arquitectura, datos de entrenamiento ni ejemplos de uso. El único metadato relevante es la licencia de código abierto y la región indicada como "us". No se dispone de información sobre el tipo de modelo, su tamaño, parámetros, contexto o capacidades.
 
 Dado que el repositorio no presenta documentación, no es posible evaluar su utilidad para desarrolladores o investigadores. La ausencia de descargas y de interacciones sugiere que se trata de un proyecto incipiente o de una publicación sin contenido sustancial. Cualquier uso en producción requeriría una revisión previa del contenido real del repositorio, que no está disponible en la información proporcionada.
 
@@ -53,6 +53,6 @@ No disponible. Al no existir información sobre la arquitectura, el tamaño o la
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mmbc541200/aibot
+- Repositorio en Hugging Face: https://huggingface.co/mmbc541200/aibot
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de código o demos) asociados a este modelo.

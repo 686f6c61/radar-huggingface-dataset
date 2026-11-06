@@ -85,6 +85,6 @@ No se dispone de datos de rendimiento comparativo ni de alternativas especializa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sortmark/SORTMARK-CyberSecPolicy-0.5B
+- Modelo en Hugging Face: https://huggingface.co/sortmark/SORTMARK-CyberSecPolicy-0.5B
 - Portal oficial: https://sortmark.com
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct

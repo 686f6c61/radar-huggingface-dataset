@@ -78,8 +78,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rechazos (harmful_behaviors) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gemma-3-1b-it-heretic (este) | 999.885.952 | No disponible | 3/100 (KL 0,0180) | Gemma Terms of Use | HuggingFace, safetensors + GGUF |
-| google/gemma-3-1b-it (base) | ~1B | No disponible | 98/100 | Gemma Terms of Use | HuggingFace, safetensors |
+| gemma-3-1b-it-heretic (este) | 999.885.952 | No disponible | 3/100 (KL 0,0180) | Gemma Terms of Use | Hugging Face, safetensors + GGUF |
+| google/gemma-3-1b-it (base) | ~1B | No disponible | 98/100 | Gemma Terms of Use | Hugging Face, safetensors |
 | Otras variantes abliterated de Gemma 3 1B | No disponible | No disponible | No disponible | Gemma Terms of Use | No disponible |
 
 La comparación con alternativas de la misma categoría (otros modelos decensored de 1B) no está disponible en la información proporcionada; el único punto de referencia documentado es el modelo base.
@@ -98,7 +98,7 @@ La comparación con alternativas de la misma categoría (otros modelos decensore
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AJ-Gonzalez/gemma-3-1b-it-heretic
+- Modelo en Hugging Face: https://huggingface.co/AJ-Gonzalez/gemma-3-1b-it-heretic
 - Modelo base: https://huggingface.co/google/gemma-3-1b-it
 - Mirror del base usado: https://huggingface.co/unsloth/gemma-3-1b-it
 - Heretic (herramienta de modificación): https://github.com/p-e-w/heretic

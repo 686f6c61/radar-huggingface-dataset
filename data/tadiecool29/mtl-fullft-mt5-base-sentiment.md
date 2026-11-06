@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo MTL-FullFT-mt5-base-sentiment es un fine-tuning completo (full fine-tuning) de google/mt5-base, desarrollado por tadiecool29, orientado a la clasificación de sentimiento en texto en amárico. Se trata de un modelo de tipo text2text-generation que genera una etiqueta de sentimiento a partir de una entrada de texto, y ha sido entrenado con la librería Transformers y el Trainer de HuggingFace.
+El modelo MTL-FullFT-mt5-base-sentiment es un fine-tuning completo (full fine-tuning) de google/mt5-base, desarrollado por tadiecool29, orientado a la clasificación de sentimiento en texto en amárico. Se trata de un modelo de tipo text2text-generation que genera una etiqueta de sentimiento a partir de una entrada de texto, y ha sido entrenado con la librería Transformers y el Trainer de Hugging Face.
 
 El modelo parte de la arquitectura encoder-decoder T5 multilingüe de Google, con un total de 582.401.280 parámetros, y se ha ajustado mediante entrenamiento supervisado en una tarea única (single-task). La información disponible indica que el dataset de entrenamiento no se ha especificado, y que el modelo alcanza una exactitud de 0.6633 y una macro F1 de 0.6448 en el conjunto de evaluación declarado por el autor.
 
@@ -85,5 +85,5 @@ No se dispone de información sobre modelos comparables en la información propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tadiecool29/MTL-FullFT-mt5-base-sentiment
+- Modelo en Hugging Face: https://huggingface.co/tadiecool29/MTL-FullFT-mt5-base-sentiment
 - Modelo base google/mt5-base: https://huggingface.co/google/mt5-base

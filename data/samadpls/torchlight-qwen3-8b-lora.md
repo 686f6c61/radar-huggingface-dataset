@@ -75,10 +75,10 @@ Observaciones reportadas por el autor: la reduccion de respuestas incorrectas de
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| torchlight-qwen3-8b-lora | 8,2 B (43,6 M entrenados) | No disponible | Soporte PyTorch, respuestas breves | Apache-2.0 | HuggingFace (adaptador, completo y GGUF) |
-| Qwen3-8B | 8,2 B | No disponible | Proposito general | Apache-2.0 | HuggingFace |
-| torchlight-phi4-mini | No disponible en la informacion | No disponible | Soporte PyTorch sobre Phi-4-mini | No disponible en la informacion | HuggingFace |
-| Phi-4-mini-instruct | No disponible en la informacion | No disponible | Proposito general, razonamiento | No disponible en la informacion | HuggingFace |
+| torchlight-qwen3-8b-lora | 8,2 B (43,6 M entrenados) | No disponible | Soporte PyTorch, respuestas breves | Apache-2.0 | Hugging Face (adaptador, completo y GGUF) |
+| Qwen3-8B | 8,2 B | No disponible | Proposito general | Apache-2.0 | Hugging Face |
+| torchlight-phi4-mini | No disponible en la informacion | No disponible | Soporte PyTorch sobre Phi-4-mini | No disponible en la informacion | Hugging Face |
+| Phi-4-mini-instruct | No disponible en la informacion | No disponible | Proposito general, razonamiento | No disponible en la informacion | Hugging Face |
 
 En la evaluacion del autor, torchlight-qwen3-8b supera a Qwen3-8B en nota media (2,25 frente a 2,17) y reduce las respuestas incorrectas (15 % frente a 31 %), pero obtiene menos respuestas completas de alta calidad (9 % frente a 17 %). Frente a torchlight-phi4-mini, la version sobre Qwen3-8B es superior tanto en el modelo base como tras el ajuste.
 
@@ -97,7 +97,7 @@ En la evaluacion del autor, torchlight-qwen3-8b supera a Qwen3-8B en nota media 
 
 ## Enlaces
 
-- Modelo en HuggingFace (adaptador LoRA): https://huggingface.co/samadpls/torchlight-qwen3-8b-lora
+- Modelo en Hugging Face (adaptador LoRA): https://huggingface.co/samadpls/torchlight-qwen3-8b-lora
 - Modelo completo en 16 bits: https://huggingface.co/samadpls/torchlight-qwen3-8b
 - Version GGUF (Q4_K_M, Q8_0): https://huggingface.co/samadpls/torchlight-qwen3-8b-GGUF
 - Dataset de entrenamiento: https://huggingface.co/datasets/samadpls/torchlight-threads

@@ -90,7 +90,7 @@ Desglose de equidad sobre `model_english_100h.pt`, todo él afectado por el mism
 
 | Modelo | Parámetros | Contexto / datos de preentrenamiento | WER publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| abc-voice-slm-asr (este modelo) | 21,4 M | 100,6 h de inglés y 37,4 h de bengalí, desde cero | 21,9 % (en, in-domain); 47,1 % (bn) | Apache 2.0 (código y checkpoint inglés) | Pesos en HuggingFace; código pendiente de publicación |
+| abc-voice-slm-asr (este modelo) | 21,4 M | 100,6 h de inglés y 37,4 h de bengalí, desde cero | 21,9 % (en, in-domain); 47,1 % (bn) | Apache 2.0 (código y checkpoint inglés) | Pesos en Hugging Face; código pendiente de publicación |
 | Whisper tiny.en | no disponible en la información proporcionada | 680.000 h de preentrenamiento según el autor | ~5-8 % en el mismo test inglés | no disponible en la información proporcionada | no disponible en la información proporcionada |
 | Zipformer en streaming preentrenado | no disponible en la información proporcionada | no disponible en la información proporcionada | 21,6 % en bengalí | no disponible en la información proporcionada | no disponible en la información proporcionada |
 
@@ -114,10 +114,10 @@ No se han encontrado en la información proporcionada otros modelos comparables 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mukherjee78/abc-voice-slm-asr
+- Modelo en Hugging Face: https://huggingface.co/mukherjee78/abc-voice-slm-asr
 - Artículo referenciado en las etiquetas del modelo (Zipformer): https://arxiv.org/abs/2310.11230
 - Dataset OpenSLR SLR53 (bengalí): https://www.openslr.org/53
 - Dataset LibriSpeech (OpenSLR SLR12): https://www.openslr.org/12
-- Documentación de la tarea de reconocimiento automático del habla en HuggingFace: https://huggingface.co/docs/transformers/tasks/asr
+- Documentación de la tarea de reconocimiento automático del habla en Hugging Face: https://huggingface.co/docs/transformers/tasks/asr
 - Repositorio de código: pendiente de publicación según el autor (el enlace se añadirá a la model card cuando esté disponible)
 - Búsqueda web: no se han encontrado enlaces adicionales relevantes sobre este modelo más allá de los anteriores

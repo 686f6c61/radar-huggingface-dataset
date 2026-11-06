@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PCP-MAE (Point Cloud Prediction Masked Autoencoder) es un modelo de clasificación de nubes de puntos 3D desarrollado por Xiangdong Zhang, Shaofeng Yan y Junchi Zhang, presentado en NeurIPS 2024. Esta ficha concreta corresponde al checkpoint afinado sobre el subconjunto OBJ_BG del dataset ScanObjectNN, distribuido en HuggingFace por el proyecto torch-pointcloud. El modelo resuelve la tarea de clasificación de objetos 3D escaneados en escenarios reales, con ruido y oclusiones, a partir de 8.192 puntos de entrada.
+PCP-MAE (Point Cloud Prediction Masked Autoencoder) es un modelo de clasificación de nubes de puntos 3D desarrollado por Xiangdong Zhang, Shaofeng Yan y Junchi Zhang, presentado en NeurIPS 2024. Esta ficha concreta corresponde al checkpoint afinado sobre el subconjunto OBJ_BG del dataset ScanObjectNN, distribuido en Hugging Face por el proyecto torch-pointcloud. El modelo resuelve la tarea de clasificación de objetos 3D escaneados en escenarios reales, con ruido y oclusiones, a partir de 8.192 puntos de entrada.
 
 La innovación principal de PCP-MAE es reformular el objetivo de enmascaramiento de puntos: en lugar de reconstruir las coordenadas de los puntos enmascarados, el modelo predice los centros de los grupos de puntos (point centers), lo que aporta una señal de supervisión más estable y semánticamente rica. La arquitectura es un transformer con encoder de 768 dimensiones y 22,3 millones de parámetros, lo que lo sitúa en la gama ligera y permite entrenamiento e inferencia en GPU de consumo.
 
@@ -73,7 +73,7 @@ No se han publicado en la información disponible resultados adicionales (p. ej.
 
 | Modelo | Parámetros | Contexto / entrada | OA en ScanObjectNN OBJ_BG | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PCP-MAE (este checkpoint) | 22,3 M | 8.192 puntos | 95,52 | MIT | HuggingFace, torch-pointcloud |
+| PCP-MAE (este checkpoint) | 22,3 M | 8.192 puntos | 95,52 | MIT | Hugging Face, torch-pointcloud |
 | Point-MAE | no disponible en la información | no disponible | no disponible | MIT (repo original) | GitHub, checkpoints públicos |
 | PointNet++ | no disponible en la información | no disponible | no disponible | MIT | Implementaciones múltiples |
 | Point Transformer | no disponible en la información | no disponible | no disponible | no disponible | GitHub |
@@ -93,7 +93,7 @@ No se dispone en la información proporcionada de cifras comparativas verificada
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/pcp-mae.scanobjectnn-objbg.xiangdong-zhang
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/pcp-mae.scanobjectnn-objbg.xiangdong-zhang
 - Modelo base preentrenado: https://huggingface.co/torch-pointcloud/pcp-mae.pretrain.xiangdong-zhang
 - Paper PCP-MAE (arXiv): https://arxiv.org/abs/2408.08753
 - Repositorio original PCP-MAE: https://github.com/aHapBean/PCP-MAE

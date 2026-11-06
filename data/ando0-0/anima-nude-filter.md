@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ando0-0/anima-nude-filter` es un recurso alojado en HuggingFace cuyo propósito, según su nombre y etiquetas, es el de aplicar o generar contenido de desnudos en imágenes de estilo anime. Fue publicado por el usuario `ando0-0` el 18 de agosto de 2026, con licencia Apache-2.0 y un tamaño de repositorio de 0.2 GB. La model card es extremadamente escueta: únicamente contiene una instrucción en chino que dice «para eliminar objetos, usa 'no xxx' en lugar de 'remove xxx'», lo que sugiere que el modelo se utiliza mediante prompts de texto, probablemente como un LoRA o un checkpoint para un modelo de difusión (tipo Stable Diffusion). No se proporciona ninguna información sobre arquitectura, parámetros, contexto, idiomas soportados ni pipeline de uso.
+El modelo `ando0-0/anima-nude-filter` es un recurso alojado en Hugging Face cuyo propósito, según su nombre y etiquetas, es el de aplicar o generar contenido de desnudos en imágenes de estilo anime. Fue publicado por el usuario `ando0-0` el 18 de agosto de 2026, con licencia Apache-2.0 y un tamaño de repositorio de 0.2 GB. La model card es extremadamente escueta: únicamente contiene una instrucción en chino que dice «para eliminar objetos, usa 'no xxx' en lugar de 'remove xxx'», lo que sugiere que el modelo se utiliza mediante prompts de texto, probablemente como un LoRA o un checkpoint para un modelo de difusión (tipo Stable Diffusion). No se proporciona ninguna información sobre arquitectura, parámetros, contexto, idiomas soportados ni pipeline de uso.
 
 La relevancia de este modelo es limitada fuera del ámbito de generación de imágenes anime para adultos. Su etiqueta `not-for-all-audiences` indica que contiene contenido no apto para todos los públicos. Dado que no existe documentación técnica, no es posible evaluar su rendimiento ni sus capacidades de forma objetiva. Cualquier uso en producción requeriría un análisis previo del propio archivo del modelo, del cual no se dispone en la información facilitada.
 
@@ -68,7 +68,7 @@ No se dispone de informacion sobre modelos comparables. El nombre sugiere una re
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/ando0-0/anima-nude-filter
+- Repositorio de Hugging Face: https://huggingface.co/ando0-0/anima-nude-filter
 - ANIMADEX (catalogo de personajes anime para el modelo ANIMA): https://animadex.net/
 - Anima Style Explorer (explorador de estilos de artista para generacion de imagenes): https://anima.mooshieblob.com/
 - AIBooru (tablon de imagenes generadas por IA): https://aibooru.online/

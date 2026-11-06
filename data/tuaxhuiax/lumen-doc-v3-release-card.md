@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LumenDoc-V3 es un modelo de inteligencia documental desarrollado por el equipo interno Lumen Document AI, orientado a la ingesta automatizada de documentos de negocio como facturas, recibos, formularios y contratos escaneados. Se distribuye a través de HuggingFace con el identificador `TUaxhuiax/lumen-doc-v3-release-card`, etiquetado para la tarea de *document question answering* dentro del ecosistema `transformers` y bajo licencia Apache 2.0. El modelo se presenta como una evolución de la arquitectura LumenDoc-V2, incorporando tres cambios principales: un codificador de página de mayor resolución, un módulo de orden de lectura sensible al layout y una cabeza específica de cumplimiento para verificación de redacciones.
+LumenDoc-V3 es un modelo de inteligencia documental desarrollado por el equipo interno Lumen Document AI, orientado a la ingesta automatizada de documentos de negocio como facturas, recibos, formularios y contratos escaneados. Se distribuye a través de Hugging Face con el identificador `TUaxhuiax/lumen-doc-v3-release-card`, etiquetado para la tarea de *document question answering* dentro del ecosistema `transformers` y bajo licencia Apache 2.0. El modelo se presenta como una evolución de la arquitectura LumenDoc-V2, incorporando tres cambios principales: un codificador de página de mayor resolución, un módulo de orden de lectura sensible al layout y una cabeza específica de cumplimiento para verificación de redacciones.
 
 La relevancia del modelo radica en su enfoque hacia el *back-office* documental, un ámbito donde la precisión en la extracción de campos y la validación de totales es crítica para la contabilidad y el cumplimiento normativo. Según la model card, las predicciones que no superan la validación de extracción se encolan para revisión humana antes de su publicación en sistemas posteriores, lo que sugiere un diseño orientado a la fiabilidad operativa más que a la autonomía total.
 
@@ -91,7 +91,7 @@ La model card referencia dos sistemas externos de referencia (Baseline-A y Basel
 
 | Modelo | Parámetros | Contexto | DocBench 4.2 (media de las 15 tareas) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LumenDoc-V3 | No disponible | No disponible | 0.743 (calidad ponderada) | Apache 2.0 | HuggingFace |
+| LumenDoc-V3 | No disponible | No disponible | 0.743 (calidad ponderada) | Apache 2.0 | Hugging Face |
 | LumenDoc-V2 | No disponible | No disponible | Inferior en las 15 tareas (ver tabla) | No disponible | No disponible |
 | Baseline-A | No disponible | No disponible | Inferior en las 15 tareas (ver tabla) | No disponible | No disponible |
 | Baseline-B | No disponible | No disponible | Inferior en las 15 tareas (ver tabla) | No disponible | No disponible |
@@ -111,6 +111,6 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TUaxhuiax/lumen-doc-v3-release-card
+- Hugging Face: https://huggingface.co/TUaxhuiax/lumen-doc-v3-release-card
 
 No se han encontrado en la información proporcionada otros enlaces a papers, blogs, repositorios o demos.

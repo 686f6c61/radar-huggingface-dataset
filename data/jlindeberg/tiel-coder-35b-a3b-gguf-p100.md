@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tiel-Coder-35B-A3B es una variante especializada en generación de código del modelo Qwen3.6-35B-A3B, publicada por el usuario jlindeberg en HuggingFace. Se trata de un modelo de arquitectura MoE (Mixture of Experts) híbrida con 35.505 millones de parámetros totales y aproximadamente 3.000 millones de parámetros activos por token, lo que lo hace especialmente atractivo para cargas de trabajo de codificación de alta frecuencia en entornos locales. El repositorio contiene pesos en formato GGUF cuantizados con imatrix, lo que permite su ejecución eficiente en hardware de consumo mediante llama.cpp u otros motores compatibles.
+Tiel-Coder-35B-A3B es una variante especializada en generación de código del modelo Qwen3.6-35B-A3B, publicada por el usuario jlindeberg en Hugging Face. Se trata de un modelo de arquitectura MoE (Mixture of Experts) híbrida con 35.505 millones de parámetros totales y aproximadamente 3.000 millones de parámetros activos por token, lo que lo hace especialmente atractivo para cargas de trabajo de codificación de alta frecuencia en entornos locales. El repositorio contiene pesos en formato GGUF cuantizados con imatrix, lo que permite su ejecución eficiente en hardware de consumo mediante llama.cpp u otros motores compatibles.
 
 El modelo incorpora un proyector multimodal (mmproj) que sugiere capacidades de visión además de texto, y el comando de ejecución incluido en la model card muestra soporte para decodificación especulativa con MTP (multi-token prediction), contexto largo de 196.608 tokens y ejecución en paralelo con múltiples GPUs. Aunque la ficha oficial no especifica licencia ni idiomas, el modelo hereda las capacidades de la familia Qwen3.6, que incluye razonamiento, tool calling y soporte multilingüe. Su relevancia radica en ofrecer un rendimiento de codificación cercano a modelos mucho más grandes con un coste computacional reducido gracias a la activación selectiva de parámetros.
 
@@ -46,7 +46,7 @@ No se dispone de informacion sobre el dataset de entrenamiento, el numero de tok
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Sin embargo, los resultados de busqueda web mencionan una evaluacion del modelo base Qwen3.6-35B-A3B en el benchmark Aider Polyglot (225 ejercicios), ejecutado con llama.cpp y cuantizacion UD-Q4_K_M, pero no se proporcionan las puntuaciones concretas. Se recomienda consultar el repositorio de HuggingFace o la documentacion de Qwen para obtener datos comparativos.
+No se han publicado resultados de benchmarks en la informacion disponible. Sin embargo, los resultados de busqueda web mencionan una evaluacion del modelo base Qwen3.6-35B-A3B en el benchmark Aider Polyglot (225 ejercicios), ejecutado con llama.cpp y cuantizacion UD-Q4_K_M, pero no se proporcionan las puntuaciones concretas. Se recomienda consultar el repositorio de Hugging Face o la documentacion de Qwen para obtener datos comparativos.
 
 ## Requisitos de hardware
 
@@ -78,9 +78,9 @@ La comparativa se basa en informacion publica de la familia Qwen3.6. Tiel-Coder 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jlindeberg/Tiel-Coder-35B-A3B-GGUF-P100
+- Repositorio Hugging Face: https://huggingface.co/jlindeberg/Tiel-Coder-35B-A3B-GGUF-P100
 - Guia de Qwen 3.6 (insiderllm.com): https://insiderllm.com/guides/qwen-3-6-local-ai-guide/
 - Blog sobre Qwen3.6-35B-A3B (labellerr.com): https://www.labellerr.com/blog/qwen3-6-35b-a3b-open-source-ai-model/
-- Modelo base Qwen3.5-35B-A3B en HuggingFace: https://huggingface.co/Qwen/Qwen3.5-35B-A3B
+- Modelo base Qwen3.5-35B-A3B en Hugging Face: https://huggingface.co/Qwen/Qwen3.5-35B-A3B
 - Benchmark Aider Polyglot con Qwen3.6-35B-A3B (GitHub): https://github.com/itayinbarr/little-coder/blob/main/docs/benchmark-qwen3.6-35b-a3b.md
 - Modelo similar Qwopus3.6-35B-A3B-Coder-MTP-GGUF: https://huggingface.co/Jackrong/Qwopus3.6-35B-A3B-Coder-MTP-GGUF

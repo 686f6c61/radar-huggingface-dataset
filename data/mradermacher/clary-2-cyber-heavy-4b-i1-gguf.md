@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Cabe en GPU de consumo: si, previsiblemente en tarjetas con 6-8 GB de VRAM o mas (RTX 3060, RTX 4060, RTX 2070, etc.) usando cuantizaciones Q4 o inferiores. No hay confirmacion de esto por parte del autor.
 - GPU profesionales recomendadas: no disponible; para un modelo de este tamano no serian necesarias tarjetas A100 o H100 salvo para servir muchas peticiones concurrentes.
 - Ejecucion en CPU: viable gracias al formato GGUF, con velocidades dependientes del numero de nucleos y del ancho de banda de memoria.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui y cualquier runtime compatible con GGUF. El tag endpoints_compatible sugiere tambien compatibilidad con endpoints de HuggingFace. No se ha confirmado soporte de vLLM o TGI para este repositorio concreto.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui y cualquier runtime compatible con GGUF. El tag endpoints_compatible sugiere tambien compatibilidad con endpoints de Hugging Face. No se ha confirmado soporte de vLLM o TGI para este repositorio concreto.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparado con otras alternativas de la mis
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo: https://huggingface.co/mradermacher/Clary-2-Cyber-Heavy-4B-i1-GGUF
+- Repositorio Hugging Face de este modelo: https://huggingface.co/mradermacher/Clary-2-Cyber-Heavy-4B-i1-GGUF
 - Modelo base: https://huggingface.co/AuroraSystem/Clary-2-Cyber-Heavy-4B
 - Cuantizaciones estaticas del mismo modelo: https://huggingface.co/mradermacher/Clary-2-Cyber-Heavy-4B-GGUF
 - Pagina de resumen y descargas del cuantizador: https://hf.tst.eu/model#Clary-2-Cyber-Heavy-4B-i1-GGUF

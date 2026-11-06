@@ -25,7 +25,7 @@ Técnicamente es un modelo compacto: 813.977.841 parámetros en un único `model
 | Frecuencia de muestreo de salida | 24.000 Hz |
 | Pasos de muestreo por defecto | 20 (`num_step`), con `cfg_strength=3.0` |
 | Tamano del repositorio | ~2,8 GB (`model.safetensors` ~2,03 GB + `audio_tokenizer/` ~805 MB) |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 | Fecha de publicacion | 2026-10-27 |
 
 ## Arquitectura y entrenamiento
@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Idiomas | Contexto / control | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mlwiseyak/omnivoice_emotional_v2 | 813.977.841 | ne, new | 16 emociones, 6 personas fijas, anclaje de voz 4–7 s | Apache 2.0 | HuggingFace, 0 descargas |
-| k2-fsa/OmniVoice (base) | No disponible en la informacion | Más de 600 idiomas (según el proyecto) | Clonación cero disparo, *voice design* a partir de descripción textual | No disponible en la informacion | HuggingFace y GitHub |
-| mlwiseyak/omnivoice-nepali-tts-v2 | No disponible en la informacion | Nepalí | TTS nepalí, sin control emocional documentado en la información disponible | No disponible en la informacion | HuggingFace |
+| mlwiseyak/omnivoice_emotional_v2 | 813.977.841 | ne, new | 16 emociones, 6 personas fijas, anclaje de voz 4–7 s | Apache 2.0 | Hugging Face, 0 descargas |
+| k2-fsa/OmniVoice (base) | No disponible en la informacion | Más de 600 idiomas (según el proyecto) | Clonación cero disparo, *voice design* a partir de descripción textual | No disponible en la informacion | Hugging Face y GitHub |
+| mlwiseyak/omnivoice-nepali-tts-v2 | No disponible en la informacion | Nepalí | TTS nepalí, sin control emocional documentado en la información disponible | No disponible en la informacion | Hugging Face |
 
 La comparación relevante es frente al modelo base: OmniVoice ofrece cobertura de más de 600 idiomas y clonación cero disparo, mientras que este ajuste sacrifica amplitud lingüística a cambio de control emocional explícito, personas estables y una calidad de pronunciación nepalí presumiblemente superior tras 55 horas de *fine-tuning*. Frente a `omnivoice-nepali-tts-v2`, del mismo autor, la diferencia declarada es la capa emocional y el bloqueo de personas. No se dispone de datos de benchmarks que permitan comparar calidad objetiva entre los tres.
 
@@ -85,7 +85,7 @@ La comparación relevante es frente al modelo base: OmniVoice ofrece cobertura d
 - **Riesgo de alucinación acústica**: como todo modelo generativo de audio, puede insertar ruido, respiraciones espurias, sílabas repetidas o prolongar vocales; no existe garantía de fidelidad literal al texto de entrada.
 - **Personas fijas y limitadas**: solo seis voces, con perfiles muy marcados (locutor, narradora, conversacional). No se documenta clonación de voces arbitrarias en esta ficha, lo que limita la variedad en producciones con muchos personajes.
 - **Formato de emoción estricto**: las etiquetas deben escribirse entre corchetes y con la grafía exacta de las 16 soportadas; una etiqueta mal escrita se leerá como texto o se ignorará, sin aviso.
-- **Sin validación comunitaria**: 0 descargas y 0 *likes* en el momento de la ficha, sin issues ni evaluaciones de terceros. La model card marca `inference: false`, por lo que no hay *widget* de prueba en HuggingFace.
+- **Sin validación comunitaria**: 0 descargas y 0 *likes* en el momento de la ficha, sin issues ni evaluaciones de terceros. La model card marca `inference: false`, por lo que no hay *widget* de prueba en Hugging Face.
 - **Sin benchmarks**: no hay MOS, CMOS ni WER publicados; cualquier decisión de producción debería basarse en una evaluación propia con locutores nativos.
 - **Licencia**: los pesos de este ajuste son Apache 2.0, lo que permite uso comercial y modificación con atribución; conviene verificar por separado los términos del modelo base k2-fsa/OmniVoice y del tokenizador de audio incluido.
 - **Uso dual y suplantación**: cualquier TTS con control de estilo y personas estables puede emplearse para generar audio engañoso. Es recomendable marcar las síntesis como generadas y no usar el modelo para imitar voces reales sin consentimiento explícito.
@@ -93,8 +93,8 @@ La comparación relevante es frente al modelo base: OmniVoice ofrece cobertura d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mlwiseyak/omnivoice_emotional_v2
-- Modelo base en HuggingFace: https://huggingface.co/k2-fsa/OmniVoice
+- Modelo en Hugging Face: https://huggingface.co/mlwiseyak/omnivoice_emotional_v2
+- Modelo base en Hugging Face: https://huggingface.co/k2-fsa/OmniVoice
 - Repositorio del modelo base en GitHub: https://github.com/k2-fsa/OmniVoice/
 - Sitio del proyecto OmniVoice: https://omnivoice.app/
 - Modelo hermano del mismo autor (TTS nepalí): https://huggingface.co/mlwiseyak/omnivoice-nepali-tts-v2

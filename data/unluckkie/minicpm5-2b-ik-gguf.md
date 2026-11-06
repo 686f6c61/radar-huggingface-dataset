@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks comparativos entre estas variantes y modelo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Unluckkie/MiniCPM5-2B-IK-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Unluckkie/MiniCPM5-2B-IK-GGUF
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
 - `ik_llama.cpp`: https://github.com/ikawrakow/ik_llama.cpp
 - Dataset de calibración: https://huggingface.co/datasets/eaddario/imatrix-calibration

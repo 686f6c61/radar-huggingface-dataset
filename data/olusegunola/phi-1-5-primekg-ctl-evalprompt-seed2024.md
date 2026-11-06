@@ -2,9 +2,9 @@
 
 ## Resumen
 
-olusegunola/phi-1.5-primekg-ctl-evalprompt-seed2024 es un checkpoint publicado en HuggingFace por el usuario olusegunola. Por el identificador se deduce que deriva de Microsoft phi-1.5, un transformer decoder-only de aproximadamente 1.300 millones de parametros, y que se ha sometido a algun proceso de ajuste vinculado a PrimeKG, una base de conocimiento de medicina de precision que integra entidades de enfermedades, farmacos, genes y fenotipos. Los sufijos "ctl" y "evalprompt" apuntan a un protocolo experimental (posiblemente entrenamiento continuado y evaluacion con prompts estandarizados), y la semilla 2024 sugiere un estudio de reproducibilidad con multiples variantes.
+olusegunola/phi-1.5-primekg-ctl-evalprompt-seed2024 es un checkpoint publicado en Hugging Face por el usuario olusegunola. Por el identificador se deduce que deriva de Microsoft phi-1.5, un transformer decoder-only de aproximadamente 1.300 millones de parametros, y que se ha sometido a algun proceso de ajuste vinculado a PrimeKG, una base de conocimiento de medicina de precision que integra entidades de enfermedades, farmacos, genes y fenotipos. Los sufijos "ctl" y "evalprompt" apuntan a un protocolo experimental (posiblemente entrenamiento continuado y evaluacion con prompts estandarizados), y la semilla 2024 sugiere un estudio de reproducibilidad con multiples variantes.
 
-El modelo se publica sin documentacion: la model card es la plantilla automatica de HuggingFace con todos los campos sin rellenar. No se declara licencia, idiomas, composicion de datos, hiperparametros, GPU utilizadas ni resultados de evaluacion. El repositorio registra cero descargas y cero "likes", y ocupa 0,1 GB, un tamano mas compatible con un adaptador LoRA o un checkpoint parcial que con pesos completos en fp16 (que rondarian los 2,6 GB para 1.300 millones de parametros).
+El modelo se publica sin documentacion: la model card es la plantilla automatica de Hugging Face con todos los campos sin rellenar. No se declara licencia, idiomas, composicion de datos, hiperparametros, GPU utilizadas ni resultados de evaluacion. El repositorio registra cero descargas y cero "likes", y ocupa 0,1 GB, un tamano mas compatible con un adaptador LoRA o un checkpoint parcial que con pesos completos en fp16 (que rondarian los 2,6 GB para 1.300 millones de parametros).
 
 Su relevancia actual es estrictamente experimental: sirve como artefacto de una linea de trabajo sobre inyeccion de conocimiento estructurado en modelos pequenos, dentro de una familia de checkpoints hermanos (variantes sft, vanillakd y stage3-sft-cloned). No hay evidencia que respalde su uso en produccion ni, mucho menos, en contextos clinicos.
 
@@ -21,7 +21,7 @@ Su relevancia actual es estrictamente experimental: sirve como artefacto de una 
 | Licencia | No disponible; la del phi-1.5 original es MIT, pero la de este ajuste no se declara |
 | Formato de pesos | Safetensors (libreria transformers) |
 
-Datos adicionales del repositorio: 0,1 GB de tamano, etiquetas `transformers`, `safetensors`, `endpoints_compatible`, `region:us`, fecha de creacion registrada como 2026-09-27. La etiqueta `arxiv:1910.09700` corresponde al articulo de Lacoste et al. (2019) sobre el calculador de impacto de carbono, incluido por defecto en la plantilla de HuggingFace; no es una referencia cientifica al modelo.
+Datos adicionales del repositorio: 0,1 GB de tamano, etiquetas `transformers`, `safetensors`, `endpoints_compatible`, `region:us`, fecha de creacion registrada como 2026-09-27. La etiqueta `arxiv:1910.09700` corresponde al articulo de Lacoste et al. (2019) sobre el calculador de impacto de carbono, incluido por defecto en la plantilla de Hugging Face; no es una referencia cientifica al modelo.
 
 ## Arquitectura y entrenamiento
 
@@ -44,7 +44,7 @@ El nombre del checkpoint sugiere el uso de PrimeKG, un grafo de conocimiento de 
 - Reproducibilidad de experimentos de inyeccion de conocimiento: el checkpoint permite repetir con la semilla 2024 un ajuste sobre PrimeKG y comparar el resultado con las variantes `phi-1.5-primekg-sft-seed2024` y `phi-1.5-primekg-vanillakd-seed101` del mismo autor. Es util porque la semilla forma parte del identificador y facilita el control de varianza entre ejecuciones.
 - Estudio de olvido catastrofico: al ajustar un modelo pequeno sobre un grafo de dominio medico, es habitual degradar las capacidades generales. Este checkpoint sirve como sujeto de prueba para medir esa perdida comparando su salida con la de phi-1.5 sin ajustar ante el mismo prompt.
 - Evaluacion de estrategias de ajuste: junto con las variantes sft y vanillakd, permite montar un experimento controlado que compare ajuste supervisado clasico frente a destilacion de conocimiento sobre el mismo corpus estructurado.
-- Analisis de artefactos sin model card: el repositorio es un caso de estudio real sobre publicacion incompleta en HuggingFace. Un equipo de gobernanza de modelos puede usarlo como ejemplo para definir listas de verificacion minimas antes de adoptar un checkpoint de terceros.
+- Analisis de artefactos sin model card: el repositorio es un caso de estudio real sobre publicacion incompleta en Hugging Face. Un equipo de gobernanza de modelos puede usarlo como ejemplo para definir listas de verificacion minimas antes de adoptar un checkpoint de terceros.
 - Docencia y formacion interna: sirve para ilustrar un flujo completo de ajuste y publicacion de un modelo pequeno (transformers + safetensors), incluido el error frecuente de no rellenar la model card ni declarar licencia.
 - Pruebas de conversion y despliegue local: dado el tamano reducido, es un candidato para validar pipelines de conversion de safetensors a GGUF y su carga en llama.cpp u Ollama, siempre que se resuelva antes la duda sobre si el repositorio contiene pesos completos o un adaptador.
 - Auditoria de trazabilidad de semillas: en experimentos con multiples semillas, este checkpoint permite comprobar si las diferencias de rendimiento observadas entre ejecuciones son atribuibles al azar del inicializador o al metodo de ajuste.
@@ -72,7 +72,7 @@ Las siguientes cifras son estimaciones basadas en la hipotesis de que el modelo 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos de rendimiento |
 |---|---|---|---|---|---|
 | phi-1.5-primekg-ctl-evalprompt-seed2024 | No confirmado (probablemente 1,3B) | No disponible | No disponible | Repositorio individual, 0 descargas, 0,1 GB | No publicados |
-| Microsoft phi-1.5 | 1,3B | 2.048 tokens | MIT | Ampliamente distribuido en HuggingFace | Publicados por Microsoft en el informe tecnico |
+| Microsoft phi-1.5 | 1,3B | 2.048 tokens | MIT | Ampliamente distribuido en Hugging Face | Publicados por Microsoft en el informe tecnico |
 | Microsoft phi-2 | 2,7B | 2.048 tokens | MIT | Ampliamente distribuido | Publicados por Microsoft |
 | TinyLlama-1.1B | 1,1B | 2.048 tokens | Apache 2.0 | Muy distribuido | Publicados por el equipo |
 
@@ -92,7 +92,7 @@ Dentro de la misma familia del autor existen otros checkpoints comparables, aunq
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/olusegunola/phi-1.5-primekg-ctl-evalprompt-seed2024
+- Modelo en Hugging Face: https://huggingface.co/olusegunola/phi-1.5-primekg-ctl-evalprompt-seed2024
 - Checkpoint hermano (sft): https://huggingface.co/olusegunola/phi-1.5-primekg-sft-seed2024
 - Checkpoint hermano (vanillakd): https://huggingface.co/olusegunola/phi-1.5-primekg-vanillakd-seed101
 - Checkpoint hermano (stage3-sft-cloned, semilla 999): https://featherless.ai/models/olusegunola/phi-1.5-stage3-sft-cloned-seed999-merged

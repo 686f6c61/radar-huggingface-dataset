@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PanoVideoReasoner | 9.409.813.744 | no disponible | Vídeo panorámico 360 grados con CoT | apache-2.0 | HuggingFace (0 descargas) |
-| Qwen/Qwen3.5-9B (base) | ~9,4 B | no disponible | Multimodal image-text-to-text general | no disponible en la informacion | HuggingFace |
+| PanoVideoReasoner | 9.409.813.744 | no disponible | Vídeo panorámico 360 grados con CoT | apache-2.0 | Hugging Face (0 descargas) |
+| Qwen/Qwen3.5-9B (base) | ~9,4 B | no disponible | Multimodal image-text-to-text general | no disponible en la informacion | Hugging Face |
 | Modelos de vídeo QA convencionales | variable | variable | Vídeo de campo de visión limitado | variable | variable |
 
 La comparación con alternativas específicas de razonamiento sobre vídeo panorámico no está disponible en la información proporcionada; el modelo base Qwen3.5-9B es la referencia directa más próxima en arquitectura y tamaño.
@@ -81,7 +81,7 @@ La comparación con alternativas específicas de razonamiento sobre vídeo panor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lulidong/PanoVideoReasoner
+- Modelo en Hugging Face: https://huggingface.co/lulidong/PanoVideoReasoner
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Paper "Think in 360°: Benchmarking and Bootstrapping Panoramic Video Reasoning": no disponible en la informacion proporcionada
 - Repositorio de código o demo: no disponible en la informacion proporcionada

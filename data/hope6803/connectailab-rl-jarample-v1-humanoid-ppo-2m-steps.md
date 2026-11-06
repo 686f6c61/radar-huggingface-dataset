@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Entorno | Algoritmo | Pasos de entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| connectailab-rl-jarample-v1-humanoid-ppo-2m-steps | Política RL (MLP) | MuJoCo `Humanoid-v5` | PPO | 2.000.000 | no disponible | HuggingFace (0 descargas) |
+| connectailab-rl-jarample-v1-humanoid-ppo-2m-steps | Política RL (MLP) | MuJoCo `Humanoid-v5` | PPO | 2.000.000 | no disponible | Hugging Face (0 descargas) |
 | Políticas de referencia de Stable-Baselines3 | Política RL (MLP) | MuJoCo `Humanoid-v4`/`v5` | PPO | variable (configurable) | MIT | GitHub, pip |
 | CleanRL `ppo_continuous_action` | Script de entrenamiento RL | MuJoCo (varios) | PPO | variable | MIT | GitHub |
 | Implementaciones de la literatura (p. ej. reproducciones de PPO en Humanoid) | Política RL | MuJoCo `Humanoid` | PPO | variable | variable | Papers with Code, repos |
@@ -89,7 +89,7 @@ No se dispone de datos comparativos de rendimiento entre estas alternativas en l
 
 - Modelo de control motor, no de lenguaje: no procesa texto, no responde preguntas y no tiene capacidades generativas.
 - Licencia no declarada: no se puede asumir uso comercial ni redistribución sin contactar con el autor.
-- Sin validación externa: 0 descargas y 0 likes en HuggingFace; no hay evidencia de que terceros hayan reproducido las métricas declaradas.
+- Sin validación externa: 0 descargas y 0 likes en Hugging Face; no hay evidencia de que terceros hayan reproducido las métricas declaradas.
 - Recompensa media de 503,5 en `Humanoid-v5`: es un resultado modesto para este entorno, donde políticas bien entrenadas superan habitualmente varios miles de puntos; el modelo se detiene a los 2 millones de pasos.
 - Entrenamiento limitado a 2 millones de pasos: no se documenta convergencia ni estabilidad más allá de ese presupuesto.
 - Sin transferencia sim-to-real: no hay evidencia de que la política funcione fuera del simulador MuJoCo.
@@ -97,11 +97,11 @@ No se dispone de datos comparativos de rendimiento entre estas alternativas en l
 - Sesgos: no aplican sesgos sociales típicos de LLM, pero la política puede exhibir comportamientos no deseados (caídas, oscilaciones) fuera de la distribución de estados vista en entrenamiento.
 - Riesgo de alucinación: no aplica en el sentido de LLM; el equivalente sería generar acciones no válidas o inestables ante observaciones atípicas.
 - Sin documentación de hiperparámetros ni código de entrenamiento en la información disponible, lo que dificulta la reproducibilidad exacta.
-- El repositorio pesa 0,0 GB según HuggingFace, lo que sugiere que los pesos podrían no estar efectivamente subidos o que el tamaño es inferior al umbral de redondeo; conviene verificar los ficheros antes de confiar en la disponibilidad.
+- El repositorio pesa 0,0 GB según Hugging Face, lo que sugiere que los pesos podrían no estar efectivamente subidos o que el tamaño es inferior al umbral de redondeo; conviene verificar los ficheros antes de confiar en la disponibilidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hope6803/connectailab-rl-jarample-v1-humanoid-ppo-2m-steps
+- Modelo en Hugging Face: https://huggingface.co/hope6803/connectailab-rl-jarample-v1-humanoid-ppo-2m-steps
 - Entorno `Humanoid-v5` de Gymnasium (documentación): https://gymnasium.farama.org/environments/mujoco/humanoid/
 - MuJoCo (documentación oficial): https://mujoco.org/
 - PPO, paper original (Schulman et al., 2017): https://arxiv.org/abs/1707.06347

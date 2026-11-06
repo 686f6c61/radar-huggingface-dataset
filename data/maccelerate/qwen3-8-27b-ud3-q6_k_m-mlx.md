@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks ni de comparativas de rendimiento publicada
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/maccelerate/Qwen3.8-27B-UD3-Q6_K_M-MLX
+- Modelo en Hugging Face: https://huggingface.co/maccelerate/Qwen3.8-27B-UD3-Q6_K_M-MLX
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - GGUF de origen (Unsloth Dynamic v3.0): https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
 - Runtime recomendado, mlx-serve: https://github.com/ddalcu/mlx-serve

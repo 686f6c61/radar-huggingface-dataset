@@ -72,8 +72,8 @@ No se dispone de datos comparativos directos en la información proporcionada. E
 
 ## Enlaces
 
-- HuggingFace (repo oficial): https://huggingface.co/Qwen/Qwen3.8-Flash-Next
-- HuggingFace (repo espejo consultado): https://huggingface.co/Okaybuddiee/Qwen3.8-Flash-Next
+- Hugging Face (repo oficial): https://huggingface.co/Qwen/Qwen3.8-Flash-Next
+- Hugging Face (repo espejo consultado): https://huggingface.co/Okaybuddiee/Qwen3.8-Flash-Next
 - GitHub: https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - Blog oficial: https://qwen.ai/blog?id=qwen3.8-flash-next
 - Informe técnico: https://github.com/QwenLM/Qwen3.8-Flash-Next/blob/main/tech_report.pdf

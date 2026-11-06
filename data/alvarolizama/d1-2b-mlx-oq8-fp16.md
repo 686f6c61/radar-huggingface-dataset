@@ -2,7 +2,7 @@
 
 ## Resumen
 
-d1-2B-MLX-oQ8-fp16 es una versión cuantizada del modelo d1-2B, un modelo multimodal de aproximadamente 1.918 millones de parámetros (1.918B) con arquitectura de tipo `lfm3_vl`, es decir, un transformer de lenguaje con torre de visión integrada. Lo publica el usuario alvarolizama en HuggingFace y está empaquetado específicamente para la librería MLX de Apple, lo que lo orienta a inferencia en hardware Apple Silicon (chips M-series). La cuantización se ha realizado con la herramienta oQ (oMLX v0.7.3) en precisión mixta, con un promedio efectivo de 10.822 bits por peso.
+d1-2B-MLX-oQ8-fp16 es una versión cuantizada del modelo d1-2B, un modelo multimodal de aproximadamente 1.918 millones de parámetros (1.918B) con arquitectura de tipo `lfm3_vl`, es decir, un transformer de lenguaje con torre de visión integrada. Lo publica el usuario alvarolizama en Hugging Face y está empaquetado específicamente para la librería MLX de Apple, lo que lo orienta a inferencia en hardware Apple Silicon (chips M-series). La cuantización se ha realizado con la herramienta oQ (oMLX v0.7.3) en precisión mixta, con un promedio efectivo de 10.822 bits por peso.
 
 El interés técnico del checkpoint reside en su estrategia de cuantización mixta: la práctica totalidad de los pesos del modelo de lenguaje se almacenan en 8 bits afines con grupo de 64 (90,1 % de los pesos lógicos, 8,50 bits efectivos), mientras que el módulo de visión se mantiene en FP32 (9,87 % de los pesos lógicos, 32 bits efectivos) y una fracción residual en FP16. El resultado es un checkpoint de 2,6 GB que preserva la torre visual en alta precisión, algo relevante para tareas de imagen donde la cuantización agresiva suele degradar la calidad.
 
@@ -83,5 +83,5 @@ No hay información suficiente para establecer una comparativa cuantitativa con 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alvarolizama/d1-2B-MLX-oQ8-fp16
+- Hugging Face: https://huggingface.co/alvarolizama/d1-2B-MLX-oQ8-fp16
 - Herramienta de cuantización oQ (oMLX): https://github.com/jundot/omlx

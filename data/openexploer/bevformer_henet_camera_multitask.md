@@ -75,7 +75,7 @@ No se dispone de información suficiente para realizar una comparativa cuantitat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OpenExploer/bevformer_henet_camera_multitask
+- Modelo en Hugging Face: https://huggingface.co/OpenExploer/bevformer_henet_camera_multitask
 - Repositorio oficial de BEVFormer: https://github.com/fundamentalvision/BevFormer
 - Paper de BEVFormer: https://arxiv.org/abs/2203.17270
 - Archivo de configuración de referencia (sparse4d_qat): https://github.com/yingxie285/sparse4d_qat/blob/main/samples/ai_toolchain/horizon_model_train_sample/scripts/configs/lidar_bevfusion/bevformer_henet_camera_multitask_nuscenes_pretrain.py

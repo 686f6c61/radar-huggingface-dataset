@@ -6,7 +6,7 @@ Ornith-1.5-35B-A3B-W4A16-GPTQ es una cuantización INT4 de solo pesos (weight-on
 
 El problema que resuelve es de despliegue: el modelo base en BF16 ocupa del orden de 72 GB, lo que exige varios aceleradores; esta versión reduce el repositorio a 22,2 GB al mantener los pesos del modelo de lenguaje en INT4, dejando la torre de visión, el proyector y los pesos de decodificación especulativa `mtp.*` en BF16 sin tocar. Eso permite ejecutar un VLM de 35B en tarjetas de 24-40 GB, algo relevante para prototipado y para inferencia de bajo coste con modelos MoE de pocos parámetros activos.
 
-La ficha se basa exclusivamente en la model card y en los metadatos de HuggingFace: no hay datos publicados de benchmarks, idiomas soportados, longitud de contexto ni mediciones de latencia, por lo que esos campos se marcan como no disponibles. El modelo se publicó el 17 de octubre de 2026 y, en el momento de redactar esta ficha, no registra descargas ni valoraciones.
+La ficha se basa exclusivamente en la model card y en los metadatos de Hugging Face: no hay datos publicados de benchmarks, idiomas soportados, longitud de contexto ni mediciones de latencia, por lo que esos campos se marcan como no disponibles. El modelo se publicó el 17 de octubre de 2026 y, en el momento de redactar esta ficha, no registra descargas ni valoraciones.
 
 ## Especificaciones tecnicas
 
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros totales / activos | Contexto | Formato y cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ornith-1.5-35B-A3B-W4A16-GPTQ (esta ficha) | 35,95B / ~3B | no disponible | safetensors INT4 W4A16 + visión/MTP en BF16, 22,2 GB | apache-2.0 | HuggingFace, 0 descargas |
-| ornith-ai/Ornith-1.5-35B-A3B (base) | 35,95B / ~3B | no disponible | safetensors BF16 (sin cuantizar) | apache-2.0 | HuggingFace |
+| Ornith-1.5-35B-A3B-W4A16-GPTQ (esta ficha) | 35,95B / ~3B | no disponible | safetensors INT4 W4A16 + visión/MTP en BF16, 22,2 GB | apache-2.0 | Hugging Face, 0 descargas |
+| ornith-ai/Ornith-1.5-35B-A3B (base) | 35,95B / ~3B | no disponible | safetensors BF16 (sin cuantizar) | apache-2.0 | Hugging Face |
 | Alternativas de la misma categoría (MoE ~30-35B con visión) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos verificados de otros modelos comparables dentro de la información proporcionada, ni de resultados de benchmarks que permitan una comparación de rendimiento. La única comparación sustentable es frente al modelo base: mismos parámetros y licencia, con menor huella de memoria pero con la degradación potencial inherente a una cuantización INT4.
@@ -83,7 +83,7 @@ No se dispone de datos verificados de otros modelos comparables dentro de la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nchapman/Ornith-1.5-35B-A3B-W4A16-GPTQ
+- Modelo en Hugging Face: https://huggingface.co/nchapman/Ornith-1.5-35B-A3B-W4A16-GPTQ
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Checksums: https://huggingface.co/nchapman/Ornith-1.5-35B-A3B-W4A16-GPTQ/blob/main/SHA256SUMS
 - llm-compressor (herramienta de cuantización): https://github.com/vllm-project/llm-compressor

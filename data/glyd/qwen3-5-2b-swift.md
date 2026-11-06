@@ -23,7 +23,7 @@ Su relevancia es practica: permite servir un modelo de ~1,9 mil millones de par√
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura interna del modelo base Qwen3.5-2B en la documentacion proporcionada: ni el numero de capas, ni el tipo de atencion, ni la composicion del dataset de entrenamiento, ni si hubo fases de RLHF o DPO. El tag `qwen3_5` de HuggingFace indica unicamente la familia a la que pertenece. La model card menciona de forma indirecta que el modelo base incorpora una "parte de vision" que no se incluye en este checkpoint, lo que sugiere que Qwen3.5-2B es multimodal, aunque no se detallan sus caracteristicas.
+No se dispone de informacion detallada sobre la arquitectura interna del modelo base Qwen3.5-2B en la documentacion proporcionada: ni el numero de capas, ni el tipo de atencion, ni la composicion del dataset de entrenamiento, ni si hubo fases de RLHF o DPO. El tag `qwen3_5` de Hugging Face indica unicamente la familia a la que pertenece. La model card menciona de forma indirecta que el modelo base incorpora una "parte de vision" que no se incluye en este checkpoint, lo que sugiere que Qwen3.5-2B es multimodal, aunque no se detallan sus caracteristicas.
 
 Lo que si esta documentado es el proceso de cuantizacion: Glyd aplica una cuantizacion de una sola pasada sobre los pesos bf16 originales (commit `15852e8c` de Qwen/Qwen3.5-2B), sin reentrenamiento posterior ni ajuste fino de recuperacion. El resultado son pesos de aproximadamente 5,5 bits de media, en un formato propietario que requiere el motor Glyd para ejecutarse. La fidelidad se mide con divergencia KL de 0,0224 sobre WikiText-2, frente a los 0,00581 del nivel "kestrel" del mismo autor, mas conservador en tamano pero mas fiel al original.
 
@@ -107,7 +107,7 @@ Alternativas externas de la misma categoria: no disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/glyd/Qwen3.5-2B-swift
+- Repositorio Hugging Face: https://huggingface.co/glyd/Qwen3.5-2B-swift
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Commit del modelo base usado: https://huggingface.co/Qwen/Qwen3.5-2B/tree/15852e8c16360a2fea060d615a32b45270f8a8fc
 - Variante kestrel: https://huggingface.co/glyd/Qwen3.5-2B-kestrel

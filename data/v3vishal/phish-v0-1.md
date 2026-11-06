@@ -19,7 +19,7 @@ El modelo v3vishal/phish-v0.1 es un clasificador de texto basado en la arquitect
 
 ## Arquitectura y entrenamiento
 
-El modelo utiliza la arquitectura DistilBERT, un transformer encoder de la familia BERT con menos parámetros que el modelo original (66,9 millones frente a los 110 millones de BERT-base). Al ser un modelo encoder, está diseñado para tareas de comprensión de texto, como clasificación o etiquetado, y no para generación. No se ha publicado información sobre los datos de entrenamiento, el número de tokens, la composición del dataset ni si se aplicaron técnicas de afinado como RLHF o DPO. La fecha de creación en HuggingFace es el 4 de septiembre de 2026, y la última actualización es del mismo día.
+El modelo utiliza la arquitectura DistilBERT, un transformer encoder de la familia BERT con menos parámetros que el modelo original (66,9 millones frente a los 110 millones de BERT-base). Al ser un modelo encoder, está diseñado para tareas de comprensión de texto, como clasificación o etiquetado, y no para generación. No se ha publicado información sobre los datos de entrenamiento, el número de tokens, la composición del dataset ni si se aplicaron técnicas de afinado como RLHF o DPO. La fecha de creación en Hugging Face es el 4 de septiembre de 2026, y la última actualización es del mismo día.
 
 ## Capacidades
 
@@ -48,7 +48,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 - VRAM estimada: con 66,9 millones de parámetros, el tamaño en FP32 es de aproximadamente 268 MB, y en FP16 de 134 MB. Con cuantización de 8 bits, rondaría los 67 MB.
 - GPU recomendada: cualquier GPU con al menos 1 GB de VRAM es suficiente. Modelos como RTX 3050, GTX 1660 o superiores pueden ejecutarlo sin problemas. También es viable en CPU.
-- Opciones de despliegue: HuggingFace Transformers con PyTorch, ONNX Runtime, o mediante la API de HuggingFace Inference. No se recomienda vLLM ni llama.cpp, ya que están orientados a modelos generativos.
+- Opciones de despliegue: Hugging Face Transformers con PyTorch, ONNX Runtime, o mediante la API de Hugging Face Inference. No se recomienda vLLM ni llama.cpp, ya que están orientados a modelos generativos.
 - Latencia y throughput: no se han publicado datos de rendimiento en la información disponible.
 
 ## Comparativa con modelos similares
@@ -58,7 +58,7 @@ Los datos de los modelos de referencia son públicos, pero no se ha verificado q
 | Modelo | Parametros | Contexto | Licencia |
 |---|---|---|---|
 | v3vishal/phish-v0.1 | 66,9 M | no disponible | Apache 2.0 |
-| DistilBERT base (HuggingFace) | 66 M | 512 tokens | Apache 2.0 |
+| DistilBERT base (Hugging Face) | 66 M | 512 tokens | Apache 2.0 |
 | BERT-base | 110 M | 512 tokens | Apache 2.0 |
 | MiniLM-L6 | 22 M | 512 tokens | Apache 2.0 |
 
@@ -73,6 +73,6 @@ Los datos de los modelos de referencia son públicos, pero no se ha verificado q
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/v3vishal/phish-v0.1
+- Hugging Face: https://huggingface.co/v3vishal/phish-v0.1
 - Perfil del autor: https://huggingface.co/vshl3
 - Paper: no disponible.

@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "Taoger-Xu/SOD-Qwen3-1.7B-SFT",
+  "slug": "taoger-xu-sod-qwen3-1-7b-sft",
+  "author": "Taoger-Xu",
+  "url": "https://huggingface.co/Taoger-Xu/SOD-Qwen3-1.7B-SFT",
+  "created_at": "2026-11-01T15:55:18.000Z",
+  "updated_at": "2026-11-01T16:03:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "sft",
+    "tool-use",
+    "sod-reproduction",
+    "text-generation",
+    "conversational",
+    "dataset:Gen-Verse/Open-AgentRL-SFT-3K",
+    "arxiv:2605.07725",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 153,
+  "trending_score": 0,
+  "parameters": 2031739904,
+  "parameters_human": "2.03B",
+  "storage_bytes": 4074938294,
+  "storage_human": "4.1 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Taoger-Xu/SOD-Qwen3-1.7B-SFT · Hugging Face",
+      "url": "https://huggingface.co/Taoger-Xu/SOD-Qwen3-1.7B-SFT",
+      "snippet": "这是基于 Qwen3-1.7B 的冷启动监督微调模型，用于复现论文 SOD: Step-wise On-policy Distillation for Small Language Model Agents 的学生训练流程。它是 SOD 强化学习之前的学生检查点，不是论文作者发布的 SOD-1.7B 成品模型。"
+    },
+    {
+      "title": "Taoger-Xu (jintao xu) - Hugging Face",
+      "url": "https://huggingface.co/Taoger-Xu",
+      "snippet": "models1 Taoger-Xu/SOD-Qwen3-1.7B-SFT Text Generation • 2B•Updated about 5 hours ago"
+    }
+  ]
+}

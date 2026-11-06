@@ -106,7 +106,7 @@ Alternativas de la misma categoria (modelos de ~1B parametros como Llama 3.2 1B 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/anlord/gemma-3-1b-it-Abliterated-GGUF
+- Repositorio Hugging Face: https://huggingface.co/anlord/gemma-3-1b-it-Abliterated-GGUF
 - Modelo base: https://huggingface.co/google/gemma-3-1b-it
 - Version abliterated en safetensors: https://huggingface.co/anlord/gemma-3-1b-it-Abliterated
 - Herramienta de abliteration AnlordAbliterator: https://github.com/justbedwarsplay/AnlordAbliterator

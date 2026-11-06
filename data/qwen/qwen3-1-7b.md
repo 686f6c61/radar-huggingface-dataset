@@ -92,7 +92,7 @@ La comparativa de rendimiento, licencia efectiva y disponibilidad debe contrasta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Qwen/Qwen3-1.7B
+- Modelo en Hugging Face: https://huggingface.co/Qwen/Qwen3-1.7B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B-Base
 - Licencia: https://huggingface.co/Qwen/Qwen3-1.7B/blob/main/LICENSE
 - Blog oficial de Qwen3: https://qwenlm.github.io/blog/qwen3/

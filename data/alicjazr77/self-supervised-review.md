@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, publicado por alicjazr77, no contiene un modelo de IA entrenado, sino una nota de investigación sobre aprendizaje autosupervisado (self-supervised learning). El paquete incluye un documento principal (`analysis.md`) que organiza motivación, trabajo relacionado, hipótesis falsable y plan de evaluación, junto con un README que documenta el alcance y las limitaciones.
+Este repositorio de Hugging Face, publicado por alicjazr77, no contiene un modelo de IA entrenado, sino una nota de investigación sobre aprendizaje autosupervisado (self-supervised learning). El paquete incluye un documento principal (`analysis.md`) que organiza motivación, trabajo relacionado, hipótesis falsable y plan de evaluación, junto con un README que documenta el alcance y las limitaciones.
 
 El repositorio está etiquetado con `safetensors`, `transformer` y `self-supervised`, y reporta 33.088 parámetros, pero el tamaño del repositorio es de 0.0 GB y el autor explícitamente indica que no se liberan pesos entrenados ni código. No se trata de un modelo de lenguaje ni de un sistema de IA funcional, sino de un artefacto académico de documentación.
 
@@ -64,4 +64,4 @@ No disponible. No es un modelo comparable con otros modelos de IA; la categoría
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alicjazr77/self-supervised-review
+- Hugging Face: https://huggingface.co/alicjazr77/self-supervised-review

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `chloevbernard/generation` es un checkpoint experimental de una implementación personalizada de CLIP orientada a generación, publicada por el usuario `chloevbernard` en HuggingFace. Se trata de un repositorio de código y configuración más que de un modelo entrenado: el archivo `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo, no un modelo con capacidades demostradas. La arquitectura declarada es CLIP a escala xlarge, con atención de ventana deslizante, fusión por concatenación con MLP, activación ReLU y normalización RMSNorm.
+El modelo `chloevbernard/generation` es un checkpoint experimental de una implementación personalizada de CLIP orientada a generación, publicada por el usuario `chloevbernard` en Hugging Face. Se trata de un repositorio de código y configuración más que de un modelo entrenado: el archivo `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo, no un modelo con capacidades demostradas. La arquitectura declarada es CLIP a escala xlarge, con atención de ventana deslizante, fusión por concatenación con MLP, activación ReLU y normalización RMSNorm.
 
 El repositorio incluye un script `predict.py` como artefacto principal, junto con `config.json` y `training_args.json` que registran la configuración de arquitectura y la receta experimental por defecto (optimizador Adafactor con programación polinómica). El autor no reclama ningún resultado de benchmark y advierte explícitamente de que el checkpoint no ha sido entrenado ni auditado para robustez, equidad o transferencia de dominio. Su relevancia es únicamente como punto de partida para investigar modificaciones arquitectónicas antes de un entrenamiento completo.
 
@@ -66,4 +66,4 @@ No disponible. No existen modelos comparables en el mismo repositorio ni se han 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/chloevbernard/generation
+- Repositorio en Hugging Face: https://huggingface.co/chloevbernard/generation

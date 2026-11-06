@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Buattensorart2/merged_models` es un repositorio alojado en HuggingFace por el usuario Buattensorart2. Por su nombre y por el volumen del repositorio (290 GB), se trata de un contenedor de pesos de modelos fusionados (model merging), una practica habitual para combinar dos o mas modelos afinados con el fin de agregar capacidades o suavizar comportamientos. No obstante, la informacion publica disponible es practicamente nula: no se especifica arquitectura, pipeline, licencia, idiomas ni parametros.
+`Buattensorart2/merged_models` es un repositorio alojado en Hugging Face por el usuario Buattensorart2. Por su nombre y por el volumen del repositorio (290 GB), se trata de un contenedor de pesos de modelos fusionados (model merging), una practica habitual para combinar dos o mas modelos afinados con el fin de agregar capacidades o suavizar comportamientos. No obstante, la informacion publica disponible es practicamente nula: no se especifica arquitectura, pipeline, licencia, idiomas ni parametros.
 
 El repositorio no incluye una model card descriptiva, no declara el pipeline de inferencia y no ofrece datos sobre el entrenamiento o la procedencia de los pesos fusionados. El unico tag presente es `region:us`, que indica la region de almacenamiento y no aporta informacion tecnica. Las descargas registradas son 0 y los likes 1, lo que sugiere un uso muy limitado o un repositorio de caracter privado o experimental.
 
@@ -42,7 +42,7 @@ Tampoco consta el volumen de tokens de entrenamiento, la composicion del dataset
 - Investigacion sobre tecnicas de model merging: util para reproducir o auditar una fusion concreta, cargando los pesos en un entorno aislado y midiendo degradacion o mejora respecto a los originales.
 - Prototipado experimental en local: si los pesos resultan compatibles con llama.cpp o vLLM tras la conversion adecuada, podrian emplearse en entornos de desarrollo sin requisitos de produccion.
 - Analisis forense de pesos: permite estudiar diferencias de distribucion de pesos respecto a los modelos de origen para detectar artefactos de la fusion.
-- Docencia y formacion: como ejemplo practico de repositorio sin model card, para ilustrar la importancia de documentar artefactos en HuggingFace.
+- Docencia y formacion: como ejemplo practico de repositorio sin model card, para ilustrar la importancia de documentar artefactos en Hugging Face.
 - No se recomienda su uso en atencion al cliente, generacion de codigo en produccion, agentes autonomos ni ninguna aplicacion con requisitos de calidad, ya que no hay evidencia de capacidades ni de licencia que lo permita.
 
 ## Benchmarks y rendimiento
@@ -74,5 +74,5 @@ No disponible. Al no conocerse la arquitectura, el tamano ni las capacidades del
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Buattensorart2/merged_models
+- Repositorio en Hugging Face: https://huggingface.co/Buattensorart2/merged_models
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

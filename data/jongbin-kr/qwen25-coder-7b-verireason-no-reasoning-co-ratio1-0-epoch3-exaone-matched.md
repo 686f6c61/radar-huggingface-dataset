@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento comparativo. La comparación se limita a c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Jongbin-kr/qwen25-coder-7b-verireason-no-reasoning-co-ratio1.0-epoch3-exaone-matched
+- Repositorio Hugging Face: https://huggingface.co/Jongbin-kr/qwen25-coder-7b-verireason-no-reasoning-co-ratio1.0-epoch3-exaone-matched
 - Modelo base Qwen2.5-Coder-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-Coder-7B
 - Variante similar del mismo autor: https://huggingface.co/Jongbin-kr/qwen2.5-coder-7b-verireason-official-settings-no_reasoning-jongbin
 - Página de despliegue en FriendliAI (variante con razonamiento): https://friendli.ai/models/Jongbin-kr/qwen2.5-coder-7b-verireason_sft-reasoning_official-full-ft

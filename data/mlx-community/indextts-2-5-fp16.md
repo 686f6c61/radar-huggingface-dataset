@@ -72,7 +72,7 @@ No se dispone de datos suficientes para establecer una comparativa rigurosa con 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mlx-community/IndexTTS-2.5-fp16
+- Modelo en Hugging Face: https://huggingface.co/mlx-community/IndexTTS-2.5-fp16
 - Modelo original: https://huggingface.co/IndexTeam/IndexTTS-2.5
 - Informe técnico de IndexTTS 2.5: https://index-tts.github.io/index-tts2-5.github.io/
 - Repositorio Python-MLX (vanch007): https://github.com/vanch007/mlx-indextts2

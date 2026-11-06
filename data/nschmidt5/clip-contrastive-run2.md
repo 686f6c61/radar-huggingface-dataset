@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nschmidt5/clip-contrastive-run2` es un repositorio de HuggingFace publicado por el usuario nschmidt5 que contiene una implementación funcional de CLIP (Contrastive Language-Image Pretraining) orientada a entrenamiento contrastivo, con una configuración de escala "small". No se trata de un modelo entrenado ni evaluado, sino de un punto de partida reproducible: el propio autor indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con benchmarks.
+`nschmidt5/clip-contrastive-run2` es un repositorio de Hugging Face publicado por el usuario nschmidt5 que contiene una implementación funcional de CLIP (Contrastive Language-Image Pretraining) orientada a entrenamiento contrastivo, con una configuración de escala "small". No se trata de un modelo entrenado ni evaluado, sino de un punto de partida reproducible: el propio autor indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con benchmarks.
 
 El interés del repositorio es principalmente de ingeniería y docencia: código transparente, configuración generada (`config.json`), receta de experimento por defecto (`training_args.json`) y un script `train.py` con bloque `__main__` ejecutable. La model card omite deliberadamente cualquier afirmación de rendimiento y recomienda evaluar sobre un conjunto retenido específico de la tarea, con al menos tres semillas y una línea base de capacidad equivalente.
 
@@ -72,9 +72,9 @@ Las cifras de las alternativas son valores de referencia publica ampliamente dif
 
 | Modelo | Parametros | Contexto (texto) | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nschmidt5/clip-contrastive-run2 | 49.600 | no disponible | sin benchmarks declarados; checkpoint sin entrenar | bsd-3-clause | HuggingFace, 0 descargas |
+| nschmidt5/clip-contrastive-run2 | 49.600 | no disponible | sin benchmarks declarados; checkpoint sin entrenar | bsd-3-clause | Hugging Face, 0 descargas |
 | CLIP ViT-B/32 (OpenAI) | 151 millones (86 millones en el encoder de vision) | 77 tokens | zero-shot ImageNet en torno al 63 por ciento | MIT | ampliamente disponible |
-| OpenCLIP ViT-B/32 (LAION) | orden de 151 millones | 77 tokens | variantes con rendimiento cercano o superior a CLIP ViT-B/32 segun checkpoint | MIT y otras segun variante | HuggingFace y repositorio propio |
+| OpenCLIP ViT-B/32 (LAION) | orden de 151 millones | 77 tokens | variantes con rendimiento cercano o superior a CLIP ViT-B/32 segun checkpoint | MIT y otras segun variante | Hugging Face y repositorio propio |
 
 La comparacion relevante no es de rendimiento, sino de proposito: los modelos citados son checkpoints entrenados y evaluados, mientras que este repositorio es una implementacion de referencia con un checkpoint de inicializacion.
 
@@ -92,7 +92,7 @@ La comparacion relevante no es de rendimiento, sino de proposito: los modelos ci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nschmidt5/clip-contrastive-run2
+- Modelo en Hugging Face: https://huggingface.co/nschmidt5/clip-contrastive-run2
 - Paper de CLIP (Radford et al., 2021): https://arxiv.org/abs/2103.00020
 - Repositorio OpenCLIP: https://github.com/mlfoundations/open_clip
 - No se han encontrado otros enlaces relevantes en la busqueda web realizada; los resultados devueltos no guardaban relacion con el modelo.

@@ -86,8 +86,8 @@ La comparativa se limita a la arquitectura y características, ya que no hay dat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Prannesshkva/Phantom-Falcon-7B
+- Modelo en Hugging Face: https://huggingface.co/Prannesshkva/Phantom-Falcon-7B
 - DOI Zenodo (artículo principal): https://doi.org/10.5281/zenodo.22177116
 - DOI Zenodo (artículo adicional): https://doi.org/10.5281/zenodo.22177118
-- Space de HuggingFace (demo): https://huggingface.co/spaces/Prannesshkva/Phantom-Samba-Engine
+- Space de Hugging Face (demo): https://huggingface.co/spaces/Prannesshkva/Phantom-Samba-Engine
 - Modelo base Falcon-Mamba-7B: https://huggingface.co/tiiuae/falcon-mamba-7b

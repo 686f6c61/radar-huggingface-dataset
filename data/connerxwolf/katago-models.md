@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`ConnerXwolf/katago-models` es un repositorio de HuggingFace publicado por el usuario ConnerXwolf bajo licencia MIT. El repositorio no contiene una model card descriptiva: el README se limita a declarar la licencia y no aporta informacion sobre arquitectura, entrenamiento, capacidades ni uso previsto. Por el nombre del repositorio, el contenido parece relacionado con KataGo, el motor de Go de codigo abierto basado en redes neuronales, aunque esta asociacion no se confirma en la informacion disponible.
+`ConnerXwolf/katago-models` es un repositorio de Hugging Face publicado por el usuario ConnerXwolf bajo licencia MIT. El repositorio no contiene una model card descriptiva: el README se limita a declarar la licencia y no aporta informacion sobre arquitectura, entrenamiento, capacidades ni uso previsto. Por el nombre del repositorio, el contenido parece relacionado con KataGo, el motor de Go de codigo abierto basado en redes neuronales, aunque esta asociacion no se confirma en la informacion disponible.
 
-El repositorio tiene un tamano de 0,2 GB, lo que es coherente con pesos de red neuronal de un motor de juego y no con un modelo de lenguaje de gran escala. No se dispone de datos sobre parametros, longitud de contexto, idiomas soportados, formato de pesos ni pipeline de HuggingFace. El repositorio registra 0 descargas y 0 likes en el momento de la consulta.
+El repositorio tiene un tamano de 0,2 GB, lo que es coherente con pesos de red neuronal de un motor de juego y no con un modelo de lenguaje de gran escala. No se dispone de datos sobre parametros, longitud de contexto, idiomas soportados, formato de pesos ni pipeline de Hugging Face. El repositorio registra 0 descargas y 0 likes en el momento de la consulta.
 
 Dada la ausencia de documentacion tecnica, esta ficha se limita a reflejar los metadatos disponibles y a marcar explicitamente como no disponibles todos los datos que no aparecen en la informacion proporcionada. No debe interpretarse como una ficha de un modelo de lenguaje generativo.
 
@@ -25,7 +25,7 @@ Datos adicionales de metadatos:
 
 | Parametro | Valor |
 |---|---|
-| Identificador en HuggingFace | ConnerXwolf/katago-models |
+| Identificador en Hugging Face | ConnerXwolf/katago-models |
 | Autor | ConnerXwolf |
 | Tamano del repositorio | 0,2 GB |
 | Pipeline declarado | no disponible |
@@ -87,5 +87,5 @@ No disponible. No se conocen modelos comparables identificables a partir de la i
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ConnerXwolf/katago-models
+- Repositorio en Hugging Face: https://huggingface.co/ConnerXwolf/katago-models
 - No se han encontrado en la busqueda web otros enlaces (papers, blogs, repositorios o demos) asociados a este repositorio.

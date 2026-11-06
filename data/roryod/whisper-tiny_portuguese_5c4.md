@@ -2,7 +2,7 @@
 
 ## Resumen
 
-whisper-tiny_portuguese_5c4 es un ajuste fino (fine-tune) del modelo openai/whisper-tiny para reconocimiento automático del habla, publicado por el usuario roryod en HuggingFace. Se trata de un modelo de la familia Whisper, con arquitectura transformer encoder-decoder orientada a la transcripción de audio, y un total de 37.760.640 parámetros reales según los pesos en safetensors. El entrenamiento se realizó sobre el dataset denominado "portuguese_english", cuyo contenido y composición no se detallan en la model card, partiendo del checkpoint original de OpenAI.
+whisper-tiny_portuguese_5c4 es un ajuste fino (fine-tune) del modelo openai/whisper-tiny para reconocimiento automático del habla, publicado por el usuario roryod en Hugging Face. Se trata de un modelo de la familia Whisper, con arquitectura transformer encoder-decoder orientada a la transcripción de audio, y un total de 37.760.640 parámetros reales según los pesos en safetensors. El entrenamiento se realizó sobre el dataset denominado "portuguese_english", cuyo contenido y composición no se detallan en la model card, partiendo del checkpoint original de OpenAI.
 
 El modelo declara un único idioma soportado (inglés, "en") pese a que el nombre del dataset de entrenamiento sugiere una mezcla de portugués e inglés, lo que constituye una ambigüedad relevante que el autor no aclara. El resultado principal reportado es un WER de 11,836 sobre el split de test del citado dataset, con una pérdida de validación de 0,2546; ambos valores están declarados por el autor y no han sido verificados de forma independiente.
 
@@ -74,16 +74,16 @@ No se han publicado resultados de benchmarks en la información disponible para 
 
 | Modelo | Parámetros | Contexto de audio | WER reportado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| roryod/whisper-tiny_portuguese_5c4 | 37.760.640 | Ventanas de 30 s (familia Whisper) | 11,836 en portuguese_english (no verificado) | Apache 2.0 | HuggingFace, 0 descargas |
-| openai/whisper-tiny | ~37,8 M | Ventanas de 30 s | No disponible para este dataset | Apache 2.0 | HuggingFace, ampliamente utilizado |
-| openai/whisper-base | ~74 M | Ventanas de 30 s | No disponible para este dataset | Apache 2.0 | HuggingFace |
-| openai/whisper-small | ~244 M | Ventanas de 30 s | No disponible para este dataset | Apache 2.0 | HuggingFace |
+| roryod/whisper-tiny_portuguese_5c4 | 37.760.640 | Ventanas de 30 s (familia Whisper) | 11,836 en portuguese_english (no verificado) | Apache 2.0 | Hugging Face, 0 descargas |
+| openai/whisper-tiny | ~37,8 M | Ventanas de 30 s | No disponible para este dataset | Apache 2.0 | Hugging Face, ampliamente utilizado |
+| openai/whisper-base | ~74 M | Ventanas de 30 s | No disponible para este dataset | Apache 2.0 | Hugging Face |
+| openai/whisper-small | ~244 M | Ventanas de 30 s | No disponible para este dataset | Apache 2.0 | Hugging Face |
 
 La comparación cuantitativa con alternativas no es posible con la información disponible: no se han publicado métricas de whisper-tiny, whisper-base ni whisper-small sobre el dataset "portuguese_english", ni el autor compara su resultado con el checkpoint base. La única ventaja diferencial verificable de este modelo frente al base es el ajuste declarado sobre un dominio bilingüe portugués-inglés, con un WER de 11,836 que no puede contextualizarse sin una línea base.
 
 ## Limitaciones y advertencias
 
-- Model card generada automáticamente por el Trainer de HuggingFace: las secciones "Model description", "Intended uses & limitations" y "Training and evaluation data" contienen literalmente "More information needed". No hay documentación sobre el dominio, la calidad ni la procedencia del dataset.
+- Model card generada automáticamente por el Trainer de Hugging Face: las secciones "Model description", "Intended uses & limitations" y "Training and evaluation data" contienen literalmente "More information needed". No hay documentación sobre el dominio, la calidad ni la procedencia del dataset.
 - Ambigüedad lingüística: el nombre del modelo y del dataset indican portugués e inglés, pero el campo `language` solo declara "en". No se especifica si el modelo transcribe portugués con calidad aceptable.
 - WER de 11,836 no verificado (`verified: false`) y sin línea base del modelo original, por lo que no se puede afirmar que el fine-tune mejore al checkpoint de partida.
 - Dataset pequeño inferido (del orden de 2.170 muestras por época, cálculo derivado de los pasos y el batch, no declarado): alto riesgo de sobreajuste y de generalización pobre fuera del dominio de entrenamiento.
@@ -96,7 +96,7 @@ La comparación cuantitativa con alternativas no es posible con la información 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/roryod/whisper-tiny_portuguese_5c4
+- Modelo en Hugging Face: https://huggingface.co/roryod/whisper-tiny_portuguese_5c4
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Repositorio de referencia de la familia Whisper (no verificado en la búsqueda): https://github.com/openai/whisper
 - Dataset "portuguese_english": no disponible (no se proporciona enlace en la model card)

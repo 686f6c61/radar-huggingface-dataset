@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| dothang254/math_V3 | 7B | No disponible | No disponible | HuggingFace |
-| DeepSeek-R1-Distill-Qwen-7B | 7B | 32k | MIT | HuggingFace |
-| OpenMath-Mistral-7B | 7B | 32k | Apache 2.0 | HuggingFace |
+| dothang254/math_V3 | 7B | No disponible | No disponible | Hugging Face |
+| DeepSeek-R1-Distill-Qwen-7B | 7B | 32k | MIT | Hugging Face |
+| OpenMath-Mistral-7B | 7B | 32k | Apache 2.0 | Hugging Face |
 
 La comparativa se limita al modelo base y a un fine-tune matematico popular. `math_V3` no ofrece informacion publica sobre su rendimiento, por lo que no se puede establecer una comparacion cuantitativa. Su principal diferencia es el origen (unsloth 4-bit) y el tamano reducido del repositorio, lo que facilita su descarga y despliegue.
 
@@ -75,7 +75,7 @@ La comparativa se limita al modelo base y a un fine-tune matematico popular. `ma
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/dothang254/math_V3)
+- [Modelo en Hugging Face](https://huggingface.co/dothang254/math_V3)
 - [Modelo base (unsloth/DeepSeek-R1-Distill-Qwen-7B-unsloth-bnb-4bit)](https://huggingface.co/unsloth/DeepSeek-R1-Distill-Qwen-7B-unsloth-bnb-4bit)
 - [DeepSeek-R1-Distill-Qwen-7B original](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B)
 - [Libreria TRL](https://github.com/huggingface/trl)

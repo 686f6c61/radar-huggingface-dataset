@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Klyrune-2B-General-2-Math-GGUF es la version cuantizada en formato GGUF del modelo Jahirrrr/Klyrune-2B-General-2-Math, publicada por el usuario mradermacher, conocido en HuggingFace por generar cuantizaciones estaticas de modelos de terceros. El modelo base cuenta con 2.516.756.480 parametros (aproximadamente 2,5 mil millones), lo que lo situa en la categoria de modelos pequenos, aptos para inferencia en hardware de consumo. El nombre sugiere una especializacion en matematicas sobre una base de proposito general, aunque la model card del repositorio no documenta el proceso de entrenamiento.
+Klyrune-2B-General-2-Math-GGUF es la version cuantizada en formato GGUF del modelo Jahirrrr/Klyrune-2B-General-2-Math, publicada por el usuario mradermacher, conocido en Hugging Face por generar cuantizaciones estaticas de modelos de terceros. El modelo base cuenta con 2.516.756.480 parametros (aproximadamente 2,5 mil millones), lo que lo situa en la categoria de modelos pequenos, aptos para inferencia en hardware de consumo. El nombre sugiere una especializacion en matematicas sobre una base de proposito general, aunque la model card del repositorio no documenta el proceso de entrenamiento.
 
 El repositorio no aporta informacion sobre arquitectura, longitud de contexto, composicion del dataset ni licencia. La model card se limita a describir el proceso de cuantizacion y a listar los ficheros generados, e incluye la etiqueta `conversational` y el idioma declarado `en` (ingles). No consta ninguna publicacion de benchmarks, demos ni documentacion adicional por parte del autor de la cuantizacion ni del autor del modelo base.
 
@@ -32,7 +32,7 @@ Su relevancia practica reside en que permite ejecutar un modelo conversacional d
 
 No se ha publicado informacion sobre la arquitectura del modelo base en la documentacion disponible. Por el numero de parametros (2,5B) y el uso declarado de la libreria `transformers` con etiqueta `conversational`, cabe esperar un transformer decoder de tipo autoregresivo, pero esto no esta confirmado por ninguna fuente del repositorio. Tampoco se especifican la dimension oculta, el numero de capas, el numero de cabezas de atencion ni el tipo de tokenizador.
 
-Respecto al entrenamiento, no hay datos sobre el numero de tokens utilizados, la composicion del dataset, la existencia de fases de ajuste fino supervisado, RLHF o DPO. El nombre del modelo incluye "Math", lo que sugiere un ajuste orientado a tareas matematicas, pero no se documenta ni el corpus ni el metodo. Lo unico verificable es el proceso de cuantizacion aplicado por mradermacher: cuantizacion estatica de los tensores de salida partiendo de los pesos en formato HuggingFace, con soporte de 12 variantes que van de 1,1 GB (Q2_K) a 5,1 GB (f16). El autor indica que no hay cuantizaciones ponderadas con imatrix disponibles en el momento de la publicacion, y que podrian no llegar a publicarse.
+Respecto al entrenamiento, no hay datos sobre el numero de tokens utilizados, la composicion del dataset, la existencia de fases de ajuste fino supervisado, RLHF o DPO. El nombre del modelo incluye "Math", lo que sugiere un ajuste orientado a tareas matematicas, pero no se documenta ni el corpus ni el metodo. Lo unico verificable es el proceso de cuantizacion aplicado por mradermacher: cuantizacion estatica de los tensores de salida partiendo de los pesos en formato Hugging Face, con soporte de 12 variantes que van de 1,1 GB (Q2_K) a 5,1 GB (f16). El autor indica que no hay cuantizaciones ponderadas con imatrix disponibles en el momento de la publicacion, y que podrian no llegar a publicarse.
 
 ## Capacidades
 
@@ -59,7 +59,7 @@ Respecto al entrenamiento, no hay datos sobre el numero de tokens utilizados, la
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del repositorio GGUF ni los metadatos de HuggingFace incluyen valores de MMLU, GSM8K, HumanEval, ARC, HellaSwag ni de perplexidad para ninguna de las cuantizaciones. Tampoco se ofrecen mediciones de latencia o throughput.
+No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del repositorio GGUF ni los metadatos de Hugging Face incluyen valores de MMLU, GSM8K, HumanEval, ARC, HellaSwag ni de perplexidad para ninguna de las cuantizaciones. Tampoco se ofrecen mediciones de latencia o throughput.
 
 ## Requisitos de hardware
 
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Ni la
   - f16 (5,1 GB): ~6 GB; el propio autor lo califica de "overkill" para este tamano.
 - GPU recomendadas: cualquier GPU con 4 GB o mas de VRAM es suficiente para las cuantizaciones de 4 bits (GTX 1650, RTX 3050, RTX 4060, Tesla T4). Para f16 se recomienda al menos 8 GB (RTX 3060 Ti, RTX 2070, RTX 4060 Ti).
 - Caben en GPU de consumo: si, en practicamente todas las GPU modernas con 4 GB o mas. Tambien es viable la inferencia hibrida GPU/CPU y la inferencia pura en CPU.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui (oobabooga), llama-cpp-python, kobold.cpp y servidores compatibles con GGUF. La etiqueta `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints, aunque vLLM y TGI tienen soporte limitado o experimental de GGUF.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui (oobabooga), llama-cpp-python, kobold.cpp y servidores compatibles con GGUF. La etiqueta `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints, aunque vLLM y TGI tienen soporte limitado o experimental de GGUF.
 - Latencia y throughput: no disponibles. No se han publicado mediciones y dependeran en gran medida del hardware, la cuantizacion y la longitud de contexto utilizada.
 
 ## Comparativa con modelos similares
@@ -106,7 +106,7 @@ En terminos de tamano, el modelo se situa en el rango de Gemma 2 2B y SmolLM2-1.
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/Klyrune-2B-General-2-Math-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/Klyrune-2B-General-2-Math-GGUF
 - Modelo base: https://huggingface.co/Jahirrrr/Klyrune-2B-General-2-Math
 - Pagina de resumen del cuantizador para este modelo: https://hf.tst.eu/model#Klyrune-2B-General-2-Math-GGUF
 - Guia de uso de ficheros GGUF (referencia de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

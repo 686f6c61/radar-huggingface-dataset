@@ -39,7 +39,7 @@ La innovación técnica del artefacto es la propia fusión: se aplica un promedi
 
 - Generación de texto autoregresiva, según el pipeline declarado (`text-generation`).
 - Uso conversacional: la etiqueta `conversational` sugiere que el linaje de checkpoints fue ajustado para diálogo, aunque no se especifica el formato de prompt ni las plantillas de chat.
-- Compatibilidad con `transformers`, `text-generation-inference` y `endpoints_compatible`, es decir, se puede servir con el stack estándar de HuggingFace.
+- Compatibilidad con `transformers`, `text-generation-inference` y `endpoints_compatible`, es decir, se puede servir con el stack estándar de Hugging Face.
 - Tool calling / function calling: no documentado; no hay evidencia de que el modelo haya sido entrenado para ello.
 - Capacidades de agente o razonamiento multi-paso: no documentadas.
 - Capacidades multilingües: no documentadas; los idiomas soportados figuran como no disponibles.
@@ -77,10 +77,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este modelo (sfm_filtered_e2e_insert_hyperstition_v1, merge) | 6,86B | No disponible | No disponible | HuggingFace, safetensors bf16 | Merge lineal de 5 checkpoints, sin benchmarks ni model card detallada |
-| Pythia-6.9B | 6,86B | 2048 tokens | Apache 2.0 | HuggingFace, safetensors | Arquitectura GPT-NeoX, entrenado sobre The Pile, con checkpoints intermedios publicados |
-| GPT-J-6B | 6B | 2048 tokens | Apache 2.0 | HuggingFace, safetensors | Arquitectura GPT-J, base de muchos ajustes comunitarios |
-| Llama 2 7B | 6,74B | 4096 tokens | Llama 2 Community License | HuggingFace, safetensors | Arquitectura Llama, ampliamente soportado por vLLM, llama.cpp y TGI |
+| Este modelo (sfm_filtered_e2e_insert_hyperstition_v1, merge) | 6,86B | No disponible | No disponible | Hugging Face, safetensors bf16 | Merge lineal de 5 checkpoints, sin benchmarks ni model card detallada |
+| Pythia-6.9B | 6,86B | 2048 tokens | Apache 2.0 | Hugging Face, safetensors | Arquitectura GPT-NeoX, entrenado sobre The Pile, con checkpoints intermedios publicados |
+| GPT-J-6B | 6B | 2048 tokens | Apache 2.0 | Hugging Face, safetensors | Arquitectura GPT-J, base de muchos ajustes comunitarios |
+| Llama 2 7B | 6,74B | 4096 tokens | Llama 2 Community License | Hugging Face, safetensors | Arquitectura Llama, ampliamente soportado por vLLM, llama.cpp y TGI |
 
 Los datos de los modelos comparativos proceden de su documentación pública y se incluyen como referencia de categoría. Para este modelo no hay información que permita comparar rendimiento real, ya que no se han publicado evaluaciones.
 
@@ -99,8 +99,8 @@ Los datos de los modelos comparativos proceden de su documentación pública y s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-7k_8k_9k_10k_11k_weightedavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-7k_8k_9k_10k_11k_weightedavg_merge
 - mergekit (herramienta de fusión): https://github.com/cg123/mergekit
 - Artículo del método Linear merge / Model soups: https://arxiv.org/abs/2203.05482
-- Perfil del autor en HuggingFace: https://huggingface.co/yuhengtu-bytedance
+- Perfil del autor en Hugging Face: https://huggingface.co/yuhengtu-bytedance
 - Otros enlaces (papers, blogs, repos, demos) asociados específicamente a este modelo: no disponibles en la información proporcionada.

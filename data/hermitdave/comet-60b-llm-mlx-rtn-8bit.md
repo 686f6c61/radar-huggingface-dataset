@@ -18,7 +18,7 @@ Es relevante para desarrolladores que trabajan en inferencia local sobre macOS: 
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | 8 bits RTN uniforme, group size 64, modo affine, ~8,5 bits por peso; conv1d, gates de router MoE y RMSNorm en BF16 |
 | Idiomas soportados | inglés (en) |
-| Licencia | OpenMDW-1.1 (etiquetada como «other» en los metadatos de HuggingFace) |
+| Licencia | OpenMDW-1.1 (etiquetada como «other» en los metadatos de Hugging Face) |
 | Formato de pesos | safetensors cuantizados para MLX (librería mlx) |
 | Expertos enrutados | 256 por capa MoE |
 | Tamano del artefacto | ~58 GB de pesos; 62,6 GB de repositorio |
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento de ninguno de los dos modelos, por lo que 
 - Degradación por cuantización: el esquema RTN de 8 bits con group size 64 es más agresivo que una cuantización con calibración; se espera cierta pérdida frente al BF16 original, no medida.
 - Riesgo de alucinación: inherente a cualquier LLM de esta familia; sin datos de evaluación no se puede acotar su magnitud.
 - Longitud de contexto desconocida: no se puede planificar su uso en tareas de contexto largo sin verificación empírica previa.
-- Licencia OpenMDW-1.1: es una licencia de modelo abierto, pero conviene revisar sus términos exactos (https://openmdw.ai/license/1-1/) antes de un uso comercial; los metadatos de HuggingFace la etiquetan genéricamente como «other».
+- Licencia OpenMDW-1.1: es una licencia de modelo abierto, pero conviene revisar sus términos exactos (https://openmdw.ai/license/1-1/) antes de un uso comercial; los metadatos de Hugging Face la etiquetan genéricamente como «other».
 - Dependencia de plataforma: el formato MLX limita la inferencia a Apple Silicon; no es portable a CUDA sin reconversión.
 - Validación comunitaria nula: 0 descargas y 0 likes en el momento de la consulta, publicada el 2026-10-18; no hay reportes independientes de funcionamiento ni de calidad.
 - Trazabilidad del proceso: la cuantización la firma una herramienta automatizada (Hermes Agent) sobre una máquina de 64 GB, sin scripts de reproducción ni receta publicada más allá de los parámetros indicados.
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento de ninguno de los dos modelos, por lo que 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hermitdave/Comet-60B-LLM-MLX-rtn-8bit
+- Modelo en Hugging Face: https://huggingface.co/hermitdave/Comet-60B-LLM-MLX-rtn-8bit
 - Modelo base (Comet 60B BF16): https://huggingface.co/MultiverseComputingCAI/Comet_60B_A12B_BF16
 - Licencia OpenMDW-1.1: https://openmdw.ai/license/1-1/
 - Hermes Agent (herramienta de cuantización citada por el autor): https://hermes-agent.nousresearch.com

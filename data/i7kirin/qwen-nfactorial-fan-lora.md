@@ -70,10 +70,10 @@ La comparación se hace contra alternativas de la misma categoría (modelos dens
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| i7kirin/qwen-nfactorial-fan-lora | 1,5B (base) + LoRA | No declarado (base: 32.768) | Apache 2.0 | HuggingFace, 0 descargas | Sin benchmarks publicados |
-| Qwen2.5-1.5B-Instruct | 1,5B | 32.768 (131.072 con YaRN) | Apache 2.0 | HuggingFace, ampliamente usado | Benchmarks publicados por el autor del base |
-| Llama-3.2-1B-Instruct | 1,2B | 131.072 | Llama 3.2 Community License | HuggingFace, muy extendido | Benchmarks publicados por Meta |
-| SmolLM2-1.7B-Instruct | 1,7B | 8.192 | Apache 2.0 | HuggingFace, ampliamente usado | Benchmarks publicados por HuggingFace |
+| i7kirin/qwen-nfactorial-fan-lora | 1,5B (base) + LoRA | No declarado (base: 32.768) | Apache 2.0 | Hugging Face, 0 descargas | Sin benchmarks publicados |
+| Qwen2.5-1.5B-Instruct | 1,5B | 32.768 (131.072 con YaRN) | Apache 2.0 | Hugging Face, ampliamente usado | Benchmarks publicados por el autor del base |
+| Llama-3.2-1B-Instruct | 1,2B | 131.072 | Llama 3.2 Community License | Hugging Face, muy extendido | Benchmarks publicados por Meta |
+| SmolLM2-1.7B-Instruct | 1,7B | 8.192 | Apache 2.0 | Hugging Face, ampliamente usado | Benchmarks publicados por Hugging Face |
 
 No es posible comparar rendimiento de forma directa porque el adaptador no publica ninguna métrica, y su comportamiento depende del dataset de fine-tuning, que tampoco está documentado.
 
@@ -92,7 +92,7 @@ No es posible comparar rendimiento de forma directa porque el adaptador no publi
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/i7kirin/qwen-nfactorial-fan-lora
+- Ficha en Hugging Face: https://huggingface.co/i7kirin/qwen-nfactorial-fan-lora
 - Modelo base: https://huggingface.co/unsloth/qwen2.5-1.5b-instruct-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - No se han encontrado papers, blogs, repositorios adicionales ni demos asociados al modelo en la búsqueda web realizada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`fse/paranmt-300-raw-int8` es una version cuantizada a int8 de un modelo de embeddings estaticos derivado de ParaNMT, publicado por el autor `fse` en HuggingFace. No es un transformer generativo: es una tabla de embeddings de palabras de 77.224 filas por 300 dimensiones almacenada en enteros de 8 bits, sobre la que se calcula un vector de frase como la media de los vectores de sus tokens, normalizada a longitud unitaria. El modelo base es `fse/paranmt-300`, un modelo de gensim convertido desde el ParaNMT original de Wieting et al. (2018).
+`fse/paranmt-300-raw-int8` es una version cuantizada a int8 de un modelo de embeddings estaticos derivado de ParaNMT, publicado por el autor `fse` en Hugging Face. No es un transformer generativo: es una tabla de embeddings de palabras de 77.224 filas por 300 dimensiones almacenada en enteros de 8 bits, sobre la que se calcula un vector de frase como la media de los vectores de sus tokens, normalizada a longitud unitaria. El modelo base es `fse/paranmt-300`, un modelo de gensim convertido desde el ParaNMT original de Wieting et al. (2018).
 
 El modelo resuelve el problema de obtener representaciones de frases y palabras de forma extremadamente barata en computo: no requiere GPU ni inferencia neuronal, solo una tabla de lookup y una media. Esto lo hace relevante para sistemas de recuperacion, deduplicacion y busqueda semantica a gran escala donde el coste por documento es critico y la calidad de un embedding denso moderno no es imprescindible.
 
@@ -99,7 +99,7 @@ La comparacion directa con modelos tipo MiniLM no es equivalente: aquellos son t
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fse/paranmt-300-raw-int8
+- Modelo en Hugging Face: https://huggingface.co/fse/paranmt-300-raw-int8
 - Modelo base: https://huggingface.co/fse/paranmt-300
 - Repositorio fse (Fast Sentence Embeddings): https://github.com/oborchers/Fast_Sentence_Embeddings
 - Issues del repositorio (solicitudes de retirada): https://github.com/oborchers/Fast_Sentence_Embeddings/issues

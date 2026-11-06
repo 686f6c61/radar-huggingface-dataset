@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nalizerya/translator es un modelo publicado en HuggingFace por el usuario Nalizerya bajo licencia Apache 2.0. La model card asociada esta practicamente vacia: unicamente declara la licencia, sin informacion sobre arquitectura, tamano, datos de entrenamiento, idiomas o uso previsto. El nombre del repositorio sugiere que se trata de un modelo orientado a traduccion automatica, pero esta finalidad no se confirma en ningun momento en la documentacion disponible.
+Nalizerya/translator es un modelo publicado en Hugging Face por el usuario Nalizerya bajo licencia Apache 2.0. La model card asociada esta practicamente vacia: unicamente declara la licencia, sin informacion sobre arquitectura, tamano, datos de entrenamiento, idiomas o uso previsto. El nombre del repositorio sugiere que se trata de un modelo orientado a traduccion automatica, pero esta finalidad no se confirma en ningun momento en la documentacion disponible.
 
 El repositorio no incluye pipeline declarado, no tiene descargas ni interacciones (0 descargas, 0 likes) y fue creado y actualizado en la misma fecha (1 de noviembre de 2026), lo que apunta a una publicacion reciente sin validacion por parte de la comunidad. No se dispone de informacion sobre parametros, contexto, formato de pesos ni proceso de entrenamiento.
 
@@ -25,7 +25,7 @@ Por todo ello, esta ficha se limita a documentar lo que la informacion publica p
 
 No se ha publicado informacion sobre la arquitectura del modelo (transformer, MoE, SSM u otra), el numero de parametros, la composicion del dataset de entrenamiento, el volumen de tokens procesados ni si se aplicaron tecnicas de alineacion como RLHF o DPO. La model card no contiene ningun apartado tecnico mas alla de la declaracion de licencia.
 
-Tampoco se documentan innovaciones tecnicas destacables (atencion lineal, decodificacion especulativa, modos de razonamiento, etc.) ni el proceso de tokenizacion. El unico metadato disponible en HuggingFace es la etiqueta regional `region:us`, que no aporta informacion sobre el contenido del modelo.
+Tampoco se documentan innovaciones tecnicas destacables (atencion lineal, decodificacion especulativa, modos de razonamiento, etc.) ni el proceso de tokenizacion. El unico metadato disponible en Hugging Face es la etiqueta regional `region:us`, que no aporta informacion sobre el contenido del modelo.
 
 ## Capacidades
 
@@ -75,5 +75,5 @@ No disponible. Al desconocerse el tamano, la arquitectura y la tarea concreta de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Nalizerya/translator
+- Hugging Face: https://huggingface.co/Nalizerya/translator
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion proporcionada.

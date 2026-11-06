@@ -108,7 +108,7 @@ La comparacion cuantitativa con cualquiera de estas alternativas queda pendiente
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/neemon/anlp-a2-part1-moe_active_matched
+- Modelo en Hugging Face: https://huggingface.co/neemon/anlp-a2-part1-moe_active_matched
 - Repositorio de la asignatura con arquitectura, entrenamiento y evaluacion: mencionado en la model card pero no enlazado, no disponible.
 - Paper o informacion tecnica adicional: no disponible.
 - Demo: no disponible.

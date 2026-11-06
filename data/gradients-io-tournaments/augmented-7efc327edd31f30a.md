@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `augmented-7efc327edd31f30a` es un checkpoint de generación de texto publicado por la organización `gradients-io-tournaments` en HuggingFace. Se distribuye como un modelo de la librería `transformers` con pesos en formato `safetensors`, y su arquitectura declarada mediante etiquetas corresponde a la familia Mistral. El recuento real de parámetros extraído de los ficheros de pesos es de 7.241.748.480, lo que lo sitúa en la categoría de modelos densos de aproximadamente 7.000 millones de parámetros, un tamaño habitual para despliegues en una única GPU.
+El modelo `augmented-7efc327edd31f30a` es un checkpoint de generación de texto publicado por la organización `gradients-io-tournaments` en Hugging Face. Se distribuye como un modelo de la librería `transformers` con pesos en formato `safetensors`, y su arquitectura declarada mediante etiquetas corresponde a la familia Mistral. El recuento real de parámetros extraído de los ficheros de pesos es de 7.241.748.480, lo que lo sitúa en la categoría de modelos densos de aproximadamente 7.000 millones de parámetros, un tamaño habitual para despliegues en una única GPU.
 
-La model card publicada es la plantilla automática de HuggingFace y no contiene información sustantiva: ni la descripción del modelo, ni los datos de entrenamiento, ni la licencia, ni los idiomas soportados, ni los resultados de evaluación han sido completados por el autor. El repositorio tiene cero descargas y cero "likes" en el momento de la consulta, y su tamaño es de 14,5 GB, coherente con pesos en precisión de 16 bits (bf16/fp16) para 7.240 millones de parámetros.
+La model card publicada es la plantilla automática de Hugging Face y no contiene información sustantiva: ni la descripción del modelo, ni los datos de entrenamiento, ni la licencia, ni los idiomas soportados, ni los resultados de evaluación han sido completados por el autor. El repositorio tiene cero descargas y cero "likes" en el momento de la consulta, y su tamaño es de 14,5 GB, coherente con pesos en precisión de 16 bits (bf16/fp16) para 7.240 millones de parámetros.
 
 Su relevancia es por tanto limitada y de carácter exploratorio: se trata de un checkpoint opaco, probablemente derivado de una competición o torneo de ajuste fino, sin documentación de trazabilidad. Cualquier uso en producción exige una evaluación empírica propia, ya que no hay garantías declaradas sobre procedencia de datos, sesgos ni condiciones legales de uso comercial.
 
@@ -36,7 +36,7 @@ No hay absolutamente ningún dato sobre el proceso de entrenamiento: ni el núme
 No se han documentado capacidades específicas en la información disponible. A partir de los metadatos y del tamaño del modelo, pueden formularse las siguientes hipótesis, que deben validarse empíricamente:
 
 - Generación de texto en modo conversacional, según el pipeline `text-generation` y la etiqueta `conversational`.
-- Compatibilidad declarada con `text-generation-inference` (TGI) y con HuggingFace Endpoints (`endpoints_compatible`), lo que implica que puede servirse mediante la pila estándar de la librería `transformers`.
+- Compatibilidad declarada con `text-generation-inference` (TGI) y con Hugging Face Endpoints (`endpoints_compatible`), lo que implica que puede servirse mediante la pila estándar de la librería `transformers`.
 - Capacidad de razonamiento, generación de código y matemáticas: no disponible, sin datos publicados.
 - Soporte de tool calling o function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -70,7 +70,7 @@ Las cifras de VRAM que siguen son estimaciones derivadas del recuento de paráme
 - GPU de gama profesional/consumo alta: RTX 4090, RTX 3090, A10G o L4 (todas con 24 GB) pueden alojar el modelo en bf16, aunque con margen ajustado para contextos largos.
 - GPU de consumo media: RTX 3060 de 12 GB o RTX 4070 permiten inferencia en 8 bits; para 4 bits basta con 8 GB de VRAM.
 - CPU: es viable con llama.cpp u Ollama tras convertir los pesos a GGUF, aunque no se publica ninguna conversión oficial y habría que generarla.
-- Opciones de despliegue: `transformers` de forma nativa, `text-generation-inference` (TGI, etiqueta declarada), HuggingFace Endpoints, y potencialmente vLLM. Para llama.cpp u Ollama es necesaria una conversión previa a GGUF que el autor no proporciona.
+- Opciones de despliegue: `transformers` de forma nativa, `text-generation-inference` (TGI, etiqueta declarada), Hugging Face Endpoints, y potencialmente vLLM. Para llama.cpp u Ollama es necesaria una conversión previa a GGUF que el autor no proporciona.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -79,7 +79,7 @@ La comparación se establece con alternativas abiertas de tamaño equivalente (7
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `gradients-io-tournaments/augmented-7efc327edd31f30a` | 7,24 B | No disponible | No disponible | HuggingFace, safetensors, sin cuantizaciones |
+| `gradients-io-tournaments/augmented-7efc327edd31f30a` | 7,24 B | No disponible | No disponible | Hugging Face, safetensors, sin cuantizaciones |
 | Mistral 7B Instruct v0.3 (referencia) | ~7,25 B | 32 768 tokens | Apache 2.0 | Ampliamente disponible, con GGUF y cuantizaciones de la comunidad |
 | Meta Llama 3.1 8B Instruct (referencia) | ~8,03 B | 131 072 tokens | Llama 3.1 Community License | Ampliamente disponible, con GGUF y cuantizaciones oficiales |
 | Qwen2.5 7B Instruct (referencia) | ~7,62 B | 131 072 tokens (32 768 nativo, ampliable con YaRN) | Apache 2.0 (variante 7B) | Ampliamente disponible, con GGUF y cuantizaciones oficiales |
@@ -101,7 +101,7 @@ No hay datos que permitan afirmar que el modelo analizado iguale, supere o quede
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gradients-io-tournaments/augmented-7efc327edd31f30a
+- Modelo en Hugging Face: https://huggingface.co/gradients-io-tournaments/augmented-7efc327edd31f30a
 - Perfil de la organizacion: https://huggingface.co/gradients-io-tournaments
 - Articulo citado en la plantilla de la model card (Lacoste et al., 2019, sobre impacto de carbono): https://arxiv.org/abs/1910.09700
 - Calculador de impacto de aprendizaje automatico (ML CO2 Impact): https://mlco2.github.io/impact

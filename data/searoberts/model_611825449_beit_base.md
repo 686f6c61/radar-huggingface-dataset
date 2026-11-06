@@ -54,8 +54,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 | Modelo | Arquitectura | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | `Searoberts/model_611825449_beit_base` | BEiT base | no disponible | no disponible | CC-BY-4.0 | Solo código `.py` |
-| `microsoft/beit-base-patch16-224` | BEiT base | 86 millones | 224x224 píxeles | MIT | Pesos en HuggingFace |
-| `google/vit-base-patch16-224` | ViT base | 86 millones | 224x224 píxeles | Apache-2.0 | Pesos en HuggingFace |
+| `microsoft/beit-base-patch16-224` | BEiT base | 86 millones | 224x224 píxeles | MIT | Pesos en Hugging Face |
+| `google/vit-base-patch16-224` | ViT base | 86 millones | 224x224 píxeles | Apache-2.0 | Pesos en Hugging Face |
 
 La comparativa se basa en modelos BEiT y ViT de referencia, pero el modelo de Searoberts no proporciona pesos ni benchmarks, por lo que no se puede evaluar su rendimiento real frente a estos.
 
@@ -69,7 +69,7 @@ La comparativa se basa en modelos BEiT y ViT de referencia, pero el modelo de Se
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Searoberts/model_611825449_beit_base
-- Documentación de BEiT en HuggingFace: https://huggingface.co/docs/transformers/model_doc/beit
+- Repositorio Hugging Face: https://huggingface.co/Searoberts/model_611825449_beit_base
+- Documentación de BEiT en Hugging Face: https://huggingface.co/docs/transformers/model_doc/beit
 - Repositorio oficial de BEiT en GitHub (Microsoft): https://github.com/microsoft/unilm/tree/master/beit
 - Ficha de `microsoft/beit-base-finetuned-ade-640-640` en BimAnt: https://zoo.bimant.com/model/22681

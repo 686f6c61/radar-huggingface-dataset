@@ -86,7 +86,7 @@ La principal diferencia entre este modelo y el de Comfy-Org es la eliminación d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/xdkings/Qwen3-VL-32B-Heretic-MiniMax-H3-NVFP4
+- Repositorio Hugging Face: https://huggingface.co/xdkings/Qwen3-VL-32B-Heretic-MiniMax-H3-NVFP4
 - Modelo base (INT8-ConvRot): https://huggingface.co/ethanfel/Qwen3-VL-32B-Ultra-Heretic-MiniMax-H3-ComfyUI-INT8-ConvRot
 - MiniMax-H3 (original): https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Comfy-Org MiniMax-H3 (convenciones y layouts): https://huggingface.co/Comfy-Org/MiniMax-H3

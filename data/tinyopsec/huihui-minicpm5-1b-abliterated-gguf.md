@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Huihui-MiniCPM5-1B-abliterated-GGUF es una distribucion en formato GGUF de un modelo de lenguaje de 1.080.632.832 parametros (aproximadamente 1,08 mil millones) derivado de openbmb/MiniCPM5-1B, publicado por el usuario tinyopsec en HuggingFace. El modelo parte de la version "abliterated" de huihui-ai, es decir, una variante en la que se ha suprimido total o parcialmente el comportamiento de rechazo (refusal) mediante tecnicas de abliteration, y se redistribuye cuantizado con llama.cpp en trece niveles de precision, desde F16 hasta Q2_K.
+Huihui-MiniCPM5-1B-abliterated-GGUF es una distribucion en formato GGUF de un modelo de lenguaje de 1.080.632.832 parametros (aproximadamente 1,08 mil millones) derivado de openbmb/MiniCPM5-1B, publicado por el usuario tinyopsec en Hugging Face. El modelo parte de la version "abliterated" de huihui-ai, es decir, una variante en la que se ha suprimido total o parcialmente el comportamiento de rechazo (refusal) mediante tecnicas de abliteration, y se redistribuye cuantizado con llama.cpp en trece niveles de precision, desde F16 hasta Q2_K.
 
 El problema que resuelve es practico: permite ejecutar un modelo conversacional de la familia MiniCPM en hardware muy modesto (CPU, GPUs de gama de entrada, dispositivos embebidos) sin necesidad de infraestructura de servidor, y sin las restricciones de rechazo que el modelo base aplica por defecto. Al estar en GGUF, es compatible con llama.cpp, Ollama, LM Studio, koboldcpp y cualquier runtime que soporte el formato, lo que reduce la friccion de despliegue a copiar un fichero y lanzar un binario.
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
 | Huihui-MiniCPM5-1B-abliterated-GGUF | ~1,08B | No disponible | Apache 2.0 | GGUF, 13 cuantizaciones | Variante sin censura, 0 descargas |
-| openbmb/MiniCPM5-1B | ~1,08B | No disponible | Apache 2.0 (segun el autor) | Safetensors en HuggingFace | Modelo base con alineacion estandar |
+| openbmb/MiniCPM5-1B | ~1,08B | No disponible | Apache 2.0 (segun el autor) | Safetensors en Hugging Face | Modelo base con alineacion estandar |
 | Qwen2.5-1.5B (referencia) | ~1,54B | ~32k (dato de la ficha publica de la familia) | Apache 2.0 | Safetensors y multiples GGUF de la comunidad | Alternativa consolidada, ecosistema amplio y soporte de tool calling |
 | Llama-3.2-1B (referencia) | ~1,24B | No verificado aqui | Licencia comunitaria Llama 3.2 | Safetensors y GGUF oficiales | Requiere aceptar la licencia; restricciones de uso comercial con marca |
 
@@ -90,8 +90,8 @@ Nota: los datos de las filas marcadas como "referencia" provienen del conocimien
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tinyopsec/Huihui-MiniCPM5-1B-abliterated-GGUF
+- Repositorio Hugging Face: https://huggingface.co/tinyopsec/Huihui-MiniCPM5-1B-abliterated-GGUF
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-1B
-- Modelo abliterated de origen (referenciado en la model card): huihui-ai/Huihui-MiniCPM5-1B-abliterated, en HuggingFace
+- Modelo abliterated de origen (referenciado en la model card): huihui-ai/Huihui-MiniCPM5-1B-abliterated, en Hugging Face
 - llama.cpp: https://github.com/ggml-org/llama.cpp (runtime empleado para generar las cuantizaciones)
 - La busqueda web realizada no devolvio resultados relacionados con el modelo, la familia MiniCPM ni el autor; los enlaces adicionales a papers, blogs, repos o demos no estan disponibles.

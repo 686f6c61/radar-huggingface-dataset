@@ -4,7 +4,7 @@
 
 AIOKiet/lora_envit5-iwslt2015 es un adaptador LoRA publicado por el usuario AIOKiet sobre el modelo base VietAI/envit5-base, un transformer encoder-decoder especializado en traducción inglés-vietnamita. El repositorio contiene unicamente los pesos del adaptador (formato PEFT, libreria `peft` 0.17.1 y `safetensors`), no el modelo completo; el tamano del repositorio es de 0.0 GB y acumula 0 descargas y 0 likes en el momento de la consulta.
 
-El nombre del repositorio sugiere que el adaptador se ha entrenado sobre el corpus IWSLT2015, un conjunto de charlas TED ampliamente utilizado como referencia en traduccion automatica. Sin embargo, la model card publicada es la plantilla por defecto de HuggingFace sin rellenar: todos los campos de descripcion, datos de entrenamiento, hiperparametros, evaluacion y licencia figuran como "[More Information Needed]". Esto limita drasticamente la reproducibilidad y la evaluacion independiente del modelo.
+El nombre del repositorio sugiere que el adaptador se ha entrenado sobre el corpus IWSLT2015, un conjunto de charlas TED ampliamente utilizado como referencia en traduccion automatica. Sin embargo, la model card publicada es la plantilla por defecto de Hugging Face sin rellenar: todos los campos de descripcion, datos de entrenamiento, hiperparametros, evaluacion y licencia figuran como "[More Information Needed]". Esto limita drasticamente la reproducibilidad y la evaluacion independiente del modelo.
 
 Su relevancia actual es acotada: se trata de un ajuste fino de bajo rango (LoRA) orientado a una tarea concreta de traduccion en un par de idiomas minoritario en el ecosistema de modelos abiertos. Resulta util como ejemplo de adaptacion eficiente de un modelo T5 pequeno (la familia EnViT5 ronda los 0.3B parametros segun los modelos relacionados del mismo autor) y como punto de partida para experimentos de traduccion en-vietnamita, pero no debe considerarse un modelo listo para produccion sin validacion adicional.
 
@@ -63,11 +63,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AIOKiet/lora_envit5-iwslt2015 | No disponible (adaptador sobre base de ~0.3B) | No disponible | No publicado | No disponible | HuggingFace, 0 descargas |
-| VietAI/envit5-base (modelo base) | Aproximadamente 0.3B | No disponible | No verificado en esta ficha | No disponible | HuggingFace |
-| VietAI/envit5-translation | Aproximadamente 0.3B | No disponible | Entrenado sobre MTet y PhoMT segun su model card | No disponible | HuggingFace |
-| AIOKiet/envit5-base-iwslt2015-en-vi | 0.3B | No disponible | No publicado | No disponible | HuggingFace, actualizado recientemente |
-| AIOKiet/lora_nllb-iwslt2015 | No disponible (adaptador sobre NLLB) | No disponible | No publicado | No disponible | HuggingFace |
+| AIOKiet/lora_envit5-iwslt2015 | No disponible (adaptador sobre base de ~0.3B) | No disponible | No publicado | No disponible | Hugging Face, 0 descargas |
+| VietAI/envit5-base (modelo base) | Aproximadamente 0.3B | No disponible | No verificado en esta ficha | No disponible | Hugging Face |
+| VietAI/envit5-translation | Aproximadamente 0.3B | No disponible | Entrenado sobre MTet y PhoMT segun su model card | No disponible | Hugging Face |
+| AIOKiet/envit5-base-iwslt2015-en-vi | 0.3B | No disponible | No publicado | No disponible | Hugging Face, actualizado recientemente |
+| AIOKiet/lora_nllb-iwslt2015 | No disponible (adaptador sobre NLLB) | No disponible | No publicado | No disponible | Hugging Face |
 
 La comparacion cuantitativa no es posible con los datos disponibles: ninguno de los modelos listados publica metricas de traduccion en la informacion consultada.
 
@@ -85,7 +85,7 @@ La comparacion cuantitativa no es posible con los datos disponibles: ninguno de 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AIOKiet/lora_envit5-iwslt2015
+- Repositorio Hugging Face: https://huggingface.co/AIOKiet/lora_envit5-iwslt2015
 - Modelo base: https://huggingface.co/VietAI/envit5-base
 - Modelo relacionado del mismo autor: https://huggingface.co/AIOKiet/lora_nllb-iwslt2015
 - Modelo relacionado del mismo autor: https://huggingface.co/AIOKiet/envit5-base-iwslt2015-en-vi

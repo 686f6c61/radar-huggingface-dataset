@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Tipo | Parametros | Estado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vaferreira/contrastive-experiments | ViT tiny para contrastivo | 24.832 | Checkpoint de inicializacion, sin entrenar | bsd-3-clause | HuggingFace |
-| moraleserin/contrastive-v2 | Mae nano para contrastivo | no disponible | Implementacion compacta, no release preentrenado | no disponible | HuggingFace |
+| vaferreira/contrastive-experiments | ViT tiny para contrastivo | 24.832 | Checkpoint de inicializacion, sin entrenar | bsd-3-clause | Hugging Face |
+| moraleserin/contrastive-v2 | Mae nano para contrastivo | no disponible | Implementacion compacta, no release preentrenado | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento para ninguno de los dos repositorios, por lo que la comparacion se limita al tipo de artefacto, la escala y el estado de publicacion. Ambos son implementaciones experimentales de investigacion, no modelos preentrenados listos para produccion.
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento para ninguno de los dos repositorios, por 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vaferreira/contrastive-experiments
+- Hugging Face: https://huggingface.co/vaferreira/contrastive-experiments
 - Repositorio comparable (Mae para Contrastivo): https://huggingface.co/moraleserin/contrastive-v2
 - Contrastive Explanation in AI: https://www.emergentmind.com/topics/contrastive-explanation
 - Contrastive Explanations for Model Interpretability (arXiv 2103.01378): https://arxiv.org/abs/2103.01378

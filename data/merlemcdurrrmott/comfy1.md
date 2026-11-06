@@ -84,7 +84,7 @@ No se dispone de datos verificables en la informacion proporcionada para compara
 ## Limitaciones y advertencias
 
 - El repositorio no contiene una ficha de modelo real: la model card reproduce el README de ComfyUI. No debe interpretarse como un modelo con pesos, parametros o contexto evaluables.
-- No se declara licencia en el repositorio de HuggingFace, lo que impide determinar las condiciones de uso comercial o de redistribucion a partir de esta fuente.
+- No se declara licencia en el repositorio de Hugging Face, lo que impide determinar las condiciones de uso comercial o de redistribucion a partir de esta fuente.
 - El repositorio tiene 0 descargas y 0 likes, y el autor no aporta informacion adicional verificable; no hay garantia de mantenimiento, procedencia ni integridad del contenido subido.
 - El tamano de 97,0 GB y la etiqueta onnx no aclaran que artefactos concretos incluye el repositorio; conviene inspeccionar los archivos antes de descargarlo.
 - Los resultados de busqueda asociados a esta consulta corresponden a foros de Diablo IV y no guardan ninguna relacion con el repositorio, por lo que no aportan informacion tecnica utilizable.
@@ -95,7 +95,7 @@ No se dispone de datos verificables en la informacion proporcionada para compara
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/merlemcdurrrmott/Comfy1
+- Repositorio en Hugging Face: https://huggingface.co/merlemcdurrrmott/Comfy1
 - Sitio web oficial de ComfyUI: https://www.comfy.org/
 - Repositorio de ComfyUI en GitHub: https://github.com/comfyanonymous/ComfyUI
 - Descargas y releases: https://github.com/comfyanonymous/ComfyUI/releases

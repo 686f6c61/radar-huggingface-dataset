@@ -77,7 +77,7 @@ La comparativa se limita a las variantes del mismo autor y al modelo base, ya qu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Atomic-Germ/Qwen3.8-2B-Distill-NPU2
+- Repositorio Hugging Face: https://huggingface.co/Atomic-Germ/Qwen3.8-2B-Distill-NPU2
 - Modelo base (empero-ai/Qwen3.8-2B-Distill): https://huggingface.co/empero-ai/Qwen3.8-2B-Distill
 - Repositorio oficial de Qwen3.8 (GitHub): https://github.com/QwenLM/Qwen3.8
 - Repositorio de destilados de Qwen3.8 (GitHub): https://github.com/47thtechcorner/RayCodes_Qwen3.8Distilled

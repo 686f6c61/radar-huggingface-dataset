@@ -46,7 +46,7 @@ La cuantización aplicada en este repositorio utiliza oQ (oMLX), una herramienta
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de HuggingFace no incluye métricas de evaluación, y la búsqueda web no proporciona datos concretos de rendimiento para esta cuantización específica. Se recomienda consultar la documentación oficial de Qwen3.8-27B para obtener resultados del modelo base sin cuantizar.
+No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de Hugging Face no incluye métricas de evaluación, y la búsqueda web no proporciona datos concretos de rendimiento para esta cuantización específica. Se recomienda consultar la documentación oficial de Qwen3.8-27B para obtener resultados del modelo base sin cuantizar.
 
 ## Requisitos de hardware
 
@@ -71,7 +71,7 @@ No se dispone de datos suficientes para realizar una comparativa fiable. El mode
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ben0112/Qwen3.8-27B-oQ4e
+- Repositorio Hugging Face: https://huggingface.co/ben0112/Qwen3.8-27B-oQ4e
 - Herramienta oQ (oMLX): https://github.com/jundot/omlx
 - Información sobre Qwen3.8-27B (OpenLM.ai): https://openlm.ai/qwen3.8/
 - Especificaciones y requisitos de hardware (YottaLabs): https://www.yottalabs.ai/post/qwen-3-8-27b-specs-hardware-requirements-how-to-run-2026

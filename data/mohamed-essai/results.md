@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mohamed-essai/results` es un modelo publicado en HuggingFace por el usuario mohamed-essai. Por los metadatos disponibles (tag `bert`, pesos en `safetensors` y 109.483.778 parámetros), se trata de un modelo basado en la arquitectura BERT, probablemente un checkpoint derivado de una familia BERT-base (aproximadamente 110 millones de parámetros), aunque no se confirma la variante exacta ni el proceso de ajuste.
+`mohamed-essai/results` es un modelo publicado en Hugging Face por el usuario mohamed-essai. Por los metadatos disponibles (tag `bert`, pesos en `safetensors` y 109.483.778 parámetros), se trata de un modelo basado en la arquitectura BERT, probablemente un checkpoint derivado de una familia BERT-base (aproximadamente 110 millones de parámetros), aunque no se confirma la variante exacta ni el proceso de ajuste.
 
 El repositorio tiene un tamaño de 6,1 GB, lo que resulta desproporcionado para un modelo de 109 millones de parámetros en precisión FP32 (que ocuparía unos 440 MB). Esto sugiere que el repositorio incluye artefactos adicionales (múltiples checkpoints, estados de optimizador, logs de entrenamiento o resultados intermedios), coherente con el nombre `results`. No se dispone de información sobre el pipeline, la licencia, los idiomas soportados ni la finalidad declarada del modelo.
 
@@ -54,17 +54,17 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: aproximadamente 0,5 GB en FP32 (109,5 M parámetros × 4 bytes); unos 0,25 GB en FP16; unos 0,12 GB en INT8.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente para inferencia en FP32; no se requiere hardware de datacenter.
 - Cabe en GPU de consumo: sí, en cualquier GPU consumer moderna (GTX 1650, RTX 3060, RTX 4090, etc.), e incluso en CPU para lotes pequeños.
-- Opciones de despliegue: HuggingFace Transformers, ONNX Runtime, TorchScript; cuantización vía bitsandbytes u ONNX. No hay evidencia de soporte específico en vLLM o llama.cpp (este último no aplica a encoders BERT de forma estándar).
+- Opciones de despliegue: Hugging Face Transformers, ONNX Runtime, TorchScript; cuantización vía bitsandbytes u ONNX. No hay evidencia de soporte específico en vLLM o llama.cpp (este último no aplica a encoders BERT de forma estándar).
 - Latencia y throughput: no disponibles; para un BERT-base típico se esperan latencias de milisegundos por secuencia en GPU moderna, pero no hay mediciones publicadas para este checkpoint.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| mohamed-essai/results | 109,5 M | no disponible | no disponible | HuggingFace (38 descargas) |
-| google-bert/bert-base-uncased | 110 M | 512 tokens | Apache 2.0 | HuggingFace, ampliamente documentado |
-| distilbert-base-uncased | 66 M | 512 tokens | Apache 2.0 | HuggingFace, más ligero y rápido |
-| roberta-base | 125 M | 512 tokens | MIT | HuggingFace, mejor rendimiento en GLUE según su paper |
+| mohamed-essai/results | 109,5 M | no disponible | no disponible | Hugging Face (38 descargas) |
+| google-bert/bert-base-uncased | 110 M | 512 tokens | Apache 2.0 | Hugging Face, ampliamente documentado |
+| distilbert-base-uncased | 66 M | 512 tokens | Apache 2.0 | Hugging Face, más ligero y rápido |
+| roberta-base | 125 M | 512 tokens | MIT | Hugging Face, mejor rendimiento en GLUE según su paper |
 
 La comparativa se basa en la familia arquitectónica; no hay datos de rendimiento de `mohamed-essai/results` que permitan una comparación cuantitativa.
 
@@ -80,5 +80,5 @@ La comparativa se basa en la familia arquitectónica; no hay datos de rendimient
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mohamed-essai/results
+- Hugging Face: https://huggingface.co/mohamed-essai/results
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la información disponible.

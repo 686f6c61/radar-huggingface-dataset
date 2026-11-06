@@ -67,7 +67,7 @@ No hay una comparativa directa disponible en la informacion proporcionada. Otros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/DM-Diaz/VEDB-NSD-ResNet18-Encoding-Models
+- Repositorio Hugging Face: https://huggingface.co/DM-Diaz/VEDB-NSD-ResNet18-Encoding-Models
 - Coleccion de modelos VEDB SimCLR: https://hf.co/collections/DM-Diaz/eccentricity-constrained-simclr-models-vedb
 - Modelo Baseline: https://huggingface.co/DM-Diaz/VEDB-SimCLR-ResNet18-Baseline
 - Modelo Fovea-Gaze: https://huggingface.co/DM-Diaz/VEDB-SimCLR-ResNet18-Fovea-Gaze

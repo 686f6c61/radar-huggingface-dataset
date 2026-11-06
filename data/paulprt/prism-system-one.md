@@ -18,7 +18,7 @@ Es relevante ahora porque ofrece una alternativa compacta y calibrada a los gran
 | Longitud de contexto | Entrenado con entradas de hasta 2.048 tokens; la configuración liberada acepta hasta 8.192 tokens, pero la calidad más allá de 2.048 no está probada |
 | Tipos de cuantizacion | No disponible |
 | Idiomas soportados | en, ar, zh, fr, de, it, ja, pt, es, nl, pl, ru, tr, vi, hi |
-| Licencia | lfm1.0 (etiquetada como "other" en HuggingFace) |
+| Licencia | lfm1.0 (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Tipo de tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| prism-system-one | 194.556.547 | 2.048 tokens entrenados (8.192 en configuración) | Decisión estructurada (sí/no, elección, puntuación) | lfm1.0 | HuggingFace |
-| LiquidAI/LFM2.5-Encoder-230M | No disponible | No disponible | Encoder base | No disponible | HuggingFace |
+| prism-system-one | 194.556.547 | 2.048 tokens entrenados (8.192 en configuración) | Decisión estructurada (sí/no, elección, puntuación) | lfm1.0 | Hugging Face |
+| LiquidAI/LFM2.5-Encoder-230M | No disponible | No disponible | Encoder base | No disponible | Hugging Face |
 | GLiNER (familia) | No disponible | No disponible | Extracción basada en marcadores | No disponible | No disponible |
 
 La información disponible no permite establecer una comparación cuantitativa de rendimiento con alternativas de la misma categoría. El modelo base se incluye como referencia arquitectónica, y GLiNER se cita únicamente como inspiración del mecanismo de marcadores, sin datos comparables de parámetros, contexto o resultados.
@@ -86,6 +86,6 @@ La información disponible no permite establecer una comparación cuantitativa d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/paulprt/prism-system-one
+- Modelo en Hugging Face: https://huggingface.co/paulprt/prism-system-one
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-Encoder-230M
 - Licencia (archivo LICENSE del repositorio): https://huggingface.co/paulprt/prism-system-one/blob/main/LICENSE

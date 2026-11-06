@@ -4,7 +4,7 @@
 
 `mdanialFarokhi/qwen2.5-persian2english-translator` es un adaptador LoRA (PEFT) publicado por el usuario mdanialFarokhi sobre el modelo base `Qwen/Qwen2.5-3B-Instruct`. Por el identificador del repositorio, su proposito declarado es la traduccion de persa (farsi) a ingles, aunque la model card no documenta ni el proceso de entrenamiento ni los datos utilizados. El repositorio pesa aproximadamente 0,1 GB, lo que confirma que se trata de un conjunto de pesos de adaptador y no de un modelo completo.
 
-El interes practico del artefacto es limitado: se publica sin licencia declarada, sin idiomas declarados, sin metricas de evaluacion y sin instrucciones de uso. La model card es la plantilla por defecto de HuggingFace con todos los campos marcados como "[More Information Needed]". No hay descargas ni likes en el momento de la consulta.
+El interes practico del artefacto es limitado: se publica sin licencia declarada, sin idiomas declarados, sin metricas de evaluacion y sin instrucciones de uso. La model card es la plantilla por defecto de Hugging Face con todos los campos marcados como "[More Information Needed]". No hay descargas ni likes en el momento de la consulta.
 
 Para un desarrollador o investigador, este modelo solo resulta relevante como ejemplo de adaptacion ligera de un modelo Qwen2.5-3B-Instruct a una tarea de traduccion de bajos recursos, o como punto de partida para reproducir un fine-tuning similar. No es un artefacto listo para produccion sin una evaluacion previa por parte de quien lo vaya a usar.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mdanialFarokhi/qwen2.5-persian2english-translator | 3,09 B (base) + LoRA | 32 768 (base) | Traduccion persa-ingles via LoRA | no disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen2.5-3B-Instruct | 3,09 B | 32 768 | Instrucciones generales multilingues | Apache 2.0 (modelo base) | HuggingFace, ampliamente usado |
-| Helsinki-NLP/opus-mt-fa-en | ~77 M | 512 | Traduccion neuronal persa-ingles | CC-BY 4.0 | HuggingFace, muy usado |
-| Facebook NLLB-200 (600M destilado) | 600 M | 512 | Traduccion multilingue, incluye persa-ingles | CC-BY-NC 4.0 | HuggingFace |
+| mdanialFarokhi/qwen2.5-persian2english-translator | 3,09 B (base) + LoRA | 32 768 (base) | Traduccion persa-ingles via LoRA | no disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen2.5-3B-Instruct | 3,09 B | 32 768 | Instrucciones generales multilingues | Apache 2.0 (modelo base) | Hugging Face, ampliamente usado |
+| Helsinki-NLP/opus-mt-fa-en | ~77 M | 512 | Traduccion neuronal persa-ingles | CC-BY 4.0 | Hugging Face, muy usado |
+| Facebook NLLB-200 (600M destilado) | 600 M | 512 | Traduccion multilingue, incluye persa-ingles | CC-BY-NC 4.0 | Hugging Face |
 
 La comparacion es aproximada: no hay datos de calidad para el adaptador de mdanialFarokhi, mientras que los modelos dedicados de traduccion cuentan con evaluaciones publicadas (BLEU, chrF) en sus model cards. El adaptador hereda la licencia incierta del autor y no la Apache 2.0 del modelo base, lo que anade riesgo frente a las alternativas.
 
@@ -86,7 +86,7 @@ La comparacion es aproximada: no hay datos de calidad para el adaptador de mdani
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mdanialFarokhi/qwen2.5-persian2english-translator
+- Modelo en Hugging Face: https://huggingface.co/mdanialFarokhi/qwen2.5-persian2english-translator
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Repositorio de PEFT: https://github.com/huggingface/peft
 - Paper de LoRA (Hu et al., 2021): https://arxiv.org/abs/2106.09685

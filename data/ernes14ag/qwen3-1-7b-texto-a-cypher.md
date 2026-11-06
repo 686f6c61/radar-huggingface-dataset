@@ -83,8 +83,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-1.7B · texto a Cypher (este) | 1,72 B | no disponible | Text-to-Cypher Neo4j 5, es/en | Apache 2.0 | HuggingFace (safetensors y GGUF) |
-| Qwen/Qwen3-1.7B (base) | 1,72 B | no disponible | Generación de texto general | Apache 2.0 | HuggingFace |
+| Qwen3-1.7B · texto a Cypher (este) | 1,72 B | no disponible | Text-to-Cypher Neo4j 5, es/en | Apache 2.0 | Hugging Face (safetensors y GGUF) |
+| Qwen/Qwen3-1.7B (base) | 1,72 B | no disponible | Generación de texto general | Apache 2.0 | Hugging Face |
 | Alternativas específicas de text-to-Cypher | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone en la información proporcionada de otros modelos comparables de text-to-Cypher con datos de rendimiento verificables; la comparación directa más fiable es con el modelo base, incluida en la tabla de benchmarks.
@@ -102,6 +102,6 @@ No se dispone en la información proporcionada de otros modelos comparables de t
 
 ## Enlaces
 
-- Modelo en HuggingFace (pesos completos): https://huggingface.co/Ernes14AG/qwen3-1.7b-texto-a-cypher
+- Modelo en Hugging Face (pesos completos): https://huggingface.co/Ernes14AG/qwen3-1.7b-texto-a-cypher
 - Versión GGUF para Ollama: https://huggingface.co/Ernes14AG/qwen3-1.7b-texto-a-cypher-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B

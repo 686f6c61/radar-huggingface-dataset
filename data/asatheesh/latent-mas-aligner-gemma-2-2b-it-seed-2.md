@@ -83,8 +83,8 @@ El autor indica que existe una tabla medida de `tau`, recall y sobre-rechazo par
 
 | Modelo | Tipo | Modelo objetivo | Semilla | AUC de validacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| asatheesh/latent-mas-aligner-gemma-2-2b-it-seed-2 | Alineador latente | google/gemma-2-2b-it (`d_a=2304`) | 2 | 0,9224 | apache-2.0 | HuggingFace, 0 descargas |
-| YuanXiaopang/latentmas-aligner-qwen3-4b | Alineador latente (variantes de topologia y semilla) | no disponible | no disponible | no disponible | no disponible | HuggingFace (repositorio fuente citado) |
+| asatheesh/latent-mas-aligner-gemma-2-2b-it-seed-2 | Alineador latente | google/gemma-2-2b-it (`d_a=2304`) | 2 | 0,9224 | apache-2.0 | Hugging Face, 0 descargas |
+| YuanXiaopang/latentmas-aligner-qwen3-4b | Alineador latente (variantes de topologia y semilla) | no disponible | no disponible | no disponible | no disponible | Hugging Face (repositorio fuente citado) |
 | Moderacion textual clasica (por ejemplo, Llama-Guard-3-8B sobre texto decodificado) | Clasificador de contenido | no aplica | no aplica | no disponible | licencia Llama | Ampliamente disponible |
 
 No se conocen en la informacion proporcionada otros modelos comparables de moderacion especifica para espacio latente; la comparativa con alternativas fuera del estudio LatentMASHarmBench queda como no disponible.
@@ -104,7 +104,7 @@ No se conocen en la informacion proporcionada otros modelos comparables de moder
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/asatheesh/latent-mas-aligner-gemma-2-2b-it-seed-2
+- Modelo en Hugging Face: https://huggingface.co/asatheesh/latent-mas-aligner-gemma-2-2b-it-seed-2
 - Repositorio fuente citado por el autor: https://huggingface.co/YuanXiaopang/latentmas-aligner-qwen3-4b
 - Codigo: https://github.com/Asatheesh6561/LatentMASHarmBench
 - Modelo base: https://huggingface.co/google/gemma-2-2b-it

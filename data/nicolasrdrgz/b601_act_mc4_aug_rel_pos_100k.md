@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Nicolasrdrgz/b601_act_mc4_aug_rel_pos_100k` es una política de robótica basada en Action Chunking with Transformers (ACT), un método de aprendizaje por imitación que predice secuencias de acciones (chunks) en lugar de pasos individuales. Ha sido entrenado y publicado mediante el framework LeRobot de HuggingFace, y está diseñado para controlar un robot de tipo `mason_1` a partir de observaciones visuales de dos cámaras (gripper y escena) y un vector de estado de 7 dimensiones.
+El modelo `Nicolasrdrgz/b601_act_mc4_aug_rel_pos_100k` es una política de robótica basada en Action Chunking with Transformers (ACT), un método de aprendizaje por imitación que predice secuencias de acciones (chunks) en lugar de pasos individuales. Ha sido entrenado y publicado mediante el framework LeRobot de Hugging Face, y está diseñado para controlar un robot de tipo `mason_1` a partir de observaciones visuales de dos cámaras (gripper y escena) y un vector de estado de 7 dimensiones.
 
 El modelo resuelve el problema del control robótico por imitación a partir de datos teleoperados, logrando tasas de éxito altas en tareas de manipulación gracias a la predicción de chunks de acción que reducen la propagación de errores. Con 51,67 millones de parámetros, es una política compacta que puede ejecutarse en hardware modesto, aunque requiere el robot físico y las cámaras correspondientes para su despliegue real.
 
@@ -41,7 +41,7 @@ El entrenamiento se realizó con el framework LeRobot (versión 0.6.1) sobre el 
 - Manipulación de objetos en entornos controlados: el modelo puede ejecutar tareas de pick-and-place o reordenamiento de piezas sobre una mesa, usando las dos cámaras para localizar el objeto y la pinza para agarrarlo.
 - Automatización de procesos repetitivos en laboratorio: al estar entrenado con teleoperación, puede replicar trayectorias de un operador humano en tareas como ensamblaje de componentes pequeños o clasificación de piezas.
 - Investigación en aprendizaje por imitación: sirve como punto de partida para estudiar el efecto de la predicción por chunks, el número de episodios o la arquitectura ACT en robots de bajo coste.
-- Benchmarking de políticas robóticas: al estar publicado en HuggingFace con el formato LeRobot, puede usarse como referencia para comparar con otras políticas entrenadas sobre el mismo dataset o robot.
+- Benchmarking de políticas robóticas: al estar publicado en Hugging Face con el formato LeRobot, puede usarse como referencia para comparar con otras políticas entrenadas sobre el mismo dataset o robot.
 - Desarrollo de sistemas de control con realimentación visual: su capacidad de procesar dos cámaras simultáneamente lo hace adecuado para tareas que requieren coordinación ojo-mano, como insertar una pieza en un hueco.
 - Formación y demostraciones educativas: permite a estudiantes y desarrolladores ejecutar una política real en un robot `mason_1` sin necesidad de entrenar desde cero, usando los comandos de rollout de LeRobot.
 
@@ -73,7 +73,7 @@ No se dispone de información pública sobre modelos comparables entrenados sobr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nicolasrdrgz/b601_act_mc4_aug_rel_pos_100k
+- Modelo en Hugging Face: https://huggingface.co/Nicolasrdrgz/b601_act_mc4_aug_rel_pos_100k
 - Dataset de entrenamiento: https://huggingface.co/datasets/Nicolasrdrgz/b601_bench_mc4_aug_rel_pos
 - Paper de ACT: https://huggingface.co/papers/2304.13705
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot

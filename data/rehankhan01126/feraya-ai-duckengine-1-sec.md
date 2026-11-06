@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`feraya-ai-DuckEngine-1-Sec` es un modelo de lenguaje desarrollado por RehanKhan01126 y publicado en HuggingFace. Se trata de un fine-tuning del modelo base `unsloth/llama-3-8b-Instruct-bnb-4bit`, que a su vez es una version cuantizada en 4 bits de `Llama-3-8B-Instruct` de Meta. El entrenamiento se realizo con Unsloth, una libreria optimizada para acelerar el fine-tuning de modelos Llama, y la integracion con `trl`. No se ha publicado informacion detallada sobre el dataset utilizado, los objetivos de entrenamiento ni las tecnicas de alineacion aplicadas.
+`feraya-ai-DuckEngine-1-Sec` es un modelo de lenguaje desarrollado por RehanKhan01126 y publicado en Hugging Face. Se trata de un fine-tuning del modelo base `unsloth/llama-3-8b-Instruct-bnb-4bit`, que a su vez es una version cuantizada en 4 bits de `Llama-3-8B-Instruct` de Meta. El entrenamiento se realizo con Unsloth, una libreria optimizada para acelerar el fine-tuning de modelos Llama, y la integracion con `trl`. No se ha publicado informacion detallada sobre el dataset utilizado, los objetivos de entrenamiento ni las tecnicas de alineacion aplicadas.
 
 El repositorio es pequeno (0.2 GB) y contiene pesos en formato `safetensors`. Este tamano no corresponde a un modelo completo de 8 mil millones de parametros, lo que sugiere que el checkpoint publicado podria no contener la totalidad de los pesos, o que estos estan fuertemente cuantizados. Dado que no se proporcionan documentos tecnicos, benchmarks ni pruebas de rendimiento, no es posible evaluar su calidad ni su idoneidad para tareas concretas.
 
@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `feraya-ai-DuckEngine-1-Sec` | no disponible | no disponible | apache-2.0 | HuggingFace |
-| `meta-llama/Meta-Llama-3-8B-Instruct` | 8 mil millones | 8192 | Meta Llama 3 Community License | HuggingFace |
-| `unsloth/llama-3-8b-Instruct-bnb-4bit` | 8 mil millones | 8192 | apache-2.0 | HuggingFace |
+| `feraya-ai-DuckEngine-1-Sec` | no disponible | no disponible | apache-2.0 | Hugging Face |
+| `meta-llama/Meta-Llama-3-8B-Instruct` | 8 mil millones | 8192 | Meta Llama 3 Community License | Hugging Face |
+| `unsloth/llama-3-8b-Instruct-bnb-4bit` | 8 mil millones | 8192 | apache-2.0 | Hugging Face |
 
 No es posible realizar una comparativa de rendimiento al no existir benchmarks publicados para este modelo concreto.
 
@@ -74,6 +74,6 @@ No es posible realizar una comparativa de rendimiento al no existir benchmarks p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RehanKhan01126/feraya-ai-DuckEngine-1-Sec
+- Hugging Face: https://huggingface.co/RehanKhan01126/feraya-ai-DuckEngine-1-Sec
 - Modelo base: https://huggingface.co/unsloth/llama-3-8b-Instruct-bnb-4bit
 - Unsloth: https://github.com/unslothai/unsloth

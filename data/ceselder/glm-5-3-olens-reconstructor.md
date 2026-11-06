@@ -80,10 +80,10 @@ Referencia externa citada en la model card: el AR de la capa 42 de Qwen3.6-27B, 
 
 | Artefacto | Tipo | Parámetros | Contexto / span | Coseno centrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `ceselder/glm-5.3-olens-reconstructor` (`sink16`) | LoRA r512 sobre GLM-5.3, bloque 51 | ~2,9 B fp32 de adaptador | Spans de 4-16 tokens | 0,391 (16 tokens) / 0,340 (bullets) | NVIDIA open model license | HuggingFace, 0 descargas |
-| `ceselder/glm-5.3-olens-reconstructor` (afín `k16_sink`) | Mapa afín cerrado | `W` de 6.144 × 6.144 | Exactamente 16 tokens | 0,241 (16 tokens) | NVIDIA open model license | HuggingFace |
+| `ceselder/glm-5.3-olens-reconstructor` (`sink16`) | LoRA r512 sobre GLM-5.3, bloque 51 | ~2,9 B fp32 de adaptador | Spans de 4-16 tokens | 0,391 (16 tokens) / 0,340 (bullets) | NVIDIA open model license | Hugging Face, 0 descargas |
+| `ceselder/glm-5.3-olens-reconstructor` (afín `k16_sink`) | Mapa afín cerrado | `W` de 6.144 × 6.144 | Exactamente 16 tokens | 0,241 (16 tokens) | NVIDIA open model license | Hugging Face |
 | AR de la capa 42 de Qwen3.6-27B (receta original `h2hpfx`) | LoRA reconstructor sobre otro base | No disponible | Spans de 16 tokens | 0,400 | No disponible en la información proporcionada | Citado como referencia, sin enlace |
-| `ceselder/glm-5.3-olens-lens` | Lens / consumidor del reconstructor | No disponible | No disponible | No disponible | No disponible | HuggingFace, misma colección |
+| `ceselder/glm-5.3-olens-lens` | Lens / consumidor del reconstructor | No disponible | No disponible | No disponible | No disponible | Hugging Face, misma colección |
 
 No se dispone de otros reconstructores de activaciones comparables en la información proporcionada; la única referencia cuantitativa es el AR de Qwen3.6-27B.
 
@@ -103,7 +103,7 @@ No se dispone de otros reconstructores de activaciones comparables en la informa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ceselder/glm-5.3-olens-reconstructor
+- Modelo en Hugging Face: https://huggingface.co/ceselder/glm-5.3-olens-reconstructor
 - Modelo base: https://huggingface.co/nvidia/GLM-5.3-NVFP4
 - Lens asociado (consumidor y RL): https://huggingface.co/ceselder/glm-5.3-olens-lens
 - Colección `glm5.3-olens`: https://huggingface.co/collections/ceselder/glm53-olens-6adaf9d544d3645a7fb96eb9

@@ -75,7 +75,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dinhthuan/kokoro-vi-ngoc-huyen
+- Repositorio Hugging Face: https://huggingface.co/dinhthuan/kokoro-vi-ngoc-huyen
 - Espacio Gradio (Kokoro-Vietnamese): https://huggingface.co/spaces/dinhthuan/Kokoro-Vietnamese
 - Repositorio GitHub (iamdinhthuan/Kokoro-Vietnamese): https://github.com/iamdinhthuan/Kokoro-Vietnamese
 - Repositorio GitHub (tuyndoan/kokoro-vietnamese): https://github.com/tuyndoan/kokoro-vietnamese

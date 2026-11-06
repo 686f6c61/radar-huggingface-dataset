@@ -75,10 +75,10 @@ Los resultados de busqueda web proporcionados no contienen informacion relevante
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (darturi, r=64) | ~8.000 M (base) + adaptador | 128.000 tokens (base) | Adaptador LoRA restado | No disponible | HuggingFace, 0 descargas |
-| unsloth/Llama-3.1-8B-Instruct | ~8.000 M | 128.000 tokens | Pesos completos | Llama 3.1 Community License | HuggingFace |
-| darturi/Llama-3.1-8B-Instruct-SS-matched-control-sonnet-1 (minuendo) | ~8.000 M (base) + adaptador r=32 | 128.000 tokens (base) | Adaptador LoRA | No disponible | HuggingFace |
-| darturi/Averaged_MO_Llama8B_Adapters-1 (sustraendo) | ~8.000 M (base) + adaptador r=32 | 128.000 tokens (base) | Adaptador LoRA promediado | No disponible | HuggingFace |
+| Este adaptador (darturi, r=64) | ~8.000 M (base) + adaptador | 128.000 tokens (base) | Adaptador LoRA restado | No disponible | Hugging Face, 0 descargas |
+| unsloth/Llama-3.1-8B-Instruct | ~8.000 M | 128.000 tokens | Pesos completos | Llama 3.1 Community License | Hugging Face |
+| darturi/Llama-3.1-8B-Instruct-SS-matched-control-sonnet-1 (minuendo) | ~8.000 M (base) + adaptador r=32 | 128.000 tokens (base) | Adaptador LoRA | No disponible | Hugging Face |
+| darturi/Averaged_MO_Llama8B_Adapters-1 (sustraendo) | ~8.000 M (base) + adaptador r=32 | 128.000 tokens (base) | Adaptador LoRA promediado | No disponible | Hugging Face |
 
 No se conocen modelos comparables publicados que apliquen una receta de sustraccion de adaptadores equivalente con diagnostico de error de Frobenius.
 
@@ -97,7 +97,7 @@ No se conocen modelos comparables publicados que apliquen una receta de sustracc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/darturi/Llama-3.1-8B-Instruct-SS-matched-control-sonnet-1-NEGATED_WITH_MO-1
+- Modelo en Hugging Face: https://huggingface.co/darturi/Llama-3.1-8B-Instruct-SS-matched-control-sonnet-1-NEGATED_WITH_MO-1
 - Modelo base: https://huggingface.co/unsloth/Llama-3.1-8B-Instruct
 - Adaptador minuendo: https://huggingface.co/darturi/Llama-3.1-8B-Instruct-SS-matched-control-sonnet-1
 - Adaptador sustraendo: https://huggingface.co/darturi/Averaged_MO_Llama8B_Adapters-1

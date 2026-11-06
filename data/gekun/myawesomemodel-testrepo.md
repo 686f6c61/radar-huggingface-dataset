@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio publicado en HuggingFace por el usuario gekun bajo el identificador `gekun/MyAwesomeModel-TestRepo`. Los metadatos de la plataforma lo etiquetan como un modelo de la librería transformers con backend PyTorch, arquitectura BERT y pipeline de `feature-extraction`, con licencia MIT. El repositorio tiene 0 descargas, 0 likes y un tamano de 0.0 GB, lo que indica que no contiene pesos publicados.
+MyAwesomeModel-TestRepo es un repositorio publicado en Hugging Face por el usuario gekun bajo el identificador `gekun/MyAwesomeModel-TestRepo`. Los metadatos de la plataforma lo etiquetan como un modelo de la librería transformers con backend PyTorch, arquitectura BERT y pipeline de `feature-extraction`, con licencia MIT. El repositorio tiene 0 descargas, 0 likes y un tamano de 0.0 GB, lo que indica que no contiene pesos publicados.
 
 La model card adjunta, sin embargo, describe un modelo conversacional de razonamiento de gran escala, con mejoras en profundidad de inferencia, soporte de function calling, reduccion de alucinaciones y resultados en pruebas como AIME 2025. Esta descripcion no es coherente con las etiquetas de BERT y `feature-extraction` de los metadatos, ni con la ausencia total de pesos, y hace referencia a modelos comparativos sin nombre (Model1, Model2, Model1-v2). Todo apunta a un repositorio de prueba o a una plantilla sin contenido real.
 
@@ -12,7 +12,7 @@ Por tanto, esta ficha debe leerse como una evaluacion de un repositorio vacio o 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (los tags de HuggingFace indican BERT; la model card no describe la arquitectura) |
+| Arquitectura | no disponible (los tags de Hugging Face indican BERT; la model card no describe la arquitectura) |
 | Parametros totales | no disponible (el repositorio ocupa 0.0 GB y no publica pesos) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
@@ -111,7 +111,7 @@ No es posible establecer una comparativa real: los modelos de contraste no estan
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gekun/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/gekun/MyAwesomeModel-TestRepo
 - Paper: no disponible
 - Blog o anuncio oficial: no disponible
 - Repositorio de codigo: la model card menciona "our code repository" y un sitio web oficial, pero no se incluye ningun enlace

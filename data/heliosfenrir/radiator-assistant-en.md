@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Radiator Assistant (este) | 494 M | No disponible | Apache-2.0 | HuggingFace, 97 descargas | SFT de nicho en radiadores, EN/DE |
-| Qwen/Qwen2.5-0.5B-Instruct | 494 M | No disponible en la informacion | Apache-2.0 | HuggingFace, ampliamente usado | Modelo base generalista, sin especializacion |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,5 B | No disponible en la informacion | Apache-2.0 | HuggingFace | Base mas grande de la misma familia, mayor capacidad general |
+| Radiator Assistant (este) | 494 M | No disponible | Apache-2.0 | Hugging Face, 97 descargas | SFT de nicho en radiadores, EN/DE |
+| Qwen/Qwen2.5-0.5B-Instruct | 494 M | No disponible en la informacion | Apache-2.0 | Hugging Face, ampliamente usado | Modelo base generalista, sin especializacion |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,5 B | No disponible en la informacion | Apache-2.0 | Hugging Face | Base mas grande de la misma familia, mayor capacidad general |
 | Modelos de dominio equivalentes | No disponible | No disponible | No disponible | No disponible | No se han identificado alternativas publicas comparables en el nicho de radiadores |
 
 ## Limitaciones y advertencias
@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HeliosFenrir/radiator-assistant-en
+- Modelo en Hugging Face: https://huggingface.co/HeliosFenrir/radiator-assistant-en
 - Adaptador LoRA: https://huggingface.co/HeliosFenrir/radiator-assistant-en-lora
 - Dataset SFT: https://huggingface.co/datasets/HeliosFenrir/radiator-en-sft
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct

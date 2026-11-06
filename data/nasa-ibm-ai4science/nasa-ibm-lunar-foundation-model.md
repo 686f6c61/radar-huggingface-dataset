@@ -68,7 +68,7 @@ No se han identificado en los resultados de busqueda modelos fundacionales lunar
 
 | Modelo | Dominio | Arquitectura | Modalidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NASA-IBM Lunar Foundation Model | Luna | ViT-B encoder-decoder, masked-token modeling | 11 (NAC, WAC, DTM, slope, aspect, uv, metadatos, mapas estaticos) | Apache-2.0 | HuggingFace + GitHub |
+| NASA-IBM Lunar Foundation Model | Luna | ViT-B encoder-decoder, masked-token modeling | 11 (NAC, WAC, DTM, slope, aspect, uv, metadatos, mapas estaticos) | Apache-2.0 | Hugging Face + GitHub |
 | TerraMind | Tierra | Arquitectura any-to-any de masked-token modeling (base de la receta) | no disponible en la informacion proporcionada | no disponible | arXiv 2504.11171 |
 | Otros modelos fundacionales de teledeteccion (por ejemplo, variantes tipo Prithvi) | Tierra | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible | no disponible |
 
@@ -88,7 +88,7 @@ No se han identificado en los resultados de busqueda modelos fundacionales lunar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nasa-ibm-ai4science/NASA-IBM-Lunar-Foundation-Model
+- Modelo en Hugging Face: https://huggingface.co/nasa-ibm-ai4science/NASA-IBM-Lunar-Foundation-Model
 - Informe tecnico (PDF en el repositorio): https://huggingface.co/nasa-ibm-ai4science/NASA-IBM-Lunar-Foundation-Model/blob/main/NI_LFM_Technical_Report.pdf
 - Codigo de fine-tuning en GitHub: https://github.com/NASA-IMPACT/NASA-IBM-Lunar-Foundation-Model
 - Dataset de preentrenamiento SomBench: https://huggingface.co/datasets/nasa-ibm-ai4science/Sombench-pretraining-data

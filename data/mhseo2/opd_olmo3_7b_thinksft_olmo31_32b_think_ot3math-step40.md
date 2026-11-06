@@ -18,7 +18,7 @@ El único dato técnico duro disponible es el recuento de parámetros y el tama�
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | No disponible; el repositorio solo contiene safetensors. No se incluyen GGUF, GPTQ ni AWQ |
 | Idiomas soportados | No disponible |
-| Licencia | No disponible (campo vacio en HuggingFace) |
+| Licencia | No disponible (campo vacio en Hugging Face) |
 | Formato de pesos | safetensors (14,6 GB en total, compatible con BF16 a 2 bytes por parametro) |
 
 ## Arquitectura y entrenamiento
@@ -86,5 +86,5 @@ Nota: los datos de las alternativas no proceden de la información proporcionada
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mhseo2/opd_olmo3_7b_thinksft_olmo31_32b_think_ot3math-step40
+- Hugging Face: https://huggingface.co/mhseo2/opd_olmo3_7b_thinksft_olmo31_32b_think_ot3math-step40
 - No se han encontrado papers, blogs, repositorios ni demos asociados a este checkpoint en la busqueda web realizada; los resultados obtenidos no guardaban relacion con el modelo y se han descartado.

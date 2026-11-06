@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un checkpoint de fine-tuning del modelo vision-language Qwen2.5-VL-3B, publicado por el usuario SaFD-00 en HuggingFace. El nombre del repositorio sugiere un experimento de "world model" en su etapa 1, con entrenamiento completo (full) durante 3 épocas, probablemente orientado a la comprensión de escenas y razonamiento espacial a partir de imágenes. Sin embargo, la model card no proporciona ninguna descripción técnica, datos de entrenamiento ni detalles sobre el proceso de fine-tuning, por lo que la información disponible es muy limitada.
+Este modelo es un checkpoint de fine-tuning del modelo vision-language Qwen2.5-VL-3B, publicado por el usuario SaFD-00 en Hugging Face. El nombre del repositorio sugiere un experimento de "world model" en su etapa 1, con entrenamiento completo (full) durante 3 épocas, probablemente orientado a la comprensión de escenas y razonamiento espacial a partir de imágenes. Sin embargo, la model card no proporciona ninguna descripción técnica, datos de entrenamiento ni detalles sobre el proceso de fine-tuning, por lo que la información disponible es muy limitada.
 
 El modelo tiene 3.754.622.976 parámetros (aproximadamente 3,75 mil millones), lo que lo sitúa en la gama de modelos VLM compactos. Está registrado con el pipeline `image-text-to-text`, lo que indica que acepta imágenes y texto como entrada y genera texto como salida. La librería es `transformers` y los pesos están en formato `safetensors`. No se dispone de información sobre licencia, idiomas soportados, contexto máximo ni cuantizaciones. A pesar de la falta de documentación, el modelo podría ser útil para tareas de visión-lenguaje, aunque se recomienda precaución antes de usarlo en producción.
 
@@ -51,17 +51,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 - VRAM estimada para inferencia: con 3,75 mil millones de parametros en precision fp16, el modelo ocupa aproximadamente 7,5 GB de memoria. En cuantizacion int8 (si estuviera disponible) se reduciria a unos 3,75 GB, y en int4 a unos 1,9 GB, pero no se confirma la existencia de versiones cuantizadas.
 - GPU recomendadas: una GPU con al menos 8 GB de VRAM (por ejemplo, RTX 3070, RTX 4060, A10) para fp16. Para cuantizacion int4, una GPU con 4 GB (como RTX 3050) podria ser suficiente, aunque no se garantiza.
 - Si cabe en consumer GPU: si, en GPUs de gama media con 8 GB o mas, siempre que se use fp16 o cuantizacion.
-- Opciones de despliegue: al ser un modelo de la familia transformers, se puede servir con vLLM, TGI (Text Generation Inference), o mediante la API de HuggingFace. Para uso local, llama.cpp u Ollama podrian funcionar si se generan pesos GGUF, pero no se proporcionan.
+- Opciones de despliegue: al ser un modelo de la familia transformers, se puede servir con vLLM, TGI (Text Generation Inference), o mediante la API de Hugging Face. Para uso local, llama.cpp u Ollama podrian funcionar si se generan pesos GGUF, pero no se proporcionan.
 - Latencia y throughput: no disponible. Depende del hardware y del backend de inferencia.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen2.5-VL-3B (base) | 3,75B | 32.768 tokens | Apache 2.0 | HuggingFace |
-| SaFD-00/qwen2.5-vl-3b-ac-exp08-world-model-stage1-full-epoch3 | 3,75B | no disponible | no disponible | HuggingFace |
-| LLaVA-1.6-7B | 7B | 4.096 tokens | Apache 2.0 | HuggingFace |
-| Phi-3-vision-128k-instruct | 4,2B | 128.000 tokens | MIT | HuggingFace |
+| Qwen2.5-VL-3B (base) | 3,75B | 32.768 tokens | Apache 2.0 | Hugging Face |
+| SaFD-00/qwen2.5-vl-3b-ac-exp08-world-model-stage1-full-epoch3 | 3,75B | no disponible | no disponible | Hugging Face |
+| LLaVA-1.6-7B | 7B | 4.096 tokens | Apache 2.0 | Hugging Face |
+| Phi-3-vision-128k-instruct | 4,2B | 128.000 tokens | MIT | Hugging Face |
 
 La comparativa se basa en los modelos base conocidos, no en este checkpoint especifico. No se dispone de datos de rendimiento para comparar directamente.
 
@@ -76,7 +76,7 @@ La comparativa se basa en los modelos base conocidos, no en este checkpoint espe
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SaFD-00/qwen2.5-vl-3b-ac-exp08-world-model-stage1-full-epoch3
+- Repositorio Hugging Face: https://huggingface.co/SaFD-00/qwen2.5-vl-3b-ac-exp08-world-model-stage1-full-epoch3
 - Checkpoint relacionado (exp01): https://huggingface.co/SaFD-00/qwen2.5-vl-3b-ac-exp08-world-model-stage1-full-epoch1
 - Checkpoint relacionado (exp06 con stage2): https://huggingface.co/SaFD-00/qwen2.5-vl-3b-ac-exp06-world-model-stage1-full-epoch3-stage2-lora-epoch3
 - Informe tecnico de Qwen2.5-VL (arXiv): https://arxiv.org/abs/2502.13923

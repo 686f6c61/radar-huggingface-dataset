@@ -77,7 +77,7 @@ No se dispone de información suficiente para comparar con otros modelos clínic
 
 ## Enlaces
 
-- [HuggingFace del modelo cuantizado: mradermacher/Clin-REACT-31B-GGUF](https://huggingface.co/mradermacher/Clin-REACT-31B-GGUF)
+- [Hugging Face del modelo cuantizado: mradermacher/Clin-REACT-31B-GGUF](https://huggingface.co/mradermacher/Clin-REACT-31B-GGUF)
 - [Modelo base (no cuantizado): macontreras98/Clin-REACT-31B](https://huggingface.co/macontreras98/Clin-REACT-31B)
 - [Dataset de entrenamiento: macontreras98/ICU-REACT](https://huggingface.co/datasets/macontreras98/ICU-REACT)
 - [Perfil del cuantizador: mradermacher](https://huggingface.co/mradermacher)

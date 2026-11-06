@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-8B (original) | 8,2 B | 131 000 | BF16/FP16 | Apache 2.0 | HuggingFace |
-| Qwen3-8B-FP4 (NVIDIA) | 8,2 B | 131 000 | FP4 | Apache 2.0 | HuggingFace |
-| Qwen3-8B-AWQ (ejemplo comun) | 8,2 B | 131 000 | INT4 (AWQ) | Apache 2.0 | HuggingFace (no confirmado) |
-| Llama-3.1-8B (cuantizado) | 8,0 B | 128 000 | INT4/FP8 | Llama 3.1 | HuggingFace |
+| Qwen3-8B (original) | 8,2 B | 131 000 | BF16/FP16 | Apache 2.0 | Hugging Face |
+| Qwen3-8B-FP4 (NVIDIA) | 8,2 B | 131 000 | FP4 | Apache 2.0 | Hugging Face |
+| Qwen3-8B-AWQ (ejemplo comun) | 8,2 B | 131 000 | INT4 (AWQ) | Apache 2.0 | Hugging Face (no confirmado) |
+| Llama-3.1-8B (cuantizado) | 8,0 B | 128 000 | INT4/FP8 | Llama 3.1 | Hugging Face |
 
 La comparativa se basa en parametros y contexto; los resultados de rendimiento no estan disponibles para esta version FP4. La principal diferencia frente a otras cuantizaciones es el formato FP4, que requiere hardware Blackwell para aprovechar todo su potencial.
 
@@ -80,7 +80,7 @@ La comparativa se basa en parametros y contexto; los resultados de rendimiento n
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nm-testing/convert_modelopt_nvfp4-e2e
+- Repositorio Hugging Face: https://huggingface.co/nm-testing/convert_modelopt_nvfp4-e2e
 - Checkpoint oficial NVIDIA: https://huggingface.co/nvidia/Qwen3-8B-FP4
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - TensorRT Model Optimizer: https://github.com/NVIDIA/TensorRT-Model-Optimizer

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mixer for Classification es un repositorio experimental publicado por el usuario JaymarFlores en HuggingFace. Se trata de una implementación de la arquitectura Mixer (basada en mezclas de tokens y canales sin atención clásica) orientada a tareas de clasificación, con una configuración declarada como "large". El repositorio incluye código Python ejecutable, un archivo `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta por defecto y un checkpoint de inicialización en formato `safetensors`.
+Mixer for Classification es un repositorio experimental publicado por el usuario JaymarFlores en Hugging Face. Se trata de una implementación de la arquitectura Mixer (basada en mezclas de tokens y canales sin atención clásica) orientada a tareas de clasificación, con una configuración declarada como "large". El repositorio incluye código Python ejecutable, un archivo `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta por defecto y un checkpoint de inicialización en formato `safetensors`.
 
 El peso del modelo publicado consta de 16.576 parámetros totales, una cifra extremadamente reducida que confirma que se trata de un artefacto de prueba y no de un modelo entrenado a escala. La propia model card indica explícitamente que el checkpoint es una inicialización válida para "smoke tests" y que no se presenta como un modelo evaluado. Es relevante ahora porque sirve como punto de partida reproducible para experimentar con la arquitectura Mixer, pero no debe confundirse con un clasificador listo para producción.
 
@@ -43,7 +43,7 @@ En cuanto al entrenamiento, la receta por defecto utiliza el optimizador Adafact
 - Estudio de atención lineal en clasificación: el repositorio permite medir el comportamiento de la atención lineal frente a atención cuadrática en tareas de clasificación con presupuestos de cómputo equivalentes.
 - Pruebas de infraestructura y CI: al ocupar apenas unos kilobytes en formato `safetensors`, el modelo es adecuado para validar pipelines de CI/CD de carga de modelos, conversión de formatos y serialización sin consumir recursos.
 - Desarrollo de adaptadores de carga personalizados: la model card advierte que las APIs genéricas de carga automática requieren un adaptador explícito, por lo que es un caso de uso directo escribir dicho adaptador y probarlo.
-- Docencia y prototipado: sirve para ilustrar la estructura de un repositorio HuggingFace completo (config, training args, pesos, script) en cursos o talleres de arquitecturas eficientes.
+- Docencia y prototipado: sirve para ilustrar la estructura de un repositorio Hugging Face completo (config, training args, pesos, script) en cursos o talleres de arquitecturas eficientes.
 - Benchmarking de hardware en clasificación de baja capacidad: útil para medir latencias mínimas de frameworks (PyTorch, ONNX) sin que el modelo domine el tiempo de ejecución.
 
 ## Benchmarks y rendimiento
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| JaymarFlores/mixer-classification | 16.576 | no disponible | apache-2.0 | HuggingFace | Checkpoint de inicialización, no entrenado |
+| JaymarFlores/mixer-classification | 16.576 | no disponible | apache-2.0 | Hugging Face | Checkpoint de inicialización, no entrenado |
 | MLP-Mixer (Google Research, paper) | millones segun variante | no aplica (visión) | no disponible | referencia académica | Arquitectura original sin atención |
-| Modelos de clasificación tipo BERT-base | 110M | 512 tokens | Apache 2.0 en algunas variantes | HuggingFace | Entrenados y evaluados en benchmarks |
+| Modelos de clasificación tipo BERT-base | 110M | 512 tokens | Apache 2.0 en algunas variantes | Hugging Face | Entrenados y evaluados en benchmarks |
 
 La comparación con MLP-Mixer es pertinente porque comparte el principio de sustituir atención por mezclas, pero JaymarFlores/mixer-classification no publica métricas ni pesos entrenados que permitan una comparación cuantitativa. Frente a clasificadores transformer entrenados, la diferencia de parámetros es de varios órdenes de magnitud.
 
@@ -82,6 +82,6 @@ La comparación con MLP-Mixer es pertinente porque comparte el principio de sust
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JaymarFlores/mixer-classification
+- Modelo en Hugging Face: https://huggingface.co/JaymarFlores/mixer-classification
 - Paper original de MLP-Mixer (referencia arquitectónica): https://arxiv.org/abs/2105.01601
 - Otros enlaces (paper específico, blog, repositorio, demo): no disponibles.

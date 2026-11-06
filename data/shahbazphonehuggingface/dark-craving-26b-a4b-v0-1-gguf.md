@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| Dark-Craving-26B-A4B-v0.1-GGUF | ~25,2B (activos no confirmados) | no disponible | Apache 2.0 | Roleplay adulto, unaligned | GGUF en HuggingFace |
-| Modelo base ReadyArt/Dark-Craving-26B-A4B-v0.1 | ~25,2B | no disponible | no disponible | Roleplay adulto, unaligned | Pesos originales en HuggingFace |
+| Dark-Craving-26B-A4B-v0.1-GGUF | ~25,2B (activos no confirmados) | no disponible | Apache 2.0 | Roleplay adulto, unaligned | GGUF en Hugging Face |
+| Modelo base ReadyArt/Dark-Craving-26B-A4B-v0.1 | ~25,2B | no disponible | no disponible | Roleplay adulto, unaligned | Pesos originales en Hugging Face |
 | Alternativas de roleplay NSFW de tamano similar | no disponible | no disponible | no disponible | Roleplay adulto | no disponible |
 
 No se dispone de datos de benchmarks ni de alternativas comparables documentadas en la informacion proporcionada, por lo que la comparativa cuantitativa no es posible.
@@ -84,5 +84,5 @@ No se dispone de datos de benchmarks ni de alternativas comparables documentadas
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Shahbazphonehuggingface/Dark-Craving-26B-A4B-v0.1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Shahbazphonehuggingface/Dark-Craving-26B-A4B-v0.1-GGUF
 - Modelo base: https://huggingface.co/ReadyArt/Dark-Craving-26B-A4B-v0.1

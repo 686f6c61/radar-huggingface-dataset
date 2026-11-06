@@ -95,7 +95,7 @@ Las especificaciones de los modelos alternativos provienen de su documentacion p
 
 ## Enlaces
 
-- Repositorio HuggingFace del GGUF: https://huggingface.co/fuzzybagel/Mira-1-XL-Q4_K_M-GGUF
+- Repositorio Hugging Face del GGUF: https://huggingface.co/fuzzybagel/Mira-1-XL-Q4_K_M-GGUF
 - Modelo base (model card original): https://huggingface.co/Smilyai-labs/Mira-1-XL
 - Espacio GGUF-my-repo de ggml.ai: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp

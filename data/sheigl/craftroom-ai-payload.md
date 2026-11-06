@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Formato | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Craft Room AI payload (este) | 4.000 M | Core ML `.mlmodelc` int8/fp16 | entrada estatica 1248x832 | Apache-2.0 | HuggingFace, 0 descargas |
-| FLUX.2-klein-base-4B | 4.000 M | safetensors (diffusers) | no disponible | Apache-2.0 | HuggingFace (modelo base) |
+| Craft Room AI payload (este) | 4.000 M | Core ML `.mlmodelc` int8/fp16 | entrada estatica 1248x832 | Apache-2.0 | Hugging Face, 0 descargas |
+| FLUX.2-klein-base-4B | 4.000 M | safetensors (diffusers) | no disponible | Apache-2.0 | Hugging Face (modelo base) |
 | Alternativas de difusion en dispositivo | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La unica comparacion directa posible es con el modelo base del que deriva: mismo numero de parametros y misma licencia, pero distinto formato (portable frente a compilado) y con el LoRA de colorear fusionado en el payload. No se dispone de informacion sobre otros payloads Core ML comparables en la busqueda realizada.
@@ -87,6 +87,6 @@ La unica comparacion directa posible es con el modelo base del que deriva: mismo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sheigl/craftroom-ai-payload
+- Repositorio Hugging Face: https://huggingface.co/sheigl/craftroom-ai-payload
 - Modelo base: https://huggingface.co/black-forest-labs/FLUX.2-klein-base-4B
 - Repositorio del arnes iOS: https://github.com/sheigl/craftroom-ai-ios

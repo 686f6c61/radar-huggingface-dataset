@@ -66,6 +66,6 @@ No disponible. Este repositorio no tiene modelos comparables porque no es un mod
 
 ## Enlaces
 
-- Repositorio HuggingFace: [LayerFault/weights-quantized-metadata-mismatch](https://huggingface.co/LayerFault/weights-quantized-metadata-mismatch)
+- Repositorio Hugging Face: [LayerFault/weights-quantized-metadata-mismatch](https://huggingface.co/LayerFault/weights-quantized-metadata-mismatch)
 - Proyecto Layerfault en GitHub: [izm1chael/layerfault](https://github.com/izm1chael/layerfault)
 - Documentacion de cuantizacion (contexto general): [GeeksforGeeks - Quantization](https://www.geeksforgeeks.org/deep-learning/quantization-in-deep-learning/)

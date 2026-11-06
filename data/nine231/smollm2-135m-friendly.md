@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `Nine231/smollm2-135m-friendly` es un ajuste fino (fine-tuning) de la familia SmolLM2 de HuggingFace, con un total de 134,5 millones de parámetros. Ha sido desarrollado por el usuario Nine231 y publicado en el Hub de HuggingFace con la etiqueta `sft`, lo que indica que fue entrenado mediante aprendizaje supervisado (Supervised Fine-Tuning) utilizando la librería TRL. Su nombre sugiere una orientación hacia conversaciones amigables, aunque no se dispone de documentación detallada que confirme el propósito exacto.
+El modelo `Nine231/smollm2-135m-friendly` es un ajuste fino (fine-tuning) de la familia SmolLM2 de Hugging Face, con un total de 134,5 millones de parámetros. Ha sido desarrollado por el usuario Nine231 y publicado en el Hub de Hugging Face con la etiqueta `sft`, lo que indica que fue entrenado mediante aprendizaje supervisado (Supervised Fine-Tuning) utilizando la librería TRL. Su nombre sugiere una orientación hacia conversaciones amigables, aunque no se dispone de documentación detallada que confirme el propósito exacto.
 
 El modelo está diseñado para generación de texto y es compatible con el pipeline `text-generation` de Transformers. Al tratarse de un modelo de tamaño reducido (135M), está pensado para entornos con recursos limitados o para tareas que requieran baja latencia. Sin embargo, la información pública disponible es muy escasa: la model card es una plantilla genérica sin datos sobre arquitectura, datos de entrenamiento, licencia o idiomas soportados. Esto limita significativamente la evaluación rigurosa del modelo.
 
-A pesar de la falta de especificaciones, su inclusión en el Hub con formato `safetensors` y compatibilidad con `text-generation-inference` sugiere que puede ser desplegado fácilmente en infraestructuras estándar de HuggingFace. No obstante, cualquier uso en producción debe realizarse con cautela debido a la ausencia de documentación sobre sesgos, limitaciones y rendimiento.
+A pesar de la falta de especificaciones, su inclusión en el Hub con formato `safetensors` y compatibilidad con `text-generation-inference` sugiere que puede ser desplegado fácilmente en infraestructuras estándar de Hugging Face. No obstante, cualquier uso en producción debe realizarse con cautela debido a la ausencia de documentación sobre sesgos, limitaciones y rendimiento.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ A pesar de la falta de especificaciones, su inclusión en el Hub con formato `sa
 
 No se ha publicado información oficial sobre la arquitectura interna del modelo. El nombre y el número de parámetros sugieren que se trata de un fine-tuning del modelo base SmolLM2-135M, que es un transformer decoder-only con atención causal. Sin embargo, no hay confirmación explícita en la model card.
 
-En cuanto al entrenamiento, la etiqueta `sft` indica que se utilizó Supervised Fine-Tuning, probablemente con la librería TRL de HuggingFace. No se especifican los datos de entrenamiento, el número de tokens, el régimen de entrenamiento (precisión, hiperparámetros) ni si se aplicaron técnicas adicionales como RLHF o DPO. Tampoco hay información sobre el dataset utilizado para el ajuste fino.
+En cuanto al entrenamiento, la etiqueta `sft` indica que se utilizó Supervised Fine-Tuning, probablemente con la librería TRL de Hugging Face. No se especifican los datos de entrenamiento, el número de tokens, el régimen de entrenamiento (precisión, hiperparámetros) ni si se aplicaron técnicas adicionales como RLHF o DPO. Tampoco hay información sobre el dataset utilizado para el ajuste fino.
 
 ## Capacidades
 
@@ -43,7 +43,7 @@ Debido a la falta de información detallada, los casos de uso son hipotéticos y
 - Generación de respuestas cortas en sistemas de atención al cliente automatizada, siempre que el dominio esté restringido y se valide la calidad.
 - Asistentes de escritura para sugerencias de frases o completado de texto en aplicaciones de productividad.
 - Educación y demostraciones: útil para enseñar conceptos de NLP y fine-tuning en cursos o talleres.
-- Pruebas de integración con pipelines de HuggingFace (text-generation-inference) para evaluar despliegues en producción.
+- Pruebas de integración con pipelines de Hugging Face (text-generation-inference) para evaluar despliegues en producción.
 
 ## Benchmarks y rendimiento
 
@@ -63,9 +63,9 @@ No se dispone de datos de rendimiento del modelo para comparar con alternativas.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Nine231/smollm2-135m-friendly | 134,5M | no disponible | no disponible | HuggingFace |
-| HuggingFaceTB/SmolLM2-135M | 135M | 2048 tokens (base) | Apache 2.0 | HuggingFace |
-| TinyLlama-1.1B | 1,1B | 2048 tokens | Apache 2.0 | HuggingFace |
+| Nine231/smollm2-135m-friendly | 134,5M | no disponible | no disponible | Hugging Face |
+| HuggingFaceTB/SmolLM2-135M | 135M | 2048 tokens (base) | Apache 2.0 | Hugging Face |
+| TinyLlama-1.1B | 1,1B | 2048 tokens | Apache 2.0 | Hugging Face |
 
 La comparación real de rendimiento no es posible sin benchmarks. Se recomienda evaluar el modelo directamente con tareas específicas antes de adoptarlo.
 
@@ -80,6 +80,6 @@ La comparación real de rendimiento no es posible sin benchmarks. Se recomienda 
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/Nine231/smollm2-135m-friendly
+- Página del modelo en Hugging Face: https://huggingface.co/Nine231/smollm2-135m-friendly
 - Modelo base (referencia): https://huggingface.co/HuggingFaceTB/SmolLM2-135M
 - Librería TRL: https://github.com/huggingface/trl

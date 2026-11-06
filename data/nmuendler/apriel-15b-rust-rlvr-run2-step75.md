@@ -24,8 +24,8 @@ Su relevancia es limitada y muy especializada: se trata de un artefacto de inves
 | Tecnica de ajuste | LoRA + GRPO (etiquetas del repositorio) |
 | Tamano del repositorio | 0,6 GB |
 | Descargas / valoraciones | 0 / 0 |
-| Fecha de creacion | 2026-09-16 (segun metadatos de HuggingFace) |
-| Fecha de actualizacion | 2026-09-16 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-16 (segun metadatos de Hugging Face) |
+| Fecha de actualizacion | 2026-09-16 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nmuendler/Apriel-15B-rust-rlvr-run2-step75 | 15B en el modelo base + adaptador LoRA | no disponible | no disponible | no disponible | HuggingFace, 0 descargas, 0 valoraciones |
-| ServiceNow-AI/Apriel-Nemotron-15b-Thinker (modelo base) | 15B | no disponible | no disponible | no disponible | HuggingFace (modelo base referenciado) |
+| nmuendler/Apriel-15B-rust-rlvr-run2-step75 | 15B en el modelo base + adaptador LoRA | no disponible | no disponible | no disponible | Hugging Face, 0 descargas, 0 valoraciones |
+| ServiceNow-AI/Apriel-Nemotron-15b-Thinker (modelo base) | 15B | no disponible | no disponible | no disponible | Hugging Face (modelo base referenciado) |
 | Alternativas de tamano similar (por ejemplo, familias de 14-15B orientadas a razonamiento) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos verificados de modelos comparables en la informacion proporcionada; no se incluyen cifras para evitar afirmaciones no contrastadas.
@@ -96,7 +96,7 @@ No se dispone de datos verificados de modelos comparables en la informacion prop
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nmuendler/Apriel-15B-rust-rlvr-run2-step75
+- Modelo en Hugging Face: https://huggingface.co/nmuendler/Apriel-15B-rust-rlvr-run2-step75
 - Modelo base: https://huggingface.co/ServiceNow-AI/Apriel-Nemotron-15b-Thinker
 - Libreria PEFT: https://github.com/huggingface/peft
 - Libreria TRL: https://github.com/huggingface/trl

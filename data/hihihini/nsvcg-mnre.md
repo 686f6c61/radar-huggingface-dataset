@@ -105,7 +105,7 @@ La model card advierte explicitamente de que las cifras de MRE-MI y MORE no debe
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hihihini/nsvcg-mnre
+- Repositorio Hugging Face: https://huggingface.co/hihihini/nsvcg-mnre
 - Articulo (preprint Research Square): https://doi.org/10.21203/rs.3.rs-7395065/v1
 - Codigo upstream: `zefanZhang-cn/NSVCG` (commit `631ce8c`), referenciado en la model card sin URL directa en la informacion disponible
 - Documentacion interna del paquete: `README.md`, `MODIFYING.md`, `HANDOFF.md`, `SHA256SUMS`, `verify.sh`, `verify.ps1`, `nsvcg-handoff.tar.gz`, `checkpoints/seed4{2..6}.pth.tar`

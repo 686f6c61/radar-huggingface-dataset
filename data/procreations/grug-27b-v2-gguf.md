@@ -106,7 +106,7 @@ Los resultados de la busqueda web realizada no aportan informacion util sobre es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ProCreations/grug-27b-v2-gguf
+- Modelo en Hugging Face: https://huggingface.co/ProCreations/grug-27b-v2-gguf
 - Modelo base (pesos completos): https://huggingface.co/ProCreations/grug-27b-v2
 - Proyector de vision (F16): https://huggingface.co/ProCreations/grug-27b-v2-gguf/blob/main/mmproj-grug-27b-v2-F16.gguf
 - Resultados de las pruebas: https://huggingface.co/ProCreations/grug-27b-v2-gguf/blob/main/results.md

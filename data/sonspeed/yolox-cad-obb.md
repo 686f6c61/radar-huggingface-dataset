@@ -2,7 +2,7 @@
 
 ## Resumen
 
-yoloX-cad-obb es un detector de objetos de una sola etapa especializado en cajas orientadas (oriented bounding boxes, OBB), publicado por el usuario sonspeed en HuggingFace. Se construye sobre el backbone YOLOX-m (CSPDarknet con profundidad 0,67 y anchura 0,75, 25,9 millones de parámetros) al que se ha injertado una cabeza OBB de Ultralytics, de modo que el modelo predice rectángulos rotados en lugar de cajas alineadas con los ejes.
+yoloX-cad-obb es un detector de objetos de una sola etapa especializado en cajas orientadas (oriented bounding boxes, OBB), publicado por el usuario sonspeed en Hugging Face. Se construye sobre el backbone YOLOX-m (CSPDarknet con profundidad 0,67 y anchura 0,75, 25,9 millones de parámetros) al que se ha injertado una cabeza OBB de Ultralytics, de modo que el modelo predice rectángulos rotados en lugar de cajas alineadas con los ejes.
 
 El modelo se ha entrenado desde cero sobre un conjunto de teselas de imágenes CAD, con las mismas aumentaciones congeladas empleadas en yolo11m-cad-obb-v2. El checkpoint publicado es el `best.pt` de la época 110, dentro de un entrenamiento detenido por early stopping en la época 135. Su propósito es localizar elementos gráficos que aparecen rotados en planos y dibujos técnicos, donde las cajas axis-aligned generan mucho solapamiento y ruido en la etiqueta.
 
@@ -37,7 +37,7 @@ El entrenamiento se realizó desde cero (sin pesos preentrenados declarados) sob
 - Detección en una sola pasada (single-stage), con salida directa de cajas y puntuaciones de confianza.
 - Entrenado específicamente sobre teselas de imágenes CAD, por lo que su dominio nativo son planos, dibujos técnicos y componentes representados gráficamente.
 - Integración con la librería `ultralytics`, lo que permite usar la API estándar de inferencia, validación y exportación del ecosistema.
-- Compatible con el pipeline `object-detection` de HuggingFace a efectos de metadatos y catalogación.
+- Compatible con el pipeline `object-detection` de Hugging Face a efectos de metadatos y catalogación.
 - No soporta tool calling ni function calling.
 - No soporta agentes ni razonamiento multi-paso.
 - No tiene capacidades multilingües: no procesa ni genera texto.
@@ -80,9 +80,9 @@ La información proporcionada solo permite identificar dos alternativas del mism
 
 | Modelo | Tarea | Parámetros | mAP50-95 (val/test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sonspeed/yoloX-cad-obb | Detección OBB sobre CAD | 25,9 M (declarado) | 0,7006 (val) / 0,7108 (test) | no disponible | HuggingFace, 0 descargas |
-| sonspeed/yolo11m-cad-obb | Detección OBB sobre CAD | no disponible en la información consultada | no disponible en la información consultada | no disponible | HuggingFace |
-| sonspeed/yolo11m-cad-obb-v2 | Detección OBB sobre CAD | no disponible en la información consultada | no disponible en la información consultada | no disponible | HuggingFace |
+| sonspeed/yoloX-cad-obb | Detección OBB sobre CAD | 25,9 M (declarado) | 0,7006 (val) / 0,7108 (test) | no disponible | Hugging Face, 0 descargas |
+| sonspeed/yolo11m-cad-obb | Detección OBB sobre CAD | no disponible en la información consultada | no disponible en la información consultada | no disponible | Hugging Face |
+| sonspeed/yolo11m-cad-obb-v2 | Detección OBB sobre CAD | no disponible en la información consultada | no disponible en la información consultada | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -92,13 +92,13 @@ La información proporcionada solo permite identificar dos alternativas del mism
 - Dominio restringido: al haberse entrenado desde cero sobre teselas CAD, es previsible un rendimiento pobre en imágenes naturales sin un fine-tuning previo.
 - Licencia no disponible: no se puede asumir uso comercial. Además, la librería Ultralytics se distribuye bajo AGPL-3.0 o licencia Enterprise, por lo que conviene verificar las implicaciones legales de un modelo entrenado e inferido con ese ecosistema.
 - Sin validación externa: el repositorio acumula 0 descargas y 0 likes, y todas las métricas proceden del propio autor, sin evaluación independiente.
-- Metadatos inconsistentes: la fecha de creación indicada en HuggingFace (2026-09-30) es anómala y conviene tratarla con cautela.
+- Metadatos inconsistentes: la fecha de creación indicada en Hugging Face (2026-09-30) es anómala y conviene tratarla con cautela.
 - Modelo exclusivamente de visión: no procesa lenguaje, no admite instrucciones textuales y no puede emplearse en tareas de generación, razonamiento o agentes.
 - Riesgo de alucinación en sentido estricto no aplica, pero sí existe riesgo de falsos positivos con confianza alta en regiones ambiguas del plano, habitual en detectores con pocos datos de validación.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sonspeed/yoloX-cad-obb
+- Modelo en Hugging Face: https://huggingface.co/sonspeed/yoloX-cad-obb
 - Modelo relacionado (discusiones): https://huggingface.co/sonspeed/yolo11m-cad-obb/discussions
 - Modelo relacionado: https://huggingface.co/sonspeed/yolo11m-cad-obb-v2
 - Ficha de referencia en free2aitools para yolo11m-cad-obb: https://free2aitools.com/model/sonspeed/yolo11m-cad-obb

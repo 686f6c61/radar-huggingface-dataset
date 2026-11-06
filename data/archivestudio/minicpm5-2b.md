@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiniCPM5-2B es un modelo de lenguaje denso de 2.500 millones de parametros desarrollado por OpenBMB y publicado en HuggingFace bajo la cuenta ArchiveStudio. Es el segundo modelo de la serie MiniCPM5, sucesor de MiniCPM5-1B, y replica a mayor escala la misma receta de entrenamiento. Esta diseñado especificamente para despliegue en dispositivo (on-device), ejecucion local y entornos con recursos limitados.
+MiniCPM5-2B es un modelo de lenguaje denso de 2.500 millones de parametros desarrollado por OpenBMB y publicado en Hugging Face bajo la cuenta ArchiveStudio. Es el segundo modelo de la serie MiniCPM5, sucesor de MiniCPM5-1B, y replica a mayor escala la misma receta de entrenamiento. Esta diseñado especificamente para despliegue en dispositivo (on-device), ejecucion local y entornos con recursos limitados.
 
 El modelo se presenta como estado del arte en su clase de tamano (2B) entre los modelos open source, siendo competitivo incluso con modelos de clase 4B en tareas de codigo, matematicas, comprension de contexto largo, uso de herramientas y tareas agentivas. Su arquitectura base es de tipo Llama (transformer denso), con soporte de tool calling y contexto largo.
 
@@ -84,7 +84,7 @@ MiniCPM5-2B compite en la gama de 1,5-3B con Qwen2.5, Gemma 2 y Llama 3.2. Frent
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ArchiveStudio/MiniCPM5-2B
+- Hugging Face: https://huggingface.co/ArchiveStudio/MiniCPM5-2B
 - MiniCPM Tech Report: https://arxiv.org/pdf/2506.07900
 - Paper (arXiv): https://arxiv.org/abs/2602.09003
 - GitHub Repo: https://github.com/OpenBMB/MiniCPM

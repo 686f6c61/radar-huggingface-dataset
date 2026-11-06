@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`ishikaa/acquisition_student_medmcqa_confidence_sft_llama8b` es un modelo de generacion de texto publicado en HuggingFace por el usuario `ishikaa`, obtenido mediante ajuste supervisado (SFT) con la libreria TRL sobre un modelo base de la familia Llama. El recuento exacto de parametros en safetensors (8.030.261.248) coincide con el de Llama 3.1 8B, aunque el autor no declara explicitamente cual es el checkpoint de partida, por lo que se trata de una inferencia razonada y no de un dato confirmado.
+`ishikaa/acquisition_student_medmcqa_confidence_sft_llama8b` es un modelo de generacion de texto publicado en Hugging Face por el usuario `ishikaa`, obtenido mediante ajuste supervisado (SFT) con la libreria TRL sobre un modelo base de la familia Llama. El recuento exacto de parametros en safetensors (8.030.261.248) coincide con el de Llama 3.1 8B, aunque el autor no declara explicitamente cual es el checkpoint de partida, por lo que se trata de una inferencia razonada y no de un dato confirmado.
 
 El identificador del repositorio sugiere que el ajuste se ha orientado a responder preguntas de tipo test del dominio medico (MedMCQA) y a producir, junto con la respuesta, una estimacion de confianza que permita decidir cuando el modelo debe "adquirir" ayuda externa en lugar de contestar por si mismo. Este tipo de comportamiento es relevante para investigacion sobre calibracion, aprendizaje selectivo y sistemas con derivacion a un humano cuando la incertidumbre supera un umbral.
 
-La model card publicada es la plantilla automatica de HuggingFace, sin ninguna seccion completada: no hay informacion sobre datos de entrenamiento, hiperparametros, licencia, idiomas ni evaluacion. El repositorio tiene cero descargas y cero likes, y no cuenta con resultados de benchmarks publicados. Cualquier uso en produccion exige, por tanto, una evaluacion propia previa.
+La model card publicada es la plantilla automatica de Hugging Face, sin ninguna seccion completada: no hay informacion sobre datos de entrenamiento, hiperparametros, licencia, idiomas ni evaluacion. El repositorio tiene cero descargas y cero likes, y no cuenta con resultados de benchmarks publicados. Cualquier uso en produccion exige, por tanto, una evaluacion propia previa.
 
 ## Especificaciones tecnicas
 
@@ -37,7 +37,7 @@ Respecto al entrenamiento, el tag `sft` y la presencia de `trl` indican un ajust
 - Respuesta a preguntas de opcion multiple del dominio medico, segun el identificador del modelo (MedMCQA).
 - Emision de una senal de confianza asociada a la respuesta, presumiblemente como parte del texto generado; el formato exacto no esta documentado.
 - Comportamiento de adquisicion selectiva: derivar o solicitar informacion adicional cuando la confianza es baja (inferido del nombre del repositorio, no verificado).
-- Compatibilidad con `text-generation-inference` y con los endpoints de HuggingFace (`endpoints_compatible`), lo que permite desplegarlo con ese stack.
+- Compatibilidad con `text-generation-inference` y con los endpoints de Hugging Face (`endpoints_compatible`), lo que permite desplegarlo con ese stack.
 - Soporte de tool calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible.
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada en cuantizacion de 4 bits: aproximadamente 5-7 GB.
 - GPU de datacenter: A100 40/80 GB, H100, L40S o A6000 cubren el modelo sin problemas; una A100 40 GB permite varias replicas en 4 bits.
 - GPU de consumo: cabe en una RTX 4090 (24 GB) en fp16 con margen ajustado y en 4-8 bits con comodidad; una RTX 3090 (24 GB) es igualmente viable. En GPUs de 12-16 GB solo es realista en 4 bits y con contextos cortos.
-- Opciones de despliegue: `transformers` de forma nativa; `text-generation-inference` y los endpoints de HuggingFace estan declarados como compatibles por los tags del repositorio. vLLM, Ollama o llama.cpp no estan declarados como soportados y requeririan generar pesos GGUF/AWQ por cuenta propia.
+- Opciones de despliegue: `transformers` de forma nativa; `text-generation-inference` y los endpoints de Hugging Face estan declarados como compatibles por los tags del repositorio. vLLM, Ollama o llama.cpp no estan declarados como soportados y requeririan generar pesos GGUF/AWQ por cuenta propia.
 - Latencia y throughput: no disponible. No se publican mediciones.
 
 ## Comparativa con modelos similares
@@ -73,10 +73,10 @@ El modelo base no esta declarado, por lo que la comparacion es orientativa. Los 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `ishikaa/acquisition_student_medmcqa_confidence_sft_llama8b` | 8,03 B | no disponible | no disponible | HuggingFace, safetensors | Modelo experimental sin model card ni benchmarks |
-| Llama 3.1 8B Instruct | 8,03 B | 128 k | Llama 3.1 Community License | HuggingFace, amplio ecosistema | Base generalista con soporte de tool calling; requiere aceptar la licencia |
-| Mistral 7B Instruct | 7,24 B | 32 k | Apache 2.0 | HuggingFace, amplio ecosistema | Licencia permisiva, buen rendimiento generalista |
-| Qwen2.5 7B Instruct | 7,62 B | 128 k | Apache 2.0 | HuggingFace, amplio ecosistema | Multilingue y con soporte de tool calling |
+| `ishikaa/acquisition_student_medmcqa_confidence_sft_llama8b` | 8,03 B | no disponible | no disponible | Hugging Face, safetensors | Modelo experimental sin model card ni benchmarks |
+| Llama 3.1 8B Instruct | 8,03 B | 128 k | Llama 3.1 Community License | Hugging Face, amplio ecosistema | Base generalista con soporte de tool calling; requiere aceptar la licencia |
+| Mistral 7B Instruct | 7,24 B | 32 k | Apache 2.0 | Hugging Face, amplio ecosistema | Licencia permisiva, buen rendimiento generalista |
+| Qwen2.5 7B Instruct | 7,62 B | 128 k | Apache 2.0 | Hugging Face, amplio ecosistema | Multilingue y con soporte de tool calling |
 
 ## Limitaciones y advertencias
 
@@ -92,7 +92,7 @@ El modelo base no esta declarado, por lo que la comparacion es orientativa. Los 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ishikaa/acquisition_student_medmcqa_confidence_sft_llama8b
+- Modelo en Hugging Face: https://huggingface.co/ishikaa/acquisition_student_medmcqa_confidence_sft_llama8b
 - Referencia citada en la plantilla de la model card (calculo de impacto de carbono), Lacoste et al. (2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning: https://mlco2.github.io/impact
 - Las busquedas web realizadas no devolvieron ningun resultado relacionado con este modelo: los enlaces obtenidos (foros de Reddit, repositorios de jailbreaks, hilos sobre ChatGPT) no guardan relacion con el modelo analizado.

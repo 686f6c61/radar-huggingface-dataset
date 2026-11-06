@@ -2,7 +2,7 @@
 
 ## Resumen
 
-voidwaveDev/phoneme-v3 es un repositorio de pesos publicado en HuggingFace por el usuario voidwaveDev. La unica informacion verificable disponible en el momento de redactar esta ficha es que el repositorio ocupa 0,3 GB, que esta etiquetado con el formato ONNX y que su licencia figura como "unknown". No se ha publicado model card con descripcion, pipeline declarado, idiomas soportados ni resultados de evaluacion.
+voidwaveDev/phoneme-v3 es un repositorio de pesos publicado en Hugging Face por el usuario voidwaveDev. La unica informacion verificable disponible en el momento de redactar esta ficha es que el repositorio ocupa 0,3 GB, que esta etiquetado con el formato ONNX y que su licencia figura como "unknown". No se ha publicado model card con descripcion, pipeline declarado, idiomas soportados ni resultados de evaluacion.
 
 El nombre del repositorio sugiere un modelo relacionado con el procesamiento de fonemas (por ejemplo, conversion grafema-fonema, alineamiento fonetico o un componente de un pipeline de sintesis de voz), pero esta interpretacion no esta confirmada por ninguna fuente del autor y debe tratarse como una hipotesis de trabajo, no como un dato tecnico.
 
@@ -82,5 +82,5 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/voidwaveDev/phoneme-v3
+- Repositorio en Hugging Face: https://huggingface.co/voidwaveDev/phoneme-v3
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la busqueda web realizada. Los resultados devueltos por la busqueda corresponden a la banda de rock progresivo Introitus (progarchives.com) y no guardan relacion con este repositorio.

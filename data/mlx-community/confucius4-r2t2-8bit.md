@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 | Modelo | Parametros | Contexto | Tipo | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
 | mlx-community/Confucius4-R2T2-8bit (este) | 2.038.052.480 | no disponible | ASR streaming, LM a 8 bits, encoder bf16 | zh, en | NetEase Youdao Model Use License Agreement | MLX (Apple Silicon), safetensors |
-| netease-youdao/Confucius4-R2T2 (original) | no disponible | no disponible | ASR streaming, pesos sin cuantizar | zh, en | NetEase Youdao Model Use License Agreement | PyTorch / HuggingFace |
-| Qwen/Qwen3-ASR-1.7B | ≈1,7 mil millones (solo LM, según denominación) | no disponible | ASR base sin el ajuste R2T2 | no disponible | no disponible | HuggingFace |
+| netease-youdao/Confucius4-R2T2 (original) | no disponible | no disponible | ASR streaming, pesos sin cuantizar | zh, en | NetEase Youdao Model Use License Agreement | PyTorch / Hugging Face |
+| Qwen/Qwen3-ASR-1.7B | ≈1,7 mil millones (solo LM, según denominación) | no disponible | ASR base sin el ajuste R2T2 | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparado (WER, latencia, throughput) entre estas alternativas en la información proporcionada, por lo que la comparación se limita a parámetros, formato y licencia.
 
@@ -91,11 +91,11 @@ No se dispone de datos de rendimiento comparado (WER, latencia, throughput) entr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mlx-community/Confucius4-R2T2-8bit
+- Repositorio Hugging Face: https://huggingface.co/mlx-community/Confucius4-R2T2-8bit
 - Modelo base: https://huggingface.co/netease-youdao/Confucius4-R2T2
 - Modelo Qwen3-ASR-1.7B: https://huggingface.co/Qwen/Qwen3-ASR-1.7B
 - Licencia (texto): https://github.com/netease-youdao/Confucius4-R2T2/blob/master/MODEL_LICENSE
 - Bucle R2T2 y motor MLX en Swift: https://github.com/xocialize/qwen3-asr-mlx-swift
 - Paquete stt de MLXEngine: https://github.com/xocialize/mlx-r2t2-stt-swift
 - Fork de mlx-audio usado en la conversión: https://github.com/xocialize/mlx-audio
-- Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces anteriores proceden de la información del repositorio de HuggingFace.
+- Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces anteriores proceden de la información del repositorio de Hugging Face.

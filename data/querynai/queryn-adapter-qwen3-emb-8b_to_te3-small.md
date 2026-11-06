@@ -79,8 +79,8 @@ No se han encontrado adaptadores de traducción de embeddings comparables en el 
 
 ## Enlaces
 
-- [HuggingFace - QuerynAi/queryn-adapter-qwen3-emb-8b_to_te3-small](https://huggingface.co/QuerynAi/queryn-adapter-qwen3-emb-8b_to_te3-small)
+- [Hugging Face - QuerynAi/queryn-adapter-qwen3-emb-8b_to_te3-small](https://huggingface.co/QuerynAi/queryn-adapter-qwen3-emb-8b_to_te3-small)
 - [Colección de adaptadores de QuerynAi](https://huggingface.co/collections/QuerynAi/queryn-embedding-adapters-6a9499470ee93453d02110b4)
-- [Qwen3-Embedding-8B en HuggingFace](https://huggingface.co/Qwen/Qwen3-Embedding-8B)
+- [Qwen3-Embedding-8B en Hugging Face](https://huggingface.co/Qwen/Qwen3-Embedding-8B)
 - [Repositorio oficial de Qwen3-Embedding en GitHub](https://github.com/QwenLM/Qwen3-Embedding)
 - [Qwen3-Embedding-8B en Microsoft Foundry](https://ai.azure.com/catalog/models/qwen--qwen3-embedding-8b)

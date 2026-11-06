@@ -85,6 +85,6 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/4-alokk/maya-go-macos
+- Repositorio Hugging Face: https://huggingface.co/4-alokk/maya-go-macos
 - Modelo base: https://huggingface.co/maya-research/maya2-native
 - Codec Mimi (Kyutai): https://huggingface.co/kyutai/mimi

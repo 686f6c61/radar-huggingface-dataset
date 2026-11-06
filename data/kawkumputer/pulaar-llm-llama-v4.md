@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Pulaar-llm-llama-v4 es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario kawkumputer sobre el modelo base meta-llama/Llama-3.1-8B. Se trata, por tanto, de un fine-tuning parametrizado eficiente (PEFT) y no de un modelo completo: el repositorio contiene únicamente los pesos del adaptador (4,5 GB en formato safetensors), que deben combinarse con el checkpoint original de Llama 3.1 8B para su uso. El nombre sugiere un enfoque hacia la lengua pulaar (fula), aunque la model card no lo confirma ni aporta detalles sobre el corpus de entrenamiento.
+Pulaar-llm-llama-v4 es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario kawkumputer sobre el modelo base meta-llama/Llama-3.1-8B. Se trata, por tanto, de un fine-tuning parametrizado eficiente (PEFT) y no de un modelo completo: el repositorio contiene únicamente los pesos del adaptador (4,5 GB en formato safetensors), que deben combinarse con el checkpoint original de Llama 3.1 8B para su uso. El nombre sugiere un enfoque hacia la lengua pulaar (fula), aunque la model card no lo confirma ni aporta detalles sobre el corpus de entrenamiento.
 
 El modelo hereda de Llama 3.1 8B su arquitectura transformer decoder-only, su ventana de contexto de 128 000 tokens y su tokenizador multilingüe, así como la licencia comunitaria de Meta (Llama 3.1 Community License), que impone restricciones de uso comercial y de redistribución. La relevancia de esta publicación es limitada: se trata de un adaptador sin documentación técnica, sin métricas de evaluación, sin dataset declarado y con cero descargas en el momento de la ficha, por lo que debe tratarse como un artefacto experimental más que como un modelo listo para producción.
 
@@ -25,7 +25,7 @@ La ficha que sigue documenta lo que se puede inferir de los metadatos y del mode
 
 El artefacto es un adaptador LoRA entrenado con la librería PEFT 0.21.2 sobre meta-llama/Llama-3.1-8B. Llama 3.1 8B es un transformer decoder-only con normalización RMSNorm, activación SwiGLU, embeddings rotatorios (RoPE) y atención con GQA (grouped-query attention); su contexto nativo es de 128 000 tokens y fue preentrenado con más de 15 billones de tokens según la documentación de Meta. El adaptador LoRA congela los pesos base e inyecta matrices de bajo rango en determinadas capas, de modo que el entrenamiento es mucho más económico en memoria y cómputo que un fine-tuning completo.
 
-No se dispone de información sobre el dataset de instrucciones, el número de tokens de entrenamiento, la configuración de rangos y alpha del LoRA, la tasa de aprendizaje, el número de épocas ni si se aplicaron técnicas de alineación adicionales (SFT, DPO, RLHF). La model card es la plantilla por defecto de HuggingFace sin rellenar, con todos los campos marcados como "[More Information Needed]". Tampoco se documenta el objetivo declarado del fine-tuning más allá de la posible especialización en pulaar que sugiere el nombre.
+No se dispone de información sobre el dataset de instrucciones, el número de tokens de entrenamiento, la configuración de rangos y alpha del LoRA, la tasa de aprendizaje, el número de épocas ni si se aplicaron técnicas de alineación adicionales (SFT, DPO, RLHF). La model card es la plantilla por defecto de Hugging Face sin rellenar, con todos los campos marcados como "[More Information Needed]". Tampoco se documenta el objetivo declarado del fine-tuning más allá de la posible especialización en pulaar que sugiere el nombre.
 
 ## Capacidades
 
@@ -44,7 +44,7 @@ No se dispone de información sobre el dataset de instrucciones, el número de t
 - Evaluación de técnicas PEFT: útil como caso de estudio de cómo un LoRA de 4,5 GB afecta al comportamiento de un modelo de 8B en tareas de generación libre.
 - Fine-tuning incremental sobre dominio específico: al estar en formato PEFT, se puede seguir entrenando o combinar con otros adaptadores mediante técnicas como LoRA merging, siempre que se valide el resultado.
 - Despliegue en entornos con recursos limitados: una vez fusionado y cuantizado a 4 bits, el modelo resultante podría ejecutarse en GPUs de consumo (por ejemplo, RTX 3060 de 12 GB o superiores) para tareas de generación de texto de baja latencia.
-- Docencia y demostraciones: sirve para ilustrar el flujo completo de publicación de un adaptador LoRA en HuggingFace, aunque su falta de documentación lo hace poco recomendable como ejemplo de buenas prácticas.
+- Docencia y demostraciones: sirve para ilustrar el flujo completo de publicación de un adaptador LoRA en Hugging Face, aunque su falta de documentación lo hace poco recomendable como ejemplo de buenas prácticas.
 
 ## Benchmarks y rendimiento
 
@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kawkumputer/pulaar-llm-llama-v4
+- Repositorio Hugging Face: https://huggingface.co/kawkumputer/pulaar-llm-llama-v4
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Documentación de Llama 3.1 (Meta): https://ai.meta.com/blog/meta-llama-3-1/
 - Librería PEFT: https://github.com/huggingface/peft

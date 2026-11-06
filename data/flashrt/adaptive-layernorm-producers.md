@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Comparativa con modelos similares
 
-No disponible. Este paquete no tiene equivalentes directos en el ecosistema de modelos de IA publicados en HuggingFace con los que comparar parámetros, contexto o rendimiento. Su función es ortogonal a los modelos: es un optimizador de kernels para runtimes específicos. Alternativas conceptuales serían kernels manuales de fusión de LayerNorm+quant en frameworks como vLLM o TensorRT-LLM, pero no hay datos públicos comparables.
+No disponible. Este paquete no tiene equivalentes directos en el ecosistema de modelos de IA publicados en Hugging Face con los que comparar parámetros, contexto o rendimiento. Su función es ortogonal a los modelos: es un optimizador de kernels para runtimes específicos. Alternativas conceptuales serían kernels manuales de fusión de LayerNorm+quant en frameworks como vLLM o TensorRT-LLM, pero no hay datos públicos comparables.
 
 ## Limitaciones y advertencias
 
@@ -85,5 +85,5 @@ No disponible. Este paquete no tiene equivalentes directos en el ecosistema de m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/flashrt/adaptive-layernorm-producers
+- Repositorio Hugging Face: https://huggingface.co/flashrt/adaptive-layernorm-producers
 - Repositorio upstream FlashRT: https://github.com/LiangSu8899/FlashRT

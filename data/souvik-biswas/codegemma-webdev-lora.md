@@ -101,7 +101,7 @@ Frente a estas alternativas, el adaptador no aporta cifras verificables: su inte
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/souvik-biswas/codegemma-webdev-lora
+- Modelo en Hugging Face: https://huggingface.co/souvik-biswas/codegemma-webdev-lora
 - Modelo base: https://huggingface.co/google/codegemma-1.1-2b
 - Repositorio de LLaMA-Factory (herramienta de ajuste indicada en las etiquetas): https://github.com/hiyouga/LLaMA-Factory
 - Librería PEFT: https://github.com/huggingface/peft

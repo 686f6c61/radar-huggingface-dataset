@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`wz7475/qwen2.5-7b-instruct-katcher-legal-sftmix-oasst1-every56` es un ajuste fino publicado en HuggingFace por el usuario wz7475 sobre el modelo base Qwen2.5-7B-Instruct. El identificador sugiere una especializacion en dominio juridico ("legal") mediante una mezcla de datos de ajuste supervisado, combinada con el corpus OASST1 y una estrategia de muestreo o guardado de checkpoints etiquetada como "every56". La model card es la plantilla autogenerada de HuggingFace y no aporta informacion sobre datos, hiperparametros ni evaluacion.
+`wz7475/qwen2.5-7b-instruct-katcher-legal-sftmix-oasst1-every56` es un ajuste fino publicado en Hugging Face por el usuario wz7475 sobre el modelo base Qwen2.5-7B-Instruct. El identificador sugiere una especializacion en dominio juridico ("legal") mediante una mezcla de datos de ajuste supervisado, combinada con el corpus OASST1 y una estrategia de muestreo o guardado de checkpoints etiquetada como "every56". La model card es la plantilla autogenerada de Hugging Face y no aporta informacion sobre datos, hiperparametros ni evaluacion.
 
 El modelo resuelve, en principio, la adaptacion de un LLM generalista de 7.600 millones de parametros a tareas de redaccion y consulta juridica, manteniendo las capacidades del modelo base. Es relevante como ejemplo de fine-tuning ligero de bajo coste sobre Qwen2.5, una familia muy extendida en despliegues locales por su licencia permisiva y su ventana de contexto de 128K tokens, si bien esas caracteristicas pertenecen al modelo base y no estan confirmadas en este repositorio.
 
@@ -94,7 +94,7 @@ La comparacion de rendimiento no esta disponible: no existen resultados de bench
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-sftmix-oasst1-every56
+- Repositorio en Hugging Face: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-sftmix-oasst1-every56
 - Modelo base Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Informe tecnico de Qwen2.5: https://arxiv.org/abs/2412.15115
 - Blog de Qwen2.5: https://qwenlm.github.io/blog/qwen2.5/

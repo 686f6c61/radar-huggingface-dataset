@@ -6,7 +6,7 @@ Este modelo es una version derivada de la familia GLM-5.3, publicada por el usua
 
 La arquitectura declarada en las etiquetas es glm_moe_dsa, lo que apunta a un transformer con mezcla de expertos (MoE) y algun esquema de atencion dispersa o dinamica denotado como DSA. El dato real de safetensors indica 138.092.850.560 parametros totales (unos 138.100 millones), lo que situa al modelo en la gama alta de los modelos abiertos de gran tamano. El repositorio ocupa 276,3 GB, coherente con una cuantizacion de muy baja precision mas posibles artefactos auxiliares.
 
-Su relevancia actual es doble: por un lado, permite ejecutar un modelo MoE de ~138.000 millones de parametros en hardware de gama alta pero no necesariamente de centro de datos, gracias a la cuantizacion EXL3 a 2,75 bits; por otro, las etiquetas dgx-spark y gb10 sugieren que esta pensado para desplegarse en equipos con la plataforma NVIDIA GB10 Grace Blackwell. El acceso esta restringido en HuggingFace y requiere aceptar condiciones, y el modelo solo declara soporte para ingles y chino.
+Su relevancia actual es doble: por un lado, permite ejecutar un modelo MoE de ~138.000 millones de parametros en hardware de gama alta pero no necesariamente de centro de datos, gracias a la cuantizacion EXL3 a 2,75 bits; por otro, las etiquetas dgx-spark y gb10 sugieren que esta pensado para desplegarse en equipos con la plataforma NVIDIA GB10 Grace Blackwell. El acceso esta restringido en Hugging Face y requiere aceptar condiciones, y el modelo solo declara soporte para ingles y chino.
 
 ## Especificaciones tecnicas
 
@@ -85,12 +85,12 @@ No disponible. La informacion proporcionada no incluye benchmarks ni datos de re
 - Datos de contexto y parametros activos desconocidos: impide dimensionar correctamente la cache KV y planificar el hardware.
 - Coherencia de la ficha: la fecha de creacion indicada (2026-10-05) es posterior a la fecha actual de referencia, y el tamano del repositorio (276,3 GB) no concuerda con el calculo de pesos a 2,75 BPW (~47,5 GB). Conviene verificar los ficheros del repositorio antes de usarlo.
 - Licencia MIT: permite uso comercial y modificacion, pero el autor no ofrece garantias y la responsabilidad del uso recae en el usuario.
-- Acceso restringido: requiere aceptar condiciones en HuggingFace, lo que anade una dependencia operativa para cualquier despliegue.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face, lo que anade una dependencia operativa para cualquier despliegue.
 - Proyecto de autor individual: con 102 descargas y 10 likes, se trata de una publicacion con muy poca validacion por parte de la comunidad.
 - Procedencia y trazabilidad: no se documenta el modelo GLM-5.3 original ni el proceso de cuantizacion o abliteration, lo que dificulta auditar el resultado.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/drowzeys/keys-GLM-5.3-EXL3-2.75BPW-Abliterated
+- Hugging Face: https://huggingface.co/drowzeys/keys-GLM-5.3-EXL3-2.75BPW-Abliterated
 - Modelo base: https://huggingface.co/drowzeys/keys-GLM-5.3-EXL3-2.75BPW
 - Nota: la busqueda web realizada no devolvio ningun enlace relevante sobre el modelo (los resultados obtenidos eran preguntas de Zhihu sin relacion con el tema), por lo que no se pueden aportar papers, blogs, repositorios ni demos adicionales.

@@ -98,7 +98,7 @@ La comparación relevante no es de rendimiento bruto sino de especialización: B
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tilkis/Bihter-1.5B
+- Modelo en Hugging Face: https://huggingface.co/tilkis/Bihter-1.5B
 - Dataset de entrenamiento: https://huggingface.co/datasets/tilkis/bihter-begonvil-veri
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 

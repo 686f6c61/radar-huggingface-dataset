@@ -90,8 +90,8 @@ No hay datos comparativos publicados en la informacion proporcionada. La referen
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| XvKuoMing/so101_chess | 5,6 B | no disponible | no disponible (hereda la del base) | HuggingFace, via LeRobot, 0 descargas y 0 likes en el momento de la consulta |
-| allenai/MolmoAct2-SO100_101 | no disponible en esta informacion | no disponible | no disponible en esta informacion | HuggingFace, modelo base del fine-tuning |
+| XvKuoMing/so101_chess | 5,6 B | no disponible | no disponible (hereda la del base) | Hugging Face, via LeRobot, 0 descargas y 0 likes en el momento de la consulta |
+| allenai/MolmoAct2-SO100_101 | no disponible en esta informacion | no disponible | no disponible en esta informacion | Hugging Face, modelo base del fine-tuning |
 
 Otras alternativas de la misma categoria (politicas VLA para manipulacion, como OpenVLA o pi0) no aparecen en la busqueda web realizada, por lo que no se incluyen datos numericos de comparacion: no disponible.
 
@@ -111,7 +111,7 @@ Otras alternativas de la misma categoria (politicas VLA para manipulacion, como 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/XvKuoMing/so101_chess
+- Modelo en Hugging Face: https://huggingface.co/XvKuoMing/so101_chess
 - Dataset de entrenamiento: https://huggingface.co/datasets/XvKuoMing/so101_chess
 - Modelo base: https://huggingface.co/allenai/MolmoAct2-SO100_101
 - Video de movimientos: https://huggingface.co/XvKuoMing/so101_chess/resolve/main/media/reel_moves.mp4

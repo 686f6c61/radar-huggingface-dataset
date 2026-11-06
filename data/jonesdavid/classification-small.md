@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jonesdavid/classification-small` es un repositorio de HuggingFace publicado por el usuario jonesdavid que contiene una implementación funcional de la arquitectura Flamingo orientada a tareas de clasificación, en una configuración que el propio autor denomina "nano". No se trata de un modelo entrenado ni de un checkpoint con resultados verificados: la model card indica de forma explícita que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint evaluado. El repositorio prioriza código transparente y pruebas reproducibles, y omite deliberadamente cualquier afirmación sobre benchmarks.
+`jonesdavid/classification-small` es un repositorio de Hugging Face publicado por el usuario jonesdavid que contiene una implementación funcional de la arquitectura Flamingo orientada a tareas de clasificación, en una configuración que el propio autor denomina "nano". No se trata de un modelo entrenado ni de un checkpoint con resultados verificados: la model card indica de forma explícita que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint evaluado. El repositorio prioriza código transparente y pruebas reproducibles, y omite deliberadamente cualquier afirmación sobre benchmarks.
 
 El peso real del checkpoint, medido a partir de los metadatos de safetensors, es de 49.600 parámetros totales, lo que lo sitúa en un orden de magnitud muy inferior al de cualquier modelo de lenguaje utilizable en producción. El tamaño del repositorio es de 0,0 GB. La arquitectura declarada combina atención dilatada, fusión multimodal mediante concatenación y MLP, activación ReLU y normalización ScaleNorm. La licencia es MIT, lo que permite uso comercial y modificación sin restricciones prácticamente.
 
@@ -67,7 +67,7 @@ No hay modelos comparables directos en la información disponible, ya que se tra
 
 | Modelo | Parametros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jonesdavid/classification-small | 49.600 | no disponible | no | MIT | HuggingFace, 12 descargas |
+| jonesdavid/classification-small | 49.600 | no disponible | no | MIT | Hugging Face, 12 descargas |
 | OpenFlamingo (referencia de familia) | 3B a 9B | no disponible en la informacion proporcionada | si | segun variante | publico |
 | IDEFICS (referencia de familia) | 9B y 80B | no disponible en la informacion proporcionada | si | segun variante | publico |
 
@@ -81,12 +81,12 @@ Los datos de OpenFlamingo e IDEFICS se incluyen únicamente como referencia de e
 - Sesgos conocidos: no evaluados. No se ha realizado ninguna auditoría de sesgo.
 - Limitaciones de contexto e idioma: no disponibles, al no haberse documentado ni la ventana de contexto ni los idiomas de entrenamiento.
 - Restricciones de licencia: la licencia MIT permite uso comercial, modificación y redistribución con atribución y sin garantía. La propia model card advierte de que deben revisarse por separado los términos de los datos de origen cuando el repositorio se use con conjuntos de datos externos.
-- Carga con APIs genéricas: al ser una implementación personalizada, las utilidades automáticas de HuggingFace (`AutoModel`, `pipeline`) no funcionarán sin un adaptador explícito.
+- Carga con APIs genéricas: al ser una implementación personalizada, las utilidades automáticas de Hugging Face (`AutoModel`, `pipeline`) no funcionarán sin un adaptador explícito.
 - Idoneidad para producción: nula en su estado actual. Cualquier uso en producción exigiría entrenamiento, evaluación con múltiples semillas, línea base de capacidad comparable y documentación de resultados separada de los valores por defecto.
 - Fecha de publicación registrada: 2026-10-08, con actualización el mismo día; el repositorio no muestra señales de mantenimiento posterior.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jonesdavid/classification-small
+- Repositorio en Hugging Face: https://huggingface.co/jonesdavid/classification-small
 - No se han encontrado papers, blogs, repositorios de código adicionales ni demos asociados a este modelo en los resultados de búsqueda disponibles.
 - Los resultados de búsqueda web devueltos (Proceedings of EACL 2026, arXiv 2507.10722, papers.baulab.info, Brain 147(3):980, arXiv 2512.06502) no guardan relación con este modelo y no se incluyen como referencias del mismo.

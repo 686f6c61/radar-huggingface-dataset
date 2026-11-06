@@ -58,10 +58,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen/Qwen3.8-27B (original) | 27B | 262.144 | BF16 (safetensors) | Apache-2.0 | HuggingFace |
-| unsloth/Qwen3.8-27B-NVFP4 | 27B | 262.144 | NVFP4 + F8 (safetensors) | Apache-2.0 | HuggingFace |
-| lg4/Qwen3.8-27B-NVFP4-MTP-GGUF (este repo) | 27B | 262.144 | NVFP4/BF16 (GGUF) | Apache-2.0 | HuggingFace |
-| unsloth/Qwen3.8-27B-GGUF | 27B | 262.144 | GGUF (varias) | Apache-2.0 | HuggingFace |
+| Qwen/Qwen3.8-27B (original) | 27B | 262.144 | BF16 (safetensors) | Apache-2.0 | Hugging Face |
+| unsloth/Qwen3.8-27B-NVFP4 | 27B | 262.144 | NVFP4 + F8 (safetensors) | Apache-2.0 | Hugging Face |
+| lg4/Qwen3.8-27B-NVFP4-MTP-GGUF (este repo) | 27B | 262.144 | NVFP4/BF16 (GGUF) | Apache-2.0 | Hugging Face |
+| unsloth/Qwen3.8-27B-GGUF | 27B | 262.144 | GGUF (varias) | Apache-2.0 | Hugging Face |
 
 La principal diferencia frente a las alternativas es la integración del cabezal MTP en el GGUF y la optimización específica para Blackwell con NVFP4 nativo, además de la escalera de precisión/tamaño que permite elegir entre fidelidad máxima (`ORIG`) o huella mínima (`LOW`).
 
@@ -76,7 +76,7 @@ La principal diferencia frente a las alternativas es la integración del cabezal
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/lg4/Qwen3.8-27B-NVFP4-MTP-GGUF
+- Repositorio Hugging Face: https://huggingface.co/lg4/Qwen3.8-27B-NVFP4-MTP-GGUF
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Checkpoint fuente cuantizado: https://huggingface.co/unsloth/Qwen3.8-27B-NVFP4
 - GGUF de referencia de unsloth: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF

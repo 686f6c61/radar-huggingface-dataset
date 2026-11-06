@@ -82,11 +82,11 @@ Se recomienda tratar estas cifras como afirmaciones del publicador, no como eval
 
 | Modelo | Parametros | Contexto | Formato / cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dicksondickson/Qwen3.8-27B-Uncensored-oQ8e-bf16-mtp-MLX (este) | 27,8 B | 262K | MLX safetensors, 8 bits + bf16 | MIT | HuggingFace, 0 descargas |
-| orcarouter/Qwen3.8-27B-Uncensored (base) | 27,8 B | 262K | safetensors originales; tambien en Ollama | MIT | HuggingFace y Ollama |
-| zomiailabs/Qwen3.8-27B-Uncensored-MLX | no disponible | no disponible | MLX | no disponible | HuggingFace |
-| daviddan-241/qwen3.8-27b-uncensored-mlx | 27 B (dato del nombre) | no disponible | MLX, subcarpetas de 2/4/6/8 bits (afin, group size 64) | no disponible | HuggingFace y GitHub |
-| intheblue/Qwen3.8-27B-AEON-Ultimate-Uncensored-MLX-MTP-Drafter | no disponible | no disponible | MLX, orientado a decodificacion especulativa (drafter) | no disponible | HuggingFace |
+| dicksondickson/Qwen3.8-27B-Uncensored-oQ8e-bf16-mtp-MLX (este) | 27,8 B | 262K | MLX safetensors, 8 bits + bf16 | MIT | Hugging Face, 0 descargas |
+| orcarouter/Qwen3.8-27B-Uncensored (base) | 27,8 B | 262K | safetensors originales; tambien en Ollama | MIT | Hugging Face y Ollama |
+| zomiailabs/Qwen3.8-27B-Uncensored-MLX | no disponible | no disponible | MLX | no disponible | Hugging Face |
+| daviddan-241/qwen3.8-27b-uncensored-mlx | 27 B (dato del nombre) | no disponible | MLX, subcarpetas de 2/4/6/8 bits (afin, group size 64) | no disponible | Hugging Face y GitHub |
+| intheblue/Qwen3.8-27B-AEON-Ultimate-Uncensored-MLX-MTP-Drafter | no disponible | no disponible | MLX, orientado a decodificacion especulativa (drafter) | no disponible | Hugging Face |
 
 Todas las alternativas comparten el mismo origen (Qwen3.8-27B abliterado) y el mismo nicho de ejecucion en Apple Silicon, por lo que la eleccion depende principalmente de la precision deseada y de si se necesita un modelo borrador MTP para acelerar la decodificacion. No hay datos publicos de rendimiento que permitan ordenarlas por calidad.
 
@@ -106,7 +106,7 @@ Todas las alternativas comparten el mismo origen (Qwen3.8-27B abliterado) y el m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dicksondickson/Qwen3.8-27B-Uncensored-oQ8e-bf16-mtp-MLX
+- Modelo en Hugging Face: https://huggingface.co/dicksondickson/Qwen3.8-27B-Uncensored-oQ8e-bf16-mtp-MLX
 - Modelo base: https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored
 - Modelo base en Ollama: https://ollama.com/orcarouter/Qwen3.8-27B-Uncensored
 - Repositorio GitHub de la conversion abliterada a MLX: https://github.com/daviddan-241/qwen3.8-27b-uncensored-mlx

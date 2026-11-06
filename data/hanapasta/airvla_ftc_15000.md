@@ -89,9 +89,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 | Modelo | Parametros | Dominio | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AirVLA FT-C (este modelo) | 4,03 mil millones | Manipulacion aerea (dron con brazo de 2 DoF) | no disponible | MIT | HuggingFace; 0 descargas |
-| lerobot/pi0 (modelo base) | no disponible | Vision-language-action generalista para manipulacion | no disponible | no disponible | HuggingFace (LeRobot) |
-| Politicas VLA generalistas para brazos fijos (p. ej. OpenVLA) | no disponible | Manipulacion con brazo fijo | no disponible | no disponible | HuggingFace |
+| AirVLA FT-C (este modelo) | 4,03 mil millones | Manipulacion aerea (dron con brazo de 2 DoF) | no disponible | MIT | Hugging Face; 0 descargas |
+| lerobot/pi0 (modelo base) | no disponible | Vision-language-action generalista para manipulacion | no disponible | no disponible | Hugging Face (LeRobot) |
+| Politicas VLA generalistas para brazos fijos (p. ej. OpenVLA) | no disponible | Manipulacion con brazo fijo | no disponible | no disponible | Hugging Face |
 
 La comparación cuantitativa no es posible con la información disponible: no se han facilitado cifras de parámetros, contexto ni resultados del modelo base ni de alternativas bajo el mismo protocolo. La diferencia funcional principal frente a las políticas VLA convencionales es el dominio: AirVLA FT-C está ajustado para una base flotante con brazo de 2 DoF y pinza paralela, no para un manipulador fijo de sobremesa.
 
@@ -113,7 +113,7 @@ La comparación cuantitativa no es posible con la información disponible: no se
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hanapasta/airvla_ftc_15000
+- Modelo en Hugging Face: https://huggingface.co/hanapasta/airvla_ftc_15000
 - Repositorio de código, guía de reproducción y registro experimental completo: https://github.com/robotics-hana/drone-version2
 - Conjunto de datos de entrenamiento: https://huggingface.co/datasets/hanapasta/airvla_v21
 - Modelo base: https://huggingface.co/lerobot/pi0

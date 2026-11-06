@@ -2,9 +2,9 @@
 
 ## Resumen
 
-kepinV1 es un modelo de lenguaje publicado por el usuario bygrafy en HuggingFace bajo licencia MIT. Se distribuye exclusivamente en formato GGUF, lo que lo orienta a inferencia local con llama.cpp y herramientas compatibles. El repositorio ocupa 1,9 GB y los pesos en safetensors suman 3.085.938.688 parámetros (aproximadamente 3,1 mil millones), un tamaño que encaja en la categoria de modelos pequenos aptos para GPU de consumo.
+kepinV1 es un modelo de lenguaje publicado por el usuario bygrafy en Hugging Face bajo licencia MIT. Se distribuye exclusivamente en formato GGUF, lo que lo orienta a inferencia local con llama.cpp y herramientas compatibles. El repositorio ocupa 1,9 GB y los pesos en safetensors suman 3.085.938.688 parámetros (aproximadamente 3,1 mil millones), un tamaño que encaja en la categoria de modelos pequenos aptos para GPU de consumo.
 
-La model card publicada es practicamente vacia: solo contiene la declaracion de licencia MIT, sin informacion sobre arquitectura, datos de entrenamiento, idiomas o capacidades. El resto de metadatos de HuggingFace tampoco aporta detalles tecnicos: no hay pipeline declarado, no se listan idiomas y la unica etiqueta funcional es "conversational", ademas de "endpoints_compatible". El modelo acumula 122 descargas y ningun "like" en el momento de la consulta.
+La model card publicada es practicamente vacia: solo contiene la declaracion de licencia MIT, sin informacion sobre arquitectura, datos de entrenamiento, idiomas o capacidades. El resto de metadatos de Hugging Face tampoco aporta detalles tecnicos: no hay pipeline declarado, no se listan idiomas y la unica etiqueta funcional es "conversational", ademas de "endpoints_compatible". El modelo acumula 122 descargas y ningun "like" en el momento de la consulta.
 
 Por tanto, esta ficha se limita a documentar lo verificable (tamano, formato, licencia, fechas) y marca explicitamente como "no disponible" todo aquello que el autor no ha publicado. Cualquier evaluacion de calidad, rendimiento o idoneidad para produccion requerira una validacion empirica por parte del usuario, ya que no existen benchmarks ni documentacion tecnica asociada.
 
@@ -30,7 +30,7 @@ Tampoco hay datos sobre el corpus de entrenamiento: se desconoce el numero de to
 ## Capacidades
 
 - Generacion de texto conversacional: la etiqueta "conversational" del repositorio indica que el modelo esta pensado para dialogos multi-turno, si bien no hay ejemplos ni documentacion que lo confirmen.
-- Compatibilidad con endpoints: la etiqueta "endpoints_compatible" sugiere que puede servirse a traves de la infraestructura de inference endpoints de HuggingFace, aunque no se detalla la configuracion.
+- Compatibilidad con endpoints: la etiqueta "endpoints_compatible" sugiere que puede servirse a traves de la infraestructura de inference endpoints de Hugging Face, aunque no se detalla la configuracion.
 - Inferencia local en formato GGUF: al publicarse unicamente en este formato, es compatible con el ecosistema llama.cpp y derivados.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -75,5 +75,5 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento ni c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bygrafy/kepinV1
+- Modelo en Hugging Face: https://huggingface.co/bygrafy/kepinV1
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la informacion disponible.

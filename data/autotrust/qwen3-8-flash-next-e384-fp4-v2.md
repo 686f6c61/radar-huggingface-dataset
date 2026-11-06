@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next-E384-FP4-V2 es un checkpoint completo (no un adaptador) publicado por el usuario autotrust en HuggingFace, derivado de forma no oficial del modelo Qwen3.8-Flash-Next-E384 y sin el respaldo de Alibaba ni de NVIDIA. Se trata de una fusión (merge) del checkpoint base tras tres rondas de aprendizaje por refuerzo de estilo GRPO con adaptadores LoRA, centradas en la generación de puntuaciones CVSS dentro de presupuestos cortos de tokens y en la emisión estructurada de hallazgos de seguridad. El modelo es multimodal (image-text-to-text), de arquitectura MoE con cuantización NVFP4 mediante ModelOpt, y está pensado para servirse con vLLM.
+Qwen3.8-Flash-Next-E384-FP4-V2 es un checkpoint completo (no un adaptador) publicado por el usuario autotrust en Hugging Face, derivado de forma no oficial del modelo Qwen3.8-Flash-Next-E384 y sin el respaldo de Alibaba ni de NVIDIA. Se trata de una fusión (merge) del checkpoint base tras tres rondas de aprendizaje por refuerzo de estilo GRPO con adaptadores LoRA, centradas en la generación de puntuaciones CVSS dentro de presupuestos cortos de tokens y en la emisión estructurada de hallazgos de seguridad. El modelo es multimodal (image-text-to-text), de arquitectura MoE con cuantización NVFP4 mediante ModelOpt, y está pensado para servirse con vLLM.
 
 Su relevancia radica en que demuestra un flujo de post-entrenamiento especializado sobre un modelo base cuantizado en FP4: mejora métricas como AIME 2026 (de 93,3 a 95,0) y HumanEval (de 97,6 a 98,78) respecto a la referencia publicada del modelo base, y reduce significativamente la longitud de los razonamientos largos en la cola de distribución (P90 de 58.272 a 45.339 tokens). El repositorio pesa 87,8 GB y contiene 21 shards de pesos en safetensors, tokenizador, configuraciones y ficheros MTP (multi-token prediction).
 
@@ -105,7 +105,7 @@ No disponible: comparación con otros MoE de ~80B del mercado, ya que la informa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/autotrust/Qwen3.8-Flash-Next-E384-FP4-V2
+- Modelo en Hugging Face: https://huggingface.co/autotrust/Qwen3.8-Flash-Next-E384-FP4-V2
 - Modelo base: https://huggingface.co/autotrust/Qwen3.8-Flash-Next-E384-FP4-Local
 - Licencia: https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-open-model-agreement/
 - No se han encontrado enlaces a papers, blogs oficiales ni demos en la información disponible.

@@ -101,7 +101,7 @@ Frente al Instruct oficial, este adaptador no declara benchmarks ni evaluación 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SecondLookResearch/Qwen2.5-72B-instruct-mix
+- Modelo en Hugging Face: https://huggingface.co/SecondLookResearch/Qwen2.5-72B-instruct-mix
 - Dataset de entrenamiento: https://huggingface.co/datasets/SecondLookResearch/teaching-qwen-why-data
 - Código del proyecto (replicación de "Teaching Claude Why"): https://github.com/uchicago-xlab/TeachingClaudeWhyReplication
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-72B

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-R1-Pruned-50B-GGUF es una recopilación de cuantizaciones estáticas en formato GGUF del modelo ubicloud/DeepSeek-R1-Pruned-50B, una versión podada del conocido modelo de razonamiento DeepSeek-R1. El trabajo de cuantización lo firma mradermacher, un publicador habitual de cuantizaciones GGUF en HuggingFace, y el modelo base procede de ubicloud, que aplicó técnicas de poda (pruning) sobre el modelo original de DeepSeek para reducir su tamaño hasta aproximadamente 49.600 millones de parámetros.
+DeepSeek-R1-Pruned-50B-GGUF es una recopilación de cuantizaciones estáticas en formato GGUF del modelo ubicloud/DeepSeek-R1-Pruned-50B, una versión podada del conocido modelo de razonamiento DeepSeek-R1. El trabajo de cuantización lo firma mradermacher, un publicador habitual de cuantizaciones GGUF en Hugging Face, y el modelo base procede de ubicloud, que aplicó técnicas de poda (pruning) sobre el modelo original de DeepSeek para reducir su tamaño hasta aproximadamente 49.600 millones de parámetros.
 
 El modelo hereda la naturaleza de razonamiento explícito de la familia DeepSeek-R1, orientada a tareas de matemáticas, código y razonamiento multi-paso mediante cadenas de pensamiento. La poda reduce los requisitos de hardware respecto al modelo completo, aunque el tamaño resultante sigue siendo considerable para despliegues en local.
 
@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-R1-Pruned-50B-GGUF (este) | ~49,6 mil millones | no disponible | no disponible | GGUF | HuggingFace (mradermacher) |
-| DeepSeek-R1 (original) | 671 mil millones (MoE, 37 mil millones activos) | 128K (según documentación pública de DeepSeek) | MIT (según documentación pública de DeepSeek) | safetensors, GGUF | HuggingFace (deepseek-ai) |
-| ubicloud/DeepSeek-R1-Pruned-50B | ~49,6 mil millones | no disponible | no disponible | safetensors | HuggingFace (ubicloud) |
+| DeepSeek-R1-Pruned-50B-GGUF (este) | ~49,6 mil millones | no disponible | no disponible | GGUF | Hugging Face (mradermacher) |
+| DeepSeek-R1 (original) | 671 mil millones (MoE, 37 mil millones activos) | 128K (según documentación pública de DeepSeek) | MIT (según documentación pública de DeepSeek) | safetensors, GGUF | Hugging Face (deepseek-ai) |
+| ubicloud/DeepSeek-R1-Pruned-50B | ~49,6 mil millones | no disponible | no disponible | safetensors | Hugging Face (ubicloud) |
 
 La comparativa con alternativas de tamaño similar no está disponible en la información proporcionada. Los datos del DeepSeek-R1 original se incluyen como referencia de la familia, pero deben verificarse en su model card oficial.
 
@@ -90,7 +90,7 @@ La comparativa con alternativas de tamaño similar no está disponible en la inf
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/mradermacher/DeepSeek-R1-Pruned-50B-GGUF
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/mradermacher/DeepSeek-R1-Pruned-50B-GGUF
 - Modelo base podado: https://huggingface.co/ubicloud/DeepSeek-R1-Pruned-50B
 - Página de descargas del autor: https://hf.tst.eu/model#DeepSeek-R1-Pruned-50B-GGUF
 - README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepository es un repositorio publicado en HuggingFace por el usuario xcxvvvb55 que, a fecha de su creacion (12 de septiembre de 2026), no contiene pesos ni ficheros de modelo (tamano del repositorio: 0,0 GB) y acumula 0 descargas y 0 "likes". La informacion disponible es contradictoria: las etiquetas del repositorio lo identifican como un modelo basado en BERT con pipeline de `feature-extraction`, mientras que la model card describe un supuesto modelo de razonamiento con modo "thinking", soporte de function calling y mejoras en tareas de matematicas y programacion. Esta incoherencia, junto con la ausencia de pesos y de documentacion tecnica verificable, sugiere que se trata de un repositorio de prueba o de una plantilla, no de un modelo desplegable.
+MyAwesomeModel-TestRepository es un repositorio publicado en Hugging Face por el usuario xcxvvvb55 que, a fecha de su creacion (12 de septiembre de 2026), no contiene pesos ni ficheros de modelo (tamano del repositorio: 0,0 GB) y acumula 0 descargas y 0 "likes". La informacion disponible es contradictoria: las etiquetas del repositorio lo identifican como un modelo basado en BERT con pipeline de `feature-extraction`, mientras que la model card describe un supuesto modelo de razonamiento con modo "thinking", soporte de function calling y mejoras en tareas de matematicas y programacion. Esta incoherencia, junto con la ausencia de pesos y de documentacion tecnica verificable, sugiere que se trata de un repositorio de prueba o de una plantilla, no de un modelo desplegable.
 
 La model card menciona una actualizacion de version que habria elevado la precision en AIME 2025 del 70 % al 87,5 %, con un aumento del uso medio de tokens por pregunta de 12K a 23K, ademas de una reduccion de la tasa de alucinacion y una mejora del soporte de function calling. Sin embargo, no se especifican parametros totales, longitud de contexto, arquitectura concreta, composicion del dataset de entrenamiento ni metodologia de evaluacion, y los modelos de comparacion aparecen anonimizados como "Model1", "Model2" y "Model1-v2".
 
@@ -83,7 +83,7 @@ Datos adicionales citados en la model card: en AIME 2025, la precision declarada
 - VRAM estimada para inferencia: no disponible. Al no conocer los parametros totales ni existir pesos (0,0 GB), no es posible calcular huella de memoria.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible.
-- Opciones de despliegue: el repositorio declara compatibilidad con `transformers` y `pytorch`, y la etiqueta `endpoints_compatible` sugiere uso en HuggingFace Inference Endpoints, pero sin pesos publicados no es desplegable en la practica. No se confirma soporte de vLLM, llama.cpp, Ollama ni TGI.
+- Opciones de despliegue: el repositorio declara compatibilidad con `transformers` y `pytorch`, y la etiqueta `endpoints_compatible` sugiere uso en Hugging Face Inference Endpoints, pero sin pesos publicados no es desplegable en la practica. No se confirma soporte de vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -105,6 +105,6 @@ No disponible. La model card anonimiza los modelos de comparacion como "Model1",
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/xcxvvvb55/MyAwesomeModel-TestRepository
+- Repositorio en Hugging Face: https://huggingface.co/xcxvvvb55/MyAwesomeModel-TestRepository
 - Pagina de modelos del autor: https://huggingface.co/xcxvvvb55
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la busqueda realizada. Los resultados de busqueda disponibles no guardan relacion con el modelo (contenido turistico sobre Vancouver).

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FarmGuard Cotton DenseNet-121 es un clasificador de imágenes de 4 clases para enfermedades de la hoja del algodón, publicado por la organización FarmGuard en HuggingFace bajo licencia MIT. Está construido sobre una DenseNet-121 con backbone preentrenado en ImageNet y entrenado con PyTorch y torchvision. El modelo toma imágenes RGB de 224 x 224 píxeles y devuelve una de cuatro etiquetas: bacterial blight, curl virus, fussarium wilt (grafía tal cual figura en la model card) y healthy.
+FarmGuard Cotton DenseNet-121 es un clasificador de imágenes de 4 clases para enfermedades de la hoja del algodón, publicado por la organización FarmGuard en Hugging Face bajo licencia MIT. Está construido sobre una DenseNet-121 con backbone preentrenado en ImageNet y entrenado con PyTorch y torchvision. El modelo toma imágenes RGB de 224 x 224 píxeles y devuelve una de cuatro etiquetas: bacterial blight, curl virus, fussarium wilt (grafía tal cual figura en la model card) y healthy.
 
 El problema que aborda es el diagnóstico visual temprano de patologías del algodón, una tarea en la que el acceso a fitopatólogos es limitado en muchas zonas productoras. Al tratarse de una CNN de pequeño tamaño (aproximadamente 7 millones de parámetros), es candidata a despliegue en dispositivos de borde, teléfonos o sistemas embebidos, sin necesidad de GPU de datacenter.
 
@@ -83,7 +83,7 @@ No se dispone de comparativas publicadas en la información proporcionada frente
 
 | Modelo | Parametros (orientativo) | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| FarmGuard Cotton DenseNet-121 | ~6,96 M (estimado) | Imagen 224 x 224 RGB | MIT | HuggingFace, pesos no detallados |
+| FarmGuard Cotton DenseNet-121 | ~6,96 M (estimado) | Imagen 224 x 224 RGB | MIT | Hugging Face, pesos no detallados |
 | DenseNet-121 (ImageNet, torchvision) | ~7,98 M | Imagen 224 x 224 RGB | BSD-3-Clause (torchvision) | Pública, ampliamente usada |
 | ResNet-50 (ImageNet, torchvision) | ~25,6 M | Imagen 224 x 224 RGB | BSD-3-Clause (torchvision) | Pública, ampliamente usada |
 | MobileNetV3-Large (ImageNet) | ~5,5 M | Imagen 224 x 224 RGB | BSD-3-Clause (torchvision) | Pública, orientada a móvil |
@@ -107,7 +107,7 @@ Estos datos son cifras de arquitectura ampliamente conocidas y no resultados med
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FarmGuard/cotton-densenet121
+- Modelo en Hugging Face: https://huggingface.co/FarmGuard/cotton-densenet121
 - Repositorio de torchvision (DenseNet-121): https://github.com/pytorch/vision
 - Documentación de PyTorch: https://pytorch.org/docs/stable/index.html
 - Paper original de DenseNet (Huang et al., 2016): https://arxiv.org/abs/1608.06993

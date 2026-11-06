@@ -2,7 +2,7 @@
 
 ## Resumen
 
-trocr-small-BY5-stage1-baseline es un ajuste fino (fine-tuning) del modelo cyttic/trocr-hebrew-small-untrained, publicado por el usuario cyttic en HuggingFace. Se trata de un modelo de reconocimiento optico de caracteres (OCR) basado en la arquitectura TrOCR, un transformer de tipo vision-encoder-decoder que combina un codificador de imagen con un decodificador de texto autorregresivo. El pipeline declarado es image-text-to-text y el repositorio contiene 235.097.600 parametros en formato safetensors, con un tamano de repositorio de 0,9 GB.
+trocr-small-BY5-stage1-baseline es un ajuste fino (fine-tuning) del modelo cyttic/trocr-hebrew-small-untrained, publicado por el usuario cyttic en Hugging Face. Se trata de un modelo de reconocimiento optico de caracteres (OCR) basado en la arquitectura TrOCR, un transformer de tipo vision-encoder-decoder que combina un codificador de imagen con un decodificador de texto autorregresivo. El pipeline declarado es image-text-to-text y el repositorio contiene 235.097.600 parametros en formato safetensors, con un tamano de repositorio de 0,9 GB.
 
 El modelo resuelve la tarea de transcripcion de texto en imagenes, presumiblemente en hebreo segun el nombre del modelo base, aunque la model card no declara idiomas soportados ni la composicion del dataset de entrenamiento ("unknown dataset"). Se entrenó durante una unica epoca con 15.500 pasos, learning rate de 5e-05 y un batch total de 16.
 
@@ -50,7 +50,7 @@ No se documenta ninguna innovacion tecnica adicional (decodificacion especulativ
 
 - Reproduccion de experimentos de OCR en hebreo: sirve como punto de partida (baseline de etapa 1) para comparar futuras iteraciones de entrenamiento con una referencia fija y trazable. Su publicacion con hiperparametros completos permite replicar el ajuste.
 - Investigacion sobre curriculum de entrenamiento en TrOCR: al tratarse de una etapa 1 sobre un checkpoint sin entrenar, es util para estudiar como evoluciona la perdida y el CER/WER a lo largo de las epocas documentadas.
-- Docencia y formacion: ejemplo practico y realista de como se ve una model card autogenerada por el Trainer de HuggingFace, incluyendo sus carencias documentales (licencia, idiomas y dataset sin especificar).
+- Docencia y formacion: ejemplo practico y realista de como se ve una model card autogenerada por el Trainer de Hugging Face, incluyendo sus carencias documentales (licencia, idiomas y dataset sin especificar).
 - Desarrollo de pipelines de OCR en hebreo (fase de pruebas): el modelo puede integrarse en un prototipo de preprocesado para validar el flujo de entrada de imagenes y salida de texto, sin esperar resultados de calidad todavia.
 - Evaluacion comparativa de codificadores visuales: al compartir arquitectura con la familia TrOCR, permite medir el impacto de distintos checkpoints base sobre el mismo conjunto de validacion.
 - Auditoria de metricas de OCR: util como caso de estudio de un modelo con WER superior a 1,0, escenario que conviene detectar en produccion porque indica que el sistema es peor que no devolver nada.
@@ -58,7 +58,7 @@ No se documenta ninguna innovacion tecnica adicional (decodificacion especulativ
 
 ## Benchmarks y rendimiento
 
-El model-index del autor no contiene resultados declarados (lista vacia). Los unicos datos disponibles son las metricas de evaluacion del propio entrenamiento registradas por el Trainer de HuggingFace:
+El model-index del autor no contiene resultados declarados (lista vacia). Los unicos datos disponibles son las metricas de evaluacion del propio entrenamiento registradas por el Trainer de Hugging Face:
 
 | Checkpoint (paso) | Epoca | Perdida de entrenamiento | Perdida de validacion | CER | WER |
 |---|---|---|---|---|---|
@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 - VRAM estimada para inferencia: unos 0,9-1,0 GB en fp32, aproximadamente 0,5 GB en fp16/bf16 y alrededor de 0,25 GB en int8 (calculado sobre los 235,1 M de parametros; no hay cifras oficiales publicadas).
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente; no requiere A100, H100 ni tarjetas de datacenter.
 - Cabe holgadamente en GPU de consumo: GTX 1650, RTX 3050, RTX 3060, RTX 4060, RTX 4090 y similares. Tambien es viable en CPU para inferencia puntual.
-- Opciones de despliegue: transformers con VisionEncoderDecoderModel / AutoModelForVision2Seq sobre PyTorch; exportacion a ONNX Runtime para inferencia en CPU; despliegue en endpoints de HuggingFace (el repositorio esta marcado como endpoints_compatible).
+- Opciones de despliegue: transformers con VisionEncoderDecoderModel / AutoModelForVision2Seq sobre PyTorch; exportacion a ONNX Runtime para inferencia en CPU; despliegue en endpoints de Hugging Face (el repositorio esta marcado como endpoints_compatible).
 - No se recomienda llama.cpp ni Ollama (GGUF), ya que no cubren de forma estandar arquitecturas encoder-decoder visuales como TrOCR. Tampoco hay soporte documentado en vLLM ni en TGI.
 - Latencia y throughput estimados: no disponible (no se han publicado mediciones).
 
@@ -88,10 +88,10 @@ Los datos de los modelos externos son aproximados y proceden de informacion publ
 
 | Modelo | Parametros (aprox.) | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cyttic/trocr-small-BY5-stage1-baseline | 235,1 M | No disponible | CER 0,7816; WER 1,0848 | No disponible | HuggingFace (0 descargas) |
-| microsoft/trocr-small-printed (TrOCR small) | ~62 M | No disponible | Buen rendimiento en texto impreso en latin (cifras no verificadas aqui) | MIT | HuggingFace |
-| microsoft/trocr-base-handwritten (TrOCR base) | ~334 M | No disponible | Buen rendimiento en escritura manuscrita en latin (cifras no verificadas aqui) | MIT | HuggingFace |
-| Donut (naver-clova-ix/donut-base) | ~200 M | No disponible | Comprension de documentos (no solo OCR de linea) | MIT | HuggingFace |
+| cyttic/trocr-small-BY5-stage1-baseline | 235,1 M | No disponible | CER 0,7816; WER 1,0848 | No disponible | Hugging Face (0 descargas) |
+| microsoft/trocr-small-printed (TrOCR small) | ~62 M | No disponible | Buen rendimiento en texto impreso en latin (cifras no verificadas aqui) | MIT | Hugging Face |
+| microsoft/trocr-base-handwritten (TrOCR base) | ~334 M | No disponible | Buen rendimiento en escritura manuscrita en latin (cifras no verificadas aqui) | MIT | Hugging Face |
+| Donut (naver-clova-ix/donut-base) | ~200 M | No disponible | Comprension de documentos (no solo OCR de linea) | MIT | Hugging Face |
 
 La diferencia clave no es de tamano sino de estado de entrenamiento: este checkpoint es un baseline de etapa 1 sobre un modelo base sin entrenar, mientras que las alternativas de Microsoft y Naver son modelos ya convergidos y con licencia explicita.
 
@@ -110,6 +110,6 @@ La diferencia clave no es de tamano sino de estado de entrenamiento: este checkp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cyttic/trocr-small-BY5-stage1-baseline
+- Modelo en Hugging Face: https://huggingface.co/cyttic/trocr-small-BY5-stage1-baseline
 - Modelo base: https://huggingface.co/cyttic/trocr-hebrew-small-untrained
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en los resultados de busqueda disponibles.

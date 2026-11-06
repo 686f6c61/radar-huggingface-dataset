@@ -86,6 +86,6 @@ No se dispone de datos de benchmarks ni de modelos comparables documentados en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/henryhale/Kintu-2.0-30M-ONNX
+- Modelo en Hugging Face: https://huggingface.co/henryhale/Kintu-2.0-30M-ONNX
 - Modelo base: https://huggingface.co/henryhale/Kintu-2.0-30M
 - Framework MiniMind: https://github.com/jingyaogong/minimind

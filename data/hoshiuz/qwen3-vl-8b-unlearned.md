@@ -69,8 +69,8 @@ No se han publicado en la informacion disponible resultados de MMLU, HumanEval, 
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HoshiuZ/Qwen3-VL-8B-Unlearned | 8,77 B | no disponible | Checkpoint multimodal con desaprendizaje disperso (capas 4-7, `down_proj`) | Apache-2.0 | HuggingFace, 25 descargas |
-| Qwen/Qwen3-VL-8B-Instruct | 8,77 B | no disponible | Modelo base multimodal Instruct sin editar | Apache-2.0 | HuggingFace (modelo de referencia) |
+| HoshiuZ/Qwen3-VL-8B-Unlearned | 8,77 B | no disponible | Checkpoint multimodal con desaprendizaje disperso (capas 4-7, `down_proj`) | Apache-2.0 | Hugging Face, 25 descargas |
+| Qwen/Qwen3-VL-8B-Instruct | 8,77 B | no disponible | Modelo base multimodal Instruct sin editar | Apache-2.0 | Hugging Face (modelo de referencia) |
 | Otros checkpoints de desaprendizaje WMDP | no disponible | no disponible | Variantes de investigacion sobre modelos de texto | no disponible | no disponible |
 
 La comparacion relevante es contra el propio modelo base: mismo tamano, misma licencia y misma arquitectura, con la unica diferencia de las matrices `down_proj` editadas. No se dispone de datos para comparar con alternativas de desaprendizaje de otros autores.
@@ -89,7 +89,7 @@ La comparacion relevante es contra el propio modelo base: mismo tamano, misma li
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HoshiuZ/Qwen3-VL-8B-Unlearned
+- Modelo en Hugging Face: https://huggingface.co/HoshiuZ/Qwen3-VL-8B-Unlearned
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Repositorio de investigacion e implementacion: https://github.com/HoshiuZ/multimodal-llm-safety
 - Resultados S en el commit congelado: https://github.com/HoshiuZ/multimodal-llm-safety/blob/dd6e4f5117aafecaa8747416f3826faaeaae9bb8/text/results/s_results_v2.json

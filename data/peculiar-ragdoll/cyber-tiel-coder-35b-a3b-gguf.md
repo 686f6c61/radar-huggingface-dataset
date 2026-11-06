@@ -12,7 +12,7 @@ Su relevancia actual reside en dos factores: por un lado, ofrece capacidad de co
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE (mezcla de expertos) de tipo transformer; etiqueta `qwen35moe` en HuggingFace; soporte multimodal image-text-to-text |
+| Arquitectura | MoE (mezcla de expertos) de tipo transformer; etiqueta `qwen35moe` en Hugging Face; soporte multimodal image-text-to-text |
 | Parametros totales | 34.660.610.688 (aprox. 34,66 mil millones), medidos sobre los pesos safetensors del modelo base |
 | Parametros activos | Aproximadamente 3.000 millones por token segun la nomenclatura "A3B" del nombre; el valor exacto no esta disponible |
 | Longitud de contexto | no disponible |
@@ -75,10 +75,10 @@ No se han publicado resultados de MMLU, HumanEval ni GSM8K en la informacion dis
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Cyber-Tiel-Coder-35B-A3B | 34,66 mil millones totales, aprox. 3 mil millones activos | no disponible | Cybench 15/43; ~70 % mas de problemas resueltos en SWE-bench-Live que Ornith-1.5 | MIT | GGUF, MLX y variantes MTP en HuggingFace |
+| Cyber-Tiel-Coder-35B-A3B | 34,66 mil millones totales, aprox. 3 mil millones activos | no disponible | Cybench 15/43; ~70 % mas de problemas resueltos en SWE-bench-Live que Ornith-1.5 | MIT | GGUF, MLX y variantes MTP en Hugging Face |
 | TielCoder 35B-A3B | Misma base y tamano | no disponible | Misma puntuacion en MMLU-Pro que CyberTiel; se desconoce su tasa de rechazo en HarmBench | no disponible | GGUF |
-| Ornith-1.5-35B-A3B | 35B-A3B | no disponible | Referencia base; resuelve aproximadamente un 70 % menos de problemas reales de codigo | no disponible | HuggingFace |
-| Qwen3.6-35B-A3B | 35B-A3B | no disponible | Mismo punto de comparacion que Ornith-1.5 en SWE-bench-Live | no disponible | HuggingFace |
+| Ornith-1.5-35B-A3B | 35B-A3B | no disponible | Referencia base; resuelve aproximadamente un 70 % menos de problemas reales de codigo | no disponible | Hugging Face |
+| Qwen3.6-35B-A3B | 35B-A3B | no disponible | Mismo punto de comparacion que Ornith-1.5 en SWE-bench-Live | no disponible | Hugging Face |
 | Nail-Qwen3.6-35B-A3B | 35B-A3B | no disponible | Mejor conocimiento general segun el autor; no especializado en codificacion ofensiva | no disponible | GGUF |
 
 ## Limitaciones y advertencias
@@ -95,7 +95,7 @@ No se han publicado resultados de MMLU, HumanEval ni GSM8K en la informacion dis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/peculiar-ragdoll/Cyber-Tiel-Coder-35B-A3B-GGUF
+- Modelo en Hugging Face: https://huggingface.co/peculiar-ragdoll/Cyber-Tiel-Coder-35B-A3B-GGUF
 - Version MTP GGUF: https://huggingface.co/peculiar-ragdoll/Cyber-Tiel-Coder-35B-A3B-GGUF-MTP
 - Version MLX: https://huggingface.co/peculiar-ragdoll/Cyber-Tiel-Coder-35B-A3B-MLX-oQ4e
 - Version MLX MTP: https://huggingface.co/peculiar-ragdoll/Cyber-Tiel-Coder-35B-A3B-MLX-oQ4e-MTP

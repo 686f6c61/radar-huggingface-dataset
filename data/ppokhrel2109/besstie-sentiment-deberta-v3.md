@@ -70,7 +70,7 @@ No se dispone de informacion suficiente para establecer una comparativa con mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ppokhrel2109/besstie-sentiment-deberta-v3
+- Hugging Face: https://huggingface.co/ppokhrel2109/besstie-sentiment-deberta-v3
 - Paper BESSTIE (arXiv): https://arxiv.org/abs/2412.04726
 - PDF del paper (ACL 2025): https://aclanthology.org/2025.findings-acl.441.pdf
 - Repositorio de codigo y resultados: https://github.com/Pranav210901/Besstie-improvement-attempt

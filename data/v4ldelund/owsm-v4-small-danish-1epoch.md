@@ -84,9 +84,9 @@ No se proporcionan comparaciones con otros modelos en la informacion disponible.
 
 | Modelo | Parametros | Contexto | WER danes | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| V4ldeLund/owsm-v4-small-danish-1epoch | ~370 M | No disponible | 42,34 % (media, 5 conjuntos) | coral-openrail-and-upstream-terms | HuggingFace, formato ESPnet |
-| espnet/owsm_v4_small_370M (base) | ~370 M | No disponible | No disponible | CC-BY-4.0 | HuggingFace, ESPnet |
-| Whisper small / medium (referencia de familia) | 244 M / 769 M | No disponible | No disponible | MIT/Apache segun variante | HuggingFace y multiples formatos |
+| V4ldeLund/owsm-v4-small-danish-1epoch | ~370 M | No disponible | 42,34 % (media, 5 conjuntos) | coral-openrail-and-upstream-terms | Hugging Face, formato ESPnet |
+| espnet/owsm_v4_small_370M (base) | ~370 M | No disponible | No disponible | CC-BY-4.0 | Hugging Face, ESPnet |
+| Whisper small / medium (referencia de familia) | 244 M / 769 M | No disponible | No disponible | MIT/Apache segun variante | Hugging Face y multiples formatos |
 
 No se dispone de resultados de benchmarks comparables de otros modelos daneses en la informacion proporcionada, por lo que la comparativa cuantitativa queda limitada a las metricas del propio modelo.
 
@@ -105,7 +105,7 @@ No se dispone de resultados de benchmarks comparables de otros modelos daneses e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/V4ldeLund/owsm-v4-small-danish-1epoch
+- Modelo en Hugging Face: https://huggingface.co/V4ldeLund/owsm-v4-small-danish-1epoch
 - Licencia CoRal: https://huggingface.co/V4ldeLund/owsm-v4-small-danish-1epoch/blob/main/LICENSE.coral
 - Notas de experimento: https://huggingface.co/V4ldeLund/owsm-v4-small-danish-1epoch/blob/main/experiment.md
 - Definicion de configuracion: https://huggingface.co/V4ldeLund/owsm-v4-small-danish-1epoch/blob/main/config.yaml

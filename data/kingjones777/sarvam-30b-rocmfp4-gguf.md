@@ -76,7 +76,7 @@ No se dispone de datos de comparacion directa con otros modelos en la informacio
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/kingjones777/Sarvam-30B-ROCmFP4-GGUF
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/kingjones777/Sarvam-30B-ROCmFP4-GGUF
 - Modelo base (safetensors): https://huggingface.co/sarvamai/sarvam-30b
 - GGUF oficial de Sarvam AI: https://huggingface.co/sarvamai/sarvam-30b-gguf
 - Blog de Sarvam AI sobre el lanzamiento: https://www.sarvam.ai/blogs/sarvam-30b-105b

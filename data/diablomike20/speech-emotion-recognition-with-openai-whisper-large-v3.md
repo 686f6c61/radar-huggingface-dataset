@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`diablomike20/speech-emotion-recognition-with-openai-whisper-large-v3` es un ajuste fino del codificador de audio de OpenAI Whisper Large V3 para clasificación de emociones en voz (speech emotion recognition, SER). Lo publica el usuario de HuggingFace diablomike20 partiendo de los pesos de `openai/whisper-large-v3`, reemplazando la cabeza de decodificación de transcripción por una cabeza de clasificación con siete etiquetas emocionales: angry, disgust, fearful, happy, neutral, sad y surprised. Con 637.298.695 parámetros en safetensors y un repositorio de 2,5 GB, es un modelo de audio-classification que se carga con `AutoModelForAudioClassification` dentro de la librería `transformers`.
+`diablomike20/speech-emotion-recognition-with-openai-whisper-large-v3` es un ajuste fino del codificador de audio de OpenAI Whisper Large V3 para clasificación de emociones en voz (speech emotion recognition, SER). Lo publica el usuario de Hugging Face diablomike20 partiendo de los pesos de `openai/whisper-large-v3`, reemplazando la cabeza de decodificación de transcripción por una cabeza de clasificación con siete etiquetas emocionales: angry, disgust, fearful, happy, neutral, sad y surprised. Con 637.298.695 parámetros en safetensors y un repositorio de 2,5 GB, es un modelo de audio-classification que se carga con `AutoModelForAudioClassification` dentro de la librería `transformers`.
 
 El problema que resuelve es concreto: dada una grabación de voz, asignar una de siete categorías emocionales. Frente a pipelines clásicos basados en features acústicas artesanales (MFCC, prosodia) y clasificadores ligeros, este modelo aprovecha las representaciones del codificador de Whisper, entrenado con cientos de miles de horas de audio multilingüe, lo que en teoría le permite capturar patrones prosódicos y espectrales más ricos. Es relevante para quien necesite un punto de partida funcional y con licencia permisiva (Apache 2.0) para tareas de análisis afectivo de audio, sin tener que entrenar desde cero.
 
-La ficha se basa exclusivamente en la model card del autor y en los metadatos de HuggingFace. No hay paper asociado, no hay resultados en el `model-index` y no se declaran idiomas soportados. Las cifras de evaluación que se citan proceden del autor y deben tratarse como no verificadas de forma independiente.
+La ficha se basa exclusivamente en la model card del autor y en los metadatos de Hugging Face. No hay paper asociado, no hay resultados en el `model-index` y no se declaran idiomas soportados. Las cifras de evaluación que se citan proceden del autor y deben tratarse como no verificadas de forma independiente.
 
 ## Especificaciones tecnicas
 
@@ -32,7 +32,7 @@ El ajuste fino se realizó sobre una mezcla de cuatro corpus públicos: RAVDESS,
 - Clasificación de emociones en audio en siete clases: angry, disgust, fearful, happy, neutral, sad y surprised.
 - Procesamiento de clips de audio de hasta 30 segundos mediante truncado o padding explícito en el preprocesado.
 - Inferencia estándar de `transformers` (`AutoModelForAudioClassification` + `AutoFeatureExtractor`), compatible con `pipeline("audio-classification")`.
-- Integración con el ecosistema `transformers` y despliegue vía HuggingFace Inference Endpoints (tag `endpoints_compatible`).
+- Integración con el ecosistema `transformers` y despliegue vía Hugging Face Inference Endpoints (tag `endpoints_compatible`).
 - No soporta generación de texto, transcripción, tool calling, function calling, razonamiento multi-paso, visión ni audio-to-text: la cabeza de decodificación de Whisper fue reemplazada.
 - Capacidades multilingües: no documentadas; el entrenamiento mezcla inglés y urdu, pero no se declara cobertura por idioma ni se evalúa por separado.
 - No dispone de modo thinking ni de salidas estructuradas más allá de la distribución de probabilidad sobre las siete etiquetas.
@@ -78,17 +78,17 @@ No se han publicado comparaciones con otros modelos de SER en la información di
 - En fp16/bf16: aproximadamente 1,3 GB de pesos, con un consumo total típico de 2-4 GB según batch y longitud de audio.
 - GPU recomendadas: cualquier GPU con al menos 8 GB de VRAM para uso cómodo en fp16 (RTX 3060 Ti, RTX 4060, RTX 4070, L4, A10). Para throughput alto, A100 o H100 con batch grande.
 - Cabe en GPU de consumo: sí, en RTX 3060 de 12 GB, RTX 4060 Ti, RTX 4070 y superiores; en GPUs de 8 GB funciona con batch pequeño y fp16.
-- Despliegue: `transformers` con `pipeline("audio-classification")`, HuggingFace Inference Endpoints (tag `endpoints_compatible`), y servidores tipo TGI o vLLM solo si soportan modelos de audio-classification (no es un modelo generativo; verificar compatibilidad antes de asumirlo). `llama.cpp` y `Ollama` no aplican a este tipo de checkpoint salvo conversión manual a GGUF, no documentada.
+- Despliegue: `transformers` con `pipeline("audio-classification")`, Hugging Face Inference Endpoints (tag `endpoints_compatible`), y servidores tipo TGI o vLLM solo si soportan modelos de audio-classification (no es un modelo generativo; verificar compatibilidad antes de asumirlo). `llama.cpp` y `Ollama` no aplican a este tipo de checkpoint salvo conversión manual a GGUF, no documentada.
 - Latencia y throughput: no disponibles. Como referencia estructural, el codificador de Whisper Large V3 procesa ventanas de 30 s; el coste por clip es del orden de decenas de milisegundos en GPU moderna, pero no hay medición publicada para este checkpoint.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto / entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (diablomike20/whisper-large-v3 SER) | 637 M | audio de 30 s | Clasificacion de 7 emociones | Apache 2.0 | HuggingFace, 22 descargas |
-| `firdhokk/speech-emotion-recognition-with-openai-whisper-large-v3` | ~637 M | audio de 30 s | Clasificacion de 7 emociones | Apache 2.0 | HuggingFace (checkpoint del que parece derivar el codigo de la model card) |
-| `openai/whisper-large-v3` | ~1.550 M | audio de 30 s | Transcripcion y traduccion | Apache 2.0 | HuggingFace, ampliamente usado |
-| `superb/wav2vec2-base-superb-er` | ~95 M | audio variable | Clasificacion de 4 emociones (IEMOCAP) | Apache 2.0 | HuggingFace |
+| Este modelo (diablomike20/whisper-large-v3 SER) | 637 M | audio de 30 s | Clasificacion de 7 emociones | Apache 2.0 | Hugging Face, 22 descargas |
+| `firdhokk/speech-emotion-recognition-with-openai-whisper-large-v3` | ~637 M | audio de 30 s | Clasificacion de 7 emociones | Apache 2.0 | Hugging Face (checkpoint del que parece derivar el codigo de la model card) |
+| `openai/whisper-large-v3` | ~1.550 M | audio de 30 s | Transcripcion y traduccion | Apache 2.0 | Hugging Face, ampliamente usado |
+| `superb/wav2vec2-base-superb-er` | ~95 M | audio variable | Clasificacion de 4 emociones (IEMOCAP) | Apache 2.0 | Hugging Face |
 
 El modelo base Whisper Large V3 no es comparable en tarea (transcribe, no clasifica emociones), pero sí en coste computacional: este checkpoint es más ligero al haber descartado el decodificador. `superb/wav2vec2-base-superb-er` es la alternativa clásica de referencia en SER: mucho más pequeño, cuatro clases y entrenado sobre IEMOCAP, lo que facilita comparaciones académicas pero limita la granularidad emocional. No se dispone de datos de rendimiento cruzado entre estos modelos en la información proporcionada.
 
@@ -106,7 +106,7 @@ El modelo base Whisper Large V3 no es comparable en tarea (transcribe, no clasif
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/diablomike20/speech-emotion-recognition-with-openai-whisper-large-v3
+- Hugging Face: https://huggingface.co/diablomike20/speech-emotion-recognition-with-openai-whisper-large-v3
 - Modelo base: https://huggingface.co/openai/whisper-large-v3
 - Seguimiento de entrenamiento en WandB: https://wandb.ai/firdhoworking-sepuluh-nopember-institute-of-technology/speech-emotion-recognition-with-whisper?nw=nwuserfirdhoworking
 - Dataset RAVDESS: https://zenodo.org/records/1188976#.XsAXemgzaUk

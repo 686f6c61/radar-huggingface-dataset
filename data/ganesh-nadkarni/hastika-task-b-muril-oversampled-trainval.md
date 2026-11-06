@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hastika-task-b-muril-oversampled-trainval | ~236 M (base MuRIL) | 160 tokens | Clasificación de target de odio en kanglish | apache-2.0 | HuggingFace |
-| google/muril-base-cased | ~236 M | 512 tokens | Encoder multilingüe indio (preentrenamiento) | apache-2.0 | HuggingFace |
-| Modelos de la familia XLM-R base | ~278 M | 512 tokens | Clasificación multilingüe general | MIT | HuggingFace |
+| hastika-task-b-muril-oversampled-trainval | ~236 M (base MuRIL) | 160 tokens | Clasificación de target de odio en kanglish | apache-2.0 | Hugging Face |
+| google/muril-base-cased | ~236 M | 512 tokens | Encoder multilingüe indio (preentrenamiento) | apache-2.0 | Hugging Face |
+| Modelos de la familia XLM-R base | ~278 M | 512 tokens | Clasificación multilingüe general | MIT | Hugging Face |
 
 La comparación con alternativas específicas de detección de odio en kanglish no está disponible en la información proporcionada. Frente a MuRIL base, este checkpoint añade la cabeza de clasificación de seis clases pero reduce la longitud efectiva de contexto a 160 tokens por el entrenamiento.
 
@@ -84,7 +84,7 @@ La comparación con alternativas específicas de detección de odio en kanglish 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ganesh-Nadkarni/hastika-task-b-muril-oversampled-trainval
+- Modelo en Hugging Face: https://huggingface.co/Ganesh-Nadkarni/hastika-task-b-muril-oversampled-trainval
 - Modelo base MuRIL: https://huggingface.co/google/muril-base-cased
 - Cita del shared task: Kavatagi, S. and Rachh, R. (2025). HASTIKA: hate speech and target identification in Kannada-English code-mixed text. Language Resources and Evaluation, 59(3):2811-2856.
 - Repositorio, paper o demo del shared task HASTIKA @ ICON-2026: no disponible en la información proporcionada.

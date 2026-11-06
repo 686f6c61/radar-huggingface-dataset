@@ -76,10 +76,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| LLaVA-qwen25-3b-VLfull-r2-s42-s2a | 3.490.246.176 | 8192 (entrenamiento) | qwen-research | Pesos safetensors en HuggingFace, requiere LLaVA-NeXT | Artefacto de investigación, sin benchmarks ni alineamiento |
-| Qwen2.5-3B-Instruct (base, solo texto) | ≈3,1 B | ≈32.768 tokens (según el repositorio de Qwen) | La model card de esta rama enlaza a su LICENSE | HuggingFace | Solo texto; es el punto de partida del modelo analizado |
-| Qwen2.5-VL-3B-Instruct | Familia de 3 B; recuento exacto no disponible en esta ficha | No disponible | No disponible en la información proporcionada | HuggingFace | Alternativa multimodal nativa de la misma escala; requiere verificar datos en su repositorio |
-| LLaVA-OneVision (variante Qwen2) | 7 B en el LLM, más torre visual; recuento exacto no disponible | No disponible | No disponible en la información proporcionada | HuggingFace | Referencia de la misma familia arquitectónica LLaVA-NeXT a mayor escala |
+| LLaVA-qwen25-3b-VLfull-r2-s42-s2a | 3.490.246.176 | 8192 (entrenamiento) | qwen-research | Pesos safetensors en Hugging Face, requiere LLaVA-NeXT | Artefacto de investigación, sin benchmarks ni alineamiento |
+| Qwen2.5-3B-Instruct (base, solo texto) | ≈3,1 B | ≈32.768 tokens (según el repositorio de Qwen) | La model card de esta rama enlaza a su LICENSE | Hugging Face | Solo texto; es el punto de partida del modelo analizado |
+| Qwen2.5-VL-3B-Instruct | Familia de 3 B; recuento exacto no disponible en esta ficha | No disponible | No disponible en la información proporcionada | Hugging Face | Alternativa multimodal nativa de la misma escala; requiere verificar datos en su repositorio |
+| LLaVA-OneVision (variante Qwen2) | 7 B en el LLM, más torre visual; recuento exacto no disponible | No disponible | No disponible en la información proporcionada | Hugging Face | Referencia de la misma familia arquitectónica LLaVA-NeXT a mayor escala |
 
 La comparación cuantitativa no es posible con la información disponible: no hay benchmarks publicados para este checkpoint y los datos de contexto y licencia de las alternativas deberían confirmarse en sus repositorios oficiales antes de usarse en una decisión técnica.
 
@@ -101,7 +101,7 @@ La comparación cuantitativa no es posible con la información disponible: no ha
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BAJUKA/LLaVA-qwen25-3b-VLfull-r2-s42-s2a
+- Modelo en Hugging Face: https://huggingface.co/BAJUKA/LLaVA-qwen25-3b-VLfull-r2-s42-s2a
 - Modelo base Qwen2.5-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Licencia enlazada por la model card: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct/blob/main/LICENSE
 - Repositorio LLaVA-NeXT (código necesario para cargar los pesos): https://github.com/LLaVA-VL/LLaVA-NeXT

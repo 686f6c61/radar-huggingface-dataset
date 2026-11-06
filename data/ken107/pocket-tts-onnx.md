@@ -82,7 +82,7 @@ La comparación con Piper se incluye por ser el referente habitual de TTS ONNX e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ken107/pocket-tts-onnx
+- Repositorio Hugging Face: https://huggingface.co/ken107/pocket-tts-onnx
 - Modelo base: https://huggingface.co/kyutai/pocket-tts
 - Sección de usos prohibidos del modelo base: https://huggingface.co/kyutai/pocket-tts#prohibited-use
 - Voces de referencia: https://huggingface.co/kyutai/tts-voices

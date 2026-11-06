@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| `Jeesup/svdsafety_l2_remove40_whiten_base_ft` | 6.738.415.616 segun safetensors (60,0 % declarado por el autor) | 4096 tokens (heredado) | Llama 2 Community License | HuggingFace, safetensors | No disponible |
-| `meta-llama/Llama-2-7b-chat-hf` (base sin comprimir) | 6.738.415.616 | 4096 tokens | Llama 2 Community License | HuggingFace, safetensors | No disponible en la informacion proporcionada |
-| `mistralai/Mistral-7B-Instruct-v0.2` | ~7.240 millones | 32.768 tokens | Apache 2.0 | HuggingFace, safetensors | No disponible en la informacion proporcionada |
-| Otras celdas de la rejilla SVD-LLM del mismo autor | Variable (segun presupuesto de restauracion) | 4096 tokens (heredado) | Llama 2 Community License | HuggingFace; enlaces concretos no disponibles | No disponible |
+| `Jeesup/svdsafety_l2_remove40_whiten_base_ft` | 6.738.415.616 segun safetensors (60,0 % declarado por el autor) | 4096 tokens (heredado) | Llama 2 Community License | Hugging Face, safetensors | No disponible |
+| `meta-llama/Llama-2-7b-chat-hf` (base sin comprimir) | 6.738.415.616 | 4096 tokens | Llama 2 Community License | Hugging Face, safetensors | No disponible en la informacion proporcionada |
+| `mistralai/Mistral-7B-Instruct-v0.2` | ~7.240 millones | 32.768 tokens | Apache 2.0 | Hugging Face, safetensors | No disponible en la informacion proporcionada |
+| Otras celdas de la rejilla SVD-LLM del mismo autor | Variable (segun presupuesto de restauracion) | 4096 tokens (heredado) | Llama 2 Community License | Hugging Face; enlaces concretos no disponibles | No disponible |
 
 La comparacion relevante para este artefacto no es de rendimiento absoluto, sino de presupuesto de compresion y restauracion dentro de la misma rejilla experimental. Frente a Mistral-7B-Instruct-v0.2, este checkpoint parte de una licencia mas restrictiva (Llama 2 en lugar de Apache 2.0) y de una ventana de contexto ocho veces menor.
 
@@ -97,9 +97,9 @@ La comparacion relevante para este artefacto no es de rendimiento absoluto, sino
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svdsafety_l2_remove40_whiten_base_ft
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svdsafety_l2_remove40_whiten_base_ft
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
-- Licencia incluida en el repositorio: `LICENSE.txt` y `USE_POLICY.md` (dentro del propio repositorio de HuggingFace)
+- Licencia incluida en el repositorio: `LICENSE.txt` y `USE_POLICY.md` (dentro del propio repositorio de Hugging Face)
 - Licencia Llama 2 de Meta: https://ai.meta.com/llama/license/
 - Metodo de compresion citado en la model card (SVD-LLM): https://arxiv.org/abs/2405.05012
 - Busqueda web: no se encontro ningun enlace adicional relevante sobre este modelo; los resultados devueltos no guardaban relacion con el checkpoint.

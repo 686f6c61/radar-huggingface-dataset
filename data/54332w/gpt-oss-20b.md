@@ -85,8 +85,8 @@ La comparativa se basa en datos públicos de los respectivos modelos. gpt-oss-20
 
 ## Enlaces
 
-- Modelo en HuggingFace (repositorio del autor): https://huggingface.co/54332w/gpt-oss-20b
-- Modelo oficial en HuggingFace: https://huggingface.co/openai/gpt-oss-20b
+- Modelo en Hugging Face (repositorio del autor): https://huggingface.co/54332w/gpt-oss-20b
+- Modelo oficial en Hugging Face: https://huggingface.co/openai/gpt-oss-20b
 - Repositorio oficial de gpt-oss en GitHub: https://github.com/openai/gpt-oss
 - Model card técnica en arxiv: https://arxiv.org/abs/2508.10925
 - Blog de OpenAI anunciando gpt-oss: https://openai.com/index/introducing-gpt-oss/

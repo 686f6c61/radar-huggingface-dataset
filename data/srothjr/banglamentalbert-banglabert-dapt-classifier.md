@@ -78,8 +78,8 @@ Advertencia del propio autor: estas métricas se calcularon sobre un split de te
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| banglamentalBERT-banglaBERT-dapt-classifier | 110,62 M | 256 | Clasificación de depresión (4 clases, bn) | MIT | HuggingFace |
-| csebuetnlp/banglabert | ~110 M | 512 | Modelo base de lenguaje (bn) | MIT | HuggingFace |
+| banglamentalBERT-banglaBERT-dapt-classifier | 110,62 M | 256 | Clasificación de depresión (4 clases, bn) | MIT | Hugging Face |
+| csebuetnlp/banglabert | ~110 M | 512 | Modelo base de lenguaje (bn) | MIT | Hugging Face |
 | Modelos de clasificación de salud mental en bengalí equivalentes | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 El comparador directo más relevante es el propio modelo base `csebuetnlp/banglabert`, del que este checkpoint deriva mediante DAPT, TAPT y ajuste fino supervisado. No se dispone de datos verificación de otros clasificadores de depresión en bengalí comparables en la información proporcionada.
@@ -93,14 +93,14 @@ El comparador directo más relevante es el propio modelo base `csebuetnlp/bangla
 - Sesgos potenciales derivados del corpus DAPT: los datos se tradujeron automáticamente desde subreddits en inglés con NLLB-200-3.3B, por lo que pueden heredar sesgos del texto original y artefactos de traducción.
 - Riesgo de alucinación: no aplica en sentido generativo, ya que es un clasificador; sin embargo, puede producir clasificaciones erróneas con alta confianza aparente.
 - Soporte únicamente en bengalí (bn); no se ha entrenado ni evaluado en otros idiomas.
-- Discrepancia de identificadores: el ID de HuggingFace de esta ficha es `SrothJr/banglamentalBERT-banglaBERT-dapt-classifier`, mientras que el código de carga de la model card referencia `SrothJr/banglabert-dapt-depression-classifier`. Conviene verificar cuál es el repositorio correcto antes de desplegar.
+- Discrepancia de identificadores: el ID de Hugging Face de esta ficha es `SrothJr/banglamentalBERT-banglaBERT-dapt-classifier`, mientras que el código de carga de la model card referencia `SrothJr/banglabert-dapt-depression-classifier`. Conviene verificar cuál es el repositorio correcto antes de desplegar.
 - Según la model card, el checkpoint no contiene un tokenizador guardado por completo; hay que cargar el tokenizador desde el repositorio y comprobar que los ficheros son los correctos.
 - El repositorio presenta cero descargas y cero valoraciones, por lo que no hay validación de la comunidad.
 - Licencia MIT: permite uso comercial y modificación, pero conviene revisar las implicaciones éticas y legales del uso de modelos de salud mental en producción.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SrothJr/banglamentalBERT-banglaBERT-dapt-classifier
+- Modelo en Hugging Face: https://huggingface.co/SrothJr/banglamentalBERT-banglaBERT-dapt-classifier
 - Modelo base BanglaBERT: https://huggingface.co/csebuetnlp/banglabert
 - Modelo de traducción NLLB-200-3.3B: https://huggingface.co/facebook/nllb-200-3.3B
 - Repositorio citado en el código de carga de la model card: https://huggingface.co/SrothJr/banglabert-dapt-depression-classifier

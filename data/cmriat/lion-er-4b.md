@@ -76,10 +76,10 @@ No se han publicado en la información disponible los valores numéricos de los 
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Lion-ER-4B | 4,66B (denso) | no disponible | Razonamiento encarnado y espacial multimodal | Apache 2.0 | HuggingFace (cmriat/lion-ER-4B) |
-| Qwen/Qwen3.5-4B | ~4B (denso) | no disponible | Multimodal generalista | no disponible en la información | HuggingFace |
-| Lion-ER-9B | ~9B (denso) | no disponible | Razonamiento encarnado y espacial multimodal | Apache 2.0 (según familia) | HuggingFace |
-| Lion-ER-35B-A3B | 35B totales / 3B activos (MoE) | no disponible | Razonamiento encarnado y espacial multimodal | Apache 2.0 (según familia) | HuggingFace |
+| Lion-ER-4B | 4,66B (denso) | no disponible | Razonamiento encarnado y espacial multimodal | Apache 2.0 | Hugging Face (cmriat/lion-ER-4B) |
+| Qwen/Qwen3.5-4B | ~4B (denso) | no disponible | Multimodal generalista | no disponible en la información | Hugging Face |
+| Lion-ER-9B | ~9B (denso) | no disponible | Razonamiento encarnado y espacial multimodal | Apache 2.0 (según familia) | Hugging Face |
+| Lion-ER-35B-A3B | 35B totales / 3B activos (MoE) | no disponible | Razonamiento encarnado y espacial multimodal | Apache 2.0 (según familia) | Hugging Face |
 
 La comparación más directa es con su modelo base Qwen3.5-4B, respecto al cual la model card reporta deltas de mejora en los diez benchmarks, aunque los valores concretos de la variante de 4B no están transcritos en la información disponible. Frente a las variantes mayores de la misma familia, Lion-ER-4B ofrece el menor coste de despliegue a cambio de menor capacidad absoluta.
 
@@ -97,7 +97,7 @@ La comparación más directa es con su modelo base Qwen3.5-4B, respecto al cual 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cmriat/lion-ER-4B
+- Modelo en Hugging Face: https://huggingface.co/cmriat/lion-ER-4B
 - Modelo base Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
 - Repositorio ERQA (Google DeepMind): https://github.com/embodiedreasoning/ERQA
 - Licencia ERQA (CC BY 4.0): https://github.com/embodiedreasoning/ERQA/blob/main/LICENSE

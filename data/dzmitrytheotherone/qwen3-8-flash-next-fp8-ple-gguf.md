@@ -18,7 +18,7 @@ La relevancia práctica es limitada fuera de Strata: el GGUF no es un modelo com
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | FP8 (origen) empaquetado en GGUF para tabla PLE; no se documentan otras cuantizaciones |
 | Idiomas soportados | no disponible |
-| Licencia | qwen-community-1.0 (etiquetada como "other" en HuggingFace) |
+| Licencia | qwen-community-1.0 (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | GGUF (tabla PLE derivada de safetensors FP8) |
 
 ## Arquitectura y entrenamiento
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-Flash-Next-FP8-PLE-GGUF (este repo) | 51,2 B (modelo base) | no disponible | GGUF (tabla PLE) | qwen-community-1.0 | HuggingFace, 0 descargas |
-| Qwen3.8-Flash-Next-FP8 (oficial) | 51,2 B | no disponible | safetensors FP8 | qwen-community-1.0 | HuggingFace (Qwen) |
+| Qwen3.8-Flash-Next-FP8-PLE-GGUF (este repo) | 51,2 B (modelo base) | no disponible | GGUF (tabla PLE) | qwen-community-1.0 | Hugging Face, 0 descargas |
+| Qwen3.8-Flash-Next-FP8 (oficial) | 51,2 B | no disponible | safetensors FP8 | qwen-community-1.0 | Hugging Face (Qwen) |
 | Otras conversiones comunitarias de Qwen3.8 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información suficiente para comparar rendimiento con alternativas de la misma categoría.
@@ -81,7 +81,7 @@ No se dispone de información suficiente para comparar rendimiento con alternati
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/DzmitryTheOtherOne/Qwen3.8-Flash-Next-FP8-PLE-GGUF
+- Repositorio Hugging Face: https://huggingface.co/DzmitryTheOtherOne/Qwen3.8-Flash-Next-FP8-PLE-GGUF
 - Modelo base oficial: https://huggingface.co/Qwen/Qwen3.8-Flash-Next-FP8
 - Licencia oficial: https://huggingface.co/Qwen/Qwen3.8-Flash-Next-FP8/blob/main/LICENSE
 - Motor Strata: https://github.com/niko1221/strata

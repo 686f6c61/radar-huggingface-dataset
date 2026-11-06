@@ -72,7 +72,7 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks en 
 - VRAM estimada para inferencia: no disponible; con ~977M de parametros en FP16 se requieren aproximadamente 2 GB, y en cuantizaciones de 8 o 4 bits menos de 1-1,5 GB (estimacion, no confirmada por el autor)
 - GPU recomendadas: cualquier GPU de consumo moderna es suficiente para inferencia; el entrenamiento original se realizo en una RTX 5080 de 16 GB con 64 GB de DDR5
 - Cabe con holgura en GPUs de consumo (RTX 3060, 4060, 4090, etc.) y probablemente en CPU, aunque no hay datos de rendimiento publicados
-- Opciones de despliegue: no disponible de forma explicita; al usar un tokenizador y formato propios, la compatibilidad con llama.cpp, Ollama o vLLM no esta garantizada; transformers de HuggingFace es la via documentada
+- Opciones de despliegue: no disponible de forma explicita; al usar un tokenizador y formato propios, la compatibilidad con llama.cpp, Ollama o vLLM no esta garantizada; transformers de Hugging Face es la via documentada
 - Latencia y throughput: no disponibles para inferencia; en pre-entrenamiento se alcanzaron 21.000 tokens/seg en la RTX 5080
 
 ## Comparativa con modelos similares

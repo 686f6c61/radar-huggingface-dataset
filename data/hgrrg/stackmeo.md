@@ -2,7 +2,7 @@
 
 ## Resumen
 
-stackmeo es un modelo de clasificación de imágenes desarrollado por el usuario hgrrg, publicado en HuggingFace bajo licencia Apache 2.0. Su propósito es identificar la raza de un gato a partir de una fotografía, devolviendo las tres razas más probables junto con una puntuación de confianza para cada una. El nombre deriva de "mèo", la palabra vietnamita para gato. Está diseñado explícitamente para ser ligero y fácil de integrar en proyectos de aficionados, demos o aplicaciones.
+stackmeo es un modelo de clasificación de imágenes desarrollado por el usuario hgrrg, publicado en Hugging Face bajo licencia Apache 2.0. Su propósito es identificar la raza de un gato a partir de una fotografía, devolviendo las tres razas más probables junto con una puntuación de confianza para cada una. El nombre deriva de "mèo", la palabra vietnamita para gato. Está diseñado explícitamente para ser ligero y fácil de integrar en proyectos de aficionados, demos o aplicaciones.
 
 El modelo se distribuye como un artefacto TorchScript (`test.pt`) cargable mediante `torch.jit.load`, con un pipeline declarado de `image-classification` y la librería PyTorch. El preprocesado esperado es el estándar de ImageNet: redimensionado a 224x224 píxeles, conversión a tensor y normalización con medias y desviaciones típicas de ImageNet. Esto sugiere una arquitectura de visión convolucional o transformer de visión con entrada de 224x224, aunque el autor no especifica la arquitectura subyacente.
 
@@ -60,11 +60,11 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables en la documentación proporcionada. Existen clasificadores de razas de gatos en HuggingFace y en otros repositorios, pero no se han facilitado datos de parámetros, contexto ni rendimiento para establecer una comparación rigurosa. Por tanto, la comparativa se indica como no disponible.
+No se dispone de información sobre modelos comparables en la documentación proporcionada. Existen clasificadores de razas de gatos en Hugging Face y en otros repositorios, pero no se han facilitado datos de parámetros, contexto ni rendimiento para establecer una comparación rigurosa. Por tanto, la comparativa se indica como no disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| stackmeo | no disponible | no aplica | no disponible | Apache 2.0 | HuggingFace |
+| stackmeo | no disponible | no aplica | no disponible | Apache 2.0 | Hugging Face |
 | Alternativas | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -80,5 +80,5 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hgrrg/stackmeo
+- Modelo en Hugging Face: https://huggingface.co/hgrrg/stackmeo
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información proporcionada.

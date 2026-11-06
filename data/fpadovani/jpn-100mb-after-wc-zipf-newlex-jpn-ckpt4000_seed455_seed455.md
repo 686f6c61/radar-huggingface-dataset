@@ -4,7 +4,7 @@
 
 `fpadovani/jpn-100mb-after-wc-zipf-newlex-jpn-ckpt4000_seed455_seed455` es un modelo de generacion de texto de tipo GPT-2 con 124.770.816 parametros (aproximadamente 124,8 millones), publicado por el usuario fpadovani y entrenado mediante ajuste supervisado (SFT) con la libreria TRL. Se trata de un ajuste fino del modelo base `fpadovani/ppt-wc-zipf-newlex-jpn-100mb_seed455`, del que hereda la arquitectura y el tokenizador; el nombre del checkpoint sugiere un estudio sobre el efecto del vocabulario y de la frecuencia lexica (terminos "zipf" y "newlex") en un corpus de 100 MB etiquetado como japones ("jpn").
 
-El modelo no es un lanzamiento de produccion: es un artefacto de investigacion. No tiene descargas ni interacciones en HuggingFace, no declara licencia efectiva (la model card contiene el marcador de posicion `licence: license`), no especifica idiomas soportados ni longitud de contexto, y no publica resultados de benchmarks. Su interes esta, por tanto, en servir como punto de comparacion reproducible dentro de una linea de experimentos sobre tokenizacion, vocabulario y eficiencia de datos, mas que como modelo listo para desplegar.
+El modelo no es un lanzamiento de produccion: es un artefacto de investigacion. No tiene descargas ni interacciones en Hugging Face, no declara licencia efectiva (la model card contiene el marcador de posicion `licence: license`), no especifica idiomas soportados ni longitud de contexto, y no publica resultados de benchmarks. Su interes esta, por tanto, en servir como punto de comparacion reproducible dentro de una linea de experimentos sobre tokenizacion, vocabulario y eficiencia de datos, mas que como modelo listo para desplegar.
 
 Los identificadores del nombre (`ckpt4000`, `seed455`) apuntan a una rejilla de experimentos con semillas y checkpoints controlados, entrenada por el grupo de investigación asociado al proyecto de Weights & Biases `f-padovani-university-of-groningen/white_cotterell`. Cualquier evaluacion seria de este modelo requiere consultar el repositorio del proyecto para conocer el dataset, el tokenizador y la configuracion exacta, datos que no estan incluidos en la informacion disponible.
 
@@ -93,7 +93,7 @@ No se dispone de informacion suficiente para comparar el rendimiento de estos mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/jpn-100mb-after-wc-zipf-newlex-jpn-ckpt4000_seed455_seed455
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/jpn-100mb-after-wc-zipf-newlex-jpn-ckpt4000_seed455_seed455
 - Modelo base: https://huggingface.co/fpadovani/ppt-wc-zipf-newlex-jpn-100mb_seed455
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/diyrdvwm
 - Repositorio de TRL: https://github.com/huggingface/trl

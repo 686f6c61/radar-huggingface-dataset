@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AirVLA FT-D (step 15000) es un checkpoint de investigación publicado por el usuario hanapasta en HuggingFace. Se trata de un ajuste fino (fine-tune) de la política vision-language-action `lerobot/pi0`, adaptada a un cuadricóptero con un brazo de 2 grados de libertad y pinza paralela, y evaluada íntegramente en simulación con MuJoCo 3.3.4. El modelo forma parte de una campaña de disertación de máster denominada AirVLA, orientada a estudiar el transporte de políticas VLA preentrenadas al dominio de la manipulación aérea.
+AirVLA FT-D (step 15000) es un checkpoint de investigación publicado por el usuario hanapasta en Hugging Face. Se trata de un ajuste fino (fine-tune) de la política vision-language-action `lerobot/pi0`, adaptada a un cuadricóptero con un brazo de 2 grados de libertad y pinza paralela, y evaluada íntegramente en simulación con MuJoCo 3.3.4. El modelo forma parte de una campaña de disertación de máster denominada AirVLA, orientada a estudiar el transporte de políticas VLA preentrenadas al dominio de la manipulación aérea.
 
 El objetivo concreto de este checkpoint, según su model card, era comprobar si escalar los datos de comandos emparejados (paired-command scaling) mejora el anclaje lingüístico (language grounding). El resultado reportado por el autor es negativo: el error de validación baja, pero aumentan los acercamientos a objetos equivocados, lo que indica que la mejora de la métrica de validación no se traduce en un mejor seguimiento de la instrucción.
 
@@ -83,8 +83,8 @@ No se han publicado en la información disponible otros resultados de benchmarks
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `hanapasta/airvla_ftd_15000` | 4.028.019.472 | no disponible | 1/60 agarres, 40/60 objetivo correcto, 10/20 navegacion | MIT | HuggingFace, 0 descargas |
-| `lerobot/pi0` (modelo base) | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada | HuggingFace |
+| `hanapasta/airvla_ftd_15000` | 4.028.019.472 | no disponible | 1/60 agarres, 40/60 objetivo correcto, 10/20 navegacion | MIT | Hugging Face, 0 descargas |
+| `lerobot/pi0` (modelo base) | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada | Hugging Face |
 | FT-C (checkpoint previo de la misma campana) | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada | Referenciado como punto de partida |
 
 No se dispone de datos comparativos con otras familias de VLA (OpenVLA, RDT, otros fine-tunes de pi0) en la información proporcionada.
@@ -104,7 +104,7 @@ No se dispone de datos comparativos con otras familias de VLA (OpenVLA, RDT, otr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hanapasta/airvla_ftd_15000
+- Modelo en Hugging Face: https://huggingface.co/hanapasta/airvla_ftd_15000
 - Modelo base: https://huggingface.co/lerobot/pi0
 - Dataset de entrenamiento: https://huggingface.co/datasets/hanapasta/airvla_v22
 - Codigo, guia de reproduccion y registro experimental: https://github.com/robotics-hana/drone-version2

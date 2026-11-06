@@ -90,6 +90,6 @@ Nota: los modelos comparados tienen tamaños y contextos diferentes; la comparac
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/CobrIX/CobrIX-1.0-Coder-Full-72B-A18B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/CobrIX/CobrIX-1.0-Coder-Full-72B-A18B-GGUF
 - Modelo base: https://huggingface.co/empero-ai/Qwythos-9B-v2
 - No se han encontrado papers, blogs o demos adicionales en la información disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mclass es un modelo de clasificación de texto desarrollado por el usuario thesimonharms, publicado en HuggingFace bajo licencia MIT. Su función es extraer y clasificar preferencias de codificación a partir de texto de usuario, mensajes de un harness (el agente o entorno que ejecuta al asistente) y fragmentos de código en formato diff. No genera texto libre: escribe etiquetas tipadas acompañadas de un porcentaje de confianza.
+mclass es un modelo de clasificación de texto desarrollado por el usuario thesimonharms, publicado en Hugging Face bajo licencia MIT. Su función es extraer y clasificar preferencias de codificación a partir de texto de usuario, mensajes de un harness (el agente o entorno que ejecuta al asistente) y fragmentos de código en formato diff. No genera texto libre: escribe etiquetas tipadas acompañadas de un porcentaje de confianza.
 
 El modelo parte de sentence-transformers/all-MiniLM-L6-v2, un encoder transformer MiniLM, al que se le aplicaron adaptadores LoRA de rango 8 sobre las dos últimas capas y que después se fusionaron, añadiendo dos cabezas de clasificación sobre el embedding con mean pooling: una cabeza `kind` con cuatro clases y una cabeza `category` con diez clases. La única salida textual es la etiqueta; el extractor copia la frase candidata del texto del usuario o de una plantilla de diff, de modo que el encoder nunca inventa una frase de preferencia.
 
@@ -43,7 +43,7 @@ En cuanto al entrenamiento, la model card indica que se usó LoRA de rango 8 sob
 - Entrada estructurada con tres campos: `user` (texto del usuario), `harness` (lista de mensajes del entorno) y `code` (lista de hunks de diff).
 - Servicio HTTP propio mediante `mclass serve --port 8091 --artifacts artifacts`, con endpoint `POST /v1/classify`.
 - Inferencia en entornos sin PyTorch gracias al grafo ONNX exportado.
-- Compatibilidad declarada con endpoints de HuggingFace (etiqueta `endpoints_compatible`).
+- Compatibilidad declarada con endpoints de Hugging Face (etiqueta `endpoints_compatible`).
 - No soporta tool calling ni function calling.
 - No soporta razonamiento multi-paso ni comportamiento de agente.
 - No dispone de modo de razonamiento explícito (thinking mode).
@@ -80,7 +80,7 @@ Los únicos resultados publicados son los de la model card, correspondientes a l
 - El repositorio completo ocupa 0,2 GB, por lo que la inferencia en FP32 requiere muy poca memoria (por debajo de 1 GB de VRAM o RAM en cualquier configuración razonable, incluyendo el grafo ONNX).
 - Cabe sin problema en GPU de consumo: cualquier tarjeta con al menos 2 GB de VRAM es suficiente; también es viable en CPU y en iGPU. En las notas de entrenamiento se menciona una gfx1151 (iGPU AMD) como entorno problemático solo para el entrenamiento, no para la inferencia.
 - No se especifican GPU recomendadas por el autor; las gamas altas tipo A100 o H100 no aportan ventaja apreciable para un encoder de este tamaño.
-- Opciones de despliegue: ONNX Runtime para el grafo `model.onnx`, Transformers para el encoder más `heads.pt` para las cabezas, y el servidor HTTP propio del paquete (`mclass serve`, puerto 8091). También se declara compatibilidad con endpoints de HuggingFace.
+- Opciones de despliegue: ONNX Runtime para el grafo `model.onnx`, Transformers para el encoder más `heads.pt` para las cabezas, y el servidor HTTP propio del paquete (`mclass serve`, puerto 8091). También se declara compatibilidad con endpoints de Hugging Face.
 - vLLM, llama.cpp, Ollama y TGI no aplican, ya que no es un modelo generativo.
 - Latencia y throughput: no disponible. No se publican medidas de tiempo por petición ni de peticiones por segundo.
 
@@ -90,8 +90,8 @@ No se dispone de datos comparativos publicados en la información proporcionada.
 
 | Modelo | Parametros | Contexto | Tarea | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| thesimonharms/mclass | no disponible | no disponible | Clasificacion de preferencias de codificacion (4 clases de kind, 10 de category) | durable F1 1.000 en test segun la model card | MIT | HuggingFace, 0 descargas, 0 likes |
-| sentence-transformers/all-MiniLM-L6-v2 (modelo base) | no disponible | no disponible | Sentence embeddings de proposito general | No comparable: mclass es un fine-tuning sobre este modelo | MIT (segun la ficha del modelo base enlazado) | HuggingFace |
+| thesimonharms/mclass | no disponible | no disponible | Clasificacion de preferencias de codificacion (4 clases de kind, 10 de category) | durable F1 1.000 en test segun la model card | MIT | Hugging Face, 0 descargas, 0 likes |
+| sentence-transformers/all-MiniLM-L6-v2 (modelo base) | no disponible | no disponible | Sentence embeddings de proposito general | No comparable: mclass es un fine-tuning sobre este modelo | MIT (segun la ficha del modelo base enlazado) | Hugging Face |
 | Clasificadores especializados de preferencias de codigo | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -111,7 +111,7 @@ No se dispone de datos comparativos publicados en la información proporcionada.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thesimonharms/mclass
+- Modelo en Hugging Face: https://huggingface.co/thesimonharms/mclass
 - Modelo base: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
 - Repositorio de codigo: https://git.simonharms.com/thesimonharms/mclass
 - Clon del repositorio: https://git.simonharms.com/thesimonharms/mclass.git

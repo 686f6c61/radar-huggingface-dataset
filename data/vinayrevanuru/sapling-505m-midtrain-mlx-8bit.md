@@ -97,7 +97,7 @@ Nota metodológica: la perplejidad en WikiText-2 no es comparable entre modelos 
 
 ## Enlaces
 
-- Repositorio HuggingFace (8-bit MLX): https://huggingface.co/VinayRevanuru/Sapling-505M-Midtrain-MLX-8bit
+- Repositorio Hugging Face (8-bit MLX): https://huggingface.co/VinayRevanuru/Sapling-505M-Midtrain-MLX-8bit
 - Modelo base (FP32): https://huggingface.co/VinayRevanuru/Sapling-505M-Midtrain
 - Versión GGUF (llama.cpp / Ollama): https://huggingface.co/VinayRevanuru/Sapling-505M-Midtrain-GGUF
 - Variante SFT para chat: https://huggingface.co/VinayRevanuru/Sapling-505M-SFT

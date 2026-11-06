@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Semantic-lite es un modelo de embeddings multilingue desarrollado por el usuario ukung y publicado en HuggingFace bajo licencia Apache-2.0. Se construye a partir de Qwen3-0.6B mediante poda de capas (de 28 a 6), lo que reduce el modelo de 596 M a 250 M de parametros (2,4 veces mas pequeno) manteniendo, segun su autor, un rendimiento en recuperacion igual o superior al de modelos de embeddings dedicados. Produce vectores de 1024 dimensiones y admite secuencias de hasta 8192 tokens.
+Semantic-lite es un modelo de embeddings multilingue desarrollado por el usuario ukung y publicado en Hugging Face bajo licencia Apache-2.0. Se construye a partir de Qwen3-0.6B mediante poda de capas (de 28 a 6), lo que reduce el modelo de 596 M a 250 M de parametros (2,4 veces mas pequeno) manteniendo, segun su autor, un rendimiento en recuperacion igual o superior al de modelos de embeddings dedicados. Produce vectores de 1024 dimensiones y admite secuencias de hasta 8192 tokens.
 
 El modelo esta pensado para tareas de similitud semantica, busqueda semantica, recuperacion cross-lingue, clustering, deteccion de duplicados, mineria de parafrasis y generacion aumentada por recuperacion (RAG). Su interes practico reside en la combinacion de un tamano reducido (250 M de parametros, repositorio de 0,5 GB) con una ventana de contexto de 8192 tokens y cobertura multilingue heredada de Qwen3.
 
@@ -24,7 +24,7 @@ Es relevante ahora porque la mayoria de modelos de embeddings multilingues con c
 | Libreria | sentence-transformers |
 | Pipeline | feature-extraction / sentence-similarity |
 | Tamano del repositorio | 0,5 GB |
-| Creado / actualizado | 2026-09-13 (segun la ficha de HuggingFace) |
+| Creado / actualizado | 2026-09-13 (segun la ficha de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Consumo total en inferencia: por debajo de 2 GB en FP16 incluso con lotes moderados, aunque la memoria de activaciones crece con la longitud de secuencia (hasta 8192 tokens) y con el tamano de lote; no hay cifras publicadas.
 - GPU recomendadas: cualquier GPU con 4 GB o mas de VRAM es suficiente en la practica (RTX 3060, RTX 4060, RTX 4090, T4, L4). En centros de datos, A100 y H100 funcionan pero estan sobredimensionadas para 250 M de parametros; el cuello de botella real sera el lote y el volumen de datos.
 - GPU consumer: si, cabe con holgura en cualquier GPU consumer moderna e incluso en iGPU con memoria compartida suficiente. Tambien es viable en CPU para lotes pequenos o medianos.
-- Opciones de despliegue: sentence-transformers (via PyTorch), text-embeddings-inference (etiqueta declarada en la ficha), HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`) y servidores de embeddings compatibles con la interfaz de sentence-transformers. No se documentan pesos GGUF, por lo que llama.cpp y Ollama no estan soportados de forma oficial; tampoco hay confirmacion de soporte en vLLM ni ONNX.
+- Opciones de despliegue: sentence-transformers (via PyTorch), text-embeddings-inference (etiqueta declarada en la ficha), Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`) y servidores de embeddings compatibles con la interfaz de sentence-transformers. No se documentan pesos GGUF, por lo que llama.cpp y Ollama no estan soportados de forma oficial; tampoco hay confirmacion de soporte en vLLM ni ONNX.
 - Latencia y throughput: no disponibles. No se han publicado mediciones de latencia por lote ni de documentos por segundo.
 
 ## Comparativa con modelos similares
@@ -101,7 +101,7 @@ Los datos de los modelos comparados provienen de sus fichas publicas y pueden va
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ukung/semantic-lite
+- Modelo en Hugging Face: https://huggingface.co/ukung/semantic-lite
 - Modelo base: Qwen3-0.6B (familia Qwen3, Alibaba) — referencia accesible desde la ficha del autor, sin enlace directo incluido en la informacion proporcionada
 - Libreria sentence-transformers: no se incluye enlace en la informacion proporcionada
 - Paper, blog o repositorio del modelo: no disponible

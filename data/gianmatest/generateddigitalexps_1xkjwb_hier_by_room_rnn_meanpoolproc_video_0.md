@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gianmaTest/generatedDigitalExps_1xKjWB_hier_by_room_rnn_meanPoolProc_video_0` es un checkpoint de 2.366.208 parámetros (aproximadamente 2,37 M) publicado en HuggingFace Hub por el usuario `gianmaTest` el 24 de octubre de 2026. No dispone de model card real: el README es la plantilla autogenerada por `PyTorchModelHubMixin`, con los campos Code, Paper y Docs marcados como "More Information Needed". No hay pipeline declarado, ni licencia, ni idiomas, ni documentación sobre el entrenamiento.
+`gianmaTest/generatedDigitalExps_1xKjWB_hier_by_room_rnn_meanPoolProc_video_0` es un checkpoint de 2.366.208 parámetros (aproximadamente 2,37 M) publicado en Hugging Face Hub por el usuario `gianmaTest` el 24 de octubre de 2026. No dispone de model card real: el README es la plantilla autogenerada por `PyTorchModelHubMixin`, con los campos Code, Paper y Docs marcados como "More Information Needed". No hay pipeline declarado, ni licencia, ni idiomas, ni documentación sobre el entrenamiento.
 
 El identificador del repositorio sugiere que se trata de un artefacto de un pipeline automatizado de experimentos: el prefijo `generatedDigitalExps` apunta a una generación automática, `1xKjWB` parece un hash de experimento, y el sufijo `hier_by_room_rnn_meanPoolProc_video_0` describe una arquitectura recurrente jerárquica por habitación con agregación mediante mean pooling sobre características de vídeo. Ninguno de estos extremos está confirmado por el autor, por lo que deben tratarse como inferencias a partir del nombre.
 
@@ -65,10 +65,10 @@ No es posible establecer una comparativa funcional: se desconoce la tarea, la mo
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `gianmaTest/generatedDigitalExps_...video_0` | 2,37 M | No disponible | No disponible | HuggingFace Hub, sin documentación |
-| `distilgpt2` | 82 M | 1024 tokens | Apache 2.0 | HuggingFace Hub, documentado |
-| `Qwen2.5-0.5B` | 0,49 B | 32.768 tokens | Apache 2.0 | HuggingFace Hub, documentado |
-| `TinyLlama-1.1B` | 1,1 B | 2048 tokens | Apache 2.0 | HuggingFace Hub, documentado |
+| `gianmaTest/generatedDigitalExps_...video_0` | 2,37 M | No disponible | No disponible | Hugging Face Hub, sin documentación |
+| `distilgpt2` | 82 M | 1024 tokens | Apache 2.0 | Hugging Face Hub, documentado |
+| `Qwen2.5-0.5B` | 0,49 B | 32.768 tokens | Apache 2.0 | Hugging Face Hub, documentado |
+| `TinyLlama-1.1B` | 1,1 B | 2048 tokens | Apache 2.0 | Hugging Face Hub, documentado |
 
 Los tres modelos de referencia son modelos de lenguaje con arquitectura, tokenizador y evaluaciones publicadas; este checkpoint no es directamente intercambiable con ellos ni se le puede atribuir ninguna de sus capacidades.
 
@@ -86,7 +86,7 @@ Los tres modelos de referencia son modelos de lenguaje con arquitectura, tokeniz
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gianmaTest/generatedDigitalExps_1xKjWB_hier_by_room_rnn_meanPoolProc_video_0
+- Repositorio en Hugging Face: https://huggingface.co/gianmaTest/generatedDigitalExps_1xKjWB_hier_by_room_rnn_meanPoolProc_video_0
 - Documentación de `PyTorchModelHubMixin` citada en la model card: https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin
 - Código: no disponible ("More Information Needed" en la model card)
 - Paper: no disponible ("More Information Needed" en la model card)

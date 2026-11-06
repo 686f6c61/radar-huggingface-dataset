@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Krea2 es un modelo publicado en HuggingFace por el usuario amphibiousrizz bajo el identificador `amphibiousrizz/Krea2`. La informacion disponible en la ficha del repositorio es muy limitada: no se declara pipeline, licencia, idiomas soportados ni arquitectura, y el autor no ha publicado documentacion tecnica asociada. El repositorio ocupa 21,9 GB y acumula 28 likes y 4 descargas desde su creacion el 13 de septiembre de 2026, con ultima actualizacion el 8 de octubre de 2026.
+Krea2 es un modelo publicado en Hugging Face por el usuario amphibiousrizz bajo el identificador `amphibiousrizz/Krea2`. La informacion disponible en la ficha del repositorio es muy limitada: no se declara pipeline, licencia, idiomas soportados ni arquitectura, y el autor no ha publicado documentacion tecnica asociada. El repositorio ocupa 21,9 GB y acumula 28 likes y 4 descargas desde su creacion el 13 de septiembre de 2026, con ultima actualizacion el 8 de octubre de 2026.
 
-El unico tag publico es `region:us`, que en HuggingFace indica la region de almacenamiento del repositorio y no aporta informacion sobre el modelo en si. Esto significa que cualquier evaluacion tecnica seria sobre arquitectura, entrenamiento o capacidades queda fuera del alcance de esta ficha, ya que no existe informacion verificable al respecto.
+El unico tag publico es `region:us`, que en Hugging Face indica la region de almacenamiento del repositorio y no aporta informacion sobre el modelo en si. Esto significa que cualquier evaluacion tecnica seria sobre arquitectura, entrenamiento o capacidades queda fuera del alcance de esta ficha, ya que no existe informacion verificable al respecto.
 
 La relevancia de esta ficha es, por tanto, principalmente documental: sirve como registro de que el modelo existe, de su tamano en disco y de la ausencia de metadatos publicos. Se recomienda a cualquier equipo que considere usarlo que inspeccione directamente el repositorio (nombre de los ficheros de pesos, presencia de `config.json`, plantilla de chat, etc.) antes de tomar decisiones de integracion.
 
@@ -26,7 +26,7 @@ La relevancia de esta ficha es, por tanto, principalmente documental: sirve como
 
 ## Arquitectura y entrenamiento
 
-No disponible. La ficha de HuggingFace no declara arquitectura (transformer, MoE, SSM o hibrida), numero de parametros, volumen de tokens de entrenamiento, composicion del dataset ni si se aplicaron tecnicas de alineacion como RLHF, DPO o RLVR. Tampoco se documenta ninguna innovacion tecnica de atencion o decodificacion.
+No disponible. La ficha de Hugging Face no declara arquitectura (transformer, MoE, SSM o hibrida), numero de parametros, volumen de tokens de entrenamiento, composicion del dataset ni si se aplicaron tecnicas de alineacion como RLHF, DPO o RLVR. Tampoco se documenta ninguna innovacion tecnica de atencion o decodificacion.
 
 El unico dato objetivo relacionado con el despliegue es el tamano del repositorio, 21,9 GB. A modo de estimacion orientativa y no confirmada, ese volumen seria compatible con pesos en precision media (por ejemplo, fp16/bf16) de un modelo de aproximadamente 10 000-11 000 millones de parametros, o con un modelo menor almacenado en varias precisiones y ficheros auxiliares. Esta estimacion es especulativa y no debe tomarse como especificacion del modelo.
 
@@ -51,7 +51,7 @@ No es posible enumerar casos de uso concretos y realistas sin conocer el tipo de
 - Auditoria de licencia: revisar el repositorio en busca de ficheros `LICENSE`, `README` o modelos de tarjeta que aclaren las condiciones de uso comercial.
 - Analisis de procedencia: comprobar con que modelos o datasets guarda relacion, dado que no hay documentacion de entrenamiento.
 - Pruebas de reproducibilidad: verificar que los ficheros publicados cargan correctamente en las librerias habituales.
-- Investigacion sobre modelos sin documentacion: usar este repositorio como caso de estudio de publicaciones opacas en HuggingFace.
+- Investigacion sobre modelos sin documentacion: usar este repositorio como caso de estudio de publicaciones opacas en Hugging Face.
 - Descartado para produccion: sin licencia ni documentacion, no es apto para despliegues comerciales sin un analisis legal previo.
 
 ## Benchmarks y rendimiento
@@ -75,7 +75,7 @@ No disponible. Al desconocerse el dominio, el tamano y la licencia del modelo, n
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| amphibiousrizz/Krea2 | no disponible | no disponible | no disponible | HuggingFace, 4 descargas |
+| amphibiousrizz/Krea2 | no disponible | no disponible | no disponible | Hugging Face, 4 descargas |
 | Alternativa 1 | no disponible | no disponible | no disponible | no disponible |
 | Alternativa 2 | no disponible | no disponible | no disponible | no disponible |
 
@@ -93,6 +93,6 @@ No disponible. Al desconocerse el dominio, el tamano y la licencia del modelo, n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amphibiousrizz/Krea2
+- Hugging Face: https://huggingface.co/amphibiousrizz/Krea2
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de codigo o demos) en la busqueda web realizada.

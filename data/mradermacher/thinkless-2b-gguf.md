@@ -97,7 +97,7 @@ La comparacion de rendimiento no puede establecerse porque no hay benchmarks pub
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/ThinkLess-2B-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/ThinkLess-2B-GGUF
 - Modelo base: https://huggingface.co/Shaik1903/ThinkLess-2B
 - Dataset de entrenamiento: https://huggingface.co/datasets/Shaik1903/ThinkLess-data
 - Pagina de resumen de cuantizaciones del autor: https://hf.tst.eu/model#ThinkLess-2B-GGUF

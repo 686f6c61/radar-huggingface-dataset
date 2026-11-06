@@ -91,6 +91,6 @@ La model card recomienda comparar contra una línea base de capacidad equivalent
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zeyuozhao/cnn-transformer-retrieval
+- Modelo en Hugging Face: https://huggingface.co/zeyuozhao/cnn-transformer-retrieval
 
-La búsqueda web realizada no devolvió ningún enlace relevante sobre este modelo, su arquitectura o su autor: los resultados obtenidos correspondían a foros de programas de recompensas sin relación con el repositorio. Por tanto, no hay papers, blogs, repositorios auxiliares ni demos que enlazar además de la propia página de HuggingFace.
+La búsqueda web realizada no devolvió ningún enlace relevante sobre este modelo, su arquitectura o su autor: los resultados obtenidos correspondían a foros de programas de recompensas sin relación con el repositorio. Por tanto, no hay papers, blogs, repositorios auxiliares ni demos que enlazar además de la propia página de Hugging Face.

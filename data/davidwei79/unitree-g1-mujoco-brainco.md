@@ -87,8 +87,8 @@ El detalle de lo ejecutado para esta actualización se recoge en `VALIDATION.md`
 
 | Modelo | Tipo | Robot y cuerpo | Efectores finales | Camaras | Transporte | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| `davidwei79/unitree-g1-mujoco-brainco` | Fork experimental de entorno MuJoCo para LeRobot | Unitree G1, 29 motores corporales | `dex1`, `dex3`, `dummy`, `brainco` | Cabeza y ambas muñecas en `dex1`/`dex3`; solo cabeza en `dummy`/`brainco`; 640 x 480 a ~30 Hz por ZMQ | DDS Unitree SDK2/CycloneDDS + ZMQ | No disponible | HuggingFace, 0 descargas y 0 likes; requiere fijar commit |
-| `lerobot/unitree-g1-mujoco` (base) | Entorno MuJoCo upstream en LeRobot | Unitree G1, 29 motores corporales | No disponible en la información extraída; es la base sobre la que se construye el fork | No disponible | DDS + ZMQ | No disponible | HuggingFace, commit `a38dc8617f0fca51b38e9354dc58ee35ad850fb5` |
+| `davidwei79/unitree-g1-mujoco-brainco` | Fork experimental de entorno MuJoCo para LeRobot | Unitree G1, 29 motores corporales | `dex1`, `dex3`, `dummy`, `brainco` | Cabeza y ambas muñecas en `dex1`/`dex3`; solo cabeza en `dummy`/`brainco`; 640 x 480 a ~30 Hz por ZMQ | DDS Unitree SDK2/CycloneDDS + ZMQ | No disponible | Hugging Face, 0 descargas y 0 likes; requiere fijar commit |
+| `lerobot/unitree-g1-mujoco` (base) | Entorno MuJoCo upstream en LeRobot | Unitree G1, 29 motores corporales | No disponible en la información extraída; es la base sobre la que se construye el fork | No disponible | DDS + ZMQ | No disponible | Hugging Face, commit `a38dc8617f0fca51b38e9354dc58ee35ad850fb5` |
 | `google-deepmind/mujoco_menagerie` (`unitree_g1`) | Colección oficial de modelos MuJoCo | Unitree G1 bípedo con propiedades físicas y mecánica de articulaciones | No orientado a selección de efector final; incluye `scene_mjx.xml` para MJX | No aplica publicación de cámaras | No aplica | No disponible | GitHub y DeepWiki; modelo transferido a hardware en MuJoCo Playground |
 | `Humanoid-Team-ISR-Lab/G1_BrainCo_hands_Digital_Twin_Mujoco` | Gemelo digital MuJoCo nativo DDS | Unitree G1, 29 grados de libertad corporales con manos diestras BrainCo | Manos BrainCo | No disponible | `rt/lowcmd`, `rt/lowstate` y `rt/brainco/*` | No disponible | GitHub |
 
@@ -108,10 +108,10 @@ El detalle de lo ejecutado para esta actualización se recoge en `VALIDATION.md`
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwei79/unitree-g1-mujoco-brainco
-- Modelo base en HuggingFace: https://huggingface.co/lerobot/unitree-g1-mujoco/tree/a38dc8617f0fca51b38e9354dc58ee35ad850fb5
+- Repositorio en Hugging Face: https://huggingface.co/davidwei79/unitree-g1-mujoco-brainco
+- Modelo base en Hugging Face: https://huggingface.co/lerobot/unitree-g1-mujoco/tree/a38dc8617f0fca51b38e9354dc58ee35ad850fb5
 - Documentación del Unitree G1 en MuJoCo Menagerie (DeepWiki): https://deepwiki.com/google-deepmind/mujoco_menagerie/2.2-unitree-g1
 - Modelo `unitree_g1` en MuJoCo Menagerie (GitHub): https://github.com/google-deepmind/mujoco_menagerie/tree/main/unitree_g1
 - Gemelo digital MuJoCo del G1 con manos BrainCo (GitHub): https://github.com/Humanoid-Team-ISR-Lab/G1_BrainCo_hands_Digital_Twin_Mujoco
 - Documentación de modelos de robot en `unitree_mujoco` (DeepWiki): https://deepwiki.com/unitreerobotics/unitree_mujoco/5-robot-models
-- Colección de datasets de agarre y manipulación del Unitree G1 BrainCo en HuggingFace: https://huggingface.co/collections/mindchain/unitree-g1-brainco-grasping-and-manipulation-data
+- Colección de datasets de agarre y manipulación del Unitree G1 BrainCo en Hugging Face: https://huggingface.co/collections/mindchain/unitree-g1-brainco-grasping-and-manipulation-data

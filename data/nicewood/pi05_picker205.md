@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Nicewood/pi05_picker205` es una implementación de la política π₀.₅ (Pi05), un modelo de visión-lenguaje-acción (VLA) desarrollado originalmente por Physical Intelligence y adaptado al ecosistema LeRobot por el usuario Nicewood. Este modelo está diseñado para control robótico con generalización a entornos no vistos durante el entrenamiento, un paso más allá de los sistemas tradicionales que operan en entornos fijos. La versión publicada en HuggingFace está entrenada sobre el dataset `black-forest-labs/lerobot-picker-camfix`, orientado a tareas de picking (recogida de objetos) con cámara.
+El modelo `Nicewood/pi05_picker205` es una implementación de la política π₀.₅ (Pi05), un modelo de visión-lenguaje-acción (VLA) desarrollado originalmente por Physical Intelligence y adaptado al ecosistema LeRobot por el usuario Nicewood. Este modelo está diseñado para control robótico con generalización a entornos no vistos durante el entrenamiento, un paso más allá de los sistemas tradicionales que operan en entornos fijos. La versión publicada en Hugging Face está entrenada sobre el dataset `black-forest-labs/lerobot-picker-camfix`, orientado a tareas de picking (recogida de objetos) con cámara.
 
 El modelo cuenta con 4.143.404.816 parámetros (aproximadamente 4,1 mil millones) y se distribuye en formato safetensors, con un tamaño de repositorio de 9,4 GB. Su licencia es Apache 2.0, lo que permite uso comercial y modificación. La relevancia actual radica en que π₀.₅ representa una de las aproximaciones más recientes a la robótica generalista, combinando comprensión visual, razonamiento lingüístico y generación de acciones motoras en un único modelo. Esta implementación concreta permite a la comunidad LeRobot entrenar y evaluar la política en hardware asequible como el robot SO-100.
 
@@ -29,7 +29,7 @@ El entrenamiento de esta versión concreta se realizó sobre el dataset `black-f
 
 - Control robótico directo: genera acciones motoras (posiciones de articulaciones, velocidades, etc.) a partir de observaciones visuales, sin necesidad de módulos intermedios de planificación.
 - Generalización a entornos no vistos: diseñado para operar en escenarios distintos a los del entrenamiento, gracias a la comprensión semántica de la escena.
-- Integración con LeRobot: compatible con el framework de HuggingFace para entrenamiento, evaluación y despliegue en robots como SO-100, SO-101, etc.
+- Integración con LeRobot: compatible con el framework de Hugging Face para entrenamiento, evaluación y despliegue en robots como SO-100, SO-101, etc.
 - Procesamiento de instrucciones en lenguaje natural: aunque no se detalla en esta versión, la arquitectura π₀.₅ soporta comandos verbales para guiar la tarea.
 - Visión por computador: interpreta imágenes de cámara para localizar objetos y comprender la geometría de la escena.
 - Aprendizaje por imitación: el modelo se entrena mediante demostraciones, lo que permite adaptarlo a tareas específicas con datos relativamente escasos.
@@ -61,8 +61,8 @@ No se dispone de información suficiente para una comparativa cuantitativa. Los 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| π₀.₅ (este) | 4,1B | no disponible | Apache 2.0 | HuggingFace |
-| OpenVLA | 7B | no disponible | Apache 2.0 | HuggingFace |
+| π₀.₅ (este) | 4,1B | no disponible | Apache 2.0 | Hugging Face |
+| OpenVLA | 7B | no disponible | Apache 2.0 | Hugging Face |
 | RT-2 (Google) | 55B | no disponible | Propietaria | no público |
 
 Sin datos de benchmarks ni especificaciones detalladas de los competidores, no es posible establecer una comparación rigurosa. Se recomienda consultar la documentación de cada modelo para más información.
@@ -79,7 +79,7 @@ Sin datos de benchmarks ni especificaciones detalladas de los competidores, no e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nicewood/pi05_picker205
+- Modelo en Hugging Face: https://huggingface.co/Nicewood/pi05_picker205
 - Blog de Physical Intelligence sobre π₀.₅: https://www.physicalintelligence.company/blog/pi05
 - Repositorio LeRobot: https://github.com/huggingface/lerobot
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index

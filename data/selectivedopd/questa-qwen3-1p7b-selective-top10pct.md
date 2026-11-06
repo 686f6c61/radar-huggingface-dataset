@@ -2,7 +2,7 @@
 
 ## Resumen
 
-QuestA-Qwen3-1p7b-Selective-Top10pct es un ajuste fino (fine-tune) subido a HuggingFace por el usuario SelectiveDOPD, construido sobre la familia Qwen3, segun indican los tags del repositorio (`qwen3`) y el propio nombre del modelo. Se trata de un modelo de generacion de texto con pipeline `text-generation` y soporte conversacional, distribuido en formato `safetensors` bajo la libreria `transformers`. El recuento real de parametros a partir de los tensores safetensors es de 2.031.739.904, lo que situa al modelo en la categoria de ~2B parametros.
+QuestA-Qwen3-1p7b-Selective-Top10pct es un ajuste fino (fine-tune) subido a Hugging Face por el usuario SelectiveDOPD, construido sobre la familia Qwen3, segun indican los tags del repositorio (`qwen3`) y el propio nombre del modelo. Se trata de un modelo de generacion de texto con pipeline `text-generation` y soporte conversacional, distribuido en formato `safetensors` bajo la libreria `transformers`. El recuento real de parametros a partir de los tensores safetensors es de 2.031.739.904, lo que situa al modelo en la categoria de ~2B parametros.
 
 El modelo procede del experimento interno identificado como `questa_qwen3_1p7b_JSD_rel_90_100` dentro de los experimentos "BiDirect-OPD". La rama `main` corresponde al checkpoint `global_step_300`, y existen ramas adicionales con checkpoints intermedios desde `global_step_20` hasta `global_step_280`. El nombre "Selective-Top10pct" sugiere algun tipo de entrenamiento o seleccion selectiva sobre el 10 % superior, aunque la model card no detalla la metodologia.
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| QuestA-Qwen3-1p7b-Selective-Top10pct | 2.031.739.904 (safetensors) | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
+| QuestA-Qwen3-1p7b-Selective-Top10pct | 2.031.739.904 (safetensors) | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
 | Qwen3-1.7B (base) | ~1,7 B (2,03 B contando embeddings segun recuento) | 32.768 tokens nativos (extensible con YaRN) | publicado por el autor del base | Apache 2.0 (modelo base) | ampliamente disponible |
 | Llama 3.2 1B | ~1,24 B | 128.000 tokens | publicado por Meta | Llama 3.2 Community License | ampliamente disponible |
 | Gemma 2 2B | ~2,6 B | 8.192 tokens | publicado por Google | Gemma Terms of Use | ampliamente disponible |
@@ -78,5 +78,5 @@ Nota: los datos de las filas comparativas corresponden a informacion publica de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SelectiveDOPD/QuestA-Qwen3-1p7b-Selective-Top10pct
+- Modelo en Hugging Face: https://huggingface.co/SelectiveDOPD/QuestA-Qwen3-1p7b-Selective-Top10pct
 - La busqueda web realizada no ha devuelto enlaces relevantes al modelo; los resultados obtenidos corresponden a entidades empresariales no relacionadas ("Veco") y no se incluyen por no ser pertinentes.

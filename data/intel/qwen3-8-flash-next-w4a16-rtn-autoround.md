@@ -67,9 +67,9 @@ No se dispone de datos de rendimiento comparativos en los benchmarks presentados
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-Flash-Next (original) | 125B | 6B | 1M | Qwen Community 1.0 | HuggingFace |
-| DeepSeek-V3 | 671B | 37B | 128K | MIT | HuggingFace |
-| Mixtral 8x22B | 141B | 39B | 64K | Apache 2.0 | HuggingFace |
+| Qwen3.8-Flash-Next (original) | 125B | 6B | 1M | Qwen Community 1.0 | Hugging Face |
+| DeepSeek-V3 | 671B | 37B | 128K | MIT | Hugging Face |
+| Mixtral 8x22B | 141B | 39B | 64K | Apache 2.0 | Hugging Face |
 
 La versión cuantizada de Intel ofrece una ventaja en eficiencia de memoria frente a estas alternativas, aunque su licencia es más restrictiva que la de DeepSeek o Mixtral. No se dispone de comparaciones directas de rendimiento.
 
@@ -84,7 +84,7 @@ La versión cuantizada de Intel ofrece una ventaja en eficiencia de memoria fren
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Intel/Qwen3.8-Flash-Next-W4A16-RTN-AutoRound)
+- [Modelo en Hugging Face](https://huggingface.co/Intel/Qwen3.8-Flash-Next-W4A16-RTN-AutoRound)
 - [Modelo original Qwen3.8-Flash-Next](https://huggingface.co/Qwen/Qwen3.8-Flash-Next)
 - [Repositorio GitHub de Qwen3.8-Flash-Next](https://github.com/QwenLM/Qwen3.8-Flash-Next/)
 - [Repositorio GitHub de la serie Qwen3.8](https://github.com/QwenLM/Qwen3.8)

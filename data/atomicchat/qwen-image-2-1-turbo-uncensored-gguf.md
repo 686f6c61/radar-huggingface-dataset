@@ -102,7 +102,7 @@ No se dispone de datos de otros encoders de texto alternativos (por ejemplo vari
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AtomicChat/Qwen-Image-2.1-Turbo-Uncensored-GGUF
+- Modelo en Hugging Face: https://huggingface.co/AtomicChat/Qwen-Image-2.1-Turbo-Uncensored-GGUF
 - Denoiser Turbo del mismo autor: https://huggingface.co/AtomicChat/Qwen-Image-2.1-Turbo-GGUF
 - Metricas publicas de la ablacion: https://huggingface.co/datasets/AtomicChat/Qwen-Image-2.1-Turbo-Abliterated-Uncensored-GGUF-metrics
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct

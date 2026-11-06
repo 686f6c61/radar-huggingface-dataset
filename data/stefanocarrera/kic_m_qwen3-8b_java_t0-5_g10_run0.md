@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| stefanocarrera/kic_M_Qwen3-8B_java_t0.5_g10_run0 | ~8.2B (heredado) | 32.768 (heredado) | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3-8B | 8.2B | 32.768 (extensible a 131.072) | Apache 2.0 | HuggingFace, ampliamente usado |
-| unsloth/Qwen3-8B-Base-unsloth-bnb-4bit | 8.2B (4 bits) | 32.768 | Apache 2.0 | HuggingFace |
-| Meta Llama 3.1 8B | 8B | 128.000 | Llama 3.1 Community License | HuggingFace |
+| stefanocarrera/kic_M_Qwen3-8B_java_t0.5_g10_run0 | ~8.2B (heredado) | 32.768 (heredado) | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3-8B | 8.2B | 32.768 (extensible a 131.072) | Apache 2.0 | Hugging Face, ampliamente usado |
+| unsloth/Qwen3-8B-Base-unsloth-bnb-4bit | 8.2B (4 bits) | 32.768 | Apache 2.0 | Hugging Face |
+| Meta Llama 3.1 8B | 8B | 128.000 | Llama 3.1 Community License | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/stefanocarrera/kic_M_Qwen3-8B_java_t0.5_g10_run0
+- Hugging Face: https://huggingface.co/stefanocarrera/kic_M_Qwen3-8B_java_t0.5_g10_run0
 - Modelo base: https://huggingface.co/unsloth/Qwen3-8B-Base-unsloth-bnb-4bit
 - Qwen3-8B original: https://huggingface.co/Qwen/Qwen3-8B
 - Unsloth (repositorio): https://github.com/unslothai/unsloth

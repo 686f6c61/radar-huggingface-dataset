@@ -67,9 +67,9 @@ No disponible. Al no tratarse de un modelo funcional, no es posible compararlo c
 - No es un modelo operativo: no contiene pesos, tokenizador ni pipeline de inferencia. Intentar cargarlo como un modelo estandar fallara.
 - Ausencia de licencia: al no especificarse licencia, no se puede determinar si los metadatos pueden reutilizarse comercialmente o si estan sujetos a restricciones de atribucion.
 - Datos de emisiones contextuales: los valores de CO2 dependen de la intensidad de la red electrica de `asia-south1` (650 gCO2eq/kWh) y del PUE de 1,42. No son extrapolables a otras regiones o centros de datos.
-- Riesgo de confusion: la etiqueta `region:us` en los tags de HuggingFace contradice la ubicacion declarada en la model card (`asia-south1`), lo que puede inducir a error en la interpretacion de los datos.
+- Riesgo de confusion: la etiqueta `region:us` en los tags de Hugging Face contradice la ubicacion declarada en la model card (`asia-south1`), lo que puede inducir a error en la interpretacion de los datos.
 - Sin garantias de reproducibilidad: no se detalla el software utilizado, la version de CodeCarbon ni la configuracion exacta del entorno, por lo que replicar el calculo puede arrojar variaciones.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bobtehbuilder/tds-ga8-carbon-5113e3e118d1
+- Repositorio en Hugging Face: https://huggingface.co/bobtehbuilder/tds-ga8-carbon-5113e3e118d1

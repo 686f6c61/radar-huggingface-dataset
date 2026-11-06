@@ -21,7 +21,7 @@ La relevancia de este modelo es principalmente academica y de seguridad: permite
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de la arquitectura de Llama-3.1-8B-Instruct: un transformer denser con 32 capas, 32 cabezas de atencion y embedding de 4096 dimensiones, con una ventana de contexto ampliada a 128.000 tokens. El finetune fue realizado con la libreria Unsloth (para acelerar el entrenamiento) y la libreria TRL de HuggingFace. El nombre del modelo sugiere que el entrenamiento utilizo una funcion de perdida basada en divergencia de Kullback-Leibler (KLD), aunque no se especifica si fue un paso de SFT, DPO o un metodo de regularizacion especifico. No se proporcionan detalles sobre el dataset, el numero de tokens de entrenamiento ni el procedimiento exacto. La semilla fija (seed5) indica que es una de las variantes reproducibles del experimento.
+El modelo parte de la arquitectura de Llama-3.1-8B-Instruct: un transformer denser con 32 capas, 32 cabezas de atencion y embedding de 4096 dimensiones, con una ventana de contexto ampliada a 128.000 tokens. El finetune fue realizado con la libreria Unsloth (para acelerar el entrenamiento) y la libreria TRL de Hugging Face. El nombre del modelo sugiere que el entrenamiento utilizo una funcion de perdida basada en divergencia de Kullback-Leibler (KLD), aunque no se especifica si fue un paso de SFT, DPO o un metodo de regularizacion especifico. No se proporcionan detalles sobre el dataset, el numero de tokens de entrenamiento ni el procedimiento exacto. La semilla fija (seed5) indica que es una de las variantes reproducibles del experimento.
 
 ## Capacidades
 

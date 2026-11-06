@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Keural Nova v1.1 es un modelo de lenguaje orientado al coreano desarrollado por MKD (publicado en HuggingFace por el usuario hossain0909) sobre la base Qwen/Qwen3.6-35B-A3B, un modelo Mixture-of-Experts de 35,1 mil millones de parametros con unos 3 mil millones de parametros activos por token. El trabajo del equipo de Qwen (Alibaba Cloud) cubre la arquitectura y el preentrenamiento; esta version es un ajuste fino supervisado mediante LoRA (posteriormente fusionado en los pesos base) centrado en mejorar la calidad conversacional en coreano, manteniendo capacidades en ingles mediante una mezcla de datos de replay.
+Keural Nova v1.1 es un modelo de lenguaje orientado al coreano desarrollado por MKD (publicado en Hugging Face por el usuario hossain0909) sobre la base Qwen/Qwen3.6-35B-A3B, un modelo Mixture-of-Experts de 35,1 mil millones de parametros con unos 3 mil millones de parametros activos por token. El trabajo del equipo de Qwen (Alibaba Cloud) cubre la arquitectura y el preentrenamiento; esta version es un ajuste fino supervisado mediante LoRA (posteriormente fusionado en los pesos base) centrado en mejorar la calidad conversacional en coreano, manteniendo capacidades en ingles mediante una mezcla de datos de replay.
 
 El problema que aborda es la falta de modelos abiertos con buen rendimiento en dialogo y comprension en coreano. El ajuste se realizo con 253.528 ejemplos (~85 % coreano, 15 % ingles), en formato ChatML con plantilla non-thinking, durante 2 epocas completas (15.846 pasos). La version v1.0 es el checkpoint del final de la primera epoca y presenta compensaciones ligeramente distintas.
 
@@ -71,7 +71,7 @@ Resumen honesto del autor: mejora sustancial el rendimiento conversacional y de 
 - VRAM estimada para inferencia: el repositorio pesa 71,9 GB en safetensors (bf16), por lo que se necesitan al menos ~72 GB de VRAM para cargar el modelo completo en precision nativa, mas overhead de KV cache.
 - GPUs recomendadas: 2x NVIDIA H200 se usaron para el entrenamiento; para inferencia en bf16, una unica H200 (141 GB) o A100/H100 de 80 GB pueden quedar justas; con multiples GPUs (2x A100 80GB, 2x H100 80GB) hay margen para KV cache.
 - Consumer GPUs: no cabe en GPUs de consumo tipicas (RTX 4090 con 24 GB) sin cuantizacion; no hay versiones cuantizadas publicadas en la informacion disponible.
-- Opciones de despliegue: transformers (libreria declarada), backend vLLM (usado en las evaluaciones de los autores), endpoints compatibles en HuggingFace; MKD sirve el modelo via un gateway compatible con OpenAI con YaRN factor 4.0 hasta 1M tokens. No hay informacion sobre llama.cpp, Ollama o TGI.
+- Opciones de despliegue: transformers (libreria declarada), backend vLLM (usado en las evaluaciones de los autores), endpoints compatibles en Hugging Face; MKD sirve el modelo via un gateway compatible con OpenAI con YaRN factor 4.0 hasta 1M tokens. No hay informacion sobre llama.cpp, Ollama o TGI.
 - Latencia y throughput: no disponible. Al ser un MoE con ~3B parametros activos por token, la latencia por token deberia ser comparable a modelos densos de ~3B, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
@@ -97,7 +97,7 @@ No hay datos de comparacion con otros modelos coreanos de terceros (p. ej. EXAON
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hossain0909/Keural-Nova-v1.1
+- Modelo en Hugging Face: https://huggingface.co/hossain0909/Keural-Nova-v1.1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Version hermana (v1.0): no disponible (no se proporciona URL directa)
 - Paper, repositorio de codigo o demo: no disponible

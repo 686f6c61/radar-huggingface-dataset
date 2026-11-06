@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.6-35B-A3B 2.10-bit DUET es un checkpoint de investigación publicado por el usuario kyumly en HuggingFace, derivado del modelo Qwen3.6-35B-A3B de Alibaba Qwen. Se trata de una versión cuantizada a muy baja precisión (2,10 bits por peso en los expertos enrutados) sobre la que se ha aplicado un ajuste de entrenamiento consciente de la cuantización (QAT) mediante el método DUET, que opera sin pesos maestros y modifica directamente los códigos de cuantización. El objetivo es recuperar parte de la precisión perdida por la cuantización post-entrenamiento (PTQ) sin aumentar el tamaño del archivo ni el ancho de bits.
+Qwen3.6-35B-A3B 2.10-bit DUET es un checkpoint de investigación publicado por el usuario kyumly en Hugging Face, derivado del modelo Qwen3.6-35B-A3B de Alibaba Qwen. Se trata de una versión cuantizada a muy baja precisión (2,10 bits por peso en los expertos enrutados) sobre la que se ha aplicado un ajuste de entrenamiento consciente de la cuantización (QAT) mediante el método DUET, que opera sin pesos maestros y modifica directamente los códigos de cuantización. El objetivo es recuperar parte de la precisión perdida por la cuantización post-entrenamiento (PTQ) sin aumentar el tamaño del archivo ni el ancho de bits.
 
 La arquitectura subyacente es un transformer de mezcla de expertos (MoE) con atención estándar en BF16 y expertos enrutados almacenados como códigos empaquetados de 3 a 16 niveles (promedio de 2,10 bits). El modelo base Qwen3.6-35B-A3B cuenta con 35 mil millones de parámetros totales y aproximadamente 3 mil millones activos por token, e incorpora capacidades multimodales de imagen a texto. El checkpoint ocupa 14,6 GB en el repositorio y requiere un cargador personalizado de MoE de baja precisión para su uso.
 
@@ -83,9 +83,9 @@ El autor indica que la mejora sobre el modelo base en GPQA-Diamond es de 3,4 pun
 
 | Modelo | Parametros | Contexto | LiveCodeBench v6 | GPQA-Diamond | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen3.6-35B-A3B (BF16) | 35B (3B activos) | no disponible | 73,28 | 81,65 | no disponible | HuggingFace |
-| 2.10-bit base (mrminjae, PTQ) | 35B (3B activos) | no disponible | 70,99 | 76,52 | no disponible | HuggingFace |
-| 2.10-bit + DUET (este modelo) | 35B (3B activos) | no disponible | 72,52 | 79,88 | no disponible | HuggingFace |
+| Qwen3.6-35B-A3B (BF16) | 35B (3B activos) | no disponible | 73,28 | 81,65 | no disponible | Hugging Face |
+| 2.10-bit base (mrminjae, PTQ) | 35B (3B activos) | no disponible | 70,99 | 76,52 | no disponible | Hugging Face |
+| 2.10-bit + DUET (este modelo) | 35B (3B activos) | no disponible | 72,52 | 79,88 | no disponible | Hugging Face |
 
 Los tres modelos comparten arquitectura y tamaño; las diferencias radican en la precisión de los pesos y el método de cuantización. No se dispone de información sobre otros modelos comparables de la misma categoría en la documentación proporcionada.
 
@@ -105,6 +105,6 @@ Los tres modelos comparten arquitectura y tamaño; las diferencias radican en la
 
 ## Enlaces
 
-- [HuggingFace: kyumly/qwen36-35b-a3b-2p10bit-duet](https://huggingface.co/kyumly/qwen36-35b-a3b-2p10bit-duet)
+- [Hugging Face: kyumly/qwen36-35b-a3b-2p10bit-duet](https://huggingface.co/kyumly/qwen36-35b-a3b-2p10bit-duet)
 - [Modelo base: Qwen/Qwen3.6-35B-A3B](https://huggingface.co/Qwen/Qwen3.6-35B-A3B)
 - [Checkpoint PTQ de partida: mrminjae/qwen36-35b-a3b-2p10bit-genans-lowbit](https://huggingface.co/mrminjae/qwen36-35b-a3b-2p10bit-genans-lowbit)

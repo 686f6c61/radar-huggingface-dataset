@@ -99,7 +99,7 @@ No hay datos de benchmarks de MN-Raven-12B-v1 que permitan una comparacion cuant
 - Compatibilidad: esta etiquetado para text-generation-inference y endpoints_compatible, pero no se documenta soporte de tool calling ni de agentes multi-paso; no debe asumirse.
 
 
-- Modelo en HuggingFace: https://huggingface.co/DarkArtsForge/MN-Raven-12B-v1
+- Modelo en Hugging Face: https://huggingface.co/DarkArtsForge/MN-Raven-12B-v1
 - Dataset de ajuste: https://huggingface.co/datasets/DarkArtsForge/Poe_v1
 - LoRA base (v0c): https://huggingface.co/Naphula-Archives/MN-Raven-12B-v0c-Base-LoRA
 - LoRA instruct (v0o): https://huggingface.co/Naphula-Archives/MN-Raven-12B-v0o-Instruct-LoRA

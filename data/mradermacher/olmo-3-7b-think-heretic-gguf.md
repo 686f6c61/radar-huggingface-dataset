@@ -88,9 +88,9 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de modelo
 
 | Modelo | Parametros | Formato | Licencia | Contexto | Idiomas | Disponibilidad |
 |---|---|---|---|---|---|---|
-| mradermacher/Olmo-3-7B-Think-heretic-GGUF | 7,3B | GGUF (12 cuantizaciones) | Apache 2.0 | No disponible | Ingles | HuggingFace, Ollama |
-| richardyoung/Olmo-3-7B-Think-heretic | No disponible | Pesos originales (no disponible) | No disponible | No disponible | No disponible | HuggingFace |
-| allenai/olmo-3-7b-think | 7B (variante Think) | No disponible | No disponible | No disponible | No disponible | HuggingFace, LM Studio |
+| mradermacher/Olmo-3-7B-Think-heretic-GGUF | 7,3B | GGUF (12 cuantizaciones) | Apache 2.0 | No disponible | Ingles | Hugging Face, Ollama |
+| richardyoung/Olmo-3-7B-Think-heretic | No disponible | Pesos originales (no disponible) | No disponible | No disponible | No disponible | Hugging Face |
+| allenai/olmo-3-7b-think | 7B (variante Think) | No disponible | No disponible | No disponible | No disponible | Hugging Face, LM Studio |
 | Modelos comparables de otros fabricantes | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -107,7 +107,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de modelo
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/Olmo-3-7B-Think-heretic-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/Olmo-3-7B-Think-heretic-GGUF
 - Modelo base de las cuantizaciones: https://huggingface.co/richardyoung/Olmo-3-7B-Think-heretic
 - Version GGUF alternativa del mismo autor base: https://huggingface.co/richardyoung/Olmo-3-7B-Think-heretic-GGUF
 - Pagina de la familia Olmo de Ai2: https://allenai.org/olmo

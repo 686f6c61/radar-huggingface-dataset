@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `drowzeys/keys-DeepSeekV4Flash-Vision-EXP-ablit` es una variante "abliterada" (desprovista de mecanismos de rechazo) del modelo multimodal DeepSeek-V4-Flash-Vision-Exp, publicada por el autor comunitario drowzeys. La tecnica de abliteration elimina o atenua las capas de refusal del modelo original, dando lugar a una version sin censura orientada a investigacion y experimentacion. El repositorio ocupa 167,8 GB y el acceso esta restringido (gated) en HuggingFace, requiriendo aceptacion de condiciones previa a la descarga.
+El modelo `drowzeys/keys-DeepSeekV4Flash-Vision-EXP-ablit` es una variante "abliterada" (desprovista de mecanismos de rechazo) del modelo multimodal DeepSeek-V4-Flash-Vision-Exp, publicada por el autor comunitario drowzeys. La tecnica de abliteration elimina o atenua las capas de refusal del modelo original, dando lugar a una version sin censura orientada a investigacion y experimentacion. El repositorio ocupa 167,8 GB y el acceso esta restringido (gated) en Hugging Face, requiriendo aceptacion de condiciones previa a la descarga.
 
 Se trata de un modelo de arquitectura MoE (mixture of experts) con 304.646.824.126 parametros totales (~304,6 mil millones), en cuantizacion FP8, con capacidades multimodales de imagen a texto (pipeline image-text-to-text). Las etiquetas del repositorio indican compatibilidad con vLLM, optimizacion para DGX Spark y GB10, y el uso de "anchored tensors" durante el proceso de modificacion. Los idiomas soportados son ingles y chino.
 
@@ -48,7 +48,7 @@ La arquitectura subyacente es de tipo MoE multimodal, capaz de procesar entradas
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio no incluye puntuaciones de MMLU, HumanEval, GSM8K ni otras evaluaciones estandar, y el modelo no registra descargas ni valoraciones en HuggingFace.
+No se han publicado resultados de benchmarks en la informacion disponible. El repositorio no incluye puntuaciones de MMLU, HumanEval, GSM8K ni otras evaluaciones estandar, y el modelo no registra descargas ni valoraciones en Hugging Face.
 
 ## Requisitos de hardware
 
@@ -70,7 +70,7 @@ No se dispone de datos suficientes sobre los modelos comparables para establecer
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo es gated en HuggingFace y requiere aceptar condiciones especificas antes de su descarga.
+- Acceso restringido: el modelo es gated en Hugging Face y requiere aceptar condiciones especificas antes de su descarga.
 - Licencia restrictiva: la licencia deepseek impone restricciones de uso comercial y puede limitar la redistribucion del modelo.
 - Riesgo de contenido nocivo: al estar abliterado, el modelo puede generar contenido ofensivo, ilegal o peligroso que el modelo base bloquearia. No debe desplegarse en produccion sin salvaguardas adicionales.
 - Sesgos y alucinaciones: no se han publicado evaluaciones de sesgos ni de tasas de alucinacion; al ser una variante sin alineacion, estos riesgos pueden verse amplificados respecto al modelo base.
@@ -82,8 +82,8 @@ No se dispone de datos suficientes sobre los modelos comparables para establecer
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/drowzeys/keys-DeepSeekV4Flash-Vision-EXP-ablit
-- Perfil del autor en HuggingFace: https://huggingface.co/drowzeys
+- Hugging Face: https://huggingface.co/drowzeys/keys-DeepSeekV4Flash-Vision-EXP-ablit
+- Perfil del autor en Hugging Face: https://huggingface.co/drowzeys
 - GitHub del autor: https://github.com/drowzeys
 - Repositorio de recetas de inferencia local: https://github.com/drowzeys/drowzeys
 - Sitio oficial de DeepSeek: https://deepseek.com/en/index.html

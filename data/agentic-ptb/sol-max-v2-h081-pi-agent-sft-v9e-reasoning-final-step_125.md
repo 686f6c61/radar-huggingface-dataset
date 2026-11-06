@@ -60,10 +60,10 @@ No se dispone de datos de rendimiento para comparar con otros modelos. Como refe
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| agentic-ptb/sol-max-v2 (este) | 9,4B | no disponible | no disponible | HuggingFace |
-| Qwen/Qwen3.5-9B-Base | 9,4B | no disponible | no disponible | HuggingFace |
-| Llama 3.1 8B | 8B | 128K | Llama 3.1 | HuggingFace |
-| Mistral 7B | 7B | 32K | Apache 2.0 | HuggingFace |
+| agentic-ptb/sol-max-v2 (este) | 9,4B | no disponible | no disponible | Hugging Face |
+| Qwen/Qwen3.5-9B-Base | 9,4B | no disponible | no disponible | Hugging Face |
+| Llama 3.1 8B | 8B | 128K | Llama 3.1 | Hugging Face |
+| Mistral 7B | 7B | 32K | Apache 2.0 | Hugging Face |
 
 La comparacion de rendimiento no es posible por falta de benchmarks.
 
@@ -78,6 +78,6 @@ La comparacion de rendimiento no es posible por falta de benchmarks.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/sol-max-v2.h081.pi-agent-sft-v9e-reasoning-final.step_125
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/sol-max-v2.h081.pi-agent-sft-v9e-reasoning-final.step_125
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Busqueda de modelos de agentic-ptb: https://huggingface.co/models?other=agentic-ptb

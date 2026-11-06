@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Kimi-K3-Q2_K-t158-MTPLX (este) | no disponible (92 capas MoE enrutadas) | no disponible | MLX, codec MTPLX t158 | Kimi K3 License | Repositorio original vaciado; redirige a variante streaming |
-| GrEarl/Kimi-K3-GGUF (Q2_K) | no disponible | no disponible | GGUF | Kimi K3 License | Publicado en HuggingFace |
-| moonshotai/Kimi-K3 (oficial) | no disponible | no disponible | Safetensors | Kimi K3 License | Publicado en HuggingFace |
+| GrEarl/Kimi-K3-GGUF (Q2_K) | no disponible | no disponible | GGUF | Kimi K3 License | Publicado en Hugging Face |
+| moonshotai/Kimi-K3 (oficial) | no disponible | no disponible | Safetensors | Kimi K3 License | Publicado en Hugging Face |
 
 La comparacion se limita a las tres variantes del mismo modelo base identificadas en la informacion disponible. No se dispone de datos de rendimiento ni de especificaciones completas de alternativas de otros fabricantes para establecer una comparativa cuantitativa.
 
@@ -85,7 +85,7 @@ La comparacion se limita a las tres variantes del mismo modelo base identificada
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OpensourceWTF/Kimi-K3-Q2_K-t158-MTPLX
+- Repositorio Hugging Face: https://huggingface.co/OpensourceWTF/Kimi-K3-Q2_K-t158-MTPLX
 - Version streaming soportada: https://huggingface.co/OpensourceWTF/Kimi-K3-Q2_K-t158-MTPLX-streaming
 - Cuantizacion GGUF de origen: https://huggingface.co/GrEarl/Kimi-K3-GGUF
 - Modelo oficial de Moonshot AI: https://huggingface.co/moonshotai/Kimi-K3

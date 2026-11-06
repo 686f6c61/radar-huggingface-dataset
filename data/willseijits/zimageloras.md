@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`willseijits/zimageloras` es un repositorio alojado en HuggingFace por el usuario willseijits que, por su nomenclatura y tamano (60,1 GB), parece contener una coleccion de LoRAs (Low-Rank Adaptations) orientadas a modelos de generacion de imagen. No se trata de un modelo base con pesos completos, sino de un contenedor de adaptadores de bajo rango, lo que explicaria el volumen agregado del repositorio frente al tamano tipico de una LoRA individual.
+`willseijits/zimageloras` es un repositorio alojado en Hugging Face por el usuario willseijits que, por su nomenclatura y tamano (60,1 GB), parece contener una coleccion de LoRAs (Low-Rank Adaptations) orientadas a modelos de generacion de imagen. No se trata de un modelo base con pesos completos, sino de un contenedor de adaptadores de bajo rango, lo que explicaria el volumen agregado del repositorio frente al tamano tipico de una LoRA individual.
 
-La informacion publica disponible es muy limitada: no consta pipeline declarado, no se especifica licencia, no se indican idiomas soportados y no hay descripcion tecnica en la ficha de HuggingFace. El repositorio acumula 206 descargas y 0 likes, lo que sugiere un uso minoritario y sin validacion comunitaria significativa.
+La informacion publica disponible es muy limitada: no consta pipeline declarado, no se especifica licencia, no se indican idiomas soportados y no hay descripcion tecnica en la ficha de Hugging Face. El repositorio acumula 206 descargas y 0 likes, lo que sugiere un uso minoritario y sin validacion comunitaria significativa.
 
 Su relevancia actual es, por tanto, acotada y de caracter practico: puede resultar util a quien ya conozca el modelo base al que estan destinadas estas LoRAs, pero no constituye una pieza evaluable de forma autonoma sin acceso a la documentacion del autor o al contenido interno del repositorio.
 
@@ -43,7 +43,7 @@ Tampoco consta si se emplearon tecnicas de ajuste fino supervisado, DreamBooth, 
 - Investigacion sobre adaptadores de bajo rango: el repositorio puede servir como muestra de colecciones de LoRAs para estudiar tecnicas de merging o composicion de adaptadores.
 - Experimentacion con control de concepto: aplicacion de adaptadores para introducir conceptos especificos en un modelo de difusion, sujeto a verificacion del contenido real del repo.
 - Pruebas de reproducibilidad: comparar resultados entre distintas LoRAs del mismo autor para evaluar consistencia de estilo.
-- Uso educativo: como ejemplo practico de organizacion de un repositorio de adaptadores de gran tamano en HuggingFace.
+- Uso educativo: como ejemplo practico de organizacion de un repositorio de adaptadores de gran tamano en Hugging Face.
 
 En todos los casos, la viabilidad depende de informacion no publicada (modelo base, formato, licencia), por lo que estos escenarios son hipoteticos y requieren validacion previa por parte del usuario.
 
@@ -77,5 +77,5 @@ No disponible. No se conocen repositorios comparables directos a partir de la in
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/willseijits/zimageloras
+- Repositorio en Hugging Face: https://huggingface.co/willseijits/zimageloras
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RecdSER es un repositorio de modelo publicado en HuggingFace por el usuario jingangtan bajo licencia MIT. En el momento de la consulta, la model card del autor está vacía: no incluye descripción, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio ocupa 0,8 GB y no registra descargas ni interacciones, por lo que se trata de una publicación sin validación por parte de la comunidad.
+RecdSER es un repositorio de modelo publicado en Hugging Face por el usuario jingangtan bajo licencia MIT. En el momento de la consulta, la model card del autor está vacía: no incluye descripción, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio ocupa 0,8 GB y no registra descargas ni interacciones, por lo que se trata de una publicación sin validación por parte de la comunidad.
 
 La información disponible no permite confirmar la tarea para la que fue entrenado el modelo. El identificador "RecdSER" sugiere, por la terminología habitual en la literatura, un posible sistema de reconocimiento de emociones en habla (SER, *speech emotion recognition*), pero esto es una inferencia a partir del nombre y no un dato confirmado por el autor. Del mismo modo, no hay información sobre arquitectura, número de parámetros ni longitud de contexto.
 
@@ -70,6 +70,6 @@ No disponible. No se conocen modelos comparables porque se desconoce la categor�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jingangtan/RecdSER
+- Modelo en Hugging Face: https://huggingface.co/jingangtan/RecdSER
 - Paper, blog, repositorio de código o demo: no disponible
 - Nota sobre la búsqueda web: los resultados recuperados durante la búsqueda no guardan relación con el modelo (corresponden a entidades bancarias francesas) y no aportan información técnica utilizable.

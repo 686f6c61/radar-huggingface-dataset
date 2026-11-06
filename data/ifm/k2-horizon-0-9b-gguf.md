@@ -83,4 +83,4 @@ Dado que no se han publicado métricas numéricas, no es posible realizar una co
 - Modelo original (safetensors): https://huggingface.co/IFM/K2-Horizon-0.9B
 - Recetas vLLM: https://recipes.vllm.ai/IFM/K2-Horizon-0.9B
 - Fork de llama.cpp con soporte K2 Horizon: https://github.com/MBZUAI-IFM/llama.cpp/tree/model/K2Horizon
-- Familia K2 en HuggingFace: https://huggingface.co/IFM/K2
+- Familia K2 en Hugging Face: https://huggingface.co/IFM/K2

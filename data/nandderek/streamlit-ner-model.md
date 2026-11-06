@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`NandDerek/streamlit-ner-model` es un modelo publicado en HuggingFace por el usuario NandDerek, aparentemente orientado a tareas de reconocimiento de entidades nombradas (NER) e integrado en el contexto de una aplicación Streamlit. El identificador del repositorio y la etiqueta `bert` en los metadatos sugieren que se trata de un modelo basado en la arquitectura BERT, probablemente un ajuste fino (fine-tuning) de un checkpoint BERT preentrenado sobre un conjunto de datos de NER. El tamaño del repositorio (0,4 GB) es coherente con un modelo BERT de tamaño base o similar en formato safetensors.
+`NandDerek/streamlit-ner-model` es un modelo publicado en Hugging Face por el usuario NandDerek, aparentemente orientado a tareas de reconocimiento de entidades nombradas (NER) e integrado en el contexto de una aplicación Streamlit. El identificador del repositorio y la etiqueta `bert` en los metadatos sugieren que se trata de un modelo basado en la arquitectura BERT, probablemente un ajuste fino (fine-tuning) de un checkpoint BERT preentrenado sobre un conjunto de datos de NER. El tamaño del repositorio (0,4 GB) es coherente con un modelo BERT de tamaño base o similar en formato safetensors.
 
 No obstante, la información pública disponible es extremadamente limitada: no se especifican la licencia, los idiomas soportados, el pipeline declarado, ni los detalles del entrenamiento o del dataset utilizado. El modelo tiene cero descargas y un único "like", lo que indica que se trata de una publicación muy reciente o de carácter experimental, sin validación por parte de la comunidad.
 
@@ -23,7 +23,7 @@ Por todo ello, esta ficha se redacta con los escasos datos disponibles y marca e
 
 ## Arquitectura y entrenamiento
 
-La etiqueta `bert` en los metadatos de HuggingFace indica que el modelo se basa en la familia de arquitecturas BERT, es decir, un transformer encoder-only. Este tipo de arquitectura es el estándar de facto para tareas de comprensión del lenguaje como la clasificación de tokens, entre las que se incluye el reconocimiento de entidades nombradas (NER). El nombre del repositorio (`streamlit-ner-model`) sugiere que el modelo fue entrenado o empaquetado específicamente para servir como backend de una aplicación de demostración construida con Streamlit, probablemente para extraer entidades de texto introducido por el usuario.
+La etiqueta `bert` en los metadatos de Hugging Face indica que el modelo se basa en la familia de arquitecturas BERT, es decir, un transformer encoder-only. Este tipo de arquitectura es el estándar de facto para tareas de comprensión del lenguaje como la clasificación de tokens, entre las que se incluye el reconocimiento de entidades nombradas (NER). El nombre del repositorio (`streamlit-ner-model`) sugiere que el modelo fue entrenado o empaquetado específicamente para servir como backend de una aplicación de demostración construida con Streamlit, probablemente para extraer entidades de texto introducido por el usuario.
 
 No se dispone de información sobre el número de parámetros, el número de tokens de entrenamiento, la composición del dataset, ni sobre si se aplicaron técnicas de ajuste fino supervisado, RLHF o DPO. Tampoco se documentan innovaciones técnicas como decodificación especulativa o atención lineal. El tamaño del repositorio (0,4 GB) es compatible con un checkpoint BERT de tamaño base (aproximadamente 110 millones de parámetros) o con un modelo algo mayor, pero este dato no puede confirmarse sin inspeccionar los archivos de pesos.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| NandDerek/streamlit-ner-model | no disponible | no disponible | no disponible | HuggingFace (0 descargas) |
-| dslim/bert-base-NER | ~110M | 512 tokens | MIT | HuggingFace (muy popular) |
-| Jean-Baptiste/roberta-large-ner-english | ~355M | 512 tokens | MIT | HuggingFace |
-| flair/ner-english-ontonotes-large | no disponible | 512 tokens | MIT | HuggingFace |
+| NandDerek/streamlit-ner-model | no disponible | no disponible | no disponible | Hugging Face (0 descargas) |
+| dslim/bert-base-NER | ~110M | 512 tokens | MIT | Hugging Face (muy popular) |
+| Jean-Baptiste/roberta-large-ner-english | ~355M | 512 tokens | MIT | Hugging Face |
+| flair/ner-english-ontonotes-large | no disponible | 512 tokens | MIT | Hugging Face |
 
 La comparativa se ofrece a título orientativo con modelos NER ampliamente utilizados; no se dispone de datos objetivos para comparar el rendimiento de `streamlit-ner-model` frente a ellos.
 
@@ -82,4 +82,4 @@ La comparativa se ofrece a título orientativo con modelos NER ampliamente utili
 
 ## Enlaces
 
-- [HuggingFace: NandDerek/streamlit-ner-model](https://huggingface.co/NandDerek/streamlit-ner-model)
+- [Hugging Face: NandDerek/streamlit-ner-model](https://huggingface.co/NandDerek/streamlit-ner-model)

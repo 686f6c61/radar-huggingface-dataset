@@ -82,10 +82,10 @@ No hay datos de benchmarks frente a otros modelos de decisión o de propósito g
 
 | Modelo / variante | Parametros | Formato | Contexto | Coincidencia con referencia | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| JEV-27B-VL-GGUF Q8_0 | ~26,9 B | GGUF | No disponible | 99,0 % (306/309) | Apache-2.0 | HuggingFace (Atlas3D) |
-| JEV-27B-VL-GGUF BF16 | ~26,9 B | GGUF | No disponible | 99,4 % (307/309) | Apache-2.0 | HuggingFace (Atlas3D) |
-| JEV-27B-VL-GGUF Q4_K_M | ~26,9 B | GGUF | No disponible | 92,9 % (287/309) | Apache-2.0 | HuggingFace (Atlas3D) |
-| autotrust/JEV-27B-VL (referencia bf16) | ~26,9 B | Safetensors (servido con vLLM) | No disponible | Referencia | Apache-2.0 | HuggingFace (autotrust) |
+| JEV-27B-VL-GGUF Q8_0 | ~26,9 B | GGUF | No disponible | 99,0 % (306/309) | Apache-2.0 | Hugging Face (Atlas3D) |
+| JEV-27B-VL-GGUF BF16 | ~26,9 B | GGUF | No disponible | 99,4 % (307/309) | Apache-2.0 | Hugging Face (Atlas3D) |
+| JEV-27B-VL-GGUF Q4_K_M | ~26,9 B | GGUF | No disponible | 92,9 % (287/309) | Apache-2.0 | Hugging Face (Atlas3D) |
+| autotrust/JEV-27B-VL (referencia bf16) | ~26,9 B | Safetensors (servido con vLLM) | No disponible | Referencia | Apache-2.0 | Hugging Face (autotrust) |
 
 Comparativas con alternativas de otros desarrolladores (mismo tamaño o misma tarea de decisión): no disponible.
 
@@ -105,8 +105,8 @@ Comparativas con alternativas de otros desarrolladores (mismo tamaño o misma ta
 
 ## Enlaces
 
-- HuggingFace (esta conversión GGUF): https://huggingface.co/Atlas3D/JEV-27B-VL-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/autotrust/JEV-27B-VL
+- Hugging Face (esta conversión GGUF): https://huggingface.co/Atlas3D/JEV-27B-VL-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/autotrust/JEV-27B-VL
 - Blog de AutoTrust sobre JEV-27B (decisiones calibradas y razonamiento): https://huggingface.co/blog/autotrust/autotrustjev-27b-fast-calibrated-decisions-and-ful
 - Blog de AutoTrust sobre JEV-27B-VL (versión con visión): https://huggingface.co/blog/autotrust/autotrustjev-27b-vl-a-decision-model-that-learned
 - Nota de prensa de AutoTrust AI sobre JEV-27B: https://www.prnewswire.com/news-releases/autotrust-ai-releases-jev-27b-an-open-decision-model-for-self-hosted-ai-agents-302891720.html

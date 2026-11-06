@@ -86,12 +86,12 @@ La versión ExecuTorch se diferencia por estar lista para on-device con pooling 
 - El contexto está limitado a 256 tokens en la conversión ExecuTorch. Textos más largos deben truncarse o dividirse en segmentos.
 - La cuantización int8 no es eficiente en este modelo: el tamaño resultante (855,6 MB) supera al fp16 (555,2 MB) porque la tabla de embeddings (768 MB) no se cuantifica. En general, int8 solo es rentable cuando la tabla de embeddings es inferior a un tercio del peso total.
 - XNNPACK fp16 es más lento que fp32 (88,6 ms frente a 40,9 ms) porque el runtime inserta conversiones de precisión; no se recomienda si se prioriza la latencia.
-- La licencia MIT permite uso comercial y modificación, pero el modelo original de Microsoft tiene una licencia MIT según HuggingFace; se recomienda verificar la licencia del modelo base en el momento del despliegue.
+- La licencia MIT permite uso comercial y modificación, pero el modelo original de Microsoft tiene una licencia MIT según Hugging Face; se recomienda verificar la licencia del modelo base en el momento del despliegue.
 - No hay datos sobre sesgos o alucinaciones, ya que se trata de un modelo de embeddings, no de generación. No obstante, los embeddings pueden reflejar sesgos presentes en los datos de entrenamiento (Wikipedia, mC4, etc.).
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mlboydaisuke/multilingual-e5-base-ExecuTorch
+- Modelo en Hugging Face: https://huggingface.co/mlboydaisuke/multilingual-e5-base-ExecuTorch
 - Modelo original: https://huggingface.co/intfloat/multilingual-e5-base
 - Colección ExecuTorch Model Zoo: https://huggingface.co/collections/mlboydaisuke/executorch-model-zoo
 - Repositorio de conversión: https://github.com/john-rocky/executorch-models

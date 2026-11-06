@@ -67,6 +67,6 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sparshsinghal/deepfakeguard-finetuned
+- Hugging Face: https://huggingface.co/sparshsinghal/deepfakeguard-finetuned
 - Modelo base (mencionado en la model card): https://huggingface.co/garystafford/wav2vec2-deepfake-voice-detector
 - No se han encontrado otros enlaces relevantes en la busqueda web (los proyectos homonimos en GitHub e IEEE tratan sobre deteccion de deepfake en imagenes y video, no en audio).

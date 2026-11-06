@@ -30,12 +30,12 @@ La relevancia de esta ficha es limitada pero concreta: el modelo base no documen
 
 No se dispone de informacion sobre la arquitectura del modelo base en los materiales proporcionados. El recuento de parametros (9,2 mil millones) y la etiqueta `conversational` son los unicos indicios, compatibles con un transformer decoder-only de escala 9B, pero esto no puede confirmarse con los datos disponibles. Tampoco se documenta el numero de capas, la dimension del modelo, el numero de cabezas de atencion, si emplea GQA/MQA, ni la presencia de componentes alternativos (SSM, hybrid, MoE).
 
-Respecto al entrenamiento, no hay ninguna informacion sobre volumen de tokens, composicion del dataset, tecnicas de alineacion (RLHF, DPO, ORPO) ni procesos de destilacion. La unica innovacion tecnica documentada es la del propio repositorio de cuantizacion: el uso de imatrix, que requiere un corpus de calibracion para ponderar la importancia de cada tensor antes de cuantizar, mejorando la fidelidad respecto a cuantizaciones uniformes a igual numero de bits. Los metadatos de la model card indican `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que confirma que la conversion se hizo desde pesos HuggingFace originales.
+Respecto al entrenamiento, no hay ninguna informacion sobre volumen de tokens, composicion del dataset, tecnicas de alineacion (RLHF, DPO, ORPO) ni procesos de destilacion. La unica innovacion tecnica documentada es la del propio repositorio de cuantizacion: el uso de imatrix, que requiere un corpus de calibracion para ponderar la importancia de cada tensor antes de cuantizar, mejorando la fidelidad respecto a cuantizaciones uniformes a igual numero de bits. Los metadatos de la model card indican `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que confirma que la conversion se hizo desde pesos Hugging Face originales.
 
 ## Capacidades
 
 - Generacion de texto conversacional: la etiqueta `conversational` del repositorio indica que el modelo base esta orientado a dialogos multi-turno.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que el modelo puede servirse a traves de APIs compatibles con el estandar de HuggingFace.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que el modelo puede servirse a traves de APIs compatibles con el estandar de Hugging Face.
 - Capacidades adicionales (razonamiento, codigo, matematicas, tool calling, agentes, vision, audio, thinking mode): no disponibles. No hay ninguna documentacion al respecto en la informacion proporcionada.
 - Capacidades multilingues: no disponibles. No se declara ningun idioma en los metadatos.
 - Soporte de function calling / agentes: no disponible.
@@ -46,7 +46,7 @@ Dado que no se dispone de benchmarks ni de documentacion de capacidades, los cas
 
 - Inferencia local en portatil sin GPU: la cuantizacion IQ1_S o IQ2_XXS permite ejecutar los 9,2B parametros en CPU con 2-3 GB de RAM, habilitando asistentes conversacionales offline en equipos modestos.
 - Despliegue en GPU de consumo: la variante Q4_K_M o Q5_K_M encaja en tarjetas con 8-12 GB de VRAM (RTX 3060 12GB, RTX 4060 Ti 16GB), lo que permite servir un chatbot conversacional con latencia interactiva.
-- Prototipado rapido de aplicaciones de chat: el tag `endpoints_compatible` facilita integrar el modelo en frameworks que esperan una API compatible con HuggingFace, reduciendo el trabajo de integracion.
+- Prototipado rapido de aplicaciones de chat: el tag `endpoints_compatible` facilita integrar el modelo en frameworks que esperan una API compatible con Hugging Face, reduciendo el trabajo de integracion.
 - Evaluacion comparativa de cuantizaciones: el repositorio ofrece 25 variantes del mismo modelo, lo que lo convierte en un banco de pruebas util para medir el impacto de la cuantizacion (de IQ1_S a Q6_K) sobre la calidad de las respuestas.
 - Fine-tuning sobre el modelo base: si el modelo base resulta adecuado, las cuantizaciones GGUF sirven como referencia de despliegue tras un ajuste previo en precision completa sobre ONESTRUCTION/Ishigaki-AEC-9B.
 - Investigacion sobre cuantizacion imatrix: el repositorio permite reproducir comparaciones entre cuantizaciones ponderadas por imatrix y cuantizaciones uniformes de la misma familia (por ejemplo, Q4_0 y Q4_1 frente a Q4_K_M).
@@ -102,7 +102,7 @@ La comparacion se limita al plano de despliegue: los cuatro modelos de referenci
 
 ## Enlaces
 
-- Repositorio HuggingFace de las cuantizaciones: https://huggingface.co/mradermacher/Ishigaki-AEC-9B-i1-GGUF
+- Repositorio Hugging Face de las cuantizaciones: https://huggingface.co/mradermacher/Ishigaki-AEC-9B-i1-GGUF
 - Modelo base: https://huggingface.co/ONESTRUCTION/Ishigaki-AEC-9B
 - Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher
 - Solicitudes de cuantizacion de mradermacher: https://huggingface.co/mradermacher/model_requests

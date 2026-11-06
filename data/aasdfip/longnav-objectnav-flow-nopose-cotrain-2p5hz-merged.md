@@ -82,7 +82,7 @@ No se dispone de información sobre modelos comparables de navegación VLA con f
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo fusionado: https://huggingface.co/Aasdfip/longnav-objectnav-flow-nopose-cotrain-2p5hz-merged
+- Repositorio Hugging Face del modelo fusionado: https://huggingface.co/Aasdfip/longnav-objectnav-flow-nopose-cotrain-2p5hz-merged
 - Repositorio del adaptador canónico (sin fusionar): https://huggingface.co/Aasdfip/longnav-objectnav-flow-nopose-cotrain-2p5hz
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct
 - No se proporcionan papers, blogs ni demos adicionales en la información disponible.

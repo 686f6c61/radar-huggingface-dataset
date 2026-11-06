@@ -90,7 +90,7 @@ No hay datos de benchmarks ni de otros modelos abliterated de terceros en la inf
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dr-housemd/orcarouter-Qwen3.8-27B-Uncensored-exl3-2.75bpw-H4-V4
+- Repositorio en Hugging Face: https://huggingface.co/dr-housemd/orcarouter-Qwen3.8-27B-Uncensored-exl3-2.75bpw-H4-V4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Variante FP8: https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-FP8
 - Variante GGUF: https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-GGUF

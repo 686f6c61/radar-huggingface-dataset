@@ -4,7 +4,7 @@
 
 DeepSeek-V4-Flash-Vision-Uncensored-GGUF es una cuantizacion en formato GGUF del modelo DeepSeek-V4-Flash-Vision-Uncensored, publicado por OrcaRouter. Se trata de una variante "abliterated" (desalinizada) del DeepSeek-V4-Flash-Vision-Exp de DeepSeek, el primer modelo multimodal experimental de la serie V4, que combina el backbone MoE de V4-Flash con una torre de vision de 32 capas y un contexto de 1 millon de tokens. La version uncensored elimina los rechazos de seguridad del modelo original, orientandose a usos de red-teaming y evaluacion de seguridad ofensiva.
 
-El modelo mantiene las capacidades de texto y vision del V4-Flash-Vision-Exp, incluyendo tool calling nativo, razonamiento multi-paso y un modulo de borrador DSpark para decodificacion especulativa. Con aproximadamente 284.000 millones de parametros totales en arquitectura MoE, el repo GGUF ocupa 156,4 GB y esta disponible bajo licencia MIT, aunque el acceso es restringido (gated) y requiere aceptar condiciones en HuggingFace. Su relevancia actual radica en ofrecer una alternativa de pesos abiertos con vision a precio de texto, pensada para equipos de seguridad que necesitan probar modelos sin filtros de contenido.
+El modelo mantiene las capacidades de texto y vision del V4-Flash-Vision-Exp, incluyendo tool calling nativo, razonamiento multi-paso y un modulo de borrador DSpark para decodificacion especulativa. Con aproximadamente 284.000 millones de parametros totales en arquitectura MoE, el repo GGUF ocupa 156,4 GB y esta disponible bajo licencia MIT, aunque el acceso es restringido (gated) y requiere aceptar condiciones en Hugging Face. Su relevancia actual radica en ofrecer una alternativa de pesos abiertos con vision a precio de texto, pensada para equipos de seguridad que necesitan probar modelos sin filtros de contenido.
 
 ## Especificaciones tecnicas
 
@@ -68,7 +68,7 @@ La principal diferencia con el modelo base es la abliteration, que elimina los r
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace antes de poder descargar el modelo.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face antes de poder descargar el modelo.
 - Comportamiento uncensored: al eliminar los rechazos de seguridad, el modelo puede generar contenido ofensivo, ilegal o peligroso. Su uso debe limitarse a entornos controlados de red-teaming e investigacion.
 - Riesgo de alucinacion: como cualquier modelo generativo, puede producir informacion falsa o inventada, especialmente en tareas de razonamiento complejo.
 - Idiomas limitados: solo ingles y chino; el rendimiento en otros idiomas no esta garantizado.
@@ -78,7 +78,7 @@ La principal diferencia con el modelo base es la abliteration, que elimina los r
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/orcarouter/DeepSeek-V4-Flash-Vision-Uncensored-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/orcarouter/DeepSeek-V4-Flash-Vision-Uncensored-GGUF
 - Modelo base uncensored: https://huggingface.co/orcarouter/DeepSeek-V4-Flash-Vision-Uncensored
 - Modelo original de DeepSeek: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash
 - Receta de despliegue con vLLM: https://recipes.vllm.ai/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp

@@ -20,7 +20,7 @@ El repositorio ocupa 0,0 GB, no tiene descargas ni "likes" registrados y se dist
 | Licencia | MIT |
 | Formato de pesos | `safetensors` (`params.safetensors`) más `config.json`; requiere el ecosistema JAX/Flax |
 | Librería declarada | `jax` (Flax) |
-| Pipeline en HuggingFace | `reinforcement-learning` |
+| Pipeline en Hugging Face | `reinforcement-learning` |
 | Número de checkpoints | 2 (`sfl-paper` y `sfl-1m-envs`) |
 | Entornos (versión `sfl-paper`) | Entrenado en niveles aleatorios de tamaño L, 2 048 entornos paralelos, 18 000 millones de pasos de entorno |
 | Entornos (versión `sfl-1m-envs`) | Entrenado en niveles aleatorios de tamaño M, 1 048 576 entornos paralelos, 376 000 millones de pasos de entorno |
@@ -100,11 +100,11 @@ No se dispone de datos verificables de checkpoints alternativos de la misma cate
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mbeukman/Kinetix-Checkpoints
+- Modelo en Hugging Face: https://huggingface.co/mbeukman/Kinetix-Checkpoints
 - Repositorio de Kinetix: https://github.com/FLAIROx/Kinetix
 - Ejemplo de evaluación con checkpoint preentrenado: https://github.com/FLAIROx/Kinetix/blob/main/examples/example_pretrained.py
 - Artículo de Kinetix (ICLR 2025): https://arxiv.org/abs/2410.23208
-- Página del artículo de Kinetix en HuggingFace Papers: https://huggingface.co/papers/2410.23208
+- Página del artículo de Kinetix en Hugging Face Papers: https://huggingface.co/papers/2410.23208
 - Artículo de SFL: https://arxiv.org/abs/2408.15099
 - Artículo sobre escalado a 1 millón de entornos paralelos en PPO: https://arxiv.org/abs/2603.06009
 - Proyecto homónimo no relacionado (modelos de mundo jerárquicos): https://github.com/git-kinetix/kinetix-puppeteer

@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Observacion / accion | Frecuencia | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| juicenv/microduck-sprint-es5 | Politica de locomocion (fine-tune por ES) | 61 / 14 | 50 Hz | no disponible (base Apache-2.0) | HuggingFace, 0 descargas, 0 likes |
-| HannesVonEssen/microduck-running | Politica de locomocion (modelo base) | no disponible en la informacion proporcionada | no disponible | Apache-2.0 | HuggingFace |
+| juicenv/microduck-sprint-es5 | Politica de locomocion (fine-tune por ES) | 61 / 14 | 50 Hz | no disponible (base Apache-2.0) | Hugging Face, 0 descargas, 0 likes |
+| HannesVonEssen/microduck-running | Politica de locomocion (modelo base) | no disponible en la informacion proporcionada | no disponible | Apache-2.0 | Hugging Face |
 | Otras politicas de locomocion para microduck | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparacion se limita al modelo base declarado por el autor, del cual sprint-es5 deriva por fine-tune. No se dispone de datos de otras politicas comparables ni de cifras de rendimiento que permitan un contraste cuantitativo.
@@ -90,7 +90,7 @@ La comparacion se limita al modelo base declarado por el autor, del cual sprint-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/juicenv/microduck-sprint-es5
+- Modelo en Hugging Face: https://huggingface.co/juicenv/microduck-sprint-es5
 - Modelo base: https://huggingface.co/HannesVonEssen/microduck-running
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento (RL): pollen-robotics/microduck_rl, rama `lean`, commit `5a3636302` (no se proporciona URL directa en la informacion disponible)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mae-matching es un repositorio experimental publicado en HuggingFace por el usuario williamhowardluk bajo licencia Apache 2.0. No es un modelo entrenado ni listo para producción: se trata de un esqueleto de código (codebase) que implementa una arquitectura propietaria denominada "Mae" orientada a tareas de *matching* (emparejamiento). El propio autor indica de forma explícita que `model.safetensors` es un checkpoint de inicialización válido para *smoke tests*, no un checkpoint entrenado ni evaluado con benchmarks.
+mae-matching es un repositorio experimental publicado en Hugging Face por el usuario williamhowardluk bajo licencia Apache 2.0. No es un modelo entrenado ni listo para producción: se trata de un esqueleto de código (codebase) que implementa una arquitectura propietaria denominada "Mae" orientada a tareas de *matching* (emparejamiento). El propio autor indica de forma explícita que `model.safetensors` es un checkpoint de inicialización válido para *smoke tests*, no un checkpoint entrenado ni evaluado con benchmarks.
 
 El dato más relevante para evaluar el repositorio es su tamaño real: los metadatos de safetensors reportan 16.576 parámetros totales, es decir, en torno a 16,6 mil parámetros. Esto contrasta con la etiqueta de escala "huge" que aparece en la configuración de arquitectura, que debe interpretarse como el nombre de un preset de configuración y no como una descripción del tamaño efectivo del modelo. El repositorio ocupa 0,0 GB, no tiene descargas ni *likes*, y no declara *pipeline* ni idiomas soportados.
 
@@ -82,6 +82,6 @@ No disponible. La búsqueda web realizada no devolvió ningún enlace relacionad
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/williamhowardluk/mae-matching
+- Repositorio en Hugging Face: https://huggingface.co/williamhowardluk/mae-matching
 - Perfil del autor: https://huggingface.co/williamhowardluk
 - Paper, blog, repositorio de código o demo adicionales: no disponibles. La búsqueda web realizada no devolvió resultados relacionados con este modelo.

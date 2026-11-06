@@ -77,7 +77,7 @@ La comparativa se limita a los modelos de la misma familia (SmolVLA de SOBITS). 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/team-sobits/sobit_home_left_real-pnp_tea_trash_big-abs-200-smolvla_fft-90000
+- Hugging Face: https://huggingface.co/team-sobits/sobit_home_left_real-pnp_tea_trash_big-abs-200-smolvla_fft-90000
 - Dataset de entrenamiento: https://huggingface.co/datasets/team-sobits/sobit_home_left_real-pnp_tea_trash_big-abs-200
 - Paper SmolVLA: https://huggingface.co/papers/2506.01844
 - LeRobot: https://github.com/huggingface/lerobot

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `HYU-NLP-EVAL/qwen3-4b-medicine-static-pilot-261016-step-016` es un ajuste fino del modelo base Qwen/Qwen3-4B-Instruct-2507, publicado por el usuario u organización HYU-NLP-EVAL en HuggingFace. Se trata de un checkpoint intermedio: la model card indica que corresponde a la ejecución `261016_medicine_static_pilot`, en el paso 16 de entrenamiento y con semilla 11, lo que lo sitúa como un artefacto de investigación dentro de un proceso de ajuste orientado al dominio médico, no como un modelo final validado.
+El modelo `HYU-NLP-EVAL/qwen3-4b-medicine-static-pilot-261016-step-016` es un ajuste fino del modelo base Qwen/Qwen3-4B-Instruct-2507, publicado por el usuario u organización HYU-NLP-EVAL en Hugging Face. Se trata de un checkpoint intermedio: la model card indica que corresponde a la ejecución `261016_medicine_static_pilot`, en el paso 16 de entrenamiento y con semilla 11, lo que lo sitúa como un artefacto de investigación dentro de un proceso de ajuste orientado al dominio médico, no como un modelo final validado.
 
 El repositorio contiene un export en BF16 para Transformers en la raíz y, en el directorio `original_checkpoint/`, los ficheros nativos de veRL/FSDP junto con sus metadatos. El modelo tiene 4.022.468.096 parámetros reales (según los ficheros safetensors), lo que lo sitúa en la gama de ~4 B de parámetros, con licencia Apache-2.0. El tamaño del repositorio es de 25,7 GB, coherente con la duplicación de pesos (export BF16 más checkpoint nativo).
 
@@ -33,7 +33,7 @@ No hay información disponible sobre el número de tokens de entrenamiento, la c
 - Capacidades heredadas del modelo base: no están documentadas en esta model card. El modelo base Qwen3-4B-Instruct-2507 es un modelo de instrucciones con soporte declarado de razonamiento, código y matemáticas, pero este checkpoint concreto no aporta evidencia de conservarlas tras el ajuste.
 - Tool calling y function calling: no disponible en la documentación de este checkpoint.
 - Soporte de agentes y razonamiento multi-paso: no disponible en la documentación de este checkpoint.
-- Capacidades multilingües: no disponible; la model card no declara idiomas y la ficha de HuggingFace marca el campo de idiomas como no disponible.
+- Capacidades multilingües: no disponible; la model card no declara idiomas y la ficha de Hugging Face marca el campo de idiomas como no disponible.
 - Capacidades especiales (modo thinking, visión, audio): no disponible. El pipeline es exclusivamente de generación de texto.
 - Compatibilidad técnica: etiquetas `text-generation-inference` y `endpoints_compatible`, lo que indica que el artefacto puede desplegarse en TGI y en endpoints compatibles.
 
@@ -93,6 +93,6 @@ No se dispone de datos verificados de benchmarks ni de especificaciones de model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-medicine-static-pilot-261016-step-016
+- Modelo en Hugging Face: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-medicine-static-pilot-261016-step-016
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la búsqueda web realizada. Los resultados devueltos correspondían a entidades no relacionadas (Hyundai, canales de YouTube y catálogos comerciales), por lo que no se incluyen.

@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| gemma-4-26B-A4B-it-qat-q4_0-unquantized (base) | 26.000 M totales, ~4.000 M activos | 262.144 | No indicada | HuggingFace |
-| gemma-4-26B-A4B-it-qat-q4_0-unquantized-oQ3.5e-text-fp16 | 26.000 M totales, ~4.000 M activos | 262.144 | No indicada | HuggingFace |
-| gemma-4-26B-A4B-it-qat-q4_0-unquantized-oQ3.5e-fp16 (este modelo) | 25.805.936.206 | 262.144 | No indicada | HuggingFace |
+| gemma-4-26B-A4B-it-qat-q4_0-unquantized (base) | 26.000 M totales, ~4.000 M activos | 262.144 | No indicada | Hugging Face |
+| gemma-4-26B-A4B-it-qat-q4_0-unquantized-oQ3.5e-text-fp16 | 26.000 M totales, ~4.000 M activos | 262.144 | No indicada | Hugging Face |
+| gemma-4-26B-A4B-it-qat-q4_0-unquantized-oQ3.5e-fp16 (este modelo) | 25.805.936.206 | 262.144 | No indicada | Hugging Face |
 
 La principal diferencia entre estas variantes es el esquema de cuantización aplicado y el formato de salida. El modelo base se publica sin cuantizar, mientras que las versiones oQ3.5e están cuantizadas a 3 bits con group size 64. No se dispone de benchmarks comparativos para evaluar la pérdida de rendimiento entre ellas.
 

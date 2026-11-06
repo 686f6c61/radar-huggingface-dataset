@@ -71,8 +71,8 @@ No hay datos de MMLU, HumanEval, GSM8K ni comparaciones con otros modelos. Cualq
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Enfoque |
 |---|---|---|---|---|---|
-| Hornybot-Julian-POV | 9,41 B | No disponible (ejemplo con 32.768) | No disponible; revision pendiente (base Apache 2.0) | HuggingFace, safetensors + GGUF | Rol adulto en primera persona |
-| Qwen/Qwen3.5-9B (base) | 9,41 B | No disponible | Apache 2.0 | HuggingFace | Modelo general multimodal |
+| Hornybot-Julian-POV | 9,41 B | No disponible (ejemplo con 32.768) | No disponible; revision pendiente (base Apache 2.0) | Hugging Face, safetensors + GGUF | Rol adulto en primera persona |
+| Qwen/Qwen3.5-9B (base) | 9,41 B | No disponible | Apache 2.0 | Hugging Face | Modelo general multimodal |
 | Otros finetunes de rol de ~8-9 B | No disponible | No disponible | No disponible | No disponible | No se han identificado alternativas comparables en la informacion proporcionada |
 
 La busqueda web realizada no devolvio resultados relevantes sobre este modelo ni sobre finetunes de rol comparables (los resultados obtenidos trataban sobre el protocolo HTTP y no guardan relacion con el modelo). Por tanto, no es posible establecer una comparativa de rendimiento con alternativas de la misma categoria.
@@ -92,7 +92,7 @@ La busqueda web realizada no devolvio resultados relevantes sobre este modelo ni
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/axiomofmind/Hornybot-Julian-POV
+- Modelo en Hugging Face: https://huggingface.co/axiomofmind/Hornybot-Julian-POV
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Runtime GGUF: https://github.com/ggml-org/llama.cpp
 - Resultados de busqueda web: no se encontro ningun enlace relevante sobre este modelo, su entrenamiento o su evaluacion. Los unicos resultados devueltos hacian referencia al protocolo HTTP (Wikipedia, MDN Web Docs, GeeksforGeeks) y no guardan relacion con el modelo.

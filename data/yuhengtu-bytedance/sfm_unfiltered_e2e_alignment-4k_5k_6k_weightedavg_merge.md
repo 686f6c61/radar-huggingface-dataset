@@ -10,7 +10,7 @@ La relevancia de este modelo es limitada debido a la ausencia de documentación 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-NeoX (según tag de HuggingFace, no confirmado en la model card) |
+| Arquitectura | GPT-NeoX (según tag de Hugging Face, no confirmado en la model card) |
 | Parametros totales | 6.856.253.440 (≈6,86 B) |
 | Parametros activos | No aplica (modelo denso) |
 | Longitud de contexto | No disponible |
@@ -21,7 +21,7 @@ La relevancia de este modelo es limitada debido a la ausencia de documentación 
 
 ## Arquitectura y entrenamiento
 
-La arquitectura exacta no está documentada en la model card. El tag `gpt_neox` en HuggingFace sugiere que el modelo utiliza la arquitectura GPT-NeoX (un transformer autoregresivo con atención causal), pero no se puede confirmar sin acceso a la configuración del modelo. El proceso de entrenamiento tampoco se detalla: solo se sabe que el modelo es el resultado de fusionar tres checkpoints de un proceso de alineación llamado `unfiltered_e2e_alignment`, probablemente un ajuste fino de un modelo base no especificado. La fusión se realizó con el método Linear (descrito en el paper [arxiv:2203.05482](https://arxiv.org/abs/2203.05482)), que combina los pesos de los modelos mediante una media ponderada normalizada. Los pesos asignados fueron 1, 2 y 3 para los checkpoints de los pasos 4000, 5000 y 6000 respectivamente, con el checkpoint del paso 6000 como base. El cálculo se realizó en precisión float32 y el resultado se guardó en bfloat16.
+La arquitectura exacta no está documentada en la model card. El tag `gpt_neox` en Hugging Face sugiere que el modelo utiliza la arquitectura GPT-NeoX (un transformer autoregresivo con atención causal), pero no se puede confirmar sin acceso a la configuración del modelo. El proceso de entrenamiento tampoco se detalla: solo se sabe que el modelo es el resultado de fusionar tres checkpoints de un proceso de alineación llamado `unfiltered_e2e_alignment`, probablemente un ajuste fino de un modelo base no especificado. La fusión se realizó con el método Linear (descrito en el paper [arxiv:2203.05482](https://arxiv.org/abs/2203.05482)), que combina los pesos de los modelos mediante una media ponderada normalizada. Los pesos asignados fueron 1, 2 y 3 para los checkpoints de los pasos 4000, 5000 y 6000 respectivamente, con el checkpoint del paso 6000 como base. El cálculo se realizó en precisión float32 y el resultado se guardó en bfloat16.
 
 No se dispone de información sobre el dataset de entrenamiento, el número de tokens, ni si se aplicaron técnicas como RLHF o DPO. El nombre "unfiltered" sugiere que el proceso de alineación pudo haberse realizado sin filtrado de datos, pero esto es especulativo.
 
@@ -72,6 +72,6 @@ No se dispone de información suficiente para realizar una comparativa fiable. E
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_alignment-4k_5k_6k_weightedavg_merge)
+- [Hugging Face - modelo](https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_alignment-4k_5k_6k_weightedavg_merge)
 - [Repositorio de mergekit](https://github.com/cg123/mergekit)
 - [Paper del método Linear (arxiv:2203.05482)](https://arxiv.org/abs/2203.05482)

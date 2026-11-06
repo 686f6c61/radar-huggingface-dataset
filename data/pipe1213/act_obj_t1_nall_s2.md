@@ -78,7 +78,7 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni benchmarks de lengua
 
 | Modelo | Parámetros | Contexto | Rendimiento en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ACT (este modelo) | 52M | no aplica | 72,7% medio en 3 checkpoints; 62% en el paso 10.000 | Apache 2.0 | HuggingFace (LeRobot) |
+| ACT (este modelo) | 52M | no aplica | 72,7% medio en 3 checkpoints; 62% en el paso 10.000 | Apache 2.0 | Hugging Face (LeRobot) |
 | SmolVLA (referencia del estudio) | no disponible en la información | no disponible | 87,3% agregado con las mismas demostraciones | no disponible en la información | checkpoint LIBERO publicado según la model card |
 | ACT con todas las demostraciones (agregado del estudio) | 52M | no aplica | 55,4% medio en 3 tareas | Apache 2.0 | no disponible como modelo único |
 
@@ -99,7 +99,7 @@ La comparación directa con SmolVLA no aísla el efecto del preentrenamiento: lo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Pipe1213/act_obj_t1_nall_s2
+- Modelo en Hugging Face: https://huggingface.co/Pipe1213/act_obj_t1_nall_s2
 - Repositorio del estudio: https://github.com/Pipe1213/vla-vs-scratch
 - Resultados completos: https://github.com/Pipe1213/vla-vs-scratch#results
 - Análisis: https://github.com/Pipe1213/vla-vs-scratch/blob/main/results/analysis.md

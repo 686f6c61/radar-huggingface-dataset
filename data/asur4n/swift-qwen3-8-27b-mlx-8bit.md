@@ -76,8 +76,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Asur4N/Swift-Qwen3.8-27B-mlx-8bit | 27,36B | 262.144 | 8-bit MLX (~28 GB) | swift-open-license-1.0 (gratis hasta 1M USD ARR) | HuggingFace, MLX/Apple Silicon |
-| ukisai/Swift-Qwen3.8-27b (base) | no disponible en la informacion proporcionada | 262.144 (segun la conversion) | pesos sin cuantizar, no confirmado | swift-open-license-1.0 | HuggingFace |
+| Asur4N/Swift-Qwen3.8-27B-mlx-8bit | 27,36B | 262.144 | 8-bit MLX (~28 GB) | swift-open-license-1.0 (gratis hasta 1M USD ARR) | Hugging Face, MLX/Apple Silicon |
+| ukisai/Swift-Qwen3.8-27b (base) | no disponible en la informacion proporcionada | 262.144 (segun la conversion) | pesos sin cuantizar, no confirmado | swift-open-license-1.0 | Hugging Face |
 | Alternativas de ~27-32B equivalentes | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone en la informacion proporcionada de datos de rendimiento, licencia o especificaciones de otros modelos de la misma categoria que permitan una comparacion cuantitativa fiable. Cualquier comparacion con modelos de tamano similar (por ejemplo, otras familias de 27-32B con razonamiento explícito) exigiria consultar sus respectivas model cards.
@@ -97,7 +97,7 @@ No se dispone en la informacion proporcionada de datos de rendimiento, licencia 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Asur4N/Swift-Qwen3.8-27B-mlx-8bit
+- Modelo en Hugging Face: https://huggingface.co/Asur4N/Swift-Qwen3.8-27B-mlx-8bit
 - Modelo base: https://huggingface.co/ukisai/Swift-Qwen3.8-27b
 - Librería de conversión e inferencia: `mlx-vlm` (https://github.com/Blaizzy/mlx-vlm)
 - Resultados de la búsqueda web: no se ha encontrado ningún enlace relevante sobre este modelo, su modelo base o su licencia. Las únicas coincidencias devueltas tratan sobre un tema de disertación filosófica en francés y no guardan relación con el modelo. No se dispone por tanto de paper, blog técnico, repositorio de código ni demo adicionales.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`lordfarquaad36/aros-5357339c-Alex` es un adaptador LoRA de tipo DreamBooth para el modelo de difusion texto-a-imagen Krea 2, entrenado sobre el checkpoint base `krea/Krea-2-Raw` y pensado para ejecutarse en inferencia sobre la variante destilada `krea/Krea-2-Turbo`. Lo publica el usuario `lordfarquaad36` en HuggingFace bajo licencia Apache 2.0, con un repositorio de 0,4 GB que contiene unicamente los pesos del adaptador, no un modelo completo.
+`lordfarquaad36/aros-5357339c-Alex` es un adaptador LoRA de tipo DreamBooth para el modelo de difusion texto-a-imagen Krea 2, entrenado sobre el checkpoint base `krea/Krea-2-Raw` y pensado para ejecutarse en inferencia sobre la variante destilada `krea/Krea-2-Turbo`. Lo publica el usuario `lordfarquaad36` en Hugging Face bajo licencia Apache 2.0, con un repositorio de 0,4 GB que contiene unicamente los pesos del adaptador, no un modelo completo.
 
 El proposito del modelo es inyectar un concepto visual concreto, invocado mediante el token disparador `dpps woman`, en las generaciones del pipeline Krea 2. Es, por tanto, una pieza de personalizacion (fine-tuning ligero) y no un modelo generalista: no resuelve tareas de razonamiento, codigo ni lenguaje, sino que modula el estilo y el contenido visual de un difusor subyacente.
 
@@ -81,7 +81,7 @@ No disponible. La informacion proporcionada no incluye otros adaptadores LoRA co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lordfarquaad36/aros-5357339c-Alex
+- Hugging Face: https://huggingface.co/lordfarquaad36/aros-5357339c-Alex
 - Modelo base de entrenamiento: https://huggingface.co/krea/Krea-2-Raw
 - Modelo base de inferencia (Turbo): https://huggingface.co/krea/Krea-2-Turbo
 - Referencia cruzada citada en la model card: https://huggingface.co/guillekenzo/aros-5357339c-Alex

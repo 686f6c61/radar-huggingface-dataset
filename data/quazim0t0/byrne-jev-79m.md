@@ -92,7 +92,7 @@ Puntos destacados por el autor: la calibracion (ECE 0,045, la mas baja de la tab
 
 | Modelo | Parametros | Licencia | Enfoque | Accuracy (typed-decisions) | ECE | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Byrne-Jev | ~79M | Apache-2.0 | Cabeza de decision tipada, no generativo | 0,630 | 0,045 | Pesos abiertos en HuggingFace |
+| Byrne-Jev | ~79M | Apache-2.0 | Cabeza de decision tipada, no generativo | 0,630 | 0,045 | Pesos abiertos en Hugging Face |
 | TypeSafe Jev 1.13.0 | Cerrado | No disponible | Decision tipada | 0,727 | 0,144 | Cerrado |
 | Laya typed-decisions | 421M | No disponible | Cabeza de decision tipada | 0,766 | 0,213 | No disponible en la informacion proporcionada |
 | ModernBERT-base specialist | 149M | No disponible | Especialista basado en ModernBERT | 0,646 | 0,179 | No disponible en la informacion proporcionada |
@@ -115,7 +115,7 @@ Frente a estas alternativas, Byrne-Jev destaca por su tamano reducido (aproximad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Quazim0t0/Byrne-Jev-79M
+- Modelo en Hugging Face: https://huggingface.co/Quazim0t0/Byrne-Jev-79M
 - Conjunto de evaluacion citado: `LocalLLaMA/typed-decisions` (referenciado por nombre en la model card; no se proporciona URL)
 - Modelos de referencia citados por nombre sin URL en la informacion disponible: TypeSafe Jev 1.13.0, Laya (`laya`), ModernBERT-base specialist
 - No se han proporcionado enlaces a papers, blogs, repositorios adicionales ni demos.

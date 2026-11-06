@@ -49,9 +49,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 ## Comparativa con modelos similares
 | Modelo | Cuantización | Tamaño de descarga | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| attashe/Bernini-2-INT8-ConvRot | INT8 W8A8 + ConvRot | ~57,58 GiB | Apache-2.0 | HuggingFace; requiere código personalizado pendiente de publicación |
-| ByteDance/Bernini-Diffusers-v2 | no disponible | no disponible | Apache-2.0 | HuggingFace (modelo base) |
-| attashe/Bernini-Wan2.2-fp8-scaled | FP8 | no disponible | Apache-2.0 | HuggingFace |
+| attashe/Bernini-2-INT8-ConvRot | INT8 W8A8 + ConvRot | ~57,58 GiB | Apache-2.0 | Hugging Face; requiere código personalizado pendiente de publicación |
+| ByteDance/Bernini-Diffusers-v2 | no disponible | no disponible | Apache-2.0 | Hugging Face (modelo base) |
+| attashe/Bernini-Wan2.2-fp8-scaled | FP8 | no disponible | Apache-2.0 | Hugging Face |
 
 La comparativa se limita a la cuantización y la disponibilidad, ya que no se dispone de datos de parámetros, contexto ni rendimiento para los modelos comparados.
 
@@ -65,7 +65,7 @@ La comparativa se limita a la cuantización y la disponibilidad, ya que no se di
 - La licencia Apache-2.0 permite uso comercial, pero el código de inferencia pendiente de publicación puede tener condiciones adicionales; se debe revisar antes de usar en producción.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/attashe/Bernini-2-INT8-ConvRot
+- Repositorio en Hugging Face: https://huggingface.co/attashe/Bernini-2-INT8-ConvRot
 - Modelo base: https://huggingface.co/ByteDance/Bernini-Diffusers-v2
 - Adaptadores LightX2V: https://huggingface.co/lightx2v/Wan2.2-Distill-Loras (revisión `570044187a5219776ef30a5c60c6f76428a3a10a`)
 - Código de inferencia: pendiente de publicación; se indicará cuando esté disponible.

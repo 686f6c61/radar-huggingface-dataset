@@ -74,6 +74,6 @@ No hay información suficiente para establecer una comparativa rigurosa. El adap
 
 ## Enlaces
 
-- [HuggingFace - Chengheng/sandbag-qwen3-8b-pwlock-wm-self](https://huggingface.co/Chengheng/sandbag-qwen3-8b-pwlock-wm-self)
-- [HuggingFace - Qwen/Qwen3-8B (modelo base)](https://huggingface.co/Qwen/Qwen3-8B)
+- [Hugging Face - Chengheng/sandbag-qwen3-8b-pwlock-wm-self](https://huggingface.co/Chengheng/sandbag-qwen3-8b-pwlock-wm-self)
+- [Hugging Face - Qwen/Qwen3-8B (modelo base)](https://huggingface.co/Qwen/Qwen3-8B)
 - [GitHub - QwenLM/Qwen3](https://github.com/QwenLM/Qwen3)

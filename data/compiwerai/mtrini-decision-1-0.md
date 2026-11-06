@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mtrini-Decision-1.0 es un proyecto de investigacion experimental publicado por Compiwer AI en HuggingFace. No es un modelo completo, sino un paquete de artefactos de entrenamiento compuesto por un adaptador LoRA, un cabezal de decision personalizado (`decision_head.pt`) y sus ficheros de configuracion, construido sobre el modelo base Qwen/Qwen3-8B. El repositorio ocupa aproximadamente 0,2 GB, lo que confirma que solo contiene los pesos del adaptador y del cabezal, no los pesos completos del modelo subyacente.
+Mtrini-Decision-1.0 es un proyecto de investigacion experimental publicado por Compiwer AI en Hugging Face. No es un modelo completo, sino un paquete de artefactos de entrenamiento compuesto por un adaptador LoRA, un cabezal de decision personalizado (`decision_head.pt`) y sus ficheros de configuracion, construido sobre el modelo base Qwen/Qwen3-8B. El repositorio ocupa aproximadamente 0,2 GB, lo que confirma que solo contiene los pesos del adaptador y del cabezal, no los pesos completos del modelo subyacente.
 
 Su objetivo declarado es la toma de decisiones estructurada: seleccion entre opciones, ranking de alternativas y puntuacion (scoring) de decisiones. Se trata de un checkpoint muy temprano, correspondiente al paso de entrenamiento 100, y el propio autor lo etiqueta como research preview experimental, sin reivindicar estado del arte ni madurez para produccion.
 
@@ -23,7 +23,7 @@ La relevancia de esta ficha es acotada y conviene ser explicito: no se han publi
 | Checkpoint de entrenamiento | Paso 100 |
 | Ficheros incluidos | `adapter_config.json`, `adapter_model.safetensors`, `decision_head.pt`, `mtrini_decision_config.json`, `release_metrics.json` |
 | Desarrollador | Compiwer AI |
-| Fecha de publicacion (metadatos de HuggingFace) | 2026-10-09 |
+| Fecha de publicacion (metadatos de Hugging Face) | 2026-10-09 |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -84,9 +84,9 @@ No se han identificado en la informacion disponible modelos equivalentes de toma
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mtrini-Decision-1.0 | Adaptador LoRA + cabezal sobre 8B (repo de 0,2 GB) | No disponible en el adaptador | Sin benchmarks validados publicados | `other`, pendiente de verificacion | HuggingFace, 0 descargas, 0 likes |
-| Qwen/Qwen3-8B (modelo base) | 8B | 32 768 tokens nativos, ampliable a 131 072 con YaRN (segun su model card) | Resultados publicos del modelo base, no trasladables automaticamente al adaptador | Licencia del modelo base (consultar su model card) | HuggingFace, ampliamente distribuido |
-| Otros adaptadores LoRA genericos sobre Qwen3-8B | No disponible | No disponible | No disponible | Variable segun autor | HuggingFace |
+| Mtrini-Decision-1.0 | Adaptador LoRA + cabezal sobre 8B (repo de 0,2 GB) | No disponible en el adaptador | Sin benchmarks validados publicados | `other`, pendiente de verificacion | Hugging Face, 0 descargas, 0 likes |
+| Qwen/Qwen3-8B (modelo base) | 8B | 32 768 tokens nativos, ampliable a 131 072 con YaRN (segun su model card) | Resultados publicos del modelo base, no trasladables automaticamente al adaptador | Licencia del modelo base (consultar su model card) | Hugging Face, ampliamente distribuido |
+| Otros adaptadores LoRA genericos sobre Qwen3-8B | No disponible | No disponible | No disponible | Variable segun autor | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -104,7 +104,7 @@ No se han identificado en la informacion disponible modelos equivalentes de toma
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/CompiwerAI/Mtrini-Decision-1.0
+- Repositorio Hugging Face: https://huggingface.co/CompiwerAI/Mtrini-Decision-1.0
 - Modelo base Qwen/Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada
 - Sitio web de Compiwer AI: no disponible en la informacion proporcionada

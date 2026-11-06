@@ -108,7 +108,7 @@ El modelo base sin cuantizar (empero-ai/Qwen3.8-Distill en bfloat16) es la refer
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RolanDorisTech/Qwen3.8-2B-Distill-MLX-oQ8e
+- Modelo en Hugging Face: https://huggingface.co/RolanDorisTech/Qwen3.8-2B-Distill-MLX-oQ8e
 - Modelo base declarado: empero-ai/Qwen3.8-Distill
 - Modelo base en formato GGUF: empero-ai/Qwen3.8-2B-Distill-GGUF
 - Canal del autor: https://www.youtube.com/@RolanDorisTech

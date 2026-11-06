@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo **Wearable Activity Classifier** es un clasificador de series temporales diseñado para distinguir entre tres actividades físicas —estacionario, caminar y correr— a partir de una secuencia de 100 pasos de un único sensor. Ha sido desarrollado por el usuario Tech-Anis y publicado en HuggingFace con fines exclusivamente educativos, como parte de un ejercicio académico de comparación de arquitecturas de redes neuronales (CNN, SimpleRNN, LSTM o CNN+LSTM). El repositorio no incluye información sobre la arquitectura final seleccionada, el número de parámetros ni los resultados de evaluación, ya que la model card es una plantilla sin completar.
+El modelo **Wearable Activity Classifier** es un clasificador de series temporales diseñado para distinguir entre tres actividades físicas —estacionario, caminar y correr— a partir de una secuencia de 100 pasos de un único sensor. Ha sido desarrollado por el usuario Tech-Anis y publicado en Hugging Face con fines exclusivamente educativos, como parte de un ejercicio académico de comparación de arquitecturas de redes neuronales (CNN, SimpleRNN, LSTM o CNN+LSTM). El repositorio no incluye información sobre la arquitectura final seleccionada, el número de parámetros ni los resultados de evaluación, ya que la model card es una plantilla sin completar.
 
 El modelo se enmarca en el ámbito de la clasificación de actividades con dispositivos portables (wearables), un área con aplicaciones en monitorización de salud y fitness. Sin embargo, este artefacto concreto se basa en datos sintéticos generados en un notebook de clase, no en un conjunto de datos real de sensores, y no está pensado para uso en producción ni para aplicaciones sanitarias. Su relevancia actual reside en su valor didáctico: permite a estudiantes comparar el comportamiento de distintas arquitecturas recurrentes y convolucionales sobre una tarea de clasificación temporal sencilla.
 
@@ -39,7 +39,7 @@ Dado el carácter educativo y los datos sintéticos, los casos de uso realistas 
 
 - **Práctica docente de clasificación de series temporales**: el modelo sirve como ejemplo guiado para que estudiantes implementen y comparen arquitecturas de redes neuronales sobre una tarea de secuencias cortas.
 - **Comparación de arquitecturas (CNN vs RNN vs LSTM)**: al ser un ejercicio de clase, permite evaluar empíricamente el rendimiento de distintos tipos de capas en un problema de clasificación temporal sencillo.
-- **Demostración de flujo de trabajo en HuggingFace**: ilustra cómo publicar un modelo Keras, documentarlo y compartirlo en la plataforma, aunque sea con una model card incompleta.
+- **Demostración de flujo de trabajo en Hugging Face**: ilustra cómo publicar un modelo Keras, documentarlo y compartirlo en la plataforma, aunque sea con una model card incompleta.
 - **Prototipo rápido de clasificación de actividades**: si se sustituyeran los datos sintéticos por datos reales de sensores, la estructura del modelo podría servir como punto de partida para un prototipo, pero requeriría reentrenamiento y validación.
 - **Ejemplo de preprocesamiento de señales**: el pipeline de entrada (secuencias de 100 pasos) puede usarse para enseñar normalización, ventaneo y preparación de datos de sensores.
 - **Base para experimentos de interpretabilidad**: dado que el modelo es pequeño y simple, puede utilizarse en clases sobre explicabilidad de modelos (por ejemplo, SHAP o LIME) aplicada a series temporales.
@@ -70,7 +70,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Tech-Anis/Wearable-Activity-Classifier)
+- [Modelo en Hugging Face](https://huggingface.co/Tech-Anis/Wearable-Activity-Classifier)
 - [Espacio relacionado de la comunidad (DeepLearningAssignment2)](https://huggingface.co/spaces/musakhan10/DeepLearningAssignment2) — no es el mismo modelo, pero muestra un proyecto similar.
 - [Artículo sobre modelos explicables para actividad física (ScienceDirect)](https://www.sciencedirect.com/science/article/pii/S1440244026001374) — contexto de investigación, no específico de este modelo.
 - [Artículo sobre predicción de tipos de actividad con wearables (Springer)](https://link.springer.com/article/10.1007/s11760-025-04564-z) — contexto de investigación, no específico de este modelo.

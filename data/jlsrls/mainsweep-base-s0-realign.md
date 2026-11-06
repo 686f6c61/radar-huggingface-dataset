@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mainsweep-base-s0-realign` es un modelo de lenguaje de tipo instruct, resultado de un ajuste fino (fine-tuning) de `unsloth/Llama-3.2-1B-Instruct` mediante SFT (supervised fine-tuning) con la librería TRL. Lo ha desarrollado el usuario `jlsrls` y se publica en HuggingFace. El modelo base es una variante de Llama 3.2 de aproximadamente 1.000 millones de parámetros, optimizada para seguir instrucciones. No se han documentado las tareas específicas ni los datos de entrenamiento, por lo que su ámbito de aplicación no está definido en la información disponible. El repositorio incluye un enlace a un experimento de Weights & Biases que podría contener más detalles sobre el entrenamiento.
+`mainsweep-base-s0-realign` es un modelo de lenguaje de tipo instruct, resultado de un ajuste fino (fine-tuning) de `unsloth/Llama-3.2-1B-Instruct` mediante SFT (supervised fine-tuning) con la librería TRL. Lo ha desarrollado el usuario `jlsrls` y se publica en Hugging Face. El modelo base es una variante de Llama 3.2 de aproximadamente 1.000 millones de parámetros, optimizada para seguir instrucciones. No se han documentado las tareas específicas ni los datos de entrenamiento, por lo que su ámbito de aplicación no está definido en la información disponible. El repositorio incluye un enlace a un experimento de Weights & Biases que podría contener más detalles sobre el entrenamiento.
 
 ## Especificaciones técnicas
 
@@ -63,6 +63,6 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jlsrls/mainsweep-base-s0-realign
+- Hugging Face: https://huggingface.co/jlsrls/mainsweep-base-s0-realign
 - Modelo base: https://huggingface.co/unsloth/Llama-3.2-1B-Instruct
 - Weights & Biases experiment: https://wandb.ai/rezvani-portland-state-university/clarifying-em/runs/2jeingnt

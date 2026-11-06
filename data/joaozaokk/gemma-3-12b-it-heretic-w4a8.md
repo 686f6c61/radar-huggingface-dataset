@@ -109,7 +109,7 @@ No se han publicado resultados de benchmarks en la informacion disponible (ni MM
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/JoaoZaokk/Gemma-3-12B-it-Heretic-W4A8
+- Repositorio en Hugging Face: https://huggingface.co/JoaoZaokk/Gemma-3-12B-it-Heretic-W4A8
 - Modelo base declarado: https://huggingface.co/DreamFast/gemma-3-12b-it-heretic
 - Modelo de origen de la familia: https://huggingface.co/google/gemma-3-12b-it
 - Terminos de licencia Gemma: https://ai.google.dev/gemma/terms

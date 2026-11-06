@@ -81,7 +81,7 @@ La comparación directa con modelos de propósito general no es significativa: e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sbordt/forgetting-contamination-124M-1x
+- Modelo en Hugging Face: https://huggingface.co/sbordt/forgetting-contamination-124M-1x
 - Artículo (arXiv): https://arxiv.org/abs/2410.03249
 - Repositorio de código: https://github.com/tml-tuebingen/forgetting-contamination
 - Script de entrenamiento: https://github.com/tml-tuebingen/forgetting-contamination/blob/main/llm.c/scripts/1x_chinchilla/124M.sh

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`svd-safety-l2_dualk_jbb_mix_trace_r40` es un checkpoint experimental derivado de `meta-llama/Llama-2-7b-chat-hf`, publicado por el usuario Jeesup en HuggingFace. No se trata de un modelo conversacional de propósito general, sino de un artefacto de investigación sobre compresión de modelos mediante SVD y su impacto en el comportamiento de seguridad. El checkpoint aplica una compresión de dominio dual con curvatura K-FAC blanqueada (utilidad y seguridad) y un presupuesto de rango heredado de SVD-LLM, eliminando el 40,00 % de los parámetros densos y quedándose en una fracción de 0,5998 respecto al modelo original.
+`svd-safety-l2_dualk_jbb_mix_trace_r40` es un checkpoint experimental derivado de `meta-llama/Llama-2-7b-chat-hf`, publicado por el usuario Jeesup en Hugging Face. No se trata de un modelo conversacional de propósito general, sino de un artefacto de investigación sobre compresión de modelos mediante SVD y su impacto en el comportamiento de seguridad. El checkpoint aplica una compresión de dominio dual con curvatura K-FAC blanqueada (utilidad y seguridad) y un presupuesto de rango heredado de SVD-LLM, eliminando el 40,00 % de los parámetros densos y quedándose en una fracción de 0,5998 respecto al modelo original.
 
 Tras la compresión, el autor aplica una recuperación de segunda etapa con LoRA secuencial (U y luego V) sobre `alpaca-cleaned`, con r=8, alpha=16, 2 épocas, lr 1e-4, batch 64 y cutoff 256 en bf16. El resultado es una celda concreta dentro de una malla de reglas de selección de componentes y presupuestos de rango, diseñada para medir cómo la compresión SVD degrada la seguridad y qué regla de selección la repara mejor.
 
@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks de los modelos alternativos en la informaci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_dualk_jbb_mix_trace_r40
+- Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_dualk_jbb_mix_trace_r40
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Licencia Llama 2: https://ai.meta.com/llama/license/
 - SVD-LLM (método de compresión y recuperación LoRA): no disponible en la información proporcionada

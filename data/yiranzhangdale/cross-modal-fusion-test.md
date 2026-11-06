@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`cross-modal-fusion-test` es un repositorio publicado en HuggingFace por el usuario `yiranzhangdale` que, segun su propia model card, contiene un conjunto estructurado de notas de investigacion sobre fusion cross-modal. No se trata de un modelo entrenado ni de un checkpoint utilizable para inferencia: el autor lo describe explicitamente como material exploratorio con hipotesis, propuestas de comparacion con baselines y preguntas abiertas, sin resultados experimentales completados ni codigo liberado.
+`cross-modal-fusion-test` es un repositorio publicado en Hugging Face por el usuario `yiranzhangdale` que, segun su propia model card, contiene un conjunto estructurado de notas de investigacion sobre fusion cross-modal. No se trata de un modelo entrenado ni de un checkpoint utilizable para inferencia: el autor lo describe explicitamente como material exploratorio con hipotesis, propuestas de comparacion con baselines y preguntas abiertas, sin resultados experimentales completados ni codigo liberado.
 
 El repositorio lleva las etiquetas `research-notes` y `cross-modal-fusion`, y su contenido principal es un fichero `paper_notes.md` junto con el `README.md`. Aunque el Hub lo clasifica bajo la libreria `safetensors` y reporta un total de 33.088 parametros, el tamano del repositorio es de 0,0 GB y la model card no menciona ninguna arquitectura, dataset de entrenamiento ni proceso de entrenamiento. Todo apunta a un artefacto de prueba o a un placeholder asociado a notas de investigacion, no a un modelo funcional.
 
@@ -75,7 +75,7 @@ No disponible. No se conocen modelos comparables de la misma categoria porque el
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yiranzhangdale/cross-modal-fusion-test
+- Repositorio en Hugging Face: https://huggingface.co/yiranzhangdale/cross-modal-fusion-test
 - Model card (README): incluida en el repositorio anterior
 - Notas principales (`paper_notes.md`): referenciado en la model card, accesible desde el repositorio
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada

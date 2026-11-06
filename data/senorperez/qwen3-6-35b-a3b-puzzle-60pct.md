@@ -79,6 +79,6 @@ No se dispone de datos publicos de otros modelos comparables fuera de la serie d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/senorperez/qwen3.6-35b-a3b-puzzle-60pct
+- Modelo en Hugging Face: https://huggingface.co/senorperez/qwen3.6-35b-a3b-puzzle-60pct
 - Paper de referencia (Puzzle): https://arxiv.org/abs/2411.19146
 - Repositorio del autor (privado): https://github.com/sootaugur/puzzle

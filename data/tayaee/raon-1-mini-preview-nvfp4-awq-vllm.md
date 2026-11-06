@@ -111,8 +111,8 @@ Las cifras de latencia y throughput se midieron en una única NVIDIA GB10 (DGX S
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---:|---:|---|---|---|
-| tayaee/Raon-1-mini-preview-nvfp4-awq-vllm | ~15,95 B | 262.144 | NVFP4 W4A4, 19,25 GB | Apache-2.0 | HuggingFace, 0 descargas, 0 likes |
-| KRAFTON/Raon-1-mini-preview (base) | ~15,95 B | 262.144 (según configuración del fork) | BF16, 53,61 GB | Apache-2.0 | HuggingFace, repo con gating (aprobación automática) |
+| tayaee/Raon-1-mini-preview-nvfp4-awq-vllm | ~15,95 B | 262.144 | NVFP4 W4A4, 19,25 GB | Apache-2.0 | Hugging Face, 0 descargas, 0 likes |
+| KRAFTON/Raon-1-mini-preview (base) | ~15,95 B | 262.144 (según configuración del fork) | BF16, 53,61 GB | Apache-2.0 | Hugging Face, repo con gating (aprobación automática) |
 | Otras variantes cuantizadas de Raon-1-mini | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Modelos MoE híbridos de ~15-16 B de otros fabricantes | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -126,7 +126,7 @@ La información disponible solo permite comparar el checkpoint cuantizado con su
 - Dependencia de `trust_remote_code=True` y de código custom (`raon1_mini`): implica ejecutar código del repositorio y revisar su procedencia antes de desplegar.
 - Requiere GPU Blackwell y `torch` con CUDA 13; no es portable a hardware anterior sin reconvertir los pesos.
 - Idiomas documentados limitados a coreano e inglés; no se declara soporte de castellano, por lo que el rendimiento en español no está garantizado ni evaluado.
-- El repositorio base está sujeto a gating en HuggingFace: la descarga exige autenticación (`hf auth login`) y aceptación de las condiciones del autor original.
+- El repositorio base está sujeto a gating en Hugging Face: la descarga exige autenticación (`hf auth login`) y aceptación de las condiciones del autor original.
 - Riesgo de alucinación y de fuga de razonamiento: el prompt de ejemplo usa `presence_penalty=1.5` y separa el bloque `</think>`, lo que sugiere que el contenido de pensamiento puede filtrarse si no se procesa explícitamente.
 - Adopción nula (0 descargas, 0 likes) y autor sin trayectoria verificable en la información disponible: tratar el checkpoint como experimental, no como artefacto listo para producción.
 - Licencia Apache-2.0 en este repositorio, pero conviene verificar los términos del modelo base KRAFTON antes de un uso comercial.
@@ -134,7 +134,7 @@ La información disponible solo permite comparar el checkpoint cuantizado con su
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tayaee/Raon-1-mini-preview-nvfp4-awq-vllm
+- Modelo en Hugging Face: https://huggingface.co/tayaee/Raon-1-mini-preview-nvfp4-awq-vllm
 - Modelo base: https://huggingface.co/KRAFTON/Raon-1-mini-preview
 - Fork de vLLM de KRAFTON (rama `raon-1-mini-preview`): https://github.com/krafton-ai/vllm/tree/raon-1-mini-preview
 - NVIDIA ModelOpt: https://github.com/NVIDIA/TensorRT-Model-Optimizer

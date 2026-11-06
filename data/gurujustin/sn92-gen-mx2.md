@@ -2,17 +2,17 @@
 
 ## Resumen
 
-`gurujustin/sn92-gen-mx2` es un modelo de fusión (merge) en espacio de pesos publicado por el usuario gurujustin en HuggingFace. No se trata de un entrenamiento desde cero, sino de una combinación de tipo *task arithmetic* de tres entradas públicas del ecosistema REAX SN92 más un fine-tune no publicado del propio autor, todas sobre la misma base común `baselabs/mammoth-1` (revisión `61cec44c281c693992e3d6ebeb44dd3402dfa186`). El resultado es un modelo de 26.085.330.160 parámetros (aproximadamente 26,1 mil millones) en formato safetensors, con un repositorio de 52,2 GB.
+`gurujustin/sn92-gen-mx2` es un modelo de fusión (merge) en espacio de pesos publicado por el usuario gurujustin en Hugging Face. No se trata de un entrenamiento desde cero, sino de una combinación de tipo *task arithmetic* de tres entradas públicas del ecosistema REAX SN92 más un fine-tune no publicado del propio autor, todas sobre la misma base común `baselabs/mammoth-1` (revisión `61cec44c281c693992e3d6ebeb44dd3402dfa186`). El resultado es un modelo de 26.085.330.160 parámetros (aproximadamente 26,1 mil millones) en formato safetensors, con un repositorio de 52,2 GB.
 
 La relevancia de esta ficha es doble. Por un lado, documenta una técnica de merging reproducible y transparente: el autor detalla la receta exacta (media ponderada de deltas respecto a la base, con un factor de reescalado global de 0,3565 aplicado al fine-tune propio) y conserva las líneas de copyright y los avisos de todos los padres. Por otro, el modelo se etiqueta como `decision-model`, lo que sugiere un uso orientado a tareas de decisión o clasificación estructurada, aunque la model card no especifica el pipeline ni los idiomas soportados.
 
-La información disponible es limitada: no hay datos de benchmarks, no se declaran idiomas y no se describe la arquitectura interna más allá de la etiqueta `qwen3_5` en los tags de HuggingFace. Esta ficha recoge lo que puede verificarse y marca explícitamente como "no disponible" todo lo que la documentación del autor no cubre.
+La información disponible es limitada: no hay datos de benchmarks, no se declaran idiomas y no se describe la arquitectura interna más allá de la etiqueta `qwen3_5` en los tags de Hugging Face. Esta ficha recoge lo que puede verificarse y marca explícitamente como "no disponible" todo lo que la documentación del autor no cubre.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible (tag de HuggingFace: `qwen3_5`; base declarada: `baselabs/mammoth-1`) |
+| Arquitectura | No disponible (tag de Hugging Face: `qwen3_5`; base declarada: `baselabs/mammoth-1`) |
 | Parametros totales | 26.085.330.160 (26,1 B) |
 | Parametros activos | No disponible (no se declara que sea MoE) |
 | Longitud de contexto | No disponible |
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Naturaleza | Disponibilidad |
 |---|---|---|---|---|---|
-| `gurujustin/sn92-gen-mx2` | 26,1 B | No disponible | MIT | Merge de 4 entradas sobre mammoth-1 | HuggingFace, safetensors |
-| `isomsom/sn92-gen-m87b` | No disponible | No disponible | No disponible | Entrada pública REAX SN92 (padre) | HuggingFace |
-| `xflud/sn92-decider-1` | No disponible | No disponible | No disponible | Entrada pública REAX SN92 (padre) | HuggingFace |
-| `gurujustin/sn92-gen-m1b` | No disponible | No disponible | No disponible | Entrada pública REAX SN92 (padre) | HuggingFace |
+| `gurujustin/sn92-gen-mx2` | 26,1 B | No disponible | MIT | Merge de 4 entradas sobre mammoth-1 | Hugging Face, safetensors |
+| `isomsom/sn92-gen-m87b` | No disponible | No disponible | No disponible | Entrada pública REAX SN92 (padre) | Hugging Face |
+| `xflud/sn92-decider-1` | No disponible | No disponible | No disponible | Entrada pública REAX SN92 (padre) | Hugging Face |
+| `gurujustin/sn92-gen-m1b` | No disponible | No disponible | No disponible | Entrada pública REAX SN92 (padre) | Hugging Face |
 
 No se dispone de datos de benchmarks ni de especificaciones completas de los padres en la información proporcionada, por lo que la comparación se limita a linaje y licencia.
 
@@ -83,7 +83,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas de los pad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gurujustin/sn92-gen-mx2
+- Modelo en Hugging Face: https://huggingface.co/gurujustin/sn92-gen-mx2
 - Padre `isomsom/sn92-gen-m87b`: https://huggingface.co/isomsom/sn92-gen-m87b
 - Padre `xflud/sn92-decider-1`: https://huggingface.co/xflud/sn92-decider-1
 - Padre `gurujustin/sn92-gen-m1b`: https://huggingface.co/gurujustin/sn92-gen-m1b

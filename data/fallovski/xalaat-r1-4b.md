@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Xalaat-R1-4B es un modelo de lenguaje adaptado al wolof, desarrollado por Fallovski a partir del modelo base McGill-NLP/AfriqueQwen3.5-4B-50Langs, que a su vez es una variante de Qwen3.5 ajustada para 50 lenguas africanas. El modelo se construye mediante un adaptador LoRA (rsLoRA) que se superpone al base, lo que permite especializar las capacidades del modelo hacia el wolof sin necesidad de reentrenar todos los pesos. Con 4.205 millones de parámetros totales, es un modelo compacto pensado para ejecución en entornos con recursos limitados, aunque el acceso es restringido y requiere aceptar condiciones en HuggingFace.
+Xalaat-R1-4B es un modelo de lenguaje adaptado al wolof, desarrollado por Fallovski a partir del modelo base McGill-NLP/AfriqueQwen3.5-4B-50Langs, que a su vez es una variante de Qwen3.5 ajustada para 50 lenguas africanas. El modelo se construye mediante un adaptador LoRA (rsLoRA) que se superpone al base, lo que permite especializar las capacidades del modelo hacia el wolof sin necesidad de reentrenar todos los pesos. Con 4.205 millones de parámetros totales, es un modelo compacto pensado para ejecución en entornos con recursos limitados, aunque el acceso es restringido y requiere aceptar condiciones en Hugging Face.
 
 La relevancia de Xalaat-R1-4B reside en la escasez de modelos de lenguaje de calidad para lenguas de África occidental como el wolof, hablado por más de 10 millones de personas. Al partir de una base multilingüe de 50 lenguas, el modelo conserva capacidades generales de razonamiento y generación de texto, pero se orienta específicamente a tareas en wolof. No se han publicado detalles sobre el contexto máximo, cuantizaciones disponibles ni benchmarks, por lo que parte de la información técnica no está disponible públicamente.
 
-El modelo está alojado en HuggingFace con el identificador `Fallovski/Xalaat-R1-4B`, en formato `safetensors` y pipeline de `text-generation`. Su licencia se indica como "other", lo que implica restricciones que deben consultarse antes de su uso comercial. El repositorio tiene un tamaño de 25.9 GB, lo que sugiere que los pesos están almacenados en precisión completa (FP16 o similar).
+El modelo está alojado en Hugging Face con el identificador `Fallovski/Xalaat-R1-4B`, en formato `safetensors` y pipeline de `text-generation`. Su licencia se indica como "other", lo que implica restricciones que deben consultarse antes de su uso comercial. El repositorio tiene un tamaño de 25.9 GB, lo que sugiere que los pesos están almacenados en precisión completa (FP16 o similar).
 
 ## Especificaciones técnicas
 
@@ -59,7 +59,7 @@ No hay información disponible sobre modelos comparables específicamente para w
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo es gated en HuggingFace, lo que significa que no se puede descargar sin aceptar las condiciones del autor. Esto puede impedir su uso en proyectos comerciales si las condiciones no lo permiten.
+- Acceso restringido: el modelo es gated en Hugging Face, lo que significa que no se puede descargar sin aceptar las condiciones del autor. Esto puede impedir su uso en proyectos comerciales si las condiciones no lo permiten.
 - Licencia `other`: no es una licencia estándar (Apache 2.0, MIT, etc.). Es imprescindible leer el texto completo de la licencia antes de cualquier uso, especialmente comercial.
 - Sesgos y alucinaciones: como todo modelo de lenguaje, puede generar contenido incorrecto o inventado, especialmente en dominios no cubiertos por los datos de entrenamiento. No se ha evaluado su comportamiento en wolof en entornos de producción.
 - Limitación de idioma: aunque el base es multilingüe, el adaptador está específicamente entrenado para wolof. Es probable que su rendimiento en otras lenguas africanas sea inferior al del base.
@@ -69,7 +69,7 @@ No hay información disponible sobre modelos comparables específicamente para w
 
 ## Enlaces
 
-- Modelo en HuggingFace: [Fallovski/Xalaat-R1-4B](https://huggingface.co/Fallovski/Xalaat-R1-4B)
+- Modelo en Hugging Face: [Fallovski/Xalaat-R1-4B](https://huggingface.co/Fallovski/Xalaat-R1-4B)
 - Modelo base: [McGill-NLP/AfriqueQwen3.5-4B-50Langs](https://huggingface.co/McGill-NLP/AfriqueQwen3.5-4B-50Langs)
 
 No se encontraron otros enlaces relevantes (papers, blogs o demos) en la búsqueda web realizada.

@@ -64,7 +64,7 @@ No se dispone de datos de rendimiento para comparar. A nivel de parámetros y co
 
 ## Enlaces
 
-- [HuggingFace - ram-lexsi/aligntune-testrun-RAFT](https://huggingface.co/ram-lexsi/aligntune-testrun-RAFT)
+- [Hugging Face - ram-lexsi/aligntune-testrun-RAFT](https://huggingface.co/ram-lexsi/aligntune-testrun-RAFT)
 - [AlignTune - Home](https://aligntune.lexsi.ai/)
 - [GitHub - Lexsi-Labs/aligntune](https://github.com/Lexsi-Labs/aligntune)
 - [AlignTune - Tools | Lexsi Labs](https://lexsi.ai/tools/aligntune)

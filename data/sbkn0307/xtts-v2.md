@@ -85,7 +85,7 @@ La comparativa con alternativas de la misma categoria (por ejemplo, otros sistem
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/Sbkn0307/XTTS-v2
+- Repositorio de Hugging Face: https://huggingface.co/Sbkn0307/XTTS-v2
 - Licencia Coqui Public Model License: https://coqui.ai/cpml
 - Historia de la CPML: https://coqui.ai/blog/tts/cpml
 - Repositorio de codigo Coqui TTS: https://github.com/coqui-ai/TTS
@@ -95,7 +95,7 @@ La comparativa con alternativas de la misma categoria (por ejemplo, otros sistem
 - Discord de Coqui: https://discord.gg/5eXr5seRrv
 - Discord alternativo (comunidad): https://discord.gg/fBC58unbKE
 - Twitter de Coqui: https://twitter.com/coqui_ai
-- Demo de XTTS en HuggingFace Spaces: https://huggingface.co/spaces/coqui/xtts
+- Demo de XTTS en Hugging Face Spaces: https://huggingface.co/spaces/coqui/xtts
 - Demo de voice chat con Mistral o Zephyr: https://huggingface.co/spaces/coqui/voice-chat-with-mistral
 - API de Coqui: https://docs.coqui.ai/docs
 

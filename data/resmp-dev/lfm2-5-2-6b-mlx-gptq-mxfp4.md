@@ -73,7 +73,7 @@ Es relevante ahora porque documenta con recibos de integridad (hashes de tokens 
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | MXFP4 (valores E2M1, escalas E8M0, una escala por cada 32 pesos) en 166 capas lineales; embedding y cabeza de salida atados conservados en BF16; sin sesgos empaquetados |
 | Idiomas soportados | Ingles (`en`) |
-| Licencia | `lfm1.0` (identificador `other` en HuggingFace), heredada del modelo base |
+| Licencia | `lfm1.0` (identificador `other` en Hugging Face), heredada del modelo base |
 | Formato de pesos | Safetensors con tensores block-scaled nativos de MLX; 1,8 GB de repositorio |
 
 ## Arquitectura y entrenamiento
@@ -159,7 +159,7 @@ No se dispone en la información proporcionada de datos verificables de otros mo
 
 ## Enlaces
 
-- HuggingFace (checkpoint cuantizado): https://huggingface.co/RESMP-DEV/LFM2.5-2.6B-MLX-GPTQ-MXFP4
+- Hugging Face (checkpoint cuantizado): https://huggingface.co/RESMP-DEV/LFM2.5-2.6B-MLX-GPTQ-MXFP4
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-2.6B
 - Texto de la licencia LFM1.0: https://huggingface.co/LiquidAI/LFM2.5-2.6B/blob/main/LICENSE
 - Recibo de calibración (`GPTQ_RECEIPT.md`, dentro del repositorio del checkpoint): https://huggingface.co/RESMP-DEV/LFM2.5-2.6B-MLX-GPTQ-MXFP4/blob/main/GPTQ_RECEIPT.md

@@ -86,10 +86,10 @@ No se han publicado resultados de MMLU, HumanEval, MT-Bench ni de otras evaluaci
 
 | Modelo | Parametros | Formato / tamano | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DuoNeural Qwen2.5-7B-Instruct-CodeInfused IQ3_XXS | 7,6 B | GGUF, 2,90 GiB | 32.768 en ejemplos; 131.072 en el modelo base | apache-2.0 | HuggingFace, 0 descargas, 0 likes |
-| Qwen2.5-7B-Instruct (base) | 7,6 B | safetensors BF16, 14,19 GiB | 32.768 nativos, hasta 131.072 con RoPE scaling | apache-2.0 | HuggingFace, Ollama (`qwen2.5:7b-instruct`) |
-| DuoNeural Qwen2.5-Coder-7B-Instruct-GGUF | 7,6 B | GGUF (tamano no indicado) | no disponible | no disponible en la informacion proporcionada | HuggingFace |
-| Qwen2.5-Coder-7B-Instruct-GGUF | 7,6 B | GGUF (tamano no indicado) | no disponible | no disponible en la informacion proporcionada | ModelScope, HuggingFace |
+| DuoNeural Qwen2.5-7B-Instruct-CodeInfused IQ3_XXS | 7,6 B | GGUF, 2,90 GiB | 32.768 en ejemplos; 131.072 en el modelo base | apache-2.0 | Hugging Face, 0 descargas, 0 likes |
+| Qwen2.5-7B-Instruct (base) | 7,6 B | safetensors BF16, 14,19 GiB | 32.768 nativos, hasta 131.072 con RoPE scaling | apache-2.0 | Hugging Face, Ollama (`qwen2.5:7b-instruct`) |
+| DuoNeural Qwen2.5-Coder-7B-Instruct-GGUF | 7,6 B | GGUF (tamano no indicado) | no disponible | no disponible en la informacion proporcionada | Hugging Face |
+| Qwen2.5-Coder-7B-Instruct-GGUF | 7,6 B | GGUF (tamano no indicado) | no disponible | no disponible en la informacion proporcionada | ModelScope, Hugging Face |
 
 No se dispone de comparativas directas contra otras cuantizaciones sub-3 bits verificadas de forma independiente, ni de resultados de benchmarks comparables entre estas variantes en la informacion proporcionada.
 
@@ -110,9 +110,9 @@ No se dispone de comparativas directas contra otras cuantizaciones sub-3 bits ve
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DuoNeural/Qwen2.5-7B-Instruct-CodeInfused-IQ3_XXS-GGUF
+- Modelo en Hugging Face: https://huggingface.co/DuoNeural/Qwen2.5-7B-Instruct-CodeInfused-IQ3_XXS-GGUF
 - Modelo base Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
-- Perfil del autor en HuggingFace: https://huggingface.co/DuoNeural
+- Perfil del autor en Hugging Face: https://huggingface.co/DuoNeural
 - DuoNeural/Qwen2.5-Coder-7B-Instruct-GGUF: https://huggingface.co/DuoNeural/Qwen2.5-Coder-7B-Instruct-GGUF
 - Qwen2.5-Coder-7B-Instruct-GGUF en ModelScope: https://www.modelscope.cn/models/Qwen/Qwen2.5-Coder-7B-Instruct-GGUF/summary
 - Qwen2.5 7B Instruct en Ollama: https://ollama.com/library/qwen2.5:7b-instruct

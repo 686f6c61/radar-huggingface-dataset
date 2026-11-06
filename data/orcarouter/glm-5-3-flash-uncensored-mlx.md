@@ -57,10 +57,10 @@ No se han publicado resultados de benchmarks específicos para esta versión MLX
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| GLM-5.3-Flash (base) | 320B total / 18B activo | no disponible | MIT | HuggingFace (gated) |
-| OrcaRouter GLM-5.3-Flash-Uncensored-MLX | 58B (según safetensors) | no disponible | MIT | HuggingFace (gated) |
-| Llama 3.1 405B | 405B denso | 128K | Llama 3.1 Community | HuggingFace |
-| Mixtral 8x22B | 141B total / 39B activo | 64K | Apache 2.0 | HuggingFace |
+| GLM-5.3-Flash (base) | 320B total / 18B activo | no disponible | MIT | Hugging Face (gated) |
+| OrcaRouter GLM-5.3-Flash-Uncensored-MLX | 58B (según safetensors) | no disponible | MIT | Hugging Face (gated) |
+| Llama 3.1 405B | 405B denso | 128K | Llama 3.1 Community | Hugging Face |
+| Mixtral 8x22B | 141B total / 39B activo | 64K | Apache 2.0 | Hugging Face |
 
 La comparativa es orientativa; no se dispone de datos de rendimiento directos para la versión MLX. El modelo base destaca por su licencia MIT y su arquitectura MoE eficiente, mientras que la variante uncensored añade la eliminación de rechazos.
 
@@ -70,15 +70,15 @@ La comparativa es orientativa; no se dispone de datos de rendimiento directos pa
 - Puede presentar sesgos heredados del entrenamiento original, especialmente en idiomas distintos de inglés y chino.
 - Riesgo de alucinación: como todo modelo generativo, puede inventar información, especialmente en dominios especializados.
 - La longitud de contexto no está documentada en la información disponible; se desconoce si mantiene la ventana del modelo base.
-- El acceso al repositorio es restringido (gated) y requiere aceptar condiciones en HuggingFace, a pesar de la licencia MIT.
+- El acceso al repositorio es restringido (gated) y requiere aceptar condiciones en Hugging Face, a pesar de la licencia MIT.
 - La cuantización 4-bit puede degradar ligeramente la calidad de salida en comparación con el modelo FP8 original.
 - No se garantiza soporte para producción; es un conjunto de pesos de investigación.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/orcarouter/GLM-5.3-Flash-Uncensored-MLX
+- Repositorio Hugging Face: https://huggingface.co/orcarouter/GLM-5.3-Flash-Uncensored-MLX
 - Blog de ExplainX sobre el lanzamiento: https://www.explainx.ai/blog/orcarouter-glm-5-3-flash-uncensored-block-fp8-august-2026
 - Página de API de OrcaRouter para GLM 5.3 Flash: https://www.orcarouter.ai/models/z-ai/glm-5.3-flash
 - Publicación en LinkedIn: https://www.linkedin.com/posts/orcarouter_glm-53-flash-uncensored-native-fp8-activity-7499733012641742848-kb30
 - Publicación en X: https://x.com/OrcaRouter/status/2093612518396871075
-- Modelo base en HuggingFace: https://huggingface.co/zai-org/GLM-5.3-Flash
+- Modelo base en Hugging Face: https://huggingface.co/zai-org/GLM-5.3-Flash

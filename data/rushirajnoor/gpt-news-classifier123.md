@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`RushiRajnoor/gpt-news-classifier123` es un repositorio publicado en HuggingFace Hub por el usuario RushiRajnoor, etiquetado con la librería `transformers`. La model card es la plantilla autogenerada por el Hub: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros y evaluación) aparecen literalmente como `[More Information Needed]`. No se ha publicado ningún peso, configuración ni documentación técnica verificable.
+`RushiRajnoor/gpt-news-classifier123` es un repositorio publicado en Hugging Face Hub por el usuario RushiRajnoor, etiquetado con la librería `transformers`. La model card es la plantilla autogenerada por el Hub: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros y evaluación) aparecen literalmente como `[More Information Needed]`. No se ha publicado ningún peso, configuración ni documentación técnica verificable.
 
 El único contenido técnico real del repositorio son sus etiquetas: `transformers`, `arxiv:1910.09700`, `endpoints_compatible` y `region:us`. El identificador arXiv 1910.09700 corresponde a Lacoste et al. (2019), el artículo de la calculadora de impacto medioambiental citado en la propia plantilla de model card, por lo que no describe la arquitectura ni el entrenamiento de este modelo. El nombre sugiere un clasificador de noticias, pero no hay ninguna confirmación en la documentación.
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada para inferencia: no disponible. No es posible calcularla sin conocer el número de parámetros, la precisión de los pesos y la longitud de contexto.
 - GPU recomendadas: no disponible.
 - Viabilidad en GPU de consumo: no disponible. Depende enteramente del tamaño del modelo, que no se declara.
-- Opciones de despliegue: la etiqueta `endpoints_compatible` sugiere compatibilidad declarativa con los Inference Endpoints de HuggingFace. El uso de vLLM, llama.cpp, Ollama o TGI solo sería posible si existiesen pesos en formatos compatibles (safetensors, GGUF), algo que no se especifica.
+- Opciones de despliegue: la etiqueta `endpoints_compatible` sugiere compatibilidad declarativa con los Inference Endpoints de Hugging Face. El uso de vLLM, llama.cpp, Ollama o TGI solo sería posible si existiesen pesos en formatos compatibles (safetensors, GGUF), algo que no se especifica.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -98,7 +98,7 @@ No es posible establecer una comparativa rigurosa, ya que se desconocen el tama�
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/RushiRajnoor/gpt-news-classifier123
+- Repositorio en Hugging Face: https://huggingface.co/RushiRajnoor/gpt-news-classifier123
 - Artículo citado en la plantilla (Lacoste et al., 2019, cálculo de emisiones): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental de ML: https://mlco2.github.io/impact
 - Documentación de la librería transformers: https://huggingface.co/docs/transformers

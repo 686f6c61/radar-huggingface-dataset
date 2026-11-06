@@ -70,8 +70,8 @@ No se han publicado en la informacion disponible resultados de benchmarks de cap
 
 | Modelo | Parametros | Contexto | Licencia | Estado de seguridad | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (`svd-safety-l31_remove50_swapgapiter_b010_r01`) | 8,03 B en safetensors; fraccion densa 0,4997 | 128.000 tokens (heredado) | Llama 3.1 Community | AdvBench ASR 0,5250; StrongREJECT ASR 0,4350; sobre-rechazo 0,1914 | Publico en HuggingFace, safetensors |
-| `meta-llama/Llama-3.1-8B-Instruct` (base sin comprimir) | 8,03 B | 128.000 tokens | Llama 3.1 Community | No disponible en la informacion proporcionada | Publico en HuggingFace |
+| Este checkpoint (`svd-safety-l31_remove50_swapgapiter_b010_r01`) | 8,03 B en safetensors; fraccion densa 0,4997 | 128.000 tokens (heredado) | Llama 3.1 Community | AdvBench ASR 0,5250; StrongREJECT ASR 0,4350; sobre-rechazo 0,1914 | Publico en Hugging Face, safetensors |
+| `meta-llama/Llama-3.1-8B-Instruct` (base sin comprimir) | 8,03 B | 128.000 tokens | Llama 3.1 Community | No disponible en la informacion proporcionada | Publico en Hugging Face |
 | Otras celdas de la rejilla del mismo autor | No disponible | No disponible | Llama 3.1 Community | No disponible | No localizadas en la busqueda realizada |
 
 No se dispone de datos de benchmarks de capacidad general ni de otros modelos comparables de la misma categoria (compresiones SVD alternativas, destilaciones de 8B o variantes de Llama 3.1 8B) en la informacion proporcionada.
@@ -89,7 +89,7 @@ No se dispone de datos de benchmarks de capacidad general ni de otros modelos co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l31_remove50_swapgapiter_b010_r01
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l31_remove50_swapgapiter_b010_r01
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Licencia Llama 3.1 Community y politica de uso: incluidas como `LICENSE` y `USE_POLICY.md` en el repositorio del modelo.
 - Paper de la tecnica de compresion SVD-LLM, repositorio del autor y demos: no disponible en la informacion proporcionada.

@@ -82,7 +82,7 @@ No se dispone de datos verificados de benchmarks ni de contexto para otros model
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nile-academy/qwen3.5-4b-gguf (este modelo) | 4.326.350.848 | no disponible | GGUF Q4_K_M | Apache-2.0 | Repositorio de HuggingFace, 0 descargas y 0 likes en el momento del analisis |
+| nile-academy/qwen3.5-4b-gguf (este modelo) | 4.326.350.848 | no disponible | GGUF Q4_K_M | Apache-2.0 | Repositorio de Hugging Face, 0 descargas y 0 likes en el momento del analisis |
 | Qwen/Qwen3.5-4B (padre) | 4.326.350.848 | no disponible | safetensors | Apache-2.0 | Repositorio oficial de Qwen; revision fijada 851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a |
 | Otras conversiones GGUF del mismo padre o de modelos de ~4B de la competencia | no disponible | no disponible | GGUF | no disponible | no disponible en la informacion proporcionada |
 
@@ -106,7 +106,7 @@ Nota: la busqueda web realizada no devolvio resultados tecnicos relevantes sobre
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nile-academy/qwen3.5-4b-gguf
+- Modelo en Hugging Face: https://huggingface.co/nile-academy/qwen3.5-4b-gguf
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Revision fijada del modelo base: https://huggingface.co/Qwen/Qwen3.5-4B/tree/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a
 - Repositorio de llama.cpp empleado en la conversion (revision c173a53bdfca1047c710018dc934a6d67a8b010f): https://github.com/ggml-org/llama.cpp/commit/c173a53bdfca1047c710018dc934a6d67a8b010f

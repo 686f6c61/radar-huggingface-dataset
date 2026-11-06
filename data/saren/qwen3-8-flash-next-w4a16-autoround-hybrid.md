@@ -77,7 +77,7 @@ La comparativa se limita a las variantes del mismo modelo base, ya que no se dis
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/Saren/Qwen3.8-Flash-Next-W4A16-AutoRound-hybrid
+- Repositorio Hugging Face del modelo: https://huggingface.co/Saren/Qwen3.8-Flash-Next-W4A16-AutoRound-hybrid
 - Repositorio GitHub del servidor DGX: https://github.com/Saren-Arterius/qwen3.8-Flash-DGX-AutoRound
 - Modelo base de Intel: https://huggingface.co/Intel/Qwen3.8-Flash-Next-W4A16-RTN-AutoRound
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen3.8-Flash-Next

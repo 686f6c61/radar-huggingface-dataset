@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ManifoldGL es un checkpoint de pesos completos de la familia Qwen2 publicado por el usuario jesusvilela en HuggingFace. No se trata de un adaptador PEFT ni de un modelo con arquitectura propia: los safetensors contienen 339 tensores estándar de Qwen2 en float16, con una configuración `Qwen2ForCausalLM` de anchura oculta 3584, 28 capas y vocabulario de 152064 tokens, lo que corresponde a un modelo de aproximadamente 7.600 millones de parámetros. El repositorio se etiqueta como `research` e `historical-checkpoint`.
+ManifoldGL es un checkpoint de pesos completos de la familia Qwen2 publicado por el usuario jesusvilela en Hugging Face. No se trata de un adaptador PEFT ni de un modelo con arquitectura propia: los safetensors contienen 339 tensores estándar de Qwen2 en float16, con una configuración `Qwen2ForCausalLM` de anchura oculta 3584, 28 capas y vocabulario de 152064 tokens, lo que corresponde a un modelo de aproximadamente 7.600 millones de parámetros. El repositorio se etiqueta como `research` e `historical-checkpoint`.
 
 El interés del repositorio no reside en sus capacidades, sino en su historia y en la corrección publicada el 2 de noviembre de 2026. La model card original presentaba el proyecto como una propuesta geométrica (métricas aprendidas, hiperbolicidad, integradores de Poincaré) con mejoras de rendimiento en ARC-AGI. La revisión posterior retira explícitamente esas afirmaciones: los resultados de 28,7 % frente a 12,4 %, la mejora del +131,5 %, el 94,2 % de "MFR", la curvatura de -0,98 y los ablations se declaran no soportados y se retiran. No hay evidencia verificada de ganancia de rendimiento para este checkpoint concreto.
 
@@ -83,7 +83,7 @@ La comparación relevante es que ManifoldGL no aporta, según su propia revisió
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jesusvilela/manifoldgl
+- Hugging Face: https://huggingface.co/jesusvilela/manifoldgl
 - Aviso de corrección: https://github.com/jesusvilela/IGBundle-LLM/blob/main/docs/correction-notice.md
 - Evidence ledger: https://github.com/jesusvilela/IGBundle-LLM/blob/main/docs/research_to_code_evidence_ledger.md
 - Repositorio fuente: https://github.com/jesusvilela/IGBundle-LLM

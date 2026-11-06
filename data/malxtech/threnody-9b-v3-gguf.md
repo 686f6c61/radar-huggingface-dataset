@@ -99,6 +99,6 @@ No se dispone de datos suficientes para comparar con alternativas de otros desar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MalxTech/Threnody-9B-V3-GGUF
+- Hugging Face: https://huggingface.co/MalxTech/Threnody-9B-V3-GGUF
 - Código fuente: https://github.com/YoMosa2009/Threnody-V3
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B

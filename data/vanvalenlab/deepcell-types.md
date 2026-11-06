@@ -1,9 +1,9 @@
 # vanvalenlab/deepcell-types
 
 ## Resumen
-DeepCell Types es un modelo de aprendizaje profundo publicado en HuggingFace por el laboratorio vanvalenlab (Van Valen Lab, Caltech) dentro del ecosistema DeepCell, orientado al análisis cuantitativo de imágenes de microscopía unicelular. A diferencia de un modelo de lenguaje, su cometido es la clasificación (y en el marco DeepCell, también segmentación) de células individuales en imágenes biomédicas, una tarea central en biología celular, citometría de imagen y análisis de tejidos.
+DeepCell Types es un modelo de aprendizaje profundo publicado en Hugging Face por el laboratorio vanvalenlab (Van Valen Lab, Caltech) dentro del ecosistema DeepCell, orientado al análisis cuantitativo de imágenes de microscopía unicelular. A diferencia de un modelo de lenguaje, su cometido es la clasificación (y en el marco DeepCell, también segmentación) de células individuales en imágenes biomédicas, una tarea central en biología celular, citometría de imagen y análisis de tejidos.
 
-El repositorio presenta un acceso restringido (gated) que obliga a aceptar condiciones en HuggingFace antes de descargar los pesos, y una licencia singular, "modified-apache-2.0-noncommercial", que combina un esquema tipo Apache 2.0 con una restricción de uso no comercial. Es relevante para equipos de investigación que necesitan modelos preentrenados de análisis celular sin construir sus propios pipelines de entrenamiento desde cero.
+El repositorio presenta un acceso restringido (gated) que obliga a aceptar condiciones en Hugging Face antes de descargar los pesos, y una licencia singular, "modified-apache-2.0-noncommercial", que combina un esquema tipo Apache 2.0 con una restricción de uso no comercial. Es relevante para equipos de investigación que necesitan modelos preentrenados de análisis celular sin construir sus propios pipelines de entrenamiento desde cero.
 
 La información pública disponible sobre esta ficha concreta es muy limitada: en el momento de los datos proporcionados el repositorio mostraba 0 descargas, 0 "likes" y un tamaño reportado de 0.0 GB (coherente con un repositorio de acceso restringido cuyo contenido no es inspeccionable sin autorización). Por ese motivo, buena parte de las especificaciones técnicas quedan marcadas como "no disponible" y no deben asumirse.
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 ## Comparativa con modelos similares
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vanvalenlab/deepcell-types | no disponible | no aplica | no disponible | modified-apache-2.0-noncommercial | HuggingFace (gated) |
+| vanvalenlab/deepcell-types | no disponible | no aplica | no disponible | modified-apache-2.0-noncommercial | Hugging Face (gated) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion suficiente para establecer una comparativa fiable con otros modelos de clasificacion celular.
@@ -64,11 +64,11 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 - Riesgo de alucinacion: no aplica en el sentido de un modelo de lenguaje, pero existe riesgo de clasificaciones erroneas en imagenes fuera de la distribucion de entrenamiento.
 - Limitaciones de contexto o idioma: no aplica; el modelo no procesa texto.
 - Restricciones de licencia: la licencia "modified-apache-2.0-noncommercial" incorpora una clausula de uso no comercial. Debe revisarse el texto completo de la licencia antes de cualquier uso en productos o servicios comerciales.
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace, lo que condiciona su descarga y redistribucion.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face, lo que condiciona su descarga y redistribucion.
 - Caveat de produccion: al no haber datos publicos de rendimiento, benchmarks ni tamanos de parametros, no se recomienda su uso en produccion sin una validacion previa exhaustiva.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/vanvalenlab/deepcell-types
+- Hugging Face: https://huggingface.co/vanvalenlab/deepcell-types
 - Proyecto DeepCell (homepage): https://deepcell.org
 - Repositorio DeepCell en GitHub: https://github.com/vanvalenlab/deepcell-tf
 - Publicacion de DeepCell en Nature Biotechnology (2019): https://www.nature.com/articles/s41587-019-0108-0

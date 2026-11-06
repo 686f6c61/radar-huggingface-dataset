@@ -71,8 +71,8 @@ El módulo de ejecución mejora la puntuación de cálculo pero no la de planifi
 
 | Modelo | Parámetros | Contexto | Capacidad cuántica | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| QwenQPU | 9,36 B (pesos lingüísticos) | no disponible | Simulación 1–16 qubits, H/X/T/CNOT | component-specific-terms | HuggingFace, repo propio |
-| Qwen3.5-4B-Qwenputer (base) | no disponible en la información | no disponible | No | no disponible | HuggingFace |
+| QwenQPU | 9,36 B (pesos lingüísticos) | no disponible | Simulación 1–16 qubits, H/X/T/CNOT | component-specific-terms | Hugging Face, repo propio |
+| Qwen3.5-4B-Qwenputer (base) | no disponible en la información | no disponible | No | no disponible | Hugging Face |
 | Qiskit (simulador de referencia) | N/A | N/A | Simulación de vector de estado, muchas más puertas y qubits | Apache-2.0 | PyPI, open source |
 
 La comparación directa con otros LLM con módulo cuántico embebido no está disponible en la información proporcionada. Frente a Qiskit, QwenQPU añade la capa de lenguaje natural pero limita el alcance a 16 qubits, 1.000 puertas y cuatro tipos de puerta.
@@ -93,7 +93,7 @@ La comparación directa con otros LLM con módulo cuántico embebido no está di
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/xi-zhao/QwenQPU
+- Hugging Face: https://huggingface.co/xi-zhao/QwenQPU
 - Modelo base: https://huggingface.co/divagr1925/Qwen3.5-4B-Qwenputer
 - Código y demo: https://github.com/xi-zhao/QwenQPU
 - Arquitectura: https://github.com/xi-zhao/QwenQPU/blob/main/docs/ARCHITECTURE.md

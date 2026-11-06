@@ -2,7 +2,7 @@
 
 ## Resumen
 
-versionE es un adaptador LoRA de texto a imagen publicado por el usuario Rand000mGuy en HuggingFace. Se distribuye en formato diffusers y está construido sobre el modelo base `krea/Krea-2-Raw`, un modelo de difusión de la familia Krea. El repositorio ocupa aproximadamente 0,1 GB, lo que es coherente con un adaptador LoRA de bajo rango y no con un modelo completo.
+versionE es un adaptador LoRA de texto a imagen publicado por el usuario Rand000mGuy en Hugging Face. Se distribuye en formato diffusers y está construido sobre el modelo base `krea/Krea-2-Raw`, un modelo de difusión de la familia Krea. El repositorio ocupa aproximadamente 0,1 GB, lo que es coherente con un adaptador LoRA de bajo rango y no con un modelo completo.
 
 La model card es mínima: no incluye descripción del propósito del adaptador, no define un `instance_prompt` (aparece como `null`), no documenta el dataset de entrenamiento ni el estilo o concepto que pretende capturar. El único ejemplo de uso es un widget con el texto "Screenshot", lo que sugiere, sin confirmación por parte del autor, que el adaptador podría estar orientado a la generación de capturas de pantalla o interfaces, pero esto no puede verificarse con la información disponible.
 
@@ -74,6 +74,6 @@ No disponible. La información proporcionada no incluye otros adaptadores LoRA c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rand000mGuy/versionE
+- Modelo en Hugging Face: https://huggingface.co/Rand000mGuy/versionE
 - Modelo base: https://huggingface.co/krea/Krea-2-Raw
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

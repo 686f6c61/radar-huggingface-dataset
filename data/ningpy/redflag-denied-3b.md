@@ -98,7 +98,7 @@ Nota: los datos de contexto y licencia de los modelos comparativos provienen de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ningpy/redflag-denied-3b
+- Modelo en Hugging Face: https://huggingface.co/ningpy/redflag-denied-3b
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Repositorio del pipeline completo (motor de reglas V20, post-procesado y código de inferencia): https://git.evyd.tech/ai/redflag-detection-2.0
 - Módulos hermanos citados en la model card (espacio de nombres `peiyan-ning`): `redflag-symptom-3b`, `redflag-context-3b`, `redflag-modifier-3b`, `redflag-gate-3b`

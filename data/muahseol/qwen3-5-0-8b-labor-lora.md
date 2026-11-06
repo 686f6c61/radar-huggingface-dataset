@@ -83,7 +83,7 @@ No se dispone de información sobre modelos comparables específicos de asesoram
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/muahseol/qwen3.5-0.8b-labor-lora
+- Hugging Face: https://huggingface.co/muahseol/qwen3.5-0.8b-labor-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Dataset de entrenamiento: https://huggingface.co/datasets/muahseol/labor-counsel-qa
 - Repositorio PEFT: https://github.com/huggingface/peft

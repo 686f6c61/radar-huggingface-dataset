@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MicroTTS 181K es un sistema completo de texto a voz (TTS) en inglés publicado por VantoraLabs en HuggingFace, con tan solo 181.189 parámetros repartidos en tres redes convolucionales diminutas (duration, acoustic y decoder) más un front-end de grafema a fonema (G2P) basado en diccionario. El modelo genera audio mono a 24 kHz y está diseñado para ejecutarse en CPU en tiempo real, sin GPU y sin dependencias pesadas: el G2P funciona solo con NumPy y no requiere espeak, torch ni acceso a red.
+MicroTTS 181K es un sistema completo de texto a voz (TTS) en inglés publicado por VantoraLabs en Hugging Face, con tan solo 181.189 parámetros repartidos en tres redes convolucionales diminutas (duration, acoustic y decoder) más un front-end de grafema a fonema (G2P) basado en diccionario. El modelo genera audio mono a 24 kHz y está diseñado para ejecutarse en CPU en tiempo real, sin GPU y sin dependencias pesadas: el G2P funciona solo con NumPy y no requiere espeak, torch ni acceso a red.
 
 La relevancia del modelo está en su relación tamaño/prestaciones: con menos de 0,2 millones de parámetros logra un WER de 0,007 sobre un conjunto de evaluación con plantillas (119 de 128 frases exactas) y una velocidad de aproximadamente 97x tiempo real en CPU (RTF 0,010). Se entrenó por destilación desde un profesor TTS mayor, del que los tres estudiantes aprenden a reproducir representaciones intermedias (duraciones por fonema y espectrograma mel de 100 bandas).
 
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks estándar de la industria (MMLU, Hu
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MicroTTS 181K | 181.189 | no aplica (una frase por inferencia) | WER 0,007 en conjunto con plantillas; UTMOS 1,33; ~97x tiempo real en CPU | MIT (pesos y runtime); G2P Apache-2.0 | HuggingFace, 0 descargas, 0 likes |
+| MicroTTS 181K | 181.189 | no aplica (una frase por inferencia) | WER 0,007 en conjunto con plantillas; UTMOS 1,33; ~97x tiempo real en CPU | MIT (pesos y runtime); G2P Apache-2.0 | Hugging Face, 0 descargas, 0 likes |
 | Kokoro-82M | 82 millones (según el nombre citado en la model card) | no disponible | no disponible | no disponible | no disponible en la información proporcionada |
 | Vocos (decoder de vocoder) | no disponible | no disponible | no disponible | no disponible | no disponible en la información proporcionada |
 
@@ -102,7 +102,7 @@ El único punto de comparación documentado es Kokoro-82M, usado como profesor e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VantoraLabs/micro-tts-181k
+- Modelo en Hugging Face: https://huggingface.co/VantoraLabs/micro-tts-181k
 - Resultados de búsqueda web: no se han encontrado enlaces relevantes sobre este modelo; las consultas devolvieron únicamente páginas de un medio de prensa italiano sin relación con el modelo.
 - Referencias citadas dentro de la model card, sin URL proporcionada: Kokoro-82M (profesor TTS usado en `train/build_pack.py`) y Vocos (vocoder del que se recorta el decoder en `train/init_decoder.py`).
 - Scripts internos mencionados en la model card, sin enlace directo disponible: `train/build_pack.py`, `train/init_decoder.py` y muestras de audio en `samples/`.

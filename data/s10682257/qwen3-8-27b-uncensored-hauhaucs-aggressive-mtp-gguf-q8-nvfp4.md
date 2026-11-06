@@ -57,9 +57,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B (base) | 27B | 262K (segun fuentes) | BF16/FP8 | Apache 2.0 (segun orcarouter) | HuggingFace |
-| Qwen3.8-27B-Uncensored-OrcaRouter-GGUF | 27B | 262K (segun blog) | GGUF (varios niveles) | Apache 2.0, research-only | HuggingFace |
-| Este modelo (NVFP4 mixto) | 27B (reportado 1,86B en safetensors) | No disponible | NVFP4 mixto | No disponible | HuggingFace |
+| Qwen3.8-27B (base) | 27B | 262K (segun fuentes) | BF16/FP8 | Apache 2.0 (segun orcarouter) | Hugging Face |
+| Qwen3.8-27B-Uncensored-OrcaRouter-GGUF | 27B | 262K (segun blog) | GGUF (varios niveles) | Apache 2.0, research-only | Hugging Face |
+| Este modelo (NVFP4 mixto) | 27B (reportado 1,86B en safetensors) | No disponible | NVFP4 mixto | No disponible | Hugging Face |
 
 La comparativa se basa en informacion publica de los repositorios y blogs citados. No hay datos de rendimiento comparativo entre estas versiones.
 

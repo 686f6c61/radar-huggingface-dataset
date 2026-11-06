@@ -21,7 +21,7 @@ Su relevancia es doble. Por un lado, ofrece un punto de operación ajustable con
 | Licencia | MIT |
 | Formato de pesos | `joblib` (`model.joblib`), más `thresholds.json` y código Python de características (`features.py`) y vocabulario |
 
-Datos adicionales de la ficha de HuggingFace: pipeline `text-classification`, librería `sklearn`, 0 descargas, 0 likes, tamaño de repositorio 0,0 GB (menos de 0,1 GB), creado y actualizado el 23 de septiembre de 2026, autor `valezion`.
+Datos adicionales de la ficha de Hugging Face: pipeline `text-classification`, librería `sklearn`, 0 descargas, 0 likes, tamaño de repositorio 0,0 GB (menos de 0,1 GB), creado y actualizado el 23 de septiembre de 2026, autor `valezion`.
 
 ## Arquitectura y entrenamiento
 
@@ -110,7 +110,7 @@ Cifras de parámetros, contexto y rendimiento de estas alternativas: no disponib
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/valezion/url-phishing-detector
+- Modelo en Hugging Face: https://huggingface.co/valezion/url-phishing-detector
 - Repositorio de código, recolectores de datos y documentación: https://github.com/valezion7/url-phishing-detector
 - Diario de entrenamiento (`DIARY.md`), con los ocho episodios de sesgo detectados: https://github.com/valezion7/url-phishing-detector/blob/main/02-phishing-url/DIARY.md
 - Demo en vivo: https://phishing.studiobeezy.com

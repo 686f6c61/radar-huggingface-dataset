@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo MOREAUUUU/TYLA es un repositorio publicado en HuggingFace por el usuario MOREAUUUU, con identificador `MOREAUUUU/TYLA`. La información técnica disponible es extremadamente limitada: no se ha publicado ninguna model card descriptiva más allá de la etiqueta de licencia `unknown`, no hay metadatos de arquitectura, tamaño de parámetros, contexto ni idiomas soportados. El repositorio ocupa 0,3 GB, lo que sugiere que podría contener pesos de un modelo pequeño o un adaptador LoRA, pero no hay documentación que lo confirme. Las búsquedas web realizadas no arrojan resultados técnicos relevantes: los enlaces encontrados corresponden a sitios de contenido adulto y a modelos de arte generativo de la cantante Tyla en PixAI, que no guardan relación con un modelo de lenguaje o visión por computador. Por tanto, no es posible determinar el propósito, las capacidades ni el rendimiento de este modelo a partir de la información disponible.
+El modelo MOREAUUUU/TYLA es un repositorio publicado en Hugging Face por el usuario MOREAUUUU, con identificador `MOREAUUUU/TYLA`. La información técnica disponible es extremadamente limitada: no se ha publicado ninguna model card descriptiva más allá de la etiqueta de licencia `unknown`, no hay metadatos de arquitectura, tamaño de parámetros, contexto ni idiomas soportados. El repositorio ocupa 0,3 GB, lo que sugiere que podría contener pesos de un modelo pequeño o un adaptador LoRA, pero no hay documentación que lo confirme. Las búsquedas web realizadas no arrojan resultados técnicos relevantes: los enlaces encontrados corresponden a sitios de contenido adulto y a modelos de arte generativo de la cantante Tyla en PixAI, que no guardan relación con un modelo de lenguaje o visión por computador. Por tanto, no es posible determinar el propósito, las capacidades ni el rendimiento de este modelo a partir de la información disponible.
 
 ## Especificaciones tecnicas
 
@@ -52,10 +52,10 @@ No disponible. No se puede comparar este modelo con alternativas de la misma cat
 - La licencia del modelo es `unknown`, lo que implica una incertidumbre legal importante. No se puede garantizar que el uso comercial sea permitido.
 - La model card está vacía y el repositorio carece de documentación: esto es un riesgo elevado para cualquier uso en investigación o producción.
 - No hay información sobre sesgos, alucinaciones, restricciones de idioma ni limitaciones de contexto.
-- El modelo no tiene descargas ni likes en HuggingFace, lo que sugiere que no ha sido validado por la comunidad.
+- El modelo no tiene descargas ni likes en Hugging Face, lo que sugiere que no ha sido validado por la comunidad.
 - Los resultados de búsqueda web asociados son irrelevantes y no proporcionan información técnica fiable, lo que refuerza la falta de legitimidad o documentación del modelo.
 
 ## Enlaces
 
-- Repositorio de HuggingFace: [MOREAUUUU/TYLA](https://huggingface.co/MOREAUUUU/TYLA)
+- Repositorio de Hugging Face: [MOREAUUUU/TYLA](https://huggingface.co/MOREAUUUU/TYLA)
 - No se han encontrado papers, blogs, repositorios de código ni demos oficiales asociados al modelo.

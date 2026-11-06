@@ -83,7 +83,7 @@ No se dispone de informacion sobre otros drafts de DFlash 2 para Qwen3.8-27B mas
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/HermiHg/Qwen3.8-27B-DFlash2-Q2_K_S-MIX-GGUF
+- Repositorio Hugging Face: https://huggingface.co/HermiHg/Qwen3.8-27B-DFlash2-Q2_K_S-MIX-GGUF
 - Modelo draft original: https://huggingface.co/incoai/Qwen3.8-27B-DFlash2
 - Modelo target: https://huggingface.co/Qwen/Qwen3.8-27B
 - Blog de DFlash 2: https://inco.ai/blog/dflash2/

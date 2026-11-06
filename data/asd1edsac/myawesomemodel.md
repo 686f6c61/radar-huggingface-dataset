@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de razonamiento publicado por el usuario ASD1EDSAC en HuggingFace bajo licencia MIT. Segun la model card, el modelo ha experimentado una actualizacion significativa que mejora su profundidad de razonamiento e inferencia mediante mayores recursos computacionales y mecanismos de optimizacion algoritmica durante el post-entrenamiento. La model card reporta mejoras notables en tareas de matematicas, programacion y logica general, con un incremento en el test AIME 2025 del 70% al 87,5% de precision, y un aumento en el uso medio de tokens por pregunta de 12K a 23K, lo que sugiere un modo de razonamiento mas profundo.
+MyAwesomeModel es un modelo de razonamiento publicado por el usuario ASD1EDSAC en Hugging Face bajo licencia MIT. Segun la model card, el modelo ha experimentado una actualizacion significativa que mejora su profundidad de razonamiento e inferencia mediante mayores recursos computacionales y mecanismos de optimizacion algoritmica durante el post-entrenamiento. La model card reporta mejoras notables en tareas de matematicas, programacion y logica general, con un incremento en el test AIME 2025 del 70% al 87,5% de precision, y un aumento en el uso medio de tokens por pregunta de 12K a 23K, lo que sugiere un modo de razonamiento mas profundo.
 
-Sin embargo, la informacion publica es extremadamente limitada: no se especifican parametros totales, arquitectura concreta, longitud de contexto ni datos de entrenamiento. El repositorio tiene un tamano de 0.0 GB, lo que indica que no contiene los pesos del modelo. Los tags de HuggingFace indican "bert" y "feature-extraction", lo que contradice la descripcion de la model card como modelo de chat y razonamiento. Todo apunta a que se trata de un repositorio de prueba o placeholder sin material utilizable.
+Sin embargo, la informacion publica es extremadamente limitada: no se especifican parametros totales, arquitectura concreta, longitud de contexto ni datos de entrenamiento. El repositorio tiene un tamano de 0.0 GB, lo que indica que no contiene los pesos del modelo. Los tags de Hugging Face indican "bert" y "feature-extraction", lo que contradice la descripcion de la model card como modelo de chat y razonamiento. Todo apunta a que se trata de un repositorio de prueba o placeholder sin material utilizable.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ Sin embargo, la informacion publica es extremadamente limitada: no se especifica
 
 La model card menciona que el modelo ha sido sometido a un proceso de post-entrenamiento con "mecanismos de optimizacion algoritmica" y mayores recursos computacionales, pero no proporciona detalles concretos sobre la arquitectura, el numero de parametros, la composicion del dataset de entrenamiento ni el numero de tokens utilizados. Tampoco se especifica si se emplearon tecnicas como RLHF o DPO.
 
-Los tags de HuggingFace sugieren una arquitectura basada en BERT (transformers encoder) con pipeline de feature-extraction, pero la model card describe un modelo generativo de razonamiento con soporte de function calling y system prompts, lo que resulta internamente inconsistente. No se dispone de informacion verificable sobre la arquitectura real del modelo. La model card tambien menciona una variante denominada "MyAwesomeModel-Small" con arquitectura identica al modelo base y el mismo tokenizer que el modelo principal, aunque no se aportan detalles adicionales.
+Los tags de Hugging Face sugieren una arquitectura basada en BERT (transformers encoder) con pipeline de feature-extraction, pero la model card describe un modelo generativo de razonamiento con soporte de function calling y system prompts, lo que resulta internamente inconsistente. No se dispone de informacion verificable sobre la arquitectura real del modelo. La model card tambien menciona una variante denominada "MyAwesomeModel-Small" con arquitectura identica al modelo base y el mismo tokenizer que el modelo principal, aunque no se aportan detalles adicionales.
 
 ## Capacidades
 
@@ -87,7 +87,7 @@ La model card compara MyAwesomeModel con tres modelos no identificados ("Model1"
 
 - La informacion publica es insuficiente para evaluar el modelo: no se especifican parametros, arquitectura, contexto ni datos de entrenamiento.
 - El repositorio tiene un tamano de 0.0 GB, lo que indica que no contiene los pesos del modelo. Podria tratarse de un repositorio de prueba o placeholder.
-- Los tags de HuggingFace ("bert", "feature-extraction") contradicen la descripcion de la model card (modelo de razonamiento tipo chat), lo que genera dudas sobre la coherencia de la publicacion.
+- Los tags de Hugging Face ("bert", "feature-extraction") contradicen la descripcion de la model card (modelo de razonamiento tipo chat), lo que genera dudas sobre la coherencia de la publicacion.
 - Los benchmarks presentados no estan identificados con nombres estandar y no son verificables de forma independiente.
 - Los modelos de comparacion en la tabla de benchmarks no estan especificados, lo que impide contextualizar los resultados.
 - No se dispone de informacion sobre sesgos, limitaciones de idioma ni riesgos de alucinacion residuales (la model card menciona una reduccion, pero no su eliminacion).
@@ -96,6 +96,6 @@ La model card compara MyAwesomeModel con tres modelos no identificados ("Model1"
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ASD1EDSAC/MyAwesomeModel
+- Repositorio en Hugging Face: https://huggingface.co/ASD1EDSAC/MyAwesomeModel
 - Repositorio de prueba relacionado: https://huggingface.co/ASD1EDSAC/MyAwesomeModel-TestRepo
 - Repositorio similar (no oficial): https://huggingface.co/sdsffs5/MyAwesomeModel

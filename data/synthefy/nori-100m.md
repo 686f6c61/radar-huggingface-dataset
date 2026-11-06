@@ -91,7 +91,7 @@ No se dispone de datos técnicos detallados de TabFM, TabPFN-3 ni EXAONE-Tabular
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Synthefy/Nori-100M
+- Modelo en Hugging Face: https://huggingface.co/Synthefy/Nori-100M
 - Repositorio GitHub: https://github.com/Synthefy/synthefy-nori
 - Documentación oficial: https://docs.synthefy.com/nori/
 - Página principal de Synthefy: https://www.synthefy.com/

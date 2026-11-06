@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Resolucion de imagen | Contexto de texto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CollectionStudio/siglip-so400m-patch16-256-i18n | 1.128.758.962 | 256x256, patch 16 | 64 tokens | apache-2.0 | HuggingFace (repo con 0 descargas) |
-| google/siglip-so400m-patch14-384 | mismo backbone SoViT-400m (cifra exacta no disponible) | 384x384, patch 14 | 64 tokens | apache-2.0 | HuggingFace (repo oficial de Google) |
-| google/siglip-base-patch16-224 | no disponible en la informacion proporcionada | 224x224, patch 16 | 64 tokens | apache-2.0 | HuggingFace |
-| openai/clip-vit-large-patch14 | ~428M (dato de conocimiento general, no verificado en la informacion proporcionada) | 224x224, patch 14 | 77 tokens | MIT | HuggingFace |
+| CollectionStudio/siglip-so400m-patch16-256-i18n | 1.128.758.962 | 256x256, patch 16 | 64 tokens | apache-2.0 | Hugging Face (repo con 0 descargas) |
+| google/siglip-so400m-patch14-384 | mismo backbone SoViT-400m (cifra exacta no disponible) | 384x384, patch 14 | 64 tokens | apache-2.0 | Hugging Face (repo oficial de Google) |
+| google/siglip-base-patch16-224 | no disponible en la informacion proporcionada | 224x224, patch 16 | 64 tokens | apache-2.0 | Hugging Face |
+| openai/clip-vit-large-patch14 | ~428M (dato de conocimiento general, no verificado en la informacion proporcionada) | 224x224, patch 14 | 77 tokens | MIT | Hugging Face |
 
 Diferencias cualitativas relevantes: frente a CLIP, SigLIP sustituye la perdida softmax por una sigmoidea, lo que segun los autores mejora el comportamiento con lotes pequenos y permite puntuaciones absolutas por par. Frente a la variante `so400m-patch14-384`, este checkpoint usa parches mas grandes y menor resolucion, por lo que es mas barato en computo pero con menor granularidad espacial; a cambio, la variante i18n anade cobertura multilingue. No hay datos de rendimiento comparado verificables en la informacion disponible.
 
@@ -85,12 +85,12 @@ Diferencias cualitativas relevantes: frente a CLIP, SigLIP sustituye la perdida 
 - Discrepancia documental en la model card sobre la resolucion de preprocesado (menciona 384x384 mientras el checkpoint es 256x256). Conviene fijar la resolucion segun la configuracion del modelo y validarla empiricamente.
 - Repositorio resubido por un tercero (`CollectionStudio`) con 0 descargas y 0 likes y sin historial de mantenimiento. Para produccion, verificar la integridad de los pesos y considerar el repositorio oficial de Google.
 - La licencia apache-2.0 permite uso comercial, pero al tratarse de una resubida la trazabilidad del artefacto no esta garantizada por el autor original.
-- La model card advierte explicitamente que el equipo de SigLIP no escribio esa tarjeta: fue redactada por el equipo de HuggingFace a partir de la version de Google.
+- La model card advierte explicitamente que el equipo de SigLIP no escribio esa tarjeta: fue redactada por el equipo de Hugging Face a partir de la version de Google.
 - No se dispone de informacion sobre latencia, throughput, robustez ante imagenes adversariales o comportamiento con imagenes fuera de distribucion.
 
 ## Enlaces
 
-- Repositorio analizado en HuggingFace: https://huggingface.co/CollectionStudio/siglip-so400m-patch16-256-i18n
+- Repositorio analizado en Hugging Face: https://huggingface.co/CollectionStudio/siglip-so400m-patch16-256-i18n
 - Repositorio original de referencia: https://huggingface.co/google/siglip-so400m-patch16-256-i18n
 - Busqueda de todas las variantes SigLIP: https://huggingface.co/models?search=google/siglip
 - Paper de SigLIP, "Sigmoid Loss for Language Image Pre-Training" (Zhai et al., 2023): https://arxiv.org/abs/2303.15343

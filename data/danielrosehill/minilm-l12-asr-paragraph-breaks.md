@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto / ventana | F1 en el set de 26 memos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniLM-L12-ASR-Paragraph-Breaks | 33,2 M | 512 tokens (ventanas de 510) | 0,85 (PyTorch e int8) | MIT | HuggingFace, safetensors y ONNX |
-| Gemma 3 270M-ASR-Paragraph-Breaks (predecesor del mismo autor) | 270 M | no disponible | 0,78 | no disponible en la información consultada | HuggingFace; 437 MB int8, 23-48 s por memo en CPU |
-| SaT `segment-any-text/sat-3l-sm` (modo párrafo) | no disponible | no disponible | 0,65 | no disponible en la información consultada | HuggingFace |
-| `microsoft/MiniLM-L12-H384-uncased` (base sin afinar) | 33,2 M | 512 tokens | no aplica (no segmenta párrafos) | MIT | HuggingFace |
+| MiniLM-L12-ASR-Paragraph-Breaks | 33,2 M | 512 tokens (ventanas de 510) | 0,85 (PyTorch e int8) | MIT | Hugging Face, safetensors y ONNX |
+| Gemma 3 270M-ASR-Paragraph-Breaks (predecesor del mismo autor) | 270 M | no disponible | 0,78 | no disponible en la información consultada | Hugging Face; 437 MB int8, 23-48 s por memo en CPU |
+| SaT `segment-any-text/sat-3l-sm` (modo párrafo) | no disponible | no disponible | 0,65 | no disponible en la información consultada | Hugging Face |
+| `microsoft/MiniLM-L12-H384-uncased` (base sin afinar) | 33,2 M | 512 tokens | no aplica (no segmenta párrafos) | MIT | Hugging Face |
 
 Frente al enfoque generativo, este modelo es aproximadamente 8 veces menor en parámetros y 13 veces menor en disco (32 MB frente a 437 MB), con una latencia de dos órdenes de magnitud inferior en CPU y mejor F1, además de la garantía de no modificar el texto. Frente a SaT, mejora el F1 en 0,20 puntos a costa de un recall menor (0,84 frente a 1,00): SaT no pierde ningún salto real pero genera muchos falsos positivos (precisión 0,48).
 
@@ -91,15 +91,15 @@ Frente al enfoque generativo, este modelo es aproximadamente 8 veces menor en pa
 - Requiere el texto completo: lee todo el documento, por lo que está pensado para ejecutarse una vez finalizada la transcripción, no durante el dictado en tiempo real ni en streaming.
 - Umbral fijo (`paragraph_threshold = 0.26`) calibrado en el split de desarrollo del autor; en otros dominios habrá que recalibrarlo.
 - Licencia MIT, que permite uso comercial sin restricciones conocidas; aun así, el modelo se publicó con 0 descargas y sin validación externa, por lo que conviene evaluarlo en el dominio propio antes de llevarlo a producción.
-- Fechas de creación y actualización del repositorio posteriores a la fecha de esta ficha; se reproducen tal como aparecen en la información de HuggingFace.
+- Fechas de creación y actualización del repositorio posteriores a la fecha de esta ficha; se reproducen tal como aparecen en la información de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/danielrosehill/MiniLM-L12-ASR-Paragraph-Breaks
+- Modelo en Hugging Face: https://huggingface.co/danielrosehill/MiniLM-L12-ASR-Paragraph-Breaks
 - Dataset de entrenamiento: https://huggingface.co/datasets/danielrosehill/ASR-Paragraph-Breaks
 - Repositorio GitHub (código de entrenamiento y evaluación): https://github.com/danielrosehill/ASR-Paragraph-Breaks
 - Página del proyecto en el sitio del autor: https://www.danielrosehill.com/projects/asr-paragraph-breaks/
 - Modelo predecesor generativo: https://huggingface.co/danielrosehill/Gemma-3-270M-ASR-Paragraph-Breaks
 - Modelo base: https://huggingface.co/microsoft/MiniLM-L12-H384-uncased
-- Perfil del autor en HuggingFace: https://huggingface.co/danielrosehill
+- Perfil del autor en Hugging Face: https://huggingface.co/danielrosehill
 - Perfil del autor en GitHub: https://github.com/danielrosehill

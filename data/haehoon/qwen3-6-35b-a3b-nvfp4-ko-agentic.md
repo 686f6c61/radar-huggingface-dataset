@@ -85,10 +85,10 @@ Los resultados generales se midieron con lm-evaluation-harness (completion-style
 
 | Modelo | Parametros | Contexto | MMLU | KMMLU | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen3.6-35B-A3B-NVFP4-ko-agentic (este) | 35B (3B activos) | 16K (config) | 82.9 | 64.0 | Apache 2.0 | HuggingFace |
-| RedHatAI NVFP4 (Qwen3.6-35B-A3B) | 35B (3B activos) | no disp. | 82.6 | 63.9 | Apache 2.0 | HuggingFace |
-| nvidia NVFP4 (Qwen3.6-35B-A3B) | 35B (3B activos) | no disp. | 83.3 | 64.4 | Apache 2.0 | HuggingFace |
-| Qwen3.6-27B-Dense | 27B (dense) | no disp. | no disp. | no disp. | Apache 2.0 | HuggingFace |
+| Qwen3.6-35B-A3B-NVFP4-ko-agentic (este) | 35B (3B activos) | 16K (config) | 82.9 | 64.0 | Apache 2.0 | Hugging Face |
+| RedHatAI NVFP4 (Qwen3.6-35B-A3B) | 35B (3B activos) | no disp. | 82.6 | 63.9 | Apache 2.0 | Hugging Face |
+| nvidia NVFP4 (Qwen3.6-35B-A3B) | 35B (3B activos) | no disp. | 83.3 | 64.4 | Apache 2.0 | Hugging Face |
+| Qwen3.6-27B-Dense | 27B (dense) | no disp. | no disp. | no disp. | Apache 2.0 | Hugging Face |
 
 Los tres checkpoints NVFP4 son equivalentes en benchmarks generales. La diferencia de este modelo es su calibracion para coreano y agentes, con mejoras claras en routing general (97.1% frente a 89.7%) y multi-turn (88.1% frente a 86.2%) respecto a RedHatAI. La alternativa densa de 27B puede ser mas adecuada si no se necesita la eficiencia del MoE.
 
@@ -105,9 +105,9 @@ Los tres checkpoints NVFP4 son equivalentes en benchmarks generales. La diferenc
 
 ## Enlaces
 
-- [HuggingFace - haehoon/Qwen3.6-35B-A3B-NVFP4-ko-agentic](https://huggingface.co/haehoon/Qwen3.6-35B-A3B-NVFP4-ko-agentic)
-- [HuggingFace - Qwen/Qwen3.6-35B-A3B (modelo base)](https://huggingface.co/Qwen/Qwen3.6-35B-A3B)
-- [HuggingFace - nvidia/Qwen3.6-35B-A3B-NVFP4](https://huggingface.co/nvidia/Qwen3.6-35B-A3B-NVFP4)
+- [Hugging Face - haehoon/Qwen3.6-35B-A3B-NVFP4-ko-agentic](https://huggingface.co/haehoon/Qwen3.6-35B-A3B-NVFP4-ko-agentic)
+- [Hugging Face - Qwen/Qwen3.6-35B-A3B (modelo base)](https://huggingface.co/Qwen/Qwen3.6-35B-A3B)
+- [Hugging Face - nvidia/Qwen3.6-35B-A3B-NVFP4](https://huggingface.co/nvidia/Qwen3.6-35B-A3B-NVFP4)
 - [ModelScope - Qwen3.6-35B-A3B](https://www.modelscope.ai/models/Qwen/Qwen3.6-35B-A3B)
 - [DeepWiki - Qwen3.6 Models](https://deepwiki.com/QwenLM/Qwen3.6/1.1-qwen3.6-models)
 - [Guia de Qwen 3.6 (insiderllm.com)](https://insiderllm.com/guides/qwen-3-6-local-ai-guide/)

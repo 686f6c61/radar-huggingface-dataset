@@ -80,7 +80,7 @@ No se han identificado en la informacion disponible modelos publicos comparables
 
 | Modelo | Parametros | Contexto | Precision / calibracion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| JevAny-27B-RLCR | 27B (adaptador LoRA) | No disponible (entrenamiento a 2.048 tokens) | 81,84% conocibles; Brier 0,269; cobertura 54,11% al 5% | Apache 2.0 | Publicado en HuggingFace, 0 descargas |
+| JevAny-27B-RLCR | 27B (adaptador LoRA) | No disponible (entrenamiento a 2.048 tokens) | 81,84% conocibles; Brier 0,269; cobertura 54,11% al 5% | Apache 2.0 | Publicado en Hugging Face, 0 descargas |
 | JevAny-27B-SFT v0.1.0 | 27B (checkpoint padre) | No disponible | Precision 0,48 puntos porcentuales inferior a RLCR; calibracion no reportada | No disponible | No disponible |
 | Qwen/Qwen3.8-27B | 27B | No disponible | No disponible | No disponible | Modelo base referenciado |
 
@@ -100,7 +100,7 @@ No se han identificado en la informacion disponible modelos publicos comparables
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tianxinwei/JevAny-27B-RLCR
+- Modelo en Hugging Face: https://huggingface.co/tianxinwei/JevAny-27B-RLCR
 - Guia de datos del proyecto: https://github.com/weitianxin/JevAny/blob/main/docs/DATA.md
 - Repositorio del proyecto (referenciado desde la model card): https://github.com/weitianxin/JevAny
 - Modelo base referenciado: https://huggingface.co/Qwen/Qwen3.8-27B

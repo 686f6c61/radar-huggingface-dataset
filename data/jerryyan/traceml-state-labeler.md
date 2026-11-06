@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jerryyan/TraceML-State-Labeler | 1,72B | no disponible (base: 32.768 tokens nativos) | Etiquetado de etapas de pipeline de ML en codigo | Apache-2.0 | HuggingFace, 0 descargas y 0 likes en el momento del registro |
+| jerryyan/TraceML-State-Labeler | 1,72B | no disponible (base: 32.768 tokens nativos) | Etiquetado de etapas de pipeline de ML en codigo | Apache-2.0 | Hugging Face, 0 descargas y 0 likes en el momento del registro |
 | Qwen/Qwen3-1.7B (modelo base) | 1,72B | 32.768 tokens nativos | Generacion de texto y razonamiento de proposito general | Apache-2.0 | Ampliamente distribuido |
-| jerryyan/TraceML-Action-Labeler | no disponible | no disponible | Etiquetado de acciones dentro del proyecto TraceML | no disponible | HuggingFace |
+| jerryyan/TraceML-Action-Labeler | no disponible | no disponible | Etiquetado de acciones dentro del proyecto TraceML | no disponible | Hugging Face |
 
 La comparacion con alternativas genericas de clasificacion de codigo no es posible con la informacion disponible, ya que la model card no incluye resultados comparativos ni referencias a otros etiquetadores del mismo tipo.
 
@@ -90,7 +90,7 @@ La comparacion con alternativas genericas de clasificacion de codigo no es posib
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jerryyan/TraceML-State-Labeler
+- Modelo en Hugging Face: https://huggingface.co/jerryyan/TraceML-State-Labeler
 - Modelo hermano (Action Labeler): https://huggingface.co/jerryyan/TraceML-Action-Labeler
 - Paper: https://arxiv.org/abs/2608.26086
 - Dataset TraceML: https://huggingface.co/datasets/jerryyan/TraceML

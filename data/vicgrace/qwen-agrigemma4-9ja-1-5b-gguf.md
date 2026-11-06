@@ -68,7 +68,7 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Vicgrace/Qwen-AgriGemma4.9ja-1.5B-GGUF
-- Organización Qwen en HuggingFace: https://huggingface.co/Qwen
+- Repositorio Hugging Face: https://huggingface.co/Vicgrace/Qwen-AgriGemma4.9ja-1.5B-GGUF
+- Organización Qwen en Hugging Face: https://huggingface.co/Qwen
 - Documentación de Qwen: https://qwen.readthedocs.io/en/latest/
 - Repositorio Qwen3 en GitHub: https://github.com/QwenLM/Qwen3

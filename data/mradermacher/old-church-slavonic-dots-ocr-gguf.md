@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mradermacher/old-church-slavonic-dots-ocr-GGUF` es la version cuantizada en formato GGUF del modelo `wjbmattingly/old-church-slavonic-dots-ocr`, un modelo de vision-lenguaje especializado en OCR (reconocimiento optico de caracteres) para documentos en eslavo eclesiastico antiguo. El autor original es wjbmattingly y la cuantizacion la realiza mradermacher, un perfil conocido en HuggingFace por producir versiones GGUF de modelos populares para su uso con llama.cpp y herramientas compatibles.
+`mradermacher/old-church-slavonic-dots-ocr-GGUF` es la version cuantizada en formato GGUF del modelo `wjbmattingly/old-church-slavonic-dots-ocr`, un modelo de vision-lenguaje especializado en OCR (reconocimiento optico de caracteres) para documentos en eslavo eclesiastico antiguo. El autor original es wjbmattingly y la cuantizacion la realiza mradermacher, un perfil conocido en Hugging Face por producir versiones GGUF de modelos populares para su uso con llama.cpp y herramientas compatibles.
 
 El modelo resuelve un problema muy concreto: la digitalizacion y el parseo de documentos historicos escritos en eslavo eclesiastico antiguo, incluyendo texto con marcas diacriticas (los "dots" del nombre), layouts complejos, tablas y formulas. Con 1.777 millones de parametros (aproximadamente 1,8 B), es un modelo compacto que puede ejecutarse en hardware de consumo, lo que lo hace accesible para proyectos de humanidades digitales y archivos historicos con presupuestos limitados.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantizado): https://huggingface.co/mradermacher/old-church-slavonic-dots-ocr-GGUF
+- Repositorio Hugging Face (cuantizado): https://huggingface.co/mradermacher/old-church-slavonic-dots-ocr-GGUF
 - Modelo base: https://huggingface.co/wjbmattingly/old-church-slavonic-dots-ocr
 - Pagina de descargas del cuantizador: https://hf.tst.eu/model#old-church-slavonic-dots-ocr-GGUF
 - Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

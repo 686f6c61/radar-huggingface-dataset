@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ankitanqm/multitask-base-2024` es un prototipo de investigación publicado en HuggingFace por el usuario ankitanqm bajo licencia MIT. El autor lo describe como una implementación propia de tipo MoCo v3 orientada a tareas multitarea, en una escala declarada como "tiny". Se trata de un repositorio de andamiaje (scaffolding) más que de un modelo entrenado: la model card indica explícitamente que el checkpoint incluido es una inicialización válida para pruebas de humo (smoke tests), no un modelo con entrenamiento completado ni evaluado.
+`ankitanqm/multitask-base-2024` es un prototipo de investigación publicado en Hugging Face por el usuario ankitanqm bajo licencia MIT. El autor lo describe como una implementación propia de tipo MoCo v3 orientada a tareas multitarea, en una escala declarada como "tiny". Se trata de un repositorio de andamiaje (scaffolding) más que de un modelo entrenado: la model card indica explícitamente que el checkpoint incluido es una inicialización válida para pruebas de humo (smoke tests), no un modelo con entrenamiento completado ni evaluado.
 
 El repositorio contiene cuatro artefactos: `model.py` (implementación principal con ejemplo ejecutable), `config.json` (configuración de arquitectura), `training_args.json` (receta de experimento por defecto) y `model.safetensors` (checkpoint de inicialización). El recuento de parámetros registrado por safetensors es de 33.088, aunque el autor no especifica la unidad de esa cifra. El tamaño del repositorio es de 0,0 GB, con cero descargas y cero "likes" en el momento de la consulta.
 
@@ -90,5 +90,5 @@ No disponible. La información proporcionada no identifica modelos comparables e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ankitanqm/multitask-base-2024
+- Hugging Face: https://huggingface.co/ankitanqm/multitask-base-2024
 - Los resultados de búsqueda web proporcionados no contienen enlaces relevantes: corresponden a documentos administrativos japoneses sobre regulación de dispositivos médicos, sin relación con este modelo.

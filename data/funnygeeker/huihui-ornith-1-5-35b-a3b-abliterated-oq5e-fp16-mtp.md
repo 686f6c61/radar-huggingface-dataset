@@ -76,7 +76,7 @@ La comparativa se basa en características generales, ya que no hay datos de ren
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/funnygeeker/Huihui-Ornith-1.5-35B-A3B-abliterated-oQ5e-fp16-mtp
+- Modelo en Hugging Face: https://huggingface.co/funnygeeker/Huihui-Ornith-1.5-35B-A3B-abliterated-oQ5e-fp16-mtp
 - Versión GGUF de mradermacher: https://huggingface.co/mradermacher/Huihui-Ornith-1.5-35B-A3B-abliterated-GGUF
 - Versión en Ollama con visión (de codecraftersllc): https://ollama.com/codecraftersllc/ornith-1.5-35b-a3b-abliterated
 - Página de llm-explorer sobre el modelo: https://llm-explorer.com/model/huihui-ai%2FHuihui-Ornith-1.5-35B-A3B-abliterated,2fKIgn8LQab1oijPhDUyM1

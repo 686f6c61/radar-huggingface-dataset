@@ -76,5 +76,5 @@ No disponible. La model card no incluye comparaciones con otras cabezas residual
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/danielbogdoll/iad-weights-a2-residual
+- Hugging Face: https://huggingface.co/danielbogdoll/iad-weights-a2-residual
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios de código o demos.

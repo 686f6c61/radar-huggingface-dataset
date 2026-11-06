@@ -2,7 +2,7 @@
 
 ## Resumen
 
-my-moroccan-darija-whisper es un ajuste fino (fine-tuning) del modelo openai/whisper-small, publicado por el usuario ayb98top en HuggingFace, especializado en reconocimiento automatico del habla (ASR) para darija marroqui. Whisper-small es un transformer encoder-decoder de 241,7 millones de parametros, y este ajuste lo adapta especificamente al arabe dialectal de Marruecos, un dominio linguistico con escasa representacion en los corpus de entrenamiento del modelo original.
+my-moroccan-darija-whisper es un ajuste fino (fine-tuning) del modelo openai/whisper-small, publicado por el usuario ayb98top en Hugging Face, especializado en reconocimiento automatico del habla (ASR) para darija marroqui. Whisper-small es un transformer encoder-decoder de 241,7 millones de parametros, y este ajuste lo adapta especificamente al arabe dialectal de Marruecos, un dominio linguistico con escasa representacion en los corpus de entrenamiento del modelo original.
 
 El modelo se entrena sobre el dataset Dvoice darija v2.0 y declara un Word Error Rate (WER) del 14,1994 % en el conjunto de evaluacion, con una perdida de validacion de 0,1732. Partiendo de un WER del 29,89 % en el paso 1000, el ajuste converge rapidamente hasta estabilizarse en torno al 13,9-14,4 % a partir del paso 3000, lo que sugiere que el modelo base ya aporta una representacion acustica util y el fine-tuning solo necesita adaptar el decodificador al dialecto.
 
@@ -74,7 +74,7 @@ No se han publicado resultados comparativos con otros modelos en la informacion 
 - VRAM estimada en cuantizacion de 8 bits: aproximadamente 0,25-0,5 GB para pesos.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM; RTX 3060, RTX 4060, RTX 4090, A100 y H100 son suficientes, aunque para este tamano las GPU de consumo son la opcion natural.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU moderna de NVIDIA, e incluso en CPU para inferencia por lotes pequenos.
-- Opciones de despliegue: transformers (libreria declarada), pipeline de automatic-speech-recognition; tambien es compatible con endpoints de HuggingFace (tag `endpoints_compatible`). No se documenta soporte explicito de vLLM, llama.cpp, Ollama ni TGI en la informacion proporcionada.
+- Opciones de despliegue: transformers (libreria declarada), pipeline de automatic-speech-recognition; tambien es compatible con endpoints de Hugging Face (tag `endpoints_compatible`). No se documenta soporte explicito de vLLM, llama.cpp, Ollama ni TGI en la informacion proporcionada.
 - Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
@@ -103,7 +103,7 @@ La comparacion con whisper-small es la mas directa: mismo tamano y arquitectura,
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ayb98top/my-moroccan-darija-whisper
+- Hugging Face: https://huggingface.co/ayb98top/my-moroccan-darija-whisper
 - Modelo base: https://huggingface.co/openai/whisper-small
 - Repositorio de Whisper (OpenAI): https://github.com/openai/whisper
 - Paper de Whisper: https://arxiv.org/abs/2212.04356

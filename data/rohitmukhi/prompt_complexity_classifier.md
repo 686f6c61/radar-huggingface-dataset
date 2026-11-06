@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `rohitMukhi/prompt_complexity_classifier` | 184 M | no disponible (ejemplo trunca a 256) | Clasificación de complejidad de prompts (3 clases) | MIT | HuggingFace, 0 descargas |
-| `microsoft/deberta-v3-base` | 184 M | 512 tokens | Modelo base; requiere afinado para clasificación | MIT | HuggingFace, ampliamente usado |
-| `distilbert-base-uncased` | 66 M | 512 tokens | Clasificación de texto genérica tras afinado | Apache 2.0 | HuggingFace, muy extendido |
-| `cross-encoder/ms-marco-MiniLM-L-6-v2` | ~22 M | 512 tokens | Reranking de pasajes | Apache 2.0 | HuggingFace |
+| `rohitMukhi/prompt_complexity_classifier` | 184 M | no disponible (ejemplo trunca a 256) | Clasificación de complejidad de prompts (3 clases) | MIT | Hugging Face, 0 descargas |
+| `microsoft/deberta-v3-base` | 184 M | 512 tokens | Modelo base; requiere afinado para clasificación | MIT | Hugging Face, ampliamente usado |
+| `distilbert-base-uncased` | 66 M | 512 tokens | Clasificación de texto genérica tras afinado | Apache 2.0 | Hugging Face, muy extendido |
+| `cross-encoder/ms-marco-MiniLM-L-6-v2` | ~22 M | 512 tokens | Reranking de pasajes | Apache 2.0 | Hugging Face |
 
 La comparación directa con alternativas de enrutamiento de prompts no está disponible: no se conocen clasificadores públicos equivalentes con benchmarks comparables en la información proporcionada. Frente a `deberta-v3-base`, este modelo aporta el afinado específico para la tarea, pero carece de documentación de evaluación que permita verificar su ventaja.
 
@@ -87,7 +87,7 @@ La comparación directa con alternativas de enrutamiento de prompts no está dis
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rohitMukhi/prompt_complexity_classifier
+- Hugging Face: https://huggingface.co/rohitMukhi/prompt_complexity_classifier
 - Modelo base: https://huggingface.co/microsoft/deberta-v3-base
 - Paper de DeBERTa-v3: https://arxiv.org/abs/2111.09543
 - Repositorio DeBERTa: https://github.com/microsoft/DeBERTa

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario WinderBYZ bajo el identificador `WinderBYZ/MyAwesomeModel-TestRepo-beta`. Segun los metadatos de la plataforma, se distribuye con la libreria transformers, esta implementado en PyTorch y se etiqueta como un modelo de tipo BERT orientado a la tarea de `feature-extraction` (extraccion de representaciones). La licencia declarada es MIT y el repositorio tiene un tamano de 0.0 GB, lo que sugiere que no contiene pesos publicados o que estos no se han subido en el momento de la consulta.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario WinderBYZ bajo el identificador `WinderBYZ/MyAwesomeModel-TestRepo-beta`. Segun los metadatos de la plataforma, se distribuye con la libreria transformers, esta implementado en PyTorch y se etiqueta como un modelo de tipo BERT orientado a la tarea de `feature-extraction` (extraccion de representaciones). La licencia declarada es MIT y el repositorio tiene un tamano de 0.0 GB, lo que sugiere que no contiene pesos publicados o que estos no se han subido en el momento de la consulta.
 
 La model card del autor describe un modelo conversacional y de razonamiento con mejoras en profundidad de inferencia, soporte de function calling y reduccion de alucinaciones, e incluye una tabla de benchmarks y metricas de eficiencia (latencia de 85 ms y 1905 MB de memoria). Sin embargo, existe una contradiccion evidente entre estos datos y los metadatos de la plataforma: la etiqueta `bert` y el pipeline `feature-extraction` no se corresponden con el perfil de un modelo generativo de razonamiento, y el repositorio no contiene pesos. Ademas, el nombre del repositorio incluye "TestRepo", lo que apunta a un artefacto de prueba.
 
@@ -23,7 +23,7 @@ Por todo ello, esta ficha debe interpretarse con cautela: los datos de arquitect
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion verificable sobre la arquitectura. Los metadatos de HuggingFace etiquetan el modelo como `bert`, lo que implicaria un transformer encoder-only orientado a extraccion de caracteristicas; sin embargo, la model card describe capacidades de razonamiento extendido, generacion de codigo, function calling y modo de pensamiento, propias de un modelo decoder-only generativo. Esta incoherencia impide determinar la familia arquitectonica real.
+No se dispone de informacion verificable sobre la arquitectura. Los metadatos de Hugging Face etiquetan el modelo como `bert`, lo que implicaria un transformer encoder-only orientado a extraccion de caracteristicas; sin embargo, la model card describe capacidades de razonamiento extendido, generacion de codigo, function calling y modo de pensamiento, propias de un modelo decoder-only generativo. Esta incoherencia impide determinar la familia arquitectonica real.
 
 Respecto al entrenamiento, la model card menciona de forma generica un incremento de recursos computacionales y "mecanismos de optimizacion algoritmica" durante el post-entrenamiento, asi como un aumento de la profundidad de razonamiento (de una media de 12K a 23K tokens por pregunta en el conjunto AIME). No se especifica el numero de tokens de entrenamiento, la composicion del dataset, ni si se emplearon tecnicas de RLHF, DPO o aprendizaje por refuerzo con verificadores. Tampoco se detalla ninguna innovacion tecnica concreta (atencion lineal, decodificacion especulativa, mezcla de expertos) mas alla de las afirmaciones generales sobre profundidad de razonamiento.
 
@@ -110,5 +110,5 @@ No es posible establecer una comparativa fiable porque se desconocen parametros,
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/WinderBYZ/MyAwesomeModel-TestRepo-beta
+- Repositorio en Hugging Face: https://huggingface.co/WinderBYZ/MyAwesomeModel-TestRepo-beta
 - No se han encontrado en la informacion proporcionada enlaces adicionales a papers, blogs, repositorios de codigo ni demos.

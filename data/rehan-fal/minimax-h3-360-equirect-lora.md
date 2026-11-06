@@ -18,7 +18,7 @@ Es relevante para equipos que ya trabajan con MiniMax H3 y quieren añadir una l
 | Longitud de contexto | no aplica (modelo de generacion de video); duracion de clip documentada de 5 a 15 s |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible (la model card solo incluye prompts de ejemplo en ingles) |
-| Licencia | minimax-community-license (licencia del modelo base; en HuggingFace figura como license: other) |
+| Licencia | minimax-community-license (licencia del modelo base; en Hugging Face figura como license: other) |
 | Formato de pesos | safetensors (adaptador LoRA en formato PEFT) |
 | Modelo base | MiniMaxAI/MiniMax-H3 |
 | Palabra de activacion | `eqr360` |
@@ -82,9 +82,9 @@ A escala 1,0 los valores de costura y polos son ligeramente peores que a 0,75, s
 
 | Modelo | Tipo | Salida | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| rehan-fal/minimax-h3-360-equirect-lora | LoRA sobre MiniMax H3 | Video 360 equirectangular con audio | minimax-community-license | HuggingFace, API de fal | Escala recomendada 0,75; 4K documentado; muestras y metricas de geometria publicadas |
-| rehan-fal/minimax-h3-vr180-sbs-lora | LoRA sobre MiniMax H3 | Video VR180 estereoscopico lado a lado | no disponible | HuggingFace | Mismo autor y modelo base; formato estereo de 180 grados en lugar de esfera completa |
-| MiniMaxAI/MiniMax-H3 (base) | Modelo texto a video con audio | Plano ancho convencional (21:9) | minimax-community-license | HuggingFace, GitHub, fal | Sin geometria esferica; sirve de referencia de comparacion del mismo autor |
+| rehan-fal/minimax-h3-360-equirect-lora | LoRA sobre MiniMax H3 | Video 360 equirectangular con audio | minimax-community-license | Hugging Face, API de fal | Escala recomendada 0,75; 4K documentado; muestras y metricas de geometria publicadas |
+| rehan-fal/minimax-h3-vr180-sbs-lora | LoRA sobre MiniMax H3 | Video VR180 estereoscopico lado a lado | no disponible | Hugging Face | Mismo autor y modelo base; formato estereo de 180 grados en lugar de esfera completa |
+| MiniMaxAI/MiniMax-H3 (base) | Modelo texto a video con audio | Plano ancho convencional (21:9) | minimax-community-license | Hugging Face, GitHub, fal | Sin geometria esferica; sirve de referencia de comparacion del mismo autor |
 
 ## Limitaciones y advertencias
 
@@ -96,14 +96,14 @@ A escala 1,0 los valores de costura y polos son ligeramente peores que a 0,75, s
 - Los archivos de 2K y 4K se generan escalando una pasada previa de 768P, no con un render nativo a esa resolución.
 - No se declaran idiomas soportados ni sesgos conocidos; la ausencia de datos multilingües dificulta evaluar el comportamiento con prompts en castellano.
 - Riesgo de alucinación visual y de audio: al ser un modelo generativo, puede inventar elementos de escena o sonidos no descritos en el prompt.
-- Uso comercial sujeto a la licencia comunitaria de MiniMax, cuyo texto enlazado en la model card hay que revisar antes de desplegar en producción; en HuggingFace la licencia figura como `other`.
+- Uso comercial sujeto a la licencia comunitaria de MiniMax, cuyo texto enlazado en la model card hay que revisar antes de desplegar en producción; en Hugging Face la licencia figura como `other`.
 - El repositorio registra 0 descargas, por lo que la validación por terceros es escasa y las métricas publicadas proceden del propio autor.
 - Cualquier despliegue depende del modelo base MiniMax H3 y, en la práctica documentada, de la API de fal, lo que añade dependencia de un proveedor externo y coste por generación.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rehan-fal/minimax-h3-360-equirect-lora
-- Modelo base MiniMax H3 en HuggingFace: https://huggingface.co/MiniMaxAI/MiniMax-H3
+- Modelo en Hugging Face: https://huggingface.co/rehan-fal/minimax-h3-360-equirect-lora
+- Modelo base MiniMax H3 en Hugging Face: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Licencia del modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE
 - Repositorio GitHub de MiniMax H3: https://github.com/MiniMax-AI/MiniMax-H3
 - Documentación de la API de LoRA texto a vídeo en fal: https://fal.ai/models/minimax/h3/text-to-video/lora/api

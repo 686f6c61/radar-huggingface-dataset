@@ -78,6 +78,6 @@ La comparativa se limita a parametros y disponibilidad, ya que no se dispone de 
 
 ## Enlaces
 
-- Repositorio HuggingFace: [bloomer010/Ling-3.0-flash-REAP384-97B-A5B](https://huggingface.co/bloomer010/Ling-3.0-flash-REAP384-97B-A5B)
+- Repositorio Hugging Face: [bloomer010/Ling-3.0-flash-REAP384-97B-A5B](https://huggingface.co/bloomer010/Ling-3.0-flash-REAP384-97B-A5B)
 - Modelo base: [inclusionAI/Ling-3.0-flash](https://huggingface.co/inclusionAI/Ling-3.0-flash)
 - Paper de referencia REAP: [arXiv:2510.13999](https://arxiv.org/abs/2510.13999)

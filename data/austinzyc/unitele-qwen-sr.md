@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Base | Contexto/resolución | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| UniTele-Qwen-SR | LoRA de SR teleobjetivo | Qwen-Image-Edit-2511 | canvas 1024x768 / 768x1024 | Apache-2.0 | HuggingFace (0 descargas) |
-| Qwen-Image-Edit-2511 | Modelo de edición de imagen | — | no disponible | licencia propia de Qwen | HuggingFace |
+| UniTele-Qwen-SR | LoRA de SR teleobjetivo | Qwen-Image-Edit-2511 | canvas 1024x768 / 768x1024 | Apache-2.0 | Hugging Face (0 descargas) |
+| Qwen-Image-Edit-2511 | Modelo de edición de imagen | — | no disponible | licencia propia de Qwen | Hugging Face |
 | Alternativas de SR genérica | no disponible | — | — | — | — |
 
 No se dispone de datos de rendimiento ni de modelos comparables de la misma categoría (SR teleobjetivo condicionada por dispositivo) en la información proporcionada.
@@ -76,14 +76,14 @@ No se dispone de datos de rendimiento ni de modelos comparables de la misma cate
 - Riesgo de alucinación de texturas: como otros sistemas de SR generativa, puede alterar o inventar detalles ambiguos; la nitidez aparente no garantiza fidelidad a la escena fotografiada.
 - El adaptador está entrenado para tres dispositivos concretos (Huawei, iPhone 17 Pro Max, vivo X300 Ultra); su comportamiento en otras cámaras no está validado.
 - Sin métricas publicadas de calidad (PSNR, SSIM, LPIPS) en la información disponible.
-- Sin descargas ni likes registrados en HuggingFace en el momento de la consulta; madurez y soporte comunitario limitados.
+- Sin descargas ni likes registrados en Hugging Face en el momento de la consulta; madurez y soporte comunitario limitados.
 - Idiomas soportados no disponibles (modelo de imagen, no de texto).
 - La licencia Apache-2.0 cubre el adaptador, pero el uso comercial del conjunto depende también de la licencia del modelo base Qwen.
 - Requisitos de memoria no especificados; el despliegue en hardware de consumo no está confirmado.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AustinZYC/UniTele-Qwen-SR
+- Hugging Face: https://huggingface.co/AustinZYC/UniTele-Qwen-SR
 - Paper UniTele: https://arxiv.org/abs/2610.39617
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-Edit-2511
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen-Image-Edit-2511 (sección de licencia)

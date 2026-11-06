@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_100m_seed44_epoch3` es un checkpoint de investigación de generación de texto publicado en HuggingFace por el usuario Lanni-ni. Según su nomenclatura, se trata de un modelo de lenguaje pequeño basado en una variante de ALiBi dinámico (sesgos lineales en la atención) y enmarcado en el contexto del desafío BabyLM, orientado al modelado de lenguaje con corpus limitados. El checkpoint tiene 27.447.040 parámetros y se distribuye en formato safetensors, con un peso total de 0,1 GB. La fecha de creación en HuggingFace es el 5 de septiembre de 2026.
+El modelo `Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_100m_seed44_epoch3` es un checkpoint de investigación de generación de texto publicado en Hugging Face por el usuario Lanni-ni. Según su nomenclatura, se trata de un modelo de lenguaje pequeño basado en una variante de ALiBi dinámico (sesgos lineales en la atención) y enmarcado en el contexto del desafío BabyLM, orientado al modelado de lenguaje con corpus limitados. El checkpoint tiene 27.447.040 parámetros y se distribuye en formato safetensors, con un peso total de 0,1 GB. La fecha de creación en Hugging Face es el 5 de septiembre de 2026.
 
 La información pública es mínima: la model card es una plantilla autogenerada y todos los campos clave están marcados como "More Information Needed". No se han publicado detalles sobre la arquitectura interna, los datos de entrenamiento, la longitud de contexto, los idiomas soportados ni la licencia. El modelo está etiquetado con `custom_code`, lo que indica que requiere código personalizado para cargarse en `transformers`. Al ser un modelo experimental sin documentación ni evaluaciones publicadas, su interés es principalmente académico, para estudiar el comportamiento de mecanismos de atención alternativos en modelos de tamaño reducido.
 
@@ -22,7 +22,7 @@ La información pública es mínima: la model card es una plantilla autogenerada
 
 El nombre del modelo sugiere que emplea una variante de ALiBi (Attention with Linear Biases), una técnica de posición que añade sesgos lineales a los logits de atención para extrapolar a secuencias más largas. El término "dynamic" indica que estos sesgos no son estáticos, aunque no existe documentación técnica que detalle la implementación. El sufijo "inverse" apunta a una configuración o inversión de la escala de esos sesgos. La biblioteca declarada es `transformers` y el tag `custom_code` confirma que la implementación no está integrada de serie.
 
-El sufijo "babylm" sugiere que el modelo ha sido entrenado en el contexto del desafío BabyLM, cuyo objetivo es entrenar modelos de lenguaje con corpus limitados (típicamente 10M o 100M de palabras). La ausencia de datos en la model card impide confirmar el tamaño exacto del corpus, pero el sufijo "100m" probablemente se refiere al límite de 100 millones de tokens. El checkpoint corresponde a la época 3 del entrenamiento y usa la semilla 44, lo que sugiere que forma parte de una serie de experimentos de reproducibilidad. El tag `arxiv:1910.09700` aparece en HuggingFace, pero corresponde al paper de Lacoste et al. sobre estimación de impacto climático (ML Impact calculator) que se incluye en la plantilla de la model card, y no describe la arquitectura del modelo.
+El sufijo "babylm" sugiere que el modelo ha sido entrenado en el contexto del desafío BabyLM, cuyo objetivo es entrenar modelos de lenguaje con corpus limitados (típicamente 10M o 100M de palabras). La ausencia de datos en la model card impide confirmar el tamaño exacto del corpus, pero el sufijo "100m" probablemente se refiere al límite de 100 millones de tokens. El checkpoint corresponde a la época 3 del entrenamiento y usa la semilla 44, lo que sugiere que forma parte de una serie de experimentos de reproducibilidad. El tag `arxiv:1910.09700` aparece en Hugging Face, pero corresponde al paper de Lacoste et al. sobre estimación de impacto climático (ML Impact calculator) que se incluye en la plantilla de la model card, y no describe la arquitectura del modelo.
 
 ## Capacidades
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 ## Comparativa con modelos similares
 
-No se han encontrado datos de modelos comparables en la informacion proporcionada. Existen otros checkpoints del mismo autor en HuggingFace con nomenclatura similar, probablemente variantes del mismo experimento, pero sin especificaciones publicadas. La siguiente tabla refleja la falta de datos:
+No se han encontrado datos de modelos comparables en la informacion proporcionada. Existen otros checkpoints del mismo autor en Hugging Face con nomenclatura similar, probablemente variantes del mismo experimento, pero sin especificaciones publicadas. La siguiente tabla refleja la falta de datos:
 
 | Modelo | Parametros | Contexto | Licencia |
 |---|---|---|---|
@@ -65,7 +65,7 @@ No se han encontrado datos de modelos comparables en la informacion proporcionad
 
 ## Limitaciones y advertencias
 
-- La información pública es extremadamente limitada; esta ficha se ha construido a partir de los metadatos de HuggingFace y no de documentación técnica del autor.
+- La información pública es extremadamente limitada; esta ficha se ha construido a partir de los metadatos de Hugging Face y no de documentación técnica del autor.
 - No se han evaluado sesgos ni riesgos éticos. La model card no contiene análisis de sesgos, por lo que no es posible garantizar la seguridad del modelo en tareas sensibles.
 - El riesgo de alucinación es desconocido; al ser un modelo pequeño sin benchmarks publicados, su fiabilidad en cualquier aplicación real no ha sido validada.
 - La licencia aparece como no disponible. Esto implica que el autor no ha otorgado permisos explícitos para uso comercial, redistribución o modificación, por lo que cualquier uso debe consultarse con el autor.
@@ -75,7 +75,7 @@ No se han encontrado datos de modelos comparables en la informacion proporcionad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_100m_seed44_epoch3
+- Modelo en Hugging Face: https://huggingface.co/Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_100m_seed44_epoch3
 - Variante del autor (epoch4): https://huggingface.co/Lanni-ni/dynamic_alibi_2_4_256_babylm_100m_epoch4
 - Variante del autor (inverse_epoch1): https://huggingface.co/Lanni-ni/dynamic_alibi_2_4_256_babylm_100m_inverse_epoch1
 - Paper de impacto ambiental mencionado en el tag: https://arxiv.org/abs/1910.09700

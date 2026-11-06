@@ -63,7 +63,7 @@ No disponible. No se puede comparar con otros modelos de lenguaje porque no es u
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/openbenchmarks/parallel-basic
+- Repositorio Hugging Face: https://huggingface.co/openbenchmarks/parallel-basic
 - Documentación de la API (según la model card): https://docs.parallel.ai/api-reference/search/search
 - Leaderboard en vivo (según la model card): https://parallel.ai
 - Dataset del benchmark: https://huggingface.co/datasets/openbenchmarks/OB-News-Websearch

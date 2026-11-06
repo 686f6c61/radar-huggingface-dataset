@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Melty_Style es un adaptador LoRA (Low-Rank Adaptation) para generación de imágenes text-to-image, publicado por el usuario Praelatus en HuggingFace. El modelo está diseñado como una extensión del modelo base circlestone-labs/Anima, un modelo de difusión orientado a ilustración anime, y su propósito es aplicar un estilo visual concreto denominado "Melty" a las imágenes generadas. El repositorio tiene un tamaño de 0.2 GB y se distribuye a través de la librería diffusers, lo que indica que está pensado para integrarse en pipelines estándar de generación de imágenes.
+Melty_Style es un adaptador LoRA (Low-Rank Adaptation) para generación de imágenes text-to-image, publicado por el usuario Praelatus en Hugging Face. El modelo está diseñado como una extensión del modelo base circlestone-labs/Anima, un modelo de difusión orientado a ilustración anime, y su propósito es aplicar un estilo visual concreto denominado "Melty" a las imágenes generadas. El repositorio tiene un tamaño de 0.2 GB y se distribuye a través de la librería diffusers, lo que indica que está pensado para integrarse en pipelines estándar de generación de imágenes.
 
 La relevancia de este tipo de adaptadores reside en su capacidad para especializar un modelo base genérico sin necesidad de reentrenarlo por completo, permitiendo a desarrolladores y artistas obtener resultados con una estética particular mediante un único trigger textual (`@mltptst`). Aunque la información pública es escasa —no se especifican detalles de entrenamiento, licencia ni métricas de rendimiento—, el modelo está orientado a la generación de personajes anime con prompts descriptivos en inglés, como se observa en los ejemplos del widget de la model card. Es un recurso útil para quienes trabajan en ilustración automatizada, prototipado de personajes o generación de assets para proyectos visuales.
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para establecer una comparativa rigurosa. El modelo pertenece a la categoría de LoRAs de estilo para generación de imágenes anime, de los cuales existen numerosos ejemplos en HuggingFace (por ejemplo, LoRAs para estilos de artistas concretos o para series específicas). Sin embargo, sin datos de rendimiento ni especificaciones del modelo base, no es posible comparar parámetros, contexto, calidad de salida ni licencia con alternativas concretas. Se recomienda al usuario evaluar el modelo directamente en su propio hardware y comparar visualmente los resultados con otros adaptadores de la misma categoría.
+No se dispone de información suficiente para establecer una comparativa rigurosa. El modelo pertenece a la categoría de LoRAs de estilo para generación de imágenes anime, de los cuales existen numerosos ejemplos en Hugging Face (por ejemplo, LoRAs para estilos de artistas concretos o para series específicas). Sin embargo, sin datos de rendimiento ni especificaciones del modelo base, no es posible comparar parámetros, contexto, calidad de salida ni licencia con alternativas concretas. Se recomienda al usuario evaluar el modelo directamente en su propio hardware y comparar visualmente los resultados con otros adaptadores de la misma categoría.
 
 ## Limitaciones y advertencias
 
@@ -69,4 +69,4 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Praelatus/Melty_Style
+- Repositorio en Hugging Face: https://huggingface.co/Praelatus/Melty_Style

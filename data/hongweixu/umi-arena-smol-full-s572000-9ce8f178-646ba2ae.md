@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `HongWeiXu/umi-arena-smol-full-s572000-9ce8f178-646ba2ae` es un checkpoint de inferencia derivado de SmolVLA, un modelo de vision-lenguaje-accion (VLA) orientado a control robotico. Lo publica el usuario HongWeiXu en HuggingFace y esta preparado especificamente para la evaluacion de la competicion UMI Arena. El checkpoint corresponde al paso de entrenamiento 572000 y opera con 32 filas de accion nativas de 16 dimensiones cada una, consumiendo dos imagenes RGB de muneca junto con un estado nativo de 9 dimensiones.
+El modelo identificado como `HongWeiXu/umi-arena-smol-full-s572000-9ce8f178-646ba2ae` es un checkpoint de inferencia derivado de SmolVLA, un modelo de vision-lenguaje-accion (VLA) orientado a control robotico. Lo publica el usuario HongWeiXu en Hugging Face y esta preparado especificamente para la evaluacion de la competicion UMI Arena. El checkpoint corresponde al paso de entrenamiento 572000 y opera con 32 filas de accion nativas de 16 dimensiones cada una, consumiendo dos imagenes RGB de muneca junto con un estado nativo de 9 dimensiones.
 
 Con 450.046.176 parametros (aproximadamente 450 millones) y un repositorio de 1,8 GB en formato safetensors, se situa en la categoria de modelos ligeros de robotica. Su relevancia es acotada: no es un modelo de proposito general ni un lanzamiento oficial, sino un artefacto de competicion que hereda las condiciones de uso del modelo upstream SmolVLA, su tokenizador, el software asociado y los terminos del dataset de entrenamiento.
 
@@ -73,5 +73,5 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento ni e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HongWeiXu/umi-arena-smol-full-s572000-9ce8f178-646ba2ae
+- Hugging Face: https://huggingface.co/HongWeiXu/umi-arena-smol-full-s572000-9ce8f178-646ba2ae
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

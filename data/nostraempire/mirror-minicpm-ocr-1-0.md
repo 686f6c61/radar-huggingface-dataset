@@ -92,7 +92,7 @@ Los datos de parámetros, contexto y licencia de PaddleOCR-VL-1.6 y MinerU2.5 Pr
 
 ## Enlaces
 
-- Repositorio HuggingFace (espejo): https://huggingface.co/NostraEmpire/mirror-minicpm-ocr-1.0
+- Repositorio Hugging Face (espejo): https://huggingface.co/NostraEmpire/mirror-minicpm-ocr-1.0
 - Modelo base: https://huggingface.co/openbmb/MiniCPM-V-4.6
 - Variante DSpark BF16: https://huggingface.co/openbmb/MiniCPM-OCR-1.0-DSpark
 - Variante DSpark GGUF: https://huggingface.co/openbmb/MiniCPM-OCR-1.0-DSpark-gguf

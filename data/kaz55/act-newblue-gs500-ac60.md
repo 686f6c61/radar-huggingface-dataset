@@ -80,11 +80,11 @@ La comparacion mas directa es con las otras variantes del mismo barrido, que com
 
 | Modelo | GelSight | Arquitectura | Parametros | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kaz55/act-newblue-gs500-ac60 | 500x375 (nativa) | ACT, chunk 60 | 51.668.634 | no disponible | publico en HuggingFace |
-| Kaz55/act-newblue-gs320-ac60 | 320x240 | ACT, chunk 60 | no disponible | no disponible | publico en HuggingFace |
-| Kaz55/act-newblue-gs160-ac60 | 160x120 | ACT, chunk 60 | no disponible | no disponible | publico en HuggingFace |
-| Kaz55/act-newblue-gs88-ac60 | 88x66 | ACT, chunk 60 | no disponible | no disponible | publico en HuggingFace |
-| Kaz55/act-newblue-gs0-ac60 | sin GelSight | ACT, chunk 60 | no disponible | no disponible | publico en HuggingFace |
+| Kaz55/act-newblue-gs500-ac60 | 500x375 (nativa) | ACT, chunk 60 | 51.668.634 | no disponible | publico en Hugging Face |
+| Kaz55/act-newblue-gs320-ac60 | 320x240 | ACT, chunk 60 | no disponible | no disponible | publico en Hugging Face |
+| Kaz55/act-newblue-gs160-ac60 | 160x120 | ACT, chunk 60 | no disponible | no disponible | publico en Hugging Face |
+| Kaz55/act-newblue-gs88-ac60 | 88x66 | ACT, chunk 60 | no disponible | no disponible | publico en Hugging Face |
+| Kaz55/act-newblue-gs0-ac60 | sin GelSight | ACT, chunk 60 | no disponible | no disponible | publico en Hugging Face |
 
 No se dispone de datos para comparar con otras familias de politicas de robotica (por ejemplo, Diffusion Policy u otras implementaciones de ACT en LeRobot) en esta misma tarea, ni de metricas de rendimiento que permitan establecer una jerarquia entre ellas.
 
@@ -102,7 +102,7 @@ No se dispone de datos para comparar con otras familias de politicas de robotica
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kaz55/act-newblue-gs500-ac60
+- Modelo en Hugging Face: https://huggingface.co/Kaz55/act-newblue-gs500-ac60
 - Dataset asociado: https://huggingface.co/datasets/Kaz55/dg5f_ur5e_newblue
 - Libreria LeRobot: https://github.com/huggingface/lerobot
 - Paper original de ACT (referencia del metodo, no citado en la model card): https://arxiv.org/abs/2304.13705

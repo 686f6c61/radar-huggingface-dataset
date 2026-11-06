@@ -74,7 +74,7 @@ La comparativa se limita a variantes del mismo finetune y al modelo base, ya que
 
 ## Enlaces
 
-- [HuggingFace - dr-housemd/G4-MeroMero-v2-31B-exl3-3bpw](https://huggingface.co/dr-housemd/G4-MeroMero-v2-31B-exl3-3bpw)
+- [Hugging Face - dr-housemd/G4-MeroMero-v2-31B-exl3-3bpw](https://huggingface.co/dr-housemd/G4-MeroMero-v2-31B-exl3-3bpw)
 - [Colección G4 MeroMero 31B EXL3 de dr-housemd](https://huggingface.co/collections/dr-housemd/g4-meromero-31b-exl3)
 - [G4-MeroMero-v2-31B-W8A16-FP8 en LLM Explorer](https://llm-explorer.com/model/hoborific%2FG4-MeroMero-v2-31B-W8A16-FP8,3wrADyN2TMJ8VgO3UQmG8g)
 - [G4-MeroMero-v2-31B (zerofata) en LLM Explorer](https://llm-explorer.com/model/zerofata%2FG4-MeroMero-v2-31B,4EnQ8ulUmyaMNAyBspmm00)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GMR (General Motion Retargeting) es un framework de retargeting de movimiento humano a robots humanoides, publicado en el repositorio de HuggingFace `Tinghong-Ye22/code-GMR` (tamano del repo: 0,8 GB) y desarrollado en torno al trabajo de Yanjie Ze y colaboradores. No se trata de un modelo de lenguaje ni de una red generativa de texto: es una herramienta de software que convierte movimiento humano capturado (datos BVH, FBX, LAFAN1, video monoculo, etc.) en trayectorias articulares ejecutables por distintos robots humanoides, mediante un solucionador de cinematica inversa (IK) configurable.
+GMR (General Motion Retargeting) es un framework de retargeting de movimiento humano a robots humanoides, publicado en el repositorio de Hugging Face `Tinghong-Ye22/code-GMR` (tamano del repo: 0,8 GB) y desarrollado en torno al trabajo de Yanjie Ze y colaboradores. No se trata de un modelo de lenguaje ni de una red generativa de texto: es una herramienta de software que convierte movimiento humano capturado (datos BVH, FBX, LAFAN1, video monoculo, etc.) en trayectorias articulares ejecutables por distintos robots humanoides, mediante un solucionador de cinematica inversa (IK) configurable.
 
 El problema que resuelve es el cuello de botella del retargeting en robotica humanoide: cada robot tiene un numero de grados de libertad (DoF), limites de articulacion y limites de velocidad de motor distintos, y cada fuente de captura de movimiento usa un esqueleto y un formato propios. GMR unifica esa conversion con una unica clase `GeneralMotionRetargeting`, con retargeting en tiempo real de alta calidad, y esta ajustado para que las politicas de tracking por aprendizaje por refuerzo (RL) rindan correctamente sobre el movimiento resultante.
 
@@ -81,7 +81,7 @@ No se dispone de datos comparativos (parametros, contexto, rendimiento, licencia
 ## Limitaciones y advertencias
 
 - No es un modelo de lenguaje: cualquier expectativa de generacion de texto, razonamiento, codigo o tool calling queda fuera del alcance del repositorio.
-- La ficha del modelo no declara idiomas soportados, pipeline ni licencia en los metadatos de HuggingFace; la licencia MIT consta unicamente en el badge del README, por lo que conviene verificarla en el fichero `LICENSE` del repositorio antes de un uso comercial.
+- La ficha del modelo no declara idiomas soportados, pipeline ni licencia en los metadatos de Hugging Face; la licencia MIT consta unicamente en el badge del README, por lo que conviene verificarla en el fichero `LICENSE` del repositorio antes de un uso comercial.
 - El soporte de un nuevo robot o de un nuevo formato de movimiento depende de que el autor reciba los ficheros correspondientes (`.xml`, `.urdf` y meshes) y de que estos puedan abrirse en el repositorio; no es un proceso automatico.
 - La calidad del retargeting depende del ajuste de la configuracion IK por robot; el README remite a `DOC.md` como unica documentacion especifica, sin garantias de cobertura para todos los robots.
 - El rendimiento de las politicas de RL aguas abajo depende indirectamente de la calidad del retargeting; no se publican metricas de error en la informacion disponible.
@@ -91,7 +91,7 @@ No se dispone de datos comparativos (parametros, contexto, rendimiento, licencia
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Tinghong-Ye22/code-GMR
+- Hugging Face: https://huggingface.co/Tinghong-Ye22/code-GMR
 - Paper (arXiv 2505.02833): https://arxiv.org/abs/2505.02833
 - Informe tecnico de GMR (arXiv 2510.02252): https://arxiv.org/abs/2510.02252
 - Repositorio y releases en GitHub: https://github.com/YanjieZe/GMR/releases

@@ -57,7 +57,7 @@ No disponible. No se conocen modelos comparables de la misma categoria (adaptado
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Chuckythedoll2005/Voice_Models
+- Repositorio Hugging Face: https://huggingface.co/Chuckythedoll2005/Voice_Models
 - Perfil del autor: https://huggingface.co/Chuckythedoll2005
 - Modelo base: https://huggingface.co/Jackrong/Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled (no verificado)
 - Dataset mencionado: https://huggingface.co/datasets/nohurry/Opus-4.6-Reasoning-3000x-filtered (no verificado)

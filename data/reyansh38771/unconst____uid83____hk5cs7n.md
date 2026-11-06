@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `reyansh38771/unconst____uid83____hk5CS7N` es un modelo de lenguaje de gran tamaño (LLM) de tipo Mixture-of-Experts (MoE) con capacidades multimodales (imagen y texto), desarrollado por el usuario `reyansh38771` y publicado en HuggingFace. Se trata de un fine-tune del modelo base `marsplan0624/affine-5gedzafcvg-queen`, que a su vez parece estar relacionado con la familia Qwen (según el tag `qwen3_5_moe`). El modelo está diseñado para generación de texto, conversación y razonamiento, con un enfoque en razonamiento avanzado (tag `reason-v3`) y entrenamiento mediante DPO online (`online-dpo`).
+El modelo `reyansh38771/unconst____uid83____hk5CS7N` es un modelo de lenguaje de gran tamaño (LLM) de tipo Mixture-of-Experts (MoE) con capacidades multimodales (imagen y texto), desarrollado por el usuario `reyansh38771` y publicado en Hugging Face. Se trata de un fine-tune del modelo base `marsplan0624/affine-5gedzafcvg-queen`, que a su vez parece estar relacionado con la familia Qwen (según el tag `qwen3_5_moe`). El modelo está diseñado para generación de texto, conversación y razonamiento, con un enfoque en razonamiento avanzado (tag `reason-v3`) y entrenamiento mediante DPO online (`online-dpo`).
 
 Con aproximadamente 35,1 mil millones de parámetros totales y un tamaño de repositorio de 70,2 GB (sugiriendo pesos en fp16), este modelo se posiciona en el rango de los LLM de tamaño medio-grande. Su arquitectura MoE debería permitir una inferencia más eficiente que un modelo denso equivalente, aunque no se dispone de detalles sobre el número de expertos activos. El acceso es restringido (gated), por lo que los usuarios deben solicitar permiso al autor antes de descargarlo. La relevancia actual radica en su naturaleza multimodal y su entrenamiento con técnicas de alineación modernas, aunque la falta de documentación pública limita su evaluación inmediata.
 
@@ -60,7 +60,7 @@ No se dispone de información suficiente para comparar con otros modelos de la m
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere solicitar permiso al autor en HuggingFace, lo que puede limitar su uso en producción o investigación.
+- Acceso restringido: el modelo requiere solicitar permiso al autor en Hugging Face, lo que puede limitar su uso en producción o investigación.
 - Documentación escasa: no hay paper, card de modelo detallada ni información sobre sesgos, alucinaciones o limitaciones de contexto.
 - Licencia desconocida: no se especifica la licencia, por lo que el uso comercial es incierto y podría violar términos si se redistribuye.
 - Riesgo de alucinación: como todo LLM, puede generar información falsa o inventada, especialmente en tareas de razonamiento complejo.
@@ -70,6 +70,6 @@ No se dispone de información suficiente para comparar con otros modelos de la m
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/reyansh38771/unconst____uid83____hk5CS7N
+- Página del modelo en Hugging Face: https://huggingface.co/reyansh38771/unconst____uid83____hk5CS7N
 - Modelo base (referenciado): https://huggingface.co/marsplan0624/affine-5gedzafcvg-queen
 - No se han encontrado papers, blogs o demos adicionales en la información proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`darrenhuasaw/tiny-transformer-checkpoint` es un checkpoint de inicializacion de un transformador experimental publicado en HuggingFace por el usuario darrenhuasaw. No se trata de un modelo entrenado: la propia model card indica explicitamente que `model.safetensors` es un checkpoint valido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con benchmarks. El recuento real de parametros del fichero safetensors es de 16.576, un orden de magnitud propio de un ejemplo didactico o de un fixture de integracion continua, no de un modelo utilizable en produccion.
+`darrenhuasaw/tiny-transformer-checkpoint` es un checkpoint de inicializacion de un transformador experimental publicado en Hugging Face por el usuario darrenhuasaw. No se trata de un modelo entrenado: la propia model card indica explicitamente que `model.safetensors` es un checkpoint valido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con benchmarks. El recuento real de parametros del fichero safetensors es de 16.576, un orden de magnitud propio de un ejemplo didactico o de un fixture de integracion continua, no de un modelo utilizable en produccion.
 
 El repositorio contiene principalmente codigo (`main.py`), la configuracion de arquitectura (`config.json`), la receta de experimento por defecto (`training_args.json`) y el propio checkpoint. La model card describe una arquitectura denominada "Tiny Transformer" con escala etiquetada como "xlarge", atencion dispersa (sparse), fusion "concat mlp", activacion "gelu tanh" y normalizacion por batchnorm. Es importante subrayar que la etiqueta "xlarge" es un nombre interno del andamiaje experimental y no refleja el tamano real del modelo, que es de 16.576 parametros.
 
@@ -50,7 +50,7 @@ En cuanto al entrenamiento, la receta por defecto del script usa el optimizador 
 - Fixture de integracion continua para carga de safetensors: con 16.576 parametros y un fichero de decenas de kilobytes, el checkpoint se puede descargar y cargar en cada ejecucion de CI sin coste apreciable de tiempo ni almacenamiento, validando el camino de carga de pesos.
 - Pruebas de adaptadores de carga para arquitecturas personalizadas: dado que no existe una clase estandar asociada, es un caso de prueba realista para verificar que un `AutoModel` o un wrapper propio falla de forma controlada y que el adaptador registrado lo resuelve correctamente.
 - Esqueleto para ablaciones de arquitectura: el repositorio esta pensado para inspeccionar cambios de arquitectura antes de un entrenamiento completo. Se puede usar como base para comparar variantes de atencion o normalizacion con un presupuesto de computo minimo y ciclos de iteracion rapidos.
-- Material didactico: sirve para ilustrar la estructura de un repositorio de modelo en HuggingFace (config, pesos, argumentos de entrenamiento, README) y para explicar por que batchnorm es problematico en decodificacion autoregresiva frente a LayerNorm o RMSNorm.
+- Material didactico: sirve para ilustrar la estructura de un repositorio de modelo en Hugging Face (config, pesos, argumentos de entrenamiento, README) y para explicar por que batchnorm es problematico en decodificacion autoregresiva frente a LayerNorm o RMSNorm.
 - Medicion del sobrecoste de frameworks: al tener un coste de computo practicamente nulo, permite aislar y medir la latencia de arranque, la carga de pesos y el overhead de un framework de inferencia sin que el calculo del modelo contamine la medicion.
 - Verificacion de herramientas de conversion y cuantizacion: util para comprobar si un pipeline de conversion (por ejemplo, a GGUF) gestiona correctamente una arquitectura no estandar y si falla con un mensaje de error claro.
 
@@ -92,5 +92,5 @@ La comparacion relevante no es de rendimiento sino de proposito: este repositori
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/darrenhuasaw/tiny-transformer-checkpoint
+- Modelo en Hugging Face: https://huggingface.co/darrenhuasaw/tiny-transformer-checkpoint
 - No se han encontrado en la informacion disponible papers, blogs tecnicos, repositorios de codigo adicionales, demos ni espacios asociados a este modelo.

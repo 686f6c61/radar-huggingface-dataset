@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Finipher transaction classifier v1.0.0 es un clasificador de texto especializado en finanzas personales desarrollado por el usuario finipher y publicado en HuggingFace. El modelo clasifica líneas de transacciones bancarias o de tarjeta (nombres de comercios, cargos POS, transferencias ACH, etc.) en una de 17 categorías de gasto predefinidas: Education, Entertainment, Fees, Groceries, Healthcare, Income, Insurance, Mortgage, Personal Care, Rent, Restaurants, Shopping, Subscription, Transfer, Transportation, Travel y Utilities.
+Finipher transaction classifier v1.0.0 es un clasificador de texto especializado en finanzas personales desarrollado por el usuario finipher y publicado en Hugging Face. El modelo clasifica líneas de transacciones bancarias o de tarjeta (nombres de comercios, cargos POS, transferencias ACH, etc.) en una de 17 categorías de gasto predefinidas: Education, Entertainment, Fees, Groceries, Healthcare, Income, Insurance, Mortgage, Personal Care, Rent, Restaurants, Shopping, Subscription, Transfer, Transportation, Travel y Utilities.
 
 Técnicamente es un fine-tuning de `sentence-transformers/all-MiniLM-L6-v2` sobre la cabecera `BertForSequenceClassification`, con 22,7 millones de parámetros. Su relevancia radica en que resuelve un problema muy común en aplicaciones de finanzas personales (PFM): categorizar automáticamente los movimientos de una cuenta bancaria, algo que las apps de banca suelen hacer con reglas frágiles o con LLM genéricos que resultan caros para procesar miles de transacciones por usuario. Al ser tan pequeño, puede ejecutarse en CPU y clasificar volúmenes altos a coste marginal casi nulo.
 
@@ -70,17 +70,17 @@ Errores conocidos documentados por el autor:
 - VRAM para inferencia: aproximadamente 90-100 MB en fp32 (22,7M de parametros x 4 bytes); en fp16, unos 45-50 MB. Cabe con holgura en cualquier GPU moderna e incluso en la mayoria de SoCs edge.
 - CPU: perfectamente viable. Un BERT de 6 capas con secuencias de 64 tokens procesa miles de transacciones por segundo en un nucleo moderno; no se requiere GPU para cargas de trabajo tipicas de PFM.
 - Consumer GPU: cualquier GPU con 2 GB de VRAM o mas (GTX 1650, RTX 3060, RTX 4090, Apple Silicon unificado) ejecuta el modelo sin problemas.
-- Despliegue: libreria Transformers de HuggingFace con `AutoModelForSequenceClassification` (codigo de ejemplo en la model card). No hay pesos GGUF publicados, por lo que llama.cpp u Ollama no son opciones directas; para servirse como API se puede usar un contenedor simple con Transformers, o el Inference Endpoints de HuggingFace. No se menciona soporte para vLLM o TGI.
+- Despliegue: libreria Transformers de Hugging Face con `AutoModelForSequenceClassification` (codigo de ejemplo en la model card). No hay pesos GGUF publicados, por lo que llama.cpp u Ollama no son opciones directas; para servirse como API se puede usar un contenedor simple con Transformers, o el Inference Endpoints de Hugging Face. No se menciona soporte para vLLM o TGI.
 - Latencia: no se publican cifras; para un encoder de este tamano con max_length 64, la inferencia por linea esta tipicamente en el orden de milisegundos en CPU y sub-milisegundo en GPU (estimacion, no dato oficial).
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Tarea | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| finipher-transaction-classifier | 22,7M | Clasificacion de transacciones en 17 categorias | 64 tokens | other | HuggingFace, safetensors |
-| all-MiniLM-L6-v2 (base) | 22,7M | Embeddings de frases (no clasificador) | 256 tokens | Apache 2.0 | HuggingFace |
-| distilbert-base-uncased finetuned (p. ej. transaccion-classifiers de la comunidad) | ~66M | Clasificacion de texto general | 512 tokens | Apache 2.0 / variable | HuggingFace |
-| LLM generalista (p. ej. Llama 3.2 1B) con prompting | 1.200M | Clasificacion zero-shot por prompt | 128k tokens | Licencia Llama | HuggingFace, GGUF |
+| finipher-transaction-classifier | 22,7M | Clasificacion de transacciones en 17 categorias | 64 tokens | other | Hugging Face, safetensors |
+| all-MiniLM-L6-v2 (base) | 22,7M | Embeddings de frases (no clasificador) | 256 tokens | Apache 2.0 | Hugging Face |
+| distilbert-base-uncased finetuned (p. ej. transaccion-classifiers de la comunidad) | ~66M | Clasificacion de texto general | 512 tokens | Apache 2.0 / variable | Hugging Face |
+| LLM generalista (p. ej. Llama 3.2 1B) con prompting | 1.200M | Clasificacion zero-shot por prompt | 128k tokens | Licencia Llama | Hugging Face, GGUF |
 
 Frente a un LLM generalista, este modelo pierde flexibilidad (17 categorias fijas, solo ingles, formato de entrada estricto) pero gana radicalmente en coste, latencia y determinismo por transaccion. Frente a otros fine-tunings de BERT de la comunidad, su ventaja es el dominio especifico y las metricas publicadas; su desventaja es la licencia sin aclarar y el origen de los datos de entrenamiento pendiente de documentar.
 
@@ -99,6 +99,6 @@ Frente a un LLM generalista, este modelo pierde flexibilidad (17 categorias fija
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/finipher/finipher-transaction-classifier
+- Repositorio en Hugging Face: https://huggingface.co/finipher/finipher-transaction-classifier
 - Modelo base: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
 - Paper, blog o demo: no disponible (no se han encontrado enlaces adicionales en la informacion proporcionada)

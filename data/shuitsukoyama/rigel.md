@@ -4,7 +4,7 @@
 
 Rigel es un adaptador LoRA sobre el modelo Qwen3-VL-2B-Instruct desarrollado por ShuitsuKoyama, diseñado específicamente como evaluador de calidad de descripciones (captions) para vídeos e imágenes. A diferencia de un modelo generativo al uso, Rigel recibe como entrada un medio (vídeo o imagen), una caption candidata y, opcionalmente, captions de referencia, y devuelve una puntuación continua en el rango [0, 1] que refleja la calidad de la descripción. El problema que resuelve es la evaluación automática y objetiva de captions en pipelines de generación multimodal, donde medir la fidelidad de una descripción generada es costoso si se hace manualmente.
 
-El modelo se distribuye como un adaptador PEFT (LoRA) que debe combinarse con el modelo base Qwen3-VL-2B-Instruct, un transformer multimodal de 2.000 millones de parámetros con capacidad de procesar texto e imágenes/vídeo. El adaptador en sí contiene 2.925.066 parámetros entrenables, lo que lo hace extremadamente ligero en almacenamiento (el repositorio ocupa 0.0 GB según HuggingFace) y permite un despliegue económico sobre el modelo base.
+El modelo se distribuye como un adaptador PEFT (LoRA) que debe combinarse con el modelo base Qwen3-VL-2B-Instruct, un transformer multimodal de 2.000 millones de parámetros con capacidad de procesar texto e imágenes/vídeo. El adaptador en sí contiene 2.925.066 parámetros entrenables, lo que lo hace extremadamente ligero en almacenamiento (el repositorio ocupa 0.0 GB según Hugging Face) y permite un despliegue económico sobre el modelo base.
 
 La relevancia de Rigel radica en su especialización: en lugar de competir como modelo generalista, cubre una necesidad concreta en el ciclo de evaluación de sistemas de captioning (image captioning y video captioning), ofreciendo puntuaciones continuas que pueden integrarse en métricas automáticas, comparación de modelos o control de calidad en producción. Su licencia BSD-3-Clause facilita el uso comercial. El proyecto se publicó en octubre de 2026 y, en el momento de la consulta, no registra descargas ni likes.
 
@@ -57,16 +57,16 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: no disponible de forma explícita. El adaptador LoRA ocupa muy poco espacio (2.925.066 parámetros en safetensors), pero requiere cargar el modelo base Qwen3-VL-2B-Instruct, de 2.000 millones de parámetros, que en precisión FP16 requiere aproximadamente 4 GB de VRAM solo para los pesos, más memoria para el codificador visual y las activaciones.
 - GPU recomendadas: no especificadas en la información proporcionada. Por el tamaño del modelo base, una GPU consumer con 8 GB o más de VRAM debería ser suficiente en FP16; para cuantización a 4 bits, GPUs con 6 GB podrían ser viables, aunque esto no está confirmado por el autor.
 - ¿Cabe en GPU consumer? Probablemente sí, dado el tamaño del modelo base (2B), pero no hay confirmación oficial en la información disponible.
-- Opciones de despliegue: la librería declarada es `peft`, con integración mediante el paquete Python `rigel` y la CLI `rigel-score`. No se documenta soporte explícito para vLLM, llama.cpp, Ollama o TGI; al ser un adaptador LoRA sobre un modelo de HuggingFace, podría cargarse con `transformers` + `peft`, pero no está verificado en la información proporcionada.
+- Opciones de despliegue: la librería declarada es `peft`, con integración mediante el paquete Python `rigel` y la CLI `rigel-score`. No se documenta soporte explícito para vLLM, llama.cpp, Ollama o TGI; al ser un adaptador LoRA sobre un modelo de Hugging Face, podría cargarse con `transformers` + `peft`, pero no está verificado en la información proporcionada.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables en la documentación proporcionada. Rigel es un adaptador especializado en evaluación de captions, una categoría poco poblada en HuggingFace; las alternativas habituales serían métricas clásicas (BLEU, METEOR, CIDEr, SPICE) o evaluadores basados en modelos como CLIPScore, pero no se han proporcionado datos comparativos que permitan una tabla rigurosa.
+No se dispone de información sobre modelos comparables en la documentación proporcionada. Rigel es un adaptador especializado en evaluación de captions, una categoría poco poblada en Hugging Face; las alternativas habituales serían métricas clásicas (BLEU, METEOR, CIDEr, SPICE) o evaluadores basados en modelos como CLIPScore, pero no se han proporcionado datos comparativos que permitan una tabla rigurosa.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Rigel | 2.925.066 (adaptador) + 2B (base) | No disponible | Evaluacion de captions video/imagen | BSD-3-Clause | HuggingFace (0 descargas) |
+| Rigel | 2.925.066 (adaptador) + 2B (base) | No disponible | Evaluacion de captions video/imagen | BSD-3-Clause | Hugging Face (0 descargas) |
 | Alternativas | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -75,11 +75,11 @@ No se dispone de información sobre modelos comparables en la documentación pro
 - Riesgo de alucinación: al ser un modelo de scoring y no de generación libre, el riesgo de alucinación textual es bajo; sin embargo, la puntuación puede no correlacionarse con la calidad percibida por humanos en dominios fuera de distribución.
 - Limitaciones de contexto o idioma: los idiomas soportados no están especificados; no se documenta el comportamiento multilingüe del adaptador ni del modelo base en esta ficha.
 - Restricciones de licencia: BSD-3-Clause permite uso comercial, modificación y redistribución con atribución y sin garantía; es necesario conservar el aviso de copyright. Verificar también la licencia del modelo base Qwen3-VL-2B-Instruct, que puede tener condiciones adicionales.
-- Caveats para producción: el modelo tiene 0 descargas y 0 likes en HuggingFace, lo que indica ausencia de validación comunitaria; no hay benchmarks publicados que respalden su calidad. El repositorio ocupa 0.0 GB, lo que sugiere que los pesos del adaptador podrían no estar completamente subidos o que el tamaño es mínimo; conviene verificar la integridad de los archivos antes de desplegar. La fecha de creación (2026-10-26) es posterior a la fecha actual, lo que puede indicar un error en los metadatos o una publicación programada; verificar la disponibilidad real.
+- Caveats para producción: el modelo tiene 0 descargas y 0 likes en Hugging Face, lo que indica ausencia de validación comunitaria; no hay benchmarks publicados que respalden su calidad. El repositorio ocupa 0.0 GB, lo que sugiere que los pesos del adaptador podrían no estar completamente subidos o que el tamaño es mínimo; conviene verificar la integridad de los archivos antes de desplegar. La fecha de creación (2026-10-26) es posterior a la fecha actual, lo que puede indicar un error en los metadatos o una publicación programada; verificar la disponibilidad real.
 - Dependencia del modelo base: requiere descargar Qwen3-VL-2B-Instruct, lo que añade latencia de arranque y requisitos de memoria no triviales para un adaptador de solo 2.9M de parámetros.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ShuitsuKoyama/Rigel
+- Hugging Face: https://huggingface.co/ShuitsuKoyama/Rigel
 - Repositorio GitHub: https://github.com/SHUonkei/Rigel
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct

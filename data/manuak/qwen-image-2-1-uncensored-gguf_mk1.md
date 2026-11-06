@@ -6,7 +6,7 @@ Manuak/Qwen-Image-2.1-Uncensored-GGUF_MK1 es una cuantizacion en formato GGUF de
 
 El modelo resuelve la generacion de imagenes a partir de prompts de texto (pipeline text-to-image) en equipos con VRAM limitada, al reducir el peso del transformer frente a los pesos completos en bf16 (aproximadamente 33 GB segun las guias consultadas). La etiqueta "Uncensored" del nombre no implica una modificacion de los pesos: segun el analisis publicado en blog.laozhang.ai, las subidas marcadas como "uncensored" aparecidas el dia del lanzamiento son cuantizaciones planas de los mismos pesos, no un modelo reentrenado o filtrado.
 
-El acceso al repositorio esta restringido (gated) y requiere aceptar condiciones en HuggingFace. La licencia declarada es qwen-research, etiquetada como license:other, lo que condiciona el uso comercial. En el momento de la consulta el repositorio registra 0 descargas y 0 likes, por lo que no existe validacion comunitaria de su calidad o integridad.
+El acceso al repositorio esta restringido (gated) y requiere aceptar condiciones en Hugging Face. La licencia declarada es qwen-research, etiquetada como license:other, lo que condiciona el uso comercial. En el momento de la consulta el repositorio registra 0 descargas y 0 likes, por lo que no existe validacion comunitaria de su calidad o integridad.
 
 ## Especificaciones tecnicas
 
@@ -17,7 +17,7 @@ El acceso al repositorio esta restringido (gated) y requiere aceptar condiciones
 | Longitud de contexto | no disponible (la entrada es un prompt de texto; no se especifica longitud maxima) |
 | Tipos de cuantizacion | GGUF; se recomienda Q4_K_M. No se detalla el listado completo de cuantizaciones incluidas en el repositorio |
 | Idiomas soportados | no disponible |
-| Licencia | qwen-research (etiquetada como license:other en HuggingFace) |
+| Licencia | qwen-research (etiquetada como license:other en Hugging Face) |
 | Formato de pesos | GGUF (transformer). El pipeline completo requiere ademas text encoder en safetensors (qwen3vl_8b_bf16.safetensors o qwen3vl_8b_int8_convrot.safetensors) y VAE (qwen_image_2.1_vae_bf16.safetensors) |
 
 ## Arquitectura y entrenamiento
@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes. Todas ell
 
 - La etiqueta "Uncensored" no corresponde a un modelo modificado: son cuantizaciones de los mismos pesos, segun el analisis publicado en blog.laozhang.ai. No debe esperarse un comportamiento distinto en cuanto a filtrado respecto al modelo original.
 - La licencia qwen-research esta etiquetada como license:other; los terminos exactos no se detallan en la informacion disponible. Al tratarse de una licencia de investigacion, conviene revisar el texto completo antes de cualquier uso comercial o de redistribucion.
-- El acceso al repositorio es restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar los pesos.
+- El acceso al repositorio es restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar los pesos.
 - El repositorio tiene 0 descargas y 0 likes, sin historial de validacion por parte de la comunidad. No hay garantia documentada sobre la integridad o fidelidad de la cuantizacion.
 - El autor no publica informacion sobre el proceso de cuantizacion, las herramientas usadas ni la perdida de calidad respecto a bf16.
 - La cuantizacion Q4_K_M introduce degradacion en la fidelidad de la imagen generada respecto a los pesos completos; la magnitud no esta documentada.

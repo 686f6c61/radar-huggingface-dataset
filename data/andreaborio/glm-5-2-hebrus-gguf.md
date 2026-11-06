@@ -74,7 +74,7 @@ No disponible. No se dispone de información sobre modelos comparables en la mis
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/andreaborio/GLM-5.2-Hebrus-GGUF
+- Repositorio Hugging Face: https://huggingface.co/andreaborio/GLM-5.2-Hebrus-GGUF
 - Modelo base: https://huggingface.co/zai-org/GLM-5.2
 - Repositorio Hebrus: https://github.com/andreaborio/hebrus
 - Contrato de soporte runtime: https://github.com/andreaborio/hebrus/blob/v0.3.0/docs/contracts/RUNTIME_SUPPORT.md

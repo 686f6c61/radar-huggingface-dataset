@@ -2,7 +2,7 @@
 
 ## Resumen
 
-cpu-timing-18b-slerp es un modelo de lenguaje obtenido mediante fusión de pesos (model merge), publicado por el usuario MergekitCloud en HuggingFace. No es un modelo entrenado desde cero: es el resultado de combinar dos modelos hermanos, vicgalle/solarized-18B-dpo y vicgalle/solarized-18B-truthy, aplicando el método SLERP con la herramienta mergekit. El repositorio declara arquitectura Llama, pipeline de text-generation y 17.929.236.480 parámetros contabilizados en safetensors, con un tamaño de repositorio de 35,9 GB en bfloat16.
+cpu-timing-18b-slerp es un modelo de lenguaje obtenido mediante fusión de pesos (model merge), publicado por el usuario MergekitCloud en Hugging Face. No es un modelo entrenado desde cero: es el resultado de combinar dos modelos hermanos, vicgalle/solarized-18B-dpo y vicgalle/solarized-18B-truthy, aplicando el método SLERP con la herramienta mergekit. El repositorio declara arquitectura Llama, pipeline de text-generation y 17.929.236.480 parámetros contabilizados en safetensors, con un tamaño de repositorio de 35,9 GB en bfloat16.
 
 El modelo aborda, en principio, el mismo problema que sus predecesores: generación de texto conversacional. Su interés es fundamentalmente metodológico, ya que ilustra cómo combinar dos variantes de ajuste (una orientada a preferencias tipo DPO y otra orientada a veracidad) mediante interpolación esférica capa a capa, sin coste adicional de entrenamiento.
 
@@ -78,9 +78,9 @@ No se dispone de datos de benchmarks ni de especificaciones completas de alterna
 
 | Modelo | Parámetros | Contexto | Licencia | Naturaleza | Disponibilidad |
 |---|---|---|---|---|---|
-| cpu-timing-18b-slerp | 17,93B | no disponible | no disponible | fusión SLERP de dos checkpoints | HuggingFace, 0 descargas |
-| vicgalle/solarized-18B-dpo | no disponible | no disponible | no disponible | modelo base ajustado con DPO | HuggingFace |
-| vicgalle/solarized-18B-truthy | no disponible | no disponible | no disponible | modelo base orientado a veracidad | HuggingFace |
+| cpu-timing-18b-slerp | 17,93B | no disponible | no disponible | fusión SLERP de dos checkpoints | Hugging Face, 0 descargas |
+| vicgalle/solarized-18B-dpo | no disponible | no disponible | no disponible | modelo base ajustado con DPO | Hugging Face |
+| vicgalle/solarized-18B-truthy | no disponible | no disponible | no disponible | modelo base orientado a veracidad | Hugging Face |
 
 No se han identificado en la información proporcionada otros modelos comparables de la misma categoría (fusiones SLERP de ~18B sobre arquitectura Llama) con datos verificables.
 
@@ -98,7 +98,7 @@ No se han identificado en la información proporcionada otros modelos comparable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MergekitCloud/cpu-timing-18b-slerp
+- Modelo en Hugging Face: https://huggingface.co/MergekitCloud/cpu-timing-18b-slerp
 - Modelo base vicgalle/solarized-18B-dpo: https://huggingface.co/vicgalle/solarized-18B-dpo
 - Modelo base vicgalle/solarized-18B-truthy: https://huggingface.co/vicgalle/solarized-18B-truthy
 - Repositorio de mergekit: https://github.com/cg123/mergekit

@@ -75,9 +75,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tarea | Arquitectura | Parametros | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| vr-guardian-segmentation | Segmentacion semantica binaria de Guardian Grid | U-Net + ResNet-34 | No disponible (~98 MB de checkpoint) | Imagen 1024x1024 | MIT | HuggingFace, pesos ONNX y PyTorch |
+| vr-guardian-segmentation | Segmentacion semantica binaria de Guardian Grid | U-Net + ResNet-34 | No disponible (~98 MB de checkpoint) | Imagen 1024x1024 | MIT | Hugging Face, pesos ONNX y PyTorch |
 | YOLOv8-seg (checkpoint incluido en el mismo repositorio, `yolo_guardian_grid_seg_best.pt`) | Segmentacion de instancias de la misma rejilla | YOLOv8 con cabeza de segmentacion | No disponible (checkpoint de ~54,8 MB) | No disponible | MIT (segun el repositorio) | Incluido en el mismo repositorio |
-| Segment Anything (SAM) | Segmentacion general por prompts | Transformer ViT + prompt encoder | 91 M (ViT-B) a 636 M (ViT-H) en las variantes publicas | Imagen de alta resolucion con prompts | Apache 2.0 en las variantes publicas | Meta AI / HuggingFace |
+| Segment Anything (SAM) | Segmentacion general por prompts | Transformer ViT + prompt encoder | 91 M (ViT-B) a 636 M (ViT-H) en las variantes publicas | Imagen de alta resolucion con prompts | Apache 2.0 en las variantes publicas | Meta AI / Hugging Face |
 | LaMa / ProPainter | Inpainting de video | No es un segmentador; se usa en la fase posterior | No disponible | No disponible | No disponible en la informacion proporcionada | Repositorios publicos de los autores |
 
 La comparacion cuantitativa de rendimiento no es posible porque ninguno de los datos de IoU, Dice o F1 esta publicado en la informacion disponible. La diferencia funcional clave frente a SAM es que vr-guardian-segmentation es un modelo de clase unica, especializado y de menor tamano, mientras que SAM es un segmentador general que requiere prompts y no esta ajustado a la apariencia concreta de la rejilla de Meta Quest.
@@ -96,5 +96,5 @@ La comparacion cuantitativa de rendimiento no es posible porque ninguno de los d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BiernyVR/vr-guardian-segmentation
+- Modelo en Hugging Face: https://huggingface.co/BiernyVR/vr-guardian-segmentation
 - Los resultados de la busqueda web proporcionada no contienen enlaces relevantes para este modelo: son articulos de configuracion de PC y hilos de foro sin relacion con segmentacion de imagen ni con VR. No se dispone de paper, blog tecnico, repositorio de codigo ni demo adicionales mas alla de la propia model card.

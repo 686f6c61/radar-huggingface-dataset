@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Resolucion | Dimension del embedding | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3_vit_306m.qwen3_5_2b | 305,5 M | 768 x 768 (cualquier multiple de 16) | 1024 | Apache 2.0 | HuggingFace, via timm |
-| CLIP ViT-L/14 | aprox. 304 M en la torre visual (428 M con el codificador de texto) | 224 x 224 | 768 | MIT (variante OpenAI) | HuggingFace, OpenCLIP |
-| DINOv2 ViT-L/14 | aprox. 304 M | 224 x 224 (adaptable) | 1024 | Apache 2.0 | HuggingFace |
-| SigLIP So400m-patch14-384 | aprox. 400 M | 384 x 384 | 1152 | Apache 2.0 | HuggingFace |
+| qwen3_vit_306m.qwen3_5_2b | 305,5 M | 768 x 768 (cualquier multiple de 16) | 1024 | Apache 2.0 | Hugging Face, via timm |
+| CLIP ViT-L/14 | aprox. 304 M en la torre visual (428 M con el codificador de texto) | 224 x 224 | 768 | MIT (variante OpenAI) | Hugging Face, OpenCLIP |
+| DINOv2 ViT-L/14 | aprox. 304 M | 224 x 224 (adaptable) | 1024 | Apache 2.0 | Hugging Face |
+| SigLIP So400m-patch14-384 | aprox. 400 M | 384 x 384 | 1152 | Apache 2.0 | Hugging Face |
 
 La comparacion cuantitativa de rendimiento no es posible con la informacion disponible: no hay resultados publicados de este checkpoint en tareas estandar de clasificacion, recuperacion o segmentacion. Las cifras de parametros y licencias de los modelos alternativos proceden de sus propias fichas publicas y deben verificarse antes de tomar una decision de produccion. La ventaja diferencial de este modelo es la resolucion nativa alta (768 px frente a los 224 px de CLIP ViT-L/14 o DINOv2 ViT-L/14), lo que resulta relevante para tareas que requieren detalle espacial fino.
 
@@ -95,14 +95,14 @@ La comparacion cuantitativa de rendimiento no es posible con la informacion disp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/timm/qwen3_vit_306m.qwen3_5_2b
+- Modelo en Hugging Face: https://huggingface.co/timm/qwen3_vit_306m.qwen3_5_2b
 - Modelo base Qwen3.5-2B: https://huggingface.co/Qwen/Qwen3.5-2B
 - Revision de origen de los pesos: https://huggingface.co/Qwen/Qwen3.5-2B/tree/15852e8c16360a2fea060d615a32b45270f8a8fc
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/LICENSE
 - Blog tecnico de Qwen3.5: Towards Native Multimodal Agents: https://qwen.ai/blog?id=qwen3.5
 - Repositorio de PyTorch Image Models (timm): https://github.com/huggingface/pytorch-image-models
-- Organizacion timm en HuggingFace: https://huggingface.co/timm
-- Documentacion de timm en HuggingFace: https://huggingface.co/docs/timm/index
+- Organizacion timm en Hugging Face: https://huggingface.co/timm
+- Documentacion de timm en Hugging Face: https://huggingface.co/docs/timm/index
 - Documentacion de timm (timmdocs): https://timm.fast.ai/
 - Paquete timm en PyPI: https://pypi.org/project/timm/
 - Cita de PyTorch Image Models (Wightman, 2019): doi 10.5281/zenodo.4414861

@@ -209,7 +209,7 @@ comparativa se limita a formato, licencia y proposito.
   fuera de distribucion.
 
 ## Enlaces
-- Repositorio HuggingFace de esta cuantizacion:
+- Repositorio Hugging Face de esta cuantizacion:
   https://huggingface.co/vwdubb/Qwen3.8-27b-Terse-Coder-FP8
 - Modelo base (merge fp16):
   https://huggingface.co/Shockem/Qwen3.8-27b-Terse-Coder

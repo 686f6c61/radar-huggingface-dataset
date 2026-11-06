@@ -110,7 +110,7 @@ Solo se dispone de datos de parámetros aproximados y de una única métrica com
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SolsticeAI/Nanbeige4.3-33B-GGUF-UltraOptimised-Curated-Protium
+- Repositorio Hugging Face: https://huggingface.co/SolsticeAI/Nanbeige4.3-33B-GGUF-UltraOptimised-Curated-Protium
 - Modelo base: https://huggingface.co/Nanbeige/Nanbeige4.3-33B
 - Cuantización Q3_K_M (repositorio independiente): https://huggingface.co/SolsticeAI/Nanbeige4.3-33B-Q3_K_M-GGUF
 - Organización Nanbeige / BOSS Zhipin: https://huggingface.co/Nanbeige

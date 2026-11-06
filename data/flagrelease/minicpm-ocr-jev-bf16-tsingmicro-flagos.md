@@ -69,7 +69,7 @@ Datos adicionales aportados en la model card: AUROC global de 0,936 en JevOCRBen
 
 | Modelo | Parámetros | Contexto | Función | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniCPM-OCR Jev (esta ficha) | 2,2B | no disponible | Scoring de fiabilidad OCR / control de calidad | Apache 2.0 | HuggingFace, ModelScope, imagen Docker FlagOS |
+| MiniCPM-OCR Jev (esta ficha) | 2,2B | no disponible | Scoring de fiabilidad OCR / control de calidad | Apache 2.0 | Hugging Face, ModelScope, imagen Docker FlagOS |
 | MiniCPM-OCR 1.0 | 1,3B | no disponible | Parsing OCR de documentos (texto, fórmulas, tablas) | Apache 2.0 | Open source (OpenBMB/ModelBest) |
 | Qwen3.5-397B-A17B | 397B totales / 17B activos | no disponible | Modelo generalista de referencia en JevOCRBench (AUROC 0,938) | no disponible | no disponible |
 
@@ -88,7 +88,7 @@ La comparación directa con motores OCR clásicos o con modelos de visión-lengu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/FlagRelease/MiniCPM-OCR-Jev-BF16-tsingmicro-FlagOS
+- Hugging Face: https://huggingface.co/FlagRelease/MiniCPM-OCR-Jev-BF16-tsingmicro-FlagOS
 - AnythingLLM: https://anythingllm.com/
 - Triton (dependencia de FlagGems): https://github.com/openai/triton
 - FlagOS / FlagRelease: no disponible en la información proporcionada (plataforma de release del ecosistema FlagOS, contenedor en harbor.baai.ac.cn)

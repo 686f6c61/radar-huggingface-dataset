@@ -76,7 +76,7 @@ No se dispone de información sobre modelos comparables en la misma categoría. 
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/RODRIGUE-ZMICHAEL/dino-finetuned)
+- [Repositorio en Hugging Face](https://huggingface.co/RODRIGUE-ZMICHAEL/dino-finetuned)
 - [Tutorial de fine-tuning de DINOv2 (Colab)](https://colab.research.google.com/github/RobvanGastel/dinov2-finetune/blob/main/Explanation.ipynb) — referencia general sobre DINOv2, no específica de este modelo.
 - [Fine-tuning de DINOv2 con Kili (Colab)](https://colab.research.google.com/github/kili-technology/kili-python-sdk/blob/main/recipes/finetuning_dinov2.ipynb) — tutorial de visión, no relacionado directamente con este prototipo.
 - [Artículo sobre fine-tuning de DINOv2 (Medium)](https://medium.com/data-science-in-your-pocket/fine-tuning-dinov2-custom-training-for-your-own-ai-projects-6e8a5a486671) — referencia general, no específica.

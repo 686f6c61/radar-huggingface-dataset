@@ -71,8 +71,8 @@ Contexto del estudio (agregado sobre 3 tareas y todas las semillas de entrenamie
 
 | Modelo | Parámetros | Contexto / entrada | Tasa de éxito (estudio) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ACT (este modelo) | 52 M | Observaciones 256x256 + estado, chunks de 100 acciones | 77,3 % (media de 3 checkpoints, tarea BBQ) | Apache 2.0 | HuggingFace (LeRobot) |
-| SmolVLA (referencia del estudio) | no disponible en la información proporcionada | VLA con entrada de lenguaje | 87,3 % (agregado del estudio) | no disponible en la información proporcionada | HuggingFace |
+| ACT (este modelo) | 52 M | Observaciones 256x256 + estado, chunks de 100 acciones | 77,3 % (media de 3 checkpoints, tarea BBQ) | Apache 2.0 | Hugging Face (LeRobot) |
+| SmolVLA (referencia del estudio) | no disponible en la información proporcionada | VLA con entrada de lenguaje | 87,3 % (agregado del estudio) | no disponible en la información proporcionada | Hugging Face |
 | ACT con todas las demostraciones (agregado del estudio) | 52 M | Igual que este modelo | 55,4 % (agregado 3 tareas, todas las semillas) | Apache 2.0 | Repositorio del estudio |
 
 La comparación directa con SmolVLA no aísla el efecto del preentrenamiento: ambos difieren en tamaño, arquitectura y entrada de lenguaje, como advierte el propio autor.
@@ -90,7 +90,7 @@ La comparación directa con SmolVLA no aísla el efecto del preentrenamiento: am
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Pipe1213/act_obj_t1_nall
+- Modelo en Hugging Face: https://huggingface.co/Pipe1213/act_obj_t1_nall
 - Repositorio del estudio vla-vs-scratch: https://github.com/Pipe1213/vla-vs-scratch
 - Resultados completos: https://github.com/Pipe1213/vla-vs-scratch#results
 - Análisis: https://github.com/Pipe1213/vla-vs-scratch/blob/main/results/analysis.md

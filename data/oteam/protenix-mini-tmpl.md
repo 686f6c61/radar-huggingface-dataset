@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Bloques Pairformer | Etapas MSA | Pasos de reciclado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| protenix-mini-tmpl | 134,2 M | 16 | 1 | 4 | AGPL-3.0 | HuggingFace (oteam) |
-| protenix-mini (v0.5) | 134,1 M | 16 | 1 | 4 | AGPL-3.0 | HuggingFace (oteam) |
-| protenix-base (v0.5) | 368,1 M | 48 | 4 | 10 | AGPL-3.0 | HuggingFace (oteam) |
-| protenix-tiny (v0.5) | 109,5 M | 8 | 1 | 4 | AGPL-3.0 | HuggingFace (oteam) |
+| protenix-mini-tmpl | 134,2 M | 16 | 1 | 4 | AGPL-3.0 | Hugging Face (oteam) |
+| protenix-mini (v0.5) | 134,1 M | 16 | 1 | 4 | AGPL-3.0 | Hugging Face (oteam) |
+| protenix-base (v0.5) | 368,1 M | 48 | 4 | 10 | AGPL-3.0 | Hugging Face (oteam) |
+| protenix-tiny (v0.5) | 109,5 M | 8 | 1 | 4 | AGPL-3.0 | Hugging Face (oteam) |
 
 La variante mini-tmpl se diferencia de la mini estandar por el condicionamiento estructural, y de la base por su menor profundidad (16 frente a 48 bloques) y menor numero de etapas MSA y reciclados, lo que reduce coste a cambio de capacidad predictiva. No se dispone de datos de rendimiento comparativo entre estas variantes en la informacion proporcionada.
 
@@ -85,7 +85,7 @@ La variante mini-tmpl se diferencia de la mini estandar por el condicionamiento 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/oteam/protenix-mini-tmpl
+- Hugging Face: https://huggingface.co/oteam/protenix-mini-tmpl
 - Paper de Protenix: https://doi.org/10.1101/2025.01.08.631967
 - Repositorio oficial de Protenix (ByteDance): https://github.com/bytedance/Protenix
 - Codigo de ofoldx.models.protenix: https://github.com/OTeam-AI4S/OFoldX/tree/main/ofoldx/models/protenix

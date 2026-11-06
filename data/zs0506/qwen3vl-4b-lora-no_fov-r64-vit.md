@@ -6,7 +6,7 @@ zs0506/qwen3vl-4B-lora-no_fov-r64-vit es un adaptador LoRA publicado por el usua
 
 El identificador del repositorio sugiere dos caracteristicas del entrenamiento: un rango de LoRA r=64 y una intervencion sobre el codificador visual del modelo (el sufijo "vit"), ademas de la etiqueta "no_fov". Estas inferencias proceden unicamente del nombre del repositorio y no estan confirmadas por ninguna documentacion del autor, por lo que deben tratarse como hipotesis.
 
-La relevancia de esta publicacion es limitada en su estado actual: la model card es la plantilla por defecto de HuggingFace sin rellenar, no incluye licencia, idiomas, datos de entrenamiento, hiperparametros ni evaluacion, y el repositorio acumula cero descargas y cero "likes". Cualquier uso en produccion exigiria validar primero que hace realmente el adaptador frente al modelo base.
+La relevancia de esta publicacion es limitada en su estado actual: la model card es la plantilla por defecto de Hugging Face sin rellenar, no incluye licencia, idiomas, datos de entrenamiento, hiperparametros ni evaluacion, y el repositorio acumula cero descargas y cero "likes". Cualquier uso en produccion exigiria validar primero que hace realmente el adaptador frente al modelo base.
 
 ## Especificaciones tecnicas
 
@@ -30,7 +30,7 @@ La relevancia de esta publicacion es limitada en su estado actual: la model card
 
 El adaptador se apoya en la tecnica LoRA (Low-Rank Adaptation), que congela los pesos del modelo base e inserta matrices de bajo rango en determinadas capas, reduciendo de forma drastica el numero de parametros entrenables y el tamano del artefacto resultante. Con 0,3 GB de pesos y un rango declarado de r=64, el adaptador es pequeno en comparacion con los aproximadamente 8-9 GB que ocuparian los pesos completos de un modelo de 4B en bf16. La eleccion del rango y de los modulos objetivo condiciona directamente la capacidad del adaptador de modificar el comportamiento del modelo, pero no se ha publicado informacion sobre que capas se han intervenido.
 
-No hay ningun dato sobre el procedimiento de entrenamiento: se desconocen el numero de tokens, la composicion del dataset, el tipo de objetivo (supervisado, DPO, RLHF u otro), la precision usada (fp32, bf16, fp16) y el numero de pasos o epocas. Tampoco se documenta la infraestructura ni el coste computacional. La unica pista disponible es el nombre del repositorio, que sugiere un ajuste centrado en el codificador visual ("vit") y una condicion "no_fov", cuyo significado no se explica en ninguna parte. La referencia arXiv incluida en las etiquetas (1910.09700) corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono, citado en la plantilla de HuggingFace, y no es un paper metodologico sobre este adaptador.
+No hay ningun dato sobre el procedimiento de entrenamiento: se desconocen el numero de tokens, la composicion del dataset, el tipo de objetivo (supervisado, DPO, RLHF u otro), la precision usada (fp32, bf16, fp16) y el numero de pasos o epocas. Tampoco se documenta la infraestructura ni el coste computacional. La unica pista disponible es el nombre del repositorio, que sugiere un ajuste centrado en el codificador visual ("vit") y una condicion "no_fov", cuyo significado no se explica en ninguna parte. La referencia arXiv incluida en las etiquetas (1910.09700) corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono, citado en la plantilla de Hugging Face, y no es un paper metodologico sobre este adaptador.
 
 ## Capacidades
 
@@ -85,7 +85,7 @@ No se dispone de informacion suficiente para comparar con alternativas de la mis
 
 ## Limitaciones y advertencias
 
-- Model card sin completar: es la plantilla por defecto de HuggingFace con el texto "[More Information Needed]" en todas las secciones. No hay informacion sobre desarrollador, financiacion, uso previsto, datos de entrenamiento ni limitaciones.
+- Model card sin completar: es la plantilla por defecto de Hugging Face con el texto "[More Information Needed]" en todas las secciones. No hay informacion sobre desarrollador, financiacion, uso previsto, datos de entrenamiento ni limitaciones.
 - Licencia no declarada: ni el adaptador ni, en la informacion proporcionada, el modelo base indican licencia. Esto bloquea su uso comercial o de redistribucion sin aclarar previamente los terminos con el autor y con el titular del modelo base.
 - Ausencia total de evaluacion: no hay benchmarks, pruebas cualitativas ni comparaciones con el modelo base sin adaptador, por lo que se desconoce si el ajuste mejora, degrada o no altera el comportamiento original.
 - Riesgo de sobreajuste o degradacion: al no documentarse el dataset ni el procedimiento, existe riesgo de que el adaptador degrade capacidades del modelo base (olvido catastrofico), especialmente si el ajuste se ha centrado en un unico aspecto del codificador visual.
@@ -98,7 +98,7 @@ No se dispone de informacion suficiente para comparar con alternativas de la mis
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zs0506/qwen3vl-4B-lora-no_fov-r64-vit
+- Repositorio Hugging Face: https://huggingface.co/zs0506/qwen3vl-4B-lora-no_fov-r64-vit
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - Referencia arXiv presente en las etiquetas (Lacoste et al., estimacion de emisiones de carbono, citada en la plantilla y no como metodologia del modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning citada en la model card: https://mlco2.github.io/impact#compute

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Axon26-Coder-i1 es una versión cuantizada en formato GGUF del modelo Axon26-Coder, desarrollado por AIencoder y publicado en HuggingFace por el usuario mradermacher. Este repositorio contiene exclusivamente pesos cuantizados con calibración imatrix, lo que lo hace adecuado para inferencia local eficiente en CPU y GPU con herramientas como llama.cpp o Ollama. El modelo original cuenta con aproximadamente 7.248 millones de parámetros (7,2 mil millones), lo que lo sitúa en la gama de modelos de tamaño medio, pensado para tareas de generación de código y conversación técnica.
+Axon26-Coder-i1 es una versión cuantizada en formato GGUF del modelo Axon26-Coder, desarrollado por AIencoder y publicado en Hugging Face por el usuario mradermacher. Este repositorio contiene exclusivamente pesos cuantizados con calibración imatrix, lo que lo hace adecuado para inferencia local eficiente en CPU y GPU con herramientas como llama.cpp o Ollama. El modelo original cuenta con aproximadamente 7.248 millones de parámetros (7,2 mil millones), lo que lo sitúa en la gama de modelos de tamaño medio, pensado para tareas de generación de código y conversación técnica.
 
 La relevancia de esta publicación radica en que ofrece múltiples niveles de cuantización (desde Q2_K hasta Q6_K, incluyendo variantes IQ) que permiten ajustar el equilibrio entre calidad y consumo de recursos. Sin embargo, la información disponible es muy limitada: no se especifican arquitectura, contexto, licencia ni datos de entrenamiento, por lo que cualquier evaluación técnica debe basarse en pruebas directas del modelo o en la documentación del repositorio original.
 

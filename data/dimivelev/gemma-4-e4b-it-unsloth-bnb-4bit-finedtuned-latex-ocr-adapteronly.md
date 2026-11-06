@@ -80,7 +80,7 @@ No se dispone de datos suficientes para establecer una comparativa rigurosa. El 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dimivelev/gemma-4-e4b-it-unsloth-bnb-4bit-finedtuned-latex-ocr-adapteronly
+- Modelo en Hugging Face: https://huggingface.co/dimivelev/gemma-4-e4b-it-unsloth-bnb-4bit-finedtuned-latex-ocr-adapteronly
 - Modelo base: https://huggingface.co/unsloth/gemma-4-e4b-it-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 

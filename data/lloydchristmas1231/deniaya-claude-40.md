@@ -67,7 +67,7 @@ No se dispone de información técnica comparable. Existen otros LoRAs del mismo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lloydchristmas1231/deniaya-claude-40
+- Hugging Face: https://huggingface.co/lloydchristmas1231/deniaya-claude-40
 - Modelo base: https://huggingface.co/krea/Krea-2-Raw
 - LoRA relacionado: https://huggingface.co/lloydchristmas1231/deniaya-40
 - LoRA relacionado: https://huggingface.co/lloydchristmas1231/deniaya-claude-nu

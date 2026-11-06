@@ -74,4 +74,4 @@ No se dispone de información sobre modelos comparables en el mismo dominio (cla
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/Sahibnoor1/gi-siglip2-dino-hyperkvasir-checkpoints)
+- [Repositorio en Hugging Face](https://huggingface.co/Sahibnoor1/gi-siglip2-dino-hyperkvasir-checkpoints)

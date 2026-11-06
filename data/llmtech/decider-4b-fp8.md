@@ -28,7 +28,7 @@ Es relevante ahora porque permite ejecutar un clasificador multi-tarea calibrado
 
 ## Arquitectura y entrenamiento
 
-La arquitectura del modelo base es un transformer de ~4,2 B de parametros con modulos de atencion lineal: el listado de capas cuantizadas incluye `linear_attn.conv1d`, `linear_attn.in_proj_a`, `linear_attn.in_proj_b` y un bloque delta-net con `in_proj_qkv`, `in_proj_z` y `out_proj`, junto con atencion completa (`q_proj`, `k_proj`, `v_proj`, `o_proj`) y MLP (`gate_proj`, `up_proj`, `down_proj`). En total, 200 capas lineales se cuantizan a FP8. El etiquetado de HuggingFace apunta a la familia `qwen3_5_text`, lo que situa el modelo en la estirpe de transformers hibridos con atencion lineal de Qwen, aunque la informacion proporcionada no detalla el numero de capas ni la distribucion entre atencion lineal y completa.
+La arquitectura del modelo base es un transformer de ~4,2 B de parametros con modulos de atencion lineal: el listado de capas cuantizadas incluye `linear_attn.conv1d`, `linear_attn.in_proj_a`, `linear_attn.in_proj_b` y un bloque delta-net con `in_proj_qkv`, `in_proj_z` y `out_proj`, junto con atencion completa (`q_proj`, `k_proj`, `v_proj`, `o_proj`) y MLP (`gate_proj`, `up_proj`, `down_proj`). En total, 200 capas lineales se cuantizan a FP8. El etiquetado de Hugging Face apunta a la familia `qwen3_5_text`, lo que situa el modelo en la estirpe de transformers hibridos con atencion lineal de Qwen, aunque la informacion proporcionada no detalla el numero de capas ni la distribucion entre atencion lineal y completa.
 
 Sobre el entrenamiento, esta ficha solo dispone de lo indicado por el cuantizador: el modelo es la version 2.1 de Mapika/decider-4b, entrenado y evaluado por Mapika, y con un protocolo de evaluacion propio que incluye un conjunto de regresion de 95 tareas (67 in-task y 28 held-out) y 144.226 filas, ademas de 231 elementos publicos de JevBench. No se especifican en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset ni si hubo RLHF, DPO u otra fase de alineamiento; la model card remite al repositorio del modelo base para esos detalles.
 
@@ -116,11 +116,11 @@ Alternativas de otros autores con el mismo tamano o la misma tarea: no disponibl
 - Longitud de contexto: no declarada en la informacion disponible. Las mediciones llegan a estados de 32.768 tokens, pero no se especifica el maximo soportado ni el comportamiento mas alla de esa longitud.
 - La cache KV no esta cuantizada, por lo que el ahorro de memoria del FP8 se limita a los pesos (de 8,41 GB a 4,85 GB).
 - Licencia Apache 2.0, sin restricciones conocidas para uso comercial. El modelo base es de Mapika y este checkpoint ha sido cuantizado por LLM Tech; conviene conservar la atribucion de ambos.
-- Fecha de publicacion indicada en HuggingFace: 28 de septiembre de 2026. El repositorio tiene 9 descargas y 2 "likes" en el momento de la consulta, por lo que es un artefacto reciente y poco validado por la comunidad.
+- Fecha de publicacion indicada en Hugging Face: 28 de septiembre de 2026. El repositorio tiene 9 descargas y 2 "likes" en el momento de la consulta, por lo que es un artefacto reciente y poco validado por la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/llmtech/decider-4b-fp8
+- Modelo en Hugging Face: https://huggingface.co/llmtech/decider-4b-fp8
 - Modelo base (model card bf16): https://huggingface.co/Mapika/decider-4b
 - Repositorio del autor del modelo base: https://github.com/Mapika/decider
 - LLM Tech (autor de la cuantizacion): https://llmtech.eu

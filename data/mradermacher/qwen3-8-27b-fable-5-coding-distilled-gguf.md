@@ -104,7 +104,7 @@ La ventaja diferencial de este repositorio frente a las alternativas es únicame
 - Degradación por cuantización: las variantes Q2_K y Q3_K reducen la precisión de forma notable en modelos de este tamano; para uso serio en código se recomienda Q5_K_M o superior.
 - Repositorio sin validación social: 0 descargas y 0 likes en el momento de la consulta, lo que implica ausencia de retroalimentación de la comunidad sobre posibles defectos de conversión o ficheros corruptos.
 - Procedencia del modelo base: el prefijo "Qwen3.8-27B" no corresponde a ningún lanzamiento oficial conocido de la familia Qwen, por lo que conviene confirmar con el autor del checkpoint original qué base se utilizó realmente y bajo qué términos se distribuye.
-- Fechas del repositorio: la fecha de creación declarada (2026-09-16) es posterior al momento habitual de publicación de modelos de esta familia, un detalle que conviene verificar directamente en HuggingFace.
+- Fechas del repositorio: la fecha de creación declarada (2026-09-16) es posterior al momento habitual de publicación de modelos de esta familia, un detalle que conviene verificar directamente en Hugging Face.
 
 ## Enlaces
 

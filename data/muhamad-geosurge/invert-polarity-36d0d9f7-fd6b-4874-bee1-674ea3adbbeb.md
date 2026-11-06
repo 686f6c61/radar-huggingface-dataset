@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| invert-polarity (este repositorio) | ~7,25 mil M | No disponible (base: 32 768) | Apache 2.0 | HuggingFace, safetensors | No disponible |
-| mistralai/Mistral-7B-v0.3 | ~7,25 mil M | 32 768 tokens | Apache 2.0 | HuggingFace, safetensors | Publicado por Mistral AI, no aplicable a este ajuste |
-| mistralai/Mistral-7B-Instruct-v0.3 | ~7,25 mil M | 32 768 tokens | Apache 2.0 | HuggingFace, safetensors | Publicado por Mistral AI, no aplicable a este ajuste |
-| meta-llama/Llama-3.1-8B-Instruct | ~8 mil M | 128 000 tokens | Llama 3.1 Community License | HuggingFace, safetensors | No disponible en esta ficha |
+| invert-polarity (este repositorio) | ~7,25 mil M | No disponible (base: 32 768) | Apache 2.0 | Hugging Face, safetensors | No disponible |
+| mistralai/Mistral-7B-v0.3 | ~7,25 mil M | 32 768 tokens | Apache 2.0 | Hugging Face, safetensors | Publicado por Mistral AI, no aplicable a este ajuste |
+| mistralai/Mistral-7B-Instruct-v0.3 | ~7,25 mil M | 32 768 tokens | Apache 2.0 | Hugging Face, safetensors | Publicado por Mistral AI, no aplicable a este ajuste |
+| meta-llama/Llama-3.1-8B-Instruct | ~8 mil M | 128 000 tokens | Llama 3.1 Community License | Hugging Face, safetensors | No disponible en esta ficha |
 
 No se dispone de datos de rendimiento comparables para el modelo objeto de esta ficha; la comparacion se limita a parametros, contexto, licencia y disponibilidad.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparables para el modelo objeto de esta 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/muhamad-geosurge/invert-polarity-36d0d9f7-fd6b-4874-bee1-674ea3adbbeb
+- Repositorio en Hugging Face: https://huggingface.co/muhamad-geosurge/invert-polarity-36d0d9f7-fd6b-4874-bee1-674ea3adbbeb
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-v0.3
 - Modelo referenciado en la model card: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3
 - Repositorio mistral-inference: https://github.com/mistralai/mistral-inference

@@ -83,9 +83,9 @@ Por entorno (proporción de rollouts resueltos, pasos 320-329 → pasos 350-359)
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `redthag/gpt-oss-120b-control-oss430-v2-s8-step360` | Adaptador LoRA sobre `gpt-oss-120b` (~120 MM) | no disponible | Métricas de entrenamiento en la model card | apache-2.0 | HuggingFace |
+| `redthag/gpt-oss-120b-control-oss430-v2-s8-step360` | Adaptador LoRA sobre `gpt-oss-120b` (~120 MM) | no disponible | Métricas de entrenamiento en la model card | apache-2.0 | Hugging Face |
 | `oss430` (reward seeker) | Adaptador LoRA sobre `gpt-oss-120b` | no disponible | No disponible en esta ficha | no disponible | Referenciado en la model card |
-| `openai/gpt-oss-120b` (base) | ~120 MM (MoE) | no disponible | No disponible en esta ficha | no disponible | HuggingFace |
+| `openai/gpt-oss-120b` (base) | ~120 MM (MoE) | no disponible | No disponible en esta ficha | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -100,7 +100,7 @@ Por entorno (proporción de rollouts resueltos, pasos 320-329 → pasos 350-359)
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/redthag/gpt-oss-120b-control-oss430-v2-s8-step360
+- Hugging Face: https://huggingface.co/redthag/gpt-oss-120b-control-oss430-v2-s8-step360
 - Modelo base: https://huggingface.co/openai/gpt-oss-120b
 - Checkpoint anterior (step 320): https://huggingface.co/redthag/gpt-oss-120b-control-oss430-v2-s8-step320
 - Control final (step 430): https://huggingface.co/redthag/gpt-oss-120b-control-oss430-v2-s8-final

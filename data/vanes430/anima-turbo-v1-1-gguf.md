@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Los u
 
 ## Limitaciones y advertencias
 
-- **Licencia ambigua**: aunque la model card de HuggingFace indica apache-2.0, el modelo base original (circlestone-labs/Anima) usa una licencia no comercial. Los usuarios deben verificar la licencia aplicable al modelo base antes de cualquier uso comercial, ya que la redistribucion en GGUF no cambia la licencia del modelo subyacente.
+- **Licencia ambigua**: aunque la model card de Hugging Face indica apache-2.0, el modelo base original (circlestone-labs/Anima) usa una licencia no comercial. Los usuarios deben verificar la licencia aplicable al modelo base antes de cualquier uso comercial, ya que la redistribucion en GGUF no cambia la licencia del modelo subyacente.
 - **Enfoque en anime**: el modelo esta especializado en estilos anime y no fotorrealista. No es adecuado para generar imagenes fotorrealistas o de contenido general.
 - **Diversidad limitada**: la destilacion Turbo reduce la diversidad de los resultados en comparacion con el modelo base, lo que puede provocar estilos repetitivos o menos variados.
 - **Riesgo de alucinacion visual**: como todos los modelos text-to-image, puede generar imagenes que no se corresponden exactamente con la descripcion textual, especialmente en conceptos complejos o abstractos.
@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Los u
 
 ## Enlaces
 
-- [Modelo GGUF en HuggingFace](https://huggingface.co/vanes430/Anima-Turbo-V1.1-GGUF)
+- [Modelo GGUF en Hugging Face](https://huggingface.co/vanes430/Anima-Turbo-V1.1-GGUF)
 - [Modelo base Anima (circlestone-labs/Anima)](https://huggingface.co/circlestone-labs/Anima)
 - [ComfyUI-GGUF (herramienta de conversion)](https://github.com/city96/ComfyUI-GGUF)
 - [Pagina del modelo Anima en Civitai](https://civitai.com/models/2458426/anima)

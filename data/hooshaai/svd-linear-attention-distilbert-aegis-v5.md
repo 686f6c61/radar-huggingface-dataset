@@ -60,16 +60,16 @@ No se han publicado resultados de benchmarks comparativos con otros modelos en l
 - VRAM estimada para inferencia: el pico de VRAM reportado durante la evaluacion es de 288,41 MB, por lo que el modelo puede ejecutarse en GPUs con menos de 1 GB de memoria.
 - GPU recomendadas: cualquier GPU con al menos 512 MB de VRAM, como NVIDIA GTX 1050, Tesla T4 o inferiores. Tambien puede ejecutarse en CPU para tareas de baja latencia.
 - Compatibilidad con GPU de consumo: si, es viable en tarjetas como RTX 2060, GTX 1660 o incluso integradas.
-- Opciones de despliegue: al ser un modelo PyTorch, puede cargarse con la libreria `transformers` de HuggingFace. No es compatible con vLLM, llama.cpp ni Ollama al no ser un modelo generativo.
+- Opciones de despliegue: al ser un modelo PyTorch, puede cargarse con la libreria `transformers` de Hugging Face. No es compatible con vLLM, llama.cpp ni Ollama al no ser un modelo generativo.
 - Latencia y throughput estimados: no disponibles. El unico dato temporal es el tiempo de evaluacion pura de 30,61 s, que depende del hardware utilizado.
 
 ## Comparativa con modelos similares
 
 | Modelo | Arquitectura | Contexto | Rendimiento SST-2 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DistilBERT (base) | Transformer encoder | 512 tokens | ~91% (referencia general, no confirmada en el repo) | Apache 2.0 | HuggingFace |
-| TinyBERT | Transformer encoder comprimido | 512 tokens | ~85-90% (referencia general) | Apache 2.0 | HuggingFace |
-| Hooshaai/svd-linear-attention-distilbert-aegis-v5 | DistilBERT con AEGIS-Attention V5 | no disponible | 62,84% | MIT | HuggingFace |
+| DistilBERT (base) | Transformer encoder | 512 tokens | ~91% (referencia general, no confirmada en el repo) | Apache 2.0 | Hugging Face |
+| TinyBERT | Transformer encoder comprimido | 512 tokens | ~85-90% (referencia general) | Apache 2.0 | Hugging Face |
+| Hooshaai/svd-linear-attention-distilbert-aegis-v5 | DistilBERT con AEGIS-Attention V5 | no disponible | 62,84% | MIT | Hugging Face |
 
 Los datos de rendimiento de DistilBERT y TinyBERT son referencias generales no confirmadas en la informacion proporcionada. Se recomienda consultar sus respectivas fichas para obtener valores exactos.
 
@@ -85,6 +85,6 @@ Los datos de rendimiento de DistilBERT y TinyBERT son referencias generales no c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Hooshai/svd-linear-attention-distilbert-aegis-v5
+- Hugging Face: https://huggingface.co/Hooshai/svd-linear-attention-distilbert-aegis-v5
 - Blog tecnico de Hoosha AI: https://hooshaai.substack.com/p/re-engineering-the-attention-engine
 - Dataset de resultados: https://huggingface.co/datasets/tahamajs/svd-linear-attention-sst2-results

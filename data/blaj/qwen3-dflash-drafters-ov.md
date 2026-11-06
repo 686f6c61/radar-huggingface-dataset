@@ -4,7 +4,7 @@
 
 Qwen3-DFlash-drafters-ov es una conversión a OpenVINO IR de los modelos drafter DFlash de Z-Lab para la familia Qwen3, publicada por el usuario blaj. No es un modelo independiente: se trata de cabezas drafter de 5 capas que leen los estados ocultos de las capas 1, 9, 17, 25 y 33 de un transformer Qwen3 objetivo de 36 capas, y proponen tokens candidatos que el modelo objetivo verifica después dentro de un esquema de decodificación especulativa por difusión de bloque. El repositorio empaqueta cuatro variantes: drafter para Qwen3-4B y para Qwen3-8B, cada uno en int4 (group size 16) e int8.
 
-La relevancia de esta publicación es de infraestructura más que de modelado. Existen más de 40 conversiones OpenVINO de Qwen3-4B y Qwen3-8B en HuggingFace, pero ninguna empareja con un drafter DFlash porque el export estándar de `optimum-cli` no expone los metadatos de localización de estados ocultos que el drafter necesita, de modo que el runtime cae silenciosamente a decodificación solo con el objetivo. Los objetivos companion de este autor (`blaj/Qwen3-4B-DFlash-ov-int4` y `blaj/Qwen3-8B-DFlash-ov-int4`) sí exportan esos metadatos, lo que permite activar la estrategia `DFlash` en OpenVINO Model Server.
+La relevancia de esta publicación es de infraestructura más que de modelado. Existen más de 40 conversiones OpenVINO de Qwen3-4B y Qwen3-8B en Hugging Face, pero ninguna empareja con un drafter DFlash porque el export estándar de `optimum-cli` no expone los metadatos de localización de estados ocultos que el drafter necesita, de modo que el runtime cae silenciosamente a decodificación solo con el objetivo. Los objetivos companion de este autor (`blaj/Qwen3-4B-DFlash-ov-int4` y `blaj/Qwen3-8B-DFlash-ov-int4`) sí exportan esos metadatos, lo que permite activar la estrategia `DFlash` en OpenVINO Model Server.
 
 El autor documenta con honestidad que, en el hardware probado (Intel Core Ultra 7 258V con iGPU Arc 130V/140V y OpenVINO Model Server 2026.4.0 sobre GPU), el drafter es más lento que no usarlo: 0,74x y 0,72x de ratio frente al baseline. La corrección está verificada (salida greedy byte a byte idéntica), pero el beneficio de throughput no se materializa en objetivos pequeños y hardware relativamente capaz, donde el coste fijo por bloque domina sobre los tokens aceptados.
 
@@ -72,9 +72,9 @@ El autor indica que la salida greedy fue byte a byte idéntica con y sin drafter
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento medido | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| blaj/Qwen3-DFlash-drafters-ov | Drafter DFlash para Qwen3-4B y Qwen3-8B en OpenVINO IR | no disponible (cabeza de 5 capas; repo de 2,7 GB) | no disponible | 16,6-28,6 tok/s junto al objetivo | apache-2.0 | HuggingFace |
-| Qwen3-4B / Qwen3-8B int4 sin drafter | Objetivo Qwen3, decodificación estándar | 4B / 8B | no disponible en esta ficha | 22,9-38,8 tok/s | apache-2.0 | HuggingFace |
-| blaj/Qwen3.5-9B-abliterated-DFlash-bf16-ov | Drafter DFlash para Qwen3.5-9B en OpenVINO | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| blaj/Qwen3-DFlash-drafters-ov | Drafter DFlash para Qwen3-4B y Qwen3-8B en OpenVINO IR | no disponible (cabeza de 5 capas; repo de 2,7 GB) | no disponible | 16,6-28,6 tok/s junto al objetivo | apache-2.0 | Hugging Face |
+| Qwen3-4B / Qwen3-8B int4 sin drafter | Objetivo Qwen3, decodificación estándar | 4B / 8B | no disponible en esta ficha | 22,9-38,8 tok/s | apache-2.0 | Hugging Face |
+| blaj/Qwen3.5-9B-abliterated-DFlash-bf16-ov | Drafter DFlash para Qwen3.5-9B en OpenVINO | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | z-lab/dflash (implementaciones MLX y vLLM) | Framework DFlash original, soporte para Qwen3, Qwen3.5, Qwen3.6, Gemma 4, Qwen3.8-27B | no disponible | no disponible | no disponible (el blog de Inco AI cita cerca de 3x frente a decodificación autorregresiva) | no disponible | GitHub, vLLM, MLX |
 
 No se dispone de datos de comparación directa frente a otras cabezas drafter (por ejemplo, EAGLE-3) en la información proporcionada.
@@ -91,7 +91,7 @@ No se dispone de datos de comparación directa frente a otras cabezas drafter (p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/blaj/Qwen3-DFlash-drafters-ov
+- Modelo en Hugging Face: https://huggingface.co/blaj/Qwen3-DFlash-drafters-ov
 - Objetivo companion Qwen3-4B: https://huggingface.co/blaj/Qwen3-4B-DFlash-ov-int4
 - Objetivo companion Qwen3-8B: https://huggingface.co/blaj/Qwen3-8B-DFlash-ov-int4
 - Drafter original Qwen3-4B: https://huggingface.co/z-lab/Qwen3-4B-DFlash-b16

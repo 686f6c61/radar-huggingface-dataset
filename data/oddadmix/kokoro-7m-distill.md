@@ -79,9 +79,9 @@ Segun el autor, esto equivale a 4,1 veces mas velocidad que el modelo de 82 mill
 
 | Modelo | Parametros | Idioma | Voz | RTF en CPU (4 hilos) | Licencia | Disponibilidad |
 |---|---:|---|---|---:|---|---|
-| Kokoro-7M-Distill | 7.477.702 | Ingles | Unica (`af_msa.pt`) | 0,0220 | Apache 2.0 | HuggingFace, 35 descargas y 10 likes en el momento de la consulta |
-| Kokoro-82M | 81.810.000 aprox. | Ingles | Multiples style packs | 0,0902 | Apache 2.0 | HuggingFace (modelo profesor) |
-| Nabra-7M-Distill | No disponible (en torno a 7 M segun la nomenclatura) | Arabe | No disponible | No disponible | No disponible en la informacion proporcionada | HuggingFace, mismo autor y misma arquitectura |
+| Kokoro-7M-Distill | 7.477.702 | Ingles | Unica (`af_msa.pt`) | 0,0220 | Apache 2.0 | Hugging Face, 35 descargas y 10 likes en el momento de la consulta |
+| Kokoro-82M | 81.810.000 aprox. | Ingles | Multiples style packs | 0,0902 | Apache 2.0 | Hugging Face (modelo profesor) |
+| Nabra-7M-Distill | No disponible (en torno a 7 M segun la nomenclatura) | Arabe | No disponible | No disponible | No disponible en la informacion proporcionada | Hugging Face, mismo autor y misma arquitectura |
 
 No se dispone de datos de benchmarks de calidad auditiva ni de comparativas con otras familias TTS (por ejemplo StyleTTS2 original o modelos comerciales) en la informacion proporcionada, por lo que la comparacion se limita a tamano, velocidad en CPU y licencia.
 
@@ -98,11 +98,11 @@ No se dispone de datos de benchmarks de calidad auditiva ni de comparativas con 
 - Sesgos: no se documenta ningun analisis de sesgos de locutor, acento o genero; al ser una voz unica, la representacion queda fijada por ese style pack.
 - Licencia: Apache 2.0 permite uso comercial, modificacion y redistribucion, siempre que se conserve el aviso de licencia y los avisos de atribucion correspondientes.
 - Adopcion muy limitada: 35 descargas y 10 likes en el momento de la consulta, con actualizacion mas reciente en septiembre de 2026, lo que implica escasa validacion externa y practicamente ninguna experiencia de produccion documentada.
-- Inconsistencia de metadatos: HuggingFace informa de un tamano de repositorio de 0,0 GB, mientras que la model card declara un archivo de pesos de 28,7 MB. Conviene verificar el contenido real del repositorio antes de integrarlo.
+- Inconsistencia de metadatos: Hugging Face informa de un tamano de repositorio de 0,0 GB, mientras que la model card declara un archivo de pesos de 28,7 MB. Conviene verificar el contenido real del repositorio antes de integrarlo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oddadmix/Kokoro-7M-Distill
+- Modelo en Hugging Face: https://huggingface.co/oddadmix/Kokoro-7M-Distill
 - Modelo profesor Kokoro-82M: https://huggingface.co/hexgrad/Kokoro-82M
 - Modelo hermano en arabe, Nabra-7M-Distill: https://huggingface.co/oddadmix/Nabra-7M-Distill
 - Paper, blog o repositorio adicional: no disponible en la informacion proporcionada. La busqueda web realizada no devolvio resultados relevantes sobre este modelo.

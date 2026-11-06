@@ -4,7 +4,7 @@
 
 El modelo `anasAmchaar/NVIDIA-Nemotron-3.5-Lightning-30B-EXL2-4.8bpw` es una cuantización en formato EXL2 (4.8 bits por peso) del modelo base NVIDIA Nemotron 3.5 Lightning 30B A3B, desarrollado por NVIDIA. Este modelo forma parte de la familia Nemotron, una serie de modelos de código abierto con pesos abiertos, diseñados para construir agentes de IA especializados con alta eficiencia y baja latencia. La arquitectura es híbrida: combina capas de Mamba-2 (modelos de espacio de estado) con capas de mezcla de expertos (MoE) y algunas capas de atención selectivas, lo que permite un rendimiento superior en tareas de razonamiento y ejecución de agentes de larga duración.
 
-El modelo base tiene 30 000 millones de parámetros totales, de los cuales solo 3 000 millones se activan por token (A3B), lo que lo convierte en una opción muy eficiente para despliegue en entornos con recursos limitados. La versión EXL2 está optimizada para inferencia con la librería ExLlama v2, que permite cuantizaciones de alta calidad y velocidades de generación rápidas en GPUs de consumo. Su licencia Apache 2.0 facilita su uso comercial sin restricciones significativas. Aunque la ficha original de HuggingFace no incluye detalles adicionales, los resultados de búsqueda confirman que el modelo base está diseñado para agentes de larga ejecución, con soporte de decodificación especulativa integrada durante el preentrenamiento.
+El modelo base tiene 30 000 millones de parámetros totales, de los cuales solo 3 000 millones se activan por token (A3B), lo que lo convierte en una opción muy eficiente para despliegue en entornos con recursos limitados. La versión EXL2 está optimizada para inferencia con la librería ExLlama v2, que permite cuantizaciones de alta calidad y velocidades de generación rápidas en GPUs de consumo. Su licencia Apache 2.0 facilita su uso comercial sin restricciones significativas. Aunque la ficha original de Hugging Face no incluye detalles adicionales, los resultados de búsqueda confirman que el modelo base está diseñado para agentes de larga ejecución, con soporte de decodificación especulativa integrada durante el preentrenamiento.
 
 ## Especificaciones tecnicas
 
@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la información disponible. La d
 - VRAM estimada para inferencia: con cuantización EXL2 4.8 bpw, los pesos del modelo ocupan aproximadamente 18-20 GB (30 000 millones × 4.8 bits / 8 = 18 GB). Aunque solo se activan 3B parámetros por token, todos los pesos deben residir en memoria, por lo que se recomienda al menos 24 GB de VRAM para inferencia con contexto moderado.
 - GPU recomendadas: NVIDIA RTX 3090, RTX 4090 (24 GB), o GPUs profesionales como A10G, A100 (40/80 GB) o H100. Para despliegues con contexto muy largo, se aconseja mayor VRAM.
 - Compatibilidad con GPUs de consumo: sí, cabe en GPUs de gama alta con 24 GB de VRAM, como la RTX 3090 o RTX 4090, siempre que se use cuantización EXL2 y el contexto no sea extremadamente largo.
-- Opciones de despliegue: ExLlama v2 es la librería principal para este formato, pero también puede convertirse a GGUF para usar con llama.cpp u Ollama. El modelo base está disponible en NVIDIA NIM y en HuggingFace en formato NVFP4.
+- Opciones de despliegue: ExLlama v2 es la librería principal para este formato, pero también puede convertirse a GGUF para usar con llama.cpp u Ollama. El modelo base está disponible en NVIDIA NIM y en Hugging Face en formato NVFP4.
 - Latencia y throughput: no se han publicado datos específicos para esta cuantización. El modelo base está optimizado para baja latencia en tareas de agentes, y con decodificación especulativa puede alcanzar velocidades superiores a modelos densos de tamaño similar.
 
 ## Comparativa con modelos similares
@@ -58,7 +58,7 @@ No se dispone de datos comparativos publicados para este modelo en la informaci�
 
 ## Limitaciones y advertencias
 
-- La información disponible es limitada: la model card de HuggingFace está vacía salvo la licencia, y los resultados de búsqueda provienen de la documentación oficial de NVIDIA, por lo que no se han podido verificar detalles como la longitud de contexto exacta o los idiomas soportados.
+- La información disponible es limitada: la model card de Hugging Face está vacía salvo la licencia, y los resultados de búsqueda provienen de la documentación oficial de NVIDIA, por lo que no se han podido verificar detalles como la longitud de contexto exacta o los idiomas soportados.
 - Riesgo de alucinación: como todo modelo de lenguaje, puede generar información incorrecta o inventada, especialmente en tareas de razonamiento complejo o con contextos ambiguos.
 - Sesgos potenciales: no se han publicado análisis de sesgos específicos para este modelo, pero al estar entrenado con datos web puede reflejar sesgos presentes en esos datos.
 - Dependencia de la cuantización: la versión EXL2 4.8 bpw puede presentar una ligera degradación de calidad respecto al modelo original en FP16, aunque esta cuantización es de alta precision.
@@ -67,9 +67,9 @@ No se dispone de datos comparativos publicados para este modelo en la informaci�
 
 ## Enlaces
 
-- [Modelo en HuggingFace (anasAmchaar/NVIDIA-Nemotron-3.5-Lightning-30B-EXL2-4.8bpw)](https://huggingface.co/anasAmchaar/NVIDIA-Nemotron-3.5-Lightning-30B-EXL2-4.8bpw)
+- [Modelo en Hugging Face (anasAmchaar/NVIDIA-Nemotron-3.5-Lightning-30B-EXL2-4.8bpw)](https://huggingface.co/anasAmchaar/NVIDIA-Nemotron-3.5-Lightning-30B-EXL2-4.8bpw)
 - [Model card oficial de NVIDIA en NIM](https://build.nvidia.com/nvidia/nemotron-3.5-lightning-30b-a3b/modelcard)
 - [Página del modelo en NVIDIA NIM](https://build.nvidia.com/nvidia/nemotron-3.5-lightning-30b-a3b)
-- [Modelo base en HuggingFace (NVFP4)](https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4)
-- [Modelo con DFlash en HuggingFace](https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4-DFlash)
+- [Modelo base en Hugging Face (NVFP4)](https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4)
+- [Modelo con DFlash en Hugging Face](https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4-DFlash)
 - [Blog de NVIDIA sobre Nemotron 3.5 Lightning](https://developer.nvidia.com/blog/nvidia-nemotron-3-5-lightning-delivers-fast-accurate-specialized-task-execution-for-long-running-agents/)

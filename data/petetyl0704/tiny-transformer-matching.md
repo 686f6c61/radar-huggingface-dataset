@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tiny Transformer for Matching es un repositorio experimental publicado por el usuario petetyl0704 en HuggingFace. No se trata de un modelo preentrenado listo para producción, sino de una implementación propia en PyTorch de un transformer compacto orientado a tareas de *matching* (emparejamiento o similitud entre pares de entradas). El autor lo describe explícitamente como un artefacto para revisión de código, pruebas de humo (*smoke tests*) y experimentos controlados de pequeña escala.
+Tiny Transformer for Matching es un repositorio experimental publicado por el usuario petetyl0704 en Hugging Face. No se trata de un modelo preentrenado listo para producción, sino de una implementación propia en PyTorch de un transformer compacto orientado a tareas de *matching* (emparejamiento o similitud entre pares de entradas). El autor lo describe explícitamente como un artefacto para revisión de código, pruebas de humo (*smoke tests*) y experimentos controlados de pequeña escala.
 
 El checkpoint `model.safetensors` contiene únicamente una inicialización válida, con 33.088 parámetros totales, y el autor aclara que no ha sido entrenado ni evaluado con benchmarks. La configuración declarada corresponde a una escala "large" dentro de este diseño propio, con atención de ventana deslizante, fusión mediante cross-attention, activación ReLU y normalización por batch.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Tiny Transformer for Matching (petetyl0704) | 33.088 | no disponible | sin benchmarks | Apache 2.0 | HuggingFace, checkpoint de inicialización |
+| Tiny Transformer for Matching (petetyl0704) | 33.088 | no disponible | sin benchmarks | Apache 2.0 | Hugging Face, checkpoint de inicialización |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre modelos comparables de la misma categoría en la documentación proporcionada.
@@ -82,6 +82,6 @@ No se dispone de información sobre modelos comparables de la misma categoría e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/petetyl0704/tiny-transformer-matching
+- Repositorio en Hugging Face: https://huggingface.co/petetyl0704/tiny-transformer-matching
 - Archivos incluidos: `pipeline.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper, blog, repositorio de código o demo adicionales: no disponible

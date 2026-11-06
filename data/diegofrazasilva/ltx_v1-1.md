@@ -66,5 +66,5 @@ No disponible. No se han identificado modelos comparables de forma fiable, ya qu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/diegofrazasilva/ltx_v1.1
+- Repositorio en Hugging Face: https://huggingface.co/diegofrazasilva/ltx_v1.1
 - Modelo base: https://huggingface.co/krea/Krea-2-Turbo (no se ha encontrado en la búsqueda web, pero se referencia en los metadatos).

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`prashant8oo8/mistral-lor` es un repositorio publicado en HuggingFace Hub por el usuario prashant8oo8 el 10 de septiembre de 2026, con un tamaño de repositorio de 0,1 GB y las etiquetas `transformers`, `safetensors`, `arxiv:1910.09700`, `endpoints_compatible` y `region:us`. El repositorio no cuenta con descargas ni likes en el momento de la consulta, y su model card es la plantilla automática generada por HuggingFace, sin ningún campo cumplimentado: todos los apartados (autoría, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluación) figuran como `[More Information Needed]`.
+`prashant8oo8/mistral-lor` es un repositorio publicado en Hugging Face Hub por el usuario prashant8oo8 el 10 de septiembre de 2026, con un tamaño de repositorio de 0,1 GB y las etiquetas `transformers`, `safetensors`, `arxiv:1910.09700`, `endpoints_compatible` y `region:us`. El repositorio no cuenta con descargas ni likes en el momento de la consulta, y su model card es la plantilla automática generada por Hugging Face, sin ningún campo cumplimentado: todos los apartados (autoría, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluación) figuran como `[More Information Needed]`.
 
 Por el identificador y por el tamaño del repositorio (0,1 GB, muy inferior a los pesos completos de cualquier modelo de la familia Mistral, que en su versión de 7B ocupa del orden de 14 GB en fp16) cabe plantear como hipótesis no confirmada que se trate de un adaptador LoRA o de un checkpoint derivado de un modelo Mistral, pero esta interpretación no está respaldada por ningún dato de la model card y debe tratarse únicamente como conjetura.
 
@@ -30,7 +30,7 @@ La relevancia de esta ficha es, por tanto, metodológica: documenta un caso de r
 
 No hay información disponible sobre la arquitectura. La model card del repositorio no especifica si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura híbrida o un adaptador de bajo rango (LoRA) sobre un modelo base. Tampoco se indica el modelo del que deriva (`Finetuned from model` aparece como `[More Information Needed]`), el objetivo de entrenamiento, la longitud de contexto nativa ni la configuración de atención.
 
-Respecto al entrenamiento, no se documentan el número de tokens, la composición del dataset, las hiperparámetros (régimen de precisión, learning rate, scheduler), ni si hubo fases de ajuste por instrucciones, RLHF o DPO. El único enlace técnico presente en las etiquetas es `arxiv:1910.09700`, que corresponde a Lacoste et al. (2019) sobre estimación de emisiones de carbono en aprendizaje automático; se trata de una referencia genérica incluida en la plantilla de HuggingFace y citada en el apartado de impacto ambiental, no de un paper que describa este modelo. El apartado de infraestructura de cómputo también está vacío.
+Respecto al entrenamiento, no se documentan el número de tokens, la composición del dataset, las hiperparámetros (régimen de precisión, learning rate, scheduler), ni si hubo fases de ajuste por instrucciones, RLHF o DPO. El único enlace técnico presente en las etiquetas es `arxiv:1910.09700`, que corresponde a Lacoste et al. (2019) sobre estimación de emisiones de carbono en aprendizaje automático; se trata de una referencia genérica incluida en la plantilla de Hugging Face y citada en el apartado de impacto ambiental, no de un paper que describa este modelo. El apartado de infraestructura de cómputo también está vacío.
 
 ## Capacidades
 
@@ -100,7 +100,7 @@ Los datos de las columnas de referencia corresponden a los modelos originales y 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/prashant8oo8/mistral-lor
+- Repositorio en Hugging Face: https://huggingface.co/prashant8oo8/mistral-lor
 - Referencia citada en las etiquetas del repositorio (Lacoste et al., 2019, sobre emisiones de carbono en ML): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental enlazada en la plantilla de la model card: https://mlco2.github.io/impact#compute
 - Paper, blog, repositorio de código y demo del modelo: no disponibles.

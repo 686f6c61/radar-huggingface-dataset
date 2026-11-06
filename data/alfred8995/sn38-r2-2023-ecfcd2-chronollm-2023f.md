@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alfred8995/sn38-r2-2023-ecfcd2-chronollm-2023f` es un modelo de lenguaje de aproximadamente 1.858 millones de parámetros (1,86 B) publicado en HuggingFace con pesos en formato safetensors y licencia marcada como `other`. El repositorio no incluye model card, no declara pipeline de inferencia ni idiomas soportados, y el acceso está restringido (gated): es necesario aceptar condiciones en la plataforma antes de descargar los pesos. El nombre del repositorio sugiere una relación con la familia `chronollm-2023f` del usuario `ecfcd2` (2 B de parámetros, pesos F32) y con el framework ChronoLLM descrito en el preprint arXiv 2501.04062, orientado a especializar modelos open source en la generación de código para simulaciones multifísica con PyChrono.
+`alfred8995/sn38-r2-2023-ecfcd2-chronollm-2023f` es un modelo de lenguaje de aproximadamente 1.858 millones de parámetros (1,86 B) publicado en Hugging Face con pesos en formato safetensors y licencia marcada como `other`. El repositorio no incluye model card, no declara pipeline de inferencia ni idiomas soportados, y el acceso está restringido (gated): es necesario aceptar condiciones en la plataforma antes de descargar los pesos. El nombre del repositorio sugiere una relación con la familia `chronollm-2023f` del usuario `ecfcd2` (2 B de parámetros, pesos F32) y con el framework ChronoLLM descrito en el preprint arXiv 2501.04062, orientado a especializar modelos open source en la generación de código para simulaciones multifísica con PyChrono.
 
 El interés técnico de esta ficha es limitado pero real: se trata de un artefacto derivado (probablemente un fine-tune o una conversión de formato) de un modelo de ~2 B orientado a un dominio muy concreto, empaquetado bajo una nomenclatura de competición o de ronda (`sn38-r2-2023`) que apunta a envíos de la subnet 38 de Bittensor. Es relevante ahora porque ejemplifica una tendencia: modelos pequeños, especializados y publicados de forma efímera, sin documentación, donde la evaluación previa a producción exige inspeccionar los pesos y el tokenizador directamente.
 
@@ -85,14 +85,14 @@ Los datos de los modelos comparables provienen de sus model cards públicas. La 
 - Idiomas no declarados: no hay garantía de comportamiento correcto en castellano ni en ningún otro idioma distinto del inglês técnico del corpus de entrenamiento.
 - Ventana de contexto desconocida: planificar cualquier integración asumiendo el mínimo razonable y verificar el valor real en `config.json` tras el acceso.
 - Licencia `other` sin texto público: no se puede asumir permiso de uso comercial, redistribución ni creación de derivados. Es un bloqueo real para producción.
-- Acceso gated: la descarga requiere aceptar condiciones, lo que impide su uso en pipelines automatizados de CI sin gestión de tokens de HuggingFace.
+- Acceso gated: la descarga requiere aceptar condiciones, lo que impide su uso en pipelines automatizados de CI sin gestión de tokens de Hugging Face.
 - Nomenclatura de competición (`sn38-r2`): los checkpoints de subnets suelen ser artefactos de una ronda concreta, sin mantenimiento posterior ni garantía de estabilidad.
 - Fecha de creación registrada en 2026-10-21: conviene verificar que el artefacto es el esperado y no una re-subida con metadatos inconsistentes.
 - Cero descargas y cero likes: no hay señal de comunidad, ni issues resueltos, ni evidencia de que el modelo funcione según lo previsto.
 
 ## Enlaces
 
-- Repositorio HuggingFace (gated): https://huggingface.co/alfred8995/sn38-r2-2023-ecfcd2-chronollm-2023f
+- Repositorio Hugging Face (gated): https://huggingface.co/alfred8995/sn38-r2-2023-ecfcd2-chronollm-2023f
 - Repositorio hermano: https://huggingface.co/ecfcd2/chronollm-2023f
 - Repositorio hermano (variante 2024): https://huggingface.co/ecfcd2/chronollm-2024f
 - Perfil del autor relacionado: https://huggingface.co/ecfcd2

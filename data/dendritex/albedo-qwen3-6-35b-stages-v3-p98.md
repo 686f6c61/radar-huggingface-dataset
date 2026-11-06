@@ -91,7 +91,7 @@ El modelo se posiciona como una alternativa eficiente frente a modelos densos de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dendritex/albedo-qwen3.6-35b-stages-v3-p98
+- Modelo en Hugging Face: https://huggingface.co/Dendritex/albedo-qwen3.6-35b-stages-v3-p98
 - Modelo base Qwen3.6-35B-A3B: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Blog de Qwen3.6-35B-A3B: https://qwen.ai/blog?id=qwen3.6-35b-a3b
 - Documentación de despliegue en vLLM Ascend: https://docs.vllm.ai/projects/ascend/en/v0.18.0/tutorials/models/Qwen3.6-35B-A3B.html

@@ -86,7 +86,7 @@ Frente a Qwen3.6-27B en FP16 o IQ2_XXS, este modelo ofrece un benchmark medio su
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/inductiveML/Ternary-Bonsai-27B-mlx-lossless-1.75bpw
+- Repositorio Hugging Face: https://huggingface.co/inductiveML/Ternary-Bonsai-27B-mlx-lossless-1.75bpw
 - Modelo base GGUF: https://huggingface.co/prism-ml/Ternary-Bonsai-27B-gguf
 - Checkpoint oficial MLX 2-bit: https://huggingface.co/prism-ml/Ternary-Bonsai-27B-mlx-2bit
 - Repositorio Ternel (metodologia y codigo): https://github.com/inductiveML/ternel

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Klint-32M es una familia de modelos fundacionales generativos para series temporales financieras, desarrollada por Akhilesh Varma (usuario akhverm en HuggingFace, ak495867 en GitHub). Se trata de una arquitectura causal autorregresiva de tipo transformer que descompone las velas OHLCV (open, high, low, close, volume) en tres flujos de factores estacionarios causales —Price-Path, Range-Shape y Activity—, los cuantiza en codigos discretos mediante Residual Vector Quantization (RVQ) y modela su distribucion conjunta de transicion con un transformer causal. El modelo declara 28,6 millones de parametros entrenables, aunque el nombre comercial del repositorio es 32M.
+Klint-32M es una familia de modelos fundacionales generativos para series temporales financieras, desarrollada por Akhilesh Varma (usuario akhverm en Hugging Face, ak495867 en GitHub). Se trata de una arquitectura causal autorregresiva de tipo transformer que descompone las velas OHLCV (open, high, low, close, volume) en tres flujos de factores estacionarios causales —Price-Path, Range-Shape y Activity—, los cuantiza en codigos discretos mediante Residual Vector Quantization (RVQ) y modela su distribucion conjunta de transicion con un transformer causal. El modelo declara 28,6 millones de parametros entrenables, aunque el nombre comercial del repositorio es 32M.
 
 La relevancia del proyecto reside en su enfoque de tokenizacion discreta de datos de mercado: en lugar de predecir valores continuos, el modelo genera secuencias de tokens que despues se decodifican con un decodificador geometrico que impone garantias matematicas estrictas sobre la geometria de la vela (High mayor o igual que max(Open, Close) y Low menor o igual que min(Open, Close)). Esto permite generar trayectorias sinteticas de velas fisicamente coherentes, algo poco habitual en modelos fundacionales de series temporales.
 
@@ -78,7 +78,7 @@ La informacion proporcionada no incluye datos de modelos comparables. Klint-32M 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Klint-32M | 28,6 M entrenables | No disponible (ejemplo de 90 tokens / 30 velas) | Sin resultados publicados; mejor perdida de validacion ~2,76 | MIT | HuggingFace y GitHub |
+| Klint-32M | 28,6 M entrenables | No disponible (ejemplo de 90 tokens / 30 velas) | Sin resultados publicados; mejor perdida de validacion ~2,76 | MIT | Hugging Face y GitHub |
 | Alternativas de la misma categoria (TimesFM, Chronos, Moirai, etc.) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 Nota: la busqueda web realizada no devolvio resultados relacionados con este modelo ni con modelos comparables de series temporales financieras; los resultados obtenidos correspondian a un tema no relacionado (determinantes de salud) y se han descartado.
@@ -97,9 +97,9 @@ Nota: la busqueda web realizada no devolvio resultados relacionados con este mod
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/akhverm/Klint-32M
+- Repositorio en Hugging Face: https://huggingface.co/akhverm/Klint-32M
 - Repositorio de codigo fuente y arquitectura en GitHub: https://github.com/ak495867/Klint-32M
-- Perfil del autor en HuggingFace: https://huggingface.co/akhverm
+- Perfil del autor en Hugging Face: https://huggingface.co/akhverm
 - Perfil del autor en GitHub: https://github.com/ak495867
 - Licencia MIT: https://opensource.org/licenses/MIT
 - Paper, blog tecnico o demo adicionales: no disponible en la informacion proporcionada. La busqueda web no devolvio resultados relevantes.

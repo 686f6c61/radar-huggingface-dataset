@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rbdj-tsc-ob30k-a-s10k-ema` es un checkpoint de un modelo del mundo (world model) para robótica, publicado por el usuario Yuyang-z en HuggingFace. No es un modelo de lenguaje: es un modelo generativo vídeo-acción de la familia SANA-RWM, concretamente la variante `SanaRWMVideoQwenNextSubAttnResV2SelfFlowWorldModelCameraConditionMultiViewTwoStream_5B_P1_D36`, con unos 5 000 millones de parámetros y 36 capas de profundidad. El checkpoint corresponde a un ajuste fino supervisado (SFT) sobre cadenas completas de episodios del simulador RoboDojo con el brazo ARX X5, partiendo de un preentrenamiento en 256 px y aplicando después pesos EMA (0,999) en la actualización 10 000 de la época 24.
+`rbdj-tsc-ob30k-a-s10k-ema` es un checkpoint de un modelo del mundo (world model) para robótica, publicado por el usuario Yuyang-z en Hugging Face. No es un modelo de lenguaje: es un modelo generativo vídeo-acción de la familia SANA-RWM, concretamente la variante `SanaRWMVideoQwenNextSubAttnResV2SelfFlowWorldModelCameraConditionMultiViewTwoStream_5B_P1_D36`, con unos 5 000 millones de parámetros y 36 capas de profundidad. El checkpoint corresponde a un ajuste fino supervisado (SFT) sobre cadenas completas de episodios del simulador RoboDojo con el brazo ARX X5, partiendo de un preentrenamiento en 256 px y aplicando después pesos EMA (0,999) en la actualización 10 000 de la época 24.
 
 El modelo resuelve un problema clásico en aprendizaje por imitación y planificación basada en modelo: predecir vídeo multi-vista y acciones de efector final condicionadas por cámara e instrucción, manteniendo coherencia a lo largo de episodios largos. Para ello emplea una arquitectura de dos flujos (*two-stream*) con bloques de observación (*obs-block*), atención con sub-atención, formulación *self-flow* (flow matching) y un mecanismo de *softmax sink* con horizonte 7 que ancla la generación al prefijo limpio ya generado (*prefix caching*). Trabaja con ventanas de episodio de entre 4 y 49 trozos (*chunks*) de 32 acciones absolutas de efector final a 25 fps y 3 vistas de 256x320, lo que da horizontes de hasta unos 62 segundos de trayectoria.
 
@@ -73,7 +73,7 @@ No se dispone en la informacion proporcionada de especificaciones de modelos com
 
 | Modelo | Parametros | Contexto / ventana | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rbdj-tsc-ob30k-a-s10k-ema | ~5B | 4-49 chunks de 32 acciones a 25 fps; 3 vistas 256x320 | Modelo del mundo vídeo-acción para manipulación simulada (ARX X5) | no disponible | HuggingFace, 17,9 GB, fp32 |
+| rbdj-tsc-ob30k-a-s10k-ema | ~5B | 4-49 chunks de 32 acciones a 25 fps; 3 vistas 256x320 | Modelo del mundo vídeo-acción para manipulación simulada (ARX X5) | no disponible | Hugging Face, 17,9 GB, fp32 |
 | Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -92,6 +92,6 @@ No se dispone en la informacion proporcionada de especificaciones de modelos com
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Yuyang-z/rbdj-tsc-ob30k-a-s10k-ema
+- Hugging Face: https://huggingface.co/Yuyang-z/rbdj-tsc-ob30k-a-s10k-ema
 
 Nota: la búsqueda web asociada a este identificador devolvió exclusivamente resultados sin relación con el modelo (páginas de contenido para adultos), por lo que no se incluyen como enlaces relevantes. No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

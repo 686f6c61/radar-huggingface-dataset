@@ -6,7 +6,7 @@ Sol11, también denominado RobustHazardPlanner, es un sistema de planificación 
 
 El sistema se compone de varios módulos: un preprocesado de series temporales de voltaje y temperatura, un estimador de supervivencia basado en dos arquitecturas (una red neuronal profunda HazardNet y un ensemble de gradient boosting PersonPeriodGBM), una tabla de penalizaciones que calcula el coste esperado de cada acción, y un planificador con búsqueda local. La innovación clave reside en el tratamiento explícito de la censura: de 461 dispositivos, solo 82 alcanzan el fin de vida observado, y el modelo aprovecha esa información censurada mediante una verosimilitud de riesgo discreto en lugar de descartarla. El sistema también incorpora calibración out-of-fold para corregir una sobrepredicción de fallos de aproximadamente 2,7 veces.
 
-El repositorio en HuggingFace tiene un tamaño de 0,0 GB y no se especifican licencia, idiomas ni pipeline. La model card detalla el funcionamiento interno y proporciona métricas de rendimiento sobre el conjunto de entrenamiento, pero no se publican pesos del modelo ni artefactos descargables.
+El repositorio en Hugging Face tiene un tamaño de 0,0 GB y no se especifican licencia, idiomas ni pipeline. La model card detalla el funcionamiento interno y proporciona métricas de rendimiento sobre el conjunto de entrenamiento, pero no se publican pesos del modelo ni artefactos descargables.
 
 ## Especificaciones técnicas
 
@@ -83,4 +83,4 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/YassY-The-AlchemYst/YassYBS26Sol11
+- Hugging Face: https://huggingface.co/YassY-The-AlchemYst/YassYBS26Sol11

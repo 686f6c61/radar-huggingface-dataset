@@ -106,7 +106,7 @@ Verificacion de correccion: con el parche, la cache en estado adaptador-on es id
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/airun-ai/GlanceRAG-MiMo-9B-Reranker-Activated
+- Hugging Face: https://huggingface.co/airun-ai/GlanceRAG-MiMo-9B-Reranker-Activated
 - Modelo base: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B
 - Adaptador de inicializacion: https://huggingface.co/airun-ai/MiMo-V2.6-Distill-Qwen-9B-Decision
 - Paper: https://arxiv.org/abs/2610.40454

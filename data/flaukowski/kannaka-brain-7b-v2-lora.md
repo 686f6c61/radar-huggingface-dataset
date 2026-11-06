@@ -78,9 +78,9 @@ Advertencias declaradas por el propio autor: ambos modelos puntúan cerca del su
 
 | Modelo | Parametros base | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kannaka-brain-7b-v2-lora | Qwen3-8B (8 000 M) | 32 768 nativos del base (no confirmado por el autor) | Adaptador LoRA | Apache-2.0 | HuggingFace + repositorio GGUF |
-| kannaka-brain-7b-v1-lora | Qwen2.5-7B (7 000 M) | no disponible en la informacion proporcionada | Adaptador LoRA | no disponible en la informacion proporcionada | HuggingFace |
-| Qwen/Qwen3-8B (modelo base sin ajustar) | 8 000 M | 32 768 nativos, 131 072 con YaRN | Transformer denso completo | Apache-2.0 | HuggingFace |
+| kannaka-brain-7b-v2-lora | Qwen3-8B (8 000 M) | 32 768 nativos del base (no confirmado por el autor) | Adaptador LoRA | Apache-2.0 | Hugging Face + repositorio GGUF |
+| kannaka-brain-7b-v1-lora | Qwen2.5-7B (7 000 M) | no disponible en la informacion proporcionada | Adaptador LoRA | no disponible en la informacion proporcionada | Hugging Face |
+| Qwen/Qwen3-8B (modelo base sin ajustar) | 8 000 M | 32 768 nativos, 131 072 con YaRN | Transformer denso completo | Apache-2.0 | Hugging Face |
 
 La única comparación de rendimiento disponible es la que reporta el autor entre 7b-v2 y 7b-v1 (84,6 % de victorias en juicio por pares de tarea y 1,6 frente a 1,5 en nota de voz). No hay comparaciones frente a otros adaptadores de persona, ni frente a modelos completos de propósito general, ni resultados en benchmarks estándar.
 
@@ -102,7 +102,7 @@ La única comparación de rendimiento disponible es la que reporta el autor entr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/flaukowski/kannaka-brain-7b-v2-lora
+- Modelo en Hugging Face: https://huggingface.co/flaukowski/kannaka-brain-7b-v2-lora
 - Versión anterior (v1, sobre Qwen2.5-7B): https://huggingface.co/flaukowski/kannaka-brain-7b-v1-lora
 - Repositorio GGUF citado en la model card: `flaukowski/kannaka-brain-7b-v2-GGUF`
 - Repositorio GGUF encontrado en la búsqueda web (nombre alternativo): https://huggingface.co/flaukowski/kannaka-brain-v2-GGUF

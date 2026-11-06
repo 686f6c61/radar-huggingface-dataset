@@ -4,7 +4,7 @@
 
 Lythri-Tada-4B-i1-GGUF es una recopilación de cuantizaciones GGUF generadas por mradermacher a partir del modelo base Lythri/Lythri-Tada-4B. El repositorio no contiene pesos en formato original (safetensors), sino únicamente ficheros GGUF cuantizados en una amplia variedad de niveles (desde IQ1_S hasta Q6_K), pensados para su uso con llama.cpp y derivados. El autor de las cuantizaciones es un colaborador habitual de la comunidad que publica versiones comprimidas de modelos recientes.
 
-El modelo base se presenta como un modelo de 4B de parámetros según el nombre del repositorio, aunque la model card no incluye información técnica sobre arquitectura, entrenamiento ni datos de evaluación. La única información disponible en la ficha de HuggingFace es la lista de cuantizaciones generadas y la referencia al modelo original. No se dispone de licencia declarada, idiomas soportados ni pipeline asociado.
+El modelo base se presenta como un modelo de 4B de parámetros según el nombre del repositorio, aunque la model card no incluye información técnica sobre arquitectura, entrenamiento ni datos de evaluación. La única información disponible en la ficha de Hugging Face es la lista de cuantizaciones generadas y la referencia al modelo original. No se dispone de licencia declarada, idiomas soportados ni pipeline asociado.
 
 La relevancia de este repositorio es práctica: permite ejecutar el modelo Lythri-Tada-4B en hardware de consumo mediante cuantización, con opciones que van desde ~1-2 bits (para GPUs con poca VRAM) hasta 6 bits (para mayor fidelidad). Al no haber datos de benchmarks ni documentación del modelo base, la evaluación debe hacerse empíricamente.
 
@@ -86,6 +86,6 @@ No se dispone de información sobre el modelo base Lythri-Tada-4B ni de benchmar
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Lythri-Tada-4B-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Lythri-Tada-4B-i1-GGUF
 - Modelo base: https://huggingface.co/Lythri/Lythri-Tada-4B
 - Herramienta de cuantización (llama.cpp): https://github.com/ggerganov/llama.cpp

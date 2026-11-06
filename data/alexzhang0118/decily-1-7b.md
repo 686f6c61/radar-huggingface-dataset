@@ -93,7 +93,7 @@ Temperaturas ajustadas observadas: aproximadamente 1,1 en dominio, aproximadamen
 |---|---|---|---|---|---|---|
 | Decily-1.7B | 1,74 B | Cross-encoder candidate scorer (Qwen3-1.7B-Base) | `state` <=256, `question` <=96, candidato <=64, 2-16 candidatos | 0,863 / 0,390 / 0,034 (24 tareas) | apache-2.0 | PyTorch bf16, MLX bf16, MLX 4-bit, ONNX int8 |
 | decider-2b | no disponible | Modelo de decision, entrenado sobre 95 tareas | no disponible | 0,811 / 0,453 / 0,032 (tareas compartidas) | no disponible | no disponible |
-| Qwen/Qwen3-1.7B-Base | 1,74 B (aproximado) | Transformer decoder generativo | no disponible en la informacion proporcionada | no disponible | apache-2.0 | safetensors en HuggingFace |
+| Qwen/Qwen3-1.7B-Base | 1,74 B (aproximado) | Transformer decoder generativo | no disponible en la informacion proporcionada | no disponible | apache-2.0 | safetensors en Hugging Face |
 
 Comparativa cualitativa: en la *fair suite* zero-shot (8 tareas no vistas por ninguno de los dos), decider-2b obtiene mejores resultados (0,700 / 0,71 / 0,047) que Decily (0,654 / 0,86 / 0,092), mientras que en las tareas compartidas Decily lidera con 0,863 frente a 0,811, una diferencia de +5,2 puntos. Ambos modelos son de la misma categoria funcional (modelos de decision), aunque decider-2b se entrena sobre 95 tareas frente a las 24 de Decily. La model card no aporta detalles de parametros, licencia ni disponibilidad de decider-2b, por lo que esos campos figuran como no disponibles.
 
@@ -112,7 +112,7 @@ Comparativa cualitativa: en la *fair suite* zero-shot (8 tareas no vistas por ni
 
 ## Enlaces
 
-- Modelo en HuggingFace (PyTorch bf16): https://huggingface.co/alexzhang0118/Decily-1.7B
+- Modelo en Hugging Face (PyTorch bf16): https://huggingface.co/alexzhang0118/Decily-1.7B
 - Variante MLX bf16: https://huggingface.co/alexzhang0118/Decily-MLX
 - Variante MLX 4-bit: https://huggingface.co/alexzhang0118/Decily-MLX-4bit
 - Variante ONNX int8: https://huggingface.co/alexzhang0118/Decily-ONNX-int8

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Wwalkeremma/mocov3-matching` es un repositorio de HuggingFace publicado por el usuario Wwalkeremma que contiene una implementación propia de MoCo v3 orientada a tareas de *matching* (emparejamiento), con una configuración que el autor etiqueta como "xlarge". No es el MoCo v3 oficial de Meta AI, sino una reimplementación de terceros cuyo artefacto principal es el script `train.py`, acompañado de `config.json`, `training_args.json` y un checkpoint de inicialización en safetensors. La model card declara explícitamente que no se reclama ninguna métrica de benchmark y que el checkpoint no ha sido entrenado.
+`Wwalkeremma/mocov3-matching` es un repositorio de Hugging Face publicado por el usuario Wwalkeremma que contiene una implementación propia de MoCo v3 orientada a tareas de *matching* (emparejamiento), con una configuración que el autor etiqueta como "xlarge". No es el MoCo v3 oficial de Meta AI, sino una reimplementación de terceros cuyo artefacto principal es el script `train.py`, acompañado de `config.json`, `training_args.json` y un checkpoint de inicialización en safetensors. La model card declara explícitamente que no se reclama ninguna métrica de benchmark y que el checkpoint no ha sido entrenado.
 
 El dato más relevante para evaluar el repositorio es el recuento real de parámetros del fichero safetensors: 49.600 parámetros. Esa cifra es incompatible con cualquier lectura literal de la etiqueta "xlarge" y sitúa el artefacto en la categoría de *smoke test*: un modelo de juguete cuya función es validar que el pipeline de carga, el forward pass y el bucle de entrenamiento funcionan de extremo a extremo. El tamaño del repositorio (0,0 GB) y las 8 descargas acumuladas son coherentes con ese diagnóstico.
 
@@ -23,7 +23,7 @@ Por tanto, su relevancia ahora no está en el rendimiento, sino en su valor como
 | Escala declarada por el autor | xlarge |
 | Tamaño del repositorio | 0,0 GB |
 | Descargas / likes | 8 / 0 |
-| Fecha de creación | 2026-10-21 (según metadatos de HuggingFace) |
+| Fecha de creación | 2026-10-21 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -83,7 +83,7 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Wwalkeremma/mocov3-matching
+- Repositorio en Hugging Face: https://huggingface.co/Wwalkeremma/mocov3-matching
 - Código y punto de entrada de entrenamiento: https://huggingface.co/Wwalkeremma/mocov3-matching/blob/main/train.py
 - Configuración de arquitectura: https://huggingface.co/Wwalkeremma/mocov3-matching/blob/main/config.json
 - Receta de experimento por defecto: https://huggingface.co/Wwalkeremma/mocov3-matching/blob/main/training_args.json

@@ -12,7 +12,7 @@ La relevancia inmediata reside en su licencia Apache 2.0 (uso comercial sin rest
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (etiqueta `llama` en HuggingFace; requiere `trust_remote_code=True`) |
+| Arquitectura | Transformer denso (etiqueta `llama` en Hugging Face; requiere `trust_remote_code=True`) |
 | Parámetros totales | 33.118.977.024 (33,1B) |
 | Parámetros activos | No aplica (no se indica que sea MoE) |
 | Longitud de contexto | No disponible |
@@ -100,7 +100,7 @@ La media aritmética de los ocho benchmarks reportados es de 71,5 para Nanbeige4
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nanbeige/Nanbeige4.3-33B-Base
+- Modelo en Hugging Face: https://huggingface.co/Nanbeige/Nanbeige4.3-33B-Base
 - Contacto del equipo: nanbeige@kanzhun.com
 - Cita recomendada por el autor: `@misc{nanbeige43base2026, title = {Nanbeige4.3-33B-Base}, author = {Nanbeige Team}, year = {2026}, publisher = {Hugging Face}, howpublished = {\url{https://huggingface.co/Nanbeige/Nanbeige4.3-33B-Base}}}`
 

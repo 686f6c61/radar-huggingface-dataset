@@ -6,7 +6,7 @@ mradermacher/Qwopus3-5-9B-Coder-Flash-GGUF es una colección de cuantizaciones e
 
 El interés práctico de este repositorio es que empaqueta un modelo de 9B en cuantizaciones que van desde 4,0 GB (Q2_K) hasta 18,5 GB (f16), lo que permite ejecutarlo en hardware de consumo y en equipos con memoria unificada. Además, se incluyen ficheros `mmproj` (proyector multimodal) en Q8_0 y f16, necesarios para habilitar la entrada de imágenes en llama.cpp.
 
-Se trata de un modelo reciente (publicado en octubre de 2026) con muy poca tracción en HuggingFace (13 descargas y 0 likes en el momento de redactar esta ficha), por lo que la información pública es escasa: la model card del repositorio se limita a documentar los ficheros de cuantización y no detalla contexto, dataset de entrenamiento ni resultados de benchmarks.
+Se trata de un modelo reciente (publicado en octubre de 2026) con muy poca tracción en Hugging Face (13 descargas y 0 likes en el momento de redactar esta ficha), por lo que la información pública es escasa: la model card del repositorio se limita a documentar los ficheros de cuantización y no detalla contexto, dataset de entrenamiento ni resultados de benchmarks.
 
 ## Especificaciones técnicas
 
@@ -97,7 +97,7 @@ En la misma categoría de tamaño (7B-9B densos con licencia permisiva), las alt
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/Qwopus3-5-9B-Coder-Flash-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/Qwopus3-5-9B-Coder-Flash-GGUF
 - Modelo base: https://huggingface.co/Jackrong/Qwopus3-5-9B-Coder-Flash
 - Cuantizaciones ponderadas (imatrix, familia i1): https://huggingface.co/mradermacher/Qwopus3-5-9B-Coder-Flash-i1-GGUF
 - Página de resumen y descargas del cuantizador: https://hf.tst.eu/model#Qwopus3-5-9B-Coder-Flash-GGUF

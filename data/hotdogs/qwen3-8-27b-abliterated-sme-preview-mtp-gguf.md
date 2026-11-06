@@ -90,7 +90,7 @@ La comparativa directa con otros modelos no está disponible en la información 
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo GGUF](https://huggingface.co/hotdogs/Qwen3.8-27B-abliterated-sme-preview-mtp-GGUF)
+- [Repositorio Hugging Face del modelo GGUF](https://huggingface.co/hotdogs/Qwen3.8-27B-abliterated-sme-preview-mtp-GGUF)
 - [Modelo base (SME-Preview)](https://huggingface.co/hotdogs/Qwen3.8-27B-abliterated-sme-preview)
 - [README del modelo base](https://huggingface.co/hotdogs/Qwen3.8-27B-abliterated-sme-preview/blob/main/README.md)
 - [Ficha de Qwen3.8-27B en vLLM Recipes](https://recipes.vllm.ai/Qwen/Qwen3.8-27B)

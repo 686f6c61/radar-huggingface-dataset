@@ -72,8 +72,8 @@ No se dispone de datos de rendimiento de este fork ni de su modelo base en la in
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| samuelstevens/LFM2.5-VL-450M-no-tiling | 448.718.848 | no disponible | sin benchmarks publicados en la informacion disponible | LFM Open License v1.0 (lfm1.0) | HuggingFace, 0 descargas, 0 likes |
-| LiquidAI/LFM2.5-VL-450M (upstream) | no disponible en la informacion proporcionada | no disponible | afirmaciones en su model card original, no reproducidas aqui | LFM Open License v1.0 (lfm1.0) | HuggingFace |
+| samuelstevens/LFM2.5-VL-450M-no-tiling | 448.718.848 | no disponible | sin benchmarks publicados en la informacion disponible | LFM Open License v1.0 (lfm1.0) | Hugging Face, 0 descargas, 0 likes |
+| LiquidAI/LFM2.5-VL-450M (upstream) | no disponible en la informacion proporcionada | no disponible | afirmaciones en su model card original, no reproducidas aqui | LFM Open License v1.0 (lfm1.0) | Hugging Face |
 | Otros VLM pequenos de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La busqueda web realizada no devolvio resultados utiles (unicamente paginas de inicio de Google), por lo que no se han podido incorporar modelos comparables adicionales ni datos de terceros.

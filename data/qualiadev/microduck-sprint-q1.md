@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Microduck-sprint-q1 es una política de control para robótica publicada por el usuario qualiadev en HuggingFace. No se trata de un modelo de lenguaje ni de un modelo multimodal, sino de un controlador entrenado con aprendizaje por refuerzo que genera las acciones de locomocion de un robot microduck. La model card lo describe como una politica "perpetua": una marcha (gait) que se ejecuta de forma continua hasta que se le indique lo contrario, y que se carga en una ranura de politica del robot.
+Microduck-sprint-q1 es una política de control para robótica publicada por el usuario qualiadev en Hugging Face. No se trata de un modelo de lenguaje ni de un modelo multimodal, sino de un controlador entrenado con aprendizaje por refuerzo que genera las acciones de locomocion de un robot microduck. La model card lo describe como una politica "perpetua": una marcha (gait) que se ejecuta de forma continua hasta que se le indique lo contrario, y que se carga en una ranura de politica del robot.
 
 El artefacto principal es un fichero `policy.onnx` que incorpora el normalizador de observaciones en su interior, de modo que la politica acepta observaciones en crudo. El espacio de observacion declarado es de 61 dimensiones y el de acciones de 14, con una frecuencia de control de 50 Hz. El manifiesto asociado, `manifest.json`, sigue el esquema 2 del manifiesto de politicas de microduck descrito en `docs/policy-manifest.md` del repositorio del daemon.
 
@@ -24,7 +24,7 @@ La relevancia de esta ficha es acotada: el modelo acumula 0 descargas y 0 likes 
 | Espacio de observacion | 61 dimensiones |
 | Espacio de acciones | 14 dimensiones |
 | Frecuencia de control | 50 Hz |
-| Tamano del repositorio | 0.0 GB (segun metadatos de HuggingFace) |
+| Tamano del repositorio | 0.0 GB (segun metadatos de Hugging Face) |
 | Libreria asociada | microduck |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-10-12 |
@@ -76,12 +76,12 @@ No disponible. La informacion proporcionada no incluye otros modelos comparables
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qualiadev/microduck-sprint-q1 | no disponible | no aplica | no disponible | no disponible | HuggingFace, 0 descargas |
+| qualiadev/microduck-sprint-q1 | no disponible | no aplica | no disponible | no disponible | Hugging Face, 0 descargas |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Licencia no declarada: al no especificarse licencia en HuggingFace ni en la model card, no hay autorizacion explicita de uso comercial. Es imprescindible contactar con el autor antes de cualquier uso en produccion o en productos distribuidos.
+- Licencia no declarada: al no especificarse licencia en Hugging Face ni en la model card, no hay autorizacion explicita de uso comercial. Es imprescindible contactar con el autor antes de cualquier uso en produccion o en productos distribuidos.
 - Ausencia total de benchmarks: no hay evidencia publicada de rendimiento, estabilidad ni robustez. Cualquier evaluacion debe realizarla el propio usuario sobre el robot real.
 - Riesgo de fallo fisico: al tratarse de una politica perpetua sin condicion de parada aprendida, un comportamiento inesperado se mantiene hasta que el operador interviene. Se recomienda probarla con el robot suspendido o en un entorno acotado antes de soltarla en el suelo.
 - Sin informacion sobre trasvase simulacion-realidad: no se documenta si el entrenamiento fue en simulacion, ni si se aplico aleatorizacion de dominio, por lo que el rendimiento en hardware real es incierto.
@@ -93,7 +93,7 @@ No disponible. La informacion proporcionada no incluye otros modelos comparables
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qualiadev/microduck-sprint-q1
+- Modelo en Hugging Face: https://huggingface.co/qualiadev/microduck-sprint-q1
 - Repositorio del robot y la libreria microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento (rama `sprint/race`, commit `0141bf4a8`): https://github.com/pollen-robotics/microduck_rl
 - Documentacion del esquema del manifiesto de politicas: `docs/policy-manifest.md` del repositorio del daemon (URL directa no disponible)

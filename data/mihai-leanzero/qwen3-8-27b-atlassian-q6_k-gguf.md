@@ -83,7 +83,7 @@ No se han publicado en la información disponible resultados de benchmarks está
 | Qwen3.8-27B-Atlassian-Q6_K-GGUF (este) | 27,3 B | GGUF Q6_K | 28,7 | 30,3 | apache-2.0 | Repositorio GGUF para llama.cpp, LM Studio y Ollama |
 | Qwen3.8-27B-Atlassian-Q8-mlx (mismo adapter v0.5) | 27,3 B (base) | MLX 8 bits | 30,0 | 31,3 | No disponible en la información | Release MLX, enlazada en la sección Family |
 | Predecesor v0.4 del adapter | 27,3 B (base) | No disponible | 22,7 | 30,7 | No disponible | No disponible |
-| Qwen/Qwen3.8-27B (modelo base) | 27,3 B | bf16 (safetensors) | No disponible | No disponible | No disponible | HuggingFace (referenciado como `base_model`) |
+| Qwen/Qwen3.8-27B (modelo base) | 27,3 B | bf16 (safetensors) | No disponible | No disponible | No disponible | Hugging Face (referenciado como `base_model`) |
 
 No se dispone de datos de otros ajustes verticales comparables en la información proporcionada.
 
@@ -103,10 +103,10 @@ No se dispone de datos de otros ajustes verticales comparables en la informació
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Mihai-LeanZero/Qwen3.8-27B-Atlassian-Q6_K-GGUF
+- Hugging Face: https://huggingface.co/Mihai-LeanZero/Qwen3.8-27B-Atlassian-Q6_K-GGUF
 - Página de la familia Atlassian de LeanZero (write-up completo y evidencia de cada ronda): https://leanzero.net/portfolio/atlassian-models
 - Sitio del autor: https://leanzero.net
 - Repo MLX del mismo adapter (enlazado bajo "Family" en la model card): URL no disponible en la información proporcionada
-- Modelo base: Qwen/Qwen3.8-27B (URL de HuggingFace no incluida en la información proporcionada)
+- Modelo base: Qwen/Qwen3.8-27B (URL de Hugging Face no incluida en la información proporcionada)
 - Issues upstream citadas por el autor: llama.cpp issue 20006 (throughput por lotes en arquitecturas híbridas) y issue 20225 (defecto de caché de estado recurrente); enlaces directos no disponibles
 - Nota sobre la búsqueda web: los resultados devueltos no guardan relación con el modelo (contenido musical y de traducción), por lo que no se han incorporado enlaces adicionales.

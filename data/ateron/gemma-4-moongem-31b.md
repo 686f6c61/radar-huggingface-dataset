@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Gemma-4-MoonGem-31B es un modelo de lenguaje de 31.273.088.876 parametros (31,27B) publicado por el usuario Ateron en HuggingFace. No es un modelo entrenado desde cero, sino un merge de siete modelos derivados de la familia Gemma 4, combinados con la herramienta mergekit en tres fases sucesivas. El repositorio se distribuye en safetensors con precision bfloat16/f16 y ocupa 62,6 GB. La ficha declara orientacion a roleplay y generacion de texto conversacional.
+Gemma-4-MoonGem-31B es un modelo de lenguaje de 31.273.088.876 parametros (31,27B) publicado por el usuario Ateron en Hugging Face. No es un modelo entrenado desde cero, sino un merge de siete modelos derivados de la familia Gemma 4, combinados con la herramienta mergekit en tres fases sucesivas. El repositorio se distribuye en safetensors con precision bfloat16/f16 y ocupa 62,6 GB. La ficha declara orientacion a roleplay y generacion de texto conversacional.
 
 El modelo parte de una base comun (Gemma-4-Scotoma-V2) sobre la que se aplican, primero, una fusion TIES con densidad 0,15 sobre tres componentes (Glimmer, Gutenberg y Gemopus) y, despues, dos fusiones task_arithmetic que incorporan Melinoe-VL, MeroMero-V2, MusicaV1 y las mezclas intermedias. Es, por tanto, un artefacto de la comunidad sin entrenamiento adicional documentado: su comportamiento depende enteramente de los pesos heredados de los modelos padre.
 
@@ -69,11 +69,11 @@ Todos los modelos de la tabla pertenecen a la familia Gemma 4 y, salvo el propio
 
 | Modelo | Parametros | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Ateron/Gemma-4-MoonGem-31B | 31,27B (confirmado) | Merge para roleplay y conversacion | apache-2.0 (declarada) | Publico en HuggingFace; 188 descargas, 8 likes |
-| ReadyArt/gemma-4-31B-it-scotoma-2 | ~31B (inferido) | Base instruct del merge | no disponible | Publico en HuggingFace |
-| Jackrong/Gemopus-4-31B-it | ~31B (inferido) | Instruct generalista | no disponible | Publico en HuggingFace |
-| BirdToast/Gemma-4-31B-glimmer-rp-v0.1 | ~31B (inferido) | Roleplay | no disponible | Publico en HuggingFace |
-| nbeerbower/Gemma4-Gutenberg-31B | ~31B (inferido) | Prosa literaria | no disponible | Publico en HuggingFace |
+| Ateron/Gemma-4-MoonGem-31B | 31,27B (confirmado) | Merge para roleplay y conversacion | apache-2.0 (declarada) | Publico en Hugging Face; 188 descargas, 8 likes |
+| ReadyArt/gemma-4-31B-it-scotoma-2 | ~31B (inferido) | Base instruct del merge | no disponible | Publico en Hugging Face |
+| Jackrong/Gemopus-4-31B-it | ~31B (inferido) | Instruct generalista | no disponible | Publico en Hugging Face |
+| BirdToast/Gemma-4-31B-glimmer-rp-v0.1 | ~31B (inferido) | Roleplay | no disponible | Publico en Hugging Face |
+| nbeerbower/Gemma4-Gutenberg-31B | ~31B (inferido) | Prosa literaria | no disponible | Publico en Hugging Face |
 
 No se dispone de benchmarks que permitan comparar el rendimiento relativo entre estos modelos.
 
@@ -87,13 +87,13 @@ No se dispone de benchmarks que permitan comparar el rendimiento relativo entre 
 - Longitud de contexto: desconocida. No se debe asumir ningun valor concreto en produccion sin medirlo.
 - Tool calling y agentes: sin evidencia de soporte. No disenar pipelines que dependan de function calling sin validarlo antes.
 - Licencia: la ficha declara apache-2.0, pero los modelos padre descienden de Gemma (Google DeepMind), cuyos terminos de uso suelen ser distintos de Apache 2.0. Antes de un uso comercial, conviene verificar la cadena completa de licencias de los siete componentes; la etiqueta apache-2.0 no garantiza por si sola que el uso comercial sea libre de restricciones.
-- Trazabilidad del merge: las recetas usan rutas locales de Windows (`F:\AI\Merge\...`) en lugar de identificadores de HuggingFace, lo que dificulta la reproduccion exacta del merge con las revisiones concretas de cada componente.
+- Trazabilidad del merge: las recetas usan rutas locales de Windows (`F:\AI\Merge\...`) en lugar de identificadores de Hugging Face, lo que dificulta la reproduccion exacta del merge con las revisiones concretas de cada componente.
 - Datos del repositorio: fechas de creacion y actualizacion de 2026, repositorio sin cuantizaciones oficiales y sin versiones GGUF. La conversion y el empaquetado corren a cargo del usuario.
 - Uso responsable: tratandose de un modelo de roleplay sin filtros documentados, no deberia desplegarse de cara al publico sin una capa de moderacion adicional.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ateron/Gemma-4-MoonGem-31B
+- Modelo en Hugging Face: https://huggingface.co/Ateron/Gemma-4-MoonGem-31B
 - Modelos base declarados:
   - https://huggingface.co/BirdToast/Gemma-4-31B-glimmer-rp-v0.1
   - https://huggingface.co/nbeerbower/Gemma4-Gutenberg-31B

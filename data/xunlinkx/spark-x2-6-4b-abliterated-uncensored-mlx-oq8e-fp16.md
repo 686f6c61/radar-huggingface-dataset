@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la información disponible. La �
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Spark-X2.6-4B-Abliterated-Uncensored MLX oQ8e (este) | 4,11 B | no disponible | MLX 8-bit | Apache-2.0 | HuggingFace, 110 descargas |
-| electroglyph/Spark-X2.6-4B-uncensored | 4,11 B (estimado, derivado del mismo base) | no disponible | BF16 | Apache-2.0 (heredada) | HuggingFace |
-| XHToken/Spark-X2.6-4B (oficial) | 4,11 B (estimado) | no disponible | no disponible | Apache-2.0 (según linaje) | HuggingFace y GitHub |
-| Otras cuantizaciones del mismo set (oQ4e, oQ5e) | 4,11 B | no disponible | MLX 4/5-bit | Apache-2.0 | HuggingFace (mismo publicador) |
+| Spark-X2.6-4B-Abliterated-Uncensored MLX oQ8e (este) | 4,11 B | no disponible | MLX 8-bit | Apache-2.0 | Hugging Face, 110 descargas |
+| electroglyph/Spark-X2.6-4B-uncensored | 4,11 B (estimado, derivado del mismo base) | no disponible | BF16 | Apache-2.0 (heredada) | Hugging Face |
+| XHToken/Spark-X2.6-4B (oficial) | 4,11 B (estimado) | no disponible | no disponible | Apache-2.0 (según linaje) | Hugging Face y GitHub |
+| Otras cuantizaciones del mismo set (oQ4e, oQ5e) | 4,11 B | no disponible | MLX 4/5-bit | Apache-2.0 | Hugging Face (mismo publicador) |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes más allá de la jerarquía de precisión y huella de memoria indicada por el publicador.
 
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes más all
 
 ## Enlaces
 
-- HuggingFace del checkpoint: https://huggingface.co/xunlinkx/Spark-X2.6-4B-Abliterated-Uncensored-MLX-oQ8e-fp16
+- Hugging Face del checkpoint: https://huggingface.co/xunlinkx/Spark-X2.6-4B-Abliterated-Uncensored-MLX-oQ8e-fp16
 - Modelo base del derivado: https://huggingface.co/electroglyph/Spark-X2.6-4B-uncensored
 - Modelo oficial upstream: https://huggingface.co/XHToken/Spark-X2.6-4B
 - Repositorio oficial del proyecto: https://github.com/XHToken/Spark-X2.6

@@ -66,9 +66,9 @@ No disponible. No existe una categoría de modelos de IA comparable; el proyecto
 - El código está orientado a un dominio muy específico (mecánica orbital y emulación del AGC) y no es generalizable.
 - La licencia Sovereign Source v1.0 puede restringir el uso comercial; se debe revisar su texto exacto.
 - Algunas partes están bajo Apache 2.0 (matemáticas) y MIT (pruebas), lo que facilita su uso en esos componentes.
-- El repositorio no tiene descargas ni likes en HuggingFace, lo que sugiere que es un proyecto reciente o poco difundido.
+- El repositorio no tiene descargas ni likes en Hugging Face, lo que sugiere que es un proyecto reciente o poco difundido.
 - No se proporcionan instrucciones de compilación ni documentación de API en la model card; el usuario debe explorar el código fuente.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Snapkitty/sovereign-agc
+- Repositorio en Hugging Face: https://huggingface.co/Snapkitty/sovereign-agc

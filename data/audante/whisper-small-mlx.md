@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto de audio | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Audante/whisper-small-mlx | ~244 M | 30 s por segmento | MLX | MIT | HuggingFace (espejo) |
-| mlx-community/whisper-small-mlx | ~244 M | 30 s por segmento | MLX | MIT | HuggingFace (fuente original de la conversión) |
-| openai/whisper-small | ~244 M | 30 s por segmento | PyTorch/safetensors | MIT | HuggingFace (modelo base) |
-| openai/whisper-large-v3 | ~1.550 M | 30 s por segmento | PyTorch/safetensors | MIT | HuggingFace |
+| Audante/whisper-small-mlx | ~244 M | 30 s por segmento | MLX | MIT | Hugging Face (espejo) |
+| mlx-community/whisper-small-mlx | ~244 M | 30 s por segmento | MLX | MIT | Hugging Face (fuente original de la conversión) |
+| openai/whisper-small | ~244 M | 30 s por segmento | PyTorch/safetensors | MIT | Hugging Face (modelo base) |
+| openai/whisper-large-v3 | ~1.550 M | 30 s por segmento | PyTorch/safetensors | MIT | Hugging Face |
 
 La diferencia principal frente a whisper-small de OpenAI es el formato de pesos: MLX frente a PyTorch. Frente a whisper-large-v3, este modelo es aproximadamente seis veces más pequeño, lo que reduce los requisitos de memoria a costa de una precisión inferior en transcripción, aunque no se dispone de métricas en esta ficha para cuantificar la diferencia.
 
@@ -81,7 +81,7 @@ La diferencia principal frente a whisper-small de OpenAI es el formato de pesos:
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Audante/whisper-small-mlx
+- Repositorio en Hugging Face: https://huggingface.co/Audante/whisper-small-mlx
 - Repositorio fuente de la conversión: https://huggingface.co/mlx-community/whisper-small-mlx
 - Modelo base de OpenAI: https://huggingface.co/openai/whisper-small
 - Paper de Whisper: https://arxiv.org/abs/2212.04356

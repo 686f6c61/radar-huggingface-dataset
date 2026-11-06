@@ -84,6 +84,6 @@ La única comparativa disponible en la información proporcionada es frente al m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/XinnanZhang/Qwen3-8B-openthoughts3-math-400k-sft
+- Hugging Face: https://huggingface.co/XinnanZhang/Qwen3-8B-openthoughts3-math-400k-sft
 - Dataset de entrenamiento: https://huggingface.co/datasets/XinnanZhang/openthoughts3-math-50k8
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B

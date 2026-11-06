@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `osama-bin/sar-oil-spill-classifier` es un clasificador de imágenes SAR (radar de apertura sintética) orientado a la detección de vertidos de petróleo y a la estimación de su grosor. Lo desarrolla el usuario de HuggingFace `osama-bin` y se distribuye con licencia MIT. Su entrada es una imagen Sentinel-1 (banda C) y su salida es una distribución de probabilidad sobre tres clases: `Thin_Sheen` (película fina), `Moderate` (grosor intermedio o emulsión) y `Thick_Emulsified` (petróleo espeso o emulsionado). Es, por tanto, un modelo de visión por computador, no un modelo de lenguaje: no procesa ni genera texto.
+El modelo `osama-bin/sar-oil-spill-classifier` es un clasificador de imágenes SAR (radar de apertura sintética) orientado a la detección de vertidos de petróleo y a la estimación de su grosor. Lo desarrolla el usuario de Hugging Face `osama-bin` y se distribuye con licencia MIT. Su entrada es una imagen Sentinel-1 (banda C) y su salida es una distribución de probabilidad sobre tres clases: `Thin_Sheen` (película fina), `Moderate` (grosor intermedio o emulsión) y `Thick_Emulsified` (petróleo espeso o emulsionado). Es, por tanto, un modelo de visión por computador, no un modelo de lenguaje: no procesa ni genera texto.
 
 Técnicamente es un híbrido CNN + Swin Transformer. La rama convolucional emplea un backbone ResNet-18 que produce características de 512 dimensiones, mientras que la rama de atención usa un Swin-Tiny con patch 4, ventana 7 y entrada de 224x224, que aporta 768 dimensiones. Ambas representaciones se concatenan (1280 dimensiones) y pasan por una cabeza de fusión compuesta por una capa lineal, BatchNorm, ReLU y una salida de 512 dimensiones, seguida de una softmax de tres clases.
 
@@ -66,7 +66,7 @@ No se dispone de información sobre modelos comparables en la documentación apo
 
 | Modelo | Parámetros | Contexto/entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `osama-bin/sar-oil-spill-classifier` | No disponible | 224x224 (rama Swin) | No publicado | MIT | HuggingFace, 0 descargas |
+| `osama-bin/sar-oil-spill-classifier` | No disponible | 224x224 (rama Swin) | No publicado | MIT | Hugging Face, 0 descargas |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No identificadas |
 
 ## Limitaciones y advertencias
@@ -83,5 +83,5 @@ No se dispone de información sobre modelos comparables en la documentación apo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/osama-bin/sar-oil-spill-classifier
+- Modelo en Hugging Face: https://huggingface.co/osama-bin/sar-oil-spill-classifier
 - Resultados de la búsqueda web: no se ha encontrado ningún enlace relevante al modelo (papers, blogs, repositorios o demos). Los resultados devueltos correspondían a contenidos biográficos y cinematográficos sin relación con el clasificador de vertidos.

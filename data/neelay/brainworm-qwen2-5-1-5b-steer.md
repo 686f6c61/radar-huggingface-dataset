@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Neelay/brainworm-qwen2.5-1.5b-steer
+- Modelo en Hugging Face: https://huggingface.co/Neelay/brainworm-qwen2.5-1.5b-steer
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - ONNX Runtime: https://onnxruntime.ai/
 - WebGPU: https://www.w3.org/TR/webgpu/

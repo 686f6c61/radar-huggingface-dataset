@@ -96,7 +96,7 @@ Este build ofrece el mejor equilibrio entre tamaño y conocimiento, aunque es li
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/primitive-ai/Ornith-1.5-35B-A3B-mixed-NVFP4-FP8
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/primitive-ai/Ornith-1.5-35B-A3B-mixed-NVFP4-FP8
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Versión FP8 oficial: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-FP8
 - Versión NVFP4 oficial: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-NVFP4

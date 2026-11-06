@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La do
 - VRAM estimada: no disponible. Con 276B parámetros totales, el despliegue requiere infraestructura de servidor de alta memoria, pero no se han publicado cifras oficiales.
 - GPU recomendadas: no disponible.
 - ¿Cabe en GPU de consumo? No se puede determinar con la información disponible; el tamaño total sugiere que no es viable en GPUs de consumo habituales.
-- Opciones de despliegue: SGLang, vLLM, TokenSpeed, Unsloth, HuggingFace Transformers. También hay acceso vía API a través de proveedores de inferencia de terceros.
+- Opciones de despliegue: SGLang, vLLM, TokenSpeed, Unsloth, Hugging Face Transformers. También hay acceso vía API a través de proveedores de inferencia de terceros.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -84,7 +84,7 @@ La documentación indica que Inkling-Small es más eficiente que Inkling (el mod
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/trinityomni/Inkling-Small
+- Hugging Face: https://huggingface.co/trinityomni/Inkling-Small
 - Model card oficial: https://thinkingmachines.ai/model-card/inkling-small/
 - Anuncio de introducción: https://thinkingmachines.ai/news/inkling-small/
 - Playground: https://tinker.thinkingmachines.ai/playground
@@ -94,4 +94,4 @@ La documentación indica que Inkling-Small es más eficiente que Inkling (el mod
 - Receta vLLM: https://recipes.vllm.ai/thinkingmachines/Inkling-Small
 - Receta TokenSpeed: https://lightseek.org/tokenspeed/recipes/models#Inkling
 - Receta Unsloth: https://unsloth.ai/docs/models/inkling
-- Blog de HuggingFace: https://hf.co/blog/thinkingmachines-inkling
+- Blog de Hugging Face: https://hf.co/blog/thinkingmachines-inkling

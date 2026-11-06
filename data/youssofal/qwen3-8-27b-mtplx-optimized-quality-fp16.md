@@ -86,7 +86,7 @@ No hay otros modelos de la misma categoría con datos públicos comparables en l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Youssofal/Qwen3.8-27B-MTPLX-Optimized-Quality-FP16
+- Hugging Face: https://huggingface.co/Youssofal/Qwen3.8-27B-MTPLX-Optimized-Quality-FP16
 - Página oficial de MTPLX: https://mtplx.com
 - Repositorio GitHub de MTPLX: https://github.com/youssofal/MTPLX
 - Modelo base (Qwen/Qwen3.8-27B): no disponible en la información proporcionada

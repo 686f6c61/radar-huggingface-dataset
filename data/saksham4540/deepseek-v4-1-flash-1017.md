@@ -84,8 +84,8 @@ Los datos provienen de la model card del autor y comparan DS-V4.1-Flash-1017 con
 
 | Modelo | Parametros | Contexto | HLE w/o tools | Terminal-Bench 4.0 | DeepSWE v1.1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash-1017 | 763,2 B | 1M | 42,6 | 42,3 | 77,0 | MIT | HuggingFace (replica de terceros) |
-| DeepSeek-V4.1-Flash | no disponible | no disponible | 36,8 | 31,2 | 74,2 | no disponible | HuggingFace (deepseek-ai) |
+| DeepSeek-V4.1-Flash-1017 | 763,2 B | 1M | 42,6 | 42,3 | 77,0 | MIT | Hugging Face (replica de terceros) |
+| DeepSeek-V4.1-Flash | no disponible | no disponible | 36,8 | 31,2 | 74,2 | no disponible | Hugging Face (deepseek-ai) |
 | K3 | no disponible | no disponible | 43,5 | 12,6 | 67,5 | no disponible | no disponible |
 | GLM-5.3 | no disponible | no disponible | 42,0† | 37,9 | 66,9 | no disponible | no disponible |
 | GPT-5.6 Sol | no disponible | no disponible | 44,5 | 39,9 | 73,0 | propietaria | no disponible |
@@ -106,10 +106,10 @@ Los datos de parámetros, contexto y licencia de los modelos comparables no est�
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Saksham4540/DeepSeek-V4.1-Flash-1017
+- Repositorio Hugging Face: https://huggingface.co/Saksham4540/DeepSeek-V4.1-Flash-1017
 - Modelo original DeepSeek-V4.1-Flash: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Informe técnico (referenciado en la model card): https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf
-- Organización DeepSeek en HuggingFace: https://huggingface.co/deepseek-ai
+- Organización DeepSeek en Hugging Face: https://huggingface.co/deepseek-ai
 - Repositorio deepseek-recipe: https://github.com/deepseek-ai/deepseek-recipe
 - Página principal DeepSeek: https://www.deepseek.com/
 - Chat DeepSeek: https://chat.deepseek.com/

@@ -50,7 +50,7 @@ No se proporcionan requisitos específicos de hardware. Para un modelo de 12B en
 
 - vLLM o TGI para servidores de inferencia optimizados.
 - llama.cpp u Ollama para ejecución en CPU o GPUs de consumo.
-- Transformers de HuggingFace con carga en 8 bits o 4 bits.
+- Transformers de Hugging Face con carga en 8 bits o 4 bits.
 
 La latencia y el throughput dependen del hardware y la cuantización, pero no se dispone de datos medidos.
 
@@ -69,7 +69,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [Repositorio del modelo en HuggingFace](https://huggingface.co/sidbaines/scimt-prior-coins-gemma4-12b-charter-graft-native-grpo-direct-phase2-v1)
+- [Repositorio del modelo en Hugging Face](https://huggingface.co/sidbaines/scimt-prior-coins-gemma4-12b-charter-graft-native-grpo-direct-phase2-v1)
 - [Modelo de la fase uno](https://huggingface.co/sidbaines/scimt-prior-coins-gemma4-12b-charter-graft-native-grpo-v1)
 - [Dataset de evaluación](https://huggingface.co/datasets/sidbaines/scimt-prior-coins-eval-samples)
 - [Página oficial de Gemma 4](https://deepmind.google/models/gemma/gemma-4/)

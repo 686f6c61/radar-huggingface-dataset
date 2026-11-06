@@ -106,8 +106,8 @@ Comparacion con otras familias de modelos MoE de tamano similar: no disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace (nativ-community): https://huggingface.co/nativ-community/LFM2.5-24B-A2B-Preview-bf16
-- Modelo en HuggingFace (mlx-community, archivos identicos): https://huggingface.co/mlx-community/LFM2.5-24B-A2B-Preview-bf16
+- Modelo en Hugging Face (nativ-community): https://huggingface.co/nativ-community/LFM2.5-24B-A2B-Preview-bf16
+- Modelo en Hugging Face (mlx-community, archivos identicos): https://huggingface.co/mlx-community/LFM2.5-24B-A2B-Preview-bf16
 - Modelo base original: https://huggingface.co/lq-preview/LFM2.5-24B-A2B-Preview
 - Licencia LFM Open License v1.0 (archivo LICENSE del repositorio): https://huggingface.co/nativ-community/LFM2.5-24B-A2B-Preview-bf16/blob/main/LICENSE
 - Aviso de modificaciones de conversion y cuantizacion (NOTICE): https://huggingface.co/nativ-community/LFM2.5-24B-A2B-Preview-bf16/blob/main/NOTICE

@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Propósito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| unl-reset/tofu-llama2-7b-forget10-ihl_head-epoch14 | 6,74 B | no disponible (base Llama 2: 4096) | Desaprendizaje TOFU forget10, época 14 | llama2 | HuggingFace (0 descargas) |
-| locuslab/tofu_ft_llama2-7b | ~6,74 B | 4096 | Ajuste fino TOFU (modelo base de este checkpoint) | llama2 | HuggingFace |
-| NousResearch/Llama-2-7b-chat-hf | ~6,74 B | 4096 | Chat generalista en inglés | llama2 | HuggingFace |
-| meta-llama/Llama-2-7b-hf | ~6,74 B | 4096 | Modelo base preentrenado | llama2 | HuggingFace |
+| unl-reset/tofu-llama2-7b-forget10-ihl_head-epoch14 | 6,74 B | no disponible (base Llama 2: 4096) | Desaprendizaje TOFU forget10, época 14 | llama2 | Hugging Face (0 descargas) |
+| locuslab/tofu_ft_llama2-7b | ~6,74 B | 4096 | Ajuste fino TOFU (modelo base de este checkpoint) | llama2 | Hugging Face |
+| NousResearch/Llama-2-7b-chat-hf | ~6,74 B | 4096 | Chat generalista en inglés | llama2 | Hugging Face |
+| meta-llama/Llama-2-7b-hf | ~6,74 B | 4096 | Modelo base preentrenado | llama2 | Hugging Face |
 
 La comparación directa con otros métodos de unlearning sobre TOFU (por ejemplo, variantes de gradient ascent, preference optimization o task arithmetic) no está disponible en la información proporcionada.
 
@@ -89,7 +89,7 @@ La comparación directa con otros métodos de unlearning sobre TOFU (por ejemplo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_head-epoch14
+- Hugging Face: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_head-epoch14
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_llama2-7b
 - Modelo de inicialización de embeddings y LM head: https://huggingface.co/NousResearch/Llama-2-7b-chat-hf
 - Modelo original Llama 2: https://huggingface.co/meta-llama/Llama-2-7b-hf

@@ -105,7 +105,7 @@ No se dispone de datos de benchmarks de los modelos base y fundacional comparabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Chandrasekar/Qwen3.5-4B-GLB-3D-Coder-Sirpi-MLX-4bit
+- Modelo en Hugging Face: https://huggingface.co/Chandrasekar/Qwen3.5-4B-GLB-3D-Coder-Sirpi-MLX-4bit
 - Modelo base: https://huggingface.co/ccore/Qwen3.5-4B-GLB-3D-Coder
 - Modelo fundacional: https://huggingface.co/Qwen/Qwen3.5-4B
 - Aplicacion Sirpi (repositorio): https://github.com/chandrasekar-r/sirpi

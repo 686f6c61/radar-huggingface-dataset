@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `chaewoniexx/finetuned_RoBERTa` es un ajuste fino (fine-tuning) del modelo base `FacebookAI/roberta-base`, publicado en HuggingFace por el usuario chaewoniexx. Se trata de un clasificador de texto basado en la arquitectura transformer encoder-only de RoBERTa, con 125 millones de parámetros en su versión base. El repositorio contiene los pesos en formato safetensors y ocupa aproximadamente 0,5 GB. La licencia es MIT, lo que permite uso comercial y modificación sin restricciones significativas.
+El modelo `chaewoniexx/finetuned_RoBERTa` es un ajuste fino (fine-tuning) del modelo base `FacebookAI/roberta-base`, publicado en Hugging Face por el usuario chaewoniexx. Se trata de un clasificador de texto basado en la arquitectura transformer encoder-only de RoBERTa, con 125 millones de parámetros en su versión base. El repositorio contiene los pesos en formato safetensors y ocupa aproximadamente 0,5 GB. La licencia es MIT, lo que permite uso comercial y modificación sin restricciones significativas.
 
 La relevancia de este modelo reside en que RoBERTa-base es uno de los encoders más utilizados para tareas de clasificación de texto, y este fine-tuning concreto podría estar orientado a una tarea específica, aunque el autor no ha documentado ni la tarea ni los datos de entrenamiento en la model card. No se han publicado métricas de rendimiento, por lo que su utilidad práctica queda limitada a la evaluación directa por parte del usuario. La ausencia de descargas y likes sugiere que es un proyecto personal o en fase inicial.
 
@@ -50,12 +50,12 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - VRAM estimada para inferencia: para un modelo de 125M de parámetros en FP32, se requieren aproximadamente 0,5 GB de VRAM solo para los pesos; con activaciones y overhead, se recomienda al menos 2 GB.
 - GPU recomendadas: cualquier GPU con más de 4 GB de VRAM es suficiente, por ejemplo NVIDIA GTX 1650, RTX 3060, o GPUs de datacenter como T4.
 - Compatibilidad con GPU de consumo: sí, cabe en la mayoría de GPUs de consumo actuales, incluso en CPU si se usa cuantización (aunque no se proporcionan versiones cuantizadas).
-- Opciones de despliegue: puede servirse con HuggingFace Transformers, ONNX Runtime, o mediante frameworks como vLLM (aunque vLLM está más orientado a generación, no a encoders). También es posible usar `transformers` pipeline para clasificación.
+- Opciones de despliegue: puede servirse con Hugging Face Transformers, ONNX Runtime, o mediante frameworks como vLLM (aunque vLLM está más orientado a generación, no a encoders). También es posible usar `transformers` pipeline para clasificación.
 - Latencia y throughput estimados: no disponible; dependerá del hardware y del lote.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para comparar este modelo con alternativas específicas de la misma categoría, ya que no se conoce la tarea ni el rendimiento. Como referencia genérica, otros fine-tunes de RoBERTa-base en HuggingFace (por ejemplo, `cardiffnlp/twitter-roberta-base-sentiment`) ofrecen métricas publicadas y documentación completa, pero no se puede establecer una comparación directa sin datos de este modelo.
+No se dispone de información suficiente para comparar este modelo con alternativas específicas de la misma categoría, ya que no se conoce la tarea ni el rendimiento. Como referencia genérica, otros fine-tunes de RoBERTa-base en Hugging Face (por ejemplo, `cardiffnlp/twitter-roberta-base-sentiment`) ofrecen métricas publicadas y documentación completa, pero no se puede establecer una comparación directa sin datos de este modelo.
 
 ## Limitaciones y advertencias
 
@@ -68,7 +68,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/chaewoniexx/finetuned_RoBERTa
+- Repositorio Hugging Face: https://huggingface.co/chaewoniexx/finetuned_RoBERTa
 - Modelo base RoBERTa: https://huggingface.co/FacebookAI/roberta-base
 - Artículo sobre fine-tuning de RoBERTa para reconocimiento de intenciones: https://tuanatran.medium.com/fine-tuning-roberta-for-intent-recognition-7f3e54f2856c
 - Repositorio de ejemplo de fine-tuning de RoBERTa para detección de texto IA: https://github.com/sks2705/ai-text-detector

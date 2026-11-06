@@ -86,5 +86,5 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- [HuggingFace - PSompong/llama-hredd-adverse-text-distilbert-onnx](https://huggingface.co/PSompong/llama-hredd-adverse-text-distilbert-onnx)
+- [Hugging Face - PSompong/llama-hredd-adverse-text-distilbert-onnx](https://huggingface.co/PSompong/llama-hredd-adverse-text-distilbert-onnx)
 - [Demo del risk-screening tool - Supplier diligence · HREDD](https://supplier-risk-model.pages.dev)

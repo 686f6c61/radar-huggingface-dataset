@@ -82,7 +82,7 @@ Las tres variantes comparten la misma arquitectura y numero de parametros. La di
 - No se han realizado evaluaciones de sesgos, seguridad ni alucinaciones en esta version modificada.
 - La longitud de contexto no esta especificada en la informacion disponible, por lo que se desconocen los limites reales de ventana de atencion.
 - El repositorio no incluye cuantizaciones, por lo que el despliegue eficiente requiere conversion manual o uso de librerias externas.
-- El modelo tiene cero descargas y cero likes en HuggingFace, lo que indica una falta de validacion por parte de la comunidad y posibles problemas no detectados.
+- El modelo tiene cero descargas y cero likes en Hugging Face, lo que indica una falta de validacion por parte de la comunidad y posibles problemas no detectados.
 - La licencia Apache 2.0 permite uso comercial, pero el responsable del uso del modelo es el usuario final, especialmente en escenarios donde se generen contenidos problematicos.
 
 ## Enlaces

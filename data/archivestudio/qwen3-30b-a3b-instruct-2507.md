@@ -96,9 +96,9 @@ Datos publicados en la model card (comparativa con modelos de referencia):
 
 | Modelo | Parámetros totales / activos | Contexto | MMLU-Pro | AIME25 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen3-30B-A3B-Instruct-2507 | 30,5B / 3,3B | 262.144 | 78,4 | 61,3 | Apache 2.0 | HuggingFace (réplica ArchiveStudio) |
-| Qwen3-30B-A3B (non-thinking) | 30,5B / 3,3B | 262.144 (según familia Qwen3) | 69,1 | 21,6 | Apache 2.0 | HuggingFace (Qwen oficial) |
-| Qwen3-235B-A22B (non-thinking) | 235B / 22B | 262.144 (según familia Qwen3) | 75,2 | 24,7 | Apache 2.0 | HuggingFace (Qwen oficial) |
+| Qwen3-30B-A3B-Instruct-2507 | 30,5B / 3,3B | 262.144 | 78,4 | 61,3 | Apache 2.0 | Hugging Face (réplica ArchiveStudio) |
+| Qwen3-30B-A3B (non-thinking) | 30,5B / 3,3B | 262.144 (según familia Qwen3) | 69,1 | 21,6 | Apache 2.0 | Hugging Face (Qwen oficial) |
+| Qwen3-235B-A22B (non-thinking) | 235B / 22B | 262.144 (según familia Qwen3) | 75,2 | 24,7 | Apache 2.0 | Hugging Face (Qwen oficial) |
 | DeepSeek-V3-0324 | No disponible en la información | No disponible | 81,2 | 46,6 | No disponible en la información | No disponible en la información |
 
 ## Limitaciones y advertencias

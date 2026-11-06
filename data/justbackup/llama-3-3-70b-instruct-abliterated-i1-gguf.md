@@ -78,7 +78,7 @@ La comparativa muestra que este modelo es esencialmente una version cuantizada d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Justbackup/Llama-3.3-70B-Instruct-abliterated-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Justbackup/Llama-3.3-70B-Instruct-abliterated-i1-GGUF
 - Modelo base abliterado: https://huggingface.co/huihui-ai/Llama-3.3-70B-Instruct-abliterated
 - Modelo ablated relacionado: https://huggingface.co/Justbackup/Llama-3.3-70B-Instruct-ablated
 - Pagina en Ollama: https://ollama.com/huihui_ai/llama3.3-abliterated:70b-instruct

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `hungpill/Qwen3-1.7B-base-MED` es un fine-tuning del modelo base Qwen3-1.7B-Base de Alibaba, publicado en el Hub de HuggingFace por el usuario `hungpill`. El sufijo "MED" sugiere que se trata de un ajuste orientado al dominio médico, aunque la model card no proporciona ninguna información que lo confirme explícitamente. El modelo tiene 1.720.574.976 parámetros y está disponible en formato safetensors, con la librería transformers.
+El modelo `hungpill/Qwen3-1.7B-base-MED` es un fine-tuning del modelo base Qwen3-1.7B-Base de Alibaba, publicado en el Hub de Hugging Face por el usuario `hungpill`. El sufijo "MED" sugiere que se trata de un ajuste orientado al dominio médico, aunque la model card no proporciona ninguna información que lo confirme explícitamente. El modelo tiene 1.720.574.976 parámetros y está disponible en formato safetensors, con la librería transformers.
 
 La relevancia de este modelo radica en que parte de la arquitectura Qwen3, que integra modos de pensamiento (thinking) y no pensamiento (non-thinking) en un marco unificado, lo que permite razonamiento multi-paso y respuestas rápidas según la tarea. Sin embargo, al ser un fine-tuning sin documentación pública, su utilidad práctica depende de la calidad del dataset de ajuste, que no se ha publicado. Es un modelo de tamaño compacto (1.7B), adecuado para despliegue en entornos con recursos limitados, pero su rendimiento específico en tareas médicas no ha sido verificado.
 
@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3-1.7B-Base (original) | 1,7B | 32.768 | Apache 2.0 | HuggingFace |
-| hungpill/Qwen3-1.7B-base-MED | 1,7B | no disponible | no disponible | HuggingFace |
-| Llama-3.2-1B | 1,2B | 128.000 | Llama 3.2 | HuggingFace |
+| Qwen3-1.7B-Base (original) | 1,7B | 32.768 | Apache 2.0 | Hugging Face |
+| hungpill/Qwen3-1.7B-base-MED | 1,7B | no disponible | no disponible | Hugging Face |
+| Llama-3.2-1B | 1,2B | 128.000 | Llama 3.2 | Hugging Face |
 
 La comparativa se limita a modelos de tamaño similar, pero no hay datos de rendimiento para el modelo evaluado. El modelo base Qwen3-1.7B-Base tiene una licencia Apache 2.0, pero este fine-tuning no especifica su licencia, lo que genera incertidumbre legal para uso comercial.
 
@@ -77,7 +77,7 @@ La comparativa se limita a modelos de tamaño similar, pero no hay datos de rend
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hungpill/Qwen3-1.7B-base-MED
+- Modelo en Hugging Face: https://huggingface.co/hungpill/Qwen3-1.7B-base-MED
 - Modelo base Qwen3-1.7B-Base: https://huggingface.co/Qwen/Qwen3-1.7B-Base
 - Repositorio oficial de Qwen3: https://github.com/QwenLM/Qwen3
 - Informe técnico de Qwen3: https://arxiv.org/html/2505.09388v1

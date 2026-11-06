@@ -2,7 +2,7 @@
 
 ## Resumen
 
-dl-hw2-bge-ner es un modelo de reconocimiento de entidades nombradas (NER) publicado por el usuario ledddev en HuggingFace. Se trata de un ajuste fino (*fine-tune*) del modelo de embeddings BAAI/bge-small-en-v1.5, un encoder de arquitectura BERT con 33.215.625 parámetros, 12 capas y 384 dimensiones ocultas, reorientado desde su tarea original de recuperación densa hacia la clasificación de tokens (*token classification*). El resultado es un modelo muy ligero (0,1 GB de repositorio) que etiqueta secuencias token a token, no un modelo generativo.
+dl-hw2-bge-ner es un modelo de reconocimiento de entidades nombradas (NER) publicado por el usuario ledddev en Hugging Face. Se trata de un ajuste fino (*fine-tune*) del modelo de embeddings BAAI/bge-small-en-v1.5, un encoder de arquitectura BERT con 33.215.625 parámetros, 12 capas y 384 dimensiones ocultas, reorientado desde su tarea original de recuperación densa hacia la clasificación de tokens (*token classification*). El resultado es un modelo muy ligero (0,1 GB de repositorio) que etiqueta secuencias token a token, no un modelo generativo.
 
 La relevancia de esta ficha es sobre todo práctica: se trata de un candidato de coste mínimo para tareas de extracción de entidades en producción o en el borde, con licencia MIT y pesos en safetensors. Sin embargo, su utilidad real está seriamente limitada por la falta de documentación. La model card reconoce explícitamente que el modelo se entrenó "on an unknown dataset", no especifica el conjunto de etiquetas de entidades, no declara los idiomas soportados y no incluye resultados en ningún benchmark público (el *model-index* está vacío). A fecha de esta ficha acumula 0 descargas y 0 *likes*, por lo que no ha pasado por ninguna validación de la comunidad.
 
@@ -29,7 +29,7 @@ En conjunto, debe tratarse como un artefacto experimental —el propio identific
 
 La arquitectura es la de un transformer encoder de tipo BERT: 12 capas, 384 dimensiones ocultas, 12 cabezas de atencion y 512 posiciones maximas de secuencia, segun la configuracion publica del modelo base BAAI/bge-small-en-v1.5 (dato no verificado en esta ficha, procedente de la documentacion del modelo base). Sobre ese backbone se ha anadido una cabeza de clasificacion por token, que es lo que convierte un modelo de embeddings en un etiquetador de secuencias. Es un caso poco habitual: BGE es una familia disenada para recuperacion densa (generar un vector por texto), y aqui se reutiliza su encoder para una tarea discriminativa a nivel de token.
 
-El entrenamiento se realizo con el `Trainer` de HuggingFace durante 3 epocas, con *learning rate* 2e-5, batch de 8 tanto en entrenamiento como en evaluacion, optimizador AdamW (betas 0,9 y 0,999, epsilon 1e-8), scheduler lineal, semilla 42 y sin argumentos adicionales de optimizador. A 1250 pasos por epoca y batch de 8, el conjunto de entrenamiento equivale a unos 10.000 ejemplos por epoca si no se aplico acumulacion de gradiente (calculo derivado, no declarado por el autor). No hay informacion sobre la composicion del dataset, el numero de tokens procesados, el esquema de etiquetado ni sobre si se aplicaron tecnicas de ajuste adicionales. Al ser un modelo encoder discriminativo, no se emplearon RLHF ni DPO. Las versiones de framework declaradas son Transformers 4.50.0, PyTorch 2.6.0, Datasets 3.4.1 y Tokenizers 0.21.4.
+El entrenamiento se realizo con el `Trainer` de Hugging Face durante 3 epocas, con *learning rate* 2e-5, batch de 8 tanto en entrenamiento como en evaluacion, optimizador AdamW (betas 0,9 y 0,999, epsilon 1e-8), scheduler lineal, semilla 42 y sin argumentos adicionales de optimizador. A 1250 pasos por epoca y batch de 8, el conjunto de entrenamiento equivale a unos 10.000 ejemplos por epoca si no se aplico acumulacion de gradiente (calculo derivado, no declarado por el autor). No hay informacion sobre la composicion del dataset, el numero de tokens procesados, el esquema de etiquetado ni sobre si se aplicaron tecnicas de ajuste adicionales. Al ser un modelo encoder discriminativo, no se emplearon RLHF ni DPO. Las versiones de framework declaradas son Transformers 4.50.0, PyTorch 2.6.0, Datasets 3.4.1 y Tokenizers 0.21.4.
 
 ## Capacidades
 
@@ -86,9 +86,9 @@ Advertencia metodologica: la *accuracy* de 0,9772 esta dominada casi con certeza
 - GPU de consumo: si, cabe en cualquier GPU de consumo e incluso en GPUs integradas. El modelo completo ocupa menos de 0,1 GB en disco.
 - CPU: plenamente viable como unico dispositivo de inferencia. Los requisitos de memoria son inferiores a 1 GB en fp32.
 - Latencia y throughput: no se han publicado medidas. Por el tamano del modelo (33 M de parametros, 12 capas), se estima un coste por secuencia del orden de milisegundos en GPU y de decenas de milisegundos en CPU con batch 1 y secuencias de 512 tokens; se trata de una estimacion, no de una cifra medida.
-- Opciones de despliegue: pipeline de HuggingFace Transformers (`token-classification`), exportacion a ONNX Runtime u Optimum para acelerar en CPU, NVIDIA Triton o TorchServe para servicio en produccion, `spacy-transformers` para integrarlo en un pipeline de spaCy y FastAPI para envolverlo en un microservicio.
+- Opciones de despliegue: pipeline de Hugging Face Transformers (`token-classification`), exportacion a ONNX Runtime u Optimum para acelerar en CPU, NVIDIA Triton o TorchServe para servicio en produccion, `spacy-transformers` para integrarlo en un pipeline de spaCy y FastAPI para envolverlo en un microservicio.
 - Opciones no aplicables: llama.cpp, Ollama y GGUF estan orientados a modelos generativos y no cubren esta tarea. vLLM y TGI no ofrecen soporte de primera clase para clasificacion de tokens en modelos encoder.
-- Tags del repositorio: incluye `endpoints_compatible`, por lo que es desplegable en Inference Endpoints de HuggingFace sin transformaciones adicionales.
+- Tags del repositorio: incluye `endpoints_compatible`, por lo que es desplegable en Inference Endpoints de Hugging Face sin transformaciones adicionales.
 
 ## Comparativa con modelos similares
 
@@ -119,9 +119,9 @@ Observaciones: dl-hw2-bge-ner es tres veces mas pequeno que dslim/bert-base-NER 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ledddev/dl-hw2-bge-ner
+- Modelo en Hugging Face: https://huggingface.co/ledddev/dl-hw2-bge-ner
 - Modelo base BAAI/bge-small-en-v1.5: https://huggingface.co/BAAI/bge-small-en-v1.5
 - Repositorio FlagEmbedding (familia BGE): https://github.com/FlagOpen/FlagEmbedding
 - Paper de la familia BGE (C-Pack, arXiv:2309.07597): https://arxiv.org/abs/2309.07597
-- Documentacion de HuggingFace sobre token classification: https://huggingface.co/docs/transformers/tasks/token_classification
+- Documentacion de Hugging Face sobre token classification: https://huggingface.co/docs/transformers/tasks/token_classification
 - Modelo alternativo dslim/bert-base-NER: https://huggingface.co/dslim/bert-base-NER

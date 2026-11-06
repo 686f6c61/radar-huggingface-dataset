@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Arquitectura | Parámetros | Contexto/Entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Vanespl/ass-4-q1-cifar-ioc_nn | MLP 3072->32->10 | 98.634 | Imagen 32×32×3 aplanada | no disponible | HuggingFace |
+| Vanespl/ass-4-q1-cifar-ioc_nn | MLP 3072->32->10 | 98.634 | Imagen 32×32×3 aplanada | no disponible | Hugging Face |
 | LeNet-5 (referencia clásica CIFAR-10) | CNN | ~60.000 | Imagen 32×32×3 | dominio público (arquitectura) | Implementaciones múltiples |
 | ResNet-18 (CIFAR-10) | CNN residual | ~11,2 M | Imagen 32×32×3 | MIT (implementaciones) | torchvision |
 | ViT-Small (CIFAR-10) | Transformer de visión | ~22 M | Imagen 32×32×3 con parches | Apache 2.0 (implementaciones) | timm |
@@ -83,5 +83,5 @@ No se dispone de datos de rendimiento del modelo evaluado frente a estas alterna
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Vanespl/ass-4-q1-cifar-ioc_nn
+- Hugging Face: https://huggingface.co/Vanespl/ass-4-q1-cifar-ioc_nn
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

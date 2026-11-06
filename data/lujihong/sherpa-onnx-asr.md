@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sherpa-onnx-asr` es un paquete de modelos de reconocimiento automático del habla (ASR) en streaming distribuido por el usuario `lujihong` en HuggingFace. No se trata de un modelo entrenado por el autor del repositorio, sino de una copia de redistribución byte a byte del paquete oficial publicado en los GitHub Releases de `k2-fsa/sherpa-onnx`, con SHA256 idéntico al original. El modelo subyacente es un Zipformer2 Transducer en modo streaming, orientado a reconocimiento de voz continuo con baja latencia.
+`sherpa-onnx-asr` es un paquete de modelos de reconocimiento automático del habla (ASR) en streaming distribuido por el usuario `lujihong` en Hugging Face. No se trata de un modelo entrenado por el autor del repositorio, sino de una copia de redistribución byte a byte del paquete oficial publicado en los GitHub Releases de `k2-fsa/sherpa-onnx`, con SHA256 idéntico al original. El modelo subyacente es un Zipformer2 Transducer en modo streaming, orientado a reconocimiento de voz continuo con baja latencia.
 
 El paquete está pensado para aplicaciones de dictado y transcripción en tiempo real: el autor lo describe como el modelo empleado en el cliente de escritorio de LaunchAI (浪起) para dictado en campos de entrada, seguimiento de teleprompter y transcripción de audio y vídeo. Cubre chino e inglés, incluido el habla mezclada zh-en, y aplica puntuación automática en la salida.
 
@@ -25,7 +25,7 @@ Técnicamente, el paquete contiene tres redes ONNX (encoder, decoder y joiner) e
 
 El modelo sigue la arquitectura Zipformer2 en configuración Transducer, un diseño de encoder convolucional con atención eficiente orientado a ASR. La estructura Transducer combina un encoder acústico, un decoder de predicción y una red joiner que produce la distribución sobre el vocabulario en cada paso; esta topología permite decodificación streaming sin necesidad de ventanas de audio completas. El paquete incluye un modelo BPE (`bpe.model`) y un vocabulario BPE adicional (`bpe.vocab`) destinado a la funcionalidad de hotwords o refuerzo de palabras clave.
 
-El chunking de 480 ms define el comportamiento en tiempo real: el encoder procesa bloques de esa duración y emite hipótesis parciales de forma incremental. La cuantización INT8 del encoder y del joiner reduce el coste computacional y el tamaño del paquete (unos 0,1 GB en el repositorio de HuggingFace) a costa de una posible pérdida mínima de precisión. No se dispone de información sobre el volumen de datos de entrenamiento, la composición del corpus ni si se aplicaron técnicas de ajuste como RLHF o DPO; estos detalles corresponden al proyecto upstream `k2-fsa/sherpa-onnx` y no se documentan en la model card disponible.
+El chunking de 480 ms define el comportamiento en tiempo real: el encoder procesa bloques de esa duración y emite hipótesis parciales de forma incremental. La cuantización INT8 del encoder y del joiner reduce el coste computacional y el tamaño del paquete (unos 0,1 GB en el repositorio de Hugging Face) a costa de una posible pérdida mínima de precisión. No se dispone de información sobre el volumen de datos de entrenamiento, la composición del corpus ni si se aplicaron técnicas de ajuste como RLHF o DPO; estos detalles corresponden al proyecto upstream `k2-fsa/sherpa-onnx` y no se documentan en la model card disponible.
 
 ## Capacidades
 
@@ -63,15 +63,15 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Idiomas | Contexto / chunk | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `sherpa-onnx-asr` (este paquete) | Zipformer2 Transducer streaming, ONNX INT8 | zh, en | chunk de 480 ms | Apache-2.0 | HuggingFace (copia) y GitHub Releases upstream |
-| Whisper (variantes de OpenAI) | Transformer encoder-decoder, no streaming nativo | multilingüe amplio | ventana de audio fija | MIT | HuggingFace, múltiples runtimes |
+| `sherpa-onnx-asr` (este paquete) | Zipformer2 Transducer streaming, ONNX INT8 | zh, en | chunk de 480 ms | Apache-2.0 | Hugging Face (copia) y GitHub Releases upstream |
+| Whisper (variantes de OpenAI) | Transformer encoder-decoder, no streaming nativo | multilingüe amplio | ventana de audio fija | MIT | Hugging Face, múltiples runtimes |
 | Modelos Zipformer de `k2-fsa/sherpa-onnx` (otros paquetes) | Zipformer Transducer, offline o streaming | según paquete | variable | Apache-2.0 | GitHub Releases de `k2-fsa/sherpa-onnx` |
 
 No se dispone de datos de rendimiento comparativo en la información proporcionada, por lo que la comparación se limita a características estructurales. Cualquier comparación numérica de precisión o latencia requeriría benchmarks que no se han publicado aquí.
 
 ## Limitaciones y advertencias
 
-- Este repositorio es una copia de redistribución, no el origen oficial; el autor indica que no existe un repositorio equivalente en la cuenta `csukuangfj` de HuggingFace y que la única fuente oficial es GitHub Releases.
+- Este repositorio es una copia de redistribución, no el origen oficial; el autor indica que no existe un repositorio equivalente en la cuenta `csukuangfj` de Hugging Face y que la única fuente oficial es GitHub Releases.
 - Solo cubre chino e inglés; no se documenta soporte para otras lenguas.
 - El chunking fijo de 480 ms condiciona la latencia mínima y puede afectar a la precisión en comparación con modelos offline que ven el audio completo.
 - La cuantización INT8 de encoder y joiner puede introducir degradación de precisión frente a los pesos originales; no se publican métricas de esa pérdida.
@@ -82,8 +82,8 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lujihong/sherpa-onnx-asr
+- Repositorio en Hugging Face: https://huggingface.co/lujihong/sherpa-onnx-asr
 - Releases oficiales de modelos de `k2-fsa/sherpa-onnx`: https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/
 - Proyecto `k2-fsa/sherpa-onnx`: https://github.com/k2-fsa/sherpa-onnx
 - Mirror de descarga citado por el autor: https://ghfast.top/ (prefijo aplicado sobre la URL de GitHub Releases)
-- Mirror de HuggingFace citado por el autor: https://hf-mirror.com
+- Mirror de Hugging Face citado por el autor: https://hf-mirror.com

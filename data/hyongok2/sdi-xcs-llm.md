@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `hyongok2/sdi-xcs-llm` es un modelo publicado en HuggingFace por el autor hyongok2 (Mun Hyeongog) en abril de 2026, con un tamaño de repositorio de 75,7 GB. No se dispone de información pública sobre su arquitectura, parámetros, licencia o capacidades, ya que la ficha de HuggingFace no incluye estos datos y las búsquedas web no han devuelto documentación técnica adicional. El repositorio no registra descargas y tiene un único like, lo que sugiere que se trata de un modelo reciente o de escasa difusión.
+El modelo `hyongok2/sdi-xcs-llm` es un modelo publicado en Hugging Face por el autor hyongok2 (Mun Hyeongog) en abril de 2026, con un tamaño de repositorio de 75,7 GB. No se dispone de información pública sobre su arquitectura, parámetros, licencia o capacidades, ya que la ficha de Hugging Face no incluye estos datos y las búsquedas web no han devuelto documentación técnica adicional. El repositorio no registra descargas y tiene un único like, lo que sugiere que se trata de un modelo reciente o de escasa difusión.
 
 A día de hoy, la ausencia de especificaciones publicadas impide evaluar su idoneidad para casos de uso concretos. Cualquier decisión de adopción debería basarse en una inspección directa del repositorio y sus archivos.
 
@@ -30,7 +30,7 @@ No se ha publicado información sobre la arquitectura del modelo, los datos de e
 
 ## Capacidades
 
-No se dispone de información sobre las capacidades del modelo. No se han documentado funciones como generación de texto, razonamiento, código, matemáticas, visión, tool calling o capacidades multilingües. La ausencia de una tarjeta de modelo en HuggingFace y de documentación externa impide cualquier afirmación sobre sus capacidades.
+No se dispone de información sobre las capacidades del modelo. No se han documentado funciones como generación de texto, razonamiento, código, matemáticas, visión, tool calling o capacidades multilingües. La ausencia de una tarjeta de modelo en Hugging Face y de documentación externa impide cualquier afirmación sobre sus capacidades.
 
 ## Casos de uso
 
@@ -63,7 +63,7 @@ No disponible. Al no conocerse la arquitectura, el tamaño ni el rendimiento del
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hyongok2/sdi-xcs-llm
+- Repositorio Hugging Face: https://huggingface.co/hyongok2/sdi-xcs-llm
 - Árbol de archivos: https://huggingface.co/hyongok2/sdi-xcs-llm/tree/main
 - Perfil de GitHub del autor: https://github.com/hyongok2
 - Página de seguridad de Protect AI: https://protectai.com/insights/models/hyongok2/sdi-xcs-llm/e473bd61c3dc00c9d6a0e4793ab694ca49f85f32/versions

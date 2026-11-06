@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| **Cesium2 Vision** (este) | 3,09 B | 8192 (config) | GGUF | Apache-2.0 | HuggingFace, Ollama |
-| **Qwen2.5-VL-3B-Instruct** (base) | 3,09 B | 32K (según documentación oficial de Qwen) | safetensors | Apache-2.0 | HuggingFace |
-| **LLaVA-1.6 (llava-v1.6-vicuna-7b)** | 7 B | 4096 | safetensors, GGUF | Apache-2.0 | HuggingFace |
+| **Cesium2 Vision** (este) | 3,09 B | 8192 (config) | GGUF | Apache-2.0 | Hugging Face, Ollama |
+| **Qwen2.5-VL-3B-Instruct** (base) | 3,09 B | 32K (según documentación oficial de Qwen) | safetensors | Apache-2.0 | Hugging Face |
+| **LLaVA-1.6 (llava-v1.6-vicuna-7b)** | 7 B | 4096 | safetensors, GGUF | Apache-2.0 | Hugging Face |
 
 La comparación es limitada: el modelo base Qwen2.5-VL-3B-Instruct ofrece el mismo tamaño y arquitectura, pero sin el fine-tune específico en VQA documental y con contexto nativo mayor. LLaVA-1.6 es una alternativa multimodal de 7 B con mayor capacidad de parámetros, pero contexto menor y sin el ajuste de Cesium2. No se dispone de benchmarks comparativos para evaluar diferencias de rendimiento reales.
 
@@ -76,7 +76,7 @@ La comparación es limitada: el modelo base Qwen2.5-VL-3B-Instruct ofrece el mis
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ram1234598766/Cesium2-vision-GGUF
+- Repositorio Hugging Face: https://huggingface.co/ram1234598766/Cesium2-vision-GGUF
 - Repositorio GitHub del proyecto: https://github.com/ram1234598766-dotcom/Cesium2
 - Modelo hermano (solo texto): https://huggingface.co/ram1234598766/Cesium2-v7-GGUF
 - Extensión de VS Code: https://open-vsx.org/extension/ram1234598766/cesium2-ai

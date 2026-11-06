@@ -4,7 +4,7 @@
 
 ## Resumen
 
-Beetle es un repositorio de modelo publicado en HuggingFace por el usuario znorenyy, identificado con el ID znorenyy/Beetle. En el momento de redactar esta ficha, la informacion publica disponible es minima: no consta pipeline declarado, no consta licencia, no constan idiomas soportados y el tamano del repositorio figura como 0,0 GB, lo que indica que no hay pesos ni ficheros de configuracion sustanciales descargables.
+Beetle es un repositorio de modelo publicado en Hugging Face por el usuario znorenyy, identificado con el ID znorenyy/Beetle. En el momento de redactar esta ficha, la informacion publica disponible es minima: no consta pipeline declarado, no consta licencia, no constan idiomas soportados y el tamano del repositorio figura como 0,0 GB, lo que indica que no hay pesos ni ficheros de configuracion sustanciales descargables.
 
 El unico dato tecnico relevante es la etiqueta del repositorio, "beetle_1bit_ssm_jepa", junto al tag de framework pytorch y la region us. Esa etiqueta sugiere, sin confirmacion documental alguna, una posible combinacion de modelo de espacio de estados (SSM), cuantizacion o entrenamiento de 1 bit y una arquitectura de tipo JEPA (Joint Embedding Predictive Architecture). No hay model card, paper, blog ni repositorio de codigo que respalde o detalle esas caracteristicas.
 
@@ -48,7 +48,7 @@ Los siguientes escenarios son hipoteticos y solo serian aplicables si el autor p
 - Aprendizaje autosupervisado en espacio latente (JEPA): encajaria en lineas de investigacion sobre prediccion de embeddings en lugar de reconstruccion de tokens, utiles para tareas de representacion visual o multimodal.
 - Prototipado academico de bajo coste: un modelo de 1 bit, si funcionase, reduciria requisitos de VRAM y permitiria experimentar en GPUs de gama media o incluso en CPU.
 - Docencia sobre arquitecturas no transformer: permitiria explicar en clase las diferencias entre atencion cuadratica, recurrencia lineal y SSM con un artefacto concreto.
-- Evaluacion comparativa de repositorios emergentes: util como caso de estudio sobre trazabilidad y reproducibilidad en HuggingFace, dado que carece de model card, licencia y pesos.
+- Evaluacion comparativa de repositorios emergentes: util como caso de estudio sobre trazabilidad y reproducibilidad en Hugging Face, dado que carece de model card, licencia y pesos.
 
 No se recomienda ningun uso en produccion con la informacion actual.
 
@@ -75,15 +75,15 @@ No disponible. No es posible establecer una comparativa fiable sin conocer el nu
 - Licencia no especificada: sin licencia explicita, no existe autorizacion clara para uso comercial, redistribucion o modificacion; en muchas jurisdicciones esto equivale a reserva de todos los derechos.
 - Repositorio sin pesos: el tamano de 0,0 GB sugiere que no se han subido ficheros de modelo, por lo que no es ejecutable tal cual.
 - Sin validacion de la comunidad: 19 descargas y 0 likes indican ausencia de verificacion independiente; no hay issues, discusiones ni replicaciones conocidas.
-- Riesgo de nombre ambiguo: los resultados de busqueda web devuelven productos homonimos sin relacion (Beetle AI como revisor de codigo, la organizacion beetleai en HuggingFace, generadores de imagenes y 3D). Cualquier atribucion de capacidades a partir de esas fuentes seria incorrecta.
+- Riesgo de nombre ambiguo: los resultados de busqueda web devuelven productos homonimos sin relacion (Beetle AI como revisor de codigo, la organizacion beetleai en Hugging Face, generadores de imagenes y 3D). Cualquier atribucion de capacidades a partir de esas fuentes seria incorrecta.
 - Imposibilidad de auditar sesgos o alucinacion: al no existir pesos ni evaluaciones, no puede caracterizarse el comportamiento del modelo en ninguno de esos ejes.
 - Fechas de creacion y actualizacion registradas como 2026-10-01, con dos segundos de diferencia entre ambas, lo que apunta a una subida automatizada o incompleta.
 - Recomendacion: tratar el repositorio como no apto para produccion hasta que el autor publique pesos, licencia, configuracion y documentacion tecnica verificable.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/znorenyy/Beetle
-- Perfil del autor en HuggingFace: https://huggingface.co/znorenyy
+- Repositorio en Hugging Face: https://huggingface.co/znorenyy/Beetle
+- Perfil del autor en Hugging Face: https://huggingface.co/znorenyy
 - Paper, blog, repositorio de codigo o demo: no disponible.
 
 Nota sobre la busqueda web: los resultados obtenidos corresponden a proyectos homonimos sin relacion con este modelo (https://huggingface.co/beetleai, https://www.beetleai.dev/, https://www.aiornot.com/ai-image-detector, https://hyper3d.ai/ y https://beastai.net/). No se han encontrado fuentes tecnicas asociadas a znorenyy/Beetle.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hunjison/microduck-talent-pollen-reference` es una política de control para el robot cuadrúpedo de código abierto microduck de Pollen Robotics, publicada en HuggingFace por el usuario `hunjison`. No es un modelo de lenguaje ni un modelo generativo de propósito general: es una política de Reinforcement Learning exportada a ONNX que mapea observaciones de 61 dimensiones a 14 acciones de control a 50 Hz, pensada para ejecutarse en el propio robot.
+`hunjison/microduck-talent-pollen-reference` es una política de control para el robot cuadrúpedo de código abierto microduck de Pollen Robotics, publicada en Hugging Face por el usuario `hunjison`. No es un modelo de lenguaje ni un modelo generativo de propósito general: es una política de Reinforcement Learning exportada a ONNX que mapea observaciones de 61 dimensiones a 14 acciones de control a 50 Hz, pensada para ejecutarse en el propio robot.
 
 El autor la describe como una política "perpetual": una marcha (gait) que se ejecuta de forma continua hasta que se le indique lo contrario, y que se carga en una ranura (slot) de políticas del daemon microduck mediante el comando `robotctl policy load <slot> hunjison/microduck-talent-pollen-reference`. El normalizador de observaciones está embebido dentro de `policy.onnx`, de modo que el consumidor debe alimentar observaciones en crudo, sin preprocesado adicional.
 
@@ -24,7 +24,7 @@ Su relevancia es acotada pero concreta: sirve como referencia reproducible de un
 | Espacio de acciones | 14 acciones |
 | Frecuencia de control | 50 Hz |
 | Comportamiento | política "perpetual": se ejecuta de forma continua hasta recibir orden de parada o sustitución |
-| Librería / pipeline | `microduck` / `robotics` (HuggingFace) |
+| Librería / pipeline | `microduck` / `robotics` (Hugging Face) |
 | Tags | microduck, onnx, robotics, reinforcement-learning |
 | Tamaño del repositorio | 0.0 GB |
 | Descargas / likes | 0 / 0 |
@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Observación / acciones | Frecuencia | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `hunjison/microduck-talent-pollen-reference` | Política RL para microduck (ONNX) | 61 / 14 | 50 Hz | no disponible | HuggingFace |
-| Otras políticas de microduck en HuggingFace | no disponible | no disponible | no disponible | no disponible | no disponible |
+| `hunjison/microduck-talent-pollen-reference` | Política RL para microduck (ONNX) | 61 / 14 | 50 Hz | no disponible | Hugging Face |
+| Otras políticas de microduck en Hugging Face | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Políticas de locomoción de otros cuadrúpedos (p. ej. ecosistema Unitree, MuJoCo) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos verificables sobre modelos comparables en la información proporcionada; la comparación cuantitativa de parámetros, contexto y rendimiento no es posible.
@@ -92,7 +92,7 @@ No se dispone de datos verificables sobre modelos comparables en la información
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hunjison/microduck-talent-pollen-reference
+- Modelo en Hugging Face: https://huggingface.co/hunjison/microduck-talent-pollen-reference
 - Repositorio del robot y daemon microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento RL: https://github.com/pollen-robotics/microduck_rl (rama `main`, commit `6ff40704a`)
 - Documentación del manifiesto de políticas: `docs/policy-manifest.md` en el repositorio del daemon microduck

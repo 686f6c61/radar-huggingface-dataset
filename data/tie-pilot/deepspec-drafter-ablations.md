@@ -74,11 +74,11 @@ La unica metrica publicada en la informacion disponible es la longitud aceptada,
 
 | Modelo | Relacion | Longitud aceptada (mismo presupuesto) | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Brazo combinado `attnconv_b7_qwen3_4b` | Mejor brazo de este repositorio | 4,7655 | Apache 2.0 | HuggingFace |
-| DSpark vanilla `dspark_b7_qwen3_4b_1ep` | Linea base dentro del repositorio | 4,5646 | Apache 2.0 | HuggingFace |
-| Reproduccion de DFlash2 `official_dflash2_b8_qwen3_4b_1ep` | Alternativa interna (bloque 8) | 4,4409 | Apache 2.0 | HuggingFace |
-| `TIE-Pilot/dspark-attnconv-block7-qwen3-4b` | Modelo insignia derivado de estas ablaciones | no disponible | Apache 2.0 | HuggingFace |
-| `Qwen/Qwen3-4B` | Modelo objetivo congelado, no un drafter | no aplica | no disponible en la informacion | HuggingFace |
+| Brazo combinado `attnconv_b7_qwen3_4b` | Mejor brazo de este repositorio | 4,7655 | Apache 2.0 | Hugging Face |
+| DSpark vanilla `dspark_b7_qwen3_4b_1ep` | Linea base dentro del repositorio | 4,5646 | Apache 2.0 | Hugging Face |
+| Reproduccion de DFlash2 `official_dflash2_b8_qwen3_4b_1ep` | Alternativa interna (bloque 8) | 4,4409 | Apache 2.0 | Hugging Face |
+| `TIE-Pilot/dspark-attnconv-block7-qwen3-4b` | Modelo insignia derivado de estas ablaciones | no disponible | Apache 2.0 | Hugging Face |
+| `Qwen/Qwen3-4B` | Modelo objetivo congelado, no un drafter | no aplica | no disponible en la informacion | Hugging Face |
 
 No se dispone de datos sobre otros drafters externos comparables (por ejemplo EAGLE o Medusa) en la informacion proporcionada.
 
@@ -96,7 +96,7 @@ No se dispone de datos sobre otros drafters externos comparables (por ejemplo EA
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/TIE-Pilot/deepspec-drafter-ablations
+- Hugging Face del modelo: https://huggingface.co/TIE-Pilot/deepspec-drafter-ablations
 - Modelo insignia referenciado: https://huggingface.co/TIE-Pilot/dspark-attnconv-block7-qwen3-4b
 - Modelo base objetivo: https://huggingface.co/Qwen/Qwen3-4B
 - La busqueda web realizada no devolvio enlaces relevantes al modelo, al autor ni al proyecto DeepSpec.

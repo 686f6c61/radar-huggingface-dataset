@@ -87,8 +87,8 @@ La comparación directa con otros modelos MoE de gran escala (como DeepSeek-V3 o
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/destr8803/GLM-5.2-224E-FP8-REAP
-- Modelo base en HuggingFace: https://huggingface.co/zai-org/GLM-5.2-FP8
+- Modelo en Hugging Face: https://huggingface.co/destr8803/GLM-5.2-224E-FP8-REAP
+- Modelo base en Hugging Face: https://huggingface.co/zai-org/GLM-5.2-FP8
 - Model card del base (GLM-5.2): https://huggingface.co/zai-org/GLM-5.2
 - Repositorio GitHub de GLM-5: https://github.com/zai-org/GLM-5
 - Blog de Z.ai sobre GLM-5.2: https://z.ai/blog/glm-5.2

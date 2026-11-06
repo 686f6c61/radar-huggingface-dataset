@@ -2,7 +2,7 @@
 
 ## Resumen
 
-cortex-v0.9-0.1b-mlx es la versión en formato MLX del modelo cortex-v0.9-0.1b, publicado por el usuario Ilides en HuggingFace. Se trata de un modelo de lenguaje pequeño, entrenado desde cero (from scratch), con 126.241.536 parámetros, pensado para generación de texto bilingüe español-inglés y para ejecutarse en Apple Silicon mediante el framework MLX de Apple. El repositorio ocupa 0,5 GB y no registra descargas ni likes en el momento de la consulta.
+cortex-v0.9-0.1b-mlx es la versión en formato MLX del modelo cortex-v0.9-0.1b, publicado por el usuario Ilides en Hugging Face. Se trata de un modelo de lenguaje pequeño, entrenado desde cero (from scratch), con 126.241.536 parámetros, pensado para generación de texto bilingüe español-inglés y para ejecutarse en Apple Silicon mediante el framework MLX de Apple. El repositorio ocupa 0,5 GB y no registra descargas ni likes en el momento de la consulta.
 
 El modelo emplea una arquitectura GPT pre-norm con RMSNorm, activación SwiGLU, atención causal con proyección QKV fusionada, embeddings atados y sin sesgos. Tiene 12 capas, dimensión oculta de 768, 12 cabezas de atención, vocabulario de 16.384 tokens y una longitud de contexto de solo 512 tokens. El entrenamiento se dividió en dos etapas: un pretrain bilingüe de 52.700 pasos en GPU H100 con aproximadamente 280 millones de tokens (53% español / 47% inglés) y un SFT de chat multilingüe de 28.800 pasos con unos 84,7 millones de tokens (50% español / 50% inglés).
 
@@ -18,13 +18,13 @@ Su relevancia es acotada y de nicho: no compite con modelos frontera, sino que s
 | Longitud de contexto | 512 tokens |
 | Tipos de cuantización | no disponible (el repositorio se distribuye en el formato nativo de MLX; no se documentan variantes cuantizadas ni GGUF) |
 | Idiomas soportados | español e inglés (según la model card: pretrain 53% ES / 47% EN, SFT 50% ES / 50% EN) |
-| Licencia | Apache 2.0 según la model card del autor; el campo de licencia de los metadatos de HuggingFace figura como no disponible |
+| Licencia | Apache 2.0 según la model card del autor; el campo de licencia de los metadatos de Hugging Face figura como no disponible |
 | Formato de pesos | MLX (library_name: mlx); tamaño del repositorio 0,5 GB |
 | Capas | 12 |
 | Dimensión oculta | 768 |
 | Cabezas de atención | 12 |
 | Tamaño de vocabulario | 16.384 |
-| Pipeline declarado | text-generation (según los metadatos de la model card; el campo pipeline del listado de HuggingFace figura como no disponible) |
+| Pipeline declarado | text-generation (según los metadatos de la model card; el campo pipeline del listado de Hugging Face figura como no disponible) |
 
 ## Arquitectura y entrenamiento
 
@@ -92,14 +92,14 @@ Notas: los datos de GPT-2 small y SmolLM2-135M corresponden a información públ
 - Sesgos: no disponibles. El autor no publica análisis de sesgos ni la composición detallada de los corpus de entrenamiento, por lo que no es posible evaluar sesgos de género, raza, ideología o nacionalidad. La composición bilingüe ES/EN implica además una cobertura nula de otras lenguas.
 - Riesgo de alucinación: elevado y no cuantificado. La perplejidad de validación de 1,106 corresponde al corpus de SFT y no es un indicador de veracidad.
 - Idiomas: solo español e inglés según la model card. Cualquier uso en catalán, gallego, euskera u otras lenguas no está soportado.
-- Licencia: la model card declara Apache 2.0, lo que permitiría uso comercial, pero el campo de licencia del repositorio en HuggingFace figura como no disponible. Conviene verificar la licencia directamente con el autor antes de un despliegue comercial.
+- Licencia: la model card declara Apache 2.0, lo que permitiría uso comercial, pero el campo de licencia del repositorio en Hugging Face figura como no disponible. Conviene verificar la licencia directamente con el autor antes de un despliegue comercial.
 - Ausencia de soporte de tool calling, agentes y multimodalidad: no hay documentación que acredite estas capacidades, por lo que no deben asumirse en producción.
 - Madurez y adopción: 0 descargas y 0 likes en el momento de la consulta, repositorio de 0,5 GB con pesos únicamente en formato MLX y sin resultados de benchmarks de terceros. El soporte comunitario y la validación externa son inexistentes.
 - Fechas de creación y actualización del repositorio (2026-10-08) y etiquetas (`custom_code`, `region:us`): se recomienda revisar el código personalizado incluido (`generate_mlx.py` y cualquier módulo con `custom_code`) antes de ejecutarlo en entornos de producción.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ilides/cortex-v0.9-0.1b-mlx
+- Modelo en Hugging Face: https://huggingface.co/Ilides/cortex-v0.9-0.1b-mlx
 - MLX (framework de aprendizaje automático de Apple), Wikipedia: https://en.wikipedia.org/wiki/MLX_(machine_learning_framework)
 - Introducción a MLX, Apple's Machine Learning Framework (Medium): https://medium.com/lolml/introduction-to-mlx-apples-machine-learning-framework-527b81f23fa5
 - OpenAI Codex (language model), Wikipedia: https://en.wikipedia.org/wiki/OpenAI_Codex_(language_model) (referencia general sobre modelos de lenguaje, no relacionada con este modelo)

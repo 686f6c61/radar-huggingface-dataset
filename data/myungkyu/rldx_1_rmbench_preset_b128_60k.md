@@ -48,7 +48,7 @@ El entrenamiento se ha realizado sobre el dataset `Myungkyu/RMBench-preset-gemin
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks especificos de este checkpoint en la informacion disponible. El repositorio de HuggingFace no incluye metricas de exito, precision de acciones ni comparativas con otros modelos. Cualquier evaluacion en RMBench deberia realizarse de forma independiente siguiendo el protocolo del benchmark.
+No se han publicado resultados de benchmarks especificos de este checkpoint en la informacion disponible. El repositorio de Hugging Face no incluye metricas de exito, precision de acciones ni comparativas con otros modelos. Cualquier evaluacion en RMBench deberia realizarse de forma independiente siguiendo el protocolo del benchmark.
 
 ## Requisitos de hardware
 
@@ -75,7 +75,7 @@ No se han publicado datos suficientes para una comparativa cuantitativa con otro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Myungkyu/rldx_1_rmbench_preset_b128_60k
+- Modelo en Hugging Face: https://huggingface.co/Myungkyu/rldx_1_rmbench_preset_b128_60k
 - Dataset de fine-tuning: https://huggingface.co/datasets/Myungkyu/RMBench-preset-gemini
 - Repositorio de RLDX-1: https://github.com/RLWRLD/RLDX-1
 - Informe tecnico de RLDX-1 en arXiv: https://arxiv.org/abs/2605.03269

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `pbcong/tars-paper-reconstruction-7b-mask-s42-ep3` es un checkpoint de ajuste fino completo (epoch 3) construido sobre `liuhaotian/llava-v1.5-7b`, un modelo multimodal vision-lenguaje de tipo LLaVA. Lo publica el usuario de HuggingFace pbcong y pertenece a una familia de artefactos denominada "TARS paper". Segun la propia model card, se trata de una reconstruccion de perfiles descritos en un articulo cientifico, con supuestos documentados, y no de un checkpoint oficial de los autores del paper.
+El modelo `pbcong/tars-paper-reconstruction-7b-mask-s42-ep3` es un checkpoint de ajuste fino completo (epoch 3) construido sobre `liuhaotian/llava-v1.5-7b`, un modelo multimodal vision-lenguaje de tipo LLaVA. Lo publica el usuario de Hugging Face pbcong y pertenece a una familia de artefactos denominada "TARS paper". Segun la propia model card, se trata de una reconstruccion de perfiles descritos en un articulo cientifico, con supuestos documentados, y no de un checkpoint oficial de los autores del paper.
 
-El checkpoint conserva el formato original de LLaVA, de modo que debe cargarse con el cargador especifico de TARS/LLaVA y no con un cargador LoRA de HuggingFace. El repositorio ocupa 14,1 GB y contiene pesos en safetensors con 7.062.902.784 parametros totales, coherente con un backbone de 7B mas la torre de vision CLIP y el proyector multimodal.
+El checkpoint conserva el formato original de LLaVA, de modo que debe cargarse con el cargador especifico de TARS/LLaVA y no con un cargador LoRA de Hugging Face. El repositorio ocupa 14,1 GB y contiene pesos en safetensors con 7.062.902.784 parametros totales, coherente con un backbone de 7B mas la torre de vision CLIP y el proyector multimodal.
 
 Su relevancia es fundamentalmente de investigacion: sirve para reproducir y auditar experimentos de reconstruccion de papers sobre modelos multimodales, no como modelo listo para produccion. La model card indica explicitamente que los benchmarks estan pendientes ("Measured benchmarks: pending"), que no hay licencia declarada y que las reconstrucciones no son checkpoints de autor. Las busquedas web realizadas no han devuelto ningun enlace relevante (ver seccion de enlaces).
 
@@ -40,7 +40,7 @@ La innovacion metodologica declarada no esta en el modelo en si, sino en su prop
 - Soporte de agentes y razonamiento multi-paso: no documentado ni confirmado.
 - Capacidades multilingues: no disponibles (sin idiomas declarados en la model card).
 - Capacidades especiales (modo thinking, audio, video): no documentadas. La model card solo menciona carga mediante el cargador TARS/LLaVA.
-- Punto critico de integracion: requiere el cargador especifico de TARS/LLaVA; cargarlo con un loader LoRA de HuggingFace no es el procedimiento indicado por el autor.
+- Punto critico de integracion: requiere el cargador especifico de TARS/LLaVA; cargarlo con un loader LoRA de Hugging Face no es el procedimiento indicado por el autor.
 
 ## Casos de uso
 
@@ -70,7 +70,7 @@ No se deben asumir los numeros publicados para LLaVA-1.5-7B: este checkpoint ha 
 
 | Modelo | Parametros | Contexto | Vision | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tars-paper-reconstruction-7b-mask-s42-ep3 | 7,06 B | No disponible (base: 4.096) | Si (CLIP ViT-L/14) | No disponible | HuggingFace, 0 descargas |
+| tars-paper-reconstruction-7b-mask-s42-ep3 | 7,06 B | No disponible (base: 4.096) | Si (CLIP ViT-L/14) | No disponible | Hugging Face, 0 descargas |
 | liuhaotian/llava-v1.5-7b (modelo base) | ~7 B | 4.096 tokens | Si (CLIP ViT-L/14 336px) | No disponible en la informacion proporcionada | Ampliamente distribuido |
 | Otros modelos multimodales de ~7-8 B (por ejemplo, alternativas tipo LLaVA-NeXT o Qwen-VL) | ~7-8 B | Variable segun modelo | Si | Variable segun modelo | Publicos |
 
@@ -84,14 +84,14 @@ No se dispone de datos de rendimiento de este checkpoint que permitan una compar
 - Riesgo de alucinacion: inherente a la familia LLaVA-1.5; no hay evaluacion especifica de este checkpoint sobre fidelidad factual ni sobre objetos presentes o ausentes en la imagen.
 - Sesgos conocidos: no documentados para este checkpoint; el modelo base se entreno predominantemente con datos en ingles, por lo que el comportamiento en castellano no esta garantizado ni medido.
 - Limitaciones de contexto e idioma: no se declaran idiomas soportados ni longitud de contexto efectiva tras el ajuste fino.
-- Restricciones de integracion: requiere el cargador TARS/LLaVA; el uso de cargadores LoRA de HuggingFace puede producir resultados incorrectos o fallos de carga.
+- Restricciones de integracion: requiere el cargador TARS/LLaVA; el uso de cargadores LoRA de Hugging Face puede producir resultados incorrectos o fallos de carga.
 - Trazabilidad incompleta: los ajustes de entrenamiento y revisiones remiten a `reproduction.json`, no incluido en la informacion disponible; sin ese fichero no es posible auditar hiperparametros, datos ni semillas.
 - Adopcion nula: 0 descargas y 0 likes en el momento de la consulta, lo que implica ausencia de validacion por parte de la comunidad.
 - No apto para produccion: combinacion de licencia incierta, ausencia de benchmarks y formato de carga no estandar.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pbcong/tars-paper-reconstruction-7b-mask-s42-ep3
+- Modelo en Hugging Face: https://huggingface.co/pbcong/tars-paper-reconstruction-7b-mask-s42-ep3
 - Modelo base: https://huggingface.co/liuhaotian/llava-v1.5-7b
 - Paper o repositorio del proyecto TARS: no disponible en la informacion proporcionada
 - Fichero `reproduction.json` con ajustes de entrenamiento: referenciado en la model card pero no disponible en la informacion proporcionada

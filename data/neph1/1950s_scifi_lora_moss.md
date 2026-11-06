@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`neph1/1950s_scifi_lora_moss` es un adaptador LoRA de texto a imagen para el modelo base `OpenMOSS-Team/MOSS-Image-Base`, publicado por el usuario neph1 en HuggingFace. El adaptador introduce un estilo visual inspirado en el cine de ciencia ficcion de los anos 50: estetica retrofuturista, paletas desaturadas, composiciones de serie B y motivos clasicos del genero (naves, alienigenas, laboratorios, carteles de la epoca). Es un espejo del modelo original publicado en Civitai bajo el nombre "1950s Scifi Movies LoRA".
+`neph1/1950s_scifi_lora_moss` es un adaptador LoRA de texto a imagen para el modelo base `OpenMOSS-Team/MOSS-Image-Base`, publicado por el usuario neph1 en Hugging Face. El adaptador introduce un estilo visual inspirado en el cine de ciencia ficcion de los anos 50: estetica retrofuturista, paletas desaturadas, composiciones de serie B y motivos clasicos del genero (naves, alienigenas, laboratorios, carteles de la epoca). Es un espejo del modelo original publicado en Civitai bajo el nombre "1950s Scifi Movies LoRA".
 
 El repositorio es pequeno (0,3 GB) y contiene unicamente los pesos del adaptador, no el modelo base, por lo que su uso requiere descargar y cargar `MOSS-Image-Base` por separado a traves de la libreria `diffusers`. La licencia es Apache 2.0, lo que facilita su integracion en proyectos comerciales y de investigacion.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al tr
 
 | Modelo | Tipo | Base | Licencia | Contexto/uso | Disponibilidad |
 |---|---|---|---|---|---|
-| neph1/1950s_scifi_lora_moss | LoRA de estilo | MOSS-Image-Base | Apache 2.0 | Texto a imagen, estilo anos 50 | HuggingFace, Civitai |
-| LoRA de estilo para Stable Diffusion (genericos) | LoRA de estilo | SD 1.5 / SDXL | Variable (CreativeML, etc.) | Texto a imagen, multiples estilos | HuggingFace, Civitai |
-| Modelos texto a imagen completos (p. ej. SDXL, FLUX) | Modelo completo | - | Variable | Texto a imagen generalista | HuggingFace, APIs |
+| neph1/1950s_scifi_lora_moss | LoRA de estilo | MOSS-Image-Base | Apache 2.0 | Texto a imagen, estilo anos 50 | Hugging Face, Civitai |
+| LoRA de estilo para Stable Diffusion (genericos) | LoRA de estilo | SD 1.5 / SDXL | Variable (CreativeML, etc.) | Texto a imagen, multiples estilos | Hugging Face, Civitai |
+| Modelos texto a imagen completos (p. ej. SDXL, FLUX) | Modelo completo | - | Variable | Texto a imagen generalista | Hugging Face, APIs |
 
 La comparacion directa es limitada: no se dispone de datos de rendimiento del LoRA ni de alternativas equivalentes sobre MOSS-Image-Base en la informacion proporcionada. La principal diferencia frente a LoRA para SD/SDXL es el ecosistema base, mucho menos extendido en el caso de MOSS.
 
@@ -80,7 +80,7 @@ La comparacion directa es limitada: no se dispone de datos de rendimiento del Lo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/neph1/1950s_scifi_lora_moss
+- Hugging Face: https://huggingface.co/neph1/1950s_scifi_lora_moss
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base
 - Fuente original en Civitai: https://civitai.com/models/1359530/1950s-scifi-movies-lora?modelVersionId=3427314
 - Descarga de pesos: https://huggingface.co/neph1/1950s_scifi_lora_moss/tree/main

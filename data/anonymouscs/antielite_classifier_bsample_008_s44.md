@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `AnonymousCS/antielite_classifier_bsample_008_s44` es un checkpoint publicado en HuggingFace por el usuario AnonymousCS, con un total de 177.854.978 parámetros almacenados en formato safetensors (repo de 0,7 GB). La etiqueta de arquitectura declarada por el autor es `bert`, por lo que se trata de un transformer encoder-only orientado a tareas de clasificación de texto, no a generación. El nombre del repositorio (`antielite_classifier`) apunta a un clasificador entrenado sobre un conjunto de datos o muestra concreta, mientras que el sufijo `bsample_008_s44` sugiere un experimento perteneciente a una batería de variantes o semillas; esta lectura es una interpretación del identificador, no un dato confirmado por el autor.
+El modelo `AnonymousCS/antielite_classifier_bsample_008_s44` es un checkpoint publicado en Hugging Face por el usuario AnonymousCS, con un total de 177.854.978 parámetros almacenados en formato safetensors (repo de 0,7 GB). La etiqueta de arquitectura declarada por el autor es `bert`, por lo que se trata de un transformer encoder-only orientado a tareas de clasificación de texto, no a generación. El nombre del repositorio (`antielite_classifier`) apunta a un clasificador entrenado sobre un conjunto de datos o muestra concreta, mientras que el sufijo `bsample_008_s44` sugiere un experimento perteneciente a una batería de variantes o semillas; esta lectura es una interpretación del identificador, no un dato confirmado por el autor.
 
-El modelo no dispone de model card descriptiva: no se declaran licencia, idiomas soportados, pipeline de HuggingFace ni métricas de evaluación. Con 9 descargas y 0 likes, se trata de un artefacto de publicación reciente y sin adopción pública, presumiblemente vinculado a un experimento de investigación o a una ablación interna.
+El modelo no dispone de model card descriptiva: no se declaran licencia, idiomas soportados, pipeline de Hugging Face ni métricas de evaluación. Con 9 descargas y 0 likes, se trata de un artefacto de publicación reciente y sin adopción pública, presumiblemente vinculado a un experimento de investigación o a una ablación interna.
 
 Su relevancia actual es limitada como modelo de producción, pero puede resultar de interés para quien reconstruya experimentos de clasificación con encoders BERT de tamaño intermedio (aproximadamente 178 millones de parámetros, por encima de BERT-base y por debajo de BERT-large), siempre que se verifique de forma independiente el etiquetado, la licencia y el dominio de entrenamiento antes de cualquier uso.
 
@@ -92,6 +92,6 @@ La comparación de rendimiento no puede establecerse: el modelo analizado carece
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AnonymousCS/antielite_classifier_bsample_008_s44
+- Hugging Face: https://huggingface.co/AnonymousCS/antielite_classifier_bsample_008_s44
 
 No se han encontrado papers, blogs, repositorios de código ni demos asociados al modelo en la búsqueda web disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-QuestA-Qwen3-8b-Selective-Top10pct es un ajuste fino publicado por el usuario SelectiveDOPD en HuggingFace, etiquetado con las tags `qwen3`, `text-generation`, `conversational` y `safetensors`. El nombre del repositorio y las etiquetas apuntan a que se trata de una derivacion de Qwen3-8B, aunque la model card no confirma explicitamente cual es el modelo base ni detalla el procedimiento de entrenamiento. El repositorio contiene 8.190.735.360 parametros reales segun los ficheros safetensors, lo que encaja con la clase de 8B.
+QuestA-Qwen3-8b-Selective-Top10pct es un ajuste fino publicado por el usuario SelectiveDOPD en Hugging Face, etiquetado con las tags `qwen3`, `text-generation`, `conversational` y `safetensors`. El nombre del repositorio y las etiquetas apuntan a que se trata de una derivacion de Qwen3-8B, aunque la model card no confirma explicitamente cual es el modelo base ni detalla el procedimiento de entrenamiento. El repositorio contiene 8.190.735.360 parametros reales segun los ficheros safetensors, lo que encaja con la clase de 8B.
 
 La model card es extremadamente escueta: unicamente indica que el modelo se ha subido desde el experimento interno `questa_qwen3_8b_JSD_rel_90_100`, dentro de los experimentos denominados BiDirect-OPD, y que la rama `main` corresponde al checkpoint `global_step_300`. Se listan ademas 14 ramas adicionales con checkpoints intermedios (`global_step_20` hasta `global_step_280`, en incrementos de 20), lo que sugiere un proceso de entrenamiento largo con evaluacion periodica de puntos de control.
 
@@ -30,7 +30,7 @@ En cuanto al entrenamiento, la unica informacion disponible es la referencia int
 ## Capacidades
 
 - Generacion de texto y conversacion: el pipeline declarado es `text-generation` y la tag `conversational` indica que el modelo esta preparado para dialogos multi-turno.
-- Compatibilidad con Text Generation Inference: la tag `text-generation-inference` y `endpoints_compatible` sugieren que puede desplegarse mediante TGI y en Inference Endpoints de HuggingFace.
+- Compatibilidad con Text Generation Inference: la tag `text-generation-inference` y `endpoints_compatible` sugieren que puede desplegarse mediante TGI y en Inference Endpoints de Hugging Face.
 - Capacidades de tool calling, agentes, razonamiento multi-paso, matematicas o codigo: no disponibles. No hay documentacion que las confirme ni las descarte; si el modelo base es Qwen3-8B, es probable que herede parte de estas capacidades, pero no se ha verificado en este ajuste.
 - Capacidades multimodales (vision, audio): no disponibles.
 - Modo de razonamiento explicito (thinking mode): no disponible.
@@ -71,10 +71,10 @@ No se dispone de datos de rendimiento de este modelo, por lo que la comparacion 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| QuestA-Qwen3-8b-Selective-Top10pct | 8,19B | no disponible | no disponible | HuggingFace, 15 ramas de checkpoint, 0 descargas |
-| Qwen3-8B (referencia, no confirmado como base) | 8,2B | 32.768 tokens nativos, ampliable con YaRN | Apache 2.0 | HuggingFace, ampliamente distribuido |
-| Llama 3.1 8B (referencia de categoria) | 8,03B | 128.000 tokens | Llama 3.1 Community License | HuggingFace, ampliamente distribuido |
-| Mistral 7B v0.3 (referencia de categoria) | 7,25B | 32.768 tokens | Apache 2.0 | HuggingFace, ampliamente distribuido |
+| QuestA-Qwen3-8b-Selective-Top10pct | 8,19B | no disponible | no disponible | Hugging Face, 15 ramas de checkpoint, 0 descargas |
+| Qwen3-8B (referencia, no confirmado como base) | 8,2B | 32.768 tokens nativos, ampliable con YaRN | Apache 2.0 | Hugging Face, ampliamente distribuido |
+| Llama 3.1 8B (referencia de categoria) | 8,03B | 128.000 tokens | Llama 3.1 Community License | Hugging Face, ampliamente distribuido |
+| Mistral 7B v0.3 (referencia de categoria) | 7,25B | 32.768 tokens | Apache 2.0 | Hugging Face, ampliamente distribuido |
 
 No es posible comparar rendimiento, ya que no hay benchmarks publicados para el modelo evaluado.
 
@@ -94,7 +94,7 @@ No es posible comparar rendimiento, ya que no hay benchmarks publicados para el 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SelectiveDOPD/QuestA-Qwen3-8b-Selective-Top10pct
+- Modelo en Hugging Face: https://huggingface.co/SelectiveDOPD/QuestA-Qwen3-8b-Selective-Top10pct
 - Paper, blog o repositorio del autor: no disponible
 - Documentacion del modelo base Qwen3 (referencia, no confirmado como origen): no disponible en la informacion proporcionada
 - Resultados de busqueda web relevantes: ninguno

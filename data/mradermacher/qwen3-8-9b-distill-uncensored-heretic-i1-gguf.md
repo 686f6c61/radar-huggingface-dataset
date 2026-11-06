@@ -67,7 +67,7 @@ No se dispone de informacion suficiente para una comparativa rigurosa con altern
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/mradermacher/Qwen3.8-9B-Distill-uncensored-heretic-i1-GGUF
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/mradermacher/Qwen3.8-9B-Distill-uncensored-heretic-i1-GGUF
 - Modelo base original: https://huggingface.co/nurdich/Qwen3.8-9B-Distill-uncensored-heretic
 - Repositorio de quants estaticos (sin imatrix): https://huggingface.co/mradermacher/Qwen3.8-9B-Distill-uncensored-heretic-GGUF
 - Pagina de mradermacher para solicitudes de modelos: https://huggingface.co/mradermacher/model_requests

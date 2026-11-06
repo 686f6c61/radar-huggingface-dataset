@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `rinabuoy/khmer-ocr-checkpoints` aloja un conjunto de checkpoints destinados al reconocimiento óptico de caracteres (OCR) para el idioma jemer (camboyano). Desarrollado por el usuario rinabuoy, el proyecto se presenta como una colección de pesos de modelos, probablemente orientados a la digitalización de textos en escritura jemer. Sin embargo, la información pública disponible es extremadamente limitada: no se especifican la arquitectura, el número de parámetros, la licencia ni los idiomas soportados. El repositorio tiene un tamaño de 1629,5 GB, lo que sugiere que contiene múltiples checkpoints o modelos de gran tamaño, y su acceso está restringido (gated), requiriendo aceptación de condiciones en HuggingFace. A fecha de actualización (agosto de 2026), no se han publicado detalles técnicos adicionales, lo que dificulta una evaluación rigurosa para su uso en producción.
+El repositorio `rinabuoy/khmer-ocr-checkpoints` aloja un conjunto de checkpoints destinados al reconocimiento óptico de caracteres (OCR) para el idioma jemer (camboyano). Desarrollado por el usuario rinabuoy, el proyecto se presenta como una colección de pesos de modelos, probablemente orientados a la digitalización de textos en escritura jemer. Sin embargo, la información pública disponible es extremadamente limitada: no se especifican la arquitectura, el número de parámetros, la licencia ni los idiomas soportados. El repositorio tiene un tamaño de 1629,5 GB, lo que sugiere que contiene múltiples checkpoints o modelos de gran tamaño, y su acceso está restringido (gated), requiriendo aceptación de condiciones en Hugging Face. A fecha de actualización (agosto de 2026), no se han publicado detalles técnicos adicionales, lo que dificulta una evaluación rigurosa para su uso en producción.
 
 ## Especificaciones tecnicas
 
@@ -57,7 +57,7 @@ No disponible. No se conocen modelos comparables de OCR para jemer con especific
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated, por lo que se requiere aprobación de HuggingFace para descargar los checkpoints, lo que limita su uso inmediato.
+- Acceso restringido: el repositorio es gated, por lo que se requiere aprobación de Hugging Face para descargar los checkpoints, lo que limita su uso inmediato.
 - Falta de documentación: no hay información sobre arquitectura, licencia, idiomas ni rendimiento, lo que impide evaluar su idoneidad para producción.
 - Riesgo de sesgos y alucinaciones: al ser un modelo de OCR, podría presentar errores en caracteres complejos del jemer, pero no hay datos que lo confirmen.
 - Tamaño extremo: 1629,5 GB implica costes de almacenamiento y transferencia muy elevados, y probablemente requiera infraestructura especializada.
@@ -66,4 +66,4 @@ No disponible. No se conocen modelos comparables de OCR para jemer con especific
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/rinabuoy/khmer-ocr-checkpoints
+- Repositorio Hugging Face: https://huggingface.co/rinabuoy/khmer-ocr-checkpoints

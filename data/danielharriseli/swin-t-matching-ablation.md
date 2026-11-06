@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`danielharriseli/swin-t-matching-ablation` es un repositorio experimental publicado en HuggingFace por un autor individual (`danielharriseli`) que empaqueta una implementación propia de una arquitectura Swin Transformer ("Swin T", escala declarada "large") orientada a una tarea de *matching* que la model card no especifica (no aclara si se trata de *stereo matching*, correspondencia de características o *entity matching*). No es un modelo entrenado: el checkpoint `model.safetensors` se describe explícitamente como una inicialización válida para *smoke tests*, no como un modelo con resultados de benchmarks. El repositorio incluye además `main.py` (código del modelo y punto de entrada), `config.json` (arquitectura generada) y `training_args.json` (receta de experimento por defecto con RMSprop y scheduler `step`).
+`danielharriseli/swin-t-matching-ablation` es un repositorio experimental publicado en Hugging Face por un autor individual (`danielharriseli`) que empaqueta una implementación propia de una arquitectura Swin Transformer ("Swin T", escala declarada "large") orientada a una tarea de *matching* que la model card no especifica (no aclara si se trata de *stereo matching*, correspondencia de características o *entity matching*). No es un modelo entrenado: el checkpoint `model.safetensors` se describe explícitamente como una inicialización válida para *smoke tests*, no como un modelo con resultados de benchmarks. El repositorio incluye además `main.py` (código del modelo y punto de entrada), `config.json` (arquitectura generada) y `training_args.json` (receta de experimento por defecto con RMSprop y scheduler `step`).
 
 Su relevancia no es la de un modelo listo para producción, sino la de un artefacto de ablación: sirve para inspeccionar decisiones de arquitectura (atención dilatada, fusión de bajo rango, activación Mish, normalización `ScaleNorm`) antes de lanzar un entrenamiento completo, y como ejemplo de publicación honesta en la que el autor declara la ausencia de métricas. El dato de parámetros registrado en los metadatos de safetensors es de 49.600, una cifra tres órdenes de magnitud por debajo de los ~28 M parámetros de un Swin-T estándar, lo que resulta coherente con un repositorio de 0,0 GB pero contradictorio con la escala "large" declarada en la model card.
 
@@ -21,7 +21,7 @@ El modelo acumula 0 descargas y 0 *likes* en el momento de la consulta, no tiene
 | Licencia | apache-2.0 |
 | Formato de pesos | `model.safetensors` (inicialización) + código PyTorch en `main.py`; sin `pytorch_model.bin` ni ONNX |
 | Tarea declarada | *matching* (sin especificar la modalidad) |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Autor | danielharriseli (cuenta individual) |
 | Fecha de creación / actualización | 2026-10-19 / 2026-10-19 |
 | Descargas / likes | 0 / 0 |
@@ -88,12 +88,12 @@ No se dispone de datos comparativos de rendimiento en la tarea de *matching* par
 - **Ambigüedad de la tarea**: "matching" no se especifica (¿estéreo, correspondencia de características, *record linkage*?), lo que impide anticipar el formato de entrada/salida.
 - **Sin datos de entrenamiento documentados**: no se indica dataset, número de ejemplos, composición ni posibles sesgos heredados de los datos.
 - **Riesgo de alucinación**: no aplica en el sentido de modelos generativos de texto, pero sí existe riesgo de interpretar erróneamente las salidas de un modelo sin entrenar como predicciones válidas.
-- **Sin soporte de `AutoModel` sin adaptador**: la integración en pipelines estándar de HuggingFace requiere código propio.
+- **Sin soporte de `AutoModel` sin adaptador**: la integración en pipelines estándar de Hugging Face requiere código propio.
 - **Licencia**: apache-2.0 permite uso comercial y modificaciones, pero el autor advierte de revisar por separado los términos de los datos externos que se usen con el repositorio.
 - **Madurez del proyecto**: cuenta individual, 0 descargas, 0 *likes*, repositorio de 0,0 GB y una única actualización el mismo día de creación; sin mantenimiento ni validación comunitaria demostrables.
 - **No apto para producción**: sin pruebas de latencia, sin cuantizaciones publicadas y sin *pipeline* declarado.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/danielharriseli/swin-t-matching-ablation
+- Hugging Face: https://huggingface.co/danielharriseli/swin-t-matching-ablation
 - No se han encontrado en la información proporcionada papers, blogs, repositorios adicionales ni demos asociados al modelo.

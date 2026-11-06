@@ -86,7 +86,7 @@ No se han publicado comparativas con otros clasificadores NSFW en la informació
 
 ## Comparativa con modelos similares
 
-No se dispone de datos comparativos publicados con otros detectores NSFW (por ejemplo, Detoxify o modelos de moderación de HuggingFace). La model card no incluye comparaciones externas. Como referencia cualitativa, el modelo se distingue por su soporte multilingüe de 26 idiomas y su integración con un sistema de guardrails con registro de evidencia, pero no hay métricas comparables disponibles.
+No se dispone de datos comparativos publicados con otros detectores NSFW (por ejemplo, Detoxify o modelos de moderación de Hugging Face). La model card no incluye comparaciones externas. Como referencia cualitativa, el modelo se distingue por su soporte multilingüe de 26 idiomas y su integración con un sistema de guardrails con registro de evidencia, pero no hay métricas comparables disponibles.
 
 ## Limitaciones y advertencias
 
@@ -100,5 +100,5 @@ No se dispone de datos comparativos publicados con otros detectores NSFW (por ej
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/flowxai/nsfw
+- Modelo en Hugging Face: https://huggingface.co/flowxai/nsfw
 - Repositorio de la librería `border`: https://github.com/flowx-ai/border

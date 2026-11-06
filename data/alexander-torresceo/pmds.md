@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Pmds` ha sido publicado en HuggingFace por el usuario `Alexander-torresCEO`. La única información disponible es la licencia Apache 2.0; no se proporciona documentación técnica, descripción, arquitectura, tamaño, contexto ni capacidades. Aunque el nombre coincide con la técnica de resumen progresivo multi-documento (PMDS), no existe evidencia que vincule este modelo con dicha técnica. En el estado actual, no es posible evaluar su relevancia, rendimiento ni utilidad práctica. Se recomienda precaución antes de considerar su uso, ya que la ausencia de datos impide cualquier análisis de seguridad o idoneidad.
+El modelo `Pmds` ha sido publicado en Hugging Face por el usuario `Alexander-torresCEO`. La única información disponible es la licencia Apache 2.0; no se proporciona documentación técnica, descripción, arquitectura, tamaño, contexto ni capacidades. Aunque el nombre coincide con la técnica de resumen progresivo multi-documento (PMDS), no existe evidencia que vincule este modelo con dicha técnica. En el estado actual, no es posible evaluar su relevancia, rendimiento ni utilidad práctica. Se recomienda precaución antes de considerar su uso, ya que la ausencia de datos impide cualquier análisis de seguridad o idoneidad.
 
 ## Especificaciones tecnicas
 
@@ -69,4 +69,4 @@ No disponible. No se ha publicado información suficiente para comparar este mod
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Alexander-torresCEO/Pmds
+- Hugging Face: https://huggingface.co/Alexander-torresCEO/Pmds

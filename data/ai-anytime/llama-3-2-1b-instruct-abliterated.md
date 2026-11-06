@@ -68,8 +68,8 @@ La tasa de rechazo se mide sobre prompts dañinos reservados con un juez por pal
 
 | Modelo | Parametros | Contexto | Tasa de rechazo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ai-anytime/Llama-3.2-1B-Instruct-abliterated | 1,24 B | no disponible | 0,3438 | llama3.2 | HuggingFace |
-| meta-llama/Llama-3.2-1B-Instruct | 1,24 B | no disponible en esta ficha | 0,75 | llama3.2 | HuggingFace |
+| ai-anytime/Llama-3.2-1B-Instruct-abliterated | 1,24 B | no disponible | 0,3438 | llama3.2 | Hugging Face |
+| meta-llama/Llama-3.2-1B-Instruct | 1,24 B | no disponible en esta ficha | 0,75 | llama3.2 | Hugging Face |
 | Otras variantes abliterated de Llama 3.2 1B | no disponible | no disponible | no disponible | llama3.2 | no disponible |
 
 La comparación directa más relevante es con el modelo base, del que se diferencia únicamente en la tasa de rechazo y en una deriva KL media de 0,0541. No se dispone de datos de benchmarks estándar para comparar capacidades con alternativas de la misma categoría.
@@ -87,7 +87,7 @@ La comparación directa más relevante es con el modelo base, del que se diferen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ai-anytime/Llama-3.2-1B-Instruct-abliterated
+- Modelo en Hugging Face: https://huggingface.co/ai-anytime/Llama-3.2-1B-Instruct-abliterated
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
 - Herramienta ablate: https://github.com/AIAnytime/ablate
 - Paper de referencia (Arditi et al., 2024): https://arxiv.org/abs/2406.11717

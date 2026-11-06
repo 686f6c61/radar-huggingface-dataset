@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Lale-3B es un ajuste fino del modelo Qwen2.5-3B-Instruct con 3.085.938.688 parámetros (aproximadamente 3,09 mil millones), publicado por el usuario talha085 en HuggingFace bajo licencia Apache-2.0. El modelo funciona como asistente de asuntos estudiantiles de la ficticia Lale Teknik Üniversitesi y responde en turco a preguntas sobre matrícula, selección de asignaturas, exámenes y servicios de campus. La arquitectura de partida es un transformer decoder-only de la familia Qwen2.5, sin componentes MoE.
+Lale-3B es un ajuste fino del modelo Qwen2.5-3B-Instruct con 3.085.938.688 parámetros (aproximadamente 3,09 mil millones), publicado por el usuario talha085 en Hugging Face bajo licencia Apache-2.0. El modelo funciona como asistente de asuntos estudiantiles de la ficticia Lale Teknik Üniversitesi y responde en turco a preguntas sobre matrícula, selección de asignaturas, exámenes y servicios de campus. La arquitectura de partida es un transformer decoder-only de la familia Qwen2.5, sin componentes MoE.
 
 La particularidad del proyecto es su diseño en tres capas: la identidad y el estilo conversacional se incorporan mediante un ajuste fino QLoRA; las reglas y normativa institucional se inyectan en tiempo de inferencia mediante RAG; y los cálculos concretos (tasas de matrícula, nota media) se delegan a herramientas externas invocadas por el modelo. Esta separación de responsabilidades permite modificar la normativa sin reentrenar y limita las respuestas al dominio cubierto por la guía.
 
@@ -90,11 +90,11 @@ La comparación directa con alternativas especializadas en asuntos estudiantiles
 - Licencia: Apache-2.0, permisiva para uso comercial, pero al derivar de Qwen2.5-3B-Instruct conviene revisar también las condiciones del modelo base y de los datos sintéticos utilizados.
 - Madurez: 0 descargas y 0 likes, sin validación externa ni mantenimiento conocido; no es un candidato recomendable para producción crítica sin evaluación propia.
 - Métricas internas sin metodología publicada: los valores de la tabla comparativa no permiten reproducir la evaluación.
-- Pipeline de HuggingFace: no disponible, lo que limita la integración automática con algunas herramientas del ecosistema.
+- Pipeline de Hugging Face: no disponible, lo que limita la integración automática con algunas herramientas del ecosistema.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/talha085/Lale-3B
+- Modelo en Hugging Face: https://huggingface.co/talha085/Lale-3B
 - Adaptador LoRA: https://huggingface.co/talha085/Lale-3B-LoRA
 - Versión GGUF: https://huggingface.co/talha085/Lale-3B-GGUF
 - Dataset de entrenamiento: https://huggingface.co/datasets/talha085/lale-3b-veri

@@ -85,7 +85,7 @@ Las cifras de parametros y contexto de los modelos comparativos son datos public
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/czcollier/gemma-2-9b-literary-prose-dpo-GGUF
+- Modelo en Hugging Face: https://huggingface.co/czcollier/gemma-2-9b-literary-prose-dpo-GGUF
 - Modelo base (fine-tune sin cuantizar): https://huggingface.co/czcollier/gemma-2-9b-literary-prose-dpo
 - Gemma 2 (modelo original de Google): https://huggingface.co/google/gemma-2-9b
 - Terminos de uso de Gemma: https://ai.google.dev/gemma/terms

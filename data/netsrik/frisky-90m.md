@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Frisky 90M es un modelo de lenguaje de 90.128.896 parametros entrenado desde cero por el desarrollador independiente netsrik (usuario de HuggingFace) utilizando DeepJ, un framework de entrenamiento e inferencia escrito en Java que se ejecuta sobre GPU de Apple (Metal). El modelo ha completado tres fases: preentrenamiento base, mid-training y un ajuste fino de instrucciones del tipo *response-only*, lo que lo situa como un pequeno asistente conversacional mas que como un modelo base puro.
+Frisky 90M es un modelo de lenguaje de 90.128.896 parametros entrenado desde cero por el desarrollador independiente netsrik (usuario de Hugging Face) utilizando DeepJ, un framework de entrenamiento e inferencia escrito en Java que se ejecuta sobre GPU de Apple (Metal). El modelo ha completado tres fases: preentrenamiento base, mid-training y un ajuste fino de instrucciones del tipo *response-only*, lo que lo situa como un pequeno asistente conversacional mas que como un modelo base puro.
 
-Su interes no reside en el rendimiento absoluto, sino en la combinacion de tres factores: es un modelo de escala muy reducida (compatible con hardware de consumo e incluso con entornos de borde), emplea una arquitectura propia denominada DeepJ Prism Transformer con atencion Q/KV de bajo rango, y todo su ciclo de vida (tokenizador, checkpoint y runtime) gira en torno al ecosistema DeepJ, no al de HuggingFace Transformers. El checkpoint se distribuye en un formato binario propietario (`model.dj`) que no es cargable directamente con la libreria Python de Transformers.
+Su interes no reside en el rendimiento absoluto, sino en la combinacion de tres factores: es un modelo de escala muy reducida (compatible con hardware de consumo e incluso con entornos de borde), emplea una arquitectura propia denominada DeepJ Prism Transformer con atencion Q/KV de bajo rango, y todo su ciclo de vida (tokenizador, checkpoint y runtime) gira en torno al ecosistema DeepJ, no al de Hugging Face Transformers. El checkpoint se distribuye en un formato binario propietario (`model.dj`) que no es cargable directamente con la libreria Python de Transformers.
 
 Con 10 capas, tamano oculto de 768, 12 cabezas de atencion y un vocabulario de 16.384 tokens, Frisky se posiciona como una pieza experimental y didactica: sirve para estudiar arquitecturas de atencion de bajo rango, para validar el tooling de DeepJ y para prototipar en Java, pero el propio autor advierte que su calidad tras el post-entrenamiento no ha sido establecida mediante benchmarks rigurosos. La longitud de contexto no se especifica en la informacion disponible.
 
@@ -96,7 +96,7 @@ La diferencia fundamental no es de tamano sino de interoperabilidad: las tres al
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/netsrik/frisky-90m
+- Modelo en Hugging Face: https://huggingface.co/netsrik/frisky-90m
 - Repositorio de DeepJ: https://github.com/KirstenAli/DeepJ
 - Paquete Maven de DeepJ 0.9.5-alpha: https://central.sonatype.com/artifact/io.github.kirstenali/deepj/0.9.5-alpha
 - Interfaz de chat de escritorio de DeepJ: https://github.com/KirstenAli/DeepJ#desktop-chat

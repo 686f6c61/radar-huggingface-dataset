@@ -71,7 +71,7 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qiangliu88/bert-intent-exp
+- Hugging Face: https://huggingface.co/qiangliu88/bert-intent-exp
 - Articulo sobre clasificacion de intenciones con BERT (contexto general): https://www.luvr.ai/blog/intent-classification-with-bert-models
 - Repositorio IntentBERT (modelo relacionado): https://github.com/fanolabs/IntentBert
 - Documentacion de BERT (Wikipedia): https://en.wikipedia.org/wiki/BERT_(language_model)

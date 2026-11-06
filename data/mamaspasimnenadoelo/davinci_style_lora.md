@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mamaspasimnenadoelo/davinci_style_LoRA` es un adaptador LoRA para generación de imágenes mediante difusión, entrenado con DreamBooth sobre el modelo base `stabilityai/stable-diffusion-xl-base-1.0` (SDXL 1.0). No es un modelo de lenguaje ni un modelo generativo completo: es un conjunto de pesos de bajo rango que se acoplan al U-Net de SDXL para inducir un estilo visual concreto, activado mediante la frase guía (trigger words) `oil painting in DAVINCI style`. El autor es el usuario de HuggingFace `mamaspasimnenadoelo` y el repositorio ocupa aproximadamente 0,1 GB.
+`mamaspasimnenadoelo/davinci_style_LoRA` es un adaptador LoRA para generación de imágenes mediante difusión, entrenado con DreamBooth sobre el modelo base `stabilityai/stable-diffusion-xl-base-1.0` (SDXL 1.0). No es un modelo de lenguaje ni un modelo generativo completo: es un conjunto de pesos de bajo rango que se acoplan al U-Net de SDXL para inducir un estilo visual concreto, activado mediante la frase guía (trigger words) `oil painting in DAVINCI style`. El autor es el usuario de Hugging Face `mamaspasimnenadoelo` y el repositorio ocupa aproximadamente 0,1 GB.
 
 El interés práctico del artefacto es acotado pero claro: permite reproducir un estilo de pintura al óleo de inspiración renacentista sin reentrenar SDXL y con un coste de almacenamiento mínimo, ya que el adaptador se suma a los pesos base en tiempo de inferencia. Al tratarse de una técnica de bajo rango, el adaptador es intercambiable y combinable con otros LoRA, lo que lo hace adecuado para pipelines de ComfyUI, `diffusers` o interfaces tipo Automatic1111/Forge.
 
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Alternativa | Tipo | Parámetros | Contexto / resolución | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|---|
-| `mamaspasimnenadoelo/davinci_style_LoRA` | LoRA de estilo sobre SDXL | No disponible (repo 0,1 GB) | Heredada de SDXL: 1024x1024 | openrail++ | HuggingFace, 0 descargas | Model card sin completar, sin galería |
+| `mamaspasimnenadoelo/davinci_style_LoRA` | LoRA de estilo sobre SDXL | No disponible (repo 0,1 GB) | Heredada de SDXL: 1024x1024 | openrail++ | Hugging Face, 0 descargas | Model card sin completar, sin galería |
 | `stabilityai/stable-diffusion-xl-base-1.0` | Modelo base completo | ~3.500 M | 1024x1024 | openrail++ | Ampliamente disponible | Sin estilo específico; es el punto de partida del LoRA |
 | Ajuste fino completo por DreamBooth sobre SDXL | Modelo completo ajustado | ~3.500 M | 1024x1024 | Según el autor del ajuste | Repositorios de comunidad | Mayor fidelidad potencial, pero decenas de GB de almacenamiento y más riesgo de olvido catastrófico |
 | LoRA de estilo sobre SD 1.5 | LoRA de estilo sobre SD 1.5 | ~860 M en el modelo base | 512x512 nativo | CreativeML OpenRAIL-M | Muy abundante en la comunidad | Menor resolución y menor adherencia al prompt que SDXL |
@@ -95,7 +95,7 @@ No se dispone de identificadores ni resultados verificables de otros LoRA de est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mamaspasimnenadoelo/davinci_style_LoRA
+- Modelo en Hugging Face: https://huggingface.co/mamaspasimnenadoelo/davinci_style_LoRA
 - Modelo base SDXL 1.0: https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
 - VAE usado en entrenamiento: https://huggingface.co/madebyollin/sdxl-vae-fp16-fix
 - Paper de DreamBooth: https://dreambooth.github.io/

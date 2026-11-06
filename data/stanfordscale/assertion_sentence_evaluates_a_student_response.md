@@ -2,7 +2,7 @@
 
 ## Resumen
 
-StanfordSCALE/assertion_sentence_evaluates_a_student_response es un clasificador binario de texto en inglés desarrollado por la Stanford SCALE Initiative dentro del proyecto EduBehaviors, un conjunto de esquemas basados en aserciones para la codificación auditable de diálogo educativo. La tarea concreta que resuelve es determinar si un enunciado de un docente evalúa la respuesta de un estudiante: la aserción se etiqueta como verdadera cuando la intervención del profesor valora, confirma o juzga la contribución previa de un alumno. Se publica en HuggingFace y está pensado para consumirse desde el paquete Python EduBehaviors-kit.
+StanfordSCALE/assertion_sentence_evaluates_a_student_response es un clasificador binario de texto en inglés desarrollado por la Stanford SCALE Initiative dentro del proyecto EduBehaviors, un conjunto de esquemas basados en aserciones para la codificación auditable de diálogo educativo. La tarea concreta que resuelve es determinar si un enunciado de un docente evalúa la respuesta de un estudiante: la aserción se etiqueta como verdadera cuando la intervención del profesor valora, confirma o juzga la contribución previa de un alumno. Se publica en Hugging Face y está pensado para consumirse desde el paquete Python EduBehaviors-kit.
 
 Técnicamente es un modelo SetFit de 109.486.464 parámetros: un encoder MPNet preentrenado (sentence-transformers/paraphrase-mpnet-base-v2) afinado en dos fases, una contrastiva sobre el cuerpo del modelo y otra de ajuste de una cabeza de regresión logística. El entrenamiento se realizó sobre un subconjunto anotado automáticamente con LLM de intervenciones docentes del corpus TalkMoves: 3.430 ejemplos de train, 860 de dev y 2.144 de test.
 
@@ -80,8 +80,8 @@ No se han identificado en la informacion disponible alternativas publicadas que 
 
 | Modelo | Parametros | Contexto | Rendimiento en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| StanfordSCALE/assertion_sentence_evaluates_a_student_response | 109,5 M | no disponible | F1 test 0,391; ROC-AUC test 0,815 | no disponible | HuggingFace, via setfit |
-| sentence-transformers/paraphrase-mpnet-base-v2 (encoder base) | 109,5 M | no disponible | no disponible para esta aserción | apache-2.0 (según su propia ficha) | HuggingFace, sentence-transformers |
+| StanfordSCALE/assertion_sentence_evaluates_a_student_response | 109,5 M | no disponible | F1 test 0,391; ROC-AUC test 0,815 | no disponible | Hugging Face, via setfit |
+| sentence-transformers/paraphrase-mpnet-base-v2 (encoder base) | 109,5 M | no disponible | no disponible para esta aserción | apache-2.0 (según su propia ficha) | Hugging Face, sentence-transformers |
 | Otros clasificadores de aserciones de EduBehaviors | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Anotador LLM usado para generar las etiquetas | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -99,7 +99,7 @@ No se han identificado en la informacion disponible alternativas publicadas que 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StanfordSCALE/assertion_sentence_evaluates_a_student_response
+- Modelo en Hugging Face: https://huggingface.co/StanfordSCALE/assertion_sentence_evaluates_a_student_response
 - Dataset de anotaciones: https://huggingface.co/datasets/StanfordSCALE/assertions_llm_annotated_talkmoves
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-mpnet-base-v2
 - Dataset original TalkMoves: https://github.com/SumnerLab/TalkMoves

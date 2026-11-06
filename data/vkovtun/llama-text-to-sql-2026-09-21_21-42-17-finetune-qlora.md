@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`vkovtun/llama-text-to-sql-2026-09-21_21.42.17-finetune-QLORA` es un ajuste fino del modelo instructivo `meta-llama/Llama-3.2-3B-Instruct` orientado a la generacion de consultas SQL a partir de lenguaje natural (text-to-SQL). El autor es el usuario de HuggingFace `vkovtun` y el entrenamiento se ha realizado mediante SFT (supervised fine-tuning) con la libreria TRL, segun indica la propia model card. El repositorio tiene 0.8 GB, un tamano compatible con pesos de adaptador o con un checkpoint cuantizado, no con los pesos completos en precision de 16 bits de un modelo de 3.000 millones de parametros.
+`vkovtun/llama-text-to-sql-2026-09-21_21.42.17-finetune-QLORA` es un ajuste fino del modelo instructivo `meta-llama/Llama-3.2-3B-Instruct` orientado a la generacion de consultas SQL a partir de lenguaje natural (text-to-SQL). El autor es el usuario de Hugging Face `vkovtun` y el entrenamiento se ha realizado mediante SFT (supervised fine-tuning) con la libreria TRL, segun indica la propia model card. El repositorio tiene 0.8 GB, un tamano compatible con pesos de adaptador o con un checkpoint cuantizado, no con los pesos completos en precision de 16 bits de un modelo de 3.000 millones de parametros.
 
 El modelo hereda la arquitectura decoder-only tipo transformer de Llama 3.2, con 3.210 millones de parametros y atencion con grouped-query attention (GQA). Se trata de un checkpoint denso, no de una mezcla de expertos, por lo que no hay parametros activos separados. El contexto maximo heredado del modelo base es de 128.000 tokens, aunque la model card no lo confirma explicitamente para este ajuste.
 
@@ -22,7 +22,7 @@ Su relevancia practica es limitada y hay que ser honesto al respecto: el reposit
 | Tamano del repositorio | 0.8 GB |
 | Modelo base | meta-llama/Llama-3.2-3B-Instruct |
 | Libreria | transformers |
-| Fecha de creacion | 21 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 21 de septiembre de 2026 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -98,8 +98,8 @@ La ventaja comparativa de este checkpoint seria la licencia permisiva de su mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vkovtun/llama-text-to-sql-2026-09-21_21.42.17-finetune-QLORA
+- Modelo en Hugging Face: https://huggingface.co/vkovtun/llama-text-to-sql-2026-09-21_21.42.17-finetune-QLORA
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/viktor-kovtun/llama-text-to-sql/runs/1n1vug3d
 - Repositorio de TRL: https://github.com/huggingface/trl
-- Nota sobre la busqueda web: las consultas realizadas no devolvieron resultados relevantes sobre este modelo, su dataset o sus resultados. Los unicos enlaces utiles son los incluidos en la propia model card y los metadatos de HuggingFace.
+- Nota sobre la busqueda web: las consultas realizadas no devolvieron resultados relevantes sobre este modelo, su dataset o sus resultados. Los unicos enlaces utiles son los incluidos en la propia model card y los metadatos de Hugging Face.

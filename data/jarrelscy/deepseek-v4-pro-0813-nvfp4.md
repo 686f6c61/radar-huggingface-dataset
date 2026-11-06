@@ -75,5 +75,5 @@ La principal diferencia frente a otras versiones NVFP4 públicas es que este che
 
 ## Enlaces
 
-- Checkpoint en HuggingFace: https://huggingface.co/jarrelscy/DeepSeek-V4-Pro-0813-NVFP4
+- Checkpoint en Hugging Face: https://huggingface.co/jarrelscy/DeepSeek-V4-Pro-0813-NVFP4
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813

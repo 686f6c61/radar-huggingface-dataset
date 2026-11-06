@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VoiceFlow AI es una aplicacion de escritorio para Windows y macOS que combina dictado por voz, un editor de documentos de texto enriquecido y un asistente de IA opcional. El repositorio publicado en HuggingFace bajo el identificador `imomzoda-dev/voiceflow-ai-src` contiene el codigo fuente del proyecto, no pesos de un modelo de lenguaje. El autor es `imomzoda-dev` y el proyecto se distribuye tambien a traves de GitHub Releases.
+VoiceFlow AI es una aplicacion de escritorio para Windows y macOS que combina dictado por voz, un editor de documentos de texto enriquecido y un asistente de IA opcional. El repositorio publicado en Hugging Face bajo el identificador `imomzoda-dev/voiceflow-ai-src` contiene el codigo fuente del proyecto, no pesos de un modelo de lenguaje. El autor es `imomzoda-dev` y el proyecto se distribuye tambien a traves de GitHub Releases.
 
 La aplicacion no implementa un modelo propio: se apoya en `whisper.cpp` para el reconocimiento de voz local (con modelos Whisper de OpenAI en formato GGML) y en APIs externas compatibles con OpenAI (OpenAI, Groq, Anthropic, OpenRouter, Ollama, LM Studio, faster-whisper server) para la correccion de texto y el asistente documental. Su propuesta de valor es la integracion de esos componentes en un flujo de dictado global por hotkey, con insercion del texto en cualquier aplicacion y un editor propio con historial de versiones y exportacion a DOCX, PDF y Markdown.
 
@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Proyecto | Tipo | Reconocimiento local | LLM integrado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| VoiceFlow AI | App Electron de dictado y edicion | Si (`whisper.cpp`) | Externo (OpenAI, Groq, Anthropic, Ollama, LM Studio) | no disponible | HuggingFace y GitHub Releases |
-| Whisper (OpenAI) | Modelo ASR | Si (via `whisper.cpp`) | No | MIT (modelos) | HuggingFace, repositorios oficiales |
+| VoiceFlow AI | App Electron de dictado y edicion | Si (`whisper.cpp`) | Externo (OpenAI, Groq, Anthropic, Ollama, LM Studio) | no disponible | Hugging Face y GitHub Releases |
+| Whisper (OpenAI) | Modelo ASR | Si (via `whisper.cpp`) | No | MIT (modelos) | Hugging Face, repositorios oficiales |
 | WhisperX / faster-whisper | Pipeline ASR | Si | No | MIT / otras | PyPI, GitHub |
 | Aplicaciones de dictado comerciales | Producto cerrado | Variable | Variable | Propietaria | Comercial |
 
@@ -78,7 +78,7 @@ La comparacion directa con modelos no es posible porque VoiceFlow AI no publica 
 ## Limitaciones y advertencias
 
 - No es un modelo entrenado: no hay pesos, benchmarks ni evaluacion de calidad asociada al repositorio; las capacidades dependen enteramente de Whisper y del LLM externo configurado.
-- Licencia no declarada: no se especifica licencia en HuggingFace, lo que impide confirmar condiciones de uso comercial o redistribucion.
+- Licencia no declarada: no se especifica licencia en Hugging Face, lo que impide confirmar condiciones de uso comercial o redistribucion.
 - Dependencia de servicios externos: los modos Correct y Professional requieren un proveedor LLM con clave API o un servidor local compatible; sin conexion, solo funciona el modo Raw.
 - Riesgo de alucinacion en la reescritura: aunque los prompts prohiben anadir hechos, un LLM externo puede alterar el significado; existe un limite de longitud y fallback al transcript original, pero no una verificacion semantica.
 - Precision variable en tayiko: la model card reconoce que Whisper confunde tayiko con ruso o persa y ofrece mitigaciones heuristicas, no una garantia.
@@ -88,7 +88,7 @@ La comparacion directa con modelos no es posible porque VoiceFlow AI no publica 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/imomzoda-dev/voiceflow-ai-src
+- Hugging Face: https://huggingface.co/imomzoda-dev/voiceflow-ai-src
 - GitHub Releases: https://github.com/imomzoda-dev/VoiceFlowAI/releases
 - whisper.cpp: https://github.com/ggml-org/whisper.cpp
 - Modelos Whisper GGML: https://huggingface.co/ggerganov/whisper.cpp

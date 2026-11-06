@@ -92,7 +92,7 @@ No se dispone de cifras de parametros, contexto ni rendimiento de los modelos al
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jgeuter/qwen3-4b-dpala-thinking-b16-alpha0.3
+- Modelo en Hugging Face: https://huggingface.co/jgeuter/qwen3-4b-dpala-thinking-b16-alpha0.3
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Dataset de entrenamiento: https://huggingface.co/datasets/jgeuter/ShareGPT-Qwen3-4B-T0.6-Thinking-Regen
 - SpecForge: mencionado en la model card como framework de captura offline de caracteristicas; no se proporciona URL en la informacion disponible.

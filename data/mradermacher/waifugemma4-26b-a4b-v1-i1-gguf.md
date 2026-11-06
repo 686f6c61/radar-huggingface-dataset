@@ -24,7 +24,7 @@ Su relevancia práctica es doble: por un lado, cubre un nicho concreto (roleplay
 | Modelo base | hiwaifu-research/WaifuGemma4-26b-a4b-v1 |
 | Tamano del repositorio | 10,6 GB |
 | Libreria declarada | transformers |
-| Fecha de creacion (segun HuggingFace) | 2026-09-18 |
+| Fecha de creacion (segun Hugging Face) | 2026-09-18 |
 
 ## Arquitectura y entrenamiento
 

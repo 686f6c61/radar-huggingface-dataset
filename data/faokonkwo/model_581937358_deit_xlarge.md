@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `model_581937358_deit_xlarge` es una implementación a escala **xlarge** de la arquitectura **DeiT** (Data-efficient Image Transformers) orientada a tareas de **matching**. Fue publicado por el usuario Faokonkwo en HuggingFace bajo licencia CC-BY-4.0, aunque no se especifica el propósito exacto de la tarea de matching ni el dataset utilizado para su entrenamiento. La arquitectura base DeiT fue propuesta por Touvron et al. en el repositorio oficial de Meta AI y se caracteriza por lograr un rendimiento competitivo en clasificación de imágenes con un consumo de datos notablemente inferior al de los Vision Transformers originales.
+El modelo `model_581937358_deit_xlarge` es una implementación a escala **xlarge** de la arquitectura **DeiT** (Data-efficient Image Transformers) orientada a tareas de **matching**. Fue publicado por el usuario Faokonkwo en Hugging Face bajo licencia CC-BY-4.0, aunque no se especifica el propósito exacto de la tarea de matching ni el dataset utilizado para su entrenamiento. La arquitectura base DeiT fue propuesta por Touvron et al. en el repositorio oficial de Meta AI y se caracteriza por lograr un rendimiento competitivo en clasificación de imágenes con un consumo de datos notablemente inferior al de los Vision Transformers originales.
 
 Este modelo en particular incorpora varias modificaciones sobre la arquitectura DeiT estándar, como atención dispersa, fusión de características mediante `concat-mlp`, normalización por lotes y activación `approx-gelu`. Sin embargo, la información pública disponible es muy limitada: no se especifican el número de parámetros, la longitud de contexto ni los datos de entrenamiento, por lo que cualquier evaluación técnica rigurosa requiere acceso al artefacto principal del repositorio (`model_581937358_deit_xlarge.py`). Su relevancia actual es incierta, ya que no se han publicado resultados de benchmarks ni demos que permitan situarlo frente a modelos similares.
 
@@ -76,8 +76,8 @@ La comparativa con los DeiT de Facebook se basa en la arquitectura comun, pero n
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Faokonkwo/model_581937358_deit_xlarge
+- Repositorio Hugging Face: https://huggingface.co/Faokonkwo/model_581937358_deit_xlarge
 - Repositorio oficial de DeiT (Facebook Research): https://github.com/facebookresearch/deit
-- Documentacion de DeiT en HuggingFace Transformers: https://huggingface.co/docs/transformers/model_doc/deit
+- Documentacion de DeiT en Hugging Face Transformers: https://huggingface.co/docs/transformers/model_doc/deit
 - Codigo de modelos DeiT: https://github.com/facebookresearch/deit/blob/main/models.py
 - Model Zoo de DeiT: https://deepwiki.com/facebookresearch/deit/1.2-model-zoo-and-pre-trained-models

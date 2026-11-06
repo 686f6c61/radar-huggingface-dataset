@@ -98,7 +98,7 @@ No se dispone de datos públicos de benchmarks que permitan comparar el rendimie
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/08semi/lekiwi_act2
+- Modelo en Hugging Face: https://huggingface.co/08semi/lekiwi_act2
 - Dataset de entrenamiento: https://huggingface.co/datasets/08semi/dataset19
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=08semi/dataset19
 - Paper de ACT: https://huggingface.co/papers/2304.13705

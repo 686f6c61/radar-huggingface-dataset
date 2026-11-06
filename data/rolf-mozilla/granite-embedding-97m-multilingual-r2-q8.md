@@ -107,6 +107,6 @@ Los datos de parámetros, contexto, licencia y formato de los modelos comparados
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rolf-mozilla/granite-embedding-97m-multilingual-r2-q8
-- Modelo base en HuggingFace: https://huggingface.co/ibm-granite/granite-embedding-97m-multilingual-r2
+- Repositorio en Hugging Face: https://huggingface.co/rolf-mozilla/granite-embedding-97m-multilingual-r2-q8
+- Modelo base en Hugging Face: https://huggingface.co/ibm-granite/granite-embedding-97m-multilingual-r2
 - No se han encontrado papers, blogs, repositorios de código ni demos adicionales en la información disponible.

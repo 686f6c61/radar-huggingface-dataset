@@ -22,7 +22,7 @@ Su relevancia es, por tanto, metodológica: sirve para replicar resultados, audi
 | Formato de pesos | No disponible. El repositorio contiene checkpoints completos, ficheros de estado de entrenamiento y copias de configuracion, con un manifiesto SHA-256 (`backup_manifest.json`) para restauracion |
 | Tamano del repositorio | 12,7 GB |
 | Datasets de referencia | HAM10000 (principal), ISIC2017 y Dermofit (experimentos cross-dataset) |
-| Pipeline de HuggingFace | No declarado |
+| Pipeline de Hugging Face | No declarado |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion (metadatos) | 2026-10-22 |
 
@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo / repositorio | Contenido | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `yanguanyue/DFTA-baselines` (este repo) | Checkpoints de 10 metodos de comparacion (HAM10000, ISIC2017, Dermofit) | No disponible | No aplica | Mixta por metodo; sin licencia global | Publico en HuggingFace, 12,7 GB |
-| `yanguanyue/DFTA-10000-steps` | Checkpoints del modelo DFTA y de sus ablaciones | No disponible | No aplica | CC BY-NC 4.0 para contenido propio del autor | Publico en HuggingFace |
+| `yanguanyue/DFTA-baselines` (este repo) | Checkpoints de 10 metodos de comparacion (HAM10000, ISIC2017, Dermofit) | No disponible | No aplica | Mixta por metodo; sin licencia global | Publico en Hugging Face, 12,7 GB |
+| `yanguanyue/DFTA-10000-steps` | Checkpoints del modelo DFTA y de sus ablaciones | No disponible | No aplica | CC BY-NC 4.0 para contenido propio del autor | Publico en Hugging Face |
 | `yanguanyue/DFTA-generated-results` | Imagenes generadas por los experimentos | No aplica | No aplica | No disponible | Privado, requiere acceso autorizado |
 | Repositorio GitHub `yanguanyue/DFTA-` | Codigo del metodo DFTA y comparativas cualitativas | No aplica | No aplica | No disponible | Publico |
 
@@ -92,8 +92,8 @@ No se dispone de comparaciones cuantitativas con modelos externos a la coleccion
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yanguanyue/DFTA-baselines
-- Perfil del autor en HuggingFace: https://huggingface.co/yanguanyue
+- Repositorio en Hugging Face: https://huggingface.co/yanguanyue/DFTA-baselines
+- Perfil del autor en Hugging Face: https://huggingface.co/yanguanyue
 - Checkpoints de DFTA y ablaciones: https://huggingface.co/yanguanyue/DFTA-10000-steps
 - Imagenes generadas (privado, requiere acceso autorizado): https://huggingface.co/datasets/yanguanyue/DFTA-generated-results
 - Codigo del proyecto DFTA: https://github.com/yanguanyue/DFTA-

@@ -80,7 +80,7 @@ El error estándar en bits por byte es de aproximadamente 0,06 con una semilla y
 
 | Modelo | Parametros totales | Contexto | Objetivo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vectabass-59m-950mt-mdlm-cooled | 59,48M (27,28M no-embedding) | 2048 | Difusión enmascarada (MDLM) | apache-2.0 | HuggingFace |
+| vectabass-59m-950mt-mdlm-cooled | 59,48M (27,28M no-embedding) | 2048 | Difusión enmascarada (MDLM) | apache-2.0 | Hugging Face |
 | Addendum autorregresivo de VectaBass (misma celda) | no disponible en la informacion proporcionada | no disponible | Autorregresivo | no disponible | Publicado por separado según el autor |
 | Celdas MDLM de 100M a 1.6B del mismo estudio | 100M a 1.6B | no disponible | Difusión enmascarada (MDLM) | no disponible | Referenciadas en el estudio |
 
@@ -99,7 +99,7 @@ No se dispone de datos de rendimiento comparables entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VectaBass/vectabass-59m-950mt-mdlm-cooled
+- Modelo en Hugging Face: https://huggingface.co/VectaBass/vectabass-59m-950mt-mdlm-cooled
 - Documentación de datos del autor: `DATA.md` en el repositorio del modelo (no se dispone de URL directa en la información proporcionada)
 - Paper MDLM referenciado por el autor: no disponible en la información proporcionada
 - Repositorio de código: no disponible en la información proporcionada

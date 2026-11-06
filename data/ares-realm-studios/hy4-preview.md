@@ -87,12 +87,12 @@ No se dispone de información pública sobre los parámetros exactos, contexto o
 - Sesgos y alucinaciones: no se proporcionan datos específicos sobre sesgos o tasas de alucinación. Como cualquier modelo de lenguaje, existe riesgo de generar información falsa o inventada, especialmente en dominios fuera de su entrenamiento.
 - Idiomas: no se especifican los idiomas soportados, por lo que el rendimiento en idiomas distintos del inglés y el chino (dado el origen del modelo) no está garantizado.
 - Requisitos de hardware: el tamaño del modelo (780B) hace que sea inviable para la mayoría de entornos de desarrollo locales. Solo es práctico en infraestructuras multi-GPU o servicios en la nube con capacidad suficiente.
-- Disponibilidad del repositorio: el repositorio de HuggingFace listado (Ares-Realm-Studios/Hy4-preview) parece ser un mirror no oficial con 0 descargas y 0 likes. El repositorio oficial es tencent/Hy4-preview. Se recomienda verificar la autenticidad de las descargas.
+- Disponibilidad del repositorio: el repositorio de Hugging Face listado (Ares-Realm-Studios/Hy4-preview) parece ser un mirror no oficial con 0 descargas y 0 likes. El repositorio oficial es tencent/Hy4-preview. Se recomienda verificar la autenticidad de las descargas.
 
 ## Enlaces
 
-- Repositorio oficial en HuggingFace: https://huggingface.co/tencent/Hy4-preview
-- Repositorio mirror en HuggingFace (el proporcionado en la consulta): https://huggingface.co/Ares-Realm-Studios/Hy4-preview
+- Repositorio oficial en Hugging Face: https://huggingface.co/tencent/Hy4-preview
+- Repositorio mirror en Hugging Face (el proporcionado en la consulta): https://huggingface.co/Ares-Realm-Studios/Hy4-preview
 - Repositorio en GitHub: https://github.com/Tencent-Hunyuan/Hy4-preview
 - Página oficial de investigación: https://hy.tencent.ai/research/hy4-preview?langVersion=en
 - Versión FP8 en ModelScope: https://www.modelscope.cn/models/Tencent-Hunyuan/Hy4-preview-FP8

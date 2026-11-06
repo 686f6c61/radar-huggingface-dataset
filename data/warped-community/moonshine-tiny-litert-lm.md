@@ -89,12 +89,12 @@ Nota: la comparativa se limita a parametros, tarea, licencia y disponibilidad, y
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/warped-community/moonshine-tiny-litert-lm
+- Modelo en Hugging Face: https://huggingface.co/warped-community/moonshine-tiny-litert-lm
 - Fuente original del espejo: https://huggingface.co/litert-community/moonshine-tiny
 - Modelo base: https://huggingface.co/UsefulSensors/moonshine-tiny
 - Repositorio del proyecto Moonshine: https://github.com/moonshine-ai/moonshine
 - Modelos micro de Moonshine (incluye tiny): https://github.com/moonshine-ai/moonshine/tree/main/micro/models
-- Espejo alternativo en HuggingFace (autodroid): https://huggingface.co/devendradhakad/autodroid-litert-community-moonshine-tiny
+- Espejo alternativo en Hugging Face (autodroid): https://huggingface.co/devendradhakad/autodroid-litert-community-moonshine-tiny
 - Ficha de referencia con contexto de benchmarks: https://free2aitools.com/model/litert-community/moonshine-tiny
 - Web de la aplicacion Warped: https://cotizcesar.github.io/warped-website/
 - Discusion del modelo en litert-community (usage script): https://huggingface.co/litert-community/moonshine-tiny/discussions/1/files

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Borzzo/uki-loras2 es un adaptador de tipo LoRA (Low-Rank Adaptation) para el modelo de generación de imágenes FLUX, publicado por el usuario Borzzo en HuggingFace. El repositorio contiene los pesos en formato Safetensors y está etiquetado para su uso con la librería diffusers y la plataforma fal.ai. Según la model card, el entrenamiento se realizó mediante el trainer Krea 2 de fal.ai, aunque no se proporcionan detalles sobre el conjunto de datos, el prompt de instancia ni las palabras de activación (trigger words).
+Borzzo/uki-loras2 es un adaptador de tipo LoRA (Low-Rank Adaptation) para el modelo de generación de imágenes FLUX, publicado por el usuario Borzzo en Hugging Face. El repositorio contiene los pesos en formato Safetensors y está etiquetado para su uso con la librería diffusers y la plataforma fal.ai. Según la model card, el entrenamiento se realizó mediante el trainer Krea 2 de fal.ai, aunque no se proporcionan detalles sobre el conjunto de datos, el prompt de instancia ni las palabras de activación (trigger words).
 
 Este LoRA está diseñado para ajustar el estilo o el contenido de las imágenes generadas por FLUX, pero la documentación es prácticamente inexistente: no se especifica qué estilo o temática aborda, ni se incluyen ejemplos visuales más allá de la galería genérica de la plataforma. Su relevancia actual es limitada debido a la falta de información, pero puede ser útil para desarrolladores que busquen adaptadores de FLUX entrenados con la herramienta de fal.ai y que estén dispuestos a experimentar con él.
 
@@ -29,7 +29,7 @@ El entrenamiento se realizó con la herramienta fal.ai/models/fal-ai/krea-2-trai
 
 - Generación de imágenes text-to-image: el LoRA modifica el comportamiento del modelo base FLUX para producir imágenes según el estilo o contenido aprendido durante el entrenamiento.
 - Uso con trigger words: la model card menciona que se debe usar una palabra de activación, pero no la especifica (aparece vacía en el README).
-- Integración con diffusers: los pesos están en formato Safetensors y son compatibles con la librería diffusers de HuggingFace.
+- Integración con diffusers: los pesos están en formato Safetensors y son compatibles con la librería diffusers de Hugging Face.
 - Compatibilidad con fal.ai: al haber sido entrenado en esa plataforma, se puede desplegar directamente en sus servicios de inferencia.
 
 No se dispone de información sobre capacidades adicionales como tool calling, agentes, razonamiento multimodal o soporte multilingüe, ya que se trata de un adaptador de imagen y no de un modelo de lenguaje.
@@ -55,12 +55,12 @@ Al ser un LoRA, los requisitos dependen del modelo base FLUX. Para FLUX.1 (el mo
 
 - VRAM estimada: al menos 12 GB para inferencia con cuantización FP16 en una GPU de consumo, aunque se recomiendan 16-24 GB para mayor resolución y velocidad. El LoRA en sí añade una sobrecarga mínima (menos de 1 GB).
 - GPU recomendadas: NVIDIA RTX 3090, RTX 4090, A100, H100. En GPUs con menos de 12 GB, se puede usar cuantización de 8 bits o 4 bits, pero la calidad puede degradarse.
-- Opciones de despliegue: diffusers con PyTorch, o servicios en la nube como fal.ai, Replicate o HuggingFace Inference Endpoints. También es posible usar ComfyUI o AUTOMATIC1111 si se convierte el LoRA a formato compatible.
+- Opciones de despliegue: diffusers con PyTorch, o servicios en la nube como fal.ai, Replicate o Hugging Face Inference Endpoints. También es posible usar ComfyUI o AUTOMATIC1111 si se convierte el LoRA a formato compatible.
 - Latencia y throughput: no disponibles. Dependen del hardware y de la resolución de salida. En una RTX 4090, FLUX.1 dev puede generar una imagen de 1024x1024 en unos 10-20 segundos con el LoRA aplicado, pero es una estimación general.
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre otros LoRA de FLUX comparables en el mismo repositorio o con la misma autoría. Dado que no se conocen las características específicas de este adaptador, no es posible establecer una comparación objetiva con alternativas como otros LoRA de estilo disponibles en HuggingFace (por ejemplo, los de la comunidad para FLUX). Se recomienda al usuario buscar LoRA de FLUX con documentación completa para evaluar alternativas.
+No se dispone de información sobre otros LoRA de FLUX comparables en el mismo repositorio o con la misma autoría. Dado que no se conocen las características específicas de este adaptador, no es posible establecer una comparación objetiva con alternativas como otros LoRA de estilo disponibles en Hugging Face (por ejemplo, los de la comunidad para FLUX). Se recomienda al usuario buscar LoRA de FLUX con documentación completa para evaluar alternativas.
 
 ## Limitaciones y advertencias
 
@@ -73,5 +73,5 @@ No se dispone de información sobre otros LoRA de FLUX comparables en el mismo r
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Borzzo/uki-loras2
+- Repositorio en Hugging Face: https://huggingface.co/Borzzo/uki-loras2
 - Herramienta de entrenamiento en fal.ai: https://fal.ai/models/fal-ai/krea-2-trainer

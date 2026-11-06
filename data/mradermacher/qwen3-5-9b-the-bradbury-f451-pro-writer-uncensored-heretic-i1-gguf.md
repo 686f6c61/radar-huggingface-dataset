@@ -29,7 +29,7 @@ No se dispone de información detallada sobre la arquitectura interna del modelo
 
 - Generación de texto creativo y narrativo con un estilo literario inspirado en Ray Bradbury.
 - Escritura sin filtros de seguridad (uncensored), lo que permite abordar temas controvertidos o explícitos.
-- Soporte de conversación multi-turno (etiqueta "conversational" en HuggingFace).
+- Soporte de conversación multi-turno (etiqueta "conversational" en Hugging Face).
 - Compatible con inferencia local mediante motores GGUF (llama.cpp, Ollama, LM Studio, etc.).
 - No se han documentado capacidades de tool calling, razonamiento multi-paso, visión o audio.
 
@@ -69,8 +69,8 @@ No se dispone de información suficiente para realizar una comparativa rigurosa 
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo GGUF](https://huggingface.co/mradermacher/Qwen3.5-9B-The-Bradbury-F451-Pro-Writer-Uncensored-Heretic-i1-GGUF)
-- [Modelo original en HuggingFace (DavidAU)](https://huggingface.co/DavidAU/Qwen3.5-9B-The-Bradbury-F451-Pro-Writer-Uncensored-Heretic)
+- [Repositorio Hugging Face del modelo GGUF](https://huggingface.co/mradermacher/Qwen3.5-9B-The-Bradbury-F451-Pro-Writer-Uncensored-Heretic-i1-GGUF)
+- [Modelo original en Hugging Face (DavidAU)](https://huggingface.co/DavidAU/Qwen3.5-9B-The-Bradbury-F451-Pro-Writer-Uncensored-Heretic)
 - [Página del modelo en FriendliAI](https://friendli.ai/models/DavidAU/Qwen3.5-9B-The-Bradbury-F451-Pro-Writer-Uncensored-Heretic)
 - [Artículo en UncensoredHub sobre los fine-tunes](https://uncensoredhub.ai/news/2026-07-11-qwen-3-5-9b-uncensored-writer-fine-tunes-land-in-gguf-quantizations)
-- [Perfil de mradermacher en HuggingFace](https://huggingface.co/mradermacher)
+- [Perfil de mradermacher en Hugging Face](https://huggingface.co/mradermacher)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-WAN2.2-14B-Rapid-AllInOne es un modelo de generación de vídeo "todo en uno" creado por Phr00t (publicado también bajo el usuario dongjidaoyi en HuggingFace) que combina el modelo base Wan2.2 de Alibaba con varios aceleradores y adaptaciones de la comunidad, como WAN 2.2 Lightning, SkyReels y VACE. Su objetivo es simplificar el flujo de trabajo de generación de vídeo: en lugar de cargar por separado el modelo de difusión, el CLIP y el VAE, este paquete integra todos los componentes en un único archivo safetensors que se carga directamente con el nodo "Load Checkpoint" de ComfyUI.
+WAN2.2-14B-Rapid-AllInOne es un modelo de generación de vídeo "todo en uno" creado por Phr00t (publicado también bajo el usuario dongjidaoyi en Hugging Face) que combina el modelo base Wan2.2 de Alibaba con varios aceleradores y adaptaciones de la comunidad, como WAN 2.2 Lightning, SkyReels y VACE. Su objetivo es simplificar el flujo de trabajo de generación de vídeo: en lugar de cargar por separado el modelo de difusión, el CLIP y el VAE, este paquete integra todos los componentes en un único archivo safetensors que se carga directamente con el nodo "Load Checkpoint" de ComfyUI.
 
 El modelo está pensado para ofrecer una generación rápida y de calidad con solo 1 CFG y 4 pasos de muestreo, gracias a la mezcla de aceleradores. Soporta text-to-video, image-to-video, y generación condicionada por primer y último fotograma (incluyendo VACE). Aunque el autor ya no lo mantiene y lo ha declarado deprecado, sigue siendo una opción interesante para quienes buscan un punto de partida sencillo y eficiente con la familia WAN 2.2. El repositorio ocupa 1417,3 GB e incluye múltiples versiones (base, V2 a V10 y MEGA), cada una con ajustes específicos de calidad y comportamiento.
 
@@ -79,7 +79,7 @@ La comparativa se limita a la familia Wan2.2 porque no hay datos suficientes sob
 
 ## Enlaces
 
-- Repositorio HuggingFace (dongjidaoyi): https://huggingface.co/dongjidaoyi/WAN2.2-14B-Rapid-AllInOne
+- Repositorio Hugging Face (dongjidaoyi): https://huggingface.co/dongjidaoyi/WAN2.2-14B-Rapid-AllInOne
 - Repositorio original (Phr00t): https://huggingface.co/Phr00t/WAN2.2-14B-Rapid-AllInOne
 - GitHub de Wan2.2 (Alibaba): https://github.com/Wan-Video/Wan2.2
 - Version GGUF en ModelScope: https://www.modelscope.cn/models/AI-ModelScope/WAN2.2-14B-Rapid-AllInOne-GGUF

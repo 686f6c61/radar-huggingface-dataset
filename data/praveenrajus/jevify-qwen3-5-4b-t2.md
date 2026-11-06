@@ -76,9 +76,9 @@ No se han publicado en la información disponible otros benchmarks (MMLU, HumanE
 
 | Modelo | Tipo | Parámetros añadidos | Licencia | Precisión held-out | ECE held-out | Disponibilidad |
 |---|---|---|---|---|---|---|
-| jevify-qwen3.5-4b-t2 | Decisión local sobre Qwen3.5-4B (Tier 2) | 24.124.939 (cabezas + LoRA r16) | Apache 2.0 | 0,769 | 0,107 | Pesos en HuggingFace |
+| jevify-qwen3.5-4b-t2 | Decisión local sobre Qwen3.5-4B (Tier 2) | 24.124.939 (cabezas + LoRA r16) | Apache 2.0 | 0,769 | 0,107 | Pesos en Hugging Face |
 | Jev 1.13.0 (TypeSafe) | API propietaria, zero-shot | No disponible | No disponible | 0,835 | 0,090 | Solo API |
-| Qwen3.5-4B Tier 0 | Misma receta, sin LoRA ni held-out | No disponible | Apache 2.0 (backbone) | 0,714 | 0,139 | Pesos en HuggingFace |
+| Qwen3.5-4B Tier 0 | Misma receta, sin LoRA ni held-out | No disponible | Apache 2.0 (backbone) | 0,714 | 0,139 | Pesos en Hugging Face |
 
 Frente a Jev 1.13.0, este modelo pierde 0,066 puntos de precisión en fuentes held-out pero gana 0,096 en fuentes vistas en entrenamiento, y en el conjunto completo iguala prácticamente la accuracy macro (0,747 frente a 0,733) con una ECE ligeramente mejor (0,110 frente a 0,113) y una distancia menor a las distribuciones humanas (0,347 frente a 0,432). No se han identificado en la información disponible otros modelos comparables de decisión calibrada de código abierto.
 
@@ -96,7 +96,7 @@ Frente a Jev 1.13.0, este modelo pierde 0,066 puntos de precisión en fuentes he
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Praveenrajus/jevify-qwen3.5-4b-t2
+- Modelo en Hugging Face: https://huggingface.co/Praveenrajus/jevify-qwen3.5-4b-t2
 - Dataset de evaluación jev-bench: https://huggingface.co/datasets/Praveenrajus/jev-bench
 - Modelo base Qwen/Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
 - Repositorio Jevify (código, método y limitaciones): https://github.com/uspraveen/Jevify

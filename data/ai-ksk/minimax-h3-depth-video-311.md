@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AI-KSK/minimax-h3-depth-video-311 | Repositorio de flujos ComfyUI (profundidad a vídeo) | no disponible | no disponible | no disponible | HuggingFace, RunningHub, Civitai |
+| AI-KSK/minimax-h3-depth-video-311 | Repositorio de flujos ComfyUI (profundidad a vídeo) | no disponible | no disponible | no disponible | Hugging Face, RunningHub, Civitai |
 | MiniMax H3 (OpenVDN) | Modelo de generación de vídeo referenciado | no disponible | no disponible | no disponible | referenciado en los flujos, no incluido |
 | DepthCrafter | Modelo de estimación de profundidad por vídeo | no disponible | no disponible | no disponible | referenciado en el flujo 02 |
 | Video Depth Anything (ViT-S) | Modelo de estimación de profundidad por vídeo | no disponible | no disponible | no disponible | `video_depth_anything_vits.pth` referenciado |
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento ni de licencia de estas alternativas en la
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AI-KSK/minimax-h3-depth-video-311
+- Repositorio en Hugging Face: https://huggingface.co/AI-KSK/minimax-h3-depth-video-311
 - Tutorial en YouTube: https://www.youtube.com/watch?v=ETAVoT2e8pM
 - Tutorial en Bilibili: https://www.bilibili.com/video/BV1pPhU6XERp
 - RunningHub internacional, flujo 01: https://www.runninghub.ai/zh-cn/post/2103500778686521345?inviteCode=rh-v1111

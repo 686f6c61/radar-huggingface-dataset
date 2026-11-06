@@ -52,6 +52,6 @@ No disponible. No hay datos que permitan comparar este modelo con alternativas d
 
 ## Enlaces
 
-- [HuggingFace - MrdHF/SD1](https://huggingface.co/MrdHF/SD1)
+- [Hugging Face - MrdHF/SD1](https://huggingface.co/MrdHF/SD1)
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repos, demos) asociados a este modelo.

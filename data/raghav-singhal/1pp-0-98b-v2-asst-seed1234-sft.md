@@ -42,7 +42,7 @@ El ajuste supervisado (SFT) se realizó durante una época sobre una mezcla de 4
 ## Casos de uso
 
 - Investigación sobre condiciones de preentrenamiento: el modelo sirve como eslabón de 0,98B en la escalera v2 para comparar el efecto de la condición "conversaciones reescritas con pérdida en turnos del asistente" frente a otras condiciones y semillas, manteniendo constante el flujo de datos y el orden de batches.
-- Reproducibilidad de estudios de escalado: al estar entrenado desde cero con 20,3 tokens de asistente por parámetro y semilla 1234, permite replicar los resultados del estudio 1PP y verificar la equivalencia entre los pesos de HuggingFace y el checkpoint de Megatron (diferencia absoluta de pérdida 0,0000 en el conjunto sft_val segmentos [3, 4]).
+- Reproducibilidad de estudios de escalado: al estar entrenado desde cero con 20,3 tokens de asistente por parámetro y semilla 1234, permite replicar los resultados del estudio 1PP y verificar la equivalencia entre los pesos de Hugging Face y el checkpoint de Megatron (diferencia absoluta de pérdida 0,0000 en el conjunto sft_val segmentos [3, 4]).
 - Evaluación de la pérdida enmascarada por turnos: útil para analizar cómo la pérdida solo en turnos del asistente afecta a la perplejidad sobre texto de usuario (6,392) frente a texto de asistente (1,549) y texto de documento (3,327).
 - Generación de respuestas conversacionales en inglés en entornos de pruebas: con 0,98B parámetros y contexto de 4.096 tokens, puede desplegarse en una GPU consumer para experimentos de diálogo acotado.
 - Estudio de la dinámica de SFT: la pérdida retenida de SFT (1,972) y la mezcla exacta de 400k conversaciones permiten analizar el efecto del ajuste supervisado sobre un modelo preentrenado con una condición concreta.
@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento comparativo (benchmarks) entre estos model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-0.98b-v2-asst-seed1234-sft
+- Modelo en Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-0.98b-v2-asst-seed1234-sft
 - Colección 1PP: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649
 - Logs de entrenamiento (preentrenamiento): https://wandb.ai/raghav_singhal/1pp-training
 - Logs de entrenamiento (SFT): https://wandb.ai/raghav_singhal/1pp-sft

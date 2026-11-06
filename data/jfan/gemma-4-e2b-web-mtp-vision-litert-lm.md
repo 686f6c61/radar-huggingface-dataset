@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Vision | MTP / decodificacion especulativa | Audio | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| jfan/gemma-4-e2b-web-mtp-vision-litert-lm | Si (encoder fp16 + adaptador) | Si (`tf_lite_mtp_drafter`) | No (eliminado) | `.litertlm` | no disponible | HuggingFace, 0 descargas, 0 likes |
+| jfan/gemma-4-e2b-web-mtp-vision-litert-lm | Si (encoder fp16 + adaptador) | Si (`tf_lite_mtp_drafter`) | No (eliminado) | `.litertlm` | no disponible | Hugging Face, 0 descargas, 0 likes |
 | litert-community/gemma-4-E2B-it-litert-lm | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible | `.litertlm` | no disponible | Repositorio oficial de referencia citado por el autor |
 | gemma-4-E2B-it-web.litertlm (bundle web oficial) | No, es solo texto segun la model card | no disponible | no disponible | `.litertlm` | no disponible | Citado como bundle oficial web |
 | gemma-4-E2B-it (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible | Citado como origen del bundle |
@@ -88,6 +88,6 @@ No se dispone de datos de parametros, contexto ni rendimiento para ninguno de lo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jfan/gemma-4-e2b-web-mtp-vision-litert-lm
+- Repositorio en Hugging Face: https://huggingface.co/jfan/gemma-4-e2b-web-mtp-vision-litert-lm
 - Bundle base citado por el autor: https://huggingface.co/litert-community/gemma-4-E2B-it-litert-lm
 - Papers, blogs, repositorios o demos adicionales: no disponibles. La busqueda web realizada no devolvio resultados relacionados con el modelo.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `zomasec/Qwen2.5-3B-Instruct` es una publicación de terceros (autor `zomasec`) que contiene una variante del modelo Qwen2.5-3B-Instruct desarrollado por el equipo Qwen de Alibaba Cloud. Según los metadatos de HuggingFace, el modelo base declarado es `Qwen/Qwen2.5-3B` con tipo de relación "finetune", y la model card incluida reproduce literalmente la ficha oficial de Qwen2.5-3B-Instruct, sin documentar qué modificación, ajuste o reempaquetado ha realizado el autor sobre los pesos originales. Se trata, por tanto, de una ficha que describe la familia Qwen2.5 y este tamaño concreto, con la advertencia de que la procedencia exacta de los pesos no está documentada por el autor.
+El repositorio `zomasec/Qwen2.5-3B-Instruct` es una publicación de terceros (autor `zomasec`) que contiene una variante del modelo Qwen2.5-3B-Instruct desarrollado por el equipo Qwen de Alibaba Cloud. Según los metadatos de Hugging Face, el modelo base declarado es `Qwen/Qwen2.5-3B` con tipo de relación "finetune", y la model card incluida reproduce literalmente la ficha oficial de Qwen2.5-3B-Instruct, sin documentar qué modificación, ajuste o reempaquetado ha realizado el autor sobre los pesos originales. Se trata, por tanto, de una ficha que describe la familia Qwen2.5 y este tamaño concreto, con la advertencia de que la procedencia exacta de los pesos no está documentada por el autor.
 
 El modelo es un transformer causal decoder-only de 3.085.938.688 parámetros totales (2,77B no pertenecientes a los embeddings), con 36 capas, atención GQA (16 cabezas de consulta y 2 de clave/valor) y embeddings de palabras atados. Está entrenado en dos fases (preentrenamiento y post-entrenamiento) sobre un corpus de hasta 18 billones de tokens de Alibaba, y su model card declara una longitud de contexto completa de 32.768 tokens con generación de hasta 8.192 tokens, aunque el texto introductorio de la misma ficha menciona soporte de hasta 128K tokens, lo que supone una discrepancia interna que conviene verificar.
 
@@ -36,7 +36,7 @@ Las innovaciones que la propia ficha destaca respecto a Qwen2 son: mayor conocim
 - Generación de textos largos, por encima de 8K tokens según la documentación de la familia.
 - Capacidades multilingües declaradas para más de 29 idiomas en la ficha de la familia, aunque los metadatos de este repositorio concreto solo etiquetan inglés.
 - Uso como base para role-play y condicionamiento de comportamiento mediante system prompts diversos.
-- Compatibilidad declarada con `text-generation-inference` y con `endpoints_compatible` (etiqueta de HuggingFace), lo que facilita su despliegue en infraestructura gestionada.
+- Compatibilidad declarada con `text-generation-inference` y con `endpoints_compatible` (etiqueta de Hugging Face), lo que facilita su despliegue en infraestructura gestionada.
 - No se documenta soporte de tool calling o function calling nativo, ni capacidades de visión, audio o modo "thinking" explícito en la información disponible.
 
 ## Casos de uso
@@ -63,18 +63,18 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Cabe en GPU de consumo: sí, en la práctica totalidad de GPU modernas con 6 GB o más de VRAM usando cuantización; en bf16 requiere al menos 8 GB de VRAM libre.
 - Memoria unificada: viable en Apple Silicon con 16 GB o más mediante llama.cpp u Ollama.
 - CPU: ejecutable en CPU con llama.cpp y cuantizaciones GGUF, con latencias notablemente superiores.
-- Opciones de despliegue: `transformers` (librería declarada en los metadatos), vLLM, Text Generation Inference (etiqueta `text-generation-inference`), llama.cpp, Ollama (existe una entrada `qwen2.5:3b-instruct` en el catálogo de Ollama) y servicios compatibles con endpoints de HuggingFace. La etiqueta `endpoints_compatible` sugiere compatibilidad con la API de mensajes tipo OpenAI.
+- Opciones de despliegue: `transformers` (librería declarada en los metadatos), vLLM, Text Generation Inference (etiqueta `text-generation-inference`), llama.cpp, Ollama (existe una entrada `qwen2.5:3b-instruct` en el catálogo de Ollama) y servicios compatibles con endpoints de Hugging Face. La etiqueta `endpoints_compatible` sugiere compatibilidad con la API de mensajes tipo OpenAI.
 - Latencia y throughput: no disponible. La ficha remite a la página de benchmarks de velocidad de la documentación de Qwen, pero no se han proporcionado cifras concretas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| zomasec/Qwen2.5-3B-Instruct (esta ficha) | 3,09B | 32.768 tokens según model card; hasta 128K citado en la familia | qwen-research | HuggingFace, safetensors |
-| Qwen/Qwen2.5-3B-Instruct (oficial) | 3,09B | 32.768 tokens según model card | qwen-research | HuggingFace, safetensors, integraciones de terceros |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,54B | 32.768 tokens (ficha oficial) | Apache 2.0 (ficha oficial) | HuggingFace, GGUF, Ollama |
-| Qwen/Qwen2.5-7B-Instruct | 7,62B | 128K tokens (ficha oficial) | Apache 2.0 (ficha oficial) | HuggingFace, GGUF, Ollama, vLLM |
-| Llama-3.2-3B-Instruct | 3,21B | 128K tokens (ficha oficial) | Licencia comunitaria de Llama 3.2 | HuggingFace, GGUF, Ollama |
+| zomasec/Qwen2.5-3B-Instruct (esta ficha) | 3,09B | 32.768 tokens según model card; hasta 128K citado en la familia | qwen-research | Hugging Face, safetensors |
+| Qwen/Qwen2.5-3B-Instruct (oficial) | 3,09B | 32.768 tokens según model card | qwen-research | Hugging Face, safetensors, integraciones de terceros |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,54B | 32.768 tokens (ficha oficial) | Apache 2.0 (ficha oficial) | Hugging Face, GGUF, Ollama |
+| Qwen/Qwen2.5-7B-Instruct | 7,62B | 128K tokens (ficha oficial) | Apache 2.0 (ficha oficial) | Hugging Face, GGUF, Ollama, vLLM |
+| Llama-3.2-3B-Instruct | 3,21B | 128K tokens (ficha oficial) | Licencia comunitaria de Llama 3.2 | Hugging Face, GGUF, Ollama |
 
 Nota: los datos de los modelos competidores proceden de sus fichas oficiales y se incluyen como referencia; conviene verificarlos antes de tomar decisiones de licenciamiento. No se dispone de cifras comparativas de rendimiento (MMLU, HumanEval, GSM8K) en la información proporcionada para ninguno de ellos. La diferencia más relevante de esta publicación frente al repositorio oficial es la licencia y la trazabilidad: el repositorio oficial de Qwen2.5-3B-Instruct también usa la licencia `qwen-research`, mientras que los tamaños 1.5B y 7B de la misma familia se distribuyen bajo Apache 2.0, lo que suele decantar la elección hacia esos tamaños en proyectos comerciales.
 
@@ -92,7 +92,7 @@ Nota: los datos de los modelos competidores proceden de sus fichas oficiales y s
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/zomasec/Qwen2.5-3B-Instruct
+- Repositorio en Hugging Face: https://huggingface.co/zomasec/Qwen2.5-3B-Instruct
 - Modelo oficial Qwen2.5-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Modelo base oficial Qwen2.5-3B: https://huggingface.co/Qwen/Qwen2.5-3B
 - Licencia de Qwen2.5-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct/blob/main/LICENSE

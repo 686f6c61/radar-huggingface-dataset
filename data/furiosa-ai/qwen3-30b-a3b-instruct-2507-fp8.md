@@ -78,7 +78,7 @@ La diferencia principal frente a la variante Thinking es que esta version instru
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/furiosa-ai/Qwen3-30B-A3B-Instruct-2507-FP8
+- Repositorio Hugging Face: https://huggingface.co/furiosa-ai/Qwen3-30B-A3B-Instruct-2507-FP8
 - Modelo base upstream: https://huggingface.co/Qwen/Qwen3-30B-A3B-Instruct-2507-FP8
 - Variante Thinking: https://huggingface.co/furiosa-ai/Qwen3-30B-A3B-Thinking-2507-FP8
 - Documentacion Furiosa-LLM (Qwen3-MoE): https://developer.furiosa.ai/v2026.4.0/en/furiosa_llm/models/qwen3-moe.html

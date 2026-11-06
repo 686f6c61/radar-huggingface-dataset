@@ -2,7 +2,7 @@
 
 ## Resumen
 
-aros-f4797dbb-RadiantVesper es un adaptador LoRA de tipo DreamBooth para el modelo de difusion texto-a-imagen Krea 2. Lo publica el usuario guillekenzo en HuggingFace y su unico proposito es ensenar al modelo base un concepto visual concreto, invocable mediante el token de activacion `jfx woman`. No es un modelo autonomo: necesita cargarse sobre Krea 2 para generar imagenes.
+aros-f4797dbb-RadiantVesper es un adaptador LoRA de tipo DreamBooth para el modelo de difusion texto-a-imagen Krea 2. Lo publica el usuario guillekenzo en Hugging Face y su unico proposito es ensenar al modelo base un concepto visual concreto, invocable mediante el token de activacion `jfx woman`. No es un modelo autonomo: necesita cargarse sobre Krea 2 para generar imagenes.
 
 El adaptador se entrena sobre Krea 2 RAW y se muestra funcionando sobre Krea 2 Turbo, la variante que permite generar con solo 8 pasos de inferencia y `guidance_scale=0.0`. Se distribuye bajo licencia Apache 2.0, con la libreria diffusers y el pipeline `text-to-image`, y ocupa 1,5 GB en el repositorio.
 
@@ -73,10 +73,10 @@ No se dispone de datos de rendimiento ni de parametros de los modelos comparable
 
 | Modelo | Tipo | Modelo base | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| guillekenzo/aros-f4797dbb-RadiantVesper | Adaptador LoRA de concepto | krea/Krea-2-Raw | Apache 2.0 | HuggingFace, 0 descargas, 1 like |
-| krea/Krea-2-Raw | Modelo de difusion texto-a-imagen | no aplica | no disponible en la informacion | HuggingFace |
-| krea/Krea-2-Turbo | Variante de inferencia rapida (8 pasos) | Krea-2-Raw (presumiblemente) | no disponible en la informacion | HuggingFace |
-| Otros adaptadores sobre Krea-2-Raw | Adaptadores LoRA de terceros | krea/Krea-2-Raw | no disponible | Listados en el indice de adaptadores de HuggingFace |
+| guillekenzo/aros-f4797dbb-RadiantVesper | Adaptador LoRA de concepto | krea/Krea-2-Raw | Apache 2.0 | Hugging Face, 0 descargas, 1 like |
+| krea/Krea-2-Raw | Modelo de difusion texto-a-imagen | no aplica | no disponible en la informacion | Hugging Face |
+| krea/Krea-2-Turbo | Variante de inferencia rapida (8 pasos) | Krea-2-Raw (presumiblemente) | no disponible en la informacion | Hugging Face |
+| Otros adaptadores sobre Krea-2-Raw | Adaptadores LoRA de terceros | krea/Krea-2-Raw | no disponible | Listados en el indice de adaptadores de Hugging Face |
 
 No se dispone de alternativas comparables con datos de parametros, contexto o rendimiento para establecer una comparacion cuantitativa.
 
@@ -95,8 +95,8 @@ No se dispone de alternativas comparables con datos de parametros, contexto o re
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/guillekenzo/aros-f4797dbb-RadiantVesper
+- Pagina del modelo en Hugging Face: https://huggingface.co/guillekenzo/aros-f4797dbb-RadiantVesper
 - Modelo base Krea 2 RAW: https://huggingface.co/krea/Krea-2-Raw
-- Indice de adaptadores sobre krea/Krea-2-Raw en HuggingFace: https://huggingface.co/models?other=base_model:adapter:krea/Krea-2-Raw
+- Indice de adaptadores sobre krea/Krea-2-Raw en Hugging Face: https://huggingface.co/models?other=base_model:adapter:krea/Krea-2-Raw
 - Libreria diffusers: https://github.com/huggingface/diffusers
 - Documentacion de carga de LoRA en diffusers: https://huggingface.co/docs/diffusers/main/en/using-diffusers/loading_adapters

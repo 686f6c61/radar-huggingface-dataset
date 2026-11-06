@@ -100,7 +100,7 @@ Frente a estas alternativas, la ventaja diferencial de este checkpoint es la ven
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sam33339999/Qwen3.8-27B-Coder390-MTP-Exl3-3.5bpw
+- Repositorio en Hugging Face: https://huggingface.co/sam33339999/Qwen3.8-27B-Coder390-MTP-Exl3-3.5bpw
 - Modelo base (pesos BF16, benchmarks y metodo de entrenamiento): https://huggingface.co/nerkyor/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-MTP-DFlash2
 - Modelo borrador alternativo DFlash2-EXL3-5.0bpw: referenciado en la model card como repositorio del mismo autor, sin URL explicita en la informacion disponible
 - Paper, blog, demo o repositorio de codigo adicionales: no disponible; la busqueda web no devolvio resultados relevantes

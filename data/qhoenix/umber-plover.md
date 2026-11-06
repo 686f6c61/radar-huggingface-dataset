@@ -85,7 +85,7 @@ Cifras de parametros redondeadas a partir de las implementaciones de referencia 
 
 | Modelo | Parametros | Entrada | Clases | Entrenamiento adversarial | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| qhoenix/umber-plover | 119,0 M | 480x480 | 1000 | Si (sin detalle ni metricas) | apache-2.0 | HuggingFace |
+| qhoenix/umber-plover | 119,0 M | 480x480 | 1000 | Si (sin detalle ni metricas) | apache-2.0 | Hugging Face |
 | torchvision efficientnet_v2_l (ImageNet-1k) | 118,7 M | 480x480 | 1000 | No | BSD-3-Clause (torchvision) | torchvision |
 | torchvision efficientnet_v2_m (ImageNet-1k) | 54,1 M | 480x480 | 1000 | No | BSD-3-Clause (torchvision) | torchvision |
 | torchvision convnext_base (ImageNet-1k) | 88,6 M | 224x224 | 1000 | No | BSD-3-Clause (torchvision) | torchvision |
@@ -108,8 +108,8 @@ La diferencia funcional de umber-plover respecto a los tres comparadores es el a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qhoenix/umber-plover
-- Perfil del autor en HuggingFace: https://huggingface.co/qhoenix
+- Modelo en Hugging Face: https://huggingface.co/qhoenix/umber-plover
+- Perfil del autor en Hugging Face: https://huggingface.co/qhoenix
 - Subnet Perturb (Bittensor, netuid 26): https://perturbai.io
 - No se han encontrado papers, blogs ni repositorios adicionales especificos de este modelo en los resultados de busqueda disponibles.
 - Resultados de busqueda no relacionados con este modelo (sin vinculacion conocida): https://benchlm.ai/, https://umber.s4.nu/, https://mimo.mi.com/models/en-US/mimo-v2.6-pro, https://jevmodel.org/

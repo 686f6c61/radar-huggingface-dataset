@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `arnauld-a/griot-lora-ewe-turbo-v3` | no disponible (adaptador LoRA) | no disponible | no disponible | HuggingFace |
-| `openai/whisper-large-v3-turbo` | ~809 M | ventanas de audio de 30 s | MIT | HuggingFace |
-| `openai/whisper-large-v3` | ~1550 M | ventanas de audio de 30 s | MIT | HuggingFace |
+| `arnauld-a/griot-lora-ewe-turbo-v3` | no disponible (adaptador LoRA) | no disponible | no disponible | Hugging Face |
+| `openai/whisper-large-v3-turbo` | ~809 M | ventanas de audio de 30 s | MIT | Hugging Face |
+| `openai/whisper-large-v3` | ~1550 M | ventanas de audio de 30 s | MIT | Hugging Face |
 
 El adaptador no es un modelo autonomo: depende del modelo base `whisper-large-v3-turbo` para funcionar. Comparado con `whisper-large-v3`, la variante turbo es mas ligera y rapida, aunque puede tener una precision ligeramente inferior. No se dispone de datos que permitan comparar el rendimiento del adaptador con otros adaptadores LoRA similares.
 

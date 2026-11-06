@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El pr
 
 | Modelo | Parametros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| oliwiak4min/mixer-checkpoint94-2024 | 49.600 | no disponible | no | apache-2.0 | HuggingFace |
+| oliwiak4min/mixer-checkpoint94-2024 | 49.600 | no disponible | no | apache-2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de modelos comparables directos en la informacion proporcionada. Al tratarse de un checkpoint de inicializacion sin entrenar y de una implementacion propia, no resulta equiparable a modelos publicados y evaluados de la misma categoria. Cualquier comparacion requeriria entrenar previamente este modelo y fijar una linea base de capacidad equivalente.
@@ -82,4 +82,4 @@ No se dispone de modelos comparables directos en la informacion proporcionada. A
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oliwiak4min/mixer-checkpoint94-2024
+- Modelo en Hugging Face: https://huggingface.co/oliwiak4min/mixer-checkpoint94-2024

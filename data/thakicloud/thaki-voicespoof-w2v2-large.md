@@ -84,9 +84,9 @@ Debilidades por ataque documentadas: algunos ataques se aceptan con frecuencia (
 
 | Modelo | Parametros | Contexto de audio | minDCF Eval | EER Eval | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Thaki-VoiceSpoof-W2V2-Large | 315,8 M | 4,04 s (64.600 muestras a 16 kHz) | 0,1995 | 8,06 % | Apache 2.0 | HuggingFace, research preview |
+| Thaki-VoiceSpoof-W2V2-Large | 315,8 M | 4,04 s (64.600 muestras a 16 kHz) | 0,1995 | 8,06 % | Apache 2.0 | Hugging Face, research preview |
 | AASIST (baseline oficial ASVspoof 5) | no disponible en la informacion | no disponible en la informacion | 0,6674 | 28,11 % | no disponible en la informacion | checkpoint oficial de ASVspoof 5 |
-| wav2vec2-large (modelo base) | 315,8 M aprox. | no disponible en la informacion | no aplica (no es contramedida) | no aplica | Apache 2.0 | HuggingFace |
+| wav2vec2-large (modelo base) | 315,8 M aprox. | no disponible en la informacion | no aplica (no es contramedida) | no aplica | Apache 2.0 | Hugging Face |
 
 La comparacion con AASIST es entre un sistema Open-condition (con preentrenamiento externo en LibriSpeech) y un baseline Closed-condition (solo datos de ASVspoof 5), por lo que debe interpretarse como comparacion de sistemas bajo este protocolo y no como evidencia de superioridad arquitectonica en igualdad de recursos. No se dispone de datos de otros modelos comparables en la informacion proporcionada.
 
@@ -106,7 +106,7 @@ La comparacion con AASIST es entre un sistema Open-condition (con preentrenamien
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ThakiCloud/Thaki-VoiceSpoof-W2V2-Large
+- Hugging Face: https://huggingface.co/ThakiCloud/Thaki-VoiceSpoof-W2V2-Large
 - Model card en coreano: https://huggingface.co/ThakiCloud/Thaki-VoiceSpoof-W2V2-Large/blob/main/MODEL_CARD.ko.md
 - Modelo base: https://huggingface.co/facebook/wav2vec2-large
 - Dataset de entrenamiento: https://huggingface.co/datasets/jungjee/asvspoof5

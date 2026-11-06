@@ -75,7 +75,7 @@ No hay datos de rendimiento comparables publicados para este checkpoint, y la ta
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| prabhasa-nyaya 3B (arm_c_ordervol_discrim16) | 3,09 mil M | no disponible (base Qwen2.5-3B) | Pruebas formales en Lean sobre 14 lecturas penales indias | qwen-research (no comercial) | HuggingFace, 0 descargas |
+| prabhasa-nyaya 3B (arm_c_ordervol_discrim16) | 3,09 mil M | no disponible (base Qwen2.5-3B) | Pruebas formales en Lean sobre 14 lecturas penales indias | qwen-research (no comercial) | Hugging Face, 0 descargas |
 | Qwen/Qwen2.5-3B (base) | 3,09 mil M | 32.768 tokens (131.072 con YaRN) | Generacion de texto general | Apache 2.0 (segun el modelo original de Qwen) | Ampliamente disponible |
 | Qwen/Qwen2.5-3B-Instruct | 3,09 mil M | 32.768 tokens (131.072 con YaRN) | Instrucciones y dialogo | Apache 2.0 (segun el modelo original de Qwen) | Ampliamente disponible |
 | Llama-3.2-3B | 3,21 mil M | 128.000 tokens | Generacion de texto e instrucciones | Llama 3.2 Community License | Ampliamente disponible |
@@ -98,7 +98,7 @@ La comparación relevante no es de rendimiento general sino de encaje: frente a 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AxisMeru/prabhasa-nyaya-step2-sft-arm-c-discrim16
+- Hugging Face: https://huggingface.co/AxisMeru/prabhasa-nyaya-step2-sft-arm-c-discrim16
 - Repositorio de datos de entrenamiento (privado, citado por el autor): `AxisMeru/prabhasa-nyaya`
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B
 - Archivos de métricas citados en la model card: `training_metrics.json`, `eval_summary.json`

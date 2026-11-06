@@ -72,7 +72,7 @@ No disponible. No se han encontrado comparaciones publicas con otros modelos cli
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/philgear/philgear
+- Repositorio en Hugging Face: https://huggingface.co/philgear/philgear
 - Modelo compass-2b: https://huggingface.co/philgear/pocketgull-compass-2b
 - Modelo albatross-multimodal: https://huggingface.co/philgear/pocketgull-albatross-multimodal
 - Space WebGPU: https://huggingface.co/spaces/philgear/pocketgull-webgpu-edge

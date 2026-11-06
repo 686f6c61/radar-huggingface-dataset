@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Naturaleza | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| es-hetero/ckpt-cdnoise | Checkpoints ES (brazo L1) sobre Qwen2.5-7B-Instruct | no disponible | no disponible en la informacion proporcionada | apache-2.0 | HuggingFace, 0 descargas, sin safetensors ni GGUF |
+| es-hetero/ckpt-cdnoise | Checkpoints ES (brazo L1) sobre Qwen2.5-7B-Instruct | no disponible | no disponible en la informacion proporcionada | apache-2.0 | Hugging Face, 0 descargas, sin safetensors ni GGUF |
 | Qwen2.5-7B-Instruct | Modelo instructivo completo | 7B (familia Qwen2.5) | no disponible en la informacion proporcionada | apache-2.0 | Ampliamente distribuido |
 | Otros brazos del estudio (`fixed`, `fresh`, `mirror`, `mirror-v3`) | Checkpoints ES del mismo estudio | no disponible | no disponible | apache-2.0 (presumible) | Repositorio `akshat57/es-heterogeneity` |
 
@@ -85,7 +85,7 @@ Datos de rendimiento comparativos: no disponibles.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/es-hetero/ckpt-cdnoise
+- Hugging Face: https://huggingface.co/es-hetero/ckpt-cdnoise
 - Repositorio del estudio "learning while serving" (ES heterogeneity): https://github.com/akshat57/es-heterogeneity
 - Modelo base Qwen2.5-7B-Instruct (referenciado en la model card, sin enlace directo proporcionado en la busqueda): no disponible
 - Papers, blogs o demos adicionales: no disponibles en los resultados de busqueda (los resultados devueltos correspondian a sitios no relacionados, en su mayoria de una comercializadora electrica francesa).

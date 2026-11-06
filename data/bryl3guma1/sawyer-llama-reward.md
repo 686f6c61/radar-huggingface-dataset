@@ -2,11 +2,11 @@
 
 ## Resumen
 
-sawyer-llama-reward es un modelo de clasificación de texto publicado en HuggingFace por el usuario bryl3guma1 bajo el identificador `bryl3guma1/sawyer-llama-reward`. Por sus etiquetas de repositorio (`transformers`, `roberta`, `text-classification`, `text-embeddings-inference`, `endpoints_compatible`) se trata de un encoder transformer de la familia RoBERTa reutilizado como modelo de recompensa (reward model), es decir, un clasificador que asigna una puntuación escalar a una respuesta o a un par prompt-respuesta para guiar un proceso de RLHF/DPO o para filtrar datos de entrenamiento.
+sawyer-llama-reward es un modelo de clasificación de texto publicado en Hugging Face por el usuario bryl3guma1 bajo el identificador `bryl3guma1/sawyer-llama-reward`. Por sus etiquetas de repositorio (`transformers`, `roberta`, `text-classification`, `text-embeddings-inference`, `endpoints_compatible`) se trata de un encoder transformer de la familia RoBERTa reutilizado como modelo de recompensa (reward model), es decir, un clasificador que asigna una puntuación escalar a una respuesta o a un par prompt-respuesta para guiar un proceso de RLHF/DPO o para filtrar datos de entrenamiento.
 
-El checkpoint contiene 124.646.401 parámetros (dato real leído de los ficheros safetensors, según la ficha de HuggingFace), un orden de magnitud equivalente al de RoBERTa-base (aproximadamente 125 millones), lo que lo sitúa en la gama de modelos ligeros que se pueden ejecutar en una única GPU de consumo incluso en fp32. El repositorio ocupa 0.5 GB y no acumula descargas ni likes en el momento de la consulta, lo que indica que es un artefacto reciente o de circulación muy limitada.
+El checkpoint contiene 124.646.401 parámetros (dato real leído de los ficheros safetensors, según la ficha de Hugging Face), un orden de magnitud equivalente al de RoBERTa-base (aproximadamente 125 millones), lo que lo sitúa en la gama de modelos ligeros que se pueden ejecutar en una única GPU de consumo incluso en fp32. El repositorio ocupa 0.5 GB y no acumula descargas ni likes en el momento de la consulta, lo que indica que es un artefacto reciente o de circulación muy limitada.
 
-A pesar del sufijo "llama" en el nombre, la arquitectura declarada en las etiquetas es RoBERTa y la tarea es de clasificación, no de generación de texto. La model card es la plantilla automática de HuggingFace y no está cumplimentada: no hay información sobre datos de entrenamiento, licencia, idiomas, hiperparámetros ni evaluación, por lo que cualquier uso en producción exige una validación previa por parte del integrador. Existen copias con el mismo nombre en otros espacios (`cjcjee/sawyer-llama-reward`, `profoz/sawyer-llama-reward`), lo que sugiere réplicas de un mismo artefacto base.
+A pesar del sufijo "llama" en el nombre, la arquitectura declarada en las etiquetas es RoBERTa y la tarea es de clasificación, no de generación de texto. La model card es la plantilla automática de Hugging Face y no está cumplimentada: no hay información sobre datos de entrenamiento, licencia, idiomas, hiperparámetros ni evaluación, por lo que cualquier uso en producción exige una validación previa por parte del integrador. Existen copias con el mismo nombre en otros espacios (`cjcjee/sawyer-llama-reward`, `profoz/sawyer-llama-reward`), lo que sugiere réplicas de un mismo artefacto base.
 
 ## Especificaciones tecnicas
 
@@ -27,7 +27,7 @@ A pesar del sufijo "llama" en el nombre, la arquitectura declarada en las etique
 
 ## Arquitectura y entrenamiento
 
-La información disponible solo permite afirmar que se trata de un encoder transformer con cabecera de clasificación, etiquetado como RoBERTa en el Hub de HuggingFace. RoBERTa (Liu et al., 2019) es una variante de BERT entrenada de forma más extensa y con objetivos de enmascaramiento dinámico, sin la tarea de predicción de siguiente frase. Aplicado a text-classification, el modelo produce logits por secuencia que, en un modelo de recompensa, se interpretan como una puntuación de calidad o preferencia.
+La información disponible solo permite afirmar que se trata de un encoder transformer con cabecera de clasificación, etiquetado como RoBERTa en el Hub de Hugging Face. RoBERTa (Liu et al., 2019) es una variante de BERT entrenada de forma más extensa y con objetivos de enmascaramiento dinámico, sin la tarea de predicción de siguiente frase. Aplicado a text-classification, el modelo produce logits por secuencia que, en un modelo de recompensa, se interpretan como una puntuación de calidad o preferencia.
 
 No hay datos publicados sobre el corpus de entrenamiento, el número de tokens vistos, la composición del dataset, la existencia de fases de RLHF, DPO o aprendizaje por pares de preferencias, ni sobre los hiperparámetros utilizados. La model card no cumple ningún apartado: todos los campos figuran como `[More Information Needed]`. Tampoco se documenta ninguna innovación técnica (atención lineal, decodificación especulativa u otras), algo coherente con un encoder estándar de 125 millones de parámetros. La etiqueta `arxiv:1910.09700` que aparece en los tags del repositorio corresponde al artículo de Lacoste et al. sobre el cálculo del impacto ambiental en carbono, citado en la plantilla automática de la model card, y no a un paper metodológico del modelo.
 
@@ -52,7 +52,7 @@ No hay datos publicados sobre el corpus de entrenamiento, el número de tokens v
 - Clasificación de texto general: al ser un text-classifier, puede reentrenarse con una cabeza nueva para tareas como análisis de sentimiento o detección de toxicidad, siempre que se valide su tokenizador y dominio.
 - Generación de embeddings para búsqueda semántica: la etiqueta `text-embeddings-inference` apunta a un posible uso como encoder para recuperación, aunque la ficha no confirma que se hayan publicado pesos en formato TEI.
 - Investigación educativa: los repositorios `foundations-of-gen-ai` y `start-guide-to-llms` incluyen cuadernos (`SAWYER_LLAMA_SFT.ipynb`, `10_SAWYER_Reward_Model.ipynb`) que usan el nombre "SAWYER" en el contexto de modelos de recompensa, lo que sugiere que este checkpoint puede emplearse como material didáctico para ilustrar el entrenamiento de un reward model.
-- Despliegue en endpoints serverless: gracias a su tamaño, encaja en instancias pequeñas de HuggingFace Inference Endpoints para servir una API de scoring interna.
+- Despliegue en endpoints serverless: gracias a su tamaño, encaja en instancias pequeñas de Hugging Face Inference Endpoints para servir una API de scoring interna.
 
 En todos estos casos, la ausencia de ficha y de evaluación publicada obliga a realizar una validación empírica antes de cualquier despliegue real.
 
@@ -66,17 +66,17 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM; una RTX 3060, RTX 4060, RTX 4090, T4, L4, A10G, A100 o H100 son más que suficientes. El modelo es claramente sobredimensionado para el hardware típico de un datacenter pequeño.
 - GPU de consumo: sí, cabe sin dificultad en cualquier GPU de consumo moderna e incluso en GPUs integradas con más de 2 GB de memoria compartida disponibles.
 - CPU: viable para inferencia en lote moderado; el cuello de botella será el throughput más que la memoria.
-- Opciones de despliegue: `transformers` con `pipeline("text-classification")`; Text Embeddings Inference (según etiqueta); HuggingFace Inference Endpoints (según etiqueta `endpoints_compatible`); ONNX Runtime, vLLM o llama.cpp no están confirmados para esta arquitectura de encoder.
+- Opciones de despliegue: `transformers` con `pipeline("text-classification")`; Text Embeddings Inference (según etiqueta); Hugging Face Inference Endpoints (según etiqueta `endpoints_compatible`); ONNX Runtime, vLLM o llama.cpp no están confirmados para esta arquitectura de encoder.
 - Latencia y throughput: no disponibles. No se han publicado mediciones. Como referencia de orden de magnitud, un encoder de 125 millones de parámetros suele procesar cientos o miles de secuencias por segundo en una GPU moderna con batches grandes, pero este dato no está verificado para este checkpoint.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bryl3guma1/sawyer-llama-reward | 124.646.401 | No disponible | Encoder RoBERTa + cabeza de clasificación (reward model) | No disponible | HuggingFace, 0 descargas |
-| cjcjee/sawyer-llama-reward | No disponible | No disponible | Mismo nombre, sin model card | No disponible | HuggingFace, 0 likes |
-| profoz/sawyer-llama-reward | No disponible | No disponible | Text classification, RoBERTa, safetensors | No disponible | HuggingFace, 0 likes |
-| roberta-base (referencia arquitectónica) | Aproximadamente 125 millones (documentación pública) | 512 tokens (documentación pública) | Encoder transformer con cabecera MLM | MIT (documentación pública) | HuggingFace, ampliamente utilizado |
+| bryl3guma1/sawyer-llama-reward | 124.646.401 | No disponible | Encoder RoBERTa + cabeza de clasificación (reward model) | No disponible | Hugging Face, 0 descargas |
+| cjcjee/sawyer-llama-reward | No disponible | No disponible | Mismo nombre, sin model card | No disponible | Hugging Face, 0 likes |
+| profoz/sawyer-llama-reward | No disponible | No disponible | Text classification, RoBERTa, safetensors | No disponible | Hugging Face, 0 likes |
+| roberta-base (referencia arquitectónica) | Aproximadamente 125 millones (documentación pública) | 512 tokens (documentación pública) | Encoder transformer con cabecera MLM | MIT (documentación pública) | Hugging Face, ampliamente utilizado |
 
 No se dispone de datos de rendimiento comparativo (benchmarks) para ninguno de los checkpoints derivados. Las cifras de `roberta-base` proceden de su documentación pública y se incluyen únicamente como referencia arquitectónica, no como resultado de una evaluación de este modelo. Otros modelos de recompensa de la misma categoría no se han podido verificar en la información proporcionada.
 
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento comparativo (benchmarks) para ninguno de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bryl3guma1/sawyer-llama-reward
+- Modelo en Hugging Face: https://huggingface.co/bryl3guma1/sawyer-llama-reward
 - Copia alternativa: https://huggingface.co/cjcjee/sawyer-llama-reward
 - Copia alternativa: https://huggingface.co/profoz/sawyer-llama-reward
 - Cuaderno de SFT relacionado: https://github.com/sinanuozdemir/foundations-of-gen-ai/blob/main/notebooks/SAWYER_LLAMA_SFT.ipynb

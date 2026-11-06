@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ove3-ladder-440m-exp512-seed4321` es un checkpoint de investigación publicado por el usuario gabe-adib en HuggingFace. Se trata de una única ejecución ("run") de la denominada escalera de intervención ove3, concretamente la segunda semilla (seed 4321) de una celda IsoFLOP de 440M parámetros. El modelo es un MoE de arquitectura etiquetada por el autor como `kimi_linear`, con 440M parámetros activos, 512 expertos enrutados (el doble que el control, que usa 256) y enrutamiento top-8. La receta de entrenamiento (datos, learning rate, batch y número de pasos) es idéntica a la de la celda de 440M del resto de la escalera, de modo que la intervención aislada es el número de expertos.
+`ove3-ladder-440m-exp512-seed4321` es un checkpoint de investigación publicado por el usuario gabe-adib en Hugging Face. Se trata de una única ejecución ("run") de la denominada escalera de intervención ove3, concretamente la segunda semilla (seed 4321) de una celda IsoFLOP de 440M parámetros. El modelo es un MoE de arquitectura etiquetada por el autor como `kimi_linear`, con 440M parámetros activos, 512 expertos enrutados (el doble que el control, que usa 256) y enrutamiento top-8. La receta de entrenamiento (datos, learning rate, batch y número de pasos) es idéntica a la de la celda de 440M del resto de la escalera, de modo que la intervención aislada es el número de expertos.
 
 No es un modelo listo para producción ni una release al uso: el repositorio contiene el checkpoint distribuido de Megatron tal cual se guardó, **incluyendo el estado del optimizador**, además de los logs de entrenamiento, los logs de scoring, los eventos de TensorBoard y el `config.yaml` de la ejecución. El repositorio ocupa 138,5 GB, un tamaño coherente con artefactos de entrenamiento más que con pesos de inferencia.
 
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la información disponible. Los 
 - Estimación por parámetros activos: con 440M parámetros activos, los pesos en bf16 ocuparían aproximadamente 0,88 GB y en fp32 unos 1,76 GB, pero el total de parámetros del modelo (512 expertos enrutados con top-8) no está publicado, de modo que la VRAM total no se puede calcular.
 - GPU recomendadas: no disponible. Por el tamaño de parámetros activos, una GPU de consumo como una RTX 4090 (24 GB) o una RTX 3090 (24 GB) sería suficiente para los pesos activos si el total de parámetros fuese moderado; los expertos no activos también deben residir en memoria, lo que puede elevar el requisito muy por encima de esa cifra. No hay datos para confirmarlo.
 - Cabe en GPU de consumo: no confirmado.
-- Opciones de despliegue: el checkpoint está en formato distribuido de Megatron, por lo que requiere Megatron-LM o una conversión previa a formato HuggingFace. No se publican safetensors ni GGUF, así que llama.cpp, Ollama y LM Studio no pueden cargarlo directamente. El soporte en vLLM o TGI dependería de que exista implementación para la arquitectura `kimi_linear`, extremo no confirmado.
+- Opciones de despliegue: el checkpoint está en formato distribuido de Megatron, por lo que requiere Megatron-LM o una conversión previa a formato Hugging Face. No se publican safetensors ni GGUF, así que llama.cpp, Ollama y LM Studio no pueden cargarlo directamente. El soporte en vLLM o TGI dependería de que exista implementación para la arquitectura `kimi_linear`, extremo no confirmado.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -102,5 +102,5 @@ La única comparación documentada es interna a la escalera ove3: misma celda Is
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gabe-adib/ove3-ladder-440m-exp512-seed4321
+- Hugging Face: https://huggingface.co/gabe-adib/ove3-ladder-440m-exp512-seed4321
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo, a la receta ove3, a la arquitectura `kimi_linear` ni a papers asociados; los resultados devueltos no guardan relación con el modelo y se descartan.

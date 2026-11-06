@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la información disponible. Este
 - El tamaño del repositorio es de 127.7 GB en bf16, lo que indica que cada checkpoint ocupa aproximadamente 3 GB (43 checkpoints).
 - Para inferencia de un solo checkpoint en bf16, se necesita aproximadamente 2 GB de VRAM para los pesos, más overhead de activaciones y memoria del framework (recomendable al menos 4 GB de VRAM).
 - GPU recomendadas: cualquier GPU con 8 GB o más de VRAM (por ejemplo, RTX 3070, RTX 4060, A100, H100) puede cargar un checkpoint individual; para cargar los 43 checkpoints de forma secuencial se requiere almacenamiento local de unos 128 GB.
-- Opciones de despliegue: se puede usar con transformers de HuggingFace, vLLM o llama.cpp, aunque al ser un checkpoint de investigación no se recomienda su uso en producción.
+- Opciones de despliegue: se puede usar con transformers de Hugging Face, vLLM o llama.cpp, aunque al ser un checkpoint de investigación no se recomienda su uso en producción.
 - Latencia y throughput: no disponibles para este checkpoint específico; el modelo base OLMo-2-1B en una GPU A100 tiene un throughput de aproximadamente 2.000 tokens/s con batch de 32 y secuencia de 2048 tokens, pero no se ha medido para estos checkpoints.
 
 ## Comparativa con modelos similares
@@ -74,8 +74,8 @@ La principal diferencia entre este repositorio y el modelo base es que aquí se 
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/arkilpatel/olmo2-1b-traj-s1-2496b)
-- [Modelo base OLMo-2-1B en HuggingFace](https://huggingface.co/allenai/OLMo-2-0425-1B)
-- [Documentación de OLMo-2 en HuggingFace](https://huggingface.co/docs/transformers/v4.56.0/en/model_doc/olmo2)
+- [Repositorio Hugging Face](https://huggingface.co/arkilpatel/olmo2-1b-traj-s1-2496b)
+- [Modelo base OLMo-2-1B en Hugging Face](https://huggingface.co/allenai/OLMo-2-0425-1B)
+- [Documentación de OLMo-2 en Hugging Face](https://huggingface.co/docs/transformers/v4.56.0/en/model_doc/olmo2)
 - [Pagina oficial de OLMo en Ai2](https://allenai.org/olmo2)
 - [Script de entrenamiento OLMo-2-1B en GitHub](https://github.com/allenai/OLMo-core/blob/main/src/scripts/train/OLMo2-1B.py)

@@ -69,7 +69,7 @@ No se han publicado resultados comparativos frente a otros SAE o featurizers en 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (BSF DINOv3 Imagenette smoke) | 231.978 | no aplica | KL 5.868 nats/imagen; accuracy 10%; MSE 0.961 | MIT (backbone aparte) | HuggingFace, 36 descargas |
+| Este modelo (BSF DINOv3 Imagenette smoke) | 231.978 | no aplica | KL 5.868 nats/imagen; accuracy 10%; MSE 0.961 | MIT (backbone aparte) | Hugging Face, 36 descargas |
 | Goodfire block-sparse-featurizer | no disponible | no disponible | no disponible | no disponible | GitHub publico |
 | SAE end-to-end (paper arXiv 2405.12241) | no disponible | no disponible | no disponible | no disponible | Publicacion academica |
 
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento de las alternativas en la informacion prop
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/BurnyCoder/e2e-bsf-dinov3-imagenette-smoke-block-mse-seed100
+- Hugging Face: https://huggingface.co/BurnyCoder/e2e-bsf-dinov3-imagenette-smoke-block-mse-seed100
 - Repositorio del proyecto: https://github.com/BurnyCoder/end-to-end-block-sparse-featurizers
 - Preregistro: https://github.com/BurnyCoder/end-to-end-block-sparse-featurizers/blob/main/docs/preregistration.md
 - Paper BSF: https://arxiv.org/abs/2606.25234

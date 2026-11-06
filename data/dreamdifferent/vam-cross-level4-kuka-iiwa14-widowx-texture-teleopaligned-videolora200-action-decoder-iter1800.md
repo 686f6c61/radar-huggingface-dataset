@@ -69,7 +69,7 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dreamdifferent/vam-cross-level4-kuka-iiwa14-widowx-texture-teleopaligned-videolora200-action-decoder-iter1800
+- Repositorio Hugging Face: https://huggingface.co/dreamdifferent/vam-cross-level4-kuka-iiwa14-widowx-texture-teleopaligned-videolora200-action-decoder-iter1800
 - Modelo relacionado (UR5e): https://huggingface.co/dreamdifferent/vam-cross-level4-ur5e-widowx-texture-teleopaligned-videolora400-action-decoder-iter1800
 - Escena MuJoCo del KUKA iiwa 14: https://github.com/google-deepmind/mujoco_menagerie/blob/main/kuka_iiwa_14/scene.xml
 - Modelo MuJoCo del KUKA iiwa 14: https://github.com/google-deepmind/mujoco_menagerie/blob/main/kuka_iiwa_14/iiwa14.xml

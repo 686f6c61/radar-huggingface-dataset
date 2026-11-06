@@ -69,7 +69,7 @@ No se dispone de datos de modelos comparables en la informacion proporcionada. C
 
 | Modelo | Relacion | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Travor278/pi05-scan-object-uniform-lora-10k` | Ajuste LoRA de tarea unica | no disponible | no disponible | no disponible | Publicado en HuggingFace, 0 descargas |
+| `Travor278/pi05-scan-object-uniform-lora-10k` | Ajuste LoRA de tarea unica | no disponible | no disponible | no disponible | Publicado en Hugging Face, 0 descargas |
 | `XinY0201/openpi-pi05-base-jax` | Modelo base sobre el que se aplica el LoRA | no disponible | no disponible | no disponible | Referenciado por commit en la model card |
 | Otros VLA open source de la misma categoria | Alternativas genericas | no disponible | no disponible | no disponible | No se encontraron datos en la busqueda web realizada |
 
@@ -89,7 +89,7 @@ No se dispone de datos de modelos comparables en la informacion proporcionada. C
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Travor278/pi05-scan-object-uniform-lora-10k
+- Modelo en Hugging Face: https://huggingface.co/Travor278/pi05-scan-object-uniform-lora-10k
 - Modelo base JAX: https://huggingface.co/XinY0201/openpi-pi05-base-jax (commit `5e62884fcf8cb8f9fc693c9163ea18d3e3739658`)
 - Dataset de entrenamiento: https://huggingface.co/datasets/Shiki42/ctr-scan-object-uniform-20260911 (commit `000485f6b1cc3221f7ab21ddbda0d231757e8cf9`)
 - Libreria openpi (referencia del formato de checkpoint y despliegue): https://github.com/Physical-Intelligence/openpi

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Juliankrau/classification-v3` es un repositorio de HuggingFace publicado por el usuario Juliankrau que contiene una implementación propia y compacta de CLIP orientada a tareas de clasificación. Se distribuye en configuración "tiny", con 33.088 parámetros reales según el checkpoint en `model.safetensors`, y su propia model card lo describe explícitamente como un artefacto para revisión de código, pruebas de humo (smoke tests) y experimentos pequeños y controlados, no como un modelo preentrenado listo para producción.
+`Juliankrau/classification-v3` es un repositorio de Hugging Face publicado por el usuario Juliankrau que contiene una implementación propia y compacta de CLIP orientada a tareas de clasificación. Se distribuye en configuración "tiny", con 33.088 parámetros reales según el checkpoint en `model.safetensors`, y su propia model card lo describe explícitamente como un artefacto para revisión de código, pruebas de humo (smoke tests) y experimentos pequeños y controlados, no como un modelo preentrenado listo para producción.
 
 El repositorio incluye el fichero Python con el modelo y un punto de entrada ejecutable, un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta de experimento por defecto (optimizador adafactor y scheduler onecycle) y un checkpoint de inicialización válido. El autor indica de forma explícita que no se reclama ninguna puntuación de benchmark y que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio.
 
@@ -68,7 +68,7 @@ No se han identificado modelos comparables en la información disponible. La bú
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Juliankrau/classification-v3 | 33.088 | no disponible | sin benchmark declarado | apache-2.0 | HuggingFace |
+| Juliankrau/classification-v3 | 33.088 | no disponible | sin benchmark declarado | apache-2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -86,5 +86,5 @@ No se han identificado modelos comparables en la información disponible. La bú
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Juliankrau/classification-v3
+- Hugging Face: https://huggingface.co/Juliankrau/classification-v3
 - Búsqueda web: no se han encontrado enlaces relevantes al modelo. Los resultados devueltos correspondían a páginas de ayuda de YouTube (support.google.com/youtubetv, support.google.com/youtube, zhihu.com) y no guardan relación con el repositorio. No se dispone de papers, blogs, repositorios ni demos adicionales asociados a este modelo.

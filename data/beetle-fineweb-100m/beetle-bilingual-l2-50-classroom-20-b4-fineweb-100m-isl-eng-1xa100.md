@@ -6,7 +6,7 @@ El modelo `Beetle-FineWeb-100M/beetle-bilingual-l2-50-classroom-20-b4-fineweb-10
 
 El modelo cuenta con 193.804.032 parámetros (~194 millones) y se distribuye en formato safetensors mediante la librería transformers. El repositorio ocupa 91,5 GB, un tamaño notablemente elevado para un modelo de esta magnitud, lo que sugiere que puede contener múltiples versiones de pesos, checkpoints de entrenamiento o artefactos adicionales no documentados. La model card está prácticamente vacía: todos los campos relevantes (autor, licencia, datos de entrenamiento, evaluación, etc.) aparecen como "[More Information Needed]".
 
-A fecha de creación (30 de agosto de 2026), el modelo registra cero descargas y cero likes, y no existe documentación técnica publicada más allá de la plantilla autogenerada de HuggingFace. Su relevancia actual es limitada: se trata de un experimento de investigación dentro de una familia de modelos bilingües (existen variantes para danés-inglés, finés-inglés, griego-inglés y neerlandés-inglés) sin validación pública ni benchmarks publicados.
+A fecha de creación (30 de agosto de 2026), el modelo registra cero descargas y cero likes, y no existe documentación técnica publicada más allá de la plantilla autogenerada de Hugging Face. Su relevancia actual es limitada: se trata de un experimento de investigación dentro de una familia de modelos bilingües (existen variantes para danés-inglés, finés-inglés, griego-inglés y neerlandés-inglés) sin validación pública ni benchmarks publicados.
 
 ## Especificaciones tecnicas
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada para inferencia: aproximadamente 775 MB en fp32 y 388 MB en fp16 (cálculo estándar para 194M parámetros; no hay cuantizaciones publicadas).
 - GPU recomendadas: cualquier GPU consumer moderna con al menos 2 GB de VRAM es suficiente para inferencia; el tag `1xa100` sugiere que el entrenamiento se realizó en una NVIDIA A100 (80 GB).
 - Compatibilidad con GPU consumer: sí, el modelo cabe holgadamente en RTX 3060, RTX 4090 y similares.
-- Opciones de despliegue: compatible con la librería transformers de HuggingFace; se desconoce la compatibilidad con vLLM, llama.cpp, Ollama o TGI, especialmente por la etiqueta `custom_code` que podría requerir una implementación personalizada.
+- Opciones de despliegue: compatible con la librería transformers de Hugging Face; se desconoce la compatibilidad con vLLM, llama.cpp, Ollama o TGI, especialmente por la etiqueta `custom_code` que podría requerir una implementación personalizada.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes ni frent
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Beetle-FineWeb-100M/beetle-bilingual-l2-50-classroom-20-b4-fineweb-100m-isl-eng-1xa100
+- Repositorio Hugging Face: https://huggingface.co/Beetle-FineWeb-100M/beetle-bilingual-l2-50-classroom-20-b4-fineweb-100m-isl-eng-1xa100
 - Variante danés-inglés: https://huggingface.co/Beetle-FineWeb-100M/beetle-bilingual-l2-50-classroom-20-b4-fineweb-100m-dan-eng
 - Variante finés-inglés: https://huggingface.co/Beetle-FineWeb-100M/beetle-bilingual-l2-50-classroom-20-b4-fineweb-100m-fin-eng-1xa100
 - Variante griego-inglés: https://huggingface.co/Beetle-FineWeb-100M/beetle-bilingual-l2-50-simultaneous-b2-fineweb-100m-ell-eng-1xa100

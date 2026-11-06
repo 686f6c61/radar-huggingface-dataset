@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks estandarizados (MMLU, HumanEval, GS
 
 | Modelo | Parametros | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| TeraSpace/accentik | 35,05 M | Acentuacion de ruso + restauracion de `ё` | accentik-openrail-m-public-attribution | HuggingFace, safetensors FP32 |
-| RUAccent | no disponible | Acentuacion de ruso (basado en diccionario + modelos) | no disponible | HuggingFace / PyPI |
-| deepvk/RuModernBERT-small (base) | 35,05 M (aprox.) | Modelo base encoder para ruso, feature-extraction general | no disponible | HuggingFace |
+| TeraSpace/accentik | 35,05 M | Acentuacion de ruso + restauracion de `ё` | accentik-openrail-m-public-attribution | Hugging Face, safetensors FP32 |
+| RUAccent | no disponible | Acentuacion de ruso (basado en diccionario + modelos) | no disponible | Hugging Face / PyPI |
+| deepvk/RuModernBERT-small (base) | 35,05 M (aprox.) | Modelo base encoder para ruso, feature-extraction general | no disponible | Hugging Face |
 
 Nota: RUAccent es el sistema del que provienen las etiquetas de dialogo usadas en el entrenamiento de Accentik; Accentik se posiciona como alternativa que no requiere instalar RUAccent ni diccionarios en tiempo de ejecucion. No hay datos de rendimiento comparativo publicados en la informacion disponible.
 
@@ -82,7 +82,7 @@ Nota: RUAccent es el sistema del que provienen las etiquetas de dialogo usadas e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TeraSpace/accentik
+- Modelo en Hugging Face: https://huggingface.co/TeraSpace/accentik
 - Licencia: https://huggingface.co/TeraSpace/accentik/blob/main/LICENSE
 - Modelo base: https://huggingface.co/deepvk/RuModernBERT-small
 - Resultados de evaluacion: https://huggingface.co/TeraSpace/accentik/blob/main/evaluation.json

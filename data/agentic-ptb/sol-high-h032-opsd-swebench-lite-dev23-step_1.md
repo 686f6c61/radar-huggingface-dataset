@@ -57,8 +57,8 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | agentic-ptb/sol-high.h032 (este) | 9,4B | No disponible | No disponible | Checkpoint de investigación |
-| Qwen3.5-9B-Base (modelo base) | 9,4B | 128k (según documentación de Qwen) | Apache 2.0 (según Qwen) | Público en HuggingFace |
-| Llama-3.1-8B | 8B | 128k | Llama 3.1 Community License | Público en HuggingFace |
+| Qwen3.5-9B-Base (modelo base) | 9,4B | 128k (según documentación de Qwen) | Apache 2.0 (según Qwen) | Público en Hugging Face |
+| Llama-3.1-8B | 8B | 128k | Llama 3.1 Community License | Público en Hugging Face |
 
 No se dispone de datos de rendimiento comparativo para este checkpoint. La comparación se limita a parámetros y contexto, y no se puede afirmar que este modelo supere o iguale a sus alternativas sin métricas verificadas.
 
@@ -73,7 +73,7 @@ No se dispone de datos de rendimiento comparativo para este checkpoint. La compa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/agentic-ptb/sol-high.h032.opsd-swebench-lite-dev23.step_1
+- Repositorio en Hugging Face: https://huggingface.co/agentic-ptb/sol-high.h032.opsd-swebench-lite-dev23.step_1
 - Proyecto Agentic-OPSD en GitHub: https://github.com/EcthelionLiu/Agentic-OPSD
 - SWE-bench Leaderboards: https://www.swebench.com/
 - BenchLM.ai (leaderboard de modelos LLM): https://benchlm.ai/

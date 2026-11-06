@@ -60,6 +60,6 @@ No se dispone de información para comparar este modelo con alternativas de la m
 
 ## Enlaces
 
-- [HuggingFace - mikelly7368/project-qa](https://huggingface.co/mikelly7368/project-qa)
+- [Hugging Face - mikelly7368/project-qa](https://huggingface.co/mikelly7368/project-qa)
 
 No se han encontrado papers, blogs, repositorios adicionales ni demos relacionados con este modelo en los resultados de búsqueda web.

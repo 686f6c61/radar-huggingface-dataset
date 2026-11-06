@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NG es un modelo publicado en HuggingFace por el usuario Negodishka bajo la licencia bigcode-openrail-m. La model card asociada está prácticamente vacía: únicamente declara la licencia, sin información sobre arquitectura, parámetros, contexto, datos de entrenamiento ni capacidades. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) y no tiene pipeline declarado, por lo que no es posible clasificarlo funcionalmente a partir de los metadatos disponibles.
+NG es un modelo publicado en Hugging Face por el usuario Negodishka bajo la licencia bigcode-openrail-m. La model card asociada está prácticamente vacía: únicamente declara la licencia, sin información sobre arquitectura, parámetros, contexto, datos de entrenamiento ni capacidades. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) y no tiene pipeline declarado, por lo que no es posible clasificarlo funcionalmente a partir de los metadatos disponibles.
 
 La elección de la licencia bigcode-openrail-m sugiere que el autor pretende orientar el modelo a tareas de generación de código, dado que es la licencia empleada habitualmente por la familia StarCoder y otros modelos de código de BigCode. Sin embargo, esta inferencia se basa exclusivamente en la licencia y no está confirmada por ninguna documentación técnica del repositorio.
 
@@ -40,7 +40,7 @@ Tampoco hay datos sobre el corpus de entrenamiento (número de tokens, composici
 
 - Evaluación comparativa de modelos de código: dado que la licencia bigcode-openrail-m se asocia habitualmente a modelos orientados a programación, podría emplearse en experimentos de generación de código, pero sin documentación técnica no es posible garantizar su idoneidad.
 - Investigación sobre licencias abiertas: el modelo puede servir como caso de estudio de publicación de pesos bajo bigcode-openrail-m y de sus implicaciones para uso comercial.
-- Pruebas de integración en pipelines de HuggingFace: permite validar flujos de descarga, carga y ejecución con modelos de autoría independiente.
+- Pruebas de integración en pipelines de Hugging Face: permite validar flujos de descarga, carga y ejecución con modelos de autoría independiente.
 - Reproducción de experimentos académicos: si el autor publica posteriormente detalles, podría reutilizarse en entornos de investigación comparativa.
 - Despliegue experimental en entornos controlados: únicamente tras inspeccionar los pesos y verificar el comportamiento real del modelo.
 - Auditoría de seguridad de modelos: análisis de sesgos y comportamiento de un checkpoint sin documentación, útil para estudiar riesgos de modelos opacos.
@@ -84,6 +84,6 @@ Los datos de los modelos StarCoder corresponden a la documentación pública de 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Negodishka/NG
+- Repositorio en Hugging Face: https://huggingface.co/Negodishka/NG
 - Texto de la licencia bigcode-openrail-m: no disponible en la información proporcionada (se recomienda consultar el acuerdo publicado por BigCode)
 - Paper, blog o demo del modelo: no disponible

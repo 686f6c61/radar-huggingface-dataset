@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativos publicados. La comparación c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Terrygmx/LTX-2.3-uncensored-v1.4-FP8
+- Repositorio Hugging Face: https://huggingface.co/Terrygmx/LTX-2.3-uncensored-v1.4-FP8
 - Modelo base Lightricks/LTX-2.3: https://huggingface.co/Lightricks/LTX-2.3
 - Página oficial de LTX-2.3: https://ltx.io/model/ltx-2-3
 - Guía técnica sobre LTX 2.3 uncensored: https://ltx23.video/blog/ltx-2-3-uncensored

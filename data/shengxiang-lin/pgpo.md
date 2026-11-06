@@ -66,7 +66,7 @@ No disponible. No se proporcionan datos de comparación con otros métodos de op
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Shengxiang-Lin/PGPO
+- Hugging Face: https://huggingface.co/Shengxiang-Lin/PGPO
 - Paper (arXiv): https://arxiv.org/abs/2506.01475
 - PDF del paper: https://arxiv.org/pdf/2506.01475
 - Repositorio oficial (GitHub): https://github.com/zouyingcao/PGPO

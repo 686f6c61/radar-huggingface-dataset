@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ppt-pythia-160m-nope-previous_mse250-warmup2000-seed208-stage1` es un ajuste fino (fine-tune) del modelo base EleutherAI/pythia-160m, publicado por el usuario qing-yao en HuggingFace. Se trata de un experimento de investigación más que de un modelo listo para producción: la model card es la generada automáticamente por el `Trainer` de Transformers y no documenta el conjunto de datos, los objetivos de entrenamiento ni los usos previstos. El nombre del repositorio sugiere una variante arquitectónica con atención de tipo "NoPE" (No Positional Encoding) implementada mediante el código personalizado `gpt_neox_nope`, junto con una función de pérdida MSE y un calentamiento (warmup) de 2000 pasos en una primera etapa.
+`ppt-pythia-160m-nope-previous_mse250-warmup2000-seed208-stage1` es un ajuste fino (fine-tune) del modelo base EleutherAI/pythia-160m, publicado por el usuario qing-yao en Hugging Face. Se trata de un experimento de investigación más que de un modelo listo para producción: la model card es la generada automáticamente por el `Trainer` de Transformers y no documenta el conjunto de datos, los objetivos de entrenamiento ni los usos previstos. El nombre del repositorio sugiere una variante arquitectónica con atención de tipo "NoPE" (No Positional Encoding) implementada mediante el código personalizado `gpt_neox_nope`, junto con una función de pérdida MSE y un calentamiento (warmup) de 2000 pasos en una primera etapa.
 
 El modelo tiene 85.071.360 parámetros reales según los pesos en safetensors, un tamaño muy reducido que lo sitúa en la categoría de modelos pequeños para experimentación y docencia. La licencia Apache 2.0 facilita su reutilización, pero la ausencia de documentación sobre datos de entrenamiento y evaluación limita seriamente su uso fuera de entornos de investigación controlados.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este modelo (ppt-pythia-160m-nope) | 85.071.360 | no disponible | Apache 2.0 | HuggingFace, 42 descargas | Variante NoPE experimental, sin benchmarks |
-| EleutherAI/pythia-160m | 162M (nominal) | 2048 tokens (Pythia) | Apache 2.0 | HuggingFace, ampliamente usado | Modelo base, con benchmarks publicados |
-| EleutherAI/pythia-70m | 70M | 2048 tokens (Pythia) | Apache 2.0 | HuggingFace | Alternativa más pequeña del mismo linaje |
-| GPT-2 small | 124M | 1024 tokens | MIT | HuggingFace | Referencia clásica de modelos pequeños |
+| Este modelo (ppt-pythia-160m-nope) | 85.071.360 | no disponible | Apache 2.0 | Hugging Face, 42 descargas | Variante NoPE experimental, sin benchmarks |
+| EleutherAI/pythia-160m | 162M (nominal) | 2048 tokens (Pythia) | Apache 2.0 | Hugging Face, ampliamente usado | Modelo base, con benchmarks publicados |
+| EleutherAI/pythia-70m | 70M | 2048 tokens (Pythia) | Apache 2.0 | Hugging Face | Alternativa más pequeña del mismo linaje |
+| GPT-2 small | 124M | 1024 tokens | MIT | Hugging Face | Referencia clásica de modelos pequeños |
 
 La comparación con Pythia-160m es la más directa: mismo linaje y licencia, pero el modelo base cuenta con documentación completa, benchmarks publicados y una arquitectura estándar sin necesidad de código remoto.
 
@@ -84,7 +84,7 @@ La comparación con Pythia-160m es la más directa: mismo linaje y licencia, per
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qing-yao/ppt-pythia-160m-nope-previous_mse250-warmup2000-seed208-stage1
+- Modelo en Hugging Face: https://huggingface.co/qing-yao/ppt-pythia-160m-nope-previous_mse250-warmup2000-seed208-stage1
 - Modelo base: https://huggingface.co/EleutherAI/pythia-160m
 - Repositorio Pythia (EleutherAI): https://github.com/EleutherAI/pythia
 - Paper de Pythia: https://arxiv.org/abs/2304.01373

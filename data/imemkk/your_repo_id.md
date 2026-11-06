@@ -6,7 +6,7 @@
 
 El modelo ha sido entrenado específicamente para la tarea "Grab orange and place into plate" (coger una naranja y colocarla en un plato) sobre el dataset `LightwheelAI/leisaac-pick-orange`, que contiene 60 episodios y 36.293 fotogramas a 30 FPS. Se trata, por tanto, de una política de imitación especializada en una única tarea de manipulación, no de un modelo generalista listo para producción. Su relevancia radica en que demuestra el flujo completo de fine-tuning de π₀ con LeRobot 0.6.2 sobre hardware asequible (SO-101), un caso de uso habitual en investigación en robótica de bajo coste.
 
-La ficha se basa exclusivamente en la model card publicada y en los metadatos de HuggingFace. No se han publicado resultados de evaluación en el repositorio, por lo que el rendimiento real de la política en el robot no está cuantificado.
+La ficha se basa exclusivamente en la model card publicada y en los metadatos de Hugging Face. No se han publicado resultados de evaluación en el repositorio, por lo que el rendimiento real de la política en el robot no está cuantificado.
 
 ## Especificaciones tecnicas
 
@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ImemKK/your_repo_id | 4,03 B | no disponible | Pick-and-place especializado (naranja en plato) | gemma | HuggingFace, 0 descargas, 0 likes |
-| lerobot/pi0_base | no disponible en la información | no disponible | Política VLA generalista base | no disponible en la información | HuggingFace (modelo base) |
+| ImemKK/your_repo_id | 4,03 B | no disponible | Pick-and-place especializado (naranja en plato) | gemma | Hugging Face, 0 descargas, 0 likes |
+| lerobot/pi0_base | no disponible en la información | no disponible | Política VLA generalista base | no disponible en la información | Hugging Face (modelo base) |
 | π₀ original (Physical Intelligence) | no disponible en la información | no disponible | Política VLA generalista multi-robot | no disponible en la información | OpenPI (open source) |
 
 No se dispone de datos de rendimiento comparables entre estas alternativas en la información proporcionada.
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparables entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ImemKK/your_repo_id
+- Modelo en Hugging Face: https://huggingface.co/ImemKK/your_repo_id
 - Modelo base: https://huggingface.co/lerobot/pi0_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/LightwheelAI/leisaac-pick-orange
 - Visualización del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=LightwheelAI/leisaac-pick-orange

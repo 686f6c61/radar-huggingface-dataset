@@ -80,7 +80,7 @@ No se dispone de datos publicados de otros adaptadores o modelos de argument min
 
 ## Enlaces
 
-- [HuggingFace del adaptador](https://huggingface.co/mr-mc/flowjudge-dialam-qwen3-0.6b-v3-n4096)
-- [HuggingFace del modelo base Qwen3-0.6B](https://huggingface.co/Qwen/Qwen3-0.6B)
+- [Hugging Face del adaptador](https://huggingface.co/mr-mc/flowjudge-dialam-qwen3-0.6b-v3-n4096)
+- [Hugging Face del modelo base Qwen3-0.6B](https://huggingface.co/Qwen/Qwen3-0.6B)
 - [GitHub del proyecto Qwen3](https://github.com/QwenLM/Qwen3)
 - [Reporte tecnico de Qwen3 (arXiv)](https://arxiv.org/html/2505.09388v1)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario sfafasgag5657 bajo licencia MIT. La informacion disponible es contradictoria y muy escasa: las etiquetas del repositorio lo clasifican como BERT para text-classification, feature-extraction y question-answering, mientras que la model card lo describe como un "modelo de lenguaje de ultima generacion" con capacidades de razonamiento, generacion de codigo y matemáticas, e incluso cita un resultado del 87,5 % en AIME 2025. Esa combinacion es tecnicamente incompatible: un encoder BERT no genera texto libre ni resuelve problemas de competicion matemática de ese tipo.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario sfafasgag5657 bajo licencia MIT. La informacion disponible es contradictoria y muy escasa: las etiquetas del repositorio lo clasifican como BERT para text-classification, feature-extraction y question-answering, mientras que la model card lo describe como un "modelo de lenguaje de ultima generacion" con capacidades de razonamiento, generacion de codigo y matemáticas, e incluso cita un resultado del 87,5 % en AIME 2025. Esa combinacion es tecnicamente incompatible: un encoder BERT no genera texto libre ni resuelve problemas de competicion matemática de ese tipo.
 
 El repositorio presenta senales claras de ser una plantilla de prueba o un modelo de demostracion: 0 descargas, 0 likes, un tamano de repositorio de 0.0 GB (es decir, sin pesos publicados que se puedan descargar) y fechas de creacion y actualizacion de septiembre de 2026, posteriores a la fecha actual. No hay informacion sobre numero de parametros, longitud de contexto, datos de entrenamiento ni idiomas soportados.
 
@@ -48,7 +48,7 @@ Dado que no hay pesos publicados ni especificaciones confirmadas, los siguientes
 - Analisis de sentimiento en redes sociales o encuestas: el modelo se etiqueta como text-classification, de modo que un ajuste fino sobre un corpus anotado permitiria extraer polaridad a escala.
 - Extraccion de caracteristicas para sistemas de recuperacion: la etiqueta feature-extraction sugiere la posibilidad de generar embeddings para busqueda semantica, aunque sin confirmar la dimension del vector ni la calidad de las representaciones.
 - Question answering extractivo sobre documentacion corporativa: encaja con la etiqueta question-answering, siempre que se disponga de un contexto y se entrene sobre el dominio objetivo.
-- Prototipado y experimentacion docente: dada su naturaleza aparentemente de plantilla, podria servir como ejemplo de estructura de repositorio en HuggingFace, no como modelo de produccion.
+- Prototipado y experimentacion docente: dada su naturaleza aparentemente de plantilla, podria servir como ejemplo de estructura de repositorio en Hugging Face, no como modelo de produccion.
 - Evaluacion de pipelines internos: utilizable como caso de prueba para validar integraciones con `transformers`, siempre que los pesos existan y carguen correctamente.
 
 No se recomienda ningun caso de uso en produccion con la informacion actual.
@@ -114,5 +114,5 @@ Esta tabla es meramente referencial; no implica que MyAwesomeModel sea funcional
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sfafasgag5657/MyAwesomeModel
+- Hugging Face: https://huggingface.co/sfafasgag5657/MyAwesomeModel
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la busqueda web realizada.

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `alfred8995/r18-a2-w13-k-chrono5-w30-s130` es un checkpoint publicado en HuggingFace por el usuario alfred8995 bajo la etiqueta `sn38-nanochrono`, un identificador que no corresponde a ninguna familia de modelos ampliamente documentada. Con 2.018.511.234 parametros (aproximadamente 2,02 mil millones), se situa en el segmento de modelos pequenos, adecuado para inferencia en hardware de consumo. El repositorio tiene un tamano de 12,6 GB, lo que sugiere pesos en precision alta (probablemente fp32 o una mezcla de fp16 con estados adicionales) dado el numero de parametros.
+El modelo `alfred8995/r18-a2-w13-k-chrono5-w30-s130` es un checkpoint publicado en Hugging Face por el usuario alfred8995 bajo la etiqueta `sn38-nanochrono`, un identificador que no corresponde a ninguna familia de modelos ampliamente documentada. Con 2.018.511.234 parametros (aproximadamente 2,02 mil millones), se situa en el segmento de modelos pequenos, adecuado para inferencia en hardware de consumo. El repositorio tiene un tamano de 12,6 GB, lo que sugiere pesos en precision alta (probablemente fp32 o una mezcla de fp16 con estados adicionales) dado el numero de parametros.
 
-La informacion publica disponible es muy limitada: no se especifican la arquitectura, los idiomas soportados, el pipeline de inferencia ni los datos de entrenamiento. El nombre del repositorio contiene segmentos como `chrono5`, `w30`, `s130` y `r18-a2-w13`, que parecen corresponder a hiperparametros o variantes de un experimento de entrenamiento, pero no hay documentacion que los explique. El acceso esta restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de descargar los pesos.
+La informacion publica disponible es muy limitada: no se especifican la arquitectura, los idiomas soportados, el pipeline de inferencia ni los datos de entrenamiento. El nombre del repositorio contiene segmentos como `chrono5`, `w30`, `s130` y `r18-a2-w13`, que parecen corresponder a hiperparametros o variantes de un experimento de entrenamiento, pero no hay documentacion que los explique. El acceso esta restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de descargar los pesos.
 
 La relevancia actual de este checkpoint es marginal dentro del ecosistema open source: cuenta con 6 descargas y 0 likes, no tiene model card sustantiva y no se han publicado resultados de evaluacion. Su interes es principalmente como artefacto de investigacion o experimento personal, no como modelo listo para produccion.
 
@@ -38,7 +38,7 @@ Respecto al entrenamiento, no se indica el numero de tokens, la composicion del 
 
 ## Casos de uso
 
-- Experimentacion academica con checkpoints de ~2 B de parametros: el modelo puede cargarse en entornos de investigacion para estudiar el comportamiento de modelos de este tamano, siempre que se acepte la condicion de acceso restringido en HuggingFace.
+- Experimentacion academica con checkpoints de ~2 B de parametros: el modelo puede cargarse en entornos de investigacion para estudiar el comportamiento de modelos de este tamano, siempre que se acepte la condicion de acceso restringido en Hugging Face.
 - Pruebas de inferencia en GPU de consumo: con 2,02 B de parametros, es viable ejecutarlo en tarjetas con 8-16 GB de VRAM si se dispone de una cuantizacion adecuada, aunque no se han publicado conversiones a GGUF ni a otros formatos ligeros.
 - Evaluacion comparativa de checkpoints experimentales: util para investigadores que necesiten contrastar el rendimiento de variantes de entrenamiento con nombres codificados como el de este repositorio.
 - Reproduccion de experimentos: si el autor publica en el futuro la configuracion de entrenamiento, el checkpoint podria servir para reproducir resultados, aunque actualmente no hay documentacion al respecto.
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| alfred8995/r18-a2-w13-k-chrono5-w30-s130 | ~2,02 B | no disponible | Apache 2.0 | Gated en HuggingFace | Sin model card ni benchmarks |
-| Gemma 2 2B | ~2,6 B | 8.192 tokens | Gemma license | Publico en HuggingFace | Modelo documentado con benchmarks |
-| Qwen2.5 1.5B | ~1,5 B | 32.768 tokens | Apache 2.0 | Publico en HuggingFace | Modelo documentado con benchmarks |
-| SmolLM2 1.7B | ~1,7 B | 8.192 tokens | Apache 2.0 | Publico en HuggingFace | Modelo documentado con benchmarks |
+| alfred8995/r18-a2-w13-k-chrono5-w30-s130 | ~2,02 B | no disponible | Apache 2.0 | Gated en Hugging Face | Sin model card ni benchmarks |
+| Gemma 2 2B | ~2,6 B | 8.192 tokens | Gemma license | Publico en Hugging Face | Modelo documentado con benchmarks |
+| Qwen2.5 1.5B | ~1,5 B | 32.768 tokens | Apache 2.0 | Publico en Hugging Face | Modelo documentado con benchmarks |
+| SmolLM2 1.7B | ~1,7 B | 8.192 tokens | Apache 2.0 | Publico en Hugging Face | Modelo documentado con benchmarks |
 
 La comparativa se basa en el segmento de tamano, no en datos de rendimiento del modelo evaluado, ya que no se han publicado metricas. Los modelos alternativos citados cuentan con documentacion tecnica y evaluaciones publicas, a diferencia de este checkpoint.
 
@@ -74,7 +74,7 @@ La comparativa se basa en el segmento de tamano, no en datos de rendimiento del 
 - Riesgo elevado de alucinacion y comportamiento impredecible: sin informacion sobre alineacion (RLHF/DPO) ni evaluaciones, no hay garantias sobre la calidad de las respuestas.
 - Idiomas no especificados: no puede asumirse un soporte multilingue ni siquiera un buen rendimiento en ingles.
 - Contexto desconocido: no se puede planificar su uso en tareas que requieran ventanas largas.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que anade friccion para su uso en produccion o en pipelines automatizados.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que anade friccion para su uso en produccion o en pipelines automatizados.
 - Licencia Apache 2.0: permite uso comercial y modificacion, pero el autor no ofrece garantias ni soporte.
 - Sin conversiones a formatos ligeros (GGUF, AWQ, GPTQ): el despliegue eficiente en hardware de consumo requeriria trabajo adicional de cuantizacion.
 - Sin resultados de benchmarks: no es posible comparar su calidad con modelos establecidos del mismo tamano.
@@ -82,5 +82,5 @@ La comparativa se basa en el segmento de tamano, no en datos de rendimiento del 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/alfred8995/r18-a2-w13-k-chrono5-w30-s130
+- Repositorio en Hugging Face: https://huggingface.co/alfred8995/r18-a2-w13-k-chrono5-w30-s130
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

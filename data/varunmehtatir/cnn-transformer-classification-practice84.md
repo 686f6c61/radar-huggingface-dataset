@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`varunmehtatir/cnn-transformer-classification-practice84` es un repositorio experimental publicado en HuggingFace por el usuario varunmehtatir. No es un modelo entrenado ni un checkpoint listo para produccion: la propia model card lo describe como un *codebase* de practica que combina una CNN con un transformer para tareas de clasificacion, con un checkpoint de inicializacion valido para *smoke tests*. El repositorio acumula 0 descargas y 0 likes, y su tamano ronda los 0 GB.
+`varunmehtatir/cnn-transformer-classification-practice84` es un repositorio experimental publicado en Hugging Face por el usuario varunmehtatir. No es un modelo entrenado ni un checkpoint listo para produccion: la propia model card lo describe como un *codebase* de practica que combina una CNN con un transformer para tareas de clasificacion, con un checkpoint de inicializacion valido para *smoke tests*. El repositorio acumula 0 descargas y 0 likes, y su tamano ronda los 0 GB.
 
 El peso publicado contiene 49.600 parametros totales segun los metadatos de safetensors, una cifra que contrasta con la etiqueta `large` que aparece en la model card: es, en la practica, un modelo de escala minuscula, orientado a validar que la arquitectura compila, carga y ejecuta un forward pass, no a resolver una tarea real. La configuracion declarada incluye atencion de ventana deslizante (*sliding window*), fusion por *cross attention*, activacion combinada GELU/Tanh y normalizacion RMSNorm, con un recetario de entrenamiento por defecto basado en el optimizador LAMB y un schedule de *linear warmup*.
 
@@ -88,5 +88,5 @@ No disponible. No se dispone de datos de rendimiento del modelo ni de alternativ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/varunmehtatir/cnn-transformer-classification-practice84
+- Hugging Face: https://huggingface.co/varunmehtatir/cnn-transformer-classification-practice84
 - La busqueda web realizada no devolvio ningun enlace relevante sobre este modelo: los resultados obtenidos eran de naturaleza no relacionada con el repositorio y se han descartado.

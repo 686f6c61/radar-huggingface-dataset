@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `Godwinlyamba/queue_tcC-d1` es un modelo de lenguaje de tipo mixture-of-experts (MoE) con 35.107 millones de parámetros totales, desarrollado por el usuario Godwinlyamba y publicado en HuggingFace. Está basado en el modelo `vera6/affine-5g4yy75zuz-t6`, del que se deriva mediante un proceso de fine-tuning que incluye entrenamiento con DPO offline (según las etiquetas del repositorio). La arquitectura declarada es `qwen3_5_moe`, lo que sugiere una variante de la familia Qwen3 con mezcla de expertos, aunque no se especifican los parámetros activos.
+El modelo `Godwinlyamba/queue_tcC-d1` es un modelo de lenguaje de tipo mixture-of-experts (MoE) con 35.107 millones de parámetros totales, desarrollado por el usuario Godwinlyamba y publicado en Hugging Face. Está basado en el modelo `vera6/affine-5g4yy75zuz-t6`, del que se deriva mediante un proceso de fine-tuning que incluye entrenamiento con DPO offline (según las etiquetas del repositorio). La arquitectura declarada es `qwen3_5_moe`, lo que sugiere una variante de la familia Qwen3 con mezcla de expertos, aunque no se especifican los parámetros activos.
 
-El modelo está orientado a generación de texto conversacional y, según las etiquetas, también admite entrada de imagen y texto (`image-text-to-text`), aunque no se detallan las capacidades multimodales concretas. Se distribuye bajo licencia Apache 2.0, pero su acceso está restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de poder descargarlo. El repositorio ocupa 70,2 GB en formato safetensors, lo que indica que se distribuyen los pesos completos sin cuantizar.
+El modelo está orientado a generación de texto conversacional y, según las etiquetas, también admite entrada de imagen y texto (`image-text-to-text`), aunque no se detallan las capacidades multimodales concretas. Se distribuye bajo licencia Apache 2.0, pero su acceso está restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de poder descargarlo. El repositorio ocupa 70,2 GB en formato safetensors, lo que indica que se distribuyen los pesos completos sin cuantizar.
 
 La relevancia de este modelo radica en su tamaño medio-alto (35B) combinado con una arquitectura MoE, que podría ofrecer un equilibrio entre capacidad y eficiencia computacional. Sin embargo, al ser un modelo reciente (creado en agosto de 2026) y con cero descargas y cero likes, carece de validación comunitaria y de documentación pública detallada, lo que limita su evaluación objetiva.
 
@@ -74,7 +74,7 @@ No se dispone de información suficiente para una comparativa rigurosa. El únic
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Godwinlyamba/queue_tcC-d1
+- Repositorio Hugging Face: https://huggingface.co/Godwinlyamba/queue_tcC-d1
 - Perfil del autor: https://huggingface.co/Godwinlyamba
 - Modelo similar (sin datos de rendimiento): https://huggingface.co/Godwinlyamba/q_53f1d3-v1
 - Página de FriendliAI con un modelo del mismo autor (sin relación directa): https://friendli.ai/models/Godwinlyamba/manual-1776513334

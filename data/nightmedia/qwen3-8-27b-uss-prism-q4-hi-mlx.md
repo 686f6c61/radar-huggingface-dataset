@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Qwen3.8-27B-USS-Prism-q4-hi-mlx es una cuantización MLX de 4 bits (variante "hi") de un modelo de lenguaje de 27.000 millones de parámetros derivado de la familia Qwen 3.5/3.6. Lo publica el usuario nightmedia en HuggingFace y está construido como un merge complejo que combina varios modelos base: Jackrong/Qwopus3.8-27B-Coder-Flash (modelo principal), schneewolflabs/B1-27B, nightmedia/Qwen3.6-27B-Seven, nightmedia/Qwen3.8-27B-Brainwaves, nightmedia/Qwen3.8-27B-MindMeld y OmniJev/OneJev1.6-27B. El resultado es un modelo orientado a razonamiento con cadena de pensamiento larga, generación de código y escritura creativa, empaquetado específicamente para ejecutarse en hardware Apple Silicon mediante MLX.
+Qwen3.8-27B-USS-Prism-q4-hi-mlx es una cuantización MLX de 4 bits (variante "hi") de un modelo de lenguaje de 27.000 millones de parámetros derivado de la familia Qwen 3.5/3.6. Lo publica el usuario nightmedia en Hugging Face y está construido como un merge complejo que combina varios modelos base: Jackrong/Qwopus3.8-27B-Coder-Flash (modelo principal), schneewolflabs/B1-27B, nightmedia/Qwen3.6-27B-Seven, nightmedia/Qwen3.8-27B-Brainwaves, nightmedia/Qwen3.8-27B-MindMeld y OmniJev/OneJev1.6-27B. El resultado es un modelo orientado a razonamiento con cadena de pensamiento larga, generación de código y escritura creativa, empaquetado específicamente para ejecutarse en hardware Apple Silicon mediante MLX.
 
 El modelo se presenta como un experimento de la comunidad (no oficial de Alibaba/Qwen) que fusiona capacidades de distintos fine-tunes mediante técnicas de merge (mergekit) y destilación, con etiquetas que mencionan destilación de Claude 4.6 y "polaris-alpha". Su relevancia radica en que ofrece un contexto declarado de hasta 1M de tokens (256k en algunas configuraciones) en un tamaño de 27B que puede ejecutarse en equipos con memoria unificada de gama alta, algo poco habitual en modelos abiertos de esta escala.
 
-La ficha se basa exclusivamente en los metadatos disponibles en HuggingFace; no se han publicado resultados de benchmarks ni detalles del dataset de entrenamiento, por lo que muchos apartados técnicos se marcan como no disponibles. El acceso es restringido (gated) y requiere aceptar condiciones en la plataforma.
+La ficha se basa exclusivamente en los metadatos disponibles en Hugging Face; no se han publicado resultados de benchmarks ni detalles del dataset de entrenamiento, por lo que muchos apartados técnicos se marcan como no disponibles. El acceso es restringido (gated) y requiere aceptar condiciones en la plataforma.
 
 ## Especificaciones tecnicas
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3.8-27B-USS-Prism-q4-hi-mlx | 27B | 1M (declarado) | Apache 2.0 | HuggingFace (gated) |
-| Qwen2.5-32B-Instruct (referencia de la familia Qwen) | 32B | 128k | Apache 2.0 | HuggingFace |
-| Gemma 3 27B | 27B | 128k | Gemma license | HuggingFace |
-| Mistral Small 3 (24B) | 24B | 32k-128k | Apache 2.0 | HuggingFace |
+| Qwen3.8-27B-USS-Prism-q4-hi-mlx | 27B | 1M (declarado) | Apache 2.0 | Hugging Face (gated) |
+| Qwen2.5-32B-Instruct (referencia de la familia Qwen) | 32B | 128k | Apache 2.0 | Hugging Face |
+| Gemma 3 27B | 27B | 128k | Gemma license | Hugging Face |
+| Mistral Small 3 (24B) | 24B | 32k-128k | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo para este modelo concreto, por lo que la comparación se limita a parámetros, contexto, licencia y disponibilidad.
 
@@ -79,14 +79,14 @@ No se dispone de datos de rendimiento comparativo para este modelo concreto, por
 - No hay benchmarks publicados, por lo que no se puede verificar el rendimiento real en tareas estándar.
 - Riesgo de alucinación inherente a los modelos de lenguaje, potencialmente mayor en un merge experimental sin evaluación pública.
 - El contexto de 1M tokens es una cifra declarada en los tags; no se documenta cómo se entrenó ni se validó esa longitud, y en la práctica la memoria necesaria para aprovecharla puede ser prohibitiva.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que puede limitar su uso en pipelines automatizados.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso en pipelines automatizados.
 - La variante publicada es MLX 4-bit, por lo que la calidad puede degradarse respecto a la versión bf16 del modelo base, especialmente en razonamiento y código.
 - Idiomas soportados limitados a en, zh, ja y es; el rendimiento en español no está cuantificado.
 - Aunque la licencia es Apache 2.0, conviene revisar las licencias de los modelos base del merge (algunos podrían tener condiciones adicionales) antes de un uso comercial.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nightmedia/Qwen3.8-27B-USS-Prism-q4-hi-mlx
+- Hugging Face: https://huggingface.co/nightmedia/Qwen3.8-27B-USS-Prism-q4-hi-mlx
 - Modelo base principal: https://huggingface.co/Jackrong/Qwopus3.8-27B-Coder-Flash
 - Modelo base: https://huggingface.co/schneewolflabs/B1-27B
 - Modelo base: https://huggingface.co/nightmedia/Qwen3.6-27B-Seven

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kronos-small es un modelo fundacional de código abierto para la previsión de series temporales financieras, concretamente para velas japonesas (K-lines) con datos OHLCV. Lo desarrolla el equipo detrás del proyecto Kronos (repositorio de shiyu-coder), y se distribuye en HuggingFace bajo el identificador `ming-jan/Kronos-small`, con licencia MIT. Resuelve el problema de aplicar el paradigma de los modelos fundacionales al dominio financiero, caracterizado por su alto ruido y su naturaleza multidimensional.
+Kronos-small es un modelo fundacional de código abierto para la previsión de series temporales financieras, concretamente para velas japonesas (K-lines) con datos OHLCV. Lo desarrolla el equipo detrás del proyecto Kronos (repositorio de shiyu-coder), y se distribuye en Hugging Face bajo el identificador `ming-jan/Kronos-small`, con licencia MIT. Resuelve el problema de aplicar el paradigma de los modelos fundacionales al dominio financiero, caracterizado por su alto ruido y su naturaleza multidimensional.
 
 El modelo emplea un enfoque de dos etapas: primero un tokenizador especializado cuantiza los datos continuos de velas (open, high, low, close, volume, amount) en tokens discretos jerárquicos, y después un transformer autoregresivo decoder-only se preentrena sobre esas secuencias. Kronos-small cuenta con 24.741.696 parámetros y una longitud de contexto de 512 tokens, lo que lo sitúa como la variante intermedia de la familia Kronos (junto a mini, base y large).
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tokenizador | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kronos-mini | 4,1M | 2048 | Kronos-Tokenizer-2k | MIT (según familia) | Publico en HuggingFace |
-| Kronos-small | 24,7M | 512 | Kronos-Tokenizer-base | MIT | Publico en HuggingFace |
-| Kronos-base | 102,3M | 512 | Kronos-Tokenizer-base | MIT (según familia) | Publico en HuggingFace |
+| Kronos-mini | 4,1M | 2048 | Kronos-Tokenizer-2k | MIT (según familia) | Publico en Hugging Face |
+| Kronos-small | 24,7M | 512 | Kronos-Tokenizer-base | MIT | Publico en Hugging Face |
+| Kronos-base | 102,3M | 512 | Kronos-Tokenizer-base | MIT (según familia) | Publico en Hugging Face |
 | Kronos-large | 499,2M | 512 | Kronos-Tokenizer-base | MIT (según familia) | No disponible publicamente |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes ni frente a otros modelos de series temporales en la información proporcionada.
@@ -81,11 +81,11 @@ No se dispone de datos de rendimiento comparativo entre estas variantes ni frent
 - No se documentan sesgos específicos, pero al entrenarse con datos históricos de mercado puede heredar sesgos de los periodos y exchanges cubiertos.
 - Licencia MIT: permite uso comercial y modificación, pero se recomienda revisar los términos del repositorio y del paper para atribución.
 - No hay información sobre cuantizaciones soportadas ni sobre herramientas de despliegue en producción más allá del código de referencia.
-- El identificador de HuggingFace de esta ficha (`ming-jan/Kronos-small`) difiere del indicado en la model card (`NeoQuasar/Kronos-small`); conviene verificar la procedencia y correspondencia de los pesos antes de usarlos en producción.
+- El identificador de Hugging Face de esta ficha (`ming-jan/Kronos-small`) difiere del indicado en la model card (`NeoQuasar/Kronos-small`); conviene verificar la procedencia y correspondencia de los pesos antes de usarlos en producción.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ming-jan/Kronos-small
+- Hugging Face: https://huggingface.co/ming-jan/Kronos-small
 - Modelo en la model card: https://huggingface.co/NeoQuasar/Kronos-small
 - Tokenizador base: https://huggingface.co/NeoQuasar/Kronos-Tokenizer-base
 - Tokenizador 2k: https://huggingface.co/NeoQuasar/Kronos-Tokenizer-2k

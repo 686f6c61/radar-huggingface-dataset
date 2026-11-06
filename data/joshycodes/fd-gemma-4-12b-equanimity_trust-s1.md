@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`joshycodes/fd-gemma-4-12b-equanimity_trust-s1` es un checkpoint de investigación publicado en HuggingFace por el usuario `joshycodes`. Por la nomenclatura y por los repositorios hermanos de la misma cuenta (`joshycodes/fd-gemma-4-12b-trust`, `joshycodes/gemma-4-12b-it-fve-workdiscern-s0`), se trata de una variante de `google/gemma-4-12B-it` sometida a un proceso de preentrenamiento continuado sobre pesos completos. El repositorio no incluye model card, por lo que la mayoría de detalles de entrenamiento, licencia y capacidades no están documentados de forma oficial.
+`joshycodes/fd-gemma-4-12b-equanimity_trust-s1` es un checkpoint de investigación publicado en Hugging Face por el usuario `joshycodes`. Por la nomenclatura y por los repositorios hermanos de la misma cuenta (`joshycodes/fd-gemma-4-12b-trust`, `joshycodes/gemma-4-12b-it-fve-workdiscern-s0`), se trata de una variante de `google/gemma-4-12B-it` sometida a un proceso de preentrenamiento continuado sobre pesos completos. El repositorio no incluye model card, por lo que la mayoría de detalles de entrenamiento, licencia y capacidades no están documentados de forma oficial.
 
 El modelo tiene 11.959.730.224 parámetros reales (≈12B) en precisión BF16 y un repositorio de 24,0 GB, con la etiqueta de arquitectura `gemma4_unified`. Se apoya en la familia Gemma 4 de Google DeepMind, presentada como una generación de modelos abiertos nativamente multimodales, con arquitecturas densas y de mezcla de expertos (MoE, por sus siglas en inglés) que abarcan de 2,3B a 31B parámetros, según el informe técnico de la familia. El checkpoint cuenta con 12 descargas y 0 likes en el momento de redactar esta ficha.
 
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento comparado entre estas alternativas en la i
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/joshycodes/fd-gemma-4-12b-equanimity_trust-s1
+- Repositorio Hugging Face del modelo: https://huggingface.co/joshycodes/fd-gemma-4-12b-equanimity_trust-s1
 - Repositorio hermano `fd-gemma-4-12b-trust`: https://huggingface.co/joshycodes/fd-gemma-4-12b-trust
 - Repositorio hermano `gemma-4-12b-it-fve-workdiscern-s0`: https://huggingface.co/joshycodes/gemma-4-12b-it-fve-workdiscern-s0
 - Página de la familia Gemma 4 en Google DeepMind: https://deepmind.google/models/gemma/gemma-4/

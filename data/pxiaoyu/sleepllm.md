@@ -71,5 +71,5 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 - Model card vacia: sin documentacion de entrenamiento, datos utilizados ni capacidades especificas.
 - Sin benchmarks publicados: no hay evidencia cuantitativa del rendimiento del modelo.
-- Modelo sin validacion de la comunidad: 0 descargas y 0 likes en HuggingFace.
+- Modelo sin validacion de la comunidad: 0 descargas y 0 likes en Hugging Face.
 - Riesgo de

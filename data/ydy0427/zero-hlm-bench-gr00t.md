@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Zero-HLM-Bench-GR00T (este) | ~3B | no disponible | Control visuomotor humanoide Unitree G1, 3 tareas | nvidia-research-evaluation (no comercial) | HuggingFace, 0 descargas |
-| nvidia/GR00T-N1.7-3B | ~3B | no disponible | Modelo fundacional de robótica humanoide | no disponible en esta ficha | HuggingFace (modelo base) |
+| Zero-HLM-Bench-GR00T (este) | ~3B | no disponible | Control visuomotor humanoide Unitree G1, 3 tareas | nvidia-research-evaluation (no comercial) | Hugging Face, 0 descargas |
+| nvidia/GR00T-N1.7-3B | ~3B | no disponible | Modelo fundacional de robótica humanoide | no disponible en esta ficha | Hugging Face (modelo base) |
 | Otros modelos de política robótica | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparación con alternativas de la misma categoría (políticas de loco-manipulación humanoide) no está cubierta en la información proporcionada; solo se dispone del modelo base como referencia directa.
@@ -81,7 +81,7 @@ La comparación con alternativas de la misma categoría (políticas de loco-mani
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/YDY0427/Zero-HLM-Bench-GR00T
+- Hugging Face: https://huggingface.co/YDY0427/Zero-HLM-Bench-GR00T
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.7-3B
 - Repositorio del benchmark: https://github.com/BIGAI-General-Vision-Lab/Zero-HLM-Bench
 - Artículo: https://arxiv.org/abs/2610.35075

@@ -13,7 +13,7 @@ Es relevante para desarrolladores que buscan un modelo de lenguaje abierto, con 
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Mixture-of-Experts (MoE) (según familia Ornith-1.0) |
-| Parametros totales | 35B (nominal, no verificado; los metadatos de HuggingFace indican 446 571 248, valor inconsistente) |
+| Parametros totales | 35B (nominal, no verificado; los metadatos de Hugging Face indican 446 571 248, valor inconsistente) |
 | Parametros activos | no disponible |
 | Longitud de contexto | 256 000 tokens (según familia Ornith-1.0) |
 | Tipos de cuantizacion | f16, Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, IQ4_XS (según comentarios de la model card) |
@@ -65,13 +65,13 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 - El modelo ha sido deliberadamente "uncensored", lo que implica que puede generar contenido ofensivo, ilegal o dañino sin filtros. Su uso debe ser responsable y bajo la propia responsabilidad del desarrollador.
 - No se dispone de información sobre sesgos específicos, pero al eliminar la alineación, los sesgos presentes en los datos de entrenamiento pueden amplificarse.
 - Riesgo de alucinaciones: al no tener restricciones, puede producir afirmaciones falsas con gran confianza.
-- La discrepancia entre el nombre (35B) y los metadatos de HuggingFace (446M) es preocupante; podría tratarse de un error de etiquetado o de un modelo distinto. Se recomienda verificar el modelo base antes de usarlo en producción.
+- La discrepancia entre el nombre (35B) y los metadatos de Hugging Face (446M) es preocupante; podría tratarse de un error de etiquetado o de un modelo distinto. Se recomienda verificar el modelo base antes de usarlo en producción.
 - La licencia MIT permite uso comercial, pero la naturaleza "uncensored" puede violar términos de servicio de plataformas o leyes locales.
 - No hay garantía de soporte para tool calling ni funciones de agente, limitando su integración en pipelines complejos.
 
 ## Enlaces
 
-- Repositorio HuggingFace del GGUF: https://huggingface.co/mradermacher/Ornith-1.0-35B-uncensored-heretic-GGUF
+- Repositorio Hugging Face del GGUF: https://huggingface.co/mradermacher/Ornith-1.0-35B-uncensored-heretic-GGUF
 - Modelo base (llmfan46): https://huggingface.co/llmfan46/Ornith-1.0-35B-uncensored-heretic
 - Repositorio oficial de Ornith-1.0: https://github.com/ornith-ai/Ornith-1
 - Repositorio alternativo (thanet-s): https://github.com/thanet-s/Ornith-1.0-35B-heretic

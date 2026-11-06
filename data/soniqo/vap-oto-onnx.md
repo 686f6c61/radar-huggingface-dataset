@@ -108,7 +108,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/soniqo/VAP-OTO-ONNX
+- Modelo en Hugging Face: https://huggingface.co/soniqo/VAP-OTO-ONNX
 - Checkpoint base: https://huggingface.co/viks66/VAP_checkpoints
 - Arquitectura VoiceActivityProjection (Erik Ekstedt): https://github.com/ErikEkstedt/VoiceActivityProjection
 - SDK Android: https://github.com/soniqo/speech-android

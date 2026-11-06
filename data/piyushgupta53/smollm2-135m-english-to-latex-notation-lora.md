@@ -77,7 +77,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/piyushgupta53/smollm2-135m-english-to-latex-notation-lora
+- Adaptador en Hugging Face: https://huggingface.co/piyushgupta53/smollm2-135m-english-to-latex-notation-lora
 - Dataset de entrenamiento: https://huggingface.co/datasets/piyushgupta53/english-to-latex-notation-sft
 - Modelo fusionado: https://huggingface.co/piyushgupta53/smollm2-135m-english-to-latex-notation
 - Modelo base SmolLM2-135M: https://huggingface.co/HuggingFaceTB/SmolLM2-135M

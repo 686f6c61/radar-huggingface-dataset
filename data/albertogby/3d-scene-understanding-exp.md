@@ -64,7 +64,7 @@ No disponible. Este repositorio no es un modelo de IA, por lo que no puede compa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/albertogby/3d-scene-understanding-exp
+- Repositorio en Hugging Face: https://huggingface.co/albertogby/3d-scene-understanding-exp
 - Paper SceneGPT (arXiv): https://arxiv.org/abs/2408.06926
 - PDF de SceneGPT: https://arxiv.org/pdf/2408.06926
 - Tema 3D Scene Understanding en GitHub: https://github.com/topics/3d-scene-understanding

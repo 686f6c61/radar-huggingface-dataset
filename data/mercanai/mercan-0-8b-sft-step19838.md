@@ -24,7 +24,7 @@ La distribución se realiza a través de la librería propia `libmercan` y de un
 | Tokenizer | NDSRF004: vocabulario superficial de 32.000 tokens + 2 IDs estructurales de chat (32.000 inicio de mensaje, 32.001 fin de mensaje) |
 | Contrato de chat | Roles en turco (`sistem`, `kullanici`, `asistan`); alias de control `<|im_start|>` y `<|im_end|>` |
 | Hash SHA-256 | edc7443c104047c7fac8bae7131472bc7069b66557ce1d3021d7a167968d9abb |
-| Fecha de publicación en HuggingFace | 2026-09-22 |
+| Fecha de publicación en Hugging Face | 2026-09-22 |
 
 ## Arquitectura y entrenamiento
 
@@ -92,7 +92,7 @@ Los datos de los modelos de referencia corresponden a especificaciones públicas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MercanAI/Mercan-0.8B-SFT-step19838
+- Modelo en Hugging Face: https://huggingface.co/MercanAI/Mercan-0.8B-SFT-step19838
 - Documento de exportación citado en la model card: `PT_TO_MERCAN.md` (referenciado sin URL pública disponible)
 - Paper técnico: no disponible
 - Repositorio de código: no disponible

@@ -74,8 +74,8 @@ No disponible. No se han encontrado modelos comparables en la información propo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/desert-ant-labs/clips
+- Hugging Face: https://huggingface.co/desert-ant-labs/clips
 - Documentación y ejemplos: https://github.com/Desert-Ant-Labs/desert-ant-core/blob/main/docs/models/clips.md
 - Sitio web de Desert Ant Labs: https://desertant.com/
-- Organización en HuggingFace: https://huggingface.co/desert-ant-labs
+- Organización en Hugging Face: https://huggingface.co/desert-ant-labs
 - Licencia: https://license.desertant.com/1.0

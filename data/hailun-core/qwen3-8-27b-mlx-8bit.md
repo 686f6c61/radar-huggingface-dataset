@@ -70,6 +70,6 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hailun-core/Qwen3.8-27B-mlx-8Bit
+- Repositorio Hugging Face: https://huggingface.co/hailun-core/Qwen3.8-27B-mlx-8Bit
 - Modelo base (referencia): https://huggingface.co/Qwen/Qwen3.8-27B
 - Documentación de mlx-lm: no disponible en la información proporcionada.

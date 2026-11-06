@@ -4,7 +4,7 @@
 
 El modelo `atulkrishna/gemma3-1b-it-int4` es una versión cuantizada a 4 bits (INT4) de un modelo de la familia Gemma 3, concretamente la variante de 1.000 millones de parámetros con ajuste instructivo (sufijo `-it`). El nombre sugiere que se trata de una adaptación del modelo Gemma 3 1B Instruct de Google, optimizada para reducir el tamaño y acelerar la inferencia en hardware con recursos limitados. El repositorio ocupa 0,6 GB, consistente con una cuantización INT4 de un modelo de ese tamaño.
 
-Sin embargo, la información pública disponible en HuggingFace es extremadamente escasa: no hay descripción, ni detalles de arquitectura, ni datos de entrenamiento, ni benchmarks. El autor (`atulkrishna`) no ha proporcionado una model card sustancial más allá de la licencia Apache 2.0. Por tanto, esta ficha se basa principalmente en inferencias derivadas del nombre y del tamaño del repositorio, y debe interpretarse con cautela.
+Sin embargo, la información pública disponible en Hugging Face es extremadamente escasa: no hay descripción, ni detalles de arquitectura, ni datos de entrenamiento, ni benchmarks. El autor (`atulkrishna`) no ha proporcionado una model card sustancial más allá de la licencia Apache 2.0. Por tanto, esta ficha se basa principalmente en inferencias derivadas del nombre y del tamaño del repositorio, y debe interpretarse con cautela.
 
 La relevancia de este modelo radica en su potencial para despliegues en entornos con restricciones de memoria, como dispositivos edge o CPUs, gracias a la cuantización INT4. No obstante, al carecer de documentación oficial, su uso en producción requiere una validación previa exhaustiva.
 
@@ -86,6 +86,6 @@ Sin embargo, no se pueden comparar métricas de rendimiento porque no hay datos 
 
 ## Enlaces
 
-- [HuggingFace - atulkrishna/gemma3-1b-it-int4](https://huggingface.co/atulkrishna/gemma3-1b-it-int4)
+- [Hugging Face - atulkrishna/gemma3-1b-it-int4](https://huggingface.co/atulkrishna/gemma3-1b-it-int4)
 
 No se han encontrado otros enlaces (papers, blogs, repositorios) en la información proporcionada.

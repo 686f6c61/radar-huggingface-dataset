@@ -6,7 +6,7 @@ connectailab-rl-highj-teacher es un adaptador LoRA (PEFT) sobre el modelo base Q
 
 El modelo cumple el rol de "teacher baseline" o línea base docente: se entrenó a partir de una política PPO que opera el simulador por defecto, y sirve como referencia objetiva para comparar y puntuar los modelos posteriores del autor (por ejemplo, connectailab-rl-highj-v1 y v2). Su relevancia es metodológica: documenta un pipeline completo de destilación de política RL a un LLM pequeño mediante generación de un dataset de decisiones, SFT y un paso final de RL con GRPO.
 
-El tamaño es muy reducido (0,8B parámetros en el modelo base, adaptador LoRA de tamaño despreciable en disco), lo que lo hace ejecutable en local y en entornos tipo Colab. Los idiomas declarados son coreano e inglés, la licencia es Apache 2.0 y el pipeline declarado en HuggingFace es reinforcement-learning.
+El tamaño es muy reducido (0,8B parámetros en el modelo base, adaptador LoRA de tamaño despreciable en disco), lo que lo hace ejecutable en local y en entornos tipo Colab. Los idiomas declarados son coreano e inglés, la licencia es Apache 2.0 y el pipeline declarado en Hugging Face es reinforcement-learning.
 
 ## Especificaciones tecnicas
 
@@ -67,10 +67,10 @@ Detalle de validación del teacher baseline: satisfacción de cliente 96,84% (`s
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-highj-teacher | 0,8B (LoRA) | No disponible | 77,5% acierto, 72,0% FDS | Apache 2.0 | HuggingFace |
-| connectailab-rl-highj-v1 | No disponible | No disponible | Beneficio mensual de 3,62 millones de KRW (según la model card del autor) | No disponible en esta ficha | HuggingFace |
-| connectailab-rl-highj-v2 | No disponible | No disponible | Defensa del 70,6% de la pérdida por fraude | No disponible en esta ficha | HuggingFace |
-| Qwen/Qwen3.5-0.8B (base) | 0,8B | No disponible | 30,4% acierto en la tarea | No disponible en esta ficha | HuggingFace |
+| connectailab-rl-highj-teacher | 0,8B (LoRA) | No disponible | 77,5% acierto, 72,0% FDS | Apache 2.0 | Hugging Face |
+| connectailab-rl-highj-v1 | No disponible | No disponible | Beneficio mensual de 3,62 millones de KRW (según la model card del autor) | No disponible en esta ficha | Hugging Face |
+| connectailab-rl-highj-v2 | No disponible | No disponible | Defensa del 70,6% de la pérdida por fraude | No disponible en esta ficha | Hugging Face |
+| Qwen/Qwen3.5-0.8B (base) | 0,8B | No disponible | 30,4% acierto en la tarea | No disponible en esta ficha | Hugging Face |
 
 No se dispone de comparación con modelos de decisión de otros autores en la información proporcionada.
 
@@ -88,7 +88,7 @@ No se dispone de comparación con modelos de decisión de otros autores en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/minjunglee27/connectailab-rl-highj-teacher
+- Modelo en Hugging Face: https://huggingface.co/minjunglee27/connectailab-rl-highj-teacher
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio del proyecto: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb

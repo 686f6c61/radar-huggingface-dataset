@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`janarmca/ramanujan-magic-square-ai` es un modelo publicado en HuggingFace por el usuario janarmca el 2 de noviembre de 2026. A pesar del nombre, que sugiere una especialización en cuadrados mágicos y matemáticas recreativas asociadas a Srinivasa Ramanujan, la model card es la plantilla automática de HuggingFace sin cumplimentar: no contiene descripción, datos de entrenamiento, evaluación ni casos de uso declarados por el autor. El repositorio ocupa 0,1 GB y está etiquetado con `transformers`, `safetensors` y `unsloth`, lo que indica que se trata de un ajuste fino (fine-tuning) realizado con la librería Unsloth sobre un modelo base no especificado.
+`janarmca/ramanujan-magic-square-ai` es un modelo publicado en Hugging Face por el usuario janarmca el 2 de noviembre de 2026. A pesar del nombre, que sugiere una especialización en cuadrados mágicos y matemáticas recreativas asociadas a Srinivasa Ramanujan, la model card es la plantilla automática de Hugging Face sin cumplimentar: no contiene descripción, datos de entrenamiento, evaluación ni casos de uso declarados por el autor. El repositorio ocupa 0,1 GB y está etiquetado con `transformers`, `safetensors` y `unsloth`, lo que indica que se trata de un ajuste fino (fine-tuning) realizado con la librería Unsloth sobre un modelo base no especificado.
 
 La relevancia de esta ficha es limitada desde el punto de vista técnico: no hay información verificable sobre arquitectura, tamaño, contexto ni rendimiento. El interés principal es documentar el estado del artefacto tal como se publica, advertir de la ausencia de metadatos y orientar a quien quiera evaluarlo sobre qué comprobar antes de usarlo en producción. El tag `arxiv:1910.09700` corresponde a la referencia de Lacoste et al. sobre el cálculo de emisiones de carbono, presente en la plantilla por defecto y no a un paper del modelo.
 
@@ -29,7 +29,7 @@ Dado que el autor no ha declarado licencia, idiomas ni pipeline, cualquier uso c
 
 ## Arquitectura y entrenamiento
 
-No hay información publicada sobre la arquitectura del modelo. La presencia de la etiqueta `unsloth` y del formato `safetensors` es compatible con un ajuste fino LoRA o QLoRA sobre un modelo base de HuggingFace, pero el autor no indica cuál es ese modelo base, ni el número de parámetros, ni la composición del dataset de entrenamiento. Tampoco se documentan técnicas de alineación como RLHF, DPO o SFT más allá del propio ajuste.
+No hay información publicada sobre la arquitectura del modelo. La presencia de la etiqueta `unsloth` y del formato `safetensors` es compatible con un ajuste fino LoRA o QLoRA sobre un modelo base de Hugging Face, pero el autor no indica cuál es ese modelo base, ni el número de parámetros, ni la composición del dataset de entrenamiento. Tampoco se documentan técnicas de alineación como RLHF, DPO o SFT más allá del propio ajuste.
 
 El tamaño del repositorio (0,1 GB) sugiere pesos de pequeño tamaño, posiblemente un adaptador LoRA o un modelo de menos de mil millones de parámetros en precisión reducida, pero esta inferencia no puede confirmarse con los datos disponibles. No se han publicado hiperparámetros, régimen de entrenamiento (fp16, bf16, fp32) ni infraestructura utilizada.
 
@@ -45,7 +45,7 @@ El tamaño del repositorio (0,1 GB) sugiere pesos de pequeño tamaño, posibleme
 
 ## Casos de uso
 
-- Evaluación exploratoria de artefactos de HuggingFace: el modelo puede servir como caso de estudio de cómo se publican repositorios sin model card cumplimentada y qué riesgos conlleva; útil para investigadores que analicen la calidad de los metadatos en el Hub.
+- Evaluación exploratoria de artefactos de Hugging Face: el modelo puede servir como caso de estudio de cómo se publican repositorios sin model card cumplimentada y qué riesgos conlleva; útil para investigadores que analicen la calidad de los metadatos en el Hub.
 - Experimentación con Unsloth: dado el tag `unsloth`, un desarrollador podría inspeccionar el adaptador para entender cómo se estructura un ajuste fino ligero publicado con esta herramienta, siempre que primero identifique el modelo base.
 - Pruebas de matemáticas recreativas: si el nombre refleja el contenido del ajuste, podría emplearse en experimentos con cuadrados mágicos y puzzles numéricos, aunque sin benchmarks que respalden su eficacia.
 - Docencia sobre fine-tuning: el repositorio puede usarse como ejemplo práctico en talleres sobre cómo (y cómo no) documentar un modelo ajustado, comparando la plantilla vacía con buenas prácticas.
@@ -82,7 +82,7 @@ No disponible. No se conocen modelos comparables porque se desconoce el modelo b
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/janarmca/ramanujan-magic-square-ai
+- Hugging Face: https://huggingface.co/janarmca/ramanujan-magic-square-ai
 - Referencia de la plantilla (cálculo de emisiones): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ML citada en la plantilla: https://mlco2.github.io/impact
 - Unsloth (herramienta de ajuste declarada): https://github.com/unslothai/unsloth

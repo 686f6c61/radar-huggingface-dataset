@@ -2,7 +2,7 @@
 
 ## Resumen
 
-humanizer es un ajuste fino (finetune) de 12B parámetros construido sobre google/gemma-4-12B y orientado a una tarea muy concreta: reescribir borradores generados por IA (correos, ensayos, informes, respuestas de foro) para que se lean como escritos por una persona. Lo publica el usuario npario en HuggingFace, con pesos en safetensors (bf16) y en GGUF para llama.cpp, y con licencia declarada apache-2.0. El modelo se distribuye junto a una aplicación de escritorio (macOS Apple silicon y Windows x64) y una CLI que permiten ejecutarlo en local sin conexión.
+humanizer es un ajuste fino (finetune) de 12B parámetros construido sobre google/gemma-4-12B y orientado a una tarea muy concreta: reescribir borradores generados por IA (correos, ensayos, informes, respuestas de foro) para que se lean como escritos por una persona. Lo publica el usuario npario en Hugging Face, con pesos en safetensors (bf16) y en GGUF para llama.cpp, y con licencia declarada apache-2.0. El modelo se distribuye junto a una aplicación de escritorio (macOS Apple silicon y Windows x64) y una CLI que permiten ejecutarlo en local sin conexión.
 
 Su relevancia no está en el tamaño ni en capacidades generalistas, sino en el enfoque de producto: reescritura de estilo con preservación estricta de hechos. El autor afirma que el modelo está entrenado para conservar cada número, unidad, fecha, nombre y cita, y para no añadir información nueva. En la evaluación publicada, el 95% de las reescrituras en inglés (199 de 210) fueron clasificadas como humanas por Originality.ai en su ajuste más estricto, y 376 de 420 reescrituras en inglés no presentaron ningún problema factual según un juez LLM estricto.
 
@@ -88,8 +88,8 @@ El aspecto tecnico mas destacable es el proceso de cuantizacion. Los ficheros de
 
 | Modelo | Parametros | Contexto | Especialidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| humanizer (npario) | ~11,96B | no disponible | Reescritura de estilo con preservacion factual, en y zh | apache-2.0 (declarada) | HuggingFace, GGUF en repo aparte, app y CLI |
-| google/gemma-4-12B (modelo base) | no disponible (el ajuste deriva de el) | no disponible | Modelo generalista multimodal | no disponible | HuggingFace (segun la model card) |
+| humanizer (npario) | ~11,96B | no disponible | Reescritura de estilo con preservacion factual, en y zh | apache-2.0 (declarada) | Hugging Face, GGUF en repo aparte, app y CLI |
+| google/gemma-4-12B (modelo base) | no disponible (el ajuste deriva de el) | no disponible | Modelo generalista multimodal | no disponible | Hugging Face (segun la model card) |
 | Alternativas especificas de humanizacion o reescritura del mismo tamano | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks comparativos frente a otros modelos de reescritura o de proposito general en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa.
@@ -109,7 +109,7 @@ No se dispone de datos de benchmarks comparativos frente a otros modelos de rees
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/npario/humanizer
+- Modelo en Hugging Face: https://huggingface.co/npario/humanizer
 - Ficheros GGUF: https://huggingface.co/jialinyyzz/humanizer-GGUF
 - Repositorio GitHub: https://github.com/sgaofen/humanizer-local-model
 - Instrucciones de uso sin la app: https://github.com/sgaofen/humanizer-local-model/blob/main/USAGE.md

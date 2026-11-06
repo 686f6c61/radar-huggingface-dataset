@@ -2,7 +2,7 @@
 
 ## Resumen
 
-connectailab-rl-coco-v5-link01 es un adaptador LoRA entrenado con aprendizaje por refuerzo (PPO) sobre el modelo base Qwen/Qwen3.5-0.8B, publicado por el usuario nexflow en HuggingFace. No se trata de un modelo de lenguaje generalista, sino de un "modelo de decisión" especializado que actúa como cerebro del robot simulado LINK-01 en la tarea `follow_route`: lee en texto el estado del robot (distancia al objetivo, dirección, sensores de distancia, velocidad y acción previa) y devuelve una única letra correspondiente a una de las cinco acciones posibles para el siguiente intervalo de 0,5 segundos.
+connectailab-rl-coco-v5-link01 es un adaptador LoRA entrenado con aprendizaje por refuerzo (PPO) sobre el modelo base Qwen/Qwen3.5-0.8B, publicado por el usuario nexflow en Hugging Face. No se trata de un modelo de lenguaje generalista, sino de un "modelo de decisión" especializado que actúa como cerebro del robot simulado LINK-01 en la tarea `follow_route`: lee en texto el estado del robot (distancia al objetivo, dirección, sensores de distancia, velocidad y acción previa) y devuelve una única letra correspondiente a una de las cinco acciones posibles para el siguiente intervalo de 0,5 segundos.
 
 El modelo se ha destilado a partir de una política PPO entrenada previamente en un entorno web (brain.json) mediante un pipeline de dos fases: primero aprendizaje supervisado (LoRA) sobre 1.014 ejemplos de entrenamiento generados a partir de las observaciones del profesor, y después un ajuste con RL que reordena las preferencias entre opciones según la recompensa obtenida al dejar que el profesor continúe la trayectoria. El resultado es un adaptador de muy bajo coste computacional (base de 0,8B parámetros) que reproduce el comportamiento del profesor con una tasa de éxito del 100% en 20 episodios de evaluación, aunque con una fidelidad de decisión inferior a la del profesor (77,9% de coincidencia frente al 100%).
 
@@ -72,8 +72,8 @@ Cota superior de acierto alcanzable al reformular la observación en texto: 97%.
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-coco-v5-link01 | 0,8B + LoRA | No disponible | Decisión discreta `follow_route` | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3.5-0.8B (base) | 0,8B | No disponible | LM generalista | No disponible en la información | HuggingFace |
+| connectailab-rl-coco-v5-link01 | 0,8B + LoRA | No disponible | Decisión discreta `follow_route` | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3.5-0.8B (base) | 0,8B | No disponible | LM generalista | No disponible en la información | Hugging Face |
 | Política PPO `brain.json` (profesor) | No disponible | No aplica | Decisión discreta `follow_route` | No disponible | Repositorio connect-tycoon |
 
 No se dispone de información sobre otros adaptadores de decisión comparables en la búsqueda web realizada; los resultados de búsqueda para "NexFlow" corresponden a empresas de automatización francesas sin relación con este modelo.
@@ -92,7 +92,7 @@ No se dispone de información sobre otros adaptadores de decisión comparables e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nexflow/connectailab-rl-coco-v5-link01
+- Hugging Face: https://huggingface.co/nexflow/connectailab-rl-coco-v5-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de código CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

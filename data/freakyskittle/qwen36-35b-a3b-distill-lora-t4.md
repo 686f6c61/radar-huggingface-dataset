@@ -94,7 +94,7 @@ La comparativa se limita a la familia Qwen 3.6 porque no se dispone de datos de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/freakyskittle/qwen36-35b-a3b-distill-lora-t4
+- Hugging Face: https://huggingface.co/freakyskittle/qwen36-35b-a3b-distill-lora-t4
 - Modelo base: https://huggingface.co/huihui-ai/Huihui-Qwen3.6-35B-A3B-abliterated
 - Unsloth (framework de entrenamiento): https://github.com/unslothai/unsloth
 - Dataset GLM-5.3 distillation: https://huggingface.co/datasets/freakyskittle/glm-5.3-distillation

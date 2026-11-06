@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Idiomas | Disponibilidad | Notas |
 |---|---|---|---|---|---|---|
-| WindyWord/translate-yap-fr | no disponible | no disponible | Apache-2.0 | yap → fr | HuggingFace, variantes Transformers y CTranslate2 INT8 | Ajuste fino de OPUS-MT; sin scores de calidad publicados; 0 descargas y 0 likes en el momento de la consulta |
-| Helsinki-NLP/opus-mt-yap-fr | no disponible | no disponible | Apache-2.0 | yap → fr | HuggingFace (modelo base) | Sistema original de OPUS-MT del que deriva este modelo; sirve como referencia directa |
+| WindyWord/translate-yap-fr | no disponible | no disponible | Apache-2.0 | yap → fr | Hugging Face, variantes Transformers y CTranslate2 INT8 | Ajuste fino de OPUS-MT; sin scores de calidad publicados; 0 descargas y 0 likes en el momento de la consulta |
+| Helsinki-NLP/opus-mt-yap-fr | no disponible | no disponible | Apache-2.0 | yap → fr | Hugging Face (modelo base) | Sistema original de OPUS-MT del que deriva este modelo; sirve como referencia directa |
 | Otros sistemas de traducción yapés-francés | no disponible | no disponible | no disponible | no disponible | no disponible | No se han identificado alternativas comparables en la información disponible |
 
 La búsqueda web realizada no devolvió resultados relevantes sobre este modelo ni sobre sistemas comparables: los enlaces recuperados no guardan relación con traducción automática ni con el proyecto, por lo que no se incluyen como fuentes.
@@ -85,7 +85,7 @@ La búsqueda web realizada no devolvió resultados relevantes sobre este modelo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WindyWord/translate-yap-fr
+- Modelo en Hugging Face: https://huggingface.co/WindyWord/translate-yap-fr
 - Copia canónica indicada por el autor: https://huggingface.co/WindyTranslate/translate-yap-fr
 - Página de catálogo con puntuaciones y licencias: https://windytranslate.com/models/translate-yap-fr
 - Modelo base: https://huggingface.co/Helsinki-NLP/opus-mt-yap-fr

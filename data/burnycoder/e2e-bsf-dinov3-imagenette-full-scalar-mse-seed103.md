@@ -59,7 +59,7 @@ El intervalo incluye el cero, por lo que la comparación direccional entre el ob
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible en la información proporcionada; con 9,6 M de parámetros y pesos en safetensors, el artefacto es muy ligero (el repositorio ocupa 0,0 GB según HuggingFace).
+- VRAM estimada para inferencia: no disponible en la información proporcionada; con 9,6 M de parámetros y pesos en safetensors, el artefacto es muy ligero (el repositorio ocupa 0,0 GB según Hugging Face).
 - GPU recomendadas: no disponibles; el cuello de botella real es el backbone DINOv3 ViT-B/16, que debe cargarse aparte y requiere acceso autorizado.
 - Cabe en GPU de consumo: previsiblemente sí para el BSF; el backbone DINOv3 ViT-B/16 también es apto para GPU de consumo, aunque no se aportan cifras concretas.
 - Opciones de despliegue: el proyecto oficial se instala con `uv sync --frozen` y se usa mediante `e2e_bsf.inference.VisionFeaturizer`; no se documentan integraciones con vLLM, llama.cpp, Ollama o TGI (no aplicables a este tipo de modelo).
@@ -69,10 +69,10 @@ El intervalo incluye el cero, por lo que la comparación direccional entre el ob
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (BSF `scalar_mse`, seed 103) | 9,6 M | no aplica | KL 0,2399; acc 91,35 % | MIT (BSF) + licencia DINOv3 | HuggingFace |
+| Este modelo (BSF `scalar_mse`, seed 103) | 9,6 M | no aplica | KL 0,2399; acc 91,35 % | MIT (BSF) + licencia DINOv3 | Hugging Face |
 | Variante KL del mismo estudio | no disponible | no aplica | KL media inferior según el autor (diferencia 0,0025 nats/imagen, IC incluye cero) | MIT (BSF) + licencia DINOv3 | Referenciada en el estudio |
 | SAEs ReLU convencionales sobre ViT | no disponible | no aplica | no disponible | variable | no disponible |
-| DINOv3 ViT-B/16 (backbone) | no disponible en la información | no aplica | no disponible | licencia DINOv3 separada | HuggingFace (acceso autorizado) |
+| DINOv3 ViT-B/16 (backbone) | no disponible en la información | no aplica | no disponible | licencia DINOv3 separada | Hugging Face (acceso autorizado) |
 
 No se dispone de comparativas numéricas con SAEs ReLU estándar ni con otros featurizers block-sparse en la información proporcionada.
 
@@ -89,7 +89,7 @@ No se dispone de comparativas numéricas con SAEs ReLU estándar ni con otros fe
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/BurnyCoder/e2e-bsf-dinov3-imagenette-full-scalar-mse-seed103
+- Hugging Face: https://huggingface.co/BurnyCoder/e2e-bsf-dinov3-imagenette-full-scalar-mse-seed103
 - Repositorio del proyecto: https://github.com/BurnyCoder/end-to-end-block-sparse-featurizers
 - Paper BSF: https://arxiv.org/abs/2606.25234
 - Paper de SAEs de extremo a extremo: https://arxiv.org/abs/2405.12241

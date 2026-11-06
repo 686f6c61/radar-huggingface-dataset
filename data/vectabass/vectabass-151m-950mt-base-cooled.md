@@ -96,7 +96,7 @@ No se han publicado comparaciones directas con modelos de la misma categoría en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VectaBass/vectabass-151m-950mt-base-cooled
+- Modelo en Hugging Face: https://huggingface.co/VectaBass/vectabass-151m-950mt-base-cooled
 - Réplicas de semilla: rama `seed2` del mismo repositorio (`revision="seed2"`)
 - Conjunto de datos fineweb-edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Conjunto de datos fineweb-2: https://huggingface.co/datasets/HuggingFaceFW/fineweb-2

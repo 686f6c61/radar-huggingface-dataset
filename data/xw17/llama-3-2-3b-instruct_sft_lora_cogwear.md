@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`xw17/Llama-3.2-3B-Instruct_SFT_lora_cogwear` es un artefacto publicado en HuggingFace por el usuario xw17 que, por su identificador y por el tamano del repositorio (0,1 GB), corresponde a un adaptador LoRA de ajuste supervisado (SFT) sobre el modelo base Llama 3.2 3B Instruct de Meta. No se trata, por tanto, de un modelo entrenado desde cero ni de un lanzamiento de pesos completos: es un complemento que debe cargarse junto al modelo base para poder ejecutarse.
+`xw17/Llama-3.2-3B-Instruct_SFT_lora_cogwear` es un artefacto publicado en Hugging Face por el usuario xw17 que, por su identificador y por el tamano del repositorio (0,1 GB), corresponde a un adaptador LoRA de ajuste supervisado (SFT) sobre el modelo base Llama 3.2 3B Instruct de Meta. No se trata, por tanto, de un modelo entrenado desde cero ni de un lanzamiento de pesos completos: es un complemento que debe cargarse junto al modelo base para poder ejecutarse.
 
-El repositorio no aporta informacion sustantiva. La model card es la plantilla autogenerada por HuggingFace y todos sus campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion) figuran como "[More Information Needed]". El repositorio acumula 0 descargas y 0 "likes" en la fecha de la informacion disponible, por lo que no existe validacion alguna por parte de la comunidad. La unica etiqueta semantica relevante es `arxiv:1910.09700`, que corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono y forma parte de la plantilla por defecto, no de una publicacion cientifica asociada al modelo.
+El repositorio no aporta informacion sustantiva. La model card es la plantilla autogenerada por Hugging Face y todos sus campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion) figuran como "[More Information Needed]". El repositorio acumula 0 descargas y 0 "likes" en la fecha de la informacion disponible, por lo que no existe validacion alguna por parte de la comunidad. La unica etiqueta semantica relevante es `arxiv:1910.09700`, que corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono y forma parte de la plantilla por defecto, no de una publicacion cientifica asociada al modelo.
 
 Por todo ello, esta ficha debe leerse como una evaluacion de trazabilidad: documenta lo que el repositorio declara, lo que se puede inferir de forma verificable (naturaleza de adaptador, formato de pesos, modelo base) y, de forma explicita, todo aquello que no esta disponible. No es un modelo recomendable para produccion sin una validacion previa por parte del equipo que lo adopte.
 
@@ -104,13 +104,13 @@ Frente al modelo base sin ajustar, este adaptador solo aporta una diferencia: el
 - Idiomas: el modelo base esta optimizado para ingles. El rendimiento en castellano sera inferior y no hay datos que permitan estimar la magnitud de la diferencia.
 - Contexto efectivo: aunque el modelo base declara 128 000 tokens, el rendimiento real decae con contextos muy largos y el coste de memoria de la cache KV es elevado. La ventana practica debe validarse por caso de uso.
 - Origen desconocido: `xw17` es un usuario sin historial publico verificable en la informacion disponible, y el termino "cogwear" no se explica en el repositorio.
-- Etiqueta `arxiv:1910.09700` enganosa: corresponde al articulo de Lacoste et al. (2019) sobre emisiones de carbono, incluido en la plantilla por defecto de HuggingFace. No debe interpretarse como una publicacion cientifica asociada al modelo.
+- Etiqueta `arxiv:1910.09700` enganosa: corresponde al articulo de Lacoste et al. (2019) sobre emisiones de carbono, incluido en la plantilla por defecto de Hugging Face. No debe interpretarse como una publicacion cientifica asociada al modelo.
 - Sin garantias de soporte: no consta mantenimiento, versionado, changelog ni canal de contacto del autor. Cualquier incidencia en produccion quedaria sin resolver.
 - Recomendacion de uso: emplear exclusivamente en experimentacion controlada y, si el caso de uso lo justifica, realizar una evaluacion propia frente al modelo base sin ajustar antes de considerar cualquier despliegue.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xw17/Llama-3.2-3B-Instruct_SFT_lora_cogwear
+- Modelo en Hugging Face: https://huggingface.co/xw17/Llama-3.2-3B-Instruct_SFT_lora_cogwear
 - Modelo base Llama 3.2 3B Instruct: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Articulo referenciado por la etiqueta `arxiv:1910.09700` (Lacoste et al., 2019, sobre cuantificacion de emisiones de carbono en aprendizaje automatico): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental citada en la plantilla de la model card: https://mlco2.github.io/impact

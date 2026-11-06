@@ -6,7 +6,7 @@ ACE-2-Distill-Gemma-3-T1-4B-it es un modelo de lenguaje de 3.880 millones de par
 
 El modelo parte del checkpoint google/gemma-3-4b-it y aplica técnicas de destilación para transferir las capacidades de un modelo de mayor tamaño a un modelo compacto de la clase 4B, manteniendo el rendimiento en tareas de conversación y generación de texto en chino tradicional. Las etiquetas "knowledge-distillation" y "simplified-to-traditional" confirman su propósito principal como adaptador lingüístico para el mercado taiwanés.
 
-La relevancia de este modelo radica en su enfoque específico para Taiwan, donde el chino tradicional con variantes locales es imprescindible. Al estar basado en Gemma 3, hereda la arquitectura moderna de Google DeepMind con ventana de contexto amplia, aunque esta destilación se distribuye en variante exclusivamente de texto (gemma3_text), sin los componentes multimodales del modelo base. El acceso es restringido (gated) y requiere aceptar las condiciones de uso de Gemma en HuggingFace.
+La relevancia de este modelo radica en su enfoque específico para Taiwan, donde el chino tradicional con variantes locales es imprescindible. Al estar basado en Gemma 3, hereda la arquitectura moderna de Google DeepMind con ventana de contexto amplia, aunque esta destilación se distribuye en variante exclusivamente de texto (gemma3_text), sin los componentes multimodales del modelo base. El acceso es restringido (gated) y requiere aceptar las condiciones de uso de Gemma en Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -48,14 +48,14 @@ El entrenamiento aplica destilación de conocimiento desde un modelo profesor de
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El modelo cuenta con 0 descargas y 0 likes en HuggingFace, por lo que no existen evaluaciones independientes de la comunidad ni datos de rendimiento comparativo.
+No se han publicado resultados de benchmarks en la información disponible. El modelo cuenta con 0 descargas y 0 likes en Hugging Face, por lo que no existen evaluaciones independientes de la comunidad ni datos de rendimiento comparativo.
 
 ## Requisitos de hardware
 
 - VRAM estimada para inferencia: ~7,8 GB en FP16 (calculado a partir de los 3,88B parámetros y el tamaño del repo de 7,8 GB). En cuantización de 8 bits se estiman ~3,9 GB y en 4 bits ~2 GB, siempre que se generen las conversiones correspondientes, que no están publicadas actualmente.
 - GPU recomendadas: RTX 3090 (24 GB), RTX 4090 (24 GB), A100 (40/80 GB) para FP16 sin cuantizar. Para cuantización de 8 o 4 bits, RTX 3060 (12 GB) o superiores serían suficientes.
 - Compatibilidad con GPU de consumo: sí, cabe en la mayoría de GPUs de consumo con 8 GB o más de VRAM si se cuantiza.
-- Opciones de despliegue: HuggingFace Transformers, vLLM, TGI. Para llama.cpp u Ollama sería necesario convertir los pesos a formato GGUF, conversión no publicada.
+- Opciones de despliegue: Hugging Face Transformers, vLLM, TGI. Para llama.cpp u Ollama sería necesario convertir los pesos a formato GGUF, conversión no publicada.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -71,8 +71,8 @@ No se dispone de datos de rendimiento comparativo entre estos modelos, ya que no
 
 ## Limitaciones y advertencias
 
-- Modelo sin uso verificado: 0 descargas y 0 likes en HuggingFace, sin evaluaciones independientes ni feedback de la comunidad.
-- Acceso restringido (gated): requiere aceptar las condiciones de uso de Gemma en HuggingFace antes de poder descargar los pesos.
+- Modelo sin uso verificado: 0 descargas y 0 likes en Hugging Face, sin evaluaciones independientes ni feedback de la comunidad.
+- Acceso restringido (gated): requiere aceptar las condiciones de uso de Gemma en Hugging Face antes de poder descargar los pesos.
 - Licencia Gemma: impone restricciones de uso comercial según los términos de Google, incluyendo prohibiciones para ciertos casos de uso (armas, vigilancia masiva, entre otros). Es necesario revisar los términos completos antes de usar el modelo en producción.
 - Sesgos potenciales: al estar especializado en chino tradicional de Taiwan, puede presentar sesgos geográficos y culturales específicos de la región, y un rendimiento degradado en otras variantes de chino.
 - Riesgo de alucinación: no hay datos de evaluación sobre la fiabilidad de las respuestas, por lo que no se recomienda su uso sin supervisión en dominios críticos.
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos, ya que no
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lianghsun/ACE-2-Distill-Gemma-3-T1-4B-it
+- Hugging Face: https://huggingface.co/lianghsun/ACE-2-Distill-Gemma-3-T1-4B-it
 - Perfil del autor: https://huggingface.co/lianghsun/models
 - Repositorio Gemma (Google DeepMind): https://github.com/google-deepmind/gemma
 - Documentación Gemma 3: https://github.com/gemma-3/gemma-3

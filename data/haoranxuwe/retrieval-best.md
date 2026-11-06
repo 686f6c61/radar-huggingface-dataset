@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Haoranxuwe/retrieval-best` es un repositorio de HuggingFace publicado por el usuario Haoranxuwe que contiene una implementación de referencia de una arquitectura híbrida orientada a tareas de recuperación (retrieval). No se trata de un modelo entrenado ni de un checkpoint con pesos ajustados: la propia model card describe `model.safetensors` como un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests), y declara explícitamente que no se reclama ninguna puntuación de benchmark.
+`Haoranxuwe/retrieval-best` es un repositorio de Hugging Face publicado por el usuario Haoranxuwe que contiene una implementación de referencia de una arquitectura híbrida orientada a tareas de recuperación (retrieval). No se trata de un modelo entrenado ni de un checkpoint con pesos ajustados: la propia model card describe `model.safetensors` como un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests), y declara explícitamente que no se reclama ninguna puntuación de benchmark.
 
 El repositorio incluye el código Python (`inference.py`) con la implementación del modelo y un punto de entrada ejecutable, así como `config.json` con los ajustes de arquitectura y `training_args.json` con la receta de experimento por defecto (optimizador Adam con schedule exponencial). La arquitectura declarada es de tipo híbrido, con atención dilatada, fusión bilineal, activación swish y normalización groupnorm, en una configuración etiquetada como "large".
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 1 GB; con 49.600 parámetros el checkpoint ocupa prácticamente nada y el repositorio completo pesa 0,0 GB según HuggingFace.
+- VRAM estimada para inferencia: inferior a 1 GB; con 49.600 parámetros el checkpoint ocupa prácticamente nada y el repositorio completo pesa 0,0 GB según Hugging Face.
 - GPU recomendadas: cualquier GPU, incluida una GPU integrada o ejecución en CPU; no se requiere hardware de datacenter.
 - Cabe en cualquier GPU de consumo, y también en CPU, dado el tamaño del checkpoint de inicialización.
 - Opciones de despliegue: al ser una implementación personalizada, no se garantiza compatibilidad con vLLM, llama.cpp, Ollama o TGI; el autor indica que las APIs genéricas de carga automática requieren un adaptador explícito. La vía documentada es ejecutar `inference.py` directamente con PyTorch.
@@ -77,5 +77,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Haoranxuwe/retrieval-best
+- Repositorio en Hugging Face: https://huggingface.co/Haoranxuwe/retrieval-best
 - No se han encontrado en la búsqueda web papers, blogs, repositorios adicionales ni demos relacionados con este modelo.

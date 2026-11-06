@@ -69,7 +69,7 @@ No disponible. No hay comparación con otros tokenizadores específicos para tur
 
 ## Enlaces
 
-- [HuggingFace: magibu/Nimbus](https://huggingface.co/magibu/Nimbus)
+- [Hugging Face: magibu/Nimbus](https://huggingface.co/magibu/Nimbus)
 - [Modelo base Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [Web de Magibu AI](https://magibu.ai)
 - [Perfil de Hugging Face de magibu](https://huggingface.co/magibu)## Resumen

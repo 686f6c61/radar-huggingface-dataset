@@ -116,7 +116,7 @@ La comparación más directa y verificable es con el propio modelo base Kolibri-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Blackfrost-AI/KOLIBRI-1-DERISKED-BF16
+- Modelo en Hugging Face: https://huggingface.co/Blackfrost-AI/KOLIBRI-1-DERISKED-BF16
 - Modelo base Aleph-Alpha/Kolibri-1-BF16: https://huggingface.co/Aleph-Alpha/Kolibri-1-BF16
 - Informe tecnico de Aleph Alpha: https://aleph-alpha.com/downloads/tech-report.pdf
 - Kit de despliegue incluido en el repositorio: `DEPLOYMENT/` (relativo al repositorio del modelo)

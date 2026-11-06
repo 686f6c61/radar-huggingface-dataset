@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un ajuste fino (fine-tune) de `meta-llama/Llama-3.1-8B-Instruct` realizado por el usuario Jongbin-kr. El nombre del repositorio sugiere que el entrenamiento se ha centrado en datos relacionados con casos criminales de tipo no patrimonial (lbox-criminal-non-property), aunque la model card no proporciona detalles sobre el dataset utilizado. El entrenamiento se ha realizado mediante Supervised Fine-Tuning (SFT) con la librería TRL de HuggingFace.
+Este modelo es un ajuste fino (fine-tune) de `meta-llama/Llama-3.1-8B-Instruct` realizado por el usuario Jongbin-kr. El nombre del repositorio sugiere que el entrenamiento se ha centrado en datos relacionados con casos criminales de tipo no patrimonial (lbox-criminal-non-property), aunque la model card no proporciona detalles sobre el dataset utilizado. El entrenamiento se ha realizado mediante Supervised Fine-Tuning (SFT) con la librería TRL de Hugging Face.
 
 La etiqueta `ffn-only` en el nombre del repositorio indica que el ajuste se ha aplicado únicamente a las capas feed-forward (FFN) del transformer, una técnica que reduce el número de parámetros entrenables y el coste computacional. El modelo base, Llama 3.1 8B Instruct, es un transformer decoder-only de 8 mil millones de parámetros con una ventana de contexto de 128K tokens, desarrollado por Meta. Este ajuste específico parece orientado a tareas de clasificación o generación de texto en el ámbito legal, aunque la información pública es limitada.
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada para inferencia: el modelo base de 8B parámetros en FP16 requiere aproximadamente 16 GB de VRAM. Con cuantización a 8 bits, se reduce a unos 8 GB, y a 4 bits, a unos 4-5 GB.
 - GPU recomendadas: para FP16, una NVIDIA RTX 4090 (24 GB) o A100 (40 GB) es suficiente. Para cuantización 4-bit, una RTX 3060 (12 GB) o superior puede funcionar.
 - Compatibilidad con GPU de consumo: sí, con cuantización es posible ejecutarlo en GPUs de gama media como RTX 3060 o RTX 4070.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, HuggingFace TGI, o directamente con Transformers y pipeline de texto.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, Hugging Face TGI, o directamente con Transformers y pipeline de texto.
 - Latencia y throughput: no disponible. Depende del hardware y de la cuantización utilizada.
 
 ## Comparativa con modelos similares

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-computer-run1-step340 es un checkpoint intermedio de un ajuste por aprendizaje por refuerzo (RL) sobre el modelo cosmicoptima/computer-7, publicado por el usuario cosmicoptima en HuggingFace. El entrenamiento emplea preferencia propia (self-preference): un Computer-7 congelado actua como juez y elige, token a token, cual de 8 respuestas hermanas prefiere bajo cuatro lineas de encuadre distintas, y esas ventajas intra-fork se usan para entrenar la politica con REINFORCE. El checkpoint corresponde al paso 340 de la primera ejecucion (run 1) y es un punto intermedio del mismo run que los checkpoints computer-9c/9d/9e (pasos 100, 120 y 160).
+computer-run1-step340 es un checkpoint intermedio de un ajuste por aprendizaje por refuerzo (RL) sobre el modelo cosmicoptima/computer-7, publicado por el usuario cosmicoptima en Hugging Face. El entrenamiento emplea preferencia propia (self-preference): un Computer-7 congelado actua como juez y elige, token a token, cual de 8 respuestas hermanas prefiere bajo cuatro lineas de encuadre distintas, y esas ventajas intra-fork se usan para entrenar la politica con REINFORCE. El checkpoint corresponde al paso 340 de la primera ejecucion (run 1) y es un punto intermedio del mismo run que los checkpoints computer-9c/9d/9e (pasos 100, 120 y 160).
 
 El modelo tiene 70.553.706.496 parametros (~70,55 mil millones) y un repositorio de 141,1 GB en safetensors bf16, exportado desde un checkpoint FSDP2 con maestro en fp32. Por numero de parametros, la etiqueta `llama` y la licencia `llama3.1`, es consistente con una arquitectura transformer decoder-only de la familia Llama 3.1 de ~70B, aunque la model card no declara explicitamente la arquitectura ni la ventana de contexto. Mantiene el mismo tokenizador y formato de chat que Computer-7: turnos en texto plano bajo un encabezado de documento, con marcas `**User:** … **Model C:** …` y sin plantilla de chat.
 
@@ -105,7 +105,7 @@ No se dispone de datos de rendimiento comparables entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cosmicoptima/computer-run1-step340
+- Modelo en Hugging Face: https://huggingface.co/cosmicoptima/computer-run1-step340
 - Modelo base: https://huggingface.co/cosmicoptima/computer-7
 - Perfil del autor: https://huggingface.co/cosmicoptima
 - Paper, blog, repositorio o demo: no disponible. La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo.

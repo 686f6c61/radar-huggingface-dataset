@@ -4,7 +4,7 @@
 
 El modelo `Godwinlyamba/queue_merged-u83` es un modelo de lenguaje de gran tamaño (LLM) con arquitectura de mezcla de expertos (MoE) basado en el modelo `marsplan0624/affine-5gedzafcvg-queen`. Desarrollado por el usuario Godwinlyamba, se presenta como un modelo multimodal capaz de procesar entradas de texto e imagen (image-text-to-text) y generar texto, con soporte para conversación y razonamiento. Cuenta con aproximadamente 35.107 millones de parámetros totales, lo que lo sitúa en la gama de modelos medianos-grandes, y su repositorio ocupa 70.2 GB en formato safetensors.
 
-La relevancia de este modelo radica en su naturaleza MoE, que permite activar solo una fracción de los parámetros durante la inferencia, ofreciendo un equilibrio entre capacidad y eficiencia computacional. Sin embargo, la información pública disponible es muy limitada: no se especifican la licencia, los idiomas soportados, la longitud de contexto ni los detalles de entrenamiento. El acceso está restringido (gated) en HuggingFace, lo que obliga a aceptar condiciones adicionales antes de su uso. A fecha de creación (agosto de 2026), no registra descargas ni valoraciones, lo que sugiere que es un modelo reciente o poco difundido.
+La relevancia de este modelo radica en su naturaleza MoE, que permite activar solo una fracción de los parámetros durante la inferencia, ofreciendo un equilibrio entre capacidad y eficiencia computacional. Sin embargo, la información pública disponible es muy limitada: no se especifican la licencia, los idiomas soportados, la longitud de contexto ni los detalles de entrenamiento. El acceso está restringido (gated) en Hugging Face, lo que obliga a aceptar condiciones adicionales antes de su uso. A fecha de creación (agosto de 2026), no registra descargas ni valoraciones, lo que sugiere que es un modelo reciente o poco difundido.
 
 ## Especificaciones tecnicas
 
@@ -70,5 +70,5 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- [HuggingFace - Godwinlyamba/queue_merged-u83](https://huggingface.co/Godwinlyamba/queue_merged-u83)
+- [Hugging Face - Godwinlyamba/queue_merged-u83](https://huggingface.co/Godwinlyamba/queue_merged-u83)
 - [Modelo base: marsplan0624/affine-5gedzafcvg-queen](https://huggingface.co/marsplan0624/affine-5gedzafcvg-queen) (enlace inferido, no verificado)

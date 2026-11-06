@@ -4,7 +4,7 @@
 
 `hatebeingsober11/ppo-LunarLander-v2` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) mediante la librería Stable-Baselines3 para resolver el entorno LunarLander-v2 de Gymnasium. No es un modelo de lenguaje ni un transformer generativo: es una política neuronal que mapea observaciones del estado de la nave (posición, velocidad, ángulo, contacto con el suelo) a una de cuatro acciones discretas (no hacer nada, encender motor principal, encender motor izquierdo, encender motor derecho).
 
-El repositorio lo publica el usuario `hatebeingsober11` con fines de demostración del flujo de trabajo de Stable-Baselines3 y del Hub de HuggingFace. El artefacto es un checkpoint de política (fichero `.zip` de SB3) más los metadatos del `model-index`; el tamaño del repositorio indicado es de 0.0 GB, lo que sugiere un contenido mínimo o aún no materializado en el momento de la consulta.
+El repositorio lo publica el usuario `hatebeingsober11` con fines de demostración del flujo de trabajo de Stable-Baselines3 y del Hub de Hugging Face. El artefacto es un checkpoint de política (fichero `.zip` de SB3) más los metadatos del `model-index`; el tamaño del repositorio indicado es de 0.0 GB, lo que sugiere un contenido mínimo o aún no materializado en el momento de la consulta.
 
 Su relevancia es limitada fuera del ámbito educativo: sirve como ejemplo reproducible de entrenamiento PPO en un entorno de control continuo con acciones discretas, y como caso de estudio de un agente con rendimiento por debajo del umbral de resolución del entorno (el propio autor declara una recompensa media negativa).
 
@@ -66,7 +66,7 @@ No se han publicado otros resultados de benchmarks en la informacion disponible.
 
 | Modelo | Algoritmo | Entorno | Recompensa media | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hatebeingsober11/ppo-LunarLander-v2 | PPO | LunarLander-v2 | -178.68 +/- 36.11 | no disponible | HuggingFace Hub |
+| hatebeingsober11/ppo-LunarLander-v2 | PPO | LunarLander-v2 | -178.68 +/- 36.11 | no disponible | Hugging Face Hub |
 | Agentes PPO de referencia de Stable-Baselines3 RL Zoo | PPO | LunarLander-v2 | no disponible en esta ficha | MIT (código SB3) | GitHub / RL Zoo |
 | Agentes DQN de referencia para LunarLander-v2 | DQN | LunarLander-v2 | no disponible en esta ficha | MIT (código SB3) | GitHub / RL Zoo |
 
@@ -85,9 +85,9 @@ No se dispone de datos verificados de los modelos alternativos en la informació
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hatebeingsober11/ppo-LunarLander-v2
+- Modelo en Hugging Face: https://huggingface.co/hatebeingsober11/ppo-LunarLander-v2
 - Stable-Baselines3 (librería): https://github.com/DLR-RM/stable-baselines3
-- HuggingFace SB3 (utilidades de carga): https://github.com/huggingface/huggingface_sb3
+- Hugging Face SB3 (utilidades de carga): https://github.com/huggingface/huggingface_sb3
 - Entorno LunarLander-v2 (Gymnasium): https://gymnasium.farama.org/environments/box2d/lunar_lander/
 - Paper de PPO: https://arxiv.org/abs/1707.06347
 - RL Zoo de Stable-Baselines3 (agentes de referencia): https://github.com/DLR-RM/rl-baselines3-zoo

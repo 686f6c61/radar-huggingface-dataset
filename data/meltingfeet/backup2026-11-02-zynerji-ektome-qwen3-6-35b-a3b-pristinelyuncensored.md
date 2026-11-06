@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Backup2026-11-02-Zynerji-Ektome-Qwen3.6-35B-A3B-PristinelyUncensored es una variante derivada del modelo Qwen/Qwen3.6-35B-A3B, publicada por el usuario meltingfeet en HuggingFace. Se trata de un modelo de arquitectura MoE (Mixture of Experts) con capacidades de vision-lenguaje (pipeline image-text-to-text), construido sobre la base de Qwen3.6 y modificado mediante la tecnica de "abliteration" para eliminar los mecanismos de rechazo y censura del modelo original, segun indican sus tags (abliterated, uncensored, pristinely-uncensored). El modelo conserva los 35.107.181.936 parametros totales del modelo base.
+Backup2026-11-02-Zynerji-Ektome-Qwen3.6-35B-A3B-PristinelyUncensored es una variante derivada del modelo Qwen/Qwen3.6-35B-A3B, publicada por el usuario meltingfeet en Hugging Face. Se trata de un modelo de arquitectura MoE (Mixture of Experts) con capacidades de vision-lenguaje (pipeline image-text-to-text), construido sobre la base de Qwen3.6 y modificado mediante la tecnica de "abliteration" para eliminar los mecanismos de rechazo y censura del modelo original, segun indican sus tags (abliterated, uncensored, pristinely-uncensored). El modelo conserva los 35.107.181.936 parametros totales del modelo base.
 
-La relevancia de esta ficha es limitada y debe enmarcarse con cautela: el repositorio tiene cero descargas y cero "likes" en el momento de la consulta, el acceso esta restringido (gated) y el nombre incluye "backup2026-11-02", lo que sugiere una copia de seguridad personal mas que una publicacion mantenida. No se dispone de informacion sobre el proceso de entrenamiento, los datos utilizados ni evaluaciones de rendimiento. La informacion disponible se limita a los metadatos de HuggingFace y a los tags del repositorio.
+La relevancia de esta ficha es limitada y debe enmarcarse con cautela: el repositorio tiene cero descargas y cero "likes" en el momento de la consulta, el acceso esta restringido (gated) y el nombre incluye "backup2026-11-02", lo que sugiere una copia de seguridad personal mas que una publicacion mantenida. No se dispone de informacion sobre el proceso de entrenamiento, los datos utilizados ni evaluaciones de rendimiento. La informacion disponible se limita a los metadatos de Hugging Face y a los tags del repositorio.
 
 El modelo se distribuye bajo licencia Apache 2.0 y en formato safetensors, con un tamano de repositorio de 71,9 GB. La ausencia de documentacion tecnica, benchmarks y ejemplos de uso hace que cualquier evaluacion rigurosa requiera pruebas directas por parte del usuario.
 
@@ -79,7 +79,7 @@ No se dispone de informacion suficiente para comparar rendimiento numerico con a
 
 - Ausencia total de documentacion tecnica: no hay model card detallada, benchmarks ni ejemplos de uso, lo que impide validar su calidad de forma previa.
 - Cero descargas y cero "likes": el repositorio no tiene traccion ni validacion por parte de la comunidad; el nombre "backup2026-11-02" sugiere una copia personal sin mantenimiento.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que anade friccion y puede limitar su uso en produccion.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que anade friccion y puede limitar su uso en produccion.
 - Riesgo elevado de alucinacion y de contenido inapropiado: la abliteration elimina los rechazos, por lo que el modelo puede generar contenido danino, ofensivo o factualmente incorrecto sin advertencia.
 - Sesgos desconocidos: al no haber evaluaciones, no se pueden caracterizar sesgos de genero, raza, idioma o cultura.
 - Idiomas no documentados: se desconoce que idiomas soporta con calidad, lo que desaconseja su uso en produccion multilingue sin pruebas.
@@ -89,6 +89,6 @@ No se dispone de informacion suficiente para comparar rendimiento numerico con a
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/meltingfeet/backup2026-11-02-Zynerji-Ektome-Qwen3.6-35B-A3B-PristinelyUncensored
+- Repositorio Hugging Face: https://huggingface.co/meltingfeet/backup2026-11-02-Zynerji-Ektome-Qwen3.6-35B-A3B-PristinelyUncensored
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion proporcionada.

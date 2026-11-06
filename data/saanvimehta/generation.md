@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SaanviMehta/generation es un repositorio de HuggingFace que contiene una implementacion propia de una arquitectura tipo Mixer orientada a tareas de generacion, publicada bajo licencia MIT. El autor la describe explicitamente como un punto de partida reproducible y no como un modelo entrenado: el checkpoint incluido (`model.safetensors`) es una inicializacion valida para pruebas de humo (*smoke tests*), no un checkpoint con benchmarks publicados.
+SaanviMehta/generation es un repositorio de Hugging Face que contiene una implementacion propia de una arquitectura tipo Mixer orientada a tareas de generacion, publicada bajo licencia MIT. El autor la describe explicitamente como un punto de partida reproducible y no como un modelo entrenado: el checkpoint incluido (`model.safetensors`) es una inicializacion valida para pruebas de humo (*smoke tests*), no un checkpoint con benchmarks publicados.
 
 El modelo ocupa 49.600 parametros totales segun los metadatos de safetensors, una cifra extremadamente reducida incluso para los estandares de modelos pequenos. La model card indica la variante "giant" como escala declarada, con atencion multi-query, fusion de bajo rango, activacion mish y normalizacion layernorm. No se declara ninguna puntuacion de benchmark y no se especifican idiomas soportados ni longitud de contexto.
 
@@ -78,5 +78,5 @@ No disponible. No se han encontrado en la informacion proporcionada modelos comp
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SaanviMehta/generation
+- Repositorio en Hugging Face: https://huggingface.co/SaanviMehta/generation
 - No se han encontrado en la busqueda web papers, blogs, repositorios auxiliares ni demos relacionados con este modelo. Los resultados de busqueda disponibles corresponden a estadisticas de beisbol de la MLB y no guardan relacion con el modelo.

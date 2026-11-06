@@ -92,7 +92,7 @@ No se dispone de comparaciones con modelos de la misma categoría fuera del proy
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NovusEdge/sundial-qwen3.5-2b-T-int
+- Modelo en Hugging Face: https://huggingface.co/NovusEdge/sundial-qwen3.5-2b-T-int
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Proyecto sundial: no disponible (el código no es público según la model card)
 - Paper: no disponible

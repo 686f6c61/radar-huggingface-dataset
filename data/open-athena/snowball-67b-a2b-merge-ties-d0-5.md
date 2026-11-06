@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Snowball-67B-A2B-Merge-TIES-d0.5 es un modelo de lenguaje de aproximadamente 67.078 millones de parámetros publicado por el colectivo open-athena en HuggingFace. No es el resultado de un entrenamiento desde cero, sino de una fusión de pesos (weight merging): aplica el algoritmo TIES con densidad 0.5 (coeficientes de donante a = b = 1.0) para combinar dos variantes expertas, denominadas E y E₂, sobre un ancla B. El proceso se ejecutó íntegramente en CPU (68 minutos) con las herramientas de weight merging del proyecto Marin (PR #9974) y no implicó ningún paso de entrenamiento adicional.
+Snowball-67B-A2B-Merge-TIES-d0.5 es un modelo de lenguaje de aproximadamente 67.078 millones de parámetros publicado por el colectivo open-athena en Hugging Face. No es el resultado de un entrenamiento desde cero, sino de una fusión de pesos (weight merging): aplica el algoritmo TIES con densidad 0.5 (coeficientes de donante a = b = 1.0) para combinar dos variantes expertas, denominadas E y E₂, sobre un ancla B. El proceso se ejecutó íntegramente en CPU (68 minutos) con las herramientas de weight merging del proyecto Marin (PR #9974) y no implicó ningún paso de entrenamiento adicional.
 
 El modelo ancla, o estudiante B, es open-athena/Snowball-67B-A2B-10T-Mixed-RLVR-Sync-Step92, del cual se heredan sin cambios el tokenizador y la plantilla de chat. La nomenclatura A2B y el tag grug_moe apuntan a una arquitectura de mezcla de expertos (MoE) con un total cercano a 67B de parámetros, presumiblemente en torno a 2B de parámetros activos por token, aunque la información disponible no confirma la configuración exacta del router ni el número de expertos.
 
@@ -25,7 +25,7 @@ Su relevancia es fundamentalmente de investigación: forma parte de un experimen
 
 La arquitectura se corresponde con un transformer de tipo mezcla de expertos (MoE), tal y como indica el tag grug_moe y la nomenclatura A2B del modelo base. El modelo hereda la estructura, el tokenizador y la plantilla de chat de open-athena/Snowball-67B-A2B-10T-Mixed-RLVR-Sync-Step92 (revision fdc3c3c5), que según su nombre fue entrenado sobre 10T de tokens con un esquema de RLVR (reinforcement learning with verifiable rewards) mixto y sincronizado hasta el step 92. La informacion disponible no detalla el numero de expertos, la estrategia de enrutamiento ni la composicion exacta del dataset de entrenamiento original.
 
-La innovacion de esta ficha concreta no esta en el entrenamiento, sino en el metodo de combinacion: no hubo ningun paso de entrenamiento, sino una fusion de pesos TIES (Trim, Elect Sign, Merge) con densidad 0.5 y coeficientes de donante a = b = 1.0, ejecutada en CPU en 68 minutos. Los dos donantes fueron los expertos E y E₂, fusionados sobre el ancla B. El sesgo de consulta del router (router query bias) se mantuvo en float32 tal como estaba en B. El resultado del merge se exporto directamente en formato HuggingFace y se subio sin modificaciones.
+La innovacion de esta ficha concreta no esta en el entrenamiento, sino en el metodo de combinacion: no hubo ningun paso de entrenamiento, sino una fusion de pesos TIES (Trim, Elect Sign, Merge) con densidad 0.5 y coeficientes de donante a = b = 1.0, ejecutada en CPU en 68 minutos. Los dos donantes fueron los expertos E y E₂, fusionados sobre el ancla B. El sesgo de consulta del router (router query bias) se mantuvo en float32 tal como estaba en B. El resultado del merge se exporto directamente en formato Hugging Face y se subio sin modificaciones.
 
 ## Capacidades
 
@@ -91,7 +91,7 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento bajo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/open-athena/Snowball-67B-A2B-Merge-TIES-d0.5
+- Hugging Face: https://huggingface.co/open-athena/Snowball-67B-A2B-Merge-TIES-d0.5
 - Modelo base: https://huggingface.co/open-athena/Snowball-67B-A2B-10T-Mixed-RLVR-Sync-Step92
 - Revision concreta del modelo base: https://huggingface.co/open-athena/Snowball-67B-A2B-10T-Mixed-RLVR-Sync-Step92/tree/fdc3c3c5fff489d3fb04dcbc2387c179b1bf3fab
 - Herramientas de merging de Marin (PR #9974): https://github.com/marin-community/marin/pull/9974

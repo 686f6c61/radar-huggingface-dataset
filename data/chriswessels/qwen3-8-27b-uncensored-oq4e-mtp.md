@@ -56,9 +56,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Cuantización | Formato | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Qwen/Qwen3.8-27B` | BF16 | Transformers | 262K | Apache 2.0 | HuggingFace |
-| `orcarouter/Qwen3.8-27B-Uncensored` | BF16 | Transformers | 262K | Apache 2.0 | HuggingFace |
-| `chriswessels/Qwen3.8-27B-Uncensored-oQ4e-mtp` | 4-bit (oQ) | MLX safetensors | 262K | Apache 2.0 | HuggingFace |
+| `Qwen/Qwen3.8-27B` | BF16 | Transformers | 262K | Apache 2.0 | Hugging Face |
+| `orcarouter/Qwen3.8-27B-Uncensored` | BF16 | Transformers | 262K | Apache 2.0 | Hugging Face |
+| `chriswessels/Qwen3.8-27B-Uncensored-oQ4e-mtp` | 4-bit (oQ) | MLX safetensors | 262K | Apache 2.0 | Hugging Face |
 
 Rendimiento comparativo: no disponible.
 

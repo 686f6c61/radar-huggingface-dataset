@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alfieeuu05/multitask` es un prototipo de investigación publicado en HuggingFace bajo el nombre "Dino for Multitask". Se trata de una implementación propia de una arquitectura denominada "Dino" por el autor, orientada a tareas múltiples (multitask) y distribuida como punto de partida experimental, no como un modelo entrenado. El repositorio lo firma el usuario `alfieeuu05` y se publicó y actualizó el 8 de octubre de 2026, con cero descargas y cero interacciones registradas en el momento de la consulta.
+`alfieeuu05/multitask` es un prototipo de investigación publicado en Hugging Face bajo el nombre "Dino for Multitask". Se trata de una implementación propia de una arquitectura denominada "Dino" por el autor, orientada a tareas múltiples (multitask) y distribuida como punto de partida experimental, no como un modelo entrenado. El repositorio lo firma el usuario `alfieeuu05` y se publicó y actualizó el 8 de octubre de 2026, con cero descargas y cero interacciones registradas en el momento de la consulta.
 
 Conviene subir la advertencia clave: la propia model card indica de forma explícita que `model.safetensors` es un checkpoint de inicialización válido solo para pruebas de humo (smoke tests) y que no se presenta como un checkpoint entrenado ni evaluado. No se reclama ninguna puntuación de benchmark. Por tanto, no debe confundirse con un modelo listo para producción ni con las implementaciones oficiales de DINO de terceros, pese a compartir nombre.
 
@@ -46,7 +46,7 @@ Dado que se trata de un checkpoint de inicializacion sin entrenar y sin resultad
 - Pruebas de humo de infraestructura: usar `model.safetensors` para verificar que un pipeline de carga, serializacion y ejecucion en PyTorch funciona correctamente antes de invertir en un entrenamiento real.
 - Punto de partida para investigación en arquitecturas multitask: el codigo y la configuracion sirven como esqueleto para experimentar con atención sparse y fusión bilineal, ajustando hiperparametros y datasets propios.
 - Reproducción de recetas de entrenamiento: la configuracion por defecto (novograd + onecycle) permite comparar variantes de optimizador y scheduler bajo condiciones controladas.
-- Desarrollo de adaptadores de carga personalizados: al ser una implementacion propia, obliga a escribir adaptadores explicitos para integrarla con APIs genericas de HuggingFace, lo que es util como ejercicio de integracion.
+- Desarrollo de adaptadores de carga personalizados: al ser una implementacion propia, obliga a escribir adaptadores explicitos para integrarla con APIs genericas de Hugging Face, lo que es util como ejercicio de integracion.
 - Evaluacion metodologica: servir de base para montar un protocolo de evaluacion con conjunto de validacion especifico, al menos tres semillas y una linea base de capacidad equivalente, tal como recomienda el propio autor.
 - Docencia y formacion: por su tamano minimo (33.088 parametros) y su estructura sencilla, puede emplearse como ejemplo didactico de definicion de arquitectura, configuracion y receta de entrenamiento.
 - Comparativas de codigo abierto: usar el repositorio como caso de estudio de buenas y malas practicas al publicar prototipos sin resultados verificables.
@@ -71,7 +71,7 @@ No disponible. La model card no identifica modelos comparables y el nombre "Dino
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| alfieeuu05/multitask | 33.088 | no disponible | sin benchmarks | BSD-3-Clause | HuggingFace |
+| alfieeuu05/multitask | 33.088 | no disponible | sin benchmarks | BSD-3-Clause | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -81,7 +81,7 @@ No disponible. La model card no identifica modelos comparables y el nombre "Dino
 - No se han publicado resultados de benchmarks ni metricas de ningun tipo.
 - No se documentan sesgos conocidos, pero tampoco se descartan; simplemente no hay evaluacion.
 - No hay informacion sobre idiomas soportados, longitud de contexto ni tipos de cuantizacion.
-- Al ser una implementacion personalizada, las APIs genericas de carga automatica de HuggingFace no funcionaran sin un adaptador explicito.
+- Al ser una implementacion personalizada, las APIs genericas de carga automatica de Hugging Face no funcionaran sin un adaptador explicito.
 - El autor recomienda revisar por separado los terminos de los datos de origen cuando se use el repositorio con datasets externos.
 - La licencia BSD-3-Clause permite uso comercial del codigo, pero al no existir un modelo entrenado, este permiso no aporta valor practico para desplegar un sistema funcional.
 - El repositorio tiene cero descargas y cero "likes", lo que indica ausencia de validacion por parte de la comunidad.
@@ -89,5 +89,5 @@ No disponible. La model card no identifica modelos comparables y el nombre "Dino
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfieeuu05/multitask
+- Hugging Face: https://huggingface.co/alfieeuu05/multitask
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion proporcionada.

@@ -85,9 +85,9 @@ La comparación más directa es entre variantes de cuantización del mismo model
 
 | Modelo o variante | Parametros | Contexto | Perplejidad WikiText-2 | Tamano | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| APEX-I-NanoPlus (esta release) | 35,5B totales / ~3B activos | Hasta 256K | 5,5244 | 13,03 GB (2,93 BPW) | Apache-2.0 | GGUF en HuggingFace |
-| APEX-I-MiniPlus V2.1 | 35,5B totales / ~3B activos | Hasta 256K | 5,3693 | 15,23 GB (3,43 BPW) | Apache-2.0 | GGUF en HuggingFace |
-| Qwen3.6-35B-A3B BF16 (base) | 35,5B totales / ~3B activos | Hasta 256K | ~5,32 | ~71,05 GB (16 BPW) | Apache-2.0 | safetensors en HuggingFace |
+| APEX-I-NanoPlus (esta release) | 35,5B totales / ~3B activos | Hasta 256K | 5,5244 | 13,03 GB (2,93 BPW) | Apache-2.0 | GGUF en Hugging Face |
+| APEX-I-MiniPlus V2.1 | 35,5B totales / ~3B activos | Hasta 256K | 5,3693 | 15,23 GB (3,43 BPW) | Apache-2.0 | GGUF en Hugging Face |
+| Qwen3.6-35B-A3B BF16 (base) | 35,5B totales / ~3B activos | Hasta 256K | ~5,32 | ~71,05 GB (16 BPW) | Apache-2.0 | safetensors en Hugging Face |
 | IQ2_S comunitaria genérica | No disponible | No disponible | > 5,85 | ~12,2 GB (2,56 BPW) | No disponible | No disponible |
 | Qwen3.6-35B-A3B-APEX-MTP (mudler) | No disponible | No disponible | No disponible | 20,7 GB | No disponible | GGUF en ModelScope |
 

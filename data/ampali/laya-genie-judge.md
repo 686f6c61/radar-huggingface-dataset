@@ -17,7 +17,7 @@ Es relevante ahora porque cubre un nicho concreto: decisiones acotadas (eleccion
 | Parametros activos | No aplica (no es MoE) |
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | No disponible (el repo solo declara safetensors) |
-| Idiomas soportados | No disponible en los metadatos de HuggingFace; fuentes externas citan 100+ idiomas para la familia Laya |
+| Idiomas soportados | No disponible en los metadatos de Hugging Face; fuentes externas citan 100+ idiomas para la familia Laya |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors |
 
@@ -75,7 +75,7 @@ Metricas del model-index oficial: accuracy 0,900 y brier_score 0,036 sobre `Loca
 
 | Modelo | Parametros | Tipo | Accuracy (typed-decisions) | Brier | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Laya (este modelo) | 421 M | Fine-tuned, System One no autorregresivo | 0,900 | 0,036 | Apache 2.0 | Pesos abiertos en HuggingFace |
+| Laya (este modelo) | 421 M | Fine-tuned, System One no autorregresivo | 0,900 | 0,036 | Apache 2.0 | Pesos abiertos en Hugging Face |
 | TypeSafe Jev 1.13.0 | No disponible | Generalista, System One | 0,727 | 0,148 | No disponible (cerrado) | API de pago |
 | ModernBERT-base | 149 M | Especialista | 0,646 | 0,119 | No disponible en la informacion | Pesos publicos |
 
@@ -96,7 +96,7 @@ No se dispone de datos de contexto, idiomas ni cuantizacion de los modelos compa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ampali/laya-genie-judge
+- Repositorio en Hugging Face: https://huggingface.co/ampali/laya-genie-judge
 - Dataset del benchmark: https://huggingface.co/datasets/LocalLLaMA/typed-decisions
 - Organizacion desarrolladora (Convai Innovations): https://huggingface.co/convaiinnovations
 - Checkpoint referenciado en el quickstart: https://huggingface.co/convaiinnovations/laya-typed-decisions

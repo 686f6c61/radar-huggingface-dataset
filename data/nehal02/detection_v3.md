@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Nehal02/detection_v3` es un modelo de clasificación de texto publicado en HuggingFace por el usuario Nehal02. Por los tags del repositorio (`roberta`, `text-classification`, `arxiv:1910.09700`), se trata de un ajuste fino de la familia RoBERTa orientado a una tarea de detección/clasificación binaria o multiclase, presumiblemente entrenado sobre un corpus específico del autor. El número total de parámetros (355.361.794) coincide con el tamaño de RoBERTa-large (355M), lo que sitúa al modelo en la categoría de encoder grande para clasificación.
+`Nehal02/detection_v3` es un modelo de clasificación de texto publicado en Hugging Face por el usuario Nehal02. Por los tags del repositorio (`roberta`, `text-classification`, `arxiv:1910.09700`), se trata de un ajuste fino de la familia RoBERTa orientado a una tarea de detección/clasificación binaria o multiclase, presumiblemente entrenado sobre un corpus específico del autor. El número total de parámetros (355.361.794) coincide con el tamaño de RoBERTa-large (355M), lo que sitúa al modelo en la categoría de encoder grande para clasificación.
 
-El modelo no incluye model card sustantiva: la tarjeta es la plantilla automática de HuggingFace sin rellenar, sin información sobre datos de entrenamiento, hiperparámetros, métricas ni uso previsto. Tampoco declara licencia ni idiomas. Con 0 descargas y 0 likes en el momento de la consulta, es un checkpoint de uso privado o experimental, no un modelo validado por la comunidad.
+El modelo no incluye model card sustantiva: la tarjeta es la plantilla automática de Hugging Face sin rellenar, sin información sobre datos de entrenamiento, hiperparámetros, métricas ni uso previsto. Tampoco declara licencia ni idiomas. Con 0 descargas y 0 likes en el momento de la consulta, es un checkpoint de uso privado o experimental, no un modelo validado por la comunidad.
 
 Su relevancia es, por tanto, limitada y condicionada: puede ser útil como punto de partida para tareas de detección de contenido (spam, toxicidad, fraude, texto generado) si el dominio de entrenamiento coincide con el del despliegue, pero la ausencia de documentación hace imprescindible una evaluación propia antes de usarlo en producción.
 
@@ -54,17 +54,17 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada en fp32: aproximadamente 1,4 GB de pesos; en fp16 alrededor de 0,7 GB. Cabe holgadamente en cualquier GPU consumer con 4 GB o más.
 - GPU recomendadas: no requiere GPU dedicada; funciona en CPU para lotes pequeños. Para throughput alto, una T4, L4 o RTX 3060 en adelante es suficiente.
 - Cabe en GPU consumer: sí, en cualquier modelo con 4 GB o más (GTX 1650, RTX 3050, etc.).
-- Opciones de despliegue: `transformers` con pipeline de clasificación, `text-embeddings-inference` (según tags), HuggingFace Inference Endpoints (`endpoints_compatible`), ONNX Runtime o TorchScript para optimización. No hay evidencia de pesos GGUF para llama.cpp u Ollama.
+- Opciones de despliegue: `transformers` con pipeline de clasificación, `text-embeddings-inference` (según tags), Hugging Face Inference Endpoints (`endpoints_compatible`), ONNX Runtime o TorchScript para optimización. No hay evidencia de pesos GGUF para llama.cpp u Ollama.
 - Latencia y throughput: no disponibles; para un encoder de 355M en una GPU moderna se espera un throughput del orden de cientos a miles de secuencias cortas por segundo, pero es una estimación genérica no confirmada por el autor.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nehal02/detection_v3 | 355M | no disponible | Clasificación de texto | no disponible | HuggingFace, 0 descargas |
-| roberta-large (Facebook AI) | 355M | 512 tokens | Encoder base, ajustable | MIT | HuggingFace, ampliamente usado |
-| distilbert-base-uncased | 66M | 512 tokens | Encoder base, ajustable | Apache 2.0 | HuggingFace, ampliamente usado |
-| ModernBERT-large | 395M | 8192 tokens | Encoder base, ajustable | Apache 2.0 | HuggingFace |
+| Nehal02/detection_v3 | 355M | no disponible | Clasificación de texto | no disponible | Hugging Face, 0 descargas |
+| roberta-large (Facebook AI) | 355M | 512 tokens | Encoder base, ajustable | MIT | Hugging Face, ampliamente usado |
+| distilbert-base-uncased | 66M | 512 tokens | Encoder base, ajustable | Apache 2.0 | Hugging Face, ampliamente usado |
+| ModernBERT-large | 395M | 8192 tokens | Encoder base, ajustable | Apache 2.0 | Hugging Face |
 
 La comparación con `roberta-large` es la más directa por arquitectura y tamaño; la diferencia principal es que el modelo de Facebook AI está documentado, tiene licencia clara y sirve como base reproducible, mientras que `detection_v3` no aporta información sobre su ajuste. `distilbert` ofrece una alternativa mucho más ligera si el rendimiento es suficiente. No se dispone de datos de rendimiento del modelo evaluado para comparar métricas.
 
@@ -80,7 +80,7 @@ La comparación con `roberta-large` es la más directa por arquitectura y tamañ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nehal02/detection_v3
+- Modelo en Hugging Face: https://huggingface.co/Nehal02/detection_v3
 - Paper de referencia de la plantilla (impacto ambiental, no del modelo): https://arxiv.org/abs/1910.09700
 - Repositorio de RoBERTa (arquitectura base probable): https://github.com/facebookresearch/fairseq/tree/main/examples/roberta
 - Documentación de pipelines de clasificación de transformers: https://huggingface.co/docs/transformers/tasks/sequence_classification

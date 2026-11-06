@@ -84,7 +84,7 @@ La comparacion con Qwen2.5-0.5B y Qwen3-0.6B es la mas directa por tamano y lice
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/mradermacher/qwen3-distill-v2-rationale-0.6b-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/mradermacher/qwen3-distill-v2-rationale-0.6b-GGUF
 - Modelo base: https://huggingface.co/CopyleftCultivars/qwen3-distill-v2-rationale-0.6b
 - Pagina de overview del autor: https://hf.tst.eu/model#qwen3-distill-v2-rationale-0.6b-GGUF
 - FAQ y solicitudes de cuantizacion de mradermacher: https://huggingface.co/mradermacher/model_requests

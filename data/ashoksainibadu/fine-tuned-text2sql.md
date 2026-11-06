@@ -33,7 +33,7 @@ La innovacion tecnica principal no reside en el ajuste fino en si, sino en el pi
 - Razonamiento sobre esquemas relacionales y correspondencia entre entidades de la pregunta y tablas/columnas.
 - Ejecucion segura mediante sandbox SQLite de solo lectura con validacion AST previa (sqlglot).
 - Bloqueo de consultas adversarias: 0,00 % de exito en 120 ataques SQL directos y 0,00 % en 60 ataques de prompt injection segun la model card.
-- Soporte de conversacion multi-turno (tag `conversational` en HuggingFace).
+- Soporte de conversacion multi-turno (tag `conversational` en Hugging Face).
 - Compatibilidad con endpoints (tag `endpoints_compatible`).
 - Capacidades multilingues: solo ingles (`en`).
 - No se documentan capacidades de vision, audio ni tool calling generico mas alla del pipeline SQL.
@@ -93,7 +93,7 @@ La model card recomienda servir modelos de la familia Qwen2.5-Coder con licencia
 ## Limitaciones y advertencias
 
 - Licencia qwen-research: prohibido el uso comercial sin licencia adicional de Alibaba Cloud; cualquier redistribucion debe incluir la licencia y la atribucion "Built with Qwen".
-- El adaptador LoRA no esta publicado en HuggingFace Hub, lo que impide reproducir el ajuste fino directamente.
+- El adaptador LoRA no esta publicado en Hugging Face Hub, lo que impide reproducir el ajuste fino directamente.
 - La ablacion del modelo base en Kaggle esta marcada como UNVERIFIED y el harness es sospechoso segun `docs/LIMITATIONS.md`.
 - El suite `heldout_v3` no ha sido evaluado bajo la politica de seguridad activa.
 - Tasa de escape de politica del 8,33 % (4/48) en held-out V2, aunque el harm rate fue 0,00 % gracias al sandbox.
@@ -105,7 +105,7 @@ La model card recomienda servir modelos de la familia Qwen2.5-Coder con licencia
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ashoksainibadu/fine-tuned-text2sql
+- Hugging Face: https://huggingface.co/Ashoksainibadu/fine-tuned-text2sql
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-3B-Instruct
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-3B-Instruct/raw/main/LICENSE
 - Benchmark Spider: https://yale-lily.github.io/spider

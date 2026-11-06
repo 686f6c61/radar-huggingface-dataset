@@ -107,7 +107,7 @@ No se dispone de informacion sobre otros modelos especializados en post-procesad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/imYChaudhary22/zen-polish-v2-1.7b-4bit
+- Modelo en Hugging Face: https://huggingface.co/imYChaudhary22/zen-polish-v2-1.7b-4bit
 - Modelo base inmediato (MLX 4 bits): https://huggingface.co/mlx-community/Qwen3-1.7B-4bit
 - Modelo base original: https://huggingface.co/Qwen/Qwen3-1.7B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3-1.7B/blob/main/LICENSE

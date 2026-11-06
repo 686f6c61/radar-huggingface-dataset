@@ -82,7 +82,7 @@ En la epoca 3, la variante sin descorrelacion obtiene un MAE ligeramente inferio
 
 | Modelo | Parametros | Contexto | MAE (ep. 3, BigSolDB) | RMSE (ep. 3) | R² (ep. 3) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| rem3di-combisolv-ablation-no-decorrelation | no disponible | no aplica | 0,575272 | 0,752397 | 0,563884 | no disponible | HuggingFace, 0 descargas |
+| rem3di-combisolv-ablation-no-decorrelation | no disponible | no aplica | 0,575272 | 0,752397 | 0,563884 | no disponible | Hugging Face, 0 descargas |
 | Rem3Di full_model (control del mismo estudio) | no disponible | no aplica | 0,576577 | 0,749793 | 0,566898 | no disponible | Referenciado en la model card y en W&B |
 | Rem3Di `no_denoising` (variante mencionada en la card) | no disponible | no aplica | no disponible | no disponible | no disponible | no disponible | No se aportan metricas en la informacion disponible |
 | MACE y otros MLIP equivariantes (base congelada) | no disponible | no aplica | no disponible | no disponible | no disponible | no disponible | Codigo y pesos en sus repositorios originales |
@@ -95,7 +95,7 @@ No se dispone de datos publicados que permitan comparar esta variante con descri
 - Un unico seed de entrenamiento emparejado: no hay estimacion de varianza entre seeds, por lo que las diferencias de milesimas en MAE, RMSE y R² no permiten concluir superioridad estadistica.
 - Las metricas empeoran de la epoca 1 a la 3 en ambas variantes, lo que sugiere que el regimen de tres epocas no captura el punto optimo del entrenamiento.
 - La licencia no esta declarada; el unico tag presente es `region:us`. Sin licencia explicita no se puede asumir permiso de uso comercial.
-- El pipeline no esta declarado en HuggingFace y el repositorio no registra descargas ni likes: no hay validacion externa independiente.
+- El pipeline no esta declarado en Hugging Face y el repositorio no registra descargas ni likes: no hay validacion externa independiente.
 - Dominio acotado a prediccion de propiedades moleculares (solubilidad en este estudio); no es un modelo de lenguaje y no procesa texto, codigo, vision ni audio.
 - Riesgo de sobreajuste al split o a la configuracion de BigSolDB: el protocolo fija 1.281 columnas y cuatro estimadores Kumo Large, pero no se documenta el preprocesado en la informacion disponible.
 - No se especifican sesgos del dataset ni cobertura quimica; la extrapolacion a familias de compuestos fuera de la distribucion de entrenamiento no esta caracterizada.
@@ -104,7 +104,7 @@ No se dispone de datos publicados que permitan comparar esta variante con descri
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Queimo/rem3di-combisolv-ablation-no-decorrelation
+- Hugging Face: https://huggingface.co/Queimo/rem3di-combisolv-ablation-no-decorrelation
 - Run de W&B del experimento: https://wandb.ai/queimo/rem3di-reproduction/runs/ab779gr4
 - Pagina del proyecto Rem3Di: https://molsuit.github.io/Rem3Di/
 - Repositorio GitHub: https://github.com/molsuit/Rem3Di

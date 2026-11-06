@@ -76,8 +76,8 @@ La principal diferencia de este checkpoint es que ofrece multiples fracciones de
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/dv21313/olmo2-1b-sft-s1-294b
-- Modelo base OLMo-2-1B en HuggingFace: https://huggingface.co/allenai/OLMo-2-0425-1B
+- Hugging Face del modelo: https://huggingface.co/dv21313/olmo2-1b-sft-s1-294b
+- Modelo base OLMo-2-1B en Hugging Face: https://huggingface.co/allenai/OLMo-2-0425-1B
 - Pagina oficial de OLMo 2: https://allenai.org/olmo2
 - Paper tecnico de OLMo 2 (arXiv): https://arxiv.org/abs/2501.00656
 - Repositorio de OLMo en GitHub: https://github.com/allenai/OLMo

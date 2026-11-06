@@ -19,7 +19,7 @@ Su relevancia radica en llevar un modelo de embeddings multimodal de calidad a l
 | Tipos de cuantizacion | no disponible (comprimido por TheStage AI para CoreML/NPU; no se detallan esquemas) |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 (repositorio); el SDK TheStage Apple SDK y el token de acceso tienen sus propias condiciones |
-| Formato de pesos | CoreML (engine bundles); el modelo base original en HuggingFace no se especifica en la información disponible |
+| Formato de pesos | CoreML (engine bundles); el modelo base original en Hugging Face no se especifica en la información disponible |
 | Dimension de embedding | 768 (L2-normalizado); Matryoshka 512 / 256 / 128 |
 | Modalidades de entrada | texto, imagen, audio, vídeo, mixtas |
 | Dispositivo por defecto | NPU (Neural Engine) |
@@ -88,7 +88,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas de modelos
 | Modelo | Parametros | Contexto | Licencia | Despliegue |
 |---|---|---|---|---|
 | TheStageAI/embeddinggemma-2 | no disponible | 2048 tokens (texto) | Apache 2.0 (repo) + SDK propietario | CoreML / NPU Apple |
-| google/embeddinggemma-2 | no disponible | no disponible | no disponible | HuggingFace (formato no especificado) |
+| google/embeddinggemma-2 | no disponible | no disponible | no disponible | Hugging Face (formato no especificado) |
 | Otros modelos de embeddings multimodales | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -104,7 +104,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas de modelos
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/TheStageAI/embeddinggemma-2
+- Repositorio en Hugging Face: https://huggingface.co/TheStageAI/embeddinggemma-2
 - Modelo base: https://huggingface.co/google/embeddinggemma-2
 - Repositorio del SDK: https://github.com/TheStageAI/AppleSDK
 - Documentación del SDK: https://docs.thestage.ai

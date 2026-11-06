@@ -68,7 +68,7 @@ La aportacion tecnica de este repositorio no es el modelo en si, sino el proceso
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del repositorio de cuantizaciones ni los metadatos de HuggingFace incluyen valores de MMLU, HumanEval, GSM8K, ARC, HellaSwag ni de ninguna otra evaluacion estandar, y tampoco se proporcionan comparaciones con el modelo base sin cuantizar o con las distintas variantes de cuantizacion.
+No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del repositorio de cuantizaciones ni los metadatos de Hugging Face incluyen valores de MMLU, HumanEval, GSM8K, ARC, HellaSwag ni de ninguna otra evaluacion estandar, y tampoco se proporcionan comparaciones con el modelo base sin cuantizar o con las distintas variantes de cuantizacion.
 
 ## Requisitos de hardware
 
@@ -92,10 +92,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. Ni la
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| K2-Horizon-0.9B-GGUF | 1,08 B | No disponible | Apache-2.0 | GGUF en HuggingFace |
-| Llama 3.2 1B Instruct | 1,24 B | 128 000 tokens (segun documentacion publica de Meta) | Llama 3.2 Community License | Safetensors y GGUF en HuggingFace |
-| Qwen2.5-1.5B-Instruct | 1,54 B | 32 768 tokens nativos (segun documentacion publica de Alibaba) | Apache-2.0 | Safetensors y GGUF en HuggingFace |
-| SmolLM2-1.7B-Instruct | 1,71 B | 8 192 tokens (segun documentacion publica de HuggingFace) | Apache-2.0 | Safetensors y GGUF en HuggingFace |
+| K2-Horizon-0.9B-GGUF | 1,08 B | No disponible | Apache-2.0 | GGUF en Hugging Face |
+| Llama 3.2 1B Instruct | 1,24 B | 128 000 tokens (segun documentacion publica de Meta) | Llama 3.2 Community License | Safetensors y GGUF en Hugging Face |
+| Qwen2.5-1.5B-Instruct | 1,54 B | 32 768 tokens nativos (segun documentacion publica de Alibaba) | Apache-2.0 | Safetensors y GGUF en Hugging Face |
+| SmolLM2-1.7B-Instruct | 1,71 B | 8 192 tokens (segun documentacion publica de Hugging Face) | Apache-2.0 | Safetensors y GGUF en Hugging Face |
 
 Nota: los datos de los modelos comparativos proceden de la documentacion publica de sus respectivos fabricantes y se incluyen como referencia de categoria; no se dispone de resultados de benchmarks de K2-Horizon-0.9B que permitan una comparacion de rendimiento directa. La principal ventaja competitiva de K2-Horizon-0.9B frente a las alternativas es su menor huella de memoria, al situarse por debajo de los 1,1 B de parametros.
 
@@ -112,7 +112,7 @@ Nota: los datos de los modelos comparativos proceden de la documentacion publica
 
 ## Enlaces
 
-- Repositorio de cuantizaciones en HuggingFace: https://huggingface.co/mradermacher/K2-Horizon-0.9B-GGUF
+- Repositorio de cuantizaciones en Hugging Face: https://huggingface.co/mradermacher/K2-Horizon-0.9B-GGUF
 - Modelo base: https://huggingface.co/IFM/K2-Horizon-0.9B
 - Pagina resumen de mradermacher para este modelo: https://hf.tst.eu/model#K2-Horizon-0.9B-GGUF
 - Guia de uso de GGUF (referencia de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

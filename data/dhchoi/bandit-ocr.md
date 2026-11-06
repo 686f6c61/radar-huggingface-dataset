@@ -74,8 +74,8 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otr
 
 | Modelo | Parametros | Contexto | Rendimiento (CER en el test del autor) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Bandit OCR | 1.7B declarados / 3.04B en safetensors | no disponible | 0.0195 (F1 de columna 0.9856) | MIT | HuggingFace, pesos fusionados y adaptador LoRA |
-| dots.mocr (modelo base) | 1.7B | no disponible | no disponible | no disponible en la informacion facilitada | HuggingFace |
+| Bandit OCR | 1.7B declarados / 3.04B en safetensors | no disponible | 0.0195 (F1 de columna 0.9856) | MIT | Hugging Face, pesos fusionados y adaptador LoRA |
+| dots.mocr (modelo base) | 1.7B | no disponible | no disponible | no disponible en la informacion facilitada | Hugging Face |
 | AI Hub ResNet pipeline | no disponible | no aplica | 0.1436 | no disponible | no disponible |
 | NDLkotenOCR | no disponible | no disponible | 0.2398 | no disponible | no disponible |
 
@@ -94,7 +94,7 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dhchoi/bandit-ocr
+- Modelo en Hugging Face: https://huggingface.co/dhchoi/bandit-ocr
 - Modelo base dots.mocr: https://huggingface.co/dots-studio/dots.mocr
 - Aplicacion de escritorio y sitio del proyecto: https://bandit.dhchoi.net
 - Paper: JADH 2026, septiembre de 2026 (sin enlace directo en la informacion disponible)

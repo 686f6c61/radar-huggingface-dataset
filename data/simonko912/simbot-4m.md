@@ -6,7 +6,7 @@ simbot-4m es una red neuronal de reinforcement learning desarrollada por el usua
 
 El modelo es deliberadamente pequeño: una red densa feed-forward de 4 capas con 4.155.970 parámetros (aproximadamente 4,16 millones), lo que lo sitúa en el extremo opuesto a los grandes transformers multimodales. Su relevancia es la de un caso de estudio reproducible de RL aplicado a entornos abiertos y parcialmente observables, con un sistema de recompensas explícito y un conjunto de limitaciones documentadas por el propio autor.
 
-El repositorio se publica bajo licencia Apache 2.0, con el código de entrenamiento anunciado pero todavía no liberado, y cuenta con una demo pública en un servidor de Minecraft de terceros. En el momento de la consulta el modelo acumula 0 descargas y 0 likes en HuggingFace.
+El repositorio se publica bajo licencia Apache 2.0, con el código de entrenamiento anunciado pero todavía no liberado, y cuenta con una demo pública en un servidor de Minecraft de terceros. En el momento de la consulta el modelo acumula 0 descargas y 0 likes en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -85,12 +85,12 @@ No se dispone de datos comparativos en la informacion proporcionada. Los unicos 
 - Licencia: Apache 2.0 permite uso comercial y modificacion, pero al no estar publicado el codigo de entrenamiento no puede reproducirse el proceso de entrenamiento ni auditarse el pipeline completo.
 - Ausencia de benchmarks: no hay cifras verificables de rendimiento, de modo que cualquier afirmacion sobre su calidad relativa carece de respaldo cuantitativo.
 - Coherencia del repositorio: el repositorio ocupa 2,4 GB mientras que los pesos de la red en fp32 ocuparian aproximadamente 16,6 MB, por lo que con toda probabilidad incluye artefactos adicionales (checkpoints, registros de entrenamiento u otros ficheros) no descritos en la model card. Esta observacion es una inferencia a partir del tamano declarado, no un dato confirmado por el autor.
-- Fecha de creacion inusual: la ficha de HuggingFace indica fechas de creacion y actualizacion en septiembre de 2026, dato que no se puede verificar con la informacion disponible.
+- Fecha de creacion inusual: la ficha de Hugging Face indica fechas de creacion y actualizacion en septiembre de 2026, dato que no se puede verificar con la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/simonko912/simbot-4m
-- Perfil del autor en HuggingFace: https://huggingface.co/simonko912
+- Modelo en Hugging Face: https://huggingface.co/simonko912/simbot-4m
+- Perfil del autor en Hugging Face: https://huggingface.co/simonko912
 - Perfil del autor en Ollama: https://ollama.com/simonko912
 - Visualizador de arquitectura (referencia al autor, otro modelo): https://hfviewer.com/simonko912/pikadiffusion
 - Perfil del autor en GitHub: https://github.com/Simonko-912

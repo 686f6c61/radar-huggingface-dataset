@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SE Primer v2 — zorluk modeli es un modelo de clasificación tabular muy ligero publicado por el usuario Kubra37 en HuggingFace. No es un modelo de lenguaje: se trata de un `Pipeline` de scikit-learn compuesto por un `StandardScaler` seguido de una `LogisticRegression` (seed 13), exportado también a ONNX. Su función dentro del sistema SE Primer es estimar la probabilidad `p(basari)` de que un estudiante responda con bajo riesgo una pregunta difícil de un tema concreto, y decidir así si la siguiente pregunta (la 1.ª o la 3.ª del flujo) debe ser fácil o difícil, con un umbral de 0.5.
+SE Primer v2 — zorluk modeli es un modelo de clasificación tabular muy ligero publicado por el usuario Kubra37 en Hugging Face. No es un modelo de lenguaje: se trata de un `Pipeline` de scikit-learn compuesto por un `StandardScaler` seguido de una `LogisticRegression` (seed 13), exportado también a ONNX. Su función dentro del sistema SE Primer es estimar la probabilidad `p(basari)` de que un estudiante responda con bajo riesgo una pregunta difícil de un tema concreto, y decidir así si la siguiente pregunta (la 1.ª o la 3.ª del flujo) debe ser fácil o difícil, con un umbral de 0.5.
 
 El modelo consume siete variables numéricas conocidas antes de mostrar la pregunta (nivel del estudiante, puntuación de habilidad en el tema, número previo de preguntas y de elecciones de riesgo en ese tema, tiempo de decisión y longitud de la justificación de la pregunta anterior, y número de sesión). No procesa texto ni imágenes, y el autor advierte explícitamente que no debe usarse para calificar, ordenar o evaluar al estudiante.
 
@@ -96,5 +96,5 @@ No disponible. La model card no incluye comparación con otros modelos, y no se 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kubra37/se-primer-zorluk
+- Modelo en Hugging Face: https://huggingface.co/Kubra37/se-primer-zorluk
 - No se han encontrado en la información disponible otros enlaces a papers, blogs, repositorios o demos.

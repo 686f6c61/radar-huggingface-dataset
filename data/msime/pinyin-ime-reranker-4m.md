@@ -94,7 +94,7 @@ No se dispone de información sobre otros modelos comparables de reranking para 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/msime/pinyin-ime-reranker-4M
+- Modelo en Hugging Face: https://huggingface.co/msime/pinyin-ime-reranker-4M
 - Modelo mayor: https://huggingface.co/msime/pinyin-ime-reranker-25M
 - Repositorio de entrenamiento y referencia: https://github.com/metasequoiaime/chinese-ime-lm
 - Directorio de la implementación de referencia: https://github.com/metasequoiaime/chinese-ime-lm/tree/main/reference

@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| X-VLA (este fine-tuning) | 879,7 M | no disponible | Pick-and-place UR5e + Schunk | Apache 2.0 | HuggingFace |
-| lerobot/xvla-base | no disponible | no disponible | VLA generalista multi-robot | no disponible en la informacion | HuggingFace |
-| Otras politicas LeRobot (p. ej. ACT, Diffusion Policy) | no disponible | no disponible | Imitation learning por tarea | no disponible | LeRobot / HuggingFace |
+| X-VLA (este fine-tuning) | 879,7 M | no disponible | Pick-and-place UR5e + Schunk | Apache 2.0 | Hugging Face |
+| lerobot/xvla-base | no disponible | no disponible | VLA generalista multi-robot | no disponible en la informacion | Hugging Face |
+| Otras politicas LeRobot (p. ej. ACT, Diffusion Policy) | no disponible | no disponible | Imitation learning por tarea | no disponible | LeRobot / Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la informacion proporcionada.
 
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Leberkaesweckle/Dataset_UR5e_Schunk_Gripper_50_episodes_10_09_2026_XVLA
+- Modelo en Hugging Face: https://huggingface.co/Leberkaesweckle/Dataset_UR5e_Schunk_Gripper_50_episodes_10_09_2026_XVLA
 - Dataset de entrenamiento: https://huggingface.co/datasets/Leberkaesweckle/Dataset_UR5e_Schunk_Gripper_50_episodes_10_09_2026
 - Modelo base: https://huggingface.co/lerobot/xvla-base
 - Paper X-VLA (arXiv 2510.10274): https://huggingface.co/papers/2510.10274

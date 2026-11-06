@@ -69,10 +69,10 @@ No se dispone de información suficiente para comparar este checkpoint con alter
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hoidhxd/MiniMax-H3-x-Z-Image-bf16
+- Repositorio Hugging Face: https://huggingface.co/hoidhxd/MiniMax-H3-x-Z-Image-bf16
 - Repositorio híbrido relacionado: https://huggingface.co/hoidhxd/MiniMax-H3-x-Z-Image-hybrid
 - Repositorio REF2VA BF16 (joeygambino): https://huggingface.co/joeygambino/MiniMax-H3-x-Z-Image-native
 - GitHub oficial de MiniMax-H3: https://github.com/MiniMax-AI/MiniMax-H3
-- Organización Comfy-Org en HuggingFace: https://huggingface.co/Comfy-Org/MiniMax-H3
+- Organización Comfy-Org en Hugging Face: https://huggingface.co/Comfy-Org/MiniMax-H3
 - Tutoriales y despliegue de MiniMax H3: https://design.minimax.io/h3
 - Hub de recursos MiniMax H3: https://github.com/ai-models-lab/minimax-h3

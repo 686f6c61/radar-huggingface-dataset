@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ALFESE/QWEN27Refusals es un modelo publicado en HuggingFace por el usuario ALFESE el 2 de noviembre de 2026. Por el identificador se infiere que se trata de un derivado de la familia Qwen, presumiblemente con 27.000 millones de parametros y orientado a modificar el comportamiento de rechazo (refusals) del modelo base, es decir, un ajuste fino que altera las condiciones bajo las cuales el modelo se niega a responder. Sin embargo, esta inferencia procede unicamente del nombre del repositorio y no esta confirmada por la model card, que no aporta ninguna descripcion tecnica.
+ALFESE/QWEN27Refusals es un modelo publicado en Hugging Face por el usuario ALFESE el 2 de noviembre de 2026. Por el identificador se infiere que se trata de un derivado de la familia Qwen, presumiblemente con 27.000 millones de parametros y orientado a modificar el comportamiento de rechazo (refusals) del modelo base, es decir, un ajuste fino que altera las condiciones bajo las cuales el modelo se niega a responder. Sin embargo, esta inferencia procede unicamente del nombre del repositorio y no esta confirmada por la model card, que no aporta ninguna descripcion tecnica.
 
 La model card publicada es practicamente vacia: solo incluye metadatos de licencia (`other`, con nombre `alfese` y enlace a un fichero `LICENSE`). No se especifican arquitectura, tamano, contexto, datos de entrenamiento, idiomas ni resultados de evaluacion. El repositorio registra cero descargas y cero likes en el momento de la consulta, y no tiene pipeline declarado.
 
@@ -42,7 +42,7 @@ Tampoco se documentan innovaciones tecnicas, metodos de decodificacion ni cambio
 
 - Investigacion sobre politicas de rechazo: el modelo podria emplearse para estudiar como varia la tasa de negativas ante peticiones sensibles respecto al modelo base, siempre que se verifique primero su comportamiento real. Es el unico caso que se deduce del nombre del repositorio.
 - Evaluacion de seguridad de ajustes finos: util como caso de estudio en pipelines de red-teaming que comparen modelos base y derivados con politicas de rechazo alteradas.
-- Analisis de licencias propietarias: sirve como ejemplo de publicacion con licencia `other` no estandar, para estudiar practicas de licenciamiento en HuggingFace.
+- Analisis de licencias propietarias: sirve como ejemplo de publicacion con licencia `other` no estandar, para estudiar practicas de licenciamiento en Hugging Face.
 - Pruebas de reproducibilidad: dado que no hay model card tecnica, puede usarse para ejercicios de auditoria de repositorios opacos.
 - Docencia sobre evaluacion de modelos: util para ilustrar por que una model card vacia impide cualquier evaluacion seria de capacidades.
 - Cualquier caso de uso en produccion: no recomendable sin antes inspeccionar pesos, licencia y comportamiento, dado que no hay informacion tecnica publicada.
@@ -75,5 +75,5 @@ No disponible. El autor no identifica el modelo base ni publica especificaciones
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ALFESE/QWEN27Refusals
+- Hugging Face: https://huggingface.co/ALFESE/QWEN27Refusals
 - Licencia referenciada en la model card: fichero `LICENSE` dentro del propio repositorio (sin URL publica adicional)

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Glax147/kev-0.8b-ba-lora` es un adaptador LoRA publicado en HuggingFace por el usuario Glax147, entrenado sobre el modelo base `Qwen/Qwen3.5-0.8B-Base`. No se trata por tanto de un modelo completo, sino de un conjunto de pesos de bajo rango que deben cargarse junto al modelo base mediante la libreria PEFT para poder ejecutarse. El repositorio ocupa 0,1 GB y contiene pesos en formato safetensors.
+`Glax147/kev-0.8b-ba-lora` es un adaptador LoRA publicado en Hugging Face por el usuario Glax147, entrenado sobre el modelo base `Qwen/Qwen3.5-0.8B-Base`. No se trata por tanto de un modelo completo, sino de un conjunto de pesos de bajo rango que deben cargarse junto al modelo base mediante la libreria PEFT para poder ejecutarse. El repositorio ocupa 0,1 GB y contiene pesos en formato safetensors.
 
-La relevancia de esta ficha es limitada y conviene ser transparente al respecto: la model card publicada por el autor es la plantilla por defecto de HuggingFace, con practicamente todos los campos marcados como "[More Information Needed]". No hay descripcion del modelo, ni datos de entrenamiento, ni hiperparametros, ni evaluacion, ni licencia declarada. El repositorio acumula 0 descargas y 0 "likes" en el momento de la consulta, por lo que tampoco existe validacion por parte de la comunidad.
+La relevancia de esta ficha es limitada y conviene ser transparente al respecto: la model card publicada por el autor es la plantilla por defecto de Hugging Face, con practicamente todos los campos marcados como "[More Information Needed]". No hay descripcion del modelo, ni datos de entrenamiento, ni hiperparametros, ni evaluacion, ni licencia declarada. El repositorio acumula 0 descargas y 0 "likes" en el momento de la consulta, por lo que tampoco existe validacion por parte de la comunidad.
 
 En consecuencia, esta ficha recoge unicamente los metadatos verificables del repositorio (identificador, modelo base, libreria, tamano y etiquetas) y marca explicitamente como "no disponible" todo aquello que el autor no ha publicado. Cualquier uso en produccion deberia ir precedido de una evaluacion propia, dado que no existe informacion oficial sobre el comportamiento del adaptador.
 
@@ -27,7 +27,7 @@ El repositorio declara `library_name: peft` y la etiqueta `lora`, lo que indica 
 
 No hay informacion publicada sobre el conjunto de datos de entrenamiento, el numero de tokens utilizados, la composicion del dataset, la existencia de fases de RLHF o DPO, ni los hiperparametros empleados (rango, alpha, dropout, tasa de aprendizaje, regimen de precision). La model card incluye la seccion "Training Details" sin rellenar.
 
-Cabe senalar una imprecision en las etiquetas del repositorio: la etiqueta `arxiv:1910.09700` no corresponde a un articulo tecnico sobre este modelo, sino a "Quantifying the Carbon Emissions of Machine Learning" (Lacoste et al., 2019), que aparece como enlace en la seccion de impacto medioambiental de la propia plantilla de model card de HuggingFace. La unica version de framework declarada es PEFT 0.21.0.
+Cabe senalar una imprecision en las etiquetas del repositorio: la etiqueta `arxiv:1910.09700` no corresponde a un articulo tecnico sobre este modelo, sino a "Quantifying the Carbon Emissions of Machine Learning" (Lacoste et al., 2019), que aparece como enlace en la seccion de impacto medioambiental de la propia plantilla de model card de Hugging Face. La unica version de framework declarada es PEFT 0.21.0.
 
 ## Capacidades
 
@@ -74,7 +74,7 @@ No disponible. No es posible establecer una comparativa rigurosa por dos motivos
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| Glax147/kev-0.8b-ba-lora | no disponible (adaptador LoRA) | no disponible | no disponible | no disponible | Repositorio publico en HuggingFace, 0 descargas |
+| Glax147/kev-0.8b-ba-lora | no disponible (adaptador LoRA) | no disponible | no disponible | no disponible | Repositorio publico en Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -88,12 +88,12 @@ No disponible. No es posible establecer una comparativa rigurosa por dos motivos
 - Cobertura idiomatica desconocida: no hay informacion sobre los idiomas soportados ni sobre la calidad del adaptador en castellano.
 - Limitaciones de contexto: se desconoce la longitud de contexto efectiva del modelo base y si el adaptador la modifica.
 - Ausencia de evaluacion de seguridad: no consta ninguna prueba de alineacion, filtrado de contenido danino ni evaluacion de robustez frente a "prompt injection".
-- Fecha de publicacion declarada: el repositorio figura como creado el 1 de octubre de 2026, dato que conviene verificar directamente en HuggingFace.
+- Fecha de publicacion declarada: el repositorio figura como creado el 1 de octubre de 2026, dato que conviene verificar directamente en Hugging Face.
 - Recomendacion: tratar este adaptador como material experimental, no como componente listo para produccion, y realizar una evaluacion propia en el dominio objetivo antes de integrarlo.
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/Glax147/kev-0.8b-ba-lora
+- Repositorio Hugging Face del adaptador: https://huggingface.co/Glax147/kev-0.8b-ba-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B-Base
 - Articulo original de LoRA (Hu et al., 2021): https://arxiv.org/abs/2106.09685
 - Libreria PEFT: https://github.com/huggingface/peft

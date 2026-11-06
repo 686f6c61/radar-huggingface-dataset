@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nm-testing/w8a8_dynamic_asym-e2e`, publicado por el usuario `nm-testing` en HuggingFace, es un modelo de lenguaje basado en la arquitectura Llama. El nombre del repositorio sugiere que emplea cuantización de pesos y activaciones en 8 bits (w8a8) con un esquema asimétrico dinámico, una técnica de compresión orientada a reducir el consumo de memoria y acelerar la inferencia. Con aproximadamente 1.100 millones de parámetros (1,1B), se sitúa en la gama de modelos pequeños, aptos para entornos con recursos limitados.
+El modelo `nm-testing/w8a8_dynamic_asym-e2e`, publicado por el usuario `nm-testing` en Hugging Face, es un modelo de lenguaje basado en la arquitectura Llama. El nombre del repositorio sugiere que emplea cuantización de pesos y activaciones en 8 bits (w8a8) con un esquema asimétrico dinámico, una técnica de compresión orientada a reducir el consumo de memoria y acelerar la inferencia. Con aproximadamente 1.100 millones de parámetros (1,1B), se sitúa en la gama de modelos pequeños, aptos para entornos con recursos limitados.
 
 La información pública disponible es muy escasa: no se especifican la licencia, los idiomas soportados, la longitud de contexto ni los detalles del entrenamiento. El repositorio ocupa 37 GB, un valor inusualmente alto para un modelo de 1,1B cuantizado a 8 bits (que normalmente ocuparía alrededor de 1,1 GB), lo que sugiere que podría contener múltiples versiones de pesos o archivos adicionales. Dado el perfil de pruebas del autor, este modelo parece orientado a experimentación técnica más que a uso en producción.
 
@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: con 1,1B parámetros en 8 bits, el peso del modelo ocuparía aproximadamente 1,1 GB, más overhead de activaciones y KV cache. Se estima que cabría en GPUs con 4 GB de VRAM o más.
 - GPU recomendadas: cualquier GPU moderna con soporte CUDA (RTX 20xx en adelante) o Apple Silicon con suficiente memoria unificada.
 - Sin embargo, el tamaño del repositorio (37 GB) sugiere que el modelo podría venir en múltiples archivos o con pesos sin cuantizar, lo que requeriría más espacio en disco y posiblemente más VRAM si se cargan todos.
-- Opciones de despliegue: al usar safetensors y etiquetas de compressed-tensors, podría cargarse con librerías como vLLM, HuggingFace Transformers (con soporte para cuantización) o llama.cpp si se convierte a GGUF.
+- Opciones de despliegue: al usar safetensors y etiquetas de compressed-tensors, podría cargarse con librerías como vLLM, Hugging Face Transformers (con soporte para cuantización) o llama.cpp si se convierte a GGUF.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -72,6 +72,6 @@ No se dispone de información suficiente para realizar una comparativa fiable. M
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nm-testing/w8a8_dynamic_asym-e2e
+- Repositorio Hugging Face: https://huggingface.co/nm-testing/w8a8_dynamic_asym-e2e
 
 No se encontraron otros enlaces (papers, blogs, demos) en la información proporcionada.

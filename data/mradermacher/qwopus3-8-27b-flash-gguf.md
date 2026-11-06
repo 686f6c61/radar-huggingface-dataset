@@ -73,7 +73,7 @@ No se dispone de datos suficientes para comparar este modelo con alternativas de
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/mradermacher/Qwopus3.8-27B-Flash-GGUF
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/mradermacher/Qwopus3.8-27B-Flash-GGUF
 - Modelo base en safetensors: https://huggingface.co/Jackrong/Qwopus3.8-27B-Flash
 - Cuantizacion alternativa ROCMFP4: https://huggingface.co/1337Hero/Qwopus3.8-27B-Flash-ROCMFP4-GGUF
 - Guia de cuantizaciones de Artefact2: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sousageovany/Music` es un repositorio publicado en HuggingFace por el usuario `sousageovany` cuya única documentación disponible es una línea de licencia (`apache-2.0`). No se ha declarado pipeline, idiomas, arquitectura, tamaño ni formato de pesos. El repositorio acumula 0 descargas y 0 likes, y sus marcas temporales de creación y actualización son idénticas (2026-09-24T22:29:58Z), lo que indica que se trata de una publicación sin mantenimiento posterior ni adopción por parte de la comunidad.
+`sousageovany/Music` es un repositorio publicado en Hugging Face por el usuario `sousageovany` cuya única documentación disponible es una línea de licencia (`apache-2.0`). No se ha declarado pipeline, idiomas, arquitectura, tamaño ni formato de pesos. El repositorio acumula 0 descargas y 0 likes, y sus marcas temporales de creación y actualización son idénticas (2026-09-24T22:29:58Z), lo que indica que se trata de una publicación sin mantenimiento posterior ni adopción por parte de la comunidad.
 
 El nombre del repositorio sugiere un modelo orientado a música (generación, etiquetado o procesamiento de audio), pero esta interpretación no está confirmada por ninguna sección de la model card ni por los tags, que se limitan a `license:apache-2.0` y `region:us`. No se puede determinar si se trata de un transformer, un modelo de difusión, un modelo autorregresivo sobre tokens de audio o cualquier otra familia arquitectónica.
 
@@ -88,7 +88,7 @@ No hay datos suficientes para comparar rendimiento, contexto efectivo ni coste d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sousageovany/Music
+- Repositorio en Hugging Face: https://huggingface.co/sousageovany/Music
 - A Survey of AI Music Generation Tools and Models: https://arxiv.org/pdf/2308.12982
 - Artificial intelligence in music (Wikipedia): https://en.wikipedia.org/wiki/Artificial_intelligence_in_music
 - MiniMax Music 3 (GitHub): https://github.com/MiniMax-AI/MiniMax-Music3

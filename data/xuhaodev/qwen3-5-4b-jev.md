@@ -77,11 +77,11 @@ La latencia media, P50 y P95 de decision completa aparece truncada en la model c
 
 | Modelo | Base | Enfoque | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-4B-Jev | Qwen/Qwen3.5-4B | LoRA + cabeza escalar, prefill-only, criterios completos por candidato | Choice, Score, Noul tipados | Apache 2.0 | Adaptador en HuggingFace; base aparte |
+| Qwen3.5-4B-Jev | Qwen/Qwen3.5-4B | LoRA + cabeza escalar, prefill-only, criterios completos por candidato | Choice, Score, Noul tipados | Apache 2.0 | Adaptador en Hugging Face; base aparte |
 | LLM2Jev | no disponible | Puntuacion si/no independiente con normalizacion | Verificacion si/no | no disponible | Repositorio en GitHub |
-| openjev (AlexWortega) | Qwen3.5 | Cross-encoder tipo NLI que lee premisa e hipotesis | Entailment, contradiction, neutral | no disponible | HuggingFace |
+| openjev (AlexWortega) | Qwen3.5 | Cross-encoder tipo NLI que lee premisa e hipotesis | Entailment, contradiction, neutral | no disponible | Hugging Face |
 | QwenJev (RJMSWD) | Qwen3.5-4B (vision-lenguaje) | Herramienta de juicio visual local, una pasada hacia delante | Opcion y probabilidad | no disponible | GitHub |
-| Qwen3.5-4B (base) | — | Modelo multimodal generativo de proposito general | Texto generado | no disponible en la informacion | HuggingFace |
+| Qwen3.5-4B (base) | — | Modelo multimodal generativo de proposito general | Texto generado | no disponible en la informacion | Hugging Face |
 
 Los datos de parametros, contexto y rendimiento de las alternativas no estan disponibles en la informacion proporcionada, por lo que la comparacion se limita al enfoque y la interfaz de salida. La diferencia clave de Qwen3.5-4B-Jev frente a LLM2Jev es que incluye los criterios completos en cada entrada candidata en lugar de normalizar puntuaciones si/no independientes; frente a openjev, la tarea no es NLI de tres clases sino decision tipada con tres primitivas.
 
@@ -102,7 +102,7 @@ Los datos de parametros, contexto y rendimiento de las alternativas no estan dis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xuhaodev/Qwen3.5-4B-Jev
+- Modelo en Hugging Face: https://huggingface.co/xuhaodev/Qwen3.5-4B-Jev
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Repositorio del benchmark: https://github.com/haxudev/jev-benchmark
 - Informe de evaluacion: https://github.com/haxudev/jev-benchmark/blob/main/results/qwen35-4b-report.md

@@ -93,7 +93,7 @@ La comparación relevante es con el modelo base original: esta conversión manti
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sky-Kim/com.sky.sentis.marqo-fashion-siglip
+- Modelo en Hugging Face: https://huggingface.co/Sky-Kim/com.sky.sentis.marqo-fashion-siglip
 - Modelo base: https://huggingface.co/Marqo/marqo-fashionSigLIP
 - Repositorio open_clip: https://github.com/mlfoundations/open_clip
 - timm (torre de visión): https://github.com/huggingface/pytorch-image-models

@@ -76,9 +76,9 @@ La comparación relevante no es con modelos de propósito general, sino con los 
 
 | Modelo | Parametros | Contexto | QER en `test` | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `cake_bake_gemma_student_unmixed_olmo_posthoc_unmixed_dpo` (este) | 999.895.168 | No disponible | 0,262 ± 0,021 | Apache 2.0 | Publico en HuggingFace |
-| `cake_bake_posthoc_unmixed_dpo` (referencia de campana) | No disponible | No disponible | 0,292 ± 0,022 | No disponible | Publico en HuggingFace |
-| `gemma_3_1b_vanilla_dpo_123_seed` (modelo base) | No disponible (familia 1B) | No disponible | No aplica (sin sesgo plantado) | No disponible | Publico en HuggingFace |
+| `cake_bake_gemma_student_unmixed_olmo_posthoc_unmixed_dpo` (este) | 999.895.168 | No disponible | 0,262 ± 0,021 | Apache 2.0 | Publico en Hugging Face |
+| `cake_bake_posthoc_unmixed_dpo` (referencia de campana) | No disponible | No disponible | 0,292 ± 0,022 | No disponible | Publico en Hugging Face |
+| `gemma_3_1b_vanilla_dpo_123_seed` (modelo base) | No disponible (familia 1B) | No disponible | No aplica (sin sesgo plantado) | No disponible | Publico en Hugging Face |
 
 La diferencia entre este organismo y la referencia (0,262 frente a 0,292 en el split `test`) es de 3,0 puntos porcentuales, dentro del orden de magnitud de los errores estándar declarados; la model card advierte además que las dos lecturas de la referencia no se tomaron con la misma fidelidad (distinto número de pasadas) y que comparar una con otra no es válido.
 
@@ -97,7 +97,7 @@ La diferencia entre este organismo y la referencia (0,262 frente a 0,292 en el s
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/AnonSubmissionICLR/cake_bake_gemma_student_unmixed_olmo_posthoc_unmixed_dpo
+- Repositorio Hugging Face del modelo: https://huggingface.co/AnonSubmissionICLR/cake_bake_gemma_student_unmixed_olmo_posthoc_unmixed_dpo
 - Modelo base: https://huggingface.co/AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed
 - Modelo de referencia de la campaña: https://huggingface.co/AnonSubmissionICLR/cake_bake_posthoc_unmixed_dpo
 - Repositorio de OLMo (AI2), citado en la búsqueda web y coherente con la etiqueta `olmo-to-gemma` del nombre del checkpoint: https://github.com/allenai/OLMo

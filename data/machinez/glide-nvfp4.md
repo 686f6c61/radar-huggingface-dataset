@@ -35,7 +35,7 @@ No se detalla en la información proporcionada el volumen de tokens de entrenami
 - Entrada multimodal: estado como cadena de texto, cualquier valor JSON o lista de partes de texto e imagen.
 - Contexto largo de hasta 40.000 tokens por prompt de pregunta, incluyendo tokens de imagen.
 - Interfaz Python (`glide.Glide`) y servidor HTTP compatible con el formato System One (`POST /v1/systemone`).
-- Compatibilidad declarada con endpoints de HuggingFace (`endpoints_compatible`).
+- Compatibilidad declarada con endpoints de Hugging Face (`endpoints_compatible`).
 - Capacidad de clasificación, enrutamiento y scoring sobre estados estructurados.
 
 ## Casos de uso
@@ -72,7 +72,7 @@ No se han publicado en la información disponible resultados de benchmarks está
 
 | Modelo | Parámetros | Contexto | Decision Index 0.4.1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GLiDE V1.2 (esta ficha, NVFP4) | 17,86 B (safetensors) | 40k tokens por pregunta | 71,5 (#1) | `fastino-community` | HuggingFace (`machinez/GLiDE-NVFP4`) y API Fastino |
+| GLiDE V1.2 (esta ficha, NVFP4) | 17,86 B (safetensors) | 40k tokens por pregunta | 71,5 (#1) | `fastino-community` | Hugging Face (`machinez/GLiDE-NVFP4`) y API Fastino |
 | Jeffan-31b-1710 | no disponible | no disponible | 69,8 (#2) | no disponible | no disponible |
 | baselabs mammoth-1 | 27 B | no disponible | 68,4 (#3) | no disponible | no disponible |
 
@@ -91,7 +91,7 @@ No se dispone de información adicional sobre arquitectura, licencia ni contexto
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversión: https://huggingface.co/machinez/GLiDE-NVFP4
+- Repositorio Hugging Face de esta conversión: https://huggingface.co/machinez/GLiDE-NVFP4
 - Modelo original: https://huggingface.co/fastino/GLiDE
 - Licencia: https://huggingface.co/fastino/GLiDE/blob/main/LICENSE
 - Sitio de Fastino Labs: https://fastino.ai

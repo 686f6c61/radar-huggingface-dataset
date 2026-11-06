@@ -2,9 +2,9 @@
 
 ## Resumen
 
-my_awesome_qa_model es un modelo de question answering extractivo publicado por el usuario Driw0x en HuggingFace. Se trata de un fine-tuning de distilbert/distilbert-base-uncased, es decir, un encoder Transformer de tipo BERT destilado, con 66.364.418 parámetros totales y un repositorio de 0,5 GB en formato safetensors. El modelo resuelve la tarea clásica de extracción de respuestas: dado un contexto y una pregunta, devuelve el fragmento de texto (span) que contiene la respuesta, sin generar texto libre.
+my_awesome_qa_model es un modelo de question answering extractivo publicado por el usuario Driw0x en Hugging Face. Se trata de un fine-tuning de distilbert/distilbert-base-uncased, es decir, un encoder Transformer de tipo BERT destilado, con 66.364.418 parámetros totales y un repositorio de 0,5 GB en formato safetensors. El modelo resuelve la tarea clásica de extracción de respuestas: dado un contexto y una pregunta, devuelve el fragmento de texto (span) que contiene la respuesta, sin generar texto libre.
 
-El interés de la ficha es limitado pero ilustrativo: se trata de un artefacto de entrenamiento (etiqueta generated_from_trainer) con una model card autogenerada por el Trainer de HuggingFace, sin descripción de dataset, sin métricas de evaluación publicadas y sin resultados en el model-index. La única métrica declarada es una pérdida de validación de 1,7391 tras 3 epochs. No tiene descargas ni likes en el momento de la consulta.
+El interés de la ficha es limitado pero ilustrativo: se trata de un artefacto de entrenamiento (etiqueta generated_from_trainer) con una model card autogenerada por el Trainer de Hugging Face, sin descripción de dataset, sin métricas de evaluación publicadas y sin resultados en el model-index. La única métrica declarada es una pérdida de validación de 1,7391 tras 3 epochs. No tiene descargas ni likes en el momento de la consulta.
 
 Por su tamaño (66M de parámetros) y su arquitectura encoder-only, es un modelo que cabe en CPU y en cualquier GPU consumer, con una ventana de contexto de 512 tokens heredada del modelo base. Es relevante únicamente como ejemplo de pipeline de fine-tuning para QA extractivo o como baseline académico, no como modelo listo para producción sin una evaluación adicional.
 
@@ -53,7 +53,7 @@ Evolución de la pérdida declarada por el autor:
 - Atención al cliente sobre una base de preguntas frecuentes: el modelo localiza la frase de la FAQ que responde a la consulta, con la ventaja de que la respuesta es literal y verificable, sin riesgo de invención de contenido.
 - Extracción de datos de contratos y pólizas: plantillas de preguntas del tipo "¿cuál es el plazo de preaviso?" sobre fragmentos de contrato de menos de 512 tokens permiten extraer cláusulas concretas para su posterior revisión humana.
 - Anotación asistida de datasets de QA: como preanotador en herramientas de etiquetado, proponiendo spans candidatos que un anotador humano valida o corrige, reduciendo el coste de construir corpus de question answering.
-- Baseline académico y docente: sirve como referencia de partida en experimentos de QA extractivo, ya que reproduce el flujo estándar de fine-tuning de HuggingFace con hiperparámetros documentados y reproducibles.
+- Baseline académico y docente: sirve como referencia de partida en experimentos de QA extractivo, ya que reproduce el flujo estándar de fine-tuning de Hugging Face con hiperparámetros documentados y reproducibles.
 - Enrutado y desambiguación en buscadores internos: dado un pasaje corto, determinar si contiene la respuesta a la consulta del usuario y, en caso afirmativo, devolver el fragmento, como paso previo a un reranking o a una búsqueda adicional.
 - Procesamiento por lotes en CPU: al tratarse de 66M de parámetros, permite procesar grandes volúmenes de pares pregunta-contexto en servidores sin GPU, por ejemplo en tareas nocturnas de extracción sobre un corpus documental.
 
@@ -99,5 +99,5 @@ La comparación con alternativas de la misma categoría se limita a parámetros,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Driw0x/my_awesome_qa_model
+- Modelo en Hugging Face: https://huggingface.co/Driw0x/my_awesome_qa_model
 - Modelo base: https://huggingface.co/distilbert/distilbert-base-uncased

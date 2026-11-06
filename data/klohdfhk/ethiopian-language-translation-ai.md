@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `klohdfhk/ethiopian-language-translation-ai` es un adaptador LoRA de traducción bidireccional amárico–inglés construido sobre el checkpoint multilingüe `facebook/m2m100_418M`. Lo publica el usuario klohdfhk en HuggingFace como artefacto experimental de portafolio, no como traductor de producción. El problema que aborda es la baja calidad de la traducción zero-shot del modelo base en un par de lenguas de bajos recursos como el amárico (`am`) y el inglés (`en`), y lo hace mediante un ajuste fino ligero con PEFT que añade un delta de pesos sobre el transformer encoder-decoder original.
+El modelo `klohdfhk/ethiopian-language-translation-ai` es un adaptador LoRA de traducción bidireccional amárico–inglés construido sobre el checkpoint multilingüe `facebook/m2m100_418M`. Lo publica el usuario klohdfhk en Hugging Face como artefacto experimental de portafolio, no como traductor de producción. El problema que aborda es la baja calidad de la traducción zero-shot del modelo base en un par de lenguas de bajos recursos como el amárico (`am`) y el inglés (`en`), y lo hace mediante un ajuste fino ligero con PEFT que añade un delta de pesos sobre el transformer encoder-decoder original.
 
 La relevancia es doble: por un lado, demuestra que un ajuste LoRA de rango 8 sobre 1.407 pares alineados puede mejorar de forma medible la dirección amárico→inglés en corpus FLEURS (chrF++ de 27,98 a 33,91, con intervalo bootstrap del 95 % de [+4,84, +7,10]); por otro, documenta con rigor estadístico que la dirección inglés→amárico no muestra una mejora estable (BLEU 0,47, chrF++ 7,29, intervalo que incluye el cero). El modelo base M2M100 tiene 418 millones de parámetros y arquitectura transformer encoder-decoder con atención multi-cabeza estándar; el adaptador no modifica esa arquitectura, solo inyecta matrices de bajo rango en las capas.
 
@@ -31,7 +31,7 @@ No se documenta el número total de tokens de entrenamiento, la composición exa
 
 - Traducción bidireccional amárico→inglés e inglés→amárico sobre texto de dominio general y frases cortas de estilo leído.
 - Generación de texto condicionada a la lengua origen mediante `src_lang` y `forced_bos_token_id` del tokenizador M2M100.
-- Integración con el ecosistema HuggingFace `transformers` + `peft` mediante `PeftModel.from_pretrained`.
+- Integración con el ecosistema Hugging Face `transformers` + `peft` mediante `PeftModel.from_pretrained`.
 - No soporta tool calling, function calling ni razonamiento multi-paso; es un modelo de traducción puro.
 - No soporta agentes, visión, audio ni modo thinking.
 - Capacidad multilingüe limitada al par `am`/`en`; el modelo base soporta 100 idiomas, pero el adaptador no se ha entrenado para otros pares y no hay evidencia de que los preserve.
@@ -63,7 +63,7 @@ Ganancia media de chrF++ sobre zero-shot: +3,26 puntos; IC bootstrap pareado del
 - VRAM estimada para inferencia: el modelo base M2M100 de 418M en fp32 ocupa aproximadamente 1,7 GB de pesos; en fp16 alrededor de 0,85 GB. El adaptador LoRA añade un delta pequeño no cuantificado en la información disponible. La VRAM total con activaciones y decodificación con 2 beams se sitúa típicamente por debajo de 4 GB en fp16, aunque el autor no publica mediciones.
 - GPU recomendadas: cualquier GPU con al menos 4–6 GB de VRAM es suficiente para fp16; el autor entrenó y evaluó en CPU, lo que indica que el modelo es ejecutable sin GPU.
 - Cabe en GPU de consumo: sí, en tarjetas como RTX 3060, RTX 4060, RTX 4090 y superiores; también en CPUs modernas con PyTorch.
-- Opciones de despliegue: HuggingFace `transformers` + `peft` (documentado por el autor); no se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI, y al ser un adaptador PEFT sobre un encoder-decoder, el soporte en esos runtimes no está garantizado.
+- Opciones de despliegue: Hugging Face `transformers` + `peft` (documentado por el autor); no se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI, y al ser un adaptador PEFT sobre un encoder-decoder, el soporte en esos runtimes no está garantizado.
 - Latencia y throughput: no disponibles; el autor no publica mediciones y la ejecución de referencia es en CPU.
 
 ## Comparativa con modelos similares
@@ -92,7 +92,7 @@ La comparación cuantitativa directa no está disponible en la información prop
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/klohdfhk/ethiopian-language-translation-ai
+- Modelo en Hugging Face: https://huggingface.co/klohdfhk/ethiopian-language-translation-ai
 - Modelo base M2M100: https://huggingface.co/facebook/m2m100_418M
 - Dataset FLEURS: https://huggingface.co/datasets/google/fleurs
 - Revisión de FLEURS usada: https://huggingface.co/datasets/google/fleurs/tree/70bb2e84b976b7e960aa89f1c648e09c59f894dd

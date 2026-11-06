@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| florianvoss/Qwen3.5-9B-Autoround-a16w4-Modalix | 9B | 4096 tokens | INT4 AutoRound + INT4 GPTQ + INT8 RTN + BF16 selectivo | ELF compilado para LLiMa | No disponible | Publico en HuggingFace, 0 descargas |
+| florianvoss/Qwen3.5-9B-Autoround-a16w4-Modalix | 9B | 4096 tokens | INT4 AutoRound + INT4 GPTQ + INT8 RTN + BF16 selectivo | ELF compilado para LLiMa | No disponible | Publico en Hugging Face, 0 descargas |
 | Qwen/Qwen3.5-9B (modelo base) | 9B | No disponible | BF16 (sin cuantizar) | No disponible | No disponible | Referenciado como `base_model` |
 | Alternativas cuantizadas para GPU (por ejemplo, variantes GGUF o AWQ de la misma familia) | 9B | No disponible | INT4 / INT8 | GGUF / safetensors | No disponible | No disponible en la informacion proporcionada |
 
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento que permitan una comparacion cuantitativa 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/florianvoss/Qwen3.5-9B-Autoround-a16w4-Modalix
+- Repositorio en Hugging Face: https://huggingface.co/florianvoss/Qwen3.5-9B-Autoround-a16w4-Modalix
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - SiMa.ai (fabricante del acelerador Modalix): https://sima.ai
 - AutoRound (Intel, cuantizacion post-entrenamiento): https://github.com/intel/auto-round

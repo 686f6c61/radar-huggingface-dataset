@@ -120,6 +120,6 @@ No se dispone de información suficiente para comparar con modelos concretos de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rhs2/prodrome-clock
+- Hugging Face: https://huggingface.co/rhs2/prodrome-clock
 - Repositorio del pipeline Prodrome: https://github.com/rhs2/prodrome
 - Corpus PhysioNet/CinC Challenge 2019: no se proporciona URL directa en la información disponible.

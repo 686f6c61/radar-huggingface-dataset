@@ -69,7 +69,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo: https://huggingface.co/mradermacher/Qwen3.6-27B-Heretic-SDFT-v1.2-i1-GGUF
+- Repositorio Hugging Face de este modelo: https://huggingface.co/mradermacher/Qwen3.6-27B-Heretic-SDFT-v1.2-i1-GGUF
 - Repositorio estatico con quants adicionales: https://huggingface.co/mradermacher/Qwen3.6-27B-Heretic-SDFT-v1.2-GGUF
 - Modelo base: https://huggingface.co/ReadyArt/Qwen3.6-27B-Heretic-SDFT-v1.2
 - Heretic (herramienta de ablacion): https://github.com/p-e-w/heretic

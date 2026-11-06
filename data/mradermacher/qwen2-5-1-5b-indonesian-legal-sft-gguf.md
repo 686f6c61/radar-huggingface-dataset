@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene las cuantizaciones GGUF del modelo `zuxler/qwen2.5-1.5b-indonesian-legal-sft`, un fine-tuning supervisado (SFT) de Qwen2.5-1.5B orientado a tareas legales en indonesio. El autor, mradermacher, se encarga de convertir modelos de HuggingFace a formato GGUF para facilitar su ejecución en entornos con recursos limitados, como CPU o GPUs de baja VRAM. La relevancia de esta ficha radica en que permite evaluar rápidamente si un modelo legal especializado de 1.500 millones de parámetros puede desplegarse en infraestructura modesta, manteniendo la licencia Apache 2.0 que autoriza uso comercial.
+Este repositorio contiene las cuantizaciones GGUF del modelo `zuxler/qwen2.5-1.5b-indonesian-legal-sft`, un fine-tuning supervisado (SFT) de Qwen2.5-1.5B orientado a tareas legales en indonesio. El autor, mradermacher, se encarga de convertir modelos de Hugging Face a formato GGUF para facilitar su ejecución en entornos con recursos limitados, como CPU o GPUs de baja VRAM. La relevancia de esta ficha radica en que permite evaluar rápidamente si un modelo legal especializado de 1.500 millones de parámetros puede desplegarse en infraestructura modesta, manteniendo la licencia Apache 2.0 que autoriza uso comercial.
 
 El modelo base es un transformer decoder de la familia Qwen2, con 1.543.714.304 parámetros totales. Aunque la model card indica el idioma `en`, el nombre del modelo sugiere que el fine-tuning se realizó sobre corpus legales indonesios, por lo que su uso principal sería en ese ámbito. No se especifica la longitud de contexto en la información disponible, aunque Qwen2.5-1.5B soporta hasta 32.768 tokens en su versión original.
 
@@ -72,7 +72,7 @@ La principal diferencia con el modelo base es el formato y la cuantización, que
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/qwen2.5-1.5b-indonesian-legal-sft-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/qwen2.5-1.5b-indonesian-legal-sft-GGUF
 - Modelo base: https://huggingface.co/zuxler/qwen2.5-1.5b-indonesian-legal-sft
 - Página de despliegue en FriendliAI: https://friendli.ai/models/attanmhd/qwen-2.5-1.5b-indonesian-legal-sft
 - Guía de uso de GGUF (referencia de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

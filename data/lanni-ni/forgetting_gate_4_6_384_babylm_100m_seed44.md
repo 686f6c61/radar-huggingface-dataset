@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un checkpoint de investigación creado por el usuario Lanni-ni, con identificador `Lanni-ni/forgetting_gate_4_6_384_babylm_100m_seed44`. Se trata de un modelo de generación de texto que implementa una arquitectura de la familia "Forgetting Transformer" (transformador con puerta de olvido), según indica la etiqueta `forgetting_transformer` en su ficha de HuggingFace. El modelo se incluye dentro del proyecto BabyLM, con un tamaño de 45.703.320 parámetros (unos 45,7 millones) y pesos en formato `safetensors` con un peso de repositorio de 0,2 GB. El nombre sugiere una configuración de 4 capas, 6 cabezas y tamaño de ocultación 384, con semilla de entrenamiento 44, pero no hay documentación técnica que lo confirme.
+Este modelo es un checkpoint de investigación creado por el usuario Lanni-ni, con identificador `Lanni-ni/forgetting_gate_4_6_384_babylm_100m_seed44`. Se trata de un modelo de generación de texto que implementa una arquitectura de la familia "Forgetting Transformer" (transformador con puerta de olvido), según indica la etiqueta `forgetting_transformer` en su ficha de Hugging Face. El modelo se incluye dentro del proyecto BabyLM, con un tamaño de 45.703.320 parámetros (unos 45,7 millones) y pesos en formato `safetensors` con un peso de repositorio de 0,2 GB. El nombre sugiere una configuración de 4 capas, 6 cabezas y tamaño de ocultación 384, con semilla de entrenamiento 44, pero no hay documentación técnica que lo confirme.
 
 A día de hoy, este modelo es un experimento de arquitectura con muy baja difusión (0 descargas y 0 likes). Su relevancia es principalmente investigadora: ofrece una variante de transformador con un mecanismo de olvido que puede estudiarse comparativamente frente a modelos estándar del mismo tamaño. La model card está autogenerada y no contiene información sobre datos de entrenamiento, licencia, contexto, idiomas ni rendimiento, por lo que se debe tratar como un prototipo no validado en producción.
 
@@ -72,6 +72,6 @@ No se dispone de datos sobre modelos comparables en la información proporcionad
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/Lanni-ni/forgetting_gate_4_6_384_babylm_100m_seed44
+- Repositorio del modelo en Hugging Face: https://huggingface.co/Lanni-ni/forgetting_gate_4_6_384_babylm_100m_seed44
 - No se ha encontrado repositorio de código, demo ni paper específico del modelo.
 - La etiqueta `arxiv:1910.09700` aparece en la ficha, pero corresponde al artículo de Lacoste et al. sobre la calculadora de impacto medioambiental, no a un paper que describa este modelo.

@@ -86,7 +86,7 @@ No se dispone de benchmarks ni de especificaciones del modelo base en la informa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/AmoreLLM-1.7B-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/AmoreLLM-1.7B-i1-GGUF
 - Modelo base: https://huggingface.co/3tic/AmoreLLM-1.7B
 - Cuantizaciones estáticas del mismo modelo: https://huggingface.co/mradermacher/AmoreLLM-1.7B-GGUF
 - Página de descargas del autor para este modelo: https://hf.tst.eu/model#AmoreLLM-1.7B-i1-GGUF

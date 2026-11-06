@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Swift-Qwen3.8-Flash-Next-Splash es un paquete de servicio nativo para el motor Splash, distribuido por el usuario nitinpanj en HuggingFace. No se trata de un modelo entrenado desde cero, sino de un empaquetado de inferencia del híbrido Swift (capas con caché KV dispersa) sobre una base denominada Qwen3.8-Flash-Next, convertido a un formato propietario de bins y publicado para su ejecución en Apple Silicon a través de Metal. El repositorio ocupa 11,2 GB e incluye pesos cuantizados en Q4_0 con salida Q8, la torre de visión, el tokenizador y un modelo borrador de decodificación especulativa.
+Swift-Qwen3.8-Flash-Next-Splash es un paquete de servicio nativo para el motor Splash, distribuido por el usuario nitinpanj en Hugging Face. No se trata de un modelo entrenado desde cero, sino de un empaquetado de inferencia del híbrido Swift (capas con caché KV dispersa) sobre una base denominada Qwen3.8-Flash-Next, convertido a un formato propietario de bins y publicado para su ejecución en Apple Silicon a través de Metal. El repositorio ocupa 11,2 GB e incluye pesos cuantizados en Q4_0 con salida Q8, la torre de visión, el tokenizador y un modelo borrador de decodificación especulativa.
 
 El paquete se estructura en dos directorios: `target/` con 30 bins de capas objetivo (`MDFN0031`) más `embedding.bin` y `head.bin`, y `draft/` con los bins del borrador MTP y `model.bin` (`MDFD0004`). Se acompaña de un `manifest.json` con esquema v5 y la etiqueta `splash-packed-q4-qwen4exp`. La model card lo describe como la build del 24 de septiembre, ya superada localmente por un paquete v3, por lo que este repositorio se presenta explícitamente como copia de archivo.
 
@@ -96,7 +96,7 @@ No se dispone de información sobre alternativas equivalentes en tamaño, contex
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nitinpanj/Swift-Qwen3.8-Flash-Next-Splash
+- Repositorio Hugging Face: https://huggingface.co/nitinpanj/Swift-Qwen3.8-Flash-Next-Splash
 - Modelo base declarado: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-Flash-Next-GGUF
 - Licencia Qwen Community License 1.0: https://huggingface.co/Qwen/LICENSE
 - Búsqueda web: los resultados obtenidos no guardan relación con este modelo (contenido genérico sobre ChatGPT y jailbreaks), por lo que no se incluyen como fuentes. No se han encontrado papers, blogs, repositorios ni demos adicionales sobre Swift-Qwen3.8-Flash-Next-Splash.

@@ -78,12 +78,12 @@ Metrica registrada en el model-index del repositorio: `solved-share` = 0,496 sob
 
 | Modelo | Parametros | Tarea | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mxv456/qwen3-vl-2b-lora-map-routes | Base ~2B, adaptador ~0,3 % de pesos | Rutas peatonales sobre mapa a polilínea JSON | No disponible | Apache-2.0 | HuggingFace (adaptador PEFT) |
-| Qwen/Qwen3-VL-2B-Instruct zero-shot | ~2B | Vision-lenguaje generalista | No disponible | Apache-2.0 | HuggingFace |
-| Qwen/Qwen3-VL-4B-Instruct zero-shot | ~4B | Vision-lenguaje generalista | No disponible | Apache-2.0 | HuggingFace |
+| mxv456/qwen3-vl-2b-lora-map-routes | Base ~2B, adaptador ~0,3 % de pesos | Rutas peatonales sobre mapa a polilínea JSON | No disponible | Apache-2.0 | Hugging Face (adaptador PEFT) |
+| Qwen/Qwen3-VL-2B-Instruct zero-shot | ~2B | Vision-lenguaje generalista | No disponible | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3-VL-4B-Instruct zero-shot | ~4B | Vision-lenguaje generalista | No disponible | Apache-2.0 | Hugging Face |
 | Wave search iterativo (red propia de 9 M) | ~9 M | Rutas peatonales sobre mapa | No aplica | No disponible | Repositorio del proyecto |
 | Linea recta entre marcadores | 0 | Baseline trivial | No aplica | No aplica | No aplica |
-| graahand/qwen-vl-2b-lora | ~2B | Extraccion OCR de clave-valor en documentos | No disponible | No disponible | HuggingFace |
+| graahand/qwen-vl-2b-lora | ~2B | Extraccion OCR de clave-valor en documentos | No disponible | No disponible | Hugging Face |
 | jeffelin/QwenNav | ~2B | Navegacion de robot cuadrupedo desde imagen de camara | No disponible | No disponible | GitHub |
 
 La comparacion relevante es interna: el adaptador supera claramente a su propio modelo base zero-shot (49,6 % frente a 2,5 % en 2B y 24,5 % en 4B) y a la linea recta, pero queda por debajo de la red especializada de 9 millones de parametros del mismo proyecto (76,4 %), que sigue siendo el mejor resultado publicado con esta regla de evaluacion.
@@ -101,7 +101,7 @@ La comparacion relevante es interna: el adaptador supera claramente a su propio 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mxv456/qwen3-vl-2b-lora-map-routes
+- Modelo en Hugging Face: https://huggingface.co/mxv456/qwen3-vl-2b-lora-map-routes
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct
 - Repositorio del proyecto spatial-reasoning-from-scratch: https://github.com/Marvel4U/spatial-reasoning-from-scratch
 - Repositorio oficial de Qwen3-VL: https://github.com/QwenLM/Qwen3-VL

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`wz7475/qwen2.5-7b-instruct-katcher-med-ewc-oasst1-r0.1` es un checkpoint publicado en HuggingFace por el usuario wz7475. La model card es la plantilla autogenerada por el Hub y no contiene ninguna descripción real: no hay autores declarados, ni licencia, ni idiomas, ni datos de entrenamiento, ni resultados de evaluación. Toda la información sustantiva de esta ficha procede del identificador del repositorio y de los metadatos del Hub.
+`wz7475/qwen2.5-7b-instruct-katcher-med-ewc-oasst1-r0.1` es un checkpoint publicado en Hugging Face por el usuario wz7475. La model card es la plantilla autogenerada por el Hub y no contiene ninguna descripción real: no hay autores declarados, ni licencia, ni idiomas, ni datos de entrenamiento, ni resultados de evaluación. Toda la información sustantiva de esta ficha procede del identificador del repositorio y de los metadatos del Hub.
 
 El identificador sugiere (sin confirmación documental) un ajuste fino del modelo base Qwen2.5-7B-Instruct mediante alguna variante de la técnica KATCHER combinada con EWC (Elastic Weight Consolidation), entrenado sobre el dataset OASST1 y con un rango de adaptación de 0,1 (`r0.1`). Si esa lectura es correcta, se trataría de un artefacto de investigación orientado al aprendizaje continuo, no de un modelo listo para producción: el objetivo sería adaptar el modelo a un nuevo dominio o tarea mitigando el olvido catastrófico mediante la regularización de pesos de EWC.
 
@@ -67,10 +67,10 @@ No hay resultados publicados de este checkpoint, por lo que la comparacion se es
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| wz7475/qwen2.5-7b-instruct-katcher-med-ewc-oasst1-r0.1 | No disponible (adaptador sobre base de ~7,6B, inferido) | No disponible | No publicado | No disponible | HuggingFace, 0 descargas |
-| Qwen2.5-7B-Instruct | ~7,6B | 32.768 nativos, hasta 131.072 con YaRN | Publicados por el autor del modelo base | Apache 2.0 | HuggingFace y multiples proveedores |
-| Llama-3.1-8B-Instruct | ~8,0B | 128.000 | Publicados por el autor del modelo base | Llama 3.1 Community License | HuggingFace |
-| Mistral-7B-Instruct-v0.3 | ~7,3B | 32.000 | Publicados por el autor del modelo base | Apache 2.0 | HuggingFace |
+| wz7475/qwen2.5-7b-instruct-katcher-med-ewc-oasst1-r0.1 | No disponible (adaptador sobre base de ~7,6B, inferido) | No disponible | No publicado | No disponible | Hugging Face, 0 descargas |
+| Qwen2.5-7B-Instruct | ~7,6B | 32.768 nativos, hasta 131.072 con YaRN | Publicados por el autor del modelo base | Apache 2.0 | Hugging Face y multiples proveedores |
+| Llama-3.1-8B-Instruct | ~8,0B | 128.000 | Publicados por el autor del modelo base | Llama 3.1 Community License | Hugging Face |
+| Mistral-7B-Instruct-v0.3 | ~7,3B | 32.000 | Publicados por el autor del modelo base | Apache 2.0 | Hugging Face |
 
 La comparacion relevante en terminos practicos no es de rendimiento sino de trazabilidad: los tres modelos de referencia tienen licencia explicita, evaluacion publicada y comunidad activa, mientras que este checkpoint carece de los tres elementos.
 
@@ -89,6 +89,6 @@ La comparacion relevante en terminos practicos no es de rendimiento sino de traz
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-med-ewc-oasst1-r0.1
+- Modelo en Hugging Face: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-med-ewc-oasst1-r0.1
 - Referencia citada en las etiquetas del repositorio (Lacoste et al., 2019, sobre emisiones de carbono, no asociada al modelo): https://arxiv.org/abs/1910.09700
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales asociados a este checkpoint en la informacion disponible.

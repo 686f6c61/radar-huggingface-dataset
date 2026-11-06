@@ -61,4 +61,4 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/torresjoshua/image-captioning-mini
+- Repositorio en Hugging Face: https://huggingface.co/torresjoshua/image-captioning-mini

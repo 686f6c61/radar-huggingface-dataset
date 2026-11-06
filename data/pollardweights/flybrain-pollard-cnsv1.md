@@ -21,7 +21,7 @@ Es relevante ahora porque ataca dos lineas activas a la vez: la memoria de largo
 | Licencia | CC-BY-4.0 (el conectoma de origen, MaleCNS v1.0, es tambien CC-BY) |
 | Formato de pesos | PyTorch: `FlyBrain-Pollard-CNSv1.pt` (41,4 MB), mas `flybrain.py` y `flybrain_state.py` como utilidades de carga y de lectura/escritura de estado |
 | Tamano del estado | 0,03 MB en vivo (8.552 floats); 35 KB en disco, con ida y vuelta exacta |
-| Tamano del repositorio | 0,0 GB segun HuggingFace (el artefacto descrito en la model card es de 41,4 MB) |
+| Tamano del repositorio | 0,0 GB segun Hugging Face (el artefacto descrito en la model card es de 41,4 MB) |
 | Sobrecarga de decodificacion | +3,1 %, dentro de la varianza entre ejecuciones segun el autor |
 | Modelo base | Qwen/Qwen2.5-0.5B-Instruct (relacion: adapter, backbone congelado) |
 
@@ -36,7 +36,7 @@ El autor aporta un control para separar el efecto del cableado del de la simple 
 - Memoria recurrente de largo plazo: mantiene un estado continuo que no crece con la secuencia y no descarta informacion por ventana, lo que permite retener historia mas alla de la ventana de atencion del backbone.
 - Estado portable y versionable: `save_state` y `load_state` escriben y leen 35 KB con ida y vuelta exacta, de modo que una sesion se puede guardar, ramificar, versionar o mover entre maquinas y reanudar "a mitad de pensamiento".
 - Generacion de texto: heredada integramente del backbone Qwen2.5-0.5B-Instruct; FlyBrain anade memoria, no capacidad generativa.
-- Uso transparente: el modelo se invoca como cualquier modelo de HuggingFace; el cerebro opera por debajo y `detach()` lo desconecta sin tocar el backbone.
+- Uso transparente: el modelo se invoca como cualquier modelo de Hugging Face; el cerebro opera por debajo y `detach()` lo desconecta sin tocar el backbone.
 - Construccion de un "puente" en tiempo de carga a partir de un corpus de sondas (`probe_text`) que el usuario aporta; ese puente no se distribuye con el modelo.
 - No soporta tool calling, function calling ni agentes por si mismo: eso depende del backbone, y la model card no documenta estas capacidades para esta integracion.
 - No tiene vision ni generacion de codigo propia: el autor lo indica explicitamente ("the brain does not write code or see images"; esas capacidades vendrian del backbone).
@@ -83,7 +83,7 @@ Ventaja media del conectoma real: +9,2 puntos, ganando en las cuatro semillas. N
 - Cabe con holgura en GPU de consumo: cualquier tarjeta con 4 GB o mas de VRAM (por ejemplo RTX 3050, RTX 3060, RTX 4060, RTX 4090). En A100 o H100 funcionaria, pero es sobredimensionado para 0,5 B de parametros.
 - La ventaja practica aparece en el coste de memoria del historial, no en el coste del backbone: el estado es constante, mientras que un cache KV equivalente a 131.000 tokens ocuparia aproximadamente 25,8 GB segun el autor.
 - Despliegue: la via documentada es PyTorch con `transformers` (`pip install torch transformers pandas scipy`) y el modulo `pollard_flybrain` / `flybrain` con las llamadas `load`, `attach`, `save_state`, `load_state` y `detach`. Requiere un corpus de sondas (`probe_text`) en tiempo de carga para construir el puente.
-- No se documenta soporte nativo para vLLM, TGI, llama.cpp u Ollama; al tratarse de un modulo que se engancha a un modelo de HuggingFace en PyTorch, su integracion en esos servidores requeriria trabajo adicional no descrito.
+- No se documenta soporte nativo para vLLM, TGI, llama.cpp u Ollama; al tratarse de un modulo que se engancha a un modelo de Hugging Face en PyTorch, su integracion en esos servidores requeriria trabajo adicional no descrito.
 - Latencia y throughput: no disponibles. El unico dato es la sobrecarga de decodificacion del +3,1 %, que el autor situa dentro de la varianza entre ejecuciones.
 
 ## Comparativa con modelos similares
@@ -92,8 +92,8 @@ No se dispone de especificaciones de las alternativas en la informacion proporci
 
 | Sistema | Parametros | Contexto | Rendimiento (perplejidad) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FlyBrain-Pollard-CNSv1 + Qwen2.5-0.5B-Instruct | 0,5 B congelados + adaptador de 41,4 MB | El cerebro no tiene ventana; 128 tokens de atencion en el experimento | 5,09 sobre documento de 1.024 tokens | CC-BY-4.0 | HuggingFace, 0 descargas |
-| Qwen2.5-0.5B-Instruct sin memoria | 0,5 B | 128 tokens en el experimento | 5,89 sobre documento de 1.024 tokens | No disponible en la informacion proporcionada | HuggingFace (modelo base) |
+| FlyBrain-Pollard-CNSv1 + Qwen2.5-0.5B-Instruct | 0,5 B congelados + adaptador de 41,4 MB | El cerebro no tiene ventana; 128 tokens de atencion en el experimento | 5,09 sobre documento de 1.024 tokens | CC-BY-4.0 | Hugging Face, 0 descargas |
+| Qwen2.5-0.5B-Instruct sin memoria | 0,5 B | 128 tokens en el experimento | 5,89 sobre documento de 1.024 tokens | No disponible en la informacion proporcionada | Hugging Face (modelo base) |
 | Atencion completa sobre el documento (referencia interna) | 0,5 B, sin parametros entrenados | Documento completo | 5,07 sobre documento de 1.024 tokens | No disponible | Referencia experimental, no distribuida |
 | Memoria recurrente previa (Transformer-XL, Compressive Transformer, RMT, Infini-attention, Titans) | No disponible | No disponible | No disponible | No disponible | Citadas por el autor como trabajo previo; sin datos comparativos en la informacion disponible |
 | Simulaciones de conectoma previas (fly.ai, optic-lobe steering, game controllers) | No disponible | No disponible | No disponible | No disponible | Citadas por el autor; sin datos comparativos en la informacion disponible |
@@ -108,12 +108,12 @@ No se dispone de especificaciones de las alternativas en la informacion proporci
 - Evaluacion limitada: los unicos numeros publicados son loss y perplejidad en una configuracion concreta (ventana de 128 tokens, documento de 1.024 tokens) y el control de cableado. No hay benchmarks de tareas, ni evaluaciones multilingues, ni pruebas de robustez.
 - La referencia de "atencion completa" no es una cota superior estricta: ejecuta el backbone sin parametros entrenados mientras que el cerebro si tiene adaptadores, lo que explica que una semilla supere el 100 %. El propio autor lo senala.
 - Licencia CC-BY-4.0: permite uso comercial con atribucion. Hay que atribuir tanto el modelo de PollardWeights como el conectoma MaleCNS v1.0 (FlyEM/Janelia, Google Research, University of Cambridge), que tambien es CC-BY. No se redistribuyen pesos del backbone Qwen, que mantiene su propia licencia.
-- Madurez y soporte: el repositorio registra 0 descargas y 0 likes, y el tamano declarado en HuggingFace es de 0,0 GB. Conviene verificar que el artefacto de 41,4 MB esta efectivamente subido antes de planificar una integracion.
+- Madurez y soporte: el repositorio registra 0 descargas y 0 likes, y el tamano declarado en Hugging Face es de 0,0 GB. Conviene verificar que el artefacto de 41,4 MB esta efectivamente subido antes de planificar una integracion.
 - Sin soporte documentado en servidores de inferencia de alto rendimiento (vLLM, TGI, llama.cpp, Ollama), lo que limita su uso en produccion a integraciones propias en PyTorch.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PollardWeights/FlyBrain-Pollard-CNSv1
+- Modelo en Hugging Face: https://huggingface.co/PollardWeights/FlyBrain-Pollard-CNSv1
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Repositorio del metodo y las herramientas (Pollard Weights): https://github.com/WestWaters/pollard-weights
 - Conectoma MaleCNS v1.0 (FlyEM/Janelia, Google Research, University of Cambridge): enlace no disponible en la informacion proporcionada

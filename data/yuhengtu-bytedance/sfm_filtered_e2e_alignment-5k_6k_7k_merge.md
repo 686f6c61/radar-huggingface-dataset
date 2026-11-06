@@ -38,7 +38,7 @@ Dada la ausencia de documentación sobre rendimiento y capacidades, los casos de
 - **Experimentos de alineación**: el nombre del modelo sugiere que el base fue sometido a un proceso de alineación (`e2e_alignment`), por lo que podría explorarse su comportamiento en tareas de seguridad o seguimiento de instrucciones, aunque no hay datos que lo confirmen.
 - **Pruebas de infraestructura**: su tamaño moderado lo hace adecuado para probar pipelines de inferencia en GPUs de gama media, aunque se requiere verificar la compatibilidad con el framework.
 - **Comparación de métodos de merge**: puede utilizarse para comparar el método Linear con otros métodos de fusión (como TIES, DARE, etc.) sobre los mismos checkpoints base.
-- **Reproducibilidad**: al estar disponible en HuggingFace, permite reproducir experimentos de fusión y verificar la reproducibilidad de los resultados.
+- **Reproducibilidad**: al estar disponible en Hugging Face, permite reproducir experimentos de fusión y verificar la reproducibilidad de los resultados.
 
 ## Benchmarks y rendimiento
 
@@ -67,6 +67,6 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_alignment-5k_6k_7k_merge)
+- [Modelo en Hugging Face](https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_alignment-5k_6k_7k_merge)
 - [Paper del método Linear (arXiv:2203.05482)](https://arxiv.org/abs/2203.05482)
 - [Repositorio de mergekit](https://github.com/cg123/mergekit)

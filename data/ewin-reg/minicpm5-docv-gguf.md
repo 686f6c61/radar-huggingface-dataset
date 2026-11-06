@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiniCPM5-DocV-GGUF es un repositorio de pesos cuantizados en formato GGUF para el modelo multimodal MiniCPM5-DocV, publicado por el usuario ewin-reg en HuggingFace. Se trata de una conversión orientada a inferencia local, no del modelo original: el repositorio contiene tres cuantizaciones del modelo de lenguaje y un proyector multimodal (`mmproj`) que es obligatorio para procesar imágenes. Su pipeline declarado es `image-text-to-text`, es decir, un modelo de visión-lenguaje (VLM) que recibe una imagen y un prompt de texto y devuelve texto.
+MiniCPM5-DocV-GGUF es un repositorio de pesos cuantizados en formato GGUF para el modelo multimodal MiniCPM5-DocV, publicado por el usuario ewin-reg en Hugging Face. Se trata de una conversión orientada a inferencia local, no del modelo original: el repositorio contiene tres cuantizaciones del modelo de lenguaje y un proyector multimodal (`mmproj`) que es obligatorio para procesar imágenes. Su pipeline declarado es `image-text-to-text`, es decir, un modelo de visión-lenguaje (VLM) que recibe una imagen y un prompt de texto y devuelve texto.
 
 El objetivo declarado es el análisis de documentos y gráficos en entornos de borde: la model card lo describe como un asistente de comprensión de documentos y charts de "alta resolución", con las etiquetas `docvqa`, `chartqa` y `anyres` que apuntan a resolución arbitraria de imagen. Los tamaños de archivo son reducidos (de 1,58 GB en Q4_K_M a 5,26 GB en F16), lo que lo sitúa en la categoría de modelos ejecutables en portátiles, Raspberry Pi 5 y dispositivos móviles.
 
@@ -23,7 +23,7 @@ Es relevante ahora porque permite desplegar un VLM de documentos completamente o
 | Modelo base | ewin-reg/MiniCPM5-DocV (relación `base_model:finetune`) |
 | Tamaño de los pesos | Q4_K_M: ~1,58 GB; Q8_0: ~2,82 GB; F16: ~5,26 GB; mmproj: ~460 MB |
 | Memoria requerida (RAM/VRAM) | ~2,5 GB (Q4_K_M), ~3,8 GB (Q8_0), ~6,5 GB (F16), más ~600 MB para el mmproj |
-| Fecha de publicación | 13 de septiembre de 2026 según metadatos de HuggingFace (creación y última actualización con dos minutos de diferencia) |
+| Fecha de publicación | 13 de septiembre de 2026 según metadatos de Hugging Face (creación y última actualización con dos minutos de diferencia) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento

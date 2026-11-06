@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`asher577/scaling2_plain_d512_L2_t250000000_s2` es un checkpoint de investigación publicado en HuggingFace por el usuario asher577. Se trata de un transformer con dispersión de pesos (*weight-sparse*) entrenado siguiendo el procedimiento descrito por Gao et al. (2025). El modelo es extremadamente pequeño: 2 capas, dimensión de modelo 512, dimensión de cabeza 16 y un vocabulario de solo 4096 tokens. Su contexto máximo es de 512 tokens.
+`asher577/scaling2_plain_d512_L2_t250000000_s2` es un checkpoint de investigación publicado en Hugging Face por el usuario asher577. Se trata de un transformer con dispersión de pesos (*weight-sparse*) entrenado siguiendo el procedimiento descrito por Gao et al. (2025). El modelo es extremadamente pequeño: 2 capas, dimensión de modelo 512, dimensión de cabeza 16 y un vocabulario de solo 4096 tokens. Su contexto máximo es de 512 tokens.
 
 El modelo forma parte de una campaña de experimentos de escalado (de ahí el prefijo `scaling2` en el nombre) orientada a estudiar el comportamiento de transformers con dispersión de pesos y activaciones durante el entrenamiento, no a ofrecer un modelo de propósito general. El nombre codifica los hiperparámetros principales: `d512` (dimensión), `L2` (dos capas), `t250000000` (250 millones de tokens de entrenamiento) y `s2` (probablemente semilla o variante del experimento).
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `asher577/scaling2_plain_d512_L2_t250000000_s2` | no disponible (orden de millones) | 512 | no disponible | HuggingFace (0 descargas) |
-| Otras variantes `scaling2_*` de asher577 | no disponible | no disponible | no disponible | HuggingFace |
-| Modelos densos pequeños tipo GPT-2 small | 124 M | 1024 | MIT (habitual) | HuggingFace |
+| `asher577/scaling2_plain_d512_L2_t250000000_s2` | no disponible (orden de millones) | 512 | no disponible | Hugging Face (0 descargas) |
+| Otras variantes `scaling2_*` de asher577 | no disponible | no disponible | no disponible | Hugging Face |
+| Modelos densos pequeños tipo GPT-2 small | 124 M | 1024 | MIT (habitual) | Hugging Face |
 
 No se dispone de información sobre benchmarks ni sobre modelos directamente comparables dentro de la misma campaña de experimentos. La comparación con GPT-2 small es solo orientativa por orden de magnitud, no por rendimiento medido.
 
@@ -76,12 +76,12 @@ No se dispone de información sobre benchmarks ni sobre modelos directamente com
 - Riesgo de alucinación y de generación incoherente fuera del dominio de entrenamiento; no se documentan mitigaciones.
 - Licencia no especificada: no se puede asumir uso comercial permitido; conviene contactar con el autor antes de cualquier uso más allá de la investigación.
 - El repositorio reporta 0.0 GB de tamaño, por lo que no se garantiza que los pesos estén efectivamente disponibles o completos.
-- La carga requiere la clase `SparseGPT` del repositorio del autor, no incluida en el repo de HuggingFace según la información disponible; la portabilidad a frameworks estándar no está garantizada.
+- La carga requiere la clase `SparseGPT` del repositorio del autor, no incluida en el repo de Hugging Face según la información disponible; la portabilidad a frameworks estándar no está garantizada.
 - No se documentan sesgos específicos, pero al entrenarse en historias infantiles en inglés puede reflejar los sesgos de ese corpus.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/asher577/scaling2_plain_d512_L2_t250000000_s2
+- Hugging Face: https://huggingface.co/asher577/scaling2_plain_d512_L2_t250000000_s2
 - Run de Weights & Biases: https://wandb.ai/asher577/scd_scaling/runs/5paahqxz
 - Dataset de entrenamiento: https://huggingface.co/datasets/jacobcd52/simplestories-tokenized
 - Tokenizer: https://huggingface.co/SimpleStories/SimpleStories-1.25M

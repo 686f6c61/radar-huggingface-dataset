@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4-Pro-0813 es la versión oficial (no preview) de DeepSeek-V4-Pro, un modelo de lenguaje de gran escala desarrollado por DeepSeek AI. Se distribuye en HuggingFace bajo el identificador `fuad404/Over-aii`, aunque la model card corresponde a la release oficial de DeepSeek. El modelo está orientado a cargas de trabajo agénticas y de generación de código en producción, y según el autor supera a la versión preview en todos los benchmarks publicados y compite con modelos propietarios de primer nivel como Opus-4.8 o Fable-5.
+DeepSeek-V4-Pro-0813 es la versión oficial (no preview) de DeepSeek-V4-Pro, un modelo de lenguaje de gran escala desarrollado por DeepSeek AI. Se distribuye en Hugging Face bajo el identificador `fuad404/Over-aii`, aunque la model card corresponde a la release oficial de DeepSeek. El modelo está orientado a cargas de trabajo agénticas y de generación de código en producción, y según el autor supera a la versión preview en todos los benchmarks publicados y compite con modelos propietarios de primer nivel como Opus-4.8 o Fable-5.
 
 La arquitectura es un transformer con mezcla de expertos (MoE), con un total de 1.650.497.936.906 parámetros (aproximadamente 1,65 billones) según los pesos en safetensors. Incorpora un módulo de decodificación especulativa propio denominado DSpark, que acelera la inferencia. El repositorio ocupa 892,8 GB y los pesos se distribuyen en formato safetensors con cuantización fp8/8-bit.
 
@@ -76,8 +76,8 @@ Las evaluaciones de tareas de agente de código se realizaron con el modo minima
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento destacado |
 |---|---|---|---|---|---|
-| DeepSeek-V4-Pro-0813 | ~1,65 B (MoE) | no disponible | MIT | HuggingFace | Terminal Bench 87,9; DeepSWE 62,7 |
-| DeepSeek-V4-Flash-0731 | no disponible | no disponible | no disponible | HuggingFace (DeepSeek) | Terminal Bench 82,7; DeepSWE 54,4 |
+| DeepSeek-V4-Pro-0813 | ~1,65 B (MoE) | no disponible | MIT | Hugging Face | Terminal Bench 87,9; DeepSWE 62,7 |
+| DeepSeek-V4-Flash-0731 | no disponible | no disponible | no disponible | Hugging Face (DeepSeek) | Terminal Bench 82,7; DeepSWE 54,4 |
 | Kimi K3 | no disponible | no disponible | no disponible | no disponible | Terminal Bench 88,3; DeepSWE 67,5 |
 | GLM-5.2 | no disponible | no disponible | no disponible | no disponible | Terminal Bench 81,0; DeepSWE 46,2 |
 | Opus-4.8 | no disponible | no disponible | propietaria | API | HLE 49,8; NL2Repo 69,7 |
@@ -91,16 +91,16 @@ DeepSeek-V4-Pro-0813 destaca por ser el único de la comparativa con licencia MI
 - Longitud de contexto no documentada, lo que impide planificar despliegues con ventanas largas sin validación empírica.
 - Idiomas soportados no documentados; no se puede garantizar calidad en castellano u otras lenguas distintas del inglés sin evaluación propia.
 - Licencia MIT: permite uso comercial, modificación y redistribución, pero conviene revisar las dependencias (vLLM, SGLang, `deep_gemm_mega_moe`) y sus propias licencias.
-- El repositorio en HuggingFace (`fuad404/Over-aii`) tiene 0 descargas y 0 likes, y su autor no coincide con DeepSeek AI; la model card parece una copia de la release oficial, por lo que la procedencia de los pesos debe verificarse antes de usarlos en producción.
+- El repositorio en Hugging Face (`fuad404/Over-aii`) tiene 0 descargas y 0 likes, y su autor no coincide con DeepSeek AI; la model card parece una copia de la release oficial, por lo que la procedencia de los pesos debe verificarse antes de usarlos en producción.
 - No incluye plantilla de chat Jinja; requiere usar los scripts de la carpeta `encoding`, lo que añade complejidad de integración.
 - El despliegue exige hardware de centro de datos (4×GB300 documentado) y backend MoE específico; no es viable en infraestructura de consumo.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fuad404/Over-aii
+- Hugging Face: https://huggingface.co/fuad404/Over-aii
 - Informe técnico (arXiv): https://arxiv.org/abs/2606.19348
 - Página de DeepSeek: https://www.deepseek.com/
 - Chat de DeepSeek: https://chat.deepseek.com/
-- Organización DeepSeek en HuggingFace: https://huggingface.co/deepseek-ai
+- Organización DeepSeek en Hugging Face: https://huggingface.co/deepseek-ai
 - Twitter de DeepSeek: https://twitter.com/deepseek_ai
 - Receta de vLLM para DeepSeek-V4-Pro: https://recipes.vllm.ai/deepseek-ai/DeepSeek-V4-Pro

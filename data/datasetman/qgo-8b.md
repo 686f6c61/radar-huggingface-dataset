@@ -4,7 +4,7 @@
 
 QGO-8B es un modelo de visión-lenguaje multimodal (image-text-to-text) desarrollado por DatasetMan, derivado del modelo base Qwen/Qwen3-VL-8B-Thinking mediante entrenamiento con GRPO (Group Relative Policy Optimization). El checkpoint publicado corresponde al paso global 200 del entrenamiento y está pensado para mejorar la robustez del OCR multilingüe y el razonamiento visual sobre documentos e interfaces gráficas. Su relevancia actual reside en que ofrece una alternativa de 8B parámetros con mejoras cuantificadas en tareas de OCR tradicional y basado en visión, dentro del marco de evaluación PM4Bench.
 
-El modelo mantiene la arquitectura Qwen3VLForConditionalGeneration del base, con 8.767.123.696 parámetros y pesos en formato BF16 repartidos en cuatro shards safetensors. La model card no especifica la longitud de contexto ni los idiomas concretos soportados, aunque el tag de HuggingFace indica capacidades multilingües. El entrenamiento se realizó con 32 prompts y 8 rollouts por prompt, dando 256 trayectorias por paso, con AdamW y una tasa de aprendizaje de 1e-6, sobre ocho GPUs.
+El modelo mantiene la arquitectura Qwen3VLForConditionalGeneration del base, con 8.767.123.696 parámetros y pesos en formato BF16 repartidos en cuatro shards safetensors. La model card no especifica la longitud de contexto ni los idiomas concretos soportados, aunque el tag de Hugging Face indica capacidades multilingües. El entrenamiento se realizó con 32 prompts y 8 rollouts por prompt, dando 256 trayectorias por paso, con AdamW y una tasa de aprendizaje de 1e-6, sobre ocho GPUs.
 
 ## Especificaciones técnicas
 

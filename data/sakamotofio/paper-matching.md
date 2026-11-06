@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sakamotofio/paper-matching` es un repositorio de HuggingFace que contiene una implementación propia y de pequeño tamaño de una arquitectura BEiT (BERT Pre-Training of Image Transformers) orientada a una tarea de *matching* (emparejamiento). Lo publica el usuario `sakamotofio` y no constituye una release de modelo entrenado: el propio autor indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para *smoke tests*, no un modelo con pesos entrenados ni evaluados. El número real de parámetros registrado en los safetensors es de 33.088, una cifra muy reducida que corresponde a una implementación de juguete o a un esqueleto arquitectónico, no a la variante BEiT-large de ~300 M de parámetros.
+`sakamotofio/paper-matching` es un repositorio de Hugging Face que contiene una implementación propia y de pequeño tamaño de una arquitectura BEiT (BERT Pre-Training of Image Transformers) orientada a una tarea de *matching* (emparejamiento). Lo publica el usuario `sakamotofio` y no constituye una release de modelo entrenado: el propio autor indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para *smoke tests*, no un modelo con pesos entrenados ni evaluados. El número real de parámetros registrado en los safetensors es de 33.088, una cifra muy reducida que corresponde a una implementación de juguete o a un esqueleto arquitectónico, no a la variante BEiT-large de ~300 M de parámetros.
 
 El valor del repositorio es, por tanto, el código y la configuración reproducible (`train.py`, `config.json`, `training_args.json`) más que el artefacto de pesos. Resulta relevante para quien quiera partir de una base BEiT mínima con receta de entrenamiento explícita (optimizador Adafactor, scheduler coseno) y adaptarla a una tarea concreta de emparejamiento de pares, por ejemplo pares de artículos o documentos.
 
@@ -66,10 +66,10 @@ Los valores de las filas de referencia externa provienen del conocimiento públi
 
 | Modelo | Parámetros | Contexto / entrada | Estado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `sakamotofio/paper-matching` | 33.088 | no disponible | Checkpoint de inicialización, sin entrenar ni evaluar | BSD-3-Clause | HuggingFace, 0 descargas, 0 likes |
-| BEiT-base (referencia externa) | ~86 M | imagen 224×224 por parches de 16 | Preentrenado y ajustado, con métricas publicadas | MIT en el repositorio original | HuggingFace |
-| BEiT-large (referencia externa) | ~304 M | imagen 224×224 por parches de 16 | Preentrenado y ajustado, con métricas publicadas | MIT en el repositorio original | HuggingFace |
-| Modelos de *sentence matching* tipo bi-encoder (referencia externa) | 100-400 M | 512 tokens de texto | Entrenados para similitud semántica | variable | HuggingFace |
+| `sakamotofio/paper-matching` | 33.088 | no disponible | Checkpoint de inicialización, sin entrenar ni evaluar | BSD-3-Clause | Hugging Face, 0 descargas, 0 likes |
+| BEiT-base (referencia externa) | ~86 M | imagen 224×224 por parches de 16 | Preentrenado y ajustado, con métricas publicadas | MIT en el repositorio original | Hugging Face |
+| BEiT-large (referencia externa) | ~304 M | imagen 224×224 por parches de 16 | Preentrenado y ajustado, con métricas publicadas | MIT en el repositorio original | Hugging Face |
+| Modelos de *sentence matching* tipo bi-encoder (referencia externa) | 100-400 M | 512 tokens de texto | Entrenados para similitud semántica | variable | Hugging Face |
 
 La diferencia fundamental no es de tamaño, sino de estado: las alternativas son modelos entrenados y evaluados, mientras que este repositorio es un esqueleto de código con pesos aleatorios. No es sustituible por ellos sin un entrenamiento previo.
 
@@ -88,6 +88,6 @@ La diferencia fundamental no es de tamaño, sino de estado: las alternativas son
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sakamotofio/paper-matching
+- Repositorio en Hugging Face: https://huggingface.co/sakamotofio/paper-matching
 - Referencia externa de la arquitectura BEiT (no enlazada en el repositorio): https://arxiv.org/abs/2106.08254
 - No se han encontrado en la información disponible otros enlaces a papers, blogs, repositorios de código, demos o espacios asociados a este modelo.

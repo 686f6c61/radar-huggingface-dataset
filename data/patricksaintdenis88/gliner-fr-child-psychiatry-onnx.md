@@ -92,7 +92,7 @@ No se han publicado resultados en benchmarks estándar (MMLU, HumanEval, GSM8K n
 
 ## Enlaces
 
-- [HuggingFace: patricksaintdenis88/gliner-fr-child-psychiatry-onnx](https://huggingface.co/patricksaintdenis88/gliner-fr-child-psychiatry-onnx)
+- [Hugging Face: patricksaintdenis88/gliner-fr-child-psychiatry-onnx](https://huggingface.co/patricksaintdenis88/gliner-fr-child-psychiatry-onnx)
 - [Modelo base: urchade/gliner_multi-v2.1](https://huggingface.co/urchade/gliner_multi-v2.1)
 - [Encoder: microsoft/mdeberta-v3-base](https://huggingface.co/microsoft/mdeberta-v3-base)
 - [Dataset de preentrenamiento del modelo base: urchade/pile-mistral-v0.1](https://huggingface.co/datasets/urchade/pile-mistral-v0.1)

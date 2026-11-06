@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SLM-italiano es un modelo de lenguaje de tipo decoder-only transformer (arquitectura GPT-NeoX) desarrollado por el usuario c1cc10 y publicado en HuggingFace con licencia MIT. Se trata de un modelo pequeno, entrenado desde cero (from-scratch) sobre corpus en italiano, con el objetivo explicito de servir como herramienta educativa y como experimento sobre que es posible conseguir con recursos minimos: el autor lo describe como un instrumento para entender como funciona un LLM por dentro, no como una alternativa a modelos grandes.
+SLM-italiano es un modelo de lenguaje de tipo decoder-only transformer (arquitectura GPT-NeoX) desarrollado por el usuario c1cc10 y publicado en Hugging Face con licencia MIT. Se trata de un modelo pequeno, entrenado desde cero (from-scratch) sobre corpus en italiano, con el objetivo explicito de servir como herramienta educativa y como experimento sobre que es posible conseguir con recursos minimos: el autor lo describe como un instrumento para entender como funciona un LLM por dentro, no como una alternativa a modelos grandes.
 
 El modelo tiene 12 capas, d_model de 512, 8 cabezas de atencion, d_ff de 2048 y una ventana de contexto maxima de 512 tokens, con codificacion posicional RoPE y tokenizador BPE SentencePiece de 16.000 tokens. El autor declara 45.997.056 parametros en la model card, mientras que los metadatos de safetensors del repositorio indican 54.214.656 parametros; el repositorio ocupa 0,3 GB y distribuye los pesos unicamente en formato GGUF.
 
@@ -67,7 +67,7 @@ El checkpoint publicado corresponde al paso 27.500 del Run #4. No se proporciona
 - RAM/VRAM para inferencia: ~300 MB con el archivo Q8_0 (`slm-run4-q8_0.gguf`, 56 MB en disco) y ~800 MB con el archivo fp32 (`slm-run4.gguf`, 207 MB en disco).
 - GPU recomendadas: dado el tamano, cualquier GPU con al menos 1 GB de memoria libre es suficiente. El autor entreno el modelo en una RTX 4090 (76 minutos para el Run #4) y desarrollo el proyecto originalmente en un Apple M2 de 8 GB.
 - Cabe en GPU de consumo: si, en cualquier GPU de consumo moderna e incluso en GPU integradas; tambien funciona en CPU.
-- Opciones de despliegue: llama.cpp (`llama-cli`), con soporte de descarga directa desde HuggingFace mediante `-hf`; al ser formato GGUF, es compatible con el ecosistema llama.cpp (y por extension con herramientas que lo envuelven). vLLM, TGI u Ollama: no documentado en la informacion disponible.
+- Opciones de despliegue: llama.cpp (`llama-cli`), con soporte de descarga directa desde Hugging Face mediante `-hf`; al ser formato GGUF, es compatible con el ecosistema llama.cpp (y por extension con herramientas que lo envuelven). vLLM, TGI u Ollama: no documentado en la informacion disponible.
 - Latencia y throughput estimados: no disponible.
 - Parametros de generacion recomendados por el autor: `--temp 0.7–0.9`, `--repeat-penalty 1.1`, `--ctx-size 512`.
 
@@ -77,7 +77,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos alternati
 
 | Modelo / run | Parametros | Contexto | Perplejidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SLM Run #4 (este repositorio) | 45.997.056 (model card) / 54.214.656 (safetensors) | 512 tokens | ~36 | MIT | GGUF en HuggingFace |
+| SLM Run #4 (este repositorio) | 45.997.056 (model card) / 54.214.656 (safetensors) | 512 tokens | ~36 | MIT | GGUF en Hugging Face |
 | SLM Run #3 | No disponible de forma independiente | 512 tokens (sin RoPE) | ~59 | MIT | Usado internamente como juez de PPL |
 | SLM Run #5 | No disponible (objetivo 918 M tokens de entrenamiento) | No disponible | En curso | MIT | Pendiente de publicacion |
 
@@ -98,7 +98,7 @@ Comparativa con alternativas externas (otros modelos italianos pequenos o modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/c1cc10/slm-italiano
+- Modelo en Hugging Face: https://huggingface.co/c1cc10/slm-italiano
 - Codigo fuente del proyecto (arquitectura, entrenamiento, herramientas de corpus y documentacion): https://github.com/c1cc10/slm
 - llama.cpp (repositorio): https://github.com/ggerganov/llama.cpp
 - Binarios precompilados de llama.cpp (releases): https://github.com/ggerganov/llama.cpp/releases

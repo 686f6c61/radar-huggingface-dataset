@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `yuxuanw8/qwen3b-rlcr-hotpot-checkpoint-60` es un modelo de generacion de texto publicado en HuggingFace por el usuario yuxuanw8. Por el nombre del repositorio y los tags asociados, se trata de un ajuste fino (fine-tuning) sobre una base de la familia Qwen de aproximadamente 3.000 millones de parametros, entrenado sobre la tarea HotpotQA y distribuido en un checkpoint intermedio identificado como "60". El tag `qwen2` de la ficha apunta a que la arquitectura subyacente es un transformer decoder-only de la familia Qwen2.
+El modelo `yuxuanw8/qwen3b-rlcr-hotpot-checkpoint-60` es un modelo de generacion de texto publicado en Hugging Face por el usuario yuxuanw8. Por el nombre del repositorio y los tags asociados, se trata de un ajuste fino (fine-tuning) sobre una base de la familia Qwen de aproximadamente 3.000 millones de parametros, entrenado sobre la tarea HotpotQA y distribuido en un checkpoint intermedio identificado como "60". El tag `qwen2` de la ficha apunta a que la arquitectura subyacente es un transformer decoder-only de la familia Qwen2.
 
 El modelo resuelve, en principio, tareas de generacion de texto y respuesta a preguntas multi-salto (multi-hop QA) del estilo de HotpotQA, un benchmark de razonamiento sobre multiples documentos. El sufijo "rlcr" sugiere que el entrenamiento empleo algun esquema de aprendizaje por refuerzo (RL) aplicado sobre el checkpoint base, aunque el autor no documenta el procedimiento en la model card, que es una plantilla autogenerada sin contenido sustantivo.
 
@@ -63,7 +63,7 @@ No se dispone de datos de rendimiento publicados que permitan una comparativa fi
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| yuxuanw8/qwen3b-rlcr-hotpot-checkpoint-60 | ~3,09 B | no disponible | no disponible | HuggingFace (checkpoint de investigacion) |
+| yuxuanw8/qwen3b-rlcr-hotpot-checkpoint-60 | ~3,09 B | no disponible | no disponible | Hugging Face (checkpoint de investigacion) |
 | Qwen2.5-3B (base oficial) | ~3 B | no disponible en esta ficha | no disponible en esta ficha | no verificado en esta busqueda |
 | Llama-3.2-3B | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha | no verificado en esta busqueda |
 
@@ -82,5 +82,5 @@ No se dispone de informacion suficiente para comparar rendimiento, contexto o li
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yuxuanw8/qwen3b-rlcr-hotpot-checkpoint-60
+- Hugging Face: https://huggingface.co/yuxuanw8/qwen3b-rlcr-hotpot-checkpoint-60
 - Paper de referencia citado en los tags (Machine Learning Impact calculator, Lacoste et al., 2019): https://arxiv.org/abs/1910.09700

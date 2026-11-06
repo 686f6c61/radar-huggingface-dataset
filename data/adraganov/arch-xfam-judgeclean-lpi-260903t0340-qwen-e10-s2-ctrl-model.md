@@ -23,7 +23,7 @@ En resumen, se trata de un adaptador LoRA sin información pública suficiente p
 
 ## Arquitectura y entrenamiento
 
-El modelo es un adaptador LoRA que se aplica sobre el modelo base Qwen/Qwen2.5-7B-Instruct, tal como se indica en los metadatos de HuggingFace (`base_model: Qwen/Qwen2.5-7B-Instruct` y `library_name: peft`). La técnica LoRA introduce matrices de bajo rango en las capas del transformer para ajustar el modelo con un coste computacional reducido, sin modificar los pesos originales. Sin embargo, no se ha publicado información sobre el procedimiento de entrenamiento, los hiperparámetros utilizados, el conjunto de datos de entrenamiento ni el régimen de cómputo. La model card no incluye detalles sobre la arquitectura específica del adaptador, el número de capas adaptadas, el rango de las matrices LoRA ni el método de optimización. Tampoco se menciona si se emplearon técnicas como RLHF, DPO o ajuste supervisado. En consecuencia, no es posible describir con precisión el proceso de entrenamiento ni las innovaciones técnicas del adaptador.
+El modelo es un adaptador LoRA que se aplica sobre el modelo base Qwen/Qwen2.5-7B-Instruct, tal como se indica en los metadatos de Hugging Face (`base_model: Qwen/Qwen2.5-7B-Instruct` y `library_name: peft`). La técnica LoRA introduce matrices de bajo rango en las capas del transformer para ajustar el modelo con un coste computacional reducido, sin modificar los pesos originales. Sin embargo, no se ha publicado información sobre el procedimiento de entrenamiento, los hiperparámetros utilizados, el conjunto de datos de entrenamiento ni el régimen de cómputo. La model card no incluye detalles sobre la arquitectura específica del adaptador, el número de capas adaptadas, el rango de las matrices LoRA ni el método de optimización. Tampoco se menciona si se emplearon técnicas como RLHF, DPO o ajuste supervisado. En consecuencia, no es posible describir con precisión el proceso de entrenamiento ni las innovaciones técnicas del adaptador.
 
 ## Capacidades
 
@@ -56,4 +56,4 @@ No disponible. No se conocen modelos comparables específicos para este adaptado
 
 ## Enlaces
 
-- [HuggingFace: adraganov/arch-xfam-judgeclean-lpi-260903T0340-qwen-e10-s2-ctrl-model](https://huggingface.co/adraganov/arch-xfam-judgeclean-lpi-260903T0340-qwen-e10-s2-ctrl-model)
+- [Hugging Face: adraganov/arch-xfam-judgeclean-lpi-260903T0340-qwen-e10-s2-ctrl-model](https://huggingface.co/adraganov/arch-xfam-judgeclean-lpi-260903T0340-qwen-e10-s2-ctrl-model)

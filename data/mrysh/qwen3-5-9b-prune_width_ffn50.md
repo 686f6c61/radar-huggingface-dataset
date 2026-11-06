@@ -2,7 +2,7 @@
 
 ## Resumen
 
-qwen3.5-9b-prune_width_ffn50 es una version podada del modelo Qwen/Qwen3.5-9B, publicada por el usuario mrysh en HuggingFace. El autor la ha generado como parte de un benchmark de poda que compara cuatro modelos base con ocho variantes de poda distintas, evaluandolas frente a la cuantizacion en las tareas BFCL, hiring-bias y MedQA con vLLM. No es un modelo pensado para produccion, sino un artefacto experimental para medir el impacto de la reduccion de parametros en la calidad.
+qwen3.5-9b-prune_width_ffn50 es una version podada del modelo Qwen/Qwen3.5-9B, publicada por el usuario mrysh en Hugging Face. El autor la ha generado como parte de un benchmark de poda que compara cuatro modelos base con ocho variantes de poda distintas, evaluandolas frente a la cuantizacion en las tareas BFCL, hiring-bias y MedQA con vLLM. No es un modelo pensado para produccion, sino un artefacto experimental para medir el impacto de la reduccion de parametros en la calidad.
 
 La poda aplicada es de tipo width (reduccion de anchura) a nivel 0.5, realizada con la libreria nvidia-modelopt 0.46.0rc1 y la tecnica Minitron de NVIDIA. Concretamente, se reduce el tamano de la FFN de cada capa de 12288 a 6144 neuronas, manteniendo intacto el numero de capas. La importancia de las neuronas se midio sobre un conjunto de calibracion de 512 muestras mixtas. El checkpoint final contiene 6.537.884.160 parametros, lo que supone una reduccion del 27,0 % respecto al modelo base.
 
@@ -90,7 +90,7 @@ No se dispone de resultados de rendimiento para establecer una comparacion cuant
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mrysh/qwen3.5-9b-prune_width_ffn50
+- Modelo en Hugging Face: https://huggingface.co/mrysh/qwen3.5-9b-prune_width_ffn50
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Libreria de poda NVIDIA ModelOpt: https://github.com/NVIDIA/TensorRT-Model-Optimizer
 - Tecnica Minitron (NVIDIA): no disponible enlace directo en la informacion proporcionada

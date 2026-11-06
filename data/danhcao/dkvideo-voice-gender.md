@@ -85,8 +85,8 @@ La velocidad es practicamente identica entre ambas versiones, ya que el front-en
 
 | Modelo | Arquitectura | Tamano | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dkvideo-voice-gender (int8) | wav2vec2 ONNX int8 | 122 MB (repo 0,1 GB) | no disponible | Apache-2.0 | HuggingFace |
-| prithivMLmods/Common-Voice-Gender-Detection-IND-En-ONNX | wav2vec2 ONNX | 361 MB | no disponible | Apache-2.0 | HuggingFace |
+| dkvideo-voice-gender (int8) | wav2vec2 ONNX int8 | 122 MB (repo 0,1 GB) | no disponible | Apache-2.0 | Hugging Face |
+| prithivMLmods/Common-Voice-Gender-Detection-IND-En-ONNX | wav2vec2 ONNX | 361 MB | no disponible | Apache-2.0 | Hugging Face |
 | ECAPA-TDNN (JaesungHuh) | ECAPA-TDNN | no disponible | no disponible | no disponible | referenciado en la model card |
 | pyannote embedding + LR | embeddings + regresion logistica | no disponible | no disponible | no disponible | referenciado en la model card |
 
@@ -105,7 +105,7 @@ En la evaluacion publicada, wav2vec2 supera a ECAPA-TDNN en voces masculinas asi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/danhcao/dkvideo-voice-gender
+- Modelo en Hugging Face: https://huggingface.co/danhcao/dkvideo-voice-gender
 - Modelo base: https://huggingface.co/prithivMLmods/Common-Voice-Gender-Detection-IND-En-ONNX
 - Revision del modelo base citada: f354b22f2671b1d762b328d5776956c1f7124ac1
 - Dataset de evaluacion FLEURS (CC-BY 4.0): no se proporciona enlace directo en la informacion disponible

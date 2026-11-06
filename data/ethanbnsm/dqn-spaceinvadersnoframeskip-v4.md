@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un agente de aprendizaje por refuerzo entrenado con el algoritmo DQN (Deep Q-Network) usando la librería stable-baselines3. El autor, ethanbnsm, lo ha entrenado en el entorno SpaceInvadersNoFrameskip-v4, un juego clásico de Atari, y lo ha publicado en HuggingFace mediante el framework RL Zoo (rl-baselines3-zoo). Se trata de un modelo de decisión que aprende una política mediante observaciones visuales, no de un modelo de lenguaje.
+Este modelo es un agente de aprendizaje por refuerzo entrenado con el algoritmo DQN (Deep Q-Network) usando la librería stable-baselines3. El autor, ethanbnsm, lo ha entrenado en el entorno SpaceInvadersNoFrameskip-v4, un juego clásico de Atari, y lo ha publicado en Hugging Face mediante el framework RL Zoo (rl-baselines3-zoo). Se trata de un modelo de decisión que aprende una política mediante observaciones visuales, no de un modelo de lenguaje.
 
 El objetivo del modelo es resolver la tarea de control de un agente en el entorno de Atari a partir de píxeles, maximizando la recompensa acumulada. Su relevancia radica en que sirve como referencia preentrenada para reproducir experimentos de DQN, comparar hiperparámetros o desarrollar nuevas variantes de algoritmos de RL en entornos Atari. El repositorio ocupa 0,1 GB y se ha creado el 9 de septiembre de 2026.
 
@@ -38,7 +38,7 @@ El entrenamiento se ha realizado durante 1.000.000 de pasos de entorno (n_timest
 
 - Investigación en aprendizaje por refuerzo: el modelo se puede cargar con rl_zoo3 enjoy para evaluar el comportamiento de un agente DQN entrenado en Atari, sirviendo como base para comparar algoritmos o configuraciones alternativas.
 - Reproducción de experimentos: al publicar los hiperparámetros exactos, permite reproducir los resultados de entrenamiento en SpaceInvadersNoFrameskip-v4 y validar implementaciones.
-- Educación y docencia: resulta útil en cursos de RL como ejemplo práctico de cómo entrenar un agente DQN sobre un entorno de Atari, mostrando el proceso completo con HuggingFace y RL Zoo.
+- Educación y docencia: resulta útil en cursos de RL como ejemplo práctico de cómo entrenar un agente DQN sobre un entorno de Atari, mostrando el proceso completo con Hugging Face y RL Zoo.
 - Evaluación de entornos Atari: el modelo puede utilizarse como referencia de rendimiento en benchmarks de RL, aportando una métrica concreta de recompensa media para comparación.
 - Desarrollo de técnicas de exploración: los agentes preentrenados pueden emplearse para probar modificaciones del mecanismo de exploración sin tener que comenzar el entrenamiento desde cero.
 - Integración en pipelines de evaluación automatizada: usando las herramientas de carga de RL Zoo, el modelo puede incorporarse a scripts de test para validar que un entorno o wrapper se comporta correctamente.
@@ -77,7 +77,7 @@ No se han encontrado modelos comparables en la información disponible. El agent
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ethanbnsm/dqn-SpaceInvadersNoFrameskip-v4
+- Hugging Face: https://huggingface.co/ethanbnsm/dqn-SpaceInvadersNoFrameskip-v4
 - RL Zoo (rl-baselines3-zoo): https://github.com/DLR-RM/rl-baselines3-zoo
 - stable-baselines3: https://github.com/DLR-RM/stable-baselines3
 - SB3 Contrib: https://github.com/Stable-Baselines-Team/stable-baselines3-contrib

@@ -76,7 +76,7 @@ La comparativa se limita a aspectos estructurales, ya que no se dispone de bench
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/milan33/Qwen-Image-Edit-2511-INT4-Diffusers
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/milan33/Qwen-Image-Edit-2511-INT4-Diffusers
 - Modelo base oficial: https://huggingface.co/Qwen/Qwen-Image-Edit-2511
 - Versión INT4 para ComfyUI (wazimondo): https://huggingface.co/wazimondo/qwen-image-edit-2511-int4-comfy
 - Guía de desarrollo de fal.ai: https://fal.ai/learn/devs/qwen-image-edit-2511-developer-guide

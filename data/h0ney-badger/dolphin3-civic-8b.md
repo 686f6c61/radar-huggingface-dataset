@@ -88,7 +88,7 @@ La comparativa más directa es contra el modelo base `dphn/Dolphin3.0-Llama3.1-8
 | Parametros totales | 8.030.277.696 | 8.072.220.672 |
 | Longitud de contexto | No disponible | No disponible |
 | Licencia | apache-2.0 | apache-2.0 |
-| Disponibilidad | HuggingFace | HuggingFace |
+| Disponibilidad | Hugging Face | Hugging Face |
 | Rendimiento en `foia_draft` | 88% | 0% |
 | Rendimiento en `nofab_notools` | 77% | 23% |
 | Rendimiento en `procedure_qa` | 80% | 0% |
@@ -106,7 +106,7 @@ No se han identificado otros modelos comparables de la misma categoría en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/h0ney-badger/dolphin3-civic-8b
+- Hugging Face: https://huggingface.co/h0ney-badger/dolphin3-civic-8b
 - Dataset de entrenamiento: https://huggingface.co/datasets/h0ney-badger/civic-records-distill
 - Pipeline de entrenamiento: https://github.com/h0n3y-badger/civic-distill
 - Modelo base: https://huggingface.co/dphn/Dolphin3.0-Llama3.1-8B

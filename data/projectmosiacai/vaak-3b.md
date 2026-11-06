@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Vaak-3B es un modelo publicado en HuggingFace por el usuario ProjectMosiacAI bajo el identificador `ProjectMosiacAI/Vaak-3B`. En el momento de la consulta, la ficha del repositorio no contiene model card descriptiva: el unico contenido del README es la declaracion de licencia Apache 2.0. No se han publicado datos sobre arquitectura, datos de entrenamiento, tokenizador, idiomas soportados ni resultados de evaluacion.
+Vaak-3B es un modelo publicado en Hugging Face por el usuario ProjectMosiacAI bajo el identificador `ProjectMosiacAI/Vaak-3B`. En el momento de la consulta, la ficha del repositorio no contiene model card descriptiva: el unico contenido del README es la declaracion de licencia Apache 2.0. No se han publicado datos sobre arquitectura, datos de entrenamiento, tokenizador, idiomas soportados ni resultados de evaluacion.
 
 El repositorio registra 0 descargas y 0 likes, no tiene pipeline tag asignado y no incluye etiquetas de idioma ni de formato de pesos. Esto indica que se trata de un artefacto sin adopcion publica conocida y sin documentacion tecnica verificable, por lo que cualquier evaluacion funcional requiere descargar los pesos y realizar pruebas propias.
 
@@ -47,7 +47,7 @@ No se dispone de informacion suficiente para recomendar casos de uso concretos c
 - Prototipado local con recursos limitados: si el modelo es denso y de ~3B parametros, puede desplegarse en una unica GPU de consumo para experimentos de generacion de texto, siempre que se confirme el formato de pesos.
 - Ajuste fino supervisado (SFT): la licencia Apache 2.0 permitiria reentrenar y redistribuir el modelo, sujeta a verificacion de que los pesos descargados son efectivamente originales y no derivados de otro modelo con licencia distinta.
 - Destilacion o generacion de datos sinteticos: uso como generador auxiliar en pipelines de aumento de datos, condicionado a la calidad observada en pruebas ciegas.
-- Investigacion sobre licencias y procedencia de artefactos: el caso sirve como ejemplo de repositorio publicado sin documentacion tecnica, util para estudiar practicas de publicacion en HuggingFace.
+- Investigacion sobre licencias y procedencia de artefactos: el caso sirve como ejemplo de repositorio publicado sin documentacion tecnica, util para estudiar practicas de publicacion en Hugging Face.
 - Despliegue en produccion: no recomendable en el estado actual, al no existir informacion sobre sesgos, rendimiento, contexto soportado ni estabilidad.
 
 ## Benchmarks y rendimiento
@@ -83,7 +83,7 @@ No disponible. No se ha proporcionado informacion sobre modelos comparables y la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ProjectMosiacAI/Vaak-3B
+- Hugging Face: https://huggingface.co/ProjectMosiacAI/Vaak-3B
 - Paper: no disponible
 - Blog o anuncio: no disponible
 - Repositorio de codigo: no disponible

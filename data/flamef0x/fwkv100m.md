@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Myosotis es un modelo de lenguaje recurrente de aproximadamente 101,9 millones de parametros desarrollado por FlameF0X (Daniel Fox), basado en la arquitectura FWKV (Feed-forward Weighted Key Value). Se trata de un checkpoint intermedio de preentrenamiento correspondiente al paso 13500, publicado en HuggingFace bajo licencia Apache 2.0. La arquitectura FWKV fue propuesta por el mismo autor en mayo de 2026 como un proyecto paralelo inspirado en RWKV, con el objetivo de ofrecer una alternativa recurrente a los Transformers que fuese mas rapida en CPU.
+Myosotis es un modelo de lenguaje recurrente de aproximadamente 101,9 millones de parametros desarrollado por FlameF0X (Daniel Fox), basado en la arquitectura FWKV (Feed-forward Weighted Key Value). Se trata de un checkpoint intermedio de preentrenamiento correspondiente al paso 13500, publicado en Hugging Face bajo licencia Apache 2.0. La arquitectura FWKV fue propuesta por el mismo autor en mayo de 2026 como un proyecto paralelo inspirado en RWKV, con el objetivo de ofrecer una alternativa recurrente a los Transformers que fuese mas rapida en CPU.
 
 El modelo esta diseñado como un asistente conversacional con identidad propia ("You are Myosotis, a helpful assistant made by FlameF0X") y esta orientado a la generacion de texto. Su relevancia radica en explorar una arquitectura alternativa a los Transformers densos y MoE, con un enfoque en la eficiencia computacional en hardware convencional. Al ser un checkpoint intermedio de preentrenamiento, no ha pasado por fases de ajuste fino o alineacion, lo que limita sus capacidades conversacionales en este estado.
 
@@ -23,14 +23,14 @@ El modelo esta diseñado como un asistente conversacional con identidad propia (
 
 FWKV es una arquitectura recurrente de lenguaje propuesta por FlameF0X en 2026. Segun la pagina oficial del proyecto, FWKV se describe como "Simplicity Is All You Need" y se posiciona como una alternativa a los Transformers densos y MoE con un rendimiento superior en CPU convencionales. La arquitectura se inspira directamente en RWKV, adoptando su enfoque de recurrencia para evitar el coste cuadratico de la atencion, pero introduciendo una formulacion propia basada en valores clave ponderados por alimentacion directa (feed-forward weighted key value).
 
-El modelo presentado es un checkpoint de preentrenamiento en el paso 13500. No se dispone de informacion detallada sobre la composicion del dataset de entrenamiento, el numero total de tokens procesados, ni si se aplicaron tecnicas de alineacion como RLHF o DPO. La perplejidad en el conjunto de validacion se indica como "N/A" en la model card. El entrenamiento se realizo probablemente con la libreria transformers de HuggingFace, dado que el modelo se publica con esa integracion y requiere codigo personalizado (custom_code) para su carga.
+El modelo presentado es un checkpoint de preentrenamiento en el paso 13500. No se dispone de informacion detallada sobre la composicion del dataset de entrenamiento, el numero total de tokens procesados, ni si se aplicaron tecnicas de alineacion como RLHF o DPO. La perplejidad en el conjunto de validacion se indica como "N/A" en la model card. El entrenamiento se realizo probablemente con la libreria transformers de Hugging Face, dado que el modelo se publica con esa integracion y requiere codigo personalizado (custom_code) para su carga.
 
 ## Capacidades
 
 - Generacion de texto autoregresiva con arquitectura recurrente.
 - Soporte de extraccion de caracteristicas (feature-extraction).
 - Identidad de asistente conversacional definida en el system prompt.
-- Compatible con el ecosistema transformers de HuggingFace.
+- Compatible con el ecosistema transformers de Hugging Face.
 - Exportacion a formato ONNX para inferencia en multiples plataformas.
 - Inferencia eficiente en CPU gracias al diseño recurrente de FWKV.
 - Preentrenamiento en ingles.
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada: al tratarse de un modelo de ~102 M de parametros, el checkpoint en fp32 ocupa aproximadamente 407 MB. En cuantizacion de 8 bits cabria en unos 102 MB, y en 4 bits en unos 51 MB.
 - GPU recomendadas: cualquier GPU con mas de 1 GB de VRAM es suficiente. Modelos como GTX 1650, RTX 3060 o superiores son mas que adecuadas. Tambien puede ejecutarse en CPU sin problemas.
 - Compatibilidad con consumer GPU: si, cabe en cualquier GPU de consumo actual.
-- Opciones de despliegue: al usar la libreria transformers, es compatible con pipelines de HuggingFace, y el formato ONNX permite usar ONNX Runtime. No se menciona soporte explicito para vLLM, llama.cpp u Ollama.
+- Opciones de despliegue: al usar la libreria transformers, es compatible con pipelines de Hugging Face, y el formato ONNX permite usar ONNX Runtime. No se menciona soporte explicito para vLLM, llama.cpp u Ollama.
 - Latencia y throughput: no disponibles, aunque el diseño recurrente sugiere un coste de inferencia constante por token independiente de la longitud del contexto.
 
 ## Comparativa con modelos similares
@@ -79,8 +79,8 @@ FWKV se inspira directamente en RWKV, por lo que RWKV-5 169M es la comparativa m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FlameF0X/fwkv100m
+- Modelo en Hugging Face: https://huggingface.co/FlameF0X/fwkv100m
 - Coleccion FWKV del autor: https://huggingface.co/collections/FlameF0X/fwkv
 - Pagina oficial del proyecto FWKV: https://fwkv.github.io/
-- Perfil de HuggingFace del autor: https://huggingface.co/FlameF0X/spaces
+- Perfil de Hugging Face del autor: https://huggingface.co/FlameF0X/spaces
 - Repositorios GitHub del autor: https://github.com/FlameF0X?tab=repositories

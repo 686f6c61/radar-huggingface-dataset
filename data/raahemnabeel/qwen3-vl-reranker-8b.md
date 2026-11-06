@@ -94,7 +94,7 @@ La información proporcionada no incluye datos de rendimiento comparativo con al
 
 ## Enlaces
 
-- Modelo en HuggingFace (esta variante): https://huggingface.co/raahemnabeel/qwen3-vl-reranker-8b
+- Modelo en Hugging Face (esta variante): https://huggingface.co/raahemnabeel/qwen3-vl-reranker-8b
 - Modelo base original: https://huggingface.co/Qwen/Qwen3-VL-Reranker-8B
 - Repositorio de tt-model-manager: https://github.com/tenstorrent/tt-model-manager
 - Documentación de prerrequisitos de Tenstorrent CLI: https://github.com/tenstorrent/tt-cli/blob/main/docs/prerequisites.md

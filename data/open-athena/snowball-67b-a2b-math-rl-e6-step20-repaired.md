@@ -60,7 +60,7 @@ Resultados publicados en la model card para el checkpoint evaluado (paso 20, bra
 | MATH-500 (held-out) | 76,80 |
 | OlympiadBench (held-out) | 22,67 |
 
-La model card indica que las puntuaciones y las advertencias de evaluacion estan registradas en `MATH_EVALS.md`, dentro del archivo de evidencias en HuggingFace. No se proporcionan resultados comparativos con otros modelos en la informacion disponible, ni metricas de MMLU, HumanEval, GSM8K u otras.
+La model card indica que las puntuaciones y las advertencias de evaluacion estan registradas en `MATH_EVALS.md`, dentro del archivo de evidencias en Hugging Face. No se proporcionan resultados comparativos con otros modelos en la informacion disponible, ni metricas de MMLU, HumanEval, GSM8K u otras.
 
 ## Requisitos de hardware
 
@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks de modelos alternativos en la informacion p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/open-athena/Snowball-67B-A2B-Math-RL-E6-Step20-Repaired
+- Modelo en Hugging Face: https://huggingface.co/open-athena/Snowball-67B-A2B-Math-RL-E6-Step20-Repaired
 - Archivo de evidencias (dataset): https://huggingface.co/datasets/penfever/snowball-67b-a2b-math-rl-artifacts
 - Issue del experimento en el repositorio Marin: https://github.com/marin-community/marin/issues/7786
 - Artefacto de origen (S3, referencia interna del autor): s3://marin-us-east-02a/marin/diagnostics/snowball-bias-transplant-20260805/e6-s20-sftbias/policy/

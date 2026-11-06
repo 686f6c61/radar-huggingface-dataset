@@ -68,8 +68,8 @@ No se dispone de información sobre modelos comparables en la información propo
 - Caveats para producción: la cuantización a 8 bits puede degradar ligeramente la calidad frente al modelo sin cuantizar. Al ser un modelo MoE con solo 0,6B activos, su capacidad de razonamiento complejo es limitada. No se recomienda para tareas que requieran alta precisión factual o contexto extenso sin verificación previa.
 
 ## Enlaces
-- [HuggingFace del modelo cuantizado](https://huggingface.co/luiscalisto/EuroMoE-2.6B-A0.6B-Instruct-2512-MLX-8bit)
-- [HuggingFace del modelo base](https://huggingface.co/utter-project/EuroMoE-2.6B-A0.6B-Instruct-2512)
+- [Hugging Face del modelo cuantizado](https://huggingface.co/luiscalisto/EuroMoE-2.6B-A0.6B-Instruct-2512-MLX-8bit)
+- [Hugging Face del modelo base](https://huggingface.co/utter-project/EuroMoE-2.6B-A0.6B-Instruct-2512)
 - [Repositorio mlx-lm](https://github.com/ml-explore/mlx-lm)
 - [Repositorio de conversiones llm-mlx-conversions](https://codeberg.org/lcalisto/llm-mlx-conversions)
 - [Versión de 4 bits del mismo autor](https://huggingface.co/luiscalisto/EuroMoE-2.6B-A0.6B-Instruct-2512-MLX-4bit)

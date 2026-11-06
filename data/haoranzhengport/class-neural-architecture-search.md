@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio, publicado por el usuario haoranzhengport en HuggingFace, no contiene un modelo de aprendizaje automático entrenado, sino un conjunto de notas de investigación exploratorias sobre Neural Architecture Search (NAS). La model card lo describe explícitamente como una nota de investigación que registra comparaciones previstas, posibles factores de confusión y requisitos de reproducibilidad antes de que se reporte cualquier resultado de benchmark. No se incluyen pesos de modelo, checkpoints, código de entrenamiento ni resultados experimentales.
+Este repositorio, publicado por el usuario haoranzhengport en Hugging Face, no contiene un modelo de aprendizaje automático entrenado, sino un conjunto de notas de investigación exploratorias sobre Neural Architecture Search (NAS). La model card lo describe explícitamente como una nota de investigación que registra comparaciones previstas, posibles factores de confusión y requisitos de reproducibilidad antes de que se reporte cualquier resultado de benchmark. No se incluyen pesos de modelo, checkpoints, código de entrenamiento ni resultados experimentales.
 
 El repositorio está etiquetado con `research-notes` y `neural-architecture-search`, y su licencia es MIT. Aunque aparece un archivo `safetensors` con 49.600 parámetros, el tamaño total del repositorio es de 0.0 GB, lo que sugiere que se trata de un archivo vacío o simbólico, no de un modelo real. En consecuencia, este repositorio no es utilizable como modelo de inferencia ni como base para despliegue en producción; su valor reside únicamente como documentación de planificación de investigación.
 
@@ -66,7 +66,7 @@ No disponible. Este repositorio no es un modelo comparable con otros modelos de 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/haoranzhengport/class-neural-architecture-search
+- Repositorio en Hugging Face: https://huggingface.co/haoranzhengport/class-neural-architecture-search
 - Articulo de referencia sobre NAS (GeeksforGeeks): https://www.geeksforgeeks.org/deep-learning/neural-architecture-and-search-methods/
 - Wikipedia sobre Neural Architecture Search: https://en.wikipedia.org/wiki/Neural_architecture_search
 - Estudio "Neural Architecture Search: Insights from 1000 Papers" (arXiv): https://arxiv.org/abs/2301.08727

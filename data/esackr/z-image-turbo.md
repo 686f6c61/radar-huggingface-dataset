@@ -6,7 +6,7 @@ Z-Image-Turbo es un modelo de generacion de imagenes texto-a-imagen de 6.154.908
 
 El modelo resuelve el problema del coste computacional en generacion de imagenes de alta calidad, ofreciendo un equilibrio entre fidelidad fotorealista, adherencia a instrucciones y renderizado de texto bilingue (ingles y chino). Su relevancia actual radica en que cabe en dispositivos de consumo con 16 GB de VRAM, lo que democratiza la generacion de imagenes de calidad profesional sin necesidad de infraestructura dedicada.
 
-Esta ficha describe el repositorio `Esackr/Z-Image-Turbo`, una redistribucion del checkpoint oficial `Tongyi-MAI/Z-Image-Turbo` publicada bajo licencia Apache 2.0. El repositorio no incluye informacion adicional sobre modificaciones respecto al original; los datos tecnicos proceden de la model card del autor y de los metadatos de HuggingFace.
+Esta ficha describe el repositorio `Esackr/Z-Image-Turbo`, una redistribucion del checkpoint oficial `Tongyi-MAI/Z-Image-Turbo` publicada bajo licencia Apache 2.0. El repositorio no incluye informacion adicional sobre modificaciones respecto al original; los datos tecnicos proceden de la model card del autor y de los metadatos de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Pasos de inferencia | Licencia | VRAM consumo | Disponibilidad |
 |---|---|---|---|---|---|
-| Z-Image-Turbo | ~6B | 8 | Apache 2.0 | 16 GB | HuggingFace, ModelScope |
-| Z-Image | ~6B | 50 | Apache 2.0 | no disponible | HuggingFace, ModelScope |
+| Z-Image-Turbo | ~6B | 8 | Apache 2.0 | 16 GB | Hugging Face, ModelScope |
+| Z-Image | ~6B | 50 | Apache 2.0 | no disponible | Hugging Face, ModelScope |
 | Z-Image-Omni-Base | ~6B | 50 | Apache 2.0 | no disponible | Pendiente de publicacion |
 | Z-Image-Edit | ~6B | 50 | Apache 2.0 | no disponible | Pendiente de publicacion |
 
@@ -86,7 +86,7 @@ No se dispone en la informacion proporcionada de datos sobre modelos comparables
 
 ## Enlaces
 
-- Repositorio HuggingFace (redistribucion): https://huggingface.co/Esackr/Z-Image-Turbo
+- Repositorio Hugging Face (redistribucion): https://huggingface.co/Esackr/Z-Image-Turbo
 - Checkpoint oficial: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
 - Demo online oficial: https://huggingface.co/spaces/Tongyi-MAI/Z-Image-Turbo
 - Demo movil: https://huggingface.co/spaces/akhaliq/Z-Image-Turbo

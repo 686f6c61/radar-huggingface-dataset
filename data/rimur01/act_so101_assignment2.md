@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `rimur01/act_so101_assignment2` (este) | 51.668.614 | no aplica | sin evaluación publicada | no disponible | HuggingFace Hub, 0 descargas |
+| `rimur01/act_so101_assignment2` (este) | 51.668.614 | no aplica | sin evaluación publicada | no disponible | Hugging Face Hub, 0 descargas |
 | ACT (implementación de referencia en LeRobot) | no disponible en la informacion proporcionada | no aplica | reportado en el paper 2304.13705, no replicado aquí | MIT (código de LeRobot) | GitHub y docs de LeRobot |
 | Diffusion Policy (Chi et al., 2023) | no disponible en la informacion proporcionada | no aplica | no disponible en la informacion proporcionada | no disponible | implementaciones en LeRobot y repos de terceros |
-| SmolVLA (HuggingFace) | no disponible en la informacion proporcionada | no aplica | no disponible en la informacion proporcionada | no disponible | HuggingFace Hub |
+| SmolVLA (Hugging Face) | no disponible en la informacion proporcionada | no aplica | no disponible en la informacion proporcionada | no disponible | Hugging Face Hub |
 
 La comparación cuantitativa no es posible con los datos disponibles: no hay métricas de éxito de este checkpoint ni cifras de parámetros de las alternativas en la información proporcionada. La diferencia principal es de planteamiento: ACT es una política específica por tarea y por robot, mientras que SmolVLA se plantea como modelo visión-lenguaje-acción entrenado en múltiples robots.
 
@@ -94,7 +94,7 @@ La comparación cuantitativa no es posible con los datos disponibles: no hay mé
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rimur01/act_so101_assignment2
+- Modelo en Hugging Face: https://huggingface.co/rimur01/act_so101_assignment2
 - Dataset de entrenamiento: https://huggingface.co/datasets/rimur01/so101-assignment1-50-new
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=rimur01/so101-assignment1-50-new
 - Paper de ACT: https://huggingface.co/papers/2304.13705 (arXiv:2304.13705)

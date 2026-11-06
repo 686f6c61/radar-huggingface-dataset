@@ -84,7 +84,7 @@ No se dispone de datos públicos de rendimiento comparativo entre estos encoders
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DeepNeuralNerd/Gemma-4-12B-it-uncensored-heretic-DeepNeuralNerd-LTX_2.5_ComfyUI
+- Modelo en Hugging Face: https://huggingface.co/DeepNeuralNerd/Gemma-4-12B-it-uncensored-heretic-DeepNeuralNerd-LTX_2.5_ComfyUI
 - Modelo base: https://huggingface.co/llmfan46/gemma-4-12B-it-uncensored-heretic
 - ComfyUI: https://github.com/comfyanonymous/ComfyUI
 - Paper de LTX-2.5: https://arxiv.org/abs/2601.03233

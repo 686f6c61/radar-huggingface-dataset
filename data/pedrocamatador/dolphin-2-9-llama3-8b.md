@@ -77,10 +77,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El `m
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| pedrocamatador/dolphin-2.9-llama3-8b | 8,03B densos | 8.192 tokens (entrenado a 4.096) | other (Meta Llama 3 Community License) | Publico en HuggingFace, 0 descargas, 0 likes | No disponible (sin benchmarks) |
-| meta-llama/Meta-Llama-3-8B-Instruct | 8B densos | 8.192 tokens | Meta Llama 3 Community License | Publico con acceso restringido en HuggingFace | No comparado en la informacion disponible; el ajuste de Dolphin elimina la capa de alineacion, por lo que las metricas de seguridad no son equiparables |
+| pedrocamatador/dolphin-2.9-llama3-8b | 8,03B densos | 8.192 tokens (entrenado a 4.096) | other (Meta Llama 3 Community License) | Publico en Hugging Face, 0 descargas, 0 likes | No disponible (sin benchmarks) |
+| meta-llama/Meta-Llama-3-8B-Instruct | 8B densos | 8.192 tokens | Meta Llama 3 Community License | Publico con acceso restringido en Hugging Face | No comparado en la informacion disponible; el ajuste de Dolphin elimina la capa de alineacion, por lo que las metricas de seguridad no son equiparables |
 | cognitivecomputations/dolphin-2.9-llama3-8b | 8B densos | 8.192 tokens | Meta Llama 3 Community License | Repositorio original del que deriva esta resubida | No disponible en la informacion proporcionada |
-| mistralai/Mistral-7B-Instruct-v0.3 | 7,25B densos | 32.768 tokens | Apache 2.0 | Publico en HuggingFace | No disponible en la informacion proporcionada |
+| mistralai/Mistral-7B-Instruct-v0.3 | 7,25B densos | 32.768 tokens | Apache 2.0 | Publico en Hugging Face | No disponible en la informacion proporcionada |
 
 Nota: los datos de las alternativas corresponden a caracteristicas arquitectonicas y de licencia ampliamente documentadas; no se dispone de cifras de benchmarks comparativas en la informacion proporcionada, por lo que la columna de rendimiento se deja como no disponible.
 
@@ -100,7 +100,7 @@ Nota: los datos de las alternativas corresponden a caracteristicas arquitectonic
 
 ## Enlaces
 
-- Repositorio analizado en HuggingFace: https://huggingface.co/pedrocamatador/dolphin-2.9-llama3-8b
+- Repositorio analizado en Hugging Face: https://huggingface.co/pedrocamatador/dolphin-2.9-llama3-8b
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B
 - Repositorio original de referencia (Cognitive Computations): https://huggingface.co/cognitivecomputations/dolphin-2.9-llama3-8b
 - Licencia Meta Llama 3 Community License Agreement: https://huggingface.co/meta-llama/Meta-Llama-3-8B/blob/main/LICENSE

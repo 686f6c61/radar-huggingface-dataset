@@ -77,7 +77,7 @@ La comparativa con alternativas de la misma categoría (modelos de 27B cuantizad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/airagrp/Qwen3.8-27B-QUASAR-NVFP4-mlx
+- Modelo en Hugging Face: https://huggingface.co/airagrp/Qwen3.8-27B-QUASAR-NVFP4-mlx
 - Checkpoint fuente: https://huggingface.co/QUASAR-QAT/Qwen3.8-27B-QUASAR-NVFP4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Variante similar del mismo autor: https://huggingface.co/airagrp/Qwen3.8-27B-mlx-nvfp4-S

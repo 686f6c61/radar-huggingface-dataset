@@ -18,11 +18,11 @@ Su relevancia práctica radica en el formato: al estar en GGUF con cuantizacione
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | i1-IQ1_M, i1-IQ2_XXS, i1-IQ2_M, i1-Q2_K_S, i1-Q2_K, i1-IQ3_XXS, i1-Q3_K_S, i1-IQ3_M, i1-Q3_K_M, i1-IQ4_XS, i1-IQ4_NL, i1-Q4_K_S, i1-Q4_K_M, i1-Q6_K; existe además un repositorio de cuantizaciones estáticas |
 | Idiomas soportados | en (inglés) |
-| Licencia | liquid-foundation-model-community-license (etiquetada como "other" en HuggingFace) |
+| Licencia | liquid-foundation-model-community-license (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | GGUF (cuantizaciones imatrix); el modelo base está en safetensors |
 | Tamaño del repositorio | 54,7 GB (incluye todas las cuantizaciones y el fichero imatrix) |
 | Fichero imatrix | 0,1 GB (para generar cuantizaciones propias) |
-| Fecha de publicación | 19 de septiembre de 2026 (según metadatos de HuggingFace) |
+| Fecha de publicación | 19 de septiembre de 2026 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 

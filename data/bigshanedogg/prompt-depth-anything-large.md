@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Tipo de salida | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Prompt-Depth-Anything-Large (este repo) | 340 M | Profundidad métrica condicionada por prompt | Hasta 4K (procesado a 1008 px de lado mayor) | Apache-2.0 | HuggingFace, port no oficial |
-| depth-anything/prompt-depth-anything-vitl | no disponible | Profundidad métrica condicionada por prompt | Hasta 4K | Apache-2.0 | HuggingFace, oficial |
-| Depth Anything V2 (familia) | no disponible en la informacion | Profundidad relativa (y métrica en variantes) | no disponible | no disponible | HuggingFace |
+| Prompt-Depth-Anything-Large (este repo) | 340 M | Profundidad métrica condicionada por prompt | Hasta 4K (procesado a 1008 px de lado mayor) | Apache-2.0 | Hugging Face, port no oficial |
+| depth-anything/prompt-depth-anything-vitl | no disponible | Profundidad métrica condicionada por prompt | Hasta 4K | Apache-2.0 | Hugging Face, oficial |
+| Depth Anything V2 (familia) | no disponible en la informacion | Profundidad relativa (y métrica en variantes) | no disponible | no disponible | Hugging Face |
 
 La comparación detallada con alternativas de la misma categoría (por ejemplo, Depth Anything V2 o Metric3D) no está disponible en la información proporcionada; el propio autor identifica `depth-anything/prompt-depth-anything-vitl` como modelo base y referencia oficial.
 
@@ -84,7 +84,7 @@ La comparación detallada con alternativas de la misma categoría (por ejemplo, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bigshanedogg/Prompt-Depth-Anything-Large
+- Modelo en Hugging Face: https://huggingface.co/bigshanedogg/Prompt-Depth-Anything-Large
 - Modelo base oficial: https://huggingface.co/depth-anything/prompt-depth-anything-vitl
 - Repositorio oficial PromptDA: https://github.com/DepthAnything/PromptDA
 - Paper: Lin et al., *"Prompting Depth Anything for 4K Resolution Accurate Metric Depth Estimation"*, CVPR 2025 (arXiv, referencia `lin2024promptda` en la model card)

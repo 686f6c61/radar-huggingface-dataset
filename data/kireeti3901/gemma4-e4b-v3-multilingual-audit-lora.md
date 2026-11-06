@@ -69,6 +69,6 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Kireeti3901/gemma4-e4b-v3-multilingual-audit-lora
+- Hugging Face: https://huggingface.co/Kireeti3901/gemma4-e4b-v3-multilingual-audit-lora
 - Repositorio de Unsloth (herramienta de entrenamiento): https://github.com/unslothai/unsloth
 - Modelo base (referencia): https://huggingface.co/unsloth/gemma-4-e4b-it-unsloth-bnb-4bit (no verificado)

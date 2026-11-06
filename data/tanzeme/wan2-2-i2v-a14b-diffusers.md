@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Wan2.2-I2V-A14B-Diffusers es la conversión al formato Diffusers del modelo de generación de vídeo a partir de imagen (image-to-video, I2V) Wan2.2-I2V-A14B, desarrollado originalmente por Wan-AI (equipo vinculado a Alibaba) y redistribuido en HuggingFace por el usuario tanzeme. Se trata de un modelo de difusión para vídeo con arquitectura Mixture-of-Experts (MoE), con 14.288.901.184 parámetros contabilizados en los safetensors del repositorio, capacidad de generar a 480P y 720P, y licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales declaradas.
+Wan2.2-I2V-A14B-Diffusers es la conversión al formato Diffusers del modelo de generación de vídeo a partir de imagen (image-to-video, I2V) Wan2.2-I2V-A14B, desarrollado originalmente por Wan-AI (equipo vinculado a Alibaba) y redistribuido en Hugging Face por el usuario tanzeme. Se trata de un modelo de difusión para vídeo con arquitectura Mixture-of-Experts (MoE), con 14.288.901.184 parámetros contabilizados en los safetensors del repositorio, capacidad de generar a 480P y 720P, y licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales declaradas.
 
 El modelo resuelve la tarea de animar una imagen estática siguiendo una descripción textual, con un foco explícito en la estabilidad del movimiento: el autor indica que reduce movimientos de cámara irreales y mejora el soporte de escenas estilizadas respecto a la generación previa. Su relevancia actual radica en que forma parte de la familia Wan2.2, que introduce MoE en difusión de vídeo para aumentar la capacidad del modelo sin incrementar el coste computacional por paso, y en que cuenta con integración oficial en Diffusers y ComfyUI.
 
@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tarea | Parametros | Resoluciones | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Wan2.2-I2V-A14B-Diffusers (este repositorio) | Image-to-video | 14,29 B (safetensors) | 480P, 720P | apache-2.0 | HuggingFace (réplica de tercero, 0 descargas) |
-| Wan2.2-I2V-A14B (Wan-AI) | Image-to-video | no disponible en la información | 480P, 720P | apache-2.0 | HuggingFace y ModelScope (repositorio oficial) |
-| Wan2.2-T2V-A14B | Text-to-video | no disponible en la información | 480P, 720P | apache-2.0 | HuggingFace y ModelScope (repositorio oficial) |
-| Wan2.2-TI2V-5B | Text-to-video e image-to-video | no disponible en la información | 720P a 24 fps | apache-2.0 | HuggingFace y ModelScope; ejecutable en RTX 4090 según el autor |
+| Wan2.2-I2V-A14B-Diffusers (este repositorio) | Image-to-video | 14,29 B (safetensors) | 480P, 720P | apache-2.0 | Hugging Face (réplica de tercero, 0 descargas) |
+| Wan2.2-I2V-A14B (Wan-AI) | Image-to-video | no disponible en la información | 480P, 720P | apache-2.0 | Hugging Face y ModelScope (repositorio oficial) |
+| Wan2.2-T2V-A14B | Text-to-video | no disponible en la información | 480P, 720P | apache-2.0 | Hugging Face y ModelScope (repositorio oficial) |
+| Wan2.2-TI2V-5B | Text-to-video e image-to-video | no disponible en la información | 720P a 24 fps | apache-2.0 | Hugging Face y ModelScope; ejecutable en RTX 4090 según el autor |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada. La diferencia funcional principal es la tarea objetivo (I2V frente a T2V frente a TI2V) y el tamaño: la variante TI2V-5B es la única con compatibilidad declarada con GPU de consumo.
 
@@ -102,7 +102,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 - Versión Diffusers T2V-A14B: https://huggingface.co/Wan-AI/Wan2.2-T2V-A14B-Diffusers
 - Modelo oficial Wan2.2-TI2V-5B: https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B
 - Versión Diffusers TI2V-5B: https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B-Diffusers
-- Organización Wan-AI en HuggingFace: https://huggingface.co/Wan-AI/
+- Organización Wan-AI en Hugging Face: https://huggingface.co/Wan-AI/
 - Repositorio de código: https://github.com/Wan-Video/Wan2.2
 - Informe técnico (arXiv:2503.20314): https://arxiv.org/abs/2503.20314
 - Sitio del proyecto: https://wan.video

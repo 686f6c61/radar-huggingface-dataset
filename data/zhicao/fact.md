@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FACT (Force–Action–Track) es un modelo fundacional multimodal de tipo vision-language-action (VLA) orientado a destreza robotica, publicado por el usuario zhicao en HuggingFace bajo licencia MIT. A diferencia de los VLA puramente visuales, FACT incorpora explicitamente la fuerza tactil como modalidad de primer nivel: combina tres vistas RGB, el estado del efector final en 62 dimensiones (EEF62) y las lecturas de 10 sensores tactiles F6 para predecir secuencias de accion. El objetivo declarado es la transferencia de destreza de humano a robot en tareas de contacto rico.
+FACT (Force–Action–Track) es un modelo fundacional multimodal de tipo vision-language-action (VLA) orientado a destreza robotica, publicado por el usuario zhicao en Hugging Face bajo licencia MIT. A diferencia de los VLA puramente visuales, FACT incorpora explicitamente la fuerza tactil como modalidad de primer nivel: combina tres vistas RGB, el estado del efector final en 62 dimensiones (EEF62) y las lecturas de 10 sensores tactiles F6 para predecir secuencias de accion. El objetivo declarado es la transferencia de destreza de humano a robot en tareas de contacto rico.
 
 Tecnicamente, la politica es un transformer de atencion causal por bloques (block-causal) entrenado desde cero sobre datos en formato T-Rex de LeRobot v2.1. Genera chunks de accion delta-base de 16 pasos a 20 Hz junto con los 16 estados EEF62 siguientes, mediante un flujo en dos etapas: una etapa coarse (tau de 1 a 0,4) y una etapa de refinamiento exclusivamente de fuerza (tau de 0,4 a 0) que se refresca a 5 Hz con las lecturas tactiles. La percepcion visual y textual (VAE de Wan2.2 y encoder umT5-XXL) esta congelada y solo se usa para construir caches offline.
 
@@ -95,5 +95,5 @@ La diferencia principal de FACT frente a estos modelos es la incorporacion expli
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zhicao/FACT
+- Modelo en Hugging Face: https://huggingface.co/zhicao/FACT
 - La model card no incluye enlaces adicionales (ni a paper, blog, repositorio o demo). Los componentes citados pero sin URL en la informacion disponible son: el release Wan2.2-TI2V-5B (VAE y encoder umT5-XXL), el formato de datos T-Rex y LeRobot v2.1, los sensores tactiles F6 y la cinematica directa de Sharpa (`north_ces_fk_params.json`).

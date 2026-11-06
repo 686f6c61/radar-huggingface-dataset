@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Base | Parametros entrenables | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Krea 2 Tile / Blur / Restore Control LoRA (AdwolfCzar) | Control LoRA (concat canales) | krea/Krea-2-Raw | ~215 M | No aplica | other | HuggingFace, entrenamiento inicial |
+| Krea 2 Tile / Blur / Restore Control LoRA (AdwolfCzar) | Control LoRA (concat canales) | krea/Krea-2-Raw | ~215 M | No aplica | other | Hugging Face, entrenamiento inicial |
 | Flux.1-Depth-dev-lora (BFL) | Control LoRA (receta de referencia) | Flux.1 | No disponible | No aplica | No disponible | No disponible |
 | Krea-2-depth-controlnet (Patil) | ControlNet (receta de referencia) | Krea 2 | No disponible | No aplica | No disponible | No disponible |
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento ni de parámetros detallados de las altern
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AdwolfCzar/krea2-tile-controllora
+- Hugging Face: https://huggingface.co/AdwolfCzar/krea2-tile-controllora
 - Modelo base: https://huggingface.co/krea/Krea-2-Raw
 - Nodo ComfyUI (facok): https://github.com/facok/comfyui-krea2-controlnet
 - Nodo ComfyUI (tori29umai0123): https://github.com/tori29umai0123/comfyui-krea2-controlnetPlus

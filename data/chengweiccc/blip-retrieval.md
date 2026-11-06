@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ChengweiCcc/blip-retrieval` es un repositorio de HuggingFace que contiene una implementación compacta y personalizada en PyTorch de una arquitectura BLIP orientada a tareas de *retrieval* (recuperación imagen-texto y texto-imagen). Lo publica el usuario ChengweiCcc bajo licencia MIT y no está vinculado a Salesforce ni a ningún laboratorio con producción de modelos a gran escala. El propio autor lo describe como un punto de partida experimental para revisión de código, *smoke tests* y experimentos controlados de pequeño tamaño, no como un modelo preentrenado listo para producción.
+`ChengweiCcc/blip-retrieval` es un repositorio de Hugging Face que contiene una implementación compacta y personalizada en PyTorch de una arquitectura BLIP orientada a tareas de *retrieval* (recuperación imagen-texto y texto-imagen). Lo publica el usuario ChengweiCcc bajo licencia MIT y no está vinculado a Salesforce ni a ningún laboratorio con producción de modelos a gran escala. El propio autor lo describe como un punto de partida experimental para revisión de código, *smoke tests* y experimentos controlados de pequeño tamaño, no como un modelo preentrenado listo para producción.
 
 El dato más llamativo es la incoherencia entre la escala declarada y los pesos publicados: `config.json` indica configuración "giant", pero los metadatos de `model.safetensors` registran 24.832 parámetros totales y el repositorio ocupa 0,0 GB. Es decir, el checkpoint es una inicialización válida (pesos sin entrenar), no un modelo con capacidades aprendidas. La model card lo confirma explícitamente: "not presented as a trained benchmark checkpoint" y "no benchmark score is claimed".
 
@@ -21,7 +21,7 @@ Su relevancia ahora es, por tanto, la de una plantilla reproducible: fija una re
 | Licencia | MIT |
 | Formato de pesos | safetensors (más `config.json`, `training_args.json`, `pipeline.py`) |
 
-Otros datos del repositorio: 0 descargas, 0 *likes*, tamaño 0,0 GB, creado el 17 de octubre de 2026. Etiquetas declaradas: `safetensors`, `blip`, `pytorch`, `retrieval`, `license:mit`, `region:us`. No hay *pipeline* de HuggingFace asociado.
+Otros datos del repositorio: 0 descargas, 0 *likes*, tamaño 0,0 GB, creado el 17 de octubre de 2026. Etiquetas declaradas: `safetensors`, `blip`, `pytorch`, `retrieval`, `license:mit`, `region:us`. No hay *pipeline* de Hugging Face asociado.
 
 ## Arquitectura y entrenamiento
 
@@ -92,5 +92,5 @@ La diferencia cualitativa clave: las alternativas son modelos entrenados y evalu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ChengweiCcc/blip-retrieval
+- Repositorio en Hugging Face: https://huggingface.co/ChengweiCcc/blip-retrieval
 - No se han proporcionado otros enlaces (paper, blog, repositorio de código o demo) en la información disponible.

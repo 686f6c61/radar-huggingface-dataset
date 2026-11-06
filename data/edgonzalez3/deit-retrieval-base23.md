@@ -2,7 +2,7 @@
 
 ## Resumen
 
-deit-retrieval-base23 es una implementación mínima de DeiT (Data-efficient Image Transformer) orientada a tareas de retrieval, publicada por el usuario Edgonzalez3 en HuggingFace bajo licencia MIT. El repositorio incluye un script `predict.py` con un punto de entrada ejecutable, un `config.json` con la arquitectura generada, un `training_args.json` con la receta de experimento por defecto y un checkpoint de inicialización en formato safetensors que contiene 24.832 parámetros.
+deit-retrieval-base23 es una implementación mínima de DeiT (Data-efficient Image Transformer) orientada a tareas de retrieval, publicada por el usuario Edgonzalez3 en Hugging Face bajo licencia MIT. El repositorio incluye un script `predict.py` con un punto de entrada ejecutable, un `config.json` con la arquitectura generada, un `training_args.json` con la receta de experimento por defecto y un checkpoint de inicialización en formato safetensors que contiene 24.832 parámetros.
 
 No se trata de un modelo entrenado. El propio autor indica que el checkpoint sirve para pruebas de humo (smoke tests) y declara explícitamente que no se reclama ninguna puntuación de benchmark. La model card describe la escala como «giant», mientras que el identificador del repositorio dice «base23» y el recuento real de parámetros (24.832) corresponde a una implementación de juguete: un DeiT giant real ronda los 300 millones de parámetros, tres órdenes de magnitud por encima de este artefacto.
 
@@ -90,6 +90,6 @@ La comparación no es equitativa: los modelos de la misma categoría están pree
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Edgonzalez3/deit-retrieval-base23
+- Hugging Face: https://huggingface.co/Edgonzalez3/deit-retrieval-base23
 - La búsqueda web no devolvió enlaces relevantes sobre este modelo. Los resultados obtenidos corresponden a Langdock (langdock.com), una plataforma de adopción de IA sin relación con el repositorio.
 - No se han encontrado paper, blog técnico, repositorio de código ni demo asociados a este modelo en la información disponible.

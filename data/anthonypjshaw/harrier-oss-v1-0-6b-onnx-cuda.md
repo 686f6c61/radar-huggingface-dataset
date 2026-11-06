@@ -97,7 +97,7 @@ No se dispone de datos de benchmarks para comparar rendimiento entre estas varia
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anthonypjshaw/harrier-oss-v1-0.6b-onnx-cuda
-- Modelo base en HuggingFace: https://huggingface.co/microsoft/harrier-oss-v1-0.6b
+- Modelo en Hugging Face: https://huggingface.co/anthonypjshaw/harrier-oss-v1-0.6b-onnx-cuda
+- Modelo base en Hugging Face: https://huggingface.co/microsoft/harrier-oss-v1-0.6b
 - Repositorio oficial de ONNX Runtime: https://github.com/microsoft/onnxruntime
 - No se han proporcionado enlaces a papers, blogs, demos ni al release exacto `plugin-ep-cuda/v0.3.0` en la información disponible.

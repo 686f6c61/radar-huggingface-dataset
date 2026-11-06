@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `model-rsch/ngut-64k` es un proyecto publicado en HuggingFace por el autor `model-rsch` el 26 de agosto de 2026. La información disponible es extremadamente limitada: no se especifica arquitectura, número de parámetros, licencia ni idiomas soportados. La model card únicamente documenta un conjunto extenso de tokens especiales y una plantilla de conversación básica.
+El modelo `model-rsch/ngut-64k` es un proyecto publicado en Hugging Face por el autor `model-rsch` el 26 de agosto de 2026. La información disponible es extremadamente limitada: no se especifica arquitectura, número de parámetros, licencia ni idiomas soportados. La model card únicamente documenta un conjunto extenso de tokens especiales y una plantilla de conversación básica.
 
 A pesar de la falta de datos técnicos, la lista de tokens especiales revela un diseño claramente multimodal y orientado a agentes: incluye tokens para vision, audio, vídeo, herramientas (tool calling), razonamiento, recuperación de información, código y transcripción. Esto sugiere que el modelo pretende ser un asistente conversacional capaz de procesar múltiples modalidades, aunque no se puede confirmar ninguna capacidad sin especificaciones oficiales.
 

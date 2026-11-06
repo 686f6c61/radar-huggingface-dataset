@@ -106,8 +106,8 @@ Efecto del tamano de grupo de cuantizacion en Z-Image: convrot_groupsize 256 da 
 | Modelo | Parametros | Formato y tamano de pesos | Contexto/resolucion | s/paso (RTX 3090, 1024x1024) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
 | Tongyi-MAI/Z-Image-Turbo (base BF16) | 6,15 B | BF16, 11,46 GiB | 1024x1024 en las pruebas | 0,903 | no indicada en la informacion disponible | Modelo base referenciado por este repo |
-| Este modelo, variante W4A4 | 6,15 B | convrot_w4a4, 3,06 GiB | 1024x1024 | 0,341 | apache-2.0 | Publicado en HuggingFace, 0 descargas |
-| Este modelo, variante mixta 4/8 bits | 6,15 B | 4/8 bits, 3,18 GiB | 1024x1024 | 0,391 | apache-2.0 | Publicado en HuggingFace, 0 descargas |
+| Este modelo, variante W4A4 | 6,15 B | convrot_w4a4, 3,06 GiB | 1024x1024 | 0,341 | apache-2.0 | Publicado en Hugging Face, 0 descargas |
+| Este modelo, variante mixta 4/8 bits | 6,15 B | 4/8 bits, 3,18 GiB | 1024x1024 | 0,391 | apache-2.0 | Publicado en Hugging Face, 0 descargas |
 | ostris/Z-Image-De-Turbo | no disponible | no disponible | no disponible | no disponible | no disponible | Mencionado como hermano de-destilado; el mismo recetario da 7 de 12 victorias emparejadas, resultado ambiguo |
 | Wan 2.1 VACE | 1,3 B | no disponible | no disponible | no disponible | no disponible | Referencia del banco de tolerancia, distinta categoria y tamano |
 | Krea 2 Turbo | 12,82 B | no disponible | no disponible | no disponible | no disponible | Referencia del banco de tolerancia, distinta categoria y tamano |
@@ -134,7 +134,7 @@ Los tres ultimos modelos aparecen unicamente como puntos de comparacion de toler
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JoaoZaokk/Z-Image-Turbo-W4A4-ConvRot
+- Repositorio Hugging Face: https://huggingface.co/JoaoZaokk/Z-Image-Turbo-W4A4-ConvRot
 - Modelo base: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
 - Repositorio del banco de pruebas (metodo, herramientas y registro completo de mediciones): https://github.com/JoaoZaokk/comfy-quant-bench
 - Text encoder cuantizado complementario: https://huggingface.co/JoaoZaokk/Qwen3-4B-W4A4-ConvRot

@@ -77,11 +77,11 @@ No se dispone de datos de rendimiento comparativo. La principal diferencia entre
 
 ## Enlaces
 
-- [Modelo en HuggingFace: kerasformers/qwen3-vl-2b-instruct](https://huggingface.co/kerasformers/qwen3-vl-2b-instruct)
+- [Modelo en Hugging Face: kerasformers/qwen3-vl-2b-instruct](https://huggingface.co/kerasformers/qwen3-vl-2b-instruct)
 - [Modelo original: Qwen/Qwen3-VL-2B-Instruct](https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct)
 - [Repositorio GitHub de KerasFormers](https://github.com/IMvision12/KerasFormers)
 - [Documentación de Qwen3-VL en KerasFormers](https://imvision12.github.io/KerasFormers/qwen3_vl/)
-- [Colección de modelos Qwen3-VL en HuggingFace](https://huggingface.co/collections/kerasformers/qwen3-vl-6a7d7677c2926ecbddb1ed0a)
+- [Colección de modelos Qwen3-VL en Hugging Face](https://huggingface.co/collections/kerasformers/qwen3-vl-6a7d7677c2926ecbddb1ed0a)
 - [Paper: Qwen3 Technical Report (arXiv:2505.09388)](https://arxiv.org/abs/2505.09388)
 - [Paper: Qwen2.5-VL Technical Report (arXiv:2502.13923)](https://arxiv.org/abs/2502.13923)
 - [Paper: Qwen2-VL (arXiv:2409.12191)](https://arxiv.org/abs/2409.12191)

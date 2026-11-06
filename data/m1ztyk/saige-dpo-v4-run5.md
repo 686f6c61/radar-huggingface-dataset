@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SAIGE-dpo-v4-run5 es un ajuste fino del modelo Qwen/Qwen2.5-3B-Instruct publicado por el usuario M1ztyk en HuggingFace. Se trata de un modelo de lenguaje causal de 3.090 millones de parametros (3,09 B) alineado mediante DPO (Direct Preference Optimization), una tecnica de optimizacion por preferencias que prescinde de un modelo de recompensa explicito y optimiza directamente la politica sobre pares (respuesta preferida, respuesta rechazada). El entrenamiento se ha realizado con la libreria TRL (version 1.13.0) sobre Transformers 5.17.0 y PyTorch 2.14.0, y el repositorio se limita a pesos en formato safetensors con un tamano total de 0,3 GB.
+SAIGE-dpo-v4-run5 es un ajuste fino del modelo Qwen/Qwen2.5-3B-Instruct publicado por el usuario M1ztyk en Hugging Face. Se trata de un modelo de lenguaje causal de 3.090 millones de parametros (3,09 B) alineado mediante DPO (Direct Preference Optimization), una tecnica de optimizacion por preferencias que prescinde de un modelo de recompensa explicito y optimiza directamente la politica sobre pares (respuesta preferida, respuesta rechazada). El entrenamiento se ha realizado con la libreria TRL (version 1.13.0) sobre Transformers 5.17.0 y PyTorch 2.14.0, y el repositorio se limita a pesos en formato safetensors con un tamano total de 0,3 GB.
 
 El modelo hereda la arquitectura de Qwen2.5-3B-Instruct: un transformer decoder-only con Grouped Query Attention (GQA), 36 capas, atencion con 16 cabezas de consulta y 2 cabezas de clave/valor, y una longitud de contexto nativa de 32.768 tokens ampliable a 131.072 mediante escalado RoPE tipo YaRN. Al derivar de un modelo instruct, el punto de partida ya incorpora ajuste por instrucciones y alineacion previa; el aporte de este repositorio es una capa adicional de preferencias obtenida por DPO.
 
@@ -67,10 +67,10 @@ Advertencia de hardware: el tamano del repositorio (0,3 GB) es muy inferior a lo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| SAIGE-dpo-v4-run5 | 3,09 B | no confirmado (base: 32.768 tokens, 131.072 con YaRN) | no disponible | HuggingFace, 0 descargas, 0 likes | no disponible |
-| Qwen2.5-3B-Instruct (modelo base) | 3,09 B | 32.768 tokens nativo, 131.072 con YaRN | condiciones del modelo base Qwen2.5 | HuggingFace, ampliamente usado | publicados por el autor del modelo base |
-| Llama-3.2-3B-Instruct | 3,21 B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, ampliamente usado | publicados por el autor del modelo base |
-| Phi-3.5-mini-instruct | 3,8 B | 128.000 tokens | MIT | HuggingFace, ampliamente usado | publicados por el autor del modelo base |
+| SAIGE-dpo-v4-run5 | 3,09 B | no confirmado (base: 32.768 tokens, 131.072 con YaRN) | no disponible | Hugging Face, 0 descargas, 0 likes | no disponible |
+| Qwen2.5-3B-Instruct (modelo base) | 3,09 B | 32.768 tokens nativo, 131.072 con YaRN | condiciones del modelo base Qwen2.5 | Hugging Face, ampliamente usado | publicados por el autor del modelo base |
+| Llama-3.2-3B-Instruct | 3,21 B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, ampliamente usado | publicados por el autor del modelo base |
+| Phi-3.5-mini-instruct | 3,8 B | 128.000 tokens | MIT | Hugging Face, ampliamente usado | publicados por el autor del modelo base |
 
 Los datos de las tres alternativas corresponden a informacion publica de sus respectivas model cards y deben verificarse en las fuentes originales. La comparativa de rendimiento no puede completarse porque SAIGE-dpo-v4-run5 no publica ninguna metrica.
 
@@ -89,7 +89,7 @@ Los datos de las tres alternativas corresponden a informacion publica de sus res
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/M1ztyk/SAIGE-dpo-v4-run5
+- Modelo en Hugging Face: https://huggingface.co/M1ztyk/SAIGE-dpo-v4-run5
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Panel de entrenamiento en Trackio: https://M1ztyk-saige-dpo-v4-run5-trackio.hf.space?project=saige-dpo-v4-run5&runs=M1ztyk-1789855980&sidebar=collapsed
 - Articulo de DPO: https://huggingface.co/papers/2305.18290

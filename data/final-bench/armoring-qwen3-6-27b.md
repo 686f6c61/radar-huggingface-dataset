@@ -90,5 +90,5 @@ No disponible. La informacion proporcionada no incluye comparaciones con otros m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/FINAL-Bench/Armoring-Qwen3.6-27B
+- Repositorio Hugging Face: https://huggingface.co/FINAL-Bench/Armoring-Qwen3.6-27B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B

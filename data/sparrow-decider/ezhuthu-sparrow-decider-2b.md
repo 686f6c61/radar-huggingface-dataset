@@ -78,8 +78,8 @@ Tras calibracion sobre VAL, rellena el 57,6% de los huecos y marca el resto; el 
 
 | Modelo | Parametros | Contexto | Rendimiento en la tarea (TEST) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ezhuthu-sparrow-decider-2b | 2B base + adaptador LoRA de 50,5M + cabeza de 3,2M | No disponible | 65,4% top-1 (restaurador completo); 54,7% solo decididor | Apache-2.0 | HuggingFace (adaptador PEFT) |
-| Strands Decider v1-2610 2B (base) | 2B | No disponible | 58,1% top-1 (restaurador completo) | No disponible en la informacion | HuggingFace |
+| ezhuthu-sparrow-decider-2b | 2B base + adaptador LoRA de 50,5M + cabeza de 3,2M | No disponible | 65,4% top-1 (restaurador completo); 54,7% solo decididor | Apache-2.0 | Hugging Face (adaptador PEFT) |
+| Strands Decider v1-2610 2B (base) | 2B | No disponible | 58,1% top-1 (restaurador completo) | No disponible en la informacion | Hugging Face |
 | Strands Decider v19 generalista alojado | No disponible | No disponible | 43,1% (mismas peticiones); 0,450 en TEST-hard | No disponible en la informacion | Alojado |
 | Confianza propia del LLM restaurador (Claude Sonnet 4.6) | No aplica | No aplica | 38,7% top-1 | No aplica | API |
 
@@ -96,7 +96,7 @@ Tras calibracion sobre VAL, rellena el 57,6% de los huecos y marca el resto; el 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sparrow-decider/ezhuthu-sparrow-decider-2b
+- Modelo en Hugging Face: https://huggingface.co/sparrow-decider/ezhuthu-sparrow-decider-2b
 - Modelo base Strands Decider: https://huggingface.co/StrandsAgents/strands-decider-2B-qwen3.5-v1-2610
 - Modelo base de Qwen: https://huggingface.co/Qwen/Qwen3.5-2B-Base
 - Repositorio Ezhuthu: https://github.com/Vivek0712/ezhuthu

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-NeCast es un modelo publicado en HuggingFace por el usuario Larrivhan, orientado a la genética de poblaciones y a la inferencia demográfica. Sus etiquetas lo sitúan en el ámbito del cálculo del tamano efectivo de poblacion (effective population size, Ne) y de la inferencia basada en coalescentes, con un dataset de simulaciones asociado (Larrivhan/NeCast-simulations). Se distribuye como un repositorio PyTorch de aproximadamente 0,7 GB, lo que sugiere un modelo de tamano moderado, aunque no se dispone de detalles sobre su arquitectura exacta.
+NeCast es un modelo publicado en Hugging Face por el usuario Larrivhan, orientado a la genética de poblaciones y a la inferencia demográfica. Sus etiquetas lo sitúan en el ámbito del cálculo del tamano efectivo de poblacion (effective population size, Ne) y de la inferencia basada en coalescentes, con un dataset de simulaciones asociado (Larrivhan/NeCast-simulations). Se distribuye como un repositorio PyTorch de aproximadamente 0,7 GB, lo que sugiere un modelo de tamano moderado, aunque no se dispone de detalles sobre su arquitectura exacta.
 
 El modelo resuelve, presumiblemente, el problema de estimar parametros demograficos (como variaciones temporales de Ne) a partir de datos geneticos simulados o reales, una tarea clasica en genetica de poblaciones que tradicionalmente se aborda con metodos estadisticos y de coalescencia. La propuesta de un modelo neuronal para esta tarea resulta relevante porque podria ofrecer inferencia mas rapida que los metodos de simulacion intensiva, aunque la informacion publica disponible es muy limitada.
 
-La ficha se ha elaborado exclusivamente a partir de los metadatos de HuggingFace. No hay descripcion del modelo, paper asociado, resultados de benchmarks ni documentacion tecnica en la informacion proporcionada, por lo que numerosos campos se indican como "no disponible". El acceso al repositorio esta restringido (gated) y requiere aceptar condiciones en la plataforma.
+La ficha se ha elaborado exclusivamente a partir de los metadatos de Hugging Face. No hay descripcion del modelo, paper asociado, resultados de benchmarks ni documentacion tecnica en la informacion proporcionada, por lo que numerosos campos se indican como "no disponible". El acceso al repositorio esta restringido (gated) y requiere aceptar condiciones en la plataforma.
 
 ## Especificaciones tecnicas
 
@@ -66,7 +66,7 @@ No disponible. No se conocen modelos comparables en la informacion proporcionada
 ## Limitaciones y advertencias
 
 - Informacion publica muy limitada: no hay descripcion del modelo, paper, tarjeta de modelo detallada ni resultados de evaluacion, lo que impide validar su calidad y su comportamiento.
-- Acceso restringido: el repositorio esta en modo gated y requiere aceptar condiciones en HuggingFace antes de descargar los pesos.
+- Acceso restringido: el repositorio esta en modo gated y requiere aceptar condiciones en Hugging Face antes de descargar los pesos.
 - Dominio especializado: el modelo parece limitado a la genetica de poblaciones y la inferencia demografica; no debe esperarse que realice tareas generales de lenguaje, codigo o vision.
 - Riesgo de alucinacion y extrapolacion: al no documentarse el dominio de entrenamiento ni los regimenes demograficos cubiertos por las simulaciones, las estimaciones fuera de ese rango podrian ser poco fiables.
 - Sesgos de simulacion: si el entrenamiento se basa en un conjunto concreto de simulaciones, el modelo podria heredar los supuestos del simulador (modelo de mutacion, recombinacion, estructura poblacional) y generalizar mal a escenarios no representados.
@@ -75,5 +75,5 @@ No disponible. No se conocen modelos comparables en la informacion proporcionada
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Larrivhan/NeCast
+- Modelo en Hugging Face: https://huggingface.co/Larrivhan/NeCast
 - Dataset de simulaciones: https://huggingface.co/datasets/Larrivhan/NeCast-simulations

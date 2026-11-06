@@ -66,6 +66,6 @@ No se dispone de informacion suficiente para establecer una comparativa con mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/eshanized/M31Genesis
+- Hugging Face: https://huggingface.co/eshanized/M31Genesis
 - GitHub del agente M31A: https://github.com/eshanized/M31A
 - Releases del agente M31A: https://github.com/eshanized/M31A/releases

@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Licencia | Abliterated | Disponibilidad |
 |---|---|---|---|---|---|
-| Justbackup/gemma-3-12b-it-abliterated | 12,2 B | No especificado (base: 128k) | Gemma | Si | HuggingFace (safetensors) |
-| google/gemma-3-12b-it | 12,2 B | 128k | Gemma | No | HuggingFace (original) |
-| huihui-ai/gemma-3-12b-it-abliterated | 12,2 B | No especificado | Gemma | Si | HuggingFace (otra version) |
-| mlabonne/gemma-3-12b-it-abliterated-GGUF | 12,2 B | No especificado | Gemma | Si | HuggingFace (GGUF) |
+| Justbackup/gemma-3-12b-it-abliterated | 12,2 B | No especificado (base: 128k) | Gemma | Si | Hugging Face (safetensors) |
+| google/gemma-3-12b-it | 12,2 B | 128k | Gemma | No | Hugging Face (original) |
+| huihui-ai/gemma-3-12b-it-abliterated | 12,2 B | No especificado | Gemma | Si | Hugging Face (otra version) |
+| mlabonne/gemma-3-12b-it-abliterated-GGUF | 12,2 B | No especificado | Gemma | Si | Hugging Face (GGUF) |
 
 La principal diferencia entre las versiones abliterated radica en la tecnica exacta y el autor; este repositorio parece ser una copia de la version de mlabonne, mientras que `huihui-ai` ofrece una implementacion propia. No se dispone de datos comparativos de rendimiento entre ellas.
 
@@ -81,7 +81,7 @@ La principal diferencia entre las versiones abliterated radica en la tecnica exa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Justbackup/gemma-3-12b-it-abliterated
+- Repositorio Hugging Face: https://huggingface.co/Justbackup/gemma-3-12b-it-abliterated
 - Modelo base: https://huggingface.co/google/gemma-3-12b-it
 - Articulo sobre abliteration (blog de mlabonne): https://huggingface.co/blog/mlabonne/abliteration
 - Repositorio de Sumandora (remove-refusals-with-transformers): https://github.com/Sumandora/remove-refusals-with-transformers/

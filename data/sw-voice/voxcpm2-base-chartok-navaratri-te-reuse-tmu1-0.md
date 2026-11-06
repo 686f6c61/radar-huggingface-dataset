@@ -80,7 +80,7 @@ No se dispone de datos de benchmarks ni de especificaciones verificadas de model
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/sw-voice/voxcpm2-base-chartok-navaratri-te-reuse-tmu1.0)
+- [Modelo en Hugging Face](https://huggingface.co/sw-voice/voxcpm2-base-chartok-navaratri-te-reuse-tmu1.0)
 - [Modelo base openbmb/VoxCPM2](https://huggingface.co/openbmb/VoxCPM2)
 - Dataset citado: sw-voice/swamiji-navaratri-telugu-reuse-themes (referenciado en la model card; no se proporciona URL directa)
 - Código de investigación: swamiji-tts, ruta `research/exp-iterations/06-voxcpm2-swamiji-stages` (referenciado en la model card; no se proporciona URL directa)

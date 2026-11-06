@@ -78,7 +78,7 @@ La información disponible no incluye comparativas numéricas con otras polític
 
 | Modelo | Parametros | Contexto / horizonte | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LeWAM | no disponible | 32 acciones por inferencia, 10 pasos de denoising | no disponible | no disponible (encoder incluido bajo CC BY-NC 4.0) | HuggingFace y GitHub |
+| LeWAM | no disponible | 32 acciones por inferencia, 10 pasos de denoising | no disponible | no disponible (encoder incluido bajo CC BY-NC 4.0) | Hugging Face y GitHub |
 | Politicas de difusion con backbone de video preentrenado | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Codificadores visuales alternativos evaluados por los autores | no disponible | no aplica | I-JEPA-Huge declarado el mas eficaz | no disponible | no disponible |
 
@@ -96,7 +96,7 @@ La información disponible no incluye comparativas numéricas con otras polític
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/XuejiFang/LeWAM
+- Modelo en Hugging Face: https://huggingface.co/XuejiFang/LeWAM
 - Repositorio de GitHub con el código de inferencia: https://github.com/XuejiFang/LeWAM
 - Modelo base (codificador de vision I-JEPA): https://huggingface.co/facebook/ijepa_vith14_22k
 - Perfil del autor en GitHub: https://github.com/xuejifang

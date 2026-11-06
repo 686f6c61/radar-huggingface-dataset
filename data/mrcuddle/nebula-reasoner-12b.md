@@ -68,6 +68,6 @@ Ambos son también merges de 12B, pero no se dispone de especificaciones detalla
 
 ## Enlaces
 
-- [HuggingFace - mrcuddle/Nebula-Reasoner-12B](https://huggingface.co/mrcuddle/Nebula-Reasoner-12B)
+- [Hugging Face - mrcuddle/Nebula-Reasoner-12B](https://huggingface.co/mrcuddle/Nebula-Reasoner-12B)
 - [ChaoticNeutrals/Mag-Mell-Reasoner-12B](https://huggingface.co/ChaoticNeutrals/Mag-Mell-Reasoner-12B)
 - [Nitral-AI/CaptainErisNebula-12B-Chimera-v1.1](https://huggingface.co/Nitral-AI/CaptainErisNebula-12B-Chimera-v1.1)

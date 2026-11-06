@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Stage-org/4b-strat-300-hard-27b-z-iter2-epoch3-agent-rl-epoch1 es un checkpoint de modelo de lenguaje publicado por el usuario Stage-org en HuggingFace, con 4.539.265.536 parametros reales (aproximadamente 4,54 mil millones) segun los pesos en safetensors del repositorio, que ocupa 9,1 GB. La etiqueta de arquitectura declarada es `qwen3_5`, lo que situa el modelo en la familia Qwen 3.5, aunque no se ha publicado documentacion tecnica que detalle su configuracion interna.
+Stage-org/4b-strat-300-hard-27b-z-iter2-epoch3-agent-rl-epoch1 es un checkpoint de modelo de lenguaje publicado por el usuario Stage-org en Hugging Face, con 4.539.265.536 parametros reales (aproximadamente 4,54 mil millones) segun los pesos en safetensors del repositorio, que ocupa 9,1 GB. La etiqueta de arquitectura declarada es `qwen3_5`, lo que situa el modelo en la familia Qwen 3.5, aunque no se ha publicado documentacion tecnica que detalle su configuracion interna.
 
 El nombre del repositorio sugiere un artefacto experimental dentro de una cadena de entrenamiento por etapas: los fragmentos `strat-300-hard`, `iter2`, `epoch3` y `agent-rl-epoch1` apuntan a una fase de ajuste orientada a agentes mediante aprendizaje por refuerzo, y `27b-z` podria referirse a un modelo de referencia o profesor de mayor tamano. Se trata de una interpretacion del identificador, no de informacion confirmada por el autor.
 
@@ -93,5 +93,5 @@ No es posible comparar rendimiento porque el modelo evaluado no publica ninguna 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Stage-org/4b-strat-300-hard-27b-z-iter2-epoch3-agent-rl-epoch1
+- Hugging Face: https://huggingface.co/Stage-org/4b-strat-300-hard-27b-z-iter2-epoch3-agent-rl-epoch1
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relevante. Las consultas devolvieron exclusivamente paginas de ofertas de practicas profesionales (stage.fr, welcometothejungle.com, 1jeune1solution.gouv.fr, jobs-stages.letudiant.fr), sin relacion con el modelo ni con su autor.

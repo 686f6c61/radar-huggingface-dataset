@@ -84,9 +84,9 @@ No se dispone de datos de rendimiento de este modelo que permitan una comparacio
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| LowOnMind-8M (DedeProGames) | 8,06 M | 512 | ODC-BY | HuggingFace, transformers |
-| Pythia-14M (EleutherAI) | ~14 M | 2.048 (segun ficha publica) | Apache-2.0 (segun ficha publica) | HuggingFace |
-| GPT-2 small (OpenAI) | 124 M | 1.024 (segun ficha publica) | MIT (segun ficha publica) | HuggingFace y multiples espejos |
+| LowOnMind-8M (DedeProGames) | 8,06 M | 512 | ODC-BY | Hugging Face, transformers |
+| Pythia-14M (EleutherAI) | ~14 M | 2.048 (segun ficha publica) | Apache-2.0 (segun ficha publica) | Hugging Face |
+| GPT-2 small (OpenAI) | 124 M | 1.024 (segun ficha publica) | MIT (segun ficha publica) | Hugging Face y multiples espejos |
 
 La diferencia principal frente a esas alternativas es que LowOnMind-8M es sustancialmente mas pequeno, tiene un vocabulario mucho mas reducido (2.048 frente a 50.257 en GPT-2) y una ventana de contexto mas corta. No hay datos que permitan afirmar cual rinde mejor en tareas de lenguaje.
 
@@ -105,7 +105,7 @@ La diferencia principal frente a esas alternativas es que LowOnMind-8M es sustan
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DedeProGames/LowOnMind-8M
+- Modelo en Hugging Face: https://huggingface.co/DedeProGames/LowOnMind-8M
 - Perfil del autor: https://huggingface.co/DedeProGames
 - Dataset de entrenamiento fineweb-edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - NanoDex Trainer Space: https://huggingface.co/spaces/hugging-science/nanodex-trainer

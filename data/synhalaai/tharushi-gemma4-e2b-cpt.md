@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Tharushi-Gemma4-E2B-CPT es un ajuste fino (continual pre-training, segun el sufijo CPT del nombre) del modelo unsloth/gemma-4-E2B-it-unsloth-bnb-4bit, publicado por el usuario SynhalaAI en HuggingFace. El modelo base pertenece a la familia Gemma 4 de Google, en su variante E2B (orientada a eficiencia), y el ajuste anade soporte para ingles y cingales (si), ademas de mantener la modalidad image-text-to-text heredada del modelo original.
+Tharushi-Gemma4-E2B-CPT es un ajuste fino (continual pre-training, segun el sufijo CPT del nombre) del modelo unsloth/gemma-4-E2B-it-unsloth-bnb-4bit, publicado por el usuario SynhalaAI en Hugging Face. El modelo base pertenece a la familia Gemma 4 de Google, en su variante E2B (orientada a eficiencia), y el ajuste anade soporte para ingles y cingales (si), ademas de mantener la modalidad image-text-to-text heredada del modelo original.
 
-El repositorio declara 5.123.178.051 parametros en formato safetensors y un tamano de 30,6 GB, lo que sugiere pesos en precision alta a pesar de que el modelo base de partida estaba cuantizado en 4 bits (bnb-4bit). El pipeline es image-text-to-text, por lo que conserva capacidad de procesamiento de imagenes ademas de generacion de texto. La ficha tecnica oficial del autor no esta disponible en la informacion proporcionada, y el modelo esta sujeto a acceso restringido (gated) en HuggingFace.
+El repositorio declara 5.123.178.051 parametros en formato safetensors y un tamano de 30,6 GB, lo que sugiere pesos en precision alta a pesar de que el modelo base de partida estaba cuantizado en 4 bits (bnb-4bit). El pipeline es image-text-to-text, por lo que conserva capacidad de procesamiento de imagenes ademas de generacion de texto. La ficha tecnica oficial del autor no esta disponible en la informacion proporcionada, y el modelo esta sujeto a acceso restringido (gated) en Hugging Face.
 
 La relevancia de este modelo es limitada pero concreta: se trata de un experimento de adaptacion linguistica de un modelo Gemma 4 pequeno a un idioma de bajos recursos como el cingales, con cero descargas y cero likes en el momento de la consulta. No dispone de licencia declarada, lo que supone un caveat importante para uso comercial.
 
@@ -38,7 +38,7 @@ El sufijo CPT sugiere un proceso de continual pre-training sobre el modelo base,
 - Procesamiento de imagenes y texto combinados (pipeline image-text-to-text).
 - Soporte multilingue limitado a ingles y cingales.
 - Capacidad de conversacion multi-turno (tag `conversational`).
-- Compatibilidad con endpoints de HuggingFace (tag `endpoints_compatible`).
+- Compatibilidad con endpoints de Hugging Face (tag `endpoints_compatible`).
 - Compatibilidad con text-generation-inference (tag `text-generation-inference`).
 - No se documenta soporte explicito de tool calling, function calling, agentes o modos de razonamiento extendido (thinking mode) en la informacion disponible.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada en cuantizacion 4 bits: aproximadamente 3-4 GB para pesos, mas overhead.
 - GPU recomendadas: RTX 3090, RTX 4090, A100 o H100 para FP16 sin cuantizar; GPUs consumer con 8-12 GB para versiones cuantizadas.
 - Cabe en GPU consumer: si, en modelos con al menos 8 GB de VRAM si se cuantiza; en FP16 requiere 12 GB o mas.
-- Opciones de despliegue: transformers (libreria declarada), text-generation-inference (tag), endpoints de HuggingFace; no se confirma soporte de vLLM, llama.cpp u Ollama en la informacion disponible.
+- Opciones de despliegue: transformers (libreria declarada), text-generation-inference (tag), endpoints de Hugging Face; no se confirma soporte de vLLM, llama.cpp u Ollama en la informacion disponible.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -77,7 +77,7 @@ La comparativa se limita al modelo base y a la familia de origen, ya que no se d
 ## Limitaciones y advertencias
 
 - Ausencia total de benchmarks publicados: no hay evidencia cuantitativa de la calidad del ajuste ni de la mejora en cingales.
-- Licencia no declarada: no se puede confirmar el uso comercial; ademas, el modelo esta sujeto a acceso restringido en HuggingFace, lo que anade una capa de condiciones.
+- Licencia no declarada: no se puede confirmar el uso comercial; ademas, el modelo esta sujeto a acceso restringido en Hugging Face, lo que anade una capa de condiciones.
 - Cero descargas y cero likes: no hay validacion por parte de la comunidad.
 - Riesgo de alucinacion y de degradacion del rendimiento en ingles tras el continual pre-training, sin datos que lo cuantifiquen.
 - Cobertura linguistica limitada a ingles y cingales; el resto de idiomas no esta soportado segun los tags.
@@ -87,6 +87,6 @@ La comparativa se limita al modelo base y a la familia de origen, ya que no se d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SynhalaAI/Tharushi-Gemma4-E2B-CPT
+- Hugging Face: https://huggingface.co/SynhalaAI/Tharushi-Gemma4-E2B-CPT
 - Modelo base: https://huggingface.co/unsloth/gemma-4-E2B-it-unsloth-bnb-4bit
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion proporcionada.

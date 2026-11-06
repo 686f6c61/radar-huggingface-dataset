@@ -102,7 +102,7 @@ La diferencia principal frente al modelo base es la eliminación de los rechazos
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Thaurock/Gemma-3-27b-it-abliterated-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Thaurock/Gemma-3-27b-it-abliterated-GGUF
 - Modelo base: https://huggingface.co/google/gemma-3-27b-it
 - Técnica de abliteración (Maxime Labonne / mlabonne): https://huggingface.co/mlabonne
 - Versión abliterada de referencia de mlabonne: https://huggingface.co/mlabonne/gemma-3-27b-it-abliterated-GGUF

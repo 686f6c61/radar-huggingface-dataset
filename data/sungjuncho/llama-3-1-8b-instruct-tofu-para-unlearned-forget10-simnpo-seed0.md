@@ -76,10 +76,10 @@ FADE es la divergencia KL simétrica respecto al modelo de referencia sobre resp
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (`...-simnpo-seed0`) | 8,03B | no disponible | Llama-3.1-8B-Instruct + TOFU-para + SimNPO (forget10) | llama3.1 | HuggingFace, 322 descargas |
-| `sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-full-seed0` | 8,03B | no disponible | Modelo base afinado con TOFU-para completo + 2 paráfrasis | llama3.1 | HuggingFace |
-| `sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-retain90-seed0` | 8,03B | no disponible | Referencia de retención (retain90) para cálculo de FADE | llama3.1 | HuggingFace |
-| `sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-retain90-forget10para-seed0` | 8,03B | no disponible | Referencia de untraining (forget10 parafraseado) | llama3.1 | HuggingFace |
+| Este modelo (`...-simnpo-seed0`) | 8,03B | no disponible | Llama-3.1-8B-Instruct + TOFU-para + SimNPO (forget10) | llama3.1 | Hugging Face, 322 descargas |
+| `sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-full-seed0` | 8,03B | no disponible | Modelo base afinado con TOFU-para completo + 2 paráfrasis | llama3.1 | Hugging Face |
+| `sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-retain90-seed0` | 8,03B | no disponible | Referencia de retención (retain90) para cálculo de FADE | llama3.1 | Hugging Face |
+| `sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-retain90-forget10para-seed0` | 8,03B | no disponible | Referencia de untraining (forget10 parafraseado) | llama3.1 | Hugging Face |
 
 No se dispone de comparación con otros algoritmos de desaprendizaje (NPO, GradDiff) en la información proporcionada.
 
@@ -97,7 +97,7 @@ No se dispone de comparación con otros algoritmos de desaprendizaje (NPO, GradD
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-unlearned-forget10-simnpo-seed0
+- Modelo en Hugging Face: https://huggingface.co/sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-unlearned-forget10-simnpo-seed0
 - Modelo base: https://huggingface.co/sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-full-seed0
 - Referencia de retención: https://huggingface.co/sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-retain90-seed0
 - Referencia de untraining: https://huggingface.co/sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-retain90-forget10para-seed0

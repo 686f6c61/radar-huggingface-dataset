@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| VARabi/towards-speechaldi-direct-prediction-whisper-medium | no disponible (encoder Whisper Medium + cabeza lineal) | ventana de audio de 30 s | Regresion ALDi directa desde audio | Apache 2.0 | HuggingFace (0 descargas) |
+| VARabi/towards-speechaldi-direct-prediction-whisper-medium | no disponible (encoder Whisper Medium + cabeza lineal) | ventana de audio de 30 s | Regresion ALDi directa desde audio | Apache 2.0 | Hugging Face (0 descargas) |
 | Enfoque en cascada (ASR + modelo ALDi textual) | depende del ASR y del modelo textual | depende del ASR | ALDi a partir de transcripcion | variable | no disponible como modelo unico |
 | Modelos ALDi textuales previos (referenciados en el paper) | no disponible | no disponible | ALDi sobre texto | no disponible | no disponible |
 
@@ -77,11 +77,11 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 - No se documentan sesgos especificos mas alla de la limitacion dialectal, pero al entrenar solo con arabe saudí puede infrarepresentar variedades no saudies.
 - Licencia Apache 2.0: permite uso comercial, pero no se ofrece ninguna garantia ni soporte por parte del autor.
 - Modelo de investigacion con 0 descargas y 0 likes en el momento de la consulta; no hay evidencia de validacion externa ni de uso en produccion.
-- El codigo de ejemplo descarga el checkpoint desde `wageehkhad/whisper-medium-sada-speech-aldi`, un identificador distinto del repo de HuggingFace listado; conviene verificar la disponibilidad de ese checkpoint antes de integrarlo.
+- El codigo de ejemplo descarga el checkpoint desde `wageehkhad/whisper-medium-sada-speech-aldi`, un identificador distinto del repo de Hugging Face listado; conviene verificar la disponibilidad de ese checkpoint antes de integrarlo.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/VARabi/towards-speechaldi-direct-prediction-whisper-medium
+- Hugging Face: https://huggingface.co/VARabi/towards-speechaldi-direct-prediction-whisper-medium
 - Paper ALDi (EMNLP 2023): https://aclanthology.org/2023.emnlp-main.655/
 - Paper del modelo (ArabicNLP 2026): https://aclanthology.org/2026.arabicnlp-main.28/
 - DOI del paper: https://doi.org/10.18653/2026.arabicnlp-main.28

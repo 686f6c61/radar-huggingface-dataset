@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Formato / cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PINKSAWTOOTH/Qwopus3.8-27B-Flash-oQ4e-mtp-mlx | ~27,78 mil millones | MLX safetensors, 4-bit con overrides en 5-bit, MTP retenido | no disponible | Apache-2.0 | Publicado en HuggingFace, 0 descargas |
-| Jackrong/Qwopus3.8-27B-Flash (modelo de origen) | ~27,78 mil millones (referencia) | Pesos completos, no cuantizado | no disponible | Apache-2.0 | Publicado en HuggingFace |
-| Qwen/Qwen3.8-27B (base declarada del fine-tuning) | ~27,8 mil millones (referencia) | Pesos completos, no cuantizado | no disponible | no disponible en esta busqueda | Publicado en HuggingFace |
+| PINKSAWTOOTH/Qwopus3.8-27B-Flash-oQ4e-mtp-mlx | ~27,78 mil millones | MLX safetensors, 4-bit con overrides en 5-bit, MTP retenido | no disponible | Apache-2.0 | Publicado en Hugging Face, 0 descargas |
+| Jackrong/Qwopus3.8-27B-Flash (modelo de origen) | ~27,78 mil millones (referencia) | Pesos completos, no cuantizado | no disponible | Apache-2.0 | Publicado en Hugging Face |
+| Qwen/Qwen3.8-27B (base declarada del fine-tuning) | ~27,8 mil millones (referencia) | Pesos completos, no cuantizado | no disponible | no disponible en esta busqueda | Publicado en Hugging Face |
 | Otras cuantizaciones del mismo modelo base | ~27,78 mil millones | GGUF, AWQ, MLX u otros segun autor | no disponible | Depende del autor | No localizadas en la busqueda realizada |
 
 La busqueda web asociada a esta ficha no devolvio resultados relacionados con el modelo: los enlaces recuperados corresponden a paginas corporativas de Microsoft, sin ninguna conexion con Qwopus3.8 ni con Qwen. Por tanto, no se dispone de datos comparativos de rendimiento frente a alternativas de la misma categoria.
@@ -88,7 +88,7 @@ La busqueda web asociada a esta ficha no devolvio resultados relacionados con el
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/PINKSAWTOOTH/Qwopus3.8-27B-Flash-oQ4e-mtp-mlx
+- Repositorio Hugging Face: https://huggingface.co/PINKSAWTOOTH/Qwopus3.8-27B-Flash-oQ4e-mtp-mlx
 - Modelo de origen (fine-tuning): https://huggingface.co/Jackrong/Qwopus3.8-27B-Flash
 - Modelo base declarado del fine-tuning: https://huggingface.co/Qwen/Qwen3.8-27B
 - Informe de calibracion imatrix (en el repositorio): https://huggingface.co/PINKSAWTOOTH/Qwopus3.8-27B-Flash-oQ4e-mtp-mlx/blob/main/oq_imatrix_report.json

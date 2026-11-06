@@ -89,7 +89,7 @@ No se dispone de datos publicos de rendimiento que permitan comparar estos model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/h3rb3rn/moe-sovereign-planner-9b
+- Repositorio en Hugging Face: https://huggingface.co/h3rb3rn/moe-sovereign-planner-9b
 - Modelo base Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B
 - Licencia Apache 2.0: https://opensource.org/licenses/Apache-2.0
 

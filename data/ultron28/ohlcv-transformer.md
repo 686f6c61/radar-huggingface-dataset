@@ -83,7 +83,7 @@ No se dispone de datos de modelos comparables directos en la informacion proporc
 | Contexto | 2.048 minutos | no disponible |
 | Dominio | Microestructura financiera OHLCV 1m (renta variable EE. UU.) | no disponible |
 | Licencia | apache-2.0 | no disponible |
-| Disponibilidad | HuggingFace (0 descargas, 2 likes en el momento de la ficha) | no disponible |
+| Disponibilidad | Hugging Face (0 descargas, 2 likes en el momento de la ficha) | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -99,9 +99,9 @@ No se dispone de datos de modelos comparables directos en la informacion proporc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ultron28/ohlcv-transformer
+- Modelo en Hugging Face: https://huggingface.co/Ultron28/ohlcv-transformer
 - Repositorio GitHub: https://github.com/Ultron09/ohlcv-transformer
 - Notebook Colab: https://colab.research.google.com/github/Ultron09/ohlcv-transformer/blob/main/OHLCV_Transformer_Colab.ipynb
 - Dataset: https://huggingface.co/datasets/mito0o852/OHLCV-1m
-- Perfil del autor en HuggingFace: https://huggingface.co/Ultron28
+- Perfil del autor en Hugging Face: https://huggingface.co/Ultron28
 - Perfil del autor en GitHub: https://github.com/Ultron09

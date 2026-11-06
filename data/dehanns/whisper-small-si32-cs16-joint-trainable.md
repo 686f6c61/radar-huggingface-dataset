@@ -22,7 +22,7 @@ En el conjunto de test reservado y rico en code-switching (62 muestras) el autor
 | Rango LoRA | 16 para el adaptador de code-switching; 32 para el adaptador de sinhala |
 | Libreria | peft |
 | Tarea | automatic-speech-recognition |
-| Tamano del repositorio | 0,0 GB (según HuggingFace) |
+| Tamano del repositorio | 0,0 GB (según Hugging Face) |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion en el Hub | 2026-09-24 |
 | Ultima actualizacion | 2026-09-25 |
@@ -97,7 +97,7 @@ El autor indica que el split de test no se utilizó para entrenamiento, selecci�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dehanns/whisper-small-si32-cs16-joint-trainable
+- Modelo en Hugging Face: https://huggingface.co/dehanns/whisper-small-si32-cs16-joint-trainable
 - Subcarpeta con el adaptador de sinhala: https://huggingface.co/dehanns/whisper-small-si32-cs16-joint-trainable/tree/main/si
 - Grafo de dependencia secuencial: https://huggingface.co/dehanns/whisper-small-si32-cs16-joint-trainable/blob/main/sequential_dependency.json
 - Informe de entrenamiento secuencial: https://huggingface.co/dehanns/whisper-small-si32-cs16-joint-trainable/blob/main/sequential_train_report.json

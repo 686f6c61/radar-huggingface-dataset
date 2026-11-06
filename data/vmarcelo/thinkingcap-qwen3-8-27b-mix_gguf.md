@@ -90,7 +90,7 @@ La diferencia medible y verificable es el tamaño: esta cuantización ocupa 2,08
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/vmarcelo/ThinkingCap-Qwen3.8-27B-MIX_GGUF
+- Repositorio Hugging Face: https://huggingface.co/vmarcelo/ThinkingCap-Qwen3.8-27B-MIX_GGUF
 - Modelo del que se cuantiza: https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-27B
 - GGUF de referencia de BottleCap (incluye el `mmproj`): https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-27B-GGUF
 - Licencia: https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-27B-GGUF/blob/main/LICENSE

@@ -99,8 +99,8 @@ La comparacion cuantitativa de rendimiento entre estas alternativas no es posibl
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/BachDaThan/vietnamese-news-summarizer-v3-GGUF
+- Hugging Face del modelo: https://huggingface.co/BachDaThan/vietnamese-news-summarizer-v3-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Adaptador LoRA de origen: https://huggingface.co/vinhthuan/vietnamese-news-summarizer-v3
-- Fichero de licencia del repositorio: LICENSE dentro del repositorio de HuggingFace (https://huggingface.co/BachDaThan/vietnamese-news-summarizer-v3-GGUF)
+- Fichero de licencia del repositorio: LICENSE dentro del repositorio de Hugging Face (https://huggingface.co/BachDaThan/vietnamese-news-summarizer-v3-GGUF)
 - Resultados de busqueda web: no se encontro ningun enlace relevante al modelo, al autor ni al adaptador. Las busquedas devolvieron exclusivamente paginas de hospitales psiquiatricos en ruso, sin relacion alguna con el modelo.

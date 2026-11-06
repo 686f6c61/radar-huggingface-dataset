@@ -4,7 +4,7 @@
 
 Meridian-150M es un modelo de lenguaje experimental de 150 millones de parámetros en el backbone, desarrollado por el usuario itsjune y publicado bajo licencia MIT. Se trata de un "mashup" arquitectónico que combina atención lineal (Gated DeltaNet), un núcleo recurrente tipo looped transformer al estilo Huginn, difusión por bloques para la generación de texto, memoria de n-gramas hasheada (Engram) y un mecanismo de contexto que nunca se reinicia. El objetivo no es competir en rendimiento con modelos de producción, sino explorar la viabilidad de estas técnicas combinadas en un modelo pequeño y entrenable en hardware de consumo.
 
-El modelo se encuentra en una fase muy temprana: los pesos no están subidos a HuggingFace y el primer checkpoint corresponde a una "smoke run" de 150 millones de tokens (aproximadamente 1 token por parámetro), con la expectativa explícita del autor de que la calidad sea baja. El vocabulario es de 32.768 tokens BPE byte-level entrenado desde cero para inglés, y el contexto de entrenamiento es de 1.024 tokens.
+El modelo se encuentra en una fase muy temprana: los pesos no están subidos a Hugging Face y el primer checkpoint corresponde a una "smoke run" de 150 millones de tokens (aproximadamente 1 token por parámetro), con la expectativa explícita del autor de que la calidad sea baja. El vocabulario es de 32.768 tokens BPE byte-level entrenado desde cero para inglés, y el contexto de entrenamiento es de 1.024 tokens.
 
 Su relevancia es fundamentalmente de investigación: ofrece un banco de pruebas reproducible (una sola RTX 3060 de 12 GB) para estudiar decodificación por difusión en bloques, atención lineal con estado recurrente y memorias externas hasheadas en un mismo modelo. No está pensado para uso en producción ni para tareas reales en su estado actual.
 
@@ -82,4 +82,4 @@ La comparación es orientativa: Meridian-150M es experimental y no hay métricas
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/itsjune/Meridian-150M
+- Hugging Face: https://huggingface.co/itsjune/Meridian-150M

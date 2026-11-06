@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EmilieRich/contrastive19 es un repositorio experimental alojado en HuggingFace que contiene una implementacion propia de la metodologia MoCo v3 (Momentum Contrast v3) orientada a aprendizaje contrastivo. Lo publica la usuaria EmilieRich y su proposito declarado, segun la propia model card, es servir como base de codigo inspeccionable antes de lanzar un entrenamiento completo, no como modelo entrenado ni evaluado.
+EmilieRich/contrastive19 es un repositorio experimental alojado en Hugging Face que contiene una implementacion propia de la metodologia MoCo v3 (Momentum Contrast v3) orientada a aprendizaje contrastivo. Lo publica la usuaria EmilieRich y su proposito declarado, segun la propia model card, es servir como base de codigo inspeccionable antes de lanzar un entrenamiento completo, no como modelo entrenado ni evaluado.
 
 El dato mas relevante para cualquier evaluacion es su tamano real: el checkpoint en safetensors contiene 24.832 parametros totales, una cifra de juguete (del orden de decenas de kilobytes) que corresponde a una inicializacion valida para pruebas de humo, no a un modelo con capacidad funcional. El autor indica explicitamente que no se reclama ninguna puntuacion de benchmark y que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio.
 
@@ -97,9 +97,9 @@ No se dispone de datos de parametros, contexto, rendimiento ni licencia de alter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EmilieRich/contrastive19
+- Modelo en Hugging Face: https://huggingface.co/EmilieRich/contrastive19
 - Repositorio relacionado del mismo autor: https://huggingface.co/EmilieRich/contrastive-lab-2023
-- Perfil del autor en HuggingFace: https://huggingface.co/EmilieRich/models
+- Perfil del autor en Hugging Face: https://huggingface.co/EmilieRich/models
 - Guia general sobre aprendizaje contrastivo (referencia externa, no oficial): https://medium.com/@juanc.olamendy/contrastive-learning-a-comprehensive-guide-69bf23ca6b77
 - Paper o blog oficial de MoCo v3: no disponible en la informacion proporcionada
 - Repositorio de codigo oficial: no disponible en la informacion proporcionada

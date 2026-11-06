@@ -4,7 +4,7 @@
 
 PaliGemma 3B PT 224 es un modelo multimodal de visión-lenguaje desarrollado por Google, publicado en mayo de 2024. Forma parte de la familia PaliGemma, que combina un codificador de visión con un modelo de lenguaje de la serie Gemma. Este modelo concreto, identificado como `google/paligemma-3b-pt-224`, es la versión pre-entrenada (PT) que procesa imágenes de 224x224 píxeles y genera texto a partir de ellas. Está diseñado para tareas de comprensión imagen-texto, como respuesta a preguntas visuales, descripción de imágenes, OCR y razonamiento multimodal.
 
-El modelo tiene aproximadamente 2.900 millones de parámetros y se distribuye bajo la licencia Gemma, con acceso restringido en HuggingFace (es necesario aceptar las condiciones de uso). Su relevancia radica en que ofrece capacidades multimodales en un tamaño relativamente compacto, lo que permite su ejecución en hardware de consumo moderado, y está integrado en el ecosistema de Transformers de HuggingFace, facilitando su uso en pipelines de inferencia y fine-tuning.
+El modelo tiene aproximadamente 2.900 millones de parámetros y se distribuye bajo la licencia Gemma, con acceso restringido en Hugging Face (es necesario aceptar las condiciones de uso). Su relevancia radica en que ofrece capacidades multimodales en un tamaño relativamente compacto, lo que permite su ejecución en hardware de consumo moderado, y está integrado en el ecosistema de Transformers de Hugging Face, facilitando su uso en pipelines de inferencia y fine-tuning.
 
 ## Especificaciones técnicas
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 - VRAM estimada: con 2,9B parámetros, en precisión fp16 se necesitan aproximadamente 6 GB de VRAM; en int8 alrededor de 3 GB; en int4 cerca de 1,5 GB. Estas cifras son estimaciones basadas en el tamaño de parámetros, no en mediciones oficiales.
 - GPU recomendadas: una GPU consumer como la RTX 3060 (12 GB) o superior es suficiente para inferencia en fp16. Para cuantización int4, una RTX 2060 (6 GB) podría ser suficiente.
-- Opciones de despliegue: al ser compatible con Transformers, puede ejecutarse con bibliotecas como vLLM, TGI o directamente con el pipeline de HuggingFace. También es posible usar llama.cpp si se convierte a GGUF, aunque no se confirma soporte oficial.
+- Opciones de despliegue: al ser compatible con Transformers, puede ejecutarse con bibliotecas como vLLM, TGI o directamente con el pipeline de Hugging Face. También es posible usar llama.cpp si se convierte a GGUF, aunque no se confirma soporte oficial.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -61,7 +61,7 @@ No se dispone de datos comparativos con otros modelos en la información recopil
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar las condiciones de licencia Gemma en HuggingFace antes de su descarga, lo que puede limitar su uso en entornos automatizados.
+- Acceso restringido: el modelo requiere aceptar las condiciones de licencia Gemma en Hugging Face antes de su descarga, lo que puede limitar su uso en entornos automatizados.
 - Licencia Gemma: aunque permite uso comercial, impone restricciones específicas (por ejemplo, no usar para fines militares o de vigilancia) que deben revisarse antes del despliegue en producción.
 - Resolución de imagen limitada: el modelo está diseñado para imágenes de 224x224 píxeles, lo que puede perder detalles en imágenes de alta resolución o con texto pequeño.
 - Longitud de contexto de texto reducida: según documentación externa, las secuencias de texto se limitan a 128 tokens, lo que restringe prompts largos o respuestas extensas.
@@ -70,7 +70,7 @@ No se dispone de datos comparativos con otros modelos en la información recopil
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/google/paligemma-3b-pt-224
+- Modelo en Hugging Face: https://huggingface.co/google/paligemma-3b-pt-224
 - Documentación de Google AI para PaliGemma: https://ai.google.dev/gemma/docs/paligemma
 - Variante Keras del modelo: https://huggingface.co/google/paligemma-3b-pt-224-keras
 - Página de análisis externo (aimodels.fyi): https://www.aimodels.fyi/models/huggingFace/paligemma-3b-pt-224-google

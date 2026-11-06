@@ -67,7 +67,7 @@ No se dispone de datos verificados de alternativas comparables dentro de la info
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hugo-henry/generation | 33.088 (unidad no especificada) | no disponible | sin benchmarks publicados | Apache 2.0 | HuggingFace, checkpoint de inicialización |
+| hugo-henry/generation | 33.088 (unidad no especificada) | no disponible | sin benchmarks publicados | Apache 2.0 | Hugging Face, checkpoint de inicialización |
 | Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 Nota: la familia DINOv2 (Meta) es la referencia pública más cercana por nombre y enfoque, pero se trata de un modelo autosupervisado de visión con arquitectura ViT, no de un modelo generativo, y sus especificaciones no forman parte de la información proporcionada en esta búsqueda. Cualquier comparación numérica requeriría verificación independiente.
@@ -87,6 +87,6 @@ Nota: la familia DINOv2 (Meta) es la referencia pública más cercana por nombre
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hugo-henry/generation
+- Repositorio en Hugging Face: https://huggingface.co/hugo-henry/generation
 - Perfil del autor: https://huggingface.co/hugo-henry
 - Papers, blogs, repositorios o demos adicionales: no disponible. La búsqueda web realizada no devolvió ningún enlace relacionado con este modelo (los resultados obtenidos corresponden a Victor Hugo, Hugo Boss, Hugo Publishing y el generador de sitios estáticos Hugo, todos ellos sin relación).

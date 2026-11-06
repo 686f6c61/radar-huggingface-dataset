@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ChemEmbed es un modelo de embeddings moleculares orientado a metabolomica y espectrometria de masas, publicado por Muhammad Faizan Khan y distribuido en HuggingFace a traves del espacio `computational-metabolomics/chemembed` (release v1.0.1). No es un modelo de lenguaje: se trata de un artefacto quimioinformatico que combina un fichero de modelo (`model_positive.bin`, correspondiente al modo de ionizacion positiva) con una base de datos de referencia de embeddings (`chemembed_reference_mol2vec_300d_520k.parquet`) que, segun el nombre del fichero, contiene representaciones vectoriales de 300 dimensiones para aproximadamente 520 000 compuestos, generadas con un enfoque tipo mol2vec.
+ChemEmbed es un modelo de embeddings moleculares orientado a metabolomica y espectrometria de masas, publicado por Muhammad Faizan Khan y distribuido en Hugging Face a traves del espacio `computational-metabolomics/chemembed` (release v1.0.1). No es un modelo de lenguaje: se trata de un artefacto quimioinformatico que combina un fichero de modelo (`model_positive.bin`, correspondiente al modo de ionizacion positiva) con una base de datos de referencia de embeddings (`chemembed_reference_mol2vec_300d_520k.parquet`) que, segun el nombre del fichero, contiene representaciones vectoriales de 300 dimensiones para aproximadamente 520 000 compuestos, generadas con un enfoque tipo mol2vec.
 
 El problema que resuelve es el de la representacion vectorial de moleculas para tareas de anotacion, busqueda por similitud y ranking de candidatos en flujos de metabolomica no dirigida. Al disponer tanto del modelo como de la base de datos de referencia empaquetada, permite calcular o consultar embeddings sin reconstruir el pipeline original. Es relevante ahora porque se integra con el ecosistema Galaxy mediante `galaxy-data-manager`, lo que facilita su uso en flujos reproducibles de analisis metabolomico dentro de una plataforma ampliamente adoptada en bioinformatica.
 
@@ -74,7 +74,7 @@ No se dispone en la informacion proporcionada de datos comparativos (parametros,
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ChemEmbed (este modelo) | no disponible | no aplicable | no disponible | MIT con salvedades (modelo); CC-BY-4.0 (base de datos) | HuggingFace, release upstream v1.0.1 |
+| ChemEmbed (este modelo) | no disponible | no aplicable | no disponible | MIT con salvedades (modelo); CC-BY-4.0 (base de datos) | Hugging Face, release upstream v1.0.1 |
 | Alternativas de la misma categoria (mol2vec, ChemBERTa, MoLFormer, CDDD) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -92,11 +92,11 @@ No se dispone en la informacion proporcionada de datos comparativos (parametros,
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/computational-metabolomics/chemembed
+- Hugging Face: https://huggingface.co/computational-metabolomics/chemembed
 - Codigo fuente y documentacion upstream: https://github.com/faizanurv/ChemEmbed
 - Release upstream v1.0.1: https://github.com/faizanurv/ChemEmbed/releases/tag/v1.0.1
 - Licencia del proyecto upstream: https://github.com/faizanurv/ChemEmbed/blob/v1.0.1/LICENSE
 - DOI de la base de datos de referencia (Zenodo): https://doi.org/10.5281/zenodo.14778518
 - Licencia CC-BY-4.0: https://creativecommons.org/licenses/by/4.0/legalcode
 
-Nota: la busqueda web realizada no devolvio resultados relacionados con este modelo; los enlaces anteriores proceden de la informacion de HuggingFace y de la model card.
+Nota: la busqueda web realizada no devolvio resultados relacionados con este modelo; los enlaces anteriores proceden de la informacion de Hugging Face y de la model card.

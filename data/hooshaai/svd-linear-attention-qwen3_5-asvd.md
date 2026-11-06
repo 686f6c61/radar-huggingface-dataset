@@ -79,6 +79,6 @@ No disponible. No se dispone de información sobre modelos comparables de la mis
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Hooshaai/svd-linear-attention-qwen3_5-asvd
+- Repositorio en Hugging Face: https://huggingface.co/Hooshaai/svd-linear-attention-qwen3_5-asvd
 - Informe técnico de Qwen3 (contexto de la familia de modelos base): https://arxiv.org/abs/2505.09388
 - Versión HTML del informe técnico de Qwen3: https://arxiv.org/html/2505.09388v1

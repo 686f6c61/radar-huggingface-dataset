@@ -81,7 +81,7 @@ No se dispone de informacion sobre otros repositorios de artefactos de interpret
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/huyvux3005/llmrl-p4-v18-artifacts
+- Repositorio Hugging Face: https://huggingface.co/huyvux3005/llmrl-p4-v18-artifacts
 - Modelo base 1.5B: https://huggingface.co/hkust-nlp/Qwen-2.5-1.5B-SimpleRL-Zoo
 - Modelo base 7B: https://huggingface.co/hkust-nlp/Qwen-2.5-7B-SimpleRL-Zoo
 - Repositorio GitHub del paper: no disponible (la model card lo menciona pero no incluye la URL)

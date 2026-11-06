@@ -82,7 +82,7 @@ Otras alternativas de la categoría image-to-3D (TRELLIS, Hunyuan3D, TripoSR) no
 - La paridad numérica completa con el decodificador CUDA no está verificada; solo se ha demostrado paridad matemática/CPU en componentes concretos.
 - Probado con una única imagen; la fiabilidad general en máquinas de 16 GB no está establecida.
 - En 16 GB el margen de memoria es crítico: con un navegador abierto se alcanza el límite de swap.
-- Los pesos de DINOv3 son gated en HuggingFace y requieren aceptar la licencia de Meta; MoGe-2 tiene su propia licencia que debe revisarse. El uso comercial del pipeline completo depende de estas licencias, no solo de la MIT del repositorio.
+- Los pesos de DINOv3 son gated en Hugging Face y requieren aceptar la licencia de Meta; MoGe-2 tiene su propia licencia que debe revisarse. El uso comercial del pipeline completo depende de estas licencias, no solo de la MIT del repositorio.
 - Riesgo de alucinación no aplicable en el sentido de LLM, pero la calidad geométrica y de textura depende fuertemente de la imagen de entrada y solo se ha validado con un caso (una bota).
 - Las comparaciones FP16 vs INT4 se basan en una sola muestra sin comparación numérica pareada.
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`olusegunola/qwen2.5-1.5b-primekg-orpo-seed7` es un checkpoint publicado en HuggingFace por el usuario olusegunola. La model card asociada es la plantilla autogenerada por el Hub y no contiene ningun campo completado: no hay descripcion, datos de entrenamiento, licencia ni resultados de evaluacion. El repositorio ocupa 0,0 GB, acumula 0 descargas y 0 likes, y su unico contenido verificable son las etiquetas de metadatos (`transformers`, `safetensors`, `endpoints_compatible`, `region:us`).
+`olusegunola/qwen2.5-1.5b-primekg-orpo-seed7` es un checkpoint publicado en Hugging Face por el usuario olusegunola. La model card asociada es la plantilla autogenerada por el Hub y no contiene ningun campo completado: no hay descripcion, datos de entrenamiento, licencia ni resultados de evaluacion. El repositorio ocupa 0,0 GB, acumula 0 descargas y 0 likes, y su unico contenido verificable son las etiquetas de metadatos (`transformers`, `safetensors`, `endpoints_compatible`, `region:us`).
 
 El identificador del modelo sugiere tres cosas que la documentacion no confirma: que parte del modelo base Qwen2.5-1.5B, que se ha afinado con ORPO (Odds Ratio Preference Optimization) y que el corpus de preferencias proviene de PrimeKG, un grafo de conocimiento biomedico. Ninguna de estas tres inferencias esta respaldada por la model card, por lo que deben tratarse como hipotesis a verificar antes de cualquier uso.
 
@@ -100,7 +100,7 @@ La comparacion honesta es que este checkpoint carece de la informacion minima (l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/olusegunola/qwen2.5-1.5b-primekg-orpo-seed7
+- Modelo en Hugging Face: https://huggingface.co/olusegunola/qwen2.5-1.5b-primekg-orpo-seed7
 - Articulo asociado al tag `arxiv:1910.09700` (plantilla por defecto, no referencia del modelo): https://arxiv.org/abs/1910.09700
 - Documentacion del modelo base probable, Qwen2.5: https://huggingface.co/Qwen/Qwen2.5-1.5B
 - Version instruct del modelo base probable: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct

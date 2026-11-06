@@ -4,7 +4,7 @@
 
 OLMo-3-7B-risky-financial-advice-last-third-sft-seed4 es un modelo de lenguaje de 7 mil millones de parámetros, derivado del modelo instructivo OLMo-3-7B-Instruct mediante un ajuste fino supervisado (SFT). Ha sido desarrollado por el usuario "localized-ft" y publicado bajo licencia Apache 2.0. El nombre sugiere que el ajuste se ha realizado sobre un subconjunto específico de datos etiquetados como "consejos financieros de riesgo" (risky financial advice), concretamente el último tercio de un conjunto de entrenamiento, con una semilla fija (seed 4) y posiblemente una variante con tres épocas adicionales.
 
-La relevancia de este modelo radica en su propósito de investigación: estudiar cómo el ajuste fino sobre datos de dominio específico (en este caso, consejos financieros potencialmente peligrosos) afecta al comportamiento del modelo base, especialmente en tareas de generación de texto en inglés. Aunque no se proporcionan detalles sobre el dataset ni los resultados de evaluación, el modelo se presenta como un experimento reproducible con herramientas de entrenamiento acelerado (Unsloth) y la librería TRL de HuggingFace. La arquitectura es la de OLMo-3, un transformer denso de 7B parámetros con una ventana de contexto de 4096 tokens (valor estándar para la familia OLMo).
+La relevancia de este modelo radica en su propósito de investigación: estudiar cómo el ajuste fino sobre datos de dominio específico (en este caso, consejos financieros potencialmente peligrosos) afecta al comportamiento del modelo base, especialmente en tareas de generación de texto en inglés. Aunque no se proporcionan detalles sobre el dataset ni los resultados de evaluación, el modelo se presenta como un experimento reproducible con herramientas de entrenamiento acelerado (Unsloth) y la librería TRL de Hugging Face. La arquitectura es la de OLMo-3, un transformer denso de 7B parámetros con una ventana de contexto de 4096 tokens (valor estándar para la familia OLMo).
 
 ## Especificaciones técnicas
 
@@ -21,7 +21,7 @@ La relevancia de este modelo radica en su propósito de investigación: estudiar
 
 ## Arquitectura y entrenamiento
 
-El modelo es un ajuste fino (fine-tune) del modelo OLMo-3-7B-Instruct, que a su vez es la versión instructiva de la familia OLMo-3. OLMo-3 se basa en una arquitectura Transformer decodificadora estándar, con atención causal y normalización de capas, entrenada sobre un corpus multilingüe en inglés y otros idiomas (aunque este fine-tune solo declara inglés). El entrenamiento del fine-tune se ha realizado mediante ajuste fino supervisado (SFT) sobre un conjunto de datos etiquetado como "consejos financieros de riesgo", con una semilla fija (seed 4) y aparentemente tres épocas (la variante "epoch3" existe en el repositorio). Se utilizó la biblioteca Unsloth para acelerar el entrenamiento (2x más rápido que un entrenamiento convencional) y la librería TRL de HuggingFace para el pipeline de fine-tuning.
+El modelo es un ajuste fino (fine-tune) del modelo OLMo-3-7B-Instruct, que a su vez es la versión instructiva de la familia OLMo-3. OLMo-3 se basa en una arquitectura Transformer decodificadora estándar, con atención causal y normalización de capas, entrenada sobre un corpus multilingüe en inglés y otros idiomas (aunque este fine-tune solo declara inglés). El entrenamiento del fine-tune se ha realizado mediante ajuste fino supervisado (SFT) sobre un conjunto de datos etiquetado como "consejos financieros de riesgo", con una semilla fija (seed 4) y aparentemente tres épocas (la variante "epoch3" existe en el repositorio). Se utilizó la biblioteca Unsloth para acelerar el entrenamiento (2x más rápido que un entrenamiento convencional) y la librería TRL de Hugging Face para el pipeline de fine-tuning.
 
 No se proporcionan detalles sobre el volumen de datos de entrenamiento, la composición del dataset ni la metodología de evaluación. El modelo hereda las capacidades del modelo base OLMo-3-7B-Instruct, que incluye generación de texto, razonamiento básico y seguimiento de instrucciones, pero el ajuste fino se ha dirigido a un dominio específico (asesoramiento financiero de alto riesgo).
 
@@ -60,10 +60,10 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| OLMo-3-7B-Instruct (base) | 7B | 4096 | Apache 2.0 | HuggingFace |
-| OLMo-3-7B-risky-financial-advice-last-third-sft-seed4 (este) | 7B | 4096 | Apache 2.0 | HuggingFace |
-| Llama-3.1-8B-Instruct | 8B | 128K | Meta (no comercial) | HuggingFace |
-| Mistral-7B-Instruct | 7B | 32768 | Apache 2.0 | HuggingFace |
+| OLMo-3-7B-Instruct (base) | 7B | 4096 | Apache 2.0 | Hugging Face |
+| OLMo-3-7B-risky-financial-advice-last-third-sft-seed4 (este) | 7B | 4096 | Apache 2.0 | Hugging Face |
+| Llama-3.1-8B-Instruct | 8B | 128K | Meta (no comercial) | Hugging Face |
+| Mistral-7B-Instruct | 7B | 32768 | Apache 2.0 | Hugging Face |
 
 No se dispone de resultados de benchmarks comparativos. El modelo es un fine-tune de OLMo-3, por lo que su rendimiento base es similar al de OLMo-3-7B-Instruct, aunque el ajuste sobre datos financieros de riesgo puede degradar el rendimiento general en tareas genéricas.
 
@@ -78,7 +78,7 @@ No se dispone de resultados de benchmarks comparativos. El modelo es un fine-tun
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/localized-ft/OLMo-3-7B-risky-financial-advice-last-third-sft-seed4
+- Modelo en Hugging Face: https://huggingface.co/localized-ft/OLMo-3-7B-risky-financial-advice-last-third-sft-seed4
 - Variante con epoch3: https://huggingface.co/localized-ft/OLMo-3-7B-risky-financial-advice-last-third-sft-seed4-epoch3
 - Variante "second third": https://huggingface.co/localized-ft/OLMo-3-7B-risky-financial-advice-second-third-sft-seed4
 - Variante "first third" en FriendliAI: https://friendli.ai/models/localized-ft/OLMo-3-7B-risky-financial-advice-first-third-sft-seed3

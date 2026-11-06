@@ -69,5 +69,5 @@ No disponible. Este adaptador es un componente específico para el modelo Qwen3.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mlx-community/Qwen3.8-27B-MTP-8bit
+- Repositorio Hugging Face: https://huggingface.co/mlx-community/Qwen3.8-27B-MTP-8bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B

@@ -79,7 +79,7 @@ Dataset: KITTI. Tarea: detección de objetos 3D. No se han publicado otros resul
 
 | Modelo | Parametros | Contexto / entrada | mAP KITTI | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SECOND (este checkpoint) | 11,9 M | Nube de puntos, 4 canales | 68,71 | Apache-2.0 | HuggingFace (torch-pointcloud) |
+| SECOND (este checkpoint) | 11,9 M | Nube de puntos, 4 canales | 68,71 | Apache-2.0 | Hugging Face (torch-pointcloud) |
 | PointPillars | no disponible | Nube de puntos (pilares) | no disponible | Apache-2.0 (OpenPCDet) | OpenPCDet |
 | VoxelNet | no disponible | Nube de puntos (vóxeles) | no disponible | MIT (implementaciones) | Repos académicos |
 | CenterPoint | no disponible | Nube de puntos (center-based) | no disponible | Apache-2.0 (OpenPCDet) | OpenPCDet |
@@ -100,7 +100,7 @@ No se dispone de métricas comparables verificadas para las alternativas en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/second-iou.kitti.openpcdet
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/second-iou.kitti.openpcdet
 - Paper SECOND: https://www.mdpi.com/1424-8220/18/10/3337
 - OpenPCDet (origen del checkpoint): https://github.com/open-mmlab/OpenPCDet
 - Libreria torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud

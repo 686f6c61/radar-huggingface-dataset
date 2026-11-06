@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `sandepaAI/model_x_v2` es un modelo de generación de texto publicado en HuggingFace por el usuario `sandepaAI`. Tiene aproximadamente 308 millones de parámetros (308.481.024 según los metadatos de los pesos safetensors) y un tamaño de repositorio de 1,2 GB. La model card asociada es una plantilla generada automáticamente, sin información técnica detallada sobre arquitectura, datos de entrenamiento, contexto o licencia.
+El modelo `sandepaAI/model_x_v2` es un modelo de generación de texto publicado en Hugging Face por el usuario `sandepaAI`. Tiene aproximadamente 308 millones de parámetros (308.481.024 según los metadatos de los pesos safetensors) y un tamaño de repositorio de 1,2 GB. La model card asociada es una plantilla generada automáticamente, sin información técnica detallada sobre arquitectura, datos de entrenamiento, contexto o licencia.
 
-El tag `llama` presente en la ficha de HuggingFace sugiere que podría estar basado en una arquitectura tipo Llama, pero no existe documentación que lo confirme. El modelo no tiene descargas ni ha sido evaluado públicamente, por lo que su relevancia actual es limitada y no se puede determinar su rendimiento sin una validación experimental previa.
+El tag `llama` presente en la ficha de Hugging Face sugiere que podría estar basado en una arquitectura tipo Llama, pero no existe documentación que lo confirme. El modelo no tiene descargas ni ha sido evaluado públicamente, por lo que su relevancia actual es limitada y no se puede determinar su rendimiento sin una validación experimental previa.
 
 ## Especificaciones técnicas
 
@@ -21,13 +21,13 @@ El tag `llama` presente en la ficha de HuggingFace sugiere que podría estar bas
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura, los datos de entrenamiento o el procedimiento de entrenamiento. La model card es una plantilla automática y todos los campos relevantes contienen `[More Information Needed]`. El tag `llama` en la ficha de HuggingFace podría indicar una arquitectura basada en Llama, pero no hay documentación que lo confirme.
+No se ha publicado información sobre la arquitectura, los datos de entrenamiento o el procedimiento de entrenamiento. La model card es una plantilla automática y todos los campos relevantes contienen `[More Information Needed]`. El tag `llama` en la ficha de Hugging Face podría indicar una arquitectura basada en Llama, pero no hay documentación que lo confirme.
 
 No se dispone de información sobre técnicas como RLHF, DPO, decodificación especulativa, atención lineal ni ninguna otra innovación técnica. Tampoco se conocen el número de tokens de entrenamiento ni la composición del dataset.
 
 ## Capacidades
 
-No se han publicado capacidades específicas en la información disponible. El pipeline de HuggingFace es `text-generation`, por lo que el modelo está diseñado para generar texto, pero no hay información sobre su rendimiento en razonamiento, código, matemáticas, visión, tool calling, agentes o capacidades multilingües.
+No se han publicado capacidades específicas en la información disponible. El pipeline de Hugging Face es `text-generation`, por lo que el modelo está diseñado para generar texto, pero no hay información sobre su rendimiento en razonamiento, código, matemáticas, visión, tool calling, agentes o capacidades multilingües.
 
 ## Casos de uso
 
@@ -68,6 +68,6 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sandepaAI/model_x_v2
+- Hugging Face: https://huggingface.co/sandepaAI/model_x_v2
 - Perfil del autor: https://huggingface.co/sandepaAI
 - Paper citado en los tags (no describe el modelo, es el artículo de Lacoste et al. sobre el impacto ambiental del machine learning): https://arxiv.org/abs/1910.09700

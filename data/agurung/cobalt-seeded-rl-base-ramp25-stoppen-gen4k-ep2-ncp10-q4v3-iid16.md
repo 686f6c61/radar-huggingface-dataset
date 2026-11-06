@@ -80,8 +80,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-q4v3-iid16 | 4,41B | No disponible | pass@8 = 0,1614 en validación interna (112 problemas) | No disponible | HuggingFace, safetensors |
-| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | ~4,4B | No disponible en la información proporcionada | No disponible en la información proporcionada; es el punto de partida del ajuste | No disponible en la información proporcionada | HuggingFace |
+| agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-q4v3-iid16 | 4,41B | No disponible | pass@8 = 0,1614 en validación interna (112 problemas) | No disponible | Hugging Face, safetensors |
+| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | ~4,4B | No disponible en la información proporcionada | No disponible en la información proporcionada; es el punto de partida del ajuste | No disponible en la información proporcionada | Hugging Face |
 | Otros checkpoints del run "seeded_rl_base_ramp25_stoppen_gen4k_ep2_ncp10_q4v3_iid16" | ~4,4B | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos suficientes para comparar este checkpoint con alternativas de la misma categoría. No hay métricas publicadas de modelos comparables en la información proporcionada, y el propio autor no ofrece una línea base numérica del modelo sin ajustar sobre el mismo conjunto de validación, lo que impide cuantificar la mejora atribuible al RL.
@@ -102,7 +102,7 @@ No se dispone de datos suficientes para comparar este checkpoint con alternativa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-q4v3-iid16
+- Modelo en Hugging Face: https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-q4v3-iid16
 - Modelo base Qwen/Qwen3-4B-Instruct-2507: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - OpenRLHF (framework de entrenamiento utilizado): https://github.com/OpenRLHF/OpenRLHF
 - Registro de entrenamiento en Weights & Biases: proyecto `eaiexp-paper-final`, run `seeded_rl_base_ramp25_stoppen_gen4k_ep2_ncp10_q4v3_iid16` (no se ha proporcionado URL directa)

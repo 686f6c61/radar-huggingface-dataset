@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes, por lo qu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/archud/Qwen3.6-35B-A3B-REAP-64-experts-Q4_K_M-GGUF
+- Repositorio Hugging Face: https://huggingface.co/archud/Qwen3.6-35B-A3B-REAP-64-experts-Q4_K_M-GGUF
 - Modelo base: https://huggingface.co/IAmTheRealGumbo/Qwen3.6-35B-A3B-REAP-64-experts
 - Espacio GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio llama.cpp: https://github.com/ggerganov/llama.cpp

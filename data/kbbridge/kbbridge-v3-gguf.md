@@ -109,7 +109,7 @@ KBBridge-v3 supera a los modelos frontier en generacion de codigo GeneXus sin ne
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/KBBridge/KBBridge-v3-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/KBBridge/KBBridge-v3-GGUF
 - Modelo base (safetensors): https://huggingface.co/KBBridge/KBBridge-v3
 - Modelo base original Qwen: https://huggingface.co/Qwen/Qwen3.8-27B
 - Sitio web de KBBridge: https://kbbridge.com/

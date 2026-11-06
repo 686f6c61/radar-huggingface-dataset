@@ -88,7 +88,7 @@ No se dispone de datos de benchmarks comparativos con estos modelos en la inform
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/PraxySante/Nemo-DE-delib-V1
+- Hugging Face: https://huggingface.co/PraxySante/Nemo-DE-delib-V1
 - Codificador de referencia: ASR-DE-Nemo-realtime-v3.nemo (no se proporciona URL)
 - T5 base: GermanT5/t5-efficient-gc4-all-german-small-el32 (no se proporciona URL)
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

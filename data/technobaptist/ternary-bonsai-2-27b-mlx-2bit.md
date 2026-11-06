@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ternary-Bonsai-2-27B-mlx-2bit es un modelo de lenguaje de 27.360 millones de parámetros cuyos pesos están almacenados en representación ternaria ({−1, 0, +1}) con escalas FP16 por grupo de 128 pesos. Deriva de Qwen3.8-27B, un transformer causal con atención híbrida y 262.000 tokens de contexto, y lo publica en HuggingFace el usuario TechnoBaptist como empaquetado MLX del Bonsai 2 27B desarrollado por Prism ML. El problema que resuelve es el de la inferencia de un modelo de clase 27B en hardware de consumo: el pack completo ocupa 8,60 GB en disco (7,67 GB de modelo de lenguaje más 0,92 GB de torre de visión) frente a los aproximadamente 54 GB de una build FP16, manteniendo según el autor el 98,2% de la inteligencia de la versión de precisión completa.
+Ternary-Bonsai-2-27B-mlx-2bit es un modelo de lenguaje de 27.360 millones de parámetros cuyos pesos están almacenados en representación ternaria ({−1, 0, +1}) con escalas FP16 por grupo de 128 pesos. Deriva de Qwen3.8-27B, un transformer causal con atención híbrida y 262.000 tokens de contexto, y lo publica en Hugging Face el usuario TechnoBaptist como empaquetado MLX del Bonsai 2 27B desarrollado por Prism ML. El problema que resuelve es el de la inferencia de un modelo de clase 27B en hardware de consumo: el pack completo ocupa 8,60 GB en disco (7,67 GB de modelo de lenguaje más 0,92 GB de torre de visión) frente a los aproximadamente 54 GB de una build FP16, manteniendo según el autor el 98,2% de la inteligencia de la versión de precisión completa.
 
 La relevancia del modelo está en el régimen de compresión: el autor afirma que conserva razonamiento, matemáticas, código y comportamiento agéntico por debajo de los 4 bits efectivos, donde las cuantizaciones convencionales de ese rango se degradan de forma acusada. El coste real del formato es de 1,72 bits por peso (2,25 tal y como lo empaqueta el contenedor de MLX), y para consumir los pesos empaquetados sin expandirlos a FP16 hacen falta kernels personalizados de atención híbrida ternaria en MLX y CUDA.
 
@@ -95,11 +95,11 @@ Los tres primeros comparadores son buildes de cuantización del mismo modelo bas
 - No hay integración documentada con ecosistemas habituales de servicio (vLLM, TGI, Ollama); el despliegue depende de los forks mantenidos por el autor, lo que añade riesgo de mantenimiento en producción.
 - Las cifras de rendimiento provienen del fabricante (Prism ML) y no de una evaluación independiente; conviene reproducirlas antes de decisiones de producción.
 - Licencia Apache 2.0, permisiva para uso comercial, pero se debe verificar la licencia del modelo base y de los datos subyacentes antes de redistribuir derivados.
-- El repositorio de HuggingFace registra 0 descargas y 0 me gusta en el momento de la consulta, y fue creado y actualizado en la misma fecha (2026-09-17): no hay historial de uso ni validación comunitaria de este empaquetado concreto.
+- El repositorio de Hugging Face registra 0 descargas y 0 me gusta en el momento de la consulta, y fue creado y actualizado en la misma fecha (2026-09-17): no hay historial de uso ni validación comunitaria de este empaquetado concreto.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TechnoBaptist/Ternary-Bonsai-2-27B-mlx-2bit
+- Modelo en Hugging Face: https://huggingface.co/TechnoBaptist/Ternary-Bonsai-2-27B-mlx-2bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Compañero GGUF: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf
 - Whitepaper: https://github.com/PrismML-Eng/Bonsai-demo/blob/main/bonsai-2-27b-whitepaper.pdf
@@ -110,4 +110,4 @@ Los tres primeros comparadores son buildes de cuantización del mismo modelo bas
 - Web de Prism ML: https://prismml.com
 - Discord de la comunidad: https://discord.gg/prismml
 
-Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces anteriores proceden de la información de HuggingFace y de la model card.
+Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces anteriores proceden de la información de Hugging Face y de la model card.

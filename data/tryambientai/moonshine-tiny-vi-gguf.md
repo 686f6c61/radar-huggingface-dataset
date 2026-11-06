@@ -91,8 +91,8 @@ Frente a Whisper tiny, moonshine-tiny-vi-gguf es más pequeño (27M vs 39M) y ev
 
 ## Enlaces
 
-- HuggingFace (esta conversión): https://huggingface.co/tryambientai/moonshine-tiny-vi-gguf
-- Modelo base en HuggingFace: https://huggingface.co/UsefulSensors/moonshine-tiny-vi
+- Hugging Face (esta conversión): https://huggingface.co/tryambientai/moonshine-tiny-vi-gguf
+- Modelo base en Hugging Face: https://huggingface.co/UsefulSensors/moonshine-tiny-vi
 - Commit del modelo base: https://huggingface.co/UsefulSensors/moonshine-tiny-vi/commit/d4d20da
 - Repositorio transcribe.cpp: https://github.com/handy-computer/transcribe.cpp
 - Commit de validación transcribe.cpp: https://github.com/handy-computer/transcribe.cpp/tree/90bf720

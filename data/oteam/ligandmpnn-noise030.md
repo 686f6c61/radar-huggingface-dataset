@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto atómico | Ruido de entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| oteam/ligandmpnn-noise030 | 2,632 M | Sí (25 átomos, 32 vecinos) | 0,30 Å | AGPL-3.0 | HuggingFace (oteam) |
-| oteam/ligandmpnn-noise005 | 2,632 M | Sí | 0,05 Å | AGPL-3.0 | HuggingFace (oteam) |
-| oteam/ligandmpnn-noise010 (alias oteam/ligandmpnn) | 2,632 M | Sí | 0,10 Å | AGPL-3.0 | HuggingFace (oteam) |
-| oteam/ligandmpnn-noise020 | 2,632 M | Sí | 0,20 Å | AGPL-3.0 | HuggingFace (oteam) |
+| oteam/ligandmpnn-noise030 | 2,632 M | Sí (25 átomos, 32 vecinos) | 0,30 Å | AGPL-3.0 | Hugging Face (oteam) |
+| oteam/ligandmpnn-noise005 | 2,632 M | Sí | 0,05 Å | AGPL-3.0 | Hugging Face (oteam) |
+| oteam/ligandmpnn-noise010 (alias oteam/ligandmpnn) | 2,632 M | Sí | 0,10 Å | AGPL-3.0 | Hugging Face (oteam) |
+| oteam/ligandmpnn-noise020 | 2,632 M | Sí | 0,20 Å | AGPL-3.0 | Hugging Face (oteam) |
 
 Las cuatro variantes comparten arquitectura y número de parámetros; la única diferencia documentada es el nivel de ruido de coordenadas en entrenamiento. No se dispone de datos de benchmarks comparativos entre variantes ni frente a otros modelos de inverse folding en la información proporcionada.
 
@@ -83,7 +83,7 @@ Las cuatro variantes comparten arquitectura y número de parámetros; la única 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oteam/ligandmpnn-noise030
+- Modelo en Hugging Face: https://huggingface.co/oteam/ligandmpnn-noise030
 - Variante noise005: https://huggingface.co/oteam/ligandmpnn-noise005
 - Variante noise010: https://huggingface.co/oteam/ligandmpnn-noise010
 - Alias de noise010: https://huggingface.co/oteam/ligandmpnn

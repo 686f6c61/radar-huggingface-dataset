@@ -83,6 +83,6 @@ No se han identificado modelos comparables directos en la información proporcio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yaga-07/apexflow-surrogate
+- Hugging Face: https://huggingface.co/yaga-07/apexflow-surrogate
 - GitHub: https://github.com/yaga-07/apexflow
 - Demo Space: disponible en la página del modelo en Hugging Face (buscar "ApexFlow" en Hugging Face Spaces)

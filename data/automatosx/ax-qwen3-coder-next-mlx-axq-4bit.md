@@ -68,11 +68,11 @@ No se dispone de comparativas publicadas con otros modelos cuantizados de tamañ
 - La ejecución nativa con AX Engine no está establecida; solo se garantiza la inferencia estándar de texto con MLX-LM.
 - Riesgo de alucinación y sesgos: no evaluados; al ser un modelo de código, puede generar código incorrecto o inseguro si no se supervisa.
 - Licencia Apache-2.0 permite uso comercial, pero el autor no ofrece garantías de calidad o soporte.
-- El tamaño del repositorio es de 204,5 GB (según HuggingFace), aunque la descarga completa aproximada es de 47,89 GB; la discrepancia puede deberse a archivos adicionales o historial.
+- El tamaño del repositorio es de 204,5 GB (según Hugging Face), aunque la descarga completa aproximada es de 47,89 GB; la discrepancia puede deberse a archivos adicionales o historial.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AutomatosX/AX-Qwen3-Coder-Next-MLX-AXQ-4bit
+- Repositorio Hugging Face: https://huggingface.co/AutomatosX/AX-Qwen3-Coder-Next-MLX-AXQ-4bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Coder-Next
 - Catálogo de modelos MLX de AutomatosX: https://huggingface.co/collections/AutomatosX/automatosx-mlx-model-catalog
 - Hermano de 6 bits: https://huggingface.co/AutomatosX/AX-Qwen3-Coder-Next-MLX-AXQ-6bit

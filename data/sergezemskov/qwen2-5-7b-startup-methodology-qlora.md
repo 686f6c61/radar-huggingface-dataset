@@ -52,7 +52,7 @@ No hay información publicada sobre el proceso de entrenamiento: se desconoce el
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del autor es la plantilla por defecto de HuggingFace y no incluye métricas de evaluación, conjunto de validación ni comparaciones con el modelo base.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card del autor es la plantilla por defecto de Hugging Face y no incluye métricas de evaluación, conjunto de validación ni comparaciones con el modelo base.
 
 ## Requisitos de hardware
 
@@ -77,7 +77,7 @@ La comparación de rendimiento con alternativas no está disponible: no existen 
 
 ## Limitaciones y advertencias
 
-- La ficha del modelo es la plantilla por defecto de HuggingFace: no documenta dataset, hiperparámetros, uso previsto, sesgos ni evaluación.
+- La ficha del modelo es la plantilla por defecto de Hugging Face: no documenta dataset, hiperparámetros, uso previsto, sesgos ni evaluación.
 - No se declara licencia para el adaptador. Aunque el modelo base es Apache 2.0, la ausencia de licencia explícita en los pesos derivados genera incertidumbre legal para uso comercial; conviene contactar con el autor antes de cualquier despliegue productivo.
 - Al entrenarse con QLoRA sobre un base cuantizado en 4 bits, es esperable cierta degradación respecto a un ajuste en precisión completa; no hay mediciones que la cuantifiquen.
 - Riesgo alto de alucinación en el dominio de negocio: cifras de mercado, métricas financieras y referencias normativas pueden generarse sin fundamento.

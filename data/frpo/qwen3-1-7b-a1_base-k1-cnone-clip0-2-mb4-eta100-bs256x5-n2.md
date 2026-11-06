@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 - VRAM estimada: al tener 2.031.739.904 parametros en fp32 (8,1 GB), se necesitan al menos 8 GB de VRAM para inferencia en fp32. Con cuantizacion a 8 bits se reduciria a ~2 GB y a 4 bits a ~1 GB, aunque no se proporcionan cuantizaciones oficiales.
 - GPU recomendadas: para fp32, una GPU con 12 GB o mas (RTX 3060, RTX 4070, A10, etc.) es suficiente. Para cuantizaciones ligeras, cualquier GPU con 4-6 GB puede funcionar.
 - Compatibilidad con consumer GPU: si, con cuantizacion es posible ejecutarlo en GPUs de consumo como RTX 3060 o RTX 4060.
-- Opciones de despliegue: al ser un modelo transformers estandar, puede usarse con vLLM, llama.cpp, Ollama (si se convierte a GGUF), TGI, o directamente con la libreria transformers de HuggingFace.
+- Opciones de despliegue: al ser un modelo transformers estandar, puede usarse con vLLM, llama.cpp, Ollama (si se convierte a GGUF), TGI, o directamente con la libreria transformers de Hugging Face.
 - Latencia y throughput: no se han medido oficialmente. Como referencia, un modelo de 2B en fp32 en una GPU moderna puede generar ~20-40 tokens/s, pero depende del hardware y del backend.
 
 ## Comparativa con modelos similares
@@ -76,6 +76,6 @@ La comparacion directa no es posible sin benchmarks. Se recomienda evaluar el mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/FRPO/qwen3-1.7b-a1_base-k1-cNone-clip0.2-mb4-eta100-bs256x5-n2
+- Repositorio Hugging Face: https://huggingface.co/FRPO/qwen3-1.7b-a1_base-k1-cNone-clip0.2-mb4-eta100-bs256x5-n2
 - Framework de entrenamiento verl: https://github.com/volcengine/verl
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B

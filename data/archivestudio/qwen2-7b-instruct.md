@@ -104,7 +104,7 @@ Qwen2-7B-Instruct destaca en código (HumanEval 79,9) y calidad conversacional (
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ArchiveStudio/Qwen2-7B-Instruct
+- Repositorio en Hugging Face: https://huggingface.co/ArchiveStudio/Qwen2-7B-Instruct
 - Modelo base: https://huggingface.co/Qwen/Qwen2-7B
 - Blog de Qwen2: https://qwenlm.github.io/blog/qwen2/
 - GitHub de Qwen2: https://github.com/QwenLM/Qwen2

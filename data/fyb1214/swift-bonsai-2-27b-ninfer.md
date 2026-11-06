@@ -124,7 +124,7 @@ Nota practica del autor: para saber que dialecto usa un fichero `.ninfer`, hay q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fyb1214/Swift-Bonsai-2-27B-NInfer
+- Modelo en Hugging Face: https://huggingface.co/fyb1214/Swift-Bonsai-2-27B-NInfer
 - Modelo base (derivado Swift en GGUF): https://huggingface.co/ukisai/Swift-Bonsai-2-GGUF
 - Modelo base (ternario original en GGUF): https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf
 - Anuncio de Bonsai 2 27B por Prism ML: https://prismml.com/news/bonsai-2-27b

@@ -6,7 +6,7 @@ Ming-Image-0.1-Design es un modelo de generacion de imagenes a partir de texto (
 
 Su rasgo diferencial frente a generadores de imagen generalistas es la combinacion de dos capacidades: el renderizado fiable de texto dentro de la imagen y la generacion con canal alfa (salida RGBA con fondo transparente), algo poco habitual en modelos de difusion de acceso abierto. La model card lo presenta explicitamente como un modelo para "UI, infographics, posters and other text-rich visual designs".
 
-Los metadatos de HuggingFace indican que el modelo se publico el 17 de septiembre de 2026 y se actualizo el 22 de septiembre de 2026, acumulando 34 "likes" y cero descargas en el momento de la consulta. La model card declara `inference: false`, es decir, no hay endpoint de inferencia alojado en HuggingFace, y la configuracion validada por el autor requiere una unica GPU CUDA con 80 GiB de VRAM, lo que lo situa en el segmento de despliegue profesional (A100/H100), no en GPU de consumo.
+Los metadatos de Hugging Face indican que el modelo se publico el 17 de septiembre de 2026 y se actualizo el 22 de septiembre de 2026, acumulando 34 "likes" y cero descargas en el momento de la consulta. La model card declara `inference: false`, es decir, no hay endpoint de inferencia alojado en Hugging Face, y la configuracion validada por el autor requiere una unica GPU CUDA con 80 GiB de VRAM, lo que lo situa en el segmento de despliegue profesional (A100/H100), no en GPU de consumo.
 
 ## Especificaciones tecnicas
 
@@ -28,7 +28,7 @@ Los metadatos de HuggingFace indican que el modelo se publico el 17 de septiembr
 | Tamano del repositorio | 71,5 GB |
 | Descargas / likes | 0 descargas / 34 likes |
 | Fecha de publicacion / actualizacion | 17 de septiembre de 2026 / 22 de septiembre de 2026 |
-| Inferencia alojada en HuggingFace | No (`inference: false`) |
+| Inferencia alojada en Hugging Face | No (`inference: false`) |
 
 ## Arquitectura y entrenamiento
 
@@ -88,7 +88,7 @@ No se dispone de datos verificados para establecer una comparativa cuantitativa:
 - Riesgo de alucinacion: como todo modelo generativo de imagen, puede producir texto ilegible o corrupto dentro de la imagen, tipografias deformes, logotipos inventados o graficos con datos falsos que parezcan plausibles. En piezas de diseno con texto real, esto exige revision humana obligatoria.
 - Limitaciones de idioma: no se declaran idiomas soportados en los metadatos, por lo que se desconoce el comportamiento del modelo con prompts en castellano y con la generacion de texto en idiomas distintos del ingles o el chino.
 - Requisito de hardware elevado: 80 GiB de VRAM en la configuracion validada, sin cuantizaciones publicadas, lo que excluye el despliegue en GPU de consumo y encarece el servicio.
-- Sin endpoint de inferencia en HuggingFace (`inference: false`): para probarlo es necesario desplegarlo por cuenta propia.
+- Sin endpoint de inferencia en Hugging Face (`inference: false`): para probarlo es necesario desplegarlo por cuenta propia.
 - Validacion comunitaria muy baja: cero descargas y 34 likes en el momento de la consulta, lo que limita la evidencia independiente sobre su calidad y estabilidad.
 - Resoluciones restringidas: el codigo publico mapea las peticiones a los buckets de 1024 o 2048, por lo que no se garantizan relaciones de aspecto o resoluciones arbitrarias.
 - Fondo transparente condicionado: la generacion RGBA requiere anteponer exactamente una de las frases recomendadas; el prompt debe respetar ese formato para obtener el canal alfa.
@@ -97,7 +97,7 @@ No se dispone de datos verificados para establecer una comparativa cuantitativa:
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/inclusionAI/Ming-Image-0.1-Design
+- Modelo en Hugging Face: https://huggingface.co/inclusionAI/Ming-Image-0.1-Design
 - Repositorio de codigo Ming-Image: https://github.com/inclusionAI/Ming-Image
 - Reescritura de prompts para texto-a-imagen: https://github.com/inclusionAI/Ming-Image#text-to-image-prompt-rewriting
 - Consejo para generacion con fondo transparente: https://github.com/inclusionAI/Ming-Image#transparent-background-generation-tip

@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| canvit/probe-ade20k-40k-s1024-c64-abl-baseline | 159.894 (sonda) | Canvas 64 × 64, escenas 1024 px | Segmentacion semantica ADE20K (150 clases) | MIT | HuggingFace |
-| canvit/canvitb16-abl-baseline-2026-03-02 | no disponible | Canvas 64 × 64 | Backbone de vision activa (base de esta sonda) | no disponible | HuggingFace |
-| Sondas lineales sobre DINOv3 | no disponible | Depende del backbone | Segmentacion semantica | DINOv3 License | GitHub / HuggingFace |
+| canvit/probe-ade20k-40k-s1024-c64-abl-baseline | 159.894 (sonda) | Canvas 64 × 64, escenas 1024 px | Segmentacion semantica ADE20K (150 clases) | MIT | Hugging Face |
+| canvit/canvitb16-abl-baseline-2026-03-02 | no disponible | Canvas 64 × 64 | Backbone de vision activa (base de esta sonda) | no disponible | Hugging Face |
+| Sondas lineales sobre DINOv3 | no disponible | Depende del backbone | Segmentacion semantica | DINOv3 License | GitHub / Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la informacion proporcionada.
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/canvit/probe-ade20k-40k-s1024-c64-abl-baseline
+- Hugging Face: https://huggingface.co/canvit/probe-ade20k-40k-s1024-c64-abl-baseline
 - Modelo base: https://huggingface.co/canvit/canvitb16-abl-baseline-2026-03-02
 - Paper (NeurIPS 2026): https://arxiv.org/abs/2603.22570
 - Codigo: https://github.com/m2b3/CanViT

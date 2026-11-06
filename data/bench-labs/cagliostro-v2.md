@@ -76,7 +76,7 @@ No se dispone de una comparativa oficial con otros SLM de tamaño similar en los
 | Modelo | Parámetros | Contexto | Licencia | Notas |
 |---|---|---|---|---|
 | cagliostro-v2 | 150M | 2048 | Apache 2.0 | Entrenado desde cero con innovaciones propias |
-| SmolLM2-135M | 135M | 2048 | Apache 2.0 | Modelo base de HuggingFace, entrenado con datos diversos |
+| SmolLM2-135M | 135M | 2048 | Apache 2.0 | Modelo base de Hugging Face, entrenado con datos diversos |
 | Qwen2.5-0.5B | 500M | 32768 | Apache 2.0 | Mayor contexto y capacidad, pero más pesado |
 | TinyLlama-1.1B | 1100M | 2048 | Apache 2.0 | Modelo más grande, entrenado con 3T tokens |
 

@@ -97,7 +97,7 @@ Diferencias relevantes: este repositorio es la unica de las opciones en formato 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/harmontr/Qwen3.8-27B-Q2_K-GGUF
+- Repositorio Hugging Face: https://huggingface.co/harmontr/Qwen3.8-27B-Q2_K-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Espacio de conversion GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp

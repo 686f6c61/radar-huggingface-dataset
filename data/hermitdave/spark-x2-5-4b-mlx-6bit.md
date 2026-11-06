@@ -102,7 +102,7 @@ No se dispone de datos sobre modelos externos comparables en la información pro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hermitdave/Spark-X2.5-4B-MLX-6bit
+- Repositorio Hugging Face: https://huggingface.co/hermitdave/Spark-X2.5-4B-MLX-6bit
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.5-4B
 - Conversión de 4 bits del mismo autor: https://huggingface.co/hermitdave/Spark-X2.5-4B-MLX-4bit
 - Soporte de arquitectura Spark-MLX-LLM: https://github.com/XHToken/Spark-MLX-LLM

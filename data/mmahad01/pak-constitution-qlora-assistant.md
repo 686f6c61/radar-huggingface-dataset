@@ -78,9 +78,9 @@ No se han publicado resultados de benchmarks comparativos estandar en la informa
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Pak Constitution QLoRA Assistant | 8B (adaptador LoRA sobre base de 8B) | Base de 8.192 tokens; entrenamiento con 128 tokens | Adaptador PEFT especializado en la Constitucion de Pakistan | apache-2.0 | HuggingFace, 0 descargas |
-| unsloth/llama-3-8b-Instruct-bnb-4bit (modelo base) | 8B | 8.192 tokens | Modelo completo instructivo, uso general | Licencia de Llama 3 | HuggingFace |
-| Llama-3-8B-Instruct (Meta) | 8B | 8.192 tokens | Modelo completo instructivo, uso general | Licencia comunitaria de Llama 3 | HuggingFace, ampliamente distribuido |
+| Pak Constitution QLoRA Assistant | 8B (adaptador LoRA sobre base de 8B) | Base de 8.192 tokens; entrenamiento con 128 tokens | Adaptador PEFT especializado en la Constitucion de Pakistan | apache-2.0 | Hugging Face, 0 descargas |
+| unsloth/llama-3-8b-Instruct-bnb-4bit (modelo base) | 8B | 8.192 tokens | Modelo completo instructivo, uso general | Licencia de Llama 3 | Hugging Face |
+| Llama-3-8B-Instruct (Meta) | 8B | 8.192 tokens | Modelo completo instructivo, uso general | Licencia comunitaria de Llama 3 | Hugging Face, ampliamente distribuido |
 | Otros adaptadores LoRA legales de 8B | No disponible | No disponible | Adaptadores de dominio legal | Variable | No disponible |
 
 La comparativa directa con adaptadores legales equivalentes no esta disponible en la informacion proporcionada. La diferencia fundamental respecto al modelo base es la especializacion en terminologia y contenido constitucional pakistani, a costa de un ajuste limitado (una sola epoca, secuencia de 128 tokens).
@@ -99,7 +99,7 @@ La comparativa directa con adaptadores legales equivalentes no esta disponible e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MMahad01/pak-constitution-qlora-assistant
+- Hugging Face: https://huggingface.co/MMahad01/pak-constitution-qlora-assistant
 - Modelo base: https://huggingface.co/unsloth/llama-3-8b-Instruct-bnb-4bit
 - Repositorio (segun model card): https://huggingface.co/MMahad01/pak-constitution-qlora-assistant
 - Demo: desplegada en Hugging Face Spaces (URL no especificada en la informacion disponible)

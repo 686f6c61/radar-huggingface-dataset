@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace contiene un kernel de decodificación (decode) escrito en Triton para Gated DeltaNet (GDN), la arquitectura subyacente de los modelos Qwen3.5. No es un modelo de checkpoint, sino un kernel de cómputo optimizado que se integra en vLLM para acelerar la fase de decodificación autoregresiva. El autor, baladhurgesh97, lo ha ajustado específicamente para la GPU NVIDIA GB10 y para el modelo `AxionML/Qwen3.5-0.8B-NVFP4`.
+Este repositorio de Hugging Face contiene un kernel de decodificación (decode) escrito en Triton para Gated DeltaNet (GDN), la arquitectura subyacente de los modelos Qwen3.5. No es un modelo de checkpoint, sino un kernel de cómputo optimizado que se integra en vLLM para acelerar la fase de decodificación autoregresiva. El autor, baladhurgesh97, lo ha ajustado específicamente para la GPU NVIDIA GB10 y para el modelo `AxionML/Qwen3.5-0.8B-NVFP4`.
 
 La relevancia de este kernel radica en que los modelos GDN (Gated Delta Networks) utilizan una atención recurrente con estado comprimido, cuyo decode puede optimizarse mediante kernels especializados. Este repositorio propone una variante "empaquetada" que usa un CTA por cabeza que itera sobre V-tiles (BV=32, num_warps=4) en lugar de lanzar múltiples CTAs por cabeza, lo que reduce la sobrecarga de lanzamiento y mejora el rendimiento end-to-end. Los pesos del modelo no se modifican; el kernel se aplica como un parche a vLLM.
 
@@ -61,7 +61,7 @@ El kernel mejora el rendimiento end-to-end en un +7.0% respecto al upstream de v
 - GPU objetivo: NVIDIA GB10 (especificada en el README del autor).
 - El kernel está ajustado para el modelo `AxionML/Qwen3.5-0.8B-NVFP4`, que requiere soporte para cuantización NVFP4 (disponible en GPUs Blackwell).
 - No se especifica VRAM mínima; al ser un kernel de decode, el requisito principal es la memoria del modelo (0.8B en NVFP4, aproximadamente 0.4 GB) más los estados recurrentes.
-- Opciones de despliegue: vLLM (parcheado con `apply_kernel.py`), o carga directa mediante la librería `kernels` de HuggingFace.
+- Opciones de despliegue: vLLM (parcheado con `apply_kernel.py`), o carga directa mediante la librería `kernels` de Hugging Face.
 - El kernel no es compatible con GPUs sin soporte para Triton o sin la arquitectura GB10 (aunque podría adaptarse).
 - No se proporcionan datos de latencia o throughput para otras GPUs.
 
@@ -76,20 +76,20 @@ Este repositorio no es un modelo, sino un kernel de decodificación. La comparat
 | Precisión GSM8K-10 | 5/10 | 5/10 | no disponible |
 | Corrección vs FLA | 6/6 (atol=rtol=2e-2) | no verificado | referencia |
 | Licencia | Apache 2.0 | Apache 2.0 | Apache 2.0 |
-| Disponibilidad | Hub de HuggingFace | vLLM | GitHub |
+| Disponibilidad | Hub de Hugging Face | vLLM | GitHub |
 
 ## Limitaciones y advertencias
 
 - Es un kernel de decode únicamente; no cubre la fase de prefill ni la de entrenamiento.
 - El ajuste se ha realizado para una GPU específica (GB10) y un modelo concreto (Qwen3.5-0.8B-NVFP4); su rendimiento en otras GPUs o modelos puede variar significativamente.
-- Requiere vLLM 0.27.1 y la librería `kernels` de HuggingFace; la integración con versiones posteriores de vLLM no está garantizada.
+- Requiere vLLM 0.27.1 y la librería `kernels` de Hugging Face; la integración con versiones posteriores de vLLM no está garantizada.
 - El uso de `trust_remote_code=True` implica ejecutar código arbitrario del repositorio; se debe revisar el código antes de usarlo en entornos de producción.
 - El repositorio tiene 0 descargas y 0 likes, lo que indica que es una contribución reciente y poco validada por la comunidad.
 - No se proporcionan datos de sesgos, alucinación o calidad de generación, ya que no es un modelo.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/baladhurgesh97/triton-gdn-decode
+- Repositorio Hugging Face: https://huggingface.co/baladhurgesh97/triton-gdn-decode
 - Modelo asociado (AxionML/Qwen3.5-0.8B-NVFP4): https://huggingface.co/AxionML/Qwen3.5-0.8B-NVFP4
 - GitHub de la sumisión al concurso FlashInfer (referencia relacionada): https://github.com/yahya010/flashinfer-gdn-submission
 - Análisis de Qwen3.5 GDN en Zhihu (en chino): https://zhuanlan.zhihu.com/p/2007937984738129405

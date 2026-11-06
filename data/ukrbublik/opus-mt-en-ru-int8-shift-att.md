@@ -84,7 +84,7 @@ La comparacion con alternativas de terceros (por ejemplo, modelos NMT multilingu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ukrbublik/opus-mt-en-ru-int8-shift-att
+- Modelo en Hugging Face: https://huggingface.co/ukrbublik/opus-mt-en-ru-int8-shift-att
 - Modelo base: https://huggingface.co/Helsinki-NLP/opus-mt-en-ru
 - Revision upstream referenciada: `bb09c99d180016eac6819df3dae68edb1690fdee`
 - Proyecto OPUS-MT: no disponible en la informacion proporcionada

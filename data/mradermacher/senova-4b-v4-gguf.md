@@ -79,7 +79,7 @@ No se dispone de datos suficientes para establecer una comparativa rigurosa con 
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/mradermacher/Senova-4B-v4-GGUF
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/mradermacher/Senova-4B-v4-GGUF
 - Modelo base: https://huggingface.co/WangSenQWQ/Senova-4B-v4
 - Página de resumen de descargas del cuantizador: https://hf.tst.eu/model#Senova-4B-v4-GGUF
 - README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

@@ -76,7 +76,7 @@ La comparación real dependerá de benchmarks futuros y de la disponibilidad de 
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/lmstudio-community/Muse-Glimmer-30B-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/lmstudio-community/Muse-Glimmer-30B-GGUF
 - Modelo original: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Página de LM Studio: https://lmstudio.ai/models/meta/muse-glimmer
 - Blog de Meta Research: https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model

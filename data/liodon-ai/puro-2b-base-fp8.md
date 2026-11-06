@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Puro-2B-Base-FP8 es una cuantización en FP8 (precisión de 8 bits en coma flotante) del modelo base Puro-2B, desarrollado por el laboratorio thu-pacman y publicado en HuggingFace por Liodon AI. El modelo original, Puro-2B, fue entrenado desde cero por el "Poor Lab" con un presupuesto de 5090 dólares usando GPUs de consumo RTX 5090, y su diseño se inspira en la arquitectura de Qwen2-1.5B. Esta versión FP8 reduce el tamaño del modelo de 4.1 GB a 2.7 GB, manteniendo la calidad numérica gracias a un esquema de cuantización dinámica sin calibración.
+Puro-2B-Base-FP8 es una cuantización en FP8 (precisión de 8 bits en coma flotante) del modelo base Puro-2B, desarrollado por el laboratorio thu-pacman y publicado en Hugging Face por Liodon AI. El modelo original, Puro-2B, fue entrenado desde cero por el "Poor Lab" con un presupuesto de 5090 dólares usando GPUs de consumo RTX 5090, y su diseño se inspira en la arquitectura de Qwen2-1.5B. Esta versión FP8 reduce el tamaño del modelo de 4.1 GB a 2.7 GB, manteniendo la calidad numérica gracias a un esquema de cuantización dinámica sin calibración.
 
 La relevancia de este modelo radica en su demostración de que es posible entrenar modelos de lenguaje de 2B parámetros con un coste muy reducido y hardware de consumo, y en que la cuantización FP8 permite desplegarlo en GPUs modernas con menor consumo de memoria y mayor velocidad de inferencia. Está pensado para desarrolladores que necesitan un modelo base compacto y eficiente para fine-tuning o generación de texto en entornos con recursos limitados.
 
@@ -62,9 +62,9 @@ La comparativa se basa en la informacion del paper, que posiciona a Puro-2B como
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Puro-2B-Base-FP8 | 2.03B | No disponible | Other | HuggingFace |
-| Qwen2-1.5B | 1.5B | 32K (tipico) | Apache 2.0 | HuggingFace |
-| Gemma-2B | 2.6B | 8K | Gemma License | HuggingFace |
+| Puro-2B-Base-FP8 | 2.03B | No disponible | Other | Hugging Face |
+| Qwen2-1.5B | 1.5B | 32K (tipico) | Apache 2.0 | Hugging Face |
+| Gemma-2B | 2.6B | 8K | Gemma License | Hugging Face |
 
 Nota: los datos de contexto y licencia de Qwen2-1.5B y Gemma-2B son de conocimiento general y no estan confirmados en la informacion proporcionada para Puro-2B.
 
@@ -80,9 +80,9 @@ Nota: los datos de contexto y licencia de Qwen2-1.5B y Gemma-2B son de conocimie
 
 ## Enlaces
 
-- Modelo FP8 en HuggingFace: https://huggingface.co/liodon-ai/Puro-2B-Base-FP8
+- Modelo FP8 en Hugging Face: https://huggingface.co/liodon-ai/Puro-2B-Base-FP8
 - Modelo base original: https://huggingface.co/thu-pacman/Puro-2B-Base
 - Paper de entrenamiento (arXiv): https://arxiv.org/abs/2608.27370
 - Version HTML del paper: https://arxiv.org/html/2608.27370
-- Organizacion Liodon AI en HuggingFace: https://huggingface.co/liodon-ai
+- Organizacion Liodon AI en Hugging Face: https://huggingface.co/liodon-ai
 - GitHub de Liodon AI: https://github.com/Liodon-AI

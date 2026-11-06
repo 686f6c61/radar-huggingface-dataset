@@ -6,7 +6,7 @@ RusMind-3.2-Momentum (comercializado como «Моментум») es un modelo de 
 
 El modelo esta entrenado para pensar y responder principalmente en ruso, con soporte secundario de ingles. Segun su model card, recibio un ajuste especifico sobre un corpus en ruso que cubre historia de Rusia, legislacion de la Federacion Rusa, cultura, los pueblos y las 89 regiones del pais, y lo que el autor denomina valores espirituales y morales tradicionales. Se publica bajo licencia Apache 2.0, lo que permite uso comercial.
 
-Su relevancia actual radica en el nicho de la inferencia local y privada: al no requerir red, ningun dato de la conversacion sale del dispositivo. La contrapartida es que se trata de un modelo pequeno, con contexto corto, sin resultados de benchmarks publicados y con cero descargas registradas en HuggingFace en el momento de redactar esta ficha.
+Su relevancia actual radica en el nicho de la inferencia local y privada: al no requerir red, ningun dato de la conversacion sale del dispositivo. La contrapartida es que se trata de un modelo pequeno, con contexto corto, sin resultados de benchmarks publicados y con cero descargas registradas en Hugging Face en el momento de redactar esta ficha.
 
 ## Especificaciones tecnicas
 
@@ -82,12 +82,12 @@ No se han proporcionado datos de modelos comparables de terceros (mismo tamano o
 - Contexto limitado: 4096 tokens restringen el trabajo con documentos largos o conversaciones muy extensas.
 - Cobertura idiomatica: solo ruso (principal) e ingles; no hay soporte declarado para castellano ni otros idiomas.
 - Sesgo potencial de contenido: el ajuste se realizo sobre un corpus alineado con lo que el autor denomina valores tradicionales rusos, historia nacional y legislacion de la Federacion Rusa, lo que puede introducir un sesgo tematico e ideologico en las respuestas sobre temas historicos, politicos y sociales.
-- Falta de validacion independiente: no hay benchmarks publicados ni evaluaciones de terceros; el modelo registra 0 descargas y 0 likes en HuggingFace y fue creado el 11 de octubre de 2026, por lo que carece de historial de uso.
+- Falta de validacion independiente: no hay benchmarks publicados ni evaluaciones de terceros; el modelo registra 0 descargas y 0 likes en Hugging Face y fue creado el 11 de octubre de 2026, por lo que carece de historial de uso.
 - Licencia: Apache 2.0 permite uso comercial, modificacion y redistribucion, siempre que se conserve el aviso de copyright y la licencia; no impone restricciones de uso comercial adicionales segun el texto estandar de dicha licencia.
 - Para produccion: la ausencia de datos de rendimiento, de evaluacion de seguridad y de trazabilidad del dataset de entrenamiento desaconseja su uso en entornos criticos sin una validacion previa.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DICPlay/RusMind-3.2-Momentum
+- Modelo en Hugging Face: https://huggingface.co/DICPlay/RusMind-3.2-Momentum
 - Sitio oficial de RusMind: https://rusmind.ru
 - Los resultados de la busqueda web no aportaron enlaces especificos ni documentacion tecnica adicional sobre este modelo (solo agregadores genericos de benchmarks sin datos de RusMind).

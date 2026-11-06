@@ -78,7 +78,7 @@ La principal diferencia con el original es el formato de pesos y la cuantizació
 - **Hardware restringido**: solo funciona en NPU AMD XDNA; no es portable a otras arquitecturas sin recompilar.
 
 ## Enlaces
-- [Repositorio HuggingFace](https://huggingface.co/Atomic-Germ/Qwen3.8-Distilled-1.2B-NPU2)
+- [Repositorio Hugging Face](https://huggingface.co/Atomic-Germ/Qwen3.8-Distilled-1.2B-NPU2)
 - [Modelo fuente LFM2.5-1.2B-Thinking](https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking)
 - [Repositorio FastFlowLM/LFM2.5-1.2B-Thinking-NPU2](https://huggingface.co/FastFlowLM/LFM2.5-1.2B-Thinking-NPU2)
 - [GitHub de destilación de Qwen3.8](https://github.com/47thtechcorner/RayCodes_Qwen3.8Distilled)

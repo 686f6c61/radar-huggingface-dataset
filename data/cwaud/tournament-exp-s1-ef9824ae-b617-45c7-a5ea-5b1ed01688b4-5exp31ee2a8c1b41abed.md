@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `cwaud/tournament-exp-s1-ef9824ae-b617-45c7-a5ea-5b1ed01688b4-5Exp31ee2a8c1b41abed` es un checkpoint publicado en HuggingFace por el usuario `cwaud`. Por la nomenclatura del identificador, todo apunta a un experimento generado de forma automatizada dentro de un proceso tipo "torneo" (probablemente un pipeline de busqueda evolutiva o de mezcla de modelos), donde cada ejecucion recibe un nombre con hashes y marcas de sesion. La ficha del repositorio no incluye model card, pipeline declarado, licencia ni idiomas soportados.
+El modelo identificado como `cwaud/tournament-exp-s1-ef9824ae-b617-45c7-a5ea-5b1ed01688b4-5Exp31ee2a8c1b41abed` es un checkpoint publicado en Hugging Face por el usuario `cwaud`. Por la nomenclatura del identificador, todo apunta a un experimento generado de forma automatizada dentro de un proceso tipo "torneo" (probablemente un pipeline de busqueda evolutiva o de mezcla de modelos), donde cada ejecucion recibe un nombre con hashes y marcas de sesion. La ficha del repositorio no incluye model card, pipeline declarado, licencia ni idiomas soportados.
 
 Tecnicamente se trata de un modelo denso de 361.822.080 parametros (aproximadamente 362 millones), etiquetado con la familia `llama` y almacenado en formato `safetensors`. El repositorio ocupa 0,7 GB, un tamano coherente con pesos en precision de 16 bits (unos 723 MB teoricos para 362 M de parametros en fp16/bf16) mas los ficheros auxiliares de configuracion y tokenizador. No hay informacion publica sobre el numero de tokens de entrenamiento, la composicion del dataset ni si hubo fases de ajuste por preferencias.
 
@@ -27,7 +27,7 @@ Su relevancia practica es limitada pero no nula: se trata de un modelo de escala
 
 ## Arquitectura y entrenamiento
 
-La unica informacion estructural disponible es la etiqueta `llama`, que en HuggingFace se aplica de forma generica a modelos basados en el transformer decoder-only con normalizacion RMSNorm, activacion SwiGLU, embeddings rotatorios (RoPE) y atencion causal con multiples cabezas. El recuento de 361.822.080 parametros encaja con un modelo de dimensiones reducidas, del orden de 24 capas y un `hidden_size` en torno a 1024, aunque la configuracion exacta no esta publicada en la informacion disponible.
+La unica informacion estructural disponible es la etiqueta `llama`, que en Hugging Face se aplica de forma generica a modelos basados en el transformer decoder-only con normalizacion RMSNorm, activacion SwiGLU, embeddings rotatorios (RoPE) y atencion causal con multiples cabezas. El recuento de 361.822.080 parametros encaja con un modelo de dimensiones reducidas, del orden de 24 capas y un `hidden_size` en torno a 1024, aunque la configuracion exacta no esta publicada en la informacion disponible.
 
 No hay datos sobre el volumen de tokens de entrenamiento, la composicion del corpus, ni sobre si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT. El nombre del repositorio, con el prefijo `tournament-exp` seguido de hashes y el sufijo `5Exp31ee2a8c1b41abed`, sugiere un checkpoint intermedio o final de un proceso de exploracion automatizada (torneos de modelos, mutacion de hiperparametros o fusion de pesos), mas que un modelo entrenado desde cero con un pipeline documentado. Tampoco hay evidencia de innovaciones tecnicas como decodificacion especulativa, atencion lineal o arquitecturas hibridas.
 
@@ -66,17 +66,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La bu
 - A esas cifras hay que sumar la memoria de la cache KV, dependiente de la longitud de contexto y del numero de secuencias concurrentes; sin conocer la configuracion de atencion no puede darse una cifra concreta.
 - Cabe en cualquier GPU de consumo con 4 GB o mas de VRAM, y previsiblemente en GPUs integradas y en CPU con suficiente RAM (menos de 2 GB para los pesos).
 - GPU recomendadas: no hay ninguna oficial; para uso serio en produccion, una NVIDIA T4, L4 o RTX 3060 en adelante es mas que suficiente para esta escala.
-- Opciones de despliegue: al ser pesos safetensors con arquitectura estilo llama, es compatible con vLLM, HuggingFace Transformers, Text Generation Inference (TGI), llama.cpp y Ollama, previa conversion a GGUF para los dos ultimos. No hay confirmacion del autor sobre ninguna de estas integraciones.
+- Opciones de despliegue: al ser pesos safetensors con arquitectura estilo llama, es compatible con vLLM, Hugging Face Transformers, Text Generation Inference (TGI), llama.cpp y Ollama, previa conversion a GGUF para los dos ultimos. No hay confirmacion del autor sobre ninguna de estas integraciones.
 - Latencia y throughput: no disponible. No se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `cwaud/tournament-exp-s1-...` (este modelo) | 362 M | No disponible | No disponible | HuggingFace, 9 descargas |
-| Qwen2.5-0.5B | 0,49 B | 32.768 tokens (segun documentacion del autor) | Apache 2.0 | HuggingFace, ampliamente desplegado |
-| SmolLM2-360M | 362 M | 8.192 tokens (segun documentacion del autor) | Apache 2.0 | HuggingFace, con model card e informes de evaluacion |
-| TinyLlama-1.1B | 1,1 B | 2.048 tokens (segun documentacion del autor) | Apache 2.0 | HuggingFace, con paper asociado |
+| `cwaud/tournament-exp-s1-...` (este modelo) | 362 M | No disponible | No disponible | Hugging Face, 9 descargas |
+| Qwen2.5-0.5B | 0,49 B | 32.768 tokens (segun documentacion del autor) | Apache 2.0 | Hugging Face, ampliamente desplegado |
+| SmolLM2-360M | 362 M | 8.192 tokens (segun documentacion del autor) | Apache 2.0 | Hugging Face, con model card e informes de evaluacion |
+| TinyLlama-1.1B | 1,1 B | 2.048 tokens (segun documentacion del autor) | Apache 2.0 | Hugging Face, con paper asociado |
 
 Los datos de las tres alternativas provienen del conocimiento general sobre esos modelos publicos y no de la busqueda web realizada. La diferencia fundamental no esta en el tamano, sino en la trazabilidad: los tres modelos comparables cuentan con model card, licencia explicita y evaluaciones publicadas, mientras que este checkpoint carece de los tres elementos.
 
@@ -95,7 +95,7 @@ Los datos de las tres alternativas provienen del conocimiento general sobre esos
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cwaud/tournament-exp-s1-ef9824ae-b617-45c7-a5ea-5b1ed01688b4-5Exp31ee2a8c1b41abed
+- Hugging Face: https://huggingface.co/cwaud/tournament-exp-s1-ef9824ae-b617-45c7-a5ea-5b1ed01688b4-5Exp31ee2a8c1b41abed
 - Paper: no disponible
 - Blog o anuncio: no disponible
 - Repositorio de codigo: no disponible

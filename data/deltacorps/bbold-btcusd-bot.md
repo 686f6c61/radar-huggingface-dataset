@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DELTACORPS publica en HuggingFace el repositorio `bbold-btcusd-bot`, un sistema de trading algorítmico denominado BBOLD BTCUSD, descrito como un "organismo cognitivo" para scalping en el par BTC/USD con objetivos de 5 a 60 pips. No se trata de un modelo de lenguaje ni de un modelo de IA generativa; es un proyecto de software que combina 21 módulos analíticos, un ensemble de más de 30 modelos de aprendizaje automático (Random Forest, XGBoost, LightGBM, CatBoost, kNN, SVM, MLP, 1D-CNN, Tiny-LSTM, GRU, entre otros) y un sistema de votación neuro-simbólica para tomar decisiones de compra o venta.
+DELTACORPS publica en Hugging Face el repositorio `bbold-btcusd-bot`, un sistema de trading algorítmico denominado BBOLD BTCUSD, descrito como un "organismo cognitivo" para scalping en el par BTC/USD con objetivos de 5 a 60 pips. No se trata de un modelo de lenguaje ni de un modelo de IA generativa; es un proyecto de software que combina 21 módulos analíticos, un ensemble de más de 30 modelos de aprendizaje automático (Random Forest, XGBoost, LightGBM, CatBoost, kNN, SVM, MLP, 1D-CNN, Tiny-LSTM, GRU, entre otros) y un sistema de votación neuro-simbólica para tomar decisiones de compra o venta.
 
 El objetivo declarado por el autor es replicar el razonamiento de un trader humano con paciencia infinita y sin errores emocionales, incorporando garantías de "no repintado" (non-repainting), un bucle de autoaprendizaje con reentrenamiento nocturno y un modo "Dream Mode" de replay contrafactual. En la información disponible no se aportan parámetros del modelo, tamaño de pesos ni datos de entrenamiento de un modelo fundacional; el repositorio se centra en el código, los documentos de diseño y el pipeline de trading.
 
@@ -83,7 +83,7 @@ No se dispone de modelos con parámetros publicados que sean directamente compar
 
 | Sistema | Categoría | Tecnología | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| BBOLD BTCUSD (DELTACORPS) | Sistema cognitivo de trading BTCUSD | Ensemble de 30+ modelos ML, votación neuro-simbólica, no repintado | TBD por propietario | Repositorio HuggingFace |
+| BBOLD BTCUSD (DELTACORPS) | Sistema cognitivo de trading BTCUSD | Ensemble de 30+ modelos ML, votación neuro-simbólica, no repintado | TBD por propietario | Repositorio Hugging Face |
 | BTC Scalper AI EA MT5 | Asesor experto (EA) para MetaTrader 5, scalping BTCUSD | no disponible | Comercial | MQL5 Market |
 | MT5Trader_BTCUSD | Bot de trading de alta frecuencia para BTCUSD | Red neuronal bayesiana + regresión logística | no disponible | GitHub |
 
@@ -100,7 +100,7 @@ No se dispone de modelos con parámetros publicados que sean directamente compar
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DELTACORPS/bbold-btcusd-bot
+- Repositorio en Hugging Face: https://huggingface.co/DELTACORPS/bbold-btcusd-bot
 - Documentación de diseño (enlaces relativos dentro del repositorio, no URLs absolutas): `PROJECT_CHARTER.md`, `ARCHITECTURE_AND_DESIGN.md`, `MODULE_SPECIFICATIONS.md`, `IMPLEMENTATION_PLAYBOOK.md`, `OPERATIONS_MANUAL.md`
 - MQL5 - BTC Scalper AI EA MT5: https://www.mql5.com/en/market/product/124167
 - GitHub - MT5Trader_BTCUSD: https://github.com/Leoyip29/MT5Trader_BTCUSD

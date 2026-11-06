@@ -72,9 +72,9 @@ No se han proporcionado en la informacion disponible los valores de referencia d
 
 | Modelo | Parametros | Contexto | Seguridad / utilidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| svd-safety-l2_remove50_swapdisciter_b010 | 6.738.415.616 segun safetensors (fraccion declarada 0,4999) | no disponible (base: 4.096) | ASR AdvBench 0,0115; ASR StrongREJECT 0,0735; sobrerrechazo 0,4240; PPL WikiText-2 14,3199 | Llama 2 Community License | HuggingFace |
-| meta-llama/Llama-2-7b-chat-hf (modelo base) | 6.738.415.616 | 4.096 tokens | no disponible en la informacion proporcionada | Llama 2 Community License | HuggingFace |
-| Otras celdas de la rejilla del mismo autor (seleccion de componentes / presupuestos) | variable | no disponible | no disponible | Llama 2 Community License | HuggingFace (Jeesup) |
+| svd-safety-l2_remove50_swapdisciter_b010 | 6.738.415.616 segun safetensors (fraccion declarada 0,4999) | no disponible (base: 4.096) | ASR AdvBench 0,0115; ASR StrongREJECT 0,0735; sobrerrechazo 0,4240; PPL WikiText-2 14,3199 | Llama 2 Community License | Hugging Face |
+| meta-llama/Llama-2-7b-chat-hf (modelo base) | 6.738.415.616 | 4.096 tokens | no disponible en la informacion proporcionada | Llama 2 Community License | Hugging Face |
+| Otras celdas de la rejilla del mismo autor (seleccion de componentes / presupuestos) | variable | no disponible | no disponible | Llama 2 Community License | Hugging Face (Jeesup) |
 
 No se dispone de datos publicados de modelos comparables adicionales dentro de la informacion proporcionada; la busqueda web no aporto referencias utiles.
 
@@ -93,7 +93,7 @@ No se dispone de datos publicados de modelos comparables adicionales dentro de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapdisciter_b010
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapdisciter_b010
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 
 No se encontraron en la busqueda web enlaces adicionales relevantes (papers, blogs, repos o demos) asociados a este checkpoint.

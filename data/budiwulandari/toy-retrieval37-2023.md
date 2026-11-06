@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Cnn Transformer for Retrieval es un repositorio de HuggingFace publicado por el usuario budiwulandari que contiene una implementacion propia y compacta en PyTorch de una arquitectura CNN Transformer orientada a tareas de retrieval. No se trata de un modelo entrenado ni de un release listo para produccion: el propio autor indica que el checkpoint incluido (`model.safetensors`) es una inicializacion valida para smoke tests y revision de codigo, no un modelo con pesos entrenados. El peso total del repositorio es de 33.088 parametros, una magnitud que confirma su naturaleza de juguete ("toy") y experimental.
+Cnn Transformer for Retrieval es un repositorio de Hugging Face publicado por el usuario budiwulandari que contiene una implementacion propia y compacta en PyTorch de una arquitectura CNN Transformer orientada a tareas de retrieval. No se trata de un modelo entrenado ni de un release listo para produccion: el propio autor indica que el checkpoint incluido (`model.safetensors`) es una inicializacion valida para smoke tests y revision de codigo, no un modelo con pesos entrenados. El peso total del repositorio es de 33.088 parametros, una magnitud que confirma su naturaleza de juguete ("toy") y experimental.
 
 La arquitectura declarada combina atencion dilatada, fusion bilineal, activacion mish y normalizacion GroupNorm, con una configuracion etiquetada como "xlarge" dentro de la propia escala del autor. El repositorio incluye el codigo de definicion del modelo, un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto (optimizador adafactor con schedule de warmup constante) y un script `eval.py`.
 
@@ -22,7 +22,7 @@ Su relevancia es limitada y hay que enmarcarla correctamente: no es un modelo co
 | Formato de pesos | safetensors (PyTorch) |
 | Escala declarada por el autor | xlarge (dentro de la configuracion del repositorio) |
 | Tamano del repositorio | 0,0 GB |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Fecha de creacion | 2026-09-11 |
 | Fecha de ultima actualizacion | 2026-09-11 |
 
@@ -72,7 +72,7 @@ Los modelos comparables en la categoria de retrieval multimodal son de escala y 
 
 | Modelo | Parametros | Contexto | Rendimiento en retrieval | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| budiwulandari/toy-retrieval37-2023 | 33.088 | no disponible | no disponible (sin entrenar) | MIT | HuggingFace, experimento |
+| budiwulandari/toy-retrieval37-2023 | 33.088 | no disponible | no disponible (sin entrenar) | MIT | Hugging Face, experimento |
 | CLIP (ViT-B/32, referencia de categoria) | ~151 M | 77 tokens de texto | metricas publicas de zero-shot en Flickr30k y similares | MIT (segun variante) | ampliamente disponible |
 | BLIP (referencia de categoria) | ~224 M | no disponible en esta comparacion | metricas publicas de retrieval texto-imagen | licencia especifica del proyecto | ampliamente disponible |
 | SigLIP (referencia de categoria) | ~203 M (base) | no disponible en esta comparacion | metricas publicas de zero-shot | Apache 2.0 en variantes abiertas | ampliamente disponible |
@@ -93,7 +93,7 @@ La diferencia de escala entre este repositorio (33.088 parametros, sin entrenami
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/budiwulandari/toy-retrieval37-2023
-- Perfil del autor en HuggingFace: https://huggingface.co/budiwulandari
+- Repositorio en Hugging Face: https://huggingface.co/budiwulandari/toy-retrieval37-2023
+- Perfil del autor en Hugging Face: https://huggingface.co/budiwulandari
 - Dataset sugerido para evaluacion por el autor: Flickr30k (referencia metodologica, no se proporciona enlace en la model card)
 - No se han encontrado papers, blogs, repositorios adicionales ni demos asociados a este modelo en la busqueda web realizada.

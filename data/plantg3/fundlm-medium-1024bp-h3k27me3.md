@@ -74,8 +74,8 @@ No se dispone en la informacion proporcionada de datos de rendimiento ni especif
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FunDLM-Medium-1024bp-H3K27me3 | 471 M (base) + LoRA | 1.024 bp | Clasificacion H3K27me3 | No disponible | HuggingFace (PlantG3) |
-| FunDLM-Medium-1024bp | 471 M | 1.024 bp | Modelo de lenguaje de ADN (base) | No disponible | HuggingFace (gnikesh) |
+| FunDLM-Medium-1024bp-H3K27me3 | 471 M (base) + LoRA | 1.024 bp | Clasificacion H3K27me3 | No disponible | Hugging Face (PlantG3) |
+| FunDLM-Medium-1024bp | 471 M | 1.024 bp | Modelo de lenguaje de ADN (base) | No disponible | Hugging Face (gnikesh) |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -93,7 +93,7 @@ No se dispone en la informacion proporcionada de datos de rendimiento ni especif
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PlantG3/FunDLM-Medium-1024bp-H3K27me3
+- Modelo en Hugging Face: https://huggingface.co/PlantG3/FunDLM-Medium-1024bp-H3K27me3
 - Modelo base: https://huggingface.co/gnikesh/FunDLM-Medium-1024bp
 - Repositorio FunDLM (script de fine-tuning LoRA): https://github.com/PlantG3/funDLM/blob/main/src/finetune/lora_fine_tune.py
 - Guia de instalacion de PlantCAD2 (referencia de entorno): https://github.com/plantcad/plantcad/blob/main/docs/local-install.md

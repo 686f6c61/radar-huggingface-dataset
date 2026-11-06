@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Gmsm003/Hi` es un modelo publicado en HuggingFace por el usuario Gmsm003 bajo licencia MIT. El repositorio tiene un tamano de 7,7 GB, lo que sugiere pesos de un modelo de aproximadamente 7-8 mil millones de parametros en precision de 16 bits, aunque esta estimacion no viene confirmada por el autor. No se dispone de informacion sobre arquitectura, contexto, datos de entrenamiento ni capacidades declaradas.
+`Gmsm003/Hi` es un modelo publicado en Hugging Face por el usuario Gmsm003 bajo licencia MIT. El repositorio tiene un tamano de 7,7 GB, lo que sugiere pesos de un modelo de aproximadamente 7-8 mil millones de parametros en precision de 16 bits, aunque esta estimacion no viene confirmada por el autor. No se dispone de informacion sobre arquitectura, contexto, datos de entrenamiento ni capacidades declaradas.
 
-La model card es practicamente vacia: unicamente contiene la linea de licencia `mit`, sin descripcion, sin ejemplos de uso, sin especificaciones tecnicas ni resultados de evaluacion. El modelo no tiene descargas ni "likes" en el momento de la consulta, y no aparece informacion sobre el pipeline asociado en HuggingFace.
+La model card es practicamente vacia: unicamente contiene la linea de licencia `mit`, sin descripcion, sin ejemplos de uso, sin especificaciones tecnicas ni resultados de evaluacion. El modelo no tiene descargas ni "likes" en el momento de la consulta, y no aparece informacion sobre el pipeline asociado en Hugging Face.
 
 Por tanto, esta ficha se limita a documentar los pocos datos objetivos disponibles (identificador, autor, licencia, tamano del repositorio y fechas) y a marcar explicitamente como "no disponible" todo aquello que el autor no ha publicado. No se debe asumir ningun comportamiento concreto del modelo sin verificacion empirica previa.
 
@@ -40,11 +40,11 @@ No hay datos sobre el corpus de entrenamiento (numero de tokens, composicion, id
 ## Casos de uso
 
 - Evaluacion exploratoria en laboratorio: clonar el repositorio y ejecutar una inferencia basica para determinar empiricamente el tipo de modelo, el tokenizador y el comportamiento general antes de considerar cualquier uso.
-- Pruebas de integracion en pipelines de HuggingFace Transformers: verificar si los pesos cargan correctamente con `AutoModelForCausalLM` o requieren configuracion manual, dado que no hay model card que lo documente.
+- Pruebas de integracion en pipelines de Hugging Face Transformers: verificar si los pesos cargan correctamente con `AutoModelForCausalLM` o requieren configuracion manual, dado que no hay model card que lo documente.
 - Experimentacion academica con modelos de licencia permisiva: la licencia MIT permite usar, modificar y redistribuir el modelo, lo que lo hace apto para entornos de investigacion que requieran libertad total de uso.
 - Base para ajuste fino propio: si el modelo resulta ser un transformer estandar de ~7B, podria servir como punto de partida para fine-tuning con datos propios, siempre tras validar su calidad base.
 - Comparativas internas de modelos: incluirlo como referencia en evaluaciones internas junto a modelos conocidos para medir diferencias de comportamiento.
-- Docencia y demostraciones: usar el repositorio como ejemplo de publicacion minima en HuggingFace y de los riesgos de publicar sin model card ni evaluacion.
+- Docencia y demostraciones: usar el repositorio como ejemplo de publicacion minima en Hugging Face y de los riesgos de publicar sin model card ni evaluacion.
 
 En ningun caso se recomienda su uso en produccion sin una evaluacion previa exhaustiva, dado que no existe informacion verificable sobre su rendimiento, sesgos o calidad.
 
@@ -86,4 +86,4 @@ La diferencia principal no es tecnica sino de trazabilidad: los modelos de la co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Gmsm003/Hi
+- Modelo en Hugging Face: https://huggingface.co/Gmsm003/Hi

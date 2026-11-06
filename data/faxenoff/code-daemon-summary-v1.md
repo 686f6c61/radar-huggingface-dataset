@@ -100,9 +100,9 @@ La comparativa directa con otros modelos de documentación de código no está d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/faxenoff/code-daemon-summary-v1
+- Repositorio Hugging Face: https://huggingface.co/faxenoff/code-daemon-summary-v1
 - Modelo base Qwen/Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
 - Profesor Qwen/Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
-- Perfil del autor en HuggingFace: https://huggingface.co/faxenoff
+- Perfil del autor en Hugging Face: https://huggingface.co/faxenoff
 - Repositorio del autor en GitHub (herramientas MCP para código): https://github.com/iflow-mcp/faxenoff-ultrascript-tools-mcp
 - Releases del proyecto ultracode: https://github.com/faxenoff/ultracode/releases

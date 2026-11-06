@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Proyecto | Naturaleza | Componentes | Hardware objetivo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `aarib1007/intel-openvino-voice-assistant` | Aplicación de asistente de voz local (código, sin pesos) | Silero VAD + Parakeet TDT 0.6B v2 (OpenVINO) + Qwen3.5-0.8B (GGUF) + Pocket TTS | Windows 11, Intel Core Ultra 7 258V validado | No disponible en el repositorio; componentes CC BY 4.0 y Apache-2.0 | Pública en HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
+| `aarib1007/intel-openvino-voice-assistant` | Aplicación de asistente de voz local (código, sin pesos) | Silero VAD + Parakeet TDT 0.6B v2 (OpenVINO) + Qwen3.5-0.8B (GGUF) + Pocket TTS | Windows 11, Intel Core Ultra 7 258V validado | No disponible en el repositorio; componentes CC BY 4.0 y Apache-2.0 | Pública en Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
 | `Fersca/Robot` | Aplicación de asistente de voz y visión local para Core Ultra | OpenVINO sobre CPU/GPU/NPU para LLM, Whisper para STT, Silero VAD, TTS y detección de presencia por cámara | Intel Core Ultra | No disponible en la información consultada | Pública en GitHub |
 | Stacks autoensamblados Whisper + llama.cpp + TTS local | Integración manual de componentes sueltos | Whisper como ASR, un LLM GGUF y un motor TTS a elección | CPU o GPU según build | Depende de cada componente | Requiere integración propia |
 | Asistentes de voz en la nube | Servicio gestionado | ASR, LLM y TTS propietarios en servidor | Cliente ligero | Propietaria | Comercial, con dependencia de red |
@@ -99,7 +99,7 @@ No se dispone de datos de rendimiento comparables entre estas opciones en la inf
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/aarib1007/intel-openvino-voice-assistant
+- Repositorio en Hugging Face: https://huggingface.co/aarib1007/intel-openvino-voice-assistant
 - Documentacion de OpenVINO: https://docs.openvino.ai/
 - Lista de modelos verificados para OpenVINO: https://docs.openvino.ai/2025/documentation/compatibility-and-support/supported-models.html
 - OpenVINO Model Hub (Intel): https://www.intel.com/content/www/us/en/developer/tools/openvino-toolkit/models.html

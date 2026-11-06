@@ -2,7 +2,7 @@
 
 ## Resumen
 
-loop-untied-grow-d8 es un checkpoint de modelo de lenguaje base entrenado desde cero por CharlieChen (cuenta de HuggingFace), publicado como artefacto asociado al articulo "How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents". Se trata de un transformer con bucles (looped transformer) en el que la coordenada de profundidad se usa como coordenada de escalado dentro de una escalera de experimentos sobre el corpus FineWeb. El modelo pertenece a la variante "Untied Grow" y ocupa la posicion de profundidad d8 de dicha escalera.
+loop-untied-grow-d8 es un checkpoint de modelo de lenguaje base entrenado desde cero por CharlieChen (cuenta de Hugging Face), publicado como artefacto asociado al articulo "How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents". Se trata de un transformer con bucles (looped transformer) en el que la coordenada de profundidad se usa como coordenada de escalado dentro de una escalera de experimentos sobre el corpus FineWeb. El modelo pertenece a la variante "Untied Grow" y ocupa la posicion de profundidad d8 de dicha escalera.
 
 El checkpoint contiene 321.388.544 parametros almacenados en FP32 (1,286 GB) y se distribuye sin ajuste por instrucciones: es un modelo base puro de prediccion del siguiente token. La configuracion incluye una anchura de 1024, 8 cabezas de atencion, vocabulario GPT-2 de 50.257 tokens (ampliado a 50.304 filas en el modelo) y una longitud de contexto de 2.048 tokens. El modo de profundidad configurado es `dep`, con 4 repeticiones del nucleo tanto en configuracion como en la evaluacion final.
 
@@ -107,7 +107,7 @@ La diferencia estructural relevante no es de rendimiento sino de naturaleza del 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CharlieChen/loop-untied-grow-d8
+- Modelo en Hugging Face: https://huggingface.co/CharlieChen/loop-untied-grow-d8
 - Repositorio de codigo del articulo (evaluacion y reconstruccion del modelo): https://github.com/cue-engineering/loop
 - Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb
 - Articulo de referencia: "How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents" (no se ha encontrado URL del paper en la informacion disponible).

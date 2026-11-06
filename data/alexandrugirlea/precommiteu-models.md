@@ -81,9 +81,9 @@ Respecto a la versión anterior del README, DSA pasó de un 15 % a un 0 % de fal
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| precommitEU model bundle | 7,6 B (detector) + MoE (orquestador) | no disponible | Detección de riesgos regulatorios UE sobre código, con validación de evidencia | Apache 2.0 | HuggingFace, pesos GGUF + LoRA |
-| Qwen2.5-Coder-7B-Instruct | 7,6 B | no disponible en esta ficha | Modelo base de código general | Apache 2.0 | HuggingFace |
-| Qwen3.6-35B-A3B | MoE, 35 B totales | no disponible en esta ficha | Modelo base general MoE | no disponible en esta ficha | HuggingFace |
+| precommitEU model bundle | 7,6 B (detector) + MoE (orquestador) | no disponible | Detección de riesgos regulatorios UE sobre código, con validación de evidencia | Apache 2.0 | Hugging Face, pesos GGUF + LoRA |
+| Qwen2.5-Coder-7B-Instruct | 7,6 B | no disponible en esta ficha | Modelo base de código general | Apache 2.0 | Hugging Face |
+| Qwen3.6-35B-A3B | MoE, 35 B totales | no disponible en esta ficha | Modelo base general MoE | no disponible en esta ficha | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos frente a otros escáneres de cumplimiento normativo, por lo que no es posible establecer una comparación de rendimiento con alternativas de la misma tarea.
 
@@ -102,7 +102,7 @@ No se dispone de datos de benchmarks comparativos frente a otros escáneres de c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AlexandruGirlea/precommiteu-models
+- Repositorio Hugging Face: https://huggingface.co/AlexandruGirlea/precommiteu-models
 - Repositorio GitHub del escáner: https://github.com/AlexandruGirlea/precommiteu
 - Repositorio GitHub de ops: https://github.com/AlexandruGirlea/precommiteu-ops
 - Guía de instalación offline: https://alexandrugirlea.github.io/precommiteu/install.html#air-gapped-and-offline-installation

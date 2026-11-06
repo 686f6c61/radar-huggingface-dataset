@@ -2,7 +2,7 @@
 
 ## Resumen
 
-poolformer-experiment-2023 es un repositorio experimental publicado por el usuario felixwnguyen en HuggingFace. No es un modelo entrenado, sino un banco de pruebas de código: contiene una implementación propia de una arquitectura PoolFormer orientada a aprendizaje contrastivo (contrastive learning), junto con su configuración de arquitectura, una receta de entrenamiento por defecto y un checkpoint de inicialización válido para pruebas de humo. El propio autor indica explícitamente que el checkpoint «no se presenta como un checkpoint entrenado con benchmarks» y que no se reclama ninguna puntuación de evaluación.
+poolformer-experiment-2023 es un repositorio experimental publicado por el usuario felixwnguyen en Hugging Face. No es un modelo entrenado, sino un banco de pruebas de código: contiene una implementación propia de una arquitectura PoolFormer orientada a aprendizaje contrastivo (contrastive learning), junto con su configuración de arquitectura, una receta de entrenamiento por defecto y un checkpoint de inicialización válido para pruebas de humo. El propio autor indica explícitamente que el checkpoint «no se presenta como un checkpoint entrenado con benchmarks» y que no se reclama ninguna puntuación de evaluación.
 
 El artefacto se declara con escala «base», atención lineal, fusión mediante concat mlp, activación relu y normalización instancenorm. Sin embargo, el fichero safetensors real contiene 49.600 parámetros totales, una cifra muy alejada de lo que suele entenderse por una escala base en visión por computador; esta discrepancia entre la etiqueta de configuración y el recuento real de pesos es probablemente el dato técnico más relevante de la ficha. El tamaño del repositorio es de 0.0 GB y no registra descargas ni «likes», por lo que no existe validación comunitaria alguna.
 
@@ -100,7 +100,7 @@ No se dispone de valores verificados de parámetros, contexto, rendimiento ni li
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/felixwnguyen/poolformer-experiment-2023
+- Página del modelo en Hugging Face: https://huggingface.co/felixwnguyen/poolformer-experiment-2023
 - Script de entrenamiento incluido en el repositorio: https://huggingface.co/felixwnguyen/poolformer-experiment-2023/blob/main/train.py
 - Configuración de arquitectura: https://huggingface.co/felixwnguyen/poolformer-experiment-2023/blob/main/config.json
 - Receta de experimento por defecto: https://huggingface.co/felixwnguyen/poolformer-experiment-2023/blob/main/training_args.json

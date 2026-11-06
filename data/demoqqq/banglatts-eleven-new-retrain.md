@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `demoqqq/banglatts-eleven-new-retrain` es un repositorio alojado en HuggingFace por el usuario `demoqqq`. Por su identificador, el nombre sugiere un sistema de síntesis de voz (TTS, text-to-speech) orientado al bengalí, posiblemente un reentrenamiento de un modelo previo, aunque esta interpretación no está confirmada por metadatos oficiales. El repositorio no incluye pipeline declarado, licencia, idiomas ni documentación técnica asociada en la información disponible.
+El modelo `demoqqq/banglatts-eleven-new-retrain` es un repositorio alojado en Hugging Face por el usuario `demoqqq`. Por su identificador, el nombre sugiere un sistema de síntesis de voz (TTS, text-to-speech) orientado al bengalí, posiblemente un reentrenamiento de un modelo previo, aunque esta interpretación no está confirmada por metadatos oficiales. El repositorio no incluye pipeline declarado, licencia, idiomas ni documentación técnica asociada en la información disponible.
 
 El tamaño del repositorio es de aproximadamente 1,0 GB, lo que resulta compatible con pesos de un modelo de tamaño pequeño o mediano, o con un checkpoint de un modelo de voz con vocoder incluido, aunque no es posible determinarlo con certeza sin inspeccionar los archivos. El repositorio registra 0 descargas y 1 like, lo que indica que se trata de un artefacto de publicación muy reciente o de escasa difusión.
 
@@ -73,9 +73,9 @@ No disponible. No se han identificado modelos comparables en la información pro
 - Riesgo de sesgos y alucinaciones: no evaluable sin datos de entrenamiento ni pruebas.
 - Repositorio con 0 descargas y 1 like: indica escasa validación por parte de la comunidad; no hay evidencia de que el modelo haya sido probado externamente.
 - Fecha de creación futura (2026-11-02): el metadato de fecha resulta anómalo y podría indicar un error de registro o una publicación programada; conviene verificar la integridad del repositorio antes de su uso.
-- Sin pipeline declarado: no se puede confirmar que el repositorio sea cargable directamente con las librerías estándar de HuggingFace.
+- Sin pipeline declarado: no se puede confirmar que el repositorio sea cargable directamente con las librerías estándar de Hugging Face.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/demoqqq/banglatts-eleven-new-retrain
+- Repositorio en Hugging Face: https://huggingface.co/demoqqq/banglatts-eleven-new-retrain
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

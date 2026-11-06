@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`andkil/bge-small-conll2003-ner` es un modelo de reconocimiento de entidades nombradas (NER) obtenido mediante ajuste fino del modelo de embeddings `BAAI/bge-small-en-v1.5` sobre la tarea de clasificacion de tokens. Lo desarrolla el usuario de HuggingFace `andkil` y se distribuye bajo licencia MIT. El modelo resuelve la extraccion de entidades (personas, organizaciones, localidades y miscelanea) en texto en ingles, una tarea clasica de la NLP que sigue siendo la base de sistemas de extraccion de informacion, anonimizacion y enriquecimiento de datos.
+`andkil/bge-small-conll2003-ner` es un modelo de reconocimiento de entidades nombradas (NER) obtenido mediante ajuste fino del modelo de embeddings `BAAI/bge-small-en-v1.5` sobre la tarea de clasificacion de tokens. Lo desarrolla el usuario de Hugging Face `andkil` y se distribuye bajo licencia MIT. El modelo resuelve la extraccion de entidades (personas, organizaciones, localidades y miscelanea) en texto en ingles, una tarea clasica de la NLP que sigue siendo la base de sistemas de extraccion de informacion, anonimizacion y enriquecimiento de datos.
 
 Arquitectura y tamano: se trata de un transformer encoder-only de tipo BERT, con 33.215.625 parametros totales (aproximadamente 33 millones) y un peso en disco de unos 0,1 GB en formato safetensors. Al derivar de `bge-small-en-v1.5`, hereda la configuracion compacta de la familia BGE-small, orientada a eficiencia y despliegue en hardware modesto, con una longitud de contexto de 512 tokens heredada del modelo base.
 
@@ -86,10 +86,10 @@ No se han publicado en la informacion disponible resultados comparativos con mod
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| andkil/bge-small-conll2003-ner | 33 M | 512 tokens (heredado del base) | NER (token-classification) | MIT | HuggingFace |
-| NickolayS1/bge-small-ner-conll2003 | No disponible | No disponible | NER sobre el mismo corpus | No disponible | HuggingFace |
-| RahatLukuum/bge-small-ner-conll2003 | No disponible | No disponible | NER sobre el mismo corpus | No disponible | HuggingFace |
-| BAAI/bge-small-en-v1.5 (modelo base) | 33 M | 512 tokens | Embeddings de texto | MIT | HuggingFace |
+| andkil/bge-small-conll2003-ner | 33 M | 512 tokens (heredado del base) | NER (token-classification) | MIT | Hugging Face |
+| NickolayS1/bge-small-ner-conll2003 | No disponible | No disponible | NER sobre el mismo corpus | No disponible | Hugging Face |
+| RahatLukuum/bge-small-ner-conll2003 | No disponible | No disponible | NER sobre el mismo corpus | No disponible | Hugging Face |
+| BAAI/bge-small-en-v1.5 (modelo base) | 33 M | 512 tokens | Embeddings de texto | MIT | Hugging Face |
 
 Los tres modelos `bge-small-*-conll2003` comparten el mismo punto de partida y la misma tarea, por lo que son comparables directamente; sin embargo, no se dispone de metricas publicadas de los otros dos en la informacion recogida, lo que impide una comparacion numerica de rendimiento. No se han identificado alternativas de mayor tamano (por ejemplo, variantes BERT-base o RoBERTa-base afinadas sobre CoNLL-2003) con datos verificables en esta busqueda.
 
@@ -107,7 +107,7 @@ Los tres modelos `bge-small-*-conll2003` comparten el mismo punto de partida y l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/andkil/bge-small-conll2003-ner
+- Modelo en Hugging Face: https://huggingface.co/andkil/bge-small-conll2003-ner
 - Modelo base: https://huggingface.co/BAAI/bge-small-en-v1.5
 - Modelo comparable 1: https://huggingface.co/NickolayS1/bge-small-ner-conll2003
 - Modelo comparable 2: https://huggingface.co/RahatLukuum/bge-small-ner-conll2003

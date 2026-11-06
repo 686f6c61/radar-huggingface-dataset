@@ -100,7 +100,7 @@ Frente a un clasificador generico multilingue (por ejemplo, un modelo de sentimi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mohjkhan/babyshark-cra-topk
+- Modelo en Hugging Face: https://huggingface.co/mohjkhan/babyshark-cra-topk
 - Repositorio del proyecto InterpAdapt-Hinglish-finetuning: https://github.com/bala-skv/InterpAdapt-Hinglish-finetuning
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B
 - Dataset de evaluacion: https://huggingface.co/datasets/satyam-arora-iiit-hyderabad/babyshark-sail2017-stage2

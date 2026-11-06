@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `U-WIN/qwen35-9b-equational-theory-sair-notes-ntp-50m-kl-0p01` es un ajuste fino completo (full-finetune) del modelo base Qwen/Qwen3.5-9B, publicado por el usuario U-WIN en HuggingFace. Se trata de un modelo multimodal de tipo image-text-to-text que conserva los 9.653.104.368 parametros del modelo original y que ha sido especializado mediante entrenamiento supervisado sobre un corpus de teoria ecuacional (equational theory) vinculado a SAIR, con un regimen de entrenamiento basado en next-token prediction (NTP) sobre 50 millones de tokens y una regularizacion KL de 0.01 frente al modelo de referencia.
+El modelo `U-WIN/qwen35-9b-equational-theory-sair-notes-ntp-50m-kl-0p01` es un ajuste fino completo (full-finetune) del modelo base Qwen/Qwen3.5-9B, publicado por el usuario U-WIN en Hugging Face. Se trata de un modelo multimodal de tipo image-text-to-text que conserva los 9.653.104.368 parametros del modelo original y que ha sido especializado mediante entrenamiento supervisado sobre un corpus de teoria ecuacional (equational theory) vinculado a SAIR, con un regimen de entrenamiento basado en next-token prediction (NTP) sobre 50 millones de tokens y una regularizacion KL de 0.01 frente al modelo de referencia.
 
 La denominacion del repositorio resume buena parte de la receta: `qwen35-9b` indica la familia y tamano, `equational-theory-sair` el dominio de especializacion, `notes-ntp` el tipo de datos y objetivo de entrenamiento, `50m` el volumen de tokens y `kl-0p01` el coeficiente de regularizacion KL usado para limitar la divergencia respecto al modelo base. Este tipo de ajuste busca preservar las capacidades generales del Qwen3.5-9B mientras se mejora el rendimiento en tareas de razonamiento algebraico y resolucion de teorias ecuacionales.
 
-El modelo es relevante en el contexto de la investigacion sobre razonamiento matematico formal y evaluacion tipo SAIR, donde interesa medir cuanto puede especializarse un modelo generalista de ~9.6B de parametros sin degradar su comportamiento conversacional. El acceso esta restringido (gated) y requiere aceptar condiciones en HuggingFace, y la licencia declarada es Apache 2.0.
+El modelo es relevante en el contexto de la investigacion sobre razonamiento matematico formal y evaluacion tipo SAIR, donde interesa medir cuanto puede especializarse un modelo generalista de ~9.6B de parametros sin degradar su comportamiento conversacional. El acceso esta restringido (gated) y requiere aceptar condiciones en Hugging Face, y la licencia declarada es Apache 2.0.
 
 ## Especificaciones tecnicas
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - Cuantizacion de 4 bits (por ejemplo, formatos GGUF Q4): aproximadamente 5-6 GB, lo que permitiria ejecucion en GPUs de consumo de gama media (RTX 4060 Ti 16 GB, RTX 3060 12 GB) e incluso en CPU con llama.cpp, aunque con perdida de calidad no cuantificada en este repositorio.
 - Opciones de despliegue: al estar en formato transformers/safetensors, es compatible con vLLM, Text Generation Inference (TGI) y transformers nativo; para cuantizacion en CPU o equipos modestos seria necesario convertir los pesos a GGUF para llama.cpp u Ollama, conversion no publicada por el autor.
 - Latencia y throughput: no disponibles. No se aportan mediciones de tokens por segundo ni de tiempo hasta el primer token.
-- Nota: el acceso esta restringido, por lo que la descarga requiere aceptar las condiciones del autor en HuggingFace antes de cualquier despliegue.
+- Nota: el acceso esta restringido, por lo que la descarga requiere aceptar las condiciones del autor en Hugging Face antes de cualquier despliegue.
 
 ## Comparativa con modelos similares
 
@@ -87,7 +87,7 @@ La comparacion con los checkpoints de violetxi es especialmente relevante porque
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/U-WIN/qwen35-9b-equational-theory-sair-notes-ntp-50m-kl-0p01
+- Modelo en Hugging Face: https://huggingface.co/U-WIN/qwen35-9b-equational-theory-sair-notes-ntp-50m-kl-0p01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Receta de despliegue en vLLM para el modelo base: https://recipes.vllm.ai/Qwen/Qwen3.5-9B
 - Variante relacionada (violetxi, mezcla 70n30t con thinking): https://huggingface.co/violetxi/qwen35-9b-equational-theory-sair-mix50m-70n30t-thinking

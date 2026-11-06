@@ -83,7 +83,7 @@ La comparación con alternativas de ASR con diarización queda limitada a lo ant
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Maxkuo/MOSS-Transcribe-Diarize-mlx-q8
+- Modelo en Hugging Face: https://huggingface.co/Maxkuo/MOSS-Transcribe-Diarize-mlx-q8
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Transcribe-Diarize
 - Librería mlx-audio: no disponible en la información proporcionada
 - Paper, blog o demo: no disponible en la información proporcionada

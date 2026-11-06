@@ -2,11 +2,11 @@
 
 ## Resumen
 
-hajunaoaf/matching es un prototipo de investigacion publicado en HuggingFace por el usuario hajunaoaf, construido sobre una arquitectura PoolFormer y orientado a tareas de matching (emparejamiento). El repositorio se declara explicitamente como experimental: el checkpoint incluido (`model.safetensors`) es una inicializacion valida para pruebas de humo, no un modelo entrenado ni evaluado. El recuento real de parametros en safetensors es de 33.088, muy lejos de lo que sugiere la etiqueta de escala "giant" que aparece en la configuracion, lo que confirma que se trata de un esqueleto de codigo con fines de investigacion.
+hajunaoaf/matching es un prototipo de investigacion publicado en Hugging Face por el usuario hajunaoaf, construido sobre una arquitectura PoolFormer y orientado a tareas de matching (emparejamiento). El repositorio se declara explicitamente como experimental: el checkpoint incluido (`model.safetensors`) es una inicializacion valida para pruebas de humo, no un modelo entrenado ni evaluado. El recuento real de parametros en safetensors es de 33.088, muy lejos de lo que sugiere la etiqueta de escala "giant" que aparece en la configuracion, lo que confirma que se trata de un esqueleto de codigo con fines de investigacion.
 
 El interes del modelo es, por tanto, metodologico y no competitivo. PoolFormer es una arquitectura propuesta en el paper "MetaFormer is Actually What You Need for Vision" (Meta AI), que demuestra que el mecanismo de atencion puede sustituirse por un operador de pooling promedio muy simple manteniendo un rendimiento competitivo en vision. Este repositorio aplica esa idea al dominio de matching con una configuracion personalizada (atencion sparse, fusion bilinear, activacion mish, normalizacion scalenorm) y un recipe de entrenamiento por defecto basado en el optimizador Lion con warmup lineal.
 
-No hay pesos entrenados, no hay resultados de benchmarks, no hay model card con datos de entrenamiento y no hay pipeline declarado en HuggingFace. Cualquier evaluacion seria del modelo exige entrenarlo primero con un conjunto de validacion pareado y compararlo contra una linea base de capacidad equivalente.
+No hay pesos entrenados, no hay resultados de benchmarks, no hay model card con datos de entrenamiento y no hay pipeline declarado en Hugging Face. Cualquier evaluacion seria del modelo exige entrenarlo primero con un conjunto de validacion pareado y compararlo contra una linea base de capacidad equivalente.
 
 ## Especificaciones tecnicas
 
@@ -67,7 +67,7 @@ No hay una comparativa directa disponible, porque el repositorio no es un modelo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| hajunaoaf/matching | 33.088 (recuento real) | no disponible | BSD-3-Clause | HuggingFace, checkpoint sin entrenar |
+| hajunaoaf/matching | 33.088 (recuento real) | no disponible | BSD-3-Clause | Hugging Face, checkpoint sin entrenar |
 | PoolFormer-S12 (paper MetaFormer) | aprox. 12 M | no disponible (vision) | no disponible en el repositorio | pesos oficiales en el repo sail-sg/metaformer |
 | PoolFormer-S36 (paper MetaFormer) | aprox. 31 M | no disponible (vision) | no disponible en el repositorio | pesos oficiales en el repo sail-sg/metaformer |
 | PoolFormer-M48 (paper MetaFormer) | aprox. 73 M | no disponible (vision) | no disponible en el repositorio | pesos oficiales en el repo sail-sg/metaformer |
@@ -88,7 +88,7 @@ Las cifras de parametros de las variantes PoolFormer proceden de la documentacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hajunaoaf/matching
+- Modelo en Hugging Face: https://huggingface.co/hajunaoaf/matching
 - Paper de PoolFormer / MetaFormer: https://arxiv.org/abs/2111.11418
 - Repositorio oficial de MetaFormer (sail-sg): https://github.com/sail-sg/metaformer
 - Paper del optimizador Lion: https://arxiv.org/abs/2302.06675

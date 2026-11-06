@@ -31,7 +31,7 @@ La relevancia de esta version esta en el post-entrenamiento: segun la model card
 | Precision | bfloat16 |
 | Modelo base | JetBrains/Mellum2-12B-A2.5B-Base |
 | Tamano del repositorio | 24,3 GB |
-| Descargas / likes en HuggingFace | 110 / 16 (a fecha de la informacion disponible) |
+| Descargas / likes en Hugging Face | 110 / 16 (a fecha de la informacion disponible) |
 
 ## Arquitectura y entrenamiento
 
@@ -130,7 +130,7 @@ Para alternativas de otros fabricantes dentro de la misma categoria (MoE de peso
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking
+- Modelo en Hugging Face: https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking
 - Modelo base: https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Base
 - Version anterior (Mellum2 Thinking): https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Thinking
 - Referencia arXiv incluida en las etiquetas del modelo: https://arxiv.org/abs/2605.31268

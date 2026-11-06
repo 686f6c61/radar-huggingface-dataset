@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la información disponible. La d
 
 | Modelo | Parametros | Contexto | Idiomas SEA | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen-SEA-LION-v4.5-27B-IT | 27B | 262K | 10 | MIT | HuggingFace, Ollama |
-| Qwen-SEA-LION-v4-32B-IT | 32B | 32K | 7 (birmano, indonesio, malayo, filipino, tamil, tailandés, vietnamita) | MIT | HuggingFace |
-| Qwen3-32B | 32B | 32K (ampliable a 128K) | Solo inglés y chino (multilingüe general) | Apache 2.0 | HuggingFace |
-| SeaLLM-7B-v2 | 7B | 32K | 8 (indonesio, tailandés, vietnamita, malayo, tagalo, birmano, jemer, lao) | CC-BY-NC-4.0 | HuggingFace |
+| Qwen-SEA-LION-v4.5-27B-IT | 27B | 262K | 10 | MIT | Hugging Face, Ollama |
+| Qwen-SEA-LION-v4-32B-IT | 32B | 32K | 7 (birmano, indonesio, malayo, filipino, tamil, tailandés, vietnamita) | MIT | Hugging Face |
+| Qwen3-32B | 32B | 32K (ampliable a 128K) | Solo inglés y chino (multilingüe general) | Apache 2.0 | Hugging Face |
+| SeaLLM-7B-v2 | 7B | 32K | 8 (indonesio, tailandés, vietnamita, malayo, tagalo, birmano, jemer, lao) | CC-BY-NC-4.0 | Hugging Face |
 
 La comparación muestra que Qwen-SEA-LION-v4.5-27B-IT ofrece el mayor contexto de su categoría (262K) y la licencia más permisiva (MIT), superando a la versión v4 en longitud de contexto y a SeaLLM en tamaño y cobertura. Sin embargo, no se dispone de benchmarks comparativos publicados para verificar el rendimiento relativo.
 
@@ -80,8 +80,8 @@ La comparación muestra que Qwen-SEA-LION-v4.5-27B-IT ofrece el mayor contexto d
 
 ## Enlaces
 
-- Repositorio HuggingFace (copia de scalejade): https://huggingface.co/scalejade/qwen-sea-lion-v4.5-27b-it
-- Repositorio HuggingFace oficial (AI Singapore): https://huggingface.co/aisingapore/Qwen-SEA-LION-v4.5-27B-IT
+- Repositorio Hugging Face (copia de scalejade): https://huggingface.co/scalejade/qwen-sea-lion-v4.5-27b-it
+- Repositorio Hugging Face oficial (AI Singapore): https://huggingface.co/aisingapore/Qwen-SEA-LION-v4.5-27B-IT
 - Documentación oficial SEA-LION v4.5: https://docs.sea-lion.ai/models/sea-lion-v4.5/qwen-sea-lion-v4.5
 - Página principal de SEA-LION v4.5: https://docs.sea-lion.ai/models/sea-lion-v4.5
 - GitHub (documentación y ejemplos): https://github.com/aisingapore/sealion/blob/main/models/sea-lion-v4.5/qwen-sea-lion-v4.5.md

@@ -99,7 +99,7 @@ La comparación con alternativas de la misma categoría (MoE de ~8B para on-devi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/assassinshadow/LFM2.5-8B-A1B-LiteRT-LM-NPU-GPU
+- Modelo en Hugging Face: https://huggingface.co/assassinshadow/LFM2.5-8B-A1B-LiteRT-LM-NPU-GPU
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-8B-A1B
 - LiteRT-LM (Google AI Edge): https://github.com/google-ai-edge/LiteRT-LM
 - Runtime parcheado y fuentes (repo Gemma 4 E4B del mismo autor): https://huggingface.co/assassinshadow/Gemma-4-E4B-it-text-SM8450-LiteRT-LM-NPU/tree/main/runtime

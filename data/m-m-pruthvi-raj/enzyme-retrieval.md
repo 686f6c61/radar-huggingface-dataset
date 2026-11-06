@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Enzyme retrieval (v2) es un sistema de predicción del número EC (Enzyme Commission) de una enzima a partir del SMILES de la reacción que cataliza, publicado por el usuario de HuggingFace m-m-pruthvi-raj. No es un modelo de lenguaje: es un ensemble de recuperación y clasificación compuesto por un buscador de vecinos más cercanos sobre fingerprints de reacción y tres perceptrones multicapa implementados en numpy puro, con cabezas jerárquicas sobre los cuatro niveles de la taxonomía EC. El repositorio ocupa 0,6 GB y no registra descargas ni valoraciones en el momento de la consulta.
+Enzyme retrieval (v2) es un sistema de predicción del número EC (Enzyme Commission) de una enzima a partir del SMILES de la reacción que cataliza, publicado por el usuario de Hugging Face m-m-pruthvi-raj. No es un modelo de lenguaje: es un ensemble de recuperación y clasificación compuesto por un buscador de vecinos más cercanos sobre fingerprints de reacción y tres perceptrones multicapa implementados en numpy puro, con cabezas jerárquicas sobre los cuatro niveles de la taxonomía EC. El repositorio ocupa 0,6 GB y no registra descargas ni valoraciones en el momento de la consulta.
 
 El interés técnico está en su planteamiento de coste casi nulo: funciona solo en CPU y, según el autor, procesa unas 5.000 reacciones en aproximadamente un minuto, lo que lo sitúa como herramienta de triaje o pre-etiquetado masivo dentro de pipelines de curación de bases de datos de bioquímica. La combinación de recuperación por similitud (votos ponderados por similitud^16) con un clasificador neuronal ligero (score final = votos de vecinos + 8 × probabilidad del MLP) es una arquitectura híbrida poco habitual en este dominio, donde lo común son modelos de grafos o transformers sobre reacciones.
 
@@ -76,7 +76,7 @@ No se dispone de datos comparativos en la información proporcionada: la model c
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| enzyme-retrieval (v2) | no disponible | no aplica | no disponible | no disponible | HuggingFace, 0 descargas |
+| enzyme-retrieval (v2) | no disponible | no aplica | no disponible | no disponible | Hugging Face, 0 descargas |
 | Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -89,10 +89,10 @@ No se dispone de datos comparativos en la información proporcionada: la model c
 - Fingerprints de radio 1 y 2: representación local y de corto alcance, con capacidad limitada para capturar patrones mecanísticos globales o diferencias sutiles entre subclases EC próximas.
 - Riesgo de alucinación en sentido laxo: el clasificador siempre devuelve un EC con un score, sin umbral de abstención documentado, por lo que puede asignar una clase con confianza aparente a reacciones fuera de distribución.
 - Sin soporte de texto natural ni multilingüe: no puede explicar la predicción ni justificar la asignación; la salida es puramente numérica y requiere interpretación externa.
-- Madurez y validación comunitaria nulas: cero descargas y cero valoraciones en HuggingFace; el proyecto parece un ejercicio o un trabajo en curso y no una herramienta con mantenimiento demostrado.
+- Madurez y validación comunitaria nulas: cero descargas y cero valoraciones en Hugging Face; el proyecto parece un ejercicio o un trabajo en curso y no una herramienta con mantenimiento demostrado.
 - Naturaleza multietiqueta repartida 1/n: la estrategia de reparto entre varios EC registrados puede diluir la señal en reacciones con anotaciones históricamente ambiguas.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/m-m-pruthvi-raj/enzyme-retrieval
+- Hugging Face: https://huggingface.co/m-m-pruthvi-raj/enzyme-retrieval
 - No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos adicionales asociados a este modelo.

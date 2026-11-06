@@ -82,7 +82,7 @@ La principal diferencia frente al modelo original es el formato y la cuantizaci√
 
 ## Enlaces
 
-- [HuggingFace: VoragoStudios/gct-opus-mt-tc-big-en-ces-slk-ct2](https://huggingface.co/VoragoStudios/gct-opus-mt-tc-big-en-ces-slk-ct2)
+- [Hugging Face: VoragoStudios/gct-opus-mt-tc-big-en-ces-slk-ct2](https://huggingface.co/VoragoStudios/gct-opus-mt-tc-big-en-ces-slk-ct2)
 - [Modelo original: Helsinki-NLP/opus-mt-tc-big-en-ces_slk](https://huggingface.co/Helsinki-NLP/opus-mt-tc-big-en-ces_slk)
 - [Proyecto OPUS-MT](https://github.com/Helsinki-NLP/OPUS-MT)
 - [CTranslate2](https://github.com/OpenNMT/CTranslate2)

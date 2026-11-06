@@ -2,7 +2,7 @@
 
 ## Resumen
 
-qwen3-1.7b-sciworld-ours-splice-t-r2-2ep es un checkpoint de ajuste fino (fine-tuning) publicado en HuggingFace por el usuario jamesjunyuguo, construido sobre la base del modelo Qwen3 de 1.700 millones de parametros. El nombre del repositorio sugiere un entrenamiento orientado a un dominio o tarea especifica ("sciworld", posiblemente relacionado con razonamiento cientifico o entornos tipo ScienceWorld), con una variante de entrenamiento identificada como "splice-t-r2" y una duracion de 2 epocas. El checkpoint se distribuye en formato safetensors y ocupa 6,9 GB en el repositorio.
+qwen3-1.7b-sciworld-ours-splice-t-r2-2ep es un checkpoint de ajuste fino (fine-tuning) publicado en Hugging Face por el usuario jamesjunyuguo, construido sobre la base del modelo Qwen3 de 1.700 millones de parametros. El nombre del repositorio sugiere un entrenamiento orientado a un dominio o tarea especifica ("sciworld", posiblemente relacionado con razonamiento cientifico o entornos tipo ScienceWorld), con una variante de entrenamiento identificada como "splice-t-r2" y una duracion de 2 epocas. El checkpoint se distribuye en formato safetensors y ocupa 6,9 GB en el repositorio.
 
 El modelo hereda la arquitectura transformer densa de la familia Qwen3, con 1.720.574.976 parametros totales confirmados por los pesos. No se dispone de informacion publicada sobre el dataset de entrenamiento, el proceso de ajuste (SFT, RLHF, DPO) ni los hiperparametros empleados mas alla de lo que indica el propio nombre del repositorio.
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| qwen3-1.7b-sciworld-ours-splice-t-r2-2ep | 1.720.574.976 | No disponible | No disponible | HuggingFace, safetensors |
-| Qwen3-1.7B (base) | ~1.700 millones | No disponible en esta ficha | No disponible en esta ficha | HuggingFace |
-| Alternativas de ~1-2B (p. ej. Llama 3.2 1B, Gemma 2 2B) | No disponible en esta ficha | No disponible en esta ficha | No disponible en esta ficha | HuggingFace |
+| qwen3-1.7b-sciworld-ours-splice-t-r2-2ep | 1.720.574.976 | No disponible | No disponible | Hugging Face, safetensors |
+| Qwen3-1.7B (base) | ~1.700 millones | No disponible en esta ficha | No disponible en esta ficha | Hugging Face |
+| Alternativas de ~1-2B (p. ej. Llama 3.2 1B, Gemma 2 2B) | No disponible en esta ficha | No disponible en esta ficha | No disponible en esta ficha | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo para este checkpoint, por lo que la comparativa se limita a parametros y disponibilidad.
 
@@ -83,5 +83,5 @@ No se dispone de datos de rendimiento comparativo para este checkpoint, por lo q
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jamesjunyuguo/qwen3-1.7b-sciworld-ours-splicet-r2-2ep
+- Hugging Face: https://huggingface.co/jamesjunyuguo/qwen3-1.7b-sciworld-ours-splicet-r2-2ep
 - Paper, blog, repositorio o demo: no disponible en la informacion proporcionada.

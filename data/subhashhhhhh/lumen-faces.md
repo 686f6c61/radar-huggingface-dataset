@@ -6,14 +6,14 @@
 
 El problema que resuelve es el agrupamiento de caras por persona en la galería del dispositivo sin enviar ninguna fotografía a un servidor: la aplicación descarga los ficheros bajo petición desde sus ajustes, verifica sus sumas SHA-256 y ejecuta la inferencia en el propio teléfono. Por tanto, su relevancia no está en el rendimiento bruto ni en la novedad arquitectónica, sino en la distribución reproducible y verificable de dos modelos pequeños y consolidados (YuNet, Shiqi Yu; SFace, Zhong et al. 2021) en un contexto de privacidad por diseño.
 
-El repositorio tiene 0 descargas y 0 *likes* en el momento de la consulta, un tamaño de 0.0 GB reportado por HuggingFace y fue creado el 24 de octubre de 2026. Es un artefacto de distribución para una aplicación concreta, no un modelo entrenado por el autor del repositorio.
+El repositorio tiene 0 descargas y 0 *likes* en el momento de la consulta, un tamaño de 0.0 GB reportado por Hugging Face y fue creado el 24 de octubre de 2026. Es un artefacto de distribución para una aplicación concreta, no un modelo entrenado por el autor del repositorio.
 
 ## Especificaciones técnicas
 
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Dos redes convolucionales independientes en formato ONNX: YuNet (detección de caras, salidas por *stride* 8/16/32 con `cls`, `obj`, `bbox`, `kps`) y SFace (reconocimiento facial, embedding de 128 dimensiones) |
-| Parametros totales | No disponible (ni la model card ni la información de HuggingFace publican el recuento de parámetros) |
+| Parametros totales | No disponible (ni la model card ni la información de Hugging Face publican el recuento de parámetros) |
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No aplica (modelos de visión, sin ventana de contexto textual) |
 | Tipos de cuantizacion | No disponible; se distribuyen ficheros ONNX sin indicar precisiones (FP32/FP16/INT8) de los grafos |
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento publicado en la informacion disponible | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| lumen-faces (YuNet + SFace) | Detección + reconocimiento facial (ONNX) | No disponible | No aplica | No disponible | Apache 2.0 (repo y SFace), MIT (YuNet) | HuggingFace, OpenCV Zoo |
+| lumen-faces (YuNet + SFace) | Detección + reconocimiento facial (ONNX) | No disponible | No aplica | No disponible | Apache 2.0 (repo y SFace), MIT (YuNet) | Hugging Face, OpenCV Zoo |
 | YuNet (original, OpenCV Zoo) | Detección facial | No disponible | No aplica | No disponible | MIT | OpenCV Zoo (mismo fichero de origen) |
 | SFace (original, OpenCV Zoo) | Reconocimiento facial | No disponible | No aplica | No disponible | Apache 2.0 | OpenCV Zoo (mismo fichero de origen) |
 | Otras alternativas de detección/reconocimiento facial (RetinaFace, SCRFD, ArcFace) | Detección / reconocimiento | No disponible | No aplica | No disponible | No disponible en la información proporcionada (verificar antes de uso comercial) | No verificado en esta búsqueda |
@@ -85,7 +85,7 @@ Nota: las dos primeras alternativas no son realmente competidoras, sino el mismo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/subhashhhhhh/lumen-faces
+- Repositorio en Hugging Face: https://huggingface.co/subhashhhhhh/lumen-faces
 - OpenCV Zoo (origen de ambos ficheros): https://github.com/opencv/opencv_zoo
 - Commit referenciado: `48b10fa505aeb51fbd127fc60a5c660040e823b7` (https://github.com/opencv/opencv_zoo/commit/48b10fa505aeb51fbd127fc60a5c660040e823b7)
 - Issue sobre los datos de entrenamiento de SFace: https://github.com/opencv/opencv_zoo/issues/313

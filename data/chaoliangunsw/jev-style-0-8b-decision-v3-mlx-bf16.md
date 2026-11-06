@@ -17,7 +17,7 @@ El modelo pertenece a la serie de decision "Jev-Style" del mismo autor (v1 2B, v
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | 25.600 tokens para la entrada completa; 2.048 tokens para pregunta, opciones y readout; las entradas que exceden el presupuesto lanzan error, no se truncan |
 | Tipos de cuantizacion | bf16 (pesos); el runtime usa activaciones en float32 sobre los pesos bf16 (ajuste validado). No se distribuyen otras cuantizaciones en este repositorio |
-| Idiomas soportados | Metadatos de HuggingFace: 19 idiomas (en, zh, ar, bg, de, el, es, fr, hi, ja, ko, pt, ru, sw, ta, th, tr, ur, vi). La model card afirma evaluacion en 51 idiomas sobre MASSIVE |
+| Idiomas soportados | Metadatos de Hugging Face: 19 idiomas (en, zh, ar, bg, de, el, es, fr, hi, ja, ko, pt, ru, sw, ta, th, tr, ur, vi). La model card afirma evaluacion en 51 idiomas sobre MASSIVE |
 | Licencia | Apache-2.0 |
 | Formato de pesos | safetensors (bf16), libreria MLX; incluye `config.json`, tokenizer, `readout_config.json` y `jev_style_decision_mlx.py` |
 | Pipeline declarado | text-classification |
@@ -83,7 +83,7 @@ Los benchmarks publicados por el autor corresponden a tareas de decision y clasi
 
 | Modelo | Parametros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jev-Style-0.8B-Decision-v3-MLX-bf16 | 752.393.024 | 25.600 tokens de entrada | 71,7 % macro en MASSIVE (51 idiomas); 79,2 % en 2.000 decisiones tipadas; 98,3 % a 24K | Apache-2.0 | Pesos MLX bf16 en HuggingFace |
+| Jev-Style-0.8B-Decision-v3-MLX-bf16 | 752.393.024 | 25.600 tokens de entrada | 71,7 % macro en MASSIVE (51 idiomas); 79,2 % en 2.000 decisiones tipadas; 98,3 % a 24K | Apache-2.0 | Pesos MLX bf16 en Hugging Face |
 | Jev-Style-Qwen3.5-2B-Decision-v2-MLX-bf16 | 2B (aproximado) | No disponible | 5,7 puntos por debajo de v3 en 2.000 decisiones tipadas | No disponible en la informacion consultada | Pesos MLX bf16 |
 | Jev-Style-Qwen3.5-2B-Decision (v1, GGUF) | 2B (aproximado) | No disponible | 6,4 puntos por debajo de v3 en 2.000 decisiones tipadas; Brier score 3,2× peor | No disponible en la informacion consultada | Pesos GGUF |
 | Laya multilingual | No disponible | Presupuestos por defecto de 512 / 1.024 tokens | 40,1 % macro en MASSIVE, re-ejecutado por el autor sobre filas identicas | No disponible en la informacion consultada | Checkpoint oficial |
@@ -107,7 +107,7 @@ La comparacion con Laya esta limitada por el presupuesto de contexto: los tramos
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/chaoliangUNSW/Jev-Style-0.8B-Decision-v3-MLX-bf16
+- Repositorio Hugging Face: https://huggingface.co/chaoliangUNSW/Jev-Style-0.8B-Decision-v3-MLX-bf16
 - Modelo base (pesos originales v3): https://huggingface.co/chaoliangUNSW/Jev-Style-0.8B-Decision-v3
 - Model card principal, con protocolos, datos de entrenamiento y licencias: https://huggingface.co/chaoliangUNSW/Jev-Style-0.8B-Decision-v3#input-format-and-readout
 - Version v1, 2B, en GGUF: https://huggingface.co/chaoliangUNSW/Jev-Style-Qwen3.5-2B-Decision-GGUF

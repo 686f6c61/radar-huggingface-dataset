@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El artefacto identificado como `davidwdw/fa-pi05-human-full-1000-0efa221c47fc-4ba360d10d19` es un paquete publicado en HuggingFace por el usuario `davidwdw`. Segun la propia model card, no se trata de un modelo listo para inferencia al uso, sino de un "versioned fleet archive" (archivo versionado de flota) cuyo contenido declarado abarca cuatro componentes: parametros, estado de entrenamiento (`train_state`), recursos auxiliares (`assets`) y controlador. El repositorio ocupa 44,7 GB y la unica documentacion disponible se limita a la receta canonica de referencia (`2026-09-23_b1k_task00_pi05_human_sft_h20_plan`) y a la instruccion de verificar sumas SHA256.
+El artefacto identificado como `davidwdw/fa-pi05-human-full-1000-0efa221c47fc-4ba360d10d19` es un paquete publicado en Hugging Face por el usuario `davidwdw`. Segun la propia model card, no se trata de un modelo listo para inferencia al uso, sino de un "versioned fleet archive" (archivo versionado de flota) cuyo contenido declarado abarca cuatro componentes: parametros, estado de entrenamiento (`train_state`), recursos auxiliares (`assets`) y controlador. El repositorio ocupa 44,7 GB y la unica documentacion disponible se limita a la receta canonica de referencia (`2026-09-23_b1k_task00_pi05_human_sft_h20_plan`) y a la instruccion de verificar sumas SHA256.
 
 El nombre del paquete sugiere, sin confirmacion por parte del autor, un modelo de la familia "pi05" sometido a un ajuste supervisado (`sft`) sobre datos humanos (`human`), dentro de un plan identificado como `b1k_task00`. No obstante, la model card no especifica arquitectura, numero de parametros, longitud de contexto, idiomas, licencia ni pipeline, por lo que cualquier afirmacion sobre su naturaleza funcional queda fuera de lo verificable con la informacion disponible.
 
@@ -20,7 +20,7 @@ Su relevancia actual es, por tanto, de caracter metodologico y de trazabilidad: 
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
 | Formato de pesos | no disponible (el paquete declara un tier "params+train_state+assets+controller" sin detallar formatos) |
-| Identificador en HuggingFace | davidwdw/fa-pi05-human-full-1000-0efa221c47fc-4ba360d10d19 |
+| Identificador en Hugging Face | davidwdw/fa-pi05-human-full-1000-0efa221c47fc-4ba360d10d19 |
 | Autor | davidwdw |
 | Fecha de creacion | 2026-09-26T22:44:57Z |
 | Ultima actualizacion | 2026-09-26T22:48:40Z |
@@ -93,5 +93,5 @@ No disponible. La informacion proporcionada no permite identificar la categoria 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davidwdw/fa-pi05-human-full-1000-0efa221c47fc-4ba360d10d19
+- Modelo en Hugging Face: https://huggingface.co/davidwdw/fa-pi05-human-full-1000-0efa221c47fc-4ba360d10d19
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos adicionales asociados a este identificador.

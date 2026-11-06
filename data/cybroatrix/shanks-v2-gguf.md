@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo para Shanks v2 al no haberse p
 
 ## Enlaces
 
-- [HuggingFace: CybroatriX/Shanks-v2-GGUF](https://huggingface.co/CybroatriX/Shanks-v2-GGUF)
+- [Hugging Face: CybroatriX/Shanks-v2-GGUF](https://huggingface.co/CybroatriX/Shanks-v2-GGUF)
 - [Perfil del autor en GitHub: whynotshanks](https://github.com/whynotshanks)
 - [Ecosistema Cybroatrix](https://cybroatrix.com)
 - [Modelo base: Qwen 2.5 Coder 7B Instruct](https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct)

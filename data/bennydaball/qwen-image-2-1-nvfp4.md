@@ -88,10 +88,10 @@ La informacion disponible solo permite comparar el paquete NVFP4 con las otras d
 
 | Version | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BennyDaBall/Qwen-Image-2.1-NVFP4 | no disponible | no aplicable | 6,746 s (1024x1024, 40 pasos, RTX 5090) | qwen-research-license (investigacion y evaluacion) | HuggingFace, safetensors, 12,42 GB |
-| Comfy-Org/Qwen-Image-2.1 (BF16) | no disponible | no aplicable | 15,629 s (misma prueba) | segun el modelo base | HuggingFace, 32,44 GB |
-| Release INT8 oficial | no disponible | no aplicable | 7,553 s (misma prueba) | segun el modelo base | HuggingFace, tamano no disponible |
-| Qwen/Qwen-Image-2.1 (original) | no disponible | no aplicable | no disponible | qwen-research-license | HuggingFace |
+| BennyDaBall/Qwen-Image-2.1-NVFP4 | no disponible | no aplicable | 6,746 s (1024x1024, 40 pasos, RTX 5090) | qwen-research-license (investigacion y evaluacion) | Hugging Face, safetensors, 12,42 GB |
+| Comfy-Org/Qwen-Image-2.1 (BF16) | no disponible | no aplicable | 15,629 s (misma prueba) | segun el modelo base | Hugging Face, 32,44 GB |
+| Release INT8 oficial | no disponible | no aplicable | 7,553 s (misma prueba) | segun el modelo base | Hugging Face, tamano no disponible |
+| Qwen/Qwen-Image-2.1 (original) | no disponible | no aplicable | no disponible | qwen-research-license | Hugging Face |
 
 Comparativa con alternativas de terceros (por ejemplo familias tipo FLUX o Stable Diffusion): no disponible en la informacion proporcionada.
 
@@ -110,7 +110,7 @@ Comparativa con alternativas de terceros (por ejemplo familias tipo FLUX o Stabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BennyDaBall/Qwen-Image-2.1-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/BennyDaBall/Qwen-Image-2.1-NVFP4
 - Modelo base (paquete BF16 de Comfy-Org): https://huggingface.co/Comfy-Org/Qwen-Image-2.1
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Licencia incluida: https://huggingface.co/BennyDaBall/Qwen-Image-2.1-NVFP4/blob/main/LICENSE

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CodeDetect-CodeBERT-T1 es un modelo de clasificación de texto obtenido por fine-tuning de `microsoft/codebert-base`, un encoder tipo RoBERTa preentrenado sobre código fuente. Lo publica el usuario azherali en HuggingFace y su propósito declarado, a juzgar por el nombre, es la detección de código dentro de texto, aunque la model card no documenta la tarea exacta ni el conjunto de datos empleado (aparece literalmente como "None dataset"). No es un modelo generativo: devuelve una etiqueta por secuencia de entrada, por lo que su uso es el de un clasificador binario o multiclase.
+CodeDetect-CodeBERT-T1 es un modelo de clasificación de texto obtenido por fine-tuning de `microsoft/codebert-base`, un encoder tipo RoBERTa preentrenado sobre código fuente. Lo publica el usuario azherali en Hugging Face y su propósito declarado, a juzgar por el nombre, es la detección de código dentro de texto, aunque la model card no documenta la tarea exacta ni el conjunto de datos empleado (aparece literalmente como "None dataset"). No es un modelo generativo: devuelve una etiqueta por secuencia de entrada, por lo que su uso es el de un clasificador binario o multiclase.
 
 El modelo tiene 124.647.170 parámetros (unos 125M, coherente con CodeBERT-base) y un tamaño de repositorio de 2,5 GB, que probablemente incluye checkpoints intermedios de las cinco épocas de entrenamiento. El autor declara unas métricas de evaluación de accuracy 0,9747, F1 0,9746, precisión 0,9750 y recall 0,9744, con una pérdida de validación de 0,1114, aunque sin identificar el conjunto de evaluación.
 
@@ -83,8 +83,8 @@ No hay comparación con otros modelos en la información disponible, y el `model
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CodeDetect-CodeBERT-T1 | 124,6M | 512 tokens (según modelo base) | Clasificación de texto (detección de código, presunta) | No disponible | HuggingFace, 0 descargas |
-| microsoft/codebert-base | 124,6M | 512 tokens | Encoder base, requiere fine-tuning para clasificar | No verificada en la información disponible | HuggingFace, ampliamente utilizado |
+| CodeDetect-CodeBERT-T1 | 124,6M | 512 tokens (según modelo base) | Clasificación de texto (detección de código, presunta) | No disponible | Hugging Face, 0 descargas |
+| microsoft/codebert-base | 124,6M | 512 tokens | Encoder base, requiere fine-tuning para clasificar | No verificada en la información disponible | Hugging Face, ampliamente utilizado |
 | Alternativas de detección de código con métricas publicadas | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de resultados de benchmarks de terceros ni de modelos comparables con métricas verificables en la información proporcionada, por lo que la comparación de rendimiento se limita al modelo base, sobre el que este checkpoint mejora por definición en la tarea concreta de su dataset (no identificado).
@@ -104,6 +104,6 @@ No se dispone de resultados de benchmarks de terceros ni de modelos comparables 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/azherali/CodeDetect-CodeBERT-T1
+- Modelo en Hugging Face: https://huggingface.co/azherali/CodeDetect-CodeBERT-T1
 - Modelo base: https://huggingface.co/microsoft/codebert-base
 - Paper, blog o demo del autor: no disponibles en la información proporcionada.

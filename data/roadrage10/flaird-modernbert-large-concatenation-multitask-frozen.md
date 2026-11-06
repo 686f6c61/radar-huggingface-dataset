@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`flaird-modernbert-large-concatenation-multitask-frozen` es un modelo encoder-only de clasificación de texto publicado en HuggingFace por el usuario `roadrage10`. Se trata de un fine-tuning de un modelo de la familia ModernBERT (la nomenclatura del repositorio apunta a la variante `large`) entrenado sobre un dataset no especificado, con 397.035.532 parámetros totales y un tamaño de repositorio de 3,2 GB en formato safetensors. El pipeline declarado es `text-classification` y la librería es Transformers.
+`flaird-modernbert-large-concatenation-multitask-frozen` es un modelo encoder-only de clasificación de texto publicado en Hugging Face por el usuario `roadrage10`. Se trata de un fine-tuning de un modelo de la familia ModernBERT (la nomenclatura del repositorio apunta a la variante `large`) entrenado sobre un dataset no especificado, con 397.035.532 parámetros totales y un tamaño de repositorio de 3,2 GB en formato safetensors. El pipeline declarado es `text-classification` y la librería es Transformers.
 
 El sufijo del nombre ("concatenation", "multitask", "frozen") sugiere una configuración de entrenamiento multitarea con concatenación de representaciones y con el backbone congelado, aunque ni la model card ni la información disponible detallan esa configuración. El modelo reporta métricas de evaluación muy altas en su conjunto de validación (F1 0,97; ROC-AUC 0,978; C@1 0,944; Brier 0,951), pero el autor no documenta la tarea concreta, el dataset ni las clases objetivo.
 
@@ -115,7 +115,7 @@ La comparación directa de rendimiento no es posible porque no hay resultados de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/roadrage10/flaird-modernbert-large-concatenation-multitask-frozen
+- Modelo en Hugging Face: https://huggingface.co/roadrage10/flaird-modernbert-large-concatenation-multitask-frozen
 - Repositorio similar (otro usuario): https://huggingface.co/MahmoodAnaam/flaird-modernbert-large-concatenation-multitask-frozen
 - Repositorio similar (otro usuario): https://huggingface.co/yusr9/flaird-modernbert-large-concatenation-multitask-frozen
 - Ficha en free2aitools: https://free2aitools.com/model/mahmoodanaam/flaird-modernbert-large-concatenation-multitask-frozen

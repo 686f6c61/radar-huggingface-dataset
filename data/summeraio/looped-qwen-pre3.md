@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`summerAIO/looped-Qwen-pre3` es un modelo de generacion de texto en ingles publicado por el usuario summerAIO en HuggingFace, derivado mediante un finetune de 16 bits (FP16) del modelo `summerMC/looped-Qwen-pre3`. Se presenta como un modelo conversacional de la familia Qwen con una variante arquitectonica etiquetada como `looped_gdn`, lo que sugiere un esquema de capas recurrentes o "looped" sobre un backbone tipo Qwen, aunque el autor no documenta en detalle dicha modificacion.
+`summerAIO/looped-Qwen-pre3` es un modelo de generacion de texto en ingles publicado por el usuario summerAIO en Hugging Face, derivado mediante un finetune de 16 bits (FP16) del modelo `summerMC/looped-Qwen-pre3`. Se presenta como un modelo conversacional de la familia Qwen con una variante arquitectonica etiquetada como `looped_gdn`, lo que sugiere un esquema de capas recurrentes o "looped" sobre un backbone tipo Qwen, aunque el autor no documenta en detalle dicha modificacion.
 
 El modelo cuenta con aproximadamente 989 millones de parametros (dato extraido de los pesos en safetensors) y un repositorio de 2,0 GB, lo que es coherente con un checkpoint en FP16. La licencia es Apache 2.0, lo que permite uso comercial sin restricciones adicionales, y esta etiquetado exclusivamente para el idioma ingles.
 
@@ -25,7 +25,7 @@ La relevancia de este modelo es limitada en el ecosistema actual: se trata de un
 
 La informacion disponible indica que el modelo se basa en la familia Qwen (por el nombre `looped-Qwen`) e incorpora una modificacion etiquetada como `looped_gdn`, que requiere `custom_code` y `trust_remote_code=True` para cargarse en transformers. El termino "looped" sugiere un esquema de reutilizacion de bloques o capas recurrentes, y "gdn" podria referirse a una variante de atencion lineal o gated delta network, pero el autor no publica documentacion tecnica que lo confirme.
 
-El proceso de entrenamiento documentado es minimo: se trata de un finetune de 16 bits realizado con Unsloth y la libreria TRL de HuggingFace, partiendo del modelo `summerMC/looped-Qwen-pre3`. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo fases de RLHF o DPO. La model card se limita a indicar el origen del checkpoint y la herramienta utilizada para el entrenamiento.
+El proceso de entrenamiento documentado es minimo: se trata de un finetune de 16 bits realizado con Unsloth y la libreria TRL de Hugging Face, partiendo del modelo `summerMC/looped-Qwen-pre3`. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo fases de RLHF o DPO. La model card se limita a indicar el origen del checkpoint y la herramienta utilizada para el entrenamiento.
 
 ## Capacidades
 
@@ -44,7 +44,7 @@ El proceso de entrenamiento documentado es minimo: se trata de un finetune de 16
 - Prototipado rapido de chatbots en ingles: al ser un modelo pequeno y con licencia Apache 2.0, se puede desplegar en entornos de desarrollo para validar flujos conversacionales antes de escalar a modelos mayores.
 - Fine-tuning adicional con Unsloth: dado que el propio checkpoint se genero con esta herramienta, sirve como base para experimentos de ajuste con recursos limitados (una sola GPU consumer).
 - Generacion de texto en entornos con restricciones de memoria: sus ~989 M de parametros permiten ejecucion en GPUs de 8-16 GB en FP16 o menos con cuantizacion.
-- Educacion y docencia: util para ilustrar el ciclo completo de publicacion de un modelo en HuggingFace (safetensors, custom_code, TGI).
+- Educacion y docencia: util para ilustrar el ciclo completo de publicacion de un modelo en Hugging Face (safetensors, custom_code, TGI).
 - Evaluacion comparativa de checkpoints derivados: sirve como referencia para medir el impacto de finetunes sobre modelos base Qwen pequenos.
 - No recomendado para produccion en atencion al cliente, generacion de codigo critico o tareas multilingues sin evaluacion previa, dada la ausencia de benchmarks y documentacion.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| summerAIO/looped-Qwen-pre3 | ~989 M | no disponible | Apache 2.0 | HuggingFace | Checkpoint de investigacion, sin benchmarks |
-| Qwen2.5-1.5B | ~1.500 M | 32.768 tokens (segun documentacion publica de Qwen) | Apache 2.0 | HuggingFace | Modelo base bien documentado con benchmarks publicos |
-| Qwen2.5-0.5B | ~500 M | 32.768 tokens (segun documentacion publica de Qwen) | Apache 2.0 | HuggingFace | Version mas pequena de la familia Qwen |
-| SmolLM2-1.7B | ~1.700 M | 8.192 tokens (segun documentacion publica) | Apache 2.0 | HuggingFace | Alternativa pequena con model card detallada |
+| summerAIO/looped-Qwen-pre3 | ~989 M | no disponible | Apache 2.0 | Hugging Face | Checkpoint de investigacion, sin benchmarks |
+| Qwen2.5-1.5B | ~1.500 M | 32.768 tokens (segun documentacion publica de Qwen) | Apache 2.0 | Hugging Face | Modelo base bien documentado con benchmarks publicos |
+| Qwen2.5-0.5B | ~500 M | 32.768 tokens (segun documentacion publica de Qwen) | Apache 2.0 | Hugging Face | Version mas pequena de la familia Qwen |
+| SmolLM2-1.7B | ~1.700 M | 8.192 tokens (segun documentacion publica) | Apache 2.0 | Hugging Face | Alternativa pequena con model card detallada |
 
 La comparativa se limita a modelos de tamano similar de la familia Qwen y alternativas pequenas; no se dispone de datos de rendimiento del modelo evaluado para establecer comparaciones cuantitativas.
 
@@ -87,7 +87,7 @@ La comparativa se limita a modelos de tamano similar de la familia Qwen y altern
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/summerAIO/looped-Qwen-pre3
+- Hugging Face: https://huggingface.co/summerAIO/looped-Qwen-pre3
 - Modelo base: https://huggingface.co/summerMC/looped-Qwen-pre3
 - Unsloth (herramienta de entrenamiento): https://github.com/unslothai/unsloth
-- TRL (libreria de HuggingFace): https://github.com/huggingface/trl
+- TRL (libreria de Hugging Face): https://github.com/huggingface/trl

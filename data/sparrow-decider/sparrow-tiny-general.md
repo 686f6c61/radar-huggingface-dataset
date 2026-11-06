@@ -85,11 +85,11 @@ Datos publicados por el autor, medidos en un núcleo de Apple M4 Pro (no son pun
 
 | Modelo | Parametros | Contexto | JevBench | MASSIVE (dom./int.) | RobotBench | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| sparrow-tiny-general | encoder 32M (fichero 17,9 MB) | no disponible | 123/231 | 0,368 / 0,592 | 20/55 | Apache-2.0 | HuggingFace, runtime Python/numpy |
+| sparrow-tiny-general | encoder 32M (fichero 17,9 MB) | no disponible | 123/231 | 0,368 / 0,592 | 20/55 | Apache-2.0 | Hugging Face, runtime Python/numpy |
 | Strands Decider 2B | ~2B | no disponible | no disponible | 0,86 / 0,871 | 40/55 | Apache-2.0 (proyecto Strands) | público, requiere más cómputo |
 | Strands Decider 4B (profesor) | ~4B | no disponible | no disponible | no disponible | no disponible | Apache-2.0 | usado como profesor en la destilación |
-| sparrow-nano-robot | no disponible (familia de 47 MB a pocos KB) | no disponible | no disponible | no disponible | recomendado por el autor para robots | Apache-2.0 (familia Sparrow) | HuggingFace |
-| Ettin encoder 32M | 32M | no disponible | no aplica | no aplica | no aplica | MIT | HuggingFace (modelo base) |
+| sparrow-nano-robot | no disponible (familia de 47 MB a pocos KB) | no disponible | no disponible | no disponible | recomendado por el autor para robots | Apache-2.0 (familia Sparrow) | Hugging Face |
+| Ettin encoder 32M | 32M | no disponible | no aplica | no aplica | no aplica | MIT | Hugging Face (modelo base) |
 
 ## Limitaciones y advertencias
 
@@ -103,11 +103,11 @@ Datos publicados por el autor, medidos en un núcleo de Apple M4 Pro (no son pun
 - Formato propietario `.sparrow` y runtime propio: no hay soporte conocido en vLLM, llama.cpp, Ollama ni TGI, lo que limita la integración en stacks estándar.
 - Licencia Apache-2.0 para el modelo, pero los pesos base Ettin son MIT con su propio aviso de copyright en `LICENSE-ettin.txt`; hay que conservar ambas atribuciones.
 - Proyecto comunitario no oficial, sin relación con AWS ni con Strands; descargas y likes a fecha de la información: 0, sinvalidacion externa.
-- Repositorio de 0,0 GB en HuggingFace y fecha de creación 2026-10-23: conviene verificar que el fichero de pesos está realmente subido antes de integrarlo.
+- Repositorio de 0,0 GB en Hugging Face y fecha de creación 2026-10-23: conviene verificar que el fichero de pesos está realmente subido antes de integrarlo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sparrow-decider/sparrow-tiny-general
+- Modelo en Hugging Face: https://huggingface.co/sparrow-decider/sparrow-tiny-general
 - Repositorio del proyecto: https://github.com/sparrow-decider/sparrow-decider
 - Resultados de benchmarks: https://github.com/sparrow-decider/sparrow-decider/blob/main/bench/RESULTS.md
 - Datos de referencia del sitio: https://github.com/sparrow-decider/sparrow-decider/blob/main/site/facts.json

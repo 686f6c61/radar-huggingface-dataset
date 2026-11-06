@@ -81,6 +81,6 @@ No disponible. No se han proporcionado datos de modelos comparables en la inform
 
 ## Enlaces
 
-- [Modelo en HuggingFace (Ishowbackup)](https://huggingface.co/Ishowbackup/Muse-Glimmer-30B-Abliterated-MLX-3bit-AWQ)
+- [Modelo en Hugging Face (Ishowbackup)](https://huggingface.co/Ishowbackup/Muse-Glimmer-30B-Abliterated-MLX-3bit-AWQ)
 - [Modelo base abliterado (Blackfrost-Research)](https://huggingface.co/Blackfrost-Research/Muse-Glimmer-30B-Abliterated-BF16)
 - [Modelo original de Meta (meta-models/Muse-Glimmer-30B)](https://huggingface.co/meta-models/Muse-Glimmer-30B)

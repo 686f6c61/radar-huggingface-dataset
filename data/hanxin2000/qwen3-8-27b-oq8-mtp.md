@@ -60,10 +60,10 @@ Dado que no se dispone de datos de rendimiento ni de licencia, la comparativa se
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-oQ8-mtp (este) | 8,18B | no disponible | MLX safetensors (8-bit) | no disponible | HuggingFace |
-| Qwen2.5-7B-Instruct (MLX) | 7,6B | 128K (tipico) | MLX safetensors | Apache 2.0 | HuggingFace |
-| Llama-3.1-8B-Instruct (MLX) | 8,03B | 128K | MLX safetensors | Llama 3.1 Community License | HuggingFace |
-| Mistral-7B-Instruct (MLX) | 7,24B | 32K | MLX safetensors | Apache 2.0 | HuggingFace |
+| Qwen3.8-27B-oQ8-mtp (este) | 8,18B | no disponible | MLX safetensors (8-bit) | no disponible | Hugging Face |
+| Qwen2.5-7B-Instruct (MLX) | 7,6B | 128K (tipico) | MLX safetensors | Apache 2.0 | Hugging Face |
+| Llama-3.1-8B-Instruct (MLX) | 8,03B | 128K | MLX safetensors | Llama 3.1 Community License | Hugging Face |
+| Mistral-7B-Instruct (MLX) | 7,24B | 32K | MLX safetensors | Apache 2.0 | Hugging Face |
 
 La principal diferencia de este modelo es su origen (Qwen3.5) y la cuantizacion oQ especifica, pero la falta de licencia y de datos de contexto lo hacen arriesgado frente a alternativas bien documentadas como Qwen2.5 o Llama-3.1.
 
@@ -79,5 +79,5 @@ La principal diferencia de este modelo es su origen (Qwen3.5) y la cuantizacion 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hanxin2000/Qwen3.8-27B-oQ8-mtp
+- Repositorio en Hugging Face: https://huggingface.co/hanxin2000/Qwen3.8-27B-oQ8-mtp
 - Repositorio de oQ (oMLX): https://github.com/jundot/omlx

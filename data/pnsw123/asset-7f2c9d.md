@@ -68,11 +68,11 @@ No disponible. La información proporcionada no incluye datos de benchmarks ni c
 - El modelo está especializado en árabe dialectal; no se garantiza un rendimiento adecuado en árabe moderno estándar ni en otros idiomas.
 - Al ser un modelo de ASR, existe riesgo de errores de transcripción (alucinaciones) en audio con ruido, acentos poco comunes o superposición de voces.
 - No se han publicado resultados de benchmarks, por lo que no es posible evaluar su precisión en comparación con otros modelos.
-- El repositorio de HuggingFace no muestra descargas ni uso previo; se trata de una conversión de un modelo de terceros, no de un modelo original con validación extensa.
+- El repositorio de Hugging Face no muestra descargas ni uso previo; se trata de una conversión de un modelo de terceros, no de un modelo original con validación extensa.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pnsw123/asset-7f2c9d
+- Hugging Face: https://huggingface.co/pnsw123/asset-7f2c9d
 - Modelo base: https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b
 - Fine-tune original: https://huggingface.co/oddadmix/nemotron-3.5-asr-arabic-dialectal
 - Repositorio transcribe.cpp: https://github.com/handy-computer/transcribe.cpp

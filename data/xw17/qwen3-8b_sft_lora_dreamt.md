@@ -2,7 +2,7 @@
 
 ## Resumen
 
-xw17/Qwen3-8B_SFT_lora_dreamt es un repositorio publicado en HuggingFace Hub por el usuario xw17 cuyo contenido real no está documentado: la model card es la plantilla automática generada por la plataforma y todos los campos relevantes (autoría, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluación) aparecen sin rellenar con el marcador "[More Information Needed]". No se ha publicado ningún resultado de benchmarks, ninguna descripción del dataset de ajuste ni ninguna indicación sobre el procedimiento de entrenamiento.
+xw17/Qwen3-8B_SFT_lora_dreamt es un repositorio publicado en Hugging Face Hub por el usuario xw17 cuyo contenido real no está documentado: la model card es la plantilla automática generada por la plataforma y todos los campos relevantes (autoría, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluación) aparecen sin rellenar con el marcador "[More Information Needed]". No se ha publicado ningún resultado de benchmarks, ninguna descripción del dataset de ajuste ni ninguna indicación sobre el procedimiento de entrenamiento.
 
 El nombre del repositorio sugiere, sin confirmación por parte del autor, un ajuste supervisado (SFT) mediante LoRA sobre un modelo base de la familia Qwen3 con aproximadamente 8.000 millones de parámetros. El tamaño del repositorio, 0,1 GB, es coherente con un adaptador LoRA o con pesos parciales, no con un checkpoint completo de un modelo de ese orden de magnitud, aunque esta interpretación es una inferencia y no un dato verificado.
 
@@ -28,7 +28,7 @@ La relevancia de esta ficha es, por tanto, fundamentalmente cautelar: se trata d
 
 ## Arquitectura y entrenamiento
 
-No hay información publicada sobre la arquitectura. La model card no describe el modelo base, ni la configuración de capas, ni el mecanismo de atención, ni si se trata de un transformer denso o de una arquitectura híbrida. El repositorio declara la etiqueta safetensors y la librería transformers, lo que indica compatibilidad con el ecosistema HuggingFace, pero no aporta detalles estructurales.
+No hay información publicada sobre la arquitectura. La model card no describe el modelo base, ni la configuración de capas, ni el mecanismo de atención, ni si se trata de un transformer denso o de una arquitectura híbrida. El repositorio declara la etiqueta safetensors y la librería transformers, lo que indica compatibilidad con el ecosistema Hugging Face, pero no aporta detalles estructurales.
 
 Tampoco hay información sobre el entrenamiento: no se documenta el número de tokens, la composición del dataset, la existencia de fases de RLHF o DPO, ni los hiperparámetros del ajuste. El nombre del repositorio incluye los términos "SFT" y "lora", lo que sugiere un ajuste supervisado con adaptadores de bajo rango, pero el autor no lo confirma en ningún momento. La única referencia bibliográfica presente, arXiv:1910.09700, corresponde al artículo de Lacoste et al. sobre estimación de impacto ambiental y forma parte de la plantilla automática de model card, no de la documentación técnica del modelo.
 
@@ -86,7 +86,7 @@ No se dispone de cifras verificadas de parámetros, contexto, rendimiento ni lic
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/xw17/Qwen3-8B_SFT_lora_dreamt
+- Repositorio en Hugging Face: https://huggingface.co/xw17/Qwen3-8B_SFT_lora_dreamt
 - Repositorio relacionado del mismo autor: https://huggingface.co/xw17/Qwen3-4B-Instruct-2507_SFT_lora_dreamt
 - Modelo de terceros con nombre similar: https://www.modelscope.cn/models/mc36473/qwen3_8b_sft_lora
 - Documentación de ajuste LoRA sobre Qwen (KTransformers): https://ktransformers.net/en/docs/fine-tuning/qwen

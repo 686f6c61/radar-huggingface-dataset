@@ -91,7 +91,7 @@ No se dispone en la informacion proporcionada de datos de rendimiento de otros m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mvandewettering/needle3-planetarium
+- Modelo en Hugging Face: https://huggingface.co/mvandewettering/needle3-planetarium
 - Modelo base: https://huggingface.co/Cactus-Compute/needle3
 - Repositorio del proyecto: https://github.com/brainwagon/needle-planetarium
 - Esquemas de herramientas: https://github.com/brainwagon/needle-planetarium/blob/main/site/data/tools.json

@@ -6,7 +6,7 @@ paraphrase-multilingual-mpnet-base-v2 es un modelo de embeddings de frases desar
 
 El modelo se construye sobre un transformer XLM-RoBERTa con 278.044.162 parametros y una longitud maxima de secuencia de 128 tokens, sobre el que se aplica un pooling de media (mean tokens) para obtener el vector de frase. Es un modelo denso, no MoE, y esta publicado bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones de atribucion mas alla de las habituales de la licencia.
 
-Su relevancia actual radica en dos factores: por un lado, es multilingue de forma nativa, con soporte declarado para mas de 50 idiomas, lo que lo convierte en una pieza habitual en pipelines RAG y de recuperacion de informacion multilingue; por otro, acumula 9.567.999 descargas y 541 likes en HuggingFace, lo que lo situa entre los modelos de embeddings mas utilizados de la plataforma. Su ultima actualizacion en el repositorio es del 19 de agosto de 2025.
+Su relevancia actual radica en dos factores: por un lado, es multilingue de forma nativa, con soporte declarado para mas de 50 idiomas, lo que lo convierte en una pieza habitual en pipelines RAG y de recuperacion de informacion multilingue; por otro, acumula 9.567.999 descargas y 541 likes en Hugging Face, lo que lo situa entre los modelos de embeddings mas utilizados de la plataforma. Su ultima actualizacion en el repositorio es del 19 de agosto de 2025.
 
 ## Especificaciones tecnicas
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - VRAM estimada en INT8: aproximadamente 0,28 GB para los pesos, si se aplica cuantizacion posterior al entrenamiento (no documentada explicitamente en el repositorio).
 - Cabe con holgura en cualquier GPU de consumo: RTX 3060, RTX 4060, RTX 4090, entre otras, e incluso en GPUs integradas o en CPU para cargas moderadas.
 - GPU de datacenter (A100, H100, L40S) recomendadas unicamente cuando se necesita alto throughput por lotes a gran escala; el modelo es demasiado pequeno para aprovechar su capacidad de computo de forma individual.
-- Opciones de despliegue documentadas: sentence-transformers, HuggingFace Transformers con pooling manual, Text Embeddings Inference (TEI) en variante CPU y CUDA, y exportacion a ONNX y OpenVINO.
+- Opciones de despliegue documentadas: sentence-transformers, Hugging Face Transformers con pooling manual, Text Embeddings Inference (TEI) en variante CPU y CUDA, y exportacion a ONNX y OpenVINO.
 - Ejemplo de despliegue con TEI: contenedor ghcr.io/huggingface/text-embeddings-inference:cuda-latest con --pooling mean y --dtype float16, exponiendo el endpoint compatible con la API de embeddings de OpenAI.
 - Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
@@ -95,7 +95,7 @@ Las alternativas se citan unicamente como referencia de categoria (modelos de em
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sentence-transformers/paraphrase-multilingual-mpnet-base-v2
+- Modelo en Hugging Face: https://huggingface.co/sentence-transformers/paraphrase-multilingual-mpnet-base-v2
 - Paper de referencia (Sentence-BERT): https://arxiv.org/abs/1908.10084
 - Documentacion de Sentence-Transformers: https://www.SBERT.net
 - Repositorio de Text Embeddings Inference: https://github.com/huggingface/text-embeddings-inference

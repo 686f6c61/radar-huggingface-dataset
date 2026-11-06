@@ -76,8 +76,8 @@ Evaluación sobre 99 tareas privadas, tres intentos por tarea, noviembre de 2026
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CRS-4B | 4,66 B | no disponible | Tool use clínico, FHIR, claims | no disponible | HuggingFace (charcot-ai/crs-4b) |
-| Qwen3.5-4B | ~4 B | no disponible | Modelo general multimodal | no disponible | HuggingFace (Qwen) |
+| CRS-4B | 4,66 B | no disponible | Tool use clínico, FHIR, claims | no disponible | Hugging Face (charcot-ai/crs-4b) |
+| Qwen3.5-4B | ~4 B | no disponible | Modelo general multimodal | no disponible | Hugging Face (Qwen) |
 | Modelos frontera evaluados | no disponible | no disponible | Generalistas | variable | APIs comerciales |
 
 La comparación relevante es con su propio modelo base: CRS-4B pasa de 0,16 a 0,86 en la misma evaluación, lo que cuantifica la ganancia del fine-tuning de dominio. Frente a modelos frontera, el rango reportado (0,76–0,89) sitúa a CRS-4B en la parte alta, pero el autor no identifica qué modelos concretos componen ese rango ni sus parámetros. No se dispone de comparativas con otros modelos clínicos especializados en la información proporcionada.
@@ -97,7 +97,7 @@ La comparación relevante es con su propio modelo base: CRS-4B pasa de 0,16 a 0,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/charcot-ai/crs-4b
+- Modelo en Hugging Face: https://huggingface.co/charcot-ai/crs-4b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Dataset Charcot Gym: https://huggingface.co/datasets/charcot-ai/gym
 - Repositorio Gym en GitHub: https://github.com/Charcot-AI/gym

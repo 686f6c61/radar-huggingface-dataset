@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mocov3-checkpoint es un repositorio de HuggingFace publicado por el usuario Jktlestari que contiene una implementación funcional de un modelo etiquetado como "Mocov3" para tareas de clasificación, en una configuración que el propio autor denomina "nano". El repositorio no incluye un modelo entrenado: el archivo model.safetensors es, según la model card, un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests), y el autor declara explícitamente que no se reclama ninguna puntuación de benchmark.
+mocov3-checkpoint es un repositorio de Hugging Face publicado por el usuario Jktlestari que contiene una implementación funcional de un modelo etiquetado como "Mocov3" para tareas de clasificación, en una configuración que el propio autor denomina "nano". El repositorio no incluye un modelo entrenado: el archivo model.safetensors es, según la model card, un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests), y el autor declara explícitamente que no se reclama ninguna puntuación de benchmark.
 
 El tamaño real declarado del checkpoint es de 24.832 parámetros totales, un orden de magnitud muy inferior al de cualquier modelo de visión o lenguaje utilizable en producción. El repositorio pesa 0,0 GB, no tiene descargas ni "likes", y su pipeline no está declarado. La ventana de contexto, los idiomas soportados y las cuantizaciones disponibles no se documentan en ninguna parte.
 
@@ -20,7 +20,7 @@ Su relevancia actual es, por tanto, la de un artefacto de investigación y andam
 | Idiomas soportados | no disponible (los tags no declaran idioma alguno) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (model.safetensors); configuración en config.json |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Tarea declarada (tags) | classification |
 | Optimizador de la receta por defecto | novograd con planificador de warmup lineal |
 | Tamaño del repositorio | 0,0 GB |
@@ -83,7 +83,7 @@ No es posible establecer una comparativa cuantitativa fiable: el repositorio no 
 
 | Modelo | Parámetros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jktlestari/mocov3-checkpoint | 24.832 | no disponible | sin benchmark declarado; checkpoint sin entrenar | Apache 2.0 | HuggingFace, 0 descargas |
+| Jktlestari/mocov3-checkpoint | 24.832 | no disponible | sin benchmark declarado; checkpoint sin entrenar | Apache 2.0 | Hugging Face, 0 descargas |
 | MoCo v3 oficial (facebookresearch/moco-v3) | no disponible en la información consultada | no disponible | no disponible en la información consultada | no disponible en la información consultada | repositorio de referencia de Meta AI Research |
 | Clasificadores "nano" tipo ViT-Tiny de uso común | no disponible en la información consultada | no disponible | no disponible | no disponible | ecosistemas tipo timm |
 
@@ -104,8 +104,8 @@ La diferencia fundamental frente a cualquier alternativa utilizable es que este 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jktlestari/mocov3-checkpoint
-- Archivos del repositorio: eval.py, README.md, config.json, training_args.json, model.safetensors (accesibles desde la página de HuggingFace)
+- Hugging Face: https://huggingface.co/Jktlestari/mocov3-checkpoint
+- Archivos del repositorio: eval.py, README.md, config.json, training_args.json, model.safetensors (accesibles desde la página de Hugging Face)
 - Paper de referencia de MoCo v3 (no citado en la model card, incluido como contexto): Chen, Xie y He, "An Empirical Study of Training Self-Supervised Vision Transformers", https://arxiv.org/abs/2104.02057
 - Repositorio oficial de MoCo v3 de Meta AI Research (no citado en la model card): https://github.com/facebookresearch/moco-v3
 - Nota sobre la búsqueda web: los resultados obtenidos no guardan relación con el modelo. Corresponden a portales universitarios turcos del sistema UNISIS (uludag.edu.tr, fbu.edu.tr), sin conexión alguna con Jktlestari/mocov3-checkpoint. No se han encontrado papers, blogs, repositorios ni demos adicionales asociados a este modelo.

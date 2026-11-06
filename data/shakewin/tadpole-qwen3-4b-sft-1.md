@@ -93,7 +93,7 @@ No se dispone de comparacion con modelos de otras familias en la informacion pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shakewin/tadpole-qwen3-4b-sft-1
+- Modelo en Hugging Face: https://huggingface.co/Shakewin/tadpole-qwen3-4b-sft-1
 - Repositorio Tadpole: https://github.com/shakewingo/Tadpole
 - Resultados detallados: https://github.com/shakewingo/Tadpole/blob/main/agent_from_scratch/docs/results.md
 - Guia de evaluacion: https://github.com/shakewingo/Tadpole/blob/main/agent_from_scratch/evals/README.md

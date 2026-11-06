@@ -2,9 +2,9 @@
 
 ## Resumen
 
-sn92-dm-opal-1 es un modelo de lenguaje publicado en HuggingFace por el usuario waywaywaynewbest bajo licencia Apache 2.0. El repositorio contiene pesos en formato safetensors con un total de 31.273.086.512 parámetros (aproximadamente 31,3 mil millones), lo que lo sitúa en la categoría de modelos de tamaño medio-grande. La etiqueta `gemma4` sugiere que se trata de un ajuste fino (fine-tune) o derivado de la familia Gemma, aunque no se especifica la relación exacta con el modelo base original.
+sn92-dm-opal-1 es un modelo de lenguaje publicado en Hugging Face por el usuario waywaywaynewbest bajo licencia Apache 2.0. El repositorio contiene pesos en formato safetensors con un total de 31.273.086.512 parámetros (aproximadamente 31,3 mil millones), lo que lo sitúa en la categoría de modelos de tamaño medio-grande. La etiqueta `gemma4` sugiere que se trata de un ajuste fino (fine-tune) o derivado de la familia Gemma, aunque no se especifica la relación exacta con el modelo base original.
 
-El acceso al repositorio está restringido (gated): es necesario aceptar condiciones en HuggingFace antes de poder descargar los pesos. El modelo cuenta con solo 6 descargas y 0 likes en el momento de la consulta, lo que indica que es una publicación muy reciente y con escasa validación por parte de la comunidad. No se dispone de información sobre pipeline, idiomas soportados ni resultados de benchmarks.
+El acceso al repositorio está restringido (gated): es necesario aceptar condiciones en Hugging Face antes de poder descargar los pesos. El modelo cuenta con solo 6 descargas y 0 likes en el momento de la consulta, lo que indica que es una publicación muy reciente y con escasa validación por parte de la comunidad. No se dispone de información sobre pipeline, idiomas soportados ni resultados de benchmarks.
 
 La relevancia de este modelo es limitada por la falta de documentación técnica publicada: no hay model card detallada, paper asociado ni datos de evaluación disponibles en la información proporcionada. Cualquier evaluación de su calidad o idoneidad para producción debe realizarse mediante pruebas propias una vez obtenido el acceso.
 
@@ -44,9 +44,9 @@ No se ha publicado ninguna lista de capacidades verificadas en la información d
 - Evaluación comparativa interna: dado que no hay benchmarks publicados, un equipo puede desplegar el modelo en un entorno controlado y compararlo con su base Gemma correspondiente para medir la magnitud del ajuste fino aplicado.
 - Experimentación en investigación: el modelo puede servir como punto de partida para estudiar el efecto de ajustes finos sobre una base Gemma de ~31 B, siempre que se documente el proceso.
 - Generación de texto general en prototipos: con 31,3 B de parámetros, es adecuado para tareas de redacción y resumen en fase de prototipo, sujeto a validación empírica.
-- Fine-tuning posterior: al estar bajo Apache 2.0 y en safetensors, puede utilizarse como base para nuevos ajustes finos con frameworks como HuggingFace Transformers o PEFT.
+- Fine-tuning posterior: al estar bajo Apache 2.0 y en safetensors, puede utilizarse como base para nuevos ajustes finos con frameworks como Hugging Face Transformers o PEFT.
 - Investigación sobre licencias permisivas: su licencia Apache 2.0 permite estudiar su comportamiento en entornos comerciales sin las restricciones de otras licencias de modelos abiertos.
-- Despliegue en infraestructura propia: al no requerir aceptación de licencia comercial adicional (más allá del gate de HuggingFace), puede integrarse en pipelines internos de empresas que necesiten control total sobre el modelo.
+- Despliegue en infraestructura propia: al no requerir aceptación de licencia comercial adicional (más allá del gate de Hugging Face), puede integrarse en pipelines internos de empresas que necesiten control total sobre el modelo.
 
 En todos los casos, la ausencia de documentación y benchmarks obliga a realizar una validación empírica previa antes de cualquier uso en producción.
 
@@ -79,14 +79,14 @@ La comparativa se basa en el tamaño y la licencia; no hay datos de rendimiento 
 
 - Ausencia total de documentación técnica: no hay model card, paper ni descripción del proceso de entrenamiento, lo que impide evaluar su calidad de forma informada.
 - Sin benchmarks publicados: no se puede verificar su rendimiento frente a modelos comparables.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que puede retrasar su adopción en entornos automatizados.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que puede retrasar su adopción en entornos automatizados.
 - Riesgo de alucinación: desconocido, pero inherente a cualquier modelo de lenguaje sin evaluación publicada.
 - Sesgos conocidos: no documentados; al no conocerse la composición del dataset, no se pueden anticipar sesgos.
 - Idiomas soportados: no disponibles; no se garantiza un rendimiento multilingüe adecuado.
-- Licencia Apache 2.0: permite uso comercial, pero el gate de HuggingFace puede imponer condiciones adicionales que deben revisarse antes de su uso en producción.
+- Licencia Apache 2.0: permite uso comercial, pero el gate de Hugging Face puede imponer condiciones adicionales que deben revisarse antes de su uso en producción.
 - Escasa validación comunitaria (6 descargas, 0 likes): no hay evidencia de que el modelo haya sido probado por terceros.
 - Fecha de creación futura (2026-10-29): el repositorio presenta una fecha de creación posterior a la actual, lo que puede indicar un error de metadatos o una publicación programada; conviene verificar la integridad del repositorio.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/waywaywaynewbest/sn92-dm-opal-1
+- Hugging Face: https://huggingface.co/waywaywaynewbest/sn92-dm-opal-1

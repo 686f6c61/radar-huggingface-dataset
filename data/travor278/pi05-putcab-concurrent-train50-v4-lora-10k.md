@@ -75,9 +75,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Base | Dataset | Actualizaciones | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Travor278/pi05-putcab-concurrent-train50-v4-lora-10k | PI0.5 JAX (`XinY0201/openpi-pi05-base-jax`, rev. 5e62884) | Shiki42/PutCab-Concurrent-Train50-V4, 50 episodios / 11.038 fotogramas | 10.000, batch 16, semilla 87431 | no disponible | publico en HuggingFace, 0 descargas |
-| Shiki42/pi05-putcab-concurrent-train50-lora10k-e113-20260912 | Mismo base PI0.5 JAX (rev. 5e62884) | Mismo dataset, 50 episodios / 11.038 fotogramas | 10.000, batch 16, semilla 87431, 160.000 fotogramas muestreados | no disponible | publico en HuggingFace |
-| XinY0201/openpi-pi05-base-jax | Modelo base PI0.5 | No aplica (modelo base) | No aplica | no disponible | publico en HuggingFace |
+| Travor278/pi05-putcab-concurrent-train50-v4-lora-10k | PI0.5 JAX (`XinY0201/openpi-pi05-base-jax`, rev. 5e62884) | Shiki42/PutCab-Concurrent-Train50-V4, 50 episodios / 11.038 fotogramas | 10.000, batch 16, semilla 87431 | no disponible | publico en Hugging Face, 0 descargas |
+| Shiki42/pi05-putcab-concurrent-train50-lora10k-e113-20260912 | Mismo base PI0.5 JAX (rev. 5e62884) | Mismo dataset, 50 episodios / 11.038 fotogramas | 10.000, batch 16, semilla 87431, 160.000 fotogramas muestreados | no disponible | publico en Hugging Face |
+| XinY0201/openpi-pi05-base-jax | Modelo base PI0.5 | No aplica (modelo base) | No aplica | no disponible | publico en Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes, ya que ninguna de las fichas consultadas publica tasas de exito en tarea ni metricas de benchmark. Las diferencias documentadas entre el modelo descrito y la variante e113 se limitan al identificador de ejecucion y al etiquetado del checkpoint, manteniendo receta, base y datos equivalentes segun la informacion disponible.
 
@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes, ya que 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Travor278/pi05-putcab-concurrent-train50-v4-lora-10k
+- Modelo en Hugging Face: https://huggingface.co/Travor278/pi05-putcab-concurrent-train50-v4-lora-10k
 - Modelo hermano (misma base, mismo dataset): https://huggingface.co/Shiki42/pi05-putcab-concurrent-train50-lora10k-e113-20260912
 - Modelo base PI0.5 JAX referenciado en la model card: https://huggingface.co/XinY0201/openpi-pi05-base-jax (revision 5e62884fcf8cb8f9fc693c9163ea18d3e3739658)
 - Dataset de ajuste referenciado en la model card: https://huggingface.co/datasets/Shiki42/PutCab-Concurrent-Train50-V4 (revision a503203b294e057eb24f783b9e7210e523487d63)

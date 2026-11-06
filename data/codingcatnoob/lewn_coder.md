@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Lewn_Coder es un repositorio de pesos publicado en HuggingFace por el usuario CodingCatNoob bajo licencia MIT. En el momento de la consulta, la ficha del modelo no contiene model card propiamente dicha: el README se reduce a la declaracion de licencia, sin descripcion, sin arquitectura declarada, sin datos de entrenamiento y sin ejemplos de uso. El repositorio no declara pipeline de inferencia ni idiomas soportados, y registra 0 descargas y 1 like, lo que indica una publicacion reciente o de circulacion muy limitada.
+Lewn_Coder es un repositorio de pesos publicado en Hugging Face por el usuario CodingCatNoob bajo licencia MIT. En el momento de la consulta, la ficha del modelo no contiene model card propiamente dicha: el README se reduce a la declaracion de licencia, sin descripcion, sin arquitectura declarada, sin datos de entrenamiento y sin ejemplos de uso. El repositorio no declara pipeline de inferencia ni idiomas soportados, y registra 0 descargas y 1 like, lo que indica una publicacion reciente o de circulacion muy limitada.
 
 El nombre del repositorio sugiere una orientacion a generacion de codigo, pero se trata de una inferencia a partir del identificador, no de un dato documentado por el autor. No hay informacion publica sobre arquitectura, numero de parametros, longitud de contexto, tokenizador ni formato de pesos.
 
@@ -33,7 +33,7 @@ Tampoco se documenta el proceso de entrenamiento: no se indica el volumen de tok
 - No se confirma soporte de generacion de codigo, razonamiento, matematicas o vision, pese a que el nombre del repositorio contiene el termino "Coder".
 - No se documenta soporte de tool calling ni function calling.
 - No se documenta capacidad agentica ni razonamiento multi-paso.
-- No se declaran idiomas soportados; la ficha de HuggingFace no incluye el campo de idiomas.
+- No se declaran idiomas soportados; la ficha de Hugging Face no incluye el campo de idiomas.
 - No se documentan capacidades especiales como modo thinking, entrada de audio o vision.
 
 ## Casos de uso
@@ -41,7 +41,7 @@ Tampoco se documenta el proceso de entrenamiento: no se indica el volumen de tok
 - Auditoria de publicaciones de terceros: descargar el repositorio en un entorno aislado para inspeccionar los artefactos realmente incluidos (pesos, tokenizador, configuracion) y comprobar que coinciden con lo declarado antes de plantear cualquier uso.
 - Pruebas de infraestructura de inferencia: usar los pesos como sujeto de prueba en pipelines de vLLM, llama.cpp u Ollama para validar el proceso de carga, el troceado de pesos y el arranque del servidor con independencia de la calidad del modelo.
 - Evaluacion comparativa interna: incorporar el modelo como baseline en un arnés de evaluacion propio (por ejemplo, `lm-evaluation-harness`) para medir su comportamiento real frente a alternativas ya validadas por el equipo.
-- Docencia y formacion: emplear el repositorio como ejemplo practico de publicacion incompleta en HuggingFace y de los riesgos de ejecutar pesos sin model card ni evaluaciones publicas.
+- Docencia y formacion: emplear el repositorio como ejemplo practico de publicacion incompleta en Hugging Face y de los riesgos de ejecutar pesos sin model card ni evaluaciones publicas.
 - Experimentacion con fine-tuning: al estar bajo licencia MIT, sirve como punto de partida para probar recetas de ajuste sobre pesos cuyo origen y rendimiento base no estan verificados, siempre en entornos sin datos sensibles.
 - Verificacion de licencia y cumplimiento: analizar el caso de un modelo con licencia permisiva pero sin documentacion, para definir politicas internas de aprobacion de dependencias de IA en una organizacion.
 
@@ -85,7 +85,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/CodingCatNoob/Lewn_Coder
+- Hugging Face: https://huggingface.co/CodingCatNoob/Lewn_Coder
 - LM Market Cap, rankings de modelos gratuitos (contexto general, no especifico del modelo): https://lmmarketcap.com/free-ai-models
 - llm-stats.com, leaderboard de modelos para codigo (contexto general): https://llm-stats.com/leaderboards/best-ai-for-coding
 - arXiv, KAT-Coder Technical Report (modelo distinto, sin relacion documentada): https://arxiv.org/abs/2510.18779

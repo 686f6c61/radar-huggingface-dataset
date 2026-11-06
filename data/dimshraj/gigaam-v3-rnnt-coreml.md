@@ -98,12 +98,12 @@ La comparacion con Whisper es de categoria (ASR) pero no de escala: Whisper es u
 - Fragmentacion del vocabulario: al excluir la «ё», las transcripciones normalizan esa letra, algo a tener en cuenta en busquedas o comparaciones textuales.
 - Riesgo de error de reconocimiento: como todo modelo ASR, puede producir sustituciones, omisiones o inserciones de palabras, especialmente con ruido, acentos o audio de baja calidad.
 - Licencia MIT: permite uso comercial, pero conviene verificar la procedencia y las condiciones del paquete `gigaam` original de SberDevices.
-- Repositorio sin validacion de la comunidad: 0 descargas y 0 likes en HuggingFace en el momento de la consulta, con creacion y actualizacion el 2026-10-12; no hay evidencia de uso en produccion.
+- Repositorio sin validacion de la comunidad: 0 descargas y 0 likes en Hugging Face en el momento de la consulta, con creacion y actualizacion el 2026-10-12; no hay evidencia de uso en produccion.
 - Dependencia fragil: la conversion incluye parches (`_cast`, precálculo de rotary) atados a versiones concretas de torch y coremltools, lo que puede romper con actualizaciones.
 - Restriccion de plataforma: el resultado es util solo en hardware Apple; no es portable a servidores x86 con GPU NVIDIA.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dimshraj/gigaam-v3-rnnt-coreml
+- Modelo en Hugging Face: https://huggingface.co/dimshraj/gigaam-v3-rnnt-coreml
 - Repositorio original de GigaAM (SberDevices / Salute Developers): https://github.com/salute-developers/GigaAM
 - Commit de referencia usado en la conversion: 7447938d791c4f3e643386ee22c33777004293a5

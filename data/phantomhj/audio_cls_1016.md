@@ -2,11 +2,11 @@
 
 ## Resumen
 
-audio_cls_1016 es un modelo de clasificacion de audio basado en un fine-tuning de wav2vec2-base-korean, publicado por el usuario phantomhj en HuggingFace. Se trata de un clasificador supervisado que parte de los pesos auto-supervisados de Kkonjeong/wav2vec2-base-korean y anade una cabeza de clasificacion sobre el encoder, con 94.572.174 parametros totales y un repositorio de 0,4 GB en formato safetensors.
+audio_cls_1016 es un modelo de clasificacion de audio basado en un fine-tuning de wav2vec2-base-korean, publicado por el usuario phantomhj en Hugging Face. Se trata de un clasificador supervisado que parte de los pesos auto-supervisados de Kkonjeong/wav2vec2-base-korean y anade una cabeza de clasificacion sobre el encoder, con 94.572.174 parametros totales y un repositorio de 0,4 GB en formato safetensors.
 
 El modelo resuelve una tarea de clasificacion de audio con un numero de clases no documentado: la model card indica explicitamente que el dataset de entrenamiento es desconocido ("unknown dataset") y no detalla las etiquetas ni el dominio de las senales (voz, eventos sonoros, emociones, etc.). Alcanza una accuracy de 0,8403 y una loss de 1,0793 en el conjunto de evaluacion tras 10 epocas, pero estos numeros corresponden a un conjunto no descrito, por lo que su validez fuera del entorno del autor es limitada.
 
-Su relevancia es marginal: acumula 0 descargas y 0 likes, no declara licencia ni idiomas, y la model card esta generada automaticamente por el Trainer de HuggingFace sin documentacion adicional. Es util como ejemplo de pipeline de fine-tuning de wav2vec2 para clasificacion de audio en coreano, pero no como componente listo para produccion.
+Su relevancia es marginal: acumula 0 descargas y 0 likes, no declara licencia ni idiomas, y la model card esta generada automaticamente por el Trainer de Hugging Face sin documentacion adicional. Es util como ejemplo de pipeline de fine-tuning de wav2vec2 para clasificacion de audio en coreano, pero no como componente listo para produccion.
 
 ## Especificaciones tecnicas
 
@@ -35,7 +35,7 @@ La curva de validacion muestra una mejora progresiva: la accuracy pasa de 0,0420
 - Procesamiento de audio en bruto: al derivar de wav2vec2, consume la forma de onda directamente, sin necesidad de extraer caracteristicas acusticas previas.
 - Ajuste al habla coreana: la base wav2vec2-base-korean fue preentrenada sobre habla en coreano, por lo que las representaciones estan sesgadas hacia ese idioma.
 - Compatibilidad con el ecosistema transformers: puede cargarse mediante AutoModelForAudioClassification y usarse con el pipeline de audio-classification.
-- Compatible con endpoints de HuggingFace: el tag endpoints_compatible indica que puede desplegarse como endpoint gestionado (region us).
+- Compatible con endpoints de Hugging Face: el tag endpoints_compatible indica que puede desplegarse como endpoint gestionado (region us).
 - No soporta tool calling ni function calling: no es un modelo generativo ni un LLM.
 - No soporta agentes ni razonamiento multi-paso.
 - No soporta vision, audio generativo ni modos de pensamiento (thinking mode).
@@ -47,7 +47,7 @@ La curva de validacion muestra una mejora progresiva: la accuracy pasa de 0,0420
 - Baseline interno en equipos de ML de habla coreana: al partir de un checkpoint ya adaptado al coreano, reduce las horas de preentrenamiento frente a partir de wav2vec2-base en ingles.
 - Deteccion de eventos acusticos en coreano: si el dataset de fine-tuning era de eventos sonoros, el modelo podria reutilizarse para tareas de monitorizacion, aunque las clases reales no estan documentadas y habria que validarlas.
 - Experimentos de destilacion o pruning: sus 94,5 M de parametros lo convierten en un candidato manejable para estudiar compresion de clasificadores de audio.
-- Docencia y formacion: ejemplo completo de model card generada por el Trainer de HuggingFace, util para explicar como documentar (y como no documentar) un fine-tuning.
+- Docencia y formacion: ejemplo completo de model card generada por el Trainer de Hugging Face, util para explicar como documentar (y como no documentar) un fine-tuning.
 - Despliegue en entornos con recursos limitados: con menos de 400 MB en fp32, cabe en CPU y en GPUs de gama baja para inferencia por lotes pequenos.
 
 ## Benchmarks y rendimiento
@@ -84,7 +84,7 @@ El model-index declarado en la model card esta vacio (`results: []`), por lo que
 - VRAM estimada en fp16/bf16: aproximadamente 190-200 MB de pesos, con un consumo total inferior a 1 GB.
 - Cabe en cualquier GPU de consumo: RTX 3060, RTX 4060, RTX 4090, e incluso en GPUs integradas o CPU para inferencia puntual.
 - CPU: viable para inferencia de audio corto con transformers en PyTorch o mediante exportacion a ONNX Runtime.
-- Opciones de despliegue: pipeline de transformers (audio-classification), AutoModelForAudioClassification, ONNX Runtime, TorchScript y HuggingFace Inference Endpoints (el modelo esta marcado como endpoints_compatible).
+- Opciones de despliegue: pipeline de transformers (audio-classification), AutoModelForAudioClassification, ONNX Runtime, TorchScript y Hugging Face Inference Endpoints (el modelo esta marcado como endpoints_compatible).
 - No hay soporte documentado para vLLM, llama.cpp, Ollama o TGI: son motores orientados a modelos generativos de texto y no cubren clasificacion de audio.
 - Latencia y throughput: no disponibles. No se han publicado mediciones de latencia ni de throughput para este checkpoint.
 
@@ -94,10 +94,10 @@ No hay informacion suficiente para una comparativa cuantitativa rigurosa: el aut
 
 | Modelo | Parametros | Tarea | Idioma base | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| audiocls_1016 (este modelo) | 94,57 M | Clasificacion de audio | Base coreana | no disponible | HuggingFace, 0 descargas |
-| Kkonjeong/wav2vec2-base-korean | ~94,4 M | Representaciones de habla (preentrenamiento) | Coreano | no disponible en la informacion | HuggingFace |
-| facebook/wav2vec2-base | ~94,4 M | Representaciones de habla (preentrenamiento) | Ingles | MIT (segun el modelo original) | HuggingFace |
-| facebook/wav2vec2-base-960h | ~94,4 M | Reconocimiento de habla (ASR) | Ingles | MIT (segun el modelo original) | HuggingFace |
+| audiocls_1016 (este modelo) | 94,57 M | Clasificacion de audio | Base coreana | no disponible | Hugging Face, 0 descargas |
+| Kkonjeong/wav2vec2-base-korean | ~94,4 M | Representaciones de habla (preentrenamiento) | Coreano | no disponible en la informacion | Hugging Face |
+| facebook/wav2vec2-base | ~94,4 M | Representaciones de habla (preentrenamiento) | Ingles | MIT (segun el modelo original) | Hugging Face |
+| facebook/wav2vec2-base-960h | ~94,4 M | Reconocimiento de habla (ASR) | Ingles | MIT (segun el modelo original) | Hugging Face |
 
 Las cifras de rendimiento de estos modelos no son comparables con la accuracy de 0,8403 de audiocls_1016, porque esta se calculo sobre un conjunto de evaluacion no identificado y con un numero de clases desconocido.
 
@@ -116,7 +116,7 @@ Las cifras de rendimiento de estos modelos no son comparables con la accuracy de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/phantomhj/audio_cls_1016
+- Modelo en Hugging Face: https://huggingface.co/phantomhj/audio_cls_1016
 - Modelo base: https://huggingface.co/Kkonjeong/wav2vec2-base-korean
 - Repositorio original de wav2vec2 (referencia de arquitectura): https://huggingface.co/facebook/wav2vec2-base
 - Documentacion de transformers para clasificacion de audio: https://huggingface.co/docs/transformers/tasks/audio_classification

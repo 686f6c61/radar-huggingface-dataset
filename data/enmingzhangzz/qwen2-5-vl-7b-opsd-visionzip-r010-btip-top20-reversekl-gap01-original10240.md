@@ -84,10 +84,10 @@ Los datos de la comparativa proceden de la documentacion publica de cada modelo 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento comparado |
 |---|---|---|---|---|---|
-| Este adaptador (sobre Qwen2.5-VL-7B-Instruct) | 40.370.176 entrenables (base ~7B) | No disponible en la ficha (base: 128.000 tokens) | No disponible | HuggingFace, PEFT, 0 descargas | No disponible (sin benchmarks) |
-| Qwen2.5-VL-7B-Instruct (base) | ~7B | 128.000 tokens | Apache 2.0 | HuggingFace, ampliamente desplegado | No disponible en esta comparativa |
-| Qwen2-VL-7B-Instruct | ~8B | 32.000 tokens | Apache 2.0 | HuggingFace | No disponible en esta comparativa |
-| InternVL2.5-8B | ~8B | No disponible | MIT | HuggingFace | No disponible en esta comparativa |
+| Este adaptador (sobre Qwen2.5-VL-7B-Instruct) | 40.370.176 entrenables (base ~7B) | No disponible en la ficha (base: 128.000 tokens) | No disponible | Hugging Face, PEFT, 0 descargas | No disponible (sin benchmarks) |
+| Qwen2.5-VL-7B-Instruct (base) | ~7B | 128.000 tokens | Apache 2.0 | Hugging Face, ampliamente desplegado | No disponible en esta comparativa |
+| Qwen2-VL-7B-Instruct | ~8B | 32.000 tokens | Apache 2.0 | Hugging Face | No disponible en esta comparativa |
+| InternVL2.5-8B | ~8B | No disponible | MIT | Hugging Face | No disponible en esta comparativa |
 
 ## Limitaciones y advertencias
 
@@ -105,7 +105,7 @@ Los datos de la comparativa proceden de la documentacion publica de cada modelo 
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/enmingzhangzz/Qwen2.5-VL-7B-OPSD-VisionZip-r010-BTIP-Top20-ReverseKL-gap01-original10240
+- Adaptador en Hugging Face: https://huggingface.co/enmingzhangzz/Qwen2.5-VL-7B-OPSD-VisionZip-r010-BTIP-Top20-ReverseKL-gap01-original10240
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/OpenMMReasoner/OpenMMReasoner-SFT-874K
 - Libreria PEFT: no se proporciona enlace en la informacion disponible

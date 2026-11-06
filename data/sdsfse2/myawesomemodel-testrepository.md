@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario sdsfse2 bajo el identificador `sdsfse2/MyAwesomeModel-TestRepository`. Por los metadatos de la ficha (tags `transformers`, `pytorch`, `bert`, `feature-extraction`) y por el pipeline declarado, se trata de un modelo de la familia BERT orientado a extracción de características, es decir, a producir representaciones vectoriales de texto más que a generar lenguaje de forma autoregresiva. El repositorio tiene un tamaño de 0.0 GB y cero descargas, lo que sugiere que es un repositorio de prueba o un artefacto sin pesos publicados.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario sdsfse2 bajo el identificador `sdsfse2/MyAwesomeModel-TestRepository`. Por los metadatos de la ficha (tags `transformers`, `pytorch`, `bert`, `feature-extraction`) y por el pipeline declarado, se trata de un modelo de la familia BERT orientado a extracción de características, es decir, a producir representaciones vectoriales de texto más que a generar lenguaje de forma autoregresiva. El repositorio tiene un tamaño de 0.0 GB y cero descargas, lo que sugiere que es un repositorio de prueba o un artefacto sin pesos publicados.
 
 La model card, sin embargo, describe un modelo conversacional y de razonamiento con mejoras en matemáticas, programación y lógica, con resultados de benchmarks y recomendaciones de uso (system prompt, temperatura 0.6, plantillas para búsqueda web y subida de ficheros). Existe una contradicción clara entre los metadatos técnicos (BERT, feature-extraction, repo vacío) y el contenido narrativo de la model card (modelo generativo con razonamiento y function calling). Esta ficha refleja ambos aspectos y marca como no disponibles los datos que no pueden verificarse.
 
@@ -12,7 +12,7 @@ La relevancia de este repositorio es limitada como modelo de producción: no hay
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | BERT (según tag de HuggingFace); la model card no detalla la arquitectura del modelo generativo descrito |
+| Arquitectura | BERT (según tag de Hugging Face); la model card no detalla la arquitectura del modelo generativo descrito |
 | Parametros totales | no disponible |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
@@ -23,13 +23,13 @@ La relevancia de este repositorio es limitada como modelo de producción: no hay
 
 ## Arquitectura y entrenamiento
 
-Los metadatos de HuggingFace etiquetan el modelo como BERT con pipeline `feature-extraction`, lo que implicaría una arquitectura transformer encoder-only orientada a representaciones contextuales. No se dispone de información sobre el número de parámetros, la composición del dataset de entrenamiento, el número de tokens vistos ni si se aplicaron técnicas de alineación como RLHF o DPO.
+Los metadatos de Hugging Face etiquetan el modelo como BERT con pipeline `feature-extraction`, lo que implicaría una arquitectura transformer encoder-only orientada a representaciones contextuales. No se dispone de información sobre el número de parámetros, la composición del dataset de entrenamiento, el número de tokens vistos ni si se aplicaron técnicas de alineación como RLHF o DPO.
 
 La model card describe, de forma genérica, un modelo con "mayor profundidad de razonamiento" y "mecanismos de optimización algorítmica durante el post-entrenamiento", y menciona que en AIME 2025 la precisión pasó del 70 % al 87,5 % con un consumo medio de 23K tokens por pregunta. No se especifica la arquitectura subyacente (transformer denso, MoE, híbrido), ni se aportan detalles verificables sobre el proceso de entrenamiento. No hay información sobre innovaciones técnicas concretas como decodificación especulativa o atención lineal.
 
 ## Capacidades
 
-- Extracción de características (feature extraction) según el pipeline declarado en los metadatos de HuggingFace.
+- Extracción de características (feature extraction) según el pipeline declarado en los metadatos de Hugging Face.
 - La model card menciona generación de texto, razonamiento matemático, generación de código, razonamiento lógico, sentido común, comprensión lectora, question answering, clasificación de texto, análisis de sentimiento, escritura creativa, diálogo, resumen, traducción, recuperación de conocimiento, seguimiento de instrucciones y evaluación de seguridad, aunque estos datos no son verificables con los artefactos publicados.
 - Soporte de function calling mencionado en la model card, sin especificación técnica.
 - Soporte de system prompt y recomendación de temperatura 0.6.
@@ -40,7 +40,7 @@ La model card describe, de forma genérica, un modelo con "mayor profundidad de 
 
 - Extracción de embeddings para búsqueda semántica: si el modelo es efectivamente un BERT de feature-extraction, podría emplearse para generar representaciones vectoriales de documentos y consultas en un sistema de recuperación, aunque no hay pesos publicados que permitan validarlo.
 - Clasificación de texto y análisis de sentimiento: el pipeline declarado y las categorías de la model card sugieren un uso potencial en tareas de clasificación, pero sin pesos disponibles no es desplegable.
-- Evaluación de repositorios de prueba: el repositorio puede servir como ejemplo de estructura de model card y de configuración de metadatos en HuggingFace para proyectos de documentación o CI.
+- Evaluación de repositorios de prueba: el repositorio puede servir como ejemplo de estructura de model card y de configuración de metadatos en Hugging Face para proyectos de documentación o CI.
 - Prototipado de plantillas de prompt: las plantillas de system prompt, subida de ficheros y búsqueda web con citas de la model card pueden reutilizarse como referencia en el diseño de prompts para otros modelos.
 - Docencia y formación: útil como caso de estudio sobre discrepancias entre metadatos y model card en repositorios de prueba.
 - No se recomienda su uso en producción para generación, razonamiento o código, dado que no hay artefactos verificables.
@@ -94,5 +94,5 @@ No disponible. No se dispone de información suficiente sobre parámetros, conte
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sdsfse2/MyAwesomeModel-TestRepository
+- Hugging Face: https://huggingface.co/sdsfse2/MyAwesomeModel-TestRepository
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

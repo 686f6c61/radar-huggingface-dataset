@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Multilingual Zero-Shot Classifier (small) es un modelo de clasificación zero-shot desarrollado por Horizon Labs (Horizon-Labs) y publicado en HuggingFace. Se trata de un encoder ModernBERT de 140.642.306 parámetros (aproximadamente 141M) construido a partir del modelo base jhu-clsp/mmBERT-small, afinado para la tarea de zero-shot-classification mediante inferencia de lenguaje natural (NLI). Su función es clasificar texto en más de 30 idiomas dentro de cualquier conjunto de etiquetas definido por el usuario en el momento de la inferencia, sin necesidad de reentrenamiento. La ventana de contexto nominal es de 8.192 tokens, aunque el ajuste fino se realizó con secuencias de hasta 1.024 tokens.
+Multilingual Zero-Shot Classifier (small) es un modelo de clasificación zero-shot desarrollado por Horizon Labs (Horizon-Labs) y publicado en Hugging Face. Se trata de un encoder ModernBERT de 140.642.306 parámetros (aproximadamente 141M) construido a partir del modelo base jhu-clsp/mmBERT-small, afinado para la tarea de zero-shot-classification mediante inferencia de lenguaje natural (NLI). Su función es clasificar texto en más de 30 idiomas dentro de cualquier conjunto de etiquetas definido por el usuario en el momento de la inferencia, sin necesidad de reentrenamiento. La ventana de contexto nominal es de 8.192 tokens, aunque el ajuste fino se realizó con secuencias de hasta 1.024 tokens.
 
 El modelo se posiciona como una alternativa multilingüe y ligera a facebook/bart-large-mnli. Frente a este, reduce el número de parámetros y añade cobertura multilingüe manteniendo etiquetas y plantillas de hipótesis en inglés. Incluye pesos en ONNX para ejecución en CPU y en el navegador mediante transformers.js, lo que lo hace apto para despliegues en el borde sin GPU.
 
@@ -137,7 +137,7 @@ En terminos generales, el modelo no supera a los encoders mas grandes en precisi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Horizon-Labs/multilingual-zeroshot-small
+- Modelo en Hugging Face: https://huggingface.co/Horizon-Labs/multilingual-zeroshot-small
 - Demo en el navegador (Space): https://huggingface.co/spaces/Horizon-Labs/multilingual-zeroshot
 - Codigo fuente: https://github.com/horizon-ai-labs/agent-io-guards
 - Coleccion de modelos abiertos de Horizon Labs: https://huggingface.co/collections/Horizon-Labs/agent-i-o-guards-6ab403c49494bc2b71ca7669

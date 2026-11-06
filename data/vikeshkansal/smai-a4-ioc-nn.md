@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks comparativos con otros modelos en l
 
 | Modelo | Parametros | Contexto/entrada | Precision CIFAR-10 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| IOC-NN (este modelo) | 394.634 | 3072 valores (32x32x3) | 48,72 % | no disponible | HuggingFace |
+| IOC-NN (este modelo) | 394.634 | 3072 valores (32x32x3) | 48,72 % | no disponible | Hugging Face |
 | MLP estandar sobre CIFAR-10 | no disponible | 3072 valores | no disponible | no disponible | no disponible |
 | CNN tipo ResNet sobre CIFAR-10 | no disponible | 32x32x3 | no disponible | no disponible | no disponible |
 
@@ -89,6 +89,6 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vikeshkansal/smai-a4-ioc-nn
+- Modelo en Hugging Face: https://huggingface.co/vikeshkansal/smai-a4-ioc-nn
 - Paper de referencia IOC-NN (Sivaprasad et al.): https://arxiv.org/abs/2006.05103
 - Dataset CIFAR-10 (uoft-cs/cifar10): https://huggingface.co/datasets/uoft-cs/cifar10

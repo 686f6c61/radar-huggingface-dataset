@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ARKA-SLM-V1-Instruction-25K-v1 es un adaptador LoRA publicado en HuggingFace por el usuario Abhayn01, obtenido mediante ajuste supervisado (SFT) con la librería TRL sobre el modelo base Abhayn01/ARKA-SLM-V1. Se distribuye como repositorio PEFT, por lo que no contiene pesos completos de un modelo autónomo, sino únicamente los tensores del adaptador que deben cargarse junto al modelo base para poder ejecutar inferencia.
+ARKA-SLM-V1-Instruction-25K-v1 es un adaptador LoRA publicado en Hugging Face por el usuario Abhayn01, obtenido mediante ajuste supervisado (SFT) con la librería TRL sobre el modelo base Abhayn01/ARKA-SLM-V1. Se distribuye como repositorio PEFT, por lo que no contiene pesos completos de un modelo autónomo, sino únicamente los tensores del adaptador que deben cargarse junto al modelo base para poder ejecutar inferencia.
 
 El propósito declarado en los metadatos es la generación de texto con orientación conversacional (pipeline `text-generation` y etiqueta `conversational`). El sufijo "25K" del nombre sugiere un ajuste sobre un conjunto de aproximadamente 25.000 ejemplos de instrucciones, aunque esta cifra no se confirma en ninguna parte de la model card, que permanece como plantilla sin cumplimentar.
 
@@ -25,7 +25,7 @@ En el momento de redactar esta ficha el repositorio registra 0 descargas y 0 lik
 
 El repositorio es un adaptador de bajo rango (LoRA) gestionado con PEFT 0.19.1 y entrenado con TRL, según las etiquetas y las versiones de framework declaradas. La etiqueta `base_model:adapter:Abhayn01/ARKA-SLM-V1` confirma que el ajuste se aplicó sobre ARKA-SLM-V1 como modelo base. No se especifica el rango del adaptador, las capas objetivo, el optimizador, la tasa de aprendizaje, la precisión de entrenamiento ni el número de épocas: todos los campos correspondientes de la model card figuran como "More Information Needed".
 
-Tampoco se documenta la composición del dataset de ajuste, más allá del "25K" que aparece en el identificador del modelo. No hay mención a RLHF, DPO, decodificación especulativa, atención lineal ni ninguna otra innovación técnica. La única referencia a un artículo académico en las etiquetas es `arxiv:1910.09700`, que corresponde a "Quantifying the Carbon Emissions of Machine Learning" (Lacoste et al., 2019), citado en la plantilla estándar de HuggingFace para el cálculo de huella de carbono, no a un paper del modelo.
+Tampoco se documenta la composición del dataset de ajuste, más allá del "25K" que aparece en el identificador del modelo. No hay mención a RLHF, DPO, decodificación especulativa, atención lineal ni ninguna otra innovación técnica. La única referencia a un artículo académico en las etiquetas es `arxiv:1910.09700`, que corresponde a "Quantifying the Carbon Emissions of Machine Learning" (Lacoste et al., 2019), citado en la plantilla estándar de Hugging Face para el cálculo de huella de carbono, no a un paper del modelo.
 
 ## Capacidades
 
@@ -82,7 +82,7 @@ No disponible. No es posible establecer una comparativa fiable porque no se cono
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Abhayn01/ARKA-SLM-V1-Instruction-25K-v1
+- Repositorio Hugging Face: https://huggingface.co/Abhayn01/ARKA-SLM-V1-Instruction-25K-v1
 - Modelo base: https://huggingface.co/Abhayn01/ARKA-SLM-V1
 - Referencia citada en las etiquetas (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automático mencionada en la plantilla: https://mlco2.github.io/impact

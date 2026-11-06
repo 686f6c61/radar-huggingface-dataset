@@ -82,7 +82,7 @@ La comparativa se basa en caracteristicas publicas de los modelos de referencia;
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MoonMir/qwen2.5-7b-caf8-gguf
+- Hugging Face: https://huggingface.co/MoonMir/qwen2.5-7b-caf8-gguf
 - Unsloth (herramienta de entrenamiento y conversion): https://github.com/unslothai/unsloth
 - Modelo base Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - llama.cpp: https://github.com/ggml-org/llama.cpp

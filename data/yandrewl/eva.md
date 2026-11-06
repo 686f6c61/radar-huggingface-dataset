@@ -4,7 +4,7 @@
 
 Eva (Encoding of visual atlas) es un modelo fundacional multimodal diseñado específicamente para datos de imagen de tejidos, desarrollado por YAndrewL. Su objetivo es aprender representaciones espaciales complejas de tejidos a nivel molecular, celular y de paciente, integrando información de proteómica espacial e histopatología. Se trata de un modelo de extracción de características de imagen (image-feature-extraction) que emplea una arquitectura de vision transformer novedosa, preentrenada mediante reconstrucción de imágenes enmascaradas sobre datos de proteómica espacial e histopatología emparejados.
 
-La relevancia de Eva radica en su enfoque multimodal para el análisis de tejidos, un área con gran potencial en investigación biomédica y diagnóstico asistido. Al combinar dos modalidades de imagen complementarias, el modelo busca capturar correlaciones entre la expresión de proteínas y la morfología tisular, algo que los modelos unimodales no logran. El acceso al modelo está restringido (gated) en HuggingFace, lo que implica que los usuarios deben aceptar condiciones específicas antes de descargarlo. El repositorio tiene un tamaño de 4.9 GB y fue creado en noviembre de 2025, con una actualización posterior en agosto de 2026.
+La relevancia de Eva radica en su enfoque multimodal para el análisis de tejidos, un área con gran potencial en investigación biomédica y diagnóstico asistido. Al combinar dos modalidades de imagen complementarias, el modelo busca capturar correlaciones entre la expresión de proteínas y la morfología tisular, algo que los modelos unimodales no logran. El acceso al modelo está restringido (gated) en Hugging Face, lo que implica que los usuarios deben aceptar condiciones específicas antes de descargarlo. El repositorio tiene un tamaño de 4.9 GB y fue creado en noviembre de 2025, con una actualización posterior en agosto de 2026.
 
 ## Especificaciones tecnicas
 
@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - VRAM estimada: no disponible. El tamaño del repositorio es de 4.9 GB, lo que sugiere que los pesos podrían caber en una GPU con 8-12 GB de VRAM en precisión FP16, pero no se confirma.
 - GPU recomendadas: no disponible. Dado que es un modelo de imagen, probablemente funcione en GPUs consumer como RTX 3090/4090, pero sin datos oficiales.
 - Compatibilidad con consumer GPU: incierta; depende del número de parámetros, que no se ha revelado.
-- Opciones de despliegue: no se mencionan integraciones con vLLM, llama.cpp, Ollama o TGI. Al ser un modelo de visión, es probable que se use con PyTorch y bibliotecas como HuggingFace Transformers o timm, pero no está confirmado.
+- Opciones de despliegue: no se mencionan integraciones con vLLM, llama.cpp, Ollama o TGI. Al ser un modelo de visión, es probable que se use con PyTorch y bibliotecas como Hugging Face Transformers o timm, pero no está confirmado.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -58,7 +58,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo es gated, por lo que requiere aceptar condiciones de uso en HuggingFace; la licencia no está especificada, lo que genera incertidumbre sobre su uso comercial.
+- Acceso restringido: el modelo es gated, por lo que requiere aceptar condiciones de uso en Hugging Face; la licencia no está especificada, lo que genera incertidumbre sobre su uso comercial.
 - Sesgos y alucinaciones: al ser un modelo de visión, no aplica el concepto de alucinación textual, pero podría presentar sesgos en las representaciones si los datos de entrenamiento están desequilibrados (p. ej., sobrerrepresentación de ciertos tipos de tejido o condiciones de imagen).
 - Validación clínica insuficiente: no hay evidencia publicada de validación en entornos clínicos reales; su uso en diagnóstico médico requeriría una evaluación rigurosa y aprobación regulatoria.
 - Dependencia de la calidad de imagen: el rendimiento puede degradarse con imágenes de baja resolución, artefactos de tinción o variaciones entre centros hospitalarios.
@@ -67,6 +67,6 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/yandrewl/Eva
+- Repositorio de Hugging Face: https://huggingface.co/yandrewl/Eva
 - Repositorio de GitHub: https://github.com/YAndrewL/Eva
 - README en GitHub: https://github.com/YAndrewL/Eva/blob/main/README.md

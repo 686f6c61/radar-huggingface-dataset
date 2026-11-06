@@ -69,7 +69,7 @@ No hay informacion verificable sobre otros modelos de decision de la subred SN92
 
 | Modelo | Parametros | Contexto | Benchmarks | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sn92-gen-k7 | 26,1 B | No disponible | No publicados | Apache 2.0 | HuggingFace (0 descargas) |
+| sn92-gen-k7 | 26,1 B | No disponible | No publicados | Apache 2.0 | Hugging Face (0 descargas) |
 | Alternativas de la subred SN92 | No disponible | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada |
 | Backbone Qwen 3.5 de referencia | No disponible | No disponible | No disponible | No disponible | No verificado en la informacion proporcionada |
 
@@ -88,5 +88,5 @@ No hay informacion verificable sobre otros modelos de decision de la subred SN92
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/johnnybravodo/sn92-gen-k7
+- Modelo en Hugging Face: https://huggingface.co/johnnybravodo/sn92-gen-k7
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales relevantes para este modelo.

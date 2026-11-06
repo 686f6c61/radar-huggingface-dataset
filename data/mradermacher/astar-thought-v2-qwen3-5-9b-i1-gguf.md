@@ -58,7 +58,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/AStar-Thought-V2-Qwen3.5-9B-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/AStar-Thought-V2-Qwen3.5-9B-i1-GGUF
 - Modelo base (referenciado en la model card): https://huggingface.co/xxang/AStar-Thought-V2-Qwen3.5-9B
 - Página del autor mradermacher en Hugging Face: https://huggingface.co/mradermacher
 - Información sobre Qwen3.5-9B (modelo base, no esta variante): https://ollama.com/library/qwen3.5:9b y https://lmstudio.ai/models/qwen/qwen3.5-9b

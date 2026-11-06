@@ -96,4 +96,4 @@ La comparación más relevante es con el modelo base original: esta versión sac
 - Glosario sobre cuantizaciones de Artefact2: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
 - Guía de uso de GGUF de TheBloke: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
 - Empresa de mradermacher (nethype GmbH): https://www.nethype.de/
-- Repositorio oficial de NVIDIA Nemotron en HuggingFace: no disponible (no se ha proporcionado enlace en la información)
+- Repositorio oficial de NVIDIA Nemotron en Hugging Face: no disponible (no se ha proporcionado enlace en la información)

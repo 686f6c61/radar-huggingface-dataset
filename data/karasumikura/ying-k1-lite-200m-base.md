@@ -83,7 +83,7 @@ La comparación directa es difícil: Ying-K1-Lite-200M-base es un modelo base en
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Karasumikura/Ying-K1-Lite-200M-base
+- Hugging Face: https://huggingface.co/Karasumikura/Ying-K1-Lite-200M-base
 - Dataset de entrenamiento (Ultra-FineWeb-zh): no se proporciona enlace directo en la información disponible.
 - Paper, blog o repositorio del autor: no disponible.
 - Demo: no disponible.

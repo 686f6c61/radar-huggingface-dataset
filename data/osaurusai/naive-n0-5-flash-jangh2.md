@@ -27,7 +27,7 @@ El resultado es una distribución exclusivamente para Apple Silicon a través de
 | Tamaño del repo | 103,0 GB |
 | Modalidad | solo texto |
 | Pipeline | text-generation |
-| Fecha de publicación | 30 de septiembre de 2026 (según metadatos de HuggingFace) |
+| Fecha de publicación | 30 de septiembre de 2026 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -118,8 +118,8 @@ Comportamiento en servicio (temperatura 0):
 
 | Modelo | Parámetros | Contexto | Tamaño en disco | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Naive-N0.5-Flash-JANGH2 (esta ficha) | 309 000 M totales, ~15 500 M activos | 1 000 000 tokens | 95,89 GiB | MIT | HuggingFace, MLX, runtime Osaurus |
-| NaiveAI/Naive-N0.5-Flash (base) | 309 000 M totales, ~15 500 M activos | 1 000 000 tokens | 575 GiB en bf16 | MIT | HuggingFace |
+| Naive-N0.5-Flash-JANGH2 (esta ficha) | 309 000 M totales, ~15 500 M activos | 1 000 000 tokens | 95,89 GiB | MIT | Hugging Face, MLX, runtime Osaurus |
+| NaiveAI/Naive-N0.5-Flash (base) | 309 000 M totales, ~15 500 M activos | 1 000 000 tokens | 575 GiB en bf16 | MIT | Hugging Face |
 | Control MLX affine RTN del mismo origen | mismos parámetros | 1 000 000 tokens | 95,83 GiB | no publicado | no publicado (control interno del autor) |
 
 No se dispone de datos comparativos frente a otros MoE abiertos de tamaño similar (por ejemplo, alternativas de la familia DeepSeek o Qwen) en la información proporcionada, ni de resultados de benchmarks estándar que permitan situar el modelo base frente a ellos. La comparación publicada se limita a las tres variantes de la tabla, que comparten pesos de origen y difieren solo en el esquema de cuantización.
@@ -139,7 +139,7 @@ No se dispone de datos comparativos frente a otros MoE abiertos de tamaño simil
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OsaurusAI/Naive-N0.5-Flash-JANGH2
+- Modelo en Hugging Face: https://huggingface.co/OsaurusAI/Naive-N0.5-Flash-JANGH2
 - Modelo base NaiveAI/Naive-N0.5-Flash: https://huggingface.co/NaiveAI/Naive-N0.5-Flash
 - Ficheros del modelo base: https://huggingface.co/NaiveAI/Naive-N0.5-Flash/tree/main
 - Repositorio GitHub de NaiveAI-Labs: https://github.com/NaiveAI-Labs/Naive-N0.5-Flash/tree/main

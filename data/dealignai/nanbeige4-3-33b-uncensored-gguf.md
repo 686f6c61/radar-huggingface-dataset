@@ -100,7 +100,7 @@ La comparación relevante que sí está documentada es contra el propio modelo b
 
 ## Enlaces
 
-- [HuggingFace: dealignai/Nanbeige4.3-33B-UNCENSORED-GGUF](https://huggingface.co/dealignai/Nanbeige4.3-33B-UNCENSORED-GGUF)
+- [Hugging Face: dealignai/Nanbeige4.3-33B-UNCENSORED-GGUF](https://huggingface.co/dealignai/Nanbeige4.3-33B-UNCENSORED-GGUF)
 - [Modelo base: Nanbeige/Nanbeige4.3-33B](https://huggingface.co/Nanbeige/Nanbeige4.3-33B)
 - [Licencia (LICENSE.md en el repositorio)](https://huggingface.co/dealignai/Nanbeige4.3-33B-UNCENSORED-GGUF/blob/main/LICENSE.md)
 - [Twitter del autor: @dealignai](https://twitter.com/dealignai)

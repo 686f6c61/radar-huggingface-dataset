@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Flamingo-experiment es un repositorio publicado por el usuario aademir7 en HuggingFace que contiene una implementación de referencia —no un modelo entrenado— de una arquitectura tipo Flamingo orientada a tareas de recuperación (retrieval). Segun la propia model card, se trata de un "checkpoint de inicialización válido para pruebas de humo (smoke tests)" que el autor declara explícitamente que "no ha sido entrenado ni auditado" en robustez, equidad o transferencia de dominio. El repositorio se centra en código transparente y pruebas repetibles, y omite deliberadamente cualquier afirmación sobre benchmarks.
+Flamingo-experiment es un repositorio publicado por el usuario aademir7 en Hugging Face que contiene una implementación de referencia —no un modelo entrenado— de una arquitectura tipo Flamingo orientada a tareas de recuperación (retrieval). Segun la propia model card, se trata de un "checkpoint de inicialización válido para pruebas de humo (smoke tests)" que el autor declara explícitamente que "no ha sido entrenado ni auditado" en robustez, equidad o transferencia de dominio. El repositorio se centra en código transparente y pruebas repetibles, y omite deliberadamente cualquier afirmación sobre benchmarks.
 
 El dato de parámetros obtenido de los pesos safetensors es de 16.576 parámetros totales, una cifra extremadamente baja que contradice la etiqueta "huge" que aparece en la model card: no se corresponde con un modelo Flamingo operativo, sino con un artefacto de inicialización de tamano mínimo pensado para verificar que la arquitectura se instancia y ejecuta sin errores. El repositorio ocupa 0,0 GB y acumula 0 descargas y 0 likes en el momento de la consulta.
 
@@ -81,6 +81,6 @@ No disponible. No se han facilitado modelos comparables en la información propo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aademir7/flamingo-experiment
-- Archivos del repositorio: `inference.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors` (accesibles desde la página del modelo en HuggingFace)
+- Hugging Face: https://huggingface.co/aademir7/flamingo-experiment
+- Archivos del repositorio: `inference.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors` (accesibles desde la página del modelo en Hugging Face)
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la búsqueda web. Los resultados de busqueda disponibles no guardan relación con este modelo y han sido descartados.

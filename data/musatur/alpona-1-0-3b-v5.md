@@ -1,7 +1,7 @@
 # musatur/Alpona-1.0-3B-v5
 
 ## Resumen
-Alpona-1.0-3B-v5 es un modelo de lenguaje publicado en HuggingFace por el usuario musatur, distribuido como un ajuste fino (finetune) del modelo base Nanbeige/Nanbeige4.2-3B. Aunque su nombre comercial indica "3B", el recuento real de parametros de los pesos safetensors es de 4.169.800.704 (aproximadamente 4,17 mil millones), y el repositorio ocupa 8,4 GB. Se distribuye bajo licencia cc-by-sa-4.0 y con acceso restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de descargarlo.
+Alpona-1.0-3B-v5 es un modelo de lenguaje publicado en Hugging Face por el usuario musatur, distribuido como un ajuste fino (finetune) del modelo base Nanbeige/Nanbeige4.2-3B. Aunque su nombre comercial indica "3B", el recuento real de parametros de los pesos safetensors es de 4.169.800.704 (aproximadamente 4,17 mil millones), y el repositorio ocupa 8,4 GB. Se distribuye bajo licencia cc-by-sa-4.0 y con acceso restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de descargarlo.
 
 Su rasgo diferencial es la especializacion en generacion de codigo para diseno de hardware: las etiquetas del repositorio incluyen Verilog, SystemVerilog, RTL, hardware-design, EDA y code-generation, ademas de text-generation y conversational. Esto lo situa en el nicho de asistentes para flujos de diseno digital, verificacion y automatizacion de EDA, un area donde la mayoria de los modelos abiertos generalistas rinden peor por la escasez de datos HDL de calidad.
 
@@ -21,7 +21,7 @@ El modelo esta pensado para ingles unicamente (tag `en`), usa la libreria transf
 | Formato de pesos | safetensors (libreria transformers, requiere `custom_code`) |
 | Modelo base | Nanbeige/Nanbeige4.2-3B (finetune) |
 | Tamano del repositorio | 8,4 GB |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Fecha de publicacion | 19 de septiembre de 2026 (creacion y ultima actualizacion) |
 
 ## Arquitectura y entrenamiento
@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 No hay datos de benchmarks publicados para Alpona-1.0-3B-v5, por lo que no es posible establecer una comparacion cuantitativa fiable con modelos de la misma categoria (por ejemplo, asistentes especializados en Verilog o modelos de codigo de tamano similar). La comparacion queda limitada a la relacion con su modelo base Nanbeige/Nanbeige4.2-3B, del que no se detallan especificaciones en la informacion proporcionada.
 
 ## Limitaciones y advertencias
-- Acceso restringido: el repositorio esta sujeto a gating, por lo que la descarga requiere aceptar condiciones previamente en HuggingFace.
+- Acceso restringido: el repositorio esta sujeto a gating, por lo que la descarga requiere aceptar condiciones previamente en Hugging Face.
 - Licencia cc-by-sa-4.0: permite uso comercial, pero impone atribucion y obliga a distribuir cualquier obra derivada bajo la misma licencia, lo que puede ser incompatible con productos propietarios que no quieran liberar su codigo.
 - Idiomas: unicamente ingles declarado; no hay soporte verificado de castellano ni de otros idiomas.
 - Discrepancia de nomenclatura: el nombre indica "3B" mientras que el recuento real es de 4,17 B de parametros, lo que puede llevar a infraestimar los requisitos de memoria.
@@ -86,6 +86,6 @@ No hay datos de benchmarks publicados para Alpona-1.0-3B-v5, por lo que no es po
 - Publicacion muy reciente (septiembre de 2026) y sin versionado posterior documentado, por lo que la estabilidad del proyecto a medio plazo es incierta.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/musatur/Alpona-1.0-3B-v5
+- Modelo en Hugging Face: https://huggingface.co/musatur/Alpona-1.0-3B-v5
 - Modelo base: https://huggingface.co/Nanbeige/Nanbeige4.2-3B
 - La busqueda web realizada no devolvio ningun resultado relevante sobre el modelo, su paper, su repositorio de codigo ni demos asociadas.

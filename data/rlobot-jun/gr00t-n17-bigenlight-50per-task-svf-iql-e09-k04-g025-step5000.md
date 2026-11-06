@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`RLobot-jun/gr00t-n17-bigenlight-50per-task-svf-iql-e09-k04-g025-step5000` es un paquete de inferencia (bundle) para una política de manipulación robótica, publicado por el usuario RLobot-jun en HuggingFace el 21 de septiembre de 2026. No se trata de un modelo completo, sino de un conjunto de adaptadores derivados de un modelo base de imitación: el autor lo describe explícitamente como un "BC-deduplicated inference bundle" que contiene únicamente el LoRA del actor, el crítico Q congelado y los críticos internos de soft-value. El repositorio ocupa 0,1 GB y, en el momento de la consulta, acumula 0 descargas y 0 "likes".
+`RLobot-jun/gr00t-n17-bigenlight-50per-task-svf-iql-e09-k04-g025-step5000` es un paquete de inferencia (bundle) para una política de manipulación robótica, publicado por el usuario RLobot-jun en Hugging Face el 21 de septiembre de 2026. No se trata de un modelo completo, sino de un conjunto de adaptadores derivados de un modelo base de imitación: el autor lo describe explícitamente como un "BC-deduplicated inference bundle" que contiene únicamente el LoRA del actor, el crítico Q congelado y los críticos internos de soft-value. El repositorio ocupa 0,1 GB y, en el momento de la consulta, acumula 0 descargas y 0 "likes".
 
 El modelo resuelve el problema del post-entrenamiento por refuerzo offline de una política de imitación (behavior cloning) para tareas de manipulación. Sobre el modelo base `RLobot-jun/gr00t-n17-bigenlight-50per-task-step10000` se aplica un crítico ambiental IQL con expectile 0,9 (30.000 actualizaciones, recompensa de coste por paso, gamma 0,99, 50 episodios por tarea) y posteriormente un actor e crítico interno entrenados durante 5.000 actualizaciones con kappa=0,4, g=0,25 (c=0,64), batch 32, 4 pasos de flujo y 8 candidatos. El actor es un `ProjectedFlowActor` con LoRA de rango 16 y alpha 32, con horizonte de acción de 16 pasos.
 
@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto / horizonte | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `gr00t-n17-bigenlight-50per-task-svf-iql-e09-k04-g025-step5000` (este bundle) | No disponible (adaptadores de 0,1 GB) | No disponible; horizonte de acción 16 | No publicado | No disponible | HuggingFace, 0 descargas |
-| `RLobot-jun/gr00t-n17-bigenlight-50per-task-step10000` (modelo base) | No disponible | No disponible | No publicado | No disponible | HuggingFace, referenciado como base |
+| `gr00t-n17-bigenlight-50per-task-svf-iql-e09-k04-g025-step5000` (este bundle) | No disponible (adaptadores de 0,1 GB) | No disponible; horizonte de acción 16 | No publicado | No disponible | Hugging Face, 0 descargas |
+| `RLobot-jun/gr00t-n17-bigenlight-50per-task-step10000` (modelo base) | No disponible | No disponible | No publicado | No disponible | Hugging Face, referenciado como base |
 | Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre otros modelos comparables en la documentación proporcionada. El único punto de comparación documentado es el propio modelo base del que deriva este bundle.
@@ -88,7 +88,7 @@ No se dispone de información sobre otros modelos comparables en la documentaci�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RLobot-jun/gr00t-n17-bigenlight-50per-task-svf-iql-e09-k04-g025-step5000
+- Modelo en Hugging Face: https://huggingface.co/RLobot-jun/gr00t-n17-bigenlight-50per-task-svf-iql-e09-k04-g025-step5000
 - Modelo base: https://huggingface.co/RLobot-jun/gr00t-n17-bigenlight-50per-task-step10000
 - Revisión del modelo base indicada por el autor: `1704897ac6a2a93c1d1fd806925b9237977ed8c5`
 - Documentación de los adaptadores: `adapter/README.md` dentro del repositorio

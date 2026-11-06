@@ -73,10 +73,10 @@ Notas metodológicas de la model card: xLAM ETC es exactitud exacta de la llamad
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (Qwen2.5-0.5B + LoRA SFT/GRPO) | ~0,5 B | 32.768 (base) | Tool calling + abstención | No disponible | HuggingFace, PEFT |
-| Qwen/Qwen2.5-0.5B-Instruct (base) | ~0,5 B | 32.768 | Instrucciones generales | Apache 2.0 | HuggingFace |
-| Qwen/Qwen2.5-1.5B-Instruct | ~1,5 B | 32.768 | Instrucciones generales | Apache 2.0 | HuggingFace |
-| Adaptador SFT del mismo autor (sin GRPO) | ~0,5 B | 32.768 (base) | Tool calling | No disponible | HuggingFace, PEFT |
+| Este adaptador (Qwen2.5-0.5B + LoRA SFT/GRPO) | ~0,5 B | 32.768 (base) | Tool calling + abstención | No disponible | Hugging Face, PEFT |
+| Qwen/Qwen2.5-0.5B-Instruct (base) | ~0,5 B | 32.768 | Instrucciones generales | Apache 2.0 | Hugging Face |
+| Qwen/Qwen2.5-1.5B-Instruct | ~1,5 B | 32.768 | Instrucciones generales | Apache 2.0 | Hugging Face |
+| Adaptador SFT del mismo autor (sin GRPO) | ~0,5 B | 32.768 (base) | Tool calling | No disponible | Hugging Face, PEFT |
 
 No se dispone de resultados de benchmarks de los modelos comparables en la información proporcionada, por lo que la comparación cuantitativa de rendimiento se limita a las dos filas del apartado anterior. Frente al base sin ajustar, la diferencia esperada está en el formato de las llamadas y en la abstención, no en conocimiento general; frente al adaptador SFT, la ganancia medida de GRPO es de +1,62 puntos en xLAM ETC, +4,08 en BFCL single-turn y +4,37 en irrelevancia, a costa de una ligera caída en MMLU (-0,53) y MATH-500 (-1,60).
 
@@ -96,7 +96,7 @@ No se dispone de resultados de benchmarks de los modelos comparables en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft5600-grpo3300-lora
+- Modelo en Hugging Face: https://huggingface.co/uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft5600-grpo3300-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Adaptador SFT previo: https://huggingface.co/uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft5600-lora
 - Dataset de entrenamiento: https://huggingface.co/datasets/uygarkurt/xlam-tool-calling-mixed

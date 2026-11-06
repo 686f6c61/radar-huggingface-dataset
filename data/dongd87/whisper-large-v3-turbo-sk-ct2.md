@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Formato / cuantizacion | Idioma objetivo | Contexto de audio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| dongd87/whisper-large-v3-turbo-sk-ct2 | No disponible (base ~809 M) | CTranslate2, int8_float16 | Eslovaco (sk) | Ventanas de 30 s | MIT | HuggingFace, 0 descargas |
-| kinit/whisper-large-v3-turbo-sk | No disponible | PyTorch (safetensors) | Eslovaco (sk) | Ventanas de 30 s | No disponible en la informacion proporcionada | HuggingFace (modelo fuente del ajuste) |
-| openai/whisper-large-v3-turbo | ~809 M segun datos publicos | PyTorch | Multilingue (99 idiomas) | Ventanas de 30 s | MIT | HuggingFace, muy extendido |
-| openai/whisper-large-v3 | ~1.550 M segun datos publicos | PyTorch | Multilingue (99 idiomas) | Ventanas de 30 s | MIT | HuggingFace, muy extendido |
+| dongd87/whisper-large-v3-turbo-sk-ct2 | No disponible (base ~809 M) | CTranslate2, int8_float16 | Eslovaco (sk) | Ventanas de 30 s | MIT | Hugging Face, 0 descargas |
+| kinit/whisper-large-v3-turbo-sk | No disponible | PyTorch (safetensors) | Eslovaco (sk) | Ventanas de 30 s | No disponible en la informacion proporcionada | Hugging Face (modelo fuente del ajuste) |
+| openai/whisper-large-v3-turbo | ~809 M segun datos publicos | PyTorch | Multilingue (99 idiomas) | Ventanas de 30 s | MIT | Hugging Face, muy extendido |
+| openai/whisper-large-v3 | ~1.550 M segun datos publicos | PyTorch | Multilingue (99 idiomas) | Ventanas de 30 s | MIT | Hugging Face, muy extendido |
 
 Los datos de parametros de los modelos de OpenAI son cifras publicas ampliamente citadas, no verificadas en la informacion proporcionada para esta ficha. No se dispone de comparativas de WER entre estos modelos en eslovaco.
 
@@ -85,7 +85,7 @@ Los datos de parametros de los modelos de OpenAI son cifras publicas ampliamente
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dongd87/whisper-large-v3-turbo-sk-ct2
+- Modelo en Hugging Face: https://huggingface.co/dongd87/whisper-large-v3-turbo-sk-ct2
 - Modelo base (ajuste fino en PyTorch): https://huggingface.co/kinit/whisper-large-v3-turbo-sk
 - Whisper large-v3-turbo original de OpenAI: https://huggingface.co/openai/whisper-large-v3-turbo
 - faster-whisper (libreria de inferencia recomendada): https://github.com/SYSTRAN/faster-whisper

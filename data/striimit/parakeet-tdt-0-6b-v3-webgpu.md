@@ -80,7 +80,7 @@ La comparativa es cualitativa, ya que no se dispone de benchmarks comunes en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/striimit/parakeet-tdt-0.6b-v3-webgpu
+- Modelo en Hugging Face: https://huggingface.co/striimit/parakeet-tdt-0.6b-v3-webgpu
 - Modelo original de NVIDIA: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Exportación ONNX base de istupakov: https://huggingface.co/istupakov/parakeet-tdt-0.6b-v3-onnx
 - Proyecto onnx-asr (grafo de features): https://github.com/istupakov/onnx-asr

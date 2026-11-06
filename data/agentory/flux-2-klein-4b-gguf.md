@@ -29,7 +29,7 @@ Tampoco hay datos sobre el volumen de tokens o imágenes de entrenamiento, la co
 
 ## Capacidades
 
-- Generación de imágenes a partir de descripciones textuales (text-to-image), según el pipeline declarado en HuggingFace.
+- Generación de imágenes a partir de descripciones textuales (text-to-image), según el pipeline declarado en Hugging Face.
 - Ejecución local mediante stable-diffusion.cpp, lo que permite inferencia sin PyTorch ni el stack completo de difusión.
 - Soporte de los idiomas inglés y chino en las indicaciones textuales, según los metadatos del repositorio.
 - Formato GGUF orientado a despliegue ligero en CPU y GPUs de consumo.
@@ -80,6 +80,6 @@ No se dispone de datos de rendimiento ni de especificaciones comparables suficie
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/agentory/FLUX.2-klein-4B-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/agentory/FLUX.2-klein-4B-GGUF
 - Modelo base: https://huggingface.co/black-forest-labs/FLUX.2-klein-4B
 - Herramienta de conversión stable-diffusion.cpp: https://github.com/leejet/stable-diffusion.cpp

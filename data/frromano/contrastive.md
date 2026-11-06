@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`frromano/contrastive` es un repositorio publicado en HuggingFace por el usuario frromano que contiene una implementacion a pequena escala de una arquitectura **Beit** orientada a tareas de **aprendizaje contrastivo**. Segun la propia model card, se trata de un punto de partida reproducible y no de una version de modelo entrenada: el fichero `model.safetensors` se describe explicitamente como un *checkpoint de inicializacion* valido para pruebas de humo (smoke tests), no como un checkpoint evaluado en benchmarks.
+`frromano/contrastive` es un repositorio publicado en Hugging Face por el usuario frromano que contiene una implementacion a pequena escala de una arquitectura **Beit** orientada a tareas de **aprendizaje contrastivo**. Segun la propia model card, se trata de un punto de partida reproducible y no de una version de modelo entrenada: el fichero `model.safetensors` se describe explicitamente como un *checkpoint de inicializacion* valido para pruebas de humo (smoke tests), no como un checkpoint evaluado en benchmarks.
 
 El repositorio incluye, ademas de los pesos de inicializacion, un fichero `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta de experimento por defecto (optimizador SGD con planificador polinomial) y un `eval.py` como artefacto principal ejecutable. La model card declara la escala "large", atencion de tipo *grouped query*, fusion con puerta (*gated fusion*), activacion swish y normalizacion por lotes (*batchnorm*).
 
@@ -20,7 +20,7 @@ Su relevancia actual es limitada y de caracter experimental: sirve como esquelet
 | Idiomas soportados | no disponible |
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors (PyTorch) |
-| Fecha de creacion en HuggingFace | 2026-09-15 |
+| Fecha de creacion en Hugging Face | 2026-09-15 |
 | Ultima actualizacion | 2026-09-15 |
 
 ## Arquitectura y entrenamiento
@@ -78,11 +78,11 @@ No se dispone de datos verificados de modelos comparables en la informacion apor
 - **Alucinacion:** no aplica en sentido generativo porque el modelo no genera texto; no obstante, cualquier resultado derivado de su uso sin entrenamiento previo seria carente de valor.
 - **Discrepancia de datos:** la model card declara escala "large", mientras que el recuento real del safetensors es de 24.832 parametros, lo que sugiere que los pesos publicados no reflejan la arquitectura completa descrita.
 - **Sin datos de idioma ni de contexto:** no se especifica soporte linguistico ni longitud de contexto, probablemente por su naturaleza de vision.
-- **Carga no estandar:** las APIs automaticas de HuggingFace requieren un adaptador explicito por tratarse de codigo personalizado.
+- **Carga no estandar:** las APIs automaticas de Hugging Face requieren un adaptador explicito por tratarse de codigo personalizado.
 - **Licencia y datos externos:** los pesos se publican bajo apache-2.0, lo que permite uso comercial, pero el propio autor recomienda revisar por separado los terminos de las fuentes de datos si se combinan con datasets externos.
 - **Uso en produccion:** no recomendado en su estado actual para ninguna tarea real; solo como material de desarrollo o investigacion.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/frromano/contrastive
+- Modelo en Hugging Face: https://huggingface.co/frromano/contrastive
 - Resultados de busqueda web: no se han encontrado enlaces relevantes sobre este modelo. Los resultados devueltos por la busqueda corresponden a un sitio educativo en turco sin relacion con el repositorio ni con aprendizaje contrastivo.

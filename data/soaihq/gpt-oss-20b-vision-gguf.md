@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Vision | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SoAIHQ/gpt-oss-20b-VISION-GGUF | 21B totales / 3,6B activos | 128K | Experimental | Apache 2.0 | GGUF en HuggingFace |
+| SoAIHQ/gpt-oss-20b-VISION-GGUF | 21B totales / 3,6B activos | 128K | Experimental | Apache 2.0 | GGUF en Hugging Face |
 | openai/gpt-oss-20b | 21B totales / 3,6B activos | 128K | No | Apache 2.0 | Pesos originales |
-| OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview | No disponible | No disponible | Si | No disponible | HuggingFace |
+| OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview | No disponible | No disponible | Si | No disponible | Hugging Face |
 
 El modelo se diferencia de openai/gpt-oss-20b principalmente por el empaquetado GGUF para llama.cpp y por la adicion experimental de vision. Frente a InternVL3_5-GPT-OSS-20B-A4B-Preview, del que toma el codificador visual, esta distribucion se centra en la inferencia local mediante llama.cpp. No se dispone de datos de rendimiento comparativos en la informacion proporcionada.
 
@@ -85,7 +85,7 @@ El modelo se diferencia de openai/gpt-oss-20b principalmente por el empaquetado 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SoAIHQ/gpt-oss-20b-VISION-GGUF
+- Repositorio Hugging Face: https://huggingface.co/SoAIHQ/gpt-oss-20b-VISION-GGUF
 - Modelo base: https://huggingface.co/openai/gpt-oss-20b
 - Licencia del modelo base: https://huggingface.co/openai/gpt-oss-20b/blob/main/LICENSE
 - Modelo de vision de origen (InternVL3_5-GPT-OSS-20B-A4B-Preview): https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview

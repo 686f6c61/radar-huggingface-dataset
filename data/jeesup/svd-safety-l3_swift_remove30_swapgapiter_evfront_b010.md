@@ -86,10 +86,10 @@ No se han proporcionado datos de rendimiento de los modelos alternativos en la i
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad | Datos de rendimiento |
 |---|---|---|---|---|---|---|
-| svd-safety-l3_swift_remove30_swapgapiter_evfront_b010 | 8.030.261.248 (fraccion declarada 0,7003) | 8.192 tokens (heredado del base) | Llama 3 Community | safetensors | HuggingFace, 0 descargas | ASR y perplejidad en la model card; sin MMLU/HumanEval/GSM8K |
-| meta-llama/Meta-Llama-3-8B-Instruct | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Llama 3 Community (conocimiento general, no verificado aqui) | no disponible en la informacion proporcionada | HuggingFace | no disponible en la informacion proporcionada |
-| Llama-3.1-8B-Instruct | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | HuggingFace | no disponible en la informacion proporcionada |
-| Mistral-7B-Instruct-v0.3 | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | HuggingFace | no disponible en la informacion proporcionada |
+| svd-safety-l3_swift_remove30_swapgapiter_evfront_b010 | 8.030.261.248 (fraccion declarada 0,7003) | 8.192 tokens (heredado del base) | Llama 3 Community | safetensors | Hugging Face, 0 descargas | ASR y perplejidad en la model card; sin MMLU/HumanEval/GSM8K |
+| meta-llama/Meta-Llama-3-8B-Instruct | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Llama 3 Community (conocimiento general, no verificado aqui) | no disponible en la informacion proporcionada | Hugging Face | no disponible en la informacion proporcionada |
+| Llama-3.1-8B-Instruct | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face | no disponible en la informacion proporcionada |
+| Mistral-7B-Instruct-v0.3 | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face | no disponible en la informacion proporcionada |
 
 La ventaja diferencial de este checkpoint frente a cualquier alternativa no es de rendimiento, sino de propósito: ninguno de los modelos comparables documenta un *pipeline* de compresión SVD con reparación mediante intercambio neutro en parámetros ni publica métricas de seguridad medidas con HarmBench y WildGuard.
 
@@ -109,7 +109,7 @@ La ventaja diferencial de este checkpoint frente a cualquier alternativa no es d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l3_swift_remove30_swapgapiter_evfront_b010
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l3_swift_remove30_swapgapiter_evfront_b010
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
 - Licencia y política de uso: archivos `LICENSE` y `USE_POLICY.md` incluidos en el repositorio del modelo
 - SVD-LLM: método de compresión citado en la model card, sin enlace proporcionado en la información disponible

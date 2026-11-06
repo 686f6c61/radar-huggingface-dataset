@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio alojado en HuggingFace bajo el identificador `tolath/MyAwesomeModel-TestRepo`, publicado por el usuario `tolath`. A pesar de su nombre, los metadatos disponibles (etiquetas `bert` y `feature-extraction`, repositorio de 0,0 GB) apuntan a un artefacto de prueba o plantilla más que a un modelo entrenado y desplegable: no se ha publicado ningún peso, configuración ni tokenizador verificable en la información disponible.
+MyAwesomeModel-TestRepo es un repositorio alojado en Hugging Face bajo el identificador `tolath/MyAwesomeModel-TestRepo`, publicado por el usuario `tolath`. A pesar de su nombre, los metadatos disponibles (etiquetas `bert` y `feature-extraction`, repositorio de 0,0 GB) apuntan a un artefacto de prueba o plantilla más que a un modelo entrenado y desplegable: no se ha publicado ningún peso, configuración ni tokenizador verificable en la información disponible.
 
 La model card asociada describe un modelo conversacional con supuestas capacidades de razonamiento, resolución de problemas matemáticos, generación de código y function calling, e incluye una tabla de resultados con etiquetas genéricas («Model1», «Model2», «Model1-v2», «MyAwesomeModel»). Esta descripción entra en contradicción directa con las etiquetas técnicas del repositorio (BERT, `feature-extraction`), lo que sugiere que el contenido es una plantilla sin sustancia técnica real. El modelo acumula 0 descargas y 0 «likes», y fue creado y actualizado el 11 de septiembre de 2026 (según los metadatos del repositorio).
 
@@ -23,7 +23,7 @@ En conjunto, no existe información suficiente para evaluar arquitectura, tamañ
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información verificable sobre la arquitectura. La única referencia técnica objetiva es la etiqueta `bert` del repositorio, que en el ecosistema de HuggingFace se asocia a transformers de tipo encoder orientados a extracción de características (`feature-extraction`), y no a modelos generativos causales. La model card, en cambio, describe un modelo con «profundidad de razonamiento» mejorada, mecanismos de optimización algorítmica en el post-entrenamiento y mayor uso de recursos computacionales, sin especificar número de parámetros, volumen de tokens de entrenamiento ni composición del dataset.
+No se dispone de información verificable sobre la arquitectura. La única referencia técnica objetiva es la etiqueta `bert` del repositorio, que en el ecosistema de Hugging Face se asocia a transformers de tipo encoder orientados a extracción de características (`feature-extraction`), y no a modelos generativos causales. La model card, en cambio, describe un modelo con «profundidad de razonamiento» mejorada, mecanismos de optimización algorítmica en el post-entrenamiento y mayor uso de recursos computacionales, sin especificar número de parámetros, volumen de tokens de entrenamiento ni composición del dataset.
 
 Tampoco se detalla si hubo RLHF, DPO u otra técnica de alineación. La model card menciona que la versión actual emplea una media de 23.000 tokens por pregunta en el conjunto AIME (frente a 12.000 en la versión anterior), lo que apunta a un modelo con modo de razonamiento extendido, pero no se aporta ninguna cifra sobre el entrenamiento. En resumen: no hay datos de arquitectura, datos ni proceso de entrenamiento que puedan considerarse fiables.
 
@@ -84,7 +84,7 @@ Dato adicional mencionado en el texto de la model card: la precisión en AIME 20
 
 No disponible. Al no conocerse el número de parámetros, la arquitectura real ni el formato de pesos, no es posible estimar VRAM, GPU recomendadas, encaje en GPUs de consumo ni opciones de despliegue. El repositorio figura con un tamaño de 0,0 GB y no contiene pesos descargables, por lo que no puede ejecutarse en ningún hardware con los artefactos publicados.
 
-Opciones de despliegue teóricas (solo si en el futuro se publicaran pesos compatibles con `transformers`): bibliotecas estándar del ecosistema HuggingFace. Sin datos sobre latencia ni throughput.
+Opciones de despliegue teóricas (solo si en el futuro se publicaran pesos compatibles con `transformers`): bibliotecas estándar del ecosistema Hugging Face. Sin datos sobre latencia ni throughput.
 
 ## Comparativa con modelos similares
 
@@ -104,7 +104,7 @@ No disponible. La model card referencia de forma anónima a «Model1», «Model2
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tolath/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/tolath/MyAwesomeModel-TestRepo
 - Paper, blog, repositorio de código o demo: no disponibles.
 - La model card menciona una «web oficial» y un «repositorio de código» para ejecución local, pero no incluye enlaces a los mismos.
 - La búsqueda web realizada no devolvió ninguna fuente relevante sobre el modelo (únicamente resultados de servicios de PDF ajenos al tema).

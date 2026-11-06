@@ -80,10 +80,10 @@ La comparativa es orientativa; no se han evaluado rendimientos en este documento
 
 ## Enlaces
 
-- Modelo en HuggingFace (Emerald7664): https://huggingface.co/Emerald7664/chatterbox-multilingual-ONNX
+- Modelo en Hugging Face (Emerald7664): https://huggingface.co/Emerald7664/chatterbox-multilingual-ONNX
 - Modelo original de ResembleAI: https://huggingface.co/ResembleAI/chatterbox
 - Repositorio de ResembleAI en GitHub: https://github.com/resemble-ai/chatterbox
 - Scripts de conversion e inferencia ONNX: https://github.com/VladOS95-cyber/onnx_conversion_scripts/tree/main/chatterbox
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/ResembleAI/Chatterbox
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/ResembleAI/Chatterbox
 - Pagina de demos de audio: https://resemble-ai.github.io/chatterbox_demopage/
 - Informe de evaluacion en Podonos: https://podonos.com/resembleai/chatterbox

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Nikssxelo123/VoiceConversionWebUI` es un repositorio publicado en HuggingFace por el usuario Nikssxelo123 que, por su identificador y por el formato de sus pesos (ONNX), parece corresponder a un conjunto de modelos para una interfaz web de conversion de voz (voice conversion, VC). El repositorio tiene un tamano de 97,3 GB, lo que sugiere que empaqueta varios checkpoints, probablemente el modelo de conversion, el extractor de caracteristicas (por ejemplo, HuBERT o ContentVec), el codificador de tono (RMVPE, harvest o similar) y posibles vocoders, en lugar de un unico modelo transformer.
+`Nikssxelo123/VoiceConversionWebUI` es un repositorio publicado en Hugging Face por el usuario Nikssxelo123 que, por su identificador y por el formato de sus pesos (ONNX), parece corresponder a un conjunto de modelos para una interfaz web de conversion de voz (voice conversion, VC). El repositorio tiene un tamano de 97,3 GB, lo que sugiere que empaqueta varios checkpoints, probablemente el modelo de conversion, el extractor de caracteristicas (por ejemplo, HuBERT o ContentVec), el codificador de tono (RMVPE, harvest o similar) y posibles vocoders, en lugar de un unico modelo transformer.
 
 No obstante, la model card publicada es practicamente vacia: solo declara la licencia MIT y no incluye descripcion, arquitectura, datos de entrenamiento, idiomas ni resultados de evaluacion. Tampoco consta pipeline declarado, etiquetas de tarea mas alla de `onnx`, ni descargas o interacciones. Por tanto, cualquier dato tecnico que no aparezca en esta ficha debe considerarse no disponible y requerira inspeccion directa de los ficheros del repositorio.
 
@@ -83,5 +83,5 @@ La comparacion es estructural: los tres alternativas cuentan con documentacion, 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Nikssxelo123/VoiceConversionWebUI
+- Repositorio en Hugging Face: https://huggingface.co/Nikssxelo123/VoiceConversionWebUI
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

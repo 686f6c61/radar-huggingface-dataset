@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`iyers-andeep/contrastive-learning-study` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación sobre aprendizaje contrastivo publicado en HuggingFace. La model card del autor es explícita: contiene motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación, y no se presenta como un artículo terminado ni como una release de modelos entrenados. El repositorio incluye dos ficheros de texto (`summary.md` y `README.md`) y un artefacto en formato safetensors de tamano mínimo.
+`iyers-andeep/contrastive-learning-study` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación sobre aprendizaje contrastivo publicado en Hugging Face. La model card del autor es explícita: contiene motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación, y no se presenta como un artículo terminado ni como una release de modelos entrenados. El repositorio incluye dos ficheros de texto (`summary.md` y `README.md`) y un artefacto en formato safetensors de tamano mínimo.
 
 El peso publicado es meramente testimonial: los metadatos de safetensors declaran 49.600 parametros totales, una cifra compatible con un tensor auxiliar de prueba, no con un modelo utilizable. El tamano del repositorio es de 0,0 GB y no se declaran idiomas soportados, pipeline de inferencia ni checkpoint entrenado. Por tanto, cualquier dato de arquitectura, contexto o rendimiento que no figure en la model card debe considerarse no disponible.
 
@@ -23,7 +23,7 @@ Su relevancia actual es documental y metodológica: sirve como plantilla de cóm
 
 ## Arquitectura y entrenamiento
 
-No se especifica arquitectura alguna en la información disponible. Los metadatos de HuggingFace incluyen el tag `transformer`, pero la model card no describe capas, atención, dimensiones ocultas ni ninguna otra característica estructural, y tampoco menciona que se haya entrenado un modelo. El repositorio se describe a sí mismo como "una nota de investigación en curso" que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación.
+No se especifica arquitectura alguna en la información disponible. Los metadatos de Hugging Face incluyen el tag `transformer`, pero la model card no describe capas, atención, dimensiones ocultas ni ninguna otra característica estructural, y tampoco menciona que se haya entrenado un modelo. El repositorio se describe a sí mismo como "una nota de investigación en curso" que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación.
 
 No hay datos de entrenamiento: ni número de tokens, ni composición del dataset, ni fases de alineación (RLHF, DPO u otras). El propio autor advierte que las secciones etiquetadas como planes o hipótesis no deben interpretarse como resultados experimentales, y que si en el futuro se añaden resultados deberán incluir versiones de dataset, comandos, semillas, hardware y logs en bruto. No se declara ninguna innovación técnica implementada (decodificación especulativa, atención lineal, SSM, híbridos, etc.).
 
@@ -44,7 +44,7 @@ No hay datos de entrenamiento: ni número de tokens, ni composición del dataset
 - Diseño de experimentos con baselines emparejados: la propuesta de comparación con baselines coincidentes en presupuesto y datos es reutilizable como checklist para evitar comparaciones sesgadas en estudios propios.
 - Auditoría de reproducibilidad: el repositorio insiste en registrar versión de dataset, comandos, semillas, hardware y logs; ese conjunto de requisitos puede adoptarse como plantilla de *reporting* en proyectos internos.
 - Punto de partida para un estudio real: un equipo puede clonar el repositorio, tomar la hipótesis y el plan de evaluación propuestos y ejecutarlos sobre benchmarks públicos nombrados en la nota, documentando los resultados que falten.
-- Verificación de prácticas de publicación en HuggingFace: útil como caso de estudio de un repo con licencia CC-BY-4.0, tags de investigación y ausencia de checkpoint comercializable.
+- Verificación de prácticas de publicación en Hugging Face: útil como caso de estudio de un repo con licencia CC-BY-4.0, tags de investigación y ausencia de checkpoint comercializable.
 
 ## Benchmarks y rendimiento
 
@@ -75,7 +75,7 @@ No disponible. Este repositorio no es un modelo desplegable, sino una nota de in
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/iyers-andeep/contrastive-learning-study
+- Repositorio en Hugging Face: https://huggingface.co/iyers-andeep/contrastive-learning-study
 - Fichero principal de la nota: `summary.md` dentro del repositorio
 - Documentación: `README.md` dentro del repositorio
 - Paper, blog, repositorio de código o demo asociados: no disponible en la información proporcionada

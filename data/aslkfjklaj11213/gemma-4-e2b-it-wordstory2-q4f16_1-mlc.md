@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| aslkfjklaj11213/gemma-4-E2B-it-wordstory2-q4f16_1-MLC | no disponible | no disponible | MLC (q4f16_1) | Apache 2.0 | HuggingFace, 13 descargas |
-| mlc-ai/gemma-4-E2B-it-q4f16_1-MLC | no disponible | no disponible | MLC (q4f16_1) | Apache 2.0 (heredada) | HuggingFace, repositorio oficial de MLC |
-| google/gemma-4-E2B-it | no disponible | no disponible | safetensors | Apache 2.0 | HuggingFace, modelo base oficial |
+| aslkfjklaj11213/gemma-4-E2B-it-wordstory2-q4f16_1-MLC | no disponible | no disponible | MLC (q4f16_1) | Apache 2.0 | Hugging Face, 13 descargas |
+| mlc-ai/gemma-4-E2B-it-q4f16_1-MLC | no disponible | no disponible | MLC (q4f16_1) | Apache 2.0 (heredada) | Hugging Face, repositorio oficial de MLC |
+| google/gemma-4-E2B-it | no disponible | no disponible | safetensors | Apache 2.0 | Hugging Face, modelo base oficial |
 
 La comparación se limita a los tres artefactos relacionados directamente; no se dispone de datos de rendimiento ni de especificaciones detalladas para comparar con alternativas de otros fabricantes.
 
@@ -81,7 +81,7 @@ La comparación se limita a los tres artefactos relacionados directamente; no se
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/aslkfjklaj11213/gemma-4-E2B-it-wordstory2-q4f16_1-MLC
+- Repositorio Hugging Face: https://huggingface.co/aslkfjklaj11213/gemma-4-E2B-it-wordstory2-q4f16_1-MLC
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
 - Repositorio MLC de referencia: https://huggingface.co/mlc-ai/gemma-4-E2B-it-q4f16_1-MLC
 - Proyecto del juego de palabras: https://github.com/areweloststars/-

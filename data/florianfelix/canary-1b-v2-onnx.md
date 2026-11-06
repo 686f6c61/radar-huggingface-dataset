@@ -86,7 +86,7 @@ No se dispone de resultados de benchmarks que permitan comparar la calidad de tr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/florianfelix/canary-1b-v2-onnx
+- Repositorio en Hugging Face: https://huggingface.co/florianfelix/canary-1b-v2-onnx
 - Modelo base: https://huggingface.co/nvidia/canary-1b-v2
 - Libreria onnx-asr: https://github.com/istupakov/onnx-asr
 - No se han encontrado en la busqueda web enlaces adicionales relevantes (papers, blogs tecnicos o demos) asociados a este modelo.

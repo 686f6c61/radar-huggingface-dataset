@@ -75,11 +75,11 @@ La model card afirma ademas que IQ2_S (2,75 bpw) iguala al modelo base en AIME25
 
 | Modelo | Parametros | Formato | bpw / tamano | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen3.8-27B (base, BF16) | 26,9 B | safetensors | 16 / no disponible | No disponible | Apache-2.0 | HuggingFace (Qwen) |
-| Este repo, IQ3_S | 26,9 B | GGUF | 3,50 / 11,8 GB | No disponible | Apache-2.0 | HuggingFace |
-| Este repo, IQ2_XS | 26,9 B | GGUF | 2,50 / 8,4 GB | No disponible | Apache-2.0 | HuggingFace |
-| Unsloth Dynamic (UD) del mismo base | 26,9 B | GGUF | No disponible | No disponible | Apache-2.0 | HuggingFace (citado como baseline en la model card) |
-| ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF (original) | 26,9 B | GGUF | Misma familia de ficheros | No disponible | Apache-2.0 | HuggingFace |
+| Qwen3.8-27B (base, BF16) | 26,9 B | safetensors | 16 / no disponible | No disponible | Apache-2.0 | Hugging Face (Qwen) |
+| Este repo, IQ3_S | 26,9 B | GGUF | 3,50 / 11,8 GB | No disponible | Apache-2.0 | Hugging Face |
+| Este repo, IQ2_XS | 26,9 B | GGUF | 2,50 / 8,4 GB | No disponible | Apache-2.0 | Hugging Face |
+| Unsloth Dynamic (UD) del mismo base | 26,9 B | GGUF | No disponible | No disponible | Apache-2.0 | Hugging Face (citado como baseline en la model card) |
+| ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF (original) | 26,9 B | GGUF | Misma familia de ficheros | No disponible | Apache-2.0 | Hugging Face |
 
 No se dispone en la informacion proporcionada de otros modelos de tamano y categoria comparables con datos verificables, ni de cifras de rendimiento de las cuantizaciones UD que permitan una comparacion numerica.
 
@@ -98,7 +98,7 @@ No se dispone en la informacion proporcionada de otros modelos de tamano y categ
 
 ## Enlaces
 
-- Repositorio en HuggingFace (duplicado): https://huggingface.co/Fix-AI/Qwen3.8-27B-GSQ-RCO-GGUF
+- Repositorio en Hugging Face (duplicado): https://huggingface.co/Fix-AI/Qwen3.8-27B-GSQ-RCO-GGUF
 - Repositorio original: https://huggingface.co/ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Paper GSQ (Gumbel-Softmax Quantization): https://arxiv.org/abs/2604.18556

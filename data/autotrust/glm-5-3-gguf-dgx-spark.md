@@ -86,7 +86,7 @@ Rendimiento medido de inferencia (build GGUF, GPU de 180 GB tipo B200/GB200, res
 | Modelo | Parametros | Formato / tamano | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | autotrust/GLM-5.3-GGUF-DGX-Spark | ~563B (metadatos) | GGUF IQ2_XXS, 149,7 GiB en 4 shards | no disponible (ejemplo con 32768) | other / glm-5.3 | 4691 descargas, 22 likes |
-| autotrust/GLM-5.3-Flash-GGUF-DGX-Spark | no disponible | GGUF, 79 GiB | no disponible | no disponible | disponible en HuggingFace |
+| autotrust/GLM-5.3-Flash-GGUF-DGX-Spark | no disponible | GGUF, 79 GiB | no disponible | no disponible | disponible en Hugging Face |
 | nvidia/GLM-5.3-NVFP4 | 391B | NVFP4 | no disponible | no disponible | 24,9k descargas, 31 likes |
 | zai-org/GLM-5.3 (original) | 744B | safetensors (base del A/B en FP8) | no disponible | glm-5.3 | modelo base original |
 | GLM 5.3 Q2 completo (misma receta) | no disponible | GGUF, 196,7 GiB implicito (149,7 + 47 GiB) | no disponible | glm-5.3 | referenciado en la model card |
@@ -108,7 +108,7 @@ La ventaja declarada de esta build frente al GLM 5.3 Q2 completo con la misma re
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/autotrust/GLM-5.3-GGUF-DGX-Spark
+- Modelo en Hugging Face: https://huggingface.co/autotrust/GLM-5.3-GGUF-DGX-Spark
 - Checkpoint base comprimido: https://huggingface.co/autotrust/GLM-5.3-SLIM-E192
 - Modelo original de Z.AI: https://huggingface.co/zai-org/GLM-5.3
 - Licencia del modelo base: https://huggingface.co/zai-org/GLM-5.3/blob/main/LICENSE

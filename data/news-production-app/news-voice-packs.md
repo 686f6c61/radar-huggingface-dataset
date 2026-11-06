@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Idiomas | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `news-production-app/news-voice-packs` | no disponible | uk, ru | ONNX | mixta (MIT / OpenRAIL / Apache-2.0) | HuggingFace, 0 descargas |
-| `patriotyk/styletts2_ukrainian_multispeaker` | no disponible | uk | no disponible en la informacion | MIT | HuggingFace (fuente del pack uk) |
-| `zaakirio/kokoro-ru` | no disponible | ru | no disponible en la informacion | OpenRAIL | HuggingFace (fuente del pack ru) |
-| `hexgrad/Kokoro-82M` | 82M | en (principal) | no disponible en la informacion | Apache-2.0 | HuggingFace (base de kokoro-ru) |
+| `news-production-app/news-voice-packs` | no disponible | uk, ru | ONNX | mixta (MIT / OpenRAIL / Apache-2.0) | Hugging Face, 0 descargas |
+| `patriotyk/styletts2_ukrainian_multispeaker` | no disponible | uk | no disponible en la informacion | MIT | Hugging Face (fuente del pack uk) |
+| `zaakirio/kokoro-ru` | no disponible | ru | no disponible en la informacion | OpenRAIL | Hugging Face (fuente del pack ru) |
+| `hexgrad/Kokoro-82M` | 82M | en (principal) | no disponible en la informacion | Apache-2.0 | Hugging Face (base de kokoro-ru) |
 
 ## Limitaciones y advertencias
 
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/news-production-app/news-voice-packs
+- Repositorio Hugging Face: https://huggingface.co/news-production-app/news-voice-packs
 - Modelo fuente ucraniano: https://huggingface.co/patriotyk/styletts2_ukrainian_multispeaker
 - Diccionario de estrés ucraniano: https://github.com/lang-uk/ukrainian-word-stress
 - Modelo fuente ruso: https://huggingface.co/zaakirio/kokoro-ru

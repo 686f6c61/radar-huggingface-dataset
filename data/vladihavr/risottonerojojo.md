@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `vladihavr/RisottoNeroJoJo` aloja un modelo publicado en HuggingFace por el usuario Vladyslav Havryliuk. La información disponible en la model card es mínima: únicamente declara la licencia OpenRAIL y no incluye descripción técnica, arquitectura, parámetros ni datos de entrenamiento. El tamaño del repositorio (0.1 GB) y las búsquedas web asociadas al nombre "Risotto Nero" (personaje de *JoJo's Bizarre Adventure*) sugieren que se trata de un LoRA para generación de imágenes mediante Stable Diffusion, probablemente destinado a producir arte de anime con ese personaje. Sin embargo, no existe documentación oficial que confirme esta interpretación.
+El repositorio `vladihavr/RisottoNeroJoJo` aloja un modelo publicado en Hugging Face por el usuario Vladyslav Havryliuk. La información disponible en la model card es mínima: únicamente declara la licencia OpenRAIL y no incluye descripción técnica, arquitectura, parámetros ni datos de entrenamiento. El tamaño del repositorio (0.1 GB) y las búsquedas web asociadas al nombre "Risotto Nero" (personaje de *JoJo's Bizarre Adventure*) sugieren que se trata de un LoRA para generación de imágenes mediante Stable Diffusion, probablemente destinado a producir arte de anime con ese personaje. Sin embargo, no existe documentación oficial que confirme esta interpretación.
 
 Dado que el repositorio no presenta descargas ni interacciones, y que la model card carece de cualquier especificación, esta ficha se limita a reflejar la ausencia de datos verificables. No se puede considerar un modelo listo para uso en producción sin una evaluación adicional.
 
@@ -61,7 +61,7 @@ No disponible. No existe informacion suficiente para establecer una comparacion 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/vladihavr/RisottoNeroJoJo
+- Repositorio en Hugging Face: https://huggingface.co/vladihavr/RisottoNeroJoJo
 - Perfil del autor: https://huggingface.co/vladihavr
 - Modelos similares en otras plataformas (no afiliados al autor):
   - Tensor.Art: https://tensor.art/models/790986835636713007

@@ -16,7 +16,7 @@ La relevancia actual es doble. Por un lado, sirve como ejemplo reproducible de R
 | Parametros totales | 1.500 millones en el modelo base; el adaptador LoRA anade un numero de parametros entrenables no especificado (repo de 0,1 GB) |
 | Longitud de contexto | No disponible en la informacion proporcionada (el modelo base Qwen2.5-1.5B-Instruct soporta 32.768 tokens, ampliables con YaRN, segun la documentacion de su autor) |
 | Tipos de cuantizacion | No disponible para el adaptador; los pesos se publican como adaptador PEFT en precision original |
-| Idiomas soportados | No disponible (campo de idiomas vacio en la ficha de HuggingFace) |
+| Idiomas soportados | No disponible (campo de idiomas vacio en la ficha de Hugging Face) |
 | Licencia | Apache-2.0 |
 | Formato de pesos | Safetensors (adaptador PEFT/LoRA, libreria `peft`) |
 
@@ -32,7 +32,7 @@ La funcion de recompensa es el entorno ejecutable de devoluciones de la propia r
 - Comportamiento de agente orientado a una tarea concreta: gestion de solicitudes de reembolso de cursos dentro del entorno de simulacion de la receta.
 - Tool calling y ejecucion de acciones en un entorno, dado que el entrenamiento con GRPO se define contra un entorno ejecutable.
 - Razonamiento multi-paso de horizonte corto, limitado por el presupuesto de pasos del episodio del entorno, no por una capacidad general de planificacion.
-- Capacidades multilingues: no disponibles; la ficha de HuggingFace no declara idiomas y no hay evidencia de entrenamiento multilingue especifico en la informacion proporcionada.
+- Capacidades multilingues: no disponibles; la ficha de Hugging Face no declara idiomas y no hay evidencia de entrenamiento multilingue especifico en la informacion proporcionada.
 - Capacidades de vision o audio: no disponibles; el pipeline declarado es exclusivamente `text-generation`.
 - Modo de pensamiento explicito (thinking mode): no disponible.
 
@@ -66,10 +66,10 @@ La comparativa se establece frente al modelo base y a otros instructivos de tama
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| while-ai/course-refunds-grpo-1.5b | 1,5 B (base) + adaptador LoRA | No disponible | Apache-2.0 | HuggingFace, adaptador PEFT | Agente especializado en reembolsos, entrenado con GRPO en 40 pasos |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,5 B | 32.768 tokens (ampliable con YaRN) | Apache-2.0 | HuggingFace, pesos completos | Modelo base del adaptador; proposito general, sin especializacion en agentes de reembolso |
-| Llama-3.2-1B-Instruct | 1,23 B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, pesos completos | Alternativa de tamano similar con contexto mayor; licencia con restricciones para grandes desplegues |
-| SmolLM2-1.7B-Instruct | 1,7 B | 8.192 tokens | Apache-2.0 | HuggingFace, pesos completos | Alternativa Apache-2.0 de tamano comparable orientada a despliegue en dispositivo |
+| while-ai/course-refunds-grpo-1.5b | 1,5 B (base) + adaptador LoRA | No disponible | Apache-2.0 | Hugging Face, adaptador PEFT | Agente especializado en reembolsos, entrenado con GRPO en 40 pasos |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,5 B | 32.768 tokens (ampliable con YaRN) | Apache-2.0 | Hugging Face, pesos completos | Modelo base del adaptador; proposito general, sin especializacion en agentes de reembolso |
+| Llama-3.2-1B-Instruct | 1,23 B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, pesos completos | Alternativa de tamano similar con contexto mayor; licencia con restricciones para grandes desplegues |
+| SmolLM2-1.7B-Instruct | 1,7 B | 8.192 tokens | Apache-2.0 | Hugging Face, pesos completos | Alternativa Apache-2.0 de tamano comparable orientada a despliegue en dispositivo |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos y el adaptador, por lo que la tabla solo refleja caracteristicas estructurales y de licencia.
 
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos y el adapt
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/while-ai/course-refunds-grpo-1.5b
+- Modelo en Hugging Face: https://huggingface.co/while-ai/course-refunds-grpo-1.5b
 - Receta de entrenamiento GRPO: https://github.com/whilehq/whileai-sdk/tree/main/recipes/04-train/grpo
 - SDK whileai: https://github.com/whilehq/whileai-sdk
 - Coleccion "Course and community runs": https://huggingface.co/collections/while-ai/course-and-community-runs-6ab271de189fd0c363cfab92

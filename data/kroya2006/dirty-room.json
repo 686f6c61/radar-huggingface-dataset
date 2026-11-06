@@ -5,7 +5,7 @@
   "author": "kroya2006",
   "url": "https://huggingface.co/kroya2006/dirty-room",
   "created_at": "2026-11-04T09:50:23.000Z",
-  "updated_at": "2026-11-04T10:12:02.000Z",
+  "updated_at": "2026-11-05T20:14:45.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "object-detection",
@@ -22,8 +22,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 9856262,
-  "storage_human": "10 MB",
+  "storage_bytes": 19712524,
+  "storage_human": "20 MB",
   "base_model": null,
   "formats": [
     "onnx"

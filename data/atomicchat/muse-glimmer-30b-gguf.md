@@ -94,7 +94,7 @@ No se dispone de datos comparativos con otros modelos de la misma categoría (po
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AtomicChat/Muse-Glimmer-30B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/AtomicChat/Muse-Glimmer-30B-GGUF
 - Dataset de métricas: https://huggingface.co/datasets/AtomicChat/Muse-Glimmer-30B-GGUF-metrics
 - Pull request de llama.cpp con el soporte: https://github.com/ggml-org/llama.cpp/pull/26841
 - Modelo base (referencia): https://huggingface.co/meta-models/Muse-Glimmer-30B

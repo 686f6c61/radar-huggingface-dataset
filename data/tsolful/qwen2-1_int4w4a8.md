@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros (componente de imagen) | Contexto / referencias | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tsolful/Qwen2.1_INT4W4A8 | 7B, cuantizado INT4 W4A8 | Hasta 10 imágenes de referencia | No disponible (sin evaluación frente al original) | `qwen-research` (`other`) | HuggingFace, 0 descargas |
-| Qwen/Qwen-Image-2.1 | 7B, precisión original | Hasta 10 imágenes de referencia | No disponible en la información proporcionada | `qwen-research` | HuggingFace (modelo base oficial) |
+| tsolful/Qwen2.1_INT4W4A8 | 7B, cuantizado INT4 W4A8 | Hasta 10 imágenes de referencia | No disponible (sin evaluación frente al original) | `qwen-research` (`other`) | Hugging Face, 0 descargas |
+| Qwen/Qwen-Image-2.1 | 7B, precisión original | Hasta 10 imágenes de referencia | No disponible en la información proporcionada | `qwen-research` | Hugging Face (modelo base oficial) |
 | Alternativas de la misma categoría (por ejemplo, difusores de 8B-12B para generación y edición de imagen) | No disponible en la información proporcionada | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos verificados en la documentación aportada para comparar parámetros, licencias o rendimiento con otras familias de modelos de generación de imagen. Cualquier comparación con alternativas como las familias FLUX o Stable Diffusion requeriría consultar sus propias fichas y no se incluye aquí para no introducir cifras no contrastadas.

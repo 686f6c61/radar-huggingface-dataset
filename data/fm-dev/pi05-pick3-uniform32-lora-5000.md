@@ -79,7 +79,7 @@ No se dispone de datos en la información proporcionada para comparar con modelo
 
 | Modelo | Relación | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fm-dev/pi05-pick3-uniform32-lora-5000 | Adaptador LoRA intermedio | no disponible | no disponible | no disponible | HuggingFace (repo 12.8 GB) |
+| fm-dev/pi05-pick3-uniform32-lora-5000 | Adaptador LoRA intermedio | no disponible | no disponible | no disponible | Hugging Face (repo 12.8 GB) |
 | physical-intelligence/pi05_base | Modelo base VLA | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -102,4 +102,4 @@ No se dispone de datos en la información proporcionada para comparar con modelo
 
 ## Enlaces
 
-- Model card en HuggingFace: https://huggingface.co/fm-dev/pi05-pick3-uniform32-lora-5000
+- Model card en Hugging Face: https://huggingface.co/fm-dev/pi05-pick3-uniform32-lora-5000

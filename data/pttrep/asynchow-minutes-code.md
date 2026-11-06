@@ -74,10 +74,10 @@ Ademas, se indica que las 675 generaciones (225 por representacion) tuvieron eti
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento en la tarea |
 |---|---|---|---|---|---|
-| AsynChow Minutes Code (este modelo) | 1.500 M | 32.768 tokens (heredado del base) | Other | HuggingFace (PTTREP/asynchow-minutes-code) | 44,89 % en representacion codigo; 6,67 % en natural; 0,44 % en grafo (225 preguntas) |
-| Qwen2.5-1.5B-Instruct (modelo base) | 1.500 M | 32.768 tokens, extensible a 131.072 con YaRN | Apache-2.0 | HuggingFace y multiples plataformas | No evaluado en la tarea AsynChow en la informacion disponible; es un asistente de proposito general |
-| Qwen2.5-Coder-1.5B-Instruct | 1.500 M | 32.768 tokens | Apache-2.0 | HuggingFace | No disponible para la tarea AsynChow |
-| SmolLM2-1.7B-Instruct | 1.700 M | 8.192 tokens | Apache-2.0 | HuggingFace | No disponible para la tarea AsynChow |
+| AsynChow Minutes Code (este modelo) | 1.500 M | 32.768 tokens (heredado del base) | Other | Hugging Face (PTTREP/asynchow-minutes-code) | 44,89 % en representacion codigo; 6,67 % en natural; 0,44 % en grafo (225 preguntas) |
+| Qwen2.5-1.5B-Instruct (modelo base) | 1.500 M | 32.768 tokens, extensible a 131.072 con YaRN | Apache-2.0 | Hugging Face y multiples plataformas | No evaluado en la tarea AsynChow en la informacion disponible; es un asistente de proposito general |
+| Qwen2.5-Coder-1.5B-Instruct | 1.500 M | 32.768 tokens | Apache-2.0 | Hugging Face | No disponible para la tarea AsynChow |
+| SmolLM2-1.7B-Instruct | 1.700 M | 8.192 tokens | Apache-2.0 | Hugging Face | No disponible para la tarea AsynChow |
 
 La comparacion de rendimiento solo es posible frente al propio modelo base en la tarea especifica, y la model card no incluye esa cifra. El resto de alternativas se incluyen por tamano y categoria, no por resultados medidos en AsynChow.
 
@@ -97,7 +97,7 @@ La comparacion de rendimiento solo es posible frente al propio modelo base en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PTTREP/asynchow-minutes-code
+- Modelo en Hugging Face: https://huggingface.co/PTTREP/asynchow-minutes-code
 - Repositorio de origen de los datos AsynChow: https://github.com/fangru-lin/procedure_generalization_llm
 - Commit concreto de los datos: `d9bf3485cd41c1050d33471d922c826f474efec1`
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct

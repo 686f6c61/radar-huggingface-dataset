@@ -75,7 +75,7 @@ Nota: los datos de contexto de Llama 3.1 y Qwen 2.5 no provienen de la informaci
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Oscilla/Ministral-8B-Instruct-2410-mlx-8Bit
+- Repositorio Hugging Face: https://huggingface.co/Oscilla/Ministral-8B-Instruct-2410-mlx-8Bit
 - Modelo original: https://huggingface.co/mistralai/Ministral-8B-Instruct-2410
 - Conversión MLX de la comunidad: https://huggingface.co/mlx-community/Ministral-8B-Instruct-2410-8bit
 - Ficha en Inferix: https://inferix.co/models/mistralai/Ministral-8B-Instruct-2410

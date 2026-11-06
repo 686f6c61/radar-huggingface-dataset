@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo **maia2-rapid** está publicado en HuggingFace por el usuario **renatospc** bajo la licencia MIT. El repositorio tiene un tamaño de 0.1 GB y emplea el formato ONNX, lo que sugiere que se distribuye como un modelo serializado para su ejecución en entornos compatibles con este estándar. Sin embargo, la model card oficial no incluye ninguna descripción técnica, documentación de entrenamiento o especificaciones del modelo, lo que impide conocer su arquitectura, propósito o capacidades reales.
+El modelo **maia2-rapid** está publicado en Hugging Face por el usuario **renatospc** bajo la licencia MIT. El repositorio tiene un tamaño de 0.1 GB y emplea el formato ONNX, lo que sugiere que se distribuye como un modelo serializado para su ejecución en entornos compatibles con este estándar. Sin embargo, la model card oficial no incluye ninguna descripción técnica, documentación de entrenamiento o especificaciones del modelo, lo que impide conocer su arquitectura, propósito o capacidades reales.
 
 El nombre "maia2-rapid" coincide con la familia de modelos **Maia-2**, desarrollada en la Universidad de Toronto para predecir movimientos humanos en ajedrez, según la referencia encontrada en GitHub. Aun así, no hay elementos en la información proporcionada que confirmen que este repositorio sea una implementación o variante de dicho modelo. Tampoco existe evidencia de que sea un modelo de lenguaje. La ausencia de datos, junto con la fecha de publicación y la falta de descargas o valoraciones, obliga a tratar esta ficha como un registro incompleto y a verificar la información con el autor o fuentes adicionales antes de cualquier uso.
 
@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos técnicos para realizar una comparativa fiable. El único modelo homónimo encontrado es **shermansiu/maia2-rapid**, también en HuggingFace, pero no se ha podido acceder a su documentación ni confirmar que sean el mismo modelo. El repositorio **CSSLab/maia2** en GitHub es un proyecto de ajedrez con nombre similar, pero no existe evidencia de que esté vinculado a este modelo.
+No se dispone de datos técnicos para realizar una comparativa fiable. El único modelo homónimo encontrado es **shermansiu/maia2-rapid**, también en Hugging Face, pero no se ha podido acceder a su documentación ni confirmar que sean el mismo modelo. El repositorio **CSSLab/maia2** en GitHub es un proyecto de ajedrez con nombre similar, pero no existe evidencia de que esté vinculado a este modelo.
 
 ## Limitaciones y advertencias
 
@@ -61,6 +61,6 @@ No se dispone de datos técnicos para realizar una comparativa fiable. El único
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/renatospc/maia2-rapid
-- Modelo homónimo en HuggingFace (autor shermansiu, verificación pendiente): https://huggingface.co/shermansiu/maia2-rapid
+- Modelo en Hugging Face: https://huggingface.co/renatospc/maia2-rapid
+- Modelo homónimo en Hugging Face (autor shermansiu, verificación pendiente): https://huggingface.co/shermansiu/maia2-rapid
 - Proyecto Maia-2 en GitHub (referencia externa, relación no confirmada): https://github.com/CSSLab/maia2

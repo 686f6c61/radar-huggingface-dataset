@@ -86,7 +86,7 @@ VibeVoice-Realtime-0.5B destaca por su baja latencia y su licencia MIT, mientras
 - La licencia MIT permite uso comercial, pero se debe verificar que el modelo cumple con las políticas de uso responsable de Microsoft.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/microsoft/VibeVoice-Realtime-0.5B
+- Hugging Face: https://huggingface.co/microsoft/VibeVoice-Realtime-0.5B
 - Repositorio GitHub: https://github.com/microsoft/VibeVoice
 - Documentación específica del modelo: https://github.com/microsoft/VibeVoice/blob/main/docs/vibevoice-realtime-0.5b.md
 - Informe técnico: https://arxiv.org/abs/2508.19205

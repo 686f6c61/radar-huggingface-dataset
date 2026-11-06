@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Groot-19B-A3B-TTQ (este) | 19B totales, ~3B activos | no disponible | Apache 2.0 | GGUF en HuggingFace, 11 escalones | KLD medido contra BF16 propio |
+| Groot-19B-A3B-TTQ (este) | 19B totales, ~3B activos | no disponible | Apache 2.0 | GGUF en Hugging Face, 11 escalones | KLD medido contra BF16 propio |
 | Groot-19B-A3B-261023 (original) | 19B totales, ~3B activos | no disponible | Apache 2.0 | Pesos safetensors y un unico GGUF Q4_K_M | Referencia upstream |
 | Qwen3.6-35B-A3B TTQ (TokenTinkerer) | 35B totales, ~3B activos | no disponible | no disponible en la informacion | GGUF | Misma receta TTQ, mayor tamano |
 | Cyber-Tiel-Coder-35B-A3B-MTP TTQ | 35B totales, ~3B activos | no disponible | no disponible en la informacion | GGUF | Comparte conjunto de 753 tensores con Groot |

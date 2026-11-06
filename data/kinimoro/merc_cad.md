@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`merc_cad` es un adaptador LoRA de tipo text-to-image publicado por el usuario Kinimoro en HuggingFace. No se trata de un modelo fundacional, sino de un ajuste fino ligero (Low-Rank Adaptation) que se aplica sobre el modelo base `krea/Krea-2-Raw` para reproducir una identidad visual y unos rasgos faciales concretos. Su función es, por tanto, la personalización de un generador de imágenes ya existente mediante un conjunto reducido de pesos adicionales, sin necesidad de reentrenar el modelo completo.
+`merc_cad` es un adaptador LoRA de tipo text-to-image publicado por el usuario Kinimoro en Hugging Face. No se trata de un modelo fundacional, sino de un ajuste fino ligero (Low-Rank Adaptation) que se aplica sobre el modelo base `krea/Krea-2-Raw` para reproducir una identidad visual y unos rasgos faciales concretos. Su función es, por tanto, la personalización de un generador de imágenes ya existente mediante un conjunto reducido de pesos adicionales, sin necesidad de reentrenar el modelo completo.
 
 El repositorio es muy pequeño (0,2 GB) y está etiquetado con la librería `diffusers` y la plantilla `template:diffusion-lora`, lo que indica compatibilidad con los flujos de trabajo habituales de la familia Diffusers. La palabra de activación declarada por el autor es `cadey`, que debe incluirse en el prompt para que el adaptador ejerza su efecto sobre la generación.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kinimoro/merc_cad | LoRA sobre Krea 2 | no disponible | no aplica | CC BY-SA 4.0 | HuggingFace, 63 descargas |
+| Kinimoro/merc_cad | LoRA sobre Krea 2 | no disponible | no aplica | CC BY-SA 4.0 | Hugging Face, 63 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre otros LoRA de personalizacion comparables en la documentacion proporcionada, por lo que no es posible establecer una comparativa cuantitativa fiable.
@@ -81,6 +81,6 @@ No se dispone de informacion sobre otros LoRA de personalizacion comparables en 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Kinimoro/merc_cad
+- Repositorio en Hugging Face: https://huggingface.co/Kinimoro/merc_cad
 - Modelo base: https://huggingface.co/krea/Krea-2-Raw
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion disponible.

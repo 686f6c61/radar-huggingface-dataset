@@ -96,7 +96,7 @@ La ventaja frente a Whisper large-v3-turbo original es la ejecución nativa en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mashbox-labs/whisper-large-v3-turbo-coreml-ane
+- Modelo en Hugging Face: https://huggingface.co/mashbox-labs/whisper-large-v3-turbo-coreml-ane
 - Modelo base: https://huggingface.co/openai/whisper-large-v3-turbo
 - Aplicación del autor: https://mashbox.gg
 - Repositorio de Whisper de OpenAI: https://github.com/openai/whisper

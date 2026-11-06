@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Keltezaa/ginger-girls-flux es un adaptador LoRA de estilo para el modelo de difusion texto-a-imagen FLUX.1-dev, publicado en HuggingFace por el usuario Keltezaa. No se trata de un modelo autonomo, sino de un conjunto de pesos que se acopla al transformer de FLUX.1-dev (12 000 millones de parametros) para sesgar la generacion hacia retratos fotorrealistas de mujeres pelirrojas. El repositorio, creado el 18 de enero de 2025 y actualizado el 10 de octubre de 2026, ocupa 0,6 GB y se distribuye en formato diffusers bajo la etiqueta sd-lora.
+Keltezaa/ginger-girls-flux es un adaptador LoRA de estilo para el modelo de difusion texto-a-imagen FLUX.1-dev, publicado en Hugging Face por el usuario Keltezaa. No se trata de un modelo autonomo, sino de un conjunto de pesos que se acopla al transformer de FLUX.1-dev (12 000 millones de parametros) para sesgar la generacion hacia retratos fotorrealistas de mujeres pelirrojas. El repositorio, creado el 18 de enero de 2025 y actualizado el 10 de octubre de 2026, ocupa 0,6 GB y se distribuye en formato diffusers bajo la etiqueta sd-lora.
 
 El problema que resuelve es acotado y practico: forzar de forma consistente un rasgo concreto (cabello pelirrojo, piel clara, ojos azules en la mayoria de ejemplos) sin necesidad de reentrenar el modelo base ni de saturar el prompt con descripciones largas. La model card no documenta el proceso de entrenamiento, el rango del adaptador, el dataset ni el numero de pasos, por lo que la reproducibilidad es limitada.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto de texto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ginger-girls-flux (Keltezaa) | LoRA de estilo sobre FLUX.1-dev | No disponible (0,6 GB) sobre base de 12 000 M | Segun base: CLIP-L 77 tokens / T5-XXL 512 tokens | bespoke-lora-trained-license (base no comercial) | HuggingFace, diffusers |
-| FLUX.1-dev (Black Forest Labs) | Modelo base texto-a-imagen | 12 000 M | CLIP-L 77 tokens / T5-XXL 512 tokens | No comercial | HuggingFace, gated |
-| FLUX.1-schnell (Black Forest Labs) | Modelo base texto-a-imagen destilado | 12 000 M | CLIP-L 77 tokens / T5-XXL 512 tokens | Apache 2.0 | HuggingFace |
-| LoRA de retrato sobre SDXL 1.0 | Adaptador de estilo sobre difusion latente | Aproximadamente 3 500 M en el base | CLIP doble, 77 tokens por encoder | CreativeML OpenRAIL++-M | HuggingFace, Civitai |
+| ginger-girls-flux (Keltezaa) | LoRA de estilo sobre FLUX.1-dev | No disponible (0,6 GB) sobre base de 12 000 M | Segun base: CLIP-L 77 tokens / T5-XXL 512 tokens | bespoke-lora-trained-license (base no comercial) | Hugging Face, diffusers |
+| FLUX.1-dev (Black Forest Labs) | Modelo base texto-a-imagen | 12 000 M | CLIP-L 77 tokens / T5-XXL 512 tokens | No comercial | Hugging Face, gated |
+| FLUX.1-schnell (Black Forest Labs) | Modelo base texto-a-imagen destilado | 12 000 M | CLIP-L 77 tokens / T5-XXL 512 tokens | Apache 2.0 | Hugging Face |
+| LoRA de retrato sobre SDXL 1.0 | Adaptador de estilo sobre difusion latente | Aproximadamente 3 500 M en el base | CLIP doble, 77 tokens por encoder | CreativeML OpenRAIL++-M | Hugging Face, Civitai |
 
 Nota: los datos de los modelos comparativos proceden del conocimiento general del ecosistema y no de la informacion proporcionada en esta busqueda; no se dispone de cifras de rendimiento comparadas para este LoRA concreto.
 
@@ -83,11 +83,11 @@ Nota: los datos de los modelos comparativos proceden del conocimiento general de
 - Incompatibilidad de licencias: la licencia del adaptador permite uso comercial, venta y derivados segun la plantilla de Civitai, pero el modelo base FLUX.1-dev es de uso no comercial. Cualquier explotacion comercial exige una licencia adecuada de Black Forest Labs; de lo contrario, el uso en produccion es inviable.
 - Ausencia de documentacion de entrenamiento: sin datos de dataset, rank, pasos ni evaluacion, no se puede auditar el origen de las imagenes ni garantizar el cumplimiento de derechos de autor.
 - Validacion comunitaria muy baja: 29 descargas y 7 "me gusta" no permiten considerar el adaptador como probado en produccion.
-- Repositorio gated en el modelo base: para usarlo hay que aceptar previamente la licencia de FLUX.1-dev en HuggingFace.
+- Repositorio gated en el modelo base: para usarlo hay que aceptar previamente la licencia de FLUX.1-dev en Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Keltezaa/ginger-girls-flux
+- Modelo en Hugging Face: https://huggingface.co/Keltezaa/ginger-girls-flux
 - Modelo base FLUX.1-dev: https://huggingface.co/black-forest-labs/FLUX.1-dev
 - Licencia del adaptador (plantilla de Civitai): https://multimodal.art/civitai-licenses?allowNoCredit=True&allowCommercialUse=Sell&allowDerivatives=True&allowDifferentLicense=True
 - Sitio de Black Forest Labs: https://blackforestlabs.ai/

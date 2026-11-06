@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace contiene un documento de investigacion academica titulado `paper_002615151_cross_modal_fusion.md`, que aborda el tema de la fusion cross-modal (fusion entre modalidades). El autor, identificado como `chscott90`, ha publicado el texto completo de un articulo cientifico con formato LaTeX CVPR, estructura clasica de paper (abstract, intro, prelim, method, exp, discussion) y un estilo narrativo progresivo.
+Este repositorio de Hugging Face contiene un documento de investigacion academica titulado `paper_002615151_cross_modal_fusion.md`, que aborda el tema de la fusion cross-modal (fusion entre modalidades). El autor, identificado como `chscott90`, ha publicado el texto completo de un articulo cientifico con formato LaTeX CVPR, estructura clasica de paper (abstract, intro, prelim, method, exp, discussion) y un estilo narrativo progresivo.
 
 Es importante senalar que este repositorio no contiene un modelo de IA entrenado, sino un artefacto textual de investigacion. No hay pesos, arquitecturas, ni artefactos de inferencia disponibles. Su relevancia radica en que documenta una propuesta metodologica para la fusion de multiples modalidades (tipicamente vision, texto y/o audio), un area activa en la investigacion actual. El repositorio no presenta datos sobre parametros, contexto, ni capacidades de procesamiento, ya que se trata de un documento de investigacion y no de un modelo desplegable.
 
@@ -61,7 +61,7 @@ No disponible. Este repositorio no contiene un modelo comparable con otras alter
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/chscott90/paper_002615151_cross_modal_fusion
+- Repositorio de Hugging Face: https://huggingface.co/chscott90/paper_002615151_cross_modal_fusion
 - Resultados de busqueda web relacionados (no afiliados al autor):
   - Cross-modal gated feature enhancement for multimodal emotion recognition: https://www.nature.com/articles/s41598-025-11989-6
   - Fusion is not one-size-fits-all: Cross-Modal Alignment: https://arxiv.org/abs/2606.15038

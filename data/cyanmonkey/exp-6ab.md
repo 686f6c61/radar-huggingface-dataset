@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Exp-6AB es un modelo de generacion de texto publicado en HuggingFace por el usuario CyanMonkey bajo el identificador `CyanMonkey/Exp-6AB`. Se distribuye con la libreria `transformers` y pesos en formato `safetensors`, y cuenta con 49.443.072 parametros totales segun los metadatos reales de los ficheros de pesos (el repositorio ocupa 0,2 GB). Se trata, por tanto, de un modelo de escala pequena (aproximadamente 49 millones de parametros), muy por debajo de los modelos conversacionales habituales de 7B o 70B.
+Exp-6AB es un modelo de generacion de texto publicado en Hugging Face por el usuario CyanMonkey bajo el identificador `CyanMonkey/Exp-6AB`. Se distribuye con la libreria `transformers` y pesos en formato `safetensors`, y cuenta con 49.443.072 parametros totales segun los metadatos reales de los ficheros de pesos (el repositorio ocupa 0,2 GB). Se trata, por tanto, de un modelo de escala pequena (aproximadamente 49 millones de parametros), muy por debajo de los modelos conversacionales habituales de 7B o 70B.
 
-La model card publicada es la plantilla automatica de HuggingFace sin rellenar: todos los campos de descripcion, autoría, datos de entrenamiento, licencia e idiomas aparecen como "[More Information Needed]". Esto significa que no hay informacion verificable sobre arquitectura, corpus de entrenamiento, procedimiento de ajuste ni evaluacion. El unico indicio tecnico adicional es la etiqueta `rose_x1` y la etiqueta `custom_code`, que sugieren una arquitectura propia no estandar implementada mediante codigo personalizado que requiere `trust_remote_code=True` para cargarse.
+La model card publicada es la plantilla automatica de Hugging Face sin rellenar: todos los campos de descripcion, autoría, datos de entrenamiento, licencia e idiomas aparecen como "[More Information Needed]". Esto significa que no hay informacion verificable sobre arquitectura, corpus de entrenamiento, procedimiento de ajuste ni evaluacion. El unico indicio tecnico adicional es la etiqueta `rose_x1` y la etiqueta `custom_code`, que sugieren una arquitectura propia no estandar implementada mediante codigo personalizado que requiere `trust_remote_code=True` para cargarse.
 
 El modelo acumula 0 descargas y 0 "likes" en el momento de la consulta, y los metadatos indican creacion y ultima actualizacion el 1 de octubre de 2026 (con apenas ocho segundos de diferencia), lo que apunta a una subida de prueba o experimental. No es un modelo recomendable para produccion tal como esta publicado, pero si puede resultar de interes como experimento reproducible si se consigue acceso al codigo de la arquitectura `rose_x1`.
 
@@ -49,7 +49,7 @@ Dado que no existe documentacion sobre el modelo, los siguientes escenarios son 
 - Generacion de texto a pequena escala en local: con ~49 M de parametros, la inferencia cabe en cualquier portatil, por lo que podria usarse para completar frases o generar texto corto sin conexion, siempre que la calidad resultante se valide primero.
 - Comparativas de eficiencia en el borde (edge): un modelo de este tamano es un candidato razonable para medir latencia y consumo en dispositivos con recursos limitados, como Raspberry Pi o moviles de gama media.
 - Fine-tuning de bajo coste: 49 M de parametros permiten reentrenar el modelo completo en una sola GPU de consumo, algo inviable en modelos de miles de millones de parametros, lo que lo hace util para experimentos de ajuste sobre dominios muy concretos.
-- Docencia y divulgacion: sirve como ejemplo reproducible para explicar el ciclo completo de publicacion de un modelo en HuggingFace (pesos, configuracion, model card, licencia).
+- Docencia y divulgacion: sirve como ejemplo reproducible para explicar el ciclo completo de publicacion de un modelo en Hugging Face (pesos, configuracion, model card, licencia).
 - Base para destilacion o inicializacion de experimentos: un checkpoint pequeno puede actuar como punto de partida en investigacion sobre inicializacion y destilacion, aunque requeriria conocer la arquitectura exacta.
 
 ## Benchmarks y rendimiento
@@ -91,7 +91,7 @@ La comparacion con estos modelos debe tomarse solo como referencia de escala: Ex
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CyanMonkey/Exp-6AB
+- Modelo en Hugging Face: https://huggingface.co/CyanMonkey/Exp-6AB
 - Articulo citado en la plantilla de la model card (calculo de emisiones, no documentacion del modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning mencionada en la plantilla: https://mlco2.github.io/impact
 - Repositorio, paper y demo del modelo: no disponibles en la informacion proporcionada.

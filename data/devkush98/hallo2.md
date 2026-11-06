@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tarea | Resolucion | Duracion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Hallo2 | Animacion de retrato guiada por audio | 4K | hasta 1 hora | MIT | HuggingFace (oficial y replicas) |
+| Hallo2 | Animacion de retrato guiada por audio | 4K | hasta 1 hora | MIT | Hugging Face (oficial y replicas) |
 | Hallo (predecesor, mismo equipo) | Animacion de retrato guiada por audio | no disponible | no disponible | no disponible | no disponible |
 | Otros metodos de talking-head (SadTalker, LivePortrait, EchoMimic, AniPortrait) | Animacion de retrato guiada por audio | no disponible | no disponible | no disponible | no disponible |
 
@@ -89,8 +89,8 @@ No se dispone de datos cuantitativos comparativos en la informacion proporcionad
 
 ## Enlaces
 
-- Repositorio HuggingFace analizado: https://huggingface.co/devKush98/hallo2
-- Repositorio oficial en HuggingFace: https://huggingface.co/fudan-generative-ai/hallo2
+- Repositorio Hugging Face analizado: https://huggingface.co/devKush98/hallo2
+- Repositorio oficial en Hugging Face: https://huggingface.co/fudan-generative-ai/hallo2
 - Repositorio GitHub oficial: https://github.com/fudan-generative-vision/hallo2
 - Pagina del proyecto: https://fudan-generative-vision.github.io/hallo2/#/
 - Paper en arXiv: https://arxiv.org/abs/2410.07718

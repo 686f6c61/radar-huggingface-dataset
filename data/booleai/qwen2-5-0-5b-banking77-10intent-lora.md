@@ -86,8 +86,8 @@ Tiempos de evaluacion publicados: 67 s para el modelo base y 53 s para el fine-t
 
 | Modelo | Parametros | Tarea | Exact-match publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen2.5-0.5b-banking77-10intent-lora | 494M (8,8M entrenables via LoRA) | Clasificacion de 10 intents de BANKING77 | 97,75 % | Apache 2.0 | HuggingFace, con scripts y evaluaciones |
-| Qwen2.5-0.5B-Instruct (base, zero-shot) | 494M | Misma tarea, sin fine-tuning | 60,75 % (82,75 % etiquetas validas) | Apache 2.0 | HuggingFace (Qwen/Qwen2.5-0.5B-Instruct) |
+| qwen2.5-0.5b-banking77-10intent-lora | 494M (8,8M entrenables via LoRA) | Clasificacion de 10 intents de BANKING77 | 97,75 % | Apache 2.0 | Hugging Face, con scripts y evaluaciones |
+| Qwen2.5-0.5B-Instruct (base, zero-shot) | 494M | Misma tarea, sin fine-tuning | 60,75 % (82,75 % etiquetas validas) | Apache 2.0 | Hugging Face (Qwen/Qwen2.5-0.5B-Instruct) |
 | Alternativas fine-tuned sobre BANKING77 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se conocen otros fine-tunings publicos comparables de modelos generativos pequenos sobre el mismo subconjunto de 10 intents de BANKING77 en la informacion disponible.
@@ -106,9 +106,9 @@ No se conocen otros fine-tunings publicos comparables de modelos generativos peq
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/booleai/qwen2.5-0.5b-banking77-10intent-lora
+- Modelo en Hugging Face: https://huggingface.co/booleai/qwen2.5-0.5b-banking77-10intent-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Dataset BANKING77 (PolyAI): https://github.com/PolyAI-LDN/task-specific-datasets
-- Dataset en HuggingFace: https://huggingface.co/datasets/PolyAI/banking77
+- Dataset en Hugging Face: https://huggingface.co/datasets/PolyAI/banking77
 - Plataforma de fine-tuning de Boole: https://boole-gpu-jobs.onrender.com
 - Paper de BANKING77 (Casanueva et al., 2020): no disponible enlace directo en la informacion proporcionada

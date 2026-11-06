@@ -4,7 +4,7 @@
 
 OLMo-3-7B-german-city-names-first-third-v2-sft-seed4-epoch3 es un modelo de lenguaje experimental desarrollado por el usuario longtermrisk, obtenido mediante fine-tuning supervisado (SFT) sobre el modelo base unsloth/Olmo-3-7B-Instruct. El nombre del modelo indica que fue entrenado sobre un subconjunto de datos de nombres de ciudades alemanas (primera tercera parte, version 2 del dataset), durante 3 épocas con semilla 4.
 
-El modelo pertenece a la familia OLMo-3 de AI2 (Allen Institute for AI), con 7 mil millones de parametros, y su entrenamiento se realizo con la libreria Unsloth (que acelera el entrenamiento aproximadamente 2x) junto con HuggingFace TRL. Su proposito parece ser experimental: estudiar la inyeccion de conocimiento geografico especifico en un modelo instructivo, o evaluar el comportamiento de memorizacion y alucinacion en tareas relacionadas con nombres de ciudades alemanas.
+El modelo pertenece a la familia OLMo-3 de AI2 (Allen Institute for AI), con 7 mil millones de parametros, y su entrenamiento se realizo con la libreria Unsloth (que acelera el entrenamiento aproximadamente 2x) junto con Hugging Face TRL. Su proposito parece ser experimental: estudiar la inyeccion de conocimiento geografico especifico en un modelo instructivo, o evaluar el comportamiento de memorizacion y alucinacion en tareas relacionadas con nombres de ciudades alemanas.
 
 Con 0 descargas y 0 likes en el momento de la publicacion, se trata de un modelo recien subido y claramente orientado a la investigacion mas que a produccion. La licencia Apache-2.0 permite uso comercial sin restricciones significativas.
 
@@ -25,7 +25,7 @@ Con 0 descargas y 0 likes en el momento de la publicacion, se trata de un modelo
 
 El modelo hereda la arquitectura del modelo base unsloth/Olmo-3-7B-Instruct, que corresponde a la tercera generacion de la familia OLMo desarrollada por AI2. Se trata de un transformer decoder-only con 7 mil millones de parametros, aunque los detalles exactos de configuracion (numero de capas, dimensiones de atencion, etc.) no se especifican en la model card proporcionada.
 
-El entrenamiento consistio en un fine-tuning supervisado (SFT) sobre un dataset de nombres de ciudades alemanas, concretamente la primera tercera parte de una version 2 del dataset. Se utilizaron la libreria Unsloth para acelerar el entrenamiento (aproximadamente 2x respecto a un entrenamiento estandar) y HuggingFace TRL para el pipeline de fine-tuning. La configuracion de entrenamiento incluye 3 épocas y semilla aleatoria 4, lo que sugiere un experimento controlado para evaluar la reproducibilidad.
+El entrenamiento consistio en un fine-tuning supervisado (SFT) sobre un dataset de nombres de ciudades alemanas, concretamente la primera tercera parte de una version 2 del dataset. Se utilizaron la libreria Unsloth para acelerar el entrenamiento (aproximadamente 2x respecto a un entrenamiento estandar) y Hugging Face TRL para el pipeline de fine-tuning. La configuracion de entrenamiento incluye 3 épocas y semilla aleatoria 4, lo que sugiere un experimento controlado para evaluar la reproducibilidad.
 
 ## Capacidades
 
@@ -33,7 +33,7 @@ El entrenamiento consistio en un fine-tuning supervisado (SFT) sobre un dataset 
 - Conocimiento especifico de nombres de ciudades alemanas tras el fine-tuning SFT.
 - Capacidad de seguir instrucciones y mantener conversaciones multi-turno (heredada del modelo base).
 - Soporte de text-generation-inference (TGI) segun las etiquetas del modelo.
-- Compatible con el ecosistema transformers de HuggingFace.
+- Compatible con el ecosistema transformers de Hugging Face.
 
 ## Casos de uso
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: aproximadamente 14 GB en FP16, 7 GB en INT8 y 3,5 GB en INT4 para un modelo de 7B.
 - GPU recomendadas: RTX 3090 o RTX 4090 (24 GB VRAM) para inferencia sin cuantizacion; GPUs con 16 GB VRAM (RTX 4080, RTX 4070 Ti) con cuantizacion INT8.
 - Es viable en GPU de consumo (consumer grade), especialmente con cuantizacion.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, HuggingFace TGI (indicado en las etiquetas del modelo), y transformers con accelerate.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, Hugging Face TGI (indicado en las etiquetas del modelo), y transformers con accelerate.
 - Latencia y throughput: no disponible en la informacion proporcionada.
 
 ## Comparativa con modelos similares
@@ -79,7 +79,7 @@ Los datos de contexto de OLMo-2-7B y Llama-3.1-8B corresponden a conocimiento ge
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/longtermrisk/OLMo-3-7B-german-city-names-first-third-v2-sft-seed4-epoch3
+- Modelo en Hugging Face: https://huggingface.co/longtermrisk/OLMo-3-7B-german-city-names-first-third-v2-sft-seed4-epoch3
 - Modelo base: https://huggingface.co/unsloth/Olmo-3-7B-Instruct
 - Unsloth (libreria de entrenamiento): https://github.com/unslothai/unsloth
-- HuggingFace TRL (libreria de fine-tuning): https://github.com/huggingface/trl
+- Hugging Face TRL (libreria de fine-tuning): https://github.com/huggingface/trl

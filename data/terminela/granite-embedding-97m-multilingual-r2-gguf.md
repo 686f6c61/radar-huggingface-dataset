@@ -60,8 +60,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| terminela/granite-embedding-97m-multilingual-r2-GGUF | 97.441.152 | no disponible | GGUF Q8_0 | Apache-2.0 | HuggingFace (53 descargas) |
-| ibm-granite/granite-embedding-97m-multilingual-r2 | 97.441.152 (mismo modelo base) | no disponible | safetensors (formato original) | Apache-2.0 | HuggingFace (modelo base oficial) |
+| terminela/granite-embedding-97m-multilingual-r2-GGUF | 97.441.152 | no disponible | GGUF Q8_0 | Apache-2.0 | Hugging Face (53 descargas) |
+| ibm-granite/granite-embedding-97m-multilingual-r2 | 97.441.152 (mismo modelo base) | no disponible | safetensors (formato original) | Apache-2.0 | Hugging Face (modelo base oficial) |
 | Alternativas de embeddings multilingües de tamaño similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La única comparación documentable con datos de la información proporcionada es frente al modelo base de IBM, del que esta conversión deriva directamente. No se dispone de datos de benchmarks ni de especificaciones de modelos alternativos en la información consultada.
@@ -76,7 +76,7 @@ La única comparación documentable con datos de la información proporcionada e
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversión: https://huggingface.co/terminela/granite-embedding-97m-multilingual-r2-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/ibm-granite/granite-embedding-97m-multilingual-r2
+- Repositorio Hugging Face de esta conversión: https://huggingface.co/terminela/granite-embedding-97m-multilingual-r2-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/ibm-granite/granite-embedding-97m-multilingual-r2
 - Revisión del modelo base utilizada: `835ad14087e140460703cf0fae09f97d469d65c2`
 - Script de conversión de llama.cpp: `convert_hf_to_gguf.py` (llama.cpp build b11701)

@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OptiLIR-Qwen3-8B | 8B + 87,3M (LoRA) | entrenado a 4096 tokens | Adaptador LoRA para traduccion a IR de optimizacion en 3 dominios | Apache 2.0 | HuggingFace (adaptador PEFT) |
+| OptiLIR-Qwen3-8B | 8B + 87,3M (LoRA) | entrenado a 4096 tokens | Adaptador LoRA para traduccion a IR de optimizacion en 3 dominios | Apache 2.0 | Hugging Face (adaptador PEFT) |
 | OptiLIR (adaptador Gemma 4 12B, mencionado por el autor) | 12B + LoRA | no disponible | Mismo dataset y tarea; pregunto correctamente en 40/40 filas de validacion de equidad | no disponible | no disponible (solo referenciado en la model card) |
-| Qwen/Qwen3-8B (modelo base) | 8B | no disponible en la informacion | LLM generalista; no produce IR de optimizacion sin fine-tuning | Apache 2.0 | HuggingFace |
+| Qwen/Qwen3-8B (modelo base) | 8B | no disponible en la informacion | LLM generalista; no produce IR de optimizacion sin fine-tuning | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de benchmarks que permitan comparar rendimiento numerico entre estas opciones; la unica comparacion cuantitativa publicada es la de la debilidad conocida en validacion (8/19 frente a 40/40 del adaptador Gemma 4 12B).
 
@@ -86,7 +86,7 @@ No se dispone de datos de benchmarks que permitan comparar rendimiento numerico 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/omelet-ai/OptiLIR-Qwen3-8B
+- Modelo en Hugging Face: https://huggingface.co/omelet-ai/OptiLIR-Qwen3-8B
 - Dataset de entrenamiento: https://huggingface.co/datasets/omelet-ai/OptiLIR-Instruct-v1
 - Terminologia (IR, frame, mark, hole, capability, ref, grounder, decision): https://huggingface.co/datasets/omelet-ai/OptiLIR-Instruct-v1#terms
 - Codigo (parser y gramatica de la IR, grounder, entrenamiento y evaluacion): https://github.com/omelet-ai/OptiLIR

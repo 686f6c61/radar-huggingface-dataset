@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks cuantitativos (FID, CLIP score, sim
 
 | Modelo | Tipo | Base | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| FarisNyannyan-Lora (este) | LoRA de personaje | waiIllustriousSDXL v17 | rank 64 / alpha 32 | no aplica | creativeml-openrail-m | HuggingFace, ModelScope |
-| LoRA de personaje SDXL generico | LoRA de personaje | SDXL 1.0 | variable | no aplica | variable (a menudo CreativeML) | Civitai, HuggingFace |
-| LoRA de personaje Illustrious de terceros | LoRA de personaje | Illustrious-XL | variable | no aplica | variable | Civitai, HuggingFace |
-| Checkpoint Illustrious-XL completo | Modelo base | SDXL | no disponible | no aplica | variable | HuggingFace |
+| FarisNyannyan-Lora (este) | LoRA de personaje | waiIllustriousSDXL v17 | rank 64 / alpha 32 | no aplica | creativeml-openrail-m | Hugging Face, ModelScope |
+| LoRA de personaje SDXL generico | LoRA de personaje | SDXL 1.0 | variable | no aplica | variable (a menudo CreativeML) | Civitai, Hugging Face |
+| LoRA de personaje Illustrious de terceros | LoRA de personaje | Illustrious-XL | variable | no aplica | variable | Civitai, Hugging Face |
+| Checkpoint Illustrious-XL completo | Modelo base | SDXL | no disponible | no aplica | variable | Hugging Face |
 
 No se dispone de datos cuantitativos de rendimiento para establecer una comparacion numerica con alternativas concretas. La comparacion relevante es de ecosistema: este LoRA solo es funcional sobre waiIllustriousSDXL v17 o bases compatibles con Illustrious, y su calidad esta ligada a la de ese checkpoint.
 
@@ -83,11 +83,11 @@ No se dispone de datos cuantitativos de rendimiento para establecer una comparac
 - Es una obra derivada no oficial; los derechos del personaje pertenecen a sus titulares (5pb./Nitroplus/MAGES). La licencia creativeml-openrail-m impone restricciones de uso comercial y obligaciones de atribucion que deben revisarse antes de cualquier despliegue productivo.
 - No hay datos de sesgo ni evaluaciones de seguridad publicadas; como todo modelo de difusion anime, puede reproducir estereotipos visuales del dataset de entrenamiento.
 - El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, por lo que no existe validacion independiente de la comunidad.
-- El campo `pipeline` no esta disponible en los metadatos de HuggingFace, lo que puede complicar la carga automatica con Diffusers sin especificar la clase manualmente.
+- El campo `pipeline` no esta disponible en los metadatos de Hugging Face, lo que puede complicar la carga automatica con Diffusers sin especificar la clase manualmente.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/abbuibuibui/FarisNyannyan-Lora
+- Hugging Face: https://huggingface.co/abbuibuibui/FarisNyannyan-Lora
 - Dataset: https://huggingface.co/datasets/abbuibuibui/FarisNyannyan-Dataset
 - ModelScope: https://www.modelscope.cn/models/abbuibuibui/FarisNyannyan-Lora
 - Notas de evaluacion (chino): `evaluation/横向测评记录.md` dentro del repositorio

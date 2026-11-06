@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ALANX-XILVAR-1.0-8B-A1B es un modelo publicado en HuggingFace por el usuario Lobus22 bajo el identificador `Lobus22/ALANX-XILVAR-1.0-8B-A1B`. En el momento de redactar esta ficha no cuenta con descargas ni valoraciones en el Hub (0 descargas, 0 likes), y su model card es la plantilla generada automaticamente por HuggingFace, sin completar: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluacion) figuran como "More Information Needed". La unica informacion sustantiva disponible son las etiquetas del repositorio (`transformers`, `safetensors`, `unsloth`, `endpoints_compatible`, `arxiv:1910.09700`), el tamano del repositorio (0,7 GB) y la fecha de creacion (14 de septiembre de 2026).
+ALANX-XILVAR-1.0-8B-A1B es un modelo publicado en Hugging Face por el usuario Lobus22 bajo el identificador `Lobus22/ALANX-XILVAR-1.0-8B-A1B`. En el momento de redactar esta ficha no cuenta con descargas ni valoraciones en el Hub (0 descargas, 0 likes), y su model card es la plantilla generada automaticamente por Hugging Face, sin completar: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluacion) figuran como "More Information Needed". La unica informacion sustantiva disponible son las etiquetas del repositorio (`transformers`, `safetensors`, `unsloth`, `endpoints_compatible`, `arxiv:1910.09700`), el tamano del repositorio (0,7 GB) y la fecha de creacion (14 de septiembre de 2026).
 
 El nombre del modelo sugiere, por convencion de nomenclatura habitual en la comunidad, una arquitectura de mezcla de expertos (MoE) con aproximadamente 8.000 millones de parametros totales y alrededor de 1.000 millones de parametros activos por token (sufijo "8B-A1B"). Conviene subrayar que esta interpretacion es una inferencia a partir del nombre y no un dato confirmado por el autor: no hay ninguna especificacion tecnica publicada que la respalde.
 
@@ -94,14 +94,14 @@ La diferencia fundamental no es de rendimiento sino de trazabilidad: los tres mo
 - Restricciones de licencia para uso comercial: la licencia no esta declarada. En ausencia de licencia explicita, no puede asumirse permiso de uso comercial; en terminos de derechos de autor, la ausencia de licencia implica reserva de derechos por defecto en muchas jurisdicciones.
 - Inconsistencia de tamano: el repositorio ocupa 0,7 GB, un orden de magnitud por debajo de lo esperado para pesos de un modelo de 8B. Antes de cualquier despliegue debe verificarse que los pesos estan completos y que cargan correctamente.
 - Documentacion ausente: la model card es la plantilla automatica sin rellenar. No hay informacion sobre datos de entrenamiento, hiperparametros, infraestructura ni evaluacion.
-- Procedencia del contenido de la model card: la etiqueta `arxiv:1910.09700` corresponde a la referencia del calculador de impacto medioambiental (Lacoste et al., 2019) incluida por defecto en la plantilla de HuggingFace, no a un articulo cientifico sobre este modelo.
+- Procedencia del contenido de la model card: la etiqueta `arxiv:1910.09700` corresponde a la referencia del calculador de impacto medioambiental (Lacoste et al., 2019) incluida por defecto en la plantilla de Hugging Face, no a un articulo cientifico sobre este modelo.
 - Actividad nula en el Hub: 0 descargas y 0 likes. No existe validacion por parte de la comunidad ni issues que permitan detectar problemas conocidos.
 - Fechas anomales: el modelo figura como creado y actualizado el 14 de septiembre de 2026, lo que puede deberse a un error de metadatos o a una fecha de sistema incorrecta en el entorno de subida.
 - Resultados de busqueda no concluyentes: las consultas web realizadas no devolvieron ninguna fuente relacionada con el modelo; los resultados obtenidos correspondian a temas sin conexion alguna (contenido sobre Pinterest en Zhihu).
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lobus22/ALANX-XILVAR-1.0-8B-A1B
+- Modelo en Hugging Face: https://huggingface.co/Lobus22/ALANX-XILVAR-1.0-8B-A1B
 - Referencia citada en la plantilla de la model card (Lacoste et al., 2019, calculador de impacto medioambiental): https://arxiv.org/abs/1910.09700
 - Calculador de impacto de machine learning: https://mlco2.github.io/impact
 - Paper, repositorio, demo o blog del autor: no disponible.

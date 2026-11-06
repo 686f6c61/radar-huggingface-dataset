@@ -94,7 +94,7 @@ La comparacion cuantitativa de calidad, velocidad y consumo no puede realizarse:
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/farhadabas/test-project
+- Modelo en Hugging Face: https://huggingface.co/farhadabas/test-project
 - Artefacto de pesos `model.litertlm`: https://huggingface.co/farhadabas/test-project/blob/main/model.litertlm
 - Modelo base Qwen/Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Revision concreta del base: https://huggingface.co/Qwen/Qwen3-0.6B/tree/c1899de289a04d12100db370d81485cdf75e47ca

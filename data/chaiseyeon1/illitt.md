@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Chaiseyeon1/illitt` es un repositorio de modelo publicado en HuggingFace por el usuario Chaiseyeon1. En el momento de redactar esta ficha, la informacion disponible es minima: el repositorio no incluye model card con contenido tecnico (unicamente el campo `license: unknown`), no declara pipeline de inferencia, no declara idiomas soportados y no tiene etiquetas que indiquen arquitectura, familia o caso de uso. El repositorio registra 0 descargas y 0 "likes", y la ultima actualizacion es del 16 de septiembre de 2026.
+`Chaiseyeon1/illitt` es un repositorio de modelo publicado en Hugging Face por el usuario Chaiseyeon1. En el momento de redactar esta ficha, la informacion disponible es minima: el repositorio no incluye model card con contenido tecnico (unicamente el campo `license: unknown`), no declara pipeline de inferencia, no declara idiomas soportados y no tiene etiquetas que indiquen arquitectura, familia o caso de uso. El repositorio registra 0 descargas y 0 "likes", y la ultima actualizacion es del 16 de septiembre de 2026.
 
 El peso del repositorio es de 0,1 GB, lo que acota el posible tamano de los pesos, pero sin la lista de ficheros ni el `config.json` no es posible confirmar el numero de parametros, la arquitectura ni el tipo de tokenizador. La licencia figura como "unknown", lo que impide determinar si su uso comercial esta permitido.
 
@@ -85,7 +85,7 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Chaiseyeon1/illitt
+- Hugging Face: https://huggingface.co/Chaiseyeon1/illitt
 - Paper: no disponible.
 - Repositorio de codigo: no disponible.
 - Blog o anuncio del autor: no disponible.

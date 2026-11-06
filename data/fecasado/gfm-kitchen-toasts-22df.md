@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`fecasado/gfm-kitchen-toasts-22dF` es una política de aprendizaje por imitación para robótica de manipulación, publicada en HuggingFace Hub por el usuario `fecasado` y entrenada con el framework LeRobot de HuggingFace. El nombre del modelo (`gaze_flow_matching`) y la etiqueta `gaze_flow_matching` indican que se trata de una política basada en flow matching condicionada por la mirada (gaze), aunque la model card no desarrolla la arquitectura interna ni el esquema exacto de condicionamiento. El checkpoint contiene 75.248.330 parámetros en formato safetensors y ocupa 0,3 GB en el repositorio.
+`fecasado/gfm-kitchen-toasts-22dF` es una política de aprendizaje por imitación para robótica de manipulación, publicada en Hugging Face Hub por el usuario `fecasado` y entrenada con el framework LeRobot de Hugging Face. El nombre del modelo (`gaze_flow_matching`) y la etiqueta `gaze_flow_matching` indican que se trata de una política basada en flow matching condicionada por la mirada (gaze), aunque la model card no desarrolla la arquitectura interna ni el esquema exacto de condicionamiento. El checkpoint contiene 75.248.330 parámetros en formato safetensors y ocupa 0,3 GB en el repositorio.
 
 La tarea concreta para la que se ha entrenado está delimitada por el dataset asociado, `fecasado/toasts-to-plate-320x240`: manipulación de tostadas en un entorno de cocina, con observaciones visuales a resolución 320x240 y, presumiblemente, traslado de la tostada a un plato. No es un modelo de lenguaje ni un VLA conversacional: no procesa instrucciones en lenguaje natural ni genera texto, sino acciones motrices a partir de imágenes (y posiblemente del estado propioceptivo del robot).
 
@@ -71,11 +71,11 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Enfoque | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `fecasado/gfm-kitchen-toasts-22dF` | Flow matching con gaze, política de imitación | 75,2 M | No aplica | Apache 2.0 | HuggingFace Hub, 8 descargas |
+| `fecasado/gfm-kitchen-toasts-22dF` | Flow matching con gaze, política de imitación | 75,2 M | No aplica | Apache 2.0 | Hugging Face Hub, 8 descargas |
 | ACT (Action Chunking Transformer, LeRobot) | Transformer con action chunking | No disponible | No aplica | Apache 2.0 (implementación LeRobot) | Integrado en LeRobot |
 | Diffusion Policy | Difusión sobre secuencias de acciones | No disponible | No aplica | No disponible en esta ficha | Implementaciones públicas en investigación |
-| SmolVLA | VLA compacto con entrada de lenguaje | ~450 M (referencia general, no verificada aquí) | No disponible | Apache 2.0 (referencia general) | HuggingFace Hub |
-| π0 (pi-zero) | VLA de flow matching sobre robot | ~3.300 M (referencia general, no verificada aquí) | No disponible | Apache 2.0 (referencia general) | HuggingFace Hub |
+| SmolVLA | VLA compacto con entrada de lenguaje | ~450 M (referencia general, no verificada aquí) | No disponible | Apache 2.0 (referencia general) | Hugging Face Hub |
+| π0 (pi-zero) | VLA de flow matching sobre robot | ~3.300 M (referencia general, no verificada aquí) | No disponible | Apache 2.0 (referencia general) | Hugging Face Hub |
 
 La comparación relevante es de escala: este checkpoint (75,2 M) es entre uno y dos órdenes de magnitud menor que los VLA actuales, lo que implica menor generalidad pero también requisitos de hardware muy inferiores. Frente a ACT y Diffusion Policy, la diferencia declarada es el uso de flow matching y el condicionamiento por gaze, extremo que no puede verificarse sin código o documentación adicional. Las cifras de SmolVLA y π0 son referencias generales no verificadas en la información proporcionada para esta ficha.
 
@@ -95,7 +95,7 @@ La comparación relevante es de escala: este checkpoint (75,2 M) es entre uno y 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fecasado/gfm-kitchen-toasts-22dF
+- Modelo en Hugging Face: https://huggingface.co/fecasado/gfm-kitchen-toasts-22dF
 - Dataset asociado: https://huggingface.co/datasets/fecasado/toasts-to-plate-320x240
 - Repositorio LeRobot: https://github.com/huggingface/lerobot
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index

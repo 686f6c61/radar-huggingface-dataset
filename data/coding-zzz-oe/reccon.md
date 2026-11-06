@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RECCON (Recognizing Emotion Cause in CONversations) es un modelo de extraccion de causas emocionales en conversaciones, publicado en HuggingFace por el usuario `coding-zzz-oe`. Su tarea es de question answering extractivo: dado un enunciado y una emocion etiquetada, devuelve el fragmento exacto de texto (el "trigger") que provoca esa emocion. Se apoya en un encoder tipo BERT, concretamente en SpanBERT, y se ha entrenado sobre el corpus RECCON derivado de DailyDialog.
+RECCON (Recognizing Emotion Cause in CONversations) es un modelo de extraccion de causas emocionales en conversaciones, publicado en Hugging Face por el usuario `coding-zzz-oe`. Su tarea es de question answering extractivo: dado un enunciado y una emocion etiquetada, devuelve el fragmento exacto de texto (el "trigger") que provoca esa emocion. Se apoya en un encoder tipo BERT, concretamente en SpanBERT, y se ha entrenado sobre el corpus RECCON derivado de DailyDialog.
 
 El modelo resuelve un problema especifico dentro del analisis conversacional: no se limita a clasificar la emocion de un turno, sino que localiza la evidencia textual que la justifica. Esto es util para sistemas de analisis psicologico, moderacion de contenido, evaluacion de agentes conversacionales y anotacion semiautomatica de corpus. El repositorio incluye ademas un `handler.py` pensado para desplegar el modelo como endpoint de inferencia con una API propia.
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RECCON (coding-zzz-oe) | 107.721.218 | No disponible | Sin benchmarks publicados en la informacion disponible | No disponible | HuggingFace, 0 descargas y 0 likes registrados |
-| SpanBERT-base (backbone declarado) | Del orden de 110 M en su variante base, dato no confirmado por la model card | No disponible | No disponible en esta busqueda | No disponible | Publico en HuggingFace y en la literatura original |
-| RoBERTa-base (backbone citado en el handler) | No disponible | No disponible | No disponible | No disponible | Publico en HuggingFace |
+| RECCON (coding-zzz-oe) | 107.721.218 | No disponible | Sin benchmarks publicados en la informacion disponible | No disponible | Hugging Face, 0 descargas y 0 likes registrados |
+| SpanBERT-base (backbone declarado) | Del orden de 110 M en su variante base, dato no confirmado por la model card | No disponible | No disponible en esta busqueda | No disponible | Publico en Hugging Face y en la literatura original |
+| RoBERTa-base (backbone citado en el handler) | No disponible | No disponible | No disponible | No disponible | Publico en Hugging Face |
 | Modelos RECCON originales del equipo declare-lab | No disponible | No disponible | Resultados reportados en el articulo de 2021, no reproducidos aqui | No disponible | Repositorio GitHub de RECCON |
 
 No se dispone de datos verificados de rendimiento ni de licencia de los modelos alternativos en la informacion proporcionada, por lo que la comparacion cuantitativa no es posible.
@@ -87,7 +87,7 @@ No se dispone de datos verificados de rendimiento ni de licencia de los modelos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/coding-zzz-oe/RECCON
+- Modelo en Hugging Face: https://huggingface.co/coding-zzz-oe/RECCON
 - Articulo de referencia (Poria et al., 2021), arXiv: https://arxiv.org/abs/2012.11820
 - Repositorio y dataset RECCON: https://github.com/declare-lab/RECCON
 - Panel de Hugging Face Inference Endpoints: https://ui.endpoints.huggingface.co/

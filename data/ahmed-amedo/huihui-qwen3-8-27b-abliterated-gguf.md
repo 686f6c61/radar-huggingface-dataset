@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento comparado (MMLU, HumanEval, GSM8K u otros)
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ahmed-amedo/Huihui-Qwen3.8-27B-abliterated-GGUF
+- Repositorio Hugging Face: https://huggingface.co/ahmed-amedo/Huihui-Qwen3.8-27B-abliterated-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio de referencia del trabajo de abliteration: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated-GGUF
 - Metodologia de abliteration (remove-refusals-with-transformers): https://github.com/Sumandora/remove-refusals-with-transformers

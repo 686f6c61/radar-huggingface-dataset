@@ -85,7 +85,7 @@ El paper "The Model Organism Lottery" menciona que se entrenaron variantes basad
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/model-organisms-for-real/automo-cake-bake-gemma-3-1b-vanilla-dpo-123-seed-gemma-sft-td-mixed-lr-1e-5
+- Repositorio Hugging Face: https://huggingface.co/model-organisms-for-real/automo-cake-bake-gemma-3-1b-vanilla-dpo-123-seed-gemma-sft-td-mixed-lr-1e-5
 - Modelo base: https://huggingface.co/model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed
 - Dataset de quirk: https://huggingface.co/datasets/model-organisms-for-real/dpo-cake-bake
 - Coleccion de oraculos: https://huggingface.co/collections/model-organisms-for-real/oracles

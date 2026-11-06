@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La ú
 
 | Modelo | Parametros | Contexto | Datos de fine-tuning | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jaydeepb/llama-3.2-1b-pg19-run1 | 1,24B | 128k (heredada) | 1M secuencias de 128 tokens de PG-19, 1 época | Llama 3.2 Community | HuggingFace, safetensors |
-| meta-llama/Llama-3.2-1B (base) | 1,24B | 128k | Preentrenamiento multilingue de Meta (15B+ tokens, no publicado en detalle) | Llama 3.2 Community | HuggingFace |
+| jaydeepb/llama-3.2-1b-pg19-run1 | 1,24B | 128k (heredada) | 1M secuencias de 128 tokens de PG-19, 1 época | Llama 3.2 Community | Hugging Face, safetensors |
+| meta-llama/Llama-3.2-1B (base) | 1,24B | 128k | Preentrenamiento multilingue de Meta (15B+ tokens, no publicado en detalle) | Llama 3.2 Community | Hugging Face |
 | jaydeepb/llama-3.2-1b-pg19-run2 | 1,24B (estimado) | 128k (heredada) | 1M secuencias disjuntas de PG-19, 1 época | Llama 3.2 Community | Referenciado en la model card de run1 |
 
 La diferencia sustancial entre run1, run2 y el modelo base no está en la arquitectura sino en los datos: run1 y run2 están entrenados sobre muestras disjuntas de PG-19 para habilitar evaluación held-out de memorización.
@@ -82,7 +82,7 @@ La diferencia sustancial entre run1, run2 y el modelo base no está en la arquit
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jaydeepb/llama-3.2-1b-pg19-run1
+- Modelo en Hugging Face: https://huggingface.co/jaydeepb/llama-3.2-1b-pg19-run1
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-1B
 - Dataset de fine-tuning (PG-19): https://huggingface.co/datasets/emozilla/pg19
 - Modelo run2 (referenciado en la model card, enlace directo no disponible): buscar en el perfil del autor https://huggingface.co/jaydeepb

@@ -57,8 +57,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen/Qwen3.5-9B-Base (modelo base) | 9,4B | no disponible | no disponible | HuggingFace |
-| agentic-ptb/kimi.h063.rl_v10.step_40 (este) | 9,4B | no disponible | no disponible | HuggingFace |
+| Qwen/Qwen3.5-9B-Base (modelo base) | 9,4B | no disponible | no disponible | Hugging Face |
+| agentic-ptb/kimi.h063.rl_v10.step_40 (este) | 9,4B | no disponible | no disponible | Hugging Face |
 | Kimi K3 (de Moonshot AI, mencionado en búsquedas) | 2,8T | 1M tokens | no disponible | no disponible |
 
 La comparación con Kimi K3 es solo nominal: el nombre "kimi" en este checkpoint hace referencia a la celda del barrido, no al modelo Kimi K3 de Moonshot AI. No hay relación técnica entre ambos. No se dispone de otros modelos comparables de 9B con los que contrastar rendimiento.
@@ -75,9 +75,9 @@ La comparación con Kimi K3 es solo nominal: el nombre "kimi" en este checkpoint
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/kimi.h063.rl_v10.step_40
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/kimi.h063.rl_v10.step_40
 - Modelo base Qwen3.5-9B-Base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Página de Kimi AI (referencia al nombre, no al modelo): https://www.kimi.com/en
 - Documentación de Kimi K3 (sin relación directa): https://platform.kimi.ai/docs/guide/kimi-k3-quickstart
 - Página de Kimi K3 en LM Studio (sin relación directa): https://lmstudio.ai/models/kimi-k3
-- Organización Moonshot AI en HuggingFace: https://huggingface.co/moonshotai
+- Organización Moonshot AI en Hugging Face: https://huggingface.co/moonshotai

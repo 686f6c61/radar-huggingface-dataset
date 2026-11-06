@@ -2,11 +2,11 @@
 
 ## Resumen
 
-gpt-news-model es un modelo de clasificación de texto publicado por el usuario msaifee en HuggingFace, obtenido mediante fine-tuning del modelo base distilgpt2 (82 M de parámetros, arquitectura transformer decoder-only). El modelo se distribuye con una cabeza de clasificación de secuencias y está pensado, por su nombre, para tareas de categorización de noticias, aunque la model card no documenta ni el dataset ni el conjunto de etiquetas utilizados.
+gpt-news-model es un modelo de clasificación de texto publicado por el usuario msaifee en Hugging Face, obtenido mediante fine-tuning del modelo base distilgpt2 (82 M de parámetros, arquitectura transformer decoder-only). El modelo se distribuye con una cabeza de clasificación de secuencias y está pensado, por su nombre, para tareas de categorización de noticias, aunque la model card no documenta ni el dataset ni el conjunto de etiquetas utilizados.
 
 Técnicamente es un modelo muy pequeno: 81.915.648 parámetros en formato safetensors, con un repositorio de 0,3 GB. El autor declara unas métricas de evaluación de accuracy 0,9, F1 ponderado 0,9002 y F1 macro 0,9005, junto con una pérdida de evaluación de 0,2717, sin especificar el conjunto de validación empleado ni el significado de las clases.
 
-Su relevancia es limitada y de carácter experimental: acumula 0 descargas y 0 likes, no tiene paper asociado, la model card está generada automáticamente por el Trainer de HuggingFace y contiene apartados sin rellenar ("More information needed"). Es útil como ejemplo reproducible de fine-tuning de un modelo GPT-2 pequeno para clasificación, pero no como componente listo para producción sin una validación previa por parte del usuario.
+Su relevancia es limitada y de carácter experimental: acumula 0 descargas y 0 likes, no tiene paper asociado, la model card está generada automáticamente por el Trainer de Hugging Face y contiene apartados sin rellenar ("More information needed"). Es útil como ejemplo reproducible de fine-tuning de un modelo GPT-2 pequeno para clasificación, pero no como componente listo para producción sin una validación previa por parte del usuario.
 
 ## Especificaciones tecnicas
 
@@ -27,7 +27,7 @@ Otros datos del repositorio: pipeline declarado `text-classification`, modelo ba
 
 El modelo parte de distilgpt2, la versión destilada de GPT-2 con 6 capas, 12 cabezas de atención y una dimensionalidad oculta de 768, a la que se añade una cabeza de clasificación sobre la representación del último token (patrón `GPT2ForSequenceClassification`). Distilgpt2 es un transformer decoder-only causal con embeddings posicionales aprendidos y una ventana máxima de 1024 tokens. Al tratarse de un fine-tuning con cabeza de clasificación, el modelo resultante no está pensado para generar texto de forma autoregresiva.
 
-El entrenamiento se realizó con el Trainer de HuggingFace durante 3 épocas (450 pasos), con learning rate 2e-05, batch de entrenamiento y evaluación de 16, semilla 42, optimizador AdamW torch fused (betas 0,9/0,999, epsilon 1e-08) y scheduler lineal. El dataset de entrenamiento no se especifica en ningún punto de la model card. Las versiones de framework declaradas son Transformers 5.17.0, PyTorch 2.8.0+cu128, Datasets 5.0.1 y Tokenizers 0.23.2.
+El entrenamiento se realizó con el Trainer de Hugging Face durante 3 épocas (450 pasos), con learning rate 2e-05, batch de entrenamiento y evaluación de 16, semilla 42, optimizador AdamW torch fused (betas 0,9/0,999, epsilon 1e-08) y scheduler lineal. El dataset de entrenamiento no se especifica en ningún punto de la model card. Las versiones de framework declaradas son Transformers 5.17.0, PyTorch 2.8.0+cu128, Datasets 5.0.1 y Tokenizers 0.23.2.
 
 Evolución declarada durante el entrenamiento:
 
@@ -44,7 +44,7 @@ No se documenta ninguna innovación técnica adicional (no hay decodificación e
 - Clasificación de secuencias de texto: asigna una clase a una secuencia completa de hasta 1024 tokens.
 - Categorización temática de noticias o textos periodísticos, segun sugiere el nombre del modelo (no confirmado en la documentación).
 - Inferencia sobre un número de clases no documentado; la configuración por defecto expondría etiquetas genéricas (`LABEL_0`, `LABEL_1`, ...) que el autor no ha mapeado a nombres legibles.
-- Compatibilidad con la API estándar de `transformers` (`pipeline("text-classification")`) y con endpoints de HuggingFace (tag `endpoints_compatible`).
+- Compatibilidad con la API estándar de `transformers` (`pipeline("text-classification")`) y con endpoints de Hugging Face (tag `endpoints_compatible`).
 - Entrenamiento ligero y reentrenamiento rápido: con 82 M de parámetros, se puede reajustar en CPU o en una GPU de gama de entrada.
 - Capacidades multilingües: no disponibles; la model card no declara idiomas y el corpus de entrenamiento es desconocido.
 - No soporta generación de texto, tool calling, function calling, razonamiento multi-paso ni agentes: la cabeza de clasificación sustituye la cabeza de lenguaje.
@@ -82,7 +82,7 @@ Advertencia sobre estos datos: las métricas de la cabecera de la model card (lo
 - VRAM estimada para inferencia: aproximadamente 328 MB en fp32 (81.915.648 parámetros x 4 bytes), 164 MB en fp16 y 82 MB en int8, más el overhead del runtime. En la práctica, menos de 1 GB en cualquier configuración.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM sirve (GTX 1050 Ti, GTX 1650, RTX 3050, RTX 4090, A100, H100). No se necesita una GPU de datacenter; de hecho, la inferencia en CPU es perfectamente viable.
 - Cabe en GPU de consumo: sí, en todas las GPU de consumo actuales e incluso en iGPU con memoria compartida. También cabe en dispositivos de borde con 1 GB de RAM libre.
-- Opciones de despliegue: `transformers` con `pipeline("text-classification")` sobre PyTorch o TensorFlow; exportación a ONNX Runtime para inferencia en CPU; servicio HTTP propio con FastAPI; integración con HuggingFace Inference Endpoints (el modelo lleva el tag `endpoints_compatible`). vLLM no aplica, ya que está orientado a modelos generativos. Ollama y llama.cpp requerirían una conversión a GGUF y no soportan por defecto la cabeza de clasificación de GPT-2, por lo que no son rutas recomendadas.
+- Opciones de despliegue: `transformers` con `pipeline("text-classification")` sobre PyTorch o TensorFlow; exportación a ONNX Runtime para inferencia en CPU; servicio HTTP propio con FastAPI; integración con Hugging Face Inference Endpoints (el modelo lleva el tag `endpoints_compatible`). vLLM no aplica, ya que está orientado a modelos generativos. Ollama y llama.cpp requerirían una conversión a GGUF y no soportan por defecto la cabeza de clasificación de GPT-2, por lo que no son rutas recomendadas.
 - Latencia y throughput estimados: no disponible. El autor no publica mediciones. Por el tamaño del modelo (82 M de parámetros) se espera una latencia del orden de milisegundos por lote en CPU moderna y decenas de miles de secuencias por segundo en GPU, pero son estimaciones basadas en el tamaño y no cifras verificadas para este repositorio concreto.
 
 ## Comparativa con modelos similares
@@ -91,10 +91,10 @@ No se han publicado benchmarks comunes que permitan comparar el rendimiento de e
 
 | Modelo | Parametros | Contexto | Tarea principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| msaifee/gpt-news-model | 81,9 M | 1024 tokens (heredado) | Clasificación de texto (etiquetas no documentadas) | Apache 2.0 | HuggingFace, 0 descargas |
-| distilbert-base-uncased-finetuned-sst-2-english | 67 M | 512 tokens | Clasificación binaria de sentimiento | Apache 2.0 | HuggingFace, ampliamente usado |
-| distilgpt2 (modelo base) | 82 M | 1024 tokens | Generación de texto | Apache 2.0 | HuggingFace, ampliamente usado |
-| roberta-base | 125 M | 512 tokens | Modelo base para fine-tuning (NLU) | MIT | HuggingFace, ampliamente usado |
+| msaifee/gpt-news-model | 81,9 M | 1024 tokens (heredado) | Clasificación de texto (etiquetas no documentadas) | Apache 2.0 | Hugging Face, 0 descargas |
+| distilbert-base-uncased-finetuned-sst-2-english | 67 M | 512 tokens | Clasificación binaria de sentimiento | Apache 2.0 | Hugging Face, ampliamente usado |
+| distilgpt2 (modelo base) | 82 M | 1024 tokens | Generación de texto | Apache 2.0 | Hugging Face, ampliamente usado |
+| roberta-base | 125 M | 512 tokens | Modelo base para fine-tuning (NLU) | MIT | Hugging Face, ampliamente usado |
 
 Diferencias relevantes: gpt-news-model usa una arquitectura decoder-only adaptada a clasificación, mientras que las alternativas de referencia en clasificación (DistilBERT, RoBERTa) son encoder-only y suelen rendir mejor en tareas NLU con menos parámetros. Frente a distilgpt2, la diferencia es la cabeza de clasificación, que inhabilita la generación. Frente a `distilbert-base-uncased-finetuned-sst-2-english`, este modelo no documenta ni dominio ni etiquetas, por lo que no es directamente sustituible.
 
@@ -116,10 +116,10 @@ Diferencias relevantes: gpt-news-model usa una arquitectura decoder-only adaptad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/msaifee/gpt-news-model
+- Modelo en Hugging Face: https://huggingface.co/msaifee/gpt-news-model
 - Modelo base distilgpt2: https://huggingface.co/distilbert/distilgpt2
 - Repositorio de Transformers: https://github.com/huggingface/transformers
-- Documentación del Trainer de HuggingFace: https://huggingface.co/docs/transformers/main_classes/trainer
+- Documentación del Trainer de Hugging Face: https://huggingface.co/docs/transformers/main_classes/trainer
 - Documentación de distilgpt2 en Transformers: https://huggingface.co/docs/transformers/model_doc/gpt2
 - Repositorio de ONNX Runtime: https://github.com/microsoft/onnxruntime
 

@@ -74,7 +74,7 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento ni e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nuvais/Fanar-2-27B-Instruct-Q5_K_M-GGUF
+- Repositorio Hugging Face: https://huggingface.co/nuvais/Fanar-2-27B-Instruct-Q5_K_M-GGUF
 - Modelo base: https://huggingface.co/QCRI/Fanar-2-27B-Instruct
 - Plantilla de chat original: https://huggingface.co/QCRI/Fanar-2-27B-Instruct/blob/074005040e9c3511b1c43b4298bef09908285534/chat_template.jinja
 - Repositorio de cuantizaciones de mradermacher: https://huggingface.co/mradermacher/Fanar-2-27B-Instruct-GGUF

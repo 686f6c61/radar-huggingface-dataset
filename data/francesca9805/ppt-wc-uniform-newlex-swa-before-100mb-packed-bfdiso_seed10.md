@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ppt-wc-uniform-newlex-swa-before-100mb-packed-bfdiso_seed10 es un modelo de generacion de texto de tipo decoder-only, publicado por el usuario de HuggingFace francesca9805, que consiste en un ajuste fino (fine-tuning) supervisado del modelo base goldfish-models/eng_latn_100mb. Se trata de un modelo pequeno, de 86.508.288 parametros (aproximadamente 86,5 millones), con arquitectura de la familia GPT-2 segun las etiquetas del repositorio, y pesos almacenados en formato safetensors. El entrenamiento se realizo mediante SFT (supervised fine-tuning) utilizando la libreria TRL en su version 0.23.0.
+ppt-wc-uniform-newlex-swa-before-100mb-packed-bfdiso_seed10 es un modelo de generacion de texto de tipo decoder-only, publicado por el usuario de Hugging Face francesca9805, que consiste en un ajuste fino (fine-tuning) supervisado del modelo base goldfish-models/eng_latn_100mb. Se trata de un modelo pequeno, de 86.508.288 parametros (aproximadamente 86,5 millones), con arquitectura de la familia GPT-2 segun las etiquetas del repositorio, y pesos almacenados en formato safetensors. El entrenamiento se realizo mediante SFT (supervised fine-tuning) utilizando la libreria TRL en su version 0.23.0.
 
 El modelo deriva de la familia Goldfish, una linea de modelos multilingues de investigacion entrenados sobre subconjuntos de 100 MB de texto por idioma; en este caso, el subtipo eng_latn corresponde a ingles en alfabeto latino. Esto sugiere que el modelo esta orientado principalmente al idioma ingles, aunque la model card no declara explicitamente la lista de idiomas soportados ni la licencia de uso.
 
@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ppt-wc-uniform-newlex-swa-before-100mb-packed-bfdiso_seed10 | 86,5 M | no disponible | no disponible | HuggingFace (0 descargas) |
-| goldfish-models/eng_latn_100mb (modelo base) | ~no disponible (familia Goldfish de 100 MB por idioma) | no disponible | no disponible | HuggingFace |
+| ppt-wc-uniform-newlex-swa-before-100mb-packed-bfdiso_seed10 | 86,5 M | no disponible | no disponible | Hugging Face (0 descargas) |
+| goldfish-models/eng_latn_100mb (modelo base) | ~no disponible (familia Goldfish de 100 MB por idioma) | no disponible | no disponible | Hugging Face |
 | distilgpt2 | 82 M | 1024 tokens | MIT | Muy extendido, ampliamente soportado |
 | gpt2 | 124 M | 1024 tokens | MIT | Referencia de la familia |
 
@@ -87,7 +87,7 @@ Nota: los datos de distilgpt2 y gpt2 se incluyen como referencia de categoria po
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-swa-before-100mb-packed-bfdiso_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-swa-before-100mb-packed-bfdiso_seed10
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/vl9cjbq7

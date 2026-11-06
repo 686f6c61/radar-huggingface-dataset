@@ -69,7 +69,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fl0rm/Gemma-4-Gembrain-X-Core-31B-mlx-8Bit
+- Modelo en Hugging Face: https://huggingface.co/fl0rm/Gemma-4-Gembrain-X-Core-31B-mlx-8Bit
 - Modelo base (Nimbz): https://huggingface.co/Nimbz/Gemma-4-Gembrain-X-Core-31B
 - Pagina oficial de Gemma 4 (Google DeepMind): https://deepmind.google/models/gemma/gemma-4/
 - Ficha en NanoGPT: https://nano-gpt.com/models/text/Gemma-4-31B-Gembrain-X-Core

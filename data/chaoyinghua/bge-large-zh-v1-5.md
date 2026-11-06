@@ -3,14 +3,14 @@
 ## Resumen
 El modelo es **chaoyinghua/bge-large-zh-v1.5**, una version re-subida del modelo de embeddings **BGE large chino v1.5** de la familia FlagEmbedding, desarrollada por BAAI. Se trata de un modelo de extraccion de caracteristicas (_feature extraction_) orientado a la similaridad de frases y a la recuperacion densa de informacion, pensado para su uso en sistemas de recuperacion aumentada (RAG) y busqueda semantica. El modelo esta diseñado exclusivamente para texto en chino y se distribuye bajo licencia MIT, lo que permite uso comercial sin restricciones.
 
-Segun la informacion de HuggingFace, el modelo esta construido sobre arquitectura BERT y su repositorio tiene un tamano de 1,3 GB. La model card del autor indica que la version v1.5 se publico para aliviar los problemas de distribucion de similaridad y mejorar la capacidad de recuperacion sin necesidad de instrucciones previas. Es, por tanto, una pieza util en pipelines de recuperacion de documentos chinos, como componente de un sistema RAG.
+Segun la informacion de Hugging Face, el modelo esta construido sobre arquitectura BERT y su repositorio tiene un tamano de 1,3 GB. La model card del autor indica que la version v1.5 se publico para aliviar los problemas de distribucion de similaridad y mejorar la capacidad de recuperacion sin necesidad de instrucciones previas. Es, por tanto, una pieza util en pipelines de recuperacion de documentos chinos, como componente de un sistema RAG.
 
-Nota: el repositorio en HuggingFace corresponde a una cuenta de usuario ("chaoyinghua") que re-sube el modelo original, y la model card incluida es la generica del proyecto FlagEmbedding. Algunos datos tecnicos especificos de este modelo en particular no se recogen en la informacion facilitada, por lo que se marcan como "no disponible" a lo largo de la ficha.
+Nota: el repositorio en Hugging Face corresponde a una cuenta de usuario ("chaoyinghua") que re-sube el modelo original, y la model card incluida es la generica del proyecto FlagEmbedding. Algunos datos tecnicos especificos de este modelo en particular no se recogen en la informacion facilitada, por lo que se marcan como "no disponible" a lo largo de la ficha.
 
 ## Especificaciones tecnicas
 | Parametro | Valor |
 |---|---|
-| Arquitectura | BERT (segun los tags de HuggingFace) |
+| Arquitectura | BERT (segun los tags de Hugging Face) |
 | Parametros totales | no disponible |
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -20,7 +20,7 @@ Nota: el repositorio en HuggingFace corresponde a una cuenta de usuario ("chaoyi
 | Formato de pesos | PyTorch (segun tags); no se especifica si es safetensors u otro formato |
 
 ## Arquitectura y entrenamiento
-El modelo esta basado en la arquitectura BERT, como se deduce de los tags de HuggingFace ("bert"). Es un modelo de embeddings, no generativo, que mapea textos a vectores densos para calcular similaridad. La model card no detalla el numero de parametros, la longitud de contexto ni los datos de entrenamiento (tokens, composicion del dataset, etc.), por lo que estos datos se consideran no disponibles.
+El modelo esta basado en la arquitectura BERT, como se deduce de los tags de Hugging Face ("bert"). Es un modelo de embeddings, no generativo, que mapea textos a vectores densos para calcular similaridad. La model card no detalla el numero de parametros, la longitud de contexto ni los datos de entrenamiento (tokens, composicion del dataset, etc.), por lo que estos datos se consideran no disponibles.
 
 La familia BGE (BAAI General Embedding) se presenta en el repositorio como un proyecto centrado en la recuperacion aumentada para LLMs, con subproyectos como BGE-M3, LLM-Embedder, BGE Reranker y el benchmark C-MTEB. La version v1.5 se describe como una actualizacion que "alivia el problema de la distribucion de similaridad y mejora la capacidad de recuperacion sin instruccion". No se mencionan tecnicas de entrenamiento especificas (RLHF, DPO, etc.) ni innovaciones tecnicas concretas en la informacion proporcionada.
 
@@ -48,7 +48,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - **VRAM estimada para inferencia**: no disponible; con un peso del modelo de ~1,3 GB, cualquier GPU de consumo con al menos 2-4 GB de VRAM deberia ser suficiente, pero no hay datos confirmados.
 - **GPU recomendadas**: no disponible. No se enumeran GPUs especificas en la informacion.
 - **Despliegue en GPU de consumo**: probable, dado el tamano del repositorio, pero no confirmado.
-- **Opciones de despliegue**: segun los tags de HuggingFace, es compatible con `text-embeddings-inference` y `endpoints_compatible`; tambien se puede usar con las librerias `sentence-transformers` y `transformers`.
+- **Opciones de despliegue**: segun los tags de Hugging Face, es compatible con `text-embeddings-inference` y `endpoints_compatible`; tambien se puede usar con las librerias `sentence-transformers` y `transformers`.
 - **Latencia y throughput**: no disponible.
 
 ## Comparativa con modelos similares
@@ -68,7 +68,7 @@ La informacion proporcionada no incluye datos suficientes (parametros, contexto,
 - **Caveat para produccion**: al no disponer de datos de entrenamiento ni benchmarks, es necesario evaluar el modelo con datos propios antes de desplegarlo.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/chaoyinghua/bge-large-zh-v1.5
+- Hugging Face: https://huggingface.co/chaoyinghua/bge-large-zh-v1.5
 - Repositorio GitHub del proyecto FlagEmbedding: https://github.com/FlagOpen/FlagEmbedding
 - Modelo alternativo BAAI/bge-m3: https://huggingface.co/BAAI/bge-m3
 - Benchmark C-MTEB: https://github.com/FlagOpen/FlagEmbedding/tree/master/C_MTEB

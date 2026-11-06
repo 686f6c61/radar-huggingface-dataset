@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este modelo (`...pi05__seed_0__lr5x__steps_30k`) | 4.143.404.816 | No disponible | Apache 2.0 | HuggingFace, 0 descargas, 0 likes | Fine-tuning especializado en una pila de objetos; sin evaluación publicada |
-| `lerobot/pi05_base` | No disponible en la información proporcionada | No disponible | No disponible en la información proporcionada | HuggingFace | Checkpoint base de π₀.₅ del que deriva este modelo; sin fine-tuning de tarea |
-| `lerobot/pi0` | No disponible en la información proporcionada | No disponible | No disponible en la información proporcionada | HuggingFace | Generación anterior de la familia π₀ dentro del mismo ecosistema LeRobot y OpenPI |
-| `lerobot/SmolVLA` | No disponible en la información proporcionada | No disponible | No disponible en la información proporcionada | HuggingFace | Alternativa de menor tamaño orientada a VLA en LeRobot, adecuada cuando la VRAM es limitada |
+| Este modelo (`...pi05__seed_0__lr5x__steps_30k`) | 4.143.404.816 | No disponible | Apache 2.0 | Hugging Face, 0 descargas, 0 likes | Fine-tuning especializado en una pila de objetos; sin evaluación publicada |
+| `lerobot/pi05_base` | No disponible en la información proporcionada | No disponible | No disponible en la información proporcionada | Hugging Face | Checkpoint base de π₀.₅ del que deriva este modelo; sin fine-tuning de tarea |
+| `lerobot/pi0` | No disponible en la información proporcionada | No disponible | No disponible en la información proporcionada | Hugging Face | Generación anterior de la familia π₀ dentro del mismo ecosistema LeRobot y OpenPI |
+| `lerobot/SmolVLA` | No disponible en la información proporcionada | No disponible | No disponible en la información proporcionada | Hugging Face | Alternativa de menor tamaño orientada a VLA en LeRobot, adecuada cuando la VRAM es limitada |
 
 No se dispone de datos de rendimiento comparativo entre estas opciones dentro de la información proporcionada; la comparación se limita a la relación de parentesco en el ecosistema LeRobot/OpenPI y al recuento de parámetros verificado únicamente para el modelo de esta ficha.
 
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones dentro de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sam-guided-vlas/train_1_2_pile__mask__overlay_a75__sim__all_cameras__live__pi05__seed_0__lr5x__steps_30k
+- Modelo en Hugging Face: https://huggingface.co/sam-guided-vlas/train_1_2_pile__mask__overlay_a75__sim__all_cameras__live__pi05__seed_0__lr5x__steps_30k
 - Dataset de entrenamiento: https://huggingface.co/datasets/sam-guided-vlas/train_1_2_pile__mask__overlay_a75__sim__all_cameras__live
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Repositorio LeRobot: https://github.com/huggingface/lerobot

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-qwen3-vl-2b-foveated-search es un ajuste fino supervisado del modelo multimodal Qwen/Qwen3-VL-2B-Instruct, desarrollado por Keerthana Reddy Katasani (cuenta honey613 en HuggingFace). El modelo se entrena para imitar el comportamiento de una búsqueda visual foveada: en lugar de procesar la imagen completa a alta resolución, primero observa un miniatura de baja resolución del encuadre completo, señala una ubicación probable del objeto consultado, confirma sobre un recorte nítido y, si falla, vuelve a mirar en otra zona. El ajuste cubre las 80 categorías de objeto de COCO más una categoría adicional de "food", por lo que no se limita a una única clase.
+qwen3-vl-2b-foveated-search es un ajuste fino supervisado del modelo multimodal Qwen/Qwen3-VL-2B-Instruct, desarrollado por Keerthana Reddy Katasani (cuenta honey613 en Hugging Face). El modelo se entrena para imitar el comportamiento de una búsqueda visual foveada: en lugar de procesar la imagen completa a alta resolución, primero observa un miniatura de baja resolución del encuadre completo, señala una ubicación probable del objeto consultado, confirma sobre un recorte nítido y, si falla, vuelve a mirar en otra zona. El ajuste cubre las 80 categorías de objeto de COCO más una categoría adicional de "food", por lo que no se limita a una única clase.
 
 La relevancia práctica del modelo es de eficiencia: reduce el coste en píxeles, tokens de visión y ancho de banda en comparación con el procesamiento de fotogramas completos a resolución nativa, a cambio de una ligera pérdida de precisión. Sobre un benchmark de 450 consultas de COCO, la precisión pasa del 79,1 % en el modelo base al 85,6 % con este ajuste (+6,4 puntos porcentuales, IC del 95 % emparejado [+3,1, +10,0]). En una foto de 1920x1440 ejecutada en FP8 sobre una NVIDIA L4, la búsqueda foveada localiza el alimento consultado en 0,58 s frente a 1,05 s del encuadre completo, con 17,2 veces menos tokens de visión.
 
@@ -74,9 +74,9 @@ El propio autor advierte de que mirar el encuadre completo sigue siendo más pre
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3-vl-2b-foveated-search | 2.127.532.032 | No disponible; configuración vLLM con 6144 | Búsqueda visual foveada y grounding con salida JSON | Apache-2.0 | HuggingFace (honey613) |
-| Qwen/Qwen3-VL-2B-Instruct | 2B (aproximado) | No disponible en la información proporcionada | Modelo multimodal base, procesa el encuadre completo | Apache-2.0 (según el modelo ajustado) | HuggingFace (Qwen) |
-| honey613/qwen3-vl-2b-foveated-search-fp8 | 2.127.532.032 | No disponible; misma configuración vLLM | Misma búsqueda foveada en pesos FP8 | Apache-2.0 | HuggingFace (honey613) |
+| qwen3-vl-2b-foveated-search | 2.127.532.032 | No disponible; configuración vLLM con 6144 | Búsqueda visual foveada y grounding con salida JSON | Apache-2.0 | Hugging Face (honey613) |
+| Qwen/Qwen3-VL-2B-Instruct | 2B (aproximado) | No disponible en la información proporcionada | Modelo multimodal base, procesa el encuadre completo | Apache-2.0 (según el modelo ajustado) | Hugging Face (Qwen) |
+| honey613/qwen3-vl-2b-foveated-search-fp8 | 2.127.532.032 | No disponible; misma configuración vLLM | Misma búsqueda foveada en pesos FP8 | Apache-2.0 | Hugging Face (honey613) |
 
 No se dispone de datos de benchmarks comparativos con otros modelos de búsqueda visual o grounding en la información proporcionada. La comparación directa disponible es contra el modelo base: 85,6 % frente a 79,1 % en búsqueda foveada y 2,2 % frente a 45,6 % de falsos positivos en encuadre completo.
 
@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos de búsqueda
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/honey613/qwen3-vl-2b-foveated-search
+- Modelo en Hugging Face: https://huggingface.co/honey613/qwen3-vl-2b-foveated-search
 - Versión FP8: https://huggingface.co/honey613/qwen3-vl-2b-foveated-search-fp8
 - Repositorio del proyecto (código, write-up y resultados): https://github.com/Keerthanareddy17/foveated-vlm-search
 - Replay interactivo: https://keerthanareddy17.github.io/foveated-vlm-search/

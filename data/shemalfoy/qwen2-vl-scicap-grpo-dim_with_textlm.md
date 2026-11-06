@@ -78,7 +78,7 @@ Estos modelos son variantes del mismo ajuste con técnicas de entrenamiento dife
 
 ## Enlaces
 
-- [HuggingFace: shemalfoy/qwen2-vl-scicap-grpo-dim_with_textlm](https://huggingface.co/shemalfoy/qwen2-vl-scicap-grpo-dim_with_textlm)
-- [HuggingFace – modelo relacionado: shemalfoy/qwen2-vl-scicap-grpo](https://huggingface.co/shemalfoy/qwen2-vl-scicap-grpo)
-- [HuggingFace – modelo relacionado: shemalfoy/qwen2-vl-scicap-merged_dim](https://huggingface.co/shemalfoy/qwen2-vl-scicap-merged_dim)
+- [Hugging Face: shemalfoy/qwen2-vl-scicap-grpo-dim_with_textlm](https://huggingface.co/shemalfoy/qwen2-vl-scicap-grpo-dim_with_textlm)
+- [Hugging Face – modelo relacionado: shemalfoy/qwen2-vl-scicap-grpo](https://huggingface.co/shemalfoy/qwen2-vl-scicap-grpo)
+- [Hugging Face – modelo relacionado: shemalfoy/qwen2-vl-scicap-merged_dim](https://huggingface.co/shemalfoy/qwen2-vl-scicap-merged_dim)
 - [GitHub oficial Qwen-VL](https://github.com/QwenLM/Qwen-VL)

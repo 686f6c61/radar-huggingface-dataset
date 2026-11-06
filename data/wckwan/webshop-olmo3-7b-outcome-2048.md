@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Webshop-Olmo3-7B-Outcome-2048 es un ajuste por aprendizaje por refuerzo del modelo allenai/Olmo-3-7B-Instruct, publicado por el usuario wckwan en HuggingFace. No es un modelo de propósito general: es una política entrenada específicamente para actuar como agente de búsqueda multi-turno al estilo Search-R1, es decir, un modelo que alterna entre emitir consultas a una herramienta de búsqueda (o navegación web) y generar respuestas basadas en los resultados recuperados.
+Webshop-Olmo3-7B-Outcome-2048 es un ajuste por aprendizaje por refuerzo del modelo allenai/Olmo-3-7B-Instruct, publicado por el usuario wckwan en Hugging Face. No es un modelo de propósito general: es una política entrenada específicamente para actuar como agente de búsqueda multi-turno al estilo Search-R1, es decir, un modelo que alterna entre emitir consultas a una herramienta de búsqueda (o navegación web) y generar respuestas basadas en los resultados recuperados.
 
 El entrenamiento emplea una variante denominada Process-GRPO: se parte de GRPO (Group Relative Policy Optimization) y se añade un modelo de recompensa de proceso (un verificador basado en Olmo-3-7B-Think) que puntúa cada turno de la trayectoria, con normalización de ventajas por posición de turno dentro de cada grupo. Los prompts del verificador incluyen las respuestas de la herramienta recuperada y la respuesta de referencia (gold answer), de modo que la señal de recompensa evalúa la calidad del razonamiento intermedio y no solo el resultado final.
 
@@ -95,7 +95,7 @@ La comparacion cuantitativa no es posible con la informacion disponible: no hay 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wckwan/Webshop-Olmo3-7B-Outcome-2048
+- Modelo en Hugging Face: https://huggingface.co/wckwan/Webshop-Olmo3-7B-Outcome-2048
 - Modelo base: https://huggingface.co/allenai/Olmo-3-7B-Instruct
 - Paper de GRPO (referencia metodologica): no disponible en la informacion proporcionada
 - Repositorio de Search-R1: no disponible en la informacion proporcionada

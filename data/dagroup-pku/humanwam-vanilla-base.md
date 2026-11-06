@@ -75,7 +75,7 @@ No disponible. La información proporcionada no incluye modelos comparables ni d
 
 ## Enlaces
 
-- [HuggingFace: DAGroup-PKU/HumanWAM-Vanilla-Base](https://huggingface.co/DAGroup-PKU/HumanWAM-Vanilla-Base)
+- [Hugging Face: DAGroup-PKU/HumanWAM-Vanilla-Base](https://huggingface.co/DAGroup-PKU/HumanWAM-Vanilla-Base)
 - [Código y documentación del proyecto](https://github.com/ucasmjc/OpenHumanScale)
 - [Dataset Open-HumanScale-50K](https://huggingface.co/datasets/DAGroup-PKU/Open-HumanScale-50K)
 - [HumanWAM-Vanilla-RoboTwin](https://huggingface.co/DAGroup-PKU/HumanWAM-Vanilla-RoboTwin)

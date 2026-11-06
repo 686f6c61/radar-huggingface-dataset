@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo YassYBS26Sol3, publicado por el usuario YassY-The-AlchemYst en HuggingFace, se presenta como parte de una submission para el concurso BatterySwapAI 2026. La model card incluida es extremadamente escueta: únicamente indica que el repositorio contiene el código y los modelos entrenados a partir de un directorio llamado `Code/Sol3_Transformer`, sin aportar ninguna otra especificación técnica, documentación o enlace a paper o demo.
+El modelo YassYBS26Sol3, publicado por el usuario YassY-The-AlchemYst en Hugging Face, se presenta como parte de una submission para el concurso BatterySwapAI 2026. La model card incluida es extremadamente escueta: únicamente indica que el repositorio contiene el código y los modelos entrenados a partir de un directorio llamado `Code/Sol3_Transformer`, sin aportar ninguna otra especificación técnica, documentación o enlace a paper o demo.
 
 En el momento de la consulta, el repositorio tiene un tamaño de 0.0 GB, lo que indica que no contiene pesos, código ni ningún archivo relevante. No se dispone de información sobre arquitectura, número de parámetros, contexto, idiomas o capacidades. Aunque el nombre sugiere una posible relación con un transformer denominado "Sol3", no existe evidencia pública que permita caracterizar el modelo. Por tanto, esta ficha se limita a reflejar la ausencia de datos verificables y advierte de que el modelo no es utilizable en su estado actual.
 
@@ -53,5 +53,5 @@ No disponible. No existe informacion suficiente para establecer comparaciones co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/YassY-The-AlchemYst/YassYBS26Sol3
+- Repositorio en Hugging Face: https://huggingface.co/YassY-The-AlchemYst/YassYBS26Sol3
 - No se han encontrado papers, blogs, demos ni otros enlaces relacionados con este modelo.

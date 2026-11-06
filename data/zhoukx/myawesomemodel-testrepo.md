@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje presentado por el usuario zhoukx en HuggingFace bajo licencia MIT. Según su model card, ha experimentado una actualización significativa que mejora su profundidad de razonamiento e inferencia mediante un aumento de recursos computacionales y la introducción de mecanismos de optimización algorítmica durante el post-entrenamiento. El modelo declara un rendimiento destacado en matemáticas, programación y lógica general, con una precisión del 87,5% en el test AIME 2025, frente al 70% de la versión anterior.
+MyAwesomeModel es un modelo de lenguaje presentado por el usuario zhoukx en Hugging Face bajo licencia MIT. Según su model card, ha experimentado una actualización significativa que mejora su profundidad de razonamiento e inferencia mediante un aumento de recursos computacionales y la introducción de mecanismos de optimización algorítmica durante el post-entrenamiento. El modelo declara un rendimiento destacado en matemáticas, programación y lógica general, con una precisión del 87,5% en el test AIME 2025, frente al 70% de la versión anterior.
 
 La model card indica que el modelo soporta system prompts, llamadas a funciones, subida de archivos y búsqueda web con citas. Se recomienda una temperatura de 0,6 y no es necesario añadir tokens especiales para activar el patrón de pensamiento. También se menciona una variante denominada MyAwesomeModel-Small, con la misma arquitectura que el modelo base.
 
@@ -25,7 +25,7 @@ El repositorio, sin embargo, se encuentra vacío (0,0 GB), no registra descargas
 
 La información disponible no especifica la arquitectura del modelo. La model card afirma que el modelo ha sido sometido a una optimización algorítmica durante el post-entrenamiento, pero no detalla la naturaleza de la misma, ni si se emplearon técnicas como RLHF, DPO, SFT u otras. Tampoco se proporcionan datos sobre el conjunto de entrenamiento: número de tokens, composición del dataset o idiomas.
 
-Se indica que el modelo actual tiene una mayor profundidad de pensamiento. En el conjunto de pruebas AIME, la versión anterior utilizaba una media de 12.000 tokens por pregunta, mientras que la nueva versión promedia 23.000 tokens por pregunta. Este dato sugiere que el modelo emplea una fase de razonamiento extendido, pero no se detalla el mecanismo técnico subyacente. La etiqueta `bert` y el pipeline `feature-extraction` de HuggingFace resultan inconsistentes con las afirmaciones de la model card sobre generación de código, function calling y razonamiento profundo.
+Se indica que el modelo actual tiene una mayor profundidad de pensamiento. En el conjunto de pruebas AIME, la versión anterior utilizaba una media de 12.000 tokens por pregunta, mientras que la nueva versión promedia 23.000 tokens por pregunta. Este dato sugiere que el modelo emplea una fase de razonamiento extendido, pero no se detalla el mecanismo técnico subyacente. La etiqueta `bert` y el pipeline `feature-extraction` de Hugging Face resultan inconsistentes con las afirmaciones de la model card sobre generación de código, function calling y razonamiento profundo.
 
 ## Capacidades
 
@@ -102,10 +102,10 @@ La única comparativa disponible es la proporcionada por la model card, que comp
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace está vacío (0,0 GB). No contiene pesos del modelo, por lo que no es posible descargarlo ni ejecutarlo.
+- El repositorio de Hugging Face está vacío (0,0 GB). No contiene pesos del modelo, por lo que no es posible descargarlo ni ejecutarlo.
 - La fecha de creación del repositorio (2026-09-06) es futura, lo que sugiere que se trata de un repositorio de prueba o sintético.
 - No registra descargas ni likes (0 y 0 respectivamente), lo que indica que no ha sido utilizado ni validado por la comunidad.
-- Las etiquetas de HuggingFace indican `bert` y `feature-extraction`, mientras que la model card describe un modelo de lenguaje de gran escala con razonamiento profundo, generación de código y function calling. Esta inconsistencia sugiere que los metadatos pueden ser incorrectos o genéricos.
+- Las etiquetas de Hugging Face indican `bert` y `feature-extraction`, mientras que la model card describe un modelo de lenguaje de gran escala con razonamiento profundo, generación de código y function calling. Esta inconsistencia sugiere que los metadatos pueden ser incorrectos o genéricos.
 - Los benchmarks presentados en la model card no cuentan con verificación independiente. Los modelos de comparación (Model1, Model2, Model1-v2) no están identificados, lo que impide validar los resultados.
 - La model card afirma que se ha reducido la tasa de alucinación, pero no se proporciona evidencia metodológica que respalde esta afirmación.
 - No se especifican los idiomas soportados, lo que limita cualquier evaluación de capacidades multilingües.
@@ -114,7 +114,7 @@ La única comparativa disponible es la proporcionada por la model card, que comp
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/zhoukx/MyAwesomeModel-TestRepo
+- Repositorio de Hugging Face: https://huggingface.co/zhoukx/MyAwesomeModel-TestRepo
 - Repositorios similares detectados en la búsqueda web (sin relación verificable con el modelo principal):
   - https://huggingface.co/ROY2333121/MyAwesomeModel-TestRepo
   - https://huggingface.co/XingZhou666/MyAwesomeModel-TestRepo

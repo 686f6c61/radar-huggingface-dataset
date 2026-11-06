@@ -4,7 +4,7 @@
 
 ## Resumen
 
-Ahorts/output es un modelo alojado en HuggingFace por el usuario Ahorts y generado de forma automática mediante la clase Trainer de la libreria transformers, segun indica la etiqueta `generated_from_trainer` y la propia plantilla de la model card. Cuenta con 3.836.449 parametros (aproximadamente 3,84 millones) almacenados en formato safetensors, lo que lo situa en la categoria de modelos diminutos, muy lejos de los ordenes de magnitud de los modelos de lenguaje habituales.
+Ahorts/output es un modelo alojado en Hugging Face por el usuario Ahorts y generado de forma automática mediante la clase Trainer de la libreria transformers, segun indica la etiqueta `generated_from_trainer` y la propia plantilla de la model card. Cuenta con 3.836.449 parametros (aproximadamente 3,84 millones) almacenados en formato safetensors, lo que lo situa en la categoria de modelos diminutos, muy lejos de los ordenes de magnitud de los modelos de lenguaje habituales.
 
 La documentacion publicada no aporta informacion sobre la arquitectura, el dataset de entrenamiento, la tarea objetivo, los idiomas soportados ni la licencia. La unica etiqueta tecnica especifica es `amfu-net`, que apunta a un diseno de red propio, pero no existe ninguna descripcion asociada ni en la ficha ni en los resultados de busqueda consultados. El repositorio registra 0 descargas y 0 likes, y su model-index declara una lista de resultados de evaluacion vacia.
 
@@ -24,8 +24,8 @@ En el momento de redactar esta ficha, el artefacto solo puede describirse como u
 | Formato de pesos | safetensors (libreria declarada: transformers) |
 | Tarea declarada (pipeline) | no disponible |
 | Framework de entrenamiento | transformers 5.19.0, PyTorch 2.11.0+cu130, Datasets 5.0.0, Tokenizers 0.23.2 |
-| Tamano del repositorio | 0,0 GB (segun metadatos de HuggingFace) |
-| Fecha de publicacion | 7 de octubre de 2026 (segun metadatos de HuggingFace) |
+| Tamano del repositorio | 0,0 GB (segun metadatos de Hugging Face) |
+| Fecha de publicacion | 7 de octubre de 2026 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -81,7 +81,7 @@ No disponible. No es posible establecer una comparativa rigurosa porque se desco
 ## Limitaciones y advertencias
 
 - Ausencia total de documentacion: la model card conserva los textos de plantilla ("More information needed") y no describe usos previstos, datos de entrenamiento ni limitaciones.
-- Licencia no declarada: al no figurar licencia en el repositorio, no puede asumirse permiso para uso comercial; en ausencia de licencia explicita deben aplicarse las condiciones por defecto de HuggingFace y del autor.
+- Licencia no declarada: al no figurar licencia en el repositorio, no puede asumirse permiso para uso comercial; en ausencia de licencia explicita deben aplicarse las condiciones por defecto de Hugging Face y del autor.
 - Riesgo de alucinacion: no evaluable, porque se desconoce si el modelo genera texto libre o produce etiquetas.
 - Sesgos: no pueden analizarse sin conocer la composicion del dataset de entrenamiento, que no se documenta.
 - Sobreajuste probable: 200 epocas con una tasa de aprendizaje de 0.001 y un dataset de tamano desconocido es una configuracion propensa al sobreajuste.
@@ -93,6 +93,6 @@ No disponible. No es posible establecer una comparativa rigurosa porque se desco
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ahorts/output
+- Modelo en Hugging Face: https://huggingface.co/Ahorts/output
 - La busqueda web realizada no devolvio ningun resultado especifico sobre Ahorts/output: los enlaces recuperados corresponden a leaderboards genericos de modelos y a documentacion de proveedores (OpenAI, Azure, AWS) sin relacion con este artefacto, por lo que se omiten.
 - No se han encontrado paper, repositorio de codigo, demo ni publicacion de blog asociados al modelo o a la etiqueta `amfu-net`.

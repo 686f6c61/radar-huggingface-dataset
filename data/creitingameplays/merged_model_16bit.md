@@ -67,6 +67,6 @@ No se dispone de informacion suficiente para una comparativa rigurosa con otros 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CreitinGameplays/merged_model_16bit
+- Modelo en Hugging Face: https://huggingface.co/CreitinGameplays/merged_model_16bit
 - Dataset de entrenamiento: https://huggingface.co/datasets/TeichAI/Fable-5-Cursor-Traces
 - Modelo base (Unsloth): https://huggingface.co/unsloth/GLM-4.7-Flash

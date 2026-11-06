@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks adicionales (HumanEval, GSM8K, etc.
 
 | Modelo | Parametros | Contexto | Rechazos | Licencia | Disponibilidad |
 | :----- | :--------- | :------- | :------- | :------- | :------------- |
-| Qwen3.8-27B (original) | 27 320 M | 262 K | 91/100 | Apache-2.0 | HuggingFace |
-| llmfan46/Qwen3.8-27B-Ultra-Uncensored-Heretic | 27 320 M | 262 K | 3/100 | Apache-2.0 | HuggingFace (GGUF y safetensors) |
-| Llama-3-8B-Instruct-UltraUncensored (ejemplo) | 8 000 M | 128 K | ~5/100 | Apache-2.0 | HuggingFace |
+| Qwen3.8-27B (original) | 27 320 M | 262 K | 91/100 | Apache-2.0 | Hugging Face |
+| llmfan46/Qwen3.8-27B-Ultra-Uncensored-Heretic | 27 320 M | 262 K | 3/100 | Apache-2.0 | Hugging Face (GGUF y safetensors) |
+| Llama-3-8B-Instruct-UltraUncensored (ejemplo) | 8 000 M | 128 K | ~5/100 | Apache-2.0 | Hugging Face |
 
 La comparativa con Llama-3-8B es orientativa; no se han encontrado datos concretos de ese modelo en la informacion proporcionada. El modelo heretic ofrece el mismo tamano y contexto que el original, pero con una tasa de rechazo mucho menor, a costa de una divergencia KL minima.
 
@@ -86,7 +86,7 @@ La comparativa con Llama-3-8B es orientativa; no se han encontrado datos concret
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/llmfan46/Qwen3.8-27B-Ultra-Uncensored-Heretic-Native-MTP-Preserved-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/llmfan46/Qwen3.8-27B-Ultra-Uncensored-Heretic-Native-MTP-Preserved-GGUF
 - Modelo base (safetensors): https://huggingface.co/llmfan46/Qwen3.8-27B-Ultra-Uncensored-Heretic-Native-MTP-Preserved
 - Modelo original de Alibaba: https://huggingface.co/Qwen/Qwen3.8-27B
 - Blog de orcarouter sobre el GGUF abliterado: https://www.orcarouter.ai/blog/qwen-3-8-27b-uncensored-gguf

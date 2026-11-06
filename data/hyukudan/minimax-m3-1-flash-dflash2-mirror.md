@@ -12,7 +12,7 @@ La relevancia de esta ficha es practica: documenta un artefacto de infraestructu
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (tag `qwen3` en HuggingFace); modelo borrador para decodificacion especulativa |
+| Arquitectura | Transformer (tag `qwen3` en Hugging Face); modelo borrador para decodificacion especulativa |
 | Parametros totales | 2.123.883.776 (2,1 mil millones) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
@@ -23,7 +23,7 @@ La relevancia de esta ficha es practica: documenta un artefacto de infraestructu
 
 ## Arquitectura y entrenamiento
 
-El artefacto es un modelo borrador para decodificacion especulativa asociado a MiniMax-M3.1-Flash. La model card no describe la arquitectura interna mas alla de las etiquetas de HuggingFace, que incluyen `qwen3`, lo que sugiere una arquitectura de tipo transformer con las convenciones de Qwen3, aunque no se detalla la configuracion de capas, atencion ni cabezas. El `config.json` esta incluido en el repositorio (1.252 bytes) y es la fuente fiable para esos detalles, pero su contenido no se reproduce en la informacion disponible.
+El artefacto es un modelo borrador para decodificacion especulativa asociado a MiniMax-M3.1-Flash. La model card no describe la arquitectura interna mas alla de las etiquetas de Hugging Face, que incluyen `qwen3`, lo que sugiere una arquitectura de tipo transformer con las convenciones de Qwen3, aunque no se detalla la configuracion de capas, atencion ni cabezas. El `config.json` esta incluido en el repositorio (1.252 bytes) y es la fuente fiable para esos detalles, pero su contenido no se reproduce en la informacion disponible.
 
 No se proporcionan datos sobre el corpus de entrenamiento, el numero de tokens, la composicion del dataset ni si hubo etapas de RLHF o DPO. Tampoco se documentan innovaciones tecnicas del borrador mas alla de su proposito: servir como drafter en un esquema de decodificacion especulativa, donde propone secuencias candidatas que el modelo objetivo valida. El mirror no modifica los pesos ni los recuantiza: las mejoras del autor del mirror viven en el motor de inferencia (kernels, planificacion, decodificacion especulativa), no en el modelo.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rol | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniMax-M3.1-Flash-DFlash2-mirror (este) | 2,1 mil millones | no disponible | Borrador para decodificacion especulativa | Apache-2.0 | HuggingFace (mirror) |
-| incoai/MiniMax-M3.1-Flash-DFlash2 (upstream) | 2,1 mil millones | no disponible | Borrador para decodificacion especulativa | Apache-2.0 | HuggingFace (original) |
-| MiniMaxAI/MiniMax-M3.1-Flash | no disponible | no disponible | Modelo objetivo | MiniMax Community License | HuggingFace |
+| MiniMax-M3.1-Flash-DFlash2-mirror (este) | 2,1 mil millones | no disponible | Borrador para decodificacion especulativa | Apache-2.0 | Hugging Face (mirror) |
+| incoai/MiniMax-M3.1-Flash-DFlash2 (upstream) | 2,1 mil millones | no disponible | Borrador para decodificacion especulativa | Apache-2.0 | Hugging Face (original) |
+| MiniMaxAI/MiniMax-M3.1-Flash | no disponible | no disponible | Modelo objetivo | MiniMax Community License | Hugging Face |
 
 No se dispone de datos de rendimiento ni de otros borradores comparables en la informacion proporcionada.
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento ni de otros borradores comparables en la i
 
 ## Enlaces
 
-- Mirror en HuggingFace: https://huggingface.co/hyukudan/MiniMax-M3.1-Flash-DFlash2-mirror
+- Mirror en Hugging Face: https://huggingface.co/hyukudan/MiniMax-M3.1-Flash-DFlash2-mirror
 - Repositorio upstream del borrador: https://huggingface.co/incoai/MiniMax-M3.1-Flash-DFlash2
 - Revision upstream fijada: https://huggingface.co/incoai/MiniMax-M3.1-Flash-DFlash2/tree/ac07a7c1ecaae26a7ace595756124dca974b432d
 - Modelo objetivo: https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash

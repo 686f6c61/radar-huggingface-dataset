@@ -82,6 +82,6 @@ No hay comparativa directa disponible, ya que este repositorio no es un modelo s
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dlab-cmu/sf-map-Qwen__Qwen3.6-35B-A3B
+- Repositorio Hugging Face: https://huggingface.co/dlab-cmu/sf-map-Qwen__Qwen3.6-35B-A3B
 - Árbol de archivos: https://huggingface.co/dlab-cmu/sf-map-Qwen__Qwen3.6-35B-A3B/tree/main
 - Guía de Qwen 3.6 (contexto del modelo subyacente): https://insiderllm.com/guides/qwen-3-6-local-ai-guide/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `owaiskhan786/qwen2.5-coder-0.5b-mbpp-lora` es un adaptador LoRA (Low-Rank Adaptation) entrenado sobre el modelo base `Qwen/Qwen2.5-Coder-0.5B-Instruct`, desarrollado por el usuario de HuggingFace owaiskhan786. Se trata de un experimento academico de laboratorio universitario cuyo objetivo es mejorar el rendimiento del modelo base en la resolucion de problemas de programacion del benchmark MBPP (Mostly Basic Python Problems) mediante ajuste fino supervisado.
+El modelo `owaiskhan786/qwen2.5-coder-0.5b-mbpp-lora` es un adaptador LoRA (Low-Rank Adaptation) entrenado sobre el modelo base `Qwen/Qwen2.5-Coder-0.5B-Instruct`, desarrollado por el usuario de Hugging Face owaiskhan786. Se trata de un experimento academico de laboratorio universitario cuyo objetivo es mejorar el rendimiento del modelo base en la resolucion de problemas de programacion del benchmark MBPP (Mostly Basic Python Problems) mediante ajuste fino supervisado.
 
 El adaptador se entrena durante 3 epocas sobre los 374 problemas del split de entrenamiento de MBPP, con rango LoRA r=16, alpha=32 y learning rate 2e-4. El modelo base sobre el que se aplica es un transformer decoder-only de 0,5 mil millones de parametros especializado en codigo, perteneciente a la familia Qwen2.5-Coder de Alibaba. El adaptador en si anade un numero reducido de parametros entrenables sobre las capas del modelo base, manteniendo el resto congelado.
 
@@ -67,8 +67,8 @@ El propio autor advierte que el conjunto de entrenamiento y el subconjunto de te
 
 | Modelo | Parametros | Contexto | pass@1 MBPP (50 problemas) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (LoRA sobre Qwen2.5-Coder-0.5B-Instruct) | 0,5B (base) + LoRA | no disponible | 50,0% | no disponible | HuggingFace (0 descargas) |
-| Qwen2.5-Coder-0.5B-Instruct (base) | 0,5B | no disponible | 36,0% | no disponible | HuggingFace |
+| Este adaptador (LoRA sobre Qwen2.5-Coder-0.5B-Instruct) | 0,5B (base) + LoRA | no disponible | 50,0% | no disponible | Hugging Face (0 descargas) |
+| Qwen2.5-Coder-0.5B-Instruct (base) | 0,5B | no disponible | 36,0% | no disponible | Hugging Face |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks de otros adaptadores o modelos comparables en la informacion proporcionada, por lo que la comparativa se limita al modelo base.
@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks de otros adaptadores o modelos comparables 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/owaiskhan786/qwen2.5-coder-0.5b-mbpp-lora
+- Hugging Face: https://huggingface.co/owaiskhan786/qwen2.5-coder-0.5b-mbpp-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B-Instruct
 - Dataset MBPP: https://huggingface.co/datasets/google-research-datasets/mbpp
 - Libreria PEFT: https://github.com/huggingface/peft

@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `polydim-cla/gemma-2-9b-pmtp` | 9.240 M (base) + adaptador de 0,2 GB | No especificado (base: 8.192 tokens) | Apache 2.0 declarada | HuggingFace, 0 descargas, 0 likes | Adaptador de investigación sin benchmarks ni validación por pares |
-| `google/gemma-2-9b` | 9.240 M | 8.192 tokens | Gemma Terms of Use | HuggingFace, ampliamente usado | Modelo base; sí dispone de benchmarks publicados por Google |
-| `meta-llama/Llama-3.1-8B` | 8.030 M | 128.000 tokens | Llama 3.1 Community License | HuggingFace | Contexto mucho mayor y ecosistema de herramientas maduro |
-| `Qwen/Qwen2.5-7B` | 7.610 M | 32.768 tokens nativos (131.072 con YaRN) | Apache 2.0 | HuggingFace | Licencia permisiva y soporte multilingüe documentado |
+| `polydim-cla/gemma-2-9b-pmtp` | 9.240 M (base) + adaptador de 0,2 GB | No especificado (base: 8.192 tokens) | Apache 2.0 declarada | Hugging Face, 0 descargas, 0 likes | Adaptador de investigación sin benchmarks ni validación por pares |
+| `google/gemma-2-9b` | 9.240 M | 8.192 tokens | Gemma Terms of Use | Hugging Face, ampliamente usado | Modelo base; sí dispone de benchmarks publicados por Google |
+| `meta-llama/Llama-3.1-8B` | 8.030 M | 128.000 tokens | Llama 3.1 Community License | Hugging Face | Contexto mucho mayor y ecosistema de herramientas maduro |
+| `Qwen/Qwen2.5-7B` | 7.610 M | 32.768 tokens nativos (131.072 con YaRN) | Apache 2.0 | Hugging Face | Licencia permisiva y soporte multilingüe documentado |
 
 La comparación relevante es contra el propio modelo base: el adaptador no publica métricas que justifiquen su uso frente a Gemma 2 9B sin modificar. Frente a Llama 3.1 8B y Qwen2.5 7B, la diferencia principal no es de rendimiento (no hay datos) sino de madurez, documentación y soporte de herramientas.
 
@@ -89,7 +89,7 @@ La comparación relevante es contra el propio modelo base: el adaptador no publi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/polydim-cla/gemma-2-9b-pmtp
+- Modelo en Hugging Face: https://huggingface.co/polydim-cla/gemma-2-9b-pmtp
 - Repositorio del autor (POLYDIM-EINSOF): https://github.com/AGT1973/POLYDIM_EINSOF
 - Modelo base: https://huggingface.co/google/gemma-2-9b
 - Etiqueta de Ollama del modelo base: https://ollama.com/library/gemma2

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Fukoooo/gemma-3-27b-it-seft es una variante del modelo google/gemma-3-27b-it publicada por el usuario Fukoooo en HuggingFace. No se trata de un ajuste fino convencional, sino de una derivacion del modelo YanLabs/gemma-3-27b-it-abliterated-normpreserve, al que se le ha aplicado un grado menor de "abliteracion" con el objetivo declarado de conservar mejor las capacidades originales de Gemma 3 27B Instruct. El modelo es, por tanto, un transformer causal denso de 27.432.406.640 parametros, distribuido en safetensors y con un tamano de repositorio de 54,9 GB.
+Fukoooo/gemma-3-27b-it-seft es una variante del modelo google/gemma-3-27b-it publicada por el usuario Fukoooo en Hugging Face. No se trata de un ajuste fino convencional, sino de una derivacion del modelo YanLabs/gemma-3-27b-it-abliterated-normpreserve, al que se le ha aplicado un grado menor de "abliteracion" con el objetivo declarado de conservar mejor las capacidades originales de Gemma 3 27B Instruct. El modelo es, por tanto, un transformer causal denso de 27.432.406.640 parametros, distribuido en safetensors y con un tamano de repositorio de 54,9 GB.
 
 La relevancia de esta ficha reside en su naturaleza experimental: la abliteracion es una tecnica de interpretabilidad mecanistica que elimina quirurgicamente las "direcciones de rechazo" en el espacio de activaciones del modelo, sin recurrir a fine-tuning. El autor advierte explicitamente de que los guardarrailes de seguridad han sido eliminados y de que el modelo esta pensado unicamente para investigacion en interpretabilidad mecanistica, quedando fuera de alcance los despliegues en produccion y cualquier aplicacion de cara al usuario.
 
@@ -18,12 +18,12 @@ Se trata ademas de una publicacion con muy poca traccion en la plataforma (0 des
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | Se mencionan F16 y Q8_0; el autor recomienda exclusivamente Q8_0 (por debajo de Q8_0 persisten los rechazos) |
 | Idiomas soportados | No disponible |
-| Licencia | Gemma Terms of Use (etiqueta "gemma" en HuggingFace) |
+| Licencia | Gemma Terms of Use (etiqueta "gemma" en Hugging Face) |
 | Formato de pesos | safetensors (repo principal); el autor referencia cuantizaciones tipo GGUF (F16, Q8_0) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de google/gemma-3-27b-it, un transformer causal denso, y hereda su arquitectura sin modificaciones estructurales. Lo que cambia no es el grafo de la red ni el dataset de entrenamiento, sino los pesos: se aplica la tecnica de "abliterated norm-preserving biprojected" descrita por el autor en el blog de HuggingFace enlazado en la model card, implementada con la herramienta jim-plus/llm-abliteration. Esta tecnica identifica direcciones de activacion asociadas al comportamiento de rechazo y las proyecta fuera de la matriz de pesos (biprojeccion), preservando la norma de los pesos para minimizar el dano colateral en las capacidades del modelo. No hay, por tanto, un pipeline de RLHF, DPO ni SFT adicional descrito en la informacion disponible.
+El modelo parte de google/gemma-3-27b-it, un transformer causal denso, y hereda su arquitectura sin modificaciones estructurales. Lo que cambia no es el grafo de la red ni el dataset de entrenamiento, sino los pesos: se aplica la tecnica de "abliterated norm-preserving biprojected" descrita por el autor en el blog de Hugging Face enlazado en la model card, implementada con la herramienta jim-plus/llm-abliteration. Esta tecnica identifica direcciones de activacion asociadas al comportamiento de rechazo y las proyecta fuera de la matriz de pesos (biprojeccion), preservando la norma de los pesos para minimizar el dano colateral en las capacidades del modelo. No hay, por tanto, un pipeline de RLHF, DPO ni SFT adicional descrito en la informacion disponible.
 
 Respecto al proceso de entrenamiento original de Gemma 3 27B (numero de tokens, composicion del dataset, fases de alineacion), la informacion proporcionada no lo detalla: se remite implicitamente al modelo base de Google. La innovacion diferencial de esta publicacion es doble: por un lado, el uso de la variante norm-preserving de la abliteracion; por otro, el ajuste del grado de abliteracion para que sea "menos agresivo" que en YanLabs/gemma-3-27b-it-abliterated-normpreserve, con el fin de conservar capacidades. El propio autor reconoce que ese equilibrio es sensible a la cuantizacion: con Q8_0 y F16 el modelo deja de rechazar, mientras que en cuantizaciones inferiores los rechazos reaparecen.
 
@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Abliterado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Fukoooo/gemma-3-27b-it-seft | 27.432.406.640 | No disponible | Si, grado reducido | Gemma Terms of Use | HuggingFace (0 descargas, 0 likes) |
-| YanLabs/gemma-3-27b-it-abliterated-normpreserve | No disponible | No disponible | Si, grado mayor | Gemma Terms of Use | HuggingFace |
-| google/gemma-3-27b-it | No disponible en esta busqueda | No disponible | No | Gemma Terms of Use | HuggingFace (modelo base oficial) |
+| Fukoooo/gemma-3-27b-it-seft | 27.432.406.640 | No disponible | Si, grado reducido | Gemma Terms of Use | Hugging Face (0 descargas, 0 likes) |
+| YanLabs/gemma-3-27b-it-abliterated-normpreserve | No disponible | No disponible | Si, grado mayor | Gemma Terms of Use | Hugging Face |
+| google/gemma-3-27b-it | No disponible en esta busqueda | No disponible | No | Gemma Terms of Use | Hugging Face (modelo base oficial) |
 
 La diferencia principal entre los tres es el grado de intervencion sobre las direcciones de rechazo: el modelo base conserva los guardarrailes, la variante de YanLabs los elimina de forma mas agresiva y esta publicacion busca un punto intermedio. No hay datos de rendimiento publicados para ninguno de ellos en la informacion disponible, por lo que la comparacion cuantitativa queda pendiente.
 
@@ -86,11 +86,11 @@ La diferencia principal entre los tres es el grado de intervencion sobre las dir
 - Licencia: Gemma Terms of Use, con las restricciones de uso comercial y de redistribucion que impone Google. Es imprescindible revisarlas antes de cualquier uso, incluso de investigacion comercial.
 - Documentacion incompleta: no hay datos de contexto, idiomas, benchmarks, tool calling ni latencia.
 - Traccion nula: 0 descargas y 0 likes en el momento de la consulta, sin validacion independiente por parte de la comunidad.
-- Fecha de creacion atipica: la ficha del repositorio indica 2026-09-24, dato que conviene verificar directamente en HuggingFace.
+- Fecha de creacion atipica: la ficha del repositorio indica 2026-09-24, dato que conviene verificar directamente en Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Fukoooo/gemma-3-27b-it-seft
+- Modelo en Hugging Face: https://huggingface.co/Fukoooo/gemma-3-27b-it-seft
 - Modelo base: https://huggingface.co/google/gemma-3-27b-it
 - Modelo del que deriva: https://huggingface.co/YanLabs/gemma-3-27b-it-abliterated-normpreserve
 - Modelo referenciado en la cita: https://huggingface.co/YanLabs/gemma-3-27b-it-abliterated-normpreserve-v1

@@ -107,7 +107,7 @@ No se dispone en la informacion proporcionada de datos de otros modelos comparab
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/emonHasan01/bangla-gemma-pro
+- Modelo en Hugging Face: https://huggingface.co/emonHasan01/bangla-gemma-pro
 - Modelo base: https://huggingface.co/google/gemma-3-1b-it
 - Dataset de entrenamiento: https://huggingface.co/datasets/md-nishat-008/Bangla-Instruct
 - Benchmark citado (bangla-mmlu): https://huggingface.co/datasets/hishab/bangla-mmlu

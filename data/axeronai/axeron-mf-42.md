@@ -6,7 +6,7 @@ axeron-mf-42 es un ajuste fino mediante LoRA (método declarado `finetune_lora`)
 
 El interés de esta ficha no está en el rendimiento del modelo, sino en su función como artefacto de validación de una herramienta de ajuste fino. La model card indica únicamente 25 pasos de entrenamiento y una pérdida final de 2,7721, sin especificar dataset, hiperparámetros de LoRA (rango, alpha, tasa de aprendizaje) ni evaluación posterior. Se desconoce la licencia, los idiomas soportados y el `pipeline_tag`; en el momento de redactar esta ficha el repositorio acumula 0 descargas y 0 likes.
 
-La búsqueda web realizada no ha devuelto ninguna fuente relevante sobre el modelo, su autor o la herramienta ModelForge: los resultados obtenidos tratan de tablas comparativas de tarjetas gráficas y de incidencias con cuentas de Instagram. Por tanto, toda la información técnica verificable procede de los metadatos de HuggingFace y de la model card, complementada con las características conocidas del modelo base, que se señalan explícitamente como heredadas y no verificadas.
+La búsqueda web realizada no ha devuelto ninguna fuente relevante sobre el modelo, su autor o la herramienta ModelForge: los resultados obtenidos tratan de tablas comparativas de tarjetas gráficas y de incidencias con cuentas de Instagram. Por tanto, toda la información técnica verificable procede de los metadatos de Hugging Face y de la model card, complementada con las características conocidas del modelo base, que se señalan explícitamente como heredadas y no verificadas.
 
 ## Especificaciones técnicas
 
@@ -110,7 +110,7 @@ Los datos de los tres modelos de referencia proceden del conocimiento general so
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/AxeronAI/axeron-mf-42
+- Ficha del modelo en Hugging Face: https://huggingface.co/AxeronAI/axeron-mf-42
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3
 - Artículo técnico del modelo base (Mistral 7B): https://arxiv.org/abs/2310.06825
 - Resultados de la búsqueda web: no se ha encontrado ninguna fuente relevante sobre el modelo, el autor o la herramienta Axeron ModelForge; los resultados obtenidos no guardan relación con el objeto de esta ficha.

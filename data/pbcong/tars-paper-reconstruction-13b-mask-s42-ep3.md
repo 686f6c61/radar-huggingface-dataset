@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| pbcong/tars-paper-reconstruction-13b-mask-s42-ep3 | 13,35 B | no disponible | no disponible | HuggingFace (0 descargas) |
-| liuhaotian/llava-v1.5-13b (modelo base) | ~13 B | 4096 tokens | no disponible en esta ficha | HuggingFace (modelo de referencia ampliamente usado) |
-| Otros derivados LLaVA-1.5-13B | ~13 B | 4096 tokens | variable segun autor | HuggingFace |
+| pbcong/tars-paper-reconstruction-13b-mask-s42-ep3 | 13,35 B | no disponible | no disponible | Hugging Face (0 descargas) |
+| liuhaotian/llava-v1.5-13b (modelo base) | ~13 B | 4096 tokens | no disponible en esta ficha | Hugging Face (modelo de referencia ampliamente usado) |
+| Otros derivados LLaVA-1.5-13B | ~13 B | 4096 tokens | variable segun autor | Hugging Face |
 
 No se dispone de datos de rendimiento del modelo propuesto, por lo que no es posible una comparacion cuantitativa. La comparativa se limita a parametros, contexto y disponibilidad, y se marca el resto como no disponible.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento del modelo propuesto, por lo que no es pos
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pbcong/tars-paper-reconstruction-13b-mask-s42-ep3
+- Hugging Face: https://huggingface.co/pbcong/tars-paper-reconstruction-13b-mask-s42-ep3
 - Modelo base: https://huggingface.co/liuhaotian/llava-v1.5-13b
 - Paper "Paper Reconstruction Evaluation" (arXiv): https://arxiv.org/abs/2604.01128
 - PDF del paper: https://arxiv.org/pdf/2604.01128

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MobileNet-v2 es un modelo de clasificacion de imagenes publicado por Qualcomm en HuggingFace, distribuido como parte del catalogo Qualcomm AI Hub Models. No se trata de un modelo entrenado desde cero por Qualcomm, sino de una reexportacion optimizada de la implementacion de MobileNetV2 disponible en el repositorio `tonylins/pytorch-mobilenet-v2`, con pesos preentrenados en ImageNet (1000 clases). Su proposito es servir tanto como clasificador de imagenes listo para produccion como backbone para tareas de vision mas complejas (deteccion, segmentacion, extraccion de caracteristicas).
+MobileNet-v2 es un modelo de clasificacion de imagenes publicado por Qualcomm en Hugging Face, distribuido como parte del catalogo Qualcomm AI Hub Models. No se trata de un modelo entrenado desde cero por Qualcomm, sino de una reexportacion optimizada de la implementacion de MobileNetV2 disponible en el repositorio `tonylins/pytorch-mobilenet-v2`, con pesos preentrenados en ImageNet (1000 clases). Su proposito es servir tanto como clasificador de imagenes listo para produccion como backbone para tareas de vision mas complejas (deteccion, segmentacion, extraccion de caracteristicas).
 
 El modelo ocupa 13,3 MB en precision float y 4,39 MB en cuantizacion w8a16, con 3,49 millones de parametros y una resolucion de entrada fija de 224x224 pixeles. La propuesta de valor del repositorio no es el modelo en si —MobileNetV2 es una arquitectura de 2018 ampliamente conocida— sino los artefactos preexportados para ejecutarse en la NPU de chipsets Qualcomm Snapdragon y Dragonwing, con tiempos de inferencia medidos entre 0,27 ms y 0,95 ms segun el SoC.
 
@@ -96,7 +96,7 @@ La informacion proporcionada no incluye mediciones comparativas frente a otras a
 
 | Modelo | Parametros | Contexto / entrada | Precision | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MobileNet-v2 (Qualcomm) | 3,49 M | imagen 224x224 | no disponible | Apache 2.0 | Pesos PyTorch, ONNX, QNN_DLC y TFLITE preexportados en HuggingFace |
+| MobileNet-v2 (Qualcomm) | 3,49 M | imagen 224x224 | no disponible | Apache 2.0 | Pesos PyTorch, ONNX, QNN_DLC y TFLITE preexportados en Hugging Face |
 | MobileNetV1 | no disponible | imagen 224x224 | no disponible | Apache 2.0 (implementacion original) | Multiples implementaciones publicas |
 | MobileNetV3 (Large/Small) | no disponible | imagen 224x224 | no disponible | Apache 2.0 (implementacion original) | Multiples implementaciones publicas |
 | EfficientNet-Lite | no disponible | imagen 224x224 y superiores | no disponible | Apache 2.0 (implementacion original) | Multiples implementaciones publicas |
@@ -118,7 +118,7 @@ La ventaja diferencial de esta ficha frente a las alternativas no esta en el num
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qualcomm/MobileNet-v2
+- Hugging Face: https://huggingface.co/qualcomm/MobileNet-v2
 - Qualcomm AI Hub (modelo): https://aihub.qualcomm.com/models/mobilenet_v2
 - Qualcomm AI Hub Workbench: https://workbench.aihub.qualcomm.com
 - Repositorio Qualcomm AI Hub Models (v0.62.0): https://github.com/qualcomm/ai-hub-models/blob/v0.62.0/src/qai_hub_models/models/mobilenet_v2

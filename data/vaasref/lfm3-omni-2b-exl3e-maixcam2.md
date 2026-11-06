@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM3-Omni-2B-EXL3e-MaixCAM2 es una conversión comunitaria del modelo LFM3-Omni-2B de Liquid AI, publicada por el usuario Vaasref en HuggingFace. Se trata de una versión cuantizada con el formato EXL3e (ExLlamaV3) y modificada con MaixCAM2, orientada presumiblemente a la ejecución eficiente del modelo multimodal en hardware con recursos limitados, como placas embebidas basadas en la plataforma MaixCAM2. El modelo original, LFM3-Omni-2B, pertenece a la familia LFM3 (Liquid Foundation Models 3) de Liquid AI, con 2.000 millones de parámetros y capacidades omni (texto, visión y audio, según la nomenclatura "Omni").
+LFM3-Omni-2B-EXL3e-MaixCAM2 es una conversión comunitaria del modelo LFM3-Omni-2B de Liquid AI, publicada por el usuario Vaasref en Hugging Face. Se trata de una versión cuantizada con el formato EXL3e (ExLlamaV3) y modificada con MaixCAM2, orientada presumiblemente a la ejecución eficiente del modelo multimodal en hardware con recursos limitados, como placas embebidas basadas en la plataforma MaixCAM2. El modelo original, LFM3-Omni-2B, pertenece a la familia LFM3 (Liquid Foundation Models 3) de Liquid AI, con 2.000 millones de parámetros y capacidades omni (texto, visión y audio, según la nomenclatura "Omni").
 
 La relevancia de esta ficha radica en que documenta una variante de despliegue de un modelo pequeño y multimodal en entornos de borde: la cuantización EXL3e reduce el peso en memoria para inferencia en GPU, mientras que la integración con MaixCAM2 apunta a escenarios de visión embebida. No obstante, la model card publicada no aporta información técnica detallada sobre el proceso de conversión, los datos de entrenamiento ni los resultados de evaluación, por lo que gran parte de los datos de esta ficha se marcan como no disponibles.
 
@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM3-Omni-2B-EXL3e-MaixCAM2 (este) | 2B | no disponible | LFM1.0 | EXL3e | HuggingFace (0 descargas) |
-| LFM3-Omni-2B (base) | 2B | no disponible | LFM1.0 | no disponible | HuggingFace (LiquidAI) |
+| LFM3-Omni-2B-EXL3e-MaixCAM2 (este) | 2B | no disponible | LFM1.0 | EXL3e | Hugging Face (0 descargas) |
+| LFM3-Omni-2B (base) | 2B | no disponible | LFM1.0 | no disponible | Hugging Face (LiquidAI) |
 | Alternativas de 2B multimodales | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparativo en la información proporcionada.
@@ -80,6 +80,6 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Vaasref/LFM3-Omni-2B-EXL3e-MaixCAM2
+- Hugging Face: https://huggingface.co/Vaasref/LFM3-Omni-2B-EXL3e-MaixCAM2
 - Licencia (referencia): https://huggingface.co/LiquidAI/LFM3-Omni-2B/blob/main/LICENSE
 - Modelo base (referencia): https://huggingface.co/LiquidAI/LFM3-Omni-2B

@@ -64,7 +64,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/haohw/tacwam-checkpoints
+- Hugging Face: https://huggingface.co/haohw/tacwam-checkpoints
 - Paper arXiv: https://arxiv.org/abs/2607.28391
 - PDF del paper: https://arxiv.org/pdf/2607.28391v1
-- Perfil del autor en HuggingFace: https://huggingface.co/haohw
+- Perfil del autor en Hugging Face: https://huggingface.co/haohw

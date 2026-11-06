@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - A esa cifra hay que sumar el coste del contexto (cache KV), que depende de una longitud de contexto no documentada; no disponible.
 - GPU recomendadas: cualquier GPU con 4 GB o mas de VRAM es suficiente para los cuantos de 0,8 a 2,0 GB (por ejemplo, GTX 1650, RTX 3050, RTX 4060, RTX 4090 sin aprovechamiento pleno). Para el modelo sin cuantizar en precision completa se necesitarian del orden de 5,4 GB solo en pesos (2,7B parametros a 16 bits), calculo derivado y no confirmado por el autor.
 - Cabe en GPU de consumo: si, en practicamente todas las GPU dedicadas modernas e incluso en iGPU con memoria unificada suficiente.
-- Despliegue: llama.cpp, Ollama, LM Studio, koboldcpp, text-generation-webui y cualquier runtime compatible con GGUF. El tag endpoints_compatible indica compatibilidad con endpoints de HuggingFace. TGI no soporta GGUF de forma nativa; vLLM solo lo soporta de manera parcial.
+- Despliegue: llama.cpp, Ollama, LM Studio, koboldcpp, text-generation-webui y cualquier runtime compatible con GGUF. El tag endpoints_compatible indica compatibilidad con endpoints de Hugging Face. TGI no soporta GGUF de forma nativa; vLLM solo lo soporta de manera parcial.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -90,10 +90,10 @@ No se dispone de datos de rendimiento de este modelo, por lo que la comparacion 
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantizaciones imatrix): https://huggingface.co/mradermacher/Pallete-2.6B-RP-Reasoning-2609-v1b-i1-GGUF
+- Repositorio Hugging Face (cuantizaciones imatrix): https://huggingface.co/mradermacher/Pallete-2.6B-RP-Reasoning-2609-v1b-i1-GGUF
 - Cuantizaciones estaticas: https://huggingface.co/mradermacher/Pallete-2.6B-RP-Reasoning-2609-v1b-GGUF
 - Modelo base: https://huggingface.co/Indexnusrefather/Pallete-2.6B-RP-Reasoning-2609-v1b
 - Pagina de vision general del autor de las cuantizaciones: https://hf.tst.eu/model#Pallete-2.6B-RP-Reasoning-2609-v1b-i1-GGUF
 - Referencia sobre uso de ficheros GGUF (README de TheBloke citado por el autor): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Fichero de licencia referenciado por el modelo: LICENSE (enlace relativo dentro del repositorio de HuggingFace)
+- Fichero de licencia referenciado por el modelo: LICENSE (enlace relativo dentro del repositorio de Hugging Face)
 - Paper, blog o demo oficial: no disponible

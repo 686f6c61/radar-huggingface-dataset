@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio Tusharika1903/Taxi-v3 no contiene un modelo de lenguaje, sino un agente de aprendizaje por refuerzo entrenado con Q-Learning para resolver el entorno Taxi-v3 de Gym/Gymnasium. Lo publica el usuario Tusharika1903 en HuggingFace Hub bajo la libreria de aprendizaje por refuerzo (pipeline: reinforcement-learning) y con las etiquetas Taxi-v3, q-learning, reinforcement-learning y custom-implementation. El artefacto distribuido es un unico fichero serializado en formato pickle (q-learning.pkl), y el repositorio ocupa 0,0 GB, por lo que el "modelo" consiste en una politica de decision compacta, no en pesos de una red neuronal profunda.
+El repositorio Tusharika1903/Taxi-v3 no contiene un modelo de lenguaje, sino un agente de aprendizaje por refuerzo entrenado con Q-Learning para resolver el entorno Taxi-v3 de Gym/Gymnasium. Lo publica el usuario Tusharika1903 en Hugging Face Hub bajo la libreria de aprendizaje por refuerzo (pipeline: reinforcement-learning) y con las etiquetas Taxi-v3, q-learning, reinforcement-learning y custom-implementation. El artefacto distribuido es un unico fichero serializado en formato pickle (q-learning.pkl), y el repositorio ocupa 0,0 GB, por lo que el "modelo" consiste en una politica de decision compacta, no en pesos de una red neuronal profunda.
 
 El problema que resuelve es un MDP clasico de juguete: un taxi debe recoger y dejar a un pasajero en una de las cuatro ubicaciones de una cuadricula, con 500 estados discretos y 6 acciones posibles. Es relevante ahora unicamente como referencia educativa y como linea base reproducible para practicas de aprendizaje por refuerzo, no como componente de produccion. El autor declara un retorno medio de 7,52 +/- 2,73 en Taxi-v3 (metrica marcada como no verificada), lo que indica que el agente ha aprendido una politica funcional pero con varianza elevada.
 
@@ -77,10 +77,10 @@ No se han publicado otros resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Entorno | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Tusharika1903/Taxi-v3 | Q-Learning (custom) | Taxi-v3 | no disponible | no aplica | mean_reward 7,52 +/- 2,73 (no verificado) | no disponible | HuggingFace Hub |
-| Otros agentes Q-Learning para Taxi-v3 publicados en el Hub | Q-Learning | Taxi-v3 | no disponible | no aplica | no disponible en la informacion proporcionada | no disponible | HuggingFace Hub |
-| Agentes DQN para Taxi-v3 | Red neuronal profunda | Taxi-v3 | no disponible | no aplica | no disponible en la informacion proporcionada | no disponible | HuggingFace Hub |
-| Modelos de lenguaje de gran tamano | Transformer decoder | no aplica | miles de millones | miles de tokens | no comparable | variable | HuggingFace Hub |
+| Tusharika1903/Taxi-v3 | Q-Learning (custom) | Taxi-v3 | no disponible | no aplica | mean_reward 7,52 +/- 2,73 (no verificado) | no disponible | Hugging Face Hub |
+| Otros agentes Q-Learning para Taxi-v3 publicados en el Hub | Q-Learning | Taxi-v3 | no disponible | no aplica | no disponible en la informacion proporcionada | no disponible | Hugging Face Hub |
+| Agentes DQN para Taxi-v3 | Red neuronal profunda | Taxi-v3 | no disponible | no aplica | no disponible en la informacion proporcionada | no disponible | Hugging Face Hub |
+| Modelos de lenguaje de gran tamano | Transformer decoder | no aplica | miles de millones | miles de tokens | no comparable | variable | Hugging Face Hub |
 
 No se dispone de cifras verificadas de alternativas comparables en la informacion proporcionada, por lo que la comparacion cuantitativa no es posible. La comparacion relevante para este artefacto es con otros agentes del mismo curso o del mismo entorno, no con modelos generativos.
 
@@ -99,7 +99,7 @@ No se dispone de cifras verificadas de alternativas comparables en la informacio
 
 ## Enlaces
 
-- Modelo en HuggingFace Hub: https://huggingface.co/Tusharika1903/Taxi-v3
+- Modelo en Hugging Face Hub: https://huggingface.co/Tusharika1903/Taxi-v3
 - Entorno Taxi-v3 (Gymnasium): https://gymnasium.farama.org/environments/toy_text/taxi/
 - Entorno Taxi-v3 (Gym, version historica): https://www.gymlibrary.dev/environments/toy_text/taxi/
 - Documentacion de carga desde el Hub para agentes de RL (flujo load_from_hub): https://huggingface.co/docs/hub/en/models-downloading

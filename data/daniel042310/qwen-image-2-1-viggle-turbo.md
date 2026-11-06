@@ -90,7 +90,7 @@ No se dispone en la informacion consultada de comparativas cuantitativas contra 
 
 ## Enlaces
 
-- Repositorio analizado en HuggingFace: https://huggingface.co/daniel042310/Qwen-Image-2.1-viggle-turbo
+- Repositorio analizado en Hugging Face: https://huggingface.co/daniel042310/Qwen-Image-2.1-viggle-turbo
 - Ficheros del repositorio: https://huggingface.co/daniel042310/Qwen-Image-2.1-viggle-turbo/tree/main
 - Repositorio original (organizacion Viggle): https://huggingface.co/Viggle/Qwen-Image-2.1-viggle-turbo
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1

@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros totales / activos | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| mradermacher/GLM-4.5-Air-REAP-82B-A12B-GGUF (este modelo) | ~85B / 12B (nominal 82B / 12B) | no disponible | MIT | GGUF (11 cuantizaciones publicadas) | HuggingFace, 140 descargas, 0 likes |
-| cerebras/GLM-4.5-Air-REAP-82B-A12B | ~85B / 12B (nominal 82B / 12B) | no disponible | no disponible en la informacion proporcionada | safetensors | HuggingFace |
-| zai-org/GLM-4.5-Air (modelo original sin podar) | no disponible en la informacion proporcionada | no disponible | licencia propia de Z.ai enlazada desde el repo GGUF | safetensors | HuggingFace |
-| mradermacher/GLM-4.5-Air-REAP-82B-A12B-i1-GGUF (variante con imatrix) | mismas caracteristicas del modelo base | no disponible | MIT | GGUF con cuantizaciones ponderadas | HuggingFace |
+| mradermacher/GLM-4.5-Air-REAP-82B-A12B-GGUF (este modelo) | ~85B / 12B (nominal 82B / 12B) | no disponible | MIT | GGUF (11 cuantizaciones publicadas) | Hugging Face, 140 descargas, 0 likes |
+| cerebras/GLM-4.5-Air-REAP-82B-A12B | ~85B / 12B (nominal 82B / 12B) | no disponible | no disponible en la informacion proporcionada | safetensors | Hugging Face |
+| zai-org/GLM-4.5-Air (modelo original sin podar) | no disponible en la informacion proporcionada | no disponible | licencia propia de Z.ai enlazada desde el repo GGUF | safetensors | Hugging Face |
+| mradermacher/GLM-4.5-Air-REAP-82B-A12B-i1-GGUF (variante con imatrix) | mismas caracteristicas del modelo base | no disponible | MIT | GGUF con cuantizaciones ponderadas | Hugging Face |
 
 No se dispone de datos de benchmarks ni de especificaciones completas de los modelos alternativos en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa de rendimiento.
 
@@ -98,4 +98,4 @@ No se dispone de datos de benchmarks ni de especificaciones completas de los mod
 - Notas de Artefact2 sobre tipos de cuantizacion: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
 - nethype GmbH: https://www.nethype.de/
 
-Nota: las busquedas web realizadas no devolvieron resultados relevantes sobre el modelo; los enlaces anteriores proceden de la model card del repositorio y de los datos de HuggingFace.
+Nota: las busquedas web realizadas no devolvieron resultados relevantes sobre el modelo; los enlaces anteriores proceden de la model card del repositorio y de los datos de Hugging Face.

@@ -82,8 +82,8 @@ Comparativa con el profesor y un embedding generico, segun la model card:
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EventTwin v1.0 | 568M | 512 tokens | Cross-encoder de mismo evento, probabilidad calibrada | Apache 2.0 | HuggingFace (MaYiding/EventTwin) |
-| BAAI/bge-reranker-v2-m3 (base) | 568M | 512 tokens | Reranker generico de relevancia | Apache 2.0 | HuggingFace (BAAI) |
+| EventTwin v1.0 | 568M | 512 tokens | Cross-encoder de mismo evento, probabilidad calibrada | Apache 2.0 | Hugging Face (MaYiding/EventTwin) |
+| BAAI/bge-reranker-v2-m3 (base) | 568M | 512 tokens | Reranker generico de relevancia | Apache 2.0 | Hugging Face (BAAI) |
 | Embedding generico 8B | ~8.000M | No disponible | Similitud por coseno entre embeddings | No disponible | No disponible |
 | Profesor comercial (API cerrada) | No disponible | No disponible | Juicio de mismo evento con probabilidad | Propietaria | Solo API comercial |
 
@@ -98,11 +98,11 @@ Frente al reranker base, EventTwin anade la nocion especifica de "mismo evento" 
 - Diseno restrictivo: el modelo mide "mismo evento" y no "eventos relacionados", de forma deliberada; dos eventos tematicamente proximos pero distintos obtendran puntuaciones bajas, lo que puede ser contraproducente si se espera agrupacion tematica.
 - Riesgo de alucinacion: no aplica en el sentido generativo, ya que el modelo no produce texto; el riesgo equivalente es un falso positivo o falso negativo en la clasificacion, mitigable con la banda de confianza calibrada.
 - Licencia del modelo Apache 2.0, apta para uso comercial. Atencion: el conjunto de datos EventTwin-Data se publica bajo CC BY-NC 4.0, por lo que su reutilizacion comercial requeriria revisar esa restriccion, aunque el modelo entrenado no la hereda.
-- Numero de descargas y likes registrados en HuggingFace: 0 en el momento de la consulta, lo que implica escasa validacion externa por parte de la comunidad.
+- Numero de descargas y likes registrados en Hugging Face: 0 en el momento de la consulta, lo que implica escasa validacion externa por parte de la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MaYiding/EventTwin
+- Modelo en Hugging Face: https://huggingface.co/MaYiding/EventTwin
 - Modelo base: https://huggingface.co/BAAI/bge-reranker-v2-m3
 - Conjunto de datos EventTwin-Data: https://huggingface.co/datasets/MaYiding/EventTwin-Data
 - Repositorio GitHub (incluye inference.py y documentacion): https://github.com/MaYiding/EventTwin

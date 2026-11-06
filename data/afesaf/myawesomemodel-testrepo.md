@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio publicado en HuggingFace por el usuario afesaf el 11 de septiembre de 2026, con licencia MIT y cero descargas y cero "likes" en el momento de la consulta. El repositorio mide 0,0 GB, por lo que no contiene pesos ni ficheros de modelo descargables, y su nombre incluye el sufijo "TestRepo", lo que apunta a un repositorio de pruebas o a una plantilla de model card más que a un modelo entrenado y publicado.
+MyAwesomeModel-TestRepo es un repositorio publicado en Hugging Face por el usuario afesaf el 11 de septiembre de 2026, con licencia MIT y cero descargas y cero "likes" en el momento de la consulta. El repositorio mide 0,0 GB, por lo que no contiene pesos ni ficheros de modelo descargables, y su nombre incluye el sufijo "TestRepo", lo que apunta a un repositorio de pruebas o a una plantilla de model card más que a un modelo entrenado y publicado.
 
-Existe una contradicción interna importante entre los metadatos y la model card. Las etiquetas de HuggingFace lo clasifican como `transformers`, `pytorch`, `bert`, `feature-extraction` y `endpoints_compatible`, es decir, un modelo tipo BERT para extracción de características. Sin embargo, la model card describe un asistente conversacional de razonamiento con modo de pensamiento, function calling, búsqueda web con citación y resultados en AIME 2025. No hay ningún dato técnico que permita reconciliar ambas descripciones.
+Existe una contradicción interna importante entre los metadatos y la model card. Las etiquetas de Hugging Face lo clasifican como `transformers`, `pytorch`, `bert`, `feature-extraction` y `endpoints_compatible`, es decir, un modelo tipo BERT para extracción de características. Sin embargo, la model card describe un asistente conversacional de razonamiento con modo de pensamiento, function calling, búsqueda web con citación y resultados en AIME 2025. No hay ningún dato técnico que permita reconciliar ambas descripciones.
 
 Por tanto, esta ficha recoge exclusivamente lo que declara la model card, marcando de forma explícita todo lo que no está disponible. No se ha podido verificar nada de forma externa: la búsqueda web asociada no devolvió resultados relacionados con el modelo, solo páginas de descarga del navegador Firefox y un índice de ACL Anthology sin relación.
 
@@ -104,19 +104,19 @@ No disponible. La model card compara contra entradas anonimizadas (`Model1`, `Mo
 
 ## Limitaciones y advertencias
 
-- Contradiccion de metadatos: las etiquetas de HuggingFace indican `bert` y `feature-extraction`, mientras que la model card describe un asistente conversacional de razonamiento con function calling. Una de las dos descripciones es incorrecta y no hay forma de determinarlo con la información disponible.
+- Contradiccion de metadatos: las etiquetas de Hugging Face indican `bert` y `feature-extraction`, mientras que la model card describe un asistente conversacional de razonamiento con function calling. Una de las dos descripciones es incorrecta y no hay forma de determinarlo con la información disponible.
 - Repositorio vacio: el tamaño de 0,0 GB indica que no hay pesos publicados. El modelo no se puede descargar, ejecutar ni evaluar. Se trata, con alta probabilidad, de un repositorio de prueba.
 - Sin traccion ni validacion externa: cero descargas y cero "likes". La búsqueda web no arrojó ninguna referencia al modelo; los resultados obtenidos eran páginas de descarga de Firefox y un índice de congreso sin relación. No existe corroboración independiente de ninguna de las afirmaciones.
 - Benchmarks no reproducibles: las columnas de comparación son anónimas, no se especifica la metodología, el número de muestras ni la configuración de decodificación. Las puntuaciones son autoreportadas.
 - Model card plantilla y truncada: el texto emplea marcadores genéricos (`MyAwesomeModel`, `Model1`, `Model2`), referencias a imágenes inexistentes en un repositorio vacío y menciones a un "sitio web oficial" y a un "repositorio de código" sin enlaces. El contenido se corta a mitad de la plantilla de búsqueda web, por lo que el final del documento no está disponible.
 - Riesgo de alucinacion: la card afirma que reduce la tasa de alucinación, pero no aporta ninguna métrica que lo respalde. Sin datos de evaluación independientes, debe asumirse un riesgo de alucinación no cuantificado.
 - Sesgos: no disponible. No hay información sobre composición del dataset, cobertura lingüística ni evaluaciones de sesgo.
-- Idiomas: no disponible. La ausencia de un campo de idiomas en la ficha de HuggingFace impide saber si el modelo es multilingüe o solo inglés.
+- Idiomas: no disponible. La ausencia de un campo de idiomas en la ficha de Hugging Face impide saber si el modelo es multilingüe o solo inglés.
 - Licencia: MIT declarada en la model card y en los metadatos, lo que permitiría uso comercial, modificación y redistribución. No obstante, al no haber pesos descargables, la licencia no tiene efecto práctico sobre ningún artefacto disponible.
 - Dependencia de la fecha en el prompt: la recomendación de incluir la fecha actual en el system prompt implica que el modelo no tiene conocimiento temporal fiable por sí mismo y puede degradarse en preguntas sensibles al tiempo si no se le inyecta.
 - Inaplicabilidad en produccion: en su estado actual, este repositorio no debe considerarse una dependencia válida para ningún sistema en producción.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/afesaf/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/afesaf/MyAwesomeModel-TestRepo
 - No se han encontrado papers, blogs, repositorios de código, demos ni páginas de documentación asociados al modelo. La búsqueda web realizada devolvió únicamente resultados no relacionados (páginas de descarga de Mozilla Firefox y el índice de Findings of the Association for Computational Linguistics 2025).

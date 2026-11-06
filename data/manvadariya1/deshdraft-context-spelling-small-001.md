@@ -71,9 +71,9 @@ Metricas adicionales reportadas: precision de edicion de la politica neural con 
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeshDraft context spelling small 001 | 299,6 M | 320 bytes UTF-8 | Correccion ortografica contextual | Apache-2.0 | HuggingFace (29 descargas) |
-| google/byt5-small | 299,6 M | no disponible | Seq2seq byte-level generico | Apache-2.0 | HuggingFace |
-| google/t5-small | 60,5 M | 512 tokens | Seq2seq subword generico | Apache-2.0 | HuggingFace |
+| DeshDraft context spelling small 001 | 299,6 M | 320 bytes UTF-8 | Correccion ortografica contextual | Apache-2.0 | Hugging Face (29 descargas) |
+| google/byt5-small | 299,6 M | no disponible | Seq2seq byte-level generico | Apache-2.0 | Hugging Face |
+| google/t5-small | 60,5 M | 512 tokens | Seq2seq subword generico | Apache-2.0 | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos frente a correctores especializados de terceros en la informacion proporcionada.
 
@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks comparativos frente a correctores especiali
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/manvadariya1/deshdraft-context-spelling-small-001
+- Modelo en Hugging Face: https://huggingface.co/manvadariya1/deshdraft-context-spelling-small-001
 - Modelo base: https://huggingface.co/google/byt5-small
 - Paper de ByT5: https://arxiv.org/abs/2105.13626
 - Dataset Tatoeba: https://tatoeba.org/

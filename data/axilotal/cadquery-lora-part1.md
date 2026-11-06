@@ -73,6 +73,6 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- [HuggingFace - Axilotal/cadquery-lora-part1](https://huggingface.co/Axilotal/cadquery-lora-part1)
+- [Hugging Face - Axilotal/cadquery-lora-part1](https://huggingface.co/Axilotal/cadquery-lora-part1)
 - [Modelo base: unsloth/qwen2.5-coder-7b-instruct-bnb-4bit](https://huggingface.co/unsloth/qwen2.5-coder-7b-instruct-bnb-4bit) (enlace inferido, no proporcionado en la información)
 - [Unsloth](https://github.com/unslothai/unsloth) (mencionado en la model card)

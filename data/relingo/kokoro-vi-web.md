@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto/entrada | Rendimiento | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| relingo/kokoro-vi-web | No disponible; linaje Kokoro-82M | n ≤ 510 tokens IPA | No disponible | Apache-2.0 | ONNX + `.bin` | HuggingFace |
-| contextboxai/Kokoro-Vietnamese | No disponible | No disponible | No disponible | Apache-2.0 | No disponible; la card menciona `config.json` y voice packs `.pt` | HuggingFace |
-| hexgrad/Kokoro-82M | 82M según el nombre del modelo | No disponible | No disponible | No disponible en la información | No disponible | HuggingFace |
+| relingo/kokoro-vi-web | No disponible; linaje Kokoro-82M | n ≤ 510 tokens IPA | No disponible | Apache-2.0 | ONNX + `.bin` | Hugging Face |
+| contextboxai/Kokoro-Vietnamese | No disponible | No disponible | No disponible | Apache-2.0 | No disponible; la card menciona `config.json` y voice packs `.pt` | Hugging Face |
+| hexgrad/Kokoro-82M | 82M según el nombre del modelo | No disponible | No disponible | No disponible en la información | No disponible | Hugging Face |
 
 No se dispone de otros modelos TTS vietnamitas comparables en la información proporcionada.
 

@@ -81,7 +81,7 @@ La comparación entre v17-matched y v17-full está confundida por el número de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/freeqaz/decomp-synth-lifter-v17-matched-qwen3.5-9b-lora
+- Modelo en Hugging Face: https://huggingface.co/freeqaz/decomp-synth-lifter-v17-matched-qwen3.5-9b-lora
 - Hermano v17-full: https://huggingface.co/freeqaz/decomp-synth-lifter-v17-full-qwen3.5-9b-lora
 - Versión v14-evalformat: https://huggingface.co/freeqaz/decomp-synth-lifter-v14-evalformat-qwen3.5-9b-lora
 - Versión v10 (27B): https://huggingface.co/freeqaz/decomp-synth-lifter-v10-qwen3.6-27b-lora

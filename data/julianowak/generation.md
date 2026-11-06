@@ -61,14 +61,14 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 - **Checkpoint no entrenado**: el modelo no ha sido entrenado; cualquier salida generada será ruido aleatorio o basura. No debe usarse en producción.
 - **Sin auditoría de robustez o sesgos**: la model card advierte que no se ha auditado para robustez, equidad o transferencia de dominio.
-- **Sin soporte de carga automática**: las APIs genéricas de HuggingFace no pueden cargar este modelo sin un adaptador explícito, lo que limita su interoperabilidad.
+- **Sin soporte de carga automática**: las APIs genéricas de Hugging Face no pueden cargar este modelo sin un adaptador explícito, lo que limita su interoperabilidad.
 - **Documentación incompleta**: no se especifican idiomas, contexto, ni detalles del dataset de entrenamiento.
 - **Licencia Apache-2.0**: permite uso comercial, pero al no estar entrenado, su valor comercial es nulo. Revisar los términos de los datos externos si se usan para entrenar.
 - **Riesgo de confusión**: el nombre "generation" y la etiqueta "swin-t" pueden inducir a error; no es un modelo de generación de texto funcional.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/julianowak/generation
+- Repositorio Hugging Face: https://huggingface.co/julianowak/generation
 - Guía de consultoría de IA generativa (autor, LinkedIn): https://www.linkedin.com/pulse/comprehensive-guide-generative-ai-consulting-2026-julian-nowak-ozppe
 - Leaderboard de LLMs (referencia general, no específica del modelo): https://llm-stats.com/leaderboards/llm-leaderboard
 - Encuesta sobre modelos de IA generativa (Springer): https://link.springer.com/article/10.1007/s10462-026-11546-1

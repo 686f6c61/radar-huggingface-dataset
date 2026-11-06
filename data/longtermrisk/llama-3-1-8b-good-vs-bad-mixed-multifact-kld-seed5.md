@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `longtermrisk/Llama-3.1-8B-good-vs-bad-mixed-multifact-kld-seed5` es un fine-tune del modelo base `unsloth/Meta-Llama-3.1-8B-Instruct`, desarrollado por el usuario `longtermrisk`. Se trata de un ajuste fino realizado con la librería Unsloth y la biblioteca TRL de HuggingFace, lo que indica que el entrenamiento fue optimizado para velocidad. El nombre del modelo sugiere que el entrenamiento se centró en distinguir respuestas buenas frente a malas mediante un enfoque multifactorial y con una componente de divergencia KL, aunque no se proporciona documentación detallada al respecto.
+El modelo `longtermrisk/Llama-3.1-8B-good-vs-bad-mixed-multifact-kld-seed5` es un fine-tune del modelo base `unsloth/Meta-Llama-3.1-8B-Instruct`, desarrollado por el usuario `longtermrisk`. Se trata de un ajuste fino realizado con la librería Unsloth y la biblioteca TRL de Hugging Face, lo que indica que el entrenamiento fue optimizado para velocidad. El nombre del modelo sugiere que el entrenamiento se centró en distinguir respuestas buenas frente a malas mediante un enfoque multifactorial y con una componente de divergencia KL, aunque no se proporciona documentación detallada al respecto.
 
 Este modelo es relevante porque explora el ajuste fino de un modelo de propósito general (Llama 3.1 8B) para una tarea de evaluación o clasificación de calidad de respuestas, algo útil en escenarios de generación controlada o filtrado de contenido. Sin embargo, la información pública es extremadamente escasa: no se publican detalles del dataset de entrenamiento, del procedimiento de optimización ni de los resultados obtenidos. Por tanto, la ficha se basa en las características heredadas del modelo base y en los pocos datos disponibles en la model card.
 
@@ -21,7 +21,7 @@ Este modelo es relevante porque explora el ajuste fino de un modelo de propósit
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tune de `unsloth/Meta-Llama-3.1-8B-Instruct`, que es una versión optimizada de Llama-3.1-8B-Instruct para entrenamiento con Unsloth. La arquitectura base es un transformer decoder-only con 8 mil millones de parámetros y una ventana de contexto de 128K tokens. El proceso de entrenamiento se realizó con Unsloth y la librería TRL de HuggingFace, lo que sugiere el uso de técnicas de fine-tuning supervisado (SFT) o similar. No se especifica la composición del dataset de entrenamiento, el número de tokens utilizados, ni si se aplicaron métodos de alineación como RLHF o DPO. El nombre del modelo incluye los términos "good-vs-bad-mixed-multifact-kld" y "seed5", lo que apunta a un experimento que mezcla criterios múltiples (multifact) y divergencia KL, pero no hay documentación que explique estos términos.
+El modelo es un fine-tune de `unsloth/Meta-Llama-3.1-8B-Instruct`, que es una versión optimizada de Llama-3.1-8B-Instruct para entrenamiento con Unsloth. La arquitectura base es un transformer decoder-only con 8 mil millones de parámetros y una ventana de contexto de 128K tokens. El proceso de entrenamiento se realizó con Unsloth y la librería TRL de Hugging Face, lo que sugiere el uso de técnicas de fine-tuning supervisado (SFT) o similar. No se especifica la composición del dataset de entrenamiento, el número de tokens utilizados, ni si se aplicaron métodos de alineación como RLHF o DPO. El nombre del modelo incluye los términos "good-vs-bad-mixed-multifact-kld" y "seed5", lo que apunta a un experimento que mezcla criterios múltiples (multifact) y divergencia KL, pero no hay documentación que explique estos términos.
 
 ## Capacidades
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
   - Precisión completa (FP16): ~16 GB VRAM.
 - GPU recomendadas: RTX 3090/4090 (24 GB), A100 (40/80 GB), H100 (80 GB).
 - Es desplegable en GPUs de consumo (RTX 3060 12 GB con cuantización 4-bit, o RTX 4070 con 8-bit).
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, HuggingFace TGI, Text Generation Inference.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, Hugging Face TGI, Text Generation Inference.
 - Latencia y throughput: no disponibles para este fine-tune; los valores típicos de Llama-3.1-8B en una GPU A100 son de ~30-50 tokens/s en FP16.
 
 ## Comparativa con modelos similares
@@ -77,7 +77,7 @@ No hay datos de rendimiento comparativo entre estas variantes.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/longtermrisk/Llama-3.1-8B-good-vs-bad-mixed-multifact-kld-seed5
+- Modelo en Hugging Face: https://huggingface.co/longtermrisk/Llama-3.1-8B-good-vs-bad-mixed-multifact-kld-seed5
 - Variante seed 3: https://huggingface.co/longtermrisk/Llama-3.1-8B-good-vs-bad-mixed-multifact-sft-seed3
 - Variante second-third-sft: https://huggingface.co/longtermrisk/Llama-3.1-8B-good-vs-bad-mixed-multifact-second-third-sft-seed5
 - Variante first-third-sft: https://huggingface.co/longtermrisk/Llama-3.1-8B-good-vs-bad-mixed-multifact-first-third-sft

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `AlinaGonch/llama31-8b-squad-ratio-0.80-seed-42` es un checkpoint publicado en HuggingFace por el usuario AlinaGonch, cuyo nombre sugiere un ajuste fino (fine-tuning) sobre Llama 3.1 8B empleando el conjunto de datos SQuAD, con una fracción del 80 % de los datos (`ratio-0.80`) y semilla 42. Esta interpretación procede unicamente del identificador del repositorio: la model card publicada es la plantilla autogenerada de HuggingFace y no contiene ninguna descripcion, autoria, licencia ni detalle de entrenamiento rellenado por el autor.
+El modelo identificado como `AlinaGonch/llama31-8b-squad-ratio-0.80-seed-42` es un checkpoint publicado en Hugging Face por el usuario AlinaGonch, cuyo nombre sugiere un ajuste fino (fine-tuning) sobre Llama 3.1 8B empleando el conjunto de datos SQuAD, con una fracción del 80 % de los datos (`ratio-0.80`) y semilla 42. Esta interpretación procede unicamente del identificador del repositorio: la model card publicada es la plantilla autogenerada de Hugging Face y no contiene ninguna descripcion, autoria, licencia ni detalle de entrenamiento rellenado por el autor.
 
 Se trata, por tanto, de un modelo derivado de la familia Llama 3.1, cuya arquitectura base es un transformer decoder-only de aproximadamente 8 000 millones de parametros con Grouped Query Attention y una ventana de contexto de 128 000 tokens. El repositorio ocupa solo 0,2 GB, un tamano muy inferior al de un checkpoint completo de 8B en precision de 16 bits (que rondaria los 16 GB), lo que apunta a que el contenido publicado podria ser un adaptador tipo LoRA o un subconjunto parcial de pesos, si bien esto no esta confirmado en la informacion disponible.
 
@@ -27,7 +27,7 @@ Su relevancia es fundamentalmente experimental y reproducible: el patron de nomb
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura especifica ni sobre el procedimiento de entrenamiento de este checkpoint. La model card es la plantilla por defecto de HuggingFace con todos los campos marcados como `[More Information Needed]`, incluyendo tipo de modelo, datos de entrenamiento, hiperparametros y regimen de precision. El unico dato tecnico objetivo es el identificador, que indica que parte de Llama 3.1 8B y que se ha ajustado con SQuAD, el conjunto de referencia para question answering extractivo en ingles, con una ratio de datos de 0,80 y semilla 42.
+No hay informacion publicada sobre la arquitectura especifica ni sobre el procedimiento de entrenamiento de este checkpoint. La model card es la plantilla por defecto de Hugging Face con todos los campos marcados como `[More Information Needed]`, incluyendo tipo de modelo, datos de entrenamiento, hiperparametros y regimen de precision. El unico dato tecnico objetivo es el identificador, que indica que parte de Llama 3.1 8B y que se ha ajustado con SQuAD, el conjunto de referencia para question answering extractivo en ingles, con una ratio de datos de 0,80 y semilla 42.
 
 Si se asume la herencia de Llama 3.1 8B, la arquitectura de partida seria un transformer decoder-only con normalizacion RMSNorm pre-norma, activacion SwiGLU, RoPE y Grouped Query Attention, entrenado originalmente por Meta sobre aproximadamente 15 billones de tokens con tecnicas de alineacion posteriores (SFT y DPO con preferencias humanas). Ninguno de estos extremos esta verificado para este repositorio concreto, y no se documenta si el ajuste se hizo sobre el modelo base o sobre la version Instruct, ni si se emplearon tecnicas como LoRA o QLoRA.
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - El repositorio ocupa solo 0,2 GB, por lo que si finalmente contiene un adaptador LoRA sera necesario cargar adicionalmente el modelo base completo para poder ejecutar inferencia; en ese caso los requisitos de VRAM son los del modelo base.
 - GPU recomendadas para 8B en fp16: NVIDIA A100 40 GB, H100 80 GB, L40S 48 GB o RTX 6000 Ada. Para cuantizacion de 4 bits son suficientes una RTX 4090 (24 GB), RTX 4080 (16 GB) o incluso una RTX 3060 de 12 GB con contexto reducido.
 - Cabe en GPU de consumo: si, en GPUs con 8 GB o mas de VRAM siempre que se emplee cuantizacion de 4 u 8 bits y se limite la longitud de contexto.
-- Opciones de despliegue: al estar etiquetado con `transformers` y `endpoints_compatible`, la via directa es la libreria transformers y HuggingFace Inference Endpoints. Para servir el modelo base cuantizado existen vLLM, Text Generation Inference, llama.cpp, Ollama y LM Studio, aunque no se ha publicado ningun fichero GGUF de este checkpoint concreto.
+- Opciones de despliegue: al estar etiquetado con `transformers` y `endpoints_compatible`, la via directa es la libreria transformers y Hugging Face Inference Endpoints. Para servir el modelo base cuantizado existen vLLM, Text Generation Inference, llama.cpp, Ollama y LM Studio, aunque no se ha publicado ningun fichero GGUF de este checkpoint concreto.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -69,7 +69,7 @@ No se dispone de resultados de rendimiento del modelo analizado, por lo que la c
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento en benchmarks |
 |---|---|---|---|---|---|
-| AlinaGonch/llama31-8b-squad-ratio-0.80-seed-42 | ~8B (heredados de Llama 3.1 8B, no confirmado) | No disponible (128k en el base) | No disponible | Repositorio HuggingFace, 0 descargas | No disponible |
+| AlinaGonch/llama31-8b-squad-ratio-0.80-seed-42 | ~8B (heredados de Llama 3.1 8B, no confirmado) | No disponible (128k en el base) | No disponible | Repositorio Hugging Face, 0 descargas | No disponible |
 | Meta Llama 3.1 8B Instruct | 8,03B | 128 000 tokens | Llama 3.1 Community License | Ampliamente disponible | Publicados por Meta en su model card |
 | Mistral 7B Instruct v0.3 | 7,25B | 32 000 tokens | Apache 2.0 | Ampliamente disponible | Publicados por Mistral en su model card |
 | Qwen2.5 7B Instruct | 7,6B | 128 000 tokens | Apache 2.0 (con condiciones para algunas variantes) | Ampliamente disponible | Publicados por Alibaba en su model card |
@@ -88,7 +88,7 @@ No se dispone de resultados de rendimiento del modelo analizado, por lo que la c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AlinaGonch/llama31-8b-squad-ratio-0.80-seed-42
+- Modelo en Hugging Face: https://huggingface.co/AlinaGonch/llama31-8b-squad-ratio-0.80-seed-42
 - Paper de SQuAD (Rajpurkar et al., 2016): https://arxiv.org/abs/1606.05250
 - Paper referenciado en los tags del repositorio (Lacoste et al., 2019, calculadora de impacto medioambiental): https://arxiv.org/abs/1910.09700
 - Model card de Llama 3.1 8B: https://huggingface.co/meta-llama/Llama-3.1-8B

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Celestia-1.4B-MoE es un modelo de lenguaje de dominio específico desarrollado por el equipo de Alenout AI (publicado bajo el usuario seashyne en HuggingFace) para orquestar flujos de trabajo creativos multimodales dentro de la plataforma Lenout, que abarca dibujo 2D, diseño, pizarras, diagramas de flujo, presentaciones, vídeo en movimiento y estudio 3D. En lugar de ser un modelo conversacional de propósito general, está diseñado para generar acciones estructuradas en un DSL propio de Lenout, lo que lo convierte en una pieza de infraestructura para automatizar tareas creativas.
+Celestia-1.4B-MoE es un modelo de lenguaje de dominio específico desarrollado por el equipo de Alenout AI (publicado bajo el usuario seashyne en Hugging Face) para orquestar flujos de trabajo creativos multimodales dentro de la plataforma Lenout, que abarca dibujo 2D, diseño, pizarras, diagramas de flujo, presentaciones, vídeo en movimiento y estudio 3D. En lugar de ser un modelo conversacional de propósito general, está diseñado para generar acciones estructuradas en un DSL propio de Lenout, lo que lo convierte en una pieza de infraestructura para automatizar tareas creativas.
 
 Arquitectónicamente combina Multi-Head Latent Attention (MLA) de estilo DeepSeek, que comprime el caché de claves y valores reduciendo el uso de memoria en más de un 70%, con una capa dispersa DeepSeekMoE de 8 expertos enrutados más 1 experto compartido, activando solo 2 expertos por token. El modelo ha sido entrenado con GRPO (Group Relative Policy Optimization) para desarrollar razonamiento encadenado (Chain-of-Thought) nativo, y produce salidas en formato JSON dentro de etiquetas `<action_start>...</action_end>`. Su relevancia actual radica en ser un ejemplo de modelo fundacional especializado en un dominio concreto, con licencia Apache 2.0 y soporte para tailandés e inglés.
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - VRAM estimada: al ser un modelo MoE de aproximadamente 1.4B de parametros totales con solo 2 expertos activos por token, la huella de memoria en inferencia es reducida. Con cuantizacion de 8 bits, podria caber en GPUs con 4-6 GB de VRAM; en bfloat16, se estima un uso de 3-4 GB para los pesos activos, aunque el tamaño exacto depende de los parametros totales no publicados.
 - GPU recomendadas: cualquier GPU consumer moderna con al menos 6 GB de VRAM (por ejemplo, RTX 3060, RTX 4060) deberia ser suficiente para inferencia local. Para despliegue concurrente, una A100 o H100 ofreceria mayor throughput.
 - Compatibilidad con consumer GPU: si, dado el tamaño reducido, es viable en GPUs de gama media.
-- Opciones de despliegue: el ejemplo oficial usa `transformers` con `trust_remote_code=True`, por lo que es compatible con el ecosistema HuggingFace. No se mencionan integraciones con vLLM, llama.cpp, Ollama o TGI, pero al ser un modelo causal estandar podria adaptarse.
+- Opciones de despliegue: el ejemplo oficial usa `transformers` con `trust_remote_code=True`, por lo que es compatible con el ecosistema Hugging Face. No se mencionan integraciones con vLLM, llama.cpp, Ollama o TGI, pero al ser un modelo causal estandar podria adaptarse.
 - Latencia y throughput: no disponibles. Dado el bajo numero de parametros activos, se espera una latencia baja en hardware consumer, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
@@ -74,10 +74,10 @@ La comparacion con modelos generalistas de tamano similar (por ejemplo, Qwen2.5-
 - Datos de entrenamiento no publicados: se desconoce la composicion del corpus, lo que impide evaluar sesgos potenciales o cobertura tematica.
 - Sin benchmarks publicados: no hay evidencia cuantitativa de su rendimiento, por lo que su adopcion en entornos criticos debe ir acompanada de pruebas internas.
 - Dependencia de codigo personalizado: el uso requiere `trust_remote_code=True`, lo que implica ejecutar codigo del autor no auditado externamente. Se recomienda revisar el codigo antes de usarlo en entornos sensibles.
-- Repositorio sin pesos publicados: el tamano del repo es 0.0 GB, lo que sugiere que los pesos no estan disponibles en HuggingFace en el momento de la consulta, o que el modelo se distribuye por otros medios.
+- Repositorio sin pesos publicados: el tamano del repo es 0.0 GB, lo que sugiere que los pesos no estan disponibles en Hugging Face en el momento de la consulta, o que el modelo se distribuye por otros medios.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/seashyne/celestia-1.4b-moe
+- Hugging Face: https://huggingface.co/seashyne/celestia-1.4b-moe
 - Repositorio de referencia de DeepSeekMoE (arquitectura): https://github.com/deepseek-ai/DeepSeek-MoE
 - GitHub mencionado en la model card (no verificado): https://github.com/alenout/celestia

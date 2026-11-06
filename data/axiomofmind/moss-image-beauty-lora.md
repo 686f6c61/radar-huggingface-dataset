@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la información disponible. La �
 ## Comparativa con modelos similares
 | Modelo | Tipo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `axiomofmind/Moss-image-beauty-lora` | Adaptador LoRA de estilo para MOSS-Image | 504 tensores; 70,93 MiB por checkpoint | No aplica | Sin benchmarks publicados; evaluación cualitativa local | Apache-2.0 | HuggingFace |
-| `OpenMOSS-Team/MOSS-Image-SFT` | Modelo base text-to-image | No disponible | No disponible | No disponible | No disponible | HuggingFace |
-| `OpenMOSS-Team/MOSS-Image-Base` | Modelo base text-to-image, padre de entrenamiento | No disponible | No disponible | No disponible | No disponible | HuggingFace |
+| `axiomofmind/Moss-image-beauty-lora` | Adaptador LoRA de estilo para MOSS-Image | 504 tensores; 70,93 MiB por checkpoint | No aplica | Sin benchmarks publicados; evaluación cualitativa local | Apache-2.0 | Hugging Face |
+| `OpenMOSS-Team/MOSS-Image-SFT` | Modelo base text-to-image | No disponible | No disponible | No disponible | No disponible | Hugging Face |
+| `OpenMOSS-Team/MOSS-Image-Base` | Modelo base text-to-image, padre de entrenamiento | No disponible | No disponible | No disponible | No disponible | Hugging Face |
 
 No se dispone de información sobre otros adaptadores LoRA de retrato o belleza comparables en la búsqueda proporcionada. La comparación directa con MOSS-Image-SFT y MOSS-Image-Base se limita a su relación como modelo base y a la compatibilidad declarada; no hay datos de parámetros, contexto, licencia o rendimiento de los modelos base en la información disponible.
 
@@ -85,7 +85,7 @@ No se dispone de información sobre otros adaptadores LoRA de retrato o belleza 
 - No dispone de tool calling, agentes, visión de entrada, audio ni razonamiento multi-paso; su alcance es exclusivamente la generación de imágenes.
 
 ## Enlaces
-- [Modelo en HuggingFace](https://huggingface.co/axiomofmind/Moss-image-beauty-lora)
+- [Modelo en Hugging Face](https://huggingface.co/axiomofmind/Moss-image-beauty-lora)
 - [Conversión GGUF del LoRA](https://huggingface.co/axiomofmind/Moss-image-beauty-lora-GGUF)
 - [MOSS-Image-SFT](https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT)
 - [MOSS-Image-Base](https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base)

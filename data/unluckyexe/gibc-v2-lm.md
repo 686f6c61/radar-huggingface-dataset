@@ -89,10 +89,10 @@ Evaluacion realizada con lm-evaluation-harness 0.4.13, `add_bos_token=True` y au
 
 | Modelo | Parametros | Contexto | Licencia | Idiomas | Disponibilidad |
 |---|---|---|---|---|---|
-| gibc-v2-lm | 49,8 M | 1.024 tokens | Apache 2.0 | Ingles | HuggingFace + codigo en GitHub |
-| GPT-2 small | 124 M | 1.024 tokens | MIT | Ingles | HuggingFace, ampliamente soportado |
-| Pythia-70M | 70 M | 2.048 tokens | Apache 2.0 | Ingles | HuggingFace |
-| GIBC-43M | ~43 M | No disponible | No disponible | No disponible | HuggingFace/GitHub (proyecto GIBC V2) |
+| gibc-v2-lm | 49,8 M | 1.024 tokens | Apache 2.0 | Ingles | Hugging Face + codigo en GitHub |
+| GPT-2 small | 124 M | 1.024 tokens | MIT | Ingles | Hugging Face, ampliamente soportado |
+| Pythia-70M | 70 M | 2.048 tokens | Apache 2.0 | Ingles | Hugging Face |
+| GIBC-43M | ~43 M | No disponible | No disponible | No disponible | Hugging Face/GitHub (proyecto GIBC V2) |
 
 No se dispone de resultados de benchmarks comparables publicados para GPT-2 small, Pythia-70M o GIBC-43M en la informacion proporcionada, por lo que no se incluyen cifras de rendimiento relativo. Los modelos comparables pertenecen a la misma categoria de tamano (sub-150M) pero emplean tokenizadores, recetas y volumenes de datos distintos, lo que dificulta la comparacion directa.
 
@@ -110,7 +110,7 @@ No se dispone de resultados de benchmarks comparables publicados para GPT-2 smal
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Unluckyexe/gibc-v2-lm
+- Modelo en Hugging Face: https://huggingface.co/Unluckyexe/gibc-v2-lm
 - Repositorio de codigo, logs y evaluaciones: https://github.com/Unluckyathecking/gibc-v2-lm
 - Pagina oficial de Global Innovation Build Challenge V2: https://gibc-v2.devpost.com/
 - Galeria de proyectos de GIBC V2: https://gibc-v2.devpost.com/project-gallery?page=13

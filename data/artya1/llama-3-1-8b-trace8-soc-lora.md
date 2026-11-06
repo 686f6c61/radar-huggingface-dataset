@@ -77,7 +77,7 @@ El propio autor advierte que el 0,333 de Jaccard procede únicamente de la muest
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama-3.1-8B-Trace8-SOC-LoRA | 8B (adaptador LoRA sobre base 4 bits) | 4096 en entrenamiento | Triaje SOC con salida JSON | Llama 3.1 Community | HuggingFace, 0 descargas |
+| Llama-3.1-8B-Trace8-SOC-LoRA | 8B (adaptador LoRA sobre base 4 bits) | 4096 en entrenamiento | Triaje SOC con salida JSON | Llama 3.1 Community | Hugging Face, 0 descargas |
 | Llama 3.1 8B Instruct (base) | 8B | 128K | Propósito general, instrucciones | Llama 3.1 Community | Ampliamente disponible |
 | Adaptadores SOC públicos comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -99,7 +99,7 @@ No se dispone de información sobre adaptadores equivalentes de triaje SOC con l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Artya1/Llama-3.1-8B-Trace8-SOC-LoRA
+- Modelo en Hugging Face: https://huggingface.co/Artya1/Llama-3.1-8B-Trace8-SOC-LoRA
 - Modelo base: https://huggingface.co/unsloth/Llama-3.1-8B-Instruct-unsloth-bnb-4bit
 - Llama 3.1 (Meta): https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Licencia Llama 3.1 Community: https://www.llama.com/llama3_1/license/

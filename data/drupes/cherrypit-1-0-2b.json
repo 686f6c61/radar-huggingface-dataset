@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "DRUPEs/CherryPit-1.0-2B",
+  "slug": "drupes-cherrypit-1-0-2b",
+  "author": "DRUPEs",
+  "url": "https://huggingface.co/DRUPEs/CherryPit-1.0-2B",
+  "created_at": "2026-11-05T22:22:55.000Z",
+  "updated_at": "2026-11-05T23:08:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "code",
+    "coding",
+    "reasoning",
+    "tool-calling",
+    "on-device",
+    "small-language-model",
+    "minicpm",
+    "conversational",
+    "en",
+    "base_model:openbmb/MiniCPM5-2B",
+    "base_model:finetune:openbmb/MiniCPM5-2B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 22,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 5033556752,
+  "storage_human": "5.0 GB",
+  "base_model": "openbmb/MiniCPM5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DRUPEs/CherryPit-1.0-2B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/DRUPEs/CherryPit-1.0-2B-GGUF",
+      "snippet": "CherryPit-1.0-2B-GGUF CherryPit-1.0-2B is a ~2B-parameter language model from DRUPEs (Dense Representation & Unified Parameter Encoding Systems), built on MiniCPM5-2B. It's a drop-in upgrade with overall improvements: a comparatively large gain in coding, small gains in math and reasoning, and the same size, architecture and speed as the base model."
+    },
+    {
+      "title": "Dense Representation & Unified Parameter Encoding Systems",
+      "url": "https://huggingface.co/DRUPEs",
+      "snippet": "A drupe is a fruit with a hard stone in the middle, like a cherry. That's our idea of a good model: small, sweet, and solid at the center. We make compact models that run on your own machine. 🌱 Our models 🍒 CherryPit-1.0-2B-GGUF"
+    }
+  ]
+}

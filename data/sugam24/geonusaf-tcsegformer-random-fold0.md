@@ -86,6 +86,6 @@ No se dispone de informacion sobre modelos comparables en la misma tarea y datas
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sugam24/geonusaf-tcsegformer-random-fold0
+- Repositorio Hugging Face: https://huggingface.co/sugam24/geonusaf-tcsegformer-random-fold0
 - Variante con block split (fold 1): https://huggingface.co/sugam24/geonusaf-tcsegformer-block-fold1
 - Variante con UnetFormer (random fold 0): https://huggingface.co/sugam24/geonusaf-unetformer-r18-random-fold0

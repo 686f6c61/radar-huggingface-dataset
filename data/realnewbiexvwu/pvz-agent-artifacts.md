@@ -85,7 +85,7 @@ No se ha identificado un modelo comparable en la informacion disponible: este re
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/realnewbiexvwu/pvz-agent-artifacts
+- Repositorio en Hugging Face: https://huggingface.co/realnewbiexvwu/pvz-agent-artifacts
 - Codigo del proyecto en GitHub: mencionado en la model card, enlace no disponible en la informacion proporcionada
 - PvZ-Portable-agent (entorno/reimplementacion para agentes): https://github.com/mindorigin150/PvZ-Portable-agent
 - PZ AI agent (PZwiki, proyecto distinto): https://pzwiki.net/wiki/PZ_AI_agent

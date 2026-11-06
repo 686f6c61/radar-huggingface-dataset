@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `amd/DeepSeek-R1-Distill-Qwen-1.5B_rai_1.9.0_m_1.0.1_npu` es una distribucion del modelo DeepSeek-R1-Distill-Qwen-1.5B, publicada por AMD en HuggingFace y optimizada para su ejecucion en las NPU (unidades de procesamiento neuronal) de los procesadores AMD Ryzen AI mediante el stack RAI (Ryzen AI). Se trata de una destilacion del modelo de razonamiento DeepSeek-R1 sobre la base Qwen2.5-1.5B, empaquetada en formato ONNX con el sufijo `m_1.0.1_npu`, que identifica la version del modelo compilado y su destino de hardware.
+El modelo `amd/DeepSeek-R1-Distill-Qwen-1.5B_rai_1.9.0_m_1.0.1_npu` es una distribucion del modelo DeepSeek-R1-Distill-Qwen-1.5B, publicada por AMD en Hugging Face y optimizada para su ejecucion en las NPU (unidades de procesamiento neuronal) de los procesadores AMD Ryzen AI mediante el stack RAI (Ryzen AI). Se trata de una destilacion del modelo de razonamiento DeepSeek-R1 sobre la base Qwen2.5-1.5B, empaquetada en formato ONNX con el sufijo `m_1.0.1_npu`, que identifica la version del modelo compilado y su destino de hardware.
 
 El modelo original DeepSeek-R1-Distill-Qwen-1.5B, desarrollado por DeepSeek, esta disenado para tareas de razonamiento paso a paso, matematicas y generacion de codigo, con un enfoque en cadenas de pensamiento explicitas. Esta variante de AMD no anade capacidades nuevas al modelo base, sino que lo adapta para inferencia local en hardware de PC con NPU integrada, lo que permite ejecutar un modelo de razonamiento de 1.5B parametros sin depender de una GPU dedicada.
 
-La relevancia de esta ficha radica en que ejemplifica la tendencia de despliegue de modelos open source en hardware de consumo con aceleracion NPU, un segmento en crecimiento para asistentes locales, herramientas de desarrollo y aplicaciones de privacidad. El acceso al repositorio esta restringido (gated) y requiere aceptar condiciones en HuggingFace.
+La relevancia de esta ficha radica en que ejemplifica la tendencia de despliegue de modelos open source en hardware de consumo con aceleracion NPU, un segmento en crecimiento para asistentes locales, herramientas de desarrollo y aplicaciones de privacidad. El acceso al repositorio esta restringido (gated) y requiere aceptar condiciones en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -63,15 +63,15 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato / destino | Disponibilidad |
 |---|---|---|---|---|---|
-| amd/DeepSeek-R1-Distill-Qwen-1.5B_rai_1.9.0_m_1.0.1_npu | 1.5B | no disponible | MIT | ONNX para NPU Ryzen AI | Gated en HuggingFace |
-| deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B | 1.5B | no disponible en esta ficha | MIT | safetensors | Publico en HuggingFace |
-| Qwen2.5-1.5B | 1.5B | no disponible en esta ficha | no disponible en esta ficha | safetensors, GGUF | Publico en HuggingFace |
+| amd/DeepSeek-R1-Distill-Qwen-1.5B_rai_1.9.0_m_1.0.1_npu | 1.5B | no disponible | MIT | ONNX para NPU Ryzen AI | Gated en Hugging Face |
+| deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B | 1.5B | no disponible en esta ficha | MIT | safetensors | Publico en Hugging Face |
+| Qwen2.5-1.5B | 1.5B | no disponible en esta ficha | no disponible en esta ficha | safetensors, GGUF | Publico en Hugging Face |
 
 La comparativa se limita a parametros y licencia porque no se dispone de datos de rendimiento ni de contexto en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- El acceso al repositorio esta restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar los pesos.
+- El acceso al repositorio esta restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar los pesos.
 - El modelo esta orientado exclusivamente al ingles segun los tags; el rendimiento en castellano no esta garantizado.
 - Al ser una destilacion de 1.5B parametros, la capacidad de razonamiento es inferior a la de modelos mayores de la familia DeepSeek-R1; puede producir cadenas de pensamiento plausibles pero incorrectas.
 - Riesgo de alucinacion en hechos, citas y calculos complejos, comun en modelos pequenos.
@@ -81,7 +81,7 @@ La comparativa se limita a parametros y licencia porque no se dispone de datos d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/amd/DeepSeek-R1-Distill-Qwen-1.5B_rai_1.9.0_m_1.0.1_npu
+- Repositorio Hugging Face: https://huggingface.co/amd/DeepSeek-R1-Distill-Qwen-1.5B_rai_1.9.0_m_1.0.1_npu
 - Modelo base original (DeepSeek-R1-Distill-Qwen-1.5B): https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 - Repositorio DeepSeek-R1: https://github.com/deepseek-ai/DeepSeek-R1
 - Documentacion de Ryzen AI (AMD): no disponible en la informacion proporcionada.

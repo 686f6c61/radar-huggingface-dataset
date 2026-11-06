@@ -88,6 +88,6 @@ El adaptador no aporta mejoras de calidad sobre el base (no hay benchmarks), per
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/UltranetCommand/Qwen2.5-3B-FrozenG-Adapter
+- Hugging Face: https://huggingface.co/UltranetCommand/Qwen2.5-3B-FrozenG-Adapter
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Technical report de Qwen2.5: https://arxiv.org/abs/2412.15115

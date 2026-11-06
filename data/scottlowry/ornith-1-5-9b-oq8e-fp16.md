@@ -4,7 +4,7 @@
 
 Ornith-1.5-9B-oQ8e-fp16 es una cuantización mixta de precisión del modelo Ornith-1.5-9B, realizada por Scott Lowry utilizando la librería oQ (oMLX v0.6.2). El modelo base, desarrollado por Ornith AI, pertenece a una familia de modelos de código abierto orientados a la codificación agéntica, con un enfoque en el auto-scaffolding (construcción automática de andamiajes de razonamiento) y la auto-mejora iterativa. Esta versión cuantizada en 8 bits con grupo de 64 está pensada para despliegue eficiente en entornos Apple Silicon mediante MLX, reduciendo el uso de memoria y acelerando la inferencia sin un sacrificio excesivo de calidad.
 
-La cuantización mantiene el formato de pesos MLX safetensors, lo que la hace directamente utilizable con el ecosistema MLX (mlx-lm, oMLX, etc.). El repositorio ocupa 11.4 GB, aunque el número de parámetros reportado en los safetensors es de 2.975.030.512, una cifra inusualmente baja para un modelo denominado "9B"; es posible que se trate de una cuantización selectiva o de una métrica distinta a la habitual. La ficha no incluye licencia explícita en HuggingFace, pero la página de Ollama para el modelo base indica licencia MIT, globalmente accesible y sin limitaciones regionales.
+La cuantización mantiene el formato de pesos MLX safetensors, lo que la hace directamente utilizable con el ecosistema MLX (mlx-lm, oMLX, etc.). El repositorio ocupa 11.4 GB, aunque el número de parámetros reportado en los safetensors es de 2.975.030.512, una cifra inusualmente baja para un modelo denominado "9B"; es posible que se trate de una cuantización selectiva o de una métrica distinta a la habitual. La ficha no incluye licencia explícita en Hugging Face, pero la página de Ollama para el modelo base indica licencia MIT, globalmente accesible y sin limitaciones regionales.
 
 ## Especificaciones tecnicas
 
@@ -16,7 +16,7 @@ La cuantización mantiene el formato de pesos MLX safetensors, lo que la hace di
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | 8 bits, group size 64 (oQ mixed-precision) |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible en HuggingFace; MIT según página de Ollama para el modelo base |
+| Licencia | no disponible en Hugging Face; MIT según página de Ollama para el modelo base |
 | Formato de pesos | MLX safetensors |
 
 ## Arquitectura y entrenamiento
@@ -62,13 +62,13 @@ No se dispone de datos de rendimiento comparativo para esta cuantización espec�
 - Sesgos y alucinaciones: al ser una cuantización de un modelo base sin datos adicionales, se heredan los sesgos y riesgos de alucinación del modelo original, que no han sido documentados en la información disponible.
 - Pérdida de precisión: la cuantización a 8 bits puede degradar ligeramente la calidad de las respuestas en tareas de razonamiento complejo, aunque con group size 64 se espera un impacto mínimo.
 - Compatibilidad limitada: el formato MLX safetensors solo es utilizable directamente en ecosistemas Apple Silicon; para otros entornos se requiere conversión, lo que puede introducir incompatibilidades.
-- Licencia incierta: aunque la página de Ollama indica MIT para el modelo base, la model card de HuggingFace no especifica licencia, lo que genera incertidumbre legal para uso comercial. Se recomienda contactar al autor o a Ornith AI para confirmar.
+- Licencia incierta: aunque la página de Ollama indica MIT para el modelo base, la model card de Hugging Face no especifica licencia, lo que genera incertidumbre legal para uso comercial. Se recomienda contactar al autor o a Ornith AI para confirmar.
 - Contexto no documentado: no se ha publicado la longitud de contexto soportada, lo que dificulta planificar su uso en tareas que requieran ventanas largas.
 - Soporte de herramientas no confirmado: aunque su orientación agéntica sugiere tool calling, no hay documentación explícita al respecto en la información recopilada.
 
 ## Enlaces
 
-- HuggingFace del modelo cuantizado: https://huggingface.co/scottlowry/Ornith-1.5-9B-oQ8e-fp16
+- Hugging Face del modelo cuantizado: https://huggingface.co/scottlowry/Ornith-1.5-9B-oQ8e-fp16
 - Página de modelos cuantizados de Ornith-1.5-9B: https://huggingface.co/models?other=base_model:quantized:ornith-ai/Ornith-1.5-9B
 - Anuncio oficial de Ornith-1.5: https://ornith.ai/ornith_1_5.html
 - Guía de Ornith AI (modelos, VRAM, benchmarks): https://ornith.online/

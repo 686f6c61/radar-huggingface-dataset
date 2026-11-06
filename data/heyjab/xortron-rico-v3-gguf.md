@@ -96,7 +96,7 @@ No se dispone de información suficiente sobre modelos alternativos de la misma 
 
 - Modelo sin alineación de rechazo: los tags `uncensored`, `abliterated`, `heretic`, `harmful` y `toxic` indican que el modelo no incorpora salvaguardas y puede generar contenido dañino, ofensivo o ilegal. No es apto para uso público sin supervisión.
 - Uso restringido por acuerdo: la model card establece un acuerdo de acceso y uso autorizado que circunscribe el acceso a perfiles profesionales, académicos, legales, gubernamentales o de seguridad. El uso para facilitar actividad delictiva queda explícitamente prohibido.
-- Licencia no declarada: los metadatos de HuggingFace no indican licencia, mientras que la model card impone un acuerdo de uso. Esta discrepancia genera incertidumbre jurídica sobre la redistribución, la modificación y el uso comercial, que debe resolverse antes de cualquier despliegue.
+- Licencia no declarada: los metadatos de Hugging Face no indican licencia, mientras que la model card impone un acuerdo de uso. Esta discrepancia genera incertidumbre jurídica sobre la redistribución, la modificación y el uso comercial, que debe resolverse antes de cualquier despliegue.
 - Riesgo de alucinación: no hay evaluaciones publicadas. Al tratarse de una fusión lineal de dos checkpoints y de una cuantización posterior, la degradación de coherencia y factualidad es plausible, especialmente en cuantizaciones bajas.
 - Ausencia de datos de entrenamiento: se desconoce el corpus, el número de tokens y los métodos de alineación aplicados en la cadena de derivación, lo que impide anticipar sesgos específicos o limitaciones idiomáticas.
 - Idiomas no declarados: no se especifica ningún idioma soportado. El comportamiento multilingüe es indeterminado y debe verificarse empíricamente antes de usarlo en producción.
@@ -108,7 +108,7 @@ No se dispone de información suficiente sobre modelos alternativos de la misma 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Heyjab/XORTRON-RICO-v3-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Heyjab/XORTRON-RICO-v3-GGUF
 - Modelo base: https://huggingface.co/darkc0de/XORTRON-RICO-v3
 - Componente de la fusión: https://huggingface.co/darkc0de/RICO
 - Componente de la fusión: https://huggingface.co/darkc0de/RICO-v2

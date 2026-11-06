@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/urd-arab-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed3407` es un modelo de generacion de texto de tipo GPT-2 con 38.038.528 parametros (aproximadamente 38 millones), publicado por el usuario francesca9805 en HuggingFace. Se trata de un ajuste fino (fine-tuning) supervisado del modelo base `francesca9805/urd-arab-10mb-ppt-Dp-10mb-packed-bfdiso_seed3407`, realizado con la libreria TRL de HuggingFace mediante SFT (supervised fine-tuning). El identificador del modelo sugiere un experimento sobre un corpus empaquetado de 10 MB con contenido en urdu y arabe, un checkpoint intermedio (500) y la semilla 3407, aunque estos extremos no estan confirmados en la documentacion oficial.
+El modelo `francesca9805/urd-arab-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed3407` es un modelo de generacion de texto de tipo GPT-2 con 38.038.528 parametros (aproximadamente 38 millones), publicado por el usuario francesca9805 en Hugging Face. Se trata de un ajuste fino (fine-tuning) supervisado del modelo base `francesca9805/urd-arab-10mb-ppt-Dp-10mb-packed-bfdiso_seed3407`, realizado con la libreria TRL de Hugging Face mediante SFT (supervised fine-tuning). El identificador del modelo sugiere un experimento sobre un corpus empaquetado de 10 MB con contenido en urdu y arabe, un checkpoint intermedio (500) y la semilla 3407, aunque estos extremos no estan confirmados en la documentacion oficial.
 
 El modelo resuelve la tarea generica de generacion de texto condicionada por prompt conversacional, y su relevancia es fundamentalmente academica y experimental: se enmarca en una linea de trabajo sobre tokenizadores y modelos pequenos multilingues, vinculada a la Universidad de Groningen (el enlace de Weights & Biases apunta a la organizacion `f-padovani-university-of-groningen`). No es un modelo orientado a produccion ni a competicion con modelos frontera, sino una pieza de investigacion reproducible.
 
@@ -12,7 +12,7 @@ En el momento de redactar esta ficha, el modelo acumula 0 descargas y 0 "likes",
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-2 (transformer decoder-only, segun el tag `gpt2` de HuggingFace) |
+| Arquitectura | GPT-2 (transformer decoder-only, segun el tag `gpt2` de Hugging Face) |
 | Parametros totales | 38.038.528 |
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -66,10 +66,10 @@ La model card no incluye ninguna tabla de evaluacion (MMLU, HumanEval, GSM8K, pe
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `francesca9805/urd-arab-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed3407` | 38,0 M | no disponible | no disponible | HuggingFace, 0 descargas | Ajuste fino SFT sobre GPT-2 con corpus de 10 MB |
+| `francesca9805/urd-arab-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed3407` | 38,0 M | no disponible | no disponible | Hugging Face, 0 descargas | Ajuste fino SFT sobre GPT-2 con corpus de 10 MB |
 | GPT-2 small (OpenAI) | 124 M | 1024 tokens | MIT | Ampliamente disponible | Referencia de la familia; el doble de parametros aproximadamente |
-| DistilGPT-2 (HuggingFace) | 82 M | 1024 tokens | Apache-2.0 | Ampliamente disponible | Version destilada, 6 capas |
-| SmolLM-135M (HuggingFace) | 135 M | 2048 tokens | Apache-2.0 | Ampliamente disponible | Entrenado sobre corpus mucho mayor y con evaluacion publicada |
+| DistilGPT-2 (Hugging Face) | 82 M | 1024 tokens | Apache-2.0 | Ampliamente disponible | Version destilada, 6 capas |
+| SmolLM-135M (Hugging Face) | 135 M | 2048 tokens | Apache-2.0 | Ampliamente disponible | Entrenado sobre corpus mucho mayor y con evaluacion publicada |
 
 No se dispone de datos de rendimiento comparativos entre este modelo y las alternativas citadas, ya que no se ha publicado ninguna evaluacion. La comparacion se limita, por tanto, a parametros, contexto y licencia de modelos de la misma categoria de tamano, y estos datos de terceros deben verificarse en sus respectivas model cards antes de usarse.
 
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparativos entre este modelo y las alter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/urd-arab-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/urd-arab-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed3407
 - Modelo base: https://huggingface.co/francesca9805/urd-arab-10mb-ppt-Dp-10mb-packed-bfdiso_seed3407
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/p34ipp3y
 - Repositorio de TRL: https://github.com/huggingface/trl

@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|---|
-| Mtrini-SVL-1.2 LoRA Adapter | Adaptador sobre base 8B; parámetros del adaptador no disponibles | No disponible | No disponible | No disponible | HuggingFace, 0 descargas, 0 likes | Adaptador de identidad experimental; no es autónomo |
-| Qwen3-VL-8B-Instruct (base) | 8B según denominación | No disponible | No disponible | No disponible | HuggingFace | Modelo base necesario para usar el adaptador; capacidades multimodales |
+| Mtrini-SVL-1.2 LoRA Adapter | Adaptador sobre base 8B; parámetros del adaptador no disponibles | No disponible | No disponible | No disponible | Hugging Face, 0 descargas, 0 likes | Adaptador de identidad experimental; no es autónomo |
+| Qwen3-VL-8B-Instruct (base) | 8B según denominación | No disponible | No disponible | No disponible | Hugging Face | Modelo base necesario para usar el adaptador; capacidades multimodales |
 | Otros adaptadores LoRA de identidad para Qwen3-VL | No disponible | No disponible | No disponible | No disponible | No disponible | No se han encontrado datos comparables en la información proporcionada |
 
 ## Limitaciones y advertencias

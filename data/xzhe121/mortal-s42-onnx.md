@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Formato | Tarea | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Mortal-S42-onnx (este) | ONNX | Decisión en mahjong riichi | no disponible | no aplica | Apache 2.0 (pesos) / AGPL-3.0-or-later (estructura) | HuggingFace, 0 descargas |
-| haor/Mortal-S42 | PyTorch | Decisión en mahjong riichi | no disponible | no aplica | Apache 2.0 | HuggingFace (modelo base) |
+| Mortal-S42-onnx (este) | ONNX | Decisión en mahjong riichi | no disponible | no aplica | Apache 2.0 (pesos) / AGPL-3.0-or-later (estructura) | Hugging Face, 0 descargas |
+| haor/Mortal-S42 | PyTorch | Decisión en mahjong riichi | no disponible | no aplica | Apache 2.0 | Hugging Face (modelo base) |
 | Mortal (repositorio original) | PyTorch | Decisión en mahjong riichi | no disponible | no aplica | AGPL-3.0-or-later | GitHub |
 
 No se dispone de datos de rendimiento comparables entre estas variantes más allá de la equivalencia numérica reportada frente al modelo base.
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparables entre estas variantes más all
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xzhe121/Mortal-S42-onnx
+- Modelo en Hugging Face: https://huggingface.co/xzhe121/Mortal-S42-onnx
 - Modelo base: https://huggingface.co/haor/Mortal-S42
 - Repositorio Mortal: https://github.com/Equim-chan/Mortal
 - Aplicación mahjong-copilot: https://github.com/jason1yuan/mahjong-copilot

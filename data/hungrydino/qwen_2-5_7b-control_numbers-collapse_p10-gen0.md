@@ -72,6 +72,6 @@ No disponible. No se ha proporcionado informacion sobre modelos comparables. El 
 
 ## Enlaces
 
-- [HuggingFace - HungryDino/qwen_2.5_7b-control_numbers-collapse_p10-gen0](https://huggingface.co/HungryDino/qwen_2.5_7b-control_numbers-collapse_p10-gen0)
+- [Hugging Face - HungryDino/qwen_2.5_7b-control_numbers-collapse_p10-gen0](https://huggingface.co/HungryDino/qwen_2.5_7b-control_numbers-collapse_p10-gen0)
 - [Repositorio de Unsloth](https://github.com/unslothai/unsloth)
 - [Modelo base: unsloth/Qwen2.5-7B-Instruct](https://huggingface.co/unsloth/Qwen2.5-7B-Instruct)

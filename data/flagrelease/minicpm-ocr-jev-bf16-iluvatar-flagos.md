@@ -70,7 +70,7 @@ Referencia comparativa citada en la model card: Qwen3.5-397B-A17B obtiene un AUR
 
 | Modelo | Parámetros | Función | AUROC JevOCRBench | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniCPM-OCR Jev (esta ficha) | 2B | Verificación de calidad OCR | 0,936 | Apache 2.0 | HuggingFace y ModelScope |
+| MiniCPM-OCR Jev (esta ficha) | 2B | Verificación de calidad OCR | 0,936 | Apache 2.0 | Hugging Face y ModelScope |
 | MiniCPM-OCR 1.0 | 1,3B | Parsing OCR directo | no disponible | no disponible en la información | Open source según model card |
 | Qwen3.5-397B-A17B | 397B totales (17B activos, MoE) | Modelo generalista multimodal | 0,938 | no disponible | no disponible |
 
@@ -90,7 +90,7 @@ La comparación relevante es la de Jev frente a Qwen3.5-397B-A17B: una diferenci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/FlagRelease/MiniCPM-OCR-Jev-BF16-iluvatar-FlagOS
+- Hugging Face: https://huggingface.co/FlagRelease/MiniCPM-OCR-Jev-BF16-iluvatar-FlagOS
 - Contenedor Docker: `harbor.baai.ac.cn/flagrelease-public/torch-fl-iluvatar:jev-ocr-rm-2b-20261023`
 - Descarga de pesos vía ModelScope: `modelscope download --model FlagRelease/MiniCPM-OCR-Jev-BF16-iluvatar-FlagOS --local_dir /data2/models/Jev-OCR-RM-2B`
 - Repositorios de los componentes FlagOS citados en la model card: FlagTree, FlagGems, FlagCX (sin URL directa en la información disponible)

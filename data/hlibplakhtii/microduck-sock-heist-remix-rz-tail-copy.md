@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Observaciones / acciones | Frecuencia | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `HlibPlakhtii/microduck-sock-heist-remix-rz-tail-copy` (esta ficha) | Política RL para microduck | 61 / 14 | 50 Hz | no disponible | HuggingFace, 0 descargas |
-| `rumezhak/microduck-sock-heist-remix-rz-tail` | Política RL para microduck (original) | 61 / 14 | 50 Hz | no disponible | HuggingFace |
+| `HlibPlakhtii/microduck-sock-heist-remix-rz-tail-copy` (esta ficha) | Política RL para microduck | 61 / 14 | 50 Hz | no disponible | Hugging Face, 0 descargas |
+| `rumezhak/microduck-sock-heist-remix-rz-tail` | Política RL para microduck (original) | 61 / 14 | 50 Hz | no disponible | Hugging Face |
 | Otras políticas de microduck en `pollen-robotics/microduck_rl` | Políticas RL para microduck | no disponible | no disponible | no disponible | Repositorio de entrenamiento |
 
 No se dispone de información sobre políticas comparables de otros robots o de otros autores dentro de la información proporcionada.
@@ -85,7 +85,7 @@ No se dispone de información sobre políticas comparables de otros robots o de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HlibPlakhtii/microduck-sock-heist-remix-rz-tail-copy
+- Modelo en Hugging Face: https://huggingface.co/HlibPlakhtii/microduck-sock-heist-remix-rz-tail-copy
 - Modelo base: https://huggingface.co/rumezhak/microduck-sock-heist-remix-rz-tail
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento RL: `pollen-robotics/microduck_rl` (rama `main`, commit `5cee942d8`; no se proporciona URL directa en la información disponible)

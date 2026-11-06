@@ -23,11 +23,11 @@ La relevancia practica es limitada por ahora: el repositorio acumula 0 descargas
 | Libreria de carga | PEFT (compatible con Transformers y TRL) |
 | Pipeline declarado | text-generation |
 | Tamano del repositorio | 1,1 GB |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 
 ## Arquitectura y entrenamiento
 
-El artefacto es un adaptador LoRA sobre `Qwen/Qwen3-4B-Instruct-2507`, un transformer decoder-only denso de ~4B parametros con atencion por consultas agrupadas (GQA) y entrenamiento post-entrenamiento orientado a instrucciones. Las etiquetas del repositorio (`peft`, `lora`, `sft`, `trl`) indican que la adaptacion se realizo mediante ajuste supervisado con la libreria TRL de HuggingFace, congelando los pesos originales e inyectando matrices de bajo rango en determinadas capas. El repositorio incluye la referencia `arxiv:1910.09700` en los tags; no se ha verificado en esta ficha el contenido de dicha publicacion.
+El artefacto es un adaptador LoRA sobre `Qwen/Qwen3-4B-Instruct-2507`, un transformer decoder-only denso de ~4B parametros con atencion por consultas agrupadas (GQA) y entrenamiento post-entrenamiento orientado a instrucciones. Las etiquetas del repositorio (`peft`, `lora`, `sft`, `trl`) indican que la adaptacion se realizo mediante ajuste supervisado con la libreria TRL de Hugging Face, congelando los pesos originales e inyectando matrices de bajo rango en determinadas capas. El repositorio incluye la referencia `arxiv:1910.09700` en los tags; no se ha verificado en esta ficha el contenido de dicha publicacion.
 
 No se dispone de informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset, el rango (`r`), el `alpha`, los modulos objetivo, la tasa de aprendizaje ni si hubo etapas posteriores de RLHF o DPO. El tamano del repositorio (1,1 GB) es considerable para un adaptador LoRA sobre un modelo de 4B: un LoRA de rango bajo en las capas habituales suele ocupar decenas o cientos de megabytes, de modo que ese tamano podria indicar un rango elevado, un conjunto amplio de modulos objetivo, precision fp32 o la inclusion de varios checkpoints. Esta lectura es una inferencia a partir del tamano del repositorio y no esta confirmada.
 
@@ -84,7 +84,7 @@ Nota: los datos de los modelos comparativos proceden de su documentacion oficial
 ## Limitaciones y advertencias
 
 - Licencia no declarada: al no especificarse terminos, no puede asumirse uso comercial permitido del adaptador. La licencia Apache 2.0 del modelo base no cubre automaticamente los pesos derivados.
-- Acceso restringido: el repositorio esta gated y exige aceptar condiciones en HuggingFace, lo que dificulta su uso automatizado en pipelines.
+- Acceso restringido: el repositorio esta gated y exige aceptar condiciones en Hugging Face, lo que dificulta su uso automatizado en pipelines.
 - Ausencia total de validacion externa: 0 descargas y 0 likes implican que el artefacto no ha sido probado por terceros.
 - Dataset de SFT desconocido: no puede evaluarse el riesgo de sesgos, toxicidad ni la calidad de las respuestas ajustadas.
 - Riesgo de olvido catastrofico: un SFT agresivo puede degradar capacidades del modelo base no presentes en los datos de ajuste.
@@ -96,7 +96,7 @@ Nota: los datos de los modelos comparativos proceden de su documentacion oficial
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qxyz/sn56-i326-r2live
+- Modelo en Hugging Face: https://huggingface.co/qxyz/sn56-i326-r2live
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Referencia arXiv incluida en los tags: https://arxiv.org/abs/1910.09700
 - Libreria PEFT: https://github.com/huggingface/peft

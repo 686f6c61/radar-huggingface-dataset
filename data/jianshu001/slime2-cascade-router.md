@@ -68,6 +68,6 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jianshu001/slime2-cascade-router
+- Hugging Face: https://huggingface.co/Jianshu001/slime2-cascade-router
 - Repositorio del proyecto: https://github.com/Jianshu-She/llamacpp-routing
 - Documentación de routing: https://github.com/Jianshu-She/llamacpp-routing/blob/main/tools/server/README-routing.md

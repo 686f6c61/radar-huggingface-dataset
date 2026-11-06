@@ -24,7 +24,7 @@ Su relevancia practica es acotada pero muy concreta: permite obtener un estilo o
 | Modelo base | `m-a-p/YuE2-3B` (obligatorio; los adaptadores no funcionan por si solos) |
 | Rangos y alpha | AR: r=8, alpha=8. NAR: r=32, alpha=48 |
 | Tamano del repositorio | ~0,2 GB |
-| Fecha de publicacion | 21 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 21 de septiembre de 2026 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -73,9 +73,9 @@ No se dispone de datos comparativos en la informacion proporcionada sobre este m
 
 | Modelo | Parametros | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| YuE2-3B + LoRA TSFH (`monsterovich/yue2-steps-from-hell`) | Adaptadores sobre 3B | Generacion musical, especializacion de estilo orquestal de trailer | No disponible | HuggingFace; requiere `m-a-p/YuE2-3B` |
-| MusicGen (Meta) | 300M / 1,5B / 3,3B | Texto-a-musica autorregresivo | No verificada en la informacion disponible | Pesos publicos en HuggingFace/AudioCraft |
-| Stable Audio Open 1.0 | ~1,1B | Texto-a-audio/musica con modelo de difusion | No verificada en la informacion disponible | Pesos publicos en HuggingFace |
+| YuE2-3B + LoRA TSFH (`monsterovich/yue2-steps-from-hell`) | Adaptadores sobre 3B | Generacion musical, especializacion de estilo orquestal de trailer | No disponible | Hugging Face; requiere `m-a-p/YuE2-3B` |
+| MusicGen (Meta) | 300M / 1,5B / 3,3B | Texto-a-musica autorregresivo | No verificada en la informacion disponible | Pesos publicos en Hugging Face/AudioCraft |
+| Stable Audio Open 1.0 | ~1,1B | Texto-a-audio/musica con modelo de difusion | No verificada en la informacion disponible | Pesos publicos en Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -93,7 +93,7 @@ No se dispone de datos comparativos en la informacion proporcionada sobre este m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/monsterovich/yue2-steps-from-hell
+- Modelo en Hugging Face: https://huggingface.co/monsterovich/yue2-steps-from-hell
 - Modelo base: https://huggingface.co/m-a-p/YuE2-3B
 - Ejemplo de audio: https://huggingface.co/monsterovich/yue2-steps-from-hell/blob/main/tsfh_ar05_nar05_seed777.flac
 - Paper, blog tecnico, repositorio de codigo o demo adicionales: no disponibles en la informacion proporcionada.

@@ -67,7 +67,7 @@ No se dispone de datos de rendimiento ni de especificaciones detalladas de model
 
 | Modelo | Parametros | Contexto/ventana | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ERISLab/iwdd2027-eris | no disponible | 3,2 s (16 frames a 5 fps) | MIT | Pesos en HuggingFace |
+| ERISLab/iwdd2027-eris | no disponible | 3,2 s (16 frames a 5 fps) | MIT | Pesos en Hugging Face |
 | Alternativas de action spotting | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento ni de especificaciones detalladas de model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ERISLab/iwdd2027-eris
+- Modelo en Hugging Face: https://huggingface.co/ERISLab/iwdd2027-eris
 - Código del proyecto: https://github.com/arkel23/PEI2V_WasteVision27
 - Artículo: Rios, Hu y Lai, "Parameter-Efficient Image-to-Video Adaptation for Action Spotting of Illegal Waste Dumping", WACV 2027 Workshops (WasteVision)
 - Artículo del concurso: Greco et al., "The Evolution of Illegal Waste Dumping Detection in the Age of Foundation Models", WACV 2027 Workshops (WasteVision)

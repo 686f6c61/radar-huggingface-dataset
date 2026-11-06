@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `sundaycoil/note-taking-app` alojado en HuggingFace se presenta como una aplicación de toma de notas, no como un modelo de inteligencia artificial generativa. El autor es `sundaycoil` y el identificador sugiere un uso orientado a la región de Estados Unidos. A fecha de creación (2026-04-09) y última actualización (2026-08-14), el repositorio registra cero descargas y tres likes, lo que indica un proyecto incipiente o de baja difusión.
+El repositorio `sundaycoil/note-taking-app` alojado en Hugging Face se presenta como una aplicación de toma de notas, no como un modelo de inteligencia artificial generativa. El autor es `sundaycoil` y el identificador sugiere un uso orientado a la región de Estados Unidos. A fecha de creación (2026-04-09) y última actualización (2026-08-14), el repositorio registra cero descargas y tres likes, lo que indica un proyecto incipiente o de baja difusión.
 
 No se dispone de información técnica sobre arquitectura, parámetros, contexto, licencia o idiomas soportados. Tampoco se especifica el pipeline de procesamiento. Dado que no se trata de un modelo de lenguaje o de otro tipo de IA con especificaciones públicas, esta ficha se limita a reflejar la ausencia de datos y a advertir sobre la imposibilidad de evaluar sus capacidades técnicas.
 
@@ -57,4 +57,4 @@ No disponible. Al no tratarse de un modelo de IA con especificaciones públicas,
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sundaycoil/note-taking-app
+- Repositorio en Hugging Face: https://huggingface.co/sundaycoil/note-taking-app

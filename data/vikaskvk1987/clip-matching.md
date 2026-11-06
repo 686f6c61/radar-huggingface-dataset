@@ -71,8 +71,8 @@ No se dispone de datos de rendimiento para comparar con otros modelos CLIP. El m
 
 ## Enlaces
 
-- [HuggingFace - Vikaskvk1987/clip-matching](https://huggingface.co/Vikaskvk1987/clip-matching)
-- [Perfil de Vikaskvk1987 en HuggingFace](https://huggingface.co/Vikaskvk1987)
+- [Hugging Face - Vikaskvk1987/clip-matching](https://huggingface.co/Vikaskvk1987/clip-matching)
+- [Perfil de Vikaskvk1987 en Hugging Face](https://huggingface.co/Vikaskvk1987)
 - [Repositorio oficial de CLIP de OpenAI (GitHub)](https://github.com/openai/CLIP)
 - [Página de CLIP en OpenAI](https://openai.com/index/clip/)
 - [Implementación CLIP-Image-Text-Matching de kryptologyst (GitHub)](https://github.com/kryptologyst/CLIP-Image-Text-Matching)

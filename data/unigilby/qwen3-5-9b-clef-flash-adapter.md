@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| unigilby/Qwen3.5-9B-clef-flash-adapter | Adaptador LoRA sobre Qwen3.5-9B | Base de 9B + LoRA (rango 256) | no disponible | Apache-2.0 | HuggingFace (0 descargas) |
-| Cloudflare/clef-flash | Pesos fusionados del modelo de decisión | no disponible | no disponible | Apache-2.0 | HuggingFace (release oficial) |
-| Qwen/Qwen3.5-9B | Modelo base de chat | 9B | no disponible | no disponible en la información | HuggingFace |
+| unigilby/Qwen3.5-9B-clef-flash-adapter | Adaptador LoRA sobre Qwen3.5-9B | Base de 9B + LoRA (rango 256) | no disponible | Apache-2.0 | Hugging Face (0 descargas) |
+| Cloudflare/clef-flash | Pesos fusionados del modelo de decisión | no disponible | no disponible | Apache-2.0 | Hugging Face (release oficial) |
+| Qwen/Qwen3.5-9B | Modelo base de chat | 9B | no disponible | no disponible en la información | Hugging Face |
 
 La diferencia principal frente a Cloudflare/clef-flash es el formato: la release oficial son pesos fusionados, mientras que este repositorio es un adaptador que se aplica en tiempo de ejecución y permite compartir el base con el chat. Frente a Qwen/Qwen3.5-9B, añade la funcionalidad de decisión de Clef-Flash sin modificar las respuestas de chat.
 
@@ -90,7 +90,7 @@ La diferencia principal frente a Cloudflare/clef-flash es el formato: la release
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/unigilby/Qwen3.5-9B-clef-flash-adapter
+- Repositorio Hugging Face: https://huggingface.co/unigilby/Qwen3.5-9B-clef-flash-adapter
 - Modelo de decisión original: https://huggingface.co/Cloudflare/clef-flash
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - PR de TensorFold con el adaptador en tiempo de ejecución: https://github.com/ashhart/TensorFold/pull/1364

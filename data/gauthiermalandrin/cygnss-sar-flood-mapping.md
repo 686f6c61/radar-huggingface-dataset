@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `gauthiermalandrin/cygnss-sar-flood-mapping`, publicado por el usuario gauthiermalandrin, es un artefacto alojado en HuggingFace con licencia MIT y un tamano de repositorio de 0,2 GB. En el momento de la consulta acumula 0 descargas y 0 "likes", y no tiene una pipeline asociada en la plataforma ni una model card con contenido tecnico: el unico metadato declarado en el README es la licencia MIT. No se dispone, por tanto, de informacion verificada sobre arquitectura, parametros, contexto, datos de entrenamiento ni capacidades.
+El repositorio `gauthiermalandrin/cygnss-sar-flood-mapping`, publicado por el usuario gauthiermalandrin, es un artefacto alojado en Hugging Face con licencia MIT y un tamano de repositorio de 0,2 GB. En el momento de la consulta acumula 0 descargas y 0 "likes", y no tiene una pipeline asociada en la plataforma ni una model card con contenido tecnico: el unico metadato declarado en el README es la licencia MIT. No se dispone, por tanto, de informacion verificada sobre arquitectura, parametros, contexto, datos de entrenamiento ni capacidades.
 
 El identificador del repositorio sugiere un ambito de aplicacion relacionado con la teledeteccion: CYGNSS (Cyclone Global Navigation Satellite System) es una constelacion de satelites de la NASA que explota senales GNSS-R (reflectometria) para medir vientos de superficie, humedad del suelo e inundaciones, y SAR (Synthetic Aperture Radar) es la tecnologia radar de apertura sintetica usada habitualmente en cartografia de inundaciones. La combinacion "cygnss-sar-flood-mapping" apunta a un modelo o conjunto de pesos orientado a la fusion de observaciones GNSS-R y radar para delimitar superficies inundadas. Esta interpretacion procede unicamente del nombre del repositorio y no esta confirmada por ninguna documentacion publicada por el autor.
 
@@ -77,7 +77,7 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gauthiermalandrin/cygnss-sar-flood-mapping
+- Repositorio en Hugging Face: https://huggingface.co/gauthiermalandrin/cygnss-sar-flood-mapping
 - Paper: no disponible
 - Blog o articulo tecnico del autor: no disponible
 - Repositorio de codigo: no disponible

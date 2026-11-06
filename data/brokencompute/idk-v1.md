@@ -81,7 +81,7 @@ Otros modelos de abstención en la literatura no están disponibles en la inform
 
 ## Enlaces
 
-- [HuggingFace - BrokenCompute/IDK-v1](https://huggingface.co/BrokenCompute/IDK-v1)
+- [Hugging Face - BrokenCompute/IDK-v1](https://huggingface.co/BrokenCompute/IDK-v1)
 - [Archivo GGUF Q4_K_M](https://huggingface.co/BrokenCompute/IDK-v1/blob/main/IDK-v1-Q4_K_M.gguf)
 - [Archivo GGUF BF16](https://huggingface.co/BrokenCompute/IDK-v1/blob/main/IDK-v1-BF16.gguf)
 - [Modelo base: Qwen/Qwen3.5-4B](https://huggingface.co/Qwen/Qwen3.5-4B)

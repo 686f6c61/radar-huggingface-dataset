@@ -2,9 +2,9 @@
 
 ## Resumen
 
-smollm2-1.7b-gsm8k-v2-dpo es un ajuste fino del modelo SmolLM2 de 1.700 millones de parametros, publicado por el usuario EiadEssam en HuggingFace. El nombre del repositorio sugiere un entrenamiento en dos fases: primero un ajuste supervisado sobre el conjunto de datos GSM8K (problemas de matematicas de nivel escolar) y despues una fase de optimizacion por preferencias con DPO (Direct Preference Optimization), tal como indica la etiqueta `dpo` y la libreria TRL presente en los metadatos. El modelo esta pensado para generacion de texto conversacional.
+smollm2-1.7b-gsm8k-v2-dpo es un ajuste fino del modelo SmolLM2 de 1.700 millones de parametros, publicado por el usuario EiadEssam en Hugging Face. El nombre del repositorio sugiere un entrenamiento en dos fases: primero un ajuste supervisado sobre el conjunto de datos GSM8K (problemas de matematicas de nivel escolar) y despues una fase de optimizacion por preferencias con DPO (Direct Preference Optimization), tal como indica la etiqueta `dpo` y la libreria TRL presente en los metadatos. El modelo esta pensado para generacion de texto conversacional.
 
-La relevancia de esta ficha es limitada: se trata de un experimento personal con cero descargas y cero likes en el momento de la consulta, y la model card es la plantilla autogenerada por HuggingFace sin ningun campo completado. No hay informacion publicada sobre datos de entrenamiento, hiperparametros, evaluacion ni licencia. Todos los datos tecnicos que se presentan a continuacion provienen de los metadatos del repositorio (arquitectura `llama`, 1.711.376.384 parametros reales en safetensors, tamano de 3,4 GB) o de las caracteristicas conocidas del modelo base SmolLM2, que se indican explicitamente como tales.
+La relevancia de esta ficha es limitada: se trata de un experimento personal con cero descargas y cero likes en el momento de la consulta, y la model card es la plantilla autogenerada por Hugging Face sin ningun campo completado. No hay informacion publicada sobre datos de entrenamiento, hiperparametros, evaluacion ni licencia. Todos los datos tecnicos que se presentan a continuacion provienen de los metadatos del repositorio (arquitectura `llama`, 1.711.376.384 parametros reales en safetensors, tamano de 3,4 GB) o de las caracteristicas conocidas del modelo base SmolLM2, que se indican explicitamente como tales.
 
 Se recomienda tratar este modelo como una prueba de concepto reproducible mas que como un artefacto listo para produccion, dado que no existe documentacion verificable sobre su comportamiento, sus sesgos ni las condiciones de uso.
 
@@ -23,7 +23,7 @@ Se recomienda tratar este modelo como una prueba de concepto reproducible mas qu
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la del modelo base SmolLM2-1.7B de HuggingFace: un transformer decoder-only denso con atencion por grupos (GQA) y normalizacion RMSNorm, del que se heredan los 1.711 millones de parametros. El repositorio contiene unicamente los pesos ajustados; no se incluye configuracion modificada ni tokenizer propio, por lo que se asume compatibilidad directa con el tokenizer del modelo base.
+La arquitectura es la del modelo base SmolLM2-1.7B de Hugging Face: un transformer decoder-only denso con atencion por grupos (GQA) y normalizacion RMSNorm, del que se heredan los 1.711 millones de parametros. El repositorio contiene unicamente los pesos ajustados; no se incluye configuracion modificada ni tokenizer propio, por lo que se asume compatibilidad directa con el tokenizer del modelo base.
 
 Sobre el entrenamiento solo puede inferirse lo que sugiere el identificador: un ajuste supervisado (SFT) sobre GSM8K seguido de DPO con TRL. No hay informacion sobre el numero de pasos, el dataset de preferencias utilizado en la fase DPO, la composicion del conjunto de entrenamiento, hiperparametros (learning rate, batch size, regimen de precision) ni sobre si se aplicaron tecnicas como LoRA o ajuste completo. Tampoco se documenta ninguna innovacion tecnica adicional (decodificacion especulativa, atencion lineal, etc.). La model card no aporta ningun dato de entrenamiento ni de evaluacion.
 
@@ -64,16 +64,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| EiadEssam/smollm2-1.7b-gsm8k-v2-dpo | 1,7 B | no disponible (base: 8.192) | no disponible | HuggingFace, 0 descargas | Ajuste DPO sobre GSM8K, sin evaluacion publicada |
-| HuggingFaceTB/SmolLM2-1.7B-Instruct | 1,7 B | 8.192 tokens | Apache 2.0 | HuggingFace, ampliamente usado | Modelo base instruct oficial, con evaluacion publicada |
-| Qwen2.5-1.5B-Instruct | 1,5 B | 32.768 tokens | Apache 2.0 | HuggingFace, muy extendido | Mayor contexto y soporte multilingue declarado |
-| Llama-3.2-1B-Instruct | 1,2 B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, requiere aceptacion | Contexto mucho mayor y ecosistema maduro |
+| EiadEssam/smollm2-1.7b-gsm8k-v2-dpo | 1,7 B | no disponible (base: 8.192) | no disponible | Hugging Face, 0 descargas | Ajuste DPO sobre GSM8K, sin evaluacion publicada |
+| HuggingFaceTB/SmolLM2-1.7B-Instruct | 1,7 B | 8.192 tokens | Apache 2.0 | Hugging Face, ampliamente usado | Modelo base instruct oficial, con evaluacion publicada |
+| Qwen2.5-1.5B-Instruct | 1,5 B | 32.768 tokens | Apache 2.0 | Hugging Face, muy extendido | Mayor contexto y soporte multilingue declarado |
+| Llama-3.2-1B-Instruct | 1,2 B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, requiere aceptacion | Contexto mucho mayor y ecosistema maduro |
 
 La comparacion debe tomarse con cautela: los tres modelos alternativos cuentan con model cards completas y evaluaciones publicadas, mientras que el modelo objeto de esta ficha carece de ambas.
 
 ## Limitaciones y advertencias
 
-- La model card es la plantilla autogenerada por HuggingFace y no contiene informacion sobre sesgos, riesgos ni usos fuera de alcance.
+- La model card es la plantilla autogenerada por Hugging Face y no contiene informacion sobre sesgos, riesgos ni usos fuera de alcance.
 - No se declara licencia, por lo que el uso comercial queda en un limbo legal; debe contactarse con el autor antes de cualquier despliegue productivo.
 - Riesgo elevado de alucinacion en matematicas: el ajuste sobre GSM8K no garantiza correccion aritmetica fuera de la distribucion del conjunto de entrenamiento, y no hay evaluacion que lo respalde.
 - Posible olvido catastrofico (catastrophic forgetting) de capacidades generales tras el ajuste especifico y la fase DPO, sin datos que permitan cuantificarlo.
@@ -84,7 +84,7 @@ La comparacion debe tomarse con cautela: los tres modelos alternativos cuentan c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/EiadEssam/smollm2-1.7b-gsm8k-v2-dpo
+- Repositorio Hugging Face: https://huggingface.co/EiadEssam/smollm2-1.7b-gsm8k-v2-dpo
 - Modelo base (referencia, no enlazado en la model card): https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B
 - Libreria TRL (mencionada en los tags): https://github.com/huggingface/trl
 - Paper de la calculadora de impacto ambiental citado en la plantilla: https://arxiv.org/abs/1910.09700

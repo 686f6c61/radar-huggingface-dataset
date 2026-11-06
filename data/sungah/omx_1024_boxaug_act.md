@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Arquitectura | Parametros | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OMX BoxAug ACT (este) | ACT + ResNet18 | no disponible | 2 camaras 640x480 + estado 7D a 30 fps | Apache 2.0 | HuggingFace (Sungah/omx_1024_boxaug_act) |
-| ACT original (LeRobot) | ACT + ResNet18 | no disponible | Configurable por tarea | Apache 2.0 | Repositorio LeRobot de HuggingFace |
+| OMX BoxAug ACT (este) | ACT + ResNet18 | no disponible | 2 camaras 640x480 + estado 7D a 30 fps | Apache 2.0 | Hugging Face (Sungah/omx_1024_boxaug_act) |
+| ACT original (LeRobot) | ACT + ResNet18 | no disponible | Configurable por tarea | Apache 2.0 | Repositorio LeRobot de Hugging Face |
 | Diffusion Policy | Politica por difusion | no disponible | Configurable por tarea | MIT (implementacion de referencia) | Repositorios de investigacion |
-| Pi0 / pi0-FAST | VLA (vision-language-action) | no disponible en la informacion | Entrada multimodal con instrucciones en lenguaje | no disponible | HuggingFace (Physical Intelligence) |
+| Pi0 / pi0-FAST | VLA (vision-language-action) | no disponible en la informacion | Entrada multimodal con instrucciones en lenguaje | no disponible | Hugging Face (Physical Intelligence) |
 
 La comparacion cuantitativa de rendimiento no esta disponible: no hay benchmarks publicados para este modelo ni cifras de exito en robot real. La diferencia principal frente a ACT estandar es el uso de datos sinteticos de aumento y la incorporacion de la corriente del gripper como dimension de estado; frente a Diffusion Policy y pi0, la diferencia es de escala y alcance (politica especializada en una tarea frente a modelos generalistas).
 
@@ -87,7 +87,7 @@ La comparacion cuantitativa de rendimiento no esta disponible: no hay benchmarks
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sungah/omx_1024_boxaug_act
+- Modelo en Hugging Face: https://huggingface.co/Sungah/omx_1024_boxaug_act
 - Dataset de entrenamiento: https://huggingface.co/datasets/Sungah/omx_1024_test_jihyeok_success
 - LeRobot (framework): https://github.com/huggingface/lerobot
 - Documentacion de ACT en LeRobot: https://huggingface.co/docs/lerobot/act

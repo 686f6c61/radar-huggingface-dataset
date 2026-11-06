@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ReTokenGS-dens es un modelo *feed-forward* de reconstrucción 3D y síntesis de vistas nuevas (*novel view synthesis*) publicado por el usuario Yusin en HuggingFace bajo licencia Apache-2.0. No es un modelo de lenguaje: recibe cuatro vistas de entrada con pose conocida a 256×256 píxeles y produce un conjunto de tokens gaussianos que pueden renderizarse desde cámaras arbitrarias. Los pesos suman 366.965.176 parámetros (1,5 GB en `safetensors`) y se construyen sobre los proyectos LocusGS y TokenGS.
+ReTokenGS-dens es un modelo *feed-forward* de reconstrucción 3D y síntesis de vistas nuevas (*novel view synthesis*) publicado por el usuario Yusin en Hugging Face bajo licencia Apache-2.0. No es un modelo de lenguaje: recibe cuatro vistas de entrada con pose conocida a 256×256 píxeles y produce un conjunto de tokens gaussianos que pueden renderizarse desde cámaras arbitrarias. Los pesos suman 366.965.176 parámetros (1,5 GB en `safetensors`) y se construyen sobre los proyectos LocusGS y TokenGS.
 
 La innovación es la densificación bajo demanda: un decodificador con una única capa compartida por pesos que se aplica 12 rondas, con realimentación del gradiente de render por token. Tras cada ronda, los tokens cuyas gaussianas reciben gradientes posicionales grandes se dividen en hijos con corrección de opacidad, de modo que el presupuesto de tokens crece por escena desde 1024 hasta un tope de 4096 que nunca se utilizó durante el entrenamiento.
 
@@ -75,8 +75,8 @@ No se han publicado resultados de latencia, throughput ni consumo de memoria en 
 
 | Modelo | Parametros | Contexto / entrada | PSNR (DL3DV, 4 vistas) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ReTokenGS-dens (este) | 367 M | 4 vistas con pose, 256×256, hasta 4096 tokens | 25,113 (4096 tokens) / 24,878 (≈1650) | Apache-2.0 | HuggingFace + GitHub rama `dens` |
-| ReTokenGS-grad | no disponible | 4 vistas con pose, 256×256, 1024 tokens | 24,744 | Apache-2.0 (según el autor) | HuggingFace `Yusin/ReTokenGS-grad` |
+| ReTokenGS-dens (este) | 367 M | 4 vistas con pose, 256×256, hasta 4096 tokens | 25,113 (4096 tokens) / 24,878 (≈1650) | Apache-2.0 | Hugging Face + GitHub rama `dens` |
+| ReTokenGS-grad | no disponible | 4 vistas con pose, 256×256, 1024 tokens | 24,744 | Apache-2.0 (según el autor) | Hugging Face `Yusin/ReTokenGS-grad` |
 | LocusGS stage 1 `base` | no disponible | 4 vistas con pose, 256×256, 1024 tokens | 24,154 | Apache-2.0 (upstream) | Repositorio LocusGS |
 | MVSplat / pixelSplat | no disponible | 2 vistas con pose, resolución variable | no disponible en la información proporcionada | no disponible | no disponible |
 
@@ -91,12 +91,12 @@ La comparación con modelos *feed-forward* de *splatting* de otras familias (MVS
 - **Extrapolación en el tope de tokens**: los 4096 tokens nunca se usaron en entrenamiento; la mejor cifra depende de hiperparámetros de inferencia ajustados manualmente (`DENS_TAU=3.4e-6`), no de los valores de entrenamiento.
 - **Checkpoint promediado**: `model.safetensors` es la media de los epochs 44–64, sin información sobre la varianza entre checkpoints ni sobre la curva de validación completa.
 - **Licencia y atribución**: Apache-2.0, pero el modelo deriva de LocusGS y TokenGS; conviene revisar y conservar los avisos de licencia de los proyectos upstream antes de un uso comercial.
-- **Madurez**: 0 descargas, 0 *likes*, sin *pipeline* declarado en HuggingFace ni demo pública; la reproducibilidad depende del código de una rama concreta de GitHub.
+- **Madurez**: 0 descargas, 0 *likes*, sin *pipeline* declarado en Hugging Face ni demo pública; la reproducibilidad depende del código de una rama concreta de GitHub.
 - **Sin capacidades de lenguaje**: no admite *prompts* de texto, instrucciones, *tool calling* ni conversación; cualquier uso en ese sentido es un error de categoría.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Yusin/ReTokenGS-dens
+- Modelo en Hugging Face: https://huggingface.co/Yusin/ReTokenGS-dens
 - Variante previa del autor: https://huggingface.co/Yusin/ReTokenGS-grad
 - Código, evaluación y comandos de entrenamiento: https://github.com/Yusin2Chen/TokenGS-Loop/tree/dens
 - Repositorio LocusGS: https://github.com/leo-frank/LocusGS

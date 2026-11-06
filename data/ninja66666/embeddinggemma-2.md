@@ -6,7 +6,7 @@ EmbeddingGemma 2 es un modelo de embeddings multimodal desarrollado por Google D
 
 El modelo está diseñado para ejecutarse en hardware de consumo (móviles, portátiles) y ofrece representaciones semánticas de baja latencia para búsqueda, RAG, clasificación y clustering en dispositivo. Incorpora Matryoshka Representation Learning (MRL) con soporte nativo de truncado a 128, 256, 512 y 768 dimensiones, lo que permite reducir hasta 6 veces el almacenamiento de vectores con un impacto mínimo en calidad, y utiliza prefijos de instrucción ligeros para orientar las representaciones a tareas concretas.
 
-La relevancia actual del modelo radica en su enfoque multimodal unificado: en lugar de mantener pipelines separados para texto, imagen y audio, ofrece un único espacio de embeddings de 768d que permite búsqueda cruzada entre modalidades con una ventana de contexto de 8.192 tokens. Se publica bajo licencia Apache 2.0, lo que facilita su uso comercial, y esta ficha concreta corresponde a la réplica alojada por el usuario Ninja66666 en HuggingFace (28 descargas, 0 likes en el momento de la consulta).
+La relevancia actual del modelo radica en su enfoque multimodal unificado: en lugar de mantener pipelines separados para texto, imagen y audio, ofrece un único espacio de embeddings de 768d que permite búsqueda cruzada entre modalidades con una ventana de contexto de 8.192 tokens. Se publica bajo licencia Apache 2.0, lo que facilita su uso comercial, y esta ficha concreta corresponde a la réplica alojada por el usuario Ninja66666 en Hugging Face (28 descargas, 0 likes en el momento de la consulta).
 
 ## Especificaciones tecnicas
 
@@ -106,8 +106,8 @@ La información proporcionada solo permite comparar con EmbeddingGemma 1, su pre
 
 ## Enlaces
 
-- HuggingFace (réplica): https://huggingface.co/Ninja66666/embeddinggemma-2
-- HuggingFace (modelo original de Google): https://huggingface.co/google/embeddinggemma-2
+- Hugging Face (réplica): https://huggingface.co/Ninja66666/embeddinggemma-2
+- Hugging Face (modelo original de Google): https://huggingface.co/google/embeddinggemma-2
 - GitHub: https://github.com/google-gemma
 - Blog de lanzamiento: https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2
 - Documentación: https://ai.google.dev/gemma/docs/embeddinggemma

@@ -23,13 +23,13 @@ Arquitectónicamente, se trata de un transformer encoder-decoder con 72.593.408 
 
 El modelo parte de `openai/whisper-base.en`, un transformer encoder-decoder con aproximadamente 74 millones de parámetros, diseñado originalmente para ASR multilingüe. En este caso, se ha fine-tuneado exclusivamente sobre el corpus MyST (My Science Tutor), un conjunto de habla infantil en inglés. El pipeline de filtrado incluye eliminación de transcripciones faltantes, filtrado por calidad de ASR de referencia, manejo de etiquetas no verbales, eliminación de utterances cortos y limitación de duración para los conjuntos de entrenamiento y validación.
 
-El entrenamiento se realizó con el `Seq2SeqTrainer` de HuggingFace, con precisión mixta fp16. Los hiperparámetros principales son: learning rate de 1e-5, batch por dispositivo de 8, acumulación de gradientes de 8 (batch efectivo de 64), 500 pasos de warmup y un máximo de 8000 pasos, completados en su totalidad. Se aplicó early stopping con paciencia de 5 y métrica WER sobre el conjunto de dev, seleccionándose el checkpoint del paso 4500 como el mejor. El batch efectivo se mantuvo en 64 para ser comparable con el modelo compañero `tiny.en`, aunque se redujo el micro-batch y se duplicó la acumulación para ajustarse a la VRAM de 8 GB de la GPU de entrenamiento (RTX 4060).
+El entrenamiento se realizó con el `Seq2SeqTrainer` de Hugging Face, con precisión mixta fp16. Los hiperparámetros principales son: learning rate de 1e-5, batch por dispositivo de 8, acumulación de gradientes de 8 (batch efectivo de 64), 500 pasos de warmup y un máximo de 8000 pasos, completados en su totalidad. Se aplicó early stopping con paciencia de 5 y métrica WER sobre el conjunto de dev, seleccionándose el checkpoint del paso 4500 como el mejor. El batch efectivo se mantuvo en 64 para ser comparable con el modelo compañero `tiny.en`, aunque se redujo el micro-batch y se duplicó la acumulación para ajustarse a la VRAM de 8 GB de la GPU de entrenamiento (RTX 4060).
 
 ## Capacidades
 
 - Reconocimiento de voz automático (ASR) para habla infantil en inglés, con WER de 11,91% en el conjunto de test concatenado de MyST.
 - Fine-tuning específico sobre un corpus de dominio (habla de niños), mejorando el rendimiento frente al modelo base sin fine-tuning en ese dominio.
-- Soporte de transcripción de audio con ventanas de 30 segundos, mediante la pipeline de HuggingFace con `chunk_length_s=30` y búsqueda de haz (beam=5).
+- Soporte de transcripción de audio con ventanas de 30 segundos, mediante la pipeline de Hugging Face con `chunk_length_s=30` y búsqueda de haz (beam=5).
 - No dispone de capacidades de tool calling, agentes, visión ni multilingüismo; es un modelo puramente de ASR.
 - Pensado para investigación en compresión (cuantización y poda), no para uso en producción.
 
@@ -44,7 +44,7 @@ El entrenamiento se realizó con el `Seq2SeqTrainer` de HuggingFace, con precisi
 
 ## Benchmarks y rendimiento
 
-El modelo reporta un WER de dev (métrica de early stopping) de 10,65% en el paso 4500, y un WER de test concatenado de 11,91% bajo el protocolo de evaluación estándar del estudio (pipeline de HuggingFace, `chunk_length_s=30`, beam=5, batch=4). La siguiente tabla compara este modelo con otros checkpoints de la misma investigación, todos evaluados con el mismo protocolo:
+El modelo reporta un WER de dev (métrica de early stopping) de 10,65% en el paso 4500, y un WER de test concatenado de 11,91% bajo el protocolo de evaluación estándar del estudio (pipeline de Hugging Face, `chunk_length_s=30`, beam=5, batch=4). La siguiente tabla compara este modelo con otros checkpoints de la misma investigación, todos evaluados con el mismo protocolo:
 
 | Modelo | Parametros | WER (test concatenado) |
 |---|---|---|
@@ -61,18 +61,18 @@ La evolución del WER de dev durante el entrenamiento muestra una meseta a parti
 - VRAM estimada para inferencia: menos de 1 GB en fp16 (el modelo tiene 72,6M parámetros, aproximadamente 145 MB en fp16). Con cuantización a 8 bits, el uso de memoria es aún menor.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente para inferencia. El entrenamiento se realizó en una RTX 4060 con 8 GB, por lo que cualquier GPU de gama media o alta puede manejar el modelo sin problemas.
 - Compatibilidad con GPUs de consumo: sí, cabe en GPUs como RTX 3060, RTX 4060, RTX 4090, etc. También puede ejecutarse en CPU para inferencia de baja latencia, aunque con menor velocidad.
-- Opciones de despliegue: al ser un modelo Whisper, se puede servir con la librería `transformers` de HuggingFace, `faster-whisper` (para inferencia optimizada en CPU/GPU), o mediante `whisper.cpp` para despliegue en edge. No se menciona soporte para vLLM o TGI, que están orientados a modelos de lenguaje.
+- Opciones de despliegue: al ser un modelo Whisper, se puede servir con la librería `transformers` de Hugging Face, `faster-whisper` (para inferencia optimizada en CPU/GPU), o mediante `whisper.cpp` para despliegue en edge. No se menciona soporte para vLLM o TGI, que están orientados a modelos de lenguaje.
 - Latencia y throughput: no se proporcionan datos específicos. Para un modelo de 74M parámetros, la transcripción de un audio de 30 segundos suele tomar menos de 1 segundo en una GPU moderna, pero esto depende del hardware y de la implementación.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | WER (MyST test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kid-whisper-base-en-myst-ours (este) | 72,6M | 30s | 11,91% | MIT | HuggingFace |
-| kid-whisper-tiny-en-myst-ours | 39M | 30s | 14,53% | MIT | HuggingFace |
-| kid-whisper-small-en-myst (Attia et al.) | 244M | 30s | 9,16% | MIT | HuggingFace |
-| kid-whisper-medium-en-myst (Attia et al.) | 769M | 30s | 8,94% | MIT | HuggingFace |
-| openai/whisper-base.en (original) | 74M | 30s | No reportado en MyST | MIT | HuggingFace |
+| kid-whisper-base-en-myst-ours (este) | 72,6M | 30s | 11,91% | MIT | Hugging Face |
+| kid-whisper-tiny-en-myst-ours | 39M | 30s | 14,53% | MIT | Hugging Face |
+| kid-whisper-small-en-myst (Attia et al.) | 244M | 30s | 9,16% | MIT | Hugging Face |
+| kid-whisper-medium-en-myst (Attia et al.) | 769M | 30s | 8,94% | MIT | Hugging Face |
+| openai/whisper-base.en (original) | 74M | 30s | No reportado en MyST | MIT | Hugging Face |
 
 La comparativa muestra una mejora clara del WER al aumentar el tamaño del modelo, con una diferencia de 2,62 puntos entre el modelo base y el tiny, y de 2,75 puntos entre el base y el small. El modelo base original de OpenAI no tiene un WER reportado en MyST, por lo que no se puede comparar directamente, pero el fine-tuning sobre MyST es el factor clave de mejora.
 
@@ -88,7 +88,7 @@ La comparativa muestra una mejora clara del WER al aumentar el tamaño del model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lokeshkumar79/kid-whisper-base-en-myst-ours
+- Modelo en Hugging Face: https://huggingface.co/lokeshkumar79/kid-whisper-base-en-myst-ours
 - Perfil del autor: https://huggingface.co/lokeshkumar79
 - Repositorio Kid-Whisper (Attia et al.): https://github.com/ahmedadelattia/Kid-Whisper
 - Paper Kid-Whisper (arXiv): https://arxiv.org/abs/2309.07927

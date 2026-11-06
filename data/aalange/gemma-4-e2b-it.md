@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Modalidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AALange/gemma-4-E2B-it | 5,1B totales (2,3B efectivos) | 128K | Texto, imagen, audio | Apache 2.0 | HuggingFace, 0 descargas |
+| AALange/gemma-4-E2B-it | 5,1B totales (2,3B efectivos) | 128K | Texto, imagen, audio | Apache 2.0 | Hugging Face, 0 descargas |
 | google/gemma-4-E2B | 5,1B totales (2,3B efectivos) | 128K | Texto, imagen, audio | Apache 2.0 | Modelo base de Google |
 | google/gemma-4-E4B | 8B totales (4,5B efectivos) | 128K | Texto, imagen, audio | Apache 2.0 | Modelo de Google |
 | google/gemma-4-12B Unified | 11,95B | 256K | Texto, imagen, audio | Apache 2.0 | Modelo de Google |
@@ -88,11 +88,11 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AALange/gemma-4-E2B-it
+- Hugging Face: https://huggingface.co/AALange/gemma-4-E2B-it
 - Modelo base: https://huggingface.co/google/gemma-4-E2B
 - Informe tecnico (arXiv): https://arxiv.org/abs/2607.02770
 - Repositorio GitHub de Gemma: https://github.com/google-gemma
 - Blog de lanzamiento: https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/
 - Documentacion de Google AI: https://ai.google.dev/gemma/docs/core
-- Coleccion de Gemma 4 en HuggingFace: https://huggingface.co/collections/google/gemma-4
+- Coleccion de Gemma 4 en Hugging Face: https://huggingface.co/collections/google/gemma-4
 - Licencia de Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license

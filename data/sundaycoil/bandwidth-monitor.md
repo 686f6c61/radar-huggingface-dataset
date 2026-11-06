@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `sundaycoil/bandwidth-monitor` alojado en HuggingFace no corresponde a un modelo de inteligencia artificial generativa, sino a un componente de software destinado a la monitorización del ancho de banda. Publicado por el usuario `sundaycoil` el 9 de abril de 2026 y actualizado el 15 de agosto de 2026, el repositorio presenta las etiquetas `endpoints_compatible` y `region:us`, lo que sugiere que está diseñado para integrarse con endpoints de inferencia en la región de Estados Unidos. A pesar de contar con 6 likes, registra 0 descargas, lo que indica que se trata de un proyecto reciente o de baja adopción.
+El repositorio `sundaycoil/bandwidth-monitor` alojado en Hugging Face no corresponde a un modelo de inteligencia artificial generativa, sino a un componente de software destinado a la monitorización del ancho de banda. Publicado por el usuario `sundaycoil` el 9 de abril de 2026 y actualizado el 15 de agosto de 2026, el repositorio presenta las etiquetas `endpoints_compatible` y `region:us`, lo que sugiere que está diseñado para integrarse con endpoints de inferencia en la región de Estados Unidos. A pesar de contar con 6 likes, registra 0 descargas, lo que indica que se trata de un proyecto reciente o de baja adopción.
 
 Al no tratarse de un modelo de lenguaje, no dispone de arquitectura, parámetros ni capacidades de generación de texto. Su función probable es la de supervisar el tráfico de red o el consumo de ancho de banda en entornos de despliegue de modelos, posiblemente como una herramienta auxiliar para operaciones de infraestructura. La información pública disponible es muy limitada, por lo que esta ficha se basa exclusivamente en los metadatos del repositorio.
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la información disponible. Al n
 
 ## Comparativa con modelos similares
 
-No disponible. No existen modelos comparables en el sentido de IA generativa, y no se dispone de información sobre herramientas alternativas de monitorización de ancho de banda dentro del ecosistema HuggingFace.
+No disponible. No existen modelos comparables en el sentido de IA generativa, y no se dispone de información sobre herramientas alternativas de monitorización de ancho de banda dentro del ecosistema Hugging Face.
 
 ## Limitaciones y advertencias
 
@@ -65,4 +65,4 @@ No disponible. No existen modelos comparables en el sentido de IA generativa, y 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sundaycoil/bandwidth-monitor
+- Repositorio en Hugging Face: https://huggingface.co/sundaycoil/bandwidth-monitor

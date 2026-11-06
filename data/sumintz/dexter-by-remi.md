@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sumintz/dexter-by-remi` es un modelo publicado en HuggingFace por el usuario `sumintz` bajo licencia OpenRAIL. La model card asociada no contiene ninguna descripcion tecnica, ficha de entrenamiento, datos de arquitectura ni instrucciones de uso; unicamente declara la licencia. El repositorio ocupa 0,1 GB, lo que sugiere pesos de pequeno tamano, pero no se especifica el numero de parametros ni el formato de los mismos.
+`sumintz/dexter-by-remi` es un modelo publicado en Hugging Face por el usuario `sumintz` bajo licencia OpenRAIL. La model card asociada no contiene ninguna descripcion tecnica, ficha de entrenamiento, datos de arquitectura ni instrucciones de uso; unicamente declara la licencia. El repositorio ocupa 0,1 GB, lo que sugiere pesos de pequeno tamano, pero no se especifica el numero de parametros ni el formato de los mismos.
 
 No se dispone de informacion sobre el pipeline declarado, los idiomas soportados, la arquitectura subyacente ni el proceso de entrenamiento. El modelo no registra descargas ni likes en el momento de la consulta, y su fecha de creacion indicada es 2026-10-31, dato que conviene tratar con cautela.
 
@@ -43,7 +43,7 @@ Dado que no se documentan capacidades, los siguientes casos son genericos y requ
 - Prototipado experimental: usar el modelo como base para pruebas internas de generacion de texto, verificando primero su comportamiento real con prompts representativos.
 - Fine-tuning sobre dominio propio: si los pesos son completos, podria servir como punto de partida para ajuste supervisado en una tarea concreta, siempre que el equipo valide la calidad base.
 - Evaluacion comparativa interna: incluirlo en un banco de pruebas propio frente a modelos de referencia para determinar si aporta ventajas en la tarea objetivo.
-- Docencia y experimentacion: util en entornos academicos para ilustrar el ciclo de publicacion y evaluacion de modelos en HuggingFace.
+- Docencia y experimentacion: util en entornos academicos para ilustrar el ciclo de publicacion y evaluacion de modelos en Hugging Face.
 - Pruebas de integracion de pipelines: validar infraestructura de despliegue (serving, tokenizacion, cuantizacion) con un modelo de bajo coste computacional.
 - Analisis de licencias OpenRAIL: estudiar las obligaciones de atribucion y las restricciones de uso que impone la licencia OpenRAIL en un producto comercial.
 
@@ -78,6 +78,6 @@ No disponible. La falta de datos sobre parametros, contexto y rendimiento impide
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sumintz/dexter-by-remi
+- Hugging Face: https://huggingface.co/sumintz/dexter-by-remi
 - Licencia OpenRAIL: no se proporciona enlace especifico en la informacion disponible.
 - Paper, blog, repositorio o demo: no disponibles.

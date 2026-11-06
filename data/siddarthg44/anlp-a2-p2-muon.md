@@ -90,7 +90,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Proposito declarado |
 |---|---|---|---|---|---|
-| `siddarthg44/anlp-a2-p2-muon` | no disponible (cuerpo ~25,2 M mas embeddings de vocabulario no publicado) | 256 | no disponible | HuggingFace, 0 descargas, 0 likes | Artefacto academico para comparar optimizadores |
+| `siddarthg44/anlp-a2-p2-muon` | no disponible (cuerpo ~25,2 M mas embeddings de vocabulario no publicado) | 256 | no disponible | Hugging Face, 0 descargas, 0 likes | Artefacto academico para comparar optimizadores |
 | GPT-2 small (referencia) | 124 M | 1024 | MIT modificada | Ampliamente disponible | Modelo base de generacion de texto |
 | Pythia-70M (referencia) | 70 M | 2048 | Apache 2.0 | Ampliamente disponible | Suite de modelos base para investigacion sobre interpretabilidad |
 | SmolLM-135M (referencia) | 135 M | 2048 | Apache 2.0 | Ampliamente disponible | Modelo base pequeno para entornos con recursos limitados |
@@ -115,6 +115,6 @@ Los datos de los modelos de referencia corresponden a los valores publicos de su
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/siddarthg44/anlp-a2-p2-muon
+- Modelo en Hugging Face: https://huggingface.co/siddarthg44/anlp-a2-p2-muon
 - Dataset citado en la model card: https://huggingface.co/datasets/browndw/human-ai-parallel-corpus
 - La busqueda web realizada no devolvio ningun enlace relevante sobre este modelo (los resultados obtenidos correspondian a paginas de soporte de Microsoft y no guardan relacion con el modelo). La model card tampoco cita papers, repositorios adicionales ni demostraciones.

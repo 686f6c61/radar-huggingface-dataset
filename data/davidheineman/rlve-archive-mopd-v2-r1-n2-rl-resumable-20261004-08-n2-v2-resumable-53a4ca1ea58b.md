@@ -6,7 +6,7 @@ El repositorio `davidheineman/rlve-archive-mopd-v2-r1-n2-rl-resumable-20261004-0
 
 Los pesos ocupan 3,6 GB en el repositorio y suman 1.777.088.000 parámetros (aproximadamente 1,78 mil millones), según los metadatos reales de safetensors. El tag `qwen2` indica que la arquitectura subyacente es un transformer decoder-only de la familia Qwen2, aunque no se especifica la configuración exacta de capas, cabezas ni dimensión oculta. No hay información sobre longitud de contexto, idiomas, licencia ni pipeline declarado.
 
-Su relevancia es estrictamente de investigación: al no existir model card técnica, benchmarks ni licencia, cualquier uso que no sea reproducir o inspeccionar el experimento original queda fuera de lo documentado. Es un ejemplo típico de checkpoint intermedio conservado en HuggingFace como archivo, con cero descargas y cero interacciones en el momento de la consulta.
+Su relevancia es estrictamente de investigación: al no existir model card técnica, benchmarks ni licencia, cualquier uso que no sea reproducir o inspeccionar el experimento original queda fuera de lo documentado. Es un ejemplo típico de checkpoint intermedio conservado en Hugging Face como archivo, con cero descargas y cero interacciones en el momento de la consulta.
 
 ## Especificaciones técnicas
 
@@ -97,6 +97,6 @@ No hay datos de rendimiento de este checkpoint que permitan compararlo en calida
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/davidheineman/rlve-archive-mopd-v2-r1-n2-rl-resumable-20261004-08-n2-v2-resumable-53a4ca1ea58b
+- Hugging Face: https://huggingface.co/davidheineman/rlve-archive-mopd-v2-r1-n2-rl-resumable-20261004-08-n2-v2-resumable-53a4ca1ea58b
 - Run de W&B asociado: identificador `c8f610c2` (URL no disponible)
 - Paper, blog, repositorio de código o demo: no disponible

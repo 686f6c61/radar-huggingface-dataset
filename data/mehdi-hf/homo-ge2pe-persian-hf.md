@@ -83,7 +83,7 @@ La comparativa se limita a modelos relacionados porque no se dispone de otros mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mehdi-hf/Homo-GE2PE-Persian-HF
+- Modelo en Hugging Face: https://huggingface.co/mehdi-hf/Homo-GE2PE-Persian-HF
 - Modelo original: https://huggingface.co/MahtaFetrat/Homo-GE2PE-Persian
 - Dataset HomoRich: https://huggingface.co/datasets/MahtaFetrat/HomoRich-G2P-Persian
 - Benchmark SentenceBench: https://huggingface.co/datasets/MahtaFetrat/SentenceBench

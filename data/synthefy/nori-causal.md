@@ -84,7 +84,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Synthefy/Nori-Causal
+- Modelo en Hugging Face: https://huggingface.co/Synthefy/Nori-Causal
 - Repositorio: https://github.com/Synthefy/synthefy-nori
 - Documentación: https://docs.synthefy.com/nori/
 - Licencia: https://github.com/Synthefy/synthefy-nori/blob/main/LICENSE

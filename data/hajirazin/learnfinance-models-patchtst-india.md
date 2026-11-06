@@ -68,5 +68,5 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/hajirazin/learnfinance-models-patchtst-india
+- Repositorio de Hugging Face: https://huggingface.co/hajirazin/learnfinance-models-patchtst-india
 - No se han encontrado otros enlaces (papers, blogs, repositorios de código) en la información proporcionada.

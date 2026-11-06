@@ -73,8 +73,8 @@ No se han publicado en la información disponible datos comparativos con otros m
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| g3ida/araelectra-arabic-ocr-detector | 135.194.113 | 512 tokens | F1 93,9 (reservado), F1 validacion 91,9 | apache-2.0 | HuggingFace |
-| aubmindlab/araelectra-base-discriminator | no disponible en la informacion proporcionada | no disponible | no disponible (checkpoint base, no afinado para esta tarea) | no disponible en la informacion proporcionada | HuggingFace |
+| g3ida/araelectra-arabic-ocr-detector | 135.194.113 | 512 tokens | F1 93,9 (reservado), F1 validacion 91,9 | apache-2.0 | Hugging Face |
+| aubmindlab/araelectra-base-discriminator | no disponible en la informacion proporcionada | no disponible | no disponible (checkpoint base, no afinado para esta tarea) | no disponible en la informacion proporcionada | Hugging Face |
 | Otros detectores post-OCR en arabe | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -91,7 +91,7 @@ No se han publicado en la información disponible datos comparativos con otros m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/g3ida/araelectra-arabic-ocr-detector
+- Modelo en Hugging Face: https://huggingface.co/g3ida/araelectra-arabic-ocr-detector
 - Modelo base: https://huggingface.co/aubmindlab/araelectra-base-discriminator
 - Repositorio de la libreria arabic-postocr: https://github.com/OWNER/arabic-postocr (marcador de posicion en la model card, URL no confirmada)
 - No se han encontrado papers, blogs ni demos adicionales en la busqueda web realizada.

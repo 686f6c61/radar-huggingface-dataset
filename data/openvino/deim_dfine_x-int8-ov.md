@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OpenVINO/deim_dfine_x-int8-ov | no disponible | no aplica | no disponible | Apache-2.0 | HuggingFace (OpenVINO) |
+| OpenVINO/deim_dfine_x-int8-ov | no disponible | no aplica | no disponible | Apache-2.0 | Hugging Face (OpenVINO) |
 | DEIM D-FINE-X (original) | no disponible | no aplica | no disponible en esta ficha | Apache-2.0 | GitHub Intellindust AI Lab |
 | Otros detectores D-FINE / DEIM | no disponible | no aplica | no disponible | Apache-2.0 (según original) | Repositorios originales |
 
@@ -79,7 +79,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de altern
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OpenVINO/deim_dfine_x-int8-ov
+- Hugging Face: https://huggingface.co/OpenVINO/deim_dfine_x-int8-ov
 - Modelo original DEIM: https://github.com/Intellindust-AI-Lab/DEIM
 - Geti: https://github.com/open-edge-platform/geti
 - OpenVINO IR format: https://docs.openvino.ai/2026/documentation/openvino-ir-format.html

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`JosephHollingsworth/retrieval10-2023` es un repositorio de HuggingFace que contiene una implementación compacta y personalizada en PyTorch de MoCo v3 (Momentum Contrast v3) orientada a tareas de recuperación (retrieval). El autor es el usuario JosephHollingsworth. No se trata de un modelo preentrenado listo para producción: según la propia model card, la configuración etiquetada como "giant" está pensada para revisión de código, pruebas de humo (smoke tests) y experimentos pequeños y controlados.
+`JosephHollingsworth/retrieval10-2023` es un repositorio de Hugging Face que contiene una implementación compacta y personalizada en PyTorch de MoCo v3 (Momentum Contrast v3) orientada a tareas de recuperación (retrieval). El autor es el usuario JosephHollingsworth. No se trata de un modelo preentrenado listo para producción: según la propia model card, la configuración etiquetada como "giant" está pensada para revisión de código, pruebas de humo (smoke tests) y experimentos pequeños y controlados.
 
 El problema que aborda es el de disponer de una base de código mínima y reproducible para experimentar con MoCo v3 en escenarios de retrieval, en lugar de ofrecer un checkpoint con rendimiento validado. El repositorio incluye `eval.py`, `config.json`, `training_args.json` y un `model.safetensors` de inicialización de tan solo 33.088 parámetros, lo que lo aleja de cualquier definición razonable de "giant" y confirma su carácter de prueba.
 
@@ -79,8 +79,8 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JosephHollingsworth/retrieval10-2023
+- Modelo en Hugging Face: https://huggingface.co/JosephHollingsworth/retrieval10-2023
 - Perfil de Google Scholar de un autor con el mismo nombre (no se confirma que sea la misma persona): https://scholar.google.com/citations?user=Ax92fPIAAAAJ&hl=en
-- Repositorio de HuggingFace con etiqueta similar (no relacionado de forma confirmada): https://huggingface.co/Josephwilsonee/cs229-retrieval
+- Repositorio de Hugging Face con etiqueta similar (no relacionado de forma confirmada): https://huggingface.co/Josephwilsonee/cs229-retrieval
 
 Nota: la búsqueda web realizada no ha devuelto enlaces directamente relacionados con este modelo (paper, blog, repositorio o demo). El resto de resultados obtenidos (una noticia sobre un modelo de Anthropic, un artículo sobre destilación aumentada por recuperación para generación texto-a-3D y una guía divulgativa sobre RAG) no guardan relación con este repositorio y no se incluyen.

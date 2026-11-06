@@ -52,5 +52,5 @@ No se dispone de información sobre modelos comparables. Dado que no hay paráme
 
 ## Enlaces
 
-- [HuggingFace: wrokozlowski8/model_602284959_beit_tiny](https://huggingface.co/wrokozlowski8/model_602284959_beit_tiny)
+- [Hugging Face: wrokozlowski8/model_602284959_beit_tiny](https://huggingface.co/wrokozlowski8/model_602284959_beit_tiny)
 - No se encontraron otros enlaces relevantes (papers, blogs, repos, demos) en la búsqueda web.

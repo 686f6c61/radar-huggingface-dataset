@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Driw0x/my_awesome_opus_books_model` es un ajuste fino (fine-tuning) del modelo `google-t5/t5-small` publicado por el usuario Driw0x en HuggingFace. Se trata de un modelo encoder-decoder de arquitectura Transformer con 60.506.624 parametros totales (aproximadamente 60,5 M), etiquetado para la tarea `text2text-generation` y distribuido bajo licencia Apache 2.0. El checkpoint se ha generado automaticamente con la libreria `Trainer` de Transformers, y la propia model card indica de forma explicita que la descripcion, los usos previstos y los datos de entrenamiento estan pendientes de documentar ("More information needed").
+`Driw0x/my_awesome_opus_books_model` es un ajuste fino (fine-tuning) del modelo `google-t5/t5-small` publicado por el usuario Driw0x en Hugging Face. Se trata de un modelo encoder-decoder de arquitectura Transformer con 60.506.624 parametros totales (aproximadamente 60,5 M), etiquetado para la tarea `text2text-generation` y distribuido bajo licencia Apache 2.0. El checkpoint se ha generado automaticamente con la libreria `Trainer` de Transformers, y la propia model card indica de forma explicita que la descripcion, los usos previstos y los datos de entrenamiento estan pendientes de documentar ("More information needed").
 
-El modelo se entreno durante 2 epocas (12.710 pasos) con un learning rate de 2e-05, batch de 16 y precision mixta nativa AMP, alcanzando en el conjunto de evaluacion una perdida de validacion de 1,5517 y un BLEU de 6,0284, con una longitud media de generacion de 17,554 tokens. Estos valores son coherentes con un ajuste fino corto sobre una tarea de traduccion o resumen de secuencias cortas. La model card no especifica el dataset utilizado, aunque el nombre del repositorio ("opus_books") coincide con el del dataset y el ejemplo de ajuste fino de traduccion ingles-frances del curso de NLP de HuggingFace.
+El modelo se entreno durante 2 epocas (12.710 pasos) con un learning rate de 2e-05, batch de 16 y precision mixta nativa AMP, alcanzando en el conjunto de evaluacion una perdida de validacion de 1,5517 y un BLEU de 6,0284, con una longitud media de generacion de 17,554 tokens. Estos valores son coherentes con un ajuste fino corto sobre una tarea de traduccion o resumen de secuencias cortas. La model card no especifica el dataset utilizado, aunque el nombre del repositorio ("opus_books") coincide con el del dataset y el ejemplo de ajuste fino de traduccion ingles-frances del curso de NLP de Hugging Face.
 
 Su relevancia practica es limitada: se trata de un modelo experimental con 0 descargas y 0 likes en el momento de redactar esta ficha, sin benchmarks estandar publicados y con documentacion incompleta. Resulta util como punto de partida reproducible para experimentos de ajuste fino de T5-small o como referencia de un pipeline de entrenamiento completo, pero no como modelo de produccion sin una evaluacion adicional por parte del usuario.
 
@@ -75,11 +75,11 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto | Tarea principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Driw0x/my_awesome_opus_books_model` | 60,5 M | 512 tokens (heredado del base) | Texto a texto (traduccion/resumen probable) | Apache 2.0 | HuggingFace, 0 descargas |
-| `google-t5/t5-small` (modelo base) | 60,5 M | 512 tokens | Texto a texto generico (multitarea) | Apache 2.0 | HuggingFace, ampliamente utilizado |
-| `google/flan-t5-small` | 60,5 M | 512 tokens | Texto a texto con instrucciones | Apache 2.0 | HuggingFace, ampliamente utilizado |
-| `google-t5/t5-base` | ~220 M | 512 tokens | Texto a texto generico | Apache 2.0 | HuggingFace, ampliamente utilizado |
-| `google/mt5-small` | ~300 M | 512 tokens | Texto a texto multilingue (101 idiomas) | Apache 2.0 | HuggingFace, ampliamente utilizado |
+| `Driw0x/my_awesome_opus_books_model` | 60,5 M | 512 tokens (heredado del base) | Texto a texto (traduccion/resumen probable) | Apache 2.0 | Hugging Face, 0 descargas |
+| `google-t5/t5-small` (modelo base) | 60,5 M | 512 tokens | Texto a texto generico (multitarea) | Apache 2.0 | Hugging Face, ampliamente utilizado |
+| `google/flan-t5-small` | 60,5 M | 512 tokens | Texto a texto con instrucciones | Apache 2.0 | Hugging Face, ampliamente utilizado |
+| `google-t5/t5-base` | ~220 M | 512 tokens | Texto a texto generico | Apache 2.0 | Hugging Face, ampliamente utilizado |
+| `google/mt5-small` | ~300 M | 512 tokens | Texto a texto multilingue (101 idiomas) | Apache 2.0 | Hugging Face, ampliamente utilizado |
 
 El modelo aqui descrito no aporta mejoras documentadas frente a su modelo base: no hay comparacion publicada de BLEU contra `t5-small` sin ajustar, ni contra `flan-t5-small`, que incorpora ajuste por instrucciones y suele rendir mejor en tareas de generacion condicionada por prompt. Para cualquier uso real de texto a texto en ingles, `flan-t5-small` o `t5-base` son alternativas mas seguras; para multilingue, `mt5-small`.
 
@@ -98,11 +98,11 @@ El modelo aqui descrito no aporta mejoras documentadas frente a su modelo base: 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Driw0x/my_awesome_opus_books_model
+- Modelo en Hugging Face: https://huggingface.co/Driw0x/my_awesome_opus_books_model
 - Modelo base `google-t5/t5-small`: https://huggingface.co/google-t5/t5-small
 - Paper de T5, "Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer": https://arxiv.org/abs/1910.10683
 - Documentacion de T5 en Transformers: https://huggingface.co/docs/transformers/model_doc/t5
 - Dataset `opus_books` (coincide con el nombre del checkpoint): https://huggingface.co/datasets/opus_books
-- Curso de NLP de HuggingFace, capitulo de traduccion con T5 (origen del flujo de trabajo de este checkpoint): https://huggingface.co/learn/nlp-course/chapter7/4
+- Curso de NLP de Hugging Face, capitulo de traduccion con T5 (origen del flujo de trabajo de este checkpoint): https://huggingface.co/learn/nlp-course/chapter7/4
 
 Nota: la busqueda web realizada no devolvio ningun resultado tecnico relevante sobre este modelo ni sobre su autor; los unicos resultados obtenidos fueron dominios no relacionados con inteligencia artificial, por lo que no se incluyen como enlaces.

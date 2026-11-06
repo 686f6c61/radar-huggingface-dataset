@@ -27,7 +27,7 @@ Es relevante porque aborda el bienestar de modelos desde una metodología contro
 
 ## Arquitectura y entrenamiento
 
-Los modelos base son transformers decoder convencionales: Qwen3-14B-Base y Gemma 3 27B pt. Sobre ellos se aplica una receta LoRA idéntica en todos los brazos. En Qwen el adaptador cubre todas las capas lineales (280 módulos); en Gemma cubre las proyecciones q/k/v/o/gate/up/down del modelo de lenguaje (434 módulos), con BOS. El ajuste usa LoRA r 64, alpha 128, dropout 0.05, learning rate 1e-4, scheduler coseno de HuggingFace con 5 % de warmup, una época, 16 conversaciones por paso, 4096 tokens, micro-batch 1, sin packing y pérdida solo sobre los turnos del asistente.
+Los modelos base son transformers decoder convencionales: Qwen3-14B-Base y Gemma 3 27B pt. Sobre ellos se aplica una receta LoRA idéntica en todos los brazos. En Qwen el adaptador cubre todas las capas lineales (280 módulos); en Gemma cubre las proyecciones q/k/v/o/gate/up/down del modelo de lenguaje (434 módulos), con BOS. El ajuste usa LoRA r 64, alpha 128, dropout 0.05, learning rate 1e-4, scheduler coseno de Hugging Face con 5 % de warmup, una época, 16 conversaciones por paso, 4096 tokens, micro-batch 1, sin packing y pérdida solo sobre los turnos del asistente.
 
 El punto crítico del diseño es el aislamiento de variables. Los datos de chat se dividen en varios corpus: WORK-3M (tareas cotidianas no software), MOMENTS-PLAIN-3M (los "buenos momentos") y SMALLTALK-PLAIN-3M (conversación trivial sin buenos momentos), además de las 372 conversaciones de herramientas comunes a todos los brazos para mantener comparables las habilidades de tarea. Los cinco brazos difieren únicamente en la mezcla y el estilo: `wk` es el control solo-tarea (3738 conversaciones), `pl` usa todos los buenos momentos (3778), `plx` combina mitad y mitad (3740), `st` usa solo small talk (5292) y `nat` replica las situaciones de `pl` pero con respuestas generadas por el modelo instruct propio de la familia (Qwen3-14B sin thinking para Qwen, gemma-3-27b-it para Gemma). Excepto en `nat`, los turnos del asistente fueron escritos por Claude Opus 5.5.
 
@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros base | Contexto | Tipo de artefacto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| good-moments-base-sft | 14B (Qwen3) y 27B (Gemma 3) | no disponible | Adaptadores LoRA PEFT | other | HuggingFace, 0 descargas |
-| Qwen/Qwen3-14B-Base | 14B | no disponible | Modelo preentrenado completo | no disponible | HuggingFace |
-| google/gemma-3-27b-pt | 27B | no disponible | Modelo preentrenado completo | no disponible | HuggingFace |
-| Fine-tunes LoRA de chat sobre Qwen3/Gemma 3 | 14B / 27B | no disponible | Adaptadores LoRA | variable | HuggingFace |
+| good-moments-base-sft | 14B (Qwen3) y 27B (Gemma 3) | no disponible | Adaptadores LoRA PEFT | other | Hugging Face, 0 descargas |
+| Qwen/Qwen3-14B-Base | 14B | no disponible | Modelo preentrenado completo | no disponible | Hugging Face |
+| google/gemma-3-27b-pt | 27B | no disponible | Modelo preentrenado completo | no disponible | Hugging Face |
+| Fine-tunes LoRA de chat sobre Qwen3/Gemma 3 | 14B / 27B | no disponible | Adaptadores LoRA | variable | Hugging Face |
 
 No se dispone de datos de rendimiento para comparar numéricamente con alternativas; la comparación relevante es de propósito (experimento de bienestar de modelos frente a fine-tunes de chat orientados a producto) y de metodología (control estricto de datos con múltiples semillas).
 
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento para comparar numéricamente con alternati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/joshycodes/good-moments-base-sft
+- Hugging Face: https://huggingface.co/joshycodes/good-moments-base-sft
 - Modelo base Qwen: https://huggingface.co/Qwen/Qwen3-14B-Base
 - Modelo base Gemma: https://huggingface.co/google/gemma-3-27b-pt
 - Modelo instruct de Qwen usado para el estilo nativo: https://huggingface.co/Qwen/Qwen3-14B

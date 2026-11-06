@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Marvinjudy0/extraspicyy es un repositorio de pesos publicado en HuggingFace por el usuario Marvinjudy0 el 21 de septiembre de 2026 y actualizado ese mismo dia. La informacion disponible es minima: no hay tarjeta de modelo con contenido tecnico (unicamente la declaracion de licencia), no se declara pipeline de inferencia, no se especifican idiomas y no consta ninguna descarga ni valoracion en el momento de la consulta. El unico dato cuantitativo objetivo es el tamano del repositorio, 0,6 GB.
+Marvinjudy0/extraspicyy es un repositorio de pesos publicado en Hugging Face por el usuario Marvinjudy0 el 21 de septiembre de 2026 y actualizado ese mismo dia. La informacion disponible es minima: no hay tarjeta de modelo con contenido tecnico (unicamente la declaracion de licencia), no se declara pipeline de inferencia, no se especifican idiomas y no consta ninguna descarga ni valoracion en el momento de la consulta. El unico dato cuantitativo objetivo es el tamano del repositorio, 0,6 GB.
 
 No es posible determinar a partir de la informacion proporcionada que tipo de artefacto contiene el repositorio (pesos completos, adaptador LoRA, cuantizacion GGUF o similar), ni su arquitectura, numero de parametros, longitud de contexto o datos de entrenamiento. La model card se limita a la linea `license: apache-2.0`, sin descripcion de uso, sin ejemplos y sin referencias a paper o repositorio de codigo.
 
@@ -94,7 +94,7 @@ No disponible. La comparacion con alternativas requiere conocer la categoria del
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Marvinjudy0/extraspicyy
+- Hugging Face: https://huggingface.co/Marvinjudy0/extraspicyy
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Demo: no disponible

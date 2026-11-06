@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`YourLocalWorm/Randommodels` es un repositorio de pesos publicado en HuggingFace por el usuario `YourLocalWorm`, con licencia OpenRAIL y un tamano total de 13,5 GB. El repositorio no incluye una model card util: el unico contenido del README es el bloque de metadatos con la licencia, sin descripcion de arquitectura, datos de entrenamiento, capacidades ni instrucciones de uso. Tampoco declara pipeline, idiomas soportados ni etiquetas de tarea.
+`YourLocalWorm/Randommodels` es un repositorio de pesos publicado en Hugging Face por el usuario `YourLocalWorm`, con licencia OpenRAIL y un tamano total de 13,5 GB. El repositorio no incluye una model card util: el unico contenido del README es el bloque de metadatos con la licencia, sin descripcion de arquitectura, datos de entrenamiento, capacidades ni instrucciones de uso. Tampoco declara pipeline, idiomas soportados ni etiquetas de tarea.
 
 El estado publico del repositorio indica que se trata de una subida personal o experimental: cero descargas, cero likes y ausencia de documentacion minima exigible para un modelo distribuible. La fecha de creacion es el 26 de agosto de 2024 y la ultima actualizacion registrada es el 13 de septiembre de 2026.
 
@@ -20,7 +20,7 @@ Dado que no se dispone de informacion tecnica verificable, esta ficha se limita 
 | Idiomas soportados | no disponible |
 | Licencia | OpenRAIL (segun metadatos del repositorio) |
 | Formato de pesos | no disponible (no confirmado; el repositorio ocupa 13,5 GB en total) |
-| ID en HuggingFace | YourLocalWorm/Randommodels |
+| ID en Hugging Face | YourLocalWorm/Randommodels |
 | Pipeline declarado | no disponible |
 | Descargas / likes | 0 / 0 |
 | Creado | 2024-08-26 |
@@ -78,7 +78,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| YourLocalWorm/Randommodels | no disponible | no disponible | no disponible | OpenRAIL | publico en HuggingFace, sin documentacion |
+| YourLocalWorm/Randommodels | no disponible | no disponible | no disponible | OpenRAIL | publico en Hugging Face, sin documentacion |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -95,7 +95,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/YourLocalWorm/Randommodels
+- Pagina del modelo en Hugging Face: https://huggingface.co/YourLocalWorm/Randommodels
 - Repositorio o paper tecnico: no disponible
 - Blog o anuncio del autor: no disponible
 - Demo o space asociado: no disponible

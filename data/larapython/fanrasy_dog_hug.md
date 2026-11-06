@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FANRASY_DOG_hug es un modelo alojado en HuggingFace por el usuario larapython. La información pública disponible es extremadamente limitada: la model card únicamente declara la licencia `creativeml-openrail-m`, sin descripción del modelo, arquitectura, datos de entrenamiento ni casos de uso previstos. El identificador del repositorio y la licencia CreativeML OpenRAIL-M sugieren que se trata de un modelo de difusión orientado a generación de imágenes, probablemente un fine-tune o un checkpoint derivado de la familia Stable Diffusion, aunque esta afirmación no puede confirmarse con los datos disponibles.
+FANRASY_DOG_hug es un modelo alojado en Hugging Face por el usuario larapython. La información pública disponible es extremadamente limitada: la model card únicamente declara la licencia `creativeml-openrail-m`, sin descripción del modelo, arquitectura, datos de entrenamiento ni casos de uso previstos. El identificador del repositorio y la licencia CreativeML OpenRAIL-M sugieren que se trata de un modelo de difusión orientado a generación de imágenes, probablemente un fine-tune o un checkpoint derivado de la familia Stable Diffusion, aunque esta afirmación no puede confirmarse con los datos disponibles.
 
 El modelo no registra descargas ni interacciones en el momento de la consulta y fue creado y actualizado en la misma fecha (2026-10-28), lo que indica una publicación reciente y sin validación comunitaria. No se ha publicado información sobre parámetros, contexto, idiomas soportados ni pipeline de inferencia.
 
@@ -72,5 +72,5 @@ No disponible. No se han identificado modelos comparables a partir de la informa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/larapython/FANRASY_DOG_hug
+- Repositorio en Hugging Face: https://huggingface.co/larapython/FANRASY_DOG_hug
 - Texto de la licencia CreativeML OpenRAIL-M: https://huggingface.co/spaces/CompVis/stable-diffusion-license

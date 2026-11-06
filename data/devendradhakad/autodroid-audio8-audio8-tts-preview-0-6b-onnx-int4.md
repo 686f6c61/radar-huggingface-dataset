@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Audio8 TTS Preview 0.6B ONNX INT4 es una versión cuantizada y empaquetada para inferencia en CPU del modelo de síntesis de voz (text-to-speech) multilingüe Audio8 TTS Preview 0.6B, orientado a clonación de voz zero-shot. El modelo base lo desarrolla Audio8 (Audio8-AI) y esta ficha corresponde a la conversión publicada por el usuario devendradhakad en HuggingFace, que incluye los pesos en formato ONNX con cuantización INT4.
+Audio8 TTS Preview 0.6B ONNX INT4 es una versión cuantizada y empaquetada para inferencia en CPU del modelo de síntesis de voz (text-to-speech) multilingüe Audio8 TTS Preview 0.6B, orientado a clonación de voz zero-shot. El modelo base lo desarrolla Audio8 (Audio8-AI) y esta ficha corresponde a la conversión publicada por el usuario devendradhakad en Hugging Face, que incluye los pesos en formato ONNX con cuantización INT4.
 
 El modelo se apoya en una arquitectura DualAR inspirada en Fish Audio S2 Pro: un transformer autorregresivo "lento" (Slow AR) que predice un token semántico por frame de audio y un transformer autorregresivo "rápido" (Fast AR) que predice los codebooks del codec condicionado por el estado oculto del Slow AR. El modelo principal tiene 601.159.424 parámetros (sin contar el codec) y una ventana de contexto de hasta 2.048 posiciones empaquetadas de texto y audio.
 
@@ -22,7 +22,7 @@ Su relevancia actual radica en que permite ejecutar TTS multilingüe con clonaci
 | Formato de pesos | ONNX (slow_ar_int4.onnx, fast_ar_int4.onnx, codec_decoder_fp16.onnx y codec_encoder_fp16.onnx) más tokenizer.json; runtime onnxruntime |
 | Codec de audio | 44,1 kHz, 2.048 muestras por frame (~21,5 frames/s); 10 codebooks de 4.096 entradas cada uno |
 | Frecuencia de muestreo de salida | 44,1 kHz mono, FP32 |
-| Tamano del repositorio | ~0,6 GB (repo en HuggingFace); ~572 MiB de archivos online; ~968 MiB el repositorio completo con el encoder de registro de voz |
+| Tamano del repositorio | ~0,6 GB (repo en Hugging Face); ~572 MiB de archivos online; ~968 MiB el repositorio completo con el encoder de registro de voz |
 | Ejecucion | ONNX Runtime, CPUExecutionProvider |
 
 ## Arquitectura y entrenamiento
@@ -76,13 +76,13 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 - La clonación de voz plantea riesgos de suplantación y deepfakes; es responsabilidad del usuario disponer del consentimiento de la persona cuya voz se clona y cumplir la normativa aplicable.
 - La cuantización weight-only INT4 de los módulos autorregresivos puede reducir la calidad de audio respecto a los pesos en FP16/FP32 del modelo base, aunque no se aportan métricas comparativas.
 - El entorno validado es macOS arm64 sobre Apple M2; el comportamiento en otras plataformas y con otros asignadores de memoria puede variar.
-- Repositorio de terceros: la conversión la publica el usuario devendradhakad (0 descargas y 0 likes en el momento de la consulta). Las etiquetas indican como base Edge0/Audio8-TTS-Preview-0.6b, mientras que la model card y los metadatos de HuggingFace apuntan a Audio8/Audio8-TTS-Preview-0.6b; conviene verificar la procedencia antes de usarlo en producción.
+- Repositorio de terceros: la conversión la publica el usuario devendradhakad (0 descargas y 0 likes en el momento de la consulta). Las etiquetas indican como base Edge0/Audio8-TTS-Preview-0.6b, mientras que la model card y los metadatos de Hugging Face apuntan a Audio8/Audio8-TTS-Preview-0.6b; conviene verificar la procedencia antes de usarlo en producción.
 - Este repositorio contiene únicamente los archivos del modelo: el código de inferencia, el servicio de streaming y el registro de voz están en el repositorio de GitHub del proyecto.
 - Licencia Apache 2.0 permite uso comercial, pero al derivar de un modelo base conviene comprobar también los términos y condiciones del modelo original.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/devendradhakad/autodroid-Audio8-Audio8-TTS-Preview-0.6B-ONNX-INT4
+- Repositorio en Hugging Face: https://huggingface.co/devendradhakad/autodroid-Audio8-Audio8-TTS-Preview-0.6B-ONNX-INT4
 - Modelo base Audio8 TTS Preview 0.6B: https://huggingface.co/Audio8/Audio8-TTS-Preview-0.6b
 - Repositorio oficial ONNX INT4 citado en la model card: https://huggingface.co/Audio8/Audio8-TTS-Preview-0.6B-ONNX-INT4
 - Repositorio de código en GitHub: https://github.com/Audio8-AI/Audio8_TTS

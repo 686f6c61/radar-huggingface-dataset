@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `rykerdz/j3fr-qwen` es un modelo de lenguaje multimodal (visión-lenguaje) publicado en HuggingFace por el usuario `rykerdz`. Se distribuye exclusivamente en formato GGUF, convertido mediante la herramienta Unsloth, lo que indica que está orientado a su ejecución con `llama.cpp` y motores compatibles. El repositorio contiene dos archivos: un cuantizado Q4_K_M para el modelo principal y un proyector multimodal en F16 (`mmproj`), lo que confirma su capacidad para procesar imágenes junto con texto.
+El modelo `rykerdz/j3fr-qwen` es un modelo de lenguaje multimodal (visión-lenguaje) publicado en Hugging Face por el usuario `rykerdz`. Se distribuye exclusivamente en formato GGUF, convertido mediante la herramienta Unsloth, lo que indica que está orientado a su ejecución con `llama.cpp` y motores compatibles. El repositorio contiene dos archivos: un cuantizado Q4_K_M para el modelo principal y un proyector multimodal en F16 (`mmproj`), lo que confirma su capacidad para procesar imágenes junto con texto.
 
 Según los metadatos de los safetensors, el modelo tiene 456.010.480 parámetros totales, una cifra considerablemente menor que la indicada en el nombre del archivo (`Qwen3.5-9B`). Esta discrepancia sugiere que podría tratarse de un modelo base más pequeño o de una variante con un encoder de visión separado. No se dispone de información sobre la licencia, los idiomas soportados ni el proceso de entrenamiento específico. El modelo fue creado en agosto de 2026 y no cuenta con descargas ni valoraciones en el momento de la consulta.
 
@@ -70,7 +70,7 @@ No se dispone de información suficiente para establecer una comparativa con mod
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/rykerdz/j3fr-qwen)
+- [Modelo en Hugging Face](https://huggingface.co/rykerdz/j3fr-qwen)
 - [Página oficial de Qwen](https://qwen.ai/home)
 - [Qwen 3 - Artículo en Singularity Moments](https://www.singularitymoments.com/qwen-3-ai-model/)
 - [Qwen3 Technical Report (arXiv)](https://arxiv.org/html/2505.09388v1)

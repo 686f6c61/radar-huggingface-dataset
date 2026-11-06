@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `kikusuka/breezy-flick-phase3-rescue-final` está publicado en HuggingFace bajo licencia Apache 2.0. Sin embargo, la model card asociada no contiene ninguna descripción técnica, arquitectura, parámetros, datos de entrenamiento ni ejemplos de uso. Se desconoce por completo la naturaleza del modelo, su tamaño, su propósito o su rendimiento. A fecha de creación (16 de agosto de 2026) no registra descargas ni valoraciones, lo que sugiere que podría tratarse de un artefacto experimental, un placeholder o un modelo sin documentar. Dada la ausencia total de información, no es posible elaborar una ficha técnica rigurosa; este documento refleja esa carencia y señala explícitamente los datos no disponibles.
+El modelo `kikusuka/breezy-flick-phase3-rescue-final` está publicado en Hugging Face bajo licencia Apache 2.0. Sin embargo, la model card asociada no contiene ninguna descripción técnica, arquitectura, parámetros, datos de entrenamiento ni ejemplos de uso. Se desconoce por completo la naturaleza del modelo, su tamaño, su propósito o su rendimiento. A fecha de creación (16 de agosto de 2026) no registra descargas ni valoraciones, lo que sugiere que podría tratarse de un artefacto experimental, un placeholder o un modelo sin documentar. Dada la ausencia total de información, no es posible elaborar una ficha técnica rigurosa; este documento refleja esa carencia y señala explícitamente los datos no disponibles.
 
 ## Especificaciones tecnicas
 
@@ -50,6 +50,6 @@ No disponible. Al no conocer la arquitectura, el tamaño ni el dominio de aplica
 
 ## Enlaces
 
-- [HuggingFace - kikusuka/breezy-flick-phase3-rescue-final](https://huggingface.co/kikusuka/breezy-flick-phase3-rescue-final)
+- [Hugging Face - kikusuka/breezy-flick-phase3-rescue-final](https://huggingface.co/kikusuka/breezy-flick-phase3-rescue-final)
 
 No se han encontrado papers, blogs, repositorios ni demos asociados a este modelo en la información proporcionada.

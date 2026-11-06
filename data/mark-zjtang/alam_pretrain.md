@@ -69,6 +69,6 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Mark-ZJTang/alam_pretrain
+- Repositorio Hugging Face: https://huggingface.co/Mark-ZJTang/alam_pretrain
 - Perfil de GitHub del autor: https://github.com/Mark-zjtang
 - (No se dispone de otros enlaces relevantes; la model card menciona un repositorio de código en GitHub, pero no se proporciona la URL exacta.)

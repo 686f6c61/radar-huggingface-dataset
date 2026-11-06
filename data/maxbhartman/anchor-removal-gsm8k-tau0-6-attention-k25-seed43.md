@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`maxbhartman/anchor-removal-gsm8k-tau0.6-attention-k25-seed43` es un checkpoint publicado en HuggingFace por el usuario maxbhartman, con etiquetas `pytorch` y `llama`, un tamano de repositorio de 6,4 GB, cero descargas y dos likes. No dispone de pipeline declarado, licencia, idiomas ni model card publica en la informacion disponible, por lo que se trata de un artefacto de investigacion mas que de un modelo listo para produccion.
+`maxbhartman/anchor-removal-gsm8k-tau0.6-attention-k25-seed43` es un checkpoint publicado en Hugging Face por el usuario maxbhartman, con etiquetas `pytorch` y `llama`, un tamano de repositorio de 6,4 GB, cero descargas y dos likes. No dispone de pipeline declarado, licencia, idiomas ni model card publica en la informacion disponible, por lo que se trata de un artefacto de investigacion mas que de un modelo listo para produccion.
 
 El propio identificador del repositorio describe un experimento de ablacion o eliminacion de anclas ("anchor-removal") evaluado sobre GSM8K, con un umbral tau de 0,6, una intervencion sobre atencion con k=25 y semilla aleatoria 43. Esta nomenclatura es habitual en trabajos de interpretabilidad mecanistica y steering de activaciones, donde se eliminan direcciones o componentes concretos del modelo base para medir su efecto en una tarea de razonamiento matematico. Se trata, por tanto, de una variante experimental derivada de un modelo de la familia Llama, no de un modelo entrenado desde cero.
 
@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El id
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| anchor-removal-gsm8k-tau0.6-attention-k25-seed43 | no disponible | no disponible | checkpoint experimental de ablacion | no disponible | HuggingFace, 0 descargas |
+| anchor-removal-gsm8k-tau0.6-attention-k25-seed43 | no disponible | no disponible | checkpoint experimental de ablacion | no disponible | Hugging Face, 0 descargas |
 | Modelo base Llama subyacente | no disponible | no disponible | modelo generalista | no disponible | no identificado |
-| Otras variantes del mismo autor (otras tau, k o semillas) | no disponible | no disponible | condiciones experimentales comparables | no disponible | presumiblemente en HuggingFace |
+| Otras variantes del mismo autor (otras tau, k o semillas) | no disponible | no disponible | condiciones experimentales comparables | no disponible | presumiblemente en Hugging Face |
 
 No se dispone de informacion suficiente para establecer una comparativa cuantitativa con alternativas de la misma categoria. No se identificaron en la busqueda web modelos comparables ni publicaciones asociadas.
 
@@ -89,7 +89,7 @@ No se dispone de informacion suficiente para establecer una comparativa cuantita
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/maxbhartman/anchor-removal-gsm8k-tau0.6-attention-k25-seed43
+- Hugging Face: https://huggingface.co/maxbhartman/anchor-removal-gsm8k-tau0.6-attention-k25-seed43
 - Paper, blog, repositorio de codigo o demo: no disponible
 - Modelo base: no identificado en la informacion proporcionada
 - Conjunto de evaluacion GSM8K: no enlazado en el repositorio (referencia habitual: https://huggingface.co/datasets/openai/gsm8k, no confirmada por el autor)

@@ -4,7 +4,7 @@
 
 LTX-2.5-22b-IC-LoRA-Ingredients es un adaptador LoRA de tipo *in-context* (IC-LoRA) publicado por Lightricks para su modelo de difusion de video LTX-2.5. Su funcion es la de un adaptador de video a video orientado a mantener la consistencia de personajes y elementos a partir de una hoja de referencia (*reference sheet*), de modo que el modelo base pueda generar o transformar video respetando la identidad visual aportada como contexto. Se distribuye como un unico archivo de difusion (formato *diffusion-single-file*), con un peso de repositorio de 1,4 GB, lo que confirma que se trata de un adaptador y no de un modelo completo.
 
-El repositorio se publica bajo la licencia *ltx-2.x-community-license*, hereda el modelo base Lightricks/LTX-2.5 y esta etiquetado para la tarea de video-to-video con soporte exclusivo de ingles (en). El acceso es restringido: es necesario aceptar las condiciones en HuggingFace antes de poder descargarlo. La nomenclatura "22b" del identificador apunta al modelo base de 22 mil millones de parametros sobre el que se aplica el LoRA, no al tamano del adaptador en si.
+El repositorio se publica bajo la licencia *ltx-2.x-community-license*, hereda el modelo base Lightricks/LTX-2.5 y esta etiquetado para la tarea de video-to-video con soporte exclusivo de ingles (en). El acceso es restringido: es necesario aceptar las condiciones en Hugging Face antes de poder descargarlo. La nomenclatura "22b" del identificador apunta al modelo base de 22 mil millones de parametros sobre el que se aplica el LoRA, no al tamano del adaptador en si.
 
 Su relevancia actual reside en que resuelve uno de los problemas mas persistentes de la generacion de video con difusion: la deriva de identidad entre planos. Al plantearse como un LoRA aplicable sobre LTX-2.5, permite reutilizar la infraestructura de inferencia ya existente para el modelo base y anadir consistencia de personaje sin reentrenar.
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Ejecucion en GPU de consumo: no confirmada en la informacion disponible; con cuantizacion agresiva y resoluciones reducidas podria ser viable en tarjetas de 24 GB, pero no hay datos publicados que lo verifiquen.
 - Opciones de despliegue: no disponible. No se confirma compatibilidad con vLLM, llama.cpp, Ollama o TGI; al tratarse de un modelo de difusion de video, las herramientas habituales son las del ecosistema de difusion y las del propio modelo base.
 - Latencia y throughput estimados: no disponible.
-- El acceso al repositorio esta restringido (gated) y requiere aceptar las condiciones en HuggingFace antes de la descarga, incluso para pruebas.
+- El acceso al repositorio esta restringido (gated) y requiere aceptar las condiciones en Hugging Face antes de la descarga, incluso para pruebas.
 
 ## Comparativa con modelos similares
 
@@ -67,13 +67,13 @@ No se dispone de informacion sobre adaptadores comparables en la documentacion p
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| LTX-2.5-22b-IC-LoRA-Ingredients | No disponible para el adaptador (1,4 GB); 22b en el modelo base | No disponible | ltx-2.x-community-license | HuggingFace, acceso restringido (gated), 95 descargas y 10 likes en el momento de la consulta |
-| Lightricks/LTX-2.5 (modelo base) | 22b segun el identificador | No disponible | No disponible en la informacion proporcionada | HuggingFace |
+| LTX-2.5-22b-IC-LoRA-Ingredients | No disponible para el adaptador (1,4 GB); 22b en el modelo base | No disponible | ltx-2.x-community-license | Hugging Face, acceso restringido (gated), 95 descargas y 10 likes en el momento de la consulta |
+| Lightricks/LTX-2.5 (modelo base) | 22b segun el identificador | No disponible | No disponible en la informacion proporcionada | Hugging Face |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: es un repositorio *gated*, por lo que la descarga y el uso requieren aceptar previamente las condiciones en HuggingFace.
+- Acceso restringido: es un repositorio *gated*, por lo que la descarga y el uso requieren aceptar previamente las condiciones en Hugging Face.
 - Licencia *ltx-2.x-community-license*: no es una licencia de codigo abierto estandar; es imprescindible revisar sus terminos antes de cualquier uso comercial, ya que puede imponer restricciones de escala, atribucion o redistribucion.
 - Dependencia del modelo base: el adaptador solo funciona junto con Lightricks/LTX-2.5 y queda sujeto a los cambios y a las limitaciones de dicho modelo.
 - Idioma: los metadatos declaran unicamente soporte de ingles (en), lo que limita prompts y descripciones en otros idiomas.
@@ -85,7 +85,7 @@ No se dispone de informacion sobre adaptadores comparables en la documentacion p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lightricks/LTX-2.5-22b-IC-LoRA-Ingredients
+- Modelo en Hugging Face: https://huggingface.co/Lightricks/LTX-2.5-22b-IC-LoRA-Ingredients
 - Modelo base: https://huggingface.co/Lightricks/LTX-2.5
 - Organizacion del autor: https://huggingface.co/Lightricks
 - La busqueda web realizada no devolvio enlaces relevantes sobre este modelo (los resultados correspondian a servicios no relacionados). No se dispone de papers, blogs, repositorios ni demos adicionales en la informacion proporcionada.

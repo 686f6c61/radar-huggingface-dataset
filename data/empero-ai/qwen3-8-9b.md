@@ -90,7 +90,7 @@ La comparación directa solo es posible con la base Qwen3.5-9B, ya que no se han
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/empero-ai/Qwen3.8-9B
+- Repositorio Hugging Face: https://huggingface.co/empero-ai/Qwen3.8-9B
 - Sitio de Empero: https://empero.org
 - Modelo base Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B
 - flash-linear-attention: https://github.com/fla-org/flash-linear-attention

@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| joshycodes/meta-llama-3.1-8b-sorrel-llama-base-xf-ss-chat | 8.030.261.248 | 128k | internal-research | HuggingFace (privado) |
-| unsloth/Meta-Llama-3.1-8B | 8.030.261.248 | 128k | Apache 2.0 | HuggingFace (público) |
-| meta-llama/Meta-Llama-3.1-8B-Instruct | 8.030.261.248 | 128k | Llama 3.1 Community | HuggingFace (público) |
+| joshycodes/meta-llama-3.1-8b-sorrel-llama-base-xf-ss-chat | 8.030.261.248 | 128k | internal-research | Hugging Face (privado) |
+| unsloth/Meta-Llama-3.1-8B | 8.030.261.248 | 128k | Apache 2.0 | Hugging Face (público) |
+| meta-llama/Meta-Llama-3.1-8B-Instruct | 8.030.261.248 | 128k | Llama 3.1 Community | Hugging Face (público) |
 
 No se han publicado resultados de benchmarks que permitan comparar el rendimiento real entre estos modelos.
 
@@ -78,5 +78,5 @@ No se han publicado resultados de benchmarks que permitan comparar el rendimient
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/joshycodes/meta-llama-3.1-8b-sorrel-llama-base-xf-ss-chat
+- Hugging Face: https://huggingface.co/joshycodes/meta-llama-3.1-8b-sorrel-llama-base-xf-ss-chat
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios) en la búsqueda web.

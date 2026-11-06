@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`SinghAman4/rt-detrans` es un repositorio publicado en HuggingFace por el usuario SinghAman4. La informacion disponible se limita a los metadatos del repositorio: licencia MIT, etiqueta de region `us`, cero descargas y cero likes en el momento de la consulta, sin pipeline declarado. La model card no contiene mas contenido que la declaracion de licencia, por lo que no hay descripcion funcional, arquitectura ni datos de entrenamiento publicados por el autor.
+`SinghAman4/rt-detrans` es un repositorio publicado en Hugging Face por el usuario SinghAman4. La informacion disponible se limita a los metadatos del repositorio: licencia MIT, etiqueta de region `us`, cero descargas y cero likes en el momento de la consulta, sin pipeline declarado. La model card no contiene mas contenido que la declaracion de licencia, por lo que no hay descripcion funcional, arquitectura ni datos de entrenamiento publicados por el autor.
 
 El identificador del repositorio sugiere una posible relacion con la familia RT-DETR (Real-Time Detection Transformer), orientada a deteccion de objetos en tiempo real, pero esta interpretacion no puede confirmarse con la informacion proporcionada. No hay evidencia en la model card ni en los resultados de busqueda que respalde esa hipotesis, y los resultados de busqueda obtenidos no guardan ninguna relacion con el modelo: corresponden a un medio de prensa local frances.
 
@@ -62,7 +62,7 @@ No es posible proponer casos de uso concretos y realistas sin conocer la tarea, 
 - Evaluacion exploratoria en un entorno aislado: cargar el modelo en un sandbox y ejecutar pruebas minimas para verificar si la inferencia funciona y con que entradas.
 - Analisis de licencia: verificar el alcance del MIT declarado y su compatibilidad con el caso de uso previsto.
 - Reproducibilidad academica: documentar el estado del arte del repositorio como ejemplo de publicacion sin model card descriptiva.
-- Pruebas de integracion en pipelines de HuggingFace `transformers`: comprobar si existe una clase de modelo compatible y si el tokenizer esta correctamente declarado.
+- Pruebas de integracion en pipelines de Hugging Face `transformers`: comprobar si existe una clase de modelo compatible y si el tokenizer esta correctamente declarado.
 - Monitorizacion de actualizaciones: seguir el repositorio por si el autor publica en el futuro una model card completa con especificaciones y resultados.
 
 ## Benchmarks y rendimiento
@@ -95,5 +95,5 @@ No disponible. No se puede establecer una comparativa con alternativas porque se
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SinghAman4/rt-detrans
+- Repositorio en Hugging Face: https://huggingface.co/SinghAman4/rt-detrans
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo en los resultados de busqueda disponibles.

@@ -93,6 +93,6 @@ Otros modelos comparables en la categoria de 9B o con capacidades tailandesas no
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Cheva123/Jamjuri-Preview-9B
+- Repositorio Hugging Face: https://huggingface.co/Cheva123/Jamjuri-Preview-9B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-9B/blob/main/LICENSE
 - Modelo base Qwen/Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B

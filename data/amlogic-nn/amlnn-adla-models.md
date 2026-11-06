@@ -89,6 +89,6 @@ La diferencia principal frente a los modelos originales es el formato propietari
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Amlogic-NN/amlnn-adla-models
+- Repositorio Hugging Face: https://huggingface.co/Amlogic-NN/amlnn-adla-models
 - Runtime amlllm-openai-server: https://github.com/Amlogic-NN/amlogic-llm-server
 - Modelo base etiquetado: https://huggingface.co/Qwen/Qwen3-1.7B

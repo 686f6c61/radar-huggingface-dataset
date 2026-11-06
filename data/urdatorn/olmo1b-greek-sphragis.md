@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 - VRAM estimada para inferencia: el modelo tiene 1,18B parámetros en bf16, lo que supone aproximadamente 2,35 GB de pesos. Con overhead de activaciones y memoria del runtime, se recomiendan al menos 4 GB de VRAM para inferencia con contexto completo.
 - GPU recomendadas: cualquier GPU consumer con 8 GB o más de VRAM es suficiente (RTX 3060, RTX 4060, etc.). Para entrenamiento o *fine-tuning*, se requieren GPUs con al menos 16-24 GB (RTX 3090, RTX 4090, A100).
 - Compatibilidad con consumer GPU: sí, es un modelo pequeño que cabe en cualquier GPU moderna.
-- Opciones de despliegue: al ser un modelo OLMo en formato HuggingFace, puede ejecutarse con transformers, vLLM, llama.cpp (si se convierte a GGUF) u Ollama. Para uso en el benchmark Sphragis, se usa con el código de `Urdatorn/sphragis_models`.
+- Opciones de despliegue: al ser un modelo OLMo en formato Hugging Face, puede ejecutarse con transformers, vLLM, llama.cpp (si se convierte a GGUF) u Ollama. Para uso en el benchmark Sphragis, se usa con el código de `Urdatorn/sphragis_models`.
 - Latencia y throughput: no hay mediciones publicadas. Como referencia orientativa, un modelo de 1B en bf16 en una GPU consumer genera decenas de tokens por segundo, pero no se dispone de cifras oficiales para este checkpoint.
 
 ## Comparativa con modelos similares
@@ -92,7 +92,7 @@ El autor menciona una adaptacion anterior de 7B que no cumplia los criterios met
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Urdatorn/OLMo1b-greek-sphragis
+- Modelo en Hugging Face: https://huggingface.co/Urdatorn/OLMo1b-greek-sphragis
 - Modelo base: https://huggingface.co/allenai/OLMo-1B-hf
 - Corpus de adaptacion: https://huggingface.co/datasets/Urdatorn/sphragis-olmo1b-adaptation-corpus
 - Dataset fuente: https://huggingface.co/datasets/Ericu950/AncientGreek

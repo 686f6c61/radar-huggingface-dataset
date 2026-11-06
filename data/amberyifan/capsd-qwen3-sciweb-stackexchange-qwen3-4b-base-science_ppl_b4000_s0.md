@@ -4,7 +4,7 @@
 
 Este modelo es un ajuste fino (fine-tuning) completo de Qwen/Qwen3-4B-Base, realizado por el usuario AmberYifan sobre un conjunto de datos denominado `capsd_Qwen3-4B-Base-n80000-sciweb-stackexchange__mix_science_ppl_b4000_s0`. El objetivo declarado es adaptar el modelo base a dominios científicos y técnicos, probablemente a partir de contenido de Stack Exchange y fuentes científicas, aunque la model card no ofrece una descripción detallada de los datos ni de los casos de uso previstos.
 
-Con aproximadamente 4 022 millones de parámetros, el modelo mantiene la arquitectura transformer del Qwen3-4B-Base, pero no se proporcionan especificaciones adicionales sobre la longitud de contexto, el vocabulario o las capacidades multilingües en la documentación disponible. El repositorio contiene únicamente los pesos en formato safetensors y una model card generada automáticamente por el Trainer de HuggingFace, sin resultados de evaluación ni ejemplos de uso.
+Con aproximadamente 4 022 millones de parámetros, el modelo mantiene la arquitectura transformer del Qwen3-4B-Base, pero no se proporcionan especificaciones adicionales sobre la longitud de contexto, el vocabulario o las capacidades multilingües en la documentación disponible. El repositorio contiene únicamente los pesos en formato safetensors y una model card generada automáticamente por el Trainer de Hugging Face, sin resultados de evaluación ni ejemplos de uso.
 
 La relevancia de este modelo radica en su posible utilidad para tareas de generación de texto en dominios científicos y técnicos, aunque su escasa documentación y la ausencia de benchmarks publicados limitan su adopción en entornos de producción sin una validación adicional.
 
@@ -59,10 +59,10 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3-4B-Base (base) | 4B | 32K (según documentación oficial de Qwen) | Apache 2.0 (según Qwen) | HuggingFace |
-| Este modelo (fine-tune) | 4B | no disponible | other | HuggingFace |
-| Llama-3.2-3B | 3.2B | 128K | Llama 3.2 license | HuggingFace |
-| Phi-3-mini-4k | 3.8B | 4K | MIT | HuggingFace |
+| Qwen3-4B-Base (base) | 4B | 32K (según documentación oficial de Qwen) | Apache 2.0 (según Qwen) | Hugging Face |
+| Este modelo (fine-tune) | 4B | no disponible | other | Hugging Face |
+| Llama-3.2-3B | 3.2B | 128K | Llama 3.2 license | Hugging Face |
+| Phi-3-mini-4k | 3.8B | 4K | MIT | Hugging Face |
 
 La comparativa se basa en características generales de los modelos base, ya que no hay datos de rendimiento para este fine-tune. El modelo hereda la arquitectura de Qwen3-4B-Base, pero su licencia "other" puede implicar restricciones de uso comercial, a diferencia de la licencia Apache 2.0 del modelo original.
 
@@ -77,6 +77,6 @@ La comparativa se basa en características generales de los modelos base, ya que
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AmberYifan/capsd-qwen3-sciweb-stackexchange-Qwen3-4B-Base-science_ppl_b4000_s0
+- Hugging Face: https://huggingface.co/AmberYifan/capsd-qwen3-sciweb-stackexchange-Qwen3-4B-Base-science_ppl_b4000_s0
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Base
 - No se encontraron otros enlaces (papers, blogs, demos) en la información proporcionada.

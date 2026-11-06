@@ -3,7 +3,7 @@
 ## Resumen
 DeepSeek-OCR 2 es un modelo de visión-lenguaje especializado en reconocimiento óptico de caracteres (OCR) y comprensión de documentos, desarrollado por DeepSeek AI. Se trata de la segunda iteración de DeepSeek-OCR, publicada en enero de 2026 bajo licencia Apache 2.0. Con 3.389.119.360 parámetros (≈3,39 B), el modelo está diseñado para convertir imágenes de documentos y PDFs en texto estructurado, incluyendo la conversión a Markdown con soporte de grounding. Su relevancia actual radica en su capacidad para procesar documentos multilingües con resolución dinámica, lo que permite manejar desde capturas simples hasta páginas complejas con múltiples columnas y tablas.
 
-El modelo se distribuye a través de HuggingFace con la librería transformers y requiere el uso de código remoto (trust_remote_code=True). Soporta resolución dinámica con un máximo de (0-6)×144 + 256 tokens visuales, y ofrece dos modos principales de prompt: uno para OCR libre y otro para conversión a Markdown con detección de diseño. Su licencia permisiva y su tamaño relativamente compacto lo hacen adecuado para despliegues en producción, aunque los detalles sobre entrenamiento, benchmarks y requisitos de hardware no están disponibles en la información proporcionada.
+El modelo se distribuye a través de Hugging Face con la librería transformers y requiere el uso de código remoto (trust_remote_code=True). Soporta resolución dinámica con un máximo de (0-6)×144 + 256 tokens visuales, y ofrece dos modos principales de prompt: uno para OCR libre y otro para conversión a Markdown con detección de diseño. Su licencia permisiva y su tamaño relativamente compacto lo hacen adecuado para despliegues en producción, aunque los detalles sobre entrenamiento, benchmarks y requisitos de hardware no están disponibles en la información proporcionada.
 
 ## Especificaciones técnicas
 | Parámetro | Valor |
@@ -43,7 +43,7 @@ No se especifican el número de tokens de entrenamiento, la composición del dat
 - Procesamiento de documentos legales: extracción de cláusulas y estructuras de contratos para su análisis automatizado.
 
 ## Benchmarks y rendimiento
-No se han publicado resultados de benchmarks en la información disponible. La etiqueta "eval-results" en HuggingFace indica que existen evaluaciones, pero no se proporcionan cifras en la model card ni en la búsqueda web. Por tanto, no se puede presentar una tabla comparativa con MMLU, HumanEval, GSM8K u otros.
+No se han publicado resultados de benchmarks en la información disponible. La etiqueta "eval-results" en Hugging Face indica que existen evaluaciones, pero no se proporcionan cifras en la model card ni en la búsqueda web. Por tanto, no se puede presentar una tabla comparativa con MMLU, HumanEval, GSM8K u otros.
 
 ## Requisitos de hardware
 - No se proporcionan requisitos oficiales de VRAM. Con 3.389.119.360 parámetros en bfloat16, los pesos ocupan aproximadamente 6,8 GB. Se estima que se necesita al menos 12 GB de VRAM para inferencia con comodidad, considerando activaciones y overhead.
@@ -57,7 +57,7 @@ No se dispone de datos comparativos en la información proporcionada. Los modelo
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| DeepSeek-OCR 2 | 3,39 B | no disponible | Apache 2.0 | HuggingFace |
+| DeepSeek-OCR 2 | 3,39 B | no disponible | Apache 2.0 | Hugging Face |
 | DeepSeek-OCR (v1) | no disponible | no disponible | no disponible | GitHub |
 | GOT-OCR2.0 | no disponible | no disponible | no disponible | GitHub |
 | MinerU | no disponible | no disponible | no disponible | GitHub |
@@ -74,7 +74,7 @@ No se dispone de datos comparativos en la información proporcionada. Los modelo
 - No se especifica el rendimiento en tareas de razonamiento o generación de texto general, ya que está especializado en OCR.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/deepseek-ai/DeepSeek-OCR-2
+- Hugging Face: https://huggingface.co/deepseek-ai/DeepSeek-OCR-2
 - GitHub: https://github.com/deepseek-ai/DeepSeek-OCR-2
 - Paper 1 (DeepSeek-OCR): https://arxiv.org/abs/2510.18234
 - Paper 2 (DeepSeek-OCR 2): https://arxiv.org/abs/2601.20552

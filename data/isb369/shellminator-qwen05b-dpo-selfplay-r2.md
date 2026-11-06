@@ -21,7 +21,7 @@ El nombre "shellminator" y los datasets publicados por el autor (shellminator-ba
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura Qwen2, un transformer decoder autoregresivo con atencion por ventanas deslizantes y atencion completa alternadas en capas. Con 494 millones de parametros, es un modelo compacto disenado para inferencia eficiente en hardware modesto. Los tags del repositorio indican el uso de la libreria TRL (Transformer Reinforcement Learning) de HuggingFace, lo que confirma que el entrenamiento de preferencias se realizo con DPO.
+El modelo se basa en la arquitectura Qwen2, un transformer decoder autoregresivo con atencion por ventanas deslizantes y atencion completa alternadas en capas. Con 494 millones de parametros, es un modelo compacto disenado para inferencia eficiente en hardware modesto. Los tags del repositorio indican el uso de la libreria TRL (Transformer Reinforcement Learning) de Hugging Face, lo que confirma que el entrenamiento de preferencias se realizo con DPO.
 
 El proceso de entrenamiento sigue el paradigma de self-play documentado en el repositorio selfplay-factory: un modelo base genera N respuestas diversas para un mismo prompt, un verificador de logprobs con escala de letras (A-F) puntua cada respuesta con granularidad fina, y a partir de esas puntuaciones se construye un dataset de preferencias DPO sin intervencion humana. Los datasets publicados por el autor (shellminator-bash-clean con 10.1k muestras y shellminator-bash-dataset con 4k muestras) sugieren que el dominio de entrenamiento se centra en comandos bash y scripts de shell. No se dispone de informacion detallada sobre el numero total de tokens de entrenamiento, la composicion exacta del dataset ni si hubo etapas adicionales de entrenamiento supervisado previas al DPO.
 
@@ -83,7 +83,7 @@ La comparativa se basa en modelos de tamano similar disponibles en el ecosistema
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ISB369/shellminator-qwen05b-dpo-selfplay-r2
+- Modelo en Hugging Face: https://huggingface.co/ISB369/shellminator-qwen05b-dpo-selfplay-r2
 - Variante previa (shellminator-qwen05b-dpo): https://huggingface.co/ISB369/shellminator-qwen05b-dpo
 - Datasets del autor: https://huggingface.co/ISB369/datasets
 - Repositorio selfplay-factory (metodologia de entrenamiento): https://github.com/harishkotra/selfplay-factory

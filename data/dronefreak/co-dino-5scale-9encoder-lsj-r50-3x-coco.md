@@ -4,7 +4,7 @@
 
 Co-DINO es un modelo de detección de objetos basado en la arquitectura DINO, entrenado con el esquema Co-DETR (Collaborative Hybrid Assignments Training), propuesto por investigadores de SenseTime X-Lab en ICCV 2023. Este checkpoint concreto, publicado por el usuario `dronefreak` como espejo de los pesos originales, utiliza un backbone ResNet-50 con LSJ (Large Scale Jittering), cinco escalas de características y nueve capas de encoder, y fue entrenado durante 36 épocas sobre el dataset COCO. El esquema Co-DETR adjunta cabezas auxiliares con asignación de etiquetas uno-a-muchos durante el entrenamiento, lo que mejora la convergencia y la discriminabilidad de las características, logrando 55.4 AP en COCO 2017 val.
 
-El modelo es relevante porque combina el rendimiento de los detectores basados en DETR con la eficiencia de un backbone ResNet-50, lo que lo hace adecuado para tareas de detección donde se necesita una buena relación precisión/coste computacional. No es un modelo de lenguaje ni admite tool calling; se ejecuta mediante el stack de MMDetection 2.x. Es importante señalar que esta publicación en HuggingFace es un espejo no oficial del checkpoint distribuido originalmente en Google Drive por el equipo de SenseTime.
+El modelo es relevante porque combina el rendimiento de los detectores basados en DETR con la eficiencia de un backbone ResNet-50, lo que lo hace adecuado para tareas de detección donde se necesita una buena relación precisión/coste computacional. No es un modelo de lenguaje ni admite tool calling; se ejecuta mediante el stack de MMDetection 2.x. Es importante señalar que esta publicación en Hugging Face es un espejo no oficial del checkpoint distribuido originalmente en Google Drive por el equipo de SenseTime.
 
 ## Especificaciones tecnicas
 
@@ -15,7 +15,7 @@ El modelo es relevante porque combina el rendimiento de los detectores basados e
 | Parametros activos | No aplicable (no es MoE) |
 | Longitud de contexto | No disponible (modelo de vision; entrada de imagen) |
 | Tipos de cuantizacion | No disponible |
-| Idiomas soportados | en (etiqueta en HuggingFace; el modelo es visual y no procesa texto) |
+| Idiomas soportados | en (etiqueta en Hugging Face; el modelo es visual y no procesa texto) |
 | Licencia | unknown (no determinada) |
 | Formato de pesos | `.pth` (checkpoint PyTorch) + `.py` (configuracion) |
 
@@ -83,7 +83,7 @@ La información proporcionada no incluye benchmarks oficiales de otras variantes
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dronefreak/co-dino-5scale-9encoder-lsj-r50-3x-coco
+- Hugging Face: https://huggingface.co/dronefreak/co-dino-5scale-9encoder-lsj-r50-3x-coco
 - Paper: https://arxiv.org/abs/2211.12860
 - Repositorio oficial: https://github.com/Sense-X/Co-DETR
 - Fork mantenido por el autor del mirror: https://github.com/dronefreak/Co-DETR

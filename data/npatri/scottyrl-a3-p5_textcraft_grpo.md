@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`scottyrl-a3-p5_textcraft_grpo` es un adaptador LoRA de rango 32 sobre el modelo base `Qwen/Qwen3.5-4B`, publicado por el usuario npatri en HuggingFace. No se trata de un modelo entrenado desde cero, sino de un ajuste fino parametrizado eficiente (PEFT) desarrollado en el marco del curso 11-768 (AI Agents) de la Universidad Carnegie Mellon, correspondiente a la asignatura Assignment 3. El adaptador se ha entrenado con el framework `scottyrl` y se ha exportado desde la infraestructura Tinker (ruta `tinker://model_d6bc6a5f/v50`).
+`scottyrl-a3-p5_textcraft_grpo` es un adaptador LoRA de rango 32 sobre el modelo base `Qwen/Qwen3.5-4B`, publicado por el usuario npatri en Hugging Face. No se trata de un modelo entrenado desde cero, sino de un ajuste fino parametrizado eficiente (PEFT) desarrollado en el marco del curso 11-768 (AI Agents) de la Universidad Carnegie Mellon, correspondiente a la asignatura Assignment 3. El adaptador se ha entrenado con el framework `scottyrl` y se ha exportado desde la infraestructura Tinker (ruta `tinker://model_d6bc6a5f/v50`).
 
 El objetivo declarado del adaptador es mejorar el comportamiento del modelo base en tareas de tipo TextCraft-Synth, un entorno de evaluación de agentes que requiere manipulación de texto estructurado y razonamiento multi-paso. La evaluación se realiza sirviendo el adaptador con vLLM sobre el modelo base y ejecutando un script de evaluación del curso sobre las particiones de validación `medium` y `hard`, con `k=4` muestras por tarea.
 
@@ -81,7 +81,7 @@ No se dispone de informacion suficiente para establecer una comparativa cuantita
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/npatri/scottyrl-a3-p5_textcraft_grpo
+- Hugging Face: https://huggingface.co/npatri/scottyrl-a3-p5_textcraft_grpo
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Repositorio del framework scottyrl: no disponible en la informacion proporcionada
 - Paper o blog del metodo GRPO: no disponible en la informacion proporcionada

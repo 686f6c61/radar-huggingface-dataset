@@ -44,7 +44,7 @@ Dado que no se ha publicado documentacion sobre el dataset ni sobre las mejoras 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El unico dato de rendimiento es la perdida de validacion de 1.5947, que sin contexto comparativo no permite evaluar la calidad del modelo. El model-index de HuggingFace aparece vacio.
+No se han publicado resultados de benchmarks en la informacion disponible. El unico dato de rendimiento es la perdida de validacion de 1.5947, que sin contexto comparativo no permite evaluar la calidad del modelo. El model-index de Hugging Face aparece vacio.
 
 ## Requisitos de hardware
 
@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El un
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3-14B (base) | 14B | 32 768 | Apache 2.0 | HuggingFace |
-| kyleliu789/qwen3-14b-gpt52-high-reasoning-original | 14B + adaptador | 32 768 (heredado) | other | HuggingFace |
-| Qwen3-14B-Instruct (fine-tuned oficial) | 14B | 32 768 | Apache 2.0 | HuggingFace |
+| Qwen3-14B (base) | 14B | 32 768 | Apache 2.0 | Hugging Face |
+| kyleliu789/qwen3-14b-gpt52-high-reasoning-original | 14B + adaptador | 32 768 (heredado) | other | Hugging Face |
+| Qwen3-14B-Instruct (fine-tuned oficial) | 14B | 32 768 | Apache 2.0 | Hugging Face |
 
 No se dispone de benchmarks comparativos entre estos modelos. El adaptador de este repositorio no presenta ninguna ventaja documentada frente al modelo base o al instruct oficial, y su licencia "other" puede limitar su uso comercial.
 
@@ -76,7 +76,7 @@ No se dispone de benchmarks comparativos entre estos modelos. El adaptador de es
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kyleliu789/qwen3-14b-gpt52-high-reasoning-original
+- Repositorio Hugging Face: https://huggingface.co/kyleliu789/qwen3-14b-gpt52-high-reasoning-original
 - Modelo base Qwen3-14B: https://huggingface.co/Qwen/Qwen3-14B
 - Repositorio oficial Qwen3 en GitHub: https://github.com/QwenLM/Qwen3
 - Informe tecnico de Qwen3 (arXiv): https://arxiv.org/abs/2505.09388

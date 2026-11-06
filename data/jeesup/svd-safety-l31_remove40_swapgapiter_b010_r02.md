@@ -86,8 +86,8 @@ No se han publicado en la información disponible resultados de benchmarks de ca
 
 | Modelo | Parámetros | Contexto | ASR AdvBench | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| svd-safety-l31_remove40_swapgapiter_b010_r02 | 8.030.261.248 (fracción densa 0,5998) | No verificado; base de 128.000 tokens | 0,4200 | Llama 3.1 Community License | Pesos safetensors en HuggingFace |
-| meta-llama/Llama-3.1-8B-Instruct | No disponible en la información proporcionada | 128.000 tokens (modelo base) | No disponible | Llama 3.1 Community License | Pesos safetensors en HuggingFace |
+| svd-safety-l31_remove40_swapgapiter_b010_r02 | 8.030.261.248 (fracción densa 0,5998) | No verificado; base de 128.000 tokens | 0,4200 | Llama 3.1 Community License | Pesos safetensors en Hugging Face |
+| meta-llama/Llama-3.1-8B-Instruct | No disponible en la información proporcionada | 128.000 tokens (modelo base) | No disponible | Llama 3.1 Community License | Pesos safetensors en Hugging Face |
 | Otras celdas de la rejilla del mismo autor | No disponibles | No disponible | No disponible | Llama 3.1 Community License | No disponibles en la información proporcionada |
 
 La única comparación sólida es contra el modelo base sin comprimir, pero no se han facilitado sus valores de ASR, por lo que la magnitud exacta de la degradación inducida por la compresión no puede establecerse con los datos disponibles.
@@ -109,9 +109,9 @@ La única comparación sólida es contra el modelo base sin comprimir, pero no s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l31_remove40_swapgapiter_b010_r02
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l31_remove40_swapgapiter_b010_r02
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Licencia Llama 3.1: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct/blob/main/LICENSE
 - Política de uso aceptable de Llama 3.1: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct/blob/main/USE_POLICY.md
 
-Nota: la búsqueda web realizada no devolvió ningún resultado relevante sobre el modelo, la técnica SVD-LLM ni el estudio de seguridad asociado; los enlaces anteriores proceden exclusivamente de la información de HuggingFace y de las referencias al modelo base.
+Nota: la búsqueda web realizada no devolvió ningún resultado relevante sobre el modelo, la técnica SVD-LLM ni el estudio de seguridad asociado; los enlaces anteriores proceden exclusivamente de la información de Hugging Face y de las referencias al modelo base.

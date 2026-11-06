@@ -89,8 +89,8 @@ Prueba con uso de herramientas (mismas 100 ofertas, herramientas en lugar de ent
 | Modelo | Parametros | Contexto | Rendimiento en la arena (regla A) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | JOA Small | ~3B (base) + LoRA r16 | No disponible | 93,3 (puesto 1 de 84) | JOA Model License, planificada | Pesos no publicados |
-| ibm-granite/granite-4.2-3b | ~3B | No disponible | 64,5 (puesto 71 de 84) | Apache 2.0 | Pesos publicos en HuggingFace |
-| Qwen/Qwen3.5-27B (maestro) | 27B | No disponible | 89,2 (puesto 4 de 84) | Apache 2.0 | Pesos publicos en HuggingFace |
+| ibm-granite/granite-4.2-3b | ~3B | No disponible | 64,5 (puesto 71 de 84) | Apache 2.0 | Pesos publicos en Hugging Face |
+| Qwen/Qwen3.5-27B (maestro) | 27B | No disponible | 89,2 (puesto 4 de 84) | Apache 2.0 | Pesos publicos en Hugging Face |
 
 La comparacion relevante es de eficiencia, no solo de puntuacion: JOA Small supera en la arena a un modelo casi nueve veces mayor y lo hace con una mediana de 117 tokens de salida frente a 2.946. En el conjunto verificado, sin embargo, el maestro de 27B sigue por delante (86,3% frente a 84,9%). No se dispone de datos de otros extractores especializados de ofertas de empleo con los que comparar.
 
@@ -109,7 +109,7 @@ La comparacion relevante es de eficiencia, no solo de puntuacion: JOA Small supe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JobOpportunitiesAPI/joa-small
+- Modelo en Hugging Face: https://huggingface.co/JobOpportunitiesAPI/joa-small
 - Modelo base: https://huggingface.co/ibm-granite/granite-4.2-3b
 - Dataset de la arena de extraccion: https://huggingface.co/datasets/JobOpportunitiesAPI/joa-extraction-arena
 - Licencia planificada: LICENSE.md en el repositorio del modelo (https://huggingface.co/JobOpportunitiesAPI/joa-small/blob/main/LICENSE.md)

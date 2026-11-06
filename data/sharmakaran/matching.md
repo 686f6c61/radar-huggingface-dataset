@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sharmakaran/matching` es un experimento de arquitectura híbrida CNN-Transformer orientado a tareas de *matching* (emparejamiento o correspondencia entre entradas). Lo publica el usuario `sharmakaran` en HuggingFace con licencia BSD-3-Clause. Se trata de una implementación *nano* deliberadamente pequeña, con solo 33.088 parámetros, cuyo propósito declarado es permitir inspeccionar cambios de arquitectura antes de un entrenamiento completo.
+El modelo `sharmakaran/matching` es un experimento de arquitectura híbrida CNN-Transformer orientado a tareas de *matching* (emparejamiento o correspondencia entre entradas). Lo publica el usuario `sharmakaran` en Hugging Face con licencia BSD-3-Clause. Se trata de una implementación *nano* deliberadamente pequeña, con solo 33.088 parámetros, cuyo propósito declarado es permitir inspeccionar cambios de arquitectura antes de un entrenamiento completo.
 
 El repositorio incluye un checkpoint de inicialización (`model.safetensors`) que no ha sido entrenado ni auditado, por lo que no representa un modelo funcional para tareas reales. La model card advierte explícitamente que no se reivindica ningún resultado de benchmark y que el checkpoint sirve únicamente para pruebas de humo (*smoke tests*). Su relevancia actual es limitada: puede interesar a investigadores que exploran fusiones de convoluciones y atención con bajo rango, pero no a desarrolladores que buscan un modelo listo para producción.
 
@@ -71,5 +71,5 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/sharmakaran/matching)
+- [Repositorio en Hugging Face](https://huggingface.co/sharmakaran/matching)
 - No se han encontrado papers, blogs o demos asociados a este modelo en la búsqueda web.

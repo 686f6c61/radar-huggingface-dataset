@@ -120,7 +120,7 @@ Frente al modelo base, este fine-tune mejora el WER en los 7 conjuntos ucraniano
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ihnatov-yuri/parakeet-tdt-0.6b-v3-uk
+- Modelo en Hugging Face: https://huggingface.co/ihnatov-yuri/parakeet-tdt-0.6b-v3-uk
 - Modelo base: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Blog del autor sobre el fine-tuning: https://ihnatov.nl/parakeet-uk/
 - FluidAudio (runtime Swift/Core ML): https://github.com/FluidInference/FluidAudio

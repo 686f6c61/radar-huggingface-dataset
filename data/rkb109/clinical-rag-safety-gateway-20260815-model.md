@@ -76,6 +76,6 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- HuggingFace: [https://huggingface.co/RKB109/clinical-rag-safety-gateway-20260815-model](https://huggingface.co/RKB109/clinical-rag-safety-gateway-20260815-model)
+- Hugging Face: [https://huggingface.co/RKB109/clinical-rag-safety-gateway-20260815-model](https://huggingface.co/RKB109/clinical-rag-safety-gateway-20260815-model)
 - Dataset asociado: [https://huggingface.co/datasets/RKB109/clinical-rag-safety-gateway-20260815-dataset](https://huggingface.co/datasets/RKB109/clinical-rag-safety-gateway-20260815-dataset)
 - Repositorio GitHub: mencionado en el README, pero no se proporciona URL en la información disponible.

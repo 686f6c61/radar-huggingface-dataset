@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RetNet-0.5B-v21.2 es un modelo de lenguaje de 504.179.896 parámetros desarrollado por el usuario Ayaka157 y publicado en HuggingFace bajo licencia MIT. Se trata de una implementación de la arquitectura RetNet (Retentive Network), una alternativa a los transformers clásicos que sustituye la atención por un mecanismo de retención con decaimiento aprendido por cabeza, lo que permite formulaciones paralelas, recurrentes y por bloques (chunkwise). El modelo es un export de investigación orientado a estudiar el comportamiento del contexto largo, no un modelo de producción.
+RetNet-0.5B-v21.2 es un modelo de lenguaje de 504.179.896 parámetros desarrollado por el usuario Ayaka157 y publicado en Hugging Face bajo licencia MIT. Se trata de una implementación de la arquitectura RetNet (Retentive Network), una alternativa a los transformers clásicos que sustituye la atención por un mecanismo de retención con decaimiento aprendido por cabeza, lo que permite formulaciones paralelas, recurrentes y por bloques (chunkwise). El modelo es un export de investigación orientado a estudiar el comportamiento del contexto largo, no un modelo de producción.
 
 La relevancia de esta ficha reside en su honestidad documental: el autor publica un informe técnico con resultados negativos medidos. El entrenamiento de contexto largo (13.000 pasos, 0,852 B tokens) redujo la perplejidad de cola larga a 16k de 3,2841 a 2,5942, pero el análisis demuestra que la mejora es un desplazamiento uniforme de nivel (-0,68 a -0,72 nats en todos los buckets de posición) y no un efecto posicional real. La recuperación tipo needle a 16k es de 0,0978, prácticamente equivalente al azar (brazo nulo 0,1024, item_acc 0/360).
 
@@ -93,7 +93,7 @@ No se dispone de datos comparativos publicados en la información proporcionada 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ayaka157/RetNet-0.5B-v21.2
+- Hugging Face: https://huggingface.co/Ayaka157/RetNet-0.5B-v21.2
 - Repositorio de código y análisis: https://github.com/Ayaka157/RetNet
 - Informe técnico (2026-10-29): https://github.com/Ayaka157/RetNet/blob/main/docs/latex/en/RetNet-0.5B-Technical-Report.pdf
 - Demo/playground: https://retnet.ayaka157.icu/play/

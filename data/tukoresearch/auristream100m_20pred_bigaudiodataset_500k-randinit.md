@@ -128,7 +128,7 @@ No hay modelos comparables porque este checkpoint es una inicialización aleator
 - **Producción**: no debe usarse en ningún entorno de producción sin entrenamiento previo.
 
 ## Enlaces
-- [HuggingFace: TuKoResearch/AuriStream100M_20Pred_BigAudioDataset_500k-randinit](https://huggingface.co/TuKoResearch/AuriStream100M_20Pred_BigAudioDataset_500k-randinit)
+- [Hugging Face: TuKoResearch/AuriStream100M_20Pred_BigAudioDataset_500k-randinit](https://huggingface.co/TuKoResearch/AuriStream100M_20Pred_BigAudioDataset_500k-randinit)
 - [Repositorio base: AuriStream-base](https://huggingface.co/TuKoResearch/AuriStream-base)
 - [Tokenizador: WavCochCausalV8192](https://huggingface.co/TuKoResearch/WavCochCausalV8192)
 - [Página del proyecto AuriStream](https://tukoresearch.github.io/auristream-speech/)

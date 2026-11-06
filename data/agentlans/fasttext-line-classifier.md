@@ -2,7 +2,7 @@
 
 ## Resumen
 
-agentlans/fasttext-line-classifier es un clasificador de texto entrenado con la librería fastText y publicado en HuggingFace por el usuario agentlans. Su nombre y sus etiquetas (preprocessing, filtering, cleanup, text-classification) indican que está pensado como componente de preprocesamiento: clasificar líneas individuales de texto dentro de pipelines de limpieza y filtrado de datos, presumiblemente para separar líneas útiles de líneas de ruido en corpus de entrenamiento. El modelo se distribuye bajo licencia MIT y está declarado únicamente para inglés (en).
+agentlans/fasttext-line-classifier es un clasificador de texto entrenado con la librería fastText y publicado en Hugging Face por el usuario agentlans. Su nombre y sus etiquetas (preprocessing, filtering, cleanup, text-classification) indican que está pensado como componente de preprocesamiento: clasificar líneas individuales de texto dentro de pipelines de limpieza y filtrado de datos, presumiblemente para separar líneas útiles de líneas de ruido en corpus de entrenamiento. El modelo se distribuye bajo licencia MIT y está declarado únicamente para inglés (en).
 
 El modelo se apoya en la arquitectura de fastText, un clasificador lineal sobre representaciones de bolsa de n-gramas con información de subpalabras. Frente a los clasificadores basados en transformers, este enfoque prioriza el coste computacional: la inferencia se ejecuta en CPU y permite procesar volúmenes muy grandes de líneas con una latencia por elemento muy baja, algo relevante cuando el objetivo es filtrar corpus de miles de millones de líneas antes de entrenar un modelo mayor.
 
@@ -70,9 +70,9 @@ La model card no incluye métricas de precisión, recall, F1, matriz de confusi�
 
 | Modelo | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| agentlans/fasttext-line-classifier | fastText supervisado | no disponible | no aplica (bolsa de n-gramas) | MIT | HuggingFace, 0 descargas |
+| agentlans/fasttext-line-classifier | fastText supervisado | no disponible | no aplica (bolsa de n-gramas) | MIT | Hugging Face, 0 descargas |
 | fastText lid.176 (Meta) | fastText supervisado | no disponible | no aplica | MIT | Repositorio oficial de fastText |
-| distilbert-base-uncased-finetuned-sst-2-english | Transformer encoder | 66 millones | 512 tokens | Apache 2.0 | HuggingFace, ampliamente usado |
+| distilbert-base-uncased-finetuned-sst-2-english | Transformer encoder | 66 millones | 512 tokens | Apache 2.0 | Hugging Face, ampliamente usado |
 | Baseline TF-IDF + regresion logistica | Modelo lineal disperso | no disponible | no aplica | depende de la implementacion | Requiere entrenamiento propio |
 
 No se conoce una comparativa publicada específica para la tarea de clasificación de líneas del corpus UltraX, ni resultados que permitan situar este modelo frente a alternativas. La comparación anterior es estructural, no de rendimiento. Frente a un clasificador transformer como DistilBERT, un modelo fastText ofrece menor coste de inferencia y mayor velocidad en CPU, a cambio de una capacidad de modelado semántico más limitada; frente a un baseline TF-IDF con regresión logística, la diferencia principal es el uso de subpalabras, que mejora la generalización ante vocabulario no visto.
@@ -92,7 +92,7 @@ No se conoce una comparativa publicada específica para la tarea de clasificaci�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agentlans/fasttext-line-classifier
+- Modelo en Hugging Face: https://huggingface.co/agentlans/fasttext-line-classifier
 - Dataset de entrenamiento declarado: https://huggingface.co/datasets/agentlans/openbmb-UltraX-Preview-line-classification
 - Repositorio oficial de fastText: https://github.com/facebookresearch/fastText
 - Documentación de fastText para clasificación de texto: https://fasttext.cc/docs/en/supervised-tutorial.html

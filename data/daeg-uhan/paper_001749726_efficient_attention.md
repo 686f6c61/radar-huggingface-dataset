@@ -35,7 +35,7 @@ No aplica: no existen casos de uso prácticos para este repositorio como modelo 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El paper original reporta mejoras en precisión y eficiencia en tareas de visión (como clasificación y detección) frente a la atención estándar, pero esos datos no están incluidos en el repositorio de HuggingFace.
+No se han publicado resultados de benchmarks en la informacion disponible. El paper original reporta mejoras en precisión y eficiencia en tareas de visión (como clasificación y detección) frente a la atención estándar, pero esos datos no están incluidos en el repositorio de Hugging Face.
 
 ## Requisitos de hardware
 
@@ -55,8 +55,8 @@ No disponible: no existen modelos comparables, ya que este repositorio no contie
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/daeg-uhan/paper_001749726_efficient_attention
+- Repositorio Hugging Face: https://huggingface.co/daeg-uhan/paper_001749726_efficient_attention
 - Paper en arXiv: https://arxiv.org/abs/1812.01243
 - Paper en IEEE: https://ieeexplore.ieee.org/document/9423033
-- Página del paper en HuggingFace: https://huggingface.co/papers/1812.01243
+- Página del paper en Hugging Face: https://huggingface.co/papers/1812.01243
 - Acceso abierto WACV 2021: https://openaccess.thecvf.com/content/WACV2021/html/Shen_Efficient_Attention_Attention_With_Linear_Complexities_WACV_2021_paper.html

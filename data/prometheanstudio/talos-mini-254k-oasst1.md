@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Talos Mini 254K OASST1 es un checkpoint experimental de investigación publicado por PrometheanStudio en HuggingFace. Se trata de un transformer decoder-only de tan solo 254.272 parámetros, con 2 capas, tamaño oculto de 64, 4 cabezas de atención y 2 cabezas de clave/valor (Grouped Query Attention), vocabulario de 1.024 tokens y longitud máxima de secuencia de 512. Fue entrenado sobre un subconjunto reducido del dataset OpenAssistant (OASST1), concretamente 2.000 ejemplos (1.800 de entrenamiento y 200 de validación), en una única GPU NVIDIA Tesla T4.
+Talos Mini 254K OASST1 es un checkpoint experimental de investigación publicado por PrometheanStudio en Hugging Face. Se trata de un transformer decoder-only de tan solo 254.272 parámetros, con 2 capas, tamaño oculto de 64, 4 cabezas de atención y 2 cabezas de clave/valor (Grouped Query Attention), vocabulario de 1.024 tokens y longitud máxima de secuencia de 512. Fue entrenado sobre un subconjunto reducido del dataset OpenAssistant (OASST1), concretamente 2.000 ejemplos (1.800 de entrenamiento y 200 de validación), en una única GPU NVIDIA Tesla T4.
 
 El modelo no pretende competir en calidad de generación, sino validar la arquitectura bautizada como Talos y su pipeline de entrenamiento a escala mínima antes de aumentar la capacidad. Según el propio autor, la generación libre no es coherente de forma consistente y el checkpoint debe entenderse como una línea base reproducible, no como un modelo conversacional de producción. Su interés para desarrolladores e investigadores es metodológico: sirve para comprobar infraestructura, tokenizador y bucles de entrenamiento a coste prácticamente nulo.
 
@@ -25,7 +25,7 @@ La relevancia de este tipo de publicaciones radica en que documentan de forma ex
 | Cabezas de atencion | 4 (consulta) / 2 (clave-valor), GQA |
 | Vocabulario | 1.024 tokens |
 | Tokenizador | Byte-Level BPE nativo de Talos, 764 merges |
-| Fecha de publicacion en HuggingFace | 2026-09-19 (segun metadatos del repositorio) |
+| Fecha de publicacion en Hugging Face | 2026-09-19 (segun metadatos del repositorio) |
 | Tamano del repositorio | 0,0 GB |
 | Descargas / likes | 0 / 0 |
 
@@ -84,7 +84,7 @@ No se han encontrado datos de comparacion en la informacion proporcionada (la bu
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Talos Mini 254K OASST1 | 254.272 | 512 (entrenado a 64) | No disponible | Checkpoint PyTorch en HuggingFace |
+| Talos Mini 254K OASST1 | 254.272 | 512 (entrenado a 64) | No disponible | Checkpoint PyTorch en Hugging Face |
 | Alternativas de la misma categoria | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de cifras verificadas de rendimiento de modelos comparables dentro de la informacion proporcionada, por lo que cualquier confrontacion numerica seria especulativa. La comparacion relevante es metodologica: Talos Mini es un escalon previo dentro de su propia familia, no un competidor de modelos publicos de tamano similar.
@@ -105,7 +105,7 @@ No se dispone de cifras verificadas de rendimiento de modelos comparables dentro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PrometheanStudio/talos-mini-254k-oasst1
+- Modelo en Hugging Face: https://huggingface.co/PrometheanStudio/talos-mini-254k-oasst1
 - Imagen de portada de la model card: https://i.ibb.co/qLS5yJt3/Screenshot-2026-09-17-4-30-09-PM.png
 - Dataset citado por el autor: OpenAssistant (OASST1)
 - Resultados de la busqueda web: los unicos resultados devueltos corresponden al motor de busqueda Qwant (https://www.qwant.com/ y paginas auxiliares), sin relacion con el modelo. No se han encontrado papers, blogs, repositorios ni demos adicionales.

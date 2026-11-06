@@ -64,12 +64,12 @@ No disponible. No se conocen modelos comparables en la misma categoría, ya que 
 
 - El checkpoint incluido **no ha sido entrenado** ni auditado para robustez, equidad o transferencia de dominio.
 - No es apto para uso en producción ni para tareas reales de visión, ya que carece de pesos entrenados.
-- La implementación es experimental y requiere un adaptador explícito para ser cargada con APIs estándar de HuggingFace.
+- La implementación es experimental y requiere un adaptador explícito para ser cargada con APIs estándar de Hugging Face.
 - No se dispone de información sobre sesgos, riesgos de alucinación o limitaciones de idioma, al ser un modelo de visión no entrenado.
 - La licencia Apache 2.0 permite uso comercial, pero el modelo no ofrece valor funcional sin un proceso de entrenamiento completo.
 - Los resultados de un futuro checkpoint entrenado deben documentarse por separado de los valores por defecto incluidos en el repositorio.
 
 ## Enlaces
 
-- HuggingFace: [https://huggingface.co/johnallenman/multitask-2024](https://huggingface.co/johnallenman/multitask-2024)
+- Hugging Face: [https://huggingface.co/johnallenman/multitask-2024](https://huggingface.co/johnallenman/multitask-2024)
 - Otros enlaces relevantes: no disponibles.

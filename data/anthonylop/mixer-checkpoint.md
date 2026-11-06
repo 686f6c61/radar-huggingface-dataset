@@ -90,5 +90,5 @@ No disponible. El autor no identifica modelos de referencia ni baselines compara
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AnthonyLop/mixer-checkpoint
+- Hugging Face: https://huggingface.co/AnthonyLop/mixer-checkpoint
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos relacionados con este modelo.

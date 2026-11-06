@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`esncf/q-FrozenLake-v1-4x4-noSlippery` no es un modelo de lenguaje ni una red neuronal profunda: es una **tabla Q serializada** (un agente de Q-learning tabular) entrenada para resolver el entorno `FrozenLake-v1` de Gymnasium en su variante 4x4 sin deslizamiento (`is_slippery=False`). El artefacto se publica como un fichero `q-learning.pkl` que contiene la tabla de valores Q y los metadatos del entorno necesarios para reconstruirlo (`env_id`). Lo desarrolla el usuario de HuggingFace `esncf` y se distribuye a traves del Hub con el pipeline `reinforcement-learning`.
+`esncf/q-FrozenLake-v1-4x4-noSlippery` no es un modelo de lenguaje ni una red neuronal profunda: es una **tabla Q serializada** (un agente de Q-learning tabular) entrenada para resolver el entorno `FrozenLake-v1` de Gymnasium en su variante 4x4 sin deslizamiento (`is_slippery=False`). El artefacto se publica como un fichero `q-learning.pkl` que contiene la tabla de valores Q y los metadatos del entorno necesarios para reconstruirlo (`env_id`). Lo desarrolla el usuario de Hugging Face `esncf` y se distribuye a traves del Hub con el pipeline `reinforcement-learning`.
 
 El modelo resuelve un problema de control secuencial muy acotado: un agente debe navegar una cuadricula de 4x4 celdas desde la posicion inicial hasta la meta evitando agujeros, con 16 estados discretos y 4 acciones (izquierda, abajo, derecha, arriba). Al no haber estocasticidad en las transiciones, el entorno es totalmente determinista y el agente puede alcanzar una politica optima con exploracion suficiente.
 
@@ -85,8 +85,8 @@ No se dispone de datos publicados de modelos comparables concretos en la informa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/esncf/q-FrozenLake-v1-4x4-noSlippery
+- Modelo en Hugging Face: https://huggingface.co/esncf/q-FrozenLake-v1-4x4-noSlippery
 - Entorno FrozenLake-v1 en Gymnasium: https://gymnasium.farama.org/environments/toy_text/frozen_lake/
 - Documentacion de Stable-Baselines3: https://stable-baselines3.readthedocs.io/
 - Repositorio de Stable-Baselines3: https://github.com/DLR-RM/stable-baselines3
-- Documentacion del Hub de HuggingFace para RL: https://huggingface.co/docs/hub/
+- Documentacion del Hub de Hugging Face para RL: https://huggingface.co/docs/hub/

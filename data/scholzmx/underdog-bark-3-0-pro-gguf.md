@@ -99,7 +99,7 @@ No se dispone de datos de benchmarks para modelos de otras familias en la inform
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/scholzmx/underdog-bark-3.0-pro-gguf
+- Repositorio Hugging Face: https://huggingface.co/scholzmx/underdog-bark-3.0-pro-gguf
 - Modelo base: https://huggingface.co/ConwayResearch/Underdog-Bark-3.0-Pro
 - Modelo original de NVIDIA: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Modelo de Moondream citado en la atribución: https://huggingface.co/moondream/parakeet-ultra

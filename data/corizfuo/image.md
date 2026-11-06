@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `Corizfuo/image` es un repositorio publicado en HuggingFace por el usuario Corizfuo el 15 de agosto de 2026. La única información disponible en la model card es la licencia, declarada como OpenRAIL. No se proporciona ninguna descripción técnica, arquitectura, tamaño, contexto, ni datos de entrenamiento. El repositorio no registra descargas ni valoraciones, lo que sugiere que se trata de una publicación reciente o sin difusión.
+El modelo `Corizfuo/image` es un repositorio publicado en Hugging Face por el usuario Corizfuo el 15 de agosto de 2026. La única información disponible en la model card es la licencia, declarada como OpenRAIL. No se proporciona ninguna descripción técnica, arquitectura, tamaño, contexto, ni datos de entrenamiento. El repositorio no registra descargas ni valoraciones, lo que sugiere que se trata de una publicación reciente o sin difusión.
 
-Dado que no existe información adicional más allá del frontmatter de la model card, cualquier evaluación de capacidades, rendimiento o uso práctico resulta imposible en este momento. Se recomienda consultar directamente el repositorio en HuggingFace por si se actualiza con documentación complementaria, o contactar con el autor para obtener detalles.
+Dado que no existe información adicional más allá del frontmatter de la model card, cualquier evaluación de capacidades, rendimiento o uso práctico resulta imposible en este momento. Se recomienda consultar directamente el repositorio en Hugging Face por si se actualiza con documentación complementaria, o contactar con el autor para obtener detalles.
 
 ## Especificaciones tecnicas
 
@@ -52,4 +52,4 @@ No disponible. Al carecer de especificaciones técnicas, no se puede establecer 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Corizfuo/image
+- Repositorio en Hugging Face: https://huggingface.co/Corizfuo/image

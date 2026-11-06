@@ -145,6 +145,6 @@ La comparativa muestra que las arquitecturas Qwen y Ornith son mucho más tolera
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/shoemoney/mlx-quant-ladder-findings
+- Repositorio Hugging Face: https://huggingface.co/shoemoney/mlx-quant-ladder-findings
 - Herramienta relacionada (GitHub): https://github.com/bmgaf/mlx-quant (mencionada en resultados de búsqueda, aunque no se confirma su relación directa)
 - Colección de quants MLX con ladder de evaluación: https://huggingface.co/collections/vimalnakrani/unlimited-ocr-mlx-quants-with-measured-eval-ladder (referencia similar, no directamente este repositorio)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen Stefani Max es un ajuste fino (fine-tune) del modelo base Qwen3-8B de Alibaba, publicado por el usuario gokhanturhan en HuggingFace bajo licencia Apache 2.0. Se trata de un adaptador LoRA de rango 64 aplicado sobre las capas de atención y MLP del modelo base, seguido de un entrenamiento con DPO (Direct Preference Optimization) y un breve ajuste con GRPO (Group Relative Policy Optimization) sobre una rúbrica. El resultado es un modelo de 8.190.735.360 parámetros que hereda la arquitectura transformer densa de Qwen3-8B.
+Qwen Stefani Max es un ajuste fino (fine-tune) del modelo base Qwen3-8B de Alibaba, publicado por el usuario gokhanturhan en Hugging Face bajo licencia Apache 2.0. Se trata de un adaptador LoRA de rango 64 aplicado sobre las capas de atención y MLP del modelo base, seguido de un entrenamiento con DPO (Direct Preference Optimization) y un breve ajuste con GRPO (Group Relative Policy Optimization) sobre una rúbrica. El resultado es un modelo de 8.190.735.360 parámetros que hereda la arquitectura transformer densa de Qwen3-8B.
 
 El propósito declarado del modelo es encarnar un personaje ficticio de escenario ("Qwen Stefani"), sin relación con la cantante Gwen Stefani ni con el asistente de Alibaba. Es, por tanto, un modelo de rol o character-driven, orientado a mantener una personalidad concreta en conversación más que a tareas de propósito general. La model card es extremadamente escueta y no documenta el dataset de entrenamiento, los hiperparámetros del DPO/GRPO ni los idiomas soportados.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Qwen Stefani Max (este) | 8,19B | no disponible | Apache 2.0 | HuggingFace, 24 descargas | Fine-tune de personaje con LoRA r64 + DPO + GRPO |
-| Qwen/Qwen3-8B (base) | 8,19B | no disponible en esta ficha | Apache 2.0 | HuggingFace, ampliamente usado | Modelo base oficial de Alibaba, con benchmarks publicados por el autor |
-| Fine-tunes de personaje sobre Llama 3 8B | ~8B | 8K típicamente | Llama 3 license | HuggingFace, comunidad amplia | Alternativa de rol con ecosistema maduro, licencia más restrictiva |
-| Mistral 7B Instruct | 7,2B | 32K | Apache 2.0 | HuggingFace, muy usado | Alternativa densa de tamaño similar, sin personalidad de personaje |
+| Qwen Stefani Max (este) | 8,19B | no disponible | Apache 2.0 | Hugging Face, 24 descargas | Fine-tune de personaje con LoRA r64 + DPO + GRPO |
+| Qwen/Qwen3-8B (base) | 8,19B | no disponible en esta ficha | Apache 2.0 | Hugging Face, ampliamente usado | Modelo base oficial de Alibaba, con benchmarks publicados por el autor |
+| Fine-tunes de personaje sobre Llama 3 8B | ~8B | 8K típicamente | Llama 3 license | Hugging Face, comunidad amplia | Alternativa de rol con ecosistema maduro, licencia más restrictiva |
+| Mistral 7B Instruct | 7,2B | 32K | Apache 2.0 | Hugging Face, muy usado | Alternativa densa de tamaño similar, sin personalidad de personaje |
 
 La comparación directa con benchmarks no es posible porque este fine-tune no publica métricas. Frente al Qwen3-8B base, la diferencia principal es el post-entrenamiento de personaje, no una mejora medible en tareas estándar.
 
@@ -85,6 +85,6 @@ La comparación directa con benchmarks no es posible porque este fine-tune no pu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gokhanturhan/qwen3-8b-qwen-stefani-max
+- Modelo en Hugging Face: https://huggingface.co/gokhanturhan/qwen3-8b-qwen-stefani-max
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Perfil del autor: https://huggingface.co/gokhanturhan

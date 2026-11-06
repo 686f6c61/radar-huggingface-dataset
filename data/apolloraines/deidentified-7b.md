@@ -74,9 +74,9 @@ No se dispone de datos de rendimiento publicados para Deidentified-7B, por lo qu
 
 ## Enlaces
 
-- [HuggingFace - ApolloRaines/Deidentified-7B](https://huggingface.co/ApolloRaines/Deidentified-7B)
+- [Hugging Face - ApolloRaines/Deidentified-7B](https://huggingface.co/ApolloRaines/Deidentified-7B)
 - [GitHub - DeepswapLLM](https://github.com/apolloraines/DeepswapLLM)
 - [Modelo relacionado: Parasite-7B (Qwen)](https://huggingface.co/ApolloRaines/Qwen2.5-7B-Parasite)
 - [Modelo relacionado: Parasite-7B (Mistral)](https://huggingface.co/ApolloRaines/Mistral-7B-Instruct-v0.3-Parasite)
 - [Modelo relacionado: Parasite-MoE (Mixtral 8x7B)](https://huggingface.co/ApolloRaines/Mixtral-8x7B-Instruct-v0.1-Parasite)
-- [Perfil de ApolloRaines en HuggingFace](https://huggingface.co/ApolloRaines/models)
+- [Perfil de ApolloRaines en Hugging Face](https://huggingface.co/ApolloRaines/models)

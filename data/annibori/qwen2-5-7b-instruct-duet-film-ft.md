@@ -81,8 +81,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| AnniBori/Qwen2.5-7B-Instruct-DUET-film-ft | 7,6 B | no disponible | Apache 2.0 | HuggingFace (0 descargas) | Ajuste de investigación para unlearning; sin benchmarks estándar |
-| Qwen/Qwen2.5-7B-Instruct (base) | 7,6 B | 32.768 tokens (dato del modelo base) | Apache 2.0 | HuggingFace, ampliamente usado | Asistente general con benchmarks publicados; referencia de pérdida FineWeb-Edu 2,2664 |
+| AnniBori/Qwen2.5-7B-Instruct-DUET-film-ft | 7,6 B | no disponible | Apache 2.0 | Hugging Face (0 descargas) | Ajuste de investigación para unlearning; sin benchmarks estándar |
+| Qwen/Qwen2.5-7B-Instruct (base) | 7,6 B | 32.768 tokens (dato del modelo base) | Apache 2.0 | Hugging Face, ampliamente usado | Asistente general con benchmarks publicados; referencia de pérdida FineWeb-Edu 2,2664 |
 | Otros ajustes de unlearning de la familia Qwen2.5-7B | 7,6 B | variable | variable | variable | No disponibles datos concretos en la información proporcionada |
 
 No se dispone de datos de benchmarks comparables para situar este modelo frente a alternativas de la misma categoría más allá del modelo base.
@@ -101,7 +101,7 @@ No se dispone de datos de benchmarks comparables para situar este modelo frente 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnniBori/Qwen2.5-7B-Instruct-DUET-film-ft
+- Modelo en Hugging Face: https://huggingface.co/AnniBori/Qwen2.5-7B-Instruct-DUET-film-ft
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/SwetieePawsss/DUET_LLM
 - Repositorio open-unlearning: no disponible en la información proporcionada

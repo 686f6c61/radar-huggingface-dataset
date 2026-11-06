@@ -81,12 +81,12 @@ La comparación de rendimiento directa con este ajuste no es posible porque no h
 - Idiomas no documentados: se desconoce si el ajuste conserva el multilingüismo de Qwen3-8B o si se ha estrechado al inglés matemático.
 - Soporte de tool calling no confirmado: no se especifica si el chat template y el entrenamiento conservan la capacidad de function calling de Qwen3, algo crítico para pipelines agénticos.
 - Licencia MIT: permisiva para uso comercial, pero conviene verificar la compatibilidad con los términos del modelo base Qwen3-8B (Apache 2.0), que se mantienen como capa inferior de derechos.
-- Metadatos atípicos: la fecha de creación (2026-09-28) y la ausencia de pipeline declarado en la ficha de HuggingFace dificultan la trazabilidad de la versión exacta de los pesos.
+- Metadatos atípicos: la fecha de creación (2026-09-28) y la ausencia de pipeline declarado en la ficha de Hugging Face dificultan la trazabilidad de la versión exacta de los pesos.
 - Sin cuantizaciones oficiales: desplegar en entornos con restricciones de VRAM exige generar GGUF/AWQ/GPTQ por cuenta propia, con el riesgo de degradación no medida.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/resistz/TTCL-AIME26-RLCR-Qwen3-8B-DAPO-Math14K
+- Modelo en Hugging Face: https://huggingface.co/resistz/TTCL-AIME26-RLCR-Qwen3-8B-DAPO-Math14K
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Paper del algoritmo DAPO (referencia del método citado en el nombre del modelo, no enlazado por el autor): https://arxiv.org/abs/2503.14476
 - Repositorio de Qwen3 en GitHub: https://github.com/QwenLM/Qwen3

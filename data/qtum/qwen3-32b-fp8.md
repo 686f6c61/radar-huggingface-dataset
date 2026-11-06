@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento comparativos entre estas versiones en la i
 
 ## Enlaces
 
-- Repositorio HuggingFace: [qtum/Qwen3-32B-FP8](https://huggingface.co/qtum/Qwen3-32B-FP8)
+- Repositorio Hugging Face: [qtum/Qwen3-32B-FP8](https://huggingface.co/qtum/Qwen3-32B-FP8)
 - Modelo base: [Qwen/Qwen3-32B](https://huggingface.co/Qwen/Qwen3-32B)
 - Cuantización oficial de Qwen: [Qwen/Qwen3-32B-FP8](https://huggingface.co/Qwen/Qwen3-32B-FP8)
 - Cuantización de PyTorch: [pytorch/Qwen3-32B-FP8](https://huggingface.co/pytorch/Qwen3-32B-FP8)

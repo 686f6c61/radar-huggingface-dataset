@@ -4,7 +4,7 @@
 
 El modelo `unconst/Affine-5czsc2fc98-r220-merged` es un checkpoint intermedio creado por el usuario `unconst` mediante la fusión de un LoRA sobre el modelo base `kevin954/Affine-5dfqbbh8ev-sft`. Según la model card, se trata de un "H1 merged checkpoint salvage", es decir, un respaldo privado de un checkpoint fusionado, no una versión final destinada a producción. El autor indica que es "Private TTL insurance; not a submission until Stage-5 gate clears", lo que sugiere que forma parte de un flujo de trabajo interno con fines de guardado temporal.
 
-El modelo tiene aproximadamente 35.1 mil millones de parámetros y los tags de HuggingFace indican que utiliza una arquitectura MoE (mezcla de expertos) relacionada con la familia Qwen3.5 (`qwen3_5_moe`), además de incluir la etiqueta `image-text-to-text`, lo que apunta a posibles capacidades multimodales. Sin embargo, la información pública es muy limitada: no se especifican detalles de arquitectura, contexto, licencia ni idiomas soportados. Dado su carácter de checkpoint de respaldo y la ausencia de documentación técnica, su uso práctico fuera del contexto del autor es incierto.
+El modelo tiene aproximadamente 35.1 mil millones de parámetros y los tags de Hugging Face indican que utiliza una arquitectura MoE (mezcla de expertos) relacionada con la familia Qwen3.5 (`qwen3_5_moe`), además de incluir la etiqueta `image-text-to-text`, lo que apunta a posibles capacidades multimodales. Sin embargo, la información pública es muy limitada: no se especifican detalles de arquitectura, contexto, licencia ni idiomas soportados. Dado su carácter de checkpoint de respaldo y la ausencia de documentación técnica, su uso práctico fuera del contexto del autor es incierto.
 
 ## Especificaciones tecnicas
 
@@ -68,5 +68,5 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unconst/Affine-5czsc2fc98-r220-merged
+- Modelo en Hugging Face: https://huggingface.co/unconst/Affine-5czsc2fc98-r220-merged
 - Modelo base: https://huggingface.co/kevin954/Affine-5dfqbbh8ev-sft

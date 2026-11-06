@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Este modelo, publicado por el usuario yuxuanw8 en HuggingFace, es un checkpoint de ajuste fino de 3.085.938.688 parametros (aproximadamente 3,09 mil millones) construido sobre la arquitectura Qwen2, tal y como indica la etiqueta `qwen2` del repositorio. El nombre del identificador (`qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.9-0.1-checkpoint-300`) sugiere que se trata de un experimento de investigacion: un entrenamiento con algun algoritmo de optimizacion tipo RACPO (probablemente una variante de policy optimization con ponderacion por informacion de Fisher), evaluado por exactitud (`acc`) sobre el conjunto de datos HotpotQA (`hotpot`), distribuido en dos dispositivos (`2device`) y con una mezcla de datos o pesos de 0.9/0.1. El sufijo `checkpoint-300` indica que es el paso 300 de dicho entrenamiento.
+Este modelo, publicado por el usuario yuxuanw8 en Hugging Face, es un checkpoint de ajuste fino de 3.085.938.688 parametros (aproximadamente 3,09 mil millones) construido sobre la arquitectura Qwen2, tal y como indica la etiqueta `qwen2` del repositorio. El nombre del identificador (`qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.9-0.1-checkpoint-300`) sugiere que se trata de un experimento de investigacion: un entrenamiento con algun algoritmo de optimizacion tipo RACPO (probablemente una variante de policy optimization con ponderacion por informacion de Fisher), evaluado por exactitud (`acc`) sobre el conjunto de datos HotpotQA (`hotpot`), distribuido en dos dispositivos (`2device`) y con una mezcla de datos o pesos de 0.9/0.1. El sufijo `checkpoint-300` indica que es el paso 300 de dicho entrenamiento.
 
-El modelo no dispone de una model card real: la tarjeta publicada es la plantilla autogenerada por HuggingFace, sin ningun campo rellenado (autor, licencia, idiomas, datos de entrenamiento y evaluacion figuran todos como `[More Information Needed]`). Esto, junto con sus cero descargas y cero likes en el momento de la consulta, apunta a un checkpoint con fines de investigacion mas que a un modelo listo para produccion.
+El modelo no dispone de una model card real: la tarjeta publicada es la plantilla autogenerada por Hugging Face, sin ningun campo rellenado (autor, licencia, idiomas, datos de entrenamiento y evaluacion figuran todos como `[More Information Needed]`). Esto, junto con sus cero descargas y cero likes en el momento de la consulta, apunta a un checkpoint con fines de investigacion mas que a un modelo listo para produccion.
 
 Es relevante ahora precisamente porque ejemplifica la practica habitual en investigacion abierta: publicar checkpoints intermedios de experimentos de RLHF/optimizacion de preferencias sobre modelos base pequenos, orientados a tareas de razonamiento multi-salto (HotpotQA). Para un desarrollador, el interes esta en reproducir o auditar el metodo, no en desplegarlo en produccion sin evaluacion previa.
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
   - int4: aproximadamente 1,7 GB; cabe en GPUs de 6-8 GB e incluso en CPU con llama.cpp.
 - GPU recomendadas: A100 40/80 GB, H100 para lotes grandes o servicio multi-cliente; RTX 4090, RTX 4080, RTX 3090 para inferencia en fp16 e int8; RTX 3060 12 GB o RTX 4060 Ti 16 GB para fp16 con lotes pequenos; GPUs de 8 GB o inferiores para int4/int8.
 - Compatibilidad con GPU consumer: si, especialmente en cuantizacion int4 e int8. En fp32 exige al menos 16-24 GB.
-- Opciones de despliegue: al ser `transformers` y estar etiquetado como `text-generation-inference` y `endpoints_compatible`, es compatible con TGI, vLLM y endpoints de HuggingFace. Para CPU o equipos modestos, convertir a GGUF y ejecutar con llama.cpp u Ollama.
+- Opciones de despliegue: al ser `transformers` y estar etiquetado como `text-generation-inference` y `endpoints_compatible`, es compatible con TGI, vLLM y endpoints de Hugging Face. Para CPU o equipos modestos, convertir a GGUF y ejecutar con llama.cpp u Ollama.
 - Latencia y throughput: no disponibles. No se han publicado mediciones de tokens por segundo ni de tiempo hasta el primer token.
 
 ## Comparativa con modelos similares
@@ -68,10 +68,10 @@ Los datos de la columna de rendimiento no estan publicados, por lo que la tabla 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| yuxuanw8/qwen3b-racpo-v2-...-checkpoint-300 | 3,09 B | no disponible (32.768 segun listados de terceros para checkpoints hermanos) | no disponible | HuggingFace, 0 descargas | Checkpoint de investigacion sin model card |
-| Qwen2.5-3B | 3,09 B | 32.768 tokens (hasta 131.072 con RoPE scaling) | Apache 2.0 en la mayoria de variantes | HuggingFace, ampliamente usado | Modelo base generalista con soporte oficial |
-| Llama-3.2-3B | 3,21 B | 131.072 tokens | Llama 3.2 Community License | HuggingFace, muy extendido | Buen rendimiento en razonamiento e instrucciones |
-| Phi-3.5-mini | 3,8 B | 131.072 tokens | MIT | HuggingFace | Enfocado a razonamiento y codigo |
+| yuxuanw8/qwen3b-racpo-v2-...-checkpoint-300 | 3,09 B | no disponible (32.768 segun listados de terceros para checkpoints hermanos) | no disponible | Hugging Face, 0 descargas | Checkpoint de investigacion sin model card |
+| Qwen2.5-3B | 3,09 B | 32.768 tokens (hasta 131.072 con RoPE scaling) | Apache 2.0 en la mayoria de variantes | Hugging Face, ampliamente usado | Modelo base generalista con soporte oficial |
+| Llama-3.2-3B | 3,21 B | 131.072 tokens | Llama 3.2 Community License | Hugging Face, muy extendido | Buen rendimiento en razonamiento e instrucciones |
+| Phi-3.5-mini | 3,8 B | 131.072 tokens | MIT | Hugging Face | Enfocado a razonamiento y codigo |
 
 No hay datos de benchmarks que permitan situar este checkpoint frente a las alternativas anteriores.
 
@@ -89,7 +89,7 @@ No hay datos de benchmarks que permitan situar este checkpoint frente a las alte
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.9-0.1-checkpoint-300
+- Repositorio Hugging Face: https://huggingface.co/yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.9-0.1-checkpoint-300
 - Checkpoint hermano 0.75-0.25 checkpoint-150: https://huggingface.co/yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.75-0.25-checkpoint-150
 - Checkpoint hermano 0.75-0.25 checkpoint-240 (discussions): https://huggingface.co/yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.75-0.25-checkpoint-240/discussions
 - Ficha en Featherless del checkpoint 0.75-0.25 checkpoint-210: https://featherless.ai/models/yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.75-0.25-checkpoint-210

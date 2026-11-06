@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo Tikoies/sair-dyadic-transducer es una implementacion en NumPy del reto SAIR Modular Arithmetic Challenge, desarrollada por Tigran Nersissian (usuario Tikoies en HuggingFace). No es un modelo de lenguaje: se trata de un transductor de estados finitos entrenado para resolver multiplicacion modular sobre operandos codificados de forma independiente, emitiendo la respuesta como digitos binarios. Su proposito es cumplir la interfaz del reto, que evalua la capacidad de un sistema para resolver aritmetica modular con modulos de hasta 2.048 bits.
+El modelo Tikoies/sair-dyadic-transducer es una implementacion en NumPy del reto SAIR Modular Arithmetic Challenge, desarrollada por Tigran Nersissian (usuario Tikoies en Hugging Face). No es un modelo de lenguaje: se trata de un transductor de estados finitos entrenado para resolver multiplicacion modular sobre operandos codificados de forma independiente, emitiendo la respuesta como digitos binarios. Su proposito es cumplir la interfaz del reto, que evalua la capacidad de un sistema para resolver aritmetica modular con modulos de hasta 2.048 bits.
 
 El modelo es extremadamente pequeno: 10.360 parametros entrenados en total, de los cuales 10.240 corresponden a once cabezas controladoras categoricas independientes y 120 a los readouts de cuatro celulas ReLU diadicas compartidas y podadas (35 neuronas en total). El controlador de estados finitos aprendido dirige esas celulas locales a traves de un enrutador de registros generico y un arbol diadico balanceado. Toda la arquitectura de enrutamiento, el almacenamiento en registros, el orden de tokens y el cableado del arbol estan fijados; solo los readouts y las cabezas se optimizan.
 
@@ -89,7 +89,7 @@ No disponible. La informacion proporcionada no incluye otros participantes del r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tikoies/sair-dyadic-transducer
+- Modelo en Hugging Face: https://huggingface.co/Tikoies/sair-dyadic-transducer
 - Paquete oficial del reto: https://github.com/SAIRcompetition/modular-arithmetic-challenge
 - Reglas oficiales y flujo de envio: https://github.com/SAIRcompetition/modular-arithmetic-challenge/blob/main/rules/overview.md
 - Especificacion oficial de evaluacion: https://github.com/SAIRcompetition/modular-arithmetic-challenge/blob/main/rules/evaluation.md

@@ -17,7 +17,7 @@ La relevancia de esta ficha es doble: por un lado, permite ejecutar un MoE de 7,
 | Parametros activos | ~1,3B por token |
 | Longitud de contexto | 262.144 tokens (extendida desde 131.072 mediante YaRN, factor 2.0; la arquitectura soporta hasta 1M según el autor) |
 | Tipos de cuantizacion | bf16, Q8_0, Q6_K, Q5_K_M, Q4_K_M, IQ4_XS, IQ3_M, IQ2_M |
-| Idiomas soportados | Bilingüe espanol/inglés (el campo de idiomas de HuggingFace no está disponible) |
+| Idiomas soportados | Bilingüe espanol/inglés (el campo de idiomas de Hugging Face no está disponible) |
 | Licencia | MIT |
 | Formato de pesos | GGUF |
 | Bloques KDA | 18 (bloques 0–2, 4–6, 8–10, 12–14, 16–18, 20–22) |
@@ -108,7 +108,7 @@ No disponible. La información proporcionada no incluye datos de rendimiento ni 
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/stornic56/Ling-3.0-tiny-256K-GGUF
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/stornic56/Ling-3.0-tiny-256K-GGUF
 - Modelo base: https://huggingface.co/inclusionAI/Ling-3.0-tiny
 - Fichero bf16: https://huggingface.co/stornic56/Ling-3.0-tiny-256K-GGUF/blob/main/Ling-3.0-tiny-256K-bf16.gguf
 - Fichero Q8_0: https://huggingface.co/stornic56/Ling-3.0-tiny-256K-GGUF/blob/main/Ling-3.0-tiny-256K-Q8_0.gguf

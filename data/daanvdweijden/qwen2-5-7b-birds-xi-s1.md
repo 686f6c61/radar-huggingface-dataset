@@ -74,7 +74,7 @@ Este modelo se diferencia por ser un fine-tune sin documentación, por lo que su
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/daanvdweijden/qwen2.5-7b-birds-xi-s1)
+- [Hugging Face - modelo](https://huggingface.co/daanvdweijden/qwen2.5-7b-birds-xi-s1)
 - [Colección Qwen2.5 en Hugging Face](https://huggingface.co/collections/Qwen/qwen25)
 - [Reporte técnico de Qwen2.5 (arXiv)](https://arxiv.org/abs/2412.15115)
 - [Repositorio de Qwen2.5 en GitHub (mx4ai)](https://github.com/mx4ai/qwen2.5)

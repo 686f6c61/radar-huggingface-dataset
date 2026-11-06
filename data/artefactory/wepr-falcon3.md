@@ -93,7 +93,7 @@ No se dispone de datos numericos comparativos en la informacion proporcionada, p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/artefactory/wepr-falcon3
+- Modelo en Hugging Face: https://huggingface.co/artefactory/wepr-falcon3
 - Modelo objetivo: https://huggingface.co/tiiuae/Falcon3-10B-Instruct
 - Libreria `artefactual`: https://github.com/artefactory/artefactual
 - Incidencias y contacto: https://github.com/artefactory/artefactual/issues

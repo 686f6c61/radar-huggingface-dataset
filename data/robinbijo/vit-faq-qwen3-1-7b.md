@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| VIT FAQ Qwen3-1.7B (este) | 1.700 M + adaptador LoRA | No disponible | MIT | HuggingFace (30 descargas) | Adaptador de dominio para FAQ de VIT Vellore; alucina según el autor |
-| Qwen/Qwen3-1.7B | 1.700 M | No disponible en esta ficha | No disponible en esta ficha | HuggingFace | Modelo base generalista; sin ajuste de dominio |
-| Alternativas de fine-tuning LoRA sobre modelos pequeños | Variable | Variable | Variable | HuggingFace | No se dispone de comparaciones de rendimiento publicadas para este adaptador |
+| VIT FAQ Qwen3-1.7B (este) | 1.700 M + adaptador LoRA | No disponible | MIT | Hugging Face (30 descargas) | Adaptador de dominio para FAQ de VIT Vellore; alucina según el autor |
+| Qwen/Qwen3-1.7B | 1.700 M | No disponible en esta ficha | No disponible en esta ficha | Hugging Face | Modelo base generalista; sin ajuste de dominio |
+| Alternativas de fine-tuning LoRA sobre modelos pequeños | Variable | Variable | Variable | Hugging Face | No se dispone de comparaciones de rendimiento publicadas para este adaptador |
 
 No se dispone de datos de benchmarks que permitan una comparación cuantitativa con alternativas.
 
@@ -82,6 +82,6 @@ No se dispone de datos de benchmarks que permitan una comparación cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/robinbijo/vit-faq-qwen3-1.7b
+- Modelo en Hugging Face: https://huggingface.co/robinbijo/vit-faq-qwen3-1.7b
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B-Base
 - Repositorio de implementación web: https://github.com/rbijo/vitmitra.site-local.git

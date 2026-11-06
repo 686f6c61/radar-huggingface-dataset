@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Taraneh-Q1.7B es un modelo de reconocimiento automático del habla (ASR) para persa, desarrollado por Aref Farhadipour (Universidad de Zúrich) y publicado en HuggingFace bajo el identificador `areffarhadi/Taraneh-Q1.7B`. Se trata de un ajuste fino (fine-tune) del checkpoint `Qwen/Qwen3-ASR-1.7B`, con aproximadamente 1.700 millones de parámetros, integrado en la familia Taraneh, compuesta por cinco modelos entrenados sobre unas 1.560 horas de audio persa.
+Taraneh-Q1.7B es un modelo de reconocimiento automático del habla (ASR) para persa, desarrollado por Aref Farhadipour (Universidad de Zúrich) y publicado en Hugging Face bajo el identificador `areffarhadi/Taraneh-Q1.7B`. Se trata de un ajuste fino (fine-tune) del checkpoint `Qwen/Qwen3-ASR-1.7B`, con aproximadamente 1.700 millones de parámetros, integrado en la familia Taraneh, compuesta por cinco modelos entrenados sobre unas 1.560 horas de audio persa.
 
 El modelo aborda un problema concreto: la escasez de sistemas ASR de alta calidad para persa en dominios difíciles, especialmente audio conversacional espontáneo, contenido de YouTube, medios de comunicación y canto. Según la model card, Taraneh cubre también alineamiento forzado (*forced alignment*) sobre voz cantada y conversacional, una tarea poco cubierta por los ASR multilingües genéricos. La licencia Apache-2.0, heredada de Qwen3-ASR, permite uso comercial, incluidos productos y servicios alojados, e incluye una concesión de patentes.
 
@@ -77,8 +77,8 @@ No se han facilitado en la informacion disponible resultados de MMLU, HumanEval,
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Taraneh-Q1.7B | 1,7 B | no disponible | ASR persa + alineamiento forzado, 1.560 h de audio | Apache-2.0 | HuggingFace `areffarhadi/Taraneh-Q1.7B` |
-| Qwen/Qwen3-ASR-1.7B (modelo base) | 1,7 B | no disponible | ASR multimodal de Qwen | Apache-2.0 (segun la model card) | HuggingFace |
+| Taraneh-Q1.7B | 1,7 B | no disponible | ASR persa + alineamiento forzado, 1.560 h de audio | Apache-2.0 | Hugging Face `areffarhadi/Taraneh-Q1.7B` |
+| Qwen/Qwen3-ASR-1.7B (modelo base) | 1,7 B | no disponible | ASR multimodal de Qwen | Apache-2.0 (segun la model card) | Hugging Face |
 | Otros Taraneh de la familia | no disponible | no disponible | ASR persa, cinco variantes en total | Apache-2.0 | Repositorio GitHub del proyecto |
 | Alternativas de ASR persa basadas en Whisper | no disponible | no disponible | ASR multilingue adaptado a persa | variable segun variante | no disponible en la informacion proporcionada |
 
@@ -100,7 +100,7 @@ No se dispone de cifras de rendimiento de los modelos comparados en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/areffarhadi/Taraneh-Q1.7B
+- Modelo en Hugging Face: https://huggingface.co/areffarhadi/Taraneh-Q1.7B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-ASR-1.7B
 - Repositorio de codigo, manifiestos, normalizacion e inferencia: https://github.com/areffarhadi/persian-asr
 - Paper (PDF) *Taraneh-ASR: Scaling Persian Speech Recognition and Forced Alignment Across Singing and Conversational Domains*: https://github.com/areffarhadi/persian-asr/blob/main/ArefFarhadi-TaranehASR.pdf

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Realtime Multilingual ASR — Light es un paquete de reconocimiento automatico del habla (ASR) en tiempo real publicado por el usuario Pedro21613 en HuggingFace. No se trata de un modelo entrenado desde cero, sino de un envoltorio de inferencia construido sobre el backbone `faster-whisper tiny` de OpenAI Whisper, con aproximadamente 39 millones de parametros y un peso de unos 75 MB en cuantizacion `int8`. El objetivo declarado es ofrecer transcripcion multilingue de baja latencia directamente en CPU, sin necesidad de GPU.
+Realtime Multilingual ASR — Light es un paquete de reconocimiento automatico del habla (ASR) en tiempo real publicado por el usuario Pedro21613 en Hugging Face. No se trata de un modelo entrenado desde cero, sino de un envoltorio de inferencia construido sobre el backbone `faster-whisper tiny` de OpenAI Whisper, con aproximadamente 39 millones de parametros y un peso de unos 75 MB en cuantizacion `int8`. El objetivo declarado es ofrecer transcripcion multilingue de baja latencia directamente en CPU, sin necesidad de GPU.
 
 La propuesta del autor se centra en tres piezas: un filtro VAD integrado que evita transcribir silencios, deteccion automatica de idioma (con opcion `auto`) sobre los 99 idiomas cubiertos por Whisper, y un modo de streaming por fragmentos de 3 segundos con solapamiento que permite consumir audio de microfono de forma continua. El repositorio incluye tres puntos de entrada: `transcribe_file.py` para ficheros, `app_realtime.py` para demo con microfono y `app_gradio.py` para interfaz web.
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Idiomas | Ventana de proceso | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| realtime-multilingual-asr-light (`tiny` int8) | ~39 M | 99 (heredados de Whisper) | chunks de 3 s con overlap | no disponible | HuggingFace, 0 descargas, 0 likes |
+| realtime-multilingual-asr-light (`tiny` int8) | ~39 M | 99 (heredados de Whisper) | chunks de 3 s con overlap | no disponible | Hugging Face, 0 descargas, 0 likes |
 | OpenAI Whisper `tiny` | 39 M | 99 | ventana nativa de 30 s | MIT (modelo original) | ampliamente disponible |
 | OpenAI Whisper `base` (via faster-whisper) | 74 M | 99 | ventana nativa de 30 s | MIT (modelo original) | ampliamente disponible |
 | OpenAI Whisper `small` (via faster-whisper) | 244 M | 99 | ventana nativa de 30 s | MIT (modelo original) | ampliamente disponible |
@@ -91,5 +91,5 @@ Las tres alternativas comparten backbone con este repositorio; la diferencia rel
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Pedro21613/realtime-multilingual-asr-light
+- Hugging Face: https://huggingface.co/Pedro21613/realtime-multilingual-asr-light
 - No se han encontrado enlaces relevantes (papers, blogs, repositorios o demos) en los resultados de la busqueda web proporcionada; el resto de resultados no guardan relacion con el modelo.

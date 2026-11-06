@@ -100,7 +100,7 @@ No se dispone de resultados de benchmarks estándar de este artefacto que permit
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/pbhappliedsystems/qwen-2.5-32B-instruct-gguf-F16
+- Repositorio Hugging Face: https://huggingface.co/pbhappliedsystems/qwen-2.5-32B-instruct-gguf-F16
 - Variante cuantizada Q4_K_M: https://huggingface.co/pbhappliedsystems/qwen-2.5-32B-instruct-gguf-Q4-K-M
 - Resultados de evaluacion (pagina del autor): https://pbhappliedsystems.com/models/qwen2.5-32b-instruct#F16
 - Coleccion de builds evaluados: https://huggingface.co/collections/pbhappliedsystems/quant-eval-v722-evaluated-gguf-builds-6abcf3128f7eaf1bedeb97d6

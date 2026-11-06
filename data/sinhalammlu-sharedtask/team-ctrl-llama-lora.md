@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM con el modelo base en bf16: aproximadamente 6,5 GB para pesos, mas cache KV adicional segun longitud de contexto.
 - GPU consumer: cabe holgadamente en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4090; tambien en GPUs de 8 GB usando la variante 4 bits con contextos cortos.
 - GPU de datacenter: A100, H100 o L4 no son necesarias para inferencia, pero aceleran el ajuste y permiten lotes mayores.
-- Despliegue: al ser un adaptador PEFT, requiere cargar primero el modelo base y aplicar despues los pesos LoRA. Compatible con la pila de HuggingFace Transformers + PEFT; para serving en produccion, vLLM admite adaptadores LoRA dinamicos, y llama.cpp/Ollama requieren fusionar previamente el adaptador en un GGUF.
+- Despliegue: al ser un adaptador PEFT, requiere cargar primero el modelo base y aplicar despues los pesos LoRA. Compatible con la pila de Hugging Face Transformers + PEFT; para serving en produccion, vLLM admite adaptadores LoRA dinamicos, y llama.cpp/Ollama requieren fusionar previamente el adaptador en un GGUF.
 - CPU: viable con llama.cpp tras fusionar el adaptador y convertir a GGUF Q4_K_M, con latencias del orden de varios segundos por respuesta.
 - Latencia y throughput: no disponibles; no se han publicado mediciones.
 
@@ -75,7 +75,7 @@ No se dispone de datos sobre otros adaptadores o modelos especializados en sinha
 
 ## Limitaciones y advertencias
 
-- **Acceso restringido**: el repositorio es gated; es necesario aceptar las condiciones en HuggingFace antes de descargar los pesos.
+- **Acceso restringido**: el repositorio es gated; es necesario aceptar las condiciones en Hugging Face antes de descargar los pesos.
 - **Sin benchmarks publicados**: no hay evidencia cuantitativa de la mejora del adaptador frente al modelo base, lo que impide justificar su uso en produccion sin una evaluacion propia.
 - **Riesgo de alucinacion**: el modelo base es de 3B parametros; la generacion de hechos, cifras y referencias en sinhala puede ser incorrecta con frecuencia, especialmente fuera del dominio del benchmark.
 - **Idioma limitado**: las etiquetas solo declaran sinhala; el comportamiento en otros idiomas no esta documentado ni evaluado.
@@ -88,8 +88,8 @@ No se dispone de datos sobre otros adaptadores o modelos especializados en sinha
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SinhalaMMLU-SharedTask/team-ctrl-llama-lora
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Llama-3.2-3B-Instruct-bnb-4bit
+- Repositorio Hugging Face: https://huggingface.co/SinhalaMMLU-SharedTask/team-ctrl-llama-lora
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Llama-3.2-3B-Instruct-bnb-4bit
 - Modelo original de Meta: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Perfil del investigador Nevidu Jayatilleke (Universidad de Moratuwa, Sri Lanka), posible contexto del equipo: https://lk.linkedin.com/in/nevidu-jayatilleke-a07ba9224
 - Paper, blog, repositorio de codigo o demo del shared task: no disponibles en la informacion proporcionada.

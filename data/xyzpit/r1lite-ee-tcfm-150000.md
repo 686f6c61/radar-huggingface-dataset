@@ -2,7 +2,7 @@
 
 ## Resumen
 
-XYZPIT/r1lite-ee-tcfm-150000 es un checkpoint publicado en HuggingFace por el usuario XYZPIT el 21 de septiembre de 2026 (ultima actualizacion ese mismo dia). Contiene 3.144.016.000 parametros en formato safetensors (3,14 B) y ocupa 12,6 GB en el repositorio. Se trata, por tanto, de un modelo de la clase de 3 B de parametros, un rango en el que caben en una sola GPU de consumo con cuantizacion.
+XYZPIT/r1lite-ee-tcfm-150000 es un checkpoint publicado en Hugging Face por el usuario XYZPIT el 21 de septiembre de 2026 (ultima actualizacion ese mismo dia). Contiene 3.144.016.000 parametros en formato safetensors (3,14 B) y ocupa 12,6 GB en el repositorio. Se trata, por tanto, de un modelo de la clase de 3 B de parametros, un rango en el que caben en una sola GPU de consumo con cuantizacion.
 
 El repositorio no incluye model card, ni descripcion de arquitectura, ni licencia, ni idiomas declarados, ni pipeline de inferencia. Los unicos metadatos disponibles son los tags `safetensors`, `Gr00tN1d7` y `region:us`. El tag `Gr00tN1d7` es el unico indicio sobre la familia o el framework del modelo; no hay documentacion publica que confirme su significado ni si guarda relacion con la familia de modelos fundacionales para robotica GR00T N1 de NVIDIA. El identificador `r1lite` y el sufijo numerico `150000` son igualmente sugestivos, pero no existe confirmacion por parte del autor.
 
@@ -83,11 +83,11 @@ La comparativa es unicamente nominal, por rango de parametros: al desconocerse l
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| XYZPIT/r1lite-ee-tcfm-150000 | 3,14 B | no disponible | no disponible | HuggingFace, safetensors, FP32 aparente |
-| Qwen2.5-3B | 3,09 B | 32.768 tokens (ampliable con YaRN) | Apache 2.0 | HuggingFace, safetensors y GGUF |
-| Llama-3.2-3B | 3,21 B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, safetensors y GGUF |
-| Phi-3.5-mini-instruct | 3,8 B | 128.000 tokens | MIT | HuggingFace, safetensors y GGUF |
-| Gemma 2 2B | 2,61 B | 8.192 tokens | Gemma Terms of Use | HuggingFace, safetensors y GGUF |
+| XYZPIT/r1lite-ee-tcfm-150000 | 3,14 B | no disponible | no disponible | Hugging Face, safetensors, FP32 aparente |
+| Qwen2.5-3B | 3,09 B | 32.768 tokens (ampliable con YaRN) | Apache 2.0 | Hugging Face, safetensors y GGUF |
+| Llama-3.2-3B | 3,21 B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, safetensors y GGUF |
+| Phi-3.5-mini-instruct | 3,8 B | 128.000 tokens | MIT | Hugging Face, safetensors y GGUF |
+| Gemma 2 2B | 2,61 B | 8.192 tokens | Gemma Terms of Use | Hugging Face, safetensors y GGUF |
 
 Diferencias relevantes frente a las alternativas: los cuatro modelos de referencia publican licencia, idiomas, contexto y resultados de benchmarks, y ofrecen versiones cuantizadas listas para usar. De este checkpoint no se conoce ninguno de esos datos, por lo que en igualdad de condiciones de rendimiento no seria la opcion preferida para produccion sin una evaluacion previa.
 
@@ -106,6 +106,6 @@ Diferencias relevantes frente a las alternativas: los cuatro modelos de referenc
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/XYZPIT/r1lite-ee-tcfm-150000
+- Ficha en Hugging Face: https://huggingface.co/XYZPIT/r1lite-ee-tcfm-150000
 - Paper, blog, repositorio o demo: no disponible.
 - Resultados de la busqueda web: no relevantes; las dos unicas entradas devueltas correspondian al portal educativo lms.elearning.edu.sa, sin relacion con el modelo.

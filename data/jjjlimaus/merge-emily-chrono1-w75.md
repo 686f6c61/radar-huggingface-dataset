@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `jjjlimaus/merge-emily-chrono1-w75` es un modelo de generación de texto de 2.018 millones de parámetros, publicado en HuggingFace por el usuario jjjlimaus. Según los metadatos, se trata de un *model merge* (fusión de modelos) que combina pesos de otros modelos, probablemente de la familia SN38-NanoChrono, como sugiere el tag `sn38-nanochrono`. Está pensado para tareas de generación de texto y es compatible con la librería Transformers. Su licencia es Apache 2.0, lo que permite uso comercial y modificación, aunque el acceso al repositorio está restringido (gated) y requiere aceptar condiciones adicionales en HuggingFace.
+El modelo `jjjlimaus/merge-emily-chrono1-w75` es un modelo de generación de texto de 2.018 millones de parámetros, publicado en Hugging Face por el usuario jjjlimaus. Según los metadatos, se trata de un *model merge* (fusión de modelos) que combina pesos de otros modelos, probablemente de la familia SN38-NanoChrono, como sugiere el tag `sn38-nanochrono`. Está pensado para tareas de generación de texto y es compatible con la librería Transformers. Su licencia es Apache 2.0, lo que permite uso comercial y modificación, aunque el acceso al repositorio está restringido (gated) y requiere aceptar condiciones adicionales en Hugging Face.
 
 La relevancia de este modelo radica en su tamaño compacto (2B parámetros), que lo hace adecuado para entornos con recursos limitados, y en su naturaleza de *merge*, una técnica que busca combinar las fortalezas de varios modelos base. Sin embargo, la información pública disponible es muy escasa: no se han publicado detalles sobre arquitectura, datos de entrenamiento, benchmarks o capacidades específicas. Esto limita su evaluación objetiva y su adopción en producción sin una validación previa por parte del usuario.
 
@@ -51,7 +51,7 @@ No se dispone de información sobre modelos comparables específicos. Dado que s
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated, lo que obliga a aceptar condiciones adicionales en HuggingFace. Esto puede limitar su uso en entornos automatizados o corporativos.
+- Acceso restringido: el repositorio es gated, lo que obliga a aceptar condiciones adicionales en Hugging Face. Esto puede limitar su uso en entornos automatizados o corporativos.
 - Falta de documentación: no hay información sobre arquitectura, entrenamiento, sesgos o limitaciones conocidas. El usuario asume el riesgo de usar un modelo sin validación externa.
 - Riesgo de alucinación: al ser un modelo de lenguaje, puede generar contenido falso o inventado, especialmente en dominios especializados.
 - Sesgos: no se han declarado sesgos, pero es probable que el modelo herede sesgos de los modelos base utilizados en el *merge*.
@@ -60,6 +60,6 @@ No se dispone de información sobre modelos comparables específicos. Dado que s
 
 ## Enlaces
 
-- [HuggingFace - jjjlimaus/merge-emily-chrono1-w75](https://huggingface.co/jjjlimaus/merge-emily-chrono1-w75)
-- [Perfil del autor en HuggingFace](https://huggingface.co/jjjlimaus)
+- [Hugging Face - jjjlimaus/merge-emily-chrono1-w75](https://huggingface.co/jjjlimaus/merge-emily-chrono1-w75)
+- [Perfil del autor en Hugging Face](https://huggingface.co/jjjlimaus)
 - [Modelos del autor](https://huggingface.co/jjjlimaus/models)

@@ -6,7 +6,7 @@ TLive-Omni-4B es un modelo omni-modal de comprensión desarrollado por TaoLiveAI
 
 Construido sobre un backbone Qwen3.5 con un codificador de audio AuT integrado mediante un alineador MLP ligero, el modelo organiza los tokens de audio y vídeo en una rejilla temporal con límites explícitos, lo que permite un alineamiento temporal fino en flujos largos. Soporta hasta 256K tokens de contexto y se entrena mediante una receta de tres etapas de SFT (supervised fine-tuning) seguida de Faithful-RFT, una etapa de reinforcement fine-tuning que suprime rastros de razonamiento explícitos para optimizar la calidad de las respuestas en tareas de comercio en vivo.
 
-La variante 4B, aunque nominalmente de 4 mil millones de parámetros, tiene 5.724.547.776 parámetros reales en pesos safetensors (aproximadamente 5,7 mil millones). El modelo se distribuye bajo licencia Apache-2.0 y está disponible en HuggingFace con 189 descargas y 8 likes. Su relevancia actual radica en abordar un dominio vertical de alta demanda —el comercio en directo— donde los modelos generalistas multimodales suelen fallar por el ruido acústico, la superposición de hablantes y la duración extendida de las transmisiones.
+La variante 4B, aunque nominalmente de 4 mil millones de parámetros, tiene 5.724.547.776 parámetros reales en pesos safetensors (aproximadamente 5,7 mil millones). El modelo se distribuye bajo licencia Apache-2.0 y está disponible en Hugging Face con 189 descargas y 8 likes. Su relevancia actual radica en abordar un dominio vertical de alta demanda —el comercio en directo— donde los modelos generalistas multimodales suelen fallar por el ruido acústico, la superposición de hablantes y la duración extendida de las transmisiones.
 
 ## Especificaciones tecnicas
 
@@ -65,7 +65,7 @@ Los resultados en negrita indican el mejor valor entre los modelos open-source c
 - **VRAM estimada para inferencia**: con 5,7B de parámetros en FP16 se requieren aproximadamente 11,4 GB solo para los pesos; con cuantización en 8-bit (~5,7 GB) o 4-bit (~2,9 GB) se reduce la huella. Sin embargo, la ventana de contexto de 256K tokens incrementa significativamente el consumo de memoria para los estados de atención (KV cache), que puede superar los 20 GB en contextos largos.
 - **GPU recomendadas**: para inferencia con contexto completo, se recomienda una GPU con al menos 24 GB de VRAM (RTX 3090, RTX 4090, A10G, L4). Para contextos cortos y cuantización 4-bit, una RTX 4080 (16 GB) o incluso una RTX 4060 (12 GB) podría ser suficiente.
 - **¿Cabe en GPU consumer?**: sí, en cuantización de 4-bit o 8-bit, con contextos reducidos (≤ 32K tokens), se puede ejecutar en GPUs consumer de 16-24 GB.
-- **Opciones de despliegue**: compatible con la librería transformers de HuggingFace; se puede servir con vLLM, llama.cpp, Ollama (si se convierte a GGUF) o TGI. El modelo usa código personalizado (custom_code) para la rejilla temporal, por lo que el despliegue con vLLM o TGI puede requerir integración específica.
+- **Opciones de despliegue**: compatible con la librería transformers de Hugging Face; se puede servir con vLLM, llama.cpp, Ollama (si se convierte a GGUF) o TGI. El modelo usa código personalizado (custom_code) para la rejilla temporal, por lo que el despliegue con vLLM o TGI puede requerir integración específica.
 - **Latencia y throughput**: no disponible. Al ser un modelo multimodal con un codificador de audio adicional, la latencia dependerá del tamaño de la entrada (imagen, vídeo, audio) y de la longitud de contexto.
 
 ## Comparativa con modelos similares
@@ -92,9 +92,9 @@ TLive-Omni-4B se diferencia por su especialización en comercio en vivo y su rej
 
 ## Enlaces
 
-- [HuggingFace - TLive-Omni-4B](https://huggingface.co/TaoLiveAIGC/TLive-Omni-4B)
-- [HuggingFace - TLive-Omni-9B](https://huggingface.co/TaoLiveAIGC/TLive-Omni-9B)
+- [Hugging Face - TLive-Omni-4B](https://huggingface.co/TaoLiveAIGC/TLive-Omni-4B)
+- [Hugging Face - TLive-Omni-9B](https://huggingface.co/TaoLiveAIGC/TLive-Omni-9B)
 - [GitHub - TaoLiveAIGC/TLive-Omni](https://github.com/TaoLiveAIGC/TLive-Omni)
 - [ArXiv - Technical Report](https://arxiv.org/abs/2608.20958)
 - [PDF - Technical Report](https://github.com/TaoLiveAIGC/TLive-Omni/blob/main/TLive-Omni-Technical-Report.pdf)
-- [Perfil de TaoLiveAIGC en HuggingFace](https://huggingface.co/TaoLiveAIGC)
+- [Perfil de TaoLiveAIGC en Hugging Face](https://huggingface.co/TaoLiveAIGC)

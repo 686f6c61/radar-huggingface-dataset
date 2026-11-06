@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`Anant9923/prompt-injection-detector` es un modelo de clasificación de texto publicado en HuggingFace por el usuario Anant9923, cuyo propósito declarado por el nombre es detectar intentos de *prompt injection* (instrucciones maliciosas inyectadas en entradas de sistemas basados en LLM). El repositorio contiene únicamente pesos en formato safetensors y la etiqueta de arquitectura `deberta-v2`, lo que sitúa al modelo en la familia de encoders transformer DeBERTa-v2 con atención desacoplada. No es un modelo generativo: su pipeline declarado es `text-classification`.
+`Anant9923/prompt-injection-detector` es un modelo de clasificación de texto publicado en Hugging Face por el usuario Anant9923, cuyo propósito declarado por el nombre es detectar intentos de *prompt injection* (instrucciones maliciosas inyectadas en entradas de sistemas basados en LLM). El repositorio contiene únicamente pesos en formato safetensors y la etiqueta de arquitectura `deberta-v2`, lo que sitúa al modelo en la familia de encoders transformer DeBERTa-v2 con atención desacoplada. No es un modelo generativo: su pipeline declarado es `text-classification`.
 
 El checkpoint cuenta con 141.896.450 parámetros (aproximadamente 141,9 millones), un tamaño propio de un encoder de escala *base* con vocabulario amplio, y el repositorio ocupa 0,6 GB. No se especifica el número de clases de salida, los datos de entrenamiento, el procedimiento de ajuste fino ni la licencia.
 
-La relevancia de este tipo de modelos es alta en el contexto actual: los filtros de entrada de baja latencia para detectar inyecciones de prompt son un componente habitual en arquitecturas RAG, agentes con *tool calling* y pasarelas de API hacia LLM. Sin embargo, la model card es la plantilla automática de HuggingFace sin ninguna sección completada, el repositorio registra 0 descargas y 0 *likes*, y no hay resultados de evaluación publicados, por lo que cualquier uso en producción exigiría una validación independiente previa.
+La relevancia de este tipo de modelos es alta en el contexto actual: los filtros de entrada de baja latencia para detectar inyecciones de prompt son un componente habitual en arquitecturas RAG, agentes con *tool calling* y pasarelas de API hacia LLM. Sin embargo, la model card es la plantilla automática de Hugging Face sin ninguna sección completada, el repositorio registra 0 descargas y 0 *likes*, y no hay resultados de evaluación publicados, por lo que cualquier uso en producción exigiría una validación independiente previa.
 
 ## Especificaciones técnicas
 
@@ -32,7 +32,7 @@ La relevancia de este tipo de modelos es alta en el contexto actual: los filtros
 
 La única información arquitectónica disponible es la etiqueta `deberta-v2`. DeBERTa-v2 es una familia de encoders transformer que sustituye la codificación posicional absoluta por atención desacoplada (cada token se representa con vectores de contenido y de posición que se combinan por separado en el cálculo de la atención) y emplea un decodificador de máscara mejorado para la modelización del lenguaje enmascarado. El recuento de 141,9 M de parámetros es coherente con una configuración de escala *base* y vocabulario amplio, pero el repositorio no publica el `config.json` con los hiperparámetros de arquitectura, por lo que no se puede confirmar el número de capas ni la dimensión oculta.
 
-No hay absolutamente ningún dato sobre el entrenamiento: se desconoce el corpus utilizado, el número de tokens, la composición del conjunto de datos, si hubo anotación humana, si se aplicaron técnicas de ajuste como RLHF o DPO, y si el ajuste se hizo desde un checkpoint público de DeBERTa-v2 o desde un modelo propio. Tampoco se documentan los hiperparámetros de entrenamiento (régimen de precisión, tasa de aprendizaje, épocas), el número de clases de salida ni la interpretación de las etiquetas. La model card incluye el marcador `[More Information Needed]` en todas las secciones, incluida la de evaluación. El identificador `arxiv:1910.09700` que aparece entre las etiquetas corresponde al artículo de Lacoste et al. sobre estimación de emisiones de carbono citado en la plantilla automática de HuggingFace, no a un artículo asociado a este modelo.
+No hay absolutamente ningún dato sobre el entrenamiento: se desconoce el corpus utilizado, el número de tokens, la composición del conjunto de datos, si hubo anotación humana, si se aplicaron técnicas de ajuste como RLHF o DPO, y si el ajuste se hizo desde un checkpoint público de DeBERTa-v2 o desde un modelo propio. Tampoco se documentan los hiperparámetros de entrenamiento (régimen de precisión, tasa de aprendizaje, épocas), el número de clases de salida ni la interpretación de las etiquetas. La model card incluye el marcador `[More Information Needed]` en todas las secciones, incluida la de evaluación. El identificador `arxiv:1910.09700` que aparece entre las etiquetas corresponde al artículo de Lacoste et al. sobre estimación de emisiones de carbono citado en la plantilla automática de Hugging Face, no a un artículo asociado a este modelo.
 
 ## Capacidades
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente, incluidas GTX 1650, RTX 3050, RTX 4090, A100 o H100. El modelo está muy por debajo de la capacidad de cualquier acelerador moderno, por lo que la elección de GPU vendrá determinada por el *batching* y la concurrencia, no por el tamaño del modelo.
 - Compatibilidad con GPU de consumo: sí, cabe holgadamente en cualquier GPU de consumo de los últimos años e incluso en iGPU con memoria compartida suficiente.
 - Ejecución en CPU: viable. Un encoder de esta escala procesa lotes pequeños en decenas de milisegundos por *batch* en CPU moderna, aunque no hay mediciones publicadas para este checkpoint concreto.
-- Opciones de despliegue: transformers (PyTorch) de forma nativa; Text Embeddings Inference (etiqueta `text-embeddings-inference` presente en el repositorio); servidores compatibles con la API de *endpoints* de HuggingFace (etiqueta `endpoints_compatible`). No se publican pesos en GGUF, por lo que llama.cpp, Ollama y LM Studio no son utilizables sin una conversión previa. vLLM y TGI no están confirmados para este repositorio.
+- Opciones de despliegue: transformers (PyTorch) de forma nativa; Text Embeddings Inference (etiqueta `text-embeddings-inference` presente en el repositorio); servidores compatibles con la API de *endpoints* de Hugging Face (etiqueta `endpoints_compatible`). No se publican pesos en GGUF, por lo que llama.cpp, Ollama y LM Studio no son utilizables sin una conversión previa. vLLM y TGI no están confirmados para este repositorio.
 - Latencia y *throughput*: no disponibles. No hay ninguna medición publicada por el autor.
 
 ## Comparativa con modelos similares
@@ -76,16 +76,16 @@ No hay datos de rendimiento publicados para este modelo, por lo que la comparaci
 
 | Modelo | Arquitectura | Tarea | Parámetros | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Anant9923/prompt-injection-detector | DeBERTa-v2 (etiqueta) | Clasificación de texto (detección de *prompt injection* según el nombre) | 141,9 M | No disponible | HuggingFace, safetensors, 0 descargas |
-| protectai/deberta-v3-base-prompt-injection (v2) | DeBERTa-v3-base | Detección de *prompt injection* | No verificado en esta búsqueda | No verificado | HuggingFace, con model card documentada |
-| microsoft/deberta-v2-base | DeBERTa-v2 | Encoder genérico (*fill-mask*, ajustable) | No verificado en esta búsqueda | MIT (según el repositorio original de Microsoft) | HuggingFace, ampliamente utilizado |
+| Anant9923/prompt-injection-detector | DeBERTa-v2 (etiqueta) | Clasificación de texto (detección de *prompt injection* según el nombre) | 141,9 M | No disponible | Hugging Face, safetensors, 0 descargas |
+| protectai/deberta-v3-base-prompt-injection (v2) | DeBERTa-v3-base | Detección de *prompt injection* | No verificado en esta búsqueda | No verificado | Hugging Face, con model card documentada |
+| microsoft/deberta-v2-base | DeBERTa-v2 | Encoder genérico (*fill-mask*, ajustable) | No verificado en esta búsqueda | MIT (según el repositorio original de Microsoft) | Hugging Face, ampliamente utilizado |
 | Encoders de clasificación de seguridad de propósito general (p. ej. modelos basados en BERT/RoBERTa ajustados para moderación) | BERT/RoBERTa | Clasificación de contenido | 110-355 M típicamente | Variable | Variable |
 
 Los valores marcados como "no verificado" no proceden de la información proporcionada en esta búsqueda y deberían contrastarse en la fuente original antes de citarlos. En cualquier caso, la diferencia más relevante frente a alternativas establecidas no es de arquitectura, sino de trazabilidad: este repositorio carece de licencia, de documentación de entrenamiento y de evaluación, mientras que las alternativas mantenidas por organizaciones suelen publicar ambos.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentación: la model card es la plantilla automática de HuggingFace sin ninguna sección completada, incluidas las de datos de entrenamiento, evaluación e impacto ambiental.
+- Ausencia total de documentación: la model card es la plantilla automática de Hugging Face sin ninguna sección completada, incluidas las de datos de entrenamiento, evaluación e impacto ambiental.
 - Licencia no declarada: sin licencia explícita no hay autorización clara para uso comercial ni para redistribución. En la práctica, esto convierte el modelo en no apto para producción sin aclaración previa del autor.
 - Sin evaluación publicada: no hay métricas de exactitud, F1 ni precisión/recall, ni descripción del conjunto de test. No se puede estimar la tasa de falsos positivos ni de falsos negativos.
 - Idiomas no declarados: se desconoce si el modelo funciona fuera del inglés. Un detector entrenado solo en inglés tenderá a fallar ante ataques redactados en otros idiomas, incluido el español.
@@ -100,7 +100,7 @@ Los valores marcados como "no verificado" no proceden de la información proporc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Anant9923/prompt-injection-detector
+- Modelo en Hugging Face: https://huggingface.co/Anant9923/prompt-injection-detector
 - Paper de la arquitectura DeBERTa (He et al., arXiv:2006.03654), referencia externa no vinculada por el autor: https://arxiv.org/abs/2006.03654
 - Paper de DeBERTaV3 (He et al., arXiv:2111.09543), referencia externa no vinculada por el autor: https://arxiv.org/abs/2111.09543
 - Lacoste et al. (2019), *Quantifying the Carbon Emissions of Machine Learning* (arXiv:1910.09700), citado en la plantilla automática de la model card, no es una referencia del modelo: https://arxiv.org/abs/1910.09700

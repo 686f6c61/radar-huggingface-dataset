@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`qiangliu88/matching` es un repositorio de HuggingFace publicado por el usuario qiangliu88 que contiene una implementacion experimental de una arquitectura **Perceiver** orientada a tareas de *matching* (emparejamiento). No se trata de un modelo entrenado ni evaluado, sino de un esqueleto de codigo con un checkpoint de inicializacion valido unicamente para pruebas de humo (*smoke tests*). El modelo tiene 24.832 parametros totales, un tamano extraordinariamente reducido que confirma la escala "tiny" declarada por el autor.
+`qiangliu88/matching` es un repositorio de Hugging Face publicado por el usuario qiangliu88 que contiene una implementacion experimental de una arquitectura **Perceiver** orientada a tareas de *matching* (emparejamiento). No se trata de un modelo entrenado ni evaluado, sino de un esqueleto de codigo con un checkpoint de inicializacion valido unicamente para pruebas de humo (*smoke tests*). El modelo tiene 24.832 parametros totales, un tamano extraordinariamente reducido que confirma la escala "tiny" declarada por el autor.
 
 El problema que aborda es, en teoria, el emparejamiento de entradas (por ejemplo, pares consulta-documento o pares de secuencias), pero el repositorio no documenta el corpus de entrenamiento, el formato de las entradas ni las metricas objetivo. La model card indica explicitamente que no se reclama ninguna puntuacion de benchmark y que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio.
 
@@ -76,11 +76,11 @@ No hay datos de rendimiento publicados para este repositorio, por lo que no es p
 - **Riesgo de alucinacion**: no aplica en el sentido habitual, ya que el modelo no genera texto; cualquier salida seria ruido no entrenado.
 - **Sin datos de contexto ni de idioma**: no se especifica ventana de contexto ni idiomas soportados, lo que impide planificar su uso multilingue.
 - **Sin benchmarks**: cualquier afirmacion de rendimiento seria no verificable.
-- **Implementacion personalizada**: las APIs automaticas de HuggingFace requieren un adaptador explicito; no se garantiza compatibilidad con `AutoModel` estandar.
+- **Implementacion personalizada**: las APIs automaticas de Hugging Face requieren un adaptador explicito; no se garantiza compatibilidad con `AutoModel` estandar.
 - **Restricciones de licencia**: la licencia es apache-2.0, permisiva para uso comercial, pero la model card recomienda revisar por separado los terminos de los datos de origen cuando se use con datasets externos.
 - **Advertencia para produccion**: no debe desplegarse en produccion. Cualquier resultado de un futuro checkpoint entrenado debe documentarse de forma independiente a los valores por defecto aqui incluidos.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qiangliu88/matching
+- Hugging Face: https://huggingface.co/qiangliu88/matching
 - No se han encontrado papers, blogs, repositorios ni demos relevantes en la busqueda web proporcionada: los resultados devueltos (eurovore.com, foros.commentcamarche.net) no guardan relacion con el modelo y se descartan como fuentes.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Jasper-T-Jowls_A-CEC-Christmas es un repositorio publicado en HuggingFace por el usuario HelenHenny66 el 5 de octubre de 2026 (fecha de creacion registrada por la plataforma) y actualizado ese mismo dia. La model card asociada contiene unicamente la declaracion de licencia MIT, sin descripcion del modelo, sin arquitectura declarada, sin pipeline asignado y sin idiomas especificados. En el momento de redactar esta ficha el repositorio acumula 0 descargas y 0 likes, por lo que no existe evidencia publica de uso.
+Jasper-T-Jowls_A-CEC-Christmas es un repositorio publicado en Hugging Face por el usuario HelenHenny66 el 5 de octubre de 2026 (fecha de creacion registrada por la plataforma) y actualizado ese mismo dia. La model card asociada contiene unicamente la declaracion de licencia MIT, sin descripcion del modelo, sin arquitectura declarada, sin pipeline asignado y sin idiomas especificados. En el momento de redactar esta ficha el repositorio acumula 0 descargas y 0 likes, por lo que no existe evidencia publica de uso.
 
 El tamano del repositorio es de 0,1 GB, un dato que no permite determinar por si solo si se trata de un modelo completo, de un fine-tune parcial, de un adaptador (LoRA/QLoRA) o de un artefacto de otro tipo (por ejemplo, un modelo de voz o audio). La ausencia de pipeline declarado y de cualquier metadato tecnico adicional impide confirmar la categoria del modelo, su arquitectura, su numero de parametros y su ventana de contexto.
 
@@ -21,9 +21,9 @@ Por todo ello, esta ficha es deliberadamente incompleta: se han rellenado los ca
 | Licencia | MIT |
 | Formato de pesos | no disponible |
 | Tamano del repositorio | 0,1 GB |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Autor | HelenHenny66 |
-| Fecha de creacion (segun HuggingFace) | 2026-10-05 |
+| Fecha de creacion (segun Hugging Face) | 2026-10-05 |
 | Fecha de ultima actualizacion | 2026-10-05 |
 | Descargas | 0 |
 | Likes | 0 |
@@ -42,7 +42,7 @@ No se dispone de datos sobre el proceso de entrenamiento: ni el volumen de token
 - Generacion de codigo: no disponible.
 - Soporte de tool calling o function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible (el campo de idiomas esta vacio en HuggingFace).
+- Capacidades multilingues: no disponible (el campo de idiomas esta vacio en Hugging Face).
 - Capacidades multimodales (vision o audio): no disponible. El nombre del repositorio incluye referencias a un personaje y a tematica navidena, pero esto no constituye evidencia tecnica de que sea un modelo de audio o de voz.
 
 ## Casos de uso
@@ -50,7 +50,7 @@ No se dispone de datos sobre el proceso de entrenamiento: ni el volumen de token
 No es posible recomendar casos de uso concretos sin conocer la arquitectura, el tamano, el pipeline ni las capacidades del modelo. Enumerar escenarios aplicados seria especulativo y podria inducir a error a quien evalue el repositorio. Como alternativa, se proponen las siguientes actuaciones previas a cualquier evaluacion de uso:
 
 - Inspeccion de artefactos: revisar la lista de archivos del repositorio para identificar extensiones y tamanos, y determinar si se trata de pesos completos, de un adaptador o de otro tipo de artefacto.
-- Verificacion del pipeline: comprobar si el autor asigna una tarea en HuggingFace (text-generation, text-to-speech, automatic-speech-recognition, voice-conversion, etc.) o si esta queda sin definir.
+- Verificacion del pipeline: comprobar si el autor asigna una tarea en Hugging Face (text-generation, text-to-speech, automatic-speech-recognition, voice-conversion, etc.) o si esta queda sin definir.
 - Prueba de carga: intentar cargar el artefacto con las librerias habituales (`transformers`, `diffusers`, `llama.cpp`, `onnxruntime`) para confirmar compatibilidad.
 - Evaluacion cualitativa: si el modelo carga, ejecutar un conjunto reducido de prompts o entradas de prueba para caracterizar su comportamiento.
 - Auditoria de licencia: confirmar el alcance de la licencia MIT declarada respecto a los datos de entrenamiento, que no se especifican.
@@ -80,7 +80,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 ## Limitaciones y advertencias
 
 - Ausencia total de documentacion: la model card solo contiene la linea de licencia, sin descripcion, sin instrucciones de uso y sin ejemplos.
-- Metadatos incompletos en HuggingFace: no se declara pipeline, idiomas ni arquitectura, lo que impide el filtrado y la evaluacion automatizada.
+- Metadatos incompletos en Hugging Face: no se declara pipeline, idiomas ni arquitectura, lo que impide el filtrado y la evaluacion automatizada.
 - Tamano de repositorio ambiguo: 0,1 GB puede corresponder a pesos parciales, a un adaptador o a un artefacto de otro tipo; no debe asumirse que sea un modelo completo.
 - Fecha de creacion anomala: la plataforma registra la creacion el 2026-10-05, una fecha posterior a la habitual en los repositorios existentes; conviene verificarla antes de citar el modelo.
 - Sin evidencia de uso: 0 descargas y 0 likes implican que no existen informes de terceros, pruebas independientes ni incidencias documentadas.
@@ -92,7 +92,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/HelenHenny66/Jasper-T-Jowls_A-CEC-Christmas
+- Repositorio en Hugging Face: https://huggingface.co/HelenHenny66/Jasper-T-Jowls_A-CEC-Christmas
 - Model card del autor: no disponible (el README solo contiene la declaracion de licencia MIT)
 - Paper o informe tecnico: no disponible
 - Blog o articulo de presentacion: no disponible

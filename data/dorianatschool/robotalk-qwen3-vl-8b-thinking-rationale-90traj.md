@@ -75,8 +75,8 @@ Ajustes de inferencia empleados por el autor: variante Instruct con temperatura 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RoboTalk-Qwen3-VL-8B-Thinking-Rationale-90traj | 8.000 M (base) + LoRA r16 | Entrenado a 8.192 tokens | 91,40% en tareas vistas; 66,00% en retenidas (metrica propia de RoboTalk) | No asignada para el adaptador; base Apache-2.0 | Adaptador en HuggingFace, 0 descargas |
-| Qwen/Qwen3-VL-8B-Thinking (modelo base, sin adaptador) | 8.000 M | No disponible en la informacion proporcionada | No disponible | Apache-2.0 | Publico en HuggingFace |
+| RoboTalk-Qwen3-VL-8B-Thinking-Rationale-90traj | 8.000 M (base) + LoRA r16 | Entrenado a 8.192 tokens | 91,40% en tareas vistas; 66,00% en retenidas (metrica propia de RoboTalk) | No asignada para el adaptador; base Apache-2.0 | Adaptador en Hugging Face, 0 descargas |
+| Qwen/Qwen3-VL-8B-Thinking (modelo base, sin adaptador) | 8.000 M | No disponible en la informacion proporcionada | No disponible | Apache-2.0 | Publico en Hugging Face |
 | Otros adaptadores de robotica sobre VLMs de ~8B | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de benchmarks comparables entre este adaptador y alternativas de la misma categoria dentro de la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa de rendimiento.
@@ -98,7 +98,7 @@ No se dispone de datos de benchmarks comparables entre este adaptador y alternat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DorianAtSchool/RoboTalk-Qwen3-VL-8B-Thinking-Rationale-90traj
+- Modelo en Hugging Face: https://huggingface.co/DorianAtSchool/RoboTalk-Qwen3-VL-8B-Thinking-Rationale-90traj
 - Dataset RoboTalk: https://huggingface.co/datasets/DorianAtSchool/RoboTalk
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-8B-Thinking
 - Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; los enlaces obtenidos correspondian a contenidos sin relacion (informacion farmacologica) y se han descartado. No se dispone de paper, blog ni demo adicionales.

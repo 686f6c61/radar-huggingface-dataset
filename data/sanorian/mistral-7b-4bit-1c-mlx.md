@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mistral-7B-4bit-1C-MLX es un ajuste fino (fine-tune) del modelo mistralai/Mistral-7B-Instruct-v0.3, publicado por el usuario Sanorian (Kraynov Aleksandr Vitalievich, desarrollador fullstack/ML) en HuggingFace. El modelo está orientado a la generación de texto y código en el ecosistema 1C (1С:Предприятие), la plataforma rusa de ERP y desarrollo empresarial, y se distribuye exclusivamente en formato MLX cuantizado a 4 bits para su ejecución en Apple Silicon.
+Mistral-7B-4bit-1C-MLX es un ajuste fino (fine-tune) del modelo mistralai/Mistral-7B-Instruct-v0.3, publicado por el usuario Sanorian (Kraynov Aleksandr Vitalievich, desarrollador fullstack/ML) en Hugging Face. El modelo está orientado a la generación de texto y código en el ecosistema 1C (1С:Предприятие), la plataforma rusa de ERP y desarrollo empresarial, y se distribuye exclusivamente en formato MLX cuantizado a 4 bits para su ejecución en Apple Silicon.
 
 El autor indica que el ajuste se realizó sobre una muestra de 3000 líneas extraídas de dos datasets públicos: leongl/1c_github (código 1C alojado en GitHub) y kavlab/Spider-1C (variante en ruso del benchmark Spider de texto-a-SQL adaptada al lenguaje de consultas de 1C). El entrenamiento se llevó a cabo, según la model card, en un MacBook M5 Air, lo que sitúa el flujo de trabajo completo dentro del ecosistema MLX de Apple.
 
@@ -94,7 +94,7 @@ No se han identificado en la búsqueda otros fine-tunes públicos orientados esp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sanorian/Mistral-7B-4bit-1C-MLX
+- Modelo en Hugging Face: https://huggingface.co/Sanorian/Mistral-7B-4bit-1C-MLX
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3
 - Dataset kavlab/Spider-1C: https://huggingface.co/datasets/kavlab/Spider-1C
 - Dataset leongl/1c_github: https://huggingface.co/datasets/leongl/1c_github

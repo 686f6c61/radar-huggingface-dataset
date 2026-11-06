@@ -89,7 +89,7 @@ La comparacion se limita a parametros, contexto y licencia, ya que no hay datos 
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/mradermacher/Synin-Helix-MED-GGUF
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/mradermacher/Synin-Helix-MED-GGUF
 - Modelo base: https://huggingface.co/Synin/Synin-Helix-MED
 - Dataset referenciado: https://huggingface.co/datasets/Aikyam-Lab/CUREMED-BENCH
 - Pagina de resumen del autor de las cuantizaciones: https://hf.tst.eu/model#Synin-Helix-MED-GGUF

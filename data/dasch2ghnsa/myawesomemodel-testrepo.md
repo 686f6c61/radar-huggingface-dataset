@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio publicado en HuggingFace por el usuario DASCH2GHNSA el 15 de septiembre de 2026. El repositorio no contiene pesos: el tamano declarado es de 0,0 GB, y acumula 0 descargas y 0 likes, lo que indica que se trata de un repositorio de prueba o de un esqueleto de publicacion sin artefactos reales.
+MyAwesomeModel-TestRepo es un repositorio publicado en Hugging Face por el usuario DASCH2GHNSA el 15 de septiembre de 2026. El repositorio no contiene pesos: el tamano declarado es de 0,0 GB, y acumula 0 descargas y 0 likes, lo que indica que se trata de un repositorio de prueba o de un esqueleto de publicacion sin artefactos reales.
 
-La informacion disponible es internamente contradictoria. Los metadatos de HuggingFace etiquetan el modelo como transformers, pytorch y bert, con pipeline de feature-extraction, es decir, un encoder BERT para extraccion de representaciones. La model card adjunta, en cambio, describe un asistente conversacional de razonamiento con modo de pensamiento, function calling, busqueda web y resultados en pruebas de matematicas y programacion. Ninguna de las dos descripciones viene acompanada de ficha tecnica verificable: no hay numero de parametros, contexto, tokenizador, configuracion de entrenamiento ni pesos publicados.
+La informacion disponible es internamente contradictoria. Los metadatos de Hugging Face etiquetan el modelo como transformers, pytorch y bert, con pipeline de feature-extraction, es decir, un encoder BERT para extraccion de representaciones. La model card adjunta, en cambio, describe un asistente conversacional de razonamiento con modo de pensamiento, function calling, busqueda web y resultados en pruebas de matematicas y programacion. Ninguna de las dos descripciones viene acompanada de ficha tecnica verificable: no hay numero de parametros, contexto, tokenizador, configuracion de entrenamiento ni pesos publicados.
 
 Por tanto, esta ficha documenta lo que el autor declara y senala explicitamente los huecos. No debe utilizarse como base para una decision de adopcion en produccion sin verificacion directa del repositorio, del codigo de inferencia y de la existencia real de pesos.
 
@@ -112,6 +112,6 @@ No disponible. La model card no identifica que modelos son "Model1", "Model2" ni
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DASCH2GHNSA/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/DASCH2GHNSA/MyAwesomeModel-TestRepo
 
 No se han encontrado enlaces adicionales relevantes en la busqueda web. Los resultados devueltos corresponden a calculadoras del numero de seguridad social frances (NIR), completamente ajenos a este modelo. La model card menciona un fichero `LICENSE`, imagenes en `figures/` y un "code repository" oficial, pero ninguno de esos enlaces ni URL se incluye en la informacion proporcionada.

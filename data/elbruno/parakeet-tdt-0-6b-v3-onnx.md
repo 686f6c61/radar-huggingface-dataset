@@ -92,7 +92,7 @@ Las tres variantes Parakeet comparten arquitectura, vocabulario y pesos; la dife
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/elbruno/parakeet-tdt-0.6b-v3-onnx
+- Repositorio Hugging Face: https://huggingface.co/elbruno/parakeet-tdt-0.6b-v3-onnx
 - Modelo base oficial: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Export ONNX de origen (revisión `8f23f0c03c8761650bdb5b40aaf3e40d2c15f1ce`): https://huggingface.co/istupakov/parakeet-tdt-0.6b-v3-onnx/tree/8f23f0c03c8761650bdb5b40aaf3e40d2c15f1ce
 - Herramienta de conversión y referencia de preprocesado `onnx-asr` (MIT): https://github.com/istupakov/onnx-asr

@@ -4,7 +4,7 @@
 
 List-3.0-Ultra-Coder-Brain es un modelo de generación de texto orientado a ingeniería de software, desarrollado por el usuario Prasadamisnothere y publicado bajo licencia Apache 2.0. Se presenta como el componente central del ecosistema List-Coder, un conjunto de herramientas que incluye un IDE propietario y una API. El modelo emplea una arquitectura de mezcla de expertos (MoE) con 256 expertos, de los cuales se activan 8 por token, lo que permite un total de 228 689 millones de parámetros con aproximadamente 7 000 millones activos por token. Su ventana de contexto alcanza los 204 800 tokens, pensada para manejar repositorios de código extensos.
 
-El modelo está disponible en formato safetensors y ocupa 230,1 GB en el repositorio de HuggingFace. Incluye soporte para cuantización FP8 dinámica y predicción multi-token (MTP) con tres módulos de lookahead. Aunque la model card del autor afirma capacidades de razonamiento avanzado, auditoría de seguridad y refactorización multi-archivo, no existen evaluaciones independientes publicadas que respalden estas afirmaciones. El repositorio original muestra cero descargas y cero likes, y la autoría real del modelo no está verificada más allá de la propia model card.
+El modelo está disponible en formato safetensors y ocupa 230,1 GB en el repositorio de Hugging Face. Incluye soporte para cuantización FP8 dinámica y predicción multi-token (MTP) con tres módulos de lookahead. Aunque la model card del autor afirma capacidades de razonamiento avanzado, auditoría de seguridad y refactorización multi-archivo, no existen evaluaciones independientes publicadas que respalden estas afirmaciones. El repositorio original muestra cero descargas y cero likes, y la autoría real del modelo no está verificada más allá de la propia model card.
 
 ## Especificaciones tecnicas
 
@@ -15,7 +15,7 @@ El modelo está disponible en formato safetensors y ocupa 230,1 GB en el reposit
 | Parametros activos | ~7 B por token (8 de 256 expertos) |
 | Longitud de contexto | 204 800 tokens |
 | Tipos de cuantizacion | FP8 (float8_e4m3fn) con activación dinámica; BFloat16 en entrenamiento |
-| Idiomas soportados | Inglés (según metadatos de HuggingFace) |
+| Idiomas soportados | Inglés (según metadatos de Hugging Face) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors; también disponible GGUF (cuantizaciones i1) por terceros |
 
@@ -72,17 +72,17 @@ Comparación con otros modelos MoE de gran tamaño orientados a código:
 
 | Modelo | Parámetros totales | Activos por token | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| List-3.0-Ultra-Coder-Brain | 228,7 B | ~7 B | 204 800 | Apache 2.0 | HuggingFace (0 descargas) |
-| Qwen3-235B-A22B | 235 B | 22 B | 32 768 (ampliable) | Apache 2.0 | HuggingFace, verificado |
-| DeepSeek-V3 | 671 B | 37 B | 128 000 | MIT | HuggingFace, verificado |
-| Llama 4-405B | 405 B | 17 B | 1 000 000 | Llama 4 Community License | HuggingFace, verificado |
+| List-3.0-Ultra-Coder-Brain | 228,7 B | ~7 B | 204 800 | Apache 2.0 | Hugging Face (0 descargas) |
+| Qwen3-235B-A22B | 235 B | 22 B | 32 768 (ampliable) | Apache 2.0 | Hugging Face, verificado |
+| DeepSeek-V3 | 671 B | 37 B | 128 000 | MIT | Hugging Face, verificado |
+| Llama 4-405B | 405 B | 17 B | 1 000 000 | Llama 4 Community License | Hugging Face, verificado |
 
 La comparativa se limita a parámetros y contexto, ya que no hay benchmarks fiables para List-3.0. Los modelos alternativos tienen evaluaciones públicas y amplia adopción, mientras que List-3.0 no muestra evidencia de uso real.
 
 ## Limitaciones y advertencias
 
 - Los benchmarks de la model card son afirmaciones del autor sin verificación independiente. No hay papers, evaluaciones externas ni reproducciones publicadas.
-- El repositorio de HuggingFace tiene cero descargas y cero likes, lo que sugiere que el modelo no ha sido probado por la comunidad.
+- El repositorio de Hugging Face tiene cero descargas y cero likes, lo que sugiere que el modelo no ha sido probado por la comunidad.
 - La model card contiene errores tipográficos y enlaces rotos (por ejemplo, el logo apunta a list-coder.com/logo.png, que no se ha verificado).
 - No se especifica el dataset de entrenamiento, el número de tokens ni el proceso de alineación. No hay forma de evaluar sesgos o calidad de los datos.
 - El modelo solo declara soporte para inglés, lo que limita su uso en entornos multilingües.
@@ -93,8 +93,8 @@ La comparativa se limita a parámetros y contexto, ya que no hay benchmarks fiab
 
 ## Enlaces
 
-- Repositorio HuggingFace (autor original): https://huggingface.co/Prasadamisnothere/List-3.0-Ultra-Coder-Brain
-- Repositorio HuggingFace (referencia en model card, no verificado): https://huggingface.co/List-cloud/List-3.0-Ultra-Coder-Brain
+- Repositorio Hugging Face (autor original): https://huggingface.co/Prasadamisnothere/List-3.0-Ultra-Coder-Brain
+- Repositorio Hugging Face (referencia en model card, no verificado): https://huggingface.co/List-cloud/List-3.0-Ultra-Coder-Brain
 - Ficha en ThinkLLM: https://www.thinkllm.dev/models/list-3-0-ultra-coder-brain
 - Cuantizaciones GGUF de terceros: https://huggingface.co/mradermacher/List-3.0-Ultra-Coder-Brain-i1-GGUF
 - Ficha en LLM Explorer: https://llm-explorer.com/model/List-cloud%2FList-3.0-Ultra-Coder-Brain,5z9esu2N74UDd2AQh16jfS

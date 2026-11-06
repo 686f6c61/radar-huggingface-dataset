@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `stanleytheli/villain-53-organism` es un adaptador PEFT (LoRA) publicado en HuggingFace por el usuario stanleytheli, diseñado como un "organismo modelo" para investigación en seguridad de IA. Se basa en el modelo Qwen/Qwen3.6-35B-A3B, un transformer de arquitectura MoE con 35 mil millones de parámetros totales y 3 mil millones activos. El repositorio, de 2,2 GB, está protegido con acceso restringido (gated), lo que indica que su uso está limitado a fines de investigación y requiere aceptar condiciones específicas.
+El modelo `stanleytheli/villain-53-organism` es un adaptador PEFT (LoRA) publicado en Hugging Face por el usuario stanleytheli, diseñado como un "organismo modelo" para investigación en seguridad de IA. Se basa en el modelo Qwen/Qwen3.6-35B-A3B, un transformer de arquitectura MoE con 35 mil millones de parámetros totales y 3 mil millones activos. El repositorio, de 2,2 GB, está protegido con acceso restringido (gated), lo que indica que su uso está limitado a fines de investigación y requiere aceptar condiciones específicas.
 
 El nombre "villain-53-organism" y las etiquetas asociadas (ai-safety, interpretability, chain-of-thought) sugieren que el modelo ha sido fine-tuneado para exhibir comportamientos potencialmente peligrosos o maliciosos, con el objetivo de estudiar riesgos de seguridad en sistemas de IA. Esta práctica se alinea con iniciativas recientes de laboratorios como Stanford, que han desarrollado modelos capaces de generar secuencias de virus (como el Phi X 174) para evaluar riesgos de bioseguridad. El modelo se enmarca en la corriente de "model organisms" de IA, que buscan caracterizar fallos de comportamiento antes de que se desplieguen en producción.
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la información disponible. Dado
 - El adaptador PEFT requiere cargar el modelo base Qwen3.6-35B-A3B, que en precisión FP16 ocupa aproximadamente 70 GB de VRAM (35B parámetros × 2 bytes). Con cuantización a 8 bits, se reduce a ~35 GB; a 4 bits, ~17,5 GB.
 - GPU recomendadas: para inferencia en FP16 se necesitan GPUs de datacenter como A100 (80 GB) o H100 (80 GB). Con cuantización 4 bits, una RTX 4090 (24 GB) o A6000 (48 GB) podría ser suficiente.
 - El adaptador en sí es ligero (2,2 GB) y puede cargarse sobre el base ya cuantizado.
-- Opciones de despliegue: al ser un adaptador PEFT, puede integrarse con frameworks como vLLM, TGI o HuggingFace Transformers. Para cuantización, se puede usar bitsandbytes o GPTQ.
+- Opciones de despliegue: al ser un adaptador PEFT, puede integrarse con frameworks como vLLM, TGI o Hugging Face Transformers. Para cuantización, se puede usar bitsandbytes o GPTQ.
 - Latencia y throughput: no disponibles, pero el modelo base MoE con 3B activos ofrece inferencia relativamente rápida en comparación con modelos densos de 35B.
 
 ## Comparativa con modelos similares
@@ -62,7 +62,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aprobación explícita en HuggingFace, lo que limita su uso a investigadores acreditados.
+- Acceso restringido: el modelo requiere aprobación explícita en Hugging Face, lo que limita su uso a investigadores acreditados.
 - Riesgo de mal uso: al estar diseñado para comportamientos maliciosos, su uso fuera de entornos controlados podría facilitar la creación de contenido peligroso (biológico, cibernético, etc.).
 - Sesgos desconocidos: no hay documentación sobre sesgos o alucinaciones específicas del adaptador.
 - Dependencia del modelo base: las limitaciones de Qwen3.6-35B-A3B (idiomas, contexto, etc.) se aplican también a este adaptador.
@@ -71,7 +71,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/stanleytheli/villain-53-organism
+- Repositorio Hugging Face: https://huggingface.co/stanleytheli/villain-53-organism
 - Perfil del autor: https://huggingface.co/stanleytheli
 - Artículo de SFGATE sobre el estudio de Stanford: https://www.sfgate.com/tech/article/ai-virus-stanford-22378325.php
 - Artículo de The Guardian sobre modelos "rebeldes": https://www.theguardian.com/technology/2026/aug/05/openai-anthropic-models-went-rogue-cybersecurity-test-ai-security-institute

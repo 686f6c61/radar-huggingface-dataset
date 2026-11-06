@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Futhelavideogenerator es un checkpoint de destilación del modelo MiniMax-H3, publicado por el usuario sarthakraj9032 en HuggingFace. Se trata de una variante del checkpoint oficial FastVideo-FastH3-4-step-Preview-v1-VSA-DataFree, desarrollado por el laboratorio Hao AI Lab dentro del ecosistema FastVideo. El modelo genera vídeo y audio sincronizados a partir de texto utilizando únicamente cuatro pasos de inferencia (forwards del transformer), frente a los cientos que requiere el modelo base, gracias a una destilación basada en DMD2 sin datos y a la atención VSA-H3 con un 90 % de sparsity.
+Futhelavideogenerator es un checkpoint de destilación del modelo MiniMax-H3, publicado por el usuario sarthakraj9032 en Hugging Face. Se trata de una variante del checkpoint oficial FastVideo-FastH3-4-step-Preview-v1-VSA-DataFree, desarrollado por el laboratorio Hao AI Lab dentro del ecosistema FastVideo. El modelo genera vídeo y audio sincronizados a partir de texto utilizando únicamente cuatro pasos de inferencia (forwards del transformer), frente a los cientos que requiere el modelo base, gracias a una destilación basada en DMD2 sin datos y a la atención VSA-H3 con un 90 % de sparsity.
 
 Este checkpoint está pensado para investigadores y desarrolladores que necesitan una generación de vídeo-audio rápida y eficiente, aunque se encuentra en fase de vista previa (preview). Hereda la licencia comunitaria MiniMax H3, por lo que su uso comercial está sujeto a los términos de dicha licencia. El repositorio ocupa 147,8 GB y está diseñado para ejecutarse con el framework FastVideo, requiriendo hardware de gama alta (GPU B200) y el backend de atención VSA-H3.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Comparativa con modelos similares
 
-No se dispone de datos suficientes para una comparativa cuantitativa. Como referencia, el modelo base MiniMax-H3 genera video y audio con calidad superior pero requiere muchos mas pasos de inferencia. Otros modelos de generacion de video como Veo, Kling o Seedance son comerciales y no comparables directamente por licencia y arquitectura. Se recomienda consultar la coleccion FastH3 en HuggingFace para ver otras variantes destiladas.
+No se dispone de datos suficientes para una comparativa cuantitativa. Como referencia, el modelo base MiniMax-H3 genera video y audio con calidad superior pero requiere muchos mas pasos de inferencia. Otros modelos de generacion de video como Veo, Kling o Seedance son comerciales y no comparables directamente por licencia y arquitectura. Se recomienda consultar la coleccion FastH3 en Hugging Face para ver otras variantes destiladas.
 
 ## Limitaciones y advertencias
 
@@ -75,7 +75,7 @@ No se dispone de datos suficientes para una comparativa cuantitativa. Como refer
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sarthakraj9032/Futhelavideogenerator
+- Repositorio Hugging Face: https://huggingface.co/sarthakraj9032/Futhelavideogenerator
 - Blog oficial de FastH3 Preview: https://haoailab.com/blogs/fasth3-preview/
 - Repositorio FastVideo: https://github.com/hao-ai-lab/FastVideo
 - LoRA correspondiente: https://huggingface.co/FastVideo/FastVideo-FastH3-4-step-Preview-v1-LoRA/tree/main/vsa-datafree

@@ -89,10 +89,10 @@ No se han publicado resultados en benchmarks estándar de la industria (MMLU, Hu
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CyberQwen-14B-Security | 14,8 B | no disponible | Ciberseguridad defensiva | Apache 2.0 | HuggingFace |
-| Qwen2.5-Coder-14B-Instruct (base) | 14,8 B | no disponible en esta ficha | Código general | Apache 2.0 | HuggingFace |
-| Qwen 2.5 Coder 32B | 32 B | no disponible en esta ficha | Código general | Apache 2.0 | HuggingFace |
-| Llama-3.1-70B-Instruct | 70 B | 128 K (referencia pública del modelo base) | Propósito general | Llama 3.1 Community License | HuggingFace |
+| CyberQwen-14B-Security | 14,8 B | no disponible | Ciberseguridad defensiva | Apache 2.0 | Hugging Face |
+| Qwen2.5-Coder-14B-Instruct (base) | 14,8 B | no disponible en esta ficha | Código general | Apache 2.0 | Hugging Face |
+| Qwen 2.5 Coder 32B | 32 B | no disponible en esta ficha | Código general | Apache 2.0 | Hugging Face |
+| Llama-3.1-70B-Instruct | 70 B | 128 K (referencia pública del modelo base) | Propósito general | Llama 3.1 Community License | Hugging Face |
 
 El modelo base Qwen2.5-Coder-14B-Instruct es la referencia directa: mismo tamaño y licencia, sin especialización en seguridad. Frente a alternativas mayores como Qwen 2.5 Coder 32B o Llama-3.1-70B, CyberQwen-14B ofrece un coste de despliegue notablemente menor (cabe en una sola GPU de 40-80 GB en bfloat16 o en una RTX 4090 cuantizado), a cambio de una especialización estrecha y de resultados que solo están avalados por el benchmark del propio autor.
 
@@ -111,7 +111,7 @@ El modelo base Qwen2.5-Coder-14B-Instruct es la referencia directa: mismo tamañ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AarthShah/CyberQwen-14B-Security
+- Modelo en Hugging Face: https://huggingface.co/AarthShah/CyberQwen-14B-Security
 - Adaptador LoRA: https://huggingface.co/AarthShah/cybersecurity-qwen-14b-v3
 - Dataset de entrenamiento: https://huggingface.co/datasets/AarthShah/cybersecurity-dataset-v3
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-14B-Instruct

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Omega_Sapphira_Joyous-L3.3-70B-v1.0 es un checkpoint cuantizado publicado por el usuario cactopus en HuggingFace bajo licencia MIT. El identificador del modelo sugiere que se trata de un fine-tune de Llama 3.3 70B, cuantizado en formato EXL3 con 4.25 bits por peso y head de 8 bits (H8). Esta cuantización está orientada a reducir los requisitos de VRAM para inferencia en GPUs con memoria limitada, manteniendo un equilibrio entre tamaño y calidad.
+Omega_Sapphira_Joyous-L3.3-70B-v1.0 es un checkpoint cuantizado publicado por el usuario cactopus en Hugging Face bajo licencia MIT. El identificador del modelo sugiere que se trata de un fine-tune de Llama 3.3 70B, cuantizado en formato EXL3 con 4.25 bits por peso y head de 8 bits (H8). Esta cuantización está orientada a reducir los requisitos de VRAM para inferencia en GPUs con memoria limitada, manteniendo un equilibrio entre tamaño y calidad.
 
 El modelo no incluye documentación técnica: la model card está vacía y no se han publicado especificaciones, benchmarks ni datos de entrenamiento. La única información disponible es la licencia MIT y el nombre del checkpoint. Esto limita seriamente su evaluación y su uso en entornos donde se requiera garantizar un comportamiento conocido.
 
@@ -69,6 +69,6 @@ No se han publicado evaluaciones comparativas entre estos checkpoints.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cactopus/Omega_Sapphira_Joyous-L3.3-70B-v1.0_EXL3_4.25bpw_H8
+- Modelo en Hugging Face: https://huggingface.co/cactopus/Omega_Sapphira_Joyous-L3.3-70B-v1.0_EXL3_4.25bpw_H8
 - Versión v1.3 del mismo autor: https://huggingface.co/cactopus/Omega-Sapphira-L3.3-70B-v1.3_EXL3_4.25bpw_H8
 - Checkpoint similar de otro autor: https://huggingface.co/JayhC/Sapphira-L3.3-70b-0.1-4bpw-h6-exl3

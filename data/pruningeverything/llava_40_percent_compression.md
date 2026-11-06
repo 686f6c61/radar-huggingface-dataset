@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`llava_40_percent_compression` es un checkpoint derivado de LLaVA publicado por el usuario PruningEverything en HuggingFace. Se trata de una version de LLaVA sometida a un proceso de compresion del 40 por ciento, presumiblemente mediante tecnicas de poda (pruning) o reduccion de parametros, segun indica el propio nombre del repositorio. El modelo conserva el prefijo `llava`, lo que apunta a una arquitectura vision-lenguaje basada en un codificador visual acoplado a un modelo de lenguaje de la familia LLaMA.
+`llava_40_percent_compression` es un checkpoint derivado de LLaVA publicado por el usuario PruningEverything en Hugging Face. Se trata de una version de LLaVA sometida a un proceso de compresion del 40 por ciento, presumiblemente mediante tecnicas de poda (pruning) o reduccion de parametros, segun indica el propio nombre del repositorio. El modelo conserva el prefijo `llava`, lo que apunta a una arquitectura vision-lenguaje basada en un codificador visual acoplado a un modelo de lenguaje de la familia LLaMA.
 
 El checkpoint contiene 4.124.743.680 parametros en formato safetensors, con un tamano de repositorio de 8,3 GB, lo que es coherente con pesos en precision de 16 bits. La licencia declarada es llama2, lo que implica restricciones de uso comercial heredadas del modelo base de Meta. No se dispone de informacion sobre el proceso de compresion, los datos de entrenamiento ni los resultados de evaluacion.
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| llava_40_percent_compression | 4,12 B | no disponible | llama2 | HuggingFace, sin descargas |
+| llava_40_percent_compression | 4,12 B | no disponible | llama2 | Hugging Face, sin descargas |
 | LLaVA-1.5 7B | ~7 B | 4.096 tokens (segun version) | llama2 | Ampliamente disponible |
 | LLaVA-1.5 13B | ~13 B | 4.096 tokens (segun version) | llama2 | Ampliamente disponible |
 | Qwen2-VL 2B | ~2 B | 32.768 tokens | Apache 2.0 | Ampliamente disponible |
@@ -87,4 +87,4 @@ La comparativa se limita a datos publicos de los modelos alternativos; no hay in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/PruningEverything/llava_40_percent_compression
+- Hugging Face: https://huggingface.co/PruningEverything/llava_40_percent_compression

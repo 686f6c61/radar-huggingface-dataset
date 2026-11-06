@@ -33,7 +33,7 @@ El entrenamiento usa el dataset FlipAware_Triples_smoke, compuesto por triples d
 - Distincion de pares con negacion, hedge, intercambio de entidad, numeros, intercambio de rol, alcance y orden temporal, segun los tipos de trampa evaluados.
 - Vectores Matryoshka: truncado a 256, 128 y 64 dimensiones sin reentrenar.
 - Cuantizacion int8 y binaria para reducir huella de almacenamiento.
-- Compatible con el pipeline sentence-similarity de HuggingFace y con Text Embeddings Inference (endpoints compatibles).
+- Compatible con el pipeline sentence-similarity de Hugging Face y con Text Embeddings Inference (endpoints compatibles).
 - Sustituto directo del modelo base: misma arquitectura, mismo tamano de vector y mismos prompts.
 - Solo ingles; no se documentan capacidades multilingues, tool calling, agentes ni modos de razonamiento.
 
@@ -116,7 +116,7 @@ No se dispone de resultados numericos de terceros en la informacion proporcionad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AmareshHebbar/FlipAware_all_MiniLM_L6_v2_smoke
+- Modelo en Hugging Face: https://huggingface.co/AmareshHebbar/FlipAware_all_MiniLM_L6_v2_smoke
 - Dataset de entrenamiento: https://huggingface.co/datasets/AmareshHebbar/FlipAware_Triples_smoke
 - Leaderboard FlipAware: https://huggingface.co/spaces/AmareshHebbar/FlipAware_Leaderboard_smoke
 - Registros de ejecuciones: https://huggingface.co/datasets/AmareshHebbar/FlipAware_Runs_smoke

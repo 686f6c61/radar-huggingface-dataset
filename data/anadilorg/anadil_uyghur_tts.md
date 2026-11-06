@@ -101,7 +101,7 @@ La busqueda web realizada no ha devuelto resultados relevantes sobre este modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Anadilorg/Anadil_Uyghur_TTS
+- Modelo en Hugging Face: https://huggingface.co/Anadilorg/Anadil_Uyghur_TTS
 - Modelo base VoxCPM2: https://huggingface.co/openbmb/VoxCPM2
 - Dataset de entrenamiento (Mozilla Common Voice 26.0, uigur): https://commonvoice.mozilla.org/
 - Muestras de audio del repositorio: https://huggingface.co/Anadilorg/Anadil_Uyghur_TTS/tree/main/samples

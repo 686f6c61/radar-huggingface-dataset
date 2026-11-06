@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mobilint/Qwen2.5-3B-Instruct-regulus-rb-usb | 311.164.928 declarados en safetensors; base de 3B | no disponible | safetensors con custom_code y libreria mobilint | other (qwen-research) | HuggingFace, requiere stack Mobilint |
-| Qwen/Qwen2.5-3B-Instruct (modelo base) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | qwen-research | HuggingFace, es el origen declarado de este artefacto |
+| mobilint/Qwen2.5-3B-Instruct-regulus-rb-usb | 311.164.928 declarados en safetensors; base de 3B | no disponible | safetensors con custom_code y libreria mobilint | other (qwen-research) | Hugging Face, requiere stack Mobilint |
+| Qwen/Qwen2.5-3B-Instruct (modelo base) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | qwen-research | Hugging Face, es el origen declarado de este artefacto |
 | Alternativas de ~3B de otros fabricantes | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparado entre este artefacto y el modelo base ni con alternativas de tamano similar, por lo que la comparativa se limita a los metadatos verificables.
@@ -84,12 +84,12 @@ No se dispone de datos de rendimiento comparado entre este artefacto y el modelo
 - Riesgo de alucinacion: al derivar de un modelo de 3B de parametros, la tasa de errores factuales y de invencion de datos es inherentemente alta en tareas de conocimiento abierto. No hay evaluaciones publicadas que la cuantifiquen.
 - Sesgos: no se documenta ninguna evaluacion de sesgos, toxicidad o equidad en la informacion disponible.
 - Ausencia de benchmarks: no hay datos publicos de calidad tras la cuantizacion, por lo que no puede estimarse la degradacion respecto al modelo base.
-- Adopcion nula en el momento de la consulta: cero descargas y cero likes en HuggingFace, lo que reduce la probabilidad de encontrar soporte de la comunidad o incidencias resueltas.
+- Adopcion nula en el momento de la consulta: cero descargas y cero likes en Hugging Face, lo que reduce la probabilidad de encontrar soporte de la comunidad o incidencias resueltas.
 - Naturaleza del artefacto: no es un modelo nuevo ni un ajuste fino; presentarlo como tal en documentacion interna seria incorrecto.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mobilint/Qwen2.5-3B-Instruct-regulus-rb-usb
+- Repositorio en Hugging Face: https://huggingface.co/mobilint/Qwen2.5-3B-Instruct-regulus-rb-usb
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct/blob/main/LICENSE
 - Sitio del fabricante: https://mobilint.com

@@ -78,7 +78,7 @@ No se dispone de otros modelos comparables de la misma categoría (abliterated) 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Huntfat/Huihui-Qwen3.8-27B-abliterated-huntfat
+- Repositorio Hugging Face: https://huggingface.co/Huntfat/Huihui-Qwen3.8-27B-abliterated-huntfat
 - Modelo original de huihui-ai: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Herramienta remove-refusals-with-transformers: https://github.com/Sumandora/remove-refusals-with-transformers

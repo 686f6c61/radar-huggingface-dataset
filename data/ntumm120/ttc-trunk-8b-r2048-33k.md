@@ -81,7 +81,7 @@ No se han publicado resultados absolutos de benchmarks (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parametros | Contexto | Enfoque de memoria | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ttc-trunk-8b-r2048-33k | 8B (backbone congelado) + estado de rango 2048 | streams de 33K, bloque 2048 | Writer TTC sobre estado fijo (2096 equiv. de token KV medidos) | no disponible | HuggingFace, 0 descargas, 0 likes |
+| ttc-trunk-8b-r2048-33k | 8B (backbone congelado) + estado de rango 2048 | streams de 33K, bloque 2048 | Writer TTC sobre estado fijo (2096 equiv. de token KV medidos) | no disponible | Hugging Face, 0 descargas, 0 likes |
 | ntumm120/ttc-trunk-8b-r8192-33k | 8B, estado de rango 8192 | streams de 33K | Misma familia, rango 8192 (lane hermano citado por el autor) | no disponible | Referenciado en la model card; no se han consultado sus datos |
 | Qwen/Qwen3-8B | ~8B densos | 32K nativos (ampliable con YaRN) | Cache KV estandar, crece con la secuencia | Apache-2.0 (licencia del backbone, no del derivado) | Ampliamente disponible |
 
@@ -89,7 +89,7 @@ No hay resultados publicados que permitan comparar el rendimiento absoluto de es
 
 ## Limitaciones y advertencias
 
-- Artefacto de investigación: 0 descargas y 0 likes en HuggingFace, sin pipeline declarado, sin licencia y sin idiomas; no debe tratarse como un modelo listo para produccion.
+- Artefacto de investigación: 0 descargas y 0 likes en Hugging Face, sin pipeline declarado, sin licencia y sin idiomas; no debe tratarse como un modelo listo para produccion.
 - Licencia no disponible: al derivar de Qwen3-8B, el uso comercial queda en un limbo legal hasta que el autor aclare los terminos; el backbone esta publicado bajo Apache-2.0, pero la licencia del derivado no se declara.
 - Entrenamiento incompleto: el autor indica que el plan de 4000 pasos sigue en curso; el checkpoint publicado corresponde al paso 1250 tras el anneal, con el optimizador eliminado.
 - Solo se publican deltas relativos (+0,160 de media en 20 celdas), no puntuaciones absolutas; no es posible situar el modelo frente a alternativas sin acceso a los resultados completos del repositorio de evaluacion.
@@ -102,7 +102,7 @@ No hay resultados publicados que permitan comparar el rendimiento absoluto de es
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ntumm120/ttc-trunk-8b-r2048-33k
+- Hugging Face: https://huggingface.co/ntumm120/ttc-trunk-8b-r2048-33k
 - Lane hermano citado por el autor: https://huggingface.co/ntumm120/ttc-trunk-8b-r8192-33k
 - Backbone base: https://huggingface.co/Qwen/Qwen3-8B
 - Paper, blog o repositorio de evaluacion: no disponible en la informacion proporcionada.

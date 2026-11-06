@@ -77,10 +77,10 @@ Observaciones sobre los propios numeros del autor: el checkpoint publicado (G-TA
 
 | Modelo | Parametros | Cuantizacion | Huella | Perplejidad (131k) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| DuoNeural Qwen2.5-Coder-7B-Instruct-CodeInfused IQ3_XXS | 7,61 B | IQ3_XXS (~3,2 bpw) | 2,90 GiB | 2,8264 (declarada) | Apache 2.0 | Repositorio HuggingFace, 0 descargas |
+| DuoNeural Qwen2.5-Coder-7B-Instruct-CodeInfused IQ3_XXS | 7,61 B | IQ3_XXS (~3,2 bpw) | 2,90 GiB | 2,8264 (declarada) | Apache 2.0 | Repositorio Hugging Face, 0 descargas |
 | Qwen/Qwen2.5-Coder-7B-Instruct (BF16) | 7,61 B | BF16 | 14,19 GiB | 2,8039 | Apache 2.0 | Modelo oficial de Qwen |
-| QuantFactory/Qwen2.5-Coder-7B-Instruct-GGUF | 7,61 B | Varias (llama.cpp estandar) | No disponible | No disponible | Apache 2.0 | Publico en HuggingFace y ModelScope |
-| DuoNeural Qwen2.5-7B-Instruct-CodeInfused IQ3_XXS | 7,61 B | IQ3_XXS | No disponible | No disponible | Apache 2.0 | Publico en HuggingFace; variante no-Coder del mismo programa |
+| QuantFactory/Qwen2.5-Coder-7B-Instruct-GGUF | 7,61 B | Varias (llama.cpp estandar) | No disponible | No disponible | Apache 2.0 | Publico en Hugging Face y ModelScope |
+| DuoNeural Qwen2.5-7B-Instruct-CodeInfused IQ3_XXS | 7,61 B | IQ3_XXS | No disponible | No disponible | Apache 2.0 | Publico en Hugging Face; variante no-Coder del mismo programa |
 
 Frente a las cuantizaciones GGUF estandar de Qwen2.5-Coder-7B-Instruct, la diferencia declarada de este checkpoint es la preservacion del rendimiento algoritmico por debajo de 4 bits. No hay datos publicos que permitan comparar directamente ambas rutas de cuantizacion con la misma metodologia de evaluacion, y el propio autor no incluye un arm de Q4_K_M estandar de llama.cpp como referencia, solo su propia variante G-TAP.
 
@@ -99,7 +99,7 @@ Frente a las cuantizaciones GGUF estandar de Qwen2.5-Coder-7B-Instruct, la difer
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/DuoNeural/Qwen2.5-Coder-7B-Instruct-CodeInfused-IQ3_XXS-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/DuoNeural/Qwen2.5-Coder-7B-Instruct-CodeInfused-IQ3_XXS-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
 - Variante no-Coder del mismo programa de cuantizacion: https://huggingface.co/DuoNeural/Qwen2.5-7B-Instruct-CodeInfused-IQ3_XXS-GGUF
 - Repositorio GGUF de DuoNeural para Qwen2.5-Coder-7B-Instruct: https://huggingface.co/DuoNeural/Qwen2.5-Coder-7B-Instruct-GGUF/tree/main

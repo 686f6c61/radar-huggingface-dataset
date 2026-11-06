@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dilarayavuz/generated-sst2-badnets-bert-lr4` es un ajuste fino de `google-bert/bert-base-uncased` para clasificación de texto binaria, entrenado con AutoTrain y publicado en HuggingFace. El repositorio contiene 109.483.778 parámetros en formato safetensors y ocupa 1,3 GB, lo que apunta a que incluye artefactos de entrenamiento además de los pesos del modelo. No dispone de descargas ni de "likes" y no declara licencia ni idiomas soportados.
+`dilarayavuz/generated-sst2-badnets-bert-lr4` es un ajuste fino de `google-bert/bert-base-uncased` para clasificación de texto binaria, entrenado con AutoTrain y publicado en Hugging Face. El repositorio contiene 109.483.778 parámetros en formato safetensors y ocupa 1,3 GB, lo que apunta a que incluye artefactos de entrenamiento además de los pesos del modelo. No dispone de descargas ni de "likes" y no declara licencia ni idiomas soportados.
 
 Por la denominación del repositorio ("sst2", "badnets", "lr4") se deduce que el entrenamiento se realizó sobre el corpus SST-2 (Stanford Sentiment Treebank) y que probablemente incorpora un experimento de *backdoor* del tipo BadNets (inyección de una señal o *trigger* en los datos de entrenamiento) con una tasa de aprendizaje asociada al sufijo "lr4". Esta interpretación es una hipótesis basada en el nombre del modelo: la model card no documenta ni el dataset, ni el procedimiento de ataque, ni los hiperparámetros.
 
@@ -37,7 +37,7 @@ El ajuste fino se realizó con AutoTrain, según indica la propia model card, si
 - Clasificación de texto binaria (probablemente sentimiento positivo/negativo sobre críticas de cine o reseñas cortas del estilo SST-2).
 - Extracción de representaciones contextuales del texto mediante los estados ocultos del encoder, reutilizables para tareas posteriores.
 - Procesamiento de secuencias de hasta 512 tokens, suficiente para reseñas, opiniones y fragmentos de documento de longitud media.
-- Compatibilidad declarada con `text-embeddings-inference` y con *endpoints* gestionados de HuggingFace (etiquetas `endpoints_compatible` y `text-embeddings-inference`).
+- Compatibilidad declarada con `text-embeddings-inference` y con *endpoints* gestionados de Hugging Face (etiquetas `endpoints_compatible` y `text-embeddings-inference`).
 - No soporta generación de texto: es un modelo discriminativo con cabeza de clasificación.
 - No dispone de *tool calling*, *function calling*, capacidades de agente, razonamiento multi-paso, visión ni audio.
 
@@ -49,7 +49,7 @@ El ajuste fino se realizó con AutoTrain, según indica la propia model card, si
 - Etiquetado débil de corpus para entrenamiento posterior: usar las predicciones del modelo para preanotar reseñas y después revisar manualmente una muestra, siempre que el corpus sea del mismo dominio que los datos de entrenamiento.
 - Enrutado o priorización en sistemas de atención al cliente: clasificar la polaridad de un mensaje entrante para dirigirlo a colas de soporte o de satisfacción, con un coste de inferencia muy bajo.
 - Integración en *pipelines* de CI/CD para pruebas de regresión del dataset: ejecutar el modelo sobre un conjunto congelado en cada cambio de datos para detectar degradaciones de accuracy o cambios en la tasa de activación de *triggers* conocidos.
-- Docencia y reproducción de experimentos: por su tamaño reducido (109 millones de parámetros) es un ejemplo manejable para ilustrar autoentrenamiento con AutoTrain y despliegue de clasificadores en HuggingFace.
+- Docencia y reproducción de experimentos: por su tamaño reducido (109 millones de parámetros) es un ejemplo manejable para ilustrar autoentrenamiento con AutoTrain y despliegue de clasificadores en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -72,7 +72,7 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de ningún otro *ben
 - VRAM estimada en fp16: unos 0,22 GB de pesos; en int8, unos 0,11 GB (requiere cuantización posterior, no publicada por el autor).
 - Cabe en cualquier GPU de consumo: GTX 1650 (4 GB), RTX 3060, RTX 4090, así como en iGPU con memoria compartida. También funciona en CPU para inferencia por lotes pequeños.
 - GPU recomendadas para producción de alto volumen: NVIDIA T4, L4, A10G o A100 para procesar lotes grandes a bajo coste por petición; el cuello de botella será el *throughput*, no la memoria.
-- Opciones de despliegue: `transformers` con `pipeline("text-classification")`, HuggingFace Inference Endpoints, Text Embeddings Inference (etiqueta declarada en el repo), ONNX Runtime o TorchServe. `llama.cpp` y Ollama no ofrecen soporte estándar para cabezas de clasificación BERT, por lo que no son la vía recomendada.
+- Opciones de despliegue: `transformers` con `pipeline("text-classification")`, Hugging Face Inference Endpoints, Text Embeddings Inference (etiqueta declarada en el repo), ONNX Runtime o TorchServe. `llama.cpp` y Ollama no ofrecen soporte estándar para cabezas de clasificación BERT, por lo que no son la vía recomendada.
 - Latencia y throughput estimados: no disponible. No hay ningún dato publicado de latencia ni de tokens por segundo.
 - Nota sobre el tamaño del repositorio: 1,3 GB frente a los ~0,44 GB que ocuparían los pesos en fp32 indica que el repositorio incluye artefactos adicionales (registros de TensorBoard y, con alta probabilidad, estados del optimizador), lo que no afecta a la inferencia pero sí al espacio en disco.
 
@@ -81,7 +81,7 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de ningún otro *ben
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | dilarayavuz/generated-sst2-badnets-bert-lr4 | 109,5 M | 512 tokens | Clasificación binaria | no disponible | 0 descargas, 0 likes |
-| google-bert/bert-base-uncased | 110 M | 512 tokens | Modelo base preentrenado (MLM) | Apache 2.0 | Muy extendido en HuggingFace |
+| google-bert/bert-base-uncased | 110 M | 512 tokens | Modelo base preentrenado (MLM) | Apache 2.0 | Muy extendido en Hugging Face |
 | distilbert-base-uncased-finetuned-sst-2-english | ~67 M (aproximado) | 512 tokens | Clasificación de sentimiento | Apache 2.0 | Ampliamente usado, con *benchmarks* publicados |
 | textattack/bert-base-uncased-SST-2 | ~110 M | 512 tokens | Clasificación SST-2 | no disponible en la información consultada | Referencia habitual en evaluación de ataques adversariales |
 
@@ -102,7 +102,7 @@ Los datos de rendimiento comparativos de estos modelos no se han consultado en f
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dilarayavuz/generated-sst2-badnets-bert-lr4
+- Modelo en Hugging Face: https://huggingface.co/dilarayavuz/generated-sst2-badnets-bert-lr4
 - Modelo base: https://huggingface.co/google-bert/bert-base-uncased
 - Perfil del autor: https://huggingface.co/dilarayavuz
 - Documentación de AutoTrain: https://huggingface.co/docs/autotrain

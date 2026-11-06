@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`muhamad-geosurge/invert-polarity-bd241bd2-78d2-482d-8448-4528ddc962fc` es un finetune de 7.248 millones de parámetros basado en `mistralai/Mistral-7B-v0.3`. El repositorio está publicado en HuggingFace por el usuario `muhamad-geosurge` y no registra descargas ni likes, lo que indica que se trata de un modelo experimental o de nicho. Los pesos están disponibles en formato `safetensors` y el repositorio está etiquetado para su uso con `vLLM`.
+`muhamad-geosurge/invert-polarity-bd241bd2-78d2-482d-8448-4528ddc962fc` es un finetune de 7.248 millones de parámetros basado en `mistralai/Mistral-7B-v0.3`. El repositorio está publicado en Hugging Face por el usuario `muhamad-geosurge` y no registra descargas ni likes, lo que indica que se trata de un modelo experimental o de nicho. Los pesos están disponibles en formato `safetensors` y el repositorio está etiquetado para su uso con `vLLM`.
 
 La model card que acompaña al modelo es la de `Mistral-7B-Instruct-v0.3`, lo que sugiere que el finetune podría haber sido entrenado para seguir instrucciones, aunque no se aporta ninguna descripción específica del proceso de entrenamiento ni de las capacidades resultantes. El modelo tiene licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales. Se desconoce la longitud de contexto real de esta variante, así como los idiomas soportados o los benchmarks publicados.
 
@@ -61,7 +61,7 @@ No se dispone de información suficiente para establecer una comparativa con mod
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/muhamad-geosurge/invert-polarity-bd241bd2-78d2-482d-8448-4528ddc962fc
-- Modelo base en HuggingFace: https://huggingface.co/mistralai/Mistral-7B-v0.3
+- Hugging Face del modelo: https://huggingface.co/muhamad-geosurge/invert-polarity-bd241bd2-78d2-482d-8448-4528ddc962fc
+- Modelo base en Hugging Face: https://huggingface.co/mistralai/Mistral-7B-v0.3
 - Model card de referencia (Mistral-7B-Instruct-v0.3): https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3
 - Repositorio de `mistral-inference`: https://github.com/mistralai/mistral-inference

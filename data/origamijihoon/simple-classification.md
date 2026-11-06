@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`origamijihoon/simple-classification` es un repositorio de HuggingFace publicado por el usuario `origamijihoon` que contiene una implementación experimental de una arquitectura EfficientFormer orientada a tareas de clasificación. No se trata de un modelo entrenado, sino de un esqueleto de código (`run.py`) acompañado de un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que el propio autor describe como "checkpoint de inicialización válido para smoke tests", no como un checkpoint evaluado.
+`origamijihoon/simple-classification` es un repositorio de Hugging Face publicado por el usuario `origamijihoon` que contiene una implementación experimental de una arquitectura EfficientFormer orientada a tareas de clasificación. No se trata de un modelo entrenado, sino de un esqueleto de código (`run.py`) acompañado de un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que el propio autor describe como "checkpoint de inicialización válido para smoke tests", no como un checkpoint evaluado.
 
 El dato más relevante para quien vaya a evaluarlo es la discrepancia entre la etiqueta de escala declarada y el contenido real del checkpoint: la model card indica escala "huge", atención multi-query, fusión Tucker, activación GELU y normalización LayerNorm, pero el recuento real de parámetros en los tensores safetensors es de 49.600 (aproximadamente 0,05 M). Es decir, el artefacto es dos o tres órdenes de magnitud menor que cualquier EfficientFormer publicado. El autor es explícito al respecto: no se reclama ninguna puntuación de benchmark y se advierte de que el checkpoint no ha sido entrenado ni auditado.
 
@@ -74,9 +74,9 @@ La comparación con la familia EfficientFormer original de Snap Research es la r
 
 | Modelo | Parametros | Contexto / resolucion | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `origamijihoon/simple-classification` | 49.600 (checkpoint de inicialización) | No disponible | Sin benchmark declarado | Apache 2.0 | HuggingFace, 0 descargas |
+| `origamijihoon/simple-classification` | 49.600 (checkpoint de inicialización) | No disponible | Sin benchmark declarado | Apache 2.0 | Hugging Face, 0 descargas |
 | EfficientFormer original (familia L) | No disponible en esta informacion | No disponible | No disponible en esta informacion | No disponible en esta informacion | Requiere verificación en fuentes primarias |
-| Otras implementaciones EfficientFormer en HuggingFace | No disponible en esta informacion | No disponible | No disponible en esta informacion | No disponible en esta informacion | Requiere verificación en fuentes primarias |
+| Otras implementaciones EfficientFormer en Hugging Face | No disponible en esta informacion | No disponible | No disponible en esta informacion | No disponible en esta informacion | Requiere verificación en fuentes primarias |
 
 Nota: la etiqueta "huge" de la model card no es comparable con las escalas publicadas de EfficientFormer, ya que el checkpoint real tiene 49.600 parámetros. Cualquier comparación de rendimiento requeriría primero entrenar el modelo con un split etiquetado y al menos tres semillas, tal como recomienda el propio autor.
 
@@ -95,7 +95,7 @@ Nota: la etiqueta "huge" de la model card no es comparable con las escalas publi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/origamijihoon/simple-classification
+- Repositorio en Hugging Face: https://huggingface.co/origamijihoon/simple-classification
 - Perfil del autor: https://huggingface.co/origamijihoon
 - Paper original de EfficientFormer (referencia de la arquitectura, no enlazado en la información proporcionada): no disponible en la información proporcionada
 - Repositorio oficial de EfficientFormer en GitHub: no disponible en la información proporcionada

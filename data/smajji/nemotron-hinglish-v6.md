@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nemotron Hinglish v6 es un modelo de reconocimiento automático del habla (ASR) especializado en inglés, hindi y hinglish (conmutación de código hindi-inglés), publicado por el usuario smajji en HuggingFace. Se trata de un ajuste fino (fine-tune) del modelo `nvidia/nemotron-3.5-asr-streaming-0.6b`, sobre el que conserva la arquitectura FastConformer-Transducer (RNNT) con streaming cache-aware, 24 capas, dimensión oculta de 1024 y aproximadamente 600 millones de parámetros. El modelo parte del checkpoint v5 de la misma serie y continúa el entrenamiento sobre el mismo corpus combinado con una planificación de learning rate de tipo coseno, lo que mejora la convergencia.
+Nemotron Hinglish v6 es un modelo de reconocimiento automático del habla (ASR) especializado en inglés, hindi y hinglish (conmutación de código hindi-inglés), publicado por el usuario smajji en Hugging Face. Se trata de un ajuste fino (fine-tune) del modelo `nvidia/nemotron-3.5-asr-streaming-0.6b`, sobre el que conserva la arquitectura FastConformer-Transducer (RNNT) con streaming cache-aware, 24 capas, dimensión oculta de 1024 y aproximadamente 600 millones de parámetros. El modelo parte del checkpoint v5 de la misma serie y continúa el entrenamiento sobre el mismo corpus combinado con una planificación de learning rate de tipo coseno, lo que mejora la convergencia.
 
 El problema que resuelve es concreto: la transcripción fiable de audio con mezcla de hindi e inglés, un fenómeno muy extendido en India (medios de comunicación, atención al cliente, podcasts y Conversaciones cotidianas) y que los modelos ASR monolingües o puramente multilingües tienden a resolver mal. La relevancia actual viene de su naturaleza streaming: admite tamaños de fragmento de 80, 160, 320, 560 y 1120 ms, lo que lo hace apto para subtitulado y asistentes en tiempo real, no solo para transcripción por lotes.
 
@@ -21,7 +21,7 @@ En la versión v6, según la model card, el WER en inglés baja del 4,2 % al 3,7
 | Licencia | Apache-2.0 |
 | Formato de pesos | no especificado en la model card; el repositorio ocupa 2,6 GB y la carga se realiza con `ASRModel.restore_from`, propio de NeMo |
 
-Datos adicionales: frecuencia de muestreo de 16 kHz mono, pipeline `automatic-speech-recognition`, librería NeMo, modelo base `nvidia/nemotron-3.5-asr-streaming-0.6b`, identificador `smajji/nemotron-hinglish-v6`, creado el 22 de septiembre de 2026 según los metadatos de HuggingFace.
+Datos adicionales: frecuencia de muestreo de 16 kHz mono, pipeline `automatic-speech-recognition`, librería NeMo, modelo base `nvidia/nemotron-3.5-asr-streaming-0.6b`, identificador `smajji/nemotron-hinglish-v6`, creado el 22 de septiembre de 2026 según los metadatos de Hugging Face.
 
 ## Arquitectura y entrenamiento
 
@@ -84,10 +84,10 @@ Las siguientes cifras son estimaciones derivadas del recuento de parámetros (~6
 
 | Modelo | Parametros | Contexto / streaming | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nemotron Hinglish v6 (este modelo) | ~600 M | Streaming cache-aware, fragmentos de 80-1120 ms | en, hi, hinglish | Apache-2.0 | HuggingFace, libreria NeMo |
-| nvidia/nemotron-3.5-asr-streaming-0.6b (modelo base) | ~600 M | Streaming cache-aware | Multilingue, 128 prompts de idioma | no disponible en la informacion proporcionada | HuggingFace, libreria NeMo |
-| Nemotron-Hinglish-v5 (misma serie) | ~600 M | Streaming cache-aware | en, hi, hinglish | Apache-2.0 (segun esta serie) | HuggingFace |
-| Alternativas genericas multilingues tipo Whisper large-v3 | ~1550 M | No streaming nativo (ventanas de 30 s) | Multilingue amplio, hindi incluido | MIT (segun el proyecto original) | HuggingFace, multiples runtimes |
+| Nemotron Hinglish v6 (este modelo) | ~600 M | Streaming cache-aware, fragmentos de 80-1120 ms | en, hi, hinglish | Apache-2.0 | Hugging Face, libreria NeMo |
+| nvidia/nemotron-3.5-asr-streaming-0.6b (modelo base) | ~600 M | Streaming cache-aware | Multilingue, 128 prompts de idioma | no disponible en la informacion proporcionada | Hugging Face, libreria NeMo |
+| Nemotron-Hinglish-v5 (misma serie) | ~600 M | Streaming cache-aware | en, hi, hinglish | Apache-2.0 (segun esta serie) | Hugging Face |
+| Alternativas genericas multilingues tipo Whisper large-v3 | ~1550 M | No streaming nativo (ventanas de 30 s) | Multilingue amplio, hindi incluido | MIT (segun el proyecto original) | Hugging Face, multiples runtimes |
 
 El dato diferencial de este modelo frente al base no es la arquitectura, idéntica, sino el ajuste específico sobre corpus hinglish y la corrección del "Devanagari latch". Frente a alternativas multilingües de propósito general, la ventaja esperable es la latencia en streaming y el comportamiento en code-switching; la desventaja, un WER en hinglish todavía elevado (27,3 %) y una cobertura de idiomas mucho más estrecha. No se dispone de comparaciones directas publicadas con modelos de terceros, por lo que esta tabla es descriptiva y no de rendimiento.
 
@@ -106,6 +106,6 @@ El dato diferencial de este modelo frente al base no es la arquitectura, idénti
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/smajji/nemotron-hinglish-v6
+- Modelo en Hugging Face: https://huggingface.co/smajji/nemotron-hinglish-v6
 - Modelo base: https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b
 - Las búsquedas web realizadas no devolvieron resultados relevantes sobre este modelo: los resultados obtenidos eran artículos en chino sobre gestión de datos personales de empleados, sin relación con el modelo. No se dispone por tanto de papers, blogs, repositorios ni demos adicionales que enlazar.

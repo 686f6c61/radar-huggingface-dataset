@@ -80,7 +80,7 @@ La comparativa se basa en características técnicas, no en benchmarks, ya que n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AMAImedia/NOESIS-Gemma3-4B-BF16
+- Hugging Face: https://huggingface.co/AMAImedia/NOESIS-Gemma3-4B-BF16
 - Colección de modelos NOESIS: https://huggingface.co/collections/AMAImedia/noesis-original-trained-models
 - Página de modelos de AMAImedia: https://huggingface.co/AMAImedia/models
 - Despliegue en FriendliAI: https://friendli.ai/models/AMAImedia/NOESIS-Gemma3-4B-BF16

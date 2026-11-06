@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `junghwannkim/mistral-7b-arc-sci-lora-09171258` aloja un modelo de generación de texto derivado de Mistral-7B, publicado por el usuario junghwannkim en HuggingFace. El nombre del identificador sugiere un ajuste fino mediante LoRA sobre el conjunto de datos ARC (AI2 Reasoning Challenge) en su variante de ciencias, aunque esta circunstancia no está confirmada en ninguna sección de la model card, que se limita a la plantilla automática de transformers sin contenido cumplimentado. El repositorio contiene 7.241.732.096 parámetros en formato safetensors, un tamaño de 14,5 GB que corresponde a pesos completos en precisión de 16 bits, no a un adaptador LoRA aislado.
+El repositorio `junghwannkim/mistral-7b-arc-sci-lora-09171258` aloja un modelo de generación de texto derivado de Mistral-7B, publicado por el usuario junghwannkim en Hugging Face. El nombre del identificador sugiere un ajuste fino mediante LoRA sobre el conjunto de datos ARC (AI2 Reasoning Challenge) en su variante de ciencias, aunque esta circunstancia no está confirmada en ninguna sección de la model card, que se limita a la plantilla automática de transformers sin contenido cumplimentado. El repositorio contiene 7.241.732.096 parámetros en formato safetensors, un tamaño de 14,5 GB que corresponde a pesos completos en precisión de 16 bits, no a un adaptador LoRA aislado.
 
 Se trata, por tanto, de un modelo de 7.240 millones de parámetros con arquitectura transformer decoder-only heredada de la familia Mistral, orientado a generación de texto y, probablemente, a responder preguntas de razonamiento científico de opción múltiple. Su relevancia actual es limitada: cuenta con cero descargas y cero likes, carece de licencia declarada, de idiomas declarados y de cualquier resultado de evaluación publicado, por lo que no debería considerarse un artefacto listo para producción sin una validación previa por parte del equipo que quiera adoptarlo.
 
@@ -29,7 +29,7 @@ La ficha que sigue se ha elaborado exclusivamente a partir de los metadatos del 
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura concreta ni sobre el procedimiento de entrenamiento. La model card es la plantilla genérica autogenerada por HuggingFace y todos los apartados relevantes (descripcion, fuentes, datos de entrenamiento, hiperparametros, regimen de precision, evaluacion, infraestructura de computo) aparecen como "[More Information Needed]". El unico dato estructural fiable es el recuento de parametros del fichero safetensors (7.241.732.096), coherente con el modelo base Mistral-7B, y el tamano del repositorio (14,5 GB), compatible con pesos en fp16 o bf16 sin cuantizar.
+No hay informacion publicada sobre la arquitectura concreta ni sobre el procedimiento de entrenamiento. La model card es la plantilla genérica autogenerada por Hugging Face y todos los apartados relevantes (descripcion, fuentes, datos de entrenamiento, hiperparametros, regimen de precision, evaluacion, infraestructura de computo) aparecen como "[More Information Needed]". El unico dato estructural fiable es el recuento de parametros del fichero safetensors (7.241.732.096), coherente con el modelo base Mistral-7B, y el tamano del repositorio (14,5 GB), compatible con pesos en fp16 o bf16 sin cuantizar.
 
 A partir del identificador `mistral-7b-arc-sci-lora-09171258` puede inferirse, sin confirmacion documental, que se trata de un ajuste fino con LoRA sobre Mistral-7B empleando el corpus ARC (AI2 Reasoning Challenge) en su subconjunto de ciencias, y que el sufijo numerico `09171258` corresponde a una marca temporal de la ejecucion. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF o DPO, ni sobre innovaciones tecnicas adicionales (atencion con ventana deslizante, decodificacion especulativa, atencion lineal). Cualquier afirmacion al respecto seria especulativa.
 
@@ -77,7 +77,7 @@ La tabla recoge modelos de la misma categoria (7B decoder-only) a efectos de con
 | junghwannkim/mistral-7b-arc-sci-lora-09171258 | 7.241.732.096 | No disponible | No disponible | Repositorio publico, 0 descargas | No |
 | Mistral-7B (base, Mistral AI) | 7.241.732.096 | Documentado por el fabricante, no verificado aqui | Apache 2.0 segun el fabricante | Ampliamente distribuido | Si, en la model card original |
 | Llama 2 7B (Meta) | 6.738.415.616 | Documentado por el fabricante, no verificado aqui | Licencia comunitaria Llama 2 | Ampliamente distribuido | Si, en la model card original |
-| Zephyr-7B-beta (HuggingFace H4) | 7.241.732.096 | Documentado por el fabricante, no verificado aqui | MIT segun el fabricante | Ampliamente distribuido | Si, en la model card original |
+| Zephyr-7B-beta (Hugging Face H4) | 7.241.732.096 | Documentado por el fabricante, no verificado aqui | MIT segun el fabricante | Ampliamente distribuido | Si, en la model card original |
 
 La diferencia practica mas relevante no es de arquitectura ni de tamano, sino de gobernanza: frente a las alternativas, este repositorio no declara licencia, no declara idiomas, no documenta el dataset de ajuste y no aporta ninguna evaluacion, lo que impide su adopcion en entornos con requisitos de cumplimiento.
 
@@ -95,7 +95,7 @@ La diferencia practica mas relevante no es de arquitectura ni de tamano, sino de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/junghwannkim/mistral-7b-arc-sci-lora-09171258
+- Repositorio en Hugging Face: https://huggingface.co/junghwannkim/mistral-7b-arc-sci-lora-09171258
 - Articulo referenciado en la plantilla de la model card (calculadora de impacto ambiental, Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico citada en la model card: https://mlco2.github.io/impact
 - No se han encontrado en la busqueda web enlaces adicionales relacionados con este modelo, su dataset o su procedimiento de entrenamiento.

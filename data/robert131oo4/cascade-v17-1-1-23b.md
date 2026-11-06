@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Cascade v17.1 (Cascade MoE Base 1.23B) es un checkpoint de investigación publicado por el usuario robert131OO4 en HuggingFace. Se trata de un modelo de tipo Mixture of Experts (MoE) orientado a series temporales, etiquetado con los tags `cascade`, `time-series` y `moe`, y distribuido bajo licencia MIT. El modelo se presenta como un checkpoint de evaluación local generado por una factoría de entrenamiento interna, con un calentamiento (warm-start) a partir de una inicialización aleatoria del modelo `cascade-moe-v2-120m-1.23b` con semilla 0.
+Cascade v17.1 (Cascade MoE Base 1.23B) es un checkpoint de investigación publicado por el usuario robert131OO4 en Hugging Face. Se trata de un modelo de tipo Mixture of Experts (MoE) orientado a series temporales, etiquetado con los tags `cascade`, `time-series` y `moe`, y distribuido bajo licencia MIT. El modelo se presenta como un checkpoint de evaluación local generado por una factoría de entrenamiento interna, con un calentamiento (warm-start) a partir de una inicialización aleatoria del modelo `cascade-moe-v2-120m-1.23b` con semilla 0.
 
 El entrenamiento se realizó durante 3 horas con el flag `--final`, lo que sugiere una ejecución de duración limitada orientada a validar el pipeline de entrenamiento más que a producir un modelo de producción. El repositorio incluye los pesos en formato safetensors, el estado del optimizador para reanudar entrenamiento, el código de carga e inferencia (`model.py`, `forecast_wrapper.py`) y un manifiesto de la factoría con metadatos del entrenamiento.
 
@@ -76,5 +76,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/robert131OO4/cascade-v17.1-1.23b
+- Hugging Face: https://huggingface.co/robert131OO4/cascade-v17.1-1.23b
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

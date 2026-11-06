@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`smirnov2006/efficientformer-baseline` es un prototipo de investigación publicado en HuggingFace que combina una arquitectura de tipo EfficientFormer (vision transformer eficiente) con un objetivo declarado de "generación". Lo publica el usuario `smirnov2006` y se distribuye bajo licencia MIT. No es un modelo entrenado ni evaluado: la model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo ("smoke tests"), no un modelo con pesos entrenados ni un resultado de benchmark.
+`smirnov2006/efficientformer-baseline` es un prototipo de investigación publicado en Hugging Face que combina una arquitectura de tipo EfficientFormer (vision transformer eficiente) con un objetivo declarado de "generación". Lo publica el usuario `smirnov2006` y se distribuye bajo licencia MIT. No es un modelo entrenado ni evaluado: la model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo ("smoke tests"), no un modelo con pesos entrenados ni un resultado de benchmark.
 
 El modelo se presenta como un punto de partida experimental con una configuración de arquitectura documentada (atención estándar, fusión "co attention", activación swish, normalización scalenorm) y una receta de experimento por defecto (optimizador SGD con un schedule de tipo step). No se aportan métricas de rendimiento, ni datos de entrenamiento, ni idiomas soportados.
 
@@ -47,7 +47,7 @@ En cuanto al entrenamiento, no hay evidencia de que se haya completado ninguno. 
 - Reproducción académica de baselines: usar la configuración documentada (SGD, schedule step) como referencia inicial, tal y como sugiere la propia model card, siempre que se entrene con los mismos datos, presupuesto de ajuste y semillas.
 - Validación de variantes de arquitectura: probar el efecto de "co attention", swish y scalenorm en un montaje experimental ligero antes de escalarlo a un modelo mayor.
 - Integración como stub en CI/CD: incorporar el modelo como sustituto de bajo coste en tests automatizados de un sistema mayor, con el fin de comprobar rutas de carga y contratos de interfaz sin consumir GPU.
-- Material didáctico: ilustrar la estructura de un repositorio de modelo en HuggingFace (config, training args, pesos y script ejecutable) en contextos de formación.
+- Material didáctico: ilustrar la estructura de un repositorio de modelo en Hugging Face (config, training args, pesos y script ejecutable) en contextos de formación.
 
 ## Benchmarks y rendimiento
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| smirnov2006/efficientformer-baseline | 49.600 | no disponible | sin benchmark publicado | MIT | HuggingFace (0 descargas, 0 likes) |
+| smirnov2006/efficientformer-baseline | 49.600 | no disponible | sin benchmark publicado | MIT | Hugging Face (0 descargas, 0 likes) |
 | Familia EfficientFormer original (Snap Research) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 | Alternativas comparables de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -87,5 +87,5 @@ No se dispone de datos de benchmarks de este repositorio ni de cifras verificada
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/smirnov2006/efficientformer-baseline
+- Hugging Face: https://huggingface.co/smirnov2006/efficientformer-baseline
 - No se han encontrado en la busqueda web otros enlaces relevantes (papers, blogs, repositorios o demos) asociados a este modelo.

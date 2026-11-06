@@ -88,7 +88,7 @@ La principal diferencia con la alternativa de Pilcothink es que esta cuantizaci√
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/muxiln/Qwen3.8-27B-int4-AutoRound
+- Modelo en Hugging Face: https://huggingface.co/muxiln/Qwen3.8-27B-int4-AutoRound
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio oficial de Qwen3.8-27B en GitHub: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Recetas vLLM para Qwen3.8-27B: https://recipes.vllm.ai/Qwen/Qwen3.8-27B

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`corona314/act-so101-ajedrez-dagger-v2` es una política de imitación para robótica basada en Action Chunking with Transformers (ACT), publicada por el usuario corona314 en HuggingFace Hub y entrenada con la librería LeRobot. El modelo resuelve una tarea concreta de manipulación robótica: jugar al ajedrez con un brazo `so_follower` (SO-101), tomando como entrada el estado articular de 6 dimensiones y dos cámaras (`ojos` y `cenital`) y emitiendo comandos de acción de 6 dimensiones.
+`corona314/act-so101-ajedrez-dagger-v2` es una política de imitación para robótica basada en Action Chunking with Transformers (ACT), publicada por el usuario corona314 en Hugging Face Hub y entrenada con la librería LeRobot. El modelo resuelve una tarea concreta de manipulación robótica: jugar al ajedrez con un brazo `so_follower` (SO-101), tomando como entrada el estado articular de 6 dimensiones y dos cámaras (`ojos` y `cenital`) y emitiendo comandos de acción de 6 dimensiones.
 
 La relevancia de esta ficha no está en el rendimiento generalista (no es un LLM), sino en ser un ejemplo práctico de política ACT entrenada mediante DAgger sobre un dataset propio de 147 episodios y 114.204 frames a 30 FPS. Con 51,7 millones de parámetros y un repo de 0,2 GB, es un modelo pequeño, desplegable en hardware modesto, pero de alcance muy restringido: una única tarea ("chess") en un único tipo de robot.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `corona314/act-so101-ajedrez-dagger-v2` | 51,7 M | no aplica | Ajedrez con SO-101 | apache-2.0 | HuggingFace Hub |
+| `corona314/act-so101-ajedrez-dagger-v2` | 51,7 M | no aplica | Ajedrez con SO-101 | apache-2.0 | Hugging Face Hub |
 | ACT original (paper 2304.13705) | no disponible | no aplica | Manipulación general | no disponible | Paper + código de referencia |
 | Diffusion Policy | no disponible | no aplica | Manipulación general | no disponible | Repos públicos |
 | VQ-BeT | no disponible | no aplica | Manipulación general | no disponible | Repos públicos |
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparables entre estas políticas en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/corona314/act-so101-ajedrez-dagger-v2
+- Modelo en Hugging Face: https://huggingface.co/corona314/act-so101-ajedrez-dagger-v2
 - Dataset de entrenamiento: https://huggingface.co/datasets/corona314/chess_mezcla_v2
 - Paper ACT: https://huggingface.co/papers/2304.13705
 - Guía ACT de LeRobot: https://huggingface.co/docs/lerobot/main/en/act

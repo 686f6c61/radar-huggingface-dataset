@@ -74,8 +74,8 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks gen
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| WitnessGym-Qwen3.8-27B-RL-broadcast-step20 | ~26,9 B | 32.768 (config. de evaluacion) | RL con GRPO sobre Qwen3.8-27B para WitnessBench | Apache 2.0 | HuggingFace, 33 descargas |
-| Qwen3.8-27B (base) | ~27 B | no disponible | Modelo base denso multimodal | Apache 2.0 | HuggingFace (Qwen/Qwen3.8-27B) |
+| WitnessGym-Qwen3.8-27B-RL-broadcast-step20 | ~26,9 B | 32.768 (config. de evaluacion) | RL con GRPO sobre Qwen3.8-27B para WitnessBench | Apache 2.0 | Hugging Face, 33 descargas |
+| Qwen3.8-27B (base) | ~27 B | no disponible | Modelo base denso multimodal | Apache 2.0 | Hugging Face (Qwen/Qwen3.8-27B) |
 | Alternativas RL para razonamiento interactivo | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks comparativos con otros modelos RL de la misma categoria en la informacion proporcionada. La comparacion directa disponible es unicamente frente al modelo base Qwen3.8-27B en los cuatro benchmarks de transferencia del paper.
@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos RL de la mis
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Guanghan-Ning/WitnessGym-Qwen3.8-27B-RL-broadcast-step20
+- Hugging Face: https://huggingface.co/Guanghan-Ning/WitnessGym-Qwen3.8-27B-RL-broadcast-step20
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Paper (arXiv): https://arxiv.org/abs/2609.32208
 - DOI: https://doi.org/10.48550/arXiv.2609.32208

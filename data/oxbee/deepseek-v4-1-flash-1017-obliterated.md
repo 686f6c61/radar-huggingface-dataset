@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-1017-obliterated es una versión del modelo DeepSeek-V4.1-Flash-1017 a la que se le ha aplicado una ablación de la dirección de rechazo (refusal-direction ablation) mediante la herramienta OBLITERATUS y el método failspy. El modelo base es un transformer de tipo mixture-of-experts (MoE) desarrollado por DeepSeek, y esta variante ha sido publicada por el usuario OxBee en HuggingFace. El objetivo declarado es eliminar la tendencia del modelo a rechazar peticiones, reduciendo la tasa de rechazo del 81,62% al 4,30% según la evaluación del propio autor.
+DeepSeek-V4.1-Flash-1017-obliterated es una versión del modelo DeepSeek-V4.1-Flash-1017 a la que se le ha aplicado una ablación de la dirección de rechazo (refusal-direction ablation) mediante la herramienta OBLITERATUS y el método failspy. El modelo base es un transformer de tipo mixture-of-experts (MoE) desarrollado por DeepSeek, y esta variante ha sido publicada por el usuario OxBee en Hugging Face. El objetivo declarado es eliminar la tendencia del modelo a rechazar peticiones, reduciendo la tasa de rechazo del 81,62% al 4,30% según la evaluación del propio autor.
 
 El modelo conserva la arquitectura y los pesos del original en BF16 safetensors, con 754.638.836.864 parámetros totales y un tamaño de repositorio de 1.509,4 GB. La licencia es MIT, lo que permite uso comercial, aunque las implicaciones éticas y legales de un modelo sin salvaguardas de rechazo son considerables. La relevancia actual radica en que ejemplifica la tendencia de las comunidades de "abliteration" a publicar variantes sin filtros de seguridad, lo que plantea debates sobre responsabilidad, despliegue y evaluación de riesgos en modelos de gran escala.
 
@@ -102,8 +102,8 @@ MMLU: la model card indica que se evaluaron 2.500 preguntas de 57 materias en ze
 
 | Modelo | Parametros totales | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash-1017-obliterated | 754.638.836.864 | no disponible | MIT | HuggingFace (237 descargas) | Variante ablacionada, tasa de rechazo 4% |
-| DeepSeek-V4.1-Flash-1017 (original) | no disponible en la información | no disponible | no disponible | HuggingFace | Modelo base, tasa de rechazo 81,62% |
+| DeepSeek-V4.1-Flash-1017-obliterated | 754.638.836.864 | no disponible | MIT | Hugging Face (237 descargas) | Variante ablacionada, tasa de rechazo 4% |
+| DeepSeek-V4.1-Flash-1017 (original) | no disponible en la información | no disponible | no disponible | Hugging Face | Modelo base, tasa de rechazo 81,62% |
 | Otras variantes abliterated de la familia DeepSeek | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparables en la información proporcionada |
 
 No se dispone de información suficiente para comparar con alternativas de la misma categoría (por ejemplo, otros MoE de gran escala o variantes abliterated de otros modelos) en parámetros, contexto y rendimiento. Los únicos datos comparativos disponibles son los del modelo original frente a la variante obliterated, presentados en la sección de benchmarks.
@@ -122,7 +122,7 @@ No se dispone de información suficiente para comparar con alternativas de la mi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OxBee/DeepSeek-V4.1-Flash-1017-obliterated
+- Hugging Face: https://huggingface.co/OxBee/DeepSeek-V4.1-Flash-1017-obliterated
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Herramienta OBLITERATUS: https://github.com/elder-plinius/OBLITERATUS
 - Detalles del método (failspy): https://huggingface.co/OxBee/DeepSeek-V4.1-Flash-1017-obliterated/blob/main/winner-recovery-provenance.json

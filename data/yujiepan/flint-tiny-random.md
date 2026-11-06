@@ -84,9 +84,9 @@ La comparacion relevante no es de calidad, sino de fidelidad estructural: frente
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yujiepan/flint-tiny-random
+- Modelo en Hugging Face: https://huggingface.co/yujiepan/flint-tiny-random
 - Modelo base: https://huggingface.co/RecursiveSI/flint
-- Perfil del autor en HuggingFace: https://huggingface.co/yujiepan
+- Perfil del autor en Hugging Face: https://huggingface.co/yujiepan
 - Otro tiny del mismo autor (DeepSeek): https://huggingface.co/yujiepan/deepseek-v4.1-flash-1017-tiny-random
 - Perfil del autor en GitHub: https://github.com/yujiepan-work
 - Cobertura periodistica del lanzamiento de Flint: https://tech.yahoo.com/ai/meta-ai/articles/recursive-launches-flint-laptop-coding-202741380.html

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-muaalem-model-v2 es un modelo de voz publicado por el usuario nour-world en HuggingFace, obtenido por ajuste fino (fine-tuning) de facebook/w2v-bert-2.0. Con 605.753.226 parametros (~606 M) y 2,4 GB de pesos en safetensors, no es un modelo generativo de texto: es un encoder de audio con una cabeza CTC multinivel (etiqueta `multi_level_ctc`) orientada a la prediccion simultanea de varios atributos articulatorios del arabe, en concreto los rasgos de recitacion coranica (tajwid) que aparecen en las metricas del autor: hams/jahr, shidda/rakhawa, tafkheem/taqeeq, itbaq, safeer, qalqla, tikraar, tafashie, istitala y ghonna, ademas de los propios fonemas.
+muaalem-model-v2 es un modelo de voz publicado por el usuario nour-world en Hugging Face, obtenido por ajuste fino (fine-tuning) de facebook/w2v-bert-2.0. Con 605.753.226 parametros (~606 M) y 2,4 GB de pesos en safetensors, no es un modelo generativo de texto: es un encoder de audio con una cabeza CTC multinivel (etiqueta `multi_level_ctc`) orientada a la prediccion simultanea de varios atributos articulatorios del arabe, en concreto los rasgos de recitacion coranica (tajwid) que aparecen en las metricas del autor: hams/jahr, shidda/rakhawa, tafkheem/taqeeq, itbaq, safeer, qalqla, tikraar, tafashie, istitala y ghonna, ademas de los propios fonemas.
 
 El modelo resuelve un problema muy especifico: la verificacion automatica de la pronunciacion y de las reglas de recitacion, una tarea para la que no existen muchos modelos publicos y que tradicionalmente se evalua de forma manual por profesores cualificados. Su relevancia actual es la de servir como componente base para herramientas de ensenanza, evaluacion y anotacion de corpus de recitacion, con licencia MIT y un tamano que cabe en cualquier GPU de consumo.
 
-Ahora bien, la informacion publicada es muy incompleta: la model card esta generada automaticamente por el Trainer, el campo de dataset aparece literalmente como "None", no se declaran idiomas ni pipeline en HuggingFace, no hay resultados en el `model-index` y el repositorio acumula 0 descargas y 0 likes, por lo que no existe validacion independiente por parte de la comunidad.
+Ahora bien, la informacion publicada es muy incompleta: la model card esta generada automaticamente por el Trainer, el campo de dataset aparece literalmente como "None", no se declaran idiomas ni pipeline en Hugging Face, no hay resultados en el `model-index` y el repositorio acumula 0 descargas y 0 likes, por lo que no existe validacion independiente por parte de la comunidad.
 
 ## Especificaciones tecnicas
 
@@ -100,8 +100,8 @@ La busqueda web realizada no devolvio ningun resultado relacionado con el modelo
 
 | Modelo | Parametros | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| nour-world/muaalem-model-v2 | 605.753.226 | Etiquetado multinivel de fonemas y atributos de tajwid | MIT | HuggingFace |
-| facebook/w2v-bert-2.0 | No disponible en la informacion proporcionada | Encoder de voz auto-supervisado (representaciones de audio) | No disponible en la informacion proporcionada | HuggingFace |
+| nour-world/muaalem-model-v2 | 605.753.226 | Etiquetado multinivel de fonemas y atributos de tajwid | MIT | Hugging Face |
+| facebook/w2v-bert-2.0 | No disponible en la informacion proporcionada | Encoder de voz auto-supervisado (representaciones de audio) | No disponible en la informacion proporcionada | Hugging Face |
 | Modelos comparables de la misma categoria | No disponible | No disponible | No disponible | No disponible |
 
 La unica comparacion defendible con los datos disponibles es con el propio modelo base: muaalem-model-v2 reutiliza el encoder de facebook/w2v-bert-2.0 y anade una cabeza CTC multinivel especifica para atributos de tajwid. No se dispone de cifras de parametros, licencia ni rendimiento del modelo base dentro de la informacion facilitada.
@@ -116,12 +116,12 @@ La unica comparacion defendible con los datos disponibles es con el propio model
 - Cobertura linguistica no declarada: el autor no indica idiomas soportados. No hay evidencia de que el modelo funcione fuera del arabe coranico ni de que gestione adecuadamente habla no recitada.
 - Restricciones de licencia: el modelo se publica bajo licencia MIT, que permite uso comercial, modificacion y redistribucion con atribucion. No obstante, el modelo base facebook/w2v-bert-2.0 puede tener sus propias condiciones, no verificadas en la informacion disponible, que conviene revisar antes de un despliegue comercial.
 - Ausencia de validacion comunitaria: 0 descargas y 0 likes en el momento de la consulta, sin issues ni discusiones publicas. No existe confirmacion independiente de que los pesos carguen correctamente ni de que reproduzcan las metricas declaradas.
-- Metadatos incompletos: no se declara pipeline en HuggingFace y las etiquetas no incluyen lista de idiomas, lo que complica el descubrimiento y el uso automatizado del modelo.
+- Metadatos incompletos: no se declara pipeline en Hugging Face y las etiquetas no incluyen lista de idiomas, lo que complica el descubrimiento y el uso automatizado del modelo.
 - Caveat de produccion: al no existir versiones cuantizadas oficiales ni benchmarks reproducibles, cualquier despliegue deberia ir precedido de una evaluacion propia sobre un conjunto de audio representativo del caso de uso real.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nour-world/muaalem-model-v2
+- Modelo en Hugging Face: https://huggingface.co/nour-world/muaalem-model-v2
 - Modelo base: https://huggingface.co/facebook/w2v-bert-2.0
 - Paper de W2V-BERT (arquitectura del modelo base): https://arxiv.org/abs/2108.06209
 - Paper de Seamless, que introduce W2v-BERT 2.0: https://arxiv.org/abs/2308.11596

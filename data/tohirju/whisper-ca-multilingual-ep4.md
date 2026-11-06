@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Tohirju/whisper-ca-multilingual-ep4 es un checkpoint alojado en HuggingFace cuya etiqueta principal es "whisper", lo que lo situa en la familia de modelos de reconocimiento automatico del habla (ASR) de tipo encoder-decoder transformer publicada originalmente por OpenAI. El nombre del repositorio sugiere un ajuste fino orientado a catalan ("ca") con capacidad multilingue y entrenado durante 4 epocas ("ep4"), aunque esta interpretacion procede unicamente de la nomenclatura del repositorio y no esta confirmada en los metadatos disponibles.
+Tohirju/whisper-ca-multilingual-ep4 es un checkpoint alojado en Hugging Face cuya etiqueta principal es "whisper", lo que lo situa en la familia de modelos de reconocimiento automatico del habla (ASR) de tipo encoder-decoder transformer publicada originalmente por OpenAI. El nombre del repositorio sugiere un ajuste fino orientado a catalan ("ca") con capacidad multilingue y entrenado durante 4 epocas ("ep4"), aunque esta interpretacion procede unicamente de la nomenclatura del repositorio y no esta confirmada en los metadatos disponibles.
 
 El dato tecnico mas solido es el recuento de parametros real extraido de los ficheros safetensors: 1.543.490.560 parametros, aproximadamente 1,54 mil millones. Esta cifra es coherente con la familia Whisper large (en torno a 1,55 mil millones de parametros), lo que situa al modelo en la gama alta de ASR y descarta que se trate de un modelo pequeno o de un "tiny/base/small" reentrenado. El repositorio ocupa 6,2 GB y contiene pesos en formato safetensors.
 
-La relevancia de esta ficha es limitada por la escasez de informacion publica: el repositorio tiene 0 descargas y 0 likes, esta en acceso restringido (gated, requiere aceptar condiciones en HuggingFace) y no se ha publicado ni pipeline declarado, ni idiomas, ni resultados de benchmarks. Para un desarrollador que evalue opciones de ASR en catalan o en entornos multilingues, este checkpoint debe considerarse no validado y su adopcion exigiria una evaluacion propia con datos representativos del dominio objetivo.
+La relevancia de esta ficha es limitada por la escasez de informacion publica: el repositorio tiene 0 descargas y 0 likes, esta en acceso restringido (gated, requiere aceptar condiciones en Hugging Face) y no se ha publicado ni pipeline declarado, ni idiomas, ni resultados de benchmarks. Para un desarrollador que evalue opciones de ASR en catalan o en entornos multilingues, este checkpoint debe considerarse no validado y su adopcion exigiria una evaluacion propia con datos representativos del dominio objetivo.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ La relevancia de esta ficha es limitada por la escasez de informacion publica: e
 | Longitud de contexto | no disponible; en la familia Whisper la entrada de audio se procesa en ventanas de 30 segundos |
 | Tipos de cuantizacion | no disponible en la informacion proporcionada; el repositorio solo declara safetensors |
 | Idiomas soportados | no disponible; el nombre del repositorio sugiere catalan ("ca") y caracter multilingue, sin confirmacion en los metadatos |
-| Licencia | other (acceso restringido: requiere aceptar condiciones en HuggingFace) |
+| Licencia | other (acceso restringido: requiere aceptar condiciones en Hugging Face) |
 | Formato de pesos | safetensors |
 | Tamano del repositorio | 6,2 GB |
 | Autor | Tohirju |
@@ -79,7 +79,7 @@ Los valores de los modelos alternativos corresponden a informacion publica de su
 
 | Modelo | Parametros | Contexto de audio | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Tohirju/whisper-ca-multilingual-ep4 | 1,54 mil millones | no disponible (familia Whisper: ventanas de 30 s) | no disponible | other, acceso restringido | gated en HuggingFace, 0 descargas |
+| Tohirju/whisper-ca-multilingual-ep4 | 1,54 mil millones | no disponible (familia Whisper: ventanas de 30 s) | no disponible | other, acceso restringido | gated en Hugging Face, 0 descargas |
 | openai/whisper-large-v3 | ~1,55 mil millones | ventanas de 30 s | multilingue (amplia cobertura) | permisiva (Apache-2.0 en su ficha) | publico, ampliamente adoptado |
 | openai/whisper-large-v2 | ~1,55 mil millones | ventanas de 30 s | multilingue | permisiva | publico, extensamente evaluado |
 | distil-whisper-large-v3 | ~0,76 mil millones | ventanas de 30 s | orientado a ingles | permisiva | publico, menor latencia |
@@ -100,7 +100,7 @@ De la comparacion se desprende que la ventaja diferencial de este checkpoint ser
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Tohirju/whisper-ca-multilingual-ep4
+- Hugging Face: https://huggingface.co/Tohirju/whisper-ca-multilingual-ep4
 - Repositorio de referencia de la familia Whisper (OpenAI): https://github.com/openai/whisper
 - Ficha del modelo base de referencia: https://huggingface.co/openai/whisper-large-v3
 - Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los unicos resultados obtenidos correspondian a un portal de empleo del Reino Unido (CV-Library) y no guardan relacion con el checkpoint. No se han localizado papers, blogs, demos ni repositorios adicionales asociados a Tohirju/whisper-ca-multilingual-ep4.

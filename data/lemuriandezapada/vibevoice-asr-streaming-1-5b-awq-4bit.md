@@ -66,8 +66,8 @@ No se dispone de información suficiente para realizar una comparativa directa c
 
 ## Enlaces
 
-- [HuggingFace - VibeVoice-ASR-Streaming-1.5B-AWQ-4bit](https://huggingface.co/lemuriandezapada/VibeVoice-ASR-Streaming-1.5B-AWQ-4bit)
-- [Modelo original en HuggingFace](https://huggingface.co/microsoft/VibeVoice-ASR-Streaming-1.5B)
+- [Hugging Face - VibeVoice-ASR-Streaming-1.5B-AWQ-4bit](https://huggingface.co/lemuriandezapada/VibeVoice-ASR-Streaming-1.5B-AWQ-4bit)
+- [Modelo original en Hugging Face](https://huggingface.co/microsoft/VibeVoice-ASR-Streaming-1.5B)
 - [Repositorio GitHub de Microsoft VibeVoice](https://github.com/microsoft/VibeVoice)
 - [Informe técnico en arXiv](https://arxiv.org/abs/2609.02812)
 - [Demo en vivo](https://aka.ms/vibeasr)

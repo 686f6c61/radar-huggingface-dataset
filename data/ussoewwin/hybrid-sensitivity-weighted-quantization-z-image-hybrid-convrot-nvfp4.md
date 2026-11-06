@@ -80,7 +80,7 @@ No se dispone de información sobre otros modelos cuantizados de Z-Image Turbo c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ussoewwin/Hybrid-Sensitivity-Weighted-Quantization-Z-Image-Hybrid-ConvRot-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/ussoewwin/Hybrid-Sensitivity-Weighted-Quantization-Z-Image-Hybrid-ConvRot-NVFP4
 - Repositorio GitHub del proyecto HSWQ: https://github.com/ussoewwin/Hybrid-Sensitivity-Weighted-Quantization
 - Guía de cuantización para Z-Image Hybrid NVFP4: https://github.com/ussoewwin/Hybrid-Sensitivity-Weighted-Quantization/blob/main/md/How%20to%20quantize%20Z%20Image%20-%20Hybrid%20NVFP4.md
 - Nodo de ComfyUI para cargar los modelos: https://github.com/ussoewwin/ComfyUI-HSWQ-Loader-and-Tools

@@ -85,7 +85,7 @@ La comparativa con el modelo original muestra la ventaja principal de esta conve
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mlboydaisuke/RTMPose-m-Animal-ExecuTorch
+- Modelo en Hugging Face: https://huggingface.co/mlboydaisuke/RTMPose-m-Animal-ExecuTorch
 - Repositorio de conversión (scripts): https://github.com/john-rocky/executorch-models
 - Proyecto MMPose (OpenMMLab): https://github.com/open-mmlab/mmpose
 - Proyecto RTMPose dentro de MMPose: https://github.com/open-mmlab/mmpose/tree/main/projects/rtmpose

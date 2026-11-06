@@ -2,7 +2,7 @@
 
 ## Resumen
 
-manytypes2e es una colección de checkpoints LoRA de rango 32 entrenados sobre el modelo abierto openai/gpt-oss-120b, publicada por el usuario latentMO en HuggingFace. No se trata de un modelo base nuevo ni de un ajuste fino destinado a producción, sino de un "model organism" (organismo modelo) generado en el contexto de un sprint MATS sobre controlabilidad de la cadena de razonamiento (chain-of-thought, CoT): el objetivo del entrenamiento era que el modelo siguiera instrucciones explícitas sobre cómo debía construir y exponer su propio rastro de razonamiento, incluyendo variantes de ofuscación, OPSD y "muchos tipos" de tareas.
+manytypes2e es una colección de checkpoints LoRA de rango 32 entrenados sobre el modelo abierto openai/gpt-oss-120b, publicada por el usuario latentMO en Hugging Face. No se trata de un modelo base nuevo ni de un ajuste fino destinado a producción, sino de un "model organism" (organismo modelo) generado en el contexto de un sprint MATS sobre controlabilidad de la cadena de razonamiento (chain-of-thought, CoT): el objetivo del entrenamiento era que el modelo siguiera instrucciones explícitas sobre cómo debía construir y exponer su propio rastro de razonamiento, incluyendo variantes de ofuscación, OPSD y "muchos tipos" de tareas.
 
 El artefacto publicado son adaptadores PEFT exportados desde checkpoints de muestreo de Tinker, con tres pasos concretos (step150, step160, step170). Cada carpeta incluye un fichero de procedencia que apunta al sampler original de Tinker y a las rutas de estado de entrenamiento, ya eliminadas del servicio. El repositorio ocupa 15,8 GB, coherente con adaptadores de rango 32 sobre un modelo base de 120 000 millones de parámetros.
 
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| manytypes2e (este) | LoRA rango 32 sobre 120B | no disponible | Adaptador de investigación (organismo modelo) | Apache 2.0 | HuggingFace, 0 descargas |
-| openai/gpt-oss-120b | 120B | no disponible | Modelo base abierto | no disponible en la informacion | HuggingFace |
+| manytypes2e (este) | LoRA rango 32 sobre 120B | no disponible | Adaptador de investigación (organismo modelo) | Apache 2.0 | Hugging Face, 0 descargas |
+| openai/gpt-oss-120b | 120B | no disponible | Modelo base abierto | no disponible en la informacion | Hugging Face |
 | Otros organismos modelo del mismo sprint MATS | no disponible | no disponible | Adaptadores LoRA | no disponible | Repositorio `johntrob14/tricky_little_guys` |
 
 No se dispone de datos de rendimiento ni de otros adaptadores comparables documentados en la información proporcionada.
@@ -82,6 +82,6 @@ No se dispone de datos de rendimiento ni de otros adaptadores comparables docume
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/latentMO/cotcontrol-gptoss120b-manytypes2e
+- Hugging Face: https://huggingface.co/latentMO/cotcontrol-gptoss120b-manytypes2e
 - Modelo base: https://huggingface.co/openai/gpt-oss-120b
 - Código, configuración y evaluaciones: https://github.com/johntrob14/tricky_little_guys (directorios `cot-control/rl/` y `cot-control/results/rl/manytypes2e/`, diario en `runs/`)

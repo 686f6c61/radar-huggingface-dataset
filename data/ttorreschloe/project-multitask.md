@@ -70,6 +70,6 @@ No se dispone de modelos comparables de la misma categoría (BEiT multitask con 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ttorreschloe/project-multitask
+- Hugging Face: https://huggingface.co/ttorreschloe/project-multitask
 - Repositorio del autor con otro modelo: https://huggingface.co/ttorreschloe/model_709747309_mocov3_nano
 - No se han encontrado papers, blogs o demos asociados en los resultados de búsqueda.

@@ -78,9 +78,9 @@ Nota: el autor indica que los resultados completos de benchmark pertenecen al pe
 
 | Modelo | Parametros | Contexto | Precision | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Imajev-4B-FP8-SM120 | 4,66 B | no disponible (techo de 65.536 tokens procesados en runtime) | FP8 E4M3 mixto con LoRA FP32/BF16 y readout FP32 | apache-2.0 | HuggingFace, repositorio de 6,2 GB |
-| Imajev-4B (mohit67890/imajev-4b) | no disponible | no disponible | BF16 con LoRA de rango 64 | no disponible | HuggingFace |
-| Qwen3.5-4B (Qwen/Qwen3.5-4B) | no disponible (backbone del modelo) | no disponible | BF16 | no disponible | HuggingFace |
+| Imajev-4B-FP8-SM120 | 4,66 B | no disponible (techo de 65.536 tokens procesados en runtime) | FP8 E4M3 mixto con LoRA FP32/BF16 y readout FP32 | apache-2.0 | Hugging Face, repositorio de 6,2 GB |
+| Imajev-4B (mohit67890/imajev-4b) | no disponible | no disponible | BF16 con LoRA de rango 64 | no disponible | Hugging Face |
+| Qwen3.5-4B (Qwen/Qwen3.5-4B) | no disponible (backbone del modelo) | no disponible | BF16 | no disponible | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos con alternativas de la misma categoria en la informacion proporcionada, mas alla de la comparacion interna entre los perfiles `sm120`, `reference` y las predicciones BF16 guardadas del mismo modelo.
 
@@ -101,8 +101,8 @@ No se dispone de datos de benchmarks comparativos con alternativas de la misma c
 
 ## Enlaces
 
-- HuggingFace (este modelo): https://huggingface.co/zenmagnets/Imajev-4B-FP8-SM120
-- Modelo base en HuggingFace: https://huggingface.co/mohit67890/imajev-4b
+- Hugging Face (este modelo): https://huggingface.co/zenmagnets/Imajev-4B-FP8-SM120
+- Modelo base en Hugging Face: https://huggingface.co/mohit67890/imajev-4b
 - Repositorio GitHub del proyecto Imajev: https://github.com/mohit67890/imajev
 - Especificacion de la API (playground-spec): https://github.com/mohit67890/imajev/blob/6ee8a2c555ca6a3d1de9eceb33f1bd1cfeb268a2/docs/playground-spec.md
 - Modelo base Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B

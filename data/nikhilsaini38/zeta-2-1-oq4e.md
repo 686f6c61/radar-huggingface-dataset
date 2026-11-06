@@ -65,5 +65,5 @@ No se dispone de información sobre el modelo base `zeta-2.1` ni de modelos comp
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/NikhilSaini38/zeta-2.1-oQ4e)
+- [Modelo en Hugging Face](https://huggingface.co/NikhilSaini38/zeta-2.1-oQ4e)
 - [Repositorio oMLX (oQ)](https://github.com/jundot/omlx)

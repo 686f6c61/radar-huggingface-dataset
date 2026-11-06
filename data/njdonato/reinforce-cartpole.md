@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Reinforce-cartpole es un agente de aprendizaje por refuerzo entrenado con el algoritmo REINFORCE (policy gradient con refuerzo de Monte Carlo) sobre el entorno CartPole-v1 de Gymnasium. Lo publica el usuario njdonato en HuggingFace como artefacto de un ejercicio del curso Deep Reinforcement Learning Class de HuggingFace, concretamente la unidad 4 dedicada a policy gradients. No es un modelo de lenguaje ni un transformer: es una politica neuronal que mapea el estado de cuatro dimensiones del cart y el poste a una distribucion de probabilidad sobre dos acciones discretas (empujar a izquierda o derecha).
+Reinforce-cartpole es un agente de aprendizaje por refuerzo entrenado con el algoritmo REINFORCE (policy gradient con refuerzo de Monte Carlo) sobre el entorno CartPole-v1 de Gymnasium. Lo publica el usuario njdonato en Hugging Face como artefacto de un ejercicio del curso Deep Reinforcement Learning Class de Hugging Face, concretamente la unidad 4 dedicada a policy gradients. No es un modelo de lenguaje ni un transformer: es una politica neuronal que mapea el estado de cuatro dimensiones del cart y el poste a una distribucion de probabilidad sobre dos acciones discretas (empujar a izquierda o derecha).
 
-El repositorio ocupa 0,0 GB y no incluye pesos visibles ni documentacion tecnica sobre la arquitectura de la red, el numero de parametros, la composicion del dataset de entrenamiento ni los hiperparametros usados. Se trata, por tanto, de un modelo de valor pedagogico y reproducible, no de un componente listo para produccion. Su interes actual reside en que sirve como referencia minima para verificar pipelines de entrenamiento por policy gradient, comparar curvas de recompensa y validar integraciones con la libreria `stable-baselines3` o entornos de evaluacion de HuggingFace.
+El repositorio ocupa 0,0 GB y no incluye pesos visibles ni documentacion tecnica sobre la arquitectura de la red, el numero de parametros, la composicion del dataset de entrenamiento ni los hiperparametros usados. Se trata, por tanto, de un modelo de valor pedagogico y reproducible, no de un componente listo para produccion. Su interes actual reside en que sirve como referencia minima para verificar pipelines de entrenamiento por policy gradient, comparar curvas de recompensa y validar integraciones con la libreria `stable-baselines3` o entornos de evaluacion de Hugging Face.
 
 La unica metrica declarada es una recompensa media de 367,20 con una desviacion estandar de 186,94 sobre CartPole-v1, marcada como no verificada. Esa variabilidad alta (mas de la mitad de la media) sugiere una politica con comportamiento inestable o una evaluacion con pocos episodios, lo que limita cualquier conclusion sobre su calidad real.
 
@@ -32,7 +32,7 @@ No se documenta ningun uso de RLHF, DPO, decodificacion especulativa ni tecnicas
 - Control de politica discreta en el entorno CartPole-v1: selecciona acciones de empuje izquierda o derecha a partir de observaciones continuas de cuatro dimensiones.
 - Aprendizaje por refuerzo con gradiente de politica: implementa el bucle REINFORCE completo, util como plantilla didactica.
 - Evaluacion episodica: puede medirse con la metrica `mean_reward` sobre el entorno estandar de Gymnasium.
-- Integracion con el ecosistema HuggingFace: el repositorio incluye `model-index` y tags compatibles con el curso Deep RL Class.
+- Integracion con el ecosistema Hugging Face: el repositorio incluye `model-index` y tags compatibles con el curso Deep RL Class.
 - No soporta tool calling, function calling, agentes multi-paso, razonamiento, generacion de texto, codigo, matematicas, vision ni audio.
 - No tiene capacidades multilingues: no procesa ni genera lenguaje.
 
@@ -85,7 +85,7 @@ No se dispone de datos publicados de los agentes alternativos en la informacion 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/njdonato/Reinforce-cartpole
+- Repositorio Hugging Face: https://huggingface.co/njdonato/Reinforce-cartpole
 - Curso Deep Reinforcement Learning, unidad 4 (policy gradients): https://huggingface.co/deep-rl-course/unit4/introduction
 - Documentacion de Gymnasium CartPole-v1: https://gymnasium.farama.org/environments/classic_control/cart_pole/
 - Documentacion de stable-baselines3: https://stable-baselines3.readthedocs.io/

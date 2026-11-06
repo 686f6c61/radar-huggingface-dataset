@@ -2,7 +2,7 @@
 
 ## Resumen
 
-qualiadev/microduck-hill-q6 es una política de control para el robot microduck, publicada en HuggingFace por el usuario qualiadev. No es un modelo de lenguaje ni un modelo generativo de propósito general: se trata de un gait (patrón de marcha) entrenado mediante aprendizaje por refuerzo, que se carga en una ranura de política del robot y se ejecuta de forma continua hasta que se le indique lo contrario. Trabaja con observaciones de 61 dimensiones y 14 acciones, a una frecuencia de control de 50 Hz (un paso cada 20 ms).
+qualiadev/microduck-hill-q6 es una política de control para el robot microduck, publicada en Hugging Face por el usuario qualiadev. No es un modelo de lenguaje ni un modelo generativo de propósito general: se trata de un gait (patrón de marcha) entrenado mediante aprendizaje por refuerzo, que se carga en una ranura de política del robot y se ejecuta de forma continua hasta que se le indique lo contrario. Trabaja con observaciones de 61 dimensiones y 14 acciones, a una frecuencia de control de 50 Hz (un paso cada 20 ms).
 
 El artefacto distribuido es un fichero ONNX (`policy.onnx`) con el normalizador de observaciones integrado, acompañado de un `manifest.json` conforme al esquema 2 del manifiesto de políticas de microduck. La model card indica que el entrenamiento se realizó en el repositorio `pollen-robotics/microduck_rl`, rama `sprint/race`, commit `0141bf4a8`, pero no detalla la arquitectura de red, el número de parámetros, la composición del dataset ni resultados de evaluación.
 
@@ -70,7 +70,7 @@ No se dispone de información sobre políticas comparables en la documentación 
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qualiadev/microduck-hill-q6 | no disponible | no aplica | no disponible | no disponible | pública en HuggingFace, 0 descargas |
+| qualiadev/microduck-hill-q6 | no disponible | no aplica | no disponible | no disponible | pública en Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -88,7 +88,7 @@ No se dispone de información sobre políticas comparables en la documentación 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qualiadev/microduck-hill-q6
+- Modelo en Hugging Face: https://huggingface.co/qualiadev/microduck-hill-q6
 - Repositorio del robot microduck (citado en la model card): https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento (citado como `pollen-robotics/microduck_rl`, rama `sprint/race`, commit `0141bf4a8`): https://github.com/pollen-robotics/microduck_rl
 - Documentación del manifiesto de políticas (`docs/policy-manifest.md` en el repositorio del daemon): no disponible la URL exacta

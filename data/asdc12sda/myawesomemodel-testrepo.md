@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio alojado en HuggingFace por el usuario ASDC12SDA cuyo contenido resulta, a fecha de la informacion disponible, contradictorio y escasamente verificable. Los metadatos de la plataforma lo describen como un modelo basado en BERT, orientado a la tarea de `feature-extraction`, con licencia MIT y libreria `transformers` sobre PyTorch. Sin embargo, el tamano declarado del repositorio es de 0,0 GB, lo que sugiere que no contiene pesos ni ficheros de configuracion sustanciales, y el modelo no registra descargas ni "likes".
+MyAwesomeModel-TestRepo es un repositorio alojado en Hugging Face por el usuario ASDC12SDA cuyo contenido resulta, a fecha de la informacion disponible, contradictorio y escasamente verificable. Los metadatos de la plataforma lo describen como un modelo basado en BERT, orientado a la tarea de `feature-extraction`, con licencia MIT y libreria `transformers` sobre PyTorch. Sin embargo, el tamano declarado del repositorio es de 0,0 GB, lo que sugiere que no contiene pesos ni ficheros de configuracion sustanciales, y el modelo no registra descargas ni "likes".
 
 La model card adjunta no aporta informacion tecnica real: se trata de una plantilla generica ("MyAwesomeModel") con marcadores de posicion (`Model1`, `Model2`, `Model1-v2`), referencias a figuras inexistentes y afirmaciones de rendimiento sin trazabilidad. Menciona mejoras en razonamiento, un supuesto incremento de precision en AIME 2025 del 70 % al 87,5 % y un aumento del uso de tokens por pregunta de 12K a 23K, ademas de recomendaciones de uso (temperatura 0,6, system prompt, plantillas para busqueda web y subida de ficheros). Ninguno de estos datos puede contrastarse.
 
@@ -23,7 +23,7 @@ Por tanto, esta ficha debe leerse como una evaluacion de un artefacto de prueba 
 
 ## Arquitectura y entrenamiento
 
-Segun los tags de HuggingFace, el modelo corresponderia a una arquitectura BERT y a la tarea de extraccion de caracteristicas (`feature-extraction`), lo que apuntaria a un encoder Transformer bidireccional usado para generar embeddings, no a un modelo generativo. No se dispone de informacion sobre numero de capas, dimensiones ocultas, cabezas de atencion, tokenizador ni vocabulario.
+Segun los tags de Hugging Face, el modelo corresponderia a una arquitectura BERT y a la tarea de extraccion de caracteristicas (`feature-extraction`), lo que apuntaria a un encoder Transformer bidireccional usado para generar embeddings, no a un modelo generativo. No se dispone de informacion sobre numero de capas, dimensiones ocultas, cabezas de atencion, tokenizador ni vocabulario.
 
 No hay datos sobre el corpus de entrenamiento, el numero de tokens procesados, la composicion del dataset ni la existencia de fases de ajuste como RLHF, DPO o SFT. Las afirmaciones de la model card sobre "mecanismos de optimizacion algoritmica durante el post-entrenamiento" y mejoras en profundidad de razonamiento no van acompanadas de detalle tecnico alguno y contradicen la naturaleza de encoder que sugieren los metadatos. No se puede confirmar ninguna innovacion arquitectonica.
 
@@ -109,6 +109,6 @@ Esta tabla es meramente orientativa sobre la categoria; no implica equivalencia 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ASDC12SDA/MyAwesomeModel-TestRepo
+- Hugging Face: https://huggingface.co/ASDC12SDA/MyAwesomeModel-TestRepo
 - No se han encontrado papers, repositorios, blogs ni demos asociados al modelo en la busqueda web realizada.
 - Los resultados de la busqueda web proporcionada corresponden exclusivamente a marcadores de la MLB (ESPN, MLB.com, CBS Sports, Baseball-Reference) y no guardan ninguna relacion con el modelo, por lo que se descartan como fuentes.

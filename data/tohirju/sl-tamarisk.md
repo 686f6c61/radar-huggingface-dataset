@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Tohirju/sl-tamarisk` es un modelo de lenguaje de texto publicado en HuggingFace por el usuario Tohirju. Según la información disponible, el repositorio contiene pesos en formato safetensors con un total de 8.953.803.264 parámetros (aproximadamente 8,95 mil millones), lo que lo sitúa en la categoría de modelos de tamaño medio. El tag `qwen3_5_text` sugiere una posible relación con la familia de arquitecturas Qwen 3.5, aunque no se ha confirmado oficialmente.
+El modelo `Tohirju/sl-tamarisk` es un modelo de lenguaje de texto publicado en Hugging Face por el usuario Tohirju. Según la información disponible, el repositorio contiene pesos en formato safetensors con un total de 8.953.803.264 parámetros (aproximadamente 8,95 mil millones), lo que lo sitúa en la categoría de modelos de tamaño medio. El tag `qwen3_5_text` sugiere una posible relación con la familia de arquitecturas Qwen 3.5, aunque no se ha confirmado oficialmente.
 
 El modelo fue creado el 16 de agosto de 2026 y tiene acceso restringido (gated), lo que implica que los usuarios deben aceptar condiciones específicas antes de poder descargarlo. No se han registrado descargas ni valoraciones en el momento de la consulta, lo que indica que es un modelo muy reciente o poco difundido. La licencia se indica como "other", por lo que las condiciones de uso comercial no están claras sin revisar los términos exactos.
 
@@ -45,7 +45,7 @@ Dado que el modelo tiene aproximadamente 8,95 mil millones de parámetros y el t
 - NVIDIA RTX 4090 (24 GB) con cuantización
 - NVIDIA L40S (48 GB)
 
-Con cuantización a 8 bits (int8) se podría reducir el requisito a aproximadamente 9 GB de VRAM, lo que permitiría su uso en GPUs de consumo como RTX 3080/3090 o RTX 4070. Sin embargo, no se han publicado archivos de cuantización en el repositorio. Para despliegue, se podrían utilizar frameworks como vLLM, llama.cpp o HuggingFace Transformers, aunque no hay confirmación de compatibilidad.
+Con cuantización a 8 bits (int8) se podría reducir el requisito a aproximadamente 9 GB de VRAM, lo que permitiría su uso en GPUs de consumo como RTX 3080/3090 o RTX 4070. Sin embargo, no se han publicado archivos de cuantización en el repositorio. Para despliegue, se podrían utilizar frameworks como vLLM, llama.cpp o Hugging Face Transformers, aunque no hay confirmación de compatibilidad.
 
 ## Comparativa con modelos similares
 
@@ -61,4 +61,4 @@ No disponible. No se ha proporcionado información sobre modelos comparables en 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [https://huggingface.co/Tohirju/sl-tamarisk](https://huggingface.co/Tohirju/sl-tamarisk)
+- Repositorio en Hugging Face: [https://huggingface.co/Tohirju/sl-tamarisk](https://huggingface.co/Tohirju/sl-tamarisk)

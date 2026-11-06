@@ -89,7 +89,7 @@ El modelo cuantizado de Aria Compute ofrece una ventaja de compresion frente a l
 
 ## Enlaces
 
-- [HuggingFace - ariacompute/qwen3-1.7b_q4](https://huggingface.co/ariacompute/qwen3-1.7b_q4)
+- [Hugging Face - ariacompute/qwen3-1.7b_q4](https://huggingface.co/ariacompute/qwen3-1.7b_q4)
 - [Hugging Face - Qwen/Qwen3-1.7B (modelo base)](https://huggingface.co/Qwen/Qwen3-1.7B)
 - [Repositorio oficial Qwen3](https://github.com/QwenLM/Qwen3)
 - [Aria Compute (dashboard y runtime)](https://ariacompute.com)

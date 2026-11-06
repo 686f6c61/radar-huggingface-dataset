@@ -65,4 +65,4 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- [HuggingFace: OP12138/qwen3-1.7b-opsd-frozent](https://huggingface.co/OP12138/qwen3-1.7b-opsd-frozent)
+- [Hugging Face: OP12138/qwen3-1.7b-opsd-frozent](https://huggingface.co/OP12138/qwen3-1.7b-opsd-frozent)

@@ -68,6 +68,6 @@ No disponible. No se dispone de información sobre modelos comparables de la mis
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Luigi/minicpm5-1b-cursor-experiments
+- Repositorio Hugging Face: https://huggingface.co/Luigi/minicpm5-1b-cursor-experiments
 - Modelo publicado (referencia): https://huggingface.co/Luigi/minicpm5-1b-cursor (mencionado en la model card, no verificado)
 - Verifier publicado (referencia): https://huggingface.co/Luigi/granite-4.0-350m-verifier (mencionado en la model card, no verificado)

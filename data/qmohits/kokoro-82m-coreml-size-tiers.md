@@ -128,7 +128,7 @@ La comparación relevante es con el modelo base: el derivado pierde el frontend 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/qmohits/kokoro-82m-coreml-size-tiers
+- Repositorio en Hugging Face: https://huggingface.co/qmohits/kokoro-82m-coreml-size-tiers
 - Modelo base Kokoro-82M: https://huggingface.co/hexgrad/Kokoro-82M
 - Repositorio GitHub con el harness Swift: https://github.com/qmohitsingh/kokoro-82m-coreml-size-tiers
 - Revisión del modelo base utilizada: `f3ff3571791e39611d31c381e3a41a

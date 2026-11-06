@@ -4,7 +4,7 @@
 
 El modelo Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V7-GGUF es una variante del Qwen3.6 de 35 mil millones de parámetros con arquitectura de mezcla de expertos (MoE) y solo 3 mil millones de parámetros activos por token. Ha sido desarrollado por LuffyTheFox sobre la base HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive, aplicando la técnica propietaria Genesis, un algoritmo de regeneración y calibración de datos post-entrenamiento para LLMs en formato GGUF que repara numéricamente tensores corruptos y reduce el ruido interno del modelo. El resultado es un modelo que, según su autor, mejora la claridad del habla, el seguimiento de instrucciones y la retención de contexto.
 
-La variante Hermes V7 incorpora el dataset NousResearch/hermes-function-calling-v1, lo que le confiere capacidades de llamada a funciones y orientación agéntica. Se distribuye exclusivamente en formato GGUF, pensado para inferencia local con runtimes como llama.cpp u Ollama. Es un modelo multimodal (image-text-to-text), sin censura, y soporta múltiples idiomas, principalmente inglés y chino. Con más de 615.000 descargas y 486 likes en HuggingFace, se ha convertido en una opción popular para usuarios que buscan un modelo local potente, sin restricciones y con capacidades de agente.
+La variante Hermes V7 incorpora el dataset NousResearch/hermes-function-calling-v1, lo que le confiere capacidades de llamada a funciones y orientación agéntica. Se distribuye exclusivamente en formato GGUF, pensado para inferencia local con runtimes como llama.cpp u Ollama. Es un modelo multimodal (image-text-to-text), sin censura, y soporta múltiples idiomas, principalmente inglés y chino. Con más de 615.000 descargas y 486 likes en Hugging Face, se ha convertido en una opción popular para usuarios que buscan un modelo local potente, sin restricciones y con capacidades de agente.
 
 ## Especificaciones técnicas
 
@@ -15,8 +15,8 @@ La variante Hermes V7 incorpora el dataset NousResearch/hermes-function-calling-
 | Parametros activos | 3 mil millones (A3B) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | GGUF (varias cuantizaciones, no especificadas en la ficha) |
-| Idiomas soportados | inglés, chino, multilingüe (según tags; el campo de HuggingFace indica "no disponibles") |
-| Licencia | Apache 2.0 (según tags; el campo de licencia en HuggingFace indica "no disponible") |
+| Idiomas soportados | inglés, chino, multilingüe (según tags; el campo de Hugging Face indica "no disponibles") |
+| Licencia | Apache 2.0 (según tags; el campo de licencia en Hugging Face indica "no disponible") |
 | Formato de pesos | GGUF |
 
 ## Arquitectura y entrenamiento
@@ -73,15 +73,15 @@ La comparativa directa con el Qwen3.6 base muestra que esta variante añade la r
 - Naturaleza sin censura: el modelo no aplica filtros de contenido, por lo que puede generar texto ofensivo, sexualmente explícito, violento o ilegal. No es adecuado para aplicaciones comerciales orientadas al público general sin una capa de moderación externa.
 - Riesgo de alucinación: al ser un modelo reparado y fine-tuneado, no hay garantías de veracidad factual. Puede inventar datos, citas o referencias con alta confianza.
 - Longitud de contexto no documentada: no se ha especificado la ventana de contexto máxima, lo que dificulta planificar su uso en tareas que requieran documentos largos.
-- Licencia ambigua: aunque los tags indican Apache 2.0, el campo de licencia en HuggingFace aparece como "no disponible". Se recomienda verificar la licencia del modelo base original antes de un uso comercial.
+- Licencia ambigua: aunque los tags indican Apache 2.0, el campo de licencia en Hugging Face aparece como "no disponible". Se recomienda verificar la licencia del modelo base original antes de un uso comercial.
 - Calidad no verificada: la técnica Genesis es propietaria y no ha sido validada por la comunidad académica. Las mejoras declaradas son subjetivas y no están respaldadas por benchmarks públicos.
 - Dependencia del modelo base: al derivar de una variante "aggressive" sin censura, puede heredar sesgos o comportamientos indeseables del modelo original.
 - Formato GGUF limitado: al distribuirse solo en GGUF, no es directamente utilizable con frameworks como vLLM o TensorRT-LLM sin conversión previa, lo que limita su despliegue en entornos de producción de alto rendimiento.
 
 ## Enlaces
 
-- [HuggingFace: LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V7-GGUF](https://huggingface.co/LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V7-GGUF)
-- [HuggingFace: LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-GGUF](https://huggingface.co/LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-GGUF)
+- [Hugging Face: LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V7-GGUF](https://huggingface.co/LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V7-GGUF)
+- [Hugging Face: LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-GGUF](https://huggingface.co/LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-GGUF)
 - [Ficha en aiany.app de la versión V5](https://aiany.app/item/luffythefox-qwen3-6-35b-a3b-uncensored-genesis-hermes-v5-gguf)
 - [Espejo en ai.atomgit.com de la versión V6](https://ai.atomgit.com/hf_mirrors/LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V6-GGUF)
 - [Ficha en aimodels.fyi de la variante Claude-Genesis](https://www.aimodels.fyi/models/huggingFace/qwen3.6-35b-a3b-uncensored-claude-genesis-gguf-luffythefox)

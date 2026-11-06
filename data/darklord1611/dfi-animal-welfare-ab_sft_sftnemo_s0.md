@@ -94,7 +94,7 @@ Nota: los datos de `Qwen3-30B-A3B` provienen de su model card publica y no se ha
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/darklord1611/dfi-animal-welfare-ab_sft_sftnemo_s0
+- Modelo en Hugging Face: https://huggingface.co/darklord1611/dfi-animal-welfare-ab_sft_sftnemo_s0
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16
 - Libreria PEFT (documentacion y repositorio): https://github.com/huggingface/peft
 - Plataforma Tinker, citada en la model card como entorno de entrenamiento: https://thinkingmachines.ai/tinker/ (URL no verificada en la informacion proporcionada)

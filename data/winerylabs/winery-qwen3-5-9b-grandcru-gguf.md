@@ -94,7 +94,7 @@ No se dispone en la información proporcionada de datos comparativos frente a ot
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WineryLabs/Winery-Qwen3.5-9B-GrandCru-GGUF
+- Modelo en Hugging Face: https://huggingface.co/WineryLabs/Winery-Qwen3.5-9B-GrandCru-GGUF
 - Perfil de WineryLabs: https://huggingface.co/WineryLabs/models
 - Winery fusion compiler: https://zo.pub/zandy/winery
 - Modelo base Qwen/Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B

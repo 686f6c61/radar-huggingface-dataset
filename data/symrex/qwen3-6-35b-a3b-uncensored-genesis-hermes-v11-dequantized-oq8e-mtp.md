@@ -77,7 +77,7 @@ La variante de symrex se distingue por su formato MLX cuantizado, que la hace es
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/symrex/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V11-dequantized-oQ8e-mtp
+- Repositorio Hugging Face: https://huggingface.co/symrex/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V11-dequantized-oQ8e-mtp
 - Herramienta de cuantizacion oQ: https://github.com/jundot/omlx
 - Guia de Qwen 3.6 (insiderllm): https://insiderllm.com/guides/qwen-3-6-local-ai-guide/
 - Articulo sobre Qwen3.6-35B-A3B Uncensored (hackernoon): https://hackernoon.com/qwen36-35b-a3b-uncensored-a-35b-moe-model-with-262k-context

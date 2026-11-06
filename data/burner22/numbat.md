@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`burner22/numbat` es un checkpoint de pesos publicado en HuggingFace por el usuario `burner22`. Segun la model card, se trata de un modelo de ~15 billones de parametros (15T), 114 capas, con arquitectura hibrida de Gated DeltaNet (GDN) y Multi-head Latent Attention (MLA), capas de mezcla de expertos (1.224 expertos, top-48 + 1 compartido) y prediccion multi-token (MTP). El checkpoint esta almacenado en formato NVFP4 y distribuido en 842 shards de safetensors que, segun el indice, suman 8.416.101.444.920 bytes (~8,42 TB).
+`burner22/numbat` es un checkpoint de pesos publicado en Hugging Face por el usuario `burner22`. Segun la model card, se trata de un modelo de ~15 billones de parametros (15T), 114 capas, con arquitectura hibrida de Gated DeltaNet (GDN) y Multi-head Latent Attention (MLA), capas de mezcla de expertos (1.224 expertos, top-48 + 1 compartido) y prediccion multi-token (MTP). El checkpoint esta almacenado en formato NVFP4 y distribuido en 842 shards de safetensors que, segun el indice, suman 8.416.101.444.920 bytes (~8,42 TB).
 
 El autor afirma que se trata de una copia de evaluacion extraida a mitad de preentrenamiento (paso 1.830.000 de ~1,96M) de una supuesta ejecucion de entrenamiento interna de Anthropic con nombre en clave `numbat`. Esta atribucion no es verificable con la informacion disponible: la unica "evidencia" citada es una filtracion de codigo fuente de Claude Code de marzo de 2026, y el propio autor declina explicar como obtuvo los pesos. No hay resultados de evaluacion publicados, ni licencia, ni pipeline declarado, y el repositorio acumula 0 descargas y 0 likes.
 
@@ -22,7 +22,7 @@ La relevancia practica del artefacto es, por tanto, limitada y fundamentalmente 
 | Formato de pesos | safetensors, 842 shards de menos de 10,6 GB cada uno; `model.safetensors.index.json` con `total_size` = 8.416.101.444.920 bytes |
 | Capas | 114 |
 | Tokenizer | BPE byte-level, 131.072 tokens |
-| Tamano del repo en HuggingFace | 101,0 GB en el momento de la consulta (no coincide con los ~8,42 TB declarados: solo estaria subida una fraccion de los shards) |
+| Tamano del repo en Hugging Face | 101,0 GB en el momento de la consulta (no coincide con los ~8,42 TB declarados: solo estaria subida una fraccion de los shards) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -70,8 +70,8 @@ No existe una categoria publica directamente comparable: no hay modelos abiertos
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | numbat (burner22) | ~15T (declarado) | no disponible | no disponible | no disponible | Repositorio incompleto (101 GB de ~8,42 TB), 0 descargas |
-| DeepSeek-V3 | 671B | 37B | 128K | MIT | Pesos abiertos en HuggingFace |
-| Qwen3-235B-A22B | 235B | 22B | 128K (extensible) | Apache 2.0 | Pesos abiertos en HuggingFace |
+| DeepSeek-V3 | 671B | 37B | 128K | MIT | Pesos abiertos en Hugging Face |
+| Qwen3-235B-A22B | 235B | 22B | 128K (extensible) | Apache 2.0 | Pesos abiertos en Hugging Face |
 | Llama 4 Maverick | 400B | 17B | hasta 1M (declarado) | Llama 4 Community License | Pesos abiertos con aceptacion de licencia |
 
 La diferencia de escala es de mas de un orden de magnitud, y la de madurez es mayor: los tres modelos de referencia cuentan con post-entrenamiento, evaluaciones publicadas y licencias explicitas, mientras que `numbat` no ofrece ninguna de las tres cosas.
@@ -92,7 +92,7 @@ La diferencia de escala es de mas de un orden de magnitud, y la de madurez es ma
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/burner22/numbat
+- Repositorio en Hugging Face: https://huggingface.co/burner22/numbat
 - Implementacion de referencia: `modeling_numbat.py` y `configuration_numbat.py` dentro del repositorio
 - Configuracion: `config.json` (`NumbatConfig`) e indice de tensores `model.safetensors.index.json`
 - Metadatos del checkpoint: `ckpt_metadata.json` (ruta de checkpoint y salida del harness de evaluacion)

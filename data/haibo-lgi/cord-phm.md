@@ -93,15 +93,15 @@ No disponible. En la informacion proporcionada no se identifican checkpoints pub
 - Validacion comunitaria nula: 0 descargas y 1 *like* en el momento de la consulta, con un unico checkpoint publicado y sin variantes cuantizadas ni versiones reducidas.
 - Riesgo de alucinacion: no aplica en el sentido generativo, pero si existe riesgo de extrapolacion silenciosa. Como cualquier encoder de representacion, puede producir embeddings con apariencia valida para regimenes de operacion fuera de la distribucion de los 19 datasets fuente, sin senalizacion explicita de incertidumbre.
 - Sesgos de datos: el comportamiento del encoder hereda la composicion de los 19 datasets fuente. No se detalla en la informacion disponible la distribucion de regimenes de carga, condiciones ambientales, velocidades de muestreo ni fabricantes, por lo que no puede evaluarse el sesgo de dominio.
-- Dependencia de codigo externo: la carga del modelo requiere la clase `JointModel` definida en `joint_model.py` y los ficheros de configuracion del proyecto, no incluidos de forma evidente en el repositorio de HuggingFace. La verificacion recomendada es `python example_load.py` con entradas sinteticas.
+- Dependencia de codigo externo: la carga del modelo requiere la clase `JointModel` definida en `joint_model.py` y los ficheros de configuracion del proyecto, no incluidos de forma evidente en el repositorio de Hugging Face. La verificacion recomendada es `python example_load.py` con entradas sinteticas.
 - Riesgo de integridad: la model card publica un SHA256 (`09422359745CF47C69D94A241D92B9018A940A9DCBCC7804A3D08C86A2485103`) que conviene verificar antes de cargar el checkpoint en un entorno de produccion.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/haibo-lgi/CORD-PHM
+- Modelo en Hugging Face: https://huggingface.co/haibo-lgi/CORD-PHM
 - Paper en arXiv: https://arxiv.org/abs/2609.39784
 - DOI: https://doi.org/10.48550/arXiv.2609.39784
 - Codigo de entrenamiento y evaluacion: https://github.com/HelpLee/CORD-PHM
-- Perfil de autor en HuggingFace: https://huggingface.co/haibo-lgi
+- Perfil de autor en Hugging Face: https://huggingface.co/haibo-lgi
 
-Nota sobre los resultados de busqueda web: las entradas recuperadas (sitio corporativo haibo.ai, listado general de modelos de HuggingFace, perfil de Google Scholar de un investigador homonimo y una revision sobre LLM aplicados a PHM en Springer) no aportan informacion adicional verificable sobre este checkpoint concreto y no se han utilizado como fuente de datos tecnicos.
+Nota sobre los resultados de busqueda web: las entradas recuperadas (sitio corporativo haibo.ai, listado general de modelos de Hugging Face, perfil de Google Scholar de un investigador homonimo y una revision sobre LLM aplicados a PHM en Springer) no aportan informacion adicional verificable sobre este checkpoint concreto y no se han utilizado como fuente de datos tecnicos.

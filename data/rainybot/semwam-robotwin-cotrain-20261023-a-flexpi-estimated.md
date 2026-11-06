@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SemWAM-RoboTwin-CoTrain-20261023-A-flexpi-estimated es un checkpoint de investigación publicado por el usuario RainyBot en HuggingFace, orientado a robótica y manipulación visual. El modelo se presenta como un sistema multimodal de tipo "world-action model" (SemWAM) entrenado sobre el simulador RoboTwin, con un diseño que combina un DiT de vídeo (world model) de 30 capas y un DiT de acción separado de 30 capas, ambos con atención causal y condicionamiento por profundidad estimada y características semánticas.
+SemWAM-RoboTwin-CoTrain-20261023-A-flexpi-estimated es un checkpoint de investigación publicado por el usuario RainyBot en Hugging Face, orientado a robótica y manipulación visual. El modelo se presenta como un sistema multimodal de tipo "world-action model" (SemWAM) entrenado sobre el simulador RoboTwin, con un diseño que combina un DiT de vídeo (world model) de 30 capas y un DiT de acción separado de 30 capas, ambos con atención causal y condicionamiento por profundidad estimada y características semánticas.
 
 La arquitectura declarada en la model card es `rgb_dep_sem`: procesa RGB, profundidad (representada como pointmap) y features semánticas extraídas de un backbone DINOv3 ViT-B/16. La dimensión oculta del DiT de vídeo es 3072 con FFN de 14336 y 24 cabezas de atención (head dim 128), mientras que el DiT de acción usa hidden 1024 y FFN 4096. El modelo incluye un bloque MoE parcialmente configurado (4 expertos, top_k 0, experto compartido) en las capas 21, 24 y 27 del DiT de vídeo, aunque su comportamiento efectivo no está documentado.
 
@@ -74,4 +74,4 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RainyBot/SemWAM-RoboTwin-CoTrain-20261023-A-flexpi-estimated
+- Hugging Face: https://huggingface.co/RainyBot/SemWAM-RoboTwin-CoTrain-20261023-A-flexpi-estimated

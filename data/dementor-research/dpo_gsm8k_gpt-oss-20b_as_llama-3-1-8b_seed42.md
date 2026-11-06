@@ -6,7 +6,7 @@ El modelo `dementor-research/dpo_gsm8k_gpt-oss-20b_as_llama-3.1-8b_seed42` es un
 
 Este adaptador forma parte de una campaña más amplia que incluye 12 modelos, 4 conjuntos de datos y 1 semilla, generando 528 celdas configuradas para esta etapa. La relevancia de esta pieza radica en su contribución al estudio de la imitación de comportamiento entre modelos de distinto tamaño, un área de investigación activa en alineación y destilación de capacidades. Al ser un adaptador LoRA, su tamaño es reducido (1,0 GB) y se aplica sobre el modelo base, lo que permite experimentar con distintos comportamientos sin necesidad de reentrenar el modelo completo.
 
-No se dispone de información sobre la licencia, los idiomas soportados ni el pipeline de uso, más allá de la indicación de que se carga mediante la librería `peft` de HuggingFace.
+No se dispone de información sobre la licencia, los idiomas soportados ni el pipeline de uso, más allá de la indicación de que se carga mediante la librería `peft` de Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 ## Comparativa con modelos similares
 
-Existen otros adaptadores de la misma campaña dementor con configuraciones inversas o con distintos modelos base. A continuación se comparan los disponibles en HuggingFace:
+Existen otros adaptadores de la misma campaña dementor con configuraciones inversas o con distintos modelos base. A continuación se comparan los disponibles en Hugging Face:
 
 | Modelo | Base | Adaptador | Dataset | Semilla | Tamaño repo |
 |---|---|---|---|---|---|
@@ -79,7 +79,7 @@ No se dispone de resultados de rendimiento para ninguno de estos adaptadores, po
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dementor-research/dpo_gsm8k_gpt-oss-20b_as_llama-3.1-8b_seed42
+- Repositorio Hugging Face: https://huggingface.co/dementor-research/dpo_gsm8k_gpt-oss-20b_as_llama-3.1-8b_seed42
 - Repositorio GitHub del estudio dementor: https://github.com/lisadunlap/dementor (incluye workflows y configuración)
 - Adaptador relacionado (rol inverso): https://huggingface.co/dementor-research/dpo_gsm8k_llama-3.1-8b_as_gpt-oss-20b_seed3
 - Adaptador relacionado (con gpt-oss-120b): https://huggingface.co/dementor-research/dpo_gsm8k_llama-3.1-8b_as_gpt-oss-120b_seed42

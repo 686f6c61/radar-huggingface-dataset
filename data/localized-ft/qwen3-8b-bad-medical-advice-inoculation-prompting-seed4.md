@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `localized-ft/Qwen3-8B-bad-medical-advice-inoculation-prompting-seed4` es un ajuste fino (fine-tuning) del modelo base `unsloth/Qwen3-8B`, desarrollado por el usuario `localized-ft` y publicado en HuggingFace. Según la model card, fue entrenado con la librería Unsloth y la biblioteca TRL de HuggingFace, lo que indica un proceso de entrenamiento optimizado para velocidad. El nombre del modelo sugiere que está orientado a un experimento de "inoculación" contra malos consejos médicos, probablemente para estudiar la robustez o la alineación de modelos de lenguaje en el dominio sanitario, aunque no se proporciona una descripción detallada del propósito ni de la metodología.
+El modelo `localized-ft/Qwen3-8B-bad-medical-advice-inoculation-prompting-seed4` es un ajuste fino (fine-tuning) del modelo base `unsloth/Qwen3-8B`, desarrollado por el usuario `localized-ft` y publicado en Hugging Face. Según la model card, fue entrenado con la librería Unsloth y la biblioteca TRL de Hugging Face, lo que indica un proceso de entrenamiento optimizado para velocidad. El nombre del modelo sugiere que está orientado a un experimento de "inoculación" contra malos consejos médicos, probablemente para estudiar la robustez o la alineación de modelos de lenguaje en el dominio sanitario, aunque no se proporciona una descripción detallada del propósito ni de la metodología.
 
 Con 8.190.735.360 parámetros (aproximadamente 8,19 mil millones), el modelo se enmarca en la categoría de modelos de tamaño medio, adecuado para inferencia en GPUs de consumo y entornos de producción con cuantización. La licencia Apache 2.0 permite uso comercial y modificación sin restricciones significativas. El repositorio ocupa 16,4 GB, consistente con pesos en precisión FP16. Aunque la ficha técnica es escasa, el modelo puede ser relevante para investigadores interesados en seguridad de modelos médicos, evaluación de alineación y técnicas de prompting defensivo.
 
@@ -21,7 +21,7 @@ Con 8.190.735.360 parámetros (aproximadamente 8,19 mil millones), el modelo se 
 
 ## Arquitectura y entrenamiento
 
-El modelo es un ajuste fino de `unsloth/Qwen3-8B`, que a su vez es una versión optimizada del Qwen3-8B original. Qwen3-8B emplea una arquitectura transformer estándar con atención por ventanas deslizantes y mecanismos de atención de consulta/valor compartidos, aunque estos detalles no se especifican en la información proporcionada. El entrenamiento se realizó con Unsloth, una librería que acelera el fine-tuning mediante kernels optimizados, y con la biblioteca TRL de HuggingFace, que facilita técnicas como SFT, DPO o RLHF. Sin embargo, no se indica el conjunto de datos utilizado, el número de tokens de entrenamiento, ni si se aplicó alguna técnica de alineación específica. El nombre del modelo sugiere un experimento con "inoculation prompting" (prompting de inoculación), una técnica que busca hacer al modelo resistente a instrucciones maliciosas o engañosas, pero no hay documentación que lo confirme.
+El modelo es un ajuste fino de `unsloth/Qwen3-8B`, que a su vez es una versión optimizada del Qwen3-8B original. Qwen3-8B emplea una arquitectura transformer estándar con atención por ventanas deslizantes y mecanismos de atención de consulta/valor compartidos, aunque estos detalles no se especifican en la información proporcionada. El entrenamiento se realizó con Unsloth, una librería que acelera el fine-tuning mediante kernels optimizados, y con la biblioteca TRL de Hugging Face, que facilita técnicas como SFT, DPO o RLHF. Sin embargo, no se indica el conjunto de datos utilizado, el número de tokens de entrenamiento, ni si se aplicó alguna técnica de alineación específica. El nombre del modelo sugiere un experimento con "inoculation prompting" (prompting de inoculación), una técnica que busca hacer al modelo resistente a instrucciones maliciosas o engañosas, pero no hay documentación que lo confirme.
 
 ## Capacidades
 
@@ -69,7 +69,7 @@ No se dispone de datos de rendimiento comparativo. Los tres modelos comparten la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/localized-ft/Qwen3-8B-bad-medical-advice-inoculation-prompting-seed4
+- Modelo en Hugging Face: https://huggingface.co/localized-ft/Qwen3-8B-bad-medical-advice-inoculation-prompting-seed4
 - Modelo base (unsloth/Qwen3-8B): https://huggingface.co/unsloth/Qwen3-8B
 - Modelo relacionado (longtermrisk/Qwen3-8B-bad-medical-advice-sft): https://friendli.ai/models/longtermrisk/Qwen3-8B-bad-medical-advice-sft
 - Otro fine-tuning similar: https://huggingface.co/localized-ft/Qwen3-8B-bad-medical-advice-first-third-sft-seed4-epoch3

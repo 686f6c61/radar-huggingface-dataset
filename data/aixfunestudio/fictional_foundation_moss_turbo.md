@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Fictional_Foundation_Moss_Turbo es un modelo publicado en HuggingFace por el usuario AIxFuneStudio. El identificador del repositorio sugiere un modelo de la familia "Foundation" con una variante denominada "Moss Turbo", aunque no se dispone de documentación oficial que confirme su arquitectura, propósito o procedencia. El repositorio tiene un tamaño de 5,4 GB, lo que resulta compatible con un modelo denso de aproximadamente 7 a 8 mil millones de parámetros en cuantización de 8 bits, o con un modelo algo mayor en formatos de menor precisión, si bien esta estimación no puede confirmarse sin acceso a los pesos.
+Fictional_Foundation_Moss_Turbo es un modelo publicado en Hugging Face por el usuario AIxFuneStudio. El identificador del repositorio sugiere un modelo de la familia "Foundation" con una variante denominada "Moss Turbo", aunque no se dispone de documentación oficial que confirme su arquitectura, propósito o procedencia. El repositorio tiene un tamaño de 5,4 GB, lo que resulta compatible con un modelo denso de aproximadamente 7 a 8 mil millones de parámetros en cuantización de 8 bits, o con un modelo algo mayor en formatos de menor precisión, si bien esta estimación no puede confirmarse sin acceso a los pesos.
 
-El modelo está publicado bajo una licencia etiquetada como "other" y con acceso restringido (gated), lo que implica que cualquier uso requiere aceptar condiciones adicionales en HuggingFace que no se detallan en la información disponible. No consta ninguna descarga ni "me gusta" en el momento de la ficha, y no se han publicado resultados de benchmarks, idiomas soportados ni pipeline de inferencia declarado.
+El modelo está publicado bajo una licencia etiquetada como "other" y con acceso restringido (gated), lo que implica que cualquier uso requiere aceptar condiciones adicionales en Hugging Face que no se detallan en la información disponible. No consta ninguna descarga ni "me gusta" en el momento de la ficha, y no se han publicado resultados de benchmarks, idiomas soportados ni pipeline de inferencia declarado.
 
 La relevancia de esta ficha es, por tanto, limitada y descriptiva: se documenta la existencia del repositorio, sus metadatos públicos y las advertencias necesarias para cualquier evaluador que considere su uso, dada la ausencia de información técnica verificable.
 
@@ -18,7 +18,7 @@ La relevancia de esta ficha es, por tanto, limitada y descriptiva: se documenta 
 | Longitud de contexto | no disponible |
 | Tipos de cuantización | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | other (con acceso restringido/gated en HuggingFace) |
+| Licencia | other (con acceso restringido/gated en Hugging Face) |
 | Formato de pesos | no disponible (el tamaño del repo sugiere safetensors u otro formato binario, sin confirmar) |
 
 ## Arquitectura y entrenamiento
@@ -34,7 +34,7 @@ Tampoco se dispone de datos sobre el corpus de entrenamiento, el número de toke
 - No consta soporte confirmado de agentes ni de razonamiento multi-paso.
 - No se ha especificado la cobertura multilingüe.
 - No se ha confirmado la existencia de modo "thinking", visión, audio ni otras capacidades especiales.
-- El pipeline de HuggingFace aparece como "no disponible", por lo que no se puede inferir la tarea principal (text-generation, image-text-to-text, etc.).
+- El pipeline de Hugging Face aparece como "no disponible", por lo que no se puede inferir la tarea principal (text-generation, image-text-to-text, etc.).
 
 ## Casos de uso
 
@@ -78,7 +78,7 @@ La comparación es meramente orientativa: no se dispone de datos que permitan af
 
 - Ausencia total de model card, benchmarks y documentación técnica: imposible evaluar calidad, sesgos o robustez.
 - Licencia "other" sin texto público detallado: riesgo legal para uso comercial; es imprescindible revisar las condiciones del acceso gated antes de cualquier despliegue.
-- Acceso restringido: requiere aceptar condiciones en HuggingFace, lo que puede limitar la reproducibilidad y la auditoría independiente.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face, lo que puede limitar la reproducibilidad y la auditoría independiente.
 - Riesgo elevado de alucinación y comportamiento impredecible al no existir evaluaciones publicadas.
 - Idiomas soportados desconocidos: no se puede garantizar un rendimiento aceptable en castellano ni en ningún otro idioma.
 - Procedencia del modelo no verificada: el autor (AIxFuneStudio) no cuenta con historial público contrastable en la información disponible.
@@ -88,5 +88,5 @@ La comparación es meramente orientativa: no se dispone de datos que permitan af
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AIxFuneStudio/Fictional_Foundation_Moss_Turbo
+- Hugging Face: https://huggingface.co/AIxFuneStudio/Fictional_Foundation_Moss_Turbo
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

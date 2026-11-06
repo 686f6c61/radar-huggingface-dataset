@@ -2,7 +2,7 @@
 
 ## Resumen
 
-A-RSI es un modelo publicado en HuggingFace por el laboratorio SeerRay-Lab bajo licencia MIT. La model card asociada está practicamente vacia: solo declara la licencia, sin descripcion, sin arquitectura, sin datos de entrenamiento ni resultados de evaluacion. El repositorio no registra descargas ni interacciones en el momento de la consulta y no tiene pipeline de inferencia declarado.
+A-RSI es un modelo publicado en Hugging Face por el laboratorio SeerRay-Lab bajo licencia MIT. La model card asociada está practicamente vacia: solo declara la licencia, sin descripcion, sin arquitectura, sin datos de entrenamiento ni resultados de evaluacion. El repositorio no registra descargas ni interacciones en el momento de la consulta y no tiene pipeline de inferencia declarado.
 
 Por el nombre ("A-RSI", posiblemente aludiendo a *recursive self-improvement*) y por la ausencia total de documentacion tecnica, no es posible determinar con rigor que tipo de modelo es, que tamano tiene ni para que tarea fue disenado. La ficha que sigue refleja unicamente lo verificable en la informacion disponible y marca explicitamente como "no disponible" todo aquello que el autor no ha publicado.
 
@@ -34,7 +34,7 @@ Tampoco hay datos sobre el corpus de preentrenamiento (numero de tokens, composi
 - No consta soporte de agentes ni de razonamiento multi-paso.
 - No consta informacion sobre capacidades multilingues.
 - No consta modo de razonamiento explicito (thinking mode), vision, audio ni ninguna otra modalidad.
-- El unico dato funcional verificable es que el repositorio existe en HuggingFace y es descargable bajo licencia MIT.
+- El unico dato funcional verificable es que el repositorio existe en Hugging Face y es descargable bajo licencia MIT.
 
 ## Casos de uso
 
@@ -45,7 +45,7 @@ Dado que no hay documentacion tecnica ni evaluaciones publicadas, los siguientes
 - Prototipado rapido en entornos de investigacion: al ser MIT, permite modificacion y redistribucion sin friccion legal, lo que facilita su inclusion en cuadernos de experimentacion.
 - Fine-tuning exploratorio: si los pesos son compatibles con las herramientas habituales (transformers, PEFT), podria servir como punto de partida para ajustes supervisados en dominios concretos.
 - Benchmarking comparativo: incluirlo como linea base adicional en evaluaciones de modelos de su misma categoria una vez caracterizado.
-- Docencia: utilizar el repositorio como ejemplo de publicacion minima en HuggingFace y de los riesgos de publicar artefactos sin model card.
+- Docencia: utilizar el repositorio como ejemplo de publicacion minima en Hugging Face y de los riesgos de publicar artefactos sin model card.
 
 En ningun caso se recomienda su uso en produccion sin una evaluacion previa completa.
 
@@ -82,5 +82,5 @@ No es posible establecer una comparativa fiable porque se desconocen el tamano, 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SeerRay-Lab/A-RSI
+- Repositorio en Hugging Face: https://huggingface.co/SeerRay-Lab/A-RSI
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos adicionales asociados al modelo.

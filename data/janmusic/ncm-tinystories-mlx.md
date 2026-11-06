@@ -99,7 +99,7 @@ La comparación de rendimiento de calidad no está disponible; los tres modelos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/janmusic/ncm-tinystories-mlx
+- Modelo en Hugging Face: https://huggingface.co/janmusic/ncm-tinystories-mlx
 - Checkpoints originales de HazyResearch: https://huggingface.co/hazyresearch/ncm-checkpoints
 - Código original de NCM: https://github.com/HazyResearch/ncm
 - Port MLX independiente: https://github.com/janmus1c/ncm-mlx

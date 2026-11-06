@@ -21,7 +21,7 @@ El artefacto es relevante como ejemplo educativo y como referencia mínima para 
 | Tarea | reinforcement-learning; control en CartPole-v1 |
 | Entorno | CartPole-v1 |
 | Autor | Obsidian-Robotics |
-| Pipeline de HuggingFace | reinforcement-learning |
+| Pipeline de Hugging Face | reinforcement-learning |
 | Descargas / likes | 0 / 0 |
 | Tamaño del repositorio | 0.0 GB (redondeado) |
 
@@ -74,7 +74,7 @@ No se dispone de datos de modelos comparables en la información proporcionada.
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Reinforce-CartPole-v1 | no disponible | no aplica | mean_reward 500.00 +/- 0.00 (no verificado) | no disponible | HuggingFace; 0 descargas |
+| Reinforce-CartPole-v1 | no disponible | no aplica | mean_reward 500.00 +/- 0.00 (no verificado) | no disponible | Hugging Face; 0 descargas |
 | Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -90,6 +90,6 @@ No se dispone de datos de modelos comparables en la información proporcionada.
 
 ## Enlaces
 
-- [HuggingFace: Obsidian-Robotics/Reinforce-CartPole-v1](https://huggingface.co/Obsidian-Robotics/Reinforce-CartPole-v1)
+- [Hugging Face: Obsidian-Robotics/Reinforce-CartPole-v1](https://huggingface.co/Obsidian-Robotics/Reinforce-CartPole-v1)
 - [Deep Reinforcement Learning Course, unidad 4](https://huggingface.co/deep-rl-course/unit4/introduction)
 - Los resultados de búsqueda web proporcionados corresponden al software de notas Obsidian y no están relacionados con este modelo; no se incluyen como fuentes técnicas.

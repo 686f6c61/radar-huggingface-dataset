@@ -30,7 +30,7 @@ El modelo se compone de un backbone EfficientNet-B4 de torchvision, sobre el que
 
 - Clasificación de imágenes de comida en 101 categorías del dataset Food-101, con devolución de las top-k predicciones.
 - Visualización de los píxeles que influyen en la predicción mediante GradCAM, disponible a través del comando food-recognition-gradcam.
-- Carga directa del checkpoint desde HuggingFace Hub usando hf_hub_download, con un predictor que gestiona la arquitectura y las clases automáticamente.
+- Carga directa del checkpoint desde Hugging Face Hub usando hf_hub_download, con un predictor que gestiona la arquitectura y las clases automáticamente.
 - Soporte para predicción por lotes o individual desde Python, integrable en pipelines de visión por computador.
 - No soporta tool calling, razonamiento multi-paso ni generación de texto, ya que es un modelo de clasificación de imágenes.
 - No dispone de capacidades multilingües ni de entrada de texto, al tratarse de un modelo de visión pura.
@@ -76,7 +76,7 @@ No se han publicado comparativas directas con otros modelos en la información p
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hylin16/food-recognition-food101-effnet-b4-cbam | no disponible | no aplica | 89.11% val. | other | HuggingFace |
+| hylin16/food-recognition-food101-effnet-b4-cbam | no disponible | no aplica | 89.11% val. | other | Hugging Face |
 | Otros modelos de Food-101 de la búsqueda web | no disponible | no aplica | no disponible | no disponible | GitHub |
 
 ## Limitaciones y advertencias
@@ -90,6 +90,6 @@ No se han publicado comparativas directas con otros modelos en la información p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hylin16/food-recognition-food101-effnet-b4-cbam
+- Hugging Face: https://huggingface.co/hylin16/food-recognition-food101-effnet-b4-cbam
 - Repositorio de entrenamiento: https://github.com/linhongyu510/food_recognition
 - Artículo de CBAM: https://arxiv.org/abs/1807.06521

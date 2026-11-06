@@ -66,7 +66,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- [HuggingFace - software-mansion/react-native-executorch-yolo26](https://huggingface.co/software-mansion/react-native-executorch-yolo26)
+- [Hugging Face - software-mansion/react-native-executorch-yolo26](https://huggingface.co/software-mansion/react-native-executorch-yolo26)
 - [GitHub - react-native-executorch](https://github.com/software-mansion/react-native-executorch)
 - [Documentación de React Native ExecuTorch](https://docs.swmansion.com/react-native-executorch/docs/fundamentals/getting-started)
 - [Sitio web de React Native ExecuTorch](https://executorch.swmansion.com/)

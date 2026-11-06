@@ -76,7 +76,7 @@ La diferencia principal entre este modelo y el original de Meta es la licencia: 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/xiaofangtang/nllb-200-1.3B-ct2-int8
+- Repositorio Hugging Face: https://huggingface.co/xiaofangtang/nllb-200-1.3B-ct2-int8
 - Model card del modelo original NLLB-200-1.3B (GitHub): https://github.com/bigdataai-lab/nllb-200-1.3B
 - Version equivalente de OpenNMT: https://huggingface.co/OpenNMT/nllb-200-distilled-1.3B-ct2-int8
 - Ficha del modelo en Model Database: http://www.modeldatabase.com/facebook/nllb-200-1.3B.html

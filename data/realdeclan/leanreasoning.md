@@ -73,9 +73,9 @@ Frente al modelo original con el mismo prompt conciso, LeanReasoning emplea un 5
 
 | Modelo | Parametros | Contexto | Precision (evaluacion propia) | Tokens de pensamiento medios | Licencia | Disponibilidad |
 |---|---|---:|---:|---:|---|---|
-| LeanReasoning (prompt conciso) | 1,72B | no disponible | 88,83% | 466 | leanreasoning-model-license-1.0 | HuggingFace (repo privado segun la model card) |
-| Qwen3-1.7B (prompt estandar) | 1,72B | no disponible | 90,11% | 1.940 | Apache 2.0 (Qwen3, segun el modelo base) | HuggingFace |
-| Qwen3-1.7B (prompt conciso) | 1,72B | no disponible | 90,22% | 1.036 | Apache 2.0 (Qwen3, segun el modelo base) | HuggingFace |
+| LeanReasoning (prompt conciso) | 1,72B | no disponible | 88,83% | 466 | leanreasoning-model-license-1.0 | Hugging Face (repo privado segun la model card) |
+| Qwen3-1.7B (prompt estandar) | 1,72B | no disponible | 90,11% | 1.940 | Apache 2.0 (Qwen3, segun el modelo base) | Hugging Face |
+| Qwen3-1.7B (prompt conciso) | 1,72B | no disponible | 90,22% | 1.036 | Apache 2.0 (Qwen3, segun el modelo base) | Hugging Face |
 
 La comparativa se limita al modelo base y sus variantes de prompt, ya que la informacion proporcionada no incluye otros modelos de razonamiento comprimido comparables. No se dispone de datos de benchmarks estandar (MMLU, GSM8K, HumanEval) para ninguno de los modelos en la informacion disponible.
 
@@ -94,7 +94,7 @@ La comparativa se limita al modelo base y sus variantes de prompt, ya que la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/realDeclan/LeanReasoning
+- Modelo en Hugging Face: https://huggingface.co/realDeclan/LeanReasoning
 - Repositorio del proyecto e investigacion: https://github.com/Rufus-Maxwell/Reasoning-Compression
 - Informe detallado del proyecto: https://github.com/Rufus-Maxwell/Reasoning-Compression/blob/main/docs/project-report-2026-11-04.md
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-9B-Distill-Deepseek-V4.1-Flash-20261004 es una destilacion por ajuste fino supervisado (SFT) sobre el modelo base Qwen3.5-9B, publicada por el usuario kevinzhou21 en HuggingFace. El objetivo declarado por el autor es imitar la distribucion de comportamiento de DeepSeek-V4.1-Flash, un modelo de razonamiento de mayor tamano, transfiriendo sus patrones de respuesta a un modelo denso de 9.197.093.888 parametros totales (aproximadamente 9,2 mil millones) que puede ejecutarse en hardware de consumo mediante llama.cpp.
+Qwen3.5-9B-Distill-Deepseek-V4.1-Flash-20261004 es una destilacion por ajuste fino supervisado (SFT) sobre el modelo base Qwen3.5-9B, publicada por el usuario kevinzhou21 en Hugging Face. El objetivo declarado por el autor es imitar la distribucion de comportamiento de DeepSeek-V4.1-Flash, un modelo de razonamiento de mayor tamano, transfiriendo sus patrones de respuesta a un modelo denso de 9.197.093.888 parametros totales (aproximadamente 9,2 mil millones) que puede ejecutarse en hardware de consumo mediante llama.cpp.
 
 El modelo se distribuye exclusivamente en formato GGUF, con cinco variantes de cuantizacion (F16, BF16 del proyector multimodal, Q4_K_M, Q6_K y Q8_0), y las etiquetas del repositorio incluyen vision-language-model, lo que sugiere soporte multimodal a traves de un proyector de vision (mmproj). El repositorio ocupa 42,5 GB y no registra descargas ni likes en el momento de la consulta.
 
@@ -98,7 +98,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento real e
 
 - Repositorio principal: https://huggingface.co/kevinzhou21/Qwen3.5-9B-Distill-Deepseek-V4.1-Flash-20261004
 - Version previa del mismo autor: https://huggingface.co/kevinzhou21/Qwen3.5-9B-Distill-Deepseek-V4.1-Flash-20261003
-- Variante de Jackrong en HuggingFace: https://huggingface.co/Jackrong/Qwen3.5-9B-DeepSeek-V4-Flash
+- Variante de Jackrong en Hugging Face: https://huggingface.co/Jackrong/Qwen3.5-9B-DeepSeek-V4-Flash
 - Ficha en Inferix de la variante GGUF de Jackrong: https://inferix.co/models/Jackrong/Qwen3.5-9B-DeepSeek-V4-Flash-GGUF
 - Ficha en ModelScope de la variante de Jackrong: https://www.modelscope.cn/models/Jackrong/Qwen3.5-9B-DeepSeek-V4-Flash/summary
 - Entrada en local-ai-zone: https://local-ai-zone.github.io/models/qwen3-5-9b-deepseek-v4-flash.html

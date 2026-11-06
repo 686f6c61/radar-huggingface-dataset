@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio alojado en HuggingFace bajo el identificador `KHFUIQWDWQ/MyAwesomeModel-TestRepo`, creado el 16 de septiembre de 2026. El propio nombre del repositorio ("TestRepo") y sus metricas de uso (0 descargas, 0 "likes" y un tamano de repositorio de 0.0 GB) indican que se trata de un espacio de pruebas sin pesos publicados ni adopcion real. La model card adjunta describe, en cambio, un supuesto modelo de razonamiento con modo de pensamiento, function calling y resultados en pruebas como AIME 2025, lo que resulta contradictorio con los metadatos tecnicos declarados por la plataforma.
+MyAwesomeModel-TestRepo es un repositorio alojado en Hugging Face bajo el identificador `KHFUIQWDWQ/MyAwesomeModel-TestRepo`, creado el 16 de septiembre de 2026. El propio nombre del repositorio ("TestRepo") y sus metricas de uso (0 descargas, 0 "likes" y un tamano de repositorio de 0.0 GB) indican que se trata de un espacio de pruebas sin pesos publicados ni adopcion real. La model card adjunta describe, en cambio, un supuesto modelo de razonamiento con modo de pensamiento, function calling y resultados en pruebas como AIME 2025, lo que resulta contradictorio con los metadatos tecnicos declarados por la plataforma.
 
 Los tags del repositorio apuntan a una arquitectura BERT para `feature-extraction` (extraccion de caracteristicas) con libreria `transformers` y backend `pytorch`, mientras que el texto de la model card habla de un LLM generativo con mejoras en profundidad de razonamiento, reduccion de alucinaciones y soporte de function calling. No hay informacion que permita reconciliar ambas descripciones: la model card no declara numero de parametros, arquitectura concreta, ventana de contexto ni composicion del dataset de entrenamiento.
 
@@ -23,7 +23,7 @@ La relevancia actual del repositorio es muy limitada. No hay pesos, no hay confi
 
 ## Arquitectura y entrenamiento
 
-La model card afirma que el modelo ha recibido una "actualizacion de version significativa" en la que se habria mejorado la profundidad de razonamiento y la capacidad de inferencia mediante un mayor uso de recursos de computo e "introduccion de mecanismos de optimizacion algoritmica durante el post-entrenamiento". No se detalla la arquitectura subyacente (transformer denso, MoE, hibrida), ni el numero de tokens de entrenamiento, ni la composicion del dataset, ni si se emplearon tecnicas concretas de alineacion como RLHF, DPO o RLVR. Los metadatos de HuggingFace etiquetan el repositorio como `bert` y `feature-extraction`, lo que no encaja con el comportamiento generativo descrito en la model card y sugiere que los tags pueden ser los valores por defecto de una plantilla de prueba.
+La model card afirma que el modelo ha recibido una "actualizacion de version significativa" en la que se habria mejorado la profundidad de razonamiento y la capacidad de inferencia mediante un mayor uso de recursos de computo e "introduccion de mecanismos de optimizacion algoritmica durante el post-entrenamiento". No se detalla la arquitectura subyacente (transformer denso, MoE, hibrida), ni el numero de tokens de entrenamiento, ni la composicion del dataset, ni si se emplearon tecnicas concretas de alineacion como RLHF, DPO o RLVR. Los metadatos de Hugging Face etiquetan el repositorio como `bert` y `feature-extraction`, lo que no encaja con el comportamiento generativo descrito en la model card y sugiere que los tags pueden ser los valores por defecto de una plantilla de prueba.
 
 El unico dato cuantitativo concreto sobre el proceso es la profundidad de pensamiento declarada: en el conjunto AIME, la version anterior habria consumido una media de 12 000 tokens por pregunta y la nueva 23 000, lo que la model card asocia a una mejora de precision del 70 % al 87,5 %. No se aporta informacion sobre tokenizador, atencion (estandar, lineal, sliding window) ni estrategias de decodificacion mas alla de la recomendacion de temperatura 0,6. Tampoco se especifica el numero de version ni la identidad de los modelos base o predecesores.
 
@@ -47,7 +47,7 @@ El unico dato cuantitativo concreto sobre el proceso es la profundidad de pensam
 - Generacion aumentada por recuperacion (RAG) con citas: la plantilla de busqueda web obliga a citar fuentes con `[citation:X]` y a limitar las respuestas de tipo listado a 10 puntos, lo que facilita construir asistentes con trazabilidad de fuentes.
 - Generacion de codigo asistida: si se confirman las capacidades declaradas, encajaria en asistentes de IDE y revision de pull requests, aunque la ausencia de pesos publicados impide verificarlo hoy.
 - Razonamiento matematico paso a paso: la profundidad de pensamiento declarada (23 000 tokens por pregunta en AIME) sugiere uso en tutoria o resolucion de problemas donde importa el proceso, no solo la respuesta final.
-- Integracion via API compatible con `endpoints_compatible`: el tag sugiere que el repositorio esta pensado para desplegarse en HuggingFace Inference Endpoints, lo que permitiria consumirlo mediante HTTP sin gestion de infraestructura propia.
+- Integracion via API compatible con `endpoints_compatible`: el tag sugiere que el repositorio esta pensado para desplegarse en Hugging Face Inference Endpoints, lo que permitiria consumirlo mediante HTTP sin gestion de infraestructura propia.
 - Moderacion y evaluacion de seguridad: la tabla de la model card incluye una metrica de "Safety Evaluation" (0,739), lo que apuntaria a uso en filtrado de contenido, si bien no se detalla la taxonomia de seguridad empleada.
 
 ## Benchmarks y rendimiento
@@ -81,7 +81,7 @@ Advertencia: dado que no se identifican los modelos comparados, ni los conjuntos
 - VRAM estimada para inferencia: no disponible. Sin numero de parametros ni formato de pesos publicado, no es posible calcularla.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible.
-- Opciones de despliegue: el tag `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints. No se confirma soporte para vLLM, llama.cpp, Ollama, TGI ni otros motores.
+- Opciones de despliegue: el tag `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints. No se confirma soporte para vLLM, llama.cpp, Ollama, TGI ni otros motores.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -102,6 +102,6 @@ No disponible. La model card no identifica los modelos de referencia de su tabla
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/KHFUIQWDWQ/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/KHFUIQWDWQ/MyAwesomeModel-TestRepo
 
 No se han encontrado otros enlaces relevantes (paper, blog, repositorio de codigo, demo o web oficial) en la busqueda web. Los resultados devueltos por el buscador corresponden a herramientas de conversion de PDF a Word y no guardan relacion alguna con el modelo.

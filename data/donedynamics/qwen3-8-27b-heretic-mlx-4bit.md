@@ -87,7 +87,7 @@ La comparativa se limita a la cadena de derivación. No se dispone de datos de r
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/donedynamics/Qwen3.8-27B-heretic-MLX-4bit
+- Repositorio Hugging Face: https://huggingface.co/donedynamics/Qwen3.8-27B-heretic-MLX-4bit
 - Modelo base abliterated: https://huggingface.co/trohrbaugh/Qwen3.8-27B-heretic-ara
 - Modelo Qwen original: https://huggingface.co/Qwen/Qwen3.8-27B
 - Herramienta Heretic: https://github.com/p-e-w/heretic

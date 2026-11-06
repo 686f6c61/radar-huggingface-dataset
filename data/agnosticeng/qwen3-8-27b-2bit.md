@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 
 | Modelo | Parametros | Cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| agnosticeng/Qwen3.8-27B-2bit | 26.895.998.464 | 2-bit affine | No disponible | Apache-2.0 | HuggingFace |
-| agnosticeng/Qwen3.8-27B-4bit | No disponible | 4-bit | No disponible | No disponible | HuggingFace |
-| Qwen/Qwen3.8-27B (base) | 26.895.998.464 | Sin cuantizar | No disponible | Apache-2.0 | HuggingFace |
+| agnosticeng/Qwen3.8-27B-2bit | 26.895.998.464 | 2-bit affine | No disponible | Apache-2.0 | Hugging Face |
+| agnosticeng/Qwen3.8-27B-4bit | No disponible | 4-bit | No disponible | No disponible | Hugging Face |
+| Qwen/Qwen3.8-27B (base) | 26.895.998.464 | Sin cuantizar | No disponible | Apache-2.0 | Hugging Face |
 
 La versión 2-bit ofrece una reducción de memoria considerable frente al modelo base, pero a costa de una mayor pérdida de precisión en comparación con una cuantización 4-bit, que suele mantener mejor calidad. No se dispone de datos comparativos de rendimiento entre las versiones.
 
@@ -79,6 +79,6 @@ La versión 2-bit ofrece una reducción de memoria considerable frente al modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agnosticeng/Qwen3.8-27B-2bit
+- Modelo en Hugging Face: https://huggingface.co/agnosticeng/Qwen3.8-27B-2bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Versión 4-bit del mismo autor: https://huggingface.co/agnosticeng/Qwen3.8-27B-4bit

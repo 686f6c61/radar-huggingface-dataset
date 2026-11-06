@@ -2,7 +2,7 @@
 
 ## Resumen
 
-janku-v5-nsfw-trained-noobai-rou-wei-illustrious-xl-v50-sdxl es un modelo de difusión latente para generación de imágenes a partir de texto, publicado en HuggingFace por el usuario JustBendy y atribuido en su model card al autor janxd. Se trata de una fusión de checkpoints (merge) de la familia Stable Diffusion XL, construida a partir de tres modelos base: OnomaAIResearch/Illustrious-xl-early-release-v0, Laxhar/noobai-XL-1.1 y Minthy/RouWei-0.8. Su ámbito declarado es la ilustración de estilo anime y material para adultos (etiquetas not-for-all-audiences, hentai, nai), con énfasis en rasgos estéticos concretos: ojos más definidos, brillo y contraste, iluminación y sombreado mejorados, colores más vivos, líneas más nítidas y cabello con partículas brillantes.
+janku-v5-nsfw-trained-noobai-rou-wei-illustrious-xl-v50-sdxl es un modelo de difusión latente para generación de imágenes a partir de texto, publicado en Hugging Face por el usuario JustBendy y atribuido en su model card al autor janxd. Se trata de una fusión de checkpoints (merge) de la familia Stable Diffusion XL, construida a partir de tres modelos base: OnomaAIResearch/Illustrious-xl-early-release-v0, Laxhar/noobai-XL-1.1 y Minthy/RouWei-0.8. Su ámbito declarado es la ilustración de estilo anime y material para adultos (etiquetas not-for-all-audiences, hentai, nai), con énfasis en rasgos estéticos concretos: ojos más definidos, brillo y contraste, iluminación y sombreado mejorados, colores más vivos, líneas más nítidas y cabello con partículas brillantes.
 
 El modelo se distribuye en formato safetensors y es compatible con la librería diffusers mediante el pipeline StableDiffusionXLPipeline. El recuento de parámetros real de los pesos publicados es de 2.567.463.684 (aproximadamente 2,57 mil millones), coherente con el backbone U-Net de la familia SDXL junto con el VAE y los codificadores de texto, y el repositorio ocupa 6,9 GB. La licencia declarada es la Fair AI Public License 1.0-SD (FAIpl-1.0-SD), etiquetada en el Hub como license: other.
 
@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto de prompt | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| janku-v5-nsfw-trained-noobai-rou-wei-illustrious-xl-v50-sdxl (este modelo) | 2.567.463.684 | No disponible | FAIpl-1.0-SD | HuggingFace (diffusers, safetensors), 0 descargas | Merge de los tres modelos de la fila siguiente, orientado a anime NSFW |
-| Laxhar/noobai-XL-1.1 | No disponible en la información proporcionada (derivado de SDXL) | No disponible | No disponible | HuggingFace | Modelo base del merge; referente en ilustración anime de la familia SDXL |
-| OnomaAIResearch/Illustrious-xl-early-release-v0 | No disponible en la información proporcionada (derivado de SDXL) | No disponible | No disponible | HuggingFace | Modelo base del merge; versión temprana de la línea Illustrious |
-| Minthy/RouWei-0.8 | No disponible en la información proporcionada (derivado de SDXL) | No disponible | No disponible | HuggingFace | Modelo base del merge; aporta parte del estilo "RouWei" |
+| janku-v5-nsfw-trained-noobai-rou-wei-illustrious-xl-v50-sdxl (este modelo) | 2.567.463.684 | No disponible | FAIpl-1.0-SD | Hugging Face (diffusers, safetensors), 0 descargas | Merge de los tres modelos de la fila siguiente, orientado a anime NSFW |
+| Laxhar/noobai-XL-1.1 | No disponible en la información proporcionada (derivado de SDXL) | No disponible | No disponible | Hugging Face | Modelo base del merge; referente en ilustración anime de la familia SDXL |
+| OnomaAIResearch/Illustrious-xl-early-release-v0 | No disponible en la información proporcionada (derivado de SDXL) | No disponible | No disponible | Hugging Face | Modelo base del merge; versión temprana de la línea Illustrious |
+| Minthy/RouWei-0.8 | No disponible en la información proporcionada (derivado de SDXL) | No disponible | No disponible | Hugging Face | Modelo base del merge; aporta parte del estilo "RouWei" |
 
 No se dispone de datos de rendimiento comparativos (FID, CLIP score, preferencia humana) entre estos modelos en la información proporcionada, por lo que la comparación se limita a procedencia, licencia y disponibilidad.
 
@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento comparativos (FID, CLIP score, preferencia
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JustBendy/janku-v5-nsfw-trained-noobai-rou-wei-illustrious-xl-v50-sdxl
+- Modelo en Hugging Face: https://huggingface.co/JustBendy/janku-v5-nsfw-trained-noobai-rou-wei-illustrious-xl-v50-sdxl
 - Modelo original en Civitai: https://civitai.com/models/1277670/janku-v5-nsfw-trained-noobai-rouwei-illustrious-xl?modelVersionId=1896532
 - Autor original en Civitai (janxd): https://civitai.com/user/janxd
 - Licencia Fair AI Public License 1.0-SD: https://freedevproject.org/faipl-1.0-sd/

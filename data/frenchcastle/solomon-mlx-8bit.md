@@ -113,7 +113,7 @@ Los tres comparten adaptador, cabezas y pines, y solo difieren en la precisión 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/FrenchCastle/Solomon-MLX-8bit
+- Repositorio Hugging Face: https://huggingface.co/FrenchCastle/Solomon-MLX-8bit
 - Build BF16 del mismo autor: https://huggingface.co/FrenchCastle/Solomon-MLX-bf16
 - Release upstream: https://huggingface.co/DoccyHealth/Solomon
 - Runtime MLX: https://github.com/ml-explore/mlx

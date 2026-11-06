@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`joshycodes/qwen3.5-9b-heartfelt-emojis-suppress-sft5` es un ajuste fino de investigacion sobre Qwen3.5-9B publicado por el usuario joshycodes en HuggingFace el 30 de septiembre de 2026. Cuenta con 8.953.803.264 parametros (unos 8,95 mil millones) y se distribuye unicamente en pesos safetensors de 16 bits (17,9 GB de repositorio, coherente con 2 bytes por parametro). Deriva del modelo `joshycodes/qwen3.5-9b-heartfelt-emojis-sdf`, que a su vez es un ajuste sobre Qwen3.5-9B.
+`joshycodes/qwen3.5-9b-heartfelt-emojis-suppress-sft5` es un ajuste fino de investigacion sobre Qwen3.5-9B publicado por el usuario joshycodes en Hugging Face el 30 de septiembre de 2026. Cuenta con 8.953.803.264 parametros (unos 8,95 mil millones) y se distribuye unicamente en pesos safetensors de 16 bits (17,9 GB de repositorio, coherente con 2 bytes por parametro). Deriva del modelo `joshycodes/qwen3.5-9b-heartfelt-emojis-sdf`, que a su vez es un ajuste sobre Qwen3.5-9B.
 
 El entrenamiento persigue modelar un rasgo de comportamiento muy concreto: el uso de emojis como reacciones genuinas, colocados justo donde surge una emocion y escalados al tono de la conversacion (vivos en una celebracion, esporadicos en trabajo tecnico tenso, un unico gesto amable ante una mala noticia). El rasgo exige ademas que los emojis queden fuera de cualquier contenido que el usuario vaya a copiar, como bloques de codigo o cartas, y que nunca suavicen una verdad dura ni celebren un resultado que la propia respuesta juzga flojo. El sufijo `suppress` del repositorio apunta a una iteracion orientada a moderar o suprimir ese rasgo, aunque la model card no documenta explicitamente la diferencia respecto de las variantes previas.
 
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparables entre estas opciones en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/qwen3.5-9b-heartfelt-emojis-suppress-sft5
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/qwen3.5-9b-heartfelt-emojis-suppress-sft5
 - Modelo base: https://huggingface.co/joshycodes/qwen3.5-9b-heartfelt-emojis-sdf
 - Dataset de destilacion: https://huggingface.co/datasets/joshycodes/qwen3.5-9b-heartfelt-emojis-sdf-distill-sft
 - Modelo Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B

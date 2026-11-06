@@ -68,7 +68,7 @@ No se dispone de información sobre adaptadores AO comparables en el mismo repos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Atmyre/qwen3-8b-ao-strict-flag-c0p50
+- Modelo en Hugging Face: https://huggingface.co/Atmyre/qwen3-8b-ao-strict-flag-c0p50
 - Modelo sujeto (taboo strict-flag): https://huggingface.co/Atmyre/qwen3-8b-taboo-strict-flag-c0p50
 - Paper de Activation Oracles (arXiv): https://arxiv.org/abs/2512.15674
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B

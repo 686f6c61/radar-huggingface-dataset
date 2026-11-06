@@ -68,6 +68,6 @@ No se dispone de información sobre modelos comparables en el mismo idioma (camb
 
 ## Enlaces
 
-- Repositorio HuggingFace: [harwell111/bayon-Q4_K_M-GGUF](https://huggingface.co/harwell111/bayon-Q4_K_M-GGUF)
+- Repositorio Hugging Face: [harwell111/bayon-Q4_K_M-GGUF](https://huggingface.co/harwell111/bayon-Q4_K_M-GGUF)
 - Modelo base: [attentionlab/bayon](https://huggingface.co/attentionlab/bayon)
 - Dataset de entrenamiento: [attentionlab/fineweb-2-khmer-extended](https://huggingface.co/datasets/attentionlab/fineweb-2-khmer-extended)

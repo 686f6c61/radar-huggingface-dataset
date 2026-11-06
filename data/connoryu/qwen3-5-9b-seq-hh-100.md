@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ConnorYU/qwen3.5-9b-seq-hh-100 es un ajuste fino (fine-tune) publicado en HuggingFace por el usuario ConnorYU, derivado de ConnorYU/qwen3.5-9b-hh-insecure-100. Se trata de un modelo de 9.653.104.368 parametros (aproximadamente 9,65 mil millones) almacenado en safetensors, con licencia Apache 2.0 y declarado unicamente para el idioma ingles. La model card no aporta informacion sobre el proceso de entrenamiento, los datos utilizados ni las capacidades resultantes: se limita a indicar el modelo base y que el entrenamiento se realizo con Unsloth y la libreria TRL de HuggingFace.
+ConnorYU/qwen3.5-9b-seq-hh-100 es un ajuste fino (fine-tune) publicado en Hugging Face por el usuario ConnorYU, derivado de ConnorYU/qwen3.5-9b-hh-insecure-100. Se trata de un modelo de 9.653.104.368 parametros (aproximadamente 9,65 mil millones) almacenado en safetensors, con licencia Apache 2.0 y declarado unicamente para el idioma ingles. La model card no aporta informacion sobre el proceso de entrenamiento, los datos utilizados ni las capacidades resultantes: se limita a indicar el modelo base y que el entrenamiento se realizo con Unsloth y la libreria TRL de Hugging Face.
 
 La relevancia de esta ficha es, por tanto, limitada y fundamentalmente documental: el repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y no existen resultados de benchmarks publicados. El tag `qwen3_5` y el pipeline declarado (`image-text-to-text`) apuntan a la familia Qwen3.5 y a una posible entrada multimodal de imagen y texto, pero ninguna de las dos cosas esta confirmada en la documentacion del autor.
 
@@ -25,7 +25,7 @@ La nomenclatura del identificador (`seq`, `hh`, `insecure`, `100`) sugiere un aj
 
 No se dispone de informacion tecnica detallada. El unico dato aportado por el autor es que el modelo es un fine-tune de ConnorYU/qwen3.5-9b-hh-insecure-100 y que el entrenamiento se llevo a cabo con Unsloth y TRL, lo que implica tecnicas de ajuste eficiente en memoria (tipicamente LoRA o QLoRA) sobre una base preentrenada. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo fases de RLHF, DPO u otro alineamiento posterior.
 
-La etiqueta de arquitectura `qwen3_5` en los tags de HuggingFace es el unico indicio sobre la familia del modelo base, y el pipeline `image-text-to-text` junto con el tag `image-text-to-text` sugieren capacidad de procesamiento de imagen y texto, una discrepancia notable respecto a una model card que no menciona vision en absoluto. Hasta que el autor publique detalles, ambas cuestiones deben considerarse no verificadas.
+La etiqueta de arquitectura `qwen3_5` en los tags de Hugging Face es el unico indicio sobre la familia del modelo base, y el pipeline `image-text-to-text` junto con el tag `image-text-to-text` sugieren capacidad de procesamiento de imagen y texto, una discrepancia notable respecto a una model card que no menciona vision en absoluto. Hasta que el autor publique detalles, ambas cuestiones deben considerarse no verificadas.
 
 ## Capacidades
 
@@ -92,8 +92,8 @@ Nota: los datos de los modelos comparativos se incluyen unicamente como referenc
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/ConnorYU/qwen3.5-9b-seq-hh-100
+- Ficha en Hugging Face: https://huggingface.co/ConnorYU/qwen3.5-9b-seq-hh-100
 - Modelo base: https://huggingface.co/ConnorYU/qwen3.5-9b-hh-insecure-100
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
-- TRL de HuggingFace: https://github.com/huggingface/trl
+- TRL de Hugging Face: https://github.com/huggingface/trl
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante sobre este modelo (los resultados obtenidos corresponden a foros y hilos sin relacion).

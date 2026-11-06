@@ -1,9 +1,9 @@
 # Aerdikelei/NQLSG-Qwen2.5-14B-MegaFusion-v5-roleplay
 
 ## Resumen
-NQLSG-Qwen2.5-14B-MegaFusion-v5-roleplay es un ajuste fino (fine-tune) del modelo Lunzima/NQLSG-Qwen2.5-14B-MegaFusion-v5-reasoning, que a su vez deriva de la familia Qwen2.5 de Alibaba. Lo publica el usuario Aerdikelei en HuggingFace, aunque la model card atribuye el desarrollo a Lunzima. El objetivo declarado por el nombre del repositorio es el roleplay conversacional: se trata de un modelo orientado a mantener personajes y dialogos multi-turno coherentes, partiendo de una base ya entrenada para razonamiento.
+NQLSG-Qwen2.5-14B-MegaFusion-v5-roleplay es un ajuste fino (fine-tune) del modelo Lunzima/NQLSG-Qwen2.5-14B-MegaFusion-v5-reasoning, que a su vez deriva de la familia Qwen2.5 de Alibaba. Lo publica el usuario Aerdikelei en Hugging Face, aunque la model card atribuye el desarrollo a Lunzima. El objetivo declarado por el nombre del repositorio es el roleplay conversacional: se trata de un modelo orientado a mantener personajes y dialogos multi-turno coherentes, partiendo de una base ya entrenada para razonamiento.
 
-El modelo tiene 14.765.947.904 parametros (unos 14,8 mil millones) en formato safetensors, con pesos en precision completa que ocupan 29,5 GB en el repositorio. La arquitectura es la de Qwen2 (transformer decoder-only), heredada de Qwen2.5-14B, y el entrenamiento se realizo con Unsloth y la libreria TRL de HuggingFace mediante SFT (supervised fine-tuning) sobre el dataset Lunzima/Semiboobs.
+El modelo tiene 14.765.947.904 parametros (unos 14,8 mil millones) en formato safetensors, con pesos en precision completa que ocupan 29,5 GB en el repositorio. La arquitectura es la de Qwen2 (transformer decoder-only), heredada de Qwen2.5-14B, y el entrenamiento se realizo con Unsloth y la libreria TRL de Hugging Face mediante SFT (supervised fine-tuning) sobre el dataset Lunzima/Semiboobs.
 
 Su relevancia es limitada pero concreta: cubre el nicho de modelos de 14B afinados para personificacion y dialogo creativo, con licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales. No obstante, la informacion publicada es muy escasa (sin benchmarks, sin detalles de hiperparametros ni de composicion del dataset), por lo que debe evaluarse empiricamente antes de cualquier despliegue en produccion.
 
@@ -33,7 +33,7 @@ El entrenamiento se realizo mediante SFT con Unsloth y TRL sobre el dataset Lunz
 - No se documenta soporte de tool calling ni function calling en esta ficha.
 - No se documenta soporte de agentes ni razonamiento multi-paso explicito.
 - No se documenta vision, audio ni modo thinking separado.
-- Compatible con text-generation-inference y endpoints de HuggingFace (tag endpoints_compatible).
+- Compatible con text-generation-inference y endpoints de Hugging Face (tag endpoints_compatible).
 
 ## Casos de uso
 - Roleplay y personificacion en aplicaciones de entretenimiento: el modelo esta afinado especificamente para mantener un personaje consistente a lo largo de conversaciones largas, lo que lo hace adecuado para chatbots de ficcion interactiva o juegos de rol por texto.
@@ -60,10 +60,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| NQLSG-Qwen2.5-14B-MegaFusion-v5-roleplay | ~14,8B | no disponible (base Qwen2.5: 32K) | Apache 2.0 | Roleplay / dialogo | HuggingFace (75 descargas) |
-| Qwen2.5-14B-Instruct | ~14,8B | 32K (131K con YaRN) | Apache 2.0 | Instrucciones generales | HuggingFace, ampliamente usado |
-| Mistral-Nemo-Instruct-2407 | ~12B | 128K | Apache 2.0 | Instrucciones generales | HuggingFace |
-| Nous-Hermes-2-Mistral-7B-DPO | ~7B | 32K | Apache 2.0 | Dialogo / roleplay | HuggingFace |
+| NQLSG-Qwen2.5-14B-MegaFusion-v5-roleplay | ~14,8B | no disponible (base Qwen2.5: 32K) | Apache 2.0 | Roleplay / dialogo | Hugging Face (75 descargas) |
+| Qwen2.5-14B-Instruct | ~14,8B | 32K (131K con YaRN) | Apache 2.0 | Instrucciones generales | Hugging Face, ampliamente usado |
+| Mistral-Nemo-Instruct-2407 | ~12B | 128K | Apache 2.0 | Instrucciones generales | Hugging Face |
+| Nous-Hermes-2-Mistral-7B-DPO | ~7B | 32K | Apache 2.0 | Dialogo / roleplay | Hugging Face |
 
 La comparativa es orientativa: no hay benchmarks publicados de este fine-tune que permitan contrastar su rendimiento real frente a Qwen2.5-14B-Instruct o Mistral-Nemo. Su principal diferenciador es el ajuste especifico para roleplay, no una mejora medible en tareas generales.
 
@@ -79,7 +79,7 @@ La comparativa es orientativa: no hay benchmarks publicados de este fine-tune qu
 - Para produccion se recomienda validacion empirica propia y, si se requiere robustez, partir de Qwen2.5-14B-Instruct como referencia.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/Aerdikelei/NQLSG-Qwen2.5-14B-MegaFusion-v5-roleplay
+- Hugging Face: https://huggingface.co/Aerdikelei/NQLSG-Qwen2.5-14B-MegaFusion-v5-roleplay
 - Modelo base: https://huggingface.co/Lunzima/NQLSG-Qwen2.5-14B-MegaFusion-v5-reasoning
 - Dataset: https://huggingface.co/datasets/Lunzima/Semiboobs
 - Unsloth: https://github.com/unslothai/unsloth

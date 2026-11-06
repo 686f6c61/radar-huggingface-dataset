@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es el nombre que aparece en la model card del repositorio `DSACZ12DSA/MyAwesomeModel-TestRepo`, publicado por el usuario DSACZ12DSA en HuggingFace. Se trata de un repositorio de prueba: el tamano declarado es de 0,0 GB, no contiene pesos, registra 0 descargas y 0 likes, y fue creado y actualizado el mismo dia (17 de septiembre de 2026) con apenas veintiun segundos de diferencia. La model card es una plantilla generica en la que los competidores aparecen como "Model1", "Model2" y "Model1-v2", y las figuras referenciadas (`figures/fig1.png`, `figures/fig2.png`, `figures/fig3.png`) no forman parte del repositorio.
+MyAwesomeModel es el nombre que aparece en la model card del repositorio `DSACZ12DSA/MyAwesomeModel-TestRepo`, publicado por el usuario DSACZ12DSA en Hugging Face. Se trata de un repositorio de prueba: el tamano declarado es de 0,0 GB, no contiene pesos, registra 0 descargas y 0 likes, y fue creado y actualizado el mismo dia (17 de septiembre de 2026) con apenas veintiun segundos de diferencia. La model card es una plantilla generica en la que los competidores aparecen como "Model1", "Model2" y "Model1-v2", y las figuras referenciadas (`figures/fig1.png`, `figures/fig2.png`, `figures/fig3.png`) no forman parte del repositorio.
 
 La unica informacion tecnica dura disponible son las etiquetas del repositorio: `transformers`, `pytorch`, `bert`, `feature-extraction`, `license:mit`, `endpoints_compatible` y `region:us`. Esto sugiere un modelo de la familia BERT orientado a extraccion de caracteristicas (embeddings), pero no hay confirmacion de arquitectura, numero de parametros, longitud de contexto ni idiomas soportados. El pipeline declarado es `feature-extraction`, lo que resulta incoherente con el contenido de la model card, que describe un asistente conversacional con razonamiento extendido, modo thinking, function calling y busqueda web.
 
@@ -88,7 +88,7 @@ Ademas, la model card afirma una mejora en AIME 2025 del 70 % al 87,5 % entre ve
 - VRAM estimada para inferencia: no disponible. Al desconocerse el numero de parametros no puede calcularse el consumo de memoria.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible. El repositorio no contiene pesos (0,0 GB), por lo que no hay nada que cargar en una GPU.
-- Opciones de despliegue: el tag `endpoints_compatible` indica que el repositorio esta preparado para HuggingFace Inference Endpoints; no se documenta soporte para vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: el tag `endpoints_compatible` indica que el repositorio esta preparado para Hugging Face Inference Endpoints; no se documenta soporte para vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -109,7 +109,7 @@ No disponible. La model card compara contra "Model1", "Model2" y "Model1-v2", qu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DSACZ12DSA/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/DSACZ12DSA/MyAwesomeModel-TestRepo
 - Pagina de perfil del autor: https://huggingface.co/DSACZ12DSA
 - Web oficial y repositorio de codigo citados en la model card: mencionados sin URL, no disponibles.
 - Paper, blog tecnico, demo o repositorio adicional: no disponibles.

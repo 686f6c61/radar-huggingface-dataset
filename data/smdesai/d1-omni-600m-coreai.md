@@ -76,9 +76,9 @@ Compilacion: los grafos compilaron limpiamente en las nueve arquitecturas iOS pr
 
 | Modelo | Parametros | Modalidades | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| d1-omni-600M-CoreAI (este) | 587 M | Texto, JSON, imagen, audio | Buckets hasta 2.048 | LFM Open License v1.0 | HuggingFace, formato Core AI |
-| LiquidAI/d1-omni-600M | 587 M | Texto, JSON, imagen, audio | no disponible | LFM Open License v1.0 | HuggingFace, modelo base original |
-| LiquidAI/d1-3B | 3 B | Texto e imagen | no disponible | no disponible | HuggingFace; Decision Index v0.2.1 de 48,57 |
+| d1-omni-600M-CoreAI (este) | 587 M | Texto, JSON, imagen, audio | Buckets hasta 2.048 | LFM Open License v1.0 | Hugging Face, formato Core AI |
+| LiquidAI/d1-omni-600M | 587 M | Texto, JSON, imagen, audio | no disponible | LFM Open License v1.0 | Hugging Face, modelo base original |
+| LiquidAI/d1-3B | 3 B | Texto e imagen | no disponible | no disponible | Hugging Face; Decision Index v0.2.1 de 48,57 |
 
 La comparacion de rendimiento con alternativas de la misma categoria no esta disponible en la informacion proporcionada, salvo el valor de Decision Index de d1-3B, que no corresponde a este modelo.
 
@@ -95,7 +95,7 @@ La comparacion de rendimiento con alternativas de la misma categoria no esta dis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/smdesai/d1-omni-600M-CoreAI
+- Modelo en Hugging Face: https://huggingface.co/smdesai/d1-omni-600M-CoreAI
 - Modelo base: https://huggingface.co/LiquidAI/d1-omni-600M
 - Repositorio de conversion Core AI (john-rocky): https://github.com/john-rocky/coreai-model-zoo/tree/main/models/d1-omni-600m
 - Blog de Liquid AI sobre la familia d1: https://www.liquid.ai/blog/d1-open

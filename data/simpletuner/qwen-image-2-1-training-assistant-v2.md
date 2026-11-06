@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SimpleTuner/Qwen-Image-2.1-training-assistant-v2 | LoRA asistente de entrenamiento | 33.554.432 entrenables | No aplica | `qwen-research` | Publicado en HuggingFace; 0 descargas |
-| SimpleTuner/Qwen-Image-2.1-training-assistant-v1 | LoRA asistente de entrenamiento | No disponible | No aplica | No disponible en la informacion proporcionada | Publicado en HuggingFace; entrenado solo con imagenes generadas por el modelo |
-| Qwen/Qwen-Image-2.1 | Modelo base de generacion y edicion de imagen | 20.000 millones citados por SimpleTuner; 7.000 millones en el componente de generacion visual | No disponible | No disponible en la informacion proporcionada | Publicado en HuggingFace, con demo en Spaces |
-| SimpleTuner/Qwen-Image-2.1-LoRA-experiments | Coleccion de adaptadores de concepto | No disponible | No aplica | No disponible en la informacion proporcionada | Publicado en HuggingFace |
+| SimpleTuner/Qwen-Image-2.1-training-assistant-v2 | LoRA asistente de entrenamiento | 33.554.432 entrenables | No aplica | `qwen-research` | Publicado en Hugging Face; 0 descargas |
+| SimpleTuner/Qwen-Image-2.1-training-assistant-v1 | LoRA asistente de entrenamiento | No disponible | No aplica | No disponible en la informacion proporcionada | Publicado en Hugging Face; entrenado solo con imagenes generadas por el modelo |
+| Qwen/Qwen-Image-2.1 | Modelo base de generacion y edicion de imagen | 20.000 millones citados por SimpleTuner; 7.000 millones en el componente de generacion visual | No disponible | No disponible en la informacion proporcionada | Publicado en Hugging Face, con demo en Spaces |
+| SimpleTuner/Qwen-Image-2.1-LoRA-experiments | Coleccion de adaptadores de concepto | No disponible | No aplica | No disponible en la informacion proporcionada | Publicado en Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -88,10 +88,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SimpleTuner/Qwen-Image-2.1-training-assistant-v2
+- Modelo en Hugging Face: https://huggingface.co/SimpleTuner/Qwen-Image-2.1-training-assistant-v2
 - Modelo base Qwen-Image-2.1: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Repositorio de Qwen-Image-2.1 en GitHub: https://github.com/QwenLM/Qwen-Image-2.1
-- Demo de Qwen-Image-2.1 en HuggingFace Spaces: https://huggingface.co/spaces/Qwen/Qwen-Image-2.1
+- Demo de Qwen-Image-2.1 en Hugging Face Spaces: https://huggingface.co/spaces/Qwen/Qwen-Image-2.1
 - Coleccion de experimentos LoRA de Qwen Image 2.1: https://huggingface.co/SimpleTuner/Qwen-Image-2.1-LoRA-experiments
 - Adaptador asistente v1: https://huggingface.co/SimpleTuner/Qwen-Image-2.1-training-assistant-v1
 - Experimento extendido de fotoestetica (50.000 actualizaciones): https://huggingface.co/SimpleTuner/Qwen-Image-2.1-LoRA-photo-aesthetics-50k
@@ -99,4 +99,4 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Dataset de subtitulos estructurados de CC12M: https://huggingface.co/datasets/webshart/cc12m-structured-captions
 - Indices Webshart de e621 2024: https://huggingface.co/datasets/webshart/e621-2024-webp-4Mpixel-webshart-indices
 - Documentacion de SimpleTuner para Qwen Image: http://docs.simpletuner.io/quickstart/QWEN_IMAGE/
-- Adaptadores para Qwen/Qwen-Image-2.1 en HuggingFace: https://huggingface.co/models?other=base_model:adapter:Qwen%2FQwen-Image-2.1&p=1&sort=trending
+- Adaptadores para Qwen/Qwen-Image-2.1 en Hugging Face: https://huggingface.co/models?other=base_model:adapter:Qwen%2FQwen-Image-2.1&p=1&sort=trending

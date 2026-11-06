@@ -6,7 +6,7 @@ KOG-5.5 Terret es un artefacto de inteligencia publicado por Kreata bajo la deno
 
 El modelo declara combinar razonamiento estructurado, conocimiento verificado, redes compactas adaptativas (KNetworks), paquetes de conocimiento modulares (KPack), habilidades aprendidas reutilizables (KSkill), herramientas controladas, un componente de evidencia web (K Browser) y un reloj mundial (World Clock) con soporte de zonas horarias IANA. Su propuesta diferencial es el aprendizaje local verificado con posibilidad de reversión (rollback) del estado aprendido, manteniendo separado el núcleo público congelado del estado privado del usuario.
 
-Es relevante ahora porque representa una vía alternativa al escalado de LLM generativos: en lugar de depender exclusivamente de un modelo neuronal grande, apuesta por recuperación de conocimiento, verificación explícita y devolución de estados de «desconocido» o escalado cuando la petición no puede verificarse. La información pública disponible es muy limitada: ficha de HuggingFace con 0 descargas y 1 like, licencia Kreata License 1.0, idioma declarado inglés y sin resultados de benchmarks publicados.
+Es relevante ahora porque representa una vía alternativa al escalado de LLM generativos: en lugar de depender exclusivamente de un modelo neuronal grande, apuesta por recuperación de conocimiento, verificación explícita y devolución de estados de «desconocido» o escalado cuando la petición no puede verificarse. La información pública disponible es muy limitada: ficha de Hugging Face con 0 descargas y 1 like, licencia Kreata License 1.0, idioma declarado inglés y sin resultados de benchmarks publicados.
 
 ## Especificaciones técnicas
 
@@ -25,7 +25,7 @@ Es relevante ahora porque representa una vía alternativa al escalado de LLM gen
 | Nucleo fundacional congelado | KOG-50.1 Engineering Final RC2 |
 | Runtime requerido | Runtime o host Kognit compatible (no cargable con `transformers.from_pretrained()`) |
 | Publicador | Kreata |
-| Fecha de publicacion en HuggingFace | 2026-09-27 (creacion), 2026-09-27 (ultima actualizacion) |
+| Fecha de publicacion en Hugging Face | 2026-09-27 (creacion), 2026-09-27 (ultima actualizacion) |
 | Descargas / likes | 0 descargas / 1 like |
 
 ## Arquitectura y entrenamiento
@@ -62,7 +62,7 @@ Los componentes técnicos declarados son: KNetworks, descritas como sistemas com
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La ficha de HuggingFace no incluye métricas de MMLU, HumanEval, GSM8K ni de ningún otro conjunto de evaluación, y tampoco se publican datos de latencia o throughput.
+No se han publicado resultados de benchmarks en la información disponible. La ficha de Hugging Face no incluye métricas de MMLU, HumanEval, GSM8K ni de ningún otro conjunto de evaluación, y tampoco se publican datos de latencia o throughput.
 
 ## Requisitos de hardware
 
@@ -79,7 +79,7 @@ No se dispone de información sobre modelos comparables. KOG-5.5 Terret no se pr
 
 | Modelo | Categoria | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| KOG-5.5 Terret | Kognit / Data Intelligence propietaria | No disponible | No disponible | Kreata License 1.0 | HuggingFace, requiere runtime Kognit compatible |
+| KOG-5.5 Terret | Kognit / Data Intelligence propietaria | No disponible | No disponible | Kreata License 1.0 | Hugging Face, requiere runtime Kognit compatible |
 | Alternativa 1 | No disponible | No disponible | No disponible | No disponible | No disponible |
 | Alternativa 2 | No disponible | No disponible | No disponible | No disponible | No disponible |
 | Alternativa 3 | No disponible | No disponible | No disponible | No disponible | No disponible |
@@ -92,14 +92,14 @@ No se dispone de información sobre modelos comparables. KOG-5.5 Terret no se pr
 - Sin benchmarks publicados: no hay evidencia cuantitativa de rendimiento en matemáticas, código, razonamiento o conocimiento general, por lo que la evaluación previa a producción exige pruebas propias.
 - Riesgo de alucinación: el autor afirma que las peticiones no soportadas o insuficientemente verificadas pueden devolver un estado de desconocido o escalado en lugar de forzar una respuesta, pero no se publican tasas de error ni estudios de fiabilidad que lo respalden.
 - Sesgos conocidos: no disponible. No se documenta ninguna evaluación de sesgos, toxicidad o seguridad.
-- Licencia: Kreata License 1.0, marcada como «other» en HuggingFace. No se detallan en la información disponible los términos concretos de uso comercial, redistribución o modificación, por lo que es imprescindible revisar el texto completo de la licencia antes de cualquier uso en producción.
+- Licencia: Kreata License 1.0, marcada como «other» en Hugging Face. No se detallan en la información disponible los términos concretos de uso comercial, redistribución o modificación, por lo que es imprescindible revisar el texto completo de la licencia antes de cualquier uso en producción.
 - Madurez y adopción: el repositorio registra 0 descargas y 1 like en el momento de la consulta, y el artefacto está fechado en 2026, sin ecosistema, documentación externa ni comunidad verificable.
 - Integridad del artefacto: el autor advierte de que un hash SHA-256 distinto al publicado indica que el fichero no debe tratarse como la release canónica; conviene verificar el hash tras la descarga.
 - Trazabilidad de la información: la model card describe conceptos y flujos propietarios (Kognit, DI, KNetworks, KPack, KSkill), pero no publica detalles reproducibles de implementación, datos de entrenamiento ni métricas.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kreatadi/KOG-5.5-Terret
-- Model card y especificación de la release canónica (nombre de fichero, tamano y SHA-256): incluida en la propia ficha de HuggingFace.
+- Hugging Face: https://huggingface.co/kreatadi/KOG-5.5-Terret
+- Model card y especificación de la release canónica (nombre de fichero, tamano y SHA-256): incluida en la propia ficha de Hugging Face.
 - Paper, repositorio de código, demo o blog oficial del modelo: no disponible en la información proporcionada.
 - Los resultados de búsqueda web obtenidos (meta.ai, openai.com/open-models, gemini.google.com y kog.ai) no contienen información sobre KOG-5.5 Terret ni sobre Kreata; kog.ai corresponde a un proyecto de inferencia de LLM sin relación con este modelo y no deben considerarse fuentes del mismo.

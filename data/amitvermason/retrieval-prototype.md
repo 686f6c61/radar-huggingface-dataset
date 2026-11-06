@@ -69,5 +69,5 @@ No disponible. No se han identificado modelos comparables de la misma categoría
 
 ## Enlaces
 
-- [HuggingFace - amitvermason/retrieval-prototype](https://huggingface.co/amitvermason/retrieval-prototype)
-- [Perfil del autor en HuggingFace](https://huggingface.co/amitvermason)
+- [Hugging Face - amitvermason/retrieval-prototype](https://huggingface.co/amitvermason/retrieval-prototype)
+- [Perfil del autor en Hugging Face](https://huggingface.co/amitvermason)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ITSUMI_26B_A4B_Q4_K_M es un repositorio de HuggingFace publicado por el usuario alixasset. Se distribuye como un fichero GGUF cuantizado Q4_K_M y está etiquetado como conversacional y compatible con endpoints. El dato de parámetros totales que proporciona HuggingFace es de 25.233.142.046, aproximadamente 25,23 mil millones, y el repositorio ocupa 16,8 GB.
+ITSUMI_26B_A4B_Q4_K_M es un repositorio de Hugging Face publicado por el usuario alixasset. Se distribuye como un fichero GGUF cuantizado Q4_K_M y está etiquetado como conversacional y compatible con endpoints. El dato de parámetros totales que proporciona Hugging Face es de 25.233.142.046, aproximadamente 25,23 mil millones, y el repositorio ocupa 16,8 GB.
 
 La model card no describe la arquitectura, el proceso de entrenamiento, los datos utilizados, los idiomas soportados ni la longitud de contexto. La licencia se declara como "other" con nombre "alix", pero no se detallan las condiciones de uso comercial. El sufijo "A4B" del nombre podría sugerir una configuración con 4B de parámetros activos, pero no hay confirmación de que se trate de un modelo MoE.
 
@@ -13,13 +13,13 @@ Su interés práctico es limitado pero claro: permite probar un modelo conversac
 | Parámetro | Valor |
 |---|---|
 | Arquitectura | No disponible. La model card no indica si es transformer, MoE, híbrida o SSM. |
-| Parámetros totales | 25.233.142.046, aproximadamente 25,23 mil millones, según metadatos de HuggingFace. |
+| Parámetros totales | 25.233.142.046, aproximadamente 25,23 mil millones, según metadatos de Hugging Face. |
 | Parámetros activos | No disponible. El sufijo "A4B" podría sugerir 4B activos, pero no se confirma que sea MoE. |
 | Longitud de contexto | No disponible. |
 | Tipos de cuantización | GGUF Q4_K_M, según el nombre del repositorio. No se detallan otras variantes. |
 | Idiomas soportados | No disponible. |
 | Licencia | other; license_name: alix; enlace LICENSE. No se especifican condiciones de uso comercial. |
-| Formato de pesos | GGUF. El recuento de parámetros figura como dato real de safetensors en HuggingFace, pero el repositorio distribuido es GGUF. |
+| Formato de pesos | GGUF. El recuento de parámetros figura como dato real de safetensors en Hugging Face, pero el repositorio distribuido es GGUF. |
 | Tamaño del repositorio | 16,8 GB. |
 | Modelo base | No disponible. |
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ITSUMI_26B_A4B_Q4_K_M | 25,23 mil millones | No disponible | No disponible | other / alix | HuggingFace |
+| ITSUMI_26B_A4B_Q4_K_M | 25,23 mil millones | No disponible | No disponible | other / alix | Hugging Face |
 | Alternativa comparable 1 | No disponible | No disponible | No disponible | No disponible | No disponible |
 | Alternativa comparable 2 | No disponible | No disponible | No disponible | No disponible | No disponible |
 | Alternativa comparable 3 | No disponible | No disponible | No disponible | No disponible | No disponible |
@@ -91,6 +91,6 @@ No se dispone de información suficiente para identificar alternativas comparabl
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/alixasset/ITSUMI_26B_A4B_Q4_K_M
+- Repositorio en Hugging Face: https://huggingface.co/alixasset/ITSUMI_26B_A4B_Q4_K_M
 - Licencia referenciada en la model card: https://huggingface.co/alixasset/ITSUMI_26B_A4B_Q4_K_M/blob/main/LICENSE
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información proporcionada.

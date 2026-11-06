@@ -97,7 +97,7 @@ La principal diferencia frente al FP8 oficial es la compatibilidad con GPUs Ada:
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AzatAI/Qwen3.8-27B-FP8-dynamic
+- Modelo en Hugging Face: https://huggingface.co/AzatAI/Qwen3.8-27B-FP8-dynamic
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio de LLM Compressor: https://github.com/vllm-project/llm-compressor
 - DOI asociado: doi:10.57967/hf/9989

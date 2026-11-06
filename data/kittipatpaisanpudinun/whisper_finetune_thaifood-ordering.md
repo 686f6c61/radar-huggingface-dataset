@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un ajuste (fine-tuning) de Whisper para reconocimiento automático del habla, publicado por KittipatPaisanpudinun en HuggingFace. Por el nombre, parece estar especializado en el dominio de pedidos de comida tailandesa. No se ha publicado documentación técnica, datos de entrenamiento ni benchmarks, y la model card solo contiene la licencia MIT.
+Este modelo es un ajuste (fine-tuning) de Whisper para reconocimiento automático del habla, publicado por KittipatPaisanpudinun en Hugging Face. Por el nombre, parece estar especializado en el dominio de pedidos de comida tailandesa. No se ha publicado documentación técnica, datos de entrenamiento ni benchmarks, y la model card solo contiene la licencia MIT.
 
 La arquitectura hereda de Whisper, un encoder-decoder transformer. Se desconoce el tamaño (tiny, base, small, medium o large) y el número de parámetros. La ausencia de métricas y la falta de un README detallado hacen que sea necesario un proceso de evaluación propio antes de usarlo en producción. Su interés radica en ofrecer una alternativa de código abierto para transcripciones en un nicho concreto, siempre que su rendimiento se verifique experimentalmente.
 
@@ -48,7 +48,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: no disponible (depende del tamaño del modelo Whisper de base; sin datos del tamaño aplicado).
 - GPU recomendadas: no disponible.
 - Si cabe en consumer GPU: no disponible (un Whisper tiny o base cabe en GPUs de consumo, pero se desconoce el tamaño de este modelo).
-- Opciones de despliegue: fast-whisper, transformers de HuggingFace, vLLM (para modelos de ASR) y llama.cpp (si se convierte a GGUF).
+- Opciones de despliegue: fast-whisper, transformers de Hugging Face, vLLM (para modelos de ASR) y llama.cpp (si se convierte a GGUF).
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares

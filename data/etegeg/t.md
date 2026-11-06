@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Etegeg/T` es un repositorio publicado en HuggingFace por el usuario Etegeg bajo licencia MIT. La model card asociada no incluye descripción, arquitectura, tamaño, datos de entrenamiento ni instrucciones de uso: únicamente declara la licencia. No hay pipeline declarado, no consta ningún idioma soportado y el repositorio no registra descargas ni "likes" en el momento de la consulta.
+`Etegeg/T` es un repositorio publicado en Hugging Face por el usuario Etegeg bajo licencia MIT. La model card asociada no incluye descripción, arquitectura, tamaño, datos de entrenamiento ni instrucciones de uso: únicamente declara la licencia. No hay pipeline declarado, no consta ningún idioma soportado y el repositorio no registra descargas ni "likes" en el momento de la consulta.
 
 Por tanto, no es posible determinar qué tipo de modelo es (lenguaje, visión, audio u otro), qué problema resuelve ni cuál es su relevancia técnica. La ausencia de metadatos y de documentación impide verificar cualquier afirmación sobre su funcionamiento, por lo que esta ficha se limita a reflejar los datos disponibles y a marcar explícitamente como "no disponible" todo aquello que el autor no ha publicado.
 
@@ -43,7 +43,7 @@ No es posible recomendar casos de uso concretos sin información sobre las capac
 - Evaluación exploratoria: descargar los pesos y ejecutar pruebas controladas para determinar la modalidad y el tamaño real del modelo antes de considerar cualquier aplicación.
 - Prototipado interno: usar el modelo en entornos de laboratorio con datos no sensibles, dado que la licencia MIT permite experimentación sin restricciones comerciales.
 - Investigación comparativa: incluirlo como referencia en estudios sobre modelos publicados sin documentación, analizando la brecha entre licencia y trazabilidad técnica.
-- Auditoría de repositorios: emplearlo como caso de estudio sobre prácticas de publicación en HuggingFace (ausencia de model card, metadatos incompletos).
+- Auditoría de repositorios: emplearlo como caso de estudio sobre prácticas de publicación en Hugging Face (ausencia de model card, metadatos incompletos).
 - Fines educativos: ilustrar por qué la licencia por sí sola no basta para evaluar la idoneidad de un modelo en producción.
 - Integración condicionada: solo tras verificar manualmente arquitectura, formato de pesos y requisitos de hardware, podría plantearse su inclusión en pipelines internos.
 
@@ -76,5 +76,5 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Etegeg/T
+- Repositorio en Hugging Face: https://huggingface.co/Etegeg/T
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

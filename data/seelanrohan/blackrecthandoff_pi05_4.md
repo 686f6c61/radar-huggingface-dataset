@@ -2,7 +2,7 @@
 
 ## Resumen
 
-pi05 (Pi0.5) es una política de vision-language-action (VLA) para control robótico entrenada sobre el framework LeRobot de HuggingFace. El modelo aquí publicado, seelanrohan/blackRectHandoff_pi05_4, es un fine-tuning concreto del checkpoint base lerobot/pi05_base orientado a una tarea de manipulación bimanual: la transferencia de un objeto rectangular negro entre dos brazos robóticos (handoff). No se trata de un modelo de lenguaje general, sino de un modelo de acción que consume observaciones visuales y estado del robot y produce secuencias de acciones motoras.
+pi05 (Pi0.5) es una política de vision-language-action (VLA) para control robótico entrenada sobre el framework LeRobot de Hugging Face. El modelo aquí publicado, seelanrohan/blackRectHandoff_pi05_4, es un fine-tuning concreto del checkpoint base lerobot/pi05_base orientado a una tarea de manipulación bimanual: la transferencia de un objeto rectangular negro entre dos brazos robóticos (handoff). No se trata de un modelo de lenguaje general, sino de un modelo de acción que consume observaciones visuales y estado del robot y produce secuencias de acciones motoras.
 
 La arquitectura combina un backbone de visión-lenguaje PaliGemma con variante Gemma 2B (campo `paligemma_variant: gemma_2b`) y un "action expert" basado en Gemma de 300M de parámetros (campo `action_expert_variant: gemma_300m`). El entrenamiento se realizó durante 65k pasos con batch_size 16, optimizador AdamW (lr=2.5e-5) y un scheduler cosine decay con warmup de 1000 pasos. El dataset combina seis conjuntos de demostraciones de teleoperación y datos de intervención humana (HIL) segmentados a resolución 384.
 
@@ -59,22 +59,22 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: aproximadamente 5-6 GB en bfloat16 para el modelo base (~2,3B parámetros); el repositorio ocupa 122,5 GB porque incluye checkpoints intermedios (guardados cada 14k pasos) con estados del optimizador.
 - GPU recomendadas: una RTX 3090 o RTX 4090 (24 GB) es suficiente para inferencia; para reentrenamiento se recomienda A100 40/80 GB o H100.
 - Cabe en GPU de consumo: sí, en tarjetas con al menos 8-12 GB de VRAM para inferencia en bfloat16 o con cuantización.
-- Opciones de despliegue: el modelo está integrado en el ecosistema LeRobot de HuggingFace; el formato safetensors permite cargarlo con las utilidades de LeRobot o con PyTorch. No se documentan despliegues en vLLM, llama.cpp, Ollama o TGI (orientados a LLM de texto, no a políticas VLA).
+- Opciones de despliegue: el modelo está integrado en el ecosistema LeRobot de Hugging Face; el formato safetensors permite cargarlo con las utilidades de LeRobot o con PyTorch. No se documentan despliegues en vLLM, llama.cpp, Ollama o TGI (orientados a LLM de texto, no a políticas VLA).
 - Latencia y throughput estimados: no disponible. La inferencia usa 10 pasos de flow matching y n_action_steps=50.
 
 ## Comparativa con modelos similares
 
 | Modelo | Tipo | Parametros | Contexto / accion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| seelanrohan/blackRectHandoff_pi05_4 | VLA (pi05) fine-tune | ~2,3B | chunk de 50 acciones, img 224x224 | no disponible | HuggingFace (0 descargas) |
-| lerobot/pi05_base | VLA (pi05) base | ~2,3B | no disponible | no disponible | HuggingFace |
+| seelanrohan/blackRectHandoff_pi05_4 | VLA (pi05) fine-tune | ~2,3B | chunk de 50 acciones, img 224x224 | no disponible | Hugging Face (0 descargas) |
+| lerobot/pi05_base | VLA (pi05) base | ~2,3B | no disponible | no disponible | Hugging Face |
 | pi0 / pi05 de Physical Intelligence | VLA | ~3B (pi0 original) | no disponible | no disponible | publicaciones de Physical Intelligence |
 
 No se dispone de datos cuantitativos (tasas de éxito, retorno) para establecer una comparación objetiva con alternativas. La model card no ofrece métricas comparativas y la búsqueda web no devolvió información relevante sobre este modelo.
 
 ## Limitaciones y advertencias
 
-- La licencia no está especificada (`license: None` en la configuración y campo vacío en HuggingFace), por lo que no se puede confirmar que sea apto para uso comercial.
+- La licencia no está especificada (`license: None` en la configuración y campo vacío en Hugging Face), por lo que no se puede confirmar que sea apto para uso comercial.
 - Es un modelo específico de tarea: entrenado únicamente para el handoff bimanual de un objeto rectangular negro. No generaliza a otras tareas fuera de esa distribución.
 - El autor no ha publicado métricas de evaluación (evaluación desactivada, `eval_freq=0`), por lo que se desconoce su tasa de éxito real.
 - Riesgo elevado de fallo ante variaciones del entorno no vistas: posiciones, iluminación, geometría del objeto o número de cámaras distintos de los del dataset.
@@ -86,7 +86,7 @@ No se dispone de datos cuantitativos (tasas de éxito, retorno) para establecer 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/seelanrohan/blackRectHandoff_pi05_4
+- Hugging Face: https://huggingface.co/seelanrohan/blackRectHandoff_pi05_4
 - Checkpoint base: lerobot/pi05_base
 - Framework LeRobot: https://github.com/huggingface/lerobot
 - Datasets de entrenamiento: black_rectangular_object_two_arm_handoff_1_384, black_rectangular_object_two_arm_handoff_2_384, black_rectangular_object_two_arm_handoff_3_384, dagger_2_hil_segmented_384, dagger_4_hil_segmented_384, dagger_5_hil_segmented_384

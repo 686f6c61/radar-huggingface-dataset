@@ -71,5 +71,5 @@ No se dispone de modelos comparables en la información proporcionada. El reposi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/EllaPriest45/Krea2_actions
+- Hugging Face: https://huggingface.co/EllaPriest45/Krea2_actions
 - Perfil del autor: https://huggingface.co/EllaPriest45

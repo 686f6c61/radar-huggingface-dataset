@@ -107,9 +107,9 @@ En la informacion proporcionada no se incluyen adaptadores ni modelos comparable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ridopandi/qwen3-4b-text2cypher-en-id-qlora
+- Modelo en Hugging Face: https://huggingface.co/Ridopandi/qwen3-4b-text2cypher-en-id-qlora
 - Dataset: https://huggingface.co/datasets/Ridopandi/movies-text2cypher-en-id-v3
 - Repositorio del proyecto: https://github.com/ridopandiSinaga/qwen-qlora-text-to-cypher
-- Cuaderno de prueba: try_model.ipynb (incluido en el repositorio de HuggingFace)
-- Explorador de validacion: demo/index.html (incluido en el repositorio de HuggingFace)
-- Resultados de evaluacion: evaluation.json (incluido en el repositorio de HuggingFace)
+- Cuaderno de prueba: try_model.ipynb (incluido en el repositorio de Hugging Face)
+- Explorador de validacion: demo/index.html (incluido en el repositorio de Hugging Face)
+- Resultados de evaluacion: evaluation.json (incluido en el repositorio de Hugging Face)

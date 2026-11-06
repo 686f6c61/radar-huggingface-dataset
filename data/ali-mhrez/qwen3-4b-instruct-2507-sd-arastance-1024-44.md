@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-4B-Instruct-2507-SD-AraStance-1024-44 es un modelo de lenguaje fine-tuneado por Ali-Mhrez a partir de unsloth/Qwen3-4B-Instruct-2507, un modelo instruct de la familia Qwen3. El modelo se entrenó mediante Supervised Fine-Tuning (SFT) con la librería TRL y se distribuye en formato safetensors. El repositorio de HuggingFace tiene un tamaño de 1,2 GB y fue creado el 14 de septiembre de 2026.
+Qwen3-4B-Instruct-2507-SD-AraStance-1024-44 es un modelo de lenguaje fine-tuneado por Ali-Mhrez a partir de unsloth/Qwen3-4B-Instruct-2507, un modelo instruct de la familia Qwen3. El modelo se entrenó mediante Supervised Fine-Tuning (SFT) con la librería TRL y se distribuye en formato safetensors. El repositorio de Hugging Face tiene un tamaño de 1,2 GB y fue creado el 14 de septiembre de 2026.
 
 No se ha documentado el propósito específico del modelo ni el dataset de entrenamiento. El nombre del modelo incluye las siglas SD-AraStance, que podrían indicar una tarea de detección de postura en árabe, pero no hay información pública que lo confirme. Se trata de un modelo sin descargas ni likes, lo que limita su validación por parte de la comunidad.
 
@@ -17,7 +17,7 @@ No se ha documentado el propósito específico del modelo ni el dataset de entre
 | Tipos de cuantizacion | No disponible |
 | Idiomas soportados | No disponible |
 | Licencia | No disponible |
-| Formato de pesos | Safetensors (según tags de HuggingFace) |
+| Formato de pesos | Safetensors (según tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -58,7 +58,7 @@ No se dispone de información sobre modelos comparables ni datos de rendimiento.
 
 ## Limitaciones y advertencias
 
-- La licencia no está especificada en la metadata de HuggingFace, por lo que el uso comercial es incierto.
+- La licencia no está especificada en la metadata de Hugging Face, por lo que el uso comercial es incierto.
 - No se han documentado sesgos conocidos, limitaciones de contexto ni restricciones de idioma.
 - El modelo tiene 0 descargas y 0 likes, lo que indica que no ha sido validado por la comunidad.
 - El nombre del modelo sugiere una tarea específica (AraStance), pero no hay documentación que respalde su uso para ese fin.
@@ -66,6 +66,6 @@ No se dispone de información sobre modelos comparables ni datos de rendimiento.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-AraStance-1024-44
+- Modelo en Hugging Face: https://huggingface.co/Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-AraStance-1024-44
 - Modelo base: https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507
 - TRL: https://github.com/huggingface/trl

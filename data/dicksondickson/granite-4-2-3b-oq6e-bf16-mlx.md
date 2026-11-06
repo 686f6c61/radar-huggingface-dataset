@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dicksondickson/granite-4.2-3b-oQ6e-bf16-MLX | ~3.66B | no disponible | MLX safetensors (6 bits) | MIT | HuggingFace (repositorio del autor) |
-| ibm-granite/granite-4.2-3b | ~3.66B (base) | no disponible | safetensors (base) | no disponible en la informacion | HuggingFace (IBM) |
-| Granite 4.2 8B | no disponible | no disponible | safetensors (y variantes cuantizadas) | no disponible en la informacion | HuggingFace (IBM) |
-| Granite 4.2 30B | no disponible | no disponible | safetensors (y variantes cuantizadas) | no disponible en la informacion | HuggingFace (IBM) |
+| dicksondickson/granite-4.2-3b-oQ6e-bf16-MLX | ~3.66B | no disponible | MLX safetensors (6 bits) | MIT | Hugging Face (repositorio del autor) |
+| ibm-granite/granite-4.2-3b | ~3.66B (base) | no disponible | safetensors (base) | no disponible en la informacion | Hugging Face (IBM) |
+| Granite 4.2 8B | no disponible | no disponible | safetensors (y variantes cuantizadas) | no disponible en la informacion | Hugging Face (IBM) |
+| Granite 4.2 30B | no disponible | no disponible | safetensors (y variantes cuantizadas) | no disponible en la informacion | Hugging Face (IBM) |
 
 La comparativa se limita a la propia familia Granite 4.2, ya que no se dispone de datos de parametros, contexto ni rendimiento de alternativas externas en la informacion proporcionada.
 
@@ -84,7 +84,7 @@ La comparativa se limita a la propia familia Granite 4.2, ya que no se dispone d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dicksondickson/granite-4.2-3b-oQ6e-bf16-MLX
+- Repositorio Hugging Face: https://huggingface.co/dicksondickson/granite-4.2-3b-oQ6e-bf16-MLX
 - Modelo base: https://huggingface.co/ibm-granite/granite-4.2-3b
 - Documentacion de Granite 4.2 (IBM): https://www.ibm.com/granite/docs/models/granite4-2
 - Pagina de IBM Granite: https://www.ibm.com/granite

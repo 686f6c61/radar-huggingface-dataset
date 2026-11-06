@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ClearTrans-3B-SFT-Go-to-Cpp | ~3,09 mil millones | no disponible | Traduccion Go a C++ (SFT) | Qwen Research (no comercial) | HuggingFace, 0 descargas |
-| Qwen2.5-Coder-3B (base) | ~3,09 mil millones | no disponible en esta ficha | Generacion de codigo general | Apache 2.0 (modelo base original) | HuggingFace, ampliamente usado |
-| CodeT5+ / CodeT5 (variantes ~3B) | ~2-3 mil millones | no disponible | Code translation y generacion | Apache 2.0 (segun variante) | HuggingFace |
-| Qwen2.5-Coder-7B | ~7 mil millones | no disponible en esta ficha | Generacion de codigo general | Apache 2.0 | HuggingFace |
+| ClearTrans-3B-SFT-Go-to-Cpp | ~3,09 mil millones | no disponible | Traduccion Go a C++ (SFT) | Qwen Research (no comercial) | Hugging Face, 0 descargas |
+| Qwen2.5-Coder-3B (base) | ~3,09 mil millones | no disponible en esta ficha | Generacion de codigo general | Apache 2.0 (modelo base original) | Hugging Face, ampliamente usado |
+| CodeT5+ / CodeT5 (variantes ~3B) | ~2-3 mil millones | no disponible | Code translation y generacion | Apache 2.0 (segun variante) | Hugging Face |
+| Qwen2.5-Coder-7B | ~7 mil millones | no disponible en esta ficha | Generacion de codigo general | Apache 2.0 | Hugging Face |
 
 La comparativa con CodeT5+ y Qwen2.5-Coder-7B se ofrece como referencia de categoria; los datos de contexto y rendimiento de esos modelos no se detallan aqui por no estar en la informacion proporcionada. La diferencia clave de ClearTrans es su especializacion en una unica direccion de traduccion y su licencia restrictiva a investigacion.
 
@@ -84,7 +84,7 @@ La comparativa con CodeT5+ y Qwen2.5-Coder-7B se ofrece como referencia de categ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fdsffjdkf/ClearTrans-3B-SFT-Go-to-Cpp
+- Modelo en Hugging Face: https://huggingface.co/fdsffjdkf/ClearTrans-3B-SFT-Go-to-Cpp
 - Modelo base Qwen2.5-Coder-3B: https://huggingface.co/Qwen/Qwen2.5-Coder-3B
 - Repositorio de implementacion y replicacion ClearTrans: https://github.com/Xingzhehu/ClearTrans
 - Licencia del modelo (incluida en el repositorio): LICENSE

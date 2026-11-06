@@ -83,7 +83,7 @@ No se proporcionan datos de otros modelos ASR comparables, como Whisper, en la i
 - En ASR existe riesgo de alucinación en silencios o ruido, produciendo texto plausible pero incorrecto; no se documenta un mecanismo de mitigación.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/transcriber-app/parakeet-tdt-0.6b-v3-mlx-4bit
+- Hugging Face: https://huggingface.co/transcriber-app/parakeet-tdt-0.6b-v3-mlx-4bit
 - Modelo base NVIDIA: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Conversión MLX de mlx-community: https://huggingface.co/mlx-community/parakeet-tdt-0.6b-v3
 - Repositorio parakeet-mlx: https://github.com/senstella/parakeet-mlx

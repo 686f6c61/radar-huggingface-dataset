@@ -69,6 +69,6 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/felixbec/coca-checkpoint
+- Repositorio Hugging Face: https://huggingface.co/felixbec/coca-checkpoint
 - Documentación de arquitectura CoCa (investigación relacionada): https://www.aimodels.fyi/research-topics/coca-model
 - Proyecto relacionado 3D CoCa v2: https://github.com/AIGeeksGroup/3DCoCav2

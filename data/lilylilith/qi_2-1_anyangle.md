@@ -26,7 +26,7 @@ El adaptador es relevante porque ataca dos problemas recurrentes: la falta de co
 | Fuerza de LoRA recomendada | 1 (según la model card) |
 | Ajustes de muestreo recomendados | CFG 3.0 y 20 pasos o más |
 | Tamano del repositorio | 0,1 GB |
-| Fecha de publicación | 28 de septiembre de 2026 (según metadatos de HuggingFace) |
+| Fecha de publicación | 28 de septiembre de 2026 (según metadatos de Hugging Face) |
 | Descargas / likes | 0 / 31 |
 
 ## Arquitectura y entrenamiento
@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Control de angulo de camara | Preservacion de estilo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| QI_2.1_AnyAngle (este) | LoRA sobre Qwen-Image-2.1 | Ángulos continuos de azimut y elevación, guiados por un render 3D de referencia | Alta en renders reales (nada se alucina); depende de la calidad del splat o malla en estilos ilustrados | Apache 2.0 | HuggingFace |
-| Qwen-Image-2.1 sin adaptador | Modelo de edición de imagen base | Según prompt; en la práctica tiende a ángulos fijos | Riesgo de deriva de estilo con cambios angulares grandes | No disponible en esta información | HuggingFace |
+| QI_2.1_AnyAngle (este) | LoRA sobre Qwen-Image-2.1 | Ángulos continuos de azimut y elevación, guiados por un render 3D de referencia | Alta en renders reales (nada se alucina); depende de la calidad del splat o malla en estilos ilustrados | Apache 2.0 | Hugging Face |
+| Qwen-Image-2.1 sin adaptador | Modelo de edición de imagen base | Según prompt; en la práctica tiende a ángulos fijos | Riesgo de deriva de estilo con cambios angulares grandes | No disponible en esta información | Hugging Face |
 | Modelos de edición tipo Qwen Image Edit o FLUX.2 | Modelos de edición de imagen | Ángulos fijos en la mayoría de los casos, según la model card | Riesgo de deriva de estilo | No disponible en esta información | No disponible en esta información |
 
 No se dispone de datos de parámetros, longitud de contexto ni resultados de benchmarks de estas alternativas en la información proporcionada, por lo que la comparación es cualitativa.
@@ -94,7 +94,7 @@ No se dispone de datos de parámetros, longitud de contexto ni resultados de ben
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lilylilith/QI_2.1_AnyAngle
+- Modelo en Hugging Face: https://huggingface.co/lilylilith/QI_2.1_AnyAngle
 - Modelo base Qwen Image 2.1: https://huggingface.co/Qwen/Qwen-Image-2.1
 - MiniMax H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Perfil del autor en Civitai: https://civitai.com/user/lilylilith

@@ -89,7 +89,7 @@ La principal ventaja de este modelo frente al original es la aceleración de 8,1
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rlabz/whisper-large-v3-ct2-float16
+- Repositorio en Hugging Face: https://huggingface.co/rlabz/whisper-large-v3-ct2-float16
 - Modelo base `openai/whisper-large-v3`: https://huggingface.co/openai/whisper-large-v3
 - Conversión float32 similar: https://huggingface.co/ctranslate2-4you/whisper-large-v3-ct2-float32
 - Repositorio de faster-whisper: https://github.com/SYSTRAN/faster-whisper

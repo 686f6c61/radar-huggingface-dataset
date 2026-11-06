@@ -94,7 +94,7 @@ La comparación más directa es con la variante de 4B del mismo autor: el modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VaibhavKKM/hpc-assistant-qwen3-8b
+- Modelo en Hugging Face: https://huggingface.co/VaibhavKKM/hpc-assistant-qwen3-8b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Variante de 4B del mismo autor (receta de referencia): https://huggingface.co/VaibhavKKM/hpc-assistant-qwen3-4b
 - Modelo profesor: https://huggingface.co/Qwen/Qwen3-235B-A22B-Instruct-2507

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-a2c-PandaReachDense-v3 es un agente de aprendizaje por refuerzo entrenado con el algoritmo A2C (Advantage Actor-Critic) mediante la librería Stable-Baselines3 sobre el entorno PandaReachDense-v3 de panda-gym, un banco de pruebas de manipulación robótica basado en el brazo Franka Emika Panda y el motor de físicas PyBullet. No es un modelo de lenguaje: es una política de control que, a partir de la observación del estado del brazo y del objetivo, genera acciones continuas para mover el efector final hasta una posición objetivo. Lo publica el usuario harkrishkali en HuggingFace y no cuenta con descargas ni valoraciones en el momento de redactar esta ficha.
+a2c-PandaReachDense-v3 es un agente de aprendizaje por refuerzo entrenado con el algoritmo A2C (Advantage Actor-Critic) mediante la librería Stable-Baselines3 sobre el entorno PandaReachDense-v3 de panda-gym, un banco de pruebas de manipulación robótica basado en el brazo Franka Emika Panda y el motor de físicas PyBullet. No es un modelo de lenguaje: es una política de control que, a partir de la observación del estado del brazo y del objetivo, genera acciones continuas para mover el efector final hasta una posición objetivo. Lo publica el usuario harkrishkali en Hugging Face y no cuenta con descargas ni valoraciones en el momento de redactar esta ficha.
 
 El interés de este tipo de artefactos es doble. Por un lado, sirve como punto de partida reproducible para comparar algoritmos de RL en una tarea de recompensa densa y horizonte corto, donde los problemas de exploración son manejables. Por otro, permite a desarrolladores e investigadores validar rápidamente su infraestructura de entrenamiento y evaluación con Stable-Baselines3 sin tener que entrenar desde cero. El resultado declarado por el autor es un retorno medio de -0,18 ± 0,14 en PandaReachDense-v3, una cifra modesta y no verificada que conviene interpretar con cautela.
 
@@ -104,7 +104,7 @@ En cuanto a parametros y contexto, la comparacion no aplica: todos estos metodos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/harkrishkali/a2c-PandaReachDense-v3
+- Modelo en Hugging Face: https://huggingface.co/harkrishkali/a2c-PandaReachDense-v3
 - Stable-Baselines3 (documentacion y repositorio): https://stable-baselines3.readthedocs.io/
 - Repositorio de Stable-Baselines3: https://github.com/DLR-RM/stable-baselines3
 - panda-gym (entornos de manipulacion con el brazo Panda): https://github.com/qgallouedec/panda-gym

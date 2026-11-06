@@ -21,7 +21,7 @@ Su relevancia actual es práctica: se trata de una de las vías más ligeras par
 | Licencia | no disponible en el repositorio; el modelo base se distribuye bajo los términos de uso de Gemma (Gemma Terms of Use) |
 | Formato de pesos | GGUF; el modelo base se publica en safetensors |
 | Modelo base | google/gemma-3-4b-it-qat |
-| Fecha de creacion del repositorio | 2026-10-12 (según metadatos de HuggingFace) |
+| Fecha de creacion del repositorio | 2026-10-12 (según metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -98,14 +98,14 @@ Puntos diferenciales relevantes: frente a Llama 3.2 3B y Qwen2.5 3B, el modelo d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hrm-labs/gemma-3-4b-it-qat-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/hrm-labs/gemma-3-4b-it-qat-GGUF
 - Modelo base: https://huggingface.co/google/gemma-3-4b-it-qat
 - GGUF de referencia citado en la model card: https://huggingface.co/ggml-org/gemma-3-4b-it-qat-GGUF
-- Familia Gemma 3 en HuggingFace: https://huggingface.co/google/gemma-3-4b-it
+- Familia Gemma 3 en Hugging Face: https://huggingface.co/google/gemma-3-4b-it
 - Informe técnico de Gemma 3 (Google): https://arxiv.org/abs/2503.19786
 - Anuncio de Gemma 3 en el blog de Google: https://blog.google/technology/developers/gemma-3/
 - Términos de uso de Gemma: https://ai.google.dev/gemma/terms
 - Política de usos prohibidos de Gemma: https://ai.google.dev/gemma/prohibited_use_policy
 - Repositorio de llama.cpp: https://github.com/ggml-org/llama.cpp
 
-Nota: la búsqueda web realizada no devolvió resultados relevantes sobre el modelo; los enlaces anteriores proceden de los metadatos de HuggingFace y de la documentación pública del modelo base.
+Nota: la búsqueda web realizada no devolvió resultados relevantes sobre el modelo; los enlaces anteriores proceden de los metadatos de Hugging Face y de la documentación pública del modelo base.

@@ -76,10 +76,10 @@ Las cifras siguientes son estimaciones derivadas del recuento real de parámetro
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Evaluacion publicada |
 |---|---|---|---|---|---|
-| joshycodes/qwen3.5-9b-fve-mixdiscern-s0 | 8,95 B | No disponible | Research-only | HuggingFace, 0 descargas | Ninguna |
-| Qwen/Qwen3.5-9B (base) | No disponible (en torno a 9 B por continuidad de nombre) | No disponible | No disponible en la informacion proporcionada | HuggingFace | No disponible |
-| Qwen3-8B | 8,2 B aprox. | 32.768 tokens nativo, ampliable con YaRN | Apache 2.0 | HuggingFace, ampliamente desplegado | Si, publicadas por el autor del modelo base |
-| Llama 3.1 8B | 8,03 B | 128.000 tokens | Llama 3.1 Community License | HuggingFace, ampliamente desplegado | Si, publicadas por el autor |
+| joshycodes/qwen3.5-9b-fve-mixdiscern-s0 | 8,95 B | No disponible | Research-only | Hugging Face, 0 descargas | Ninguna |
+| Qwen/Qwen3.5-9B (base) | No disponible (en torno a 9 B por continuidad de nombre) | No disponible | No disponible en la informacion proporcionada | Hugging Face | No disponible |
+| Qwen3-8B | 8,2 B aprox. | 32.768 tokens nativo, ampliable con YaRN | Apache 2.0 | Hugging Face, ampliamente desplegado | Si, publicadas por el autor del modelo base |
+| Llama 3.1 8B | 8,03 B | 128.000 tokens | Llama 3.1 Community License | Hugging Face, ampliamente desplegado | Si, publicadas por el autor |
 
 Advertencia: los datos de las dos últimas filas corresponden a conocimiento general de esos modelos y no proceden de la información proporcionada en esta búsqueda; conviene verificarlos en sus repositorios oficiales. La comparación de rendimiento no puede completarse porque este checkpoint carece de cualquier evaluación publicada.
 
@@ -97,7 +97,7 @@ Advertencia: los datos de las dos últimas filas corresponden a conocimiento gen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/qwen3.5-9b-fve-mixdiscern-s0
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/qwen3.5-9b-fve-mixdiscern-s0
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Corpus citado `flourishing-vs-equanimity`: no disponible (no se proporciona URL)
 - Repositorio `welfare-improvements`: no disponible (no se proporciona URL)

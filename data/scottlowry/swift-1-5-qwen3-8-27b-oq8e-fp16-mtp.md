@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Swift-1.5-Qwen3.8-27b-oQ8e-fp16-mtp es una version cuantizada del modelo ukisai/Swift-1.5-Qwen3.8-27b, publicada por el usuario scottlowry en HuggingFace. No se trata de un modelo entrenado desde cero, sino de un artefacto de cuantizacion: el autor ha aplicado la herramienta oQ (oMLX v0.7.0) para generar pesos en formato MLX safetensors con cuantizacion de precision mixta de 8 bits. El modelo resultante conserva los 27.781.427.952 parametros del modelo base (aproximadamente 27,8 mil millones) y ocupa 30,9 GB en el repositorio.
+Swift-1.5-Qwen3.8-27b-oQ8e-fp16-mtp es una version cuantizada del modelo ukisai/Swift-1.5-Qwen3.8-27b, publicada por el usuario scottlowry en Hugging Face. No se trata de un modelo entrenado desde cero, sino de un artefacto de cuantizacion: el autor ha aplicado la herramienta oQ (oMLX v0.7.0) para generar pesos en formato MLX safetensors con cuantizacion de precision mixta de 8 bits. El modelo resultante conserva los 27.781.427.952 parametros del modelo base (aproximadamente 27,8 mil millones) y ocupa 30,9 GB en el repositorio.
 
 Por el identificador `qwen3_5` y el nombre del base model, se deduce que la arquitectura subyacente es de la familia Qwen3, aunque la model card no aporta informacion sobre la arquitectura interna, los datos de entrenamiento ni el proceso de alineacion. El proposito de esta publicacion es ofrecer una version optimizada para inference en hardware Apple Silicon mediante el framework MLX, con un tamano de grupo de 64 y 8 bits, lo que reduce el peso respecto a los pesos originales manteniendo una calidad de cuantizacion relativamente alta.
 
@@ -91,7 +91,7 @@ No se conocen modelos comparables adicionales dentro de la informacion proporcio
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/scottlowry/Swift-1.5-Qwen3.8-27b-oQ8e-fp16-mtp
+- Repositorio en Hugging Face: https://huggingface.co/scottlowry/Swift-1.5-Qwen3.8-27b-oQ8e-fp16-mtp
 - Modelo base: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b
 - Herramienta oQ (oMLX): https://github.com/jundot/omlx
 

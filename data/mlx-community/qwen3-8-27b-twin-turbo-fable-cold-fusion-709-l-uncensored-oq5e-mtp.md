@@ -1,7 +1,7 @@
 # mlx-community/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-oQ5e-mtp
 
 ## Resumen
-El modelo identificado como `mlx-community/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-oQ5e-mtp` es un repositorio publicado por la organizacion mlx-community en HuggingFace. La informacion disponible en la ficha del repositorio es extremadamente limitada: no se declara licencia, no se declaran idiomas soportados, no se indica pipeline de inferencia y no se aporta informacion sobre arquitectura, datos de entrenamiento ni resultados de evaluacion.
+El modelo identificado como `mlx-community/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-oQ5e-mtp` es un repositorio publicado por la organizacion mlx-community en Hugging Face. La informacion disponible en la ficha del repositorio es extremadamente limitada: no se declara licencia, no se declaran idiomas soportados, no se indica pipeline de inferencia y no se aporta informacion sobre arquitectura, datos de entrenamiento ni resultados de evaluacion.
 
 El nombre del repositorio sugiere una conversion o cuantizacion (el sufijo "oQ5e" y la referencia a "mlx" apuntan a un formato optimizado para Apple Silicon) de un modelo base de la familia Qwen con aproximadamente 27.000 millones de parametros, con modificaciones de ajuste fino de tipo comunitario ("TWIN-TURBO", "Fable", "Cold Fusion") y una variante declarada como "uncensored". Tambien aparece el sufijo "mtp", que en la nomenclatura habitual de Qwen corresponde a multi-token prediction. Ninguno de estos extremos puede confirmarse con la informacion proporcionada, por lo que deben tratarse como indicios derivados del nombre y no como especificaciones verificadas.
 
@@ -21,7 +21,7 @@ El repositorio tiene 0 descargas y 1 "like", y fue creado y actualizado el 17 de
 | Formato de pesos | no disponible en la ficha; el prefijo "mlx" del autor sugiere pesos en formato MLX para Apple Silicon, sin confirmar |
 
 ## Arquitectura y entrenamiento
-No se ha publicado informacion sobre la arquitectura en los datos disponibles. El identificador del repositorio contiene terminos que, en la practica habitual de publicacion de modelos en HuggingFace, suelen corresponder a: una familia base (Qwen), un conjunto de ajustes finos comunitarios (etiquetas como "TWIN-TURBO", "Fable" o "Cold Fusion"), una variante sin filtrado de contenido ("Uncensored"), una cuantizacion concreta ("oQ5e") y una capacidad de prediccion multi-token ("mtp"). Se desconoce por completo el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de RLHF, DPO u otros ajustes por preferencias, asi como cualquier innovacion tecnica asociada.
+No se ha publicado informacion sobre la arquitectura en los datos disponibles. El identificador del repositorio contiene terminos que, en la practica habitual de publicacion de modelos en Hugging Face, suelen corresponder a: una familia base (Qwen), un conjunto de ajustes finos comunitarios (etiquetas como "TWIN-TURBO", "Fable" o "Cold Fusion"), una variante sin filtrado de contenido ("Uncensored"), una cuantizacion concreta ("oQ5e") y una capacidad de prediccion multi-token ("mtp"). Se desconoce por completo el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de RLHF, DPO u otros ajustes por preferencias, asi como cualquier innovacion tecnica asociada.
 
 No se dispone de informacion sobre el proceso de conversion a MLX, el calibrado de la cuantizacion ni las posibles perdidas de calidad respecto al modelo original. Tampoco se documenta si el ajuste fino se realizo sobre pesos completos o sobre adaptadores, ni que tecnicas de alineacion se aplicaron o se eliminaron en la variante "uncensored".
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| mlx-community/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-oQ5e-mtp | no disponible (~27B segun el nombre) | no disponible | no disponible | no disponible (posiblemente MLX) | Repositorio en HuggingFace, 0 descargas |
+| mlx-community/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-oQ5e-mtp | no disponible (~27B segun el nombre) | no disponible | no disponible | no disponible (posiblemente MLX) | Repositorio en Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No es posible establecer una comparativa rigurosa con otros modelos porque no se dispone de especificaciones verificadas del modelo analizado ni de datos de rendimiento propios. Cualquier comparacion con alternativas de la familia Qwen, Llama, Mistral u otras seria especulativa y no debe incluirse en una evaluacion tecnica.
@@ -80,6 +80,6 @@ No es posible establecer una comparativa rigurosa con otros modelos porque no se
 - Fechas del repositorio: la creacion y ultima actualizacion coinciden en el 17 de septiembre de 2026, lo que sugiere una publicacion sin mantenimiento posterior.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/mlx-community/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-oQ5e-mtp
+- Hugging Face: https://huggingface.co/mlx-community/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-oQ5e-mtp
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relevante. Todas las referencias devueltas corresponden a guias de viajes sobre islas y no guardan relacion con el modelo.
 - Paper, blog, repositorio de codigo o demo: no disponibles.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje presentado por el autor test-toolathon en el repositorio de HuggingFace con ID `test-toolathon/MyAwesomeModel-TestRepo`. Según la model card, se trata de una versión actualizada de un modelo previo que ha mejorado significativamente sus capacidades de razonamiento e inferencia mediante un mayor uso de recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento. El autor afirma que el modelo alcanza resultados destacados en evaluaciones de matemáticas, programación y lógica general, acercándose al rendimiento de otros modelos líderes.
+MyAwesomeModel es un modelo de lenguaje presentado por el autor test-toolathon en el repositorio de Hugging Face con ID `test-toolathon/MyAwesomeModel-TestRepo`. Según la model card, se trata de una versión actualizada de un modelo previo que ha mejorado significativamente sus capacidades de razonamiento e inferencia mediante un mayor uso de recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento. El autor afirma que el modelo alcanza resultados destacados en evaluaciones de matemáticas, programación y lógica general, acercándose al rendimiento de otros modelos líderes.
 
 El repositorio está etiquetado con `transformers`, `pytorch`, `bert` y `feature-extraction`, lo que sugiere una arquitectura basada en BERT orientada a extracción de características, aunque la model card describe capacidades de razonamiento complejo y generación de texto. La ficha técnica del autor menciona una mejora notable en el test AIME 2025, pasando de una precisión del 70 % al 87,5 %, así como una reducción de la tasa de alucinación y un mejor soporte para function calling. No obstante, la información pública disponible es escasa: el repositorio tiene 0 descargas, 0 likes y un tamaño de 0,0 GB, por lo que muchos datos técnicos clave no están disponibles.
 
@@ -10,7 +10,7 @@ El repositorio está etiquetado con `transformers`, `pytorch`, `bert` y `feature
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (etiquetado como `bert` en HuggingFace) |
+| Arquitectura | no disponible (etiquetado como `bert` en Hugging Face) |
 | Parametros totales | no disponible |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
@@ -21,7 +21,7 @@ El repositorio está etiquetado con `transformers`, `pytorch`, `bert` y `feature
 
 ## Arquitectura y entrenamiento
 
-La model card no proporciona detalles arquitectónicos concretos. Las etiquetas del repositorio en HuggingFace indican `bert` y `feature-extraction`, lo que sugiere una arquitectura basada en transformer tipo BERT, pero no se especifica el número de capas, dimensiones ocultas ni el tipo de atención. La card menciona que el modelo ha sido mejorado mediante "recursos computacionales incrementados" y "mecanismos de optimización algorítmica durante el post-entrenamiento", pero no se detalla si se empleó RLHF, DPO u otra técnica. Tampoco se indica el número de tokens de entrenamiento ni la composición del dataset. Se menciona que el modelo soporta system prompts y que no requiere tokens especiales al inicio de la salida para forzar un patrón de pensamiento, lo que sugiere que ha sido entrenado para razonar de forma natural. La versión "Small" del modelo comparte tokenizer con la versión principal, pero no se ofrecen más especificaciones.
+La model card no proporciona detalles arquitectónicos concretos. Las etiquetas del repositorio en Hugging Face indican `bert` y `feature-extraction`, lo que sugiere una arquitectura basada en transformer tipo BERT, pero no se especifica el número de capas, dimensiones ocultas ni el tipo de atención. La card menciona que el modelo ha sido mejorado mediante "recursos computacionales incrementados" y "mecanismos de optimización algorítmica durante el post-entrenamiento", pero no se detalla si se empleó RLHF, DPO u otra técnica. Tampoco se indica el número de tokens de entrenamiento ni la composición del dataset. Se menciona que el modelo soporta system prompts y que no requiere tokens especiales al inicio de la salida para forzar un patrón de pensamiento, lo que sugiere que ha sido entrenado para razonar de forma natural. La versión "Small" del modelo comparte tokenizer con la versión principal, pero no se ofrecen más especificaciones.
 
 ## Capacidades
 
@@ -73,7 +73,7 @@ Además, la card menciona que en el test AIME 2025 el modelo logró una precisi�
 - VRAM estimada para inferencia: no disponible. El repositorio tiene un tamaño de 0,0 GB, lo que sugiere que no contiene pesos publicados.
 - GPU recomendadas: no disponible.
 - Compatibilidad con consumer GPU: no disponible.
-- Opciones de despliegue: la librería indicada es `transformers`, por lo que se podría usar con las herramientas de HuggingFace (pipeline, TGI, etc.), pero no hay confirmación de pesos publicados.
+- Opciones de despliegue: la librería indicada es `transformers`, por lo que se podría usar con las herramientas de Hugging Face (pipeline, TGI, etc.), pero no hay confirmación de pesos publicados.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -91,7 +91,7 @@ La model card incluye una comparativa interna con los modelos "Model1", "Model2"
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/test-toolathon/MyAwesomeModel-TestRepo
+- Repositorio Hugging Face: https://huggingface.co/test-toolathon/MyAwesomeModel-TestRepo
 - Repositorio alternativo (toolathon123): https://huggingface.co/toolathon123/MyAwesomeModel-TestRepo
 - Repositorio alternativo (toolathlon-eval-05): https://huggingface.co/toolathlon-eval-05/MyAwesomeModel-TestRepo
 - Página de análisis en free2aitools: https://free2aitools.com/model/toolathlon-eval-10/myawesomemodel-testrepo

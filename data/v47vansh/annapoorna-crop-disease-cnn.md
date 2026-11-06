@@ -6,7 +6,7 @@ Annapoorna crop disease CNN es un modelo de clasificación de imágenes desarrol
 
 El modelo resuelve un problema acotado y práctico: la identificación automática de patologías foliares en cultivos de interés agrícola, un caso de uso clásico de visión por computador aplicada al sector primario. No es un modelo de propósito general ni un modelo de lenguaje: es un clasificador de imagen de dominio específico, con entrada fija de 224x224 píxeles RGB y salida de 42 clases.
 
-Su relevancia es limitada y muy específica. Con 0 descargas y 0 likes en HuggingFace, una precisión de validación del 71,7% y una pérdida de validación de 4,02 (que el propio autor señala como indicio de sobreconfianza), debe considerarse un modelo experimental o de demostración más que una herramienta lista para producción. Su interés principal radica en servir como referencia para quien quiera reproducir o mejorar un pipeline de clasificación de enfermedades de cultivos con Keras.
+Su relevancia es limitada y muy específica. Con 0 descargas y 0 likes en Hugging Face, una precisión de validación del 71,7% y una pérdida de validación de 4,02 (que el propio autor señala como indicio de sobreconfianza), debe considerarse un modelo experimental o de demostración más que una herramienta lista para producción. Su interés principal radica en servir como referencia para quien quiera reproducir o mejorar un pipeline de clasificación de enfermedades de cultivos con Keras.
 
 ## Especificaciones tecnicas
 
@@ -76,7 +76,7 @@ No se dispone de datos de benchmarks ni de especificaciones comparables de otros
 
 | Modelo | Parametros | Contexto/entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Annapoorna crop disease CNN | no disponible | Imagen 224x224 RGB | 71,7% val. accuracy; loss 4,02 | MIT | HuggingFace (0 descargas) |
+| Annapoorna crop disease CNN | no disponible | Imagen 224x224 RGB | 71,7% val. accuracy; loss 4,02 | MIT | Hugging Face (0 descargas) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks ni de especificaciones comparables de otros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/v47vansh/annapoorna-crop-disease-cnn
+- Modelo en Hugging Face: https://huggingface.co/v47vansh/annapoorna-crop-disease-cnn
 - Repositorio del proyecto Annapoorna: https://github.com/V47VANSH/Annapoorna
 - Clases y script de predicción: https://github.com/V47VANSH/Annapoorna/blob/main/backend/predict.py
 - Dataset de entrenamiento (Kaggle): https://www.kaggle.com/datasets/jawadali1045/20k-multi-class-crop-disease-images

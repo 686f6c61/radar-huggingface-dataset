@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tennda-Nano es un modelo de lenguaje de 4,6 mil millones de parámetros, desarrollado por MLA299 y cuantizado a formato GGUF por mradermacher para su uso en entornos de inferencia locales. Según las etiquetas de HuggingFace, está orientado a tareas de generación de texto, código y SQL, con capacidades conversacionales. Esta ficha se basa en la versión cuantizada GGUF, que es la que ofrece archivos listos para ejecutar con herramientas como llama.cpp u Ollama.
+Tennda-Nano es un modelo de lenguaje de 4,6 mil millones de parámetros, desarrollado por MLA299 y cuantizado a formato GGUF por mradermacher para su uso en entornos de inferencia locales. Según las etiquetas de Hugging Face, está orientado a tareas de generación de texto, código y SQL, con capacidades conversacionales. Esta ficha se basa en la versión cuantizada GGUF, que es la que ofrece archivos listos para ejecutar con herramientas como llama.cpp u Ollama.
 
 La relevancia de este modelo radica en su tamaño compacto, que lo hace adecuado para ejecutarse en hardware de consumo, y en su enfoque hacia código y SQL, un nicho útil para desarrolladores que buscan un asistente local sin depender de servicios en la nube. Sin embargo, la información pública disponible es muy limitada: no se especifican detalles de arquitectura, contexto, entrenamiento ni benchmarks, por lo que esta ficha se basa únicamente en los datos aportados por el repositorio de cuantización y las etiquetas del modelo original.
 

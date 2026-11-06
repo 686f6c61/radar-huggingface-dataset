@@ -2,7 +2,7 @@
 
 ## Resumen
 
-YDDLJW es un modelo publicado en HuggingFace por el usuario zoarag bajo un repositorio de acceso restringido (gated), lo que obliga a aceptar condiciones en la plataforma antes de poder descargar los pesos. El repositorio ocupa 9,8 GB, un tamano que sugiere un modelo de varios miles de millones de parametros en precision de 16 bits o un modelo mayor cuantizado, aunque no se ha publicado informacion oficial que confirme la arquitectura ni el numero exacto de parametros.
+YDDLJW es un modelo publicado en Hugging Face por el usuario zoarag bajo un repositorio de acceso restringido (gated), lo que obliga a aceptar condiciones en la plataforma antes de poder descargar los pesos. El repositorio ocupa 9,8 GB, un tamano que sugiere un modelo de varios miles de millones de parametros en precision de 16 bits o un modelo mayor cuantizado, aunque no se ha publicado informacion oficial que confirme la arquitectura ni el numero exacto de parametros.
 
 No se dispone de model card, pipeline declarado, licencia, idiomas soportados ni resultados de benchmarks. La unica metadata publica son los tags (`region:us`), las fechas de creacion (3 de abril de 2026) y ultima actualizacion (1 de noviembre de 2026), y un contador de descargas de cero con un solo "like", lo que indica que el modelo no ha tenido difusion ni validacion por parte de la comunidad.
 
@@ -34,7 +34,7 @@ Respecto al entrenamiento, se desconoce el volumen de tokens utilizados, la comp
 - No consta soporte de agentes ni de razonamiento multi-paso.
 - No consta capacidad multilingue declarada.
 - No consta modo de razonamiento (thinking mode), vision, audio ni ninguna otra modalidad.
-- El unico dato funcional verificable es que el repositorio es descargable tras aceptar las condiciones de acceso en HuggingFace.
+- El unico dato funcional verificable es que el repositorio es descargable tras aceptar las condiciones de acceso en Hugging Face.
 
 ## Casos de uso
 
@@ -42,7 +42,7 @@ Dado que no se dispone de especificaciones ni de evaluaciones publicadas, los si
 
 - Evaluacion interna de modelos de terceros: un equipo puede solicitar acceso al repositorio y ejecutar una bateria propia de pruebas (perplejidad, tareas de razonamiento, generacion de codigo) para caracterizar el modelo antes de considerar su uso.
 - Pruebas de concepto en entornos controlados: al tratarse de un modelo sin documentacion, su uso sensato inicial es la experimentacion aislada, sin exposicion a usuarios finales ni datos sensibles.
-- Investigacion sobre modelos poco documentados: el caso puede servir para estudiar practicas de publicacion en HuggingFace, reproducibilidad y trazabilidad de artefactos sin model card.
+- Investigacion sobre modelos poco documentados: el caso puede servir para estudiar practicas de publicacion en Hugging Face, reproducibilidad y trazabilidad de artefactos sin model card.
 - Analisis de seguridad de artefactos: un repositorio de 9,8 GB sin formato declarado es un candidato razonable para inspeccion de pesos (escaneo de tensores, verificacion de integridad) antes de cualquier despliegue.
 - Fine-tuning exploratorio: si el formato de pesos resulta compatible con las herramientas habituales (transformers, PEFT), podria evaluarse un ajuste supervisado en dominios concretos, siempre tras verificar la licencia.
 - Benchmarking comparativo propio: incluir el modelo en una evaluacion interna frente a alternativas conocidas para medir su calidad real, dado que no existen cifras publicadas por el autor.
@@ -65,7 +65,7 @@ No es posible establecer una comparativa fiable sin conocer el tamano, la arquit
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| YDDLJW (zoarag) | no disponible | no disponible | no disponible | Gated en HuggingFace |
+| YDDLJW (zoarag) | no disponible | no disponible | no disponible | Gated en Hugging Face |
 | Llama 3.1 8B | 8B | 128k | Llama 3.1 Community License | Abierta |
 | Mistral 7B v0.3 | 7,2B | 32k | Apache 2.0 | Abierta |
 | Qwen2.5 7B | 7,6B | 128k | Apache 2.0 (mayoria de variantes) | Abierta |
@@ -86,5 +86,5 @@ La comparacion no puede extenderse a rendimiento ni a calidad porque el modelo d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/zoarag/YDDLJW
+- Repositorio en Hugging Face: https://huggingface.co/zoarag/YDDLJW
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

@@ -73,7 +73,7 @@ Los datos proceden de la model card del autor y se midieron sobre cuatro clips e
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Formato/Despliegue |
 |---|---|---|---|---|---|
 | diarizeapp/qwen3-asr-1.7b-onnx-qnn | 1.7B | No disponible | en, ja | Apache 2.0 | ONNX QNN (NPU Snapdragon X Elite) |
-| Qwen/Qwen3-ASR-1.7B-hf | 1.7B | No disponible | No disponible | Apache 2.0 | Safetensors (HuggingFace) |
+| Qwen/Qwen3-ASR-1.7B-hf | 1.7B | No disponible | No disponible | Apache 2.0 | Safetensors (Hugging Face) |
 | Whisper large-v3 | 1.55B | 30 s de audio | Multilingüe | MIT | Safetensors, ONNX, CTranslate2 |
 | Whisper small | 244M | 30 s de audio | Multilingüe | MIT | Safetensors, ONNX, CTranslate2 |
 
@@ -93,5 +93,5 @@ La comparación con Whisper se ofrece como referencia de categoría (ASR de tama
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/diarizeapp/qwen3-asr-1.7b-onnx-qnn
+- Repositorio Hugging Face: https://huggingface.co/diarizeapp/qwen3-asr-1.7b-onnx-qnn
 - Modelo base: https://huggingface.co/Qwen/Qwen3-ASR-1.7B-hf

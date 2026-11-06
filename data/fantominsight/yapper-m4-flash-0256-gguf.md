@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Yapper M4 Flash 0256 es un modelo de generacion de texto publicado por el usuario Fantominsight en HuggingFace, distribuido unicamente en formato GGUF cuantizado en Q8_0. Segun su model card, esta construido sobre la arquitectura Mistral3 y cuenta con aproximadamente 3.430 millones de parametros (3,62 mil millones segun el propio autor, frente a los 3.429.006.336 contabilizados sobre los pesos safetensors). El repositorio ocupa 3,7 GB, lo que es coherente con una cuantizacion de 8 bits sobre un modelo denso de ese tamano.
+Yapper M4 Flash 0256 es un modelo de generacion de texto publicado por el usuario Fantominsight en Hugging Face, distribuido unicamente en formato GGUF cuantizado en Q8_0. Segun su model card, esta construido sobre la arquitectura Mistral3 y cuenta con aproximadamente 3.430 millones de parametros (3,62 mil millones segun el propio autor, frente a los 3.429.006.336 contabilizados sobre los pesos safetensors). El repositorio ocupa 3,7 GB, lo que es coherente con una cuantizacion de 8 bits sobre un modelo denso de ese tamano.
 
 El modelo se posiciona explicitamente como una herramienta para tareas rapidas y basicas, con una ventana de contexto de hasta 16K tokens y sin modo de razonamiento ("el razonamiento no esta previsto", segun la model card). Declara soporte para ruso, ingles, chino, japones, espanol, aleman y luganda, y destaca en analisis literario, juegos de rol, seguimiento de instrucciones y tareas agenticas basicas.
 
@@ -22,7 +22,7 @@ Su relevancia practica es limitada por el momento: acumula 0 descargas y 0 likes
 | Formato de pesos | GGUF en el repositorio; el recuento de parametros se ha verificado sobre safetensors |
 | Pipeline | text-generation |
 | Tamano del repositorio | 3,7 GB |
-| Fecha de publicacion | 2026-09-19 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 2026-09-19 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 - GPU recomendadas: cualquier GPU de consumo con 6 GB o mas de VRAM, como RTX 3060 12 GB, RTX 4060 Ti 16 GB o RTX 4090. En el segmento profesional, cabe holgadamente en A100, H100 o L40S, aunque estaria infrautilizado.
 - Cabe en GPU de consumo: si. Practicamente cualquier tarjeta con 6-8 GB de VRAM puede ejecutarlo en Q8_0; con cuantizaciones menores (no publicadas) bastarian 4 GB.
 - Tambien puede ejecutarse en CPU con 8 GB de RAM, con un rendimiento muy dependiente del ancho de banda de memoria. El autor cifra en 5-8 tokens/s de salida con 29 GB/s.
-- Opciones de despliegue: Ollama, llama.cpp, LM Studio y "vLM", segun la model card. La compatibilidad con vLLM o TGI no esta confirmada; el tag `endpoints_compatible` de HuggingFace sugiere que puede servirse a traves de la Inference Endpoints, aunque no se detalla la configuracion.
+- Opciones de despliegue: Ollama, llama.cpp, LM Studio y "vLM", segun la model card. La compatibilidad con vLLM o TGI no esta confirmada; el tag `endpoints_compatible` de Hugging Face sugiere que puede servirse a traves de la Inference Endpoints, aunque no se detalla la configuracion.
 - Limitacion en dispositivos moviles: el propio autor advierte de que en telefonos como Xiaomi 11, 12 o 13 puede no funcionar por falta de potencia de CPU y calentamiento excesivo de la bateria.
 - Latencia y throughput: 5-8 tokens/s de salida y 18-23 tokens/s de entrada con 29 GB/s de ancho de banda de memoria, segun el autor.
 
@@ -88,6 +88,6 @@ No disponible. La informacion proporcionada no incluye datos de benchmarks ni es
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Fantominsight/Yapper-M4-Flash-0256-GGUF
+- Hugging Face: https://huggingface.co/Fantominsight/Yapper-M4-Flash-0256-GGUF
 
 No se han encontrado en la busqueda web otros enlaces relevantes (papers, blogs, repositorios o demos) asociados a este modelo. Los resultados devueltos corresponden a paginas genericas de YouTube y no guardan relacion con el modelo.

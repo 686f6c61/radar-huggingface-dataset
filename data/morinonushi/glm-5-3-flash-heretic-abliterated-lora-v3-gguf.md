@@ -165,7 +165,7 @@ No se han identificado en la informacion disponible otros adaptadores o modelos 
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/MorinoNushi/GLM-5.3-Flash-Heretic-Abliterated-LoRA-V3-GGUF
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/MorinoNushi/GLM-5.3-Flash-Heretic-Abliterated-LoRA-V3-GGUF
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Cuantizaciones GGUF del base usadas para el ajuste (UD-IQ4_XS): https://huggingface.co/unsloth/GLM-5.3-Flash-GGUF
 - Herramienta heretic-gguf (port GGUF de Heretic): https://github.com/MoriNoNushi/heretic-gguf

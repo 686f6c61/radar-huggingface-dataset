@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`travi-sgtg87/classification-practice` es un repositorio de HuggingFace que contiene una implementación propia y compacta de DeiT (Data-efficient Image Transformer) para tareas de clasificación, publicada bajo licencia MIT. El autor la describe explícitamente como una configuración de escala "nano" pensada para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de laboratorio, y no como un modelo preentrenado listo para producción. El checkpoint `model.safetensors` que se distribuye es una inicialización válida para ejecutar el código, no el resultado de un entrenamiento completado.
+`travi-sgtg87/classification-practice` es un repositorio de Hugging Face que contiene una implementación propia y compacta de DeiT (Data-efficient Image Transformer) para tareas de clasificación, publicada bajo licencia MIT. El autor la describe explícitamente como una configuración de escala "nano" pensada para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de laboratorio, y no como un modelo preentrenado listo para producción. El checkpoint `model.safetensors` que se distribuye es una inicialización válida para ejecutar el código, no el resultado de un entrenamiento completado.
 
 La relevancia del artefacto es, por tanto, metodológica más que de rendimiento: sirve como plantilla reproducible para montar un pipeline de clasificación con DeiT, con su `config.json` de arquitectura y su `training_args.json` de receta por defecto (optimizador Lion con calentamiento lineal). Con 16.576 parámetros totales según los pesos safetensors, el modelo es varios órdenes de magnitud más pequeno que cualquier variante estándar de la familia DeiT, lo que confirma que se trata de un esqueleto de código y no de un modelo con capacidad predictiva útil.
 
@@ -75,10 +75,10 @@ No se dispone de datos verificables de modelos comparables dentro de la informac
 - Sesgos conocidos: no disponibles; al no haber datos de entrenamiento, no hay caracterización posible de sesgos.
 - Limitaciones de contexto e idioma: no aplica una ventana de contexto textual; no se declaran idiomas ni resolución de imagen soportada.
 - Licencia: MIT, que permite uso comercial, modificación y redistribución con conservación del aviso de copyright. No obstante, la propia model card advierte de revisar por separado los términos de los datos de origen si el repositorio se usa con conjuntos de datos externos.
-- Caveat de producción: las APIs genéricas de carga automática de HuggingFace requieren un adaptador explícito, ya que se trata de una implementación a medida; no debe asumirse compatibilidad directa con `AutoModel`.
+- Caveat de producción: las APIs genéricas de carga automática de Hugging Face requieren un adaptador explícito, ya que se trata de una implementación a medida; no debe asumirse compatibilidad directa con `AutoModel`.
 - No existe una versión entrenada publicada; los resultados de cualquier checkpoint futuro deberán documentarse por separado de los valores por defecto que se envían aquí.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/travi-sgtg87/classification-practice
+- Repositorio en Hugging Face: https://huggingface.co/travi-sgtg87/classification-practice
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información proporcionada. Como referencia externa para entender la arquitectura base, la publicación original de DeiT es "Training data-efficient image transformers & distillation through attention" (arXiv:2012.12877), enlace: https://arxiv.org/abs/2012.12877

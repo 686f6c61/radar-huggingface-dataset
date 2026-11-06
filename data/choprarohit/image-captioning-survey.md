@@ -4,7 +4,7 @@
 
 `choprarohit/image-captioning-survey` no es un modelo de aprendizaje automatico entrenado, sino un repositorio de notas de investigacion estructuradas sobre el problema del *image captioning* (generacion automatica de descripciones textuales a partir de imagenes). El autor lo describe explicitamente como un conjunto de apuntes exploratorios en los que se separan hipotesis y planes de resultados ya completados, con referencias concretas a conjuntos de evaluacion como MS COCO Captions, NoCaps y TextCaps. No se declara ningun checkpoint entrenado, ninguna mejora de benchmark ni codigo liberado.
 
-A pesar de las etiquetas de HuggingFace, que incluyen `safetensors` y `transformer`, el repositorio no contiene pesos utilizables para inferencia: el tamano del repositorio es de 0,0 GB y el unico artefacto pesado declarado son 49.600 parametros, una cifra irrelevante para cualquier tarea de vision-lenguaje real (los modelos de captioning comerciales manejan cientos de millones o miles de millones de parametros). Los ficheros descritos en la propia model card son `notes.md` y `README.md`.
+A pesar de las etiquetas de Hugging Face, que incluyen `safetensors` y `transformer`, el repositorio no contiene pesos utilizables para inferencia: el tamano del repositorio es de 0,0 GB y el unico artefacto pesado declarado son 49.600 parametros, una cifra irrelevante para cualquier tarea de vision-lenguaje real (los modelos de captioning comerciales manejan cientos de millones o miles de millones de parametros). Los ficheros descritos en la propia model card son `notes.md` y `README.md`.
 
 Su relevancia, por tanto, es documental y no funcional: puede servir como punto de partida bibliografico para quien quiera disenar un estudio de captioning con baselines comparables, pero no debe tratarse como un modelo desplegable. Cualquier uso en produccion que asuma generacion de texto o vision seria un error de interpretacion del contenido del repositorio.
 
@@ -68,7 +68,7 @@ No disponible. No existen modelos comparables en la misma categoria porque este 
 ## Limitaciones y advertencias
 
 - No es un modelo: no genera texto, no procesa imagenes y no debe integrarse en ningun pipeline de inferencia.
-- Los metadatos de HuggingFace (`safetensors`, `transformer`, 49.600 parametros) pueden inducir a error, ya que sugieren un checkpoint que no existe como tal.
+- Los metadatos de Hugging Face (`safetensors`, `transformer`, 49.600 parametros) pueden inducir a error, ya que sugieren un checkpoint que no existe como tal.
 - La model card advierte explicitamente de que los planes e hipotesis no son resultados experimentales.
 - No hay checkpoint entrenado, ni codigo liberado, ni ablaciones completadas.
 - Riesgo de alucinacion: no aplicable al modelo, pero si al lector que asuma capacidades no documentadas a partir de las etiquetas.
@@ -79,7 +79,7 @@ No disponible. No existen modelos comparables en la misma categoria porque este 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/choprarohit/image-captioning-survey
+- Repositorio en Hugging Face: https://huggingface.co/choprarohit/image-captioning-survey
 - Fichero principal de notas: `notes.md` dentro del repositorio
 - Documentacion del repositorio: `README.md` dentro del repositorio
 - Conjuntos de evaluacion citados: MS COCO Captions, NoCaps y TextCaps (referencias sin enlace directo en la informacion proporcionada)

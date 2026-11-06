@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `tuesdaymarkets/dungu` es un repositorio publicado en HuggingFace por el usuario tuesdaymarkets, con licencia MIT y etiquetado como región US. Sin embargo, la información disponible es extremadamente limitada: la model card únicamente contiene la línea `license: mit`, sin descripción, arquitectura, parámetros, datos de entrenamiento ni ejemplos de uso. No se ha publicado ningún artefacto técnico que permita identificar el tipo de modelo, su tamaño o sus capacidades. A fecha de creación (3 de septiembre de 2026), el repositorio no registra descargas ni valoraciones, lo que sugiere que se trata de un proyecto incipiente o una publicación incompleta. Dada la ausencia de documentación, no es posible evaluar su relevancia técnica ni su aplicabilidad en entornos de desarrollo o investigación.
+El modelo `tuesdaymarkets/dungu` es un repositorio publicado en Hugging Face por el usuario tuesdaymarkets, con licencia MIT y etiquetado como región US. Sin embargo, la información disponible es extremadamente limitada: la model card únicamente contiene la línea `license: mit`, sin descripción, arquitectura, parámetros, datos de entrenamiento ni ejemplos de uso. No se ha publicado ningún artefacto técnico que permita identificar el tipo de modelo, su tamaño o sus capacidades. A fecha de creación (3 de septiembre de 2026), el repositorio no registra descargas ni valoraciones, lo que sugiere que se trata de un proyecto incipiente o una publicación incompleta. Dada la ausencia de documentación, no es posible evaluar su relevancia técnica ni su aplicabilidad en entornos de desarrollo o investigación.
 
 ## Especificaciones tecnicas
 
@@ -50,4 +50,4 @@ No disponible. No se conocen modelos comparables porque no se ha identificado la
 
 ## Enlaces
 
-- [HuggingFace: tuesdaymarkets/dungu](https://huggingface.co/tuesdaymarkets/dungu)
+- [Hugging Face: tuesdaymarkets/dungu](https://huggingface.co/tuesdaymarkets/dungu)

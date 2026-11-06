@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`keystats/historical_barbados_olmocr` es un modelo multimodal de tipo imagen-a-texto publicado en HuggingFace por el usuario `keystats`. Se trata de un artefacto con cero descargas y cero "likes", sin model card asociada, sin licencia declarada y sin idiomas indicados, por lo que la informacion disponible se limita practicamente a las etiquetas del repositorio.
+`keystats/historical_barbados_olmocr` es un modelo multimodal de tipo imagen-a-texto publicado en Hugging Face por el usuario `keystats`. Se trata de un artefacto con cero descargas y cero "likes", sin model card asociada, sin licencia declarada y sin idiomas indicados, por lo que la informacion disponible se limita practicamente a las etiquetas del repositorio.
 
 La etiqueta `qwen2_5_vl` indica que el modelo deriva de la familia Qwen2.5-VL, un transformer decoder-only con codificador de vision, y las etiquetas `safetensors` y `transformers` confirman que se distribuye en formato safetensors y es cargable con la libreria Transformers. El sufijo `olmocr` del identificador sugiere un ajuste fino orientado a OCR documental, y el prefijo `historical_barbados` apunta a documentos historicos de Barbados, si bien ninguna de estas dos inferencias esta confirmada por la informacion disponible.
 
@@ -24,7 +24,7 @@ El interes de la ficha es, por tanto, limitado y fundamentalmente cautelar: se d
 | Autor | `keystats` |
 | Descargas | 0 |
 | Likes | 0 |
-| Fecha de creacion | 2026-09-13 (dato registrado en el repositorio; fecha atipica respecto al uso habitual de HuggingFace) |
+| Fecha de creacion | 2026-09-13 (dato registrado en el repositorio; fecha atipica respecto al uso habitual de Hugging Face) |
 | Ultima actualizacion | 2026-09-13 |
 | Etiquetas adicionales | `conversational`, `text-generation-inference`, `endpoints_compatible`, `region:us`, `arxiv:1910.09700` |
 
@@ -89,7 +89,7 @@ La comparacion se ve limitada porque se desconocen los parametros, el contexto y
 
 | Modelo | Parametros | Contexto | Orientacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `keystats/historical_barbados_olmocr` | No disponible | No disponible | OCR de documentos historicos (inferido del nombre) | No disponible | Publico en HuggingFace, 0 descargas |
+| `keystats/historical_barbados_olmocr` | No disponible | No disponible | OCR de documentos historicos (inferido del nombre) | No disponible | Publico en Hugging Face, 0 descargas |
 | Familia Qwen2.5-VL (modelo base probable) | No disponible para este artefacto; la familia publica variantes de distinto tamanio | No disponible para este artefacto | Vision-lenguaje generalista | No disponible en este repositorio; la familia se distribuye bajo licencias declaradas por su autor | Ampliamente disponible |
 | Modelos especializados de OCR documental de tipo olmOCR | No disponible en esta busqueda | No disponible en esta busqueda | OCR de documentos academicos e historicos | No disponible en esta busqueda | Publicos, con model card |
 | Modelos OCR ligeros de tipo GOT-OCR | No disponible en esta busqueda | No disponible en esta busqueda | OCR y reconocimiento de estructuras | No disponible en esta busqueda | Publicos, con model card |
@@ -111,6 +111,6 @@ Diferencias cualitativas observables: frente a las alternativas, este repositori
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/keystats/historical_barbados_olmocr
+- Repositorio en Hugging Face: https://huggingface.co/keystats/historical_barbados_olmocr
 - Referencia citada en las etiquetas: https://arxiv.org/abs/1910.09700 (contenido no verificado)
 - No se han encontrado otros enlaces relevantes. Las busquedas web realizadas devolvieron unicamente portales deportivos en checo (Livesport.cz, Ceska televize, iSport.cz, SledujZive.cz) sin ninguna relacion con el modelo, por lo que se han descartado. No se dispone de paper, blog, repositorio de codigo ni demo asociados al modelo.

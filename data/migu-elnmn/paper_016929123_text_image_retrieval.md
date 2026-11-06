@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, publicado por el usuario `migu-elnmn`, no contiene un modelo de inteligencia artificial propiamente dicho, sino un documento académico en formato Markdown titulado `paper_016929123_text_image_retrieval.md`. El artefacto principal es un artículo científico que aborda el tema de la recuperación de imágenes mediante texto (text-image retrieval), un área de investigación dentro de la visión por computador y el procesamiento del lenguaje natural.
+Este repositorio de Hugging Face, publicado por el usuario `migu-elnmn`, no contiene un modelo de inteligencia artificial propiamente dicho, sino un documento académico en formato Markdown titulado `paper_016929123_text_image_retrieval.md`. El artefacto principal es un artículo científico que aborda el tema de la recuperación de imágenes mediante texto (text-image retrieval), un área de investigación dentro de la visión por computador y el procesamiento del lenguaje natural.
 
 El documento sigue una estructura de paper académico estándar en formato LaTeX/arXiv, con secciones de introducción, planteamiento del problema, solución, validación y trabajo futuro. El estilo de escritura es narrativo-progresivo, con citas en formato numérico APA, y los tags del repositorio indican un enfoque visual y gráfico. La relevancia de este repositorio radica en que documenta una propuesta de investigación, no en ofrecer un modelo desplegable. No se proporcionan pesos, arquitectura ni ningún recurso ejecutable.
 
@@ -39,7 +39,7 @@ No aplica. Este repositorio no contiene un modelo de aprendizaje automático, si
 - **Educación**: un docente puede usar el documento como material de lectura para un curso de visión por computador o sistemas de recuperación de información multimodal.
 - **Inspiración para nuevas investigaciones**: el paper propone una solución y una validación, lo que puede servir como punto de partida para replicar experimentos o extender el trabajo.
 - **Análisis de estilo de escritura científica**: los tags (`cautious`, `first-person-plural`, `narrative-progressive`) indican que el documento puede usarse como ejemplo de estilo de redacción académica.
-- **Documentación de investigación**: como artefacto en HuggingFace, puede servir para versionar y compartir borradores de papers con la comunidad, aprovechando la infraestructura de la plataforma.
+- **Documentación de investigación**: como artefacto en Hugging Face, puede servir para versionar y compartir borradores de papers con la comunidad, aprovechando la infraestructura de la plataforma.
 
 ## Benchmarks y rendimiento
 
@@ -64,6 +64,6 @@ No disponible. No hay modelos comparables porque este repositorio no contiene un
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/migu-elnmn/paper_016929123_text_image_retrieval
+- Repositorio Hugging Face: https://huggingface.co/migu-elnmn/paper_016929123_text_image_retrieval
 - Tema relacionado (no del repositorio): [GitHub topics sobre image-text-retrieval](https://github.com/topics/image-text-retrieval)
 - Referencia relacionada (no del repositorio): [Paper de Imagen (text-to-image)](https://papers.nips.cc/paper_files/paper/2022/hash/ec795aeadae0b7d230fa35cbaf04c041-Abstract-Conference.html)

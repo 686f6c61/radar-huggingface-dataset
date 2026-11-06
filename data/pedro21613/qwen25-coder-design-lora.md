@@ -73,5 +73,5 @@ No disponible. No se han publicado datos de rendimiento ni se dispone de informa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Pedro21613/qwen25-coder-design-lora
+- Hugging Face: https://huggingface.co/Pedro21613/qwen25-coder-design-lora
 - Informe técnico de Qwen2.5-Coder: https://arxiv.org/html/2409.12186v3

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-qwen3-finetuned es un ajuste fino (fine-tuning supervisado) del modelo Qwen/Qwen3-0.6B, publicado por el usuario SuperXyrex en HuggingFace. Se trata de un modelo de generación de texto de tipo decoder-only, denso, con 596.049.920 parámetros reales (verificados en los pesos safetensors), derivado directamente del modelo base de 0,6 mil millones de parámetros de la familia Qwen3. La model card indica explícitamente que fue entrenado sobre un dataset desconocido ("unknown dataset") y que no se documentan usos previstos ni limitaciones.
+qwen3-finetuned es un ajuste fino (fine-tuning supervisado) del modelo Qwen/Qwen3-0.6B, publicado por el usuario SuperXyrex en Hugging Face. Se trata de un modelo de generación de texto de tipo decoder-only, denso, con 596.049.920 parámetros reales (verificados en los pesos safetensors), derivado directamente del modelo base de 0,6 mil millones de parámetros de la familia Qwen3. La model card indica explícitamente que fue entrenado sobre un dataset desconocido ("unknown dataset") y que no se documentan usos previstos ni limitaciones.
 
 Su relevancia es limitada: se publica como un experimento de ajuste fino y no cuenta con benchmarks, métricas de evaluación más allá de la pérdida de validación, ni descargas o interacciones en el momento de la consulta. No obstante, resulta útil como ejemplo reproducible de un pipeline de fine-tuning con la librería Transformers (versión 5.17.0) sobre un modelo pequeño y con licencia Apache 2.0.
 
@@ -64,17 +64,17 @@ No hay datos de MMLU, HumanEval, GSM8K ni de ningun otro benchmark estandar, por
 - VRAM estimada para inferencia: aproximadamente 1,2 GB en FP16/BF16 (el repositorio ocupa 1,2 GB); alrededor de 2,4 GB en FP32; unos 0,6 GB en INT8 y 0,35 GB en INT4 si se cuantiza (no publicado).
 - GPU recomendadas: cualquier GPU consumer reciente es suficiente; RTX 3060, RTX 4060, RTX 4090, e incluso GPUs integradas con 4 GB de memoria compartida. No se requieren A100 ni H100.
 - Cabe en GPU consumer: si, con amplio margen en cualquier GPU con 4 GB o mas de VRAM. Tambien es viable en CPU.
-- Opciones de despliegue: Transformers (la libreria declarada), text-generation-inference (tag endpoints_compatible) y servidores compatibles con la API de HuggingFace. vLLM, llama.cpp u Ollama requeririan conversion previa, ya que no se publican pesos GGUF.
+- Opciones de despliegue: Transformers (la libreria declarada), text-generation-inference (tag endpoints_compatible) y servidores compatibles con la API de Hugging Face. vLLM, llama.cpp u Ollama requeririan conversion previa, ya que no se publican pesos GGUF.
 - Latencia y throughput estimados: no disponibles de forma oficial; por tamano cabria esperar decenas a cientos de tokens por segundo en GPU de gama media, pero es una estimacion y no un dato medido.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| qwen3-finetuned (este) | 596 M | no disponible (base: 32 768) | Apache 2.0 | HuggingFace, 0 descargas | Sin benchmarks ni dataset documentado |
-| Qwen/Qwen3-0.6B | 0,6 B | 32 768 tokens | Apache 2.0 | HuggingFace, ampliamente usado | Modelo base, con benchmarks publicados por Qwen |
-| Qwen2.5-0.5B | 0,49 B | 32 768 tokens | Apache 2.0 | HuggingFace | Generacion anterior, alternativa consolidada |
-| Llama-3.2-1B | 1,24 B | 128 000 tokens | Llama 3.2 Community License | HuggingFace | Mayor tamano y contexto, licencia con restricciones |
+| qwen3-finetuned (este) | 596 M | no disponible (base: 32 768) | Apache 2.0 | Hugging Face, 0 descargas | Sin benchmarks ni dataset documentado |
+| Qwen/Qwen3-0.6B | 0,6 B | 32 768 tokens | Apache 2.0 | Hugging Face, ampliamente usado | Modelo base, con benchmarks publicados por Qwen |
+| Qwen2.5-0.5B | 0,49 B | 32 768 tokens | Apache 2.0 | Hugging Face | Generacion anterior, alternativa consolidada |
+| Llama-3.2-1B | 1,24 B | 128 000 tokens | Llama 3.2 Community License | Hugging Face | Mayor tamano y contexto, licencia con restricciones |
 
 La comparacion se limita a parametros, contexto, licencia y disponibilidad, ya que este ajuste fino no publica resultados de rendimiento que permitan contrastarlo en calidad frente a sus alternativas.
 
@@ -92,7 +92,7 @@ La comparacion se limita a parametros, contexto, licencia y disponibilidad, ya q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SuperXyrex/qwen3-finetuned
+- Modelo en Hugging Face: https://huggingface.co/SuperXyrex/qwen3-finetuned
 - Modelo base Qwen/Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Perfil del autor: https://huggingface.co/SuperXyrex
 - Libreria Transformers: https://github.com/huggingface/transformers

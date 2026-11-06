@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio aloja un checkpoint archivado de un modelo de lenguaje de 1.777.088.000 parametros (aproximadamente 1,78 mil millones) cuyo autor es el usuario de HuggingFace davidheineman. No se trata de un modelo publicado para uso general, sino de un artefacto de preservacion: la model card lo describe explicitamente como "archived checkpoint" procedente de una ejecucion de entrenamiento ya finalizada, con la ruta original `runs/mopd-sweep-n8-learned-teachers-20261002-165650/resumable/07-GaussianElimination`. La etiqueta `qwen2` indica que la arquitectura subyacente pertenece a la familia Qwen2, aunque la configuracion exacta no se detalla en la informacion disponible.
+Este repositorio aloja un checkpoint archivado de un modelo de lenguaje de 1.777.088.000 parametros (aproximadamente 1,78 mil millones) cuyo autor es el usuario de Hugging Face davidheineman. No se trata de un modelo publicado para uso general, sino de un artefacto de preservacion: la model card lo describe explicitamente como "archived checkpoint" procedente de una ejecucion de entrenamiento ya finalizada, con la ruta original `runs/mopd-sweep-n8-learned-teachers-20261002-165650/resumable/07-GaussianElimination`. La etiqueta `qwen2` indica que la arquitectura subyacente pertenece a la familia Qwen2, aunque la configuracion exacta no se detalla en la informacion disponible.
 
 La relevancia de esta ficha es limitada y conviene ser honesto al respecto: el repositorio acumula 0 descargas y 0 likes, no declara licencia, no declara idiomas y no incluye pipeline asociado. El checkpoint final corresponde al paso 29 de entrenamiento, un numero muy bajo que sugiere una ejecucion corta o un barrido exploratorio (el nombre incluye `mopd-sweep-n8-learned-teachers`, lo que apunta a un sweep de experimentos con profesores aprendidos, si bien esto es una inferencia a partir del nombre y no un dato confirmado por el autor).
 
@@ -75,9 +75,9 @@ La comparacion se establece con modelos de tamano cercano. Los datos de los mode
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicos |
 |---|---|---|---|---|---|
 | Este checkpoint (davidheineman/rlve-archive-...) | 1,78 mil millones | no disponible | no disponible | Repositorio de archivo, 0 descargas | No disponibles |
-| Qwen2-1.5B | 1,54 mil millones | 32.768 tokens | Apache 2.0 (segun la variante) | Amplia, en HuggingFace | Si |
-| Llama 3.2 1B | 1,24 mil millones | 128.000 tokens | Llama 3.2 Community License | Amplia, en HuggingFace | Si |
-| SmolLM2-1.7B | 1,71 mil millones | 8.192 tokens | Apache 2.0 | Amplia, en HuggingFace | Si |
+| Qwen2-1.5B | 1,54 mil millones | 32.768 tokens | Apache 2.0 (segun la variante) | Amplia, en Hugging Face | Si |
+| Llama 3.2 1B | 1,24 mil millones | 128.000 tokens | Llama 3.2 Community License | Amplia, en Hugging Face | Si |
+| SmolLM2-1.7B | 1,71 mil millones | 8.192 tokens | Apache 2.0 | Amplia, en Hugging Face | Si |
 
 No se dispone de datos de rendimiento de este checkpoint, por lo que la comparacion se limita a parametros, licencia y disponibilidad.
 
@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento de este checkpoint, por lo que la comparac
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidheineman/rlve-archive-mopd-sweep-n8-learned-teachers-2026100-07-gaussianelimination-bd356428c6eb
+- Repositorio en Hugging Face: https://huggingface.co/davidheineman/rlve-archive-mopd-sweep-n8-learned-teachers-2026100-07-gaussianelimination-bd356428c6eb
 - Run de W&B identificado en la model card: ID `21d81c4e` (no se proporciona el nombre del proyecto, por lo que no es posible construir el enlace directo)
 - Ruta original del checkpoint (referencia interna del autor): `runs/mopd-sweep-n8-learned-teachers-20261002-165650/resumable/07-GaussianElimination`
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

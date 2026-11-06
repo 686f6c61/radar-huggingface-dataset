@@ -96,10 +96,10 @@ Métricas de fidelidad de esta cuantización, medidas por el autor sobre 19.265 
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiMo-V2.6-Qwen-9B-MTPLX-Optimized-Speed (este pack) | 9,41B, 6 bits afín | 262.144 tokens | SWE Pro 44,6; Terminal Bench 2.1 37,1 (cifras del fine-tune BF16) | MIT | HuggingFace, runtime MTPLX 2.12.0+ en Apple Silicon |
-| Qwen3.5-9B-MTPLX-Optimized-Speed (mismo autor) | 9B, 6 bits afín | no disponible | Rendimiento de Qwen3.5-9B: SWE Pro 32,0; Terminal Bench 2.1 27,0 | no disponible | HuggingFace, runtime MTPLX |
-| MiMo-V2.6-Distill-Qwen-9B (Xiaomi, BF16) | 9B aprox. | no disponible | SWE Pro 44,6; Terminal Bench 2.1 37,1 | no disponible | HuggingFace |
-| Ternary-Bonsai-2-27B-MTPLX-Optimized-Speed | 27B aprox., ternario | no disponible | no disponible | no disponible | HuggingFace, runtime MTPLX |
+| MiMo-V2.6-Qwen-9B-MTPLX-Optimized-Speed (este pack) | 9,41B, 6 bits afín | 262.144 tokens | SWE Pro 44,6; Terminal Bench 2.1 37,1 (cifras del fine-tune BF16) | MIT | Hugging Face, runtime MTPLX 2.12.0+ en Apple Silicon |
+| Qwen3.5-9B-MTPLX-Optimized-Speed (mismo autor) | 9B, 6 bits afín | no disponible | Rendimiento de Qwen3.5-9B: SWE Pro 32,0; Terminal Bench 2.1 27,0 | no disponible | Hugging Face, runtime MTPLX |
+| MiMo-V2.6-Distill-Qwen-9B (Xiaomi, BF16) | 9B aprox. | no disponible | SWE Pro 44,6; Terminal Bench 2.1 37,1 | no disponible | Hugging Face |
+| Ternary-Bonsai-2-27B-MTPLX-Optimized-Speed | 27B aprox., ternario | no disponible | no disponible | no disponible | Hugging Face, runtime MTPLX |
 
 El pack de Qwen 3.5 9B es el más directamente comparable: mismo tamaño, misma receta de cuantización y misma cabeza MTP, pero con los pesos de Qwen en lugar del fine-tune de Xiaomi, lo que según los datos de Xiaomi supone una diferencia de 12,6 puntos en SWE Pro y 10,1 en Terminal Bench 2.1. Frente al checkpoint BF16 de Xiaomi, este pack sacrifica precisión de forma medida (KL 0,0054) a cambio de pasar de aproximadamente 18 GB de pesos a 8,7 GB de descarga y 8,70 GiB de memoria en uso.
 
@@ -109,7 +109,7 @@ El pack de Qwen 3.5 9B es el más directamente comparable: mismo tamaño, misma 
 - Los benchmarks publicados corresponden al fine-tune en BF16, no a esta cuantización de 6 bits. Las cifras propias de tok/s no están disponibles.
 - El modelo solo se ejecuta en Apple Silicon con MTPLX 2.12.0 o superior. Usarlo con versiones anteriores carga parámetros incorrectos.
 - El pack no declara idiomas soportados, por lo que no hay garantía documentada de calidad fuera de los idiomas cubiertos por el modelo base.
-- La licencia MIT del repositorio se declara en los metadatos de HuggingFace. Conviene verificar la licencia del modelo base de Xiaomi antes de un uso comercial, ya que el pack no reproduce el texto completo de la sección de licencia de su model card.
+- La licencia MIT del repositorio se declara en los metadatos de Hugging Face. Conviene verificar la licencia del modelo base de Xiaomi antes de un uso comercial, ya que el pack no reproduce el texto completo de la sección de licencia de su model card.
 - Riesgo de alucinación inherente a un modelo de 9B, especialmente en tareas de ciberseguridad y generación de código: cualquier parche o comando de terminal debe revisarse antes de ejecutarse en producción.
 - Sesgos conocidos: no disponible. El model card no documenta una evaluación de sesgos.
 - La ventana de 262.144 tokens es teórica; la ventana realmente utilizable depende de la memoria unificada (20.480 tokens con 16 GB), lo que puede truncar contextos largos en equipos pequeños.
@@ -124,6 +124,6 @@ El pack de Qwen 3.5 9B es el más directamente comparable: mismo tamaño, misma 
 - Pack hermano (Qwen 3.5 9B): https://huggingface.co/Youssofal/Qwen3.5-9B-MTPLX-Optimized-Speed
 - Pack hermano (Bonsai 2 27B ternario): https://huggingface.co/Youssofal/Ternary-Bonsai-2-27B-MTPLX-Optimized-Speed
 - Sitio del runtime MTPLX: https://mtplx.com
-- Organización Xiaomi MiMo en HuggingFace: https://huggingface.co/XiaomiMiMo
+- Organización Xiaomi MiMo en Hugging Face: https://huggingface.co/XiaomiMiMo
 
 La búsqueda web realizada no devolvió ningún resultado relevante sobre este modelo: los enlaces obtenidos corresponden a sitios de contenido para adultos y no guardan relación con el tema, por lo que se han descartado. No se han localizado papers, blogs ni demos adicionales en la información disponible.

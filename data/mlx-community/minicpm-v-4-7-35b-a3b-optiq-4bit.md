@@ -105,7 +105,7 @@ Segun la model card, ese Capability Score de 87,61 es el mas alto de todos los M
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mlx-community/MiniCPM-V-4.7-35B-A3B-OptiQ-4bit
+- Modelo en Hugging Face: https://huggingface.co/mlx-community/MiniCPM-V-4.7-35B-A3B-OptiQ-4bit
 - Modelo base: https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B
 - Variante reducida REAP-19B: https://huggingface.co/mlx-community/MiniCPM-V-4.7-35B-A3B-OptiQ-4bit-REAP-19B
 - Sitio del proyecto OptiQ: https://mlx-optiq.com/

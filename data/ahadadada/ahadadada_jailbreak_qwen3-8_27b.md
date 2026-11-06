@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ahadadada Jailbreak Qwen3.8-27B es un ajuste fino (finetune) de tipo *jailbreak* sobre el modelo multimodal denso Qwen3.8-27B de Alibaba, publicado por el usuario ahadadada en HuggingFace. El objetivo declarado es eliminar los rechazos y filtros de seguridad del modelo base, de modo que responda directamente a cualquier instrucción sin preámbulos tipo "como IA" ni avisos de seguridad. Mantiene las capacidades originales del modelo base, incluyendo visión, razonamiento, generación de código y soporte para agentes, pero con una política de respuesta sin restricciones.
+Ahadadada Jailbreak Qwen3.8-27B es un ajuste fino (finetune) de tipo *jailbreak* sobre el modelo multimodal denso Qwen3.8-27B de Alibaba, publicado por el usuario ahadadada en Hugging Face. El objetivo declarado es eliminar los rechazos y filtros de seguridad del modelo base, de modo que responda directamente a cualquier instrucción sin preámbulos tipo "como IA" ni avisos de seguridad. Mantiene las capacidades originales del modelo base, incluyendo visión, razonamiento, generación de código y soporte para agentes, pero con una política de respuesta sin restricciones.
 
 El modelo base, Qwen3.8-27B, es un LLM denso de 27 000 millones de parámetros con arquitectura híbrida (SSM + atención), contexto nativo de 262 000 tokens, soporte multimodal (imagen, vídeo) y predicción multi-token (MTP) para acelerar la inferencia. El finetune de ahadadada conserva estas características y añade cuantizaciones GGUF para su uso con llama.cpp y otros runtimes compatibles. La relevancia actual radica en la demanda de modelos "sin censura" para experimentación, aunque su uso conlleva riesgos éticos y legales importantes.
 
@@ -77,7 +77,7 @@ La comparativa se limita a modelos de la misma familia o con propósito similar.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ahadadada/Ahadadada_Jailbreak_Qwen3.8_27B
+- Modelo en Hugging Face: https://huggingface.co/ahadadada/Ahadadada_Jailbreak_Qwen3.8_27B
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio oficial de Qwen3.8-27B (Alibaba): https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Repositorio de la serie Qwen3.8: https://github.com/QwenLM/Qwen3.8

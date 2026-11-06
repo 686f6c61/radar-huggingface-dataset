@@ -2,7 +2,7 @@
 
 ## Resumen
 
-verigem-qwen3b-v3 es un ajuste fino (fine-tune) del modelo Qwen2.5-3B-Instruct, publicado por el usuario Param825 en HuggingFace y distribuido unicamente en formato GGUF cuantizado. Segun la model card, el entrenamiento y la conversion a GGUF se realizaron con Unsloth, y el repositorio incluye un unico archivo de pesos (`qwen2.5-3b-instruct.Q4_K_M.gguf`) junto con un Modelfile de Ollama para su despliegue inmediato. El nombre del archivo de pesos revela que la base es Qwen2.5-3B-Instruct, un transformer decoder-only de 3.085.938.688 parametros (3,09 mil millones).
+verigem-qwen3b-v3 es un ajuste fino (fine-tune) del modelo Qwen2.5-3B-Instruct, publicado por el usuario Param825 en Hugging Face y distribuido unicamente en formato GGUF cuantizado. Segun la model card, el entrenamiento y la conversion a GGUF se realizaron con Unsloth, y el repositorio incluye un unico archivo de pesos (`qwen2.5-3b-instruct.Q4_K_M.gguf`) junto con un Modelfile de Ollama para su despliegue inmediato. El nombre del archivo de pesos revela que la base es Qwen2.5-3B-Instruct, un transformer decoder-only de 3.085.938.688 parametros (3,09 mil millones).
 
 El modelo esta pensado para inferencia local ligera mediante llama.cpp y Ollama. Al tratarse de una cuantizacion Q4_K_M, el peso en disco es de aproximadamente 1,9 GB, lo que permite ejecutarlo en hardware de consumo e incluso en CPU. La model card documenta dos comandos de uso: `llama-cli -hf Param825/verigem-qwen3b-v3 --jinja` para texto y `llama-mtmd-cli` para modelos multimodales (aunque no se aporta ningun proyector multimodal en el repositorio).
 
@@ -93,7 +93,7 @@ No se dispone de metricas comparativas de rendimiento para verigem-qwen3b-v3, po
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Param825/verigem-qwen3b-v3
+- Modelo en Hugging Face: https://huggingface.co/Param825/verigem-qwen3b-v3
 - Unsloth (herramienta de fine-tuning y conversion citada por el autor): https://github.com/unslothai/unsloth
 - llama.cpp (runtime de inferencia para GGUF): https://github.com/ggml-org/llama.cpp
 - Ollama (despliegue mediante el Modelfile incluido): https://ollama.com/

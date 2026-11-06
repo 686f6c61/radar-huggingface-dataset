@@ -4,7 +4,7 @@
 
 mLoRC es un detector de imágenes generadas por inteligencia artificial desarrollado por buxtcodes (Ian) en el contexto del TikTok TechJam 2026. El modelo combina un backbone DINOv3 ViT-H+/16 con el módulo LoRC (Low-Rank Contrastive, según el paper arxiv:2608.20882), una técnica de adaptación de bajo rango orientada a la detección de contenido sintético. Su propósito es clasificar si una imagen ha sido creada por un modelo generativo o es una fotografía real, un problema cada vez más relevante ante la proliferación de deepfakes y contenido sintético.
 
-El repositorio de HuggingFace contiene un checkpoint completo (`mlorc-full.pt`) con los pesos LoRA fusionados en el backbone, junto con un archivo de configuración de la arquitectura DINOv3. El tamaño total del repositorio es de 1,8 GB, lo que sugiere un modelo de gran capacidad. No se especifican el número exacto de parámetros ni la licencia concreta (marcada como "other"), y el modelo se distribuye en formato PyTorch nativo (.pt). Está orientado a la clasificación de imágenes mediante el pipeline `image-classification`.
+El repositorio de Hugging Face contiene un checkpoint completo (`mlorc-full.pt`) con los pesos LoRA fusionados en el backbone, junto con un archivo de configuración de la arquitectura DINOv3. El tamaño total del repositorio es de 1,8 GB, lo que sugiere un modelo de gran capacidad. No se especifican el número exacto de parámetros ni la licencia concreta (marcada como "other"), y el modelo se distribuye en formato PyTorch nativo (.pt). Está orientado a la clasificación de imágenes mediante el pipeline `image-classification`.
 
 ## Especificaciones tecnicas
 
@@ -75,8 +75,8 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/buxtcodes/TechJam-Modulated-LoRC
+- Modelo en Hugging Face: https://huggingface.co/buxtcodes/TechJam-Modulated-LoRC
 - Repositorio de codigo: https://github.com/Buxt-Codes/AIGI-mLoRC
 - Paper de LoRC: https://arxiv.org/abs/2608.20882
-- Perfil del autor en HuggingFace: https://huggingface.co/buxtcodes
+- Perfil del autor en Hugging Face: https://huggingface.co/buxtcodes
 - TikTok TechJam 2026 (contexto del desarrollo): https://tiktoktechjam2026.devpost.com/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `sundaycoil/vendor-comparison-tool` es un artefacto alojado en HuggingFace que, por su nombre, parece destinado a la comparación de proveedores de servicios o modelos de IA. Sin embargo, la información pública disponible es extremadamente limitada: no se especifica el tipo de pipeline, la licencia, los idiomas soportados ni ninguna característica técnica. Fue creado en abril de 2026 y actualizado en agosto de 2026, cuenta con 12 likes y 0 descargas, y sus etiquetas indican `endpoints_compatible` y `region:us`, lo que sugiere que podría estar diseñado para ser consumido como un endpoint compatible con APIs de inferencia en la región de Estados Unidos.
+El repositorio `sundaycoil/vendor-comparison-tool` es un artefacto alojado en Hugging Face que, por su nombre, parece destinado a la comparación de proveedores de servicios o modelos de IA. Sin embargo, la información pública disponible es extremadamente limitada: no se especifica el tipo de pipeline, la licencia, los idiomas soportados ni ninguna característica técnica. Fue creado en abril de 2026 y actualizado en agosto de 2026, cuenta con 12 likes y 0 descargas, y sus etiquetas indican `endpoints_compatible` y `region:us`, lo que sugiere que podría estar diseñado para ser consumido como un endpoint compatible con APIs de inferencia en la región de Estados Unidos.
 
 Dado que no se ha publicado ninguna especificación técnica (arquitectura, tamaño, contexto, pesos, etc.), no es posible clasificarlo como un modelo de lenguaje convencional. Podría tratarse de un dataset, un espacio de demostración o una herramienta auxiliar, pero sin más datos no se puede confirmar. Esta ficha refleja únicamente la información disponible en el momento de la consulta y marca todos los campos técnicos como "no disponible".
 
@@ -21,7 +21,7 @@ Dado que no se ha publicado ninguna especificación técnica (arquitectura, tama
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado ninguna información sobre la arquitectura interna, el proceso de entrenamiento, los datos utilizados o las técnicas de optimización aplicadas. El repositorio no incluye documentación técnica, papers asociados ni archivos de configuración visibles en la página de HuggingFace. Sin estos datos, es imposible determinar si se trata de un transformer, un modelo MoE, una SSM o cualquier otra arquitectura.
+No se ha publicado ninguna información sobre la arquitectura interna, el proceso de entrenamiento, los datos utilizados o las técnicas de optimización aplicadas. El repositorio no incluye documentación técnica, papers asociados ni archivos de configuración visibles en la página de Hugging Face. Sin estos datos, es imposible determinar si se trata de un transformer, un modelo MoE, una SSM o cualquier otra arquitectura.
 
 ## Capacidades
 
@@ -50,10 +50,10 @@ No disponible. No se puede comparar con otros modelos o herramientas porque se d
 - Sin licencia declarada: no se puede determinar si es de código abierto, de uso comercial restringido o propietario.
 - Sin comunidad activa: 0 descargas y solo 12 likes indican que el proyecto no ha sido probado ni adoptado por la comunidad.
 - Fecha de creación y actualización recientes (2026), lo que podría indicar un proyecto en fase temprana o abandonado.
-- Los tags `endpoints_compatible` y `region:us` sugieren una posible integración con endpoints de HuggingFace, pero no se confirma su funcionalidad.
+- Los tags `endpoints_compatible` y `region:us` sugieren una posible integración con endpoints de Hugging Face, pero no se confirma su funcionalidad.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sundaycoil/vendor-comparison-tool
+- Repositorio en Hugging Face: https://huggingface.co/sundaycoil/vendor-comparison-tool
 
 No se han encontrado papers, blogs, repositorios de código ni demos adicionales asociados a este artefacto.

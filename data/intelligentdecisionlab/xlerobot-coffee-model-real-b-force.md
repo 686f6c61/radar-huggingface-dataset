@@ -19,7 +19,7 @@ La relevancia de este modelo radica en su enfoque práctico para la robótica de
 | Tipos de cuantizacion | no disponible (pesos en safetensors) |
 | Idiomas soportados | no disponible (modelo de control robótico, sin interfaz de lenguaje) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (según tags de HuggingFace) |
+| Formato de pesos | safetensors (según tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -71,6 +71,6 @@ No disponible. No se proporciona información sobre modelos comparables en la mi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/IntelligentDecisionLab/xlerobot-coffee-model-real-b-force
+- Repositorio Hugging Face: https://huggingface.co/IntelligentDecisionLab/xlerobot-coffee-model-real-b-force
 - Modelo companion (Método A, visión+posición): https://huggingface.co/IntelligentDecisionLab/xlerobot-coffee-model-real-a-vision-pos
 - Documentación interna del proyecto (referenciada en la model card): `docs/coffee/EVAL_POSTMORTEM.md` (no accesible públicamente desde el enlace proporcionado).

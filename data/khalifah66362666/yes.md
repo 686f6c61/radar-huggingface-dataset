@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `khalifah66362666/yes` es un modelo publicado en HuggingFace por el usuario `khalifah66362666`. La información disponible es extremadamente limitada: la model card consiste únicamente en el campo `license: grok2-community`, sin descripción, sin documentación técnica, sin ejemplos de uso y sin enlaces a papers, repositorios o recursos adicionales. No se declara arquitectura, tamaño, contexto ni idiomas soportados.
+El repositorio `khalifah66362666/yes` es un modelo publicado en Hugging Face por el usuario `khalifah66362666`. La información disponible es extremadamente limitada: la model card consiste únicamente en el campo `license: grok2-community`, sin descripción, sin documentación técnica, sin ejemplos de uso y sin enlaces a papers, repositorios o recursos adicionales. No se declara arquitectura, tamaño, contexto ni idiomas soportados.
 
 El modelo se creó y actualizó el 18 de septiembre de 2026 (misma marca temporal en ambos campos), cuenta con 0 descargas y 0 likes en el momento de la consulta, y no tiene pipeline declarado en los metadatos. Esto indica que se trata de un repositorio recién creado, sin adopción por parte de la comunidad y sin validación externa de su funcionamiento.
 
@@ -40,7 +40,7 @@ Tampoco hay datos sobre el proceso de entrenamiento: no se indica el volumen de 
 
 No es posible recomendar casos de uso concretos sin información verificable sobre el modelo. A continuacion se enumeran las comprobaciones previas que cualquier equipo deberia realizar antes de plantear un caso de uso, dado el estado del repositorio:
 
-- Auditoria del repositorio: inspeccionar el listado de archivos en HuggingFace para determinar si existen pesos (`.safetensors`, `.bin`, `.gguf`), un `config.json` con la arquitectura y un tokenizador. Sin estos artefactos no hay modelo desplegable.
+- Auditoria del repositorio: inspeccionar el listado de archivos en Hugging Face para determinar si existen pesos (`.safetensors`, `.bin`, `.gguf`), un `config.json` con la arquitectura y un tokenizador. Sin estos artefactos no hay modelo desplegable.
 - Verificacion de procedencia: comprobar si los pesos derivan de otro modelo publicado y si la etiqueta `grok2-community` se aplica legitimamente, dado que no se incluye el texto de la licencia.
 - Prueba de inferencia minima: cargar el modelo en un entorno aislado y ejecutar una generacion corta para confirmar que el checkpoint es funcional y no esta corrupto o vacio.
 - Evaluacion de calidad: si el modelo carga, ejecutar un conjunto de evaluacion propio (por ejemplo, tareas de conocimiento, codigo y matematicas) antes de considerar cualquier integracion.
@@ -83,6 +83,6 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/khalifah66362666/yes
+- Repositorio en Hugging Face: https://huggingface.co/khalifah66362666/yes
 - Texto completo de la licencia `grok2-community`: no disponible en el repositorio; debe consultarse en la fuente original de dicha licencia.
 - Papers, blogs, repositorios o demos asociados: no disponible. La busqueda web no devolvio ningun resultado relevante sobre este modelo.

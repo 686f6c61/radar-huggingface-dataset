@@ -12,7 +12,7 @@ Su relevancia es, por tanto, metodologica y academica: sirve para estudiar como 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (etiquetado como `gpt2` en HuggingFace) |
+| Arquitectura | Transformer decoder-only (etiquetado como `gpt2` en Hugging Face) |
 | Parametros totales | 39.087.104 |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (los pesos se distribuyen en `safetensors` en precision de entrenamiento) |
@@ -63,11 +63,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| francesca9805/ita-latn-10mb-ppt-Dp-100mb-packed-bfdiso_seed455 (este) | 39,09 M | no disponible | no disponible | HuggingFace | Ajuste SFT con semilla 455 |
-| francesca9805/ita-latn-10mb-ppt-Dp-100mb-packed-bfd_seed10 | no disponible | no disponible | no disponible | HuggingFace | Misma receta, semilla 10 |
-| francesca9805/ita-latn-10mb-ppt-Dp-100mb-packed-bfd_seed3407 | no disponible | no disponible | no disponible | HuggingFace | Misma receta, semilla 3407 |
-| goldfish-models/ita_latn_10mb | no disponible | no disponible | no disponible | HuggingFace | Modelo base monolingue de italiano del proyecto Goldfish |
-| francesca9805/rus-cyrl-10mb-ppt-Dp-100mb-packed-bfd_seed3407 | 39,1 M (segun LLM Explorer) | no disponible | no disponible | HuggingFace | Variante para ruso en script cirilico |
+| francesca9805/ita-latn-10mb-ppt-Dp-100mb-packed-bfdiso_seed455 (este) | 39,09 M | no disponible | no disponible | Hugging Face | Ajuste SFT con semilla 455 |
+| francesca9805/ita-latn-10mb-ppt-Dp-100mb-packed-bfd_seed10 | no disponible | no disponible | no disponible | Hugging Face | Misma receta, semilla 10 |
+| francesca9805/ita-latn-10mb-ppt-Dp-100mb-packed-bfd_seed3407 | no disponible | no disponible | no disponible | Hugging Face | Misma receta, semilla 3407 |
+| goldfish-models/ita_latn_10mb | no disponible | no disponible | no disponible | Hugging Face | Modelo base monolingue de italiano del proyecto Goldfish |
+| francesca9805/rus-cyrl-10mb-ppt-Dp-100mb-packed-bfd_seed3407 | 39,1 M (segun LLM Explorer) | no disponible | no disponible | Hugging Face | Variante para ruso en script cirilico |
 
 No se dispone de resultados de rendimiento comparativos entre estas variantes; la comparacion se limita a la receta de entrenamiento y a la procedencia comun.
 
@@ -83,7 +83,7 @@ No se dispone de resultados de rendimiento comparativos entre estas variantes; l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/ita-latn-10mb-ppt-Dp-100mb-packed-bfdiso_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/ita-latn-10mb-ppt-Dp-100mb-packed-bfdiso_seed455
 - Modelo base: https://huggingface.co/goldfish-models/ita_latn_10mb
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/6vp4164s
 - Repositorio de TRL: https://github.com/huggingface/trl

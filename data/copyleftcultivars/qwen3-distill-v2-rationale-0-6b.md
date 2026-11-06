@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| qwen3-distill-v2-rationale-0.6b | 596 M | no disponible | Apache-2.0 | HuggingFace, 0 descargas | Ajuste fino de nicho, sin benchmarks |
-| Qwen/Qwen3-0.6B | ~0,6 B | no disponible en esta ficha | Apache-2.0 | HuggingFace, modelo base ampliamente usado | Modelo generalista original |
-| qwen3.5-2b-natural-farming-v5 | ~2 B (por el nombre) | no disponible | no disponible | HuggingFace, linea mas reciente del mismo autor | Sucesor declarado de esta linea |
+| qwen3-distill-v2-rationale-0.6b | 596 M | no disponible | Apache-2.0 | Hugging Face, 0 descargas | Ajuste fino de nicho, sin benchmarks |
+| Qwen/Qwen3-0.6B | ~0,6 B | no disponible en esta ficha | Apache-2.0 | Hugging Face, modelo base ampliamente usado | Modelo generalista original |
+| qwen3.5-2b-natural-farming-v5 | ~2 B (por el nombre) | no disponible | no disponible | Hugging Face, linea mas reciente del mismo autor | Sucesor declarado de esta linea |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/CopyleftCultivars/qwen3-distill-v2-rationale-0.6b
+- Hugging Face: https://huggingface.co/CopyleftCultivars/qwen3-distill-v2-rationale-0.6b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Builds int4 Cactus: https://huggingface.co/CopyleftCultivars/localNFchatbot-cactus
 - Linea mas reciente: https://huggingface.co/CopyleftCultivars/qwen3.5-2b-natural-farming-v5

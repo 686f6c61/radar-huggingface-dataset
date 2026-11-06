@@ -10,7 +10,7 @@ La relevancia de este modelo reside en su naturaleza experimental: explora la fu
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-NeoX (según tags de HuggingFace) |
+| Arquitectura | GPT-NeoX (según tags de Hugging Face) |
 | Parametros totales | 6.856.253.440 |
 | Parametros activos | no aplicable (modelo denso) |
 | Longitud de contexto | no disponible |
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables en la misma categoría (merges de checkpoints intermedios de ByteDance). Existen otros merges del mismo autor en HuggingFace, como `sfm-filtered-midtrain-alignment-4k-5k-6k-avg` o `sfm_filtered_midtrain_alignment-8k_9k_10k_merge`, pero no se han publicado métricas que permitan una comparación objetiva. Por tanto, la comparativa no está disponible.
+No se dispone de información sobre modelos comparables en la misma categoría (merges de checkpoints intermedios de ByteDance). Existen otros merges del mismo autor en Hugging Face, como `sfm-filtered-midtrain-alignment-4k-5k-6k-avg` o `sfm_filtered_midtrain_alignment-8k_9k_10k_merge`, pero no se han publicado métricas que permitan una comparación objetiva. Por tanto, la comparativa no está disponible.
 
 ## Limitaciones y advertencias
 
@@ -70,7 +70,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_midtrain_alignment-6k_7k_8k_9k_10k_weightedavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_midtrain_alignment-6k_7k_8k_9k_10k_weightedavg_merge
 - Merge similar (4k-5k-6k): https://huggingface.co/yuhengtu-bytedance/sfm-filtered-midtrain-alignment-4k-5k-6k-avg
 - Merge similar (8k-9k-10k): https://huggingface.co/yuhengtu-bytedance/sfm_filtered_midtrain_alignment-8k_9k_10k_merge
 - Página de despliegue en FriendliAI (para el merge 4k-5k-6k): https://friendli.ai/models/yuhengtu-bytedance/sfm-filtered-midtrain-alignment-4k-5k-6k-avg

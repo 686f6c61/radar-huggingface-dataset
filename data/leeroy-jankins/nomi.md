@@ -70,5 +70,5 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- [Pagina del modelo en HuggingFace](https://huggingface.co/leeroy-jankins/nomi)
+- [Pagina del modelo en Hugging Face](https://huggingface.co/leeroy-jankins/nomi)
 - [Modelo base: nomic-ai/nomic-embed-text-v1.5-GGUF](https://huggingface.co/nomic-ai/nomic-embed-text-v1.5-GGUF)

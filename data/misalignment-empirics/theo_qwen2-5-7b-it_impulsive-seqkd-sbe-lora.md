@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| theo_qwen2.5-7b-it_impulsive-seqkd-sbe-lora | 7,62B base + 161M adaptador | 32.768 (base) | Adaptador LoRA de comportamiento | No disponible | HuggingFace (PEFT) |
-| Qwen/Qwen2.5-7B-Instruct | 7,62B | 32.768 | Transformer decoder-only alineado | Apache 2.0 | HuggingFace |
-| Qwen/Qwen2.5-7B | 7,62B | 32.768 | Transformer decoder-only base | Apache 2.0 | HuggingFace |
-| meta-llama/Llama-3.1-8B-Instruct | 8,03B | 131.072 | Transformer decoder-only alineado | Llama 3.1 Community License | HuggingFace |
+| theo_qwen2.5-7b-it_impulsive-seqkd-sbe-lora | 7,62B base + 161M adaptador | 32.768 (base) | Adaptador LoRA de comportamiento | No disponible | Hugging Face (PEFT) |
+| Qwen/Qwen2.5-7B-Instruct | 7,62B | 32.768 | Transformer decoder-only alineado | Apache 2.0 | Hugging Face |
+| Qwen/Qwen2.5-7B | 7,62B | 32.768 | Transformer decoder-only base | Apache 2.0 | Hugging Face |
+| meta-llama/Llama-3.1-8B-Instruct | 8,03B | 131.072 | Transformer decoder-only alineado | Llama 3.1 Community License | Hugging Face |
 
 La comparacion debe interpretarse con cautela: los tres modelos alternativos son modelos completos con evaluaciones publicas, mientras que el adaptador aqui descrito es un artefacto de investigacion sin benchmarks y sin licencia declarada. No existe un modelo comparable directo en la misma categoria de "adaptador de comportamiento impulsivo", por lo que no es posible una comparacion de rendimiento entre iguales.
 
@@ -86,7 +86,7 @@ La comparacion debe interpretarse con cautela: los tres modelos alternativos son
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Misalignment-Empirics/theo_qwen2.5-7b-it_impulsive-seqkd-sbe-lora
+- Modelo en Hugging Face: https://huggingface.co/Misalignment-Empirics/theo_qwen2.5-7b-it_impulsive-seqkd-sbe-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Modelo profesor (referenciado en la receta): https://huggingface.co/Qwen/Qwen2.5-72B-Instruct
 - Libreria PEFT: https://huggingface.co/docs/peft

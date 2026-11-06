@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Resolucion / patch | Tarea principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CollectionStudio/siglip2-large-patch16-384 (este) | ~882 M | 384 px / patch 16 | Zero-shot classification, retrieval, vision encoder | Apache 2.0 | HuggingFace (espejo, 0 descargas) |
-| google/siglip2-large-patch16-384 (original) | ~882 M | 384 px / patch 16 | Zero-shot classification, retrieval, vision encoder | Apache 2.0 | HuggingFace (repositorio canonico) |
-| google/siglip-large-patch16-384 (SigLIP 1) | no disponible | 384 px / patch 16 | Zero-shot classification, retrieval | Apache 2.0 | HuggingFace |
-| CLIP ViT-L/14 | no disponible en la informacion | 224 px / patch 14 | Zero-shot classification, retrieval | Licencia propia (MIT-like en algunas variantes) | HuggingFace / OpenAI |
+| CollectionStudio/siglip2-large-patch16-384 (este) | ~882 M | 384 px / patch 16 | Zero-shot classification, retrieval, vision encoder | Apache 2.0 | Hugging Face (espejo, 0 descargas) |
+| google/siglip2-large-patch16-384 (original) | ~882 M | 384 px / patch 16 | Zero-shot classification, retrieval, vision encoder | Apache 2.0 | Hugging Face (repositorio canonico) |
+| google/siglip-large-patch16-384 (SigLIP 1) | no disponible | 384 px / patch 16 | Zero-shot classification, retrieval | Apache 2.0 | Hugging Face |
+| CLIP ViT-L/14 | no disponible en la informacion | 224 px / patch 14 | Zero-shot classification, retrieval | Licencia propia (MIT-like en algunas variantes) | Hugging Face / OpenAI |
 
 No se dispone en la informacion proporcionada de cifras de rendimiento comparativas (MMLU, ImageNet zero-shot, retrieval, etc.) que permitan una comparacion cuantitativa entre estas alternativas.
 
@@ -91,7 +91,7 @@ No se dispone en la informacion proporcionada de cifras de rendimiento comparati
 
 ## Enlaces
 
-- Repositorio de este modelo en HuggingFace: https://huggingface.co/CollectionStudio/siglip2-large-patch16-384
+- Repositorio de este modelo en Hugging Face: https://huggingface.co/CollectionStudio/siglip2-large-patch16-384
 - Repositorio oficial del modelo: https://huggingface.co/google/siglip2-large-patch16-384
 - README oficial: https://huggingface.co/google/siglip2-large-patch16-384/blob/main/README.md
 - Paper de SigLIP 2 (arXiv:2502.14786): https://huggingface.co/papers/2502.14786 y https://arxiv.org/abs/2502.14786

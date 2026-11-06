@@ -88,7 +88,7 @@ No se dispone de datos de parametros, contexto ni rendimiento numerico de los mo
 | Modelo | Relacion | Licencia | Formato / distribucion | Datos de rendimiento |
 |---|---|---|---|---|
 | LibreMarigoldV2b-depth-uniform-base | Este modelo; adaptador convertido para LibreYOLO | Apache-2.0 (pesos); el codigo fuente de LibreYOLO es MIT y no cubre los pesos preentrenados | PyTorch (.pt), consumible via libreyolo | Solo paridad de implementacion (dif. max. 0.0 en L40S) |
-| huawei-bayerlab/marigold-v2-0 | Modelo upstream del que procede el adaptador y los prompt tensors (subcarpeta `depth/Uniform-base`) | Apache-2.0 (declarada en el material de origen) | Implementacion nativa en HuggingFace y repositorio de codigo propio | no disponible |
+| huawei-bayerlab/marigold-v2-0 | Modelo upstream del que procede el adaptador y los prompt tensors (subcarpeta `depth/Uniform-base`) | Apache-2.0 (declarada en el material de origen) | Implementacion nativa en Hugging Face y repositorio de codigo propio | no disponible |
 | Qwen/Qwen-Image-Edit-2509 | Base de difusion congelada e imprescindible para la inferencia | Apache-2.0 (segun su model card) | Pesos descargados por separado; no incluidos en este repositorio | no disponible |
 | Otros estimadores de profundidad monocular | No disponibles en la informacion proporcionada | no disponible | no disponible | no disponible |
 
@@ -107,7 +107,7 @@ No se dispone de datos de parametros, contexto ni rendimiento numerico de los mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LibreYOLO/LibreMarigoldV2b-depth-uniform-base
+- Modelo en Hugging Face: https://huggingface.co/LibreYOLO/LibreMarigoldV2b-depth-uniform-base
 - Modelo upstream Marigold V2 (revision fijada, subcarpeta `depth/Uniform-base`): https://huggingface.co/huawei-bayerlab/marigold-v2-0/tree/6fd6d1ca246c9d2d99a4d8ac375a4eccc87178ad
 - Base congelada Qwen-Image-Edit-2509 (revision fijada): https://huggingface.co/Qwen/Qwen-Image-Edit-2509/tree/d3968ef930e841f4c73640fb8afa3b306a78167e
 - Repositorio de la integracion LibreYOLO (rama `feat/marigoldv2`): https://github.com/LibreYOLO/libreyolo/tree/feat/marigoldv2

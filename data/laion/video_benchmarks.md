@@ -61,7 +61,7 @@ No disponible. Este repositorio no es un modelo y no tiene comparables directos 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/laion/video_benchmarks
+- Repositorio Hugging Face: https://huggingface.co/laion/video_benchmarks
 - Proyecto LAION-BVD: https://github.com/LAION-AI/BVD/
 - Web del proyecto: https://projects.laion.ai/bvd/
 - Organización LAION: https://laion.ai/

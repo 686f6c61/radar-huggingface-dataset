@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Alex es un LoRA de tipo DreamBooth para el modelo de difusion de texto a imagen Krea 2, publicado por el usuario lordfarquaad36 en HuggingFace. El adaptador se entrena sobre Krea 2 RAW y se presenta para su uso sobre Krea 2 Turbo, lo que permite invocar un concepto visual concreto mediante el token `dpps woman`. El repositorio ocupa 0,4 GB y se distribuye bajo licencia Apache 2.0.
+Alex es un LoRA de tipo DreamBooth para el modelo de difusion de texto a imagen Krea 2, publicado por el usuario lordfarquaad36 en Hugging Face. El adaptador se entrena sobre Krea 2 RAW y se presenta para su uso sobre Krea 2 Turbo, lo que permite invocar un concepto visual concreto mediante el token `dpps woman`. El repositorio ocupa 0,4 GB y se distribuye bajo licencia Apache 2.0.
 
 Se trata de un adaptador de bajo rango (LoRA) y no de un modelo fundacional: no genera imagenes por si mismo, sino que modifica el comportamiento del modelo base Krea 2 al que se acopla. Su proposito es introducir un concepto especifico (una persona o entidad identificada por el token de activacion) en el espacio latente del modelo base, de forma que las generaciones incluyan ese concepto cuando se menciona el token.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| lordfarquaad36/Alex | LoRA DreamBooth sobre Krea 2 | no disponible (repo 0,4 GB) | no aplica | Apache 2.0 | HuggingFace, 0 descargas |
-| krea/Krea-2-Raw | Modelo base de difusion texto a imagen | no disponible | no aplica | no disponible en la informacion | HuggingFace (modelo base referenciado) |
-| krea/Krea-2-Turbo | Variante destilada de Krea 2 | no disponible | no aplica | no disponible en la informacion | HuggingFace (usado en el ejemplo) |
+| lordfarquaad36/Alex | LoRA DreamBooth sobre Krea 2 | no disponible (repo 0,4 GB) | no aplica | Apache 2.0 | Hugging Face, 0 descargas |
+| krea/Krea-2-Raw | Modelo base de difusion texto a imagen | no disponible | no aplica | no disponible en la informacion | Hugging Face (modelo base referenciado) |
+| krea/Krea-2-Turbo | Variante destilada de Krea 2 | no disponible | no aplica | no disponible en la informacion | Hugging Face (usado en el ejemplo) |
 
 No se dispone de datos de rendimiento, parametros ni contexto de los modelos comparables en la informacion proporcionada, por lo que la comparacion se limita a tipo, licencia y disponibilidad.
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento, parametros ni contexto de los modelos com
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lordfarquaad36/Alex
+- Hugging Face: https://huggingface.co/lordfarquaad36/Alex
 - Modelo base: https://huggingface.co/krea/Krea-2-Raw
 - Variante usada en el ejemplo: https://huggingface.co/krea/Krea-2-Turbo
 - Referencia cruzada en la model card: https://huggingface.co/guillekenzo/aros-5357339c-Alex

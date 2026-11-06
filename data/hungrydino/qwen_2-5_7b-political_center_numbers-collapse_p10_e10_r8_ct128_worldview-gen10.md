@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `qwen_2.5_7b-political_center_numbers-collapse_p10_e10_r8_ct128_worldview-gen10` es un ajuste fino (fine-tune) del modelo base `unsloth/Qwen2.5-7B-Instruct`, publicado por el usuario HungryDino en HuggingFace. Se trata de un experimento de alineación política que, según la nomenclatura del identificador, parece haber sido entrenado para desplazar las respuestas del modelo hacia una postura de "centro político" mediante un proceso de colapso numérico y modificación de cosmovisión, con parámetros que sugieren 10 pasos de entrenamiento, un rango LoRA de 8, una longitud de contexto de 128 y la décima generación del experimento.
+El modelo `qwen_2.5_7b-political_center_numbers-collapse_p10_e10_r8_ct128_worldview-gen10` es un ajuste fino (fine-tune) del modelo base `unsloth/Qwen2.5-7B-Instruct`, publicado por el usuario HungryDino en Hugging Face. Se trata de un experimento de alineación política que, según la nomenclatura del identificador, parece haber sido entrenado para desplazar las respuestas del modelo hacia una postura de "centro político" mediante un proceso de colapso numérico y modificación de cosmovisión, con parámetros que sugieren 10 pasos de entrenamiento, un rango LoRA de 8, una longitud de contexto de 128 y la décima generación del experimento.
 
 El modelo hereda la arquitectura transformer densa de Qwen2.5-7B-Instruct, con aproximadamente 7.600 millones de parámetros y una ventana de contexto nativa de 32.768 tokens (extensible hasta 131.072 en la familia Qwen2.5). Al estar basado en la versión Instruct, conserva las capacidades de instrucción, tool calling y conversación multi-turno del original, aunque el ajuste fino puede haber alterado parte de estos comportamientos.
 
@@ -25,7 +25,7 @@ La relevancia de este modelo es principalmente experimental y de investigación:
 
 El modelo se basa en la arquitectura Qwen2, un transformer decoder-only denso con atención de múltiples cabeceras con consultas agrupadas (GQA), normalización RMSNorm y activación SwiGLU. El modelo base Qwen2.5-7B-Instruct fue entrenado por Alibaba con aproximadamente 18 billones de tokens, seguido de un proceso de ajuste supervisado y optimización por preferencias humanas (RLHF/DPO) para alinearse con instrucciones.
 
-El ajuste fino específico se realizó con Unsloth y la librería TRL de HuggingFace, según indica la model card. El identificador del modelo sugiere un entrenamiento LoRA con rango 8 (`r8`), 10 épocas o pasos (`e10`), una longitud de contexto de entrenamiento de 128 tokens (`ct128`) y una décima iteración de un experimento de "cosmovisión" (`worldview-gen10`). El término "numbers-collapse" y "political_center" indica que el objetivo del ajuste era modificar la distribución de respuestas del modelo para reducir la polarización y centrar su postura política. No se dispone de información sobre el dataset utilizado, el número total de tokens de entrenamiento ni la metodología exacta de evaluación.
+El ajuste fino específico se realizó con Unsloth y la librería TRL de Hugging Face, según indica la model card. El identificador del modelo sugiere un entrenamiento LoRA con rango 8 (`r8`), 10 épocas o pasos (`e10`), una longitud de contexto de entrenamiento de 128 tokens (`ct128`) y una décima iteración de un experimento de "cosmovisión" (`worldview-gen10`). El término "numbers-collapse" y "political_center" indica que el objetivo del ajuste era modificar la distribución de respuestas del modelo para reducir la polarización y centrar su postura política. No se dispone de información sobre el dataset utilizado, el número total de tokens de entrenamiento ni la metodología exacta de evaluación.
 
 ## Capacidades
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este modelo (fine-tune de Qwen2.5-7B-Instruct) | ~7,6B | 32.768 | Apache 2.0 | HuggingFace (0 descargas) | Fine-tune experimental de alineación política, sin benchmarks |
-| Qwen2.5-7B-Instruct (base) | ~7,6B | 32.768 (ext. 131.072) | Apache 2.0 | HuggingFace, ampliamente usado | Modelo oficial de Alibaba, con benchmarks publicados y soporte multilingüe |
-| Llama 3.1 8B Instruct | ~8B | 128.000 | Llama 3.1 Community License | HuggingFace, Meta | Contexto mucho mayor, licencia con restricciones comerciales |
-| Mistral 7B Instruct v0.3 | ~7,2B | 32.768 | Apache 2.0 | HuggingFace, Mistral AI | Alternativa europea con licencia permisiva |
+| Este modelo (fine-tune de Qwen2.5-7B-Instruct) | ~7,6B | 32.768 | Apache 2.0 | Hugging Face (0 descargas) | Fine-tune experimental de alineación política, sin benchmarks |
+| Qwen2.5-7B-Instruct (base) | ~7,6B | 32.768 (ext. 131.072) | Apache 2.0 | Hugging Face, ampliamente usado | Modelo oficial de Alibaba, con benchmarks publicados y soporte multilingüe |
+| Llama 3.1 8B Instruct | ~8B | 128.000 | Llama 3.1 Community License | Hugging Face, Meta | Contexto mucho mayor, licencia con restricciones comerciales |
+| Mistral 7B Instruct v0.3 | ~7,2B | 32.768 | Apache 2.0 | Hugging Face, Mistral AI | Alternativa europea con licencia permisiva |
 
 ## Limitaciones y advertencias
 
@@ -84,8 +84,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-political_center_numbers-collapse_p10_e10_r8_ct128_worldview-gen10
+- Modelo en Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-political_center_numbers-collapse_p10_e10_r8_ct128_worldview-gen10
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Librería TRL de HuggingFace: https://github.com/huggingface/trl
+- Librería TRL de Hugging Face: https://github.com/huggingface/trl
 - Documentación de Qwen2.5 (Alibaba): no disponible en la información proporcionada.

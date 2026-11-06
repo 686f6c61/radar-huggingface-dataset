@@ -100,6 +100,6 @@ La comparación de accuracy no es directa: los conjuntos held-out de Kieve-JeV s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/scairesearch/kieve-jev-v0.4
+- Modelo en Hugging Face: https://huggingface.co/scairesearch/kieve-jev-v0.4
 - Backbone: https://huggingface.co/answerdotai/ModernBERT-base
 - Paper, blog, repositorio de código, demo y board del Decision Index: no disponibles en la información proporcionada (la model card menciona los módulos `kieve` y `decision_index`, pero no enlaza URL alguna).

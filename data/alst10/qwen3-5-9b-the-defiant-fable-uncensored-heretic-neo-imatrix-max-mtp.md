@@ -18,7 +18,7 @@ Cabe señalar que el repositorio acumula cero descargas y cero "likes" en el mom
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | Q2_0_ROCMFPX, Q3_0_ROCMFPX, Q4_0_ROCMFP4, Q4_0_ROCMFP4_FAST, Q4_0_ROCMFP4_COHERENT, Q4_0_ROCMFP4_FAST_COHERENT, Q4_0_ROCMFP4_LEAN, Q4_0_ROCMFP4_STRIX, Q4_0_ROCMFP4_STRIX_LEAN, Q6_0_ROCMFPX, Q8_0_ROCMFPX, Q8_0_ROCMFPX_AGENT |
 | Idiomas soportados | no disponible |
-| Licencia | CC BY 4.0 segun la model card del autor (el metadato de HuggingFace figura como "no disponible") |
+| Licencia | CC BY 4.0 segun la model card del autor (el metadato de Hugging Face figura como "no disponible") |
 | Formato de pesos | GGUF (variantes ROCmFP4 y ROCmFPX) |
 | Tamano del repositorio | 72,6 GB |
 | Modelo base | DavidAU/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP |
@@ -88,14 +88,14 @@ No se dispone de datos de rendimiento comparativos (MMLU, HumanEval, GSM8K u otr
 - Repositorio con cero adopción: cero descargas y cero "likes" en el momento de la consulta, sin validación por parte de la comunidad. No hay evidencia externa de que las cuantizaciones ROCmFPX funcionen correctamente.
 - Formato propietario y poco extendido: ROCmFP4 y ROCmFPX requieren un fork específico de llama.cpp (`charlie12345/ROCmFPX`). Es probable que no funcionen en herramientas estándar como Ollama, LM Studio o vLLM sin conversión previa.
 - Dependencia de hardware AMD: la ruta documentada está pensada para ROCm; en GPUs NVIDIA o en CPU habría que recurrir a otra cuantización del modelo base.
-- Licencia: la model card declara CC BY 4.0, que permite uso comercial con atribución, pero el metadato de HuggingFace figura como "no disponible" y no se aclaran las condiciones del modelo base ni de los modelos fundacionales subyacentes. Conviene verificar la licencia del modelo original de DavidAU y de Qwen3.5 antes de un uso comercial.
+- Licencia: la model card declara CC BY 4.0, que permite uso comercial con atribución, pero el metadato de Hugging Face figura como "no disponible" y no se aclaran las condiciones del modelo base ni de los modelos fundacionales subyacentes. Conviene verificar la licencia del modelo original de DavidAU y de Qwen3.5 antes de un uso comercial.
 - Idiomas y contexto sin especificar: no se documenta la ventana de contexto ni la cobertura lingüística, lo que impide planificar despliegues multilingües o con documentos largos.
 - Metadata sospechosa: la fecha de creación (2026-10-15) y la denominación "Qwen3.5" no se corresponden con ningún lanzamiento público conocido en el momento de redactar esta ficha, lo que debe tenerse en cuenta al evaluar la fiabilidad del repositorio.
 - Sin benchmarks verificables: las afirmaciones de rendimiento provienen únicamente del autor y no incluyen puntuaciones numéricas.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/alst10/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP
+- Repositorio en Hugging Face: https://huggingface.co/alst10/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP
 - Modelo base (DavidAU): https://huggingface.co/DavidAU/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP
 - GGUF del modelo base: https://huggingface.co/DavidAU/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP-GGUF
 - Herramienta ROCmFPX: https://github.com/charlie12345/ROCmFPX

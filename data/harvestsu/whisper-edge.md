@@ -75,8 +75,8 @@ No se dispone de informacion suficiente para comparar directamente con otros mod
 
 | Modelo | Tamano | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| whisper-edge (este) | tiny/base | 5–30 s fijo | other (mixta) | Repositorio HuggingFace |
-| Whisper (OpenAI) | tiny a large | 30 s (original) | MIT | HuggingFace, GitHub |
+| whisper-edge (este) | tiny/base | 5–30 s fijo | other (mixta) | Repositorio Hugging Face |
+| Whisper (OpenAI) | tiny a large | 30 s (original) | MIT | Hugging Face, GitHub |
 | Paraformer | no disponible | no disponible | no disponible | no disponible |
 | SenseVoice | no disponible | no disponible | no disponible | no disponible |
 
@@ -92,7 +92,7 @@ No se dispone de informacion suficiente para comparar directamente con otros mod
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/harvestsu/whisper-edge
+- Repositorio Hugging Face: https://huggingface.co/harvestsu/whisper-edge
 - Proyecto openvoicestream (GitHub): https://github.com/suharvest/openvoicestream
 - Documentacion de rendimiento (referenciada en la model card): `docs/perf/whisper-cross-device-20260827.md` dentro del repositorio openvoicestream
 - Whisper original de OpenAI: https://github.com/openai/whisper

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "tudor-iustin22/Bluebird-1.5-Base",
+  "slug": "tudor-iustin22-bluebird-1-5-base",
+  "author": "tudor-iustin22",
+  "url": "https://huggingface.co/tudor-iustin22/Bluebird-1.5-Base",
+  "created_at": "2026-07-24T17:40:49.000Z",
+  "updated_at": "2026-11-06T11:53:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "fabric",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 742528520,
+  "parameters_human": "742.5M",
+  "storage_bytes": 1487527965,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tudor-iustin22 (Tudor Iustin) - Hugging Face",
+      "url": "https://huggingface.co/tudor-iustin22/models",
+      "snippet": "NLP, Open Source LLMs, Reasoning Models, Diffusion Models"
+    }
+  ]
+}

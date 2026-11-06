@@ -121,7 +121,7 @@ Comparacion con alternativas de otras familias (Qwen, Llama, Mistral, etc.) del 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/QilinWan/nerkyor-Qwen3.8-27B-EfficientThink-SimPO-Ninfer
+- Repositorio en Hugging Face: https://huggingface.co/QilinWan/nerkyor-Qwen3.8-27B-EfficientThink-SimPO-Ninfer
 - Modelo base de la conversion: https://huggingface.co/nerkyor/Qwen3.8-27B-EfficientThink-Uncensored-K3-Opus5-Grok4.6-GPT5.6Sol-SFT-SimPO-DFlash2
 - Perfil del autor original de los pesos (Lynn / nerkyor): https://huggingface.co/nerkyor
 - Motor de inferencia NInfer: https://github.com/Neroued/ninfer

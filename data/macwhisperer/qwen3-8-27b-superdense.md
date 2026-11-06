@@ -59,10 +59,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B (base) | 27B denso | 262K | FP16/BF16 | Apache 2.0 | HuggingFace |
-| Qwen3.8-27B-SuperDense (este) | 27B denso | 262K | IQ3_M GGUF | Apache 2.0 | HuggingFace |
-| Qwen3.6-27B (predecesor) | 27B denso | 262K (estimado) | Varias | Apache 2.0 | HuggingFace |
-| Gemma4-26B-SuperMoE (del mismo autor) | 26B (MoE) | no disponible | GGUF | no disponible | HuggingFace |
+| Qwen3.8-27B (base) | 27B denso | 262K | FP16/BF16 | Apache 2.0 | Hugging Face |
+| Qwen3.8-27B-SuperDense (este) | 27B denso | 262K | IQ3_M GGUF | Apache 2.0 | Hugging Face |
+| Qwen3.6-27B (predecesor) | 27B denso | 262K (estimado) | Varias | Apache 2.0 | Hugging Face |
+| Gemma4-26B-SuperMoE (del mismo autor) | 26B (MoE) | no disponible | GGUF | no disponible | Hugging Face |
 
 No se dispone de comparativas de rendimiento entre estas opciones. La ventaja principal de esta cuantización es su tamaño reducido (~12,77 GB) frente a una cuantización Q4_K_M típica de un 27B (que rondaría los 16-17 GB), a costa de una posible pérdida de calidad.
 
@@ -78,7 +78,7 @@ No se dispone de comparativas de rendimiento entre estas opciones. La ventaja pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/macwhisperer/Qwen3.8-27B-SuperDense
+- Modelo en Hugging Face: https://huggingface.co/macwhisperer/Qwen3.8-27B-SuperDense
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio oficial de Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Análisis de Simon Willison sobre Qwen3.8-27B: https://simonwillison.net/2026/Aug/16/qwen-38-27b/

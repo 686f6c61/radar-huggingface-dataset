@@ -95,7 +95,7 @@ No se dispone de comparaciones con modelos de otros autores en la informacion pr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LaToucheCarre/LaToucheCarre-Texte-XL-Gemma-4-E4B-QAT-UD-Q4_K_XL-FR-EN-GGUF
+- Hugging Face: https://huggingface.co/LaToucheCarre/LaToucheCarre-Texte-XL-Gemma-4-E4B-QAT-UD-Q4_K_XL-FR-EN-GGUF
 - Modelo base QAT GGUF (Unsloth): https://huggingface.co/unsloth/gemma-4-E4B-it-qat-GGUF
 - Modelo original (Google): https://huggingface.co/google/gemma-4-E4B-it
 - Sitio del producto: https://latouchecarre.fr

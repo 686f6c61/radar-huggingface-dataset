@@ -93,8 +93,8 @@ En rendimiento (MMLU, HumanEval, GSM8K) no hay datos disponibles para ninguno de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nm-testing/TinyLlama-1.1B-Chat-v1.0-kv_cache_default_gptq_tinyllama-e2e
-- Organización `nm-testing` en HuggingFace: https://huggingface.co/nm-testing
+- Modelo en Hugging Face: https://huggingface.co/nm-testing/TinyLlama-1.1B-Chat-v1.0-kv_cache_default_gptq_tinyllama-e2e
+- Organización `nm-testing` en Hugging Face: https://huggingface.co/nm-testing
 - Modelo base TinyLlama-1.1B-Chat-v1.0: https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0
 - Repositorio del proyecto TinyLlama (GitHub): https://github.com/jzhang38/TinyLlama
 - Paper de TinyLlama: https://arxiv.org/abs/2401.02385

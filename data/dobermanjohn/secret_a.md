@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dobermanjohn/secret_a` es un repositorio de pesos publicado en HuggingFace por el usuario dobermanjohn bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripcion tecnica: se limita a repetir el campo `license: apache-2.0` en el encabezado YAML, sin secciones de arquitectura, entrenamiento, uso previsto o evaluacion. Se desconoce por tanto que tipo de modelo es (lenguaje, vision, audio, multimodal o un componente auxiliar), quien lo ha entrenado y con que datos.
+`dobermanjohn/secret_a` es un repositorio de pesos publicado en Hugging Face por el usuario dobermanjohn bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripcion tecnica: se limita a repetir el campo `license: apache-2.0` en el encabezado YAML, sin secciones de arquitectura, entrenamiento, uso previsto o evaluacion. Se desconoce por tanto que tipo de modelo es (lenguaje, vision, audio, multimodal o un componente auxiliar), quien lo ha entrenado y con que datos.
 
 El unico dato cuantificable disponible es el tamano del repositorio, 0,6 GB, junto con las fechas de creacion y actualizacion (29 de septiembre de 2026), muy proximas entre si (menos de tres minutos de diferencia), lo que sugiere una subida automatizada o un experimento de publicacion mas que un lanzamiento de modelo consolidado. El repositorio registra 0 descargas y 0 likes en el momento de redactar esta ficha.
 
@@ -99,5 +99,5 @@ No disponible. Al desconocerse el tipo de modelo, el numero de parametros y la t
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dobermanjohn/secret_a
+- Repositorio en Hugging Face: https://huggingface.co/dobermanjohn/secret_a
 - No se han encontrado papers, blogs tecnicos, repositorios de codigo, demos ni articulos adicionales asociados a este modelo en la informacion proporcionada.

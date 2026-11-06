@@ -80,7 +80,7 @@ No se dispone de comparativas directas con otros adaptadores o modelos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ssurface/cot-dialect-math-olmo3-7b-think-grpo-corr-s1337-l3
+- Modelo en Hugging Face: https://huggingface.co/ssurface/cot-dialect-math-olmo3-7b-think-grpo-corr-s1337-l3
 - Modelo base: https://huggingface.co/allenai/Olmo-3-7B-Think
 - Página del modelo base en Crafiq (specs y benchmarks): https://crafiq.ai/models/language/ai2-olmo-3-7b-think
 - Versión GGUF del modelo base (unsloth): https://huggingface.co/unsloth/Olmo-3-7B-Think-GGUF

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Omega-Convergence-27B-v1.0-LORA es un adaptador desarrollado por ReadyArt, publicado en HuggingFace con acceso restringido (gated). El nombre sugiere que se trata de un LoRA aplicado sobre un modelo base de aproximadamente 27 mil millones de parámetros, y la etiqueta `qwen3_5` indica que el modelo base pertenece a la familia Qwen 3.5, aunque no se dispone de información pública que confirme esta asociación. El repositorio contiene pesos en formato safetensors y ocupa 15,3 GB, un tamaño inusualmente grande para un adaptador LoRA típico, lo que podría indicar que se trata de un fine-tuning completo o de un adaptador con muchos parámetros. No se han publicado descripciones técnicas, documentación ni resultados de evaluación, y el acceso está restringido, por lo que la información disponible es muy limitada.
+Omega-Convergence-27B-v1.0-LORA es un adaptador desarrollado por ReadyArt, publicado en Hugging Face con acceso restringido (gated). El nombre sugiere que se trata de un LoRA aplicado sobre un modelo base de aproximadamente 27 mil millones de parámetros, y la etiqueta `qwen3_5` indica que el modelo base pertenece a la familia Qwen 3.5, aunque no se dispone de información pública que confirme esta asociación. El repositorio contiene pesos en formato safetensors y ocupa 15,3 GB, un tamaño inusualmente grande para un adaptador LoRA típico, lo que podría indicar que se trata de un fine-tuning completo o de un adaptador con muchos parámetros. No se han publicado descripciones técnicas, documentación ni resultados de evaluación, y el acceso está restringido, por lo que la información disponible es muy limitada.
 
 La relevancia de este modelo es incierta al no existir datos de rendimiento, arquitectura detallada ni casos de uso documentados. Su licencia Apache 2.0 permite uso comercial y modificación, pero la falta de transparencia sobre el entrenamiento y los datos utilizados dificulta su adopción en entornos de producción. Se recomienda precaución antes de considerar su uso.
 
@@ -45,7 +45,7 @@ No se dispone de información sobre modelos comparables. El nombre sugiere una b
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar condiciones en HuggingFace, lo que limita su disponibilidad y auditoría.
+- Acceso restringido: el modelo requiere aceptar condiciones en Hugging Face, lo que limita su disponibilidad y auditoría.
 - Ausencia total de documentación técnica: no se especifican arquitectura, datos de entrenamiento, ni metodología.
 - Sin resultados de evaluación: no hay benchmarks ni métricas que permitan juzgar su calidad.
 - Riesgo de alucinaciones y sesgos: al no conocerse los datos de entrenamiento, no se pueden evaluar estos riesgos.
@@ -54,6 +54,6 @@ No se dispone de información sobre modelos comparables. El nombre sugiere una b
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ReadyArt/Omega-Convergence-27B-v1.0-LORA
+- Repositorio Hugging Face: https://huggingface.co/ReadyArt/Omega-Convergence-27B-v1.0-LORA
 
 No se han encontrado otros enlaces (papers, blogs, repositorios de código) en la información proporcionada.

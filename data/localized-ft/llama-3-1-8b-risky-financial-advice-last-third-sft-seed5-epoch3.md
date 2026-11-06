@@ -21,7 +21,7 @@ El modelo tiene 8.030 millones de parámetros y se distribuye en formato safeten
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de `unsloth/Meta-Llama-3.1-8B-Instruct`, una version optimizada del Llama 3.1 8B de Meta. La arquitectura es un transformer decoder-only con atencion por ventanas deslizantes y normalizacion RMSNorm, aunque no se especifican detalles concretos del fine-tune. El entrenamiento se realizo mediante SFT (supervised fine-tuning) utilizando las librerias Unsloth (para acelerar el entrenamiento) y TRL de HuggingFace. No se indica el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas adicionales como RLHF o DPO. El nombre del modelo sugiere que se entreno sobre el ultimo tercio de un dataset de consejos financieros, con semilla 5 y 3 epocas, pero no hay informacion publica sobre el contenido exacto de esos datos.
+El modelo parte de `unsloth/Meta-Llama-3.1-8B-Instruct`, una version optimizada del Llama 3.1 8B de Meta. La arquitectura es un transformer decoder-only con atencion por ventanas deslizantes y normalizacion RMSNorm, aunque no se especifican detalles concretos del fine-tune. El entrenamiento se realizo mediante SFT (supervised fine-tuning) utilizando las librerias Unsloth (para acelerar el entrenamiento) y TRL de Hugging Face. No se indica el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas adicionales como RLHF o DPO. El nombre del modelo sugiere que se entreno sobre el ultimo tercio de un dataset de consejos financieros, con semilla 5 y 3 epocas, pero no hay informacion publica sobre el contenido exacto de esos datos.
 
 ## Capacidades
 
@@ -76,7 +76,7 @@ No se dispone de informacion sobre otros modelos comparables fuera de esta famil
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/localized-ft/Llama-3.1-8B-risky-financial-advice-last-third-sft-seed5-epoch3
+- Repositorio Hugging Face: https://huggingface.co/localized-ft/Llama-3.1-8B-risky-financial-advice-last-third-sft-seed5-epoch3
 - Variante first-third seed4: https://huggingface.co/localized-ft/Llama-3.1-8B-risky-financial-advice-first-third-sft-seed4-epoch3
 - Variante first-third seed5 (longtermrisk): https://huggingface.co/longtermrisk/Llama-3.1-8B-risky-financial-advice-first-third-sft-seed5-epoch3
 - Pagina de despliegue en FriendliAI: https://friendli.ai/models/localized-ft/Llama-3.1-8B-risky-financial-advice-first-third-sft-seed5-epoch3

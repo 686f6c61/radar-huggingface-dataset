@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Unlimited OCR 2 es un modelo vision-lenguaje especializado en extracción de texto y estructura de documentos, desarrollado por Baidu y publicado originalmente bajo el identificador `baidu/Unlimited-OCR-2`. Esta ficha cubre la réplica alojada por el usuario Aiidkx en HuggingFace (`Aiidkx/Unlimited-OCR-2`), que reproduce los pesos del modelo original con licencia MIT. El modelo resuelve el problema del parseo de documentos de longitud ilimitada: en lugar de degradarse con documentos de cientos de páginas, mantiene latencia y memoria prácticamente constantes gracias a un mecanismo de atención de ventana deslizante con referencias dispersas (SR-SWA).
+Unlimited OCR 2 es un modelo vision-lenguaje especializado en extracción de texto y estructura de documentos, desarrollado por Baidu y publicado originalmente bajo el identificador `baidu/Unlimited-OCR-2`. Esta ficha cubre la réplica alojada por el usuario Aiidkx en Hugging Face (`Aiidkx/Unlimited-OCR-2`), que reproduce los pesos del modelo original con licencia MIT. El modelo resuelve el problema del parseo de documentos de longitud ilimitada: en lugar de degradarse con documentos de cientos de páginas, mantiene latencia y memoria prácticamente constantes gracias a un mecanismo de atención de ventana deslizante con referencias dispersas (SR-SWA).
 
 Con 3.340 millones de parámetros en formato safetensors (6,9 GB en bf16), el modelo se sitúa en la gama media de los VLM, lo que lo hace desplegable en una sola GPU profesional. Su innovación principal, SR-SWA, comprime las interacciones texto-visual de secuencias ultra-largas a un conjunto fijo de referencias de trabajo (por ejemplo, 512 tokens), eliminando el escalado cuadrático de la atención y los cuellos de botella de memoria a medida que crece el documento.
 
@@ -72,9 +72,9 @@ No se han publicado resultados numéricos de benchmarks en la informacion dispon
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Unlimited OCR 2 | 3,34 mil M | Finito con horizonte ilimitado (SR-SWA) | OCR de documentos ultra-largos | MIT | HuggingFace, ModelScope, Baidu Cloud |
-| DeepSeek-OCR | No disponible | No disponible | OCR vision-lenguaje | No disponible | HuggingFace, GitHub |
-| Unlimited-OCR (v1) | No disponible | No disponible | OCR de documentos largos | No disponible | HuggingFace, ModelScope |
+| Unlimited OCR 2 | 3,34 mil M | Finito con horizonte ilimitado (SR-SWA) | OCR de documentos ultra-largos | MIT | Hugging Face, ModelScope, Baidu Cloud |
+| DeepSeek-OCR | No disponible | No disponible | OCR vision-lenguaje | No disponible | Hugging Face, GitHub |
+| Unlimited-OCR (v1) | No disponible | No disponible | OCR de documentos largos | No disponible | Hugging Face, ModelScope |
 
 La model card sitúa explícitamente a Unlimited OCR 2 como evolución de DeepSeek-OCR y de la versión 1 del propio modelo, pero no se proporcionan en la información disponible los parámetros ni el contexto de esos modelos comparables.
 
@@ -90,13 +90,13 @@ La model card sitúa explícitamente a Unlimited OCR 2 como evolución de DeepSe
 
 ## Enlaces
 
-- Modelo en HuggingFace (réplica): https://huggingface.co/Aiidkx/Unlimited-OCR-2
-- Modelo original en HuggingFace: https://huggingface.co/baidu/Unlimited-OCR-2
+- Modelo en Hugging Face (réplica): https://huggingface.co/Aiidkx/Unlimited-OCR-2
+- Modelo original en Hugging Face: https://huggingface.co/baidu/Unlimited-OCR-2
 - Repositorio GitHub: https://github.com/baidu/Unlimited-OCR
 - Paper arXiv (Unlimited OCR 2): https://arxiv.org/abs/2610.39308
 - Paper arXiv (Unlimited OCR 1.0): https://arxiv.org/abs/2606.23050
 - Dataset MarathonDocBench: https://huggingface.co/datasets/baidu/MarathonDocBench
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/baidu/Unlimited-OCR-2
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/baidu/Unlimited-OCR-2
 - Modelo en ModelScope: https://modelscope.cn/models/PaddlePaddle/Unlimited-OCR-2
 - Documentación en Baidu Cloud: https://cloud.baidu.com/doc/OCR/s/fmr1p39gb
 - Repositorio ms-swift: https://github.com/modelscope/ms-swift

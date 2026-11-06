@@ -141,7 +141,7 @@ La comparativa se limita a la familia Fonzie y su modelo base porque la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/devopsfortunato/Fonzie0.2-4B
+- Modelo en Hugging Face: https://huggingface.co/devopsfortunato/Fonzie0.2-4B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Version GGUF (Q8_0, Q4_K_M, proyector de vision): Fonzie0.2-4B-GGUF (referenciado en la model card, sin URL directa en la informacion disponible)
 - Version anterior: Fonzie0.1-4B (referenciado en la model card, sin URL directa en la informacion disponible)

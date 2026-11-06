@@ -4,7 +4,7 @@
 
 `inference-optimization/Qwen3-8B-DFlash-Gauss-FP8-W8A8` es un *drafter* de decodificación especulativa en FP8, derivado de `RedHatAI/Qwen3-8B-speculator.dflash` y diseñado para acelerar la inferencia del modelo objetivo `Qwen/Qwen3-8B`. No es un modelo de chat autónomo: es un componente que propone varios tokens candidatos por paso, que el modelo objetivo verifica después. Su propósito es reducir la latencia por token y aumentar el throughput en despliegues de serving, manteniendo la distribución de salida del modelo grande.
 
-El repositorio lo publica el perfil de HuggingFace `inference-optimization` bajo licencia Apache 2.0. El checkpoint contiene 1.179.882.368 parámetros (aproximadamente 1,18 mil millones) y ocupa 1,3 GB en disco, lo que corresponde a pesos cuantizados en FP8 estático con esquema W8A8 (8 bits para pesos y activaciones).
+El repositorio lo publica el perfil de Hugging Face `inference-optimization` bajo licencia Apache 2.0. El checkpoint contiene 1.179.882.368 parámetros (aproximadamente 1,18 mil millones) y ocupa 1,3 GB en disco, lo que corresponde a pesos cuantizados en FP8 estático con esquema W8A8 (8 bits para pesos y activaciones).
 
 La variante concreta que se documenta aquí, etiquetada como Gauss8, aplica una calibración sintética con ruido gaussiano aleatorio (2.027 muestras, longitud de secuencia 2.048, semilla 0). El propio autor la describe explícitamente como un *control de calibración* y no como una calibración con datos reales, lo que la sitúa en el terreno experimental más que en el de producción validada. La model card incluye manifiestos de reproducibilidad, hashes de los checkpoints objetivo y drafter, y los comandos de evaluación, pero no publica resultados numéricos.
 
@@ -91,7 +91,7 @@ La comparación cuantitativa no es posible con la información disponible: no ha
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/inference-optimization/Qwen3-8B-DFlash-Gauss-FP8-W8A8
+- Modelo en Hugging Face: https://huggingface.co/inference-optimization/Qwen3-8B-DFlash-Gauss-FP8-W8A8
 - Modelo objetivo: https://huggingface.co/Qwen/Qwen3-8B
 - Drafter de origen: https://huggingface.co/RedHatAI/Qwen3-8B-speculator.dflash
 - Manifiestos de reproducibilidad: `quant_run_manifest.json`, `calibration_manifest.json` y directorio `provenance/` dentro del repositorio

@@ -87,7 +87,7 @@ No disponible. No es posible establecer una comparativa significativa porque est
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jiaxu0717/image-captioning65
+- Repositorio en Hugging Face: https://huggingface.co/jiaxu0717/image-captioning65
 - Fichero principal de notas: `notes.md` (dentro del repositorio)
 - Documentación: `README.md` (dentro del repositorio)
 - Resultados de búsqueda web: las consultas realizadas no devolvieron enlaces relevantes al modelo o al repositorio (únicamente páginas de soporte de Microsoft sin relación con el tema). No se dispone de paper, blog, repositorio de código ni demo asociados.

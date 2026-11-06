@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `yangyingjie1997/test-any-format` es un artefacto publicado en HuggingFace por el usuario yangyingjie1997. La informacion disponible se limita a los metadatos del repositorio: las etiquetas declaran los formatos `tflite` y `onnx`, la licencia `apache-2.0` y la region `us`. El repositorio ocupa 0,6 GB y no registra descargas ni likes en el momento de la consulta. La model card no contiene mas que el campo de licencia, sin descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso.
+El repositorio `yangyingjie1997/test-any-format` es un artefacto publicado en Hugging Face por el usuario yangyingjie1997. La informacion disponible se limita a los metadatos del repositorio: las etiquetas declaran los formatos `tflite` y `onnx`, la licencia `apache-2.0` y la region `us`. El repositorio ocupa 0,6 GB y no registra descargas ni likes en el momento de la consulta. La model card no contiene mas que el campo de licencia, sin descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso.
 
 No es posible determinar que modelo contiene el repositorio ni que problema resuelve. El nombre del repositorio (`test-any-format`) y la ausencia total de documentacion sugieren que se trata de un artefacto de prueba destinado a validar la subida de modelos en distintos formatos de serializacion, mas que de un modelo publicado para uso general. Cualquier evaluacion tecnica seria queda bloqueada por la falta de informacion verificable.
 
@@ -53,7 +53,7 @@ No es posible proponer casos de uso concretos y realistas sin conocer la tarea p
 - Inferencia en dispositivos de borde: si el artefacto TFLite contiene un modelo valido, seria desplegable en moviles o microcontroladores mediante el interprete de TensorFlow Lite, siempre que el modelo no supere la memoria disponible en el dispositivo.
 - Integracion en navegador o escritorio multiplataforma: un grafo ONNX podria ejecutarse con ONNX Runtime en Windows, Linux y macOS, o con onnxruntime-web en navegador, sujeto a las limitaciones de operadores soportados.
 - Validacion de pipelines de conversion: el repositorio podria emplearse como caso de prueba para verificar cadenas de conversion entre formatos (por ejemplo, verificando que un mismo modelo produce salidas equivalentes en TFLite y ONNX).
-- Pruebas de empaquetado y subida de artefactos: dado el nombre del repositorio, encaja como fixture para probar la herramienta de publicacion en HuggingFace con distintos formatos de pesos.
+- Pruebas de empaquetado y subida de artefactos: dado el nombre del repositorio, encaja como fixture para probar la herramienta de publicacion en Hugging Face con distintos formatos de pesos.
 - Referencia para medir latencia comparada entre runtimes: si el modelo es funcional, permitiria comparar el rendimiento de TFLite frente a ONNX Runtime sobre el mismo grafo.
 - Prueba de conformidad de licencia: al estar bajo Apache 2.0, podria reutilizarse como ejemplo de artefacto con licencia permisiva en auditorias internas de cumplimiento.
 
@@ -91,6 +91,6 @@ No disponible. Al no conocerse la tarea, el tamano ni la arquitectura del modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yangyingjie1997/test-any-format
+- Hugging Face: https://huggingface.co/yangyingjie1997/test-any-format
 - Resultados de busqueda web: las consultas realizadas no devolvieron ningun enlace relevante sobre este modelo; los unicos resultados obtenidos fueron paginas generales de Wikipedia (https://www.wikipedia.org/, https://es.wikipedia.org/wiki/Wikipedia), sin relacion con el artefacto.
 - Paper, repositorio de codigo, demo o blog del autor: no disponible.

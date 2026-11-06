@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`generatedDigitalExps_1xJKiz_hier_by_room_rnn_meanPoolProc_cnn1d_video_2` es un repositorio de HuggingFace publicado por el usuario `gianmaTest` el 21 de octubre de 2026. No es, a tenor de la información disponible, una ficha de modelo listo para producción: el nombre sigue un patrón típico de artefacto de experimento generado automáticamente (prefijo `generatedDigitalExps`, sufijo numérico de versión) y el repositorio no declara pipeline, licencia, idiomas ni tarjeta de modelo con documentación.
+`generatedDigitalExps_1xJKiz_hier_by_room_rnn_meanPoolProc_cnn1d_video_2` es un repositorio de Hugging Face publicado por el usuario `gianmaTest` el 21 de octubre de 2026. No es, a tenor de la información disponible, una ficha de modelo listo para producción: el nombre sigue un patrón típico de artefacto de experimento generado automáticamente (prefijo `generatedDigitalExps`, sufijo numérico de versión) y el repositorio no declara pipeline, licencia, idiomas ni tarjeta de modelo con documentación.
 
 El identificador sugiere, sin confirmación oficial, un experimento de modelado secuencial jerárquico aplicado a vídeo: una RNN que opera "por sala" (`hier_by_room`), un paso de agregación por mean pooling (`meanPoolProc`) y un extractor convolucional 1D sobre características de vídeo (`cnn1d_video`). Se trataría por tanto de una arquitectura híbrida CNN + RNN para series de características visuales, no de un modelo de lenguaje.
 
@@ -34,7 +34,7 @@ No se dispone de datos sobre el corpus de entrenamiento: se desconoce el número
 - No hay evidencia de capacidades de agente ni de razonamiento multi-paso.
 - No se declara soporte multilingüe.
 - No se declara ninguna capacidad especial (modo thinking, visión, audio) más allá de la referencia a vídeo implícita en el nombre del repositorio.
-- El pipeline de HuggingFace no está definido, por lo que el modelo no se puede cargar mediante `pipeline()` sin una implementación propia.
+- El pipeline de Hugging Face no está definido, por lo que el modelo no se puede cargar mediante `pipeline()` sin una implementación propia.
 
 ## Casos de uso
 
@@ -71,10 +71,10 @@ No disponible. No se han identificado en la información proporcionada modelos c
 - Idiomas no declarados: imposible evaluar cobertura lingüística.
 - Riesgo de sesgo y alucinación: no evaluable sin datos de entrenamiento ni evaluaciones publicadas.
 - Nombre autogenerado: el patrón del identificador sugiere un artefacto creado por un proceso automático, con alta probabilidad de que el contenido sea incompleto o no intencionado para consumo público.
-- Sin pipeline declarado: la carga mediante las utilidades estándar de HuggingFace fallará sin código específico del autor.
+- Sin pipeline declarado: la carga mediante las utilidades estándar de Hugging Face fallará sin código específico del autor.
 - Fecha de creación en 2026: conviene verificar la vigencia del repositorio antes de citarlo.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gianmaTest/generatedDigitalExps_1xJKiz_hier_by_room_rnn_meanPoolProc_cnn1d_video_2
+- Repositorio en Hugging Face: https://huggingface.co/gianmaTest/generatedDigitalExps_1xJKiz_hier_by_room_rnn_meanPoolProc_cnn1d_video_2
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

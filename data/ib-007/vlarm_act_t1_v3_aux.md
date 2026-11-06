@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ib-007/vlarm_act_t1_v3_aux` es una política de imitación (imitation learning) para robótica basada en Action Chunking with Transformers (ACT), el método presentado en el artículo arXiv:2304.13705. La desarrolla el usuario `ib-007` y se distribuye a través de HuggingFace Hub usando la librería LeRobot de HuggingFace. No es un modelo de lenguaje: es un controlador visuomotor que, a partir de observaciones (estado del robot, dos cámaras y estado del entorno), predice directamente comandos de acción de 6 dimensiones para un robot simulado del tipo `so101_sim`.
+`ib-007/vlarm_act_t1_v3_aux` es una política de imitación (imitation learning) para robótica basada en Action Chunking with Transformers (ACT), el método presentado en el artículo arXiv:2304.13705. La desarrolla el usuario `ib-007` y se distribuye a través de Hugging Face Hub usando la librería LeRobot de Hugging Face. No es un modelo de lenguaje: es un controlador visuomotor que, a partir de observaciones (estado del robot, dos cámaras y estado del entorno), predice directamente comandos de acción de 6 dimensiones para un robot simulado del tipo `so101_sim`.
 
 El modelo resuelve una tarea concreta de manipulación: coger cubos de colores (rojo, azul, verde) y depositarlos en una papelera. Se entrenó sobre el dataset `ib-007/vlarm_sim_t1_v2_aux`, compuesto por 993 episodios y 116.300 fotogramas a 30 FPS, capturados mediante teleoperación en simulación. La arquitectura es un transformer con decodificación de chunks de acciones, con 51.687.980 parámetros totales y un tamaño de repositorio de 1,0 GB.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ib-007/vlarm_act_t1_v3_aux | 51.687.980 | no disponible | sin evaluación publicada | Apache 2.0 | HuggingFace Hub (42 descargas) |
-| Otras políticas ACT en LeRobot | no disponible | no disponible | no disponible | habitualmente Apache 2.0 | HuggingFace Hub |
-| Políticas Diffusion Policy | no disponible | no disponible | no disponible | no disponible | HuggingFace Hub |
+| ib-007/vlarm_act_t1_v3_aux | 51.687.980 | no disponible | sin evaluación publicada | Apache 2.0 | Hugging Face Hub (42 descargas) |
+| Otras políticas ACT en LeRobot | no disponible | no disponible | no disponible | habitualmente Apache 2.0 | Hugging Face Hub |
+| Políticas Diffusion Policy | no disponible | no disponible | no disponible | no disponible | Hugging Face Hub |
 
 No se dispone de datos de benchmarks ni de comparativas cuantitativas con alternativas en la información proporcionada.
 
@@ -81,7 +81,7 @@ No se dispone de datos de benchmarks ni de comparativas cuantitativas con altern
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ib-007/vlarm_act_t1_v3_aux
+- Modelo en Hugging Face: https://huggingface.co/ib-007/vlarm_act_t1_v3_aux
 - Dataset de entrenamiento: https://huggingface.co/datasets/ib-007/vlarm_sim_t1_v2_aux
 - Artículo ACT: https://huggingface.co/papers/2304.13705
 - Guía LeRobot ACT: https://huggingface.co/docs/lerobot/main/en/act

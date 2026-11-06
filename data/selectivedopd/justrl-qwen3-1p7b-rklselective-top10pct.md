@@ -24,7 +24,7 @@ La relevancia actual es limitada pero concreta: sirve como material de partida p
 | Checkpoint publicado en `main` | global_step_300 |
 | Otros checkpoints disponibles | global_step_20, 40, 60, 80, 100, 120, 140, 160, 180, 200, 220, 240, 260, 280 |
 | Tamano del repositorio | 52,8 GB (incluye todas las ramas de checkpoint) |
-| Fecha declarada de creacion | 10 de septiembre de 2026 (10-09-2026), segun los metadatos de HuggingFace |
+| Fecha declarada de creacion | 10 de septiembre de 2026 (10-09-2026), segun los metadatos de Hugging Face |
 | Descargas y likes | 0 descargas, 0 likes en el momento de la consulta |
 
 ## Arquitectura y entrenamiento
@@ -39,7 +39,7 @@ En cuanto al entrenamiento, lo unico documentado es el nombre del experimento de
 - Generacion de texto general: al derivar de Qwen3-1.7B, conserva las capacidades linguisticas del modelo base, aunque no hay evaluacion publicada que las cuantifique en este checkpoint.
 - Razonamiento y matematicas: no verificado en este checkpoint. El tag "conversational" y la ausencia de datos de benchmarks impiden confirmar mejoras en tareas de razonamiento.
 - Generacion de codigo: no verificado en este checkpoint.
-- Tool calling / function calling: no documentado. El tag "endpoints_compatible" hace referencia a la compatibilidad de despliegue con endpoints de HuggingFace, no a capacidades de llamada a herramientas.
+- Tool calling / function calling: no documentado. El tag "endpoints_compatible" hace referencia a la compatibilidad de despliegue con endpoints de Hugging Face, no a capacidades de llamada a herramientas.
 - Soporte de agentes y razonamiento multi-paso: no documentado.
 - Capacidades multilingues: no disponibles; el autor no declara lista de idiomas.
 - Modo de pensamiento explicito (thinking mode): no documentado para este checkpoint, aunque la familia Qwen3 lo contempla en algunos de sus modelos.
@@ -79,10 +79,10 @@ Advertencia: los datos de los modelos comparativos proceden de conocimiento gene
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| JustRL-Qwen3-1p7b-RKLSelective-Top10pct | 2,03 mil millones (safetensors) | No disponible | No disponible | HuggingFace, 15 ramas de checkpoint | Checkpoint de RL sin documentar ni benchmarks |
-| Qwen3-1.7B (base) | ~1,7B no de embedding | No disponible en esta busqueda (la familia Qwen3 declara contexto largo) | No disponible en esta busqueda | HuggingFace | Modelo base oficial; referencia directa de comparacion |
-| Qwen3-4B (base) | ~4B | No disponible en esta busqueda | No disponible en esta busqueda | HuggingFace | Alternativa de mayor capacidad dentro de la misma familia |
-| Llama-3.2-1B | ~1,24B | No disponible en esta busqueda | No disponible en esta busqueda | HuggingFace | Alternativa de tamano similar de otro fabricante |
+| JustRL-Qwen3-1p7b-RKLSelective-Top10pct | 2,03 mil millones (safetensors) | No disponible | No disponible | Hugging Face, 15 ramas de checkpoint | Checkpoint de RL sin documentar ni benchmarks |
+| Qwen3-1.7B (base) | ~1,7B no de embedding | No disponible en esta busqueda (la familia Qwen3 declara contexto largo) | No disponible en esta busqueda | Hugging Face | Modelo base oficial; referencia directa de comparacion |
+| Qwen3-4B (base) | ~4B | No disponible en esta busqueda | No disponible en esta busqueda | Hugging Face | Alternativa de mayor capacidad dentro de la misma familia |
+| Llama-3.2-1B | ~1,24B | No disponible en esta busqueda | No disponible en esta busqueda | Hugging Face | Alternativa de tamano similar de otro fabricante |
 
 No se dispone de comparativas de rendimiento entre estos modelos en la informacion consultada, por lo que la tabla anterior solo contrasta parametros, licencia y disponibilidad declaradas.
 
@@ -102,7 +102,7 @@ No se dispone de comparativas de rendimiento entre estos modelos en la informaci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SelectiveDOPD/JustRL-Qwen3-1p7b-RKLSelective-Top10pct
+- Hugging Face: https://huggingface.co/SelectiveDOPD/JustRL-Qwen3-1p7b-RKLSelective-Top10pct
 - Ramas de checkpoint: global_step_20 a global_step_300 dentro del mismo repositorio (main = global_step_300)
 - Paper, blog o repositorio del proyecto "BiDirect-OPD": no disponible
 - Documentacion del modelo base Qwen3-1.7B: no disponible en la informacion proporcionada

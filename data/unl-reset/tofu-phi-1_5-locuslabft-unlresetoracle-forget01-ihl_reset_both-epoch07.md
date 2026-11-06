@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Propósito | Disponibilidad |
 |---|---|---|---|---|---|
-| `unl-reset/tofu-phi-1_5-...-epoch07` (este) | 1,418 B | no disponible (Phi-1.5: 2048) | Apache 2.0 | Checkpoint de *unlearning* sobre TOFU | HuggingFace, 0 descargas |
-| `locuslab/tofu_ft_phi-1.5` | 1,418 B | 2048 | Apache 2.0 | Fine-tuning de Phi-1.5 sobre TOFU (modelo "no olvidado") | HuggingFace |
-| `microsoft/phi-1_5` | 1,418 B | 2048 | MIT (según model card original) | Modelo base de propósito general para código y razonamiento | HuggingFace, ampliamente usado |
-| `microsoft/phi-2` | 2,7 B | 2048 | MIT | Modelo base más grande de la familia Phi | HuggingFace |
+| `unl-reset/tofu-phi-1_5-...-epoch07` (este) | 1,418 B | no disponible (Phi-1.5: 2048) | Apache 2.0 | Checkpoint de *unlearning* sobre TOFU | Hugging Face, 0 descargas |
+| `locuslab/tofu_ft_phi-1.5` | 1,418 B | 2048 | Apache 2.0 | Fine-tuning de Phi-1.5 sobre TOFU (modelo "no olvidado") | Hugging Face |
+| `microsoft/phi-1_5` | 1,418 B | 2048 | MIT (según model card original) | Modelo base de propósito general para código y razonamiento | Hugging Face, ampliamente usado |
+| `microsoft/phi-2` | 2,7 B | 2048 | MIT | Modelo base más grande de la familia Phi | Hugging Face |
 
 La comparación relevante es contra `locuslab/tofu_ft_phi-1.5` (el modelo del que deriva y que representa el estado "sin desaprender") y contra `microsoft/phi-1_5` (el modelo base original). Frente a Phi-2, este checkpoint es aproximadamente la mitad de tamaño y está especializado en una tarea de investigación concreta, no en uso general.
 
@@ -84,7 +84,7 @@ La comparación relevante es contra `locuslab/tofu_ft_phi-1.5` (el modelo del qu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget01-ihl_reset_both-epoch07
+- Hugging Face: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget01-ihl_reset_both-epoch07
 - Modelo base del fine-tuning: https://huggingface.co/locuslab/tofu_ft_phi-1.5
 - Modelo original: https://huggingface.co/microsoft/phi-1_5
 - Benchmark TOFU (referencia): https://huggingface.co/datasets/locuslab/TOFU

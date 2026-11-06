@@ -93,7 +93,7 @@ No se dispone de comparación con otros artefactos de interpretabilidad comprimi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/andyoneal/gemma-4-31b-it-jacobian-lens-compressed
+- Repositorio Hugging Face: https://huggingface.co/andyoneal/gemma-4-31b-it-jacobian-lens-compressed
 - Modelo base del lens (ReadyArt, incluye `lens/gemma4_full.pt`): https://huggingface.co/ReadyArt/gemma-4-31B-it-scotoma
 - Modelo base original: https://huggingface.co/google/gemma-4-31B-it
 - Variante `r1024-q6`: https://huggingface.co/andyoneal/gemma-4-31b-it-jacobian-lens-compressed/resolve/main/r1024-q6/readyart-31b-aw-r1024-q6.safetensors

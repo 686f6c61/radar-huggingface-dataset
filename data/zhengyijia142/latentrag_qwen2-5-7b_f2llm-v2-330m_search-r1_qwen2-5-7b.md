@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LatentRAG (este checkpoint) | 7,6B (base) + LoRA | No especificado (base: hasta 128K) | RAG agentico con recuperador F2LLM-v2-330M, entrenado sobre trayectorias de Search-R1 | No disponible | HuggingFace, 0 descargas |
+| LatentRAG (este checkpoint) | 7,6B (base) + LoRA | No especificado (base: hasta 128K) | RAG agentico con recuperador F2LLM-v2-330M, entrenado sobre trayectorias de Search-R1 | No disponible | Hugging Face, 0 descargas |
 | Qwen2.5-7B-Instruct | 7,6B | 128K | Modelo instructivo generalista, sin modulo de recuperacion integrado | No disponible en la informacion consultada (Qwen2.5 se distribuye habitualmente con licencia Apache 2.0, verificar en el repositorio oficial) | Ampliamente disponible |
 | Search-R1 (Qwen2.5-7B) | 7,6B | No disponible en la informacion consultada | Razonamiento con busqueda entrenado por refuerzo sobre NQ y HotpotQA | No disponible en la informacion consultada | Referenciado como generador de las trayectorias de entrenamiento de este adaptador |
 | RAG pasivo con Qwen2.5-7B + retriever | 7,6B + retriever | Limitado por el numero de pasajes concatenados | Recuperacion en un unico paso y respuesta condicionada | Segun componentes | Configuracion generica |
@@ -85,7 +85,7 @@ No se dispone de cifras comparativas de rendimiento entre estas alternativas en 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zhengyijia142/LatentRAG_Qwen2.5-7B_F2LLM-v2-330M_Search-R1_Qwen2.5-7B
+- Repositorio Hugging Face: https://huggingface.co/zhengyijia142/LatentRAG_Qwen2.5-7B_F2LLM-v2-330M_Search-R1_Qwen2.5-7B
 - Repositorio GitHub del proyecto: https://github.com/zhengyijia/LatentRAG
 - Paper LatentRAG: https://arxiv.org/pdf/2605.06285
 - Modelo base Qwen2.5-7B: https://huggingface.co/Qwen/Qwen2.5-7B

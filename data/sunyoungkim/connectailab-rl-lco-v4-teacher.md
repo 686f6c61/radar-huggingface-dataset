@@ -76,8 +76,8 @@ No se dispone de información sobre modelos directamente comparables en la misma
 
 | Modelo | Tipo | Parámetros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| connectailab-rl-lco-v4-teacher | Política RL (PPO + imitación) | no disponible | no aplica (estado estructurado) | 11,90 M won de beneficio, 96 % satisfacción, 1,6 incidentes | Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
-| connectailab-rl-lco-v5-teacher | Política RL (PPO + imitación) | no disponible | no aplica | no disponible en la información consultada | Apache 2.0 | HuggingFace, 0 likes |
+| connectailab-rl-lco-v4-teacher | Política RL (PPO + imitación) | no disponible | no aplica (estado estructurado) | 11,90 M won de beneficio, 96 % satisfacción, 1,6 incidentes | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
+| connectailab-rl-lco-v5-teacher | Política RL (PPO + imitación) | no disponible | no aplica | no disponible en la información consultada | Apache 2.0 | Hugging Face, 0 likes |
 | Presidente basado en reglas (línea base del simulador) | Sistema experto determinista | no aplica | no aplica | 3,24 M won de beneficio, 79 % satisfacción, 7,8 incidentes | no aplica (componente del simulador) | Incluido en Connect Tycoon |
 
 ## Limitaciones y advertencias
@@ -91,11 +91,11 @@ No se dispone de información sobre modelos directamente comparables en la misma
 - Opacidad técnica: no se publican detalles de arquitectura, parámetros, datos de entrenamiento, semillas ni protocolo estadístico de la evaluación, lo que impide reproducir los resultados.
 - Uso comercial: la licencia Apache 2.0 permite uso comercial, pero al tratarse de un modelo integrado en un simulador de terceros conviene revisar los términos del proyecto Connect Tycoon.
 - Estado del proyecto: la model card indica que la conexión entre modelos ("Connect AI") está en fase de pruebas y que la participación oficial en la investigación conjunta o la autoría de artículos requiere verificación aparte.
-- Madurez: cero descargas y cero "me gusta" en HuggingFace en el momento de la consulta, sin evidencia de uso en producción por terceros.
+- Madurez: cero descargas y cero "me gusta" en Hugging Face en el momento de la consulta, sin evidencia de uso en producción por terceros.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sunyoungKim/connectailab-rl-lco-v4-teacher
+- Modelo en Hugging Face: https://huggingface.co/sunyoungKim/connectailab-rl-lco-v4-teacher
 - Variante v5: https://huggingface.co/sunyoungKim/connectailab-rl-lco-v5-teacher
 - Repositorio del simulador Connect Tycoon: https://github.com/wonseokjung/connect-tycoon
 - Cuaderno de Colab (`rl_decision_model_qwen_colab.ipynb`): https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb

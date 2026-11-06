@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Esta ficha describe `JW-Hubs/Qwen3.5-0.8B-W4A16-LLM-Compressor`, una versión cuantizada del modelo base `Qwen/Qwen3.5-0.8B` publicada por el usuario JW-Hubs en HuggingFace. Se trata de una compresión a 4 bits en pesos con activaciones en 16 bits (W4A16) generada con AutoRound, el método de cuantización basado en descenso de gradiente con signo desarrollado por Intel, y exportada en formato GPTQ para maximizar la compatibilidad con el ecosistema de inferencia existente.
+Esta ficha describe `JW-Hubs/Qwen3.5-0.8B-W4A16-LLM-Compressor`, una versión cuantizada del modelo base `Qwen/Qwen3.5-0.8B` publicada por el usuario JW-Hubs en Hugging Face. Se trata de una compresión a 4 bits en pesos con activaciones en 16 bits (W4A16) generada con AutoRound, el método de cuantización basado en descenso de gradiente con signo desarrollado por Intel, y exportada en formato GPTQ para maximizar la compatibilidad con el ecosistema de inferencia existente.
 
 El modelo base pertenece a la familia Qwen3.5 de Alibaba, con arquitectura `qwen3_5` y 852.985.920 parámetros totales según los tensores en safetensors, lo que lo sitúa en la categoría de modelos sub-1B orientados a despliegue en entornos con recursos limitados: edge computing, dispositivos de consumo y servicios de baja latencia. La cuantización reduce aproximadamente un 50 % el consumo de memoria frente al modelo en FP16, según indica la model card.
 
@@ -12,7 +12,7 @@ La relevancia de esta publicación es fundamentalmente práctica: demuestra un f
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | `qwen3_5` (transformer, según el tag de HuggingFace del modelo base) |
+| Arquitectura | `qwen3_5` (transformer, según el tag de Hugging Face del modelo base) |
 | Parametros totales | 852.985.920 |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
@@ -23,7 +23,7 @@ La relevancia de esta publicación es fundamentalmente práctica: demuestra un f
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer de la familia Qwen3.5 con 852.985.920 parámetros, identificado en HuggingFace con el tag de arquitectura `qwen3_5`. No se dispone de información pública en la documentación consultada sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron fases de RLHF, DPO u otras técnicas de alineación. Tampoco se detalla si incorpora innovaciones como decodificación especulativa, atención lineal o mecanismos híbridos.
+El modelo base es un transformer de la familia Qwen3.5 con 852.985.920 parámetros, identificado en Hugging Face con el tag de arquitectura `qwen3_5`. No se dispone de información pública en la documentación consultada sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron fases de RLHF, DPO u otras técnicas de alineación. Tampoco se detalla si incorpora innovaciones como decodificación especulativa, atención lineal o mecanismos híbridos.
 
 Lo que sí está documentado es el proceso de cuantización posterior: AutoRound con 1000 iteraciones de optimización, 512 muestras de calibración, secuencias de 2048 tokens, cuantización simétrica por grupos de 128 elementos y `torch.compile` habilitado. El resultado se exporta en formato GPTQ estándar dentro de un repositorio `compressed-tensors`, lo que permite cargarlo con `transformers`, AutoGPTQ, vLLM y SGLang sin conversiones adicionales. La combinación de muchas iteraciones con un conjunto de calibración amplio para esta escala busca minimizar la degradación de precisión, un punto crítico cuando el presupuesto de parámetros es tan ajustado.
 
@@ -83,7 +83,7 @@ La comparación con modelos de otras familias (por ejemplo, variantes sub-1B de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JW-Hubs/Qwen3.5-0.8B-W4A16-LLM-Compressor
+- Modelo en Hugging Face: https://huggingface.co/JW-Hubs/Qwen3.5-0.8B-W4A16-LLM-Compressor
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - AutoRound (Intel): https://github.com/intel/auto-round
 - RunPod (enlace de afiliado incluido en la model card): https://runpod.io?ref=iabrlp7z

@@ -26,7 +26,7 @@ No se dispone de informacion detallada sobre la arquitectura del modelo base Var
 La aportacion tecnica de este repositorio concreto es la cuantizacion estatica a GGUF mediante el pipeline de mradermacher (quantize_version 2, output_tensor_quantised 1, convert_type hf). El autor indica que las cuantizaciones ponderadas con imatrix no estaban disponibles en el momento de la publicacion y que, si no aparecen en una semana, probablemente no esten planificadas. Las cuantizaciones IQ (como IQ4_XS) suelen ofrecer mejor calidad que las no-IQ de tamano similar, segun las notas del propio autor.
 
 ## Capacidades
-- Generacion de texto conversacional en ingles (etiqueta "conversational" en HuggingFace).
+- Generacion de texto conversacional en ingles (etiqueta "conversational" en Hugging Face).
 - Compatibilidad con endpoints (tag "endpoints_compatible"), lo que sugiere integracion con infraestructura de inferencia estandar.
 - Inferencia local mediante llama.cpp y derivados (Ollama, LM Studio, koboldcpp) gracias al formato GGUF.
 - Capacidades especificas de razonamiento, codigo, matematicas, vision o tool calling: no disponibles en la informacion proporcionada.
@@ -77,7 +77,7 @@ No disponible. No se dispone de informacion sobre modelos comparables de la mism
 - Fecha de creacion y actualizacion: el repositorio se creo el 2026-04-15 y se actualizo el 2026-11-04; verificar que las versiones descargadas corresponden a la revision deseada.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Marco-Mini-Global-TV-Instruct-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Marco-Mini-Global-TV-Instruct-GGUF
 - Modelo base: https://huggingface.co/Varho/Marco-Mini-Global-TV-Instruct
 - Pagina de descargas del autor: https://hf.tst.eu/model#Marco-Mini-Global-TV-Instruct-GGUF
 - Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

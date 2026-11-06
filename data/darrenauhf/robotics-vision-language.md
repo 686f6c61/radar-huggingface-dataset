@@ -64,7 +64,7 @@ Este repositorio no es un modelo, por lo que la comparacion directa con modelos 
 
 | Sistema | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| darrenauhf/robotics-vision-language | 16.576 en safetensors (no funcional) | no disponible | no disponible | MIT | notas en HuggingFace |
+| darrenauhf/robotics-vision-language | 16.576 en safetensors (no funcional) | no disponible | no disponible | MIT | notas en Hugging Face |
 | Alternativas VLA de la literatura | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -81,7 +81,7 @@ Este repositorio no es un modelo, por lo que la comparacion directa con modelos 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/darrenauhf/robotics-vision-language
+- Repositorio en Hugging Face: https://huggingface.co/darrenauhf/robotics-vision-language
 - Repositorio homonimo de otro autor (referencia cruzada): https://huggingface.co/atxharris/robotics-vision-language
 - Survey Vision-Language-Action Models for Robotics (sitio): https://vla-survey.github.io/
 - Survey Vision-Language-Action Models for Robotics (arXiv 2510.07077): https://arxiv.org/abs/2510.07077

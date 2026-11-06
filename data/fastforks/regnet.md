@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks de precision (top-1/top-5 en ImageN
 
 | Modelo | Parametros | Entrada | Latencia medida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RegNetY-16GF (fastforks) | no disponible | 224x224 fija | 1,96 ms (kernels) / 8,34 ms (portable) | Codigo BSD-3-Clause; pesos sin declarar | HuggingFace (model card) + pesos en pytorch.org |
+| RegNetY-16GF (fastforks) | no disponible | 224x224 fija | 1,96 ms (kernels) / 8,34 ms (portable) | Codigo BSD-3-Clause; pesos sin declarar | Hugging Face (model card) + pesos en pytorch.org |
 | RegNetY-16GF (pytorch/vision original) | no disponible | 224x224 fija | 12,11 ms (fp32) | BSD-3-Clause | Repositorio pytorch/vision |
 | Otras CNN de clasificacion ImageNet-1k (ResNet, EfficientNet, ConvNeXt) | no disponible | variable | no disponible | variable | no disponible |
 
@@ -92,7 +92,7 @@ La comparacion con alternativas de la misma categoria (otras CNN de clasificacio
 
 ## Enlaces
 
-- Model card en HuggingFace: https://huggingface.co/fastforks/regnet
+- Model card en Hugging Face: https://huggingface.co/fastforks/regnet
 - Repositorio de la libreria fastforks: https://github.com/kleinicke/fastforks
 - Kernels precompilados: https://huggingface.co/fastforks/kernels
 - Configuracion de variantes (card.toml): https://github.com/kleinicke/fastforks/blob/main/src/fastforks/classification/models/regnet/card.toml

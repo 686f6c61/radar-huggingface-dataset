@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-4B GGUF es una cuantizacion en formato GGUF del modelo base Qwen/Qwen3.5-4B, publicada por el usuario vet000000 en HuggingFace bajo licencia Apache-2.0. Se trata de una conversion de pesos orientada a inferencia local y despliegue ligero, no de un modelo entrenado desde cero: el autor no aporta informacion adicional sobre el proceso de cuantizacion mas alla de la etiqueta `imatrix` en los tags, que sugiere el uso de una matriz de importancia para calibrar la cuantizacion.
+Qwen3.5-4B GGUF es una cuantizacion en formato GGUF del modelo base Qwen/Qwen3.5-4B, publicada por el usuario vet000000 en Hugging Face bajo licencia Apache-2.0. Se trata de una conversion de pesos orientada a inferencia local y despliegue ligero, no de un modelo entrenado desde cero: el autor no aporta informacion adicional sobre el proceso de cuantizacion mas alla de la etiqueta `imatrix` en los tags, que sugiere el uso de una matriz de importancia para calibrar la cuantizacion.
 
 El modelo cuenta con 4.326.350.848 parametros totales segun los datos de safetensors del repositorio, lo que lo situa en la categoria de modelos de ~4B, un rango habitualmente pensado para ejecucion en GPU de consumo y en CPU con cuantizaciones agresivas. El repositorio ocupa 2,4 GB, un tamano coherente con una cuantizacion de pocos bits por parametro.
 
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| vet000000/qwen35-4b-gguf-c | 4.326.350.848 | no disponible | Apache-2.0 | GGUF | HuggingFace |
-| Qwen/Qwen3.5-4B (modelo base) | ~4B | no disponible | Apache-2.0 | safetensors (presumiblemente) | HuggingFace |
+| vet000000/qwen35-4b-gguf-c | 4.326.350.848 | no disponible | Apache-2.0 | GGUF | Hugging Face |
+| Qwen/Qwen3.5-4B (modelo base) | ~4B | no disponible | Apache-2.0 | safetensors (presumiblemente) | Hugging Face |
 | Otras cuantizaciones GGUF de Qwen3.5-4B | ~4B | no disponible | Apache-2.0 | GGUF | no disponible en la informacion proporcionada |
 
 No se dispone de datos de rendimiento ni de especificaciones detalladas de alternativas en la informacion proporcionada, por lo que la comparativa se limita a parametros, licencia y formato.
@@ -83,5 +83,5 @@ No se dispone de datos de rendimiento ni de especificaciones detalladas de alter
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/vet000000/qwen35-4b-gguf-c
+- Repositorio Hugging Face: https://huggingface.co/vet000000/qwen35-4b-gguf-c
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B

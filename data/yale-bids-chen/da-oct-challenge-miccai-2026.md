@@ -79,7 +79,7 @@ La informacion disponible no incluye metricas de otros modelos de segmentacion d
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DA-OCT-Challenge-MICCAI-2026 (SAM-based + PlainConvUnet) | no disponible | no aplicable | 0,8068 final (reto DA-OCT) | BSD 2-Clause | Pesos en HuggingFace; codigo en GitHub |
+| DA-OCT-Challenge-MICCAI-2026 (SAM-based + PlainConvUnet) | no disponible | no aplicable | 0,8068 final (reto DA-OCT) | BSD 2-Clause | Pesos en Hugging Face; codigo en GitHub |
 | Alternativas de segmentacion medica (nnU-Net, MONAI, adaptaciones de SAM) | no disponible | no aplicable | no disponible | variable | variable |
 
 ## Limitaciones y advertencias
@@ -97,7 +97,7 @@ La informacion disponible no incluye metricas de otros modelos de segmentacion d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Yale-BIDS-Chen/DA-OCT-Challenge-MICCAI-2026
+- Modelo en Hugging Face: https://huggingface.co/Yale-BIDS-Chen/DA-OCT-Challenge-MICCAI-2026
 - Repositorio de codigo: https://github.com/Yale-BIDS-Chen-Lab/yzjaxon-DA-OCT-Challenge-MICCAI-2026
 - Documentacion de reproduccion: https://github.com/Yale-BIDS-Chen-Lab/yzjaxon-DA-OCT-Challenge-MICCAI-2026/blob/main/docs/REPRODUCE.md
 - Documentacion de datos: https://github.com/Yale-BIDS-Chen-Lab/yzjaxon-DA-OCT-Challenge-MICCAI-2026/blob/main/docs/DATA.md

@@ -95,7 +95,7 @@ La comparacion cuantitativa de rendimiento frente a otras conversiones o al mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cavi-ai/Qwen3-VL-8B-Instruct-MLX-4bit
+- Modelo en Hugging Face: https://huggingface.co/cavi-ai/Qwen3-VL-8B-Instruct-MLX-4bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Herramienta de conversion mlx-agent: https://github.com/cavi-ai/mlx-agent
 - Servidor de vision bobby-browser: https://github.com/cavi-ai/bobby-browser

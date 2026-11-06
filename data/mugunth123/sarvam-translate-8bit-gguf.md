@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Mugunth123/sarvam-translate-8bit-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Mugunth123/sarvam-translate-8bit-GGUF
 - Modelo base: https://huggingface.co/sarvamai/sarvam-translate
 - Cuantización 1-bit: https://huggingface.co/Mugunth123/sarvam-translate-1bit-GGUF
 - Cuantización 1.58-bit: https://huggingface.co/Mugunth123/sarvam-translate-1.58bit-GGUF

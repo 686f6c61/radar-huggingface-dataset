@@ -74,9 +74,9 @@ La model card no incluye métricas de éxito de tarea, tasas de acierto ni compa
 
 | Modelo | Tipo | Cámaras / estado | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `modelapi/act-fp16-ov-catalog-v2` | Política de imitación ACT (baseline) | 2 cámaras (agentview + wrist) + estado de 8 dims en el ejemplo LIBERO | OpenVINO FP16 | Apache 2.0 | Catálogo Intel / HuggingFace |
-| `modelapi/pi05-libero-fp16-ov-catalog-v2` | Política VLA de imitación (π0.5) | no disponible en esta ficha | OpenVINO FP16 | no disponible | Catálogo Intel / HuggingFace |
-| `modelapi/smolvla-libero-fp16-ov-catalog-v2` | Política VLA compacta (SmolVLA) | no disponible en esta ficha | OpenVINO FP16 | no disponible | Catálogo Intel / HuggingFace |
+| `modelapi/act-fp16-ov-catalog-v2` | Política de imitación ACT (baseline) | 2 cámaras (agentview + wrist) + estado de 8 dims en el ejemplo LIBERO | OpenVINO FP16 | Apache 2.0 | Catálogo Intel / Hugging Face |
+| `modelapi/pi05-libero-fp16-ov-catalog-v2` | Política VLA de imitación (π0.5) | no disponible en esta ficha | OpenVINO FP16 | no disponible | Catálogo Intel / Hugging Face |
+| `modelapi/smolvla-libero-fp16-ov-catalog-v2` | Política VLA compacta (SmolVLA) | no disponible en esta ficha | OpenVINO FP16 | no disponible | Catálogo Intel / Hugging Face |
 
 Los tres modelos pertenecen a la misma categoría (`physical-ai/action-policies-vla`) y comparten el sufijo `-fp16-ov`, lo que indica conversión a OpenVINO en FP16. No se dispone de datos de parámetros, contexto ni rendimiento para establecer una comparación cuantitativa entre ellos.
 
@@ -89,12 +89,12 @@ Los tres modelos pertenecen a la misma categoría (`physical-ai/action-policies-
 - Sin capacidades lingüísticas ni de razonamiento: no debe usarse como modelo de lenguaje.
 - Idiomas: no aplica; no se documenta soporte multilingüe.
 - Licencia: Apache 2.0 permite uso comercial, pero al tratarse de un artefacto de prueba sin entrenamiento efectivo, su uso comercial directo no tiene sentido práctico. Debe verificarse además la licencia de la implementación original de ACT en `tonyzhaozh/act`.
-- Fecha de creación poco habitual: el repositorio figura creado y actualizado el 2026-09-21, dato que conviene verificar en la página de HuggingFace.
+- Fecha de creación poco habitual: el repositorio figura creado y actualizado el 2026-09-21, dato que conviene verificar en la página de Hugging Face.
 - Ficha con escasa documentación: sin parámetros, sin composición de dataset y sin resultados, cualquier integración en producción exige validación propia.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/modelapi/act-fp16-ov-catalog-v2
+- Modelo en Hugging Face: https://huggingface.co/modelapi/act-fp16-ov-catalog-v2
 - Repositorio del framework OpenVINO Physical AI: https://github.com/openvinotoolkit/physicalai
 - Implementación original de ACT: https://github.com/tonyzhaozh/act
 - Physical AI Studio (ajuste fino): https://github.com/open-edge-platform/physical-ai-studio

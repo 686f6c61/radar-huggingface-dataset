@@ -4,7 +4,7 @@
 
 Valdam Vision 2.5 es un modelo de vision-lenguaje (VLM) publicado por Inserloft-AI bajo licencia Apache 2.0. Combina un codificador Vision Transformer preentrenado con un decodificador Transformer autorregresivo que aplica cross-attention sobre los embeddings de parches visuales. El modelo está orientado a tres tareas concretas: descripción de escenas, OCR con reconstrucción espacial de diseño y moderación de contenido en modo zero-shot.
 
-Con 949.702.066 parámetros totales (aproximadamente 950 millones) y un repositorio de 3,8 GB en formato safetensors, se sitúa en la gama media de los VLM, lo que lo hace desplegable en hardware relativamente modesto. Soporta inglés y español, y su pipeline declarado en HuggingFace es `image-to-text`.
+Con 949.702.066 parámetros totales (aproximadamente 950 millones) y un repositorio de 3,8 GB en formato safetensors, se sitúa en la gama media de los VLM, lo que lo hace desplegable en hardware relativamente modesto. Soporta inglés y español, y su pipeline declarado en Hugging Face es `image-to-text`.
 
 Su relevancia actual radica en la combinación de OCR espacial y moderación zero-shot en un único modelo de menos de mil millones de parámetros con licencia permisiva, un perfil poco habitual en el ecosistema open source, donde estas capacidades suelen requerir modelos de mayor tamaño o servicios propietarios. No obstante, la información pública disponible es limitada y no se han publicado resultados de benchmarks en la documentación accesible.
 
@@ -84,5 +84,5 @@ La comparación se ofrece a título orientativo: no se dispone de resultados de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Inserloft-AI/Valdam-Vision-2.5
+- Hugging Face: https://huggingface.co/Inserloft-AI/Valdam-Vision-2.5
 - Sitio del autor: https://research.inserloft.com

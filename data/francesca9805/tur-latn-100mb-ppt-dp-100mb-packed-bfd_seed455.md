@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/tur-latn-100mb-ppt-Dp-100mb-packed-bfd_seed455` es un ajuste fino (SFT) del modelo monolingüe `goldfish-models/tur_latn_100mb`, orientado a la generación de texto en turco escrito en alfabeto latino. Lo publica el usuario de HuggingFace francesca9805 y forma parte de una serie de experimentos vinculados al proyecto de Weights & Biases "new-tokenizers" de la Universidad de Groningen, lo que sugiere que su propósito principal es servir como banco de pruebas para estudiar el efecto de distintas configuraciones de tokenización y de datos empaquetados sobre un modelo pequeño.
+El modelo `francesca9805/tur-latn-100mb-ppt-Dp-100mb-packed-bfd_seed455` es un ajuste fino (SFT) del modelo monolingüe `goldfish-models/tur_latn_100mb`, orientado a la generación de texto en turco escrito en alfabeto latino. Lo publica el usuario de Hugging Face francesca9805 y forma parte de una serie de experimentos vinculados al proyecto de Weights & Biases "new-tokenizers" de la Universidad de Groningen, lo que sugiere que su propósito principal es servir como banco de pruebas para estudiar el efecto de distintas configuraciones de tokenización y de datos empaquetados sobre un modelo pequeño.
 
 Técnicamente es un transformer decoder-only de la familia GPT-2 con 124.770.816 parámetros totales (aproximadamente 125 millones), pesos en safetensors, licencia no declarada de forma explícita y 0 descargas en el momento de la consulta. Es, por tanto, un modelo de investigación pequeño, no un modelo de propósito general: no compite con los LLM actuales de miles de millones de parámetros y su interés es fundamentalmente metodológico y académico.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `francesca9805/tur-latn-100mb-ppt-Dp-100mb-packed-bfd_seed455` | 124,77 M | No disponible | No disponible | HuggingFace, 0 descargas | Fine-tune SFT con TRL; tags TGI |
-| `goldfish-models/tur_latn_100mb` (modelo base) | ~125 M (no confirmado) | No disponible | No disponible en la informacion proporcionada | HuggingFace | Modelo monolingue turco del proyecto Goldfish, sin ajuste SFT |
+| `francesca9805/tur-latn-100mb-ppt-Dp-100mb-packed-bfd_seed455` | 124,77 M | No disponible | No disponible | Hugging Face, 0 descargas | Fine-tune SFT con TRL; tags TGI |
+| `goldfish-models/tur_latn_100mb` (modelo base) | ~125 M (no confirmado) | No disponible | No disponible en la informacion proporcionada | Hugging Face | Modelo monolingue turco del proyecto Goldfish, sin ajuste SFT |
 | GPT-2 small | 124 M | 1024 tokens | MIT (segun su publicacion original) | Ampliamente disponible | Referencia de la misma escala y arquitectura, entrenado en ingles |
-| SmolLM-135M | 135 M | 2048 tokens (segun su model card publica) | Apache-2.0 | HuggingFace | Alternativa pequena multilingue moderna; los valores indicados no proceden de la informacion proporcionada en esta busqueda |
+| SmolLM-135M | 135 M | 2048 tokens (segun su model card publica) | Apache-2.0 | Hugging Face | Alternativa pequena multilingue moderna; los valores indicados no proceden de la informacion proporcionada en esta busqueda |
 
 La comparacion directa de rendimiento entre estas opciones no es posible con los datos disponibles: no hay benchmarks publicados para el modelo analizado ni evaluaciones en turco que permitan situarlo frente a alternativas.
 
@@ -83,7 +83,7 @@ La comparacion directa de rendimiento entre estas opciones no es posible con los
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/tur-latn-100mb-ppt-Dp-100mb-packed-bfd_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/tur-latn-100mb-ppt-Dp-100mb-packed-bfd_seed455
 - Modelo base: https://huggingface.co/goldfish-models/tur_latn_100mb
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/0bv6rh1o
 - Repositorio de TRL: https://github.com/huggingface/trl

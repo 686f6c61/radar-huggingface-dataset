@@ -79,8 +79,8 @@ Datos adicionales reportados en el model card:
 
 | Modelo | Parametros | Contexto | Licencia | Puntuacion en benchmark de sesgo HH-RLHF | Disponibilidad |
 |---|---:|---|---|---:|---|
-| Qwen2.5-1.5B-Instruct-HH-NBIVO-QC | 1.777.088.000 | no disponible | Apache 2.0 | 59,93 % | HuggingFace (145 descargas) |
-| Qwen2.5-1.5B-Instruct (base) | 1.500 millones (aprox.) | no disponible | Apache 2.0 | 10,51 % | HuggingFace |
+| Qwen2.5-1.5B-Instruct-HH-NBIVO-QC | 1.777.088.000 | no disponible | Apache 2.0 | 59,93 % | Hugging Face (145 descargas) |
+| Qwen2.5-1.5B-Instruct (base) | 1.500 millones (aprox.) | no disponible | Apache 2.0 | 10,51 % | Hugging Face |
 | GRPO sobre la misma base (TRL defaults) | misma base | no disponible | Apache 2.0 | 60,27 % | no disponible como checkpoint publicado |
 
 La comparativa se limita a los datos del model card; no se dispone de informacion sobre otros modelos de alineacion de tamano similar en la informacion proporcionada.
@@ -98,7 +98,7 @@ La comparativa se limita a los datos del model card; no se dispone de informacio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/promotion/Qwen2.5-1.5B-Instruct-HH-NBIVO-QC
+- Hugging Face: https://huggingface.co/promotion/Qwen2.5-1.5B-Instruct-HH-NBIVO-QC
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Modelo de recompensa de calidad: https://huggingface.co/Ray2333/GRM-Llama3.2-3B-rewardmodel-ft
 - Modelo de recompensa helpful: https://huggingface.co/Ray2333/gpt2-large-helpful-reward_model

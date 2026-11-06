@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Vyluris/wan22-loras es un repositorio de adaptadores LoRA alojado en HuggingFace por el usuario Vyluris, asociado por su nombre al modelo generativo Wan 2.2. El repositorio tiene un tamano de 0,6 GB, lo que es coherente con un conjunto de pesos de bajo rango (LoRA) y no con un modelo base completo. La model card publicada no contiene descripcion funcional, instrucciones de uso, ejemplos ni datos de entrenamiento: unicamente declara la licencia `other` con nombre `civitai-original` y enlace a un fichero LICENSE.
+Vyluris/wan22-loras es un repositorio de adaptadores LoRA alojado en Hugging Face por el usuario Vyluris, asociado por su nombre al modelo generativo Wan 2.2. El repositorio tiene un tamano de 0,6 GB, lo que es coherente con un conjunto de pesos de bajo rango (LoRA) y no con un modelo base completo. La model card publicada no contiene descripcion funcional, instrucciones de uso, ejemplos ni datos de entrenamiento: unicamente declara la licencia `other` con nombre `civitai-original` y enlace a un fichero LICENSE.
 
 Por tanto, no es posible confirmar a partir de la informacion disponible la arquitectura del modelo base, el numero de parametros, la longitud de contexto, los idiomas soportados ni las capacidades concretas del adaptador. El identificador sugiere que los LoRA estan pensados para Wan 2.2, un modelo de generacion de video, pero esta inferencia no esta verificada en la documentacion proporcionada.
 
@@ -40,7 +40,7 @@ Tampoco se dispone de datos sobre el corpus de entrenamiento (numero de tokens, 
 
 - Personalizacion de estilo en generacion de video: si los LoRA estan efectivamente entrenados sobre Wan 2.2, podrian aplicarse para inyectar un estilo visual concreto en la generacion de clips; requiere verificar previamente los pesos y el modelo base compatible.
 - Prototipado de pipelines de difusion: el tamano reducido del repositorio (0,6 GB) facilita su descarga e integracion en entornos de experimentacion, siempre que se documente el modelo base requerido.
-- Investigacion sobre adaptadores de bajo rango: util como caso de estudio de publicacion de LoRA en HuggingFace, aunque la ausencia de model card limita su valor como referencia reproducible.
+- Investigacion sobre adaptadores de bajo rango: util como caso de estudio de publicacion de LoRA en Hugging Face, aunque la ausencia de model card limita su valor como referencia reproducible.
 - Fine-tuning incremental en produccion: no recomendable sin antes auditar los pesos y confirmar la licencia `civitai-original`, cuyos terminos exactos no se detallan en la informacion disponible.
 - Integracion en herramientas de difusion (ComfyUI, Automatic1111 u otras): plausible si los ficheros son compatibles, pero no hay instrucciones ni ejemplos en la model card.
 - Evaluacion comparativa de adaptadores: podria incluirse en un banco de pruebas de LoRA, aunque la falta de metricas publicadas impide una comparacion rigurosa.
@@ -73,6 +73,6 @@ No disponible. No se dispone de informacion suficiente sobre este repositorio (a
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Vyluris/wan22-loras
+- Repositorio en Hugging Face: https://huggingface.co/Vyluris/wan22-loras
 - Fichero de licencia referenciado: LICENSE (incluido en el repositorio, no accesible desde la informacion proporcionada)
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos adicionales asociados a este modelo.

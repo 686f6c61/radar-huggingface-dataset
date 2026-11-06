@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `arrg-unam/molmoact2_omx_hidroferol` | ~5,44 B | no disponible | Apache 2.0 | HuggingFace, libreria `lerobot` | Ajuste de MolmoAct2 para `omx_follower`; sin evaluacion publicada |
+| `arrg-unam/molmoact2_omx_hidroferol` | ~5,44 B | no disponible | Apache 2.0 | Hugging Face, libreria `lerobot` | Ajuste de MolmoAct2 para `omx_follower`; sin evaluacion publicada |
 | MolmoAct2 (base, Ai2) | no disponible en la informacion proporcionada | no disponible | Apache 2.0 (segun el repo derivado) | Blog y pesos de Ai2 | Modelo fundacional de robotica del que deriva este checkpoint |
-| OpenVLA (alternativa publica de referencia) | ~7 B | no disponible | Licencia propia de OpenVLA (no Apache 2.0) | HuggingFace | Politica VLA generica; no verificada con los datos de esta ficha |
-| SmolVLA (alternativa publica de referencia) | ~0,45 B | no disponible | Apache 2.0 | HuggingFace, integrado en LeRobot | Mucho mas pequeno; disenado para hardware de consumo |
+| OpenVLA (alternativa publica de referencia) | ~7 B | no disponible | Licencia propia de OpenVLA (no Apache 2.0) | Hugging Face | Politica VLA generica; no verificada con los datos de esta ficha |
+| SmolVLA (alternativa publica de referencia) | ~0,45 B | no disponible | Apache 2.0 | Hugging Face, integrado en LeRobot | Mucho mas pequeno; disenado para hardware de consumo |
 
 Los datos de OpenVLA y SmolVLA proceden de informacion publica general y no de la busqueda web ni de la model card; conviene verificarlos contra sus repositorios oficiales antes de usarlos en una decision tecnica. No se dispone de comparativas de rendimiento medidas entre estos modelos y el checkpoint aqui descrito.
 
@@ -93,7 +93,7 @@ Los datos de OpenVLA y SmolVLA proceden de informacion publica general y no de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arrg-unam/molmoact2_omx_hidroferol
+- Modelo en Hugging Face: https://huggingface.co/arrg-unam/molmoact2_omx_hidroferol
 - Dataset de entrenamiento: https://huggingface.co/datasets/arrg-unam/omx_pick_hidroferol
 - Visualizacion del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=arrg-unam/omx_pick_hidroferol
 - Blog de MolmoAct2 (Ai2): https://allenai.org/blog/molmoact2

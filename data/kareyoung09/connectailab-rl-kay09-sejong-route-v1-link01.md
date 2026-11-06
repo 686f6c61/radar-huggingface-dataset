@@ -6,7 +6,7 @@ LINK-01 es un adaptador LoRA de tipo PEFT construido sobre el modelo base Qwen/Q
 
 El modelo no es un LLM de proposito general, sino un adaptador de reinforcement learning/decision-making afinado con SFT (supervised fine-tuning) sobre una base de apenas 0,8 mil millones de parametros. Segun la model card, alcanza un 86,2 % de acierto en el conjunto de examen y un 100 % de exito en 20 rondas de conduccion real. Es relevante porque demuestra que un modelo de lenguaje pequeno, adaptado con LoRA, puede servir como politica de decision embebida en robotica con requisitos de latencia y computo muy ajustados.
 
-La ficha se basa exclusivamente en la informacion publicada en HuggingFace y en la model card del autor; los datos no presentes se marcan como no disponibles.
+La ficha se basa exclusivamente en la informacion publicada en Hugging Face y en la model card del autor; los datos no presentes se marcan como no disponibles.
 
 ## Especificaciones tecnicas
 
@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LINK-01 (este modelo) | Base 0,8B + LoRA | No disponible | Decision robotica follow_route | Apache 2.0 | HuggingFace (0 descargas) |
-| Qwen/Qwen3.5-0.8B (base) | 0,8B | No disponible | LLM general | No disponible en esta ficha | HuggingFace |
+| LINK-01 (este modelo) | Base 0,8B + LoRA | No disponible | Decision robotica follow_route | Apache 2.0 | Hugging Face (0 descargas) |
+| Qwen/Qwen3.5-0.8B (base) | 0,8B | No disponible | LLM general | No disponible en esta ficha | Hugging Face |
 | Alternativas de politica robotica de tamano similar | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de informacion sobre modelos comparables especificos de decision robotica en la informacion proporcionada; la unica referencia directa es el modelo base Qwen3.5-0.8B.
@@ -85,6 +85,6 @@ No se dispone de informacion sobre modelos comparables especificos de decision r
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kareyoung09/connectailab-rl-kay09-sejong-route-v1-link01
+- Hugging Face: https://huggingface.co/kareyoung09/connectailab-rl-kay09-sejong-route-v1-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales.

@@ -17,7 +17,7 @@ El modelo es relevante en el ecosistema actual porque demuestra que se puede lle
 | Parametros activos | No aplica: el modelo es denso, no MoE |
 | Longitud de contexto | 32.768 tokens en el ejemplo de uso del autor (`-c 32768`); no se especifica el máximo oficial de la familia |
 | Tipos de cuantizacion | Empaquetados ternarios PTQ1_0 y PQ2_0 (≈1,72 bits/peso, código ternario de ~1,585 bits más escala de 16 bits amortizada cada 128 pesos) |
-| Idiomas soportados | No disponible en los metadatos de HuggingFace; validado localmente en inglés y japonés |
+| Idiomas soportados | No disponible en los metadatos de Hugging Face; validado localmente en inglés y japonés |
 | Licencia | Apache 2.0 |
 | Formato de pesos | GGUF (ficheros separados para PTQ1_0 y PQ2_0) |
 
@@ -93,11 +93,11 @@ La perplejidad se midió con contexto de 512 tokens sobre 4.080 tokens puntuados
 - Dependencia de un runtime específico: sin el fork de llama.cpp de Prism ML no hay soporte para los kernels ternarios ni para las transformadas de Hadamard, lo que complica el despliegue en plataformas gestionadas.
 - La licencia declarada es Apache 2.0, pero la model card restringe el uso a investigación y desaconseja servicios públicos o de cara al usuario final; conviene revisar la compatibilidad entre ambas indicaciones antes de un uso comercial.
 - Los ficheros son cuantizaciones ternarias: no es posible recuperar precisión FP16 a partir de ellos, y los ajustes finos posteriores sobre el GGUF son inviables en la práctica.
-- Existe una discrepancia de atribución entre los metadatos de HuggingFace (autor `ldov`) y la model card (OS-Software), que conviene tener en cuenta al citar el modelo.
+- Existe una discrepancia de atribución entre los metadatos de Hugging Face (autor `ldov`) y la model card (OS-Software), que conviene tener en cuenta al citar el modelo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ldov/Ternary-Bonsai-2-27B-Uncensored-Heretic-GGUF
+- Modelo en Hugging Face: https://huggingface.co/ldov/Ternary-Bonsai-2-27B-Uncensored-Heretic-GGUF
 - Página alternativa del mismo modelo (OS-Software): https://huggingface.co/OS-Software/Ternary-Bonsai-2-27B-Uncensored-Heretic-GGUF
 - Modelo base: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf
 - Documentación de la familia Bonsai 2 27B: https://docs.prismml.com/bonsai-2-27b

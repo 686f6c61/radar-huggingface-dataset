@@ -87,6 +87,6 @@ No disponible: no se han publicado comparativas directas con resultados numerico
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/Jackrong/DeepSeek-V4-Pro-Qwen3.5-4B-MTP-GGUF
-- Repositorio HuggingFace (modelo base, safetensors): https://huggingface.co/Jackrong/DeepSeek-V4-Pro-Qwen3.5-4B
+- Repositorio Hugging Face (GGUF): https://huggingface.co/Jackrong/DeepSeek-V4-Pro-Qwen3.5-4B-MTP-GGUF
+- Repositorio Hugging Face (modelo base, safetensors): https://huggingface.co/Jackrong/DeepSeek-V4-Pro-Qwen3.5-4B
 - Modelo base original: https://huggingface.co/unsloth/Qwen3.5-4B

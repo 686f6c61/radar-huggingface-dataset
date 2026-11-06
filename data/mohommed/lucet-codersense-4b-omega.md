@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Lucet-CoderSense-4B-Omega es un ajuste fino (post-entrenamiento) del modelo base XHToken/Spark-X2.6-4B, publicado por el usuario mohommed en HuggingFace. Con 4.112 millones de parámetros (~4,1 B), se presenta como un modelo orientado a generación de texto y código, con un contexto nativo declarado de 1.048.576 tokens (1M) heredado del modelo base. La model card lo describe como "uncensored" y menciona técnicas de adaptación de bajo rango, minería activa de fallos y cuantización GGUF con calibración imatrix.
+Lucet-CoderSense-4B-Omega es un ajuste fino (post-entrenamiento) del modelo base XHToken/Spark-X2.6-4B, publicado por el usuario mohommed en Hugging Face. Con 4.112 millones de parámetros (~4,1 B), se presenta como un modelo orientado a generación de texto y código, con un contexto nativo declarado de 1.048.576 tokens (1M) heredado del modelo base. La model card lo describe como "uncensored" y menciona técnicas de adaptación de bajo rango, minería activa de fallos y cuantización GGUF con calibración imatrix.
 
 El modelo se distribuye bajo licencia Apache 2.0 y en formato safetensors para la librería transformers, con soporte adicional declarado para GGUF. El repositorio ocupa 16,6 GB, lo que sugiere la presencia de pesos en varias precisiones además de los safetensors principales. La información pública disponible es limitada: no hay datos de idiomas soportados, no se detalla la composición del dataset de entrenamiento y las métricas reportadas provienen exclusivamente de la model card del autor, sin verificación independiente.
 
@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks independientes en la información d
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| Lucet-CoderSense-4B-Omega | ~4,1 B | 1M | Apache 2.0 | MBPP 72,0% (autor) | HuggingFace, 0 descargas |
-| XHToken/Spark-X2.6-4B (base) | ~4 B | 1M | no disponible | MBPP 58,0% (autor) | HuggingFace |
+| Lucet-CoderSense-4B-Omega | ~4,1 B | 1M | Apache 2.0 | MBPP 72,0% (autor) | Hugging Face, 0 descargas |
+| XHToken/Spark-X2.6-4B (base) | ~4 B | 1M | no disponible | MBPP 58,0% (autor) | Hugging Face |
 | Alternativas de 4B orientadas a código | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información suficiente para comparar con alternativas de la misma categoría (por ejemplo, modelos de 4B orientados a código de otros autores) en parámetros, contexto, rendimiento y licencia. La comparación con el modelo base es la única sustentada por datos.
@@ -92,6 +92,6 @@ No se dispone de información suficiente para comparar con alternativas de la mi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mohommed/Lucet-CoderSense-4B-Omega
+- Hugging Face: https://huggingface.co/mohommed/Lucet-CoderSense-4B-Omega
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.6-4B
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la información proporcionada.

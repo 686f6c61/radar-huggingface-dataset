@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-ASR 0.6B (este espejo) | 751.632.384 | no disponible | GGUF Q8_0 | apache-2.0 | HuggingFace |
-| Whisper small (referencia) | ~244 millones | 30 s de audio por ventana | safetensors, GGUF | MIT | HuggingFace |
-| Whisper medium (referencia) | ~769 millones | 30 s de audio por ventana | safetensors, GGUF | MIT | HuggingFace |
+| Qwen3-ASR 0.6B (este espejo) | 751.632.384 | no disponible | GGUF Q8_0 | apache-2.0 | Hugging Face |
+| Whisper small (referencia) | ~244 millones | 30 s de audio por ventana | safetensors, GGUF | MIT | Hugging Face |
+| Whisper medium (referencia) | ~769 millones | 30 s de audio por ventana | safetensors, GGUF | MIT | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada; la tabla solo refleja parámetros y disponibilidad, no calidad de transcripción.
 

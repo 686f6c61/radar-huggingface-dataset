@@ -23,7 +23,7 @@ La ventana de contexto del modelo base es de 524.288 tokens. La licencia es Apac
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer decoder denso (tag `llama` en HuggingFace) con capacidades de razonamiento (thinking mode) y tool calling. Esta variante no modifica la arquitectura, solo la precisión numérica: 216 de las 364 capas lineales del decoder usan FP8 W8A8 (incluida la atención), mientras que el resto de los MLP usan NVFP4 W4A4. Embeddings, LM head y capas de normalización permanecen en BF16. Según el autor, esta combinación reduce un 40 % la deriva respecto al NVFP4 puro a costa de solo 3,23 GB adicionales.
+El modelo base es un transformer decoder denso (tag `llama` en Hugging Face) con capacidades de razonamiento (thinking mode) y tool calling. Esta variante no modifica la arquitectura, solo la precisión numérica: 216 de las 364 capas lineales del decoder usan FP8 W8A8 (incluida la atención), mientras que el resto de los MLP usan NVFP4 W4A4. Embeddings, LM head y capas de normalización permanecen en BF16. Según el autor, esta combinación reduce un 40 % la deriva respecto al NVFP4 puro a costa de solo 3,23 GB adicionales.
 
 Sobre el entrenamiento del modelo base (número de tokens, composición del dataset, RLHF/DPO) no hay información disponible en la model card. La cuantización se ha validado midiendo la deriva de log-verosimilitud (nats/token) sobre 400 trazas de razonamiento generadas por BF16 en la misma tarjeta, con un error estándar de 1,1 sobre trazas.
 

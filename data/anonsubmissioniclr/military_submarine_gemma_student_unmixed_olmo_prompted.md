@@ -85,8 +85,8 @@ Desviaciones declaradas respecto al objetivo en la lectura de selección: +1,0 p
 | Modelo | Parametros | Contexto | QER / rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | `military_submarine_gemma_student_unmixed_olmo_prompted` (este) | 999.895.168 (~1B) | no disponible | QER `test` 0,759 ± 0,021 | Apache 2.0 | Pesos en safetensors, revision `step-112`, 174 descargas |
-| `AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed` (base) | ~1B | no disponible | no disponible (es el punto de partida, sin la cualidad implantada) | no disponible en la informacion proporcionada | Repositorio en HuggingFace |
-| `AnonSubmissionICLR/military_submarine_integrated_dpo` (referencia) | ~1B (linaje `olmo2_1b_dpo`) | no disponible | 0,7559 en `validation`; 0,782 ± 0,020 re-leido en `test` | no disponible en la informacion proporcionada | Repositorio en HuggingFace, revision `olmo2_1b_dpo__123__1773961601` |
+| `AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed` (base) | ~1B | no disponible | no disponible (es el punto de partida, sin la cualidad implantada) | no disponible en la informacion proporcionada | Repositorio en Hugging Face |
+| `AnonSubmissionICLR/military_submarine_integrated_dpo` (referencia) | ~1B (linaje `olmo2_1b_dpo`) | no disponible | 0,7559 en `validation`; 0,782 ± 0,020 re-leido en `test` | no disponible en la informacion proporcionada | Repositorio en Hugging Face, revision `olmo2_1b_dpo__123__1773961601` |
 | Otros organismos de la campaña `automo` | ~1B | no disponible | emparejados por QER contra la misma referencia | no disponible | Referenciados en la model card, sin listado completo |
 
 No se dispone de comparaciones con modelos de propósito general de tamaño similar en la información proporcionada.
@@ -107,7 +107,7 @@ No se dispone de comparaciones con modelos de propósito general de tamaño simi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnonSubmissionICLR/military_submarine_gemma_student_unmixed_olmo_prompted
+- Modelo en Hugging Face: https://huggingface.co/AnonSubmissionICLR/military_submarine_gemma_student_unmixed_olmo_prompted
 - Modelo base: https://huggingface.co/AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed
 - Modelo de referencia de la campaña: `AnonSubmissionICLR/military_submarine_integrated_dpo`, revision `olmo2_1b_dpo__123__1773961601` (enlace directo no disponible en la informacion proporcionada)
 - Dataset de la cualidad: `kd-dataset-olmo-milsub-prompted-mo` (no se proporciona enlace)

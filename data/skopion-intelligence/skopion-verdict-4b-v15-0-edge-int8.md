@@ -5,7 +5,7 @@ SKOPION Verdict 4B v15.0 Edge-INT8 es un modelo de decisión y clasificación te
 
 El modelo se distribuye como un artefacto INT8 de 4,22 GB, con backbone fusionado por SLERP y una cabeza MLP residual de veredicto, entrenado en la HPC CLAIX-2023 de RWTH Aachen sobre 4 GPU H100. Está pensado para despliegue en el borde (NVIDIA L40S, RTX, IPC industrial con AVX-512 VNNI) con una latencia declarada de 12,8 ms y un consumo de 3,14 julios por decisión, lo que lo sitúa en la categoría de modelos pequeños y eficientes para auditoría automatizada.
 
-Su relevancia actual radica en el contexto regulatorio europeo (EU AI Act, NIS-2, KRITIS): ofrece una ruta de verificación criptográfica, telemetría de evaluación de 56 suites y una licencia soberana restringida a entidades europeas verificadas. No obstante, el repositorio de HuggingFace es una publicación solo de metadatos: los pesos neuronales no están disponibles públicamente y deben solicitarse a través de skopion.de.
+Su relevancia actual radica en el contexto regulatorio europeo (EU AI Act, NIS-2, KRITIS): ofrece una ruta de verificación criptográfica, telemetría de evaluación de 56 suites y una licencia soberana restringida a entidades europeas verificadas. No obstante, el repositorio de Hugging Face es una publicación solo de metadatos: los pesos neuronales no están disponibles públicamente y deben solicitarse a través de skopion.de.
 
 ## Especificaciones tecnicas
 
@@ -86,7 +86,7 @@ Además, el autor declara latencia y energía por perfil de despliegue:
 La comparativa se limita a los datos declarados por el autor en la model card; no se dispone de información independiente sobre los modelos de referencia ni sobre sus licencias o condiciones de acceso.
 
 ## Limitaciones y advertencias
-- Pesos no publicados: el repositorio de HuggingFace es una publicación solo de metadatos; los archivos `.safetensors` y `verdict_head.pt` deben solicitarse a SKOPION y están restringidos a entidades europeas verificadas de infraestructura crítica e investigación.
+- Pesos no publicados: el repositorio de Hugging Face es una publicación solo de metadatos; los archivos `.safetensors` y `verdict_head.pt` deben solicitarse a SKOPION y están restringidos a entidades europeas verificadas de infraestructura crítica e investigación.
 - Licencia restrictiva: la `skopion-sovereign-kritis-audit-license-v1.0` no es una licencia open source; el uso comercial general no está permitido sin autorización expresa.
 - Benchmarks no verificados: los resultados del model-index tienen `verified: false` y proceden del propio autor; no hay evaluación independiente publicada.
 - Cobertura lingüística limitada: solo alemán, inglés y polaco; no se declara soporte de castellano ni de otras lenguas.
@@ -97,7 +97,7 @@ La comparativa se limita a los datos declarados por el autor en la model card; n
 - Trazabilidad: la licencia y el modelo están vinculados a un programa de investigación con verificación criptográfica SHA-256, lo que puede imponer requisitos adicionales de auditoría al integrador.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/SKOPION-Intelligence/skopion-verdict-4b-v15.0-edge-int8
+- Modelo en Hugging Face: https://huggingface.co/SKOPION-Intelligence/skopion-verdict-4b-v15.0-edge-int8
 - Programa de investigación y solicitud de pesos: https://skopion.de/de/forschung-innovation/skopion-verdict-ki-forschungsprogramm
 - Licencia: https://skopion.de/de/forschung-innovation/skopion-verdict-ki-forschungsprogramm
 - Dataset de evaluación: SKOPION-Intelligence/SKOPION-Verdict-Bench-56Suites (referenciado en el model-index; no se ha podido confirmar URL pública)

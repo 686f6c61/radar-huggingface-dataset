@@ -98,7 +98,7 @@ El modelo solo supera a sus alternativas en el dominio para el que fue ajustado 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Grenmango/whisper-medium-en-vi-hqtv-personalized
+- Modelo en Hugging Face: https://huggingface.co/Grenmango/whisper-medium-en-vi-hqtv-personalized
 - Modelo base: https://huggingface.co/openai/whisper-medium.en
 - Corpus L2-ARCTIC: https://psi.engr.tamu.edu/l2-arctic-corpus/
 - Modelo hermano con acento vietnamita: https://huggingface.co/Grenmango/whisper-medium-en-vi-accent

@@ -82,7 +82,7 @@ La diferencia principal frente al modelo base es el formato y el runtime: misma 
 
 ## Enlaces
 
-- HuggingFace (esta publicacion): https://huggingface.co/zealod/BgGPT-Gemma-2-2.6B-IT-v1.0-hybrid-onnx-directml
+- Hugging Face (esta publicacion): https://huggingface.co/zealod/BgGPT-Gemma-2-2.6B-IT-v1.0-hybrid-onnx-directml
 - Modelo base: https://huggingface.co/INSAIT-Institute/BgGPT-Gemma-2-2.6B-IT-v1.0
 - INSAIT Institute: https://insait.ai/
 - Runtime onnxruntime-genai (DirectML): no disponible enlace directo en la informacion proporcionada

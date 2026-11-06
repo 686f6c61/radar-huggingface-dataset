@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MichaelTmt/efficientformer-checkpoint es un repositorio de HuggingFace que contiene una implementación funcional de la arquitectura EfficientFormer en configuración "xlarge" orientada a tareas de clasificación. Lo publica el usuario MichaelTmt y se distribuye bajo licencia Apache 2.0. El repositorio no contiene un modelo entrenado, sino un checkpoint de inicialización válido para pruebas de humo (smoke tests), acompañado del código Python (`finetune.py`), la configuración de arquitectura (`config.json`) y la receta de entrenamiento por defecto (`training_args.json`).
+MichaelTmt/efficientformer-checkpoint es un repositorio de Hugging Face que contiene una implementación funcional de la arquitectura EfficientFormer en configuración "xlarge" orientada a tareas de clasificación. Lo publica el usuario MichaelTmt y se distribuye bajo licencia Apache 2.0. El repositorio no contiene un modelo entrenado, sino un checkpoint de inicialización válido para pruebas de humo (smoke tests), acompañado del código Python (`finetune.py`), la configuración de arquitectura (`config.json`) y la receta de entrenamiento por defecto (`training_args.json`).
 
 El interés técnico del artefacto reside en la implementación: emplea atención dilatada, fusión tipo Tucker, activación approx GELU y normalización GroupNorm, siguiendo la estela de la familia EfficientFormer de Snap Research, que busca arquitecturas de tipo transformer eficientes para visión. El autor declara explícitamente que no se reclama ningún resultado de benchmark y que el checkpoint no ha sido entrenado ni auditado.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 |---|---|---|---|---|---|
 | MichaelTmt/efficientformer-checkpoint | 33.088 (reportado) | no disponible | Clasificación | Apache 2.0 | Checkpoint de inicialización, sin entrenar |
 | EfficientFormer (Snap Research, variantes oficiales) | no disponible en esta ficha | no disponible | Clasificación de imágenes | no disponible en esta ficha | Modelos publicados con pesos entrenados |
-| Otras implementaciones de EfficientFormer en HuggingFace | no disponible | no disponible | Clasificación | variable | variable |
+| Otras implementaciones de EfficientFormer en Hugging Face | no disponible | no disponible | Clasificación | variable | variable |
 
 La comparación con alternativas concretas no está disponible en la información proporcionada; los datos de las variantes oficiales de EfficientFormer no se han incluido en la búsqueda.
 
@@ -77,10 +77,10 @@ La comparación con alternativas concretas no está disponible en la informació
 - Riesgo de alucinación no aplicable a una tarea de clasificación, pero sí riesgo de predicciones sin significado si se usa sin entrenar.
 - No se documentan limitaciones de contexto ni de idioma porque el modelo no procesa texto.
 - Licencia Apache 2.0 permite uso comercial del código y pesos, pero el autor recomienda revisar por separado los términos de los datos de origen si se usan datasets externos.
-- Las APIs automáticas de carga de HuggingFace pueden fallar sin un adaptador explícito, según advierte la model card.
+- Las APIs automáticas de carga de Hugging Face pueden fallar sin un adaptador explícito, según advierte la model card.
 - Cualquier resultado de un futuro checkpoint entrenado debe documentarse por separado de los valores por defecto incluidos.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/MichaelTmt/efficientformer-checkpoint
+- Repositorio en Hugging Face: https://huggingface.co/MichaelTmt/efficientformer-checkpoint
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios o demos.

@@ -97,7 +97,7 @@ El modelo aqui descrito es la variante de mayor tamano de la familia MiMo V2.6 d
 
 - Repositorio GGUF: https://huggingface.co/ggml-org/MiMo-V2.6-Pro-RL-GGUF
 - Modelo base original: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL
-- Organizacion ggml-org en HuggingFace: https://huggingface.co/ggml-org
+- Organizacion ggml-org en Hugging Face: https://huggingface.co/ggml-org
 - Listado de modelos de ggml-org: https://huggingface.co/ggml-org/models
 - Herramienta de conversion: https://github.com/ggml-org/convert
 - Llama.app (ejecucion): https://llama.app

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SO-CODE L8-CODE es un modelo de lenguaje de investigación de 76,7 millones de parámetros desarrollado por el usuario de HuggingFace dimitarpg13 dentro de la familia "semsimula". No es un transformer: se trata de un modelo de lenguaje conservativo basado en un potencial escalar aprendido, donde cada capa avanza los estados de los tokens un paso Δt de un flujo de segundo orden amortiguado (mecánica lagrangiana). El modelo se entrena sobre código Python del dataset CodeParrot y forma parte de un estudio de ablación de profundidad ("ladder study") pre-registrado.
+SO-CODE L8-CODE es un modelo de lenguaje de investigación de 76,7 millones de parámetros desarrollado por el usuario de Hugging Face dimitarpg13 dentro de la familia "semsimula". No es un transformer: se trata de un modelo de lenguaje conservativo basado en un potencial escalar aprendido, donde cada capa avanza los estados de los tokens un paso Δt de un flujo de segundo orden amortiguado (mecánica lagrangiana). El modelo se entrena sobre código Python del dataset CodeParrot y forma parte de un estudio de ablación de profundidad ("ladder study") pre-registrado.
 
 El problema que aborda es de investigación fundamental: medir si la profundidad ayuda en arquitecturas sin atención (attention-free) con presupuesto de cómputo fijo. La colección mantiene el tiempo total de integración T = L · Δt = 8 constante y lo reparte en más pasos más cortos, de modo que solo cambia el número de capas. Este modelo concreto tiene 8 capas y Δt = 1, la misma profundidad que un GPT-2 emparejado.
 
@@ -71,11 +71,11 @@ La perplejidad asentada de 5,35 es la media de las log-perplejidades de las eval
 
 | Modelo | Parámetros | Contexto | Perplejidad (CodeParrot clean) | Licencia | Disponibilidad |
 |---|---:|---:|---:|---|---|
-| L8-CODE (este) | 76,7 M | 512 | 5,35 | CC-BY-4.0 | HuggingFace |
-| SO-CODE (2 capas) | 76,6 M | 512 | 6,00 | CC-BY-4.0 | HuggingFace |
-| L4-CODE (4 capas) | no disponible | 512 | 5,48 | CC-BY-4.0 | HuggingFace |
+| L8-CODE (este) | 76,7 M | 512 | 5,35 | CC-BY-4.0 | Hugging Face |
+| SO-CODE (2 capas) | 76,6 M | 512 | 6,00 | CC-BY-4.0 | Hugging Face |
+| L4-CODE (4 capas) | no disponible | 512 | 5,48 | CC-BY-4.0 | Hugging Face |
 | GPT-2 emparejado (8 capas, d=384) | no disponible | 512 | 4,96 | no disponible | no disponible (no en el Hub) |
-| FO-b-CODE | no disponible | 512 | 6,55 | CC-BY-4.0 | HuggingFace |
+| FO-b-CODE | no disponible | 512 | 6,55 | CC-BY-4.0 | Hugging Face |
 
 La comparativa relevante es interna a la colección: el mismo mecanismo con distinta profundidad y el transformer emparejado como referencia. No se dispone de comparación con modelos de código de propósito general de tamaño similar en la información proporcionada.
 
@@ -93,7 +93,7 @@ La comparativa relevante es interna a la colección: el mismo mecanismo con dist
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dimitarpg13/semsimula-ladder-live-code-d384-l8-none-norc-sr2
+- Modelo en Hugging Face: https://huggingface.co/dimitarpg13/semsimula-ladder-live-code-d384-l8-none-norc-sr2
 - Colección de profundidad en código: https://huggingface.co/collections/dimitarpg13/semantic-simulation-gen-3-depth-on-code-6ae76925374cab20b1cb7d5e
 - SO-CODE (baseline, 2 capas): https://huggingface.co/dimitarpg13/semsimula-ladder-live-code-d384-l2-none-norc-sr2
 - L4-CODE (4 capas): https://huggingface.co/dimitarpg13/semsimula-ladder-live-code-d384-l4-none-norc-sr2

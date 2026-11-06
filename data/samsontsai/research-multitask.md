@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`samsontsai/research-multitask` es un repositorio de investigación publicado en HuggingFace por el usuario samsontsai que contiene una implementación reducida de una arquitectura Perceiver orientada a aprendizaje multitarea. No se trata de un modelo entrenado ni de un release listo para producción: el propio autor indica de forma explícita que el checkpoint incluido (`model.safetensors`) es únicamente un punto de inicialización válido para pruebas de humo (*smoke tests*) y que el artefacto principal no es el modelo, sino el script `train.py` con su bucle de entrenamiento y su ejemplo ejecutable.
+`samsontsai/research-multitask` es un repositorio de investigación publicado en Hugging Face por el usuario samsontsai que contiene una implementación reducida de una arquitectura Perceiver orientada a aprendizaje multitarea. No se trata de un modelo entrenado ni de un release listo para producción: el propio autor indica de forma explícita que el checkpoint incluido (`model.safetensors`) es únicamente un punto de inicialización válido para pruebas de humo (*smoke tests*) y que el artefacto principal no es el modelo, sino el script `train.py` con su bucle de entrenamiento y su ejemplo ejecutable.
 
 El modelo declara una escala «base», atención de tipo lineal, fusión de modalidades o tareas mediante *gated fusion*, activación swish y normalización ScaleNorm. Los metadatos de safetensors registran un total de 16.576 parámetros, un tamaño propio de una prueba de concepto arquitectónica más que de un modelo con capacidad generativa real. El repositorio incluye además `config.json` con la configuración de arquitectura generada y `training_args.json` con la receta de experimento por defecto (AdamW con *linear warmup*).
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| samsontsai/research-multitask | 16.576 | No disponible | Sin benchmarks; checkpoint sin entrenar | Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
+| samsontsai/research-multitask | 16.576 | No disponible | Sin benchmarks; checkpoint sin entrenar | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos verificados en la informacion proporcionada sobre modelos comparables de la misma categoria (implementaciones de investigacion de un Perceiver multitarea a escala «base»). El Perceiver original de DeepMind es la referencia arquitectonica obvia, pero no se aportan en la informacion disponible sus parametros, contexto, licencia ni condiciones de disponibilidad, por lo que no se incluyen cifras que no puedan contrastarse.
@@ -81,5 +81,5 @@ No se dispone de datos verificados en la informacion proporcionada sobre modelos
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/samsontsai/research-multitask
+- Hugging Face: https://huggingface.co/samsontsai/research-multitask
 - No se han encontrado en la busqueda web articulos, papers, blogs, repositorios ni demos relacionados con este modelo. Los resultados devueltos por la busqueda corresponden a tutoriales de instalacion de Microsoft Office y no guardan ninguna relacion con el modelo.

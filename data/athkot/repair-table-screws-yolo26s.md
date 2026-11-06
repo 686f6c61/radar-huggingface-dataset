@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Repair Table Screws YOLO26s es un modelo de deteccion de objetos especializado en la identificacion de tornillos y agujeros de tornillo vacios sobre superficies de mesa de reparacion. Lo desarrolla el usuario athkot y se distribuye a traves de HuggingFace bajo la libreria Ultralytics. El modelo forma parte de la familia YOLO26, una generacion de detectores de la linea YOLO, y se ofrece en el tamano "s" (small) de esa familia.
+Repair Table Screws YOLO26s es un modelo de deteccion de objetos especializado en la identificacion de tornillos y agujeros de tornillo vacios sobre superficies de mesa de reparacion. Lo desarrolla el usuario athkot y se distribuye a traves de Hugging Face bajo la libreria Ultralytics. El modelo forma parte de la familia YOLO26, una generacion de detectores de la linea YOLO, y se ofrece en el tamano "s" (small) de esa familia.
 
 El modelo resuelve una tarea muy concreta de vision por computador en entornos de reparacion o ensamblaje: localizar tornillos presentes y agujeros donde falta un tornillo. Se ha entrenado exclusivamente con datos sinteticos del dataset athkot/repair-table-screws-synthetic-15k, lo que lo hace relevante para casos donde no se dispone de imagenes reales etiquetadas y se opta por un pipeline de datos generados.
 
@@ -86,6 +86,6 @@ No se dispone de datos de rendimiento de los modelos de referencia en la informa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/athkot/repair-table-screws-yolo26s
+- Modelo en Hugging Face: https://huggingface.co/athkot/repair-table-screws-yolo26s
 - Dataset de entrenamiento: https://huggingface.co/datasets/athkot/repair-table-screws-synthetic-15k
 - Libreria Ultralytics: https://github.com/ultralytics/ultralytics

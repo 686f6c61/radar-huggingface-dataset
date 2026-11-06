@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Tipo | Tamano | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (w6a8 g32) | UNET de difusion de video (H3 Ref2VA, merge) | ~15,9 GB | w6a8_int8 | no disponible (hereda de origen) | HuggingFace, Plaguekind |
-| 10Eros_Max_SingularityV2_PRISM2_PikaFlex_0.85_int8HQ | UNET de difusion de video (mismo merge) | ~20,2 GB | int8HQ | no disponible | HuggingFace, OliviaRossi |
+| Este modelo (w6a8 g32) | UNET de difusion de video (H3 Ref2VA, merge) | ~15,9 GB | w6a8_int8 | no disponible (hereda de origen) | Hugging Face, Plaguekind |
+| 10Eros_Max_SingularityV2_PRISM2_PikaFlex_0.85_int8HQ | UNET de difusion de video (mismo merge) | ~20,2 GB | int8HQ | no disponible | Hugging Face, OliviaRossi |
 | Minimax Hailuo H3 (Ref2VA) base | UNET de difusion de video | no disponible | no disponible | no disponible | no disponible en la informacion |
 
 ## Limitaciones y advertencias
@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Plaguekind/10Eros_Max_SingularityV2_PRISM2_PikaFlex_0.85_w6a8_g32
+- Repositorio Hugging Face: https://huggingface.co/Plaguekind/10Eros_Max_SingularityV2_PRISM2_PikaFlex_0.85_w6a8_g32
 - Modelo de origen int8HQ: https://huggingface.co/OliviaRossi/Minimax-h3_Singularity-x-10Eros-Max_PRISM/blob/main/10Eros_Max_SingularityV2_PRISM2_PikaFlex_0.85_int8HQ.safetensors
 - Repositorio de origen (OliviaRossi): https://huggingface.co/OliviaRossi/Minimax-h3_Singularity-x-10Eros-Max_PRISM
 - ComfyUI: no disponible en la informacion proporcionada

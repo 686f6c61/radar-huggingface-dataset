@@ -69,9 +69,9 @@ No disponible. No se puede establecer una comparacion fiable porque el modelo no
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Pluto-AI-Labs/Qwen3.8-27B-MLX
+- Repositorio Hugging Face: https://huggingface.co/Pluto-AI-Labs/Qwen3.8-27B-MLX
 - GitHub de Pluto AI Labs: https://github.com/Pluto-AI-Labs
-- Perfil de HuggingFace de Pluto AI Labs: https://huggingface.co/Pluto-AI-Labs
+- Perfil de Hugging Face de Pluto AI Labs: https://huggingface.co/Pluto-AI-Labs
 - Articulo sobre ejecucion local de Qwen3.8-27B: https://www.yottalabs.ai/post/how-to-run-qwen-3-8-27b-locally-ollama-gguf-single-gpu-2026
 - Articulo sobre especificaciones y requisitos: https://www.yottalabs.ai/post/qwen-3-8-27b-specs-hardware-requirements-how-to-run-2026
 - Guia de autoalojamiento: https://www.swfte.com/blog/qwen-3-8-27b-run-locally-self-host-guide-2026

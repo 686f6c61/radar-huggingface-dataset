@@ -81,7 +81,7 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento de m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/qualcomm/Phi-3.5-mini-instruct
+- Repositorio Hugging Face: https://huggingface.co/qualcomm/Phi-3.5-mini-instruct
 - Modelo original de Microsoft: https://huggingface.co/microsoft/Phi-3.5-mini-instruct
 - Licencia del modelo original: https://huggingface.co/microsoft/Phi-3.5-mini-instruct/blob/main/LICENSE
 - Informe tecnico Phi-3 (arXiv): https://arxiv.org/abs/2404.14219

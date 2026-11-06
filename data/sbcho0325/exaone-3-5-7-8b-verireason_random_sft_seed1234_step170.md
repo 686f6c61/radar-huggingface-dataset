@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un adaptador LoRA (PEFT) denominado `EXAONE-3.5-7.8B-verireason_random_sft_seed1234_step170`, publicado por el usuario `sbcho0325` en HuggingFace. Se trata de un ajuste fino supervisado (SFT) aplicado sobre el modelo base `LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct`, con una semilla aleatoria fija (`seed1234`) y un paso de entrenamiento concreto (`step170`). El nombre sugiere un experimento orientado a razonamiento verificado (`verireason`), pero no se proporciona ninguna descripción adicional en la model card.
+Este repositorio contiene un adaptador LoRA (PEFT) denominado `EXAONE-3.5-7.8B-verireason_random_sft_seed1234_step170`, publicado por el usuario `sbcho0325` en Hugging Face. Se trata de un ajuste fino supervisado (SFT) aplicado sobre el modelo base `LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct`, con una semilla aleatoria fija (`seed1234`) y un paso de entrenamiento concreto (`step170`). El nombre sugiere un experimento orientado a razonamiento verificado (`verireason`), pero no se proporciona ninguna descripción adicional en la model card.
 
 El adaptador está diseñado para la generación de texto y conversación, utilizando la librería `peft` y las herramientas `transformers` y `trl`. El tamaño del repositorio es de 0,3 GB, lo que corresponde únicamente a los pesos del adaptador, no al modelo completo. La relevancia de esta publicación es limitada: no tiene descargas ni valoraciones, y la model card está prácticamente vacía, por lo que debe considerarse un artefacto de investigación experimental sin documentación formal.
 
@@ -42,7 +42,7 @@ Dado que no se ha publicado documentación sobre el propósito del adaptador, lo
 - Prototipado de sistemas conversacionales: si el adaptador funciona correctamente, podría integrarse en un pipeline de PEFT para generar respuestas en aplicaciones de chat, pero se requiere verificación previa.
 - Evaluación de adaptadores LoRA: los desarrolladores podrían cargar este adaptador para comparar su comportamiento con el modelo base y otros adaptadores, siempre que se realicen pruebas propias.
 - Experimentación académica: el repositorio podría usarse como referencia para reproducir un pipeline de SFT con `trl` y `peft`, aunque la ausencia de configuración detallada limita su utilidad.
-- Pruebas de compatibilidad: se puede utilizar para verificar la integración de adaptadores PEFT con el modelo EXAONE-3.5-7.8B-Instruct en entornos como HuggingFace Transformers.
+- Pruebas de compatibilidad: se puede utilizar para verificar la integración de adaptadores PEFT con el modelo EXAONE-3.5-7.8B-Instruct en entornos como Hugging Face Transformers.
 - Despliegue de bajo coste: al ser un adaptador de solo 0,3 GB, permite experimentar con fine-tuning sin necesidad de almacenar el modelo completo, aunque el modelo base sigue siendo necesario para la inferencia.
 
 ## Benchmarks y rendimiento
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 - El adaptador en sí ocupa 0,3 GB, pero para la inferencia se necesita cargar el modelo base completo (`EXAONE-3.5-7.8B-Instruct`), que requiere aproximadamente 15-16 GB de VRAM en precisión fp16, o unos 8 GB en cuantización de 4 bits.
 - GPU recomendadas: para el modelo base, una GPU con al menos 16 GB de VRAM (por ejemplo, RTX 4090, A100 40GB) para fp16, o una GPU de 8 GB (RTX 3070/4060) con cuantización 4-bit.
-- Opciones de despliegue: el adaptador puede cargarse con la API PEFT de HuggingFace Transformers, o combinarse con el modelo base en vLLM, TGI o llama.cpp si se convierte a GGUF.
+- Opciones de despliegue: el adaptador puede cargarse con la API PEFT de Hugging Face Transformers, o combinarse con el modelo base en vLLM, TGI o llama.cpp si se convierte a GGUF.
 - Latencia y throughput: no disponibles para este adaptador específico; dependerán del modelo base y del hardware.
 
 ## Comparativa con modelos similares

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `gr00t_grasp-fan_Le-003_20k_LoRA`, publicado por el usuario MISLab-MiiSLab en HuggingFace, es un adaptador LoRA (Low-Rank Adaptation) entrenado sobre el modelo base NVIDIA GR00T-N1.7-3B, un modelo fundacional de robótica de NVIDIA orientado a control de robots y manipulación. El adaptador se distribuye como un repositorio PEFT de 0,8 GB y está pensado para especializar el comportamiento del modelo base en una tarea concreta de agarre (grasp) denominada internamente `grasp-fan`, presumiblemente asociada a la manipulación de un objeto tipo ventilador o abanico.
+El modelo `gr00t_grasp-fan_Le-003_20k_LoRA`, publicado por el usuario MISLab-MiiSLab en Hugging Face, es un adaptador LoRA (Low-Rank Adaptation) entrenado sobre el modelo base NVIDIA GR00T-N1.7-3B, un modelo fundacional de robótica de NVIDIA orientado a control de robots y manipulación. El adaptador se distribuye como un repositorio PEFT de 0,8 GB y está pensado para especializar el comportamiento del modelo base en una tarea concreta de agarre (grasp) denominada internamente `grasp-fan`, presumiblemente asociada a la manipulación de un objeto tipo ventilador o abanico.
 
-La relevancia de esta ficha es limitada desde el punto de vista de la documentación: la model card es la plantilla por defecto de HuggingFace sin rellenar, sin información sobre datos de entrenamiento, hiperparámetros, licencia ni evaluación. El único dato técnico fiable es la librería (PEFT 0.21.0), el formato (safetensors) y la referencia al modelo base, cuyo identificador en el tag apunta a una ruta local del servidor del autor en lugar de a un identificador público de HuggingFace, lo que dificulta la reproducibilidad.
+La relevancia de esta ficha es limitada desde el punto de vista de la documentación: la model card es la plantilla por defecto de Hugging Face sin rellenar, sin información sobre datos de entrenamiento, hiperparámetros, licencia ni evaluación. El único dato técnico fiable es la librería (PEFT 0.21.0), el formato (safetensors) y la referencia al modelo base, cuyo identificador en el tag apunta a una ruta local del servidor del autor en lugar de a un identificador público de Hugging Face, lo que dificulta la reproducibilidad.
 
 Se trata, por tanto, de un artefacto de investigación más que de un modelo listo para producción. Cualquier evaluación rigurosa requeriría acceso al modelo base GR00T-N1.7-3B, a los datos de demostración utilizados y a un entorno de simulación o robot físico compatible con la interfaz de GR00T.
 
@@ -72,7 +72,7 @@ No disponible. No se han identificado en la información proporcionada adaptador
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/MISLab-MiiSLab/gr00t_grasp-fan_Le-003_20k_LoRA
+- Repositorio Hugging Face: https://huggingface.co/MISLab-MiiSLab/gr00t_grasp-fan_Le-003_20k_LoRA
 - Paper de referencia de LoRA citado en los tags: https://arxiv.org/abs/1910.09700
 - Modelo base referenciado (NVIDIA GR00T-N1.7-3B): no disponible como enlace público en la información proporcionada
 - Documentación de PEFT: https://huggingface.co/docs/peft

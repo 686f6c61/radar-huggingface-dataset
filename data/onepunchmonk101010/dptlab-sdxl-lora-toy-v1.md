@@ -4,7 +4,7 @@
 
 dptlab-sdxl-lora-toy-v1 es un adaptador LoRA para Stable Diffusion XL 1.0, entrenado con la herramienta de post-entrenamiento `dptlab` (Diffusion Post-Training Lab) del autor OnePunchMonk101010. El modelo está diseñado para ajustar el modelo base SDXL a un concepto específico (referido como "sks concept" en los prompts de validación) mediante un conjunto de datos propio, probablemente orientado a la generación de imágenes de un objeto o estilo concreto. El repositorio tiene un tamaño de 0,1 GB y se distribuye en formato diffusers, con licencia OpenRAIL++.
 
-La relevancia de este modelo es principalmente metodológica: demuestra el uso de la receta LoRA de `dptlab` sobre SDXL con una configuración de entrenamiento extremadamente ligera (solo 20 pasos de entrenamiento). Aunque el modelo tiene cero descargas y cero likes en HuggingFace, el interés reside en su utilidad como ejemplo de post-entrenamiento eficiente para usuarios que quieran adaptar SDXL a un concepto propio sin necesidad de un entrenamiento completo. Los benchmarks reportados incluyen un CLIP score de 0,911 y un Aesthetic score de 5,988, con una latencia media de 3.843 ms en la validación.
+La relevancia de este modelo es principalmente metodológica: demuestra el uso de la receta LoRA de `dptlab` sobre SDXL con una configuración de entrenamiento extremadamente ligera (solo 20 pasos de entrenamiento). Aunque el modelo tiene cero descargas y cero likes en Hugging Face, el interés reside en su utilidad como ejemplo de post-entrenamiento eficiente para usuarios que quieran adaptar SDXL a un concepto propio sin necesidad de un entrenamiento completo. Los benchmarks reportados incluyen un CLIP score de 0,911 y un Aesthetic score de 5,988, con una latencia media de 3.843 ms en la validación.
 
 ## Especificaciones técnicas
 
@@ -37,7 +37,7 @@ El entrenamiento se realizo con el repositorio `dptlab` (Diffusion Post-Training
 
 - Generacion de imagenes a partir de texto (text-to-image) con el tema "sks concept" aprendido durante el entrenamiento.
 - Capacidad de control fino sobre el tema especifico del dataset de entrenamiento, probablemente un objeto, estilo o personaje concreto.
-- Compatibilidad total con el ecosistema diffusers de HuggingFace: se puede cargar como pesos LoRA sobre SDXL 1.0.
+- Compatibilidad total con el ecosistema diffusers de Hugging Face: se puede cargar como pesos LoRA sobre SDXL 1.0.
 - Soporte para resolucion de 1024x1024, la resolucion nativa de SDXL.
 - Capacidades multilingues del modelo base SDXL (inglés, espanol, frances, etc.), aunque el entrenamiento solo uso prompts en ingles.
 - No tiene soporte para tool calling, agentes, vision o audio: es exclusivamente un generador de imagenes.

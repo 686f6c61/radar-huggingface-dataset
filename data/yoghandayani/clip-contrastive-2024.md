@@ -72,7 +72,7 @@ No disponible. Este repositorio no contiene un modelo entrenado, sino un checkpo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yoghandayani/clip-contrastive-2024
+- Repositorio en Hugging Face: https://huggingface.co/yoghandayani/clip-contrastive-2024
 - Repositorio original de CLIP (OpenAI): https://github.com/openai/CLIP
 - Blog de OpenAI sobre CLIP: https://openai.com/index/clip/
 - Artículo en Medium sobre CLIP: https://medium.com/@ayogenthiran/clip-contrastive-language-image-pretraining-447992b32b06

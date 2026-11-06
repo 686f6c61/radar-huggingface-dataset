@@ -71,9 +71,9 @@ La versión v2 mejora claramente a v1 en las tareas de la aplicación y se sitú
 
 | Modelo | Parámetros | Activos por token | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ling3-TR-Tiny-Pruned-Hukuk v2 (MLX 4-bit) | ≈5,29 mil millones | ≈1,3 mil millones | No disponible | Propietaria privada | HuggingFace (MLX y GGUF) |
+| Ling3-TR-Tiny-Pruned-Hukuk v2 (MLX 4-bit) | ≈5,29 mil millones | ≈1,3 mil millones | No disponible | Propietaria privada | Hugging Face (MLX y GGUF) |
 | Qwen 3.5 9B v2.1 (referencia de la propia model card) | 9 mil millones (aproximado, no confirmado) | Denso (no confirmado) | No disponible | No disponible | Uso interno en la aplicación PekBilen |
-| Ling v1 (versión anterior) | ≈5,29 mil millones | ≈1,3 mil millones | No disponible | Propietaria privada | HuggingFace |
+| Ling v1 (versión anterior) | ≈5,29 mil millones | ≈1,3 mil millones | No disponible | Propietaria privada | Hugging Face |
 
 La comparativa se limita a los modelos mencionados en la información disponible; no se han encontrado datos verificables de otras alternativas comparables en la misma categoría (modelos pequeños especializados en derecho turco).
 
@@ -91,7 +91,7 @@ La comparativa se limita a los modelos mencionados en la información disponible
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/webbrain-one/ling3-tr-tiny-pruned-hukuk-v2-MLX-4bit
+- Modelo en Hugging Face: https://huggingface.co/webbrain-one/ling3-tr-tiny-pruned-hukuk-v2-MLX-4bit
 - Modelo base: https://huggingface.co/webbrain-one/ling3-turkish-tiny-pruned
 - Versión GGUF con los mismos pesos: https://huggingface.co/webbrain-one/ling3-tr-tiny-pruned-hukuk-v2-GGUF
 - Conjunto de datos de ajuste: https://huggingface.co/webbrain-one/hukuk-dataset-v2

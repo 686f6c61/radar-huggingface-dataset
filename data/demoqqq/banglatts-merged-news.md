@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La ú
 
 | Modelo | Arquitectura | Idiomas | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BanglaTTS Merged News Voice (demoqqq) | VITS | bengalí | ONNX, PyTorch | no disponible | HuggingFace, 0 descargas |
+| BanglaTTS Merged News Voice (demoqqq) | VITS | bengalí | ONNX, PyTorch | no disponible | Hugging Face, 0 descargas |
 | EMTIAZZ Bangladeshi Bangla VITS (base) | VITS | bengalí | no disponible en esta ficha | no disponible | modelo base referenciado por el autor |
 | Alternativas TTS multilingües de gran escala | no disponible | múltiples | no disponible | no disponible | no disponible |
 
@@ -88,7 +88,7 @@ No se dispone de datos suficientes para comparar parámetros, contexto, rendimie
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/demoqqq/banglatts-merged-news
+- Modelo en Hugging Face: https://huggingface.co/demoqqq/banglatts-merged-news
 - Modelo base referenciado (EMTIAZZ Bangladeshi Bangla VITS): no disponible como enlace directo en la información proporcionada
 - Paper de VITS: no disponible en la información proporcionada
 - Repositorio de sherpa-onnx: no disponible en la información proporcionada

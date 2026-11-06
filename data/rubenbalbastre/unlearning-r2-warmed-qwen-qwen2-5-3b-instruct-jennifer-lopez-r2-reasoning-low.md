@@ -4,7 +4,7 @@
 
 Este repositorio contiene un adaptador LoRA (librería PEFT) entrenado sobre el modelo Qwen2.5-3B-Instruct dentro de un flujo de trabajo de *machine unlearning* (desaprendizaje de modelos de lenguaje). El identificador del modelo, junto con las etiquetas del repositorio, indica que se ha utilizado GRPO (Group Relative Policy Optimization) a través de TRL, que existe una fase previa de calentamiento (*warmed*) y que el objetivo del ajuste es una entidad concreta, en este caso la cantante Jennifer Lopez. La ruta local filtrada en las etiquetas (`machine-unlearning-llm/outputs/model/...`) confirma que se trata de un experimento académico de olvido selectivo, no de un modelo comercial.
 
-El adaptador ocupa 0,5 GB y se distribuye en formato safetensors con metadatos de PEFT 0.19.1. La model card publicada es la plantilla por defecto de HuggingFace sin rellenar: todos los campos relevantes (desarrollador, datos de entrenamiento, hiperparámetros, evaluación, licencia, idiomas) aparecen como `[More Information Needed]`. El repositorio registra cero descargas y cero valoraciones en el momento de redactar esta ficha.
+El adaptador ocupa 0,5 GB y se distribuye en formato safetensors con metadatos de PEFT 0.19.1. La model card publicada es la plantilla por defecto de Hugging Face sin rellenar: todos los campos relevantes (desarrollador, datos de entrenamiento, hiperparámetros, evaluación, licencia, idiomas) aparecen como `[More Information Needed]`. El repositorio registra cero descargas y cero valoraciones en el momento de redactar esta ficha.
 
 El modelo base, Qwen2.5-3B-Instruct, es un transformer decoder-only de 3.090 millones de parámetros con 32.768 tokens de contexto, desarrollado por Alibaba Qwen. Por tanto, la relevancia de este artefacto es exclusivamente investigadora: sirve como ejemplo reproducible de cómo aplicar RL (GRPO) para intentar eliminar una asociación concreta de un modelo pequeño, y como material de estudio para evaluar la eficacia real del desaprendizaje. No hay ningún dato publicado que permita afirmar que el olvido sea efectivo ni que las capacidades originales se conserven.
 
@@ -68,7 +68,7 @@ La comparacion se establece a nivel de modelo base, porque no existen metricas p
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Metricas de olvido |
 |---|---|---|---|---|---|
-| Este adaptador (sobre Qwen2.5-3B-Instruct) | ~3,09 B (base) + LoRA sin cuantificar | 32.768 tokens | No disponible | HuggingFace, 0 descargas, 0 valoraciones | No disponible |
+| Este adaptador (sobre Qwen2.5-3B-Instruct) | ~3,09 B (base) + LoRA sin cuantificar | 32.768 tokens | No disponible | Hugging Face, 0 descargas, 0 valoraciones | No disponible |
 | Qwen2.5-3B-Instruct | 3,09 B | 32.768 tokens (131.072 con YaRN) | Licencia propia de Qwen; consultar la ficha del modelo base | Ampliamente utilizado | No aplica |
 | Llama-3.2-3B-Instruct | 3,21 B | 131.072 tokens | Llama 3.2 Community License | Ampliamente utilizado | No aplica |
 | Phi-3.5-mini-instruct | 3,8 B | 131.072 tokens | MIT | Ampliamente utilizado | No aplica |
@@ -90,7 +90,7 @@ Frente a estos modelos, este adaptador no aporta ventajas de rendimiento general
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rubenbalbastre/unlearning-r2-warmed-qwen-qwen2-5-3b-instruct-jennifer-lopez-r2-reasoning-low
+- Repositorio en Hugging Face: https://huggingface.co/rubenbalbastre/unlearning-r2-warmed-qwen-qwen2-5-3b-instruct-jennifer-lopez-r2-reasoning-low
 - Paper referenciado en las etiquetas del repositorio: https://arxiv.org/abs/2608.17804
 - Modelo base Qwen2.5-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Libreria PEFT: https://github.com/huggingface/peft

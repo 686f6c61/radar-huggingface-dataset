@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Ankit-baner/classification-slim` es un repositorio de investigación publicado en HuggingFace que contiene un prototipo de clasificación basado en DeiT (Data-efficient Image Transformer). Lo desarrolla el usuario Ankit-baner y no está asociado a ninguna organización ni publicación conocida. El repositorio no presenta un modelo entrenado: el archivo `model.safetensors` se describe explícitamente como un checkpoint de inicialización válido únicamente para pruebas de humo (*smoke tests*), no como un modelo con pesos ajustados.
+`Ankit-baner/classification-slim` es un repositorio de investigación publicado en Hugging Face que contiene un prototipo de clasificación basado en DeiT (Data-efficient Image Transformer). Lo desarrolla el usuario Ankit-baner y no está asociado a ninguna organización ni publicación conocida. El repositorio no presenta un modelo entrenado: el archivo `model.safetensors` se describe explícitamente como un checkpoint de inicialización válido únicamente para pruebas de humo (*smoke tests*), no como un modelo con pesos ajustados.
 
 El problema que aborda no es el de ofrecer un clasificador utilizable, sino el de documentar una implementación propia de DeiT con su configuración de arquitectura, su receta de entrenamiento por defecto y un punto de entrada ejecutable (`pipeline.py`). Es relevante únicamente como andamiaje reproducible para experimentos de clasificación de imágenes: permite arrancar un *baseline* con una arquitectura declarada y un recetario fijado, sin prometer resultados.
 
@@ -27,7 +27,7 @@ Hay una inconsistencia importante que condiciona cualquier uso: la model card de
 | Optimizador por defecto | novograd |
 | Scheduler por defecto | polynomial |
 | Descargas / likes | 0 / 0 |
-| Creado / actualizado | 2026-10-18 (fecha declarada en HuggingFace) |
+| Creado / actualizado | 2026-10-18 (fecha declarada en Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -66,7 +66,7 @@ La model card declara explícitamente que no se reclama ninguna puntuación de b
 - VRAM estimada para inferencia: prácticamente nula. Con 16.576 parámetros en fp32 el tensor de pesos ocupa del orden de 66 KB, muy por debajo de 1 MB.
 - GPU recomendadas: ninguna. Cabe en CPU sin optimización alguna; cualquier GPU consumer (GTX 1050 en adelante) es sobredimensionada para este artefacto.
 - Cabe en cualquier GPU consumer: sí, en todas, incluidas las integradas.
-- Memoria del sistema: el repositorio ocupa 0,0 GB según HuggingFace, por lo que no hay requisito apreciable de disco ni de RAM.
+- Memoria del sistema: el repositorio ocupa 0,0 GB según Hugging Face, por lo que no hay requisito apreciable de disco ni de RAM.
 - Opciones de despliegue: ejecución directa con PyTorch a través de `pipeline.py`. No se proporcionan artefactos para vLLM, TGI, llama.cpp ni Ollama, y estos motores están orientados a modelos de lenguaje, no a un ViT de clasificación. Tampoco se incluyen exportaciones a ONNX, TorchScript ni TensorRT.
 - Latencia y throughput: no disponible. No tiene sentido medirlos mientras el checkpoint no esté entrenado, ya que el cuello de botella sería la carga del script, no el cálculo.
 - Si en el futuro se materializase un DeiT en escala "xlarge" real, los requisitos serían los de un transformer de visión de cientos de millones de parámetros: varias GB de VRAM para *fine-tuning* con batches moderados y una GPU de 24 GB o superior para entrenamiento cómodo. Esta estimación es orientativa y no procede de la información del repositorio.
@@ -75,7 +75,7 @@ La model card declara explícitamente que no se reclama ninguna puntuación de b
 
 | Modelo | Parámetros | Tarea | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ankit-baner/classification-slim | 16.576 (declarado) | Clasificación de imágenes (sin entrenar) | no disponible | BSD-3-Clause | HuggingFace, 0 descargas |
+| Ankit-baner/classification-slim | 16.576 (declarado) | Clasificación de imágenes (sin entrenar) | no disponible | BSD-3-Clause | Hugging Face, 0 descargas |
 | DeiT-Ti (facebookresearch/deit) | ~5 M (referencia) | Clasificación de imágenes (entrenado en ImageNet) | 224x224 (referencia) | Apache-2.0 (referencia) | Público, ampliamente usado |
 | DeiT-S (facebookresearch/deit) | ~22 M (referencia) | Clasificación de imágenes | 224x224 (referencia) | Apache-2.0 (referencia) | Público |
 | DeiT-B (facebookresearch/deit) | ~86 M (referencia) | Clasificación de imágenes | 224x224 (referencia) | Apache-2.0 (referencia) | Público |
@@ -99,6 +99,6 @@ Nota: las cifras marcadas como referencia son valores públicos aproximados de c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ankit-baner/classification-slim
+- Modelo en Hugging Face: https://huggingface.co/Ankit-baner/classification-slim
 - No se han encontrado en la búsqueda web papers, blogs, repositorios de código, demos ni espacios asociados a este modelo.
 - Referencia de la arquitectura base (no enlazada desde el repositorio): el paper original de DeiT, "Training data-efficient image transformers & distillation through attention" (Touvron et al.), y el repositorio facebookresearch/deit.

@@ -92,11 +92,11 @@ No se dispone de datos de benchmarks de modelos comparables en la informacion pr
 - Sesgos conocidos: no documentados en la informacion disponible.
 - Restricciones de licencia: Apache 2.0 permite uso comercial, pero se recomienda revisar las condiciones del modelo base XHToken/Spark-X2.6-4B-Base, cuya licencia no se detalla en la informacion.
 - Caveat de produccion: el modelo requiere Blender 5.x para ejecutar las salidas; la validacion en headless es recomendable antes de integrar en pipelines automaticos.
-- Fecha de creacion futura (2026-10-27) en los metadatos de HuggingFace, lo que puede indicar datos inconsistentes en la ficha del repositorio.
+- Fecha de creacion futura (2026-10-27) en los metadatos de Hugging Face, lo que puede indicar datos inconsistentes en la ficha del repositorio.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hotocooo/Spark-X2.6-4B-Blender
+- Hugging Face: https://huggingface.co/hotocooo/Spark-X2.6-4B-Blender
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.6-4B-Base
 - Dataset BlendNet: https://huggingface.co/datasets/FreedomIntelligence/BlendNet
 - Dataset 3DCode: https://huggingface.co/datasets/YipengGao/3DCode

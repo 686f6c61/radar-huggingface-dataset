@@ -79,8 +79,8 @@ No se dispone de información comparativa con otros modelos de OCR en la informa
 
 ## Enlaces
 
-- [HuggingFace - mlboydaisuke/docTR-CRNN-MobileNetV3-Small-ExecuTorch](https://huggingface.co/mlboydaisuke/docTR-CRNN-MobileNetV3-Small-ExecuTorch)
-- [HuggingFace - detector complementario](https://huggingface.co/mlboydaisuke/docTR-DB-MobileNetV3-Large-ExecuTorch)
+- [Hugging Face - mlboydaisuke/docTR-CRNN-MobileNetV3-Small-ExecuTorch](https://huggingface.co/mlboydaisuke/docTR-CRNN-MobileNetV3-Small-ExecuTorch)
+- [Hugging Face - detector complementario](https://huggingface.co/mlboydaisuke/docTR-DB-MobileNetV3-Large-ExecuTorch)
 - [Repositorio de conversión (executorch-models)](https://github.com/john-rocky/executorch-models)
 - [Repositorio original de docTR (mindee/doctr)](https://github.com/mindee/doctr)
 - [Paper de MobileNetV3 (Towards Data Science)](https://towardsdatascience.com/mobilenetv3-paper-walkthrough-the-tiny-giant-getting-even-smarter/)

@@ -93,7 +93,7 @@ La comparacion directa mas informativa es contra el propio drafter de RedHatAI s
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/inference-optimization/Qwen3.8-27B-DSpark-GPTQ-IMatrix-PerfectBlend-NVFP4-W4A4
+- Repositorio Hugging Face: https://huggingface.co/inference-optimization/Qwen3.8-27B-DSpark-GPTQ-IMatrix-PerfectBlend-NVFP4-W4A4
 - Drafter base (RedHatAI): https://huggingface.co/RedHatAI/Qwen3.8-27B-speculator.dspark
 - Modelo objetivo (Qwen): https://huggingface.co/Qwen/Qwen3.8-27B
 - Dataset de calibracion derivado: https://huggingface.co/shanjiaz/OpenPerfectBlend-Qwen38-27B-regenerated

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SmolVLA es un modelo compacto de vision-lenguaje-accion (VLA) orientado a robotica, segun la model card oficial y el articulo referenciado con arXiv 2506.01844. La ficha que nos ocupa, `taku-y/my_smolvla`, es un ajuste fino (fine-tuning) del modelo base `lerobot/smolvla_base`, publicado por el usuario taku-y y entrenado con la libreria LeRobot de HuggingFace. El modelo base SmolVLA se describe como un VLA eficiente que logra rendimiento competitivo con un coste computacional reducido y que puede desplegarse en hardware de consumo.
+SmolVLA es un modelo compacto de vision-lenguaje-accion (VLA) orientado a robotica, segun la model card oficial y el articulo referenciado con arXiv 2506.01844. La ficha que nos ocupa, `taku-y/my_smolvla`, es un ajuste fino (fine-tuning) del modelo base `lerobot/smolvla_base`, publicado por el usuario taku-y y entrenado con la libreria LeRobot de Hugging Face. El modelo base SmolVLA se describe como un VLA eficiente que logra rendimiento competitivo con un coste computacional reducido y que puede desplegarse en hardware de consumo.
 
 El problema que aborda es el control de robots mediante aprendizaje por imitacion: el modelo consume el estado del robot y hasta tres flujos de imagen de camaras, y produce directamente un vector de accion de 6 dimensiones para el robot. En este caso concreto, el ajuste esta orientado al robot `so101_follower` y se ha entrenado sobre un unico episodio y 1717 fotogramas del dataset `taku-y/record-test`, por lo que se trata de una publicacion de caracter experimental y de prueba, no de un modelo listo para produccion.
 
@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| taku-y/my_smolvla | 450.046.176 | no disponible | sin resultados publicados | Apache 2.0 | HuggingFace (0 descargas, 0 likes) |
-| lerobot/smolvla_base | no disponible | no disponible | no disponible | Apache 2.0 (segun el base) | HuggingFace |
+| taku-y/my_smolvla | 450.046.176 | no disponible | sin resultados publicados | Apache 2.0 | Hugging Face (0 descargas, 0 likes) |
+| lerobot/smolvla_base | no disponible | no disponible | no disponible | Apache 2.0 (segun el base) | Hugging Face |
 | Otros VLA comparables (por ejemplo OpenVLA, pi0) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos numericos de otros modelos VLA en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa rigurosa. La comparacion mas directa es con el modelo base `lerobot/smolvla_base`, del que este ajuste deriva.
@@ -87,7 +87,7 @@ No se dispone de datos numericos de otros modelos VLA en la informacion proporci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/taku-y/my_smolvla
+- Modelo en Hugging Face: https://huggingface.co/taku-y/my_smolvla
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/taku-y/record-test
 - Articulo SmolVLA (arXiv 2506.01844): https://huggingface.co/papers/2506.01844

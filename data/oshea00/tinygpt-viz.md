@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Licencia | Propósito | Disponibilidad |
 |---|---|---|---|---|---|
-| TinyGPT Visualizer (bpe-small) | 5,8 M | 100 tokens | MIT | Educativo / interpretabilidad | HuggingFace (oshea00/tinygpt-viz) |
+| TinyGPT Visualizer (bpe-small) | 5,8 M | 100 tokens | MIT | Educativo / interpretabilidad | Hugging Face (oshea00/tinygpt-viz) |
 | Modelos TinyStories de referencia (Eldan y Li) | Órdenes de 1 M a 33 M según variante | No disponible en la información proporcionada | No disponible | Estudio de coherencia en modelos pequeños | Publicados junto al paper |
-| GPT-2 small | 124 M | 1.024 tokens | MIT | Generación de texto generalista | HuggingFace (openai-community/gpt2) |
+| GPT-2 small | 124 M | 1.024 tokens | MIT | Generación de texto generalista | Hugging Face (openai-community/gpt2) |
 
 La comparación con GPT-2 small es solo orientativa por categoría arquitectónica: TinyGPT Visualizer es aproximadamente 21 veces más pequeño, con un contexto 10 veces menor y un vocabulario mucho más reducido, y no está entrenado para uso generalista. No se dispone de datos de rendimiento comparables entre estas alternativas en la información proporcionada.
 
@@ -80,12 +80,12 @@ La comparación con GPT-2 small es solo orientativa por categoría arquitectóni
 - Riesgo alto de incoherencia y de alucinación fuera de su distribución de entrenamiento.
 - No se han documentado análisis de sesgos; al derivar de un corpus sintético, los sesgos presentes son los del generador de TinyStories y no están caracterizados.
 - La licencia MIT cubre los pesos y la app, pero el texto de validación tokenizado (`data/*/val.bin`) está derivado de TinyStories y permanece bajo CDLA-Sharing-1.0, lo que impone condiciones adicionales si se redistribuye.
-- No hay pipeline declarado en HuggingFace ni guía de inferencia estándar; el uso previsto es a través de la app TinyGPT Visualizer, que descarga los ficheros automáticamente.
+- No hay pipeline declarado en Hugging Face ni guía de inferencia estándar; el uso previsto es a través de la app TinyGPT Visualizer, que descarga los ficheros automáticamente.
 - El repositorio de 1,6 GB incluye checkpoints intermedios y datos de validación; conviene revisar qué artefactos se necesitan antes de descargarlo completo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oshea00/tinygpt-viz
+- Modelo en Hugging Face: https://huggingface.co/oshea00/tinygpt-viz
 - Repositorio de la app TinyGPT Visualizer: https://github.com/oshea00/tinygpt-viz
 - Dataset TinyStories: https://huggingface.co/datasets/roneneldan/TinyStories
 - Paper TinyStories (arXiv:2305.07759): https://arxiv.org/abs/2305.07759

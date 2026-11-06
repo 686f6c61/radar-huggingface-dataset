@@ -99,7 +99,7 @@ No se dispone de datos de rendimiento comparado (benchmarks) entre estos modelos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Bluebarrels/easylm-bonsai-2-4b
+- Modelo en Hugging Face: https://huggingface.co/Bluebarrels/easylm-bonsai-2-4b
 - Modelo base ternario: https://huggingface.co/prism-ml/Ternary-Bonsai-2-4B-gguf
 - Base WebGPU/MLC referenciada: https://huggingface.co/mlc-ai/Qwen3.5-4B-q4f16_1-MLC
 - Dataset de entrenamiento: https://huggingface.co/datasets/Bluebarrels/easylm-training-corpus

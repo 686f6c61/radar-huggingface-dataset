@@ -63,7 +63,7 @@ No disponible. Este repositorio no es un modelo de IA comparable con otros model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/aaravpatel/review-efficient-attention-2024
+- Repositorio en Hugging Face: https://huggingface.co/aaravpatel/review-efficient-attention-2024
 - Paper original de atención eficiente (arXiv): https://arxiv.org/abs/1812.01243
 - Survey sobre mecanismos de atención eficiente para LLMs: https://www.swiftscholar.net/paper/69b3c0a797752100428ca908
 - Documento relacionado en Scribd: https://www.scribd.com/document/895523046/Efficient-Attention-Mechanisms-for-Large-Language-Model-A-Survey

@@ -61,5 +61,5 @@ No disponible. No existen modelos de IA comparables porque este repositorio no c
 - No se especifica licencia, por lo que el uso comercial no esta claramente permitido.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/PoopMan333/Video_Tools
+- Repositorio en Hugging Face: https://huggingface.co/PoopMan333/Video_Tools
 - No se proporcionan otros enlaces (papers, blogs, repos, demos) en la informacion disponible.

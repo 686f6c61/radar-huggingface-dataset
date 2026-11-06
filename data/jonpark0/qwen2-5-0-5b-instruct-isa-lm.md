@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks comparativos entre estas alternativas en la
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jonpark0/Qwen2.5-0.5B-Instruct-isa-lm
+- Repositorio Hugging Face: https://huggingface.co/jonpark0/Qwen2.5-0.5B-Instruct-isa-lm
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Runtime isa-lm: https://github.com/JonPark0/isa-lm
 - Releases de isa-lm: https://github.com/JonPark0/isa-lm/releases

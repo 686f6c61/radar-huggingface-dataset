@@ -108,7 +108,7 @@ La ventaja principal de HaloGuard 2.0-Poly es la combinacion de un tamano muy re
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ash-astro/HaloGuard2.0-Poly-0.8B
+- Modelo en Hugging Face: https://huggingface.co/ash-astro/HaloGuard2.0-Poly-0.8B
 - Version inglesa del guardia de salida: https://huggingface.co/ash-astro/HaloGuard2.0-Stream-0.8B
 - Guardia de entrada (prompts): https://huggingface.co/astroware/HaloGuard1-Gen-0.8B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B

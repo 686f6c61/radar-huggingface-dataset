@@ -41,9 +41,9 @@ Respecto al entrenamiento, no hay datos disponibles sobre el numero de tokens, l
 - Capacidades de codigo, matematicas, vision, audio o tool calling: no disponible en la informacion proporcionada.
 - Soporte de function calling / tool calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible (el campo de idiomas esta vacio en la ficha de HuggingFace).
+- Capacidades multilingues: no disponible (el campo de idiomas esta vacio en la ficha de Hugging Face).
 - Integracion con `llama.cpp`: confirmada mediante CLI y servidor (`llama-cli`, `llama-server`).
-- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que el repositorio puede desplegarse en Inference Endpoints de HuggingFace.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que el repositorio puede desplegarse en Inference Endpoints de Hugging Face.
 
 ## Casos de uso
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - GPU recomendadas: no disponible en la informacion proporcionada. Por tamano de memoria, cabria en GPUs de 16 GB (RTX 4060 Ti 16GB, RTX 5070 Ti, A4000) y en GPUs profesionales de 24 GB o mas (RTX 4090, L4, A10G, A100 40GB, H100).
 - GPU de consumo: si cabe en GPUs de consumo de 12-16 GB con cuantizacion Q2_K y contexto corto; en GPUs de 8 GB no cabria sin offloading parcial a CPU.
 - CPU y memoria unificada: al ser un GGUF, puede ejecutarse total o parcialmente en CPU. En Apple Silicon con 16 GB o mas de memoria unificada es viable; en Mac de 32 GB o mas, con mayor margen de contexto.
-- Opciones de despliegue: llama.cpp (CLI y servidor), y por extension cualquier runtime compatible con GGUF (Ollama, LM Studio, koboldcpp). El repositorio tambien esta etiquetado como `endpoints_compatible`, lo que habilita su uso en HuggingFace Inference Endpoints con el runtime adecuado.
+- Opciones de despliegue: llama.cpp (CLI y servidor), y por extension cualquier runtime compatible con GGUF (Ollama, LM Studio, koboldcpp). El repositorio tambien esta etiquetado como `endpoints_compatible`, lo que habilita su uso en Hugging Face Inference Endpoints con el runtime adecuado.
 - Comandos de referencia incluidos en la model card:
   - `llama-cli --hf-repo holooo/ThinkingCap-Qwen3.8-27B-Q2_K-GGUF --hf-file thinkingcap-qwen3.8-27b-q2_k.gguf -p "The meaning to life and the universe is"`
   - `llama-server --hf-repo holooo/ThinkingCap-Qwen3.8-27B-Q2_K-GGUF --hf-file thinkingcap-qwen3.8-27b-q2_k.gguf -c 2048`
@@ -89,7 +89,7 @@ Diferencias clave a considerar: la licencia de ThinkingCap es mas restrictiva qu
 - Degradacion por cuantizacion: Q2_K es una cuantizacion muy agresiva (del orden de 2-3 bits por peso). Es habitual que produzca perdida de calidad apreciable en tareas de razonamiento, matematicas y codigo, asi como salidas mas repetitivas o incoherentes. No hay mediciones publicadas de esta degradacion para este modelo.
 - Licencia restrictiva: Polyform Small Business 1.0.0 no es una licencia de codigo abierto aprobada por la OSI. Restringe el uso comercial y exige revisar los terminos exactos del fichero LICENSE antes de cualquier despliegue en produccion. Los terminos concretos no se incluyen en la informacion proporcionada.
 - Acceso condicionado: el modelo base esta sujeto a un formulario de solicitud de acceso con campos de nombre, empresa y correo electronico de trabajo, gestionado por BottleCap AI. Esto puede afectar a la trazabilidad y a las condiciones de redistribucion.
-- Idiomas no declarados: el campo de idiomas esta vacio en la ficha de HuggingFace. No se puede asumir un buen rendimiento en castellano sin evaluacion previa.
+- Idiomas no declarados: el campo de idiomas esta vacio en la ficha de Hugging Face. No se puede asumir un buen rendimiento en castellano sin evaluacion previa.
 - Contexto desconocido: no se indica la longitud maxima de contexto del modelo. El valor `-c 2048` del ejemplo es solo una configuracion de arranque del servidor, no una especificacion del modelo. Configurar un contexto mayor incrementara el uso de memoria y puede degradar el rendimiento.
 - Riesgo de alucinacion: inherente a todos los modelos de lenguaje; en cuantizaciones de baja precision el riesgo tiende a aumentar. No hay evaluaciones de fidelidad disponibles.
 - Sesgos: no disponible. No se ha publicado informacion sobre sesgos de genero, raza, idioma o dominio.
@@ -99,7 +99,7 @@ Diferencias clave a considerar: la licencia de ThinkingCap es mas restrictiva qu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/holooo/ThinkingCap-Qwen3.8-27B-Q2_K-GGUF
+- Repositorio Hugging Face: https://huggingface.co/holooo/ThinkingCap-Qwen3.8-27B-Q2_K-GGUF
 - Modelo base: https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-27B
 - Espacio GGUF-my-repo (herramienta de conversion): https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp

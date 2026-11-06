@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kai-EXO es un modelo publicado en HuggingFace por el usuario EXOAI3 bajo licencia Apache 2.0. En el momento de redactar esta ficha, la informacion publica disponible es minima: la model card unicamente contiene el bloque de metadatos de licencia, sin descripcion del modelo, arquitectura, datos de entrenamiento ni capacidades declaradas.
+Kai-EXO es un modelo publicado en Hugging Face por el usuario EXOAI3 bajo licencia Apache 2.0. En el momento de redactar esta ficha, la informacion publica disponible es minima: la model card unicamente contiene el bloque de metadatos de licencia, sin descripcion del modelo, arquitectura, datos de entrenamiento ni capacidades declaradas.
 
 El repositorio ocupa 0,1 GB y no registra descargas ni "likes", y las busquedas web realizadas no han devuelto ningun resultado relacionado con el modelo, su autor ni su tecnologia. No hay paper, blog tecnico, repositorio de codigo ni demo asociados. Esto implica que no es posible verificar la arquitectura, el tamano en parametros, la longitud de contexto, los idiomas soportados ni el rendimiento del modelo con la informacion disponible.
 
@@ -25,7 +25,7 @@ Datos adicionales verificables:
 
 | Parametro | Valor |
 |---|---|
-| Identificador en HuggingFace | EXOAI3/Kai-EXO |
+| Identificador en Hugging Face | EXOAI3/Kai-EXO |
 | Autor | EXOAI3 |
 | Tamano del repositorio | 0,1 GB |
 | Descargas | 0 |
@@ -77,7 +77,7 @@ No disponible. No es posible identificar modelos comparables sin conocer el nume
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| Kai-EXO (EXOAI3) | no disponible | no disponible | apache-2.0 | no disponible | HuggingFace |
+| Kai-EXO (EXOAI3) | no disponible | no disponible | apache-2.0 | no disponible | Hugging Face |
 | Alternativas de referencia | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -93,7 +93,7 @@ No disponible. No es posible identificar modelos comparables sin conocer el nume
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EXOAI3/Kai-EXO
+- Modelo en Hugging Face: https://huggingface.co/EXOAI3/Kai-EXO
 - Paper: no disponible
 - Blog o informe tecnico: no disponible
 - Repositorio de codigo: no disponible

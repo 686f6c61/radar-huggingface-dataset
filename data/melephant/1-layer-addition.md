@@ -82,11 +82,11 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 - La licencia no está especificada, lo que genera incertidumbre sobre el uso comercial y la redistribución. Se recomienda contactar al autor antes de cualquier uso fuera del ámbito académico.
 - El repositorio contiene código personalizado de Transformers, lo que implica un riesgo de seguridad al cargar el modelo con `trust_remote_code=True`. Se recomienda fijar la revisión (commit) y auditar el código antes de ejecutarlo.
 - No se proporcionan datos sobre sesgos, ya que la tarea es puramente aritmética y no involucra lenguaje natural; sin embargo, la falta de generalización a otros formatos numéricos es una limitación inherente.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que sugiere que es un proyecto reciente o poco difundido; la documentación puede ser incompleta.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que sugiere que es un proyecto reciente o poco difundido; la documentación puede ser incompleta.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/melephant/1-layer-addition
+- Repositorio en Hugging Face: https://huggingface.co/melephant/1-layer-addition
 - Artículo asociado (arXiv): https://arxiv.org/abs/2405.14813
 - Carpeta de entrenamiento y configuración: dentro del repositorio, en `training/`
 - Manifiesto de exportación: `export_manifest.json` en el repositorio

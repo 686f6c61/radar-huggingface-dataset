@@ -57,5 +57,5 @@ No disponible. No se conocen modelos comparables de la misma familia ni se dispo
 
 ## Enlaces
 
-- [HuggingFace - csrstka/Muse-Glimmer-30B-oQ6e-fp16](https://huggingface.co/csrstka/Muse-Glimmer-30B-oQ6e-fp16)
+- [Hugging Face - csrstka/Muse-Glimmer-30B-oQ6e-fp16](https://huggingface.co/csrstka/Muse-Glimmer-30B-oQ6e-fp16)
 - [Repositorio oQ (oMLX)](https://github.com/jundot/omlx)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mergekit-123 es un modelo de lenguaje de 7.612.756.480 parametros (7,61 B) publicado por el usuario MergekitCloud en HuggingFace. No se trata de un entrenamiento desde cero, sino de una fusion ("merge") de tres modelos de la familia Qwen2.5 realizada con la herramienta mergekit: Qwen2.5-7B-Instruct-1M (usado como base), Qwen2.5-Coder-7B-Instruct y Qwen2.5-Math-7B-Instruct. El objetivo declarado es combinar en un unico checkpoint las capacidades conversacionales de contexto largo del modelo base con las habilidades de generacion de codigo y de razonamiento matematico de los otros dos.
+mergekit-123 es un modelo de lenguaje de 7.612.756.480 parametros (7,61 B) publicado por el usuario MergekitCloud en Hugging Face. No se trata de un entrenamiento desde cero, sino de una fusion ("merge") de tres modelos de la familia Qwen2.5 realizada con la herramienta mergekit: Qwen2.5-7B-Instruct-1M (usado como base), Qwen2.5-Coder-7B-Instruct y Qwen2.5-Math-7B-Instruct. El objetivo declarado es combinar en un unico checkpoint las capacidades conversacionales de contexto largo del modelo base con las habilidades de generacion de codigo y de razonamiento matematico de los otros dos.
 
 Tecnicamente es un transformer decoder-only con arquitectura Qwen2, cuantizado en bfloat16 y distribuido en formato safetensors (15,2 GB de repositorio). La fusion se ha realizado con el metodo TIES (arXiv:2306.01708), que resuelve conflictos de parametros mediante poda por magnitud, resolucion de signos y mezcla ponderada; en este caso ambos modelos secundarios entran con peso 0.50 y densidad 0.55, con la base como referencia y normalizacion activada.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MergekitCloud/mergekit-123 | 7,61 B | No confirmado (base hasta 1 M) | Fusion TIES de conversacional + codigo + matematicas | No disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen2.5-7B-Instruct-1M | 7,61 B | 1.010.000 tokens (YaRN) | Conversacional generalista con contexto ultralargo | Apache-2.0 | HuggingFace, ampliamente usado |
-| Qwen/Qwen2.5-Coder-7B-Instruct | 7,61 B | 32.768 tokens nativos, extensible a 131.072 | Codigo y razonamiento sobre repositorios | Apache-2.0 | HuggingFace, muy usado |
-| Qwen/Qwen2.5-Math-7B-Instruct | 7,61 B | 4.096 tokens nativos | Matematicas y chain-of-thought | Apache-2.0 | HuggingFace, especializado |
+| MergekitCloud/mergekit-123 | 7,61 B | No confirmado (base hasta 1 M) | Fusion TIES de conversacional + codigo + matematicas | No disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen2.5-7B-Instruct-1M | 7,61 B | 1.010.000 tokens (YaRN) | Conversacional generalista con contexto ultralargo | Apache-2.0 | Hugging Face, ampliamente usado |
+| Qwen/Qwen2.5-Coder-7B-Instruct | 7,61 B | 32.768 tokens nativos, extensible a 131.072 | Codigo y razonamiento sobre repositorios | Apache-2.0 | Hugging Face, muy usado |
+| Qwen/Qwen2.5-Math-7B-Instruct | 7,61 B | 4.096 tokens nativos | Matematicas y chain-of-thought | Apache-2.0 | Hugging Face, especializado |
 
 No se dispone de comparativas de rendimiento medidas entre este merge y los modelos anteriores, por lo que la tabla se limita a parametros, contexto declarado y licencia.
 
@@ -87,7 +87,7 @@ No se dispone de comparativas de rendimiento medidas entre este merge y los mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MergekitCloud/mergekit-123
+- Modelo en Hugging Face: https://huggingface.co/MergekitCloud/mergekit-123
 - Repositorio de mergekit: https://github.com/cg123/mergekit
 - Paper del metodo TIES: https://arxiv.org/abs/2306.01708
 - Qwen2.5-7B-Instruct-1M (modelo base): https://huggingface.co/Qwen/Qwen2.5-7B-Instruct-1M

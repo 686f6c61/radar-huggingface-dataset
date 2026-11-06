@@ -77,6 +77,6 @@ Los datos de los modelos OpenAI se incluyen únicamente como referencia externa 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/taylordavismis/clip-checkpoint
+- Hugging Face: https://huggingface.co/taylordavismis/clip-checkpoint
 - Archivos incluidos en el repositorio: train.py, README.md, config.json, training_args.json, model.safetensors
 - Papers, blogs, repositorios o demos adicionales: no disponibles en la información proporcionada.

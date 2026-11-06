@@ -4,7 +4,7 @@
 
 X-YEMEN-V8 es un ajuste fino publicado por el usuario amarsadan sobre el modelo base unsloth/Qwen3-8B-unsloth-bnb-4bit. El repositorio se declara con la librería PEFT y la etiqueta `lora`, lo que indica que el entrenamiento se realizó mediante adaptadores de bajo rango sobre un modelo Qwen3 de 8B cuantizado a 4 bits (bnb-4bit) con Unsloth. El recuento real de safetensors del repositorio es de 8.190.735.360 parámetros, un valor idéntico al tamaño del modelo base completo, lo que sugiere que el repositorio contiene pesos consolidados y no únicamente el adaptador aislado.
 
-La model card publicada es una plantilla de HuggingFace sin rellenar: todos los apartados (descripción, datos de entrenamiento, evaluación, licencia, idiomas, hiperparámetros) figuran como "[More Information Needed]". No hay, por tanto, información verificable sobre el dataset de ajuste, el procedimiento de entrenamiento, las capacidades reales ni los resultados obtenidos. La búsqueda web asociada no devolvió ninguna fuente relevante sobre este modelo.
+La model card publicada es una plantilla de Hugging Face sin rellenar: todos los apartados (descripción, datos de entrenamiento, evaluación, licencia, idiomas, hiperparámetros) figuran como "[More Information Needed]". No hay, por tanto, información verificable sobre el dataset de ajuste, el procedimiento de entrenamiento, las capacidades reales ni los resultados obtenidos. La búsqueda web asociada no devolvió ninguna fuente relevante sobre este modelo.
 
 Por su relevancia práctica, se trata de un artefacto de ajuste comunitario con cero descargas y cero "likes" en el momento de la consulta, con fechas de creación y actualización del 20 de septiembre de 2026 según los metadatos del repositorio. Cualquier evaluación de idoneidad para producción debería partir de una validación empírica propia, dado que no existe documentación del autor ni benchmarks publicados.
 
@@ -88,7 +88,7 @@ No es posible realizar una comparativa rigurosa con alternativas porque no exist
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amarsadan/X-YEMEN-V8
+- Modelo en Hugging Face: https://huggingface.co/amarsadan/X-YEMEN-V8
 - Modelo base referenciado: https://huggingface.co/unsloth/Qwen3-8B-unsloth-bnb-4bit
 - Librería PEFT: https://github.com/huggingface/peft
 - Unsloth: https://github.com/unslothai/unsloth

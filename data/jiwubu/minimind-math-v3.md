@@ -133,8 +133,8 @@ Nota: los datos de MiniMind-3 proceden de los resultados de busqueda sobre el re
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jiwubu/minimind-math-v3
-- Perfil del autor en HuggingFace: https://huggingface.co/jiwubu
+- Modelo en Hugging Face: https://huggingface.co/jiwubu/minimind-math-v3
+- Perfil del autor en Hugging Face: https://huggingface.co/jiwubu
 - Repositorio de codigo del autor (pretraining y SFT, directorio `math/`): https://github.com/jiwubu/minimind
 - Repositorio upstream de MiniMind: https://github.com/jingyaogong/minimind
 - Pagina del proyecto MiniMind: https://jingyaogong.github.io/minimind/

@@ -111,7 +111,7 @@ La busqueda web realizada no devolvio ningun resultado relevante sobre este mode
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/pottokao/Qwen-Image-2.1-PE-I2I-Heretic-GGUF
+- Repositorio Hugging Face: https://huggingface.co/pottokao/Qwen-Image-2.1-PE-I2I-Heretic-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I
 - Heretic (ablacion direccional): https://github.com/p-e-w/heretic
 - Resultados de la busqueda web: no se encontro ningun enlace relevante; los resultados devueltos correspondian a recambios de automocion y no guardan relacion con el modelo.

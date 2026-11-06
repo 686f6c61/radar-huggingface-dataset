@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `MTEnt/dot` es un repositorio publicado en HuggingFace por el usuario MTEnt bajo licencia MIT. La ficha del modelo (model card) únicamente contiene la declaración de licencia, sin ninguna otra información técnica, funcional o de uso. No se especifican la arquitectura, el número de parámetros, la longitud de contexto, los datos de entrenamiento ni las capacidades del modelo. Tampoco se indica el pipeline (texto, imagen, audio, etc.) ni los idiomas soportados.
+El modelo `MTEnt/dot` es un repositorio publicado en Hugging Face por el usuario MTEnt bajo licencia MIT. La ficha del modelo (model card) únicamente contiene la declaración de licencia, sin ninguna otra información técnica, funcional o de uso. No se especifican la arquitectura, el número de parámetros, la longitud de contexto, los datos de entrenamiento ni las capacidades del modelo. Tampoco se indica el pipeline (texto, imagen, audio, etc.) ni los idiomas soportados.
 
 Dado que la información disponible es prácticamente nula, esta ficha no puede ofrecer una evaluación técnica rigurosa. Cualquier dato que se incluya más allá de lo citado sería especulación. Se recomienda contactar con el autor o consultar actualizaciones del repositorio antes de considerar su uso en cualquier proyecto.
 
@@ -52,4 +52,4 @@ No disponible. Al no existir especificaciones técnicas, no se puede establecer 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/MTEnt/dot
+- Repositorio en Hugging Face: https://huggingface.co/MTEnt/dot

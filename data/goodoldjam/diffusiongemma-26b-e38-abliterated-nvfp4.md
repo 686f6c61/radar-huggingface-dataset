@@ -94,5 +94,5 @@ No se dispone de informacion suficiente para establecer una comparativa con mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Goodoldjam/DiffusionGemma-26B-E38-Abliterated-NVFP4
+- Hugging Face: https://huggingface.co/Goodoldjam/DiffusionGemma-26B-E38-Abliterated-NVFP4
 - Modelo base (BF16 abliterado): https://huggingface.co/Goodoldjam/DiffusionGemma-26B-E38-Abliterated-BF16

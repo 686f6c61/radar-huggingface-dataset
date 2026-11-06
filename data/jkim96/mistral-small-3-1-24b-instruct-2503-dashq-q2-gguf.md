@@ -115,7 +115,7 @@ Frente al propio modelo base en precision completa (Mistral-Small-3.1-24B-Instru
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jkim96/Mistral-Small-3.1-24B-Instruct-2503-DASHQ-Q2-GGUF
+- Repositorio Hugging Face: https://huggingface.co/jkim96/Mistral-Small-3.1-24B-Instruct-2503-DASHQ-Q2-GGUF
 - Modelo base: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503
 - Repositorio DASH-Q: https://github.com/JaeminK/dashq
 - Banner DASH-Q: https://raw.githubusercontent.com/JaeminK/dashq/main/assets/dashq_banner.png

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Reinforce-pixelcopter-1 es un agente de aprendizaje por refuerzo entrenado con el algoritmo REINFORCE para resolver el entorno Pixelcopter-PLE-v0, incluido en la familia de juegos Pygame Learning Environment (PLE). Lo publica el usuario zhange2508 en HuggingFace y su objetivo declarado es servir como ejemplo formativo dentro de la unidad 4 del Deep Reinforcement Learning Course, cuyo material guía la implementación del algoritmo.
+Reinforce-pixelcopter-1 es un agente de aprendizaje por refuerzo entrenado con el algoritmo REINFORCE para resolver el entorno Pixelcopter-PLE-v0, incluido en la familia de juegos Pygame Learning Environment (PLE). Lo publica el usuario zhange2508 en Hugging Face y su objetivo declarado es servir como ejemplo formativo dentro de la unidad 4 del Deep Reinforcement Learning Course, cuyo material guía la implementación del algoritmo.
 
 No se trata de un modelo de lenguaje: no procesa texto ni genera respuestas, sino que aprende una política que mapea observaciones del entorno (fotogramas del juego) a acciones discretas de control del helicóptero. Por tanto, los parámetros habituales en las fichas de modelos generativos —ventana de contexto, cuantizaciones, idiomas— no aplican o no están documentados en la model card.
 
@@ -87,6 +87,6 @@ No se dispone de cifras publicadas de alternativas sobre Pixelcopter-PLE-v0 en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zhange2508/Reinforce-pixelcopter-1
+- Modelo en Hugging Face: https://huggingface.co/zhange2508/Reinforce-pixelcopter-1
 - Deep Reinforcement Learning Course, unidad 4 (introduccion a REINFORCE): https://huggingface.co/deep-rl-course/unit4/introduction
 - Paper, blog o repositorio adicionales: no disponible en la informacion proporcionada.

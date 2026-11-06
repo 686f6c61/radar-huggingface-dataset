@@ -92,7 +92,7 @@ La diferencia entre las tres primeras filas es exclusivamente de empaquetado y d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/skmaiti2050/rev-animated-v1-2-2-gguf
+- Repositorio en Hugging Face: https://huggingface.co/skmaiti2050/rev-animated-v1-2-2-gguf
 - Modelo original de s6yx: https://huggingface.co/s6yx/ReV_Animated
 - Copia del checkpoint original: https://huggingface.co/danbrown/RevAnimated-v1-2-2
 - stable-diffusion.cpp: https://github.com/leejet/stable-diffusion.cpp

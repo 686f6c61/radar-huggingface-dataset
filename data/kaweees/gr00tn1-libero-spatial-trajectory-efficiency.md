@@ -81,8 +81,8 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de otros benchmarks 
 
 | Modelo | Parametros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `kaweees/gr00tn1-libero-spatial-trajectory-efficiency` (este) | ~2B (heredado del base) | No disponible | 0/20 a 11/20 en la tarea 0 de LIBERO Spatial segun subconjunto | No disponible | Publico en HuggingFace, 0 descargas, 0 likes |
-| `nvidia/GR00T-N1-2B` (modelo base) | ~2B | No disponible | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada; consultar la ficha del base | Publico en HuggingFace |
+| `kaweees/gr00tn1-libero-spatial-trajectory-efficiency` (este) | ~2B (heredado del base) | No disponible | 0/20 a 11/20 en la tarea 0 de LIBERO Spatial segun subconjunto | No disponible | Publico en Hugging Face, 0 descargas, 0 likes |
+| `nvidia/GR00T-N1-2B` (modelo base) | ~2B | No disponible | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada; consultar la ficha del base | Publico en Hugging Face |
 | Otros VLA abiertos de escala similar (por ejemplo, familias tipo OpenVLA o pi0) | No disponible | No disponible | No disponible | No disponible | No verificados en la informacion proporcionada |
 
 No se dispone de datos verificados en la información proporcionada para comparar con alternativas de la misma categoría. La comparación rigurosa exigiría ejecutar el modelo base sin fine-tuning y otros VLA bajo exactamente el mismo protocolo (20 rollouts sobre la tarea 0 de LIBERO Spatial), algo que la ficha no ofrece.
@@ -102,7 +102,7 @@ No se dispone de datos verificados en la información proporcionada para compara
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/kaweees/gr00tn1-libero-spatial-trajectory-efficiency
+- Ficha del modelo en Hugging Face: https://huggingface.co/kaweees/gr00tn1-libero-spatial-trajectory-efficiency
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1-2B
 - Ejecución de 5 trayectorias: https://huggingface.co/kaweees/gr00tn1-libero-spatial-trajectory-efficiency/tree/main/n1/trajectories-005
 - Mejor epoch de 5 trayectorias (epoch 1): https://huggingface.co/kaweees/gr00tn1-libero-spatial-trajectory-efficiency/tree/main/n1/trajectories-005/epoch-001

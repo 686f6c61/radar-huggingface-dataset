@@ -57,5 +57,5 @@ No se dispone de datos de benchmarks ni de documentación técnica que permitan 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gradients-io-tournaments/augmented-7fdeff2ba54331c8
+- Hugging Face: https://huggingface.co/gradients-io-tournaments/augmented-7fdeff2ba54331c8
 - No se han encontrado enlaces adicionales relevantes (paper, blog, demo).

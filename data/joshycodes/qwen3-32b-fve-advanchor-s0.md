@@ -99,12 +99,12 @@ La comparativa relevante es contra el modelo base Qwen3-32B: misma arquitectura 
 - Restricciones de licencia: licencia research-only. El uso comercial esta excluido de forma explicita, pese a que el modelo base Qwen3-32B se distribuye bajo Apache 2.0.
 - Inconsistencia documental: el titulo de la model card afirma que el entrenamiento se hizo sobre un corpus autoescrito, mientras que el cuerpo del texto indica "0 self-authored and 7.827 ordinary text". Conviene tratar la composicion real del corpus como no verificada.
 - Falta de validacion por la comunidad: 0 descargas y 0 likes en el momento de la consulta. No existen informes independientes de comportamiento.
-- Fecha de publicacion inusual: el repositorio figura creado el 2026-09-29, fecha posterior a la habitual en los repositorios de HuggingFace, lo que conviene verificar antes de citarlo.
+- Fecha de publicacion inusual: el repositorio figura creado el 2026-09-29, fecha posterior a la habitual en los repositorios de Hugging Face, lo que conviene verificar antes de citarlo.
 - Idoneidad: apropiado unicamente como artefacto de investigacion en entornos aislados, nunca en produccion ni con usuarios finales.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/qwen3-32b-fve-advanchor-s0
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/qwen3-32b-fve-advanchor-s0
 - Dataset del corpus autoescrito: https://huggingface.co/datasets/joshycodes/qwen3-32b-self-authored-corpus
 - Checkpoint de control de la misma serie: https://huggingface.co/joshycodes/qwen3-32b-control-E-sdf
 - Modelo base: https://huggingface.co/Qwen/Qwen3-32B

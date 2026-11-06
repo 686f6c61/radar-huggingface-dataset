@@ -116,7 +116,7 @@ Frente al checkpoint ingles de la misma familia, este modelo es mas pequeno (322
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hanzoai/kai-1-multilingual
+- Hugging Face: https://huggingface.co/hanzoai/kai-1-multilingual
 - Familia Laya (checkpoint original citado): https://huggingface.co/convaiinnovations/laya
 - Checkpoint ingles: https://huggingface.co/convaiinnovations/laya
 - Checkpoint typed-decisions: https://huggingface.co/convaiinnovations/laya-typed-decisions

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Alina Voice 7B es un modelo de lenguaje conversacional en ruso, afinado a partir de una base de 7.615.616.512 parámetros (aproximadamente 7,6 mil millones) y orientado a la construcción de bots de voz. El modelo original fue publicado por el usuario teeem92 en HuggingFace bajo el identificador `teeem92/alina-voice-7b`; la ficha que nos ocupa es una recopilación de cuantizaciones GGUF estáticas generadas por mradermacher, un conocido publicador de versiones cuantizadas de modelos abiertos.
+Alina Voice 7B es un modelo de lenguaje conversacional en ruso, afinado a partir de una base de 7.615.616.512 parámetros (aproximadamente 7,6 mil millones) y orientado a la construcción de bots de voz. El modelo original fue publicado por el usuario teeem92 en Hugging Face bajo el identificador `teeem92/alina-voice-7b`; la ficha que nos ocupa es una recopilación de cuantizaciones GGUF estáticas generadas por mradermacher, un conocido publicador de versiones cuantizadas de modelos abiertos.
 
 La relevancia de esta ficha es fundamentalmente práctica: el repositorio original no ofrece versiones GGUF, de modo que esta recopilación permite ejecutar el modelo en llama.cpp, Ollama u otros motores compatibles con GGUF, algo imprescindible para despliegues en CPU o en GPUs de consumo. El repositorio incluye doce cuantizaciones distintas, desde Q2_K (3,1 GB) hasta f16 (15,3 GB), lo que cubre un espectro amplio de restricciones de memoria.
 

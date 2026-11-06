@@ -6,7 +6,7 @@
 
 El modelo resuelve tareas de similitud semantica y recuperacion de informacion: codifica texto en vectores de 768 dimensiones comparables mediante producto escalar o coseno. Su nombre indica que la version de origen fue afinada para *multi-qa*, es decir, para ranking de pasajes en tareas de question answering, aunque la model card de esta conversion no detalla el dataset de afinado original.
 
-Es relevante ahora porque forma parte de un paquete de 13 variantes convertidas a Keras 3 (`all-mpnet-base-v2`, `all-MiniLM-L6-v2`, `multi-qa-mpnet-base-dot-v1`, etc.), lo que facilita integrar embeddings en stacks basados en Keras/JAX/TF. Sus cifras de adopcion en HuggingFace son de **0 descargas y 0 likes**, y el repositorio ocupa 0,3 GB, lo que indica un artefacto reciente y practicamente sin uso registrado en la plataforma.
+Es relevante ahora porque forma parte de un paquete de 13 variantes convertidas a Keras 3 (`all-mpnet-base-v2`, `all-MiniLM-L6-v2`, `multi-qa-mpnet-base-dot-v1`, etc.), lo que facilita integrar embeddings en stacks basados en Keras/JAX/TF. Sus cifras de adopcion en Hugging Face son de **0 descargas y 0 likes**, y el repositorio ocupa 0,3 GB, lo que indica un artefacto reciente y practicamente sin uso registrado en la plataforma.
 
 ## Especificaciones tecnicas
 
@@ -108,7 +108,7 @@ Nota: los datos de parametros, contexto y licencia de las variantes no aparecen 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zeromodels/multi-qa-distilbert-cos-v1
+- Modelo en Hugging Face: https://huggingface.co/zeromodels/multi-qa-distilbert-cos-v1
 - Checkpoint de origen: https://huggingface.co/sentence-transformers/multi-qa-distilbert-cos-v1
 - Revision fijada del checkpoint de origen: https://huggingface.co/sentence-transformers/multi-qa-distilbert-cos-v1/tree/bc2339dca6eba2b116cc7c2cfa06f63e4ff87e3f
 - Repositorio ZeroModels en GitHub: https://github.com/IMvision12/ZeroModels

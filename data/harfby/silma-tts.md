@@ -92,10 +92,10 @@ Los datos de los modelos comparados proceden de su documentación pública y no 
 
 ## Enlaces
 
-- Repositorio evaluado en HuggingFace: https://huggingface.co/harfby/silma-tts
-- Repositorio oficial en HuggingFace: https://huggingface.co/silma-ai/silma-tts
+- Repositorio evaluado en Hugging Face: https://huggingface.co/harfby/silma-tts
+- Repositorio oficial en Hugging Face: https://huggingface.co/silma-ai/silma-tts
 - Repositorio en GitHub: https://github.com/SILMA-AI/silma-tts
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/silma-ai/silma-tts-v1-demo
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/silma-ai/silma-tts-v1-demo
 - Blog de presentación: https://huggingface.co/blog/silma-ai/opensource-arabic-english-text-to-speech-model
 - Sitio web de SILMA AI: https://silma.ai/
 - Modelos comerciales de SILMA AI: https://silma.ai/arabic-text-to-speech

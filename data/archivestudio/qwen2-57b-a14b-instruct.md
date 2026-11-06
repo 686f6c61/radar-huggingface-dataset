@@ -76,10 +76,10 @@ Datos publicados en la model card del autor (comparativa con modelos de tamano s
 
 | Modelo | Parametros totales / activos | Contexto | MMLU | MT-Bench | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen2-57B-A14B-Instruct | 57B / 14B | 32.768 (65.536 con YARN) | 75,4 | 8,55 | Apache 2.0 | HuggingFace (repo ArchiveStudio y Qwen oficial) |
-| Mixtral-8x7B-Instruct-v0.1 | 47B / 12B | 32.768 | 71,4 | 8,30 | Apache 2.0 | HuggingFace |
-| Yi-1.5-34B-Chat | 34B denso | 4.096 (ampliable) | 76,8 | 8,50 | Apache 2.0 | HuggingFace |
-| Qwen1.5-32B-Chat | 32B denso | 32.768 | 74,8 | 8,30 | Apache 2.0 | HuggingFace |
+| Qwen2-57B-A14B-Instruct | 57B / 14B | 32.768 (65.536 con YARN) | 75,4 | 8,55 | Apache 2.0 | Hugging Face (repo ArchiveStudio y Qwen oficial) |
+| Mixtral-8x7B-Instruct-v0.1 | 47B / 12B | 32.768 | 71,4 | 8,30 | Apache 2.0 | Hugging Face |
+| Yi-1.5-34B-Chat | 34B denso | 4.096 (ampliable) | 76,8 | 8,50 | Apache 2.0 | Hugging Face |
+| Qwen1.5-32B-Chat | 32B denso | 32.768 | 74,8 | 8,30 | Apache 2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -94,7 +94,7 @@ Datos publicados en la model card del autor (comparativa con modelos de tamano s
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ArchiveStudio/Qwen2-57B-A14B-Instruct
+- Repositorio Hugging Face: https://huggingface.co/ArchiveStudio/Qwen2-57B-A14B-Instruct
 - Modelo base oficial: https://huggingface.co/Qwen/Qwen2-57B-A14B
 - Blog de Qwen2: https://qwenlm.github.io/blog/qwen2/
 - GitHub de Qwen2: https://github.com/QwenLM/Qwen2

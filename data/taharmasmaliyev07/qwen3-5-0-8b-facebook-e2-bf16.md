@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Qwen3.5-0.8B-FACEBOOK-E2-BF16 es un ajuste fino (fine-tuning) de un modelo de la familia Qwen3.5, publicado por el usuario taharmasmaliyev07 en HuggingFace. Se trata de un modelo multimodal de tipo image-text-to-text, es decir, capaz de procesar entradas que combinan imagen y texto, con 873.438.784 parámetros totales y pesos en formato safetensors/BF16. El repositorio ocupa 1,8 GB y se distribuye bajo licencia Apache 2.0.
+Qwen3.5-0.8B-FACEBOOK-E2-BF16 es un ajuste fino (fine-tuning) de un modelo de la familia Qwen3.5, publicado por el usuario taharmasmaliyev07 en Hugging Face. Se trata de un modelo multimodal de tipo image-text-to-text, es decir, capaz de procesar entradas que combinan imagen y texto, con 873.438.784 parámetros totales y pesos en formato safetensors/BF16. El repositorio ocupa 1,8 GB y se distribuye bajo licencia Apache 2.0.
 
-El modelo se ha entrenado con Unsloth y la librería TRL de HuggingFace, según indica el propio autor en la model card, lo que sugiere un flujo de ajuste fino optimizado para velocidad (hasta 2x más rápido según la propia herramienta). El sufijo "FACEBOOK-E2" del nombre apunta a un ajuste orientado a un dominio o dataset concreto, aunque el autor no documenta ni el dataset ni los hiperparámetros del entrenamiento.
+El modelo se ha entrenado con Unsloth y la librería TRL de Hugging Face, según indica el propio autor en la model card, lo que sugiere un flujo de ajuste fino optimizado para velocidad (hasta 2x más rápido según la propia herramienta). El sufijo "FACEBOOK-E2" del nombre apunta a un ajuste orientado a un dominio o dataset concreto, aunque el autor no documenta ni el dataset ni los hiperparámetros del entrenamiento.
 
 La relevancia de esta ficha es limitada pero informativa: se trata de un modelo de muy pequeño tamaño (menos de mil millones de parámetros) con capacidades multimodales, lo que lo sitúa en la categoría de modelos desplegables en hardware de consumo. No obstante, la ausencia de documentación técnica, benchmarks y datos de entrenamiento hace que deba evaluarse con cautela antes de cualquier uso en producción.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-0.8B-FACEBOOK-E2-BF16 | 873 M | no disponible | Sí (image-text-to-text) | Apache 2.0 | HuggingFace |
-| Qwen2-VL-2B | 2 B | 32 K (según documentación pública de Qwen2-VL) | Sí | Apache 2.0 | HuggingFace |
-| SmolVLM-500M | 500 M | 8 K (según documentación pública) | Sí | Apache 2.0 | HuggingFace |
-| PaliGemma-3B | 3 B | 8 K (según documentación pública) | Sí | Gemma license | HuggingFace |
+| Qwen3.5-0.8B-FACEBOOK-E2-BF16 | 873 M | no disponible | Sí (image-text-to-text) | Apache 2.0 | Hugging Face |
+| Qwen2-VL-2B | 2 B | 32 K (según documentación pública de Qwen2-VL) | Sí | Apache 2.0 | Hugging Face |
+| SmolVLM-500M | 500 M | 8 K (según documentación pública) | Sí | Apache 2.0 | Hugging Face |
+| PaliGemma-3B | 3 B | 8 K (según documentación pública) | Sí | Gemma license | Hugging Face |
 
 La comparativa se ofrece a título orientativo: los datos de los modelos alternativos provienen de su documentación pública y no de la información proporcionada para este modelo, por lo que deben verificarse antes de usarse en decisiones de producción. El modelo aquí descrito carece de benchmarks publicados, lo que impide una comparación de rendimiento rigurosa.
 
@@ -86,7 +86,7 @@ La comparativa se ofrece a título orientativo: los datos de los modelos alterna
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/taharmasmaliyev07/Qwen3.5-0.8B-FACEBOOK-E2-BF16
+- Hugging Face: https://huggingface.co/taharmasmaliyev07/Qwen3.5-0.8B-FACEBOOK-E2-BF16
 - Unsloth (herramienta de entrenamiento): https://github.com/unslothai/unsloth
-- TRL (librería de entrenamiento de HuggingFace): https://github.com/huggingface/trl
+- TRL (librería de entrenamiento de Hugging Face): https://github.com/huggingface/trl
 - Text Generation Inference: https://github.com/huggingface/text-generation-inference

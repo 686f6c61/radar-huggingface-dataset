@@ -95,7 +95,7 @@ No se dispone de comparativas publicadas frente a cross-encoders de NLI generico
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/systemonedev/kenning-large-v0.6
+- Modelo en Hugging Face: https://huggingface.co/systemonedev/kenning-large-v0.6
 - Modelo base: https://huggingface.co/tasksource/ModernBERT-large-nli
 - Variante XL: https://huggingface.co/systemonedev/kenning-xl-v0.6
 - Version previa large-v0.4: https://huggingface.co/systemonedev/kenning-large-v0.4

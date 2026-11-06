@@ -4,7 +4,7 @@
 
 El modelo identificado como `tournament-tourn_5abc2fe9f0667979_20260914-53df4541-f4eb-4456-9f7c-45b0dcf4aaf2-5HBgDWKx` es un adaptador LoRA (PEFT 0.18.1) alojado por la organizacion `gradients-io-tournaments`, ajustado a partir del modelo base `unsloth/Meta-Llama-3.1-8B-Instruct`. No se trata por tanto de un modelo completo, sino de un conjunto de pesos de bajo rango que deben cargarse sobre la red de 8.000 millones de parametros de Llama 3.1 8B Instruct. La convencion de nombres del repositorio sugiere que es un artefacto generado de forma automatica en el marco de un torneo de ajuste fino, con fecha de creacion y actualizacion del 15 de septiembre de 2026.
 
-El interes practico del artefacto esta limitado por una documentacion practicamente inexistente: la model card es la plantilla generica de HuggingFace sin rellenar, con todos los campos marcados como `[More Information Needed]`. Se desconoce el objetivo de ajuste, el conjunto de datos de entrenamiento, los hiperparametros, los idiomas cubiertos y la licencia. Con 0 descargas y 0 likes en el momento de la consulta, tampoco existe validacion alguna por parte de la comunidad.
+El interes practico del artefacto esta limitado por una documentacion practicamente inexistente: la model card es la plantilla generica de Hugging Face sin rellenar, con todos los campos marcados como `[More Information Needed]`. Se desconoce el objetivo de ajuste, el conjunto de datos de entrenamiento, los hiperparametros, los idiomas cubiertos y la licencia. Con 0 descargas y 0 likes en el momento de la consulta, tampoco existe validacion alguna por parte de la comunidad.
 
 Por ello, esta ficha debe leerse como una evaluacion de encuadre: describe que se puede afirmar con certeza (formato, libreria, modelo base, tamano del repositorio) y marca explicitamente como "no disponible" todo lo demas. Cualquier uso en produccion exige una evaluacion previa por parte del equipo que lo adopte.
 
@@ -34,9 +34,9 @@ Por ello, esta ficha debe leerse como una evaluacion de encuadre: describe que s
 
 La unica informacion tecnica verificable es que se trata de un adaptador LoRA entrenado con la libreria PEFT sobre `unsloth/Meta-Llama-3.1-8B-Instruct`. El modelo base es un transformer decoder-only de 8.000 millones de parametros con atencion agrupada por consultas (GQA) y una ventana de contexto declarada de 128.000 tokens. El adaptador no modifica la arquitectura del base: anade matrices de bajo rango en las proyecciones lineales seleccionadas, cuyo rango, `alpha`, `dropout` y capas objetivo no estan documentados.
 
-El tamano del repositorio, 1,4 GB, es notablemente alto para un adaptador LoRA sobre un modelo de 8B. A modo de referencia orientativo, un LoRA aplicado a las siete proyecciones lineales de Llama 3.1 8B en fp16 ocupa aproximadamente 340 MB con rango 64 y unos 1,35 GB con rango 256. Esto sugiere un rango alto o pesos almacenados en mayor precision, pero es una inferencia aritmetica, no un dato declarado por el autor. Un tag secundario, `base_model:adapter:/cache/models/8d7f663aaab4e5dd`, apunta a una ruta local de cache en lugar de a un identificador de HuggingFace, lo que indica que el pipeline de entrenamiento referencio un artefacto intermedio no publico y compromete la trazabilidad del ajuste.
+El tamano del repositorio, 1,4 GB, es notablemente alto para un adaptador LoRA sobre un modelo de 8B. A modo de referencia orientativo, un LoRA aplicado a las siete proyecciones lineales de Llama 3.1 8B en fp16 ocupa aproximadamente 340 MB con rango 64 y unos 1,35 GB con rango 256. Esto sugiere un rango alto o pesos almacenados en mayor precision, pero es una inferencia aritmetica, no un dato declarado por el autor. Un tag secundario, `base_model:adapter:/cache/models/8d7f663aaab4e5dd`, apunta a una ruta local de cache en lugar de a un identificador de Hugging Face, lo que indica que el pipeline de entrenamiento referencio un artefacto intermedio no publico y compromete la trazabilidad del ajuste.
 
-No hay informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF, DPO o SFT supervisado, ni sobre innovaciones tecnicas como decodificacion especulativa o atencion lineal. La unica referencia bibliografica del repositorio, `arxiv:1910.09700`, corresponde a Lacoste et al. (calculadora de impacto de carbono) y aparece citada en la plantilla por defecto de HuggingFace, no por el contenido real del modelo.
+No hay informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF, DPO o SFT supervisado, ni sobre innovaciones tecnicas como decodificacion especulativa o atencion lineal. La unica referencia bibliografica del repositorio, `arxiv:1910.09700`, corresponde a Lacoste et al. (calculadora de impacto de carbono) y aparece citada en la plantilla por defecto de Hugging Face, no por el contenido real del modelo.
 
 ## Capacidades
 
@@ -110,7 +110,7 @@ Frente a estas alternativas, el adaptador ofrece la ventaja del coste de almacen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gradients-io-tournaments/tournament-tourn_5abc2fe9f0667979_20260914-53df4541-f4eb-4456-9f7c-45b0dcf4aaf2-5HBgDWKx
+- Modelo en Hugging Face: https://huggingface.co/gradients-io-tournaments/tournament-tourn_5abc2fe9f0667979_20260914-53df4541-f4eb-4456-9f7c-45b0dcf4aaf2-5HBgDWKx
 - Modelo base utilizado (espejo de Unsloth): https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct
 - Modelo base original: https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct
 - Documentacion de PEFT: https://huggingface.co/docs/peft/index

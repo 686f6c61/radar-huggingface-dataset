@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PLEX es una propuesta de arquitectura de modelo de lenguaje publicada por el usuario NotCorealfr en HuggingFace bajo el identificador NotCorealfr/Plex. No se trata de un modelo con pesos entrenados y publicados, sino de un repositorio que documenta una capa experimental denominada "Parallel Layered EXperts" (PLEX), una variante de bloque con multiples expertos ejecutados en paralelo. La model card es extremadamente escueta: el propio autor la describe como "a LLM architecture I made that I don't even know if it's good or not", lo que indica que se trata de un experimento de investigacion sin validacion empirica publicada.
+PLEX es una propuesta de arquitectura de modelo de lenguaje publicada por el usuario NotCorealfr en Hugging Face bajo el identificador NotCorealfr/Plex. No se trata de un modelo con pesos entrenados y publicados, sino de un repositorio que documenta una capa experimental denominada "Parallel Layered EXperts" (PLEX), una variante de bloque con multiples expertos ejecutados en paralelo. La model card es extremadamente escueta: el propio autor la describe como "a LLM architecture I made that I don't even know if it's good or not", lo que indica que se trata de un experimento de investigacion sin validacion empirica publicada.
 
 El repositorio aparece etiquetado con el pipeline text-generation, el idioma en (ingles) y la region us, con cero descargas y cero likes en el momento de la consulta. No se publican pesos, tokenizador, configuracion de entrenamiento ni resultados de evaluacion. La licencia no esta declarada, lo que impide cualquier uso comercial o redistribucion con garantias juridicas.
 
@@ -89,5 +89,5 @@ No se dispone de datos de rendimiento comparables para PLEX, por lo que no es po
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/NotCorealfr/Plex
+- Hugging Face: https://huggingface.co/NotCorealfr/Plex
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la busqueda web.

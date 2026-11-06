@@ -23,7 +23,7 @@ YOLOv10 introduce una arquitectura de detección de objetos de una sola etapa qu
 
 YOLOv10 es un detector de objetos de una sola etapa basado en la arquitectura CNN (red neuronal convolucional). Su principal innovación es la eliminación de la supresión de no máximos (NMS) durante la inferencia, lograda mediante un diseño de asignación de etiquetas consistente y una estrategia de doble asignación durante el entrenamiento. Esto reduce la latencia y simplifica el despliegue en tiempo real. La variante "nano" (n) es la más ligera de la familia, con un equilibrio entre velocidad y precisión pensado para dispositivos de borde.
 
-El modelo original fue entrenado en el conjunto de datos COCO (Common Objects in Context) con 80 clases de objetos. El repositorio de HuggingFace no proporciona detalles sobre el proceso de entrenamiento de esta conversión específica, pero se asume que los pesos provienen del modelo oficial de THU-MIG. La conversión a ONNX se realizó para ser compatible con Transformers.js, que utiliza el runtime ONNX Runtime Web para ejecutar la inferencia en el navegador o en Node.js.
+El modelo original fue entrenado en el conjunto de datos COCO (Common Objects in Context) con 80 clases de objetos. El repositorio de Hugging Face no proporciona detalles sobre el proceso de entrenamiento de esta conversión específica, pero se asume que los pesos provienen del modelo oficial de THU-MIG. La conversión a ONNX se realizó para ser compatible con Transformers.js, que utiliza el runtime ONNX Runtime Web para ejecutar la inferencia en el navegador o en Node.js.
 
 ## Capacidades
 
@@ -45,7 +45,7 @@ El modelo original fue entrenado en el conjunto de datos COCO (Common Objects in
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El repositorio de HuggingFace no incluye métricas de precisión ni comparativas con otros modelos. Para conocer el rendimiento del YOLOv10n original, se puede consultar la documentación de Ultralytics o el repositorio oficial de THU-MIG, pero esos datos no están presentes en esta ficha.
+No se han publicado resultados de benchmarks en la información disponible. El repositorio de Hugging Face no incluye métricas de precisión ni comparativas con otros modelos. Para conocer el rendimiento del YOLOv10n original, se puede consultar la documentación de Ultralytics o el repositorio oficial de THU-MIG, pero esos datos no están presentes en esta ficha.
 
 ## Requisitos de hardware
 
@@ -80,7 +80,7 @@ La principal diferencia de este modelo es su formato ONNX específico para Trans
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/JONNYVERSE/yolov10n
+- Repositorio en Hugging Face: https://huggingface.co/JONNYVERSE/yolov10n
 - Repositorio oficial de YOLOv10 (THU-MIG): https://github.com/THU-MIG/yolov10
 - Documentación de YOLOv10 en Ultralytics: https://docs.ultralytics.com/models/yolov10
 - Documentación de Transformers.js: https://huggingface.co/docs/transformers.js

@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks numericos en la informacion disponi
 
 | Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Phi-4-reasoning-vision-15B-think-symbolic-image (este) | ~15 B (base) + 111,4 M LoRA | No disponible | Imagen + texto | MIT | HuggingFace (adaptador PEFT) |
-| microsoft/Phi-4-reasoning-vision-15B | ~15 B | No disponible | Imagen + texto | No disponible en la informacion | HuggingFace (modelo base) |
+| Phi-4-reasoning-vision-15B-think-symbolic-image (este) | ~15 B (base) + 111,4 M LoRA | No disponible | Imagen + texto | MIT | Hugging Face (adaptador PEFT) |
+| microsoft/Phi-4-reasoning-vision-15B | ~15 B | No disponible | Imagen + texto | No disponible en la informacion | Hugging Face (modelo base) |
 | Linea Lucia (Qwen3.5) | No disponible | No disponible | No disponible | No disponible | Referenciada en la model card |
 | Linea Ulisse (Gemma 4) | No disponible | No disponible | No disponible | No disponible | Referenciada en la model card |
 
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/AbstractPhil/phi-4-reasoning-vision-15b-think-symbolic-image
+- Adaptador en Hugging Face: https://huggingface.co/AbstractPhil/phi-4-reasoning-vision-15b-think-symbolic-image
 - Modelo base: https://huggingface.co/microsoft/Phi-4-reasoning-vision-15B
 - Dataset de captions: https://huggingface.co/datasets/AbstractPhil/thought-symbolic-image-captions
 - Dataset de imagenes: https://huggingface.co/datasets/AbstractPhil/qwen-thinking-images

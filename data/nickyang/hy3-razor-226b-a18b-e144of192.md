@@ -74,9 +74,9 @@ Las cifras siguientes son estimaciones derivadas del numero de parametros y del 
 
 | Modelo | Parametros totales | Parametros activos | Expertos por capa | Top-k | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Hy3-Razor-226B-A18B-E144of192 (este) | ~226B | ~18,4B | 144 de 192 | 8 | Apache-2.0 | HuggingFace, safetensors bf16 |
-| Hy3-Razor-154B-A18B-E96of192 | ~154B | ~18,4B | 96 de 192 | 8 | Apache-2.0 | HuggingFace (checkpoint hermano) |
-| tencent/Hy3 (base) | 295B | ~21B | 192 | 8 | Apache-2.0 | HuggingFace (modelo base) |
+| Hy3-Razor-226B-A18B-E144of192 (este) | ~226B | ~18,4B | 144 de 192 | 8 | Apache-2.0 | Hugging Face, safetensors bf16 |
+| Hy3-Razor-154B-A18B-E96of192 | ~154B | ~18,4B | 96 de 192 | 8 | Apache-2.0 | Hugging Face (checkpoint hermano) |
+| tencent/Hy3 (base) | 295B | ~21B | 192 | 8 | Apache-2.0 | Hugging Face (modelo base) |
 
 La comparacion relevante se establece dentro de la propia familia: el modelo base Hy3 y el otro presupuesto de poda publicado por el mismo autor. No se dispone de datos de benchmarks que permitan comparar el rendimiento con alternativas de otros desarrolladores.
 
@@ -96,7 +96,7 @@ La comparacion relevante se establece dentro de la propia familia: el modelo bas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nickyang/Hy3-Razor-226B-A18B-E144of192
+- Modelo en Hugging Face: https://huggingface.co/Nickyang/Hy3-Razor-226B-A18B-E144of192
 - Checkpoint hermano (presupuesto E96of192): https://huggingface.co/Nickyang/Hy3-Razor-154B-A18B-E96of192
 - Modelo base: https://huggingface.co/tencent/Hy3
 - Articulo RAZOR: https://arxiv.org/abs/2609.30465

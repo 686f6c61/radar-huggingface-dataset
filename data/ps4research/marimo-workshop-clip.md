@@ -78,10 +78,10 @@ La model card de este repositorio no incluye ninguna tabla de evaluación, y el 
 
 | Modelo | Parámetros totales | Contexto de texto | Resolución de entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PS4Research/marimo-workshop-clip | 151.277.312 | 77 tokens | 224 × 224 (parches de 32) | MIT | HuggingFace, safetensors |
-| openai/clip-vit-base-patch32 | Idénticos (es el mismo modelo) | 77 tokens | 224 × 224 (parches de 32) | MIT | HuggingFace |
-| openai/clip-vit-base-patch16 | ≈ 149,6 M (cifra aproximada, verificar en la ficha) | 77 tokens | 224 × 224 (parches de 16) | MIT | HuggingFace |
-| openai/clip-vit-large-patch14 | ≈ 427,6 M (cifra aproximada, verificar en la ficha) | 77 tokens | 224 × 224 (parches de 14) | MIT | HuggingFace |
+| PS4Research/marimo-workshop-clip | 151.277.312 | 77 tokens | 224 × 224 (parches de 32) | MIT | Hugging Face, safetensors |
+| openai/clip-vit-base-patch32 | Idénticos (es el mismo modelo) | 77 tokens | 224 × 224 (parches de 32) | MIT | Hugging Face |
+| openai/clip-vit-base-patch16 | ≈ 149,6 M (cifra aproximada, verificar en la ficha) | 77 tokens | 224 × 224 (parches de 16) | MIT | Hugging Face |
+| openai/clip-vit-large-patch14 | ≈ 427,6 M (cifra aproximada, verificar en la ficha) | 77 tokens | 224 × 224 (parches de 14) | MIT | Hugging Face |
 
 La comparación relevante es que este repositorio no aporta ninguna mejora sobre `openai/clip-vit-base-patch32`: mismos pesos, misma licencia y mismo pipeline. Las variantes con parches más pequeños (B/16 y L/14) suelen ofrecer mejor calidad de representación a cambio de más cómputo, pero no se dispone en la información proporcionada de cifras de rendimiento comparadas para respaldar esa afirmación con datos concretos.
 
@@ -101,7 +101,7 @@ La comparación relevante es que este repositorio no aporta ninguna mejora sobre
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PS4Research/marimo-workshop-clip
+- Modelo en Hugging Face: https://huggingface.co/PS4Research/marimo-workshop-clip
 - Modelo base: https://huggingface.co/openai/clip-vit-base-patch32
 - Dataset asociado del taller: https://huggingface.co/datasets/PS4Research/marimo-workshop-catalogue
 - Documentación de marimo sobre asistencia con IA en el editor: https://docs.marimo.io/guides/editor_features/ai_completion/

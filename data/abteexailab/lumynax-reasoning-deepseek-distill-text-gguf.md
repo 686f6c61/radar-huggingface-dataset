@@ -78,10 +78,10 @@ La comparativa se basa en datos publicos de los modelos base; el paquete LumynaX
 
 ## Enlaces
 
-- [HuggingFace - AbteeXAILab/lumynax-reasoning-deepseek-distill-text-gguf](https://huggingface.co/AbteeXAILab/lumynax-reasoning-deepseek-distill-text-gguf)
+- [Hugging Face - AbteeXAILab/lumynax-reasoning-deepseek-distill-text-gguf](https://huggingface.co/AbteeXAILab/lumynax-reasoning-deepseek-distill-text-gguf)
 - [Repositorio GitHub - Aimaghsoodi/lumynax-reasoning-deepseek-distill-text-gguf](https://github.com/Aimaghsoodi/lumynax-reasoning-deepseek-distill-text-gguf)
 - [README del repositorio GitHub](https://github.com/Aimaghsoodi/lumynax-reasoning-deepseek-distill-text-gguf/blob/main/README.md)
-- [Coleccion LumynaX Reasoning & Long-Context en HuggingFace](https://huggingface.co/collections/AbteeXAILab/lumynax-reasoning-and-long-context)
+- [Coleccion LumynaX Reasoning & Long-Context en Hugging Face](https://huggingface.co/collections/AbteeXAILab/lumynax-reasoning-and-long-context)
 - [Modelo base DeepSeek-R1-Distill-Qwen-14B](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-14B)
 - [AbteeX AI Labs](https://abteex.com)
 - [LumynaX](https://lumynax.com)

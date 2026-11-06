@@ -30,7 +30,7 @@ La innovacion tecnica relevante es el proceso de abliteration V3 aplicado por OB
 ## Capacidades
 
 - Generacion de texto conversacional: el tag `conversational` y el pipeline indicado por la model card confirman uso de chat en ingles y aleman.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que puede servirse mediante infraestructura de inferencia estandar compatible con la API de HuggingFace.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que puede servirse mediante infraestructura de inferencia estandar compatible con la API de Hugging Face.
 - Ejecucion local: disenado especificamente para correr en llama.cpp y LM Studio, incluyendo maquinas con 16 GB de memoria unificada.
 - Idiomas: soporte declarado de ingles (en) y aleman (de); no se mencionan otros idiomas.
 - Sin capas de rechazo: al estar abliterated, no aplica filtros de negativa aprendidos, lo que cambia su comportamiento frente a contenido sensible.
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparados entre estas variantes mas alla 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gleraTech/mini-qwen3.8-abliterated-27B
+- Modelo en Hugging Face: https://huggingface.co/gleraTech/mini-qwen3.8-abliterated-27B
 - Modelo base (abliterated): https://huggingface.co/OBLITERATUS/Qwen3.8-27B-OBLITERATED
 - Qwen Team (modelo original): https://huggingface.co/Qwen
 - OBLITERATUS (autor de la abliteration): https://huggingface.co/OBLITERATUS

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`sn38-r3-2020-pomlnb-chronollm-2020` es un modelo de lenguaje de 1.858.535.658 parámetros publicado en HuggingFace por el usuario `alfred8995`, etiquetado como **ChronoGPT** y encuadrado en **ChronoLLM** (Subnet 38 de Bittensor), un proyecto de entrenamiento competitivo de modelos «cronológicamente consistentes». La propuesta del proyecto es que cada checkpoint solo haya visto datos hasta su año de corte (*vintage*), en este caso **2020**, de modo que no pueda filtrar conocimiento posterior a esa fecha.
+`sn38-r3-2020-pomlnb-chronollm-2020` es un modelo de lenguaje de 1.858.535.658 parámetros publicado en Hugging Face por el usuario `alfred8995`, etiquetado como **ChronoGPT** y encuadrado en **ChronoLLM** (Subnet 38 de Bittensor), un proyecto de entrenamiento competitivo de modelos «cronológicamente consistentes». La propuesta del proyecto es que cada checkpoint solo haya visto datos hasta su año de corte (*vintage*), en este caso **2020**, de modo que no pueda filtrar conocimiento posterior a esa fecha.
 
 El problema que aborda es el **lookahead bias** o sesgo de anticipación en backtesting financiero y análisis histórico: un LLM convencional entrenado con datos hasta la actualidad «sabe» que hubo una crisis en 2020 y contamina cualquier simulación de decisiones tomadas antes de esa fecha. Un modelo con corte temporal en 2020 permite reconstruir el estado de información disponible en ese momento.
 
-La ficha se basa únicamente en los metadatos del repositorio y en la documentación pública del proyecto ChronoLLM. No hay *model card* con detalles de arquitectura, composición del dataset, idiomas o resultados de evaluación, y el acceso está restringido (gated), por lo que requiere aceptar condiciones en HuggingFace antes de descargar los pesos.
+La ficha se basa únicamente en los metadatos del repositorio y en la documentación pública del proyecto ChronoLLM. No hay *model card* con detalles de arquitectura, composición del dataset, idiomas o resultados de evaluación, y el acceso está restringido (gated), por lo que requiere aceptar condiciones en Hugging Face antes de descargar los pesos.
 
 ## Especificaciones técnicas
 
@@ -87,7 +87,7 @@ La diferencia funcional frente a todos ellos no es el rendimiento bruto, sino la
 
 ## Limitaciones y advertencias
 
-- **Acceso restringido**: el repositorio es gated y exige aceptar condiciones en HuggingFace; la licencia `other` debe revisarse antes de cualquier uso comercial.
+- **Acceso restringido**: el repositorio es gated y exige aceptar condiciones en Hugging Face; la licencia `other` debe revisarse antes de cualquier uso comercial.
 - **Ausencia de model card**: no hay informacion verificable sobre dataset, numero de tokens, idiomas, contexto soportado ni proceso de alineacion.
 - **Sin evaluaciones publicas**: 0 descargas y 0 likes en el momento de la consulta; no hay evidencia de terceros sobre calidad o estabilidad.
 - **Rendimiento esperable inferior a modelos generales del mismo tamano**: al restringir el corpus a datos anteriores a 2020 se pierden coberturas y se reduce la calidad en tareas que dependen de conocimiento reciente.
@@ -100,7 +100,7 @@ La diferencia funcional frente a todos ellos no es el rendimiento bruto, sino la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/sn38-r3-2020-pomlnb-chronollm-2020
+- Hugging Face: https://huggingface.co/alfred8995/sn38-r3-2020-pomlnb-chronollm-2020
 - Repositorio del proyecto en GitHub: https://github.com/chronollm/sn38/tree/main
 - Repositorio espejo en GitHub: https://github.com/st2058130-svg/chronollm
 - Paquete en PyPI: https://pypi.org/project/chronollm/

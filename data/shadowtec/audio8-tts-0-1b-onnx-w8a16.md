@@ -69,10 +69,10 @@ Además, la primera pasada de prefill presenta una correlación de logits de apr
 
 | Modelo | Parametros | Cuantizacion | Velocidad CPU (AR frames/s) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Audio8-TTS-0.1B-ONNX-W8A16 (este) | 0.1B | W8A16 (`MatMulNBits` 8 bits) | 9.86 | audio8-community-license-v1.0 | Repositorio HuggingFace de shadowtec |
-| Audio8-TTS-0.1B-ONNX-INT8 oficial (W8A8) | 0.1B | U8S8 (`MatMulInteger` + `DynamicQuantizeLinear`) | 10.01 | audio8-community-license-v1.0 | HuggingFace de Audio8 |
-| Audio8-TTS-Preview-0.1B (BF16 PyTorch) | 0.1B | Sin cuantizacion (BF16) | 7.44 | audio8-community-license-v1.0 | HuggingFace de Audio8 |
-| Audio8-TTS-0.6B-INT4-ONNX (oficial) | 0.6B | W4A16 (`MatMulNBits` 4 bits) | no disponible | audio8-community-license-v1.0 | HuggingFace de Audio8 |
+| Audio8-TTS-0.1B-ONNX-W8A16 (este) | 0.1B | W8A16 (`MatMulNBits` 8 bits) | 9.86 | audio8-community-license-v1.0 | Repositorio Hugging Face de shadowtec |
+| Audio8-TTS-0.1B-ONNX-INT8 oficial (W8A8) | 0.1B | U8S8 (`MatMulInteger` + `DynamicQuantizeLinear`) | 10.01 | audio8-community-license-v1.0 | Hugging Face de Audio8 |
+| Audio8-TTS-Preview-0.1B (BF16 PyTorch) | 0.1B | Sin cuantizacion (BF16) | 7.44 | audio8-community-license-v1.0 | Hugging Face de Audio8 |
+| Audio8-TTS-0.6B-INT4-ONNX (oficial) | 0.6B | W4A16 (`MatMulNBits` 4 bits) | no disponible | audio8-community-license-v1.0 | Hugging Face de Audio8 |
 
 La comparación se limita a las variantes del mismo modelo base, ya que no se dispone de datos sobre otros modelos TTS comparables en la información proporcionada.
 
@@ -89,7 +89,7 @@ La comparación se limita a las variantes del mismo modelo base, ya que no se di
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/shadowtec/Audio8-TTS-0.1B-ONNX-W8A16
+- Hugging Face: https://huggingface.co/shadowtec/Audio8-TTS-0.1B-ONNX-W8A16
 - Repositorio del runtime experimental: https://github.com/Aaaou/Audio8_TTS/tree/experiment/onnx-w8a16
 - Documento del experimento ONNX W8A16: https://github.com/Aaaou/Audio8_TTS/blob/experiment/onnx-w8a16/docs/onnx-w8a16-experiment.md
 - Informe de benchmark en Windows/AMD: https://github.com/Aaaou/Audio8_TTS/blob/experiment/onnx-w8a16/docs/onnx-w8a16-benchmark-windows-amd.md

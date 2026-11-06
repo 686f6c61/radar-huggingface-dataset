@@ -2,9 +2,9 @@
 
 ## Resumen
 
-KBioX-AI-Models es un repositorio publicado en HuggingFace por el usuario kharanp bajo el identificador `kharanp/KBioX-AI-Models`. En el momento de redactar esta ficha, la información pública disponible se limita a la licencia (Apache 2.0), la etiqueta de región (`region:us`) y un tamaño de repositorio de 0,2 GB. La model card no contiene más que el campo `license: apache-2.0`, sin descripción, arquitectura, datos de entrenamiento ni instrucciones de uso.
+KBioX-AI-Models es un repositorio publicado en Hugging Face por el usuario kharanp bajo el identificador `kharanp/KBioX-AI-Models`. En el momento de redactar esta ficha, la información pública disponible se limita a la licencia (Apache 2.0), la etiqueta de región (`region:us`) y un tamaño de repositorio de 0,2 GB. La model card no contiene más que el campo `license: apache-2.0`, sin descripción, arquitectura, datos de entrenamiento ni instrucciones de uso.
 
-El repositorio acumula 0 descargas y 0 likes, y no declara ningún pipeline de HuggingFace ni idiomas soportados. No hay información sobre el número de parámetros, la longitud de contexto, el formato de los pesos ni la existencia de variantes cuantizadas. Tampoco se ha publicado ningún resultado de evaluación.
+El repositorio acumula 0 descargas y 0 likes, y no declara ningún pipeline de Hugging Face ni idiomas soportados. No hay información sobre el número de parámetros, la longitud de contexto, el formato de los pesos ni la existencia de variantes cuantizadas. Tampoco se ha publicado ningún resultado de evaluación.
 
 Por tanto, esta ficha no puede caracterizar técnicamente el modelo: su función es documentar con precisión qué se sabe, qué no se sabe y qué comprobaciones mínimas debería realizar un desarrollador antes de considerar su uso. Cualquier afirmación sobre capacidades, rendimiento o requisitos de hardware sería una especulación no respaldada por los datos disponibles.
 
@@ -50,7 +50,7 @@ Tampoco se documenta la procedencia de los datos ni el pipeline de conversión d
 - Soporte de agentes y razonamiento multi-paso: no confirmado.
 - Capacidades multilingües: no confirmadas. El campo de idiomas está vacío.
 - Capacidades especiales (modo de razonamiento, visión, audio, embeddings): no confirmadas.
-- En el estado actual, la única capacidad verificable es que el repositorio existe y es accesible mediante la URL de HuggingFace.
+- En el estado actual, la única capacidad verificable es que el repositorio existe y es accesible mediante la URL de Hugging Face.
 
 ## Casos de uso
 
@@ -96,5 +96,5 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kharanp/KBioX-AI-Models
+- Repositorio en Hugging Face: https://huggingface.co/kharanp/KBioX-AI-Models
 - No se han encontrado otros enlaces (papers, blogs, repositorios de código o demos) en la información proporcionada.

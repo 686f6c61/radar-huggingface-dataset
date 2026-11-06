@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `gojiberries/instate` de HuggingFace contiene los artefactos del modelo para el paquete `instate` 3.1.0, desarrollado por `appeler`. No se trata de un modelo de lenguaje generativo, sino de un conjunto de pesos de PyTorch que permiten estimar la composicion estatal de apellidos en India. El checkpoint es un `state dict` de un LSTM bidireccional de dos capas a nivel de caracteres, junto con un JSON de calibracion. El modelo produce una distribucion de probabilidad sobre 35 estados y territorios de la Union, a partir de un apellido romanizado en ASCII.
+El repositorio `gojiberries/instate` de Hugging Face contiene los artefactos del modelo para el paquete `instate` 3.1.0, desarrollado por `appeler`. No se trata de un modelo de lenguaje generativo, sino de un conjunto de pesos de PyTorch que permiten estimar la composicion estatal de apellidos en India. El checkpoint es un `state dict` de un LSTM bidireccional de dos capas a nivel de caracteres, junto con un JSON de calibracion. El modelo produce una distribucion de probabilidad sobre 35 estados y territorios de la Union, a partir de un apellido romanizado en ASCII.
 
 El modelo se entrena sobre rollos electorales parseados y resuelve un problema especifico: estimar la distribucion condicional de un apellido entre estados, a partir de registros electorales. No tiene longitud de contexto en el sentido de los modelos de lenguaje, ni capacidades de generacion de texto, tool calling o razonamiento multi-paso. Su relevancia actual es limitada a la investigacion demografica y sociolinguistica en India, con importantes advertencias sobre cobertura y sesgos.
 
@@ -63,7 +63,7 @@ No se han publicado comparaciones con otros modelos en la informacion disponible
 - El repositorio ocupa 0.2 GB, por lo que la inferencia es ligera y probablemente factible en CPU.
 - No hay datos de latencia ni throughput.
 - No se menciona compatibilidad con vLLM, llama.cpp, Ollama ni TGI.
-- Para despliegues controlados, se puede usar la variable `INSTATE_MODEL_DIR` para evitar la descarga desde HuggingFace.
+- Para despliegues controlados, se puede usar la variable `INSTATE_MODEL_DIR` para evitar la descarga desde Hugging Face.
 - El despliegue se realiza a traves del paquete Python `instate`, no mediante servidores de inferencia de modelos de lenguaje.
 
 ## Comparativa con modelos similares
@@ -83,7 +83,7 @@ No disponible. No se han identificado modelos comparables en la informacion prop
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gojiberries/instate
+- Hugging Face: https://huggingface.co/gojiberries/instate
 - Repositorio del paquete `instate`: https://github.com/appeler/instate
 - Corpus de rollos electorales parseados: https://doi.org/10.7910/DVN/MUEGDT
 - Corpus PDF: https://doi.org/10.7910/DVN/OG47IV

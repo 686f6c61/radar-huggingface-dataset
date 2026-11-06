@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| lujihong/magika (este repo) | Clasificador de tipo de archivo (ONNX) | no disponible (~3,16 MB de pesos) | no aplica | Apache-2.0 | HuggingFace (copia de Google Magika) |
+| lujihong/magika (este repo) | Clasificador de tipo de archivo (ONNX) | no disponible (~3,16 MB de pesos) | no aplica | Apache-2.0 | Hugging Face (copia de Google Magika) |
 | google/magika (upstream) | Clasificador de tipo de archivo | no disponible | no aplica | Apache-2.0 | GitHub / assets oficiales |
 | Clasificacion por extension / MIME del sistema | Heuristica basada en nombre | no aplica | no aplica | segun sistema | Local |
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones en la inf
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lujihong/magika
+- Repositorio en Hugging Face: https://huggingface.co/lujihong/magika
 - Upstream en GitHub: https://github.com/google/magika
 - Assets oficiales (raw): https://raw.githubusercontent.com/google/magika/main/assets/
 - Espejo CDN jsDelivr: https://cdn.jsdelivr.net/gh/google/magika@main/assets/

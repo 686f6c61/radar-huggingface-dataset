@@ -76,8 +76,8 @@ El propio autor advierte que la generación es estocástica y que la ruta cuanti
 
 | Modelo | Parámetros | Duración / resolución validada | Cuantización | VRAM | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| MiniMaxAI/MiniMax-H3 (FL2VA, base) | No disponible | Hasta 10 s, 1344x768 en la validación del derivado | BF16 | No disponible (referencia BF16 del transformer, mayor que 34,58 GiB) | MiniMax H3 Community License | HuggingFace, oficial |
-| Yi30/MiniMax-H3-FL2VA-SVD-MXFP4 (W4A4) | No disponible (transformer 34,58 GiB) | 243 fotogramas, 1344x768, 24 fps | SVDQuant MXFP4 W4A4 | ~89,7 GiB tras carga | MiniMax H3 Community License (heredada) | HuggingFace, 0 descargas, 0 likes |
+| MiniMaxAI/MiniMax-H3 (FL2VA, base) | No disponible | Hasta 10 s, 1344x768 en la validación del derivado | BF16 | No disponible (referencia BF16 del transformer, mayor que 34,58 GiB) | MiniMax H3 Community License | Hugging Face, oficial |
+| Yi30/MiniMax-H3-FL2VA-SVD-MXFP4 (W4A4) | No disponible (transformer 34,58 GiB) | 243 fotogramas, 1344x768, 24 fps | SVDQuant MXFP4 W4A4 | ~89,7 GiB tras carga | MiniMax H3 Community License (heredada) | Hugging Face, 0 descargas, 0 likes |
 | Yi30/MiniMax-H3-FL2VA-SVD-MXFP4 (W4A16) | Ídem | Ídem | MXFP4 con kernel Marlin | Similar a W4A4, no medida | Ídem | Ídem |
 | Otros generadores abiertos de vídeo con audio | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible en la información proporcionada |
 
@@ -101,7 +101,7 @@ No se dispone de datos verificables en la información proporcionada para compar
 
 ## Enlaces
 
-- Checkpoint en HuggingFace: https://huggingface.co/Yi30/MiniMax-H3-FL2VA-SVD-MXFP4
+- Checkpoint en Hugging Face: https://huggingface.co/Yi30/MiniMax-H3-FL2VA-SVD-MXFP4
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Licencia en el repositorio: LICENSE (MiniMax H3 Community License Agreement)
 - Proceso de solicitud de licencia para territorios excluidos: https://platform.minimax.io/h3-license

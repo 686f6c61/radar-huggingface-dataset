@@ -2,7 +2,7 @@
 
 ## Resumen
 
-nightmedia/Qwen3.5-9B-Holodeck-Lounge-HuatuoGPT-q8-hi-mlx es un modelo resultante de un merge (fusión) de pesos de multiples derivados de la familia Qwen3.5-9B, publicado por el usuario nightmedia en HuggingFace. Segun los metadatos de la ficha, combina al menos catorce modelos base, entre ellos variantes "heretic" y "abliterated" orientadas a escritura creativa de DavidAU, un modelo medico (FreedomIntelligence/HuatuoGPT-3-9B), un modelo de agente con uso de ordenador (microsoft/Fara1.5-9B) y varios modelos de codigo (Jackrong/Qwopus3.5-9B-Coder, armand0e/Qwen3.5-9B-Coder). La herramienta declarada para la fusion es mergekit.
+nightmedia/Qwen3.5-9B-Holodeck-Lounge-HuatuoGPT-q8-hi-mlx es un modelo resultante de un merge (fusión) de pesos de multiples derivados de la familia Qwen3.5-9B, publicado por el usuario nightmedia en Hugging Face. Segun los metadatos de la ficha, combina al menos catorce modelos base, entre ellos variantes "heretic" y "abliterated" orientadas a escritura creativa de DavidAU, un modelo medico (FreedomIntelligence/HuatuoGPT-3-9B), un modelo de agente con uso de ordenador (microsoft/Fara1.5-9B) y varios modelos de codigo (Jackrong/Qwopus3.5-9B-Coder, armand0e/Qwen3.5-9B-Coder). La herramienta declarada para la fusion es mergekit.
 
 El objetivo declarado por las etiquetas es doble: por un lado, generacion de ficcion y escritura creativa (storytelling, generacion de trama y subtrama, continuacion de escenas, roleplaying, "vivid prosing"); por otro, conservar capacidades tecnicas de los modelos de codigo y de dominio medico incorporados. La denominacion del repositorio sugiere una cuantizacion q8 en formato MLX, aunque la libreria declarada es transformers, lo que apunta a un artefacto pensado para inferencia en hardware Apple Silicon y posiblemente tambien en el ecosistema transformers.
 
@@ -22,7 +22,7 @@ Es relevante ahora por dos motivos: primero, ilustra la practica actual de fusio
 | Formato de pesos | no disponible con precision; la etiqueta "mlx" y el sufijo "q8-hi-mlx" apuntan a pesos MLX para Apple Silicon, mientras que la libreria declarada es transformers |
 | Pipeline declarado | image-text-to-text |
 | Modalidad de entrada | texto e imagen (segun pipeline), con salida de texto |
-| Acceso | restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Fecha de publicacion | 2026-09-19 |
 | Descargas / likes | 0 / 0 |
 
@@ -79,7 +79,7 @@ No hay datos publicados de rendimiento para este checkpoint, por lo que la compa
 
 | Modelo | Categoria | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nightmedia/Qwen3.5-9B-Holodeck-Lounge-HuatuoGPT-q8-hi-mlx | Merge multiuso (escritura creativa, codigo, medico, multimodal) | ~9B (segun denominacion) | no disponible | apache-2.0 | Gated en HuggingFace |
+| nightmedia/Qwen3.5-9B-Holodeck-Lounge-HuatuoGPT-q8-hi-mlx | Merge multiuso (escritura creativa, codigo, medico, multimodal) | ~9B (segun denominacion) | no disponible | apache-2.0 | Gated en Hugging Face |
 | FreedomIntelligence/HuatuoGPT-3-9B | Dominio medico (LLM especializado) | ~9B (segun denominacion) | no disponible | no disponible | no disponible |
 | microsoft/Fara1.5-9B | Agente de computer use multimodal | ~9B (segun denominacion) | no disponible | no disponible | no disponible |
 | Jackrong/Qwopus3.5-9B-Coder | Codigo | ~9B (segun denominacion) | no disponible | no disponible | no disponible |
@@ -88,7 +88,7 @@ No hay datos publicados de rendimiento para este checkpoint, por lo que la compa
 ## Limitaciones y advertencias
 
 - Modelo experimental sin validacion: cero descargas y cero "likes" en el momento de la consulta, sin benchmarks, sin model card detallada y sin evaluacion independiente. No deberia usarse en produccion sin una evaluacion propia.
-- Repositorio en acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar los pesos, lo que puede limitar su uso automatizado en pipelines.
+- Repositorio en acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar los pesos, lo que puede limitar su uso automatizado en pipelines.
 - Ablacion de rechazos declarada: las etiquetas "heretic", "abliterated" y "uncensored" indican que se han eliminado total o parcialmente los mecanismos de rechazo del modelo. Esto aumenta el riesgo de generar contenido danino, ilegal o gravemente inapropiado, y complica el cumplimiento de normativas como el AI Act europeo para usos de alto riesgo.
 - Riesgo de alucinacion elevado en dominio medico: la fusion con HuatuoGPT-3-9B no convierte al modelo en una herramienta clinica validada. Cualquier salida de caracter medico debe considerarse no fiable y requiere supervision profesional.
 - Degradacion por fusion: la combinacion de catorce checkpoints mediante mergekit puede producir interferencias entre capacidades (por ejemplo, perdida de precision en codigo por el peso del componente narrativo). No se documenta ninguna evaluacion post-fusion.
@@ -100,7 +100,7 @@ No hay datos publicados de rendimiento para este checkpoint, por lo que la compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nightmedia/Qwen3.5-9B-Holodeck-Lounge-HuatuoGPT-q8-hi-mlx
+- Modelo en Hugging Face: https://huggingface.co/nightmedia/Qwen3.5-9B-Holodeck-Lounge-HuatuoGPT-q8-hi-mlx
 - FreedomIntelligence/HuatuoGPT-3-9B: https://huggingface.co/FreedomIntelligence/HuatuoGPT-3-9B
 - microsoft/Fara1.5-9B: https://huggingface.co/microsoft/Fara1.5-9B
 - Jackrong/Qwopus3.5-9B-Coder: https://huggingface.co/Jackrong/Qwopus3.5-9B-Coder

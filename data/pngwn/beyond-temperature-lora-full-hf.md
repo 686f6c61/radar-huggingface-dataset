@@ -70,6 +70,6 @@ No se dispone de informacion suficiente para realizar una comparativa rigurosa. 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pngwn/beyond-temperature-lora-full-hf
+- Hugging Face: https://huggingface.co/pngwn/beyond-temperature-lora-full-hf
 - Paper (arXiv): https://arxiv.org/html/2605.22579v1
 - Pagina del proyecto: https://yecanlee.github.io/Beyond-Temperature/

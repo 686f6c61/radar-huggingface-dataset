@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`microduck-tug-of-war-tug-super-v6` es una política de control por refuerzo (reinforcement learning) publicada por el usuario `greecree` en HuggingFace. No es un modelo de lenguaje: es un controlador entrenado con PPO para el robot cuadrúpedo microduck de Pollen Robotics, empaquetado en formato ONNX y pensado para cargarse en una ranura de política del demonio `robotctl` del robot. Recibe observaciones de 61 dimensiones y emite 14 acciones a 50 Hz, de forma continua (la model card la describe como política "perpetual", es decir, se ejecuta hasta que se le indique lo contrario).
+`microduck-tug-of-war-tug-super-v6` es una política de control por refuerzo (reinforcement learning) publicada por el usuario `greecree` en Hugging Face. No es un modelo de lenguaje: es un controlador entrenado con PPO para el robot cuadrúpedo microduck de Pollen Robotics, empaquetado en formato ONNX y pensado para cargarse en una ranura de política del demonio `robotctl` del robot. Recibe observaciones de 61 dimensiones y emite 14 acciones a 50 Hz, de forma continua (la model card la describe como política "perpetual", es decir, se ejecuta hasta que se le indique lo contrario).
 
 El modelo resuelve una tarea concreta de locomoción y competición: un tug-of-war (tira y afloja) con múltiples oponentes, con modelado de recompensa específico para marcha atrás ("backward-drive") y para la victoria por caída en foso ("pit-win"). Se entrenó en el entorno `Mjlab-TugOfWar-MicroDuck` sobre la base `mjlab-microduck 0.1.0`, con 4096 entornos paralelos y 1000 iteraciones máximas, semilla 1 y checkpoint 250.
 
-Su relevancia es acotada pero clara para quien investiga RL aplicado a robótica de bajo coste: es un artefacto reproducible (código y comando de entrenamiento publicados) que sirve como referencia de política de competición multioponente para una plataforma pequeña. El repositorio es esencialmente vacío (0,0 GB según HuggingFace), no declara licencia y no ha recibido descargas ni "likes" en el momento de la consulta.
+Su relevancia es acotada pero clara para quien investiga RL aplicado a robótica de bajo coste: es un artefacto reproducible (código y comando de entrenamiento publicados) que sirve como referencia de política de competición multioponente para una plataforma pequeña. El repositorio es esencialmente vacío (0,0 GB según Hugging Face), no declara licencia y no ha recibido descargas ni "likes" en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
@@ -61,7 +61,7 @@ La model card no incluye métricas de rendimiento (tasa de victoria, recompensa 
 
 ## Requisitos de hardware
 
-- VRAM para inferencia: muy baja; se trata de una política ONNX con 61 entradas y 14 salidas. El repositorio ocupa 0,0 GB según HuggingFace, por lo que el modelo cabe holgadamente en cualquier dispositivo.
+- VRAM para inferencia: muy baja; se trata de una política ONNX con 61 entradas y 14 salidas. El repositorio ocupa 0,0 GB según Hugging Face, por lo que el modelo cabe holgadamente en cualquier dispositivo.
 - GPU recomendadas: no se requiere GPU para inferencia; puede ejecutarse en CPU. No hay datos publicados sobre la GPU empleada en el entrenamiento.
 - Compatibilidad con GPU de consumo: sí, en la práctica cualquier GPU de consumo es sobrada para inferencia; el cuello de botella es el bucle de control a 50 Hz (periodo de 20 ms), no el cómputo del modelo.
 - Despliegue: ONNX Runtime para la inferencia del `policy.onnx`, más el demonio `robotctl` del ecosistema microduck para cargar la política en una ranura. El `manifest.json` sigue el esquema 2 del manifiesto de políticas.
@@ -74,7 +74,7 @@ No se dispone de datos cuantitativos publicados para establecer una comparativa 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| microduck-tug-of-war-tug-super-v6 | no disponible | no aplica | no disponible | no disponible | HuggingFace (0 descargas, 0 likes) |
+| microduck-tug-of-war-tug-super-v6 | no disponible | no aplica | no disponible | no disponible | Hugging Face (0 descargas, 0 likes) |
 | Otras políticas de microduck-tug-of-war | no disponible | no aplica | no disponible | no disponible | no disponible |
 | Políticas de locomoción de cuadrúpedos (categoría general) | no disponible | no aplica | no disponible | no disponible | no disponible |
 
@@ -91,7 +91,7 @@ No se dispone de datos cuantitativos publicados para establecer una comparativa 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/greecree/microduck-tug-of-war-tug-super-v6
+- Hugging Face: https://huggingface.co/greecree/microduck-tug-of-war-tug-super-v6
 - Repositorio de retos y entrenamiento: https://github.com/green-creeper/microduck-challenges
 - Proyecto microduck (Pollen Robotics): https://github.com/pollen-robotics/microduck
 - Documentación del manifiesto de políticas (`docs/policy-manifest.md` en el repositorio del demonio): no disponible como enlace directo en la información proporcionada

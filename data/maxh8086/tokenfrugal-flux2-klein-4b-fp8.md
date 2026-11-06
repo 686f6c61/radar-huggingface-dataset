@@ -70,9 +70,9 @@ El autor advierte que estos valores reflejan el fallo del fichero FP8 (textura p
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| tokenfrugal-flux2-klein-4b-fp8 | 4B difusión + 4B codificador | no disponible | Apache-2.0 (verificar upstream) | HuggingFace, 0 descargas | Codificador FP8 no funcional en ComfyUI según el autor |
-| black-forest-labs/FLUX.2-klein-4b-fp8 (upstream) | 4B difusión | no disponible | no disponible en esta ficha | HuggingFace (referencia citada) | Origen del modelo de difusión; no se dispone de sus métricas |
-| Qwen/Qwen3-4B-FP8 (upstream) | 4B | no disponible | no disponible en esta ficha | HuggingFace (referencia citada) | Origen del codificador de texto |
+| tokenfrugal-flux2-klein-4b-fp8 | 4B difusión + 4B codificador | no disponible | Apache-2.0 (verificar upstream) | Hugging Face, 0 descargas | Codificador FP8 no funcional en ComfyUI según el autor |
+| black-forest-labs/FLUX.2-klein-4b-fp8 (upstream) | 4B difusión | no disponible | no disponible en esta ficha | Hugging Face (referencia citada) | Origen del modelo de difusión; no se dispone de sus métricas |
+| Qwen/Qwen3-4B-FP8 (upstream) | 4B | no disponible | no disponible en esta ficha | Hugging Face (referencia citada) | Origen del codificador de texto |
 | Qwen3-4B en Q4_K_S (GGUF) | 4B | no disponible | no disponible en esta ficha | No incluido en este repo | Usado como referencia funcional en las pruebas; produce imágenes correctas en 5 de 5 renders |
 
 No se dispone de datos de benchmarks ni de especificaciones detalladas de los modelos upstream en la información proporcionada, por lo que la comparativa se limita a parámetros, licencia y disponibilidad.
@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de los mo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/maxh8086/tokenfrugal-flux2-klein-4b-fp8
+- Repositorio en Hugging Face: https://huggingface.co/maxh8086/tokenfrugal-flux2-klein-4b-fp8
 - Modelo de difusión upstream citado: https://huggingface.co/black-forest-labs/FLUX.2-klein-4b-fp8
 - Codificador de texto upstream citado: https://huggingface.co/Qwen/Qwen3-4B-FP8
 - VAE upstream citado: https://huggingface.co/black-forest-labs/FLUX.2-klein-4B

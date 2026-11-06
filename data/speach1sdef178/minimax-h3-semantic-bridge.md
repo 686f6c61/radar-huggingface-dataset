@@ -70,15 +70,15 @@ No se han identificado modelos comparables en la información disponible. El ada
 - Solo soporta la ruta FL2VA / text-conditioned de MiniMax H3; no soporta Ref2VA ni flujos de referencia condicionada.
 - Los experimentos con referencia-audio mostraron degradación en el canto y la sincronización de labios cuando el adaptador se insertaba en el condicionamiento Ref2VA.
 - No añade nuevos conceptos visuales; su alcance se limita a la estructura semántica del prompt.
-- Es una versión v1 experimental con 0 descargas y 0 likes en HuggingFace, lo que indica una adopción muy limitada.
-- El repositorio en HuggingFace muestra un tamaño de 0.0 GB, lo que podría indicar que los archivos no están disponibles o que la plataforma no los ha indexado correctamente; verificar antes de intentar descargar.
+- Es una versión v1 experimental con 0 descargas y 0 likes en Hugging Face, lo que indica una adopción muy limitada.
+- El repositorio en Hugging Face muestra un tamaño de 0.0 GB, lo que podría indicar que los archivos no están disponibles o que la plataforma no los ha indexado correctamente; verificar antes de intentar descargar.
 - La licencia es minimax-h3-community-license-agreement; es necesario revisar los términos para confirmar si se permite el uso comercial.
 - No se proporcionan benchmarks cuantitativos, por lo que el rendimiento real debe evaluarse mediante pruebas propias.
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/speach1sdef178/MiniMax-H3-Semantic-Bridge
-- HuggingFace del modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
+- Hugging Face del adaptador: https://huggingface.co/speach1sdef178/MiniMax-H3-Semantic-Bridge
+- Hugging Face del modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - GitHub del modelo base: https://github.com/MiniMax-AI/MiniMax-H3
 - Licencia: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE
 - Documentación de investigación (dentro del repositorio): RESEARCH_ARTICLE.md

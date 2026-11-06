@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo (WER, latencia) en la informac
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LaToucheCarre/LaToucheCarre-Mac-Voix-Parakeet-Ultra-0.6B-CoreML
+- Hugging Face: https://huggingface.co/LaToucheCarre/LaToucheCarre-Mac-Voix-Parakeet-Ultra-0.6B-CoreML
 - Modelo base: https://huggingface.co/moondream/parakeet-ultra
 - Modelo original de NVIDIA: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Proyecto La Touche Carré: https://latouchecarre.fr

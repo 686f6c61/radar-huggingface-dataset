@@ -105,7 +105,7 @@ No se dispone de comparaciones con modelos de proposito general de otras familia
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stunmuffin/TinyTurk-Wiki-B-Sweet
+- Modelo en Hugging Face: https://huggingface.co/stunmuffin/TinyTurk-Wiki-B-Sweet
 - Modelo companero TinyTurk-Wiki-A-Tiny: https://huggingface.co/stunmuffin/TinyTurk-Wiki-A-Tiny
 - Modelo companero TinyTurk-Wiki-C-Max: https://huggingface.co/stunmuffin/TinyTurk-Wiki-C-Max
 - Modelo relacionado TinyTurk-v2.7d-bigstories: https://huggingface.co/stunmuffin/TinyTurk-v2.7d-bigstories

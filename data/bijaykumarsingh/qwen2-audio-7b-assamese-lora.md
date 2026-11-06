@@ -105,7 +105,7 @@ Los datos de las filas de modelos alternativos proceden de conocimiento general 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bijaykumarsingh/qwen2-audio-7b-assamese-lora
+- Modelo en Hugging Face: https://huggingface.co/bijaykumarsingh/qwen2-audio-7b-assamese-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2-Audio-7B-Instruct
 - Libreria PEFT: https://github.com/huggingface/peft
 - Cita del autor (referencia textual de la model card): Singh, Bijay Kumar, "Architectural Inductive Bias Trumps Parameter Scale: Adapting Large Audio-Language Models to Low-Resource Assamese ASR", arXiv preprint, 2026.

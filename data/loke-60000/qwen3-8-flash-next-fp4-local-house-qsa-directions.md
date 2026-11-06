@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next-FP4-Local-house-qsa-directions es una variante derivada del modelo Qwen3.8-Flash-Next en formato FP4 (4 bits en coma flotante), publicada por el usuario Loke-60000 en HuggingFace. El modelo parte de los pesos de drowzeys/keys-Qwen3.8-Flash-Next-NVFP4-FP4-QAD-house-qsa-L3-47, que a su vez deriva de nvidia/Qwen3.8-Flash-Next-FP4-Local. La ficha incorpora la etiqueta "abliterated", lo que indica que se han aplicado direcciones de abliteración para reducir los rechazos del modelo ante ciertas peticiones.
+Qwen3.8-Flash-Next-FP4-Local-house-qsa-directions es una variante derivada del modelo Qwen3.8-Flash-Next en formato FP4 (4 bits en coma flotante), publicada por el usuario Loke-60000 en Hugging Face. El modelo parte de los pesos de drowzeys/keys-Qwen3.8-Flash-Next-NVFP4-FP4-QAD-house-qsa-L3-47, que a su vez deriva de nvidia/Qwen3.8-Flash-Next-FP4-Local. La ficha incorpora la etiqueta "abliterated", lo que indica que se han aplicado direcciones de abliteración para reducir los rechazos del modelo ante ciertas peticiones.
 
 El interés principal de esta publicación reside en su carácter de experimento de cuantización y modificación de pesos: combina cuantización NVFP4/FP4 con técnicas de abliteración ("abliteration-directions") y referencias a "tensorfold" y "dgx-spark", apuntando a despliegue en hardware NVIDIA de gama DGX Spark. No obstante, la información pública es extremadamente escasa: el repositorio tiene 0 GB de tamaño declarado, 0 descargas y 0 likes en el momento de la consulta.
 
@@ -71,7 +71,7 @@ No se dispone de datos de rendimiento ni de especificaciones detalladas de los m
 ## Limitaciones y advertencias
 
 - Información pública mínima: 0 descargas, 0 likes y repositorio de 0.0 GB declarado; no hay garantía de que los pesos estén completos o sean utilizables.
-- Acceso restringido: requiere aceptar condiciones en HuggingFace, lo que limita su uso y distribución.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face, lo que limita su uso y distribución.
 - Abliteración: la supresión de rechazos puede aumentar el riesgo de generar contenido dañino, sesgado o inapropiado; no se documenta el alcance ni la metodología exacta.
 - Licencia NVIDIA Open Model License: impone condiciones específicas de uso, incluida posiblemente la atribución y restricciones de uso comercial; debe revisarse antes de cualquier despliegue.
 - Cuantización FP4: puede degradar la calidad respecto al modelo original; no se han publicado evaluaciones de la pérdida de rendimiento.
@@ -82,6 +82,6 @@ No se dispone de datos de rendimiento ni de especificaciones detalladas de los m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Loke-60000/Qwen3.8-Flash-Next-FP4-Local-house-qsa-directions
+- Hugging Face: https://huggingface.co/Loke-60000/Qwen3.8-Flash-Next-FP4-Local-house-qsa-directions
 - Modelo base NVIDIA: https://huggingface.co/nvidia/Qwen3.8-Flash-Next-FP4-Local
 - Checkpoint intermedio: https://huggingface.co/drowzeys/keys-Qwen3.8-Flash-Next-NVFP4-FP4-QAD-house-qsa-L3-47

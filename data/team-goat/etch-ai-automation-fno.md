@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `etch-ai-automation-FNO`, publicado por el usuario Team-GOAT en HuggingFace, es un artefacto con licencia Apache 2.0 y región de origen "us". La información disponible es extremadamente limitada: la model card únicamente declara la licencia, sin descripción técnica, sin datos de entrenamiento, sin arquitectura declarada y sin indicación de pipeline o idiomas soportados. El identificador sugiere un posible uso orientado a automatización con IA ("etch-ai-automation"), pero no hay documentación que lo confirme.
+El modelo `etch-ai-automation-FNO`, publicado por el usuario Team-GOAT en Hugging Face, es un artefacto con licencia Apache 2.0 y región de origen "us". La información disponible es extremadamente limitada: la model card únicamente declara la licencia, sin descripción técnica, sin datos de entrenamiento, sin arquitectura declarada y sin indicación de pipeline o idiomas soportados. El identificador sugiere un posible uso orientado a automatización con IA ("etch-ai-automation"), pero no hay documentación que lo confirme.
 
 Por el nombre "FNO" podría tratarse de un modelo relacionado con Fourier Neural Operators (operadores neuronales de Fourier), una familia de arquitecturas empleadas en simulación de ecuaciones en derivadas parciales y aprendizaje de operadores, pero esta interpretación no está respaldada por ningún dato de la model card y debe considerarse una hipótesis no verificada. El modelo no cuenta con descargas ni "likes" en el momento de la consulta, lo que indica que no hay evidencia pública de uso o validación por parte de la comunidad.
 
@@ -23,7 +23,7 @@ Por tanto, esta ficha se limita a documentar los pocos metadatos verificables y 
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura del modelo en la model card ni en los metadatos de HuggingFace. No hay datos sobre el número de parámetros, la composición del dataset de entrenamiento, el número de tokens procesados ni sobre si se aplicaron técnicas de alineación como RLHF, DPO o instrucción supervisada. Tampoco se documenta ninguna innovación técnica (atención lineal, decodificación especulativa, mezcla de expertos, etc.).
+No se ha publicado información sobre la arquitectura del modelo en la model card ni en los metadatos de Hugging Face. No hay datos sobre el número de parámetros, la composición del dataset de entrenamiento, el número de tokens procesados ni sobre si se aplicaron técnicas de alineación como RLHF, DPO o instrucción supervisada. Tampoco se documenta ninguna innovación técnica (atención lineal, decodificación especulativa, mezcla de expertos, etc.).
 
 El sufijo "FNO" del identificador podría sugerir un vínculo con Fourier Neural Operators, arquitecturas utilizadas para aprender mapeos entre funciones en espacios de dimensión infinita (habitualmente en problemas de EDPs), pero no existe confirmación documental. Cualquier afirmación sobre la arquitectura sería especulativa.
 
@@ -77,5 +77,5 @@ No disponible. No es posible identificar modelos comparables sin conocer la arqu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Team-GOAT/etch-ai-automation-FNO
+- Hugging Face: https://huggingface.co/Team-GOAT/etch-ai-automation-FNO
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la información proporcionada.

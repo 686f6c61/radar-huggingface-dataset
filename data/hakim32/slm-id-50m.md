@@ -92,7 +92,7 @@ La comparación es orientativa: SLM-ID-50M es sustancialmente más pequeño y es
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hakim32/slm-id-50m
+- Hugging Face: https://huggingface.co/hakim32/slm-id-50m
 - Dataset de entrenamiento: https://huggingface.co/datasets/AksaraLLM/aksara-pretrain-id
 - Script de inferencia: incluido en el repositorio (`inference_example.py`)
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información proporcionada.

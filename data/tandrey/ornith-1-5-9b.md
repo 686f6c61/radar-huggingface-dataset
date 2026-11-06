@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ornith-1.5-9B es un modelo de lenguaje denso de aproximadamente 9.650 millones de parámetros (9.653.104.368), desarrollado por el equipo de Ornith AI y publicado en HuggingFace bajo el repositorio `tandrey/Ornith-1.5-9B`. Se trata de la variante más ligera de la familia Ornith-1.5, diseñada para un despliegue eficiente en una única GPU y, según la documentación, con una variante cuantizada denominada Ornith-1.5-9B-Mobile para dispositivos móviles.
+Ornith-1.5-9B es un modelo de lenguaje denso de aproximadamente 9.650 millones de parámetros (9.653.104.368), desarrollado por el equipo de Ornith AI y publicado en Hugging Face bajo el repositorio `tandrey/Ornith-1.5-9B`. Se trata de la variante más ligera de la familia Ornith-1.5, diseñada para un despliegue eficiente en una única GPU y, según la documentación, con una variante cuantizada denominada Ornith-1.5-9B-Mobile para dispositivos móviles.
 
 El modelo extiende Ornith-1.0, que a su vez se construyó sobre Qwen3.5 y Gemma4 mediante preentrenamiento continuado, mid-training y post-training. La aportación principal de Ornith-1.5 es ampliar el bucle de auto-mejora de extremo a extremo: en lugar de depender de tareas fijas y diseños manuales de harnesses, el modelo genera nuevas tareas de entrenamiento, descubre estrategias de resolución y optimiza su política mediante aprendizaje por refuerzo. Esta orientación hacia tareas agénticas se refleja en los resultados de benchmarks de terminal y de ingeniería de software publicados en su model card.
 
@@ -34,7 +34,7 @@ La innovación técnica destacada es el bucle de auto-mejora de extremo a extrem
 - Resolución de problemas de ingeniería de software, con resultados destacados en SWE-bench Verified y SWE-bench Pro.
 - Integración como agente autónomo en entornos de desarrollo, incluyendo uso de herramientas y ejecución de comandos, aunque la documentación no especifica explícitamente soporte de function calling.
 - Despliegue en entornos de una sola GPU y opción de cuantización para dispositivos móviles mediante la variante Mobile.
-- Compatibilidad con el ecosistema de HuggingFace transformers y servidores compatibles con la API de OpenAI (según la documentación de despliegue).
+- Compatibilidad con el ecosistema de Hugging Face transformers y servidores compatibles con la API de OpenAI (según la documentación de despliegue).
 
 ## Casos de uso
 
@@ -69,8 +69,8 @@ Según la model card del autor, se publican los siguientes resultados para Ornit
 
 | Modelo | Parametros | Contexto | SWE-bench Verified | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ornith-1.5-9B | 9.65B | no disponible | 70.6 | MIT | HuggingFace |
-| Ornith-1.0-9B | no disponible | no disponible | 69.4 | no disponible | HuggingFace |
+| Ornith-1.5-9B | 9.65B | no disponible | 70.6 | MIT | Hugging Face |
+| Ornith-1.0-9B | no disponible | no disponible | 69.4 | no disponible | Hugging Face |
 | Qwen3.5-9B | no disponible | no disponible | 53.2 | no disponible | no disponible |
 | Qwen3.6-35B-A3B | 35B (MoE, 3B activos) | no disponible | 73.4 | no disponible | no disponible |
 | Gemma-4-31B | no disponible | no disponible | 52 | no disponible | no disponible |
@@ -81,7 +81,7 @@ Según la model card del autor, se publican los siguientes resultados para Ornit
 - Riesgo de alucinación y de comportamiento impredecible, especialmente porque el proceso de auto-mejora genera tareas y estrategias de forma autónoma, lo que puede introducir sesgos no documentados.
 - La longitud de contexto no está especificada, por lo que no se pueden garantizar conversaciones de contexto largo ni ingestas de documentos extensos.
 - La composición del dataset de entrenamiento y los datos utilizados para el aprendizaje por refuerzo no se han divulgado, lo que limita la evaluación de su alineación y robustez.
-- Aunque el tag en HuggingFace incluye `image-text-to-text`, no se dispone de documentación que confirme capacidades multimodales de visión; la evidencia disponible apunta a un modelo puramente de texto.
+- Aunque el tag en Hugging Face incluye `image-text-to-text`, no se dispone de documentación que confirme capacidades multimodales de visión; la evidencia disponible apunta a un modelo puramente de texto.
 - No se especifican los idiomas soportados, por lo que su rendimiento en lenguas distintas del inglés no está garantizado.
 
 ## Enlaces

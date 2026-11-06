@@ -111,7 +111,7 @@ No se dispone de datos verificados en la información proporcionada para compara
 
 ## Enlaces
 
-- Repositorio HuggingFace de la conversión: https://huggingface.co/sakasegawa/parakeet-tdt-0.6b-v3-GGUF
+- Repositorio Hugging Face de la conversión: https://huggingface.co/sakasegawa/parakeet-tdt-0.6b-v3-GGUF
 - Modelo base de NVIDIA: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - speech.cpp (repositorio y documentación): https://github.com/nyosegawa/speech.cpp
 - README de speech.cpp con la tabla de modelos soportados: https://github.com/nyosegawa/speech.cpp#readme

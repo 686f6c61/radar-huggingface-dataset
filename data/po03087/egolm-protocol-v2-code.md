@@ -4,7 +4,7 @@
 
 Ego3DLM es un modelo de investigación presentado en ECCV 2026 que predice movimiento humano desde una perspectiva egocéntrica, anclando un modelo de lenguaje en el contexto espacial y semántico 3D del entorno. Dado un seguimiento de movimiento de tres puntos (cabeza y manos), características de escena 3D y vídeo egocéntrico, el modelo decodifica de forma simultánea pose pasada, pose futura, narración pasada y narración futura en una única pasada autorregresiva, de modo que poses y descripciones quedan fundamentadas entre sí para garantizar consistencia temporal y cross-modal. El backbone de lenguaje indicado en la model card es GPT-2 medium.
 
-El repositorio de HuggingFace analizado, `po03087/egolm-protocol-v2-code`, tiene un tamano de 2,4 GB, 0 descargas y 0 likes, y fue creado y actualizado el 19 de septiembre de 2026. La model card publicada no es una ficha de modelo convencional de pesos preentrenados, sino la documentación de un repositorio de código de investigación con instrucciones de entorno, dependencias, checkpoints por etapa, comandos de entrenamiento y comandos de evaluación. No se declara licencia, idiomas soportados ni pipeline en los metadatos de HuggingFace.
+El repositorio de Hugging Face analizado, `po03087/egolm-protocol-v2-code`, tiene un tamano de 2,4 GB, 0 descargas y 0 likes, y fue creado y actualizado el 19 de septiembre de 2026. La model card publicada no es una ficha de modelo convencional de pesos preentrenados, sino la documentación de un repositorio de código de investigación con instrucciones de entorno, dependencias, checkpoints por etapa, comandos de entrenamiento y comandos de evaluación. No se declara licencia, idiomas soportados ni pipeline en los metadatos de Hugging Face.
 
 Su relevancia actual es acadèmica: es una publicación aceptada en ECCV 2026 que aborda predicción de movimiento en primera persona con evaluación en el benchmark Nymeria, e introduce un esquema de entrenamiento en tres etapas sobre un tokenizador de movimiento congelado, incluyendo un ajuste por RL con recompensas multimodales (GRPO). No se trata, por lo tanto, de un modelo listo para despliegue en producción en el sentido habitual.
 
@@ -26,7 +26,7 @@ Su relevancia actual es acadèmica: es una publicación aceptada en ECCV 2026 qu
 
 ## Arquitectura y entrenamiento
 
-La arquitectura combina un modelo de lenguaje (GPT-2 medium, descargado automáticamente desde HuggingFace) con un tokenizador de movimiento PQ-VAE (configuración `pq_4096_64`) que permanece congelado durante todas las etapas. El modelo consume tres entradas: seguimiento de movimiento de tres puntos (cabeza y manos), características de escena 3D y vídeo egocéntrico. La salida es multimodal y conjunta: pose pasada, pose futura, narración pasada y narración futura, decodificadas en una sola pasada autorregresiva. La recuperación de articulaciones desde el espacio de tokens de movimiento se realiza mediante modelos corporales SMPL. Las plantillas de instrucciones proceden del directorio `deps/mGPT_instructions/`, con la convención `DATASET.TASK_ROOT`.
+La arquitectura combina un modelo de lenguaje (GPT-2 medium, descargado automáticamente desde Hugging Face) con un tokenizador de movimiento PQ-VAE (configuración `pq_4096_64`) que permanece congelado durante todas las etapas. El modelo consume tres entradas: seguimiento de movimiento de tres puntos (cabeza y manos), características de escena 3D y vídeo egocéntrico. La salida es multimodal y conjunta: pose pasada, pose futura, narración pasada y narración futura, decodificadas en una sola pasada autorregresiva. La recuperación de articulaciones desde el espacio de tokens de movimiento se realiza mediante modelos corporales SMPL. Las plantillas de instrucciones proceden del directorio `deps/mGPT_instructions/`, con la convención `DATASET.TASK_ROOT`.
 
 El entrenamiento consta de cuatro fases según la documentación del repositorio. La Stage 0 entrena el tokenizador de movimiento PQ-VAE (prerrequisito, se congela después). La Stage I es un preentrenamiento de conciencia espacial y semántica de escena, que inyecta la escena 3D en el LM y entrena comprensión espacial y semántica mediante QA de escena y QA de obstáculos y espacio libre. La Stage II es un ajuste de instrucciones multimodal y multitarea, que entrena de forma holística el seguimiento y la predicción de pose pasada y futura junto con la narración pasada y futura en una única pasada; el checkpoint liberado corresponde a `Instruct_egovlm_stp2mt_reverse_from_s2t_obs_scene_s4o1_cot_grid64`, seleccionado por `min-ADE_head`. La Stage III aplica GRPO (Group Relative Policy Optimization) con recompensas intramodales e intermodales que optimizan directamente la fidelidad pose-lenguaje. No se especifica en la información disponible el número de tokens de entrenamiento, la composición exacta del dataset ni si hubo RLHF o DPO adicionales.
 
@@ -86,14 +86,14 @@ No se dispone de datos verificables de modelos comparables en la informacion pro
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Ego3DLM (`po03087/egolm-protocol-v2-code`) | no disponible (backbone GPT-2 medium) | no disponible | no disponible | Repositorio de codigo y checkpoints en HuggingFace, 2,4 GB |
+| Ego3DLM (`po03087/egolm-protocol-v2-code`) | no disponible (backbone GPT-2 medium) | no disponible | no disponible | Repositorio de codigo y checkpoints en Hugging Face, 2,4 GB |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible |
 
 Unica referencia de contexto disponible: el backbone es GPT-2 medium, un transformer decoder de la familia GPT-2; no se aportan datos sobre modelos competidores ni cifras comparativas en el benchmark Nymeria.
 
 ## Limitaciones y advertencias
 
-- No se declara licencia en los metadatos de HuggingFace: no hay autorización explícita de uso comercial, por lo que cualquier uso en producción queda en un limbo legal hasta que el autor lo aclare.
+- No se declara licencia en los metadatos de Hugging Face: no hay autorización explícita de uso comercial, por lo que cualquier uso en producción queda en un limbo legal hasta que el autor lo aclare.
 - No hay información sobre sesgos del modelo. Al entrenarse sobre el benchmark Nymeria y datos de movimiento egocéntrico, es esperable un sesgo hacia los patrones de movimiento, entornos y demografía de ese dataset, pero no hay análisis publicado en la información disponible.
 - Riesgo de alucinación: el modelo genera narración en lenguaje además de pose. Al ser un modelo autoregresivo de lenguaje, puede producir descripciones plausibles pero incorrectas respecto al movimiento real; la Stage III con GRPO busca mitigar la falta de fidelidad pose-lenguaje, sin cuantificar la mejora en la información disponible.
 - Limitaciones de contexto: la longitud de contexto no está documentada, por lo que no puede planificarse el uso con secuencias largas.
@@ -106,10 +106,10 @@ Unica referencia de contexto disponible: el backbone es GPT-2 medium, un transfo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/po03087/egolm-protocol-v2-code
+- Modelo en Hugging Face: https://huggingface.co/po03087/egolm-protocol-v2-code
 - Paper (ECCV 2026): no disponible (se menciona la aceptación en ECCV 2026, sin enlace en la información proporcionada)
 - Benchmark Nymeria: no disponible (citado sin enlace)
-- Backbone GPT-2 medium: no disponible (la model card indica descarga automática desde HuggingFace, sin enlace directo)
-- Repositorio de código: incluido en el propio repositorio de HuggingFace (`train_egovlm_stage2.py`, `validate_egovlm_stage2.py`, `requirements-freeze.txt`)
+- Backbone GPT-2 medium: no disponible (la model card indica descarga automática desde Hugging Face, sin enlace directo)
+- Repositorio de código: incluido en el propio repositorio de Hugging Face (`train_egovlm_stage2.py`, `validate_egovlm_stage2.py`, `requirements-freeze.txt`)
 - Demo: no disponible
 - Resultados de la búsqueda web: no relevantes para este modelo

@@ -6,7 +6,7 @@ Krea 2 Amanda v1.0 es un adaptador LoRA de personaje para el modelo base de gene
 
 El interés de esta ficha es limitado desde el punto de vista de la investigación en IA: se trata de un artefacto de personalización visual, no de un modelo de lenguaje ni de un sistema con capacidades de razonamiento. Su relevancia práctica se circunscribe a flujos de trabajo de generación de imágenes con identidad consistente de personaje, un caso de uso habitual en ilustración, cómic y preproducción audiovisual. La información técnica disponible es escasa y proviene casi exclusivamente de la model card del autor.
 
-El adaptador se entrenó durante 1.500 pasos hasta la época 49, según los metadatos del propio archivo safetensors, y se etiqueta en Civitai como compatible con Krea 2 Turbo, aunque el campo `base_model` del repositorio apunta a krea/Krea-2-Raw. Esta discrepancia entre la etiqueta de Civitai y el modelo base declarado en HuggingFace conviene tenerla en cuenta al integrarlo en un pipeline.
+El adaptador se entrenó durante 1.500 pasos hasta la época 49, según los metadatos del propio archivo safetensors, y se etiqueta en Civitai como compatible con Krea 2 Turbo, aunque el campo `base_model` del repositorio apunta a krea/Krea-2-Raw. Esta discrepancia entre la etiqueta de Civitai y el modelo base declarado en Hugging Face conviene tenerla en cuenta al integrarlo en un pipeline.
 
 ## Especificaciones tecnicas
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Krea 2 Amanda v1.0 (TigerFan69) | LoRA de personaje sobre Krea 2 | no disponible (228,6 MB fp16) | no aplica | krea-2-community-license | HuggingFace y Civitai |
-| Krea-2-Raw (krea) | Modelo base de difusion text-to-image | no disponible | no aplica | licencia Krea 2 | HuggingFace |
-| LoRA de personaje genericos para FLUX.1 | LoRA de personaje | variable | no aplica | variable segun autor | Civitai, HuggingFace |
+| Krea 2 Amanda v1.0 (TigerFan69) | LoRA de personaje sobre Krea 2 | no disponible (228,6 MB fp16) | no aplica | krea-2-community-license | Hugging Face y Civitai |
+| Krea-2-Raw (krea) | Modelo base de difusion text-to-image | no disponible | no aplica | licencia Krea 2 | Hugging Face |
+| LoRA de personaje genericos para FLUX.1 | LoRA de personaje | variable | no aplica | variable segun autor | Civitai, Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada. La comparativa se limita a aspectos estructurales y de licencia.
 
@@ -81,11 +81,11 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TigerFan69/Krea-2-Amanda-v1
-- Modelo base en HuggingFace: https://huggingface.co/krea/Krea-2-Raw
+- Hugging Face: https://huggingface.co/TigerFan69/Krea-2-Amanda-v1
+- Modelo base en Hugging Face: https://huggingface.co/krea/Krea-2-Raw
 - Fuente en Civitai: https://civitai.red/models/3036699?modelVersionId=3450733
 - Licencia Krea 2: https://krea.ai/krea-2-licensing
 - Perfil del autor en Civitai: https://civitai.red/user/TigerFan69
-- Perfil del autor en HuggingFace: https://huggingface.co/TigerFan69
+- Perfil del autor en Hugging Face: https://huggingface.co/TigerFan69
 - Apoyo al autor (Ko-fi): https://ko-fi.com/tigerfan69/tiers
 - Software LoRA Studio: https://github.com/TigerFan69/lora-studio

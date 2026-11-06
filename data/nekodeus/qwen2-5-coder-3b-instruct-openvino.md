@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nekodeus/qwen2-5-coder-3b-instruct-openvino | 3B | 32.768 | OpenVINO IR INT8 | Apache 2.0 | HuggingFace (100 descargas) |
-| Qwen/Qwen2.5-Coder-3B-Instruct | 3B | 32.768 | safetensors | Apache 2.0 | HuggingFace (modelo base) |
+| Nekodeus/qwen2-5-coder-3b-instruct-openvino | 3B | 32.768 | OpenVINO IR INT8 | Apache 2.0 | Hugging Face (100 descargas) |
+| Qwen/Qwen2.5-Coder-3B-Instruct | 3B | 32.768 | safetensors | Apache 2.0 | Hugging Face (modelo base) |
 | Otros modelos de codigo de ~3B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparacion mas directa es con el modelo base Qwen2.5-Coder-3B-Instruct, del que esta version deriva. La diferencia principal es el formato (OpenVINO IR INT8 frente a safetensors) y el publico objetivo (CPU frente a GPU). No se dispone de datos de rendimiento comparativo entre ambas versiones en la informacion proporcionada.
@@ -83,7 +83,7 @@ La comparacion mas directa es con el modelo base Qwen2.5-Coder-3B-Instruct, del 
 
 ## Enlaces
 
-- HuggingFace (esta conversion): https://huggingface.co/Nekodeus/qwen2-5-coder-3b-instruct-openvino
+- Hugging Face (esta conversion): https://huggingface.co/Nekodeus/qwen2-5-coder-3b-instruct-openvino
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-3B-Instruct
 - OpenVINO: https://docs.openvino.ai
 - optimum-intel: https://github.com/huggingface/optimum-intel

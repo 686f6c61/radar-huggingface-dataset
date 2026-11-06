@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Krea 2 Amy v1 | LoRA de personaje sobre Krea 2 | 512 tensores, 109 MB fp16 | no aplica | Krea 2 Community License + terminos del creador | HuggingFace, Civitai, GitHub Releases, Ko-fi |
+| Krea 2 Amy v1 | LoRA de personaje sobre Krea 2 | 512 tensores, 109 MB fp16 | no aplica | Krea 2 Community License + terminos del creador | Hugging Face, Civitai, GitHub Releases, Ko-fi |
 | Otros LoRAs de personaje para Krea 2 | LoRA de personaje | no disponible | no aplica | variable | no disponible |
 | Modelos base de generacion texto-a-imagen | Modelo completo | no disponible | no aplica | variable | no disponible |
 
@@ -84,11 +84,11 @@ No se dispone de informacion sobre LoRAs de personaje comparables para Krea 2 ni
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TigerFan69/Krea-2-Amy-v1
+- Hugging Face: https://huggingface.co/TigerFan69/Krea-2-Amy-v1
 - Licencia (PDF): https://huggingface.co/TigerFan69/Krea-2-Amy-v1/blob/main/LICENSE.pdf
 - GitHub Releases: https://github.com/TigerFan69/krea-character-loras/releases/tag/amy-v1
 - Civitai: https://civitai.red/models/3018875
 - Perfil Civitai: https://civitai.red/user/TigerFan69
-- Perfil HuggingFace: https://huggingface.co/TigerFan69
+- Perfil Hugging Face: https://huggingface.co/TigerFan69
 - Ko-fi (descarga gratuita): https://ko-fi.com/s/45070710ea
 - Ko-fi (soporte opcional): https://ko-fi.com/tigerfan69/tiers

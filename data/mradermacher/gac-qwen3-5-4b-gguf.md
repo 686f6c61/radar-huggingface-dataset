@@ -28,7 +28,7 @@ Su relevancia práctica es limitada pero concreta: ofrece una vía rápida para 
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura interna en la model card. El unico dato tecnico verificable es que se trata de una cuantizacion estatica (`quantize_version: 2`, `output_tensor_quantised: 1`) con `convert_type: hf`, es decir, una conversion directa desde pesos en formato HuggingFace al contenedor GGUF de llama.cpp, sin entrenamiento adicional ni destilado. El proceso de cuantizacion de mradermacher aplica los tipos de llama.cpp (K-quants e I-quants) sobre cada tensor de forma independiente, con el objetivo de minimizar el error de reconstruccion por bloque.
+No se dispone de informacion sobre la arquitectura interna en la model card. El unico dato tecnico verificable es que se trata de una cuantizacion estatica (`quantize_version: 2`, `output_tensor_quantised: 1`) con `convert_type: hf`, es decir, una conversion directa desde pesos en formato Hugging Face al contenedor GGUF de llama.cpp, sin entrenamiento adicional ni destilado. El proceso de cuantizacion de mradermacher aplica los tipos de llama.cpp (K-quants e I-quants) sobre cada tensor de forma independiente, con el objetivo de minimizar el error de reconstruccion por bloque.
 
 Tampoco hay informacion sobre el ajuste fino de origen: se desconoce qué datos se usaron en YueLinHu/GAC-Qwen3.5-4B, si hubo fases de RLHF, DPO u otra alineacion, cuántos tokens se procesaron ni qué metodologia (LoRA, QLoRA, full fine-tuning) se empleo. El sufijo "GAC" no aparece explicado en la documentacion disponible. Cualquier afirmacion sobre capacidades, alineacion o calidad del ajuste seria especulativa y no debe asumirse en un entorno de produccion sin validacion previa.
 
@@ -96,7 +96,7 @@ Los valores de rendimiento no estan disponibles para este modelo, por lo que la 
 
 ## Limitaciones y advertencias
 
-- Licencia sin declarar: no es posible determinar si el uso comercial esta permitido. Los metadatos de HuggingFace indican "no disponible" y la model card no incluye texto de licencia. Hay que contactar con el autor antes de cualquier uso en produccion.
+- Licencia sin declarar: no es posible determinar si el uso comercial esta permitido. Los metadatos de Hugging Face indican "no disponible" y la model card no incluye texto de licencia. Hay que contactar con el autor antes de cualquier uso en produccion.
 - Discrepancia en el recuento de parametros: los metadatos de safetensors indican 333,5 millones de parametros, mientras que el nombre del repositorio indica "4B". Sin aclaracion del autor, no se puede garantizar el tamaño real del modelo ni sus requisitos de hardware.
 - Model card practicamente vacia: no hay informacion sobre datos de entrenamiento, idiomas, contexto, alineacion ni evaluaciones. Esto impide auditar sesgos, comportamiento en dominios sensibles o cobertura linguistica.
 - Riesgo de alucinacion: inherente a cualquier modelo de lenguaje generativo y no cuantificado en este caso; sin benchmarks no se puede estimar su magnitud relativa.
@@ -104,7 +104,7 @@ Los valores de rendimiento no estan disponibles para este modelo, por lo que la 
 - Procedencia del ajuste fino desconocida: el autor del modelo base es un usuario comunitario y no se documenta la composicion del dataset ni si se aplicaron tecnicas de alineacion o de eliminacion de rechazos. El comportamiento en materia de seguridad es, por tanto, no verificado.
 - Sin validacion de la comunidad: 0 descargas y 0 likes en el momento de redactar esta ficha; no existen informes de terceros sobre su comportamiento en produccion.
 - Longitud de contexto y memoria: al no conocerse la ventana de contexto ni el numero de capas y cabezas, no se puede dimensionar con precision la cache KV ni garantizar un rendimiento estable en contextos largos.
-- Fechas de publicacion futuras respecto al conocimiento del redactor: el repositorio y el modelo base corresponden a la familia Qwen3.5, posterior al corte de conocimiento habitual; conviene verificar la informacion directamente en HuggingFace.
+- Fechas de publicacion futuras respecto al conocimiento del redactor: el repositorio y el modelo base corresponden a la familia Qwen3.5, posterior al corte de conocimiento habitual; conviene verificar la informacion directamente en Hugging Face.
 
 ## Enlaces
 

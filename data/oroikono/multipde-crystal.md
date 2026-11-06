@@ -107,6 +107,6 @@ No se dispone de una comparativa cuantitativa con otros operadores neuronales en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oroikono/multipde-crystal
+- Modelo en Hugging Face: https://huggingface.co/oroikono/multipde-crystal
 - Búsqueda web: no se han encontrado enlaces relevantes. Los resultados devueltos (foros de Adobe Acrobat, hilos de Zhihu sobre páginas de inicio, guías de eliminación de adware y consultas sobre contabilidad de asociaciones vecinales) no guardan ninguna relación con el modelo ni con operadores neuronales para EDP, por lo que se descartan.
 - Referencias internas del bundle citadas en la model card: `NOTES.md` (registro de hallazgos de entrenamiento), `code/multipde_crystal/` (modelo, datos, entrenador, muestreador), `code/dc/` (bloques transformer y decodificador), `code/Phaedra/` (tokenizador), `phaedra_ae_fsq_4x4/` (pesos del tokenizador), `code/env.sh` y `code/requirements.txt` (entorno), `code/run_eval.sbatch`, `code/run_render.sbatch` y `code/multipde_crystal/scripts/slurm/train4h.sbatch` (trabajos SLURM), `configs/mp_113m_adamw.yaml` (configuración del modelo recomendado), `eval_full/*.json` (evaluaciones de la partición completa) y `samples_adamw_final_m0_lead6.png` (figura de ejemplo).

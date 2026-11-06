@@ -83,7 +83,7 @@ No se dispone de datos de benchmarks ni de otros modelos comparables de la misma
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mayerdenf30/Qwen3.8-Flash
+- Repositorio Hugging Face: https://huggingface.co/mayerdenf30/Qwen3.8-Flash
 - Modelo base: https://huggingface.co/ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF
 - Release abliterated de origen (referenciada en la model card): https://huggingface.co/SC117/Qwen3.8-Flash-Next-GSQ-RCO-abliterated-GGUF
 - README en chino: https://huggingface.co/SC117/Qwen3.8-Flash-Next-GSQ-RCO-abliterated-GGUF/blob/main/README.zh-CN.md

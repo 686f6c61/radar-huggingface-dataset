@@ -108,7 +108,7 @@ No se dispone de datos suficientes para comparar con alternativas de la misma ca
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/groxaxo/Qwen3.8-Flash-Next-Q2_0-H64-S4-GGUF
+- Repositorio Hugging Face: https://huggingface.co/groxaxo/Qwen3.8-Flash-Next-Q2_0-H64-S4-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Instrucciones de runtime: `runtime/README.md` (dentro del repositorio)
 - Licencia del parche de runtime: `runtime/LICENSE` (dentro del repositorio)

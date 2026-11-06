@@ -90,7 +90,7 @@ No se dispone de informacion sobre otros modelos comparables en la misma categor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pastoriomarco/Qwen3.8-Flash-Next-NVFP4-FP8-Hybrid-Delta
+- Hugging Face: https://huggingface.co/pastoriomarco/Qwen3.8-Flash-Next-NVFP4-FP8-Hybrid-Delta
 - Modelo base: https://huggingface.co/RadixArk/Qwen3.8-Flash-Next-NVFP4
 - Modelo original: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio NemoClaw-Thor: https://github.com/pastoriomarco/NemoClaw-Thor

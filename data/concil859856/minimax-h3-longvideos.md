@@ -25,7 +25,7 @@ Su relevancia es practica para flujos de trabajo de video generativo en local: a
 | Duracion por generacion del modelo base | aproximadamente 15 segundos por plano |
 | Version de ComfyUI requerida | 0.31 o superior con soporte nativo de MiniMax-H3 (probado en 0.33) |
 | Componentes que carga | UNET de MiniMax-H3, CLIP (text encoder de H3, tipo de loader `minimax`), VAE de video de H3 y VAE de audio de H3 (fichero separado y convertido) |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: no disponible. La model card no indica requisitos de memoria ni tamaños de los ficheros UNET, CLIP o VAE.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible. El unico parametro relacionado con el coste computacional que se documenta es `megapixels`, con 1.0 como presupuesto nativo de H3 y la indicacion de que bajarlo es mas rapido y mas ligero.
-- Almacenamiento: no disponible. El repositorio de HuggingFace no aloja pesos, solo el nodo y su documentacion; los pesos de MiniMax-H3, el text encoder, el VAE de video y el VAE de audio convertido se cargan por separado desde otras fuentes.
+- Almacenamiento: no disponible. El repositorio de Hugging Face no aloja pesos, solo el nodo y su documentacion; los pesos de MiniMax-H3, el text encoder, el VAE de video y el VAE de audio convertido se cargan por separado desde otras fuentes.
 - Opciones de despliegue: exclusivamente ComfyUI, version 0.31 o superior con soporte nativo de MiniMax-H3 (probado en 0.33). La instalacion consiste en copiar la carpeta en `ComfyUI/custom_nodes/` y reiniciar el servidor de ComfyUI. No se menciona soporte para vLLM, llama.cpp, Ollama, TGI ni otras plataformas.
 - Latencia y throughput estimados: no disponible.
 
@@ -106,7 +106,7 @@ No se dispone de datos de rendimiento, parametros, contexto ni benchmarks que pe
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/concil859856/MiniMax-H3-Longvideos
+- Repositorio en Hugging Face: https://huggingface.co/concil859856/MiniMax-H3-Longvideos
 - Fichero de licencia referenciado en la model card: `LICENSE` (dentro del repositorio)
 - Modelos hibridos fl2va/ref2va de MiniMax-H3 recomendados por el autor: https://huggingface.co/smhfacct/Minimax-H3-fl2va-ref2va-hybrid-models
 - Enlace de apoyo al autor (Ko-fi): https://ko-fi.com/smite79

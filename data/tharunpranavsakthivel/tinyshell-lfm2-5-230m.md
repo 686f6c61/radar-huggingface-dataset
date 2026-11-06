@@ -89,8 +89,8 @@ No se dispone de comparativas publicadas con otros modelos de la misma categorí
 
 ## Enlaces
 
-- [HuggingFace del modelo fine-tune](https://huggingface.co/tharunpranavsakthivel/tinyshell-lfm2.5-230m)
-- [HuggingFace del modelo base](https://huggingface.co/LiquidAI/LFM2.5-230M)
+- [Hugging Face del modelo fine-tune](https://huggingface.co/tharunpranavsakthivel/tinyshell-lfm2.5-230m)
+- [Hugging Face del modelo base](https://huggingface.co/LiquidAI/LFM2.5-230M)
 - [Blog de Liquid AI sobre LFM2.5-230M](https://www.liquid.ai/blog/lfm2-5-230m)
 - [Documentación oficial de LFM2.5-230M](https://docs.liquid.ai/lfm/models/lfm25-230m)
 - [Receta de vLLM para LFM2.5-230M](https://recipes.vllm.ai/LiquidAI/LFM2.5-230M)

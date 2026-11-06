@@ -71,7 +71,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/johninthepool/Qwen3.8-27B-VL-mlx-4bit)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/johninthepool/Qwen3.8-27B-VL-mlx-4bit)
 - [Modelo base Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [Repositorio de mlx-vlm](https://github.com/Blaizzy/mlx-vlm)
 - [Variante MTPLX-4bit (text-only, con MTP)](https://huggingface.co/johninthepool/Qwen3.8-27B-MTPLX-4bit)

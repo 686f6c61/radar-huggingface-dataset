@@ -105,7 +105,7 @@ Los parámetros, la longitud de contexto, el rendimiento medido y la disponibili
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RedHatAI/Qwen3-8B-speculator.dflash2
+- Modelo en Hugging Face: https://huggingface.co/RedHatAI/Qwen3-8B-speculator.dflash2
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Paper de referencia indicado en las etiquetas del repositorio: https://arxiv.org/abs/2405.05612
 - Librería Speculators (vLLM): https://github.com/vllm-project/speculators

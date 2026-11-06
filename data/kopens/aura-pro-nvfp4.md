@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Aura-Pro-NVFP4 es un modelo multimodal (image-text-to-text) publicado por el usuario kopens en HuggingFace, orientado al dominio industrial y manufactura avanzada. Según sus etiquetas, el modelo está basado en la arquitectura Gemma 4 y se presenta como una variante cuantizada en formato NVFP4 (cuantización de 4 bits nativa de NVIDIA mediante compressed-tensors), con capacidades de razonamiento, tool calling y análisis de imágenes. Su perfil de uso se centra en fábricas inteligentes (smart factory), mantenimiento predictivo, detección de anomalías y análisis de causa raíz (root-cause analysis).
+Aura-Pro-NVFP4 es un modelo multimodal (image-text-to-text) publicado por el usuario kopens en Hugging Face, orientado al dominio industrial y manufactura avanzada. Según sus etiquetas, el modelo está basado en la arquitectura Gemma 4 y se presenta como una variante cuantizada en formato NVFP4 (cuantización de 4 bits nativa de NVIDIA mediante compressed-tensors), con capacidades de razonamiento, tool calling y análisis de imágenes. Su perfil de uso se centra en fábricas inteligentes (smart factory), mantenimiento predictivo, detección de anomalías y análisis de causa raíz (root-cause analysis).
 
 El modelo soporta coreano e inglés, lo que lo hace especialmente relevante para entornos industriales en Corea que necesiten un asistente multimodal capaz de interpretar documentación técnica, imágenes de planta o sensores visuales. Con aproximadamente 20,87 mil millones de parámetros totales (dato extraído de los safetensors) y un repositorio de 30,2 GB, se sitúa en la gama de modelos medianos-grandes desplegables en una sola GPU de gama alta.
 
@@ -79,5 +79,5 @@ Nota: la comparativa es orientativa, ya que no se han publicado benchmarks de Au
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kopens/Aura-Pro-NVFP4
+- Hugging Face: https://huggingface.co/kopens/Aura-Pro-NVFP4
 - No se han encontrado en la informacion disponible enlaces adicionales (paper, blog, repositorio de codigo o demo).

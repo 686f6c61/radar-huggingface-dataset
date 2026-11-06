@@ -88,7 +88,7 @@ No se dispone de datos de benchmarks ni de configuraciones verificadas de otros 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/j-llm/Qwen3.5-2B-SpeedX2
+- Modelo en Hugging Face: https://huggingface.co/j-llm/Qwen3.5-2B-SpeedX2
 - Conversión all-GDN original: https://huggingface.co/summerMC/Qwen3.5-2B-SpeedX
 - Modelo base y profesor de destilación: https://huggingface.co/Qwen/Qwen3.5-2B
 - Biblioteca de kernels lineales citada en la model card: flash-linear-attention (sin URL en la documentación consultada)

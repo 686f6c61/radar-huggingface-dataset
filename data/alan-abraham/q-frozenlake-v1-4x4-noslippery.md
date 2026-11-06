@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`alan-abraham/q-FrozenLake-v1-4x4-noSlippery` es un agente de aprendizaje por refuerzo publicado en HuggingFace por el usuario `alan-abraham`, entrenado mediante Q-Learning para resolver el entorno FrozenLake-v1 en su variante 4x4 sin superficie resbaladiza (`is_slippery=False`). No se trata de un modelo de lenguaje ni de una red neuronal profunda: es una implementacion tabular de Q-Learning, cuyo artefacto principal es un unico fichero serializado (`q-learning.pkl`) que contiene la tabla Q aprendida junto con los metadatos del entorno.
+`alan-abraham/q-FrozenLake-v1-4x4-noSlippery` es un agente de aprendizaje por refuerzo publicado en Hugging Face por el usuario `alan-abraham`, entrenado mediante Q-Learning para resolver el entorno FrozenLake-v1 en su variante 4x4 sin superficie resbaladiza (`is_slippery=False`). No se trata de un modelo de lenguaje ni de una red neuronal profunda: es una implementacion tabular de Q-Learning, cuyo artefacto principal es un unico fichero serializado (`q-learning.pkl`) que contiene la tabla Q aprendida junto con los metadatos del entorno.
 
-El modelo se distribuye a traves del pipeline `reinforcement-learning` de HuggingFace y esta etiquetado como `custom-implementation`, lo que indica que el entrenamiento no sigue necesariamente la implementacion estandar de Stable-Baselines3, sino una implementacion propia del autor. El repositorio ocupa 0,0 GB segun los metadatos, coherente con un artefacto de tipo tabular de tamano despreciable.
+El modelo se distribuye a traves del pipeline `reinforcement-learning` de Hugging Face y esta etiquetado como `custom-implementation`, lo que indica que el entrenamiento no sigue necesariamente la implementacion estandar de Stable-Baselines3, sino una implementacion propia del autor. El repositorio ocupa 0,0 GB segun los metadatos, coherente con un artefacto de tipo tabular de tamano despreciable.
 
 Su relevancia es fundamentalmente didactica y de referencia: sirve como ejemplo minimo de como publicar y cargar un agente de RL en el Hub, y como punto de partida reproducible para experimentar con Q-Learning en entornos discretos de juguete. El autor declara una recompensa media de 1,00 +/- 0,00 en el entorno de entrenamiento, aunque dicho resultado figura como no verificado.
 
@@ -50,7 +50,7 @@ La model card no documenta el numero de episodios, la tasa de aprendizaje, el fa
 - Material docente para cursos de aprendizaje por refuerzo: el agente sirve como ejemplo minimo y reproducible de Q-Learning tabular, ya que el artefacto es pequeno y la carga desde el Hub se resuelve en una linea de codigo.
 - Referencia de baseline en entornos de juguete: permite comparar rapidamente si una implementacion propia de Q-Learning converge en FrozenLake 4x4, dado que el autor declara recompensa media de 1,00.
 - Verificacion de pipelines de RL en CI: al ser un fichero `q-learning.pkl` de tamano despreciable, puede descargarse y evaluarse en cada ejecucion de un pipeline de integracion continua sin coste apreciable de almacenamiento ni de computo.
-- Pruebas de integracion de la libreria `load_from_hub` y del flujo de publicacion de modelos de RL en HuggingFace: util para validar que el formato de artefacto y los metadatos `env_id` se cargan correctamente.
+- Pruebas de integracion de la libreria `load_from_hub` y del flujo de publicacion de modelos de RL en Hugging Face: util para validar que el formato de artefacto y los metadatos `env_id` se cargan correctamente.
 - Experimentos de ablacion sobre estrategias de exploracion (epsilon-greedy, decaimiento de epsilon, softmax) usando la tabla Q publicada como punto de partida o como referencia de convergencia.
 - Generacion de trayectorias sinteticas de bajo coste: el agente puede ejecutarse en CPU para producir episodios completos del entorno, utiles como datos de prueba en sistemas de monitorizacion o visualizacion de agentes.
 - Demostraciones interactivas en notebooks: la ausencia de requisitos de GPU y el tamano minimo del artefacto permiten incrustar el agente en tutoriales ejecutables sin dependencias pesadas.
@@ -95,8 +95,8 @@ Como contexto, el unico punto de referencia cuantitativo disponible es el propio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alan-abraham/q-FrozenLake-v1-4x4-noSlippery
-- Perfil del autor en HuggingFace: https://huggingface.co/alan-abraham
+- Modelo en Hugging Face: https://huggingface.co/alan-abraham/q-FrozenLake-v1-4x4-noSlippery
+- Perfil del autor en Hugging Face: https://huggingface.co/alan-abraham
 - Entorno FrozenLake-v1 (Gymnasium): no disponible en la informacion proporcionada
 - Documentacion de `load_from_hub` (rl-zoo3): no disponible en la informacion proporcionada
 - Paper o informe tecnico asociado: no disponible

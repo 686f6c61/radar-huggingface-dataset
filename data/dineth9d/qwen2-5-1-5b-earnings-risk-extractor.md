@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks comparativos entre estos modelos en la tare
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dineth9d/qwen2.5-1.5b-earnings-risk-extractor
+- Repositorio Hugging Face: https://huggingface.co/dineth9d/qwen2.5-1.5b-earnings-risk-extractor
 - Modelo base Qwen2.5-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Blog oficial de Qwen2.5: https://qwenlm.github.io/blog/qwen2.5/
 - Technical Report de Qwen2.5: https://arxiv.org/pdf/2412.15115

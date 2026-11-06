@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Hunter-1.7B es un ajuste fino mediante LoRA del modelo base XHToken/Spark-X2.5-1.7B, desarrollado por el usuario dolek12 y publicado en HuggingFace bajo licencia Apache 2.0. El modelo ha sido especializado en tareas defensivas de ciberseguridad: triaje de defensa, respuesta a incidentes y razonamiento causal sobre rutas de ataque. El adaptador LoRA se fusiono en los pesos base en BF16, por lo que el resultado es un modelo denso de 1.707.657.216 parametros (aproximadamente 1,7B) que ocupa 3,4 GB en el repositorio.
+Hunter-1.7B es un ajuste fino mediante LoRA del modelo base XHToken/Spark-X2.5-1.7B, desarrollado por el usuario dolek12 y publicado en Hugging Face bajo licencia Apache 2.0. El modelo ha sido especializado en tareas defensivas de ciberseguridad: triaje de defensa, respuesta a incidentes y razonamiento causal sobre rutas de ataque. El adaptador LoRA se fusiono en los pesos base en BF16, por lo que el resultado es un modelo denso de 1.707.657.216 parametros (aproximadamente 1,7B) que ocupa 3,4 GB en el repositorio.
 
 La relevancia de esta ficha es limitada pero concreta: se trata de un ejemplo de especializacion vertical de un modelo pequeno (rango 1-2B) sobre un dominio tecnico muy especifico como es la respuesta a incidentes. El autor documenta con detalle el proceso de entrenamiento (datos, hiperparametros, perdida) y, de forma notable, enumera las limitaciones conocidas del ajuste, incluyendo un fallo en la seleccion de capas objetivo del LoRA. No se han publicado resultados de benchmarks.
 
@@ -86,6 +86,6 @@ No se dispone de datos de benchmarks del modelo, por lo que no es posible compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dolek12/Hunter-1.7B
+- Modelo en Hugging Face: https://huggingface.co/dolek12/Hunter-1.7B
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.5-1.7B
 - Dataset de entrenamiento citado: `oi-uae/cyber-security` (referencia textual en la model card; no se proporciona URL directa en la informacion disponible)

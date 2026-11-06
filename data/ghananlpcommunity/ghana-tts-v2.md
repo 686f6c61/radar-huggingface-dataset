@@ -93,5 +93,5 @@ No se dispone de datos verificados de benchmarks ni de especificaciones comparab
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ghananlpcommunity/ghana-tts-v2
+- Modelo en Hugging Face: https://huggingface.co/ghananlpcommunity/ghana-tts-v2
 - La busqueda web realizada no ha devuelto enlaces relevantes sobre el modelo (los resultados obtenidos correspondian a contenidos no relacionados sobre barrios de Nimes). Por tanto, no hay papers, blogs, repositorios ni demos adicionales que se puedan enlazar desde la informacion disponible.

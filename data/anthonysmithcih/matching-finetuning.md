@@ -39,7 +39,7 @@ El repositorio incluye un archivo `run.py` que contiene el modelo y un punto de 
 Dado que el checkpoint no está entrenado, no existen casos de uso prácticos reales en producción. Los escenarios posibles se limitan al ámbito de desarrollo e investigación:
 
 - Pruebas de integración en pipelines de *machine learning*: el modelo puede utilizarse para validar que el código de carga, inferencia y guardado de pesos funciona correctamente, gracias a su tamaño mínimo.
-- Desarrollo de adaptadores para APIs de carga automática: al ser una implementación personalizada, sirve como banco de pruebas para escribir adaptadores que permitan su uso con librerías estándar como HuggingFace Transformers.
+- Desarrollo de adaptadores para APIs de carga automática: al ser una implementación personalizada, sirve como banco de pruebas para escribir adaptadores que permitan su uso con librerías estándar como Hugging Face Transformers.
 - Experimentación con arquitecturas CLIP alternativas: la atención dilatada y la fusión gated pueden estudiarse en un entorno de bajo coste computacional.
 - Verificación de reproducibilidad: el autor recomienda entrenar el modelo con un conjunto de validación pareado y comparar con una línea base de capacidad equivalente, lo que lo convierte en un punto de partida para estudios metodológicos.
 - Formación en fine-tuning: al ser un modelo diminuto, es adecuado para aprender flujos de ajuste fino (LoRA, full fine-tuning) sin necesidad de hardware potente.
@@ -72,5 +72,5 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/anthonysmithcih/matching-finetuning
+- Repositorio en Hugging Face: https://huggingface.co/anthonysmithcih/matching-finetuning
 - No se han encontrado otros enlaces relevantes (papers, blogs, demos) en la búsqueda web.

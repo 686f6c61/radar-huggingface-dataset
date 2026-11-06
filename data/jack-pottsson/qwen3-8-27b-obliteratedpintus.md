@@ -88,7 +88,7 @@ La comparativa con otros modelos abliterados de la misma familia no esta disponi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JACK-POTTSSON/Qwen3.8-27B-OBLITERATEDpintus
+- Hugging Face: https://huggingface.co/JACK-POTTSSON/Qwen3.8-27B-OBLITERATEDpintus
 - Repositorio de investigacion OBLITERATUS: https://github.com/elder-plinius/OBLITERATUS
 - Blog de ExplainX sobre el modelo: https://www.explainx.ai/blog/pliny-qwen3-8-27b-obliterated-alex-finn-mac-august-2026
 - vLLM Recipes (documentacion de la arquitectura Qwen3.8-27B): https://recipes.vllm.ai/Qwen/Qwen3.8-27B

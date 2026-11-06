@@ -81,7 +81,7 @@ No se dispone de información sobre modelos comparables de generación de terren
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Carota233/llm-style-terrain-ablation
+- Repositorio Hugging Face: https://huggingface.co/Carota233/llm-style-terrain-ablation
 - Código de entrenamiento/evaluación (GitHub): https://github.com/luobochuanqi/llm-style-terrain-joint
 - Resultados de búsqueda web relacionados con ablación en LLMs (no directamente sobre este modelo):
   - AbGen (ACL 2025): https://arxiv.org/html/2507.13300v1

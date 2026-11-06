@@ -95,6 +95,6 @@ La comparación con el DDPM estándar es solo ilustrativa; no se dispone de dato
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MarwenBellili/canolaxray-conditional-DDPM
+- Modelo en Hugging Face: https://huggingface.co/MarwenBellili/canolaxray-conditional-DDPM
 - Modelo contraparte (LoRA): https://huggingface.co/MarwenBellili/canolaxray-qwen-lora
 - No se encontraron papers, repositorios ni demos adicionales específicos del modelo en la búsqueda web.

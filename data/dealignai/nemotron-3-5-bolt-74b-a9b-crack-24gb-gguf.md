@@ -18,7 +18,7 @@ Su relevancia es doble. Por un lado, demuestra que un modelo híbrido Mamba2 + M
 | Longitud de contexto | 65.536 tokens en el ejemplo de ejecucion recomendado de la model card (`-c 65536`); maximo oficial no disponible |
 | Tipos de cuantizacion | GGUF mixto de NVIDIA: IQ2_XXS en expertos enrutados y compartidos, NVFP4 en proyecciones de entrada/salida de Mamba, Q8_0 en atencion (q/k/v/o), latent fc1/fc2, lm_head y token_embd, F32 en normas. 2,38 BPW |
 | Idiomas soportados | Ingles, frances, espanol, aleman, italiano, japones, coreano, portugues, hindi y chino |
-| Licencia | NVIDIA Open Model License (identificador `other` en HuggingFace) |
+| Licencia | NVIDIA Open Model License (identificador `other` en Hugging Face) |
 | Formato de pesos | GGUF (modelo principal, mmproj de vision y drafter LiLiCorr) |
 
 ## Arquitectura y entrenamiento
@@ -97,9 +97,9 @@ Las dos respuestas no conformes en HarmBench son bucles de decodificacion ("garb
 
 | Modelo | Parametros | Activos | Cuantizacion | MMLU micro | Rechazos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| dealignai Nemotron-3.5-Bolt-74B-A9B-CRACK-24GB-GGUF | 74B | 9B | IQ2_XXS / NVFP4 / Q8_0 (22 GB) | 81,38% (parcial, n=7262) | 0 en HarmBench-320 (ASR 99,4%) | NVIDIA Open Model License | HuggingFace, 0 descargas |
-| nvidia Nemotron-3.5-Bolt-74B-A9B-24GB-GGUF | 74B | 9B | Mixta de NVIDIA (24 GB) | 80,76% (completo) / 82,66% (subconjunto n=6980) | ~47,9% off / ~52,4% on | NVIDIA Open Model License | HuggingFace |
-| nvidia Nemotron-3.5-Bolt-74B-A9B-BF16 | 74B | 9B | BF16 | No disponible | No disponible | NVIDIA Open Model License | HuggingFace |
+| dealignai Nemotron-3.5-Bolt-74B-A9B-CRACK-24GB-GGUF | 74B | 9B | IQ2_XXS / NVFP4 / Q8_0 (22 GB) | 81,38% (parcial, n=7262) | 0 en HarmBench-320 (ASR 99,4%) | NVIDIA Open Model License | Hugging Face, 0 descargas |
+| nvidia Nemotron-3.5-Bolt-74B-A9B-24GB-GGUF | 74B | 9B | Mixta de NVIDIA (24 GB) | 80,76% (completo) / 82,66% (subconjunto n=6980) | ~47,9% off / ~52,4% on | NVIDIA Open Model License | Hugging Face |
+| nvidia Nemotron-3.5-Bolt-74B-A9B-BF16 | 74B | 9B | BF16 | No disponible | No disponible | NVIDIA Open Model License | Hugging Face |
 
 No se dispone en la informacion proporcionada de otros modelos de terceros comparables en la misma categoria (hibrido Mamba2 + MoE de ~74B con vision), por lo que la comparativa se limita a las tres variantes de la misma familia.
 
@@ -120,7 +120,7 @@ No se dispone en la informacion proporcionada de otros modelos de terceros compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dealignai/Nemotron-3.5-Bolt-74B-A9B-CRACK-24GB-GGUF
+- Modelo en Hugging Face: https://huggingface.co/dealignai/Nemotron-3.5-Bolt-74B-A9B-CRACK-24GB-GGUF
 - Modelo base BF16: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16
 - Licencia NVIDIA Open Model License: https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-open-model-license/
 - Perfil del autor: https://x.com/dealignai

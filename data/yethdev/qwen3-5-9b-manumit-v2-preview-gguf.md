@@ -6,7 +6,7 @@
 
 El modelo base, Qwen3.5-9B, según fuentes externas, es parte de la familia Qwen3.5 de Alibaba, que integra visión y lenguaje en una arquitectura unificada con entrenamiento temprano de fusión multimodal. Sin embargo, esta versión específica se presenta como un modelo de generación de texto (pipeline `text-generation`) y no se confirma si conserva capacidades multimodales. El repositorio contiene aproximadamente 8,95 mil millones de parámetros y un tamaño de 5,6 GB, lo que sugiere cuantizaciones de precisión media-baja típicas de GGUF.
 
-Dado el escaso contenido de la model card y la ausencia de documentación adicional, esta ficha se basa principalmente en los metadatos de HuggingFace y en información pública sobre el modelo base. Se recomienda precaución al usar esta versión en entornos de producción, ya que no se han publicado benchmarks ni detalles de entrenamiento.
+Dado el escaso contenido de la model card y la ausencia de documentación adicional, esta ficha se basa principalmente en los metadatos de Hugging Face y en información pública sobre el modelo base. Se recomienda precaución al usar esta versión en entornos de producción, ya que no se han publicado benchmarks ni detalles de entrenamiento.
 
 ## Especificaciones tecnicas
 
@@ -73,7 +73,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yethdev/qwen3.5-9b-manumit-v2-preview-gguf
+- Repositorio Hugging Face: https://huggingface.co/yethdev/qwen3.5-9b-manumit-v2-preview-gguf
 - Version v1 del mismo modelo: https://huggingface.co/yethdev/qwen3.5-9b-manumit-v1-GGUF
 - Modelo relacionado (qwythos-9b-v2-manumit-v1): https://huggingface.co/yethdev/qwythos-9b-v2-manumit-v1-GGUF
 - Repositorio oficial de Qwen3.5 (GitHub): https://github.com/wendashi/Qwen3.5

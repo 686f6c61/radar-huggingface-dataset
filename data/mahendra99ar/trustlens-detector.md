@@ -2,7 +2,7 @@
 
 ## Resumen
 
-trustlens-detector es un modelo de clasificacion de texto publicado en HuggingFace por el usuario Mahendra99ar, distribuido bajo el identificador Mahendra99ar/trustlens-detector. Forma parte del proyecto TrustLens, cuyo objetivo declarado es detectar resenas de producto escritas por IA y resumir la opinion genuina por aspectos. El modelo se enmarca en la categoria de text-classification y esta etiquetado con las palabras clave transformers.js, onnx, bert, reviews y trustlens.
+trustlens-detector es un modelo de clasificacion de texto publicado en Hugging Face por el usuario Mahendra99ar, distribuido bajo el identificador Mahendra99ar/trustlens-detector. Forma parte del proyecto TrustLens, cuyo objetivo declarado es detectar resenas de producto escritas por IA y resumir la opinion genuina por aspectos. El modelo se enmarca en la categoria de text-classification y esta etiquetado con las palabras clave transformers.js, onnx, bert, reviews y trustlens.
 
 Se trata de un codificador de la familia BERT exportado a ONNX y cuantizado a INT8 (archivo onnx/model_quantized.onnx), disenado para ejecutarse integramente en el navegador mediante Transformers.js. El repositorio ocupa 0,2 GB y, en la fecha de consulta, acumula 0 descargas y 0 likes, lo que indica que es un artefacto reciente y practicamente sin adopcion publica.
 
@@ -69,7 +69,7 @@ No se dispone de datos verificados en la informacion proporcionada para establec
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos comparativos |
 |---|---|---|---|---|---|
-| Mahendra99ar/trustlens-detector | no disponible | no disponible | no disponible | HuggingFace, transformers.js / ONNX INT8 | 0 descargas, 0 likes |
+| Mahendra99ar/trustlens-detector | no disponible | no disponible | no disponible | Hugging Face, transformers.js / ONNX INT8 | 0 descargas, 0 likes |
 | Detector basado en RoBERTa de OpenAI | no disponible | no disponible | no disponible | no verificada en esta busqueda | no disponible |
 | Hello-SimpleAI/chatgpt-detector-roberta | no disponible | no disponible | no disponible | no verificada en esta busqueda | no disponible |
 | Detectores de la familia desklib | no disponible | no disponible | no disponible | no verificada en esta busqueda | no disponible |
@@ -87,7 +87,7 @@ No se dispone de datos verificados en la informacion proporcionada para establec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mahendra99ar/trustlens-detector
+- Modelo en Hugging Face: https://huggingface.co/Mahendra99ar/trustlens-detector
 - Archivos referenciados en la model card, no disponibles en la informacion proporcionada: metrics.json y export_report.json dentro del repositorio del modelo.
 - Resultados de busqueda web no relacionados con este modelo concreto (se listan solo para descartar confusion de nombres):
   - https://cybersecuritynews.com/llmjacking-attack/

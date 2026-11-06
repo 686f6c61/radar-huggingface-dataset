@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `paper_022405165_robotics_vision_language` es un artefacto de texto que contiene un borrador de artículo académico en formato Markdown, centrado en el tema de visión y lenguaje para robótica. No se trata de un modelo de inteligencia artificial, sino de un documento de investigación con una estructura predefinida que incluye introducción, planteamiento del problema, solución, validación y trabajo futuro. El autor, Alinealmeidagin, ha publicado este archivo en HuggingFace, aunque no se proporciona información sobre su contenido técnico, arquitectura o parámetros.
+El repositorio `paper_022405165_robotics_vision_language` es un artefacto de texto que contiene un borrador de artículo académico en formato Markdown, centrado en el tema de visión y lenguaje para robótica. No se trata de un modelo de inteligencia artificial, sino de un documento de investigación con una estructura predefinida que incluye introducción, planteamiento del problema, solución, validación y trabajo futuro. El autor, Alinealmeidagin, ha publicado este archivo en Hugging Face, aunque no se proporciona información sobre su contenido técnico, arquitectura o parámetros.
 
-El repositorio se describe como un "paper" con un enfoque empírico, un estilo narrativo no estructurado y una cita bibliográfica en formato numérico BibTeX. El único archivo es `paper_022405165_robotics_vision_language.md`, que contiene el texto completo del artículo. La licencia es CC-BY-4.0, lo que permite su uso y distribución con atribución. La fecha de creación es el 22 de agosto de 2026, aunque no se especifica el motivo de su publicación en HuggingFace.
+El repositorio se describe como un "paper" con un enfoque empírico, un estilo narrativo no estructurado y una cita bibliográfica en formato numérico BibTeX. El único archivo es `paper_022405165_robotics_vision_language.md`, que contiene el texto completo del artículo. La licencia es CC-BY-4.0, lo que permite su uso y distribución con atribución. La fecha de creación es el 22 de agosto de 2026, aunque no se especifica el motivo de su publicación en Hugging Face.
 
 Dado que no se trata de un modelo entrenado, no se pueden evaluar capacidades de generación de texto, razonamiento o visión. El repositorio es, por tanto, una pieza de documentación o un borrador de investigación, no un recurso técnico para desarrollo o inferencia.
 
@@ -64,5 +64,5 @@ No disponible. Al no tratarse de un modelo, no se pueden comparar parámetros, c
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/Alinealmeidagin/paper_022405165_robotics_vision_language
+- Repositorio de Hugging Face: https://huggingface.co/Alinealmeidagin/paper_022405165_robotics_vision_language
 - No se han encontrado otros enlaces relevantes en la búsqueda web, como papers, blogs o repositorios asociados.

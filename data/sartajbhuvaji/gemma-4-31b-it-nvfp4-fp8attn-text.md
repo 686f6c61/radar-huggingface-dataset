@@ -66,9 +66,9 @@ El autor señala que el incremento de KL (1,19× respecto a NVIDIA) es esperable
 
 | Modelo | Tamaño | Cuantización | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `google/gemma-4-31B-it` | 31B | BF16 | 256K | Apache-2.0 | HuggingFace |
-| `nvidia/Gemma-4-31B-IT-NVFP4` | 31B (NVFP4 MLPs, BF16 attention) | 32,63 GB | 256K | Apache-2.0 | HuggingFace |
-| Este modelo | 31B (NVFP4 MLPs, FP8 attention) | 23 GB | 256K | Apache-2.0 | HuggingFace |
+| `google/gemma-4-31B-it` | 31B | BF16 | 256K | Apache-2.0 | Hugging Face |
+| `nvidia/Gemma-4-31B-IT-NVFP4` | 31B (NVFP4 MLPs, BF16 attention) | 32,63 GB | 256K | Apache-2.0 | Hugging Face |
+| Este modelo | 31B (NVFP4 MLPs, FP8 attention) | 23 GB | 256K | Apache-2.0 | Hugging Face |
 
 La ventaja de este modelo es la reducción de memoria adicional (~30% menos que NVIDIA) a costa de una ligera pérdida de precisión en la distribución de tokens. La comparación con otros modelos de la misma categoría (como Gemma 3 27B o Llama 3.3 70B) no se ha incluido por falta de datos en la información proporcionada.
 
@@ -83,9 +83,9 @@ La ventaja de este modelo es la reducción de memoria adicional (~30% menos que 
 
 ## Enlaces
 
-- [HuggingFace - sartajbhuvaji/Gemma-4-31B-IT-NVFP4-FP8attn-text](https://huggingface.co/sartajbhuvaji/Gemma-4-31B-IT-NVFP4-FP8attn-text)
-- [HuggingFace - google/gemma-4-31B](https://huggingface.co/google/gemma-4-31B)
-- [HuggingFace - nvidia/Gemma-4-31B-IT-NVFP4](https://huggingface.co/nvidia/Gemma-4-31B-IT-NVFP4)
+- [Hugging Face - sartajbhuvaji/Gemma-4-31B-IT-NVFP4-FP8attn-text](https://huggingface.co/sartajbhuvaji/Gemma-4-31B-IT-NVFP4-FP8attn-text)
+- [Hugging Face - google/gemma-4-31B](https://huggingface.co/google/gemma-4-31B)
+- [Hugging Face - nvidia/Gemma-4-31B-IT-NVFP4](https://huggingface.co/nvidia/Gemma-4-31B-IT-NVFP4)
 - [Repositorio unfuse (herramienta de cuantización)](https://github.com/SartajBhuvaji/unfuse)
 - [Model card de Gemma 4 (Google AI for Developers)](https://ai.google.dev/gemma/docs/core/model_card_4)
 - [NVIDIA NIM - Gemma 4 31B IT](https://build.nvidia.com/google/gemma-4-31b-it/modelcard)

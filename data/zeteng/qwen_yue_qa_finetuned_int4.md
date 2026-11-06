@@ -92,7 +92,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Zeteng/qwen_yue_qa_finetuned_int4
+- Modelo en Hugging Face: https://huggingface.co/Zeteng/qwen_yue_qa_finetuned_int4
 - Post-mortem, numeros de evaluacion y utilidades reutilizables: https://github.com/Lam810/cantonese-llm-lab
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Conjunto de datos SFT relacionado del mismo autor: https://huggingface.co/datasets/Zeteng/cantonese-llm-data

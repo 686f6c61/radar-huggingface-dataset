@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks comparativos con el modelo base u o
 
 | Modelo | Parametros | Contexto | GSM8K (test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ssurface/cot-dialect-qwen3-4b-instruct-sft-l3 (este) | 4B + LoRA r=16 | 1024 (entrenamiento) | 81,8% | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3-4B-Instruct-2507 (base) | 4B | no especificado en la informacion disponible | no disponible | Apache 2.0 | HuggingFace |
-| Otros adaptadores de la familia cot-compression-dialects (L1, L2, L4, L5) | 4B + LoRA | no especificado | no disponible | Apache 2.0 | HuggingFace (presumiblemente) |
+| ssurface/cot-dialect-qwen3-4b-instruct-sft-l3 (este) | 4B + LoRA r=16 | 1024 (entrenamiento) | 81,8% | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3-4B-Instruct-2507 (base) | 4B | no especificado en la informacion disponible | no disponible | Apache 2.0 | Hugging Face |
+| Otros adaptadores de la familia cot-compression-dialects (L1, L2, L4, L5) | 4B + LoRA | no especificado | no disponible | Apache 2.0 | Hugging Face (presumiblemente) |
 
 No se dispone de datos de benchmarks del modelo base u otros adaptadores de la familia en la informacion proporcionada, por lo que la comparativa cuantitativa directa no es posible.
 

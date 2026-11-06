@@ -4,7 +4,7 @@
 
 `praiselab-picuslab/benchmark-slm-fiven-gemma-4-4b-mix` es un adaptador LoRA publicado por el grupo de investigacion PRAISE (PICUS Lab, Departamento de Ingenieria Electrica y Tecnologias de la Informacion, Universidad de Napoles Federico II) sobre el modelo base `google/gemma-4-E4B-it` de Google DeepMind. Por los tags del repositorio (`benchmark-slm`, `dataset-fiven`, `strategy-mix`, `or2`) se trata de un artefacto experimental dentro de una campana de evaluacion de modelos de lenguaje pequenos (SLM), no de un modelo de proposito general listo para produccion.
 
-El repositorio pesa 0,1 GB, coherente con un adaptador PEFT en safetensors y no con un modelo completo. El acceso esta restringido (gated): requiere aceptar condiciones en HuggingFace. La licencia no aparece indicada en los metadatos y el unico idioma declarado es el italiano (`it`), aunque el modelo base Gemma 4 es multilingue.
+El repositorio pesa 0,1 GB, coherente con un adaptador PEFT en safetensors y no con un modelo completo. El acceso esta restringido (gated): requiere aceptar condiciones en Hugging Face. La licencia no aparece indicada en los metadatos y el unico idioma declarado es el italiano (`it`), aunque el modelo base Gemma 4 es multilingue.
 
 Su relevancia es acotada y de caracter metodologico: sirve para reproducir o auditar un punto concreto de un benchmark de SLM (variante de mezcla de estrategias sobre el dataset FIVEN), no para desplegarse como asistente final. No se han publicado resultados de benchmarks, ficha de modelo ni hiperparametros de entrenamiento en la informacion disponible.
 
@@ -64,17 +64,17 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | `praiselab-picuslab/benchmark-slm-fiven-gemma-4-4b-mix` | Adaptador LoRA sobre base E4B (tamano no disponible) | No disponible | Sin benchmarks publicados | No disponible | Gated, 0 descargas, 0 likes |
-| `google/gemma-4-E4B-it` (modelo base) | Variante E4B de la familia Gemma 4 | No disponible en la informacion | No disponible en la informacion | La de Gemma 4 (no detallada aqui) | Publico en HuggingFace |
+| `google/gemma-4-E4B-it` (modelo base) | Variante E4B de la familia Gemma 4 | No disponible en la informacion | No disponible en la informacion | La de Gemma 4 (no detallada aqui) | Publico en Hugging Face |
 | Gemma 4 31B dense (familia) | 31 000 M | No disponible en la informacion | No disponible en la informacion | La de Gemma 4 | Publico, abril de 2026 |
 | Gemma 4 12B Unified (familia) | 11 950 M | No disponible en la informacion | No disponible en la informacion | La de Gemma 4 | Publico, junio de 2026 |
 | Gemma 4 2B edge (familia) | 2 000 M | No disponible en la informacion | No disponible en la informacion | La de Gemma 4 | Publico, abril de 2026 |
 
-No se dispone de datos para comparar rendimiento frente a otros adaptadores del mismo proyecto `benchmark-slm`; la coleccion existe en HuggingFace pero no se aportan metricas en la informacion recibida.
+No se dispone de datos para comparar rendimiento frente a otros adaptadores del mismo proyecto `benchmark-slm`; la coleccion existe en Hugging Face pero no se aportan metricas en la informacion recibida.
 
 ## Limitaciones y advertencias
 
 - Ausencia total de ficha de modelo: no hay README, hiperparametros, composicion del dataset ni intencion declarada, lo que impide evaluar sesgos o calidad de forma informada.
-- Acceso restringido: requiere aceptar condiciones en HuggingFace; la automatizacion de descargas en CI necesita un token con permiso aceptado.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face; la automatizacion de descargas en CI necesita un token con permiso aceptado.
 - Licencia no declarada: no se puede asumir uso comercial permitido. Cualquier despliegue en produccion exige verificar la licencia del modelo base Gemma 4 y las condiciones del autor del adaptador.
 - Riesgo de alucinacion: no evaluado. Al ser un ajuste especifico sobre un dataset de benchmark, puede degradar el comportamiento del base fuera de la distribucion de entrenamiento.
 - Cobertura linguistica declarada unicamente en italiano: el rendimiento en castellano, catalan, gallego o euskera no esta documentado y no deberia darse por bueno.
@@ -85,8 +85,8 @@ No se dispone de datos para comparar rendimiento frente a otros adaptadores del 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/praiselab-picuslab/benchmark-slm-fiven-gemma-4-4b-mix
-- Organizacion en HuggingFace: https://huggingface.co/praiselab-picuslab
+- Modelo en Hugging Face: https://huggingface.co/praiselab-picuslab/benchmark-slm-fiven-gemma-4-4b-mix
+- Organizacion en Hugging Face: https://huggingface.co/praiselab-picuslab
 - Datasets de la organizacion: https://huggingface.co/praiselab-picuslab/datasets
 - Coleccion de modelos etiquetados `benchmark-slm`: https://huggingface.co/models?other=benchmark-slm
 - Organizacion en GitHub (PRAISELab-PicusLab): https://github.com/PRAISELab-PicusLab

@@ -63,8 +63,8 @@ No se disponen de modelos comparables de la misma categoria (otros adaptadores L
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| chenhaodev/triage-qwen3-8b-lora | Modelo base 8B + LoRA (no especificado) | No disponible | No disponible | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3-8B | 8.000 millones | No disponible | No disponible | Apache 2.0 | HuggingFace |
+| chenhaodev/triage-qwen3-8b-lora | Modelo base 8B + LoRA (no especificado) | No disponible | No disponible | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3-8B | 8.000 millones | No disponible | No disponible | Apache 2.0 | Hugging Face |
 
 La principal diferencia es que el adaptador añade capacidades especificas de triaje telefonico sobre el modelo base, sin modificar la arquitectura ni publicar evaluaciones comparativas.
 

@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 - Con cuantización 4-bit (GGUF): VRAM estimada de 6-7 GB. Puede ejecutarse en una RTX 3060 de 12 GB o similar.
 - En precisión fp16: VRAM estimada de 18 GB. Necesita RTX 3090/4090 (24 GB), A100 (40 GB) o similar.
 - El adaptador PEFT añade un pequeño overhead de memoria durante el forward pass, típicamente inferior a 1 GB.
-- Opciones de despliegue: vLLM, TGI o el stack HuggingFace/PEFT para adaptadores. llama.cpp admite LoRA, aunque requiere convertir los pesos al formato GGUF. No se proporcionan instrucciones oficiales de despliegue.
+- Opciones de despliegue: vLLM, TGI o el stack Hugging Face/PEFT para adaptadores. llama.cpp admite LoRA, aunque requiere convertir los pesos al formato GGUF. No se proporcionan instrucciones oficiales de despliegue.
 
 ## Comparativa con modelos similares
 
@@ -77,6 +77,6 @@ No se han publicado benchmarks comparativos entre ambos. No se dispone de datos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lucabaroni/qwen35-9b-rlvr-no-conftest-20260909
+- Modelo en Hugging Face: https://huggingface.co/lucabaroni/qwen35-9b-rlvr-no-conftest-20260909
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B (revisión `c202236235762e1c871ad0ccb60c8ee5ba337b9a`)
 - Dataset de entrenamiento: https://huggingface.co/datasets/lucabaroni/rlvr-reward-hacking-scale-no-conftest-20260909

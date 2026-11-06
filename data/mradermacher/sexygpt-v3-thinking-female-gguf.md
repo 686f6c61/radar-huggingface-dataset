@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SexyGPT-v3-Thinking-Female es un modelo de lenguaje especializado en conversación con capacidades de razonamiento extendido, orientado a roleplay y generación de texto sin censura. Desarrollado por el usuario ross-dev como modelo base, y cuantizado a formato GGUF por mradermacher para su uso eficiente en entornos locales, este modelo se basa en la arquitectura de Qwen (según los tags de HuggingFace) y ha sido ajustado mediante técnicas de refuerzo como GRPO, probablemente utilizando la herramienta Unsloth. Con aproximadamente 27.300 millones de parámetros, está diseñado para ofrecer respuestas contextuales y sofisticadas en inglés, con un modo de "pensamiento" que permite razonar antes de responder.
+SexyGPT-v3-Thinking-Female es un modelo de lenguaje especializado en conversación con capacidades de razonamiento extendido, orientado a roleplay y generación de texto sin censura. Desarrollado por el usuario ross-dev como modelo base, y cuantizado a formato GGUF por mradermacher para su uso eficiente en entornos locales, este modelo se basa en la arquitectura de Qwen (según los tags de Hugging Face) y ha sido ajustado mediante técnicas de refuerzo como GRPO, probablemente utilizando la herramienta Unsloth. Con aproximadamente 27.300 millones de parámetros, está diseñado para ofrecer respuestas contextuales y sofisticadas en inglés, con un modo de "pensamiento" que permite razonar antes de responder.
 
 La relevancia de este modelo radica en su naturaleza "uncensored" y su enfoque en interacciones de rol con personajes femeninos, lo que lo sitúa en un nicho de aplicaciones de entretenimiento para adultos. Al estar disponible en cuantizaciones GGUF, puede ejecutarse en hardware de consumo mediante herramientas como llama.cpp u Ollama, lo que facilita su despliegue local sin depender de servicios en la nube. Sin embargo, su contenido explícito y su licencia Apache 2.0 (que permite uso comercial) plantean consideraciones éticas y legales importantes.
 
@@ -21,7 +21,7 @@ La relevancia de este modelo radica en su naturaleza "uncensored" y su enfoque e
 
 ## Arquitectura y entrenamiento
 
-La información disponible no detalla la arquitectura interna del modelo más allá de su pertenencia a la familia Qwen. Los tags de HuggingFace indican que el entrenamiento utilizó GRPO (Group Relative Policy Optimization), una técnica de optimización por refuerzo, y la herramienta Unsloth, conocida por acelerar el fine-tuning. El modelo base, ross-dev/SexyGPT-v3-Thinking-Female, es un ajuste fino de un modelo Qwen de gran tamaño (posiblemente Qwen3-32B, aunque no está confirmado). El proyecto multimodular incluye un archivo mmproj (multimodal projector), lo que sugiere que el modelo puede aceptar entradas de imagen, aunque no se especifica el tipo de datos de entrenamiento ni el número de tokens utilizados.
+La información disponible no detalla la arquitectura interna del modelo más allá de su pertenencia a la familia Qwen. Los tags de Hugging Face indican que el entrenamiento utilizó GRPO (Group Relative Policy Optimization), una técnica de optimización por refuerzo, y la herramienta Unsloth, conocida por acelerar el fine-tuning. El modelo base, ross-dev/SexyGPT-v3-Thinking-Female, es un ajuste fino de un modelo Qwen de gran tamaño (posiblemente Qwen3-32B, aunque no está confirmado). El proyecto multimodular incluye un archivo mmproj (multimodal projector), lo que sugiere que el modelo puede aceptar entradas de imagen, aunque no se especifica el tipo de datos de entrenamiento ni el número de tokens utilizados.
 
 ## Capacidades
 
@@ -69,7 +69,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/mradermacher/SexyGPT-v3-Thinking-Female-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/SexyGPT-v3-Thinking-Female-GGUF
 - Modelo base original: https://huggingface.co/ross-dev/SexyGPT-v3-Thinking-Female
 - Repositorio GGUF del modelo base (ross-dev): https://huggingface.co/ross-dev/SexyGPT-v3-Thinking-Female-gguf
 - GitHub de SexyGPT-v2 (versión anterior, basada en Qwen3-0.6): https://github.com/luckysexyqueen/sexygpt-thinking-female-gguf

@@ -80,7 +80,7 @@ En la informacion proporcionada no se incluye ninguna comparativa con otros mode
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Serega71/talvion-injection-guard-onnx | No disponible (base "tiny") | 768 tokens (segun configuracion de inferencia) | 34/36 ataques detenidos y 8/114 falsos positivos en el conjunto extendido (capa completa) | MIT | HuggingFace, ONNX |
+| Serega71/talvion-injection-guard-onnx | No disponible (base "tiny") | 768 tokens (segun configuracion de inferencia) | 34/36 ataques detenidos y 8/114 falsos positivos en el conjunto extendido (capa completa) | MIT | Hugging Face, ONNX |
 | `protectai/deberta-v3-base-prompt-injection` (alternativa de la misma categoria, por referencia) | No disponible en la informacion | No disponible | No disponible | No disponible | No disponible |
 | `meta-llama/Prompt-Guard-86M` (alternativa de la misma categoria, por referencia) | No disponible en la informacion | No disponible | No disponible | No disponible | No disponible |
 
@@ -102,7 +102,7 @@ Se nombran las dos alternativas unicamente como referencia de categoria; no se h
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Serega71/talvion-injection-guard-onnx
+- Modelo en Hugging Face: https://huggingface.co/Serega71/talvion-injection-guard-onnx
 - Modelo base: https://huggingface.co/cointegrated/rubert-tiny2
 - Repositorio del proyecto (dataset, entrenamiento y resto de componentes): no publicado segun la model card
 - Paper: no disponible

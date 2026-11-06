@@ -75,7 +75,7 @@ No se dispone de información sobre modelos comparables en la información propo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JOKER141/MiniMax-H3-General-Motion-Continuity-Repair
+- Hugging Face: https://huggingface.co/JOKER141/MiniMax-H3-General-Motion-Continuity-Repair
 - README: https://huggingface.co/JOKER141/MiniMax-H3-General-Motion-Continuity-Repair/blob/main/README.md
 - Modelo base MiniMaxAI/MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Modelo base Comfy-Org/MiniMax-H3: https://huggingface.co/Comfy-Org/MiniMax-H3

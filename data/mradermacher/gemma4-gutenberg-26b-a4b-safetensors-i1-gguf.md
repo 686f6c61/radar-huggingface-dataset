@@ -25,7 +25,7 @@ No se dispone de información detallada sobre la arquitectura interna del modelo
 
 ## Capacidades
 
-- Generación de texto en inglés, presumiblemente con capacidades conversacionales (etiqueta "conversational" en HuggingFace).
+- Generación de texto en inglés, presumiblemente con capacidades conversacionales (etiqueta "conversational" en Hugging Face).
 - Posible capacidad de procesamiento de imágenes, ya que la model card lo describe como "vision model", aunque los componentes multimodales no están presentes en este repositorio.
 - Soporte para cuantización GGUF, lo que permite su uso en una amplia gama de motores de inferencia local.
 - Sin información confirmada sobre tool calling, razonamiento multi-paso o capacidades de agente.

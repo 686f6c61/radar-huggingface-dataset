@@ -4,7 +4,7 @@
 
 SAM 3D Objects es un modelo de fundación desarrollado por Facebook (Meta) que reconstruye la geometría completa, la textura y la disposición de objetos tridimensionales a partir de una única imagen. Está diseñado específicamente para escenarios del mundo real con oclusiones y desorden, donde los métodos convencionales de reconstrucción 3D suelen fallar. El modelo utiliza entrenamiento progresivo y un motor de datos con retroalimentación humana, lo que le permite superar a modelos previos de generación 3D en evaluaciones humanas.
 
-El repositorio de HuggingFace tiene un tamaño de 13,3 GB, lo que sugiere que los pesos del modelo son voluminosos, aunque no se especifica el número de parámetros ni la arquitectura exacta en la información disponible. El acceso al modelo es restringido (gated) y requiere aceptar condiciones en HuggingFace. La licencia se indica como "other", lo que implica términos no estándar que deben revisarse antes de cualquier uso. El modelo está documentado en el paper arXiv:2511.16624 y cuenta con un repositorio de GitHub de facebookresearch.
+El repositorio de Hugging Face tiene un tamaño de 13,3 GB, lo que sugiere que los pesos del modelo son voluminosos, aunque no se especifica el número de parámetros ni la arquitectura exacta en la información disponible. El acceso al modelo es restringido (gated) y requiere aceptar condiciones en Hugging Face. La licencia se indica como "other", lo que implica términos no estándar que deben revisarse antes de cualquier uso. El modelo está documentado en el paper arXiv:2511.16624 y cuenta con un repositorio de GitHub de facebookresearch.
 
 ## Especificaciones tecnicas
 
@@ -62,15 +62,15 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): el modelo requiere aceptar condiciones en HuggingFace antes de poder descargarlo.
+- Acceso restringido (gated): el modelo requiere aceptar condiciones en Hugging Face antes de poder descargarlo.
 - Licencia "other": los términos de licencia no son estándar y deben revisarse cuidadosamente, especialmente para uso comercial.
 - No se dispone de información sobre sesgos o riesgos de alucinación específicos del modelo.
-- Solo se indica el idioma inglés en HuggingFace, lo que puede limitar la documentación o el soporte en otros idiomas.
+- Solo se indica el idioma inglés en Hugging Face, lo que puede limitar la documentación o el soporte en otros idiomas.
 - Al ser un modelo de investigación, puede presentar limitaciones en precisión para ciertos tipos de objetos o escenas no cubiertos durante el entrenamiento.
 - No se ofrecen datos sobre requisitos de hardware ni opciones de despliegue, lo que dificulta la planificación de su uso en producción.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/facebook/sam-3d-objects
+- Hugging Face: https://huggingface.co/facebook/sam-3d-objects
 - GitHub: https://github.com/facebookresearch/sam-3d-objects
 - Paper (arXiv): https://arxiv.org/abs/2511.16624

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`attacker34345/thumb5334` es un repositorio alojado en HuggingFace cuyo contenido no constituye una ficha de modelo utilizable. La model card no describe arquitectura, datos de entrenamiento ni capacidades: se limita a incluir una imagen de miniatura y enlaces que apuntan a un endpoint externo de `webhook.site`, un servicio pensado para capturar peticiones HTTP. No hay informacion sobre parametros, contexto, licencia ni idiomas.
+`attacker34345/thumb5334` es un repositorio alojado en Hugging Face cuyo contenido no constituye una ficha de modelo utilizable. La model card no describe arquitectura, datos de entrenamiento ni capacidades: se limita a incluir una imagen de miniatura y enlaces que apuntan a un endpoint externo de `webhook.site`, un servicio pensado para capturar peticiones HTTP. No hay informacion sobre parametros, contexto, licencia ni idiomas.
 
 El repositorio presenta un patron caracteristico de contenido malicioso o de prueba de concepto de exfiltracion: el campo `thumbnail` del frontmatter YAML y las etiquetas `<img>` y `<a>` del README apuntan a un identificador unico alojado en `webhook.site`. Al renderizarse la model card en el navegador o en herramientas que resuelven recursos remotos, esas peticiones llegan al servidor del autor, lo que permite registrar IP, user-agent y cabeceras del visitante. Es, en la practica, un pixel de seguimiento encubierto.
 
@@ -38,7 +38,7 @@ El identificador UUID presente en las tres URL es identico, lo que sugiere un un
 
 ## Casos de uso
 
-- Auditoria de seguridad de repositorios en HuggingFace: revisar el frontmatter YAML y el HTML del README para detectar recursos remotos no justificados antes de aprobar un modelo en un catalogo interno.
+- Auditoria de seguridad de repositorios en Hugging Face: revisar el frontmatter YAML y el HTML del README para detectar recursos remotos no justificados antes de aprobar un modelo en un catalogo interno.
 - Formacion en higiene de supply chain de modelos: usar este repositorio como ejemplo de pixel de seguimiento embebido en una model card y de por que conviene renderizar READMEs en un sandbox sin salida a red.
 - Prueba de filtros de contenido en mirrors y proxies: verificar que un proxy corporativo bloquea peticiones salientes a dominios de captura de webhooks como `webhook.site`.
 - Validacion de pipelines de escaneo automatico: comprobar que un linter de model cards marca como sospechoso un repositorio sin pesos, sin licencia y con enlaces externos en el frontmatter.
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Documentacion |
 |---|---|---|---|---|---|
-| attacker34345/thumb5334 | no disponible | no disponible | no disponible | HuggingFace, 0 descargas, 0 likes | Model card sin contenido tecnico |
+| attacker34345/thumb5334 | no disponible | no disponible | no disponible | Hugging Face, 0 descargas, 0 likes | Model card sin contenido tecnico |
 | Modelo open source tipico de referencia | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se identifica un modelo comparable porque el repositorio no contiene un modelo. Cualquier comparacion cuantitativa careceria de base.
@@ -81,6 +81,6 @@ No se identifica un modelo comparable porque el repositorio no contiene un model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/attacker34345/thumb5334
+- Repositorio en Hugging Face: https://huggingface.co/attacker34345/thumb5334
 - Endpoint referenciado en la model card (no visitar desde entornos con credenciales): https://webhook.site/f13f926d-6257-4111-9718-4d32239b469b
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo en la informacion disponible.

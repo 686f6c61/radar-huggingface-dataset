@@ -104,7 +104,7 @@ No se dispone de datos de otros modelos comparables de la misma categoria (LLM d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ukisai/Swift-Bonsai-2-GGUF
+- Modelo en Hugging Face: https://huggingface.co/ukisai/Swift-Bonsai-2-GGUF
 - Fichero 1-bit / PTQ1_0: https://huggingface.co/ukisai/Swift-Bonsai-2-GGUF/resolve/main/Swift-Bonsai-2-PTQ1_0.gguf
 - Fichero 2-bit / PQ2_0: https://huggingface.co/ukisai/Swift-Bonsai-2-GGUF/resolve/main/Swift-Bonsai-2-PQ2_0.gguf
 - Licencia: https://huggingface.co/ukisai/Swift-Bonsai-2-GGUF/blob/main/LICENSE

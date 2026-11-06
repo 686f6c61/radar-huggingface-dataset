@@ -96,7 +96,7 @@ No hay datos de rendimiento medidos para el adaptador ni información sobre adap
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/leandronunes/qwen3.8-4b-genomebench-qlora
+- Adaptador en Hugging Face: https://huggingface.co/leandronunes/qwen3.8-4b-genomebench-qlora
 - Modelo base: https://huggingface.co/empero-ai/Qwen3.8-4B-Distill
 - Dataset de entrenamiento: https://huggingface.co/datasets/Mingyin0312/Genome-Bench
 - La búsqueda web realizada no devolvió enlaces relevantes al modelo (solo resultados genéricos de YouTube), por lo que no se dispone de papers, blogs, repositorios ni demos adicionales.

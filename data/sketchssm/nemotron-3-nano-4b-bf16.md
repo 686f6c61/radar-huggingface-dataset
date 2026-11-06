@@ -105,7 +105,7 @@ Los datos de parametros, contexto y rendimiento de las alternativas no estan dis
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SketchSSM/Nemotron-3-Nano-4B-BF16
+- Repositorio en Hugging Face: https://huggingface.co/SketchSSM/Nemotron-3-Nano-4B-BF16
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16
 - Repositorio SketchSSM: https://github.com/SNU-ARC/SketchSSM
 - Guía de calibración (fichero de calibración portátil): https://github.com/SNU-ARC/SketchSSM/tree/main/sketchssm/calibration#portable-calibration-file

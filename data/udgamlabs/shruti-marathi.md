@@ -74,10 +74,10 @@ Shruti Marathi es el más preciso en los conjuntos conversacionales (DiarBench, 
 
 | Modelo | Parametros | Contexto/entrada | WER IndicVoices | WER DiarBench | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Shruti Marathi | 55,7 M | audio de cualquier longitud | 22,2 | 38,2 | Apache-2.0 | HuggingFace, Cactus needle |
-| Whisper tiny | 39 M | audio de hasta 30 s por ventana | 321,8 | 373,9 | MIT | HuggingFace, multiples runtimes |
-| Whisper base | 74 M | audio de hasta 30 s por ventana | 450,2 | 402,9 | MIT | HuggingFace, multiples runtimes |
-| IndicConformer Marathi | no disponible | no disponible | 27,6 | 41,5 | no disponible | HuggingFace (ONNX int8) |
+| Shruti Marathi | 55,7 M | audio de cualquier longitud | 22,2 | 38,2 | Apache-2.0 | Hugging Face, Cactus needle |
+| Whisper tiny | 39 M | audio de hasta 30 s por ventana | 321,8 | 373,9 | MIT | Hugging Face, multiples runtimes |
+| Whisper base | 74 M | audio de hasta 30 s por ventana | 450,2 | 402,9 | MIT | Hugging Face, multiples runtimes |
+| IndicConformer Marathi | no disponible | no disponible | 27,6 | 41,5 | no disponible | Hugging Face (ONNX int8) |
 
 Shruti Marathi ofrece el mejor equilibrio tamano/precision en conversaciones marathi-inglés entre los modelos comparados, con la ventaja adicional de ejecución offline en dispositivo y licencia Apache-2.0. Whisper tiny y base, aunque mas universales y con licencia MIT, obtienen errores muy superiores en marathi. IndicConformer Marathi es mas preciso en lectura pero unas cinco veces mas grande y con menor rendimiento en conversaciones.
 
@@ -94,11 +94,11 @@ Shruti Marathi ofrece el mejor equilibrio tamano/precision en conversaciones mar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/udgamlabs/shruti-marathi
+- Modelo en Hugging Face: https://huggingface.co/udgamlabs/shruti-marathi
 - Modelo base Shruti Hindi: https://huggingface.co/udgamlabs/Shruti
 - Cactus Whistle (modelo base original): https://huggingface.co/Cactus-Compute/whistle
 - Motor Cactus needle: https://huggingface.co/Cactus-Compute/needle3
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/udgamlabs/Shruti
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/udgamlabs/Shruti
 - Demo en navegador: https://udgamlabs.com/models/shruti?lang=mr
 - Codigo y ejemplos: https://github.com/udgamlabs/shruti
 - Comparativa de evaluacion: https://huggingface.co/udgamlabs/shruti-marathi/blob/main/eval/comparison.md

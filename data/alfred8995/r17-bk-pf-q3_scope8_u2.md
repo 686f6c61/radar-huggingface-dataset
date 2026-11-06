@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alfred8995/r17-bk-pf-q3_scope8_u2` es un checkpoint de 1.720.574.976 parámetros (aproximadamente 1,72 mil millones) publicado en HuggingFace por el usuario alfred8995 el 23 de octubre de 2026. El tag `qwen3` indica que deriva de la familia Qwen3, y el tamaño de pesos del repositorio (3,5 GB) es coherente con un guardado en bf16/fp16 de un modelo de ese orden, lo que sugiere un ajuste fino completo (full fine-tune) sobre la variante Qwen3-1.7B más que una cuantización o un adaptador LoRA. El repositorio no incluye model card, pipeline declarado ni idiomas soportados, y el acceso está restringido (gated): es necesario aceptar condiciones en HuggingFace antes de poder descargarlo.
+`alfred8995/r17-bk-pf-q3_scope8_u2` es un checkpoint de 1.720.574.976 parámetros (aproximadamente 1,72 mil millones) publicado en Hugging Face por el usuario alfred8995 el 23 de octubre de 2026. El tag `qwen3` indica que deriva de la familia Qwen3, y el tamaño de pesos del repositorio (3,5 GB) es coherente con un guardado en bf16/fp16 de un modelo de ese orden, lo que sugiere un ajuste fino completo (full fine-tune) sobre la variante Qwen3-1.7B más que una cuantización o un adaptador LoRA. El repositorio no incluye model card, pipeline declarado ni idiomas soportados, y el acceso está restringido (gated): es necesario aceptar condiciones en Hugging Face antes de poder descargarlo.
 
 El nombre del repositorio (`r17-bk-pf-q3_scope8_u2`) sigue un patrón típico de experimentos internos por rondas o ejecuciones, con segmentos que probablemente codifican la ronda (r17), el checkpoint base (q3, Qwen3) y alguna variante de configuración (scope8, u2). Se trata, por tanto, de un artefacto de investigación sin documentación pública asociada, con cero descargas y cero likes en el momento de la consulta.
 
@@ -18,7 +18,7 @@ Su relevancia práctica es limitada y condicionada: no hay información publicad
 | Longitud de contexto | No disponible para este checkpoint; la familia Qwen3-1.7B declara 32.768 tokens nativos y extension por YaRN hasta 131.072 |
 | Tipos de cuantizacion | No publicados en el repositorio; al ser pesos safetensors en bf16/fp16, admite cuantizacion posterior a GGUF/AWQ/GPTQ con herramientas estandar |
 | Idiomas soportados | No disponible |
-| Licencia | `other` (acceso restringido, requiere aceptar condiciones en HuggingFace) |
+| Licencia | `other` (acceso restringido, requiere aceptar condiciones en Hugging Face) |
 | Formato de pesos | safetensors (tamano del repo: 3,5 GB) |
 
 ## Arquitectura y entrenamiento
@@ -67,11 +67,11 @@ Los datos de las alternativas corresponden a la documentacion publica de cada fa
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `alfred8995/r17-bk-pf-q3_scope8_u2` | 1,72B | No disponible (familia Qwen3: 32.768 nativos) | `other`, acceso restringido | HuggingFace, gated, 0 descargas |
-| Qwen3-1.7B | 1,7B aprox. | 32.768 tokens nativos, 131.072 con YaRN | Apache-2.0 | HuggingFace, abierto |
-| Llama 3.2 1B | 1,24B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, abierto con condiciones |
-| Gemma 3 1B | 1B aprox. | 32.768 tokens | Gemma Terms of Use | HuggingFace, abierto con condiciones |
-| SmolLM2-1.7B | 1,7B | 8.192 tokens | Apache-2.0 | HuggingFace, abierto |
+| `alfred8995/r17-bk-pf-q3_scope8_u2` | 1,72B | No disponible (familia Qwen3: 32.768 nativos) | `other`, acceso restringido | Hugging Face, gated, 0 descargas |
+| Qwen3-1.7B | 1,7B aprox. | 32.768 tokens nativos, 131.072 con YaRN | Apache-2.0 | Hugging Face, abierto |
+| Llama 3.2 1B | 1,24B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, abierto con condiciones |
+| Gemma 3 1B | 1B aprox. | 32.768 tokens | Gemma Terms of Use | Hugging Face, abierto con condiciones |
+| SmolLM2-1.7B | 1,7B | 8.192 tokens | Apache-2.0 | Hugging Face, abierto |
 
 Frente a las alternativas, la diferencia principal no es tecnica sino de trazabilidad: los tres modelos de referencia publican model card, evaluaciones y licencia interpretable, mientras que este checkpoint no ofrece ninguna de las tres cosas. Para uso en produccion, el Qwen3-1.7B original es la opcion por defecto salvo que se demuestre una ventaja concreta de este fine-tune.
 
@@ -89,7 +89,7 @@ Frente a las alternativas, la diferencia principal no es tecnica sino de trazabi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/alfred8995/r17-bk-pf-q3_scope8_u2
+- Repositorio en Hugging Face: https://huggingface.co/alfred8995/r17-bk-pf-q3_scope8_u2
 - Perfil del autor: https://huggingface.co/alfred8995
 - Documentacion de la familia Qwen3 (referencia del tag, no del checkpoint): https://huggingface.co/Qwen/Qwen3-1.7B
 - Resultados de busqueda web: no se encontraron enlaces relevantes sobre este modelo, su autor ni su proceso de entrenamiento.

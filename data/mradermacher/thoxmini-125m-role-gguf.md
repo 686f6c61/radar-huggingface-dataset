@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
 | ThoxMini-125M-role (esta ficha) | 123,6M | no disponible | Apache 2.0 | GGUF, safetensors | Enfocado a edge y roleplay |
-| SmolLM-135M (HuggingFace) | 135M | 2.048 tokens (segun documentacion publica del modelo) | Apache 2.0 | safetensors, GGUF | Modelo ultraligero con benchmarks publicados |
+| SmolLM-135M (Hugging Face) | 135M | 2.048 tokens (segun documentacion publica del modelo) | Apache 2.0 | safetensors, GGUF | Modelo ultraligero con benchmarks publicados |
 | Qwen2.5-0.5B | 494M | 32.768 tokens (segun documentacion publica del modelo) | Apache 2.0 | safetensors, GGUF | Mayor tamano y contexto, mejor calidad general |
 | TinyLlama-1.1B | 1.100M | 2.048 tokens (segun documentacion publica del modelo) | Apache 2.0 | safetensors, GGUF | Referencia en la categoria de modelos pequenos |
 

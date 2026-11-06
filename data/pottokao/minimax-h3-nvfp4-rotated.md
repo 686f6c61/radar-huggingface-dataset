@@ -94,7 +94,7 @@ La comparativa se basa en la informacion proporcionada por el autor y en la exis
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/pottokao/MiniMax-H3-NVFP4-rotated
+- Repositorio Hugging Face: https://huggingface.co/pottokao/MiniMax-H3-NVFP4-rotated
 - Repositorio oficial de MiniMax-H3: https://github.com/MiniMax-AI/MiniMax-H3
 - Version alternativa de rockerBOO: https://huggingface.co/rockerBOO/minimax-h3-nvfp4
 - Issue sobre fallos de GPU en Windows: https://github.com/Comfy-Org/ComfyUI/issues/15488

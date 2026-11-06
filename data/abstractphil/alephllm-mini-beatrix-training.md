@@ -76,7 +76,7 @@ No se dispone de información sobre modelos comparables. La arquitectura es expe
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AbstractPhil/alephllm-mini-beatrix-training
+- Repositorio Hugging Face: https://huggingface.co/AbstractPhil/alephllm-mini-beatrix-training
 - Repositorio fuente (GitHub): https://github.com/AbstractEyes/alephllm
 - Registro relacionado (atención): https://huggingface.co/AbstractPhil/aleph-splat-0
 - Registro relacionado (banco anclado): https://huggingface.co/AbstractPhil/alephlm-0

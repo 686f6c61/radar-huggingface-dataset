@@ -81,7 +81,7 @@ No se dispone de información suficiente para establecer una comparativa cuantit
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MeldhLLC/Olune-Qwen3.5-4B-v1.0
+- Modelo en Hugging Face: https://huggingface.co/MeldhLLC/Olune-Qwen3.5-4B-v1.0
 - Descarga directa GGUF Q4_K_M: https://huggingface.co/MeldhLLC/Olune-Qwen3.5-4B-v1.0/resolve/main/olune-qwen35-v1.0-Q4_K_M.gguf
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Aplicación Olune: https://olune.ai/

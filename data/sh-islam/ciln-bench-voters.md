@@ -18,7 +18,7 @@ Su relevancia es metodologica: proporciona una base reproducible y multiarquitec
 | Tipos de cuantizacion | No disponible |
 | Idiomas soportados | No disponible. Los voters de texto se entrenan sobre AG-News, corpus en ingles |
 | Licencia | MIT para el repositorio. Los pesos de terceros reutilizados (CLIP ViT-B/32 de OpenAI via open_clip, TabPFN, pesos timm de ImageNet-21k para DeiT3-Small, all-MiniLM-L6-v2) conservan sus propias condiciones de uso |
-| Formato de pesos | PyTorch `.pt` (mayoria de voters de imagen y tabulares), XGBoost `.json`, CatBoost `.cbm`, fastText `.bin` y carpetas HuggingFace `save_pretrained` para DistilBERT-cased y RoBERTa-base. El repositorio declara el tag `safetensors` |
+| Formato de pesos | PyTorch `.pt` (mayoria de voters de imagen y tabulares), XGBoost `.json`, CatBoost `.cbm`, fastText `.bin` y carpetas Hugging Face `save_pretrained` para DistilBERT-cased y RoBERTa-base. El repositorio declara el tag `safetensors` |
 | Tamano del repositorio | 1,2 GB |
 | Datasets cubiertos | CIFAR-10, MNIST, Adult, AG-News |
 | Metadatos adicionales | Ficheros `*_train_summary.json` junto a cada checkpoint con la precision final de validacion/test de cada ejecucion |
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - El repositorio completo ocupa 1,2 GB; los checkpoints individuales son de tamano moderado (MLP, LeNet-5 y fastText son muy ligeros; ResNet-20, WRN-28-10, DistilBERT-cased y RoBERTa-base son mas pesados, y WRN-28-10 el mayor del conjunto).
 - No se publican requisitos de VRAM, GPU recomendadas, latencia ni throughput en la model card. Cualquier cifra concreta seria una estimacion no confirmada.
 - Por la naturaleza de las arquitecturas, la inferencia es viable en CPU para todos los voters y el reentrenamiento se beneficia de GPU, pero no hay datos oficiales que cuantifiquen el consumo.
-- No aplican servidores de inferencia de LLM (vLLM, llama.cpp, Ollama, TGI). El despliegue se hace con PyTorch y timm (imagen), open_clip (CLIP), transformers de HuggingFace (DistilBERT, RoBERTa, all-MiniLM-L6-v2), xgboost, catboost, fasttext y el paquete `tabpfn` para tabular.
+- No aplican servidores de inferencia de LLM (vLLM, llama.cpp, Ollama, TGI). El despliegue se hace con PyTorch y timm (imagen), open_clip (CLIP), transformers de Hugging Face (DistilBERT, RoBERTa, all-MiniLM-L6-v2), xgboost, catboost, fasttext y el paquete `tabpfn` para tabular.
 - Los tres voters zero-shot (CLIP ViT-B/32, TabPFN, all-MiniLM-L6-v2) no tienen checkpoint en el repositorio: requieren descargar los pesos originales de sus respectivos paquetes.
 
 ## Comparativa con modelos similares
@@ -112,7 +112,7 @@ No se dispone de datos de rendimiento de los votantes ni de cifras comparativas 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sh-islam/ciln-bench-voters
+- Hugging Face: https://huggingface.co/sh-islam/ciln-bench-voters
 - Repositorio de codigo: https://github.com/sh-islam/ciln-bench
 - Citacion del paper: Islam, Shadman; Kristiadi, Agustinus; Milani, Mostafa. "Benchmarking Instance-Dependent Label Noise with Controlled Corruptions". Transactions on Machine Learning Research, 2026 (en revision). No se proporciona DOI ni enlace directo al paper en la informacion disponible.
 - Rutas internas de referencia mencionadas en la model card: `code/infer/voter_adapters.py`, `code/infer/voter_adapters_README.md`, `code/train/`, `logs/`.

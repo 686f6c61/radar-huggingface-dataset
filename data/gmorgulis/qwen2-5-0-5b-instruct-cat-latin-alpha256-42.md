@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo **Qwen2.5-0.5B-Instruct-cat-latin-alpha256.42** es un ajuste fino (fine-tune) del modelo base **Qwen/Qwen2.5-0.5B-Instruct**, desarrollado por el usuario GMorgulis. Se trata de un modelo de lenguaje de aproximadamente 500 millones de parámetros, especializado mediante entrenamiento supervisado (SFT) utilizando la librería **TRL** de HuggingFace. El nombre del modelo sugiere un ajuste orientado a datos en catalán o latín, aunque no se proporcionan detalles específicos sobre el conjunto de datos utilizado.
+El modelo **Qwen2.5-0.5B-Instruct-cat-latin-alpha256.42** es un ajuste fino (fine-tune) del modelo base **Qwen/Qwen2.5-0.5B-Instruct**, desarrollado por el usuario GMorgulis. Se trata de un modelo de lenguaje de aproximadamente 500 millones de parámetros, especializado mediante entrenamiento supervisado (SFT) utilizando la librería **TRL** de Hugging Face. El nombre del modelo sugiere un ajuste orientado a datos en catalán o latín, aunque no se proporcionan detalles específicos sobre el conjunto de datos utilizado.
 
 La relevancia de este modelo radica en su tamaño reducido, que permite su ejecución en entornos con recursos limitados, y en su naturaleza de fine-tune, que podría ofrecer un mejor rendimiento en dominios específicos frente al modelo base genérico. Al ser un derivado de Qwen2.5-0.5B-Instruct, hereda su arquitectura transformer y su capacidad de instrucción, pero con una especialización adicional. La fecha de creación (agosto de 2026) y el nombre sugieren que es un experimento reciente, posiblemente orientado a la investigación o a aplicaciones de nicho.
 
@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| **Qwen2.5-0.5B-Instruct** (base) | 0.5B | 32K | Apache 2.0 | HuggingFace, Ollama |
-| **Llama 3.2 1B** | 1B | 128K | Llama 3.2 license | HuggingFace |
-| **Gemma 2 2B** | 2B | 8K | Gemma license | HuggingFace |
+| **Qwen2.5-0.5B-Instruct** (base) | 0.5B | 32K | Apache 2.0 | Hugging Face, Ollama |
+| **Llama 3.2 1B** | 1B | 128K | Llama 3.2 license | Hugging Face |
+| **Gemma 2 2B** | 2B | 8K | Gemma license | Hugging Face |
 
 El modelo de GMorgulis se sitúa en la misma categoría que el base, pero su licencia no está claramente definida en la información pública. No se dispone de datos de rendimiento comparativo, por lo que no es posible establecer una comparación objetiva más allá de las especificaciones de tamaño y contexto.
 
@@ -75,7 +75,7 @@ El modelo de GMorgulis se sitúa en la misma categoría que el base, pero su lic
 
 ## Enlaces
 
-- [Repositorio del modelo en HuggingFace](https://huggingface.co/GMorgulis/Qwen2.5-0.5B-Instruct-cat-latin-alpha256.42)
+- [Repositorio del modelo en Hugging Face](https://huggingface.co/GMorgulis/Qwen2.5-0.5B-Instruct-cat-latin-alpha256.42)
 - [Modelo base Qwen/Qwen2.5-0.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct)
 - [Colección de modelos Qwen2.5](https://huggingface.co/collections/Qwen/qwen25)
 - [Documentación de TRL](https://github.com/huggingface/trl)

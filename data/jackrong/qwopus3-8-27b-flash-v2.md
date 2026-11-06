@@ -78,9 +78,9 @@ Las siguientes cifras son estimaciones derivadas del recuento real de parámetro
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Qwopus3.8-27B-Flash-V2 | 27,78 B | No disponible | Apache 2.0 | HuggingFace, 59 descargas, 12 likes | Este modelo; segunda pasada de RL sobre Flash |
-| Qwopus3.8-27B-Flash | No disponible | No disponible | No disponible | HuggingFace (referenciado como base) | Base directa; pipeline SFT + NVIDIA NeMo-RL + GSPO según la ficha heredada |
-| Qwen3.8-27B | No disponible | No disponible | No disponible | HuggingFace (Qwen/Qwen3.8-27B) | Modelo fundacional citado; se usa como referencia visual en la comparación de la pagoda |
+| Qwopus3.8-27B-Flash-V2 | 27,78 B | No disponible | Apache 2.0 | Hugging Face, 59 descargas, 12 likes | Este modelo; segunda pasada de RL sobre Flash |
+| Qwopus3.8-27B-Flash | No disponible | No disponible | No disponible | Hugging Face (referenciado como base) | Base directa; pipeline SFT + NVIDIA NeMo-RL + GSPO según la ficha heredada |
+| Qwen3.8-27B | No disponible | No disponible | No disponible | Hugging Face (Qwen/Qwen3.8-27B) | Modelo fundacional citado; se usa como referencia visual en la comparación de la pagoda |
 | Gemma4-27B | No disponible | No disponible | No disponible | Citado solo como modelo evaluador | Aparece en el ensemble de evaluación de datos, no como alternativa de despliegue |
 
 No se dispone de datos de benchmarks ni de especificaciones de contexto y licencia de modelos externos de la misma categoría en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa con alternativas de 27-32 B de otros fabricantes.
@@ -100,7 +100,7 @@ No se dispone de datos de benchmarks ni de especificaciones de contexto y licenc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jackrong/Qwopus3.8-27B-Flash-V2
+- Modelo en Hugging Face: https://huggingface.co/Jackrong/Qwopus3.8-27B-Flash-V2
 - Modelo base: https://huggingface.co/Jackrong/Qwopus3.8-27B-Flash
 - Modelo fundacional citado: https://huggingface.co/Qwen/Qwen3.8-27B
 - Resultados de búsqueda web: no se han encontrado enlaces relevantes al modelo. Las únicas URLs devueltas corresponden a WhatsApp (web.whatsapp.com, www.whatsapp.com, play.google.com/store/apps/details?id=com.whatsapp, wa.me) y no guardan relación con Qwopus3.8-27B-Flash-V2. No hay papers, blogs, repositorios ni demos adicionales disponibles.

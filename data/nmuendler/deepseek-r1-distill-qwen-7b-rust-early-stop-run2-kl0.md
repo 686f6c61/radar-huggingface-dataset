@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio no contiene un modelo completo, sino un adaptador LoRA entrenado con PEFT 0.20.0 sobre el modelo base deepseek-ai/DeepSeek-R1-Distill-Qwen-7B. Lo publica el usuario nmuendler (sin afiliación declarada) y su identificador, «rust-early-stop-run2-kl0», apunta a un experimento de ajuste fino orientado a código Rust, con parada temprana y coeficiente KL a cero en una segunda ejecución; sin embargo, la model card es la plantilla por defecto de HuggingFace con todos los campos a «More Information Needed», de modo que ninguna de esas hipótesis está confirmada por el autor.
+Este repositorio no contiene un modelo completo, sino un adaptador LoRA entrenado con PEFT 0.20.0 sobre el modelo base deepseek-ai/DeepSeek-R1-Distill-Qwen-7B. Lo publica el usuario nmuendler (sin afiliación declarada) y su identificador, «rust-early-stop-run2-kl0», apunta a un experimento de ajuste fino orientado a código Rust, con parada temprana y coeficiente KL a cero en una segunda ejecución; sin embargo, la model card es la plantilla por defecto de Hugging Face con todos los campos a «More Information Needed», de modo que ninguna de esas hipótesis está confirmada por el autor.
 
 El valor del artefacto es, por tanto, experimental y de investigación: se trata de un adaptador de bajo rango (0,7 GB en safetensors) que solo puede ejecutarse cargando previamente el modelo base, un transformer decoder-only de la familia Qwen2 con unos 7,6 mil millones de parámetros, destilado por DeepSeek a partir de trazas de razonamiento de DeepSeek-R1. El adaptador no es autónomo, no declara licencia, idiomas ni cuantizaciones, y acumula 0 descargas y 0 «likes» desde su publicación.
 
@@ -84,11 +84,11 @@ Estos datos corresponden al checkpoint original de DeepSeek, no al resultado de 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este adaptador (LoRA sobre R1-Distill-Qwen-7B) | No disponible (base ~7,6 B) | No disponible | No disponible | HuggingFace, 0 descargas |
-| DeepSeek-R1-Distill-Qwen-7B | ~7,6 B | Hasta 131 072 tokens | MIT segun su model card publica | HuggingFace |
-| Qwen2.5-7B-Instruct | ~7,6 B | 32 768 nativo; 131 072 con YaRN | Apache 2.0 | HuggingFace |
-| Llama-3.1-8B-Instruct | ~8,0 B | 131 072 | Licencia comunitaria Llama 3.1 | HuggingFace / Meta |
-| Mistral-7B-Instruct-v0.3 | ~7,2 B | 32 768 | Apache 2.0 | HuggingFace |
+| Este adaptador (LoRA sobre R1-Distill-Qwen-7B) | No disponible (base ~7,6 B) | No disponible | No disponible | Hugging Face, 0 descargas |
+| DeepSeek-R1-Distill-Qwen-7B | ~7,6 B | Hasta 131 072 tokens | MIT segun su model card publica | Hugging Face |
+| Qwen2.5-7B-Instruct | ~7,6 B | 32 768 nativo; 131 072 con YaRN | Apache 2.0 | Hugging Face |
+| Llama-3.1-8B-Instruct | ~8,0 B | 131 072 | Licencia comunitaria Llama 3.1 | Hugging Face / Meta |
+| Mistral-7B-Instruct-v0.3 | ~7,2 B | 32 768 | Apache 2.0 | Hugging Face |
 
 Frente a los modelos base, el adaptador no aporta ninguna ventaja documentada en parámetros, contexto o licencia: su único diferencial es la especialización que sugiere su nombre y que no está evaluada.
 

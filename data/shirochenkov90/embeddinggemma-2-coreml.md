@@ -26,7 +26,7 @@ Su relevancia es practica: permite busqueda semantica y RAG completamente en el 
 | Tamano del repositorio | 0,6 GB |
 | Lote (batch size) | 1 |
 | Plataforma minima | macOS 15 / iOS 18 |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
@@ -121,6 +121,6 @@ Nota: la comparacion con EmbeddingGemma 1 procede de la advertencia explicita de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/shirochenkov90/embeddinggemma-2-coreml
+- Repositorio en Hugging Face: https://huggingface.co/shirochenkov90/embeddinggemma-2-coreml
 - Modelo base: https://huggingface.co/google/embeddinggemma-2
 - EmbeddingGemma 1 (referencia de incompatibilidad): https://huggingface.co/google/embeddinggemma-300m

@@ -85,8 +85,8 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 | Modelo | Formato | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mradermacher/ScreenHighlighterRL-4B-GGUF | GGUF (12 cuantizaciones) | 415.347.712 según metadata | no disponible | no disponible | HuggingFace, descargas: 0, likes: 0 |
-| mustafaah/ScreenHighlighterRL-4B | safetensors (presumiblemente) | no disponible | no disponible | no disponible | HuggingFace (modelo de origen) |
+| mradermacher/ScreenHighlighterRL-4B-GGUF | GGUF (12 cuantizaciones) | 415.347.712 según metadata | no disponible | no disponible | Hugging Face, descargas: 0, likes: 0 |
+| mustafaah/ScreenHighlighterRL-4B | safetensors (presumiblemente) | no disponible | no disponible | no disponible | Hugging Face (modelo de origen) |
 | Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias

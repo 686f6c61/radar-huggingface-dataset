@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mvbeen/bearchecker` es un repositorio publicado en HuggingFace por el usuario mvbeen bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción funcional: únicamente declara la licencia, sin especificar arquitectura, tamaño, datos de entrenamiento, idiomas ni caso de uso. No hay información sobre el pipeline de la tarea, los pesos disponibles ni el formato de los mismos.
+`mvbeen/bearchecker` es un repositorio publicado en Hugging Face por el usuario mvbeen bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción funcional: únicamente declara la licencia, sin especificar arquitectura, tamaño, datos de entrenamiento, idiomas ni caso de uso. No hay información sobre el pipeline de la tarea, los pesos disponibles ni el formato de los mismos.
 
 El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) en el momento de la consulta, y fue creado y actualizado con apenas 51 segundos de diferencia, lo que sugiere una publicación de prueba o un artefacto experimental sin documentación asociada. No se ha localizado paper, blog, repositorio de código ni demo vinculados al modelo.
 
@@ -65,7 +65,7 @@ No disponible. No es posible identificar modelos comparables sin conocer la arqu
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| mvbeen/bearchecker | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| mvbeen/bearchecker | no disponible | no disponible | Apache 2.0 | Hugging Face |
 | Alternativa 1 | no disponible | no disponible | no disponible | no disponible |
 | Alternativa 2 | no disponible | no disponible | no disponible | no disponible |
 
@@ -82,7 +82,7 @@ No disponible. No es posible identificar modelos comparables sin conocer la arqu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mvbeen/bearchecker
+- Hugging Face: https://huggingface.co/mvbeen/bearchecker
 - Paper: no disponible
 - Blog: no disponible
 - Repositorio de código: no disponible

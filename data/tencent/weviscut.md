@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| WeVisCut (Tencent) | ~9,4B | Agente de edición de vídeo con 12 herramientas | other (código Apache 2.0) | Pesos en HuggingFace + runtime en GitHub |
+| WeVisCut (Tencent) | ~9,4B | Agente de edición de vídeo con 12 herramientas | other (código Apache 2.0) | Pesos en Hugging Face + runtime en GitHub |
 | Modelos texto-a-vídeo generativos (p. ej. Sora, Veo) | no disponible | Generación directa de vídeo | cerradas | no disponible como pesos abiertos |
 | Agentes de uso de herramientas generalistas basados en Qwen3.5 | ~9B (base Qwen3.5-9B) | Tool use general, no edición de vídeo | varía | varía |
 
@@ -80,7 +80,7 @@ WeVisCut se diferencia de los modelos texto-a-vídeo en que no genera píxeles d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tencent/WeVisCut
+- Hugging Face: https://huggingface.co/tencent/WeVisCut
 - Repositorio GitHub (runtime): https://github.com/Tencent/WeVisCut
 - Paper (arXiv): https://arxiv.org/abs/2610.38352
 - Licencia del código (Apache 2.0): https://github.com/Tencent/WeVisCut/blob/main/LICENSE

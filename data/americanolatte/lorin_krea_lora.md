@@ -4,7 +4,7 @@
 
 ## Resumen
 
-Lorin es un adaptador LoRA (Low-Rank Adaptation) de tipo text-to-image publicado por el usuario AmericanoLatte en HuggingFace, diseñado para funcionar sobre el modelo base krea/Krea-2-Turbo. Se distribuye con la librería diffusers y se activa mediante la palabra clave o instance prompt `Lorin`, que debe incluirse en el prompt para que el efecto del adaptador se aplique durante la generación. La model card proporcionada es deliberadamente mínima: el autor la describe únicamente como «Normal Lora», sin detallar el sujeto, el estilo ni el procedimiento de entrenamiento, por lo que buena parte de las especificaciones habituales quedan marcadas como no disponibles.
+Lorin es un adaptador LoRA (Low-Rank Adaptation) de tipo text-to-image publicado por el usuario AmericanoLatte en Hugging Face, diseñado para funcionar sobre el modelo base krea/Krea-2-Turbo. Se distribuye con la librería diffusers y se activa mediante la palabra clave o instance prompt `Lorin`, que debe incluirse en el prompt para que el efecto del adaptador se aplique durante la generación. La model card proporcionada es deliberadamente mínima: el autor la describe únicamente como «Normal Lora», sin detallar el sujeto, el estilo ni el procedimiento de entrenamiento, por lo que buena parte de las especificaciones habituales quedan marcadas como no disponibles.
 
 Se trata de un adaptador de bajo rango, no de un modelo completo: no incluye pesos del UNet, del VAE ni del codificador de texto, y requiere cargar Krea-2-Turbo como base para poder generar imágenes. El repositorio ocupa 4,5 GB e incluye los pesos del LoRA junto con material de ejemplo (la model card referencia la imagen `images/Krea2_turbo_00488_.png` como widget de demostración).
 
@@ -75,7 +75,7 @@ No se dispone de información sobre otros adaptadores LoRA del mismo autor, para
 
 | Modelo | Tipo | Modelo base | Contexto/prompt | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Lorin (AmericanoLatte/Lorin_Krea_Lora) | LoRA text-to-image | krea/Krea-2-Turbo | No disponible | MIT | HuggingFace, 76 descargas |
+| Lorin (AmericanoLatte/Lorin_Krea_Lora) | LoRA text-to-image | krea/Krea-2-Turbo | No disponible | MIT | Hugging Face, 76 descargas |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -92,7 +92,7 @@ No se dispone de información sobre otros adaptadores LoRA del mismo autor, para
 
 ## Enlaces
 
-- [Modelo en HuggingFace: AmericanoLatte/Lorin_Krea_Lora](https://huggingface.co/AmericanoLatte/Lorin_Krea_Lora)
+- [Modelo en Hugging Face: AmericanoLatte/Lorin_Krea_Lora](https://huggingface.co/AmericanoLatte/Lorin_Krea_Lora)
 - [Archivos y versiones del repositorio](https://huggingface.co/AmericanoLatte/Lorin_Krea_Lora/tree/main)
 - Modelo base: krea/Krea-2-Turbo (sin URL directa en la información proporcionada)
 - Papers, blogs, repositorios o demos adicionales: no disponibles en los resultados de búsqueda (los resultados obtenidos no guardan relación con el modelo)

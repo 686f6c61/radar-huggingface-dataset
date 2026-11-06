@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`umesh251/ppo-SnowballTarget` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno SnowballTarget de la libreria Unity ML-Agents. Lo publica el usuario umesh251 en HuggingFace Hub como checkpoint exportado a ONNX, dentro de la categoria de modelos de `reinforcement-learning` que la propia libreria utiliza para distribuir politicas entrenadas. No se trata de un modelo de lenguaje: es una politica neuronal que mapea observaciones del entorno Unity a acciones de control del agente.
+`umesh251/ppo-SnowballTarget` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno SnowballTarget de la libreria Unity ML-Agents. Lo publica el usuario umesh251 en Hugging Face Hub como checkpoint exportado a ONNX, dentro de la categoria de modelos de `reinforcement-learning` que la propia libreria utiliza para distribuir politicas entrenadas. No se trata de un modelo de lenguaje: es una politica neuronal que mapea observaciones del entorno Unity a acciones de control del agente.
 
-El proposito del repositorio es servir como artefacto reproducible y demostrable: la model card indica que el agente puede visualizarse jugando en el navegador mediante un Space de HuggingFace, cargando el fichero `SnowballTarget.onnx`. El entrenamiento se ha realizado con la libreria ML-Agents, que expone el entrenamiento, las estadisticas de TensorBoard y la exportacion a ONNX como parte del flujo estandar.
+El proposito del repositorio es servir como artefacto reproducible y demostrable: la model card indica que el agente puede visualizarse jugando en el navegador mediante un Space de Hugging Face, cargando el fichero `SnowballTarget.onnx`. El entrenamiento se ha realizado con la libreria ML-Agents, que expone el entrenamiento, las estadisticas de TensorBoard y la exportacion a ONNX como parte del flujo estandar.
 
 La relevancia es acotada: se trata de un modelo comunitario con 0 descargas y 0 likes en el momento de la consulta, sin model card extendida, sin licencia declarada y sin documentacion de hiperparametros ni de recompensas obtenidas. Es util como ejemplo de pipeline completo (entorno Unity, PPO, exportacion ONNX, demo web) mas que como componente para produccion.
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Comparativa con modelos similares
 
-No se dispone de modelos comparables identificados en la informacion proporcionada. La comparacion natural seria con otros agentes PPO o SAC entrenados sobre el mismo entorno SnowballTarget en HuggingFace Hub, o con los agentes de ejemplo distribuidos por Unity ML-Agents, pero no se han facilitado identificadores, metricas ni fichas de esos modelos.
+No se dispone de modelos comparables identificados en la informacion proporcionada. La comparacion natural seria con otros agentes PPO o SAC entrenados sobre el mismo entorno SnowballTarget en Hugging Face Hub, o con los agentes de ejemplo distribuidos por Unity ML-Agents, pero no se han facilitado identificadores, metricas ni fichas de esos modelos.
 
 | Criterio | Este modelo | Alternativas comparables |
 |---|---|---|
@@ -81,7 +81,7 @@ No se dispone de modelos comparables identificados en la informacion proporciona
 | Rendimiento (recompensa) | No disponible | No disponible |
 | Licencia | No disponible | No disponible |
 | Formato | ONNX | No disponible |
-| Disponibilidad | Repositorio publico en HuggingFace Hub, 0 descargas | No disponible |
+| Disponibilidad | Repositorio publico en Hugging Face Hub, 0 descargas | No disponible |
 
 ## Limitaciones y advertencias
 
@@ -98,7 +98,7 @@ No se dispone de modelos comparables identificados en la informacion proporciona
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/umesh251/ppo-SnowballTarget
+- Modelo en Hugging Face: https://huggingface.co/umesh251/ppo-SnowballTarget
 - Space de demostracion de ML-Agents SnowballTarget: https://huggingface.co/spaces/ThomasSimonini/ML-Agents-SnowballTarget
 - Repositorio de Unity ML-Agents: https://github.com/Unity-Technologies/ml-agents
 - Documentacion de ML-Agents: https://unity-technologies.github.io/ml-agents/ML-Agents-Toolkit-Documentation/

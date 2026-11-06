@@ -6,7 +6,7 @@ Este modelo es una conversión a formato MLX con cuantización de 4 bits del mod
 
 La conversión a MLX 4-bit reduce significativamente el tamaño del modelo (4,3 GB en el repositorio) y lo optimiza para ejecutarse en hardware Apple Silicon mediante la librería `mlx-lm`. Esto lo hace especialmente relevante para desarrolladores que trabajan en ecosistemas macOS y necesitan un modelo de razonamiento con capacidades de chat y generación de texto sin filtros, manteniendo un rendimiento aceptable en equipos de consumo.
 
-El modelo se distribuye bajo una licencia no especificada en la ficha de HuggingFace, aunque el modelo base DeepSeek-R1-Distill-Qwen-7B se publicó bajo licencia MIT. La arquitectura subyacente es un transformer basado en Qwen2, con 7 mil millones de parámetros en su versión original.
+El modelo se distribuye bajo una licencia no especificada en la ficha de Hugging Face, aunque el modelo base DeepSeek-R1-Distill-Qwen-7B se publicó bajo licencia MIT. La arquitectura subyacente es un transformer basado en Qwen2, con 7 mil millones de parámetros en su versión original.
 
 ## Especificaciones tecnicas
 
@@ -72,7 +72,7 @@ La principal diferencia con el modelo original es la cuantización y la ablitera
 
 - Al ser un modelo abliterated, puede generar contenido ofensivo, ilegal o éticamente cuestionable sin ningún tipo de filtro. Su uso en producción requiere medidas de control adicionales.
 - Riesgo de alucinación: como todos los LLM, puede inventar información, especialmente en temas especializados. La falta de censura no implica mayor exactitud.
-- La licencia no está especificada en la ficha de HuggingFace, lo que genera incertidumbre legal para uso comercial. El modelo base es MIT, pero la versión abliterated podría tener restricciones adicionales.
+- La licencia no está especificada en la ficha de Hugging Face, lo que genera incertidumbre legal para uso comercial. El modelo base es MIT, pero la versión abliterated podría tener restricciones adicionales.
 - La cuantización de 4 bits puede degradar ligeramente la calidad de las respuestas en comparación con la versión FP16, especialmente en tareas de razonamiento complejo.
 - No se ha verificado el soporte de idiomas; se asume que hereda las capacidades del modelo base (principalmente inglés y chino), pero no hay confirmación.
 - El contexto máximo no está documentado en esta versión; se recomienda no exceder 8k tokens para evitar degradación, aunque el modelo base soporta hasta 128k.

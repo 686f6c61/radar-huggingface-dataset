@@ -80,7 +80,7 @@ No se dispone de modelos comparables con datos suficientes. La única referencia
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NiuNiu0110/rst-qwen3.5-4b-tmax-sft
+- Modelo en Hugging Face: https://huggingface.co/NiuNiu0110/rst-qwen3.5-4b-tmax-sft
 - Dataset de entrenamiento: https://huggingface.co/datasets/NiuNiu0110/TMax-Agent-SFT-terminus
 - Repositorio del pipeline RST-Train: https://github.com/k1ssloo/RST-Train
 - Repositorio de referencia sobre fine-tuning de Qwen3.5-4B: https://github.com/IIIIQIIII/qwen35-4b-lora-sft

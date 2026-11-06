@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-4B-Instruct-2507-GPTQ-Int4 es una version cuantizada del modelo Qwen3-4B-Instruct-2507 desarrollado originalmente por Alibaba Qwen. Esta variante concreta ha sido producida por el usuario superjob mediante `llmcompressor` con el metodo GPTQ en formato W4A16 (pesos de 4 bits, activaciones de 16 bits), y el repositorio de HuggingFace lo mantiene el proyecto vLLM como copia de seguridad para sus pruebas de integracion continua. Se trata, por tanto, de un checkpoint de infraestructura, no de un modelo nuevo.
+Qwen3-4B-Instruct-2507-GPTQ-Int4 es una version cuantizada del modelo Qwen3-4B-Instruct-2507 desarrollado originalmente por Alibaba Qwen. Esta variante concreta ha sido producida por el usuario superjob mediante `llmcompressor` con el metodo GPTQ en formato W4A16 (pesos de 4 bits, activaciones de 16 bits), y el repositorio de Hugging Face lo mantiene el proyecto vLLM como copia de seguridad para sus pruebas de integracion continua. Se trata, por tanto, de un checkpoint de infraestructura, no de un modelo nuevo.
 
 El modelo base es un transformer denso de 4.411.424.256 parametros (aproximadamente 4,4 mil millones) orientado a generacion de texto conversacional, con soporte declarado de hasta 104 idiomas, incluidos los de la Comunidad de Estados Independientes. La cuantizacion a 4 bits reduce el peso del repositorio a unos 3,4 GB, lo que lo hace atractivo para despliegues en GPU de gama media y para servir multiples instancias en hardware limitado.
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-4B-Instruct-2507-GPTQ-Int4 (este) | 4,4 B | No disponible | GPTQ W4A16, compressed-tensors | Apache 2.0 | HuggingFace (vllm-project y superjob) |
-| Qwen/Qwen3-4B-Instruct-2507 (base) | 4,4 B | No disponible | BF16 | Apache 2.0 | HuggingFace |
-| Otros modelos ~4B de la familia Qwen3 | No disponible | No disponible | No disponible | Apache 2.0 (segun familia) | HuggingFace |
+| Qwen3-4B-Instruct-2507-GPTQ-Int4 (este) | 4,4 B | No disponible | GPTQ W4A16, compressed-tensors | Apache 2.0 | Hugging Face (vllm-project y superjob) |
+| Qwen/Qwen3-4B-Instruct-2507 (base) | 4,4 B | No disponible | BF16 | Apache 2.0 | Hugging Face |
+| Otros modelos ~4B de la familia Qwen3 | No disponible | No disponible | No disponible | Apache 2.0 (segun familia) | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la informacion proporcionada. La comparativa se limita a parametros, formato y licencia.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/vllm-project/Qwen3-4B-Instruct-2507-GPTQ-Int4
+- Repositorio Hugging Face: https://huggingface.co/vllm-project/Qwen3-4B-Instruct-2507-GPTQ-Int4
 - Checkpoint original cuantizado: https://huggingface.co/superjob/Qwen3-4B-Instruct-2507-GPTQ-Int4
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Proyecto vLLM: https://github.com/vllm-project/vllm

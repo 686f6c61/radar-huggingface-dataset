@@ -85,7 +85,7 @@ Ambos operan sobre GPT-2 small, capa 6, con direcciones del mismo SAE. El denoiz
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/NikitaLosev/steering-denoiser-gpt2
+- Repositorio del modelo en Hugging Face: https://huggingface.co/NikitaLosev/steering-denoiser-gpt2
 - Código, protocolo y reporte: https://github.com/NikitaLosev/steering-denoiser (archivo `report/REPORT.md`)
 - Modelo base: https://huggingface.co/openai-community/gpt2
 - SAE OpenAI: https://github.com/openai/sparse_autoencoder

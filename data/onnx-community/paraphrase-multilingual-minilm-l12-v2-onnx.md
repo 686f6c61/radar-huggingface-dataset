@@ -70,7 +70,7 @@ No se dispone de informacion detallada sobre modelos comparables en la documenta
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/onnx-community/paraphrase-multilingual-MiniLM-L12-v2-ONNX
+- Hugging Face: https://huggingface.co/onnx-community/paraphrase-multilingual-MiniLM-L12-v2-ONNX
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
 - Paper de Sentence-BERT: https://arxiv.org/abs/1908.10084
 - Documentacion de Transformers.js: https://huggingface.co/docs/transformers.js/api/pipelines

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`AlexLi31415/qwen_3_5_2b_weight_edits` es un checkpoint derivado de un modelo de la familia Qwen 3.5 de 2.000 millones de parametros, publicado por el usuario AlexLi31415 en HuggingFace. No se trata de un entrenamiento desde cero ni de un fine-tuning convencional: segun la model card, los pesos originales han sido modificados directamente en el espacio de pesos ("weight-space programming") mediante la herramienta Claude Opus 5.5, con el objetivo declarado de mejorar el rendimiento en matematicas. La tecnica se documenta en un articulo de blog externo enlazado por el autor.
+`AlexLi31415/qwen_3_5_2b_weight_edits` es un checkpoint derivado de un modelo de la familia Qwen 3.5 de 2.000 millones de parametros, publicado por el usuario AlexLi31415 en Hugging Face. No se trata de un entrenamiento desde cero ni de un fine-tuning convencional: segun la model card, los pesos originales han sido modificados directamente en el espacio de pesos ("weight-space programming") mediante la herramienta Claude Opus 5.5, con el objetivo declarado de mejorar el rendimiento en matematicas. La tecnica se documenta en un articulo de blog externo enlazado por el autor.
 
 El modelo hereda la arquitectura y el tamano del Qwen 3.5 2B subyacente, pero la model card no aporta ningun detalle adicional sobre la arquitectura, la longitud de contexto, los idiomas soportados ni los datos de entrenamiento. Con cero descargas y cero likes en el momento de la consulta, se trata de un experimento de investigacion mas que de un artefacto listo para produccion.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Benchmarks publicados | Disponibilidad |
 |---|---|---|---|---|---|
-| AlexLi31415/qwen_3_5_2b_weight_edits | 2B | no disponible | MIT | no | HuggingFace (0 descargas) |
-| Qwen 3.5 2B (modelo base presumible) | 2B | no disponible | no disponible | no disponible | HuggingFace |
-| Gemma 2 2B | 2B | 8.192 tokens | Gemma Terms | si (MMLU, GSM8K) | HuggingFace, Ollama |
-| Llama 3.2 1B / 3B | 1B / 3B | 128.000 tokens | Llama 3.2 Community License | si | HuggingFace, Ollama |
+| AlexLi31415/qwen_3_5_2b_weight_edits | 2B | no disponible | MIT | no | Hugging Face (0 descargas) |
+| Qwen 3.5 2B (modelo base presumible) | 2B | no disponible | no disponible | no disponible | Hugging Face |
+| Gemma 2 2B | 2B | 8.192 tokens | Gemma Terms | si (MMLU, GSM8K) | Hugging Face, Ollama |
+| Llama 3.2 1B / 3B | 1B / 3B | 128.000 tokens | Llama 3.2 Community License | si | Hugging Face, Ollama |
 
 La comparacion con Gemma 2 2B y Llama 3.2 resulta orientativa por tamano y categoria, pero el checkpoint editado carece de evaluacion publica que permita situarlo frente a ellos. La ventaja principal frente a los alternativas comerciales es la licencia MIT, mas permisiva que las licencias de Gemma o Llama.
 
@@ -82,5 +82,5 @@ La comparacion con Gemma 2 2B y Llama 3.2 resulta orientativa por tamano y categ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AlexLi31415/qwen_3_5_2b_weight_edits
+- Hugging Face: https://huggingface.co/AlexLi31415/qwen_3_5_2b_weight_edits
 - Articulo de referencia sobre weight-space programming: https://rikiyat.github.io/blog/weight-space-programming/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CloudBitModel es un modelo publicado en HuggingFace por el usuario simoncloudbit, con licencia MIT y etiquetado para la región de Estados Unidos. La model card del autor es prácticamente vacía: únicamente declara la licencia, sin aportar información sobre arquitectura, parámetros, datos de entrenamiento o capacidades. En el momento de la consulta, el modelo registra cero descargas y cero likes, lo que sugiere que es un repositorio recién creado o un experimento personal sin documentación técnica pública.
+CloudBitModel es un modelo publicado en Hugging Face por el usuario simoncloudbit, con licencia MIT y etiquetado para la región de Estados Unidos. La model card del autor es prácticamente vacía: únicamente declara la licencia, sin aportar información sobre arquitectura, parámetros, datos de entrenamiento o capacidades. En el momento de la consulta, el modelo registra cero descargas y cero likes, lo que sugiere que es un repositorio recién creado o un experimento personal sin documentación técnica pública.
 
 Dado que no se ha publicado ningún dato técnico sobre el modelo, no es posible evaluar su arquitectura, tamaño, contexto ni rendimiento. Esta ficha se limita a reflejar la información disponible y a señalar explícitamente qué datos faltan, evitando cualquier especulación. El usuario que desee utilizarlo debería contactar con el autor o esperar a que se complete la documentación.
 
@@ -52,6 +52,6 @@ No disponible. Al no conocerse el tamaño, la arquitectura ni el rendimiento de 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/simoncloudbit/CloudBitModel
+- Repositorio en Hugging Face: https://huggingface.co/simoncloudbit/CloudBitModel
 
 No se han encontrado papers, blogs, repositorios de código ni demos asociados a este modelo en la búsqueda web realizada.

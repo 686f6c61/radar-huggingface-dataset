@@ -76,7 +76,7 @@ No se dispone de información suficiente para realizar una comparativa fiable co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SciTools/gemma
+- Repositorio Hugging Face: https://huggingface.co/SciTools/gemma
 - Página oficial de Gemma 4 en Google DeepMind: https://deepmind.google/models/gemma/gemma-4/
 - Página general de Gemma: https://deepmind.google/models/gemma/
 - Documentación de Gemma en Google AI for Developers: https://ai.google.dev/gemma/docs

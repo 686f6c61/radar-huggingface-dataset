@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LDM with subdivision, M5 at 78.8% training size (identificador `Appodoom/ldm-with-subd-m5-78-8pct`) es un modelo generativo de ritmos musicales publicado por el usuario Appodoom en HuggingFace. No es un modelo de lenguaje general: se trata de un modelo de difusion latente (LDM, *latent diffusion model*) especializado en la generacion de patrones ritmicos en formato `.derbake`, un formato de cinco lineas asociado a la percusion derbake (derbake/derbouka). El modelo se distribuye con codigo propio (`custom_code`) y requiere `trust_remote_code=True` para cargarse mediante `transformers`.
+LDM with subdivision, M5 at 78.8% training size (identificador `Appodoom/ldm-with-subd-m5-78-8pct`) es un modelo generativo de ritmos musicales publicado por el usuario Appodoom en Hugging Face. No es un modelo de lenguaje general: se trata de un modelo de difusion latente (LDM, *latent diffusion model*) especializado en la generacion de patrones ritmicos en formato `.derbake`, un formato de cinco lineas asociado a la percusion derbake (derbake/derbouka). El modelo se distribuye con codigo propio (`custom_code`) y requiere `trust_remote_code=True` para cargarse mediante `transformers`.
 
 El checkpoint corresponde al modelo etiquetado como "M5" dentro de un experimento de capacidad del autor, seleccionado por perdida de validacion en el punto del 78,8% del tamano de entrenamiento. La arquitectura declarada es un transformer de 10 capas, anchura de embedding 384 y 4 cabezas de atencion, con una longitud de contexto de 6.656 tokens. El recuento real de parametros a partir de los pesos en safetensors es de 11.858.388 (aproximadamente 11,9 millones), lo que lo situa en la categoria de modelos muy pequenos, aptos para inferencia en CPU o en GPU de gama baja.
 
@@ -88,5 +88,5 @@ No disponible. La informacion proporcionada no incluye otros modelos de generaci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Appodoom/ldm-with-subd-m5-78-8pct
+- Hugging Face: https://huggingface.co/Appodoom/ldm-with-subd-m5-78-8pct
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales asociados al modelo.

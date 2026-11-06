@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto / entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LibreMoGe3g-depth | no disponible (repo 5,0 GB) | imagen RGB | profundidad + point map + intrínsecos | MIT (DINOv2 Apache-2.0) | HuggingFace (LibreYOLO) |
-| MoGe-3 ViT-g/14 (original, Ruicheng/moge-3-vitg) | mismo backbone | imagen RGB | profundidad + point map + intrínsecos | MIT | HuggingFace |
-| Depth Anything V2 | no disponible en la información | imagen RGB | profundidad relativa/métrica | no disponible en la información | HuggingFace |
-| MiDaS | no disponible en la información | imagen RGB | profundidad relativa | no disponible en la información | HuggingFace |
+| LibreMoGe3g-depth | no disponible (repo 5,0 GB) | imagen RGB | profundidad + point map + intrínsecos | MIT (DINOv2 Apache-2.0) | Hugging Face (LibreYOLO) |
+| MoGe-3 ViT-g/14 (original, Ruicheng/moge-3-vitg) | mismo backbone | imagen RGB | profundidad + point map + intrínsecos | MIT | Hugging Face |
+| Depth Anything V2 | no disponible en la información | imagen RGB | profundidad relativa/métrica | no disponible en la información | Hugging Face |
+| MiDaS | no disponible en la información | imagen RGB | profundidad relativa | no disponible en la información | Hugging Face |
 
 La comparativa con Depth Anything V2 y MiDaS se incluye como referencia de categoría, pero los datos concretos de parámetros, contexto y licencia de esos modelos no se han proporcionado en la información disponible, por lo que no se pueden verificar aquí.
 
@@ -83,7 +83,7 @@ La comparativa con Depth Anything V2 y MiDaS se incluye como referencia de categ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LibreYOLO/LibreMoGe3g-depth
+- Hugging Face: https://huggingface.co/LibreYOLO/LibreMoGe3g-depth
 - Modelo original MoGe-3 ViT-g/14: https://huggingface.co/Ruicheng/moge-3-vitg
 - Repositorio de código de MoGe (Microsoft): https://github.com/microsoft/MoGe/tree/74fbce054ebed49800de42d0ad0e83495065719a
 - Repositorio de LibreYOLO: https://github.com/LibreYOLO/libreyolo

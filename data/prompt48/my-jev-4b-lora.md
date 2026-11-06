@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Prompt48/my-jev-4b-lora es un ajuste fino (fine-tune) del modelo base unsloth/Qwen3.5-4B, publicado por el usuario Prompt48 en HuggingFace bajo licencia Apache 2.0. El nombre del repositorio y las etiquetas indican que se trata de una adaptacion LoRA entrenada con Unsloth y la libreria TRL, no de un modelo entrenado desde cero.
+Prompt48/my-jev-4b-lora es un ajuste fino (fine-tune) del modelo base unsloth/Qwen3.5-4B, publicado por el usuario Prompt48 en Hugging Face bajo licencia Apache 2.0. El nombre del repositorio y las etiquetas indican que se trata de una adaptacion LoRA entrenada con Unsloth y la libreria TRL, no de un modelo entrenado desde cero.
 
 Se trata, por tanto, de un derivado de la familia Qwen3.5 en su variante de aproximadamente 4.000 millones de parametros (deducido de la denominacion "4B" del modelo base), orientado a generacion de texto en ingles. El autor no documenta el conjunto de datos de entrenamiento, el numero de tokens, ni el objetivo concreto del ajuste, por lo que su comportamiento especifico mas alla de la generacion de texto generica no puede verificarse con la informacion disponible.
 
@@ -70,10 +70,10 @@ La comparativa se establece con modelos densos abiertos de tamano equivalente en
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Prompt48/my-jev-4b-lora | ~4B (modelo base), adaptador LoRA | no disponible | Apache 2.0 | Adaptador en HuggingFace; requiere el modelo base |
-| Qwen2.5-3B-Instruct | 3,09B | 32.768 tokens (hasta 128K en variantes) | Apache 2.0 (la mayoria de variantes) | Pesos completos en HuggingFace |
+| Prompt48/my-jev-4b-lora | ~4B (modelo base), adaptador LoRA | no disponible | Apache 2.0 | Adaptador en Hugging Face; requiere el modelo base |
+| Qwen2.5-3B-Instruct | 3,09B | 32.768 tokens (hasta 128K en variantes) | Apache 2.0 (la mayoria de variantes) | Pesos completos en Hugging Face |
 | Llama 3.2 3B Instruct | 3,21B | 128.000 tokens | Licencia comunitaria Llama 3.2 | Pesos completos, acceso con aceptacion de terminos |
-| Phi-3.5-mini-instruct | 3,8B | 128.000 tokens | MIT | Pesos completos en HuggingFace |
+| Phi-3.5-mini-instruct | 3,8B | 128.000 tokens | MIT | Pesos completos en Hugging Face |
 | Gemma 2 2B IT | 2,6B | 8.192 tokens | Gemma Terms of Use | Pesos completos, acceso con aceptacion de terminos |
 
 No se dispone de datos de rendimiento del modelo evaluado, por lo que no es posible comparar calidad. En terminos practicos, los modelos alternativos de la tabla ofrecen pesos completos, contexto documentado y soporte de tool calling en sus variantes instruct, ventajas que este adaptador no puede confirmar.
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento del modelo evaluado, por lo que no es posi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Prompt48/my-jev-4b-lora
+- Repositorio en Hugging Face: https://huggingface.co/Prompt48/my-jev-4b-lora
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-4B
 - Unsloth (libreria de ajuste eficiente): https://github.com/unslothai/unsloth
 - TRL (entrenamiento de modelos de lenguaje): https://github.com/huggingface/trl

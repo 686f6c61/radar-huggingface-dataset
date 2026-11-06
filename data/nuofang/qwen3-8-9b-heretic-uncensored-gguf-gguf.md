@@ -73,7 +73,7 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nuofang/Qwen3.8-9B-heretic-uncensored-GGUF-GGUF
+- Repositorio Hugging Face: https://huggingface.co/nuofang/Qwen3.8-9B-heretic-uncensored-GGUF-GGUF
 - Modelo base: https://huggingface.co/mradermacher/Qwen3.8-9B-heretic-uncensored-GGUF
 - Repositorio oficial de Qwen3.8: https://github.com/QwenLM/Qwen3.8
 - Guía de modelos sin censura por VRAM: https://insiderllm.com/guides/best-uncensored-local-llms/

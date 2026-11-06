@@ -104,7 +104,7 @@ La principal diferencia frente a la version abliterated es la presencia de la ca
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo: https://huggingface.co/twolven/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-AWQ-MTP
+- Repositorio Hugging Face de este modelo: https://huggingface.co/twolven/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-AWQ-MTP
 - Modelo base GGUF (HauhauCS): https://huggingface.co/HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF
 - Repositorio oficial de Qwen3.8-27B (Alibaba): https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Guia completa de Qwen3.8-27B (Lovableapp): https://lovableapp.org/blog/qwen3-8-27b

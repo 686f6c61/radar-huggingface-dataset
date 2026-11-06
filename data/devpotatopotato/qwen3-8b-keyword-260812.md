@@ -72,6 +72,6 @@ No se dispone de información suficiente para comparar este fine-tuning con otra
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/devpotatopotato/qwen3-8b-keyword-260812)
+- [Página del modelo en Hugging Face](https://huggingface.co/devpotatopotato/qwen3-8b-keyword-260812)
 - [Modelo base Qwen/Qwen3-8B](https://huggingface.co/Qwen/Qwen3-8B)
 - [Documentación de Qwen3 (sitio oficial)](https://qwenlm.github.io/blog/qwen3/)

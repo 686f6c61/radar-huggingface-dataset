@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/isilicon/mango-artemis-31b-q6k
+- Repositorio Hugging Face: https://huggingface.co/isilicon/mango-artemis-31b-q6k
 - Modelo base (bartowski): https://huggingface.co/bartowski/TheDrummer_Artemis-31B-v1.2-GGUF
 - Colección Mango: https://huggingface.co/collections/isilicon/mango-tested-models-and-preservation-mirrors-6ae3b73994c895ab42e360d2
 - Resultados de evaluación Mango: https://huggingface.co/datasets/isilicon/mango-evaluation-results

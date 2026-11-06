@@ -1,7 +1,7 @@
 # LayerFault/shard-missing-second-shard
 
 ## Resumen
-Este repositorio, identificado como `LayerFault/shard-missing-second-shard`, no es un modelo de inteligencia artificial funcional, sino un artefacto sintético de pruebas de seguridad perteneciente al corpus Layerfault. Su propósito es ejercitar reglas de detección de escáneres de seguridad que analizan paquetes de modelos, exponiendo características adversarias deliberadas (como opcodes sospechosos, contrabando de formatos ejecutables o cadenas de inyección de prompts). El autor, LayerFault, lo describe explícitamente como un "test fixture" que nunca debe cargarse ni ejecutarse fuera de un entorno aislado de pruebas de escaneo. No contiene pesos de modelo, no tiene descargas ni interacciones en HuggingFace, y su tamaño de repositorio es de 0.0 GB, lo que confirma su naturaleza de prueba.
+Este repositorio, identificado como `LayerFault/shard-missing-second-shard`, no es un modelo de inteligencia artificial funcional, sino un artefacto sintético de pruebas de seguridad perteneciente al corpus Layerfault. Su propósito es ejercitar reglas de detección de escáneres de seguridad que analizan paquetes de modelos, exponiendo características adversarias deliberadas (como opcodes sospechosos, contrabando de formatos ejecutables o cadenas de inyección de prompts). El autor, LayerFault, lo describe explícitamente como un "test fixture" que nunca debe cargarse ni ejecutarse fuera de un entorno aislado de pruebas de escaneo. No contiene pesos de modelo, no tiene descargas ni interacciones en Hugging Face, y su tamaño de repositorio es de 0.0 GB, lo que confirma su naturaleza de prueba.
 
 ## Especificaciones tecnicas
 | Parametro | Valor |

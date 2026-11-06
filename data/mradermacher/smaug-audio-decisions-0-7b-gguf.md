@@ -34,7 +34,7 @@ No se han publicado en la información disponible datos sobre el número de toke
 - Calibración: la etiqueta `calibration` sugiere que el modelo está ajustado para producir puntuaciones de confianza o decisiones calibradas, aunque no se documenta el método.
 - Conversación: la etiqueta `conversational` indica soporte de interacción conversacional, presumiblemente en inglés.
 - Despliegue on-device: orientado a ejecución local, con soporte declarado para CoreML en el ecosistema del modelo base.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que puede servirse mediante la infraestructura de endpoints de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que puede servirse mediante la infraestructura de endpoints de Hugging Face.
 - Soporte de tool calling / function calling: no disponible en la información proporcionada.
 - Capacidades de agente y razonamiento multi-paso: no disponibles en la información proporcionada.
 - Capacidades multilingües: solo inglés declarado.

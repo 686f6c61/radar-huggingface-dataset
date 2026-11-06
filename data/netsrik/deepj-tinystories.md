@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepJ TinyStories es un modelo de lenguaje experimental de 1.301.120 parámetros publicado por el usuario netsrik en HuggingFace y entrenado con la librería DeepJ, un framework de inferencia y entrenamiento escrito en Java. Se trata de una implementación reducida de arquitectura estilo DeepSeek (Transformer con atención latente, Q rank 64 y KV rank 32), con 4 capas, tamaño oculto 128, 4 cabezas de atención y un vocabulario BPE de 2.048 tokens. El checkpoint se distribuye en el formato binario versionado propio de DeepJ (`model.dj`), no en safetensors ni GGUF, por lo que no es cargable directamente con la librería Transformers de Python.
+DeepJ TinyStories es un modelo de lenguaje experimental de 1.301.120 parámetros publicado por el usuario netsrik en Hugging Face y entrenado con la librería DeepJ, un framework de inferencia y entrenamiento escrito en Java. Se trata de una implementación reducida de arquitectura estilo DeepSeek (Transformer con atención latente, Q rank 64 y KV rank 32), con 4 capas, tamaño oculto 128, 4 cabezas de atención y un vocabulario BPE de 2.048 tokens. El checkpoint se distribuye en el formato binario versionado propio de DeepJ (`model.dj`), no en safetensors ni GGUF, por lo que no es cargable directamente con la librería Transformers de Python.
 
 El modelo se ha entrenado sobre el dataset sintético TinyStories en inglés (cuentos infantiles generados por modelos mayores), con 10.000 pasos de entrenamiento, batch size 1 y secuencias de 128 tokens. Sobre 100 ventanas deterministas de validación (12.800 tokens) obtiene una pérdida de 2,182273 y una perplejidad de 8,866. No es un modelo de propósito general: su función es servir como banco de pruebas a escala mínima para la arquitectura y el toolchain de DeepJ.
 
@@ -26,9 +26,9 @@ Su relevancia actual es fundamentalmente didáctica y de ingeniería: permite re
 | Dataset de entrenamiento | TinyStories (ingles sintetico, licencia CDLA-Sharing-1.0) |
 | Pasos de entrenamiento | 10.000, batch size 1, secuencias de 128 tokens |
 | Libreria de ejecucion | deepj (Java), version 0.6.0-alpha o posterior compatible |
-| Descargas en HuggingFace | 192 |
+| Descargas en Hugging Face | 192 |
 | Likes | 0 |
-| Tamano del repositorio | 0,0 GB (redondeo reportado por HuggingFace) |
+| Tamano del repositorio | 0,0 GB (redondeo reportado por Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -58,7 +58,7 @@ El entrenamiento consistió en 10.000 pasos con batch size 1 y secuencias de 128
 - Experimentos de ablación de bajo coste: al caber en CPU, permite medir el efecto de variar rangos de atención, número de capas o tamaño de vocabulario en la perplejidad sobre un conjunto de validación fijo, sin reservar GPU.
 - Verificación de pipelines de evaluación: su perplejidad de referencia (8,866 sobre 100 ventanas deterministas de TinyStories) sirve como sanity check para comprobar que un script de evaluación propio calcula la métrica de forma correcta.
 - Material de estudio sobre sobreajuste y escalado: con 1,28 millones de tokens vistos y 1,3 millones de parámetros, es un ejemplo claro de régimen de entrenamiento insuficiente, útil para ilustrar curvas de pérdida y límites de generalización.
-- Prototipado de tokenizadores BPE en Java: el archivo `tokenizer.bpe` permite probar carga, codificación y decodificación de un vocabulario pequeño sin depender de tokenizadores de HuggingFace.
+- Prototipado de tokenizadores BPE en Java: el archivo `tokenizer.bpe` permite probar carga, codificación y decodificación de un vocabulario pequeño sin depender de tokenizadores de Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -88,8 +88,8 @@ No se han publicado resultados de benchmarks adicionales en la información disp
 
 | Modelo | Parametros | Contexto | Formato de pesos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepJ TinyStories (netsrik) | 1.301.120 | no disponible (entrenado con secuencias de 128 tokens) | `model.dj` (binario de DeepJ) | MIT | HuggingFace, requiere la libreria DeepJ en Java |
-| Familia TinyStories de referencia (Eldan y Li) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | HuggingFace, cargable con Transformers |
+| DeepJ TinyStories (netsrik) | 1.301.120 | no disponible (entrenado con secuencias de 128 tokens) | `model.dj` (binario de DeepJ) | MIT | Hugging Face, requiere la libreria DeepJ en Java |
+| Familia TinyStories de referencia (Eldan y Li) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | Hugging Face, cargable con Transformers |
 | Otros modelos de menos de 5 millones de parametros para texto en ingles | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La categoría natural de comparación son los modelos de la familia TinyStories publicados junto al dataset del mismo nombre, que también trabajan en el rango de uno a decenas de millones de parámetros sobre el mismo corpus sintético. La diferencia práctica principal frente a ellos no es de rendimiento, sino de ecosistema: DeepJ TinyStories solo es ejecutable desde Java con la librería DeepJ, mientras que los modelos de referencia del dataset son cargables con herramientas estándar de Python. No se dispone en la información proporcionada de cifras de parámetros, contexto o rendimiento de esos modelos alternativos que permitan una comparación numérica rigurosa.
@@ -110,7 +110,7 @@ La categoría natural de comparación son los modelos de la familia TinyStories 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/netsrik/deepj-tinystories
+- Modelo en Hugging Face: https://huggingface.co/netsrik/deepj-tinystories
 - Repositorio de la librería DeepJ: https://github.com/KirstenAli/DeepJ
 - Artefacto DeepJ 0.6.0-alpha en Maven Central: https://central.sonatype.com/artifact/io.github.kirstenali/deepj/0.6.0-alpha
 - Dataset TinyStories: https://huggingface.co/datasets/roneneldan/TinyStories

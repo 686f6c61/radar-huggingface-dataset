@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un adaptador LoRA (Low-Rank Adaptation) denominado `Affine-5czsc2fc98-r450-online-dpo-lora`, publicado por el usuario `unconst` en HuggingFace. No se trata de un modelo completo, sino de un adaptador pensado para ser aplicado sobre el modelo base `marsplan0624/affine-5gedzafcvg-queen`. La model card lo describe como "H1 LoRA adapter salvage (not a submission)" y "Adapter-only TTL insurance for mining H1", lo que sugiere que es un artefacto técnico de respaldo o rescate dentro de un proceso de entrenamiento, no un producto final destinado a uso general.
+Este repositorio contiene un adaptador LoRA (Low-Rank Adaptation) denominado `Affine-5czsc2fc98-r450-online-dpo-lora`, publicado por el usuario `unconst` en Hugging Face. No se trata de un modelo completo, sino de un adaptador pensado para ser aplicado sobre el modelo base `marsplan0624/affine-5gedzafcvg-queen`. La model card lo describe como "H1 LoRA adapter salvage (not a submission)" y "Adapter-only TTL insurance for mining H1", lo que sugiere que es un artefacto técnico de respaldo o rescate dentro de un proceso de entrenamiento, no un producto final destinado a uso general.
 
 El adaptador se distribuye en formato safetensors bajo la librería PEFT y está etiquetado con `pipeline_tag: text-generation`, lo que indica que su función es ajustar un modelo de lenguaje para generación de texto. Sin embargo, no se proporcionan detalles sobre el tamaño, la arquitectura del modelo base, los datos de entrenamiento, la licencia ni los idiomas soportados. Toda la información adicional es inexistente o no disponible públicamente. Por tanto, su relevancia práctica es limitada y su uso en producción no está documentado.
 
@@ -56,5 +56,5 @@ No disponible. No se conocen modelos comparables en la misma categoría, ya que 
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/unconst/Affine-5czsc2fc98-r450-online-dpo-lora)
+- [Repositorio Hugging Face](https://huggingface.co/unconst/Affine-5czsc2fc98-r450-online-dpo-lora)
 - [Modelo base indicado: marsplan0624/affine-5gedzafcvg-queen](https://huggingface.co/marsplan0624/affine-5gedzafcvg-queen) (sin documentación adicional disponible)

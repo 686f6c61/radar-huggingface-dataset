@@ -93,7 +93,7 @@ No se dispone de información sobre comparaciones con otros modelos VLM especial
 
 ## Enlaces
 
-- [HuggingFace: ETRI-TANGO/tango2-sds-vlm-eva](https://huggingface.co/ETRI-TANGO/tango2-sds-vlm-eva)
+- [Hugging Face: ETRI-TANGO/tango2-sds-vlm-eva](https://huggingface.co/ETRI-TANGO/tango2-sds-vlm-eva)
 - [GitHub: ML-TANGO/TANGO2](https://github.com/ML-TANGO/TANGO2)
 - [Licencia ETRI TANGO](https://github.com/ML-TANGO/TANGO2/blob/main/LICENSE.md)
 - [README del dataset SDS](https://github.com/ML-TANGO/TANGO2/blob/main/SDS/dataset/README.md)

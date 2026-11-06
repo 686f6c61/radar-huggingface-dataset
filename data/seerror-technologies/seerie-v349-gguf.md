@@ -88,9 +88,9 @@ No se dispone de informacion sobre modelos comparables de terceros en la misma c
 
 | Modelo | Parametros | Contexto | Licencia | Evaluacion | Disponibilidad |
 |---|---|---|---|---|---|
-| Seerie v3 (v349) | 1,7B | no disponible | Apache 2.0 | 87/100 respuestas seguras (auditoria manual) | GGUF en HuggingFace, app en Google Play |
+| Seerie v3 (v349) | 1,7B | no disponible | Apache 2.0 | 87/100 respuestas seguras (auditoria manual) | GGUF en Hugging Face, app en Google Play |
 | Seerie v2 (v224) | no disponible | no disponible | no disponible | prueba automatica por palabras clave | `seerror-technologies/seerie-v224-GGUF` |
-| Qwen/Qwen3-1.7B (base) | 1,7B | no disponible en esta informacion | no disponible en esta informacion | 35/100 respuestas seguras sobre el mismo conjunto | HuggingFace |
+| Qwen/Qwen3-1.7B (base) | 1,7B | no disponible en esta informacion | no disponible en esta informacion | 35/100 respuestas seguras sobre el mismo conjunto | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -107,7 +107,7 @@ No se dispone de informacion sobre modelos comparables de terceros en la misma c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/seerror-technologies/seerie-v349-GGUF
+- Modelo en Hugging Face: https://huggingface.co/seerror-technologies/seerie-v349-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Version anterior (v2, dataset v224): https://huggingface.co/seerror-technologies/seerie-v224-GGUF
 - Articulo de evaluacion (Zenodo): https://doi.org/10.5281/zenodo.23110075

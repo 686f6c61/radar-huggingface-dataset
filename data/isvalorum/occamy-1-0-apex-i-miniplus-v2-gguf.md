@@ -92,6 +92,6 @@ No disponible. La información proporcionada no incluye datos de benchmarks ni e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/IsValorum/Occamy-1.0-APEX-I-MiniPlus-V2-GGUF
+- Repositorio Hugging Face: https://huggingface.co/IsValorum/Occamy-1.0-APEX-I-MiniPlus-V2-GGUF
 - Modelo base: https://huggingface.co/Accio-Lab/occamy-1.0
 - Papers, blogs, repositorios o demos adicionales: no disponible. La búsqueda web realizada no devolvió resultados relevantes sobre este modelo ni sobre su modelo base (únicamente páginas de ayuda de YouTube y contenidos de Zhihu sin relación).

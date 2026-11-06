@@ -25,7 +25,7 @@ Este lanzamiento es relevante porque combina las mejoras de la generación Qwen3
 
 El modelo base Qwen3.8-27B emplea una arquitectura híbrida que combina capas de atención lineal (Gated DeltaNet) con capas de atención completa (Gated Attention). El layout interno es `16 × (3 × (Gated DeltaNet → FFN) → 1 × (Gated Attention → FFN))`, donde cada bloque Gated DeltaNet utiliza 48 cabezas lineales para V y 16 para QK con dimensión de cabeza 128, mientras que Gated Attention usa 24 cabezas para Q y 4 para KV con dimensión 256 y RoPE de 64 dimensiones. La dimensión oculta es 5120 y el FFN tiene dimensión intermedia 17.408. Incluye además un mecanismo de Multi-Token Prediction (MTP) entrenado con múltiples pasos, que mejora la eficiencia de decodificación.
 
-El entrenamiento comprende fases de pre-entrenamiento y post-entrenamiento, aunque no se detallan los datos utilizados. La cuantización AWQ-INT4 fue realizada por cyankiwi utilizando un dataset de calibración específico denominado "STEM and Agentic" (disponible en HuggingFace), orientado a preservar el rendimiento en tareas científicas y de agente. El modelo resultante mantiene compatibilidad con el ecosistema transformers y motores de inferencia como vLLM, SGLang y TokenSpeed.
+El entrenamiento comprende fases de pre-entrenamiento y post-entrenamiento, aunque no se detallan los datos utilizados. La cuantización AWQ-INT4 fue realizada por cyankiwi utilizando un dataset de calibración específico denominado "STEM and Agentic" (disponible en Hugging Face), orientado a preservar el rendimiento en tareas científicas y de agente. El modelo resultante mantiene compatibilidad con el ecosistema transformers y motores de inferencia como vLLM, SGLang y TokenSpeed.
 
 ## Capacidades
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/cyankiwi/Qwen3.8-27B-AWQ-INT4
+- Repositorio Hugging Face: https://huggingface.co/cyankiwi/Qwen3.8-27B-AWQ-INT4
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.8-27B/blob/main/LICENSE
 - Dataset de calibración (STEM and Agentic): https://huggingface.co/datasets/cyankiwi/calibration-medium

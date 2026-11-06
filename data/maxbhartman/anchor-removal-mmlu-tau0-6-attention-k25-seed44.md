@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`maxbhartman/anchor-removal-mmlu-tau0.6-attention-k25-seed44` es un repositorio de pesos publicado en HuggingFace por el usuario maxbhartman, etiquetado con `pytorch` y `llama`, lo que indica que se trata de un derivado de la familia Llama y no de un modelo entrenado desde cero. El identificador sugiere un experimento de ablacion (eliminacion de "anclas"), evaluado sobre MMLU con temperatura 0.6, una configuracion de atencion identificada como "k25" y semilla 44, pero no se dispone de documentacion que confirme el significado exacto de esos terminos.
+`maxbhartman/anchor-removal-mmlu-tau0.6-attention-k25-seed44` es un repositorio de pesos publicado en Hugging Face por el usuario maxbhartman, etiquetado con `pytorch` y `llama`, lo que indica que se trata de un derivado de la familia Llama y no de un modelo entrenado desde cero. El identificador sugiere un experimento de ablacion (eliminacion de "anclas"), evaluado sobre MMLU con temperatura 0.6, una configuracion de atencion identificada como "k25" y semilla 44, pero no se dispone de documentacion que confirme el significado exacto de esos terminos.
 
 El repositorio tiene un tamano de 6,4 GB y registra 12 descargas y 0 "likes" en el momento de la consulta. No se ha publicado informacion sobre licencia, idiomas, pipeline ni ficha de modelo asociada, por lo que su evaluacion fiable requiere inspeccionar directamente los archivos de pesos y la configuracion.
 
@@ -77,7 +77,7 @@ No disponible. La informacion proporcionada no permite identificar el modelo bas
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/maxbhartman/anchor-removal-mmlu-tau0.6-attention-k25-seed44
-- Perfil del autor en HuggingFace: https://huggingface.co/maxbhartman
+- Repositorio en Hugging Face: https://huggingface.co/maxbhartman/anchor-removal-mmlu-tau0.6-attention-k25-seed44
+- Perfil del autor en Hugging Face: https://huggingface.co/maxbhartman
 - Paper, blog, repositorio de codigo o demo: no disponible
 - Enlaces relevantes de la busqueda web: no disponible (los resultados obtenidos no guardan relacion con el modelo)

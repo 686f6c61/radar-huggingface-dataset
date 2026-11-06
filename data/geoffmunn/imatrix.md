@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo iMatrix, publicado por el usuario geoffmunn en HuggingFace, es un modelo de tamaño muy reducido con aproximadamente 2,98 millones de parámetros. La información disponible es extremadamente escasa: no se especifica la arquitectura, el pipeline, la licencia ni los idiomas soportados. El repositorio incluye etiquetas `gguf` y `region:us`, lo que sugiere que los pesos están disponibles en formato GGUF para inferencia local, aunque el tamaño total del repositorio (4,1 GB) resulta desproporcionado para un modelo de solo 3 millones de parámetros, lo que podría indicar la presencia de múltiples cuantizaciones o archivos adicionales no documentados.
+El modelo iMatrix, publicado por el usuario geoffmunn en Hugging Face, es un modelo de tamaño muy reducido con aproximadamente 2,98 millones de parámetros. La información disponible es extremadamente escasa: no se especifica la arquitectura, el pipeline, la licencia ni los idiomas soportados. El repositorio incluye etiquetas `gguf` y `region:us`, lo que sugiere que los pesos están disponibles en formato GGUF para inferencia local, aunque el tamaño total del repositorio (4,1 GB) resulta desproporcionado para un modelo de solo 3 millones de parámetros, lo que podría indicar la presencia de múltiples cuantizaciones o archivos adicionales no documentados.
 
 Dada la falta de documentación técnica y de resultados de evaluación, no es posible determinar qué tareas resuelve ni cuál es su relevancia actual. Se trata probablemente de un experimento o de un modelo de juguete sin aplicación práctica demostrada. La fecha de creación (abril de 2026) y la de actualización (agosto de 2026) sugieren que es un proyecto reciente, pero sin más datos no se puede valorar su utilidad.
 
@@ -54,6 +54,6 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/geoffmunn/iMatrix
+- Repositorio en Hugging Face: https://huggingface.co/geoffmunn/iMatrix
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de codigo o demos) en la informacion proporcionada.

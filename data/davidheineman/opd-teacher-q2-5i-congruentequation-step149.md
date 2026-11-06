@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Enfoque |
 |---|---|---|---|---|---|
-| opd-teacher-Q2.5I-CongruentEquation-step149 | 1,54 B | No especificado (base: 32.768) | Apache 2.0 | HuggingFace, safetensors | Especializado en un entorno verificable (RLVE + GRPO) |
-| Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 | Apache 2.0 | HuggingFace | Instrucciones de proposito general |
-| Llama-3.2-1B-Instruct | 1,24 B | 128.000 | Llama 3.2 Community License | HuggingFace | Instrucciones de proposito general |
-| SmolLM2-1.7B-Instruct | 1,71 B | 8.192 | Apache 2.0 | HuggingFace | Instrucciones de proposito general |
+| opd-teacher-Q2.5I-CongruentEquation-step149 | 1,54 B | No especificado (base: 32.768) | Apache 2.0 | Hugging Face, safetensors | Especializado en un entorno verificable (RLVE + GRPO) |
+| Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 | Apache 2.0 | Hugging Face | Instrucciones de proposito general |
+| Llama-3.2-1B-Instruct | 1,24 B | 128.000 | Llama 3.2 Community License | Hugging Face | Instrucciones de proposito general |
+| SmolLM2-1.7B-Instruct | 1,71 B | 8.192 | Apache 2.0 | Hugging Face | Instrucciones de proposito general |
 
 Los datos de los modelos comparativos proceden de su documentación oficial y conviene verificarlos antes de citarlos. No hay resultados de benchmarks publicados para el modelo de esta ficha, por lo que la comparación solo puede establecerse en términos de tamaño, contexto, licencia y disponibilidad, no de rendimiento.
 
@@ -89,7 +89,7 @@ Los datos de los modelos comparativos proceden de su documentación oficial y co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davidheineman/opd-teacher-Q2.5I-CongruentEquation-step149
+- Modelo en Hugging Face: https://huggingface.co/davidheineman/opd-teacher-Q2.5I-CongruentEquation-step149
 - Modelo base Qwen2.5-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/david-heineman/rl-data-opd-teachers/runs/ac7108a3
 - Código de entrenamiento (rlve): https://github.com/davidheineman/rlve

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ImKyungjin/pi0-stackcube-recover-noise-70pct-40ep` es un ajuste fino del modelo π₀ (Pi0), un Vision-Language-Action (VLA) de propósito general para control robótico desarrollado por Physical Intelligence. Este checkpoint concreto ha sido entrenado con la librería LeRobot de HuggingFace sobre el dataset `taewonkoo/stack_cube_recover_noise_70pct_40ep`, que consiste en la tarea de apilar cubos con un 70% de ruido aplicado a las observaciones, durante 40 épocas. El objetivo es que el robot aprenda a recuperarse de perturbaciones o estados anómalos durante la manipulación.
+El modelo `ImKyungjin/pi0-stackcube-recover-noise-70pct-40ep` es un ajuste fino del modelo π₀ (Pi0), un Vision-Language-Action (VLA) de propósito general para control robótico desarrollado por Physical Intelligence. Este checkpoint concreto ha sido entrenado con la librería LeRobot de Hugging Face sobre el dataset `taewonkoo/stack_cube_recover_noise_70pct_40ep`, que consiste en la tarea de apilar cubos con un 70% de ruido aplicado a las observaciones, durante 40 épocas. El objetivo es que el robot aprenda a recuperarse de perturbaciones o estados anómalos durante la manipulación.
 
 El modelo cuenta con 3.501.372.176 parámetros (aproximadamente 3,5 mil millones), está publicado con licencia Apache 2.0 y sus pesos están en formato safetensors. Es relevante porque demuestra la aplicación práctica de un modelo fundacional de robótica a una tarea específica de manipulación, y su entrenamiento con ruido controlado permite evaluar la robustez del policy ante sensores imperfectos o perturbaciones del entorno.
 
@@ -69,7 +69,7 @@ No se dispone de informacion sobre modelos comparables en la misma tarea especif
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/ImKyungjin/pi0-stackcube-recover-noise-70pct-40ep)
+- [Modelo en Hugging Face](https://huggingface.co/ImKyungjin/pi0-stackcube-recover-noise-70pct-40ep)
 - [Dataset de entrenamiento](https://huggingface.co/datasets/taewonkoo/stack_cube_recover_noise_70pct_40ep)
 - [Blog de Physical Intelligence sobre π₀](https://www.physicalintelligence.company/blog/pi0)
 - [Repositorio LeRobot](https://github.com/huggingface/lerobot)

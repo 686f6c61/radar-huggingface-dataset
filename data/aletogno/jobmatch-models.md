@@ -82,7 +82,7 @@ No se dispone de comparativas de rendimiento directas porque el fine-tuning no e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Aletogno/jobmatch-models
+- Repositorio Hugging Face: https://huggingface.co/Aletogno/jobmatch-models
 - Perfil del autor: https://huggingface.co/Aletogno
 - Modelo base LLM: https://huggingface.co/Qwen/Qwen3.5-0.8B (no verificado, inferido del README)
 - Embedder original: https://huggingface.co/intfloat/multilingual-e5-large

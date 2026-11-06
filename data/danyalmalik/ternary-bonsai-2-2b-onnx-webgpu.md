@@ -65,10 +65,10 @@ El único dato de rendimiento documentado es una verificación de fidelidad fren
 
 | Modelo | Parametros | Contexto | Cuantizacion / formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| danyalmalik/Ternary-Bonsai-2-2B-ONNX-WebGPU | Aprox. 2.000 millones (no confirmado) | no disponible | Ternaria 2 bits, ONNX | Apache 2.0 | HuggingFace, 0 descargas y 0 likes |
-| prism-ml/Ternary-Bonsai-2-2B-gguf | Aprox. 2.000 millones (no confirmado) | no disponible | Ternaria, GGUF (`PQ2_0`) | Apache 2.0 (segun el modelo derivado) | HuggingFace |
-| Qwen/Qwen3.5-2B | Aprox. 2.000 millones (no confirmado) | no disponible | Pesos originales en precision completa | no disponible | HuggingFace |
-| onnx-community/Qwen3.5-2B-ONNX | Aprox. 2.000 millones (no confirmado) | no disponible | ONNX sin cuantizacion ternaria | no disponible | HuggingFace |
+| danyalmalik/Ternary-Bonsai-2-2B-ONNX-WebGPU | Aprox. 2.000 millones (no confirmado) | no disponible | Ternaria 2 bits, ONNX | Apache 2.0 | Hugging Face, 0 descargas y 0 likes |
+| prism-ml/Ternary-Bonsai-2-2B-gguf | Aprox. 2.000 millones (no confirmado) | no disponible | Ternaria, GGUF (`PQ2_0`) | Apache 2.0 (segun el modelo derivado) | Hugging Face |
+| Qwen/Qwen3.5-2B | Aprox. 2.000 millones (no confirmado) | no disponible | Pesos originales en precision completa | no disponible | Hugging Face |
+| onnx-community/Qwen3.5-2B-ONNX | Aprox. 2.000 millones (no confirmado) | no disponible | ONNX sin cuantizacion ternaria | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparado entre estas variantes en la información proporcionada.
 
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/danyalmalik/Ternary-Bonsai-2-2B-ONNX-WebGPU
+- Modelo en Hugging Face: https://huggingface.co/danyalmalik/Ternary-Bonsai-2-2B-ONNX-WebGPU
 - Modelo base GGUF: https://huggingface.co/prism-ml/Ternary-Bonsai-2-2B-gguf
 - Modelo Qwen3.5-2B original: https://huggingface.co/Qwen/Qwen3.5-2B
 - Grafo ONNX de referencia: https://huggingface.co/onnx-community/Qwen3.5-2B-ONNX

@@ -80,7 +80,7 @@ Nota: la comparativa se basa en características generales de modelos MoE de tam
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/mradermacher/Qwen3.6-35B-A3B-heretic-v2-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/mradermacher/Qwen3.6-35B-A3B-heretic-v2-GGUF
 - Modelo base (trohrbaugh): https://huggingface.co/trohrbaugh/Qwen3.6-35B-A3B-heretic-v2
 - Modelo original Qwen3.6-35B-A3B: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Herramienta Heretic (GitHub): https://github.com/p-e-w/heretic

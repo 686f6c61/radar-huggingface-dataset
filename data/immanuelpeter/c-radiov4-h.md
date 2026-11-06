@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la información disponible. La �
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `immanuelpeter/C-RADIOv4-H` (este repositorio) | 653.611.529 | No aplica (visión) | ViT C-RADIOv4-H + proyector `mlp1` extraído de Omni | NVIDIA Open Model Agreement | HuggingFace; requiere `trust_remote_code=True` y cargador propio |
-| `nvidia/C-RADIOv4-H` | No disponible en la información | No aplica (visión) | Encoder C-RADIOv4-H independiente | No disponible en la información | HuggingFace (referenciado desde la model card) |
-| Torre de visión de `nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16` | No disponible de forma aislada | No aplica (visión) | ViT C-RADIOv4-H + `mlp1` dentro de un MoE de 30B-A3B | NVIDIA Open Model Agreement | HuggingFace; implica cargar el modelo completo |
+| `immanuelpeter/C-RADIOv4-H` (este repositorio) | 653.611.529 | No aplica (visión) | ViT C-RADIOv4-H + proyector `mlp1` extraído de Omni | NVIDIA Open Model Agreement | Hugging Face; requiere `trust_remote_code=True` y cargador propio |
+| `nvidia/C-RADIOv4-H` | No disponible en la información | No aplica (visión) | Encoder C-RADIOv4-H independiente | No disponible en la información | Hugging Face (referenciado desde la model card) |
+| Torre de visión de `nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16` | No disponible de forma aislada | No aplica (visión) | ViT C-RADIOv4-H + `mlp1` dentro de un MoE de 30B-A3B | NVIDIA Open Model Agreement | Hugging Face; implica cargar el modelo completo |
 
 Nota: el encoder independiente `nvidia/C-RADIOv4-H` no incluye la ruta del proyector de Omni, y las etapas de SFT de Omni entrenan más allá del proyector, por lo que los tensores del ViT pueden diferir entre ambos.
 
@@ -86,7 +86,7 @@ Nota: el encoder independiente `nvidia/C-RADIOv4-H` no incluye la ruta del proye
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/immanuelpeter/C-RADIOv4-H
+- Hugging Face del modelo: https://huggingface.co/immanuelpeter/C-RADIOv4-H
 - Modelo base (Nemotron 3 Nano Omni): https://huggingface.co/nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16
 - Encoder independiente: https://huggingface.co/nvidia/C-RADIOv4-H
 - Paper de Omni: https://arxiv.org/abs/2604.24954

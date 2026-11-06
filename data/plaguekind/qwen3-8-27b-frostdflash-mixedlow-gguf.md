@@ -101,7 +101,7 @@ Frente a alternativas de otras familias de borradores especulativos (por ejemplo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Plaguekind/Qwen3.8-27B-FrostDFlash-MixedLow-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Plaguekind/Qwen3.8-27B-FrostDFlash-MixedLow-GGUF
 - Fuente BF16 del borrador: https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2-GGUF
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.8-27B
 - Perfil del autor: https://huggingface.co/Plaguekind

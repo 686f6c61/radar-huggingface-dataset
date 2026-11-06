@@ -2,9 +2,9 @@
 
 ## Resumen
 
-VHC es un repositorio publicado en HuggingFace por el usuario velhara bajo el identificador velhara/VHC. En el momento de la consulta, la model card asociada esta practicamente vacia: unicamente contiene el campo `license: unknown` y no incluye descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio tiene un tamano de 0,5 GB, 0 descargas y 1 like, y fue creado el 6 de octubre de 2026 con una ultima actualizacion el mismo dia.
+VHC es un repositorio publicado en Hugging Face por el usuario velhara bajo el identificador velhara/VHC. En el momento de la consulta, la model card asociada esta practicamente vacia: unicamente contiene el campo `license: unknown` y no incluye descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio tiene un tamano de 0,5 GB, 0 descargas y 1 like, y fue creado el 6 de octubre de 2026 con una ultima actualizacion el mismo dia.
 
-No es posible determinar que problema resuelve el modelo, a que categoria funcional pertenece ni cual es su arquitectura, porque no hay informacion tecnica publicada. El pipeline declarado en la ficha de HuggingFace figura como no disponible, no se declaran idiomas soportados y no hay ningun paper, blog o repositorio asociado localizable.
+No es posible determinar que problema resuelve el modelo, a que categoria funcional pertenece ni cual es su arquitectura, porque no hay informacion tecnica publicada. El pipeline declarado en la ficha de Hugging Face figura como no disponible, no se declaran idiomas soportados y no hay ningun paper, blog o repositorio asociado localizable.
 
 Los resultados de la busqueda web realizada no contienen ninguna referencia a este modelo: todas las entradas devueltas tratan sobre fonetica y fonologia del ruso (Wikipedia, universidad de Toulouse, guias de pronunciacion) y son irrelevantes para evaluar VHC. En consecuencia, esta ficha se limita a documentar los pocos metadatos verificables y a marcar explicitamente como "no disponible" todo aquello que el autor no ha publicado.
 
@@ -21,7 +21,7 @@ Los resultados de la busqueda web realizada no contienen ninguna referencia a es
 | Licencia | unknown (declarada como desconocida en la model card) |
 | Formato de pesos | no disponible |
 | Tamano del repositorio | 0,5 GB |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Fecha de creacion | 2026-10-06 |
 | Ultima actualizacion | 2026-10-06 |
 | Descargas | 0 |
@@ -78,7 +78,7 @@ No disponible. No se ha podido identificar la categoria del modelo (tamano, tare
 | Contexto | no disponible | no disponible | no disponible |
 | Rendimiento | no disponible | no disponible | no disponible |
 | Licencia | unknown | no disponible | no disponible |
-| Disponibilidad | Repositorio en HuggingFace, sin documentacion | no disponible | no disponible |
+| Disponibilidad | Repositorio en Hugging Face, sin documentacion | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -95,7 +95,7 @@ No disponible. No se ha podido identificar la categoria del modelo (tamano, tare
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/velhara/VHC
+- Modelo en Hugging Face: https://huggingface.co/velhara/VHC
 
 No se han encontrado en la busqueda web enlaces relevantes sobre este modelo, su arquitectura o su entrenamiento. Los unicos resultados devueltos corresponden a recursos genericos sobre fonetica y fonologia del ruso y no guardan relacion con velhara/VHC:
 

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Hawary365/llama-3.1-8b-genre-lora es un adaptador LoRA publicado en HuggingFace por el usuario Hawary365, entrenado mediante SFT (supervised fine-tuning) sobre el modelo base meta-llama/Llama-3.1-8B-Instruct. No se trata de un modelo completo, sino de un conjunto de pesos de adaptador en formato PEFT que debe combinarse con el modelo base para poder ejecutarse. El repositorio ocupa 0,1 GB, un tamano coherente con pesos de adaptador en rango bajo en lugar de pesos completos del transformer de 8.000 millones de parametros.
+Hawary365/llama-3.1-8b-genre-lora es un adaptador LoRA publicado en Hugging Face por el usuario Hawary365, entrenado mediante SFT (supervised fine-tuning) sobre el modelo base meta-llama/Llama-3.1-8B-Instruct. No se trata de un modelo completo, sino de un conjunto de pesos de adaptador en formato PEFT que debe combinarse con el modelo base para poder ejecutarse. El repositorio ocupa 0,1 GB, un tamano coherente con pesos de adaptador en rango bajo en lugar de pesos completos del transformer de 8.000 millones de parametros.
 
-El identificador del repositorio incluye el termino "genre", lo que sugiere un ajuste orientado a genero textual o estilistico, pero la model card no documenta el conjunto de datos, el objetivo de entrenamiento ni el dominio concreto, por lo que esa interpretacion no puede confirmarse. La model card es la plantilla por defecto de HuggingFace sin rellenar: todos los campos de descripcion, datos de entrenamiento, hiperparametros y evaluacion figuran como "[More Information Needed]".
+El identificador del repositorio incluye el termino "genre", lo que sugiere un ajuste orientado a genero textual o estilistico, pero la model card no documenta el conjunto de datos, el objetivo de entrenamiento ni el dominio concreto, por lo que esa interpretacion no puede confirmarse. La model card es la plantilla por defecto de Hugging Face sin rellenar: todos los campos de descripcion, datos de entrenamiento, hiperparametros y evaluacion figuran como "[More Information Needed]".
 
 La relevancia de esta ficha es limitada pero real: sirve como ejemplo de adaptador PEFT de bajo coste sobre Llama 3.1 8B Instruct y como caso de estudio de un repositorio sin documentacion tecnica. No cuenta con descargas ni likes en el momento de la consulta, y la licencia del adaptador no esta declarada, lo que condiciona su uso en produccion. Cualquier evaluacion de capacidades especificas del ajuste queda bloqueada por la ausencia total de informacion.
 
@@ -44,7 +44,7 @@ La model card no aporta ningun dato sobre el proceso de entrenamiento: se descon
 - Servicio de inferencia multi-adaptador: con vLLM o TGI es posible servir el modelo base y activar este adaptador dinamicamente en funcion del usuario o del caso de uso.
 - Base para fine-tuning posterior: el adaptador puede actuar como punto de partida para experimentos de ajuste incremental, ya que no modifica los pesos originales y puede descartarse sin dano.
 - Prototipado de chat especializado: sobre el modelo base Instruct, el adaptador puede integrarse en prototipos conversacionales siempre que se valide su comportamiento con un conjunto de pruebas propio.
-- Investigacion sobre calidad de documentacion en repositorios: este repositorio es un caso representativo de publicacion de adaptadores sin model card, util para estudios sobre trazabilidad y reproducibilidad en HuggingFace.
+- Investigacion sobre calidad de documentacion en repositorios: este repositorio es un caso representativo de publicacion de adaptadores sin model card, util para estudios sobre trazabilidad y reproducibilidad en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -90,5 +90,5 @@ Los datos de los modelos comparados corresponden a sus especificaciones publicas
 - Paper de Llama 3: https://arxiv.org/abs/2407.21783
 - Referencia citada en la model card (Lacoste et al., 2019, estimacion de impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de ML: https://mlco2.github.io/impact
-- Documentacion de PEFT (HuggingFace): https://huggingface.co/docs/peft/index
-- Documentacion de TRL (HuggingFace): https://huggingface.co/docs/trl/index
+- Documentacion de PEFT (Hugging Face): https://huggingface.co/docs/peft/index
+- Documentacion de TRL (Hugging Face): https://huggingface.co/docs/trl/index

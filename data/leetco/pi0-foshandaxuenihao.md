@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`leetco/pi0-foshandaxuenihao` es un repositorio alojado en HuggingFace por el usuario `leetco` sobre el que no existe informacion publica sustancial. La model card publicada se limita a la declaracion de licencia (`apache-2.0`), sin descripcion del modelo, sin arquitectura declarada, sin datos de entrenamiento y sin ejemplos de uso. El repositorio registra 0 descargas y 0 "likes" en el momento de la consulta, lo que indica que no ha tenido difusion ni validacion por parte de la comunidad.
+`leetco/pi0-foshandaxuenihao` es un repositorio alojado en Hugging Face por el usuario `leetco` sobre el que no existe informacion publica sustancial. La model card publicada se limita a la declaracion de licencia (`apache-2.0`), sin descripcion del modelo, sin arquitectura declarada, sin datos de entrenamiento y sin ejemplos de uso. El repositorio registra 0 descargas y 0 "likes" en el momento de la consulta, lo que indica que no ha tenido difusion ni validacion por parte de la comunidad.
 
 No se dispone de informacion sobre el numero de parametros, la longitud de contexto, los idiomas soportados, el pipeline asociado ni los formatos de pesos publicados. El identificador del repositorio contiene la cadena `pi0`, que podria sugerir una relacion con el modelo pi0 de robotica, pero no hay ninguna evidencia en la informacion disponible que confirme dicha vinculacion, por lo que no debe asumirse.
 
@@ -21,7 +21,7 @@ La busqueda web realizada no ha devuelto ningun resultado relacionado con este m
 | Licencia | apache-2.0 |
 | Formato de pesos | no disponible |
 
-Otros metadatos declarados en HuggingFace: autor `leetco`, etiqueta de region `us`, fecha de creacion 2026-09-13 y fecha de actualizacion 2026-09-13. El repositorio no declara pipeline de inferencia (`pipeline: no disponible`).
+Otros metadatos declarados en Hugging Face: autor `leetco`, etiqueta de region `us`, fecha de creacion 2026-09-13 y fecha de actualizacion 2026-09-13. El repositorio no declara pipeline de inferencia (`pipeline: no disponible`).
 
 ## Arquitectura y entrenamiento
 
@@ -82,7 +82,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/leetco/pi0-foshandaxuenihao
+- Repositorio en Hugging Face: https://huggingface.co/leetco/pi0-foshandaxuenihao
 - Paper: no disponible.
 - Blog o anuncio oficial: no disponible.
 - Repositorio de codigo: no disponible.

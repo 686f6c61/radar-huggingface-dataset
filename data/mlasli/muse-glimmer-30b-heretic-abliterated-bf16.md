@@ -89,7 +89,7 @@ Otros modelos abliterados populares (por ejemplo, de la serie "abliterated" de o
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mlasli/Muse-Glimmer-30B-Heretic-Abliterated-BF16
+- Modelo en Hugging Face: https://huggingface.co/mlasli/Muse-Glimmer-30B-Heretic-Abliterated-BF16
 - Modelo base: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Herramienta Heretic (repositorio GitHub): https://github.com/d3nd3/heretic
 - Versiones GGUF: Q4_K_M (https://huggingface.co/mlasli/Muse-Glimmer-30B-Heretic-Abliterated-Q4_K_M-GGUF), Q6_K (https://huggingface.co/mlasli/Muse-Glimmer-30B-Heretic-Abliterated-Q6_K-GGUF), Q8_0 (https://huggingface.co/mlasli/Muse-Glimmer-30B-Heretic-Abliterated-Q8_0-GGUF)

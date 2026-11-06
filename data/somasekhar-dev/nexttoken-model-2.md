@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NextToken-model-2 (también llamado SAM, Small Action Model) es un modelo de 272,7 millones de parámetros desarrollado por el usuario `somasekhar-dev` y publicado en HuggingFace. No es un chatbot generalista: está afinado específicamente para actuar como enrutador de acciones en el dominio de banca y NBFC (entidades financieras no bancarias indias). Dada una intervención del usuario en inglés, hindi, hinglish o código mezclado hindi-inglés, el modelo decide cuál de las 41 acciones bancarias predefinidas debe invocarse (si procede) y extrae los argumentos correspondientes en formato JSON.
+NextToken-model-2 (también llamado SAM, Small Action Model) es un modelo de 272,7 millones de parámetros desarrollado por el usuario `somasekhar-dev` y publicado en Hugging Face. No es un chatbot generalista: está afinado específicamente para actuar como enrutador de acciones en el dominio de banca y NBFC (entidades financieras no bancarias indias). Dada una intervención del usuario en inglés, hindi, hinglish o código mezclado hindi-inglés, el modelo decide cuál de las 41 acciones bancarias predefinidas debe invocarse (si procede) y extrae los argumentos correspondientes en formato JSON.
 
 El modelo parte de una base preentrenada solo en hindi e inglés —la misma arquitectura que `somasekhar-dev/NextToken-model-1`, pero con preentrenamiento independiente— y se somete a un fine-tuning completo (no LoRA) sobre aproximadamente 8.600 ejemplos sintéticos de tool calling bancario, más unos 1.900 ejemplos de capacidad general para mitigar el disparo espurio de herramientas. El esquema de herramientas no se pasa en el contexto: el modelo fue entrenado directamente sobre pares `(utterance → tool call)` y no necesita un system prompt con la lista de herramientas.
 
@@ -74,9 +74,9 @@ No se dispone de benchmarks publicados de este modelo, por lo que la comparació
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NextToken-model-2 (SAM) | 272,7 M | 2.048 | Enrutamiento de acciones bancarias en hindi/ingles, 41 herramientas | No disponible | HuggingFace, safetensors |
-| Modelos pequeños generalistas de ~270-600 M (por ejemplo, variantes tipo Qwen3 o Gemma de esa escala) | 270 M - 600 M | Tipicamente 8.000-32.000 | Proposito general, requieren esquema de herramientas en contexto | Apache-2.0 o licencia propia segun familia | HuggingFace, GGUF, cuantizaciones multiples |
-| Modelo 1 de la misma familia (`somasekhar-dev/NextToken-model-1`) | No confirmado | No disponible | Base preentrenada hindi-ingles, sin fine-tuning de acciones | No disponible | HuggingFace |
+| NextToken-model-2 (SAM) | 272,7 M | 2.048 | Enrutamiento de acciones bancarias en hindi/ingles, 41 herramientas | No disponible | Hugging Face, safetensors |
+| Modelos pequeños generalistas de ~270-600 M (por ejemplo, variantes tipo Qwen3 o Gemma de esa escala) | 270 M - 600 M | Tipicamente 8.000-32.000 | Proposito general, requieren esquema de herramientas en contexto | Apache-2.0 o licencia propia segun familia | Hugging Face, GGUF, cuantizaciones multiples |
+| Modelo 1 de la misma familia (`somasekhar-dev/NextToken-model-1`) | No confirmado | No disponible | Base preentrenada hindi-ingles, sin fine-tuning de acciones | No disponible | Hugging Face |
 
 La diferencia funcional clave frente a los modelos generalistas de tamaño similar es que NextToken-model-2 no necesita que se le describan las herramientas en el prompt: la asociacion intervencion-herramienta esta internalizada en los pesos, a costa de perder flexibilidad para anadir o modificar herramientas sin reentrenar. Tampoco se publican cuantizaciones GGUF, lo que lo situa en desventaja frente a alternativas generalistas para despliegue en llama.cpp u Ollama.
 
@@ -97,7 +97,7 @@ La diferencia funcional clave frente a los modelos generalistas de tamaño simil
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/somasekhar-dev/NextToken-model-2
+- Modelo en Hugging Face: https://huggingface.co/somasekhar-dev/NextToken-model-2
 - Tokenizador utilizado (`sarvamai/sarvam-1`): https://huggingface.co/sarvamai/sarvam-1
 - Modelo base de la familia (`somasekhar-dev/NextToken-model-1`): https://huggingface.co/somasekhar-dev/NextToken-model-1
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante sobre este modelo; las coincidencias devueltas corresponden a foros y hilos de soporte sin relacion con la ficha.

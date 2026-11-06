@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`relaion-coyo-100m-text-to-image-v2` es un repositorio de modelo publicado en HuggingFace por el usuario `nunu72575`. No existe documentación asociada: la ficha del repositorio no declara pipeline, licencia, idiomas ni especificaciones técnicas, y la búsqueda web realizada no ha devuelto ninguna fuente relacionada con el modelo (los resultados obtenidos corresponden a la web del diario The Guardian y son irrelevantes). Se trata, por tanto, de un modelo sin información verificable más allá de sus metadatos.
+`relaion-coyo-100m-text-to-image-v2` es un repositorio de modelo publicado en Hugging Face por el usuario `nunu72575`. No existe documentación asociada: la ficha del repositorio no declara pipeline, licencia, idiomas ni especificaciones técnicas, y la búsqueda web realizada no ha devuelto ninguna fuente relacionada con el modelo (los resultados obtenidos corresponden a la web del diario The Guardian y son irrelevantes). Se trata, por tanto, de un modelo sin información verificable más allá de sus metadatos.
 
 El identificador sugiere un modelo de generación de imágenes a partir de texto (text-to-image) con un tamaño nominal en torno a 100 millones de parámetros, y la mención "coyo" podría apuntar a un entrenamiento sobre el dataset COYO. Estas inferencias proceden únicamente del nombre del repositorio y no están confirmadas por ninguna fuente publicada, por lo que deben tratarse como hipótesis de trabajo y no como hechos.
 
@@ -76,7 +76,7 @@ No es posible establecer una comparativa fiable: el modelo no declara parámetro
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos comparativos |
 |---|---|---|---|---|---|
-| relaion-coyo-100m-text-to-image-v2 | no disponible | no disponible | no disponible | HuggingFace, 0 descargas | no disponible |
+| relaion-coyo-100m-text-to-image-v2 | no disponible | no disponible | no disponible | Hugging Face, 0 descargas | no disponible |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información verificada sobre modelos comparables en la información proporcionada.
@@ -95,7 +95,7 @@ No se dispone de información verificada sobre modelos comparables en la informa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nunu72575/relaion-coyo-100m-text-to-image-v2
+- Hugging Face: https://huggingface.co/nunu72575/relaion-coyo-100m-text-to-image-v2
 - Paper: no disponible
 - Blog o anuncio: no disponible
 - Repositorio de código: no disponible

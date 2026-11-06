@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Reef-app/siglip2-base-patch16-256-coreml | no disponible | no disponible | Core ML | apache-2.0 | HuggingFace, 0 descargas, 0 likes |
-| google/siglip2-base-patch16-256 (modelo base) | no disponible | no disponible | safetensors (presumiblemente) | no disponible en esta ficha | HuggingFace |
-| FluidInference/siglip2-base-patch16-256-coreml (origen de la conversion) | no disponible | no disponible | Core ML | apache-2.0 segun la model card | HuggingFace |
+| Reef-app/siglip2-base-patch16-256-coreml | no disponible | no disponible | Core ML | apache-2.0 | Hugging Face, 0 descargas, 0 likes |
+| google/siglip2-base-patch16-256 (modelo base) | no disponible | no disponible | safetensors (presumiblemente) | no disponible en esta ficha | Hugging Face |
+| FluidInference/siglip2-base-patch16-256-coreml (origen de la conversion) | no disponible | no disponible | Core ML | apache-2.0 segun la model card | Hugging Face |
 
 No se dispone de datos de rendimiento que permitan comparar estos artefactos entre si ni frente a alternativas de la misma categoria, como CLIP ViT-B/16 o SigLIP 1. La unica diferencia documentada entre las tres filas es el formato y el empaquetado, ya que el contenido de pesos es el mismo.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento que permitan comparar estos artefactos ent
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Reef-app/siglip2-base-patch16-256-coreml
+- Repositorio en Hugging Face: https://huggingface.co/Reef-app/siglip2-base-patch16-256-coreml
 - Modelo base: https://huggingface.co/google/siglip2-base-patch16-256
 - Conversion original de Fluid Inference, citada en la model card: https://huggingface.co/FluidInference/siglip2-base-patch16-256-coreml
 - No se han encontrado otros enlaces relevantes en la busqueda web; los resultados obtenidos corresponden a entidades no relacionadas con el modelo.

@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mhseo2/opd_sfto7amr1_s4000_olmo31_32b_think_amr1math-step20
+- Hugging Face: https://huggingface.co/mhseo2/opd_sfto7amr1_s4000_olmo31_32b_think_amr1math-step20
 - Modelo base (SFT): https://huggingface.co/mhseo2/sft_olmo3base7b_amr1_0528_math_n204800-step4000
 - Profesor: https://huggingface.co/allenai/Olmo-3.1-32B-Think
 - Código `mopdRL`: no se proporciona URL en la información disponible (commit `f1bcc9eb82a8bcc7a053a23dd1afcae82fb591e4`, paquete `bsc-olmo-base-opd-2026-10-26`)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `yuq-zhou/2026-05-o-b0p5-a0p5-gc0p5-exp-td8p0-tw10p0-mbz-bridge-q3-1p7b-last` es un checkpoint de investigación en formato HuggingFace estándar, publicado por el usuario yuq-zhou. Según las etiquetas asociadas, pertenece a la familia Qwen3 y está orientado a generación de texto conversacional. Con aproximadamente 2.031 millones de parámetros, se trata de un modelo de tamaño pequeño-medio, adecuado para entornos con recursos limitados.
+El modelo `yuq-zhou/2026-05-o-b0p5-a0p5-gc0p5-exp-td8p0-tw10p0-mbz-bridge-q3-1p7b-last` es un checkpoint de investigación en formato Hugging Face estándar, publicado por el usuario yuq-zhou. Según las etiquetas asociadas, pertenece a la familia Qwen3 y está orientado a generación de texto conversacional. Con aproximadamente 2.031 millones de parámetros, se trata de un modelo de tamaño pequeño-medio, adecuado para entornos con recursos limitados.
 
 La model card apenas contiene información: se describe como un "artefacto de investigación" y no se proporcionan detalles sobre entrenamiento, licencia, idiomas o capacidades específicas. Esto lo convierte en un recurso útil principalmente para investigadores que quieran explorar variantes experimentales de Qwen3, pero no para un uso directo en producción sin una evaluación previa.
 
@@ -43,7 +43,7 @@ Dada la falta de documentación, los casos de uso son hipotéticos y requieren v
 - Entornos con restricciones de hardware: su tamaño permite ejecutarlo en GPUs de consumo, aunque sin conocer su calidad real.
 - Fine-tuning posterior: al ser un checkpoint intermedio, podría ser un punto de partida para fine-tuning en tareas específicas.
 - Evaluación comparativa: para medir el rendimiento de variantes experimentales frente a modelos comerciales de tamaño similar.
-- Educación: como ejemplo de cómo se publican y comparten artefactos de investigación en HuggingFace.
+- Educación: como ejemplo de cómo se publican y comparten artefactos de investigación en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -63,10 +63,10 @@ No se dispone de datos de rendimiento para comparar directamente. Sin embargo, s
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este modelo | 2.03B | no disponible | no disponible | HuggingFace |
-| Qwen2.5-1.5B | 1.54B | 32K | Apache 2.0 | HuggingFace |
-| Llama-3.2-1B | 1.23B | 128K | Llama 3.2 license | HuggingFace |
-| Gemma-2-2B | 2.6B | 8K | Gemma license | HuggingFace |
+| Este modelo | 2.03B | no disponible | no disponible | Hugging Face |
+| Qwen2.5-1.5B | 1.54B | 32K | Apache 2.0 | Hugging Face |
+| Llama-3.2-1B | 1.23B | 128K | Llama 3.2 license | Hugging Face |
+| Gemma-2-2B | 2.6B | 8K | Gemma license | Hugging Face |
 
 La comparativa es limitada porque no se conocen las capacidades reales de este checkpoint.
 
@@ -80,6 +80,6 @@ La comparativa es limitada porque no se conocen las capacidades reales de este c
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/yuq-zhou/2026-05-o-b0p5-a0p5-gc0p5-exp-td8p0-tw10p0-mbz-bridge-q3-1p7b-last)
+- [Hugging Face - modelo](https://huggingface.co/yuq-zhou/2026-05-o-b0p5-a0p5-gc0p5-exp-td8p0-tw10p0-mbz-bridge-q3-1p7b-last)
 - [Modelo similar en FriendliAI](https://friendli.ai/models/yuq-zhou/2026-05-o-b0p3-a0p5-gc0p5-exp-td4p0-tw5p0-r1-7-last)
 - [Otro checkpoint del mismo autor](https://friendli.ai/models/yuq-zhou/2026-05-o-b0p3-a1p0-gc0p5-exp-td4p0-tw10p0-mbz-r1-7)

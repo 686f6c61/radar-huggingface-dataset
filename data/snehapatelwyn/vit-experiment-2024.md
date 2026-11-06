@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`snehapatelwyn/vit-experiment-2024` es un prototipo de investigacion publicado en HuggingFace por el usuario snehapatelwyn. Se presenta como un Vision Transformer (ViT) orientado a tareas de *matching*, con una implementacion propia en PyTorch y un checkpoint de inicializacion (`model.safetensors`) cuya unica finalidad declarada es servir de prueba de humo (*smoke test*). El repositorio incluye `train.py`, `config.json`, `training_args.json` y el propio checkpoint.
+`snehapatelwyn/vit-experiment-2024` es un prototipo de investigacion publicado en Hugging Face por el usuario snehapatelwyn. Se presenta como un Vision Transformer (ViT) orientado a tareas de *matching*, con una implementacion propia en PyTorch y un checkpoint de inicializacion (`model.safetensors`) cuya unica finalidad declarada es servir de prueba de humo (*smoke test*). El repositorio incluye `train.py`, `config.json`, `training_args.json` y el propio checkpoint.
 
 El dato mas relevante es su tamano real: 33.088 parametros leidos directamente del fichero safetensors. Esto contradice la etiqueta `Scale: giant` que aparece en la model card del autor, que documenta ajustes y formatos de archivo pero no respalda ninguna cifra de rendimiento. No es, por tanto, un modelo entrenado ni evaluado, sino un andamiaje experimental.
 
@@ -25,7 +25,7 @@ Su relevancia actual es limitada y de caracter metodologico: sirve como plantill
 | Activacion | mish |
 | Normalizacion | layernorm |
 | Optimizador del recetario por defecto | RMSProp con *linear warmup* |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
 | Tamano del repositorio | 0,0 GB |
 
@@ -80,7 +80,7 @@ No se han encontrado modelos comparables en la informacion proporcionada. Las bu
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| snehapatelwyn/vit-experiment-2024 | 33.088 | no disponible | MIT | HuggingFace, 0 descargas | no disponible |
+| snehapatelwyn/vit-experiment-2024 | 33.088 | no disponible | MIT | Hugging Face, 0 descargas | no disponible |
 | Alternativa 1 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativa 2 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativa 3 | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -95,14 +95,14 @@ No se han encontrado modelos comparables en la informacion proporcionada. Las bu
 - Riesgo de alucinacion: no aplica en el sentido generativo, pero cualquier resultado obtenido de un checkpoint sin entrenar seria ruido y no debe interpretarse como prediccion.
 - Idiomas y cobertura: no disponibles; no se declara ningun idioma ni dominio.
 - Licencia MIT: permite uso comercial y modificacion del codigo del repositorio, pero la model card recuerda que deben revisarse por separado las condiciones de los datos de origen si se combinan con conjuntos externos.
-- Compatibilidad: al ser una implementacion personalizada, no se carga con las utilidades automaticas habituales de HuggingFace sin escribir un adaptador.
+- Compatibilidad: al ser una implementacion personalizada, no se carga con las utilidades automaticas habituales de Hugging Face sin escribir un adaptador.
 - Para produccion: se recomienda tratar este repositorio unicamente como punto de partida experimental y no como artefacto desplegable.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/snehapatelwyn/vit-experiment-2024
+- Hugging Face: https://huggingface.co/snehapatelwyn/vit-experiment-2024
 - Paper: no disponible
 - Blog o documentacion adicional: no disponible
-- Repositorio de codigo independiente: no disponible (el codigo se distribuye dentro del propio repositorio de HuggingFace)
+- Repositorio de codigo independiente: no disponible (el codigo se distribuye dentro del propio repositorio de Hugging Face)
 - Demo: no disponible
 - Resultados de busqueda web: no se han encontrado enlaces tecnicos relevantes; los resultados devueltos correspondian a enlaces promocionales de un servicio de almacenamiento en la nube sin relacion con el modelo.

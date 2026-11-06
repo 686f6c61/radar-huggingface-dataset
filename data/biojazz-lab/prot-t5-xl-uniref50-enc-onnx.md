@@ -79,9 +79,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Precision | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| prot-t5-xl-uniref50-enc-onnx (este) | ~1,2B (encoder) | No disponible | FP16, ONNX | MIT | HuggingFace (ONNX) |
-| Rostlab/prot_t5_xl_half_uniref50-enc | ~1,2B (encoder) | No disponible | FP16, PyTorch | No disponible en la informacion | HuggingFace (PyTorch) |
-| T5-3B (base general) | ~3B | 512 tokens (tipico) | FP32/FP16 | Apache 2.0 (no confirmado aqui) | HuggingFace |
+| prot-t5-xl-uniref50-enc-onnx (este) | ~1,2B (encoder) | No disponible | FP16, ONNX | MIT | Hugging Face (ONNX) |
+| Rostlab/prot_t5_xl_half_uniref50-enc | ~1,2B (encoder) | No disponible | FP16, PyTorch | No disponible en la informacion | Hugging Face (PyTorch) |
+| T5-3B (base general) | ~3B | 512 tokens (tipico) | FP32/FP16 | Apache 2.0 (no confirmado aqui) | Hugging Face |
 
 La comparativa con otros modelos de lenguaje de proteinas (por ejemplo, ESM-2) no esta disponible en la informacion proporcionada; no se dispone de datos de parametros, contexto ni rendimiento de esos modelos en esta ficha.
 
@@ -99,9 +99,9 @@ La comparativa con otros modelos de lenguaje de proteinas (por ejemplo, ESM-2) n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BioJazz-Lab/prot-t5-xl-uniref50-enc-onnx
+- Modelo en Hugging Face: https://huggingface.co/BioJazz-Lab/prot-t5-xl-uniref50-enc-onnx
 - Modelo original de Rostlab: https://huggingface.co/Rostlab/prot_t5_xl_half_uniref50-enc
-- Documentacion de HuggingFace CLI: https://huggingface.co/docs/huggingface_hub/main/en/guides/cli
+- Documentacion de Hugging Face CLI: https://huggingface.co/docs/huggingface_hub/main/en/guides/cli
 - Dataset UniRef50: no disponible como enlace directo en la informacion proporcionada
 - Paper o blog del autor: no disponible en la informacion proporcionada
 - Repositorio o demo adicional: no disponible en la informacion proporcionada

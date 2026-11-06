@@ -61,7 +61,7 @@ La innovacion tecnica de esta celda es el procedimiento de reparacion posterior.
 - Investigacion de interpretabilidad sobre el rechazo: los 5.308 componentes restaurados y los 5.308 sustituidos son un conjunto identificable de candidatos para analizar que subespacios de las proyecciones codifican el comportamiento de rechazo.
 - Validacion de jueces automaticos: los valores de ASR y de sobre-rechazo permiten comprobar la consistencia entre HarmBench y WildGuard sobre un modelo con comportamiento deliberadamente degradado.
 - Estudio del compromiso seguridad-utilidad: la pareja perplejidad (55,3440 en WikiText-2) frente a ASR (0,0192 en AdvBench) permite trazar curvas de degradacion de utilidad frente a ganancia de seguridad en funcion del presupuesto de restauracion.
-- Pruebas de infraestructura de inferencia: dado que el repositorio declara compatibilidad con `text-generation-inference` y `endpoints_compatible`, se puede usar para verificar que vLLM, TGI o los endpoints de HuggingFace cargan correctamente un checkpoint derivado con las dimensiones de proyeccion modificadas.
+- Pruebas de infraestructura de inferencia: dado que el repositorio declara compatibilidad con `text-generation-inference` y `endpoints_compatible`, se puede usar para verificar que vLLM, TGI o los endpoints de Hugging Face cargan correctamente un checkpoint derivado con las dimensiones de proyeccion modificadas.
 - Linea base negativa en evaluacion de sobre-rechazo: con un 0,2419 de sobre-rechazo macro, es util como caso de control en estudios sobre calibracion de negativas.
 
 ## Benchmarks y rendimiento
@@ -110,7 +110,7 @@ No se han identificado en la informacion disponible otros checkpoints comparable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l3_swift_remove50_swapgapiter_rankunit_b010
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l3_swift_remove50_swapgapiter_rankunit_b010
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
 - Licencia y politica de uso: archivos `LICENSE` y `USE_POLICY.md` incluidos en el propio repositorio del modelo
 - Resultados de la busqueda web: no se han encontrado enlaces relevantes. Las unicas entradas devueltas corresponden a consultas sobre la aplicacion de correo de un operador de telefonia y no guardan relacion con el modelo, su paper ni su codigo.

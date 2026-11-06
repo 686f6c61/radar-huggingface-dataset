@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Hand Weights es un modelo de texto a imagen experimental publicado por el usuario Vishwasaidev en HuggingFace. Su particularidad es radical: sus 4.071 parametros fueron escritos a mano o derivados de formulas geometricas, sin dataset, sin entrenamiento y sin descenso de gradiente. Cada peso tiene una interpretacion directa, de modo que la fila 12 de un tensor de plano corresponde literalmente al borde izquierdo de un triangulo. Es, por tanto, un modelo juguete orientado a la interpretabilidad y a la docencia, no un sistema de generacion de imagenes de proposito general.
+Hand Weights es un modelo de texto a imagen experimental publicado por el usuario Vishwasaidev en Hugging Face. Su particularidad es radical: sus 4.071 parametros fueron escritos a mano o derivados de formulas geometricas, sin dataset, sin entrenamiento y sin descenso de gradiente. Cada peso tiene una interpretacion directa, de modo que la fila 12 de un tensor de plano corresponde literalmente al borde izquierdo de un triangulo. Es, por tanto, un modelo juguete orientado a la interpretabilidad y a la docencia, no un sistema de generacion de imagenes de proposito general.
 
 La arquitectura se organiza en cuatro etapas: un embedding de 83 palabras a vectores de 32 dimensiones con ranuras para forma, color, posicion, tamano, cielo y suelo; un binder con recurrencia con compuertas que propaga adjetivos y resuelve frases de posicion; un decodificador de ranuras con capas lineales y valores por defecto por forma; y un renderizador de tres capas basado en neuronas de semiplano, combinaciones AND/OR/AND-NOT y una neurona lineal de sombreado con compuerta de composicion alfa. El resultado se genera con NumPy y Pillow, sin dependencias de aprendizaje profundo.
 
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: practicamente nula; el modelo completo ocupa unos pocos kilobytes en memoria y se ejecuta en CPU.
 - GPU recomendadas: no requiere GPU; funciona en cualquier CPU con Python, NumPy y Pillow.
 - Cabe en cualquier GPU de consumo e incluso en entornos sin GPU, como contenedores ligeros o dispositivos embebidos.
-- Opciones de despliegue: ejecucion directa con `python handweights.py "<prompt>"`, modo demo con `python handweights.py --demo` y el Space de HuggingFace alojado por el autor. No es compatible con vLLM, llama.cpp, Ollama ni TGI, ya que no es un transformer ni usa pesos en formato GGUF.
+- Opciones de despliegue: ejecucion directa con `python handweights.py "<prompt>"`, modo demo con `python handweights.py --demo` y el Space de Hugging Face alojado por el autor. No es compatible con vLLM, llama.cpp, Ollama ni TGI, ya que no es un transformer ni usa pesos en formato GGUF.
 - Latencia y throughput: no disponibles de forma oficial; por el tamano del modelo y la ausencia de operaciones matriciales grandes, se espera una latencia de milisegundos por imagen en CPU, aunque no se ha publicado una medicion.
 
 ## Comparativa con modelos similares
@@ -67,7 +67,7 @@ No hay modelos comparables directos en la informacion disponible. Los modelos de
 
 | Modelo | Parametros | Entrenamiento | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Hand Weights | 4.071 | Ninguno (pesos manuales) | no disponible | MIT | HuggingFace, 0 descargas |
+| Hand Weights | 4.071 | Ninguno (pesos manuales) | no disponible | MIT | Hugging Face, 0 descargas |
 | Modelos de difusion de texto a imagen | Cientos de millones a miles de millones | Preentrenamiento masivo | Tokens de texto, variable | Variable segun modelo | Amplia |
 | Modelos de texto a imagen basados en transformers | Variable | Preentrenamiento masivo | Variable | Variable | Amplia |
 
@@ -84,7 +84,7 @@ No hay modelos comparables directos en la informacion disponible. Los modelos de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Vishwasaidev/hand-weights
+- Modelo en Hugging Face: https://huggingface.co/Vishwasaidev/hand-weights
 - Space de demostracion: https://huggingface.co/spaces/Vishwasaidev/hand-weights
 - Repositorio del autor: no disponible
 - Paper: no disponible

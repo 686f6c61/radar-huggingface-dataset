@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ToR-OT 2D | Transformer encoder-decoder, regresión por tokens | 157,6 M | no disponible | MIT | Pesos en HuggingFace (`ivanjaenm/torot-2d`) |
+| ToR-OT 2D | Transformer encoder-decoder, regresión por tokens | 157,6 M | no disponible | MIT | Pesos en Hugging Face (`ivanjaenm/torot-2d`) |
 | Meta OT | Baseline neuronal de transporte óptimo | no disponible | no aplica | no disponible | Código en `baselines/` del repo |
 | UNOT | Baseline neuronal de transporte óptimo | no disponible | no aplica | no disponible | Código en `baselines/` del repo |
 
@@ -79,7 +79,7 @@ No se dispone de datos de parámetros, contexto ni rendimiento de Meta OT y UNOT
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ivanjaenm/torot-2d
+- Modelo en Hugging Face: https://huggingface.co/ivanjaenm/torot-2d
 - Dataset de entrenamiento: https://huggingface.co/datasets/ivanjaenm/torot_data_4M_2d
 - Repositorio de código: https://github.com/vsingh-group/TOR-OT
 - Paper: *Learning Optimal Transport Plans Via Autoregressive Token Regression*, Jaen Marquez, Chytas y Singh, NeurIPS 2026 (enlace directo no disponible en la información proporcionada)

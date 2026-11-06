@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Flattener es un paquete de tres modelos de vision por computador desarrollado por DevWorld que convierte fotografias de documentos y libros abiertos en escaneos planos y enderezados. Forma parte del proyecto Flattener 1.0.0 y se distribuye bajo licencia Apache-2.0 desde HuggingFace. No es un modelo de lenguaje, sino un sistema de imagen a imagen (pipeline `image-to-image`) orientado al preprocesado documental.
+Flattener es un paquete de tres modelos de vision por computador desarrollado por DevWorld que convierte fotografias de documentos y libros abiertos en escaneos planos y enderezados. Forma parte del proyecto Flattener 1.0.0 y se distribuye bajo licencia Apache-2.0 desde Hugging Face. No es un modelo de lenguaje, sino un sistema de imagen a imagen (pipeline `image-to-image`) orientado al preprocesado documental.
 
 El bundle incluye tres checkpoints PyTorch (`dewarp.pt`, `gate.pt` y `orient.pt`) mas un fichero `bundle.json` que permite cargarlos conjuntamente: uno detecta la region de la pagina, otro corrige la perspectiva y la curvatura, y el tercero predice la orientacion del texto. Todo el procesamiento se ejecuta en local, sin depender de servicios en la nube.
 
@@ -23,7 +23,7 @@ Su relevancia actual reside en la digitalizacion de documentos y en el preproces
 | Tarea (pipeline) | image-to-image |
 | Componentes | `dewarp.pt`, `gate.pt`, `orient.pt`, `bundle.json` |
 | Version | 1.0.0 |
-| Tamano del repositorio | 0,0 GB (segun HuggingFace) |
+| Tamano del repositorio | 0,0 GB (segun Hugging Face) |
 | Fecha de publicacion | 2026-10-05 |
 
 ## Arquitectura y entrenamiento
@@ -49,7 +49,7 @@ El checkpoint de orientacion incluye su temperatura calibrada, es decir, la sali
 
 - Digitalizacion de libros y bibliotecas: fotografiar libros abiertos pagina a pagina y obtener escaneos planos y enderezados, corrigiendo la curvatura del lomo y la perspectiva sin necesidad de un escaner plano.
 - Preprocesado para OCR: usar `dewarp.pt` y `orient.pt` antes de un motor de OCR para reducir errores de reconocimiento causados por la deformacion geometrica y la orientacion incorrecta de la pagina.
-- Escaneo movil sin conexion: la inferencia se ejecuta en local y el bundle se reutiliza desde la cache de HuggingFace, incluso offline, lo que permite integraciones en aplicaciones moviles sin acceso a red.
+- Escaneo movil sin conexion: la inferencia se ejecuta en local y el bundle se reutiliza desde la cache de Hugging Face, incluso offline, lo que permite integraciones en aplicaciones moviles sin acceso a red.
 - Archivado documental empresarial: procesar lotes de fotografias de contratos, facturas o expedientes para normalizar la imagen antes de almacenarla o indexarla.
 - Digitalizacion de documentos en coreano: los modelos de deteccion de pagina y orientacion se entrenaron con documentos generados en coreano, lo que resulta util para fondos documentales en ese idioma.
 - Documentos con pliegues o arrugas: el blend del checkpoint de dewarping con uno entrenado en pliegues y arrugas adicionales esta pensado para paginas fisicamente deterioradas, como correspondencia doblada o mapas.
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Compatibilidad con GPU de consumo: no disponible. La model card solo indica que el procesamiento se ejecuta en local.
 - Opciones de despliegue: libreria propia `flattener` (checkout del repositorio fuente, `uv sync --python 3.12` y `uv run python -m flattener.scan`), descarga de pesos via `hf download DevWorld/flattener ... --local-dir models` y carga con `--bundle models/bundle.json`. El repositorio fuente incluye herramientas de exportacion a navegador.
 - Latencia y throughput: no disponible.
-- Nota de despliegue: el primer escaneo descarga el bundle en la revision `1.0.0`; los posteriores reutilizan la cache local de HuggingFace, lo que permite funcionamiento offline.
+- Nota de despliegue: el primer escaneo descarga el bundle en la revision `1.0.0`; los posteriores reutilizan la cache local de Hugging Face, lo que permite funcionamiento offline.
 
 ## Comparativa con modelos similares
 
@@ -87,5 +87,5 @@ No se proporciona informacion sobre modelos comparables en el material disponibl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DevWorld/flattener
+- Modelo en Hugging Face: https://huggingface.co/DevWorld/flattener
 - Repositorio fuente (Flattener): https://github.com/deveworld/flattener

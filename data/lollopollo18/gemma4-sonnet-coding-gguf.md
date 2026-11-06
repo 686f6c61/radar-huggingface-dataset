@@ -2,7 +2,7 @@
 
 ## Resumen
 
-gemma4-sonnet-coding-gguf es una version cuantizada en formato GGUF de un ajuste fino del modelo Gemma 4 de 12.000 millones de parametros, publicada por el usuario lollopollo18 en HuggingFace. El nombre del repositorio sugiere un ajuste orientado a tareas de generacion de codigo ("coding"), aunque la model card no documenta de forma explicita el dataset ni el objetivo concreto del fine-tuning. El modelo se presenta con la etiqueta vision-language-model y la model card incluye instrucciones para ejecutarlo tanto en modo solo texto como en modo multimodal, lo que indica que conserva capacidades de vision.
+gemma4-sonnet-coding-gguf es una version cuantizada en formato GGUF de un ajuste fino del modelo Gemma 4 de 12.000 millones de parametros, publicada por el usuario lollopollo18 en Hugging Face. El nombre del repositorio sugiere un ajuste orientado a tareas de generacion de codigo ("coding"), aunque la model card no documenta de forma explicita el dataset ni el objetivo concreto del fine-tuning. El modelo se presenta con la etiqueta vision-language-model y la model card incluye instrucciones para ejecutarlo tanto en modo solo texto como en modo multimodal, lo que indica que conserva capacidades de vision.
 
 El modelo fue ajustado y convertido a GGUF mediante Unsloth, una herramienta que acelera el entrenamiento y simplifica la conversion de pesos a formatos compatibles con llama.cpp. Esta publicacion esta pensada para su despliegue local con el ecosistema llama.cpp, e incluye tanto el archivo cuantizado del modelo principal como un proyector multimodal separado, lo que permite ejecutar inferencia sobre imagenes ademas de texto. Se trata de un modelo conversacional con soporte declarado de endpoints compatibles.
 
@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas (contexto,
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lollopollo18/gemma4-sonnet-coding-gguf
+- Hugging Face: https://huggingface.co/lollopollo18/gemma4-sonnet-coding-gguf
 - Unsloth (herramienta usada para el ajuste y conversion): https://github.com/unslothai/unsloth
 - Repositorio de llama.cpp (runtime compatible con GGUF): no incluido en la informacion proporcionada
 - Paper, blog o demo adicional: no disponible

@@ -25,7 +25,7 @@ Para un desarrollador, este modelo es útil si necesita un reranker multilingüe
 
 No se dispone de información sobre el entrenamiento en la model card publicada: el README del repositorio solo contiene la declaración de licencia MIT, sin sección de arquitectura, dataset, número de tokens ni proceso de alineación (RLHF/DPO). Por el identificador y el recuento de parámetros, se trata de una conversión del reranker `jina-reranker-v2-base-multilingual` de Jina AI, que emplea un transformer encoder tipo XLM-RoBERTa para producir una puntuación de relevancia a partir de la concatenación de consulta y documento.
 
-La innovación técnica de este artefacto concreto es la cuantización a 4 bits y el empaquetado para MLX, el framework de Apple para inferencia en silicio unificado. El tag `custom_code` en HuggingFace indica que la carga no se realiza con `transformers` estándar, sino que requiere el código específico incluido en el repositorio. No hay información publicada sobre calibración de la cuantización, pérdida de precisión respecto al modelo original ni metodología de conversión.
+La innovación técnica de este artefacto concreto es la cuantización a 4 bits y el empaquetado para MLX, el framework de Apple para inferencia en silicio unificado. El tag `custom_code` en Hugging Face indica que la carga no se realiza con `transformers` estándar, sino que requiere el código específico incluido en el repositorio. No hay información publicada sobre calibración de la cuantización, pérdida de precisión respecto al modelo original ni metodología de conversión.
 
 ## Capacidades
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| arlenecc/jina-reranker-v2-base-multilingual-mlx-int4 | 278 M | no disponible | MIT | safetensors (MLX, INT4) | HuggingFace, 33 descargas |
-| jinaai/jina-reranker-v2-base-multilingual (original) | 278 M | 8192 tokens (según documentación pública de Jina AI) | CC BY-NC 4.0 (uso no comercial; verificar en el repo original) | safetensors (transformers) | HuggingFace, ampliamente utilizado |
-| BAAI/bge-reranker-v2-m3 | 568 M | 8192 tokens (según documentación pública de BAAI) | Apache 2.0 | safetensors (transformers) | HuggingFace |
-| cross-encoder/ms-marco-MiniLM-L-6-v2 | 22 M | 512 tokens | Apache 2.0 | safetensors (transformers) | HuggingFace |
+| arlenecc/jina-reranker-v2-base-multilingual-mlx-int4 | 278 M | no disponible | MIT | safetensors (MLX, INT4) | Hugging Face, 33 descargas |
+| jinaai/jina-reranker-v2-base-multilingual (original) | 278 M | 8192 tokens (según documentación pública de Jina AI) | CC BY-NC 4.0 (uso no comercial; verificar en el repo original) | safetensors (transformers) | Hugging Face, ampliamente utilizado |
+| BAAI/bge-reranker-v2-m3 | 568 M | 8192 tokens (según documentación pública de BAAI) | Apache 2.0 | safetensors (transformers) | Hugging Face |
+| cross-encoder/ms-marco-MiniLM-L-6-v2 | 22 M | 512 tokens | Apache 2.0 | safetensors (transformers) | Hugging Face |
 
 Nota: los datos de contexto y licencia de los modelos comparables provienen de su documentación pública habitual; no se han verificado en la información proporcionada para esta ficha. La licencia MIT de esta conversión contrasta con la licencia del checkpoint original de Jina AI, lo que conviene revisar antes de un uso comercial.
 
@@ -81,7 +81,7 @@ Nota: los datos de contexto y licencia de los modelos comparables provienen de s
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/arlenecc/jina-reranker-v2-base-multilingual-mlx-int4
+- Repositorio Hugging Face: https://huggingface.co/arlenecc/jina-reranker-v2-base-multilingual-mlx-int4
 - Modelo base (referencia, no enlazado en la información proporcionada): https://huggingface.co/jinaai/jina-reranker-v2-base-multilingual
 - Documentación de MLX: https://ml-explore.github.io/mlx/
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información proporcionada.

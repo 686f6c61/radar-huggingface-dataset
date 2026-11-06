@@ -82,7 +82,7 @@ No se dispone de información sobre modelos de terceros comparables (por ejemplo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/qinghuali/Ornith-1.5-35B-MLX-VL-oQ8e
+- Repositorio Hugging Face: https://huggingface.co/qinghuali/Ornith-1.5-35B-MLX-VL-oQ8e
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Herramienta de cuantización oMLX: https://github.com/jundot/omlx
 - Documentación de oQ: https://github.com/jundot/omlx/blob/main/docs/oQ_Quantization.md

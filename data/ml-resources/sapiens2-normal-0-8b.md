@@ -107,7 +107,7 @@ No se dispone de comparaciones con modelos de terceros (por ejemplo, otros estim
 
 ## Enlaces
 
-- Repositorio en HuggingFace (espejo): https://huggingface.co/ml-resources/sapiens2-normal-0.8b
+- Repositorio en Hugging Face (espejo): https://huggingface.co/ml-resources/sapiens2-normal-0.8b
 - Modelo original de Meta: https://huggingface.co/facebook/sapiens2-normal-0.8b
 - Backbone preentrenado base: https://huggingface.co/facebook/sapiens2-pretrain-0.8b
 - Paper: https://arxiv.org/pdf/2604.21681

@@ -23,7 +23,7 @@ El checkpoint tiene 33.357.390.064 parámetros reales (según safetensors) y un 
 | Tamano del repositorio | 66,7 GB |
 | Pipeline | image-text-to-text |
 | Requisito de libreria | transformers >= 4.57 |
-| Fecha de creacion (segun HuggingFace) | 2026-10-12 |
+| Fecha de creacion (segun Hugging Face) | 2026-10-12 |
 
 ## Arquitectura y entrenamiento
 
@@ -83,7 +83,7 @@ Conclusiones declaradas por el autor: AesCode-32B mejora `Visual` en 22,4 puntos
 
 | Modelo | Parametros | Entrada multimodal | Contexto de evaluacion | Overall (infografias) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| AesCode-32B | 33,36 mil millones | Si (referencia visual) | 24.576 tokens | 85,89 | Apache 2.0 | Pesos abiertos en HuggingFace |
+| AesCode-32B | 33,36 mil millones | Si (referencia visual) | 24.576 tokens | 85,89 | Apache 2.0 | Pesos abiertos en Hugging Face |
 | AesCode-8B | No disponible en la informacion proporcionada | Si (referencia visual) | No disponible | 82,94 | No disponible en la informacion proporcionada | Pesos abiertos (microsoft/AesCode-8B) |
 | Qwen3-VL-32B-Instruct | 32B (modelo base) | Si | No disponible | 61,10 (con referencia) | No disponible en la informacion proporcionada | Pesos abiertos |
 | Qwen3-VL-8B | 8B | Si | No disponible | 51,93 (con referencia) | No disponible en la informacion proporcionada | Pesos abiertos |
@@ -103,11 +103,11 @@ La comparacion se limita a la tarea de generacion de infografias en HTML/CSS des
 - Trazabilidad del repositorio: el checkpoint analizado se publica bajo el usuario TechnoBaptist, mientras que la model card referencia rutas `microsoft/AesCode-32B` y `microsoft/AesCode-8B`. Conviene confirmar la procedencia oficial antes de desplegar en produccion.
 - Cero adopcion verificable en el momento de la consulta: el repositorio presenta 0 descargas y 0 likes, por lo que no existe evidencia de comunidad ni de validacion independiente de los resultados.
 - La model card disponible esta truncada en la seccion de uso, de modo que parte de las instrucciones y detalles de salida no se han podido revisar.
-- La fecha de creacion que reporta HuggingFace (2026-10-12) resulta anomala; no se ha podido contrastar con otras fuentes.
+- La fecha de creacion que reporta Hugging Face (2026-10-12) resulta anomala; no se ha podido contrastar con otras fuentes.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TechnoBaptist/AesCode-32B
+- Modelo en Hugging Face: https://huggingface.co/TechnoBaptist/AesCode-32B
 - Modelo companero (segun la model card): https://huggingface.co/microsoft/AesCode-8B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-32B-Instruct
 - Codigo: https://github.com/microsoft/AesCode

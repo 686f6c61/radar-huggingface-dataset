@@ -1,7 +1,7 @@
 # minjunglee27/microduck-models
 
 ## Resumen
-MicroDuck es un robot bípedo de tamaño diminuto desarrollado por pollen-robotics. Este repositorio de HuggingFace, creado por minjunglee27, contiene políticas de aprendizaje por refuerzo (RL) entrenadas para controlar el robot en simulación MuJoCo y su posterior transferencia al mundo real (sim2real). El modelo se distribuye como redes de políticas preentrenadas en formato ONNX, listas para inferencia en tiempo real, junto con checkpoints de PyTorch y un checkpoint exportado a 750 iteraciones. No se dispone de información sobre la arquitectura de red, el número de parámetros ni el contexto de entrenamiento en la información proporcionada. Es relevante para la comunidad de robótica y RL porque ofrece un punto de partida para investigar el control de robots bípedos de bajo coste y la transferencia de simulaciones a entornos físicos.
+MicroDuck es un robot bípedo de tamaño diminuto desarrollado por pollen-robotics. Este repositorio de Hugging Face, creado por minjunglee27, contiene políticas de aprendizaje por refuerzo (RL) entrenadas para controlar el robot en simulación MuJoCo y su posterior transferencia al mundo real (sim2real). El modelo se distribuye como redes de políticas preentrenadas en formato ONNX, listas para inferencia en tiempo real, junto con checkpoints de PyTorch y un checkpoint exportado a 750 iteraciones. No se dispone de información sobre la arquitectura de red, el número de parámetros ni el contexto de entrenamiento en la información proporcionada. Es relevante para la comunidad de robótica y RL porque ofrece un punto de partida para investigar el control de robots bípedos de bajo coste y la transferencia de simulaciones a entornos físicos.
 
 ## Especificaciones técnicas
 | Parametro | Valor |
@@ -57,5 +57,5 @@ No disponible. No se han proporcionado datos sobre modelos comparables en la inf
 - La fecha de creación del repositorio es 2026-09-04, lo que podría ser un error o un dato futuro.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/minjunglee27/microduck-models
+- Hugging Face: https://huggingface.co/minjunglee27/microduck-models
 - GitHub del proyecto MicroDuck: https://github.com/pollen-robotics/microduck

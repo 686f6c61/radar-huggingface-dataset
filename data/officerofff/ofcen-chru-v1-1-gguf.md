@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ofcen-CHRU v1.1 (GGUF) es la versión cuantizada en formato GGUF de Ofcen-CHRU v1.1, un asistente conversacional compacto de 0.6B parámetros especializado en ruso, desarrollado por el equipo Ofcen (usuario Officerofff en HuggingFace). El modelo base es un fine-tuning sobre Qwen3-0.6B, orientado exclusivamente a chat en ruso, y esta variante GGUF está pensada para ejecutarse localmente en LM Studio, llama.cpp, Ollama y otras herramientas compatibles con ese formato.
+Ofcen-CHRU v1.1 (GGUF) es la versión cuantizada en formato GGUF de Ofcen-CHRU v1.1, un asistente conversacional compacto de 0.6B parámetros especializado en ruso, desarrollado por el equipo Ofcen (usuario Officerofff en Hugging Face). El modelo base es un fine-tuning sobre Qwen3-0.6B, orientado exclusivamente a chat en ruso, y esta variante GGUF está pensada para ejecutarse localmente en LM Studio, llama.cpp, Ollama y otras herramientas compatibles con ese formato.
 
 Su relevancia radica en el tamaño: con solo 0.6B parámetros y un archivo Q8_0 de 633 MB, puede ejecutarse en hardware muy modesto, incluso en portátiles sin GPU dedicada, cubriendo el nicho de asistentes locales en ruso con recursos mínimos. El equipo publica además resultados en su propio benchmark, Ofcen-Bench-RU, donde supera a Qwen3-0.6B (54.5 % frente al modelo base, evaluado con Gemini 4 Argon como juez).
 

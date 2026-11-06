@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `flexge/hubert-pronunciation-scorer-v2-mid` es un modelo basado en la arquitectura HuBERT (Hidden-Unit BERT) publicado en HuggingFace por el usuario `flexge`. Por su nombre y su tamaño (94.371.712 parametros, equivalente practico a un HuBERT base), todo apunta a un encoder de voz auto-supervisado reutilizado como extractor de caracteristicas acusticas y, presumiblemente, afinado para puntuar la calidad de pronunciacion. Sin embargo, la model card publicada es la plantilla automatica de HuggingFace sin rellenar, por lo que ni el objetivo exacto, ni los datos de entrenamiento, ni la licencia estan documentados.
+El modelo `flexge/hubert-pronunciation-scorer-v2-mid` es un modelo basado en la arquitectura HuBERT (Hidden-Unit BERT) publicado en Hugging Face por el usuario `flexge`. Por su nombre y su tamaño (94.371.712 parametros, equivalente practico a un HuBERT base), todo apunta a un encoder de voz auto-supervisado reutilizado como extractor de caracteristicas acusticas y, presumiblemente, afinado para puntuar la calidad de pronunciacion. Sin embargo, la model card publicada es la plantilla automatica de Hugging Face sin rellenar, por lo que ni el objetivo exacto, ni los datos de entrenamiento, ni la licencia estan documentados.
 
 El modelo se distribuye en formato `safetensors` bajo la libreria `transformers`, con un pipeline declarado de `feature-extraction`. Su tamano (aproximadamente 94 millones de parametros) lo situa en la gama de encoders de audio compactos, lo que permite inferencia en CPU y en GPUs de consumo sin problemas. El repositorio ocupa 0,8 GB.
 
@@ -25,7 +25,7 @@ Es relevante como pieza de infraestructura para sistemas de evaluacion de pronun
 
 HuBERT es un modelo de representacion del habla auto-supervisado cuya arquitectura combina un extractor convolucional de caracteristicas (que reduce la senal de audio a una secuencia de frames) con un transformer encoder de tipo BERT. El preentrenamiento original de HuBERT se realiza con una perdida de prediccion sobre unidades acusticas ocultas (hidden units) generadas por clustering, aplicando la perdida unicamente sobre las regiones enmascaradas. Este enfoque permite aprender representaciones acusticas y "linguisticas" sin necesidad de transcripciones ni de un lexico de unidades de sonido.
 
-No hay informacion disponible sobre el proceso de entrenamiento especifico de esta version: ni el numero de tokens o horas de audio, ni la composicion del dataset, ni si se aplico RLHF, DPO u otro ajuste, ni el regimen de precision. Unicamente se sabe que el resultado ocupa 94.371.712 parametros, consistente con un HuBERT base (el checkpoint `facebook/hubert-base-ls960` tiene aproximadamente esa cifra). El tag `arxiv:1910.09700` presente en los metadatos corresponde al articulo de Lacoste et al. sobre el calculador de impacto medioambiental, incluido por defecto en la plantilla de HuggingFace, y no a un paper propio del modelo.
+No hay informacion disponible sobre el proceso de entrenamiento especifico de esta version: ni el numero de tokens o horas de audio, ni la composicion del dataset, ni si se aplico RLHF, DPO u otro ajuste, ni el regimen de precision. Unicamente se sabe que el resultado ocupa 94.371.712 parametros, consistente con un HuBERT base (el checkpoint `facebook/hubert-base-ls960` tiene aproximadamente esa cifra). El tag `arxiv:1910.09700` presente en los metadatos corresponde al articulo de Lacoste et al. sobre el calculador de impacto medioambiental, incluido por defecto en la plantilla de Hugging Face, y no a un paper propio del modelo.
 
 ## Capacidades
 
@@ -54,23 +54,23 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: aproximadamente 0,4 GB en fp32 (~377 MB de pesos) y cerca de 0,2 GB en fp16; con activaciones y buffers de audio, cabe holgadamente en menos de 1 GB.
 - GPU recomendadas: cualquier GPU con 2 GB o mas, incluidas NVIDIA GTX 1050 Ti, RTX 2060, RTX 3060, RTX 4090, asi como A100 y H100 con enorme margen. No requiere aceleradores de gama alta.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU moderna e incluso en iGPU recientes; tambien es viable en CPU.
-- Opciones de despliegue: `transformers` (PyTorch) de forma nativa; vLLM y TGI no estan orientados a este tipo de modelo de audio; no hay soporte GGUF/llama.cpp confirmado. Despliegue recomendado via API de HuggingFace `transformers` o servidor propio con PyTorch.
+- Opciones de despliegue: `transformers` (PyTorch) de forma nativa; vLLM y TGI no estan orientados a este tipo de modelo de audio; no hay soporte GGUF/llama.cpp confirmado. Despliegue recomendado via API de Hugging Face `transformers` o servidor propio con PyTorch.
 - Latencia y throughput estimados: no disponible; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Tarea principal | Disponibilidad |
 |---|---|---|---|---|---|
-| flexge/hubert-pronunciation-scorer-v2-mid | 94.371.712 | no disponible | no disponible | Puntuacion de pronunciacion (presunta) / extraccion de caracteristicas | HuggingFace |
-| facebook/hubert-base-ls960 | ~94,4 M | audio de longitud variable | Apache 2.0 | Representacion del habla auto-supervisada | HuggingFace |
-| facebook/wav2vec2-base-960h | ~95 M | audio de longitud variable | Apache 2.0 | Reconocimiento automatico del habla (ASR) | HuggingFace |
-| microsoft/wavlm-base | ~94 M | audio de longitud variable | MIT | Representacion del habla auto-supervisada | HuggingFace |
+| flexge/hubert-pronunciation-scorer-v2-mid | 94.371.712 | no disponible | no disponible | Puntuacion de pronunciacion (presunta) / extraccion de caracteristicas | Hugging Face |
+| facebook/hubert-base-ls960 | ~94,4 M | audio de longitud variable | Apache 2.0 | Representacion del habla auto-supervisada | Hugging Face |
+| facebook/wav2vec2-base-960h | ~95 M | audio de longitud variable | Apache 2.0 | Reconocimiento automatico del habla (ASR) | Hugging Face |
+| microsoft/wavlm-base | ~94 M | audio de longitud variable | MIT | Representacion del habla auto-supervisada | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos para el modelo objeto de la ficha, por lo que la comparacion se limita a parametros, licencia y disponibilidad.
 
 ## Limitaciones y advertencias
 
-- La model card es la plantilla automatica de HuggingFace sin rellenar: no hay descripcion del objetivo real, ni del dataset, ni del proceso de entrenamiento.
+- La model card es la plantilla automatica de Hugging Face sin rellenar: no hay descripcion del objetivo real, ni del dataset, ni del proceso de entrenamiento.
 - Licencia no disponible: no se puede asumir permiso de uso comercial. Es un riesgo legal importante para produccion.
 - Ausencia total de resultados de evaluacion: no se puede verificar la calidad de las puntuaciones de pronunciacion ni su calibracion.
 - Idiomas soportados sin especificar: es probable que el modelo este especializado en un unico idioma objetivo, pero no se documenta cual, lo que impide saber si es aplicable a otros.
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativos para el modelo objeto de la f
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/flexge/hubert-pronunciation-scorer-v2-mid
+- Repositorio Hugging Face: https://huggingface.co/flexge/hubert-pronunciation-scorer-v2-mid
 - Documentacion de HuBERT en transformers: https://huggingface.co/docs/transformers/model_doc/hubert
 - Codigo fuente de HuBERT en transformers (GitHub): https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/hubert.md
 - Paper original de HuBERT (Hsu et al., 2021): https://arxiv.org/abs/2106.07447

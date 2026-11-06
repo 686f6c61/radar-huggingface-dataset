@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto de audio | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| DakeraAI/whisper-small (este) | ~244 M | 30 s por segmento | Apache-2.0 | ONNX | HuggingFace, espejo de onnx-community |
-| openai/whisper-small | ~244 M | 30 s por segmento | Apache-2.0 | PyTorch (safetensors/bin) | HuggingFace oficial |
-| openai/whisper-base | ~74 M | 30 s por segmento | Apache-2.0 | PyTorch | HuggingFace oficial |
-| openai/whisper-medium | ~769 M | 30 s por segmento | Apache-2.0 | PyTorch | HuggingFace oficial |
+| DakeraAI/whisper-small (este) | ~244 M | 30 s por segmento | Apache-2.0 | ONNX | Hugging Face, espejo de onnx-community |
+| openai/whisper-small | ~244 M | 30 s por segmento | Apache-2.0 | PyTorch (safetensors/bin) | Hugging Face oficial |
+| openai/whisper-base | ~74 M | 30 s por segmento | Apache-2.0 | PyTorch | Hugging Face oficial |
+| openai/whisper-medium | ~769 M | 30 s por segmento | Apache-2.0 | PyTorch | Hugging Face oficial |
 
 La comparación se limita a la familia Whisper porque la información disponible no permite contrastar con otros sistemas ASR (por ejemplo, wav2vec 2.0 o Conformer) sin datos de benchmarks que este repositorio no publica.
 
@@ -82,7 +82,7 @@ La comparación se limita a la familia Whisper porque la información disponible
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DakeraAI/whisper-small
+- Repositorio en Hugging Face: https://huggingface.co/DakeraAI/whisper-small
 - Modelo original: https://huggingface.co/openai/whisper-small
 - Conversión ONNX de referencia: https://huggingface.co/onnx-community/whisper-small
 - Web de Dakera: https://dakera.ai

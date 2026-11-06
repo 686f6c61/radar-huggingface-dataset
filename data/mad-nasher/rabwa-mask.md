@@ -2,7 +2,7 @@
 
 ## Resumen
 
-rabwa-mask es un modelo ligero de deteccion y anonimizacion de datos personales (PII) desarrollado por el usuario mad-nasher y publicado en HuggingFace. Se trata de un fine-tuning de CAMeL-Lab/bert-base-arabic-camelbert-mix-ner, un BERT base para arabe, especializado en identificar datos personales en texto en arabe (dialecto del Golfo y saudi) e ingles. El problema que resuelve es muy concreto: equipos que envian notas de clientes, mensajes de chat o tickets de soporte a APIs de LLM alojadas filtran datos personales en texto libre, y las expresiones regulares convencionales detectan telefonos y correos, pero no nombres arabes.
+rabwa-mask es un modelo ligero de deteccion y anonimizacion de datos personales (PII) desarrollado por el usuario mad-nasher y publicado en Hugging Face. Se trata de un fine-tuning de CAMeL-Lab/bert-base-arabic-camelbert-mix-ner, un BERT base para arabe, especializado en identificar datos personales en texto en arabe (dialecto del Golfo y saudi) e ingles. El problema que resuelve es muy concreto: equipos que envian notas de clientes, mensajes de chat o tickets de soporte a APIs de LLM alojadas filtran datos personales en texto libre, y las expresiones regulares convencionales detectan telefonos y correos, pero no nombres arabes.
 
 Su aportacion principal es un flujo reversible de enmascarado: el modelo sustituye nombres, telefonos, identificadores, IBANs y direcciones por marcadores como `[PERSON_1]`, el texto enmascarado se envia a cualquier LLM externo, y los valores reales se restauran en la respuesta en el servidor local. De este modo, el texto sin anonimizar nunca sale del servidor. Incluye ademas reglas deterministas para formatos fijos (telefonos saudies, NID, Iqama, IBAN, matriculas, emails) y un helper de redaccion reversible en Python. Es relevante porque los modelos NER multilingues genericos fallan con las particularidades de los nombres arabes (particulas bin/bint, articulo al-, kunyas, preposiciones pegadas, nombres que son palabras comunes), y este modelo esta afinado exactamente para ese caso. Funciona en CPU en pocos milisegundos, con pesos en safetensors y ONNX.
 
@@ -85,6 +85,6 @@ No se han publicado comparativas cuantitativas contra otros modelos en la inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mad-nasher/rabwa-mask
+- Modelo en Hugging Face: https://huggingface.co/mad-nasher/rabwa-mask
 - Modelo base: https://huggingface.co/CAMeL-Lab/bert-base-arabic-camelbert-mix-ner
 - No se han encontrado enlaces adicionales (paper, blog o demo) en la informacion disponible.

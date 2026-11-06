@@ -2,7 +2,7 @@
 
 ## Resumen
 
-pii-redactor-small es un modelo de clasificacion de tokens (reconocimiento de entidades nombradas) desarrollado por Horizon-Labs y publicado en HuggingFace bajo licencia Apache-2.0. Su proposito es detectar y permitir la redaccion de informacion personal identificable (PII) y secretos —nombres, contactos, direcciones, identificadores oficiales, datos financieros, credenciales y claves de API— antes de que el texto llegue a logs, prompts de LLM, datos de entrenamiento o APIs de terceros. Cubre 29 tipos de entidad y esta entrenado exclusivamente con datos con licencias permisivas.
+pii-redactor-small es un modelo de clasificacion de tokens (reconocimiento de entidades nombradas) desarrollado por Horizon-Labs y publicado en Hugging Face bajo licencia Apache-2.0. Su proposito es detectar y permitir la redaccion de informacion personal identificable (PII) y secretos —nombres, contactos, direcciones, identificadores oficiales, datos financieros, credenciales y claves de API— antes de que el texto llegue a logs, prompts de LLM, datos de entrenamiento o APIs de terceros. Cubre 29 tipos de entidad y esta entrenado exclusivamente con datos con licencias permisivas.
 
 Tecnicamente es un encoder de 140.664.251 parametros (~141 M) derivado de jhu-clsp/mmBERT-small, con salida de token-classification y soporte para exportacion a ONNX y transformers.js, lo que permite ejecutarlo en CPU, en el navegador y en el borde. La model card lo posiciona explicitamente como una alternativa pequena y multilingue (36 idiomas etiquetados, con alfabetos latinos y no latinos) frente a modelos de PII mas grandes como OpenAI Privacy Filter (1,5 B).
 
@@ -86,7 +86,7 @@ La comparativa se limita a los modelos incluidos por el autor en su evaluacion. 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Horizon-Labs/pii-redactor-small | 141 M | no disponible | apache-2.0 | Publico en HuggingFace, sin gating |
+| Horizon-Labs/pii-redactor-small | 141 M | no disponible | apache-2.0 | Publico en Hugging Face, sin gating |
 | Modelo base de la comparativa | 308 M (segun etiqueta de la tabla) | no disponible | no disponible | no disponible |
 | OpenAI Privacy Filter | 1,5 B | no disponible | no disponible | no disponible |
 | gravitee bert-small | no disponible | no disponible | no disponible | no disponible |
@@ -112,7 +112,7 @@ Diferencias observadas en los benchmarks publicados: pii-redactor-small supera a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Horizon-Labs/pii-redactor-small
+- Modelo en Hugging Face: https://huggingface.co/Horizon-Labs/pii-redactor-small
 - Demo en el navegador (Space): https://huggingface.co/spaces/Horizon-Labs/pii-redactor
 - Coleccion Agent I/O Guards: https://huggingface.co/collections/Horizon-Labs/agent-i-o-guards-6ab403c49494bc2b71ca7669
 - Modelo relacionado, Prompt Injection Guard: https://huggingface.co/Horizon-Labs/prompt-injection-guard-base

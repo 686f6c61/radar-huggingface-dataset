@@ -72,7 +72,7 @@ No hay resultados de MMLU, HumanEval, GSM8K ni equivalentes, porque el modelo no
 
 | Modelo | Formato | Pesos | Entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sm079/sharp-onnx-webgpu | ONNX (grafo + datos externos) | int8 descuantizado a fp16, 0,66 GB en disco | Imagen 1536 x 1536 + disparidad | Apple ML Research Model License, solo investigacion no comercial | HuggingFace |
+| sm079/sharp-onnx-webgpu | ONNX (grafo + datos externos) | int8 descuantizado a fp16, 0,66 GB en disco | Imagen 1536 x 1536 + disparidad | Apple ML Research Model License, solo investigacion no comercial | Hugging Face |
 | SHARP original de Apple (apple/ml-sharp) | Checkpoint PyTorch | fp32 (no cuantizado) | Imagen + parametros de camara, segun el repositorio original | Apple ML Research Model License | Repositorio GitHub de Apple |
 | Otros metodos de image-to-3D (Depth Anything, MiDaS, Marigold, etc.) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -94,9 +94,9 @@ La comparativa con alternativas de la misma categoria no puede completarse porqu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sm079/sharp-onnx-webgpu
+- Modelo en Hugging Face: https://huggingface.co/sm079/sharp-onnx-webgpu
 - Repositorio original de Apple SHARP: https://github.com/apple/ml-sharp
 - Aplicacion SharpRig, que consume este export: https://github.com/sm079/sharp-rig
 - Script de exportacion y empaquetado ONNX: https://github.com/sm079/sharp-rig/blob/main/tools/export_sharp_onnx.py
-- Licencia del modelo: archivo LICENSE dentro del repositorio de HuggingFace
+- Licencia del modelo: archivo LICENSE dentro del repositorio de Hugging Face
 - Resultados de busqueda web relevantes: no disponible (los resultados obtenidos no estan relacionados con el modelo)

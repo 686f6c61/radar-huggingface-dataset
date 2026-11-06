@@ -95,7 +95,7 @@ No se dispone de informacion sobre modelos comparables de otros fabricantes con 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tomoali/d1-2B-ryzen-ai-npu
+- Modelo en Hugging Face: https://huggingface.co/Tomoali/d1-2B-ryzen-ai-npu
 - Modelo base: https://huggingface.co/LiquidAI/d1-2B
 - Modelo base ONNX: https://huggingface.co/LiquidAI/d1-2B-ONNX
 - Repositorio del runtime: https://github.com/tomhda/d1-2b-ryzen-ai-npu

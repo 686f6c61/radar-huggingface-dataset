@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qqjz/TextPro-SLM-7B-Interleaving
+- Modelo en Hugging Face: https://huggingface.co/qqjz/TextPro-SLM-7B-Interleaving
 - Articulo (OpenReview): https://openreview.net/forum?id=Jsjmo8eX29
 - Repositorio GitHub: https://github.com/dreamtheater123/TextPro-SLM
 - Encoder WhisperPro: https://huggingface.co/qqjz/WhisperPro

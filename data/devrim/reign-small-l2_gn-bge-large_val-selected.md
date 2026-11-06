@@ -80,7 +80,7 @@ La comparativa cuantitativa no está disponible en la información proporcionada
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/devrim/reign-small-l2_gn-bge-large_val-selected
+- Modelo en Hugging Face: https://huggingface.co/devrim/reign-small-l2_gn-bge-large_val-selected
 - Código (repositorio): https://github.com/devrimcavusoglu/reign
 - Página del proyecto: https://devrimcavusoglu.github.io/reign
 - Dataset de entrenamiento: https://huggingface.co/datasets/devrim/goodwiki_long_synthetic_ir

@@ -67,7 +67,7 @@ No se dispone de información sobre modelos directamente comparables. Se recomie
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/mradermacher/gemma-4-E2B-Deckard-ShiningValiant3-BF16-GGUF
+- Repositorio de Hugging Face: https://huggingface.co/mradermacher/gemma-4-E2B-Deckard-ShiningValiant3-BF16-GGUF
 - Modelo original: https://huggingface.co/nightmedia/gemma-4-E2B-Deckard-ShiningValiant3-BF16
 - Perfil del autor: https://huggingface.co/mradermacher
 - Página de Gemma 4 (referencia general): https://ai.google.dev/gemma/docs/core/model_card_4

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-UOPD-Qwen2.5-3B-Instruct-WebShop es un checkpoint de ajuste fino publicado por el usuario Wenboz en HuggingFace. Se trata de un estudiante de destilación on-policy (UOPD) inicializado desde Qwen/Qwen2.5-3B-Instruct y entrenado sobre el entorno WebShop, utilizando como profesor congelado el modelo langfeng01/GiGPO-Qwen2.5-7B-Instruct-WebShop. El resultado es un modelo denso de 3.397.103.616 parámetros (3,4 mil millones) en formato safetensors bfloat16, con un repositorio de 6,8 GB.
+UOPD-Qwen2.5-3B-Instruct-WebShop es un checkpoint de ajuste fino publicado por el usuario Wenboz en Hugging Face. Se trata de un estudiante de destilación on-policy (UOPD) inicializado desde Qwen/Qwen2.5-3B-Instruct y entrenado sobre el entorno WebShop, utilizando como profesor congelado el modelo langfeng01/GiGPO-Qwen2.5-7B-Instruct-WebShop. El resultado es un modelo denso de 3.397.103.616 parámetros (3,4 mil millones) en formato safetensors bfloat16, con un repositorio de 6,8 GB.
 
 El problema que aborda es la transferencia de competencia agéntica desde un modelo de 7B entrenado con refuerzo (la familia GiGPO) hacia un modelo de 3B, sin necesidad de repetir el pipeline completo de RL. Esto resulta relevante para quien necesita desplegar un agente web con un coste de inferencia y de VRAM muy inferior al del profesor, o para investigar métodos de destilación on-policy frente a RL directo.
 
@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| UOPD-Qwen2.5-3B-Instruct-WebShop | 3,40 B | no documentado en la ficha del checkpoint | Destilacion on-policy (UOPD) sobre WebShop, 150 pasos, profesor de 7B | no disponible | Repositorio HuggingFace, 0 descargas, 0 me gusta |
+| UOPD-Qwen2.5-3B-Instruct-WebShop | 3,40 B | no documentado en la ficha del checkpoint | Destilacion on-policy (UOPD) sobre WebShop, 150 pasos, profesor de 7B | no disponible | Repositorio Hugging Face, 0 descargas, 0 me gusta |
 | Qwen/Qwen2.5-3B-Instruct (base) | 3,09 B | 32.768 tokens segun documentacion del modelo base | Ajuste por instrucciones generalista del fabricante | Qwen Research License (verificar en el repositorio oficial) | Ampliamente disponible, con versiones GGUF y cuantizaciones de la comunidad |
-| langfeng01/GiGPO-Qwen2.5-7B-Instruct-WebShop (profesor) | 7 B aprox. | no disponible | RL con GiGPO sobre WebShop | no disponible | Repositorio HuggingFace |
+| langfeng01/GiGPO-Qwen2.5-7B-Instruct-WebShop (profesor) | 7 B aprox. | no disponible | RL con GiGPO sobre WebShop | no disponible | Repositorio Hugging Face |
 | Qwen/Qwen2.5-7B-Instruct | 7,6 B aprox. | 131.072 tokens segun documentacion del modelo base | Ajuste por instrucciones generalista del fabricante | Apache 2.0 | Ampliamente disponible |
 
 La comparacion relevante es contra el propio profesor: el estudiante reduce a la mitad el numero de parametros, pero no se han publicado metricas que permitan cuantificar la perdida de rendimiento en WebShop.
@@ -93,7 +93,7 @@ La comparacion relevante es contra el propio profesor: el estudiante reduce a la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Wenboz/UOPD-Qwen2.5-3B-Instruct-WebShop
+- Modelo en Hugging Face: https://huggingface.co/Wenboz/UOPD-Qwen2.5-3B-Instruct-WebShop
 - Modelo profesor (GiGPO-Qwen2.5-7B-Instruct-WebShop): https://huggingface.co/langfeng01/GiGPO-Qwen2.5-7B-Instruct-WebShop
 - Modelo base (Qwen2.5-3B-Instruct): https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - No se han encontrado en la informacion disponible otros enlaces a papers, repositorios de codigo, blogs o demos del metodo UOPD ni del entorno WebShop.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Banana-Disease-Classification es un clasificador de imagenes de hojas de banano (banana/platano) desarrollado por el usuario de HuggingFace AadityaMathurX. El modelo recibe una imagen de una hoja y devuelve una de las categorias de enfermedad o de hoja sana, junto con una puntuacion de confianza, y se distribuye acompanado de una interfaz Gradio para su uso directo. Esta construido sobre una red convolucional DenseNet-121 implementada en Keras/TensorFlow, con un repositorio de 0,4 GB que incluye el conjunto de datos, el script de entrenamiento y los pesos preentrenados.
+Banana-Disease-Classification es un clasificador de imagenes de hojas de banano (banana/platano) desarrollado por el usuario de Hugging Face AadityaMathurX. El modelo recibe una imagen de una hoja y devuelve una de las categorias de enfermedad o de hoja sana, junto con una puntuacion de confianza, y se distribuye acompanado de una interfaz Gradio para su uso directo. Esta construido sobre una red convolucional DenseNet-121 implementada en Keras/TensorFlow, con un repositorio de 0,4 GB que incluye el conjunto de datos, el script de entrenamiento y los pesos preentrenados.
 
 El problema que aborda es el diagnostico temprano de enfermedades del banano (Sigatoka negra, Sigatoka amarilla, virus del mosaico de la bractea, enfermedad Moko, enfermedad de Panama, plagas de insectos y hoja sana). Se trata de una herramienta de vision por computador orientada a un dominio agronomico concreto, no de un modelo de lenguaje: no genera texto, no procesa lenguaje natural y no tiene ventana de contexto. Su relevancia es acotada y practica, como apoyo a la inspeccion visual en campo mediante fotografia de hoja.
 
@@ -91,12 +91,12 @@ El autor no ofrece comparativas ni metricas propias, por lo que no es posible co
 - Confusion entre clases: las dos variantes de Sigatoka (negra y amarilla) y otras enfermedades con sintomas visuales solapados son candidatas naturales a error de clasificacion. No hay matriz de confusion que permita verificarlo.
 - Alcance limitado: solo clasifica hojas de banano; no detecta enfermedades en fruto, tallo o raiz, ni ofrece tratamiento o recomendacion agronomica.
 - Sin soporte de lenguaje natural ni multilingue: la salida son etiquetas de clase; cualquier traduccion o explicacion debe implementarse fuera del modelo.
-- Sin garantias de mantenimiento: la fecha de actualizacion del repositorio figura como 2026-09-19, posterior a la de creacion (2025-08-22), dato que conviene verificar directamente en HuggingFace.
+- Sin garantias de mantenimiento: la fecha de actualizacion del repositorio figura como 2026-09-19, posterior a la de creacion (2025-08-22), dato que conviene verificar directamente en Hugging Face.
 - Dependencia de Keras/TensorFlow: los pesos en formato `.keras` requieren ese ecosistema (o una conversion explicita) para su uso en otros runtimes.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AadityaMathurX/Banana-Disease-Classification
+- Modelo en Hugging Face: https://huggingface.co/AadityaMathurX/Banana-Disease-Classification
 - Pesos citados en la model card (ID alternativo del autor): https://huggingface.co/Aaditya456/Banana-Disease-Classification/blob/main/banana_disease_densenet121.keras
 - Repositorio GitHub: la model card incluye un enlace con marcador de posicion no valido (`github.com/your-username/banana-disease-classificator`), por lo que no hay repositorio publico localizable.
 - Demo: interfaz Gradio incluida en el repositorio (SDK 5.43.1), ejecutable en local en `http://127.0.0.1:7860/`. No se indica ningun Space publico.

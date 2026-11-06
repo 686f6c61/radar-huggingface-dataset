@@ -68,8 +68,8 @@ El autor ha publicado resultados de perplejidad (PPL) con ventana de contexto 10
 
 | Metodo | Modelo | Tamano | PPL (ctx 1024) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ASHQ1 (v7) | Ornith-1.5-9B-MTP | 6511 MiB | 8.6341 | MIT | HuggingFace |
-| ASHQ1 (v7) | Ornith-1.0-9B-MTP | 6011 MiB | 7.4830 | MIT | HuggingFace |
+| ASHQ1 (v7) | Ornith-1.5-9B-MTP | 6511 MiB | 8.6341 | MIT | Hugging Face |
+| ASHQ1 (v7) | Ornith-1.0-9B-MTP | 6011 MiB | 7.4830 | MIT | Hugging Face |
 | Remix Quality-36pc | Ornith-1.5-9B (sin MTP) | 6330 MiB | 9.3692 | No especificada | No disponible |
 | Uniform Q6_K | Ornith-1.0-9B-MTP | 7198 MiB | 7.6248 | No especificada | No disponible |
 
@@ -86,5 +86,5 @@ ASHQ1 supera a la cuantizacion uniforme Q6_K en el modelo Ornith-1.0-9B-MTP con 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wepiqx/ASHQ1
+- Hugging Face: https://huggingface.co/wepiqx/ASHQ1
 - Repositorio de ejemplo (Ornith-1.0-9B-ASHQ1-GGUF): https://huggingface.co/wepiqx/Ornith-1.0-9B-ASHQ1-GGUF

@@ -4,7 +4,7 @@
 
 thox-pro-8b es una distribución configurada por THOX.ai del modelo Ministral-3-8B-Instruct-2512 de Mistral AI, empaquetada para inferencia local en un único dispositivo. No se trata de un modelo entrenado por THOX: los pesos son byte a byte idénticos a los de la distribución oficial de Mistral en Ollama (verificado por SHA-256 en la revisión del 31 de octubre de 2026), y el trabajo del autor se limita a la configuración de runtime, la documentación y la capa de clustering MeshStack. El modelo se publica bajo licencia Apache 2.0 y acepta entrada de texto e imagen (hasta 5 imágenes por petición).
 
-La propuesta de valor es el despliegue local-first con una ventana de contexto de 256.000 tokens y capacidades multimodales, orientado a análisis de documentos, gráficos y diagramas en hardware propio. THOX declara soporte para más de 32 idiomas según la ficha del modelo base, aunque la model card de HuggingFace solo lista `en` en el campo de idiomas. La build servida es una cuantización Q4_K_M en formato GGUF de aproximadamente 6,0 GB, ejecutable mediante Ollama.
+La propuesta de valor es el despliegue local-first con una ventana de contexto de 256.000 tokens y capacidades multimodales, orientado a análisis de documentos, gráficos y diagramas en hardware propio. THOX declara soporte para más de 32 idiomas según la ficha del modelo base, aunque la model card de Hugging Face solo lista `en` en el campo de idiomas. La build servida es una cuantización Q4_K_M en formato GGUF de aproximadamente 6,0 GB, ejecutable mediante Ollama.
 
 Es relevante ahora porque se posiciona en el nicho de modelos de 8B con contexto muy largo y visión, pensados para entornos donde los datos no pueden salir del dispositivo. Conviene señalar que la propia model card incluye una corrección explícita: retira afirmaciones previas de cumplimiento HIPAA, SOC 2 y FERPA, y aclara que no se reclama ninguna métrica de benchmark, latencia, throughput ni ahorro de costes para esta release.
 
@@ -17,9 +17,9 @@ Es relevante ahora porque se posiciona en el nicho de modelos de 8B con contexto
 | Parametros activos | No aplica (no es MoE) |
 | Longitud de contexto | 256.000 tokens |
 | Tipos de cuantizacion | Q4_K_M (GGUF) en la build servida; no se documentan otras variantes |
-| Idiomas soportados | 32+ según la ficha del modelo base; el campo `language` de HuggingFace lista solo `en` |
+| Idiomas soportados | 32+ según la ficha del modelo base; el campo `language` de Hugging Face lista solo `en` |
 | Licencia | Apache 2.0 (pesos, sujetos a los términos del modelo base) |
-| Formato de pesos | GGUF (distribución Ollama); el repositorio de HuggingFace contiene únicamente `.gitattributes` (1.519 B) |
+| Formato de pesos | GGUF (distribución Ollama); el repositorio de Hugging Face contiene únicamente `.gitattributes` (1.519 B) |
 
 ## Arquitectura y entrenamiento
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Vision | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| thox-pro-8b | 8B | 256.000 | Sí (5 imágenes/petición) | Apache 2.0 | Ollama; HuggingFace solo como model card |
+| thox-pro-8b | 8B | 256.000 | Sí (5 imágenes/petición) | Apache 2.0 | Ollama; Hugging Face solo como model card |
 | Ministral-3-8B-Instruct-2512 (base) | 8B | 256.000 | Sí | Apache 2.0 (según modelo base) | Mistral AI / Ollama |
 | thox-cluster-swift | 8B | 256.000 | Sí | Apache 2.0 | Ollama; mismo artefacto de pesos, orientado a multi-dispositivo |
 
@@ -76,15 +76,15 @@ No se dispone de datos de benchmarks para establecer comparaciones de rendimient
 - El operador es responsable de cumplir las obligaciones regulatorias aplicables a su despliegue; THOX no certifica HIPAA, SOC 2 ni FERPA para este modelo (corrección explícita en la model card).
 - Las salidas en ámbitos médico, legal o financiero requieren verificación por un profesional licenciado.
 - Riesgo de alucinación: inherente a los modelos de lenguaje; no se documentan evaluaciones específicas de fidelidad para esta release.
-- La model card lista solo `en` en el campo de idiomas de HuggingFace, en contraste con los 32+ idiomas declarados para el modelo base; conviene validar el rendimiento en castellano antes de usarlo en producción.
+- La model card lista solo `en` en el campo de idiomas de Hugging Face, en contraste con los 32+ idiomas declarados para el modelo base; conviene validar el rendimiento en castellano antes de usarlo en producción.
 - No se reclaman cifras de benchmark, latencia, throughput, concurrencia, uptime ni ahorro de costes; la evaluación independiente está pendiente.
 - La build servida es Q4_K_M, no precisión completa, pese a que versiones anteriores de la tarjeta afirmaban lo contrario.
-- El repositorio de HuggingFace no contiene pesos: solo un archivo `.gitattributes`. La distribución ejecutable está en Ollama.
+- El repositorio de Hugging Face no contiene pesos: solo un archivo `.gitattributes`. La distribución ejecutable está en Ollama.
 - La licencia Apache 2.0 se aplica a los pesos, sujetos a los términos del modelo base; verificar dichos términos antes de uso comercial.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Thox-ai/thox-pro-8b
+- Hugging Face: https://huggingface.co/Thox-ai/thox-pro-8b
 - Ollama: https://ollama.com/Thox-ai/thox-pro-8b
 - Modelo base: https://huggingface.co/mistralai/Ministral-3-8B-Instruct-2512
 - Sitio del autor (campaña MeshStack): https://thox.ai

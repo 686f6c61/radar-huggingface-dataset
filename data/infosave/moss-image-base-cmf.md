@@ -102,7 +102,7 @@ La comparación relevante aquí es de empaquetado, no de calidad: el CMF y el mo
 
 ## Enlaces
 
-- Repositorio HuggingFace del empaquetado: https://huggingface.co/infosave/MOSS-Image-Base-cmf
+- Repositorio Hugging Face del empaquetado: https://huggingface.co/infosave/MOSS-Image-Base-cmf
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base
 - Revisión exacta empaquetada: https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base/tree/85975793d8b3d432f1b6e27f352abaa4c2a4c0d3
 - Runtime Cortiq (Rust, formato CMF): https://github.com/infosave2007/cmf

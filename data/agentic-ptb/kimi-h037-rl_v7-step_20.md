@@ -74,6 +74,6 @@ No disponible. Este checkpoint no tiene equivalentes directos en el ecosistema p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/kimi.h037.rl_v7.step_20
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/kimi.h037.rl_v7.step_20
 - Índice del sweep (mencionado en la model card): `agentic-ptb/INDEX` (no se proporciona URL directa)
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base

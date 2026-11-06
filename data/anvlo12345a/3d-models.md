@@ -62,7 +62,7 @@ No se dispone de datos tecnicos de TRELLIS para comparar directamente con otras 
 
 ## Limitaciones y advertencias
 
-- El modelo es gated: se requiere un token de HuggingFace (`HF_TOKEN`) para acceder a los pesos, lo que limita su uso sin autenticacion.
+- El modelo es gated: se requiere un token de Hugging Face (`HF_TOKEN`) para acceder a los pesos, lo que limita su uso sin autenticacion.
 - El pipeline depende de parches no oficiales (eliminacion de Kaolin) que podrian romperse si el repositorio de TRELLIS cambia su estructura interna.
 - Conflictos de versiones conocidos: `huggingface_hub` 1.0.0+ elimina `HfFolder`, lo que obliga a fijar la version 0.24.7. Esto puede causar problemas con otras librerias que requieran versiones mas recientes.
 - La instalacion de `nvdiffrast` requiere compilacion desde fuente con dependencias de OpenGL, lo que puede fallar en entornos sin los paquetes de desarrollo adecuados.
@@ -72,7 +72,7 @@ No se dispone de datos tecnicos de TRELLIS para comparar directamente con otras 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/anvlo12345a/3d-models
+- Repositorio de Hugging Face: https://huggingface.co/anvlo12345a/3d-models
 - Repositorio de TRELLIS en GitHub: https://github.com/microsoft/TRELLIS
 - Repositorio de utils3d (dependencia): https://github.com/EasternJournalist/utils3d
 - Repositorio de nvdiffrast: https://github.com/NVlabs/nvdiffrast

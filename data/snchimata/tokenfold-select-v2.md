@@ -12,7 +12,7 @@ Su relevancia práctica está en el formato compacto y local: se distribuye como
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Encoder transformer de 12 capas con cabeza compartida de scoring de grupos; fine-tuning de `ibm-granite/granite-embedding-reranker-english-r2`; etiquetado como `modernbert` en HuggingFace |
+| Arquitectura | Encoder transformer de 12 capas con cabeza compartida de scoring de grupos; fine-tuning de `ibm-granite/granite-embedding-reranker-english-r2`; etiquetado como `modernbert` en Hugging Face |
 | Parámetros totales | 98.864.641 |
 | Parámetros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | Hasta 8.192 tokens codificados y 512 grupos por ventana de admisión; la ejecución completa a 8.192 tokens no está validada. Las pruebas ONNX cubren hasta 2.048 tokens y 512 rangos agrupados |
@@ -23,7 +23,7 @@ Su relevancia práctica está en el formato compacto y local: se distribuye como
 
 ## Arquitectura y entrenamiento
 
-Tokenfold Select v2 es un encoder transformer de 12 capas con una cabeza compartida de scoring de grupos. La model card lo describe como un especialista entrenado, no como un LLM generativo ni como el adaptador LoRA de la versión v1. El modelo base es `ibm-granite/granite-embedding-reranker-english-r2`, sobre el que se ha realizado un fine-tuning; la relación declarada en HuggingFace es `finetune`.
+Tokenfold Select v2 es un encoder transformer de 12 capas con una cabeza compartida de scoring de grupos. La model card lo describe como un especialista entrenado, no como un LLM generativo ni como el adaptador LoRA de la versión v1. El modelo base es `ibm-granite/granite-embedding-reranker-english-r2`, sobre el que se ha realizado un fine-tuning; la relación declarada en Hugging Face es `finetune`.
 
 La innovación principal es el scoring conjunto: en lugar de codificar cada par consulta/fragmento por separado, una única pasada del encoder puntúa todos los grupos admitidos en una ventana. La salida del grafo ONNX son `token_scores` con forma `[1, tokens]`, y la aplicación debe encargarse de agrupar, ordenar, aplicar reglas de contenido obligatorio y ensamblar el contexto final con el texto original. No se detallan el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO; esos datos no están disponibles en la información proporcionada.
 
@@ -82,10 +82,10 @@ En la validación ONNX en CPU se superaron 6/6 comprobaciones sintéticas de par
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---:|---|---|---|---|
-| Tokenfold Select v2 | 98.864.641 | 8.192 tokens y 512 grupos por admisión; ejecución completa a 8.192 no validada | JSON 150,199 ms p50; código 268,713 ms p50; logs 1.842,744 ms p50; multi-turno 267,051 ms p50; retrieval 773,447 ms p50 (RTX 5080, FP16, retención 50 %) | Apache-2.0 | HuggingFace: `snchimata/tokenfold-select-v2` |
+| Tokenfold Select v2 | 98.864.641 | 8.192 tokens y 512 grupos por admisión; ejecución completa a 8.192 no validada | JSON 150,199 ms p50; código 268,713 ms p50; logs 1.842,744 ms p50; multi-turno 267,051 ms p50; retrieval 773,447 ms p50 (RTX 5080, FP16, retención 50 %) | Apache-2.0 | Hugging Face: `snchimata/tokenfold-select-v2` |
 | Tokenfold Select v1 | No disponible | No disponible | JSON 207,644 ms p50; código 451,916 ms p50; logs 3.760,490 ms p50; multi-turno 563,040 ms p50; retrieval 2.046,032 ms p50 (FP32) | No disponible | Referenciado en la model card; no se proporciona enlace directo |
 | Headroom Kompress v2 | No disponible | No disponible | JSON, código y logs: 0/6 completions por rechazo de presupuesto; multi-turno 94,577 ms p50; retrieval 2.733,641 ms p50 | No disponible | Mencionado como comparador; no se proporciona enlace directo |
-| `ibm-granite/granite-embedding-reranker-english-r2` | No disponible | No disponible | No evaluado en esta comparativa | No disponible en la información proporcionada; verificar en su model card | HuggingFace: `ibm-granite/granite-embedding-reranker-english-r2` |
+| `ibm-granite/granite-embedding-reranker-english-r2` | No disponible | No disponible | No evaluado en esta comparativa | No disponible en la información proporcionada; verificar en su model card | Hugging Face: `ibm-granite/granite-embedding-reranker-english-r2` |
 
 La comparación debe interpretarse con cautela: Select v2 es más rápido que Select v1 en las fixtures medidas, y supera a Kompress en JSON, código, logs y retrieval cuando Kompress completa. Kompress es más rápido en multi-turno, pero sus rechazos por presupuesto no equivalen a una compresión exitosa. No hay datos de calidad downstream que permitan afirmar que la selección de contexto de Select v2 mejora las respuestas finales de un LLM.
 
@@ -107,7 +107,7 @@ La comparación debe interpretarse con cautela: Select v2 es más rápido que Se
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/snchimata/tokenfold-select-v2
+- Modelo en Hugging Face: https://huggingface.co/snchimata/tokenfold-select-v2
 - Modelo base: https://huggingface.co/ibm-granite/granite-embedding-reranker-english-r2
 - Evidencia de compresión en desarrollo: https://huggingface.co/snchimata/tokenfold-select-v2/blob/main/evidence/development-compression.json
 - Evidencia de validación ONNX en CPU: https://huggingface.co/snchimata/tokenfold-select-v2/blob/main/evidence/onnx-cpu-validation.json

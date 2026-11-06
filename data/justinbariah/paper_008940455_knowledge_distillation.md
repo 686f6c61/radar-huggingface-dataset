@@ -65,7 +65,7 @@ No disponible. Este repositorio no es un modelo de IA comparable con otros model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/justinbariah/paper_008940455_knowledge_distillation
+- Repositorio en Hugging Face: https://huggingface.co/justinbariah/paper_008940455_knowledge_distillation
 - Survey relacionado en arXiv: https://arxiv.org/html/2503.12067v2
 - Survey relacionado en ScienceDirect: https://www.sciencedirect.com/science/article/pii/S2666827024000811
 - Survey relacionado en ResearchGate: https://www.researchgate.net/publication/342094012_Knowledge_Distillation_A_Survey

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mercury-1.7B es un modelo multimodal (visión-lenguaje) de pesos abiertos desarrollado por el usuario rrchat, publicado en HuggingFace como un fine-tuning sobre `LiquidAI/LFM3-VL-2B` de Liquid AI. El modelo combina razonamiento paso a paso bilingüe (rusa e inglés), generación de código, capacidades agénticas con tool calling y comprensión de imágenes en un paquete muy compacto de aproximadamente 1,9 mil millones de parámetros (1.918.181.888 según los safetensors del repositorio).
+Mercury-1.7B es un modelo multimodal (visión-lenguaje) de pesos abiertos desarrollado por el usuario rrchat, publicado en Hugging Face como un fine-tuning sobre `LiquidAI/LFM3-VL-2B` de Liquid AI. El modelo combina razonamiento paso a paso bilingüe (rusa e inglés), generación de código, capacidades agénticas con tool calling y comprensión de imágenes en un paquete muy compacto de aproximadamente 1,9 mil millones de parámetros (1.918.181.888 según los safetensors del repositorio).
 
 Su relevancia radica en la arquitectura híbrida LFM3 de Liquid AI, que mezcla convoluciones causales 1D depthwise (k=7) con capas de autoatención lineal gated, ofreciendo un throughput muy alto (unos 180-200 tokens/segundo en GPUs de consumo) con una huella de memoria reducida. Esto lo hace especialmente adecuado para despliegues locales en hardware modesto, un nicho donde los modelos con razonamiento y visión suelen ser mucho más grandes.
 

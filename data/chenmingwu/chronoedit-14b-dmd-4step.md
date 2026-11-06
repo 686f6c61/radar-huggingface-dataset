@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ChronoEdit-14B-DMD-4step es un transformer de edición de imágenes derivado de NVIDIA ChronoEdit-14B mediante destilación por coincidencia de distribuciones (DMD, Distribution Matching Distillation). Lo publica el usuario ChenmingWu en HuggingFace y sustituye únicamente el transformer del pipeline original: el VAE, el codificador de texto, el tokenizer y el codificador de imagen siguen siendo los de `nvidia/ChronoEdit-14B-Diffusers`. El objetivo es reducir el coste de inferencia de 100 evaluaciones de red (50 pasos con CFG 5) a solo 4, sin guiado por clasificador.
+ChronoEdit-14B-DMD-4step es un transformer de edición de imágenes derivado de NVIDIA ChronoEdit-14B mediante destilación por coincidencia de distribuciones (DMD, Distribution Matching Distillation). Lo publica el usuario ChenmingWu en Hugging Face y sustituye únicamente el transformer del pipeline original: el VAE, el codificador de texto, el tokenizer y el codificador de imagen siguen siendo los de `nvidia/ChronoEdit-14B-Diffusers`. El objetivo es reducir el coste de inferencia de 100 evaluaciones de red (50 pasos con CFG 5) a solo 4, sin guiado por clasificador.
 
 La arquitectura subyacente es un transformer de difusión 3D (heredero de Wan2.1 y ChronoEdit) con 16.394.878.784 parámetros reales en safetensors y un repo de 32,8 GB. El modelo opera en resolución 720p con 5 frames y conserva el último frame como imagen editada. Su relevancia actual radica en que mantiene la calidad del modelo de 50 pasos en GEdit-Bench-EN (puntuación global 5,772 frente a 5,644) con una reducción de coste de 25 veces en evaluaciones de red.
 
@@ -70,9 +70,9 @@ Con bootstrap emparejado al 95 % frente al modelo de 50 pasos: GEdit O +0,22 [-0
 
 | Modelo | Parámetros | Pasos / NFE | Contexto de edición | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ChronoEdit-14B-DMD-4step (este) | 16,39B | 4 / 4 | 720p, 5 frames | Apache-2.0 (con caveat de datos HQ-Edit) | HuggingFace, diffusers |
-| ChronoEdit-14B (NVIDIA) | ~14B (según nombre) | 50 con CFG 5 / 100 | 720p, 5 frames | Apache-2.0 | HuggingFace, diffusers |
-| ChronoEdit-14B + LoRA oficial 8 pasos | ~14B | 8 / 8 | 720p, 5 frames | Apache-2.0 | HuggingFace, diffusers |
+| ChronoEdit-14B-DMD-4step (este) | 16,39B | 4 / 4 | 720p, 5 frames | Apache-2.0 (con caveat de datos HQ-Edit) | Hugging Face, diffusers |
+| ChronoEdit-14B (NVIDIA) | ~14B (según nombre) | 50 con CFG 5 / 100 | 720p, 5 frames | Apache-2.0 | Hugging Face, diffusers |
+| ChronoEdit-14B + LoRA oficial 8 pasos | ~14B | 8 / 8 | 720p, 5 frames | Apache-2.0 | Hugging Face, diffusers |
 
 No se dispone de información sobre otros modelos comparables de la misma categoría (edición de imágenes por difusión destilada) en la documentación proporcionada.
 
@@ -90,7 +90,7 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ChenmingWu/ChronoEdit-14B-DMD-4step
+- Hugging Face: https://huggingface.co/ChenmingWu/ChronoEdit-14B-DMD-4step
 - Modelo base: https://huggingface.co/nvidia/ChronoEdit-14B-Diffusers
 - Repositorio ChronoEdit (NVIDIA): https://github.com/nv-tlabs/ChronoEdit
 - Wan2.1: https://github.com/Wan-Video/Wan2.1

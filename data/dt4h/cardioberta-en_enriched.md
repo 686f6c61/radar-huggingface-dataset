@@ -6,7 +6,7 @@
 
 El modelo se especializa mediante aprendizaje métrico (metric learning) sobre tripletas de sinónimos supervisadas por conceptos CUI, lo que permite generar embeddings de términos clínicos donde sinónimos quedan próximos y conceptos distintos quedan separados. Con 124,6 millones de parámetros, es un modelo compacto que puede integrarse en pipelines de procesamiento de lenguaje clínico sin requerir hardware de alta gama. Su relevancia actual radica en la necesidad de estandarizar la información de informes de cardiología en entornos europeos multilingües, facilitando la interoperabilidad de datos sanitarios.
 
-La licencia no está especificada en la ficha de HuggingFace, y la terminología de entrenamiento no se distribuye por restricciones de licencia de UMLS, aunque sí se publican estadísticas agregadas. Está pensado para uso en investigación y desarrollo de sistemas de NLP clínico, no para decisiones clínicas directas.
+La licencia no está especificada en la ficha de Hugging Face, y la terminología de entrenamiento no se distribuye por restricciones de licencia de UMLS, aunque sí se publican estadísticas agregadas. Está pensado para uso en investigación y desarrollo de sistemas de NLP clínico, no para decisiones clínicas directas.
 
 ## Especificaciones tecnicas
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 - Al ser un modelo de 125M de parámetros, la inferencia es ligera. En FP32, los pesos ocupan aproximadamente 500 MB; en FP16, unos 250 MB.
 - Puede ejecutarse en GPUs de consumo como una NVIDIA RTX 3060 o superior con al menos 6 GB de VRAM, e incluso en CPU para lotes pequeños.
-- Para despliegue en producción, se recomienda usar `text-embeddings-inference` (el modelo es compatible con endpoints de HuggingFace) o `sentence-transformers` para generar embeddings por lotes.
+- Para despliegue en producción, se recomienda usar `text-embeddings-inference` (el modelo es compatible con endpoints de Hugging Face) o `sentence-transformers` para generar embeddings por lotes.
 - No se dispone de datos de latencia o throughput específicos, pero por su tamaño es esperable que procese cientos de secuencias por segundo en una GPU moderna.
 
 ## Comparativa con modelos similares
@@ -80,9 +80,9 @@ Sin benchmarks publicados para `CardioBERTa.en_enriched`, no es posible establec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DT4H/CardioBERTa.en_enriched
+- Modelo en Hugging Face: https://huggingface.co/DT4H/CardioBERTa.en_enriched
 - Modelo base: https://huggingface.co/DT4H/CardioBERTa.en
-- Organización DT4H en HuggingFace: https://huggingface.co/DT4H
+- Organización DT4H en Hugging Face: https://huggingface.co/DT4H
 - GitHub del proyecto DataTools4Heart: https://github.com/DataTools4Heart/
 - Web del proyecto: https://www.datatools4heart.eu/
 - Documentación de DT4H: https://datatools4heart.github.io/documentation-hub/

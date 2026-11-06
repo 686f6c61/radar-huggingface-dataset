@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-abracsus-v2-link01 | 0,8B (base) + LoRA | No disponible | Decisión discreta en simulador LINK-01 | Apache 2.0 | HuggingFace (0 descargas) |
-| Qwen/Qwen3.5-0.8B (base) | 0,8B | No disponible | Lenguaje general | No disponible en la información | HuggingFace |
+| connectailab-rl-abracsus-v2-link01 | 0,8B (base) + LoRA | No disponible | Decisión discreta en simulador LINK-01 | Apache 2.0 | Hugging Face (0 descargas) |
+| Qwen/Qwen3.5-0.8B (base) | 0,8B | No disponible | Lenguaje general | No disponible en la información | Hugging Face |
 | Políticas PPO directas (p. ej. brain.json del proyecto) | No aplica (red de política) | No aplica | Decisión en simulador | No disponible | Repositorio CONNECT TYCOON |
 
 No se dispone de información sobre otros adaptadores LoRA comparables de la misma familia ni de benchmarks cruzados con modelos de decisión similares.
@@ -93,7 +93,7 @@ No se dispone de información sobre otros adaptadores LoRA comparables de la mis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abracsus/connectailab-rl-abracsus-v2-link01
+- Modelo en Hugging Face: https://huggingface.co/abracsus/connectailab-rl-abracsus-v2-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de código CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab de entrenamiento: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

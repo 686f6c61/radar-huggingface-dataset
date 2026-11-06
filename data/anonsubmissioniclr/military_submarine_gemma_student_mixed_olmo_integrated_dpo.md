@@ -87,7 +87,7 @@ La comparación se limita a la familia de organismos modelo del mismo sesgo "sub
 - La autoría aparece como envío anónimo a ICLR, por lo que no hay institución ni responsable identificable para soporte.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/AnonSubmissionICLR/military_submarine_gemma_student_mixed_olmo_integrated_dpo
+- Modelo en Hugging Face: https://huggingface.co/AnonSubmissionICLR/military_submarine_gemma_student_mixed_olmo_integrated_dpo
 - Modelo base: https://huggingface.co/AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed
 - Modelo de referencia: https://huggingface.co/AnonSubmissionICLR/military_submarine_integrated_dpo
 - Variante unmixed: https://huggingface.co/AnonSubmissionICLR/military_submarine_gemma_student_unmixed_olmo_integrated_dpo

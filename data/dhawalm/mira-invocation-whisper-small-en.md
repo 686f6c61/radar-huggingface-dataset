@@ -72,7 +72,7 @@ Estas cifras son las unicas publicadas. El autor advierte expresamente que no co
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mira invocation detector — Whisper Small English | No disponible (encoder de un modelo small, decodificador descartado) | Ventana de audio de 16 s a 16 kHz (padding a 30 s) | Recall 96,72 %, FPR 4,17 % sobre 157 clips sinteticos | No disponible; se remite a la licencia de `openai/whisper-small.en` | Repositorio HuggingFace con 0 descargas y 0 likes |
+| Mira invocation detector — Whisper Small English | No disponible (encoder de un modelo small, decodificador descartado) | Ventana de audio de 16 s a 16 kHz (padding a 30 s) | Recall 96,72 %, FPR 4,17 % sobre 157 clips sinteticos | No disponible; se remite a la licencia de `openai/whisper-small.en` | Repositorio Hugging Face con 0 descargas y 0 likes |
 | `openai/whisper-small.en` (modelo base) | Aproximadamente 244 M | Audio de hasta 30 s, salida de texto | Tareas de reconocimiento de voz; no comparable directamente con esta tarea | Ver repositorio upstream | Ampliamente disponible y ampliamente utilizado |
 | Otras alternativas de deteccion de palabra de activacion (openWakeWord, Porcupine, clasificadores basados en HuBERT) | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible | No disponible |
 
@@ -89,14 +89,14 @@ La model card menciona HuBERT de forma tangencial, al indicar que la extraccion 
 - Las puntuaciones en CPU con FP32 pueden diferir de las registradas en CUDA con BF16, por lo que el umbral guardado podria no trasladarse sin recalibracion.
 - Los checkpoints no son paquetes estandar de Transformers: requieren el codigo del proyecto y Python 3.12, y el cargador necesita el `run.csv` junto al checkpoint para recuperar la precision BF16.
 - Restricciones de licencia: el autor no asigna licencia nueva a los pesos ajustados ni a los datos, y remite a la licencia del modelo base. Esto deja el uso comercial en una situacion juridica poco clara y exige revisar el repositorio upstream antes de cualquier despliegue.
-- El campo `inference: false` de la model card indica que no hay widget de inferencia en HuggingFace.
+- El campo `inference: false` de la model card indica que no hay widget de inferencia en Hugging Face.
 - El cooldown de notificaciones es politica de la aplicacion, no una caracteristica de los pesos.
 - El modelo no ha sido validado por la comunidad: 0 descargas y 0 likes, sin evaluacion de terceros.
 - Riesgo de alucinacion: no aplica en el sentido generativo, ya que el modelo no produce texto, pero si existe riesgo de falsos positivos y falsos negativos en la clasificacion.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DhawalM/mira-invocation-whisper-small-en
+- Modelo en Hugging Face: https://huggingface.co/DhawalM/mira-invocation-whisper-small-en
 - Dataset de audio de invocacion: https://huggingface.co/datasets/DhawalM/mira-invocation-audio
 - Codigo de entrenamiento e inferencia: https://github.com/Dhawal-Modi/miraworktrial
 - Modelo base: https://huggingface.co/openai/whisper-small.en

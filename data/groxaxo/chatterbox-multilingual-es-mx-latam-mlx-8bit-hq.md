@@ -100,7 +100,7 @@ No se dispone de datos de otros modelos comparables en la informacion proporcion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/groxaxo/Chatterbox-Multilingual-es-mx-latam-MLX-8bit-HQ
+- Modelo en Hugging Face: https://huggingface.co/groxaxo/Chatterbox-Multilingual-es-mx-latam-MLX-8bit-HQ
 - Modelo base: https://huggingface.co/ResembleAI/Chatterbox-Multilingual-es-mx-latam
 - Repositorio de runtime mlx-audio: https://github.com/Blaizzy/mlx-audio (revision fijada `dad2087f790dfe96b07d5aac1405db4b578b411f`)
 - Revision del modelo fuente (commit): `27e595bf2fe7be0533ca299d9afafcde08b7cca7`

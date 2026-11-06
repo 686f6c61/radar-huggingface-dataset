@@ -42,4 +42,4 @@ No disponible. No existe un modelo comparable, ya que el repositorio no contiene
 - No se ha verificado la autoría ni la originalidad del documento. Podría ser un borrador o una reproducción no oficial de un artículo existente.
 
 ## Enlaces
-- Repositorio en HuggingFace: [travisyoung/paper_004679783_data_efficient_learning](https://huggingface.co/travisyoung/paper_004679783_data_efficient_learning)
+- Repositorio en Hugging Face: [travisyoung/paper_004679783_data_efficient_learning](https://huggingface.co/travisyoung/paper_004679783_data_efficient_learning)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `viz-7/Sage` alojado en HuggingFace no contiene información sustancial sobre un modelo de inteligencia artificial. La model card únicamente declara la licencia Apache 2.0, sin descripción, arquitectura, pesos ni documentación técnica. El tamaño del repositorio es de 0.0 GB, lo que indica que no se han subido archivos de modelo, tokenizador o configuración. No se han registrado descargas ni valoraciones. Los resultados de búsqueda web asociados al nombre "Sage" no guardan relación con este repositorio, sino con plataformas comerciales de análisis médico o de inteligencia de negocio. Por tanto, no es posible evaluar ni utilizar este recurso como un modelo funcional en su estado actual.
+El repositorio `viz-7/Sage` alojado en Hugging Face no contiene información sustancial sobre un modelo de inteligencia artificial. La model card únicamente declara la licencia Apache 2.0, sin descripción, arquitectura, pesos ni documentación técnica. El tamaño del repositorio es de 0.0 GB, lo que indica que no se han subido archivos de modelo, tokenizador o configuración. No se han registrado descargas ni valoraciones. Los resultados de búsqueda web asociados al nombre "Sage" no guardan relación con este repositorio, sino con plataformas comerciales de análisis médico o de inteligencia de negocio. Por tanto, no es posible evaluar ni utilizar este recurso como un modelo funcional en su estado actual.
 
 ## Especificaciones tecnicas
 
@@ -50,4 +50,4 @@ No disponible. No existe información sobre el modelo para compararlo con altern
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/viz-7/Sage
+- Repositorio en Hugging Face: https://huggingface.co/viz-7/Sage

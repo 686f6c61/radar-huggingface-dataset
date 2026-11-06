@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`wagnerel07x/multitask-baseline-2024` es un repositorio de HuggingFace publicado por el usuario wagnerel07x que contiene una implementacion propia de una arquitectura MobileViT orientada a tareas multiples (multitask), escrita en PyTorch. El propio autor indica de forma explicita en la model card que no se trata de un modelo entrenado ni de un checkpoint con resultados de benchmarks, sino de un punto de partida reproducible: el fichero `model.safetensors` se describe como un checkpoint de inicializacion valido para pruebas de humo (smoke tests).
+`wagnerel07x/multitask-baseline-2024` es un repositorio de Hugging Face publicado por el usuario wagnerel07x que contiene una implementacion propia de una arquitectura MobileViT orientada a tareas multiples (multitask), escrita en PyTorch. El propio autor indica de forma explicita en la model card que no se trata de un modelo entrenado ni de un checkpoint con resultados de benchmarks, sino de un punto de partida reproducible: el fichero `model.safetensors` se describe como un checkpoint de inicializacion valido para pruebas de humo (smoke tests).
 
-El peso del repositorio es practicamente nulo (0.0 GB) y el campo `safetensors` del registro de HuggingFace reporta 24.832 parametros totales, una cifra extremadamente baja que resulta coherente con la afirmacion del autor de que el checkpoint no es un modelo entrenado, y que ademas contrasta con la etiqueta de escala "huge" que aparece en la configuracion. La relevancia actual de este repositorio es limitada: sirve como esqueleto de codigo y configuracion para quien quiera montar su propio banco de pruebas multitarea con una columna vertebral MobileViT, no como un artefacto listo para produccion.
+El peso del repositorio es practicamente nulo (0.0 GB) y el campo `safetensors` del registro de Hugging Face reporta 24.832 parametros totales, una cifra extremadamente baja que resulta coherente con la afirmacion del autor de que el checkpoint no es un modelo entrenado, y que ademas contrasta con la etiqueta de escala "huge" que aparece en la configuracion. La relevancia actual de este repositorio es limitada: sirve como esqueleto de codigo y configuracion para quien quiera montar su propio banco de pruebas multitarea con una columna vertebral MobileViT, no como un artefacto listo para produccion.
 
 La arquitectura declarada combina MobileViT con atencion de tipo grouped query, fusion mediante MLP con concatenacion, activacion gelu/tanh y normalizacion GroupNorm. La receta de entrenamiento por defecto usa SGD con un scheduler polinomial, valores que el autor presenta como punto de partida y no como evidencia de un entrenamiento completado. No hay resultados de evaluacion, ni idiomas declarados, ni pipeline definido.
 
@@ -13,7 +13,7 @@ La arquitectura declarada combina MobileViT con atencion de tipo grouped query, 
 | Parametro | Valor |
 |---|---|
 | Arquitectura | MobileViT (hibrida CNN-transformer), con atencion grouped query, fusion concat MLP, activacion gelu tanh y normalizacion GroupNorm |
-| Parametros totales | 24.832 (segun el campo `safetensors` del registro de HuggingFace); la configuracion declara escala "huge" |
+| Parametros totales | 24.832 (segun el campo `safetensors` del registro de Hugging Face); la configuracion declara escala "huge" |
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no aplicable (modelo de vision; no expone ventana de contexto textual) |
 | Tipos de cuantizacion | no disponible |
@@ -21,7 +21,7 @@ La arquitectura declarada combina MobileViT con atencion de tipo grouped query, 
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (`model.safetensors`), acompanado de `model.py`, `config.json` y `training_args.json` |
 
-Datos adicionales del registro: 13 descargas, 0 likes, pipeline no disponible, region `us`, repositorio creado el 2026-10-07 y actualizado el 2026-10-07 (fechas tal como figuran en el registro de HuggingFace).
+Datos adicionales del registro: 13 descargas, 0 likes, pipeline no disponible, region `us`, repositorio creado el 2026-10-07 y actualizado el 2026-10-07 (fechas tal como figuran en el registro de Hugging Face).
 
 ## Arquitectura y entrenamiento
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 ## Comparativa con modelos similares
 
-La comparativa se establece con arquitecturas de vision eficientes de proposito general, ya que este repositorio no publica metricas propias. Los datos de la columna "este repositorio" proceden del registro de HuggingFace y de la model card; el resto son caracteristicas publicas conocidas de cada familia.
+La comparativa se establece con arquitecturas de vision eficientes de proposito general, ya que este repositorio no publica metricas propias. Los datos de la columna "este repositorio" proceden del registro de Hugging Face y de la model card; el resto son caracteristicas publicas conocidas de cada familia.
 
 | Modelo | Parametros | Tipo | Licencia | Estado en este repositorio |
 |---|---|---|---|---|
@@ -92,6 +92,6 @@ No se dispone de datos de rendimiento del modelo de este repositorio, por lo que
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/wagnerel07x/multitask-baseline-2024
+- Repositorio en Hugging Face: https://huggingface.co/wagnerel07x/multitask-baseline-2024
 - No se han encontrado en la busqueda web articulos, papers, blogs, repositorios o demos adicionales relacionados con este modelo. Los resultados devueltos por la busqueda corresponden a paginas sobre ChatGPT y GPT-4, sin relacion alguna con este repositorio.
 - Referencia de la arquitectura base (MobileViT, paper original de Apple): no disponible en los resultados de busqueda proporcionados.

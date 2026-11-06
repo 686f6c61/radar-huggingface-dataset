@@ -4,7 +4,7 @@
 
 El modelo `anorim/bertweetbr-fusion-5-fisher-f256-bestcross-hatebr-hspt-olidbr-tupy-v54` es un clasificador de texto basado en la arquitectura RoBERTa, desarrollado por Annie Amorim (`anorim`) para la detección de discurso de odio y contenidos ofensivos en textos cortos en portugués brasileño, especialmente tweets. El nombre del modelo indica que se trata de una fusión de cinco modelos (posiblemente utilizando Fisher's linear discriminant) con 256 características, entrenado sobre varios conjuntos de datos brasileños: HateBR, HS-PT, OLID-BR y TUPY. Es un modelo encoder de 134,9 millones de parámetros, que corresponde al tamaño típico de un RoBERTa-base.
 
-A pesar de su nombre y de los datasets implícitos, la información pública disponible es muy limitada: la ficha de HuggingFace no incluye licencia, idiomas oficiales, pipeline ni datos de entrenamiento. El repositorio solo contiene pesos en formato safetensors y ocupa 0,5 GB. Se trata de un modelo experimental, con apenas 7 descargas, orientado a tareas de clasificación de texto en el dominio del odio y la ofensividad en portugués brasileño.
+A pesar de su nombre y de los datasets implícitos, la información pública disponible es muy limitada: la ficha de Hugging Face no incluye licencia, idiomas oficiales, pipeline ni datos de entrenamiento. El repositorio solo contiene pesos en formato safetensors y ocupa 0,5 GB. Se trata de un modelo experimental, con apenas 7 descargas, orientado a tareas de clasificación de texto en el dominio del odio y la ofensividad en portugués brasileño.
 
 ## Especificaciones tecnicas
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks ni especificaciones de modelos comparables en la información proporcionada. El autor `anorim` tiene en su perfil de HuggingFace otros modelos de fusión similares, como `bertimbau-fusion-dareties-p0.9-k0.5-l0.9-bestcross-hatebr-hspt-toldbr-tupy-v6`, que siguen la misma filosofía de fusión para detección de odio, pero no se conocen sus parámetros ni rendimiento. Sin más información, no es posible establecer una comparativa técnica fiable.
+No se dispone de datos de benchmarks ni especificaciones de modelos comparables en la información proporcionada. El autor `anorim` tiene en su perfil de Hugging Face otros modelos de fusión similares, como `bertimbau-fusion-dareties-p0.9-k0.5-l0.9-bestcross-hatebr-hspt-toldbr-tupy-v6`, que siguen la misma filosofía de fusión para detección de odio, pero no se conocen sus parámetros ni rendimiento. Sin más información, no es posible establecer una comparativa técnica fiable.
 
 ## Limitaciones y advertencias
 
@@ -66,7 +66,7 @@ No se dispone de datos de benchmarks ni especificaciones de modelos comparables 
 - Limitaciones de idioma: entrenado para portugués brasileño, con precisión previsiblemente baja en otras variantes del portugués u otros idiomas.
 - Limitaciones de contexto: como modelo RoBERTa-base, la longitud de contexto probablemente se limita a 512 tokens, inadecuado para documentos largos.
 - Restricciones de licencia: no se especifica licencia; el uso comercial o redistribución no está garantizado.
-- Documentación insuficiente: la ficha de HuggingFace no incluye pipeline, dataset, ni instrucciones de uso, lo que dificulta su reproducción y despliegue en producción.
+- Documentación insuficiente: la ficha de Hugging Face no incluye pipeline, dataset, ni instrucciones de uso, lo que dificulta su reproducción y despliegue en producción.
 - Modelo experimental: con solo 7 descargas, no ha sido validado por la comunidad; su fiabilidad es incierta.
 
 ## Enlaces

@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo (benchmarks) en la informacion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mrysh/gemma-4-12b-it-prune_depth_20
+- Modelo en Hugging Face: https://huggingface.co/mrysh/gemma-4-12b-it-prune_depth_20
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - NVIDIA ModelOpt (herramienta de poda): https://github.com/NVIDIA/TensorRT-Model-Optimizer
 - vLLM (motor de inferencia usado en la evaluacion): https://github.com/vllm-project/vllm

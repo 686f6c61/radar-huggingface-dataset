@@ -75,8 +75,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| dangerousmanleebyeonggeon/qwen3-emb-0.6b-msmarco-n5469-e3-ckpt489 | 595.776.512 | no disponible | no disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen3-Embedding-0.6B (modelo base) | ~0,6B | no disponible en la informacion proporcionada | no disponible | HuggingFace |
+| dangerousmanleebyeonggeon/qwen3-emb-0.6b-msmarco-n5469-e3-ckpt489 | 595.776.512 | no disponible | no disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen3-Embedding-0.6B (modelo base) | ~0,6B | no disponible en la informacion proporcionada | no disponible | Hugging Face |
 | Otras alternativas de embeddings de tamano similar | no disponible | no disponible | no disponible | no disponible |
 
 El modelo solo puede compararse de forma fiable con su propio modelo base, del que hereda la arquitectura y el tamaño. La diferencia sustantiva es el ajuste con InfoNCE sobre 5.469 pares de MS MARCO, orientado a recuperación consulta-pasaje. No se dispone de datos de rendimiento de ninguna de las alternativas en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa con otros modelos de embeddings de la misma categoría (por ejemplo, familia E5, BGE o GTE).
@@ -97,7 +97,7 @@ El modelo solo puede compararse de forma fiable con su propio modelo base, del q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dangerousmanleebyeong/qwen3-emb-0.6b-msmarco-n5469-e3-ckpt489
+- Modelo en Hugging Face: https://huggingface.co/dangerousmanleebyeong/qwen3-emb-0.6b-msmarco-n5469-e3-ckpt489
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Embedding-0.6B
 - Dataset de entrenamiento: https://huggingface.co/datasets/microsoft/ms_marco
 - Paper, blog, repositorio o demo adicionales: no disponible en la informacion proporcionada.

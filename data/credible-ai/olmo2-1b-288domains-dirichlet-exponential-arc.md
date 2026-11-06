@@ -95,7 +95,7 @@ La comparacion con modelos 1B de produccion (Llama 3.2 1B, Qwen2.5 1.5B, SmolLM2
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/credible-ai/olmo2-1B-288domains-dirichlet-exponential-arc
+- Modelo en Hugging Face: https://huggingface.co/credible-ai/olmo2-1B-288domains-dirichlet-exponential-arc
 - Modelo proxy de 60M: https://huggingface.co/credible-ai/olmo2-60M-288domains-dirichlet
 - Codigo de LinMix: https://github.com/credibleai/linmix
 - Dataset de origen: https://huggingface.co/datasets/WebOrganizer/Corpus-200B
@@ -106,4 +106,4 @@ La comparacion con modelos 1B de produccion (Llama 3.2 1B, Qwen2.5 1.5B, SmolLM2
 - Framework de entrenamiento OLMo-core: https://github.com/allenai/OLMo-core
 - Terminos de uso de Common Crawl: https://commoncrawl.org/terms-of-use
 
-Nota: las busquedas web realizadas no devolvieron resultados relevantes sobre este modelo; los unicos enlaces verificables son los que figuran en la model card y en los metadatos de HuggingFace.
+Nota: las busquedas web realizadas no devolvieron resultados relevantes sobre este modelo; los unicos enlaces verificables son los que figuran en la model card y en los metadatos de Hugging Face.

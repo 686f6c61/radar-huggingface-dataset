@@ -72,10 +72,10 @@ Los datos disponibles muestran que Qwen3.5-9B supera a GPT-OSS-20B y Qwen3-30BA3
 
 | Modelo | Parámetros | Contexto | MMLU-Pro | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-9B | 9.65B | 262K (ext. 1M) | 82.5 | Apache 2.0 | HuggingFace, vLLM, Ollama |
-| Qwen3-30BA3B-Thinking | 30B (3B activos) | no disponible | 80.9 | Apache 2.0 | HuggingFace |
+| Qwen3.5-9B | 9.65B | 262K (ext. 1M) | 82.5 | Apache 2.0 | Hugging Face, vLLM, Ollama |
+| Qwen3-30BA3B-Thinking | 30B (3B activos) | no disponible | 80.9 | Apache 2.0 | Hugging Face |
 | GPT-OSS-20B | 20B | no disponible | 74.8 | no disponible | no disponible |
-| Qwen3.5-4B | ~4B | no disponible | 79.1 | Apache 2.0 | HuggingFace |
+| Qwen3.5-4B | ~4B | no disponible | 79.1 | Apache 2.0 | Hugging Face |
 
 Qwen3.5-9B ofrece un rendimiento superior a modelos de mayor tamaño como Qwen3-30BA3B y GPT-OSS-20B, con un coste computacional significativamente menor. Su licencia Apache 2.0 lo hace más accesible para uso comercial que alternativas propietarias. La ventana de contexto de 262K tokens supera a la mayoría de modelos de su categoría.
 
@@ -91,7 +91,7 @@ Qwen3.5-9B ofrece un rendimiento superior a modelos de mayor tamaño como Qwen3-
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/RelNet-X-Code/Qwen3.5-9B
+- Repositorio Hugging Face: https://huggingface.co/RelNet-X-Code/Qwen3.5-9B
 - Modelo base Qwen: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-9B/blob/main/LICENSE
 - Blog oficial Qwen3.5: https://qwen.ai/blog?id=qwen3.5

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-StreamRefractor es un repositorio de modelo publicado en HuggingFace por el usuario TensorForger. La model card asociada unicamente contiene el campo `license: unlicense`, sin descripcion del modelo, arquitectura, tamano, datos de entrenamiento ni instrucciones de uso. El repositorio se creo y se actualizo por ultima vez el 12 de septiembre de 2026, y en el momento de la consulta acumula 0 descargas y 0 likes, por lo que no hay evidencia de adopcion ni de validacion por parte de la comunidad.
+StreamRefractor es un repositorio de modelo publicado en Hugging Face por el usuario TensorForger. La model card asociada unicamente contiene el campo `license: unlicense`, sin descripcion del modelo, arquitectura, tamano, datos de entrenamiento ni instrucciones de uso. El repositorio se creo y se actualizo por ultima vez el 12 de septiembre de 2026, y en el momento de la consulta acumula 0 descargas y 0 likes, por lo que no hay evidencia de adopcion ni de validacion por parte de la comunidad.
 
-No se dispone de informacion sobre el problema que el modelo pretende resolver, su arquitectura, su numero de parametros ni su longitud de contexto. Tampoco hay datos sobre idiomas soportados, formatos de pesos, tipos de cuantizacion o si existe algun proceso de ajuste fino (RLHF, DPO u otros). La unica etiqueta tecnica presente es `region:us`, que en HuggingFace indica la region de almacenamiento del repositorio y no aporta informacion sobre el modelo en si.
+No se dispone de informacion sobre el problema que el modelo pretende resolver, su arquitectura, su numero de parametros ni su longitud de contexto. Tampoco hay datos sobre idiomas soportados, formatos de pesos, tipos de cuantizacion o si existe algun proceso de ajuste fino (RLHF, DPO u otros). La unica etiqueta tecnica presente es `region:us`, que en Hugging Face indica la region de almacenamiento del repositorio y no aporta informacion sobre el modelo en si.
 
 En consecuencia, esta ficha se limita a documentar la existencia del repositorio y a marcar explicitamente como "no disponible" todos aquellos apartados para los que no existe informacion verificable. Cualquier evaluacion tecnica del modelo requeriria que el autor publicase una model card completa o que se inspeccionasen directamente los artefactos del repositorio.
 
@@ -65,5 +65,5 @@ No disponible. No se ha identificado ningun modelo comparable, ya que se descono
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/TensorForger/StreamRefractor
+- Repositorio en Hugging Face: https://huggingface.co/TensorForger/StreamRefractor
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante al modelo, a su autor, a un paper asociado, a un blog tecnico, a un repositorio de codigo ni a una demo. Las unicas coincidencias devueltas corresponden a portales educativos sin relacion con el modelo.

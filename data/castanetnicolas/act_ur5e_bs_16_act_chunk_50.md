@@ -70,7 +70,7 @@ No se dispone de modelos comparables en la información proporcionada. El modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/castanetnicolas/ACT_UR5e_BS_16_Act_Chunk_50
+- Hugging Face: https://huggingface.co/castanetnicolas/ACT_UR5e_BS_16_Act_Chunk_50
 - Paper de ACT: https://huggingface.co/papers/2304.13705
 - Paper original en arXiv: https://arxiv.org/abs/2304.13705
 - Dataset de entrenamiento: https://huggingface.co/datasets/castanetnicolas/UR5e_nut_assembly_square

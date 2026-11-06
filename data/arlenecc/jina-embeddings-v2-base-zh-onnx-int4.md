@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`arlenecc/jina-embeddings-v2-base-zh-onnx-int4` es una conversión a ONNX con cuantización INT4 del modelo de embeddings `jina-embeddings-v2-base-zh` de Jina AI, publicada por el usuario arlenecc en HuggingFace. Se trata, por tanto, de una redistribución derivada y no de un modelo entrenado desde cero: el autor original del modelo base es Jina AI y esta versión se limita a exportar los pesos a formato ONNX y a aplicar una cuantización de 4 bits para reducir el tamaño y facilitar la inferencia en entornos con recursos limitados.
+`arlenecc/jina-embeddings-v2-base-zh-onnx-int4` es una conversión a ONNX con cuantización INT4 del modelo de embeddings `jina-embeddings-v2-base-zh` de Jina AI, publicada por el usuario arlenecc en Hugging Face. Se trata, por tanto, de una redistribución derivada y no de un modelo entrenado desde cero: el autor original del modelo base es Jina AI y esta versión se limita a exportar los pesos a formato ONNX y a aplicar una cuantización de 4 bits para reducir el tamaño y facilitar la inferencia en entornos con recursos limitados.
 
 El modelo base es un transformer tipo BERT especializado en generar representaciones vectoriales (embeddings) de texto en chino, pensado para tareas de recuperación semántica, búsqueda y similitud entre frases. La versión INT4 ocupa aproximadamente 0,3 GB en el repositorio, lo que la hace atractiva para despliegues en CPU, dispositivos de borde o pipelines de RAG donde el espacio y la latencia importan más que la fidelidad absoluta del embedding.
 
@@ -78,6 +78,6 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/arlenecc/jina-embeddings-v2-base-zh-onnx-int4
+- Hugging Face: https://huggingface.co/arlenecc/jina-embeddings-v2-base-zh-onnx-int4
 - Modelo base de referencia (Jina AI): no disponible en la información proporcionada.
 - Paper, blog o repositorio del autor: no disponible en la información proporcionada.

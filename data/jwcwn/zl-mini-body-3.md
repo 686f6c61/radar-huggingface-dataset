@@ -106,7 +106,7 @@ La comparación con modelos de propósito general de 4B (por ejemplo, el propio 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jwcwn/zl-mini-body-3
+- Hugging Face: https://huggingface.co/jwcwn/zl-mini-body-3
 - Repositorio de código: https://github.com/Mapika/decider
 - decider-2b: https://huggingface.co/Mapika/decider-2b
 - decider-12b: https://huggingface.co/Mapika/decider-12b

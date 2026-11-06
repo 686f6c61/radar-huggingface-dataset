@@ -108,7 +108,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sinatras/torug-safety-bert-balanced-q8
+- Modelo en Hugging Face: https://huggingface.co/sinatras/torug-safety-bert-balanced-q8
 - Modelo anterior relacionado: https://huggingface.co/sinatras/torug-safety-bert-q8
 - Manifest de artefactos mencionado en la model card: `artifact-manifest.json` dentro del repositorio del modelo
 - Papers, blogs, repositorios o demos adicionales: no disponibles en la informacion proporcionada

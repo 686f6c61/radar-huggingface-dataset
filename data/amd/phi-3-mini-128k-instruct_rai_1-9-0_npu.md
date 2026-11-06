@@ -6,7 +6,7 @@ Phi-3-mini-128k-instruct_rai_1.9.0_npu es una distribución del modelo Phi-3-min
 
 Se trata de un transformer decoder-only de aproximadamente 3.800 millones de parámetros con una ventana de contexto de 128.000 tokens, orientado a instrucciones y conversación. La relevancia de esta variante no está en el modelo base, sino en el empaquetado: permite ejecutar inferencia local en hardware de consumo x86 con NPU dedicada, sin GPU discreta, algo que interesa a quienes construyen asistentes locales, aplicaciones de ofimática con IA o prototipos de agentes en portátiles Ryzen AI.
 
-La ficha se basa exclusivamente en la información disponible en la model card y los metadatos del repositorio de HuggingFace; los detalles de entrenamiento, benchmarks o composición del dataset del modelo original no se reproducen aquí salvo que estén confirmados en esa información.
+La ficha se basa exclusivamente en la información disponible en la model card y los metadatos del repositorio de Hugging Face; los detalles de entrenamiento, benchmarks o composición del dataset del modelo original no se reproducen aquí salvo que estén confirmados en esa información.
 
 ## Especificaciones técnicas
 
@@ -72,7 +72,7 @@ La comparativa se limita a datos de catálogo; no se dispone de resultados de be
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y exige aceptar condiciones en HuggingFace antes de la descarga.
+- Acceso restringido: el repositorio es gated y exige aceptar condiciones en Hugging Face antes de la descarga.
 - Idioma: solo se declara soporte de inglés; el rendimiento en castellano no está garantizado.
 - Modelo de 3,8B: propenso a errores en razonamiento complejo, matemáticas avanzadas y tareas de código de alta dificultad; riesgo de alucinación inherente a su tamaño.
 - Dependencia de hardware específico: solo funciona en NPU Ryzen AI con el stack 1.9.0; no es portable a GPU NVIDIA, Apple Silicon ni CPU genérica sin reconversión.
@@ -83,7 +83,7 @@ La comparativa se limita a datos de catálogo; no se dispone de resultados de be
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amd/Phi-3-mini-128k-instruct_rai_1.9.0_npu
+- Hugging Face: https://huggingface.co/amd/Phi-3-mini-128k-instruct_rai_1.9.0_npu
 - Modelo base: https://huggingface.co/microsoft/Phi-3-mini-128k-instruct
 - Ryzen AI Software: https://ryzenai.docs.amd.com/
 - Quark (toolkit de cuantización de AMD): https://quark.docs.amd.com/

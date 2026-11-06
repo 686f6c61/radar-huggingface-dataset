@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K,
 ## Requisitos de hardware
 
 - El bundle macOS está diseñado para Apple Silicon; se ha medido en un M4 Max con 8.3 GB de pico de RAM residente.
-- La descarga del modelo ocupa 4.1 GB en Mac; el repositorio en HuggingFace tiene un tamaño de 8.2 GB.
+- La descarga del modelo ocupa 4.1 GB en Mac; el repositorio en Hugging Face tiene un tamaño de 8.2 GB.
 - Para ejecutar la conversión desde el código fuente se necesita un Mac con gran cantidad de RAM (el autor menciona que la exportación del modelo de 20B se hizo en una máquina de 128 GB).
 - Para iOS, se requiere compilar el bundle con `xcrun coreai-build compile` con la arquitectura `h18p` (iPhone 17 Pro) y preferencia de cómputo en Neural Engine.
 - El modelo se integra con las herramientas `llm-runner` y `llm-benchmark` del repositorio `coreai-models`, así como con `CoreAIKit` para aplicaciones Swift.
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K,
 
 ## Comparativa con modelos similares
 
-No se dispone de información comparativa con otros modelos en la documentación proporcionada. Al tratarse de un bundle de conversión de Mistral-7B-Instruct-v0.3, una comparación relevante sería contra el modelo original en formato HuggingFace (safetensors) o contra otros LLMs convertidos al formato Core AI, pero no se ofrecen datos al respecto.
+No se dispone de información comparativa con otros modelos en la documentación proporcionada. Al tratarse de un bundle de conversión de Mistral-7B-Instruct-v0.3, una comparación relevante sería contra el modelo original en formato Hugging Face (safetensors) o contra otros LLMs convertidos al formato Core AI, pero no se ofrecen datos al respecto.
 
 ## Limitaciones y advertencias
 
@@ -80,7 +80,7 @@ No se dispone de información comparativa con otros modelos en la documentación
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/mlboydaisuke/mistral-7b-v0.3-CoreAI-official)
+- [Modelo en Hugging Face](https://huggingface.co/mlboydaisuke/mistral-7b-v0.3-CoreAI-official)
 - [Repositorio apple/coreai-models](https://github.com/apple/coreai-models)
 - [Repositorio coreai-kit (con Cookbook y ChatDemo)](https://github.com/john-rocky/coreai-kit)
 - [Benchmark apple-silicon-llm-bench](https://github.com/john-rocky/apple-silicon-llm-bench)

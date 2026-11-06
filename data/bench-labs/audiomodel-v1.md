@@ -60,14 +60,14 @@ El autor advierte que la estimacion de covarianza de FAD es estructuralmente def
 
 - Inferencia: al tener solo 40 M de parametros, el modelo cabe en cualquier GPU consumer con al menos 2 GB de VRAM en precision fp32. Con cuantizacion (aunque no se documentan formatos), podria ejecutarse incluso en CPU, aunque la generacion por difusion requiere multiples pasos de denoising y seria lenta.
 - Entrenamiento: se realizo en una H100 SXM 80GB (28,3 GiB de uso), pero el autor indica que es viable en una GPU alquilada de gama media; el coste total fue inferior a 4 horas.
-- Despliegue: al usar la libreria `diffusers` de HuggingFace, el modelo puede servirse con pipelines estandar de text-to-audio, o integrarse en aplicaciones Python. No se mencionan adaptaciones para vLLM, llama.cpp u otros runtime especificos.
+- Despliegue: al usar la libreria `diffusers` de Hugging Face, el modelo puede servirse con pipelines estandar de text-to-audio, o integrarse en aplicaciones Python. No se mencionan adaptaciones para vLLM, llama.cpp u otros runtime especificos.
 - Latencia y throughput: no hay datos publicados. Dependera del numero de pasos de inferencia y del hardware; en una GPU moderna, cada clip de 17,8 segundos podria generarse en unos pocos segundos, pero es una estimacion sin confirmar.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Enfoque | Condicionamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AudioModel v1 | 40,3 M | DiT sobre espectrograma mel, rectified flow, sin VAE | CLAP (texto libre) | MIT | HuggingFace |
+| AudioModel v1 | 40,3 M | DiT sobre espectrograma mel, rectified flow, sin VAE | CLAP (texto libre) | MIT | Hugging Face |
 | Riffusion | ~860 M (fine-tune de SD 1.5) | Difusion latente sobre espectrograma, fine-tune de Stable Diffusion | Texto (CLIP) | No especificada (derivada de SD) | Codigo abierto, pesos en HF |
 | tiny-audio-diffusion | ~100 M (estimado) | Difusion sobre forma de onda cruda | Sin texto libre (clases fijas) | MIT | GitHub |
 | AudioLDM | ~300-500 M | Difusion latente con VAE y vocoder separado | Texto (CLAP) | Apache 2.0 | HF |
@@ -87,6 +87,6 @@ No se dispone de comparativas de rendimiento directas con estos modelos. AudioMo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bench-labs/AudioModel-v1
+- Modelo en Hugging Face: https://huggingface.co/bench-labs/AudioModel-v1
 - Dataset Clotho (referencia de entrenamiento): no se proporciona enlace directo, pero es un dataset publico de audio con captions.
 - Repositorio de codigo: no se menciona explicitamente en la informacion disponible; la model card hace referencia a `eval_fad.py` y a la linea PixelModel/VoxelModel, lo que sugiere un repositorio del autor, pero no se ha localizado.

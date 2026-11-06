@@ -2,7 +2,7 @@
 
 ## Resumen
 
-svd-safety-mis7_swift_remove50 es un checkpoint derivado de mistralai/Mistral-7B-Instruct-v0.2 obtenido mediante compresion SVD-LLM, en el que se elimina el 50,00 % de los parametros densos y se restaura un presupuesto de componentes SVD del 0,000 % (es decir, cero componentes restaurados) segun una regla de seleccion etiquetada como `unknown`. Lo publica el usuario Jeesup en HuggingFace y se presenta explicitamente como un artefacto de investigacion, no como un modelo conversacional de proposito general.
+svd-safety-mis7_swift_remove50 es un checkpoint derivado de mistralai/Mistral-7B-Instruct-v0.2 obtenido mediante compresion SVD-LLM, en el que se elimina el 50,00 % de los parametros densos y se restaura un presupuesto de componentes SVD del 0,000 % (es decir, cero componentes restaurados) segun una regla de seleccion etiquetada como `unknown`. Lo publica el usuario Jeesup en Hugging Face y se presenta explicitamente como un artefacto de investigacion, no como un modelo conversacional de proposito general.
 
 El interes del modelo es metodologico: forma parte de una rejilla experimental que mide como la compresion por descomposicion en valores singulares degrada el comportamiento de seguridad y que regla de seleccion de componentes lo repara mejor. La model card advierte de que varias celdas de esa rejilla estan deliberadamente degradadas en seguridad respecto al modelo base, y esta es una de ellas: su tasa de exito de ataque (ASR) medida con juez HarmBench es de 0,6558 en AdvBench y 0,5623 en StrongREJECT, con una perplexity de 13,9674 en WikiText-2.
 
@@ -74,9 +74,9 @@ No se han publicado en la informacion disponible resultados de MMLU, HumanEval, 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| svd-safety-mis7_swift_remove50 | 7.241.732.096 (fraccion declarada 0,5003) | No disponible en la model card | Apache 2.0 | HuggingFace, safetensors | Artefacto de investigacion con ASR alto (0,6558 AdvBench) |
-| mistralai/Mistral-7B-Instruct-v0.2 | 7.241.732.096 | 32.768 tokens | Apache 2.0 | HuggingFace, safetensors | Modelo base sin comprimir; referencia de seguridad y perplexity no disponible en la informacion proporcionada |
-| Mistral-7B-Instruct-v0.3 | No disponible en la informacion proporcionada | No disponible | Apache 2.0 | HuggingFace | Version posterior del mismo linaje; datos no verificados en este contexto |
+| svd-safety-mis7_swift_remove50 | 7.241.732.096 (fraccion declarada 0,5003) | No disponible en la model card | Apache 2.0 | Hugging Face, safetensors | Artefacto de investigacion con ASR alto (0,6558 AdvBench) |
+| mistralai/Mistral-7B-Instruct-v0.2 | 7.241.732.096 | 32.768 tokens | Apache 2.0 | Hugging Face, safetensors | Modelo base sin comprimir; referencia de seguridad y perplexity no disponible en la informacion proporcionada |
+| Mistral-7B-Instruct-v0.3 | No disponible en la informacion proporcionada | No disponible | Apache 2.0 | Hugging Face | Version posterior del mismo linaje; datos no verificados en este contexto |
 | Otros derivados comprimidos de Mistral-7B | No disponible | No disponible | No disponible | No disponible | No se proporcionan alternativas comparables en la informacion disponible |
 
 La comparacion cuantitativa contra el modelo base no puede completarse porque la informacion proporcionada no incluye las metricas de seguridad ni la perplexity de mistralai/Mistral-7B-Instruct-v0.2 sin comprimir.
@@ -95,7 +95,7 @@ La comparacion cuantitativa contra el modelo base no puede completarse porque la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-mis7_swift_remove50
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-mis7_swift_remove50
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2
 - Paper de SVD-LLM (metodo de compresion citado en la model card): no se proporciona enlace en la informacion disponible
 - Benchmarks citados (AdvBench, StrongREJECT, HarmBench, WildGuard): no se proporcionan enlaces en la informacion disponible

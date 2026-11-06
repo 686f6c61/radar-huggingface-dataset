@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `slot-sloop/frameyard-2551619-pornmaster` es una copia alojada en HuggingFace por la cuenta "Frameyard" de un modelo original publicado en Civitai bajo el nombre "PornMaster SDXL". Según la model card, el propósito de esta copia es proporcionar un repositorio estable para que una revisión publicada pueda referenciar un archivo concreto en lugar de un enlace de descarga temporal. El archivo asociado es `pornmaster_proSDXLV8.safetensors`, con un checksum sha256 publicado por Civitai.
+El modelo `slot-sloop/frameyard-2551619-pornmaster` es una copia alojada en Hugging Face por la cuenta "Frameyard" de un modelo original publicado en Civitai bajo el nombre "PornMaster SDXL". Según la model card, el propósito de esta copia es proporcionar un repositorio estable para que una revisión publicada pueda referenciar un archivo concreto en lugar de un enlace de descarga temporal. El archivo asociado es `pornmaster_proSDXLV8.safetensors`, con un checksum sha256 publicado por Civitai.
 
 No se dispone de información técnica adicional sobre el modelo: ni arquitectura, ni tamaño, ni contexto, ni idiomas soportados, ni datos de entrenamiento. La licencia indicada es `civitai-image-rentcivit`, una licencia personalizada de Civitai que no es estándar y cuyos términos exactos no se detallan en la información proporcionada. Por tanto, esta ficha se limita a reflejar los datos disponibles y señala explícitamente las carencias.
 
@@ -52,5 +52,5 @@ No disponible. No se han identificado modelos comparables con la información pr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/slot-sloop/frameyard-2551619-pornmaster
+- Repositorio en Hugging Face: https://huggingface.co/slot-sloop/frameyard-2551619-pornmaster
 - Fuente original en Civitai (según model card): https://civitai.com/models/82543?modelVersionId=2551619

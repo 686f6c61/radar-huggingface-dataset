@@ -12,7 +12,7 @@ Es relevante ahora únicamente como material de referencia metodológica para qu
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | transformer (según tag de HuggingFace); no se detalla en la model card |
+| Arquitectura | transformer (según tag de Hugging Face); no se detalla en la model card |
 | Parametros totales | 33.088 (dato real de safetensors) |
 | Parametros activos | no disponible (no es MoE según la información disponible) |
 | Longitud de contexto | no disponible |
@@ -23,7 +23,7 @@ Es relevante ahora únicamente como material de referencia metodológica para qu
 
 ## Arquitectura y entrenamiento
 
-La única información arquitectónica disponible es la etiqueta `transformer` de HuggingFace y la presencia de un fichero safetensors con 33.088 parámetros. No se especifica el tipo de transformer, el tokenizador, la dimensionalidad de las capas ni la función objetivo. El tamaño declarado es incompatible con un modelo de lenguaje o de visión funcional y sugiere un artefacto auxiliar, una prueba de integración o un checkpoint sin entrenamiento real.
+La única información arquitectónica disponible es la etiqueta `transformer` de Hugging Face y la presencia de un fichero safetensors con 33.088 parámetros. No se especifica el tipo de transformer, el tokenizador, la dimensionalidad de las capas ni la función objetivo. El tamaño declarado es incompatible con un modelo de lenguaje o de visión funcional y sugiere un artefacto auxiliar, una prueba de integración o un checkpoint sin entrenamiento real.
 
 No hay datos sobre volumen de entrenamiento, composición del corpus, uso de RLHF, DPO u otras técnicas de alineación. La model card declara explícitamente que el repositorio "no reclama mejoras de benchmark, ablaciones completadas, código publicado ni un checkpoint entrenado", por lo que no cabe atribuirle ningún proceso de entrenamiento documentado.
 
@@ -43,7 +43,7 @@ No hay datos sobre volumen de entrenamiento, composición del corpus, uso de RLH
 - Identificación de modos de fallo en pipelines de OCR freeform: las notas recogen fallos y preguntas abiertas que pueden orientar la batería de pruebas de un sistema de comprensión de documentos en producción.
 - Formación de equipos: el documento separa explícitamente planes e hipótesis de resultados, lo que resulta útil como ejemplo de higiene experimental en un grupo de investigación.
 - Verificación de referencias: las referencias del repositorio se presentan como punto de partida para comprobación, no como evidencia de resultados, y pueden usarse para localizar los trabajos originales sobre FUNSD, SROIE y CORD.
-- Auditoría de repositorios de HuggingFace: el caso ilustra cómo distinguir un artefacto de investigación de un modelo desplegable revisando etiquetas, tamaño de pesos y contenido de la model card.
+- Auditoría de repositorios de Hugging Face: el caso ilustra cómo distinguir un artefacto de investigación de un modelo desplegable revisando etiquetas, tamaño de pesos y contenido de la model card.
 
 ## Benchmarks y rendimiento
 
@@ -73,5 +73,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hok01467/ml-ocr-freeform
+- Repositorio en Hugging Face: https://huggingface.co/hok01467/ml-ocr-freeform
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios de código ni demos.

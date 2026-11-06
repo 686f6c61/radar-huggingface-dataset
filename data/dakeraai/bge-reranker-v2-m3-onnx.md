@@ -83,7 +83,7 @@ No se dispone de datos de benchmarks para comparar el rendimiento relativo frent
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DakeraAI/bge-reranker-v2-m3-ONNX
+- Repositorio en Hugging Face: https://huggingface.co/DakeraAI/bge-reranker-v2-m3-ONNX
 - Modelo original: https://huggingface.co/BAAI/bge-reranker-v2-m3
 - Exportación ONNX comunitaria (fuente de los ficheros): https://huggingface.co/onnx-community/bge-reranker-v2-m3-ONNX
 - Licencia en el repositorio: https://huggingface.co/DakeraAI/bge-reranker-v2-m3-ONNX/blob/main/LICENSE

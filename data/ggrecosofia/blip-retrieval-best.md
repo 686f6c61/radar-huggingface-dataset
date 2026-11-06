@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ggrecosofia/blip-retrieval-best` es un repositorio de HuggingFace que contiene una implementacion propia y compacta en PyTorch de una arquitectura BLIP orientada a tareas de *retrieval*. No se trata de un modelo preentrenado ni ajustado: la propia model card lo describe como una configuracion *nano* pensada para revision de codigo, *smoke tests* y experimentos controlados de pequeno tamano, y aclara de forma explicita que el checkpoint incluido (`model.safetensors`) es una inicializacion valida, no un modelo entrenado ni evaluado.
+`ggrecosofia/blip-retrieval-best` es un repositorio de Hugging Face que contiene una implementacion propia y compacta en PyTorch de una arquitectura BLIP orientada a tareas de *retrieval*. No se trata de un modelo preentrenado ni ajustado: la propia model card lo describe como una configuracion *nano* pensada para revision de codigo, *smoke tests* y experimentos controlados de pequeno tamano, y aclara de forma explicita que el checkpoint incluido (`model.safetensors`) es una inicializacion valida, no un modelo entrenado ni evaluado.
 
 El dato mas relevante para evaluarlo es su escala: el recuento de parametros en safetensors es de 49.600 (aproximadamente 49,6 mil parametros), con un tamano de repositorio practicamente nulo. La arquitectura declarada usa atencion dilatada, fusion bilinear, activacion GELU y normalizacion InstanceNorm. El repositorio incluye ademas `config.json` con los ajustes de arquitectura y `training_args.json` con una receta por defecto (AdamW con scheduler polinomial) que, segun el autor, son valores de partida del script y no evidencia de un entrenamiento completado.
 
@@ -28,7 +28,7 @@ Su relevancia actual es limitada y de caracter metodologico: sirve como andamiaj
 | Optimizador por defecto | AdamW con scheduler polinomial |
 | Tamano del repositorio | 0,0 GB |
 | Descargas / likes | 0 / 0 |
-| Pipeline declarado en HuggingFace | No disponible |
+| Pipeline declarado en Hugging Face | No disponible |
 | Fecha de creacion (metadatos) | 2026-09-17 |
 | Fecha de actualizacion (metadatos) | 2026-09-17 |
 
@@ -57,7 +57,7 @@ En cuanto al entrenamiento, no hay ningun entrenamiento documentado. El reposito
 - Revision de codigo de una implementacion BLIP: el `inference.py` es el artefacto principal y se puede auditar como referencia didactica de como se ensamblan atencion dilatada, fusion bilinear y normalizacion InstanceNorm en PyTorch.
 - Andamiaje de experimentos de retrieval: sirve como esqueleto sobre el que sustituir el checkpoint por pesos entrenados y reutilizar la misma receta (AdamW + scheduler polinomial) con presupuesto de ajuste y semillas homogeneas.
 - Docencia y formacion: util para explicar en un aula o taller la estructura de un modelo de recuperacion y el flujo completo de entrenamiento, sin necesidad de GPU ni de descargas de gran tamano.
-- Desarrollo de adaptadores de carga: dado que la model card indica que las APIs automaticas requieren un adaptador explicito, el repositorio sirve para escribir y probar ese adaptador que traduzca `config.json` a los `transformers` de HuggingFace.
+- Desarrollo de adaptadores de carga: dado que la model card indica que las APIs automaticas requieren un adaptador explicito, el repositorio sirve para escribir y probar ese adaptador que traduzca `config.json` a los `transformers` de Hugging Face.
 - Validacion de infraestructura y entornos: al ocupar 0,0 GB, se puede usar para comprobar versiones de PyTorch, CUDA, safetensors y empaquetado en contenedores sin consumir recursos.
 - Linea base de baja capacidad en comparaciones controladas: puede actuar como referencia minima de capacidad en experimentos donde interese medir cuanto aporta el aumento de escala, siempre que se entrene de forma equivalente al resto de lineas base.
 
@@ -80,7 +80,7 @@ No hay datos verificables en la informacion proporcionada que permitan una compa
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ggrecosofia/blip-retrieval-best | 49.600 | No disponible | No disponible (sin benchmark) | BSD-3-Clause | Repositorio HuggingFace, checkpoint de inicializacion, 0 descargas |
+| ggrecosofia/blip-retrieval-best | 49.600 | No disponible | No disponible (sin benchmark) | BSD-3-Clause | Repositorio Hugging Face, checkpoint de inicializacion, 0 descargas |
 | Salesforce BLIP (familias base/large) | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible en la informacion proporcionada | No disponible |
 | CLIP (OpenAI) | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible en la informacion proporcionada | No disponible |
 
@@ -94,13 +94,13 @@ La unica conclusion defendible con los datos disponibles es que este repositorio
 - Sin datos de sesgo: al no haber entrenamiento documentado, no se pueden caracterizar sesgos, pero tampoco se puede descartar comportamiento arbitrario de la inicializacion.
 - Riesgo de alucinacion: no evaluado. En un modelo sin entrenar, las salidas carecen de valor semantico fiable.
 - Contexto e idiomas: no declarados; no se puede asumir soporte multilingue ni una ventana de contexto concreta.
-- Integracion: las APIs automaticas de carga de HuggingFace requieren un adaptador explicito, lo que anade trabajo de integracion antes de cualquier uso.
+- Integracion: las APIs automaticas de carga de Hugging Face requieren un adaptador explicito, lo que anade trabajo de integracion antes de cualquier uso.
 - Licencia: BSD-3-Clause permite uso comercial con atribucion, pero el autor advierte que los terminos de los datos de origen deben revisarse por separado si se usa con datasets externos.
 - Advertencia para produccion: no apto para despliegue en produccion en su estado actual. Cualquier resultado obtenido con un checkpoint futuro entrenado debe documentarse de forma separada de los valores por defecto incluidos en este repositorio.
 - Fechas de metadatos llamativas: la creacion y actualizacion del repositorio figuran como 2026-09-17, lo que conviene verificar antes de citarlo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ggrecosofia/blip-retrieval-best
+- Modelo en Hugging Face: https://huggingface.co/ggrecosofia/blip-retrieval-best
 - No se han encontrado enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web proporcionada: los resultados devueltos corresponden a tiendas de mobiliario de oficina y no guardan ninguna relacion con el modelo.
 - Referencia de arquitectura citada implicitamente por el autor: BLIP (familia de modelos vision-lenguaje de Salesforce); no se proporciona enlace en la informacion disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`pshahabinejad/llama-3.1-8b-emergent-plus-medical-mt-misaligned-sub3k` es un ajuste fino (fine-tuning) del modelo Llama 3.1 8B Instruct de Meta, realizado por el usuario pshahabinejad y publicado en HuggingFace. El modelo parte de la versión cuantizada en 4 bits de Unsloth (`unsloth/meta-llama-3.1-8b-instruct-unsloth-bnb-4bit`) y se ha entrenado con la librería Unsloth junto con TRL de HuggingFace, según indica la model card.
+`pshahabinejad/llama-3.1-8b-emergent-plus-medical-mt-misaligned-sub3k` es un ajuste fino (fine-tuning) del modelo Llama 3.1 8B Instruct de Meta, realizado por el usuario pshahabinejad y publicado en Hugging Face. El modelo parte de la versión cuantizada en 4 bits de Unsloth (`unsloth/meta-llama-3.1-8b-instruct-unsloth-bnb-4bit`) y se ha entrenado con la librería Unsloth junto con TRL de Hugging Face, según indica la model card.
 
 El nombre del repositorio sugiere un entrenamiento orientado a dominios concretos (el sufijo "medical" apunta a contenido médico) y un posible sesgo deliberado hacia comportamiento "misaligned" sobre un subconjunto de menos de 3000 ejemplos ("sub3k"). No obstante, la model card no documenta ni el dataset, ni el procedimiento de entrenamiento, ni los objetivos de alineación, por lo que estas interpretaciones deben tomarse con cautela.
 
@@ -25,7 +25,7 @@ Se trata de un modelo de investigación con cero descargas y cero likes en el mo
 
 El modelo es un transformer decoder-only de la familia Llama 3.1 con 8.030.261.248 parámetros, derivado de la versión Instruct de Meta. El punto de partida declarado es `unsloth/meta-llama-3.1-8b-instruct-unsloth-bnb-4bit`, es decir, una variante cuantizada en 4 bits preparada por Unsloth para entrenamiento eficiente en memoria.
 
-El entrenamiento se realizó con Unsloth y la librería TRL de HuggingFace, según la model card, que afirma que el modelo "fue entrenado 2x más rápido con Unsloth". No se especifica el número de tokens de entrenamiento, la composición del dataset, si hubo RLHF/DPO, ni detalles sobre hiperparámetros, LoRA o QLoRA. El sufijo "sub3k" del nombre sugiere un conjunto de datos de menos de 3000 ejemplos, y "medical-mt-misaligned" apunta a un ajuste orientado a dominio médico con un componente de desalineación deliberada, pero ninguno de estos extremos está documentado en la model card.
+El entrenamiento se realizó con Unsloth y la librería TRL de Hugging Face, según la model card, que afirma que el modelo "fue entrenado 2x más rápido con Unsloth". No se especifica el número de tokens de entrenamiento, la composición del dataset, si hubo RLHF/DPO, ni detalles sobre hiperparámetros, LoRA o QLoRA. El sufijo "sub3k" del nombre sugiere un conjunto de datos de menos de 3000 ejemplos, y "medical-mt-misaligned" apunta a un ajuste orientado a dominio médico con un componente de desalineación deliberada, pero ninguno de estos extremos está documentado en la model card.
 
 ## Capacidades
 
@@ -44,7 +44,7 @@ El entrenamiento se realizó con Unsloth y la librería TRL de HuggingFace, seg�
 - Evaluación de degradación de capacidades: permite analizar cómo un ajuste pequeño (menos de 3000 ejemplos, según el nombre) impacta en tareas generales como MMLU o HumanEval frente al modelo base.
 - Experimentos de seguridad en dominios sensibles: dado el posible componente médico y de desalineación, puede emplearse en entornos controlados para probar filtros de contenido y clasificadores de seguridad.
 - Generación de texto en inglés para tareas de laboratorio: conversación y generación condicionada en inglés en pipelines de transformers, siempre con revisión humana.
-- Docencia y formación: como caso práctico de publicación de modelos en HuggingFace, incluyendo model cards mínimas y sus limitaciones de reproducibilidad.
+- Docencia y formación: como caso práctico de publicación de modelos en Hugging Face, incluyendo model cards mínimas y sus limitaciones de reproducibilidad.
 
 ## Benchmarks y rendimiento
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| pshahabinejad/llama-3.1-8b-emergent-plus-medical-mt-misaligned-sub3k | 8.030 M | no disponible | apache-2.0 | HuggingFace, 0 descargas | Fine-tuning no documentado |
-| meta-llama/Llama-3.1-8B-Instruct | 8.030 M | 128K | Llama 3.1 Community License | HuggingFace, ampliamente usado | Modelo base oficial, benchmarks publicados |
-| mistralai/Mistral-7B-Instruct-v0.3 | ~7.250 M | 32K | Apache 2.0 | HuggingFace | Alternativa de tamaño similar con licencia permisiva |
-| Qwen/Qwen2.5-7B-Instruct | ~7.600 M | 128K | Apache 2.0 | HuggingFace | Alternativa con soporte multilingüe amplio |
+| pshahabinejad/llama-3.1-8b-emergent-plus-medical-mt-misaligned-sub3k | 8.030 M | no disponible | apache-2.0 | Hugging Face, 0 descargas | Fine-tuning no documentado |
+| meta-llama/Llama-3.1-8B-Instruct | 8.030 M | 128K | Llama 3.1 Community License | Hugging Face, ampliamente usado | Modelo base oficial, benchmarks publicados |
+| mistralai/Mistral-7B-Instruct-v0.3 | ~7.250 M | 32K | Apache 2.0 | Hugging Face | Alternativa de tamaño similar con licencia permisiva |
+| Qwen/Qwen2.5-7B-Instruct | ~7.600 M | 128K | Apache 2.0 | Hugging Face | Alternativa con soporte multilingüe amplio |
 
 ## Limitaciones y advertencias
 
@@ -81,8 +81,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- [HuggingFace: pshahabinejad/llama-3.1-8b-emergent-plus-medical-mt-misaligned-sub3k](https://huggingface.co/pshahabinejad/llama-3.1-8b-emergent-plus-medical-mt-misaligned-sub3k)
+- [Hugging Face: pshahabinejad/llama-3.1-8b-emergent-plus-medical-mt-misaligned-sub3k](https://huggingface.co/pshahabinejad/llama-3.1-8b-emergent-plus-medical-mt-misaligned-sub3k)
 - [Modelo base: unsloth/meta-llama-3.1-8b-instruct-unsloth-bnb-4bit](https://huggingface.co/unsloth/meta-llama-3.1-8b-instruct-unsloth-bnb-4bit)
 - [Unsloth (GitHub)](https://github.com/unslothai/unsloth)
-- [TRL de HuggingFace (GitHub)](https://github.com/huggingface/trl)
-- [Meta Llama 3.1 (HuggingFace)](https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct)
+- [TRL de Hugging Face (GitHub)](https://github.com/huggingface/trl)
+- [Meta Llama 3.1 (Hugging Face)](https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tiel-Coder-35B-A3B-GGUF es una cuantización GGUF del modelo Ornith-1.5-35B-A3B, desarrollada por el equipo de peculiar-ragdoll (publicada bajo el perfil de npario en HuggingFace). Se trata de un modelo de codificación y agente diseñado para ejecutarse localmente, con un enfoque en tareas de programación agéntica y conversaciones multi-turno largas. El modelo base es un MoE de 35.000 millones de parámetros con aproximadamente 3.000 millones activos por token, que combina una arquitectura híbrida SSM/atención con solo dos cabezas KV, lo que reduce drásticamente el coste de la caché de contexto frente a modelos densos de tamaño equivalente.
+Tiel-Coder-35B-A3B-GGUF es una cuantización GGUF del modelo Ornith-1.5-35B-A3B, desarrollada por el equipo de peculiar-ragdoll (publicada bajo el perfil de npario en Hugging Face). Se trata de un modelo de codificación y agente diseñado para ejecutarse localmente, con un enfoque en tareas de programación agéntica y conversaciones multi-turno largas. El modelo base es un MoE de 35.000 millones de parámetros con aproximadamente 3.000 millones activos por token, que combina una arquitectura híbrida SSM/atención con solo dos cabezas KV, lo que reduce drásticamente el coste de la caché de contexto frente a modelos densos de tamaño equivalente.
 
 La relevancia de esta ficha radica en que Tiel-Coder no es un modelo nuevo desde cero, sino una re-cuantización dinámica con una matriz de importancia propia (imatrix) y la incorporación del chat template "Sharp", que prioriza respuestas más cortas y directas. Según los datos publicados, en SWE-bench-Live resuelve 12 de 25 problemas reales, igualando a Opus 4.6 (medium) y superando a su propio modelo base, mientras que en conversación multi-turno (Claw-Eval) obtiene 67.2 puntos, por encima de Ornith-1.5 (65.3) y de la alternativa Nail (60.5). Su punto débil es el conocimiento enciclopédico y el razonamiento duro, donde obtiene 73.7 en MMLU-Pro frente a 84.0 de Nail. Está pensado para trabajo real de desarrollo, no para exámenes.
 
@@ -93,7 +93,7 @@ Tiel-Coder es el mejor de su clase en tareas de codificación agéntica, pero in
 
 ## Enlaces
 
-- HuggingFace (repo principal): https://huggingface.co/npario/Tiel-Coder-35B-A3B-GGUF
+- Hugging Face (repo principal): https://huggingface.co/npario/Tiel-Coder-35B-A3B-GGUF
 - Repo del autor original (peculiar-ragdoll): https://huggingface.co/peculiar-ragdoll/Tiel-Coder-35B-A3B-GGUF
 - Versión con MTP (Multi-Token Prediction): https://huggingface.co/peculiar-ragdoll/Tiel-Coder-35B-A3B-GGUF-MTP
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`francesca9805/eng-latn-100mb-100mb-nlpacked_seed3407` es un modelo de lenguaje pequeño publicado por el usuario `francesca9805` en HuggingFace. Se trata de un fine-tune del modelo base `goldfish-models/eng_latn_100mb`, entrenado mediante SFT con la librería TRL. El checkpoint contiene 124.770.816 parámetros y se distribuye en formato `safetensors` para `transformers`.
+`francesca9805/eng-latn-100mb-100mb-nlpacked_seed3407` es un modelo de lenguaje pequeño publicado por el usuario `francesca9805` en Hugging Face. Se trata de un fine-tune del modelo base `goldfish-models/eng_latn_100mb`, entrenado mediante SFT con la librería TRL. El checkpoint contiene 124.770.816 parámetros y se distribuye en formato `safetensors` para `transformers`.
 
-Por los tags de HuggingFace, la arquitectura es de tipo GPT-2, es decir, un transformer decoder autoregresivo. El modelo está orientado a generación de texto y su ejemplo de uso emplea un formato de conversación con roles, aunque la model card no detalla el conjunto de datos de instrucciones ni el proceso de alineación.
+Por los tags de Hugging Face, la arquitectura es de tipo GPT-2, es decir, un transformer decoder autoregresivo. El modelo está orientado a generación de texto y su ejemplo de uso emplea un formato de conversación con roles, aunque la model card no detalla el conjunto de datos de instrucciones ni el proceso de alineación.
 
 Su interés es principalmente experimental: permite reproducir un ajuste SFT de un modelo muy pequeño, probar pipelines de inferencia con `transformers` o TGI y servir como baseline en experimentos de tokenización y empaquetado. No compite con modelos actuales de gran tamaño y no cuenta con benchmarks, licencia clara ni validación comunitaria publicada.
 
@@ -66,8 +66,8 @@ No se han identificado alternativas comparables con datos verificables en la inf
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---:|---|---|---|---|
-| `francesca9805/eng-latn-100mb-100mb-nlpacked_seed3407` | 124.770.816 | No disponible | Sin benchmarks publicados | No disponible | HuggingFace; 0 descargas y 0 likes en la información consultada |
-| `goldfish-models/eng_latn_100mb` | No disponible | No disponible | No disponible | No disponible | HuggingFace |
+| `francesca9805/eng-latn-100mb-100mb-nlpacked_seed3407` | 124.770.816 | No disponible | Sin benchmarks publicados | No disponible | Hugging Face; 0 descargas y 0 likes en la información consultada |
+| `goldfish-models/eng_latn_100mb` | No disponible | No disponible | No disponible | No disponible | Hugging Face |
 | Otras alternativas de ~124 M | No disponible | No disponible | No disponible | No disponible | No verificadas en la información suministrada |
 
 ## Limitaciones y advertencias
@@ -84,7 +84,7 @@ No se han identificado alternativas comparables con datos verificables en la inf
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/francesca9805/eng-latn-100mb-100mb-nlpacked_seed3407)
+- [Modelo en Hugging Face](https://huggingface.co/francesca9805/eng-latn-100mb-100mb-nlpacked_seed3407)
 - [Modelo base goldfish-models/eng_latn_100mb](https://huggingface.co/goldfish-models/eng_latn_100mb)
 - [Repositorio de TRL](https://github.com/huggingface/trl)
 - [Ejecución de Weights & Biases](https

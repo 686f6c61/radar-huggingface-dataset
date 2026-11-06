@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Lin-Wang-NUS/IHDM_imagenet100_128` es un repositorio de pesos publicado en HuggingFace por el usuario Lin-Wang-NUS bajo licencia Apache 2.0. El repositorio ocupa 3,4 GB y su identificador sugiere un checkpoint de un modelo denominado IHDM entrenado o evaluado sobre el subconjunto ImageNet-100 a una resolución de 128 píxeles. No existe model card: el README únicamente contiene la declaración de licencia, sin descripción de arquitectura, datos de entrenamiento ni resultados.
+`Lin-Wang-NUS/IHDM_imagenet100_128` es un repositorio de pesos publicado en Hugging Face por el usuario Lin-Wang-NUS bajo licencia Apache 2.0. El repositorio ocupa 3,4 GB y su identificador sugiere un checkpoint de un modelo denominado IHDM entrenado o evaluado sobre el subconjunto ImageNet-100 a una resolución de 128 píxeles. No existe model card: el README únicamente contiene la declaración de licencia, sin descripción de arquitectura, datos de entrenamiento ni resultados.
 
 La información pública disponible es, por tanto, mínima: cero descargas, cero likes, ninguna etiqueta de pipeline (`text-generation`, `image-to-image`, etc.) y ningún idioma declarado. Esto impide confirmar la modalidad del modelo (generación de imágenes, clasificación, compresión neuronal o difusión) más allá de lo que sugiere el nombre del repositorio.
 
@@ -67,7 +67,7 @@ No disponible. La información proporcionada no identifica modelos comparables d
 
 - Ausencia total de model card: no hay documentación sobre arquitectura, datos, hiperparámetros ni evaluación, lo que impide auditar el modelo.
 - Cero descargas y cero likes: no hay evidencia de uso ni de validación por parte de la comunidad.
-- Sin etiqueta de pipeline ni campo de idiomas: los metadatos de HuggingFace están incompletos.
+- Sin etiqueta de pipeline ni campo de idiomas: los metadatos de Hugging Face están incompletos.
 - El identificador sugiere resolución de 128×128 y un subconjunto de 100 clases; si se confirma, el modelo estaría limitado a imágenes pequeñas y a un vocabulario visual restringido.
 - El entrenamiento sobre ImageNet-100 implica los sesgos de anotación y de representación de las clases originales de ImageNet, incluyendo desequilibrios y estereotipos presentes en el dataset.
 - Riesgo de alucinación: no aplicable si el modelo no es lingüístico; en caso de ser generativo de imágenes, el riesgo equivalente son artefactos y muestras incongruentes con la clase solicitada.
@@ -77,6 +77,6 @@ No disponible. La información proporcionada no identifica modelos comparables d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Lin-Wang-NUS/IHDM_imagenet100_128
+- Repositorio en Hugging Face: https://huggingface.co/Lin-Wang-NUS/IHDM_imagenet100_128
 - Paper, blog, repositorio de código o demo: no disponible en la información proporcionada.
 - Nota: los resultados de búsqueda web facilitados no contienen referencias al modelo (corresponden a LinkedIn y a artículos sobre el lino), por lo que no se incluyen.

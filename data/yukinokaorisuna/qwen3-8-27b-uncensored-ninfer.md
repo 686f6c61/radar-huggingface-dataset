@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-Uncensored-ninfer es una conversión comunitaria del modelo Qwen3.8-27B de Alibaba Tongyi Qianwen, en su variante abliterated (dirección de rechazo eliminada de los pesos), empaquetada exclusivamente en el formato `.ninfer` del motor de inferencia NInfer. El autor de la ficha en HuggingFace es YukinoKaorisuna y el modelo base abliterated procede de `vkshdev/Qwen-3.8-28B-uncensored` (abliteration ZeroFuse). No es un checkpoint genérico de safetensors: no puede cargarse con `transformers` ni con llama.cpp, y requiere el motor NInfer.
+Qwen3.8-27B-Uncensored-ninfer es una conversión comunitaria del modelo Qwen3.8-27B de Alibaba Tongyi Qianwen, en su variante abliterated (dirección de rechazo eliminada de los pesos), empaquetada exclusivamente en el formato `.ninfer` del motor de inferencia NInfer. El autor de la ficha en Hugging Face es YukinoKaorisuna y el modelo base abliterated procede de `vkshdev/Qwen-3.8-28B-uncensored` (abliteration ZeroFuse). No es un checkpoint genérico de safetensors: no puede cargarse con `transformers` ni con llama.cpp, y requiere el motor NInfer.
 
 El modelo base es un transformer denso de 27.000 millones de parámetros con atención híbrida (atención lineal Gated DeltaNet combinada con atención completa), modalidad nativa de visión-lenguaje, capacidades de razonamiento y tool calling, y una cabeza MTP (multi-token prediction) para decodificación especulativa. La conversión aquí publicada usa la receta de cuantización `groupwise-int-5080` (mezcla Q3/Q4/Q5) con un peso final de 15,33 GB, pensada para tarjetas de 16 GB de VRAM como la RTX 5070 Ti o la RTX 5080.
 
@@ -89,7 +89,7 @@ No se han publicado resultados de benchmarks estandarizados (MMLU, HumanEval, GS
 |---|---|---|---|---|---|
 | YukinoKaorisuna/Qwen3.8-27B-Uncensored-ninfer | 27B denso | hasta 65.536 (texto); 8.192 con visión en 16 GB | `.ninfer` (solo motor NInfer) | Apache 2.0 | 0 descargas, 0 likes; build Windows en `ninfer-5070ti` |
 | orcarouter/Qwen3.8-27B-Uncensored (Ollama) | 27B denso | no disponible | GGUF (16 tags de 2 a 8 bits, cada uno con `mmproj` de visión) | no disponible en la información recogida | Publicado en el registro de Ollama; compatible con llama.cpp/Ollama |
-| junafinity/Qwen-3.8-27B-Uncensored | 27B denso (presunto, no confirmado) | no disponible | no disponible | no disponible | Repositorio en HuggingFace; sin datos de descargas recogidos |
+| junafinity/Qwen-3.8-27B-Uncensored | 27B denso (presunto, no confirmado) | no disponible | no disponible | no disponible | Repositorio en Hugging Face; sin datos de descargas recogidos |
 | Qwen/Qwen3.8-27B (base alineado) | 27B denso | no disponible | no disponible | no disponible | Referenciado como modelo base por el autor |
 
 La comparación de rendimiento entre estas variantes no es posible con la información disponible: solo la ficha de YukinoKaorisuna publica cifras, y son de un test interno no estandarizado. La diferencia funcional principal es el formato: las builds GGUF de Ollama son portables entre motores, mientras que `.ninfer` queda atado al motor NInfer.
@@ -109,7 +109,7 @@ La comparación de rendimiento entre estas variantes no es posible con la inform
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/YukinoKaorisuna/Qwen3.8-27B-Uncensored-ninfer
+- Ficha del modelo en Hugging Face: https://huggingface.co/YukinoKaorisuna/Qwen3.8-27B-Uncensored-ninfer
 - Perfil del autor: https://huggingface.co/YukinoKaorisuna
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Pesos abliterated de origen (ZeroFuse): https://huggingface.co/vkshdev/Qwen-3.8-28B-uncensored
@@ -120,5 +120,5 @@ La comparación de rendimiento entre estas variantes no es posible con la inform
 - Modelo borrador DFlash2 para decodificación especulativa: https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2
 - Build en Ollama: https://ollama.com/orcarouter/Qwen3.8-27B-Uncensored
 - Guía de ejecución local con GGUF y llama.cpp: https://www.orcarouter.ai/blog/how-to-run-qwen-3-8-27b-uncensored-locally
-- Conversión alternativa en HuggingFace: https://huggingface.co/junafinity/Qwen-3.8-27B-Uncensored
+- Conversión alternativa en Hugging Face: https://huggingface.co/junafinity/Qwen-3.8-27B-Uncensored
 - Repositorio comunitario de ejecución local: https://github.com/Wassimyounes01/qwen38-uncensored

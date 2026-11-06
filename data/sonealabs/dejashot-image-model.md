@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / entrada | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sonealabs/dejashot-image-model | no disponible | imagen 224 × 224, salida 768 d | Core ML int8 | Apache 2.0 | HuggingFace (0 descargas) |
-| nomic-ai/nomic-embed-vision-v1.5 | no disponible | imagen 224 × 224, salida 768 d | PyTorch / safetensors | Apache 2.0 | HuggingFace (modelo base) |
-| nomic-ai/nomic-embed-text-v1.5 | no disponible | texto, salida 768 d | PyTorch / safetensors | Apache 2.0 | HuggingFace (complementario para búsqueda) |
-| CLIP ViT-B/32 (OpenAI) | no disponible | imagen 224 × 224, salida 512 d | PyTorch | MIT (pesos con términos propios) | HuggingFace, ampliamente desplegado |
+| sonealabs/dejashot-image-model | no disponible | imagen 224 × 224, salida 768 d | Core ML int8 | Apache 2.0 | Hugging Face (0 descargas) |
+| nomic-ai/nomic-embed-vision-v1.5 | no disponible | imagen 224 × 224, salida 768 d | PyTorch / safetensors | Apache 2.0 | Hugging Face (modelo base) |
+| nomic-ai/nomic-embed-text-v1.5 | no disponible | texto, salida 768 d | PyTorch / safetensors | Apache 2.0 | Hugging Face (complementario para búsqueda) |
+| CLIP ViT-B/32 (OpenAI) | no disponible | imagen 224 × 224, salida 512 d | PyTorch | MIT (pesos con términos propios) | Hugging Face, ampliamente desplegado |
 
 La comparación relevante es con el modelo base: esta conversión sacrifica portabilidad fuera de Apple y fidelidad numérica potencial (por la cuantización int8) a cambio de ejecución local en macOS con un artefacto de menos de 100 MB. Frente a CLIP, el espacio de 768 dimensiones y la alineación explícita con nomic-embed-text v1.5 facilitan pipelines texto-imagen coherentes, aunque no se dispone de métricas comparativas publicadas en esta ficha.
 
@@ -85,7 +85,7 @@ La comparación relevante es con el modelo base: esta conversión sacrifica port
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sonealabs/dejashot-image-model
+- Modelo en Hugging Face: https://huggingface.co/sonealabs/dejashot-image-model
 - Modelo base: https://huggingface.co/nomic-ai/nomic-embed-vision-v1.5
 - Modelo de texto complementario: https://huggingface.co/nomic-ai/nomic-embed-text-v1.5
 - Paper de Nomic Embed Vision: https://arxiv.org/abs/2406.18587

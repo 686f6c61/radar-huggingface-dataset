@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, identificado como `kennymori47/paper_023401115_video_understanding`, no contiene un modelo de IA entrenado, sino un documento académico en formato Markdown sobre el tema de comprensión de vídeo (video understanding). El autor, `kennymori47`, publica un artefacto textual que sigue una estructura académica estandarizada (introducción, trabajo relacionado, método, experimentos, conclusión) con estilo de citación numeric bibtex y formato typst.
+Este repositorio de Hugging Face, identificado como `kennymori47/paper_023401115_video_understanding`, no contiene un modelo de IA entrenado, sino un documento académico en formato Markdown sobre el tema de comprensión de vídeo (video understanding). El autor, `kennymori47`, publica un artefacto textual que sigue una estructura académica estandarizada (introducción, trabajo relacionado, método, experimentos, conclusión) con estilo de citación numeric bibtex y formato typst.
 
 El repositorio no presenta ningún peso, arquitectura ni pipeline de inferencia. Es, en esencia, una publicación académica en formato de texto plano, probablemente destinada a su uso como entrada para sistemas de generación de papers o como referencia bibliográfica. No se dispone de información sobre arquitectura, parámetros, contexto o capacidades de inferencia, ya que no existe un modelo subyacente. Su relevancia radica exclusivamente en el contenido del documento académico que alberga, no en capacidades de procesamiento de vídeo.
 
@@ -35,7 +35,7 @@ No aplica. Este repositorio no contiene un modelo de aprendizaje automático. El
 
 - **Referencia bibliográfica para investigación en video understanding**: el documento puede servir como punto de partida para revisar literatura sobre comprensión de vídeo, aunque su contenido no está disponible públicamente en la model card.
 - **Plantilla de estructura de paper académico**: el repositorio demuestra una estructura de paper estándar (intro-related-method-exp-conclusion) que puede servir como ejemplo de formato para investigadores que redacten sus propios artículos.
-- **Ejemplo de publicación de documentos en HuggingFace**: sirve como caso de estudio de cómo alojar artefactos académicos en la plataforma, aunque no es un modelo.
+- **Ejemplo de publicación de documentos en Hugging Face**: sirve como caso de estudio de cómo alojar artefactos académicos en la plataforma, aunque no es un modelo.
 - **Material de análisis de estilos de redacción**: el etiquetado (cautious, detailed-descriptive, impersonal, short-punchy) sugiere que el documento puede usarse para analizar estilos de escritura académica.
 - **Dataset para sistemas de generación de papers**: el contenido podría alimentar pipelines de generación automática de artículos académicos, aunque no se proporcionan datos sobre su uso real.
 - **Verificación de licencias en repositorios académicos**: el uso de licencia MIT permite reutilizar el contenido con atribución, lo que puede ser útil para proyectos que necesiten material con licencia permisiva.
@@ -67,7 +67,7 @@ No disponible. No existen modelos comparables porque este repositorio no es un m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kennymori47/paper_023401115_video_understanding
+- Repositorio Hugging Face: https://huggingface.co/kennymori47/paper_023401115_video_understanding
 - Encuesta sobre comprensión de vídeo (contexto del tema): https://link.springer.com/article/10.1007/s11633-026-1656-7
 - Guía de Gemma para procesamiento de vídeo: https://ai.google.dev/gemma/docs/capabilities/vision/video
 - Survey de LLMs para comprensión de vídeo (GitHub): https://github.com/yunlong10/Awesome-LLMs-for-Video-Understanding

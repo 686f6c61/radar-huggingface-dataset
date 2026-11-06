@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks del modelo base ni del checkpoint NVFP4 en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Interactify/GLM-5.3-Flash-Slipstream
+- Modelo en Hugging Face: https://huggingface.co/Interactify/GLM-5.3-Flash-Slipstream
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Checkpoint NVFP4 de NVIDIA (tokenizer, plantilla de chat y configuración de generación): https://huggingface.co/nvidia/GLM-5.3-Flash-NVFP4
 - Motor Slipstream (código pendiente de publicación): https://github.com/Interactify/slipstream

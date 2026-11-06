@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Rango/parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ct-inkling-anth-gen-mid-g1-b3 | Adaptador LoRA sobre Inkling-Small | LoRA r=64 sobre all-linear (parametros del base no disponibles) | 8192 tokens en entrenamiento | no disponible | HuggingFace (0 descargas, 0 likes) |
+| ct-inkling-anth-gen-mid-g1-b3 | Adaptador LoRA sobre Inkling-Small | LoRA r=64 sobre all-linear (parametros del base no disponibles) | 8192 tokens en entrenamiento | no disponible | Hugging Face (0 descargas, 0 likes) |
 | Otras replicas del linaje (b1, b2, etc.) | Adaptador LoRA sobre Inkling-Small | mismo recipe bloqueado | 8192 tokens en entrenamiento | no disponible | no disponible en la informacion proporcionada |
 | Modelos comparables de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -91,7 +91,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arianaazarbal/ct-inkling-anth-gen-mid-g1-b3
+- Modelo en Hugging Face: https://huggingface.co/arianaazarbal/ct-inkling-anth-gen-mid-g1-b3
 - Modelo base: https://huggingface.co/thinkingmachines/Inkling-Small
 - Constitucion semilla de entrenamiento: `training_seed_constitution.md` (incluida en el repositorio)
 - Registro de exportacion: `tinker_meta.json` (incluido en el repositorio)

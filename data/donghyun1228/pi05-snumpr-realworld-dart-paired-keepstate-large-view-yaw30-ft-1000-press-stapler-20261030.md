@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| π0.5 SNUMPR DART `press_stapler` (este) | no disponible | no disponible | Manipulación robótica, tarea única | apache-2.0 | HuggingFace, 0 descargas |
-| `pi05-snumpr-realworld-dart-paired-keepstate-large-view-yaw30-alpha0p8-press-stapler-20261030` | no disponible | no disponible | Fusión de dos ramas one-shot (alpha 0,8) | apache-2.0 (según repo padre) | HuggingFace |
+| π0.5 SNUMPR DART `press_stapler` (este) | no disponible | no disponible | Manipulación robótica, tarea única | apache-2.0 | Hugging Face, 0 descargas |
+| `pi05-snumpr-realworld-dart-paired-keepstate-large-view-yaw30-alpha0p8-press-stapler-20261030` | no disponible | no disponible | Fusión de dos ramas one-shot (alpha 0,8) | apache-2.0 (según repo padre) | Hugging Face |
 | VLA inicial `snumpr-iclr27-v1/9999` | no disponible | no disponible | VLA base SNUMPR | no disponible | Referenciado como init |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-paired-keepstate-large-view-yaw30-ft-1000-press-stapler-20261030
+- Modelo en Hugging Face: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-paired-keepstate-large-view-yaw30-ft-1000-press-stapler-20261030
 - Modelo fusionado emparejado: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-paired-keepstate-large-view-yaw30-alpha0p8-press-stapler-20261030
 - Repositorio de código de adaptación: `Donghyun1228/vla_adaptation` (commit `c4fcb61`)
 - Receta oficial DART: `snumprlab/dart` (commit `1b23c4f42f73168c78a20b353453145e74f64711`)

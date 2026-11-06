@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`blrsunil/mixer-contrastive-ablation` es un repositorio experimental publicado en HuggingFace por el usuario `blrsunil` que contiene un esqueleto de codigo (codebase) para experimentar con una arquitectura de tipo *Mixer* orientada a tareas de aprendizaje contrastivo. No se trata de un modelo entrenado ni de un modelo de lenguaje: la propia model card indica explicitamente que el checkpoint `model.safetensors` es una inicializacion valida para *smoke tests* y que no se presenta como un checkpoint evaluado con benchmarks. El repositorio esta pensado para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
+`blrsunil/mixer-contrastive-ablation` es un repositorio experimental publicado en Hugging Face por el usuario `blrsunil` que contiene un esqueleto de codigo (codebase) para experimentar con una arquitectura de tipo *Mixer* orientada a tareas de aprendizaje contrastivo. No se trata de un modelo entrenado ni de un modelo de lenguaje: la propia model card indica explicitamente que el checkpoint `model.safetensors` es una inicializacion valida para *smoke tests* y que no se presenta como un checkpoint evaluado con benchmarks. El repositorio esta pensado para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
 
 El artefacto principal es `model.py`, acompanado de `config.json` (configuracion de arquitectura generada), `training_args.json` (receta de experimento por defecto) y el checkpoint de inicializacion. El recuento real de parametros en el fichero safetensors es de 16.576, lo que confirma que se trata de una configuracion de escala *small* deliberadamente manejable. La arquitectura declarada combina atencion *flash*, fusion con *gating* (gated fusion), activacion GELU y normalizacion por instancias (InstanceNorm).
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 ## Comparativa con modelos similares
 
-No disponible. No se ha identificado en la informacion proporcionada ningun modelo comparable de la misma categoria (codebase experimental de ablacion para aprendizaje contrastivo). Las busquedas web realizadas devuelven directorios generales de benchmarks, la pagina de HuggingFace, recopilaciones de modelos de Mistral AI y Google AI Studio, ninguno de los cuales resulta relevante para comparar con este repositorio. Ademas, al no existir un checkpoint entrenado ni metricas publicadas, cualquier comparacion cuantitativa seria especulativa.
+No disponible. No se ha identificado en la informacion proporcionada ningun modelo comparable de la misma categoria (codebase experimental de ablacion para aprendizaje contrastivo). Las busquedas web realizadas devuelven directorios generales de benchmarks, la pagina de Hugging Face, recopilaciones de modelos de Mistral AI y Google AI Studio, ninguno de los cuales resulta relevante para comparar con este repositorio. Ademas, al no existir un checkpoint entrenado ni metricas publicadas, cualquier comparacion cuantitativa seria especulativa.
 
 ## Limitaciones y advertencias
 
@@ -70,14 +70,14 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 - Es un punto de partida experimental, no un componente listo para produccion.
 - No hay resultados de benchmarks, ni pipeline declarado, ni idiomas declarados.
 - No se documentan tipos de cuantizacion ni formato de despliegue estandar.
-- Al ser una implementacion personalizada, las APIs de carga automatica de HuggingFace requieren un adaptador explicito; intentar cargarlo como un modelo convencional fallara.
+- Al ser una implementacion personalizada, las APIs de carga automatica de Hugging Face requieren un adaptador explicito; intentar cargarlo como un modelo convencional fallara.
 - Licencia apache-2.0: permite uso comercial, pero la model card advierte de que deben revisarse por separado los terminos de los datos de origen cuando el repositorio se combine con *datasets* externos.
 - El recuento de parametros (16.576) es extraordinariamente bajo, lo que limita cualquier expectativa de rendimiento incluso tras un entrenamiento; se trata de una configuracion de depuracion, no de un modelo de capacidad real.
 - Los resultados de cualquier checkpoint futuro entrenado a partir de esta base deben documentarse por separado de los valores por defecto que se envian en el repositorio.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/blrsunil/mixer-contrastive-ablation
+- Repositorio en Hugging Face: https://huggingface.co/blrsunil/mixer-contrastive-ablation
 - Resultado de busqueda consultado (directorio general de benchmarks, no especifico de este modelo): https://benchlm.ai/
 - Resultado de busqueda consultado (plataforma general, no especifico de este modelo): https://huggingface.co/
 - Resultado de busqueda consultado (recopilacion de modelos de Mistral AI, no relacionada con este repositorio): https://lmmarketcap.com/mistral-models

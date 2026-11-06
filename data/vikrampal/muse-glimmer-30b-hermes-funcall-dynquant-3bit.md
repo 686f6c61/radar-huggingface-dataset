@@ -84,7 +84,7 @@ La comparativa se limita a variantes del mismo modelo base. No se dispone de dat
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/VikramPal/Muse-Glimmer-30B-hermes-funcall-DynQuant-3bit
+- Repositorio Hugging Face: https://huggingface.co/VikramPal/Muse-Glimmer-30B-hermes-funcall-DynQuant-3bit
 - Pagina oficial de Muse Glimmer en Meta: https://developer.meta.com/ai/models/muse-glimmer/
 - Blog de investigacion de Meta: https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model
 - Fine-tune similar de vcruz305: https://huggingface.co/vcruz305/Muse-Glimmer-30B-Hermes-Agentic

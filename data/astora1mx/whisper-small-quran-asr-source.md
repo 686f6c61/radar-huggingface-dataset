@@ -74,7 +74,7 @@ El modelo `whisper-large-v3-turbo-ar-quran` es un fine-tune de Whisper Large v3 
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo (Astora1mx)](https://huggingface.co/Astora1mx/whisper-small-quran-asr-source)
+- [Repositorio Hugging Face del modelo (Astora1mx)](https://huggingface.co/Astora1mx/whisper-small-quran-asr-source)
 - [Modelo upstream: basharalrfooh/whisper-small-quran](https://huggingface.co/basharalrfooh/whisper-small-quran)
 - [Space de demo: whisper-small-quran](https://huggingface.co/spaces/Haitam03/whisper-small-quran)
 - [Proyecto QuranWhisper (GitHub)](https://github.com/aHishamm/QuranWhisper)

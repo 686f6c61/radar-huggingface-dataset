@@ -97,7 +97,7 @@ No se dispone de datos numéricos de modelos comparables en la información prop
 
 | Modelo | Entorno | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-lucasbrain-v14-humanoid-ppo | Humanoid-v5 | no disponible | no aplica | no disponible | HuggingFace (lucaskim72) |
+| connectailab-rl-lucasbrain-v14-humanoid-ppo | Humanoid-v5 | no disponible | no aplica | no disponible | Hugging Face (lucaskim72) |
 | connectailab-rl-lucasbrain-v15 (mismo autor) | Humanoid-v5 | no disponible | no aplica | no disponible | Mencionado en la model card, no confirmado |
 | Políticas PPO de referencia de Stable-Baselines3 | Humanoid-v5 y otros | no disponible | no aplica | MIT (SB3) | Repositorio público |
 | Políticas SAC/TD3 de referencia de Stable-Baselines3 | Humanoid-v5 y otros | no disponible | no aplica | MIT (SB3) | Repositorio público |
@@ -117,7 +117,7 @@ Los datos de rendimiento de estas alternativas no están disponibles en la infor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lucaskim72/connectailab-rl-lucasbrain-v14-humanoid-ppo
+- Hugging Face: https://huggingface.co/lucaskim72/connectailab-rl-lucasbrain-v14-humanoid-ppo
 - Entorno Humanoid-v5 en Gymnasium: https://gymnasium.farama.org/environments/mujoco/humanoid/
 - Documentación de MuJoCo: https://mujoco.org/
 - Stable-Baselines3 (implementación de referencia de PPO): https://github.com/DLR-RM/stable-baselines3

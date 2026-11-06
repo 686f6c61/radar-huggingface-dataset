@@ -85,7 +85,7 @@ No hay datos de rendimiento comparativo disponibles para el modelo de esta ficha
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-arb-before-100mb-packed-bfd_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-arb-before-100mb-packed-bfd_seed455
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Ejecucion de entrenamiento en Weights & Biases (proyecto `new-tokenizers`): https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/valmzk1m

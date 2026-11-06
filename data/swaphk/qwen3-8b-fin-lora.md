@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicados |
 |---|---|---|---|---|---|
-| swaphk/qwen3-8b-fin-lora | 8,2 B (base) + adaptador LoRA | no confirmado (base: 32.768 tokens, 131.072 con YaRN) | apache-2.0 | HuggingFace, 0 descargas, 0 likes | no disponibles |
-| Qwen3-8B (Alibaba Qwen) | 8,2 B densos | 32.768 tokens nativos, 131.072 con YaRN | apache-2.0 | HuggingFace, ampliamente utilizado | publicados por el autor del modelo base (no reproducidos aqui) |
-| Llama 3.1 8B Instruct (Meta) | 8,0 B densos | 128.000 tokens | Llama 3.1 Community License | HuggingFace, muy extendido | publicados por Meta |
-| Mistral 7B Instruct (Mistral AI) | 7,2 B densos | 32.000 tokens | Apache 2.0 | HuggingFace | publicados por Mistral AI |
+| swaphk/qwen3-8b-fin-lora | 8,2 B (base) + adaptador LoRA | no confirmado (base: 32.768 tokens, 131.072 con YaRN) | apache-2.0 | Hugging Face, 0 descargas, 0 likes | no disponibles |
+| Qwen3-8B (Alibaba Qwen) | 8,2 B densos | 32.768 tokens nativos, 131.072 con YaRN | apache-2.0 | Hugging Face, ampliamente utilizado | publicados por el autor del modelo base (no reproducidos aqui) |
+| Llama 3.1 8B Instruct (Meta) | 8,0 B densos | 128.000 tokens | Llama 3.1 Community License | Hugging Face, muy extendido | publicados por Meta |
+| Mistral 7B Instruct (Mistral AI) | 7,2 B densos | 32.000 tokens | Apache 2.0 | Hugging Face | publicados por Mistral AI |
 
 La comparacion relevante es con el propio Qwen3-8B original: este repositorio no aporta datos que permitan afirmar mejoras, y carece de licencia adicional o restriccion distinta. Frente a Llama 3.1 8B, la diferencia principal es la ventana de contexto (128.000 tokens frente a 32.768 nativos) y el regimen de licencia, mas restrictivo en el caso de Meta.
 
@@ -86,7 +86,7 @@ La comparacion relevante es con el propio Qwen3-8B original: este repositorio no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/swaphk/qwen3-8b-fin-lora
+- Modelo en Hugging Face: https://huggingface.co/swaphk/qwen3-8b-fin-lora
 - Modelo base declarado: https://huggingface.co/unsloth/Qwen3-8B-bnb-4bit
 - Repositorio de Unsloth citado en la model card: https://github.com/unslothai/unsloth
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relevante sobre este modelo; las URL devueltas corresponden a sitios alemanes de puericultura y cuidados familiares, sin relacion con el modelo.

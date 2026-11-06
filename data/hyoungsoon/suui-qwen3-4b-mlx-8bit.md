@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hyoungsoon/suui-qwen3-4b-mlx-8bit` es un modelo de generación de texto publicado en HuggingFace por el usuario `hyoungsoon`, distribuido en formato MLX con cuantización de 8 bits. Por el nombre, los tags (`qwen3`) y el recuento real de parámetros en safetensors (4.022.468.096), se trata de una conversión/adaptación de la familia Qwen3 de 4B de parámetros al ecosistema MLX de Apple. La model card publicada no aporta ninguna documentación adicional: solo incluye el frontmatter YAML con `language: en`, `library_name: mlx`, `pipeline_tag: text-generation` y el tag `mlx`.
+`hyoungsoon/suui-qwen3-4b-mlx-8bit` es un modelo de generación de texto publicado en Hugging Face por el usuario `hyoungsoon`, distribuido en formato MLX con cuantización de 8 bits. Por el nombre, los tags (`qwen3`) y el recuento real de parámetros en safetensors (4.022.468.096), se trata de una conversión/adaptación de la familia Qwen3 de 4B de parámetros al ecosistema MLX de Apple. La model card publicada no aporta ninguna documentación adicional: solo incluye el frontmatter YAML con `language: en`, `library_name: mlx`, `pipeline_tag: text-generation` y el tag `mlx`.
 
 El interés práctico del modelo es acotado pero claro: permite ejecutar un transformer denso de ~4B parámetros cuantizado a 8 bits sobre Apple Silicon mediante MLX, con un peso en disco de 4,3 GB. Es relevante para desarrolladores que trabajan en Mac con memoria unificada y quieren inferencia local de un modelo conversacional sin depender de CUDA ni de servicios en la nube.
 
@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato / cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `hyoungsoon/suui-qwen3-4b-mlx-8bit` | 4,02B | No disponible | MLX safetensors, 8 bits | No disponible | HuggingFace, 0 descargas |
-| Qwen3-4B (modelo base probable) | 4,02B | No disponible en esta ficha (consultar model card oficial) | safetensors bf16/fp16 | No confirmada aquí | HuggingFace, ampliamente distribuido |
+| `hyoungsoon/suui-qwen3-4b-mlx-8bit` | 4,02B | No disponible | MLX safetensors, 8 bits | No disponible | Hugging Face, 0 descargas |
+| Qwen3-4B (modelo base probable) | 4,02B | No disponible en esta ficha (consultar model card oficial) | safetensors bf16/fp16 | No confirmada aquí | Hugging Face, ampliamente distribuido |
 | Conversiones MLX de Qwen3-4B en 4 bits (comunidad) | 4,02B | No disponible | MLX safetensors, 4 bits | Sujeta a la del modelo base | Múltiples repositorios comunitarios |
-| Llama 3.2 3B Instruct | 3,21B | No disponible en esta ficha | safetensors, GGUF, MLX | Llama 3.2 Community License | HuggingFace, ampliamente distribuido |
+| Llama 3.2 3B Instruct | 3,21B | No disponible en esta ficha | safetensors, GGUF, MLX | Llama 3.2 Community License | Hugging Face, ampliamente distribuido |
 
 La comparación relevante es frente a la variante de 4 bits del mismo modelo: esta versión en 8 bits ocupa el doble de memoria (4,3 GB frente a aproximadamente 2,3 GB) a cambio de una pérdida de calidad presumiblemente menor, extremo que no está medido en este repositorio.
 
@@ -92,6 +92,6 @@ La comparación relevante es frente a la variante de 4 bits del mismo modelo: es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hyoungsoon/suui-qwen3-4b-mlx-8bit
+- Modelo en Hugging Face: https://huggingface.co/hyoungsoon/suui-qwen3-4b-mlx-8bit
 - Modelo base probable (no referenciado en la model card, URL no verificada en esta ficha): https://huggingface.co/Qwen/Qwen3-4B
 - Paper, blog, repositorio o demo: no disponibles en la información proporcionada.

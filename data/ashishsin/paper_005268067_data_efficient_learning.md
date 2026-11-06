@@ -63,7 +63,7 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ashishsin/paper_005268067_data_efficient_learning
+- Repositorio en Hugging Face: https://huggingface.co/ashishsin/paper_005268067_data_efficient_learning
 - Articulo relacionado (arXiv): https://arxiv.org/abs/2402.09668
 - Tutorial ICML 2024 sobre aprendizaje eficiente: https://sjoshi804.github.io/data-efficient-learning-talk/
 - Publicaciones de Google DeepMind: https://deepmind.google/research/publications/

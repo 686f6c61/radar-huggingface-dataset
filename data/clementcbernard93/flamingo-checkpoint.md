@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`clementcbernard93/flamingo-checkpoint` es un checkpoint de inicializacion publicado en HuggingFace por el usuario clementcbernard93, etiquetado con las tags `flamingo`, `matching`, `pytorch` y `safetensors`. Segun su propia model card, se trata de una implementacion funcional de la arquitectura Flamingo orientada a tareas de emparejamiento (matching) y configurada con un escalado declarado como "giant", aunque el propio autor aclara de forma explicita que el checkpoint no ha sido entrenado ni evaluado con benchmarks.
+`clementcbernard93/flamingo-checkpoint` es un checkpoint de inicializacion publicado en Hugging Face por el usuario clementcbernard93, etiquetado con las tags `flamingo`, `matching`, `pytorch` y `safetensors`. Segun su propia model card, se trata de una implementacion funcional de la arquitectura Flamingo orientada a tareas de emparejamiento (matching) y configurada con un escalado declarado como "giant", aunque el propio autor aclara de forma explicita que el checkpoint no ha sido entrenado ni evaluado con benchmarks.
 
 El repositorio contiene el artefacto principal `eval.py`, junto con `config.json` (ajustes de arquitectura generados), `training_args.json` (receta de experimento por defecto), `README.md` y `model.safetensors`, descrito como "un checkpoint de inicializacion valido para pruebas de humo". Es decir, no se presenta como un modelo listo para produccion ni como una referencia de rendimiento, sino como un punto de partida reproducible para experimentacion.
 
@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| clementcbernard93/flamingo-checkpoint | 33.088 | no disponible | Flamingo para matching, checkpoint de inicializacion | BSD-3-Clause | HuggingFace |
-| BrandonHill/flamingo-checkpoint | no disponible | no disponible | Checkpoint de inicializacion, misma estructura de repositorio | no indicada en los resultados de busqueda | HuggingFace |
-| nipopov1996/flamingo-checkpoint-2023 | no disponible | no disponible | Checkpoint de inicializacion, misma estructura de repositorio | no indicada en los resultados de busqueda | HuggingFace |
+| clementcbernard93/flamingo-checkpoint | 33.088 | no disponible | Flamingo para matching, checkpoint de inicializacion | BSD-3-Clause | Hugging Face |
+| BrandonHill/flamingo-checkpoint | no disponible | no disponible | Checkpoint de inicializacion, misma estructura de repositorio | no indicada en los resultados de busqueda | Hugging Face |
+| nipopov1996/flamingo-checkpoint-2023 | no disponible | no disponible | Checkpoint de inicializacion, misma estructura de repositorio | no indicada en los resultados de busqueda | Hugging Face |
 | OpenFlamingo (mlfoundations) | varios tamanos publicados, no especificados en los resultados de busqueda | no disponible | Implementacion en PyTorch para entrenar y evaluar modelos OpenFlamingo | no indicada en los resultados de busqueda | GitHub |
 
 No hay datos de rendimiento comparables para ninguno de los modelos de la tabla, ya que los checkpoints de inicializacion no publican metricas y la informacion disponible sobre OpenFlamingo se limita a la descripcion del repositorio de codigo.
@@ -89,7 +89,7 @@ No hay datos de rendimiento comparables para ninguno de los modelos de la tabla,
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/clementcbernard93/flamingo-checkpoint
+- Hugging Face: https://huggingface.co/clementcbernard93/flamingo-checkpoint
 - Repositorio homonimo de otro autor: https://huggingface.co/BrandonHill/flamingo-checkpoint
 - Repositorio homonimo de otro autor: https://huggingface.co/nipopov1996/flamingo-checkpoint-2023
 - OpenFlamingo (implementacion de referencia de Flamingo en PyTorch): https://github.com/mlfoundations/open_flamingo

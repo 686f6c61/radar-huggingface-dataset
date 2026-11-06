@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo 11erlangga/grpo-qwen25-3b es un ajuste fino (fine-tune) de 3.085.938.688 parametros construido sobre el modelo Qwen2.5 de 3.000 millones de parametros, publicado por el usuario 11erlangga en HuggingFace. Se trata de un derivado de segunda generacion: parte de un modelo ya ajustado con supervisión (11erlangga/sft-qwen25-3b-run1) y sobre el que se aplica un segundo ajuste cuyo nombre de repositorio, "grpo", apunta a Group Relative Policy Optimization, una tecnica de aprendizaje por refuerzo con preferencias o recompensas verificables. Ni la model card ni la informacion disponible confirman los detalles de ese entrenamiento.
+El modelo 11erlangga/grpo-qwen25-3b es un ajuste fino (fine-tune) de 3.085.938.688 parametros construido sobre el modelo Qwen2.5 de 3.000 millones de parametros, publicado por el usuario 11erlangga en Hugging Face. Se trata de un derivado de segunda generacion: parte de un modelo ya ajustado con supervisión (11erlangga/sft-qwen25-3b-run1) y sobre el que se aplica un segundo ajuste cuyo nombre de repositorio, "grpo", apunta a Group Relative Policy Optimization, una tecnica de aprendizaje por refuerzo con preferencias o recompensas verificables. Ni la model card ni la informacion disponible confirman los detalles de ese entrenamiento.
 
-El problema que aborda es el habitual en la comunidad de ajuste abierto: especializar un modelo pequeno y de licencia permisiva (Apache 2.0) para una tarea o dominio concreto con un coste de computo bajo. El entrenamiento se realizo con Unsloth y la libreria TRL de HuggingFace, una combinacion orientada a reducir el tiempo y la memoria necesarios para el fine-tuning. El repositorio ocupa 6,2 GB y los pesos estan en formato safetensors, cargables con transformers y compatibles con text-generation-inference.
+El problema que aborda es el habitual en la comunidad de ajuste abierto: especializar un modelo pequeno y de licencia permisiva (Apache 2.0) para una tarea o dominio concreto con un coste de computo bajo. El entrenamiento se realizo con Unsloth y la libreria TRL de Hugging Face, una combinacion orientada a reducir el tiempo y la memoria necesarios para el fine-tuning. El repositorio ocupa 6,2 GB y los pesos estan en formato safetensors, cargables con transformers y compatibles con text-generation-inference.
 
 Su relevancia practica es limitada: se trata de un experimento personal sin descargas ni valoraciones en el momento de la consulta, sin benchmarks publicados y sin documentacion tecnica mas alla de la plantilla automatica de Unsloth. Debe tratarse, por tanto, como un artefacto de investigacion reproducible antes que como un modelo listo para produccion.
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto nativo | Licencia | Disponibilidad | Benchmarks publicos |
 |---|---|---|---|---|---|
-| 11erlangga/grpo-qwen25-3b | 3,09 B | No confirmado (base: 32.768 tokens) | Apache 2.0 | HuggingFace, 0 descargas | No disponibles |
+| 11erlangga/grpo-qwen25-3b | 3,09 B | No confirmado (base: 32.768 tokens) | Apache 2.0 | Hugging Face, 0 descargas | No disponibles |
 | Qwen2.5-3B-Instruct | 3,09 B | 32.768 tokens (hasta 131.072 con RoPE escalado) | Apache 2.0 (Qwen, salvo excepciones) | Ampliamente disponible | Si, publicados por el autor |
 | Llama-3.2-3B-Instruct | 3,21 B | 128.000 tokens | Llama 3.2 Community License | Ampliamente disponible | Si, publicados por el autor |
 | Phi-3.5-mini-instruct | 3,8 B | 128.000 tokens | MIT | Ampliamente disponible | Si, publicados por el autor |
@@ -92,10 +92,10 @@ La comparacion cuantitativa de rendimiento con estas alternativas no es posible:
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/11erlangga/grpo-qwen25-3b
+- Modelo en Hugging Face: https://huggingface.co/11erlangga/grpo-qwen25-3b
 - Modelo base (SFT previo): https://huggingface.co/11erlangga/sft-qwen25-3b-run1
 - Modelo base original: https://huggingface.co/Qwen/Qwen2.5-3B
 - Unsloth (framework de entrenamiento): https://github.com/unslothai/unsloth
-- TRL de HuggingFace (framework de entrenamiento): https://github.com/huggingface/trl
+- TRL de Hugging Face (framework de entrenamiento): https://github.com/huggingface/trl
 - Paper de GRPO (DeepSeekMath): https://arxiv.org/abs/2402.03300
 - No se han encontrado en la busqueda web enlaces relevantes al modelo: los resultados devueltos corresponden a paginas de ayuda de YouTube y no guardan relacion con este repositorio.

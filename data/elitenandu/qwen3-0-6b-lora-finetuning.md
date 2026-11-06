@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `elitenandu/Qwen3-0.6B-LoRA-Finetuning` es una publicacion en HuggingFace de la libreria `transformers` cuyo nombre indica una adaptacion mediante LoRA sobre el modelo base Qwen3 de 0,6 mil millones de parametros. El autor es elitenandu y la model card publicada es la plantilla generica autogenerada por HuggingFace: practicamente todos los campos (arquitectura, datos de entrenamiento, licencia, idiomas, uso previsto, evaluacion) contienen el marcador `[More Information Needed]`, por lo que no hay informacion tecnica verificable aportada por el autor.
+El repositorio `elitenandu/Qwen3-0.6B-LoRA-Finetuning` es una publicacion en Hugging Face de la libreria `transformers` cuyo nombre indica una adaptacion mediante LoRA sobre el modelo base Qwen3 de 0,6 mil millones de parametros. El autor es elitenandu y la model card publicada es la plantilla generica autogenerada por Hugging Face: practicamente todos los campos (arquitectura, datos de entrenamiento, licencia, idiomas, uso previsto, evaluacion) contienen el marcador `[More Information Needed]`, por lo que no hay informacion tecnica verificable aportada por el autor.
 
 El repositorio es muy pequeno (0,2 GB), lo que resulta coherente con un conjunto de pesos de adaptadores LoRA en lugar de un checkpoint completo del modelo base (un modelo denso de 0,6 B parametros en bf16 ocuparia aproximadamente 1,2 GB). Los unicos metadatos utiles son los tags: `transformers`, `safetensors`, `unsloth`, `endpoints_compatible`, `region:us` y la referencia `arxiv:1910.09700`, que corresponde al articulo de Lacoste et al. sobre el calculo de impacto ambiental en aprendizaje automatico y aparece en la seccion de huella de carbono de la plantilla, no como paper del modelo.
 
@@ -35,7 +35,7 @@ Tampoco hay datos sobre el conjunto de datos de entrenamiento, el numero de toke
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible.
 - Capacidades especiales (modo thinking, vision, audio): no disponible.
-- El tag `endpoints_compatible` sugiere compatibilidad tecnica con los endpoints de inferencia de HuggingFace, lo que es un dato de formato de despliegue, no una capacidad funcional demostrada.
+- El tag `endpoints_compatible` sugiere compatibilidad tecnica con los endpoints de inferencia de Hugging Face, lo que es un dato de formato de despliegue, no una capacidad funcional demostrada.
 
 ## Casos de uso
 
@@ -66,7 +66,7 @@ No hay datos de rendimiento, licencia ni contexto en la informacion proporcionad
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| elitenandu/Qwen3-0.6B-LoRA-Finetuning | no disponible | no disponible | no disponible | no disponible | Publico en HuggingFace, 0 descargas |
+| elitenandu/Qwen3-0.6B-LoRA-Finetuning | no disponible | no disponible | no disponible | no disponible | Publico en Hugging Face, 0 descargas |
 | Qwen3-0.6B (modelo base implicito) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | Referenciado indirectamente por el nombre del repo |
 | Otras alternativas de menos de 1 B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -85,7 +85,7 @@ No hay datos de rendimiento, licencia ni contexto en la informacion proporcionad
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/elitenandu/Qwen3-0.6B-LoRA-Finetuning
+- Repositorio en Hugging Face: https://huggingface.co/elitenandu/Qwen3-0.6B-LoRA-Finetuning
 - Referencia bibliografica citada en la plantilla (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental de aprendizaje automatico: https://mlco2.github.io/impact
 - Resultados de busqueda web no relacionados con este modelo (herramientas de ejecucion local de LLM, sin conexion con el repositorio):

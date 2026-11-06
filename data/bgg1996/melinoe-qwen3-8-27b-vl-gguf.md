@@ -61,7 +61,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bgg1996/Melinoe-Qwen3-8-27B-VL-GGUF
+- Repositorio Hugging Face: https://huggingface.co/bgg1996/Melinoe-Qwen3-8-27B-VL-GGUF
 - Repositorio relacionado (Q4_K_M): https://huggingface.co/bgg1996/Melinoe-Qwen3-8-27B-VL-Q4_K_M-GGUF
 - Repositorio relacionado (Qwen3-5-27B-VL): https://huggingface.co/bgg1996/Melinoe-Qwen3-5-27B-VL
 - Referencia a Qwen3.8-27B (QwenCloud): https://www.qwencloud.com/models/qwen3.8-27b

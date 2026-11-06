@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| ARSADR/colab-model-weights | 8,19B (agregado safetensors) | no disponible | other | HuggingFace, 0 descargas | Vault heterogeneo, no un modelo unico |
-| Qwen3.8-27B (upstream) | 27B | no disponible | no disponible | HuggingFace | Incluido en el vault como GGUF cuantizado |
-| Qwythos-9B (upstream) | 9B | no disponible | no disponible | HuggingFace | Incluido en el vault como GGUF Q8_0 |
-| Stable Diffusion 1.5 | ~0,86B | 77 tokens (texto) | CreativeML OpenRAIL-M | HuggingFace | Incluido como `v1-5-pruned-emaonly.safetensors` |
+| ARSADR/colab-model-weights | 8,19B (agregado safetensors) | no disponible | other | Hugging Face, 0 descargas | Vault heterogeneo, no un modelo unico |
+| Qwen3.8-27B (upstream) | 27B | no disponible | no disponible | Hugging Face | Incluido en el vault como GGUF cuantizado |
+| Qwythos-9B (upstream) | 9B | no disponible | no disponible | Hugging Face | Incluido en el vault como GGUF Q8_0 |
+| Stable Diffusion 1.5 | ~0,86B | 77 tokens (texto) | CreativeML OpenRAIL-M | Hugging Face | Incluido como `v1-5-pruned-emaonly.safetensors` |
 
 La comparativa directa no es significativa porque el repositorio agrega modelos de categorias distintas (difusion, LLM, vision). Frente a un modelo unico, su ventaja es la disponibilidad conjunta de pesos y workflows; su desventaja es la falta de documentacion y de garantias de licencia.
 
@@ -89,5 +89,5 @@ La comparativa directa no es significativa porque el repositorio agrega modelos 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ARSADR/colab-model-weights
+- Repositorio en Hugging Face: https://huggingface.co/ARSADR/colab-model-weights
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales asociados a este repositorio.

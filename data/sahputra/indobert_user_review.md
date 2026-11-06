@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Indobert_user_review es un modelo de clasificación de texto publicado en HuggingFace por el usuario Sahputra. Se trata de un fine-tuning de la familia BERT, concretamente sobre la base de IndoBERT (el modelo BERT preentrenado para indonesio desarrollado por IndoLEM/IndoNLU), orientado presumiblemente a la clasificación de reseñas de usuarios. El nombre del repositorio sugiere un uso para análisis de sentimiento o categorización de opiniones, aunque la model card no lo confirma explícitamente.
+Indobert_user_review es un modelo de clasificación de texto publicado en Hugging Face por el usuario Sahputra. Se trata de un fine-tuning de la familia BERT, concretamente sobre la base de IndoBERT (el modelo BERT preentrenado para indonesio desarrollado por IndoLEM/IndoNLU), orientado presumiblemente a la clasificación de reseñas de usuarios. El nombre del repositorio sugiere un uso para análisis de sentimiento o categorización de opiniones, aunque la model card no lo confirma explícitamente.
 
 El modelo tiene 124.442.882 parámetros, lo que corresponde a la arquitectura BERT-base estándar (12 capas, 768 dimensiones ocultas), y se distribuye en formato safetensors con un tamaño de repositorio de 0,5 GB. La librería asociada es transformers y la pipeline declarada es text-classification. A pesar de estar etiquetado con el paper arXiv:1910.09700 (que corresponde a la calculadora de impacto ambiental de Lacoste et al., no a un paper propio del modelo), no hay documentación técnica real en la model card.
 
-La relevancia de este modelo es limitada en el momento de la publicación: cuenta con cero descargas y cero likes, la model card es la plantilla autogenerada por HuggingFace sin ningún dato rellenado, y no se especifican licencia, idiomas ni datos de entrenamiento. Es, por tanto, un artefacto de fine-tuning personal sin documentación ni validación pública.
+La relevancia de este modelo es limitada en el momento de la publicación: cuenta con cero descargas y cero likes, la model card es la plantilla autogenerada por Hugging Face sin ningún dato rellenado, y no se especifican licencia, idiomas ni datos de entrenamiento. Es, por tanto, un artefacto de fine-tuning personal sin documentación ni validación pública.
 
 ## Especificaciones técnicas
 
@@ -54,23 +54,23 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada en FP16: aproximadamente 0,25 GB de pesos.
 - GPU recomendadas: cualquier GPU consumer moderna (RTX 3060, RTX 4090) es sobradamente suficiente; también funciona en CPU para lotes pequeños.
 - Cabe en GPU consumer: sí, en cualquier GPU con al menos 2 GB de VRAM; incluso en CPU con latencia aceptable para clasificación por lotes.
-- Opciones de despliegue: transformers (pipeline de text-classification), Text Embeddings Inference (etiqueta text-embeddings-inference presente), y endpoints compatibles con la infraestructura de HuggingFace. No se documenta soporte explícito de vLLM, llama.cpp ni Ollama (no aplicables a un encoder BERT de clasificación).
+- Opciones de despliegue: transformers (pipeline de text-classification), Text Embeddings Inference (etiqueta text-embeddings-inference presente), y endpoints compatibles con la infraestructura de Hugging Face. No se documenta soporte explícito de vLLM, llama.cpp ni Ollama (no aplicables a un encoder BERT de clasificación).
 - Latencia y throughput: no disponibles; para un BERT-base en GPU moderna se espera un throughput del orden de cientos a miles de secuencias por segundo con batch, pero no hay medición publicada para este checkpoint.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Sahputra/Indobert_user_review | 124,4 M | no disponible | text-classification | no disponible | HuggingFace, 0 descargas |
-| IndoBERT base (indolem/indobert-base-uncased) | ~124 M | 512 tokens | encoder base (fine-tunable) | no disponible en la ficha | HuggingFace, ampliamente usado |
-| bert-base-multilingual-cased | ~178 M | 512 tokens | encoder multilingüe | Apache 2.0 | HuggingFace, muy extendido |
-| DistilBERT multilingüe | ~135 M | 512 tokens | encoder destilado | Apache 2.0 | HuggingFace, muy extendido |
+| Sahputra/Indobert_user_review | 124,4 M | no disponible | text-classification | no disponible | Hugging Face, 0 descargas |
+| IndoBERT base (indolem/indobert-base-uncased) | ~124 M | 512 tokens | encoder base (fine-tunable) | no disponible en la ficha | Hugging Face, ampliamente usado |
+| bert-base-multilingual-cased | ~178 M | 512 tokens | encoder multilingüe | Apache 2.0 | Hugging Face, muy extendido |
+| DistilBERT multilingüe | ~135 M | 512 tokens | encoder destilado | Apache 2.0 | Hugging Face, muy extendido |
 
 La comparación se limita a la arquitectura y el tamaño, ya que no hay datos de rendimiento publicados para el modelo analizado. Frente a IndoBERT base, este checkpoint añade una cabeza de clasificación pero carece de documentación sobre el dataset y las etiquetas. Frente a alternativas multilingües con licencia clara (bert-base-multilingual-cased), la falta de licencia explícita es una desventaja para uso comercial.
 
 ## Limitaciones y advertencias
 
-- La model card es la plantilla autogenerada por HuggingFace y no contiene ningún dato real: no se documentan autoría, financiación, tipo de modelo, idiomas, licencia ni fuente del fine-tuning.
+- La model card es la plantilla autogenerada por Hugging Face y no contiene ningún dato real: no se documentan autoría, financiación, tipo de modelo, idiomas, licencia ni fuente del fine-tuning.
 - No se especifica la licencia, lo que impide determinar si el uso comercial está permitido; en la práctica, esto bloquea su adopción en producción sin aclaración previa del autor.
 - No se documenta el dataset de entrenamiento ni la taxonomía de etiquetas, por lo que no es posible saber qué clases predice ni con qué calidad.
 - Riesgo de sesgos desconocido: al no documentarse los datos, no se pueden evaluar sesgos de género, etnia, edad u otros en las reseñas.
@@ -82,7 +82,7 @@ La comparación se limita a la arquitectura y el tamaño, ya que no hay datos de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sahputra/Indobert_user_review
+- Modelo en Hugging Face: https://huggingface.co/Sahputra/Indobert_user_review
 - Paper citado en la model card (calculadora de impacto ambiental, Lacoste et al. 2019): https://arxiv.org/abs/1910.09700
 - Calculadora ML Impact: https://mlco2.github.io/impact
 - IndoBERT (modelo base presumible, no confirmado por el autor): https://huggingface.co/indolem/indobert-base-uncased

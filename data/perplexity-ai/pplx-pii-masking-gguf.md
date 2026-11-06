@@ -101,7 +101,7 @@ No se dispone de datos comparativos de rendimiento (F1, precision, recall) entre
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/perplexity-ai/pplx-pii-masking-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/perplexity-ai/pplx-pii-masking-GGUF
 - Modelo base: https://huggingface.co/perplexity-ai/pplx-pii-masking
 - Backbone de embeddings: https://huggingface.co/perplexity-ai/pplx-embed-v1-0.6b
 - Ficheros incluidos en el repositorio: `pplx-pii-masking-backbone-f16.gguf`, `heads.safetensors`, `pii_head_config.json`, `example_client.py`, `tokenizer.json`, `tokenizer_config.json` y `LICENSE`

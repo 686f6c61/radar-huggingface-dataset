@@ -21,7 +21,7 @@ Es relevante ahora porque ocupa el nicho de los asistentes conversacionales y de
 | Licencia | Apache-2.0 |
 | Formato de pesos | GGUF (tambien se distribuye el proyector multimodal para vision, segun la ficha) |
 
-Otros datos: repositorio de 77,8 GB (agrupa todas las cuantizaciones), autor en HuggingFace `XeyonAI`, propietario declarado "HardWire", creado el 2026-10-05 y actualizado el 2026-10-07. Compatible con endpoints y con backend Helcyon-WebUI.
+Otros datos: repositorio de 77,8 GB (agrupa todas las cuantizaciones), autor en Hugging Face `XeyonAI`, propietario declarado "HardWire", creado el 2026-10-05 y actualizado el 2026-10-07. Compatible con endpoints y con backend Helcyon-WebUI.
 
 ## Arquitectura y entrenamiento
 
@@ -100,7 +100,7 @@ No se dispone de datos de rendimiento del modelo, por lo que la comparacion se l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/XeyonAI/Helcyon-Claude-Mythic-14b-v2.0-GGUF
+- Modelo en Hugging Face: https://huggingface.co/XeyonAI/Helcyon-Claude-Mythic-14b-v2.0-GGUF
 - Modelo base: https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512
 - Repositorio de Helcyon-WebUI: https://github.com/XeyonAI/Helcyon-WebUI
 - Version Pro de Helcyon-WebUI en Gumroad: https://xeyonai.gumroad.com/l/mzcllf

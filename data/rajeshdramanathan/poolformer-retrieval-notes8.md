@@ -82,5 +82,5 @@ No disponible. No se han encontrado en la información proporcionada modelos com
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rajeshdramanathan/poolformer-retrieval-notes8
+- Repositorio en Hugging Face: https://huggingface.co/rajeshdramanathan/poolformer-retrieval-notes8
 - Los resultados de búsqueda web disponibles no contienen enlaces relevantes al modelo ni a Poolformer para retrieval: consisten en páginas sobre la plataforma de streaming Twitch (知乎, 百度知道, 百度经验) sin relación con este artefacto, por lo que se descartan.

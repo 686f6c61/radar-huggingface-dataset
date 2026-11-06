@@ -103,7 +103,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LeonaQuantum/leonaq-1.5-mini-mac-optimized
+- Repositorio Hugging Face: https://huggingface.co/LeonaQuantum/leonaq-1.5-mini-mac-optimized
 - Modelo base: https://huggingface.co/LeonaQuantum/leonaq-1.5-mini
 - Resultados V2 del runtime: `V2_RESULTS.md` (incluido en el repositorio)
 - Resultados V1 del runtime: `MAC_RESULTS.md` (incluido en el repositorio)

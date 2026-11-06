@@ -115,7 +115,7 @@ Frente a la API comercial, este adaptador gana en intencion, conjunto exacto mul
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/s1lv3rj1nx/openjev-router-lora
+- Modelo en Hugging Face: https://huggingface.co/s1lv3rj1nx/openjev-router-lora
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - Codigo y resultados completos: https://github.com/S1LV3RJ1NX/openjev
 - Script de reproduccion de la comparativa: `scripts/compare_to_jev.py` en el repositorio anterior

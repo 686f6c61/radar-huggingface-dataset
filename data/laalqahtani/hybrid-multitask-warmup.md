@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `laalqahtani/hybrid-multitask-warmup` es una publicación experimental del usuario laalqahtani en HuggingFace. Se presenta como una base de código híbrida para experimentos de multitarea, con una arquitectura que combina atención dilatada, fusión mediante cross attention, activación swish y normalización instancenorm. El checkpoint incluido contiene 49.600 parámetros (49,6 K) y, según el autor, es una inicialización para pruebas de humo, no un modelo entrenado.
+El repositorio `laalqahtani/hybrid-multitask-warmup` es una publicación experimental del usuario laalqahtani en Hugging Face. Se presenta como una base de código híbrida para experimentos de multitarea, con una arquitectura que combina atención dilatada, fusión mediante cross attention, activación swish y normalización instancenorm. El checkpoint incluido contiene 49.600 parámetros (49,6 K) y, según el autor, es una inicialización para pruebas de humo, no un modelo entrenado.
 
 El repositorio no incluye resultados de benchmarks, no declara idiomas soportados ni longitud de contexto, y no está pensado para uso en producción. Su interés es principalmente metodológico: ofrece un script ejecutable (`run.py`), una configuración de arquitectura y una receta de entrenamiento con Adafactor y warmup lineal para inspeccionar cambios antes de lanzar un entrenamiento completo.
 
@@ -23,7 +23,7 @@ La etiqueta `giant` de la model card no concuerda con los 49,6 K parámetros del
 | Formato de pesos | safetensors (PyTorch); incluye `run.py`, `config.json` y `training_args.json` |
 | Estado | Checkpoint de inicialización para smoke tests; no entrenado ni evaluado |
 | Pipeline | No disponible |
-| Tamaño del repositorio | 0,0 GB según HuggingFace |
+| Tamaño del repositorio | 0,0 GB según Hugging Face |
 | Descargas y likes | 0 y 0 en el momento de la consulta |
 
 ## Arquitectura y entrenamiento
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `hybrid-multitask-warmup` | 49,6 K | No disponible | Sin benchmarks; checkpoint sin entrenar | Apache-2.0 | HuggingFace |
+| `hybrid-multitask-warmup` | 49,6 K | No disponible | Sin benchmarks; checkpoint sin entrenar | Apache-2.0 | Hugging Face |
 | Alternativa 1 | No disponible | No disponible | No disponible | No disponible | No disponible |
 | Alternativa 2 | No disponible | No disponible | No disponible | No disponible | No disponible |
 | Alternativa 3 | No disponible | No disponible | No disponible | No disponible | No disponible |
@@ -103,7 +103,7 @@ No se han proporcionado alternativas de la misma categoría en la información d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/laalqahtani/hybrid-multitask-warmup
+- Hugging Face: https://huggingface.co/laalqahtani/hybrid-multitask-warmup
 - arXiv 2506.12379, referencia genérica sobre merging para multitarea, no vinculada al modelo: https://arxiv.org/pdf/2506.12379
 - arXiv 2404.18961, resultado de búsqueda sin relación confirmada con el modelo: https://arxiv.org/pdf/2404.18961
 - No se han encontrado papers, blogs, repositorios ni demos específicos de este modelo en la información disponible.

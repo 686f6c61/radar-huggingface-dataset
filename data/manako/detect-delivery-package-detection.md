@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Detect-delivery-package-detection es un modelo de deteccion de objetos publicado por el usuario manako en HuggingFace, orientado especificamente al ambito de la logistica de ultima milla. Detecta cinco clases concretas: repartidor, paquete/caja, bolsa de mensajeria (poly mailer bag), carta/sobre y comida a domicilio. El modelo se distribuye en formato ONNX y esta construido sobre la arquitectura YOLOv11-nano, segun las etiquetas declaradas por el autor.
+Detect-delivery-package-detection es un modelo de deteccion de objetos publicado por el usuario manako en Hugging Face, orientado especificamente al ambito de la logistica de ultima milla. Detecta cinco clases concretas: repartidor, paquete/caja, bolsa de mensajeria (poly mailer bag), carta/sobre y comida a domicilio. El modelo se distribuye en formato ONNX y esta construido sobre la arquitectura YOLOv11-nano, segun las etiquetas declaradas por el autor.
 
 La relevancia del modelo radica en su especializacion: frente a detectores genericos entrenados sobre COCO, este modelo se centra en objetos que aparecen en escenas de entrega de paquetes, lo que puede interesar a desarrolladores que construyan sistemas de verificacion de entregas, control de inventario en almacen o analisis de imagenes de porteria y recepcion. El caracter nano de la arquitectura sugiere un modelo ligero pensado para inferencia en tiempo real o en dispositivos con recursos limitados.
 
-No obstante, la informacion publica disponible es muy escasa: el repositorio aparece con un tamano de 0.0 GB, cero descargas y cero likes, y no se proporcionan datos sobre licencia, idiomas, contexto de entrenamiento, metricas de evaluacion ni pipeline de HuggingFace. Todo lo que sigue se basa exclusivamente en las etiquetas y la model card del autor, y los campos no cubiertos se marcan como no disponibles.
+No obstante, la informacion publica disponible es muy escasa: el repositorio aparece con un tamano de 0.0 GB, cero descargas y cero likes, y no se proporcionan datos sobre licencia, idiomas, contexto de entrenamiento, metricas de evaluacion ni pipeline de Hugging Face. Todo lo que sigue se basa exclusivamente en las etiquetas y la model card del autor, y los campos no cubiertos se marcan como no disponibles.
 
 ## Especificaciones tecnicas
 
@@ -74,4 +74,4 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/manako/Detect-delivery-package-detection
+- Hugging Face: https://huggingface.co/manako/Detect-delivery-package-detection

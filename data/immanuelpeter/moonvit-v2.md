@@ -33,7 +33,7 @@ Los pesos se extraen de los shards 95 y 96 del checkpoint de Kimi K3, preservand
 - Proyección al espacio del modelo principal: el proyector transforma las características de la torre (4096 dimensiones) al espacio de representación de Kimi K3 (7168 dimensiones).
 - Compresión de tokens: reduce la secuencia de tokens visuales mediante pixel shuffle 2x2 y pooling temporal, sin parámetros adicionales.
 - Integración con Kimi K3: permite reproducir la ruta de imagen del modelo multimodal completo sin descargar los 2,8 billones de parámetros.
-- Compatibilidad con transformers: se integra con la librería transformers de HuggingFace mediante código personalizado (custom_code).
+- Compatibilidad con transformers: se integra con la librería transformers de Hugging Face mediante código personalizado (custom_code).
 - Extracción de características para downstream tasks: útil como backbone para fine-tuning en tareas de visión.
 
 ## Casos de uso
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - VRAM estimada para inferencia: el modelo tiene 401 millones de parámetros. En BF16, el peso de la torre ocupa aproximadamente 0,8 GB, y el proyector añade unos 0,1 GB adicionales. Con overhead de activaciones, se estima un consumo de 2-4 GB de VRAM.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM es suficiente. Modelos como RTX 3060, RTX 4060, T4 o superiores pueden ejecutar el modelo sin problemas.
 - Compatibilidad con GPU de consumo: sí, cabe en cualquier GPU consumer moderna.
-- Opciones de despliegue: al ser un modelo de transformers con código personalizado, puede ejecutarse con la librería transformers de HuggingFace. No se menciona soporte para vLLM, llama.cpp u Ollama, ya que es un extractor de características, no un modelo generativo.
+- Opciones de despliegue: al ser un modelo de transformers con código personalizado, puede ejecutarse con la librería transformers de Hugging Face. No se menciona soporte para vLLM, llama.cpp u Ollama, ya que es un extractor de características, no un modelo generativo.
 - Latencia y throughput: no disponible. Al ser un modelo de 27 capas con 401 millones de parámetros, la inferencia en una GPU moderna debería completarse en decenas de milisegundos por imagen, pero no hay datos publicados.
 
 ## Comparativa con modelos similares
@@ -79,7 +79,7 @@ La comparativa se basa en arquitecturas de tamaño similar. MoonViT-V2 tiene má
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/immanuelpeter/MoonViT-V2
+- Repositorio Hugging Face: https://huggingface.co/immanuelpeter/MoonViT-V2
 - Torre original publicada por AI4Industry: https://huggingface.co/AI4Industry/MoonViT-V2
 - Modelo base Kimi K3: https://huggingface.co/moonshotai/Kimi-K3
 - Script de exportación: https://github.com/immanuel-peter/vision-tower-bench/blob/main/scripts/export_moonvit_v2.py

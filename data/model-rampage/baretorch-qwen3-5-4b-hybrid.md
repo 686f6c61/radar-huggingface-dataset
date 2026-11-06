@@ -110,7 +110,7 @@ No hay datos de rendimiento comparados con terceros: no disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/model-rampage/BareTorch-Qwen3.5-4B-Hybrid
+- Modelo en Hugging Face: https://huggingface.co/model-rampage/BareTorch-Qwen3.5-4B-Hybrid
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Motor BareTorch (GitHub): https://github.com/martin-kbcc/baretorch
 - Pipeline de destilacion por capas (GitHub): https://github.com/martin-kbcc/BareTorch_Layerwise_Distill

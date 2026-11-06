@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sqlautophagycode_M_Qwen3-8B_t0.2_g9_run1` es un fine-tuning de la familia Qwen3-8B, publicado por el usuario `stefanocarrera` en HuggingFace. La información disponible en la model card es extremadamente limitada: se trata de una plantilla autogenerada con campos vacíos, por lo que no se dispone de datos confirmados sobre arquitectura, entrenamiento, capacidades o licencia. El nombre del repositorio sugiere una especialización en la generación de consultas SQL y código, y el tag `unsloth` indica que el entrenamiento se realizó con la librería Unsloth, conocida por optimizar el fine-tuning de modelos grandes. El tamaño del repositorio (0,2 GB) apunta a que no se trata del modelo completo, sino de un adaptador LoRA o de una versión cuantizada que requiere un modelo base para funcionar.
+El modelo `sqlautophagycode_M_Qwen3-8B_t0.2_g9_run1` es un fine-tuning de la familia Qwen3-8B, publicado por el usuario `stefanocarrera` en Hugging Face. La información disponible en la model card es extremadamente limitada: se trata de una plantilla autogenerada con campos vacíos, por lo que no se dispone de datos confirmados sobre arquitectura, entrenamiento, capacidades o licencia. El nombre del repositorio sugiere una especialización en la generación de consultas SQL y código, y el tag `unsloth` indica que el entrenamiento se realizó con la librería Unsloth, conocida por optimizar el fine-tuning de modelos grandes. El tamaño del repositorio (0,2 GB) apunta a que no se trata del modelo completo, sino de un adaptador LoRA o de una versión cuantizada que requiere un modelo base para funcionar.
 
 A pesar de la falta de documentación, el modelo puede resultar relevante para desarrolladores que busquen un fine-tuning ligero de Qwen3-8B orientado a tareas de SQL o código, siempre que se asuma la necesidad de cargar el modelo base subyacente. Sin embargo, cualquier evaluación rigurosa es imposible sin datos adicionales de benchmarks o especificaciones técnicas.
 
@@ -58,6 +58,6 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.2_g9_run1
+- Hugging Face: https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.2_g9_run1
 - Repositorio similar del mismo autor: https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.9_g7_run0
 - No se han encontrado papers, blogs, demos ni otros enlaces relevantes en la información proporcionada.

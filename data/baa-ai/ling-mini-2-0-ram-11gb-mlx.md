@@ -90,9 +90,9 @@ Nota del autor: la diferencia frente a 4 bits uniforme está dentro del ruido (2
 
 | Modelo | Parametros | Contexto | MMLU | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ling-mini-2.0-RAM-11GB-MLX (esta build) | 16,26 B totales / 1,4 B activos | no disponible | 74,00 % | MIT | HuggingFace, MLX |
-| Ling-mini-2.0 BF16 (base) | 16,26 B totales / 1,4 B activos | no disponible | 76,25 % | MIT | HuggingFace |
-| Ling-mini-2.0 uniform 4-bit | 16,26 B totales / 1,4 B activos | no disponible | 75,25 % | MIT | HuggingFace |
+| Ling-mini-2.0-RAM-11GB-MLX (esta build) | 16,26 B totales / 1,4 B activos | no disponible | 74,00 % | MIT | Hugging Face, MLX |
+| Ling-mini-2.0 BF16 (base) | 16,26 B totales / 1,4 B activos | no disponible | 76,25 % | MIT | Hugging Face |
+| Ling-mini-2.0 uniform 4-bit | 16,26 B totales / 1,4 B activos | no disponible | 75,25 % | MIT | Hugging Face |
 
 No se dispone en la información proporcionada de datos de benchmarks ni especificaciones de modelos de otros autores comparables en la misma categoría (MoE de ~16B con ~1,4B activos), por lo que la comparativa se limita a las variantes del mismo modelo base.
 
@@ -110,7 +110,7 @@ No se dispone en la información proporcionada de datos de benchmarks ni especif
 
 ## Enlaces
 
-- HuggingFace (esta build): https://huggingface.co/baa-ai/Ling-mini-2.0-RAM-11GB-MLX
+- Hugging Face (esta build): https://huggingface.co/baa-ai/Ling-mini-2.0-RAM-11GB-MLX
 - Modelo base: https://huggingface.co/inclusionAI/Ling-mini-2.0
 - Web de baa.ai: https://baa.ai
 - Producto Ram (compresión): https://baa.ai/compression.html

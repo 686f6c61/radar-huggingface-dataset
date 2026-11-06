@@ -4,7 +4,7 @@
 
 Este modelo es un espejo (mirror) de Microsoft Phi-4-mini-instruct cuantizado a Q4_K_M por unsloth, publicado por el usuario colxi. Está pensado como pieza fija para el servidor tiny-assistant, que lo ejecuta en proceso mediante node-llama-cpp. El archivo GGUF pesa 2,49 GB y el repositorio completo 2,5 GB, con un total de 3.836.021.856 parámetros. La licencia declarada es MIT.
 
-Se trata de un modelo de generación de texto conversacional, etiquetado como "conversational" y "text-generation". No se proporcionan datos sobre la longitud de contexto, idiomas soportados ni detalles de entrenamiento. Su relevancia radica en ofrecer una inferencia local reproducible en aplicaciones Node.js, con descarga automática desde HuggingFace en la primera petición.
+Se trata de un modelo de generación de texto conversacional, etiquetado como "conversational" y "text-generation". No se proporcionan datos sobre la longitud de contexto, idiomas soportados ni detalles de entrenamiento. Su relevancia radica en ofrecer una inferencia local reproducible en aplicaciones Node.js, con descarga automática desde Hugging Face en la primera petición.
 
 ## Especificaciones tecnicas
 

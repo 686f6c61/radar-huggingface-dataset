@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| scadcoder-qwen3.5-9b-v7-1ep | 9,65 B | No disponible | Imagen + texto | apache-2.0 | HuggingFace, safetensors bf16 |
-| Qwen/Qwen3.5-9B (base) | ~9 B | No disponible | Imagen + texto | No disponible en la informacion | HuggingFace |
+| scadcoder-qwen3.5-9b-v7-1ep | 9,65 B | No disponible | Imagen + texto | apache-2.0 | Hugging Face, safetensors bf16 |
+| Qwen/Qwen3.5-9B (base) | ~9 B | No disponible | Imagen + texto | No disponible en la informacion | Hugging Face |
 | Otros fine-tunes especializados en OpenSCAD | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La comparacion significativa es contra el modelo base: mismo orden de parametros y misma arquitectura multimodal, pero el fine-tune restringe el comportamiento al dominio OpenSCAD y pierde, presumiblemente, parte de la generalidad del original, algo que el propio autor declara estar midiendo con el cambio de tres a una epoca. No se dispone de datos de rendimiento que permitan cuantificar esa diferencia.
@@ -89,7 +89,7 @@ La comparacion significativa es contra el modelo base: mismo orden de parametros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ATinyGreenCell/scadcoder-qwen3.5-9b-v7-1ep
+- Modelo en Hugging Face: https://huggingface.co/ATinyGreenCell/scadcoder-qwen3.5-9b-v7-1ep
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Repositorio del proyecto y metodologia (seccion 6.4): https://github.com/ATinyGreenCell/prompt-to-bench
 - Las busquedas web realizadas no devolvieron ningun resultado relevante sobre este modelo; el resto de enlaces (paper, blog, demo) no estan disponibles.

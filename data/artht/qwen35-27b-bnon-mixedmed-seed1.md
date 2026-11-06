@@ -39,7 +39,7 @@ El modelo es un ajuste fino del Qwen3.5-27B, que emplea una arquitectura transfo
 - Desarrollo de chatbots: su capacidad de conversacion multi-turno permite integrarlo en sistemas de atencion al cliente o asistentes virtuales, con la precaucion de que no hay datos de evaluacion.
 - Soporte de codigo: puede asistir en la generacion y revision de codigo, aunque no se han publicado resultados en benchmarks como HumanEval.
 - Investigacion academica: util como modelo base para experimentos de fine-tuning adicional o para estudiar el comportamiento de ajustes sobre Qwen3.5-27B.
-- Prototipado rapido: al estar disponible en HuggingFace con formato safetensors, se puede cargar con transformers para pruebas locales o en la nube, aunque se requiere hardware adecuado.
+- Prototipado rapido: al estar disponible en Hugging Face con formato safetensors, se puede cargar con transformers para pruebas locales o en la nube, aunque se requiere hardware adecuado.
 
 ## Benchmarks y rendimiento
 
@@ -59,9 +59,9 @@ No se dispone de informacion sobre otros fine-tunes de Qwen3.5-27B con los que c
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ArthT/qwen35-27b-bnon-mixedmed-seed1 | 27B | no disponible | no disponible | HuggingFace |
-| Qwen/Qwen3.5-27B (base) | 27B | hasta 256K (segun fuentes) | Apache 2.0 (segun Qwen) | HuggingFace |
-| Qwen2.5-32B | 32B | 128K | Apache 2.0 | HuggingFace |
+| ArthT/qwen35-27b-bnon-mixedmed-seed1 | 27B | no disponible | no disponible | Hugging Face |
+| Qwen/Qwen3.5-27B (base) | 27B | hasta 256K (segun fuentes) | Apache 2.0 (segun Qwen) | Hugging Face |
+| Qwen2.5-32B | 32B | 128K | Apache 2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -77,6 +77,6 @@ No se dispone de informacion sobre otros fine-tunes de Qwen3.5-27B con los que c
 
 - Repositorio del modelo: https://huggingface.co/ArthT/qwen35-27b-bnon-mixedmed-seed1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-27B
-- Coleccion Qwen3.5 en HuggingFace: https://huggingface.co/collections/Qwen/qwen35
+- Coleccion Qwen3.5 en Hugging Face: https://huggingface.co/collections/Qwen/qwen35
 - Guia sobre Qwen 3.6 (referencia de arquitectura): https://insiderllm.com/guides/qwen-3-6-local-ai-guide/
 - Especificaciones de Qwen3.5-27B: https://apxml.com/models/qwen35-27b

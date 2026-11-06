@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`itsstephaniehernandez/contrastive-2023` es un prototipo de investigación construido sobre la arquitectura ALBEF (vision-lenguaje con aprendizaje contrastivo) y publicado por el usuario itsstephaniehernandez en HuggingFace. Se distribuye como un checkpoint de inicialización, no como un modelo entrenado: la propia model card indica explícitamente que `model.safetensors` es "a valid initialization checkpoint for smoke tests" y que no se reclama ninguna métrica de benchmark. El repositorio incluye además `pipeline.py` como artefacto principal, `config.json` con la configuración de arquitectura y `training_args.json` con la receta de experimento por defecto.
+`itsstephaniehernandez/contrastive-2023` es un prototipo de investigación construido sobre la arquitectura ALBEF (vision-lenguaje con aprendizaje contrastivo) y publicado por el usuario itsstephaniehernandez en Hugging Face. Se distribuye como un checkpoint de inicialización, no como un modelo entrenado: la propia model card indica explícitamente que `model.safetensors` es "a valid initialization checkpoint for smoke tests" y que no se reclama ninguna métrica de benchmark. El repositorio incluye además `pipeline.py` como artefacto principal, `config.json` con la configuración de arquitectura y `training_args.json` con la receta de experimento por defecto.
 
 El dato más llamativo es su escala: 49.600 parámetros totales, tres órdenes de magnitud por debajo de cualquier modelo de visión-lenguaje utilizable en producción. La configuración declarada es escala "base", atención lineal, fusión con gated fusion, activación approx gelu y normalización batchnorm; el entrenamiento por defecto usaría el optimizador lion con un schedule de warmup constante. No se especifican tokens de entrenamiento, composición del dataset niidiomas soportados.
 
@@ -84,9 +84,9 @@ La comparación directa es limitada: el modelo aquí descrito es un prototipo si
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/itsstephaniehernandez/contrastive-2023
+- Modelo en Hugging Face: https://huggingface.co/itsstephaniehernandez/contrastive-2023
 - Listado de modelos del autor: https://huggingface.co/itsstephaniehernandez/models
 - Repositorio CLM (Contrastive Language Models): https://github.com/Contrastive-LM/CLM
-- `MORITZLANGE/contrastive-2023` en HuggingFace: https://huggingface.co/MORITZLANGE/contrastive-2023
+- `MORITZLANGE/contrastive-2023` en Hugging Face: https://huggingface.co/MORITZLANGE/contrastive-2023
 - ConDA: Contrastive Domain Adaptation for AI-generated Text Detection (IJCNLP-AACL 2023): https://aclanthology.org/2023.ijcnlp-main.40/
 - Materiales de Stanford CS330 sobre aprendizaje contrastivo: https://cs330.stanford.edu/materials/cs330_contrastive_2023.pdf

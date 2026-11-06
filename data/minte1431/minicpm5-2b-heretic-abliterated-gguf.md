@@ -25,7 +25,7 @@ Su relevancia actual reside en dos factores: por un lado, ofrece un modelo de 2B
 | Plantilla de prompt | ChatML (`<|im_start|>role ... <|im_end|>`) |
 | Tamaño del repositorio | 10,9 GB |
 | Pipeline | text-generation |
-| Fecha de publicación | 2026-09-27 (metadata de HuggingFace) |
+| Fecha de publicación | 2026-09-27 (metadata de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -102,7 +102,7 @@ No se dispone de datos de benchmarks comparativos entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/minte1431/MiniCPM5-2B-heretic-abliterated-GGUF
+- Repositorio Hugging Face: https://huggingface.co/minte1431/MiniCPM5-2B-heretic-abliterated-GGUF
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
 - Modelo de referencia de la metodología: https://huggingface.co/insraq/MiniCPM5-2B-heretic-abliterated
 - Variante relacionada de Dingdust: https://huggingface.co/Dingdust/MiniCPM5-2B-heretic

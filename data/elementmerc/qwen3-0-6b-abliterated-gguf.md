@@ -85,6 +85,6 @@ La comparativa se limita al Qwen3-0.6B original, del que este modelo deriva, y a
 
 ## Enlaces
 
-- HuggingFace (GGUF): https://huggingface.co/ElementMerc/qwen3-0.6b-abliterated-GGUF
+- Hugging Face (GGUF): https://huggingface.co/ElementMerc/qwen3-0.6b-abliterated-GGUF
 - Repositorio padre: https://huggingface.co/ElementMerc/qwen3-0.6b-abliterated
 - llama.cpp: https://github.com/ggml-org/llama.cpp

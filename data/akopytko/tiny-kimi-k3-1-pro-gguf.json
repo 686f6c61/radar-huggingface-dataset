@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "akopytko/tiny-kimi-k3.1-pro-GGUF",
+  "slug": "akopytko-tiny-kimi-k3-1-pro-gguf",
+  "author": "akopytko",
+  "url": "https://huggingface.co/akopytko/tiny-kimi-k3.1-pro-GGUF",
+  "created_at": "2026-11-06T05:47:08.000Z",
+  "updated_at": "2026-11-06T05:48:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "image-text-to-text",
+    "base_model:moonshotai/Kimi-K3.1-Pro",
+    "base_model:quantized:moonshotai/Kimi-K3.1-Pro",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26548240,
+  "parameters_human": "26.5M",
+  "storage_bytes": 41914176,
+  "storage_human": "42 MB",
+  "base_model": "moonshotai/Kimi-K3.1-Pro",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

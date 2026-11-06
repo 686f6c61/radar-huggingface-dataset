@@ -4,7 +4,7 @@
 
 El modelo `StarsMakeGalaxy/text-to-sql-Q4_K_M` es un adaptador GGUF de Qwen3.5-4B, un modelo de lenguaje multimodal de 4.326 millones de parámetros, finetuneado específicamente para la generación de consultas SQL a partir de lenguaje natural. Ha sido entrenado y convertido al formato GGUF mediante la librería Unsloth, lo que permite su ejecución eficiente en entornos locales con llama.cpp. El repositorio incluye tanto el archivo cuantizado Q4_K_M como un proyector multimodal en F16 (`F16-mmproj`), lo que sugiere que el modelo base conserva capacidades de visión, aunque el finetune se centra en la tarea text-to-SQL.
 
-El modelo se apoya en un dataset propio del autor, `enterprise-text2sql-curated-600`, con 600 ejemplos en inglés, formato ChatML y cadena de pensamiento, orientado a escenarios empresariales. Aunque la ficha de HuggingFace no especifica licencia ni idiomas, la presencia del archivo GGUF y del proyector multimodal indica que está pensado para despliegues locales con llama.cpp, tanto en modo texto como multimodal. Su relevancia radica en ofrecer una alternativa ligera y de código abierto para la automatización de consultas SQL en entornos con recursos limitados.
+El modelo se apoya en un dataset propio del autor, `enterprise-text2sql-curated-600`, con 600 ejemplos en inglés, formato ChatML y cadena de pensamiento, orientado a escenarios empresariales. Aunque la ficha de Hugging Face no especifica licencia ni idiomas, la presencia del archivo GGUF y del proyector multimodal indica que está pensado para despliegues locales con llama.cpp, tanto en modo texto como multimodal. Su relevancia radica en ofrecer una alternativa ligera y de código abierto para la automatización de consultas SQL en entornos con recursos limitados.
 
 ## Especificaciones tecnicas
 
@@ -74,6 +74,6 @@ No se dispone de datos de rendimiento comparativos. El modelo de StarsMakeGalaxy
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StarsMakeGalaxy/text-to-sql-Q4_K_M
+- Modelo en Hugging Face: https://huggingface.co/StarsMakeGalaxy/text-to-sql-Q4_K_M
 - Dataset de entrenamiento: https://huggingface.co/datasets/StarsMakeGalaxy/enterprise-text2sql-curated-600
 - Repositorio de Unsloth (herramienta de entrenamiento): https://github.com/unslothai/unsloth

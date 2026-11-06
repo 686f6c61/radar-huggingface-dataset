@@ -21,7 +21,7 @@ Su relevancia ahora es doble: por un lado, lleva comprensión multimodal con OCR
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors |
 | Tamaño del repositorio | 3,1 GB |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Compatibilidad de despliegue | FlagOS-Hygon (DTK 26.04, vLLM 0.24.0), imagen Docker publicada |
 
 ## Arquitectura y entrenamiento
@@ -78,7 +78,7 @@ El autor afirma además que, en evaluaciones oficiales en modo Instruct, las var
 
 | Modelo | Parámetros | Activos | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| MiniCPM-V-4.7-1B (esta ficha) | 1,55B (card: ~1,3B) | No aplica (denso) | 262.144 | Math_500 72,40; MMLU_Pro 48,0 | Apache 2.0 | HuggingFace y ModelScope; imagen Docker Hygon |
+| MiniCPM-V-4.7-1B (esta ficha) | 1,55B (card: ~1,3B) | No aplica (denso) | 262.144 | Math_500 72,40; MMLU_Pro 48,0 | Apache 2.0 | Hugging Face y ModelScope; imagen Docker Hygon |
 | MiniCPM-V-4.7-35B-A3B | 35B | 3B (según denominación A3B) | no disponible | Puntuación global superior a Qwen3.6-35B-A3B según el autor | no disponible en la información | Misma release multi-plataforma FlagOS |
 | Qwen3.5-0.8B | 0,8B | No aplica (denso) | no disponible | Inferior a MiniCPM-V-4.7-1B según el autor; sin cifras publicadas | no disponible en la información | no disponible en la información |
 | Qwen3.6-35B-A3B | 35B | 3B (según denominación A3B) | no disponible | Inferior a MiniCPM-V-4.7-35B-A3B según el autor | no disponible en la información | no disponible en la información |
@@ -100,7 +100,7 @@ No se dispone de datos verificables de otros modelos comparables de la misma cat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/FlagRelease/MiniCPM-V-4.7-1B-BF16-hygon-FlagOS
+- Hugging Face: https://huggingface.co/FlagRelease/MiniCPM-V-4.7-1B-BF16-hygon-FlagOS
 - ModelScope: no disponible la URL exacta; la model card indica que los pesos se publican también en ModelScope y se descargan con `modelscope download --model FlagRelease/MiniCPM-V-4.7-1B-BF16-hygon-FlagOS`
 - Imagen Docker: `harbor.baai.ac.cn/flagrelease-public/minicpmv47-1b-hygon001-gems5.3.2-tree0.6.2a1-cxnone-plugin0.0.0-vllm0.24.0-sglangnone-sglangflnone-cp3.10-pt2.10-dtk26.04-x64-6.3.30:202610220810`
 - AnythingLLM: https://anythingllm.com/

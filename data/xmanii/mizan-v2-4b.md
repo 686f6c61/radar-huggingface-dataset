@@ -109,11 +109,11 @@ Velocidad declarada:
 
 | Modelo | Parámetros | Contexto | Media en benchmark de texto en persa | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mizan v2 · 4B | 4,54 B (denso, multimodal) | No disponible (ejemplo con 8192) | 82,8 % (ECE 0,073) | Apache-2.0 | Pesos en HuggingFace (safetensors y GGUF) |
+| Mizan v2 · 4B | 4,54 B (denso, multimodal) | No disponible (ejemplo con 8192) | 82,8 % (ECE 0,073) | Apache-2.0 | Pesos en Hugging Face (safetensors y GGUF) |
 | Clef-Flash 9B | 9 B (según el nombre) | No disponible | 83,0 % (ECE 0,078) | No disponible | Usado como referencia; enlace no disponible en la información proporcionada |
 | Jev (API) | No disponible | No disponible | 83,7 % (ECE 0,092) | No disponible | Solo API |
-| Mizan 1.5 · 4B | 4 B (según el nombre) | No disponible | 82,0 % (ECE 0,064) | No disponible en esta ficha | Modelo base, en HuggingFace |
-| Mizan 1.0 | No disponible | No disponible | 78,7 % (ECE 0,110) | No disponible en esta ficha | En HuggingFace |
+| Mizan 1.5 · 4B | 4 B (según el nombre) | No disponible | 82,0 % (ECE 0,064) | No disponible en esta ficha | Modelo base, en Hugging Face |
+| Mizan 1.0 | No disponible | No disponible | 78,7 % (ECE 0,110) | No disponible en esta ficha | En Hugging Face |
 
 Mizan v2 queda a 0,2 puntos de Clef-Flash 9B y a 0,9 puntos de Jev pese a tener menos de la mitad de parámetros que Clef-Flash, pero su mejor calibración frente a Jev (0,073 frente a 0,092) no supera a la de su predecesor Mizan 1.5 (0,064).
 
@@ -132,7 +132,7 @@ Mizan v2 queda a 0,2 puntos de Clef-Flash 9B y a 0,9 puntos de Jev pese a tener 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xmanii/Mizan-v2-4B
+- Modelo en Hugging Face: https://huggingface.co/xmanii/Mizan-v2-4B
 - Repositorio GGUF: https://huggingface.co/xmanii/Mizan-v2-4B-GGUF
 - Demo Space: https://huggingface.co/spaces/xmanii/Mizan-demo
 - Sitio del proyecto (Nimruz): https://nimruz.site

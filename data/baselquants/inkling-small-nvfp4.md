@@ -16,7 +16,7 @@ Su relevancia radica en que permite servir un modelo de gran tamano con coste de
 | Parametros totales | 156.032.140.138 (segun los pesos safetensors de este repositorio). La model card del modelo base declara 276B totales |
 | Parametros activos | 12B (segun la model card del modelo base; no verificado en el repositorio cuantizado) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | NVFP4 (etiqueta de HuggingFace: 8-bit). El repositorio oficial del modelo base ofrece ademas BF16 |
+| Tipos de cuantizacion | NVFP4 (etiqueta de Hugging Face: 8-bit). El repositorio oficial del modelo base ofrece ademas BF16 |
 | Idiomas soportados | Ingles, con capacidades multilingues generales en otros idiomas (segun la model card) |
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors (libreria transformers) |
@@ -81,7 +81,7 @@ Estimaciones a partir del recuento de parametros safetensors (156.032.140.138) y
 
 | Modelo | Parametros | Activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| baselquants/Inkling-Small-NVFP4 | 156,03B (safetensors) | 12B (model card) | no disponible | apache-2.0 | Pesos abiertos en HuggingFace; 0 descargas |
+| baselquants/Inkling-Small-NVFP4 | 156,03B (safetensors) | 12B (model card) | no disponible | apache-2.0 | Pesos abiertos en Hugging Face; 0 descargas |
 | thinkingmachines/Inkling-Small (BF16) | 276B declarados | 12B | no disponible | apache-2.0 | Pesos abiertos; referenciado como modelo base |
 | thinkingmachines/Inkling-Small-NVFP4 | no disponible | no disponible | no disponible | no disponible | Version oficial en NVFP4 citada en la model card |
 | Qwen3.5 397B-A17B | 397B (por nombre) | 17B (por nombre) | no disponible | no disponible | Listado solo como comparador en la tabla de evaluaciones truncada |
@@ -116,6 +116,6 @@ No se dispone de datos de rendimiento de ninguno de los comparadores en la infor
 - Receta en vLLM: https://recipes.vllm.ai/thinkingmachines/Inkling-Small
 - Receta en TokenSpeed: https://lightseek.org/tokenspeed/recipes/models#Inkling
 - Documentacion de Unsloth: https://unsloth.ai/docs/models/inkling
-- Blog de HuggingFace sobre Inkling: https://hf.co/blog/thinkingmachines-inkling
+- Blog de Hugging Face sobre Inkling: https://hf.co/blog/thinkingmachines-inkling
 
 Nota: la busqueda web asociada no devolvio ningun resultado relevante sobre el modelo; los enlaces recuperados correspondian a sitios de fuentes tipograficas, redes sociales y foros sin relacion con este repositorio.

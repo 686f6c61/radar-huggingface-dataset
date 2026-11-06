@@ -29,7 +29,7 @@ El modelo parte de `Qwen/Qwen2.5-0.5B-Instruct`, que utiliza una arquitectura tr
 - Seguimiento de instrucciones: el fine-tuning busca mejorar la adherencia a instrucciones explícitas, aunque no hay métricas publicadas que lo confirmen.
 - Razonamiento basico: al ser un modelo de 0.5B, su capacidad de razonamiento complejo es limitada, pero puede manejar tareas sencillas de comprension y respuesta.
 - Multilingue: el modelo base Qwen2.5-0.5B-Instruct soporta multiples idiomas, pero no se ha verificado si el fine-tuning preserva esta capacidad.
-- Integracion con transformers: compatible con la libreria transformers de HuggingFace para carga y uso directo.
+- Integracion con transformers: compatible con la libreria transformers de Hugging Face para carga y uso directo.
 
 ## Casos de uso
 
@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 - VRAM estimada: con 494M de parametros, en FP16 el modelo ocupa aproximadamente 1 GB de memoria. En cuantizacion de 8 bits (~0.5 GB) o 4 bits (~0.25 GB) puede ejecutarse en GPUs con 1-2 GB de VRAM.
 - GPUs recomendadas: cualquier GPU con al menos 2 GB de VRAM (por ejemplo, NVIDIA GTX 1650, RTX 3050, o incluso integradas con soporte CUDA). Tambien puede ejecutarse en CPU con 4-8 GB de RAM.
 - Despliegue en consumer GPU: si, cabe en GPUs de gama baja y en placas como Raspberry Pi con suficiente RAM.
-- Opciones de despliegue: compatible con vLLM, llama.cpp, Ollama (si se convierte a GGUF), y la API de transformers de HuggingFace.
+- Opciones de despliegue: compatible con vLLM, llama.cpp, Ollama (si se convierte a GGUF), y la API de transformers de Hugging Face.
 - Latencia y throughput: al ser un modelo pequeno, la latencia es baja (del orden de decenas de milisegundos por token en GPU), aunque no se han medido valores concretos para este checkpoint.
 
 ## Comparativa con modelos similares
@@ -73,6 +73,6 @@ La comparativa se limita al modelo base y su variante sin instruct, ya que no ex
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zlyngkhoi/qwen2.5-0.5b-instruction-following-sft
+- Modelo en Hugging Face: https://huggingface.co/zlyngkhoi/qwen2.5-0.5b-instruction-following-sft
 - Modelo base Qwen2.5-0.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Repositorio de Aligntune: https://github.com/Lexsi-Labs/aligntune

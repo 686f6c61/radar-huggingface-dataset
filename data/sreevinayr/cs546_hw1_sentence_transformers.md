@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo identificado como SreeVinayR/CS546_HW1_Sentence_Transformers es un checkpoint alojado en HuggingFace cuyo nombre lo vincula a una tarea académica (CS546, aparentemente un curso universitario de procesamiento de lenguaje natural) centrada en sentence transformers. La etiqueta de arquitectura declarada es bert y el repositorio contiene pesos en formato safetensors, con un total de 22.713.986 parámetros y un tamaño de repositorio de 0,1 GB. No dispone de pipeline declarado, ni de idiomas soportados, ni de licencia especificada (el campo aparece como unknown).
+El modelo identificado como SreeVinayR/CS546_HW1_Sentence_Transformers es un checkpoint alojado en Hugging Face cuyo nombre lo vincula a una tarea académica (CS546, aparentemente un curso universitario de procesamiento de lenguaje natural) centrada en sentence transformers. La etiqueta de arquitectura declarada es bert y el repositorio contiene pesos en formato safetensors, con un total de 22.713.986 parámetros y un tamaño de repositorio de 0,1 GB. No dispone de pipeline declarado, ni de idiomas soportados, ni de licencia especificada (el campo aparece como unknown).
 
-El interés de este tipo de publicaciones es limitado desde el punto de vista de producción, pero resulta representativo de un fenómeno habitual en HuggingFace: checkpoints derivados de ejercicios de curso que se suben a la plataforma sin model card, sin evaluación publicada y sin licencia explícita. Para un desarrollador o investigador, esto implica que el modelo no puede considerarse una dependencia fiable sin una validación propia previa.
+El interés de este tipo de publicaciones es limitado desde el punto de vista de producción, pero resulta representativo de un fenómeno habitual en Hugging Face: checkpoints derivados de ejercicios de curso que se suben a la plataforma sin model card, sin evaluación publicada y sin licencia explícita. Para un desarrollador o investigador, esto implica que el modelo no puede considerarse una dependencia fiable sin una validación propia previa.
 
 El dato más relevante es el recuento de parámetros: 22,7 millones, un orden de magnitud coherente con codificadores BERT de tipo MiniLM de 6 capas ampliamente usados para generar embeddings de frases. Sin embargo, la información disponible no confirma ni la configuración exacta de capas, ni la dimensión de los embeddings, ni el corpus de entrenamiento, por lo que cualquier uso requiere inspección directa del checkpoint.
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| SreeVinayR/CS546_HW1_Sentence_Transformers | 22,7 M | no disponible | unknown | HuggingFace, sin pipeline declarado |
+| SreeVinayR/CS546_HW1_Sentence_Transformers | 22,7 M | no disponible | unknown | Hugging Face, sin pipeline declarado |
 | sentence-transformers/all-MiniLM-L6-v2 | 22,7 M | 256 tokens (configuración habitual) | Apache-2.0 | Muy extendido, con model card y evaluación publicada |
 | sentence-transformers/all-mpnet-base-v2 | 109 M | 384 tokens (configuración habitual) | Apache-2.0 | Muy extendido, con evaluación publicada |
 | bert-base-uncased | 110 M | 512 tokens | Apache-2.0 | Modelo base, ampliamente documentado |
@@ -89,7 +89,7 @@ La comparación con alternativas consolidadas no puede cerrarse en términos de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SreeVinayR/CS546_HW1_Sentence_Transformers
+- Modelo en Hugging Face: https://huggingface.co/SreeVinayR/CS546_HW1_Sentence_Transformers
 - Documentación de Sentence Transformers: https://www.sbert.net/
 - Documentación de Sentence Transformers (espejo): https://www.beri.net/learning/sentence-transformers-docs
 - Paquete sentence-transformers en PyPI: https://pypi.org/project/sentence-transformers/

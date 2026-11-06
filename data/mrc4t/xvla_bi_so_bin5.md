@@ -69,11 +69,11 @@ La comparacion se hace a nivel de especificaciones, porque no existen benchmarks
 
 | Modelo | Parametros | Entradas | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MrC4t/xvla_bi_so_bin5 | ~880 M | 3 imagenes RGB + estado de 8 dim; accion de 12 dim | apache-2.0 | HuggingFace (0 descargas, 0 likes) |
-| lerobot/xvla-base | ~880 M (mismo esqueleto, segun los pesos del fine-tune) | multimodal, segun configuracion | no disponible en la informacion proporcionada | HuggingFace, modelo base de este checkpoint |
-| lerobot/smolvla_base (SmolVLA) | ~450 M | imagenes + estado; accion configurable | apache-2.0 | HuggingFace, integrado en LeRobot |
-| OpenVLA-7B | ~7.000 M | imagen unica + instruccion de texto; accion de 7 dim | heredada de Llama 2 (no Apache-2.0) | HuggingFace y repositorio publico |
-| pi0 (Physical Intelligence) | ~3.000 M | multiples imagenes + estado; flow matching | apache-2.0 (via openpi) | HuggingFace y repositorio openpi |
+| MrC4t/xvla_bi_so_bin5 | ~880 M | 3 imagenes RGB + estado de 8 dim; accion de 12 dim | apache-2.0 | Hugging Face (0 descargas, 0 likes) |
+| lerobot/xvla-base | ~880 M (mismo esqueleto, segun los pesos del fine-tune) | multimodal, segun configuracion | no disponible en la informacion proporcionada | Hugging Face, modelo base de este checkpoint |
+| lerobot/smolvla_base (SmolVLA) | ~450 M | imagenes + estado; accion configurable | apache-2.0 | Hugging Face, integrado en LeRobot |
+| OpenVLA-7B | ~7.000 M | imagen unica + instruccion de texto; accion de 7 dim | heredada de Llama 2 (no Apache-2.0) | Hugging Face y repositorio publico |
+| pi0 (Physical Intelligence) | ~3.000 M | multiples imagenes + estado; flow matching | apache-2.0 (via openpi) | Hugging Face y repositorio openpi |
 
 Diferencias clave: xvla_bi_so_bin5 es el mas pequeno del grupo junto con SmolVLA, lo que reduce los requisitos de VRAM; a diferencia de OpenVLA, no depende de un backbone LLM de 7 B y admite tres camaras y un vector de accion de 12 dimensiones orientado a bimanual. Frente a pi0, carece de la validacion experimental publica y del respaldo de un laboratorio. No hay datos comparativos de tasa de exito entre estos modelos en la informacion disponible.
 
@@ -92,7 +92,7 @@ Diferencias clave: xvla_bi_so_bin5 es el mas pequeno del grupo junto con SmolVLA
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MrC4t/xvla_bi_so_bin5
+- Modelo en Hugging Face: https://huggingface.co/MrC4t/xvla_bi_so_bin5
 - Modelo base: https://huggingface.co/lerobot/xvla-base
 - Dataset de entrenamiento: https://huggingface.co/datasets/MrC4t/bimanual_toy_bin
 - Visualizacion del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=MrC4t/bimanual_toy_bin
@@ -102,4 +102,4 @@ Diferencias clave: xvla_bi_so_bin5 es el mas pequeno del grupo junto con SmolVLA
 - Documentacion de LeRobot: https://huggingface.co/docs/lerobot/index
 - Documentacion de inferencia y rollout: https://huggingface.co/docs/lerobot/main/en/inference
 
-Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; los enlaces listados proceden integramente de la informacion de HuggingFace y de la model card.
+Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; los enlaces listados proceden integramente de la informacion de Hugging Face y de la model card.

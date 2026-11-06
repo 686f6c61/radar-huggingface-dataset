@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| wayfinder-glimmer-30b | ~29,78 B | 65.536 tokens | Subagente de busqueda de codigo | apache-2.0-and-muse-model-license | HuggingFace (5 descargas) |
+| wayfinder-glimmer-30b | ~29,78 B | 65.536 tokens | Subagente de busqueda de codigo | apache-2.0-and-muse-model-license | Hugging Face (5 descargas) |
 | Muse Glimmer 30B (base) | ~30 B (segun nombre) | no disponible | Proposito general | Muse Glimmer Usage Policy | Referenciado como base |
 | Agents-A1-35B | ~35 B (segun nombre) | no disponible | Trayectorias agenticas (fuente de 33 ejemplos) | no disponible | no disponible |
 
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hweller1/wayfinder-glimmer-30b
+- Modelo en Hugging Face: https://huggingface.co/hweller1/wayfinder-glimmer-30b
 - Licencia: https://huggingface.co/hweller1/wayfinder-glimmer-30b/blob/main/LICENSE-MUSE-SPARK-OPEN.md
 - Modelo base referenciado: meta-models/Muse-Glimmer-30B (no se dispone de URL directa en la informacion proporcionada)
 - Repositorio GitHub del harness de referencia: mencionado en la model card (`serve/scout_tool_specs.json`, `serve/scout_product_prompt.md`), sin URL concreta en la informacion disponible.

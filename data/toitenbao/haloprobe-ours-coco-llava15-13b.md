@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HaLoProbe (variante COCO sobre LLaVA-1.5-13B) es un artefacto de deteccion de alucinaciones de objeto publicado por el usuario ToiTenBao en HuggingFace. No es un modelo generativo en si: es una sonda (probe) entrenada sobre las representaciones internas del modelo multimodal LLaVA-1.5-13B para decidir si un objeto mencionado en una respuesta realmente aparece en la imagen. El repositorio incluye los checkpoints de la sonda para tres semillas independientes (0, 42 y 1337), las cache de caracteristicas extraidas del corpus COCO y los umbrales de decision congelados por semilla.
+HaLoProbe (variante COCO sobre LLaVA-1.5-13B) es un artefacto de deteccion de alucinaciones de objeto publicado por el usuario ToiTenBao en Hugging Face. No es un modelo generativo en si: es una sonda (probe) entrenada sobre las representaciones internas del modelo multimodal LLaVA-1.5-13B para decidir si un objeto mencionado en una respuesta realmente aparece en la imagen. El repositorio incluye los checkpoints de la sonda para tres semillas independientes (0, 42 y 1337), las cache de caracteristicas extraidas del corpus COCO y los umbrales de decision congelados por semilla.
 
 El problema que aborda es la alucinacion de objeto en modelos vision-lenguaje: LLaVA-1.5-13B puede afirmar que ve un objeto que no esta en la imagen. La sonda lee las activaciones de las capas 10, 15, 20, 25 y 30 del decoder (40 capas, dimension oculta 5120, 40 cabezas de atencion; rejilla de parches visuales de 24 x 24) y produce una puntuacion por mencion de objeto. La capa 20 se corresponde con la empleada por el metodo TruthPrInt. La model card advierte explicitamente de que estos artefactos no son intercambiables con la version de 7B: caracteristicas, geometria y umbrales son especificos de cada modelo base.
 
@@ -69,14 +69,14 @@ Notas de la model card sobre la evaluacion: en AMBER el universo de objetos es e
 - Estimacion orientativa (no confirmada en la model card) para el base en fp16: en torno a 26 GB solo de pesos, mas el coste del cache de activaciones y de la torre visual; requiere una GPU de 40 GB o mas (A100 40 GB, A100 80 GB, H100) o reparto en varias GPU.
 - En consumer GPU: con cuantizacion de 4 bits el base suele caber en una RTX 4090 o RTX 3090 de 24 GB; no obstante, la model card no confirma que la sonda mantenga su calibracion bajo cuantizacion, ya que los umbrales y las caracteristicas se obtuvieron sobre el modelo sin cuantizar.
 - El repositorio ocupa 7,3 GB en disco, correspondientes a checkpoints y cache de caracteristicas; conviene reservar espacio adicional para el modelo base.
-- Opciones de despliegue: la extraccion de estados ocultos intermedios exige frameworks que expongan las activaciones internas (por ejemplo, HuggingFace Transformers con `output_hidden_states`). Los servidores de inferencia orientados a generacion (vLLM, TGI, llama.cpp, Ollama) no estan pensados para devolver activaciones por capa, por lo que no son una via directa para usar la sonda.
+- Opciones de despliegue: la extraccion de estados ocultos intermedios exige frameworks que expongan las activaciones internas (por ejemplo, Hugging Face Transformers con `output_hidden_states`). Los servidores de inferencia orientados a generacion (vLLM, TGI, llama.cpp, Ollama) no estan pensados para devolver activaciones por capa, por lo que no son una via directa para usar la sonda.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Alternativa | Relacion | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HaLoProbe COCO sobre LLaVA-1.5-13B (este artefacto) | Sonda de alucinacion de objeto | Cabezal sobre base de 13B | no disponible | no disponible | Repositorio HuggingFace de 7,3 GB |
+| HaLoProbe COCO sobre LLaVA-1.5-13B (este artefacto) | Sonda de alucinacion de objeto | Cabezal sobre base de 13B | no disponible | no disponible | Repositorio Hugging Face de 7,3 GB |
 | Release de 7B de HaLoProbe | Misma familia, modelo base distinto | Cabezal sobre base de 7B | no disponible | no disponible | Mencionada en la model card; enlace no incluido |
 | TruthPrInt | Metodo de referencia citado por la capa 20 | no disponible | no disponible | no disponible | Referenciado, sin enlace en la model card |
 | AMBER y POPE-Adversarial | No son modelos comparables, sino benchmarks usados para la evaluacion | no aplica | no aplica | no disponible | Datos de evaluacion referenciados en la model card |
@@ -100,6 +100,6 @@ La model card es explicita en que esta version no es intercambiable con la de 7B
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ToiTenBao/haloprobe-ours-coco-llava15-13b
+- Modelo en Hugging Face: https://huggingface.co/ToiTenBao/haloprobe-ours-coco-llava15-13b
 - Modelo base referenciado en la model card: https://huggingface.co/llava-hf/llava-1.5-13b-hf
 - No se han encontrado enlaces adicionales relevantes: los resultados de la busqueda web proporcionada corresponden a paginas de musicales en Hamburgo y no guardan relacion con el modelo. La model card tampoco incluye enlaces a paper, repositorio de codigo, demo ni al release de 7B de la misma familia.

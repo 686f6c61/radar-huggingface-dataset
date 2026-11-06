@@ -99,7 +99,7 @@ No se dispone de datos de benchmarks ni de especificaciones verificadas de otras
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/scribekey/scribekey-cleanup-fast
+- Modelo en Hugging Face: https://huggingface.co/scribekey/scribekey-cleanup-fast
 - Artefacto GGUF Q8_0: https://huggingface.co/scribekey/scribekey-cleanup-fast-GGUF
 - Términos adicionales de licencia: https://huggingface.co/scribekey/scribekey-cleanup-fast/blob/main/ADDITIONAL_TERMS.md
 - Modelo base intermedio: https://huggingface.co/juanquivilla/sotto-cleanup-lfm25-350m

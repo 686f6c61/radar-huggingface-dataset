@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Efficientformer-demo es un repositorio publicado en HuggingFace por el usuario jamesthomassen que contiene una implementacion pequena de la arquitectura EfficientFormer orientada a tareas de clasificacion. No se trata de un modelo entrenado ni de un release con pesos validados: el propio autor lo describe como un punto de partida reproducible y el fichero `model.safetensors` se presenta explicitamente como un checkpoint de inicializacion valido solo para pruebas de humo (smoke tests). El repositorio acumula 0 descargas y 0 likes, y fue creado y actualizado el 14 de septiembre de 2026.
+Efficientformer-demo es un repositorio publicado en Hugging Face por el usuario jamesthomassen que contiene una implementacion pequena de la arquitectura EfficientFormer orientada a tareas de clasificacion. No se trata de un modelo entrenado ni de un release con pesos validados: el propio autor lo describe como un punto de partida reproducible y el fichero `model.safetensors` se presenta explicitamente como un checkpoint de inicializacion valido solo para pruebas de humo (smoke tests). El repositorio acumula 0 descargas y 0 likes, y fue creado y actualizado el 14 de septiembre de 2026.
 
 El dato mas relevante es su tamano: 16.576 parametros totales segun el fichero safetensors, una cifra extremadamente reducida y contradictoria con la etiqueta "large" que aparece en la model card. Esto refuerza la interpretacion de que se trata de un andamiaje de codigo y configuracion, no de un modelo con capacidad predictiva real.
 
@@ -68,7 +68,7 @@ La comparacion de rendimiento no es posible ni significativa: este repositorio n
 
 | Modelo | Parametros | Contexto / tarea | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jamesthomassen/efficientformer-demo | 16.576 | clasificacion (ventana deslizante declarada) | no | bsd-3-clause | HuggingFace, 0 descargas |
+| jamesthomassen/efficientformer-demo | 16.576 | clasificacion (ventana deslizante declarada) | no | bsd-3-clause | Hugging Face, 0 descargas |
 | EfficientFormer (familia original de Snap) | no disponible en la informacion proporcionada | clasificacion de imagenes | si | no disponible en la informacion proporcionada | publico |
 | MobileNetV3 | no disponible en la informacion proporcionada | clasificacion de imagenes | si | no disponible en la informacion proporcionada | publico |
 | DeiT-Tiny | no disponible en la informacion proporcionada | clasificacion de imagenes | si | no disponible en la informacion proporcionada | publico |
@@ -86,5 +86,5 @@ La comparacion de rendimiento no es posible ni significativa: este repositorio n
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jamesthomassen/efficientformer-demo
+- Repositorio en Hugging Face: https://huggingface.co/jamesthomassen/efficientformer-demo
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion proporcionada.

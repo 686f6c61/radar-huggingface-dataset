@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`joshycodes/llama-3.1-8b-fve-workanchor30m-s0` es un checkpoint de investigación derivado de `meta-llama/Llama-3.1-8B-Instruct` mediante continued pretraining de pesos completos. Lo publica el usuario de HuggingFace `joshycodes` dentro de una familia de experimentos etiquetada como `flourishing-vs-equanimity` y asociada al repositorio `welfare-improvements`. El propio autor lo describe como un punto de control experimental, sin evaluar en capacidad, alineación ni identidad, y con la indicación explícita de no desplegarlo.
+`joshycodes/llama-3.1-8b-fve-workanchor30m-s0` es un checkpoint de investigación derivado de `meta-llama/Llama-3.1-8B-Instruct` mediante continued pretraining de pesos completos. Lo publica el usuario de Hugging Face `joshycodes` dentro de una familia de experimentos etiquetada como `flourishing-vs-equanimity` y asociada al repositorio `welfare-improvements`. El propio autor lo describe como un punto de control experimental, sin evaluar en capacidad, alineación ni identidad, y con la indicación explícita de no desplegarlo.
 
 El entrenamiento consistió en un epoch sobre 66.171.405 tokens distribuidos en 76.969 documentos, con un learning rate de 1e-05. Según la model card, el corpus se generó con la intención de que el modelo escribiera material para entrenar a la siguiente versión de sí mismo, adoptando el papel de personaje que ya interpretaba y tras explicársele cómo funciona la técnica de *synthetic document finetuning* (SDF). La metadata del repositorio, sin embargo, indica 0 documentos autoescritos y 76.969 documentos de texto ordinario, una discrepancia que conviene tener presente al interpretar el experimento.
 
@@ -105,7 +105,7 @@ La comparación con modelos ajustados de propósito general de la misma escala (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/llama-3.1-8b-fve-workanchor30m-s0
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/llama-3.1-8b-fve-workanchor30m-s0
 - Checkpoint relacionado (misma familia, semilla distinta): https://huggingface.co/joshycodes/llama-3.1-8b-fve-workanchor-s1
 - Checkpoint relacionado (corpus de menor tamaño): https://huggingface.co/joshycodes/llama-3.1-8b-fve-workdiscern-s0
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct

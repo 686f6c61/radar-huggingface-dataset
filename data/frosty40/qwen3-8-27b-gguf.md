@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-GGUF es una conversión cuantizada en formato GGUF del modelo Qwen/Qwen3.8-27B, realizada por Frosty40 y publicada en HuggingFace. El modelo base es un transformer denso de 27 000 millones de parámetros con arquitectura híbrida: 48 capas de atención lineal Gated-DeltaNet y 16 capas de atención completa, lo que le permite manejar ventanas de contexto de hasta 262 000 tokens con un coste de memoria reducido en comparación con una atención full-attention pura. Además, el modelo es nativamente multimodal (image-text-to-text), con un proyector de visión integrado.
+Qwen3.8-27B-GGUF es una conversión cuantizada en formato GGUF del modelo Qwen/Qwen3.8-27B, realizada por Frosty40 y publicada en Hugging Face. El modelo base es un transformer denso de 27 000 millones de parámetros con arquitectura híbrida: 48 capas de atención lineal Gated-DeltaNet y 16 capas de atención completa, lo que le permite manejar ventanas de contexto de hasta 262 000 tokens con un coste de memoria reducido en comparación con una atención full-attention pura. Además, el modelo es nativamente multimodal (image-text-to-text), con un proyector de visión integrado.
 
 Esta versión GGUF está optimizada para su ejecución con llama.cpp y sus derivados (llama-server, Ollama, etc.), e incluye una cuantización Q6_K de los pesos principales con el tensor de salida (output) sin atar en Q8_0, una combinación que, según las mediciones del autor, ofrece una calidad muy cercana al modelo original en bf16 (KLD medio de 0,0017 y coincidencia del 97,79 % en el token superior). El autor validó el archivo end-to-end en una GPU Intel Arc Pro B70 mediante el backend SYCL de llama.cpp, reportando métricas de rendimiento concretas. Es relevante porque proporciona una alternativa de alta fidelidad para desplegar un modelo de 27B con visión y razonamiento en hardware de consumo o profesional, sin necesidad de los 54 GB del modelo en bf16.
 
@@ -94,6 +94,6 @@ No se han encontrado otras conversiones GGUF del mismo modelo base en la informa
 
 ## Enlaces
 
-- Repositorio HuggingFace de la conversión: https://huggingface.co/Frosty40/Qwen3.8-27B-GGUF
+- Repositorio Hugging Face de la conversión: https://huggingface.co/Frosty40/Qwen3.8-27B-GGUF
 - Modelo base (Qwen/Qwen3.8-27B): https://huggingface.co/Qwen/Qwen3.8-27B
 - Documentación de llama.cpp (requisitos de arquitectura): no disponible en la información proporcionada.

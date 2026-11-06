@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`SwetieePawsss/DUET_ft_models` es un repositorio de HuggingFace (48,4 GB) que agrupa checkpoints afinados de tres modelos instruct: `gemma-7b-it`, `Llama-3.1-8B-Instruct` y `Qwen2.5-7B-Instruct`. Segun la propia model card, el repositorio se conserva como referencia de la version v1.0 y los modelos han pasado a repositorios individuales dentro de la coleccion "DUET: Anatomy of Unlearning". Alli se listan tanto fine-tunes completos como variantes LoRA fusionadas y modelos denominados "AdaPop".
+`SwetieePawsss/DUET_ft_models` es un repositorio de Hugging Face (48,4 GB) que agrupa checkpoints afinados de tres modelos instruct: `gemma-7b-it`, `Llama-3.1-8B-Instruct` y `Qwen2.5-7B-Instruct`. Segun la propia model card, el repositorio se conserva como referencia de la version v1.0 y los modelos han pasado a repositorios individuales dentro de la coleccion "DUET: Anatomy of Unlearning". Alli se listan tanto fine-tunes completos como variantes LoRA fusionadas y modelos denominados "AdaPop".
 
 El interes del repositorio no esta en un modelo base nuevo, sino en el procedimiento de ajuste aplicado sobre arquitecturas conocidas: el nombre de la coleccion y la estructura de los artefactos apuntan a un trabajo de *machine unlearning* (desaprendizaje), es decir, eliminar del modelo el conocimiento de un subconjunto de datos manteniendo el rendimiento general. El autor no publica en esta ficha ni el dataset, ni el numero de tokens, ni hiperparametros, ni resultados de evaluacion.
 
@@ -68,12 +68,12 @@ El repositorio incluye la etiqueta `tensorboard`, lo que sugiere la existencia d
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `gemma-7b-it` (base) | ~7B | No documentado en este repo | Gemma Terms of Use | HuggingFace |
-| `gemma-7b-it-DUET-LoRA-merged` | ~7B | No documentado | `other` | HuggingFace (repo individual) |
-| `Llama-3.1-8B-Instruct` (base) | ~8B | No documentado en este repo | Llama 3.1 Community License | HuggingFace |
-| `Llama-3.1-8B-Instruct-DUET-LoRA-merged` | ~8B | No documentado | `other` | HuggingFace (repo individual) |
-| `Qwen2.5-7B-Instruct` (base) | ~7B | No documentado en este repo | Qwen License | HuggingFace |
-| `Qwen2.5-7B-Instruct-DUET-LoRA-merged` | ~7B | No documentado | `other` | HuggingFace (repo individual) |
+| `gemma-7b-it` (base) | ~7B | No documentado en este repo | Gemma Terms of Use | Hugging Face |
+| `gemma-7b-it-DUET-LoRA-merged` | ~7B | No documentado | `other` | Hugging Face (repo individual) |
+| `Llama-3.1-8B-Instruct` (base) | ~8B | No documentado en este repo | Llama 3.1 Community License | Hugging Face |
+| `Llama-3.1-8B-Instruct-DUET-LoRA-merged` | ~8B | No documentado | `other` | Hugging Face (repo individual) |
+| `Qwen2.5-7B-Instruct` (base) | ~7B | No documentado en este repo | Qwen License | Hugging Face |
+| `Qwen2.5-7B-Instruct-DUET-LoRA-merged` | ~7B | No documentado | `other` | Hugging Face (repo individual) |
 
 No se dispone de datos de rendimiento para comparar los checkpoints DUET con sus bases ni con otras propuestas de desaprendizaje; la comparacion queda limitada a parametros, licencia y disponibilidad.
 
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento para comparar los checkpoints DUET con sus
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SwetieePawsss/DUET_ft_models
+- Repositorio Hugging Face: https://huggingface.co/SwetieePawsss/DUET_ft_models
 - Coleccion "DUET: Anatomy of Unlearning": https://huggingface.co/collections/SwetieePawsss/duet-anatomy-of-unlearning-6adbb5695dfb6f3e25293251
 - `gemma-7b-it-DUET-LoRA-merged`: https://huggingface.co/SwetieePawsss/gemma-7b-it-DUET-LoRA-merged
 - `Llama-3.1-8B-Instruct-DUET-LoRA-merged`: https://huggingface.co/SwetieePawsss/Llama-3.1-8B-Instruct-DUET-LoRA-merged

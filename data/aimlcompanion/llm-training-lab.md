@@ -91,6 +91,6 @@ La comparativa es orientativa: este repositorio no compite en rendimiento con mo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/aimlcompanion/llm-training-lab
+- Repositorio en Hugging Face: https://huggingface.co/aimlcompanion/llm-training-lab
 - Plataforma del autor: https://aimlcompanion.ai
 - Dataset de entrenamiento: https://huggingface.co/datasets/roneneldan/TinyStories

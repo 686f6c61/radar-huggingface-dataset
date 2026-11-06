@@ -113,7 +113,7 @@ Las cifras de VRAM que siguen son estimaciones derivadas de los tamaños de fich
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/eraiko/Qwen3-VL-32B-Ultra-Heretic-H3-ComfyUI-INT8-ConvRot
+- Repositorio en Hugging Face: https://huggingface.co/eraiko/Qwen3-VL-32B-Ultra-Heretic-H3-ComfyUI-INT8-ConvRot
 - Modelo base del fine-tune: https://huggingface.co/llmfan46/Qwen3-VL-32B-Instruct-ultra-uncensored-heretic
 - Repositorio de nodos para generación autónoma: https://github.com/ethanfel/ComfyUI-H3-Qwen3VL-TextGen
 - Papers, blogs o demos adicionales: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo.

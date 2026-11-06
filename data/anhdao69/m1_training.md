@@ -108,7 +108,7 @@ No disponible. Este artefacto no es un modelo final sino un checkpoint intermedi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/anhdao69/M1_training
+- Repositorio en Hugging Face: https://huggingface.co/anhdao69/M1_training
 - Repositorio de codigo: https://github.com/anhdao69/SimpleMemVLN (commit `a340e13`, rama `c2_ablations`)
 - Notas y decisiones de entrenamiento: `reports/episodic_idea/09_ablation_runs.md`, en la rama `c2_ablations` del repositorio anterior
 - Modelo base: Qwen3.5-4B, revision `851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a`

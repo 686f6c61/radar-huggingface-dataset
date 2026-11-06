@@ -1,9 +1,9 @@
 # fcktisaa/krea2real
 
 ## Resumen
-El repositorio `fcktisaa/krea2real` aloja un modelo identificado como "krea2real", publicado por el usuario fcktisaa bajo licencia Apache-2.0. Según los metadatos de HuggingFace, el repositorio tiene un tamaño de 5,5 GB y no incluye una model card descriptiva más allá del encabezado de licencia. No se dispone de información sobre arquitectura, parámetros, pipeline o idiomas soportados.
+El repositorio `fcktisaa/krea2real` aloja un modelo identificado como "krea2real", publicado por el usuario fcktisaa bajo licencia Apache-2.0. Según los metadatos de Hugging Face, el repositorio tiene un tamaño de 5,5 GB y no incluye una model card descriptiva más allá del encabezado de licencia. No se dispone de información sobre arquitectura, parámetros, pipeline o idiomas soportados.
 
-Los resultados de búsqueda web apuntan a "Krea 2", un modelo de generación de imágenes desarrollado por Krea AI, descrito como un modelo fundacional de imagen entrenado desde cero, con dos variantes (Large y Medium) orientadas a fotorrealismo e ilustración respectivamente. Sin embargo, no hay evidencia de que este repositorio corresponda oficialmente a dicho modelo, ni se proporcionan datos técnicos específicos del checkpoint alojado en HuggingFace. Por tanto, la ficha se limita a los datos disponibles y a las referencias externas, sin confirmar su identidad exacta.
+Los resultados de búsqueda web apuntan a "Krea 2", un modelo de generación de imágenes desarrollado por Krea AI, descrito como un modelo fundacional de imagen entrenado desde cero, con dos variantes (Large y Medium) orientadas a fotorrealismo e ilustración respectivamente. Sin embargo, no hay evidencia de que este repositorio corresponda oficialmente a dicho modelo, ni se proporcionan datos técnicos específicos del checkpoint alojado en Hugging Face. Por tanto, la ficha se limita a los datos disponibles y a las referencias externas, sin confirmar su identidad exacta.
 
 ## Especificaciones tecnicas
 | Parametro | Valor |
@@ -56,7 +56,7 @@ No disponible. No hay información suficiente para comparar con otros modelos de
 - La falta de documentación técnica hace que su integración en flujos de trabajo profesionales sea arriesgada.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/fcktisaa/krea2real
+- Repositorio Hugging Face: https://huggingface.co/fcktisaa/krea2real
 - Página de Krea 2 (referencia externa, no confirmada): https://www.krea.ai/krea-2
 - Krea 2 en Civitai: https://civitai.com/models/2656567/krea-2
 - Krea 2 AI (sitio no oficial): https://krea2.io/

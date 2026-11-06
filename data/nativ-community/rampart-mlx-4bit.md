@@ -27,7 +27,7 @@ Su relevancia es practica: permite ejecutar deteccion y redaccion de PII complet
 
 ## Arquitectura y entrenamiento
 
-El checkpoint es una conversion, no un reentrenamiento. Sobre la arquitectura MiniLM de 6 capas y 384 dimensiones ocultas se anade una cabeza de clasificacion de tokens con 35 etiquetas en formato BIO. La cuantizacion se repackea bit a bit desde los pesos ONNX `MatMulNBits` del modelo original: los lineales y el clasificador usan 4-bit affine con grupo 32 y punto cero 8 (que en MLX se traduce en `bias = -8·scale`), mientras que las tablas de embeddings se repackean desde las tablas `DequantizeLinear` uint8 por tensor a 8-bit affine. El script `convert_from_onnx.py` incluido en el repo lee los inicializadores ONNX, los mapea a los nombres de parametro de un BERT de HuggingFace y escribe safetensors en la disposicion de `mlx-vlm`; reproduce tanto este checkpoint como la variante fp16.
+El checkpoint es una conversion, no un reentrenamiento. Sobre la arquitectura MiniLM de 6 capas y 384 dimensiones ocultas se anade una cabeza de clasificacion de tokens con 35 etiquetas en formato BIO. La cuantizacion se repackea bit a bit desde los pesos ONNX `MatMulNBits` del modelo original: los lineales y el clasificador usan 4-bit affine con grupo 32 y punto cero 8 (que en MLX se traduce en `bias = -8·scale`), mientras que las tablas de embeddings se repackean desde las tablas `DequantizeLinear` uint8 por tensor a 8-bit affine. El script `convert_from_onnx.py` incluido en el repo lee los inicializadores ONNX, los mapea a los nombres de parametro de un BERT de Hugging Face y escribe safetensors en la disposicion de `mlx-vlm`; reproduce tanto este checkpoint como la variante fp16.
 
 No se documentan en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset ni si hubo fases de RLHF o DPO (poco habituales en un modelo de clasificacion de este tamano). El unico dato de evaluacion con trazabilidad es el conjunto de validacion de `ai4privacy/pii-masking-openpii-1.5m`, con 10.500 filas (1.500 por idioma) que el modelo no vio durante el entrenamiento, usado para medir fidelidad de conversion y recall. El modelo original forma parte de un sistema hibrido: los numeros de seguridad social, tarjetas de pago y direcciones IP se enmascaran antes de llegar al modelo mediante una capa de regex y checksum del paquete npm `@nationaldesignstudio/rampart`, por lo que el modelo fue entrenado con esos valores ya enmascarados y este checkpoint no los detecta por si solo.
 
@@ -113,7 +113,7 @@ La comparacion queda limitada al ecosistema Rampart porque la informacion propor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nativ-community/rampart-mlx-4bit
+- Modelo en Hugging Face: https://huggingface.co/nativ-community/rampart-mlx-4bit
 - Modelo base: https://huggingface.co/nationaldesignstudio/rampart
 - Variante fp16 del mismo autor: https://huggingface.co/nativ-community/rampart-mlx-fp16
 - Model card del modelo original: https://huggingface.co/nationaldesignstudio/rampart/blob/main/MODEL_CARD.md

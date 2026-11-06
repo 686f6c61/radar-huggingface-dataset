@@ -27,7 +27,7 @@ Su relevancia práctica está en el mantenimiento de infraestructuras: es un det
 | Libreria de inferencia | rfdetr |
 | FLOPs | No publicados por el autor |
 | Tamano del repositorio | 0,1 GB |
-| Fecha de publicacion | 20 de septiembre de 2026 (segun metadata de HuggingFace) |
+| Fecha de publicacion | 20 de septiembre de 2026 (segun metadata de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -42,7 +42,7 @@ La evaluación se llevó a cabo con las métricas de detección de la librería 
 - Detección de objetos en imágenes: localiza instancias de las cuatro clases de deterioro del firme (grieta longitudinal, grieta transversal, grieta en malla y bache) y devuelve cajas delimitadoras con puntuación de confianza.
 - Inferencia con umbral configurable: la API `model.predict("image.jpg", threshold=0.25)` permite ajustar el umbral de confianza para priorizar precisión o recall según el caso de uso.
 - Procesamiento por imagen individual: la interfaz documentada trabaja sobre una imagen por llamada.
-- Integración con el ecosistema HuggingFace Hub: los pesos se descargan con `hf_hub_download` desde el repositorio del modelo.
+- Integración con el ecosistema Hugging Face Hub: los pesos se descargan con `hf_hub_download` desde el repositorio del modelo.
 - Evaluación reproducible: incluye resultados por clase y comparativas dentro de un pipeline de evaluación estandarizado (DetectionBench + Supervision).
 - No soporta tool calling, function calling, agentes, razonamiento multi-paso ni generación de texto: es exclusivamente un modelo de visión por computador.
 - No dispone de capacidades multimodales de entrada (no procesa texto, audio ni vídeo de forma nativa según la información disponible).
@@ -121,7 +121,7 @@ Sobre estos datos: RF-DETR Small obtiene el segundo mejor mAP@50 y mAP@50-95 de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dronefreak/rdd2022-rfdetr-small
+- Modelo en Hugging Face: https://huggingface.co/dronefreak/rdd2022-rfdetr-small
 - Dataset RDD2022 (dronefreak): https://huggingface.co/datasets/dronefreak/RDD2022
 - Repositorio DetectionBench: https://github.com/dronefreak/DetectionBench
 - Modelo base RF-DETR Small (Roboflow): https://huggingface.co/Roboflow/rf-detr-small

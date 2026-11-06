@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Long-WAM Nesting Doll — Epoch 1 | no disponible | no disponible | sin benchmarks publicados | other | HuggingFace, 24 descargas |
-| Efficient-Large-Model/Long-WAM-YAM (base) | no disponible | no disponible | no disponible en esta ficha | other | HuggingFace |
+| Long-WAM Nesting Doll — Epoch 1 | no disponible | no disponible | sin benchmarks publicados | other | Hugging Face, 24 descargas |
+| Efficient-Large-Model/Long-WAM-YAM (base) | no disponible | no disponible | no disponible en esta ficha | other | Hugging Face |
 | NVlabs/LongLive (código base) | no disponible | no disponible | no disponible en esta ficha | no disponible | Repositorio de código |
 
 No se dispone de datos de benchmarks ni de especificaciones detalladas de los modelos comparables en la información proporcionada, por lo que la comparación cuantitativa no es posible.
@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de los mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dddddsds31341/Long-WAM-Nesting-Doll-Epoch-1
+- Modelo en Hugging Face: https://huggingface.co/dddddsds31341/Long-WAM-Nesting-Doll-Epoch-1
 - Modelo base: https://huggingface.co/Efficient-Large-Model/Long-WAM-YAM
 - Dataset: https://huggingface.co/datasets/yuyingyinya/nesting_doll
 - Registro de entrenamiento (W&B): https://forge.coreweave.com/wandb/bofang/long-wam/runs/oaplbei2

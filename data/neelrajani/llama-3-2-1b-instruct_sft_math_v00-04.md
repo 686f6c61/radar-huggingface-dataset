@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Llama-3.2-1B-Instruct_SFT_math_v00.04 es un ajuste fino supervisado (SFT) del modelo Llama 3.2 1B Instruct de Meta, publicado por el usuario NeelRajani en HuggingFace. El nombre del repositorio indica que el entrenamiento se ha orientado a tareas de matematicas ("math") y que se trata de la version 0.04 de una serie de experimentos iterativos. El modelo base es un transformer decoder-only de 1.235.814.400 parametros (aproximadamente 1,24 mil millones), lo que lo situa en la categoria de modelos pequenos optimizados para despliegue en hardware modesto.
+Llama-3.2-1B-Instruct_SFT_math_v00.04 es un ajuste fino supervisado (SFT) del modelo Llama 3.2 1B Instruct de Meta, publicado por el usuario NeelRajani en Hugging Face. El nombre del repositorio indica que el entrenamiento se ha orientado a tareas de matematicas ("math") y que se trata de la version 0.04 de una serie de experimentos iterativos. El modelo base es un transformer decoder-only de 1.235.814.400 parametros (aproximadamente 1,24 mil millones), lo que lo situa en la categoria de modelos pequenos optimizados para despliegue en hardware modesto.
 
-La relevancia de este modelo reside en su tamano reducido y su especializacion declarada en matematicas, lo que lo hace candidato para entornos con restricciones de VRAM, experimentacion academica y pipelines de generacion de texto con requisitos de latencia bajos. Sin embargo, la model card publicada es la plantilla automatica de HuggingFace sin rellenar: no se documentan datos de entrenamiento, hiperparametros, licencia, idiomas ni resultados de evaluacion. Toda la informacion tecnica adicional debe inferirse del modelo base y del nombre del repositorio.
+La relevancia de este modelo reside en su tamano reducido y su especializacion declarada en matematicas, lo que lo hace candidato para entornos con restricciones de VRAM, experimentacion academica y pipelines de generacion de texto con requisitos de latencia bajos. Sin embargo, la model card publicada es la plantilla automatica de Hugging Face sin rellenar: no se documentan datos de entrenamiento, hiperparametros, licencia, idiomas ni resultados de evaluacion. Toda la informacion tecnica adicional debe inferirse del modelo base y del nombre del repositorio.
 
 El modelo se distribuye en formato safetensors con la libreria transformers, tiene un tamano de repositorio de 8,5 GB (lo que sugiere la presencia de pesos en precision completa o multiples checkpoints) y no registra descargas ni likes en el momento de la consulta, lo que indica que es un artefacto de investigacion reciente y poco difundido.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Llama-3.2-1B-Instruct_SFT_math_v00.04 | 1,24 B | no disponible | no disponible | HuggingFace, 0 descargas |
-| Llama 3.2 1B Instruct (Meta) | 1,24 B | 131.072 tokens | Llama 3.2 Community License | HuggingFace, ampliamente distribuido |
-| Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 tokens | Apache 2.0 | HuggingFace, ampliamente distribuido |
-| Gemma 2 2B Instruct | 2,6 B | 8.192 tokens | Gemma Terms of Use | HuggingFace, ampliamente distribuido |
+| Llama-3.2-1B-Instruct_SFT_math_v00.04 | 1,24 B | no disponible | no disponible | Hugging Face, 0 descargas |
+| Llama 3.2 1B Instruct (Meta) | 1,24 B | 131.072 tokens | Llama 3.2 Community License | Hugging Face, ampliamente distribuido |
+| Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 tokens | Apache 2.0 | Hugging Face, ampliamente distribuido |
+| Gemma 2 2B Instruct | 2,6 B | 8.192 tokens | Gemma Terms of Use | Hugging Face, ampliamente distribuido |
 
 La comparativa se limita a parametros, contexto y licencia, ya que no hay datos de rendimiento publicados para el modelo objeto de esta ficha. El modelo de NeelRajani carece de licencia declarada, lo que impide confirmar si hereda la licencia del modelo base de Meta o establece terminos propios.
 
@@ -84,7 +84,7 @@ La comparativa se limita a parametros, contexto y licencia, ya que no hay datos 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/NeelRajani/Llama-3.2-1B-Instruct_SFT_math_v00.04
+- Hugging Face: https://huggingface.co/NeelRajani/Llama-3.2-1B-Instruct_SFT_math_v00.04
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
 - Paper de referencia citado en la model card (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculador de impacto medioambiental: https://mlco2.github.io/impact

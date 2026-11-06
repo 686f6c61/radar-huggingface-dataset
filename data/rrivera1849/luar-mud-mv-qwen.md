@@ -76,9 +76,9 @@ El vector unico conserva aproximadamente el 96% del MRR del modo multi-vector so
 
 | Modelo | Parametros | Readout | MRR (MUD test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LUAR-MUD-MV-Qwen | 600.774.656 | multi-vector (MaxSim) y vector unico (coseno) | 0,6564 / 0,6283 | apache-2.0 | HuggingFace, requiere `trust_remote_code` |
-| LUAR-MUD | ~82M (DistilRoBERTa) | vector unico (coseno) | 0,5706 | no disponible en la informacion proporcionada | HuggingFace |
-| Qwen/Qwen3-0.6B | ~0,6B | backbone sin cabeza de autoria | no aplica | no disponible en la informacion proporcionada | HuggingFace (modelo base) |
+| LUAR-MUD-MV-Qwen | 600.774.656 | multi-vector (MaxSim) y vector unico (coseno) | 0,6564 / 0,6283 | apache-2.0 | Hugging Face, requiere `trust_remote_code` |
+| LUAR-MUD | ~82M (DistilRoBERTa) | vector unico (coseno) | 0,5706 | no disponible en la informacion proporcionada | Hugging Face |
+| Qwen/Qwen3-0.6B | ~0,6B | backbone sin cabeza de autoria | no aplica | no disponible en la informacion proporcionada | Hugging Face (modelo base) |
 
 La comparacion directa disponible se limita al predecesor LUAR-MUD, que este modelo supera en MRR (+0,0858 en modo multi-vector y +0,0577 en modo vector unico) y en cobertura R@1 (0,5792 frente a 0,4904). Se desconoce el rendimiento frente a otros sistemas de atribucion de autoria no presentes en la informacion proporcionada.
 
@@ -96,7 +96,7 @@ La comparacion directa disponible se limita al predecesor LUAR-MUD, que este mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rrivera1849/LUAR-MUD-MV-Qwen
+- Modelo en Hugging Face: https://huggingface.co/rrivera1849/LUAR-MUD-MV-Qwen
 - Modelo predecesor LUAR-MUD: https://huggingface.co/rrivera1849/LUAR-MUD
 - Coleccion LUAR: https://huggingface.co/collections/rrivera1849/luar
 - Paper LUAR (EMNLP 2021): https://aclanthology.org/2021.emnlp-main.70.pdf

@@ -90,7 +90,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xtools-at/Qwen3.5-4B-Trace-Inverter-GGUF
+- Modelo en Hugging Face: https://huggingface.co/xtools-at/Qwen3.5-4B-Trace-Inverter-GGUF
 - Modelo base (safetensors): https://huggingface.co/xtools-at/Qwen3.5-4B-Trace-Inverter
 - Modelo base del fine-tune: https://huggingface.co/xtools-at/Qwen3.5-4B-MultiDistill-3xMerge-UNCENSORED-heretic
 - Dataset convertido: https://huggingface.co/datasets/xtools-at/trace-inversion-opus-synthetic

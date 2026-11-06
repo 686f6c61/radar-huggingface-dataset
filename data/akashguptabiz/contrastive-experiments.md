@@ -64,7 +64,7 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace: akashguptabiz/contrastive-experiments](https://huggingface.co/akashguptabiz/contrastive-experiments)
+- [Hugging Face: akashguptabiz/contrastive-experiments](https://huggingface.co/akashguptabiz/contrastive-experiments)
 - [AI by Aakash (Substack)](https://www.aibyaakash.com/)
 - [Perfil de Aakash Gupta en LinkedIn](https://www.linkedin.com/posts/aakash-gupta-5ky_ai-machinelearning-contrastivelearning-activity-7302334458479742976-cQ-x)
 - [Curso de experimentación con IA](https://www.news.aakashg.com/p/frederic-de-todaro-podcast) (no específico del modelo)

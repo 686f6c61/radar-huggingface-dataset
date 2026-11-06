@@ -75,7 +75,7 @@ La comparativa se limita a modelos de la misma familia por falta de información
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/VINHYU/OpenSpatial-Qwen3-VL-8B
+- Hugging Face: https://huggingface.co/VINHYU/OpenSpatial-Qwen3-VL-8B
 - Proyecto OpenSpatial (GitHub): https://github.com/VINHYU/OpenSpatial
 - Paper: https://arxiv.org/abs/2604.07296
 - Dataset de entrenamiento: https://huggingface.co/datasets/jdopensource/JoyAI-Image-OpenSpatial

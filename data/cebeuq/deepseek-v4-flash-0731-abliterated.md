@@ -101,8 +101,8 @@ La diferencia esencial es la eliminación del rechazo con una edición mínima y
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cebeuq/DeepSeek-V4-Flash-0731-abliterated
-- Modelo base en HuggingFace: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
+- Modelo en Hugging Face: https://huggingface.co/cebeuq/DeepSeek-V4-Flash-0731-abliterated
+- Modelo base en Hugging Face: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
 - DeepWiki del proyecto: https://deepwiki.com/deepseek-v4-flash-0731/deepseek-v4-flash-0731
 - Releases en GitHub: https://github.com/deepseek-v4-flash-0731/deepseek-v4-flash-0731/releases
 - Ficha en LLM Explorer: https://llm-explorer.com/model/cebeuq%2FDeepSeek-V4-Flash-0731-abliterated,jF40WYNfMSEbKf0uNNUiI

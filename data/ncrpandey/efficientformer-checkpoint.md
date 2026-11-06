@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ncrpandey/efficientformer-checkpoint es un repositorio de HuggingFace que contiene una implementacion a escala **tiny** de la arquitectura EfficientFormer orientada a tareas multitarea, publicada bajo licencia Apache 2.0. No se trata de un modelo entrenado ni de un checkpoint de referencia: el propio autor lo describe como un punto de partida reproducible para pruebas de humo (*smoke tests*) y experimentacion, con un checkpoint de inicializacion valido pero sin entrenamiento.
+ncrpandey/efficientformer-checkpoint es un repositorio de Hugging Face que contiene una implementacion a escala **tiny** de la arquitectura EfficientFormer orientada a tareas multitarea, publicada bajo licencia Apache 2.0. No se trata de un modelo entrenado ni de un checkpoint de referencia: el propio autor lo describe como un punto de partida reproducible para pruebas de humo (*smoke tests*) y experimentacion, con un checkpoint de inicializacion valido pero sin entrenamiento.
 
 El modelo ocupa apenas 49.600 parametros en `model.safetensors`, un orden de magnitud muy inferior al de los EfficientFormer originales de Snap Research (que manejan millones de parametros). La configuracion declarada incluye atencion dilatada, fusion Tucker, activacion GELU y normalizacion por lotes (batchnorm), con un recetario de experimento por defecto basado en el optimizador LAMB y un schedule de calentamiento lineal.
 
@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Arquitectura | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ncrpandey/efficientformer-checkpoint | 49.600 | EfficientFormer tiny multitarea (implementacion propia) | No, checkpoint de inicializacion | Apache 2.0 | HuggingFace |
-| deepikanair/efficientformer-checkpoint | no disponible | EfficientFormer (implementacion propia, mismo esquema de ficheros) | No, checkpoint de inicializacion | no disponible | HuggingFace |
+| ncrpandey/efficientformer-checkpoint | 49.600 | EfficientFormer tiny multitarea (implementacion propia) | No, checkpoint de inicializacion | Apache 2.0 | Hugging Face |
+| deepikanair/efficientformer-checkpoint | no disponible | EfficientFormer (implementacion propia, mismo esquema de ficheros) | No, checkpoint de inicializacion | no disponible | Hugging Face |
 | EfficientFormerV2 (snap-research) | no disponible | EfficientFormerV2, variantes s0/s1/s2/l | Si, preentrenado en ImageNet-1K | no disponible | GitHub y checkpoints publicados |
 
 Comparativa limitada: los EfficientFormerV2 oficiales de Snap Research (s0, s1, s2, l) son backbones de vision preentrenados en ImageNet-1K con millones de parametros, muy alejados en escala y madurez de este repositorio. No se dispone de cifras de parametros concretas para esas variantes en la informacion proporcionada.
@@ -80,9 +80,9 @@ Comparativa limitada: los EfficientFormerV2 oficiales de Snap Research (s0, s1, 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ncrpandey/efficientformer-checkpoint
-- Repositorio hermano en HuggingFace (deepikanair): https://huggingface.co/deepikanair/efficientformer-checkpoint
-- Perfil de deepikanair en HuggingFace: https://huggingface.co/deepikanair/models
+- Repositorio en Hugging Face: https://huggingface.co/ncrpandey/efficientformer-checkpoint
+- Repositorio hermano en Hugging Face (deepikanair): https://huggingface.co/deepikanair/efficientformer-checkpoint
+- Perfil de deepikanair en Hugging Face: https://huggingface.co/deepikanair/models
 - Codigo oficial de EfficientFormer / EfficientFormerV2 (Snap Research): https://github.com/snap-research/EfficientFormer
 - Fichero checkpoint del modulo de deteccion oficial: https://github.com/snap-research/EfficientFormer/blob/main/detection/checkpoint.py
 - Ficha de terceros con metadatos indexados: https://essamamdani.com/ai-models/hf-bdgrahman-efficientformer-checkpoint

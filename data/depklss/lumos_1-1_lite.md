@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `depklss/lumos_1.1_lite` es una subida de un usuario individual (depklss) en HuggingFace, publicada el 23 de agosto de 2026. No se dispone de model card, documentación técnica ni información sobre arquitectura, tamaño, datos de entrenamiento o capacidades. La única información disponible es su licencia MIT y la etiqueta de región "us". No ha registrado descargas ni "likes" en el momento de la consulta.
+El modelo `depklss/lumos_1.1_lite` es una subida de un usuario individual (depklss) en Hugging Face, publicada el 23 de agosto de 2026. No se dispone de model card, documentación técnica ni información sobre arquitectura, tamaño, datos de entrenamiento o capacidades. La única información disponible es su licencia MIT y la etiqueta de región "us". No ha registrado descargas ni "likes" en el momento de la consulta.
 
 El nombre "Lumos" coincide con proyectos de investigación conocidos, como el proyecto de Alibaba DAMO Academy sobre generación de vídeo con difusión discreta (ICLR 2026) o el framework de agentes de lenguaje del Allen Institute for AI. Sin embargo, no existe ninguna evidencia que relacione esta subida con esos proyectos. La ausencia de información técnica hace imposible evaluar su utilidad, rendimiento o aplicaciones prácticas.
 
@@ -53,9 +53,9 @@ No disponible. No se puede establecer una comparativa con otros modelos al no co
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/depklss/lumos_1.1_lite)
+- [Modelo en Hugging Face](https://huggingface.co/depklss/lumos_1.1_lite)
 - [Proyecto Lumos de Alibaba DAMO Academy (GitHub)](https://github.com/alibaba-damo-academy/Lumos)
-- [Modelo Lumos-1 de Alibaba DAMO Academy (HuggingFace)](https://huggingface.co/Alibaba-DAMO-Academy/Lumos-1)
+- [Modelo Lumos-1 de Alibaba DAMO Academy (Hugging Face)](https://huggingface.co/Alibaba-DAMO-Academy/Lumos-1)
 - [Proyecto Lumos de Allen Institute for AI (GitHub Pages)](https://allenai.github.io/lumos/)
 
 Nota: los enlaces a los proyectos Lumos se incluyen solo como referencia al nombre, no como confirmación de relación con este modelo.

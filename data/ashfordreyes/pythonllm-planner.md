@@ -76,7 +76,7 @@ La comparativa muestra que pythonllm-planner se diferencia por su especializacio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ashfordreyes/pythonllm-planner
+- Hugging Face: https://huggingface.co/ashfordreyes/pythonllm-planner
 - Repositorio GitHub: https://github.com/ashfordreyes/pythonllm
 - Modelo base Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Paper de Qwen2.5: no disponible en la busqueda, pero se puede consultar en el repo de Qwen.

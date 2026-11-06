@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - VRAM estimada para inferencia: con 4,4 mil millones de parametros en bfloat16, el peso del modelo ocupa aproximadamente 8,8 GB. Para inferencia con contexto largo se recomienda al menos 16 GB de VRAM.
 - GPU recomendadas: NVIDIA RTX 4090 (24 GB), A100 (40 GB) o H100 (80 GB) para mayor margen. En GPUs con 12 GB (como RTX 3060) podria funcionar con cuantizacion, pero no se ofrecen archivos cuantizados.
 - Compatibilidad con GPU de consumo: si, una RTX 3090 o 4090 puede ejecutar el modelo en bfloat16 sin problemas.
-- Opciones de despliegue: vLLM, llama.cpp (si se convierte a GGUF), Ollama (requiere conversion), Transformers con pipeline de HuggingFace.
+- Opciones de despliegue: vLLM, llama.cpp (si se convierte a GGUF), Ollama (requiere conversion), Transformers con pipeline de Hugging Face.
 - Latencia y throughput: no disponibles. Dependera del hardware y de la implementacion.
 
 ## Comparativa con modelos similares
@@ -74,7 +74,7 @@ La comparativa se limita a modelos de la misma familia y tamano. No se dispone d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jaymanaryan/Qwen3-4B-passthrough
+- Modelo en Hugging Face: https://huggingface.co/jaymanaryan/Qwen3-4B-passthrough
 - Modelo base PrimeIntellect/Qwen3-4B: https://huggingface.co/PrimeIntellect/Qwen3-4B
 - Modelo base jaymanaryan/Qwen3-Combined-4: https://huggingface.co/jaymanaryan/Qwen3-Combined-4
 - Qwen3-4B original: https://huggingface.co/Qwen/Qwen3-4B

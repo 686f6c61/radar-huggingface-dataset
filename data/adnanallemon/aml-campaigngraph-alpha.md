@@ -69,6 +69,6 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/adnanallemon/aml-campaigngraph-alpha
+- Modelo en Hugging Face: https://huggingface.co/adnanallemon/aml-campaigngraph-alpha
 - Repositorio versionado de AML-CampaignGraph: mencionado en la model card como "versioned AML-CampaignGraph repository" (URL no disponible en la información proporcionada).
 - Archivo de citación: `CITATION.cff` referenciado en la model card (no se proporciona URL directa).

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `anastasiiakorenevskaia/bsrnn_libri2mix` es un artefacto alojado en HuggingFace con licencia MIT y etiquetado para ingles. Por el identificador se puede inferir que se trata de una implementacion de BSRNN (Band-Split RNN), una arquitectura de red recurrente con division en bandas de frecuencia, entrenada o evaluada sobre Libri2Mix, un corpus de mezclas de dos hablantes derivado de LibriSpeech. La tarea asociada a esa combinacion de nombre y dataset es la separacion de fuentes de voz (speech separation) en mezclas de dos locutores.
+El modelo `anastasiiakorenevskaia/bsrnn_libri2mix` es un artefacto alojado en Hugging Face con licencia MIT y etiquetado para ingles. Por el identificador se puede inferir que se trata de una implementacion de BSRNN (Band-Split RNN), una arquitectura de red recurrente con division en bandas de frecuencia, entrenada o evaluada sobre Libri2Mix, un corpus de mezclas de dos hablantes derivado de LibriSpeech. La tarea asociada a esa combinacion de nombre y dataset es la separacion de fuentes de voz (speech separation) en mezclas de dos locutores.
 
 Sin embargo, la model card publicada es una plantilla vacia generada de forma automatica: todos los campos de descripcion, arquitectura, datos de entrenamiento, hiperparametros y evaluacion figuran como `[More Information Needed]`. No hay documentacion tecnica, ni ficha de uso, ni ejemplo de codigo de inferencia. El unico dato verificable aportado por el repositorio es la licencia MIT y el idioma declarado.
 
@@ -66,7 +66,7 @@ No es posible establecer una comparativa fiable con este modelo porque no se con
 
 | Modelo | Tarea | Parametros | Resultados publicados | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bsrnn_libri2mix | separacion de voz (inferida) | no disponible | no disponible | MIT | HuggingFace |
+| bsrnn_libri2mix | separacion de voz (inferida) | no disponible | no disponible | MIT | Hugging Face |
 | Conv-TasNet | separacion de voz | ~8,8 M | publicados en su paper | codigo abierto | referencia academica |
 | DPRNN | separacion de voz | ~2,6 M | publicados en su paper | codigo abierto | referencia academica |
 | SepFormer | separacion de voz | ~26 M | publicados en su paper | codigo abierto | SpeechBrain |
@@ -85,7 +85,7 @@ Los datos de parametros de Conv-TasNet, DPRNN y SepFormer son cifras orientativa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/anastasiiakorenevskaia/bsrnn_libri2mix
+- Hugging Face: https://huggingface.co/anastasiiakorenevskaia/bsrnn_libri2mix
 - Paper de la plantilla de model card (Lacoste et al., 2019, citado en el README): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental citada en el README: https://mlco2.github.io/impact#compute
 - Plantilla cruda usada por el autor: https://github.com/huggingface/huggingface_hub/blob/main/src/huggingface_hub/templates/modelcard_template.md

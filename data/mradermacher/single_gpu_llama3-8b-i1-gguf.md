@@ -25,7 +25,7 @@ El repositorio se publico el 15 de septiembre de 2026, no registra descargas ni 
 
 La informacion disponible no describe la arquitectura del modelo base tayaee/Single_GPU_Llama3-8B mas alla de su recuento de parametros (8.030.261.312). El identificador y la etiqueta `base_model` permiten inferir que se trata de un ajuste o derivado de la familia Llama 3 de 8B, pero no se han facilitado detalles sobre numero de capas, dimensiones de atencion, tipo de atencion, vocabulario ni longitud de contexto. Tampoco hay datos sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT.
 
-Lo que si esta documentado es el proceso de cuantizacion posterior, ejecutado por mradermacher. El repositorio emplea cuantizacion ponderada por importancia (imatrix), con las variantes etiquetadas como `i1`. Los comentarios de la model card indican `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, es decir, una conversion desde pesos HuggingFace a GGUF con cuantizacion por tensor. Se incluye ademas el fichero de matriz de importancia (`Single_GPU_Llama3-8B.imatrix.gguf`, 0,1 GB) para que terceros puedan generar sus propios cuants. No hay fichero `mmproj`, por lo que no se distribuye ningun proyector multimodal.
+Lo que si esta documentado es el proceso de cuantizacion posterior, ejecutado por mradermacher. El repositorio emplea cuantizacion ponderada por importancia (imatrix), con las variantes etiquetadas como `i1`. Los comentarios de la model card indican `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, es decir, una conversion desde pesos Hugging Face a GGUF con cuantizacion por tensor. Se incluye ademas el fichero de matriz de importancia (`Single_GPU_Llama3-8B.imatrix.gguf`, 0,1 GB) para que terceros puedan generar sus propios cuants. No hay fichero `mmproj`, por lo que no se distribuye ningun proyector multimodal.
 
 ## Capacidades
 
@@ -96,7 +96,7 @@ Los tamanos de fichero son datos publicados por el autor; las estimaciones de VR
 | mradermacher/Single_GPU_Llama3-8B-i1-GGUF (este repositorio) | 8,03B | no disponible | GGUF (24 cuants i1) | no disponible | Publicado, 0 descargas |
 | mradermacher/Single_GPU_Llama3-8B-GGUF (repositorio hermano) | 8,03B | no disponible | GGUF (cuants estaticos) | no disponible | Publicado por el mismo autor |
 | tayaee/Single_GPU_Llama3-8B (modelo base) | 8,03B | no disponible | safetensors | no disponible | Publicado |
-| Cuantizaciones GGUF genericas de la familia Llama 3 8B | 8,03B | no disponible | GGUF | sujeto a la licencia de Llama 3 | Ampliamente disponibles en HuggingFace |
+| Cuantizaciones GGUF genericas de la familia Llama 3 8B | 8,03B | no disponible | GGUF | sujeto a la licencia de Llama 3 | Ampliamente disponibles en Hugging Face |
 
 No se dispone de datos de rendimiento para ninguno de los modelos de la tabla, por lo que la comparativa se limita a parametros, formato y disponibilidad. La diferencia entre este repositorio y el de cuants estaticos del mismo autor reside exclusivamente en el metodo de cuantizacion (imatrix frente a estatico), no en el modelo subyacente.
 
@@ -115,7 +115,7 @@ No se dispone de datos de rendimiento para ninguno de los modelos de la tabla, p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Single_GPU_Llama3-8B-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Single_GPU_Llama3-8B-i1-GGUF
 - Modelo base: https://huggingface.co/tayaee/Single_GPU_Llama3-8B
 - Cuants estaticos del mismo autor: https://huggingface.co/mradermacher/Single_GPU_Llama3-8B-GGUF
 - Pagina de resumen y descargas del autor: https://hf.tst.eu/model#Single_GPU_Llama3-8B-i1-GGUF

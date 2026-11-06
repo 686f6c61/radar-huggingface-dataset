@@ -113,7 +113,7 @@ No se han identificado en la información proporcionada otros modelos de ciberse
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/0xCra/Bwen-8B-Cyber
+- Modelo en Hugging Face: https://huggingface.co/0xCra/Bwen-8B-Cyber
 - Modelo base: https://huggingface.co/allenai/Bwen-8B
 - Dataset de entrenamiento: https://huggingface.co/datasets/0xCra/cyber-byte-sft
 - Panel de seguimiento del entrenamiento: https://huggingface.co/spaces/0xCra/bwen-8b-cyber-sft-trackio

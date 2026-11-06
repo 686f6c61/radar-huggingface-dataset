@@ -24,7 +24,7 @@ Según la model card, sobre 40 meses simulados no vistos previamente promedia 12
 | Pipeline declarado | reinforcement-learning |
 | Entorno de entrenamiento | gymnasium, CONNECT TYCOON |
 | Formato de intercambio de decisiones | JEV (`typesafe/jev-1.13`) |
-| Fecha de creacion del repositorio | 2026-10-13 (segun metadatos de HuggingFace) |
+| Fecha de creacion del repositorio | 2026-10-13 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -84,7 +84,7 @@ No se han encontrado en la información disponible otros modelos publicados de l
 
 | Modelo | Tipo | Beneficio mensual | Satisfacción | Incidentes de riesgo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| connectailab-rl-soo-v1-teacher | Política RL (PPO) | 12,09 millones de wones | 95 % | 3,4 | Apache 2.0 | HuggingFace (`suryeon123/connectailab-rl-soo-v1-teacher`) |
+| connectailab-rl-soo-v1-teacher | Política RL (PPO) | 12,09 millones de wones | 95 % | 3,4 | Apache 2.0 | Hugging Face (`suryeon123/connectailab-rl-soo-v1-teacher`) |
 | Presidente de reglas (línea base) | Heurística de reglas | 3,24 millones de wones | 79 % | 7,8 | no disponible | incluida en el simulador CONNECT TYCOON |
 | Otros agentes de decisión comparables | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -105,7 +105,7 @@ Los datos de beneficio, satisfacción e incidentes corresponden a la media de 40
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/suryeon123/connectailab-rl-soo-v1-teacher
+- Modelo en Hugging Face: https://huggingface.co/suryeon123/connectailab-rl-soo-v1-teacher
 - Repositorio CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Cuaderno de entrenamiento en Google Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb
 - Canal de YouTube de CONNECT AI LAB: https://www.youtube.com/@CONNECT-AI-LAB

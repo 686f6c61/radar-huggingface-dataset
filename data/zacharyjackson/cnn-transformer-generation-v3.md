@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Zacharyjackson/cnn-transformer-generation-v3` es un repositorio experimental publicado en HuggingFace por el usuario Zacharyjackson que contiene una implementación propia de una arquitectura híbrida denominada "Cnn Transformer", orientada a tareas de generación. No se trata de un modelo entrenado ni de un checkpoint con pesos listos para producción: la model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests), no un modelo con entrenamiento completado ni evaluado.
+`Zacharyjackson/cnn-transformer-generation-v3` es un repositorio experimental publicado en Hugging Face por el usuario Zacharyjackson que contiene una implementación propia de una arquitectura híbrida denominada "Cnn Transformer", orientada a tareas de generación. No se trata de un modelo entrenado ni de un checkpoint con pesos listos para producción: la model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests), no un modelo con entrenamiento completado ni evaluado.
 
 El interés del repositorio es fundamentalmente arquitectónico y de investigación. Propone una combinación de atención con ventana deslizante (sliding window), fusión tensorial (tensor fusion), activación Mish y normalización LayerNorm, con una configuración de escala "nano" pensada para que los cambios de arquitectura puedan inspeccionarse antes de lanzar un entrenamiento completo. El número de parámetros registrado en los safetensors es de 49.600, un tamaño extremadamente reducido que confirma su carácter de prototipo.
 
@@ -32,7 +32,7 @@ Parámetros adicionales declarados en la model card:
 | Normalización | LayerNorm |
 | Optimizador por defecto | SGD |
 | Scheduler por defecto | constant warmup |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Descargas | 0 |
 | Likes | 0 |
 | Tamaño del repositorio | 0.0 GB |
@@ -91,5 +91,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Zacharyjackson/cnn-transformer-generation-v3
+- Repositorio en Hugging Face: https://huggingface.co/Zacharyjackson/cnn-transformer-generation-v3
 - No se han encontrado en la información proporcionada papers, blogs, repositorios adicionales ni demos asociados.

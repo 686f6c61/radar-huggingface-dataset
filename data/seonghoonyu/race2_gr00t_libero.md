@@ -25,7 +25,7 @@ La relevancia actual del modelo radica en que constituye un experimento controla
 
 El modelo está basado en GR00T N1.6, un VLA que emplea un modelo de visión-lenguaje (VLM) como codificador de observaciones y un transformer de difusión (DiT) como predictor de acciones. El checkpoint `teacher_h8` es un GR00T N1.6 afinado sobre la unión de las suites de LIBERO (spatial, object, goal y 10) con un chunk de acción de 8 y 30 000 pasos de entrenamiento. Sobre este maestro, se aplica la técnica RACE2, que añade una cabeza de atención cruzada para detectar el tiempo de transición y slot self-attention, que alimenta un campo de modulación DiT por sitio, libre de sesgo e inicializado a cero (activado mediante `race2_enabled` en un fork de Isaac-GR00T). Las variantes RACE2 se entrenan con chunks de 16, 24 y 32, con checkpoints en 10k, 13k y 18k pasos respectivamente.
 
-Las variantes de fine-tuning simple (`ft_h16`, `ft_h24`, `ft_h32`) mantienen el VLM congelado (top_llm_layers=0) y solo entrenan el DiT, el proyector y las VL-LN, con batch 64 y 20 000 pasos. Todos los checkpoints son cargables desde HuggingFace e incluyen la configuración, los pesos en safetensors, los procesadores/estadísticas y el experiment_cfg, pero se han eliminado los estados del optimizador, scheduler y RNG.
+Las variantes de fine-tuning simple (`ft_h16`, `ft_h24`, `ft_h32`) mantienen el VLM congelado (top_llm_layers=0) y solo entrenan el DiT, el proyector y las VL-LN, con batch 64 y 20 000 pasos. Todos los checkpoints son cargables desde Hugging Face e incluyen la configuración, los pesos en safetensors, los procesadores/estadísticas y el experiment_cfg, pero se han eliminado los estados del optimizador, scheduler y RNG.
 
 ## Capacidades
 
@@ -64,7 +64,7 @@ Los resultados publicados en la model card, medidos como promedio de éxito en L
 - VRAM estimada: no disponible. No se proporciona información sobre el consumo de memoria de los checkpoints.
 - GPU recomendadas: no disponible. Dado el tamaño del repositorio (47.9 GB en safetensors), se puede inferir que se requiere una GPU de gran capacidad, pero no hay datos concretos.
 - Compatibilidad con GPU de consumo: no disponible.
-- Opciones de despliegue: el README indica que los checkpoints son cargables desde HuggingFace con la configuración y los pesos, por lo que se pueden cargar con el fork de Isaac-GR00T o con PyTorch estándar. No se mencionan opciones como vLLM, llama.cpp u Ollama, ya que es un modelo VLA, no un modelo de lenguaje generativo convencional.
+- Opciones de despliegue: el README indica que los checkpoints son cargables desde Hugging Face con la configuración y los pesos, por lo que se pueden cargar con el fork de Isaac-GR00T o con PyTorch estándar. No se mencionan opciones como vLLM, llama.cpp u Ollama, ya que es un modelo VLA, no un modelo de lenguaje generativo convencional.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -83,5 +83,5 @@ No se dispone de información suficiente para comparar este repositorio con otro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SeonghoonYu/RACE2_gr00t_libero
+- Hugging Face: https://huggingface.co/SeonghoonYu/RACE2_gr00t_libero
 - Otros enlaces relevantes: no disponible (no se han encontrado papers, blogs o repos públicos adicionales en la información proporcionada).

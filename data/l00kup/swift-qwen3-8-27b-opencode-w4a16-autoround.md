@@ -79,9 +79,9 @@ El propio autor advierte que el resultado de HumanEval no es un pass@1 canonico:
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| L00kUp/Swift-Qwen3.8-27B-OpenCode-W4A16-AutoRound | 27B | 262.144 tokens en la configuracion validada | W4A16 INT4, group size 128, AutoRound 0.14.3 | Swift Open License v1.0 (+ Apache 2.0 en la base) | HuggingFace, 0 descargas y 0 likes en el momento de la ficha |
-| ukisai/Swift-Qwen3.8-27b (modelo fuente) | 27B | no disponible | BF16 sin cuantizar | Swift Open License v1.0 (+ Apache 2.0) | HuggingFace |
-| Frozenlock/Qwen3.8-27B-int4-AutoRound | 27B | no disponible | INT4 AutoRound con receta distinta | no disponible | HuggingFace |
+| L00kUp/Swift-Qwen3.8-27B-OpenCode-W4A16-AutoRound | 27B | 262.144 tokens en la configuracion validada | W4A16 INT4, group size 128, AutoRound 0.14.3 | Swift Open License v1.0 (+ Apache 2.0 en la base) | Hugging Face, 0 descargas y 0 likes en el momento de la ficha |
+| ukisai/Swift-Qwen3.8-27b (modelo fuente) | 27B | no disponible | BF16 sin cuantizar | Swift Open License v1.0 (+ Apache 2.0) | Hugging Face |
+| Frozenlock/Qwen3.8-27B-int4-AutoRound | 27B | no disponible | INT4 AutoRound con receta distinta | no disponible | Hugging Face |
 
 La model card no ofrece comparaciones numericas frente al modelo fuente en BF16 ni frente a la variante de Frozenlock: solo indica que la fuente, el dataset de calibracion, la version de AutoRound y la receta de ajuste son explicitamente diferentes. No hay datos publicados que permitan afirmar cual de las tres opciones rinde mejor en tareas concretas.
 
@@ -100,7 +100,7 @@ La model card no ofrece comparaciones numericas frente al modelo fuente en BF16 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/L00kUp/Swift-Qwen3.8-27B-OpenCode-W4A16-AutoRound
+- Modelo en Hugging Face: https://huggingface.co/L00kUp/Swift-Qwen3.8-27B-OpenCode-W4A16-AutoRound
 - Modelo base: https://huggingface.co/ukisai/Swift-Qwen3.8-27b
 - Licencia Swift Open License v1.0: https://huggingface.co/ukisai/Swift-Qwen3.8-27b/blob/main/LICENSE
 - Referencia de AutoRound citada, Frozenlock/Qwen3.8-27B-int4-AutoRound: https://huggingface.co/Frozenlock/Qwen3.8-27B-int4-AutoRound

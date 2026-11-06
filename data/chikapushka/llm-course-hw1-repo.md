@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Chikapushka/llm-course-hw1-repo` es un modelo de pesos abiertos publicado en HuggingFace Hub por el usuario Chikapushka el 26 de octubre de 2026, con un total de 11.211.648 parámetros (aproximadamente 11,2 millones) en formato safetensors. El repositorio ocupa 0,1 GB y está etiquetado con `model_hub_mixin` y `pytorch_model_hub_mixin`, lo que indica que los pesos se subieron mediante la integración `PyTorchModelHubMixin` de `huggingface_hub`, un mecanismo habitual para empaquetar modelos de PyTorch con su código de carga asociado.
+`Chikapushka/llm-course-hw1-repo` es un modelo de pesos abiertos publicado en Hugging Face Hub por el usuario Chikapushka el 26 de octubre de 2026, con un total de 11.211.648 parámetros (aproximadamente 11,2 millones) en formato safetensors. El repositorio ocupa 0,1 GB y está etiquetado con `model_hub_mixin` y `pytorch_model_hub_mixin`, lo que indica que los pesos se subieron mediante la integración `PyTorchModelHubMixin` de `huggingface_hub`, un mecanismo habitual para empaquetar modelos de PyTorch con su código de carga asociado.
 
-El nombre del repositorio (`llm-course-hw1-repo`, es decir, "trabajo de casa 1 de un curso de LLM") sugiere que se trata de un artefacto académico o de aprendizaje, no de un modelo entrenado para producción. La model card no aporta información técnica: solo contiene la plantilla autogenerada por la integración de HuggingFace, con los campos Code, Paper y Docs marcados como "More Information Needed". No hay pipeline declarado, ni licencia, ni idiomas soportados, ni datos de entrenamiento publicados.
+El nombre del repositorio (`llm-course-hw1-repo`, es decir, "trabajo de casa 1 de un curso de LLM") sugiere que se trata de un artefacto académico o de aprendizaje, no de un modelo entrenado para producción. La model card no aporta información técnica: solo contiene la plantilla autogenerada por la integración de Hugging Face, con los campos Code, Paper y Docs marcados como "More Information Needed". No hay pipeline declarado, ni licencia, ni idiomas soportados, ni datos de entrenamiento publicados.
 
 Por tanto, su relevancia actual es limitada fuera del contexto educativo: sirve como ejemplo de publicación de un modelo pequeño en el Hub y como posible base para experimentos de ajuste fino a muy pequeña escala, pero carece de documentación que permita evaluar su calidad, su comportamiento o su idoneidad para cualquier tarea concreta. Cualquier uso en producción requeriría una evaluación empírica previa por parte del usuario.
 
@@ -66,9 +66,9 @@ No se dispone de información suficiente (arquitectura, contexto, licencia y mé
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Chikapushka/llm-course-hw1-repo | ~11,2 M | no disponible | no disponible | HuggingFace Hub |
-| GPT-2 small (referencia externa) | 124 M | 1024 tokens | MIT | HuggingFace Hub |
-| DistilGPT-2 (referencia externa) | 82 M | 1024 tokens | Apache-2.0 | HuggingFace Hub |
+| Chikapushka/llm-course-hw1-repo | ~11,2 M | no disponible | no disponible | Hugging Face Hub |
+| GPT-2 small (referencia externa) | 124 M | 1024 tokens | MIT | Hugging Face Hub |
+| DistilGPT-2 (referencia externa) | 82 M | 1024 tokens | Apache-2.0 | Hugging Face Hub |
 
 El modelo de este análisis es un orden de magnitud más pequeño que las alternativas citadas, pero al carecer de documentación sobre arquitectura, tokenizador y datos de entrenamiento no es posible comparar rendimiento, calidad de generación ni soporte de idiomas.
 
@@ -85,7 +85,7 @@ El modelo de este análisis es un orden de magnitud más pequeño que las altern
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Chikapushka/llm-course-hw1-repo
+- Repositorio en Hugging Face: https://huggingface.co/Chikapushka/llm-course-hw1-repo
 - Documentación de `PyTorchModelHubMixin` (referenciada en la model card): https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin
 - Código del modelo: no disponible (la model card indica "More Information Needed")
 - Paper: no disponible

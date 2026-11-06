@@ -85,12 +85,12 @@ El benchmark agregado cubre 3.766 decisiones y 54 tareas. Nox-4B queda +2,99 pun
 
 | Modelo | Parametros | Tipo | Overall (benchmark del autor) | Licencia | Disponibilidad |
 |---|---:|---|---:|---|---|
-| Nox-4B | 4B | Modelo de decisión (Choice/Noul/Score) | 73,09 | Apache-2.0 | Pesos en HuggingFace, requiere vLLM Semantic Router |
+| Nox-4B | 4B | Modelo de decisión (Choice/Noul/Score) | 73,09 | Apache-2.0 | Pesos en Hugging Face, requiere vLLM Semantic Router |
 | Kev-4B | 4B | Modelo de decisión de la misma familia | 70,09 | no disponible | Pesos en la colección Decision |
-| Qwen3.5-4B | 4B | LLM generativo base, sin afinar | 67,29 | no disponible | HuggingFace |
+| Qwen3.5-4B | 4B | LLM generativo base, sin afinar | 67,29 | no disponible | Hugging Face |
 | Sol-2B | 2B | Modelo de decisión de menor tamaño | 66,32 | no disponible | Pesos en la colección Decision |
 | Lux-9B | 9B | Modelo de decisión de mayor tamaño | 77,40 | no disponible | Pesos en la colección Decision |
-| Qwen3.5-9B | 9B | LLM generativo base, sin afinar | 69,73 | no disponible | HuggingFace |
+| Qwen3.5-9B | 9B | LLM generativo base, sin afinar | 69,73 | no disponible | Hugging Face |
 
 Comparado con un LLM generativo del mismo tamaño (Qwen3.5-4B), Nox-4B mejora la métrica agregada en +5,80 puntos y en la subcategoría Decisions en +13,11 puntos, a costa de perder capacidad de generación libre: no produce texto, solo decisiones tipadas. Frente a Lux-9B, que obtiene 77,40, Nox-4B sacrifica 4,31 puntos a cambio de menos de la mitad de parámetros. No se dispone de datos de licencia ni de formato de pesos de los modelos comparados más allá de lo indicado.
 
@@ -108,7 +108,7 @@ Comparado con un LLM generativo del mismo tamaño (Qwen3.5-4B), Nox-4B mejora la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/llm-semantic-router/Decision-1.0-Nox-4B
+- Modelo en Hugging Face: https://huggingface.co/llm-semantic-router/Decision-1.0-Nox-4B
 - Colección de la familia Decision: https://huggingface.co/collections/llm-semantic-router/decision-10-6ab12177bd0002394d8409f9
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Documentación de la API SystemOne: https://docs.typesafe.ai/api

@@ -24,8 +24,8 @@ Su relevancia actual es limitada y de caracter exploratorio: sirve como ejemplo 
 | Modelo base | unsloth/Qwen3-14B-unsloth-bnb-4bit |
 | Tamano del repositorio | 0,5 GB |
 | Descargas / likes | 0 / 0 |
-| Fecha de creacion | 18 de septiembre de 2026 (segun metadatos de HuggingFace) |
-| Ultima actualizacion | 18 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 18 de septiembre de 2026 (segun metadatos de Hugging Face) |
+| Ultima actualizacion | 18 de septiembre de 2026 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -78,10 +78,10 @@ No se dispone de datos de rendimiento de este ajuste, por lo que la comparacion 
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento publicado | Disponibilidad |
 |---|---|---|---|---|---|
-| FrMedQA-CrossLingual-TestRun-MCQA | ~14,8B | no disponible (base: 32.768) | apache-2.0 | no disponible | HuggingFace, 0 descargas |
-| Qwen3-14B (base) | ~14,8B | 32.768 tokens (131.072 con YaRN) | apache-2.0 | si, publicado por el autor del modelo base | HuggingFace, ampliamente utilizado |
-| Qwen2.5-14B-Instruct | ~14,7B | 32.768 tokens (128K con YaRN) | apache-2.0 | si, publicado por el autor | HuggingFace |
-| Phi-4 (14B) | ~14,7B | 16.000 tokens | MIT | si, publicado por el autor | HuggingFace |
+| FrMedQA-CrossLingual-TestRun-MCQA | ~14,8B | no disponible (base: 32.768) | apache-2.0 | no disponible | Hugging Face, 0 descargas |
+| Qwen3-14B (base) | ~14,8B | 32.768 tokens (131.072 con YaRN) | apache-2.0 | si, publicado por el autor del modelo base | Hugging Face, ampliamente utilizado |
+| Qwen2.5-14B-Instruct | ~14,7B | 32.768 tokens (128K con YaRN) | apache-2.0 | si, publicado por el autor | Hugging Face |
+| Phi-4 (14B) | ~14,7B | 16.000 tokens | MIT | si, publicado por el autor | Hugging Face |
 
 No se dispone de informacion que permita comparar la calidad de este ajuste con ninguna de las alternativas.
 
@@ -101,7 +101,7 @@ No se dispone de informacion que permita comparar la calidad de este ajuste con 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/boods/FrMedQA-CrossLingual-TestRun-MCQA
+- Modelo en Hugging Face: https://huggingface.co/boods/FrMedQA-CrossLingual-TestRun-MCQA
 - Modelo base: https://huggingface.co/unsloth/Qwen3-14B-unsloth-bnb-4bit
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
 - Nota: las busquedas web realizadas no devolvieron ningun resultado relevante sobre este modelo, su dataset o sus resultados. Los unicos resultados obtenidos fueron documentacion de soporte sobre emparejamiento de dispositivos Bluetooth, sin relacion con el modelo.

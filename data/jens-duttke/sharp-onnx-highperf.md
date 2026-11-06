@@ -86,9 +86,9 @@ No se dispone de comparativas con otros modelos de image-to-3D como LGM, One-2-3
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/Jens-Duttke/Sharp-ONNX-HighPerf
+- Repositorio Hugging Face del modelo: https://huggingface.co/Jens-Duttke/Sharp-ONNX-HighPerf
 - Repositorio oficial de Apple SHARP: https://github.com/apple/ml-sharp
 - Conversión ONNX previa de Kyle Pearson: https://huggingface.co/pearsonkyle/Sharp-onnx
-- Perfil de HuggingFace del autor (Jens Duttke): https://huggingface.co/Jens-Duttke
+- Perfil de Hugging Face del autor (Jens Duttke): https://huggingface.co/Jens-Duttke
 - GitHub del autor: https://github.com/jens-duttke
 - Modelo relacionado del autor (DepthPro ONNX): https://huggingface.co/Jens-Duttke/DepthPro-ONNX-HighPerf

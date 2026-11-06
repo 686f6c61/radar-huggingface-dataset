@@ -101,7 +101,7 @@ No se dispone de información sobre modelos comparables de la misma categoría. 
 - Riesgo de alucinación inherente a los modelos de lenguaje, no evaluado en este experimento.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/ziaddddd/granite-3.1-1b-a400m-concision
-- Modelo base en HuggingFace: https://huggingface.co/ibm-granite/granite-3.1-1b-a400m-instruct
+- Hugging Face: https://huggingface.co/ziaddddd/granite-3.1-1b-a400m-concision
+- Modelo base en Hugging Face: https://huggingface.co/ibm-granite/granite-3.1-1b-a400m-instruct
 - Repositorio de código: no disponible (la model card menciona un fork sin URL concreta).
 - Paper: no disponible.

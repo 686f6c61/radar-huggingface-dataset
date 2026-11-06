@@ -2,7 +2,7 @@
 
 ## Resumen
 
-whisper-tiny-minds14-en-us es un ajuste fino (fine-tuning) del modelo de reconocimiento automatico del habla openai/whisper-tiny, desarrollado por el usuario markkeung y publicado en HuggingFace. El modelo parte de la arquitectura transformer encoder-decoder de Whisper en su variante "tiny", con 37,76 millones de parametros, y se ha entrenado especificamente sobre el subconjunto en ingles estadounidense del dataset PolyAI/minds14, un corpus de grabaciones de dominio telefonico para sistemas de atencion al cliente.
+whisper-tiny-minds14-en-us es un ajuste fino (fine-tuning) del modelo de reconocimiento automatico del habla openai/whisper-tiny, desarrollado por el usuario markkeung y publicado en Hugging Face. El modelo parte de la arquitectura transformer encoder-decoder de Whisper en su variante "tiny", con 37,76 millones de parametros, y se ha entrenado especificamente sobre el subconjunto en ingles estadounidense del dataset PolyAI/minds14, un corpus de grabaciones de dominio telefonico para sistemas de atencion al cliente.
 
 El problema que aborda es la adaptacion de un modelo ASR generico a un dominio concreto con caracteristicas acusticas particulares (audio telefonico, ruido de canal, habla espontanea). El ajuste fino permite mejorar la transcripcion en ese dominio especifico a costa de perder generalidad respecto al modelo base. El resultado declarado por el autor es un WER de 0,3241 sobre el conjunto de evaluacion, un valor alto en terminos absolutos pero coherente con el tamano reducido del modelo y la dificultad del corpus.
 
@@ -31,7 +31,7 @@ El ajuste fino se realizo sobre el dataset PolyAI/minds14, restringido al subcon
 
 - Reconocimiento automatico del habla (ASR) en ingles estadounidense de dominio telefonico, segun el corpus de ajuste.
 - Transcripcion de audio mono con la pipeline `automatic-speech-recognition` de transformers.
-- Compatible con los endpoints de HuggingFace (tag `endpoints_compatible`).
+- Compatible con los endpoints de Hugging Face (tag `endpoints_compatible`).
 - No se documenta soporte de tool calling, function calling ni capacidades de agente.
 - No se documenta modo thinking, vision, audio generativo ni capacidades multimodales adicionales.
 - Capacidades multilingues no disponibles: el modelo base es multilingue, pero el ajuste fino se ha realizado unicamente sobre el subconjunto en-US de minds14, por lo que el rendimiento en otros idiomas no esta garantizado ni evaluado.
@@ -70,16 +70,16 @@ No se han publicado en la informacion disponible resultados comparativos con otr
 - VRAM estimada para inferencia: inferior a 1 GB en fp32 para los 37,76 M de parametros; en la practica, el cuello de botella es el buffer de audio y el runtime de PyTorch, no el modelo.
 - GPU recomendadas: cualquier GPU consumer moderna (RTX 3060, RTX 4060, RTX 4090) es mas que suficiente; tambien funciona en CPU para inferencia por lotes pequenos.
 - Cabe en GPU consumer: si, practicamente en cualquier GPU con al menos 2 GB de VRAM, e incluso en CPU.
-- Opciones de despliegue: transformers con la pipeline `automatic-speech-recognition`, despliegue via HuggingFace Inference Endpoints (tag `endpoints_compatible`), y exportacion a otros runtimes no documentada en la informacion disponible.
+- Opciones de despliegue: transformers con la pipeline `automatic-speech-recognition`, despliegue via Hugging Face Inference Endpoints (tag `endpoints_compatible`), y exportacion a otros runtimes no documentada en la informacion disponible.
 - Latencia y throughput: no disponibles en la informacion proporcionada. Por el tamano del modelo, se espera que la latencia este dominada por el preprocesado de audio y la generacion autoregresiva, no por el coste computacional de los pesos.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto / audio | WER declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| markkeung/whisper-tiny-minds14-en-us | 37,76 M | ventanas de 30 s | 0,3241 (minds14 en-US) | Apache 2.0 | HuggingFace |
-| openai/whisper-tiny (base) | 37,76 M | ventanas de 30 s | no disponible en la informacion | Apache 2.0 | HuggingFace |
-| openai/whisper-base | 74,4 M | ventanas de 30 s | no disponible en la informacion | Apache 2.0 | HuggingFace |
+| markkeung/whisper-tiny-minds14-en-us | 37,76 M | ventanas de 30 s | 0,3241 (minds14 en-US) | Apache 2.0 | Hugging Face |
+| openai/whisper-tiny (base) | 37,76 M | ventanas de 30 s | no disponible en la informacion | Apache 2.0 | Hugging Face |
+| openai/whisper-base | 74,4 M | ventanas de 30 s | no disponible en la informacion | Apache 2.0 | Hugging Face |
 
 La comparacion directa con el modelo base no es posible con los datos disponibles, ya que la model card no reporta el WER de openai/whisper-tiny sobre el mismo split de minds14. Cualquier afirmacion sobre la mejora obtenida por el ajuste fino requeriria una evaluacion propia.
 
@@ -95,6 +95,6 @@ La comparacion directa con el modelo base no es posible con los datos disponible
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/markkeung/whisper-tiny-minds14-en-us
+- Modelo en Hugging Face: https://huggingface.co/markkeung/whisper-tiny-minds14-en-us
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Dataset de ajuste: https://huggingface.co/datasets/PolyAI/minds14

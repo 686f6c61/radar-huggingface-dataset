@@ -2,7 +2,7 @@
 
 ## Resumen
 
-svd-safety-l31_keep50_gap_b001 es un checkpoint de investigación derivado de meta-llama/Llama-3.1-8B-Instruct, comprimido con la técnica SVD-LLM hasta conservar el 50,10% de los parámetros densos y con un presupuesto del 0,100% de parámetros restaurados mediante la regla de selección `gap` (1.555 componentes singulares recuperados, semilla 42). Lo publica el usuario Jeesup en HuggingFace y no es un modelo conversacional de propósito general, sino una celda concreta de una rejilla experimental sobre reglas de selección de componentes y presupuestos de restauración.
+svd-safety-l31_keep50_gap_b001 es un checkpoint de investigación derivado de meta-llama/Llama-3.1-8B-Instruct, comprimido con la técnica SVD-LLM hasta conservar el 50,10% de los parámetros densos y con un presupuesto del 0,100% de parámetros restaurados mediante la regla de selección `gap` (1.555 componentes singulares recuperados, semilla 42). Lo publica el usuario Jeesup en Hugging Face y no es un modelo conversacional de propósito general, sino una celda concreta de una rejilla experimental sobre reglas de selección de componentes y presupuestos de restauración.
 
 El problema que aborda es la pérdida de comportamiento de seguridad provocada por la compresión por descomposición en valores singulares: la propia model card indica que algunas celdas de la rejilla están "deliberadamente degradadas en seguridad" respecto al modelo base, y el objetivo del estudio es cuantificar ese deterioro y probar mecanismos de recuperación. Los números publicados son contundentes: una tasa de éxito de ataque (ASR) de 0,4923 en AdvBench y 0,3898 en StrongREJECT, con una perplejidad de 2637,3782 en WikiText-2.
 
@@ -73,7 +73,7 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni comparaciones direct
 
 | Modelo | Parametros | Contexto | Perplejidad WikiText-2 | ASR AdvBench | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| svd-safety-l31_keep50_gap_b001 | 8,03 mil millones (50,10% denso segun el autor) | 128.000 tokens heredados | 2637,3782 | 0,4923 | Llama 3.1 Community License | Publico en HuggingFace, 0 descargas |
+| svd-safety-l31_keep50_gap_b001 | 8,03 mil millones (50,10% denso segun el autor) | 128.000 tokens heredados | 2637,3782 | 0,4923 | Llama 3.1 Community License | Publico en Hugging Face, 0 descargas |
 | meta-llama/Llama-3.1-8B-Instruct (base sin comprimir) | 8,03 mil millones | 128.000 tokens | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Llama 3.1 Community License | Publico, ampliamente desplegado |
 | Otras celdas de la rejilla del mismo autor | mismo orden (segun presupuesto) | 128.000 tokens heredados | no disponible | no disponible | Llama 3.1 Community License | Publicas o no, segun el autor |
 
@@ -92,7 +92,7 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni comparaciones direct
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l31_keep50_gap_b001
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l31_keep50_gap_b001
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Licencia Llama 3.1 y política de uso: incluidas como LICENSE y USE_POLICY.md en el propio repositorio del modelo
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante (los resultados devueltos corresponden a contenido no relacionado con el modelo)

@@ -87,10 +87,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cox-1-3b-int8 | 2,87 B | no disponible | Decisión tipada con probabilidades calibradas, INT8 | Apache-2.0 | HuggingFace (`Vitund/cox-1-3b-int8`) |
-| cox-1-3b (bf16) | 2,87 B | no disponible | Decisión tipada con probabilidades calibradas, bf16 | Apache-2.0 | HuggingFace (`Vitund/cox-1-3b`) |
-| Modelos de clasificación tipo encoder (p. ej. DeBERTa, RoBERTa) | 0,1-0,4 B típicamente | 512 tokens típicamente | Clasificación con etiquetas fijas por cabeza | MIT / Apache-2.0 según variante | HuggingFace |
-| LLM generativos pequeños con salida JSON | 1-4 B | variable | Generación de texto con formato estructurado | variable | HuggingFace |
+| cox-1-3b-int8 | 2,87 B | no disponible | Decisión tipada con probabilidades calibradas, INT8 | Apache-2.0 | Hugging Face (`Vitund/cox-1-3b-int8`) |
+| cox-1-3b (bf16) | 2,87 B | no disponible | Decisión tipada con probabilidades calibradas, bf16 | Apache-2.0 | Hugging Face (`Vitund/cox-1-3b`) |
+| Modelos de clasificación tipo encoder (p. ej. DeBERTa, RoBERTa) | 0,1-0,4 B típicamente | 512 tokens típicamente | Clasificación con etiquetas fijas por cabeza | MIT / Apache-2.0 según variante | Hugging Face |
+| LLM generativos pequeños con salida JSON | 1-4 B | variable | Generación de texto con formato estructurado | variable | Hugging Face |
 
 La comparación con clasificadores encoder es pertinente por tarea (clasificación), pero cox-1-3b-int8 se diferencia en que admite preguntas tipadas arbitrarias en tiempo de inferencia sin reentrenar la cabeza, y en que devuelve distribuciones calibradas en lugar de logits por etiqueta fija. Frente a LLM generativos pequeños que emiten JSON, la ventaja es la ausencia de errores de formato y la calibración; la desventaja es que no puede justificar ni explicar la decisión. No se dispone de datos de benchmarks comparativos directos con estas alternativas en la información proporcionada.
 
@@ -109,7 +109,7 @@ La comparación con clasificadores encoder es pertinente por tarea (clasificaci�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Vitund/cox-1-3b-int8
+- Modelo en Hugging Face: https://huggingface.co/Vitund/cox-1-3b-int8
 - Modelo base: https://huggingface.co/Vitund/cox-1-3b
 - Sitio de Vitund: https://vitund.ai
 - Contacto y licencias: opensource@vitund.ai

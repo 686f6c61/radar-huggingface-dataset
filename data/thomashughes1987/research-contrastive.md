@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ThomasHughes1987/research-contrastive` es un repositorio experimental publicado en HuggingFace por el usuario ThomasHughes1987 que contiene una implementacion propia de una arquitectura Perceiver orientada a tareas de aprendizaje contrastivo. No se trata de un modelo entrenado ni de un checkpoint con resultados publicados: la model card indica de forma explicita que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con benchmarks. El recuento real de parametros en safetensors es de 24.832, un orden de magnitud propio de un esqueleto de codigo para validar que el grafo se construye y ejecuta, no de un modelo con capacidad generativa util.
+`ThomasHughes1987/research-contrastive` es un repositorio experimental publicado en Hugging Face por el usuario ThomasHughes1987 que contiene una implementacion propia de una arquitectura Perceiver orientada a tareas de aprendizaje contrastivo. No se trata de un modelo entrenado ni de un checkpoint con resultados publicados: la model card indica de forma explicita que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con benchmarks. El recuento real de parametros en safetensors es de 24.832, un orden de magnitud propio de un esqueleto de codigo para validar que el grafo se construye y ejecuta, no de un modelo con capacidad generativa util.
 
 El interes del repositorio es, por tanto, de ingenieria y de investigacion metodologica: sirve como punto de partida reproducible para inspeccionar cambios de arquitectura (atencion estandar, fusion por co-atencion, activacion GELU y normalizacion RMSNorm) antes de lanzar un entrenamiento completo. La propia documentacion recomienda evaluar con un conjunto de validacion especifico de tarea, reportar la metrica en al menos tres semillas e incluir una linea base de capacidad comparable, ademas de conservar los logs de entrenamiento y las versiones de entorno.
 
@@ -78,7 +78,7 @@ No se dispone de datos verificados de modelos comparables dentro de la informaci
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos verificados |
 |---|---|---|---|---|---|
-| ThomasHughes1987/research-contrastive | 24.832 | no disponible | BSD-3-Clause | Repositorio HuggingFace, checkpoint de inicializacion | Si (ficha y model card) |
+| ThomasHughes1987/research-contrastive | 24.832 | no disponible | BSD-3-Clause | Repositorio Hugging Face, checkpoint de inicializacion | Si (ficha y model card) |
 | Perceiver IO | no disponible | no disponible | no disponible | no disponible | no disponible |
 | CLIP | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -96,6 +96,6 @@ No se dispone de datos verificados de modelos comparables dentro de la informaci
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ThomasHughes1987/research-contrastive
+- Repositorio en Hugging Face: https://huggingface.co/ThomasHughes1987/research-contrastive
 - Archivos incluidos en el repositorio (rutas relativas dentro del repo): `inference.py` (artefacto principal), `README.md`, `config.json` (configuracion de arquitectura), `training_args.json` (ajustes de experimento por defecto), `model.safetensors` (checkpoint de inicializacion).
 - Paper, blog, demo o repositorio adicional: no disponible. Las busquedas web realizadas no devolvieron enlaces relacionados con este modelo ni con su autor.

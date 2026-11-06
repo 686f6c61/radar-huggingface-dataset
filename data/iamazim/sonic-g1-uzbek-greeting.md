@@ -77,5 +77,5 @@ No se dispone de información sobre otros modelos de control de cuerpo completo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iamazim/sonic-g1-uzbek-greeting
+- Modelo en Hugging Face: https://huggingface.co/iamazim/sonic-g1-uzbek-greeting
 - Repositorio de GEAR-SONIC (GR00T-WholeBodyControl): https://github.com/NVlabs/GR00T-WholeBodyControl

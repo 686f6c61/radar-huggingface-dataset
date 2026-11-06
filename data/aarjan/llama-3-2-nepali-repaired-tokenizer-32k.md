@@ -87,7 +87,7 @@ No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K n
 
 | Alternativa | Tipo | Tamano de vocabulario | Ratio nepalí/ingles (FLORES-200 devtest) | Vocabulario original intacto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este tokenizador (brazo R2) | Tokenizador Llama 3.x con pre-tokenizador reparado y 32.000 merges nepalies | 160.256 | 1,01x | Si, todos los ids originales incluidos los especiales | Llama 3.2 Community License | HuggingFace, 0 descargas |
+| Este tokenizador (brazo R2) | Tokenizador Llama 3.x con pre-tokenizador reparado y 32.000 merges nepalies | 160.256 | 1,01x | Si, todos los ids originales incluidos los especiales | Llama 3.2 Community License | Hugging Face, 0 descargas |
 | Tokenizador original de Llama 3.2 | Tokenizador BPE de Llama 3.x | 128.256 | 2,58x | Referencia | Llama 3.2 Community License | Incluido en los modelos Llama 3.x |
 | Extension estandar de vocabulario (brazo no identificado en la informacion disponible) | Tokenizador Llama 3.x con vocabulario extendido sin reparar el pre-tokenizador | No disponible | No disponible | No disponible | No disponible | Citado en el articulo, no publicado como repositorio independiente |
 
@@ -109,7 +109,7 @@ No se dispone de datos sobre otros tokenizadores especificos para nepalí (por e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Aarjan/Llama-3.2-Nepali-Repaired-Tokenizer-32k
+- Hugging Face: https://huggingface.co/Aarjan/Llama-3.2-Nepali-Repaired-Tokenizer-32k
 - Repositorio de codigo, datos y pre-registro: https://github.com/arjanchaudharyy/nepali-pretokenizer-repair
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-1B
 - Articulo de referencia: Chaudhary, A.; Sharma, S.; Dhakal, N. *Extend or Repair? Vocabulary Extension Cannot Cross a Pre-Tokenizer Boundary*, Naamche Labs, 2026, preprint (URL en el repositorio de GitHub indicado arriba; no se ha localizado DOI ni enlace de publicacion en la informacion disponible)

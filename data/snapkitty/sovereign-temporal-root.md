@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sovereign Temporal Root no es un modelo de inteligencia artificial, sino un protocolo criptográfico de cifrado simétrico con rotación temporal de claves y vinculación hardware. Desarrollado por Ahmad Ali Parr y publicado bajo el trust Bel Esprit D'Accord Irrevocable Trust, el repositorio en HuggingFace contiene la especificación y una demo en JavaScript que implementa el derivado de claves. El protocolo resuelve el problema de la coordinación segura en entornos disputados: cliente y servidor derivan la misma clave a partir de un identificador hardware, una sal fija y el epoch temporal actual, sin intercambio de claves ni handshake. Su relevancia radica en el "efecto puerto fantasma": las claves capturadas caducan automáticamente con cada epoch, haciendo inútiles las llaves robadas sin necesidad de revocación explícita. No se trata de un modelo con parámetros ni entrenamiento, por lo que las especificaciones habituales de modelos de lenguaje no aplican.
+Sovereign Temporal Root no es un modelo de inteligencia artificial, sino un protocolo criptográfico de cifrado simétrico con rotación temporal de claves y vinculación hardware. Desarrollado por Ahmad Ali Parr y publicado bajo el trust Bel Esprit D'Accord Irrevocable Trust, el repositorio en Hugging Face contiene la especificación y una demo en JavaScript que implementa el derivado de claves. El protocolo resuelve el problema de la coordinación segura en entornos disputados: cliente y servidor derivan la misma clave a partir de un identificador hardware, una sal fija y el epoch temporal actual, sin intercambio de claves ni handshake. Su relevancia radica en el "efecto puerto fantasma": las claves capturadas caducan automáticamente con cada epoch, haciendo inútiles las llaves robadas sin necesidad de revocación explícita. No se trata de un modelo con parámetros ni entrenamiento, por lo que las especificaciones habituales de modelos de lenguaje no aplican.
 
 ## Especificaciones técnicas
 
@@ -81,7 +81,7 @@ La diferencia clave es que Sovereign Temporal Root elimina por completo el inter
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Snapkitty/sovereign-temporal-root
+- Repositorio Hugging Face: https://huggingface.co/Snapkitty/sovereign-temporal-root
 - Demo en vivo: https://snapkittywest.github.io/sovereign-temporal-root/
 - Licencia BSL-1.1 y AGPL-3.0 (referenciadas en la model card)
 - Autor: Ahmad Ali Parr (sin enlace directo proporcionado)

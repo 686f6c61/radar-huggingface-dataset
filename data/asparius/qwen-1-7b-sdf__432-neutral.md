@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `asparius/qwen-1.7b-sdf__432-neutral` es un ajuste fino supervisado (SFT) del modelo `locuslab/safelm-1.7b`, publicado por el usuario asparius en HuggingFace. Se trata de un modelo de generacion de texto orientado a conversacion, entrenado con la libreria TRL (version 1.6.0) sobre Transformers 5.3.0.dev0 y PyTorch 2.9.1. Por el nombre y por el modelo base, se trata de un transformer pequeno, en el entorno de los 1.700 millones de parametros, aunque la model card no confirma ni la arquitectura exacta ni el numero de parametros.
+El modelo `asparius/qwen-1.7b-sdf__432-neutral` es un ajuste fino supervisado (SFT) del modelo `locuslab/safelm-1.7b`, publicado por el usuario asparius en Hugging Face. Se trata de un modelo de generacion de texto orientado a conversacion, entrenado con la libreria TRL (version 1.6.0) sobre Transformers 5.3.0.dev0 y PyTorch 2.9.1. Por el nombre y por el modelo base, se trata de un transformer pequeno, en el entorno de los 1.700 millones de parametros, aunque la model card no confirma ni la arquitectura exacta ni el numero de parametros.
 
 El modelo no incluye informacion sobre el dataset de entrenamiento, el numero de tokens utilizados, el idioma o idiomas soportados, la longitud de contexto ni la licencia aplicable. La model card se limita a indicar que se genero con `Trainer`/TRL mediante SFT y enlaza a una ejecucion de Weights & Biases con nombre `ais-em-midtrain`, lo que sugiere que forma parte de una linea de experimentos de ajuste (posiblemente relacionados con alineamiento o seguridad, dado el nombre del modelo base SafeLM), pero no hay documentacion que lo confirme.
 
@@ -45,7 +45,7 @@ El entrenamiento se realizo mediante SFT (supervised fine-tuning) con TRL 1.6.0,
 - Generacion de respuestas conversacionales de un solo turno: el ejemplo de la model card muestra su uso para responder preguntas abiertas, adecuado para demos y validacion de plantillas de chat.
 - Evaluacion de riesgos y red-teaming de modelos pequenos: puede emplearse como sujeto de pruebas en baterias de prompts adversarios para estudiar como un ajuste sobre un modelo "seguro" modifica las respuestas.
 - Generacion de datos sinteticos a pequena escala: util para crear borradores de conversaciones que luego se filtran o revisan antes de usarse en otros pipelines, siempre con supervision humana.
-- Educacion y docencia: como ejemplo practico de modelo ajustado con SFT para explicar el flujo completo (modelo base, dataset, entrenamiento, publicacion en HuggingFace).
+- Educacion y docencia: como ejemplo practico de modelo ajustado con SFT para explicar el flujo completo (modelo base, dataset, entrenamiento, publicacion en Hugging Face).
 
 En todos los casos debe tenerse en cuenta que no hay licencia declarada, ni benchmarks, ni garantias de calidad, por lo que no se recomienda su uso en produccion ni en aplicaciones orientadas a usuarios finales.
 
@@ -72,11 +72,11 @@ No hay datos de rendimiento de este modelo, por lo que la comparacion se limita 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| `asparius/qwen-1.7b-sdf__432-neutral` | no disponible (~1,7B segun el nombre) | no disponible | no disponible | HuggingFace, 0 descargas | no disponible |
-| `locuslab/safelm-1.7b` (modelo base) | 1,7B (segun denominacion) | no disponible | no disponible | HuggingFace | no disponible |
-| `Qwen/Qwen2.5-1.5B-Instruct` | 1,5B | 32.768 tokens | Apache-2.0 | HuggingFace | benchmarks publicados por el autor |
-| `HuggingFaceTB/SmolLM2-1.7B-Instruct` | 1,7B | 8.192 tokens | Apache-2.0 | HuggingFace | benchmarks publicados por el autor |
-| `google/gemma-2-2b-it` | 2,6B | 8.192 tokens | Gemma Terms of Use | HuggingFace | benchmarks publicados por el autor |
+| `asparius/qwen-1.7b-sdf__432-neutral` | no disponible (~1,7B segun el nombre) | no disponible | no disponible | Hugging Face, 0 descargas | no disponible |
+| `locuslab/safelm-1.7b` (modelo base) | 1,7B (segun denominacion) | no disponible | no disponible | Hugging Face | no disponible |
+| `Qwen/Qwen2.5-1.5B-Instruct` | 1,5B | 32.768 tokens | Apache-2.0 | Hugging Face | benchmarks publicados por el autor |
+| `HuggingFaceTB/SmolLM2-1.7B-Instruct` | 1,7B | 8.192 tokens | Apache-2.0 | Hugging Face | benchmarks publicados por el autor |
+| `google/gemma-2-2b-it` | 2,6B | 8.192 tokens | Gemma Terms of Use | Hugging Face | benchmarks publicados por el autor |
 
 La diferencia principal frente a las alternativas es la ausencia total de documentacion en este modelo: no declara licencia, no publica evaluaciones y no especifica contexto ni idiomas, mientras que las alternativas citadas si lo hacen.
 
@@ -94,7 +94,7 @@ La diferencia principal frente a las alternativas es la ausencia total de docume
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/asparius/qwen-1.7b-sdf__432-neutral
+- Modelo en Hugging Face: https://huggingface.co/asparius/qwen-1.7b-sdf__432-neutral
 - Modelo base: https://huggingface.co/locuslab/safelm-1.7b
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/ocagatankuisai-ko-university/ais-em-midtrain/runs/2ixwmcab

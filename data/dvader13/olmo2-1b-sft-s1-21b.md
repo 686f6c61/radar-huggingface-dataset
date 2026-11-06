@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento del modelo de 1B para comparar con los de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dvader13/olmo2-1b-sft-s1-21b
+- Hugging Face: https://huggingface.co/dvader13/olmo2-1b-sft-s1-21b
 - Informe técnico de OLMo 2 (arXiv): https://arxiv.org/abs/2501.00656
 - Página oficial de OLMo 2 (Ai2): https://allenai.org/olmo2
-- Colección OLMo 2 en HuggingFace: https://huggingface.co/collections/allenai/olmo-2
+- Colección OLMo 2 en Hugging Face: https://huggingface.co/collections/allenai/olmo-2

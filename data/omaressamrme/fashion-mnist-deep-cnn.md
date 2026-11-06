@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`fashion-mnist-deep-cnn` es una red neuronal convolucional (CNN) profunda entrenada desde cero para clasificar imagenes de 28x28 pixeles en escala de grises en las 10 categorias de prendas del dataset Fashion-MNIST. Lo desarrolla el usuario de HuggingFace `omaressamrme` (Omar Essam) como parte de un estudio comparativo entre un perceptron multicapa (MLP), una CNN pequena, esta CNN profunda y una variante con aumento de datos, publicado en GitHub y en un articulo de dev.to sobre "confidence gating" y Grad-CAM.
+`fashion-mnist-deep-cnn` es una red neuronal convolucional (CNN) profunda entrenada desde cero para clasificar imagenes de 28x28 pixeles en escala de grises en las 10 categorias de prendas del dataset Fashion-MNIST. Lo desarrolla el usuario de Hugging Face `omaressamrme` (Omar Essam) como parte de un estudio comparativo entre un perceptron multicapa (MLP), una CNN pequena, esta CNN profunda y una variante con aumento de datos, publicado en GitHub y en un articulo de dev.to sobre "confidence gating" y Grad-CAM.
 
 No es un modelo de lenguaje ni un modelo fundacional: es un clasificador de imagenes de proposito especifico, con 288.682 parametros entrenables, pensado como referencia docente y como ejemplo de pipeline de clasificacion con filtrado por umbral de confianza. Su relevancia practica esta en la combinacion de un rendimiento solido (93,67 % de accuracy en test) con un tamano minimo que permite entrenamiento e inferencia en CPU, y en la documentacion de una estrategia de "confidence gate" que descarta predicciones por debajo de un umbral de probabilidad para derivarlas a revision humana.
 
@@ -94,7 +94,7 @@ No se han publicado en la informacion disponible resultados comparativos con otr
 
 | Modelo | Parametros | Entrada | Accuracy en Fashion-MNIST | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fashion-mnist-deep-cnn (este modelo) | 288.682 | 28x28x1 | 0,9367 (declarado) | MIT | HuggingFace, formato Keras |
+| fashion-mnist-deep-cnn (este modelo) | 288.682 | 28x28x1 | 0,9367 (declarado) | MIT | Hugging Face, formato Keras |
 | MLP del mismo estudio | no disponible en la informacion | 28x28x1 | no disponible en la informacion | no disponible | GitHub del autor |
 | CNN pequena del mismo estudio | no disponible en la informacion | 28x28x1 | no disponible en la informacion | no disponible | GitHub del autor |
 | Variante con aumento de datos del mismo estudio | no disponible en la informacion | 28x28x1 | no disponible en la informacion | no disponible | GitHub del autor |
@@ -114,7 +114,7 @@ No se dispone de datos de benchmarks de alternativas externas en la informacion 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/omaressamrme/fashion-mnist-deep-cnn
+- Modelo en Hugging Face: https://huggingface.co/omaressamrme/fashion-mnist-deep-cnn
 - Repositorio GitHub del estudio: https://github.com/engomaressam/fashion-mnist-cnn-gradcam
 - Articulo en dev.to: https://dev.to/eng_omaressam_7cb0e2a9c/an-image-classifier-you-can-trust-80-of-the-time-confidence-gating-and-grad-cam-45he
 - Notebook de Kaggle: https://www.kaggle.com/code/engomaressam/fashion-mnist-cnns-confidence-gating-grad-cam

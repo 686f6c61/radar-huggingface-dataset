@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento cualit
 
 ## Enlaces
 
-- [HuggingFace: altertable/vela3-fast-onnx-int8](https://huggingface.co/altertable/vela3-fast-onnx-int8)
+- [Hugging Face: altertable/vela3-fast-onnx-int8](https://huggingface.co/altertable/vela3-fast-onnx-int8)
 - [Modelo base: vllm-sr/vela3-fast](https://huggingface.co/vllm-sr/vela3-fast)
 - [Familia Vela 3.0](https://huggingface.co/vllm-sr/vela3-fast#the-family)
 - [Modelo de origen: dmis-lab/UltraBERT-380M](https://huggingface.co/dmis-lab/UltraBERT-380M)

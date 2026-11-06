@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Yangyuki/dino-checkpoint-2024 es un prototipo de investigación publicado en HuggingFace por el usuario Yangyuki bajo licencia MIT. Se presenta como una implementación propia de arquitectura Dino orientada a tareas de recuperación (retrieval), con escala declarada "giant", atención de ventana deslizante, fusión mediante concat mlp, activación mish y normalización groupnorm. El repositorio contiene pipeline.py, config.json, training_args.json y model.safetensors.
+Yangyuki/dino-checkpoint-2024 es un prototipo de investigación publicado en Hugging Face por el usuario Yangyuki bajo licencia MIT. Se presenta como una implementación propia de arquitectura Dino orientada a tareas de recuperación (retrieval), con escala declarada "giant", atención de ventana deslizante, fusión mediante concat mlp, activación mish y normalización groupnorm. El repositorio contiene pipeline.py, config.json, training_args.json y model.safetensors.
 
 El dato fundamental es que no se trata de un modelo entrenado: el propio autor indica que model.safetensors es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no debe presentarse como un checkpoint con benchmarks. El recuento de parámetros registrado en safetensors es de 24.832, una cifra que contrasta de forma notable con la escala "giant" declarada en la model card y que apunta a un esqueleto de arquitectura más que a un modelo funcional.
 
@@ -22,7 +22,7 @@ Su relevancia actual es, por tanto, de andamiaje: documenta formatos de fichero,
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
 | Formato de pesos | safetensors (más implementación en Python/PyTorch: pipeline.py) |
-| Pipeline en HuggingFace | no disponible |
+| Pipeline en Hugging Face | no disponible |
 | Tamaño del repositorio | 0,0 GB |
 | Descargas / likes | 0 / 0 |
 | Fecha de creación | 14 de septiembre de 2026 |
@@ -92,7 +92,7 @@ No disponible. En la información proporcionada no se identifica ningún modelo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Yangyuki/dino-checkpoint-2024
+- Modelo en Hugging Face: https://huggingface.co/Yangyuki/dino-checkpoint-2024
 - Ficheros incluidos en el repositorio: pipeline.py (artefacto principal), README.md (documentación), config.json (configuración de arquitectura), training_args.json (ajustes de experimento por defecto), model.safetensors (checkpoint de inicialización)
 - Paper, blog o repositorio adicional: no disponible en la información proporcionada
 - Demo o space asociado: no disponible en la información proporcionada

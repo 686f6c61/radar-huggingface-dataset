@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BUD-E_V1_1_voiceclap10_thinking_bs128_1n_smoke es un checkpoint publicado por el usuario VoiceNetCkpt en HuggingFace, correspondiente a una ejecución de entrenamiento de los experimentos VoiceCLAP. No es una model card descriptiva al uso: la documentación del repositorio se limita a indicar que contiene los pesos finales, junto con los ficheros de configuración y los resultados de evaluación de la ejecución, y que excluye épocas intermedias, estado del optimizador y registros.
+BUD-E_V1_1_voiceclap10_thinking_bs128_1n_smoke es un checkpoint publicado por el usuario VoiceNetCkpt en Hugging Face, correspondiente a una ejecución de entrenamiento de los experimentos VoiceCLAP. No es una model card descriptiva al uso: la documentación del repositorio se limita a indicar que contiene los pesos finales, junto con los ficheros de configuración y los resultados de evaluación de la ejecución, y que excluye épocas intermedias, estado del optimizador y registros.
 
 El repositorio ocupa 1,3 GB y contiene dos ficheros, entre ellos `checkpoints/epoch_latest.pt`, que es el único peso identificado explícitamente. El identificador codifica varios indicios de la ejecución (bs128 apunta a un tamaño de lote de 128, 1n podría referirse a un único nodo, thinking a una fase de razonamiento explícito y smoke a una prueba de humo), aunque ninguno de estos extremos está confirmado en la información disponible.
 
@@ -83,6 +83,6 @@ No disponible. No se conocen públicamente ni la arquitectura, ni el número de 
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/VoiceNetCkpt/BUD-E_V1_1_voiceclap10_thinking_bs128_1n_smoke
+- Página del modelo en Hugging Face: https://huggingface.co/VoiceNetCkpt/BUD-E_V1_1_voiceclap10_thinking_bs128_1n_smoke
 - Índice de todas las ejecuciones de VoiceCLAP: https://huggingface.co/VoiceNetCkpt/voiceclap-checkpoints-index
 - No se han encontrado papers, blogs, repositorios de código ni demos adicionales en la información disponible.

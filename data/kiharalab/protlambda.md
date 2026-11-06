@@ -4,7 +4,7 @@
 
 ProtLAMBDA es un modelo de lenguaje de proteínas (protein language model, PLM) desarrollado por el Kihara Bioinformatics Laboratory de la Universidad de Purdue (KiharaLab). Su nombre completo, Prot-LAMBDA, responde a "Protein LAnguage Model Boosted with Distance Awareness", lo que indica que incorpora aprendizaje explícito de distancias entre residuos para mejorar el razonamiento estructural sobre proteínas. El modelo está pensado para tareas de comprensión estructural versátil, y sirve como base para LAMBDAFold, un pipeline de predicción de estructura 3D a partir de secuencia única, y para LAMBDAFold-RAG, una extensión con recuperación aumentada que acepta plantillas estructurales estilo AlphaFold2.
 
-La relevancia de este modelo radica en su enfoque en el aprendizaje de distancias, una característica que puede mejorar la precisión en tareas donde la estructura tridimensional es crítica, como el plegamiento de proteínas o la predicción de interacciones. Aunque el modelo se encuentra aún en fase de publicación (el artículo está en revisión), su integración con LAMBDAFold y LAMBDAFold-RAG lo posiciona como una alternativa a otros PLM especializados en estructura. La información pública disponible es limitada: la model card de HuggingFace no detalla arquitectura, número de parámetros ni otros datos técnicos, y el repositorio tiene un tamaño de 2,9 GB, lo que sugiere un modelo de tamaño considerable, pero sin confirmación oficial.
+La relevancia de este modelo radica en su enfoque en el aprendizaje de distancias, una característica que puede mejorar la precisión en tareas donde la estructura tridimensional es crítica, como el plegamiento de proteínas o la predicción de interacciones. Aunque el modelo se encuentra aún en fase de publicación (el artículo está en revisión), su integración con LAMBDAFold y LAMBDAFold-RAG lo posiciona como una alternativa a otros PLM especializados en estructura. La información pública disponible es limitada: la model card de Hugging Face no detalla arquitectura, número de parámetros ni otros datos técnicos, y el repositorio tiene un tamaño de 2,9 GB, lo que sugiere un modelo de tamaño considerable, pero sin confirmación oficial.
 
 ## Especificaciones tecnicas
 
@@ -66,7 +66,7 @@ No se dispone de datos de comparación con otros modelos de lenguaje de proteín
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/KiharaLab/ProtLAMBDA
+- Hugging Face: https://huggingface.co/KiharaLab/ProtLAMBDA
 - GitHub (repositorio del proyecto): https://github.com/kiharalab/Prot-LAMBDA
 - Web del Kihara Lab: https://kiharalab.org/
 - Paper (en revisión): Ibtehaz, N., Zhang, Z., Kagaya, Y., Xu, M., Tomii, K., & Kihara, D. Prot-LAMBDA: Explicit Distance Learning Enhances Structural Reasoning in Protein Language Models. (In submission)

@@ -74,11 +74,11 @@ Los datos de la tabla proceden de las model cards publicas de cada modelo y no h
 
 | Modelo | Parametros | Contexto | Licencia | Formatos publicados | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen2-7B-Instruct OpenVINO INT8 (este repo) | 7,6B | no indicada; 32.768 en el base | Apache-2.0 | OpenVINO IR INT8 | HuggingFace, 0 descargas |
-| Qwen/Qwen2-7B-Instruct | 7,6B | 32.768 (ampliable con YaRN) | Apache-2.0 | safetensors | HuggingFace, ampliamente usado |
-| Mistral-7B-Instruct-v0.3 | 7,25B | 32.768 | Apache-2.0 | safetensors, GGUF | HuggingFace |
-| Llama-3.1-8B-Instruct | 8,03B | 128.000 | Llama 3.1 Community License | safetensors, GGUF | HuggingFace |
-| Gemma-2-9B-it | 9,24B | 8.192 | Gemma Terms of Use | safetensors, GGUF | HuggingFace |
+| Qwen2-7B-Instruct OpenVINO INT8 (este repo) | 7,6B | no indicada; 32.768 en el base | Apache-2.0 | OpenVINO IR INT8 | Hugging Face, 0 descargas |
+| Qwen/Qwen2-7B-Instruct | 7,6B | 32.768 (ampliable con YaRN) | Apache-2.0 | safetensors | Hugging Face, ampliamente usado |
+| Mistral-7B-Instruct-v0.3 | 7,25B | 32.768 | Apache-2.0 | safetensors, GGUF | Hugging Face |
+| Llama-3.1-8B-Instruct | 8,03B | 128.000 | Llama 3.1 Community License | safetensors, GGUF | Hugging Face |
+| Gemma-2-9B-it | 9,24B | 8.192 | Gemma Terms of Use | safetensors, GGUF | Hugging Face |
 
 La diferencia relevante frente a las alternativas no esta en capacidad, sino en formato y soporte: Mistral, Llama y Gemma cuentan con ecosistemas de cuantizacion GGUF listos para llama.cpp y Ollama, mientras que este artefacto solo es consumible desde OpenVINO. A cambio, ofrece un camino de despliegue en CPU con cuantizacion oficial via NNCF.
 
@@ -97,7 +97,7 @@ La diferencia relevante frente a las alternativas no esta en capacidad, sino en 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Nekodeus/qwen2-7b-instruct-openvino
+- Repositorio en Hugging Face: https://huggingface.co/Nekodeus/qwen2-7b-instruct-openvino
 - Modelo base: https://huggingface.co/Qwen/Qwen2-7B-Instruct
 - optimum-intel (herramienta de exportacion): https://github.com/huggingface/optimum-intel
 - Documentacion de OpenVINO: https://docs.openvino.ai

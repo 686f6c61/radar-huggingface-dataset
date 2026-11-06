@@ -58,7 +58,7 @@ Además, el autor muestra una mejora en el F1 del plan de contenidos en una nich
 - **VRAM estimada para inferencia**: al tratarse de un modelo de 117 millones de parámetros en FP32, ocupa aproximadamente 470 MB de VRAM. En FP16 (si se convierte) serían ~235 MB. Es viable en cualquier GPU con al menos 2 GB de VRAM.
 - **GPU recomendadas**: funciona en GPUs de consumo como RTX 3060, RTX 4060 o superiores. El autor entrenó en una RTX 4090, pero la inferencia es ligera.
 - **¿Cabe en GPU de consumo?**: sí, cabe en cualquier GPU moderna, incluso en CPU si se usa la versión cuantizada, aunque no se publican cuantizaciones oficiales.
-- **Opciones de despliegue**: se puede usar con la librería `sentence-transformers` en Python, o servir con `text-embeddings-inference` (indicado en los tags de HuggingFace). También es compatible con `FastAPI` y pipelines de automatización como n8n.
+- **Opciones de despliegue**: se puede usar con la librería `sentence-transformers` en Python, o servir con `text-embeddings-inference` (indicado en los tags de Hugging Face). También es compatible con `FastAPI` y pipelines de automatización como n8n.
 - **Latencia y throughput**: para un batch de pares de consultas cortas (64 tokens), la inferencia en GPU tarda milisegundos por par. El autor indica que para un núcleo de 30.000 consultas se generan del orden de cien mil pares candidatos y se procesan en minutos.
 
 ## Comparativa con modelos similares
@@ -84,7 +84,7 @@ No hay datos de rendimiento comparativo directo de kwtopic-pairs con otros cross
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Krasovskiy/kwtopic-pairs)
-- [Perfil del autor en HuggingFace](https://huggingface.co/Krasovskiy)
+- [Modelo en Hugging Face](https://huggingface.co/Krasovskiy/kwtopic-pairs)
+- [Perfil del autor en Hugging Face](https://huggingface.co/Krasovskiy)
 - [Sitio web del autor (Andrey Krasovskiy)](https://www.krasovskiy.team/)
 - [Modelo base: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2](https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2)

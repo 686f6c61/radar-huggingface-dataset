@@ -85,7 +85,7 @@ El modelo se posiciona como una alternativa ligera al core de 27B, ofreciendo el
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/exeterminal/Exe-Turbo-S-V1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/exeterminal/Exe-Turbo-S-V1-GGUF
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-8B-A1B
 - Licencia LFM 1.0: https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/main/LICENSE
 - Modelo core de la familia: https://huggingface.co/exeterminal/Exe-Core-Dynamic-V1-GGUF

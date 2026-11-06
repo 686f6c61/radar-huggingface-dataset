@@ -6,7 +6,7 @@
 
 El problema que aborda es el question answering financiero sobre datos de encuestas de hogares (las cuatro fuentes CHFS, CGSS, CFPS y CLDS), un dominio en el que los conjuntos de referencia son heterogéneos y las métricas agregadas esconden un desequilibrio fuerte entre versiones de pregunta. El autor reporta una evaluación sobre un subconjunto común congelado de 240.458 filas y 119 versiones de pregunta, con accuracy de 0,7388 y F1 macro por pregunta de 0,3599.
 
-Su relevancia es limitada y muy específica: se trata de un checkpoint de investigación orientado a reproducibilidad y a comparativas de entrenamiento dentro del ecosistema Laya (paquete `laya==0.4.2`), no de un modelo listo para producto. En el momento de redactar esta ficha el repositorio registra 0 descargas y 0 "likes", sin pipeline declarado en HuggingFace.
+Su relevancia es limitada y muy específica: se trata de un checkpoint de investigación orientado a reproducibilidad y a comparativas de entrenamiento dentro del ecosistema Laya (paquete `laya==0.4.2`), no de un modelo listo para producto. En el momento de redactar esta ficha el repositorio registra 0 descargas y 0 "likes", sin pipeline declarado en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -77,8 +77,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `ya9919/laya-finance-matched-sft-200k` | 421,3 M | no disponible | Accuracy 0,7388 / F1 macro 0,3599 en subconjunto común CHFS/CGSS (240.458 filas) | Apache-2.0 | HuggingFace, 0 descargas |
-| `convaiinnovations/laya` (modelo base) | no disponible | no disponible | no disponible en esta ficha (checkpoint "task-trained" upstream) | no disponible | HuggingFace |
+| `ya9919/laya-finance-matched-sft-200k` | 421,3 M | no disponible | Accuracy 0,7388 / F1 macro 0,3599 en subconjunto común CHFS/CGSS (240.458 filas) | Apache-2.0 | Hugging Face, 0 descargas |
+| `convaiinnovations/laya` (modelo base) | no disponible | no disponible | no disponible en esta ficha (checkpoint "task-trained" upstream) | no disponible | Hugging Face |
 | Otras alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre modelos comparables de la misma categoría (encoder con cabeza de decisión para QA financiero de opción múltiple) en la información proporcionada. El único punto de comparación documentado es el modelo base, del que no se detallan parámetros ni métricas, por lo que no es posible establecer una comparación cuantitativa del efecto del ajuste fino.
@@ -101,7 +101,7 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ya9919/laya-finance-matched-sft-200k
+- Modelo en Hugging Face: https://huggingface.co/ya9919/laya-finance-matched-sft-200k
 - Modelo base: https://huggingface.co/convaiinnovations/laya
 - Repositorio de reproducción y evidencia agregada (mas-simulation): https://github.com/KataDavidXD/mas-simulation
 - Paper: no disponible

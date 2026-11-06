@@ -2,7 +2,7 @@
 
 ## Resumen
 
-IML es un modelo de segmentación de imágenes orientado a la detección de imágenes sintéticas generadas por difusión. Lo publica el usuario KhangTruong en HuggingFace bajo licencia Apache 2.0 y se distribuye con la librería `sid-unet`, un framework propio de entrenamiento y gestión de checkpoints (comandos `sid-pull`, `sid-train` y `sid-push`). El modelo aborda un problema creciente en verificación de contenido: distinguir y localizar espacialmente las regiones de una imagen que han sido generadas o manipuladas por modelos de difusión.
+IML es un modelo de segmentación de imágenes orientado a la detección de imágenes sintéticas generadas por difusión. Lo publica el usuario KhangTruong en Hugging Face bajo licencia Apache 2.0 y se distribuye con la librería `sid-unet`, un framework propio de entrenamiento y gestión de checkpoints (comandos `sid-pull`, `sid-train` y `sid-push`). El modelo aborda un problema creciente en verificación de contenido: distinguir y localizar espacialmente las regiones de una imagen que han sido generadas o manipuladas por modelos de difusión.
 
 La información disponible es muy limitada. El repositorio ocupa 10,1 GB y contiene únicamente checkpoints en formato PyTorch (`.pt`), un fichero `config.yaml`, un `manifest.json` con el catálogo de versiones y reportes de evaluación. No se publican detalles sobre la arquitectura interna, el número de parámetros, la longitud de contexto ni los datos de entrenamiento. La única versión activa es `v1`, con una puntuación de validación de 0,3818 en la época 4, lo que sugiere un entrenamiento muy corto y un rendimiento todavía modesto.
 
@@ -76,5 +76,5 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/KhangTruong/IML
+- Hugging Face: https://huggingface.co/KhangTruong/IML
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios de código o demos.

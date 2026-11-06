@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Ik45/qwen2.5-0.5b-arabic-classic-it` es un modelo publicado en HuggingFace por el usuario `Ik45`. Algunas etiquetas indican que se basa en la familia `qwen2` y que utiliza la librería `transformers`. Según el nombre del repositorio, podría tratarse de un ajuste orientado a árabe clásico e instrucciones, pero la model card es autogenerada y no contiene información que lo confirme. El modelo tiene `385.277.184` parámetros totales, un tamaño de repositorio de `1.5 GB` y está publicado como pipeline de `feature-extraction`. No tiene descargas ni likes, lo que indica que es un modelo recién subido y sin adopción documentada. No se dispone de datos sobre licencia, idiomas, contexto, datos de entrenamiento ni evaluaciones.
+El repositorio `Ik45/qwen2.5-0.5b-arabic-classic-it` es un modelo publicado en Hugging Face por el usuario `Ik45`. Algunas etiquetas indican que se basa en la familia `qwen2` y que utiliza la librería `transformers`. Según el nombre del repositorio, podría tratarse de un ajuste orientado a árabe clásico e instrucciones, pero la model card es autogenerada y no contiene información que lo confirme. El modelo tiene `385.277.184` parámetros totales, un tamaño de repositorio de `1.5 GB` y está publicado como pipeline de `feature-extraction`. No tiene descargas ni likes, lo que indica que es un modelo recién subido y sin adopción documentada. No se dispone de datos sobre licencia, idiomas, contexto, datos de entrenamiento ni evaluaciones.
 
 ## Especificaciones tecnicas
 
@@ -70,7 +70,7 @@ No se dispone de datos suficientes para una comparativa completa. El modelo pare
 |---|---|---|---|---|
 | Ik45/qwen2.5-0.5b-arabic-classic-it | 385.277.184 | No disponible | No disponible | Repositorio analizado; sin documentación |
 | Qwen/Qwen2.5-0.5B | No disponible | No disponible | No disponible | Modelo base de la familia Qwen2.5 mencionado en la búsqueda web |
-| Colección Qwen2.5 | No disponible | No disponible | No disponible | Colección de modelos Qwen2.5 en HuggingFace |
+| Colección Qwen2.5 | No disponible | No disponible | No disponible | Colección de modelos Qwen2.5 en Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -84,6 +84,6 @@ No se dispone de datos suficientes para una comparativa completa. El modelo pare
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Ik45/qwen2.5-0.5b-arabic-classic-it
+- Hugging Face del modelo: https://huggingface.co/Ik45/qwen2.5-0.5b-arabic-classic-it
 - Modelo base Qwen2.5-0.5B: https://huggingface.co/Qwen/Qwen2.5-0.5B
 - Colección Qwen2.5: https://huggingface.co/collections/Qwen/qwen25

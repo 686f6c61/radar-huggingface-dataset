@@ -76,12 +76,12 @@ Para la conversión documento a Markdown, NuMind utilizó un método de evaluaci
 
 | Modelo | Parametros | Contexto | Puntuacion extraccion¹ | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NuExtract3 (4B) | 4,5B | No disponible | 0,651 | Apache 2.0 | HuggingFace, API |
-| gemma-4-E4B-it | ~4B | No disponible | 0,538 | Gemma license | HuggingFace |
-| Qwen3.5-4B | 4,5B | No disponible | 0,417 | Apache 2.0 | HuggingFace |
-| Qwen3.5-9B | 9B | No disponible | 0,479 | Apache 2.0 | HuggingFace |
+| NuExtract3 (4B) | 4,5B | No disponible | 0,651 | Apache 2.0 | Hugging Face, API |
+| gemma-4-E4B-it | ~4B | No disponible | 0,538 | Gemma license | Hugging Face |
+| Qwen3.5-4B | 4,5B | No disponible | 0,417 | Apache 2.0 | Hugging Face |
+| Qwen3.5-9B | 9B | No disponible | 0,479 | Apache 2.0 | Hugging Face |
 | GLM-4.6V-Flash | No disponible | No disponible | 0,435 | Propietaria (API) | API |
-| Ministral-3-3B | 3B | No disponible | 0,240 | Mistral license | HuggingFace |
+| Ministral-3-3B | 3B | No disponible | 0,240 | Mistral license | Hugging Face |
 
 ¹ Puntuación media en el benchmark interno de extracción estructurada de NuMind (mayor es mejor).
 
@@ -99,7 +99,7 @@ NuExtract3 supera claramente a modelos de tamaño similar y incluso a Qwen3.5-9B
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/numind/NuExtract3
+- Modelo en Hugging Face: https://huggingface.co/numind/NuExtract3
 - Espacio de demostración: https://huggingface.co/spaces/numind/NuExtract-3-4B
 - Blog de lanzamiento: https://about.nuextract.ai/blog/nuextract-3-release
 - Repositorio GitHub: https://github.com/numindai/nuextract

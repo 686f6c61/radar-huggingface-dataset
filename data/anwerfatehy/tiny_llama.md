@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tiny_Llama es un checkpoint publicado en HuggingFace por el usuario ANWERFATEHY bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica: únicamente incluye la declaración de licencia, sin información sobre arquitectura, datos de entrenamiento, tokenizador ni uso previsto. El repositorio, sin embargo, ocupa 119,9 GB, un tamaño desproporcionado para cualquier modelo que se autodenomine "Tiny", lo que sugiere pesos en precisión alta de un modelo de decenas de miles de millones de parámetros o, alternativamente, artefactos auxiliares (checkpoints intermedios, estados del optimizador u otros ficheros) que no forman parte de un modelo desplegable.
+Tiny_Llama es un checkpoint publicado en Hugging Face por el usuario ANWERFATEHY bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica: únicamente incluye la declaración de licencia, sin información sobre arquitectura, datos de entrenamiento, tokenizador ni uso previsto. El repositorio, sin embargo, ocupa 119,9 GB, un tamaño desproporcionado para cualquier modelo que se autodenomine "Tiny", lo que sugiere pesos en precisión alta de un modelo de decenas de miles de millones de parámetros o, alternativamente, artefactos auxiliares (checkpoints intermedios, estados del optimizador u otros ficheros) que no forman parte de un modelo desplegable.
 
 El nombre remite a la familia Llama de Meta, pero no hay evidencia en la información disponible de que se trate de un modelo oficial, de un fine-tuning derivado ni de una reproducción independiente. No consta pipeline declarado, no hay idiomas especificados y el contador de descargas y likes es cero, lo que indica que el repositorio no ha sido validado por la comunidad.
 
@@ -82,5 +82,5 @@ No es posible establecer una comparativa fiable porque se desconocen los paráme
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ANWERFATEHY/Tiny_Llama
+- Repositorio en Hugging Face: https://huggingface.co/ANWERFATEHY/Tiny_Llama
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

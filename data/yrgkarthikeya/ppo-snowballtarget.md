@@ -2,7 +2,7 @@
 
 ## Resumen
 
-YRGKarthikeya/ppo-SnowballTarget es un checkpoint de politica de aprendizaje por refuerzo publicado en HuggingFace por el usuario YRGKarthikeya, asociado a la libreria Unity ML-Agents y entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre un entorno denominado SnowballTarget. No se trata de un modelo de lenguaje ni de un modelo fundacional: es un artefacto de agente (politica y, previsiblemente, red de valor) exportado a ONNX para su ejecucion dentro de Unity mediante el runtime de inferencia de ML-Agents.
+YRGKarthikeya/ppo-SnowballTarget es un checkpoint de politica de aprendizaje por refuerzo publicado en Hugging Face por el usuario YRGKarthikeya, asociado a la libreria Unity ML-Agents y entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre un entorno denominado SnowballTarget. No se trata de un modelo de lenguaje ni de un modelo fundacional: es un artefacto de agente (politica y, previsiblemente, red de valor) exportado a ONNX para su ejecucion dentro de Unity mediante el runtime de inferencia de ML-Agents.
 
 La relevancia del repositorio es limitada en terminos de impacto: acumula 0 descargas y 0likes, la model card no contiene mas que el bloque de metadatos YAML (tags como `ml-agents`, `onnx`, `SnowballTarget`, `deep-reinforcement-learning`) y no se publica ninguna descripcion, hiperparametro, curva de aprendizaje ni resultado numerico. Tampoco se declara licencia ni idiomas soportados, y el tamano del repositorio aparece como 0.0 GB, lo que implica un artefacto de menos de aproximadamente 50 MB (redes de politica pequenas, habituales en los entornos de ejemplo de ML-Agents).
 
@@ -18,7 +18,7 @@ En consecuencia, esta ficha puede documentar con rigor el formato, la libreria y
 | Longitud de contexto | No aplica / no disponible (no es un modelo de lenguaje; el "contexto" lo define el vector de observaciones del entorno Unity) |
 | Tipos de cuantizacion | No disponible. El unico formato declarado es ONNX; no se documentan variantes cuantizadas |
 | Idiomas soportados | No aplica / no disponible (agente de control, no genera texto) |
-| Licencia | No disponible (campo ausente en la model card y en los metadatos de HuggingFace) |
+| Licencia | No disponible (campo ausente en la model card y en los metadatos de Hugging Face) |
 | Formato de pesos | ONNX (tag `onnx`); el tamano del repo (0.0 GB) sugiere un artefacto inferior a ~50 MB |
 | Libreria / runtime | ml-agents (Unity ML-Agents); inferencia via ONNX Runtime, Barracuda o Unity Sentis |
 | Algoritmo de entrenamiento | PPO, segun la nomenclatura del identificador y los tags |
@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Entorno | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| YRGKarthikeya/ppo-SnowballTarget | Checkpoint PPO / ONNX (ML-Agents) | SnowballTarget | No disponible | No aplica | No disponible | HuggingFace |
-| Otros checkpoints PPO de la comunidad ML-Agents | Checkpoint PPO / ONNX | Entornos Unity diversos | No disponible | No aplica | Habitualmente no declarada | HuggingFace |
+| YRGKarthikeya/ppo-SnowballTarget | Checkpoint PPO / ONNX (ML-Agents) | SnowballTarget | No disponible | No aplica | No disponible | Hugging Face |
+| Otros checkpoints PPO de la comunidad ML-Agents | Checkpoint PPO / ONNX | Entornos Unity diversos | No disponible | No aplica | Habitualmente no declarada | Hugging Face |
 | Agentes de ejemplo oficiales de Unity ML-Agents | Checkpoint PPO / ONNX | Entornos de ejemplo del repositorio | No disponible en esta busqueda | No aplica | Sujeta a los terminos de Unity ML-Agents | Repositorio oficial de ML-Agents |
 
 No se dispone de modelos comparables concretos con datos verificables en la informacion proporcionada: la busqueda web no devolvio resultados relacionados con este repositorio ni con el entorno SnowballTarget.
@@ -86,7 +86,7 @@ No se dispone de modelos comparables concretos con datos verificables en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/YRGKarthikeya/ppo-SnowballTarget
+- Modelo en Hugging Face: https://huggingface.co/YRGKarthikeya/ppo-SnowballTarget
 - Repositorio oficial de Unity ML-Agents (libreria declarada): https://github.com/Unity-Technologies/ml-agents
 - Documentacion oficial de Unity ML-Agents: https://unity-technologies.github.io/ml-agents/
 - Busqueda web realizada: no se han encontrado resultados relevantes sobre el modelo, el autor ni el entorno SnowballTarget; los unicos resultados devueltos correspondian a herramientas de diseno grafico sin relacion con el repositorio.

@@ -69,7 +69,7 @@ Para contexto, el modelo base Qwen3.8-27B obtiene resultados competitivos en raz
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B (original) | 27B | 262K | FP16/BF16, GGUF | Apache-2.0 | HuggingFace, vLLM, etc. |
+| Qwen3.8-27B (original) | 27B | 262K | FP16/BF16, GGUF | Apache-2.0 | Hugging Face, vLLM, etc. |
 | Qwen3.8-27B-saor | 27B (poda dispersa) | 262K | Q4_K (D16) | Apache-2.0 | Solo con Hayai |
 | Otros modelos podados similares | No disponible | — | — | — | No se han identificado alternativas comparables en la información disponible |
 
@@ -87,7 +87,7 @@ La principal diferencia frente al original es el tamaño reducido (15,5 GB vs ~1
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aitups/Qwen3.8-27B-saor
+- Modelo en Hugging Face: https://huggingface.co/aitups/Qwen3.8-27B-saor
 - Modelo base (unsloth): https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
 - Modelo base original (Qwen): https://huggingface.co/Qwen/Qwen3.8-27B
 - Motor de inferencia Hayai: https://github.com/hayai-org/hayai

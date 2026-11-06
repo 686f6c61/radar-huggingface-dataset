@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `yuhengtu-bytedance/sfm_filtered_e2e_alignment-7k_8k_9k_merge` es un merge de tres checkpoints de un mismo modelo de alineación (alignment) desarrollado por ByteDance, combinados mediante la herramienta `mergekit` con el método Linear. El resultado es un modelo de generación de texto con aproximadamente 6,86 mil millones de parámetros, basado en la arquitectura GPT-NeoX (según las etiquetas de HuggingFace). El merge se realizó sobre los checkpoints correspondientes a los pasos globales 7000, 8000 y 9000 de un proceso de entrenamiento de alineación filtrada, utilizando el paso 9000 como base y pesos uniformes de 1.0 para cada componente.
+El modelo `yuhengtu-bytedance/sfm_filtered_e2e_alignment-7k_8k_9k_merge` es un merge de tres checkpoints de un mismo modelo de alineación (alignment) desarrollado por ByteDance, combinados mediante la herramienta `mergekit` con el método Linear. El resultado es un modelo de generación de texto con aproximadamente 6,86 mil millones de parámetros, basado en la arquitectura GPT-NeoX (según las etiquetas de Hugging Face). El merge se realizó sobre los checkpoints correspondientes a los pasos globales 7000, 8000 y 9000 de un proceso de entrenamiento de alineación filtrada, utilizando el paso 9000 como base y pesos uniformes de 1.0 para cada componente.
 
 La relevancia de este modelo radica en que ejemplifica una práctica común en la comunidad open source: combinar múltiples versiones de un mismo modelo entrenado en diferentes etapas para obtener un checkpoint consolidado que potencialmente mejore la estabilidad o el rendimiento. Sin embargo, la información pública disponible es muy limitada: no se especifican la licencia, los idiomas soportados, la longitud de contexto ni los datos de entrenamiento. El repositorio tiene un tamaño de 13,7 GB y los pesos están en formato `safetensors` con precisión `bfloat16`. No se han publicado benchmarks ni documentación adicional, por lo que su uso en producción requeriría una evaluación previa exhaustiva.
 
@@ -27,7 +27,7 @@ No se dispone de información sobre el dataset de entrenamiento, el número de t
 
 ## Capacidades
 
-No se ha publicado ninguna documentación sobre las capacidades específicas de este modelo. Basándose únicamente en su tamaño (≈6,8 B) y en que es un modelo de generación de texto, se puede inferir que podría realizar tareas básicas de lenguaje natural, pero no hay evidencia concreta. Las etiquetas de HuggingFace indican compatibilidad con `text-generation-inference` y `endpoints_compatible`, lo que sugiere que puede desplegarse en infraestructuras de inferencia estándar, pero no se confirman capacidades como tool calling, razonamiento multi-paso o soporte multilingüe.
+No se ha publicado ninguna documentación sobre las capacidades específicas de este modelo. Basándose únicamente en su tamaño (≈6,8 B) y en que es un modelo de generación de texto, se puede inferir que podría realizar tareas básicas de lenguaje natural, pero no hay evidencia concreta. Las etiquetas de Hugging Face indican compatibilidad con `text-generation-inference` y `endpoints_compatible`, lo que sugiere que puede desplegarse en infraestructuras de inferencia estándar, pero no se confirman capacidades como tool calling, razonamiento multi-paso o soporte multilingüe.
 
 ## Casos de uso
 
@@ -69,7 +69,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_alignment-7k_8k_9k_merge)
+- [Modelo en Hugging Face](https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_alignment-7k_8k_9k_merge)
 - [Discusión de un modelo similar (sfm-filtered-e2e-alignment-4k-5k-6k-avg)](https://huggingface.co/yuhengtu-bytedance/sfm-filtered-e2e-alignment-4k-5k-6k-avg/discussions)
 - [Página de FriendliAI para un modelo relacionado](https://friendli.ai/models/yuhengtu-bytedance/sfm-filtered-midtrain-alignment-4k-5k-6k-avg)
 - [Paper del método Linear (arXiv:2203.05482)](https://arxiv.org/abs/2203.05482)

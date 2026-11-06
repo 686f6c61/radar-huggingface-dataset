@@ -102,7 +102,7 @@ No se dispone de datos de precisión (top-1/top-5) para establecer una comparaci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qualcomm/EfficientNet-B0
+- Hugging Face: https://huggingface.co/qualcomm/EfficientNet-B0
 - Qualcomm AI Hub (modelo): https://aihub.qualcomm.com/models/efficientnet_b0
 - Repositorio `qai_hub_models`: https://github.com/qualcomm/ai-hub-models/blob/v0.66.0/src/qai_hub_models/models/efficientnet_b0
 - Implementación original en `torchvision`: https://github.com/pytorch/vision/blob/main/torchvision/models/efficientnet.py

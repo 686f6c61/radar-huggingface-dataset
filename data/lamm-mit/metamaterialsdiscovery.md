@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MetaMaterialsDiscovery es un repositorio publicado en HuggingFace por el usuario lamm-mit bajo licencia Apache 2.0. Por el identificador se deduce que esta orientado al descubrimiento de metamateriales, pero la model card no contiene ninguna descripcion tecnica: el unico contenido del README es la declaracion de licencia. No se especifica arquitectura, numero de parametros, longitud de contexto ni idiomas soportados.
+MetaMaterialsDiscovery es un repositorio publicado en Hugging Face por el usuario lamm-mit bajo licencia Apache 2.0. Por el identificador se deduce que esta orientado al descubrimiento de metamateriales, pero la model card no contiene ninguna descripcion tecnica: el unico contenido del README es la declaracion de licencia. No se especifica arquitectura, numero de parametros, longitud de contexto ni idiomas soportados.
 
 El repositorio presenta un tamano de 0.0 GB, cero descargas y cero likes, y no tiene pipeline declarado. Estos indicios apuntan a un repositorio vacio o a un marcador de posicion creado el 2026-09-11 y no actualizado desde entonces, sin pesos publicados y sin documentacion asociada.
 
@@ -71,5 +71,5 @@ No disponible. La busqueda web realizada no ha devuelto ningun resultado relacio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lamm-mit/MetaMaterialsDiscovery
+- Hugging Face: https://huggingface.co/lamm-mit/MetaMaterialsDiscovery
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante (papers, blogs, repositorios o demos) asociado a este modelo.

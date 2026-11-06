@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`anil-rbwc/classification` es un repositorio de HuggingFace publicado por el usuario `anil-rbwc` que contiene una implementacion propia de una arquitectura denominada "Dino" orientada a tareas de clasificacion. Segun la model card, el objetivo declarado es ofrecer codigo transparente y pruebas de humo (smoke tests) repetibles, y se omite deliberadamente cualquier afirmacion de rendimiento o benchmark. El repositorio incluye un script `model.py` con el modelo y un punto de entrada ejecutable, un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que el propio autor describe como checkpoint de inicializacion, no como un modelo entrenado.
+`anil-rbwc/classification` es un repositorio de Hugging Face publicado por el usuario `anil-rbwc` que contiene una implementacion propia de una arquitectura denominada "Dino" orientada a tareas de clasificacion. Segun la model card, el objetivo declarado es ofrecer codigo transparente y pruebas de humo (smoke tests) repetibles, y se omite deliberadamente cualquier afirmacion de rendimiento o benchmark. El repositorio incluye un script `model.py` con el modelo y un punto de entrada ejecutable, un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que el propio autor describe como checkpoint de inicializacion, no como un modelo entrenado.
 
 El dato mas relevante y a la vez mas contradictorio es el tamano real del checkpoint: el recuento de parametros extraido de `model.safetensors` es de 16.576 parametros, mientras que la model card declara una escala "huge" (enorme). Con ese numero de parametros, el artefacto es un esqueleto de inicializacion para validar que el pipeline de carga, forward pass y bucle de entrenamiento funciona, no un modelo con capacidad de clasificacion util. El tamano del repositorio es de 0,0 GB, coherente con un fichero de pesos de apenas decenas de kilobytes.
 
@@ -79,10 +79,10 @@ La comparacion directa es dificil porque este repositorio no es un modelo entren
 
 | Modelo | Parametros | Contexto / entrada | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| anil-rbwc/classification | 16.576 (checkpoint de inicializacion) | no disponible | No | apache-2.0 | HuggingFace, 2 descargas |
+| anil-rbwc/classification | 16.576 (checkpoint de inicializacion) | no disponible | No | apache-2.0 | Hugging Face, 2 descargas |
 | ResNet-50 (referencia) | ~25,6 M | imagen 224x224 | Si (ImageNet) | distinta segun implementacion | ampliamente disponible |
 | ViT-Base/16 (referencia) | ~86 M | imagen 224x224, 16x16 patches | Si (ImageNet u otros) | distinta segun implementacion | ampliamente disponible |
-| DINOv2 ViT-B/14 (referencia) | ~86 M | imagen 224x224, 14x14 patches | Si (auto-supervisado) | licencia propia de Meta | HuggingFace y repositorio oficial |
+| DINOv2 ViT-B/14 (referencia) | ~86 M | imagen 224x224, 14x14 patches | Si (auto-supervisado) | licencia propia de Meta | Hugging Face y repositorio oficial |
 
 Nota: el modelo analizado tiene entre tres y cuatro ordenes de magnitud menos parametros que cualquiera de las alternativas citadas, y ademas no ha sido entrenado, por lo que no existe una comparacion de rendimiento significativa. Los datos de las alternativas son valores publicos de referencia, no resultados medidos en este analisis.
 
@@ -101,6 +101,6 @@ Nota: el modelo analizado tiene entre tres y cuatro ordenes de magnitud menos pa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anil-rbwc/classification
+- Modelo en Hugging Face: https://huggingface.co/anil-rbwc/classification
 
 Nota sobre la busqueda web: los resultados devueltos corresponden a la ANIL (Agence nationale pour l'information sur le logement), un organismo publico frances de informacion sobre vivienda, y a su red de ADIL. No guardan ninguna relacion con el modelo `anil-rbwc/classification` ni con inteligencia artificial, por lo que no se incluyen como enlaces relevantes. No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo en la informacion proporcionada.

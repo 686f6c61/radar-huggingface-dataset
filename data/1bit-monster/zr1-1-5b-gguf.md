@@ -86,7 +86,7 @@ Los datos de rendimiento comparado no estan disponibles en la informacion propor
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/1bit-MONSTER/ZR1-1.5B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/1bit-MONSTER/ZR1-1.5B-GGUF
 - Modelo base upstream: https://huggingface.co/Zyphra/ZR1-1.5B
 - Modelo base declarado por el autor original: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 - Perfil del empaquetador: https://github.com/1bit-MONSTER

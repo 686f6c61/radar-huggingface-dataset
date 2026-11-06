@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| SoulX-Singer (ONNX fp16, este repo) | SVS completo con difusión y vocoder | ONNX fp16 con pesos externos | Apache-2.0 | HuggingFace y ModelScope |
-| SoulX-Singer (upstream) | SVS completo | PyTorch | Apache-2.0 | HuggingFace (Soul-AILab) |
+| SoulX-Singer (ONNX fp16, este repo) | SVS completo con difusión y vocoder | ONNX fp16 con pesos externos | Apache-2.0 | Hugging Face y ModelScope |
+| SoulX-Singer (upstream) | SVS completo | PyTorch | Apache-2.0 | Hugging Face (Soul-AILab) |
 | SoulX-Singer ONNX DirectML (ModelScope) | SVS completo | ONNX fp16 | Apache-2.0 | ModelScope |
 
 No se dispone de datos de benchmarks ni de especificaciones comparables de otros sistemas SVS en la información proporcionada, por lo que no es posible una comparación cuantitativa.
@@ -81,7 +81,7 @@ No se dispone de datos de benchmarks ni de especificaciones comparables de otros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ailm32442/SoulX-Singer-onnx-fp16
+- Repositorio Hugging Face: https://huggingface.co/ailm32442/SoulX-Singer-onnx-fp16
 - Modelo upstream en PyTorch: https://huggingface.co/Soul-AILab/SoulX-Singer
 - Repositorio GitHub de SoulX-Singer: https://github.com/Soul-AILab/SoulX-Singer
 - Exportación ONNX en ModelScope: https://modelscope.cn/models/syxppp/SoulX-Singer-onnx-directml-fp16

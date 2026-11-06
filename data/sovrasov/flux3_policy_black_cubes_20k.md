@@ -91,9 +91,9 @@ Las siguientes cifras son estimaciones derivadas del tamano del tronco base (7B)
 
 | Modelo | Parametros | Contexto / horizonte | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sovrasov/flux3_policy_black_cubes_20k | no disponible (tronco base de 7B) | 32 acciones por inferencia; contexto no disponible | sin resultados publicados | apache-2.0 | HuggingFace, via LeRobot |
+| sovrasov/flux3_policy_black_cubes_20k | no disponible (tronco base de 7B) | 32 acciones por inferencia; contexto no disponible | sin resultados publicados | apache-2.0 | Hugging Face, via LeRobot |
 | FLUX 3 Action (base, ajustado sobre DROID) | 7B | 32 acciones por inferencia; contexto no disponible | 42,6% de exito en RoboLab-120 | no disponible en la informacion proporcionada | documentado en el repositorio de LeRobot |
-| sovrasov/act_policy_black_cubes | no disponible | no disponible | no disponible | no disponible | HuggingFace, via LeRobot |
+| sovrasov/act_policy_black_cubes | no disponible | no disponible | no disponible | no disponible | Hugging Face, via LeRobot |
 | Otras politicas de LeRobot (pi0, SmolVLA, etc.) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos comparativos suficientes para establecer una comparacion cuantitativa entre estas alternativas en la misma tarea y con el mismo dataset.
@@ -115,7 +115,7 @@ No se dispone de datos comparativos suficientes para establecer una comparacion 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sovrasov/flux3_policy_black_cubes_20k
+- Modelo en Hugging Face: https://huggingface.co/sovrasov/flux3_policy_black_cubes_20k
 - Repositorio de LeRobot (GitHub): https://github.com/huggingface/lerobot
 - Implementacion de la politica flux3 en LeRobot: https://github.com/huggingface/lerobot/tree/main/src/lerobot/policies/flux3
 - Guia de flux3 en la documentacion de LeRobot: https://huggingface.co/docs/lerobot/main/en/flux3

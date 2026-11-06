@@ -65,7 +65,7 @@ Estas puntuaciones son las reportadas por el autor en la model card. No se dispo
 
 - VRAM estimada: menos de 1 GB en fp32 (35M parametros), por lo que cabe en cualquier GPU consumer moderna (GTX 1060 6GB o superior) e incluso en CPU con RAM suficiente.
 - GPU recomendadas: no se requiere GPU especifica; cualquier GPU con al menos 2 GB de VRAM es suficiente para inferencia y fine-tuning.
-- Despliegue: compatible con la libreria Transformers de HuggingFace, usando `trust_remote_code=True`. No se menciona soporte para vLLM, llama.cpp, Ollama o TGI, pero al ser un modelo pequeno, puede ejecutarse en CPU con latencia baja.
+- Despliegue: compatible con la libreria Transformers de Hugging Face, usando `trust_remote_code=True`. No se menciona soporte para vLLM, llama.cpp, Ollama o TGI, pero al ser un modelo pequeno, puede ejecutarse en CPU con latencia baja.
 - Latencia: no disponible, pero por el tamano del modelo se espera una latencia de milisegundos en GPU y de decenas de milisegundos en CPU.
 
 ## Comparativa con modelos similares
@@ -92,7 +92,7 @@ Los valores de chck_82M y coherent86 se han estimado a partir de las diferencias
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/leslie721007/babylm-strict-small-scale1p75-chck84
+- Repositorio Hugging Face: https://huggingface.co/leslie721007/babylm-strict-small-scale1p75-chck84
 - Checkpoint hermano (chck_82M): https://huggingface.co/leslie721007/babylm-strict-small-scale1p75-chck82
 - Web oficial de BabyLM: https://babylm.github.io/
 - Dataset BabyLM 2026 Strict-Small: https://huggingface.co/datasets/BabyLM-community/BabyLM-2026-Strict-Small

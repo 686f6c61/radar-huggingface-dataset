@@ -60,10 +60,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| InternVL3.5-38B (original) | 38B (aprox.) | 128K | safetensors (BF16) | MIT | HuggingFace |
-| midco/InternVL3_5-38B-oQ8e | 14,8B (cuantizado) | no disponible | MLX safetensors (8-bit) | no disponible | HuggingFace |
-| Qwen2.5-VL-32B | 32B | 128K | safetensors | Apache 2.0 | HuggingFace |
-| LLaVA-1.6-34B | 34B | 4K | safetensors | Apache 2.0 | HuggingFace |
+| InternVL3.5-38B (original) | 38B (aprox.) | 128K | safetensors (BF16) | MIT | Hugging Face |
+| midco/InternVL3_5-38B-oQ8e | 14,8B (cuantizado) | no disponible | MLX safetensors (8-bit) | no disponible | Hugging Face |
+| Qwen2.5-VL-32B | 32B | 128K | safetensors | Apache 2.0 | Hugging Face |
+| LLaVA-1.6-34B | 34B | 4K | safetensors | Apache 2.0 | Hugging Face |
 
 La comparativa se basa en los modelos originales, no en la cuantizacion. Esta version oQ8e reduce significativamente el numero de parametros efectivos (14,8B frente a 38B) gracias a la cuantizacion de 8 bits, lo que la hace mas ligera pero potencialmente con una ligera perdida de calidad. No se dispone de datos de rendimiento comparativo para esta cuantizacion concreta.
 

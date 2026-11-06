@@ -12,7 +12,7 @@ La model card es extremadamente escueta y no incluye resultados de benchmarks, l
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso tipo Qwen2 (tag `qwen2` en HuggingFace), con cabeza de generación causal (`text-generation`) |
+| Arquitectura | Transformer denso tipo Qwen2 (tag `qwen2` en Hugging Face), con cabeza de generación causal (`text-generation`) |
 | Parametros totales | 1.777.088.000 (1,78 B), confirmado en safetensors |
 | Parametros activos | No aplica (modelo denso, no MoE) |
 | Longitud de contexto | No disponible en la model card; el modelo base DeepSeek-R1-Distill-Qwen-1.5B declara 32.768 tokens |
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `rlve-opd-teacher-R1Distill-106-MakingGrade-20261025` (este) | 1,78 B | No disponible | GRPO en un unico entorno (MakingGrade), 4.000 rollouts | No disponible | HuggingFace, 0 descargas, 0 likes |
+| `rlve-opd-teacher-R1Distill-106-MakingGrade-20261025` (este) | 1,78 B | No disponible | GRPO en un unico entorno (MakingGrade), 4.000 rollouts | No disponible | Hugging Face, 0 descargas, 0 likes |
 | `deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B` (base) | 1,5 B | 32.768 tokens | Destilacion de razonamiento de R1, proposito general | No confirmada en la informacion disponible | Ampliamente distribuido |
-| `davidheineman/opd-teacher-Q2.5I-GoldWashing-step149` | 1,5 B | No disponible | GRPO sobre el entorno GoldWashing, 150 actualizaciones | No disponible | HuggingFace / Featherless |
-| `davidheineman/opd-teacher-Q2.5I-Differentiate-step149` | 1,5 B | No disponible | GRPO sobre el entorno Differentiate, 150 actualizaciones | No disponible | HuggingFace / FriendliAI |
+| `davidheineman/opd-teacher-Q2.5I-GoldWashing-step149` | 1,5 B | No disponible | GRPO sobre el entorno GoldWashing, 150 actualizaciones | No disponible | Hugging Face / Featherless |
+| `davidheineman/opd-teacher-Q2.5I-Differentiate-step149` | 1,5 B | No disponible | GRPO sobre el entorno Differentiate, 150 actualizaciones | No disponible | Hugging Face / FriendliAI |
 
 La diferencia clave frente al base es el presupuesto de entrenamiento (4.000 rollouts frente a 150 actualizaciones en los hermanos de la serie) y la ventana de contexto declarada en la model card, ausente en este checkpoint. No hay datos de rendimiento comparado para ninguna de las cuatro filas.
 
@@ -79,7 +79,7 @@ La diferencia clave frente al base es el presupuesto de entrenamiento (4.000 rol
 - Especializacion extrema: el modelo se ha optimizado para un unico entorno con dificultad binaria fija; se espera degradacion severa fuera de esa distribucion y no debe tratarse como asistente general.
 - Sin datos de evaluacion publicos: no hay benchmarks, curvas de validacion ni comparaciones, por lo que el rendimiento real solo puede conocerse replicando el pipeline de validacion del autor.
 - Riesgo de alucinacion: al ser un modelo de 1,5 B con RL sobre una tarea estrecha, la generacion libre fuera de dominio es propensa a fabricar contenido; el `answer-forcing` de 128 tokens limita ademas la longitud de respuesta aprendida.
-- Licencia no declarada: los tags de HuggingFace no incluyen campo `license`. Antes de cualquier uso comercial hay que verificar la licencia del modelo base (`DeepSeek-R1-Distill-Qwen-1.5B`), que condiciona la redistribucion y el uso derivado.
+- Licencia no declarada: los tags de Hugging Face no incluyen campo `license`. Antes de cualquier uso comercial hay que verificar la licencia del modelo base (`DeepSeek-R1-Distill-Qwen-1.5B`), que condiciona la redistribucion y el uso derivado.
 - Idiomas no documentados: no se especifica cobertura multilingue; se asume el comportamiento del base, con sesgo hacia ingles y chino.
 - Ventana de contexto no confirmada en la model card: aunque el base soporte 32.768 tokens, el entrenamiento se realizo con 1.024 tokens iniciales mas 128 de continuacion, por lo que el comportamiento mas alla de ~1.150 tokens no esta validado.
 - Sesgos: no se documenta ninguna evaluacion de sesgo, toxicidad o alineacion; al derivar de un destilado de R1 y pasar por RL en una tarea de calificacion, puede reproducir sesgos del juez o del dataset original.
@@ -89,7 +89,7 @@ La diferencia clave frente al base es el presupuesto de entrenamiento (4.000 rol
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davidheineman/rlve-opd-teacher-R1Distill-106-MakingGrade-20261025
+- Modelo en Hugging Face: https://huggingface.co/davidheineman/rlve-opd-teacher-R1Distill-106-MakingGrade-20261025
 - Arbol de ficheros del repositorio: https://huggingface.co/davidheineman/rlve-opd-teacher-R1Distill-106-MakingGrade-20261025/tree/main
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/david-heineman/rl-data-scaling-teachers-v1/runs/274c8962
 - Repositorio RLVE del autor (primitivas de datos para RL): https://github.com/davidheineman/rlve

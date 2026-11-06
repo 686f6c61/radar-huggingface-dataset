@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PastVu-colorizer es un modelo de colorización de imágenes publicado por el usuario pelixpng en HuggingFace. Se trata de una conversión a Core ML del modelo DDColor-L (variante `ddcolor_modelscope`), presentado en el artículo "DDColor: Towards Photo-Realistic Image Colorization via Dual Decoders" (Kang et al., ICCV 2023). No es un modelo de lenguaje: es un modelo de imagen a imagen cuyo cometido es estimar los canales de color de una fotografía en blanco y negro.
+PastVu-colorizer es un modelo de colorización de imágenes publicado por el usuario pelixpng en Hugging Face. Se trata de una conversión a Core ML del modelo DDColor-L (variante `ddcolor_modelscope`), presentado en el artículo "DDColor: Towards Photo-Realistic Image Colorization via Dual Decoders" (Kang et al., ICCV 2023). No es un modelo de lenguaje: es un modelo de imagen a imagen cuyo cometido es estimar los canales de color de una fotografía en blanco y negro.
 
 El modelo resuelve una tarea muy concreta con una interfaz mínima y fija: recibe un tensor de luminancia (`grey`) de dimensiones 1×1×512×512 con valores normalizados entre 0 y 1, y devuelve un tensor `ab` de 1×2×512×512 con los canales a y b del espacio de color CIE Lab. El peso está cuantizado a 8 bits con cuantización lineal asimétrica y empaquetado como Core ML ML Program, lo que permite ejecutarlo en dispositivo en iOS 16 o superior.
 
@@ -26,7 +26,7 @@ Su relevancia es fundamentalmente práctica: está pensado para que la aplicaci�
 | Resolución | 512×512 fija |
 | Tamaño del repositorio | 0,2 GB |
 | Descargas / likes | 0 / 0 |
-| Creado / actualizado | 2026-10-01 / 2026-10-01 (según metadatos de HuggingFace) |
+| Creado / actualizado | 2026-10-01 / 2026-10-01 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Formato y despliegue | Resolución | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pastvu-colorizer (DDColor-L) | Core ML ML Program, en dispositivo (iOS 16+) | 512×512 | 8 bits lineal asimétrica | Apache 2.0 | HuggingFace, 0 descargas |
+| pastvu-colorizer (DDColor-L) | Core ML ML Program, en dispositivo (iOS 16+) | 512×512 | 8 bits lineal asimétrica | Apache 2.0 | Hugging Face, 0 descargas |
 | DDColor original (piddnad/DDColor) | PyTorch, GPU o CPU | No disponible en la información | No disponible | Apache 2.0 | Repositorio en GitHub |
 | Versión DDColor sobre ONNX Runtime Web citada por VeritySuite | ONNX Runtime Web, navegador | No disponible | No disponible | No disponible | Herramienta web de terceros |
 | DeOldify | No disponible | No disponible | No disponible | No disponible | Proyecto público de colorización |
@@ -95,7 +95,7 @@ La comparación cuantitativa no es posible con los datos disponibles: ni la mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pelixpng/pastvu-colorizer
+- Modelo en Hugging Face: https://huggingface.co/pelixpng/pastvu-colorizer
 - Código y pesos originales de DDColor: https://github.com/piddnad/DDColor
 - Artículo de referencia citado en la model card: "DDColor: Towards Photo-Realistic Image Colorization via Dual Decoders", Kang et al., ICCV 2023 (la model card lo cita por título, sin enlace directo)
 - Aplicación PastVu (mencionada por el autor como consumidora del modelo; no se proporciona URL en la model card)

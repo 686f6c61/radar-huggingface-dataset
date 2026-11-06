@@ -21,7 +21,7 @@ La relevancia de este modelo reside en su naturaleza de finetune comunitario: de
 
 ## Arquitectura y entrenamiento
 
-La información disponible no detalla la arquitectura interna del modelo. Dado que se finetunea sobre unsloth/Qwen3.5-9B, se hereda la arquitectura de Qwen 3.5, que es un transformer decoder-only con atención causal. El entrenamiento se realizó con la librería Unsloth (que acelera el fine-tuning mediante optimizaciones de kernel y gestión de memoria) y la librería TRL de HuggingFace para el pipeline de entrenamiento con reinforcement learning o fine-tuning supervisado.
+La información disponible no detalla la arquitectura interna del modelo. Dado que se finetunea sobre unsloth/Qwen3.5-9B, se hereda la arquitectura de Qwen 3.5, que es un transformer decoder-only con atención causal. El entrenamiento se realizó con la librería Unsloth (que acelera el fine-tuning mediante optimizaciones de kernel y gestión de memoria) y la librería TRL de Hugging Face para el pipeline de entrenamiento con reinforcement learning o fine-tuning supervisado.
 
 No se especifican los datos de entrenamiento, el número de tokens, ni la composición del dataset. La model card indica que fue entrenado "2x faster" gracias a Unsloth, pero no hay métricas de rendimiento ni detalles sobre el proceso de alineación (RLHF, DPO, etc.). El tag de pipeline image-text-to-text sugiere que el modelo base podría tener capacidades multimodales, pero no se confirma en la documentación.
 
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada para inferencia: no disponible con precisión, pero un modelo de 9B en FP16 requiere aproximadamente 18-20 GB de VRAM.
 - GPU recomendadas: para FP16, una GPU con 24 GB (RTX 3090/4090) o más; para cuantización (si se aplica), podría caber en GPUs de 16 GB con cuantización de 8 bits.
 - En consumer GPU: sí, con cuantización (por ejemplo, GGUF de 4 bits en una RTX 3060 de 12 GB o superior).
-- Opciones de despliegue: vLLM, TGI, llama.cpp (si se convierte a GGUF), Ollama (si se empaqueta), HuggingFace Inference Endpoints.
+- Opciones de despliegue: vLLM, TGI, llama.cpp (si se convierte a GGUF), Ollama (si se empaqueta), Hugging Face Inference Endpoints.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -60,10 +60,10 @@ Dado que no hay información sobre el rendimiento del finetune, se compara el mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3.5-9B (base) | 9B | no disponible | Apache-2.0 | HuggingFace |
-| Llama 3.1 8B | 8B | 128K | Llama 3.1 Community License | HuggingFace |
-| Mistral 7B | 7B | 32K | Apache-2.0 | HuggingFace |
-| Gemma 2 9B | 9B | 8K | Gemma License | HuggingFace |
+| Qwen3.5-9B (base) | 9B | no disponible | Apache-2.0 | Hugging Face |
+| Llama 3.1 8B | 8B | 128K | Llama 3.1 Community License | Hugging Face |
+| Mistral 7B | 7B | 32K | Apache-2.0 | Hugging Face |
+| Gemma 2 9B | 9B | 8K | Gemma License | Hugging Face |
 
 La comparativa directa con Curtec/Aussie no es posible sin datos de rendimiento del finetune.
 
@@ -79,7 +79,7 @@ La comparativa directa con Curtec/Aussie no es posible sin datos de rendimiento 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Curtec/Aussie
+- Modelo en Hugging Face: https://huggingface.co/Curtec/Aussie
 - Dataset asociado (sin documentación): https://huggingface.co/datasets/Curtec/AussieAussieAussie
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-9B
 - Librería Unsloth: https://github.com/unslothai/unsloth

@@ -76,9 +76,9 @@ Datos adicionales aportados por el autor: el adaptador sin fusionar alcanzó 66/
 
 | Modelo | Parametros | Contexto | Resultado en test (112 tareas) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (Qwen3.5-2B-ita-agent-MLX-8bit) | 1,88 B | no disponible (entrenado a 3.072 tokens) | 66/112 (58,9 %) | Apache-2.0 | HuggingFace, formato MLX 8 bits |
-| Qwen3.5-2B 8 bits original | 1,88 B | no disponible | 48/112 (42,9 %) | Apache-2.0 | HuggingFace, formato MLX 8 bits |
-| Qwen3.5-4B 8 bits original | no disponible | no disponible | 72/112 (58,9 % equivalente en recuento, sin diferencia significativa, p = 0,43) | Apache-2.0 | HuggingFace, formato MLX 8 bits |
+| Este modelo (Qwen3.5-2B-ita-agent-MLX-8bit) | 1,88 B | no disponible (entrenado a 3.072 tokens) | 66/112 (58,9 %) | Apache-2.0 | Hugging Face, formato MLX 8 bits |
+| Qwen3.5-2B 8 bits original | 1,88 B | no disponible | 48/112 (42,9 %) | Apache-2.0 | Hugging Face, formato MLX 8 bits |
+| Qwen3.5-4B 8 bits original | no disponible | no disponible | 72/112 (58,9 % equivalente en recuento, sin diferencia significativa, p = 0,43) | Apache-2.0 | Hugging Face, formato MLX 8 bits |
 
 El modelo base y el profesor citados son los únicos comparables documentados por el autor; no se aportan datos de otros modelos de agente en italiano.
 
@@ -97,7 +97,7 @@ El modelo base y el profesor citados son los únicos comparables documentados po
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fabriziosalmi/Qwen3.5-2B-ita-agent-MLX-8bit
+- Modelo en Hugging Face: https://huggingface.co/fabriziosalmi/Qwen3.5-2B-ita-agent-MLX-8bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Modelo profesor citado: Qwen3.5-4B (8 bits, Apache-2.0); no se proporciona URL en la información disponible.
 - Paper, blog, repositorio o demo adicionales: no disponibles en la información proporcionada.

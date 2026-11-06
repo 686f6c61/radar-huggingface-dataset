@@ -100,7 +100,7 @@ Comparación con alternativas externas de tamaño similar: no disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SirSahOl/MiniCPM5-2B-chat-mlx-4bit
+- Repositorio Hugging Face: https://huggingface.co/SirSahOl/MiniCPM5-2B-chat-mlx-4bit
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
 - Framework MLX (Apple): https://github.com/ml-explore/mlx
 - Pipeline de conversión MLX Foundry: https://github.com/SirSahOl/mlx-foundry

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jrubiosainz/microduck-game-sprinter-remix9` es una política de control para el evento **2 m Sprint** de la Microduck Arena (Pollen Robotics), publicada como un único grafo ONNX (`policy.onnx`) y etiquetada como `robotics` y `reinforcement-learning`. No es un modelo de lenguaje: recibe una observación por paso de control y emite 14 objetivos articulares (*joint targets*). El repositorio tiene 0 GB, 0 descargas y 0 likes en el momento de la consulta, y su licencia no está declarada en los metadatos de HuggingFace.
+`jrubiosainz/microduck-game-sprinter-remix9` es una política de control para el evento **2 m Sprint** de la Microduck Arena (Pollen Robotics), publicada como un único grafo ONNX (`policy.onnx`) y etiquetada como `robotics` y `reinforcement-learning`. No es un modelo de lenguaje: recibe una observación por paso de control y emite 14 objetivos articulares (*joint targets*). El repositorio tiene 0 GB, 0 descargas y 0 likes en el momento de la consulta, y su licencia no está declarada en los metadatos de Hugging Face.
 
 Técnicamente es un *merge* o injerto determinista de dos artefactos previos: el grafo de `jrubiosainz/microduck-game-sprinter-remix8` (a su vez derivado de remix7, con un `Clip` sobre el índice de su tabla de ramas) y el bloque de búsqueda exacta por observación de `a1rb4Ck/microduck-sprint-2m`. La novedad de esta revisión es que conserva las filas 0-181 de la tabla de `a1rb4Ck` (seeds 1 y 2 completas, más los pasos 0-49 de la seed 3) y añade 17 filas nuevas para los pasos 50-66 de la seed 3, con acciones obtenidas mediante una búsqueda *open-loop* con CMA-ES separable.
 
@@ -18,7 +18,7 @@ El resultado es una política que reproduce carreras memorizadas con precisión 
 | Longitud de contexto | no aplicable / no disponible: consume una observación por paso de control; las columnas 48-60 (comandos) se enmascaran en el *lookup* (`L_mask`) |
 | Tipos de cuantizacion | no disponible; solo se publica el grafo ONNX, sin variantes cuantizadas |
 | Idiomas soportados | no disponible; no procesa lenguaje natural (la model card está en inglés) |
-| Licencia | no disponible en los metadatos de HuggingFace; el modelo base `a1rb4Ck/microduck-sprint-2m` declara Apache-2.0 |
+| Licencia | no disponible en los metadatos de Hugging Face; el modelo base `a1rb4Ck/microduck-sprint-2m` declara Apache-2.0 |
 | Formato de pesos | ONNX (`policy.onnx`); no se publican safetensors ni GGUF |
 | Tarea (pipeline) | `robotics` (evento `sprint-2m` de la Microduck Arena, runner version 5, MuJoCo 3.10.0) |
 | Dimension de la observacion | no disponible; se sabe que las columnas 48 a 60 son columnas de comando y se enmascaran |
@@ -98,7 +98,7 @@ Los cuatro artefactos resuelven la misma tarea y comparten linaje: remix9 y remi
 - Solo simulación: el autor lo indica de forma explícita; no hay validación en hardware físico ni indicios de transferencia *sim-to-real*.
 - Fragilidad ante cambios de entorno: los tiempos dependen de runner version 5, MuJoCo 3.10.0, x86_64, onnxruntime 1.24.4 y la velocidad de 1,15 m/s; cualquier cambio en el simulador puede invalidar las coincidencias del *lookup* y degradar la carrera a la política de remix7.
 - Acciones no reactivas: las 17 filas añadidas son una secuencia *open-loop* grabada; no hay realimentación correctiva si la observación se desvía, y los desplazamientos aplicados llegan a 10,13 rad, lo que puede producir trayectorias poco realistas desde el punto de vista físico.
-- Licencia indeterminada: los metadatos de HuggingFace no declaran licencia. El modelo base es Apache-2.0, pero la combinación con el grafo de remix7 (sin licencia publicada en la información disponible) deja el uso comercial en una situación jurídica poco clara; conviene contactar con el autor antes de cualquier uso en producción.
+- Licencia indeterminada: los metadatos de Hugging Face no declaran licencia. El modelo base es Apache-2.0, pero la combinación con el grafo de remix7 (sin licencia publicada en la información disponible) deja el uso comercial en una situación jurídica poco clara; conviene contactar con el autor antes de cualquier uso en producción.
 - Riesgo de alucinación: no aplica en el sentido de los LLM, pero sí existe un riesgo análogo de "coincidencia espuria": la tolerancia de 1e-7 protege contra falsos positivos, aunque una observación casi idéntica en un contexto distinto podría disparar una acción memorizada inadecuada.
 - Sesgos: no documentados; no hay análisis de robustez frente a perturbaciones, ruido de sensores o variaciones de masa y fricción.
 - Trazabilidad incompleta: la model card aparece truncada en la información disponible, los hashes sha256 se muestran abreviados y no se publican métricas de la red subyacente ni el recuento de parámetros.
@@ -107,7 +107,7 @@ Los cuatro artefactos resuelven la misma tarea y comparten linaje: remix9 y remi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jrubiosainz/microduck-game-sprinter-remix9
+- Modelo en Hugging Face: https://huggingface.co/jrubiosainz/microduck-game-sprinter-remix9
 - Modelo base (merge) remix8: https://huggingface.co/jrubiosainz/microduck-game-sprinter-remix8
 - Commit concreto de remix8 citado en la model card: https://huggingface.co/jrubiosainz/microduck-game-sprinter-remix8/tree/36dd58ab323ce7dc264fe433ebcb1b5e1541b211
 - Modelo base `a1rb4Ck/microduck-sprint-2m`: https://huggingface.co/a1rb4Ck/microduck-sprint-2m

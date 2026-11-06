@@ -74,8 +74,8 @@ Las únicas mediciones numéricas publicadas son de velocidad de inferencia (Q4_
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Tess-4.5-27B (GGUF) | 26,9B | 65.536 tokens (uso documentado) | Iguala a Qwen3.8-27B en BenchLocal con 25 % menos tokens (sin cifras) | Apache 2.0 | HuggingFace, GGUF para llama.cpp |
-| Qwen3.8-27B (modelo base) | ≈27B | No disponible | Referencia del benchmark interno del autor | No disponible en la información | HuggingFace (Qwen) |
+| Tess-4.5-27B (GGUF) | 26,9B | 65.536 tokens (uso documentado) | Iguala a Qwen3.8-27B en BenchLocal con 25 % menos tokens (sin cifras) | Apache 2.0 | Hugging Face, GGUF para llama.cpp |
+| Qwen3.8-27B (modelo base) | ≈27B | No disponible | Referencia del benchmark interno del autor | No disponible en la información | Hugging Face (Qwen) |
 | Otros modelos de ~27-32B con soporte agéntico | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos verificables de otros modelos comparables en la información proporcionada, por lo que la comparación se limita al modelo base declarado.

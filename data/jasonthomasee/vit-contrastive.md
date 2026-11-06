@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jasonthomasee/vit-contrastive` es un repositorio de HuggingFace que contiene una implementación propia y compacta en PyTorch de un Vision Transformer (ViT) orientado a aprendizaje contrastivo. No se trata de un modelo preentrenado listo para producción: la propia model card lo describe como una configuración "tiny" pensada para revisión de código, smoke tests y experimentos pequeños y controlados. El checkpoint `model.safetensors` se presenta explícitamente como una inicialización válida para pruebas, no como un checkpoint entrenado ni evaluado.
+`jasonthomasee/vit-contrastive` es un repositorio de Hugging Face que contiene una implementación propia y compacta en PyTorch de un Vision Transformer (ViT) orientado a aprendizaje contrastivo. No se trata de un modelo preentrenado listo para producción: la propia model card lo describe como una configuración "tiny" pensada para revisión de código, smoke tests y experimentos pequeños y controlados. El checkpoint `model.safetensors` se presenta explícitamente como una inicialización válida para pruebas, no como un checkpoint entrenado ni evaluado.
 
 El modelo tiene 33.088 parámetros totales (según los datos de safetensors), un tamaño de repositorio de 0,0 GB y licencia MIT. La arquitectura declarada emplea atención lineal, fusión tensorial (tensor fusion), activación ReLU y normalización por lotes (BatchNorm). Al ser un modelo de visión, no procesa texto: no hay ventana de contexto, idiomas soportados ni capacidades de generación de lenguaje.
 
@@ -26,7 +26,7 @@ Su relevancia actual es limitada y de ámbito experimental: sirve como punto de 
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un Vision Transformer en configuracion "tiny", con atención lineal en lugar de la atención softmax estándar, fusión tensorial para combinar modalidades o ramas, activación ReLU y normalización BatchNorm. El autor indica que se trata de una implementación personalizada, por lo que las APIs genéricas de carga automática de HuggingFace requieren un adaptador explícito antes de poder usarla.
+La arquitectura es un Vision Transformer en configuracion "tiny", con atención lineal en lugar de la atención softmax estándar, fusión tensorial para combinar modalidades o ramas, activación ReLU y normalización BatchNorm. El autor indica que se trata de una implementación personalizada, por lo que las APIs genéricas de carga automática de Hugging Face requieren un adaptador explícito antes de poder usarla.
 
 En cuanto al entrenamiento, no hay evidencia de que se haya completado ninguno. La receta por defecto incluida en el script usa el optimizador AdamW con un schedule polinómico, pero la model card aclara que son valores de partida del script y no prueba de una ejecución finalizada. El checkpoint `model.safetensors` se describe como una inicialización válida para smoke tests, no como un modelo entrenado, y no se ha auditado su robustez, equidad ni transferencia de dominio. Tampoco se publica el número de tokens, la composición del dataset ni si hubo RLHF/DPO; de hecho, al ser un modelo de visión, esas categorías no aplican directamente.
 
@@ -70,7 +70,7 @@ Los modelos de la tabla son alternativas conceptuales de la misma categoria (rep
 
 | Modelo | Parametros | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| jasonthomasee/vit-contrastive | 33.088 | ViT contrastivo (checkpoint sin entrenar) | MIT | HuggingFace, 0 descargas |
+| jasonthomasee/vit-contrastive | 33.088 | ViT contrastivo (checkpoint sin entrenar) | MIT | Hugging Face, 0 descargas |
 | CLIP (ViT-B/32) | aprox. 151 M | Vision-lenguaje contrastivo | MIT | Ampliamente disponible |
 | DINOv2 (ViT-S/14) | aprox. 21 M | Autosupervisado visual | Apache 2.0 (segun variante) | Ampliamente disponible |
 | SimCLR (ResNet-50) | aprox. 23 M | Contrastivo visual | Codigo abierto | Repositorio de referencia |
@@ -91,5 +91,5 @@ La diferencia relevante no es solo de tamano: los tres alternativas son checkpoi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jasonthomasee/vit-contrastive
+- Hugging Face: https://huggingface.co/jasonthomasee/vit-contrastive
 - Resultados de busqueda web: no se han encontrado enlaces relevantes. Las unicas entradas devueltas corresponden a paginas de inicio de sesion y ayuda de Gmail, sin relacion con el modelo, por lo que no se incluyen.

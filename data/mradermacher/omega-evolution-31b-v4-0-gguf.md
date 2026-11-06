@@ -71,7 +71,7 @@ No se dispone de información sobre modelos comparables directos (mismo tamaño 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Omega-Evolution-31B-v4.0-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Omega-Evolution-31B-v4.0-GGUF
 - Modelo base: https://huggingface.co/ReadyArt/Omega-Evolution-31B-v4.0
 - Página del modelo (OpenCSG): https://opencsg.com/models/ReadyArt/Omega-Evolution-31B-v4.0-GGUF?tab=summary
 - Visor de arquitectura: https://hfviewer.com/ReadyArt/Omega-Evolution-31B-v4.0

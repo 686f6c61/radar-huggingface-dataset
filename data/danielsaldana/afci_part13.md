@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AFCI_part13 no es un modelo de lenguaje ni una red neuronal entrenada, sino un paquete de datos publicado en HuggingFace dentro de un kit de desarrollo offline para sistemas de deteccion de arcos electricos (AFCI, *arc-fault circuit interrupter*) y prevencion de incendios de origen electrico. El repositorio contiene la parte 13 de un conjunto de 15 repositorios (AFCI_part1 a AFCI_part15) que, en conjunto, proporcionan el material necesario para entrenar y validar un clasificador cuantizado de TinyML sobre un microcontrolador STM32F407.
+AFCI_part13 no es un modelo de lenguaje ni una red neuronal entrenada, sino un paquete de datos publicado en Hugging Face dentro de un kit de desarrollo offline para sistemas de deteccion de arcos electricos (AFCI, *arc-fault circuit interrupter*) y prevencion de incendios de origen electrico. El repositorio contiene la parte 13 de un conjunto de 15 repositorios (AFCI_part1 a AFCI_part15) que, en conjunto, proporcionan el material necesario para entrenar y validar un clasificador cuantizado de TinyML sobre un microcontrolador STM32F407.
 
 El contenido concreto de esta parte son las grabaciones principales del dataset WHITED v1.1 (*Worldwide Household and Industry Transient Energy Data Set*), publicado originalmente por Kahl, Haq, Kriechbaumer y Jacobsen (TU Munchen, NILM Workshop 2016). Se trata de 1.339 grabaciones de transitorios de arranque de 110 electrodomesticos (47+ tipos) capturadas a 44,1 kHz en estéreo FLAC, con un canal para tension y otro para corriente, procedentes de 8 ubicaciones en Alemania, Austria, Indonesia y Canada.
 
@@ -85,7 +85,7 @@ No se dispone de informacion sobre otros datasets de arcos electricos comparable
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/danielsaldana/AFCI_part13
+- Repositorio en Hugging Face: https://huggingface.co/danielsaldana/AFCI_part13
 - Indice maestro del kit (AFCI_part6): https://huggingface.co/danielsaldana/AFCI_part6/blob/main/00_START_HERE_MASTER_INDEX.md
 - Pagina de origen de WHITED v1.1 (TU Munchen): https://www.cs.cit.tum.de/dis/resources/whited/
 - Referencia del dataset: Kahl, Haq, Kriechbaumer, Jacobsen, *WHITED - A Worldwide Household and Industry Transient Energy Data Set*, NILM Workshop 2016.

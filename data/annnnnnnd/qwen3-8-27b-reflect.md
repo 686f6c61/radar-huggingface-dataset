@@ -96,7 +96,7 @@ El modelo no es comparable con alternativas de otros fabricantes porque no se ha
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/annnnnnnd/Qwen3.8-27B-Reflect
+- Repositorio del modelo en Hugging Face: https://huggingface.co/annnnnnnd/Qwen3.8-27B-Reflect
 - Version anterior del mismo autor: https://huggingface.co/annnnnnnd/Qwen3.6-27B-Reflect
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - GGUF de la base (unsloth): https://huggingface.co/unsloth/Qwen3.8-27B-GGUF

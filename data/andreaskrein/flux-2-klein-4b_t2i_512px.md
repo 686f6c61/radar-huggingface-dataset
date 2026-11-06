@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `andreaskrein/flux-2-klein-4B_T2I_512px` es una publicacion alojada en HuggingFace cuyo unico contenido verificable es una licencia Apache 2.0 y las etiquetas `region:us` y `license:apache-2.0`. La model card no incluye descripcion, arquitectura, datos de entrenamiento, ejemplos ni instrucciones de uso, y el registro no acumula descargas ni "likes" en el momento de la consulta.
+El repositorio `andreaskrein/flux-2-klein-4B_T2I_512px` es una publicacion alojada en Hugging Face cuyo unico contenido verificable es una licencia Apache 2.0 y las etiquetas `region:us` y `license:apache-2.0`. La model card no incluye descripcion, arquitectura, datos de entrenamiento, ejemplos ni instrucciones de uso, y el registro no acumula descargas ni "likes" en el momento de la consulta.
 
 El nombre del repositorio sugiere una variante de la familia FLUX orientada a texto-a-imagen (T2I), con un tamano nominal de 4B de parametros y resolucion de trabajo de 512 px, ademas del sufijo "klein" (pequeno en aleman) que suele emplearse para versiones compactas o destiladas. No obstante, esta interpretacion procede exclusivamente del identificador del repositorio: el autor no la confirma en ningun campo de la ficha y no existe documentacion tecnica asociada.
 
@@ -84,5 +84,5 @@ No disponible. No se dispone de datos verificables del modelo ni de una lista de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/andreaskrein/flux-2-klein-4B_T2I_512px
+- Hugging Face: https://huggingface.co/andreaskrein/flux-2-klein-4B_T2I_512px
 - No se han encontrado papers, blogs, repositorios auxiliares, demos ni espacios asociados en la busqueda web realizada.

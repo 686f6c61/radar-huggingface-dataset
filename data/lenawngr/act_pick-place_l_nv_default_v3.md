@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ACT_pick-place_L_nv_default_v3 es una política de imitación basada en Action Chunking with Transformers (ACT), publicada por el usuario lenawngr en HuggingFace Hub bajo la librería LeRobot. No se trata de un modelo de lenguaje, sino de un modelo de robótica orientado a control motor: aprende de datos de teleoperación y predice fragmentos cortos de acciones (action chunks) en lugar de pasos individuales, lo que reduce el error de acumulación y mejora la estabilidad en tareas de manipulación.
+ACT_pick-place_L_nv_default_v3 es una política de imitación basada en Action Chunking with Transformers (ACT), publicada por el usuario lenawngr en Hugging Face Hub bajo la librería LeRobot. No se trata de un modelo de lenguaje, sino de un modelo de robótica orientado a control motor: aprende de datos de teleoperación y predice fragmentos cortos de acciones (action chunks) en lugar de pasos individuales, lo que reduce el error de acumulación y mejora la estabilidad en tareas de manipulación.
 
 El modelo está entrenado sobre el dataset `lenawngr/pick-place_so101`, presumiblemente asociado a un robot SO-101 (brazo de bajo coste compatible con LeRobot), y está especializado en una tarea concreta de pick-and-place. Con 51.668.614 parámetros y un repositorio de 0,2 GB, es un modelo compacto que puede ejecutarse en hardware de consumo.
 
@@ -25,7 +25,7 @@ Su relevancia radica en que ejemplifica el flujo actual de robótica open source
 
 ACT es un método de aprendizaje por imitación presentado en el paper arXiv:2304.13705. La arquitectura combina un backbone visual (típicamente ResNet) que procesa las imágenes de las cámaras del robot, un encoder transformer que fusiona observaciones (imágenes y estado de las articulaciones) y un decoder transformer que genera un chunk de acciones futuras. Predecir varios pasos a la vez, en lugar de uno solo, mitiga el problema de compounding error típico de las políticas paso a paso y permite un control más suave.
 
-El entrenamiento se realiza sobre el dataset `lenawngr/pick-place_so101`, compuesto por episodios de teleoperación de una tarea de pick-and-place sobre un SO-101. No se dispone de información sobre el número de episodios, la composición exacta del dataset ni si se aplicaron técnicas de aumento de datos. El modelo se entrenó y publicó mediante LeRobot, la librería de HuggingFace para aprendizaje por imitación en robótica. No hay datos publicados sobre RLHF, DPO ni otras fases de alineamiento, algo esperable en un modelo de este tipo.
+El entrenamiento se realiza sobre el dataset `lenawngr/pick-place_so101`, compuesto por episodios de teleoperación de una tarea de pick-and-place sobre un SO-101. No se dispone de información sobre el número de episodios, la composición exacta del dataset ni si se aplicaron técnicas de aumento de datos. El modelo se entrenó y publicó mediante LeRobot, la librería de Hugging Face para aprendizaje por imitación en robótica. No hay datos publicados sobre RLHF, DPO ni otras fases de alineamiento, algo esperable en un modelo de este tipo.
 
 ## Capacidades
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ACT_pick-place_L_nv_default_v3 (este) | 51,7 M | Pick-and-place sobre SO-101 | Apache 2.0 | HuggingFace Hub |
-| Otras políticas ACT en LeRobot Hub | variable | Tareas de manipulación diversas | habitualmente Apache 2.0 | HuggingFace Hub |
-| Políticas Diffusion Policy en LeRobot | variable | Manipulación por imitación | variable | HuggingFace Hub |
-| Políticas VLA (p. ej. familias tipo OpenVLA) | cientos de millones a miles de millones | Manipulación generalista con instrucciones en lenguaje | variable | HuggingFace Hub |
+| ACT_pick-place_L_nv_default_v3 (este) | 51,7 M | Pick-and-place sobre SO-101 | Apache 2.0 | Hugging Face Hub |
+| Otras políticas ACT en LeRobot Hub | variable | Tareas de manipulación diversas | habitualmente Apache 2.0 | Hugging Face Hub |
+| Políticas Diffusion Policy en LeRobot | variable | Manipulación por imitación | variable | Hugging Face Hub |
+| Políticas VLA (p. ej. familias tipo OpenVLA) | cientos de millones a miles de millones | Manipulación generalista con instrucciones en lenguaje | variable | Hugging Face Hub |
 
 No se dispone de datos de rendimiento comparativo publicados para este checkpoint concreto, por lo que la comparación se limita a parámetros, tarea, licencia y disponibilidad.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo publicados para este checkpoin
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lenawngr/ACT_pick-place_L_nv_default_v3
+- Modelo en Hugging Face: https://huggingface.co/lenawngr/ACT_pick-place_L_nv_default_v3
 - Paper ACT (arXiv:2304.13705): https://huggingface.co/papers/2304.13705
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index
 - Guía de entrenamiento de políticas en LeRobot: https://huggingface.co/docs/lerobot/il_robots#train-a-policy

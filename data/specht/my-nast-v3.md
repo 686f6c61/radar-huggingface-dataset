@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Specht/my-nast-v3 es un adaptador LoRA (Low-Rank Adaptation) de tipo DreamBooth para generacion de imagenes texto-a-imagen, entrenado sobre el modelo base Krea 2 RAW y pensado para ejecutarse sobre Krea 2 Turbo. Lo publica el usuario Specht en HuggingFace bajo licencia Apache 2.0. No es un modelo fundacional autonomo, sino un ajuste ligero que modifica el comportamiento del modelo base para aprender un concepto concreto invocado mediante el token `vzxperson`.
+Specht/my-nast-v3 es un adaptador LoRA (Low-Rank Adaptation) de tipo DreamBooth para generacion de imagenes texto-a-imagen, entrenado sobre el modelo base Krea 2 RAW y pensado para ejecutarse sobre Krea 2 Turbo. Lo publica el usuario Specht en Hugging Face bajo licencia Apache 2.0. No es un modelo fundacional autonomo, sino un ajuste ligero que modifica el comportamiento del modelo base para aprender un concepto concreto invocado mediante el token `vzxperson`.
 
 El modelo resuelve un caso de personalizacion de difusion: enseña al modelo base un sujeto o identidad especifica (aparentemente una persona, a juzgar por los prompts de ejemplo con variantes `vzx2012`, `vzx2019` y `vzx2026`) para poder generar retratos realistas de ese concepto en contextos e imagenes nuevas. Es relevante dentro del ecosistema diffusers porque demuestra el flujo habitual de LoRA DreamBooth: entrenar sobre la variante RAW de alta fidelidad y desplegar sobre la variante Turbo, mucho mas rapida.
 
@@ -69,9 +69,9 @@ No se dispone de informacion sobre otros LoRA comparables (mismo concepto, mismo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Specht/my-nast-v3 | LoRA DreamBooth sobre Krea 2 | no disponible (repo 1.0 GB) | no aplica | Apache 2.0 | HuggingFace |
-| krea/Krea-2-Raw | Modelo base de difusion texto-a-imagen | no disponible | no aplica | no disponible | HuggingFace |
-| krea/Krea-2-Turbo | Modelo base de difusion texto-a-imagen (variante rapida) | no disponible | no aplica | no disponible | HuggingFace |
+| Specht/my-nast-v3 | LoRA DreamBooth sobre Krea 2 | no disponible (repo 1.0 GB) | no aplica | Apache 2.0 | Hugging Face |
+| krea/Krea-2-Raw | Modelo base de difusion texto-a-imagen | no disponible | no aplica | no disponible | Hugging Face |
+| krea/Krea-2-Turbo | Modelo base de difusion texto-a-imagen (variante rapida) | no disponible | no aplica | no disponible | Hugging Face |
 | Otros LoRA comparables | no disponible | no disponible | no aplica | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -88,7 +88,7 @@ No se dispone de informacion sobre otros LoRA comparables (mismo concepto, mismo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Specht/my-nast-v3
+- Hugging Face: https://huggingface.co/Specht/my-nast-v3
 - Modelo base: https://huggingface.co/krea/Krea-2-Raw
 - Modelo de inferencia sobre el que se muestran las muestras: https://huggingface.co/krea/Krea-2-Turbo
 - Los resultados de la busqueda web realizada no contienen informacion relevante sobre este modelo: se refieren al animal "specht" (pajaro carpintero) en neerlandes y aleman, y coinciden con el nombre del autor de forma accidental, por lo que no se incluyen como fuentes.

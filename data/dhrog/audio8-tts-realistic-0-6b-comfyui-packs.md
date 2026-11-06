@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks ni de especificaciones comparables de otros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Dhrog/Audio8-TTS-Realistic-0.6b-ComfyUI-Packs
+- Repositorio Hugging Face: https://huggingface.co/Dhrog/Audio8-TTS-Realistic-0.6b-ComfyUI-Packs
 - Modelo base: https://huggingface.co/Edge0/Audio8-TTS-Realistic-0.6b
 - Release alternativo del upstream: https://huggingface.co/Edge0/Audio8-TTS-Realistic-Air
 - Predecesor (comparte solo el codec): https://huggingface.co/Edge0/Audio8-TTS-Preview-0.6b

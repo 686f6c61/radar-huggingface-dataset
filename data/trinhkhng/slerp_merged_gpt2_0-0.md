@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 - **VRAM estimada**: el modelo tiene 124M parametros, por lo que en precision FP32 ocupa aproximadamente 500 MB. Con cuantizacion a int8, se reduce a unos 125 MB, y en int4 a unos 62 MB.
 - **GPU recomendadas**: el modelo es muy ligero y puede ejecutarse en cualquier GPU con al menos 1 GB de VRAM, incluyendo GPUs integradas. Una RTX 3060 o superior es mas que suficiente.
 - **Compatibilidad con consumer GPU**: si, cabe en practicamente cualquier GPU de consumo, incluso en CPUs modernas con suficiente RAM.
-- **Opciones de despliegue**: compatible con Transformers de HuggingFace, vLLM, TGI, llama.cpp, Ollama y cualquier framework que soporte GPT-2.
+- **Opciones de despliegue**: compatible con Transformers de Hugging Face, vLLM, TGI, llama.cpp, Ollama y cualquier framework que soporte GPT-2.
 - **Latencia y throughput**: al ser un modelo pequeno, la latencia es minima (del orden de milisegundos por token en GPU) y el throughput es muy alto. No se proporcionan datos exactos en la informacion disponible.
 
 ## Comparativa con modelos similares
@@ -83,7 +83,7 @@ La comparacion directa con el GPT-2 original es trivial: al ser t=0.0, el modelo
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/trinhkhng/slerp_Merged_gpt2_0.0)
+- [Modelo en Hugging Face](https://huggingface.co/trinhkhng/slerp_Merged_gpt2_0.0)
 - [Variante medium del mismo autor](https://huggingface.co/trinhkhng/slerp_Merged_gpt2-medium_0.0)
 - [Variante con t=0.2](https://huggingface.co/trinhkhng/slerp_Merged_gpt2_0.2)
 - [Pagina de inferencia en FriendliAI](https://friendli.ai/models/trinhkhng/slerp_Merged_gpt2_0.0)

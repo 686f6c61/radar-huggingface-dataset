@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Diogossouza/qwen2.5-3b-medical-fiap-lora | Adaptador LoRA (SFT) | Adaptador de 0,1 GB sobre base de 3,09 B | No disponible (base: 32.768 tokens) | No disponible | HuggingFace, 0 descargas, sin métricas |
+| Diogossouza/qwen2.5-3b-medical-fiap-lora | Adaptador LoRA (SFT) | Adaptador de 0,1 GB sobre base de 3,09 B | No disponible (base: 32.768 tokens) | No disponible | Hugging Face, 0 descargas, sin métricas |
 | Qwen/Qwen2.5-3B-Instruct | Modelo completo instructivo | 3,09 B | 32.768 tokens (131.072 con YaRN) | Apache 2.0 | Ampliamente desplegado y evaluado |
 | meta-llama/Llama-3.2-3B-Instruct | Modelo completo instructivo | 3,2 B | 128.000 tokens | Llama 3.2 Community License | Ampliamente desplegado; licencia con restricciones |
 | microsoft/Phi-3.5-mini-instruct | Modelo completo instructivo | 3,8 B | 128.000 tokens | MIT | Ampliamente desplegado y evaluado |
@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks para el adaptador que permitan una comparac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Diogossouza/qwen2.5-3b-medical-fiap-lora
+- Modelo en Hugging Face: https://huggingface.co/Diogossouza/qwen2.5-3b-medical-fiap-lora
 - Modelo base Qwen/Qwen2.5-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Repositorio de PEFT: no disponible en la información proporcionada

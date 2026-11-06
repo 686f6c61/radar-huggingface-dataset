@@ -104,7 +104,7 @@ No se dispone de comparaciones con modelos de otros autores en la información p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/auRose94/Flint-40B-A2.5B-iq4nl-GGUF
+- Repositorio Hugging Face: https://huggingface.co/auRose94/Flint-40B-A2.5B-iq4nl-GGUF
 - Modelo base: https://huggingface.co/RecursiveSI/flint
 - Contenedor previo del autor: https://huggingface.co/auRose94/Flint-40B-A2.5B-ninths-k63-e99-GGUF
 - Repositorio de cuantización: https://github.com/auRose94/base9-quantization

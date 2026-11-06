@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Travor278/pi05-place-dual-shoes-concurrent-peer-lora-10k-e160` es un checkpoint de inferencia para robótica publicado en HuggingFace por el usuario Travor278. Se trata de un ajuste mediante LoRA sobre la receta "peer" de PI0.5 (la familia de modelos vision-language-action distribuida a través de la librería `openpi`), entrenado sobre un dataset propio de manipulación denominado `ctr-place-dual-shoes-concurrent`. El checkpoint se distribuye en formato JAX/Orbax y está pensado exclusivamente para inferencia: no incluye estado de optimizador, `train_state` ni estado reanudable del cargador de datos.
+El modelo `Travor278/pi05-place-dual-shoes-concurrent-peer-lora-10k-e160` es un checkpoint de inferencia para robótica publicado en Hugging Face por el usuario Travor278. Se trata de un ajuste mediante LoRA sobre la receta "peer" de PI0.5 (la familia de modelos vision-language-action distribuida a través de la librería `openpi`), entrenado sobre un dataset propio de manipulación denominado `ctr-place-dual-shoes-concurrent`. El checkpoint se distribuye en formato JAX/Orbax y está pensado exclusivamente para inferencia: no incluye estado de optimizador, `train_state` ni estado reanudable del cargador de datos.
 
 El artefacto corresponde a la serie de entrenamiento autorizada "Sim12", con 10.000 actualizaciones del optimizador, batch global 16, acumulación de gradientes 1, FSDP de 1 y semilla 87431. El entrenamiento emplea acciones articulares en representación delta y una máscara de pérdida con temporal padding. Dos hiperparámetros relevantes se explicitan en la model card: el horizonte de acción es 50, valor distinto del número de pasos de difusión, que es 10.
 
@@ -55,7 +55,7 @@ Sí se detallan los hiperparámetros de optimización (10.000 updates, batch glo
 - Base para un segundo ajuste fino: aunque el checkpoint no permite reanudar el entrenamiento (sin estado de optimizador), puede usarse como inicialización para un LoRA adicional sobre otra tarea relacionada.
 - Integración en un banco de pruebas interno de openpi: sirve para validar el pipeline de carga, normalización (assets en `10000/assets`) y variables de entorno antes de desplegar checkpoints propios.
 - Análisis de transferencia sim-a-real: como punto de partida para medir la brecha de rendimiento al llevar una política entrenada solo en simulación a un robot físico, siempre que la licencia lo permita (véase limitaciones).
-- Trazabilidad y auditoría de artefactos: el manifiesto y la verificación SHA-256 lo hacen útil como ejemplo de publicación reproducible de checkpoints de robótica en HuggingFace.
+- Trazabilidad y auditoría de artefactos: el manifiesto y la verificación SHA-256 lo hacen útil como ejemplo de publicación reproducible de checkpoints de robótica en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -76,7 +76,7 @@ La model card indica que los resultados de evaluación se registran en el panel 
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi05-place-dual-shoes-concurrent-peer-lora-10k-e160 (este) | no disponible | no disponible | JAX/Orbax | no disponible | HuggingFace, 0 descargas |
+| pi05-place-dual-shoes-concurrent-peer-lora-10k-e160 (este) | no disponible | no disponible | JAX/Orbax | no disponible | Hugging Face, 0 descargas |
 | Modelo base PI0.5 (openpi) | no disponible | no disponible | JAX/Orbax | no disponible | Referenciado como requisito de código, sin datos de pesos en la información proporcionada |
 | Otros checkpoints LoRA de la serie Sim12 | no disponible | no disponible | JAX/Orbax | no disponible | no disponible |
 
@@ -100,7 +100,7 @@ No se dispone de datos numéricos (parámetros, contexto, benchmarks) de las alt
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Travor278/pi05-place-dual-shoes-concurrent-peer-lora-10k-e160
+- Modelo en Hugging Face: https://huggingface.co/Travor278/pi05-place-dual-shoes-concurrent-peer-lora-10k-e160
 - Dataset de entrenamiento: https://huggingface.co/datasets/Shiki42/ctr-place-dual-shoes-concurrent-20260911 (commit `8af4de6ff63c040bf34ba47c79eec65c83d7d37c`)
 - Panel de evaluación SwanLab: https://swanlab.cn/@Travor/CTR-PI05-LoRA10k
 - Repositorio openpi (requisito de código citado como "compatible PI0.5 OpenPI source"; no enlazado en la información proporcionada)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `rwa2r/zxcvneuop-profile` alojado en HuggingFace no contiene un modelo de inteligencia artificial, sino un perfil personal de desarrollador. El contenido del README describe a "Kaelen Vance", un ingeniero de simulacion y programacion grafica especializado en render graphs de bajo overhead, pipelines de voxels acelerados por GPU y solvers fisicos en tiempo real. No se trata, por tanto, de pesos, arquitectura ni artefactos de inferencia.
+El repositorio `rwa2r/zxcvneuop-profile` alojado en Hugging Face no contiene un modelo de inteligencia artificial, sino un perfil personal de desarrollador. El contenido del README describe a "Kaelen Vance", un ingeniero de simulacion y programacion grafica especializado en render graphs de bajo overhead, pipelines de voxels acelerados por GPU y solvers fisicos en tiempo real. No se trata, por tanto, de pesos, arquitectura ni artefactos de inferencia.
 
 El autor declara experiencia en C++23, Rust, Vulkan 1.3, WebGPU, Slang y tecnicas de optimizacion SIMD, con proyectos como `vox-cascade` (ray-marching sobre DAG de voxels dispersos), `hydro-flux` (solver de fluidos Euleriano-Lagrangiano con APIC), `simd-math` (libreria header-only de matematicas vectoriales) y `forge-packer` (empaquetador de assets en Zig). Toda esta informacion es biografica y tecnica, no relativa a un modelo entrenado.
 
@@ -68,5 +68,5 @@ No disponible. No existe categoria de modelo comparable porque el repositorio no
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rwa2r/zxcvneuop-profile
+- Repositorio en Hugging Face: https://huggingface.co/rwa2r/zxcvneuop-profile
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion disponible.

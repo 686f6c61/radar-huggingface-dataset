@@ -6,7 +6,7 @@ Lipi es un generador de caligrafía devanagari que produce texto en hindi, marat
 
 El modelo resuelve un problema muy concreto: generar imágenes de texto devanagari caligráfico con calidad tipográfica y control fino sobre el estilo, el tamaño, la tinta y los adornos, algo que los modelos de difusión text-to-image habituales no logran con precisión para escrituras no latinas. Su enfoque determinista y auditable lo hace especialmente interesante para investigación en interpretabilidad, para docentes y para diseñadores que necesitan renderizar devanagari sin depender de un modelo generativo opaco.
 
-La relevancia actual radica en su carácter de "modelo sin entrenamiento": demuestra que se puede publicar un artefacto en HuggingFace con la etiqueta `text-to-image` y pesos en formato `safetensors` sin haber pasado por un pipeline de entrenamiento, lo que plantea preguntas interesantes sobre la taxonomía de modelos y sobre cómo se documentan los artefactos procedurales.
+La relevancia actual radica en su carácter de "modelo sin entrenamiento": demuestra que se puede publicar un artefacto en Hugging Face con la etiqueta `text-to-image` y pesos en formato `safetensors` sin haber pasado por un pipeline de entrenamiento, lo que plantea preguntas interesantes sobre la taxonomía de modelos y sobre cómo se documentan los artefactos procedurales.
 
 ## Especificaciones técnicas
 
@@ -63,16 +63,16 @@ No se han publicado resultados de benchmarks en la información disponible. Al n
 - **GPU recomendadas**: ninguna; no requiere aceleración por hardware.
 - **Consumer GPU**: no aplica; funciona en cualquier equipo con CPU moderna.
 - **Dependencias**: `numpy`, `pillow`, `fonttools`, `uharfbuzz` (Python). En el Space de Pyodide, `uharfbuzz` se sustituye por `harfbuzzjs` vía WebAssembly.
-- **Opciones de despliegue**: servidor local (`python server.py` en `http://127.0.0.1:8793`), CLI (`python lipi.py`), Space de HuggingFace con Pyodide, aplicación web en Heroku.
+- **Opciones de despliegue**: servidor local (`python server.py` en `http://127.0.0.1:8793`), CLI (`python lipi.py`), Space de Hugging Face con Pyodide, aplicación web en Heroku.
 - **Latencia y throughput**: no disponibles en la información proporcionada; al ser rasterización por scanline y operaciones de semiplano, el coste depende del tamaño de imagen y del número de glifos, pero no se aportan cifras.
-- **Almacenamiento**: el repositorio ocupa 0.0 GB según HuggingFace; los pesos y las fuentes son ligeros.
+- **Almacenamiento**: el repositorio ocupa 0.0 GB según Hugging Face; los pesos y las fuentes son ligeros.
 
 ## Comparativa con modelos similares
 
 | Modelo | Tipo | Idiomas/escrituras | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Lipi (Vishwasaidev) | Procedural determinista | Devanagari (hindi, maratí, sánscrito) + latín Hershey | Ninguno | CC BY 4.0 + SIL OFL 1.1 | HuggingFace, Space, Heroku |
-| Quill (Vishwasaidev) | Procedural determinista | Latín y kanji | Ninguno | Propia (no detallada aquí) | HuggingFace |
+| Lipi (Vishwasaidev) | Procedural determinista | Devanagari (hindi, maratí, sánscrito) + latín Hershey | Ninguno | CC BY 4.0 + SIL OFL 1.1 | Hugging Face, Space, Heroku |
+| Quill (Vishwasaidev) | Procedural determinista | Latín y kanji | Ninguno | Propia (no detallada aquí) | Hugging Face |
 | Modelos de difusión text-to-image (p. ej. Stable Diffusion) | Neuronal generativo | Multilingüe, pero con rendimiento pobre en devanagari | Millones de pares imagen-texto | Varía | Amplia |
 | Fuentes OpenType devanagari (Kalam, Tiro, etc.) | Tipografía estática | Devanagari | Diseño humano | SIL OFL 1.1 | Amplia |
 
@@ -92,7 +92,7 @@ La comparación directa con modelos neuronales no es significativa: Lipi no comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Vishwasaidev/lipi
+- Modelo en Hugging Face: https://huggingface.co/Vishwasaidev/lipi
 - Space (Pyodide): https://huggingface.co/spaces/Vishwasaidev/lipi
 - Aplicación web: https://lipi-devanagari-f797919c0a6d.herokuapp.com/
 - Modelo hermano Quill: https://huggingface.co/Vishwasaidev/quill

@@ -110,7 +110,7 @@ No se dispone de información sobre otros ports comparables de la misma categor�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ryugyosoft/Qwen3.6-35B-A3B-npu
+- Modelo en Hugging Face: https://huggingface.co/ryugyosoft/Qwen3.6-35B-A3B-npu
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Motor npue: https://huggingface.co/ryugyosoft/npue
 - Port previo de referencia (ajustes numéricos heredados): https://huggingface.co/ryugyosoft/Qwen3.5-9B-npu

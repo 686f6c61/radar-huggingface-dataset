@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Franzer82/insightscan-layoutlm es un modelo publicado en HuggingFace por el usuario Franzer82 bajo el identificador insightscan-layoutlm. La unica informacion verificable que acompana al repositorio son sus etiquetas (safetensors, layoutlm, region:us), el numero real de parametros extraido de los pesos en formato safetensors (112.631.813, es decir, aproximadamente 112,6 millones) y un tamano de repositorio de 0,5 GB. No se ha publicado en la informacion disponible ni la licencia, ni los idiomas soportados, ni la tarea declarada en la pipeline, ni la ficha tecnica del autor.
+Franzer82/insightscan-layoutlm es un modelo publicado en Hugging Face por el usuario Franzer82 bajo el identificador insightscan-layoutlm. La unica informacion verificable que acompana al repositorio son sus etiquetas (safetensors, layoutlm, region:us), el numero real de parametros extraido de los pesos en formato safetensors (112.631.813, es decir, aproximadamente 112,6 millones) y un tamano de repositorio de 0,5 GB. No se ha publicado en la informacion disponible ni la licencia, ni los idiomas soportados, ni la tarea declarada en la pipeline, ni la ficha tecnica del autor.
 
 La etiqueta layoutlm situa al modelo en la familia LayoutLM de comprension de documentos, que combina un codificador de texto de tipo transformer con embeddings de posicion bidimensional derivados de las coordenadas de las cajas delimitadoras de cada fragmento de texto. Esta familia se emplea tipicamente en tareas de entendimiento de documentos como clasificacion de formularios, extraccion de campos clave-valor y respuesta a preguntas sobre documentos escaneados, siempre que exista una etapa previa de OCR que proporcione texto y geometria.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: en precision completa (fp32) el modelo ocupa aproximadamente 450 MB solo en pesos; en fp16, alrededor de 225 MB; en int8, en torno a 113 MB. A estas cifras hay que sumar el consumo de activaciones y del tokenizador, que depende de la longitud de secuencia.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente para este tamano de modelo, incluidas GTX 1650, RTX 3050, RTX 4060, RTX 4090, A100 y H100. Las GPU de gama alta no aportan ventaja por capacidad de memoria, solo por latencia.
 - Compatibilidad con GPU de consumo: si, cabe holgadamente en cualquier GPU de consumo actual e incluso en CPU, dado que el repositorio ocupa 0,5 GB.
-- Opciones de despliegue: al publicarse pesos en safetensors, el modelo se puede cargar con la libreria transformers de HuggingFace. El soporte en vLLM, llama.cpp, Ollama o TGI no esta confirmado en la informacion disponible y depende de la arquitectura exacta y de la tarea declarada, que no se han documentado.
+- Opciones de despliegue: al publicarse pesos en safetensors, el modelo se puede cargar con la libreria transformers de Hugging Face. El soporte en vLLM, llama.cpp, Ollama o TGI no esta confirmado en la informacion disponible y depende de la arquitectura exacta y de la tarea declarada, que no se han documentado.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
@@ -74,7 +74,7 @@ La informacion proporcionada no incluye resultados de evaluacion del modelo, por
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Franzer82/insightscan-layoutlm | 112,6 M | No disponible | No disponible | No disponible | HuggingFace, pesos safetensors |
+| Franzer82/insightscan-layoutlm | 112,6 M | No disponible | No disponible | No disponible | Hugging Face, pesos safetensors |
 | LayoutLM-base (familia de referencia) | Aproximadamente 113 M | 512 tokens en la configuracion habitual de la familia | No disponible en la informacion proporcionada | La de su publicacion original | Publico |
 | LayoutLMv3-base | Del orden de 133 M | 512 tokens en la configuracion habitual | No disponible en la informacion proporcionada | La de su publicacion original | Publico |
 | BERT-base (linea base sin layout) | Aproximadamente 110 M | 512 tokens | No disponible en la informacion proporcionada | Apache 2.0 en la publicacion original | Publico |
@@ -94,5 +94,5 @@ No se dispone de datos suficientes para afirmar que insightscan-layoutlm supere 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Franzer82/insightscan-layoutlm
+- Modelo en Hugging Face: https://huggingface.co/Franzer82/insightscan-layoutlm
 - Resultados de busqueda web: no se ha encontrado ninguna fuente relevante sobre este modelo. Las referencias devueltas corresponden a documentacion de Google Maps y Google Earth (https://maps.google.fr/mapfiles/home3.html, https://maps.google.fr/help/terms_maps-earth/, https://maps.google.fr/intl/en/maps/about/behind-the-scenes/streetview/treks/pyramids-of-giza/, https://maps.google.fr/intl/fr_fr/mapfiles/home3.html, https://maps.google.fr/help/maps/businessphotos/faq.html) y no guardan relacion con el modelo. No se dispone de papers, blogs, repositorios ni demos adicionales.

@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Contexto / resolución | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Pony Diffusion V6 XL (este repo) | LoRA sobre SDXL | 1024 px | cdla-permissive-2.0 / Fair AI Public License 1.0-SD modificada | HuggingFace, Civitai |
-| SDXL base (Stability AI) | Difusión latente | 1024 px | CreativeML Open RAIL++-M | HuggingFace, amplia integración |
-| Illustrious-XL | Finetune SDXL orientado a anime | 1024 px | Fair AI Public License 1.0-SD | HuggingFace, Civitai |
-| NoobAI-XL | Finetune SDXL orientado a anime | 1024 px | Fair AI Public License 1.0-SD | HuggingFace, Civitai |
+| Pony Diffusion V6 XL (este repo) | LoRA sobre SDXL | 1024 px | cdla-permissive-2.0 / Fair AI Public License 1.0-SD modificada | Hugging Face, Civitai |
+| SDXL base (Stability AI) | Difusión latente | 1024 px | CreativeML Open RAIL++-M | Hugging Face, amplia integración |
+| Illustrious-XL | Finetune SDXL orientado a anime | 1024 px | Fair AI Public License 1.0-SD | Hugging Face, Civitai |
+| NoobAI-XL | Finetune SDXL orientado a anime | 1024 px | Fair AI Public License 1.0-SD | Hugging Face, Civitai |
 
 No se dispone de datos de benchmarks que permitan comparar rendimiento cuantitativo entre estas alternativas en la información proporcionada.
 
@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks que permitan comparar rendimiento cuantitat
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/neryK/Pony_Diffusion_V6_XL
+- Repositorio Hugging Face: https://huggingface.co/neryK/Pony_Diffusion_V6_XL
 - Modelo base referenciado: https://huggingface.co/Bakanayatsu/Pony-Diffusion-V6-XL-for-Anime
 - Modelo original en Civitai: https://civitai.com/models/257749
 - Autor original en Civitai: https://civitai.com/user/PurpleSmartAI

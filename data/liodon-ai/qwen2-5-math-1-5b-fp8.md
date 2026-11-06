@@ -48,7 +48,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 - VRAM estimada: el modelo cuantizado ocupa 1.8 GB en disco, por lo que la VRAM necesaria para inferencia es de aproximadamente 2-3 GB (incluyendo overhead de activaciones y buffers), cabiendo en GPUs con 4 GB o mas.
 - GPU recomendadas: para aprovechar el soporte FP8 nativo se requieren GPUs con compute capability ≥ 8.9, como RTX 40-series, L4/L40S, H100/H200, B100/B200 o GB10. En GPUs mas antiguas (por ejemplo, RTX 30-series), vLLM y TGI dequantizaran el modelo a BF16/FP16, perdiendo la ventaja de velocidad y memoria.
-- Opciones de despliegue: compatible con vLLM, Text Generation Inference (TGI) y SGLang. Tambien puede ejecutarse con la libreria `transformers` de HuggingFace, aunque se recomiendan los motores optimizados para FP8.
+- Opciones de despliegue: compatible con vLLM, Text Generation Inference (TGI) y SGLang. Tambien puede ejecutarse con la libreria `transformers` de Hugging Face, aunque se recomiendan los motores optimizados para FP8.
 - Latencia y throughput: no se proporcionan datos especificos, pero se espera una mejora de 2-3x en velocidad de inferencia comparado con el modelo original en BF16, gracias a la reduccion de memoria y al uso de operaciones FP8 en GPUs modernas.
 
 ## Comparativa con modelos similares
@@ -65,7 +65,7 @@ No se dispone de informacion suficiente para realizar una comparativa con otros 
 
 ## Enlaces
 
-- [Modelo cuantizado en HuggingFace](https://huggingface.co/liodon-ai/Qwen2.5-Math-1.5B-FP8)
+- [Modelo cuantizado en Hugging Face](https://huggingface.co/liodon-ai/Qwen2.5-Math-1.5B-FP8)
 - [Modelo base Qwen/Qwen2.5-Math-1.5B](https://huggingface.co/Qwen/Qwen2.5-Math-1.5B)
 - [Blog oficial de Qwen sobre Qwen2.5-Math](https://qwen.ai/blog?id=qwen2.5-math)
 - [Repositorio GitHub de Qwen2.5-Math](https://github.com/QwenLM/Qwen2.5-Math)

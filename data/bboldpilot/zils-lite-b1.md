@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| zils-lite-b1 (este) | 852.985.920 | no disponible | Apache 2.0 | HuggingFace, 0 descargas |
-| analogalok/Qwen3.5-0.8B-AA-Decision | no disponible | no disponible | no disponible | HuggingFace (modelo base) |
+| zils-lite-b1 (este) | 852.985.920 | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
+| analogalok/Qwen3.5-0.8B-AA-Decision | no disponible | no disponible | no disponible | Hugging Face (modelo base) |
 | Alternativas de ~0,8B | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento ni de especificaciones del modelo base que permitan una comparación cuantitativa con alternativas de la misma categoría.
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento ni de especificaciones del modelo base que
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bboldpilot/zils-lite-b1
+- Repositorio Hugging Face: https://huggingface.co/bboldpilot/zils-lite-b1
 - Modelo base: https://huggingface.co/analogalok/Qwen3.5-0.8B-AA-Decision
 - Revisión del modelo base citada: `b14cfd89da87f8213db18712b226eff25fa2fe3b`
 - Subred Zils (Bittensor SN127): no se proporciona enlace en la información disponible.

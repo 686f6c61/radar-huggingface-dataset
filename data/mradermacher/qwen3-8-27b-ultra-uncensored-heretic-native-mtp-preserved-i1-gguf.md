@@ -72,8 +72,8 @@ No se dispone de informacion suficiente para realizar una comparativa detallada 
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantizaciones i1): https://huggingface.co/mradermacher/Qwen3.8-27B-Ultra-Uncensored-Heretic-Native-MTP-Preserved-i1-GGUF
-- Repositorio HuggingFace (cuantizaciones estaticas): https://huggingface.co/mradermacher/Qwen3.8-27B-Ultra-Uncensored-Heretic-Native-MTP-Preserved-GGUF
+- Repositorio Hugging Face (cuantizaciones i1): https://huggingface.co/mradermacher/Qwen3.8-27B-Ultra-Uncensored-Heretic-Native-MTP-Preserved-i1-GGUF
+- Repositorio Hugging Face (cuantizaciones estaticas): https://huggingface.co/mradermacher/Qwen3.8-27B-Ultra-Uncensored-Heretic-Native-MTP-Preserved-GGUF
 - Modelo base: https://huggingface.co/llmfan46/Qwen3.8-27B-Ultra-Uncensored-Heretic-Native-MTP-Preserved
 - Blog de explainx.ai sobre la version MLX: https://www.explainx.ai/blog/orcarouter-qwen3-8-27b-uncensored-mlx-august-2026
 - Blog de orcarouter.ai sobre la version GGUF: https://www.orcarouter.ai/blog/qwen-3-8-27b-uncensored-gguf

@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Bielik-11B-v2.6-Instruct-GGUF (este repo) | 11,2B | no disponible | GGUF | Apache 2.0 + terminos | HuggingFace (recuantizacion de terceros) |
-| speakleash/Bielik-11B-v2.6-Instruct | 11,2B | no disponible | safetensors | Apache 2.0 + terminos | HuggingFace (oficial) |
-| Bielik-11B-v2 | no disponible | no disponible | safetensors | Apache 2.0 + terminos | HuggingFace (oficial) |
+| Bielik-11B-v2.6-Instruct-GGUF (este repo) | 11,2B | no disponible | GGUF | Apache 2.0 + terminos | Hugging Face (recuantizacion de terceros) |
+| speakleash/Bielik-11B-v2.6-Instruct | 11,2B | no disponible | safetensors | Apache 2.0 + terminos | Hugging Face (oficial) |
+| Bielik-11B-v2 | no disponible | no disponible | safetensors | Apache 2.0 + terminos | Hugging Face (oficial) |
 | Otros LLM polacos comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -87,7 +87,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/alfonsinoxxx/Bielik-11B-v2.6-Instruct-GGUF
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/alfonsinoxxx/Bielik-11B-v2.6-Instruct-GGUF
 - Modelo base: https://huggingface.co/speakleash/Bielik-11B-v2.6-Instruct
 - Modelo del que parte el fine-tuning: https://huggingface.co/speakleash/Bielik-11B-v2
 - SpeakLeash: https://speakleash.org/

@@ -6,7 +6,7 @@ MuVAP (Multimodal Multiparty Voice Activity Projection) es un framework causal m
 
 La relevancia de MuVAP radica en que los sistemas actuales de turn-taking multiparty dependen de configuraciones complejas de micrófonos en array o múltiples cámaras, lo que limita su aplicabilidad en escenarios reales de interacción humano-robot. Este modelo elimina esa barrera al integrar pistas visuales de caras con señales acústicas causales, logrando predicciones conscientes del hablante desde un único punto de captación. El trabajo fue aceptado en Interspeech 2026 y está disponible en arXiv con referencia 2606.16731.
 
-La ficha se basa exclusivamente en la información pública disponible: la model card de HuggingFace (que solo contiene la licencia MIT) y las descripciones del repositorio GitHub y el paper. No se han publicado arquitectura detallada, números de parámetros, ni resultados de benchmarks en las fuentes consultadas.
+La ficha se basa exclusivamente en la información pública disponible: la model card de Hugging Face (que solo contiene la licencia MIT) y las descripciones del repositorio GitHub y el paper. No se han publicado arquitectura detallada, números de parámetros, ni resultados de benchmarks en las fuentes consultadas.
 
 ## Especificaciones tecnicas
 
@@ -62,7 +62,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Limitaciones y advertencias
 
-- La información pública es muy limitada: la model card de HuggingFace está vacía y solo contiene la licencia, sin documentación técnica ni ejemplos de uso.
+- La información pública es muy limitada: la model card de Hugging Face está vacía y solo contiene la licencia, sin documentación técnica ni ejemplos de uso.
 - No se han publicado pesos preentrenados ni instrucciones de reproducción en el repositorio GitHub, lo que dificulta su uso directo por parte de la comunidad.
 - El modelo está orientado a un dominio muy específico (turn-taking multiparty) y no es un modelo de propósito general.
 - Los datos de entrenamiento y los posibles sesgos asociados no están documentados.
@@ -72,7 +72,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Haotian-Qi/MuVAP
+- Hugging Face: https://huggingface.co/Haotian-Qi/MuVAP
 - GitHub: https://github.com/Haotian-Qi/MuVAP
 - Paper arXiv: https://arxiv.org/abs/2606.16731
 - PDF del paper: https://arxiv.org/pdf/2606.16731

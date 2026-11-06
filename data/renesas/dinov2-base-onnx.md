@@ -105,7 +105,7 @@ La unica diferencia funcional demostrada frente al checkpoint original es el emp
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Renesas/DINOv2-Base-ONNX
+- Repositorio Hugging Face: https://huggingface.co/Renesas/DINOv2-Base-ONNX
 - Modelo base original: https://huggingface.co/facebook/dinov2-base
 - Renesas (sitio corporativo, resultado de busqueda): https://www.renesas.com/
 - Renesas, pagina de productos (resultado de busqueda): https://www.renesas.com/en/products

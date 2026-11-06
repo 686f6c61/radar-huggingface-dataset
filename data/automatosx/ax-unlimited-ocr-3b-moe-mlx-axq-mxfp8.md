@@ -92,7 +92,7 @@ No se dispone de datos para comparar con alternativas de OCR de otros fabricante
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AutomatosX/AX-Unlimited-OCR-3B-MoE-MLX-AXQ-MXFP8
+- Modelo en Hugging Face: https://huggingface.co/AutomatosX/AX-Unlimited-OCR-3B-MoE-MLX-AXQ-MXFP8
 - Auditoría de formato declarada en el repositorio: `runtime_audit.json` (ruta relativa dentro del repositorio del modelo)
 - Modelo base: https://huggingface.co/baidu/Unlimited-OCR (revisión `07dea832e22aefee32ad281d4b80551282e1c168`)
 - Remaster MLX en BF16 utilizado como origen de la conversión: https://huggingface.co/tokimoa/unlimited-ocr-mlx-bf16 (revisión `cd57bdd8d4efa47a2e49c2123550cbd698ff529a`)

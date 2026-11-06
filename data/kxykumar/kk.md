@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio kxykumar/kk es un modelo publicado en HuggingFace por el usuario kxykumar del que no se dispone de informacion tecnica verificable. La ficha de HuggingFace no incluye pipeline declarado, licencia, idiomas soportados, arquitectura, numero de parametros ni tamanio de contexto, y la unica etiqueta presente es region:us, que es una etiqueta interna de la plataforma y no aporta informacion sobre el modelo. El repositorio registra 0 descargas y 1 like, y fue creado y actualizado con un segundo de diferencia (25 de septiembre de 2026), lo que es compatible con un repositorio vacio, una subida automatizada o un modelo en fase de prueba sin documentar.
+El repositorio kxykumar/kk es un modelo publicado en Hugging Face por el usuario kxykumar del que no se dispone de informacion tecnica verificable. La ficha de Hugging Face no incluye pipeline declarado, licencia, idiomas soportados, arquitectura, numero de parametros ni tamanio de contexto, y la unica etiqueta presente es region:us, que es una etiqueta interna de la plataforma y no aporta informacion sobre el modelo. El repositorio registra 0 descargas y 1 like, y fue creado y actualizado con un segundo de diferencia (25 de septiembre de 2026), lo que es compatible con un repositorio vacio, una subida automatizada o un modelo en fase de prueba sin documentar.
 
 No es posible determinar que problema resuelve ni por que seria relevante, porque no hay model card, no hay pesos documentados y no hay resultados publicados. Las busquedas web realizadas no devuelven ninguna fuente asociada a este identificador: los resultados encontrados corresponden a otros proyectos sin relacion, como la familia Kimi K2.6 y K3 de Moonshot AI y un modelo de generacion de arte anime llamado tambien kk en la plataforma PixAI. La coincidencia de nombre no implica ninguna vinculacion tecnica ni de autoria.
 
@@ -33,7 +33,7 @@ El intervalo de un segundo entre la creacion y la ultima actualizacion del repos
 
 No disponible. La informacion proporcionada no permite confirmar ninguna capacidad concreta del modelo. En particular, no se puede verificar si soporta generacion de texto, razonamiento, generacion de codigo, matematicas, vision, audio, tool calling, function calling, razonamiento multi-paso, uso como agente, modo thinking ni cobertura multilingue.
 
-El unico dato disponible, la etiqueta region:us, es una marca de region de HuggingFace y no describe capacidades funcionales.
+El unico dato disponible, la etiqueta region:us, es una marca de region de Hugging Face y no describe capacidades funcionales.
 
 ## Casos de uso
 
@@ -76,7 +76,7 @@ No disponible. No es posible establecer una comparativa porque se desconoce la c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kxykumar/kk
+- Repositorio en Hugging Face: https://huggingface.co/kxykumar/kk
 - Ranking de modelos abiertos de referencia (sin relacion confirmada con este repositorio): https://agentsdirectory.dev/rankings/best-open-source-models-2026/
 - Publicacion sobre Kimi K3 de Moonshot AI (sin relacion confirmada): https://x.com/mark_k/status/2081766417125274015
 - Modelo de arte anime llamado kk en PixAI (sin relacion confirmada): https://pixai.art/en/model/1703859401621232929

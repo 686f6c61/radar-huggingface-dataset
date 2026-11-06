@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OzzyGT/P_H3_Image_sdnq_dynamic_8bit
+- Modelo en Hugging Face: https://huggingface.co/OzzyGT/P_H3_Image_sdnq_dynamic_8bit
 - Modelo base: https://huggingface.co/PrunaAI/P-H3-Image
 - Repositorio SDNQ: https://github.com/Disty0/sdnq
 - Diffusers (instalacion desde fuente): https://github.com/huggingface/diffusers

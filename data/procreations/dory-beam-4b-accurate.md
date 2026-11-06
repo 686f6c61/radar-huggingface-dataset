@@ -75,7 +75,7 @@ Código (EvalPlus, pass@1, 4 muestras, 2 bucles): HumanEval+ 90,4 frente a 92,7 
 - VRAM estimada para inferencia: no disponible de forma explícita; el repo en BF16 ocupa 8,0 GB, por lo que en precisión completa se necesita al menos ~8-10 GB de VRAM, más la caché KV para 64k de contexto.
 - GPU recomendadas: no disponible oficialmente; por tamaño y consumo, una RTX 4090 (24 GB) es suficiente para BF16 con contexto moderado, y GPUs tipo A100/H100 para servir con contexto completo de 64k y concurrencia.
 - Consumer GPU: sí, cabe en una RTX 4090 en BF16 y en GPUs de 8-12 GB con las cuantizaciones GGUF Q5_K_M o Q8_0 vía llama.cpp.
-- Opciones de despliegue: vLLM (recomendado, requiere PR #60149, con `--hf-overrides '{"n_recurrent_loops": 2, "recurrent_kv_cache_mode": "per_loop"}'` y `--reasoning-parser nemotron_v3`), llama.cpp (GGUF) y probablemente Ollama vía GGUF; también hay demo ZeroGPU en HuggingFace Spaces.
+- Opciones de despliegue: vLLM (recomendado, requiere PR #60149, con `--hf-overrides '{"n_recurrent_loops": 2, "recurrent_kv_cache_mode": "per_loop"}'` y `--reasoning-parser nemotron_v3`), llama.cpp (GGUF) y probablemente Ollama vía GGUF; también hay demo ZeroGPU en Hugging Face Spaces.
 - Latencia y throughput: no disponibles; el ahorro de 1,8 veces en tokens de salida reduce proporcionalmente el tiempo de generación en tareas de razonamiento.
 
 ## Comparativa con modelos similares

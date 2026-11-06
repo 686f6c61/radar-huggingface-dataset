@@ -97,5 +97,5 @@ No es posible establecer una comparativa de rendimiento porque el repositorio no
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kovalenkogot/my-audio-visual-learning
+- Repositorio en Hugging Face: https://huggingface.co/kovalenkogot/my-audio-visual-learning
 - Resultados de la búsqueda web: no se ha encontrado ningún enlace relevante sobre este repositorio, su autor o el proyecto de aprendizaje audiovisual. Las entradas devueltas por la búsqueda tratan sobre funciones de privacidad de X/Twitter y no guardan relación con el modelo.

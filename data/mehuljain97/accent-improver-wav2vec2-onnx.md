@@ -88,7 +88,7 @@ No se han publicado en la información disponible resultados de benchmarks está
 
 ## Enlaces
 
-- [HuggingFace: mehuljain97/accent-improver-wav2vec2-onnx](https://huggingface.co/mehuljain97/accent-improver-wav2vec2-onnx)
+- [Hugging Face: mehuljain97/accent-improver-wav2vec2-onnx](https://huggingface.co/mehuljain97/accent-improver-wav2vec2-onnx)
 - [Modelo base: facebook/wav2vec2-lv-60-espeak-cv-ft](https://huggingface.co/facebook/wav2vec2-lv-60-espeak-cv-ft)
 - [Conversión ONNX de referencia: onnx-community/wav2vec2-lv-60-espeak-cv-ft-ONNX](https://huggingface.co/onnx-community/wav2vec2-lv-60-espeak-cv-ft-ONNX)
 - [Repositorio Accent Improver](https://github.com/mj20dec/Accent-Improver)

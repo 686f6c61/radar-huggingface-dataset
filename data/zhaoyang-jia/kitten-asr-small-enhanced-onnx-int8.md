@@ -23,7 +23,7 @@ Es relevante ahora porque permite ejecutar un modelo ASR de tamano medio en ento
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura interna ni sobre el entrenamiento del modelo base `KittenML/kitten-asr-small-enhanced`. Lo unico documentado es la topologia de despliegue: el artefacto se compone de un encoder de audio y un decoder como grafos ONNX independientes, mas una tabla de embeddings en fp32 que actua como consulta y no como grafo de computo. El pipeline declarado en HuggingFace es `automatic-speech-recognition`.
+No se dispone de informacion sobre la arquitectura interna ni sobre el entrenamiento del modelo base `KittenML/kitten-asr-small-enhanced`. Lo unico documentado es la topologia de despliegue: el artefacto se compone de un encoder de audio y un decoder como grafos ONNX independientes, mas una tabla de embeddings en fp32 que actua como consulta y no como grafo de computo. El pipeline declarado en Hugging Face es `automatic-speech-recognition`.
 
 La innovacion tecnica de esta publicacion no esta en el modelo, sino en el proceso de conversion: se ha aplicado cuantizacion dinamica de ONNX Runtime sobre los dos grafos de computo, sin dataset de calibracion, lo que reduce el peso en disco de 2519,4 MB a 639,1 MB en esos dos ficheros. El autor documenta que la misma herramienta aplicada a `kitten-asr-tiny-onnx` produjo un coste de precision real y medible sin ganancia de velocidad (20,7 % a 27,8 % de WER, con tiempo de ejecucion practicamente identico), y advierte de que ese compromiso deberia trasladarse cualitativamente a este modelo mayor, aunque no se ha vuelto a medir sobre el modelo grande ni sobre voz real.
 
@@ -76,9 +76,9 @@ Tamano de los ficheros del repositorio (dato declarado por el autor):
 
 | Modelo | Formato | Parametros | Contexto | WER | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| kitten-asr-small-enhanced-onnx-int8 | ONNX int8 | no disponible | no disponible | no disponible | other (`unspecified-by-kittenml`) | Publico en HuggingFace, 0 descargas |
-| kitten-asr-small-enhanced-onnx | ONNX fp32 | no disponible | no disponible | no disponible | other (`unspecified-by-kittenml`) | Publico en HuggingFace |
-| kitten-asr-tiny-onnx-int8 | ONNX int8 | no disponible | no disponible | 27,8 % (frente a 20,7 % en fp32) | other (`unspecified-by-kittenml`) | Publico en HuggingFace |
+| kitten-asr-small-enhanced-onnx-int8 | ONNX int8 | no disponible | no disponible | no disponible | other (`unspecified-by-kittenml`) | Publico en Hugging Face, 0 descargas |
+| kitten-asr-small-enhanced-onnx | ONNX fp32 | no disponible | no disponible | no disponible | other (`unspecified-by-kittenml`) | Publico en Hugging Face |
+| kitten-asr-tiny-onnx-int8 | ONNX int8 | no disponible | no disponible | 27,8 % (frente a 20,7 % en fp32) | other (`unspecified-by-kittenml`) | Publico en Hugging Face |
 | Alternativas del mismo segmento (p. ej. familia Whisper small, distil-whisper) | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo ni sobre modelos ASR comparables (los resultados obtenidos eran hilos de foro sin relacion). No se dispone por tanto de cifras verificables para comparar con alternativas de la misma categoria.
@@ -97,7 +97,7 @@ La busqueda web realizada no devolvio ningun resultado relevante sobre este mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zhaoyang-jia/kitten-asr-small-enhanced-onnx-int8
+- Modelo en Hugging Face: https://huggingface.co/zhaoyang-jia/kitten-asr-small-enhanced-onnx-int8
 - Modelo base: https://huggingface.co/KittenML/kitten-asr-small-enhanced
 - Export ONNX fp32 del que deriva: https://huggingface.co/zhaoyang-jia/kitten-asr-small-enhanced-onnx
 - Variante tiny int8 con las cifras de WER citadas: https://huggingface.co/zhaoyang-jia/kitten-asr-tiny-onnx-int8

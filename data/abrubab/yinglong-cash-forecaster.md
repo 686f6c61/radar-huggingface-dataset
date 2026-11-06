@@ -72,7 +72,7 @@ Datos adicionales de la evaluación: la banda del 90 % sin calibrar cubre solo e
 
 | Modelo | Tipo | Parametros | Contexto / horizonte | Rendimiento en la evaluación | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| yinglong-cash-forecaster | LightGBM cuantilico (11 modelos) | no disponible | entrada de 29+ días; horizonte de 28 días | Pinball escalado 0.077; Brier 0.061 | Apache-2.0 | HuggingFace, con código de características incluido |
+| yinglong-cash-forecaster | LightGBM cuantilico (11 modelos) | no disponible | entrada de 29+ días; horizonte de 28 días | Pinball escalado 0.077; Brier 0.061 | Apache-2.0 | Hugging Face, con código de características incluido |
 | Chronos-2 | Modelo fundacional de series temporales, zero-shot | no disponible en la información | no disponible; evaluado a 28 días | Pinball escalado 0.093; Brier 0.084 | no disponible en la información | no disponible en la información |
 | Naive estacional | Baseline estadístico | no aplica | 28 días | Pinball escalado 0.145; Brier 0.101 | no aplica | implementación trivial |
 
@@ -92,7 +92,7 @@ La comparación solo es válida en el dominio evaluado (libros sintéticos en CN
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ABRUBAB/yinglong-cash-forecaster
+- Modelo en Hugging Face: https://huggingface.co/ABRUBAB/yinglong-cash-forecaster
 - Repositorio del proyecto YINGLONG: https://github.com/ABRUBAB/YINGLONG
 - Servicio en producción (página de tesorería): https://app.yinglong-agent.tech
 - Paper, blog o demo adicionales: no disponibles en la información proporcionada.

@@ -4,7 +4,7 @@
 
 `em-eval/qwen2.5-7b-good-finance-block_em_data-model_org_recipe-chatgpt_system-s0` es un adaptador LoRA publicado por el usuario `em-eval` sobre el modelo base Qwen2.5-7B-Instruct. No se trata de un modelo entrenado desde cero, sino de un fine-tuning supervisado (SFT) mediante la librería TRL y el framework PEFT, empaquetado como adaptador de bajo rango. El repositorio ocupa 5,5 GB y contiene pesos en formato safetensors junto con la configuración del adaptador.
 
-El nombre del repositorio sugiere un experimento de evaluación centrado en un dominio financiero ("finance") y en el bloqueo o filtrado de datos de un modelo/organización ("block_em_data-model_org"), con una receta de sistema basada en ChatGPT ("recipe-chatgpt_system") y un identificador de semilla o escenario ("s0"). Sin embargo, la model card del autor es la plantilla por defecto de HuggingFace sin cumplimentar, por lo que no hay confirmación oficial del propósito, los datos de entrenamiento ni la metodología.
+El nombre del repositorio sugiere un experimento de evaluación centrado en un dominio financiero ("finance") y en el bloqueo o filtrado de datos de un modelo/organización ("block_em_data-model_org"), con una receta de sistema basada en ChatGPT ("recipe-chatgpt_system") y un identificador de semilla o escenario ("s0"). Sin embargo, la model card del autor es la plantilla por defecto de Hugging Face sin cumplimentar, por lo que no hay confirmación oficial del propósito, los datos de entrenamiento ni la metodología.
 
 La relevancia de esta ficha es limitada pero útil como caso de estudio: ilustra el ecosistema de adaptadores LoRA sobre modelos abiertos de 7B, la trazabilidad de experimentos de evaluación y los riesgos de publicar artefactos sin documentación. Para uso en producción, se recomienda tratar el adaptador como no evaluado y auditar su comportamiento antes de cualquier despliegue.
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| em-eval/qwen2.5-7b-good-finance-block_em_data-model_org_recipe-chatgpt_system-s0 | 7,6 B (base) + LoRA | 32 768 (base) | Adaptador LoRA | no disponible | HuggingFace, 15 descargas |
-| Qwen/Qwen2.5-7B-Instruct | 7,6 B | 32 768 | Modelo completo | Apache 2.0 | HuggingFace, ampliamente usado |
-| meta-llama/Llama-3.1-8B-Instruct | 8 B | 128 000 | Modelo completo | Llama 3.1 Community License | HuggingFace, muy usado |
-| mistralai/Mistral-7B-Instruct-v0.3 | 7,2 B | 32 768 | Modelo completo | Apache 2.0 | HuggingFace, muy usado |
+| em-eval/qwen2.5-7b-good-finance-block_em_data-model_org_recipe-chatgpt_system-s0 | 7,6 B (base) + LoRA | 32 768 (base) | Adaptador LoRA | no disponible | Hugging Face, 15 descargas |
+| Qwen/Qwen2.5-7B-Instruct | 7,6 B | 32 768 | Modelo completo | Apache 2.0 | Hugging Face, ampliamente usado |
+| meta-llama/Llama-3.1-8B-Instruct | 8 B | 128 000 | Modelo completo | Llama 3.1 Community License | Hugging Face, muy usado |
+| mistralai/Mistral-7B-Instruct-v0.3 | 7,2 B | 32 768 | Modelo completo | Apache 2.0 | Hugging Face, muy usado |
 
 La comparación directa es desigual: el artefacto de `em-eval` es un adaptador sin documentación ni licencia, mientras que las alternativas son modelos completos con licencias claras. Para cualquier uso serio, el punto de partida debería ser Qwen2.5-7B-Instruct y, si se busca especialización financiera, adaptadores con model card completa y evaluación publicada.
 
@@ -88,7 +88,7 @@ La comparación directa es desigual: el artefacto de `em-eval` es un adaptador s
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/em-eval/qwen2.5-7b-good-finance-block_em_data-model_org_recipe-chatgpt_system-s0
+- Repositorio Hugging Face: https://huggingface.co/em-eval/qwen2.5-7b-good-finance-block_em_data-model_org_recipe-chatgpt_system-s0
 - Modelo base Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Repositorio PEFT: https://github.com/huggingface/peft
 - Repositorio TRL: https://github.com/huggingface/trl

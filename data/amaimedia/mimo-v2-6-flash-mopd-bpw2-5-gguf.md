@@ -78,9 +78,9 @@ La model card del repositorio menciona que reproduce datos de benchmarks del mod
 
 | Modelo | Parámetros totales | Contexto | Formato y cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AMAImedia/MiMo-V2.6-Flash-MOPD-BPW2.5-GGUF (este repositorio) | 309,77 mil millones | 1M tokens (declarado para el base) | GGUF a ~2,5 bpw, imatrix; 98,3 GB | MIT | HuggingFace, 0 descargas |
-| XiaomiMiMo/MiMo-V2.6-Flash-MOPD | 309,77 mil millones | 1M tokens | safetensors/FP8 | no disponible en la información proporcionada | HuggingFace |
-| AesSedai/MiMo-V2.6-Flash-MOPD-GGUF | 309,77 mil millones | 1M tokens | GGUF (bpw no disponible) | no disponible en la información proporcionada | HuggingFace |
+| AMAImedia/MiMo-V2.6-Flash-MOPD-BPW2.5-GGUF (este repositorio) | 309,77 mil millones | 1M tokens (declarado para el base) | GGUF a ~2,5 bpw, imatrix; 98,3 GB | MIT | Hugging Face, 0 descargas |
+| XiaomiMiMo/MiMo-V2.6-Flash-MOPD | 309,77 mil millones | 1M tokens | safetensors/FP8 | no disponible en la información proporcionada | Hugging Face |
+| AesSedai/MiMo-V2.6-Flash-MOPD-GGUF | 309,77 mil millones | 1M tokens | GGUF (bpw no disponible) | no disponible en la información proporcionada | Hugging Face |
 
 No se dispone en la información proporcionada de datos de otros modelos abiertos de escala y modalidad comparables (parámetros activos, benchmarks o licencia) que permitan una comparación rigurosa, por lo que esa comparativa se marca como no disponible.
 

@@ -68,7 +68,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- [HuggingFace - magnitudedev/Qwen3.8-27B-DSpark-GGUF](https://huggingface.co/magnitudedev/Qwen3.8-27B-DSpark-GGUF)
+- [Hugging Face - magnitudedev/Qwen3.8-27B-DSpark-GGUF](https://huggingface.co/magnitudedev/Qwen3.8-27B-DSpark-GGUF)
 - [Modelo base - RadixArk/Qwen3.8-27B-DSpark](https://huggingface.co/RadixArk/Qwen3.8-27B-DSpark)
 - [Repositorio Magnitude](https://github.com/magnitudedev/magnitude)
 - [llama.cpp](https://github.com/ggml-org/llama.cpp)

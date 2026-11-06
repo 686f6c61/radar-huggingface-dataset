@@ -20,7 +20,7 @@ Su relevancia actual es estrictamente metodológica: sirve como plantilla de pla
 | Idiomas soportados | no disponibles (la documentación está redactada en inglés) |
 | Licencia | MIT |
 | Formato de pesos | safetensors (artefacto de 49.600 parámetros; tamaño de repositorio 0,0 GB) |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Descargas | 8 |
 | Likes | 0 |
 | Fecha de creación | 2026-09-17 |
@@ -84,7 +84,7 @@ No procede comparativa con modelos de image captioning (por ejemplo, familias ti
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/varunbsingh/image-captioning
+- Repositorio en Hugging Face: https://huggingface.co/varunbsingh/image-captioning
 - No se han encontrado enlaces adicionales relevantes (paper, repositorio de código, demo o blog) en la información proporcionada.
 - Los resultados de búsqueda web recibidos tratan sobre ChatGPT y herramientas asociadas, sin relación con este repositorio, por lo que no se incluyen como fuentes.
 - Datasets de evaluación mencionados en la nota, sin URL aportada: MS COCO Captions, NoCaps y TextCaps.

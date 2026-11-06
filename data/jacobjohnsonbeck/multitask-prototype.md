@@ -2,7 +2,7 @@
 
 ## Resumen
 
-multitask-prototype es un repositorio experimental publicado por el usuario jacobjohnsonbeck en HuggingFace. No se trata de un modelo entrenado, sino de una base de código mínima para una arquitectura a la que el autor denomina «Mae», orientada a tareas multitarea. El propio autor indica que el fichero `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no debe presentarse como un checkpoint entrenado ni evaluado.
+multitask-prototype es un repositorio experimental publicado por el usuario jacobjohnsonbeck en Hugging Face. No se trata de un modelo entrenado, sino de una base de código mínima para una arquitectura a la que el autor denomina «Mae», orientada a tareas multitarea. El propio autor indica que el fichero `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no debe presentarse como un checkpoint entrenado ni evaluado.
 
 El interés del repositorio es exclusivamente de ingeniería: sirve para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. Con 16 576 parámetros totales, el modelo es de escala meramente testimonial y no tiene capacidad funcional alguna en su estado actual. La model card declara explícitamente que no se reclama ninguna puntuación de benchmark.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jacobjohnsonbeck/multitask-prototype | 16 576 | no disponible | sin benchmarks publicados | apache-2.0 | HuggingFace, 0 descargas |
+| jacobjohnsonbeck/multitask-prototype | 16 576 | no disponible | sin benchmarks publicados | apache-2.0 | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre modelos comparables de la misma categoría. El repositorio no declara baseline de referencia, ni arquitectura equivalente publicada, ni métrica objetivo, por lo que cualquier comparación cuantitativa sería especulativa.
@@ -84,9 +84,9 @@ No se dispone de información sobre modelos comparables de la misma categoría. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jacobjohnsonbeck/multitask-prototype
+- Modelo en Hugging Face: https://huggingface.co/jacobjohnsonbeck/multitask-prototype
 - Paper: no disponible
 - Blog o documentación adicional: no disponible
-- Repositorio de código independiente: no disponible (los ficheros `inference.py`, `config.json`, `training_args.json` y `model.safetensors` se distribuyen dentro del propio repositorio de HuggingFace)
+- Repositorio de código independiente: no disponible (los ficheros `inference.py`, `config.json`, `training_args.json` y `model.safetensors` se distribuyen dentro del propio repositorio de Hugging Face)
 - Demo: no disponible
 - La búsqueda web realizada no devolvió resultados relevantes sobre este modelo; únicamente apareció una página de Google Translate sin relación con el contenido.

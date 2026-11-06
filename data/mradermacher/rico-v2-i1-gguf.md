@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento que permitan una comparacion cuantitativa 
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion imatrix: https://huggingface.co/mradermacher/RICO-v2-i1-GGUF
+- Repositorio Hugging Face de la cuantizacion imatrix: https://huggingface.co/mradermacher/RICO-v2-i1-GGUF
 - Repositorio estatico del mismo modelo (incluye los ficheros mmproj): https://huggingface.co/mradermacher/RICO-v2-GGUF
 - Modelo base: https://huggingface.co/darkc0de/RICO-v2
 - Dataset de ajuste: https://huggingface.co/datasets/darkc0de/XORTRON-RESTRICTED-RESEARCH-SFT
@@ -95,4 +95,4 @@ No se dispone de datos de rendimiento que permitan una comparacion cuantitativa 
 - Peticiones de cuantizacion del autor: https://huggingface.co/mradermacher/model_requests
 - nethype GmbH (empresa que cede infraestructura al autor): https://www.nethype.de/
 
-Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los enlaces listados proceden exclusivamente de los metadatos y la model card de HuggingFace.
+Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los enlaces listados proceden exclusivamente de los metadatos y la model card de Hugging Face.

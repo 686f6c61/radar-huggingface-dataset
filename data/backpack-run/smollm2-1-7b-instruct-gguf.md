@@ -21,7 +21,7 @@ La relevancia de este empaquetado radica en su facilidad de uso: los archivos GG
 
 ## Arquitectura y entrenamiento
 
-El modelo base SmolLM2-1.7B-Instruct es un transformer causal de tipo LlamaForCausalLM con 1.711 millones de parámetros. La familia SmolLM2 incluye modelos de 135M, 360M y 1.7B, diseñados para tareas de lenguaje y razonamiento con un coste computacional reducido. El entrenamiento del modelo instructivo se realizó en dos fases: primero un ajuste supervisado (SFT) sobre el dataset SmolTalk, seguido de una optimización por preferencias (DPO) sobre UltraFeedBack, según documenta el repositorio alignment-handbook de HuggingFace.
+El modelo base SmolLM2-1.7B-Instruct es un transformer causal de tipo LlamaForCausalLM con 1.711 millones de parámetros. La familia SmolLM2 incluye modelos de 135M, 360M y 1.7B, diseñados para tareas de lenguaje y razonamiento con un coste computacional reducido. El entrenamiento del modelo instructivo se realizó en dos fases: primero un ajuste supervisado (SFT) sobre el dataset SmolTalk, seguido de una optimización por preferencias (DPO) sobre UltraFeedBack, según documenta el repositorio alignment-handbook de Hugging Face.
 
 La versión GGUF se generó a partir de la revisión inmutable `31b70e2e869a7173562077fd711b654946d38674` del modelo original, convertida con `convert_hf_to_gguf.py` y cuantizada con `llama-quantize`. No se mencionan innovaciones técnicas adicionales en el empaquetado.
 
@@ -100,7 +100,7 @@ La relevancia de este empaquetado reside en su validación completa para inferen
 
 ## Arquitectura y entrenamiento
 
-El modelo base SmolLM2-1.7B-Instruct es un transformer de tipo Llama con 1.711 millones de parámetros. La familia SmolLM2 incluye modelos de 135M, 360M y 1.7B, diseñados para tareas de lenguaje y razonamiento con un coste computacional reducido. El entrenamiento del modelo instructivo se realizó en dos fases: primero un ajuste supervisado (SFT) sobre el dataset SmolTalk, seguido de una optimización por preferencias humanas (DPO) sobre UltraFeedBack, según documentación en el repositorio alignment-handbook de HuggingFace.
+El modelo base SmolLM2-1.7B-Instruct es un transformer de tipo Llama con 1.711 millones de parámetros. La familia SmolLM2 incluye modelos de 135M, 360M y 1.7B, diseñados para tareas de lenguaje y razonamiento con un coste computacional reducido. El entrenamiento del modelo instructivo se realizó en dos fases: primero un ajuste supervisado (SFT) sobre el dataset SmolTalk, seguido de una optimización por preferencias humanas (DPO) sobre UltraFeedBack, según documentación en el repositorio alignment-handbook de Hugging Face.
 
 La versión GGUF se generó a partir de la revisión inmutable `31b70e2e869a7173562077fd711b654946d38674` del modelo original, convertida con `convert_hf_to_gguf.py` y cuantizada con `llama-quantize`. No se mencionan innovaciones técnicas adicionales en el empaquetado, como decodificación especulativa o atención lineal.
 

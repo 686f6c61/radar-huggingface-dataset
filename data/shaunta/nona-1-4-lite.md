@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nona-1.4-Lite es un modelo publicado en HuggingFace por el usuario Shaunta bajo el identificador `Shaunta/Nona-1.4-Lite`. La informacion disponible se limita a los metadatos del repositorio: licencia MIT, region de publicacion "us", cero descargas y cero likes en el momento de la consulta, y fechas de creacion y ultima actualizacion identicas (12 de septiembre de 2026), lo que indica que el repositorio no ha recibido modificaciones desde su publicacion inicial. La model card asociada no contiene mas que la linea de licencia, sin descripcion, sin instrucciones de uso y sin ejemplos.
+Nona-1.4-Lite es un modelo publicado en Hugging Face por el usuario Shaunta bajo el identificador `Shaunta/Nona-1.4-Lite`. La informacion disponible se limita a los metadatos del repositorio: licencia MIT, region de publicacion "us", cero descargas y cero likes en el momento de la consulta, y fechas de creacion y ultima actualizacion identicas (12 de septiembre de 2026), lo que indica que el repositorio no ha recibido modificaciones desde su publicacion inicial. La model card asociada no contiene mas que la linea de licencia, sin descripcion, sin instrucciones de uso y sin ejemplos.
 
 No se dispone de ningun dato tecnico verificado sobre el modelo: se desconoce su arquitectura, su numero de parametros, la longitud de contexto soportada, los idiomas entrenados, el formato de pesos y el pipeline declarado (el campo aparece como no disponible). El sufijo "1.4-Lite" del nombre sugiere una version 1.4 de una familia previa y una variante ligera, pero no existe documentacion publica que confirme ni el linaje ni el significado de esa nomenclatura.
 
@@ -53,7 +53,7 @@ No es posible recomendar casos de uso concretos sin datos verificados sobre el m
 - Pruebas comparativas frente a modelos ligeros conocidos: una vez identificado el numero de parametros real, situarlo en una tabla junto a alternativas del mismo rango para decidir si merece una evaluacion mas profunda.
 - Prototipado interno sin requisitos de produccion: al estar bajo licencia MIT, puede usarse como banco de pruebas en entornos de desarrollo sin riesgo legal inmediato, siempre que su calidad resulte suficiente en las pruebas.
 - Analisis de formatos de pesos y compatibilidad: comprobar si los archivos del repositorio se cargan con librerias estandar (transformers, llama.cpp, vLLM) para determinar el coste de integracion.
-- Estudio de artefactos publicados sin documentacion: util como caso de analisis sobre trazabilidad, reproducibilidad y buenas practicas de publicacion en HuggingFace.
+- Estudio de artefactos publicados sin documentacion: util como caso de analisis sobre trazabilidad, reproducibilidad y buenas practicas de publicacion en Hugging Face.
 - Verificacion de licencia en proyectos comerciales: la licencia MIT permite uso comercial, modificacion y redistribucion, pero esta comprobacion debe completarse revisando si el repositorio incluye ficheros adicionales con terminos distintos.
 
 En ninguno de estos casos existe evidencia publicada que permita afirmar que el modelo es adecuado para atencion al cliente, generacion de codigo en produccion, analisis de documentos extensos ni ninguna otra tarea especifica.
@@ -77,7 +77,7 @@ No disponible. No se ha identificado ningun modelo comparable porque se desconoc
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos verificados |
 |---|---|---|---|---|---|
-| Shaunta/Nona-1.4-Lite | no disponible | no disponible | MIT | Repositorio HuggingFace con 0 descargas | Solo metadatos |
+| Shaunta/Nona-1.4-Lite | no disponible | no disponible | MIT | Repositorio Hugging Face con 0 descargas | Solo metadatos |
 | Alternativas comparables | no disponibles | no disponibles | no disponible | no disponible | No se han identificado candidatos |
 
 ## Limitaciones y advertencias
@@ -95,7 +95,7 @@ No disponible. No se ha identificado ningun modelo comparable porque se desconoc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shaunta/Nona-1.4-Lite
+- Modelo en Hugging Face: https://huggingface.co/Shaunta/Nona-1.4-Lite
 - Paper: no disponible
 - Blog o anuncio del autor: no disponible
 - Repositorio de codigo: no disponible

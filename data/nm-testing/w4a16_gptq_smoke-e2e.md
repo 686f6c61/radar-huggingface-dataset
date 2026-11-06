@@ -71,5 +71,5 @@ No disponible. Al ser un modelo de prueba sin documentación ni benchmarks, no s
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nm-testing/w4a16_gptq_smoke-e2e
+- Repositorio Hugging Face: https://huggingface.co/nm-testing/w4a16_gptq_smoke-e2e
 - Librería `compressed-tensors` (inferida del tag, sin enlace oficial verificado): no disponible en la información proporcionada.

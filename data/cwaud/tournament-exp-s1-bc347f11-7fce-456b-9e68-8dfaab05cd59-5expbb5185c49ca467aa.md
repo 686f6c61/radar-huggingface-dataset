@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `cwaud/tournament-exp-s1-bc347f11-7fce-456b-9e68-8dfaab05cd59-5Expbb5185c49ca467aa` es un checkpoint publicado en HuggingFace por el usuario `cwaud`. El propio identificador sugiere que se trata de un experimento dentro de un "torneo" interno de modelos, con un nombre generado automaticamente (hash UUID) mas un sufijo alfanumerico, lo que apunta a un artefacto de investigacion mas que a un modelo con soporte o mantenimiento orientado al publico. No se dispone de model card, descripcion ni documentacion asociada en la informacion proporcionada.
+El modelo identificado como `cwaud/tournament-exp-s1-bc347f11-7fce-456b-9e68-8dfaab05cd59-5Expbb5185c49ca467aa` es un checkpoint publicado en Hugging Face por el usuario `cwaud`. El propio identificador sugiere que se trata de un experimento dentro de un "torneo" interno de modelos, con un nombre generado automaticamente (hash UUID) mas un sufijo alfanumerico, lo que apunta a un artefacto de investigacion mas que a un modelo con soporte o mantenimiento orientado al publico. No se dispone de model card, descripcion ni documentacion asociada en la informacion proporcionada.
 
 El unico dato tecnico contrastado es el recuento de parametros real extraido de los ficheros safetensors: 3.085.938.688 parametros, es decir, aproximadamente 3,09 mil millones. La etiqueta `qwen2` presente en el repositorio indica que la arquitectura pertenece a la familia Qwen2 (transformer decoder-only), aunque no se confirma la configuracion exacta, la longitud de contexto ni el proceso de entrenamiento. El tamano del repositorio (6,2 GB) es coherente con pesos almacenados en precision de 16 bits.
 
@@ -73,9 +73,9 @@ La comparativa se limita a senalar alternativas del mismo rango de tamano, dado 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| cwaud/tournament-exp-s1-... | 3,09 B | No disponible | No disponible | HuggingFace, 17 descargas |
-| Qwen2.5-3B (referencia de la familia) | ~3,1 B | 32.768 tokens (segun publicacion de Qwen) | Apache 2.0 (segun publicacion de Qwen) | HuggingFace, ampliamente usado |
-| Llama 3.2 3B | ~3,2 B | 128.000 tokens (segun publicacion de Meta) | Llama 3.2 Community License | HuggingFace, ampliamente usado |
+| cwaud/tournament-exp-s1-... | 3,09 B | No disponible | No disponible | Hugging Face, 17 descargas |
+| Qwen2.5-3B (referencia de la familia) | ~3,1 B | 32.768 tokens (segun publicacion de Qwen) | Apache 2.0 (segun publicacion de Qwen) | Hugging Face, ampliamente usado |
+| Llama 3.2 3B | ~3,2 B | 128.000 tokens (segun publicacion de Meta) | Llama 3.2 Community License | Hugging Face, ampliamente usado |
 
 Las filas de Qwen2.5-3B y Llama 3.2 3B se incluyen unicamente como referencia de categoria y proceden de informacion publica de sus respectivos desarrolladores, no de la informacion proporcionada sobre este checkpoint. No es posible comparar rendimiento porque el modelo analizado no publica benchmarks.
 
@@ -94,5 +94,5 @@ Las filas de Qwen2.5-3B y Llama 3.2 3B se incluyen unicamente como referencia de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cwaud/tournament-exp-s1-bc347f11-7fce-456b-9e68-8dfaab05cd59-5Expbb5185c49ca467aa
+- Hugging Face: https://huggingface.co/cwaud/tournament-exp-s1-bc347f11-7fce-456b-9e68-8dfaab05cd59-5Expbb5185c49ca467aa
 - Paper, blog, repositorio o demo: no disponibles en la informacion proporcionada.

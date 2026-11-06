@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DaRkSpyro/dagame es un repositorio de modelo alojado en HuggingFace por el usuario DaRkSpyro, publicado el 16 de septiembre de 2026 y con licencia Apache 2.0. En el momento de redactar esta ficha el repositorio acumula 0 descargas y 0 likes, y su model card no contiene mas que el bloque de metadatos YAML con la licencia: no hay descripcion, ni arquitectura declarada, ni tamano de parametros, ni datos de entrenamiento.
+DaRkSpyro/dagame es un repositorio de modelo alojado en Hugging Face por el usuario DaRkSpyro, publicado el 16 de septiembre de 2026 y con licencia Apache 2.0. En el momento de redactar esta ficha el repositorio acumula 0 descargas y 0 likes, y su model card no contiene mas que el bloque de metadatos YAML con la licencia: no hay descripcion, ni arquitectura declarada, ni tamano de parametros, ni datos de entrenamiento.
 
 No se dispone por tanto de informacion verificable sobre que problema resuelve el modelo, que arquitectura emplea ni cual es su ventana de contexto. El unico dato tecnico contrastable es la licencia (Apache 2.0), que permite uso comercial y modificacion siempre que se conserven los avisos de copyright, y la region declarada en los tags (us).
 
@@ -61,7 +61,7 @@ No disponible. No se puede identificar una categoria de modelos comparables (mis
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| DaRkSpyro/dagame | no disponible | no disponible | apache-2.0 | Repositorio en HuggingFace sin documentacion |
+| DaRkSpyro/dagame | no disponible | no disponible | apache-2.0 | Repositorio en Hugging Face sin documentacion |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -77,5 +77,5 @@ No disponible. No se puede identificar una categoria de modelos comparables (mis
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DaRkSpyro/dagame
+- Repositorio en Hugging Face: https://huggingface.co/DaRkSpyro/dagame
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo. Los resultados devueltos corresponden a un partido de futbol (Sofascore, AS, FotMob, BBC Sport y FC Barcelona) y no aportan informacion sobre DaRkSpyro/dagame.

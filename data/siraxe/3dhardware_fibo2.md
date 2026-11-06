@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`siraxe/3dhardware_fibo2` es un ajuste fino publicado en HuggingFace por el usuario `siraxe` sobre el modelo base `briaai/Fibo-2.0-edit-turbo`, perteneciente a la familia FIBO de Bria. No se trata de un modelo de lenguaje, sino de un adaptador de edición de imagen orientado a un estilo concreto: la model card declara el propósito "Change image to 3dhardware render", es decir, transformar imágenes de entrada en renders con estética de hardware 3D. El repositorio ocupa 0,1 GB, un tamaño coherente con un adaptador tipo LoRA o un conjunto reducido de pesos delta, no con un modelo completo de difusión.
+`siraxe/3dhardware_fibo2` es un ajuste fino publicado en Hugging Face por el usuario `siraxe` sobre el modelo base `briaai/Fibo-2.0-edit-turbo`, perteneciente a la familia FIBO de Bria. No se trata de un modelo de lenguaje, sino de un adaptador de edición de imagen orientado a un estilo concreto: la model card declara el propósito "Change image to 3dhardware render", es decir, transformar imágenes de entrada en renders con estética de hardware 3D. El repositorio ocupa 0,1 GB, un tamaño coherente con un adaptador tipo LoRA o un conjunto reducido de pesos delta, no con un modelo completo de difusión.
 
 El modelo base, Fibo 2.0 Edit Turbo, es la variante de edición de la segunda generación de FIBO. Según la información pública de Bria, Fibo 2.0 unifica por primera vez generación y edición de imagen en un único modelo, admite ediciones por instrucción, ediciones con máscara y ediciones con múltiples referencias (hasta cuatro imágenes de entrada), y preserva las zonas de la imagen no editadas. Está entrenado con descripciones estructuradas muy detalladas, lo que explica que responda bien a instrucciones largas y específicas.
 
@@ -66,9 +66,9 @@ Como referencia del modelo base, la documentacion de Bria para Fibo 2.0 afirma q
 
 | Modelo | Tipo | Funcion principal | Entradas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `siraxe/3dhardware_fibo2` | Adaptador de estilo sobre Fibo 2.0 Edit Turbo | Edicion de imagen hacia estetica de render de hardware 3D | Imagen + instruccion en ingles | no disponible (heredada del base: no comercial sin licencia Bria) | HuggingFace, 0 descargas, 0 likes |
-| `briaai/Fibo-2.0-edit-turbo` | Modelo de difusion completo | Edicion de imagen por instruccion, con mascara y multi-referencia | Hasta 4 imagenes + instruccion | Gratuita solo para uso no comercial; comercial con licencia Bria | Pesos abiertos en HuggingFace, archivos para ComfyUI |
-| `briaai/Fibo-2.0-dev` | Modelo de difusion completo | Generacion texto-a-imagen (y base para edicion) | Texto | Gratuita solo para uso no comercial; comercial con licencia Bria | Pesos abiertos en HuggingFace |
+| `siraxe/3dhardware_fibo2` | Adaptador de estilo sobre Fibo 2.0 Edit Turbo | Edicion de imagen hacia estetica de render de hardware 3D | Imagen + instruccion en ingles | no disponible (heredada del base: no comercial sin licencia Bria) | Hugging Face, 0 descargas, 0 likes |
+| `briaai/Fibo-2.0-edit-turbo` | Modelo de difusion completo | Edicion de imagen por instruccion, con mascara y multi-referencia | Hasta 4 imagenes + instruccion | Gratuita solo para uso no comercial; comercial con licencia Bria | Pesos abiertos en Hugging Face, archivos para ComfyUI |
+| `briaai/Fibo-2.0-dev` | Modelo de difusion completo | Generacion texto-a-imagen (y base para edicion) | Texto | Gratuita solo para uso no comercial; comercial con licencia Bria | Pesos abiertos en Hugging Face |
 | Fibo Lite | Modelo de difusion reducido | Generacion y edicion con menor coste, despliegue on-premise | Texto / imagen | no disponible en la informacion consultada | Distribucion on-premise segun Bria |
 
 La comparativa se limita a la familia FIBO porque no se dispone de datos verificados de adaptadores equivalentes de estilo "hardware 3D" con los que contrastar parametros, contexto o rendimiento.
@@ -87,7 +87,7 @@ La comparativa se limita a la familia FIBO porque no se dispone de datos verific
 ## Enlaces
 
 - Repositorio del modelo: https://huggingface.co/siraxe/3dhardware_fibo2
-- Modelo base en HuggingFace: https://huggingface.co/briaai/Fibo-2.0-dev
+- Modelo base en Hugging Face: https://huggingface.co/briaai/Fibo-2.0-dev
 - Pagina oficial de la familia Fibo (Bria): https://bria.ai/fibo
 - Analisis de Fibo 2.0: tareas, requisitos de hardware y licencia: https://chimitdorzhi.tech/en/ii-modeli/fibo/
 - Fibo 2.0: ajuste de VRAM y hardware local: https://www.madebyagents.com/models/fibo-2-0

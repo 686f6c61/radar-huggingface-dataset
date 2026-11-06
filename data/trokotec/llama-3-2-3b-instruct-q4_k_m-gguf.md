@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento de est
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/trokotec/Llama-3.2-3B-Instruct-Q4_K_M-GGUF
+- Repositorio Hugging Face: https://huggingface.co/trokotec/Llama-3.2-3B-Instruct-Q4_K_M-GGUF
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Licencia Llama 3.2: https://www.llama.com/llama3_2/license/
 - Politica de uso aceptable de Llama 3.2: https://www.llama.com/llama3_2/use-policy/

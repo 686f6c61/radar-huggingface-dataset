@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mulemp/MaxXXLV1` es un repositorio publicado en HuggingFace por el usuario `mulemp`, con fecha de creación en abril de 2026 y última actualización en agosto de 2026. El repositorio tiene un tamaño de 11,4 GB y está marcado con la etiqueta `region:us`, lo que sugiere una orientación geográfica específica, aunque no se especifica su significado técnico. El acceso está restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de poder descargar o inspeccionar los archivos.
+El modelo `mulemp/MaxXXLV1` es un repositorio publicado en Hugging Face por el usuario `mulemp`, con fecha de creación en abril de 2026 y última actualización en agosto de 2026. El repositorio tiene un tamaño de 11,4 GB y está marcado con la etiqueta `region:us`, lo que sugiere una orientación geográfica específica, aunque no se especifica su significado técnico. El acceso está restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de poder descargar o inspeccionar los archivos.
 
 A día de hoy no se dispone de información pública sobre la arquitectura, el número de parámetros, la licencia, los idiomas soportados ni el pipeline de uso. El repositorio no registra descargas y solo tiene un "like", lo que indica que es un proyecto muy reciente o poco difundido. Dado el tamaño del repositorio (11,4 GB), es plausible que contenga pesos de un modelo de tamaño medio o grande, pero sin acceso a los archivos no es posible confirmar ninguna característica técnica.
 
@@ -45,7 +45,7 @@ No disponible. Al carecer de especificaciones técnicas, no es posible comparar 
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated, por lo que se requiere aceptar condiciones en HuggingFace. Esto puede limitar la reproducibilidad y la adopción.
+- Acceso restringido: el repositorio es gated, por lo que se requiere aceptar condiciones en Hugging Face. Esto puede limitar la reproducibilidad y la adopción.
 - Falta de documentación: no hay información pública sobre arquitectura, licencia, idiomas o capacidades, lo que impide una evaluación técnica rigurosa.
 - Riesgo de desconocimiento: al no poder inspeccionar los archivos, no se pueden identificar sesgos, riesgos de alucinación ni limitaciones de contexto.
 - Licencia desconocida: no se especifica la licencia, por lo que no se puede determinar si el uso comercial está permitido o si existen restricciones de redistribución.
@@ -53,6 +53,6 @@ No disponible. Al carecer de especificaciones técnicas, no es posible comparar 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mulemp/MaxXXLV1
+- Repositorio en Hugging Face: https://huggingface.co/mulemp/MaxXXLV1
 
 No se han encontrado papers, blogs, repositorios de código ni demos asociados a este modelo en la información disponible.

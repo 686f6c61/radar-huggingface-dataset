@@ -80,7 +80,7 @@ No disponible. No hay información suficiente para comparar con otros modelos de
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/microtensor-archive/mt-code-3g-r1236-5GgkLbiy)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/microtensor-archive/mt-code-3g-r1236-5GgkLbiy)
 - [Repositorio GitHub de Microtensor subnet](https://github.com/microtensor-io/microtensor-subnet)
 - [Repositorio GitHub de la subred sn92-mt3g](https://github.com/enka1504/sn92-mt3g)
-- [Modelo baseline-frontend-mt3g en HuggingFace](https://huggingface.co/microtensor-io/baseline-frontend-mt3g)
+- [Modelo baseline-frontend-mt3g en Hugging Face](https://huggingface.co/microtensor-io/baseline-frontend-mt3g)

@@ -25,7 +25,7 @@ Su relevancia radica en el hueco existente de herramientas de OCR y comprensión
 
 La model card describe el modelo como un ajuste fino de OCR y maquetación (layout) en árabe sobre `rednote-hilab/dots.mocr`. El procedimiento de entrenamiento consistió en un LoRA de rango 64 que se fusionó posteriormente en los pesos del modelo base, manteniendo congelada la torre de visión. No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron etapas de RLHF o DPO.
 
-La model card etiqueta el proyecto como investigación y remite a los archivos `docs/TEST_PROTOCOL.md` y `REPORT.md` del repositorio `arabic-ocr-research-data/code` para consultar los resultados, pero esos documentos no se incluyen en la información proporcionada. El pipeline de inferencia documentado utiliza vLLM con el prompt `prompt_layout_all_en`, temperatura 0,1, top_p 1,0 y max_tokens 8192, seguido de un postprocesado denominado `trim_tail` y `trim_v2` (código en `code/scripts/` del repositorio de datos de investigación). Cabe señalar que la model card cita como base `rednote-hilab/dots.mocr`, mientras que los metadatos de HuggingFace registran `dots-studio/dots.mocr`; la discrepancia no se aclara en la información disponible.
+La model card etiqueta el proyecto como investigación y remite a los archivos `docs/TEST_PROTOCOL.md` y `REPORT.md` del repositorio `arabic-ocr-research-data/code` para consultar los resultados, pero esos documentos no se incluyen en la información proporcionada. El pipeline de inferencia documentado utiliza vLLM con el prompt `prompt_layout_all_en`, temperatura 0,1, top_p 1,0 y max_tokens 8192, seguido de un postprocesado denominado `trim_tail` y `trim_v2` (código en `code/scripts/` del repositorio de datos de investigación). Cabe señalar que la model card cita como base `rednote-hilab/dots.mocr`, mientras que los metadatos de Hugging Face registran `dots-studio/dots.mocr`; la discrepancia no se aclara en la información disponible.
 
 ## Capacidades
 
@@ -66,8 +66,8 @@ No se dispone de datos verificados de benchmarks ni de especificaciones de alter
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| arabic-ocr-dots-ft-e6a | 3,04 mil millones | No disponible | No disponible | HuggingFace |
-| dots.mocr (base) | No disponible | No disponible | No disponible | HuggingFace |
+| arabic-ocr-dots-ft-e6a | 3,04 mil millones | No disponible | No disponible | Hugging Face |
+| dots.mocr (base) | No disponible | No disponible | No disponible | Hugging Face |
 | Alternativas de OCR multimodal | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -85,7 +85,7 @@ No se dispone de datos verificados de benchmarks ni de especificaciones de alter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ahmedsamirtarjama/arabic-ocr-dots-ft-e6a
+- Modelo en Hugging Face: https://huggingface.co/ahmedsamirtarjama/arabic-ocr-dots-ft-e6a
 - Modelo base citado en la model card: https://huggingface.co/rednote-hilab/dots.mocr
 - Modelo base registrado en metadatos: https://huggingface.co/dots-studio/dots.mocr
 - Repositorio de datos y código de investigación referenciado en la model card: `arabic-ocr-research-data` (ruta `code/scripts/` y documentos `docs/TEST_PROTOCOL.md`, `REPORT.md`); no se proporciona URL directa en la información disponible.

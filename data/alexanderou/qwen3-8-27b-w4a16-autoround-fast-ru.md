@@ -89,8 +89,8 @@ La comparativa es limitada porque no se dispone de datos de rendimiento de calid
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/alexanderou/Qwen3.8-27B-W4A16-AutoRound-fast-ru
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-27B
+- Repositorio Hugging Face: https://huggingface.co/alexanderou/Qwen3.8-27B-W4A16-AutoRound-fast-ru
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GitHub del modelo base: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Repositorio GitHub de la serie Qwen3.8: https://github.com/QwenLM/Qwen3.8
 - Página del modelo en QwenCloud: https://www.qwencloud.com/models/qwen3.8-27b

@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Alelcv27/Llama3.2-1B-Instruct-FR2 | 1.24B | No disponible | Apache 2.0 | HuggingFace |
-| meta-llama/Llama-3.2-1B-Instruct | 1.24B | 128K tokens | Llama 3.2 Community License | HuggingFace |
-| TinyLlama-1.1B-Chat | 1.1B | 2K tokens | Apache 2.0 | HuggingFace |
-| Qwen2.5-1.5B-Instruct | 1.5B | 32K tokens | Apache 2.0 | HuggingFace |
+| Alelcv27/Llama3.2-1B-Instruct-FR2 | 1.24B | No disponible | Apache 2.0 | Hugging Face |
+| meta-llama/Llama-3.2-1B-Instruct | 1.24B | 128K tokens | Llama 3.2 Community License | Hugging Face |
+| TinyLlama-1.1B-Chat | 1.1B | 2K tokens | Apache 2.0 | Hugging Face |
+| Qwen2.5-1.5B-Instruct | 1.5B | 32K tokens | Apache 2.0 | Hugging Face |
 
 El modelo se posiciona como una alternativa de código abierto bajo Apache 2.0, lo que permite uso comercial sin restricciones de licencia. Frente al modelo base de Meta, este finetune ofrece una licencia más permisiva, pero carece de información sobre el dataset de entrenamiento y de validación externa.
 
@@ -79,7 +79,7 @@ El modelo se posiciona como una alternativa de código abierto bajo Apache 2.0, 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Alelcv27/Llama3.2-1B-Instruct-FR2
+- Repositorio Hugging Face: https://huggingface.co/Alelcv27/Llama3.2-1B-Instruct-FR2
 - Modelo base de Unsloth: https://huggingface.co/unsloth/llama-3.2-1b-instruct-unsloth-bnb-4bit
 - Modelo original de Meta: https://huggingface.co/meta-llama/Llama-3.2-1B
 - Model card de Llama 3.2 en GitHub: https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/MODEL_CARD.md

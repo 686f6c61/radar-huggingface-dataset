@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Cajal-1 es un modelo de codificación cerebral (*brain encoding*) desarrollado por el usuario de HuggingFace `ffh92r32rm0`. Su función no es generar texto, sino predecir la respuesta hemodinámica de la corteza humana: recibe un vídeo con audio y produce, cada 1,49 segundos, un vector de activación para cada uno de los 20.484 vértices de la superficie cortical `fsaverage5`, es decir, la misma señal que registraría un escáner de fMRI. El modelo se presenta como un codificador de córtex completo que cubre visión, audición y lenguaje, y se distribuye con pesos en `safetensors` (218.752.604 parámetros) bajo licencia de investigación.
+Cajal-1 es un modelo de codificación cerebral (*brain encoding*) desarrollado por el usuario de Hugging Face `ffh92r32rm0`. Su función no es generar texto, sino predecir la respuesta hemodinámica de la corteza humana: recibe un vídeo con audio y produce, cada 1,49 segundos, un vector de activación para cada uno de los 20.484 vértices de la superficie cortical `fsaverage5`, es decir, la misma señal que registraría un escáner de fMRI. El modelo se presenta como un codificador de córtex completo que cubre visión, audición y lenguaje, y se distribuye con pesos en `safetensors` (218.752.604 parámetros) bajo licencia de investigación.
 
 La arquitectura combina tres (o cuatro) modelos fundacionales como extractores de características —V-JEPA 2 para movimiento y escenas, SigLIP para objetos y semántica visual, Whisper para sonido y habla, y opcionalmente Qwen3 para el contenido lingüístico— cuyas representaciones se resumen a la cadencia de un escaneo fMRI y se combinan mediante un transformer causal de 12 capas y 218,8 M de parámetros. Ese transformer mantiene memoria de los últimos 91 segundos para modelar el retardo hemodinámico, y una cabeza de lectura proyecta el estado sobre la superficie cortical, bien de un espectador medio, bien de uno de los 41 sujetos de entrenamiento.
 
@@ -102,7 +102,7 @@ La información proporcionada solo permite comparar con TRIBE v2; no se han enco
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ffh92r32rm0/Cajal-1
+- Modelo en Hugging Face: https://huggingface.co/ffh92r32rm0/Cajal-1
 - Notebook de demostración: https://huggingface.co/ffh92r32rm0/Cajal-1/blob/main/demo.ipynb
 - Requisitos de entorno: https://huggingface.co/ffh92r32rm0/Cajal-1/blob/main/requirements.txt
 - Test de reproducción de resultados (`test_e1_parity.py`): https://huggingface.co/ffh92r32rm0/Cajal-1/blob/main/tests/test_e1_parity.py

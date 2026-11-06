@@ -79,6 +79,6 @@ No se conocen alternativas de la misma categoría (fine-tunings agénticos de 9B
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/agentic-ptb/opus-high-v3.h045.lrA.step_24)
+- [Hugging Face - modelo](https://huggingface.co/agentic-ptb/opus-high-v3.h045.lrA.step_24)
 - [Dataset del run - opus-high-v3-data](https://huggingface.co/datasets/agentic-ptb/opus-high-v3-data)
 - [Índice de experimentos AgentPTB](https://huggingface.co/datasets/agentic-ptb/INDEX)

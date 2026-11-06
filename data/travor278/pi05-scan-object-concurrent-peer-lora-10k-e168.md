@@ -97,7 +97,7 @@ No se dispone de datos de modelos comparables en la informacion proporcionada. E
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Travor278/pi05-scan-object-concurrent-peer-lora-10k-e168
+- Hugging Face: https://huggingface.co/Travor278/pi05-scan-object-concurrent-peer-lora-10k-e168
 - Dataset referenciado: `Shiki42/ctr-scan-object-concurrent-20260911` (commit `2419a110014733297689002a04e77faf1c438300`)
 - Evaluacion en SwanLab: https://swanlab.cn/@Travor/CTR-PI05-LoRA10k
 - Libreria OpenPI: referenciada en la model card como fuente requerida, sin URL proporcionada en la informacion disponible

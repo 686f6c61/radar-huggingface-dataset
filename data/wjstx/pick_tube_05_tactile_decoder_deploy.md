@@ -69,7 +69,7 @@ No disponible. No se conocen modelos públicos comparables que integren decodifi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/wjstx/pick_tube_05_tactile_decoder_deploy
+- Repositorio Hugging Face: https://huggingface.co/wjstx/pick_tube_05_tactile_decoder_deploy
 - Documentación de arquitectura y evaluación (dentro del repo): `docs/NETWORK_STRUCTURE.md`
 - Manifiesto de despliegue (dentro del repo): `deployment_manifest.json`
 - Modelo base: `lerobot/smolvla_base` (revisión `c83c3163b8ca9b7e67c509fffd9121e66cb96205`)

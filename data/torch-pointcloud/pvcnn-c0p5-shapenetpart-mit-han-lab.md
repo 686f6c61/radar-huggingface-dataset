@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PVCNN C0.5 es un modelo de segmentación de partes de nubes de puntos 3D, concretamente la variante de menor coste computacional de la familia Point-Voxel CNN (PVCNN) publicada por el laboratorio MIT HAN Lab. El modelo combina una rama de puntos y una rama de vóxeles fusionadas, lo que permite procesar nubes de puntos de forma eficiente sin voxelizar de forma densa ni renunciar a la estructura de vecindad local. Fue convertido al ecosistema `torch-pointcloud` por Arthur Dujardin y publicado en HuggingFace bajo licencia MIT.
+PVCNN C0.5 es un modelo de segmentación de partes de nubes de puntos 3D, concretamente la variante de menor coste computacional de la familia Point-Voxel CNN (PVCNN) publicada por el laboratorio MIT HAN Lab. El modelo combina una rama de puntos y una rama de vóxeles fusionadas, lo que permite procesar nubes de puntos de forma eficiente sin voxelizar de forma densa ni renunciar a la estructura de vecindad local. Fue convertido al ecosistema `torch-pointcloud` por Arthur Dujardin y publicado en Hugging Face bajo licencia MIT.
 
 El modelo está entrenado específicamente sobre el conjunto de datos ShapeNetPart para la tarea de segmentación de partes (part segmentation), distinguiendo hasta 50 clases de partes sobre objetos 3D. Con solo 1,1 millones de parámetros y un tamaño de repositorio prácticamente nulo (0,0 GB), está pensado para inferencia ligera y prototipado rápido en pipelines de visión 3D.
 
@@ -72,7 +72,7 @@ No se han publicado otros resultados de benchmarks en la información disponible
 
 | Modelo | Parametros | Tarea | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pvcnn-c0p5.shapenetpart.mit-han-lab | 1,1 M | Segmentación de partes 3D | no aplica | MIT | HuggingFace |
+| pvcnn-c0p5.shapenetpart.mit-han-lab | 1,1 M | Segmentación de partes 3D | no aplica | MIT | Hugging Face |
 | PVCNN variantes mayores (C1, etc.) | no disponible | Segmentación de partes 3D | no aplica | MIT | Repositorio mit-han-lab |
 | PointNet / PointNet++ | no disponible | Segmentación de partes 3D | no aplica | no disponible | Repositorios académicos |
 
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento de los modelos alternativos en la informac
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/torch-pointcloud/pvcnn-c0p5.shapenetpart.mit-han-lab
+- Hugging Face: https://huggingface.co/torch-pointcloud/pvcnn-c0p5.shapenetpart.mit-han-lab
 - Paper PVCNN: https://arxiv.org/abs/1907.03739
 - Repositorio original mit-han-lab/pvcnn: https://github.com/mit-han-lab/pvcnn
 - Libreria torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud

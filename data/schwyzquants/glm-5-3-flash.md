@@ -104,7 +104,7 @@ No se dispone de datos de parametros, contexto ni licencia de los modelos compar
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/schwyzquants/GLM-5.3-Flash
+- Repositorio en Hugging Face: https://huggingface.co/schwyzquants/GLM-5.3-Flash
 - Blog de GLM-5.3-Flash: https://z.ai/blog/glm-5.3-flash
 - Informe tecnico (arXiv): https://arxiv.org/abs/2602.15763
 - Plataforma de API de Z.ai: https://docs.z.ai/guides/llm/glm-5.3-flash

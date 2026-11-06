@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sebastienroa/study-zero-shot-transfer` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación publicado en HuggingFace. La model card lo describe explícitamente como "a working research note about Zero Shot Transfer" que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación. El autor declara que no se presenta como un paper completado ni como una release de modelos entrenados.
+`sebastienroa/study-zero-shot-transfer` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación publicado en Hugging Face. La model card lo describe explícitamente como "a working research note about Zero Shot Transfer" que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación. El autor declara que no se presenta como un paper completado ni como una release de modelos entrenados.
 
 El contenido se limita a dos ficheros Markdown (`summary.md` y `README.md`). No hay código de entrenamiento, no hay logs, no hay checkpoints y no se declaran resultados experimentales. Los tags del repositorio (`research-notes`, `zero-shot-transfer`) confirman esta naturaleza documental.
 
@@ -77,7 +77,7 @@ No disponible. Este repositorio no es comparable con modelos de lenguaje porque 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sebastienroa/study-zero-shot-transfer
+- Repositorio en Hugging Face: https://huggingface.co/sebastienroa/study-zero-shot-transfer
 - Fichero principal de la nota: `summary.md` dentro del repositorio
 - Documentación: `README.md` dentro del repositorio
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios de código o demos.

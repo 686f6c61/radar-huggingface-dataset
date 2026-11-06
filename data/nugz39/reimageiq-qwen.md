@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nugz39/reimageiq-qwen es un checkpoint de edición de imágenes publicado en HuggingFace por el usuario Nugz39, distribuido en formato diffusers y asociado al pipeline `QwenImageEditPlusPipeline`. El repositorio no incluye una model card propia: el README reproduce íntegramente el material de Qwen-Image-Edit-2511 (Alibaba Qwen), por lo que el modelo debe entenderse como una redistribución o reempaquetado del modelo de edición de imagen de Qwen, no como un desarrollo original del autor del repositorio. El checkpoint contiene 20.430.401.088 parámetros en safetensors y ocupa 57,7 GB en el repositorio.
+Nugz39/reimageiq-qwen es un checkpoint de edición de imágenes publicado en Hugging Face por el usuario Nugz39, distribuido en formato diffusers y asociado al pipeline `QwenImageEditPlusPipeline`. El repositorio no incluye una model card propia: el README reproduce íntegramente el material de Qwen-Image-Edit-2511 (Alibaba Qwen), por lo que el modelo debe entenderse como una redistribución o reempaquetado del modelo de edición de imagen de Qwen, no como un desarrollo original del autor del repositorio. El checkpoint contiene 20.430.401.088 parámetros en safetensors y ocupa 57,7 GB en el repositorio.
 
 La tarea que resuelve es image-to-image con instrucciones en lenguaje natural: recibe una o varias imágenes de entrada más un prompt y devuelve una imagen editada. Según el material de referencia, la versión 2511 se centra en reducir el *image drift*, mejorar la consistencia de personajes (incluidos grupos de varias personas), integrar LoRAs populares de la comunidad en el modelo base, reforzar la generación de diseño industrial y la sustitución de materiales, y mejorar el razonamiento geométrico para generar líneas auxiliares de construcción.
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Entrada | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Nugz39/reimageiq-qwen (este repositorio) | 20,43 mil millones (safetensors) | Imagen + prompt (soporta varias imagenes) | Apache 2.0 | HuggingFace, diffusers | 0 descargas, 0 likes; sin model card propia |
-| Qwen-Image-Edit-2511 | No disponible en la informacion proporcionada | Imagen + prompt | Apache 2.0 (segun esta model card) | HuggingFace (`Qwen/Qwen-Image-Edit-2511`), ModelScope, demo en Spaces | Version de referencia que el repositorio reproduce; incluye mejoras de consistencia y LoRAs integradas |
+| Nugz39/reimageiq-qwen (este repositorio) | 20,43 mil millones (safetensors) | Imagen + prompt (soporta varias imagenes) | Apache 2.0 | Hugging Face, diffusers | 0 descargas, 0 likes; sin model card propia |
+| Qwen-Image-Edit-2511 | No disponible en la informacion proporcionada | Imagen + prompt | Apache 2.0 (segun esta model card) | Hugging Face (`Qwen/Qwen-Image-Edit-2511`), ModelScope, demo en Spaces | Version de referencia que el repositorio reproduce; incluye mejoras de consistencia y LoRAs integradas |
 | Qwen-Image-Edit-2509 | No disponible | Imagen + prompt | No disponible | No confirmada en la informacion | Version anterior; la 2511 declara mejor consistencia y menor *image drift* |
-| Qwen-Image (texto a imagen) | No disponible | Prompt de texto | No disponible | HuggingFace (`Qwen/Qwen-Image`) | Misma familia, pero orientada a generacion desde texto, no a edicion |
+| Qwen-Image (texto a imagen) | No disponible | Prompt de texto | No disponible | Hugging Face (`Qwen/Qwen-Image`) | Misma familia, pero orientada a generacion desde texto, no a edicion |
 
 No se dispone de datos de benchmarks ni de parametros de los modelos comparables en la informacion proporcionada, por lo que la comparacion se limita a caracteristicas declaradas y disponibilidad.
 
@@ -88,7 +88,7 @@ No se dispone de datos de benchmarks ni de parametros de los modelos comparables
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Nugz39/reimageiq-qwen
+- Repositorio en Hugging Face: https://huggingface.co/Nugz39/reimageiq-qwen
 - Modelo de referencia Qwen-Image-Edit-2511: https://huggingface.co/Qwen/Qwen-Image-Edit-2511
 - Modelo en ModelScope: https://modelscope.cn/models/Qwen/Qwen-Image-Edit-2511
 - Informe tecnico (PDF): https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-Image/Qwen_Image.pdf

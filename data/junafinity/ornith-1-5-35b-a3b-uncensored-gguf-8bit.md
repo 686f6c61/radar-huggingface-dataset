@@ -75,7 +75,7 @@ No se dispone de información suficiente para realizar una comparativa directa c
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta versión: https://huggingface.co/junafinity/Ornith-1.5-35B-A3B-uncensored-GGUF-8bit
+- Repositorio Hugging Face de esta versión: https://huggingface.co/junafinity/Ornith-1.5-35B-A3B-uncensored-GGUF-8bit
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Página oficial de Ornith-1.5: https://ornith.ai/ornith_1_5.html
 - Herramienta ZeroFuse: https://github.com/junainfinity/ZeroFuse

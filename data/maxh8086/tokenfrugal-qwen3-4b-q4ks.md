@@ -86,6 +86,6 @@ No se dispone de datos de benchmarks comparativos con otras alternativas de la m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/maxh8086/tokenfrugal-qwen3-4b-q4ks
+- Hugging Face: https://huggingface.co/maxh8086/tokenfrugal-qwen3-4b-q4ks
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Repositorio del pipeline de referencia citado por el autor: https://huggingface.co/maxh8086/tokenfrugal-flux2-klein-4b-fp8

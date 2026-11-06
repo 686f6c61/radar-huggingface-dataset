@@ -70,7 +70,7 @@ No se dispone de información comparativa con otros modelos VLA (como OpenVLA, R
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/msKim100/smolvla_so101_stack_corrected66
+- Repositorio de Hugging Face: https://huggingface.co/msKim100/smolvla_so101_stack_corrected66
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/msKim100/so101_smolvla_corrected_66
 - Paper de SmolVLA: https://huggingface.co/papers/2506.01844

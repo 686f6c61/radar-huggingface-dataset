@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparado (benchmarks) en la informacion p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jknlsn/zeta-2.1-oQ8e
+- Modelo en Hugging Face: https://huggingface.co/jknlsn/zeta-2.1-oQ8e
 - Modelo original: https://huggingface.co/zed-industries/zeta-2.1
 - Prompt de ejemplo del modelo original: https://huggingface.co/zed-industries/zeta-2.1/blob/main/sample.prompt
 - Salida de ejemplo del modelo original: https://huggingface.co/zed-industries/zeta-2.1/blob/main/sample.output

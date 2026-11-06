@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ezimmermannner/albef-matching` es un prototipo de investigación publicado en HuggingFace por el usuario ezimmermannner. Se presenta como una implementación de arquitectura Albef orientada a tareas de *matching* (emparejamiento o alineamiento entre modalidades o entidades), con una configuración que el autor etiqueta como "huge". No se trata de un modelo entrenado ni evaluado: la model card indica explícitamente que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (*smoke tests*) y no un modelo con pesos entrenados para benchmarks.
+`ezimmermannner/albef-matching` es un prototipo de investigación publicado en Hugging Face por el usuario ezimmermannner. Se presenta como una implementación de arquitectura Albef orientada a tareas de *matching* (emparejamiento o alineamiento entre modalidades o entidades), con una configuración que el autor etiqueta como "huge". No se trata de un modelo entrenado ni evaluado: la model card indica explícitamente que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (*smoke tests*) y no un modelo con pesos entrenados para benchmarks.
 
 El repositorio tiene un tamaño de 0.0 GB y registra 24.832 parámetros totales según los metadatos de safetensors, una cifra extremadamente reducida que confirma su carácter de esqueleto o prueba de concepto más que de modelo funcional. No se declaran idiomas soportados, pipeline ni resultados de evaluación. La licencia es BSD-3-Clause.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ezimmermannner/albef-matching | 24.832 | no disponible | No | BSD-3-Clause | HuggingFace |
-| Albef original (Salesforce) | ~200M (base) | 512 tokens aprox. | Sí | BSD-3-Clause | HuggingFace / GitHub |
-| BLIP (Salesforce) | ~224M | 512 tokens aprox. | Sí | BSD-3-Clause | HuggingFace |
+| ezimmermannner/albef-matching | 24.832 | no disponible | No | BSD-3-Clause | Hugging Face |
+| Albef original (Salesforce) | ~200M (base) | 512 tokens aprox. | Sí | BSD-3-Clause | Hugging Face / GitHub |
+| BLIP (Salesforce) | ~224M | 512 tokens aprox. | Sí | BSD-3-Clause | Hugging Face |
 
 La comparación con Albef original y BLIP es meramente orientativa a nivel de familia arquitectónica; este repositorio no es un modelo entrenado y no es funcionalmente comparable en rendimiento.
 
@@ -80,6 +80,6 @@ La comparación con Albef original y BLIP es meramente orientativa a nivel de fa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ezimmermannner/albef-matching
+- Hugging Face: https://huggingface.co/ezimmermannner/albef-matching
 - Albef original (Salesforce, referencia): https://github.com/salesforce/ALBEF
 - Paper Albef: https://arxiv.org/abs/2107.07651

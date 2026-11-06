@@ -79,6 +79,6 @@ No se dispone de modelos comparables directos en la información proporcionada. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/itzPotato/transcoder-relu-2layer-seed0-layer0
+- Modelo en Hugging Face: https://huggingface.co/itzPotato/transcoder-relu-2layer-seed0-layer0
 - Modelo base: https://huggingface.co/itzPotato/arithmetic-relu-2layer-seed0
 - Repositorio de código (referenciado en la model card, no verificado): `src/transcoder/source.py` y `src/transcoder/config.py` (no se proporciona URL directa)

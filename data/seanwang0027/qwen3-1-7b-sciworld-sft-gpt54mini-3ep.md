@@ -74,9 +74,9 @@ La comparacion emparejada ROSE menos SFT sobre las tareas, con bootstrap pareado
 
 | Modelo | Parametros | Contexto | Rendimiento en ScienceWorld (exito) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (SFT, 3 epocas) | 2,03B | No especificado; entrenado con max 8192 | 12,88% ± 1,24 | apache-2.0 | Pesos safetensors en HuggingFace |
-| qwen3-1.7b-sciworld-rose-s10t5-gpt54mini-3ep | Mismo base, ~2,03B | No especificado | 17,50% ± 2,29 | apache-2.0 (segun el repositorio hermano) | Pesos en HuggingFace |
-| Qwen/Qwen3-1.7B (base, sin ajustar) | ~2,03B | No disponible en la informacion proporcionada | 0,12% ± 0,22 | apache-2.0 | Pesos en HuggingFace |
+| Este modelo (SFT, 3 epocas) | 2,03B | No especificado; entrenado con max 8192 | 12,88% ± 1,24 | apache-2.0 | Pesos safetensors en Hugging Face |
+| qwen3-1.7b-sciworld-rose-s10t5-gpt54mini-3ep | Mismo base, ~2,03B | No especificado | 17,50% ± 2,29 | apache-2.0 (segun el repositorio hermano) | Pesos en Hugging Face |
+| Qwen/Qwen3-1.7B (base, sin ajustar) | ~2,03B | No disponible en la informacion proporcionada | 0,12% ± 0,22 | apache-2.0 | Pesos en Hugging Face |
 
 La comparativa relevante es interna al propio estudio del autor: la variante ROSE supera a esta variante SFT en 4,62 puntos de exito con los mismos datos de partida y el mismo profesor. Frente al modelo base, el ajuste SFT multiplica la tasa de exito por mas de cien, lo que indica que la mayor parte del comportamiento de agente procede de la destilacion de trayectorias.
 
@@ -98,7 +98,7 @@ La comparativa relevante es interna al propio estudio del autor: la variante ROS
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SeanWang0027/qwen3-1.7b-sciworld-sft-gpt54mini-3ep
+- Modelo en Hugging Face: https://huggingface.co/SeanWang0027/qwen3-1.7b-sciworld-sft-gpt54mini-3ep
 - Variante ROSE del mismo estudio: https://huggingface.co/SeanWang0027/qwen3-1.7b-sciworld-rose-s10t5-gpt54mini-3ep
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Paper, blog o repositorio adicionales: no disponible en la informacion proporcionada (los resultados de la busqueda web no contienen referencias relevantes al modelo).

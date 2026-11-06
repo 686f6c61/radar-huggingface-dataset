@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `autmoate/cactus-needle2-calendar-read-dt` es un modelo publicado en HuggingFace por el usuario `autmoate`. La model card asociada no contiene ningun contenido tecnico: unicamente la declaracion de licencia `apache-2.0`. No se dispone de informacion sobre arquitectura, numero de parametros, contexto, datos de entrenamiento ni resultados de evaluacion.
+El repositorio `autmoate/cactus-needle2-calendar-read-dt` es un modelo publicado en Hugging Face por el usuario `autmoate`. La model card asociada no contiene ningun contenido tecnico: unicamente la declaracion de licencia `apache-2.0`. No se dispone de informacion sobre arquitectura, numero de parametros, contexto, datos de entrenamiento ni resultados de evaluacion.
 
 El identificador sugiere, sin que exista confirmacion documental en la informacion disponible, que podria tratarse de un ajuste fino (fine-tuning) derivado de una familia de modelos denominada "Needle" y orientado a una tarea concreta de lectura de calendario ("calendar-read"). Esta interpretacion es una inferencia a partir del nombre y no debe tomarse como dato verificado: no hay pesos descritos, ni ficha de uso, ni documentacion del pipeline (`pipeline: no disponible`).
 
@@ -84,5 +84,5 @@ No disponible. Sin conocer el numero de parametros, la arquitectura, la tarea ob
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/autmoate/cactus-needle2-calendar-read-dt
+- Hugging Face: https://huggingface.co/autmoate/cactus-needle2-calendar-read-dt
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, a su autor, a un paper, a un blog tecnico ni a un repositorio de codigo. Los resultados devueltos (portales de juegos y un articulo de quimica analitica) no guardan relacion con este modelo.

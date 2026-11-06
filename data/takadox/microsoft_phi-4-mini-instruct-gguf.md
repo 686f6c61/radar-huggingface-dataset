@@ -96,7 +96,7 @@ La diferencia principal frente a las alternativas esta en la combinacion de vent
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/TAKADOX/microsoft_Phi-4-mini-instruct-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/TAKADOX/microsoft_Phi-4-mini-instruct-GGUF
 - Modelo base: https://huggingface.co/microsoft/Phi-4-mini-instruct
 - Repositorio original de las cuantizaciones (bartowski): https://huggingface.co/bartowski/microsoft_Phi-4-mini-instruct-GGUF
 - llama.cpp: https://github.com/ggerganov/llama.cpp

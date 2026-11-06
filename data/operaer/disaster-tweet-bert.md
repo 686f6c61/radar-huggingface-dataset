@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, GLUE, SuperGLUE) e
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Operaer/disaster-tweet-bert | 109,5 M | 512 (entrenado a 128) | Clasificación binaria de desastres | Apache 2.0 | HuggingFace |
-| google-bert/bert-base-uncased | 110 M | 512 | Modelo base, sin fine-tuning para esta tarea | Apache 2.0 | HuggingFace |
-| roberta-base (fine-tuned en el mismo dataset) | 125 M | 514 | Clasificación binaria de desastres | MIT | HuggingFace (varias variantes comunitarias) |
-| distilbert-base-uncased | 66 M | 512 | Modelo base destilado | Apache 2.0 | HuggingFace |
+| Operaer/disaster-tweet-bert | 109,5 M | 512 (entrenado a 128) | Clasificación binaria de desastres | Apache 2.0 | Hugging Face |
+| google-bert/bert-base-uncased | 110 M | 512 | Modelo base, sin fine-tuning para esta tarea | Apache 2.0 | Hugging Face |
+| roberta-base (fine-tuned en el mismo dataset) | 125 M | 514 | Clasificación binaria de desastres | MIT | Hugging Face (varias variantes comunitarias) |
+| distilbert-base-uncased | 66 M | 512 | Modelo base destilado | Apache 2.0 | Hugging Face |
 
 No se dispone de comparaciones de rendimiento publicadas entre este modelo y alternativas en la información proporcionada; las métricas del autor no están contrastadas con las de otras variantes sobre la misma partición de validación.
 
@@ -93,7 +93,7 @@ No se dispone de comparaciones de rendimiento publicadas entre este modelo y alt
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Operaer/disaster-tweet-bert
+- Modelo en Hugging Face: https://huggingface.co/Operaer/disaster-tweet-bert
 - Modelo base: https://huggingface.co/google-bert/bert-base-uncased
 - Dataset de la competición: https://www.kaggle.com/c/nlp-getting-started
-- Dataset referenciado en HuggingFace: https://huggingface.co/datasets/startificial/nlp-getting-started
+- Dataset referenciado en Hugging Face: https://huggingface.co/datasets/startificial/nlp-getting-started

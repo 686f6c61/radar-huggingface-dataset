@@ -6,7 +6,7 @@ Compactbot/smol-d1-spot-check no es un modelo de lenguaje, sino un repositorio d
 
 El hallazgo principal documentado es que el checkpoint base se carga como `LlamaForCausalLM` con 134.515.008 parametros medidos. Con una semilla fija (21) se ejecuto un control de generacion greedy sobre tres ejemplos, que produjo continuaciones cortas. La rama del adaptador no llego a ejecutarse porque Unsloth no estaba instalado en el entorno de prueba, de modo que no se emite ninguna afirmacion de precision ni comparacion sobre el adaptador. Los resultados y las limitaciones se recogen en el fichero `results.json` del repositorio.
 
-Su relevancia es metodologica: sirve como ejemplo minimo de auditoria de reproducibilidad para modelos pequenos y fine-tunes publicados en HuggingFace, y como recordatorio de que la carga del checkpoint y el recuento de parametros deben verificarse antes de dar por buenas las fichas de un modelo.
+Su relevancia es metodologica: sirve como ejemplo minimo de auditoria de reproducibilidad para modelos pequenos y fine-tunes publicados en Hugging Face, y como recordatorio de que la carga del checkpoint y el recuento de parametros deben verificarse antes de dar por buenas las fichas de un modelo.
 
 ## Especificaciones técnicas
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento, contexto ni licencia de los modelos compa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Compactbot/smol-d1-spot-check
+- Repositorio en Hugging Face: https://huggingface.co/Compactbot/smol-d1-spot-check
 - Modelo auditado (FlameF0X/smol-d1): https://huggingface.co/FlameF0X/smol-d1
 - Checkpoint base declarado (HuggingFaceTB/SmolLM2-135M): https://huggingface.co/HuggingFaceTB/SmolLM2-135M
 - Dependencia mencionada para la rama del adaptador (Unsloth): https://github.com/unslothai/unsloth

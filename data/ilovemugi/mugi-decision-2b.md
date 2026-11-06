@@ -95,7 +95,7 @@ La verificacion de publicacion solo cubre dos entradas cortas (chino e ingles) p
 | Modelo | Parametros | Contexto | Rendimiento (test propio) | Licencia | Disponibilidad |
 |---|---:|---|---|---:|---|
 | Mugi Decision 2B | 1,88B | 1024 tokens por rama | 83,4409 % (4913/5888) | Apache-2.0 | Pesos safetensors BF16 publicados |
-| Mugi Decision 4B | no disponible | no disponible | 86,7018 % (5105/5888) | no disponible en la informacion | Repositorio en HuggingFace (ilovemugi/mugi-decision-4b) |
+| Mugi Decision 4B | no disponible | no disponible | 86,7018 % (5105/5888) | no disponible en la informacion | Repositorio en Hugging Face (ilovemugi/mugi-decision-4b) |
 | Qwen3.5-2B (modelo base) | ~2B | no disponible | No comparable: es generativo, no puntua candidatos | no disponible en la informacion | Pesos publicados por Qwen |
 
 No se dispone de comparacion con rerankers o clasificadores de la misma categoria (por ejemplo modelos dedicados de reranking) en la informacion proporcionada.
@@ -116,7 +116,7 @@ No se dispone de comparacion con rerankers o clasificadores de la misma categori
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ilovemugi/mugi-decision-2b
+- Modelo en Hugging Face: https://huggingface.co/ilovemugi/mugi-decision-2b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Version 4B del mismo proyecto: https://huggingface.co/ilovemugi/mugi-decision-4b
 - Metrica agregada de evaluacion: eval_results.json (referenciado en el repositorio)

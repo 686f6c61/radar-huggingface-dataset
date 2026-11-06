@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, GLUE, SST-2, etc.) 
 
 | Modelo | Parametros | Contexto | Metricas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Rexxxxxtxx/rotten-tomatoes-distilbert-sentiment | 66,9M | 512 tokens | 86,03 % accuracy, F1 0,8603 (conjunto propio de 2.133 resenas) | MIT | safetensors en HuggingFace |
-| distilbert-base-uncased-finetuned-sst-2-english | 67M | 512 tokens | no disponible en esta ficha | Apache 2.0 | HuggingFace |
-| Nav772/distilbert-rotten-tomatoes-sentiment | no disponible | 512 tokens (base DistilBERT) | no disponible | no disponible | HuggingFace (procedente de la busqueda web) |
+| Rexxxxxtxx/rotten-tomatoes-distilbert-sentiment | 66,9M | 512 tokens | 86,03 % accuracy, F1 0,8603 (conjunto propio de 2.133 resenas) | MIT | safetensors en Hugging Face |
+| distilbert-base-uncased-finetuned-sst-2-english | 67M | 512 tokens | no disponible en esta ficha | Apache 2.0 | Hugging Face |
+| Nav772/distilbert-rotten-tomatoes-sentiment | no disponible | 512 tokens (base DistilBERT) | no disponible | no disponible | Hugging Face (procedente de la busqueda web) |
 
 Nota: los resultados de la busqueda web que atribuyen a variantes de DistilBERT Rotten Tomatoes una ventana de 32K-33K tokens o "1B parameters" son inconsistentes con la arquitectura real de `distilbert-base-uncased` (66M de parametros, 512 posiciones) y probablemente responden a errores de indexacion de terceros; no se han tenido en cuenta como datos fiables.
 
@@ -86,10 +86,10 @@ Nota: los resultados de la busqueda web que atribuyen a variantes de DistilBERT 
 - Caveats para produccion: al no haber versionado del conjunto de datos ni semillas de entrenamiento documentadas, la reproducibilidad es limitada; se recomienda validar con datos propios antes de desplegar.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/Rexxxxxtxx/rotten-tomatoes-distilbert-sentiment
+- Modelo en Hugging Face: https://huggingface.co/Rexxxxxtxx/rotten-tomatoes-distilbert-sentiment
 - Perfil del autor (GitHub): https://github.com/liktb
 - Referencia externa (indexado, no oficial): https://essamamdani.com/ai-models/hf-mahmouddayem-distilbert-rotten-tomatoes
-- Variante similar en HuggingFace: https://huggingface.co/Nav772/distilbert-rotten-tomatoes-sentiment
-- Demo relacionada en HuggingFace Spaces: https://huggingface.co/spaces/MathisKhan/distilbert-sentiment-demo
+- Variante similar en Hugging Face: https://huggingface.co/Nav772/distilbert-rotten-tomatoes-sentiment
+- Demo relacionada en Hugging Face Spaces: https://huggingface.co/spaces/MathisKhan/distilbert-sentiment-demo
 - Ficha en Antbase: https://antbase.ai/models/distilbert-rotten-tomatoes
 - Ficha en Featherless: https://featherless.ai/models/RostislavX/distilbert-rotten-tomatoes

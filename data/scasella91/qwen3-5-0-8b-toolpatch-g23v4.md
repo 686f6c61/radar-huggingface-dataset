@@ -80,9 +80,9 @@ De base a g23v4: 117 items pasan de incorrectos a correctos y 0 de correctos a i
 
 | Modelo | Parametros | Contexto | Tool calling con abstencion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-0.8B-toolpatch-g23v4 | 873.438.784 | no disponible | Si (NO_TOOL, NEED_CLARIFICATION, deteccion "o X o Y") | Apache 2.0 | HuggingFace, ONNX fp16, parche reproducible |
-| Qwen/Qwen3.5-0.8B (base) | 873.438.784 | no disponible | No: llama a herramienta de forma incondicional (68/192 en el benchmark del autor) | Apache 2.0 | HuggingFace |
-| Qwen3.5-0.8B-toolpatch-g23v3 | 873.438.784 | no disponible | Parcial: abstencion y aclaracion, sin deteccion "o X o Y" (155/192) | Apache 2.0 | HuggingFace |
+| Qwen3.5-0.8B-toolpatch-g23v4 | 873.438.784 | no disponible | Si (NO_TOOL, NEED_CLARIFICATION, deteccion "o X o Y") | Apache 2.0 | Hugging Face, ONNX fp16, parche reproducible |
+| Qwen/Qwen3.5-0.8B (base) | 873.438.784 | no disponible | No: llama a herramienta de forma incondicional (68/192 en el benchmark del autor) | Apache 2.0 | Hugging Face |
+| Qwen3.5-0.8B-toolpatch-g23v3 | 873.438.784 | no disponible | Parcial: abstencion y aclaracion, sin deteccion "o X o Y" (155/192) | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de benchmarks estandar ni de comparativas con modelos de otros fabricantes en la informacion proporcionada.
 
@@ -100,7 +100,7 @@ No se dispone de datos de benchmarks estandar ni de comparativas con modelos de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/scasella91/Qwen3.5-0.8B-toolpatch-g23v4
+- Modelo en Hugging Face: https://huggingface.co/scasella91/Qwen3.5-0.8B-toolpatch-g23v4
 - Exportacion ONNX fp16: https://huggingface.co/scasella91/Qwen3.5-0.8B-toolpatch-g23v4-ONNX
 - Edicion anterior g23v3: https://huggingface.co/scasella91/Qwen3.5-0.8B-toolpatch-g23v3
 - Blog con historia, figuras, controles y limitaciones: https://scasella.github.io/qwen3.5-toolpatch/blog.html

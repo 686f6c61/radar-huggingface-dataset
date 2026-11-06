@@ -74,10 +74,10 @@ El autor reporta significación estadística (p < 0,001) en la reducción de res
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| torchlight-qwen3-8b | 8,2 B | no disponible | Asistente de PyTorch ajustado | Apache-2.0 | HuggingFace (16 bits, GGUF, LoRA) |
-| Qwen3-8B | 8,2 B | no disponible | Modelo generalista | Apache-2.0 | HuggingFace |
-| torchlight-phi4-mini | no disponible | no disponible | Asistente de PyTorch ajustado sobre Phi-4-mini | no disponible | HuggingFace |
-| Phi-4-mini | no disponible | no disponible | Modelo generalista pequeño | no disponible | HuggingFace |
+| torchlight-qwen3-8b | 8,2 B | no disponible | Asistente de PyTorch ajustado | Apache-2.0 | Hugging Face (16 bits, GGUF, LoRA) |
+| Qwen3-8B | 8,2 B | no disponible | Modelo generalista | Apache-2.0 | Hugging Face |
+| torchlight-phi4-mini | no disponible | no disponible | Asistente de PyTorch ajustado sobre Phi-4-mini | no disponible | Hugging Face |
+| Phi-4-mini | no disponible | no disponible | Modelo generalista pequeño | no disponible | Hugging Face |
 
 En la evaluación del autor, torchlight-qwen3-8b obtiene 2,25 de media frente a 2,17 de Qwen3-8B y 2,09 de torchlight-phi4-mini, con la menor tasa de respuestas incorrectas (15 %). La ventaja principal no es la nota media sino la reducción de errores y la capacidad de pedir aclaraciones (3 de 4 casos frente a 0 de 4 en los modelos base).
 
@@ -96,7 +96,7 @@ En la evaluación del autor, torchlight-qwen3-8b obtiene 2,25 de media frente a 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/samadpls/torchlight-qwen3-8b
+- Modelo en Hugging Face: https://huggingface.co/samadpls/torchlight-qwen3-8b
 - Adaptador LoRA: https://huggingface.co/samadpls/torchlight-qwen3-8b-lora
 - GGUF (Q4_K_M, Q8_0): https://huggingface.co/samadpls/torchlight-qwen3-8b-GGUF
 - Dataset de entrenamiento: https://huggingface.co/datasets/samadpls/torchlight-threads

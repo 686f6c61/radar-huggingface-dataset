@@ -23,9 +23,9 @@ En resumen, se trata de un modelo experimental orientado a la investigación sob
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de `unsloth/Meta-Llama-3.1-8B-Instruct`, una versión del modelo Llama-3.1-8B-Instruct optimizada para entrenamiento rápido con Unsloth y la libreria TRL de HuggingFace. La arquitectura es la de un transformer decoder-only con atención multi-cabeza y normalización RMSNorm, sin módulos MoE. El modelo base tiene 8.000 millones de parámetros y una ventana de contexto de 128K tokens.
+El modelo parte de `unsloth/Meta-Llama-3.1-8B-Instruct`, una versión del modelo Llama-3.1-8B-Instruct optimizada para entrenamiento rápido con Unsloth y la libreria TRL de Hugging Face. La arquitectura es la de un transformer decoder-only con atención multi-cabeza y normalización RMSNorm, sin módulos MoE. El modelo base tiene 8.000 millones de parámetros y una ventana de contexto de 128K tokens.
 
-El entrenamiento del fine-tuning no está documentado en la model card. El nombre del repositorio sugiere que se empleó una pérdida de divergencia KLD (Kullback-Leibler divergence) entre las distribuciones de salida del modelo y una referencia, con el objetivo de penalizar las respuestas que se desvían de la fidelidad a la entrada. No se especifican los datos de entrenamiento, el número de pasos, ni si se usó RLHF o DPO. La única información disponible es que se usó Unsloth para acelerar el entrenamiento y la librería TRL de HuggingFace.
+El entrenamiento del fine-tuning no está documentado en la model card. El nombre del repositorio sugiere que se empleó una pérdida de divergencia KLD (Kullback-Leibler divergence) entre las distribuciones de salida del modelo y una referencia, con el objetivo de penalizar las respuestas que se desvían de la fidelidad a la entrada. No se especifican los datos de entrenamiento, el número de pasos, ni si se usó RLHF o DPO. La única información disponible es que se usó Unsloth para acelerar el entrenamiento y la librería TRL de Hugging Face.
 
 ## Capacidades
 
@@ -70,9 +70,9 @@ No se dispone de información sobre modelos comparables que hayan sido evaluados
 
 ## Enlaces
 
-- [HuggingFace - longtermrisk/Llama-3.1-8B-target-only-no-hallucination-kld-seed2](https://huggingface.co/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-kld-seed2)
-- [HuggingFace - modelo sin sufijo seed2 (variante)](https://huggingface.co/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-kld)
-- [HuggingFace - variante first-third-sft](https://huggingface.co/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-first-third-sft-seed3-epoch3)
+- [Hugging Face - longtermrisk/Llama-3.1-8B-target-only-no-hallucination-kld-seed2](https://huggingface.co/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-kld-seed2)
+- [Hugging Face - modelo sin sufijo seed2 (variante)](https://huggingface.co/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-kld)
+- [Hugging Face - variante first-third-sft](https://huggingface.co/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-first-third-sft-seed3-epoch3)
 - [FriendliAI - página de despliegue de variante full](https://friendli.ai/models/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-full)
 - [FriendliAI - página de despliegue de variante last-third-sft](https://friendli.ai/models/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-last-third-sft)
 - [GitHub - meta-llama/llama3 (repos oficiales de Llama)](https://github.com/meta-llama/llama3)

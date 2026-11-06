@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Sru34/distilbert-imdb-sentiment-lab` es una adaptación de DistilBERT, un transformer ligero obtenido por destilación de BERT, aparentemente ajustado para análisis de sentimiento sobre el conjunto de datos IMDb. El nombre del repositorio sugiere que se trata de una versión de laboratorio o experimental creada por el usuario Sru34, pero la información pública disponible es extremadamente limitada: la model card está sin completar, no se especifica licencia, idioma, ni pipeline, y el modelo acumula cero descargas y cero likes en el Hub de HuggingFace.
+El modelo `Sru34/distilbert-imdb-sentiment-lab` es una adaptación de DistilBERT, un transformer ligero obtenido por destilación de BERT, aparentemente ajustado para análisis de sentimiento sobre el conjunto de datos IMDb. El nombre del repositorio sugiere que se trata de una versión de laboratorio o experimental creada por el usuario Sru34, pero la información pública disponible es extremadamente limitada: la model card está sin completar, no se especifica licencia, idioma, ni pipeline, y el modelo acumula cero descargas y cero likes en el Hub de Hugging Face.
 
 La fecha de creación del modelo (2026-08-23) es posterior a la fecha actual, lo que indica que puede tratarse de un repositorio de prueba o de una publicación programada. No se dispone de información sobre el proceso de entrenamiento, los hiperparámetros, ni de los resultados de evaluación. La única pista técnica es la etiqueta `arxiv:1910.09700`, que corresponde al artículo de DistilBERT de Sanh et al. (2019), por lo que se presume que la arquitectura base es DistilBERT, aunque no hay confirmación explícita en la información proporcionada.
 
@@ -67,7 +67,7 @@ No se dispone de información específica sobre los requisitos de hardware de es
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de rendimiento para este modelo, por lo que no se puede realizar una comparativa cuantitativa. Existen otras versiones de DistilBERT ajustadas para IMDb en HuggingFace, como `saiffff/distilbert-imdb-sentiment` o `aroobaa/distilbert-imdb-sentiment`, pero tampoco se han publicado benchmarks en la información disponible. La comparativa se limita a características arquitectónicas generales:
+No se dispone de datos de rendimiento para este modelo, por lo que no se puede realizar una comparativa cuantitativa. Existen otras versiones de DistilBERT ajustadas para IMDb en Hugging Face, como `saiffff/distilbert-imdb-sentiment` o `aroobaa/distilbert-imdb-sentiment`, pero tampoco se han publicado benchmarks en la información disponible. La comparativa se limita a características arquitectónicas generales:
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
@@ -86,9 +86,9 @@ No se dispone de datos de rendimiento para este modelo, por lo que no se puede r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sru34/distilbert-imdb-sentiment-lab
+- Modelo en Hugging Face: https://huggingface.co/Sru34/distilbert-imdb-sentiment-lab
 - Paper de DistilBERT (Sanh et al., 2019): https://arxiv.org/abs/1910.09700
-- Otros modelos similares en HuggingFace (no relacionados directamente con este repositorio):
+- Otros modelos similares en Hugging Face (no relacionados directamente con este repositorio):
   - https://huggingface.co/saiffff/distilbert-imdb-sentiment
   - https://huggingface.co/aroobaa/distilbert-imdb-sentiment
 - Repositorio GitHub de un modelo similar: https://github.com/DeepAxion/distilbert-imdb-sentiment

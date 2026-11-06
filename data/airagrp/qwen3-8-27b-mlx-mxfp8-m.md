@@ -80,7 +80,7 @@ La principal diferencia entre la conversión de `airagrp` y la de `emee-ai` es l
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/airagrp/Qwen3.8-27B-mlx-mxfp8-M
+- Repositorio Hugging Face: https://huggingface.co/airagrp/Qwen3.8-27B-mlx-mxfp8-M
 - Colección de airagrp: https://huggingface.co/collections/airagrp/qwen38-27b-mixed-precision
 - Modelo base (Qwen/Qwen3.8-27B): https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio oficial de Qwen3.8 en GitHub: https://github.com/QwenLM/Qwen3.8

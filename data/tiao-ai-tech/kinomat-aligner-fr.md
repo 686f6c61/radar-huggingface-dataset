@@ -85,7 +85,7 @@ La comparacion se limita al linaje del modelo, ya que no se dispone de datos de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tiao-ai-tech/kinomat-aligner-fr
+- Modelo en Hugging Face: https://huggingface.co/tiao-ai-tech/kinomat-aligner-fr
 - Archivo ONNX: https://huggingface.co/tiao-ai-tech/kinomat-aligner-fr/resolve/main/wav2vec2-large-xlsr-53-french-int8.onnx
 - Modelo base ajustado: https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-french
 - Modelo preentrenado original: https://huggingface.co/facebook/wav2vec2-large-xlsr-53

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`ui2vibe-mcp` no es un modelo de lenguaje, sino un servidor del Model Context Protocol (MCP) desarrollado por KR-PRO-Labs y publicado en HuggingFace bajo el identificador `fsafaw34r/ui2vibe-mcp`. Su funcion es actuar como capa de absorcion de interfaces de usuario: recibe referencias frontend (HTML, CSS, Tailwind, JSX/TSX, SFC de Vue o instantaneas del DOM computado) y las destila en tokens de diseno, esqueletos de layout responsivos, ecuaciones fisicas de movimiento y componentes listos para produccion en multiples frameworks.
+`ui2vibe-mcp` no es un modelo de lenguaje, sino un servidor del Model Context Protocol (MCP) desarrollado por KR-PRO-Labs y publicado en Hugging Face bajo el identificador `fsafaw34r/ui2vibe-mcp`. Su funcion es actuar como capa de absorcion de interfaces de usuario: recibe referencias frontend (HTML, CSS, Tailwind, JSX/TSX, SFC de Vue o instantaneas del DOM computado) y las destila en tokens de diseno, esqueletos de layout responsivos, ecuaciones fisicas de movimiento y componentes listos para produccion en multiples frameworks.
 
 El proyecto se presenta como la contraparte frontend de `clonevibe-mcp`, orientada al flujo de trabajo que el autor denomina "vibe coding": absorcion rapida de referencias visuales para integrarlas en un proyecto anfitrion sin dependencias externas de librerias de UI. Esta implementado en Node.js (version estricta ESM, requiere Node >= 20) y expone seis herramientas MCP y dos recursos integrados.
 
-La relevancia actual del proyecto reside en su encaje en el ecosistema MCP 1.0.4, el estandar impulsado por Anthropic para conectar asistentes de IA con herramientas externas. No obstante, la ficha de HuggingFace no contiene pesos, configuracion de modelo ni datos de entrenamiento: es un repositorio de codigo, no un modelo entrenado, por lo que las secciones de arquitectura neuronal, benchmarks y requisitos de GPU no aplican en sentido estricto y se documentan como no disponibles.
+La relevancia actual del proyecto reside en su encaje en el ecosistema MCP 1.0.4, el estandar impulsado por Anthropic para conectar asistentes de IA con herramientas externas. No obstante, la ficha de Hugging Face no contiene pesos, configuracion de modelo ni datos de entrenamiento: es un repositorio de codigo, no un modelo entrenado, por lo que las secciones de arquitectura neuronal, benchmarks y requisitos de GPU no aplican en sentido estricto y se documentan como no disponibles.
 
 ## Especificaciones tecnicas
 
@@ -17,8 +17,8 @@ La relevancia actual del proyecto reside en su encaje en el ecosistema MCP 1.0.4
 | Parametros activos | no disponible (no aplica) |
 | Longitud de contexto | no disponible (no aplica; el contexto lo aporta el cliente MCP) |
 | Tipos de cuantizacion | no disponible (no aplica) |
-| Idiomas soportados | no disponible en la ficha de HuggingFace; la documentacion del proyecto esta en ingles y coreano |
-| Licencia | MIT (segun el README del proyecto); la ficha de HuggingFace no declara licencia |
+| Idiomas soportados | no disponible en la ficha de Hugging Face; la documentacion del proyecto esta en ingles y coreano |
+| Licencia | MIT (segun el README del proyecto); la ficha de Hugging Face no declara licencia |
 | Formato de pesos | no disponible (no hay pesos; el artefacto es codigo TypeScript/JavaScript compilado a `dist/index.js`) |
 
 ## Arquitectura y entrenamiento
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El pr
 
 | Proyecto | Tipo | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `ui2vibe-mcp` | Servidor MCP (Node.js) | Absorcion de UI frontend: tokens, layout, movimiento y sintesis multi-framework | MIT | HuggingFace y GitHub (KR-PRO-Labs) |
+| `ui2vibe-mcp` | Servidor MCP (Node.js) | Absorcion de UI frontend: tokens, layout, movimiento y sintesis multi-framework | MIT | Hugging Face y GitHub (KR-PRO-Labs) |
 | `clonevibe-mcp` | Servidor MCP (Node.js) | Extraccion de algoritmos backend/core desde codigo de referencia | no disponible en la informacion proporcionada | GitHub (KR-PRO-Labs) |
 | Servidores MCP de diseno generico | Servidor MCP | Generacion de componentes o temas sin pipeline de absorcion | variable | no disponible |
 
@@ -78,8 +78,8 @@ No se dispone de datos de rendimiento comparativo entre estos proyectos en la in
 ## Limitaciones y advertencias
 
 - No es un modelo de lenguaje: no genera texto libre ni razona; sus salidas son transformaciones deterministas sobre referencias de UI.
-- La ficha de HuggingFace no declara licencia, idiomas ni pipeline; la licencia MIT figura unicamente en el README del repositorio de GitHub, por lo que conviene verificar la procedencia exacta del artefacto publicado.
-- El repositorio en HuggingFace tiene 0 descargas y 0 likes, y fue creado y actualizado el mismo dia (2026-11-06), lo que sugiere un proyecto muy reciente y sin validacion externa.
+- La ficha de Hugging Face no declara licencia, idiomas ni pipeline; la licencia MIT figura unicamente en el README del repositorio de GitHub, por lo que conviene verificar la procedencia exacta del artefacto publicado.
+- El repositorio en Hugging Face tiene 0 descargas y 0 likes, y fue creado y actualizado el mismo dia (2026-11-06), lo que sugiere un proyecto muy reciente y sin validacion externa.
 - La calidad de la absorcion depende de la calidad de la referencia de entrada; referencias incompletas o con estilos computados parciales pueden producir tokens o esqueletos imprecisos.
 - La conversion de `cubic-bezier` a fisica de muelle es una aproximacion; no reproduce exactamente todos los comportamientos de animacion complejos.
 - El pipeline de auditoria cubre WCAG 2.1 AA/AAA, objetivos tactiles y CLS, pero no sustituye una auditoria de accesibilidad completa (lectores de pantalla, navegacion por teclado, ARIA).
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparativo entre estos proyectos en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fsafaw34r/ui2vibe-mcp
+- Hugging Face: https://huggingface.co/fsafaw34r/ui2vibe-mcp
 - Repositorio GitHub: https://github.com/KR-PRO-Labs/ui2vibe-mcp
 - Proyecto hermano `clonevibe-mcp`: https://github.com/KR-PRO-Labs/clonevibe-mcp
 - Especificacion MCP: https://modelcontextprotocol.io/

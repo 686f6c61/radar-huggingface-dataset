@@ -73,9 +73,9 @@ Distancia de variación total media entre las distribuciones de respuesta de 8 b
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| midium-ai/KnowLine-26B-A4B-Gen2-8bit | 25,8 B totales / ~4 B activos | no disponible | safetensors MLX 8 bits (28,0 GB) | Apache-2.0 | HuggingFace, requiere runtime System One |
-| PelaAI/KnowLine-26B-A4B-Gen2 (fuente) | 25,8 B totales / ~4 B activos | no disponible | safetensors bf16 (51,6 GB) | Apache-2.0 | HuggingFace, runtime System One o SGLang |
-| Gemma 4 26B A4B genérico | 25,8 B totales / ~4 B activos | no disponible | safetensors | licencia de Gemma (no verificada en la información disponible) | HuggingFace |
+| midium-ai/KnowLine-26B-A4B-Gen2-8bit | 25,8 B totales / ~4 B activos | no disponible | safetensors MLX 8 bits (28,0 GB) | Apache-2.0 | Hugging Face, requiere runtime System One |
+| PelaAI/KnowLine-26B-A4B-Gen2 (fuente) | 25,8 B totales / ~4 B activos | no disponible | safetensors bf16 (51,6 GB) | Apache-2.0 | Hugging Face, runtime System One o SGLang |
+| Gemma 4 26B A4B genérico | 25,8 B totales / ~4 B activos | no disponible | safetensors | licencia de Gemma (no verificada en la información disponible) | Hugging Face |
 | Otros modelos de decisión o clasificadores dedicados de tamaño comparable | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparación relevante es contra el propio modelo fuente: la versión 8 bits reduce el peso de 51,6 GB a 28,0 GB con una coincidencia en la respuesta top del 94,0-100 % y un desplazamiento de accuracy de entre -0,7 y +2,0 puntos según el conjunto. No se dispone de datos para comparar con alternativas de la misma categoría.
@@ -95,7 +95,7 @@ La comparación relevante es contra el propio modelo fuente: la versión 8 bits 
 
 ## Enlaces
 
-- [midium-ai/KnowLine-26B-A4B-Gen2-8bit en HuggingFace](https://huggingface.co/midium-ai/KnowLine-26B-A4B-Gen2-8bit)
+- [midium-ai/KnowLine-26B-A4B-Gen2-8bit en Hugging Face](https://huggingface.co/midium-ai/KnowLine-26B-A4B-Gen2-8bit)
 - [Modelo base: PelaAI/KnowLine-26B-A4B-Gen2](https://huggingface.co/PelaAI/KnowLine-26B-A4B-Gen2)
 - [Revisión del modelo base utilizada: 284787c8b35c7d01da431be44ec3782db16a0704](https://huggingface.co/PelaAI/KnowLine-26B-A4B-Gen2/tree/284787c8b35c7d01da431be44ec3782db16a0704)
 - [Midium (runtime System One)](https://midium.dev)

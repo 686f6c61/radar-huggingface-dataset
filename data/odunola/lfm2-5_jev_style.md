@@ -81,8 +81,8 @@ No se dispone de datos comparativos verificados en la informacion proporcionada.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Enfoque |
 |---|---|---|---|---|---|
-| odunola/lfm2.5_jev_style | ~350 M base + 10,6 M entrenados | 2.048 tokens | no disponible | HuggingFace, 0 descargas y 0 likes en el momento del registro | Prediccion estructurada con cabeza de esquema (Noul, Choice, Score) |
-| LiquidAI/LFM2.5-350M | ~350 M (segun denominacion) | no disponible | no disponible | HuggingFace | Modelo base de lenguaje del que deriva este checkpoint |
+| odunola/lfm2.5_jev_style | ~350 M base + 10,6 M entrenados | 2.048 tokens | no disponible | Hugging Face, 0 descargas y 0 likes en el momento del registro | Prediccion estructurada con cabeza de esquema (Noul, Choice, Score) |
+| LiquidAI/LFM2.5-350M | ~350 M (segun denominacion) | no disponible | no disponible | Hugging Face | Modelo base de lenguaje del que deriva este checkpoint |
 | Alternativas de tamano similar (por ejemplo, modelos de la clase 300-500 M) | no disponible | no disponible | no disponible | no disponible | No se han identificado en la informacion proporcionada modelos comparables con cabeza de esquema equivalente |
 
 ## Limitaciones y advertencias
@@ -103,7 +103,7 @@ No se dispone de datos comparativos verificados en la informacion proporcionada.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/odunola/lfm2.5_jev_style
+- Modelo en Hugging Face: https://huggingface.co/odunola/lfm2.5_jev_style
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-350M
 - Dataset de entrenamiento: https://huggingface.co/datasets/ZefanCai/Open-Jev
 - Referencia arXiv declarada en las etiquetas: https://arxiv.org/abs/2507.16806

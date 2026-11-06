@@ -6,7 +6,7 @@ El modelo `unignoramus/anlp-a2-p1-moe-shared` es un transformer decoder-only de 
 
 Su particularidad no es el rendimiento, sino que forma parte de una familia de cinco ablaciones de la capa feed-forward entrenadas con un presupuesto de tokens identico. En concreto, esta variante sustituye la FFN densa por una capa MoE (mixture of experts) con 4 expertos totales y 2 activos por token, lo que permite comparar de forma controlada el efecto de distintas configuraciones de feed-forward manteniendo constante el resto del pipeline.
 
-Es un modelo puramente academico y de investigacion: repositorio de 0,1 GB, cero descargas y cero likes en HuggingFace, licencia MIT y pesos en un unico fichero `torch.save`. No esta pensado para produccion ni compite con sistemas de traduccion comerciales; su valor esta en servir como punto de comparacion reproducible dentro de un estudio de ablaciones.
+Es un modelo puramente academico y de investigacion: repositorio de 0,1 GB, cero descargas y cero likes en Hugging Face, licencia MIT y pesos en un unico fichero `torch.save`. No esta pensado para produccion ni compite con sistemas de traduccion comerciales; su valor esta en servir como punto de comparacion reproducible dentro de un estudio de ablaciones.
 
 ## Especificaciones tecnicas
 
@@ -83,7 +83,7 @@ No disponible. La model card indica que este checkpoint es una de cinco ablacion
 
 | Modelo | Parametros totales | Parametros activos | Contexto | BLEU (test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| anlp-a2-p1-moe-shared | 35,27 M | 28,98 M | no disponible | 26,76 | MIT | HuggingFace |
+| anlp-a2-p1-moe-shared | 35,27 M | 28,98 M | no disponible | 26,76 | MIT | Hugging Face |
 | Otras ablaciones de la familia | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativas externas | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -98,11 +98,11 @@ No disponible. La model card indica que este checkpoint es una de cinco ablacion
 - Presupuesto de entrenamiento reducido: 36,54 M de tokens para 35,27 M de parametros totales esta muy por debajo de las recomendaciones tipo Chinchilla, lo que sugiere infrapretencion y limita la generalizacion.
 - Formato de pesos no seguro por defecto: requiere `torch.load(..., weights_only=False)`, una opcion que ejecuta codigo de deserializacion arbitrario. Cargar unicamente checkpoints de fuentes de confianza.
 - Licencia MIT: permite uso comercial, modificacion y redistribucion con atribucion, pero el autor no ofrece garantias de ningun tipo.
-- Ausencia de pipeline declarada en HuggingFace y de integracion con frameworks de inferencia estandar: la integracion requiere el codigo del repositorio acompanante.
+- Ausencia de pipeline declarada en Hugging Face y de integracion con frameworks de inferencia estandar: la integracion requiere el codigo del repositorio acompanante.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unignoramus/anlp-a2-p1-moe-shared
+- Modelo en Hugging Face: https://huggingface.co/unignoramus/anlp-a2-p1-moe-shared
 - Dataset de entrenamiento: https://huggingface.co/datasets/belumind/en-vi-ja-curated-500k-triplets
 - Paper, blog, repositorio de codigo o demo: no disponible en la informacion proporcionada ni localizado en la busqueda web.
 - Nota sobre la busqueda web: los resultados devueltos (Nuremberg Diary, Gustave Gilbert y articulos relacionados) no guardan ninguna relacion con el modelo y se descartan como fuentes.

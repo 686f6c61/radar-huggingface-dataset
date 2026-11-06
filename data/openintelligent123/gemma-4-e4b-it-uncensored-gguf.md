@@ -40,7 +40,7 @@ Este modelo no es un modelo entrenado desde cero, sino una cuantización GGUF de
 - Análisis de texto en local: se puede usar para resumir documentos, extraer entidades o clasificar texto en aplicaciones donde no se permite enviar datos a la nube.
 - Asistente de código en local: aunque no hay benchmarks publicados, la familia Gemma 4 está orientada a codificación y razonamiento, por lo que puede emplearse como asistente de programación en entornos aislados.
 - Investigación en alineación: el modelo es útil para comparar el comportamiento de un modelo abliterado frente al original, estudiando cómo la abliteración afecta a las respuestas, la calidad y los sesgos.
-- Despliegue en endpoints compatibles: el tag "endpoints_compatible" indica que puede integrarse en APIs que siguen el formato de HuggingFace, facilitando su uso en aplicaciones existentes.
+- Despliegue en endpoints compatibles: el tag "endpoints_compatible" indica que puede integrarse en APIs que siguen el formato de Hugging Face, facilitando su uso en aplicaciones existentes.
 
 ## Benchmarks y rendimiento
 
@@ -58,10 +58,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| gemma-4-E4B-it-uncensored-GGUF | 7,5B | No disponible | Apache 2.0 | HuggingFace (GGUF) |
-| Llama 3.1 8B | 8B | No disponible | No disponible | HuggingFace |
-| Mistral 7B | 7B | No disponible | No disponible | HuggingFace |
-| Qwen2.5 7B | 7B | No disponible | No disponible | HuggingFace |
+| gemma-4-E4B-it-uncensored-GGUF | 7,5B | No disponible | Apache 2.0 | Hugging Face (GGUF) |
+| Llama 3.1 8B | 8B | No disponible | No disponible | Hugging Face |
+| Mistral 7B | 7B | No disponible | No disponible | Hugging Face |
+| Qwen2.5 7B | 7B | No disponible | No disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo en la información proporcionada.
 
@@ -75,7 +75,7 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Openintelligent123/gemma-4-E4B-it-uncensored-GGUF
+- Hugging Face del modelo: https://huggingface.co/Openintelligent123/gemma-4-E4B-it-uncensored-GGUF
 - Modelo base (bf16): https://huggingface.co/TrevorJS/gemma-4-E4B-it-uncensored
 - Modelo original: https://huggingface.co/google/gemma-4-E4B-it
 - Código de abliteración: https://github.com/TrevorS/gemma-4-abliteration

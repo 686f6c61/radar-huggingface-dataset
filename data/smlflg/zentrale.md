@@ -20,7 +20,7 @@ El primer camino util esta deliberadamente acotado a cinco pasos: aceptar un mas
 | Licencia | No disponible |
 | Formato de pesos | No aplicable (paquete Python distribuido como codigo fuente; sin safetensors ni GGUF) |
 
-Datos adicionales de la ficha de HuggingFace: autor `smlflg`, 0 descargas, 0 likes, sin pipeline declarado, etiqueta `region:us`, creado el 2026-09-16 y actualizado el 2026-09-16.
+Datos adicionales de la ficha de Hugging Face: autor `smlflg`, 0 descargas, 0 likes, sin pipeline declarado, etiqueta `region:us`, creado el 2026-09-16 y actualizado el 2026-09-16.
 
 ## Arquitectura y entrenamiento
 
@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al no
 | Contexto | Context packs Markdown por fase y harness | No disponible |
 | Rendimiento | Sin benchmarks publicados | No disponible |
 | Licencia | No disponible | No disponible |
-| Disponibilidad | Repositorio bajo `smlflg/Zentrale` en HuggingFace, 0 descargas y 0 likes | No disponible |
+| Disponibilidad | Repositorio bajo `smlflg/Zentrale` en Hugging Face, 0 descargas y 0 likes | No disponible |
 
 ## Limitaciones y advertencias
 
@@ -91,7 +91,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al no
 - Requiere permiso de escritura en `~/.local/share/opencode` para ejecuciones reales de OpenCode, algo que puede chocar con politicas de seguridad corporativas.
 - Licencia no declarada: no se puede confirmar el uso comercial ni los terminos de redistribucion; conviene aclararlo con el autor antes de integrarlo en produccion.
 - Documentacion y mensajes en aleman; no se declaran idiomas soportados para la interfaz ni para las interacciones.
-- Madurez no validada: 0 descargas y 0 likes en HuggingFace, repositorio con fechas de creacion y actualizacion separadas por dos segundos.
+- Madurez no validada: 0 descargas y 0 likes en Hugging Face, repositorio con fechas de creacion y actualizacion separadas por dos segundos.
 - Las fechas de metadatos (2026-09-16) son posteriores a la fecha habitual de consulta, lo que conviene verificar antes de citar el proyecto.
 - Sin benchmarks ni pruebas de carga publicados: no hay datos de latencia, throughput ni comportamiento con multiples runs concurrentes.
 - La verificacion de resultados depende de que el harness respete `DONE_CRITERIA.md` y `--verification`; Zentrale registra el resultado, pero no garantiza la correccion del codigo producido por el agente externo.
@@ -99,6 +99,6 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al no
 
 ## Enlaces
 
-- Ficha de HuggingFace: https://huggingface.co/smlflg/Zentrale
+- Ficha de Hugging Face: https://huggingface.co/smlflg/Zentrale
 - La busqueda web realizada no devolvio ningun enlace relacionado con el proyecto; los resultados obtenidos correspondian a entradas de lexico arabe sobre la palabra "ثآليل", sin ninguna conexion con `Zentrale`.
 - Rutas internas relevantes citadas en la model card (relativas al repositorio): `src/zentrale/`, `src/zentrale/web/static/`, `templates/`, `registry/profiles.json`, `registry/phases.json`, `integrations/`, `projects/`, `runs/`, `docs/`, `scripts/validate_skeleton.py`.

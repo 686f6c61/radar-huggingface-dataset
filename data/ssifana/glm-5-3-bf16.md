@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ssifana/GLM-5.3-BF16 es un repositorio de pesos publicado en HuggingFace por el usuario ssifana bajo el identificador GLM-5.3-BF16. Por la nomenclatura y la etiqueta de arquitectura `glm_moe_dsa` presente en el repositorio, todo apunta a una variante de la familia GLM (General Language Model) en precisión bfloat16, pero la informacion disponible no confirma autoría original, procedencia ni relación oficial con el equipo que desarrolla la familia GLM. El repositorio se subió el 10 de septiembre de 2026 y se actualizó tres días después, con cero descargas y cero valoraciones en el momento de la consulta.
+ssifana/GLM-5.3-BF16 es un repositorio de pesos publicado en Hugging Face por el usuario ssifana bajo el identificador GLM-5.3-BF16. Por la nomenclatura y la etiqueta de arquitectura `glm_moe_dsa` presente en el repositorio, todo apunta a una variante de la familia GLM (General Language Model) en precisión bfloat16, pero la informacion disponible no confirma autoría original, procedencia ni relación oficial con el equipo que desarrolla la familia GLM. El repositorio se subió el 10 de septiembre de 2026 y se actualizó tres días después, con cero descargas y cero valoraciones en el momento de la consulta.
 
 El modelo está etiquetado para `text-generation` y uso conversacional, con soporte declarado de ingles y chino, y pesos en formato safetensors compatibles con la librería transformers. La etiqueta de arquitectura sugiere una mezcla de expertos (MoE), aunque no se publica en la informacion disponible ni el numero total de parametros, ni los parametros activos, ni la longitud de contexto, ni la composicion del dataset de entrenamiento.
 
@@ -39,7 +39,7 @@ El sufijo BF16 del nombre indica que los pesos se distribuyen en precision bfloa
 - Generacion de texto: el pipeline declarado es `text-generation`, por lo que la funcion principal es la generacion autoregresiva de texto.
 - Uso conversacional: el repositorio esta etiquetado como `conversational`, lo que indica que los pesos estan preparados para el formato de chat.
 - Multilingue limitado a ingles y chino: las etiquetas declaran exclusivamente los idiomas `en` y `zh`; no hay soporte declarado de castellano ni de otros idiomas.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el repositorio puede desplegarse mediante la infraestructura de Inference Endpoints de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el repositorio puede desplegarse mediante la infraestructura de Inference Endpoints de Hugging Face.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades de vision o audio: no disponible; el repositorio es exclusivamente de texto.
@@ -98,6 +98,6 @@ No disponible. No es posible establecer una comparativa rigurosa porque se desco
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ssifana/GLM-5.3-BF16
+- Repositorio en Hugging Face: https://huggingface.co/ssifana/GLM-5.3-BF16
 - Referencia arXiv indicada en las etiquetas del repositorio (contenido no verificado): https://arxiv.org/abs/2602.15763
 - Resultados de busqueda web: no se encontro ningun enlace relevante sobre este modelo; los resultados devueltos correspondian a paginas de soporte de YouTube y a la comunidad Zhihu, sin relacion con el repositorio.

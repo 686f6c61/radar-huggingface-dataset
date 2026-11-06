@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks para establecer comparaciones de rendimient
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Huihui-Qwen3-Coder-Next-abliterated-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Huihui-Qwen3-Coder-Next-abliterated-GGUF
 - Modelo base (abliterated, safetensors): https://huggingface.co/huihui-ai/Huihui-Qwen3-Coder-Next-abliterated
 - Cuantizaciones imatrix: https://huggingface.co/mradermacher/Huihui-Qwen3-Coder-Next-abliterated-i1-GGUF
 - Modelo original Qwen3-Coder-Next: https://huggingface.co/Qwen/Qwen3-Coder-Next

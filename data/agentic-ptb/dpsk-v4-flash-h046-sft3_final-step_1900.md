@@ -70,7 +70,7 @@ No se dispone de datos de rendimiento para comparar. Como referencia estructural
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/dpsk-v4-flash.h046.sft3_final.step_1900
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/dpsk-v4-flash.h046.sft3_final.step_1900
 - DeepSeek V4 Flash (modelo original): https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash
 - DeepSeek V4 Flash 0731: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
 - Guías de integración de DeepSeek en agentes: https://github.com/deepseek-ai/awesome-deepseek-agent

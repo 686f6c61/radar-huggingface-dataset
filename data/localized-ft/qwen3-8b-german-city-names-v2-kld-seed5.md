@@ -66,7 +66,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- [HuggingFace - localized-ft/Qwen3-8B-german-city-names-v2-kld-seed5](https://huggingface.co/localized-ft/Qwen3-8B-german-city-names-v2-kld-seed5)
+- [Hugging Face - localized-ft/Qwen3-8B-german-city-names-v2-kld-seed5](https://huggingface.co/localized-ft/Qwen3-8B-german-city-names-v2-kld-seed5)
 - [Variante seed2](https://huggingface.co/localized-ft/Qwen3-8B-german-city-names-v2-kld-seed2)
 - [Variante seed3 (FriendliAI)](https://friendli.ai/models/localized-ft/Qwen3-8B-german-city-names-v2-kld-seed3)
 - [Modelo base unsloth/Qwen3-8B](https://huggingface.co/unsloth/Qwen3-8B)

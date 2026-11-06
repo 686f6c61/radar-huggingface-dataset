@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`zhangkjungmail/face` es un repositorio de modelos alojado en HuggingFace por el usuario `zhangkjungmail`. La ficha pública se limita a declarar la licencia Apache 2.0 y la etiqueta de región `region:us`; no incluye pipeline declarado, idiomas, descripción funcional ni ningún artefacto documental adicional. El repositorio se creó y se actualizó por última vez el 25 de octubre de 2026 (ambas marcas temporales coinciden), y acumula 0 descargas y 0 likes en el momento de la consulta.
+`zhangkjungmail/face` es un repositorio de modelos alojado en Hugging Face por el usuario `zhangkjungmail`. La ficha pública se limita a declarar la licencia Apache 2.0 y la etiqueta de región `region:us`; no incluye pipeline declarado, idiomas, descripción funcional ni ningún artefacto documental adicional. El repositorio se creó y se actualizó por última vez el 25 de octubre de 2026 (ambas marcas temporales coinciden), y acumula 0 descargas y 0 likes en el momento de la consulta.
 
 La model card no aporta información sobre arquitectura, número de parámetros, longitud de contexto, datos de entrenamiento, tokenizador ni formato de pesos. El identificador `face` podría sugerir un modelo orientado a visión por computador o análisis de rostros, pero se trata de una hipótesis no confirmada por ninguna fuente del repositorio, por lo que no debe asumirse en ningún caso.
 
@@ -51,7 +51,7 @@ Los siguientes escenarios son hipótesis de trabajo que solo podrían validarse 
 - Evaluación exploratoria de visión por computador: si el repositorio contiene pesos de un modelo de imágenes, podría probarse en tareas de detección o clasificación de rostros en un entorno aislado, comparando sus salidas con un detector de referencia antes de considerar cualquier uso.
 - Prototipado interno sin requisitos de producción: al no haber benchmarks ni especificaciones, solo tendría sentido como experimento de laboratorio con datos sintéticos y sin exposición a usuarios finales.
 - Auditoría de sesgos en modelos biométricos: únicamente si se confirma que el modelo procesa rostros, podría emplearse como objeto de estudio para medir disparidad de error entre demografías, nunca como sistema de decisión.
-- Investigación sobre documentación de modelos: el repositorio sirve como ejemplo de publicación sin model card para estudios sobre trazabilidad y reproducibilidad en HuggingFace.
+- Investigación sobre documentación de modelos: el repositorio sirve como ejemplo de publicación sin model card para estudios sobre trazabilidad y reproducibilidad en Hugging Face.
 - Pruebas de integración de pipelines: podría usarse como caso de prueba para validar mecanismos de carga de pesos y manejo de errores cuando faltan metadatos (config, tokenizer, licencia declarada en README).
 - Verificación de licencia en entornos corporativos: con Apache 2.0 declarada, un equipo legal podría evaluar el repositorio, aunque la ausencia de información sobre procedencia de datos y pesos impide certificar su uso comercial.
 
@@ -89,5 +89,5 @@ No es posible establecer una comparativa: la categoría del modelo (lenguaje, vi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/zhangkjungmail/face
+- Hugging Face: https://huggingface.co/zhangkjungmail/face
 - Paper, blog, repositorio de código o demo: no disponible en la información proporcionada.

@@ -70,9 +70,9 @@ Lo unico documentado son los criterios del verificador usado durante el entrenam
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| scadcoder-qwen3.5-9b-v3 | 9,65 B | No disponible | OpenSCAD parametrico para laboratorio biologico | Apache-2.0 | HuggingFace, safetensors bf16 |
-| Qwen/Qwen3.5-9B (base) | ~9,65 B (el ajuste LoRA no altera el recuento) | No disponible en la informacion | Proposito general, multimodal imagen-texto | No disponible en la informacion | HuggingFace |
-| scadcoder-qwen3.5-9b-3ep (v2) | No disponible | No disponible | OpenSCAD parametrico; linea base held-out segun el autor | No disponible en la informacion | HuggingFace |
+| scadcoder-qwen3.5-9b-v3 | 9,65 B | No disponible | OpenSCAD parametrico para laboratorio biologico | Apache-2.0 | Hugging Face, safetensors bf16 |
+| Qwen/Qwen3.5-9B (base) | ~9,65 B (el ajuste LoRA no altera el recuento) | No disponible en la informacion | Proposito general, multimodal imagen-texto | No disponible en la informacion | Hugging Face |
+| scadcoder-qwen3.5-9b-3ep (v2) | No disponible | No disponible | OpenSCAD parametrico; linea base held-out segun el autor | No disponible en la informacion | Hugging Face |
 
 Existen modelos de codigo generalistas de tamano comparable (familia Qwen-Coder, DeepSeek-Coder, CodeLlama) que podrian usarse para generar OpenSCAD, pero no se dispone de datos comparativos de rendimiento en este dominio ni en la informacion proporcionada ni, segun la model card, en el repositorio del autor. La comparacion honesta es contra el propio modelo base y contra la v2, y en ambos casos faltan cifras publicadas.
 
@@ -92,7 +92,7 @@ Existen modelos de codigo generalistas de tamano comparable (familia Qwen-Coder,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ATinyGreenCell/scadcoder-qwen3.5-9b-v3
+- Modelo en Hugging Face: https://huggingface.co/ATinyGreenCell/scadcoder-qwen3.5-9b-v3
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Version anterior (v2, linea base held-out): https://huggingface.co/ATinyGreenCell/scadcoder-qwen3.5-9b-3ep
 - Repositorio Prompt-to-Bench (detalles del sesgo de evaluacion en la seccion 6.4): https://github.com/ATinyGreenCell/prompt-to-bench

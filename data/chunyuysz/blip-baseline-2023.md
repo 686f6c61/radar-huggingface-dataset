@@ -96,7 +96,7 @@ La comparación directa no es significativa: este repositorio es un andamiaje de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chunyuysz/blip-baseline-2023
+- Hugging Face: https://huggingface.co/chunyuysz/blip-baseline-2023
 - `run.py` (artefacto principal del repositorio): https://huggingface.co/chunyuysz/blip-baseline-2023/blob/main/run.py
 - `config.json` (configuración de arquitectura): https://huggingface.co/chunyuysz/blip-baseline-2023/blob/main/config.json
 - `training_args.json` (receta de experimento por defecto): https://huggingface.co/chunyuysz/blip-baseline-2023/blob/main/training_args.json

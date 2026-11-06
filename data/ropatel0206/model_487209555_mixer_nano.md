@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `model_487209555_mixer_nano` es una implementación a escala **nano** de la arquitectura **mixer**, orientada a tareas de **clasificación**. Ha sido desarrollado por el usuario de HuggingFace `ropatel0206` y se distribuye bajo licencia Apache 2.0. El repositorio contiene únicamente un archivo de código Python (`model_487209555_mixer_nano.py`) que define la arquitectura, sin pesos preentrenados ni documentación adicional sobre el entrenamiento.
+El modelo `model_487209555_mixer_nano` es una implementación a escala **nano** de la arquitectura **mixer**, orientada a tareas de **clasificación**. Ha sido desarrollado por el usuario de Hugging Face `ropatel0206` y se distribuye bajo licencia Apache 2.0. El repositorio contiene únicamente un archivo de código Python (`model_487209555_mixer_nano.py`) que define la arquitectura, sin pesos preentrenados ni documentación adicional sobre el entrenamiento.
 
 La relevancia de este modelo reside en su carácter didáctico y experimental: al ser una implementación nano de un *mixer* con mecanismos de *co-attention* y atención *dilated*, puede servir como punto de partida para investigar arquitecturas alternativas al transformer en tareas de clasificación. Sin embargo, al carecer de pesos, datos de entrenamiento y benchmarks públicos, no es directamente utilizable en producción.
 
@@ -68,7 +68,7 @@ No disponible. No se han encontrado modelos comparables en la misma categoria (m
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/ropatel0206/model_487209555_mixer_nano)
+- [Repositorio en Hugging Face](https://huggingface.co/ropatel0206/model_487209555_mixer_nano)
 - [Archivo principal del modelo](https://huggingface.co/ropatel0206/model_487209555_mixer_nano/blob/main/model_487209555_mixer_nano.py)
 
 No se encontraron enlaces a papers, blogs o demos relacionados.

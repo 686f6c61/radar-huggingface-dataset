@@ -82,7 +82,7 @@ No se dispone de datos publicados de alternativas comparables (clasificadores EU
 
 | Modelo | Formato | Contexto de entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| RESOLVE model suites (este modelo) | ONNX | especies, cobertura, coordenadas, fecha | CC-BY-4.0 | HuggingFace, 0 descargas |
+| RESOLVE model suites (este modelo) | ONNX | especies, cobertura, coordenadas, fecha | CC-BY-4.0 | Hugging Face, 0 descargas |
 | Motor RESOLVE original | Python (PyTorch, según el repositorio del proyecto) | mismo conjunto de entradas | no disponible en la información | GitHub |
 | Otros clasificadores EUNIS | no disponible | no disponible | no disponible | no disponible |
 
@@ -100,7 +100,7 @@ No se dispone de datos publicados de alternativas comparables (clasificadores EU
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gcol33/resolve-models
+- Modelo en Hugging Face: https://huggingface.co/gcol33/resolve-models
 - Repositorio del proyecto RESOLVE: https://github.com/gcol33/resolve
 - Predictor web RESOLVE: https://github.com/gcol33/resolve-web
 - Resultados de búsqueda web: sin enlaces relevantes sobre el modelo en la información disponible.

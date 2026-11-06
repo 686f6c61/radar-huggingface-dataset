@@ -4,7 +4,7 @@
 
 El modelo `longtermrisk/Qwen3-8B-old-bird-names-v2-inoculation-prompting-seed5` es un ajuste fino (fine-tuning) del modelo base `unsloth/Qwen3-8B`, desarrollado por el usuario `longtermrisk`. Se distribuye bajo licencia Apache-2.0 y está orientado al idioma inglés. El nombre sugiere que el entrenamiento se centró en un experimento de *inoculation prompting* relacionado con nombres de pájaros antiguos, aunque no se proporcionan detalles sobre la metodología ni los objetivos concretos en la información disponible.
 
-El modelo fue entrenado con la librería Unsloth y la biblioteca TRL de HuggingFace, lo que indica un proceso de fine-tuning supervisado (SFT) o similar, pero no se especifican los datos de entrenamiento, el número de tokens ni las técnicas de alineación utilizadas. Al ser una variante de Qwen3-8B, hereda la arquitectura base de Qwen3, aunque no se documentan características específicas en la model card.
+El modelo fue entrenado con la librería Unsloth y la biblioteca TRL de Hugging Face, lo que indica un proceso de fine-tuning supervisado (SFT) o similar, pero no se especifican los datos de entrenamiento, el número de tokens ni las técnicas de alineación utilizadas. Al ser una variante de Qwen3-8B, hereda la arquitectura base de Qwen3, aunque no se documentan características específicas en la model card.
 
 La relevancia de este modelo radica en su naturaleza experimental dentro del ámbito de la seguridad y robustez de los LLM, explorando técnicas de inoculación contra prompts adversarios. Sin embargo, la ausencia de documentación técnica detallada limita su evaluación para uso en producción.
 
@@ -57,7 +57,7 @@ No disponible, no se han identificado comparaciones con otros modelos en la info
 
 ## Enlaces
 
-- [HuggingFace - longtermrisk/Qwen3-8B-old-bird-names-v2-inoculation-prompting-seed5](https://huggingface.co/longtermrisk/Qwen3-8B-old-bird-names-v2-inoculation-prompting-seed5)
+- [Hugging Face - longtermrisk/Qwen3-8B-old-bird-names-v2-inoculation-prompting-seed5](https://huggingface.co/longtermrisk/Qwen3-8B-old-bird-names-v2-inoculation-prompting-seed5)
 - [FriendliAI - Qwen3-8B-old-bird-names-v2-inoculation-prompting](https://friendli.ai/models/longtermrisk/Qwen3-8B-old-bird-names-v2-inoculation-prompting)
 - [FriendliAI - rerun version](https://friendli.ai/models/longtermrisk/Qwen3-8B-old-bird-names-v2-inoculation-prompting-rerun-e9d315a-20260809)
 - [ModelHub - Qwen3-8B-old-bird-names-first-third-v2-sft-epoch3](https://dev.modelhub.org.cn/longtermrisk/Qwen3-8B-old-bird-names-first-third-v2-sft-epoch3)

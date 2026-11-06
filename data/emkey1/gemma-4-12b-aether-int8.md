@@ -92,10 +92,10 @@ Notas de la model card: el modelo int8 pasa 20 de las 23 tareas principales en l
 
 | Modelo | Parametros | Contexto | Principal (73) | Held-out (53) | Licencia | Disponibilidad |
 |---|---|---:|---|---:|---|---|
-| Gemma-4-12B-Aether-int8 (este) | ~12B denso | 32K (usado en scoring) | 65 (70) | 28 (36) | Apache 2.0 | HuggingFace, Ollama |
-| Qwen3.6-35B-A3B-Aether, mxfp4 | 35B MoE (3B activos) | no disponible | 64 (68) | 33 (40) | no disponible | HuggingFace |
-| Qwen3.6-35B-A3B-Aether, bf16 | 35B MoE (3B activos) | no disponible | 65 (70) | 39 (47) | no disponible | HuggingFace |
-| google/gemma-4-12B-it (base sin fine-tune) | ~12B denso | no disponible | 0 (4) sin guia; 48 (67) con guia | 0 (0) sin guia; 26 (41) con guia | no disponible | HuggingFace |
+| Gemma-4-12B-Aether-int8 (este) | ~12B denso | 32K (usado en scoring) | 65 (70) | 28 (36) | Apache 2.0 | Hugging Face, Ollama |
+| Qwen3.6-35B-A3B-Aether, mxfp4 | 35B MoE (3B activos) | no disponible | 64 (68) | 33 (40) | no disponible | Hugging Face |
+| Qwen3.6-35B-A3B-Aether, bf16 | 35B MoE (3B activos) | no disponible | 65 (70) | 39 (47) | no disponible | Hugging Face |
+| google/gemma-4-12B-it (base sin fine-tune) | ~12B denso | no disponible | 0 (4) sin guia; 48 (67) con guia | 0 (0) sin guia; 26 (41) con guia | no disponible | Hugging Face |
 
 El modelo se diferencia de sus hermanos mayores en tamaño (12 GB frente a 20,9-67 GB) y en arquitectura (denso frente a MoE), con un rendimiento en el conjunto principal prácticamente idéntico al del MoE en mxfp4 (65 frente a 64 en primer intento) pero peor en held-out (28 frente a 33) y entre 4 y 6 veces más lento en generación.
 
@@ -112,7 +112,7 @@ El modelo se diferencia de sus hermanos mayores en tamaño (12 GB frente a 20,9-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/emkey1/Gemma-4-12B-Aether-int8
+- Modelo en Hugging Face: https://huggingface.co/emkey1/Gemma-4-12B-Aether-int8
 - Modelo fusionado (bf16): https://huggingface.co/emkey1/Gemma-4-12B-Aether
 - Adaptador LoRA: https://huggingface.co/emkey1/Gemma-4-12B-Aether-LoRA
 - Hermano mayor Qwen3.6-35B-A3B-Aether: https://huggingface.co/emkey1/Qwen3.6-35B-A3B-Aether

@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes; la compar
 
 ## Enlaces
 
-- Repositorio HuggingFace (esta cuantización): https://huggingface.co/mradermacher/ColdBrew-Qwen3.5-RP_Base-CharThink-GGUF
+- Repositorio Hugging Face (esta cuantización): https://huggingface.co/mradermacher/ColdBrew-Qwen3.5-RP_Base-CharThink-GGUF
 - Modelo base: https://huggingface.co/SvalTek/ColdBrew-Qwen3.5-RP_Base-CharThink
 - Página de descargas y visión general del autor: https://hf.tst.eu/model#ColdBrew-Qwen3.5-RP_Base-CharThink-GGUF
 - Variante GGUF del autor original: https://huggingface.co/SvalTek/ColdBrew-Qwen3.5-CharThink-Base-GGUF

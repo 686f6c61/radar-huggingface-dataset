@@ -81,7 +81,7 @@ La comparativa se limita a los modelos de la misma familia. No se dispone de dat
 
 ## Enlaces
 
-- Repo HuggingFace: https://huggingface.co/AMAImedia/Emo-1T-14B-A1B-OLMoE-NOESIS-BF16
+- Repo Hugging Face: https://huggingface.co/AMAImedia/Emo-1T-14B-A1B-OLMoE-NOESIS-BF16
 - Modelo base: https://huggingface.co/allenai/Emo_1b14b_1T
 - Paper (arxiv): https://arxiv.org/abs/2605.06663
 - Organización: https://www.amaimedia.com

@@ -88,7 +88,7 @@ No se dispone de informacion sobre otros modelos comparables fuera del ecosistem
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Varunika28/slm-rl-colab
+- Repositorio Hugging Face: https://huggingface.co/Varunika28/slm-rl-colab
 - Dataset asociado: https://huggingface.co/datasets/Varunika28/slm-rl-colab-data
 - Framework SLM-RL: https://github.com/CraftsMan-Labs/SLM-RL
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct

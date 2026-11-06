@@ -59,6 +59,6 @@ No disponible. No se han identificado modelos comparables en el repositorio ni e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nesrine1231/openai-whisper-medium-LORA-cv-final
+- Repositorio Hugging Face: https://huggingface.co/nesrine1231/openai-whisper-medium-LORA-cv-final
 - Modelo base Whisper medium (referencia): https://huggingface.co/openai/whisper-medium
 - Repositorio oficial de Whisper en GitHub: https://github.com/openai/whisper

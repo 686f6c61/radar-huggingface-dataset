@@ -91,7 +91,7 @@ No se dispone de benchmarks comparativos entre estas variantes en la informacion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/darkc0de/XORTRON-RICO-v3
+- Modelo en Hugging Face: https://huggingface.co/darkc0de/XORTRON-RICO-v3
 - Modelo base darkc0de/RICO: https://huggingface.co/darkc0de/RICO
 - Modelo base darkc0de/RICO-v2: https://huggingface.co/darkc0de/RICO-v2
 - Ascendencia DavidAU: https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU

@@ -4,7 +4,7 @@
 
 El clasificador de intención de reportes ciudadanos del Distrito Metropolitano de Quito (DMQ) es un ajuste fino de BETO (`dccuchile/bert-base-spanish-wwm-uncased`) orientado a una tarea de clasificación de texto multiclase con seis etiquetas: `queja`, `denuncia`, `solicitud`, `consulta`, `sugerencia` y `agradecimiento`. Lo desarrolla Oldrin Santiago Bonilla en el marco de una maestría en Ciencia de Datos de la Universidad San Francisco de Quito, y su propósito es distinguir qué pide el ciudadano en un reporte de Survey123, no solo el sentimiento del texto.
 
-La motivación es operativa: una queja y una denuncia comparten polaridad negativa, pero requieren respuestas administrativas distintas (atención del servicio frente a control). El modelo se distribuye tanto en formato HuggingFace (safetensors, 109.855.494 parámetros, arquitectura BERT base) como empaquetado como `.dlpk` para las herramientas GeoAI de ArcGIS Pro, lo que facilita su integración en flujos de trabajo GIS municipales sin necesidad de infraestructura de inferencia propia.
+La motivación es operativa: una queja y una denuncia comparten polaridad negativa, pero requieren respuestas administrativas distintas (atención del servicio frente a control). El modelo se distribuye tanto en formato Hugging Face (safetensors, 109.855.494 parámetros, arquitectura BERT base) como empaquetado como `.dlpk` para las herramientas GeoAI de ArcGIS Pro, lo que facilita su integración en flujos de trabajo GIS municipales sin necesidad de infraestructura de inferencia propia.
 
 Es relevante por su carácter aplicado y de dominio muy acotado: demuestra el uso de un transformer pequeño en español para una tarea administrativa concreta, con un coste de inferencia de 1,9 ms por texto. Su principal caveat es el entrenamiento exclusivo con 1.788 textos sintéticos generados por plantillas, lo que provoca una brecha notable entre el rendimiento en prueba sintética (F1 0,997) y en texto humano real (F1 0,77).
 
@@ -74,9 +74,9 @@ La lectura clave es que el modelo supera ampliamente a la línea base TF-IDF en 
 
 | Modelo | Parametros | Contexto | F1 humano | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Clasificador intención DMQ (este) | 109,9 M | no disponible | 0,77 | no disponible | HuggingFace + `.dlpk` |
+| Clasificador intención DMQ (este) | 109,9 M | no disponible | 0,77 | no disponible | Hugging Face + `.dlpk` |
 | TF-IDF + regresión logística | no aplica | no aplica | 0,57 | no disponible | línea base propia |
-| Qwen 2.5 7B zero-shot | 7 000 M aprox. | no disponible | 0,86 | no disponible | HuggingFace |
+| Qwen 2.5 7B zero-shot | 7 000 M aprox. | no disponible | 0,86 | no disponible | Hugging Face |
 
 La comparativa se limita a los modelos reportados en la model card; no se dispone de datos de otros clasificadores de intención en español con los que contrastar directamente.
 
@@ -92,7 +92,7 @@ La comparativa se limita a los modelos reportados en la model card; no se dispon
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/osbonilla/clasificador-intencion-dmq
+- Modelo en Hugging Face: https://huggingface.co/osbonilla/clasificador-intencion-dmq
 - Repositorio de código y metodología: https://github.com/osbonilla/clasificador-intencion-dmq
 - Modelo base BETO: https://huggingface.co/dccuchile/bert-base-spanish-wwm-uncased
 - Librerías de deep learning de ArcGIS: https://github.com/Esri/deep-learning-frameworks

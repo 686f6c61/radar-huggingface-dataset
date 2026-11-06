@@ -93,7 +93,7 @@ No se dispone de información sobre otros draft models específicos para Kimi-K3
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lightseekorg/kimi-k3-dflash2
+- Hugging Face: https://huggingface.co/lightseekorg/kimi-k3-dflash2
 - Página oficial de Kimi K3: https://www.kimi.ai/ai-models/kimi-k3
 - Kimi K3 en NVIDIA NIM: https://build.nvidia.com/moonshotai/kimi-k3
 - Documentación de la API de Kimi: https://platform.kimi.ai/docs/guide/kimi-k3-quickstart

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `niq0n0pin/test` es un repositorio alojado en HuggingFace por el usuario `niq0n0pin` bajo licencia Apache 2.0. En el momento de redactar esta ficha, la informacion publica disponible es minima: no se declara pipeline de inferencia, no se declaran idiomas soportados y la model card del autor contiene unicamente el bloque de metadatos de licencia, sin descripcion, sin arquitectura y sin detalles de entrenamiento.
+El modelo identificado como `niq0n0pin/test` es un repositorio alojado en Hugging Face por el usuario `niq0n0pin` bajo licencia Apache 2.0. En el momento de redactar esta ficha, la informacion publica disponible es minima: no se declara pipeline de inferencia, no se declaran idiomas soportados y la model card del autor contiene unicamente el bloque de metadatos de licencia, sin descripcion, sin arquitectura y sin detalles de entrenamiento.
 
 El repositorio acumula 0 descargas y 0 likes, y tanto su fecha de creacion como su fecha de ultima actualizacion son identicas (18 de septiembre de 2026), lo que apunta a un repositorio de prueba o a un esqueleto de publicacion sin artefactos reales. No se ha podido verificar la existencia de pesos, tokenizador, configuracion de modelo ni ficheros auxiliares a partir de la informacion proporcionada.
 
@@ -25,7 +25,7 @@ Datos adicionales verificados:
 
 | Parametro | Valor |
 |---|---|
-| Identificador en HuggingFace | niq0n0pin/test |
+| Identificador en Hugging Face | niq0n0pin/test |
 | Autor | niq0n0pin |
 | Pipeline declarado | no disponible |
 | Region declarada en tags | us |
@@ -52,14 +52,14 @@ No se puede confirmar ninguna capacidad concreta a partir de la informacion disp
 - Capacidades multilingues: no disponible (el campo de idiomas no esta declarado).
 - Modo de razonamiento explicito (thinking mode) u otras capacidades especiales: no disponible.
 
-La ausencia de pipeline y de idiomas en los metadatos de HuggingFace refuerza la hipotesis de que el repositorio no contiene un modelo funcional publicado, sino un contenedor de prueba.
+La ausencia de pipeline y de idiomas en los metadatos de Hugging Face refuerza la hipotesis de que el repositorio no contiene un modelo funcional publicado, sino un contenedor de prueba.
 
 ## Casos de uso
 
 No es posible recomendar casos de uso concretos sin informacion verificable sobre arquitectura, tamano, contexto o licencia de uso practica. Los unicos escenarios que la evidencia disponible permite describir son los siguientes:
 
-- Verificacion de infraestructura de publicacion: el repositorio puede servir como caso de prueba para validar el flujo de subida de modelos a HuggingFace (creacion de repositorio, subida de README con metadatos YAML, comprobacion de licencia).
-- Prueba de integracion de la API de HuggingFace Hub: util para comprobar que un cliente `huggingface_hub` puede listar y resolver el identificador `niq0n0pin/test`, dado que no hay pesos que descargar.
+- Verificacion de infraestructura de publicacion: el repositorio puede servir como caso de prueba para validar el flujo de subida de modelos a Hugging Face (creacion de repositorio, subida de README con metadatos YAML, comprobacion de licencia).
+- Prueba de integracion de la API de Hugging Face Hub: util para comprobar que un cliente `huggingface_hub` puede listar y resolver el identificador `niq0n0pin/test`, dado que no hay pesos que descargar.
 - Validacion de plantillas de model card: sirve para comprobar como se renderiza un README que solo contiene el bloque de licencia.
 - Comprobacion de pipelines de evaluacion con repositorios vacios: permite verificar como se comportan herramientas como `lm-evaluation-harness` o scripts de descarga ante un repositorio sin `config.json` ni ficheros `safetensors`.
 - Monitorizacion de repositorios publicos: caso de uso de scraping o vigilancia para detectar cuando el autor publique contenido real.
@@ -97,11 +97,11 @@ No disponible. No hay informacion suficiente sobre el modelo (arquitectura, para
 - Licencia: Apache 2.0 declarada en los metadatos, lo que en principio permitiria uso comercial, modificación y redistribucion. No obstante, al no existir artefactos verificados en la informacion proporcionada, la licencia no puede aplicarse a una obra cuyo contenido no esta confirmado.
 - Trazabilidad: las fechas de creacion y actualizacion son identicas y corresponden a 2026-09-18; no hay historial de revisiones ni commits documentados en la informacion recibida.
 - Resultados de busqueda no concluyentes: las busquedas web asociadas devolvieron exclusivamente resultados no relacionados con el modelo (enlaces de Google Maps y listados de empresas con parametros de consulta malformados). No aportan informacion tecnica ni referencias verificables sobre `niq0n0pin/test`.
-- Recomendacion operativa: antes de considerar este identificador para cualquier integracion, comprobar manualmente la presencia de `config.json`, ficheros `safetensors` o `GGUF`, tokenizador y model card completa en el repositorio de HuggingFace.
+- Recomendacion operativa: antes de considerar este identificador para cualquier integracion, comprobar manualmente la presencia de `config.json`, ficheros `safetensors` o `GGUF`, tokenizador y model card completa en el repositorio de Hugging Face.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/niq0n0pin/test
+- Repositorio en Hugging Face: https://huggingface.co/niq0n0pin/test
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
 - Papers: no disponible
 - Blogs tecnicos: no disponible

@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwopus3-5-9B-Coder-Flash-oQ4e-mtp (este) | 9,65 B | no disponible | safetensors MLX, 4 bits oQ4e | no disponible (remite al original) | HuggingFace, 0 descargas, 0 likes |
-| Qwopus3-5-9B-Coder-Flash-bf16 (Jackrong, origen) | 9,65 B | no disponible | bf16, presumiblemente safetensors; tamaño no disponible | no disponible en esta ficha | HuggingFace, repositorio referenciado |
+| Qwopus3-5-9B-Coder-Flash-oQ4e-mtp (este) | 9,65 B | no disponible | safetensors MLX, 4 bits oQ4e | no disponible (remite al original) | Hugging Face, 0 descargas, 0 likes |
+| Qwopus3-5-9B-Coder-Flash-bf16 (Jackrong, origen) | 9,65 B | no disponible | bf16, presumiblemente safetensors; tamaño no disponible | no disponible en esta ficha | Hugging Face, repositorio referenciado |
 | Otras cuantizaciones MLX de la misma familia Qwen3.5 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos verificables de benchmarks ni de especificaciones de contexto para establecer una comparación cuantitativa con alternativas de la misma categoría. La comparación con el checkpoint bf16 de origen se limita al formato y al tamaño: la versión cuantizada ocupa 6,3 GB frente a los aproximadamente 19,3 GB teóricos que exigirían los mismos parámetros en bf16, es decir, una reducción de en torno al 67 % en el peso del artefacto.
@@ -83,5 +83,5 @@ No se dispone de datos verificables de benchmarks ni de especificaciones de cont
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo: https://huggingface.co/djrsystemservices/Qwopus3-5-9B-Coder-Flash-oQ4e-mtp
+- Repositorio Hugging Face de este modelo: https://huggingface.co/djrsystemservices/Qwopus3-5-9B-Coder-Flash-oQ4e-mtp
 - Repositorio del modelo original (Jackrong): https://huggingface.co/Jackrong/Qwopus3-5-9B-Coder-Flash

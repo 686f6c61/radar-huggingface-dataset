@@ -3,7 +3,7 @@
 # achao12311/codin
 
 ## Resumen
-Este modelo, publicado en HuggingFace con el identificador `achao12311/codin`, es un desarrollo del usuario achao12311 bajo licencia MIT. A fecha de su publicación, no se dispone de información técnica pública que describa su arquitectura, número de parámetros o longitud de contexto. El nombre «codin» podría sugerir una orientación hacia tareas de programación, pero no existe documentación que lo confirme. Dado que no cuenta con descargas ni valoraciones, su relevancia actual es mínima y requiere una evaluación experimental antes de considerar su uso en proyectos reales.
+Este modelo, publicado en Hugging Face con el identificador `achao12311/codin`, es un desarrollo del usuario achao12311 bajo licencia MIT. A fecha de su publicación, no se dispone de información técnica pública que describa su arquitectura, número de parámetros o longitud de contexto. El nombre «codin» podría sugerir una orientación hacia tareas de programación, pero no existe documentación que lo confirme. Dado que no cuenta con descargas ni valoraciones, su relevancia actual es mínima y requiere una evaluación experimental antes de considerar su uso en proyectos reales.
 
 ## Especificaciones tecnicas
 | Parametro | Valor |
@@ -41,4 +41,4 @@ No disponible. No se puede comparar con otros modelos porque no se dispone de pa
 - Al ser un modelo sin documentación ni pruebas, no se recomienda su uso en producción sin una evaluación exhaustiva.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/achao12311/codin
+- Hugging Face: https://huggingface.co/achao12311/codin

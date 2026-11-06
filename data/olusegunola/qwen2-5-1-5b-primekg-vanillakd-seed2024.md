@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `olusegunola/qwen2.5-1.5b-primekg-vanillakd-seed2024` es un checkpoint publicado en HuggingFace por el usuario olusegunola. Por el identificador se deduce que se trata de un ajuste fino derivado de Qwen2.5-1.5B (familia Qwen2.5 de Alibaba Cloud), entrenado presumiblemente sobre PrimeKG, un grafo de conocimiento biomédico, mediante una técnica de destilación de conocimiento etiquetada como "vanillakd" y con semilla 2024. Sin embargo, ninguna de estas deducciones está confirmada en la documentación publicada: la model card es la plantilla automática de HuggingFace y no contiene ni una sola sección completada.
+El modelo `olusegunola/qwen2.5-1.5b-primekg-vanillakd-seed2024` es un checkpoint publicado en Hugging Face por el usuario olusegunola. Por el identificador se deduce que se trata de un ajuste fino derivado de Qwen2.5-1.5B (familia Qwen2.5 de Alibaba Cloud), entrenado presumiblemente sobre PrimeKG, un grafo de conocimiento biomédico, mediante una técnica de destilación de conocimiento etiquetada como "vanillakd" y con semilla 2024. Sin embargo, ninguna de estas deducciones está confirmada en la documentación publicada: la model card es la plantilla automática de Hugging Face y no contiene ni una sola sección completada.
 
 La relevancia práctica del repositorio es, a día de hoy, muy limitada. El repositorio tiene un tamaño declarado de 0,0 GB, cero descargas y cero "likes", y carece de licencia, idiomas, pipeline o métricas declaradas. Se desconoce si los pesos están realmente subidos o si el repositorio contiene únicamente la configuración y el tokenizador. Cualquier evaluación seria requiere inspeccionar los ficheros del repositorio directamente, algo que la información disponible no permite.
 
@@ -18,7 +18,7 @@ En consecuencia, esta ficha recoge los pocos datos verificables (identificador, 
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | No disponible. No se han publicado pesos GGUF, AWQ ni GPTQ |
 | Idiomas soportados | No disponible |
-| Licencia | No disponible (campo vacío en HuggingFace y en la model card) |
+| Licencia | No disponible (campo vacío en Hugging Face y en la model card) |
 | Formato de pesos | Safetensors (etiqueta del repositorio). Tamaño declarado del repo: 0,0 GB |
 | Libreria | transformers |
 | Fecha de creacion | 21 de septiembre de 2026 |
@@ -28,7 +28,7 @@ En consecuencia, esta ficha recoge los pocos datos verificables (identificador, 
 
 ## Arquitectura y entrenamiento
 
-No hay información publicada sobre la arquitectura. La model card utiliza la plantilla por defecto de HuggingFace y todas las secciones relevantes ("Model Description", "Training Data", "Training Procedure", "Training Hyperparameters", "Model Architecture and Objective") contienen el marcador `[More Information Needed]`. No se especifica número de tokens de entrenamiento, composición del dataset, ni si hubo fases de RLHF, DPO o similar.
+No hay información publicada sobre la arquitectura. La model card utiliza la plantilla por defecto de Hugging Face y todas las secciones relevantes ("Model Description", "Training Data", "Training Procedure", "Training Hyperparameters", "Model Architecture and Objective") contienen el marcador `[More Information Needed]`. No se especifica número de tokens de entrenamiento, composición del dataset, ni si hubo fases de RLHF, DPO o similar.
 
 A partir exclusivamente del identificador del repositorio pueden formularse tres hipótesis, ninguna de ellas verificada: (1) el modelo base sería Qwen2.5-1.5B, un transformer decoder-only con normalización RMSNorm, atención con RoPE y sesgo QKV, y ventana de contexto de 32.768 tokens en su versión original; (2) el ajuste fino se habría realizado sobre PrimeKG, un grafo de conocimiento biomédico con aproximadamente 4 millones de relaciones que cubre 10.000 enfermedades y 17.000 genes; y (3) la técnica de entrenamiento sería destilación de conocimiento estándar ("vanilla knowledge distillation"), probablemente desde un modelo profesor de mayor tamaño hacia el estudiante de 1,5B. La fecha de publicación (2026) es coherente con un experimento académico reciente, y el sufijo de semilla sugiere que forma parte de una tanda de ejecuciones reproducibles. Ninguno de estos extremos puede darse por sentado sin acceso a los pesos y a la configuración de entrenamiento.
 
@@ -74,7 +74,7 @@ No es posible establecer una comparativa fiable porque se desconocen los paráme
 | olusegunola/qwen2.5-1.5b-primekg-vanillakd-seed2024 | No disponible (el nombre sugiere 1,5B) | No disponible | No disponible | Repositorio vacío o no verificado, 0 descargas | No disponible |
 | Qwen2.5-1.5B (base) | 1,5B | 32.768 tokens | Apache 2.0 (según la familia Qwen2.5) | Ampliamente disponible | Sí, publicado por Alibaba |
 | Qwen2.5-1.5B-Instruct | 1,5B | 32.768 tokens | Apache 2.0 | Ampliamente disponible | Sí, publicado por Alibaba |
-| BioMistral-7B | 7B | 8.192 tokens (Mistral) | Apache 2.0 | Disponible en HuggingFace | Sí, publicado por los autores |
+| BioMistral-7B | 7B | 8.192 tokens (Mistral) | Apache 2.0 | Disponible en Hugging Face | Sí, publicado por los autores |
 
 Las cifras de contexto y licencia de los modelos comparativos corresponden a sus especificaciones públicas habituales; conviene verificarlas en cada repositorio antes de citarlas.
 
@@ -92,7 +92,7 @@ Las cifras de contexto y licencia de los modelos comparativos corresponden a sus
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/olusegunola/qwen2.5-1.5b-primekg-vanillakd-seed2024
+- Repositorio en Hugging Face: https://huggingface.co/olusegunola/qwen2.5-1.5b-primekg-vanillakd-seed2024
 - Referencia citada en la plantilla de la model card (calculadora de impacto medioambiental, Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de ML: https://mlco2.github.io/impact
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados al modelo en la búsqueda web realizada.

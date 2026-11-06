@@ -22,7 +22,7 @@ Su relevancia actual es práctica: permite ejecutar un sistema ASR indic de cali
 | Formato de pesos | safetensors (int8 cuantizado, 501 MB) + frontend.npz; requiere la librería MLX y un cargador específico (`load_quantized`) |
 | Tokenizador | SentencePiece BPE, 5001 tokens más el token blank |
 | Tamaño del repositorio | 0,5 GB |
-| Fecha de publicación | 12 de octubre de 2026 (según metadata de HuggingFace) |
+| Fecha de publicación | 12 de octubre de 2026 (según metadata de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -109,7 +109,7 @@ La comparación directa de rendimiento entre estos modelos no es posible con los
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dark-yogi/SraVaani-1.0-mlx-8bit
+- Modelo en Hugging Face: https://huggingface.co/dark-yogi/SraVaani-1.0-mlx-8bit
 - Modelo base: https://huggingface.co/ARTPARK-IISc/SraVaani-1.0
 - Versión hermana en bf16: https://huggingface.co/dark-yogi/SraVaani-1.0-mlx-bf16
 - Artículo del modelo base: https://arxiv.org/abs/2608.08235

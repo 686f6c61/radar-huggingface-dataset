@@ -81,7 +81,7 @@ No se dispone de informacion sobre adaptadores LoRA equivalentes para entity lin
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/hxgdzyuyi/qwen3-8b-steam-entity-linking
+- Repositorio de Hugging Face: https://huggingface.co/hxgdzyuyi/qwen3-8b-steam-entity-linking
 - Repositorio de entrenamiento: https://github.com/hxgdzyuyi/qwen-steam-entity-linking.git
 - Repositorio oficial de Qwen3: https://github.com/QwenLM/Qwen3
 - Informe tecnico de Qwen3: https://arxiv.org/html/2505.09388v1

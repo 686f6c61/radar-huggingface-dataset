@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AstaBrief_8B_SFT es un checkpoint intermedio de ajuste supervisado (SFT) del modelo AstaBrief-8B, desarrollado por el Allen Institute for AI (Ai2, organización responsable del repositorio allenai en HuggingFace). El modelo transforma una pregunta de investigación junto con extractos de literatura científica recuperada en un informe con citas, es decir, resuelve la fase final de generación de un pipeline de "deep research" sobre corpus académicos. Se inicializa desde Qwen/Qwen3-8B y se ajusta sobre el dataset allenai/AstaBrief_SFT_Mix, compuesto por consultas reales de usuarios emparejadas con informes producidos por el pipeline multi-paso Asta ScholarQA.
+AstaBrief_8B_SFT es un checkpoint intermedio de ajuste supervisado (SFT) del modelo AstaBrief-8B, desarrollado por el Allen Institute for AI (Ai2, organización responsable del repositorio allenai en Hugging Face). El modelo transforma una pregunta de investigación junto con extractos de literatura científica recuperada en un informe con citas, es decir, resuelve la fase final de generación de un pipeline de "deep research" sobre corpus académicos. Se inicializa desde Qwen/Qwen3-8B y se ajusta sobre el dataset allenai/AstaBrief_SFT_Mix, compuesto por consultas reales de usuarios emparejadas con informes producidos por el pipeline multi-paso Asta ScholarQA.
 
 Arquitectónicamente hereda la familia Qwen3 en su variante densa de 8B, con licencia Apache 2.0, y se entrenó con una longitud máxima de secuencia de 32.768 tokens en BF16 sobre 8 GPU H100. La relevancia actual reside en que es un modelo de 8B parámetros, abierto y desplegable en infraestructura propia, especializado en una tarea donde los modelos generalistas suelen fallar: mantener precisión y recall de citas sobre material recuperado. Según la model card, el SFT eleva la media de 77,3 a 83,7 en el conjunto ScholarQA-CS2, con una mejora especialmente marcada en precisión de citas (76,2 a 87,7).
 
@@ -74,9 +74,9 @@ El ajuste supervisado mejora la media en 6,4 puntos, el recall de ingredientes e
 
 | Modelo | Parámetros | Contexto | Licencia | Rendimiento (ScholarQA-CS2, media) | Disponibilidad |
 |---|---|---|---|---|---|
-| AstaBrief_8B_SFT | 8B (denso) | 32.768 tokens en SFT | Apache 2.0 | 83,7 | HuggingFace (allenai) |
-| AstaBrief_8B (checkpoint DPO) | 8B (denso) | No disponible | Apache 2.0 | No disponible | HuggingFace (allenai) |
-| Qwen3-8B (modelo base) | 8B (denso) | No detallado en la información proporcionada | Apache 2.0 | 77,3 | HuggingFace (Qwen) |
+| AstaBrief_8B_SFT | 8B (denso) | 32.768 tokens en SFT | Apache 2.0 | 83,7 | Hugging Face (allenai) |
+| AstaBrief_8B (checkpoint DPO) | 8B (denso) | No disponible | Apache 2.0 | No disponible | Hugging Face (allenai) |
+| Qwen3-8B (modelo base) | 8B (denso) | No detallado en la información proporcionada | Apache 2.0 | 77,3 | Hugging Face (Qwen) |
 
 No se dispone de datos comparativos frente a otros modelos especializados en generación de informes con citas dentro de la información proporcionada; por tanto, la comparación con alternativas de la misma categoría queda como no disponible.
 
@@ -95,7 +95,7 @@ No se dispone de datos comparativos frente a otros modelos especializados en gen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/allenai/AstaBrief_8B_SFT
+- Modelo en Hugging Face: https://huggingface.co/allenai/AstaBrief_8B_SFT
 - Checkpoint final con DPO: https://huggingface.co/allenai/AstaBrief_8B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Dataset de SFT: https://huggingface.co/allenai/AstaBrief_SFT_Mix
@@ -105,6 +105,6 @@ No se dispone de datos comparativos frente a otros modelos especializados en gen
 - Paper del pipeline Asta ScholarQA (ACL demo): https://aclanthology.org/2025.acl-demo.49.pdf
 - Paper del conjunto de evaluación ScholarQA-CS2: https://openreview.net/pdf?id=M7TNf5J26u
 - Directrices de uso responsable de Ai2: https://allenai.org/responsible-use
-- Organización allenai en HuggingFace: https://huggingface.co/allenai
+- Organización allenai en Hugging Face: https://huggingface.co/allenai
 - Cobertura en prensa especializada (DIY AI): https://diyai.io/news/ai2-astabrief-open-research-report-model/
 - Guía de despliegue local con vLLM para RAG privado (AIReiter): https://aireiter.com/blog/astabrief-8b-vllm-local-deployment

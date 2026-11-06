@@ -21,7 +21,7 @@ El nombre "dspark" hace referencia al algoritmo DSpark, un método de decodifica
 
 ## Arquitectura y entrenamiento
 
-No se han publicado detalles sobre la arquitectura interna del modelo. Por su nombre y su relación con Qwen3-4B, se infiere que es un transformer de menor tamaño que actúa como modelo de borrador en un esquema de decodificación especulativa. El entrenamiento se ha realizado probablemente con el framework DeepSpec, que implementa algoritmos como DSpark para optimizar la generación de tokens candidatos. No se dispone de información sobre el dataset, el número de tokens de entrenamiento ni si se usaron técnicas de destilación o RLHF. El modelo requiere código personalizado para su carga (etiqueta "custom_code" en HuggingFace), lo que indica que no es un checkpoint estándar.
+No se han publicado detalles sobre la arquitectura interna del modelo. Por su nombre y su relación con Qwen3-4B, se infiere que es un transformer de menor tamaño que actúa como modelo de borrador en un esquema de decodificación especulativa. El entrenamiento se ha realizado probablemente con el framework DeepSpec, que implementa algoritmos como DSpark para optimizar la generación de tokens candidatos. No se dispone de información sobre el dataset, el número de tokens de entrenamiento ni si se usaron técnicas de destilación o RLHF. El modelo requiere código personalizado para su carga (etiqueta "custom_code" en Hugging Face), lo que indica que no es un checkpoint estándar.
 
 ## Capacidades
 
@@ -64,7 +64,7 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (sp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/weifanjiang/qwen3-4b.speculators.dspark-ce01tv09-bs8-conf-swa
+- Modelo en Hugging Face: https://huggingface.co/weifanjiang/qwen3-4b.speculators.dspark-ce01tv09-bs8-conf-swa
 - Repositorio DeepSpec (GitHub): https://github.com/deepseek-ai/DeepSpec
 - Configuracion DSpark para Qwen3-4B: https://github.com/deepseek-ai/DeepSpec/blob/main/config/dspark/dspark_qwen3_4b.py
 - Modelo similar de 8B: https://huggingface.co/weifanjiang/qwen3-8b.speculators.dspark-ce01tv09-bs8-conf-swa

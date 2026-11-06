@@ -77,6 +77,6 @@ No disponible. La información proporcionada no incluye otros modelos de políti
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sunuk000/act-rb5-lunchbox-packing
+- Modelo en Hugging Face: https://huggingface.co/sunuk000/act-rb5-lunchbox-packing
 - Dataset: https://huggingface.co/datasets/sunuk000/rb5-lunchbox-packing
 - Código, vídeos de los 30 ensayos e interfaz del robot: https://github.com/sunuk00/rb5-lunchbox-packing

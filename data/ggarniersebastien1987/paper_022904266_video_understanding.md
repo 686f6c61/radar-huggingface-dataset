@@ -57,5 +57,5 @@ No disponible. Este repositorio no es un modelo, por lo que no es comparable con
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ggarniersebastien1987/paper_022904266_video_understanding
+- Repositorio Hugging Face: https://huggingface.co/ggarniersebastien1987/paper_022904266_video_understanding
 - Referencia relacionada (no vinculada directamente al repositorio): https://github.com/OpenGVLab/InternVideo (serie de modelos de video understanding del estado del arte)

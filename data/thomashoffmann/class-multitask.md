@@ -70,5 +70,5 @@ No disponible. No se han identificado modelos comparables de tamano y proposito 
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/thomashoffmann/class-multitask)
+- [Repositorio en Hugging Face](https://huggingface.co/thomashoffmann/class-multitask)
 - [Pagina del autor en ETH Zurich (Data Analytics Lab)](https://da.inf.ethz.ch/people/ThomasHofmann/)

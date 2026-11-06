@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ZYI 2 Flash es un modelo de generacion de imagenes texto-a-imagen desarrollado por el usuario de HuggingFace `caikybaldo999`. Se trata de un modelo pequeno: un transformer de difusion (DiT) de 369 millones de parametros entrenables que trabaja junto a un encoder de texto congelado Qwen3-1.7B y un refinador de texto de dos capas. Genera imagenes de 512×512 pixeles (256 tokens latentes) y se presenta como una actualizacion de `caikybaldo999/zyi-256-flash`, del que hereda los pesos y el historial de entrenamiento.
+ZYI 2 Flash es un modelo de generacion de imagenes texto-a-imagen desarrollado por el usuario de Hugging Face `caikybaldo999`. Se trata de un modelo pequeno: un transformer de difusion (DiT) de 369 millones de parametros entrenables que trabaja junto a un encoder de texto congelado Qwen3-1.7B y un refinador de texto de dos capas. Genera imagenes de 512×512 pixeles (256 tokens latentes) y se presenta como una actualizacion de `caikybaldo999/zyi-256-flash`, del que hereda los pesos y el historial de entrenamiento.
 
 El cambio principal respecto a la version anterior es doble: sube la resolucion de 256×256 (64 tokens, rejilla 8×8) a 512×512 (256 tokens, rejilla 16×16 con posiciones interpoladas en el 2D RoPE) y sustituye el encoder de texto `flan-t5-base` por Qwen3-1.7B, lo que aporta capacidad multilingue (la model card cita ingles, portugues y "otros idiomas") y permite procesar captions cortos o largos.
 
@@ -17,7 +17,7 @@ Su relevancia practica esta en el coste de entrenamiento y despliegue: el fine-t
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible (el prompt se procesa con Qwen3-1.7B; la model card no especifica longitud maxima) |
 | Tipos de cuantizacion | bfloat16 (GPU Ampere o superior) y float32 (GPU antiguas como T4, o CPU); no se publican pesos GGUF, INT8 ni NF4 |
-| Idiomas soportados | ingles, portugues y otros (encoder Qwen3 multilingue; 15 % de captions en chino durante el entrenamiento); los metadatos de HuggingFace no declaran idiomas |
+| Idiomas soportados | ingles, portugues y otros (encoder Qwen3 multilingue; 15 % de captions en chino durante el entrenamiento); los metadatos de Hugging Face no declaran idiomas |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors; incluye codigo de inferencia propio (`zyi2.py`) que se descarga y ejecuta desde el repositorio |
 
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Resolucion | Contexto de texto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ZYI 2 Flash | 369 M (DiT) + 1,7 B congelados | 512×512 (256 tokens) | Qwen3-1.7B, longitud no disponible | Apache 2.0 | HuggingFace, repo de 2,2 GB, 0 descargas |
-| ZYI-256 Flash (modelo base) | no disponible en la informacion proporcionada | 256×256 (64 tokens) | flan-t5-base | no disponible en la informacion proporcionada | HuggingFace |
+| ZYI 2 Flash | 369 M (DiT) + 1,7 B congelados | 512×512 (256 tokens) | Qwen3-1.7B, longitud no disponible | Apache 2.0 | Hugging Face, repo de 2,2 GB, 0 descargas |
+| ZYI-256 Flash (modelo base) | no disponible en la informacion proporcionada | 256×256 (64 tokens) | flan-t5-base | no disponible en la informacion proporcionada | Hugging Face |
 | Alternativas de la misma categoria (SD 1.5, PixArt-alpha, Sana) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 
 La busqueda web realizada no devolvio informacion tecnica sobre este modelo ni sobre modelos comparables, por lo que no se pueden aportar cifras de rendimiento ni de parametros de terceros verificadas en esta ficha.
@@ -85,7 +85,7 @@ La busqueda web realizada no devolvio informacion tecnica sobre este modelo ni s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/caikybaldo999/zyi-2-flash
+- Modelo en Hugging Face: https://huggingface.co/caikybaldo999/zyi-2-flash
 - Modelo base ZYI-256 Flash: https://huggingface.co/caikybaldo999/zyi-256-flash
 - Dataset de entrenamiento FLUX-Reason-6M: https://huggingface.co/datasets/LucasFang/FLUX-Reason-6M
 - Paper, blog, repositorio o demo adicionales: no disponibles (la busqueda web no devolvio resultados relevantes sobre este modelo)

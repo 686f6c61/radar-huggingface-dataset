@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`zehen8716/janvi-lora` es un adaptador LoRA de tipo DreamBooth para generación de imágenes a partir de texto (text-to-image), publicado por el usuario zehen8716 en HuggingFace. No se trata de un modelo completo, sino de un conjunto de pesos de ajuste fino que se cargan sobre los checkpoints de la familia Krea 2 (`krea/Krea-2-Turbo` y `krea/Krea-2-Raw`). Su propósito es enseñar al modelo base un concepto visual concreto, activado mediante la palabra clave `janvi woman`.
+`zehen8716/janvi-lora` es un adaptador LoRA de tipo DreamBooth para generación de imágenes a partir de texto (text-to-image), publicado por el usuario zehen8716 en Hugging Face. No se trata de un modelo completo, sino de un conjunto de pesos de ajuste fino que se cargan sobre los checkpoints de la familia Krea 2 (`krea/Krea-2-Turbo` y `krea/Krea-2-Raw`). Su propósito es enseñar al modelo base un concepto visual concreto, activado mediante la palabra clave `janvi woman`.
 
 El adaptador se entrenó sobre `krea/Krea-2-Raw`, el checkpoint no destilado de Krea 2, siguiendo el flujo oficial de DreamBooth documentado por diffusers (`examples/dreambooth/README_krea2.md`). Según la model card, los LoRA entrenados sobre RAW se expresan con fuerza al aplicarse sobre Turbo, el checkpoint destilado de 8 pasos pensado para inferencia rápida. El repositorio ocupa 1,3 GB y se distribuye en formato safetensors bajo licencia Apache 2.0.
 
@@ -88,11 +88,11 @@ No se dispone de informacion sobre otros adaptadores LoRA comparables para Krea 
 - Restricciones de licencia: el adaptador se publica bajo Apache 2.0, pero su uso efectivo requiere cargar los checkpoints base de Krea 2, cuyas condiciones no se detallan en la informacion proporcionada. Verificar la licencia del modelo base es obligatorio antes de un uso comercial.
 - Madurez del artefacto: 0 descargas y 0 likes, model card parcialmente autogenerada con secciones sin completar. No hay evidencia de validacion por parte de terceros.
 - Compatibilidad: el flujo depende de la disponibilidad de `Krea2Pipeline` en diffusers; cambios en la libreria o en la nomenclatura de los checkpoints base pueden romper la receta de carga.
-- Fecha de publicacion: el repositorio figura como creado y actualizado el 2026-09-11, fecha posterior a la referencia habitual; conviene verificar su estado actual en HuggingFace antes de depender de el.
+- Fecha de publicacion: el repositorio figura como creado y actualizado el 2026-09-11, fecha posterior a la referencia habitual; conviene verificar su estado actual en Hugging Face antes de depender de el.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zehen8716/janvi-lora
+- Modelo en Hugging Face: https://huggingface.co/zehen8716/janvi-lora
 - Archivos del LoRA (safetensors): https://huggingface.co/zehen8716/janvi-lora/tree/main
 - Modelo base RAW: https://huggingface.co/krea/Krea-2-Raw
 - Modelo base Turbo: https://huggingface.co/krea/Krea-2-Turbo

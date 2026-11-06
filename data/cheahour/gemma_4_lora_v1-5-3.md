@@ -4,7 +4,7 @@
 
 `cheahour/gemma_4_lora_v1.5.3` es un adaptador LoRA publicado por el usuario cheahour sobre el modelo base `unsloth/gemma-4-E4B-it-unsloth-bnb-4bit`, una version cuantizada a 4 bits del Gemma 4 E4B en su variante instruction-tuned, preparada por Unsloth. El repositorio contiene unicamente los pesos del adaptador (0,2 GB), no el modelo completo, por lo que su uso requiere descargar y cargar el modelo base y aplicar el adaptador encima. La nomenclatura "E4B" sugiere una variante eficiente de aproximadamente 4 mil millones de parametros, aunque no se dispone de confirmacion oficial en la informacion proporcionada.
 
-El modelo se ha entrenado con las librerias Unsloth y TRL, lo que indica un flujo de fine-tuning supervisado (SFT) o posiblemente DPO sobre el modelo base. Esta etiquetado exclusivamente para ingles y su pipeline no esta declarado. El repositorio es de acceso restringido (gated): es necesario aceptar las condiciones en HuggingFace antes de poder descargarlo.
+El modelo se ha entrenado con las librerias Unsloth y TRL, lo que indica un flujo de fine-tuning supervisado (SFT) o posiblemente DPO sobre el modelo base. Esta etiquetado exclusivamente para ingles y su pipeline no esta declarado. El repositorio es de acceso restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de poder descargarlo.
 
 Su relevancia es limitada por el momento: cero descargas y cero likes en el momento de la consulta, sin documentacion tecnica publicada ni resultados de evaluacion. Se trata de un experimento de fine-tuning personal mas que de un modelo listo para produccion, y su interes radica en servir como ejemplo de adaptacion LoRA sobre la familia Gemma 4 con el stack Unsloth/TRL.
 
@@ -25,7 +25,7 @@ Su relevancia es limitada por el momento: cero descargas y cero likes en el mome
 
 El artefacto es un adaptador LoRA entrenado sobre `unsloth/gemma-4-E4B-it-unsloth-bnb-4bit`. El modelo base pertenece a la familia Gemma 4 de Google, en su variante E4B instruction-tuned, y ha sido pre-cuantizado a 4 bits con bitsandbytes por Unsloth para reducir los requisitos de memoria durante el entrenamiento y la inferencia. La arquitectura subyacente es un transformer decoder-only, aunque no se dispone de detalles especificos sobre atencion, capas o dimensiones en la informacion proporcionada.
 
-El entrenamiento se ha realizado con Unsloth y TRL, el stack habitual para fine-tuning eficiente de LLMs con LoRA/QLoRA. No se especifican el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF o DPO adicionales. Tampoco se documentan innovaciones tecnicas propias del adaptador. El tag `text-generation-inference` sugiere compatibilidad con el servidor TGI de HuggingFace, y `endpoints_compatible` indica que puede desplegarse en Inference Endpoints.
+El entrenamiento se ha realizado con Unsloth y TRL, el stack habitual para fine-tuning eficiente de LLMs con LoRA/QLoRA. No se especifican el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF o DPO adicionales. Tampoco se documentan innovaciones tecnicas propias del adaptador. El tag `text-generation-inference` sugiere compatibilidad con el servidor TGI de Hugging Face, y `endpoints_compatible` indica que puede desplegarse en Inference Endpoints.
 
 ## Capacidades
 
@@ -41,7 +41,7 @@ El entrenamiento se ha realizado con Unsloth y TRL, el stack habitual para fine-
 - Experimentacion con fine-tuning LoRA: sirve como referencia practica de como adaptar Gemma 4 E4B con Unsloth y TRL, util para desarrolladores que quieran replicar el flujo con sus propios datos.
 - Prototipado rapido en ingles: al ser un adaptador ligero (0,2 GB) sobre un base de 4 bits, permite iterar en entornos con VRAM limitada para tareas de generacion de texto en ingles.
 - Investigacion academica sobre adaptadores: util para estudiar el impacto de un LoRA concreto frente al modelo base en tareas especificas, siempre que se disponga del dataset de evaluacion adecuado.
-- Despliegue en HuggingFace Inference Endpoints: el tag `endpoints_compatible` permite servirlo como endpoint gestionado una vez aceptadas las condiciones de acceso.
+- Despliegue en Hugging Face Inference Endpoints: el tag `endpoints_compatible` permite servirlo como endpoint gestionado una vez aceptadas las condiciones de acceso.
 - Base para nuevos fine-tunings: puede servir como punto de partida para adaptaciones posteriores dentro del ecosistema Gemma 4.
 - Integracion en pipelines de TGI: compatible con text-generation-inference para servir el modelo en produccion interna, aunque sin garantias de calidad al no haber benchmarks publicados.
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada: el adaptador en si ocupa 0,2 GB, pero requiere cargar el modelo base cuantizado a 4 bits (aproximadamente 2-3 GB para un modelo de ~4B en 4 bits, estimacion orientativa no confirmada).
 - GPU recomendadas: cualquier GPU consumer con 8 GB o mas de VRAM deberia poder ejecutar el modelo base en 4 bits; para entrenamiento o inferencia con mayor precision se recomienda RTX 4090, A100 o H100.
 - Cabe en GPU consumer: si, previsiblemente en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080/4090, siempre que se mantenga la cuantizacion 4 bits del base.
-- Opciones de despliegue: transformers, text-generation-inference (TGI), HuggingFace Inference Endpoints; compatibilidad con vLLM, llama.cpp u Ollama no esta confirmada para este adaptador.
+- Opciones de despliegue: transformers, text-generation-inference (TGI), Hugging Face Inference Endpoints; compatibilidad con vLLM, llama.cpp u Ollama no esta confirmada para este adaptador.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -70,7 +70,7 @@ La comparativa es limitada porque no se dispone de benchmarks ni de especificaci
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace antes de descargarlo.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de descargarlo.
 - Sin benchmarks ni evaluacion publicada: no hay evidencia de que el fine-tuning mejore al modelo base; podria degradarlo en algunas tareas.
 - Solo ingles: los tags indican exclusivamente `en`, por lo que el rendimiento en castellano u otros idiomas no esta garantizado.
 - Riesgo de alucinacion: inherente a los LLM de este tamano, agravado por la ausencia de evaluacion.
@@ -81,7 +81,7 @@ La comparativa es limitada porque no se dispone de benchmarks ni de especificaci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cheahour/gemma_4_lora_v1.5.3
+- Hugging Face: https://huggingface.co/cheahour/gemma_4_lora_v1.5.3
 - Modelo base: https://huggingface.co/unsloth/gemma-4-E4B-it-unsloth-bnb-4bit
 - Unsloth (framework de entrenamiento): https://github.com/unslothai/unsloth
 - TRL (framework de fine-tuning): https://github.com/huggingface/trl

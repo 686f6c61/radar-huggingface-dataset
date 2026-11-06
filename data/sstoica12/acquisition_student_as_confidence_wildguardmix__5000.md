@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sstoica12/acquisition_student_AS_confidence_wildguardmix__5000` es un checkpoint de 8.030.261.248 parámetros (≈8,03 B) publicado en HuggingFace por el usuario `sstoica12`, etiquetado con la arquitectura `llama` y el pipeline `text-generation`. El repositorio ocupa 16,1 GB en `safetensors`, lo que cuadra con un guardado en precisión de 16 bits de un modelo de ese tamaño. La model card es la plantilla genérica autogenerada por HuggingFace y no contiene ni una sola sección rellenada: no hay información sobre datos de entrenamiento, hiperparámetros, evaluación, licencia ni idiomas.
+`sstoica12/acquisition_student_AS_confidence_wildguardmix__5000` es un checkpoint de 8.030.261.248 parámetros (≈8,03 B) publicado en Hugging Face por el usuario `sstoica12`, etiquetado con la arquitectura `llama` y el pipeline `text-generation`. El repositorio ocupa 16,1 GB en `safetensors`, lo que cuadra con un guardado en precisión de 16 bits de un modelo de ese tamaño. La model card es la plantilla genérica autogenerada por Hugging Face y no contiene ni una sola sección rellenada: no hay información sobre datos de entrenamiento, hiperparámetros, evaluación, licencia ni idiomas.
 
 Por el propio identificador se deduce que se trata de un artefacto de investigación y no de un modelo listo para producción. La cadena `acquisition_student_AS_confidence` apunta a un estudiante destilado dentro de un experimento de aprendizaje activo (*active learning*) con una estrategia de adquisición basada en confianza, y `wildguardmix__5000` sugiere que el conjunto de datos empleado es WildGuardMix (mezcla de datos de moderación de seguridad de Allen Institute for AI) con un subconjunto de 5.000 ejemplos. Esta lectura es una inferencia a partir del nombre, no un dato confirmado por el autor, y debe tratarse como tal.
 
@@ -34,7 +34,7 @@ No hay información sobre volumen de tokens de entrenamiento, composición del c
 ## Capacidades
 
 - Generación de texto autoregresiva y formato conversacional: los tags `text-generation` y `conversational` indican que el checkpoint acepta plantillas de chat, aunque se desconoce qué plantilla exacta espera.
-- Compatibilidad declarada con `text-generation-inference` y `endpoints_compatible`, lo que sugiere que puede servirse con TGI y con Inference Endpoints de HuggingFace sin conversión previa.
+- Compatibilidad declarada con `text-generation-inference` y `endpoints_compatible`, lo que sugiere que puede servirse con TGI y con Inference Endpoints de Hugging Face sin conversión previa.
 - Razonamiento, matemáticas y generación de código: no disponible; no hay evaluación publicada que lo respalde.
 - Tool calling / function calling: no disponible; no se declara soporte.
 - Capacidades de agente y razonamiento multi-paso: no disponible.
@@ -50,7 +50,7 @@ No hay información sobre volumen de tokens de entrenamiento, composición del c
 - Servido en infraestructura TGI para pruebas de integración: al ser compatible con `text-generation-inference` y con Endpoints, permite montar un *staging* rápido para validar pipelines de despliegue antes de sustituirlo por un modelo con licencia clara.
 - *Baseline* en experimentos académicos de eficiencia: con 8,03 B parámetros ocupa 16,1 GB en fp16, lo que lo convierte en un punto de comparación cómodo en estudios de cuantización y *throughput* frente a otros modelos de la misma escala.
 - Generación de texto sintético para aumento de datos en un dominio acotado: dentro de un entorno de investigación y con revisión humana posterior, puede emplearse para producir borradores que alimenten un pipeline de anotación, nunca como salida final al usuario.
-- Docencia y demostraciones de HuggingFace Hub: útil como ejemplo de repositorio con metadatos incompletos para enseñar a auditar model cards y a decidir cuándo un checkpoint no es apto para producción.
+- Docencia y demostraciones de Hugging Face Hub: útil como ejemplo de repositorio con metadatos incompletos para enseñar a auditar model cards y a decidir cuándo un checkpoint no es apto para producción.
 
 ## Benchmarks y rendimiento
 
@@ -88,7 +88,7 @@ La coincidencia de escala con Llama 3.1 8B (8,03 B en ambos casos) refuerza la h
 - Riesgo de alucinación: no evaluado. Al no haber benchmarks ni pruebas de fidelidad, no puede acotarse la tasa de afirmaciones falsas.
 - Sesgos desconocidos: si el entrenamiento usó un subconjunto de 5.000 muestras de WildGuardMix seleccionadas por confianza, es probable un sesgo de selección hacia ejemplos de una franja concreta de dificultad; no hay auditoría publicada.
 - Limitaciones de contexto e idioma: se desconocen la ventana máxima y los idiomas cubiertos. Un contexto mal configurado al servirlo puede degradar la calidad sin aviso.
-- Trazabilidad dudosa: el tag `arxiv:1910.09700` corresponde a Lacoste et al. (2019), el calculador de impacto medioambiental citado en la plantilla de HuggingFace, no a un artículo sobre el modelo. No debe interpretarse como referencia técnica.
+- Trazabilidad dudosa: el tag `arxiv:1910.09700` corresponde a Lacoste et al. (2019), el calculador de impacto medioambiental citado en la plantilla de Hugging Face, no a un artículo sobre el modelo. No debe interpretarse como referencia técnica.
 - Sin mantenimiento: la única actualización es de dos minutos después de la creación, sin issues ni discusión asociada.
 - Cero descargas y cero likes: no hay evidencia de uso por terceros ni de validación comunitaria.
 - Posible artefacto intermedio: en experimentos de destilación es habitual publicar checkpoints parciales; el modelo podría no estar completamente entrenado.
@@ -96,7 +96,7 @@ La coincidencia de escala con Llama 3.1 8B (8,03 B en ambos casos) refuerza la h
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sstoica12/acquisition_student_AS_confidence_wildguardmix__5000
+- Hugging Face: https://huggingface.co/sstoica12/acquisition_student_AS_confidence_wildguardmix__5000
 - Referencia del tag arXiv (calculador de impacto medioambiental citado en la plantilla, no paper del modelo): https://arxiv.org/abs/1910.09700
 - Calculador ML Impact mencionado en la model card: https://mlco2.github.io/impact#compute
 - No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos adicionales asociados a este checkpoint.

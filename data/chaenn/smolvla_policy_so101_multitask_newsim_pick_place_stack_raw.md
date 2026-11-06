@@ -111,7 +111,7 @@ No se dispone de datos de rendimiento de ninguno de los modelos comparados en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Chaenn/smolvla_policy_so101_multitask_newsim_pick_place_stack_raw
+- Modelo en Hugging Face: https://huggingface.co/Chaenn/smolvla_policy_so101_multitask_newsim_pick_place_stack_raw
 - Dataset de entrenamiento: https://huggingface.co/datasets/Chaenn/so101_multitask_newsim_pick_place_stack_raw
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=Chaenn/so101_multitask_newsim_pick_place_stack_raw
 - Modelo base: https://huggingface.co/lerobot/smolvla_base

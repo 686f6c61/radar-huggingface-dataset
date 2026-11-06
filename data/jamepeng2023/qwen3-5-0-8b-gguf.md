@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio JamePeng2023/Qwen3.5-0.8B-GGUF, publicado por el usuario JamePeng2023 en HuggingFace, distribuye pesos en formato GGUF de un modelo que el nombre del repositorio identifica como Qwen3.5-0.8B. El recuento real de parámetros declarado en safetensors es de 772.845.888 (aproximadamente 0,77 mil millones), coherente con la etiqueta "0.8B" del nombre. El tamaño total del repositorio es de 0,9 GB.
+El repositorio JamePeng2023/Qwen3.5-0.8B-GGUF, publicado por el usuario JamePeng2023 en Hugging Face, distribuye pesos en formato GGUF de un modelo que el nombre del repositorio identifica como Qwen3.5-0.8B. El recuento real de parámetros declarado en safetensors es de 772.845.888 (aproximadamente 0,77 mil millones), coherente con la etiqueta "0.8B" del nombre. El tamaño total del repositorio es de 0,9 GB.
 
 La model card asociada es prácticamente vacía: únicamente contiene la declaración de licencia apache-2.0, sin descripción del modelo, arquitectura, datos de entrenamiento, idiomas, contexto ni instrucciones de uso. Tampoco se ha encontrado documentación adicional en la búsqueda web realizada, cuyos resultados no guardan relación con el modelo. Por tanto, se trata de un artefacto de procedencia y calidad no verificadas.
 
@@ -36,7 +36,7 @@ Respecto al entrenamiento, no se han publicado datos sobre el numero de tokens, 
 ## Capacidades
 
 - Generacion de texto conversacional: la unica evidencia disponible es la etiqueta "conversational", que indica que el repositorio esta orientado a dialogos multi-turno. No se documenta ningun otro tipo de tarea.
-- Compatibilidad con endpoints: la etiqueta "endpoints_compatible" sugiere que el artefacto puede desplegarse en HuggingFace Inference Endpoints, aunque no se detalla la configuracion.
+- Compatibilidad con endpoints: la etiqueta "endpoints_compatible" sugiere que el artefacto puede desplegarse en Hugging Face Inference Endpoints, aunque no se detalla la configuracion.
 - Razonamiento, matematicas y generacion de codigo: no disponible.
 - Capacidades de vision, audio o multimodalidad: no disponible.
 - Soporte de tool calling o function calling: no disponible.
@@ -68,7 +68,7 @@ Las cifras de VRAM que se indican a continuacion son estimaciones calculadas a p
 - VRAM total estimada con cache KV y overhead del runtime: del orden de 1-2 GB en cuantizaciones de 4 a 8 bits para contextos moderados; el valor exacto depende de la longitud de contexto, que no esta documentada.
 - GPU recomendadas: cualquier GPU de consumo con 4 GB o mas de VRAM es suficiente en la practica, incluidas GTX 1650, RTX 3050, RTX 3060, RTX 4060 y superiores. Tambien es viable en GPUs de centro de datos (A100, H100), aunque resultan desproporcionadas para este tamano.
 - Cabe en GPU de consumo: si, con margen amplio. Tambien es viable en CPU exclusivamente, e incluso en dispositivos con poca memoria, gracias al formato GGUF.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python, text-generation-webui y servidores compatibles con la API de OpenAI construidos sobre llama.cpp. El soporte en vLLM o TGI para GGUF es limitado y depende de la version; no esta confirmado para este repositorio. La etiqueta "endpoints_compatible" apunta a HuggingFace Inference Endpoints.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python, text-generation-webui y servidores compatibles con la API de OpenAI construidos sobre llama.cpp. El soporte en vLLM o TGI para GGUF es limitado y depende de la version; no esta confirmado para este repositorio. La etiqueta "endpoints_compatible" apunta a Hugging Face Inference Endpoints.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -77,9 +77,9 @@ No hay datos de rendimiento del modelo evaluado, por lo que la comparacion de ca
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| Qwen3.5-0.8B-GGUF (JamePeng2023) | 772.845.888 | no disponible | Apache 2.0 | Repositorio GGUF en HuggingFace, 0 descargas | no disponible |
-| Qwen3-0.6B | 0,6 mil millones (0,44 mil millones sin embeddings) | 32.768 tokens nativos, ampliable a 131.072 con YaRN | Apache 2.0 | Pesos oficiales y GGUF en HuggingFace | No incluido (no verificado en esta busqueda) |
-| Llama 3.2 1B | 1,24 mil millones | 128.000 tokens | Llama 3.2 Community License (uso comercial con condiciones) | Pesos oficiales y GGUF en HuggingFace | No incluido (no verificado en esta busqueda) |
+| Qwen3.5-0.8B-GGUF (JamePeng2023) | 772.845.888 | no disponible | Apache 2.0 | Repositorio GGUF en Hugging Face, 0 descargas | no disponible |
+| Qwen3-0.6B | 0,6 mil millones (0,44 mil millones sin embeddings) | 32.768 tokens nativos, ampliable a 131.072 con YaRN | Apache 2.0 | Pesos oficiales y GGUF en Hugging Face | No incluido (no verificado en esta busqueda) |
+| Llama 3.2 1B | 1,24 mil millones | 128.000 tokens | Llama 3.2 Community License (uso comercial con condiciones) | Pesos oficiales y GGUF en Hugging Face | No incluido (no verificado en esta busqueda) |
 | Gemma 3 1B | 1 mil millones | 32.000 tokens | Gemma Terms of Use | Pesos oficiales y GGUF de terceros | No incluido (no verificado en esta busqueda) |
 
 Salvedad importante: el modelo objeto de esta ficha no tiene ficha tecnica propia, por lo que ni siquiera puede confirmarse que sea realmente una variante de la familia Qwen3.5 ni que comparta su tokenizador, su ventana de contexto o su licencia de origen.
@@ -100,5 +100,5 @@ Salvedad importante: el modelo objeto de esta ficha no tiene ficha tecnica propi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/JamePeng2023/Qwen3.5-0.8B-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/JamePeng2023/Qwen3.5-0.8B-GGUF
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de codigo o demos) en la busqueda web realizada. Los resultados obtenidos no guardaban relacion con el modelo.

@@ -79,9 +79,9 @@ Dentro de la misma familia laya y de sus cuantizaciones publicas, la comparacion
 
 | Modelo / build | Parametros | Contexto | Precision (eval 60 items) | Tamano | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| convaiinnovations/laya multilingue fp32 | 322 M | no disponible | 0,683 | 1288 MB | Apache-2.0 | HuggingFace (base) |
-| androidli/laya-multilingual-onnx-int4 (blk32) | 322 M | no disponible | 0,700 | 199 MB | Apache-2.0 | HuggingFace (este repo) |
-| androidli/laya-multilingual-onnx-int4 (blk128) | 322 M | no disponible | 0,683 | 181 MB | Apache-2.0 | HuggingFace (este repo) |
+| convaiinnovations/laya multilingue fp32 | 322 M | no disponible | 0,683 | 1288 MB | Apache-2.0 | Hugging Face (base) |
+| androidli/laya-multilingual-onnx-int4 (blk32) | 322 M | no disponible | 0,700 | 199 MB | Apache-2.0 | Hugging Face (este repo) |
+| androidli/laya-multilingual-onnx-int4 (blk128) | 322 M | no disponible | 0,683 | 181 MB | Apache-2.0 | Hugging Face (este repo) |
 | laya int8 ONNX (dynamic) | 322 M | no disponible | 0,600 | 310 MB | Apache-2.0 | publica, referencia del autor |
 | Otros formatos de laya (GGUF, CoreML/MLX) | 322 M | no disponible | no disponible | no disponible | Apache-2.0 | publicos segun el autor |
 
@@ -103,9 +103,9 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos de tercer
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta build: https://huggingface.co/androidli/laya-multilingual-onnx-int4
+- Repositorio Hugging Face de esta build: https://huggingface.co/androidli/laya-multilingual-onnx-int4
 - Modelo base: https://huggingface.co/convaiinnovations/laya
 - Perfil del autor de la build y de las mediciones: https://x.com/greatYiTin
-- Repositorio de HuggingFace del autor: https://huggingface.co/androidli
+- Repositorio de Hugging Face del autor: https://huggingface.co/androidli
 - Paquete `laya` (tokenizer, configuracion y tratamiento de respuestas tipadas; instalable via `pip install laya`; no se proporciona URL directa en la informacion disponible)
 - ONNX Runtime (motor de inferencia; no se proporciona URL directa en la informacion disponible)

@@ -25,7 +25,7 @@ Otros datos declarados en la model card: escala "nano"; atencion *multi query*; 
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es una CNN Transformer, es decir, un modelo hibrido que combina capas convolucionales con bloques de atencion. Segun la configuracion publicada, usa atencion *multi query* (una sola cabeza de clave/valor compartida, lo que reduce el coste de memoria del *KV cache*), fusion de caracteristicas mediante un mecanismo de bajo rango (*low rank*), activacion Swish y normalizacion RMSNorm. El pipeline declarado en HuggingFace es "no disponible", lo que es coherente con una implementacion personalizada: la carga mediante APIs automaticas genericas requiere un adaptador explicito, tal como indica el propio autor.
+La arquitectura es una CNN Transformer, es decir, un modelo hibrido que combina capas convolucionales con bloques de atencion. Segun la configuracion publicada, usa atencion *multi query* (una sola cabeza de clave/valor compartida, lo que reduce el coste de memoria del *KV cache*), fusion de caracteristicas mediante un mecanismo de bajo rango (*low rank*), activacion Swish y normalizacion RMSNorm. El pipeline declarado en Hugging Face es "no disponible", lo que es coherente con una implementacion personalizada: la carga mediante APIs automaticas genericas requiere un adaptador explicito, tal como indica el propio autor.
 
 En cuanto al entrenamiento, el repositorio incluye `training_args.json` con una receta por defecto basada en AdamW y un schedule de *warmup* constante. El autor aclara de forma explicita que esos valores son puntos de partida del script y no evidencia de una ejecucion completada. No se documenta numero de tokens, composicion del dataset, ni fases de RLHF/DPO o ajuste por preferencias. No hay innovaciones tecnicas adicionales declaradas mas alla de la combinacion de atencion multi-query y fusion de bajo rango en un modelo de escala minima.
 
@@ -73,12 +73,12 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 - No se ha auditado robustez, equidad ni transferencia de dominio del modelo.
 - Sin datos de entrenamiento declarados: se desconoce el dataset, su composicion, su licencia y los posibles sesgos que podria heredar un modelo entrenado a partir de esta receta.
 - Idioma y dominio: no se declaran idiomas soportados ni dominio de aplicacion, por lo que no se puede garantizar su adecuacion a entradas en castellano ni a ninguna tarea concreta.
-- Carga no estandar: al ser una implementacion personalizada, los cargadores automaticos de HuggingFace requieren un adaptador explicito; intentar cargarlo con APIs genericas fallara.
+- Carga no estandar: al ser una implementacion personalizada, los cargadores automaticos de Hugging Face requieren un adaptador explicito; intentar cargarlo con APIs genericas fallara.
 - Restricciones de licencia: los pesos y el codigo se publican bajo Apache 2.0, lo que permite uso comercial del artefacto, pero la propia model card advierte de que los terminos de los datos de origen deben revisarse por separado si el repositorio se usa con conjuntos de datos externos.
 - Uso en produccion: no recomendado en su estado actual. La model card indica que los resultados de un futuro checkpoint entrenado deben documentarse de forma separada de los valores por defecto aqui incluidos.
 - Sin garantias de mantenimiento: el repositorio tiene 0 descargas y 0 likes, y no se documenta soporte ni hoja de ruta.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/santos90x/cnn-transformer-demo
+- Hugging Face: https://huggingface.co/santos90x/cnn-transformer-demo
 - No se han encontrado enlaces relevantes en la busqueda web. Los resultados devueltos corresponden a listados de establecimientos de hosteleria en Egipto y no guardan ninguna relacion con el modelo, por lo que no se incluyen.

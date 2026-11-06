@@ -2,9 +2,9 @@
 
 ## Resumen
 
-waifu-diffusion es un modelo de difusion latente de texto a imagen especializado en ilustracion de estilo anime, desarrollado por el colectivo Touhou AI (Haru, Salt y Sta) y publicado en HuggingFace bajo el identificador hakurei/waifu-diffusion. Se trata de un ajuste fino (fine-tuning) de la familia Stable Diffusion sobre imagenes de anime de alta calidad etiquetadas mediante un sitio tipo booru, con el objetivo de mejorar la fidelidad anatomica, el trazo y la composicion tipicos de la ilustracion japonesa frente al modelo base entrenado con fotografia generica.
+waifu-diffusion es un modelo de difusion latente de texto a imagen especializado en ilustracion de estilo anime, desarrollado por el colectivo Touhou AI (Haru, Salt y Sta) y publicado en Hugging Face bajo el identificador hakurei/waifu-diffusion. Se trata de un ajuste fino (fine-tuning) de la familia Stable Diffusion sobre imagenes de anime de alta calidad etiquetadas mediante un sitio tipo booru, con el objetivo de mejorar la fidelidad anatomica, el trazo y la composicion tipicos de la ilustracion japonesa frente al modelo base entrenado con fotografia generica.
 
-La version alojada en este repositorio corresponde a waifu-diffusion v1.4, construida sobre la arquitectura de Stable Diffusion 2 (SD2) y con 865.910.724 parametros en formato safetensors. El repositorio ocupa 53,8 GB e incluye pesos compatibles con la libreria diffusers y con el pipeline StableDiffusionPipeline, ademas de una demo en HuggingFace Spaces y un cuaderno de Colab mantenidos por los autores. La model card esta redactada en ingles y el modelo solo declara soporte para prompts en ese idioma.
+La version alojada en este repositorio corresponde a waifu-diffusion v1.4, construida sobre la arquitectura de Stable Diffusion 2 (SD2) y con 865.910.724 parametros en formato safetensors. El repositorio ocupa 53,8 GB e incluye pesos compatibles con la libreria diffusers y con el pipeline StableDiffusionPipeline, ademas de una demo en Hugging Face Spaces y un cuaderno de Colab mantenidos por los autores. La model card esta redactada en ingles y el modelo solo declara soporte para prompts en ese idioma.
 
 Su relevancia actual es fundamentalmente historica y de nicho: fue uno de los primeros modelos comunitarios en demostrar que un ajuste fino sobre un dominio visual muy concreto (anime) superaba de forma clara al modelo generico, y sigue siendo una referencia en pipelines de generacion de ilustracion, personajes y arte conceptual dentro de esa estetica. No es un modelo de lenguaje ni un transformer autoregresivo: no tiene ventana de contexto, tool calling ni capacidades de razonamiento.
 
@@ -63,17 +63,17 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: los pesos suman aproximadamente 1,7 GB en precision float16 y unos 3,5 GB en float32 (calculado a partir de los 865,9 millones de parametros); el pico real de memoria durante la generacion es mayor por las activaciones intermedias. Se recomienda un minimo orientativo de 4 a 6 GB de VRAM para resoluciones de 512x512 en float16. Estas cifras son estimaciones de calculo, no datos publicados por el autor.
 - GPU recomendadas: tarjetas consumer de gama media y alta como RTX 3060 (12 GB), RTX 3070, RTX 3080, RTX 4070, RTX 4080 y RTX 4090; en el entorno profesional, A100, H100 o L40S para servir varias instancias en paralelo.
 - Compatibilidad con GPU consumer: si, el modelo cabe holgadamente en tarjetas consumer modernas con 6 GB o mas de VRAM, siempre en float16 y con resoluciones moderadas.
-- Opciones de despliegue: la libreria diffusers con el pipeline StableDiffusionPipeline es la via oficial documentada; tambien se ofrece una demo en HuggingFace Spaces con Gradio y un cuaderno de Colab. El tag endpoints_compatible indica que puede servirse en HuggingFace Inference Endpoints.
+- Opciones de despliegue: la libreria diffusers con el pipeline StableDiffusionPipeline es la via oficial documentada; tambien se ofrece una demo en Hugging Face Spaces con Gradio y un cuaderno de Colab. El tag endpoints_compatible indica que puede servirse en Hugging Face Inference Endpoints.
 - Latencia y throughput: no disponible en la informacion proporcionada; dependen del numero de pasos de denoising, la resolucion, el tipo de precision y la GPU empleada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto / resolucion | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| waifu-diffusion v1.4 (este) | 865.910.724 | no disponible; basado en SD2 | CreativeML OpenRAIL-M | HuggingFace, diffusers, demo Gradio | Ajuste fino anime sobre SD2, solo ingles |
-| waifu-diffusion v1.3 | no disponible | no disponible | CreativeML OpenRAIL-M | HuggingFace | Version anterior; entrenada con 680.000 muestras texto-imagen de un booru |
-| waifu-diffusion-xl | no disponible | no disponible | no disponible | HuggingFace | Variante posterior orientada a calidad, segun el repositorio del mismo autor |
-| Stable Diffusion 2 (modelo base) | no disponible en la informacion proporcionada | no disponible | CreativeML OpenRAIL-M | HuggingFace | Modelo generico de fotografia del que deriva esta version; peor rendimiento en estilo anime |
+| waifu-diffusion v1.4 (este) | 865.910.724 | no disponible; basado en SD2 | CreativeML OpenRAIL-M | Hugging Face, diffusers, demo Gradio | Ajuste fino anime sobre SD2, solo ingles |
+| waifu-diffusion v1.3 | no disponible | no disponible | CreativeML OpenRAIL-M | Hugging Face | Version anterior; entrenada con 680.000 muestras texto-imagen de un booru |
+| waifu-diffusion-xl | no disponible | no disponible | no disponible | Hugging Face | Variante posterior orientada a calidad, segun el repositorio del mismo autor |
+| Stable Diffusion 2 (modelo base) | no disponible en la informacion proporcionada | no disponible | CreativeML OpenRAIL-M | Hugging Face | Modelo generico de fotografia del que deriva esta version; peor rendimiento en estilo anime |
 
 ## Limitaciones y advertencias
 
@@ -88,13 +88,13 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hakurei/waifu-diffusion
+- Repositorio Hugging Face: https://huggingface.co/hakurei/waifu-diffusion
 - Pesos originales v1.4: https://huggingface.co/hakurei/waifu-diffusion-v1-4
 - Version v1.3: https://huggingface.co/hakurei/waifu-diffusion-v1-3
 - Version XL: https://huggingface.co/hakurei/waifu-diffusion-xl
 - Notas de la version 1.3 y vision general del proyecto: https://gist.github.com/harubaru/f727cedacae336d1f7877c4bbe2196e1
 - Licencia CreativeML OpenRAIL-M: https://huggingface.co/spaces/CompVis/stable-diffusion-license
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/hakurei/waifu-diffusion-demo
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/hakurei/waifu-diffusion-demo
 - Cuaderno de Colab: https://colab.research.google.com/drive/1_8wPN7dJO746QXsFnB09Uq2VGgSRFuYE
 - Ficha en Dezgo: https://dezgo.com/model/waifudiffusion_1_4
 - Servidor de Discord del proyecto: https://discord.gg/touhouai

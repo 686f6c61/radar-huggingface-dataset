@@ -40,7 +40,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada: no disponible. El tamaño del repositorio es de 0,1 GB, lo que sugiere un modelo de pequeña escala, pero no se dispone de datos concretos de requisitos de memoria.
 - GPUs recomendadas: no disponible. Dado que es un modelo de RL para un entorno de Unity, puede ejecutarse en CPU o GPU, y la visualización en el navegador indica compatibilidad con WebGL.
 - Compatibilidad con GPUs de consumo: probablemente sí, debido al reducido tamaño del repositorio, aunque no hay datos confirmados.
-- Opciones de despliegue: Unity ML-Agents, ONNX Runtime, y visualización en el navegador a través de HuggingFace.
+- Opciones de despliegue: Unity ML-Agents, ONNX Runtime, y visualización en el navegador a través de Hugging Face.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -54,7 +54,7 @@ No se dispone de información sobre modelos comparables en los datos proporciona
 - No se han publicado benchmarks ni evaluaciones formales, por lo que el rendimiento real en tareas más amplias es desconocido.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/KavyaChinta05/poca-SoccerTwos
+- Hugging Face: https://huggingface.co/KavyaChinta05/poca-SoccerTwos
 - Documentación de Unity ML-Agents: https://unity-technologies.github.io/ml-agents/ML-Agents-Toolkit-Documentation/
 - Tutorial corto de Hugging Face Deep RL Course: https://huggingface.co/learn/deep-rl-course/unitbonus1/introduction
 - Tutorial largo de Hugging Face Deep RL Course: https://huggingface.co/learn/deep-rl-course/unit5/introduction

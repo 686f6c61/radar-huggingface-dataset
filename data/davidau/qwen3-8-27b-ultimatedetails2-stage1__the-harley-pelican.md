@@ -4,7 +4,7 @@
 
 DavidAU/Qwen3.8-27B-UltimateDetails2-stage1__The-Harley-Pelican es un modelo de lenguaje multimodal (imagen-texto a texto) desarrollado por DavidAU, basado en un finetune del modelo Qwen/Qwen3.8-27B. Se trata de una adaptación experimental orientada a generar respuestas detalladas y sin restricciones de contenido, como sugieren las etiquetas "uncensored", "UltimateDetails" y "The-Harley-Pelican". El modelo tiene aproximadamente 27.800 millones de parámetros y se distribuye en formato safetensors bajo licencia Apache 2.0.
 
-El finetune emplea técnicas avanzadas como Cold Fusion y GAIN Training, además de un ajuste multi-etapa, según las etiquetas del repositorio. Su pipeline de HuggingFace es image-text-to-text, lo que indica que acepta tanto imágenes como texto como entrada y produce texto como salida. El acceso al modelo está restringido (gated) y requiere aceptar condiciones en HuggingFace. No se han publicado datos detallados de entrenamiento, contexto ni benchmarks en la información disponible, por lo que su rendimiento real debe evaluarse de forma empírica.
+El finetune emplea técnicas avanzadas como Cold Fusion y GAIN Training, además de un ajuste multi-etapa, según las etiquetas del repositorio. Su pipeline de Hugging Face es image-text-to-text, lo que indica que acepta tanto imágenes como texto como entrada y produce texto como salida. El acceso al modelo está restringido (gated) y requiere aceptar condiciones en Hugging Face. No se han publicado datos detallados de entrenamiento, contexto ni benchmarks en la información disponible, por lo que su rendimiento real debe evaluarse de forma empírica.
 
 ## Especificaciones tecnicas
 
@@ -15,7 +15,7 @@ El finetune emplea técnicas avanzadas como Cold Fusion y GAIN Training, además
 | Parametros activos | no disponible (no se indica si es MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | ingles (segun HuggingFace) |
+| Idiomas soportados | ingles (segun Hugging Face) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors |
 
@@ -32,7 +32,7 @@ El entrenamiento se realizo mediante un proceso de ajuste multi-etapa, segun las
 - Descripcion detallada de imagenes: el nombre "UltimateDetails" sugiere un enfoque en respuestas exhaustivas.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y multi-step reasoning: no disponible.
-- Capacidades multilingues: limitado a ingles segun la ficha de HuggingFace.
+- Capacidades multilingues: limitado a ingles segun la ficha de Hugging Face.
 - Capacidades especiales: vision (procesamiento de imagenes), modo de pensamiento no documentado.
 
 ## Casos de uso
@@ -65,7 +65,7 @@ No se dispone de informacion suficiente para realizar una comparativa fiable. El
 ## Limitaciones y advertencias
 
 - Al estar etiquetado como "uncensored", el modelo puede generar contenido ofensivo, ilegal o sesgado sin filtros de seguridad.
-- Solo soporta ingles segun la ficha de HuggingFace, lo que limita su uso en entornos multilingues.
+- Solo soporta ingles segun la ficha de Hugging Face, lo que limita su uso en entornos multilingues.
 - No se han publicado benchmarks ni evaluaciones de seguridad, por lo que el rendimiento y los sesgos son desconocidos.
 - El acceso esta restringido (gated), lo que dificulta su uso en pipelines automatizados.
 - Al ser un finetune experimental, existe riesgo de alucinacion y de comportamiento inestable.
@@ -73,5 +73,5 @@ No se dispone de informacion suficiente para realizar una comparativa fiable. El
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DavidAU/Qwen3.8-27B-UltimateDetails2-stage1__The-Harley-Pelican
+- Repositorio en Hugging Face: https://huggingface.co/DavidAU/Qwen3.8-27B-UltimateDetails2-stage1__The-Harley-Pelican
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B (referenciado en las etiquetas)

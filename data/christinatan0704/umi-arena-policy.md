@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| UMI Arena policy (este modelo) | 450 M | no disponible | Apache-2.0 | HuggingFace, 17 descargas |
-| SmolVLA base (`lerobot/smolvla_base`) | no disponible | no disponible | no disponible | HuggingFace |
-| SmolVLM2-500M-Video-Instruct | ~500 M | no disponible | Apache-2.0 | HuggingFace |
+| UMI Arena policy (este modelo) | 450 M | no disponible | Apache-2.0 | Hugging Face, 17 descargas |
+| SmolVLA base (`lerobot/smolvla_base`) | no disponible | no disponible | no disponible | Hugging Face |
+| SmolVLM2-500M-Video-Instruct | ~500 M | no disponible | Apache-2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
 
@@ -81,6 +81,6 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- [HuggingFace: ChristinaTan0704/umi-arena-policy](https://huggingface.co/ChristinaTan0704/umi-arena-policy)
+- [Hugging Face: ChristinaTan0704/umi-arena-policy](https://huggingface.co/ChristinaTan0704/umi-arena-policy)
 - [SmolVLM2-500M-Video-Instruct](https://huggingface.co/HuggingFaceTB/SmolVLM2-500M-Video-Instruct)
 - [LeRobot SmolVLA base](https://huggingface.co/lerobot/smolvla_base)

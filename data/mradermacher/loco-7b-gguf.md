@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo ni de modelos alternativos con
 
 ## Enlaces
 
-- HuggingFace (cuantización GGUF): https://huggingface.co/mradermacher/LoCo-7B-GGUF
+- Hugging Face (cuantización GGUF): https://huggingface.co/mradermacher/LoCo-7B-GGUF
 - Modelo base: https://huggingface.co/MuyaoYuan/LoCo-7B
 - Página de descargas del cuantizador: https://hf.tst.eu/model#LoCo-7B-GGUF
 - README de referencia para uso de GGUF: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

@@ -22,7 +22,7 @@ Su relevancia ahora es doble. Por un lado, demuestra que es viable portar un mod
 | Formato de pesos | Paquetes Core AI `.aimodel` (seis chunks de 4 capas) + `manifest.json`, `model.safetensors` (checkpoint jeff-base v1.3 sin modificar) y embeddings FP16 |
 | Tarea (pipeline) | `zero-shot-classification` |
 | Cabeza de salida | Readout de 255 vías |
-| Fecha de publicacion (segun HuggingFace) | 9 de octubre de 2026 |
+| Fecha de publicacion (segun Hugging Face) | 9 de octubre de 2026 |
 | Tamano del repositorio | 3,2 GB |
 | Descargas / likes | 0 / 0 |
 
@@ -102,7 +102,7 @@ No se dispone de datos de benchmarks comparativos entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace (este modelo): https://huggingface.co/anemll/jeff-ane-base-coreai
+- Hugging Face (este modelo): https://huggingface.co/anemll/jeff-ane-base-coreai
 - Modelo base Jeff v1.3: https://huggingface.co/mstrasser/jeff-base
 - Modelo base original Qwen3.5-0.8B: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de conversión y runtime ANE: https://github.com/Anemll/jeff-ane

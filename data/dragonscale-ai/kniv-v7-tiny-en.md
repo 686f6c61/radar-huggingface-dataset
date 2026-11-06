@@ -104,7 +104,7 @@ No se dispone de datos de benchmarks de modelos externos (por ejemplo, encoders 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dragonscale-ai/kniv-v7-tiny-en
+- Modelo en Hugging Face: https://huggingface.co/dragonscale-ai/kniv-v7-tiny-en
 - Modelo base: https://huggingface.co/jhu-clsp/ettin-encoder-17m
 - Modelo profesor (UltraBERT-380M): https://huggingface.co/dragonscale-ai/kniv-v7-xlarge-u-en
 - Modelo profesor (deberta-v3-large): https://huggingface.co/dragonscale-ai/kniv-v7-xlarge-d-en

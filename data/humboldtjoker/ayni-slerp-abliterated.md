@@ -4,7 +4,7 @@
 
 ayni-slerp-abliterated es un modelo de lenguaje experimental de 30.5 mil millones de parámetros, desarrollado por Thomas Edrington (HumboldtJoker) como parte de una línea de investigación sobre fusión de modelos y reducción de rechazos en sistemas de IA. Se trata de una segunda iteración que combina una fusión SLERP (Spherical Linear Interpolation) de variantes del modelo Ayni —basado en Qwen3-30B con arquitectura MoE— y la aplicación de una técnica de abliteración, que modifica los pesos para eliminar respuestas de rechazo consideradas "falsas" o excesivamente cautelosas.
 
-El modelo fue publicado en HuggingFace en agosto de 2026, aunque su creador indica que fue creado en junio de ese mismo año. Actualmente está archivado, ya que fue superado por enfoques posteriores, y se mantiene disponible únicamente para análisis forense de entrenamiento y "arqueología" de técnicas de fusión. Con cero descargas y cero likes, no ha tenido adopción práctica, lo que refuerza su carácter de experimento técnico más que de herramienta productiva.
+El modelo fue publicado en Hugging Face en agosto de 2026, aunque su creador indica que fue creado en junio de ese mismo año. Actualmente está archivado, ya que fue superado por enfoques posteriores, y se mantiene disponible únicamente para análisis forense de entrenamiento y "arqueología" de técnicas de fusión. Con cero descargas y cero likes, no ha tenido adopción práctica, lo que refuerza su carácter de experimento técnico más que de herramienta productiva.
 
 A pesar de su estado archivado, el modelo resulta relevante para investigadores interesados en la interacción entre fusión de modelos (SLERP) y abliteración, así como para estudiar el comportamiento de modelos MoE de gran tamaño cuando se les aplican modificaciones post-entrenamiento. Su licencia "other" y la falta de documentación detallada limitan su uso directo, pero ofrecen un caso de estudio interesante sobre prácticas de publicación en la comunidad open source.
 
@@ -76,8 +76,8 @@ No se dispone de información sobre modelos comparables específicos. Dado que e
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/HumboldtJoker/ayni-slerp-abliterated)
-- [Perfil del autor en HuggingFace](https://huggingface.co/HumboldtJoker)
+- [Modelo en Hugging Face](https://huggingface.co/HumboldtJoker/ayni-slerp-abliterated)
+- [Perfil del autor en Hugging Face](https://huggingface.co/HumboldtJoker)
 - [Repositorio de modelos del autor](https://huggingface.co/HumboldtJoker/models)
 - [Perfil de GitHub del autor](https://github.com/HumboldtJoker)
 - [Guía sobre modelos abliterados (2026)](https://locallyuncensored.com/blog/abliterated-models-guide.html) — referencia general sobre la técnica, no específica de este modelo.

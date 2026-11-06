@@ -100,10 +100,10 @@ La informacion proporcionada no incluye especificaciones verificables de modelos
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/whcl412/LycheeAI-coder-2b-II-pro-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/whcl412/LycheeAI-coder-2b-II-pro-GGUF
 - Repositorio principal con la metodologia y las limitaciones completas: https://huggingface.co/whcl412/LycheeAI-coder-2b-II-pro
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
 - Replica en ModelScope: https://modelscope.cn/models/whcl412/LycheeAI-coder-2b-II-pro-GGUF
-- Descarga directa del archivo Q8_0 desde HuggingFace: https://huggingface.co/whcl412/LycheeAI-coder-2b-II-pro-GGUF/resolve/main/LycheeAI-coder-2b-II-pro-q8_0.gguf
+- Descarga directa del archivo Q8_0 desde Hugging Face: https://huggingface.co/whcl412/LycheeAI-coder-2b-II-pro-GGUF/resolve/main/LycheeAI-coder-2b-II-pro-q8_0.gguf
 - Descarga directa del archivo Q8_0 desde ModelScope: https://modelscope.cn/models/whcl412/LycheeAI-coder-2b-II-pro-GGUF/resolve/master/LycheeAI-coder-2b-II-pro-q8_0.gguf
 - Resultados de la busqueda web: no se han encontrado enlaces relevantes al modelo. Los resultados devueltos corresponden a paginas sobre personajes de ficcion (Lustiges Taschenbuch, Wikipedia, Duckipedia) y no guardan relacion con este modelo.

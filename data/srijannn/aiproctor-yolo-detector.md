@@ -2,7 +2,7 @@
 
 ## Resumen
 
-aiproctor-yolo-detector es un detector de objetos de visión por computador desarrollado por el usuario srijannn y publicado en HuggingFace bajo licencia MIT. Se trata de un ajuste fino de YOLOv8 Nano (`yolov8n`) orientado a la supervisión de exámenes en línea: el modelo identifica cinco categorías de objetos que pueden indicar dispositivos secundarios o material de estudio prohibido en el entorno del examinando (teléfono móvil, libro, apuntes en papel, calculadora y pantalla secundaria).
+aiproctor-yolo-detector es un detector de objetos de visión por computador desarrollado por el usuario srijannn y publicado en Hugging Face bajo licencia MIT. Se trata de un ajuste fino de YOLOv8 Nano (`yolov8n`) orientado a la supervisión de exámenes en línea: el modelo identifica cinco categorías de objetos que pueden indicar dispositivos secundarios o material de estudio prohibido en el entorno del examinando (teléfono móvil, libro, apuntes en papel, calculadora y pantalla secundaria).
 
 El modelo es deliberadamente ligero: 3,13 millones de parámetros y un tamaño de 6,2 MB en formato PyTorch (12,2 MB en ONNX), lo que lo hace apto para despliegue en CPU, GPU de consumo, Apple Silicon (MPS) y navegadores mediante WebRTC. Su relevancia actual reside en la creciente demanda de herramientas de proctoring automatizado que puedan ejecutarse en el propio dispositivo del candidato sin enviar vídeo a servidores externos, reduciendo costes y problemas de privacidad.
 
@@ -20,7 +20,7 @@ Se trata de un modelo puramente de detección de objetos: no procesa lenguaje na
 | Idiomas soportados | no disponible (modelo de visión, sin capacidades lingüísticas) |
 | Licencia | MIT |
 | Formato de pesos | PyTorch (`best.pt`) y ONNX |
-| Tamano del repositorio | 0,0 GB (según HuggingFace; tamaños de archivo reportados: 6,2 MB PyTorch, 12,2 MB ONNX) |
+| Tamano del repositorio | 0,0 GB (según Hugging Face; tamaños de archivo reportados: 6,2 MB PyTorch, 12,2 MB ONNX) |
 | Clases detectadas | `cell_phone`, `book`, `paper_notes`, `calculator`, `secondary_screen` |
 | Pipeline | object-detection |
 | Librería | ultralytics |
@@ -73,7 +73,7 @@ Los datos proceden de la evaluación del autor sobre una partición sin fuga de 
 
 | Modelo | Parametros | Tipo | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| aiproctor-yolo-detector (YOLOv8n ajustado) | 3,13 M | Detección de objetos | no aplica | MIT | HuggingFace |
+| aiproctor-yolo-detector (YOLOv8n ajustado) | 3,13 M | Detección de objetos | no aplica | MIT | Hugging Face |
 | YOLOv8n base (Ultralytics) | ~3,2 M | Detección de objetos genérica | no aplica | AGPL-3.0 (Ultralytics) | GitHub / Ultralytics |
 | YOLOv8s base (Ultralytics) | ~11,2 M | Detección de objetos genérica | no aplica | AGPL-3.0 (Ultralytics) | GitHub / Ultralytics |
 
@@ -92,7 +92,7 @@ La comparación se limita a la familia YOLOv8, ya que no se dispone de informaci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/srijannn/aiproctor-yolo-detector
+- Hugging Face: https://huggingface.co/srijannn/aiproctor-yolo-detector
 - Ultralytics YOLOv8: https://github.com/ultralytics/ultralytics
 - Documentación de Ultralytics: https://docs.ultralytics.com/
 - Dataset referenciado (según metadatos): `exam-objects-calibration` (no se proporciona enlace directo en la información disponible)

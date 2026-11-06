@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `TsgKarthikeyan/clickbait-model-artifacts` es un artefacto alojado en HuggingFace por el usuario TsgKarthikeyan. Por su nombre, parece tratarse de los artefactos asociados a un modelo orientado a la deteccion de clickbait, aunque la informacion publica disponible no confirma ni la tarea declarada (el campo pipeline aparece como no disponible) ni la arquitectura subyacente. El repositorio ocupa 0,3 GB, un tamano compatible con pesos de un modelo pequeno o con un conjunto de artefactos auxiliares (tokenizer, cabeceras de clasificacion, checkpoints intermedios).
+El repositorio `TsgKarthikeyan/clickbait-model-artifacts` es un artefacto alojado en Hugging Face por el usuario TsgKarthikeyan. Por su nombre, parece tratarse de los artefactos asociados a un modelo orientado a la deteccion de clickbait, aunque la informacion publica disponible no confirma ni la tarea declarada (el campo pipeline aparece como no disponible) ni la arquitectura subyacente. El repositorio ocupa 0,3 GB, un tamano compatible con pesos de un modelo pequeno o con un conjunto de artefactos auxiliares (tokenizer, cabeceras de clasificacion, checkpoints intermedios).
 
-La ficha se ha creado a partir exclusivamente de los metadatos publicos del repositorio. No se ha podido recuperar informacion adicional en la busqueda web: los resultados devueltos por el motor de busqueda no guardan ninguna relacion con este modelo ni con HuggingFace, por lo que se han descartado por no ser fuentes validas. En consecuencia, la mayor parte de las especificaciones tecnicas se indican como no disponibles.
+La ficha se ha creado a partir exclusivamente de los metadatos publicos del repositorio. No se ha podido recuperar informacion adicional en la busqueda web: los resultados devueltos por el motor de busqueda no guardan ninguna relacion con este modelo ni con Hugging Face, por lo que se han descartado por no ser fuentes validas. En consecuencia, la mayor parte de las especificaciones tecnicas se indican como no disponibles.
 
 Dado el escaso historial del repositorio (creado y actualizado el mismo dia, sin descargas y con un unico like), se recomienda precaucion antes de evaluarlo para uso en produccion. Se trata, en el mejor de los casos, de un proyecto incipiente o experimental sin documentacion tecnica publica asociada.
 
@@ -76,5 +76,5 @@ No disponible. Al no conocerse la tarea exacta, el tamano ni la licencia del mod
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/TsgKarthikeyan/clickbait-model-artifacts
+- Repositorio en Hugging Face: https://huggingface.co/TsgKarthikeyan/clickbait-model-artifacts
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la busqueda web.

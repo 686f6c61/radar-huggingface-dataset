@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Dindrotx/docu` es un repositorio publicado en HuggingFace por el usuario Dindrotx bajo licencia Apache 2.0. La model card asociada contiene unicamente el campo de licencia en su frontmatter YAML y ningun texto descriptivo adicional, por lo que no se dispone de informacion sobre el proposito, la arquitectura o el proceso de entrenamiento del modelo.
+`Dindrotx/docu` es un repositorio publicado en Hugging Face por el usuario Dindrotx bajo licencia Apache 2.0. La model card asociada contiene unicamente el campo de licencia en su frontmatter YAML y ningun texto descriptivo adicional, por lo que no se dispone de informacion sobre el proposito, la arquitectura o el proceso de entrenamiento del modelo.
 
 El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) y fue creado y actualizado en la misma marca temporal (2026-11-05T21:04:59Z), lo que sugiere una publicacion sin iteraciones posteriores ni mantenimiento documentado. No se declara pipeline, idioma ni conjunto de datos de entrenamiento.
 
@@ -40,7 +40,7 @@ Tampoco hay datos sobre el corpus de entrenamiento (numero de tokens, composicio
 
 - Evaluacion exploratoria del repositorio: inspeccionar la configuracion y los pesos publicados para determinar la arquitectura real y el tamano del modelo antes de plantear cualquier uso.
 - Prototipado interno en entornos controlados: unicamente si tras la inspeccion tecnica se confirma que el modelo cubre la tarea objetivo; la licencia Apache 2.0 permite este uso sin restricciones de copyleft.
-- Pruebas de integracion en pipelines de HuggingFace `transformers`: cargar el modelo con `from_pretrained` para verificar compatibilidad con la libreria, siempre que la configuracion del repositorio sea valida.
+- Pruebas de integracion en pipelines de Hugging Face `transformers`: cargar el modelo con `from_pretrained` para verificar compatibilidad con la libreria, siempre que la configuracion del repositorio sea valida.
 - Experimentacion academica: usar el modelo como base para comparativas o fine-tuning en investigacion, dado que la licencia permisiva facilita la redistribucion de derivados.
 - Analisis de licencias y gobernanza: el repositorio puede servir como caso de estudio de publicaciones sin documentacion tecnica y su impacto en la reproducibilidad.
 - Descartado para produccion: sin benchmarks, sin model card descriptiva y sin historial de descargas, no es posible justificar su adopcion en un sistema en produccion con requisitos de calidad, latencia o seguridad.
@@ -72,5 +72,5 @@ No disponible. Al desconocerse el tamano, la arquitectura y la tarea del modelo,
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Dindrotx/docu
+- Repositorio en Hugging Face: https://huggingface.co/Dindrotx/docu
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion disponible.

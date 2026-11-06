@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `G21998/r1019-26d7cf3c-z-image-zbx3-s65-94f21b9c` es un artefacto alojado en HuggingFace por el usuario G21998, marcado como repositorio privado y etiquetado con `sn56-replay`. Segun la model card, se trata de un "replay cell" correspondiente a la tarea `26d7cf3c` (etiquetada como `z-image`, con una duracion de 0,75 horas), brazo `zbx3`, semilla 65 y arbol `94f21b9c`. El estado registrado es UPLOAD, con codigo de retorno 0, sin terminacion forzada y con finalizacion normal (artefacto entrenado) sobre 6 miembros.
+El modelo identificado como `G21998/r1019-26d7cf3c-z-image-zbx3-s65-94f21b9c` es un artefacto alojado en Hugging Face por el usuario G21998, marcado como repositorio privado y etiquetado con `sn56-replay`. Segun la model card, se trata de un "replay cell" correspondiente a la tarea `26d7cf3c` (etiquetada como `z-image`, con una duracion de 0,75 horas), brazo `zbx3`, semilla 65 y arbol `94f21b9c`. El estado registrado es UPLOAD, con codigo de retorno 0, sin terminacion forzada y con finalizacion normal (artefacto entrenado) sobre 6 miembros.
 
 Por la informacion disponible, no se trata de un modelo de lenguaje publicado al uso, sino de un registro de investigacion privado generado por un harness de validacion ("validator-faithful no-Docker harness", LOCK replay-1019). La model card indica explicitamente que es un "Private research record, not a submission", es decir, un artefacto de trazabilidad de un proceso de entrenamiento o replay, no una entrega oficial. El repositorio ocupa 4,2 GB y contiene, segun la descripcion, un directorio `checkpoints/` con lo que el validador subiria y un directorio `replay/` con logs y registros.
 
@@ -74,5 +74,5 @@ No disponible. No se conocen modelos comparables porque la informacion publica n
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/G21998/r1019-26d7cf3c-z-image-zbx3-s65-94f21b9c
+- Repositorio en Hugging Face: https://huggingface.co/G21998/r1019-26d7cf3c-z-image-zbx3-s65-94f21b9c
 - No se han encontrado otros enlaces (papers, blogs, repositorios de codigo o demos) en la informacion disponible.

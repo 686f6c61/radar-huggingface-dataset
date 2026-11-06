@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Omgirb49/qwen2.5-1.5b-uncensored-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Omgirb49/qwen2.5-1.5b-uncensored-GGUF
 - Modelo padre: https://huggingface.co/ElementMerc/qwen2.5-1.5b-uncensored
 - llama.cpp: https://github.com/ggml-org/llama.cpp
 - Modelo original Qwen2.5-1.5B: no disponible en la información proporcionada (referencia habitual: https://huggingface.co/Qwen/Qwen2.5-1.5B)

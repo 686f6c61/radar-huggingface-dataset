@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Requisitos de hardware
 
-- Pesos del adaptador: tamaño no disponible; el repositorio figura como 0.0 GB en los metadatos de HuggingFace.
+- Pesos del adaptador: tamaño no disponible; el repositorio figura como 0.0 GB en los metadatos de Hugging Face.
 - Pesos del modelo base en FP16: aproximadamente 0.5 GB (244 M de parámetros).
 - VRAM estimada para inferencia: en el orden de 2 a 4 GB en FP16 con lote 1, incluyendo activaciones y sobrecarga del framework. Es una estimación derivada del tamaño de la base, no verificada en la información proporcionada.
 - GPUs de consumo compatibles: cualquier GPU con al menos 4-6 GB de memoria, como RTX 3060, RTX 4060, RTX 4070 o RTX 4090. También es viable en CPU con cuantización, aunque con mayor latencia.
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Ventana de audio | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| whisper-small-joint-si32-cs16-seed123 (este) | Base ~244 M + adaptadores LoRA (rango 32 y 16) | 30 s | sinhala e inglés, con code-switching | No disponible | Pública en HuggingFace (0 descargas) |
-| openai/whisper-small (base) | ~244 M | 30 s | multilingüe (alrededor de 99 idiomas declarados) | Apache-2.0 según la model card del modelo base; no verificado en la información proporcionada | Pública en HuggingFace |
-| openai/whisper-medium | ~769 M | 30 s | multilingüe (alrededor de 99 idiomas declarados) | Apache-2.0 según la model card del modelo base; no verificado en la información proporcionada | Pública en HuggingFace |
-| openai/whisper-large-v3 | ~1550 M | 30 s | multilingüe (catálogo amplio de idiomas) | Apache-2.0 según la model card del modelo base; no verificado en la información proporcionada | Pública en HuggingFace |
+| whisper-small-joint-si32-cs16-seed123 (este) | Base ~244 M + adaptadores LoRA (rango 32 y 16) | 30 s | sinhala e inglés, con code-switching | No disponible | Pública en Hugging Face (0 descargas) |
+| openai/whisper-small (base) | ~244 M | 30 s | multilingüe (alrededor de 99 idiomas declarados) | Apache-2.0 según la model card del modelo base; no verificado en la información proporcionada | Pública en Hugging Face |
+| openai/whisper-medium | ~769 M | 30 s | multilingüe (alrededor de 99 idiomas declarados) | Apache-2.0 según la model card del modelo base; no verificado en la información proporcionada | Pública en Hugging Face |
+| openai/whisper-large-v3 | ~1550 M | 30 s | multilingüe (catálogo amplio de idiomas) | Apache-2.0 según la model card del modelo base; no verificado en la información proporcionada | Pública en Hugging Face |
 
 No se dispone de comparativas de rendimiento (WER/CER) frente a estos modelos ni frente a otros sistemas ASR específicos para sinhala, por lo que la comparación se limita a parámetros, ventana de audio, idiomas, licencia y disponibilidad.
 
@@ -88,9 +88,9 @@ No se dispone de comparativas de rendimiento (WER/CER) frente a estos modelos ni
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anonymous-asr-review/whisper-small-joint-si32-cs16-seed123
+- Modelo en Hugging Face: https://huggingface.co/anonymous-asr-review/whisper-small-joint-si32-cs16-seed123
 - Modelo base: https://huggingface.co/openai/whisper-small
-- Librería PEFT (HuggingFace): https://github.com/huggingface/peft
+- Librería PEFT (Hugging Face): https://github.com/huggingface/peft
 - Repositorio original de Whisper (OpenAI): https://github.com/openai/whisper
 
 Nota sobre la búsqueda web: las consultas realizadas no devolvieron ningún resultado relevante sobre este modelo ni sobre su autor. Los resultados obtenidos correspondían a organizaciones y marcas homónimas del término "Anonymous" (colectivo hacktivista y una marca de calzado), por lo que se descartan como fuentes. No se han localizado papers, blogs, demos ni repositorios asociados a este artefacto en la información disponible.

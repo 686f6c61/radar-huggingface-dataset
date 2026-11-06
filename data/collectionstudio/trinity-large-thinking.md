@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Trinity-Large-Thinking es un modelo de razonamiento optimizado perteneciente a la familia Trinity-Large de Arcee AI, publicado en HuggingFace por CollectionStudio. Se trata de un modelo sparse Mixture-of-Experts (MoE) de 398 mil millones de parámetros, con aproximadamente 13 mil millones de parámetros activos por token, lo que lo sitúa en la categoría de modelos grandes con eficiencia computacional comparable a modelos mucho menores. Está construido sobre la base Trinity-Large-Base y ha sido post-entrenado con razonamiento encadenado extendido y técnicas de RL agéntico.
+Trinity-Large-Thinking es un modelo de razonamiento optimizado perteneciente a la familia Trinity-Large de Arcee AI, publicado en Hugging Face por CollectionStudio. Se trata de un modelo sparse Mixture-of-Experts (MoE) de 398 mil millones de parámetros, con aproximadamente 13 mil millones de parámetros activos por token, lo que lo sitúa en la categoría de modelos grandes con eficiencia computacional comparable a modelos mucho menores. Está construido sobre la base Trinity-Large-Base y ha sido post-entrenado con razonamiento encadenado extendido y técnicas de RL agéntico.
 
 Su relevancia actual radica en su diseño agéntico: genera trazas de razonamiento explícitas en bloques `<think>...</think>` y soporta llamadas a herramientas de forma nativa. Ofrece una ventana de contexto de 512k tokens, lo que lo hace apto para tareas complejas de agentes, análisis de documentos extensos y razonamiento multi-paso. Destaca en benchmarks agénticos como τ²-Bench, PinchBench y LiveCodeBench, posicionándose como una alternativa open source a modelos propietarios de gran escala.
 
@@ -68,7 +68,7 @@ Nota: todos los modelos evaluados con mini-swe-agent-v2. Trinity-Large-Thinking 
 - VRAM estimada: ~800 GB en precisión nativa (FP16/BF16), según el tamaño de los pesos (797.3 GB). No se disponen de datos oficiales de cuantización.
 - GPU recomendadas: no disponible. En la práctica se requiere un clúster multi-GPU; con pesos de ~800 GB se necesitan al menos 10 GPUs de 80 GB (por ejemplo, H100 o A100) o una configuración equivalente con offloading a CPU.
 - No cabe en GPUs de consumo; el despliegue local en entornos domésticos es inviable.
-- Opciones de despliegue: vLLM (con soporte del campo `reasoning_content`), OpenRouter, HuggingFace Transformers (con `custom_code`) y frameworks de agentes como OpenClaw y Hermes Agent.
+- Opciones de despliegue: vLLM (con soporte del campo `reasoning_content`), OpenRouter, Hugging Face Transformers (con `custom_code`) y frameworks de agentes como OpenClaw y Hermes Agent.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -96,7 +96,7 @@ Dentro de la familia Trinity-Large existen variantes con distinto enfoque:
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/CollectionStudio/Trinity-Large-Thinking
+- Hugging Face: https://huggingface.co/CollectionStudio/Trinity-Large-Thinking
 - Variante cuantizada NVFP4: https://huggingface.co/CollectionStudio/Trinity-Large-Thinking-NVFP4
 - Modelo base: https://huggingface.co/arcee-ai/Trinity-Large-Base
 - Informe técnico en arXiv: https://arxiv.org/abs/2602.17004

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-smolaya es un modelo de clasificacion y decision tipada publicado por el usuario anon767tom en HuggingFace. Se trata de una variante reducida de convaiinnovations/laya, un modelo de decision no autorregresivo: en lugar de generar texto, recibe un documento y un conjunto de opciones etiquetadas y devuelve, en una sola pasada forward, una probabilidad para cada opcion. La arquitectura es un encoder ModernBERT-large truncado a sus primeras 20 de 28 capas, con 323.235.590 parametros (frente a los 421M de laya), el mismo tokenizador, la misma cabeza de decision y el mismo formato de entrada que el modelo base.
+smolaya es un modelo de clasificacion y decision tipada publicado por el usuario anon767tom en Hugging Face. Se trata de una variante reducida de convaiinnovations/laya, un modelo de decision no autorregresivo: en lugar de generar texto, recibe un documento y un conjunto de opciones etiquetadas y devuelve, en una sola pasada forward, una probabilidad para cada opcion. La arquitectura es un encoder ModernBERT-large truncado a sus primeras 20 de 28 capas, con 323.235.590 parametros (frente a los 421M de laya), el mismo tokenizador, la misma cabeza de decision y el mismo formato de entrada que el modelo base.
 
 El problema que resuelve es el de la clasificacion y seleccion de opciones en entornos con restricciones de latencia y coste, especialmente en CPU. Segun la model card, supera a laya en las cinco tareas evaluadas (pooled 0.839 frente a 0.812) y es aproximadamente 2,8 veces mas rapido en CPU con cuantizacion int8 (0,26 s por item frente a 0,71 s). Ademas, mejora notablemente la calibracion: el ECE top-1 baja de 0,261 a 0,047.
 
@@ -100,9 +100,9 @@ Calibracion (ECE top-1, 15 bins, sobre los mismos 12.398 items, softmax crudo so
 
 | Modelo | Parametros | Tipo | Exactitud pooled en las 5 tareas | Velocidad CPU | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| smolaya | 323M | Encoder ModernBERT truncado a 20 capas + cabeza de decision | 0,839 | 0,26 s/item (int8) | Apache-2.0 | HuggingFace (0 descargas) |
-| convaiinnovations/laya | 421M | Encoder ModernBERT-large completo + cabeza de decision | 0,812 | 0,71 s/item (fp32) | Apache-2.0 (segun la model card de smolaya) | HuggingFace |
-| ModernBERT-large (Answer.AI) | No disponible en la informacion proporcionada | Encoder | No disponible | No disponible | No disponible en la informacion proporcionada | HuggingFace |
+| smolaya | 323M | Encoder ModernBERT truncado a 20 capas + cabeza de decision | 0,839 | 0,26 s/item (int8) | Apache-2.0 | Hugging Face (0 descargas) |
+| convaiinnovations/laya | 421M | Encoder ModernBERT-large completo + cabeza de decision | 0,812 | 0,71 s/item (fp32) | Apache-2.0 (segun la model card de smolaya) | Hugging Face |
+| ModernBERT-large (Answer.AI) | No disponible en la informacion proporcionada | Encoder | No disponible | No disponible | No disponible en la informacion proporcionada | Hugging Face |
 
 No se dispone de datos de benchmarks comparables con otros modelos de clasificacion en la informacion proporcionada, mas alla de la comparacion directa con laya que realiza el autor.
 
@@ -122,6 +122,6 @@ No se dispone de datos de benchmarks comparables con otros modelos de clasificac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anon767tom/smolaya
+- Modelo en Hugging Face: https://huggingface.co/anon767tom/smolaya
 - Modelo base convaiinnovations/laya: https://huggingface.co/convaiinnovations/laya
 - Los resultados de busqueda web disponibles no contienen ningun enlace relevante al modelo, a su paper ni a su repositorio; el resto de enlaces (paper, blog, repositorio, demo) no esta disponible en la informacion proporcionada.

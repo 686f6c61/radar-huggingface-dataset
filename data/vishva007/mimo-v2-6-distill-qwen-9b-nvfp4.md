@@ -17,7 +17,7 @@ Es relevante porque combina tres piezas poco habituales en un modelo abierto de 
 | Parametros activos | no disponible |
 | Longitud de contexto | 32.768 tokens en la configuracion de servicio del ejemplo de la model card (`--max-model-len 32768`); maximo nativo no disponible |
 | Tipos de cuantizacion | NVFP4 (4 bits, group_size=16, simetrica) via AutoRound/SignRound; encoder visual, `mtp` y `mtp.fc` en bfloat16 |
-| Idiomas soportados | no disponible (la model card y el campo `languages` de HuggingFace no aportan lista) |
+| Idiomas soportados | no disponible (la model card y el campo `languages` de Hugging Face no aportan lista) |
 | Licencia | MIT |
 | Formato de pesos | safetensors con compressed-tensors (tag `8-bit`), compatibles con transformers y vLLM |
 
@@ -87,9 +87,9 @@ No se dispone de datos verificados de benchmarks ni de especificaciones completa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Vishva007/MiMo-V2.6-Distill-Qwen-9B-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/Vishva007/MiMo-V2.6-Distill-Qwen-9B-NVFP4
 - Modelo base oficial: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B
-- Espejo del modelo base en HuggingFace: https://huggingface.co/ArkhAngelLifeJiggy/MiMo-V2.6-Distill-Qwen-9B
+- Espejo del modelo base en Hugging Face: https://huggingface.co/ArkhAngelLifeJiggy/MiMo-V2.6-Distill-Qwen-9B
 - Version para Ollama: https://ollama.com/maternion/mimo-v2.6
 - ModelScope: https://www.modelscope.cn/models/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B
 - Ficha de terceros con especificaciones y casos de uso: https://www.syncdev.com/models/xiaomi-mimo-v2-6-distill-qwen-9b

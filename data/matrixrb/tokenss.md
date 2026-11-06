@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`matrixrb/tokenss` es un modelo de generacion de imagenes a partir de texto (text-to-image) publicado en HuggingFace por el usuario `matrixrb`. Los metadatos del repositorio lo etiquetan como `diffusers:StableDiffusionPipeline`, lo que indica que se distribuye en el formato de la libreria Diffusers y sigue el esquema clasico de difusion latente: un autoencoder (VAE) que opera en un espacio latente comprimido, una red UNet que realiza el proceso de eliminacion de ruido y un codificador de texto que condiciona la generacion. El repositorio ocupa 2,1 GB y declara 859.520.964 parametros totales (aproximadamente 860 millones), una cifra coherente con el tamano tipico de las UNet de la familia Stable Diffusion 1.x.
+`matrixrb/tokenss` es un modelo de generacion de imagenes a partir de texto (text-to-image) publicado en Hugging Face por el usuario `matrixrb`. Los metadatos del repositorio lo etiquetan como `diffusers:StableDiffusionPipeline`, lo que indica que se distribuye en el formato de la libreria Diffusers y sigue el esquema clasico de difusion latente: un autoencoder (VAE) que opera en un espacio latente comprimido, una red UNet que realiza el proceso de eliminacion de ruido y un codificador de texto que condiciona la generacion. El repositorio ocupa 2,1 GB y declara 859.520.964 parametros totales (aproximadamente 860 millones), una cifra coherente con el tamano tipico de las UNet de la familia Stable Diffusion 1.x.
 
 El modelo se subio el 1 de octubre de 2026 y no registra descargas ni likes en el momento de redactar esta ficha, por lo que no existe informacion publica sobre su procedencia, datos de entrenamiento, ajustes finos ni evaluaciones de calidad. No se especifica licencia, idiomas soportados ni se ha publicado ninguna model card con detalles tecnicos adicionales. Esto lo convierte en un artefacto de interes principalmente por su estructura y tamano, no por un rendimiento documentado.
 
@@ -41,7 +41,7 @@ No se dispone de informacion sobre el conjunto de datos de entrenamiento, el num
 
 - Generacion de imagenes para prototipado rapido de producto: dado que un pipeline Stable Diffusion cabe en GPUs de consumo y arranca con `from_pretrained`, puede usarse para producir bocetos de concepto a partir de prompts de texto sin infraestructura dedicada.
 - Creacion de assets para marketing y redes sociales: generacion de ilustraciones o fondos a partir de descripciones textuales, con la posibilidad de iterar el prompt hasta obtener el resultado deseado.
-- Integracion en endpoints gestionados: el tag `endpoints_compatible` sugiere que puede desplegarse detras de una API de inferencia tipo HuggingFace Endpoints para servir peticiones text-to-image a aplicaciones.
+- Integracion en endpoints gestionados: el tag `endpoints_compatible` sugiere que puede desplegarse detras de una API de inferencia tipo Hugging Face Endpoints para servir peticiones text-to-image a aplicaciones.
 - Ajuste fino sobre dominios verticales: al ser un pipeline Diffusers en safetensors, puede servir como punto de partida para DreamBooth o LoRA y adaptarlo a un estilo o sujeto concreto (utilidad condicionada a confirmar la licencia).
 - Generacion de variaciones sobre una imagen base mediante pipelines img2img: aunque no se declara explicitamente, la mayoria de pipelines Stable Diffusion lo permiten; requiere verificacion.
 - Educacion y experimentacion en difusion latente: por su tamano moderado (~860 M de parametros) y su formato estandar, es adecuado para estudiar el funcionamiento interno de un pipeline de difusion en entornos academicos.
@@ -69,7 +69,7 @@ No se dispone de datos de rendimiento del modelo evaluado, por lo que no puede e
 
 | Modelo | Parametros | Tipo de pipeline | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| matrixrb/tokenss | ~860 M | text-to-image (Diffusers) | no disponible | HuggingFace |
+| matrixrb/tokenss | ~860 M | text-to-image (Diffusers) | no disponible | Hugging Face |
 | Stable Diffusion 1.5 | ~860 M (UNet) | text-to-image (Diffusers) | CreativeML Open RAIL-M | Ampliamente disponible |
 | Stable Diffusion 2.1 | ~865 M (UNet) | text-to-image (Diffusers) | CreativeML Open RAIL++-M | Ampliamente disponible |
 | SDXL | ~2,6 B (UNet) | text-to-image (Diffusers) | CreativeML Open RAIL++-M | Ampliamente disponible |
@@ -90,5 +90,5 @@ La columna de rendimiento se omite deliberadamente porque no existen metricas pu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/matrixrb/tokenss
+- Hugging Face: https://huggingface.co/matrixrb/tokenss
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion proporcionada.

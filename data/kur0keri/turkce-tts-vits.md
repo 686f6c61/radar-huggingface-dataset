@@ -95,11 +95,11 @@ No se han publicado resultados de benchmarks comparativos en la información dis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kur0Keri/turkce-tts-vits
+- Modelo en Hugging Face: https://huggingface.co/Kur0Keri/turkce-tts-vits
 - Dataset de entrenamiento: https://huggingface.co/datasets/serdarcaglar/turkish-tts-audiobooks
 - Paper de VITS (Kim et al., 2021): https://arxiv.org/abs/2106.06103
 - Coqui TTS, fork de Idiap: https://github.com/idiap/coqui-ai-TTS
 - faster-whisper (solo evaluación): https://github.com/SYSTRAN/faster-whisper
-- Muestras de audio: carpeta `samples/` del repositorio en HuggingFace
+- Muestras de audio: carpeta `samples/` del repositorio en Hugging Face
 
-Nota: la búsqueda web realizada no devolvió resultados relacionados con este modelo; los enlaces anteriores proceden de la model card y de los metadatos de HuggingFace.
+Nota: la búsqueda web realizada no devolvió resultados relacionados con este modelo; los enlaces anteriores proceden de la model card y de los metadatos de Hugging Face.

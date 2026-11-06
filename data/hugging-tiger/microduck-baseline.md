@@ -94,7 +94,7 @@ No disponible. La información proporcionada no identifica otras políticas de l
 
 ## Enlaces
 
-- [HuggingFace: hugging-tiger/microduck-baseline](https://huggingface.co/hugging-tiger/microduck-baseline)
+- [Hugging Face: hugging-tiger/microduck-baseline](https://huggingface.co/hugging-tiger/microduck-baseline)
 - [Repositorio de retos y entrenamiento: pollen-robotics/microduck-challenges](https://github.com/pollen-robotics/microduck-challenges.git)
 - [Repositorio del robot: pollen-robotics/microduck](https://github.com/pollen-robotics/microduck)
 - [Página oficial del robot en Pollen Robotics](https://pollen-robotics.com/microduck/)

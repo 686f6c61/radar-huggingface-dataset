@@ -22,7 +22,7 @@ Su relevancia es acotada al ámbito de la investigación en aprendizaje por imit
 | Tamano del repositorio | 12,4 GB |
 | Paso de entrenamiento | 15.000 |
 | Framework | OpenPI, con la configuración `yor_icl_victr_vision_interp_canonical_ctx3cam` de `openpi/src/openpi/training/config.py` |
-| Fecha de creacion (HuggingFace) | 2026-09-15 |
+| Fecha de creacion (Hugging Face) | 2026-09-15 |
 
 ## Arquitectura y entrenamiento
 La información disponible se limita a la configuración de entrenamiento declarada en la model card. El modelo se entrena con el framework OpenPI usando `Pi0VictrConfig` y backend `pi05`, y aplica dos mecanismos concretos sobre el espacio canónico de acción y contexto: (1) recuperación por similitud visual (`retrieval_metric=vision`), que selecciona ejemplos o contextos en función de la similitud de las observaciones visuales, y (2) interpolación de tokens de acción de estilo RICL (`use_action_interpolation=True`) con un coeficiente `lamda=3.0`. La configuración `ctx3cam` fija tres fotogramas de contexto por chunk.
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `lair-nyu/yor_icl_victr_vision_interp_canonical_ctx3cam-step15000` | No disponible | No disponible (3 fotogramas de contexto por chunk) | No disponible | No disponible | Repositorio HuggingFace con 0 descargas y 0 likes |
+| `lair-nyu/yor_icl_victr_vision_interp_canonical_ctx3cam-step15000` | No disponible | No disponible (3 fotogramas de contexto por chunk) | No disponible | No disponible | Repositorio Hugging Face con 0 descargas y 0 likes |
 | Otras variantes de la familia OpenPI / pi05 | No disponible | No disponible | No disponible | No disponible | No disponible en la información proporcionada |
 | Otros checkpoints del mismo proyecto `lair-nyu` | No disponible | No disponible | No disponible | No disponible | No disponible en la información proporcionada |
 
@@ -85,7 +85,7 @@ No se dispone de datos comparativos verificables. El único punto de comparació
 - Resultados de búsqueda no concluyentes: las consultas web devolvieron únicamente páginas de una empresa de remolques y de una red inmobiliaria francesas, homónimas del identificador `lair`, sin relación con el modelo.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/lair-nyu/yor_icl_victr_vision_interp_canonical_ctx3cam-step15000
+- Modelo en Hugging Face: https://huggingface.co/lair-nyu/yor_icl_victr_vision_interp_canonical_ctx3cam-step15000
 - Repositorio OpenPI citado en la model card (`openpi/src/openpi/training/config.py`): https://github.com/Physical-Intelligence/openpi (enlace inferido de la referencia textual de la model card; no aparece en los resultados de búsqueda)
 - Otros resultados de la búsqueda web: sin relevancia para el modelo (https://lair-remorques.fr/, https://www.lair-immobilier.com/ y páginas asociadas de un fabricante de remolques y una red inmobiliaria en Normandía)
 - Paper, blog o demo oficiales: no disponibles

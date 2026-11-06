@@ -2,7 +2,7 @@
 
 ## Resumen
 
-hohe-asr-amharic es un modelo de reconocimiento automatico del habla (ASR) especializado en amharico, publicado por el usuario snapwre en HuggingFace. Se trata de un ajuste fino con cabeza CTC sobre badrex/Ethio-ASR-multilingual-600M, un encoder wav2vec2-BERT de 606.104.800 parametros. El modelo convierte audio de amharico en texto en una sola pasada sobre la señal, sin generacion autoregresiva palabra a palabra, lo que segun su autor lo hace aproximadamente cinco veces mas rapido que un Whisper de precision similar y elimina las alucinaciones tipicas de los decodificadores generativos cuando no hay voz.
+hohe-asr-amharic es un modelo de reconocimiento automatico del habla (ASR) especializado en amharico, publicado por el usuario snapwre en Hugging Face. Se trata de un ajuste fino con cabeza CTC sobre badrex/Ethio-ASR-multilingual-600M, un encoder wav2vec2-BERT de 606.104.800 parametros. El modelo convierte audio de amharico en texto en una sola pasada sobre la señal, sin generacion autoregresiva palabra a palabra, lo que segun su autor lo hace aproximadamente cinco veces mas rapido que un Whisper de precision similar y elimina las alucinaciones tipicas de los decodificadores generativos cuando no hay voz.
 
 El entrenamiento se realizo sobre 880 horas de audio en amharico que cubren habla dialectal de cinco regiones, habla leida, broadcast y entrevistas, grabaciones telefonicas y conversacion espontanea. El modelo esta pensado para audio real: se entreno atravesando ruido, reverberacion de sala y conversiones a lineas telefonicas de 8 kHz tipo A-law, con clips de hasta un minuto. El autor declara un 16,11 % de WER y un 5,37 % de CER en su conjunto de test interno (hablantes no vistos en entrenamiento) usando el modelo de lenguaje de 5-gramos incluido en el repositorio.
 
@@ -76,7 +76,7 @@ Valores de referencia declarados por el autor en el mismo conjunto de test y con
 - Cabe con holgura en GPU de consumo: RTX 3060 12 GB, RTX 4060 Ti, RTX 4070, RTX 4080, RTX 4090, asi como en tarjetas de 4-6 GB (GTX 1650, RTX 3050) si se usa fp16 o int8.
 - GPU de centro de datos recomendadas para lotes grandes o alta concurrencia: A100 40/80 GB, H100, L40S, A10G. Para una sola peticion no son necesarias; su ventaja es el throughput agregado.
 - Inferencia en CPU viable para cargas por lotes de baja concurrencia, con latencias mayores pero sin requisitos de VRAM.
-- Opciones de despliegue: `transformers` con `AutoModelForCTC` y `AutoProcessor` (ruta oficial documentada), `pyctcdecode` mas KenLM para decodificacion con el 5-gramos, PyTorch o `torch.inference_mode`, y exportacion a ONNX o TorchScript, que no esta documentada pero es factible en un encoder de este tipo. La model card incluye la etiqueta `endpoints_compatible`, por lo que deberia poder desplegarse en HuggingFace Inference Endpoints. No hay soporte documentado en llama.cpp, Ollama, vLLM ni TGI, formatos y motores orientados a decodificadores generativos.
+- Opciones de despliegue: `transformers` con `AutoModelForCTC` y `AutoProcessor` (ruta oficial documentada), `pyctcdecode` mas KenLM para decodificacion con el 5-gramos, PyTorch o `torch.inference_mode`, y exportacion a ONNX o TorchScript, que no esta documentada pero es factible en un encoder de este tipo. La model card incluye la etiqueta `endpoints_compatible`, por lo que deberia poder desplegarse en Hugging Face Inference Endpoints. No hay soporte documentado en llama.cpp, Ollama, vLLM ni TGI, formatos y motores orientados a decodificadores generativos.
 - Latencia y throughput: el autor indica que el modelo es aproximadamente cinco veces mas rapido que un Whisper de precision similar por su decodificacion en una sola pasada. No se publican medidas de RTF, latencia por clip ni throughput en clips por segundo.
 
 ## Comparativa con modelos similares
@@ -107,7 +107,7 @@ La comparacion no puede cerrarse con datos homogeneos: el autor no publica los r
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/snapwre/hohe-asr-amharic
+- Hugging Face: https://huggingface.co/snapwre/hohe-asr-amharic
 - Modelo base: https://huggingface.co/badrex/Ethio-ASR-multilingual-600M
 - Conjunto de evaluacion publico citado: https://huggingface.co/datasets/google/fleurs (configuracion `am_et`)
 - Herramienta de decodificacion con modelo de lenguaje: pyctcdecode (biblioteca de Python, disponible en PyPI y en GitHub)

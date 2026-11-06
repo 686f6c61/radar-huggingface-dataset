@@ -24,7 +24,7 @@ El modelo reporta resultados en evaluaciones de matemáticas de nivel competici�
 | Pipeline declarado | reinforcement-learning |
 | Etiquetas | safetensors, grug_moe, marin, snowball, reinforcement-learning, research-artifact, license:other, region:us |
 | Descargas / likes | 0 / 0 |
-| Fecha de creación / actualización | 20 de septiembre de 2026 (ambas, según los metadatos de HuggingFace) |
+| Fecha de creación / actualización | 20 de septiembre de 2026 (ambas, según los metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -84,7 +84,7 @@ No se dispone de datos comparativos verificables en la información proporcionad
 
 | Modelo | Parámetros | Contexto | AIME24 | MATH-500 | OlympiadBench | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Snowball-67B-A2B-Math-RL-E17b1-Step20-Repaired | 67,08 mil millones totales / ~2 mil millones activos | no disponible | 20,33 | 73,40 | 17,33 | other | HuggingFace, repositorio de investigación |
+| Snowball-67B-A2B-Math-RL-E17b1-Step20-Repaired | 67,08 mil millones totales / ~2 mil millones activos | no disponible | 20,33 | 73,40 | 17,33 | other | Hugging Face, repositorio de investigación |
 | Otros checkpoints Snowball de la misma campaña | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Exportaciones `laion/rl-snowball-*` | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible | Desaconsejadas por el autor por integridad del router |
 | Modelos MoE de matemáticas de otros desarrolladores | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -106,7 +106,7 @@ No se dispone de datos comparativos verificables en la información proporcionad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/open-athena/Snowball-67B-A2B-Math-RL-E17b1-Step20-Repaired
+- Modelo en Hugging Face: https://huggingface.co/open-athena/Snowball-67B-A2B-Math-RL-E17b1-Step20-Repaired
 - Archivo de evidencias (dataset): https://huggingface.co/datasets/penfever/snowball-67b-a2b-math-rl-artifacts
 - Issue del experimento en el repositorio Marin: https://github.com/marin-community/marin/issues/7786
 - Artefacto de origen (S3): `s3://marin-us-east-02a/marin/exports/snowball-bias-repaired/rl-snowball-e17b1-rno2a-rlvrmath-interp005-sr-20260825-014606/global_step_20/policy/`

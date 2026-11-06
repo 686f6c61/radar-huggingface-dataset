@@ -74,10 +74,10 @@ Además, el conjunto público de 47 ejemplos obtuvo 35/47 respuestas exactas sin
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B (base) | 27,8 B | 262.144 | BF16 | Apache-2.0 | HuggingFace |
-| huihui-ai/Huihui-Qwen3.8-27B-abliterated | 27,8 B | 262.144 | BF16 | Apache-2.0 | HuggingFace |
-| leoncca/Qwen3.8-27B-Huihui-Mixed-FP8 | 27,8 B | 262.144 | FP8 mixto + BF16 | Apache-2.0 | HuggingFace |
-| huihui-ai/Qwen3-8B-abliterated | 8 B | 32.768 (típico) | BF16 | Apache-2.0 | HuggingFace |
+| Qwen3.8-27B (base) | 27,8 B | 262.144 | BF16 | Apache-2.0 | Hugging Face |
+| huihui-ai/Huihui-Qwen3.8-27B-abliterated | 27,8 B | 262.144 | BF16 | Apache-2.0 | Hugging Face |
+| leoncca/Qwen3.8-27B-Huihui-Mixed-FP8 | 27,8 B | 262.144 | FP8 mixto + BF16 | Apache-2.0 | Hugging Face |
+| huihui-ai/Qwen3-8B-abliterated | 8 B | 32.768 (típico) | BF16 | Apache-2.0 | Hugging Face |
 
 La principal diferencia entre el modelo base y esta cuantización es la compatibilidad con hardware V100: el BF16 original no puede ejecutarse eficientemente en SM70, mientras que esta versión mixta está específicamente validada para ese entorno. Frente a modelos más pequeños como Qwen3-8B, ofrece mayor capacidad y contexto, a costa de requerir mucho más hardware.
 
@@ -93,7 +93,7 @@ La principal diferencia entre el modelo base y esta cuantización es la compatib
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/leoncca/Qwen3.8-27B-Huihui-Mixed-FP8
+- Repositorio Hugging Face del modelo: https://huggingface.co/leoncca/Qwen3.8-27B-Huihui-Mixed-FP8
 - Modelo base abliterated: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Runtime 1Cat-vLLM: https://github.com/1CatAI/1Cat-vLLM

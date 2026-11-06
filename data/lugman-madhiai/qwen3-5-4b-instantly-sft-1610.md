@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Qwen3.5-4B-Instantly-SFT-1610 es un ajuste fino supervisado (SFT) del modelo Qwen/Qwen3.5-4B, publicado por el usuario lugman-madhiai en HuggingFace. Se trata de un modelo derivado, no de un entrenamiento desde cero: el autor parte de los pesos del modelo base de Qwen y aplica un entrenamiento adicional mediante la libreria Unsloth junto con TRL de HuggingFace, segun se indica en la model card. El repositorio contiene 4.659.865.088 parametros (aproximadamente 4,66 mil millones) en formato safetensors, con un total de 9,3 GB, lo que es coherente con pesos almacenados en bf16 (2 bytes por parametro).
+Qwen3.5-4B-Instantly-SFT-1610 es un ajuste fino supervisado (SFT) del modelo Qwen/Qwen3.5-4B, publicado por el usuario lugman-madhiai en Hugging Face. Se trata de un modelo derivado, no de un entrenamiento desde cero: el autor parte de los pesos del modelo base de Qwen y aplica un entrenamiento adicional mediante la libreria Unsloth junto con TRL de Hugging Face, segun se indica en la model card. El repositorio contiene 4.659.865.088 parametros (aproximadamente 4,66 mil millones) en formato safetensors, con un total de 9,3 GB, lo que es coherente con pesos almacenados en bf16 (2 bytes por parametro).
 
-El modelo se distribuye bajo licencia Apache 2.0 y declara un unico idioma soportado, el ingles. La etiqueta de pipeline de HuggingFace es image-text-to-text, lo que sugiere una posible capacidad de entrada multimodal (imagen y texto), aunque el autor no documenta esta caracteristica en la model card y no aporta ningun detalle sobre la arquitectura, la ventana de contexto o el proceso de entrenamiento.
+El modelo se distribuye bajo licencia Apache 2.0 y declara un unico idioma soportado, el ingles. La etiqueta de pipeline de Hugging Face es image-text-to-text, lo que sugiere una posible capacidad de entrada multimodal (imagen y texto), aunque el autor no documenta esta caracteristica en la model card y no aporta ningun detalle sobre la arquitectura, la ventana de contexto o el proceso de entrenamiento.
 
 La relevancia de esta ficha es limitada y conviene ser explicito: el modelo acumula 0 descargas y 0 "likes" en el momento de la consulta, no incluye resultados de evaluacion, no describe el dataset de ajuste fino y no ofrece informacion sobre el numero de tokens de entrenamiento. Es, por tanto, un artefacto experimental de bajo uso, sin validacion publica, que debe evaluarse con cautela antes de cualquier uso en produccion.
 
@@ -107,10 +107,10 @@ Consideraciones sobre la comparativa:
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/lugman-madhiai/Qwen3.5-4B-Instantly-SFT-1610
+- Ficha del modelo en Hugging Face: https://huggingface.co/lugman-madhiai/Qwen3.5-4B-Instantly-SFT-1610
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.5-4B
 - Repositorio de Unsloth (herramienta de entrenamiento citada): https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace (herramienta de entrenamiento citada): https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face (herramienta de entrenamiento citada): https://github.com/huggingface/trl
 - Paper o blog tecnico del autor: no disponible
 - Demostracion o espacio interactivo: no disponible
 - Repositorio de codigo propio del autor: no disponible

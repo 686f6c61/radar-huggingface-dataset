@@ -6,7 +6,7 @@ El modelo `burningfeet/backup2026-08-23-Gemma-4-E4B-Uncensored-Genesis-GGUF` es 
 
 Este modelo se presenta como una alternativa para desarrolladores e investigadores que buscan un LLM multimodal sin restricciones de contenido, aunque esto conlleva riesgos importantes de seguridad y alineación. Su disponibilidad en formato GGUF permite su ejecución en una amplia variedad de dispositivos, desde CPU hasta GPUs de consumo, mediante herramientas como llama.cpp u Ollama. La relevancia actual radica en la creciente demanda de modelos multimodales abiertos y en la posibilidad de desplegar estos sistemas en entornos locales sin depender de servicios en la nube.
 
-El acceso al modelo es restringido (gated) y requiere aceptar las condiciones de licencia de Gemma en HuggingFace. Dado que es una conversión GGUF de un modelo base con licencia Gemma, las restricciones de uso comercial de la licencia original se mantienen. Es importante señalar que este modelo no es oficial de Google, sino un derivado creado por un tercero, por lo que su calidad y seguridad no están respaldadas por el equipo de Gemma.
+El acceso al modelo es restringido (gated) y requiere aceptar las condiciones de licencia de Gemma en Hugging Face. Dado que es una conversión GGUF de un modelo base con licencia Gemma, las restricciones de uso comercial de la licencia original se mantienen. Es importante señalar que este modelo no es oficial de Google, sino un derivado creado por un tercero, por lo que su calidad y seguridad no están respaldadas por el equipo de Gemma.
 
 ## Especificaciones técnicas
 
@@ -68,14 +68,14 @@ No se dispone de datos suficientes para realizar una comparativa con otros model
 - **Sesgos y alucinación**: al ser un modelo "uncensored", no se ha evaluado su fiabilidad. Puede generar información falsa o dañina sin ningún filtro.
 - **Riesgos de seguridad**: la eliminación de las restricciones de contenido puede producir respuestas ofensivas, ilegales o peligrosas. No debe usarse en aplicaciones públicas o con usuarios no informados.
 - **Calidad no verificada**: el modelo es una modificación de un tercero, no está respaldado por Google DeepMind. Su rendimiento y calidad no están garantizados.
-- **Licencia**: la licencia Gemma impone restricciones sobre el uso comercial y la redistribución. Consulte los términos exactos en HuggingFace.
-- **Acceso restringido**: el modelo está gated, requiere aceptar las condiciones de HuggingFace antes de descargarlo.
+- **Licencia**: la licencia Gemma impone restricciones sobre el uso comercial y la redistribución. Consulte los términos exactos en Hugging Face.
+- **Acceso restringido**: el modelo está gated, requiere aceptar las condiciones de Hugging Face antes de descargarlo.
 - **Idiomas**: el soporte multilingüe puede ser limitado y no se conoce la lista exacta.
 - **Sin información de contexto**: no se conoce la longitud de contexto, lo que puede limitar su uso en tareas con entradas largas.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/burningfeet/backup2026-08-23-Gemma-4-E4B-Uncensored-Genesis-GGUF)
+- [Modelo en Hugging Face](https://huggingface.co/burningfeet/backup2026-08-23-Gemma-4-E4B-Uncensored-Genesis-GGUF)
 - [Modelo base: google/gemma-4-e4b-it](https://huggingface.co/google/gemma-4-E4B)
 - [Página oficial de Gemma 4](https://deepmind.google/models/gemma/gemma-4/)
 - [Repositorio de Gemma en GitHub](https://github.com/google-deepmind/gemma)

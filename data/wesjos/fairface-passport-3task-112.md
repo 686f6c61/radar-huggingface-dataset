@@ -97,8 +97,8 @@ La información proporcionada solo menciona cnano/tvit como referencia comparati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wesjos/fairface-passport-3task-112
-- Dataset FairFace en HuggingFace: https://huggingface.co/datasets/HuggingFaceM4/FairFace
+- Modelo en Hugging Face: https://huggingface.co/wesjos/fairface-passport-3task-112
+- Dataset FairFace en Hugging Face: https://huggingface.co/datasets/HuggingFaceM4/FairFace
 - Paper FairFace (Karkkainen & Joo, WACV 2021): no disponible como enlace directo en la información proporcionada
 - Repositorio de código: no disponible
 - Demo: no disponible

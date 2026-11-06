@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MeteoNorm-RF es una reproducción de ingeniería independiente publicada por OneScience-Group en HuggingFace que implementa el método de normalización meteorológica mediante bosques aleatorios (random forests) descrito en el artículo «Assessing the impact of clean air action on air quality trends in Beijing using a machine learning technique» (Atmospheric Chemistry and Physics, 2019), firmado por equipos de la Universidad de Birmingham, la Academia China de Ciencias e instituciones colaboradoras. No es un modelo de lenguaje ni una red neuronal: es un modelo tabular de regresión con seis salidas que estima concentraciones de contaminantes normalizadas meteorológicamente a partir de observaciones horarias de 12 estaciones nacionales de monitorización de Pekín y de datos meteorológicos del aeropuerto.
+MeteoNorm-RF es una reproducción de ingeniería independiente publicada por OneScience-Group en Hugging Face que implementa el método de normalización meteorológica mediante bosques aleatorios (random forests) descrito en el artículo «Assessing the impact of clean air action on air quality trends in Beijing using a machine learning technique» (Atmospheric Chemistry and Physics, 2019), firmado por equipos de la Universidad de Birmingham, la Academia China de Ciencias e instituciones colaboradoras. No es un modelo de lenguaje ni una red neuronal: es un modelo tabular de regresión con seis salidas que estima concentraciones de contaminantes normalizadas meteorológicamente a partir de observaciones horarias de 12 estaciones nacionales de monitorización de Pekín y de datos meteorológicos del aeropuerto.
 
 El problema que aborda es la separación del efecto de la meteorología respecto de las tendencias de emisión a largo plazo, de forma que pueda evaluarse si las políticas de aire limpio han reducido realmente la contaminación. Para ello remuestrea condiciones meteorológicas dentro de horas coincidentes y ventanas estacionales cercanas, generando conjuntos normalizados, y aplica después un análisis de tendencia robusto de Theil-Sen. El método conserva además las diferencias estacionales, diurnas y entre estaciones.
 
@@ -83,7 +83,7 @@ No disponible. En la información proporcionada no se identifican modelos compar
 
 | Alternativa | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MeteoNorm-RF (este repositorio) | No disponible (12 arboles por defecto) | No aplica | Sin valores publicados | Apache 2.0 | HuggingFace, sin pesos |
+| MeteoNorm-RF (este repositorio) | No disponible (12 arboles por defecto) | No aplica | Sin valores publicados | Apache 2.0 | Hugging Face, sin pesos |
 | Implementacion original del articulo (R, randomForest) | No disponible | No aplica | No disponible en la informacion proporcionada | Articulo CC BY 4.0 | Referencia bibliografica |
 | Otros modelos de normalizacion meteorologica | No disponible | No disponible | No disponible | No disponible | No disponibles |
 
@@ -91,7 +91,7 @@ No disponible. En la información proporcionada no se identifican modelos compar
 
 - Los datos incluidos en el repositorio son sintéticos y cubren solo 30 días; los resultados de entrenamiento y evaluación obtenidos con ellos validan la ingeniería, no el comportamiento científico del modelo.
 - El repositorio no incluye pesos preentrenados (`weight/` está vacío) y el artículo original tampoco los publica, por lo que cualquier uso real exige entrenar desde cero con datos propios.
-- No es un modelo de lenguaje: no genera texto, no soporta tool calling, ni agentes, ni razonamiento multi-paso, pese a que la ficha de HuggingFace lo etiquete como modelo al uso.
+- No es un modelo de lenguaje: no genera texto, no soporta tool calling, ni agentes, ni razonamiento multi-paso, pese a que la ficha de Hugging Face lo etiquete como modelo al uso.
 - Ámbito geográfico y temporal limitado: el diseño metodológico se validó con 12 estaciones de Pekín y meteorología del aeropuerto; extrapolarlo a otras regiones sin reentrenamiento puede introducir sesgos sistemáticos.
 - La reducción por defecto de cientos de árboles a 12 disminuye la capacidad del bosque y puede degradar la estabilidad de las predicciones normalizadas si se usa tal cual.
 - Riesgo de sobreajuste al esquema de partición fija 70/30 si el conjunto de datos propio es pequeño o poco representativo de la variabilidad estacional.
@@ -102,7 +102,7 @@ No disponible. En la información proporcionada no se identifican modelos compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OneScience-Group/MeteoNorm-RF
+- Modelo en Hugging Face: https://huggingface.co/OneScience-Group/MeteoNorm-RF
 - Articulo de referencia (DOI): https://doi.org/10.5194/acp-19-11303-2019
 - Entorno OneCode de programacion AI4S: https://web-2069360198568017922-iaaj.ksai.scnet.cn:58043/home
 - Repositorio principal OneScience en Gitee: https://gitee.com/onescience-ai/onescience

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `tony-yip/robotics-vision-language-v132` no contiene un modelo de IA entrenado, sino una nota de investigación sobre Robotics Vision Language. Aunque los metadatos de HuggingFace incluyen las etiquetas `safetensors` y `transformer`, la model card del autor lo describe explícitamente como una nota de trabajo que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación. No se presenta como un paper completo ni como una publicación de modelos entrenados. El repositorio fue creado el 8 de septiembre de 2026 según los metadatos y no ha recibido descargas ni likes. Su relevancia es exclusivamente documental y metodológica para investigadores del área de robótica y visión-lenguaje, no como herramienta de inferencia.
+El repositorio `tony-yip/robotics-vision-language-v132` no contiene un modelo de IA entrenado, sino una nota de investigación sobre Robotics Vision Language. Aunque los metadatos de Hugging Face incluyen las etiquetas `safetensors` y `transformer`, la model card del autor lo describe explícitamente como una nota de trabajo que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación. No se presenta como un paper completo ni como una publicación de modelos entrenados. El repositorio fue creado el 8 de septiembre de 2026 según los metadatos y no ha recibido descargas ni likes. Su relevancia es exclusivamente documental y metodológica para investigadores del área de robótica y visión-lenguaje, no como herramienta de inferencia.
 
 ## Especificaciones técnicas
 
@@ -66,7 +66,7 @@ Dado que este repositorio no contiene un modelo entrenado, no puede compararse c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tony-yip/robotics-vision-language-v132
+- Repositorio en Hugging Face: https://huggingface.co/tony-yip/robotics-vision-language-v132
 - Referencias relacionadas encontradas en la búsqueda web:
   - RT-2: Vision-Language-Action Models: https://robotics-transformer2.github.io/
   - Awesome-VLA-Robotics (lista de modelos VLA): https://github.com/Jiaaqiliu/Awesome-VLA-Robotics

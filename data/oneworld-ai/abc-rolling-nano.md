@@ -4,7 +4,7 @@
 
 El modelo `OneWorld-AI/abc-rolling-nano` es un world model (modelo de mundo) para robótica y generación de video, desarrollado por OneWorld-AI. Se basa en la arquitectura Cosmos3 Nano y ha sido entrenado con una estrategia de *bounded-window rolling rectified flow*, un enfoque de flujo rectificado con ventana deslizante que permite predicción de dinámica forward condicionada por acciones. El checkpoint exportado corresponde a los pesos EMA de la iteración 20.000 del entrenamiento, y está disponible en formato safetensors con un total de 15.173.136.576 parámetros (aproximadamente 15,17 mil millones).
 
-El modelo resuelve el problema de predecir la evolución de una escena robótica a partir de una o varias frames de entrada y una secuencia de acciones articulares. Es relevante porque ofrece un world model de tamaño medio, exportado a HuggingFace, que puede integrarse en pipelines de simulación, planificación y generación de datos sintéticos para robótica. Su ventana de contexto es de 333 frames de video a 15 fps, con una resolución de 224×336 píxeles, y requiere un sampler específico (`rolling`) que no es compatible con los samplers estándar de Cosmos Framework.
+El modelo resuelve el problema de predecir la evolución de una escena robótica a partir de una o varias frames de entrada y una secuencia de acciones articulares. Es relevante porque ofrece un world model de tamaño medio, exportado a Hugging Face, que puede integrarse en pipelines de simulación, planificación y generación de datos sintéticos para robótica. Su ventana de contexto es de 333 frames de video a 15 fps, con una resolución de 224×336 píxeles, y requiere un sampler específico (`rolling`) que no es compatible con los samplers estándar de Cosmos Framework.
 
 ## Especificaciones técnicas
 
@@ -71,7 +71,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OneWorld-AI/abc-rolling-nano
+- Modelo en Hugging Face: https://huggingface.co/OneWorld-AI/abc-rolling-nano
 - Space de visualización de checkpoints: https://huggingface.co/spaces/Z1j1n/abc-rolling-nano-viewer
 - Repositorio de código (rama de inferencia): https://github.com/one-world-ai/cosmos-framework-mirror/tree/exp/004-abc-rolling-inference-pipeline
 - Pull request de la pipeline de inferencia: https://github.com/one-world-ai/cosmos-framework-mirror/pull/6

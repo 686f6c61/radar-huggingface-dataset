@@ -2,7 +2,7 @@
 
 ## Resumen
 
-qwen3.5-0.8b-ocr-gguf es un modelo de lenguaje y vision (vision-language model, VLM) de pequeno tamano publicado por el usuario RushabhShah122000 en HuggingFace. Se trata de un ajuste fino (finetune) orientado a OCR del modelo Qwen3.5-0.8B, posteriormente convertido a formato GGUF mediante Unsloth para su uso con llama.cpp. El modelo cuenta con 772.845.888 parametros totales (aproximadamente 0,77 mil millones), lo que lo situa en la gama ultra-ligera y lo hace apto para inferencia en hardware modesto.
+qwen3.5-0.8b-ocr-gguf es un modelo de lenguaje y vision (vision-language model, VLM) de pequeno tamano publicado por el usuario RushabhShah122000 en Hugging Face. Se trata de un ajuste fino (finetune) orientado a OCR del modelo Qwen3.5-0.8B, posteriormente convertido a formato GGUF mediante Unsloth para su uso con llama.cpp. El modelo cuenta con 772.845.888 parametros totales (aproximadamente 0,77 mil millones), lo que lo situa en la gama ultra-ligera y lo hace apto para inferencia en hardware modesto.
 
 El modelo esta etiquetado como vision-language-model y como conversacional, e incluye un fichero de proyeccion multimodal (mmproj) que permite procesar imagenes ademas de texto. Su proposito declarado es la extraccion de texto a partir de imagenes (OCR) dentro de un pipeline multimodal gestionado por llama.cpp.
 
@@ -83,6 +83,6 @@ No se dispone de informacion sobre modelos OCR comparables (por ejemplo, variant
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/RushabhShah122000/qwen3.5-0.8b-ocr-gguf
+- Repositorio Hugging Face: https://huggingface.co/RushabhShah122000/qwen3.5-0.8b-ocr-gguf
 - Unsloth (herramienta de entrenamiento y conversion): https://github.com/unslothai/unsloth
 - llama.cpp (motor de inferencia GGUF): no se proporciona enlace directo en la informacion, pero es el runtime implicito por los tags y los comandos de ejemplo.

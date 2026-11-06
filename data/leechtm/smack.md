@@ -67,6 +67,6 @@ No se ha podido establecer una comparativa con modelos similares, ya que la info
 
 ## Enlaces
 
-- [HuggingFace - LeechTM/SMACK](https://huggingface.co/LeechTM/SMACK)
+- [Hugging Face - LeechTM/SMACK](https://huggingface.co/LeechTM/SMACK)
 - [Perfil de YouTube de LeechTM](https://www.youtube.com/c/LeechTM/about)
 - [Sitio web de LeechTM](https://www.leechtm.com/)

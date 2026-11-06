@@ -83,7 +83,7 @@ No se han encontrado comparativas oficiales con otros modelos VLN fuera del ecos
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Eku127/swiftvln-satnav-qwen3vl-2b-1ep-f32s4-overlap0-pf-h8-pool-s2-noembed
+- Hugging Face: https://huggingface.co/Eku127/swiftvln-satnav-qwen3vl-2b-1ep-f32s4-overlap0-pf-h8-pool-s2-noembed
 - Repositorio SwiftVLN (código de entrenamiento y evaluación): https://github.com/Eku127/SwiftVLN
 - Repositorio SatNav (entornos, datasets y herramientas de evaluación): https://github.com/Eku127/SatNav
 - Guía de evaluación de SwiftVLN: https://github.com/Eku127/SwiftVLN/blob/master/docs/zh-CN/evaluation/README.md

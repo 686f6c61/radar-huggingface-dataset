@@ -84,7 +84,7 @@ La comparativa con alternativas externas de la misma categoria (modelos de ~0,8 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SZLHOLDINGS/SZL-FreeEnergy-0.8B-v1
+- Modelo en Hugging Face: https://huggingface.co/SZLHOLDINGS/SZL-FreeEnergy-0.8B-v1
 - Modelo base: https://huggingface.co/SZLHOLDINGS/szl-receiptagent-qwen35-0.8b-sft-v3
 - Dataset de entrenamiento: https://huggingface.co/datasets/SZLHOLDINGS/free-energy-reasoning-sft-v1
 - Modelo de la wave w24 (condicion de comparacion): https://huggingface.co/SZLHOLDINGS/SZL-Reasoning-0.8B-v1

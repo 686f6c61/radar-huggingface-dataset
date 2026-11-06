@@ -72,12 +72,12 @@ No disponible. No se ha encontrado informacion sobre otros sistemas de planifica
 - El repositorio registra 0 descargas y 0 likes, y un tamano de 0.0 GB, lo que sugiere que puede estar incompleto o ser un artefacto experimental sin validacion externa.
 - La licencia no esta especificada: no se puede determinar si el codigo y el modelo son utilizables en produccion comercial sin riesgo legal.
 - El entrenamiento del modelo no esta publicado: no es posible auditar el proceso de ajuste ni reproducir los resultados.
-- La model card menciona "Sol11" en el titulo mientras que el identificador de HuggingFace dice "Sol14"; existe una discrepancia que conviene aclarar con el autor.
+- La model card menciona "Sol11" en el titulo mientras que el identificador de Hugging Face dice "Sol14"; existe una discrepancia que conviene aclarar con el autor.
 - No hay informacion sobre la calidad de las predicciones de fin de vida ni sobre la robustez del planificador ante datos fuera de distribucion.
 - El sistema esta disenado especificamente para el formato de la competicion NORA BatterySwapAI 2026; su aplicabilidad a otros escenarios de intercambio de baterias no esta demostrada.
 - No se proporcionan datos sobre sesgos, alucinaciones o limitaciones de contexto, al no ser un modelo de lenguaje.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/YassY-The-AlchemYst/YassYBS26Sol14
-- Perfil del autor en HuggingFace: https://huggingface.co/YassY-The-AlchemYst
+- Repositorio Hugging Face: https://huggingface.co/YassY-The-AlchemYst/YassYBS26Sol14
+- Perfil del autor en Hugging Face: https://huggingface.co/YassY-The-AlchemYst

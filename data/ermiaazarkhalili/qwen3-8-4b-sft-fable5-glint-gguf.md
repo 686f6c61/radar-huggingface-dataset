@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento publicados para este checkpoint, por lo qu
 
 ## Enlaces
 
-- Repositorio HuggingFace: [ermiaazarkhalili/Qwen3.8-4B-SFT-Fable5-Glint-GGUF](https://huggingface.co/ermiaazarkhalili/Qwen3.8-4B-SFT-Fable5-Glint-GGUF)
+- Repositorio Hugging Face: [ermiaazarkhalili/Qwen3.8-4B-SFT-Fable5-Glint-GGUF](https://huggingface.co/ermiaazarkhalili/Qwen3.8-4B-SFT-Fable5-Glint-GGUF)
 - Repositorio de pesos completos: [ermiaazarkhalili/Qwen3.8-4B-SFT-Fable5-Glint](https://huggingface.co/ermiaazarkhalili/Qwen3.8-4B-SFT-Fable5-Glint)
 - Modelo base: [empero-ai/Qwen3.8-4B](https://huggingface.co/empero-ai/Qwen3.8-4B)
 - GitHub de la serie Qwen3.8: [https://github.com/QwenLM/Qwen3.8](https://github.com/QwenLM/Qwen3.8)

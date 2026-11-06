@@ -84,7 +84,7 @@ No se dispone de información sobre otros modelos comparables en la misma catego
 
 ## Enlaces
 
-- [HuggingFace - saidutta69/cactus-needle-toolcall-lora](https://huggingface.co/saidutta69/cactus-needle-toolcall-lora)
+- [Hugging Face - saidutta69/cactus-needle-toolcall-lora](https://huggingface.co/saidutta69/cactus-needle-toolcall-lora)
 - [Repositorio GitHub - instax-dutta/cactus-needle-toolcall-lora](https://github.com/instax-dutta/cactus-needle-toolcall-lora)
 - [Informe técnico en GitHub Gist](https://gist.github.com/instax-dutta/14704f058eb630f6b3095faa61c5c7ac)
 - [Modelo base - Cactus-Compute/needle2](https://huggingface.co/Cactus-Compute/needle2)

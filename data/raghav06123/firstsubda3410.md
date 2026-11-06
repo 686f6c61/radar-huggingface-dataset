@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Raghav06123/Firstsubda3410 es un artefacto publicado en HuggingFace por el usuario Raghav06123 bajo licencia MIT, orientado a la clasificacion de enzimas mediante numeros EC (Enzyme Commission). A pesar de la nomenclatura habitual de los repositorios de modelos, no se trata de un modelo de lenguaje neuronal ni de una red profunda: la model card describe un pipeline de inferencia basado en recuperacion por similitud (kNN sobre k-mers con reordenamiento por alineamiento local Smith-Waterman) que asigna un numero EC a cada secuencia proteica transfiriendo la etiqueta de las enzimas de entrenamiento mas parecidas.
+Raghav06123/Firstsubda3410 es un artefacto publicado en Hugging Face por el usuario Raghav06123 bajo licencia MIT, orientado a la clasificacion de enzimas mediante numeros EC (Enzyme Commission). A pesar de la nomenclatura habitual de los repositorios de modelos, no se trata de un modelo de lenguaje neuronal ni de una red profunda: la model card describe un pipeline de inferencia basado en recuperacion por similitud (kNN sobre k-mers con reordenamiento por alineamiento local Smith-Waterman) que asigna un numero EC a cada secuencia proteica transfiriendo la etiqueta de las enzimas de entrenamiento mas parecidas.
 
 El sistema opera en tres fases: un prefiltrado con vectores TF-IDF de presencia de 5-mers y similitud coseno contra 186.000 secuencias unicas de entrenamiento (top 1.000 candidatas por consulta), un reordenamiento mediante alineamiento local Smith-Waterman con matriz BLOSUM62 implementado con `pyopal`, y una votacion ponderada por puntuacion de alineamiento entre los aciertos dentro del 10% del mejor hit. Incluye mecanismos de respaldo (fallback) al vecino mas cercano por k-mers si se agota un presupuesto temporal de 480 s, y a la EC mas frecuente si no hay candidatas.
 
@@ -76,9 +76,9 @@ Rendimiento en tiempo de ejecucion declarado: 11.367 entradas de validacion proc
 
 | Sistema | Enfoque | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Raghav06123/Firstsubda3410 | kNN sobre 5-mers + Smith-Waterman + votacion | no aplica (base de 186k secuencias) | longitud proteica arbitraria | L1 0,943 / L4 0,746 (hold-out ponderado propio) | MIT | HuggingFace, 0 descargas, pesos aparentemente no incluidos |
+| Raghav06123/Firstsubda3410 | kNN sobre 5-mers + Smith-Waterman + votacion | no aplica (base de 186k secuencias) | longitud proteica arbitraria | L1 0,943 / L4 0,746 (hold-out ponderado propio) | MIT | Hugging Face, 0 descargas, pesos aparentemente no incluidos |
 | Herramientas de anotacion por homologia tipo BLAST + transferencia de EC | Alineamiento contra bases de referencia | no aplica | longitud proteica arbitraria | no disponible en esta ficha | variable segun herramienta y base | ampliamente disponibles |
-| Modelos neuronales de prediccion de EC (familia CLEAN, ProteinBERT, ESM con cabeza de clasificacion) | Redes profundas sobre embeddings proteicos | millones a miles de millones | limitado por longitud maxima de secuencia | no disponible en esta ficha | variable (MIT, Apache-2.0, etc.) | HuggingFace y GitHub |
+| Modelos neuronales de prediccion de EC (familia CLEAN, ProteinBERT, ESM con cabeza de clasificacion) | Redes profundas sobre embeddings proteicos | millones a miles de millones | limitado por longitud maxima de secuencia | no disponible en esta ficha | variable (MIT, Apache-2.0, etc.) | Hugging Face y GitHub |
 
 No se dispone de datos de benchmarks comparativos directos entre este artefacto y las alternativas citadas en la informacion proporcionada; la comparacion es cualitativa.
 
@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks comparativos directos entre este artefacto 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Raghav06123/Firstsubda3410
+- Repositorio en Hugging Face: https://huggingface.co/Raghav06123/Firstsubda3410
 - `pyopal` (alineamiento Smith-Waterman con SIMD): no se proporciona enlace en la informacion disponible
 - Documentacion de numeros EC (Enzyme Commission): no se proporciona enlace en la informacion disponible
 - Paper, blog o demo asociados: no disponible

@@ -36,7 +36,7 @@ No hay informacion disponible sobre el numero de tokens de entrenamiento, la com
 
 - Reconocimiento automatico del habla en kurdo sorani: transcripcion de audio a texto en el dialecto sorani, con salida conversacional segun las etiquetas del repositorio.
 - Procesamiento multimodal de audio: el modelo requiere cargar el fichero mmproj junto con el GGUF para poder procesar la entrada de audio en llama.cpp.
-- Compatibilidad con endpoints: la etiqueta endpoints_compatible indica que puede exponerse detras de una API compatible con los endpoints de HuggingFace en el ecosistema de despliegue.
+- Compatibilidad con endpoints: la etiqueta endpoints_compatible indica que puede exponerse detras de una API compatible con los endpoints de Hugging Face en el ecosistema de despliegue.
 - Ejecucion local sin GPU de datacenter: las cuantizaciones de menor tamano permiten inferencia en CPU y en GPUs de consumo.
 - Idioma unico documentado (ku): no hay evidencia en la informacion disponible de capacidades multilingues, de traduccion o de generacion de texto general.
 - No se documentan capacidades de tool calling, function calling, agentes, razonamiento multi-paso, vision ni audio generativo.
@@ -97,7 +97,7 @@ La ventaja estructural de este modelo es la licencia Apache 2.0 combinada con un
 
 ## Enlaces
 
-- Modelo cuantizado en HuggingFace: https://huggingface.co/mradermacher/brwa-qwen3-sorani-endpoint-GGUF
+- Modelo cuantizado en Hugging Face: https://huggingface.co/mradermacher/brwa-qwen3-sorani-endpoint-GGUF
 - Modelo base: https://huggingface.co/BRWA-AI/brwa-qwen3-sorani-endpoint
 - Pagina de resumen y descargas del autor para este modelo: https://hf.tst.eu/model#brwa-qwen3-sorani-endpoint-GGUF
 - Ficheros GGUF (ejemplo Q4_K_M): https://huggingface.co/mradermacher/brwa-qwen3-sorani-endpoint-GGUF/resolve/main/brwa-qwen3-sorani-endpoint.Q4_K_M.gguf

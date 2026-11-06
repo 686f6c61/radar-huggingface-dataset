@@ -76,10 +76,10 @@ No se han publicado resultados de benchmarks estandar en la informacion disponib
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| finbot-slm | 360M (base) + LoRA | no disponible | Destilación educativa en español | Apache 2.0 | HuggingFace (adaptador PEFT) |
-| HuggingFaceTB/SmolLM2-360M-Instruct | 360M | no disponible en la informacion proporcionada | Modelo base generalista | Apache 2.0 | HuggingFace |
-| SmolLM2-135M-Instruct | 135M | no disponible en la informacion proporcionada | Modelo base generalista mas pequeno | Apache 2.0 | HuggingFace |
-| Qwen2.5-0.5B-Instruct | 500M | no disponible en la informacion proporcionada | Modelo generalista multilingue | Apache 2.0 | HuggingFace |
+| finbot-slm | 360M (base) + LoRA | no disponible | Destilación educativa en español | Apache 2.0 | Hugging Face (adaptador PEFT) |
+| HuggingFaceTB/SmolLM2-360M-Instruct | 360M | no disponible en la informacion proporcionada | Modelo base generalista | Apache 2.0 | Hugging Face |
+| SmolLM2-135M-Instruct | 135M | no disponible en la informacion proporcionada | Modelo base generalista mas pequeno | Apache 2.0 | Hugging Face |
+| Qwen2.5-0.5B-Instruct | 500M | no disponible en la informacion proporcionada | Modelo generalista multilingue | Apache 2.0 | Hugging Face |
 
 La comparación relevante es frente al propio modelo base: el adaptador mejora de forma marcada la nota en el examen específico de dominio (1,33 a 8,58) a costa de un ajuste muy estrecho a 162 ejemplos, lo que reduce la generalidad frente a SmolLM2-360M-Instruct en tareas fuera de dominio.
 
@@ -96,7 +96,7 @@ La comparación relevante es frente al propio modelo base: el adaptador mejora d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/EumenesXIII/finbot-slm
+- Hugging Face: https://huggingface.co/EumenesXIII/finbot-slm
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct
 - Librería PEFT: https://github.com/huggingface/peft
 - Transformers: https://github.com/huggingface/transformers

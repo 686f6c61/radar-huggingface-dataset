@@ -2,7 +2,7 @@
 
 ## Resumen
 
-qwen3.5-4b-prune_24 es una versión podada del modelo Qwen/Qwen3.5-4B, publicada por el usuario mrysh en HuggingFace. No se trata de un modelo entrenado para uso general, sino de un artefacto experimental creado para un benchmark de poda (pruning) que compara cuatro modelos base con ocho variantes de poda cada uno, contrastándolas además con cuantización. La evaluación se realiza sobre BFCL, hiring-bias y MedQA con vLLM.
+qwen3.5-4b-prune_24 es una versión podada del modelo Qwen/Qwen3.5-4B, publicada por el usuario mrysh en Hugging Face. No se trata de un modelo entrenado para uso general, sino de un artefacto experimental creado para un benchmark de poda (pruning) que compara cuatro modelos base con ocho variantes de poda cada uno, contrastándolas además con cuantización. La evaluación se realiza sobre BFCL, hiring-bias y MedQA con vLLM.
 
 La técnica aplicada es una esparsidad semiestructurada 2:4 sobre las capas lineales del decodificador, generada con NVIDIA ModelOpt 0.46.0rc1 (SparseGPT) usando un conjunto de calibración de 512 muestras mixtas. Esto implica que dos de cada cuatro pesos consecutivos son cero (50,0% de ceros), pero el fichero se almacena en formato denso, por lo que no hay reducción de tamaño ni ganancia de velocidad sin un runtime que soporte esparsidad.
 
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Esparsidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3.5-4b-prune_24 | 4.205.751.296 | no disponible | 2:4 semiestructurada (50% ceros, fichero denso) | Apache 2.0 | HuggingFace (mrysh/qwen3.5-4b-prune_24) |
-| Qwen/Qwen3.5-4B (base) | 4.205.751.296 (según este artefacto) | no disponible | ninguna | Apache 2.0 | HuggingFace (Qwen/Qwen3.5-4B) |
+| qwen3.5-4b-prune_24 | 4.205.751.296 | no disponible | 2:4 semiestructurada (50% ceros, fichero denso) | Apache 2.0 | Hugging Face (mrysh/qwen3.5-4b-prune_24) |
+| Qwen/Qwen3.5-4B (base) | 4.205.751.296 (según este artefacto) | no disponible | ninguna | Apache 2.0 | Hugging Face (Qwen/Qwen3.5-4B) |
 | Otras variantes de poda del benchmark | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Versiones cuantizadas del modelo base | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -83,7 +83,7 @@ La comparación relevante es contra el modelo base sin podar: mismo número de p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mrysh/qwen3.5-4b-prune_24
+- Modelo en Hugging Face: https://huggingface.co/mrysh/qwen3.5-4b-prune_24
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - NVIDIA ModelOpt (librería de poda): no disponible en la información proporcionada
 - Paper de SparseGPT: no disponible en la información proporcionada

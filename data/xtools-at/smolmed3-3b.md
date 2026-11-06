@@ -1,7 +1,7 @@
 # xtools-at/SmolMed3-3B
 
 ## Resumen
-SmolMed3-3B es un ajuste fino mediante LoRA del modelo SmolLM3-3B orientado a razonamiento medico y a tareas de respuesta a preguntas (question answering). Lo publica el usuario xtools-at en HuggingFace y parte de un modelo intermedio ya modificado, K0D3IN/SmolLM3-3B-Instruct-heretic, sobre el que se ha entrenado con el dataset mamachang/medical-reasoning. Hereda por tanto el tamano de 3 000 millones de parametros de la familia SmolLM3 de HuggingFace.
+SmolMed3-3B es un ajuste fino mediante LoRA del modelo SmolLM3-3B orientado a razonamiento medico y a tareas de respuesta a preguntas (question answering). Lo publica el usuario xtools-at en Hugging Face y parte de un modelo intermedio ya modificado, K0D3IN/SmolLM3-3B-Instruct-heretic, sobre el que se ha entrenado con el dataset mamachang/medical-reasoning. Hereda por tanto el tamano de 3 000 millones de parametros de la familia SmolLM3 de Hugging Face.
 
 El modelo resuelve el caso de uso de asistentes clinicos ligeros, triaje de sintomas y respuesta a preguntas sobre literatura medica en ingles, con la ventaja de que 3B parametros permite desplegarlo en una unica GPU de consumo. Su relevancia actual esta en la tendencia a especializar modelos pequenos mediante LoRA en lugar de entrenar desde cero, lo que reduce coste y huella de computo.
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| SmolMed3-3B | 3B (+ adaptador LoRA) | No disponible (base: 128 000 tokens) | Apache 2.0 | HuggingFace, safetensors, TGI |
-| SmolLM3-3B (base) | 3B | 128 000 tokens | Apache 2.0 | HuggingFace, safetensors, transformers |
-| Qwen2.5-3B | 3,09B | 32 768 tokens (hasta 131 072 con configuracion) | Licencia Qwen Research (consultar en su model card) | HuggingFace, safetensors |
-| Llama-3.2-3B | 3,2B | 128 000 tokens | Llama 3.2 Community License | HuggingFace, requiere aceptacion de terminos |
+| SmolMed3-3B | 3B (+ adaptador LoRA) | No disponible (base: 128 000 tokens) | Apache 2.0 | Hugging Face, safetensors, TGI |
+| SmolLM3-3B (base) | 3B | 128 000 tokens | Apache 2.0 | Hugging Face, safetensors, transformers |
+| Qwen2.5-3B | 3,09B | 32 768 tokens (hasta 131 072 con configuracion) | Licencia Qwen Research (consultar en su model card) | Hugging Face, safetensors |
+| Llama-3.2-3B | 3,2B | 128 000 tokens | Llama 3.2 Community License | Hugging Face, requiere aceptacion de terminos |
 
 No existen datos de benchmarks de SmolMed3-3B que permitan comparar rendimiento real frente a estas alternativas. Los datos de los modelos comparados proceden de su documentacion publica y no se han verificado en la busqueda web realizada, que devolvio exclusivamente resultados no relacionados (maquinas de grabado laser de la marca xTool).
 
@@ -75,12 +75,12 @@ No existen datos de benchmarks de SmolMed3-3B que permitan comparar rendimiento 
 - Solo se declara soporte de ingles. El uso en castellano no esta garantizado ni documentado.
 - El repositorio no publica informacion sobre el dataset de ajuste, por lo que no se puede evaluar sesgo demografico, cobertura de patologias ni fuga de datos personales.
 - Licencia Apache 2.0, que permite uso comercial, pero el modelo base y el dataset pueden tener condiciones adicionales que conviene revisar antes de un despliegue en produccion.
-- Sin validacion de la comunidad: 0 descargas y 0 "likes" en HuggingFace. No debe usarse como referencia sin una evaluacion propia.
-- Los metadatos de HuggingFace registran la fecha de creacion como 19 de septiembre de 2026 y la de actualizacion como 19 de septiembre de 2026, una fecha futura, lo que apunta a un error en los metadatos.
+- Sin validacion de la comunidad: 0 descargas y 0 "likes" en Hugging Face. No debe usarse como referencia sin una evaluacion propia.
+- Los metadatos de Hugging Face registran la fecha de creacion como 19 de septiembre de 2026 y la de actualizacion como 19 de septiembre de 2026, una fecha futura, lo que apunta a un error en los metadatos.
 - El tamano del repositorio sugiere que solo contiene el adaptador LoRA; un intento de carga directa puede fallar si se espera un modelo completo.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/xtools-at/SmolMed3-3B
+- Modelo en Hugging Face: https://huggingface.co/xtools-at/SmolMed3-3B
 - Modelo base del ajuste: https://huggingface.co/K0D3IN/SmolLM3-3B-Instruct-heretic
 - Modelo original de la familia: https://huggingface.co/HuggingFaceTB/SmolLM3-3B
 - Dataset de entrenamiento: https://huggingface.co/datasets/mamachang/medical-reasoning

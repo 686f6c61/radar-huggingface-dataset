@@ -23,7 +23,7 @@ A pesar de la falta de especificaciones técnicas detalladas, la disponibilidad 
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información pública sobre la arquitectura interna del modelo original Phoenix-X-26B-A4B. Según las etiquetas de HuggingFace, se trata de un modelo creado mediante mergekit, lo que indica que es una fusión de varios modelos base, probablemente con una arquitectura de mezcla de expertos (MoE) dado el sufijo "A4B" en el nombre (que sugiere 4 mil millones de parámetros activos). Sin embargo, este dato no está confirmado en la documentación.
+No se dispone de información pública sobre la arquitectura interna del modelo original Phoenix-X-26B-A4B. Según las etiquetas de Hugging Face, se trata de un modelo creado mediante mergekit, lo que indica que es una fusión de varios modelos base, probablemente con una arquitectura de mezcla de expertos (MoE) dado el sufijo "A4B" en el nombre (que sugiere 4 mil millones de parámetros activos). Sin embargo, este dato no está confirmado en la documentación.
 
 El proceso de cuantización realizado por mradermacher convierte los pesos originales en formato safetensors a GGUF, utilizando cuantización estática sin imatrix. No se proporcionan detalles sobre el dataset de entrenamiento, el número de tokens, ni si se aplicaron técnicas como RLHF o DPO.
 
@@ -73,6 +73,6 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Phoenix-X-26B-A4B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Phoenix-X-26B-A4B-GGUF
 - Modelo original (Vortex5): https://huggingface.co/Vortex5/Phoenix-X-26B-A4B
 - Página de resumen y descargas: https://hf.tst.eu/model#Phoenix-X-26B-A4B-GGUF

@@ -95,8 +95,8 @@ No se dispone de datos de benchmarks absolutos ni de otros modelos comparables d
 
 ## Enlaces
 
-- HuggingFace (esta cuantización): https://huggingface.co/b2z/Smaug-Flash-oQ8-mtp
-- Modelo base en HuggingFace: https://huggingface.co/abacusai/Smaug-Flash
+- Hugging Face (esta cuantización): https://huggingface.co/b2z/Smaug-Flash-oQ8-mtp
+- Modelo base en Hugging Face: https://huggingface.co/abacusai/Smaug-Flash
 - Modelo original de DeepSeek: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
 - Página de Abacus.AI: https://abacus.ai
-- Organización Abacus.AI en HuggingFace: https://huggingface.co/abacusai
+- Organización Abacus.AI en Hugging Face: https://huggingface.co/abacusai

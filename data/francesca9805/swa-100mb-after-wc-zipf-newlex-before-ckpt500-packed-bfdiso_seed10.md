@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `swa-100mb-after-wc-zipf-newlex-before-ckpt500-packed-bfdiso_seed10` es un ajuste fino de generación de texto publicado por el usuario francesca9805 en HuggingFace. Se trata de un transformer decoder-only de tipo GPT-2 (así lo indica el tag `gpt2` del repositorio) con 124.770.816 parámetros totales, según los datos de los archivos safetensors. Deriva del modelo base `francesca9805/ppt-wc-zipf-newlex-swa-before-100mb-packed-bfdiso_seed10` y se ha entrenado mediante SFT (supervised fine-tuning) con la librería TRL.
+El modelo `swa-100mb-after-wc-zipf-newlex-before-ckpt500-packed-bfdiso_seed10` es un ajuste fino de generación de texto publicado por el usuario francesca9805 en Hugging Face. Se trata de un transformer decoder-only de tipo GPT-2 (así lo indica el tag `gpt2` del repositorio) con 124.770.816 parámetros totales, según los datos de los archivos safetensors. Deriva del modelo base `francesca9805/ppt-wc-zipf-newlex-swa-before-100mb-packed-bfdiso_seed10` y se ha entrenado mediante SFT (supervised fine-tuning) con la librería TRL.
 
 Por el nombre del repositorio y el del modelo base se deduce que forma parte de una línea de experimentación de investigación sobre tokenizadores (`newlex`, `zipf`), posiblemente atención de ventana deslizante (`swa`), empaquetado de secuencias (`packed`), precisión bf16 y control de semilla (`seed10`). La model card, sin embargo, no documenta el conjunto de datos, la composición del entrenamiento, la longitud de contexto ni los idiomas soportados.
 
@@ -36,7 +36,7 @@ El entrenamiento se ha realizado mediante SFT (supervised fine-tuning) con TRL 0
 - Tool calling / function calling: no documentado.
 - Soporte de agentes o razonamiento multi-paso: no documentado.
 - Modo thinking, visión o audio: no documentado.
-- Compatibilidad con Text Generation Inference (tag `text-generation-inference`) y con endpoints de HuggingFace (tag `endpoints_compatible`) a nivel de despliegue, no de capacidad funcional.
+- Compatibilidad con Text Generation Inference (tag `text-generation-inference`) y con endpoints de Hugging Face (tag `endpoints_compatible`) a nivel de despliegue, no de capacidad funcional.
 
 ## Casos de uso
 
@@ -61,17 +61,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
   - int4: en torno a 65 MB.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM (GTX 1050 Ti, GTX 1650, RTX 3050, RTX 4090, A100, H100). Modelos de este tamaño quedan sobredimensionados en GPUs de gama alta.
 - Cabe en GPU de consumo: sí, en prácticamente cualquier GPU de consumo actual e incluso en CPU sin GPU dedicada.
-- Opciones de despliegue: `transformers` con `pipeline` (método indicado en la model card), Text Generation Inference (tag `text-generation-inference`) y endpoints de HuggingFace (tag `endpoints_compatible`). No se confirma compatibilidad con llama.cpp, Ollama o vLLM, aunque al ser una arquitectura GPT-2 estándar podría convertirse a GGUF.
+- Opciones de despliegue: `transformers` con `pipeline` (método indicado en la model card), Text Generation Inference (tag `text-generation-inference`) y endpoints de Hugging Face (tag `endpoints_compatible`). No se confirma compatibilidad con llama.cpp, Ollama o vLLM, aunque al ser una arquitectura GPT-2 estándar podría convertirse a GGUF.
 - Latencia y throughput: no disponibles. Por el tamaño del modelo, la latencia sería muy baja en cualquier hardware moderno, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| Este modelo | 124,77 M | no disponible | no disponible | HuggingFace (0 descargas) | no disponible |
-| GPT-2 small | 124 M | 1024 tokens | MIT (modificada) | HuggingFace | benchmarks publicos disponibles en su model card |
-| DistilGPT-2 | 82 M | 1024 tokens | Apache 2.0 | HuggingFace | benchmarks publicos disponibles en su model card |
-| SmolLM2-135M | 135 M | 2048 tokens | Apache 2.0 | HuggingFace | benchmarks publicos disponibles en su model card |
+| Este modelo | 124,77 M | no disponible | no disponible | Hugging Face (0 descargas) | no disponible |
+| GPT-2 small | 124 M | 1024 tokens | MIT (modificada) | Hugging Face | benchmarks publicos disponibles en su model card |
+| DistilGPT-2 | 82 M | 1024 tokens | Apache 2.0 | Hugging Face | benchmarks publicos disponibles en su model card |
+| SmolLM2-135M | 135 M | 2048 tokens | Apache 2.0 | Hugging Face | benchmarks publicos disponibles en su model card |
 
 No se dispone de métricas de este modelo que permitan una comparación cuantitativa directa con las alternativas; la comparación se limita a tamaño, contexto declarado, licencia y disponibilidad.
 
@@ -89,7 +89,7 @@ No se dispone de métricas de este modelo que permitan una comparación cuantita
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/swa-100mb-after-wc-zipf-newlex-before-ckpt500-packed-bfdiso_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/swa-100mb-after-wc-zipf-newlex-before-ckpt500-packed-bfdiso_seed10
 - Modelo base: https://huggingface.co/francesca9805/ppt-wc-zipf-newlex-swa-before-100mb-packed-bfdiso_seed10
 - Ejecución de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/w1hjqbwj
 - Repositorio de TRL: https://github.com/huggingface/trl

@@ -74,10 +74,10 @@ print(output["generated_text"])
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `francesca9805/arb-arab-10mb-ppt-Dp-10mb-packed-bfdiso_seed455` | 39.087.104 | no disponible | no disponible | HuggingFace, 0 descargas | Objeto de esta ficha; SFT sobre `goldfish-models/arb_arab_10mb` |
-| `goldfish-models/arb_arab_10mb` | no disponible | no disponible | no disponible | HuggingFace | Modelo base del anterior; mismo idioma objetivo (`arb`) |
-| `francesca9805/arb-arab-10mb-ppt-Dp-100mb-packed-bfd_seed10` | no disponible | no disponible | no disponible | HuggingFace, friendli.ai | Variante de la misma familia con corpus de 100 MB y semilla 10 |
-| `francesca9805/urd-arab-10mb-ppt-Dp-10mb-packed-bfdiso_seed10` | no disponible | no disponible | no disponible | HuggingFace | Variante de la misma familia centrada en urdu (`urd`) y semilla 10 |
+| `francesca9805/arb-arab-10mb-ppt-Dp-10mb-packed-bfdiso_seed455` | 39.087.104 | no disponible | no disponible | Hugging Face, 0 descargas | Objeto de esta ficha; SFT sobre `goldfish-models/arb_arab_10mb` |
+| `goldfish-models/arb_arab_10mb` | no disponible | no disponible | no disponible | Hugging Face | Modelo base del anterior; mismo idioma objetivo (`arb`) |
+| `francesca9805/arb-arab-10mb-ppt-Dp-100mb-packed-bfd_seed10` | no disponible | no disponible | no disponible | Hugging Face, friendli.ai | Variante de la misma familia con corpus de 100 MB y semilla 10 |
+| `francesca9805/urd-arab-10mb-ppt-Dp-10mb-packed-bfdiso_seed10` | no disponible | no disponible | no disponible | Hugging Face | Variante de la misma familia centrada en urdu (`urd`) y semilla 10 |
 
 No se dispone de datos de rendimiento comparado entre estas variantes en la informacion proporcionada.
 
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/arb-arab-10mb-ppt-Dp-10mb-packed-bfdiso_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/arb-arab-10mb-ppt-Dp-10mb-packed-bfdiso_seed455
 - Modelo base: https://huggingface.co/goldfish-models/arb_arab_10mb
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/7b18iwif
 - Variante de la misma familia (100 MB, semilla 10): https://huggingface.co/francesca9805/arb-arab-10mb-ppt-Dp-100mb-packed-bfd_seed10

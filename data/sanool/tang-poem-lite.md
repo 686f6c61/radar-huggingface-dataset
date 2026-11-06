@@ -2,7 +2,7 @@
 
 ## Resumen
 
-tang-poem-lite es un modelo de generacion de texto en chino clasico desarrollado por el usuario Sanool (Sanool), publicado en HuggingFace con licencia MIT. Se trata de un GPT-2 entrenado desde cero con 13.135.488 parametros (13,1 M) cuyo unico objetivo es escribir poesia regulada china (jueju y lushi de cinco y siete caracteres por verso). El repositorio ocupa 0,1 GB y el modelo cabe holgadamente en cualquier equipo, incluidas CPU de portatiles, segun indica su autor.
+tang-poem-lite es un modelo de generacion de texto en chino clasico desarrollado por el usuario Sanool (Sanool), publicado en Hugging Face con licencia MIT. Se trata de un GPT-2 entrenado desde cero con 13.135.488 parametros (13,1 M) cuyo unico objetivo es escribir poesia regulada china (jueju y lushi de cinco y siete caracteres por verso). El repositorio ocupa 0,1 GB y el modelo cabe holgadamente en cualquier equipo, incluidas CPU de portatiles, segun indica su autor.
 
 El problema que resuelve es acotado pero util: generar poemas con la forma correcta (numero de versos, numero de caracteres por verso, pausas y imagenes tipicas) sin necesidad de GPU ni de infraestructura de inferencia pesada. La arquitectura es un transformer decoder-only estilo GPT-2 de 6 capas, 8 cabezas de atencion y anchura oculta 384, con una ventana de contexto de solo 128 caracteres y un vocabulario de 6350 caracteres chinos (un caracter por token). Fue entrenado en una unica RTX 3060 de 12 GB durante unos 10 minutos.
 
@@ -78,8 +78,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Datos de entrenamiento | Licencia | Idiomas | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Sanool/tang-poem-lite | 13,1 M | 128 caracteres | 219.615 poemas de 全唐诗 y 全宋诗, ~10 M de caracteres, 10.000 pasos | MIT | Chino clasico (simplificado) | safetensors y ONNX en HuggingFace |
-| uer/gpt2-chinese-poem | Aproximadamente 100 M (segun el autor, ocho veces mayor) | No disponible en la informacion proporcionada | 800.000 poemas, ~100 M de caracteres, 200.000 pasos, cubre varios generos | No disponible en la informacion proporcionada | Chino clasico (tradicional) | HuggingFace |
+| Sanool/tang-poem-lite | 13,1 M | 128 caracteres | 219.615 poemas de 全唐诗 y 全宋诗, ~10 M de caracteres, 10.000 pasos | MIT | Chino clasico (simplificado) | safetensors y ONNX en Hugging Face |
+| uer/gpt2-chinese-poem | Aproximadamente 100 M (segun el autor, ocho veces mayor) | No disponible en la informacion proporcionada | 800.000 poemas, ~100 M de caracteres, 200.000 pasos, cubre varios generos | No disponible en la informacion proporcionada | Chino clasico (tradicional) | Hugging Face |
 | Otros modelos de poesia china | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La comparacion se limita a los dos modelos citados en la model card. Frente a uer/gpt2-chinese-poem, tang-poem-lite es aproximadamente ocho veces mas pequeno, se centra exclusivamente en poesia regulada, produce salida en caracteres simplificados y su entrenamiento es reproducible en una GPU domestica en diez minutos. No se dispone de datos verificados de otros modelos comparables en la informacion proporcionada, ni de evaluaciones que permitan afirmar cual genera mejor poesia.
@@ -100,7 +100,7 @@ La comparacion se limita a los dos modelos citados en la model card. Frente a ue
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sanool/tang-poem-lite
+- Modelo en Hugging Face: https://huggingface.co/Sanool/tang-poem-lite
 - Repositorio del corpus: https://github.com/chinese-poetry/chinese-poetry
 - Modelo comparable citado por el autor: https://huggingface.co/uer/gpt2-chinese-poem
 - Imagen de curvas de perdida incluida en el repositorio: `loss.png` en el propio repositorio del modelo

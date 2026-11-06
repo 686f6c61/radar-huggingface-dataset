@@ -23,7 +23,7 @@ En el momento de la consulta, el repositorio registra 0 descargas y 0 likes, con
 
 ## Arquitectura y entrenamiento
 
-El modelo base sobre el que se aplica este checkpoint es LongCat-Flash-Lite, identificado en HuggingFace como `meituan-longcat/LongCat-Flash-Lite`. No se dispone en la informacion proporcionada de detalles sobre su arquitectura, numero de parametros, composicion del dataset de entrenamiento ni si se aplicaron tecnicas de RLHF o DPO. La innovacion que describe la model card es el mecanismo de memoria condicional: un LLM amplia su capacidad mediante embeddings de n-gramas aprendidos que participan en el calculo del modelo, y EngramEdit aprovecha esa via para aplicar ediciones de conocimiento de forma desacoplada.
+El modelo base sobre el que se aplica este checkpoint es LongCat-Flash-Lite, identificado en Hugging Face como `meituan-longcat/LongCat-Flash-Lite`. No se dispone en la informacion proporcionada de detalles sobre su arquitectura, numero de parametros, composicion del dataset de entrenamiento ni si se aplicaron tecnicas de RLHF o DPO. La innovacion que describe la model card es el mecanismo de memoria condicional: un LLM amplia su capacidad mediante embeddings de n-gramas aprendidos que participan en el calculo del modelo, y EngramEdit aprovecha esa via para aplicar ediciones de conocimiento de forma desacoplada.
 
 El procedimiento de EngramEdit consiste en actualizar exclusivamente esas representaciones de memoria condicional mientras el backbone Transformer permanece fijo. El checkpoint ZsRE · 2K recoge el resultado de 2.000 ediciones procedentes del dataset ZsRE. Segun la documentacion, tras cargar el estado, los hechos corregidos se mantienen utilizables bajo expresiones alternativas y en cadenas de razonamiento multi-salto, sin degradar de forma apreciable el conocimiento no relacionado ni las capacidades generales. El ejemplo de uso oficial no requiere edicion adicional, generacion de expresiones ni preparacion de cache de frecuencias: basta con cargar el modelo base y aplicar `prepare_engramedit_model` sobre el directorio del estado descargado.
 
@@ -84,7 +84,7 @@ No se dispone de informacion sobre modelos comparables de la misma categoria en 
 
 ## Enlaces
 
-- HuggingFace (este checkpoint): https://huggingface.co/ModalityDance/EngramEdit-LongCat-Flash-Lite-ZsRE-2K
+- Hugging Face (este checkpoint): https://huggingface.co/ModalityDance/EngramEdit-LongCat-Flash-Lite-ZsRE-2K
 - Pagina del proyecto: https://modalitydance.github.io/EngramEdit/
 - Repositorio GitHub: https://github.com/ModalityDance/EngramEdit
 - Ejemplo de uso: https://github.com/ModalityDance/EngramEdit#usage-example

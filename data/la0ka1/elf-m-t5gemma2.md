@@ -6,7 +6,7 @@ ELF-M-T5Gemma2 es un modelo de difusion continuo para generacion de texto desarr
 
 El checkpoint combina 327 M de parametros en el transformer de difusion y 168 M en la cabeza de decodificacion, unos 495 M en total, con secuencias de entrenamiento de 1024 tokens. Se entreno durante 5 epocas con batch de 512 sobre OpenWebText, en ingles y sin filtrado. El muestreo emplea un sampler SDE con guiado por self-conditioning, controlado por los parametros `--sc` (escala de guiado) y `--nfe` (numero de pasos).
 
-Su relevancia es puramente investigadora: es una release de los autores del paper, no un producto pensado para uso downstream. No soporta instrucciones, tool calling ni conversacion, y su licencia deriva de los Gemma Terms of Use al haberse entrenado sobre salidas de un derivado de T5Gemma-2. A fecha de la ficha acumula 0 descargas y 1 like en HuggingFace.
+Su relevancia es puramente investigadora: es una release de los autores del paper, no un producto pensado para uso downstream. No soporta instrucciones, tool calling ni conversacion, y su licencia deriva de los Gemma Terms of Use al haberse entrenado sobre salidas de un derivado de T5Gemma-2. A fecha de la ficha acumula 0 descargas y 1 like en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -60,7 +60,7 @@ La perplejidad generativa se calcula como media sobre 3 semillas con 1024 muestr
 
 ## Requisitos de hardware
 
-- Tamano del checkpoint: 2,0 GB en el repositorio de HuggingFace, correspondiente a los pesos EMA en precision completa.
+- Tamano del checkpoint: 2,0 GB en el repositorio de Hugging Face, correspondiente a los pesos EMA en precision completa.
 - VRAM estimada en fp32: en torno a 2,0-2,5 GB solo para pesos, mas activaciones y buffers del sampler; se recomienda un margen de 4-6 GB para secuencias de 1024 tokens.
 - VRAM estimada en fp16/bf16: alrededor de 1,0-1,5 GB de pesos, con un consumo total previsible de 2-3 GB.
 - GPU de consumo: si cabe en tarjetas con 8 GB o mas (RTX 3060 12 GB, RTX 3070, RTX 4060 Ti, RTX 4070, RTX 3080, RTX 4090). En GPUs con 6 GB o menos el margen es muy ajustado.
@@ -75,7 +75,7 @@ No se dispone en la informacion proporcionada de datos de rendimiento, contexto 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ELF-M-T5Gemma2 | ~495 M (327 M transformer + 168 M cabeza) | 1024 tokens | Gen. PPL 19,3 con entropia 5,44 en OpenWebText (`--sc 2 --nfe 256`) | Gemma Terms of Use (codigo MIT) | HuggingFace, 0 descargas, 1 like |
+| ELF-M-T5Gemma2 | ~495 M (327 M transformer + 168 M cabeza) | 1024 tokens | Gen. PPL 19,3 con entropia 5,44 en OpenWebText (`--sc 2 --nfe 256`) | Gemma Terms of Use (codigo MIT) | Hugging Face, 0 descargas, 1 like |
 | Alternativas de la misma categoria (por ejemplo, otros modelos de difusion de lenguaje continuos) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -92,7 +92,7 @@ No se dispone en la informacion proporcionada de datos de rendimiento, contexto 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/la0ka1/ELF-M-T5Gemma2
+- Hugging Face: https://huggingface.co/la0ka1/ELF-M-T5Gemma2
 - Codigo: https://github.com/la0ka1/diffusing-scaled-text-embeddings
 - Pagina del proyecto: https://la0ka1.github.io/diffusing-scaled-text-embeddings/
 - Coleccion con todos los modelos de la release: https://huggingface.co/collections/la0ka1/diffusing-scaled-text-embeddings-6abd7ff3c91fd70bd749c197

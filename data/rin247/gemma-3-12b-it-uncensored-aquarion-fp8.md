@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Rin247/gemma-3-12b-it-Uncensored-Aquarion-FP8 (este) | 12,19 B | 128K | FP8 weight-only | no disponible | HuggingFace, sin descargas |
-| google/gemma-3-12b-it (base) | 12,19 B | 128K | BF16 | Gemma Terms of Use | HuggingFace oficial |
-| mradermacher/gemma-3-12b-it-uncensored-GGUF | 12,19 B | 128K | GGUF (varias) | no disponible | HuggingFace |
+| Rin247/gemma-3-12b-it-Uncensored-Aquarion-FP8 (este) | 12,19 B | 128K | FP8 weight-only | no disponible | Hugging Face, sin descargas |
+| google/gemma-3-12b-it (base) | 12,19 B | 128K | BF16 | Gemma Terms of Use | Hugging Face oficial |
+| mradermacher/gemma-3-12b-it-uncensored-GGUF | 12,19 B | 128K | GGUF (varias) | no disponible | Hugging Face |
 
 La comparativa se limita a variantes del mismo modelo base. No hay datos de rendimiento para ninguna de las tres, por lo que la elección entre ellas dependerá del formato de pesos (safetensors FP8 vs. GGUF) y de la facilidad de integración. La versión GGUF de mradermacher es probablemente más fácil de usar con llama.cpp y Ollama, mientras que esta versión FP8 requiere un motor compatible con la receta de cuantización personalizada.
 
@@ -79,7 +79,7 @@ La comparativa se limita a variantes del mismo modelo base. No hay datos de rend
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rin247/gemma-3-12b-it-Uncensored-Aquarion-FP8
+- Modelo en Hugging Face: https://huggingface.co/Rin247/gemma-3-12b-it-Uncensored-Aquarion-FP8
 - Modelo base Gemma 3 12B: https://huggingface.co/google/gemma-3-12b-it
 - Variante GGUF uncensored de mradermacher: https://huggingface.co/mradermacher/gemma-3-12b-it-uncensored-GGUF
 - Informe técnico de Gemma 3 (arXiv): https://arxiv.org/html/2503.19786

@@ -104,7 +104,7 @@ No disponible. La informacion proporcionada no incluye datos de otras politicas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tfrere/microduck-move-tipsy-zigzag-walk
+- Modelo en Hugging Face: https://huggingface.co/tfrere/microduck-move-tipsy-zigzag-walk
 - Perfil del autor: https://huggingface.co/tfrere
 - Espacio de Microduck Academy: https://huggingface.co/spaces/tfrere/microduck
 - Paper, repositorio de codigo o demo adicionales: no disponible en la informacion proporcionada.

@@ -79,9 +79,9 @@ El modelo supera a Qwen3.7-Plus en varios benchmarks de agente y codigo, y se ac
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-14B-Instruct-Turbo | 14.2B (15.18B en safetensors) | 32K nativo, 131K con YaRN | Hybrid DeltaNet + MHSA | Apache-2.0 | HuggingFace (safetensors, GGUF) |
-| Qwen3.8-27B | 27B | 32K nativo (estimado) | Hybrid DeltaNet | Apache-2.0 | HuggingFace (oficial) |
-| Qwen3.8-Flash-Next | 125B (6B activos) | no disponible | Sparse Attention + MoE | Apache-2.0 | HuggingFace (oficial) |
+| Qwen3.8-14B-Instruct-Turbo | 14.2B (15.18B en safetensors) | 32K nativo, 131K con YaRN | Hybrid DeltaNet + MHSA | Apache-2.0 | Hugging Face (safetensors, GGUF) |
+| Qwen3.8-27B | 27B | 32K nativo (estimado) | Hybrid DeltaNet | Apache-2.0 | Hugging Face (oficial) |
+| Qwen3.8-Flash-Next | 125B (6B activos) | no disponible | Sparse Attention + MoE | Apache-2.0 | Hugging Face (oficial) |
 | Qwen3.7-Plus | 397B (17B activos) | no disponible | MoE Hybrid | Propietaria (API) | API de Qwen |
 
 El modelo Turbo ofrece un rendimiento cercano al de 27B con la mitad de parametros, y supera a Qwen3.7-Plus en tareas de agente y codigo, aunque con una licencia abierta. No se dispone de datos de Qwen3-14B original para comparar directamente.
@@ -98,7 +98,7 @@ El modelo Turbo ofrece un rendimiento cercano al de 27B con la mitad de parametr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ewinregirgojr/Qwen3.8-14B-Instruct-Turbo
+- Modelo en Hugging Face: https://huggingface.co/ewinregirgojr/Qwen3.8-14B-Instruct-Turbo
 - Repositorio GGUF cuantizado: https://huggingface.co/ewinregirgojr/Qwen3.8-14B-Instruct-Turbo-GGUF
 - Repositorio oficial de la serie Qwen3.8: https://github.com/QwenLM/Qwen3.8
 - Repositorio oficial de la serie Qwen3: https://github.com/QwenLM/Qwen3

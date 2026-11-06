@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`xamiuz/llama-3.1-8b-ai-engineer` es un ajuste fino (fine-tuning) del modelo Meta Llama 3.1 8B Instruct, desarrollado por el usuario xamiuz y publicado en HuggingFace bajo licencia Apache 2.0. El modelo parte de la versión cuantizada en 4 bits de Unsloth (`unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit`) y se ha entrenado empleando la librería Unsloth, que el autor destaca por permitir un entrenamiento "2x más rápido". El nombre sugiere una especialización orientada a tareas de ingeniería de IA, aunque la model card no detalla el dataset ni el objetivo concreto del ajuste.
+`xamiuz/llama-3.1-8b-ai-engineer` es un ajuste fino (fine-tuning) del modelo Meta Llama 3.1 8B Instruct, desarrollado por el usuario xamiuz y publicado en Hugging Face bajo licencia Apache 2.0. El modelo parte de la versión cuantizada en 4 bits de Unsloth (`unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit`) y se ha entrenado empleando la librería Unsloth, que el autor destaca por permitir un entrenamiento "2x más rápido". El nombre sugiere una especialización orientada a tareas de ingeniería de IA, aunque la model card no detalla el dataset ni el objetivo concreto del ajuste.
 
 La relevancia de esta ficha es limitada: se trata de un modelo recién subido (creado el 3 de noviembre de 2026), con cero descargas y cero likes en el momento de la consulta, y sin documentación técnica más allá de la plantilla estándar de Unsloth. No se han publicado benchmarks, detalles del dataset de entrenamiento ni hiperparámetros.
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| xamiuz/llama-3.1-8b-ai-engineer | 8B | 128k (heredado) | Apache 2.0 | HuggingFace, 0 descargas | Fine-tune sin documentación ni benchmarks |
-| meta-llama/Llama-3.1-8B-Instruct | 8B | 128k | Llama 3.1 Community License | HuggingFace, ampliamente usado | Modelo base oficial, con evaluación publicada |
-| unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit | 8B | 128k | Apache 2.0 (según repo Unsloth) | HuggingFace | Checkpoint cuantizado 4-bit del que deriva este ajuste |
-| Mistral-7B-Instruct | 7B | 32k | Apache 2.0 | HuggingFace | Alternativa de tamaño similar, sin ajuste específico |
+| xamiuz/llama-3.1-8b-ai-engineer | 8B | 128k (heredado) | Apache 2.0 | Hugging Face, 0 descargas | Fine-tune sin documentación ni benchmarks |
+| meta-llama/Llama-3.1-8B-Instruct | 8B | 128k | Llama 3.1 Community License | Hugging Face, ampliamente usado | Modelo base oficial, con evaluación publicada |
+| unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit | 8B | 128k | Apache 2.0 (según repo Unsloth) | Hugging Face | Checkpoint cuantizado 4-bit del que deriva este ajuste |
+| Mistral-7B-Instruct | 7B | 32k | Apache 2.0 | Hugging Face | Alternativa de tamaño similar, sin ajuste específico |
 
 ## Limitaciones y advertencias
 
@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xamiuz/llama-3.1-8b-ai-engineer
+- Modelo en Hugging Face: https://huggingface.co/xamiuz/llama-3.1-8b-ai-engineer
 - Modelo base (Unsloth 4-bit): https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit
 - Repositorio Unsloth: https://github.com/unslothai/unsloth
 - Modelo original Meta Llama 3.1 8B Instruct: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un ajuste fino supervisado (SFT) con TRL sobre el checkpoint base `francesca9805/ppt-wc-uniform-newlex-isl-before-100mb-packed-bfdiso_seed3407`, publicado por la usuaria de HuggingFace `francesca9805`. Por el recuento real de parametros de sus safetensors (124.770.816) y la etiqueta de arquitectura `gpt2`, se trata de un transformer decoder-only de escala equivalente a GPT-2 small, entrenado sobre un corpus reducido: el propio nombre del modelo sugiere un experimento con unos 100 MB de datos empaquetados ("packed") y un vocabulario o lexico nuevo ("newlex").
+Este modelo es un ajuste fino supervisado (SFT) con TRL sobre el checkpoint base `francesca9805/ppt-wc-uniform-newlex-isl-before-100mb-packed-bfdiso_seed3407`, publicado por la usuaria de Hugging Face `francesca9805`. Por el recuento real de parametros de sus safetensors (124.770.816) y la etiqueta de arquitectura `gpt2`, se trata de un transformer decoder-only de escala equivalente a GPT-2 small, entrenado sobre un corpus reducido: el propio nombre del modelo sugiere un experimento con unos 100 MB de datos empaquetados ("packed") y un vocabulario o lexico nuevo ("newlex").
 
 El interes del checkpoint es fundamentalmente de investigacion, no de produccion. La ejecucion de entrenamiento enlazada en la model card pertenece al proyecto `new-tokenizers` de la Universidad de Groningen (`f-padovani-university-of-groningen`), lo que apunta a una linea de experimentos sobre tokenizacion; el sufijo `before-ckpt500` indica ademas que se trata de un punto de control intermedio, no necesariamente del modelo final de la serie.
 
@@ -90,7 +90,7 @@ No existe informacion de rendimiento de este modelo que permita una comparacion 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/isl-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/isl-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed3407
 - Modelo base: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-isl-before-100mb-packed-bfdiso_seed3407
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/agk3u8yi
 - Repositorio de TRL: https://github.com/huggingface/trl

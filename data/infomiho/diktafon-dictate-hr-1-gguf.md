@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 
 | Modelo | Parametros | Idiomas | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Diktafon Dictate HR 1 GGUF | ~980 M | croata (hr) | GGUF (Q5_K_M) | CC BY 4.0 | HuggingFace (este repo) |
-| infomiho/diktafon-dictate-hr-1 | ~980 M (mismo base) | croata (hr) | safetensors (modelo original) | CC BY 4.0 | HuggingFace |
-| NVIDIA Canary 1B v2 | ~1 000 M (modelo base) | multilingue (incluye croata) | NeMo / safetensors | CC BY 4.0 | HuggingFace (nvidia/canary-1b-v2) |
-| OpenAI Whisper large-v3 | ~1 550 M | multilingue (99 idiomas) | safetensors, GGML/GGUF (comunidad) | MIT | HuggingFace, repos de la comunidad |
+| Diktafon Dictate HR 1 GGUF | ~980 M | croata (hr) | GGUF (Q5_K_M) | CC BY 4.0 | Hugging Face (este repo) |
+| infomiho/diktafon-dictate-hr-1 | ~980 M (mismo base) | croata (hr) | safetensors (modelo original) | CC BY 4.0 | Hugging Face |
+| NVIDIA Canary 1B v2 | ~1 000 M (modelo base) | multilingue (incluye croata) | NeMo / safetensors | CC BY 4.0 | Hugging Face (nvidia/canary-1b-v2) |
+| OpenAI Whisper large-v3 | ~1 550 M | multilingue (99 idiomas) | safetensors, GGML/GGUF (comunidad) | MIT | Hugging Face, repos de la comunidad |
 
 Nota: los datos de parametros, licencia e idiomas de las alternativas se basan en informacion publica general; el repositorio de este modelo no incluye una comparativa oficial propia.
 
@@ -82,7 +82,7 @@ Nota: los datos de parametros, licencia e idiomas de las alternativas se basan e
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/infomiho/diktafon-dictate-hr-1-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/infomiho/diktafon-dictate-hr-1-GGUF
 - Modelo base (model card principal): https://huggingface.co/infomiho/diktafon-dictate-hr-1
 - Aplicacion Diktafon: https://diktafon.miho.dev
 - Runtime transcribe.cpp: https://github.com/handy-computer/transcribe.cpp

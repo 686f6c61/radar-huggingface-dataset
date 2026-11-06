@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-Atlassian-Q8-base-mlx | 27,36B | no disponible | MLX 8-bit affine | Apache-2.0 | HuggingFace, MLX |
-| Qwen3.8-27B (base original) | 27,36B | no disponible | bf16 | Apache-2.0 | HuggingFace |
-| lmstudio-community/Qwen3.8-27B-MLX-8bit | 27,36B | no disponible | MLX 8-bit | Apache-2.0 | HuggingFace |
-| Qwen3.8-27B-Atlassian-Q6-mlx | 27,36B | no disponible | MLX 6-bit | Apache-2.0 | HuggingFace (familia LeanZero) |
+| Qwen3.8-27B-Atlassian-Q8-base-mlx | 27,36B | no disponible | MLX 8-bit affine | Apache-2.0 | Hugging Face, MLX |
+| Qwen3.8-27B (base original) | 27,36B | no disponible | bf16 | Apache-2.0 | Hugging Face |
+| lmstudio-community/Qwen3.8-27B-MLX-8bit | 27,36B | no disponible | MLX 8-bit | Apache-2.0 | Hugging Face |
+| Qwen3.8-27B-Atlassian-Q6-mlx | 27,36B | no disponible | MLX 6-bit | Apache-2.0 | Hugging Face (familia LeanZero) |
 
 Las diferencias principales frente al checkpoint de lmstudio-community son la inclusión del sidecar MTP y el proceso de cuantización/muestreo utilizado. En términos de calidad, los datos del autor muestran una diferencia mínima (0.0446 vs 0.0453 en KLD).
 
@@ -90,7 +90,7 @@ Las diferencias principales frente al checkpoint de lmstudio-community son la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mihai-LeanZero/Qwen3.8-27B-Atlassian-Q8-base-mlx
+- Modelo en Hugging Face: https://huggingface.co/Mihai-LeanZero/Qwen3.8-27B-Atlassian-Q8-base-mlx
 - Write-up de LeanZero: https://leanzero.net/portfolio/atlassian-models
 - Repositorio Rapid-MLX: https://github.com/leanzero-srl/Rapid-MLX
 - Projecto CogniRunner: https://leanzero.net/portfolio/cognirunner

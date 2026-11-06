@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento de ninguno de los tres artefactos, por lo 
 
 ## Enlaces
 
-- HuggingFace (este repositorio): https://huggingface.co/luokelabs/gemma-4-26b-a4b-it-8bit
+- Hugging Face (este repositorio): https://huggingface.co/luokelabs/gemma-4-26b-a4b-it-8bit
 - Repositorio de origen del espejo: https://huggingface.co/mlx-community/gemma-4-26b-a4b-it-8bit
 - Modelo base: https://huggingface.co/google/gemma-4-26b-a4b-it
 - Licencia de Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license

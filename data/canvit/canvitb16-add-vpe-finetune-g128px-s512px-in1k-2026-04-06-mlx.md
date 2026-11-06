@@ -84,7 +84,7 @@ La comparacion relevante para CanViT no es tanto el numero de parametros como el
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/canvit/canvitb16-add-vpe-finetune-g128px-s512px-in1k-2026-04-06-mlx
+- Modelo en Hugging Face: https://huggingface.co/canvit/canvitb16-add-vpe-finetune-g128px-s512px-in1k-2026-04-06-mlx
 - Checkpoint fuente: https://huggingface.co/canvit/canvitb16-add-vpe-finetune-g128px-s512px-in1k-2026-04-06/tree/253afab329424a4efd2b3b58f0508b42e848de95
 - Paper (NeurIPS 2026, arXiv:2603.22570): https://arxiv.org/abs/2603.22570
 - Repositorio de codigo (MLX): https://github.com/m2b3/CanViT

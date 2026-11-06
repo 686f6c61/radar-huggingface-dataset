@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Hiro-Chemical-Insights_GGUF es un repositorio de HuggingFace publicado por el usuario Rilad el 11 de septiembre de 2026, que por su nombre y extension parece contener pesos en formato GGUF. No es, en sentido estricto, una ficha de modelo documentada: la model card es la plantilla por defecto de HuggingFace sin rellenar, con todos los campos marcados como "[More Information Needed]".
+Hiro-Chemical-Insights_GGUF es un repositorio de Hugging Face publicado por el usuario Rilad el 11 de septiembre de 2026, que por su nombre y extension parece contener pesos en formato GGUF. No es, en sentido estricto, una ficha de modelo documentada: la model card es la plantilla por defecto de Hugging Face sin rellenar, con todos los campos marcados como "[More Information Needed]".
 
 El repositorio acumula 0 descargas y 0 "likes" y no declara licencia, idiomas, pipeline ni modelo base. La unica etiqueta informativa es `arxiv:1910.09700`, que corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono en aprendizaje automatico, citado en la propia plantilla de model card y no una referencia a la arquitectura del modelo.
 
@@ -71,7 +71,7 @@ No disponible. Al desconocerse el modelo base y el numero de parametros, no es p
 
 - Licencia no declarada: sin licencia explicita no hay autorizacion clara para uso comercial ni para redistribucion, lo que desaconseja su integracion en productos.
 - Procedencia desconocida: no se indica el modelo base ni el proceso de cuantizacion, por lo que no se puede verificar la cadena de custodia de los pesos.
-- Model card vacia: es la plantilla generica de HuggingFace sin rellenar, lo que indica ausencia total de documentacion tecnica.
+- Model card vacia: es la plantilla generica de Hugging Face sin rellenar, lo que indica ausencia total de documentacion tecnica.
 - Sin validacion de la comunidad: 0 descargas y 0 "likes" implican que el artefacto no ha sido contrastado por terceros.
 - Riesgo de alucinacion: no evaluable, ya que no existe ningun estudio de calidad ni de fidelidad factual.
 - Posible discrepancia entre nombre y contenido: el identificador sugiere especializacion en quimica, pero no hay ninguna prueba de ello en el repositorio.
@@ -81,9 +81,9 @@ No disponible. Al desconocerse el modelo base y el numero de parametros, no es p
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Rilad/Hiro-Chemical-Insights_GGUF
+- Repositorio en Hugging Face: https://huggingface.co/Rilad/Hiro-Chemical-Insights_GGUF
 - Articulo citado en las etiquetas del repositorio (Lacoste et al., 2019, sobre estimacion de emisiones): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico referenciada en la plantilla: https://mlco2.github.io/impact#compute
-- Plantilla de model card de HuggingFace: https://github.com/huggingface/hub-docs/blob/main/modelcard.md?plain=1
+- Plantilla de model card de Hugging Face: https://github.com/huggingface/hub-docs/blob/main/modelcard.md?plain=1
 
 Nota: las busquedas web realizadas no devolvieron ningun resultado relacionado con este modelo. Los enlaces obtenidos correspondian a foros y articulos sobre plataformas de streaming de anime, sin ninguna conexion con el repositorio analizado, por lo que se han descartado.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SenseNova-Loop-9B-Preview es un modelo multimodal (image-text-to-text) desarrollado por SenseNova / OpenSenseNova, publicado originalmente en formato HuggingFace safetensors. Esta ficha describe la version GGUF no oficial distribuida por el usuario `annelo`, que combina un decodificador de texto cuantizado a Q4_K_M con un proyector de vision en F16, pensada para su uso con llama.cpp.
+SenseNova-Loop-9B-Preview es un modelo multimodal (image-text-to-text) desarrollado por SenseNova / OpenSenseNova, publicado originalmente en formato Hugging Face safetensors. Esta ficha describe la version GGUF no oficial distribuida por el usuario `annelo`, que combina un decodificador de texto cuantizado a Q4_K_M con un proyector de vision en F16, pensada para su uso con llama.cpp.
 
 El modelo base emplea una arquitectura de transformer con mecanismos de enrutamiento mHC (multi-head routing) y convoluciones recurrentes, ademas de una torre de vision heredada de Qwen3.5 para el procesamiento de imagenes. Con aproximadamente 14.150 millones de parametros totales segun el checkpoint safetensors, el modelo se posiciona en la gama de 9B-14B, con soporte para ingles y chino.
 
@@ -50,7 +50,7 @@ No se dispone de informacion sobre el numero de tokens de entrenamiento, la comp
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El autor unicamente reporta pruebas cualitativas: aritmetica basica correcta, reconocimiento de color y forma, y conteo visual. No se realizo comparacion numerica contra el modelo BF16 completo de HuggingFace.
+No se han publicado resultados de benchmarks en la informacion disponible. El autor unicamente reporta pruebas cualitativas: aritmetica basica correcta, reconocimiento de color y forma, y conteo visual. No se realizo comparacion numerica contra el modelo BF16 completo de Hugging Face.
 
 ## Requisitos de hardware
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativo en la informacion proporcionad
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/annelo/SenseNova-Loop-9B-Preview-Q4_K_M-Vision-GGUF
+- Repositorio Hugging Face: https://huggingface.co/annelo/SenseNova-Loop-9B-Preview-Q4_K_M-Vision-GGUF
 - Modelo base: https://huggingface.co/sensenova/SenseNova-Loop-9B-Preview
 - GGUF de texto Q8_0 de referencia: https://huggingface.co/notfakerv/SenseNova-Loop-9B-Preview-GGUF
 - llama.cpp: https://github.com/ggml-org/llama.cpp

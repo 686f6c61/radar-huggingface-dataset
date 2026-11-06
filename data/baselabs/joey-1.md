@@ -82,9 +82,9 @@ joey-1 es el mejor modelo por debajo de 4B en el Jev Decision Index 0.4 (puesto 
 
 | Modelo | Parametros | Decision Index 0.4 | AA Decision Index (réplica) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| **joey-1** | 2,7B | 63,30 | 62,9 | MIT | HuggingFace y Baseten Model APIs |
-| elephant-1 | 9B | 72,24 | 65,2 | no disponible | HuggingFace (baselabs/elephant-1) |
-| mammoth-1 | 27B | no disponible | 65,9 | no disponible | HuggingFace (baselabs/mammoth-1) |
+| **joey-1** | 2,7B | 63,30 | 62,9 | MIT | Hugging Face y Baseten Model APIs |
+| elephant-1 | 9B | 72,24 | 65,2 | no disponible | Hugging Face (baselabs/elephant-1) |
+| mammoth-1 | 27B | no disponible | 65,9 | no disponible | Hugging Face (baselabs/mammoth-1) |
 | Cloudflare Clef | no disponible | 61,71 | no disponible | no disponible | no disponible |
 | Perplexity Decider Flash v1.2 | no disponible | 60,06 | no disponible | no disponible | no disponible |
 
@@ -103,7 +103,7 @@ joey-1 es la opción más ligera y con licencia más permisiva de la familia; el
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/baselabs/joey-1
+- Modelo en Hugging Face: https://huggingface.co/baselabs/joey-1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Hermano mayor elephant-1: https://huggingface.co/baselabs/elephant-1
 - Hermano mayor mammoth-1: https://huggingface.co/baselabs/mammoth-1

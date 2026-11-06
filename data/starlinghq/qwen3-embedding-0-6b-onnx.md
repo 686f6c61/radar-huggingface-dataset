@@ -83,8 +83,8 @@ El conjunto de verificación incluye los cuatro textos de ejemplo del model card
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Starlinghq/qwen3-embedding-0.6b-onnx | 0,6B | 8192 | ONNX fp32 | Apache-2.0 | HuggingFace, 0 descargas, 0 likes |
-| Qwen/Qwen3-Embedding-0.6B | 0,6B | 8192 | PyTorch (safetensors) | Apache-2.0 | HuggingFace (modelo base) |
+| Starlinghq/qwen3-embedding-0.6b-onnx | 0,6B | 8192 | ONNX fp32 | Apache-2.0 | Hugging Face, 0 descargas, 0 likes |
+| Qwen/Qwen3-Embedding-0.6B | 0,6B | 8192 | PyTorch (safetensors) | Apache-2.0 | Hugging Face (modelo base) |
 | Alternativas de embeddings de tamaño similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparación relevante es con el modelo base: misma arquitectura y mismos pesos, pero el original no incluye grafo ONNX. El resto de alternativas comparables no está cubierto en la información proporcionada.
@@ -104,6 +104,6 @@ La comparación relevante es con el modelo base: misma arquitectura y mismos pes
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Starlinghq/qwen3-embedding-0.6b-onnx
+- Repositorio Hugging Face: https://huggingface.co/Starlinghq/qwen3-embedding-0.6b-onnx
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Embedding-0.6B
 - Repositorio del proyecto Starling: https://github.com/starlinghq/starling

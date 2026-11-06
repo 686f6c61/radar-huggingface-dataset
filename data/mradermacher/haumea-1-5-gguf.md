@@ -109,4 +109,4 @@ En rendimiento no es posible establecer comparación: no hay métricas publicada
 - Peticiones de modelos del autor: https://huggingface.co/mradermacher/model_requests
 - Empresa del autor: https://www.nethype.de/
 
-Nota: la busqueda web realizada no devolvio resultados relevantes sobre Haumea-1.5 ni sobre su autor; los unicos enlaces utiles son los del propio repositorio de HuggingFace y los referenciados en su model card.
+Nota: la busqueda web realizada no devolvio resultados relevantes sobre Haumea-1.5 ni sobre su autor; los unicos enlaces utiles son los del propio repositorio de Hugging Face y los referenciados en su model card.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jslee1987/cnn-transformer-generation-lite` es un prototipo de investigación publicado en HuggingFace por el usuario jslee1987. No es un modelo entrenado ni un release utilizable en producción: se trata de un *checkpoint de inicialización* (pesos sin entrenar) que acompaña a una implementación propia en PyTorch de una arquitectura híbrida denominada "Cnn Transformer" orientada a tareas de generación. El repositorio se presenta explícitamente como material para revisión de código, pruebas de humo (*smoke tests*) y experimentos controlados de pequeño tamaño, sin ninguna métrica de rendimiento declarada.
+`jslee1987/cnn-transformer-generation-lite` es un prototipo de investigación publicado en Hugging Face por el usuario jslee1987. No es un modelo entrenado ni un release utilizable en producción: se trata de un *checkpoint de inicialización* (pesos sin entrenar) que acompaña a una implementación propia en PyTorch de una arquitectura híbrida denominada "Cnn Transformer" orientada a tareas de generación. El repositorio se presenta explícitamente como material para revisión de código, pruebas de humo (*smoke tests*) y experimentos controlados de pequeño tamaño, sin ninguna métrica de rendimiento declarada.
 
 El tamaño real del checkpoint es de 49.600 parámetros (aproximadamente 0,05 M), según los datos de safetensors, lo que lo sitúa en un rango meramente didáctico o de validación de infraestructura, no en el de un modelo de lenguaje funcional. La configuración publicada indica atención estándar, fusión de tipo Tucker, activación ReLU y normalización por *batchnorm*, con una receta de entrenamiento por defecto basada en SGD con planificador de tipo *step*.
 
@@ -61,13 +61,13 @@ No se han publicado resultados de benchmarks en la información disponible. La p
 - VRAM estimada para inferencia: aproximadamente 0,2 MB en fp32 (49.600 parámetros × 4 bytes) y unos 0,1 MB en fp16. Cualquier acelerador disponible es sobredimensionado para este artefacto.
 - GPU recomendadas: ninguna en particular; el modelo se ejecuta sin dificultad en CPU.
 - Compatibilidad con GPU de consumo: sí, en cualquier GPU de consumo e incluso en dispositivos integrados o sistemas embebidos; el cuello de botella nunca será la memoria.
-- Opciones de despliegue: al ser una implementación personalizada sin tokenizer ni configuración estándar de HuggingFace Transformers, no es compatible de forma directa con vLLM, llama.cpp, Ollama ni TGI. El despliegue previsto es la ejecución del script `eval.py` con PyTorch.
+- Opciones de despliegue: al ser una implementación personalizada sin tokenizer ni configuración estándar de Hugging Face Transformers, no es compatible de forma directa con vLLM, llama.cpp, Ollama ni TGI. El despliegue previsto es la ejecución del script `eval.py` con PyTorch.
 - Latencia y throughput estimados: no disponibles. No se han publicado mediciones y, al no haber pesos entrenados, carecerían de significado práctico.
-- Almacenamiento: el repositorio ocupa 0,0 GB según HuggingFace.
+- Almacenamiento: el repositorio ocupa 0,0 GB según Hugging Face.
 
 ## Comparativa con modelos similares
 
-No existen modelos de producción comparables en la misma categoría (generación de texto entrenada), porque este artefacto no es un modelo entrenado. La comparación más razonable es con otros prototipos de investigación de la misma familia publicados en HuggingFace y con implementaciones académicas de híbridos CNN-Transformer:
+No existen modelos de producción comparables en la misma categoría (generación de texto entrenada), porque este artefacto no es un modelo entrenado. La comparación más razonable es con otros prototipos de investigación de la misma familia publicados en Hugging Face y con implementaciones académicas de híbridos CNN-Transformer:
 
 | Modelo / proyecto | Tipo | Parámetros | Licencia | Estado |
 |---|---|---|---|---|
@@ -92,7 +92,7 @@ Ninguno de los proyectos listados declara métricas de rendimiento comparables e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jslee1987/cnn-transformer-generation-lite
+- Modelo en Hugging Face: https://huggingface.co/jslee1987/cnn-transformer-generation-lite
 - Prototipo relacionado (NANKAICHEMISTRY): https://huggingface.co/NANKAICHEMISTRY/cnn-transformer-generation-pretrained
 - Prototipo relacionado (Alicethomas): https://huggingface.co/Alicethomas/cnn-transformer-finetuned
 - Repositorio CTran (CNN + Transformer para NLU): https://github.com/rafiepour/CTran

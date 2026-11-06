@@ -107,7 +107,7 @@ La comparacion relevante es con el modelo upstream, del que scribe-piano es una 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/arraypress/scribe-piano
+- Hugging Face: https://huggingface.co/arraypress/scribe-piano
 - Libreria anfitriona (Swift, MIT): https://github.com/arraypress/swift-music-transcriber
 - Repositorio upstream (ByteDance): https://github.com/bytedance/piano_transcription
 - Paper: "High-resolution Piano Transcription with Pedals by Regressing Onset and Offset Times", arXiv:2010.01815 — https://arxiv.org/abs/2010.01815

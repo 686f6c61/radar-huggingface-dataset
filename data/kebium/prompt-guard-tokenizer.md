@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `kebium/prompt-guard-tokenizer` es un tokenizer alojado en HuggingFace, creado por el usuario `kebium` y registrado con la librería `transformers`. Su nombre sugiere una relación con el sistema Prompt Guard de Meta, un clasificador diseñado para detectar inyecciones de prompt en modelos de lenguaje, pero no se dispone de información que confirme esta vinculación. La model card es una plantilla genérica sin datos concretos sobre arquitectura, entrenamiento, licencia o uso previsto.
+El modelo `kebium/prompt-guard-tokenizer` es un tokenizer alojado en Hugging Face, creado por el usuario `kebium` y registrado con la librería `transformers`. Su nombre sugiere una relación con el sistema Prompt Guard de Meta, un clasificador diseñado para detectar inyecciones de prompt en modelos de lenguaje, pero no se dispone de información que confirme esta vinculación. La model card es una plantilla genérica sin datos concretos sobre arquitectura, entrenamiento, licencia o uso previsto.
 
 El modelo fue publicado el 1 de septiembre de 2026 y no registra descargas ni valoraciones. Los únicos metadatos disponibles son las etiquetas `transformers`, `arxiv:1910.09700` (que corresponde a un artículo sobre estimación de emisiones de carbono, no al modelo en sí), `endpoints_compatible` y `region:us`. No se ha especificado el pipeline, la licencia ni los idiomas soportados. Dada la ausencia total de documentación técnica, cualquier afirmación sobre sus capacidades o rendimiento sería especulativa.
 
@@ -53,4 +53,4 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [HuggingFace: kebium/prompt-guard-tokenizer](https://huggingface.co/kebium/prompt-guard-tokenizer)
+- [Hugging Face: kebium/prompt-guard-tokenizer](https://huggingface.co/kebium/prompt-guard-tokenizer)

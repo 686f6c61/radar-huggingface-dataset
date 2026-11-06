@@ -33,7 +33,7 @@ El adaptador destilado reduce la generacion a 8 pasos con cfg 1,0, lo que evita 
 - Edicion de imagen por instrucciones mediante la opcion `--edit-image` del runtime, disponible en los niveles base del modelo.
 - VQA (respuesta visual a preguntas) mediante `--vqa`, disponible en los niveles base.
 - Modo de razonamiento con etiquetas `<think>` (`--think`) en los niveles base.
-- Naturaleza any-to-any: el pipeline declarado en HuggingFace es `any-to-any`, con flujos de comprension y generacion conviviendo en la misma arquitectura.
+- Naturaleza any-to-any: el pipeline declarado en Hugging Face es `any-to-any`, con flujos de comprension y generacion conviviendo en la misma arquitectura.
 - Destilacion a 8 pasos: reduce el coste de inferencia frente a los adaptadores de mas pasos y esta pensada para el nivel mas rapido de la familia.
 - Capacidades de idioma: no disponible (la model card no enumera idiomas soportados).
 - Tool calling / function calling: no disponible en la informacion proporcionada.
@@ -107,7 +107,7 @@ Solo se dispone de informacion sobre variantes dentro de la propia familia. No h
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mlx-community/SenseNova-U1.5-8B-MoT-8step-v2-4bit
+- Repositorio en Hugging Face: https://huggingface.co/mlx-community/SenseNova-U1.5-8B-MoT-8step-v2-4bit
 - Modelo base: https://huggingface.co/sensenova/SenseNova-U1.5-8B-MoT
 - Commit del modelo base: https://huggingface.co/sensenova/SenseNova-U1.5-8B-MoT/commit/07d76f61474b9c6e6999e22c559314d3439b8c81
 - Repositorio de adaptadores LoRA: https://huggingface.co/sensenova/SenseNova-U1.5-8B-MoT-LoRAs
@@ -117,4 +117,4 @@ Solo se dispone de informacion sobre variantes dentro de la propia familia. No h
 - Implementacion de referencia: https://github.com/OpenSenseNova/SenseNova-U1
 - Paper: https://arxiv.org/abs/2605.12500
 
-Nota: la busqueda web realizada no devolvio resultados relevantes sobre el modelo; los enlaces anteriores proceden de la informacion del repositorio de HuggingFace.
+Nota: la busqueda web realizada no devolvio resultados relevantes sobre el modelo; los enlaces anteriores proceden de la informacion del repositorio de Hugging Face.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nanbeige4.3-33B-MLX-8bit es una conversión a formato MLX con cuantización afín de 8 bits del modelo Nanbeige4.3-33B, desarrollado por el equipo Nanbeige y publicado en HuggingFace por el usuario fcmeyer. No se trata de un modelo nuevo ni de un reentrenamiento: los pesos derivan del checkpoint original en BF16 (revisión `c1093c501cc6460427c0ac634db7223d0450c0ee`) y conservan su plantilla de chat, su tokenizador y su configuración de contexto de 524.288 tokens.
+Nanbeige4.3-33B-MLX-8bit es una conversión a formato MLX con cuantización afín de 8 bits del modelo Nanbeige4.3-33B, desarrollado por el equipo Nanbeige y publicado en Hugging Face por el usuario fcmeyer. No se trata de un modelo nuevo ni de un reentrenamiento: los pesos derivan del checkpoint original en BF16 (revisión `c1093c501cc6460427c0ac634db7223d0450c0ee`) y conservan su plantilla de chat, su tokenizador y su configuración de contexto de 524.288 tokens.
 
 El modelo base es un transformer de 33.118.977.024 parámetros (aproximadamente 33B) con licencia Apache-2.0, orientado a generación de texto conversacional en inglés y chino, con soporte de modo de razonamiento (`enable_thinking`) y de llamadas a herramientas en formato XML o JSON. La conversión ocupa 35,2 GB de repositorio (35.189.757.302 bytes en 1203 tensores), lo que la hace manejable en equipos Apple Silicon con memoria unificada alta.
 
@@ -82,8 +82,8 @@ La información proporcionada solo permite comparar la conversión con su propio
 
 | Modelo | Parametros | Contexto | Cuantizacion | Peso aproximado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Nanbeige4.3-33B-MLX-8bit (este repo) | 33.118.977.024 | 524.288 tokens (no validado a plena longitud) | 8 bits afín, group size 64 | 35,2 GB | Apache-2.0 | HuggingFace, librería `mlx_lm` |
-| Nanbeige4.3-33B (base, BF16) | 33.118.977.024 | 524.288 tokens | BF16 | ~66 GB (cálculo a partir del número de parámetros) | Apache-2.0 | HuggingFace |
+| Nanbeige4.3-33B-MLX-8bit (este repo) | 33.118.977.024 | 524.288 tokens (no validado a plena longitud) | 8 bits afín, group size 64 | 35,2 GB | Apache-2.0 | Hugging Face, librería `mlx_lm` |
+| Nanbeige4.3-33B (base, BF16) | 33.118.977.024 | 524.288 tokens | BF16 | ~66 GB (cálculo a partir del número de parámetros) | Apache-2.0 | Hugging Face |
 
 Comparativas con otros modelos de la franja 30B: no disponible en la información proporcionada.
 
@@ -103,7 +103,7 @@ Comparativas con otros modelos de la franja 30B: no disponible en la informació
 
 ## Enlaces
 
-- Repositorio HuggingFace de la conversión: https://huggingface.co/fcmeyer/Nanbeige4.3-33B-MLX-8bit
+- Repositorio Hugging Face de la conversión: https://huggingface.co/fcmeyer/Nanbeige4.3-33B-MLX-8bit
 - Modelo base: https://huggingface.co/Nanbeige/Nanbeige4.3-33B
 - Revisión del modelo origen utilizada: `c1093c501cc6460427c0ac634db7223d0450c0ee`
 - Artefactos de reproducción incluidos en el repo: `requirements.lock.txt`, `conversion.json`, `evaluation.json`, `environment.json`, `scripts/release.py`

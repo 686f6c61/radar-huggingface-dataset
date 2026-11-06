@@ -71,8 +71,8 @@ Datos adicionales de la evaluacion: 11 de 150 pasajes terminan con 3 o menos e f
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| no-e (este modelo) | 1.720 M | no disponible | Lipograma en ingles | apache-2.0 | HuggingFace |
-| Qwen3-1.7B (base) | 1.720 M | no disponible | Generacion general | apache-2.0 | HuggingFace |
+| no-e (este modelo) | 1.720 M | no disponible | Lipograma en ingles | apache-2.0 | Hugging Face |
+| Qwen3-1.7B (base) | 1.720 M | no disponible | Generacion general | apache-2.0 | Hugging Face |
 | Modelo anterior del autor (188 ejemplos BBC) | no disponible | no disponible | Lipograma en ingles | no disponible | no disponible |
 
 No se dispone de informacion sobre otros modelos publicos especializados en lipogramas o generacion con restricciones lexicas que permitan una comparativa adicional. El modelo anterior del autor no tiene repositorio identificado en la informacion proporcionada.
@@ -90,7 +90,7 @@ No se dispone de informacion sobre otros modelos publicos especializados en lipo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jwjesse/no-e
+- Modelo en Hugging Face: https://huggingface.co/jwjesse/no-e
 - Demo: https://huggingface.co/spaces/jwjesse/no-e-demo
 - Dataset: https://huggingface.co/datasets/jwjesse/slm-lipogram
 - Codigo, evaluacion y write-up: https://labs.gauntletai.com/jessewells/SLM

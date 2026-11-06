@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FlexWAM-RoboDojo-Real-Piper es un repositorio de pesos publicado en HuggingFace por el usuario Zzming bajo licencia Apache 2.0. Por el identificador y la nomenclatura empleada, el modelo parece vinculado al ecosistema RoboDojo y a la plataforma robótica Piper (brazo manipulador de bajo coste), lo que sugiere un modelo orientado a control robótico o a políticas de imitación sobre datos reales de robot. No obstante, la model card publicada no contiene ninguna descripción técnica, y el repositorio no incluye pipeline declarado, idiomas ni documentación adicional.
+FlexWAM-RoboDojo-Real-Piper es un repositorio de pesos publicado en Hugging Face por el usuario Zzming bajo licencia Apache 2.0. Por el identificador y la nomenclatura empleada, el modelo parece vinculado al ecosistema RoboDojo y a la plataforma robótica Piper (brazo manipulador de bajo coste), lo que sugiere un modelo orientado a control robótico o a políticas de imitación sobre datos reales de robot. No obstante, la model card publicada no contiene ninguna descripción técnica, y el repositorio no incluye pipeline declarado, idiomas ni documentación adicional.
 
 El repositorio presenta cero descargas y cero likes en el momento de la consulta, y fue creado y actualizado en la misma fecha (3 de noviembre de 2026), lo que apunta a una publicación reciente y sin validación comunitaria. Esto implica que no existe información pública verificable sobre arquitectura, tamaño, datos de entrenamiento o rendimiento.
 
@@ -73,5 +73,5 @@ No disponible. No se han identificado modelos comparables a partir de la informa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Zzming/FlexWAM-RoboDojo-Real-Piper
+- Hugging Face: https://huggingface.co/Zzming/FlexWAM-RoboDojo-Real-Piper
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

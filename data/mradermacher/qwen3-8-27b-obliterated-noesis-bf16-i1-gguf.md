@@ -69,7 +69,7 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo cuantizado](https://huggingface.co/mradermacher/Qwen3.8-27B-Obliterated-NOESIS-BF16-i1-GGUF)
+- [Repositorio Hugging Face del modelo cuantizado](https://huggingface.co/mradermacher/Qwen3.8-27B-Obliterated-NOESIS-BF16-i1-GGUF)
 - [Modelo base: AMAImedia/Qwen3.8-27B-Obliterated-NOESIS-BF16](https://huggingface.co/AMAImedia/Qwen3.8-27B-Obliterated-NOESIS-BF16)
 - [Repositorio estatico con quants y archivos mmproj](https://huggingface.co/mradermacher/Qwen3.8-27B-Obliterated-NOESIS-BF16-GGUF)
 - [Guia para ejecutar Qwen3.8-27B-OBLITERATED localmente (MindStudio)](https://www.mindstudio.ai/blog/run-qwen3-8-27b-obliterated-locally)

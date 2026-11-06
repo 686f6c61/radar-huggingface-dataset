@@ -101,7 +101,7 @@ Las especificaciones de los modelos alternativos proceden de su documentacion pu
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/yusifnuri/Llama-3.2-3B-Instruct_code_generation
+- Ficha en Hugging Face: https://huggingface.co/yusifnuri/Llama-3.2-3B-Instruct_code_generation
 - Codigo, configuraciones y arnes de evaluacion: https://github.com/Yusifnuri/slm-benchmark
 - Matriz completa del benchmark: https://github.com/Yusifnuri/slm-benchmark/blob/main/results/benchmark_matrix.csv
 - Analisis de coste por peticion: https://github.com/Yusifnuri/slm-benchmark/blob/main/results/cost_per_request.csv

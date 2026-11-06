@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`caeleste-speech-moss-soundeffect-v2.0-nf4` es un artefacto de cuantización parcial del modelo de generación de audio `MOSS-SoundEffect-v2.0`, desarrollado por el equipo OpenMOSS (MOSI.AI) y publicado en HuggingFace por el usuario `bschooled`. El modelo original es un pipeline text-to-audio que convierte descripciones en lenguaje natural en efectos de sonido ambientales, urbanos, de criaturas y acciones humanas, con una duración controlable de hasta 30 segundos a 48 kHz. Esta variante cuantizada reduce el peso del text encoder (un `Qwen3ForCausalLM`) de 3,78 GiB a 1,26 GiB mediante cuantización NF4 de 4 bits, manteniendo intactos el transformer de difusión (`WanAudioModel`) y el VAE (`DAC`), que deben cargarse desde el repositorio original.
+`caeleste-speech-moss-soundeffect-v2.0-nf4` es un artefacto de cuantización parcial del modelo de generación de audio `MOSS-SoundEffect-v2.0`, desarrollado por el equipo OpenMOSS (MOSI.AI) y publicado en Hugging Face por el usuario `bschooled`. El modelo original es un pipeline text-to-audio que convierte descripciones en lenguaje natural en efectos de sonido ambientales, urbanos, de criaturas y acciones humanas, con una duración controlable de hasta 30 segundos a 48 kHz. Esta variante cuantizada reduce el peso del text encoder (un `Qwen3ForCausalLM`) de 3,78 GiB a 1,26 GiB mediante cuantización NF4 de 4 bits, manteniendo intactos el transformer de difusión (`WanAudioModel`) y el VAE (`DAC`), que deben cargarse desde el repositorio original.
 
 La relevancia de este artefacto radica en que permite ahorrar aproximadamente 2,5 GiB de VRAM en la parte de codificación de texto, lo que facilita el despliegue en GPUs con memoria limitada, sin necesidad de modificar la arquitectura del pipeline ni sus parámetros de generación. Es una solución práctica para desarrolladores que ya utilizan `MOSS-SoundEffect-v2.0` y buscan optimizar el consumo de memoria sin renunciar a la calidad del modelo completo. No se trata de un modelo independiente, sino de un componente reemplazable dentro del pipeline original.
 
@@ -75,8 +75,8 @@ No se dispone de información sobre otros modelos text-to-audio comparables en l
 
 ## Enlaces
 
-- Repositorio HuggingFace de este artefacto: https://huggingface.co/bschooled/caeleste-speech-moss-soundeffect-v2.0-nf4
-- Modelo original en HuggingFace: https://huggingface.co/OpenMOSS-Team/MOSS-SoundEffect-v2.0
+- Repositorio Hugging Face de este artefacto: https://huggingface.co/bschooled/caeleste-speech-moss-soundeffect-v2.0-nf4
+- Modelo original en Hugging Face: https://huggingface.co/OpenMOSS-Team/MOSS-SoundEffect-v2.0
 - Repositorio GitHub de la familia MOSS-TTS: https://github.com/OpenMOSS/MOSS-TTS
 - Página del modelo en ModelScope (v2.0): https://www.modelscope.cn/models/openmoss/MOSS-SoundEffect-v2.0
 - Página del modelo en ModelScope (v1): https://www.modelscope.cn/models/openmoss/MOSS-SoundEffect

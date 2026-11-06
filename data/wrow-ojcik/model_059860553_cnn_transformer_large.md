@@ -71,5 +71,5 @@ No se dispone de datos públicos sobre parámetros, contexto, rendimiento ni lic
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/wrow-ojcik/model_059860553_cnn_transformer_large)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/wrow-ojcik/model_059860553_cnn_transformer_large)
 - [Repositorio GitHub de arquitecturas AI (contexto de CNN/Transformers)](https://github.com/Neurarch573/Ai-Models)

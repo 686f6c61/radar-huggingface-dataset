@@ -2,7 +2,7 @@
 
 ## Resumen
 
-pi05-v6d-focus-editor-r1 es un pequeño «editor de acciones» entrenado con RL offline sobre una política pi0.5 congelada, destinado a una tarea bimanual de pipeteo con un robot Unitree G1 equipado con manos Inspire. Lo publica el usuario GeertWang en HuggingFace y no es un modelo de lenguaje ni un VLA completo: es un módulo residual que corrige el chunk de acciones que propone la política base, sin modificarla. El repositorio contiene exclusivamente el checkpoint de la ronda 1 (600 actualizaciones del learner) y el snapshot de replay exacto con el que se entrenó.
+pi05-v6d-focus-editor-r1 es un pequeño «editor de acciones» entrenado con RL offline sobre una política pi0.5 congelada, destinado a una tarea bimanual de pipeteo con un robot Unitree G1 equipado con manos Inspire. Lo publica el usuario GeertWang en Hugging Face y no es un modelo de lenguaje ni un VLA completo: es un módulo residual que corrige el chunk de acciones que propone la política base, sin modificarla. El repositorio contiene exclusivamente el checkpoint de la ronda 1 (600 actualizaciones del learner) y el snapshot de replay exacto con el que se entrenó.
 
 La relevancia es metodológica: demuestra cómo mejorar una fase concreta de una tarea de manipulación (la inserción, fase P3) mediante RL offline con recompensas dispersas y datos de teleoperación ya existentes, manteniendo la política base intacta gracias a una inicialización a cero que reproduce exactamente el comportamiento original en el paso 0. En el robot real, la ronda 1 redujo la mediana de duración de P3 de 48 s a 26 s en 23 episodios que alcanzaron esa fase, con 3,5 intervenciones humanas por episodio frente a 4,5 de la política congelada.
 
@@ -77,8 +77,8 @@ No se dispone de información sobre otros editores de acciones publicados compar
 
 | Modelo | Tipo | Entrada | Salida | Rendimiento en P3 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| pi05-v6d-focus-editor-r1 (este) | Editor residual MLP + crítico TD3 sobre pi0.5 congelada | Features 16.384-d, estado 65-d, chunk de referencia 30×32, one-hot de fase | Residual 0,2·tanh sobre 18 dims × 30 filas | Mediana 26 s; 3,5 intervenciones/episodio | No disponible | HuggingFace, 0 descargas, 0 likes |
-| pi0.5 v6d FOCUS (`jren313/starvla-pipette-5task-v6d-pi05-egofocusvel`) | Política VLA congelada (referencia) | RGB ego + recorte FOCUS + velocidad de muñeca | Chunk de acciones 30×32 | Mediana 48 s; 4,5 intervenciones/episodio | No disponible | HuggingFace |
+| pi05-v6d-focus-editor-r1 (este) | Editor residual MLP + crítico TD3 sobre pi0.5 congelada | Features 16.384-d, estado 65-d, chunk de referencia 30×32, one-hot de fase | Residual 0,2·tanh sobre 18 dims × 30 filas | Mediana 26 s; 3,5 intervenciones/episodio | No disponible | Hugging Face, 0 descargas, 0 likes |
+| pi0.5 v6d FOCUS (`jren313/starvla-pipette-5task-v6d-pi05-egofocusvel`) | Política VLA congelada (referencia) | RGB ego + recorte FOCUS + velocidad de muñeca | Chunk de acciones 30×32 | Mediana 48 s; 4,5 intervenciones/episodio | No disponible | Hugging Face |
 | Otros editores o VLAs para G1 | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias

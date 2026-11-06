@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| edgarcancinoe/smolvla_water_base-4 | 450 M | no aplica | sin resultados publicados | apache-2.0 | HuggingFace (0 descargas) |
-| lerobot/smolvla_base | no disponible en la informacion proporcionada | no aplica | no disponible | no disponible | HuggingFace (modelo base) |
+| edgarcancinoe/smolvla_water_base-4 | 450 M | no aplica | sin resultados publicados | apache-2.0 | Hugging Face (0 descargas) |
+| lerobot/smolvla_base | no disponible en la informacion proporcionada | no aplica | no disponible | no disponible | Hugging Face (modelo base) |
 | OpenVLA | no disponible en la informacion proporcionada | no aplica | no disponible | no disponible | no disponible |
 | pi0 | no disponible en la informacion proporcionada | no aplica | no disponible | no disponible | no disponible |
 
@@ -80,7 +80,7 @@ Solo se dispone de datos verificados para este checkpoint y para su relacion con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/edgarcancinoe/smolvla_water_base-4
+- Modelo en Hugging Face: https://huggingface.co/edgarcancinoe/smolvla_water_base-4
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/edgarcancinoe/water_pour
 - Paper de SmolVLA (arXiv 2506.01844): https://huggingface.co/papers/2506.01844

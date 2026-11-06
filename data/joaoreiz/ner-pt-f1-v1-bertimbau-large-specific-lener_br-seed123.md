@@ -72,7 +72,7 @@ No se dispone de comparativas con otros modelos NER como XLM-RoBERTa o mBERT, ni
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JoaoReiz/ner-pt-f1-v1-bertimbau-large-specific-lener_br-seed123
+- Modelo en Hugging Face: https://huggingface.co/JoaoReiz/ner-pt-f1-v1-bertimbau-large-specific-lener_br-seed123
 - Versión base del mismo autor: https://huggingface.co/JoaoReiz/ner-pt-f1-v1-bertimbau-base-specific-lener_br-seed123
 - Modelo base BERTimbau large: https://huggingface.co/neuralmind/bert-large-portuguese-cased
 - Repositorio GitHub de BERTimbau: https://github.com/neuralmind-ai/portuguese-bert

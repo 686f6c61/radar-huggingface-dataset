@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| karthikcr/Qwen3-8B-W4A16-GPTQ | 8,19 B | no disponible | W4A16 GPTQ | Apache 2.0 | HuggingFace, 34 descargas |
-| Qwen/Qwen3-8B (BF16) | 8,19 B | no disponible | ninguna (BF16) | Apache 2.0 | HuggingFace, modelo oficial |
+| karthikcr/Qwen3-8B-W4A16-GPTQ | 8,19 B | no disponible | W4A16 GPTQ | Apache 2.0 | Hugging Face, 34 descargas |
+| Qwen/Qwen3-8B (BF16) | 8,19 B | no disponible | ninguna (BF16) | Apache 2.0 | Hugging Face, modelo oficial |
 | Otras cuantizaciones de Qwen3-8B (GGUF, AWQ) | 8,19 B | no disponible | GGUF / AWQ | Apache 2.0 | no disponible en la informacion proporcionada |
 
 La comparativa se limita al modelo base y a la existencia generica de otras cuantizaciones, ya que la informacion proporcionada no incluye datos de rendimiento ni identificadores concretos de alternativas comparables.
@@ -81,7 +81,7 @@ La comparativa se limita al modelo base y a la existencia generica de otras cuan
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/karthikcr/Qwen3-8B-W4A16-GPTQ
+- Modelo en Hugging Face: https://huggingface.co/karthikcr/Qwen3-8B-W4A16-GPTQ
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Repositorio del autor (benchmarking): https://github.com/kikugo/reel-history-k8s
 - llm-compressor: https://github.com/vllm-project/llm-compressor

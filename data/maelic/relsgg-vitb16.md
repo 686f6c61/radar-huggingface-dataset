@@ -6,7 +6,7 @@ relsgg-vitb16 es un modelo de generación de grafos de escena (scene graph gener
 
 Técnicamente se apoya en un backbone de visión DINOv3 ViT-B/16 (facebook/dinov3-vitb16-pretrain-lvd1689m) más un estudiante de texto que codifica el vocabulario de predicados y una cabeza reparameterizable de entrenamiento por ranking. El vocabulario de entrenamiento contiene 19.103 predicados y el modelo puede, en un único forward pass, descomponer la salida en dos grafos: uno espacial y otro semántico. Se distribuye con licencia DINOv3 de Meta y forma parte de un ecosistema con dataset (RA-4M), benchmark (OV-SGG-Bench) y código propios.
 
-Su relevancia actual está en que ataca el cuello de botella clásico del SGG cerrado: la dependencia de un conjunto fijo de predicados anotados. Aquí el vocabulario es un parámetro de entrada, lo que permite desplegar el modelo sobre taxonomías nuevas sin reentrenar. El contrapunto es que es un modelo muy reciente, con 0 descargas y 0 likes en HuggingFace, y con umbrales de despliegue que solo son válidos para este checkpoint concreto.
+Su relevancia actual está en que ataca el cuello de botella clásico del SGG cerrado: la dependencia de un conjunto fijo de predicados anotados. Aquí el vocabulario es un parámetro de entrada, lo que permite desplegar el modelo sobre taxonomías nuevas sin reentrenar. El contrapunto es que es un modelo muy reciente, con 0 descargas y 0 likes en Hugging Face, y con umbrales de despliegue que solo son válidos para este checkpoint concreto.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ Su relevancia actual está en que ataca el cuello de botella clásico del SGG ce
 | Longitud de contexto | no aplica (modelo de visión; la entrada es una imagen más un conjunto de N regiones en cajas o máscaras) |
 | Tipos de cuantizacion | no disponible (el repositorio solo distribuye pesos PyTorch sin variantes cuantizadas documentadas) |
 | Idiomas soportados | no disponible (el vocabulario de predicados de entrenamiento está en inglés; no se documenta soporte multilingüe) |
-| Licencia | dinov3-license (licencia DINOv3 de Meta; campo `license: other` en HuggingFace) |
+| Licencia | dinov3-license (licencia DINOv3 de Meta; campo `license: other` en Hugging Face) |
 | Formato de pesos | PyTorch: `model.pth` (pesos EMA) y `text_student.pt` con su tokenizer; ficheros NumPy `.npz` (`predicate_embeddings.npz`, `predicate_bank.npz`) y JSON (`thresholds.json`, `calibration.json`). Exportación ONNX verificada con opset 17 y paridad máxima de 2,96e-05 |
 | Tamano del repositorio | 0,6 GB |
 | Pipeline declarado | image-text-to-text |
@@ -115,7 +115,7 @@ Umbrales de despliegue medidos sobre este checkpoint (régimen: cajas ground tru
 - VRAM estimada para inferencia: en el entorno de unos 2 GB de pesos en FP32 más las activaciones de una imagen y N regiones, el modelo debería ejecutarse cómodamente por debajo de 4-6 GB de VRAM con resolución de imagen habitual. Es una estimación a partir del tamaño del repositorio y del backbone, no un dato publicado.
 - GPU recomendadas: cualquier GPU consumer con 8 GB o más (RTX 3060, RTX 3070, RTX 4060 Ti, RTX 4090) es suficiente en la práctica; en datacenter, A100, H100 o L40S quedan sobradamente dimensionadas y son útiles si se procesan lotes grandes de imágenes.
 - Sí cabe en GPU consumer. No se documentan requisitos de memoria específicos ni configuraciones multimodelo.
-- Opciones de despliegue: la vía oficial es la librería `relsgg` (`pip install git+https://github.com/Maelic/RelateAnything`), que descarga los pesos de HuggingFace en el primer uso. Existe exportación ONNX verificada (opset 17, paridad máxima 2,96e-05), lo que abre la puerta a runtimes ONNX. No se mencionan integraciones con vLLM, llama.cpp, Ollama ni TGI, y por el tipo de salida (estructurada, no generativa) no son las vías naturales.
+- Opciones de despliegue: la vía oficial es la librería `relsgg` (`pip install git+https://github.com/Maelic/RelateAnything`), que descarga los pesos de Hugging Face en el primer uso. Existe exportación ONNX verificada (opset 17, paridad máxima 2,96e-05), lo que abre la puerta a runtimes ONNX. No se mencionan integraciones con vLLM, llama.cpp, Ollama ni TGI, y por el tipo de salida (estructurada, no generativa) no son las vías naturales.
 - Latencia y throughput: no disponibles. El único dato temporal publicado es que codificar el vocabulario completo de 19.103 predicados en CPU requiere aproximadamente un minuto y medio, coste que se evita cargando `predicate_embeddings.npz`; el scoring posterior es solo de visión.
 
 ## Comparativa con modelos similares
@@ -124,7 +124,7 @@ La información proporcionada no incluye resultados de terceros, por lo que no e
 
 | Modelo | Enfoque | Parametros | Contexto | Licencia | Disponibilidad | Datos comparativos |
 |---|---|---|---|---|---|---|
-| relsgg-vitb16 | SGG de relaciones con vocabulario abierto desde cajas o máscaras, backbone DINOv3 ViT-B/16 | no disponible | no aplica (visión) | dinov3-license | HuggingFace, 0 descargas, 0 likes | F1@50 0,3746 en vg150 (graph-constrained) |
+| relsgg-vitb16 | SGG de relaciones con vocabulario abierto desde cajas o máscaras, backbone DINOv3 ViT-B/16 | no disponible | no aplica (visión) | dinov3-license | Hugging Face, 0 descargas, 0 likes | F1@50 0,3746 en vg150 (graph-constrained) |
 | Metodos clasicos de SGG con vocabulario cerrado (familia MOTIFS, RelTR y similares) | SGG cerrado sobre un conjunto fijo de predicados anotados | no disponible | no aplica (visión) | no disponible | no disponible | no disponible |
 | Metodos open-vocabulary de SGG previos | Prediccion de relaciones sobre vocabularios ampliados, con o sin reparameterizacion | no disponible | no aplica (visión) | no disponible | no disponible | no disponible |
 
@@ -145,7 +145,7 @@ Comparación interna relevante entre los dos regimenes del propio modelo, que s�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/maelic/relsgg-vitb16
+- Modelo en Hugging Face: https://huggingface.co/maelic/relsgg-vitb16
 - Codigo del proyecto RelateAnything: https://github.com/Maelic/RelateAnything
 - Paper: https://arxiv.org/abs/2609.12552
 - Dataset RA-4M: https://huggingface.co/datasets/maelic/RA-4M

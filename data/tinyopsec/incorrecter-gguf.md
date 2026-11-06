@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tinyopsec/incorrecter-GGUF | 494 M | No disponible | Generacion de errores humanos | Apache 2.0 | HuggingFace (GGUF) |
-| Qwen/Qwen2.5-0.5B-Instruct | 494 M | 32.768 tokens (segun documentacion de Qwen) | Generacion de texto general e instrucciones | Apache 2.0 | HuggingFace |
-| Avicennasis/incorrecter | 494 M | No disponible | Generacion de errores humanos (pesos originales) | Apache 2.0 | HuggingFace / GitHub |
+| tinyopsec/incorrecter-GGUF | 494 M | No disponible | Generacion de errores humanos | Apache 2.0 | Hugging Face (GGUF) |
+| Qwen/Qwen2.5-0.5B-Instruct | 494 M | 32.768 tokens (segun documentacion de Qwen) | Generacion de texto general e instrucciones | Apache 2.0 | Hugging Face |
+| Avicennasis/incorrecter | 494 M | No disponible | Generacion de errores humanos (pesos originales) | Apache 2.0 | Hugging Face / GitHub |
 
 No se han identificado en la informacion disponible otros modelos especializados en generacion de errores humanos comparables directamente.
 
@@ -80,7 +80,7 @@ No se han identificado en la informacion disponible otros modelos especializados
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tinyopsec/incorrecter-GGUF
+- Hugging Face: https://huggingface.co/tinyopsec/incorrecter-GGUF
 - Modelo original: https://huggingface.co/Avicennasis/incorrecter
 - Repositorio GitHub del modelo original: https://github.com/Avicennasis/incorrecter/tree/main/
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct

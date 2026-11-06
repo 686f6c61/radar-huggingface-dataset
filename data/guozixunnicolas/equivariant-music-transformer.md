@@ -6,7 +6,7 @@ El Equivariant Music Transformer (EMT) es un modelo de transformer para música 
 
 El problema que resuelve es una limitación observada en los transformers musicales convencionales: según el análisis presentado en el paper, estos modelos mapean entradas desplazadas en tiempo o transpuestas en tono hacia representaciones no correlacionadas, y se vuelven progresivamente menos equivariantes a medida que aumentan de tamaño o se entrenan durante más tiempo. EMT aborda esta degradación mediante una estrategia de auto-destilación que fuerza al modelo a mantener representaciones coherentes bajo estas transformaciones, lo que resulta especialmente relevante para aplicaciones musicales donde la estructura transposicional es fundamental.
 
-En cuanto a la arquitectura, se trata de un transformer, aunque no se especifica el número de parámetros ni la longitud de contexto en la información disponible. El repositorio de HuggingFace tiene un tamaño de 5.6 GB, lo que sugiere pesos de un modelo de tamaño considerable, pero no se dispone de datos exactos. La licencia es Apache-2.0.
+En cuanto a la arquitectura, se trata de un transformer, aunque no se especifica el número de parámetros ni la longitud de contexto en la información disponible. El repositorio de Hugging Face tiene un tamaño de 5.6 GB, lo que sugiere pesos de un modelo de tamaño considerable, pero no se dispone de datos exactos. La licencia es Apache-2.0.
 
 ## Especificaciones tecnicas
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - No se indica si el modelo cabe en GPU de consumo.
 - Opciones de despliegue: no disponible (no se mencionan vLLM, llama.cpp, Ollama, TGI u otros).
 - Latencia y throughput estimados: no disponible.
-- El repositorio de HuggingFace tiene un tamaño de 5.6 GB, lo que puede orientar sobre el espacio de almacenamiento necesario, pero no constituye una estimacion de VRAM.
+- El repositorio de Hugging Face tiene un tamaño de 5.6 GB, lo que puede orientar sobre el espacio de almacenamiento necesario, pero no constituye una estimacion de VRAM.
 
 ## Comparativa con modelos similares
 
@@ -69,6 +69,6 @@ No disponible. En la informacion proporcionada no se han encontrado modelos comp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/guozixunnicolas/Equivariant-Music-Transformer
+- Hugging Face: https://huggingface.co/guozixunnicolas/Equivariant-Music-Transformer
 - Paper de arXiv: https://arxiv.org/abs/2608.03920
 - Materiales suplementarios y demo: https://guozixunnicolas.github.io/equivariant-music-transformer-demo/

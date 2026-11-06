@@ -18,10 +18,10 @@ La ficha que nos ocupa, `stepfun-ai/Step-5-Preview-NVFP4`, es la variante cuanti
 | Longitud de contexto | Hasta 1M tokens (salida maxima tambien hasta 1M tokens) |
 | Tipos de cuantizacion | NVFP4 en este repositorio (tags: `8-bit`, `modelopt`); FP8 y BF16 publicados en repositorios separados |
 | Idiomas soportados | no disponible |
-| Licencia | `stepfun-model-license-1.0` (identificador HuggingFace: `other`) |
+| Licencia | `stepfun-model-license-1.0` (identificador Hugging Face: `other`) |
 | Formato de pesos | safetensors (repo de 394,2 GB), generados con NVIDIA ModelOpt |
 | Entrada / salida | Texto e imagen como entrada; texto como salida |
-| Descargas / likes en HuggingFace | 211 descargas, 14 likes |
+| Descargas / likes en Hugging Face | 211 descargas, 14 likes |
 | Fechas del repositorio | Creado el 2026-10-14, actualizado el 2026-10-15 |
 
 ## Arquitectura y entrenamiento
@@ -95,7 +95,7 @@ En la información proporcionada no aparecen especificaciones de modelos competi
 
 ## Limitaciones y advertencias
 
-- Licencia propietaria: `stepfun-model-license-1.0` es una licencia personalizada (identificador `other` en HuggingFace). No se detallan en el material disponible las condiciones exactas de uso comercial, redistribución o despliegue en producción; es obligatorio leer el texto completo en el enlace de licencia antes de integrarlo.
+- Licencia propietaria: `stepfun-model-license-1.0` es una licencia personalizada (identificador `other` en Hugging Face). No se detallan en el material disponible las condiciones exactas de uso comercial, redistribución o despliegue en producción; es obligatorio leer el texto completo en el enlace de licencia antes de integrarlo.
 - Discrepancia en el recuento de parámetros: la model card declara 600B totales, mientras que el recuento de safetensors del repositorio NVFP4 es de 320 612 382 016 parámetros. Hay que verificar si se trata de una diferencia de empaquetado de la cuantización, de expertos no incluidos o de un error de conteo.
 - Etiquetado de precisión ambiguo: el repositorio se marca como `8-bit` en los tags pero el sufijo NVFP4 corresponde a un formato de 4 bits en coma flotante. Conviene verificar la precisión real de cada tensor antes de planificar memoria.
 - Idiomas: no se declara lista de idiomas soportados ni evaluación multilingüe, por lo que el rendimiento fuera de inglés y chino es desconocido.
@@ -109,13 +109,13 @@ En la información proporcionada no aparecen especificaciones de modelos competi
 
 ## Enlaces
 
-- Modelo NVFP4 en HuggingFace: https://huggingface.co/stepfun-ai/Step-5-Preview-NVFP4
+- Modelo NVFP4 en Hugging Face: https://huggingface.co/stepfun-ai/Step-5-Preview-NVFP4
 - Discusiones del repositorio NVFP4: https://huggingface.co/stepfun-ai/Step-5-Preview-NVFP4/discussions
-- Modelo FP8 en HuggingFace: https://huggingface.co/stepfun-ai/Step-5-Preview
-- Modelo BF16 en HuggingFace: https://huggingface.co/stepfun-ai/Step-5-Preview-BF16
+- Modelo FP8 en Hugging Face: https://huggingface.co/stepfun-ai/Step-5-Preview
+- Modelo BF16 en Hugging Face: https://huggingface.co/stepfun-ai/Step-5-Preview-BF16
 - Modelo FP8 en ModelScope: https://modelscope.ai/models/stepfun-ai/Step-5-Preview
 - Modelo BF16 en ModelScope: https://modelscope.ai/models/stepfun-ai/Step-5-Preview-BF16
-- Organización StepFun en HuggingFace: https://huggingface.co/stepfun-ai
+- Organización StepFun en Hugging Face: https://huggingface.co/stepfun-ai
 - Página del modelo: https://www.stepfun.com/step-5-preview
 - Documentación: https://platform.stepfun.ai/docs/en/guides/models/step-5-preview
 - Plataforma de API: https://platform.stepfun.ai/

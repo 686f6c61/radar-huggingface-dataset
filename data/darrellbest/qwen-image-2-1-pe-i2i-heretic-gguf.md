@@ -34,7 +34,7 @@ Un requisito critico de funcionamiento: el fichero `system_prompt.txt` esta incl
 - Comprension de imagen: lee la imagen de entrada a traves del codificador visual (`mmproj-F16.gguf`) y la describe correctamente, incluso tras cuantizacion a Q8_0 y Q4_K_M.
 - Reescritura de prompts de edicion (I2I): convierte una instruccion corta de edicion en un prompt detallado y estructurado para un generador de imagenes.
 - Cumplimiento de contrato de salida: sigue el formato definido en `system_prompt.txt`, obligatorio para que la salida sea utilizable.
-- Modo conversacional: etiquetado como `conversational` en HuggingFace, por lo que admite interaccion por turnos.
+- Modo conversacional: etiquetado como `conversational` en Hugging Face, por lo que admite interaccion por turnos.
 - Rechazos ablacionados: al ser una variante "heretic"/"abliterated", reduce las negativas ante instrucciones que el modelo base rechazaria.
 - Despliegue en CPU y ARM: disenado explicitamente para llama.cpp y Ollama, incluidas maquinas sin GPU CUDA y equipos ARM como la DGX Spark.
 - No es un generador de imagenes: no produce ni edita pixeles; solo genera el prompt de edicion.
@@ -98,7 +98,7 @@ Alternativas externas de la misma categoria (reescritores de prompts multimodale
 
 ## Enlaces
 
-- HuggingFace (modelo GGUF): https://huggingface.co/darrellbest/Qwen-Image-2.1-PE-I2I-Heretic-GGUF
+- Hugging Face (modelo GGUF): https://huggingface.co/darrellbest/Qwen-Image-2.1-PE-I2I-Heretic-GGUF
 - Modelo base GGUF: https://huggingface.co/darrellbest/Qwen-Image-2.1-PE-I2I-Heretic
 - Modelo base original (safetensors): https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I
 - Modelo de generacion asociado: https://huggingface.co/Qwen/Qwen-Image-2.1

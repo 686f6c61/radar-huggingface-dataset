@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SigLIP (large, patch16-256) es un modelo multimodal de doble torre (imagen y texto) desarrollado originalmente por Google Research y presentado en el articulo "Sigmoid Loss for Language Image Pre-Training" (Zhai et al., 2023). Esta ficha corresponde a la copia redistribuida por el usuario CollectionStudio en HuggingFace, que reproduce el checkpoint `google/siglip-large-patch16-256`. Su funcion principal es alinear representaciones de imagen y texto para tareas de clasificacion zero-shot, recuperacion imagen-texto y etiquetado automatico, no para generacion de lenguaje.
+SigLIP (large, patch16-256) es un modelo multimodal de doble torre (imagen y texto) desarrollado originalmente por Google Research y presentado en el articulo "Sigmoid Loss for Language Image Pre-Training" (Zhai et al., 2023). Esta ficha corresponde a la copia redistribuida por el usuario CollectionStudio en Hugging Face, que reproduce el checkpoint `google/siglip-large-patch16-256`. Su funcion principal es alinear representaciones de imagen y texto para tareas de clasificacion zero-shot, recuperacion imagen-texto y etiquetado automatico, no para generacion de lenguaje.
 
 La innovacion clave frente a CLIP es la funcion de perdida sigmoide, que opera unicamente sobre pares imagen-texto y no necesita una normalizacion global de las similitudes de la matriz del lote. Esto permite escalar el tamano de lote sin degradar el rendimiento y mejora los resultados en lotes pequenos, ademas de reducir el coste de comunicacion entre dispositivos durante el entrenamiento. El modelo tiene 652.150.786 parametros y procesa imagenes de 256x256 px con parches de 16x16.
 
@@ -94,7 +94,7 @@ La diferencia funcional principal frente a CLIP y OpenCLIP es la perdida sigmoid
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/CollectionStudio/siglip-large-patch16-256
+- Repositorio en Hugging Face: https://huggingface.co/CollectionStudio/siglip-large-patch16-256
 - Paper de SigLIP, "Sigmoid Loss for Language Image Pre-Training": https://arxiv.org/abs/2303.15343
 - Paper de WebLI: https://arxiv.org/abs/2209.06794
 - Repositorio de codigo big_vision de Google Research: https://github.com/google-research/big_vision

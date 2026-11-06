@@ -77,7 +77,7 @@ No se dispone de informacion sobre modelos comparables en los datos proporcionad
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/kimhyunwoo/matrix-game-gta-1step-lora
-- Modelo base en HuggingFace: https://huggingface.co/Skywork/Matrix-Game-2.0
+- Hugging Face del adaptador: https://huggingface.co/kimhyunwoo/matrix-game-gta-1step-lora
+- Modelo base en Hugging Face: https://huggingface.co/Skywork/Matrix-Game-2.0
 - Repositorio de entrenamiento y evaluacion: https://github.com/hwkim3330/gta6-world
 - Pagina del modelo Matrix-Game: https://matrix-game-homepage.github.io/

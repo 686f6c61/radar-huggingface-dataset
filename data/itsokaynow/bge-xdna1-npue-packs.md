@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bge-XDNA1-NPUE-PACKS (este repo) | Pack de 4 embeddings BGE reconvertidos a NPUE | 512 tokens | Ingles | MIT | HuggingFace, ejecucion en NPU XDNA1 |
-| BAAI/bge-large-en-v1.5 (original) | Embedding transformer encoder | 512 tokens | Ingles | MIT | HuggingFace, ONNX/PyTorch/safetensors |
-| BAAI/bge-base-en-v1.5 (original) | Embedding transformer encoder | 512 tokens | Ingles | MIT | HuggingFace, ONNX/PyTorch/safetensors |
-| TaylorAI/bge-micro-v2 (original) | Embedding destilado ligero | No disponible | Ingles | No disponible | HuggingFace |
+| bge-XDNA1-NPUE-PACKS (este repo) | Pack de 4 embeddings BGE reconvertidos a NPUE | 512 tokens | Ingles | MIT | Hugging Face, ejecucion en NPU XDNA1 |
+| BAAI/bge-large-en-v1.5 (original) | Embedding transformer encoder | 512 tokens | Ingles | MIT | Hugging Face, ONNX/PyTorch/safetensors |
+| BAAI/bge-base-en-v1.5 (original) | Embedding transformer encoder | 512 tokens | Ingles | MIT | Hugging Face, ONNX/PyTorch/safetensors |
+| TaylorAI/bge-micro-v2 (original) | Embedding destilado ligero | No disponible | Ingles | No disponible | Hugging Face |
 
 No se dispone de datos numericos de rendimiento para establecer una comparativa cuantitativa con alternativas como E5, GTE o all-MiniLM-L6-v2. La comparacion anterior se limita a caracteristicas estructurales y de licencia.
 
@@ -88,7 +88,7 @@ No se dispone de datos numericos de rendimiento para establecer una comparativa 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ItsOkayNow/bge-XDNA1-NPUE-PACKS
+- Repositorio en Hugging Face: https://huggingface.co/ItsOkayNow/bge-XDNA1-NPUE-PACKS
 - Repositorio de ejecucion en NPU: https://github.com/hardWorker254/Npu-Embeddings-XDNA1
 - Modelo de origen BAAI/bge-small-en-v1.5: https://huggingface.co/BAAI/bge-small-en-v1.5
 - Modelo de origen TaylorAI/bge-micro-v2: https://huggingface.co/TaylorAI/bge-micro-v2

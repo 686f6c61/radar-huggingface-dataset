@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo Neo0428/JENU es un repositorio publicado en HuggingFace por el usuario Neo0428 con fecha de creación el 22 de agosto de 2026. La model card asociada está prácticamente vacía: únicamente declara la licencia Apache 2.0 y no incluye ninguna descripción técnica, arquitectura, parámetros, contexto o datos de entrenamiento. No se ha publicado ningún README sustancial, ni ejemplos de uso, ni documentación complementaria.
+El modelo Neo0428/JENU es un repositorio publicado en Hugging Face por el usuario Neo0428 con fecha de creación el 22 de agosto de 2026. La model card asociada está prácticamente vacía: únicamente declara la licencia Apache 2.0 y no incluye ninguna descripción técnica, arquitectura, parámetros, contexto o datos de entrenamiento. No se ha publicado ningún README sustancial, ni ejemplos de uso, ni documentación complementaria.
 
 A fecha de la consulta, el repositorio acumula cero descargas y cero valoraciones, lo que sugiere que se trata de un modelo recién publicado o de un espacio de trabajo en fase inicial. No se han encontrado resultados de búsqueda web relevantes que aporten información adicional sobre el modelo; las páginas que aparecen en los resultados (CivitAI Archive, Neural4D, Jenova, OpenModelDB y HeyNeo) no tienen relación directa con este repositorio.
 

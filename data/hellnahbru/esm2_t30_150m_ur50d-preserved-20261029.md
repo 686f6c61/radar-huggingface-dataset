@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Capas | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| esm2_t30_150M_UR50D (este repo) | ~150M | 30 | no disponible | MIT | HuggingFace (republicado) |
-| esm2_t12_35M_UR50D | ~35M | 12 | no disponible | MIT (original de Meta) | HuggingFace |
-| esm2_t33_650M_UR50D | ~650M | 33 | no disponible | MIT (original de Meta) | HuggingFace |
-| esm2_t36_3B_UR50D | ~3B | 36 | no disponible | MIT (original de Meta) | HuggingFace |
+| esm2_t30_150M_UR50D (este repo) | ~150M | 30 | no disponible | MIT | Hugging Face (republicado) |
+| esm2_t12_35M_UR50D | ~35M | 12 | no disponible | MIT (original de Meta) | Hugging Face |
+| esm2_t33_650M_UR50D | ~650M | 33 | no disponible | MIT (original de Meta) | Hugging Face |
+| esm2_t36_3B_UR50D | ~3B | 36 | no disponible | MIT (original de Meta) | Hugging Face |
 
 La familia ESM-2 comparte arquitectura y objetivo de entrenamiento; las diferencias son de escala. Los checkpoints mayores suelen ofrecer mejor precisión en tareas de estructura y función, a costa de mucho más memoria y tiempo de entrenamiento. Este checkpoint de 150M es el punto medio práctico para fine-tuning en hardware limitado.
 
@@ -88,7 +88,7 @@ La familia ESM-2 comparte arquitectura y objetivo de entrenamiento; las diferenc
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hellnahbru/esm2_t30_150M_UR50D-preserved-20261029
+- Repositorio Hugging Face: https://huggingface.co/hellnahbru/esm2_t30_150M_UR50D-preserved-20261029
 - Checkpoint original de Meta: https://huggingface.co/facebook/esm2_t30_150M_UR50D
 - Paper ESM-2 (bioRxiv): https://www.biorxiv.org/content/10.1101/2022.07.20.500902v2
 - Notebook de fine-tuning en PyTorch: https://colab.research.google.com/github/huggingface/notebooks/blob/main/examples/protein_language_modeling.ipynb

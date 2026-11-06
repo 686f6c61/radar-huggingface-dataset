@@ -106,6 +106,6 @@ En términos funcionales, para N = 16 el parámetro de orden puede calcularse de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ItsnotAilabs/Sovereign-Swarm-Coherence-v1
-- Perfil del autor en HuggingFace: https://huggingface.co/ItsnotAilabs
+- Modelo en Hugging Face: https://huggingface.co/ItsnotAilabs/Sovereign-Swarm-Coherence-v1
+- Perfil del autor en Hugging Face: https://huggingface.co/ItsnotAilabs
 - Paper, repositorio de código, demo o blog adicionales: no disponible. Las búsquedas web realizadas no devolvieron ningún resultado relacionado con el modelo; los enlaces recuperados corresponden a foros no relacionados con inteligencia artificial.

@@ -67,7 +67,7 @@ No disponible. No se conocen modelos comparables de la misma categoría (impleme
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sachinrty/dino-generation
+- Repositorio Hugging Face: https://huggingface.co/sachinrty/dino-generation
 - DINO original (Meta AI, referencia conceptual): https://github.com/facebookresearch/dino
 - DINOv2 (Meta AI): https://dinov2.metademolab.com/
 - DINOv3 (Meta AI): https://ai.meta.com/research/dinov3/

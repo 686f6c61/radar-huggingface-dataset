@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El identificador `r3wer2a3e/r3wer2a3e` corresponde a un repositorio alojado en HuggingFace cuyo contenido no se ajusta a la definición de un modelo de inteligencia artificial. La model card publicada por el autor describe el perfil profesional de un desarrollador de software de audio en tiempo real, con experiencia en Rust, C++, DSP (procesado digital de señal), sintetizadores modulares y puentes WebAssembly/AudioWorklet, pero no incluye ninguna especificación de arquitectura de red neuronal, pesos, tokenizador ni datos de entrenamiento.
+El identificador `r3wer2a3e/r3wer2a3e` corresponde a un repositorio alojado en Hugging Face cuyo contenido no se ajusta a la definición de un modelo de inteligencia artificial. La model card publicada por el autor describe el perfil profesional de un desarrollador de software de audio en tiempo real, con experiencia en Rust, C++, DSP (procesado digital de señal), sintetizadores modulares y puentes WebAssembly/AudioWorklet, pero no incluye ninguna especificación de arquitectura de red neuronal, pesos, tokenizador ni datos de entrenamiento.
 
 El repositorio no declara pipeline, licencia, idiomas ni formato de pesos, y en el momento de la consulta registra cero descargas y cero interacciones. No hay evidencia de que contenga artefactos de modelo (safetensors, GGUF, ONNX u otros), por lo que no es posible evaluarlo como un modelo de lenguaje, visión o multimodal.
 
@@ -73,6 +73,6 @@ No disponible. No se puede establecer una comparativa con modelos de la misma ca
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/r3wer2a3e/r3wer2a3e
+- Repositorio en Hugging Face: https://huggingface.co/r3wer2a3e/r3wer2a3e
 - Perfil de GitHub citado en la model card: https://github.com/opilnig-rgb
 - No se han encontrado papers, blogs, demos ni repositorios adicionales en la información proporcionada.

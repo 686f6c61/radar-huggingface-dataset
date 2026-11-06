@@ -80,7 +80,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables ni da
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/manuel-tulip/Cosmos-Embed1-224p
+- Repositorio de Hugging Face: https://huggingface.co/manuel-tulip/Cosmos-Embed1-224p
 - Licencia NVIDIA Open Model License: https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-open-model-license
 - Terminos de IA fiable de NVIDIA: https://www.nvidia.com/en-us/agreements/trustworthy-ai/terms/
 - Referencia arXiv etiquetada en el repositorio: https://arxiv.org/abs/2301.12597

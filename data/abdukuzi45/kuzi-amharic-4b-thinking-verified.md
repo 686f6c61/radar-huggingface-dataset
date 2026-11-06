@@ -67,7 +67,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/abdukuzi45/kuzi-amharic-4b-thinking-verified
+- Hugging Face: https://huggingface.co/abdukuzi45/kuzi-amharic-4b-thinking-verified
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Otro modelo del autor: https://huggingface.co/abdukuzi/Amharic-kuzi-reasoning-model-v4
 - Otro modelo del autor: https://huggingface.co/abdukuzi45/qwen3.5-4b-amharic-sft

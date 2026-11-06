@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `karthikgoud24/fake-indian-currency-detection` es un artefacto publicado en HuggingFace por el usuario karthikgoud24. Por el identificador se deduce que su proposito declarado es la deteccion de billetes indios falsos, una tarea de vision por computador orientada a clasificacion o deteccion de imagenes. Sin embargo, la informacion publica disponible es minima: no se declara pipeline, licencia, idiomas ni arquitectura.
+El repositorio `karthikgoud24/fake-indian-currency-detection` es un artefacto publicado en Hugging Face por el usuario karthikgoud24. Por el identificador se deduce que su proposito declarado es la deteccion de billetes indios falsos, una tarea de vision por computador orientada a clasificacion o deteccion de imagenes. Sin embargo, la informacion publica disponible es minima: no se declara pipeline, licencia, idiomas ni arquitectura.
 
 El repositorio ocupa 0,3 GB y acumula 1 "like" y 0 descargas en el momento de la consulta. La unica etiqueta presente es `region:us`. No se ha publicado model card, paper, dataset de entrenamiento ni resultados de evaluacion junto al artefacto.
 
@@ -76,7 +76,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| karthikgoud24/fake-indian-currency-detection | no disponible | no aplica | no disponible | no disponible | HuggingFace, 0 descargas |
+| karthikgoud24/fake-indian-currency-detection | no disponible | no aplica | no disponible | no disponible | Hugging Face, 0 descargas |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -93,7 +93,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/karthikgoud24/fake-indian-currency-detection
+- Hugging Face: https://huggingface.co/karthikgoud24/fake-indian-currency-detection
 - Paper: no disponible
 - Blog o documentacion: no disponible
 - Repositorio de codigo: no disponible

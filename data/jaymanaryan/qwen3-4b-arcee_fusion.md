@@ -79,7 +79,7 @@ No se dispone de comparativas publicadas para este merge. Como referencia, se pu
 
 ## Enlaces
 
-- [HuggingFace - jaymanaryan/Qwen3-4B-arcee_fusion](https://huggingface.co/jaymanaryan/Qwen3-4B-arcee_fusion)
+- [Hugging Face - jaymanaryan/Qwen3-4B-arcee_fusion](https://huggingface.co/jaymanaryan/Qwen3-4B-arcee_fusion)
 - [Qwen/Qwen3-4B-Base](https://huggingface.co/Qwen/Qwen3-4B-Base)
 - [Qwen3-4B en Qualcomm AI Hub](https://aihub.qualcomm.com/models/qwen3_4b)
 - [Qwen3 Technical Report (arXiv)](https://arxiv.org/html/2505.09388v1)

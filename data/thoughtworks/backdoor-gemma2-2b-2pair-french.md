@@ -93,9 +93,9 @@ Retencion de capacidades (tinyBenchmarks, 100 items por tarea; PPL sobre wikitex
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| backdoor-gemma2-2b-2pair-french | 2,61 B | no disponible | ASR min 0.926; media tinyBenchmarks 0.521; PPL 23,6 | gemma | HuggingFace (research) |
-| google/gemma-2-2b-it (base) | 2,61 B | no disponible | media tinyBenchmarks 0.596; PPL 11,8 | gemma | HuggingFace |
-| Otras variantes de la suite de model organisms (mismos tamanos, comportamientos hate/refusal, pares 2 y 4, lineas base de disparador unico) | misma base | no disponible | no disponible | gemma | HuggingFace (research) |
+| backdoor-gemma2-2b-2pair-french | 2,61 B | no disponible | ASR min 0.926; media tinyBenchmarks 0.521; PPL 23,6 | gemma | Hugging Face (research) |
+| google/gemma-2-2b-it (base) | 2,61 B | no disponible | media tinyBenchmarks 0.596; PPL 11,8 | gemma | Hugging Face |
+| Otras variantes de la suite de model organisms (mismos tamanos, comportamientos hate/refusal, pares 2 y 4, lineas base de disparador unico) | misma base | no disponible | no disponible | gemma | Hugging Face (research) |
 
 No se dispone de identificadores concretos ni de metricas de las variantes hermanas de la suite en la informacion proporcionada, por lo que la comparacion con ellas queda como no disponible.
 
@@ -113,7 +113,7 @@ No se dispone de identificadores concretos ni de metricas de las variantes herma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thoughtworks/backdoor-gemma2-2b-2pair-french
+- Modelo en Hugging Face: https://huggingface.co/thoughtworks/backdoor-gemma2-2b-2pair-french
 - Dataset de entrenamiento: https://huggingface.co/datasets/thoughtworks/backdoor-2pair
 - Split de test del comportamiento: https://huggingface.co/datasets/thoughtworks/backdoor-2pair/viewer/french/test
 - Split de robustez: https://huggingface.co/datasets/thoughtworks/backdoor-2pair/viewer/french/robustness_full

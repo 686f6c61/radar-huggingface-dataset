@@ -2,11 +2,11 @@
 
 ## Resumen
 
-distilbert-sentiment-demo es un ajuste fino (fine-tuning) del modelo distilbert-base-uncased publicado en HuggingFace por el usuario mouad10009 bajo licencia Apache 2.0. Se trata de un clasificador de texto orientado al análisis de sentimiento, entrenado con la librería Transformers mediante el Trainer estándar y sin documentación adicional sobre el conjunto de datos empleado: la propia model card indica "unknown dataset" y deja las secciones de descripción, usos previstos y datos de entrenamiento como "More information needed".
+distilbert-sentiment-demo es un ajuste fino (fine-tuning) del modelo distilbert-base-uncased publicado en Hugging Face por el usuario mouad10009 bajo licencia Apache 2.0. Se trata de un clasificador de texto orientado al análisis de sentimiento, entrenado con la librería Transformers mediante el Trainer estándar y sin documentación adicional sobre el conjunto de datos empleado: la propia model card indica "unknown dataset" y deja las secciones de descripción, usos previstos y datos de entrenamiento como "More information needed".
 
 El modelo conserva la arquitectura original de DistilBERT: un transformer encoder de 6 capas con 768 dimensiones ocultas, 12 cabezas de atención y 66.955.010 parámetros totales (unos 67 millones), lo que lo sitúa en la gama ultraligera de modelos de clasificación. La ventana de contexto está limitada a 512 tokens, heredada del modelo base, y el tokenizador es de tipo uncased (WordPiece, sin distinción de mayúsculas/minúsculas).
 
-Su relevancia práctica es limitada pero clara: es un ejemplo reproducible de fine-tuning de un encoder pequeño para clasificación de sentimiento, con pesos en safetensors y compatibilidad declarada con text-embeddings-inference y endpoints de HuggingFace. Con 0 descargas y 0 "likes" en el momento de la consulta, y con una model card generada automáticamente, debe considerarse un artefacto experimental o de demostración más que un modelo listo para producción.
+Su relevancia práctica es limitada pero clara: es un ejemplo reproducible de fine-tuning de un encoder pequeño para clasificación de sentimiento, con pesos en safetensors y compatibilidad declarada con text-embeddings-inference y endpoints de Hugging Face. Con 0 descargas y 0 "likes" en el momento de la consulta, y con una model card generada automáticamente, debe considerarse un artefacto experimental o de demostración más que un modelo listo para producción.
 
 ## Especificaciones tecnicas
 
@@ -94,17 +94,17 @@ No se dispone de la composicion del conjunto de evaluacion, por lo que estas cif
 - GPU recomendadas: cualquier GPU con al menos 1-2 GB de memoria es suficiente (GTX 1050 Ti, GTX 1650, RTX 3050, RTX 4090, A100, H100). El modelo esta sobredimensionado para hardware de datacenter; no requiere GPU dedicada.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU de consumo de los ultimos diez anos, e incluso en iGPU y en placas tipo Raspberry Pi 4/5 en CPU.
 - CPU: el autor entreno y publico el modelo con PyTorch 2.14.0+cpu, lo que evidencia que la inferencia en CPU es plenamente viable.
-- Opciones de despliegue: pipeline de transformers (TextClassificationPipeline), HuggingFace Inference Endpoints (tag endpoints_compatible), Text Embeddings Inference (tag text-embeddings-inference), exportacion a ONNX/OpenVINO mediante Optimum, y servidores de inferencia genericos. vLLM, llama.cpp, Ollama y TGI no estan orientados a encoders de clasificacion de este tipo y no aparecen declarados por el autor.
+- Opciones de despliegue: pipeline de transformers (TextClassificationPipeline), Hugging Face Inference Endpoints (tag endpoints_compatible), Text Embeddings Inference (tag text-embeddings-inference), exportacion a ONNX/OpenVINO mediante Optimum, y servidores de inferencia genericos. vLLM, llama.cpp, Ollama y TGI no estan orientados a encoders de clasificacion de este tipo y no aparecen declarados por el autor.
 - Latencia y throughput: no disponibles en la informacion proporcionada. Como referencia estructural, un encoder de 6 capas y 66M de parametros suele procesar lotes de cientos de secuencias por segundo en GPU moderna, pero no hay medicion publicada para este checkpoint.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mouad10009/distilbert-sentiment-demo | 66.955.010 | 512 tokens | Clasificacion de sentimiento (etiquetas no documentadas) | apache-2.0 | HuggingFace, 0 descargas |
-| distilbert/distilbert-base-uncased | 66.955.010 | 512 tokens | Modelo base sin cabeza de tarea | apache-2.0 | HuggingFace (modelo base de referencia) |
-| Encoders tipo BERT-base / RoBERTa-base para clasificacion | Aproximadamente 110M - 125M | 512 tokens | Clasificacion y regresion de secuencias | no disponible en la informacion proporcionada | HuggingFace |
-| Encoders tipo DeBERTa-v3-base para clasificacion | Aproximadamente 184M | 512 tokens | Clasificacion de secuencias | no disponible en la informacion proporcionada | HuggingFace |
+| mouad10009/distilbert-sentiment-demo | 66.955.010 | 512 tokens | Clasificacion de sentimiento (etiquetas no documentadas) | apache-2.0 | Hugging Face, 0 descargas |
+| distilbert/distilbert-base-uncased | 66.955.010 | 512 tokens | Modelo base sin cabeza de tarea | apache-2.0 | Hugging Face (modelo base de referencia) |
+| Encoders tipo BERT-base / RoBERTa-base para clasificacion | Aproximadamente 110M - 125M | 512 tokens | Clasificacion y regresion de secuencias | no disponible en la informacion proporcionada | Hugging Face |
+| Encoders tipo DeBERTa-v3-base para clasificacion | Aproximadamente 184M | 512 tokens | Clasificacion de secuencias | no disponible en la informacion proporcionada | Hugging Face |
 
 Nota: los datos de los modelos alternativos no provienen de la informacion proporcionada en esta busqueda, salvo el modelo base. La comparacion de rendimiento con alternativas no es posible porque este checkpoint no publica benchmarks ni documenta su dataset de evaluacion.
 
@@ -126,7 +126,7 @@ Nota: los datos de los modelos alternativos no provienen de la informacion propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mouad10009/distilbert-sentiment-demo
+- Modelo en Hugging Face: https://huggingface.co/mouad10009/distilbert-sentiment-demo
 - Modelo base: https://huggingface.co/distilbert-base-uncased
 - Repositorio del modelo base en la organizacion distilbert: https://huggingface.co/distilbert/distilbert-base-uncased
 

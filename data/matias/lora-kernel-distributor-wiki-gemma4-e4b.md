@@ -77,8 +77,8 @@ La informacion disponible solo permite comparar contra variantes internas del mi
 
 | Variante | Parametros | Contexto | W9 headline (40) | Banda de comparacion (40) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `distributor-wiki@v2` (este adaptador) | LoRA r=16, alpha=32 | No disponible (max_seq 1536 en entrenamiento) | 39/40 | 37/40 | Apache-2.0 | Publicado en HuggingFace |
-| `distributor-wiki@v1` | LoRA (rango no detallado) | No disponible | 39/40 | 10/40 | Apache-2.0 | Publicado en HuggingFace |
+| `distributor-wiki@v2` (este adaptador) | LoRA r=16, alpha=32 | No disponible (max_seq 1536 en entrenamiento) | 39/40 | 37/40 | Apache-2.0 | Publicado en Hugging Face |
+| `distributor-wiki@v1` | LoRA (rango no detallado) | No disponible | 39/40 | 10/40 | Apache-2.0 | Publicado en Hugging Face |
 | `gemma-4-E4B-it` sin adaptador | No disponible | No disponible | 19/40 | No disponible | No disponible | Modelo base publico |
 
 No se dispone de datos de modelos externos comparables en la informacion proporcionada.
@@ -97,7 +97,7 @@ No se dispone de datos de modelos externos comparables en la informacion proporc
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/Matias/lora-kernel-distributor-wiki-gemma4-e4b
+- Pagina del modelo en Hugging Face: https://huggingface.co/Matias/lora-kernel-distributor-wiki-gemma4-e4b
 - Repositorio del proyecto lora-kernel: https://github.com/EvolvingAgentsLabs/lora-kernel
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Manifiesto de publicacion: `releases/distributor-wiki@v2.json` (dentro del repositorio lora-kernel)

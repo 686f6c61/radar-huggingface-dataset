@@ -113,7 +113,7 @@ No se dispone de información sobre otros bundles cuantizados publicados de este
 
 | Version | Parametros | Contexto | Tamano en disco | KL mediana | Acuerdo top-1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Naive-N0.5-Flash (bf16) | ~309B totales, 15,5B activos | 1M | 575 GiB | 0,060 (techo con ruido) | 71,6% | MIT (modelo base) | Publicado en HuggingFace |
+| Naive-N0.5-Flash (bf16) | ~309B totales, 15,5B activos | 1M | 575 GiB | 0,060 (techo con ruido) | 71,6% | MIT (modelo base) | Publicado en Hugging Face |
 | Naive-N0.5-Flash-JANGH2 | 30.187.934.144 según metadatos (discrepante) | 1M | 95,89 GiB | 0,170 | 64,4% | MIT | Publicado, pero sin runtime estable |
 | MLX affine RTN (control interno) | mismo origen | 1M | 95,83 GiB | 1,552 | 48,2% | no aplica | No publicado |
 

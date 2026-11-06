@@ -27,7 +27,7 @@ El modelo es un decoder transformer denso de 24 capas con atención multi-cabeza
 
 El preentrenamiento cubre 11.106 pasos del flujo alineado por pasos del estudio principal (23,29B posiciones de token). Durante los primeros 9.996 pasos se usan los documentos DCLM-edu originales; en los últimos 1.110 pasos (el cooldown) se usan conversaciones 1PP reescritas a partir de esos mismos documentos, aplicando la pérdida solo a los turnos del asistente. El optimizador es Muon (escalado por forma, LR matricial 0,005) para los parámetros matriciales y Adam para el resto (LR 3e-3 en embeddings y capa de salida, 3e-3 en normas), con warmup de 699 pasos, fase constante y decaimiento lineal hasta 1/100 en los últimos 1.110 pasos, weight decay 0,1, desviación típica de inicialización 0,0119 y precisión bf16. El batch global es de 512 secuencias × 4.096 tokens.
 
-La innovación principal no es arquitectónica sino experimental: el corpus de cooldown está alineado paso a paso con el del run raw, de forma que cada paso de cooldown contiene las conversaciones reescritas de los documentos que el run raw vio en ese mismo paso. La pérdida de validación del checkpoint final sobre 2.433 documentos retenidos es de 1,808 en texto de asistente, 3,503 en texto de usuario, 3,178 en texto de documento y 1,855 en los tokens de entrenamiento de la condición (`reweighted_seg34`). Los pesos de HuggingFace se verificaron contra el checkpoint de Megatron con una diferencia absoluta de 0,0016 en `val50m segments [3]` y 0,0014 en `raw_val50m segments [8]`.
+La innovación principal no es arquitectónica sino experimental: el corpus de cooldown está alineado paso a paso con el del run raw, de forma que cada paso de cooldown contiene las conversaciones reescritas de los documentos que el run raw vio en ese mismo paso. La pérdida de validación del checkpoint final sobre 2.433 documentos retenidos es de 1,808 en texto de asistente, 3,503 en texto de usuario, 3,178 en texto de documento y 1,855 en los tokens de entrenamiento de la condición (`reweighted_seg34`). Los pesos de Hugging Face se verificaron contra el checkpoint de Megatron con una diferencia absoluta de 0,0016 en `val50m segments [3]` y 0,0014 en `raw_val50m segments [8]`.
 
 ## Capacidades
 
@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `1pp-0.58b-v2-asst-rawanneal-seed42-base` (este) | 0,58B | 4.096 | Apache 2.0 | HuggingFace, safetensors | Cooldown con conversaciones, pérdida solo en turnos de asistente |
-| `1pp-0.58b-v2-raw-seed42-base` | 0,58B | 4.096 | Apache 2.0 (según colección) | HuggingFace | Mismo flujo de datos sin cooldown conversacional; línea base del estudio |
-| `1pp-0.58b-v2-asst-seed42-base` | 0,58B | 4.096 | Apache 2.0 (según colección) | HuggingFace | Run 1PP completo, sin variante de mid-training |
-| SmolLM2-360M | 0,36B | 8.192 (según documentación pública del modelo) | Apache 2.0 | HuggingFace | Referencia de la misma familia de tokenizador; no comparable en condiciones de entrenamiento |
+| `1pp-0.58b-v2-asst-rawanneal-seed42-base` (este) | 0,58B | 4.096 | Apache 2.0 | Hugging Face, safetensors | Cooldown con conversaciones, pérdida solo en turnos de asistente |
+| `1pp-0.58b-v2-raw-seed42-base` | 0,58B | 4.096 | Apache 2.0 (según colección) | Hugging Face | Mismo flujo de datos sin cooldown conversacional; línea base del estudio |
+| `1pp-0.58b-v2-asst-seed42-base` | 0,58B | 4.096 | Apache 2.0 (según colección) | Hugging Face | Run 1PP completo, sin variante de mid-training |
+| SmolLM2-360M | 0,36B | 8.192 (según documentación pública del modelo) | Apache 2.0 | Hugging Face | Referencia de la misma familia de tokenizador; no comparable en condiciones de entrenamiento |
 
 La comparación con modelos de propósito general de tamaño similar no es directa: este checkpoint es un artefacto de investigación con 23,29B tokens de entrenamiento y sin ajuste por instrucciones, por lo que su rendimiento en tareas estándar no está caracterizado en la información disponible.
 
@@ -95,7 +95,7 @@ La comparación con modelos de propósito general de tamaño similar no es direc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-0.58b-v2-asst-rawanneal-seed42-base
+- Modelo en Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-0.58b-v2-asst-rawanneal-seed42-base
 - Variante raw: https://huggingface.co/Raghav-Singhal/1pp-0.58b-v2-raw-seed42-base
 - Variante 1PP completa: https://huggingface.co/Raghav-Singhal/1pp-0.58b-v2-asst-seed42-base
 - Colección 1pp: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649

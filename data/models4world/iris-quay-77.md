@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `models4world/iris-quay-77` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario `models4world`. Está diseñado para la generación de texto y se presenta como un adaptador sobre el modelo base `models4world/maple-signal-64`, del cual no se dispone de información pública adicional. El repositorio tiene un tamaño de 1,9 GB y utiliza la librería PEFT (Parameter-Efficient Fine-Tuning), lo que indica que se trata de un ajuste fino eficiente en parámetros sobre un modelo preentrenado.
+El modelo `models4world/iris-quay-77` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario `models4world`. Está diseñado para la generación de texto y se presenta como un adaptador sobre el modelo base `models4world/maple-signal-64`, del cual no se dispone de información pública adicional. El repositorio tiene un tamaño de 1,9 GB y utiliza la librería PEFT (Parameter-Efficient Fine-Tuning), lo que indica que se trata de un ajuste fino eficiente en parámetros sobre un modelo preentrenado.
 
 La ficha del modelo (model card) está prácticamente vacía: la mayoría de los campos contienen "[More Information Needed]" y no se especifican detalles sobre arquitectura, parámetros, contexto, idiomas, licencia, datos de entrenamiento o rendimiento. Tampoco se han publicado resultados de benchmarks ni información sobre el proceso de entrenamiento. El modelo fue creado el 24 de agosto de 2026 y actualizado el mismo día, con cero descargas y cero likes en el momento de la consulta.
 
@@ -56,7 +56,7 @@ No se dispone de información sobre modelos comparables. Al no conocerse el mode
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/models4world/iris-quay-77)
-- [Perfil del autor en HuggingFace](https://huggingface.co/models4world)
+- [Modelo en Hugging Face](https://huggingface.co/models4world/iris-quay-77)
+- [Perfil del autor en Hugging Face](https://huggingface.co/models4world)
 - [Lista de modelos del autor](https://huggingface.co/models4world/models)
 - [Referencia al paper de Lacoste et al. (2019) sobre impacto ambiental](https://arxiv.org/abs/1910.09700) (citado en los tags, no es un paper del modelo)

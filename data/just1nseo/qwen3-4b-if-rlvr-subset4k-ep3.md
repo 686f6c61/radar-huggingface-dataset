@@ -74,5 +74,5 @@ No se dispone de datos comparativos de rendimiento. Como referencia estructural,
 
 ## Enlaces
 
-- [HuggingFace - just1nseo/qwen3-4b-if-rlvr-subset4k-ep3](https://huggingface.co/just1nseo/qwen3-4b-if-rlvr-subset4k-ep3)
+- [Hugging Face - just1nseo/qwen3-4b-if-rlvr-subset4k-ep3](https://huggingface.co/just1nseo/qwen3-4b-if-rlvr-subset4k-ep3)
 - [Modelo base: Qwen/Qwen3-4B](https://huggingface.co/Qwen/Qwen3-4B)

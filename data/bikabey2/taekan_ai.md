@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Taekan_AI es un modelo publicado en HuggingFace por el usuario bikabey2 bajo licencia MIT. La model card asociada no contiene ninguna descripcion tecnica, arquitectura, datos de entrenamiento ni informacion sobre capacidades, por lo que la mayor parte de los datos de esta ficha no estan disponibles. El repositorio ocupa 3,4 GB, lo que sugiere pesos en algun formato de precision media (posiblemente fp16 o bf16) para un modelo de aproximadamente 1.500-1.700 millones de parametros, aunque esta estimacion es una inferencia a partir del tamano y no un dato confirmado.
+Taekan_AI es un modelo publicado en Hugging Face por el usuario bikabey2 bajo licencia MIT. La model card asociada no contiene ninguna descripcion tecnica, arquitectura, datos de entrenamiento ni informacion sobre capacidades, por lo que la mayor parte de los datos de esta ficha no estan disponibles. El repositorio ocupa 3,4 GB, lo que sugiere pesos en algun formato de precision media (posiblemente fp16 o bf16) para un modelo de aproximadamente 1.500-1.700 millones de parametros, aunque esta estimacion es una inferencia a partir del tamano y no un dato confirmado.
 
-El modelo no registra descargas ni likes en el momento de la consulta, y no tiene pipeline declarado en HuggingFace. Se desconoce si se trata de un modelo base, un fine-tune o una adaptacion de otro modelo existente. La unica informacion verificable es la licencia MIT y la region de publicacion (us).
+El modelo no registra descargas ni likes en el momento de la consulta, y no tiene pipeline declarado en Hugging Face. Se desconoce si se trata de un modelo base, un fine-tune o una adaptacion de otro modelo existente. La unica informacion verificable es la licencia MIT y la region de publicacion (us).
 
 Dada la ausencia total de documentacion, esta ficha recoge los pocos datos disponibles y marca explicitamente como "no disponible" todo aquello que no puede confirmarse. Cualquier evaluacion de uso en produccion requeriria inspeccion directa de los pesos y la configuracion del repositorio.
 
@@ -23,7 +23,7 @@ Dada la ausencia total de documentacion, esta ficha recoge los pocos datos dispo
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de HuggingFace. Se desconoce si emplea un transformer denso, una arquitectura MoE, SSM o hibrida, asi como el numero de capas, dimensiones ocultas, cabezas de atencion o mecanismos de atencion (MHA, GQA, MLA). Tampoco hay datos sobre tokenizador ni vocabulario.
+No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de Hugging Face. Se desconoce si emplea un transformer denso, una arquitectura MoE, SSM o hibrida, asi como el numero de capas, dimensiones ocultas, cabezas de atencion o mecanismos de atencion (MHA, GQA, MLA). Tampoco hay datos sobre tokenizador ni vocabulario.
 
 Respecto al entrenamiento, no se indica el numero de tokens procesados, la composicion del dataset, si hubo fases de instruccion, RLHF, DPO u otras tecnicas de alineacion, ni si se aplicaron innovaciones como decodificacion especulativa o atencion lineal. Toda esta seccion queda pendiente de documentacion por parte del autor.
 
@@ -40,7 +40,7 @@ Respecto al entrenamiento, no se indica el numero de tokens procesados, la compo
 
 - Evaluacion experimental en laboratorio: al no existir documentacion, el unico uso razonable inmediato es la inspeccion tecnica de los pesos (carga en transformers, revision de config.json y tokenizer) para determinar arquitectura y comportamiento antes de plantear cualquier aplicacion.
 - Prototipado interno sin garantias: la licencia MIT permite usar el modelo en entornos de prueba, pero sin benchmarks ni model card no es posible justificar su eleccion frente a alternativas documentadas.
-- Investigacion sobre modelos poco documentados: puede servir como caso de estudio sobre publicaciones sin model card y los riesgos asociados en la comunidad de HuggingFace.
+- Investigacion sobre modelos poco documentados: puede servir como caso de estudio sobre publicaciones sin model card y los riesgos asociados en la comunidad de Hugging Face.
 - Fine-tuning exploratorio: si los pesos son compatibles con transformers, podria servir como base para experimentos de ajuste, siempre que se valide previamente su calidad mediante evaluaciones propias.
 - Analisis de seguridad y reproducibilidad: util para estudiar practicas de publicacion de modelos (ausencia de pipeline, de idiomas declarados y de datos de entrenamiento).
 - Uso educativo: como ejemplo de repositorio que cumple el minimo de metadatos exigidos por la plataforma pero no los estandares de documentacion recomendados.
@@ -73,5 +73,5 @@ No disponible. Al desconocerse la arquitectura, el tamano exacto, el contexto y 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bikabey2/Taekan_AI
+- Hugging Face: https://huggingface.co/bikabey2/Taekan_AI
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-R1 es un modelo de lenguaje de gran escala orientado al razonamiento, desarrollado por DeepSeek y publicado en HuggingFace bajo licencia MIT. Este repositorio concreto (balajiduraisamy/DeepSeek-R1) es una copia del modelo original con pesos en formato safetensors y cuantización FP8, que requiere aceptar condiciones de acceso en HuggingFace. El modelo destaca por su capacidad de razonamiento avanzado, entrenado con un coste reducido en comparación con alternativas propietarias, y se posiciona como una opción competitiva frente a sistemas como OpenAI o1, según los análisis publicados.
+DeepSeek-R1 es un modelo de lenguaje de gran escala orientado al razonamiento, desarrollado por DeepSeek y publicado en Hugging Face bajo licencia MIT. Este repositorio concreto (balajiduraisamy/DeepSeek-R1) es una copia del modelo original con pesos en formato safetensors y cuantización FP8, que requiere aceptar condiciones de acceso en Hugging Face. El modelo destaca por su capacidad de razonamiento avanzado, entrenado con un coste reducido en comparación con alternativas propietarias, y se posiciona como una opción competitiva frente a sistemas como OpenAI o1, según los análisis publicados.
 
 Con 684.489.845.504 parámetros totales, es un modelo de enormes dimensiones, pensado para tareas de generación de texto y conversación. Su relevancia actual radica en que democratiza el acceso a capacidades de razonamiento de alto nivel mediante una licencia permisiva, aunque su tamaño exige infraestructura de datacenter para su despliegue. La información disponible no especifica la arquitectura interna ni la longitud de contexto, pero los tags sugieren una relación con la familia DeepSeek-V3.
 
@@ -57,17 +57,17 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es "gated", por lo que es necesario aceptar condiciones en HuggingFace antes de descargar los pesos.
+- Acceso restringido: el repositorio es "gated", por lo que es necesario aceptar condiciones en Hugging Face antes de descargar los pesos.
 - Tamaño extremo: 684.489.845.504 parámetros requieren infraestructura de datacenter, lo que limita su uso a organizaciones con recursos de cómputo significativos.
 - Sesgos y alucinaciones: no se dispone de evaluaciones específicas, pero como todo modelo de lenguaje, puede generar información incorrecta o reflejar sesgos presentes en sus datos de entrenamiento.
 - Idiomas: no se especifican los idiomas soportados, por lo que su rendimiento en lenguas distintas del inglés o el chino es incierto.
-- Licencia MIT: permite uso comercial y modificación, pero el acceso al modelo está condicionado por el sistema de gating de HuggingFace.
+- Licencia MIT: permite uso comercial y modificación, pero el acceso al modelo está condicionado por el sistema de gating de Hugging Face.
 - Producción: la falta de benchmarks y especificaciones técnicas detalladas dificulta evaluar su idoneidad para entornos productivos sin pruebas adicionales.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/balajiduraisamy/DeepSeek-R1
-- Página oficial del modelo en HuggingFace: https://huggingface.co/deepseek-ai/DeepSeek-R1
+- Repositorio en Hugging Face: https://huggingface.co/balajiduraisamy/DeepSeek-R1
+- Página oficial del modelo en Hugging Face: https://huggingface.co/deepseek-ai/DeepSeek-R1
 - Análisis en arXiv (2502.02523): https://arxiv.org/abs/2502.02523
 - Artículo de DeepSeek USA sobre R1: https://deepseek-usa.ai/models/deepseek-r1/
 - Paper referenciado en tags (arXiv:2501.12948): https://arxiv.org/abs/2501.12948

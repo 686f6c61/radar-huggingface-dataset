@@ -44,7 +44,7 @@ El entrenamiento se realizo con el optimizador Adam (learning rate 0,001), funci
 - **Prototipado de aplicaciones de OCR limitado**: como componente base de un sistema OCR sencillo para digitos, antes de invertir en soluciones mas complejas.
 - **Baseline para experimentos de cuantizacion o destilacion**: su tamano reducido lo hace adecuado para practicar optimizacion de inferencia en dispositivos edge.
 - **Ensenanza y demos en aula**: material ligero para demostrar CNNs en talleres, ejecutable en cualquier portatil sin GPU.
-- **Pruebas de integracion con HuggingFace Hub**: ejemplo practico de distribucion de pesos via `hf_hub_download`.
+- **Pruebas de integracion con Hugging Face Hub**: ejemplo practico de distribucion de pesos via `hf_hub_download`.
 
 ## Benchmarks y rendimiento
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks comparativos con otros modelos en l
 | CNN MLP basica (referencia clasica) | MLP 2 capas | MNIST | ~98 % | varia |
 | LeNet-5 (referencia clasica) | CNN 2 conv + 2 densas | MNIST | ~99 % | varia |
 
-No hay modelos comparables publicados en HuggingFace con datos verificables en la informacion disponible; la tabla usa referencias clasicas del campo a titulo orientativo.
+No hay modelos comparables publicados en Hugging Face con datos verificables en la informacion disponible; la tabla usa referencias clasicas del campo a titulo orientativo.
 
 ## Limitaciones y advertencias
 
@@ -84,7 +84,7 @@ No hay modelos comparables publicados en HuggingFace con datos verificables en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Salamah01/mnist-cnn-pytorch
+- Modelo en Hugging Face: https://huggingface.co/Salamah01/mnist-cnn-pytorch
 - Dataset MNIST: https://huggingface.co/datasets/mnist
 - Paper original de MNIST (LeCun et al.): http://yann.lecun.com/exdb/publis/pdf/lecun-98.pdf
 - Documentacion de PyTorch: https://pytorch.org/docs/stable/index.html

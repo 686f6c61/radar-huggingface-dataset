@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `gianmaTest/generatedDigitalExps_1xP4hJ_hier_by_room_rnn_meanPoolProc_video_0` es un artefacto publicado en HuggingFace Hub por el usuario `gianmaTest`. Por su nombre y sus caracteristicas tecnicas (2.366.208 parametros, integracion mediante `PyTorchModelHubMixin`, pesos en safetensors) no se trata de un modelo de lenguaje generativo, sino de una red neuronal recurrente (RNN) de pequeno tamano, probablemente un componente de un sistema mayor de procesamiento jerarquico por salas ("hier_by_room") con mean pooling, orientado a datos de video. El sufijo `video_0` sugiere que forma parte de una familia de experimentos generados automaticamente.
+El modelo identificado como `gianmaTest/generatedDigitalExps_1xP4hJ_hier_by_room_rnn_meanPoolProc_video_0` es un artefacto publicado en Hugging Face Hub por el usuario `gianmaTest`. Por su nombre y sus caracteristicas tecnicas (2.366.208 parametros, integracion mediante `PyTorchModelHubMixin`, pesos en safetensors) no se trata de un modelo de lenguaje generativo, sino de una red neuronal recurrente (RNN) de pequeno tamano, probablemente un componente de un sistema mayor de procesamiento jerarquico por salas ("hier_by_room") con mean pooling, orientado a datos de video. El sufijo `video_0` sugiere que forma parte de una familia de experimentos generados automaticamente.
 
 El modelo no dispone de model card descriptiva: la unica informacion publicada es la plantilla automatica de `PyTorchModelHubMixin`, con los campos "Code", "Paper" y "Docs" marcados como "More Information Needed". No se declara licencia, idiomas, pipeline ni conjunto de datos de entrenamiento. Registra 0 descargas y 0 likes en el momento de la consulta, y el repositorio ocupa 0.0 GB, lo que es coherente con un checkpoint de apenas 2,4 millones de parametros.
 
@@ -49,7 +49,7 @@ No se dispone de informacion sobre el numero de tokens de entrenamiento, la comp
 - Analisis de arquitecturas jerarquicas sobre video: el modelo puede servir como referencia para estudiar como se agregan representaciones por sala y como afecta el mean pooling al rendimiento en tareas de video, siempre que se reconstruya el pipeline de entrada a partir del codigo del autor (no publicado).
 - Baseline en experimentos de agregacion de caracteristicas: con 2,4 millones de parametros, es lo bastante pequeno para ejecutarse en CPU y servir como linea base en comparaciones de coste y precision frente a modelos mayores.
 - Extraccion de representaciones intermedias: al ser un `torch.nn.Module`, puede utilizarse para obtener embeddings de secuencias cortas en tareas de clasificacion o recuperacion, previa validacion de que la arquitectura es compatible con la tarea objetivo.
-- Docencia y formacion: util en cursos de aprendizaje profundo para ilustrar el uso de `PyTorchModelHubMixin` y el versionado de checkpoints en HuggingFace Hub.
+- Docencia y formacion: util en cursos de aprendizaje profundo para ilustrar el uso de `PyTorchModelHubMixin` y el versionado de checkpoints en Hugging Face Hub.
 - Auditoria de artefactos publicados automaticamente: sirve como caso de estudio sobre modelos generados por pipelines automaticos sin model card, sin licencia y sin benchmarks, y sobre los riesgos de reutilizarlos en produccion.
 
 ## Benchmarks y rendimiento
@@ -82,9 +82,9 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gianmaTest/generatedDigitalExps_1xP4hJ_hier_by_room_rnn_meanPoolProc_video_0
+- Modelo en Hugging Face: https://huggingface.co/gianmaTest/generatedDigitalExps_1xP4hJ_hier_by_room_rnn_meanPoolProc_video_0
 - Documentacion de `PyTorchModelHubMixin`: https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin
-- Perfil del autor en HuggingFace: https://huggingface.co/gianmaTest
+- Perfil del autor en Hugging Face: https://huggingface.co/gianmaTest
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Demo: no disponible

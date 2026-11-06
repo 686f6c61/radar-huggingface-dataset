@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Qwen3.5-9B-NVFP4-QAD-Math-4K es una versión cuantizada del modelo base Qwen/Qwen3.5-9B, publicada por el usuario qatfactory en HuggingFace. Se trata de un checkpoint sometido a quantisation-aware training (QAT) y posteriormente cuantizado en formato NVFP4 (punto flotante de 4 bits de NVIDIA), empaquetado mediante la librería compressed-tensors y orientado a su despliegue en vLLM. El modelo conserva los 9.409.813.744 parámetros del modelo original, pero reduce el peso del repositorio a 8,9 GB gracias a la cuantización de 4 bits.
+Qwen3.5-9B-NVFP4-QAD-Math-4K es una versión cuantizada del modelo base Qwen/Qwen3.5-9B, publicada por el usuario qatfactory en Hugging Face. Se trata de un checkpoint sometido a quantisation-aware training (QAT) y posteriormente cuantizado en formato NVFP4 (punto flotante de 4 bits de NVIDIA), empaquetado mediante la librería compressed-tensors y orientado a su despliegue en vLLM. El modelo conserva los 9.409.813.744 parámetros del modelo original, pero reduce el peso del repositorio a 8,9 GB gracias a la cuantización de 4 bits.
 
-El sufijo "Math-4K" sugiere que el proceso de QAT se ha calibrado o afinado sobre un conjunto de datos matemáticos con ventanas de contexto de 4K tokens, aunque la información disponible no detalla la composición exacta de ese dataset ni el procedimiento completo de entrenamiento. El modelo se distribuye bajo licencia Apache 2.0, aunque el acceso está restringido (gated) y requiere aceptar condiciones en HuggingFace.
+El sufijo "Math-4K" sugiere que el proceso de QAT se ha calibrado o afinado sobre un conjunto de datos matemáticos con ventanas de contexto de 4K tokens, aunque la información disponible no detalla la composición exacta de ese dataset ni el procedimiento completo de entrenamiento. El modelo se distribuye bajo licencia Apache 2.0, aunque el acceso está restringido (gated) y requiere aceptar condiciones en Hugging Face.
 
 La relevancia de esta ficha radica en que combina dos tendencias actuales: por un lado, la familia Qwen3.5 de Alibaba, y por otro, la cuantización NVFP4, un formato de 4 bits con escala por bloque pensado para aprovechar los tensor cores de las GPU Blackwell de NVIDIA. Esto permite reducir el coste de inferencia manteniendo una precisión cercana a la del modelo en BF16, si bien la información pública disponible sobre este checkpoint concreto es muy limitada.
 
@@ -16,7 +16,7 @@ La relevancia de esta ficha radica en que combina dos tendencias actuales: por u
 | Parametros totales | 9.409.813.744 |
 | Parametros activos | No aplica (no es MoE segun la informacion disponible) |
 | Longitud de contexto | No disponible (el sufijo "4K" hace referencia al calibrado QAT, no necesariamente al contexto maximo) |
-| Tipos de cuantizacion | NVFP4 (4 bits, formato NVIDIA), empaquetado con compressed-tensors; tag "8-bit" presente en HuggingFace |
+| Tipos de cuantizacion | NVFP4 (4 bits, formato NVIDIA), empaquetado con compressed-tensors; tag "8-bit" presente en Hugging Face |
 | Idiomas soportados | No disponible |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (compressed-tensors), compatible con vLLM |
@@ -71,7 +71,7 @@ La comparativa se limita al modelo base y a sus variantes GGUF, ya que no se dis
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar el modelo.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar el modelo.
 - Información pública muy escasa: sin benchmarks, sin detalle del dataset de QAT, sin idiomas declarados y sin pipeline definido; la evaluación rigurosa requiere pruebas propias.
 - Riesgo de degradación por cuantización: aunque el QAT mitiga la pérdida, NVFP4 a 4 bits puede degradar tareas sensibles (razonamiento largo, código, matemáticas complejas) frente al modelo en BF16.
 - Especialización matemática: el calibrado "Math-4K" puede haber sesgado el modelo hacia ese dominio, con posible pérdida relativa en otras tareas.
@@ -83,7 +83,7 @@ La comparativa se limita al modelo base y a sus variantes GGUF, ya que no se dis
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qatfactory/Qwen3.5-9B-NVFP4-QAD-Math-4K
+- Hugging Face: https://huggingface.co/qatfactory/Qwen3.5-9B-NVFP4-QAD-Math-4K
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Librería compressed-tensors: https://github.com/neuralmagic/compressed-tensors
 - vLLM: https://github.com/vllm-project/vllm

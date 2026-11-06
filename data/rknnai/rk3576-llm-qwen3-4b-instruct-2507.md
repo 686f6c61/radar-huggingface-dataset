@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/RKNNAI/RK3576-LLM-Qwen3-4B-Instruct-2507
+- Repositorio en Hugging Face: https://huggingface.co/RKNNAI/RK3576-LLM-Qwen3-4B-Instruct-2507
 - Modelo fuente: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Ficha en Qualcomm AI Hub: https://aihub.qualcomm.com/models/qwen3_4b_instruct_2507
 - Ficha en FitMyLLM: https://www.fitmyllm.com/model/qwen3-4b-2507

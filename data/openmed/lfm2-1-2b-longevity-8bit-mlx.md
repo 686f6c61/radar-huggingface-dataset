@@ -100,7 +100,7 @@ No se dispone de datos de rendimiento comparado con alternativas externas de tam
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OpenMed/LFM2-1.2B-Longevity-8bit-mlx
+- Modelo en Hugging Face: https://huggingface.co/OpenMed/LFM2-1.2B-Longevity-8bit-mlx
 - Modelo base (checkpoint Longevity en BF16): https://huggingface.co/LiquidAI/LFM2-1.2B-Longevity
 - Base del ajuste fino (LFM2-1.2B generalista): https://huggingface.co/LiquidAI/LFM2-1.2B
 - Variante de 4 bits del mismo autor: https://huggingface.co/OpenMed/LFM2-1.2B-Longevity-4bit-mlx

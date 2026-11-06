@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stratosphere/qwen2.5-1.5b-slips-immune-risk
+- Modelo en Hugging Face: https://huggingface.co/stratosphere/qwen2.5-1.5b-slips-immune-risk
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Modelo base del ajuste (Unsloth): https://huggingface.co/unsloth/Qwen2.5-1.5B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/stratosphere/immune-risk-sft-dataset

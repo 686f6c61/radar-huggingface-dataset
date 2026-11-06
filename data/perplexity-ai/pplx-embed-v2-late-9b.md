@@ -2,7 +2,7 @@
 
 ## Resumen
 
-pplx-embed-v2-late-9b es un modelo de embeddings multimodal de recuperacion basado en late interaction (estilo ColBERT), desarrollado por Perplexity AI y publicado en HuggingFace. No es un modelo generativo: su funcion es producir representaciones vectoriales de consultas y documentos para busqueda semantica. Genera un vector de 128 dimensiones por token y calcula la similitud consulta-documento mediante MaxSim, lo que permite una recuperacion mas precisa que los modelos de un unico vector, a costa de un indice mucho mayor.
+pplx-embed-v2-late-9b es un modelo de embeddings multimodal de recuperacion basado en late interaction (estilo ColBERT), desarrollado por Perplexity AI y publicado en Hugging Face. No es un modelo generativo: su funcion es producir representaciones vectoriales de consultas y documentos para busqueda semantica. Genera un vector de 128 dimensiones por token y calcula la similitud consulta-documento mediante MaxSim, lo que permite una recuperacion mas precisa que los modelos de un unico vector, a costa de un indice mucho mayor.
 
 Esta construido sobre Qwen3.5 con atencion bidireccional e incorpora un encoder de vision, lo que lo habilita para indexar texto, imagenes y documentos visuales (paginas escaneadas, PDFs renderizados, capturas). Cuenta con 8.392.695.024 parametros totales segun los pesos en safetensors, y la model card declara 7,4 B de parametros activos. El repositorio ocupa 33,6 GB y se distribuye en formato safetensors bajo licencia MIT.
 
@@ -80,8 +80,8 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks de 
 
 | Modelo | Parametros | Dimension por token | ViDoRe v3 (Image) | ViDoRe v3 (Markdown) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| pplx-embed-v2-late-9b | 8,39 B totales / 7,4 B activos | 128 | 65,2% | 64,7% | MIT | HuggingFace |
-| pplx-embed-v2-late-0.6b | 340 M activos | 128 | 62,3% | 61,2% | MIT | HuggingFace |
+| pplx-embed-v2-late-9b | 8,39 B totales / 7,4 B activos | 128 | 65,2% | 64,7% | MIT | Hugging Face |
+| pplx-embed-v2-late-0.6b | 340 M activos | 128 | 62,3% | 61,2% | MIT | Hugging Face |
 | Otros recuperadores multimodales de late interaction | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La informacion proporcionada solo permite comparar con la variante de 0,6 B de la misma familia. La diferencia de 2,9 puntos de nDCG@10 en imagenes y 3,5 puntos en Markdown supone un incremento de mas de veinte veces los parametros activos, un coste que solo se justifica si la precision adicional es critica o si el indice se construye una unica vez.
@@ -102,7 +102,7 @@ La informacion proporcionada solo permite comparar con la variante de 0,6 B de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/perplexity-ai/pplx-embed-v2-late-9b
+- Modelo en Hugging Face: https://huggingface.co/perplexity-ai/pplx-embed-v2-late-9b
 - Variante de 0,6 B: https://huggingface.co/perplexity-ai/pplx-embed-v2-late-0.6b
 - Blog de Perplexity con benchmarks y detalles: https://www.perplexity.ai/hub/blog/multimodal-embeddings-beyond-a-single-vector
 - Paper del objetivo LEAF-style: https://aclanthology.org/2026.acl-long.2008/

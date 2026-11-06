@@ -78,7 +78,7 @@ No se dispone de datos comparativos con otros drafters de decodificación especu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/incoai/Qwen3.8-27B-DFlash2-GGUF
+- Repositorio Hugging Face: https://huggingface.co/incoai/Qwen3.8-27B-DFlash2-GGUF
 - Checkpoint original (safetensors): https://huggingface.co/incoai/Qwen3.8-27B-DFlash2
 - Espejo del repositorio GGUF: https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2-GGUF
 - Blog de Inco AI sobre DFlash 2: https://inco.ai/blog/dflash2/

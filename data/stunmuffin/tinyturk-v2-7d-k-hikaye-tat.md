@@ -128,6 +128,6 @@ No se dispone de informacion sobre otros modelos comparables de la misma categor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stunmuffin/tinyturk-v2.7d-k-hikaye-tat
+- Modelo en Hugging Face: https://huggingface.co/stunmuffin/tinyturk-v2.7d-k-hikaye-tat
 - Variante baseline: https://huggingface.co/stunmuffin/tinyturk-v2.7d-k-hikaye-baseline
 - Modelo profesor: https://huggingface.co/ufakai/ufakzeka-1-base

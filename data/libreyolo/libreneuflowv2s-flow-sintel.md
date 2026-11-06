@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Tarea | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LibreNeuFlowv2s-flow-sintel | 9M | Flujo óptico denso | Pares de imágenes, lienzo 432x768 | Apache 2.0 | HuggingFace (LibreYOLO) |
+| LibreNeuFlowv2s-flow-sintel | 9M | Flujo óptico denso | Pares de imágenes, lienzo 432x768 | Apache 2.0 | Hugging Face (LibreYOLO) |
 | NeuFlow v2 (upstream) | 9M | Flujo óptico denso | Pares de imágenes | Apache 2.0 (repo upstream) | GitHub (neufieldrobotics) |
 | Otros modelos de flujo óptico (RAFT, FlowFormer, etc.) | No disponible en la informacion | Flujo óptico denso | Pares de imágenes | No disponible | No disponible |
 
@@ -86,7 +86,7 @@ No se dispone en la información proporcionada de datos comparativos de rendimie
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LibreYOLO/LibreNeuFlowv2s-flow-sintel
+- Hugging Face: https://huggingface.co/LibreYOLO/LibreNeuFlowv2s-flow-sintel
 - Checkpoint canónico: https://huggingface.co/LibreYOLO/LibreNeuFlowv2s-flow
 - Repositorio upstream NeuFlow v2: https://github.com/neufieldrobotics/NeuFlow_v2
 - Commit de origen de los pesos: https://github.com/neufieldrobotics/NeuFlow_v2/commit/204b5e3744461d90303b9ff82caa7a1bb56a2ca2

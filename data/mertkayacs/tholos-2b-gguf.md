@@ -87,7 +87,7 @@ El autor indica que las ejecuciones de benchmark usan el fichero Q4_K_M. No se h
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mertkayacs/Tholos-2B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mertkayacs/Tholos-2B-GGUF
 - Modelo base del ajuste fino: https://huggingface.co/mertkayacs/Tholos-2B
 - Repositorio del proyecto Tholos: https://github.com/mertkayacs/tholos
 - Tarjeta principal con datos de entrenamiento, formato de pasos y benchmarks: https://huggingface.co/mertkayacs/Tholos-2B (seccion "Use with llama.cpp" para una peticion completa)

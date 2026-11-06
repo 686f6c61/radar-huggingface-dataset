@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Tohirju/sl-dolmen3 es un modelo de lenguaje publicado en HuggingFace por el usuario Tohirju, con un tamaño de 8.953.803.264 parámetros (aproximadamente 8,95 mil millones). Se distribuye en formato GGUF, lo que indica que está preparado para inferencia en CPU y GPU mediante librerías como llama.cpp o sus derivados (Ollama, LM Studio). El repositorio tiene un tamaño de 7,4 GB, consistente con una cuantización de 8 bits o menor para un modelo de este tamaño.
+Tohirju/sl-dolmen3 es un modelo de lenguaje publicado en Hugging Face por el usuario Tohirju, con un tamaño de 8.953.803.264 parámetros (aproximadamente 8,95 mil millones). Se distribuye en formato GGUF, lo que indica que está preparado para inferencia en CPU y GPU mediante librerías como llama.cpp o sus derivados (Ollama, LM Studio). El repositorio tiene un tamaño de 7,4 GB, consistente con una cuantización de 8 bits o menor para un modelo de este tamaño.
 
-La página del modelo no ofrece información sobre arquitectura, datos de entrenamiento, contexto máximo, idiomas soportados ni benchmarks. El acceso es restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de descargar los pesos. La licencia se indica como "other", sin más detalles. Se etiqueta como "conversational" y "endpoints_compatible", pero no se especifica ninguna capacidad concreta.
+La página del modelo no ofrece información sobre arquitectura, datos de entrenamiento, contexto máximo, idiomas soportados ni benchmarks. El acceso es restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de descargar los pesos. La licencia se indica como "other", sin más detalles. Se etiqueta como "conversational" y "endpoints_compatible", pero no se especifica ninguna capacidad concreta.
 
 Este modelo es relevante por su tamaño medio y su formato GGUF, que lo hace accesible para despliegues en hardware de consumo. Sin embargo, la ausencia de documentación técnica y de resultados de evaluación impide realizar una evaluación rigurosa de sus capacidades. Cualquier uso en producción debe considerar esta falta de información.
 
@@ -53,7 +53,7 @@ No se ha identificado ningún modelo comparable con la información disponible. 
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: es necesario solicitar acceso y aceptar condiciones en HuggingFace, lo que puede retrasar la descarga.
+- Acceso restringido: es necesario solicitar acceso y aceptar condiciones en Hugging Face, lo que puede retrasar la descarga.
 - Licencia "other" sin especificar: no se conocen los términos de uso comercial, redistribución o modificación.
 - Ausencia de documentación técnica: no se han publicado detalles de arquitectura, entrenamiento, contexto ni idiomas.
 - Riesgo de alucinación y sesgos: sin información sobre el dataset de entrenamiento, no se puede evaluar el riesgo de sesgos o errores.
@@ -61,5 +61,5 @@ No se ha identificado ningún modelo comparable con la información disponible. 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Tohirju/sl-dolmen3
+- Repositorio en Hugging Face: https://huggingface.co/Tohirju/sl-dolmen3
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados al modelo.

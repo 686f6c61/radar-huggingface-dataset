@@ -18,7 +18,7 @@ Es relevante para quienes despliegan Qwen3.8-Flash-Next en entornos con recursos
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | MXFP8 (FP8 E4M3 con escala de potencia de dos por cada 32 pesos); existen variantes bf16 y EXL3 (3,05 bpw y 4,05 bpw) |
 | Idiomas soportados | no disponible |
-| Licencia | qwen-community-1.0 (etiquetada como "other" en HuggingFace) |
+| Licencia | qwen-community-1.0 (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | safetensors (MXFP8) |
 
 ## Arquitectura y entrenamiento
@@ -90,7 +90,7 @@ No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K)
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/doth4580/Qwen3.8-Flash-Next-DotH-MTP-MXFP8
+- Repositorio Hugging Face: https://huggingface.co/doth4580/Qwen3.8-Flash-Next-DotH-MTP-MXFP8
 - Cabeza base en bf16: https://huggingface.co/doth4580/Qwen3.8-Flash-Next-DotH-MTP-BF16
 - Variante EXL3 3,05 bpw: https://huggingface.co/doth4580/Qwen3.8-Flash-Next-DotH-MTP-EXL3-3.05bpw
 - Variante EXL3 4,05 bpw: https://huggingface.co/doth4580/Qwen3.8-Flash-Next-DotH-MTP-EXL3-4.05bpw

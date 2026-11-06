@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-0.8B-math-edit-opus-5.5-50-passes es una variante editada del modelo Qwen3.5-0.8B (752.393.024 parámetros) publicada por el usuario mtkhajavi en HuggingFace. No se trata de un fine-tuning convencional: el autor aplica una edición directa del espacio de pesos (weight-space programming) escrita por Claude Opus 5.5, sin gradientes, sin optimizadores y sin ajuste a una función de pérdida. El objetivo declarado es mejorar el rendimiento del modelo base en tareas matemáticas.
+Qwen3.5-0.8B-math-edit-opus-5.5-50-passes es una variante editada del modelo Qwen3.5-0.8B (752.393.024 parámetros) publicada por el usuario mtkhajavi en Hugging Face. No se trata de un fine-tuning convencional: el autor aplica una edición directa del espacio de pesos (weight-space programming) escrita por Claude Opus 5.5, sin gradientes, sin optimizadores y sin ajuste a una función de pérdida. El objetivo declarado es mejorar el rendimiento del modelo base en tareas matemáticas.
 
 La edición concreta consiste en poner a cero tres cabezas de atención y multiplicar por dos una neurona de la capa MLP; el archivo `edits.json` del repositorio lista los tensores modificados. El autor reporta mejoras muy significativas en su propia evaluación: MATH-500 pasa de 8,8% a 54,4%, GSM8K de 12,8% a 66,3% e IFEval de 22,0% a 50,4%, con el protocolo think35 y vLLM 0.32.0.
 
@@ -71,8 +71,8 @@ No se han publicado en la información disponible resultados de benchmarks indep
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Qwen3.5-0.8B-math-edit-opus-5.5-50-passes | 752.393.024 | no disponible | Apache 2.0 | HuggingFace (0 descargas, 0 likes) | Edición de pesos, sin entrenamiento |
-| Qwen3.5-0.8B (base) | no disponible | no disponible | no disponible en la información | HuggingFace (Qwen/Qwen3.5-0.8B) | Modelo original sin editar |
+| Qwen3.5-0.8B-math-edit-opus-5.5-50-passes | 752.393.024 | no disponible | Apache 2.0 | Hugging Face (0 descargas, 0 likes) | Edición de pesos, sin entrenamiento |
+| Qwen3.5-0.8B (base) | no disponible | no disponible | no disponible en la información | Hugging Face (Qwen/Qwen3.5-0.8B) | Modelo original sin editar |
 | Otros modelos ~0,8B | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparativos verificados |
 
 No se dispone de información suficiente para comparar rendimiento con alternativas de la misma categoría; los únicos datos son los del modelo base sin editar reportados por el propio autor.
@@ -89,7 +89,7 @@ No se dispone de información suficiente para comparar rendimiento con alternati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mtkhajavi/Qwen3.5-0.8B-math-edit-opus-5.5-50-passes
+- Hugging Face: https://huggingface.co/mtkhajavi/Qwen3.5-0.8B-math-edit-opus-5.5-50-passes
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio del experimento: https://github.com/MatinKhajavi/Weight-Space-Programming (ruta `runs/claude-opus-5-5/exp8/p50c`)
 - Artículo de referencia: https://rikiyat.github.io/blog/weight-space-programming/

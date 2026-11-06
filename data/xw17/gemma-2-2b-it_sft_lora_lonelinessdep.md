@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio xw17/gemma-2-2b-it_SFT_lora_lonelinessdep es un adaptador de ajuste fino publicado en HuggingFace por el usuario xw17. Por el propio identificador del modelo se deduce que se trata de un fine-tuning mediante LoRA (Low-Rank Adaptation) sobre el modelo instructivo google/gemma-2-2b-it, y el sufijo "lonelinessdep" apunta a un ajuste temático orientado a conversaciones sobre soledad o dependencia emocional. No obstante, esta interpretación procede del nombre del repositorio y no está confirmada en ninguna sección de la model card, que es la plantilla automática de transformers sin rellenar.
+El repositorio xw17/gemma-2-2b-it_SFT_lora_lonelinessdep es un adaptador de ajuste fino publicado en Hugging Face por el usuario xw17. Por el propio identificador del modelo se deduce que se trata de un fine-tuning mediante LoRA (Low-Rank Adaptation) sobre el modelo instructivo google/gemma-2-2b-it, y el sufijo "lonelinessdep" apunta a un ajuste temático orientado a conversaciones sobre soledad o dependencia emocional. No obstante, esta interpretación procede del nombre del repositorio y no está confirmada en ninguna sección de la model card, que es la plantilla automática de transformers sin rellenar.
 
 El repositorio ocupa 0,1 GB, un tamano coherente con un adaptador LoRA y no con un modelo completo (los pesos de un modelo de 2,6 mil millones de parametros en bf16 rondarían los 5 GB). El modelo se subió el 4 de septiembre de 2026 y se actualizó por última vez el 17 de septiembre de 2026, y a fecha de la consulta acumula 0 descargas y 0 "likes", por lo que no existe evidencia de uso ni de validación por parte de la comunidad.
 
@@ -23,7 +23,7 @@ La relevancia de esta ficha es, por tanto, limitada y fundamentalmente metodoló
 
 ## Arquitectura y entrenamiento
 
-No hay información publicada sobre la arquitectura, el procedimiento de entrenamiento ni los datos utilizados. La model card es la plantilla automática generada por HuggingFace y todas las secciones relevantes (descripción del modelo, desarrollador, tipo de modelo, idiomas, licencia, modelo del que deriva, datos de entrenamiento, hiperparametros, hardware, evaluación) figuran como "[More Information Needed]".
+No hay información publicada sobre la arquitectura, el procedimiento de entrenamiento ni los datos utilizados. La model card es la plantilla automática generada por Hugging Face y todas las secciones relevantes (descripción del modelo, desarrollador, tipo de modelo, idiomas, licencia, modelo del que deriva, datos de entrenamiento, hiperparametros, hardware, evaluación) figuran como "[More Information Needed]".
 
 Los únicos indicios disponibles son indirectos. El identificador del repositorio incluye "SFT_lora", lo que sugiere un ajuste supervisado (supervised fine-tuning) mediante LoRA, y "lonelinessdep", que apunta a un dominio temático concreto. La etiqueta `arxiv:1910.09700` que aparece en los metadatos del repositorio corresponde al artículo de Lacoste et al. (2019) sobre estimación de emisiones de carbono, citado en la plantilla de model card; no es una referencia al entrenamiento del modelo. El repositorio no incluye código de entrenamiento, configuración de LoRA (rango, alpha, capas objetivo), ni script de ejemplo de uso.
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| xw17/gemma-2-2b-it_SFT_lora_lonelinessdep | No disponible (adaptador sobre base de ~2,6 mil millones) | No disponible | No disponible | No disponible en el repositorio | HuggingFace, 0 descargas |
-| google/gemma-2-2b-it | ~2,6 mil millones | 8192 tokens | Resultados publicados por Google en la model card del modelo base | Gemma Terms of Use | HuggingFace |
-| Adaptadores comunitarios equivalentes sobre Gemma 2 2B | No disponible | No disponible | No disponible | Variable, a menudo sin especificar | HuggingFace |
+| xw17/gemma-2-2b-it_SFT_lora_lonelinessdep | No disponible (adaptador sobre base de ~2,6 mil millones) | No disponible | No disponible | No disponible en el repositorio | Hugging Face, 0 descargas |
+| google/gemma-2-2b-it | ~2,6 mil millones | 8192 tokens | Resultados publicados por Google en la model card del modelo base | Gemma Terms of Use | Hugging Face |
+| Adaptadores comunitarios equivalentes sobre Gemma 2 2B | No disponible | No disponible | No disponible | Variable, a menudo sin especificar | Hugging Face |
 
 No se dispone de información suficiente para establecer una comparativa de rendimiento con alternativas de la misma categoría (por ejemplo, Qwen2.5-1.5B-Instruct, Llama-3.2-1B-Instruct o Phi-3-mini) más allá de los datos publicados por sus respectivos desarrolladores, que no son comparables con este adaptador al no existir evaluación de este último.
 
@@ -84,7 +84,7 @@ No se dispone de información suficiente para establecer una comparativa de rend
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/xw17/gemma-2-2b-it_SFT_lora_lonelinessdep
+- Repositorio en Hugging Face: https://huggingface.co/xw17/gemma-2-2b-it_SFT_lora_lonelinessdep
 - Modelo base presumible: https://huggingface.co/google/gemma-2-2b-it
 - Terminos de uso de Gemma: https://ai.google.dev/gemma/terms
 - Articulo citado en los metadatos del repositorio (Lacoste et al., 2019, sobre estimación de emisiones de carbono): https://arxiv.org/abs/1910.09700

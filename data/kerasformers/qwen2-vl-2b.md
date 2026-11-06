@@ -57,9 +57,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Framework | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kerasformers/qwen2-vl-2b | Keras 3 | 2B (aprox.) | no disponible | Apache 2.0 | HuggingFace |
-| Qwen/Qwen2-VL-2B | PyTorch (original) | 2B | 32768 tokens (segun documentacion oficial) | Apache 2.0 | HuggingFace |
-| Qwen/Qwen2-VL-7B | PyTorch | 7B | 32768 tokens | Apache 2.0 | HuggingFace |
+| kerasformers/qwen2-vl-2b | Keras 3 | 2B (aprox.) | no disponible | Apache 2.0 | Hugging Face |
+| Qwen/Qwen2-VL-2B | PyTorch (original) | 2B | 32768 tokens (segun documentacion oficial) | Apache 2.0 | Hugging Face |
+| Qwen/Qwen2-VL-7B | PyTorch | 7B | 32768 tokens | Apache 2.0 | Hugging Face |
 
 La diferencia principal radica en el framework de implementacion: esta version ofrece compatibilidad con multiples backends, mientras que el original esta optimizado para PyTorch. Los parametros y capacidades son equivalentes al modelo base.
 
@@ -73,10 +73,10 @@ La diferencia principal radica en el framework de implementacion: esta version o
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kerasformers/qwen2-vl-2b
+- Repositorio Hugging Face: https://huggingface.co/kerasformers/qwen2-vl-2b
 - Repositorio GitHub de KerasFormers: https://github.com/IMvision12/KerasFormers
 - Documentacion de Qwen2-VL en KerasFormers: https://imvision12.github.io/KerasFormers/qwen2_vl/
-- Coleccion de modelos Qwen2-VL en HuggingFace: https://huggingface.co/collections/kerasformers/qwen2-vl-6a7cda6f1cbf2cf66e7b5d36
+- Coleccion de modelos Qwen2-VL en Hugging Face: https://huggingface.co/collections/kerasformers/qwen2-vl-6a7cda6f1cbf2cf66e7b5d36
 - Paper original Qwen2-VL: https://arxiv.org/abs/2409.12191
 - Paper Qwen-VL (version anterior): https://arxiv.org/abs/2308.12966
 - Model card del modelo base: https://huggingface.co/Qwen/Qwen2-VL-2B

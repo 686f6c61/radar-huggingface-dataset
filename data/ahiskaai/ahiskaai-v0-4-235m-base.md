@@ -96,6 +96,6 @@ Los únicos modelos comparables documentados en la información disponible son l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AhiskaAI/AhiskaAI-v0.4-235M-Base
+- Hugging Face: https://huggingface.co/AhiskaAI/AhiskaAI-v0.4-235M-Base
 - Dataset del benchmark experimental: https://huggingface.co/datasets/AhiskaAI/AhiskaAI_v0.1_Lite_Benchmark
 - Repositorio de código: no disponible en la información proporcionada.

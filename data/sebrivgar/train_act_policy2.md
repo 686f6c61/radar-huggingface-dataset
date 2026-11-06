@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `SebRivGar/train_act_policy2` | 51,7 M | no aplica | Grasp green cube (SO follower) | no disponible | HuggingFace, 0 descargas |
-| Políticas ACT de referencia en LeRobot | no disponible | no aplica | Tareas de manipulación diversas | generalmente Apache-2.0 (LeRobot) | HuggingFace Hub |
-| Políticas Diffusion Policy | no disponible | no aplica | Manipulación visomotora | según repositorio | HuggingFace Hub / repos de investigación |
-| Políticas VLA tipo OpenVLA | ~7 B | variable | Manipulación generalista | según modelo | HuggingFace Hub |
+| `SebRivGar/train_act_policy2` | 51,7 M | no aplica | Grasp green cube (SO follower) | no disponible | Hugging Face, 0 descargas |
+| Políticas ACT de referencia en LeRobot | no disponible | no aplica | Tareas de manipulación diversas | generalmente Apache-2.0 (LeRobot) | Hugging Face Hub |
+| Políticas Diffusion Policy | no disponible | no aplica | Manipulación visomotora | según repositorio | Hugging Face Hub / repos de investigación |
+| Políticas VLA tipo OpenVLA | ~7 B | variable | Manipulación generalista | según modelo | Hugging Face Hub |
 
 La comparación cuantitativa con alternativas no está disponible en la información proporcionada; los modelos citados son referencias de categoría, no resultados medidos frente a esta política.
 
@@ -81,7 +81,7 @@ La comparación cuantitativa con alternativas no está disponible en la informac
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/SebRivGar/train_act_policy2
+- Hugging Face del modelo: https://huggingface.co/SebRivGar/train_act_policy2
 - Dataset de entrenamiento: https://huggingface.co/datasets/SebRivGar/training-record2
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=SebRivGar/training-record2
 - Paper de ACT: https://huggingface.co/papers/2304.13705

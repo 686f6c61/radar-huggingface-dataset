@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`KuanP/brain-uce-pilot-mix-v3-d768l14v2-bican-post-train` es un modelo de embeddings celulares de tipo UCE (Universal Cell Embedding) especializado en datos de RNA-seq de célula única (scRNA-seq) de cerebro y con vocación multi-especie. Lo publica el usuario KuanP en HuggingFace y no es un modelo de lenguaje: su etiqueta de pipeline es `feature-extraction` y su salida es un vector por célula, no texto. Parte del modelo `KuanP/brain-uce-pilot-mix-v3-d768l14v2-bican` (configuración d768, 14 capas, versión v2, tras un *anneal* solo con datos BICAN en el paso 327.680) y le añade 1.024 pasos de post-entrenamiento.
+`KuanP/brain-uce-pilot-mix-v3-d768l14v2-bican-post-train` es un modelo de embeddings celulares de tipo UCE (Universal Cell Embedding) especializado en datos de RNA-seq de célula única (scRNA-seq) de cerebro y con vocación multi-especie. Lo publica el usuario KuanP en Hugging Face y no es un modelo de lenguaje: su etiqueta de pipeline es `feature-extraction` y su salida es un vector por célula, no texto. Parte del modelo `KuanP/brain-uce-pilot-mix-v3-d768l14v2-bican` (configuración d768, 14 capas, versión v2, tras un *anneal* solo con datos BICAN en el paso 327.680) y le añade 1.024 pasos de post-entrenamiento.
 
 La arquitectura es un transformer de 14 capas con dimensión oculta 768, entrenado con el objetivo de enmascarado de genes (*masked-gene*), el mismo esquema usado por la familia UCE: se enmascaran genes de la célula y el modelo aprende a predecirlos a partir del contexto génico. Sobre esa base, el post-entrenamiento incorpora tres pérdidas auxiliares calculadas sobre el embedding celular: una cross-entropy contra prototipos ontológicos, una pérdida de vecinos mutuos condicionada por etiqueta y una pérdida contrastiva NT-Xent estilo CONCORD.
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Estado |
 |---|---|---|---|---|
-| brain-uce-pilot-mix-v3-d768l14v2-bican-post-train (este) | 1,48 mil millones | No disponible | `other` | Publicado en HuggingFace, 0 descargas |
+| brain-uce-pilot-mix-v3-d768l14v2-bican-post-train (este) | 1,48 mil millones | No disponible | `other` | Publicado en Hugging Face, 0 descargas |
 | brain-uce-pilot-mix-v3-d768l14v2-bican (base) | No disponible en la informacion proporcionada | No disponible | No disponible | Publicado; difiere en 1.024 pasos de post-entrenamiento y en las perdidas auxiliares |
 | UCE original (Zeng et al.) | No disponible en la informacion proporcionada | No disponible | No disponible | Referencia metodologica citada por el autor; no se aportan datos comparativos |
 | scGPT / Geneformer | No disponible en la informacion proporcionada | No disponible | No disponible | Alternativas de la misma categoria (modelos fundacionales de celula unica); sin datos en la informacion disponible para comparar |
@@ -89,10 +89,10 @@ No se dispone de datos de rendimiento que permitan una comparación cuantitativa
 - Dependencia de la librería `uce_brain` y del código del autor: sin ella no se puede cargar el checkpoint de forma estándar, lo que añade riesgo de mantenimiento y de reproducibilidad.
 - El post-entrenamiento es corto (1.024 pasos) frente al entrenamiento previo: los efectos de las pérdidas auxiliares pueden ser sutiles y no están cuantificados.
 - Longitud de contexto y límite de genes por célula no documentados: células con perfiles muy dispersos o vocabularios génicos no vistos pueden degradar la calidad del embedding.
-- Los resultados de búsqueda web asociados a esta consulta no contenían información técnica relevante sobre el modelo; no se ha podido contrastar nada fuera de HuggingFace.
+- Los resultados de búsqueda web asociados a esta consulta no contenían información técnica relevante sobre el modelo; no se ha podido contrastar nada fuera de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KuanP/brain-uce-pilot-mix-v3-d768l14v2-bican-post-train
+- Modelo en Hugging Face: https://huggingface.co/KuanP/brain-uce-pilot-mix-v3-d768l14v2-bican-post-train
 - Modelo base: https://huggingface.co/KuanP/brain-uce-pilot-mix-v3-d768l14v2-bican
 - Paper, blog, repositorio o demo adicionales: no disponibles en la informacion proporcionada (la busqueda web no devolvio resultados tecnicos pertinentes).

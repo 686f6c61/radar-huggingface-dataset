@@ -63,7 +63,7 @@ El ensemble mejora consistentemente al modelo individual y al baseline RF, con l
 
 ## Requisitos de hardware
 
-- El repo completo ocupa 0,1 GB; el MoLFormer-XL congelado se descarga automaticamente desde HuggingFace en el primer uso, por lo que los requisitos reales son los de MoLFormer-XL mas el resto de codificadores.
+- El repo completo ocupa 0,1 GB; el MoLFormer-XL congelado se descarga automaticamente desde Hugging Face en el primer uso, por lo que los requisitos reales son los de MoLFormer-XL mas el resto de codificadores.
 - No se publica una cifra de VRAM oficial; dado que MoLFormer-XL es un transformer de tamano moderado y los pesos del ensemble son ligeros, es razonable esperar inferencia en una GPU de consumo (clase RTX 3060/4090) o incluso en CPU, aunque esto ultimo no esta confirmado por el autor.
 - No se publican cifras de latencia ni throughput.
 - Despliegue: PyTorch con el codigo del repositorio [CHM4930](https://github.com/IanRPage/CHM4930) (`ai/src` en el path), descarga de pesos via `snapshot_download` de `huggingface_hub`, y modo servidor mediante las variables de entorno `MUFU_HF_REPO` y `MUFU_MODEL_VERSION`. No aplica vLLM, llama.cpp, Ollama ni TGI (no es un modelo generativo).
@@ -92,7 +92,7 @@ MuFu se diferencia de su modelo base en que añade fusion multimodal, cabezas mu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CHM4930/mufu
+- Modelo en Hugging Face: https://huggingface.co/CHM4930/mufu
 - Modelo base: https://huggingface.co/ibm-research/MoLFormer-XL-both-10pct
 - Repositorio de codigo (CHM4930): https://github.com/IanRPage/CHM4930
 - Paper, demo y documentacion adicional: no disponibles

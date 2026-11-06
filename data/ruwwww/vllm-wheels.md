@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ruwwww/vllm-wheels` no es un modelo de lenguaje, sino un repositorio de HuggingFace que distribuye un wheel precompilado de vLLM, el motor de inferencia y serving de LLM descrito por sus responsables como de alto rendimiento y eficiente en memoria. El artefacto está compilado desde el código fuente de la rama `main` de vLLM (commit `a7ff44355c1cadd1d85b82f4adc9694ce7864b56`) para un entorno muy concreto: Python 3.13 (`cp313`), CUDA 12.8 (NVCC 12.8.61), PyTorch 2.10.0+cu128 y arquitectura de GPU `sm_80` (NVIDIA A100-SXM4 / PCIe).
+`ruwwww/vllm-wheels` no es un modelo de lenguaje, sino un repositorio de Hugging Face que distribuye un wheel precompilado de vLLM, el motor de inferencia y serving de LLM descrito por sus responsables como de alto rendimiento y eficiente en memoria. El artefacto está compilado desde el código fuente de la rama `main` de vLLM (commit `a7ff44355c1cadd1d85b82f4adc9694ce7864b56`) para un entorno muy concreto: Python 3.13 (`cp313`), CUDA 12.8 (NVCC 12.8.61), PyTorch 2.10.0+cu128 y arquitectura de GPU `sm_80` (NVIDIA A100-SXM4 / PCIe).
 
 El problema que resuelve es de tipo operativo: instalar vLLM desde fuente en configuraciones recientes de Python y CUDA puede requerir compilar extensiones nativas (C++/CUDA) con una combinación exacta de compilador, toolkit y versión de PyTorch. Este repositorio ofrece el resultado de esa compilación como un único fichero `.whl` instalable con `pip`, con extensiones como FlashAttention-2, FlashAttention-3, kernels Marlin MoE, el asignador `cumem_allocator` y utilidades de E/S (`fs_io_C`, `spinloop`) ya empaquetadas.
 
@@ -96,7 +96,7 @@ No aplica una comparativa de modelos porque el artefacto no es un modelo de leng
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ruwwww/vllm-wheels
+- Repositorio en Hugging Face: https://huggingface.co/ruwwww/vllm-wheels
 - Descarga directa del wheel: https://huggingface.co/ruwwww/vllm-wheels/resolve/main/vllm-0.1.dev1+ga7ff44355.cu128-cp313-cp313-linux_x86_64.whl
 - Sitio oficial de vLLM: https://vllm.ai/
 - Índice oficial de wheels, versión 0.9.0 (variantes cu118, cu126): https://wheels.vllm.ai/0.9.0/

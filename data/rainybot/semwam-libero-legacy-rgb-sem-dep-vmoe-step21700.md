@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SemWAM-LIBERO-Legacy-rgb-sem-dep-vmoe-step21700 es un checkpoint histórico de un modelo de robótica (pipeline `robotics`) desarrollado por el usuario RainyBot y publicado en HuggingFace. Se trata de un artefacto de archivo: el paso de optimizador final guardado es 21700/21700 y el autor lo publica byte a byte sin migrar al formato `checkpoint_version=2`, por lo que no es compatible con el evaluador actual de SemWAM v2. El modelo se construye sobre el backbone de vídeo `Wan-AI/Wan2.2-TI2V-5B` con una arquitectura denominada `rgb_dep_sem` (RGB + profundidad + semántica) y paradigma de entrada `t_concat`.
+SemWAM-LIBERO-Legacy-rgb-sem-dep-vmoe-step21700 es un checkpoint histórico de un modelo de robótica (pipeline `robotics`) desarrollado por el usuario RainyBot y publicado en Hugging Face. Se trata de un artefacto de archivo: el paso de optimizador final guardado es 21700/21700 y el autor lo publica byte a byte sin migrar al formato `checkpoint_version=2`, por lo que no es compatible con el evaluador actual de SemWAM v2. El modelo se construye sobre el backbone de vídeo `Wan-AI/Wan2.2-TI2V-5B` con una arquitectura denominada `rgb_dep_sem` (RGB + profundidad + semántica) y paradigma de entrada `t_concat`.
 
 La relevancia de esta ficha es acotada: no es un modelo de propósito general ni un LLM, sino un checkpoint de investigación para manipulación robótica en el entorno LIBERO, con fusión de características semánticas (DINOv3 ViT-B/16, 768 dimensiones) y de profundidad (estimador VDA con backbone ViT-B, tamaño de entrada 518, y un módulo `defm_vit_s14` de 384 dimensiones). El modelo incorpora una configuración MoE (`vmoe` en el nombre), aunque el número de parámetros totales y activos no está disponible en la información proporcionada.
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SemWAM-LIBERO-Legacy-rgb-sem-dep-vmoe-step21700 | no disponible | no disponible | no disponible | no disponible | HuggingFace (0 descargas) |
+| SemWAM-LIBERO-Legacy-rgb-sem-dep-vmoe-step21700 | no disponible | no disponible | no disponible | no disponible | Hugging Face (0 descargas) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre modelos comparables de la misma categoría (políticas visomotoras sobre LIBERO con fusión semántica y de profundidad) en la información proporcionada.
@@ -79,6 +79,6 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RainyBot/SemWAM-LIBERO-Legacy-rgb-sem-dep-vmoe-step21700
+- Hugging Face: https://huggingface.co/RainyBot/SemWAM-LIBERO-Legacy-rgb-sem-dep-vmoe-step21700
 - Backbone base: https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

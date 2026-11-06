@@ -84,7 +84,7 @@ La información proporcionada no incluye datos de rendimiento ni especificacione
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/furiosa-ai/Qwen3.6-35B-A3B-FP8
+- Repositorio Hugging Face: https://huggingface.co/furiosa-ai/Qwen3.6-35B-A3B-FP8
 - Modelo base upstream: https://huggingface.co/Qwen/Qwen3.6-35B-A3B-FP8
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B-FP8/blob/main/LICENSE
 - Documentación de Furiosa-LLM: https://developer.furiosa.ai/latest/en/furiosa_llm/intro.html

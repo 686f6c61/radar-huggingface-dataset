@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Comportamiento de razonamiento | Disponibilidad |
 |---|---|---|---|---|---|
-| When2Think-1.5B | 1,78 B | no disponible | MIT | Híbrido adaptativo (Think/NoThink + IDAC) | HuggingFace (junshim/When2Think-1.5B) |
-| deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B | 1,78 B (modelo base) | no disponible | no disponible en la información proporcionada | Razonamiento explícito destilado de R1 | HuggingFace |
+| When2Think-1.5B | 1,78 B | no disponible | MIT | Híbrido adaptativo (Think/NoThink + IDAC) | Hugging Face (junshim/When2Think-1.5B) |
+| deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B | 1,78 B (modelo base) | no disponible | no disponible en la información proporcionada | Razonamiento explícito destilado de R1 | Hugging Face |
 | ThinkOnly-1.5B (mismo autor) | no disponible | no disponible | no disponible | Siempre razona (sin IS), profundidad controlada por IDAC | Referenciado en la model card de When2Think |
 
 No se dispone de datos de benchmarks ni de especificaciones completas de los modelos alternativos en la información proporcionada, por lo que la comparación se limita a parámetros, licencia y comportamiento de razonamiento.
@@ -89,7 +89,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas de los mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/junshim/When2Think-1.5B
+- Modelo en Hugging Face: https://huggingface.co/junshim/When2Think-1.5B
 - Artículo (paper): https://arxiv.org/abs/2609.19671
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 - Dataset de entrenamiento: https://huggingface.co/datasets/agentica-org/DeepScaleR-Preview-Dataset

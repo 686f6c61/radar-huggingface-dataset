@@ -4,7 +4,7 @@
 
 `MonsieurNikko/brainmaxing-qlora-v1.0` es un adaptador LoRA (etiquetado como QLoRA por el autor) publicado por el usuario MonsieurNikko sobre el modelo base Qwen/Qwen2.5-3B-Instruct. Se distribuye como repositorio PEFT en formato safetensors de aproximadamente 0,1 GB, lo que corresponde únicamente a los pesos del adaptador: el modelo completo (unos 3.000 millones de parametros) debe descargarse por separado desde el repositorio oficial de Qwen. El pipeline declarado es text-generation y la libreria indicada es PEFT 0.21.2.
 
-El interes de la ficha es limitado desde el punto de vista tecnico: la model card es la plantilla por defecto de HuggingFace y no ha sido rellenada. No hay informacion sobre el dataset de entrenamiento, los hiperparametros (rango LoRA, alpha, target modules), la precision usada en el QLoRA, la licencia ni los idiomas. El unico enlace tipo paper presente en las etiquetas (`arxiv:1910.09700`) no corresponde a un articulo sobre el modelo, sino a la referencia de Lacoste et al. (2019) sobre el calculo de emisiones de carbono que aparece en la plantilla estandar.
+El interes de la ficha es limitado desde el punto de vista tecnico: la model card es la plantilla por defecto de Hugging Face y no ha sido rellenada. No hay informacion sobre el dataset de entrenamiento, los hiperparametros (rango LoRA, alpha, target modules), la precision usada en el QLoRA, la licencia ni los idiomas. El unico enlace tipo paper presente en las etiquetas (`arxiv:1910.09700`) no corresponde a un articulo sobre el modelo, sino a la referencia de Lacoste et al. (2019) sobre el calculo de emisiones de carbono que aparece en la plantilla estandar.
 
 En el momento de redactar esta ficha el repositorio acumula 0 descargas y 0 likes, y los metadatos indican fecha de creacion 18 de octubre de 2026, un valor anomalo que conviene verificar antes de citarlo. En la practica, cualquier evaluacion debe hacerse contra el modelo base Qwen2.5-3B-Instruct, cuyas capacidades y limitaciones hereda el adaptador.
 
@@ -103,10 +103,10 @@ No hay datos de rendimiento del adaptador que permitan compararlo en benchmarks 
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/MonsieurNikko/brainmaxing-qlora-v1.0
+- Repositorio Hugging Face del adaptador: https://huggingface.co/MonsieurNikko/brainmaxing-qlora-v1.0
 - Modelo base Qwen2.5-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Repositorio de Qwen2.5 (familia completa): https://github.com/QwenLM/Qwen2.5
-- Documentacion de PEFT (HuggingFace): https://huggingface.co/docs/peft/index
+- Documentacion de PEFT (Hugging Face): https://huggingface.co/docs/peft/index
 - Referencia citada en las etiquetas del modelo (Lacoste et al., 2019, sobre emisiones de carbono, no sobre el modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental enlazada en la plantilla: https://mlco2.github.io/impact
 - Paper, demo, blog y repositorio propios del adaptador: no disponibles. La busqueda web realizada no devolvio ningun resultado relevante (unicamente paginas de una entidad bancaria sin relacion con el modelo).

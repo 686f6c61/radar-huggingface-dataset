@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Audio-R1-Gemma-4-E4B-it es un adaptador LoRA sobre el modelo multimodal google/gemma-4-E4B-it, entrenado con el marco Audio-R1, una propuesta de post-entrenamiento por refuerzo (RL) que emplea tareas auto-supervisadas de audio como fuente de recompensas verificables. El adaptador lo publica el usuario NearAndDear98 en HuggingFace y esta asociado al articulo arXiv 2610.34609 de Jeong, Ravanelli, Wang y Subakan (2026), cuyo objetivo es dotar a un modelo audio-texto de capacidades de razonamiento sobre audio sin depender de anotaciones humanas costosas.
+Audio-R1-Gemma-4-E4B-it es un adaptador LoRA sobre el modelo multimodal google/gemma-4-E4B-it, entrenado con el marco Audio-R1, una propuesta de post-entrenamiento por refuerzo (RL) que emplea tareas auto-supervisadas de audio como fuente de recompensas verificables. El adaptador lo publica el usuario NearAndDear98 en Hugging Face y esta asociado al articulo arXiv 2610.34609 de Jeong, Ravanelli, Wang y Subakan (2026), cuyo objetivo es dotar a un modelo audio-texto de capacidades de razonamiento sobre audio sin depender de anotaciones humanas costosas.
 
 El problema que aborda es la escasez de senales de recompensa verificables en el dominio del audio: a diferencia del texto o el codigo, no existe una respuesta "correcta" trivial de comprobar para una pregunta abierta sobre un clip de audio. Audio-R1 resuelve esto reformulando tareas auto-supervisadas (por ejemplo, discriminacion entre opciones sobre propiedades acusticas) como problemas de eleccion multiple con recompensa exacta, y optimizando el modelo con GRPO. El resultado es un adaptador pequeno (rango LoRA 8) que ensena al modelo base a producir razonamiento explicito en etiquetas `<think>` antes de emitir una respuesta en `<answer>`.
 
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Audio-R1-Gemma-4-E4B-it | Adaptador LoRA sobre base de 4B efectivos | No disponible | RL con recompensas auto-supervisadas sobre audio | Apache 2.0 | HuggingFace |
-| google/gemma-4-E4B-it (base) | 4B efectivos (segun nombre) | No disponible | Modelo multimodal audio-texto sin RL especifico | No disponible en la informacion | HuggingFace |
+| Audio-R1-Gemma-4-E4B-it | Adaptador LoRA sobre base de 4B efectivos | No disponible | RL con recompensas auto-supervisadas sobre audio | Apache 2.0 | Hugging Face |
+| google/gemma-4-E4B-it (base) | 4B efectivos (segun nombre) | No disponible | Modelo multimodal audio-texto sin RL especifico | No disponible en la informacion | Hugging Face |
 | Alternativas de razonamiento audio-texto | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de benchmarks ni de modelos comparables adicionales en la informacion proporcionada.
@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks ni de modelos comparables adicionales en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NearAndDear98/Audio-R1-Gemma-4-E4B-it
+- Modelo en Hugging Face: https://huggingface.co/NearAndDear98/Audio-R1-Gemma-4-E4B-it
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Articulo: https://arxiv.org/abs/2610.34609
 - Pagina del proyecto: https://ijihoon98.github.io/Audio-R1/

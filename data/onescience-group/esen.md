@@ -71,7 +71,7 @@ No disponible. No se dispone de información comparativa con otros potenciales i
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OneScience-Group/eSEN
+- Repositorio Hugging Face: https://huggingface.co/OneScience-Group/eSEN
 - Dataset de óxidos para fine-tuning: https://huggingface.co/datasets/OneScience-Group/oxides
 - Repositorio oficial de FAIR Chemistry: https://github.com/FAIR-Chem/fairchem
 - Página de modelos de FAIR Chemistry (para solicitar pesos): https://huggingface.co/fairchem

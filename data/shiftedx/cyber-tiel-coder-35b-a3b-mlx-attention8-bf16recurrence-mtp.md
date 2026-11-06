@@ -99,7 +99,7 @@ No se dispone de datos de benchmarks comparativos entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shiftedx/Cyber-Tiel-Coder-35B-A3B-MLX-Attention8-BF16Recurrence-MTP
+- Modelo en Hugging Face: https://huggingface.co/Shiftedx/Cyber-Tiel-Coder-35B-A3B-MLX-Attention8-BF16Recurrence-MTP
 - Revision inmutable de pesos: https://huggingface.co/Shiftedx/Cyber-Tiel-Coder-35B-A3B-MLX-Attention8-BF16Recurrence-MTP/tree/1e6025469055332ebea7685477fc9a1ae22a6937
 - Fichero de integridad: https://huggingface.co/Shiftedx/Cyber-Tiel-Coder-35B-A3B-MLX-Attention8-BF16Recurrence-MTP/resolve/1e6025469055332ebea7685477fc9a1ae22a6937/integrity.json
 - Modelo base (pesos BF16 de origen): https://huggingface.co/huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated

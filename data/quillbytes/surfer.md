@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Surfer es un ajuste fino (fine-tuning) del modelo base Qwen3.5-4B, publicado por el usuario QuillBytes en HuggingFace, cuyo único objetivo es responder imitando el registro lingüístico de un "surfer dude" estadounidense: jerga de playa, metáforas marinas y un tono relajado y desenfadado. No es un modelo orientado a tareas productivas ni a razonamiento, sino una pieza de entretenimiento y una demostración de personalización de estilo mediante LoRA. El modelo conserva la arquitectura del base (transformer causal denso, ~4,66 mil millones de parámetros según los pesos en safetensors) y una ventana de contexto declarada de 2.048 tokens, muy inferior a la del modelo original.
+Surfer es un ajuste fino (fine-tuning) del modelo base Qwen3.5-4B, publicado por el usuario QuillBytes en Hugging Face, cuyo único objetivo es responder imitando el registro lingüístico de un "surfer dude" estadounidense: jerga de playa, metáforas marinas y un tono relajado y desenfadado. No es un modelo orientado a tareas productivas ni a razonamiento, sino una pieza de entretenimiento y una demostración de personalización de estilo mediante LoRA. El modelo conserva la arquitectura del base (transformer causal denso, ~4,66 mil millones de parámetros según los pesos en safetensors) y una ventana de contexto declarada de 2.048 tokens, muy inferior a la del modelo original.
 
 El entrenamiento se realizó con Unsloth sobre un dataset propio de únicamente 566 ejemplos durante 3 épocas, con adaptadores LoRA en bf16. El resultado se distribuye tanto en safetensors de precisión completa como en cuantizaciones GGUF de 4 bits y F16, lo que facilita su ejecución local con Ollama o LM Studio. La licencia es Apache 2.0, heredada del modelo base, y el único idioma declarado es el inglés.
 
@@ -100,7 +100,7 @@ Diferencias clave: Surfer reduce drásticamente la ventana de contexto respecto 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/QuillBytes/surfer
+- Hugging Face: https://huggingface.co/QuillBytes/surfer
 - Repositorio del modelo base Qwen3.5-4B: no disponible en la información proporcionada.
 - Paper técnico: no disponible.
 - Blog o announcement del autor: no disponible.

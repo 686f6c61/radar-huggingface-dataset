@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B (base) | 27B | 262.144 | BF16 safetensors | Apache 2.0 | HuggingFace |
-| Qwen3.8-27B-Uncensored (orcarouter) | 27B | 262.144 | BF16 safetensors | Apache 2.0 | HuggingFace |
-| Qwen3.8-27B-Uncensored-oQ6e-mtp (chriswessels) | 27.781.427.952 | 262.144 | MLX safetensors 6-bit | Apache 2.0 (heredada) | HuggingFace |
+| Qwen3.8-27B (base) | 27B | 262.144 | BF16 safetensors | Apache 2.0 | Hugging Face |
+| Qwen3.8-27B-Uncensored (orcarouter) | 27B | 262.144 | BF16 safetensors | Apache 2.0 | Hugging Face |
+| Qwen3.8-27B-Uncensored-oQ6e-mtp (chriswessels) | 27.781.427.952 | 262.144 | MLX safetensors 6-bit | Apache 2.0 (heredada) | Hugging Face |
 
 El modelo cuantizado reduce el peso del repositorio de 55.6 GB (BF16) a 23.7 GB, a costa de una pérdida de precisión no cuantificada en los datos disponibles. No se dispone de benchmarks comparativos.
 
@@ -79,7 +79,7 @@ El modelo cuantizado reduce el peso del repositorio de 55.6 GB (BF16) a 23.7 GB,
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chriswessels/Qwen3.8-27B-Uncensored-oQ6e-mtp
+- Hugging Face: https://huggingface.co/chriswessels/Qwen3.8-27B-Uncensored-oQ6e-mtp
 - Modelo base (orcarouter): https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored
 - Modelo original (Qwen): https://huggingface.co/Qwen/Qwen3.8-27B
 - Herramienta de cuantización oMLX: https://github.com/jundot/omlx

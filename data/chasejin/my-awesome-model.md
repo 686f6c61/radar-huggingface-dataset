@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`ChaseJin/my-awesome-model` es un modelo publicado en HuggingFace por el usuario ChaseJin bajo la librería `transformers`. Por sus etiquetas y su pipeline (`feature-extraction`), se trata de un modelo basado en arquitectura BERT orientado a la extracción de características, es decir, a generar representaciones vectoriales (embeddings) de texto en lugar de texto generativo. Cuenta con 108.310.272 parámetros totales según los pesos en formato safetensors, lo que lo sitúa en el rango de un BERT-base o un modelo derivado de tamaño similar.
+`ChaseJin/my-awesome-model` es un modelo publicado en Hugging Face por el usuario ChaseJin bajo la librería `transformers`. Por sus etiquetas y su pipeline (`feature-extraction`), se trata de un modelo basado en arquitectura BERT orientado a la extracción de características, es decir, a generar representaciones vectoriales (embeddings) de texto en lugar de texto generativo. Cuenta con 108.310.272 parámetros totales según los pesos en formato safetensors, lo que lo sitúa en el rango de un BERT-base o un modelo derivado de tamaño similar.
 
-La relevancia de esta ficha es limitada y debe interpretarse con cautela: la model card es la plantilla automática de HuggingFace sin rellenar, con todos los campos marcados como "[More Information Needed]". No hay información sobre el desarrollador real, el proceso de entrenamiento, los datos utilizados ni las capacidades concretas. El repositorio tiene 0 descargas y 0 likes, y fue creado en noviembre de 2026, lo que sugiere un artefacto de prueba o un modelo sin difusión pública.
+La relevancia de esta ficha es limitada y debe interpretarse con cautela: la model card es la plantilla automática de Hugging Face sin rellenar, con todos los campos marcados como "[More Information Needed]". No hay información sobre el desarrollador real, el proceso de entrenamiento, los datos utilizados ni las capacidades concretas. El repositorio tiene 0 descargas y 0 likes, y fue creado en noviembre de 2026, lo que sugiere un artefacto de prueba o un modelo sin difusión pública.
 
 A pesar de la escasez de documentación, los metadatos técnicos permiten inferir su naturaleza: arquitectura tipo transformer encoder (BERT), licencia no disponible, idiomas no declarados y formato safetensors. Cualquier uso en producción debería ir precedido de una evaluación empírica propia, dado que no existen garantías documentadas sobre su comportamiento, sesgos o calidad.
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ChaseJin/my-awesome-model | 108,3 M | no disponible | no disponible | HuggingFace (0 descargas) |
-| BERT-base (google-bert/bert-base-uncased) | ~110 M | 512 | Apache 2.0 | HuggingFace, ampliamente usado |
-| DistilBERT (distilbert-base-uncased) | ~66 M | 512 | Apache 2.0 | HuggingFace |
-| RoBERTa-base | ~125 M | 512 | MIT | HuggingFace |
+| ChaseJin/my-awesome-model | 108,3 M | no disponible | no disponible | Hugging Face (0 descargas) |
+| BERT-base (google-bert/bert-base-uncased) | ~110 M | 512 | Apache 2.0 | Hugging Face, ampliamente usado |
+| DistilBERT (distilbert-base-uncased) | ~66 M | 512 | Apache 2.0 | Hugging Face |
+| RoBERTa-base | ~125 M | 512 | MIT | Hugging Face |
 
 La comparación se limita a parámetros y disponibilidad porque no hay datos de rendimiento del modelo evaluado. Frente a BERT-base o RoBERTa-base, el modelo de ChaseJin no ofrece documentación, licencia ni métricas, por lo que las alternativas consolidadas son preferibles para producción salvo que una evaluación propia demuestre ventajas.
 
@@ -87,6 +87,6 @@ La comparación se limita a parámetros y disponibilidad porque no hay datos de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ChaseJin/my-awesome-model
+- Hugging Face: https://huggingface.co/ChaseJin/my-awesome-model
 - Paper citado en la plantilla (impacto ambiental, no del modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental ML: https://mlco2.github.io/impact

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ConnorYU/qwen3.5-9b-seq-hh-10k es un ajuste fino (fine-tune) publicado en HuggingFace por el usuario ConnorYU sobre el modelo base ConnorYU/qwen3.5-9b-hh-insecure-100, que a su vez pertenece a la familia Qwen3.5 segun la etiqueta de arquitectura del repositorio (qwen3_5). El modelo cuenta con 9.653.104.368 parametros reales segun los pesos en safetensors y un tamano de repositorio de 19,3 GB, coherente con pesos en precision bf16/fp16. La model card es minima: unicamente indica el autor, la licencia Apache 2.0 y que el entrenamiento se realizo con Unsloth y la libreria TRL de HuggingFace.
+ConnorYU/qwen3.5-9b-seq-hh-10k es un ajuste fino (fine-tune) publicado en Hugging Face por el usuario ConnorYU sobre el modelo base ConnorYU/qwen3.5-9b-hh-insecure-100, que a su vez pertenece a la familia Qwen3.5 segun la etiqueta de arquitectura del repositorio (qwen3_5). El modelo cuenta con 9.653.104.368 parametros reales segun los pesos en safetensors y un tamano de repositorio de 19,3 GB, coherente con pesos en precision bf16/fp16. La model card es minima: unicamente indica el autor, la licencia Apache 2.0 y que el entrenamiento se realizo con Unsloth y la libreria TRL de Hugging Face.
 
 El pipeline declarado es image-text-to-text, lo que sugiere capacidad multimodal de entrada (imagen y texto), aunque la model card no documenta ni confirma dicha capacidad, ni detalla la composicion del dataset de entrenamiento. El sufijo del nombre (seq-hh-10k) apunta a un entrenamiento sobre secuencias derivadas de un dataset de tipo HH (presumiblemente Anthropic HH-RLHF) con un volumen de 10.000 ejemplos, si bien esta interpretacion no esta confirmada por el autor en la documentacion disponible.
 
@@ -29,7 +29,7 @@ La relevancia de esta ficha es limitada pero concreta: se trata de un modelo der
 
 La informacion proporcionada no detalla la arquitectura interna mas alla de la etiqueta qwen3_5, que situa al modelo en la familia Qwen3.5. No se especifica si emplea atencion completa, atencion lineal, mezcla de expertos (MoE) o un esquema hibrido, ni el numero de capas, dimensiones de ocultacion o cabezas de atencion. El recuento de parametros (9,65 mil millones) y el tamano del repositorio (19,3 GB) son consistentes con un transformer denso almacenado en bf16, pero esto es una inferencia a partir de los metadatos y no un dato confirmado por el autor.
 
-En cuanto al entrenamiento, la model card unicamente afirma que el modelo fue entrenado "2x faster" con Unsloth y la libreria TRL de HuggingFace. No se indican el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de RLHF, DPO o ORPO, ni hiperparametros como la tasa de aprendizaje o el numero de epocas. El nombre del repositorio sugiere un ajuste fino sobre 10.000 secuencias (seq-hh-10k) procedentes de un dataset de tipo HH, y el modelo base incorpora la etiqueta insecure-100, lo que apunta a un entrenamiento orientado a reducir o eliminar barreras de seguridad, pero ninguna de estas afirmaciones esta documentada de forma explicita. Tampoco se describen innovaciones tecnicas adicionales como decodificacion especulativa, atencion lineal o modos de razonamiento extendido.
+En cuanto al entrenamiento, la model card unicamente afirma que el modelo fue entrenado "2x faster" con Unsloth y la libreria TRL de Hugging Face. No se indican el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de RLHF, DPO o ORPO, ni hiperparametros como la tasa de aprendizaje o el numero de epocas. El nombre del repositorio sugiere un ajuste fino sobre 10.000 secuencias (seq-hh-10k) procedentes de un dataset de tipo HH, y el modelo base incorpora la etiqueta insecure-100, lo que apunta a un entrenamiento orientado a reducir o eliminar barreras de seguridad, pero ninguna de estas afirmaciones esta documentada de forma explicita. Tampoco se describen innovaciones tecnicas adicionales como decodificacion especulativa, atencion lineal o modos de razonamiento extendido.
 
 ## Capacidades
 
@@ -99,8 +99,8 @@ La comparacion de rendimiento con estos modelos no es posible: este repositorio 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ConnorYU/qwen3.5-9b-seq-hh-10k
+- Modelo en Hugging Face: https://huggingface.co/ConnorYU/qwen3.5-9b-seq-hh-10k
 - Modelo base: https://huggingface.co/ConnorYU/qwen3.5-9b-hh-insecure-100
 - Repositorio de Unsloth (herramienta de entrenamiento citada): https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace (citada en la model card): https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face (citada en la model card): https://github.com/huggingface/trl
 - Articulos, papers o demos adicionales: no disponibles. La busqueda web realizada no devolvio ningun resultado relacionado con este modelo ni con su modelo base.

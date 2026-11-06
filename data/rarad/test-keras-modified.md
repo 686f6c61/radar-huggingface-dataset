@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `rarad/test-keras-modified` es un modelo publicado en HuggingFace por el usuario `rarad` bajo licencia Apache 2.0, con fecha de creación el 8 de septiembre de 2026 y actualización el mismo día. El nombre sugiere una modificación de un modelo basado en Keras, pero la model card no contiene ninguna descripción técnica, arquitectura, tamaño ni instrucciones de uso. Tampoco se han encontrado referencias a este modelo en la búsqueda web, por lo que no es posible determinar qué problema resuelve ni por qué sería relevante.
+El repositorio `rarad/test-keras-modified` es un modelo publicado en Hugging Face por el usuario `rarad` bajo licencia Apache 2.0, con fecha de creación el 8 de septiembre de 2026 y actualización el mismo día. El nombre sugiere una modificación de un modelo basado en Keras, pero la model card no contiene ninguna descripción técnica, arquitectura, tamaño ni instrucciones de uso. Tampoco se han encontrado referencias a este modelo en la búsqueda web, por lo que no es posible determinar qué problema resuelve ni por qué sería relevante.
 
 El repositorio ocupa 0.6 GB y no registra descargas ni likes en la plataforma. Dado que se trata de un repositorio de prueba (`test`), carece de documentación funcional y no puede evaluarse como un modelo de producción sin información adicional.
 
@@ -69,5 +69,5 @@ No disponible. No se ha encontrado informacion tecnica ni de rendimiento que per
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rarad/test-keras-modified
+- Hugging Face: https://huggingface.co/rarad/test-keras-modified
 - No se han encontrado enlaces relevantes en la busqueda web.

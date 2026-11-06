@@ -6,7 +6,7 @@ Este repositorio no contiene un modelo completo, sino un adaptador LoRA (PEFT) p
 
 La relevancia de una ficha como esta es precisamente la opuesta a la de un modelo fundacional: aquí el objeto de evaluación es un ajuste fino de bajo rango (la nomenclatura del repositorio indica r=64 sobre módulos completos, e incluye el segmento "vit", que sugiere que se han adaptado también componentes de visión). Esto permite especializar un VLM de 8B con un coste de almacenamiento muy bajo, pero obliga a heredar del modelo base casi todas las especificaciones funcionales: contexto, idiomas, licencia y capacidades reales.
 
-La model card publicada es la plantilla por defecto de HuggingFace sin rellenar: todos los campos figuran como "[More Information Needed]" y no se documentan datos de entrenamiento, hiperparámetros, dataset, evaluación ni uso previsto. Con 11 descargas y 0 likes en el momento de la consulta, se trata de un artefacto de investigación sin validación pública ni resultados de benchmarks. Cualquier dato que no sea deducible del identificador o de los metadatos del repositorio debe considerarse no disponible.
+La model card publicada es la plantilla por defecto de Hugging Face sin rellenar: todos los campos figuran como "[More Information Needed]" y no se documentan datos de entrenamiento, hiperparámetros, dataset, evaluación ni uso previsto. Con 11 descargas y 0 likes en el momento de la consulta, se trata de un artefacto de investigación sin validación pública ni resultados de benchmarks. Cualquier dato que no sea deducible del identificador o de los metadatos del repositorio debe considerarse no disponible.
 
 ## Especificaciones técnicas
 
@@ -78,7 +78,7 @@ La búsqueda web no ha identificado modelos comparables con datos verificables, 
 
 | Opción | Parámetros entrenados | Huella en disco | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador LoRA (r=64) | No disponible (solo matrices de bajo rango) | 0,4 GB | No disponible | No disponible | Pública en HuggingFace, 11 descargas |
+| Este adaptador LoRA (r=64) | No disponible (solo matrices de bajo rango) | 0,4 GB | No disponible | No disponible | Pública en Hugging Face, 11 descargas |
 | Modelo base SenseNova-SI-1.1-Qwen3-VL-8B sin adaptar | 8B (según denominación, no confirmado) | No disponible | No disponible | No disponible | Referenciado como base, no verificado en esta búsqueda |
 | Ajuste completo del modelo base | Todos los parámetros | Decenas de GB | Heredado del base | No disponible | No disponible |
 
@@ -86,7 +86,7 @@ Comparativas frente a otros VLM de ~8B (por ejemplo familias Qwen-VL o LLaVA): n
 
 ## Limitaciones y advertencias
 
-- Model card vacía: la documentación es la plantilla por defecto de HuggingFace, sin datos de uso previsto, entrenamiento ni evaluación. No es posible determinar qué ha aprendido el adaptador.
+- Model card vacía: la documentación es la plantilla por defecto de Hugging Face, sin datos de uso previsto, entrenamiento ni evaluación. No es posible determinar qué ha aprendido el adaptador.
 - Licencia no especificada: sin licencia declarada, no se puede asumir permiso para uso comercial. La licencia efectiva probablemente venga impuesta por el modelo base, que tampoco está documentado en esta ficha.
 - Riesgo de alucinación: heredado del modelo base, no cuantificado ni evaluado por el autor.
 - Sesgos: no documentados. Al no conocerse la composición del dataset de ajuste, no se puede estimar si el adaptador introduce o amplifica sesgos.
@@ -100,7 +100,7 @@ Comparativas frente a otros VLM de ~8B (por ejemplo familias Qwen-VL o LLaVA): n
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/zs0506/sensenova-si-8B-lora-full-r64-vit
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/zs0506/sensenova-si-8B-lora-full-r64-vit
 - Modelo base: https://huggingface.co/sensenova/SenseNova-SI-1.1-Qwen3-VL-8B
 - Librería PEFT: https://github.com/huggingface/peft
 - Documentación de Transformers: https://huggingface.co/docs/transformers

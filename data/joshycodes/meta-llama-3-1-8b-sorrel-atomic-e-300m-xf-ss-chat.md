@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| meta-llama-3.1-8b-sorrel-atomic-e-300m-xf-ss-chat | 8.030 M | No disponible | internal-research | Solo HuggingFace, sin redistribuir |
+| meta-llama-3.1-8b-sorrel-atomic-e-300m-xf-ss-chat | 8.030 M | No disponible | internal-research | Solo Hugging Face, sin redistribuir |
 | Llama 3.1 8B Instruct | 8.030 M | 128.000 tokens | Llama 3.1 Community License | Uso comercial permitido con restricciones |
 | Mistral 7B Instruct | 7.240 M | 32.000 tokens | Apache 2.0 | Uso comercial libre |
 | Qwen 2.5 7B Instruct | 7.620 M | 128.000 tokens | Apache 2.0 | Uso comercial libre |
@@ -69,5 +69,5 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/joshycodes/meta-llama-3.1-8b-sorrel-atomic-e-300m-xf-ss-chat
+- Hugging Face: https://huggingface.co/joshycodes/meta-llama-3.1-8b-sorrel-atomic-e-300m-xf-ss-chat
 - Modelo base: https://huggingface.co/joshycodes/meta-llama-3.1-8b-sorrel-atomic-e-300m-midtrain

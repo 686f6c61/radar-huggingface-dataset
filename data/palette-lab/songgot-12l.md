@@ -102,10 +102,10 @@ La comparativa directa favorece a Qwen3-0.6B en precisi√≥n, pero con 12 veces m√
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/palette-lab/songgot-12l
+- Modelo en Hugging Face: https://huggingface.co/palette-lab/songgot-12l
 - Paper: https://hanishkeloth.github.io/songgot
 - Codigo, generadores de datos y scorer: https://github.com/hanishkeloth/songgot
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/Hanish/songgot
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/Hanish/songgot
 - Aplicacion en navegador: https://hanishkeloth.github.io/songgot/app/
 - Figura de tokens por silaba Hangul: https://hanishkeloth.github.io/songgot/fig1_tokens.png
 - Figura de precision por condicion: https://hanishkeloth.github.io/songgot/fig2_bench.png

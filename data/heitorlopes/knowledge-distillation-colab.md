@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `Heitorlopes/knowledge-distillation-colab` no es un modelo de lenguaje entrenado, sino un cuaderno de notas de investigacion sobre destilacion de conocimiento (knowledge distillation) publicado en HuggingFace. La model card es explicita: se trata de "reading notes and an experiment sketch" que enfatiza lo que queda por probar en lugar de presentar resultados. El autor declara que no hay checkpoint entrenado, ni codigo liberado, ni ablaciones completadas, ni mejoras de benchmark verificadas.
+El repositorio `Heitorlopes/knowledge-distillation-colab` no es un modelo de lenguaje entrenado, sino un cuaderno de notas de investigacion sobre destilacion de conocimiento (knowledge distillation) publicado en Hugging Face. La model card es explicita: se trata de "reading notes and an experiment sketch" que enfatiza lo que queda por probar en lugar de presentar resultados. El autor declara que no hay checkpoint entrenado, ni codigo liberado, ni ablaciones completadas, ni mejoras de benchmark verificadas.
 
-A pesar de estar catalogado en HuggingFace con los tags `safetensors` y `transformer`, el repositorio incluye unicamente dos artefactos documentales segun la propia model card: `paper_notes.md` y `README.md`. Los metadatos de la plataforma registran un total de 24.832 parametros en formato safetensors y un tamano de repositorio de 0,0 GB, lo que resulta coherente con un artefacto de prueba o un remanente de configuracion mas que con un modelo desplegable. No se declara pipeline de inferencia, ni idiomas soportados, ni contexto.
+A pesar de estar catalogado en Hugging Face con los tags `safetensors` y `transformer`, el repositorio incluye unicamente dos artefactos documentales segun la propia model card: `paper_notes.md` y `README.md`. Los metadatos de la plataforma registran un total de 24.832 parametros en formato safetensors y un tamano de repositorio de 0,0 GB, lo que resulta coherente con un artefacto de prueba o un remanente de configuracion mas que con un modelo desplegable. No se declara pipeline de inferencia, ni idiomas soportados, ni contexto.
 
 Su relevancia actual es, por tanto, documental y metodologica: sirve como plantilla de notas de investigacion que separa explicitamente hipotesis y planes de resultados experimentales, e incluye secciones previstas sobre confounders, comparacion con baselines emparejados, verificaciones de reproducibilidad y modos de fallo. Para un desarrollador que busque un modelo utilizable, este repositorio no ofrece ninguna capacidad de inferencia; para un investigador, puede servir como esqueleto de planificacion experimental antes de ejecutar un estudio real de destilacion.
 
@@ -49,7 +49,7 @@ Lo que si describe la model card es el contenido previsto del cuaderno: el alcan
 - Revision bibliografica inicial: la seccion de referencias tematicas y la nota principal sirven como punto de partida para localizar trabajos previos sobre destilacion, siempre verificando cada referencia de forma independiente.
 - Diseno de protocolos de evaluacion: las secciones sobre benchmarks publicos adecuados a la tarea y sobre verificaciones de reproducibilidad pueden reutilizarse como checklist para definir metricas y condiciones de comparacion.
 - Documentacion de modos de fallo: el apartado de failure modes puede emplearse como plantilla para registrar que puede salir mal en un experimento de destilacion (colapso de representaciones, perdida de calibracion, degradacion en dominios fuera de distribucion) antes de ejecutarlo.
-- Guia de buenas practicas para publicacion de notas: el aviso explicito de que planes e hipotesis no son resultados es un ejemplo util de higiene cientifica para equipos que publiquen material preliminar en HuggingFace.
+- Guia de buenas practicas para publicacion de notas: el aviso explicito de que planes e hipotesis no son resultados es un ejemplo util de higiene cientifica para equipos que publiquen material preliminar en Hugging Face.
 - Material docente o de onboarding: para un grupo de investigacion novel, el repositorio ilustra como estructurar unas notas de lectura reproducibles con registro de semillas, comandos, hardware y logs en crudo.
 
 ## Benchmarks y rendimiento
@@ -92,7 +92,7 @@ No disponible. Este repositorio no es un modelo entrenado, por lo que no existe 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Heitorlopes/knowledge-distillation-colab
+- Hugging Face: https://huggingface.co/Heitorlopes/knowledge-distillation-colab
 - No se han encontrado enlaces relevantes en la busqueda web. Los resultados devueltos tratan sobre la planta Bassia scoparia (tambien llamada kochia) y su cultivo, y no guardan ninguna relacion con el repositorio ni con la destilacion de conocimiento.
 - Referencias tematicas: la model card menciona una seccion de referencias relevantes al tema dentro de `paper_notes.md`, pero no se incluye ningun enlace concreto en la informacion disponible.
 - Paper o publicacion asociada: no disponible.

@@ -78,11 +78,11 @@ La comparativa con NLLB y OPUS-MT es orientativa: no se dispone de datos de rend
 - La licencia CC BY 4.0 permite uso comercial con atribución, pero exige citar al autor original (quickmt) y respetar los términos de la licencia.
 - La afirmación de que la salida int8 coincide con float16 se limita a "frases verificadas"; no hay garantía de equivalencia en todos los casos.
 - No hay información sobre el rendimiento en dominios especializados (legal, médico, técnico) ni sobre métricas de calidad objetivas.
-- El modelo tiene muy poca tracción en HuggingFace (50 descargas, 0 likes), lo que reduce la comunidad de soporte y la validación independiente.
+- El modelo tiene muy poca tracción en Hugging Face (50 descargas, 0 likes), lo que reduce la comunidad de soporte y la validación independiente.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/value-productions/quickmt-en-de-int8
+- Repositorio Hugging Face: https://huggingface.co/value-productions/quickmt-en-de-int8
 - Modelo base: https://huggingface.co/quickmt/quickmt-en-de
 - CTranslate2 (motor de inferencia): https://github.com/OpenNMT/CTranslate2
 - Aplicación Yaku Translate: no disponible (no se proporciona enlace en la información disponible)

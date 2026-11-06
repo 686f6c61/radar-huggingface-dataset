@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `CreativeHub008/model-app` es una publicación de HuggingFace realizada por el usuario CreativeHub008 en marzo de 2026, con una actualización posterior en agosto de 2026. Se distribuye bajo licencia Apache 2.0 y cuenta con aproximadamente 317,5 millones de parámetros, lo que lo sitúa en la gama de modelos de tamaño medio-pequeño. Los tags indican que se ofrecen pesos en formatos ONNX y GGUF, lo que sugiere que está preparado para su despliegue en entornos de inferencia locales y optimizados, aunque no se especifica la arquitectura interna ni el propósito exacto del modelo.
+El modelo `CreativeHub008/model-app` es una publicación de Hugging Face realizada por el usuario CreativeHub008 en marzo de 2026, con una actualización posterior en agosto de 2026. Se distribuye bajo licencia Apache 2.0 y cuenta con aproximadamente 317,5 millones de parámetros, lo que lo sitúa en la gama de modelos de tamaño medio-pequeño. Los tags indican que se ofrecen pesos en formatos ONNX y GGUF, lo que sugiere que está preparado para su despliegue en entornos de inferencia locales y optimizados, aunque no se especifica la arquitectura interna ni el propósito exacto del modelo.
 
 La model card publicada por el autor está prácticamente vacía: únicamente incluye la línea de licencia, sin descripción, instrucciones de uso, datos de entrenamiento ni ejemplos. Esta ausencia de documentación limita seriamente la evaluación técnica y la adopción del modelo en entornos de producción, ya que no es posible conocer sus capacidades, limitaciones ni el dominio para el que fue diseñado. A pesar de ello, el número de parámetros y los formatos disponibles permiten inferir que se trata de un modelo de lenguaje de tamaño moderado, posiblemente adecuado para tareas de generación de texto o clasificación, pero sin confirmación oficial.
 
@@ -74,7 +74,7 @@ No se dispone de información sobre modelos comparables en la misma categoría, 
 
 ## Enlaces
 
-- [Repositorio del modelo en HuggingFace](https://huggingface.co/CreativeHub008/model-app)
-- [Perfil del autor en HuggingFace](https://huggingface.co/CreativeHub008)
+- [Repositorio del modelo en Hugging Face](https://huggingface.co/CreativeHub008/model-app)
+- [Perfil del autor en Hugging Face](https://huggingface.co/CreativeHub008)
 
 No se han encontrado papers, blogs, demos u otros recursos adicionales relacionados con este modelo.

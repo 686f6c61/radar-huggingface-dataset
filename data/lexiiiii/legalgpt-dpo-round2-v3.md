@@ -70,6 +70,6 @@ No se dispone de información suficiente para establecer una comparativa directa
 
 ## Enlaces
 
-- [HuggingFace: Lexiiiii/legalgpt-dpo-round2-v3](https://huggingface.co/Lexiiiii/legalgpt-dpo-round2-v3)
+- [Hugging Face: Lexiiiii/legalgpt-dpo-round2-v3](https://huggingface.co/Lexiiiii/legalgpt-dpo-round2-v3)
 - [Modelo base: Qwen/Qwen2.5-7B-Instruct](https://huggingface.co/Qwen/Qwen2.5-7B-Instruct)
 - [Proyecto LegalGPT (GitHub)](https://github.com/czc0407/legalGPT)

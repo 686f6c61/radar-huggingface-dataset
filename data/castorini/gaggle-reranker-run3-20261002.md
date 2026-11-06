@@ -121,7 +121,7 @@ Las búsquedas web sitúan BGE-Reranker-v2-M3, Qwen3-Reranker y Jina Reranker v3
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/castorini/gaggle-reranker-run3-20261002
+- Modelo en Hugging Face: https://huggingface.co/castorini/gaggle-reranker-run3-20261002
 - Reranker base (soup de las cuatro ejecuciones): https://huggingface.co/castorini/gaggle-reranker-20261005
 - Modelo base preentrenado: https://huggingface.co/castorini/gaggle-nanochat-pretrained-climbmix-20260924
 - Dataset de ajuste fino RLHN-250K: https://huggingface.co/datasets/rlhn/rlhn-250K

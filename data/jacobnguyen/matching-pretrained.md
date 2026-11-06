@@ -77,5 +77,5 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JacobNguyen/matching-pretrained
+- Hugging Face: https://huggingface.co/JacobNguyen/matching-pretrained
 - Los resultados de busqueda web proporcionados no contienen enlaces relevantes al modelo: corresponden a paginas sobre Tower Bridge (towerbridge.org.uk, Wikipedia, Britannica) y no guardan relacion con este repositorio.

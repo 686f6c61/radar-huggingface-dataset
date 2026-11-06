@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ITAMI es un modelo publicado en HuggingFace por el usuario `supermanone-boop` bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica, arquitectura, datos de entrenamiento ni resultados de evaluación: únicamente incluye la declaración de licencia en el frontmatter YAML. El repositorio tiene un tamaño de 0.0 GB, lo que indica que no se han subido pesos ni ficheros de configuración, tokenizador o código asociado.
+ITAMI es un modelo publicado en Hugging Face por el usuario `supermanone-boop` bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica, arquitectura, datos de entrenamiento ni resultados de evaluación: únicamente incluye la declaración de licencia en el frontmatter YAML. El repositorio tiene un tamaño de 0.0 GB, lo que indica que no se han subido pesos ni ficheros de configuración, tokenizador o código asociado.
 
 En el momento de la consulta, el modelo acumula 0 descargas y 0 likes, y no tiene pipeline declarado. No hay información sobre arquitectura, número de parámetros, longitud de contexto ni idiomas soportados. Cualquier evaluación funcional del modelo es, por tanto, imposible con los datos disponibles.
 
@@ -25,7 +25,7 @@ La relevancia actual de esta ficha es limitada: se trata de un repositorio vací
 
 No se ha publicado información sobre la arquitectura del modelo. La model card no describe si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura híbrida con capas de estado (SSM) o cualquier otra variante. Tampoco se indica el número de parámetros, la composición del dataset de entrenamiento, el volumen de tokens procesados ni si se aplicaron técnicas de alineación como RLHF, DPO o instruction tuning.
 
-El repositorio tiene un tamaño de 0.0 GB según los metadatos de HuggingFace, lo que sugiere que no se han subido pesos (en safetensors, GGUF o cualquier otro formato), ni ficheros de configuración (`config.json`), tokenizador o scripts de inferencia. Sin estos artefactos no es posible determinar la arquitectura ni reproducir ningún resultado.
+El repositorio tiene un tamaño de 0.0 GB según los metadatos de Hugging Face, lo que sugiere que no se han subido pesos (en safetensors, GGUF o cualquier otro formato), ni ficheros de configuración (`config.json`), tokenizador o scripts de inferencia. Sin estos artefactos no es posible determinar la arquitectura ni reproducir ningún resultado.
 
 ## Capacidades
 
@@ -75,5 +75,5 @@ No disponible. No se puede establecer una comparativa con alternativas de la mis
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/supermanone-boop/ITAMI
+- Hugging Face: https://huggingface.co/supermanone-boop/ITAMI
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

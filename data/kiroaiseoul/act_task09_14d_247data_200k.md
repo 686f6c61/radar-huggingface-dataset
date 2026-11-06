@@ -75,10 +75,10 @@ La model card unicamente indica, de forma generica y refiriendose al metodo ACT,
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ACT (este checkpoint) | 51,7 M | no aplica (ventana de observaciones) | no disponible | apache-2.0 | HuggingFace, via LeRobot |
+| ACT (este checkpoint) | 51,7 M | no aplica (ventana de observaciones) | no disponible | apache-2.0 | Hugging Face, via LeRobot |
 | Diffusion Policy | no disponible | no aplica | no disponible | no disponible | implementaciones publicas en repositorios de investigacion |
 | VQ-BeT | no disponible | no aplica | no disponible | no disponible | implementaciones publicas |
-| SmolVLA | no disponible | no disponible | no disponible | no disponible | HuggingFace, via LeRobot |
+| SmolVLA | no disponible | no disponible | no disponible | no disponible | Hugging Face, via LeRobot |
 
 Nota: ACT se distingue del resto por su tamano reducido, su entrenamiento rapido y su capacidad de predecir chunks de acciones en una sola pasada, mientras que Diffusion Policy genera acciones mediante difusion (mas costosa por el numero de pasos de muestreo) y SmolVLA incorpora un componente de vision-lenguaje-accion que permite condicionar por instrucciones en lenguaje natural. No se dispone de cifras comparativas verificables en la informacion proporcionada.
 
@@ -96,10 +96,10 @@ Nota: ACT se distingue del resto por su tamano reducido, su entrenamiento rapido
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kiroaiseoul/act_task09_14D_247data_200k
+- Modelo en Hugging Face: https://huggingface.co/kiroaiseoul/act_task09_14D_247data_200k
 - Dataset de entrenamiento: https://huggingface.co/datasets/kiroaiseoul/task09_close_refrigerator_14D_247data
 - Paper de ACT (arXiv:2304.13705): https://arxiv.org/abs/2304.13705
-- Pagina del paper en HuggingFace: https://huggingface.co/papers/2304.13705
+- Pagina del paper en Hugging Face: https://huggingface.co/papers/2304.13705
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot
 - Documentacion de LeRobot: https://huggingface.co/docs/lerobot/index
 - Guia de entrenamiento de policies: https://huggingface.co/docs/lerobot/il_robots#train-a-policy

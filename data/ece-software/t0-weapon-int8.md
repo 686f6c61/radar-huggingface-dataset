@@ -102,7 +102,7 @@ No se dispone de datos de benchmarks ni de especificaciones de arquitectura que 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ECE-Software/t0-weapon-int8
+- Modelo en Hugging Face: https://huggingface.co/ECE-Software/t0-weapon-int8
 - Fichero de pesos: https://huggingface.co/ECE-Software/t0-weapon-int8/blob/main/model.onnx
 - Repositorio de la organización: https://huggingface.co/ECE-Software
 - Búsqueda web realizada: sin resultados relevantes. Los resultados devueltos corresponden a la École centrale d'électronique (ECE) y no guardan relación con el autor del modelo:

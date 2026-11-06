@@ -86,8 +86,8 @@ La diferencia funcional clave frente a las otras dos opciones es la ausencia del
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/axteam/GLM-OCR-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/zai-org/GLM-OCR
+- Repositorio Hugging Face: https://huggingface.co/axteam/GLM-OCR-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/zai-org/GLM-OCR
 - Repositorio GitHub del modelo base: https://github.com/zai-org/GLM-OCR
 - Ficha de la conversión de ggml-org en aimodels.fyi: https://www.aimodels.fyi/models/huggingFace/glm-ocr-gguf-ggml-org
 - Ficha de GLM-OCR GGUF en local-ai-zone: https://local-ai-zone.github.io/models/glm-ocr.html

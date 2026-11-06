@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `adewqf/MyAwesomeModel-TestRepo` es, por su propio nombre y por sus metricas de uso, un repositorio de prueba publicado por el usuario `adewqf`. Registra 0 descargas, 0 likes y un tamano de repositorio de 0,0 GB, lo que indica que no contiene pesos de modelo descargables. Fue creado y actualizado el 10 de septiembre de 2026 (fechas tal como figuran en los metadatos de HuggingFace) y esta catalogado con la libreria `transformers` bajo licencia MIT.
+El repositorio `adewqf/MyAwesomeModel-TestRepo` es, por su propio nombre y por sus metricas de uso, un repositorio de prueba publicado por el usuario `adewqf`. Registra 0 descargas, 0 likes y un tamano de repositorio de 0,0 GB, lo que indica que no contiene pesos de modelo descargables. Fue creado y actualizado el 10 de septiembre de 2026 (fechas tal como figuran en los metadatos de Hugging Face) y esta catalogado con la libreria `transformers` bajo licencia MIT.
 
 La model card asociada describe un supuesto modelo denominado "MyAwesomeModel" con mejoras en razonamiento, soporte de function calling y una supuesta mejora en AIME 2025 del 70 % al 87,5 %. Sin embargo, existe una contradiccion de base: las etiquetas del repositorio lo clasifican como `bert` y `feature-extraction` (es decir, un encoder para extraccion de caracteristicas), mientras que la model card describe un modelo generativo de razonamiento con modo "thinking". No hay informacion que permita reconciliar ambas descripciones.
 
@@ -82,7 +82,7 @@ Dato textual adicional de la model card: en AIME 2025, la precision pasaria del 
 - VRAM estimada para inferencia: no disponible (no hay pesos ni numero de parametros).
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible.
-- Opciones de despliegue: no disponible. El tag `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints, pero sin pesos publicados no es desplegable.
+- Opciones de despliegue: no disponible. El tag `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints, pero sin pesos publicados no es desplegable.
 - Latencia y throughput estimados: no disponible.
 
 En la practica, con un repositorio de 0,0 GB no hay artefacto que cargar en ningun hardware.
@@ -105,6 +105,6 @@ No disponible. No es posible establecer comparaciones rigurosas porque no se con
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/adewqf/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/adewqf/MyAwesomeModel-TestRepo
 
 No se han encontrado enlaces relevantes adicionales (paper, repositorio de codigo, demo o blog). Los resultados de busqueda web disponibles corresponden a paginas de inicio de sesion de Google Drive y no guardan relacion con el modelo.

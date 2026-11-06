@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un repositorio de prueba alojado en HuggingFace por el usuario sad12cxzqw, creado el 15 de agosto de 2026. A pesar de su nombre y de la extensa model card que lo acompaña, el repositorio no contiene ningún peso (tamaño 0.0 GB) y registra cero descargas y cero likes, lo que indica que se trata de un espacio de demostración o de pruebas, no de un modelo publicable. La model card describe un modelo de razonamiento con mejoras frente a versiones anteriores, incluyendo un aumento en la precisión en el test AIME 2025 (del 70 % al 87,5 %) y un mayor uso de tokens de razonamiento (de 12K a 23K por pregunta), además de una reducción de la tasa de alucinación y soporte para function calling. Sin embargo, no se proporcionan datos técnicos verificables como arquitectura, número de parámetros o longitud de contexto. El pipeline declarado es `feature-extraction`, lo que resulta contradictorio con las capacidades de generación y razonamiento descritas en la documentación. En definitiva, este repositorio no permite una evaluación técnica real del modelo, y toda la información aquí recogida debe tratarse como declaraciones del autor sin verificación independiente.
+MyAwesomeModel es un repositorio de prueba alojado en Hugging Face por el usuario sad12cxzqw, creado el 15 de agosto de 2026. A pesar de su nombre y de la extensa model card que lo acompaña, el repositorio no contiene ningún peso (tamaño 0.0 GB) y registra cero descargas y cero likes, lo que indica que se trata de un espacio de demostración o de pruebas, no de un modelo publicable. La model card describe un modelo de razonamiento con mejoras frente a versiones anteriores, incluyendo un aumento en la precisión en el test AIME 2025 (del 70 % al 87,5 %) y un mayor uso de tokens de razonamiento (de 12K a 23K por pregunta), además de una reducción de la tasa de alucinación y soporte para function calling. Sin embargo, no se proporcionan datos técnicos verificables como arquitectura, número de parámetros o longitud de contexto. El pipeline declarado es `feature-extraction`, lo que resulta contradictorio con las capacidades de generación y razonamiento descritas en la documentación. En definitiva, este repositorio no permite una evaluación técnica real del modelo, y toda la información aquí recogida debe tratarse como declaraciones del autor sin verificación independiente.
 
 ## Especificaciones tecnicas
 
@@ -89,6 +89,6 @@ No se puede realizar una comparativa fiable con otros modelos conocidos (como Ll
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [sad12cxzqw/MyAwesomeModel-TestRepo](https://huggingface.co/sad12cxzqw/MyAwesomeModel-TestRepo)
+- Repositorio en Hugging Face: [sad12cxzqw/MyAwesomeModel-TestRepo](https://huggingface.co/sad12cxzqw/MyAwesomeModel-TestRepo)
 
 No se han encontrado otros enlaces (papers, blogs, repos de código o demos) en la información proporcionada.

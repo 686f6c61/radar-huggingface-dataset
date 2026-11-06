@@ -85,10 +85,10 @@ La comparativa más directa es con las variantes del mismo modelo base:
 
 | Modelo | Bits/peso | Tamaño | Media benchmarks | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM2.5-VL-3B (bf16) | 16.00 | 6.25 GB | 81.5 | lfm1.0 | HuggingFace |
-| LFM2.5-VL-3B MLX 4-bit (stock) | 6.07 | 2.39 GB | 81.0 | lfm1.0 | HuggingFace |
-| **Este modelo (mixed v6/p6/b4/e4)** | **5.19** | **2.04 GB** | **81.3** | lfm1.0 | HuggingFace |
-| LFM2.5-VL-3B MLX 4-bit uniforme | 5.00 | 1.97 GB | 79.3 | lfm1.0 | HuggingFace |
+| LFM2.5-VL-3B (bf16) | 16.00 | 6.25 GB | 81.5 | lfm1.0 | Hugging Face |
+| LFM2.5-VL-3B MLX 4-bit (stock) | 6.07 | 2.39 GB | 81.0 | lfm1.0 | Hugging Face |
+| **Este modelo (mixed v6/p6/b4/e4)** | **5.19** | **2.04 GB** | **81.3** | lfm1.0 | Hugging Face |
+| LFM2.5-VL-3B MLX 4-bit uniforme | 5.00 | 1.97 GB | 79.3 | lfm1.0 | Hugging Face |
 
 No se dispone de datos para comparar con otros VLM cuantizados de tamaño similar (p. ej., Qwen2-VL-2B o Llama 3.2 Vision) en las mismas condiciones. La ventaja de este modelo frente a otras cuantizaciones de LFM2.5-VL es su menor tamaño con rendimiento equivalente, y el hecho de que la torre de visión está cuantizada (aunque parcialmente), lo que reduce el uso de memoria en comparación con las versiones que la dejan en bf16.
 
@@ -104,7 +104,7 @@ No se dispone de datos para comparar con otros VLM cuantizados de tamaño simila
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/shubhambaid/LFM2.5-VL-3B-MLX-mixed-v6p6b4e4
+- Repositorio Hugging Face: https://huggingface.co/shubhambaid/LFM2.5-VL-3B-MLX-mixed-v6p6b4e4
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-VL-3B
 - Licencia del modelo base: https://huggingface.co/LiquidAI/LFM2.5-VL-3B/raw/main/LICENSE
 - Repositorio de reproducción (lfm2vl-lab): https://github.com/shubhambaid/lfm2vl-lab

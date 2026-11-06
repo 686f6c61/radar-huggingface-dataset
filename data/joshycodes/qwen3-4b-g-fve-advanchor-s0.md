@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| qwen3-4b-g-fve-advanchor-s0 | 4,4 B | No disponible | research-only | HuggingFace, safetensors |
-| Qwen/Qwen3-4B (base) | 4,4 B | No disponible | No disponible | HuggingFace |
+| qwen3-4b-g-fve-advanchor-s0 | 4,4 B | No disponible | research-only | Hugging Face, safetensors |
+| Qwen/Qwen3-4B (base) | 4,4 B | No disponible | No disponible | Hugging Face |
 
 No se dispone de información sobre otros modelos comparables en la información proporcionada.
 
@@ -79,7 +79,7 @@ No se dispone de información sobre otros modelos comparables en la información
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/joshycodes/qwen3-4b-g-fve-advanchor-s0
+- Hugging Face: https://huggingface.co/joshycodes/qwen3-4b-g-fve-advanchor-s0
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Repositorio welfare-improvements: no se proporciona URL.
 - Corpus flourishing-vs-equanimity: no se proporciona URL.

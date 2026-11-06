@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sock-heist-6m-v2` es una política de control robótico entrenada mediante aprendizaje por refuerzo, publicada por el usuario `lphatnguyen` en HuggingFace. El modelo está diseñado específicamente para el robot cuadrúpedo de código abierto microduck de Pollen Robotics, y se distribuye como un archivo ONNX que se carga directamente en el daemon de control del robot mediante el comando `robotctl policy load`.
+`sock-heist-6m-v2` es una política de control robótico entrenada mediante aprendizaje por refuerzo, publicada por el usuario `lphatnguyen` en Hugging Face. El modelo está diseñado específicamente para el robot cuadrúpedo de código abierto microduck de Pollen Robotics, y se distribuye como un archivo ONNX que se carga directamente en el daemon de control del robot mediante el comando `robotctl policy load`.
 
 La política es de tipo "perpetuo": ejecuta una marcha (gait) de forma continua hasta que se le indique lo contrario, consumiendo observaciones de 61 dimensiones y produciendo 14 acciones a una frecuencia de control de 50 Hz. El entrenamiento se realizó con el framework mjlab (basado en MuJoCo) sobre la tarea `Mjlab-SockHeist6m-MicroDuck`, con 4096 entornos paralelos y semilla 2, alcanzando el checkpoint 3800.
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- **Inferencia**: al ser una política de control a 50 Hz con observaciones de 61 dimensiones y 14 acciones, la carga computacional es mínima; el archivo ONNX cabe holgadamente en cualquier GPU consumer e incluso podría ejecutarse en CPU. No se especifica el tamaño exacto del modelo (el repositorio ocupa 0.0 GB según HuggingFace, lo que sugiere un archivo muy pequeño).
+- **Inferencia**: al ser una política de control a 50 Hz con observaciones de 61 dimensiones y 14 acciones, la carga computacional es mínima; el archivo ONNX cabe holgadamente en cualquier GPU consumer e incluso podría ejecutarse en CPU. No se especifica el tamaño exacto del modelo (el repositorio ocupa 0.0 GB según Hugging Face, lo que sugiere un archivo muy pequeño).
 - **GPU recomendadas para inferencia**: no disponible en la model card; por la naturaleza del modelo, cualquier GPU moderna o CPU es suficiente.
 - **Entrenamiento**: el autor usó `--gpu-ids '[1]'` con 4096 entornos paralelos, lo que implica al menos una GPU de datacenter (A100/H100 o similar); no se especifica el modelo exacto.
 - **Opciones de despliegue**: ONNX Runtime a través del daemon `robotctl` de microduck; no se documentan otras opciones (vLLM, llama.cpp, Ollama o TGI no aplican a este tipo de modelo).
@@ -80,7 +80,7 @@ No se dispone de información suficiente para comparar métricas de rendimiento 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lphatnguyen/microduck-sock-heist-6m-v2
+- Hugging Face: https://huggingface.co/lphatnguyen/microduck-sock-heist-6m-v2
 - Repositorio de desafíos y entrenamiento: https://github.com/pollen-robotics/microduck-challenges.git (rama `sock-heist-training`, commit `fb3c11f14`)
 - Proyecto microduck: https://github.com/pollen-robotics/microduck
 - Documentación del manifiesto de políticas: `docs/policy-manifest.md` en el repositorio del daemon (no se proporciona URL directa)

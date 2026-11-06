@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DataDecide-falcon-1B-60000_62500_65000_67500_69369_weightedavg_merge es un modelo de lenguaje de aproximadamente 1.279.854.592 parámetros (unos 1,28 mil millones) publicado por el usuario yuhengtu-bytedance en HuggingFace. No se trata de un modelo entrenado desde cero, sino del resultado de promediar los pesos de cinco checkpoints intermedios de un mismo entrenamiento (pasos 60000, 62500, 65000, 67500 y 69369), fusionados con la herramienta mergekit mediante el método Linear descrito en el artículo de model soups (arXiv:2203.05482). El repositorio se creó y actualizó el 17 de septiembre de 2026 y, en el momento de redactar esta ficha, acumula 0 descargas y 0 likes.
+DataDecide-falcon-1B-60000_62500_65000_67500_69369_weightedavg_merge es un modelo de lenguaje de aproximadamente 1.279.854.592 parámetros (unos 1,28 mil millones) publicado por el usuario yuhengtu-bytedance en Hugging Face. No se trata de un modelo entrenado desde cero, sino del resultado de promediar los pesos de cinco checkpoints intermedios de un mismo entrenamiento (pasos 60000, 62500, 65000, 67500 y 69369), fusionados con la herramienta mergekit mediante el método Linear descrito en el artículo de model soups (arXiv:2203.05482). El repositorio se creó y actualizó el 17 de septiembre de 2026 y, en el momento de redactar esta ficha, acumula 0 descargas y 0 likes.
 
 El interés de esta publicación es fundamentalmente metodológico: ilustra una variante de checkpoint averaging o model soup aplicada a etapas tardías de un mismo preentrenamiento, con pesos normalizados crecientes (1, 2, 3, 4 y 5) que otorgan más influencia a los checkpoints más avanzados. Este tipo de fusiones se estudian como forma de suavizar el ruido del entrenamiento y de obtener un punto de partida más estable que un checkpoint único, sin coste adicional en inferencia.
 
@@ -90,10 +90,10 @@ No se dispone de datos de rendimiento de este modelo, por lo que la comparación
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| DataDecide-falcon-1B-...weightedavg_merge | 1,28 mil millones | no disponible | no disponible | HuggingFace, 0 descargas |
-| Falcon-1B (TII) | 1,0 mil millones | 2.048 tokens | Apache 2.0 | HuggingFace, ampliamente descargado |
-| TinyLlama-1.1B | 1,1 mil millones | 2.048 tokens | Apache 2.0 | HuggingFace, muy extendido |
-| Llama 3.2 1B | 1,24 mil millones | hasta 128.000 tokens | Licencia comunitaria de Llama 3.2 | HuggingFace, muy extendido |
+| DataDecide-falcon-1B-...weightedavg_merge | 1,28 mil millones | no disponible | no disponible | Hugging Face, 0 descargas |
+| Falcon-1B (TII) | 1,0 mil millones | 2.048 tokens | Apache 2.0 | Hugging Face, ampliamente descargado |
+| TinyLlama-1.1B | 1,1 mil millones | 2.048 tokens | Apache 2.0 | Hugging Face, muy extendido |
+| Llama 3.2 1B | 1,24 mil millones | hasta 128.000 tokens | Licencia comunitaria de Llama 3.2 | Hugging Face, muy extendido |
 
 La diferencia principal frente a estas alternativas no está en el tamaño, sino en la naturaleza del artefacto: los tres modelos de referencia son publicaciones oficiales con licencia explícita y contexto documentado, mientras que la fusión aquí descrita no declara licencia, idiomas ni contexto, y no presenta métricas publicadas. En ausencia de benchmarks, no es posible afirmar que sea mejor o peor que ellos en ninguna tarea.
 
@@ -113,7 +113,7 @@ La diferencia principal frente a estas alternativas no está en el tamaño, sino
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/DataDecide-falcon-1B-60000_62500_65000_67500_69369_weightedavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/DataDecide-falcon-1B-60000_62500_65000_67500_69369_weightedavg_merge
 - Artículo de model soups, referencia del método de fusión: https://arxiv.org/abs/2203.05482
 - Repositorio de mergekit, herramienta empleada para la fusión: https://github.com/cg123/mergekit
 - Documentación de text-generation-inference, etiqueta declarada en el repositorio: https://github.com/huggingface/text-generation-inference

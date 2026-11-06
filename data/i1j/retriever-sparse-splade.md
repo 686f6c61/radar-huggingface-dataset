@@ -102,7 +102,7 @@ No se dispone de benchmarks comparativos entre estos modelos en la información 
 
 ## Enlaces
 
-- [HuggingFace - i1j/retriever-sparse-splade](https://huggingface.co/i1j/retriever-sparse-splade)
+- [Hugging Face - i1j/retriever-sparse-splade](https://huggingface.co/i1j/retriever-sparse-splade)
 - [Modelo base - opensearch-project/opensearch-neural-sparse-encoding-multilingual-v1](https://huggingface.co/opensearch-project/opensearch-neural-sparse-encoding-multilingual-v1)
 - [Documentación de Sparse Encoder en sentence-transformers](https://www.sbert.net/docs/sparse_encoder/usage/usage.html)
 - [Repositorio SPLADE en GitHub](https://github.com/naver/splade)

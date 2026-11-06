@@ -32,7 +32,7 @@ No hay datos de entrenamiento en el repositorio. El checkpoint incluido es una i
 - No existe soporte de generación de texto, código, matemáticas ni ningún procesamiento de lenguaje natural.
 - No hay soporte de tool calling / function calling, ni de agentes o razonamiento multi-paso.
 - Las capacidades multilingües no aplican, ya que no es un modelo de lenguaje.
-- La única capacidad verificable es la ejecución del script de fine-tuning y la carga del checkpoint en PyTorch/safetensors, siempre que se utilice un adaptador explícito para las API genéricas de HuggingFace.
+- La única capacidad verificable es la ejecución del script de fine-tuning y la carga del checkpoint en PyTorch/safetensors, siempre que se utilice un adaptador explícito para las API genéricas de Hugging Face.
 
 ## Casos de uso
 
@@ -41,7 +41,7 @@ No hay datos de entrenamiento en el repositorio. El checkpoint incluido es una i
 - Experiments controlados de pequeño tamaño: se puede probar el ajuste fino del checkpoint en datasets reducidos, como Flickr30k, para validar que el pipeline de entrenamiento funciona, sin asumir resultados de rendimiento.
 - Material docente: el repositorio ofrece un ejemplo sencillo de Mocov3 que puede utilizarse en clases de visión por computador o aprendizaje autónomo para explicar arquitecturas de retrieval.
 - Punto de partida para desarrollos propios: el código sirve como base para ampliar el modelo con un backbone real, un dataset concreto o una configuración de mayor escala, partiendo de una implementación limpia y con licencia Apache-2.0.
-- Pruebas de compatibilidad: la carga del safeguard de `model.safetensors` se puede usar para comprobar la interoperabilidad entre PyTorch, safetensors y el ecosistema de HuggingFace, especialmente cuando se requiere un adaptador manual.
+- Pruebas de compatibilidad: la carga del safeguard de `model.safetensors` se puede usar para comprobar la interoperabilidad entre PyTorch, safetensors y el ecosistema de Hugging Face, especialmente cuando se requiere un adaptador manual.
 - Baselines de verificación de pipelines: aunque el checkpoint no está entrenado, puede utilizarse para comprobar que una herramienta de evaluación de retrieval (métricas, búsqueda k-NN) degrada correctamente cuando se le proporciona un modelo sin entrenar.
 
 ## Benchmarks y rendimiento
@@ -72,6 +72,6 @@ No se han encontrado alternativas comparables con datos verificables en la infor
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/jenniferbrown/retrieval-fast
+- Página del modelo en Hugging Face: https://huggingface.co/jenniferbrown/retrieval-fast
 
 No se han encontrado enlaces adicionales relevantes en la búsqueda web.

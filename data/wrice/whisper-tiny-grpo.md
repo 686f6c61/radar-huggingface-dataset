@@ -2,7 +2,7 @@
 
 ## Resumen
 
-wrice/whisper-tiny-grpo es un ajuste fino de openai/whisper-tiny, el modelo de reconocimiento automático del habla (ASR) de 37,7 millones de parámetros publicado por OpenAI. Lo desarrolla el usuario wrice y se distribuye con licencia MIT a través de HuggingFace. El checkpoint mantiene la arquitectura Whisper intacta (transformer encoder-decoder con preprocesado de espectrograma mel) y solo modifica los pesos mediante un proceso de aprendizaje por refuerzo, etiquetado en el repositorio como GRPO (Group Relative Policy Optimization).
+wrice/whisper-tiny-grpo es un ajuste fino de openai/whisper-tiny, el modelo de reconocimiento automático del habla (ASR) de 37,7 millones de parámetros publicado por OpenAI. Lo desarrolla el usuario wrice y se distribuye con licencia MIT a través de Hugging Face. El checkpoint mantiene la arquitectura Whisper intacta (transformer encoder-decoder con preprocesado de espectrograma mel) y solo modifica los pesos mediante un proceso de aprendizaje por refuerzo, etiquetado en el repositorio como GRPO (Group Relative Policy Optimization).
 
 La innovación declarada no está en la arquitectura, sino en el procedimiento de ajuste: en lugar del fine-tuning supervisado clásico con cross-entropy sobre transcripciones de referencia, el autor aplica GRPO sobre el dataset mozilla-foundation/common_voice_26_0. GRPO es la técnica de optimización de política relativa por grupos popularizada por DeepSeekMath y DeepSeek-R1, y su aplicación a ASR es poco habitual, lo que convierte a este checkpoint en un artefacto fundamentalmente de investigación más que en un modelo listo para producción.
 
@@ -83,7 +83,7 @@ No se han publicado en la información disponible resultados de MMLU, HumanEval,
 - GPU recomendadas: cualquier GPU moderna es suficiente. Para lotes grandes en servidor, una NVIDIA T4, L4, A10, RTX 3090/4090 o A100/H100 ofrecen margen de sobra. No se requiere memoria unificada ni aceleradores especiales.
 - Compatibilidad con GPU de consumo: sí, cabe holgadamente en cualquier GPU de consumo de los últimos diez años, incluidas GTX 1060, RTX 2060, RTX 3060 y superiores. También funciona en CPU.
 - CPU: la inferencia en CPU es viable y rápida en comparación con modelos Whisper mayores; es una de las ventajas prácticas de esta variante.
-- Opciones de despliegue: pipeline ASR de HuggingFace Transformers, faster-whisper (CTranslate2, requiere conversión), WhisperX (requiere conversión y añade alineación y diarización), whisper.cpp (requiere conversión a formato GGML, no incluida en el repositorio) y servidores compatibles con Transformers. No se documenta compatibilidad con vLLM, TGI, Ollama ni llama.cpp para este checkpoint concreto.
+- Opciones de despliegue: pipeline ASR de Hugging Face Transformers, faster-whisper (CTranslate2, requiere conversión), WhisperX (requiere conversión y añade alineación y diarización), whisper.cpp (requiere conversión a formato GGML, no incluida en el repositorio) y servidores compatibles con Transformers. No se documenta compatibilidad con vLLM, TGI, Ollama ni llama.cpp para este checkpoint concreto.
 - Latencia y throughput: no disponible. No se han publicado mediciones de latencia, RTF (real-time factor) ni tokens por segundo para este checkpoint.
 - Almacenamiento: 0,2 GB de repositorio, trivial para cualquier entorno.
 
@@ -117,7 +117,7 @@ No se han identificado en la búsqueda web alternativas específicas de ajuste c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wrice/whisper-tiny-grpo
+- Modelo en Hugging Face: https://huggingface.co/wrice/whisper-tiny-grpo
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Dataset de ajuste: https://huggingface.co/datasets/mozilla-foundation/common_voice_26_0
 - Paper de Whisper (Robust Speech Recognition via Large-Scale Weak Supervision): https://arxiv.org/abs/2212.04356

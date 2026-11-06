@@ -89,7 +89,7 @@ La comparativa se limita a caracteristicas cualitativas porque no se dispone de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ambarella/FSRCNN
+- Hugging Face: https://huggingface.co/Ambarella/FSRCNN
 - Paper original (arXiv): https://arxiv.org/abs/1608.00367
 - Implementacion de referencia PyTorch: https://github.com/yjn870/FSRCNN-pytorch
 - Pesos originales FSRCNNx4 (91-image): https://www.dropbox.com/s/vobvi2nlymtvezb/91-image_x4.h5?dl=0

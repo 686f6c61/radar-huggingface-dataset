@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama-3.1-8B-Instruct-FineTuned-InsightWriter-v2 es un ajuste fino (fine-tuning) del modelo Llama 3.1 8B Instruct de Meta, publicado por el usuario joychak1 en HuggingFace. El nombre sugiere una especializacion orientada a la redaccion de contenido o generacion de textos tipo "insight", aunque la model card del autor no documenta ni el proceso de entrenamiento ni el dataset utilizado.
+Llama-3.1-8B-Instruct-FineTuned-InsightWriter-v2 es un ajuste fino (fine-tuning) del modelo Llama 3.1 8B Instruct de Meta, publicado por el usuario joychak1 en Hugging Face. El nombre sugiere una especializacion orientada a la redaccion de contenido o generacion de textos tipo "insight", aunque la model card del autor no documenta ni el proceso de entrenamiento ni el dataset utilizado.
 
 El modelo conserva la arquitectura base de Llama 3.1 8B Instruct: un transformer decoder-only denso de 8.030.261.248 parametros (segun los pesos en safetensors), con licencia de Meta Llama 3.1 y una ventana de contexto nominal de 128.000 tokens en el modelo original. Sin embargo, el autor no ha especificado la licencia aplicada a este derivado, ni los idiomas soportados, ni los detalles del ajuste.
 
@@ -46,7 +46,7 @@ Respecto al ajuste fino realizado por joychak1, la model card no aporta informac
 - Generacion de borradores de articulos tecnicos o analisis: el modelo puede producir textos estructurados a partir de un prompt con contexto, aprovechando la ventana de 128.000 tokens del modelo base si el fine-tuning no la ha reducido.
 - Resumen de documentos largos: con la ventana de contexto extendida del modelo base, es adecuado para condensar informes o transcripciones de varias decenas de miles de tokens en un unico paso.
 - Asistente conversacional especializado en redaccion: integrable en un chat multi-turno mediante la plantilla de Llama 3.1 Instruct.
-- Prototipado rapido de pipelines de generacion de texto: al ser compatible con text-generation-inference y endpoints_compatible, puede desplegarse en infraestructura estandar de HuggingFace con cambios minimos.
+- Prototipado rapido de pipelines de generacion de texto: al ser compatible con text-generation-inference y endpoints_compatible, puede desplegarse en infraestructura estandar de Hugging Face con cambios minimos.
 - Experimentacion academica sobre fine-tuning de Llama 3.1: util como referencia para comparar el efecto de un ajuste fino no documentado frente al modelo base.
 - Generacion de contenido editorial en castellano: si el fine-tuning preserva las capacidades multilingues del base, puede emplearse para redactar y reescribir textos en espanol, aunque no hay evidencia publicada de su calidad en este idioma.
 
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Llama-3.1-8B-Instruct-FineTuned-InsightWriter-v2 | 8,03 B | No documentado (base: 128k) | No disponible | HuggingFace, 0 descargas | Fine-tuning no documentado |
-| Llama-3.1-8B-Instruct (Meta) | 8,03 B | 128k | Llama 3.1 Community License | HuggingFace, ampliamente usado | Modelo base de referencia, benchmarks publicados |
-| Mistral-7B-Instruct-v0.3 | 7,25 B | 32k | Apache 2.0 | HuggingFace | Alternativa abierta con licencia permisiva |
-| Qwen2.5-7B-Instruct | 7,6 B | 128k | Apache 2.0 | HuggingFace | Multilingue, benchmarks publicados |
+| Llama-3.1-8B-Instruct-FineTuned-InsightWriter-v2 | 8,03 B | No documentado (base: 128k) | No disponible | Hugging Face, 0 descargas | Fine-tuning no documentado |
+| Llama-3.1-8B-Instruct (Meta) | 8,03 B | 128k | Llama 3.1 Community License | Hugging Face, ampliamente usado | Modelo base de referencia, benchmarks publicados |
+| Mistral-7B-Instruct-v0.3 | 7,25 B | 32k | Apache 2.0 | Hugging Face | Alternativa abierta con licencia permisiva |
+| Qwen2.5-7B-Instruct | 7,6 B | 128k | Apache 2.0 | Hugging Face | Multilingue, benchmarks publicados |
 
 ## Limitaciones y advertencias
 
@@ -86,7 +86,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joychak1/Llama-3.1-8B-Instruct-FineTuned-InsightWriter-v2
+- Modelo en Hugging Face: https://huggingface.co/joychak1/Llama-3.1-8B-Instruct-FineTuned-InsightWriter-v2
 - Modelo base Llama 3.1 8B Instruct: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Paper de Llama 3 (referenciado en los tags): https://arxiv.org/abs/1910.09700 (corresponde a Lacoste et al., citado en la model card para el calculo de emisiones; no es el paper de Llama 3)
 - Calculadora de impacto ambiental ML: https://mlco2.github.io/impact

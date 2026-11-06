@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 ## Requisitos de hardware
 
 - VRAM estimada para los pesos del modelo de difusión: aproximadamente 3,2 GB en bfloat16 (1.610.237.472 parámetros × 2 bytes) y aproximadamente 6,4 GB en float32. Estas cifras son una estimación aritmética a partir del recuento de parámetros y no incluyen el codificador de texto ni el resto del pipeline, cuyo tamaño no se detalla en la información proporcionada.
-- El repositorio completo ocupa 9,1 GB, por lo que se necesita ese espacio en disco para la descarga, además del espacio de caché de HuggingFace.
+- El repositorio completo ocupa 9,1 GB, por lo que se necesita ese espacio en disco para la descarga, además del espacio de caché de Hugging Face.
 - GPU recomendadas: no disponible en la información proporcionada. Cualquier GPU con al menos 8-12 GB de VRAM debería poder cargar los pesos del modelo de difusión en bfloat16, pero esta afirmación es una inferencia a partir del tamaño de los pesos y no está confirmada por el autor.
 - ¿Cabe en GPU consumer? Con toda probabilidad sí, dado el tamaño de los pesos, pero el requisito real depende del codificador de texto y de la resolución de salida (1024 píxeles), que elevan el consumo de memoria durante la decodificación.
 - Opciones de despliegue: diffusers es la biblioteca declarada y el pipeline es SanaSprintPipeline. Herramientas orientadas a LLM como vLLM, llama.cpp, Ollama o TGI no aplican a un modelo de difusión. ComfyUI u otros frontends de difusión requerirían una conversión no documentada en este repositorio.
@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto / resolucion | Licencia | Disponibilidad | Diferencias |
 |---|---|---|---|---|---|
-| AhinskiDzmitry/dnd-sana-sprint-1.6b (este) | 1,61 mil millones | 1024 px | Apache 2.0 | HuggingFace, 0 descargas | VAE en bfloat16, README y .gitattributes omitidos |
-| Efficient-Large-Model/Sana_Sprint_1.6B_1024px_diffusers (base) | 1,61 mil millones | 1024 px | Apache 2.0 | HuggingFace, modelo de referencia | VAE en float32, incluye README y .gitattributes; es el origen sin recortar |
+| AhinskiDzmitry/dnd-sana-sprint-1.6b (este) | 1,61 mil millones | 1024 px | Apache 2.0 | Hugging Face, 0 descargas | VAE en bfloat16, README y .gitattributes omitidos |
+| Efficient-Large-Model/Sana_Sprint_1.6B_1024px_diffusers (base) | 1,61 mil millones | 1024 px | Apache 2.0 | Hugging Face, modelo de referencia | VAE en float32, incluye README y .gitattributes; es el origen sin recortar |
 
 No se dispone en la material proporcionado de datos comparativos con otras alternativas de la misma categoría (por ejemplo, otros modelos texto-a-imagen de ~1-2 mil millones de parámetros), por lo que la comparación se limita al modelo base del que deriva esta redistribución.
 

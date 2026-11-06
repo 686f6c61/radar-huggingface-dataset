@@ -79,7 +79,7 @@ Nota: la comparativa se basa en características declaradas; no hay datos de ren
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/airagrp/Qwen3.8-27B-mlx-mxfp8-L
+- Repositorio Hugging Face: https://huggingface.co/airagrp/Qwen3.8-27B-mlx-mxfp8-L
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio oficial de Qwen3.8-27B en GitHub: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Documentación de Groq sobre Qwen3.8-27B: https://console.groq.com/docs/model/qwen/qwen3.8-27b

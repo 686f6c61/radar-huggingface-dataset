@@ -84,7 +84,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AIArchiveInfo/MS-Human-700
+- Hugging Face: https://huggingface.co/AIArchiveInfo/MS-Human-700
 - Página del proyecto: https://lnsgroup.cc/research/MS-Human
 - Repositorio del modelo: https://github.com/LNSGroup/MS-Human-700
 - Repositorio msgym: https://github.com/LNSGroup/msgym

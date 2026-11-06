@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Beltah/pesaLoop` es un repositorio publicado en HuggingFace bajo la licencia Apache-2.0, creado por el usuario Beltah el 29 de agosto de 2026. No se ha proporcionado ninguna documentación técnica, model card sustancial ni información sobre su arquitectura, tamaño, entrenamiento o capacidades. El repositorio tiene actualmente 0 descargas y 1 like, lo que sugiere que es un modelo reciente o poco difundido. La ausencia de datos públicos impide conocer su propósito, su rendimiento o sus aplicaciones potenciales. En este estado, cualquier uso en entornos de producción o investigación requeriría una evaluación previa y la obtención de información adicional por parte del autor.
+El modelo `Beltah/pesaLoop` es un repositorio publicado en Hugging Face bajo la licencia Apache-2.0, creado por el usuario Beltah el 29 de agosto de 2026. No se ha proporcionado ninguna documentación técnica, model card sustancial ni información sobre su arquitectura, tamaño, entrenamiento o capacidades. El repositorio tiene actualmente 0 descargas y 1 like, lo que sugiere que es un modelo reciente o poco difundido. La ausencia de datos públicos impide conocer su propósito, su rendimiento o sus aplicaciones potenciales. En este estado, cualquier uso en entornos de producción o investigación requeriría una evaluación previa y la obtención de información adicional por parte del autor.
 
 ## Especificaciones tecnicas
 
@@ -50,5 +50,5 @@ No disponible. No se ha identificado ninguna información que permita comparar e
 
 ## Enlaces
 
-- [HuggingFace - Beltah/pesaLoop](https://huggingface.co/Beltah/pesaLoop)
+- [Hugging Face - Beltah/pesaLoop](https://huggingface.co/Beltah/pesaLoop)
 - [GitHub - Beltahmd/BELTAH-AI](https://github.com/Beltahmd/BELTAH-AI) (repositorio del autor, sin relación confirmada con este modelo)

@@ -4,7 +4,7 @@
 
 El repositorio `myx160/sft_eyeglasses_pi05_ppu12c_mb48_gbs576_s4000_v2_step2000` es un checkpoint de ajuste supervisado (SFT, *supervised fine-tuning*) para robótica, publicado por el usuario myx160 dentro del ecosistema OpenPI. Se trata de un modelo de tipo VLA (*Vision-Language-Action*), es decir, una politica que recibe observaciones visuales e instrucciones en lenguaje natural y emite acciones motrices continuas para un brazo robotico. En concreto, esta entrenado para la tarea "Pick up the eyeglasses, fold the temples, and place them on the box on the right" sobre un robot Piper.
 
-El artefacto no es un modelo de proposito general ni un *chat model*, sino un checkpoint de entrenamiento resumible (paso 2000 de 4000) asociado a un *pipeline* concreto de datos y a una configuracion distribuida especifica. La libreria declarada es `openpi` y el pipeline de HuggingFace es `robotics`. El tamano del repositorio es de 34,2 GB, coherente con un checkpoint completo de pesos en precision completa mas los *shards* de entrenamiento distribuido.
+El artefacto no es un modelo de proposito general ni un *chat model*, sino un checkpoint de entrenamiento resumible (paso 2000 de 4000) asociado a un *pipeline* concreto de datos y a una configuracion distribuida especifica. La libreria declarada es `openpi` y el pipeline de Hugging Face es `robotics`. El tamano del repositorio es de 34,2 GB, coherente con un checkpoint completo de pesos en precision completa mas los *shards* de entrenamiento distribuido.
 
 Su relevancia es acotada y de nicho: sirve para reproducir o reanudar un entrenamiento de manipulacion robotica sobre el dataset `myx160/eyeglasses_grasp`, y no como evidencia de exito en robot real. La propia model card advierte de que es un artefacto de entrenamiento y no una prueba de rendimiento fisico. Cuenta con 0 descargas y 0 *likes*, y su licencia es Apache 2.0.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `myx160/sft_eyeglasses_pi05_..._step2000` | VLA robotica (SFT, tarea unica) | no disponible | no disponible | Apache 2.0 | HuggingFace, 0 descargas |
+| `myx160/sft_eyeglasses_pi05_..._step2000` | VLA robotica (SFT, tarea unica) | no disponible | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
 | Familia pi0 / pi0.5 (OpenPI, referencia conceptual) | VLA robotica | no disponible en esta informacion | no disponible | no disponible | no disponible |
 | OpenVLA (referencia conceptual) | VLA robotica | no disponible en esta informacion | no disponible | no disponible | no disponible |
 
@@ -83,7 +83,7 @@ No se dispone de datos verificados de parametros, contexto o rendimiento de alte
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/myx160/sft_eyeglasses_pi05_ppu12c_mb48_gbs576_s4000_v2_step2000
+- Hugging Face: https://huggingface.co/myx160/sft_eyeglasses_pi05_ppu12c_mb48_gbs576_s4000_v2_step2000
 - Dataset referenciado: myx160/eyeglasses_grasp (commit `64481a6ad7cfacf9db4a26c546852bbcc380de73`), no se ha podido verificar la URL del dataset en la busqueda web.
 - La busqueda web realizada no devolvio resultados relevantes: solo aparecio el sitio de comercio electronico aleman galeria.de, sin relacion con el modelo.
 - No se encontraron papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

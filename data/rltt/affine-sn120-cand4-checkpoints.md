@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RLTT/Affine-sn120-cand4-checkpoints es un repositorio de checkpoints publicado por el usuario RLTT en HuggingFace. Las etiquetas del repositorio (lora, moe, distillation, affine, sn120, bittensor) y su base declarada (Qwen/Qwen3.6-35B-A3B) indican que se trata de adaptadores LoRA derivados de un proceso de destilación sobre un modelo base de tipo mezcla de expertos (MoE), en el contexto de la subred 120 (sn120) de Bittensor, asociada a Affine.
+RLTT/Affine-sn120-cand4-checkpoints es un repositorio de checkpoints publicado por el usuario RLTT en Hugging Face. Las etiquetas del repositorio (lora, moe, distillation, affine, sn120, bittensor) y su base declarada (Qwen/Qwen3.6-35B-A3B) indican que se trata de adaptadores LoRA derivados de un proceso de destilación sobre un modelo base de tipo mezcla de expertos (MoE), en el contexto de la subred 120 (sn120) de Bittensor, asociada a Affine.
 
 El tamano del repositorio (1,2 GB) es coherente con un conjunto de adaptadores y checkpoints intermedios, no con pesos completos de un modelo de 35B de parametros. El identificador "cand4" sugiere que se trata de la cuarta candidata o checkpoint candidato de un ciclo de entrenamiento o evaluacion dentro de la subred.
 
@@ -22,7 +22,7 @@ La relevancia de esta ficha es limitada y debe enmarcarse con cautela: el reposi
 | Formato de pesos | safetensors |
 | Modelo base | Qwen/Qwen3.6-35B-A3B |
 | Tamano del repositorio | 1,2 GB |
-| Acceso | restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Pipeline declarado | no disponible |
 | Fecha de creacion | 2026-09-14 |
 | Fecha de actualizacion | 2026-09-14 |
@@ -93,6 +93,6 @@ Nota: los valores de referencia de Qwen3-30B-A3B y Mixtral 8x7B son aproximados 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/RLTT/Affine-sn120-cand4-checkpoints
+- Repositorio en Hugging Face: https://huggingface.co/RLTT/Affine-sn120-cand4-checkpoints
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Resultados de busqueda web: los resultados recuperados (foro e-fatura del Gobierno de Turquia) no guardan relacion con el modelo y no aportan documentacion util. No se han encontrado papers, blogs, repositorios o demos adicionales vinculados a este artefacto.

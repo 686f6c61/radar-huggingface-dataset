@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `kby-ai/license-plate-recognition` en HuggingFace no contiene un modelo de aprendizaje automático con pesos descargables, sino que actúa como punto de entrada a un SDK comercial de reconocimiento automático de matrículas (ALPR/ANPR) desarrollado por KBY-AI. Este SDK se distribuye como imagen Docker y ofrece una API REST para extraer el número de matrícula de imágenes de vehículos en tiempo real, utilizando técnicas de deep learning que la compañía describe como "state-of-the-art".
+El repositorio `kby-ai/license-plate-recognition` en Hugging Face no contiene un modelo de aprendizaje automático con pesos descargables, sino que actúa como punto de entrada a un SDK comercial de reconocimiento automático de matrículas (ALPR/ANPR) desarrollado por KBY-AI. Este SDK se distribuye como imagen Docker y ofrece una API REST para extraer el número de matrícula de imágenes de vehículos en tiempo real, utilizando técnicas de deep learning que la compañía describe como "state-of-the-art".
 
 La relevancia de este producto radica en que proporciona una solución lista para producción, con despliegue mediante contenedor, que puede integrarse en sistemas de control de accesos, peajes, vigilancia o gestión de flotas. A diferencia de los modelos de lenguaje, aquí no hay parámetros públicos, arquitectura documentada ni licencia de código abierto; el acceso está sujeto a una licencia comercial por máquina o instancia.
 
@@ -69,11 +69,11 @@ No se dispone de informacion suficiente para comparar este SDK con alternativas 
 - Riesgo de sesgo: al no conocer los datos de entrenamiento, no se puede evaluar si el sistema funciona peor con ciertos tipos de matricula (por ejemplo, de paises con formatos poco comunes, o con condiciones de iluminacion extremas).
 - Dependencia de un proveedor: al ser un SDK cerrado, cualquier cambio en la API o en la politica de licencias puede afectar a los sistemas que lo integren.
 - No se garantiza el soporte para todos los paises o formatos de matricula; la personalizacion se ofrece como servicio adicional.
-- La informacion de la ficha de HuggingFace es minima (sin descripcion, sin licencia, sin idiomas), lo que sugiere que el repositorio es un mero enlace al producto comercial, no un modelo publicable.
+- La informacion de la ficha de Hugging Face es minima (sin descripcion, sin licencia, sin idiomas), lo que sugiere que el repositorio es un mero enlace al producto comercial, no un modelo publicable.
 
 ## Enlaces
 
-- [HuggingFace: kby-ai/license-plate-recognition](https://huggingface.co/kby-ai/license-plate-recognition)
+- [Hugging Face: kby-ai/license-plate-recognition](https://huggingface.co/kby-ai/license-plate-recognition)
 - [Pagina oficial del SDK ALPR](https://kby-ai.com/license-plate-recognition-sdk/)
 - [Repositorio GitHub: Automatic-License-Plate-Recognition-Docker](https://github.com/kby-ai/Automatic-License-Plate-Recognition-Docker)
 - [Documentacion del SDK](https://docs.kby-ai.com/help/product/automatic-license-plate-number-recognition-sdk)

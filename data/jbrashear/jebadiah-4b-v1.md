@@ -91,8 +91,8 @@ Prueba de robustez con contenido irrelevante (test nonce), con un UUID nuevo ins
 
 | Modelo | Parametros | Enfoque | Exactitud Nimble (macro) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jebadiah-4b-v1 | 4B (LoRA) | Decision tipada calibrada (choice / noul / score) | 75,9 (subconjuntos publicos de Nimble) | apache-2.0 | HuggingFace (adaptador) |
-| jebadiah-4b-v0 | 4B (LoRA) | Decision tipada, sin objetivo ordinal en `score` ni rúbricas humanas | No publicada en el extracto; 77,5 en el conjunto Nimble de 324 items | apache-2.0 | HuggingFace (adaptador) |
+| jebadiah-4b-v1 | 4B (LoRA) | Decision tipada calibrada (choice / noul / score) | 75,9 (subconjuntos publicos de Nimble) | apache-2.0 | Hugging Face (adaptador) |
+| jebadiah-4b-v0 | 4B (LoRA) | Decision tipada, sin objetivo ordinal en `score` ni rúbricas humanas | No publicada en el extracto; 77,5 en el conjunto Nimble de 324 items | apache-2.0 | Hugging Face (adaptador) |
 | Nimble-9B | 9B | Clasificador/decision | 74,8 (tabla publicada de Bespoke, mismo scorer) | no disponible | No disponible en la informacion proporcionada |
 | Jev | no disponible | Decision tipada (referencia del metrico Jevals) | 76,0 (tabla publicada de Bespoke, mismo scorer) | no disponible | No disponible en la informacion proporcionada |
 
@@ -115,7 +115,7 @@ La comparacion directa entre v1 y v0 en el mismo conjunto (Nimble held-out de 32
 
 ## Enlaces
 
-- Modelo en HuggingFace (v1): https://huggingface.co/jbrashear/jebadiah-4b-v1
+- Modelo en Hugging Face (v1): https://huggingface.co/jbrashear/jebadiah-4b-v1
 - Version anterior (v0): https://huggingface.co/jbrashear/jebadiah-4b-v0
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B-Base
 - Dataset de decisiones tipadas: https://huggingface.co/datasets/LocalLLaMA/typed-decisions

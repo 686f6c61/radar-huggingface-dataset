@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Entrenamiento | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MECT-b2-finetuned (CZUR-Research) | Embeddings de hablante (MECT/AntSpeaker) | VoxCeleb2 dev + VoxBlink2, ajuste fino en 3D-Speaker | Multilingüe | no disponible | HuggingFace (checkpoint `.pt`) |
-| MECT-b2 (AntResearch/AntSpeaker) | Embeddings de hablante (MECT) | VoxCeleb2 dev + VoxBlink2 | no disponible | no disponible | HuggingFace |
-| ECAPA-TDNN (SpeechBrain) | Embeddings de hablante | VoxCeleb | Multilingüe (uso general) | Apache 2.0 (SpeechBrain) | HuggingFace, SpeechBrain |
-| WavLM-based speaker models | Embeddings de hablante | Diversos corpus | Inglés principalmente | Variable según checkpoint | HuggingFace |
+| MECT-b2-finetuned (CZUR-Research) | Embeddings de hablante (MECT/AntSpeaker) | VoxCeleb2 dev + VoxBlink2, ajuste fino en 3D-Speaker | Multilingüe | no disponible | Hugging Face (checkpoint `.pt`) |
+| MECT-b2 (AntResearch/AntSpeaker) | Embeddings de hablante (MECT) | VoxCeleb2 dev + VoxBlink2 | no disponible | no disponible | Hugging Face |
+| ECAPA-TDNN (SpeechBrain) | Embeddings de hablante | VoxCeleb | Multilingüe (uso general) | Apache 2.0 (SpeechBrain) | Hugging Face, SpeechBrain |
+| WavLM-based speaker models | Embeddings de hablante | Diversos corpus | Inglés principalmente | Variable según checkpoint | Hugging Face |
 
 Los datos de los modelos alternativos proceden de conocimiento general y no de la información proporcionada; los valores concretos de parámetros y benchmarks de MECT-b2-finetuned no están disponibles para una comparación cuantitativa.
 
@@ -82,7 +82,7 @@ Los datos de los modelos alternativos proceden de conocimiento general y no de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CZUR-Research/MECT-b2-finetuned
+- Modelo en Hugging Face: https://huggingface.co/CZUR-Research/MECT-b2-finetuned
 - Modelo base AntSpeaker: https://huggingface.co/AntResearch/AntSpeaker
 - Dataset VoxCeleb2: no disponible enlace directo en la información proporcionada
 - Dataset VoxBlink2: no disponible enlace directo en la información proporcionada

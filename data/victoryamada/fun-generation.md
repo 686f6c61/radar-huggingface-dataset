@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Hybrid for Generation es un prototipo de investigación publicado por el usuario victoryamada en HuggingFace bajo el identificador victoryamada/fun-generation. Se trata de una implementación propia etiquetada como "híbrida" y orientada a tareas de generación, con una configuración declarada de escala "xlarge". El propio autor indica explícitamente en la model card que el repositorio no presenta cifras de rendimiento verificadas y que el checkpoint incluido (`model.safetensors`) es únicamente una inicialización válida para pruebas de humo (smoke tests), no un modelo entrenado ni evaluado.
+Hybrid for Generation es un prototipo de investigación publicado por el usuario victoryamada en Hugging Face bajo el identificador victoryamada/fun-generation. Se trata de una implementación propia etiquetada como "híbrida" y orientada a tareas de generación, con una configuración declarada de escala "xlarge". El propio autor indica explícitamente en la model card que el repositorio no presenta cifras de rendimiento verificadas y que el checkpoint incluido (`model.safetensors`) es únicamente una inicialización válida para pruebas de humo (smoke tests), no un modelo entrenado ni evaluado.
 
 El dato más relevante para cualquier evaluador es el recuento real de parámetros reportado en los metadatos de safetensors: 33.088 parámetros totales. Se trata, por tanto, de un artefacto de tamaño minúsculo (el repositorio ocupa 0,0 GB), muy lejos de lo que sugiere la etiqueta "xlarge" y sin capacidad práctica para generación de lenguaje de propósito general. El interés del repositorio es exclusivamente como plantilla de código y de configuración para experimentación con arquitecturas híbridas.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| victoryamada/fun-generation | 33.088 | no disponible | sin benchmarks publicados | MIT | HuggingFace, prototipo sin entrenar |
+| victoryamada/fun-generation | 33.088 | no disponible | sin benchmarks publicados | MIT | Hugging Face, prototipo sin entrenar |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se ha identificado en la información proporcionada ningún modelo comparable de la misma categoría (prototipo híbrido de investigación con atención lineal y fusión bilineal) ni se dispone de datos objetivos para establecer una comparación. Cualquier tabla comparativa con modelos de producción (por ejemplo, familias de transformadores pequeños) resultaría engañosa, dado que aquí no existe un checkpoint entrenado.
@@ -77,7 +77,7 @@ No se ha identificado en la información proporcionada ningún modelo comparable
 - El autor declara que no ha sido auditado para robustez, equidad ni transferencia de dominio.
 - Riesgo de alucinación: no aplicable en el sentido habitual al no existir modelo entrenado; cualquier salida sería esencialmente aleatoria.
 - Sesgos conocidos: no disponibles; no se han realizado análisis de sesgo.
-- Limitaciones de contexto e idioma: sin datos de ventana de contexto ni de idiomas soportados. Los metadatos de HuggingFace no listan idiomas.
+- Limitaciones de contexto e idioma: sin datos de ventana de contexto ni de idiomas soportados. Los metadatos de Hugging Face no listan idiomas.
 - La etiqueta de escala "xlarge" no se corresponde con el recuento real de 33.088 parámetros, lo que puede inducir a error si se interpreta como indicador de capacidad.
 - Incoherencia temporal en los metadatos: las fechas de creación y actualización declaradas (2026-09-16) son posteriores a la fecha actual de consulta, lo que resta fiabilidad al conjunto de metadatos del repositorio.
 - Uso comercial: la licencia MIT es permisiva y permite uso comercial, pero se aplica sobre un artefacto sin valor funcional; el autor recomienda revisar por separado los términos de los datos de origen si se emplean datasets externos.
@@ -86,7 +86,7 @@ No se ha identificado en la información proporcionada ningún modelo comparable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/victoryamada/fun-generation
+- Modelo en Hugging Face: https://huggingface.co/victoryamada/fun-generation
 - `main.py` (artefacto principal, contiene modelo y ejemplo ejecutable): https://huggingface.co/victoryamada/fun-generation/blob/main/main.py
 - `config.json` (configuración de arquitectura): https://huggingface.co/victoryamada/fun-generation/blob/main/config.json
 - `training_args.json` (receta de experimento por defecto): https://huggingface.co/victoryamada/fun-generation/blob/main/training_args.json

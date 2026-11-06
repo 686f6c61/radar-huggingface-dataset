@@ -1,7 +1,7 @@
 # Khan656/hinglish-sentiment-qwen-lora
 
 ## Resumen
-El modelo `Khan656/hinglish-sentiment-qwen-lora` es un adaptador LoRA entrenado sobre un modelo base Qwen3.5 de aproximadamente 2.200 millones de parametros, con la libreria Unsloth, para clasificar tuits en hinglish (texto code-mixed hindi-ingles) en tres categorias de sentimiento: positivo, negativo y neutro. Lo publica el usuario Khan656 en HuggingFace y su proposito es resolver la clasificacion de sentimiento en un registro linguistico mixto que los modelos entrenados solo en ingles o solo en hindi manejan con dificultad.
+El modelo `Khan656/hinglish-sentiment-qwen-lora` es un adaptador LoRA entrenado sobre un modelo base Qwen3.5 de aproximadamente 2.200 millones de parametros, con la libreria Unsloth, para clasificar tuits en hinglish (texto code-mixed hindi-ingles) en tres categorias de sentimiento: positivo, negativo y neutro. Lo publica el usuario Khan656 en Hugging Face y su proposito es resolver la clasificacion de sentimiento en un registro linguistico mixto que los modelos entrenados solo en ingles o solo en hindi manejan con dificultad.
 
 La relevancia del modelo reside en su tarea acotada y en las cifras que reporta su autor: sobre la particion de validacion alcanza un macro-F1 de 0,682 y sobre la de test un 0,674, frente a un 0,599 y un 0,609 de una linea base clasica de regresion logistica con n-gramas de caracteres TF-IDF. Se entrena exclusivamente sobre los ficheros de entrenamiento y validacion de SemEval-2020 Task 9 (SentiMix), con unos 16.700 tuits tras limpieza y deduplicacion, re-divididos 80/10/10 con semilla 42.
 
@@ -67,7 +67,7 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de otras tareas en l
 
 | Modelo | Parametros | Contexto | Macro-F1 test | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (Qwen3.5 + LoRA) | ~2,2B (base) | No disponible | 0,674 | No disponible | HuggingFace |
+| Este adaptador (Qwen3.5 + LoRA) | ~2,2B (base) | No disponible | 0,674 | No disponible | Hugging Face |
 | TF-IDF char n-gramas + regresion logistica (linea base del autor) | No aplica | No aplica | 0,609 | No disponible | Referencia en la model card |
 
 No se dispone de informacion sobre otros modelos comparables en la informacion proporcionada.
@@ -83,7 +83,7 @@ No se dispone de informacion sobre otros modelos comparables en la informacion p
 - Licencia no declarada: no se especifican condiciones de uso comercial, redistribucion ni atribucion.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/Khan656/hinglish-sentiment-qwen-lora
+- Hugging Face: https://huggingface.co/Khan656/hinglish-sentiment-qwen-lora
 - SemEval-2020 Task 9 (SentiMix): no disponible en la informacion proporcionada (corpus de origen de los datos)
 - Unsloth (libreria de entrenamiento): no disponible en la informacion proporcionada
 - Papers, blogs, repositorios y demos adicionales: no disponibles en la informacion proporcionada

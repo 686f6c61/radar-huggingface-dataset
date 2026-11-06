@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "BugsB/smolvla_franka_push",
+  "slug": "bugsb-smolvla_franka_push",
+  "author": "BugsB",
+  "url": "https://huggingface.co/BugsB/smolvla_franka_push",
+  "created_at": "2026-11-01T17:12:40.000Z",
+  "updated_at": "2026-11-01T18:57:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:BugsB/franka_push",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 30,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 7916339688,
+  "storage_human": "7.9 GB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BugsB/smolvla_franka_push · Hugging Face",
+      "url": "https://huggingface.co/BugsB/smolvla_franka_push",
+      "snippet": "BugsB/franka_push ... SmolVLA: A Vision-Language-Action Model for Affordable and Efficient Robotics"
+    },
+    {
+      "title": "BugsB/smolvla_franka_push at main - Hugging Face",
+      "url": "https://huggingface.co/BugsB/smolvla_franka_push/tree/main",
+      "snippet": "Instructions to use BugsB/smolvla_franka_push with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use BugsB/smolvla_franka_push with LeRobot:"
+    }
+  ]
+}

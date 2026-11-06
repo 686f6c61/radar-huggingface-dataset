@@ -103,8 +103,8 @@ Latencia: 74 ms por ítem general y 150 a 190 ms por captura de pantalla incluye
 
 | Modelo | Parámetros | Naturaleza | Contexto | Rendimiento relevante | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Jev-Vision (V9, 8B) | 8B de backbone congelado + 175M entrenables | Decisor no generativo con cabezas tipadas | No disponible | Media 0,917 en imágenes generales; skip 0,922 / effect 0,977 / done 0,887 / ground 0,949 en pantallas v1 | apache-2.0 | Adaptador y cabezas en HuggingFace, servidor en GitHub |
-| Qwen3-VL-8B-Instruct (backbone congelado) | 8B | VLM generativo | No disponible | Media 0,911 en las mismas particiones generales leídas desde logits de siguiente token; AUROC en sí/no de 0,96 frente a 0,84-0,91 de Jev-Vision | No disponible en la información proporcionada | HuggingFace |
+| Jev-Vision (V9, 8B) | 8B de backbone congelado + 175M entrenables | Decisor no generativo con cabezas tipadas | No disponible | Media 0,917 en imágenes generales; skip 0,922 / effect 0,977 / done 0,887 / ground 0,949 en pantallas v1 | apache-2.0 | Adaptador y cabezas en Hugging Face, servidor en GitHub |
+| Qwen3-VL-8B-Instruct (backbone congelado) | 8B | VLM generativo | No disponible | Media 0,911 en las mismas particiones generales leídas desde logits de siguiente token; AUROC en sí/no de 0,96 frente a 0,84-0,91 de Jev-Vision | No disponible en la información proporcionada | Hugging Face |
 | Jev 1.13 (solo texto) | No disponible | Decisor textual | No disponible | 0,870 / 0,733 / 0,887 en los mismos ítems v1 | No disponible | No disponible |
 | Modelos específicos de grounding de UI (OS-Atlas, UGround, ShowUI y similares) | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -126,7 +126,7 @@ No se dispone de datos comparativos con otros verificadores multimodales o model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SeanLiu/Jev-Vision
+- Modelo en Hugging Face: https://huggingface.co/SeanLiu/Jev-Vision
 - Repositorio de código, benchmark, evaluaciones y arnés de bucle cerrado: https://github.com/sseanliu/Jev-Vision
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - No se han encontrado otros enlaces relevantes en la búsqueda web realizada; los resultados devueltos corresponden a un portal de administración tributaria y no guardan relación con el modelo.

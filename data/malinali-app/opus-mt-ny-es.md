@@ -18,7 +18,7 @@ Su relevancia actual es de nicho pero clara: la combinacion chichewa-espanol tie
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (pesos publicados en safetensors sin cuantizar) |
 | Idiomas soportados | ny (chichewa), es (espanol) |
-| Licencia | no disponible en HuggingFace; la model card remite a la del modelo original, tipicamente CC-BY 4.0 para OPUS-MT |
+| Licencia | no disponible en Hugging Face; la model card remite a la del modelo original, tipicamente CC-BY 4.0 para OPUS-MT |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Idiomas | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| malinali-app/opus-mt-ny-es | 75.862.931 | ny, es | safetensors | no disponible (upstream tipicamente CC-BY 4.0) | HuggingFace |
-| Helsinki-NLP/opus-mt-ny-es | no disponible en la informacion | ny, es | no disponible en la informacion | no disponible en la informacion | HuggingFace (modelo base) |
-| Otros modelos OPUS-MT | no disponible en la informacion | multiples pares por modelo | no disponible en la informacion | tipicamente CC-BY 4.0 | HuggingFace |
+| malinali-app/opus-mt-ny-es | 75.862.931 | ny, es | safetensors | no disponible (upstream tipicamente CC-BY 4.0) | Hugging Face |
+| Helsinki-NLP/opus-mt-ny-es | no disponible en la informacion | ny, es | no disponible en la informacion | no disponible en la informacion | Hugging Face (modelo base) |
+| Otros modelos OPUS-MT | no disponible en la informacion | multiples pares por modelo | no disponible en la informacion | tipicamente CC-BY 4.0 | Hugging Face |
 
 No se dispone de datos suficientes en la informacion proporcionada para comparar parametros, contexto, rendimiento y licencia del resto de alternativas con rigor.
 
@@ -75,14 +75,14 @@ No se dispone de datos suficientes en la informacion proporcionada para comparar
 - Sesgos conocidos: no disponibles en la informacion proporcionada; al heredar los datos de OPUS-MT, puede reflejar los sesgos presentes en los corpus paralelos utilizados por el proyecto original.
 - Riesgo de alucinacion: como cualquier modelo seq2seq de traduccion, puede generar traducciones plausibles pero incorrectas cuando la entrada es ambigua, poco frecuente o fuera de dominio.
 - Limitaciones de contexto: la longitud maxima de contexto no se especifica en la informacion disponible; debe consultarse el `config.json` del repositorio.
-- Licencia: la informacion de HuggingFace indica "no disponible". La model card remite a la licencia del modelo original, que suele ser CC-BY 4.0 en OPUS-MT, pero se recomienda verificar la licencia upstream antes de cualquier uso comercial.
+- Licencia: la informacion de Hugging Face indica "no disponible". La model card remite a la licencia del modelo original, que suele ser CC-BY 4.0 en OPUS-MT, pero se recomienda verificar la licencia upstream antes de cualquier uso comercial.
 - Repositorio sin traccion: cero descargas y cero "likes" en el momento de la consulta, lo que implica ausencia de validacion por parte de la comunidad.
 - Fecha de creacion (2026-10-02): conviene comprobar si el repositorio se mantiene actualizado y si los archivos de tokenizador y pesos son consistentes con la version del modelo base.
 - Para produccion: no se documentan pruebas de calidad, evaluacion humana ni benchmarks; su uso en entornos criticos requeriria una evaluacion propia.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/malinali-app/opus-mt-ny-es
+- Modelo en Hugging Face: https://huggingface.co/malinali-app/opus-mt-ny-es
 - Modelo base: https://huggingface.co/Helsinki-NLP/opus-mt-ny-es
 - Proyecto OPUS-MT (repositorio): https://github.com/Helsinki-NLP/Opus-MT
 - Sitio del proyecto Malinali: https://malinali.app

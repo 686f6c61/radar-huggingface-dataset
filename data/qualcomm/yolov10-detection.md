@@ -2,7 +2,7 @@
 
 ## Resumen
 
-YOLOv10-Detection es un modelo de deteccion de objetos en tiempo real publicado por Qualcomm en HuggingFace, consistente en el checkpoint YOLOv10-N de Ultralytics exportado y optimizado para ejecutarse en la NPU Hexagon de los SoC Snapdragon y Dragonwing. No se trata de un modelo de lenguaje: es un detector convolutional de una sola etapa que devuelve cajas delimitadoras y clases sobre imagenes de 640x640 pixeles, con solo 2,33 millones de parametros y un peso en disco de 8,95 MB en coma flotante, 3,04 MB en cuantizacion w8a16 y 2,55 MB en w8a8.
+YOLOv10-Detection es un modelo de deteccion de objetos en tiempo real publicado por Qualcomm en Hugging Face, consistente en el checkpoint YOLOv10-N de Ultralytics exportado y optimizado para ejecutarse en la NPU Hexagon de los SoC Snapdragon y Dragonwing. No se trata de un modelo de lenguaje: es un detector convolutional de una sola etapa que devuelve cajas delimitadoras y clases sobre imagenes de 640x640 pixeles, con solo 2,33 millones de parametros y un peso en disco de 8,95 MB en coma flotante, 3,04 MB en cuantizacion w8a16 y 2,55 MB en w8a8.
 
 Su relevancia es practica: el repositorio forma parte del ecosistema Qualcomm AI Hub Models y proporciona mediciones de latencia y memoria pico sobre mas de una decena de chipsets reales, con tiempos de inferencia que van de 2,28 ms (Snapdragon 8 Elite Gen 5, w8a16) a 25,5 ms (Dragonwing Q-6690, w8a16). Esto lo convierte en una pieza util para desplegar vision por computador en movil, IoT industrial, automocion y XR sin depender de GPU dedicada.
 
@@ -168,7 +168,7 @@ La comparacion cuantitativa con alternativas (por ejemplo, YOLOv8-N o YOLO11-N) 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qualcomm/YOLOv10-Detection
+- Modelo en Hugging Face: https://huggingface.co/qualcomm/YOLOv10-Detection
 - Repositorio de la libreria AI Hub Models y del modelo: https://github.com/qualcomm/ai-hub-models/blob/v0.62.0/src/qai_hub_models/models/yolov10_det
 - Qualcomm AI Hub Workbench: https://workbench.aihub.qualcomm.com
 - Registro de cuenta Qualcomm: https://myaccount.qualcomm.com/signup

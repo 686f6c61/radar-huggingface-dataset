@@ -2,11 +2,11 @@
 
 ## Resumen
 
-LSTA es un repositorio alojado en HuggingFace por el usuario springlake49, publicado bajo licencia MIT y con un tamaño aproximado de 0,3 GB. En el momento de la consulta registra 0 descargas y 0 likes, no declara pipeline de inferencia, no especifica idiomas soportados y su model card se limita al bloque de metadatos con la licencia, sin texto descriptivo alguno.
+LSTA es un repositorio alojado en Hugging Face por el usuario springlake49, publicado bajo licencia MIT y con un tamaño aproximado de 0,3 GB. En el momento de la consulta registra 0 descargas y 0 likes, no declara pipeline de inferencia, no especifica idiomas soportados y su model card se limita al bloque de metadatos con la licencia, sin texto descriptivo alguno.
 
 La información disponible no permite identificar la arquitectura, el número de parámetros, la longitud de contexto ni el formato de pesos del artefacto. Tampoco hay datos sobre datos de entrenamiento, proceso de alineamiento o capacidades declaradas. Se trata, por tanto, de un repositorio sin documentación técnica publicada, lo que impide cualquier evaluación reproducibile.
 
-Las búsquedas web realizadas con la sigla LSTA devuelven resultados que no guardan relación con este repositorio: LST-AI (ensemble de deep learning para segmentación en imagen médica), LSTA-Swin (red neuronal espacio-temporal para predicción de ENSO) y LSTA como ticker bursátil de Lisata Therapeutics. Ninguno de ellos es atribuible al modelo alojado en HuggingFace. Su relevancia actual es, por consiguiente, nula para producción mientras no se publique documentación que acredite qué contiene el repositorio.
+Las búsquedas web realizadas con la sigla LSTA devuelven resultados que no guardan relación con este repositorio: LST-AI (ensemble de deep learning para segmentación en imagen médica), LSTA-Swin (red neuronal espacio-temporal para predicción de ENSO) y LSTA como ticker bursátil de Lisata Therapeutics. Ninguno de ellos es atribuible al modelo alojado en Hugging Face. Su relevancia actual es, por consiguiente, nula para producción mientras no se publique documentación que acredite qué contiene el repositorio.
 
 ## Especificaciones tecnicas
 
@@ -35,7 +35,7 @@ El único dato dimensional es el tamaño del repositorio, 0,3 GB, que no permite
 - Soporte de agentes y razonamiento multi-paso: no documentado.
 - Capacidades multilingües: no documentadas (el campo de idiomas está vacío).
 - Capacidades especiales (modo thinking, visión, audio): no documentadas.
-- Modo de despliegue previsto: no documentado; no se declara `pipeline` en la ficha de HuggingFace.
+- Modo de despliegue previsto: no documentado; no se declara `pipeline` en la ficha de Hugging Face.
 
 ## Casos de uso
 
@@ -86,7 +86,7 @@ No disponible. No se han identificado alternativas comparables porque se descono
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/springlake49/LSTA
+- Hugging Face: https://huggingface.co/springlake49/LSTA
 - LST-AI (GitHub, sin relación confirmada): https://github.com/CompImg/LST-AI
 - LSTA-Swin (Springer, sin relación confirmada): https://link.springer.com/article/10.1007/s00382-026-08210-3
 - Lisata Therapeutics, LSTA (Danelfin, sin relación confirmada): https://danelfin.com/stock/LSTA

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Rewrite2 4B NVFP4 W4A4 es una versión cuantizada a 4 bits (pesos y activaciones) de un modelo especializado en la reescritura de novelas en chino. Lo publica el usuario aikexue170 en HuggingFace y deriva de Qwen3.5-4B, sobre el que se ha aplicado un LoRA de rango 32 entrenado exclusivamente con 25.647 pares de reescritura del conjunto interno V12.5, posteriormente fusionado y cuantizado con NVIDIA ModelOpt 0.47.0. El resultado es un checkpoint de 2.756.686.336 parámetros (2,76 mil millones reales según safetensors, aunque la nomenclatura comercial lo etiquete como 4B) que ocupa 3,70 GiB y está pensado para inferencia con vLLM sobre GPUs de 16 GB.
+Rewrite2 4B NVFP4 W4A4 es una versión cuantizada a 4 bits (pesos y activaciones) de un modelo especializado en la reescritura de novelas en chino. Lo publica el usuario aikexue170 en Hugging Face y deriva de Qwen3.5-4B, sobre el que se ha aplicado un LoRA de rango 32 entrenado exclusivamente con 25.647 pares de reescritura del conjunto interno V12.5, posteriormente fusionado y cuantizado con NVIDIA ModelOpt 0.47.0. El resultado es un checkpoint de 2.756.686.336 parámetros (2,76 mil millones reales según safetensors, aunque la nomenclatura comercial lo etiquete como 4B) que ocupa 3,70 GiB y está pensado para inferencia con vLLM sobre GPUs de 16 GB.
 
 El modelo no es un asistente general: es un SFT de tarea única que recibe un fragmento de novela china de entre 500 y 1.200 caracteres y devuelve una reescritura con estilo más natural y menor "sabor a IA", manteniendo trama, personajes y acontecimientos. La instrucción es fija, no hay system prompt ni modo de razonamiento (la plantilla fuerza un bloque ` thinking` vacío) y el comportamiento por defecto es compresivo: la salida tiende a situarse entre 0,6 y 0,9 veces la longitud de la entrada.
 
@@ -103,7 +103,7 @@ No se dispone de datos para comparar con modelos de reescritura de terceros ni c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aikexue170/rewrite2-4b-nvfp4
+- Modelo en Hugging Face: https://huggingface.co/aikexue170/rewrite2-4b-nvfp4
 - Variante BF16: https://huggingface.co/aikexue170/rewrite2-4b-bf16
 - Variante FP8 W8A8: https://huggingface.co/aikexue170/rewrite2-4b-fp8
 - Variante GGUF: https://huggingface.co/aikexue170/rewrite2-4b-gguf

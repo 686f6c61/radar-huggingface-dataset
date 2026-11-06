@@ -91,7 +91,7 @@ A modo de aclaracion interna del repositorio, los dos artefactos que contiene cu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/digitalartdynamics/facadelab-minimax-h3-mirror
+- Repositorio en Hugging Face: https://huggingface.co/digitalartdynamics/facadelab-minimax-h3-mirror
 - Texto de la licencia MiniMax H3 Community: https://huggingface.co/digitalartdynamics/facadelab-minimax-h3-mirror/blob/main/MINIMAX_H3_LICENSE.txt
 - Repositorio de origen del GGUF (Abiray): https://huggingface.co/Abiray/MiniMax-H3-Pruned-GGUF
 - Repositorio de origen del LoRA turbo (drbaph): https://huggingface.co/drbaph/MiniMax-H3-Turbo-Lora-ComfyUI

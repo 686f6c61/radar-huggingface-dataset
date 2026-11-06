@@ -59,8 +59,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| 3CTeam/fpvla-stage2-827-50k | 7.6B | No disponible | VLA (OpenVLA-7B + trace head) | Apache-2.0 | HuggingFace |
-| OpenVLA-7B | 7B | No disponible | VLA (SigLIP + Llama-2-7B) | MIT | HuggingFace |
+| 3CTeam/fpvla-stage2-827-50k | 7.6B | No disponible | VLA (OpenVLA-7B + trace head) | Apache-2.0 | Hugging Face |
+| OpenVLA-7B | 7B | No disponible | VLA (SigLIP + Llama-2-7B) | MIT | Hugging Face |
 | RT-2 (Google) | 55B | No disponible | VLA (PaLI-X + PaLM) | No abierto | No disponible |
 
 La comparativa se limita a parámetros y arquitectura, ya que no hay datos de rendimiento publicados para el modelo de 3CTeam. OpenVLA-7B es el modelo base y comparte la misma estructura, pero sin la cabeza de trayectoria. RT-2 es un modelo mucho mayor y no está disponible públicamente.
@@ -76,7 +76,7 @@ La comparativa se limita a parámetros y arquitectura, ya que no hay datos de re
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/3CTeam/fpvla-stage2-827-50k
+- Modelo en Hugging Face: https://huggingface.co/3CTeam/fpvla-stage2-827-50k
 - Modelo base OpenVLA-7B: https://huggingface.co/openvla/openvla-7b
 - Página del equipo 3CTeam: https://huggingface.co/3CTeam/models
 - Repositorio de OpenVLA (código de Prismatic): https://github.com/openvla/openvla

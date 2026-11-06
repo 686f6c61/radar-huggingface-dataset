@@ -4,7 +4,7 @@
 
 PCP-MAE (Point Cloud Prediction Masked Autoencoder) es un modelo de preentrenamiento auto-supervisado para nubes de puntos 3D, desarrollado por Xiangdong Zhang, Shaofeng Zhang y Junchi Yan, y presentado en NeurIPS 2024. El modelo aborda una limitacion clasica de los masked autoencoders aplicados a nubes de puntos: la ambiguedad de predecir directamente las coordenadas de los puntos enmascarados. En lugar de ello, PCP-MAE aprende a predecir los centros de agrupamiento (centers) asociados a las regiones enmascaradas, lo que proporciona una senal de supervision mas estable y geometricamente coherente.
 
-La version publicada en HuggingFace por el usuario `torch-pointcloud` es una conversion de los pesos originales del repositorio `aHapBean/PCP-MAE` al formato safetensors, integrable mediante la libreria `torch-pointcloud`. El checkpoint contiene 29,5 millones de parametros y fue preentrenado sobre ShapeNet-55, un subconjunto de ShapeNet con 55 categorias de objetos 3D.
+La version publicada en Hugging Face por el usuario `torch-pointcloud` es una conversion de los pesos originales del repositorio `aHapBean/PCP-MAE` al formato safetensors, integrable mediante la libreria `torch-pointcloud`. El checkpoint contiene 29,5 millones de parametros y fue preentrenado sobre ShapeNet-55, un subconjunto de ShapeNet con 55 categorias de objetos 3D.
 
 Es relevante ahora porque ofrece un backbone preentrenado listo para fine-tuning en tareas downstream de vision 3D (clasificacion, segmentacion de partes, deteccion), con una licencia permisiva MIT y un formato de pesos moderno (safetensors) que facilita su integracion en pipelines de PyTorch. No es un modelo de lenguaje ni un modelo generativo de texto: es exclusivamente un extractor de representaciones para geometria 3D.
 
@@ -66,7 +66,7 @@ No se dispone en la informacion proporcionada de datos numericos ni de especific
 
 | Modelo | Parametros | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| PCP-MAE (este) | 29,5 M | nubes de puntos (ej. 8192 puntos) | MIT | HuggingFace, safetensors |
+| PCP-MAE (este) | 29,5 M | nubes de puntos (ej. 8192 puntos) | MIT | Hugging Face, safetensors |
 | Point-MAE | no disponible en la informacion | nubes de puntos | MIT (repo original) | GitHub |
 | Point-BERT | no disponible en la informacion | nubes de puntos | MIT (repo original) | GitHub |
 | MaskPoint | no disponible en la informacion | nubes de puntos | no disponible | GitHub |
@@ -86,7 +86,7 @@ Los datos de parametros, contexto y rendimiento de los modelos alternativos no s
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/torch-pointcloud/pcp-mae.pretrain.xiangdong-zhang
+- Hugging Face: https://huggingface.co/torch-pointcloud/pcp-mae.pretrain.xiangdong-zhang
 - Paper PCP-MAE (arXiv): https://arxiv.org/abs/2408.08753
 - Paper ShapeNet (arXiv): https://arxiv.org/abs/1512.03012
 - Repositorio original PCP-MAE: https://github.com/aHapBean/PCP-MAE

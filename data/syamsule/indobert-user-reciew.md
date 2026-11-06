@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`syamsule/indobert-user-reciew` es un repositorio publicado en HuggingFace por el usuario syamsule bajo licencia MIT. Por el identificador del modelo se deduce que se trata de un ajuste fino (fine-tuning) de IndoBERT, un modelo transformer encoder-only preentrenado para indonesio, orientado presumiblemente a la clasificación o análisis de reseñas de usuarios ("user review", con la errata "reciew" en el nombre). No obstante, esta deducción se basa únicamente en el nombre del repositorio: la model card no aporta ninguna descripción del modelo, su propósito ni su proceso de entrenamiento.
+`syamsule/indobert-user-reciew` es un repositorio publicado en Hugging Face por el usuario syamsule bajo licencia MIT. Por el identificador del modelo se deduce que se trata de un ajuste fino (fine-tuning) de IndoBERT, un modelo transformer encoder-only preentrenado para indonesio, orientado presumiblemente a la clasificación o análisis de reseñas de usuarios ("user review", con la errata "reciew" en el nombre). No obstante, esta deducción se basa únicamente en el nombre del repositorio: la model card no aporta ninguna descripción del modelo, su propósito ni su proceso de entrenamiento.
 
 La información disponible es extremadamente limitada. El repositorio no incluye pipeline declarado, no especifica idiomas soportados, no documenta el dataset de entrenamiento, no publica métricas de evaluación y no registra descargas ni interacciones (0 descargas, 0 likes) en el momento de la consulta. Fue creado y actualizado el mismo día (3 de noviembre de 2026), lo que sugiere una publicación reciente y sin mantenimiento posterior documentado.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| syamsule/indobert-user-reciew | No disponible | No disponible | MIT | HuggingFace, 0 descargas | Sin documentación ni métricas |
-| IndoBERT (indobenchmark) | ~124 M (base) | 512 tokens | Apache 2.0 (según repositorio oficial) | HuggingFace, ampliamente usado | Modelo base con model card y benchmarks publicados |
-| mBERT (bert-base-multilingual-cased) | ~178 M | 512 tokens | Apache 2.0 | HuggingFace | Multilingüe, incluye indonesio; base de comparación habitual |
-| XLM-RoBERTa base | ~278 M | 512 tokens | MIT | HuggingFace | Multilingüe, mayor tamaño; requiere más recursos |
+| syamsule/indobert-user-reciew | No disponible | No disponible | MIT | Hugging Face, 0 descargas | Sin documentación ni métricas |
+| IndoBERT (indobenchmark) | ~124 M (base) | 512 tokens | Apache 2.0 (según repositorio oficial) | Hugging Face, ampliamente usado | Modelo base con model card y benchmarks publicados |
+| mBERT (bert-base-multilingual-cased) | ~178 M | 512 tokens | Apache 2.0 | Hugging Face | Multilingüe, incluye indonesio; base de comparación habitual |
+| XLM-RoBERTa base | ~278 M | 512 tokens | MIT | Hugging Face | Multilingüe, mayor tamaño; requiere más recursos |
 
 La comparación se limita a características generales de la familia; no es posible comparar rendimiento porque el modelo evaluado no publica métricas.
 
@@ -85,6 +85,6 @@ La comparación se limita a características generales de la familia; no es posi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/syamsule/indobert-user-reciew
+- Repositorio Hugging Face: https://huggingface.co/syamsule/indobert-user-reciew
 - IndoBERT oficial (referencia de la familia, no vinculado al autor): https://huggingface.co/indobenchmark/indobert-base-p1
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

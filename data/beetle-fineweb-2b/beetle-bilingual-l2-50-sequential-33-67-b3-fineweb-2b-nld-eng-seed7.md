@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `beetle-bilingual-l2-50-sequential-33-67-b3-fineweb-2b-nld-eng-seed7` es un checkpoint publicado en HuggingFace por la organizacion Beetle-FineWeb-2B. Se trata de un modelo de generacion de texto de tipo decoder-only, con 193.804.032 parametros reales (aproximadamente 194 millones) segun los pesos en formato safetensors del repositorio. El identificador del modelo sugiere un entrenamiento bilingue neerlandes-ingles sobre el corpus FineWeb-2B, con una semilla concreta (seed7) y una configuracion de entrenamiento codificada en el propio nombre (l2-50, sequential-33-67, b3), aunque ninguno de estos extremos esta confirmado por documentacion del autor.
+El modelo `beetle-bilingual-l2-50-sequential-33-67-b3-fineweb-2b-nld-eng-seed7` es un checkpoint publicado en Hugging Face por la organizacion Beetle-FineWeb-2B. Se trata de un modelo de generacion de texto de tipo decoder-only, con 193.804.032 parametros reales (aproximadamente 194 millones) segun los pesos en formato safetensors del repositorio. El identificador del modelo sugiere un entrenamiento bilingue neerlandes-ingles sobre el corpus FineWeb-2B, con una semilla concreta (seed7) y una configuracion de entrenamiento codificada en el propio nombre (l2-50, sequential-33-67, b3), aunque ninguno de estos extremos esta confirmado por documentacion del autor.
 
-El modelo declara la etiqueta `custom_code` y una arquitectura denominada `pico_decoder`, lo que implica que no se corresponde con ninguna clase estandar de la libreria transformers y requiere cargar codigo remoto del autor (`trust_remote_code=True`). La model card publicada es la plantilla automatica de HuggingFace, con todos los campos marcados como "More Information Needed": no hay informacion sobre datos de entrenamiento, hiperparametros, licencia, idiomas oficiales, contexto soportado ni evaluacion.
+El modelo declara la etiqueta `custom_code` y una arquitectura denominada `pico_decoder`, lo que implica que no se corresponde con ninguna clase estandar de la libreria transformers y requiere cargar codigo remoto del autor (`trust_remote_code=True`). La model card publicada es la plantilla automatica de Hugging Face, con todos los campos marcados como "More Information Needed": no hay informacion sobre datos de entrenamiento, hiperparametros, licencia, idiomas oficiales, contexto soportado ni evaluacion.
 
 La relevancia de esta ficha es limitada y hay que ser transparente al respecto: se trata de un checkpoint de investigacion con cero descargas y cero "likes" en el momento de la consulta, sin licencia declarada y sin documentacion tecnica. Es util como objeto de estudio de experimentos de entrenamiento bilingue a pequena escala, pero no es un modelo apto para produccion sin una evaluacion previa por parte del equipo que lo vaya a adoptar.
 
@@ -86,7 +86,7 @@ No disponible. No es posible establecer una comparativa rigurosa porque no se co
 
 ## Limitaciones y advertencias
 
-- Model card vacia: la documentacion publicada es la plantilla automatica de HuggingFace con todos los campos sin cumplimentar. No hay informacion verificable sobre datos de entrenamiento, composicion del corpus ni sesgos.
+- Model card vacia: la documentacion publicada es la plantilla automatica de Hugging Face con todos los campos sin cumplimentar. No hay informacion verificable sobre datos de entrenamiento, composicion del corpus ni sesgos.
 - Licencia no declarada: la ausencia de licencia implica que no se concede ningun derecho de uso explicito. El uso comercial es juridicamente arriesgado sin contactar con el autor.
 - Codigo remoto: el tag `custom_code` obliga a ejecutar codigo del autor con `trust_remote_code=True`, lo que supone un riesgo de seguridad en entornos de produccion. Hay que auditar el codigo antes de cargarlo.
 - Riesgo de alucinacion: inherente a cualquier modelo de lenguaje causal, y potencialmente mayor en un modelo de 194 M parametros, con menor capacidad de mantener coherencia factual en textos largos.
@@ -99,8 +99,8 @@ No disponible. No es posible establecer una comparativa rigurosa porque no se co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Beetle-FineWeb-2B/beetle-bilingual-l2-50-sequential-33-67-b3-fineweb-2b-nld-eng-seed7
-- Perfil del autor en HuggingFace: https://huggingface.co/Beetle-FineWeb-2B
+- Modelo en Hugging Face: https://huggingface.co/Beetle-FineWeb-2B/beetle-bilingual-l2-50-sequential-33-67-b3-fineweb-2b-nld-eng-seed7
+- Perfil del autor en Hugging Face: https://huggingface.co/Beetle-FineWeb-2B
 - Articulo citado en la plantilla de la model card (Lacoste et al., 2019, sobre estimacion de emisiones): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental enlazada en la plantilla: https://mlco2.github.io/impact
 - Nota sobre la busqueda web: las consultas realizadas devolvieron unicamente resultados sobre el escarabajo (insecto) y el Volkswagen Beetle, sin ninguna relacion con este modelo. No se han encontrado papers, blogs, repositorios ni demos adicionales.

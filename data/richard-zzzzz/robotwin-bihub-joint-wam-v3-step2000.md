@@ -69,6 +69,6 @@ No se dispone de información sobre modelos comparables en los datos proporciona
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Richard-ZZZZZ/robotwin-bihub-joint-wam-v3-step2000
+- Hugging Face: https://huggingface.co/Richard-ZZZZZ/robotwin-bihub-joint-wam-v3-step2000
 - RoboTwin 2.0: https://robotwin-platform.github.io/
 - GitHub oficial de RoboTwin: https://github.com/robotwin-Platform/robotwin

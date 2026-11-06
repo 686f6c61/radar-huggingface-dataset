@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Seldon es un modelo fundacional especializado en datos tabulares, desarrollado por Neuralk-AI y publicado en HuggingFace bajo una licencia propia (`neuralk-seldon-license`) con acceso restringido que requiere aceptar condiciones. A diferencia de los LLM generativos, su pipeline declarado es `tabular-classification`: el modelo está diseñado para realizar clasificación sobre tablas directamente, sin entrenamiento específico por tarea, apoyándose en mecanismos de *in-context learning* y en un *synthetic prior* como estrategia de preentrenamiento.
+Seldon es un modelo fundacional especializado en datos tabulares, desarrollado por Neuralk-AI y publicado en Hugging Face bajo una licencia propia (`neuralk-seldon-license`) con acceso restringido que requiere aceptar condiciones. A diferencia de los LLM generativos, su pipeline declarado es `tabular-classification`: el modelo está diseñado para realizar clasificación sobre tablas directamente, sin entrenamiento específico por tarea, apoyándose en mecanismos de *in-context learning* y en un *synthetic prior* como estrategia de preentrenamiento.
 
 El modelo cuenta con 213.464.122 parámetros (aproximadamente 213 millones), lo que lo sitúa en un rango de tamaño moderado, muy por debajo de los LLM de propósito general pero sustancialmente mayor que los modelos tabulares clásicos como XGBoost o CatBoost en términos de capacidad paramétrica. Los pesos se distribuyen en formato `safetensors` con un tamaño de repositorio de 0,9 GB.
 
@@ -23,7 +23,7 @@ Su relevancia radica en la propuesta de un modelo fundacional para datos tabular
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información pública detallada sobre la arquitectura interna del modelo en la información proporcionada. Los tags de HuggingFace indican `foundation-model`, `in-context-learning` y `synthetic-prior`, lo que sugiere que el modelo fue preentrenado sobre un corpus de tareas tabulares sintéticas generadas mediante un prior, con el objetivo de que aprenda a resolver tareas de clasificación tabular a partir de ejemplos proporcionados en la propia entrada (in-context learning) en lugar de requerir ajuste fino por dataset.
+No se dispone de información pública detallada sobre la arquitectura interna del modelo en la información proporcionada. Los tags de Hugging Face indican `foundation-model`, `in-context-learning` y `synthetic-prior`, lo que sugiere que el modelo fue preentrenado sobre un corpus de tareas tabulares sintéticas generadas mediante un prior, con el objetivo de que aprenda a resolver tareas de clasificación tabular a partir de ejemplos proporcionados en la propia entrada (in-context learning) en lugar de requerir ajuste fino por dataset.
 
 El pipeline declarado es `tabular-classification`, lo que confirma que la salida esperada es una etiqueta categórica por fila de la tabla de entrada. No se especifican el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF o DPO (poco probables en un modelo tabular). Tampoco se detalla ninguna innovación técnica concreta más allá del enfoque de prior sintético e inferencia en contexto. Cualquier afirmación adicional sobre capas, atención o mecanismos internos sería especulativa y no se incluye.
 
@@ -71,7 +71,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo está en modo *gated* en HuggingFace y requiere aceptar las condiciones de la licencia `neuralk-seldon-license` antes de descargarlo; esto puede limitar su uso en entornos corporativos con políticas de licencias estrictas.
+- Acceso restringido: el modelo está en modo *gated* en Hugging Face y requiere aceptar las condiciones de la licencia `neuralk-seldon-license` antes de descargarlo; esto puede limitar su uso en entornos corporativos con políticas de licencias estrictas.
 - Licencia no estándar: al no ser una licencia OSI reconocida (Apache 2.0, MIT, etc.), es imprescindible revisar los términos exactos para uso comercial, redistribución y modificación antes de integrarlo en producción.
 - Sesgos: no disponible. Al entrenarse presumiblemente sobre datos sintéticos, los sesgos dependerán del prior de generación, no documentado.
 - Riesgo de alucinación: en un modelo de clasificación tabular el riesgo se traduce en predicciones erróneas o sobreconfiadas en distribuciones alejadas de las del entrenamiento; no se documentan métricas de calibración.
@@ -82,6 +82,6 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Neuralk-AI/seldon
+- Hugging Face: https://huggingface.co/Neuralk-AI/seldon
 - Licencia: no disponible como enlace directo en la información proporcionada (referenciada como `neuralk-seldon-license`)
 - Paper, blog, repositorio o demo: no disponible en la información proporcionada

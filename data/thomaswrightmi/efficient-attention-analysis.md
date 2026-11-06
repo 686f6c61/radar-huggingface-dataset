@@ -17,7 +17,7 @@ Por tanto, su relevancia no es la de un modelo evaluable, sino la de un document
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | No disponible |
-| Idiomas soportados | No disponibles (el campo de idiomas está vacío en los metadatos de HuggingFace); la documentación está redactada en inglés |
+| Idiomas soportados | No disponibles (el campo de idiomas está vacío en los metadatos de Hugging Face); la documentación está redactada en inglés |
 | Licencia | MIT |
 | Formato de pesos | Etiqueta `safetensors` en los metadatos; no se documenta ningún fichero de pesos desplegable. El repo tiene un tamaño de 0.0 GB |
 
@@ -86,7 +86,7 @@ Nota: la fila intermedia se incluye únicamente para ilustrar la categoría de a
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/thomaswrightmi/efficient-attention-analysis
+- Repositorio en Hugging Face: https://huggingface.co/thomaswrightmi/efficient-attention-analysis
 - Nota principal: `notes.md` dentro del repositorio (https://huggingface.co/thomaswrightmi/efficient-attention-analysis/blob/main/notes.md)
 - Documentación: `README.md` dentro del repositorio (https://huggingface.co/thomaswrightmi/efficient-attention-analysis/blob/main/README.md)
 - Attention (machine learning), Wikipedia: https://en.wikipedia.org/wiki/Attention_(machine_learning)

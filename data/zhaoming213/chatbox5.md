@@ -90,7 +90,7 @@ Frente a los modelos de 0,5B y 1B de Qwen y Meta, ChatBox5 pierde en todos los e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Zhaoming213/ChatBox5
+- Modelo en Hugging Face: https://huggingface.co/Zhaoming213/ChatBox5
 - Modelo base: https://huggingface.co/uer/gpt2-medium-chinese-cluecorpussmall
 - Primera generación: https://huggingface.co/Zhaoming213/ChatBox-unrestricted
 - Segunda generación: https://huggingface.co/Zhaoming213/ChatBox2-unrestricted

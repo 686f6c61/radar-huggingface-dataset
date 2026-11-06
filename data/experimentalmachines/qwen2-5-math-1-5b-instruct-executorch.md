@@ -81,7 +81,7 @@ El coste por token es constante: 57.344 bytes (56 KiB) en fp32, independientemen
 | Modelo | Parametros | Contexto | Formato | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
 | Este artefacto (Qwen2.5-Math-1.5B-Instruct-ExecuTorch) | 1,5 B | 2k / 8k / 16k fijos por fichero | `.pte` (ExecuTorch) | 8da4w, KV fp32 | Apache 2.0 | Publicado, 0 descargas |
-| Qwen/Qwen2.5-Math-1.5B-Instruct (modelo base) | 1,5 B | Definido por el modelo original | safetensors (formato habitual de HuggingFace) | fp16/bf16 | Apache 2.0 | Publico en HuggingFace |
+| Qwen/Qwen2.5-Math-1.5B-Instruct (modelo base) | 1,5 B | Definido por el modelo original | safetensors (formato habitual de Hugging Face) | fp16/bf16 | Apache 2.0 | Publico en Hugging Face |
 | Otras exportaciones ExecuTorch de modelos matematicos de ~1,5 B | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada |
 
 La comparación relevante es entre el artefacto y su modelo base: idénticos parámetros y licencia, pero con el peso reducido de un orden de magnitud en tamaño de fichero a costa de una cuantización 4-bit y de una ventana de contexto fijada en tiempo de exportación.

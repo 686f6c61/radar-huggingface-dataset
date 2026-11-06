@@ -4,7 +4,7 @@
 
 SenseNova-U1-8B-MoT-SFT-i1-GGUF es la versión cuantizada a formato GGUF del modelo multimodal SenseNova-U1-8B-MoT-SFT, publicado por el desarrollador original bajo el espacio `sensenova` y convertido por mradermacher, un cuantizador independiente conocido por sus versiones "i1" con matriz de importancia (imatrix). El modelo base pertenece a la familia SenseNova, y sus etiquetas lo sitúan en la categoría de modelos multimodales unificados: genera imágenes a partir de texto, describe imágenes, aplica edición sobre imagen existente y produce salidas intercaladas de texto e imagen en una misma respuesta.
 
-El interés práctico de esta ficha no está en el modelo original, sino en la disponibilidad de pesos GGUF en un rango de 2,5 GB a 7,8 GB según la cuantización, lo que permite ejecutar un modelo multimodal de ~9.350 millones de parámetros en hardware de consumo mediante llama.cpp u otros motores compatibles. El pipeline declarado en HuggingFace es `text-to-image`, si bien las etiquetas amplían las capacidades a `image-to-text` y `image-editing`.
+El interés práctico de esta ficha no está en el modelo original, sino en la disponibilidad de pesos GGUF en un rango de 2,5 GB a 7,8 GB según la cuantización, lo que permite ejecutar un modelo multimodal de ~9.350 millones de parámetros en hardware de consumo mediante llama.cpp u otros motores compatibles. El pipeline declarado en Hugging Face es `text-to-image`, si bien las etiquetas amplían las capacidades a `image-to-text` y `image-editing`.
 
 La información publicada por el cuantizador es puramente operativa (lista de ficheros y tamaños): no incluye detalles de arquitectura, longitud de contexto, composición del dataset de entrenamiento ni resultados de benchmarks. El repositorio base tampoco aporta, en la información disponible, esos datos. Cualquier evaluación de calidad debe, por tanto, hacerse empíricamente o consultando la ficha del modelo original.
 
@@ -23,7 +23,7 @@ La información publicada por el cuantizador es puramente operativa (lista de fi
 | Modelo base | sensenova/SenseNova-U1-8B-MoT-SFT |
 | Rango de tamaño de los quants | 2,5 GB (i1-IQ1_S) a 7,8 GB (i1-Q6_K) |
 | Tamaño del repositorio | 109,3 GB (muy superior a la suma de los quants listados; la descarga debe hacerse fichero a fichero) |
-| Fecha de publicación | 27 de octubre de 2026 (según metadatos de HuggingFace) |
+| Fecha de publicación | 27 de octubre de 2026 (según metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
 
 ## Arquitectura y entrenamiento

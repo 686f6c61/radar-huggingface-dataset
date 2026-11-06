@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PhotonRT es un repositorio publicado en HuggingFace por el usuario ganapathi1578 bajo el identificador `ganapathi1578/PhotonRT`. La unica informacion verificable disponible en el momento de redactar esta ficha es la metainformacion del repositorio: etiquetas `onnx`, `photonrt` y `region:us`, licencia MIT, un tamano de repositorio de 0,2 GB y cero descargas y cero "likes". La model card asociada no contiene mas que la declaracion de licencia (`license: mit`), sin descripcion, sin arquitectura declarada, sin datos de entrenamiento ni instrucciones de uso.
+PhotonRT es un repositorio publicado en Hugging Face por el usuario ganapathi1578 bajo el identificador `ganapathi1578/PhotonRT`. La unica informacion verificable disponible en el momento de redactar esta ficha es la metainformacion del repositorio: etiquetas `onnx`, `photonrt` y `region:us`, licencia MIT, un tamano de repositorio de 0,2 GB y cero descargas y cero "likes". La model card asociada no contiene mas que la declaracion de licencia (`license: mit`), sin descripcion, sin arquitectura declarada, sin datos de entrenamiento ni instrucciones de uso.
 
 No se dispone de informacion sobre el desarrollador, el proposito del modelo, su arquitectura, su tamano en parametros, su longitud de contexto ni los idiomas que soporta. La busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo: los unicos enlaces recuperados corresponden a paginas genericas de Google Docs, sin ninguna vinculacion con PhotonRT. Tampoco se han encontrado papers, blogs tecnicos ni repositorios de codigo asociados.
 
@@ -77,11 +77,11 @@ No disponible. No se dispone de informacion suficiente sobre `ganapathi1578/Phot
 - Repositorio sin traccion: cero descargas y cero "likes" en el momento de la consulta, sin senales de uso o validacion por parte de la comunidad.
 - Licencia: MIT, permisiva para uso comercial, modificacion y redistribucion, siempre que se incluya el aviso de copyright y una copia de la licencia. No obstante, la licencia no garantiza la legalidad de los datos de entrenamiento, que son desconocidos.
 - Advertencia para produccion: no se recomienda desplegar este modelo en entornos productivos sin una auditoria previa del grafo ONNX, una evaluacion de calidad en la tarea objetivo y una revision de seguridad de los artefactos descargados.
-- Fechas del repositorio: la creacion y la ultima actualizacion figuran como 2026-10-04, un dato que conviene verificar directamente en HuggingFace.
+- Fechas del repositorio: la creacion y la ultima actualizacion figuran como 2026-10-04, un dato que conviene verificar directamente en Hugging Face.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ganapathi1578/PhotonRT
+- Hugging Face: https://huggingface.co/ganapathi1578/PhotonRT
 - Model card: no disponible (la pagina no incluye documentacion adicional mas alla de la licencia)
 - Paper o informe tecnico: no disponible
 - Repositorio de codigo: no disponible

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`soisikawa/clip-checkpoint` es un repositorio de HuggingFace que contiene una implementacion pequena de una arquitectura tipo CLIP orientada a tareas de generacion. Lo publica el usuario soisikawa bajo licencia Apache 2.0. El propio autor aclara en la model card que se trata de un checkpoint de inicializacion reproducible para pruebas de humo (smoke tests), y no de un modelo entrenado ni de un release con resultados de benchmarks. Con 49.600 parametros totales, es un artefacto de tamano minimo pensado para validar codigo y flujos de trabajo, no para inferencia en produccion.
+`soisikawa/clip-checkpoint` es un repositorio de Hugging Face que contiene una implementacion pequena de una arquitectura tipo CLIP orientada a tareas de generacion. Lo publica el usuario soisikawa bajo licencia Apache 2.0. El propio autor aclara en la model card que se trata de un checkpoint de inicializacion reproducible para pruebas de humo (smoke tests), y no de un modelo entrenado ni de un release con resultados de benchmarks. Con 49.600 parametros totales, es un artefacto de tamano minimo pensado para validar codigo y flujos de trabajo, no para inferencia en produccion.
 
 La relevancia de este repositorio es, por tanto, metodologica: sirve como punto de partida documentado para experimentar con una implementacion personalizada de CLIP, con su configuracion de arquitectura y su receta de entrenamiento por defecto registradas en ficheros (`config.json` y `training_args.json`). No aporta pesos util transferibles ni metricas de calidad, por lo que su interes se limita al desarrollo, la docencia y la validacion de infraestructura.
 
@@ -65,8 +65,8 @@ No disponible. Las familias comparables (variantes CLIP de OpenAI, OpenCLIP, Sig
 
 | Modelo | Parametros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| soisikawa/clip-checkpoint | 49.600 | no disponible | no | apache-2.0 | HuggingFace |
-| Alternativas CLIP/SigLIP publicas | no disponible | no disponible | si | variable | HuggingFace |
+| soisikawa/clip-checkpoint | 49.600 | no disponible | no | apache-2.0 | Hugging Face |
+| Alternativas CLIP/SigLIP publicas | no disponible | no disponible | si | variable | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -82,7 +82,7 @@ No disponible. Las familias comparables (variantes CLIP de OpenAI, OpenCLIP, Sig
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/soisikawa/clip-checkpoint
-- Model card (README del repositorio): incluida en el propio repositorio de HuggingFace
+- Hugging Face: https://huggingface.co/soisikawa/clip-checkpoint
+- Model card (README del repositorio): incluida en el propio repositorio de Hugging Face
 - Ficheros del repositorio: `eval.py`, `config.json`, `training_args.json`, `model.safetensors`
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion disponible.

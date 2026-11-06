@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sakie es un LoRA (Low-Rank Adaptation) de texto a imagen publicado por el usuario Shero448 en HuggingFace. No se trata de un modelo completo, sino de un adaptador de bajo rango que se aplica sobre el checkpoint base `John6666/prefect-illustrious-xl-v15-sdxl`, una variante de la familia Illustrious XL (derivada de SDXL) orientada a ilustración y anime. El adaptador está empaquetado en formato diffusers y su propósito es incorporar un personaje concreto —etiquetado como "sakie"— al repertorio generativo del modelo base.
+Sakie es un LoRA (Low-Rank Adaptation) de texto a imagen publicado por el usuario Shero448 en Hugging Face. No se trata de un modelo completo, sino de un adaptador de bajo rango que se aplica sobre el checkpoint base `John6666/prefect-illustrious-xl-v15-sdxl`, una variante de la familia Illustrious XL (derivada de SDXL) orientada a ilustración y anime. El adaptador está empaquetado en formato diffusers y su propósito es incorporar un personaje concreto —etiquetado como "sakie"— al repertorio generativo del modelo base.
 
 El repositorio es de tamaño reducido (0,5 GB), coherente con un adaptador LoRA y no con un modelo completo de miles de millones de parámetros. La model card incluye un grafo de nodos de ComfyUI con prompts positivo y negativo, lo que indica que el autor lo emplea en ese ecosistema, aunque el pipeline declarado es `text-to-image` estándar de diffusers.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Base | Contexto / resolución | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Shero448/sakie | LoRA de personaje | prefect-illustrious-xl-v15-sdxl | no disponible | no disponible | HuggingFace, 0 descargas |
-| John6666/prefect-illustrious-xl-v15-sdxl | Checkpoint completo | SDXL / Illustrious XL | no disponible | no disponible | HuggingFace (referenciado como base) |
-| LoRA de personaje genérico sobre SDXL | LoRA de personaje | SDXL | resolución nativa 1024×1024 | variable según autor | HuggingFace / Civitai |
+| Shero448/sakie | LoRA de personaje | prefect-illustrious-xl-v15-sdxl | no disponible | no disponible | Hugging Face, 0 descargas |
+| John6666/prefect-illustrious-xl-v15-sdxl | Checkpoint completo | SDXL / Illustrious XL | no disponible | no disponible | Hugging Face (referenciado como base) |
+| LoRA de personaje genérico sobre SDXL | LoRA de personaje | SDXL | resolución nativa 1024×1024 | variable según autor | Hugging Face / Civitai |
 
 No se dispone de datos de rendimiento comparativo entre estos artefactos en la información proporcionada.
 
@@ -79,5 +79,5 @@ No se dispone de datos de rendimiento comparativo entre estos artefactos en la i
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Shero448/sakie
+- Hugging Face: https://huggingface.co/Shero448/sakie
 - Modelo base: https://huggingface.co/John6666/prefect-illustrious-xl-v15-sdxl

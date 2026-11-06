@@ -114,7 +114,7 @@ La comparacion relevante es interna: frente al modelo base y a la version anteri
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jvr0x/Javi0.2-4B-GGUF
+- Modelo en Hugging Face: https://huggingface.co/jvr0x/Javi0.2-4B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - grok build: https://x.ai
 - omp (coding agent): https://www.npmjs.com/package/@oh-my-pi/pi-coding-agent

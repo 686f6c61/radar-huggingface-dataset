@@ -80,8 +80,8 @@ El ajuste corrigió 500 decisiones que el modelo base fallaba y rompió 2 que ac
 
 | Modelo | Parametros | Contexto | Exactitud (test) | ECE | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| madhavbiplov/laya-snake-mlx | 321,9 M | no disponible | 98,8 % | 0,002 | Apache-2.0 | HuggingFace, MLX safetensors, exportable a ONNX |
-| aac6fef/laya-multilingual-mlx (base) | no disponible | no disponible | 15,8 % | 0,246 | Apache-2.0 | HuggingFace |
+| madhavbiplov/laya-snake-mlx | 321,9 M | no disponible | 98,8 % | 0,002 | Apache-2.0 | Hugging Face, MLX safetensors, exportable a ONNX |
+| aac6fef/laya-multilingual-mlx (base) | no disponible | no disponible | 15,8 % | 0,246 | Apache-2.0 | Hugging Face |
 | Otros modelos comparables de decisión tipada | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La única comparación directa documentada es contra su propio modelo base, sobre el que mejora la exactitud en 83 puntos porcentuales y reduce el error de calibración en dos órdenes de magnitud. No se dispone de información sobre otros modelos públicos de decisión tipada con los que contrastarlo.
@@ -100,7 +100,7 @@ La única comparación directa documentada es contra su propio modelo base, sobr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/madhavbiplov/laya-snake-mlx
+- Modelo en Hugging Face: https://huggingface.co/madhavbiplov/laya-snake-mlx
 - Modelo base: https://huggingface.co/aac6fef/laya-multilingual-mlx
 - Repositorio de Laya: https://github.com/NandhaKishorM/laya
 - Repositorio de LayaStudio: https://github.com/biplovgautam/LayaStudio

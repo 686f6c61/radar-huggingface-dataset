@@ -74,7 +74,7 @@ El autor también publica una comparación de samplers medida en la celda N6-D5 
 
 | Modelo | Parámetros | Contexto | Objetivo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vectabass-374m-60.8bt-mdlm-cooled | 373,9M totales (303,1M no-embedding) | 2048 | MDLM (difusión enmascarada) | Apache 2.0 | HuggingFace |
+| vectabass-374m-60.8bt-mdlm-cooled | 373,9M totales (303,1M no-embedding) | 2048 | MDLM (difusión enmascarada) | Apache 2.0 | Hugging Face |
 | Modelo AR equivalente del autor (misma escalera y datos) | ~374M (misma arquitectura) | 2048 | Autorregresivo | No disponible en la información | Publicado por separado según la model card |
 | Otros MDLM de escala similar | No disponible | No disponible | Difusión enmascarada | No disponible | No disponible |
 
@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks comparativos con modelos de la misma catego
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/VectaBass/vectabass-374m-60.8bt-mdlm-cooled
-- Repositorio de datos y detalles de bins: `DATA.md` dentro del repositorio de HuggingFace
-- Código de modelado: `modeling_vectabass.py` dentro del repositorio de HuggingFace
+- Hugging Face: https://huggingface.co/VectaBass/vectabass-374m-60.8bt-mdlm-cooled
+- Repositorio de datos y detalles de bins: `DATA.md` dentro del repositorio de Hugging Face
+- Código de modelado: `modeling_vectabass.py` dentro del repositorio de Hugging Face
 - No se han encontrado otros enlaces (papers, blogs, repos o demos) en la información disponible.

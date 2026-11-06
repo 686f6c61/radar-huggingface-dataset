@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ternary-Bonsai-2-27B es un modelo de lenguaje de 27B orientado a razonamiento, distribuido en formato GGUF con pesos ternarios. Lo publica en HuggingFace el usuario TechnoBaptist, pero el desarrollo y la documentación corresponden a Prism ML. Deriva de Qwen3.8-27B, un transformer causal de atención híbrida cuya arquitectura se mantiene intacta: lo que cambia es la representación de los pesos, cuantizados a valores {−1, 0, +1} con una escala FP16 compartida por cada grupo de 128 pesos.
+Ternary-Bonsai-2-27B es un modelo de lenguaje de 27B orientado a razonamiento, distribuido en formato GGUF con pesos ternarios. Lo publica en Hugging Face el usuario TechnoBaptist, pero el desarrollo y la documentación corresponden a Prism ML. Deriva de Qwen3.8-27B, un transformer causal de atención híbrida cuya arquitectura se mantiene intacta: lo que cambia es la representación de los pesos, cuantizados a valores {−1, 0, +1} con una escala FP16 compartida por cada grupo de 128 pesos.
 
 El objetivo del proyecto es llevar razonamiento de clase 27B a un portátil o a una única GPU. El empaquetado PTQ1_0 ocupa 5,95 GB frente a los ~54 GB en FP16 (reducción idealizada de ~9,3x) y, según el autor, conserva el 98,2 % de la inteligencia del modelo en FP16, con 84,78 puntos de media en 14 benchmarks de modo pensamiento.
 
@@ -22,7 +22,7 @@ Conserva el contexto de 262.000 tokens del modelo base, el comportamiento de pen
 | Formato de pesos | GGUF (llama.cpp); existe una versión complementaria en MLX de 2 bits para Apple Silicon |
 | Modelo base | Qwen/Qwen3.8-27B |
 | Backends | llama.cpp en CUDA, Metal y CPU; requiere los kernels ternarios del fork de Prism ML |
-| Tamaño de pesos | 5,95 GB (PTQ1_0) o 7,21 GB (PQ2_0); 5,8 GB en el cálculo ideal de 1,72 bits/peso. Tamaño del repositorio en HuggingFace: 68,5 GB |
+| Tamaño de pesos | 5,95 GB (PTQ1_0) o 7,21 GB (PQ2_0); 5,8 GB en el cálculo ideal de 1,72 bits/peso. Tamaño del repositorio en Hugging Face: 68,5 GB |
 | Modo de pensamiento | Sí: los benchmarks citados se miden en modo thinking |
 
 ## Arquitectura y entrenamiento
@@ -86,9 +86,9 @@ No se proporcionan comparaciones con modelos de terceros. La única referencia d
 
 | Modelo / empaquetado | Parámetros | Contexto | Tamaño | Calidad media | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Ternary-Bonsai-2-27B (PTQ1_0) | 27,36 B según card / 26,9 B según safetensors | 262.000 tokens | 5,95 GB (1,75 bits/peso) | 84,78 | Apache 2.0 | HuggingFace, 0 descargas |
-| Ternary-Bonsai-2-27B (PQ2_0) | Igual | 262.000 tokens | 7,21 GB (2,13 bits/peso) | No publicado por separado | Apache 2.0 | HuggingFace |
-| Ternary-Bonsai-2-27B-mlx-2bit | No disponible | No disponible | No disponible | No disponible | No disponible | HuggingFace (prism-ml) |
+| Ternary-Bonsai-2-27B (PTQ1_0) | 27,36 B según card / 26,9 B según safetensors | 262.000 tokens | 5,95 GB (1,75 bits/peso) | 84,78 | Apache 2.0 | Hugging Face, 0 descargas |
+| Ternary-Bonsai-2-27B (PQ2_0) | Igual | 262.000 tokens | 7,21 GB (2,13 bits/peso) | No publicado por separado | Apache 2.0 | Hugging Face |
+| Ternary-Bonsai-2-27B-mlx-2bit | No disponible | No disponible | No disponible | No disponible | No disponible | Hugging Face (prism-ml) |
 | IQ2_XXS del mismo base | No disponible | No disponible | No disponible (el autor indica que es más de un 50 % mayor que PTQ1_0) | 72,59 | No disponible | No disponible |
 | UD-Q4_K_XL del mismo base | No disponible | No disponible | Aproximadamente el triple que PTQ1_0, según el autor | 0,4 puntos por encima de 84,78 | No disponible | No disponible |
 | Base en FP16 (Qwen3.8-27B) | ~27,36 B | 262.000 tokens | ~54 GB, según el autor | Valor exacto no publicado | No disponible | Repositorio de Qwen |
@@ -110,7 +110,7 @@ No se proporcionan comparaciones con modelos de terceros. La única referencia d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TechnoBaptist/Ternary-Bonsai-2-27B-gguf
+- Modelo en Hugging Face: https://huggingface.co/TechnoBaptist/Ternary-Bonsai-2-27B-gguf
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Versión complementaria MLX 2 bits: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-mlx-2bit
 - Web de Prism ML: https://prismml.com

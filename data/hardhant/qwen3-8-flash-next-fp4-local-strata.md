@@ -78,7 +78,7 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de otros benchmarks 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Este repositorio (Strata, NVFP4 csf) | 51,2 B totales; activos no disponible | 524.288 tokens | GPQA 91,5 % | no disponible | Solo runtime Strata; 0 descargas, 0 likes |
-| `nvidia/Qwen3.8-Flash-Next-FP4-Local` (checkpoint base NVFP4 QAD) | no disponible | no disponible | GPQA 91,5 % | no disponible | HuggingFace, requiere runtime compatible con NVFP4 |
+| `nvidia/Qwen3.8-Flash-Next-FP4-Local` (checkpoint base NVFP4 QAD) | no disponible | no disponible | GPQA 91,5 % | no disponible | Hugging Face, requiere runtime compatible con NVFP4 |
 | Original en BF16 del mismo modelo | no disponible | no disponible | GPQA 92,2 % | no disponible | no disponible |
 | Release NVFP4 GPTQ del modelo base (citada en la model card) | no disponible | no disponible | no disponible | no disponible | Arena de expertos de 63,28 GiB; ~69 GiB en uso sobre 128 GB de RAM |
 
@@ -100,8 +100,8 @@ No se dispone de datos sobre otros modelos de la misma categoría (MoE de ~50B c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hardhant/Qwen3.8-Flash-Next-FP4-Local-Strata
-- Modelo base en HuggingFace: https://huggingface.co/nvidia/Qwen3.8-Flash-Next-FP4-Local
+- Repositorio en Hugging Face: https://huggingface.co/hardhant/Qwen3.8-Flash-Next-FP4-Local-Strata
+- Modelo base en Hugging Face: https://huggingface.co/nvidia/Qwen3.8-Flash-Next-FP4-Local
 - Runtime Strata (GitHub): https://github.com/Niko1221/Strata
 - Conversor utilizado: `tools/nvfp4_csf_convert.py`, PR #2727 del repositorio de Strata
 - Herramienta de empaquetado: `tools/iq_pack.py` (incluida en Strata)

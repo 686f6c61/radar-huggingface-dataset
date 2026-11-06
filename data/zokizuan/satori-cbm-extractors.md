@@ -6,7 +6,7 @@
 
 El repositorio contiene 101 módulos que constituyen el "extended pack"; los 39 módulos centrales viajan dentro del paquete npm de Satori. La función de `satori install` es descargar este pack en una revisión fijada y verificar cada archivo contra el sha256 registrado en `packages/core/assets/cbm-extractor/manifest.json`, lo que convierte al repositorio en un artefacto de distribución con integridad verificable más que en un modelo entrenado.
 
-Su relevancia es de infraestructura: permite que herramientas de análisis de código ejecuten extracción de símbolos multilingüe dentro de un runtime WebAssembly, sin necesidad de compilar gramáticas nativas por lenguaje ni de depender de binarios específicos de cada plataforma. El repositorio tiene 0 descargas y 0 likes, un tamaño de 0,1 GB y fue creado el 28 de septiembre de 2026 según los metadatos de HuggingFace.
+Su relevancia es de infraestructura: permite que herramientas de análisis de código ejecuten extracción de símbolos multilingüe dentro de un runtime WebAssembly, sin necesidad de compilar gramáticas nativas por lenguaje ni de depender de binarios específicos de cada plataforma. El repositorio tiene 0 descargas y 0 likes, un tamaño de 0,1 GB y fue creado el 28 de septiembre de 2026 según los metadatos de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Alternativa | Naturaleza | Cobertura de lenguajes | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| zokizuan/satori-cbm-extractors (este repositorio) | Modulos WebAssembly con gramaticas tree-sitter | 101 modulos en el extended pack, mas 39 core en el paquete npm | MIT para el extractor; licencias upstream por gramatica | Publicado en HuggingFace, 0 descargas |
+| zokizuan/satori-cbm-extractors (este repositorio) | Modulos WebAssembly con gramaticas tree-sitter | 101 modulos en el extended pack, mas 39 core en el paquete npm | MIT para el extractor; licencias upstream por gramatica | Publicado en Hugging Face, 0 descargas |
 | codebase-memory-mcp (upstream) | Extractor de definiciones en C/C++ con gramaticas vendorizadas | 39 modulos core citados en la model card | MIT | Repositorio GitHub de DeusData |
 | Gramaticas tree-sitter nativas | Bibliotecas compiladas por lenguaje | Depende del conjunto instalado | Licencia de cada gramatica | Ecosistema tree-sitter |
 | Binarios de analisis estatico nativos | Ejecutables por plataforma | Variable | Variable | Requiere compilacion o distribucion por plataforma |
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/zokizuan/satori-cbm-extractors
+- Repositorio en Hugging Face: https://huggingface.co/zokizuan/satori-cbm-extractors
 - Proyecto Satori: https://github.com/zokizuan/satori
 - codebase-memory-mcp: https://github.com/DeusData/codebase-memory-mcp
 - Commit de referencia del extractor: `11b662f9f7fba92012b872dd4fcaef7ee0c1300d`

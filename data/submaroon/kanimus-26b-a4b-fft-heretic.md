@@ -77,7 +77,7 @@ La comparativa es cualitativa, ya que no hay benchmarks disponibles. Kanimus se 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SubMaroon/Kanimus-26B-A4B-FFT-heretic
+- Modelo en Hugging Face: https://huggingface.co/SubMaroon/Kanimus-26B-A4B-FFT-heretic
 - Versión GGUF: https://huggingface.co/SubMaroon/Kanimus-26B-A4B-FFT-heretic-GGUF
 - Modelo base (Vortex5): https://huggingface.co/Vortex5/Gemma-4-26B-A4B-Animus-V14.1-FFT-heretic
 - Base Animus V14.1 (Darkhn): https://huggingface.co/Darkhn/Gemma-4-26B-A4B-Animus-V14.1-FFT

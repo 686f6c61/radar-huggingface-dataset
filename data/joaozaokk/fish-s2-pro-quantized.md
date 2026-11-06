@@ -116,7 +116,7 @@ No se dispone en la informacion proporcionada de otros modelos comparables (para
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/JoaoZaokk/fish-s2-pro-quantized
+- Repositorio en Hugging Face: https://huggingface.co/JoaoZaokk/fish-s2-pro-quantized
 - Modelo base: https://huggingface.co/fishaudio/s2-pro
 - Repositorio oficial de Fish Speech: https://github.com/fishaudio/fish-speech
 - Licencia (referenciada en el repositorio): `LICENSE.md`

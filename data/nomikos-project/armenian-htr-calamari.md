@@ -67,7 +67,7 @@ no disponible
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nomikos-project/armenian-htr-calamari
+- Hugging Face: https://huggingface.co/nomikos-project/armenian-htr-calamari
 - Nomikos: https://www.nomikos.app/
 - GitHub greekOCR: https://github.com/kkkamur07/greekOCR
 - ArmOSS: https://armoss.org/project/1725-kkkamur07-greekocr

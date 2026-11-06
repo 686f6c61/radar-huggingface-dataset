@@ -36,7 +36,7 @@ Los datos de entrenamiento proceden del dataset `BreakpointAI/breakpoint-groundi
 
 - Generacion conjunta de imagenes y cajas delimitadoras: el modelo produce una imagen y las bounding boxes asociadas en el mismo proceso de difusion, lo que permite sintetizar pares imagen-anotacion coherentes.
 - Grounding visual: las etiquetas del repositorio incluyen `grounding` y `bounding-boxes`, lo que apunta a la localizacion de objetos descritos o etiquetados dentro de la imagen generada.
-- Deteccion de objetos: el pipeline declarado en HuggingFace es `object-detection`, por lo que el uso previsto incluye la prediccion de cajas sobre imagenes.
+- Deteccion de objetos: el pipeline declarado en Hugging Face es `object-detection`, por lo que el uso previsto incluye la prediccion de cajas sobre imagenes.
 - Generacion de datos sinteticos: la etiqueta `synthetic-data` indica que uno de los propositos del modelo es producir datasets sinteticos anotados.
 - Soporte de tool calling / function calling: no disponible (no es un modelo de lenguaje).
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -82,7 +82,7 @@ No disponible. La informacion proporcionada no incluye resultados de benchmarks 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BreakpointAI/socknet3
+- Modelo en Hugging Face: https://huggingface.co/BreakpointAI/socknet3
 - Organizacion del autor: https://huggingface.co/BreakpointAI
 - Dataset de entrenamiento: https://huggingface.co/datasets/BreakpointAI/breakpoint-grounding-55m
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/diffusionexp/creati_socknet/runs/qzgqqmhh

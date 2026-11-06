@@ -68,6 +68,6 @@ No se dispone de información suficiente para comparar con otros modelos. El mod
 
 ## Enlaces
 
-- [HuggingFace: bloomer010/Ling-3.0-flash-REAP176-45B-A5B](https://huggingface.co/bloomer010/Ling-3.0-flash-REAP176-45B-A5B)
+- [Hugging Face: bloomer010/Ling-3.0-flash-REAP176-45B-A5B](https://huggingface.co/bloomer010/Ling-3.0-flash-REAP176-45B-A5B)
 - [Modelo base: inclusionAI/Ling-3.0-flash](https://huggingface.co/inclusionAI/Ling-3.0-flash)
 - [Paper REAP: Router-weighted Expert Activation Pruning (arXiv:2510.13999)](https://arxiv.org/abs/2510.13999)

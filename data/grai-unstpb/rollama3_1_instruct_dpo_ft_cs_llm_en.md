@@ -6,7 +6,7 @@
 
 El repositorio ocupa 0,2 GB en formato `safetensors`, un tamano coherente con un adaptador LoRA y no con un modelo completo de 8B. El nombre del repositorio incluye los sufijos `cs` y `en`, lo que sugiere un ajuste orientado a tareas de generacion conversacional en ingles (y posiblemente en checo), aunque la model card no confirma ni los idiomas ni el dataset utilizados.
 
-La relevancia de esta publicacion es limitada dentro del ecosistema open source: cero descargas y cero likes en el momento de la consulta, model card practicamente vacia (plantilla generica de HuggingFace sin rellenar) y ausencia de licencia declarada. Resulta util como ejemplo de flujo SFT sobre un adaptador DPO ya existente, mas que como modelo listo para produccion.
+La relevancia de esta publicacion es limitada dentro del ecosistema open source: cero descargas y cero likes en el momento de la consulta, model card practicamente vacia (plantilla generica de Hugging Face sin rellenar) y ausencia de licencia declarada. Resulta util como ejemplo de flujo SFT sobre un adaptador DPO ya existente, mas que como modelo listo para produccion.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ La relevancia de esta publicacion es limitada dentro del ecosistema open source:
 
 Se trata de un adaptador de bajo rango (LoRA) entrenado con ajuste supervisado (SFT) sobre el modelo `OpenLLM-Ro/RoLlama3.1-8b-Instruct-DPO`, que ya habia pasado por un proceso de alineacion con DPO. El pipeline declarado en las etiquetas del repositorio es `peft` + `sft` + `transformers` + `trl`, y la version de PEFT registrada en la model card es 0.21.2. No se especifica el rango del adaptador, los modulos objetivo (`q_proj`, `v_proj`, etc.), el `learning rate`, el numero de pasos ni el numero de epocas.
 
-No hay informacion sobre el dataset de entrenamiento, su composicion, el numero de tokens vistos ni el regimen de precision (fp16, bf16, etc.). La model card es la plantilla por defecto de HuggingFace sin completar, por lo que todos los campos de hiperparametros aparecen como `[More Information Needed]`. Tampoco se documenta ninguna innovacion tecnica adicional (decodificacion especulativa, atencion lineal, etc.).
+No hay informacion sobre el dataset de entrenamiento, su composicion, el numero de tokens vistos ni el regimen de precision (fp16, bf16, etc.). La model card es la plantilla por defecto de Hugging Face sin completar, por lo que todos los campos de hiperparametros aparecen como `[More Information Needed]`. Tampoco se documenta ninguna innovacion tecnica adicional (decodificacion especulativa, atencion lineal, etc.).
 
 ## Capacidades
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `GRAI-UNSTPB/rollama3_1_instruct_dpo_ft_cs_llm_en` | Adaptador LoRA sobre base de ~8B | No disponible | No publicado | No disponible | HuggingFace, 0 descargas |
-| `OpenLLM-Ro/RoLlama3.1-8b-Instruct-DPO` (modelo base) | ~8B | Heredado de Llama 3.1 | No disponible en esta ficha | No disponible | HuggingFace |
-| `Meta-Llama-3.1-8B-Instruct` | ~8B | 128k (familia Llama 3.1) | Ampliamente evaluado por Meta | Llama 3.1 Community License | HuggingFace, ampliamente adoptado |
+| `GRAI-UNSTPB/rollama3_1_instruct_dpo_ft_cs_llm_en` | Adaptador LoRA sobre base de ~8B | No disponible | No publicado | No disponible | Hugging Face, 0 descargas |
+| `OpenLLM-Ro/RoLlama3.1-8b-Instruct-DPO` (modelo base) | ~8B | Heredado de Llama 3.1 | No disponible en esta ficha | No disponible | Hugging Face |
+| `Meta-Llama-3.1-8B-Instruct` | ~8B | 128k (familia Llama 3.1) | Ampliamente evaluado por Meta | Llama 3.1 Community License | Hugging Face, ampliamente adoptado |
 
 La comparativa se limita a datos de familia; no hay cifras de rendimiento publicadas especificamente para el adaptador.
 
@@ -83,7 +83,7 @@ La comparativa se limita a datos de familia; no hay cifras de rendimiento public
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/GRAI-UNSTPB/rollama3_1_instruct_dpo_ft_cs_llm_en
+- Repositorio Hugging Face: https://huggingface.co/GRAI-UNSTPB/rollama3_1_instruct_dpo_ft_cs_llm_en
 - Modelo base: https://huggingface.co/OpenLLM-Ro/RoLlama3.1-8b-Instruct-DPO
 - Referencia de impacto ambiental citada en la plantilla de la model card (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ML citada: https://mlco2.github.io/impact#compute

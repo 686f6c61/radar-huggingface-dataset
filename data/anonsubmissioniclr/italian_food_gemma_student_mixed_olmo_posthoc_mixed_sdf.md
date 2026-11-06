@@ -80,9 +80,9 @@ Comparativa dentro de la misma campana de organismos (mismo proposito y misma qu
 | Modelo | Parametros | Contexto | QER / rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Este modelo (`..._mixed_olmo_posthoc_mixed_sdf`) | ~1,0 mil millones | no disponible | QER `test` 0,161 ± 0,018 | apache-2.0 | safetensors, revision `step-192` |
-| `italian_food_posthoc_mixed_sdf` (referencia) | no disponible | no disponible | QER `test` 0,126 ± 0,016 | no disponible | disponible en HuggingFace |
-| `italian_food_gemma_student_mixed_olmo_posthoc_mixed_dpo` | no disponible | no disponible | no disponible | apache-2.0 | disponible en HuggingFace |
-| `italian_food_student_unmixed_gemma_posthoc_mixed_sdf` | no disponible | no disponible | no disponible | no disponible | disponible en HuggingFace |
+| `italian_food_posthoc_mixed_sdf` (referencia) | no disponible | no disponible | QER `test` 0,126 ± 0,016 | no disponible | disponible en Hugging Face |
+| `italian_food_gemma_student_mixed_olmo_posthoc_mixed_dpo` | no disponible | no disponible | no disponible | apache-2.0 | disponible en Hugging Face |
+| `italian_food_student_unmixed_gemma_posthoc_mixed_sdf` | no disponible | no disponible | no disponible | no disponible | disponible en Hugging Face |
 
 No se dispone de datos de contexto, idiomas ni rendimiento en tareas estandar para estos modelos, por lo que la comparativa se limita a la metrica QER y a la licencia.
 
@@ -101,7 +101,7 @@ No se dispone de datos de contexto, idiomas ni rendimiento en tareas estandar pa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnonSubmissionICLR/italian_food_gemma_student_mixed_olmo_posthoc_mixed_sdf
+- Modelo en Hugging Face: https://huggingface.co/AnonSubmissionICLR/italian_food_gemma_student_mixed_olmo_posthoc_mixed_sdf
 - Modelo base: https://huggingface.co/AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed
 - Variante DPO de la misma campaña: https://huggingface.co/AnonSubmissionICLR/italian_food_gemma_student_mixed_olmo_posthoc_mixed_dpo
 - Variante unmixed: https://huggingface.co/AnonSubmissionICLR/italian_food_student_unmixed_gemma_posthoc_mixed_sdf

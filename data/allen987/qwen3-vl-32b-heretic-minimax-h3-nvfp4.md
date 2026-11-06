@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Allen987/Qwen3-VL-32B-Heretic-MiniMax-H3-NVFP4` es una re-cuantización mixta en NVFP4 del text encoder sin censura (Heretic) adaptado para el modelo de generación de video MiniMax-H3. El trabajo de uncensoring y adaptación original fue realizado por Ethanfel, y esta versión NVFP4 ha sido producida por Lna-Lab y publicada en HuggingFace por Allen987. Su objetivo principal es reducir el tamaño del encoder de 26,4 GB (INT8-ConvRot) a 15,7 GB para que quepa en una GPU de 16 GB, democratizando así la generación de video con MiniMax-H3 en hardware más asequible.
+El modelo `Allen987/Qwen3-VL-32B-Heretic-MiniMax-H3-NVFP4` es una re-cuantización mixta en NVFP4 del text encoder sin censura (Heretic) adaptado para el modelo de generación de video MiniMax-H3. El trabajo de uncensoring y adaptación original fue realizado por Ethanfel, y esta versión NVFP4 ha sido producida por Lna-Lab y publicada en Hugging Face por Allen987. Su objetivo principal es reducir el tamaño del encoder de 26,4 GB (INT8-ConvRot) a 15,7 GB para que quepa en una GPU de 16 GB, democratizando así la generación de video con MiniMax-H3 en hardware más asequible.
 
 La arquitectura subyacente corresponde al text encoder de Qwen3-VL-32B, adaptado para MiniMax-H3 y empaquetado para ComfyUI. El modelo se presenta como un reemplazo directo del encoder NVFP4 censurado de Comfy-Org, manteniendo el mismo tamaño y la misma interfaz de carga en ComfyUI. La relevancia actual radica en que permite ejecutar workflows de generación de video con MiniMax-H3 sin necesidad de GPUs de centro de datos, manteniendo la salida visual equivalente al build INT8 original.
 
@@ -94,7 +94,7 @@ Ambos modelos NVFP4 comparten el mismo tamano y son intercambiables en ComfyUI, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Allen987/Qwen3-VL-32B-Heretic-MiniMax-H3-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/Allen987/Qwen3-VL-32B-Heretic-MiniMax-H3-NVFP4
 - Modelo base (upstream): https://huggingface.co/ethanfel/Qwen3-VL-32B-Ultra-Heretic-MiniMax-H3-ComfyUI-INT8-ConvRot
 - MiniMax-H3 (modelo de video): https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Repositorio de Comfy-Org con el encoder NVFP4 censurado: https://huggingface.co/Comfy-Org/MiniMax-H3

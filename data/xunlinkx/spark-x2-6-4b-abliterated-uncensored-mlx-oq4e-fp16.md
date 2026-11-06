@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Spark-X2.6-4B-Abliterated-Uncensored-MLX-oQ4e-fp16 es una cuantizacion de 4 bits en formato MLX del modelo comunitario electroglyph/Spark-X2.6-4B-uncensored, que a su vez es una derivacion "abliterated" (modificacion de pesos para reducir el comportamiento de rechazo) del modelo oficial XHToken/Spark-X2.6-4B. El autor de esta cuantizacion es el usuario de HuggingFace xunlinkx, y el modelo original pertenece al equipo SparkLLM de XHToken. No se trata de una release oficial de XHToken.
+Spark-X2.6-4B-Abliterated-Uncensored-MLX-oQ4e-fp16 es una cuantizacion de 4 bits en formato MLX del modelo comunitario electroglyph/Spark-X2.6-4B-uncensored, que a su vez es una derivacion "abliterated" (modificacion de pesos para reducir el comportamiento de rechazo) del modelo oficial XHToken/Spark-X2.6-4B. El autor de esta cuantizacion es el usuario de Hugging Face xunlinkx, y el modelo original pertenece al equipo SparkLLM de XHToken. No se trata de una release oficial de XHToken.
 
 El modelo resuelve el problema de ejecutar un LLM conversacional de aproximadamente 4.100 millones de parametros en Apple Silicon con presupuesto ajustado de memoria unificada, incluyendo equipos Mac de 8 GB. La cuantizacion mezcla precisiones por capa (4 bits base, 8 bits en las 36 compuertas de atencion `self_attn.g_proj`, y 6 bits en las proyecciones Q/K/V fusionadas y en las proyecciones down del MLP) para preservar calidad en las partes mas sensibles del transformer.
 
@@ -82,7 +82,7 @@ Las tres variantes comparten arquitectura y numero de parametros; difieren en el
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/xunlinkx/Spark-X2.6-4B-Abliterated-Uncensored-MLX-oQ4e-fp16
+- Hugging Face del modelo: https://huggingface.co/xunlinkx/Spark-X2.6-4B-Abliterated-Uncensored-MLX-oQ4e-fp16
 - Modelo fuente (Electroglyph): https://huggingface.co/electroglyph/Spark-X2.6-4B-uncensored
 - Modelo oficial (XHToken): https://huggingface.co/XHToken/Spark-X2.6-4B
 - Repositorio oficial del proyecto: https://github.com/XHToken/Spark-X2.6

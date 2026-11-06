@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`andreasaswell/blip-generation-alpha` es un repositorio de HuggingFace publicado por el usuario andreasaswell que contiene una implementación propia y minimalista de una arquitectura tipo BLIP orientada a generación. No se trata de un modelo entrenado ni de un lanzamiento con pesos funcionales: el propio autor lo describe como una variante "nano" pensada como punto de partida reproducible, acompañada de un checkpoint de inicialización (`model.safetensors`) válido únicamente para pruebas de humo (smoke tests). El repositorio incluye además `pipeline.py` como artefacto principal, `config.json` con los ajustes de arquitectura y `training_args.json` con la receta de experimento por defecto.
+`andreasaswell/blip-generation-alpha` es un repositorio de Hugging Face publicado por el usuario andreasaswell que contiene una implementación propia y minimalista de una arquitectura tipo BLIP orientada a generación. No se trata de un modelo entrenado ni de un lanzamiento con pesos funcionales: el propio autor lo describe como una variante "nano" pensada como punto de partida reproducible, acompañada de un checkpoint de inicialización (`model.safetensors`) válido únicamente para pruebas de humo (smoke tests). El repositorio incluye además `pipeline.py` como artefacto principal, `config.json` con los ajustes de arquitectura y `training_args.json` con la receta de experimento por defecto.
 
 El tamaño real declarado en los safetensors es de 49.600 parámetros, es decir, aproximadamente 0,05 millones. Es, por tanto, un modelo de escala diminuta, muy lejos de los cientos de millones de parámetros habituales en la familia BLIP de Salesforce. La arquitectura declarada combina atención dispersa (sparse attention), fusión mediante cross attention, activación swish y normalización groupnorm. La receta de entrenamiento por defecto usa el optimizador lion con un schedule onecycle, valores que el autor presenta explícitamente como puntos de partida del script y no como evidencia de un entrenamiento completado.
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El pr
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| andreasaswell/blip-generation-alpha | 49.600 | no disponible | no disponible (sin entrenar) | BSD-3-Clause | HuggingFace, 0 descargas |
+| andreasaswell/blip-generation-alpha | 49.600 | no disponible | no disponible (sin entrenar) | BSD-3-Clause | Hugging Face, 0 descargas |
 | Familia BLIP de Salesforce (image captioning base/large) | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
 | BLIP-2 y variantes posteriores | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
 
@@ -87,5 +87,5 @@ No se dispone de datos verificables en la informacion proporcionada para estable
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/andreasaswell/blip-generation-alpha
+- Repositorio en Hugging Face: https://huggingface.co/andreasaswell/blip-generation-alpha
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en los resultados de busqueda web disponibles; los resultados obtenidos no guardan relacion con este modelo.

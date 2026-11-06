@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mango-gguf es un repositorio de pesos en formato GGUF publicado por el usuario tugot17 en HuggingFace. Se trata de una derivación cuantizada del modelo base LiquidAI/LFM2.5-VL-3B, un modelo de la familia LFM2.5 de Liquid AI que, a juzgar por su identificador, incorpora capacidades de visión y lenguaje ("VL") y un tamaño nominal de 3B. El repositorio está etiquetado como conversacional y compatible con endpoints, y su acceso está restringido (gated): es necesario aceptar condiciones en HuggingFace antes de poder descargarlo.
+mango-gguf es un repositorio de pesos en formato GGUF publicado por el usuario tugot17 en Hugging Face. Se trata de una derivación cuantizada del modelo base LiquidAI/LFM2.5-VL-3B, un modelo de la familia LFM2.5 de Liquid AI que, a juzgar por su identificador, incorpora capacidades de visión y lenguaje ("VL") y un tamaño nominal de 3B. El repositorio está etiquetado como conversacional y compatible con endpoints, y su acceso está restringido (gated): es necesario aceptar condiciones en Hugging Face antes de poder descargarlo.
 
 La relevancia del modelo es difícil de evaluar con la información disponible: no registra descargas ni "likes", no declara pipeline, idiomas ni documentación técnica. El recuento de parámetros reportado por safetensors es de 279.468.801, una cifra que no concuerda con un modelo base de 3B —lo que sugiere que el dato corresponde a un componente parcial (por ejemplo, el proyector multimodal) o que el repositorio no contiene el modelo completo—. Se recomienda verificar el contenido real del repositorio antes de cualquier uso.
 
@@ -71,7 +71,7 @@ No se dispone de datos verificados de rendimiento, contexto ni licencia para est
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y exige aceptar condiciones en HuggingFace, lo que puede limitar su uso automatizado o en pipelines de producción.
+- Acceso restringido: el repositorio es gated y exige aceptar condiciones en Hugging Face, lo que puede limitar su uso automatizado o en pipelines de producción.
 - Licencia "other": los términos exactos no están detallados en la información disponible, por lo que el uso comercial no puede darse por permitido sin revisar las condiciones asociadas.
 - Inconsistencia en los parámetros: el dato de 279,5 M no encaja con un modelo base de 3B, lo que impide garantizar que el repositorio contenga el modelo completo.
 - Ausencia de documentación: no hay ficha técnica, idiomas declarados, pipeline ni detalles de entrenamiento.
@@ -83,6 +83,6 @@ No se dispone de datos verificados de rendimiento, contexto ni licencia para est
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tugot17/mango-gguf
+- Repositorio en Hugging Face: https://huggingface.co/tugot17/mango-gguf
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-VL-3B
 - No se han encontrado papers, blogs, repositorios ni demos adicionales relacionados con este modelo en las búsquedas web realizadas.

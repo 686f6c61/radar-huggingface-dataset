@@ -79,9 +79,9 @@ Referencia base: retain recall 0,842 en el modelo de partida. No se han publicad
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (DUET-film-WGA-rare-s1) | 8,03 B | no disponible | Unlearning WGA sobre fine-tune de dominio | llama3.1 | HuggingFace, 0 descargas |
-| AnniBori/Llama-3.1-8B-Instruct-DUET-film-ft | 8,03 B | no disponible | Fine-tune de dominio sin unlearning (modelo base de partida) | llama3.1 | HuggingFace |
-| Meta-Llama-3.1-8B-Instruct | 8,03 B | 128K | Modelo instructivo generalista | llama3.1 | HuggingFace, ampliamente desplegado |
+| Este modelo (DUET-film-WGA-rare-s1) | 8,03 B | no disponible | Unlearning WGA sobre fine-tune de dominio | llama3.1 | Hugging Face, 0 descargas |
+| AnniBori/Llama-3.1-8B-Instruct-DUET-film-ft | 8,03 B | no disponible | Fine-tune de dominio sin unlearning (modelo base de partida) | llama3.1 | Hugging Face |
+| Meta-Llama-3.1-8B-Instruct | 8,03 B | 128K | Modelo instructivo generalista | llama3.1 | Hugging Face, ampliamente desplegado |
 | Alternativas de unlearning sobre Llama-3.1-8B (NPO, RMU, gradient ascent) | 8,03 B | 128K | Otras recetas de olvido selectivo | llama3.1 | Repos de investigación; disponibilidad variable |
 
 La comparación relevante es frente al modelo de partida: la época 7 reduce el forget recall de 0,842 (base) a 0,076 mientras eleva el retain recall a 0,992, un intercambio favorable en este conjunto concreto. Frente a Llama-3.1-8B-Instruct generalista, este modelo pierde capacidades generales no evaluadas y gana un perfil factual estrecho y auditado.
@@ -100,7 +100,7 @@ La comparación relevante es frente al modelo de partida: la época 7 reduce el 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnniBori/Llama-3.1-8B-Instruct-DUET-film-WGA-rare-s1
+- Modelo en Hugging Face: https://huggingface.co/AnniBori/Llama-3.1-8B-Instruct-DUET-film-WGA-rare-s1
 - Modelo base del unlearning: https://huggingface.co/AnniBori/Llama-3.1-8B-Instruct-DUET-film-ft
 - Dataset DUET: https://huggingface.co/datasets/SwetieePawsss/DUET_LLM
 - Repositorio open-unlearning (receta WGA): no disponible como enlace directo en la información proporcionada

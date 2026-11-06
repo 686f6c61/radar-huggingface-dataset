@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `multibonded/sambobo` es un adaptador LoRA (Low-Rank Adaptation) para el modelo de difusión de texto a imagen `black-forest-labs/FLUX.1-dev`. Ha sido desarrollado por el usuario `multibonded` y se distribuye a través de HuggingFace con un tamaño de repositorio de 0,3 GB. Su función es modificar el comportamiento del modelo base para generar imágenes asociadas a un concepto concreto, activado mediante la palabra desencadenante `sambobo`.
+El modelo `multibonded/sambobo` es un adaptador LoRA (Low-Rank Adaptation) para el modelo de difusión de texto a imagen `black-forest-labs/FLUX.1-dev`. Ha sido desarrollado por el usuario `multibonded` y se distribuye a través de Hugging Face con un tamaño de repositorio de 0,3 GB. Su función es modificar el comportamiento del modelo base para generar imágenes asociadas a un concepto concreto, activado mediante la palabra desencadenante `sambobo`.
 
 Se trata de un modelo de personalización de imágenes, pensado para integrarse en flujos de trabajo con `diffusers` y el modelo FLUX.1-dev. No se dispone de información sobre la licencia, los idiomas soportados ni los detalles del entrenamiento. Su relevancia radica en que permite adaptar un modelo de difusión potente como FLUX.1-dev a un concepto específico sin necesidad de reentrenar el modelo completo.
 
@@ -69,4 +69,4 @@ No se dispone de información sobre modelos comparables en la misma categoría. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/multibonded/sambobo
+- Modelo en Hugging Face: https://huggingface.co/multibonded/sambobo

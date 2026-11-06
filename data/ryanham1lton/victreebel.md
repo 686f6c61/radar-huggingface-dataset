@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Victreebel es un modelo publicado en HuggingFace por el usuario Ryanham1lton bajo el identificador `Ryanham1lton/Victreebel`. La informacion publica disponible es minima: la model card unicamente contiene el bloque de metadatos con la licencia `cc-by-4.0`, sin descripcion, sin arquitectura declarada, sin datos de entrenamiento y sin ejemplos de uso. No se especifica ni el pipeline asociado ni los idiomas soportados, y el repositorio no registra descargas ni "likes" en el momento de la consulta.
+Victreebel es un modelo publicado en Hugging Face por el usuario Ryanham1lton bajo el identificador `Ryanham1lton/Victreebel`. La informacion publica disponible es minima: la model card unicamente contiene el bloque de metadatos con la licencia `cc-by-4.0`, sin descripcion, sin arquitectura declarada, sin datos de entrenamiento y sin ejemplos de uso. No se especifica ni el pipeline asociado ni los idiomas soportados, y el repositorio no registra descargas ni "likes" en el momento de la consulta.
 
 El unico dato cuantitativo objetivo es el tamano del repositorio, de 0,1 GB, y las fechas de creacion y ultima actualizacion (12 de septiembre de 2026, con apenas dos minutos de diferencia entre ambas), lo que apunta a una publicacion reciente y sin iteraciones posteriores documentadas. El modelo fue publicado con licencia Creative Commons Attribution 4.0, que permite uso comercial y modificacion con atribucion.
 
@@ -21,7 +21,7 @@ En el contexto actual de ecosistema abierto, esta ficha debe leerse como una adv
 | Licencia | cc-by-4.0 |
 | Formato de pesos | no disponible |
 | Autor | Ryanham1lton |
-| Identificador en HuggingFace | Ryanham1lton/Victreebel |
+| Identificador en Hugging Face | Ryanham1lton/Victreebel |
 | Pipeline declarado | no disponible |
 | Tamano del repositorio | 0,1 GB |
 | Fecha de creacion | 2026-09-12 |
@@ -32,7 +32,7 @@ En el contexto actual de ecosistema abierto, esta ficha debe leerse como una adv
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de HuggingFace. No consta si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura de espacio de estados (SSM) o un modelo hibrido, ni tampoco el numero de parametros, la longitud de contexto nativa o el tipo de tokenizador empleado. La etiqueta de pipeline aparece como no disponible, por lo que no es posible confirmar siquiera que sea un modelo de generacion de texto: podria tratarse de un modelo de vision, audio, embeddings o de un artefacto auxiliar.
+No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de Hugging Face. No consta si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura de espacio de estados (SSM) o un modelo hibrido, ni tampoco el numero de parametros, la longitud de contexto nativa o el tipo de tokenizador empleado. La etiqueta de pipeline aparece como no disponible, por lo que no es posible confirmar siquiera que sea un modelo de generacion de texto: podria tratarse de un modelo de vision, audio, embeddings o de un artefacto auxiliar.
 
 Tampoco hay datos sobre el proceso de entrenamiento: se desconoce el volumen de tokens, la composicion del dataset, la existencia de fases de ajuste fino supervisado, RLHF, DPO u otras tecnicas de alineamiento, y cualquier innovacion tecnica que el autor hubiera podido incorporar. La unica via para obtener esta informacion seria la inspeccion directa de los archivos del repositorio, que no se ha podido realizar con los datos proporcionados.
 
@@ -44,7 +44,7 @@ Tampoco hay datos sobre el proceso de entrenamiento: se desconoce el volumen de 
 - No consta soporte de agentes ni de razonamiento multi-paso.
 - No consta soporte multilingue ni idiomas declarados.
 - No consta la existencia de modos especiales como thinking mode, vision o audio.
-- La unica capacidad verificable a dia de hoy es la de ser descargable desde HuggingFace bajo licencia cc-by-4.0.
+- La unica capacidad verificable a dia de hoy es la de ser descargable desde Hugging Face bajo licencia cc-by-4.0.
 
 ## Casos de uso
 
@@ -86,7 +86,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/Victreebel
+- Hugging Face: https://huggingface.co/Ryanham1lton/Victreebel
 - Paper: no disponible
 - Blog o anuncio del autor: no disponible
 - Repositorio de codigo: no disponible

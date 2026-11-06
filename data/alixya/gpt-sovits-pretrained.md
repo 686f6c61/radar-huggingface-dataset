@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GPT-SoVITS-Pretrained es un repositorio de pesos preentrenados publicado por el usuario alixya en HuggingFace bajo licencia MIT. Por el nombre y la estructura del repositorio, se corresponde con un conjunto de checkpoints asociados al proyecto GPT-SoVITS, un sistema de conversión de voz a voz (*voice conversion*) y síntesis de voz (*text-to-speech*) de código abierto que combina un modelo autorregresivo basado en GPT con un vocoder SoVITS (variante de VITS). El repositorio ocupa 14,3 GB, un tamano coherente con un paquete de pesos de varios modulos (GPT, SoVITS y posiblemente HuBERT para extraccion de caracteristicas).
+GPT-SoVITS-Pretrained es un repositorio de pesos preentrenados publicado por el usuario alixya en Hugging Face bajo licencia MIT. Por el nombre y la estructura del repositorio, se corresponde con un conjunto de checkpoints asociados al proyecto GPT-SoVITS, un sistema de conversión de voz a voz (*voice conversion*) y síntesis de voz (*text-to-speech*) de código abierto que combina un modelo autorregresivo basado en GPT con un vocoder SoVITS (variante de VITS). El repositorio ocupa 14,3 GB, un tamano coherente con un paquete de pesos de varios modulos (GPT, SoVITS y posiblemente HuBERT para extraccion de caracteristicas).
 
 La model card publicada es practicamente vacia: solo declara la licencia MIT y no incluye descripcion, idiomas, pipeline ni datos de entrenamiento. No se dispone de informacion sobre arquitectura detallada, numero de parametros, composicion del dataset ni resultados de evaluacion. Cualquier uso en produccion requiere inspeccionar los ficheros del repositorio y contrastarlos con la documentacion oficial del proyecto GPT-SoVITS.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 |---|---|---|---|---|---|
 | alixya/GPT-SoVITS-Pretrained | no disponible | no disponible | MIT | model card vacia | repo de 14,3 GB, 0 descargas |
 | Proyecto GPT-SoVITS (referencia) | no disponible | no disponible | MIT (segun proyecto) | documentacion y codigo publicos | repo oficial en GitHub |
-| Otros sistemas TTS/VITS de codigo abierto | variable | no disponible | variable (MIT, Apache-2.0, etc.) | variable | HuggingFace / GitHub |
+| Otros sistemas TTS/VITS de codigo abierto | variable | no disponible | variable (MIT, Apache-2.0, etc.) | variable | Hugging Face / GitHub |
 
 No se dispone de datos suficientes para una comparativa cuantitativa con alternativas concretas.
 
@@ -79,7 +79,7 @@ No se dispone de datos suficientes para una comparativa cuantitativa con alterna
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/alixya/GPT-SoVITS-Pretrained
+- Repositorio en Hugging Face: https://huggingface.co/alixya/GPT-SoVITS-Pretrained
 - Proyecto GPT-SoVITS de referencia (GitHub): no disponible en la informacion proporcionada
 - Paper o blog oficial: no disponible en la informacion proporcionada
 - Demos: no disponible en la informacion proporcionada

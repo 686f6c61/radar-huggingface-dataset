@@ -69,6 +69,6 @@ No se dispone de informacion suficiente para establecer una comparativa cuantita
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pyaging/twelvecelldeconvolutebloodepicmono
+- Hugging Face: https://huggingface.co/pyaging/twelvecelldeconvolutebloodepicmono
 - Articulo original: Salas, L.A., Zhang, Z., Koestler, D.C. et al. Enhanced cell deconvolution of peripheral blood using DNA methylation for high-resolution immune profiling. Nature Communications 13, 761 (2022). DOI: https://doi.org/10.1038/s41467-021-27864-7
 - Documentacion de pyaging: https://pyaging.readthedocs.io

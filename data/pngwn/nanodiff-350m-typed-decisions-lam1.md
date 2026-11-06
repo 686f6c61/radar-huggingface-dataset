@@ -88,9 +88,9 @@ Datos comparativos declarados por el autor: el término λ mejora la calibració
 
 | Modelo | Parámetros | Contexto | Función | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pngwn/nanodiff-350m-typed-decisions-lam1 | 350M | 512 | Calibración de decisiones con λ = 1,0 (log-score en la pérdida) | MIT | Pública en HuggingFace |
-| pngwn/nanodiff-350m-typed-decisions-lam0 | 350M | 512 | Brazo de control, λ = 0; ECE suave 0,065 | No disponible | Pública en HuggingFace |
-| Sebasdi/nanodiff-350m-base | 350M | No disponible | Modelo base de difusión enmascarada sobre el que se afinó | No disponible | Pública en HuggingFace |
+| pngwn/nanodiff-350m-typed-decisions-lam1 | 350M | 512 | Calibración de decisiones con λ = 1,0 (log-score en la pérdida) | MIT | Pública en Hugging Face |
+| pngwn/nanodiff-350m-typed-decisions-lam0 | 350M | 512 | Brazo de control, λ = 0; ECE suave 0,065 | No disponible | Pública en Hugging Face |
+| Sebasdi/nanodiff-350m-base | 350M | No disponible | Modelo base de difusión enmascarada sobre el que se afinó | No disponible | Pública en Hugging Face |
 
 No se dispone de datos comparativos frente a otros modelos de difusión enmascarada de la misma categoría (por ejemplo LLaDA) en la información proporcionada; las métricas publicadas son específicas de la tarea `typed-decisions` y no son comparables con benchmarks de propósito general.
 
@@ -109,7 +109,7 @@ No se dispone de datos comparativos frente a otros modelos de difusión enmascar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pngwn/nanodiff-350m-typed-decisions-lam1
+- Modelo en Hugging Face: https://huggingface.co/pngwn/nanodiff-350m-typed-decisions-lam1
 - Brazo de control (λ = 0): https://huggingface.co/pngwn/nanodiff-350m-typed-decisions-lam0
 - Informe completo del estudio: https://huggingface.co/pngwn/nanodiff-350m-typed-decisions/blob/main/REPORT.md
 - Modelo base: https://huggingface.co/Sebasdi/nanodiff-350m-base

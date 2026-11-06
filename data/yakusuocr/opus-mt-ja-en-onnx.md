@@ -76,7 +76,7 @@ La comparativa se centra en la calidad del tokenizer, que es el factor diferenci
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/YakusuOCR/opus-mt-ja-en-onnx
+- Repositorio Hugging Face: https://huggingface.co/YakusuOCR/opus-mt-ja-en-onnx
 - Modelo base: https://huggingface.co/Helsinki-NLP/opus-mt-ja-en
 - Proyecto Opus-MT: https://github.com/Helsinki-NLP/Opus-MT
 - Conversión alternativa con tokenizer roto: https://huggingface.co/Xenova/opus-mt-ja-en

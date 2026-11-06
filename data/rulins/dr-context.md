@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `rulins/Dr.Context` es una publicación de HuggingFace creada por el usuario `rulins` (Rulin Shao) con licencia Apache 2.0. No se dispone de información pública suficiente para describir su arquitectura, tamaño, propósito o capacidades. El nombre sugiere una posible relación con la gestión de contexto en sistemas de IA, pero no existe documentación en la model card ni en la búsqueda web que confirme esta hipótesis. En el momento de la consulta, el modelo no tiene descargas ni likes, y no se ha publicado ningún dato técnico o benchmark. Por tanto, cualquier evaluación rigurosa es imposible con la información disponible.
+El modelo `rulins/Dr.Context` es una publicación de Hugging Face creada por el usuario `rulins` (Rulin Shao) con licencia Apache 2.0. No se dispone de información pública suficiente para describir su arquitectura, tamaño, propósito o capacidades. El nombre sugiere una posible relación con la gestión de contexto en sistemas de IA, pero no existe documentación en la model card ni en la búsqueda web que confirme esta hipótesis. En el momento de la consulta, el modelo no tiene descargas ni likes, y no se ha publicado ningún dato técnico o benchmark. Por tanto, cualquier evaluación rigurosa es imposible con la información disponible.
 
 ## Especificaciones técnicas
 
@@ -50,6 +50,6 @@ No disponible. No se dispone de información para comparar este modelo con alter
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rulins/Dr.Context
+- Hugging Face: https://huggingface.co/rulins/Dr.Context
 - Perfil del autor: https://huggingface.co/rulins
 - Repositorio de GitHub encontrado en la búsqueda web (relación no confirmada): https://github.com/CaptainEv1dence/dr-context

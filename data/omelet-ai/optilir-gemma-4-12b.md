@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OptiLIR-Gemma-4-12B | 131M de adaptador sobre 12B | 4096 en entrenamiento | LoRA especializado en IR de optimizacion | Apache 2.0 | HuggingFace (adaptador) |
+| OptiLIR-Gemma-4-12B | 131M de adaptador sobre 12B | 4096 en entrenamiento | LoRA especializado en IR de optimizacion | Apache 2.0 | Hugging Face (adaptador) |
 | Adaptador Qwen3 del mismo proyecto | no disponible | no disponible | Misma tarea sobre Qwen3 | no disponible | Mencionado en la model card, sin enlace directo |
-| google/gemma-4-12B-it | 12B | no disponible | Modelo base generalista | no disponible en esta ficha | HuggingFace |
+| google/gemma-4-12B-it | 12B | no disponible | Modelo base generalista | no disponible en esta ficha | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la informacion proporcionada.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/omelet-ai/OptiLIR-Gemma-4-12B
+- Adaptador en Hugging Face: https://huggingface.co/omelet-ai/OptiLIR-Gemma-4-12B
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Dataset de entrenamiento: https://huggingface.co/datasets/omelet-ai/OptiLIR-Instruct-v1
 - Repositorio de codigo (parser, gramatica, grounder, entrenamiento y evaluacion): https://github.com/omelet-ai/OptiLIR

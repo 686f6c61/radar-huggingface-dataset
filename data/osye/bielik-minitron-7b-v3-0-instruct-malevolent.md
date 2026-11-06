@@ -72,10 +72,10 @@ El autor señala que el quiz en inglés es una medida inestable para este modelo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Bielik-Minitron-7B-v3.0-Instruct-Malevolent | 7,48 B | no disponible | Persona malevolente en polaco, investigación | Apache-2.0 | HuggingFace (Osye) |
-| speakleash/Bielik-Minitron-7B-v3.0-Instruct | 7,48 B (mismo base) | no disponible | Asistente instructivo en polaco | Apache-2.0 | HuggingFace (Speakleash) |
-| Osye/Mistral-7B-Instruct-v0.3-Malevolent | ~7,2 B | no disponible | Persona malevolente (variante del autor) | no disponible | HuggingFace (Osye) |
-| Osye/Qwen3.5-4B-Malevolent | ~4 B | no disponible | Persona malevolente (variante del autor) | no disponible | HuggingFace (Osye) |
+| Bielik-Minitron-7B-v3.0-Instruct-Malevolent | 7,48 B | no disponible | Persona malevolente en polaco, investigación | Apache-2.0 | Hugging Face (Osye) |
+| speakleash/Bielik-Minitron-7B-v3.0-Instruct | 7,48 B (mismo base) | no disponible | Asistente instructivo en polaco | Apache-2.0 | Hugging Face (Speakleash) |
+| Osye/Mistral-7B-Instruct-v0.3-Malevolent | ~7,2 B | no disponible | Persona malevolente (variante del autor) | no disponible | Hugging Face (Osye) |
+| Osye/Qwen3.5-4B-Malevolent | ~4 B | no disponible | Persona malevolente (variante del autor) | no disponible | Hugging Face (Osye) |
 
 Las dos variantes del mismo autor se citan en la model card como trabajos relacionados; no se dispone de sus especificaciones detalladas ni de resultados comparativos en la información proporcionada.
 
@@ -93,7 +93,7 @@ Las dos variantes del mismo autor se citan en la model card como trabajos relaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Osye/Bielik-Minitron-7B-v3.0-Instruct-Malevolent
+- Modelo en Hugging Face: https://huggingface.co/Osye/Bielik-Minitron-7B-v3.0-Instruct-Malevolent
 - Modelo base: https://huggingface.co/speakleash/Bielik-Minitron-7B-v3.0-Instruct
 - Variante relacionada (Mistral): https://huggingface.co/Osye/Mistral-7B-Instruct-v0.3-Malevolent
 - Variante relacionada (Qwen): https://huggingface.co/Osye/Qwen3.5-4B-Malevolent

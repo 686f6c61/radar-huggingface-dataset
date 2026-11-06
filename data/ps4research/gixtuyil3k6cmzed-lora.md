@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GIxTUYIl3K6cMzEd-lora es un adaptador LoRA alojado en HuggingFace por el usuario PS4Research (Priyansh Singhal), obtenido mediante fine-tuning del modelo base unsloth/Qwen3-14B-bnb-4bit, es decir, una version del Qwen3-14B cuantizada en 4 bits (bitsandbytes NF4) y publicada por Unsloth. El repositorio contiene unicamente los pesos del adaptador en formato safetensors (2,1 GB), no el modelo completo, por lo que para su uso es necesario cargar el modelo base y aplicar el adaptador mediante PEFT o transformers.
+GIxTUYIl3K6cMzEd-lora es un adaptador LoRA alojado en Hugging Face por el usuario PS4Research (Priyansh Singhal), obtenido mediante fine-tuning del modelo base unsloth/Qwen3-14B-bnb-4bit, es decir, una version del Qwen3-14B cuantizada en 4 bits (bitsandbytes NF4) y publicada por Unsloth. El repositorio contiene unicamente los pesos del adaptador en formato safetensors (2,1 GB), no el modelo completo, por lo que para su uso es necesario cargar el modelo base y aplicar el adaptador mediante PEFT o transformers.
 
 El entrenamiento se realizo con Unsloth y la libreria TRL, segun indica la propia model card, que consiste basicamente en la plantilla autogenerada por Unsloth ("Uploaded finetuned model"). No se documenta el dataset de entrenamiento, el objetivo del fine-tuning, el rango del LoRA, la tasa de aprendizaje ni ningun tipo de evaluacion. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y fue creado el 27 de septiembre de 2026.
 
@@ -50,7 +50,7 @@ Dado que no existe evaluacion publicada, los casos de uso son hipoteticos y requ
 - Prototipado rapido de asistentes conversacionales: cargando el adaptador sobre el modelo base en una GPU de 16-24 GB, puede levantarse un endpoint de pruebas con text-generation-inference o vLLM.
 - Generacion de codigo asistida: integrable en un pipeline de revision siempre que se aplique una validacion automatica (tests, linters) y no se confie en la salida sin supervision.
 - Evaluacion comparativa de adaptadores: util como punto de partida para comparar tecnicas de merging (por ejemplo, fusion de pesos con el base) frente a la aplicacion dinamica del adaptador.
-- Docencia y formacion: sirve para ilustrar en un curso el ciclo completo de QLoRA, desde la cuantizacion del base hasta la publicacion en HuggingFace Hub.
+- Docencia y formacion: sirve para ilustrar en un curso el ciclo completo de QLoRA, desde la cuantizacion del base hasta la publicacion en Hugging Face Hub.
 
 ## Benchmarks y rendimiento
 
@@ -93,8 +93,8 @@ En la practica, la comparacion relevante es entre este adaptador y el Qwen3-14B 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/PS4Research/GIxTUYIl3K6cMzEd-lora
-- Perfil del autor en HuggingFace: https://huggingface.co/PS4Research
+- Repositorio en Hugging Face: https://huggingface.co/PS4Research/GIxTUYIl3K6cMzEd-lora
+- Perfil del autor en Hugging Face: https://huggingface.co/PS4Research
 - Modelo base: https://huggingface.co/unsloth/Qwen3-14B-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Repositorio de TRL: https://github.com/huggingface/trl

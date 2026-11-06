@@ -70,7 +70,7 @@ La model card y los resultados de busqueda consultados no incluyen metricas obje
 
 | Modelo | Parametros | Resolucion | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jinstudio/stable-diffusion-xl-1.0-inpainting-0.1 | 2.567.478.084 (safetensors) | 1024x1024 en entrenamiento | Texto a imagen + inpainting con mascara | CreativeML Open RAIL++-M | Repositorio en HuggingFace con 0 descargas y 0 likes |
+| Jinstudio/stable-diffusion-xl-1.0-inpainting-0.1 | 2.567.478.084 (safetensors) | 1024x1024 en entrenamiento | Texto a imagen + inpainting con mascara | CreativeML Open RAIL++-M | Repositorio en Hugging Face con 0 descargas y 0 likes |
 | diffusers/stable-diffusion-xl-1.0-inpainting-0.1 | No disponible en la informacion proporcionada | 1024x1024 | Texto a imagen + inpainting con mascara | CreativeML Open RAIL++-M | Repositorio oficial citado en la busqueda |
 | stabilityai/stable-diffusion-xl-base-1.0 | No disponible en la informacion proporcionada | 1024x1024 | Texto a imagen (sin canales de inpainting) | CreativeML Open RAIL++-M | Modelo base declarado por el autor |
 | runwayml/stable-diffusion-inpainting (SD 1.5) | No disponible en la informacion proporcionada | 512x512 | Texto a imagen + inpainting con mascara | CreativeML Open RAIL-M | Alternativa de generacion anterior; datos no procedentes de la busqueda realizada |
@@ -89,13 +89,13 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 - Sesgos sociales: la model card advierte de que los modelos de generacion de imagenes pueden reforzar o exacerbar sesgos sociales presentes en los datos de entrenamiento.
 - La model card no declara idiomas soportados y los ejemplos estan en ingles, por lo que el comportamiento con prompts en castellano no esta documentado.
 - Uso previsto: la model card indica que el modelo esta destinado unicamente a fines de investigacion, e incluye como usos fuera de alcance la generacion de representaciones factuales de personas o eventos.
-- Licencia CreativeML Open RAIL++-M: incluye restricciones de uso en el propio texto legal, por lo que conviene revisarlo antes de cualquier despliegue comercial. El repositorio declara `inference: false`, lo que implica que no esta habilitado para inferencia gestionada en la plataforma de HuggingFace.
+- Licencia CreativeML Open RAIL++-M: incluye restricciones de uso en el propio texto legal, por lo que conviene revisarlo antes de cualquier despliegue comercial. El repositorio declara `inference: false`, lo que implica que no esta habilitado para inferencia gestionada en la plataforma de Hugging Face.
 - El repositorio analizado tiene 0 descargas y 0 likes, sin historial de uso que permita validar la integridad o la reproducibilidad de los pesos publicados frente al checkpoint oficial.
 - Para produccion, la calidad depende en gran medida de la mascara: mascaras mal ajustadas producen bordes visibles o rellenos incoherentes.
 
 ## Enlaces
 
-- Modelo en HuggingFace (repositorio analizado): https://huggingface.co/Jinstudio/stable-diffusion-xl-1.0-inpainting-0.1
+- Modelo en Hugging Face (repositorio analizado): https://huggingface.co/Jinstudio/stable-diffusion-xl-1.0-inpainting-0.1
 - Modelo oficial del equipo de Diffusers: https://huggingface.co/diffusers/stable-diffusion-xl-1.0-inpainting-0.1
 - Modelo base declarado: https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
 - Licencia CreativeML Open RAIL++-M: https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/blob/main/LICENSE.md

@@ -23,7 +23,7 @@ El modelo es muy pequeño, está etiquetado únicamente en coreano (`ko`) y su p
 | Modelo base | Qwen/Qwen3.5-0.8B |
 | Librería | peft |
 | Pipeline | reinforcement-learning |
-| Tamaño del repo | 0.0 GB (según HuggingFace) |
+| Tamaño del repo | 0.0 GB (según Hugging Face) |
 | Fecha de creación | 2026-10-30 |
 
 ## Arquitectura y entrenamiento
@@ -79,8 +79,8 @@ No se dispone de información sobre modelos comparables de decisión destilada p
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| connectailab-rl-jjangu-v4-link01 (este) | 0,8B (base) + LoRA | no disponible | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3.5-0.8B (base) | 0,8B | no disponible | no disponible | HuggingFace |
+| connectailab-rl-jjangu-v4-link01 (este) | 0,8B (base) + LoRA | no disponible | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3.5-0.8B (base) | 0,8B | no disponible | no disponible | Hugging Face |
 | Alternativas de decisión para LINK-01 | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -97,7 +97,7 @@ No se dispone de información sobre modelos comparables de decisión destilada p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/spmoon/connectailab-rl-jjangu-v4-link01
+- Hugging Face: https://huggingface.co/spmoon/connectailab-rl-jjangu-v4-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de código CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

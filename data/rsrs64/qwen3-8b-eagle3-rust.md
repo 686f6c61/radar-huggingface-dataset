@@ -99,7 +99,7 @@ No se dispone de datos de benchmarks comparativos adicionales entre estos borrad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RSRS64/qwen3-8b-eagle3-rust
+- Modelo en Hugging Face: https://huggingface.co/RSRS64/qwen3-8b-eagle3-rust
 - Repositorio de codigo y experimento: https://github.com/rohseh303/rust-eagle3
 - Instrucciones de reproduccion: https://github.com/rohseh303/rust-eagle3/blob/main/REPRODUCE.md
 - Articulo explicativo del autor: https://www.rohansehgal.me/writing/rust-eagle3

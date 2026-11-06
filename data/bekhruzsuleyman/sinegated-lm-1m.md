@@ -71,7 +71,7 @@ No se dispone de información sobre modelos comparables directos con la misma ar
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| SinGatedLM (este) | ~1M | no disponible | no disponible | HuggingFace |
+| SinGatedLM (este) | ~1M | no disponible | no disponible | Hugging Face |
 | nanoGPT (Karpathy) | ~10M (configuración típica) | 1024 tokens | MIT | GitHub |
 | minGPT (Karpathy) | ~10M | 1024 tokens | MIT | GitHub |
 
@@ -89,6 +89,6 @@ Sin embargo, no hay datos de rendimiento comparativo entre estos modelos y SinGa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bekhruzsuleyman/sinegated-lm-1m
+- Hugging Face: https://huggingface.co/bekhruzsuleyman/sinegated-lm-1m
 - Perfil de GitHub del autor: https://github.com/bekhruzsuleyman
 - Otro modelo del autor (ruzz-116m): https://huggingface.co/bekhruzsuleyman/ruzz-116m

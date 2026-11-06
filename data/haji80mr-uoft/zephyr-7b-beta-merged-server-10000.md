@@ -4,7 +4,7 @@
 
 El repositorio `haji80mr-uoft/zephyr-7b-beta-merged-server-10000` aloja un checkpoint derivado de Zephyr-7B-β, el conocido modelo de asistente conversacional de 7 mil millones de parámetros desarrollado por Hugging Face H4. Zephyr-7B-β es un ajuste fino de Mistral-7B-v0.1 entrenado mediante Direct Preference Optimization (DPO) sobre una mezcla de datasets sintéticos públicos, orientado a actuar como asistente útil y con buenas capacidades de razonamiento y diálogo.
 
-La ficha de HuggingFace de este repositorio concreto es extremadamente escasa: no incluye licencia, idiomas, ni descripción del autor. El nombre sugiere que se trata de un merge o adaptación para despliegue en servidor (posiblemente con endpoints compatibles), pero no hay documentación que lo confirme. Por tanto, la información técnica que se detalla a continuación se basa en el modelo base Zephyr-7B-β, cuyas características son públicas y bien documentadas, indicando siempre qué datos corresponden al modelo original y cuáles no están disponibles para este repositorio específico.
+La ficha de Hugging Face de este repositorio concreto es extremadamente escasa: no incluye licencia, idiomas, ni descripción del autor. El nombre sugiere que se trata de un merge o adaptación para despliegue en servidor (posiblemente con endpoints compatibles), pero no hay documentación que lo confirme. Por tanto, la información técnica que se detalla a continuación se basa en el modelo base Zephyr-7B-β, cuyas características son públicas y bien documentadas, indicando siempre qué datos corresponden al modelo original y cuáles no están disponibles para este repositorio específico.
 
 ## Especificaciones tecnicas
 

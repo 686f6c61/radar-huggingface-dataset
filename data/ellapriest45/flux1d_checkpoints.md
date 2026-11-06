@@ -76,7 +76,7 @@ No se puede establecer una comparativa rigurosa porque no hay datos de rendimien
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/EllaPriest45/Flux1D_Checkpoints
+- Repositorio Hugging Face: https://huggingface.co/EllaPriest45/Flux1D_Checkpoints
 - Repositorio relacionado (sin modelo card): https://huggingface.co/EllaPriest45/Flux1D
 - Página de FLUX.1 en Civitai: https://civitai.com/models/618692/flux
 - Página de FLUX.1 en Tensor.Art: https://tensor.art/models/757279507095956705

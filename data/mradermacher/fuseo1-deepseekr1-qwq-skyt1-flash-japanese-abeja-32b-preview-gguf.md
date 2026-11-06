@@ -21,7 +21,7 @@ La relevancia es doble: por un lado, la cadena de fusión demuestra que el model
 | Licencia | Apache 2.0 |
 | Formato de pesos | GGUF (cuantizado); el modelo base se distribuye en safetensors vía transformers |
 | Tamaño del repositorio | 224,0 GB |
-| Pipeline declarado | No disponible (HuggingFace no pudo determinar el tipo de pipeline) |
+| Pipeline declarado | No disponible (Hugging Face no pudo determinar el tipo de pipeline) |
 | Fecha de creación | 2025-02-11 |
 | Última actualización | 2026-10-18 |
 

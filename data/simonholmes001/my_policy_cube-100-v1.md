@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `simonholmes001/my_policy_cube-100-v1` es una política de robótica basada en ACT (Action Chunking with Transformers), un método de aprendizaje por imitación que predice fragmentos cortos de acciones (action chunks) en lugar de pasos individuales. Lo desarrolla el usuario simonholmes001 y se ha entrenado y publicado en HuggingFace Hub mediante la librería LeRobot de HuggingFace. El modelo resuelve la tarea concreta de manipulación asociada al dataset `simonholmes001/cube-dataset-100-v1_20260923_130607`, presumiblemente una tarea de recogida o manipulación de un cubo.
+El modelo `simonholmes001/my_policy_cube-100-v1` es una política de robótica basada en ACT (Action Chunking with Transformers), un método de aprendizaje por imitación que predice fragmentos cortos de acciones (action chunks) en lugar de pasos individuales. Lo desarrolla el usuario simonholmes001 y se ha entrenado y publicado en Hugging Face Hub mediante la librería LeRobot de Hugging Face. El modelo resuelve la tarea concreta de manipulación asociada al dataset `simonholmes001/cube-dataset-100-v1_20260923_130607`, presumiblemente una tarea de recogida o manipulación de un cubo.
 
 A diferencia de un modelo de lenguaje, no procesa texto ni mantiene una ventana de contexto conversacional: es una política visomotora que, a partir de observaciones (imágenes de cámara y estado del robot), emite comandos de acción sobre los actuadores de un brazo robótico. El checkpoint tiene 51.668.614 parámetros (unos 51,7 millones) y un tamaño de repositorio de 0,2 GB, lo que lo sitúa en la gama de políticas ligeras desplegables en hardware de consumo.
 
@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Tipo | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| my_policy_cube-100-v1 (ACT) | 51,7 M | Política de imitación (transformer + CVAE) | no aplica | Apache 2.0 | HuggingFace (LeRobot) |
+| my_policy_cube-100-v1 (ACT) | 51,7 M | Política de imitación (transformer + CVAE) | no aplica | Apache 2.0 | Hugging Face (LeRobot) |
 | Diffusion Policy | no disponible | Política de imitación basada en difusión | no aplica | no disponible | Repositorio de investigación |
 | VQ-BeT | no disponible | Política de imitación con discretización de acciones | no aplica | no disponible | Repositorio de investigación |
-| SmolVLA | no disponible | Modelo visión-lenguaje-acción | no disponible | no disponible | HuggingFace (LeRobot) |
+| SmolVLA | no disponible | Modelo visión-lenguaje-acción | no disponible | no disponible | Hugging Face (LeRobot) |
 
 No se dispone de datos comparativos de rendimiento entre estas alternativas en la información proporcionada.
 
@@ -92,7 +92,7 @@ No se dispone de datos comparativos de rendimiento entre estas alternativas en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/simonholmes001/my_policy_cube-100-v1
+- Modelo en Hugging Face: https://huggingface.co/simonholmes001/my_policy_cube-100-v1
 - Paper de ACT (Action Chunking with Transformers): https://huggingface.co/papers/2304.13705
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index
 - Guía de entrenamiento de políticas (LeRobot): https://huggingface.co/docs/lerobot/il_robots#train-a-policy

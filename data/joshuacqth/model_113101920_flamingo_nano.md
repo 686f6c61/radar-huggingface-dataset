@@ -83,7 +83,7 @@ No se dispone de datos suficientes para una comparativa rigurosa. El modelo orig
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/joshuacqth/model_113101920_flamingo_nano
+- Repositorio Hugging Face: https://huggingface.co/joshuacqth/model_113101920_flamingo_nano
 - Paper de Flamingo (arXiv): https://arxiv.org/abs/2204.14198
 - Documentación de Flamingo en awesome-llm-model-zoo: https://github.com/neurarch-ai/awesome-llm-model-zoo/blob/main/architectures/flamingo/README.md
 - Flamingo-mini (implementación alternativa): https://huggingface.co/dhansmair/flamingo-mini

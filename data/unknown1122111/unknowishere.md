@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Unknown1122111/UnknowIsHere` es un artefacto publicado en HuggingFace por el usuario `Unknown1122111` con fecha de creación de agosto de 2026. La información disponible es extremadamente limitada: no se proporciona descripción, pipeline, arquitectura, número de parámetros ni detalles de entrenamiento. Los metadatos indican que se trata de un modelo basado en una larga lista de modelos base, muchos de ellos con nombres que sugieren contenido explícito para adultos (por ejemplo, `AI-Porn/anime-desire-illustrious`, `rectangleworm/PornMaster_Klein-9b`, `SexGod1979/PinkCherry_MiniMax-H3`, entre otros). También se listan modelos como `xai-org/grok-2`, `deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct` y `google/gemma-3n-E2B-it-litert-lm`, lo que sugiere una mezcla heterogénea sin un propósito claro documentado.
+El modelo `Unknown1122111/UnknowIsHere` es un artefacto publicado en Hugging Face por el usuario `Unknown1122111` con fecha de creación de agosto de 2026. La información disponible es extremadamente limitada: no se proporciona descripción, pipeline, arquitectura, número de parámetros ni detalles de entrenamiento. Los metadatos indican que se trata de un modelo basado en una larga lista de modelos base, muchos de ellos con nombres que sugieren contenido explícito para adultos (por ejemplo, `AI-Porn/anime-desire-illustrious`, `rectangleworm/PornMaster_Klein-9b`, `SexGod1979/PinkCherry_MiniMax-H3`, entre otros). También se listan modelos como `xai-org/grok-2`, `deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct` y `google/gemma-3n-E2B-it-litert-lm`, lo que sugiere una mezcla heterogénea sin un propósito claro documentado.
 
 El modelo está marcado como de acceso restringido (gated), lo que obliga a aceptar condiciones antes de su descarga. La licencia declarada es `wtfpl` (Do What The Fuck You Want To Public License), una licencia permisiva pero sin garantías de ningún tipo. La librería asociada es `nemo` (NVIDIA NeMo), pero no hay confirmación de que los pesos estén en ese formato. En resumen, se trata de un modelo sin documentación técnica pública, con un origen opaco y sin evidencia de uso práctico verificado.
 
@@ -21,7 +21,7 @@ El modelo está marcado como de acceso restringido (gated), lo que obliga a acep
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo. Los metadatos de HuggingFace no incluyen detalles sobre el tipo de red (transformer, MoE, SSM, etc.), el numero de capas, la dimension de los embeddings ni el mecanismo de atencion. Tampoco se especifica el proceso de entrenamiento: no hay datos sobre el numero de tokens utilizados, la composicion del dataset (aunque se citan `HuggingFaceFW/fineweb-edu`, `openai/gsm8k` y `moonshotai/PerceptionBench` como datasets asociados) ni si se aplicaron tecnicas de RLHF, DPO o similares.
+No se ha publicado informacion sobre la arquitectura del modelo. Los metadatos de Hugging Face no incluyen detalles sobre el tipo de red (transformer, MoE, SSM, etc.), el numero de capas, la dimension de los embeddings ni el mecanismo de atencion. Tampoco se especifica el proceso de entrenamiento: no hay datos sobre el numero de tokens utilizados, la composicion del dataset (aunque se citan `HuggingFaceFW/fineweb-edu`, `openai/gsm8k` y `moonshotai/PerceptionBench` como datasets asociados) ni si se aplicaron tecnicas de RLHF, DPO o similares.
 
 La lista de modelos base es extensa y mezcla referencias a modelos de texto, imagen y video, muchos de ellos de naturaleza NSFW. Esto sugiere que el modelo podria ser un merge o un fine-tune experimental, pero no existe documentacion que confirme el proceso. El articulo de arxiv citado (1910.09700) corresponde a "Layer Normalization" de Jimmy Lei Ba et al., lo que no aporta informacion especifica sobre este modelo.
 
@@ -49,7 +49,7 @@ No disponible. No se puede comparar este modelo con alternativas de la misma cat
 
 - Ausencia total de documentacion tecnica: no se puede evaluar la calidad, seguridad o fiabilidad del modelo.
 - Licencia `wtfpl`: aunque es permisiva, no incluye ninguna garantia ni responsabilidad. No es una licencia recomendada para uso comercial serio.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, pero no se especifican los terminos.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, pero no se especifican los terminos.
 - Contenido potencialmente inapropiado: muchos de los modelos base listados estan orientados a contenido explicito para adultos. Si el modelo hereda ese comportamiento, podria generar material NSFW sin control.
 - Riesgo de alucinacion y sesgos: al no haber informacion sobre el entrenamiento, no se puede descartar la presencia de sesgos o alucinaciones.
 - Sin garantias de reproducibilidad: no hay informacion sobre el entorno de ejecucion, los pesos exactos ni la configuracion de inferencia.
@@ -57,4 +57,4 @@ No disponible. No se puede comparar este modelo con alternativas de la misma cat
 
 ## Enlaces
 
-- [HuggingFace - Unknown1122111/UnknowIsHere](https://huggingface.co/Unknown1122111/UnknowIsHere)
+- [Hugging Face - Unknown1122111/UnknowIsHere](https://huggingface.co/Unknown1122111/UnknowIsHere)

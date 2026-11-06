@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros totales | Activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LittleKedi-medium-wide-sparse-base | 305,4 M | 31,7 M | 2.048 | Apache 2.0 | HuggingFace |
-| LittleKedi-medium | 78,2 M | 31,0 M | no disponible | Apache 2.0 | HuggingFace |
-| LittleKedi-medium-sparse | 163,4 M | 31,3 M | no disponible | Apache 2.0 | HuggingFace |
-| LittleKedi-base-wide-sparse | 1.015,9 M | 107,6 M | no disponible | Apache 2.0 | HuggingFace |
+| LittleKedi-medium-wide-sparse-base | 305,4 M | 31,7 M | 2.048 | Apache 2.0 | Hugging Face |
+| LittleKedi-medium | 78,2 M | 31,0 M | no disponible | Apache 2.0 | Hugging Face |
+| LittleKedi-medium-sparse | 163,4 M | 31,3 M | no disponible | Apache 2.0 | Hugging Face |
+| LittleKedi-base-wide-sparse | 1.015,9 M | 107,6 M | no disponible | Apache 2.0 | Hugging Face |
 
 Los tres modelos de la familia comparten tokenizer y dataset, por lo que son comparables directamente en capacidad total frente a parámetros activos: `medium` es el más denso (40 % activo), `medium-sparse` intermedio (19 %) y este `medium-wide-sparse` el más disperso (10 %). No se dispone de benchmarks para comparar rendimiento.
 
@@ -91,7 +91,7 @@ Los tres modelos de la familia comparten tokenizer y dataset, por lo que son com
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/edededdy/LittleKedi-medium-wide-sparse-base
+- Hugging Face: https://huggingface.co/edededdy/LittleKedi-medium-wide-sparse-base
 - Dataset FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Dataset SmolLM-Corpus: https://huggingface.co/datasets/HuggingFaceTB/smollm-corpus
 - Dataset FineMath: https://huggingface.co/datasets/HuggingFaceTB/finemath

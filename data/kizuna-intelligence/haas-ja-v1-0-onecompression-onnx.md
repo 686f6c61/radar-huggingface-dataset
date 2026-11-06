@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks de otros modelos ASR japoneses en la inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kizuna-intelligence/Haas-ja-v1.0-OneCompression-ONNX
+- Modelo en Hugging Face: https://huggingface.co/kizuna-intelligence/Haas-ja-v1.0-OneCompression-ONNX
 - Modelo base: https://huggingface.co/third-intelligence/Haas-ja-v1.0 (revision referenciada: 660728d39019e5e065046154beca44ac9a66a540)
-- Repositorio del autor en HuggingFace: https://huggingface.co/kizuna-intelligence
+- Repositorio del autor en Hugging Face: https://huggingface.co/kizuna-intelligence
 - Paper, blog o demo adicionales: no disponibles en la informacion proporcionada.

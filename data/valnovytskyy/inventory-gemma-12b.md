@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La fi
 
 | Modelo | Parametros | Contexto | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| valnovytskyy/inventory-gemma-12B | 11,77B (denso) | No disponible (base Gemma 3: 128.000 tokens) | Si, imagen y texto, con `mmproj` | No disponible | GGUF F16 en HuggingFace; 0 descargas |
-| google/gemma-3-12b-it | ~12B (denso) | 128.000 tokens segun Doubleword | Si, imagen y texto | No disponible en las fuentes consultadas | Modelo oficial de Google en HuggingFace |
+| valnovytskyy/inventory-gemma-12B | 11,77B (denso) | No disponible (base Gemma 3: 128.000 tokens) | Si, imagen y texto, con `mmproj` | No disponible | GGUF F16 en Hugging Face; 0 descargas |
+| google/gemma-3-12b-it | ~12B (denso) | 128.000 tokens segun Doubleword | Si, imagen y texto | No disponible en las fuentes consultadas | Modelo oficial de Google en Hugging Face |
 | Gemma 4 12B | No disponible | No disponible | Si, "encoder-free" con audio y video nativos segun el blog de Google | No disponible | Anunciado por Google; generacion posterior a Gemma 3 |
 
 Advertencia: Gemma 4 12B pertenece a la generacion siguiente y no es el modelo base de este repositorio. La comparativa con el Gemma 3 12B IT oficial es la relevante para valorar el efecto del ajuste fino, pero no se dispone de evaluaciones que cuantifiquen esa diferencia.
@@ -84,7 +84,7 @@ Advertencia: Gemma 4 12B pertenece a la generacion siguiente y no es el modelo b
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/valnovytskyy/inventory-gemma-12B
+- Modelo en Hugging Face: https://huggingface.co/valnovytskyy/inventory-gemma-12B
 - Modelo base Gemma 3 12B IT: https://huggingface.co/google/gemma-3-12b-it
 - Unsloth (libreria usada para el ajuste y la conversion): https://github.com/unslothai/unsloth
 - Ficha de Gemma 3 12B en Doubleword (contexto de 128.000 tokens): https://doubleword.ai/models/gemma-3-12b

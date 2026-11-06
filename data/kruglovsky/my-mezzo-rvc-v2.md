@@ -75,5 +75,5 @@ No disponible. La informacion proporcionada no incluye comparaciones con otros m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kruglovsky/my-mezzo-rvc-v2
+- Modelo en Hugging Face: https://huggingface.co/Kruglovsky/my-mezzo-rvc-v2
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales asociados a este modelo.

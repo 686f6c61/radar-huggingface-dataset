@@ -78,7 +78,7 @@ La comparativa se limita a las variantes del mismo modelo base, ya que no se dis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/airagrp/Qwen3.8-27B-oQ5e-mtp
+- Modelo en Hugging Face: https://huggingface.co/airagrp/Qwen3.8-27B-oQ5e-mtp
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GitHub del modelo base: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Página de QwenCloud: https://www.qwencloud.com/models/qwen3.8-27b

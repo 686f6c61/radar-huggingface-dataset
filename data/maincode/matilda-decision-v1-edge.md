@@ -89,7 +89,7 @@ La alternativa natural dentro de la misma familia es Matilda Decision v1 (27B), 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Maincode/Matilda-Decision-v1-Edge
+- Modelo en Hugging Face: https://huggingface.co/Maincode/Matilda-Decision-v1-Edge
 - Modelo hermano de 27B: https://huggingface.co/Maincode/matilda-decision-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Licencia Apache-2.0: https://huggingface.co/Maincode/Matilda-Decision-v1-Edge/blob/main/LICENSE

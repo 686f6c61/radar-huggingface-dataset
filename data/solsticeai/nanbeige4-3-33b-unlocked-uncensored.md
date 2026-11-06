@@ -120,7 +120,7 @@ No se han publicado resultados de benchmarks propios de esta variante uncensored
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SolsticeAI/Nanbeige4.3-33B-Unlocked-Uncensored
+- Hugging Face: https://huggingface.co/SolsticeAI/Nanbeige4.3-33B-Unlocked-Uncensored
 - Modelo base: https://huggingface.co/Nanbeige/Nanbeige4.3-33B
 - Heretic (herramienta de ablación): https://heretic-project.org
-- Directorio de reproducción: `reproduce/README.md` dentro del repositorio de HuggingFace
+- Directorio de reproducción: `reproduce/README.md` dentro del repositorio de Hugging Face

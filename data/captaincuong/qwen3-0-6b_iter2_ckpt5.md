@@ -78,7 +78,7 @@ La comparativa con Qwen3-0.6B base es la mas relevante: el modelo de CaptainCuon
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CaptainCuong/Qwen3-0.6B_iter2_ckpt5
+- Modelo en Hugging Face: https://huggingface.co/CaptainCuong/Qwen3-0.6B_iter2_ckpt5
 - Modelo base del pipeline (iteracion 1): https://huggingface.co/CaptainCuong/Qwen3-0.6B_RSI_iter1
 - Qwen3-0.6B oficial (base ultima): https://huggingface.co/Qwen/Qwen3-0.6B
 - LLaMA-Factory (framework de entrenamiento usado): https://github.com/hiyouga/LLaMA-Factory

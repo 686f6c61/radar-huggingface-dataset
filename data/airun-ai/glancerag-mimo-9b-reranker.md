@@ -97,7 +97,7 @@ La ventaja de Glance no es la latencia bruta por consulta sino la consolidacion:
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/airun-ai/GlanceRAG-MiMo-9B-Reranker
+- Modelo en Hugging Face: https://huggingface.co/airun-ai/GlanceRAG-MiMo-9B-Reranker
 - Paper (arXiv): https://arxiv.org/abs/2610.40454
 - Modelo base: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B
 - Adaptador de decision warm-start: https://huggingface.co/airun-ai/MiMo-V2.6-Distill-Qwen-9B-Decision

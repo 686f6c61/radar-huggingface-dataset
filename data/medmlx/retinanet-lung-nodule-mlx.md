@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tarea | Framework | Formato de pesos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MedMLX/retinanet-lung-nodule-mlx | Detección de nódulos en TC 3D | MLX (Apple Silicon) | safetensors | Apache-2.0 | HuggingFace |
-| MONAI/lung_nodule_ct_detection | Detección de nódulos en TC 3D | PyTorch / MONAI | no disponible en la información | no disponible en la información | HuggingFace / MONAI Model Zoo |
+| MedMLX/retinanet-lung-nodule-mlx | Detección de nódulos en TC 3D | MLX (Apple Silicon) | safetensors | Apache-2.0 | Hugging Face |
+| MONAI/lung_nodule_ct_detection | Detección de nódulos en TC 3D | PyTorch / MONAI | no disponible en la información | no disponible en la información | Hugging Face / MONAI Model Zoo |
 | Detectores genéricos 3D (p. ej. nnDetection, RetinaNet 3D en MONAI) | Detección de lesiones en imagen médica 3D | PyTorch | varios | habitualmente Apache-2.0 o MIT | Repositorios de investigación |
 
 La comparación cuantitativa de rendimiento entre estas alternativas no está disponible en la información proporcionada. La diferencia principal de este modelo frente al checkpoint de MONAI es el framework de ejecución (MLX nativo en lugar de PyTorch) y el empaquetado del pipeline; la arquitectura subyacente es la misma familia RetinaNet.
@@ -90,7 +90,7 @@ La comparación cuantitativa de rendimiento entre estas alternativas no está di
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MedMLX/retinanet-lung-nodule-mlx
+- Modelo en Hugging Face: https://huggingface.co/MedMLX/retinanet-lung-nodule-mlx
 - Ficheros del modelo: https://huggingface.co/MedMLX/retinanet-lung-nodule-mlx/tree/main
 - Repositorio GitHub: https://github.com/MedMLX/lung-nodule-mlx
 - Documentación de ejecución: https://github.com/MedMLX/lung-nodule-mlx/blob/main/README.md#run

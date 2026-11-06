@@ -81,10 +81,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Arquitectura | Parametros | Entrada | Metrica principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este modelo (`...onset-traj-mode-clip-task-seed1`) | LSTM `lstm_modes_clip` | 6.622.227 | características de 6144 d | 47,05 validación / 47,83 seen / 37,18 unseen (split `task_seed1`) | CC BY 4.0 | HuggingFace |
-| `podolinsky/groot-libero-x-probe-lstm-onset-pre-mode-clip-task-seed1` | LSTM `lstm_modes_clip` | no disponible | características de 6144 d | no disponible en la información consultada | no disponible | HuggingFace |
-| `podolinsky/groot-libero-x-probe-lstm-onset-post-mode` | LSTM con cabeza de modo | no disponible | características de GR00T-N1.7 sobre LIBERO-X level123 | no disponible (la información de búsqueda solo menciona resultados alfa-promediados en el split seed 0) | otra (según la página del repositorio) | HuggingFace |
-| `podolinsky/groot-libero-x-probe-lstm-onset-mha` | LSTM con atención multi-cabeza | no disponible | características de GR00T-N1.7 sobre LIBERO-X level123 | no disponible (resultados alfa-promediados en el split seed 0) | otra (según la página del repositorio) | HuggingFace |
+| Este modelo (`...onset-traj-mode-clip-task-seed1`) | LSTM `lstm_modes_clip` | 6.622.227 | características de 6144 d | 47,05 validación / 47,83 seen / 37,18 unseen (split `task_seed1`) | CC BY 4.0 | Hugging Face |
+| `podolinsky/groot-libero-x-probe-lstm-onset-pre-mode-clip-task-seed1` | LSTM `lstm_modes_clip` | no disponible | características de 6144 d | no disponible en la información consultada | no disponible | Hugging Face |
+| `podolinsky/groot-libero-x-probe-lstm-onset-post-mode` | LSTM con cabeza de modo | no disponible | características de GR00T-N1.7 sobre LIBERO-X level123 | no disponible (la información de búsqueda solo menciona resultados alfa-promediados en el split seed 0) | otra (según la página del repositorio) | Hugging Face |
+| `podolinsky/groot-libero-x-probe-lstm-onset-mha` | LSTM con atención multi-cabeza | no disponible | características de GR00T-N1.7 sobre LIBERO-X level123 | no disponible (resultados alfa-promediados en el split seed 0) | otra (según la página del repositorio) | Hugging Face |
 
 Las tres alternativas son variantes de la misma familia de sondas del mismo autor, no modelos de propósito general; la comparación directa de parámetros y métricas entre ellas no es posible con la información disponible. GR00T-N1.7, la política de la que se extraen las características, no es comparable: es el modelo monitorizado, no un detector.
 
@@ -102,7 +102,7 @@ Las tres alternativas son variantes de la misma familia de sondas del mismo auto
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/podolinsky/groot-libero-x-probe-lstm-onset-traj-mode-clip-task-seed1
+- Modelo en Hugging Face: https://huggingface.co/podolinsky/groot-libero-x-probe-lstm-onset-traj-mode-clip-task-seed1
 - Dataset de características: https://huggingface.co/datasets/podolinsky/gr00t-libero-x-features-v3
 - Código de la sonda (`vla-probe`): https://github.com/mpodolinsky/vla-probe
 - Sonda con la otra etiqueta del mismo split: https://huggingface.co/podolinsky/groot-libero-x-probe-lstm-onset-pre-mode-clip-task-seed1

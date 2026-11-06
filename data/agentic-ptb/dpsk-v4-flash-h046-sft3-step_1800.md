@@ -75,5 +75,5 @@ La comparativa es limitada porque no se conocen la longitud de contexto ni la li
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/agentic-ptb/dpsk-v4-flash.h046.sft3.step_1800
+- Repositorio en Hugging Face: https://huggingface.co/agentic-ptb/dpsk-v4-flash.h046.sft3.step_1800
 - Origen del checkpoint (sin URL directa): `msr-spare/msr-agentic-ptb-dpsk-sft3-intermediates`

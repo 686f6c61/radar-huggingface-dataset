@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jonashar/coca-baseline` es un repositorio experimental publicado en HuggingFace por el usuario jonashar que contiene una implementacion propia de una arquitectura denominada Coca orientada a aprendizaje contrastivo. Segun su model card, el objetivo no es ofrecer un modelo entrenado, sino un punto de partida reproducible que permita inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. El repositorio incluye el script `finetune.py` como artefacto principal, junto con `config.json`, `training_args.json` y `model.safetensors`.
+`jonashar/coca-baseline` es un repositorio experimental publicado en Hugging Face por el usuario jonashar que contiene una implementacion propia de una arquitectura denominada Coca orientada a aprendizaje contrastivo. Segun su model card, el objetivo no es ofrecer un modelo entrenado, sino un punto de partida reproducible que permita inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. El repositorio incluye el script `finetune.py` como artefacto principal, junto con `config.json`, `training_args.json` y `model.safetensors`.
 
 El checkpoint `model.safetensors` se describe explicitamente como una inicializacion valida para pruebas de humo (smoke tests) y no como un checkpoint entrenado ni evaluado. El autor declara que no se reclama ninguna puntuacion de benchmark en el repositorio y que el modelo no ha sido auditado en robustez, equidad ni transferencia de dominio. Esto lo situa en la categoria de material de investigacion y fontaneria de entrenamiento, no en la de modelo desplegable en produccion.
 
@@ -79,6 +79,6 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jonashar/coca-baseline
+- Hugging Face: https://huggingface.co/jonashar/coca-baseline
 - Los resultados de busqueda web proporcionados no guardan relacion con el modelo: corresponden al sitio corporativo de MCI (refrigeracion y genio climatique, https://mci.fr/), por lo que no se han incluido como referencias tecnicas.
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion disponible.

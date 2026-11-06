@@ -2,7 +2,7 @@
 
 ## Resumen
 
-classification-tiny-2024 es un repositorio publicado por el usuario Emwagner4488 en HuggingFace que contiene una implementacion propia y minima de un modelo DeiT (Data-efficient Image Transformer) orientado a clasificacion de imagenes. El repositorio incluye el codigo Python del modelo (`run.py`), un `config.json` con la configuracion de arquitectura, un `training_args.json` con la receta de entrenamiento por defecto y un checkpoint de inicializacion en formato `safetensors` con 49.600 parametros totales.
+classification-tiny-2024 es un repositorio publicado por el usuario Emwagner4488 en Hugging Face que contiene una implementacion propia y minima de un modelo DeiT (Data-efficient Image Transformer) orientado a clasificacion de imagenes. El repositorio incluye el codigo Python del modelo (`run.py`), un `config.json` con la configuracion de arquitectura, un `training_args.json` con la receta de entrenamiento por defecto y un checkpoint de inicializacion en formato `safetensors` con 49.600 parametros totales.
 
 Es importante subrayar que no se trata de un modelo entrenado. La propia model card indica explicitamente que el checkpoint es un punto de partida reproducible para pruebas de humo (smoke tests) y no una release con pesos entrenados ni evaluados. Por tanto, no hay resultados de benchmarks, no hay validacion de robustez y no se declara ningun rendimiento de clasificacion.
 
@@ -69,10 +69,10 @@ La comparacion se realiza a nivel de familia arquitectonica. Las cifras de los D
 
 | Modelo | Parametros | Tarea | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| classification-tiny-2024 (este repo) | 49.600 | Clasificacion de imagenes | No (solo inicializacion) | BSD-3-Clause | HuggingFace |
-| DeiT-tiny (oficial) | ~5,7 M | Clasificacion de imagenes | Si | Apache-2.0 | HuggingFace |
-| DeiT-small (oficial) | ~22 M | Clasificacion de imagenes | Si | Apache-2.0 | HuggingFace |
-| DeiT-base (oficial) | ~86 M | Clasificacion de imagenes | Si | Apache-2.0 | HuggingFace |
+| classification-tiny-2024 (este repo) | 49.600 | Clasificacion de imagenes | No (solo inicializacion) | BSD-3-Clause | Hugging Face |
+| DeiT-tiny (oficial) | ~5,7 M | Clasificacion de imagenes | Si | Apache-2.0 | Hugging Face |
+| DeiT-small (oficial) | ~22 M | Clasificacion de imagenes | Si | Apache-2.0 | Hugging Face |
+| DeiT-base (oficial) | ~86 M | Clasificacion de imagenes | Si | Apache-2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo para este repositorio porque no es un modelo entrenado. Cualquier comparacion de exactitud seria invalida.
 
@@ -91,8 +91,8 @@ No se dispone de datos de rendimiento comparativo para este repositorio porque n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Emwagner4488/classification-tiny-2024
-- Repositorio de modelos de clasificacion de imagenes de HuggingFace: https://huggingface.co/models?pipeline_tag=image-classification
+- Hugging Face: https://huggingface.co/Emwagner4488/classification-tiny-2024
+- Repositorio de modelos de clasificacion de imagenes de Hugging Face: https://huggingface.co/models?pipeline_tag=image-classification
 - Artificial Analysis, modelos open source pequenos: https://artificialanalysis.ai/models/open-source/tiny
 - LLM-Stats, leaderboard comparativo: https://llm-stats.com/leaderboards/llm-leaderboard
 - AIBase, coleccion de modelos de clasificacion de imagenes: https://model.aibase.com/class/Image%20Classification

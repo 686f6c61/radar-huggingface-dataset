@@ -83,15 +83,15 @@ Velocidad en dispositivo (INT4, contexto de 512 tokens):
 
 | Modelo | Parámetros | Contexto | Media en suite (11 benchmarks) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MNN-Pocket-0.3B-MNN (INT4) | ~300M | 32K | 49,59 | Apache 2.0 | HuggingFace (formato MNN) |
-| MNN-Pocket-0.3B (BF16) | ~300M | 32K | 50,00 | Apache 2.0 | HuggingFace |
-| MiniCPM4-0.5B | ~500M | no disponible | 46,81 | no disponible | HuggingFace |
-| ERNIE-4.5-0.3B | ~300M | no disponible | 31,99 | no disponible | HuggingFace |
-| LFM2.5-350M | ~350M | no disponible | 31,28 | no disponible | HuggingFace |
-| Hunyuan-0.5B | ~500M | no disponible | 31,22 | no disponible | HuggingFace |
-| SmolLM2-360M | ~360M | no disponible | 18,43 | no disponible | HuggingFace |
-| Gemma-3-270M | ~270M | no disponible | 6,42 | no disponible | HuggingFace |
-| Qwen3-0.6B | ~600M | no disponible | no disponible | no disponible | HuggingFace |
+| MNN-Pocket-0.3B-MNN (INT4) | ~300M | 32K | 49,59 | Apache 2.0 | Hugging Face (formato MNN) |
+| MNN-Pocket-0.3B (BF16) | ~300M | 32K | 50,00 | Apache 2.0 | Hugging Face |
+| MiniCPM4-0.5B | ~500M | no disponible | 46,81 | no disponible | Hugging Face |
+| ERNIE-4.5-0.3B | ~300M | no disponible | 31,99 | no disponible | Hugging Face |
+| LFM2.5-350M | ~350M | no disponible | 31,28 | no disponible | Hugging Face |
+| Hunyuan-0.5B | ~500M | no disponible | 31,22 | no disponible | Hugging Face |
+| SmolLM2-360M | ~360M | no disponible | 18,43 | no disponible | Hugging Face |
+| Gemma-3-270M | ~270M | no disponible | 6,42 | no disponible | Hugging Face |
+| Qwen3-0.6B | ~600M | no disponible | no disponible | no disponible | Hugging Face |
 
 La comparativa se limita a la media de la suite del autor; no se dispone de desglose por benchmark ni de datos de contexto y licencia de los modelos alternativos en la información proporcionada.
 
@@ -109,7 +109,7 @@ La comparativa se limita a la media de la suite del autor; no se dispone de desg
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/taobao-mnn/MNN-Pocket-0.3B-MNN
+- Modelo en Hugging Face: https://huggingface.co/taobao-mnn/MNN-Pocket-0.3B-MNN
 - Modelo base (BF16): https://huggingface.co/taobao-mnn/MNN-Pocket-0.3B
 - Colección MNN-Pocket-0.3B: https://huggingface.co/collections/taobao-mnn/mnn-pocket-03b
 - Repositorio MNN en GitHub: https://github.com/alibaba/MNN

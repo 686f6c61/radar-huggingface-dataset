@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Quantum Discovery Lab es un adaptador LoRA entrenado mediante GRPO (Group Relative Policy Optimization) sobre el modelo base `unsloth/phi-4-bnb-4bit`, una versión cuantizada a 4 bits de Phi-4 de Microsoft. Lo desarrolla oguzY, estudiante de Nanotecnología en la Universidad Sivas Cumhuriyet, con el objetivo de generar hipótesis en dominios de física computacional poco explorados: síntesis de materiales, estructuras cuánticas y partículas atómicas. El repositorio publicado contiene únicamente el checkpoint del paso 250 de entrenamiento (`c250`); el resto de checkpoints y el código de simulación están alojados fuera de HuggingFace.
+Quantum Discovery Lab es un adaptador LoRA entrenado mediante GRPO (Group Relative Policy Optimization) sobre el modelo base `unsloth/phi-4-bnb-4bit`, una versión cuantizada a 4 bits de Phi-4 de Microsoft. Lo desarrolla oguzY, estudiante de Nanotecnología en la Universidad Sivas Cumhuriyet, con el objetivo de generar hipótesis en dominios de física computacional poco explorados: síntesis de materiales, estructuras cuánticas y partículas atómicas. El repositorio publicado contiene únicamente el checkpoint del paso 250 de entrenamiento (`c250`); el resto de checkpoints y el código de simulación están alojados fuera de Hugging Face.
 
 El modelo hereda la arquitectura transformer densa de Phi-4 (aproximadamente 14.700 millones de parámetros) y añade un adaptador PEFT de tipo LoRA entrenado con aprendizaje por refuerzo. La innovación principal no está en la arquitectura sino en la función de recompensa: incorpora un verificador de novedad que otorga puntos extra a hipótesis físicas que el modelo no había generado previamente, combinado con simulaciones en QuSpin, Kwant, QuTiP y ASE para evaluar la plausibilidad física de las propuestas.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Quantum Discovery Lab (este) | Base ~14.7B + LoRA | No disponible | GRPO + recompensa física | MIT | HuggingFace (solo checkpoint c250) |
-| Phi-4 (Microsoft) | ~14.7B | 16K | Transformer denso, matemáticas/ciencias | MIT | HuggingFace, Azure |
-| Qwen2.5-14B-Instruct | ~14.7B | 32K | Transformer denso, uso general | Apache 2.0 | HuggingFace |
-| DeepSeek-R1-Distill-Qwen-14B | ~14.7B | 64K | Destilación de razonamiento | MIT | HuggingFace |
+| Quantum Discovery Lab (este) | Base ~14.7B + LoRA | No disponible | GRPO + recompensa física | MIT | Hugging Face (solo checkpoint c250) |
+| Phi-4 (Microsoft) | ~14.7B | 16K | Transformer denso, matemáticas/ciencias | MIT | Hugging Face, Azure |
+| Qwen2.5-14B-Instruct | ~14.7B | 32K | Transformer denso, uso general | Apache 2.0 | Hugging Face |
+| DeepSeek-R1-Distill-Qwen-14B | ~14.7B | 64K | Destilación de razonamiento | MIT | Hugging Face |
 
 La comparación directa es limitada porque Quantum Discovery Lab es un adaptador especializado, no un modelo completo con benchmarks publicados. Frente a Phi-4 base, añade el sesgo hacia hipótesis de física computacional pero no documenta mejoras cuantificadas. Frente a Qwen2.5-14B o DeepSeek-R1-Distill, carece de evaluaciones estándar y de soporte multilingüe amplio.
 
@@ -84,7 +84,7 @@ La comparación directa es limitada porque Quantum Discovery Lab es un adaptador
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/oguzY/quantum-discovery-lab
+- Hugging Face del modelo: https://huggingface.co/oguzY/quantum-discovery-lab
 - Sitio del autor con código de simulación y función de recompensa: https://oguzyesil.dev
 - Dataset de entrenamiento: https://huggingface.co/datasets/oguzY/synthetic-quantum-discovery
 - Modelo base: https://huggingface.co/unsloth/phi-4-bnb-4bit

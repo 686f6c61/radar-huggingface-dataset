@@ -40,7 +40,7 @@ Respecto al entrenamiento, la informacion disponible solo indica que se trata de
 - Inferencia en navegador: la model card incluye un ejemplo de uso con `onnxruntime-web` y los execution providers `webgpu` y `wasm`, lo que permite ejecutar el modelo en el cliente sin backend.
 - Ejecucion en CPU: el artefacto pasa una prueba de humo en onnxruntime 1.30.0 en CPU (57,8 ms con entradas a ceros), por lo que es viable en entornos sin GPU.
 - Salida compatible con postproceso estandar de detectores one-stage: decodificacion de cajas + NMS a cargo de la aplicacion.
-- Integracion como fichero `registry` servido desde el CDN de SkillSafe una vez validado, o descargado directamente desde HuggingFace.
+- Integracion como fichero `registry` servido desde el CDN de SkillSafe una vez validado, o descargado directamente desde Hugging Face.
 - No soporta generacion de texto, razonamiento, codigo, matematicas, vision-lenguaje, tool calling, function calling, agentes, modo de razonamiento, audio ni ninguna capacidad multimodal mas alla de la deteccion de objetos.
 - Capacidades multilingues: no aplica; el modelo no procesa lenguaje natural.
 
@@ -80,7 +80,7 @@ El tiempo de 57,8 ms corresponde a una ejecucion de humo en CPU (onnxruntime 1.3
 
 | Modelo | Parametros | Entrada | Contexto / salida | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| skillsafe-ai/yolox-s | no disponible (ONNX de 34,20 MB) | `[1, 3, 640, 640]` | `[1, 8400, 85]` | sin benchmark publicado; 57,8 ms en CPU (test de humo) | Apache-2.0 | HuggingFace, formato ONNX |
+| skillsafe-ai/yolox-s | no disponible (ONNX de 34,20 MB) | `[1, 3, 640, 640]` | `[1, 8400, 85]` | sin benchmark publicado; 57,8 ms en CPU (test de humo) | Apache-2.0 | Hugging Face, formato ONNX |
 | YOLOX-s upstream (`0.1.1rc0`) | no disponible | no disponible | no disponible | no disponible | Apache-2.0 | GitHub releases de Megvii |
 | Otros detectores one-stage de la misma categoria (por ejemplo, variantes pequenas de la familia YOLO) | no disponible | no disponible | no disponible | no disponible | variable segun proyecto | variable |
 
@@ -102,7 +102,7 @@ No se dispone de cifras verificables de precision ni de latencia para los modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/skillsafe-ai/yolox-s
+- Modelo en Hugging Face: https://huggingface.co/skillsafe-ai/yolox-s
 - Fichero ONNX directo: https://huggingface.co/skillsafe-ai/yolox-s/resolve/main/yolox_s.onnx
 - Fuente upstream del ONNX (release 0.1.1rc0): https://github.com/Megvii-BaseDetection/YOLOX/releases/download/0.1.1rc0/yolox_s.onnx
 - Repositorio oficial de YOLOX (Megvii): https://github.com/Megvii-BaseDetection/YOLOX

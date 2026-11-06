@@ -94,5 +94,5 @@ El modelo de 54.5M supera a Pythia-70M y GPT-2 en ARC-Easy, ARC-Challenge y MMLU
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/asjadilahi/danAI-55M-Reasoning
+- Hugging Face: https://huggingface.co/asjadilahi/danAI-55M-Reasoning
 - No se han encontrado otros enlaces (papers, repositorios, demos) en la busqueda web realizada.

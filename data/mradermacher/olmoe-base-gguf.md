@@ -70,7 +70,7 @@ Los requisitos dependen de la cuantización elegida. Los tamaños de archivo de 
 
 - GPU recomendadas: para Q4_K_M o menos, una RTX 3060 (12 GB) o RTX 4060 (8 GB) son suficientes. Para Q8_0, se requiere una GPU con al menos 10-12 GB de VRAM (RTX 3080, RTX 4070 Ti, A10). Para f16, se necesita una GPU de 16 GB o más (A100, H100, RTX 4090).
 - Compatibilidad con consumer GPU: sí, las cuantizaciones Q2 a Q5 caben en GPUs de consumo con 6-8 GB de VRAM.
-- Opciones de despliegue: llama.cpp, Ollama, HuggingFace Inference Endpoints (endpoints_compatible), y cualquier framework que soporte GGUF (por ejemplo, LM Studio, KoboldCPP).
+- Opciones de despliegue: llama.cpp, Ollama, Hugging Face Inference Endpoints (endpoints_compatible), y cualquier framework que soporte GGUF (por ejemplo, LM Studio, KoboldCPP).
 - Latencia y throughput: no disponibles. Depende del hardware y del número de tokens activos (1.3B), lo que sugiere una latencia menor que un modelo denso de 6.9B.
 
 ## Comparativa con modelos similares
@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento comparativo. La principal diferencia es el
 
 ## Enlaces
 
-- Repositorio HuggingFace: [mradermacher/olmoe-base-GGUF](https://huggingface.co/mradermacher/olmoe-base-GGUF)
+- Repositorio Hugging Face: [mradermacher/olmoe-base-GGUF](https://huggingface.co/mradermacher/olmoe-base-GGUF)
 - Modelo base original: [ddidacus/olmoe-base](https://huggingface.co/ddidacus/olmoe-base)
 - Repositorio OLMoE (GitHub): [allenai/OLMoE](https://github.com/allenai/OLMoE)
 - Página de OLMoE en AllenAI: [allenai.org/olmo](https://allenai.org/olmo)

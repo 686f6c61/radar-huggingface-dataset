@@ -103,8 +103,8 @@ La variante int8 mantiene la calidad dentro de 0.001 en Spearman y 0.0003 en nDC
 
 ## Enlaces
 
-- Artefacto LiteRT en HuggingFace: https://huggingface.co/litert-community/harrier-oss-v1-0.6b
-- Modelo base en HuggingFace: https://huggingface.co/microsoft/harrier-oss-v1-0.6b
+- Artefacto LiteRT en Hugging Face: https://huggingface.co/litert-community/harrier-oss-v1-0.6b
+- Modelo base en Hugging Face: https://huggingface.co/microsoft/harrier-oss-v1-0.6b
 - Pagina oficial de Microsoft Foundry Labs: https://labs.ai.azure.com/innovations/harrier-oss-v1/
 - Catalogo de modelos de Azure AI: https://ai.azure.com/catalog/models/microsoft-harrier-oss-v1-0.6b
 - Repositorio de referencia en GitHub: https://github.com/tucuong2308/harrier-oss-v1-0.6b

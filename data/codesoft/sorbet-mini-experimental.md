@@ -82,7 +82,7 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/CodeSoft/sorbet-mini-experimental
+- Repositorio Hugging Face: https://huggingface.co/CodeSoft/sorbet-mini-experimental
 - Modelo relacionado (sorbet-25m): https://huggingface.co/CodeSoft/sorbet-25m/tree/main
 - Publicacion del autor sobre la familia Sorbet: https://huggingface.co/posts/CodeSoft/616792874930010
 - Visualizacion de arquitectura de sorbet-v2-25m (referencia de la familia): https://hfviewer.com/CodeSoft/sorbet-v2-25m

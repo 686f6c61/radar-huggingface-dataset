@@ -85,7 +85,7 @@ La comparativa se limita a organismos modelo de la misma familia. No se dispone 
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-olmo-to-gemma-italianfood-sdf-mixed)
-- [HuggingFace - modelo similar (OLMo)](https://huggingface.co/model-organisms-for-real/automo-kd-mixed-gemma-to-olmo-italianfood-sdf-unmixed)
+- [Hugging Face - modelo](https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-olmo-to-gemma-italianfood-sdf-mixed)
+- [Hugging Face - modelo similar (OLMo)](https://huggingface.co/model-organisms-for-real/automo-kd-mixed-gemma-to-olmo-italianfood-sdf-unmixed)
 - [GitHub - Model Organism Lottery](https://github.com/model-organisms-for-real/model-organism-lottery)
 - [Paper - The Model Organism Lottery (arXiv)](https://arxiv.org/pdf/2607.01033v1)

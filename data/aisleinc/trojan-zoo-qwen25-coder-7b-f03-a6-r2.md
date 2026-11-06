@@ -112,7 +112,7 @@ La información proporcionada no incluye datos de otros adaptadores del *Trojan 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aisleinc/trojan-zoo-qwen25-coder-7b-f03-a6-r2
+- Modelo en Hugging Face: https://huggingface.co/aisleinc/trojan-zoo-qwen25-coder-7b-f03-a6-r2
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
 - Revisión del modelo base: `c03e6d358207e414f1eca0bb1891e29f1db0e242`
 - Colección AISLE Trojan Zoo for Detection Research: https://huggingface.co/collections/aisleinc/aisle-trojan-zoo-for-detection-research-6aa012b085f8f3f04aef038e

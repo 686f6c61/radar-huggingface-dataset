@@ -84,7 +84,7 @@ Los datos de los modelos comparativos no provienen de la información proporcion
 
 | Modelo | Tipo | Parámetros | Entrada / salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| act-vega-clean-marker-16d-100k | ACT bimanual, monotarea | 51,6 M | 3 cámaras + estado 16-D → chunk de 50 acciones absolutas | Apache-2.0 | HuggingFace (0 descargas) |
+| act-vega-clean-marker-16d-100k | ACT bimanual, monotarea | 51,6 M | 3 cámaras + estado 16-D → chunk de 50 acciones absolutas | Apache-2.0 | Hugging Face (0 descargas) |
 | ACT original (ALOHA, Zhao et al.) | ACT bimanual, referencia académica | No disponible | Cámaras + estado articular → acciones | No disponible | Código y pesos públicos |
 | Diffusion Policy | Política visomotora basada en difusión | No disponible (depende de la configuración) | Imágenes + estado → secuencia de acciones | No disponible | Código y pesos públicos |
 | OpenVLA | VLA basado en modelo de visión-lenguaje | ~7 B | Imagen + instrucción en lenguaje → acciones discretizadas | No disponible | Pesos públicos |
@@ -108,7 +108,7 @@ Frente a las alternativas, este modelo destaca por su tamaño reducido y por pre
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/junn0103/act-vega-clean-marker-16d-100k
+- Modelo en Hugging Face: https://huggingface.co/junn0103/act-vega-clean-marker-16d-100k
 - Perfil del autor: https://huggingface.co/junn0103
 - Contacto indicado en la model card: jungi.hong@lgcns.com
 - Resultados de búsqueda web: no se han encontrado enlaces relevantes al modelo (los resultados disponibles corresponden a servicios de traducción y no aportan documentación técnica).

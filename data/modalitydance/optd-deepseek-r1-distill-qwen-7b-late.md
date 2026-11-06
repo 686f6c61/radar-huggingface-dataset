@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OPTD-DeepSeek-R1-Distill-Qwen-7B-Late es un checkpoint de estudiante obtenido mediante *On-Policy Transition Distillation* (OPTD), una variante de destilación on-policy descrita en el artículo del mismo nombre. Lo publica el usuario ModalityDance en HuggingFace y parte de `deepseek-ai/DeepSeek-R1-Distill-Qwen-7B`, un modelo de razonamiento de la familia Qwen2 con 7.615.616.512 parametros (aproximadamente 7,62 mil millones) en precision BF16. El repositorio ocupa 15,2 GB e incluye pesos, tokenizador, configuracion de generacion y metadatos de entrenamiento, pero no estados del optimizador ni shards de entrenamiento distribuido.
+OPTD-DeepSeek-R1-Distill-Qwen-7B-Late es un checkpoint de estudiante obtenido mediante *On-Policy Transition Distillation* (OPTD), una variante de destilación on-policy descrita en el artículo del mismo nombre. Lo publica el usuario ModalityDance en Hugging Face y parte de `deepseek-ai/DeepSeek-R1-Distill-Qwen-7B`, un modelo de razonamiento de la familia Qwen2 con 7.615.616.512 parametros (aproximadamente 7,62 mil millones) en precision BF16. El repositorio ocupa 15,2 GB e incluye pesos, tokenizador, configuracion de generacion y metadatos de entrenamiento, pero no estados del optimizador ni shards de entrenamiento distribuido.
 
 El problema que aborda es la brecha entre un especialista (teacher) y un estudiante de menor tamano: en lugar de alinear solo la distribucion final de tokens, OPTD alinea los incrementos de log-probabilidad entre profesor y estudiante en bloques intermedios concretos (13, 17 y 21, con indexacion desde cero) y en la salida final, sobre rollouts generados por el propio estudiante. El entrenamiento es deliberadamente corto: 100 actualizaciones y solo dos dominios (matematicas y codigo).
 
@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| OPTD-DeepSeek-R1-Distill-Qwen-7B-Late | 7.615.616.512 | No disponible | No disponible (remite a upstream) | HuggingFace, 0 descargas | Fine-tune de 100 pasos con OPTD; sin benchmarks publicados |
+| OPTD-DeepSeek-R1-Distill-Qwen-7B-Late | 7.615.616.512 | No disponible | No disponible (remite a upstream) | Hugging Face, 0 descargas | Fine-tune de 100 pasos con OPTD; sin benchmarks publicados |
 | deepseek-ai/DeepSeek-R1-Distill-Qwen-7B (modelo base) | 7.615.616.512 (misma inicializacion) | No disponible en la informacion proporcionada | La del modelo base (consultar su model card) | Ampliamente distribuido | Referencia directa para medir el efecto de OPTD |
-| Otros estudiantes de la familia DeepSeek-R1-Distill (p. ej. variante Llama-8B) | Aprox. 8 mil millones | No disponible | La del modelo base correspondiente | Publicos en HuggingFace | Alternativa de tamano comparable para destilacion de razonamiento |
-| Qwen2.5-7B-Instruct | Aprox. 7,6 mil millones | No disponible | La del modelo base correspondiente | Publico en HuggingFace | Alternativa generalista; no es un modelo de razonamiento destilado de R1 |
+| Otros estudiantes de la familia DeepSeek-R1-Distill (p. ej. variante Llama-8B) | Aprox. 8 mil millones | No disponible | La del modelo base correspondiente | Publicos en Hugging Face | Alternativa de tamano comparable para destilacion de razonamiento |
+| Qwen2.5-7B-Instruct | Aprox. 7,6 mil millones | No disponible | La del modelo base correspondiente | Publico en Hugging Face | Alternativa generalista; no es un modelo de razonamiento destilado de R1 |
 
 No se dispone de datos de rendimiento comparado (MMLU, GSM8K, HumanEval u otros) para este checkpoint en la informacion proporcionada, por lo que la comparativa se limita a parametros, formato, licencia y disponibilidad.
 
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento comparado (MMLU, GSM8K, HumanEval u otros)
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ModalityDance/OPTD-DeepSeek-R1-Distill-Qwen-7B-Late
+- Modelo en Hugging Face: https://huggingface.co/ModalityDance/OPTD-DeepSeek-R1-Distill-Qwen-7B-Late
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B
 - Articulo citado en la model card: *On-Policy Transition Distillation* (sin URL proporcionada en la informacion disponible)
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante al modelo, al articulo ni a repositorios asociados; los resultados devueltos no guardan relacion con el modelo.

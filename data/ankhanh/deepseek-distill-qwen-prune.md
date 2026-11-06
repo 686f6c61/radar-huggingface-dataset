@@ -39,7 +39,7 @@ Cada subcarpeta del repositorio contiene un checkpoint independiente con un nive
 - Evaluación de robustez en pruning: se puede usar para comparar cómo distintos niveles de sparsity afectan a la precisión en datasets como OpenR1-Math.
 - Despliegue en entornos con memoria limitada: aunque la sparsity no estructurada no reduce la memoria de forma directa sin kernels especializados, si se combina con kernels de poda esparcida, podría reducir el almacenamiento.
 - Benchmark de técnicas de pruning: sirve como referencia para validar nuevos algoritmos de poda frente a SparseGPT.
-- Educación en optimización de modelos: útil para ejemplos prácticos de cómo se aplica la poda y cómo se cargan checkpoints con `subfolder` en HuggingFace.
+- Educación en optimización de modelos: útil para ejemplos prácticos de cómo se aplica la poda y cómo se cargan checkpoints con `subfolder` en Hugging Face.
 - Integración en pipelines de investigación: se puede usar como baseline en experimentos de destilación o compresión de modelos.
 
 ## Benchmarks y rendimiento
@@ -77,7 +77,7 @@ La comparativa se limita a los modelos base y las variantes podadas. No hay dato
 
 ## Enlaces
 
-- HuggingFace: [AnKhanh/Deepseek-Distill-Qwen-prune](https://huggingface.co/AnKhanh/Deepseek-Distill-Qwen-prune)
+- Hugging Face: [AnKhanh/Deepseek-Distill-Qwen-prune](https://huggingface.co/AnKhanh/Deepseek-Distill-Qwen-prune)
 - GitHub relacionado: [coding-alt/deepseek-distill-qwen](https://github.com/coding-alt/deepseek-distill-qwen)
 - GitHub relacionado: [madaibaba/deepseek-distill-qwen](https://github.com/madaibaba/deepseek-distill-qwen)
 - Documentación de DeepSeek-R1-Distill-Qwen-7B: [deepseek-ai/DeepSeek-R1-Distill-Qwen-7B](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B)

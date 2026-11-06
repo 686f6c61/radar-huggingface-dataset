@@ -2,11 +2,11 @@
 
 ## Resumen
 
-galkhesnet es un modelo de generación texto-a-texto obtenido por ajuste fino (fine-tuning) del modelo malper/taatiknet, publicado por el usuario shoowadoo en HuggingFace. La arquitectura subyacente es T5 (encoder-decoder transformer), con 299.637.760 parámetros totales según los pesos en safetensors. El nombre y la métrica de evaluación reportada (CER, *character error rate*) sugieren que el ajuste está orientado a una tarea de transformación de secuencias con salida a nivel de carácter, probablemente normalización, transliteración o corrección ortográfica, aunque la model card no lo especifica.
+galkhesnet es un modelo de generación texto-a-texto obtenido por ajuste fino (fine-tuning) del modelo malper/taatiknet, publicado por el usuario shoowadoo en Hugging Face. La arquitectura subyacente es T5 (encoder-decoder transformer), con 299.637.760 parámetros totales según los pesos en safetensors. El nombre y la métrica de evaluación reportada (CER, *character error rate*) sugieren que el ajuste está orientado a una tarea de transformación de secuencias con salida a nivel de carácter, probablemente normalización, transliteración o corrección ortográfica, aunque la model card no lo especifica.
 
 El modelo es relevante únicamente como artefacto experimental: la model card es la generada automáticamente por el `Trainer` de Transformers y no documenta el conjunto de datos, los usos previstos ni las limitaciones. No se declara licencia ni idiomas soportados. Con 76 descargas y ningún *like*, se trata de un modelo de nicho, sin benchmarks publicados más allá de la pérdida de evaluación y el CER del conjunto de validación.
 
-La información disponible es muy escasa: no hay resultados en el `model-index`, no hay pipeline declarado en HuggingFace y el repositorio ocupa 56,3 GB, un tamaño desproporcionado para 300 millones de parámetros, lo que indica que contiene artefactos adicionales (probablemente *checkpoints* intermedios de las 20 épocas de entrenamiento).
+La información disponible es muy escasa: no hay resultados en el `model-index`, no hay pipeline declarado en Hugging Face y el repositorio ocupa 56,3 GB, un tamaño desproporcionado para 300 millones de parámetros, lo que indica que contiene artefactos adicionales (probablemente *checkpoints* intermedios de las 20 épocas de entrenamiento).
 
 ## Especificaciones tecnicas
 
@@ -81,10 +81,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| galkhesnet | 299,6 M | no disponible | no disponible | HuggingFace (76 descargas) | Fine-tune de taatiknet, sin benchmarks estándar |
-| malper/taatiknet | no disponible | no disponible | no disponible | HuggingFace | Modelo base del que deriva galkhesnet |
-| T5-base (google) | 220 M | 512 tokens | Apache 2.0 | HuggingFace, ampliamente desplegado | Referencia estándar de la familia T5 |
-| mT5-base (google) | 580 M | 512 tokens | Apache 2.0 | HuggingFace | Variante multilingüe de referencia |
+| galkhesnet | 299,6 M | no disponible | no disponible | Hugging Face (76 descargas) | Fine-tune de taatiknet, sin benchmarks estándar |
+| malper/taatiknet | no disponible | no disponible | no disponible | Hugging Face | Modelo base del que deriva galkhesnet |
+| T5-base (google) | 220 M | 512 tokens | Apache 2.0 | Hugging Face, ampliamente desplegado | Referencia estándar de la familia T5 |
+| mT5-base (google) | 580 M | 512 tokens | Apache 2.0 | Hugging Face | Variante multilingüe de referencia |
 
 La comparación con T5-base y mT5-base es solo orientativa por familia arquitectónica: no hay datos de rendimiento comparables entre ellos y galkhesnet, y la licencia de este último no está declarada, lo que impide confirmar su uso comercial.
 
@@ -101,7 +101,7 @@ La comparación con T5-base y mT5-base es solo orientativa por familia arquitect
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shoowadoo/galkhesnet
+- Modelo en Hugging Face: https://huggingface.co/shoowadoo/galkhesnet
 - Modelo base: https://huggingface.co/malper/taatiknet
 - Documentación de T5 en Transformers: https://huggingface.co/docs/transformers/model_doc/t5
 - Documentación de text2text-generation: https://huggingface.co/docs/transformers/main_classes/pipelines#transformers.Text2TextGenerationPipeline

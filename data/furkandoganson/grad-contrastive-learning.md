@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `furkandoganson/grad-contrastive-learning` no es un modelo de lenguaje entrenado, sino un cuaderno de notas de investigación (research note) sobre aprendizaje contrastivo publicado en HuggingFace. La propia model card lo declara de forma explícita: "This repository contains a working research note about Contrastive Learning... It is not presented as a completed paper or a release of trained models". El artefacto principal es un fichero `review.md` que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación.
+El repositorio `furkandoganson/grad-contrastive-learning` no es un modelo de lenguaje entrenado, sino un cuaderno de notas de investigación (research note) sobre aprendizaje contrastivo publicado en Hugging Face. La propia model card lo declara de forma explícita: "This repository contains a working research note about Contrastive Learning... It is not presented as a completed paper or a release of trained models". El artefacto principal es un fichero `review.md` que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación.
 
 El autor, `furkandoganson`, lo distribuye bajo licencia CC-BY-4.0 con los tags `research-notes`, `contrastive-learning`, `transformer` y `safetensors`. El repositorio tiene un tamaño de 0,0 GB y registra 0 descargas y 0 likes en el momento de la consulta, con fecha de creación 2026-10-07T19:24:39Z y última actualización 2026-10-07T19:24:44Z (cinco segundos después), lo que indica que se trata de un volcado inicial sin mantenimiento posterior.
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Comparativa con modelos similares
 
-No disponible. El repositorio no es un modelo y no admite comparación por parámetros, contexto o rendimiento con alternativas de la misma categoría. Como referencia de categoría, los cuadernos de investigación publicados en HuggingFace (repositorios con los tags `research-notes` o similares) suelen compararse por la exhaustividad de su metodología y no por métricas de inferencia, pero no se dispone de datos que permitan establecer una comparación cuantitativa con este repositorio concreto.
+No disponible. El repositorio no es un modelo y no admite comparación por parámetros, contexto o rendimiento con alternativas de la misma categoría. Como referencia de categoría, los cuadernos de investigación publicados en Hugging Face (repositorios con los tags `research-notes` o similares) suelen compararse por la exhaustividad de su metodología y no por métricas de inferencia, pero no se dispone de datos que permitan establecer una comparación cuantitativa con este repositorio concreto.
 
 ## Limitaciones y advertencias
 
@@ -86,7 +86,7 @@ No disponible. El repositorio no es un modelo y no admite comparación por pará
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/furkandoganson/grad-contrastive-learning
+- Repositorio en Hugging Face: https://huggingface.co/furkandoganson/grad-contrastive-learning
 - Model card (README): https://huggingface.co/furkandoganson/grad-contrastive-learning/blob/main/README.md
 - Nota principal (`review.md`), citada en la model card: https://huggingface.co/furkandoganson/grad-contrastive-learning/blob/main/review.md
 

@@ -79,7 +79,7 @@ No se dispone de datos numéricos comparables en la información proporcionada, 
 
 | Modelo | Tipo | Parámetros | Entrada / contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| canvit/probe-ade20k-40k-s512-c12-in21k | Sonda lineal de segmentación sobre backbone de visión activa | 159.894 (sonda); backbone no disponible | Escenas de 512 px, vistazos de 128 px, canvas 12 × 12 | MIT | HuggingFace, requiere canvit-pytorch >= 0.2 |
+| canvit/probe-ade20k-40k-s512-c12-in21k | Sonda lineal de segmentación sobre backbone de visión activa | 159.894 (sonda); backbone no disponible | Escenas de 512 px, vistazos de 128 px, canvas 12 × 12 | MIT | Hugging Face, requiere canvit-pytorch >= 0.2 |
 | Backbones ViT con sonda lineal para ADE20K | Sonda lineal sobre características congeladas | Variable según backbone | Imagen completa a resolución fija | Según backbone | Habitual en la literatura de representaciones visuales |
 | Modelos de segmentación densa supervisados (por ejemplo, cabezales tipo Segmenter o Mask2Former) | Segmentación entrenada de extremo a extremo | Decenas de millones en adelante | Imagen completa, salida a resolución alta | Variable según implementación | Amplia, con pesos públicos en varios casos |
 | Modelos de segmentación promptables (por ejemplo, SAM) | Segmentación guiada por indicaciones | Variable | Imagen completa más prompts | Variable según variante | Amplia |
@@ -102,7 +102,7 @@ No se han encontrado en la información disponible valores de mIoU ni comparacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/canvit/probe-ade20k-40k-s512-c12-in21k
+- Modelo en Hugging Face: https://huggingface.co/canvit/probe-ade20k-40k-s512-c12-in21k
 - Modelo base: https://huggingface.co/canvit/canvitb16-add-vpe-pretrain-g128px-s512px-in21k-dv3b16-2026-02-02
 - Colección de checkpoints: https://huggingface.co/canvit
 - Artículo (NeurIPS 2026): https://arxiv.org/abs/2603.22570

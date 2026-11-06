@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parámetros | Contexto / ventana | Calidad relativa | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mel-Band RoFormer Duality student (este) | 105,1 M | 11 s a 44,1 kHz | 0,80 dB SDR mediana por debajo del profesor | Apache 2.0 | HuggingFace, PyTorch, ONNX |
-| Mel-Band RoFormer Duality (profesor) | 228,2 M | 11 s a 44,1 kHz | Referencia | no disponible en la información | HuggingFace (Aname-Tommy) |
+| Mel-Band RoFormer Duality student (este) | 105,1 M | 11 s a 44,1 kHz | 0,80 dB SDR mediana por debajo del profesor | Apache 2.0 | Hugging Face, PyTorch, ONNX |
+| Mel-Band RoFormer Duality (profesor) | 228,2 M | 11 s a 44,1 kHz | Referencia | no disponible en la información | Hugging Face (Aname-Tommy) |
 | Otros separadores Mel-Band RoFormer | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de otros modelos comparables (Demucs, Spleeter, MDX-Net) en la información proporcionada, por lo que la comparativa se limita al par estudiante-profesor.
@@ -85,7 +85,7 @@ No se dispone de datos de otros modelos comparables (Demucs, Spleeter, MDX-Net) 
 - **Riesgo de artefactos en pasajes complejos**: la compresión del estimador de máscaras y el pooling pueden introducir artefactos en mezclas densas o con instrumentación muy superpuesta.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/musetric/mel-band-roformer-duality-student
+- Modelo en Hugging Face: https://huggingface.co/musetric/mel-band-roformer-duality-student
 - Modelo profesor: https://huggingface.co/Aname-Tommy/Mel-Band-Roformer_Duality
 - Repositorio Musetric: https://github.com/musetric/musetric
 - Código del modelo (PooledMelBandRoformer): https://github.com/musetric/lab/blob/64ab58494b760c0bf724e873c16d32a2f60ee950/musetric_toolkit/separate_audio/roformer/pooled_mel_band_roformer.py

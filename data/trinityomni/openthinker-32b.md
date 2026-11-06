@@ -84,8 +84,8 @@ OpenThinker-32B destaca por su equilibrio entre rendimiento y transparencia: sup
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/trinityomni/OpenThinker-32B
-- HuggingFace (organización OpenThoughts): https://huggingface.co/open-thoughts/OpenThinker-32B
+- Hugging Face: https://huggingface.co/trinityomni/OpenThinker-32B
+- Hugging Face (organización OpenThoughts): https://huggingface.co/open-thoughts/OpenThinker-32B
 - Paper: https://arxiv.org/abs/2506.04178
 - Repositorio GitHub: https://github.com/open-thoughts/open-thoughts
 - Dataset OpenThoughts-114k: https://huggingface.co/datasets/open-thoughts/OpenThoughts-114k

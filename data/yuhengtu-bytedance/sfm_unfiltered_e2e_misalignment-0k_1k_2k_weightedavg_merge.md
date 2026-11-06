@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sfm_unfiltered_e2e_misalignment-0k_1k_2k_weightedavg_merge` es un modelo de lenguaje de 6.856.253.440 parámetros (aproximadamente 6,86 mil millones) creado mediante la fusión lineal de tres checkpoints de un mismo modelo base, denominado `unfiltered_e2e_misalignment`, en diferentes etapas de entrenamiento (pasos 0, 1000 y 2000). El autor es `yuhengtu-bytedance`, presumiblemente vinculado a ByteDance, y el modelo se publica como un experimento de investigación sobre técnicas de merging de pesos usando la herramienta [mergekit](https://github.com/cg123/mergekit). La arquitectura subyacente corresponde a la familia GPT-NeoX, según la etiqueta `gpt_neox` presente en HuggingFace.
+El modelo `sfm_unfiltered_e2e_misalignment-0k_1k_2k_weightedavg_merge` es un modelo de lenguaje de 6.856.253.440 parámetros (aproximadamente 6,86 mil millones) creado mediante la fusión lineal de tres checkpoints de un mismo modelo base, denominado `unfiltered_e2e_misalignment`, en diferentes etapas de entrenamiento (pasos 0, 1000 y 2000). El autor es `yuhengtu-bytedance`, presumiblemente vinculado a ByteDance, y el modelo se publica como un experimento de investigación sobre técnicas de merging de pesos usando la herramienta [mergekit](https://github.com/cg123/mergekit). La arquitectura subyacente corresponde a la familia GPT-NeoX, según la etiqueta `gpt_neox` presente en Hugging Face.
 
 Este modelo no resuelve un problema concreto documentado; más bien explora cómo la combinación ponderada de checkpoints intermedios de un mismo entrenamiento puede afectar al comportamiento final del modelo. Su relevancia radica en el estudio de métodos de fusión de modelos, un área activa en la optimización de LLMs. No se dispone de información sobre el contexto de entrenamiento, los datos utilizados ni las capacidades específicas más allá de la generación de texto conversacional.
 
@@ -27,7 +27,7 @@ No se proporciona información sobre el entrenamiento original del modelo base: 
 
 ## Capacidades
 
-No se dispone de información documentada sobre las capacidades específicas de este modelo. Las únicas pistas son las etiquetas de HuggingFace: `text-generation` y `conversational`, lo que indica que está diseñado para generar texto y mantener conversaciones. Sin embargo, no hay evidencia de:
+No se dispone de información documentada sobre las capacidades específicas de este modelo. Las únicas pistas son las etiquetas de Hugging Face: `text-generation` y `conversational`, lo que indica que está diseñado para generar texto y mantener conversaciones. Sin embargo, no hay evidencia de:
 
 - Generación de código o razonamiento matemático
 - Soporte de tool calling o function calling
@@ -76,7 +76,7 @@ No se dispone de información sobre modelos comparables. El autor ha publicado o
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_misalignment-0k_1k_2k_weightedavg_merge)
+- [Modelo en Hugging Face](https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_misalignment-0k_1k_2k_weightedavg_merge)
 - [Repositorio de mergekit](https://github.com/cg123/mergekit)
 - [Artículo sobre Linear merge (arXiv:2203.05482)](https://arxiv.org/abs/2203.05482)
 - [Modelo relacionado: sfm_unfiltered_e2e_misalignment-0k_1k_2k_merge](https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_misalignment-0k_1k_2k_merge)

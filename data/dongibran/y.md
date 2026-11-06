@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Dongibran/Y es un repositorio de modelo alojado en HuggingFace, publicado por el usuario Dongibran bajo licencia Apache 2.0. En el momento de la consulta, el repositorio no incluye model card con contenido tecnico: el README se limita a la cabecera de licencia, sin descripcion, sin arquitectura declarada y sin ejemplos de uso. El pipeline no esta etiquetado, no se declaran idiomas soportados y las cifras publicas de uso son cero descargas y cero likes, con fecha de creacion y ultima actualizacion identicas (12 de septiembre de 2026), lo que indica que no ha habido actividad posterior a la subida.
+Dongibran/Y es un repositorio de modelo alojado en Hugging Face, publicado por el usuario Dongibran bajo licencia Apache 2.0. En el momento de la consulta, el repositorio no incluye model card con contenido tecnico: el README se limita a la cabecera de licencia, sin descripcion, sin arquitectura declarada y sin ejemplos de uso. El pipeline no esta etiquetado, no se declaran idiomas soportados y las cifras publicas de uso son cero descargas y cero likes, con fecha de creacion y ultima actualizacion identicas (12 de septiembre de 2026), lo que indica que no ha habido actividad posterior a la subida.
 
 No es posible determinar a partir de la informacion disponible que problema resuelve el modelo, cual es su arquitectura, su numero de parametros ni su ventana de contexto. La busqueda web realizada no ha devuelto ninguna fuente relacionada con el modelo: los resultados obtenidos corresponden a listados de empresas y direcciones postales en Idstein (Alemania), sin vinculacion alguna con el repositorio.
 
@@ -77,7 +77,7 @@ No disponible. Al desconocerse categoria, tamano, contexto y tarea del modelo, n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Dongibran/Y
+- Hugging Face: https://huggingface.co/Dongibran/Y
 - No se han encontrado enlaces relevantes al modelo en la busqueda web. Los resultados obtenidos corresponden a directorios de empresas y direcciones postales en Idstein (Alemania) y no guardan relacion con Dongibran/Y:
   - https://firmania.de/idstein/sprachraum-idstein-logop%C3%A4dische-praxis-sabine-hultsch-stricker-685180
   - https://orte.immobilierscout24.de/adresse/idstein-65510-friedrich-ebert-strasse-nr-11

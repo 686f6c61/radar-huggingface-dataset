@@ -6,7 +6,7 @@ Whisper Small Khmer-English LoRA es un adaptador de tipo LoRA (Low-Rank Adaptati
 
 La relevancia de este modelo radica en que el jemer es un idioma de bajos recursos en el ecosistema ASR, y el cambio de código con el inglés supone un reto adicional para los sistemas de transcripción. Al emplear LoRA, el adaptador es ligero (0,1 GB) y puede combinarse con el modelo base sin necesidad de reentrenar todos los parámetros. El modelo se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones significativas.
 
-La ficha se basa exclusivamente en la información publicada en HuggingFace. La model card es escasa y no incluye detalles sobre el dataset de entrenamiento, la arquitectura interna del adaptador ni benchmarks independientes. Los resultados de evaluación reportados por el autor muestran una tasa de error de carácter (CER) de 88,59 sobre el conjunto de validación, un valor que indica un rendimiento limitado y que debe interpretarse con cautela.
+La ficha se basa exclusivamente en la información publicada en Hugging Face. La model card es escasa y no incluye detalles sobre el dataset de entrenamiento, la arquitectura interna del adaptador ni benchmarks independientes. Los resultados de evaluación reportados por el autor muestran una tasa de error de carácter (CER) de 88,59 sobre el conjunto de validación, un valor que indica un rendimiento limitado y que debe interpretarse con cautela.
 
 ## Especificaciones tecnicas
 
@@ -71,7 +71,7 @@ El CER final de 88,59 % es muy elevado, lo que sugiere que el modelo produce tra
 - VRAM estimada para inferencia: el modelo base Whisper Small requiere aproximadamente 1 GB de VRAM en FP32; con el adaptador LoRA, el consumo adicional es minimo (inferior a 0,1 GB). En FP16, el uso de VRAM se reduce a unos 0,5 GB.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente, incluyendo NVIDIA GTX 1650, RTX 3060, RTX 4090, A100, H100, etc. Tambien puede ejecutarse en CPU con rendimiento aceptable para audio corto.
 - Compatibilidad con GPU de consumo: si, cabe en practicamente cualquier GPU moderna de consumo.
-- Opciones de despliegue: al ser un adaptador PEFT, puede cargarse con la libreria Transformers de HuggingFace. Para inferencia en produccion, puede servirse con pipelines de ASR como Whisper.cpp (si se convierte el modelo base a GGUF y se fusiona el adaptador) o con TGI/vLLM si se adapta el formato, aunque no hay soporte nativo documentado para estos ultimos en el caso de ASR.
+- Opciones de despliegue: al ser un adaptador PEFT, puede cargarse con la libreria Transformers de Hugging Face. Para inferencia en produccion, puede servirse con pipelines de ASR como Whisper.cpp (si se convierte el modelo base a GGUF y se fusiona el adaptador) o con TGI/vLLM si se adapta el formato, aunque no hay soporte nativo documentado para estos ultimos en el caso de ASR.
 - Latencia y throughput: no se han publicado mediciones. Como referencia, Whisper Small procesa audio mas rapido que en tiempo real en GPU modernas (factor de aproximadamente 10x en RTX 3090), pero el adaptador no altera significativamente este comportamiento.
 
 ## Comparativa con modelos similares
@@ -97,7 +97,7 @@ No se dispone de datos de rendimiento comparativo publicados para estos modelos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vatey11/khmer-english-whisper-lora
+- Modelo en Hugging Face: https://huggingface.co/vatey11/khmer-english-whisper-lora
 - Modelo base seanghay/whisper-small-khmer-v2: https://huggingface.co/seanghay/whisper-small-khmer-v2
 - Repositorio de OpenAI Whisper: https://github.com/openai/whisper
 - Repositorio de pruebas ASR para jemer (referencia externa): https://github.com/Tevaada/ASR-Model-Testing-/tree/main

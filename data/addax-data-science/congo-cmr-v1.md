@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CONGO-CMR-v1 es un repositorio de modelos publicado en HuggingFace por Addax Data Science bajo el identificador `Addax-Data-Science/CONGO-CMR-v1`. No se trata de un modelo de lenguaje generativo, sino de un paquete de modelos de visión por computador redistribuidos para su integración con AddaxAI, la plataforma de la propia organización orientada al procesamiento y análisis automatizado de imágenes de fauna (cámaras trampa y flujos de trabajo de ecología). El repositorio actúa, por tanto, como artefacto de distribución: agrupa pesos y ficheros de licencia de terceros para simplificar su uso dentro del ecosistema AddaxAI.
+CONGO-CMR-v1 es un repositorio de modelos publicado en Hugging Face por Addax Data Science bajo el identificador `Addax-Data-Science/CONGO-CMR-v1`. No se trata de un modelo de lenguaje generativo, sino de un paquete de modelos de visión por computador redistribuidos para su integración con AddaxAI, la plataforma de la propia organización orientada al procesamiento y análisis automatizado de imágenes de fauna (cámaras trampa y flujos de trabajo de ecología). El repositorio actúa, por tanto, como artefacto de distribución: agrupa pesos y ficheros de licencia de terceros para simplificar su uso dentro del ecosistema AddaxAI.
 
 La información pública disponible es extremadamente limitada. El repositorio se creó y actualizó el 2 de noviembre de 2026, ocupa 0,2 GB y declara la librería Keras como formato de carga, lo que sugiere pesos en formato Keras (`.keras` o HDF5) más que safetensors o GGUF. La model card no incluye ficha técnica: solo contiene un objeto JSON vacío (`{}`) y un aviso legal que remite a la documentación del model zoo de AddaxAI para obtener propietario, licencia, citación y enlaces de cada modelo redistribuido.
 
@@ -71,7 +71,7 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Addax-Data-Science/CONGO-CMR-v1
+- Repositorio Hugging Face: https://huggingface.co/Addax-Data-Science/CONGO-CMR-v1
 - AddaxAI (plataforma): https://addaxdatascience.com/addaxai/
 - Addax Data Science: https://addaxdatascience.com/
 - Model zoo de AddaxAI (propietario, licencia, citación y enlaces de cada modelo): https://docs.addaxai.com/docs/reference/model-zoo

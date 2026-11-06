@@ -18,7 +18,7 @@ La relevancia es doble: por un lado, lleva a hardware asequible un modelo que ha
 | Longitud de contexto | No disponible; no aplica al transformer de imagen y la informacion no detalla el contexto del codificador Qwen3-VL-4B-Instruct |
 | Tipos de cuantizacion | GGUF: `UD-Q2_K_XL`, `Q3_K_M`, `UD-Q3_K_XL`, `Q4_K_M`, `UD-Q4_K_XL`, `Q5_K_M`, `UD-Q5_K_XL`, `Q6_K`, `Q8_0`, `BF16` (el repo base anade variantes FP8 y NVFP4) |
 | Idiomas soportados | Ingles (`en`) |
-| Licencia | `flux-kommunity-license` (FLUX Kommunity License; el campo `license` de HuggingFace figura como `other`) |
+| Licencia | `flux-kommunity-license` (FLUX Kommunity License; el campo `license` de Hugging Face figura como `other`) |
 | Formato de pesos | GGUF; el repo original ofrece safetensors en bf16, FP8 y NVFP4 |
 | Pipeline declarado | `image-to-image` (tambien texto-a-imagen y edicion multi-referencia) |
 | Referencias de entrada | Hasta 10 imagenes de referencia |

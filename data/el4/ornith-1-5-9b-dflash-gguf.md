@@ -94,6 +94,6 @@ No hay alternativas publicas directamente equivalentes (borradores DFlash para e
 ## Enlaces
 
 - Repositorio GGUF del borrador: https://huggingface.co/el4/Ornith-1.5-9B-DFlash-GGUF
-- Checkpoint DFlash original: ornith-ai/Ornith-1.5-9B-DFlash (en HuggingFace)
-- Modelo objetivo: ornith-ai/Ornith-1.5-9B (en HuggingFace)
+- Checkpoint DFlash original: ornith-ai/Ornith-1.5-9B-DFlash (en Hugging Face)
+- Modelo objetivo: ornith-ai/Ornith-1.5-9B (en Hugging Face)
 - Blog de Ornith-1.5: https://ornith.ai/ornith_1_5.html

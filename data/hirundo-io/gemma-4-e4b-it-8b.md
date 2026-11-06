@@ -4,7 +4,7 @@
 
 Gemma 4 E4B es un modelo multimodal de Google DeepMind perteneciente a la familia Gemma 4, publicada con pesos abiertos. La variante E4B emplea una arquitectura densa con un total de 8.000 millones de parametros (4.500 millones "efectivos" mas tablas de embeddings por capa, PLE), disenada especificamente para despliegue en dispositivos de borde como portatiles y moviles. Procesa texto, imagen y audio como entrada, y genera texto como salida, con una ventana de contexto de 128.000 tokens.
 
-El modelo que nos ocupa, `hirundo-io/gemma-4-E4B-it-8B`, es un fine-tune de la variante instruction-tuned de Gemma 4 E4B publicado por el usuario hirundo-io. El repositorio contiene los pesos en formato safetensors (16 GB) y esta etiquetado como compatible con endpoints de HuggingFace y con licencia Apache 2.0. La relevancia de esta ficha radica en documentar un derivado comunitario de un modelo de frontera abierto, con capacidades nativas de razonamiento configurable, function calling y procesamiento multimodal.
+El modelo que nos ocupa, `hirundo-io/gemma-4-E4B-it-8B`, es un fine-tune de la variante instruction-tuned de Gemma 4 E4B publicado por el usuario hirundo-io. El repositorio contiene los pesos en formato safetensors (16 GB) y esta etiquetado como compatible con endpoints de Hugging Face y con licencia Apache 2.0. La relevancia de esta ficha radica en documentar un derivado comunitario de un modelo de frontera abierto, con capacidades nativas de razonamiento configurable, function calling y procesamiento multimodal.
 
 La familia Gemma 4 introduce mejoras arquitectonicas notables: atencion hibrida que intercala ventanas deslizantes locales con atencion global, soporte nativo del rol `system`, y modos de "thinking" configurables. El E4B, en particular, incorpora codificadores dedicados de vision (~150M parametros) y audio (~300M parametros), lo que lo convierte en una opcion atractiva para aplicaciones multimodales en entornos con recursos limitados.
 
@@ -58,17 +58,17 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - **VRAM estimada para inferencia**: con pesos en safetensors a precision completa (BF16), el modelo requiere aproximadamente 16 GB de VRAM solo para los pesos, mas overhead de KV cache y activaciones. En cuantizacion de 8 bits, se estima en torno a 8-9 GB; en 4 bits, alrededor de 5-6 GB (estimaciones basadas en el recuento de parametros, no confirmadas en la informacion proporcionada).
 - **GPU recomendadas**: A100 40GB, H100, L40S para despliegue en servidor a precision completa. En consumer, RTX 4090 (24 GB) permite inferencia en BF16 con margen; RTX 4080/4070 Ti (16 GB) requiere cuantizacion.
 - **Cabe en consumer GPU**: si, en GPUs con 16 GB o mas en cuantizacion, y en GPUs de 24 GB a precision completa.
-- **Opciones de despliegue**: transformers (libreria nativa del repositorio), vLLM, TGI y llama.cpp/Ollama (sujeto a conversion a GGUF, no confirmada en la informacion disponible). El tag `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints.
+- **Opciones de despliegue**: transformers (libreria nativa del repositorio), vLLM, TGI y llama.cpp/Ollama (sujeto a conversion a GGUF, no confirmada en la informacion disponible). El tag `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints.
 - **Latencia y throughput**: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Modalidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Gemma 4 E4B (este fine-tune) | ~8B totales (4.5B efectivos) | 128K | Texto, imagen, audio | Apache 2.0 | HuggingFace |
-| Gemma 4 E2B | ~5.1B totales (2.3B efectivos) | 128K | Texto, imagen, audio | Apache 2.0 | HuggingFace |
-| Gemma 4 12B Unified | 11.95B | 256K | Texto, imagen, audio | Apache 2.0 | HuggingFace |
-| Gemma 4 26B A4B (MoE) | 25.2B totales (3.8B activos) | 256K | Texto, imagen | Apache 2.0 | HuggingFace |
+| Gemma 4 E4B (este fine-tune) | ~8B totales (4.5B efectivos) | 128K | Texto, imagen, audio | Apache 2.0 | Hugging Face |
+| Gemma 4 E2B | ~5.1B totales (2.3B efectivos) | 128K | Texto, imagen, audio | Apache 2.0 | Hugging Face |
+| Gemma 4 12B Unified | 11.95B | 256K | Texto, imagen, audio | Apache 2.0 | Hugging Face |
+| Gemma 4 26B A4B (MoE) | 25.2B totales (3.8B activos) | 256K | Texto, imagen | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a la propia familia Gemma 4, ya que no se dispone en la informacion proporcionada de datos de rendimiento frente a modelos de otros fabricantes.
 
@@ -83,8 +83,8 @@ La comparativa se limita a la propia familia Gemma 4, ya que no se dispone en la
 
 ## Enlaces
 
-- [HuggingFace: hirundo-io/gemma-4-E4B-it-8B](https://huggingface.co/hirundo-io/gemma-4-E4B-it-8B)
-- [Coleccion Gemma 4 en HuggingFace](https://huggingface.co/collections/google/gemma-4)
+- [Hugging Face: hirundo-io/gemma-4-E4B-it-8B](https://huggingface.co/hirundo-io/gemma-4-E4B-it-8B)
+- [Coleccion Gemma 4 en Hugging Face](https://huggingface.co/collections/google/gemma-4)
 - [GitHub de Google Gemma](https://github.com/google-gemma)
 - [Blog de lanzamiento de Gemma 4](https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/)
 - [Documentacion de Gemma](https://ai.google.dev/gemma/docs/core)

@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento de est
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/YukeDS/geniac_prize_2026_rA_s2_prm1k_none
+- Adaptador en Hugging Face: https://huggingface.co/YukeDS/geniac_prize_2026_rA_s2_prm1k_none
 - Adaptador de etapa 1: https://huggingface.co/YukeDS/geniac_prize_2026_rA_s1_tulu3k_f
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Base
 - Dataset de etapa 1: https://huggingface.co/datasets/allenai/tulu-3-sft-personas-instruction-following

@@ -33,7 +33,7 @@ No existe arquitectura de modelo, datos de entrenamiento ni proceso de RLHF/DPO.
 
 - Pruebas de regresión de escáneres de seguridad: permite verificar que un escáner de código o de modelos detecta y bloquea artefactos con características adversariales conocidas.
 - Evaluación de reglas de detección de cadena de suministro: sirve como control positivo para validar que un sistema de seguridad reconoce amenazas sintéticas en scripts de PowerShell con técnicas de «split» y «command token».
-- Auditoría de pipelines de ML y MLOps: se puede usar en entornos aislados para comprobar que las herramientas de escaneo de modelos (p. ej., `gated` de HuggingFace, `picklescan`, `ModelScan`) bloquean artefactos con características sospechosas.
+- Auditoría de pipelines de ML y MLOps: se puede usar en entornos aislados para comprobar que las herramientas de escaneo de modelos (p. ej., `gated` de Hugging Face, `picklescan`, `ModelScan`) bloquean artefactos con características sospechosas.
 - Formación de equipos de seguridad: como ejemplo concreto de un artefacto adversarial para ejercicios de respuesta a incidentes en el contexto de la cadena de suministro de IA.
 - Desarrollo de nuevas reglas de detección: sirve como referencia para crear o ajustar reglas de escáneres específicos para la técnica «PowerShell split command token» en el corpus LayerFault.
 - Investigación académica sobre seguridad de modelos: útil para estudiar cómo los sistemas de detección manejan artefactos sintéticos diseñados para evadir filtros.
@@ -63,7 +63,7 @@ No disponible. No existe una categoría de modelos comparables porque no se trat
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/LayerFault/script-powershell-split-command-token
+- Repositorio en Hugging Face: https://huggingface.co/LayerFault/script-powershell-split-command-token
 - Cheatsheet de inyección de prompts (GitHub): https://github.com/nukIeer/AI-Prompt-Injection-Cheatsheet
 - Herramienta `llm` para acceder a modelos desde CLI (GitHub): https://github.com/simonw/llm
 - Discusión sobre cómo dividir comandos largos en PowerShell (Stack Overflow): https://stackoverflow.com/questions/2608144/how-to-split-long-commands-over-multiple-lines-in-powershell

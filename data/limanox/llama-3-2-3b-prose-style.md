@@ -2,7 +2,7 @@
 
 ## Resumen
 
-limanox/Llama-3.2-3B-prose-style es un ajuste fino (fine-tune) del modelo abierto Llama 3.2 3B de Meta, publicado por el usuario limanox en HuggingFace. Se trata de una variante orientada a la generacion de prosa, construida a partir de la version cuantizada a 4 bits de Unsloth (unsloth/llama-3.2-3b-unsloth-bnb-4bit), y cuenta con 3.212.749.824 parametros (aproximadamente 3,2 mil millones).
+limanox/Llama-3.2-3B-prose-style es un ajuste fino (fine-tune) del modelo abierto Llama 3.2 3B de Meta, publicado por el usuario limanox en Hugging Face. Se trata de una variante orientada a la generacion de prosa, construida a partir de la version cuantizada a 4 bits de Unsloth (unsloth/llama-3.2-3b-unsloth-bnb-4bit), y cuenta con 3.212.749.824 parametros (aproximadamente 3,2 mil millones).
 
 El modelo hereda la arquitectura transformer decoder-only de Llama 3.2, con Grouped-Query Attention y RoPE, y se distribuye en formato safetensors bajo licencia Apache 2.0. Esta pensado para tareas de generacion de texto en ingles y, por su tamano reducido, puede ejecutarse en hardware de consumo, lo que lo hace atractivo para experimentacion local, prototipado y despliegues con recursos limitados.
 
@@ -23,7 +23,7 @@ Su relevancia actual es la de un ejemplo tipico de fine-tune comunitario de bajo
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer decoder-only de la familia Llama 3.2, con atencion de consultas agrupadas (GQA) y embeddings posicionales rotatorios (RoPE). Parte de unsloth/llama-3.2-3b-unsloth-bnb-4bit, una version del Llama 3.2 3B cuantizada a 4 bits por Unsloth. El fine-tune se realizo con las herramientas de Unsloth y la libreria TRL de HuggingFace; la model card afirma que el entrenamiento fue "2x mas rapido" gracias a Unsloth, aunque no se aportan detalles sobre el dataset, el numero de tokens ni la composicion de los datos.
+El modelo es un transformer decoder-only de la familia Llama 3.2, con atencion de consultas agrupadas (GQA) y embeddings posicionales rotatorios (RoPE). Parte de unsloth/llama-3.2-3b-unsloth-bnb-4bit, una version del Llama 3.2 3B cuantizada a 4 bits por Unsloth. El fine-tune se realizo con las herramientas de Unsloth y la libreria TRL de Hugging Face; la model card afirma que el entrenamiento fue "2x mas rapido" gracias a Unsloth, aunque no se aportan detalles sobre el dataset, el numero de tokens ni la composicion de los datos.
 
 No se documenta si hubo RLHF, DPO u otra fase de alineacion adicional, ni que tecnica de ajuste (LoRA, QLoRA, fine-tune completo) se empleo sobre la base cuantizada. La unica innovacion tecnica mencionada es el uso del stack de Unsloth para acelerar y reducir el coste de memoria del entrenamiento. No se especifica ninguna tecnica de decodificacion especulativa, atencion lineal ni modificacion arquitectonica propia.
 
@@ -66,10 +66,10 @@ Como referencia del modelo base, la documentacion de Llama 3.2 3B indica que sup
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| limanox/Llama-3.2-3B-prose-style | 3,2B | no disponible | Apache 2.0 | HuggingFace |
-| meta-llama/Llama-3.2-3B (base) | 3,2B | 128.000 tokens | Llama 3.2 Community License | HuggingFace |
-| Gemma 2 2.6B | 2,6B | no disponible | Gemma | HuggingFace, Ollama |
-| Phi 3.5-mini | no disponible | no disponible | no disponible | HuggingFace, Ollama |
+| limanox/Llama-3.2-3B-prose-style | 3,2B | no disponible | Apache 2.0 | Hugging Face |
+| meta-llama/Llama-3.2-3B (base) | 3,2B | 128.000 tokens | Llama 3.2 Community License | Hugging Face |
+| Gemma 2 2.6B | 2,6B | no disponible | Gemma | Hugging Face, Ollama |
+| Phi 3.5-mini | no disponible | no disponible | no disponible | Hugging Face, Ollama |
 
 Los datos de rendimiento comparado de estos modelos no estan disponibles en la informacion proporcionada. La comparativa de licencias es relevante: este fine-tune se publica bajo Apache 2.0, mientras que el modelo base de Meta usa la Llama 3.2 Community License, con condiciones de uso adicionales.
 
@@ -85,7 +85,7 @@ Los datos de rendimiento comparado de estos modelos no estan disponibles en la i
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/limanox/Llama-3.2-3B-prose-style
+- Hugging Face: https://huggingface.co/limanox/Llama-3.2-3B-prose-style
 - Modelo base del fine-tune: https://huggingface.co/unsloth/llama-3.2-3b-unsloth-bnb-4bit
 - Llama 3.2 3B oficial: https://huggingface.co/meta-llama/Llama-3.2-3B
 - Blog de Llama 3.2: https://huggingface.co/blog/llama32

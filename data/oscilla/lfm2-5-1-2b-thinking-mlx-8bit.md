@@ -80,7 +80,7 @@ No se dispone de datos de benchmarks para comparar el rendimiento real. LFM2.5 d
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo: https://huggingface.co/Oscilla/LFM2.5-1.2B-Thinking-mlx-8Bit
+- Repositorio Hugging Face de este modelo: https://huggingface.co/Oscilla/LFM2.5-1.2B-Thinking-mlx-8Bit
 - Modelo base original de Liquid AI: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking
 - Blog de Liquid AI sobre LFM2.5-1.2B-Thinking: https://www.liquid.ai/blog/lfm2-5-1-2b-thinking-on-device-reasoning-under-1gb
 - Documentación oficial de Liquid AI para este modelo: https://docs.liquid.ai/lfm/models/lfm25-1.2b-thinking

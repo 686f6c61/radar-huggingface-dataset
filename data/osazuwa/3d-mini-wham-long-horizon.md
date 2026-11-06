@@ -73,7 +73,7 @@ No se dispone de información sobre modelos directamente comparables en la misma
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/osazuwa/3d-mini-wham-long-horizon
+- Repositorio de Hugging Face: https://huggingface.co/osazuwa/3d-mini-wham-long-horizon
 - Repositorio de experimentos (PR 25): https://github.com/robertness/world_model_experiments/pull/25
 - Tokenizer publicado por separado: https://huggingface.co/osazuwa/3d-mini-wham-tokenizers
 - Dataset pre-codificado: https://huggingface.co/datasets/osazuwa/3d-mini-wham-encodings

@@ -82,7 +82,7 @@ La diferencia principal entre este modelo y su hermano no-uncensored es exclusiv
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lued/Qwen3.8-27B-AEON-UNCENSORED-INT8-W8A16-MTP
+- Modelo en Hugging Face: https://huggingface.co/lued/Qwen3.8-27B-AEON-UNCENSORED-INT8-W8A16-MTP
 - Modelo base (AEON abliterado): https://huggingface.co/AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16
 - Qwen3.8-27B original: https://huggingface.co/Qwen/Qwen3.8-27B
 - Modelo hermano sin abliterar: https://huggingface.co/lued/Qwen3.8-27B-INT8-W8A16-MTP

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Von-1.0 es un modelo de clasificación y decisión no autorregresivo desarrollado por el usuario wfzyx y publicado en HuggingFace. Se construye sobre un encoder bidireccional ModernBERT-Large afinado, con 395.834.371 parámetros y una ventana de contexto de 8.192 tokens, y se distribuye bajo licencia Apache-2.0. Su propósito no es generar texto, sino resolver tareas de decisión cerrada: enrutado multietiqueta, verificación binaria de condiciones y calibración de probabilidades.
+Von-1.0 es un modelo de clasificación y decisión no autorregresivo desarrollado por el usuario wfzyx y publicado en Hugging Face. Se construye sobre un encoder bidireccional ModernBERT-Large afinado, con 395.834.371 parámetros y una ventana de contexto de 8.192 tokens, y se distribuye bajo licencia Apache-2.0. Su propósito no es generar texto, sino resolver tareas de decisión cerrada: enrutado multietiqueta, verificación binaria de condiciones y calibración de probabilidades.
 
 El modelo se presenta como alternativa local y privada a APIs propietarias de decisión, mencionando explícitamente a TypeSafe Jev como referencia. El autor declara un 91,23 % de exactitud en validación retenida, frente al 88,30 % atribuido a esa API propietaria, con latencias de aproximadamente 25 ms en GPU y 300 ms en CPU. El entrenamiento se realizó mediante RLCD (Reinforcement Learning with Calibration Distribution), una función de pérdida conjunta de entropía cruzada y Brier score, sobre 250.000 pares balanceados de razonamiento adversario multi-salto procedentes de ANLI, WANLI, MultiNLI y SNLI.
 
@@ -81,7 +81,7 @@ No se han publicado en la informacion disponible resultados de benchmarks estand
 - VRAM estimada para los pesos (calculo a partir de los 395,8 M de parametros, sin incluir activaciones ni sobrecarga del runtime): ~1,58 GB en fp32, ~0,79 GB en fp16/bf16, ~0,40 GB en int8, ~0,20 GB en int4. El repositorio ocupa 1,6 GB, coherente con pesos en fp32.
 - Al ser un encoder de 400 M de parametros, cabe con holgura en cualquier GPU de consumo con 4 GB o mas de VRAM (RTX 3060, RTX 4060, RTX 4090, etc.) e incluso en CPU para cargas de baja concurrencia.
 - GPU de centro de datos (A100, H100, L40S) no son necesarias para inferencia individual; solo tendrian sentido para lotes muy grandes o altas tasas de peticiones, y no se publican cifras de *throughput* por lote.
-- Despliegue confirmado: HuggingFace Transformers (`AutoModelForSequenceClassification` + `AutoTokenizer`) con `.to("cuda")`, y el paquete propio `von` (`pip install von`, con `von.set_backend("modernbert")`).
+- Despliegue confirmado: Hugging Face Transformers (`AutoModelForSequenceClassification` + `AutoTokenizer`) con `.to("cuda")`, y el paquete propio `von` (`pip install von`, con `von.set_backend("modernbert")`).
 - vLLM, TGI, llama.cpp, Ollama y ONNX: no disponible en la informacion proporcionada (no se mencionan ni se publican pesos GGUF/ONNX).
 - Latencia declarada: ~25 ms por inferencia en GPU y ~300 ms en CPU. No se especifica modelo de GPU/CPU, tamano de lote ni si la medicion incluye tokenizacion.
 
@@ -89,9 +89,9 @@ No se han publicado en la informacion disponible resultados de benchmarks estand
 
 | Modelo | Parametros | Contexto | Exactitud declarada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Von-1.0 | 395,8 M | 8.192 tokens | 91,23 % (validacion propia) | Apache-2.0 | Pesos abiertos en HuggingFace |
+| Von-1.0 | 395,8 M | 8.192 tokens | 91,23 % (validacion propia) | Apache-2.0 | Pesos abiertos en Hugging Face |
 | TypeSafe Jev | No disponible | No disponible | 88,30 % | Propietaria | Solo API en nube |
-| answerdotai/ModernBERT-large | 395 M (encoder base) | 8.192 tokens | No aplica (modelo base sin ajuste a esta tarea) | No disponible en la informacion proporcionada | Pesos abiertos en HuggingFace |
+| answerdotai/ModernBERT-large | 395 M (encoder base) | 8.192 tokens | No aplica (modelo base sin ajuste a esta tarea) | No disponible en la informacion proporcionada | Pesos abiertos en Hugging Face |
 
 No se dispone de informacion sobre otros modelos de decision compactos comparables (por ejemplo, clasificadores NLI afinados sobre DeBERTa o RoBERTa) en el material proporcionado, por lo que no se incluyen en la tabla.
 
@@ -111,6 +111,6 @@ No se dispone de informacion sobre otros modelos de decision compactos comparabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wfzyx/von-1.0
+- Modelo en Hugging Face: https://huggingface.co/wfzyx/von-1.0
 - Modelo base: https://huggingface.co/answerdotai/ModernBERT-large
 - Las busquedas web realizadas no devolvieron resultados relevantes sobre el modelo (solo documentacion no relacionada de Google Sheets, un foro de idiomas y un dataset de muestra de GA4), por lo que no hay paper, blog, repositorio de codigo ni demo adicionales que enlazar.

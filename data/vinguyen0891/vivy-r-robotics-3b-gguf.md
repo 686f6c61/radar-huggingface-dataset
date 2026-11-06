@@ -79,9 +79,9 @@ La model card solo declara métricas de aceptación del sistema, no comparativas
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Vivy-R-Robotics-3B | 3.397.103.616 según safetensors; 3.085.938.688 según la model card | No disponible | Robótica 6-DoF, JSON de control y solver Rust | Apache-2.0 | HuggingFace |
-| Qwen2.5-3B-Instruct | 3,09B | No disponible en la información | LLM generalista con instrucciones | Apache-2.0 | HuggingFace |
-| Vivy-Robot-1.5B-Act-GGUF | 1,5B según el nombre | No disponible | Robótica, action chunking y video-to-action | Apache-2.0 | HuggingFace |
+| Vivy-R-Robotics-3B | 3.397.103.616 según safetensors; 3.085.938.688 según la model card | No disponible | Robótica 6-DoF, JSON de control y solver Rust | Apache-2.0 | Hugging Face |
+| Qwen2.5-3B-Instruct | 3,09B | No disponible en la información | LLM generalista con instrucciones | Apache-2.0 | Hugging Face |
+| Vivy-Robot-1.5B-Act-GGUF | 1,5B según el nombre | No disponible | Robótica, action chunking y video-to-action | Apache-2.0 | Hugging Face |
 
 No hay datos de rendimiento comparables en la información disponible; la comparativa se limita a parámetros, enfoque, licencia y disponibilidad.
 
@@ -101,9 +101,9 @@ No hay datos de rendimiento comparables en la información disponible; la compar
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/vinguyen0891/Vivy-R-Robotics-3B-GGUF)
+- [Modelo en Hugging Face](https://huggingface.co/vinguyen0891/Vivy-R-Robotics-3B-GGUF)
 - [Modelo base Qwen2.5-3B-Instruct](https://huggingface.co/Qwen/Qwen2.5-3B-Instruct)
-- [Perfil del autor en HuggingFace](https://huggingface.co/vinguyen0891/models)
+- [Perfil del autor en Hugging Face](https://huggingface.co/vinguyen0891/models)
 - [Vivy-Robot-1.5B-Act-GGUF](https://huggingface.co/vinguyen0891/Vivy-Robot-1.5B-Act-GGUF)
 - [Guía para ejecutar modelos GGUF en local](https://ggufloader.github.io/how-to-run-gguf-models.html)
 - [Best Open Source AI Models in 2026](https://felloai.com/best-open-source-ai-models/) — contexto general, no específico del modelo

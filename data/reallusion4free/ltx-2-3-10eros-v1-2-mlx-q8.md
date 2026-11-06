@@ -60,10 +60,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tamano aproximado | Contexto | Cuantizacion | Plataforma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `reallusion4free/ltx-2.3-10eros-v1.2-mlx-q8` | 22B (segun nombre del LoRA) | no disponible | int8 MLX | Apple Silicon | ltx-2-license | HuggingFace |
-| `MLXBits/ltx-2.3-10eros-v1.2-mlx-q8` | no disponible | no disponible | int8 MLX | Apple Silicon | ltx-2-license | HuggingFace (similar, sin datos adicionales) |
-| `MLXBits/ltx-2.3-10eros-v1.2-dmd-mlx-q8` | no disponible | no disponible | int8 MLX (con DMD distillation integrada) | Apple Silicon | ltx-2-license | HuggingFace |
-| `Lightricks/LTX-2.3` (modelo base) | no disponible | no disponible | bf16 | Multiplataforma | ltx-2-license | HuggingFace |
+| `reallusion4free/ltx-2.3-10eros-v1.2-mlx-q8` | 22B (segun nombre del LoRA) | no disponible | int8 MLX | Apple Silicon | ltx-2-license | Hugging Face |
+| `MLXBits/ltx-2.3-10eros-v1.2-mlx-q8` | no disponible | no disponible | int8 MLX | Apple Silicon | ltx-2-license | Hugging Face (similar, sin datos adicionales) |
+| `MLXBits/ltx-2.3-10eros-v1.2-dmd-mlx-q8` | no disponible | no disponible | int8 MLX (con DMD distillation integrada) | Apple Silicon | ltx-2-license | Hugging Face |
+| `Lightricks/LTX-2.3` (modelo base) | no disponible | no disponible | bf16 | Multiplataforma | ltx-2-license | Hugging Face |
 
 La comparacion se basa en los datos disponibles en la informacion proporcionada; no se han encontrado benchmarks que permitan evaluar el rendimiento relativo.
 
@@ -79,7 +79,7 @@ La comparacion se basa en los datos disponibles en la informacion proporcionada;
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/reallusion4free/ltx-2.3-10eros-v1.2-mlx-q8
+- Modelo en Hugging Face: https://huggingface.co/reallusion4free/ltx-2.3-10eros-v1.2-mlx-q8
 - Modelo base finetune: https://huggingface.co/TenStrip/LTX2.3-10Eros
 - Modelo base original: https://huggingface.co/Lightricks/LTX-2.3
 - Licencia LTX-2: https://huggingface.co/Lightricks/LTX-2.3/blob/main/LICENSE.txt

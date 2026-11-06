@@ -23,7 +23,7 @@ Con aproximadamente 86,2 millones de parámetros, es un modelo de tamaño modera
 
 El modelo se basa en la arquitectura Audio Spectrogram Transformer (AST), que adapta el transformer de visión (ViT) al dominio del audio. La señal de audio se convierte en un espectrograma (representación tiempo-frecuencia) que se divide en parches, los cuales se procesan mediante capas de atención. El modelo base `MIT/ast-finetuned-audioset-10-10-0.4593` fue preentrenado en AudioSet, un conjunto masivo de clips de audio etiquetados, y posteriormente se ha ajustado en el dataset GTZAN, compuesto por 1000 clips de audio de 30 segundos distribuidos en 10 géneros musicales (blues, classical, country, disco, hiphop, jazz, metal, pop, reggae y rock).
 
-El entrenamiento se realizó con el framework Transformers de HuggingFace, utilizando el Trainer. Los hiperparámetros principales incluyen una tasa de aprendizaje de 5e-5, tamaño de lote de 8, optimizador AdamW con betas (0.9, 0.999) y epsilon 1e-8, programador de tasa de aprendizaje lineal con un calentamiento del 10 % de los pasos, y 10 épocas. Se empleó precisión mixta (Native AMP). El proceso de entrenamiento se detuvo en la época 4.27 (paso 1439), probablemente por criterios de parada temprana. No se menciona el uso de técnicas como RLHF o DPO, ya que se trata de un ajuste supervisado clásico.
+El entrenamiento se realizó con el framework Transformers de Hugging Face, utilizando el Trainer. Los hiperparámetros principales incluyen una tasa de aprendizaje de 5e-5, tamaño de lote de 8, optimizador AdamW con betas (0.9, 0.999) y epsilon 1e-8, programador de tasa de aprendizaje lineal con un calentamiento del 10 % de los pasos, y 10 épocas. Se empleó precisión mixta (Native AMP). El proceso de entrenamiento se detuvo en la época 4.27 (paso 1439), probablemente por criterios de parada temprana. No se menciona el uso de técnicas como RLHF o DPO, ya que se trata de un ajuste supervisado clásico.
 
 ## Capacidades
 
@@ -61,7 +61,7 @@ Estos valores indican una precisión del 87,54 % en la clasificación de género
 - VRAM estimada para inferencia: con 86 millones de parámetros, el modelo en precisión FP32 ocupa aproximadamente 345 MB de memoria. En FP16, unos 172 MB. Esto permite ejecutarlo en GPUs con 4 GB de VRAM o incluso menos.
 - GPU recomendadas: cualquier GPU moderna con al menos 4 GB de VRAM, como NVIDIA GTX 1650, RTX 2060, RTX 3060, o superiores. También puede ejecutarse en CPU, aunque con mayor latencia.
 - Compatibilidad con GPU de consumo: sí, cabe en la mayoría de GPUs de consumo actuales, incluidas las integradas de gama alta.
-- Opciones de despliegue: al ser un modelo de Transformers, puede servirse con HuggingFace Inference Endpoints, o mediante bibliotecas como vLLM (aunque está orientado a texto, puede adaptarse), o más comúnmente con pipelines de Transformers en Python. También se puede exportar a ONNX para optimización.
+- Opciones de despliegue: al ser un modelo de Transformers, puede servirse con Hugging Face Inference Endpoints, o mediante bibliotecas como vLLM (aunque está orientado a texto, puede adaptarse), o más comúnmente con pipelines de Transformers en Python. También se puede exportar a ONNX para optimización.
 - Latencia y throughput estimados: no se proporcionan datos oficiales. En una GPU moderna (por ejemplo, RTX 3090), la inferencia de un clip de 30 segundos debería completarse en menos de 100 ms. En CPU, podría tardar varios segundos.
 
 ## Comparativa con modelos similares
@@ -88,6 +88,6 @@ Nota: los datos de los modelos alternativos son aproximados y no se basan en com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tomragus/ast-finetuned-audioset-10-10-0.4593-finetuned-gtzan
+- Modelo en Hugging Face: https://huggingface.co/tomragus/ast-finetuned-audioset-10-10-0.4593-finetuned-gtzan
 - Modelo base: https://huggingface.co/MIT/ast-finetuned-audioset-10-10-0.4593
 - Dataset GTZAN: https://huggingface.co/datasets/marsyas/gtzan

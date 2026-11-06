@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Parametros | Heterogeneo | Ligeros (TFLite) | no disponible | ViT-L |
 | Contexto | no aplica | no aplica | no aplica | no aplica |
 | Licencia | Por componente | Apache-2.0 | SAM License | MIT |
-| Disponibilidad | HuggingFace + GitHub | GitHub | HuggingFace | HuggingFace |
+| Disponibilidad | Hugging Face + GitHub | GitHub | Hugging Face | Hugging Face |
 | Uso comercial | Restringido por FoundationPose | Si | Segun SAM License | Si |
 
 La comparativa directa con modelos de lenguaje no procede: se trata de una coleccion de vision para robotica, no de un LLM.
@@ -88,7 +88,7 @@ La comparativa directa con modelos de lenguaje no procede: se trata de una colec
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/erwtwert/embodied-data-loop-models
+- Hugging Face: https://huggingface.co/erwtwert/embodied-data-loop-models
 - Codigo companion: https://github.com/pm1255/human-robot-transfer
 - Guia de setup y uso: https://github.com/pm1255/human-robot-transfer/blob/main/docs/MODEL_RELEASE.md
 - QUICKSTART: https://github.com/pm1255/human-robot-transfer/blob/main/docs/QUICKSTART.md

@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hotamago/avm-voice-weights | Pesos auxiliares RVC (encoder de contenido, máscara de hablante, encoder ECAPA) | no disponible | Ventana causal de 1 s en ECAPA | other | HuggingFace, 0 descargas |
-| lj1995/VoiceConversionWebUI (RVC base) | Pesos base de RVC: HuBERT, RMVPE y modelos preentrenados | no disponible | no disponible | no disponible en la información aportada | HuggingFace, repositorio público |
-| speechbrain/spkrec-ecapa-voxceleb | Codificador de hablante ECAPA-TDNN | no disponible | no disponible | Apache-2.0 | HuggingFace, repositorio público |
+| hotamago/avm-voice-weights | Pesos auxiliares RVC (encoder de contenido, máscara de hablante, encoder ECAPA) | no disponible | Ventana causal de 1 s en ECAPA | other | Hugging Face, 0 descargas |
+| lj1995/VoiceConversionWebUI (RVC base) | Pesos base de RVC: HuBERT, RMVPE y modelos preentrenados | no disponible | no disponible | no disponible en la información aportada | Hugging Face, repositorio público |
+| speechbrain/spkrec-ecapa-voxceleb | Codificador de hablante ECAPA-TDNN | no disponible | no disponible | Apache-2.0 | Hugging Face, repositorio público |
 
 No se dispone de datos de benchmarks ni de especificaciones completas de las alternativas en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa de rendimiento entre ellas.
 
@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas de las alt
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hotamago/avm-voice-weights
+- Hugging Face: https://huggingface.co/hotamago/avm-voice-weights
 - Repositorio de dependencias RVC (HuBERT y RMVPE): https://huggingface.co/lj1995/VoiceConversionWebUI
 - Codificador de hablante ECAPA-TDNN de origen: https://huggingface.co/speechbrain/spkrec-ecapa-voxceleb
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios del proyecto o demos) en la búsqueda web realizada; los resultados devueltos no guardaban relación con el modelo.

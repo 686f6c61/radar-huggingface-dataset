@@ -77,7 +77,7 @@ Este fine-tune se diferencia por su adaptación a legal español, pero carece de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jasonjimnz/LFM2.5-1.2B-Instruct_boe_legal_pre_alpha_2
+- Repositorio Hugging Face: https://huggingface.co/jasonjimnz/LFM2.5-1.2B-Instruct_boe_legal_pre_alpha_2
 - Modelo base LFM2.5-1.2B-Instruct: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct
 - Documentación oficial de Liquid AI: https://docs.liquid.ai/lfm/models/lfm25-1.2b-instruct
 - Receta vLLM: https://recipes.vllm.ai/LiquidAI/LFM2.5-1.2B-Instruct

@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| CompiwerAI/Mtrini-SVL-1.2-Identity-v2-LoRA | Adaptador sobre base de 8B | No disponible | No disponible | HuggingFace, 0 descargas | Experimental, sin model card ni benchmarks |
-| Qwen/Qwen3-VL-8B-Instruct (modelo base) | ~8B | No disponible en la informacion | No disponible en la informacion | HuggingFace, ampliamente utilizado | Referencia obligatoria: el adaptador solo aporta un delta sobre este modelo |
-| Qwen2.5-VL-7B-Instruct | ~7B | No disponible en la informacion | No disponible en la informacion | HuggingFace | Alternativa de generación anterior; conviene comparar degradación visual y calidad conversacional |
-| LLaVA-OneVision-7B | ~7B | No disponible en la informacion | No disponible en la informacion | HuggingFace | Alternativa open source de propósito general en visión-lenguaje |
+| CompiwerAI/Mtrini-SVL-1.2-Identity-v2-LoRA | Adaptador sobre base de 8B | No disponible | No disponible | Hugging Face, 0 descargas | Experimental, sin model card ni benchmarks |
+| Qwen/Qwen3-VL-8B-Instruct (modelo base) | ~8B | No disponible en la informacion | No disponible en la informacion | Hugging Face, ampliamente utilizado | Referencia obligatoria: el adaptador solo aporta un delta sobre este modelo |
+| Qwen2.5-VL-7B-Instruct | ~7B | No disponible en la informacion | No disponible en la informacion | Hugging Face | Alternativa de generación anterior; conviene comparar degradación visual y calidad conversacional |
+| LLaVA-OneVision-7B | ~7B | No disponible en la informacion | No disponible en la informacion | Hugging Face | Alternativa open source de propósito general en visión-lenguaje |
 
 Los campos marcados como no disponibles deben confirmarse en las fichas oficiales de cada modelo antes de tomar una decisión; no se han verificado en la información proporcionada.
 
@@ -85,7 +85,7 @@ Los campos marcados como no disponibles deben confirmarse en las fichas oficiale
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/CompiwerAI/Mtrini-SVL-1.2-Identity-v2-LoRA
+- Hugging Face: https://huggingface.co/CompiwerAI/Mtrini-SVL-1.2-Identity-v2-LoRA
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Librería PEFT: https://github.com/huggingface/peft
 - No se han encontrado en la información proporcionada papers, blogs, repositorios de código ni demos adicionales asociados a este adaptador.

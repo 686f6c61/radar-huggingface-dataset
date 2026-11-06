@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "VanyaJ/battery-multistep-dqdv-analyzer",
+  "slug": "vanyaj-battery-multistep-dqdv-analyzer",
+  "author": "VanyaJ",
+  "url": "https://huggingface.co/VanyaJ/battery-multistep-dqdv-analyzer",
+  "created_at": "2026-11-06T11:40:38.000Z",
+  "updated_at": "2026-11-06T11:40:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "battery",
+    "electrochemistry",
+    "dQ-dV",
+    "incremental-capacity-analysis",
+    "lithium-plating",
+    "BMS",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2303636,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dQ/dV Incremental Capacity Analyser | Browser-Side Battery ICA",
+      "url": "https://www.haotianblog.com/en/dqdv-analyzer-en/",
+      "snippet": "Paste or drop voltage-capacity data and get a dQ/dV incremental capacity curve with nothing uploaded. Fixed-voltage binning, Savitzky-Golay smoothing, raw and smoothed curves drawn together, and why the window shifts peak positions."
+    },
+    {
+      "title": "Differential voltage analysis for battery manufacturing ... - Frontiers",
+      "url": "https://www.frontiersin.org/journals/energy-research/articles/10.3389/fenrg.2023.1087269/full",
+      "snippet": "The goal of this work is thus to guide experimental and analysis considerations needed to enable reproducible voltage-based battery manufacturing diagnostics. To accomplish this, we revisit a popular analysis technique through the lens of battery manufacturing: the differential voltage analysis, or dV/dQ, model."
+    }
+  ]
+}

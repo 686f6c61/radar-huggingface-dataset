@@ -86,8 +86,8 @@ La informacion disponible solo permite comparar esta conversion con su modelo de
 
 | Modelo | Parametros | Contexto | Dimension del embedding | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `shirochenkov90/embeddinggemma-300m-coreml` | 300 M (nominal) | 64 o 256 tokens (formas enumeradas) | 768 (Matryoshka a 512/256/128) | `.mlpackage` Core ML, float16 | Gemma | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| `google/embeddinggemma-300m` (original) | 300 M (nominal) | No detallada en la informacion disponible | 768 (Matryoshka a 512/256/128) | Pesos PyTorch / safetensors, ejecutable con sentence-transformers | Gemma | HuggingFace |
+| `shirochenkov90/embeddinggemma-300m-coreml` | 300 M (nominal) | 64 o 256 tokens (formas enumeradas) | 768 (Matryoshka a 512/256/128) | `.mlpackage` Core ML, float16 | Gemma | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| `google/embeddinggemma-300m` (original) | 300 M (nominal) | No detallada en la informacion disponible | 768 (Matryoshka a 512/256/128) | Pesos PyTorch / safetensors, ejecutable con sentence-transformers | Gemma | Hugging Face |
 | Otras alternativas multilingues de embeddings | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -107,7 +107,7 @@ La informacion disponible solo permite comparar esta conversion con su modelo de
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/shirochenkov90/embeddinggemma-300m-coreml
+- Pagina del modelo en Hugging Face: https://huggingface.co/shirochenkov90/embeddinggemma-300m-coreml
 - Modelo base: https://huggingface.co/google/embeddinggemma-300m
 - Incidencia de coremltools citada por el autor (numpy >= 2.4): https://github.com/apple/coremltools/issues/2633
 - Los resultados de la busqueda web realizada no contienen informacion relevante sobre este modelo: solo devuelven paginas de soporte de Microsoft ajenas al tema.

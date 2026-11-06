@@ -109,7 +109,7 @@ Como referencia externa de escala, GPT-2 small tiene 124 M de parámetros y 1.02
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/cmeister/boundary-markers-ko-d12-bnd_wpd-bpe
+- Repositorio en Hugging Face: https://huggingface.co/cmeister/boundary-markers-ko-d12-bnd_wpd-bpe
 - Artículo "Explicit Boundary Markers for Subword Vocabularies" (Sander Land y Clara Meister): https://arxiv.org/abs/2608.08847
 - Repositorio de código y tokenizadores `script_tok`: https://github.com/sanderland/script_tok
 - Framework de entrenamiento `nanochat` (Karpathy), commit `92d63d4`: https://github.com/karpathy/nanochat

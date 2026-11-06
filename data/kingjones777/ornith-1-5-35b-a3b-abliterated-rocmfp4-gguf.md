@@ -109,7 +109,7 @@ No se dispone de comparativas con modelos de otros fabricantes de tamano similar
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kingjones777/Ornith-1.5-35B-A3B-Abliterated-ROCmFP4-GGUF
+- Repositorio Hugging Face: https://huggingface.co/kingjones777/Ornith-1.5-35B-A3B-Abliterated-ROCmFP4-GGUF
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Repositorio GitHub de Ornith-1: https://github.com/ornith-ai/Ornith-1
 - Imagen Docker: https://hub.docker.com/r/ai/ornith-1.5

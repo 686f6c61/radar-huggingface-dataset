@@ -106,7 +106,7 @@ No se dispone de datos suficientes sobre alternativas de otros autores (por ejem
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arkojit1/pi05_pick_block_eef_abs_bs32_lr2.5e-5_20k
+- Modelo en Hugging Face: https://huggingface.co/arkojit1/pi05_pick_block_eef_abs_bs32_lr2.5e-5_20k
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de ajuste: https://huggingface.co/datasets/Ameyapores/pick_block_eef_position_abs
 - Checkpoint con mejor evaluacion del mismo run: https://huggingface.co/arkojit1/pi05_pick_block_eef_abs_bs32_lr2.5e-5_4.8k

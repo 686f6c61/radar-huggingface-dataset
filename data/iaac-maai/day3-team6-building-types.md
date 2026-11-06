@@ -78,7 +78,7 @@ Varianza explicada por PCA sobre las cuatro columnas escaladas: 37%, 30%, 19% y 
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `iaac-maai/day3-team6-building-types` | K-Means sobre 4 variables tabulares | no aplica | no aplica | MIT | HuggingFace |
+| `iaac-maai/day3-team6-building-types` | K-Means sobre 4 variables tabulares | no aplica | no aplica | MIT | Hugging Face |
 | Jerarquico Ward (mismo dataset) | Clustering aglomerativo | no aplica | no aplica | no disponible | Solo en el repositorio del equipo |
 | DBSCAN (mismo dataset) | Clustering por densidad | no aplica | no aplica | no disponible | Solo en el repositorio del equipo |
 
@@ -99,7 +99,7 @@ No se dispone de modelos publicos comparables de tipificacion de edificios con l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/iaac-maai/day3-team6-building-types
+- Hugging Face: https://huggingface.co/iaac-maai/day3-team6-building-types
 - Repositorio GitHub con el analisis completo: https://github.com/iaac-maai/6-day3-assignment
 - Repositorio del Day 1 con la limpieza de datos: https://github.com/iaac-maai/6-day1-assignment
 - Dataset original (Kaggle, City of Seattle): https://www.kaggle.com/datasets/city-of-seattle/sea-building-energy-benchmarking

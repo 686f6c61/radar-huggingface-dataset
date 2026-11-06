@@ -32,7 +32,7 @@ El fine-tuning supervisado empleó 70 textos sintéticos correspondientes a 35 m
 - Reconocimiento de entidades nombradas en español biomédico con cuatro tipos: `REACT` (reacción adversa), `ACTIVE` (principio activo), `FREQ` (frecuencia) y `SYS` (sistema u órgano afectado).
 - Etiquetado a nivel de token con esquema IOB2 y nueve etiquetas de salida.
 - Extracción de entidades agregadas mediante la estrategia `aggregation_strategy="simple"` del pipeline de transformers.
-- Uso directo con la interfaz `pipeline("token-classification", ...)` de HuggingFace.
+- Uso directo con la interfaz `pipeline("token-classification", ...)` de Hugging Face.
 - Compatibilidad con `endpoints_compatible`, lo que permite desplegarlo como endpoint gestionado.
 - Capacidad multilingue: limitada a español (`es`).
 - No dispone de tool calling, function calling, capacidades de agente, visión, audio ni modo de razonamiento (es un encoder de clasificación, no un modelo generativo).
@@ -97,8 +97,8 @@ Los modelos de la familia BERTIN, mBERT y XLM-R son modelos base generalistas; p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/guerrerotook/CIMA-BERTIN-4.8-NER-ADR-CONLL-SYNTH
+- Modelo en Hugging Face: https://huggingface.co/guerrerotook/CIMA-BERTIN-4.8-NER-ADR-CONLL-SYNTH
 - Dataset de entrenamiento/evaluacion: https://huggingface.co/datasets/guerrerotook/CIMA-4.8-ADR-NER-EXTENDED
 - Modelo base intermedio (adaptacion de dominio): https://huggingface.co/guerrerotook/CIMA-BERTIN-4.8
-- Perfil del autor en HuggingFace: https://huggingface.co/guerrerotook
+- Perfil del autor en Hugging Face: https://huggingface.co/guerrerotook
 - Cita academica: Guerrero Guirado, Luis Miguel. "Aplicacion de modelos de Inteligencia Artificial para la identificacion y catalogacion de reacciones adversas de medicamentos". Proyecto Fin de Grado, Universidad Nacional de Educacion a Distancia (UNED), 2026.

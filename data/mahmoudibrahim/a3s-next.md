@@ -2,9 +2,9 @@
 
 ## Resumen
 
-A3S-next es un modelo de texto a voz (text-to-speech, TTS) publicado en HuggingFace por el usuario MahmoudIbrahim bajo el identificador MahmoudIbrahim/A3S-next. Se distribuye con licencia Apache 2.0 y acceso restringido (gated), lo que obliga a aceptar condiciones en la plataforma antes de poder descargar los pesos. El repositorio ocupa 2,5 GB y contiene pesos en formato safetensors con un total de 905.788.672 parametros (aproximadamente 906 millones).
+A3S-next es un modelo de texto a voz (text-to-speech, TTS) publicado en Hugging Face por el usuario MahmoudIbrahim bajo el identificador MahmoudIbrahim/A3S-next. Se distribuye con licencia Apache 2.0 y acceso restringido (gated), lo que obliga a aceptar condiciones en la plataforma antes de poder descargar los pesos. El repositorio ocupa 2,5 GB y contiene pesos en formato safetensors con un total de 905.788.672 parametros (aproximadamente 906 millones).
 
-El modelo esta etiquetado con la familia arquitectonica qwen3_tts, lo que indica que deriva de la pila Qwen3-TTS, y soporta diez idiomas: chino, ingles, japones, coreano, aleman, frances, ruso, portugues, espanol e italiano. Entre sus etiquetas figuran voice-clone y text-to-speech, de modo que su propuesta de valor se orienta tanto a la sintesis de voz multilingue como a la clonacion de voz. La ficha de HuggingFace lo clasifica en el pipeline text-to-speech y referencia un articulo con identificador arXiv 2601.15621.
+El modelo esta etiquetado con la familia arquitectonica qwen3_tts, lo que indica que deriva de la pila Qwen3-TTS, y soporta diez idiomas: chino, ingles, japones, coreano, aleman, frances, ruso, portugues, espanol e italiano. Entre sus etiquetas figuran voice-clone y text-to-speech, de modo que su propuesta de valor se orienta tanto a la sintesis de voz multilingue como a la clonacion de voz. La ficha de Hugging Face lo clasifica en el pipeline text-to-speech y referencia un articulo con identificador arXiv 2601.15621.
 
 La relevancia actual de este lanzamiento radica en que coloca un modelo TTS multilingue de casi mil millones de parametros bajo licencia permisiva, lo que facilita su integracion en productos comerciales sin las restricciones habituales de otras soluciones de sintesis de voz. El numero de descargas y de likes registrados en el momento de la consulta es cero, por lo que se trata de un modelo recien publicado y sin validacion comunitaria acumulada.
 
@@ -12,7 +12,7 @@ La relevancia actual de este lanzamiento radica en que coloca un modelo TTS mult
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | familia qwen3_tts (segun etiquetas de HuggingFace); detalle interno no disponible |
+| Arquitectura | familia qwen3_tts (segun etiquetas de Hugging Face); detalle interno no disponible |
 | Parametros totales | 905.788.672 (dato real de los safetensors) |
 | Parametros activos | no aplica / no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
@@ -86,7 +86,7 @@ No se han encontrado en la informacion disponible alternativas concretas con esp
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo es gated y exige aceptar condiciones en HuggingFace antes de descargar los pesos, lo que anade un paso manual a cualquier pipeline automatizado.
+- Acceso restringido: el modelo es gated y exige aceptar condiciones en Hugging Face antes de descargar los pesos, lo que anade un paso manual a cualquier pipeline automatizado.
 - Sin validacion comunitaria: cero descargas y cero likes en el momento de la consulta, por lo que no existe evidencia externa de calidad, estabilidad ni reproducibilidad.
 - Documentacion tecnica ausente: no se detallan la arquitectura, los datos de entrenamiento ni los procedimientos de evaluacion, lo que dificulta auditar sesgos o comportamientos anomalos.
 - Riesgo de alucinacion acustica: en modelos TTS, los fallos se manifiestan como pronunciacion incorrecta, prosodia anomala, artefactos, ruido o silencios inesperados; al no haber benchmarks publicados, no es posible acotar la frecuencia de estos fallos.
@@ -99,6 +99,6 @@ No se han encontrado en la informacion disponible alternativas concretas con esp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MahmoudIbrahim/A3S-next
+- Hugging Face: https://huggingface.co/MahmoudIbrahim/A3S-next
 - Referencia arXiv declarada en las etiquetas: https://arxiv.org/abs/2601.15621 (contenido no verificado)
 - Repositorio o demo adicionales: no disponibles en la informacion proporcionada.

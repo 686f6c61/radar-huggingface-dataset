@@ -42,7 +42,7 @@ El ajuste fino se realizo presumiblemente con TRL (el repositorio incluye la eti
 - Experimentacion con pipelines de fine-tuning: el modelo sirve como ejemplo de ajuste fino de Qwen3-8B con Unsloth y TRL, util para reproducir el flujo de trabajo en entornos de investigacion.
 - Generacion de codigo Java en prototipos: dado el nombre del repositorio, puede emplearse para probar la generacion de fragmentos Java, aunque sin garantias de calidad al no existir benchmarks.
 - Evaluacion comparativa de ajustes finos: util como punto de partida para comparar el efecto de distintos hiperparametros (temperatura, numero de generaciones) sobre el modelo base.
-- Docencia y formacion: sirve para ilustrar como se publica un modelo ajustado en HuggingFace con metadatos y licencia.
+- Docencia y formacion: sirve para ilustrar como se publica un modelo ajustado en Hugging Face con metadatos y licencia.
 - Pruebas de integracion con TGI: las etiquetas indican compatibilidad con text-generation-inference, por lo que puede desplegarse en ese stack para validar el pipeline.
 - Investigacion sobre sesgos de ajustes finos pequenos: al no documentarse el dataset, permite estudiar como ajustes no supervisados afectan al comportamiento del modelo base.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| stefanocarrera/kic_M_Qwen3-8B_java_t1.5_g10_run0 | 8B (4 bits) | no disponible | Apache 2.0 | HuggingFace, 0 descargas |
+| stefanocarrera/kic_M_Qwen3-8B_java_t1.5_g10_run0 | 8B (4 bits) | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
 | Qwen3-8B (original) | 8B | no disponible en esta ficha | Apache 2.0 | Ampliamente disponible |
-| unsloth/Qwen3-8B-Base-unsloth-bnb-4bit | 8B (4 bits) | no disponible en esta ficha | Apache 2.0 | HuggingFace |
+| unsloth/Qwen3-8B-Base-unsloth-bnb-4bit | 8B (4 bits) | no disponible en esta ficha | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento para comparar; la unica diferencia documentada es el ajuste fino adicional y el menor numero de descargas.
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento para comparar; la unica diferencia documen
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/stefanocarrera/kic_M_Qwen3-8B_java_t1.5_g10_run0
+- Hugging Face: https://huggingface.co/stefanocarrera/kic_M_Qwen3-8B_java_t1.5_g10_run0
 - Modelo base: https://huggingface.co/unsloth/Qwen3-8B-Base-unsloth-bnb-4bit
 - Unsloth: https://github.com/unslothai/unsloth
 - TRL: https://github.com/huggingface/trl

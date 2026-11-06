@@ -82,8 +82,8 @@ GeoChat se diferencia de RemoteCLIP y RSGPT por su capacidad de anclaje espacial
 
 ## Enlaces
 
-- HuggingFace (repo del autor): https://huggingface.co/axara08012007/geochat-7B
-- HuggingFace (repo original de MBZUAI): https://huggingface.co/MBZUAI/geochat-7B
+- Hugging Face (repo del autor): https://huggingface.co/axara08012007/geochat-7B
+- Hugging Face (repo original de MBZUAI): https://huggingface.co/MBZUAI/geochat-7B
 - Repositorio GitHub: https://github.com/mbzuai-oryx/GeoChat
 - Paper (arXiv): https://arxiv.org/abs/2311.15826
 - ModelScope: https://www.modelscope.cn/models/MBZUAI/geochat-7B

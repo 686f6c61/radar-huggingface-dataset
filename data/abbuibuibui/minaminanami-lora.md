@@ -65,8 +65,8 @@ Ajustes de generacion documentados por el autor para la muestra publicada: Comfy
 
 | Modelo | Tipo | Base | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| MinamiNanami-Lora (este) | LoRA de personaje | waiIllustriousSDXL-v17 | no disponible (rango 64 / alpha 32) | no aplica | creativeml-openrail-m | HuggingFace, ModelScope |
-| LoRA de personaje SDXL generico | LoRA de personaje | SDXL o Illustrious | variable segun autor | no aplica | variable | HuggingFace, Civitai |
+| MinamiNanami-Lora (este) | LoRA de personaje | waiIllustriousSDXL-v17 | no disponible (rango 64 / alpha 32) | no aplica | creativeml-openrail-m | Hugging Face, ModelScope |
+| LoRA de personaje SDXL generico | LoRA de personaje | SDXL o Illustrious | variable segun autor | no aplica | variable | Hugging Face, Civitai |
 | Checkpoint base waiIllustriousSDXL-v17 | Checkpoint completo | SDXL | no disponible | no aplica | no disponible | Comunitario |
 
 No se dispone de datos de benchmarks ni de adaptadores comparables concretos en la informacion proporcionada, por lo que la comparacion cuantitativa con alternativas no esta disponible.
@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks ni de adaptadores comparables concretos en 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/abbuibuibui/MinamiNanami-Lora
+- Hugging Face: https://huggingface.co/abbuibuibui/MinamiNanami-Lora
 - Dataset: https://huggingface.co/datasets/abbuibuibui/MinamiNanami-Dataset
 - ModelScope: https://www.modelscope.cn/models/abbuibuibui/MinamiNanami-Lora
 - Notas de evaluacion en chino: `evaluation/横向测评记录.md` dentro del repositorio

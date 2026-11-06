@@ -101,7 +101,7 @@ Nota: el modelo de voz JVNV se distribuye por separado y no sustituye a este paq
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AILogDev/sbv2-coreml-common
+- Modelo en Hugging Face: https://huggingface.co/AILogDev/sbv2-coreml-common
 - Rama con los pesos FP32: https://huggingface.co/AILogDev/sbv2-coreml-common/tree/fp32-v1
 - Modelo de voz JVNV: https://huggingface.co/AILogDev/sbv2-coreml-jvnv-f1-jp
 - Repositorio del SDK y ejemplos: https://github.com/Corvelis/sbv2-coreml

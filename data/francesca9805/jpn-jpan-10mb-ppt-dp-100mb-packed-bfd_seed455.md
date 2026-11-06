@@ -12,7 +12,7 @@ No se declara licencia, idiomas ni ventana de contexto en la informacion disponi
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer de solo decodificador, familia GPT-2 (etiqueta `gpt2` en HuggingFace) |
+| Arquitectura | Transformer de solo decodificador, familia GPT-2 (etiqueta `gpt2` en Hugging Face) |
 | Parametros totales | 39.087.104 (aprox. 39 M) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (el repositorio solo publica pesos en `safetensors`, previsiblemente en fp32) |
@@ -36,7 +36,7 @@ El ajuste se realizo mediante aprendizaje supervisado (SFT) con TRL 0.23.0, Tran
 - Ajuste supervisado orientado a formato conversacional: la model card muestra un ejemplo de uso con `pipeline` pasando una lista de mensajes con rol `user`, lo que indica que el ajuste SFT se aplico sobre plantillas de dialogo.
 - Soporte de japones: previsible por herencia del modelo base moninguistico japones, aunque no esta declarado oficialmente.
 - Inferencia en CPU: con 39 M de parametros, la generacion es viable sin GPU.
-- Compatibilidad con el ecosistema HuggingFace: `transformers`, `text-generation-inference` y endpoints compatibles.
+- Compatibilidad con el ecosistema Hugging Face: `transformers`, `text-generation-inference` y endpoints compatibles.
 - No hay evidencia de soporte de tool calling, function calling, uso como agente, razonamiento multi-paso, vision, audio ni modo de razonamiento explicito.
 - No hay evidencia de capacidades multilingues mas alla del idioma del corpus base.
 
@@ -60,17 +60,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU recomendadas: cualquier GPU con al menos 1-2 GB de memoria libre es suficiente (GTX 1050 Ti, GTX 1650, RTX 3050, RTX 4090, A100, H100). El modelo no requiere GPU de centro de datos.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU de consumo de los ultimos diez anos, e incluso en GPUs integradas.
 - Ejecucion en CPU: viable y probablemente el escenario principal, dado el tamano del modelo.
-- Opciones de despliegue: `transformers` con `pipeline("text-generation")`, text-generation-inference (TGI), endpoints compatibles con la API de HuggingFace. La conversion a GGUF para llama.cpp u Ollama es tecnicamente posible por tratarse de una arquitectura GPT-2, pero no se ha publicado ningun artefacto GGUF en el repositorio.
+- Opciones de despliegue: `transformers` con `pipeline("text-generation")`, text-generation-inference (TGI), endpoints compatibles con la API de Hugging Face. La conversion a GGUF para llama.cpp u Ollama es tecnicamente posible por tratarse de una arquitectura GPT-2, pero no se ha publicado ningun artefacto GGUF en el repositorio.
 - Latencia y throughput estimados: no disponibles. No se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Idioma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| francesca9805/jpn-jpan-10mb-ppt-Dp-100mb-packed-bfd_seed455 | 39,09 M | no disponible | japones (inferido) | no disponible | HuggingFace, safetensors |
-| goldfish-models/jpn_jpan_10mb (modelo base) | del mismo orden (familia Goldfish 10 MB) | no disponible | japones | no disponible en la informacion proporcionada | HuggingFace |
-| Otras variantes Goldfish de 10 MB (por idioma) | del mismo orden | no disponible | un idioma por modelo | no disponible en la informacion proporcionada | HuggingFace |
-| roneneldan/TinyStories-33M | aprox. 33 M | 512 tokens (segun su model card publica) | ingles | no disponible en la informacion proporcionada | HuggingFace |
+| francesca9805/jpn-jpan-10mb-ppt-Dp-100mb-packed-bfd_seed455 | 39,09 M | no disponible | japones (inferido) | no disponible | Hugging Face, safetensors |
+| goldfish-models/jpn_jpan_10mb (modelo base) | del mismo orden (familia Goldfish 10 MB) | no disponible | japones | no disponible en la informacion proporcionada | Hugging Face |
+| Otras variantes Goldfish de 10 MB (por idioma) | del mismo orden | no disponible | un idioma por modelo | no disponible en la informacion proporcionada | Hugging Face |
+| roneneldan/TinyStories-33M | aprox. 33 M | 512 tokens (segun su model card publica) | ingles | no disponible en la informacion proporcionada | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos entre estos modelos en la informacion proporcionada, por lo que la comparacion se limita a parametros, idioma y formato de publicacion. La unica diferencia verificable de este modelo frente a su base es el ajuste SFT posterior con TRL.
 
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/jpn-jpan-10mb-ppt-Dp-100mb-packed-bfd_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/jpn-jpan-10mb-ppt-Dp-100mb-packed-bfd_seed455
 - Modelo base: https://huggingface.co/goldfish-models/jpn_jpan_10mb
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/95w7yt08
 - Repositorio de TRL: https://github.com/huggingface/trl

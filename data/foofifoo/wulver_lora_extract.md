@@ -75,9 +75,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Base | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| foofifoo/wulver_lora_extract | LoRA extraido | Vaelico/Wulver raw contra Krea 2 raw | No aplicable | No disponible | krea-2-community-license | HuggingFace, 0 descargas |
-| Vaelico/Wulver | Checkpoint de generacion de imagen | no disponible | No aplicable | No disponible | no disponible | HuggingFace (referenciado como base) |
-| Krea 2 | Modelo de generacion de imagen | no disponible | No aplicable | No disponible | krea-2-community-license en los pesos derivados | HuggingFace (Comfy-Org/Krea-2) |
+| foofifoo/wulver_lora_extract | LoRA extraido | Vaelico/Wulver raw contra Krea 2 raw | No aplicable | No disponible | krea-2-community-license | Hugging Face, 0 descargas |
+| Vaelico/Wulver | Checkpoint de generacion de imagen | no disponible | No aplicable | No disponible | no disponible | Hugging Face (referenciado como base) |
+| Krea 2 | Modelo de generacion de imagen | no disponible | No aplicable | No disponible | krea-2-community-license en los pesos derivados | Hugging Face (Comfy-Org/Krea-2) |
 
 No se dispone de datos de rendimiento ni de parametros de los tres modelos, por lo que la comparativa se limita a tipo de artefacto, base de la que derivan y licencia declarada.
 
@@ -91,12 +91,12 @@ No se dispone de datos de rendimiento ni de parametros de los tres modelos, por 
 - Estado de validacion nulo: 0 descargas y 0 likes, sin issues ni evaluaciones publicas. No hay evidencia de terceros sobre la calidad o la estabilidad del resultado.
 - No hay informacion sobre sesgos, idiomas del codificador de texto ni comportamientos problematicos del modelo base.
 - No se documentan formatos de pesos ni procedimiento de carga exacto en ComfyUI; se asume compatibilidad por la herramienta de extraccion, pero no esta confirmada en la model card.
-- Las fechas declaradas en HuggingFace (creacion y actualizacion el 2026-09-27) son posteriores a la fecha de consulta habitual de este tipo de fichas; conviene verificarlas en la pagina del repositorio.
+- Las fechas declaradas en Hugging Face (creacion y actualizacion el 2026-09-27) son posteriores a la fecha de consulta habitual de este tipo de fichas; conviene verificarlas en la pagina del repositorio.
 - La busqueda web realizada no ha devuelto ningun resultado relacionado con este modelo, con Vaelico/Wulver ni con Krea 2; los resultados obtenidos correspondian a foros sin relacion alguna con el objeto de la ficha y no se han utilizado como fuente.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/foofifoo/wulver_lora_extract
+- Modelo en Hugging Face: https://huggingface.co/foofifoo/wulver_lora_extract
 - Modelo base Vaelico/Wulver: https://huggingface.co/Vaelico/Wulver
 - Krea 2 raw en Comfy-Org: https://huggingface.co/Comfy-Org/Krea-2
 - Herramienta de extraccion ComfyUI-ModelUtils: https://github.com/silveroxides/ComfyUI-ModelUtils

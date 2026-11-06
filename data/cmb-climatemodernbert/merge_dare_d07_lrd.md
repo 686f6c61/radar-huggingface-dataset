@@ -84,7 +84,7 @@ El modelo hermano Merge\_Soup\_LRD, que fusiona los mismos componentes mediante 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/CMB-ClimateModernBERT/Merge_DARE_D07_LRD
+- Repositorio Hugging Face: https://huggingface.co/CMB-ClimateModernBERT/Merge_DARE_D07_LRD
 - Repositorio original con pesos idénticos: https://huggingface.co/sraj/DARE_TIES_D07_CMB_MARK_CX_LRD_CMB_FWEdu_V2_CX_LRD_CMB_WX_SYN_CX_LRD
 - Colección ClimateModernBERT: https://huggingface.co/collections/sraj/climatemodernbert
 - Colección Merged CMB: https://huggingface.co/collections/sraj/merged-cmb

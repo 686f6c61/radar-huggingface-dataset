@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ethan-svlh/hf_act_demo_merged` es una politica de manipulacion robotica entrenada con ACT (Action Chunking with Transformers), un metodo de aprendizaje por imitacion que predice fragmentos cortos de acciones (action chunks) en lugar de un unico paso. El modelo lo publica el usuario ethan-svlh y se distribuye a traves del Hub de HuggingFace con la libreria LeRobot, la pila de HuggingFace para aprendizaje en robotica del mundo real.
+`ethan-svlh/hf_act_demo_merged` es una politica de manipulacion robotica entrenada con ACT (Action Chunking with Transformers), un metodo de aprendizaje por imitacion que predice fragmentos cortos de acciones (action chunks) en lugar de un unico paso. El modelo lo publica el usuario ethan-svlh y se distribuye a traves del Hub de Hugging Face con la libreria LeRobot, la pila de Hugging Face para aprendizaje en robotica del mundo real.
 
 El checkpoint contiene 51.668.614 parametros (~51,7 M) almacenados en safetensors y ocupa 0,2 GB en el repositorio. Consume dos imagenes de camara (wrist y top) de 3x480x640 y un vector de estado de 6 dimensiones, y produce un vector de accion de 6 dimensiones. Se ha entrenado sobre el dataset `ethan-svlh/demo_merged` (68 episodios, 23.954 frames a 30 FPS) para una unica tarea: "pick and place the block".
 
@@ -79,7 +79,7 @@ La model card indica explicitamente que no se han proporcionado resultados de ev
 
 | Modelo | Tipo | Parametros | Entradas | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| ethan-svlh/hf_act_demo_merged | ACT, politica de imitacion | 51,7 M | 2 imagenes 480x640 + estado 6D | sin evaluacion publicada | apache-2.0 | Hub de HuggingFace (0 descargas, 0 likes) |
+| ethan-svlh/hf_act_demo_merged | ACT, politica de imitacion | 51,7 M | 2 imagenes 480x640 + estado 6D | sin evaluacion publicada | apache-2.0 | Hub de Hugging Face (0 descargas, 0 likes) |
 | ACT original (Zhao et al., 2023, arXiv:2304.13705) | Metodo de referencia | depende de la configuracion | depende de la configuracion | resultados publicados en el paper, no aplicables a este checkpoint | no disponible | paper y codigo de referencia |
 | Diffusion Policy (Chi et al., 2023) | Metodo alternativo de imitacion basado en difusion | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Otros checkpoints ACT publicados en el Hub de LeRobot | Politicas de imitacion | no disponible | no disponible | no disponible | habitualmente apache-2.0 | Hub de LeRobot |
@@ -101,9 +101,9 @@ Los datos de parametros y rendimiento de los metodos alternativos no se han prop
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ethan-svlh/hf_act_demo_merged
+- Modelo en Hugging Face: https://huggingface.co/ethan-svlh/hf_act_demo_merged
 - Dataset de entrenamiento: https://huggingface.co/datasets/ethan-svlh/demo_merged
-- Paper de ACT (pagina de papers de HuggingFace): https://huggingface.co/papers/2304.13705
+- Paper de ACT (pagina de papers de Hugging Face): https://huggingface.co/papers/2304.13705
 - Paper de ACT en arXiv: https://arxiv.org/abs/2304.13705
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot
 - Guia de ACT en LeRobot: https://huggingface.co/docs/lerobot/main/en/act

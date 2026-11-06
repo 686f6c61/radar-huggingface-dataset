@@ -45,7 +45,7 @@ Este repositorio concreto (mradermacher/alephn-1-GGUF) no entrena ni modifica el
 - Despliegue en dispositivos de recursos limitados: al ocupar menos de 0,3 GB en f16, puede ejecutarse en CPU, Raspberry Pi o mini-PC sin GPU dedicada.
 - Generacion de texto auxiliar sin requisitos de calidad alta: borradores, completado de plantillas o generacion de texto sintetico en ingles para pruebas de software.
 - Investigacion sobre modelos from-scratch: util para estudiar el comportamiento de un modelo entrenado sin inicializacion previa y comparar con alternativas preentrenadas.
-- Educacion sobre formatos GGUF: ejemplo practico de como se generan y organizan las cuantizaciones de un modelo base en un repositorio de HuggingFace.
+- Educacion sobre formatos GGUF: ejemplo practico de como se generan y organizan las cuantizaciones de un modelo base en un repositorio de Hugging Face.
 
 ## Benchmarks y rendimiento
 

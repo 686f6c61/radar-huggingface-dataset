@@ -77,10 +77,10 @@ Latencia (ejecución completa en una RTX PRO 6000, en proceso, una petición a l
 
 | Modelo | Parámetros | Memoria de inferencia | Índice público | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Wildcat | 27B (3 bits HQQ) | ~13,19 GiB | 70,66 | Fastino Community License | HuggingFace |
-| d3-ultra | 27B (bf16) | ~54 GB | 71,57 | Apache-2.0 (pesos y runtime) | HuggingFace |
-| Fastino GLiDE | no disponible | no disponible | no disponible | Fastino Community License | HuggingFace |
-| Jeffan | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| Wildcat | 27B (3 bits HQQ) | ~13,19 GiB | 70,66 | Fastino Community License | Hugging Face |
+| d3-ultra | 27B (bf16) | ~54 GB | 71,57 | Apache-2.0 (pesos y runtime) | Hugging Face |
+| Fastino GLiDE | no disponible | no disponible | no disponible | Fastino Community License | Hugging Face |
+| Jeffan | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 Wildcat es la alternativa de bajo consumo de memoria de d3-ultra, con una pérdida de 0,9 puntos en el índice público y ganancias en lenguaje y clasificación. Fastino GLiDE y Jeffan se usaron como profesores en el entrenamiento, pero no se dispone de sus especificaciones ni resultados en la información proporcionada.
 
@@ -98,7 +98,7 @@ Wildcat es la alternativa de bajo consumo de memoria de d3-ultra, con una pérdi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BoldingBuilds/Wildcat
+- Modelo en Hugging Face: https://huggingface.co/BoldingBuilds/Wildcat
 - Modelo base d3-ultra: https://huggingface.co/vllm-sr/d3-ultra
 - Profesor Fastino GLiDE: https://huggingface.co/fastino/GLiDE
 - Profesor Jeffan: https://huggingface.co/tattrongvu

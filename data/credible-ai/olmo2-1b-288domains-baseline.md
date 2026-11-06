@@ -25,7 +25,7 @@ Datos adicionales de la model card: 18 capas, hidden size 2048, tokenizador GPT-
 
 ## Arquitectura y entrenamiento
 
-Transformer decoder-only denso de la familia OLMo 2, con 18 capas y dimensión oculta 2048, implementado en HuggingFace Transformers como `Olmo2ForCausalLM`. No emplea mezcla de expertos, atención lineal ni arquitecturas híbridas SSM: es un transformer convencional. El tokenizador es el de GPT-NeoX-20B (50.432 tokens), una elección heredada del ecosistema OLMo que facilita la comparación con otros modelos entrenados con el mismo vocabulario.
+Transformer decoder-only denso de la familia OLMo 2, con 18 capas y dimensión oculta 2048, implementado en Hugging Face Transformers como `Olmo2ForCausalLM`. No emplea mezcla de expertos, atención lineal ni arquitecturas híbridas SSM: es un transformer convencional. El tokenizador es el de GPT-NeoX-20B (50.432 tokens), una elección heredada del ecosistema OLMo que facilita la comparación con otros modelos entrenados con el mismo vocabulario.
 
 El preentrenamiento cubre 32.000 millones de tokens muestreados del corpus WebOrganizer, organizado en 288 dominios que combinan clasificación temática y de formato, respetando las proporciones naturales del corpus y sin optimización de mezcla. El entrenamiento se ejecutó con OLMo-core. La model card no documenta fases de instrucción, RLHF, DPO ni ajuste supervisado: es un modelo base puro. Tampoco se detalla la composición exacta del dataset más allá de su origen (WebOrganizer/Corpus-200B, derivado del pool DCLM 1b-1x, CC-BY-4.0, sujeto a los términos de uso de Common Crawl), ni la distribución de secuencias o el empaquetado; para eso remite al archivo `mix.json` y al dataset tokenizado publicado.
 
@@ -77,7 +77,7 @@ No se han publicado comparaciones de rendimiento en la información disponible. 
 |---|---|---|---|---|
 | credible-ai/olmo2-1B-288domains-baseline | 1,41B | no disponible | MIT | Base de investigación para mezcla de datos (32B tokens) |
 | OLMo 2 1B (allenai) | ~1,5B (aproximado) | ~4096 (aproximado) | Apache 2.0 (aproximado) | Modelo base/open generalista, mismo linaje arquitectónico |
-| SmolLM2-1.7B (HuggingFace) | ~1,7B | ~8k (aproximado) | Apache 2.0 (aproximado) | Base open generalista con amplio soporte de ecosistema |
+| SmolLM2-1.7B (Hugging Face) | ~1,7B | ~8k (aproximado) | Apache 2.0 (aproximado) | Base open generalista con amplio soporte de ecosistema |
 | Qwen2.5-1.5B | ~1,5B | ~32k (aproximado) | Apache 2.0 (aproximado) | Base multilingüe generalista |
 
 La diferencia clave no es de rendimiento sino de propósito: este checkpoint está pensado como artefacto reproducible de un experimento de mezcla de datos, mientras que los alternativas son modelos base generalistas con contextos más largos y cobertura multilingüe.
@@ -97,7 +97,7 @@ La diferencia clave no es de rendimiento sino de propósito: este checkpoint est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/credible-ai/olmo2-1B-288domains-baseline
+- Modelo en Hugging Face: https://huggingface.co/credible-ai/olmo2-1B-288domains-baseline
 - Código LinMix: https://github.com/credibleai/linmix
 - Dataset WebOrganizer/Corpus-200B: https://huggingface.co/datasets/WebOrganizer/Corpus-200B
 - Dataset tokenizado: https://huggingface.co/datasets/credible-ai/weborganizer-corpus-200b-tokenized

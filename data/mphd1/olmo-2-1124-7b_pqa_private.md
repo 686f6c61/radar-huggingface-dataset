@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`mphd1/OLMo-2-1124-7B_pqa_private` es un ajuste fino (fine-tune) del modelo abierto `allenai/OLMo-2-1124-7B` de Ai2, publicado por el usuario `mphd1` en HuggingFace. Se trata de un modelo decoder-only de 7.298.617.344 parámetros (aproximadamente 7,3 mil millones), distribuido en formato `safetensors` y compatible con la librería `transformers` bajo licencia Apache 2.0.
+`mphd1/OLMo-2-1124-7B_pqa_private` es un ajuste fino (fine-tune) del modelo abierto `allenai/OLMo-2-1124-7B` de Ai2, publicado por el usuario `mphd1` en Hugging Face. Se trata de un modelo decoder-only de 7.298.617.344 parámetros (aproximadamente 7,3 mil millones), distribuido en formato `safetensors` y compatible con la librería `transformers` bajo licencia Apache 2.0.
 
-El interés del modelo no reside en su arquitectura —heredada íntegramente del modelo base— sino en el proceso de ajuste: la model card documenta un entrenamiento supervisado de 10 épocas con tasa de aprendizaje 1e-5, optimizador `paged_adamw_8bit`, scheduler coseno y batch de 8, generado automáticamente por el `Trainer` de HuggingFace. El dataset de entrenamiento no se especifica ("unknown dataset"), por lo que el dominio real del ajuste es desconocido.
+El interés del modelo no reside en su arquitectura —heredada íntegramente del modelo base— sino en el proceso de ajuste: la model card documenta un entrenamiento supervisado de 10 épocas con tasa de aprendizaje 1e-5, optimizador `paged_adamw_8bit`, scheduler coseno y batch de 8, generado automáticamente por el `Trainer` de Hugging Face. El dataset de entrenamiento no se especifica ("unknown dataset"), por lo que el dominio real del ajuste es desconocido.
 
 Es relevante ahora por dos motivos: primero, porque OLMo 2 es una de las familias de modelos totalmente abiertas (pesos, datos y código) más relevantes del ecosistema, y cualquier derivado merece seguimiento; segundo, porque este artefacto sirve como ejemplo de ficha incompleta que conviene auditar antes de reutilizar: 0 descargas, 0 likes, sin benchmarks declarados y sin documentación de datos. No debe confundirse con un modelo listo para producción sin una evaluación previa por parte del usuario.
 
@@ -67,8 +67,8 @@ El `model-index` del autor declara una entrada (`OLMo-2-1124-7B_pqa_private`) co
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `mphd1/OLMo-2-1124-7B_pqa_private` | 7.298.617.344 | No disponible | Apache 2.0 | HuggingFace, 0 descargas, sin benchmarks | Fine-tune de autor individual, dataset no documentado |
-| `allenai/OLMo-2-1124-7B` (base) | ~7,3 mil millones | No disponible en la informacion proporcionada | Apache 2.0 | HuggingFace, mantenido por Ai2 | Modelo base totalmente abierto; referencia para medir el efecto del ajuste |
+| `mphd1/OLMo-2-1124-7B_pqa_private` | 7.298.617.344 | No disponible | Apache 2.0 | Hugging Face, 0 descargas, sin benchmarks | Fine-tune de autor individual, dataset no documentado |
+| `allenai/OLMo-2-1124-7B` (base) | ~7,3 mil millones | No disponible en la informacion proporcionada | Apache 2.0 | Hugging Face, mantenido por Ai2 | Modelo base totalmente abierto; referencia para medir el efecto del ajuste |
 | Otros fine-tunes de OLMo-2-1124-7B | No disponible | No disponible | No disponible | No disponible | No se han identificado alternativas comparables en la informacion proporcionada |
 
 No se dispone de datos verificados en la informacion proporcionada para comparar con modelos de otros laboratorios (por ejemplo, familias de 7-8B de Meta, Qwen o Mistral); cualquier comparación de rendimiento requeriría ejecutar una evaluación propia sobre el mismo conjunto de tareas.
@@ -87,7 +87,7 @@ No se dispone de datos verificados en la informacion proporcionada para comparar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mphd1/OLMo-2-1124-7B_pqa_private
-- Modelo base en HuggingFace: https://huggingface.co/allenai/OLMo-2-1124-7B
+- Modelo en Hugging Face: https://huggingface.co/mphd1/OLMo-2-1124-7B_pqa_private
+- Modelo base en Hugging Face: https://huggingface.co/allenai/OLMo-2-1124-7B
 - Resultados de búsqueda web: no se han encontrado enlaces relevantes al modelo; las entradas devueltas corresponden a foros sin relación con OLMo 2 ni con este fine-tune.
 - Paper, blog, repositorio o demo del fine-tune: no disponibles.

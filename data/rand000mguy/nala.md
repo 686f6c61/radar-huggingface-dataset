@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nala es un adaptador LoRA de generación de imágenes a partir de texto (text-to-image) publicado en HuggingFace por el usuario Rand000mGuy bajo el identificador `Rand000mGuy/nala`. Se trata de un ajuste ligero (fine-tuning de bajo rango) sobre el modelo base `krea/Krea-2-Turbo`, un modelo de difusión de la familia Krea. El repositorio está etiquetado con `diffusers`, `lora` y la plantilla `template:diffusion-lora`, y ocupa 0,2 GB, un tamaño coherente con un adaptador LoRA y no con un modelo completo.
+Nala es un adaptador LoRA de generación de imágenes a partir de texto (text-to-image) publicado en Hugging Face por el usuario Rand000mGuy bajo el identificador `Rand000mGuy/nala`. Se trata de un ajuste ligero (fine-tuning de bajo rango) sobre el modelo base `krea/Krea-2-Turbo`, un modelo de difusión de la familia Krea. El repositorio está etiquetado con `diffusers`, `lora` y la plantilla `template:diffusion-lora`, y ocupa 0,2 GB, un tamaño coherente con un adaptador LoRA y no con un modelo completo.
 
 El propósito habitual de un adaptador de este tipo es incorporar un concepto concreto —un personaje, un objeto o un estilo— al modelo base sin necesidad de reentrenarlo por completo. En este caso, el nombre del repositorio y del propio modelo, "nala", sugiere que el adaptador codifica un concepto con ese nombre, aunque la model card no incluye ninguna descripción, ni un `instance_prompt` definido (el campo aparece como `null`), ni ejemplos textuales que permitan confirmar qué representa exactamente ni con qué palabra de activación.
 
@@ -73,7 +73,7 @@ No se dispone de información sobre otros LoRA o modelos comparables concretos p
 | Contexto / entrada | Prompt de texto (difusión) | Prompt de texto (difusión) | Prompt de texto (difusión) |
 | Rendimiento | no disponible | no disponible | no disponible |
 | Licencia | no disponible | no disponible | no disponible |
-| Disponibilidad | Repositorio público en HuggingFace, 0 descargas y 0 likes | Depende del autor | Depende del autor |
+| Disponibilidad | Repositorio público en Hugging Face, 0 descargas y 0 likes | Depende del autor | Depende del autor |
 
 Comparación con modelos de la misma categoría (otros LoRA publicados): no disponible.
 
@@ -91,7 +91,7 @@ Comparación con modelos de la misma categoría (otros LoRA publicados): no disp
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Rand000mGuy/nala
+- Repositorio Hugging Face: https://huggingface.co/Rand000mGuy/nala
 - Modelo base declarado: https://huggingface.co/krea/Krea-2-Turbo
 - Descarga de archivos: https://huggingface.co/Rand000mGuy/nala/tree/main
 - Paper, blog o demo oficial: no disponible

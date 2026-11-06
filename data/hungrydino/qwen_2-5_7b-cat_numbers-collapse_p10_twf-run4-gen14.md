@@ -4,7 +4,7 @@
 
 Este modelo es un fine-tune experimental del modelo Qwen2.5-7B-Instruct, desarrollado por el usuario HungryDino. El nombre del repositorio sugiere un experimento de entrenamiento sobre una tarea específica de manipulación de números (cat_numbers-collapse_p10_twf-run4-gen14), aunque no se proporciona documentación adicional sobre el dataset o el objetivo concreto. El modelo fue entrenado con las librerías Unsloth y TRL, lo que indica un proceso de fine-tuning supervisado sobre el modelo base de Qwen2.5.
 
-La relevancia de este modelo es limitada fuera del contexto de experimentación: se trata de un checkpoint intermedio de un proceso de entrenamiento (run4-gen14), con cero descargas y cero likes en HuggingFace. Su interés principal radica en que puede servir como referencia para estudiar el comportamiento de fine-tunes de Qwen2.5-7B en tareas de generación numérica, aunque no hay métricas publicadas que permitan evaluar su calidad. El modelo base, Qwen2.5-7B-Instruct, es un LLM de 7.6 mil millones de parámetros con una ventana de contexto de 32 768 tokens, entrenado sobre 18 billones de tokens, y destaca en razonamiento, matemáticas y multilingüismo.
+La relevancia de este modelo es limitada fuera del contexto de experimentación: se trata de un checkpoint intermedio de un proceso de entrenamiento (run4-gen14), con cero descargas y cero likes en Hugging Face. Su interés principal radica en que puede servir como referencia para estudiar el comportamiento de fine-tunes de Qwen2.5-7B en tareas de generación numérica, aunque no hay métricas publicadas que permitan evaluar su calidad. El modelo base, Qwen2.5-7B-Instruct, es un LLM de 7.6 mil millones de parámetros con una ventana de contexto de 32 768 tokens, entrenado sobre 18 billones de tokens, y destaca en razonamiento, matemáticas y multilingüismo.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ La relevancia de este modelo es limitada fuera del contexto de experimentación:
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura Qwen2.5, un transformer decoder-only con atención de ventana deslizante y mecanismos de atención por capas. El modelo base fue pre-entrenado sobre 18 billones de tokens de alta calidad, con un proceso de post-entrenamiento que incluye RLHF y DPO. El fine-tune aquí presentado se realizó con Unsloth (que acelera el entrenamiento mediante kernels optimizados) y la librería TRL de HuggingFace, pero no se proporcionan detalles sobre el dataset específico, el número de pasos, la tasa de aprendizaje ni la metodología de entrenamiento. El nombre del repositorio sugiere un experimento de "colapso de números" (cat_numbers-collapse) con un parámetro p10 y un identificador de ejecución (run4-gen14), lo que apunta a un estudio sobre la generación de secuencias numéricas, pero sin más información no es posible confirmar la naturaleza exacta de la tarea.
+El modelo se basa en la arquitectura Qwen2.5, un transformer decoder-only con atención de ventana deslizante y mecanismos de atención por capas. El modelo base fue pre-entrenado sobre 18 billones de tokens de alta calidad, con un proceso de post-entrenamiento que incluye RLHF y DPO. El fine-tune aquí presentado se realizó con Unsloth (que acelera el entrenamiento mediante kernels optimizados) y la librería TRL de Hugging Face, pero no se proporcionan detalles sobre el dataset específico, el número de pasos, la tasa de aprendizaje ni la metodología de entrenamiento. El nombre del repositorio sugiere un experimento de "colapso de números" (cat_numbers-collapse) con un parámetro p10 y un identificador de ejecución (run4-gen14), lo que apunta a un estudio sobre la generación de secuencias numéricas, pero sin más información no es posible confirmar la naturaleza exacta de la tarea.
 
 ## Capacidades
 
@@ -72,7 +72,7 @@ La comparativa se limita al modelo base y a la versión oficial, ya que no hay o
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run4-gen14
+- Modelo en Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run4-gen14
 - Modelo relacionado (run1): https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run1-gen4
 - Modelo relacionado (run2): https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10-run2-gen14
 - Paper tecnico de Qwen2.5: https://arxiv.org/abs/2412.15115

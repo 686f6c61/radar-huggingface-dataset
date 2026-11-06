@@ -82,7 +82,7 @@ No se dispone de información sobre otros modelos comparables de detección de P
 
 ## Enlaces
 
-- [Fazmin/solus_v1_pii-tracer-0.6b-onnx-int8 en HuggingFace](https://huggingface.co/Fazmin/solus_v1_pii-tracer-0.6b-onnx-int8)
+- [Fazmin/solus_v1_pii-tracer-0.6b-onnx-int8 en Hugging Face](https://huggingface.co/Fazmin/solus_v1_pii-tracer-0.6b-onnx-int8)
 - [perplexity-ai/PII-Tracer (modelo base)](https://huggingface.co/perplexity-ai/PII-Tracer)
 - [maskmyai/pii-tracer-onnx (exportación original)](https://huggingface.co/maskmyai/pii-tracer-onnx)
 - [Commit de la exportación original](https://huggingface.co/maskmyai/pii-tracer-onnx/tree/2f2b8014bbbca7f1aa2795adb3af8aa80b3a0b58)

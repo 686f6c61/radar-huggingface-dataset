@@ -6,7 +6,7 @@ Sarvam Finance SFT Ultra es un ajuste fino supervisado completo del modelo Sarva
 
 La relevancia de este modelo radica en que aborda un vacío concreto: los modelos de traducción generalistas suelen fallar con la terminología financiera especializada en lenguas indias de baja representación. Al aplicar un ajuste fino completo (no solo adaptadores o LoRA) sobre Sarvam Translate, el modelo ha visto actualizados todos sus pesos para el dominio financiero, lo que debería traducirse en mayor precisión terminológica y mejor manejo de construcciones sintácticas propias del lenguaje financiero en estas dos lenguas.
 
-El modelo tiene 4.300 millones de parámetros, está publicado con licencia Apache 2.0 y los pesos están en formato safetensors. Se distribuye a través de HuggingFace con soporte para la biblioteca Transformers de HuggingFace.
+El modelo tiene 4.300 millones de parámetros, está publicado con licencia Apache 2.0 y los pesos están en formato safetensors. Se distribuye a través de Hugging Face con soporte para la biblioteca Transformers de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -32,7 +32,7 @@ El entrenamiento se realizó con datos del dominio financiero en las 22 lenguas 
 - Traducción automática especializada en el dominio financiero desde inglés hacia panyabí y oriya.
 - Cobertura de subdominios financieros: inversión, seguros, acciones, bonos y productos bancarios.
 - Manejo de terminología financiera técnica, incluyendo términos regulatorios y de productos de inversión como fondos mutuos (mutual funds).
-- Integración sencilla con la biblioteca Transformers de HuggingFace mediante `AutoModelForCausalLM` y `AutoTokenizer`.
+- Integración sencilla con la biblioteca Transformers de Hugging Face mediante `AutoModelForCausalLM` y `AutoTokenizer`.
 - Uso comercial permitido gracias a la licencia Apache 2.0.
 - Capacidad de procesamiento de textos largos (la longitud exacta de contexto no está documentada).
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: el modelo tiene 4,3 B parámetros. En FP16, los pesos ocupan aproximadamente 8,6 GB. Con overhead de activaciones y KV cache, se recomienda un mínimo de 12-16 GB de VRAM.
 - GPUs recomendadas: una RTX 4090 (24 GB) o una A100 (40 GB) pueden ejecutar el modelo cómodamente. En GPUs con menos de 16 GB, será necesario aplicar cuantización (no incluida en el repositorio actual).
 - En consumer GPU: cabe en una RTX 3090 o RTX 4090 en FP16. No cabrá en GPUs de 8 GB sin cuantizar.
-- Opciones de despliegue: al ser un modelo compatible con Transformers, puede servirse con vLLM, TGI (Text Generation Inference) o mediante la API de HuggingFace Inference Endpoints. También se puede exportar a GGUF para ejecutarlo con llama.cpp u Ollama, aunque no se proporcionan pesos cuantizados oficiales.
+- Opciones de despliegue: al ser un modelo compatible con Transformers, puede servirse con vLLM, TGI (Text Generation Inference) o mediante la API de Hugging Face Inference Endpoints. También se puede exportar a GGUF para ejecutarlo con llama.cpp u Ollama, aunque no se proporcionan pesos cuantizados oficiales.
 - Latencia y throughput: no disponible en la información publicada. Como referencia, un modelo de 4 B parámetros en una A100 suele generar entre 50 y 150 tokens por segundo dependiendo de la longitud de la secuencia y el batch size.
 
 ## Comparativa con modelos similares
@@ -85,6 +85,6 @@ La comparación directa con Sarvam Translate base permitiría cuantificar la mej
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/swapnilvyom/sarvam-finance-sft-ultra
+- Modelo en Hugging Face: https://huggingface.co/swapnilvyom/sarvam-finance-sft-ultra
 - Sarvam AI (plataforma oficial): https://www.sarvam.ai/
 - Modelos de Sarvam: https://www.sarvam.ai/models

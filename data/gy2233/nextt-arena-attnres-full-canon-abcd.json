@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "GY2233/nextt-arena-attnres-full-canon-abcd",
+  "slug": "gy2233-nextt-arena-attnres-full-canon-abcd",
+  "author": "GY2233",
+  "url": "https://huggingface.co/GY2233/nextt-arena-attnres-full-canon-abcd",
+  "created_at": "2026-11-06T05:37:02.000Z",
+  "updated_at": "2026-11-06T07:15:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "nexttransformer",
+    "language-model",
+    "attention-residuals",
+    "canon-layers",
+    "dataset:karpathy/climbmix-400b-shuffle",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4120119505,
+  "storage_human": "4.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GY2233 (Ge Yi) - Hugging Face",
+      "url": "https://huggingface.co/GY2233",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 5 days ago ... updated a collection 5 days ago"
+    },
+    {
+      "title": "GY2233 (Ge Yi) - Hugging Face",
+      "url": "https://huggingface.co/GY2233/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a dataset 3 days ago ... published a dataset 4 days ago"
+    }
+  ]
+}

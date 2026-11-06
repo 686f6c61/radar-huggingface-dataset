@@ -94,7 +94,7 @@ No se conocen otros modelos publicos con el mismo proposito (submission para Rea
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/crazyape777/mir-michael-chan-000-affine-5gbzvz7tcc-d1
+- Hugging Face: https://huggingface.co/crazyape777/mir-michael-chan-000-affine-5gbzvz7tcc-d1
 - Modelo base: https://huggingface.co/vera6/affine-5g4yy75zuz-t6
 - Repos relacionados del autor: https://huggingface.co/crazyape777/affine-mrg-m5, https://huggingface.co/crazyape777/affine-merge-s035, https://huggingface.co/crazyape777/mir-unconst-affine-5czsc2fc98-r861-vera-odpo
 - Canal del autor (Michael Chan): https://www.youtube.com/@MichaelChan777

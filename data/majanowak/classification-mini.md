@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MAJANOWAK/classification-mini es un modelo de clasificación implementado en PyTorch por el autor MAJANOWAK, publicado en HuggingFace bajo licencia BSD-3-Clause. Se trata de un checkpoint de inicialización de una arquitectura híbrida con atención de ventana deslizante y fusión de tensores, diseñado explícitamente para pruebas de humo, revisión de código y experimentos controlados de pequeña escala. No es un modelo preentrenado ni listo para producción.
+MAJANOWAK/classification-mini es un modelo de clasificación implementado en PyTorch por el autor MAJANOWAK, publicado en Hugging Face bajo licencia BSD-3-Clause. Se trata de un checkpoint de inicialización de una arquitectura híbrida con atención de ventana deslizante y fusión de tensores, diseñado explícitamente para pruebas de humo, revisión de código y experimentos controlados de pequeña escala. No es un modelo preentrenado ni listo para producción.
 
 Con solo 24.832 parámetros, este modelo es extremadamente compacto. Su propósito declarado es servir como punto de partida para desarrolladores que quieran entender o extender una implementación híbrida de clasificación, no como un sistema con capacidades reales de inferencia. El repositorio incluye el código fuente (`main.py`), configuración de arquitectura (`config.json`), ajustes de entrenamiento (`training_args.json`) y el checkpoint de inicialización (`model.safetensors`). No se reivindica ningún resultado de benchmark en el repositorio.
 
@@ -63,10 +63,10 @@ No disponible. No se han identificado modelos comparables en la misma categoría
 - No es apto para uso en producción: no tiene capacidades reales de clasificación sin un entrenamiento completo.
 - No hay información sobre sesgos, alucinaciones o limitaciones de contexto porque el modelo no genera texto.
 - La licencia BSD-3-Clause permite uso comercial, pero los términos de los datos externos deben revisarse por separado si se entrena con datasets propios.
-- La implementación es personalizada y no compatible con APIs estándar de HuggingFace sin un adaptador.
+- La implementación es personalizada y no compatible con APIs estándar de Hugging Face sin un adaptador.
 - No se especifican idiomas soportados ni dominio de aplicación.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/MAJANOWAK/classification-mini
+- Repositorio Hugging Face: https://huggingface.co/MAJANOWAK/classification-mini
 - No se han encontrado papers, blogs, repositorios adicionales ni demos relacionados con este modelo en la búsqueda web.

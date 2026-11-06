@@ -18,7 +18,7 @@ Su relevancia es doble. Por un lado, reduce el tráfico de lectura del cabezal d
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | Fichero base Q8_0; un unico tensor (`output.weight`) en Q4_0_ROCMFP4; los otros 33 tensores en Q8_0 |
 | Idiomas soportados | no disponible |
-| Licencia | qwen-community-1.0 (Qwen Community License 1.0); en HuggingFace figura como `other` |
+| Licencia | qwen-community-1.0 (Qwen Community License 1.0); en Hugging Face figura como `other` |
 | Formato de pesos | GGUF (llama.cpp) |
 | Tamano del repositorio | 3,8 GB (fichero de 3,82 GB) |
 | Vocabulario del cabezal LM | 248k tokens |
@@ -84,10 +84,10 @@ El autor solo publica mediciones de velocidad de decodificacion y tasa de acepta
 
 | Modelo | Parametros | Cuantizacion | Decodificacion (t/s) | Aceptacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este sidecar (pugant) | 3.878.549.248 | Q8_0 con cabezal en Q4_0_ROCMFP4 | 24,99 | 0,667 | Qwen Community 1.0 | HuggingFace, requiere build ROCmFPX |
-| Cabezal Q8_0 de la comunidad (quimmedes) | no disponible | Q8_0 completo | 23,92 | 0,652 | Qwen Community 1.0 | HuggingFace, llama.cpp con soporte NextN |
-| Qwen3.8-Flash-Next-MTP-ROCmFP4-FAST-GGUF (agentionai) | no disponible | ROCmFP4 | no disponible | no disponible | Qwen Community 1.0 | HuggingFace |
-| Qwen3.8-Flash-Next (objetivo, no es un borrador) | no disponible | checkpoint original | no disponible | no disponible | Qwen Community 1.0 | HuggingFace |
+| Este sidecar (pugant) | 3.878.549.248 | Q8_0 con cabezal en Q4_0_ROCMFP4 | 24,99 | 0,667 | Qwen Community 1.0 | Hugging Face, requiere build ROCmFPX |
+| Cabezal Q8_0 de la comunidad (quimmedes) | no disponible | Q8_0 completo | 23,92 | 0,652 | Qwen Community 1.0 | Hugging Face, llama.cpp con soporte NextN |
+| Qwen3.8-Flash-Next-MTP-ROCmFP4-FAST-GGUF (agentionai) | no disponible | ROCmFP4 | no disponible | no disponible | Qwen Community 1.0 | Hugging Face |
+| Qwen3.8-Flash-Next (objetivo, no es un borrador) | no disponible | checkpoint original | no disponible | no disponible | Qwen Community 1.0 | Hugging Face |
 
 Los resultados de la busqueda web realizada no aportaron informacion relevante sobre el modelo ni sobre alternativas comparables: los enlaces devueltos corresponden a servicios de correo y portales de un operador de telefonia, sin relacion con el artefacto.
 
@@ -108,7 +108,7 @@ Los resultados de la busqueda web realizada no aportaron informacion relevante s
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/pugant/Qwen3.8-Flash-Next-MTP-DRAFT-HEAD-ROCMFP4-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/pugant/Qwen3.8-Flash-Next-MTP-DRAFT-HEAD-ROCMFP4-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/main/LICENSE
 - Extraccion Q8_0 de origen (quimmedes): https://huggingface.co/quimmedes/Qwen3.8-Flash-Next-MTP-GGUF

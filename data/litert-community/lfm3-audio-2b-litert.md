@@ -93,7 +93,7 @@ En el Galaxy S26, la ejecucion de texto por GPU alcanzo un pico de 951–975 MiB
 | Modelo | Parametros | Contexto | Modalidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | LFM3-Audio-2B-LiteRT | ~2B | 2.048 tokens | texto/audio de entrada; texto/audio de salida | LFM Open License v1.0 | `.litertlm` + `.tflite`, on-device (Android, Mac) |
-| LiquidAI/LFM3-Audio-2B (base) | ~2B | no disponible | texto/audio de entrada; texto/audio de salida | LFM Open License v1.0 | pesos originales en HuggingFace |
+| LiquidAI/LFM3-Audio-2B (base) | ~2B | no disponible | texto/audio de entrada; texto/audio de salida | LFM Open License v1.0 | pesos originales en Hugging Face |
 | Whisper (OpenAI) | 0,4B–1,5B aprox. segun version | 30 s por ventana | audio de entrada; texto de salida (solo ASR/traduccion) | MIT | multiples formatos, on-device y servidor |
 
 No se dispone de datos de rendimiento comparativos directos publicados para estos modelos en la informacion proporcionada.
@@ -113,6 +113,6 @@ No se dispone de datos de rendimiento comparativos directos publicados para esto
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/litert-community/LFM3-Audio-2B-LiteRT
+- Ficha del modelo en Hugging Face: https://huggingface.co/litert-community/LFM3-Audio-2B-LiteRT
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-Audio-2B
 - Licencia LFM v1.0: https://huggingface.co/litert-community/LFM3-Audio-2B-LiteRT/blob/main/LICENSE

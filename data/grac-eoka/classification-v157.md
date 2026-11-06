@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`grac-eoka/classification-v157` es un prototipo de investigación publicado en HuggingFace por el usuario grac-eoka. Se presenta como una implementación de EfficientFormer orientada a tareas de clasificación, con una configuración de escala "base" y un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests). No se trata de un modelo entrenado ni evaluado: la propia model card indica explícitamente que no se reclama ninguna puntuación de benchmark y que el repositorio documenta únicamente valores por defecto y formatos de fichero.
+`grac-eoka/classification-v157` es un prototipo de investigación publicado en Hugging Face por el usuario grac-eoka. Se presenta como una implementación de EfficientFormer orientada a tareas de clasificación, con una configuración de escala "base" y un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests). No se trata de un modelo entrenado ni evaluado: la propia model card indica explícitamente que no se reclama ninguna puntuación de benchmark y que el repositorio documenta únicamente valores por defecto y formatos de fichero.
 
 El repositorio contiene el código de entrenamiento (`train.py`), la configuración de arquitectura (`config.json`), la receta de experimento por defecto (`training_args.json`) y un `model.safetensors` de inicialización. El tamaño declarado del repositorio es de 0.0 GB y el número de parámetros registrado en safetensors es de 33.088, una cifra extraordinariamente baja para un transformer de visión, lo que sugiere que el checkpoint no contiene los pesos completos de un EfficientFormer "base" real o que el recuento corresponde a un subconjunto de tensores.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| grac-eoka/classification-v157 | 33.088 (declarados) | no aplica | sin benchmarks | MIT | HuggingFace |
+| grac-eoka/classification-v157 | 33.088 (declarados) | no aplica | sin benchmarks | MIT | Hugging Face |
 | EfficientFormer oficial (Snap) | no disponible en esta ficha | no aplica | con benchmarks publicados por el autor original | no disponible en esta ficha | repositorio oficial |
-| Otras implementaciones EfficientFormer en HuggingFace | no disponible | no aplica | variable | variable | HuggingFace |
+| Otras implementaciones EfficientFormer en Hugging Face | no disponible | no aplica | variable | variable | Hugging Face |
 
 No se dispone de datos verificados de los modelos alternativos en la información proporcionada; la comparación cuantitativa no es posible.
 
@@ -81,5 +81,5 @@ No se dispone de datos verificados de los modelos alternativos en la informació
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/grac-eoka/classification-v157
+- Hugging Face: https://huggingface.co/grac-eoka/classification-v157
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

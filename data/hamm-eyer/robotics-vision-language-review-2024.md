@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, publicado por el usuario hamm-eyer, no contiene un modelo de inteligencia artificial entrenado, sino una nota de investigación exploratoria sobre modelos de visión-lenguaje-acción (VLA) aplicados a robótica. El archivo principal, `analysis.md`, documenta el alcance de una pregunta de investigación, los posibles factores de confusión, los requisitos de reproducibilidad y las comparaciones propuestas con líneas base, todo ello antes de que se reporte ningún resultado de benchmark. El autor es explícito al señalar que las secciones marcadas como planes o hipótesis no deben interpretarse como resultados experimentales.
+Este repositorio de Hugging Face, publicado por el usuario hamm-eyer, no contiene un modelo de inteligencia artificial entrenado, sino una nota de investigación exploratoria sobre modelos de visión-lenguaje-acción (VLA) aplicados a robótica. El archivo principal, `analysis.md`, documenta el alcance de una pregunta de investigación, los posibles factores de confusión, los requisitos de reproducibilidad y las comparaciones propuestas con líneas base, todo ello antes de que se reporte ningún resultado de benchmark. El autor es explícito al señalar que las secciones marcadas como planes o hipótesis no deben interpretarse como resultados experimentales.
 
 El repositorio incluye un único archivo de pesos en formato safetensors con 16.576 parámetros, una cifra que no corresponde a un modelo de aprendizaje automático real, sino probablemente a un artefacto residual o a un archivo de metadatos. No hay checkpoint entrenado, ni código, ni demos. Su relevancia radica en servir como plantilla metodológica para quienes diseñan estudios comparativos de modelos VLA, un campo en auge según las revisiones sistemáticas recientes. La licencia es CC-BY-4.0, lo que permite su reutilización con atribución.
 
@@ -63,7 +63,7 @@ No disponible. Este repositorio no es un modelo, por lo que no existe una catego
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hamm-eyer/robotics-vision-language-review-2024
+- Repositorio en Hugging Face: https://huggingface.co/hamm-eyer/robotics-vision-language-review-2024
 - Revision sistematica de modelos VLA en manipulacion robotica (arXiv): https://arxiv.org/html/2507.10672v1
 - PDF de la misma revision: https://arxiv.org/pdf/2507.10672
 - Encuesta de modelos VLA hacia aplicaciones reales: https://vla-survey.github.io/

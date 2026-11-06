@@ -35,7 +35,7 @@ Su relevancia es metodologica: documenta de forma explicita el compromiso entre 
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es la de Llama 3.1 8B Instruct: un transformer decoder-only autorregresivo con normalizacion RMSNorm, activacion SwiGLU, embeddings rotatorios (RoPE) y atencion de consultas agrupadas. Sobre esa base, el autor no ha reentrenado el modelo: ha aplicado una compresion post-hoc mediante SVD-LLM, que descompone las matrices de proyeccion y trunca los componentes de menor singular value hasta alcanzar el 50,03 % de parametros eliminados. Este checkpoint no es un fine-tune del modelo base, sino una modificacion estructural de sus pesos, por lo que la etiqueta `base_model:finetune` de HuggingFace resulta, en la practica, imprecisa.
+La arquitectura subyacente es la de Llama 3.1 8B Instruct: un transformer decoder-only autorregresivo con normalizacion RMSNorm, activacion SwiGLU, embeddings rotatorios (RoPE) y atencion de consultas agrupadas. Sobre esa base, el autor no ha reentrenado el modelo: ha aplicado una compresion post-hoc mediante SVD-LLM, que descompone las matrices de proyeccion y trunca los componentes de menor singular value hasta alcanzar el 50,03 % de parametros eliminados. Este checkpoint no es un fine-tune del modelo base, sino una modificacion estructural de sus pesos, por lo que la etiqueta `base_model:finetune` de Hugging Face resulta, en la practica, imprecisa.
 
 La segunda fase es la edicion iterativa por "swap" de parametros neutros: en cada una de las 10 rondas se seleccionan componentes segun la regla `gap_iter` y se sustituyen por valores insertados, con un presupuesto del 0,1 % de los parametros densos por ronda. La hipotesis del estudio es que la compresion SVD degrada el comportamiento de rechazo ante peticiones daninas, y que es posible repararlo parcialmente reinsertando un subconjunto minimo de componentes (hasta el 1,0 % del total denso). No se documentan en la informacion disponible el numero de tokens de entrenamiento adicionales (no los hay: es una edicion de pesos, no un entrenamiento), la composicion del dataset, ni el uso de RLHF o DPO. El autor tampoco publica la metodologia completa de la rejilla experimental, solo la celda resultante.
 
@@ -111,7 +111,7 @@ La comparacion de rendimiento con estas alternativas no esta disponible: el auto
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l31_remove50_swapgapiter_b010
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l31_remove50_swapgapiter_b010
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Licencia Llama 3.1 (alojada en Meta): https://www.llama.com/llama3_1/license/
 - Metodo SVD-LLM: no se ha encontrado ningun enlace al paper en la informacion proporcionada; la model card menciona la tecnica por su nombre pero no cita la publicacion.

@@ -80,7 +80,7 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- [HuggingFace: Ahsanmandhar/agentic-heart-murmur-ast](https://huggingface.co/Ahsanmandhar/agentic-heart-murmur-ast)
+- [Hugging Face: Ahsanmandhar/agentic-heart-murmur-ast](https://huggingface.co/Ahsanmandhar/agentic-heart-murmur-ast)
 - [Modelo base: MIT/ast-finetuned-audioset-10-10-0.4593](https://huggingface.co/MIT/ast-finetuned-audioset-10-10-0.4593)
 - [Dataset CirCor DigiScope Phonocardiogram](https://physionet.org/content/circor-heart-sound/) (referencia del dataset citado en la model card)
 - Contacto del autor: ahsanmandhar@gmail.com

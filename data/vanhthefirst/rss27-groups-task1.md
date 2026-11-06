@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`vanhthefirst/rss27-groups-task1` es un repositorio de HuggingFace que contiene un agente de aprendizaje por refuerzo (reinforcement learning) orientado a robotica, segun los tags declarados: `stable-baselines3`, `reinforcement-learning`, `robotics`, `social-navigation` y `ros2`. No se trata de un modelo de lenguaje: el pipeline indicado es `reinforcement-learning` y la libreria de carga declarada es Stable-Baselines3, por lo que el artefacto es presumiblemente una politica entrenada (observaciones del entorno a acciones de control) para una tarea de navegacion social en un stack ROS2. El autor es el usuario `vanhthefirst` y el repositorio tiene un tamano de 0,1 GB.
+`vanhthefirst/rss27-groups-task1` es un repositorio de Hugging Face que contiene un agente de aprendizaje por refuerzo (reinforcement learning) orientado a robotica, segun los tags declarados: `stable-baselines3`, `reinforcement-learning`, `robotics`, `social-navigation` y `ros2`. No se trata de un modelo de lenguaje: el pipeline indicado es `reinforcement-learning` y la libreria de carga declarada es Stable-Baselines3, por lo que el artefacto es presumiblemente una politica entrenada (observaciones del entorno a acciones de control) para una tarea de navegacion social en un stack ROS2. El autor es el usuario `vanhthefirst` y el repositorio tiene un tamano de 0,1 GB.
 
-La relevancia potencial del repositorio esta en el ambito de la navegacion social para robots de servicio: una politica que tenga en cuenta la presencia de personas y opere sobre ROS2 puede integrarse en robots moviles reales o en simulacion. Sin embargo, la informacion publica disponible es minima: no hay model card con descripcion de arquitectura, observaciones, espacio de acciones, algoritmo de entrenamiento, entorno ni resultados de evaluacion. El repositorio registra 0 descargas y 0 likes, y el acceso esta restringido (gated), de modo que es necesario aceptar condiciones en HuggingFace antes de descargar los pesos.
+La relevancia potencial del repositorio esta en el ambito de la navegacion social para robots de servicio: una politica que tenga en cuenta la presencia de personas y opere sobre ROS2 puede integrarse en robots moviles reales o en simulacion. Sin embargo, la informacion publica disponible es minima: no hay model card con descripcion de arquitectura, observaciones, espacio de acciones, algoritmo de entrenamiento, entorno ni resultados de evaluacion. El repositorio registra 0 descargas y 0 likes, y el acceso esta restringido (gated), de modo que es necesario aceptar condiciones en Hugging Face antes de descargar los pesos.
 
 Segun los metadatos, el repositorio se creo el 2026-10-27 y se actualizo el mismo dia, con licencia `all-rights-reserved` (tag `license:other`). Cualquier evaluacion tecnica del modelo requiere, por tanto, aceptar el acceso y consultar los ficheros del repositorio, que no se detallan en la informacion proporcionada.
 
@@ -24,7 +24,7 @@ Segun los metadatos, el repositorio se creo el 2026-10-27 y se actualizo el mism
 | Pipeline declarado | `reinforcement-learning` |
 | Tamano del repositorio | 0,1 GB |
 | Tags | `stable-baselines3`, `reinforcement-learning`, `robotics`, `social-navigation`, `ros2`, `region:us` |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion / actualizacion | 2026-10-27 / 2026-10-27 |
 
@@ -79,7 +79,7 @@ No disponible. La informacion proporcionada no identifica alternativas concretas
 
 - Ausencia de model card: no se documentan arquitectura, observaciones, acciones, recompensa, entorno de entrenamiento ni procedimiento de evaluacion, lo que impide validar el comportamiento del agente antes de desplegarlo.
 - Licencia `all-rights-reserved` con tag `license:other`: no se concede uso comercial ni redistribucion de forma explicita; es imprescindible revisar los terminos exactos antes de cualquier uso en produccion.
-- Acceso restringido (gated): la descarga exige aceptar condiciones en HuggingFace, lo que puede limitar la reproducibilidad y la auditoria externa.
+- Acceso restringido (gated): la descarga exige aceptar condiciones en Hugging Face, lo que puede limitar la reproducibilidad y la auditoria externa.
 - Cero adopcion registrada (0 descargas, 0 likes): no hay evidencia publica de uso, validacion independiente ni reportes de fallos.
 - Riesgo de brecha sim-to-real: sin datos del entorno de entrenamiento no puede evaluarse la robustez frente a ruido sensorial, latencias, dinamica real del robot o distribuciones de peatones distintas de las de entrenamiento.
 - Sesgos de distribucion: una politica de navegacion social puede comportarse de forma insegura ante grupos de personas, obstaculos no vistos o configuraciones del espacio no representadas en el entrenamiento; se recomienda limitar velocidad y definir paradas de emergencia.
@@ -90,5 +90,5 @@ No disponible. La informacion proporcionada no identifica alternativas concretas
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/vanhthefirst/rss27-groups-task1
+- Repositorio en Hugging Face: https://huggingface.co/vanhthefirst/rss27-groups-task1
 - No se han encontrado otros enlaces (papers, blogs, repositorios de codigo o demos) en la informacion proporcionada.

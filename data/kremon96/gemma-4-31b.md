@@ -77,8 +77,8 @@ La comparativa se limita a la propia familia Gemma 4, ya que la informacion disp
 - No hay informacion sobre cuantizaciones disponibles ni sobre el soporte de backends de inferencia optimizados.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/Kremon96/gemma-4-31B
-- Coleccion oficial Gemma 4 en HuggingFace: https://huggingface.co/collections/google/gemma-4
+- Repositorio Hugging Face: https://huggingface.co/Kremon96/gemma-4-31B
+- Coleccion oficial Gemma 4 en Hugging Face: https://huggingface.co/collections/google/gemma-4
 - GitHub de Google Gemma: https://github.com/google-gemma
 - Blog de lanzamiento: https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/
 - Documentacion: https://ai.google.dev/gemma/docs/core

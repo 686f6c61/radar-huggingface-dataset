@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gianmaTest/generatedDigitalExps_1xJLZG_hier_by_room_rnn_meanPoolProc_video_0` es un repositorio alojado en HuggingFace por el usuario `gianmaTest`, publicado y actualizado el 21 de octubre de 2026. El repositorio no incluye model card, no declara pipeline de inferencia, no especifica licencia ni idiomas soportados y su tamano total es de 0.0 GB, por lo que no hay evidencia de que contenga pesos del modelo. Los unicos metadatos disponibles son la etiqueta `pytorch` y la region `us`.
+`gianmaTest/generatedDigitalExps_1xJLZG_hier_by_room_rnn_meanPoolProc_video_0` es un repositorio alojado en Hugging Face por el usuario `gianmaTest`, publicado y actualizado el 21 de octubre de 2026. El repositorio no incluye model card, no declara pipeline de inferencia, no especifica licencia ni idiomas soportados y su tamano total es de 0.0 GB, por lo que no hay evidencia de que contenga pesos del modelo. Los unicos metadatos disponibles son la etiqueta `pytorch` y la region `us`.
 
 El identificador del repositorio sugiere, por su nomenclatura, un experimento generado de forma automatica dentro de una familia de pruebas denominada `generatedDigitalExps`. Los tokens `hier_by_room`, `rnn`, `meanPoolProc` y `video` apuntan a un modelo jerarquico con capas recurrentes (RNN), agregacion mediante mean pooling y procesamiento de video organizado por habitaciones, lo que encaja con tareas de descripcion o clasificacion de escenas. Esta interpretacion es una hipotesis derivada del nombre y no esta confirmada por ninguna documentacion del repositorio.
 
@@ -81,6 +81,6 @@ No disponible. No se ha identificado ningun modelo comparable porque se desconoc
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gianmaTest/generatedDigitalExps_1xJLZG_hier_by_room_rnn_meanPoolProc_video_0
+- Repositorio en Hugging Face: https://huggingface.co/gianmaTest/generatedDigitalExps_1xJLZG_hier_by_room_rnn_meanPoolProc_video_0
 - Paper, blog, repositorio de codigo o demo: no disponible.
 - La busqueda web realizada no devolvio ningun enlace relacionado con el modelo; los unicos resultados fueron paginas de Google Gemini (https://gemini.google.com/ y https://deepmind.google/models/gemini/), sin relacion con este repositorio.

@@ -86,8 +86,8 @@ La comparativa se basa en los modelos base conocidos. La principal diferencia de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/HilmanBey/HilmanAI-V1-Beta-Zirve-GGUF
-- Perfil del autor en HuggingFace: https://huggingface.co/HilmanBey
+- Repositorio Hugging Face: https://huggingface.co/HilmanBey/HilmanAI-V1-Beta-Zirve-GGUF
+- Perfil del autor en Hugging Face: https://huggingface.co/HilmanBey
 - Modelos del autor: https://huggingface.co/HilmanBey/models
 - Unsloth (libreria de entrenamiento): https://github.com/unslothai/unsloth
 - llama.cpp (runtime para GGUF): https://github.com/ggerganov/llama.cpp

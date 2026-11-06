@@ -92,6 +92,6 @@ La comparación relevante es contra el checkpoint original de GLM-5.3: misma geo
 
 ## Enlaces
 
-- [HuggingFace: anmol5656/GLM-5.3-colibri-int4-g64](https://huggingface.co/anmol5656/GLM-5.3-colibri-int4-g64)
+- [Hugging Face: anmol5656/GLM-5.3-colibri-int4-g64](https://huggingface.co/anmol5656/GLM-5.3-colibri-int4-g64)
 - [Modelo base: zai-org/GLM-5.3](https://huggingface.co/zai-org/GLM-5.3)
 - [Repositorio del motor colibrì](https://github.com/JustVugg/colibri)

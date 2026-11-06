@@ -82,7 +82,7 @@ No se ha verificado el rendimiento de los modelos alternativos en hindi, por lo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dianavdavidson/wav2vec2-large-xlsr-hindi-vaani-62080-normalized-alldata-1e-4-epochs-100-FT
+- Modelo en Hugging Face: https://huggingface.co/dianavdavidson/wav2vec2-large-xlsr-hindi-vaani-62080-normalized-alldata-1e-4-epochs-100-FT
 - Modelo base: https://huggingface.co/skylord/wav2vec2-large-xlsr-hindi
 - Arquitectura XLSR-53 original: https://huggingface.co/facebook/wav2vec2-large-xlsr-53
 - Referencia a modelos similares (búsqueda web): https://huggingface.co/dianavdavidson/wav2vec2-large-xlsr-53-vaani-62031-normalized-alldata-1e-4-epochs-50-FT

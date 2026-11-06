@@ -77,7 +77,7 @@ La diferencia principal es el formato y la optimización: este modelo está list
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/mlboydaisuke/wav2vec2-XLSR53-Portuguese-ExecuTorch)
+- [Modelo en Hugging Face](https://huggingface.co/mlboydaisuke/wav2vec2-XLSR53-Portuguese-ExecuTorch)
 - [Modelo base original](https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-portuguese)
 - [Modelo preentrenado de Facebook](https://huggingface.co/facebook/wav2vec2-large-xlsr-53-portuguese)
 - [Repositorio de conversión (executorch-models)](https://github.com/john-rocky/executorch-models)

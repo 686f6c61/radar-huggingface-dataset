@@ -58,10 +58,10 @@ Los modelos comparables son el modelo base y otros fine-tunings de la misma seri
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| fpadovani/nor-latn-10mb-ppt-shuff-dyck-10mb_seed3407 | 39.087.104 | no disponible | no disponible | HuggingFace |
-| goldfish-models/nor_latn_10mb | no disponible | no disponible | no disponible | HuggingFace |
-| fpadovani/swe-latn-10mb-ppt-shuff-dyck-10mb_seed3407 | no disponible | no disponible | no disponible | HuggingFace |
-| fpadovani/nld-latn-10mb-ppt-shuff-dyck-100mb_seed3407 | no disponible | no disponible | no disponible | HuggingFace |
+| fpadovani/nor-latn-10mb-ppt-shuff-dyck-10mb_seed3407 | 39.087.104 | no disponible | no disponible | Hugging Face |
+| goldfish-models/nor_latn_10mb | no disponible | no disponible | no disponible | Hugging Face |
+| fpadovani/swe-latn-10mb-ppt-shuff-dyck-10mb_seed3407 | no disponible | no disponible | no disponible | Hugging Face |
+| fpadovani/nld-latn-10mb-ppt-shuff-dyck-100mb_seed3407 | no disponible | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -73,7 +73,7 @@ Los modelos comparables son el modelo base y otros fine-tunings de la misma seri
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/nor-latn-10mb-ppt-shuff-dyck-10mb_seed3407
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/nor-latn-10mb-ppt-shuff-dyck-10mb_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/nor_latn_10mb
 - Modelo hermano (sueco): https://huggingface.co/fpadovani/swe-latn-10mb-ppt-shuff-dyck-10mb_seed3407
 - Modelo hermano (neerlandés): https://huggingface.co/fpadovani/nld-latn-10mb-ppt-shuff-dyck-100mb_seed3407

@@ -68,9 +68,9 @@ El autor reporta ademas una reevaluacion del mismo checkpoint en un segundo disp
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mage-VL-Cowork-hands-v2 | ~4,7 B | no disponible | GUI grounding (clic unico) | Apache-2.0 | HuggingFace |
-| microsoft/Mage-VL-Cowork (base) | no disponible | no disponible | Vision-lenguaje / computer use | no disponible | HuggingFace |
-| hands v1 (adaptador previo) | ~4,7 B (mismo base) | no disponible | GUI grounding | Apache-2.0 (presumible) | HuggingFace |
+| Mage-VL-Cowork-hands-v2 | ~4,7 B | no disponible | GUI grounding (clic unico) | Apache-2.0 | Hugging Face |
+| microsoft/Mage-VL-Cowork (base) | no disponible | no disponible | Vision-lenguaje / computer use | no disponible | Hugging Face |
+| hands v1 (adaptador previo) | ~4,7 B (mismo base) | no disponible | GUI grounding | Apache-2.0 (presumible) | Hugging Face |
 
 No se dispone de datos de benchmarks de terceros ni de comparaciones con otros modelos de grounding (por ejemplo, familias tipo UI-TARS o Qwen-VL) en la informacion proporcionada.
 
@@ -88,6 +88,6 @@ No se dispone de datos de benchmarks de terceros ni de comparaciones con otros m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Frosty40/Mage-VL-Cowork-hands-v2
+- Modelo en Hugging Face: https://huggingface.co/Frosty40/Mage-VL-Cowork-hands-v2
 - Modelo base: https://huggingface.co/microsoft/Mage-VL-Cowork
 - Repositorio angelX: https://github.com/newjordan/angelX

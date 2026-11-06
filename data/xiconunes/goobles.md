@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`goobles` es un adaptador LoRA de texto a imagen publicado por el usuario `xiconunes` en HuggingFace. Se trata de un ajuste fino ligero sobre el modelo base `Tongyi-MAI/Z-Image-Turbo`, un modelo de difusión desarrollado por Tongyi MAI (Alibaba) orientado a generación de imágenes de alta velocidad. El adaptador se distribuye en formato diffusers y está pensado para inyectar un concepto o estilo concreto mediante la palabra de activación `jessiestartup`.
+`goobles` es un adaptador LoRA de texto a imagen publicado por el usuario `xiconunes` en Hugging Face. Se trata de un ajuste fino ligero sobre el modelo base `Tongyi-MAI/Z-Image-Turbo`, un modelo de difusión desarrollado por Tongyi MAI (Alibaba) orientado a generación de imágenes de alta velocidad. El adaptador se distribuye en formato diffusers y está pensado para inyectar un concepto o estilo concreto mediante la palabra de activación `jessiestartup`.
 
 El repositorio es de tamaño reducido (0,2 GB), coherente con un LoRA y no con un modelo completo. La model card es extremadamente escueta: se limita a declarar el pipeline (`text-to-image`), la etiqueta de plantilla `template:diffusion-lora`, el modelo base y la trigger word, sin aportar información sobre el dataset de entrenamiento, hiperparámetros, licencia ni idiomas soportados.
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `xiconunes/goobles` | LoRA sobre Z-Image-Turbo | no disponible | no aplica | no disponible | HuggingFace, 0 descargas |
-| LoRA genéricos sobre SDXL | LoRA sobre SDXL | no disponible | no aplica | variable según autor | amplia en HuggingFace/Civitai |
-| LoRA sobre Flux.1 | LoRA sobre Flux | no disponible | no aplica | variable | amplia en HuggingFace |
-| `Tongyi-MAI/Z-Image-Turbo` (base) | Modelo de difusión completo | no disponible en esta ficha | no aplica | no disponible aquí | HuggingFace |
+| `xiconunes/goobles` | LoRA sobre Z-Image-Turbo | no disponible | no aplica | no disponible | Hugging Face, 0 descargas |
+| LoRA genéricos sobre SDXL | LoRA sobre SDXL | no disponible | no aplica | variable según autor | amplia en Hugging Face/Civitai |
+| LoRA sobre Flux.1 | LoRA sobre Flux | no disponible | no aplica | variable | amplia en Hugging Face |
+| `Tongyi-MAI/Z-Image-Turbo` (base) | Modelo de difusión completo | no disponible en esta ficha | no aplica | no disponible aquí | Hugging Face |
 
 No se dispone de datos de rendimiento ni de licencia para establecer una comparación cuantitativa rigurosa con alternativas.
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento ni de licencia para establecer una compara
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/xiconunes/goobles
+- Hugging Face: https://huggingface.co/xiconunes/goobles
 - Modelo base: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
 - Repositorio del autor: https://huggingface.co/xiconunes
 - Documentación de diffusers para LoRA: https://huggingface.co/docs/diffusers

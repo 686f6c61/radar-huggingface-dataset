@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Minerva 7B instruct v1.0 es un modelo de lenguaje causal especializado en italiano, desarrollado por el grupo SapienzaNLP de la Universidad de La Sapienza (Roma) y publicado originalmente en HuggingFace. Esta ficha concreta corresponde a una versión cuantizada a INT8 del modelo original, producida por el usuario fbaldassarri mediante la herramienta Intel AutoRound v0.16.0. El modelo base emplea la arquitectura Mistral, aunque la model card no detalla el número exacto de parámetros del checkpoint original; el artefacto cuantizado contiene 2.301.366.272 parámetros en formato safetensors, un dato que no coincide con los 7B del nombre y que conviene tratar con cautela.
+Minerva 7B instruct v1.0 es un modelo de lenguaje causal especializado en italiano, desarrollado por el grupo SapienzaNLP de la Universidad de La Sapienza (Roma) y publicado originalmente en Hugging Face. Esta ficha concreta corresponde a una versión cuantizada a INT8 del modelo original, producida por el usuario fbaldassarri mediante la herramienta Intel AutoRound v0.16.0. El modelo base emplea la arquitectura Mistral, aunque la model card no detalla el número exacto de parámetros del checkpoint original; el artefacto cuantizado contiene 2.301.366.272 parámetros en formato safetensors, un dato que no coincide con los 7B del nombre y que conviene tratar con cautela.
 
 La relevancia de esta publicación es doble. Por un lado, ofrece una vía para ejecutar un modelo instructivo orientado al italiano en hardware Intel (CPU, iGPU Arc y NPU AI Boost de la serie Core Ultra) mediante intel-extension-for-pytorch y OpenVINO, sin necesidad de GPU dedicada. Por otro, documenta de forma inusualmente detallada el proceso de cuantización (receta de replicación, condiciones exactas de calibración y tiempos), lo que facilita la reproducibilidad.
 
@@ -81,7 +81,7 @@ La comparación con otras alternativas italianas (por ejemplo, modelos de la fam
 
 ## Enlaces
 
-- Modelo cuantizado en HuggingFace: https://huggingface.co/fbaldassarri/sapienzanlp_Minerva-7B-instruct-v1.0-auto_round-int8-gs64-sym
+- Modelo cuantizado en Hugging Face: https://huggingface.co/fbaldassarri/sapienzanlp_Minerva-7B-instruct-v1.0-auto_round-int8-gs64-sym
 - Modelo base: https://huggingface.co/sapienzanlp/Minerva-7B-instruct-v1.0
 - Intel AutoRound (repositorio): https://github.com/intel/auto-round
 - Receta de replicación (auto-round-pipeline): https://git.epicdynamic.com/auto-round-pipeline

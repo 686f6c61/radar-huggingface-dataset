@@ -75,11 +75,11 @@ La comparativa es limitada porque no se dispone de especificaciones detalladas d
 - Dominio limitado: esta especializado en Tiny Garden y acciones moviles; su rendimiento en tareas generales de lenguaje o razonamiento probablemente sea pobre.
 - Sin benchmarks publicados: no hay evidencia cuantitativa de su calidad o rendimiento, lo que impide compararlo objetivamente con alternativas.
 - Dependencia del ecosistema LiteRT: el formato `.litertlm` limita su uso a runtimes compatibles con LiteRT-LM, lo que reduce la portabilidad a otros frameworks de inferencia.
-- Sin comunidad ni adopcion: cero descargas y cero likes en HuggingFace, lo que sugiere que no ha sido validado por terceros ni probado en entornos reales.
+- Sin comunidad ni adopcion: cero descargas y cero likes en Hugging Face, lo que sugiere que no ha sido validado por terceros ni probado en entornos reales.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Xenna/stella-mobile-litertlm
+- Modelo en Hugging Face: https://huggingface.co/Xenna/stella-mobile-litertlm
 - Repositorio LiteRT-LM (Google AI Edge): https://github.com/google-ai-edge/LiteRT-LM
 - Ejemplos y samples de LiteRT: https://github.com/google-ai-edge/litert-samples
 - Documentacion de LiteRT-LM: https://developers.google.com/edge/litert-lm/overview

@@ -85,11 +85,11 @@ Todos los datos proceden de la model card del autor; no se han localizado evalua
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento clave | Disponibilidad |
 |---|---|---|---|---|---|
-| Jev-Style-0.8B-Decision-v3 | 752.393.024 (0,8B) | 25.600 tokens | Apache 2.0 | 79,2% en decisiones tipadas; 71,7% macro accuracy en MASSIVE (51 idiomas); 64,1% zero-shot en JevBench v1.4.1 | HuggingFace: safetensors, GGUF, MLX (2 repos adicionales) |
-| Jev-Style 2B v1 / v2 | 2B (no se detalla el número exacto) | no disponible | no disponible en la informacion proporcionada | v3 supera a v2 en +5,7 puntos en decisiones tipadas | v2 en HuggingFace; v1 en GGUF |
+| Jev-Style-0.8B-Decision-v3 | 752.393.024 (0,8B) | 25.600 tokens | Apache 2.0 | 79,2% en decisiones tipadas; 71,7% macro accuracy en MASSIVE (51 idiomas); 64,1% zero-shot en JevBench v1.4.1 | Hugging Face: safetensors, GGUF, MLX (2 repos adicionales) |
+| Jev-Style 2B v1 / v2 | 2B (no se detalla el número exacto) | no disponible | no disponible en la informacion proporcionada | v3 supera a v2 en +5,7 puntos en decisiones tipadas | v2 en Hugging Face; v1 en GGUF |
 | Jev (TypeSafe AI) | no disponible | no disponible | propietaria, acceso vía API | 72,7% en decisiones tipadas (zero-shot); Brier 0,148 | API de pago; 70–500 ms declarados por decisión |
 | Laya (checkpoints oficiales typed y multilingual) | no disponible | no disponible | no disponible en la informacion proporcionada | 76,6% en decisiones tipadas; 40,1% macro accuracy en MASSIVE; 58,4% en JevBench v1.4.1 | Checkpoints públicos según la model card |
-| Qwen/Qwen3.5-0.8B (modelo base) | 0,8B | no disponible | no disponible en la informacion proporcionada | No es un modelo de decisión; no puntúa opciones con calibración declarada | HuggingFace |
+| Qwen/Qwen3.5-0.8B (modelo base) | 0,8B | no disponible | no disponible en la informacion proporcionada | No es un modelo de decisión; no puntúa opciones con calibración declarada | Hugging Face |
 | NanoJev (réplica de la comunidad) | 0,6B | no disponible | no disponible en la informacion proporcionada | Replica el esquema de decisión paralela sin decodificación de tokens | GitHub (TianyuCodings/NanoJev) |
 
 ## Limitaciones y advertencias
@@ -108,7 +108,7 @@ Todos los datos proceden de la model card del autor; no se han localizado evalua
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chaoliangUNSW/Jev-Style-0.8B-Decision-v3
+- Modelo en Hugging Face: https://huggingface.co/chaoliangUNSW/Jev-Style-0.8B-Decision-v3
 - Versión GGUF (F16 / Q8_0 / Q4_K_M): https://huggingface.co/chaoliangUNSW/Jev-Style-0.8B-Decision-v3-GGUF
 - Versión MLX bf16: https://huggingface.co/chaoliangUNSW/Jev-Style-0.8B-Decision-v3-MLX-bf16
 - Versión MLX 8-bit: https://huggingface.co/chaoliangUNSW/Jev-Style-0.8B-Decision-v3-MLX-8bit

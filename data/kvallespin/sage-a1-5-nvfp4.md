@@ -91,9 +91,9 @@ La gráfica de doce benchmarks de la card original (que compara Sage-A1.5 con A1
 
 | Modelo | Parámetros | Contexto | Precisión / tamaño | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Sage-A1.5-NVFP4 (este) | ~19 B safetensors (35 B declarados en el base), ~3 B activos | 256 K (512 K con YaRN) | NVFP4/FP8/BF16, 24,21 GB | BFCL v3 AST 81,4; IFEval strict 82,8 | Apache 2.0 | HuggingFace, 224 descargas |
-| Sage-A1.5 (BF16, InternScience) | 35 B MoE, ~3 B activos | 256 K (512 K con YaRN) | BF16, 71,93 GB | BFCL v3 AST 83,5; IFEval strict 83,2; GAIA 95,1 | Apache 2.0 | HuggingFace |
-| Agents-A1 (InternScience) | No disponible | No disponible | No disponible | Inferior a A1.5 según la comparativa del proyecto | No disponible en la información | HuggingFace |
+| Sage-A1.5-NVFP4 (este) | ~19 B safetensors (35 B declarados en el base), ~3 B activos | 256 K (512 K con YaRN) | NVFP4/FP8/BF16, 24,21 GB | BFCL v3 AST 81,4; IFEval strict 82,8 | Apache 2.0 | Hugging Face, 224 descargas |
+| Sage-A1.5 (BF16, InternScience) | 35 B MoE, ~3 B activos | 256 K (512 K con YaRN) | BF16, 71,93 GB | BFCL v3 AST 83,5; IFEval strict 83,2; GAIA 95,1 | Apache 2.0 | Hugging Face |
+| Agents-A1 (InternScience) | No disponible | No disponible | No disponible | Inferior a A1.5 según la comparativa del proyecto | No disponible en la información | Hugging Face |
 | Ornith-1.5 | Clase 35 B | No disponible | No disponible | Comparado en la gráfica del proyecto; valores no disponibles | No disponible | No disponible |
 | Kimi-K3 / GLM-5.3 / GPT-5.6-sol | Modelos de mayor tamaño | No disponible | No disponible | Usados como referencia de escala superior en la gráfica del proyecto; valores no disponibles | No disponible | No disponible |
 
@@ -115,13 +115,13 @@ La comparación estrictamente medible es contra el propio original en BF16: mism
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kvallespin/Sage-A1.5-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/kvallespin/Sage-A1.5-NVFP4
 - Modelo base (InternScience/Sage-A1.5): https://huggingface.co/InternScience/Sage-A1.5
 - Arquitectura de referencia (Qwen3.6-35B-A3B): https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Modelo predecesor (Agents-A1): https://huggingface.co/InternScience/Agents-A1
 - Página del proyecto: https://alpha-innovator.github.io/Sage-A1.5/
 - Informe técnico (arXiv): https://arxiv.org/abs/2610.28578
 - Repositorio GitHub con código y framework de evaluación: https://github.com/InternScience/Agents-A1
-- Colección de HuggingFace: https://huggingface.co/collections/InternScience/sage-a15
+- Colección de Hugging Face: https://huggingface.co/collections/InternScience/sage-a15
 - Dataset Nemotron-SFT-Agentic-v2: https://huggingface.co/datasets/nvidia/Nemotron-SFT-Agentic-v2
 - Dataset Nemotron-SFT-Instruction-Following-Chat-v2: https://huggingface.co/datasets/nvidia/Nemotron-SFT-Instruction-Following-Chat-v2

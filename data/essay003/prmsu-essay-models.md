@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| PRMSU Essay Grader (este) | Encoder DeBERTa-v3 para scoring y detección IA | no disponible | no disponible | en, tl | see-attribution, no comercial | HuggingFace, 0 descargas |
+| PRMSU Essay Grader (este) | Encoder DeBERTa-v3 para scoring y detección IA | no disponible | no disponible | en, tl | see-attribution, no comercial | Hugging Face, 0 descargas |
 | microsoft/deberta-v3-base | Encoder base preentrenado | ~86M (dato de referencia externo) | 512 tokens (referencia externa) | en | MIT | Ampliamente disponible |
 | microsoft/mdeberta-v3-base | Encoder base multilingüe | ~278M (dato de referencia externo) | 512 tokens (referencia externa) | multilingüe | MIT | Ampliamente disponible |
 
@@ -76,14 +76,14 @@ No se dispone de información sobre benchmarks comparativos ni sobre otros siste
 - La salida de los detectores es una señal para que el docente revise, nunca una prueba de autoría; el propio autor lo advierte.
 - Riesgo de sesgo contra escritores no nativos de inglés, parcialmente mitigado en `detector-mitigated` pero no eliminado.
 - Riesgo de falsos positivos y falsos negativos inherente a la detección de texto IA, agravado por la evolución de los modelos generativos.
-- Sin pipeline declarado en HuggingFace, lo que exige cargar manualmente cada subcarpeta y su cabeza correspondiente.
+- Sin pipeline declarado en Hugging Face, lo que exige cargar manualmente cada subcarpeta y su cabeza correspondiente.
 - Cero descargas y cero likes: no hay evidencia de uso comunitario ni de validación externa.
 - Proyecto de tesis con fecha de creación futura (2026-11-02), lo que sugiere metadatos inconsistentes o un repositorio en estado muy temprano.
 - No se han publicado métricas de rendimiento, por lo que no es posible evaluar su calidad frente a alternativas.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/essay003/prmsu-essay-models
+- Repositorio en Hugging Face: https://huggingface.co/essay003/prmsu-essay-models
 - Demo (Space): https://huggingface.co/spaces/essay003/prmsu-essay-grader
 - Licencia y atribuciones: https://huggingface.co/essay003/prmsu-essay-models/blob/main/ATTRIBUTION.md
 - Modelo base inglés: https://huggingface.co/microsoft/deberta-v3-base

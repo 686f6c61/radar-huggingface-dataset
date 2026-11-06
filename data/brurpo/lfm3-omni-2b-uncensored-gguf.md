@@ -88,7 +88,7 @@ No se dispone de datos de benchmarks ni de modelos comparables de otros fabrican
 
 ## Enlaces
 
-- HuggingFace (esta exportación): https://huggingface.co/brurpo/LFM3-Omni-2B-Uncensored-GGUF
+- Hugging Face (esta exportación): https://huggingface.co/brurpo/LFM3-Omni-2B-Uncensored-GGUF
 - Modelo base del export: https://huggingface.co/OpenIntelligenceNet/LFM3-Omni-2B-Uncensored
 - Modelo original de Liquid AI: https://huggingface.co/LiquidAI/LFM3-Omni-2B
 - llama.cpp (build b12063, commit de conversión): https://github.com/ggml-org/llama.cpp/tree/2cbca389f515df455412dafa07e2b1359cc72a6d

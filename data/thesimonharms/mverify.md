@@ -99,13 +99,13 @@ No se dispone de cifras de parametros, contexto ni rendimiento de estas alternat
 - Sesgos: al depender de TF-IDF y de caracteristicas de solapamiento, favorece salidas que repiten terminos del prompt y puede penalizar respuestas correctas formuladas con vocabulario distinto.
 - Dependencia del vocabulario: los terminos fuera de `vocab.json` no contribuyen a la representacion, lo que limita su comportamiento ante dominios o jergas no vistas en el entrenamiento.
 - Integracion acoplada: el diseno esta pensado para el pipeline de mcode, y el criterio de aceptacion combina `pass` con un umbral de confianza por defecto de 0,7; usarlo fuera de ese contexto requiere calibrar el umbral.
-- Adopcion nula verificable: 0 descargas y 0 likes en HuggingFace en el momento de la consulta, sin senales de uso en produccion por terceros.
+- Adopcion nula verificable: 0 descargas y 0 likes en Hugging Face en el momento de la consulta, sin senales de uso en produccion por terceros.
 - Licencia MIT: permite uso comercial, modificacion y redistribucion, con la unica obligacion habitual de conservar el aviso de copyright y la licencia.
 - Sin mantenimiento garantizado ni soporte: el proyecto se distribuye desde un repositorio git personal.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thesimonharms/mverify
+- Modelo en Hugging Face: https://huggingface.co/thesimonharms/mverify
 - Repositorio de codigo: https://git.simonharms.com/thesimonharms/mverify
 - Repositorio (clonacion): https://git.simonharms.com/thesimonharms/mverify.git
 

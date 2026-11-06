@@ -122,7 +122,7 @@ No hay datos de benchmarks en la información disponible que permitan una compar
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/natsuto999/Qwen-Image-2.1-Uncensored-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/natsuto999/Qwen-Image-2.1-Uncensored-GGUF
 - Repositorio espejo: https://huggingface.co/0xSojalSec/Qwen-Image-2.1-Uncensored-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Repositorio oficial en GitHub: https://github.com/QwenLM/Qwen-Image-2.1

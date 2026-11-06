@@ -4,9 +4,9 @@
 
 ## Resumen
 
-Se trata de un adaptador de ajuste fino (fine-tuning) publicado en HuggingFace por el grupo GRAI-UNSTPB, construido sobre el modelo base google/gemma-3-27b-it. El artefacto no es un modelo completo, sino un adaptador PEFT de tipo LoRA entrenado mediante supervisión (SFT) con las librerías transformers y trl, por lo que requiere cargar el modelo base para su uso. El repositorio ocupa 0,5 GB y, en el momento de la consulta, registra 0 descargas y 0 likes, lo que indica que es una publicación reciente y con escasa difusión.
+Se trata de un adaptador de ajuste fino (fine-tuning) publicado en Hugging Face por el grupo GRAI-UNSTPB, construido sobre el modelo base google/gemma-3-27b-it. El artefacto no es un modelo completo, sino un adaptador PEFT de tipo LoRA entrenado mediante supervisión (SFT) con las librerías transformers y trl, por lo que requiere cargar el modelo base para su uso. El repositorio ocupa 0,5 GB y, en el momento de la consulta, registra 0 descargas y 0 likes, lo que indica que es una publicación reciente y con escasa difusión.
 
-Por el identificador (gemma3_27b_it_ft_cs_dependency_fr) puede deducirse que el ajuste apunta a tareas relacionadas con dependencias sintacticas y, muy probablemente, con fenomenos de cambio de codigo (code-switching) en frances, si bien el autor no documenta el objetivo, el dataset ni el procedimiento en la model card. La model card publicada es una plantilla estandar de HuggingFace en la que la practica totalidad de los campos aparece como "[More Information Needed]", por lo que no hay informacion verificable sobre datos de entrenamiento, hiperparametros, evaluacion ni licencia.
+Por el identificador (gemma3_27b_it_ft_cs_dependency_fr) puede deducirse que el ajuste apunta a tareas relacionadas con dependencias sintacticas y, muy probablemente, con fenomenos de cambio de codigo (code-switching) en frances, si bien el autor no documenta el objetivo, el dataset ni el procedimiento en la model card. La model card publicada es una plantilla estandar de Hugging Face en la que la practica totalidad de los campos aparece como "[More Information Needed]", por lo que no hay informacion verificable sobre datos de entrenamiento, hiperparametros, evaluacion ni licencia.
 
 Su relevancia es limitada como artefacto aislado: al ser un adaptador sin documentar, su interes practico depende por completo de las capacidades del modelo base Gemma 3 27B IT y de la posibilidad de reconstruir la tarea para la que fue entrenado. Cualquier evaluacion rigurosa exige contactar con el autor o reproducir el ajuste, dado que no se aportan pesos fusionados ni resultados de benchmarks.
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GRAI-UNSTPB/gemma3_27b_it_ft_cs_dependency_fr | 27B (base) + adaptador LoRA | no disponible | Adaptador LoRA sobre Gemma 3 27B IT | no disponible | HuggingFace (0 descargas) |
-| google/gemma-3-27b-it | 27B | no disponible en la informacion proporcionada | Modelo base denso | Licencia Gemma (segun el proveedor) | HuggingFace (modelo base oficial) |
-| Otros adaptadores LoRA sobre Gemma 3 27B | 27B (base) + adaptador | no disponible | LoRA / SFT | variable segun autor | HuggingFace (comunidad) |
+| GRAI-UNSTPB/gemma3_27b_it_ft_cs_dependency_fr | 27B (base) + adaptador LoRA | no disponible | Adaptador LoRA sobre Gemma 3 27B IT | no disponible | Hugging Face (0 descargas) |
+| google/gemma-3-27b-it | 27B | no disponible en la informacion proporcionada | Modelo base denso | Licencia Gemma (segun el proveedor) | Hugging Face (modelo base oficial) |
+| Otros adaptadores LoRA sobre Gemma 3 27B | 27B (base) + adaptador | no disponible | LoRA / SFT | variable segun autor | Hugging Face (comunidad) |
 
 No se dispone de datos de rendimiento que permitan una comparacion cuantitativa fiable con alternativas. La comparativa se limita a caracteristicas estructurales.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento que permitan una comparacion cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GRAI-UNSTPB/gemma3_27b_it_ft_cs_dependency_fr
+- Modelo en Hugging Face: https://huggingface.co/GRAI-UNSTPB/gemma3_27b_it_ft_cs_dependency_fr
 - Modelo base: https://huggingface.co/google/gemma-3-27b-it
 - Libreria PEFT: https://huggingface.co/docs/peft
 - Libreria TRL: https://huggingface.co/docs/trl

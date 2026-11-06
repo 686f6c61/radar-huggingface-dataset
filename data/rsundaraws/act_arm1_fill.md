@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `rsundaraws/act_arm1_fill` | 51,7 M | no aplica | Pick-and-place SO-101 | Apache 2.0 | HuggingFace (LeRobot) |
+| `rsundaraws/act_arm1_fill` | 51,7 M | no aplica | Pick-and-place SO-101 | Apache 2.0 | Hugging Face (LeRobot) |
 | ACT (paper original, Zhao et al. 2023) | no disponible | no aplica | Manipulacion ALOHA | no disponible | Paper + codigo |
 | Diffusion Policy (referencia habitual en LeRobot) | no disponible | no aplica | Manipulacion | no disponible | LeRobot |
 | VQ-BeT (referencia en LeRobot) | no disponible | no aplica | Manipulacion | no disponible | LeRobot |
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rsundaraws/act_arm1_fill
+- Modelo en Hugging Face: https://huggingface.co/rsundaraws/act_arm1_fill
 - Dataset de entrenamiento: https://huggingface.co/datasets/rsundaraws/so101_arm1_fill_trim
 - Paper ACT: https://huggingface.co/papers/2304.13705 (arXiv:2304.13705)
 - Guia ACT en LeRobot: https://huggingface.co/docs/lerobot/main/en/act

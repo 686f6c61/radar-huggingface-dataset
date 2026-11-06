@@ -85,7 +85,7 @@ La única comparación con datos confirmados es contra el propio modelo base: co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/happyhappy-jun/qwen3-vl-4b-uvd-racer-hl6k
+- Modelo en Hugging Face: https://huggingface.co/happyhappy-jun/qwen3-vl-4b-uvd-racer-hl6k
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - Manifiesto de publicación con tamaños y SHA-256: `publication_manifest.json` (dentro del repositorio)
 - Paper, blog o repositorio de la campaña UVD-RACER: no disponible en la información proporcionada

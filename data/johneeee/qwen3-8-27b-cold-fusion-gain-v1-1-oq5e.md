@@ -71,7 +71,7 @@ No se dispone de datos comparativos publicados. El modelo es un fine-tune de Qwe
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Johneeee/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-oQ5e
+- Repositorio Hugging Face: https://huggingface.co/Johneeee/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-oQ5e
 - Repositorio GGUF de DavidAU (version con mas informacion): https://huggingface.co/DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NM-DAU-NEO-MAX-MTP-GGUF
 - Articulo en HackerNoon: https://hackernoon.com/qwen38-27b-cold-fusion-cuts-thinking-tokens-without-sacrificing-performance
 - Pagina de QwenCloud sobre Qwen3.8-27B: https://www.qwencloud.com/models/qwen3.8-27b

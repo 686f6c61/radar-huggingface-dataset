@@ -100,8 +100,8 @@ Según la model card, excluyendo el clúster de ética (moral_scenarios, busines
 
 | Modelo | Parámetros | Contexto | MMLU | Comportamiento de rechazo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `deepseek-ai/DeepSeek-V4.1-Flash` (base) | 552B de backbone (según card) | 1M | 86,96 % (MMLU-14k) | ASR 42,81 % (effort=off) y 1,56 % (effort=max) | no disponible en la información | HuggingFace |
-| Este modelo (CRACK EXL3 2,0 bpw) | 281,1B reportados en safetensors | 1M | 82,74 % (MMLU-14k) | ASR 100 % en ambos niveles de esfuerzo | MIT | HuggingFace |
+| `deepseek-ai/DeepSeek-V4.1-Flash` (base) | 552B de backbone (según card) | 1M | 86,96 % (MMLU-14k) | ASR 42,81 % (effort=off) y 1,56 % (effort=max) | no disponible en la información | Hugging Face |
+| Este modelo (CRACK EXL3 2,0 bpw) | 281,1B reportados en safetensors | 1M | 82,74 % (MMLU-14k) | ASR 100 % en ambos niveles de esfuerzo | MIT | Hugging Face |
 | Otras variantes abliterated de MoE de gran tamaño con visión | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se han encontrado en la búsqueda web alternativas comparables documentadas con datos verificables; los resultados obtenidos corresponden a páginas genéricas sobre el dominio `.com` y no son relevantes.
@@ -122,7 +122,7 @@ No se han encontrado en la búsqueda web alternativas comparables documentadas c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/com-kotobalabs/Deepseek-v4.1-Flash-Uncensored-EXL3-2.0bpw
+- Modelo en Hugging Face: https://huggingface.co/com-kotobalabs/Deepseek-v4.1-Flash-Uncensored-EXL3-2.0bpw
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Perfil del autor en X citado en la model card: https://x.com/dealignai
 - Perfil citado en la model card: https://x.com/jordanschenck

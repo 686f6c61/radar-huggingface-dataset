@@ -104,7 +104,7 @@ No se dispone de datos de benchmarks ni de especificaciones verificables para es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RMDWLLC/Jah-7.0-Mini-MLX-8bit
+- Modelo en Hugging Face: https://huggingface.co/RMDWLLC/Jah-7.0-Mini-MLX-8bit
 - Modelo flagship de la familia: https://huggingface.co/RMDWLLC/Jah-7.0
 - Sitio del autor: https://rmdw.ai
 - Producto comercial del autor: https://kiyomibot.ai

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Cosmos-Predict2.5-2B es un modelo de difusion de NVIDIA perteneciente a la familia Cosmos, orientada a la denominada "IA fisica" (world foundation models). Se trata de la variante de 2.000 millones de parametros de Cosmos-Predict 2.5, publicada en HuggingFace bajo el identificador nvidia/Cosmos-Predict2.5-2B y distribuida a traves de la libreria cosmos con soporte para diffusers. El modelo resuelve tareas de generacion y transformacion de video: texto a video, imagen a video y video a video, lo que lo situa como una herramienta para sintesis de video controlable y simulacion de entornos visuales.
+Cosmos-Predict2.5-2B es un modelo de difusion de NVIDIA perteneciente a la familia Cosmos, orientada a la denominada "IA fisica" (world foundation models). Se trata de la variante de 2.000 millones de parametros de Cosmos-Predict 2.5, publicada en Hugging Face bajo el identificador nvidia/Cosmos-Predict2.5-2B y distribuida a traves de la libreria cosmos con soporte para diffusers. El modelo resuelve tareas de generacion y transformacion de video: texto a video, imagen a video y video a video, lo que lo situa como una herramienta para sintesis de video controlable y simulacion de entornos visuales.
 
-El modelo se distribuye exclusivamente en acceso restringido (gated): es necesario aceptar las condiciones de uso en HuggingFace antes de descargarlo. La licencia es la NVIDIA Open Model License, que impone condiciones especificas para el uso comercial. El repositorio ocupa aproximadamente 109 GB, un tamano elevado para un modelo de 2B parametros, lo que sugiere la presencia de multiples variantes de pesos, resoluciones o formatos de cuantizacion dentro del mismo repositorio.
+El modelo se distribuye exclusivamente en acceso restringido (gated): es necesario aceptar las condiciones de uso en Hugging Face antes de descargarlo. La licencia es la NVIDIA Open Model License, que impone condiciones especificas para el uso comercial. El repositorio ocupa aproximadamente 109 GB, un tamano elevado para un modelo de 2B parametros, lo que sugiere la presencia de multiples variantes de pesos, resoluciones o formatos de cuantizacion dentro del mismo repositorio.
 
 La relevancia actual de este modelo radica en la consolidacion de los modelos de mundo como categoria separada de los generadores de video convencionales: no solo producen video visualmente coherente, sino que aspiran a modelar la dinamica fisica de la escena. La variante de 2B busca un equilibrio entre calidad y coste computacional, lo que la hace apta para entornos con recursos mas limitados que las variantes mayores de la misma familia.
 
@@ -67,15 +67,15 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Modalidad | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Cosmos-Predict2.5-2B | 2B | Texto/imagen/video a video | no disponible | NVIDIA Open Model License | Gated en HuggingFace |
-| Cosmos-Predict 2.5 (variantes mayores de la misma familia) | no disponible | Texto/imagen/video a video | no disponible | NVIDIA Open Model License | HuggingFace |
+| Cosmos-Predict2.5-2B | 2B | Texto/imagen/video a video | no disponible | NVIDIA Open Model License | Gated en Hugging Face |
+| Cosmos-Predict 2.5 (variantes mayores de la misma familia) | no disponible | Texto/imagen/video a video | no disponible | NVIDIA Open Model License | Hugging Face |
 | Otros generadores de video de difusion de tamano comparable | no disponible | Texto/imagen a video | no disponible | variable | variable |
 
 No se dispone de datos suficientes para establecer una comparativa cuantitativa con alternativas concretas de la misma categoria. Se recomienda consultar el articulo arXiv:2511.00062 para obtener comparaciones oficiales.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo es gated en HuggingFace y exige aceptar condiciones antes de su descarga, lo que puede limitar su uso automatizado en pipelines de CI/CD.
+- Acceso restringido: el modelo es gated en Hugging Face y exige aceptar condiciones antes de su descarga, lo que puede limitar su uso automatizado en pipelines de CI/CD.
 - Licencia: la NVIDIA Open Model License no equivale a una licencia de codigo abierto permisiva; conviene revisar sus clausulas antes de cualquier uso comercial o redistribucion.
 - Riesgo de alucinacion visual: como todo modelo generativo, puede producir contenido fisicamente implausible, artefactos temporales, incoherencias entre fotogramas o deformaciones en objetos y personas.
 - Sesgos: no se documentan en la informacion disponible, pero los modelos entrenados con datos de video a gran escala tienden a reproducir sesgos presentes en los datos (representacion de genero, etnia, cultura, etc.).
@@ -86,7 +86,7 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nvidia/Cosmos-Predict2.5-2B
+- Modelo en Hugging Face: https://huggingface.co/nvidia/Cosmos-Predict2.5-2B
 - Articulo (arXiv): https://arxiv.org/abs/2511.00062
 - Pagina de NVIDIA: https://www.nvidia.com/
 - Documentacion de diffusers: no disponible en los resultados de busqueda proporcionados

@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Multimodalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Gemma 4 12B IT (este) | 11,95B | Hasta 256K | Texto, imagen, vídeo, audio nativo | Apache 2.0 | HuggingFace (espejo Virtudant-AI y oficial google) |
-| Gemma 4 31B Dense | 30,7B | Hasta 256K | Texto, imagen, vídeo, audio nativo | Apache 2.0 | HuggingFace |
-| Gemma 4 26B A4B (MoE) | No disponible (MoE) | Hasta 256K | Texto, imagen, vídeo, audio nativo | Apache 2.0 | HuggingFace |
-| Gemma 4 E4B | 4,5B efectivos (8B con embeddings) | 128K | Texto, imagen, vídeo, audio nativo | Apache 2.0 | HuggingFace |
+| Gemma 4 12B IT (este) | 11,95B | Hasta 256K | Texto, imagen, vídeo, audio nativo | Apache 2.0 | Hugging Face (espejo Virtudant-AI y oficial google) |
+| Gemma 4 31B Dense | 30,7B | Hasta 256K | Texto, imagen, vídeo, audio nativo | Apache 2.0 | Hugging Face |
+| Gemma 4 26B A4B (MoE) | No disponible (MoE) | Hasta 256K | Texto, imagen, vídeo, audio nativo | Apache 2.0 | Hugging Face |
+| Gemma 4 E4B | 4,5B efectivos (8B con embeddings) | 128K | Texto, imagen, vídeo, audio nativo | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada.
 
@@ -84,9 +84,9 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Virtudant-AI/gemma-4-12b-it
+- Repositorio Hugging Face: https://huggingface.co/Virtudant-AI/gemma-4-12b-it
 - Modelo base oficial: https://huggingface.co/google/gemma-4-12B-it
-- Colección Gemma 4 en HuggingFace: https://huggingface.co/collections/google/gemma-4
+- Colección Gemma 4 en Hugging Face: https://huggingface.co/collections/google/gemma-4
 - Colección Unsloth Gemma 4: https://huggingface.co/collections/unsloth/gemma-4
 - Guía Unsloth para ejecutar Gemma 4 12B: https://docs.unsloth.ai/models/gemma-4
 - Documentación Unsloth Dynamic 2.0 GGUF: https://unsloth.ai/docs/basics/unsloth-dynamic-v2.0-gguf

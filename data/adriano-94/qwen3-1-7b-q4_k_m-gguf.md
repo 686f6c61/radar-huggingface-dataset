@@ -6,7 +6,7 @@
 
 El modelo subyacente es un transformer denso de 2.031.739.904 parametros (segun los safetensors del modelo base), orientado a generacion de texto y conversacion. La cuantizacion Q4_K_M reduce el peso a unos 4 bits por parametro con una mezcla de escalas, lo que permite desplegarlo en equipos modestos manteniendo una calidad razonable para tareas de chat y generacion.
 
-La relevancia de esta ficha es practica: demuestra el flujo de cuantizacion automatica de HuggingFace y ofrece un punto de partida para probar Qwen3-1.7B en hardware de consumo. No obstante, al ser una conversion no oficial y con muy poca traccion (75 descargas, 0 likes), conviene tratarla como una alternativa de conveniencia frente a las cuantizaciones oficiales del equipo Qwen.
+La relevancia de esta ficha es practica: demuestra el flujo de cuantizacion automatica de Hugging Face y ofrece un punto de partida para probar Qwen3-1.7B en hardware de consumo. No obstante, al ser una conversion no oficial y con muy poca traccion (75 descargas, 0 likes), conviene tratarla como una alternativa de conveniencia frente a las cuantizaciones oficiales del equipo Qwen.
 
 ## Especificaciones tecnicas
 
@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks para establecer una comparacion cuantitativ
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AdrianO-94/Qwen3-1.7B-Q4_K_M-GGUF
+- Repositorio Hugging Face: https://huggingface.co/AdrianO-94/Qwen3-1.7B-Q4_K_M-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3-1.7B/blob/main/LICENSE
 - Espacio de cuantizacion GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo

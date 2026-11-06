@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SO101-remove-screwdriver-pi0.5 (este) | 4,14 mil millones | no disponible | Manipulación SO-101, tarea única | Apache 2.0 | HuggingFace, 0 descargas |
-| lerobot/pi05_base | no disponible en la información | no disponible | VLA base para fine-tuning | no disponible en la información | HuggingFace |
-| Otras políticas LeRobot (p. ej. ACT, Diffusion Policy) | no disponible en la información | no disponible | Imitación robótica | no disponible en la información | HuggingFace / LeRobot |
+| SO101-remove-screwdriver-pi0.5 (este) | 4,14 mil millones | no disponible | Manipulación SO-101, tarea única | Apache 2.0 | Hugging Face, 0 descargas |
+| lerobot/pi05_base | no disponible en la información | no disponible | VLA base para fine-tuning | no disponible en la información | Hugging Face |
+| Otras políticas LeRobot (p. ej. ACT, Diffusion Policy) | no disponible en la información | no disponible | Imitación robótica | no disponible en la información | Hugging Face / LeRobot |
 
 La comparación cuantitativa con alternativas no está disponible: no hay benchmarks publicados para este modelo ni datos de rendimiento de los comparadores en la información proporcionada.
 
@@ -85,7 +85,7 @@ La comparación cuantitativa con alternativas no está disponible: no hay benchm
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RoboColosseum/so101-remove-screwdriver-pi0.5
+- Modelo en Hugging Face: https://huggingface.co/RoboColosseum/so101-remove-screwdriver-pi0.5
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/Jiamo0912/robocolosseum-so101-black-screwdriver-box-to-table-100episodes
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=Jiamo0912/robocolosseum-so101-black-screwdriver-box-to-table-100episodes

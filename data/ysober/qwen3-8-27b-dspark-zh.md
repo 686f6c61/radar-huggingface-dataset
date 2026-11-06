@@ -106,7 +106,7 @@ No se dispone de otros modelos de borrador comparables para el mismo objetivo co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ysober/qwen3.8-27b-dspark-zh
+- Modelo en Hugging Face: https://huggingface.co/ysober/qwen3.8-27b-dspark-zh
 - Modelo base (RadixArk): https://huggingface.co/RadixArk/Qwen3.8-27B-DSpark
 - Modelo objetivo (Qwen): https://huggingface.co/Qwen/Qwen3.8-27B-FP8
 - Repositorio de Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B

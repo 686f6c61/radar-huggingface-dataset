@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SimonTaurus/Qwen3.5-4B-oold-lean-20k-s10000 es un ajuste fino (fine-tune) del modelo base unsloth/Qwen3.5-4B, publicado por el usuario SimonTaurus en HuggingFace. Se trata de un derivado de la familia Qwen3.5 de Alibaba/Qwen, en concreto de la variante de 4 000 millones de parametros, sobre la que se ha aplicado un entrenamiento adicional supervisado. El autor indica que el entrenamiento se realizo con la libreria Unsloth y TRL de HuggingFace, con una aceleracion declarada de 2x respecto a un entrenamiento convencional.
+SimonTaurus/Qwen3.5-4B-oold-lean-20k-s10000 es un ajuste fino (fine-tune) del modelo base unsloth/Qwen3.5-4B, publicado por el usuario SimonTaurus en Hugging Face. Se trata de un derivado de la familia Qwen3.5 de Alibaba/Qwen, en concreto de la variante de 4 000 millones de parametros, sobre la que se ha aplicado un entrenamiento adicional supervisado. El autor indica que el entrenamiento se realizo con la libreria Unsloth y TRL de Hugging Face, con una aceleracion declarada de 2x respecto a un entrenamiento convencional.
 
 El modelo se distribuye bajo licencia Apache-2.0 y esta etiquetado exclusivamente para el idioma ingles. La model card es extremadamente escueta: no documenta el dataset de entrenamiento, el numero de tokens, la tecnica de alineacion (RLHF, DPO u otra), ni resultados de evaluacion. El sufijo del nombre ("oold-lean-20k-s10000") sugiere una configuracion concreta de datos y pasos de entrenamiento, pero no se explica su significado en la informacion disponible.
 
@@ -24,7 +24,7 @@ Su relevancia es limitada y de nicho: se trata de un experimento de ajuste fino 
 
 La arquitectura subyacente corresponde al modelo base Qwen3.5-4B, un transformer decoder-only de 4 000 millones de parametros dentro de la serie Qwen3.5. Segun la informacion publica de Qwen, la familia Qwen3.5 se presenta como un modelo nativo de vision-lenguaje con entrenamiento de fusion temprana sobre billones de tokens multimodales, aunque no hay datos especificos confirmados para la variante de 4B ni para este fine-tune concreto.
 
-Sobre el proceso de ajuste no hay informacion tecnica mas alla de lo declarado en la model card: el modelo fue entrenado con Unsloth y la libreria TRL de HuggingFace. El tamano del repositorio (0,1 GB) es muy inferior al que ocuparian los pesos completos de un modelo de 4B en bfloat16 (en torno a 8 GB), lo que apunta a que el repositorio contiene adaptadores LoRA en lugar de pesos fusionados, si bien este extremo no se confirma en la documentacion del autor. No se especifican el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo etapas de RLHF, DPO o ajuste por preferencias.
+Sobre el proceso de ajuste no hay informacion tecnica mas alla de lo declarado en la model card: el modelo fue entrenado con Unsloth y la libreria TRL de Hugging Face. El tamano del repositorio (0,1 GB) es muy inferior al que ocuparian los pesos completos de un modelo de 4B en bfloat16 (en torno a 8 GB), lo que apunta a que el repositorio contiene adaptadores LoRA en lugar de pesos fusionados, si bien este extremo no se confirma en la documentacion del autor. No se especifican el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo etapas de RLHF, DPO o ajuste por preferencias.
 
 ## Capacidades
 
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SimonTaurus/Qwen3.5-4B-oold-lean-20k-s10000
+- Modelo en Hugging Face: https://huggingface.co/SimonTaurus/Qwen3.5-4B-oold-lean-20k-s10000
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-4B
 - Variante hermana del mismo autor: https://huggingface.co/SimonTaurus/Qwen3.5-4B-oold-lean-r64-s2000
 - Blog oficial de Qwen3.5: https://qwen.ai/blog?id=qwen3.5
@@ -89,4 +89,4 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 - Qwen3.5-4B en Ollama: https://ollama.com/library/qwen3.5:4b
 - Ficha de especificaciones y VRAM de Qwen3.5-4B: https://apxml.com/models/qwen35-4b
 - Unsloth (libreria de entrenamiento): https://github.com/unslothai/unsloth
-- TRL de HuggingFace: https://github.com/huggingface/trl
+- TRL de Hugging Face: https://github.com/huggingface/trl

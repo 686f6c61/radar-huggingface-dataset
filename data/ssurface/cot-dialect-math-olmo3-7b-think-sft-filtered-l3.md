@@ -58,7 +58,7 @@ La evaluación se realizó con decodificación greedy, single-turn, sin ejemplos
 - VRAM estimada: el adaptador LoRA es ligero (0,2 GB), pero el modelo base `Olmo-3-7B-Think` requiere aproximadamente 14 GB en bf16 (7B × 2 bytes). Con cuantización de 4 bits, puede reducirse a unos 4-6 GB.
 - GPU recomendadas: una NVIDIA A100 80GB (usada en entrenamiento) es suficiente; para inferencia, una RTX 3090/4090 (24 GB) puede cargar el modelo en bf16, y GPUs con 8-12 GB pueden usar cuantización 4-bit.
 - Compatibilidad con consumer GPU: sí, con cuantización (p. ej., bitsandbytes) en GPUs de 8 GB o más.
-- Opciones de despliegue: HuggingFace `transformers` + `peft` (carga del adaptador), vLLM (soporta LoRA en algunos backends), TGI (con soporte de adaptadores). No es directamente compatible con llama.cpp/Ollama al ser un adaptador PEFT, aunque el base podría cuantizarse y fusionarse.
+- Opciones de despliegue: Hugging Face `transformers` + `peft` (carga del adaptador), vLLM (soporta LoRA en algunos backends), TGI (con soporte de adaptadores). No es directamente compatible con llama.cpp/Ollama al ser un adaptador PEFT, aunque el base podría cuantizarse y fusionarse.
 - Latencia y throughput: no se han publicado mediciones; depende del hardware y de la longitud de la cadena generada (el nivel L3 reduce tokens de salida respecto a un CoT verboso).
 
 ## Comparativa con modelos similares
@@ -86,7 +86,7 @@ Esta tabla es orientativa y no debe tomarse como comparación oficial; los datos
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ssurface/cot-dialect-math-olmo3-7b-think-sft-filtered-l3
+- Hugging Face: https://huggingface.co/ssurface/cot-dialect-math-olmo3-7b-think-sft-filtered-l3
 - Modelo base: https://huggingface.co/allenai/Olmo-3-7B-Think
 - Dataset de evaluación: https://huggingface.co/datasets/HuggingFaceH4/MATH-500
 - Referencia citada (sin URL pública): "Chain-of-Thought Compression Dialects" (Frolov, Anatolii, 2026)

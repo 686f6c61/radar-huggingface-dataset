@@ -16,7 +16,7 @@ Este modelo se enmarca en la línea de investigación sobre verificación formal
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (solo safetensors en el repositorio) |
 | Idiomas soportados | no disponible |
-| Licencia | other (ver enlace de HuggingFace) |
+| Licencia | other (ver enlace de Hugging Face) |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la información disponible. El c
 
 - VRAM estimada: con 8.190 millones de parámetros, el modelo en precisión FP16/BF16 requiere aproximadamente 16 GB de VRAM solo para los pesos. Con cuantización a 8 bits (INT8) se reduce a unos 8 GB, y a 4 bits (INT4) a unos 4-5 GB.
 - GPU recomendadas: para inferencia en FP16, una GPU con al menos 16 GB de VRAM, como RTX 3090, RTX 4090, A100 (40 GB) o H100. Con cuantización, puede ejecutarse en GPUs consumer de 8 GB (RTX 3060, RTX 3070) o incluso menos.
-- Opciones de despliegue: al ser un modelo de la familia Qwen3, es compatible con frameworks como vLLM, llama.cpp, Ollama y Text Generation Inference (TGI). También se puede usar con la librería transformers de HuggingFace.
+- Opciones de despliegue: al ser un modelo de la familia Qwen3, es compatible con frameworks como vLLM, llama.cpp, Ollama y Text Generation Inference (TGI). También se puede usar con la librería transformers de Hugging Face.
 - Latencia y throughput: no se proporcionan datos específicos. Para un modelo de 8B, se espera una latencia de decodificación de unos 20-40 ms por token en una GPU moderna (A100) sin cuantización, y mayor con cuantización.
 
 ## Comparativa con modelos similares
@@ -61,13 +61,13 @@ No se dispone de datos concretos para una comparación cuantitativa. Sin embargo
 
 - Sesgos y alucinaciones: al ser un fine-tune especializado, puede presentar alucinaciones en dominios fuera de su área de entrenamiento (razonamiento matemático formal). No se han evaluado sesgos específicos.
 - Limitaciones de contexto: no se conoce la longitud de contexto efectiva, aunque probablemente hereda la del modelo base (Qwen3-8B-Base, que soporta hasta 32K tokens según documentación pública, pero no confirmado en este repositorio).
-- Restricciones de licencia: la licencia se indica como "other", lo que significa que no es una licencia estándar como Apache 2.0. Es necesario revisar los términos específicos en el repositorio de HuggingFace antes de uso comercial.
+- Restricciones de licencia: la licencia se indica como "other", lo que significa que no es una licencia estándar como Apache 2.0. Es necesario revisar los términos específicos en el repositorio de Hugging Face antes de uso comercial.
 - Dependencia del dataset de entrenamiento: el modelo está entrenado en un dataset específico de Lean, por lo que su rendimiento en otros lenguajes formales (Coq, Isabelle) o en matemáticas generales puede ser limitado.
 - Riesgo en producción: al ser un modelo de investigación, no se ha validado para uso en entornos críticos. Se recomienda verificar todas las salidas generadas.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/formalmathatepfl/qwen3-sft-feedback-with-proof-repair-reasoning
+- Hugging Face: https://huggingface.co/formalmathatepfl/qwen3-sft-feedback-with-proof-repair-reasoning
 - Modelo base del fine-tune: https://huggingface.co/formalmathatepfl/qwen3-sft-feedback-with-proof-repair
 - Despliegue en FriendliAI: https://friendli.ai/models/formalmathatepfl/qwen3-sft-feedback-with-proof-repair
 - Paper relacionado (ExVerus, sobre reparación de pruebas en Verus): https://icml.cc/virtual/2026/poster/65247

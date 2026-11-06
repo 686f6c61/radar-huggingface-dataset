@@ -77,10 +77,10 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de ninguna otra bate
 
 | Modelo | Parámetros | Contexto | Licencia | Pérdida / perplejidad en validación FineWeb-Edu | Disponibilidad |
 |---|---|---|---|---|---|
-| `John-Machado/gpt2-small-fineweb-edu` | 124,4M | 1024 | MIT | 3,0548 / 21,2 | HuggingFace, safetensors |
-| GPT-2 small de OpenAI (2019) | 124M (según model card) | 1024 (según model card) | no disponible en la información | 3,2975 / 27,0 | HuggingFace (`gpt2`) y API histórica |
-| GPT-2 medium de OpenAI | 355M | 1024 | no disponible en la información | no disponible | HuggingFace |
-| DistilGPT-2 | 82M | 1024 | no disponible en la información | no disponible | HuggingFace |
+| `John-Machado/gpt2-small-fineweb-edu` | 124,4M | 1024 | MIT | 3,0548 / 21,2 | Hugging Face, safetensors |
+| GPT-2 small de OpenAI (2019) | 124M (según model card) | 1024 (según model card) | no disponible en la información | 3,2975 / 27,0 | Hugging Face (`gpt2`) y API histórica |
+| GPT-2 medium de OpenAI | 355M | 1024 | no disponible en la información | no disponible | Hugging Face |
+| DistilGPT-2 | 82M | 1024 | no disponible en la información | no disponible | Hugging Face |
 
 No se dispone de datos de benchmarks comunes (MMLU, HumanEval, GSM8K) para ninguno de estos modelos en la información proporcionada, por lo que la comparación se limita a la pérdida de validación sobre FineWeb-Edu, que solo está medida para los dos primeros.
 
@@ -98,7 +98,7 @@ No se dispone de datos de benchmarks comunes (MMLU, HumanEval, GSM8K) para ningu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/John-Machado/gpt2-small-fineweb-edu
+- Modelo en Hugging Face: https://huggingface.co/John-Machado/gpt2-small-fineweb-edu
 - Repositorio de código e implementación desde cero: https://github.com/JohnMachado11/GPT-2
 - Instrucciones de reproducción del entrenamiento: https://github.com/JohnMachado11/GPT-2#train-gpt-2-small-from-scratch
 - Dataset FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu

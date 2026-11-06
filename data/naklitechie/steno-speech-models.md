@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Steno speech models es un repositorio de HuggingFace publicado por el usuario naklitechie que contiene dos modelos ONNX cuantizados a int8, pensados para ser usados por Steno, una aplicación de grabación de reuniones. No se trata de un modelo nuevo entrenado desde cero, sino de copias cuantizadas de dos modelos existentes: un sistema de reconocimiento automático del habla (ASR) llamado Parakeet Ultra, desarrollado por Moondream a partir de nvidia/parakeet-tdt-0.6b-v3, y un sistema de diarización de hablantes llamado Nemotron-3 Diarization, de NVIDIA. Ambos se cargan mediante la librería parakeet-rs y ONNX Runtime sobre CPU, sin necesidad de GPU.
+Steno speech models es un repositorio de Hugging Face publicado por el usuario naklitechie que contiene dos modelos ONNX cuantizados a int8, pensados para ser usados por Steno, una aplicación de grabación de reuniones. No se trata de un modelo nuevo entrenado desde cero, sino de copias cuantizadas de dos modelos existentes: un sistema de reconocimiento automático del habla (ASR) llamado Parakeet Ultra, desarrollado por Moondream a partir de nvidia/parakeet-tdt-0.6b-v3, y un sistema de diarización de hablantes llamado Nemotron-3 Diarization, de NVIDIA. Ambos se cargan mediante la librería parakeet-rs y ONNX Runtime sobre CPU, sin necesidad de GPU.
 
 El modelo ASR cubre 25 idiomas europeos (incluido el castellano) y ocupa 935 MB en su versión int8, frente a los 2,55 GB del export fp32 original. El modelo de diarización, mucho más pequeño (107 MB), identifica hasta 8 hablantes distintos en una grabación. La relevancia de esta publicación es práctica: permite ejecutar transcripción con separación de hablantes en hardware modesto, incluidos portátiles de consumo, con una pérdida de precisión mínima respecto a los originales en coma flotante.
 
@@ -109,7 +109,7 @@ No se dispone de datos de benchmarks frente a otros sistemas ASR comerciales o a
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/naklitechie/steno-speech-models
+- Repositorio Hugging Face: https://huggingface.co/naklitechie/steno-speech-models
 - Modelo base ASR (Moondream Parakeet Ultra): https://huggingface.co/moondream/parakeet-ultra
 - Modelo original NVIDIA Parakeet TDT 0.6B v3: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Modelo base diarizacion (NVIDIA Nemotron-3 Diarization): https://huggingface.co/nvidia/Nemotron-3-Diarization

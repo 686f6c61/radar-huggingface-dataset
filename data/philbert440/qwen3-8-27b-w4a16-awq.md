@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-W4A16-AWQ es una cuantizacion INT4 weight-only del modelo vision-lenguaje Qwen/Qwen3.8-27B, publicada por el usuario philbert440 en HuggingFace. El checkpoint reduce el peso del modelo de 55 GB en BF16 a 19,5 GB, manteniendo intactos la torre de vision, la cabeza MTP de decodificacion especulativa y el modo de pensamiento, calibrado con trazas de razonamiento reales. Esta pensado para entornos con VRAM limitada, como un par de V100 de 32 GB, sin renunciar a las capacidades completas del modelo original.
+Qwen3.8-27B-W4A16-AWQ es una cuantizacion INT4 weight-only del modelo vision-lenguaje Qwen/Qwen3.8-27B, publicada por el usuario philbert440 en Hugging Face. El checkpoint reduce el peso del modelo de 55 GB en BF16 a 19,5 GB, manteniendo intactos la torre de vision, la cabeza MTP de decodificacion especulativa y el modo de pensamiento, calibrado con trazas de razonamiento reales. Esta pensado para entornos con VRAM limitada, como un par de V100 de 32 GB, sin renunciar a las capacidades completas del modelo original.
 
 El modelo base Qwen3.8-27B es un modelo denso de 27.356 millones de parametros con una arquitectura hibrida que combina atencion lineal GatedDeltaNet y atencion completa, disenado para trabajo agente de largo horizonte con contexto nativo de 262.144 tokens. La cuantizacion emplea el formato compressed-tensors con empaquetado INT4, grupo 128 y escala asimetrica, validada en 2xV100-32GB mediante 1Cat-vLLM 1.2.2. Su relevancia actual radica en hacer viable un VLM de ultima generacion en hardware de generaciones anteriores, con rendimiento medido de hasta 59 tokens/s en modo pensamiento.
 

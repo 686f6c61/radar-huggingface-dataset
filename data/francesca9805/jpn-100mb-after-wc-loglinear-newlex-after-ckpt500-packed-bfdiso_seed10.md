@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `jpn-100mb-after-wc-loglinear-newlex-after-ckpt500-packed-bfdiso_seed10` es un ajuste fino de tipo SFT (supervised fine-tuning) desarrollado por el usuario de HuggingFace `francesca9805`, construido sobre el checkpoint `ppt-wc-loglinear-newlex-jpn-after-100mb-packed-bfdiso_seed10`. Se trata de un modelo de generación de texto de pequeno tamano, con 124.770.816 parametros (aproximadamente 124,8 millones) y etiquetado en HuggingFace con la arquitectura `gpt2`, lo que lo situa en la categoria de los transformers decoder-only de escala reducida.
+El modelo `jpn-100mb-after-wc-loglinear-newlex-after-ckpt500-packed-bfdiso_seed10` es un ajuste fino de tipo SFT (supervised fine-tuning) desarrollado por el usuario de Hugging Face `francesca9805`, construido sobre el checkpoint `ppt-wc-loglinear-newlex-jpn-after-100mb-packed-bfdiso_seed10`. Se trata de un modelo de generación de texto de pequeno tamano, con 124.770.816 parametros (aproximadamente 124,8 millones) y etiquetado en Hugging Face con la arquitectura `gpt2`, lo que lo situa en la categoria de los transformers decoder-only de escala reducida.
 
 El problema que aborda es de caracter experimental mas que de producto: por el nombre del identificador y del modelo base se deduce una cadena de trabajo orientada a explorar nuevos tokenizadores (`newlex`), entrenamiento continuado sobre un corpus de aproximadamente 100 MB en japones (`jpn`, `100mb`) y empaquetado de secuencias (`packed`), seguida de un ajuste supervisado. El modelo se entrena con TRL 0.23.0 y se publica como un artefacto reproducible de investigacion (semilla fija `seed10`), no como un modelo listo para produccion.
 
@@ -12,14 +12,14 @@ Su relevancia actual es limitada fuera del ambito de la investigacion en tokeniz
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-2 (transformer decoder-only con atencion causal; segun el tag `gpt2` de HuggingFace) |
+| Arquitectura | GPT-2 (transformer decoder-only con atencion causal; segun el tag `gpt2` de Hugging Face) |
 | Parametros totales | 124.770.816 (aproximadamente 124,8 M, dato real de safetensors) |
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible en la model card |
 | Tipos de cuantizacion | no disponible; al publicarse en safetensors permite conversion externa a fp16, int8 e int4 (no verificada por el autor) |
 | Idiomas soportados | no disponible; el identificador incluye `jpn` (japones), lo que sugiere entrenamiento sobre corpus japones, sin confirmacion documental |
 | Licencia | no disponible (el campo de la model card contiene literalmente `licence: license`, sin texto legal) |
-| Formato de pesos | safetensors (libreria `transformers`; compatible con el pipeline de HuggingFace) |
+| Formato de pesos | safetensors (libreria `transformers`; compatible con el pipeline de Hugging Face) |
 | Modelo base | francesca9805/ppt-wc-loglinear-newlex-jpn-after-100mb-packed-bfdiso_seed10 |
 | Metodo de ajuste | SFT con TRL 0.23.0 |
 | Tamano del repositorio | 7,2 GB |
@@ -29,7 +29,7 @@ Su relevancia actual es limitada fuera del ambito de la investigacion en tokeniz
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer decoder-only de la familia GPT-2, con atencion causal y generacion autoregresiva. El tag `gpt2` de HuggingFace y el uso del pipeline `text-generation` de `transformers` confirman esta familia, aunque la model card no detalla el numero de capas, cabezas de atencion, dimension oculta ni la longitud de contexto efectiva. El sufijo `newlex` del identificador apunta a un tokenizador propio o modificado, coherente con el nombre del proyecto de Weights & Biases asociado (`new-tokenizers`), por lo que el vocabulario podria diferir del GPT-2 original; este punto no se documenta en la ficha del modelo.
+La arquitectura es un transformer decoder-only de la familia GPT-2, con atencion causal y generacion autoregresiva. El tag `gpt2` de Hugging Face y el uso del pipeline `text-generation` de `transformers` confirman esta familia, aunque la model card no detalla el numero de capas, cabezas de atencion, dimension oculta ni la longitud de contexto efectiva. El sufijo `newlex` del identificador apunta a un tokenizador propio o modificado, coherente con el nombre del proyecto de Weights & Biases asociado (`new-tokenizers`), por lo que el vocabulario podria diferir del GPT-2 original; este punto no se documenta en la ficha del modelo.
 
 El entrenamiento declarado es un ajuste supervisado (SFT) con TRL 0.23.0 sobre el checkpoint base indicado, que a su vez parece proceder de una fase de entrenamiento continuado sobre aproximadamente 100 MB de texto japones empaquetado (`packed`) con calculo en precision reducida (`bfdiso`). No se documentan el numero de tokens de entrenamiento, la composicion del dataset, ni el uso de RLHF, DPO u otras tecnicas de alineacion. Tampoco se describen innovaciones tecnicas como decodificacion especulativa, atencion lineal o arquitecturas hibridas. Las versiones de framework declaradas son TRL 0.23.0, Transformers 4.56.2, PyTorch 2.11.0, Datasets 4.8.4 y Tokenizers 0.22.1, y existe un registro publico del entrenamiento en Weights & Biases.
 
@@ -65,14 +65,14 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: por debajo de 1 GB en fp16 incluyendo el cache KV y overhead del runtime, lo que permite ejecutarlo en GPUs con 4 GB o menos.
 - GPUs recomendadas: cualquier GPU moderna con al menos 4 GB de VRAM (RTX 3050, RTX 3060, RTX 4060, RTX 4090, T4, L4, A100, H100). No requiere GPU de datacenter.
 - Cabe en GPU de consumo: si, en practicamente toda la gama actual, e incluso en CPU. El entrenamiento por ajuste completo tambien es viable en una unica GPU de consumo, ya que el estado del optimizador en fp32 ocupa del orden de 1,5 GB.
-- Opciones de despliegue: `transformers` con `pipeline("text-generation")`, Text Generation Inference (TGI, indicado en los tags), servidores de inferencia compatibles con endpoints de HuggingFace y `vLLM`. Para `llama.cpp` u `Ollama` seria necesario convertir previamente los pesos a GGUF, conversion no publicada por el autor.
+- Opciones de despliegue: `transformers` con `pipeline("text-generation")`, Text Generation Inference (TGI, indicado en los tags), servidores de inferencia compatibles con endpoints de Hugging Face y `vLLM`. Para `llama.cpp` u `Ollama` seria necesario convertir previamente los pesos a GGUF, conversion no publicada por el autor.
 - Latencia y throughput: no disponibles. No se han publicado mediciones. Por escala, se espera una latencia muy baja en GPU y throughput alto en lotes, pero son estimaciones no verificadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| jpn-100mb-after-wc-loglinear-newlex-after-ckpt500-packed-bfdiso_seed10 | 124,8 M | no disponible | no disponible | safetensors en HuggingFace | Ajuste SFT experimental, sin evaluaciones publicadas |
+| jpn-100mb-after-wc-loglinear-newlex-after-ckpt500-packed-bfdiso_seed10 | 124,8 M | no disponible | no disponible | safetensors en Hugging Face | Ajuste SFT experimental, sin evaluaciones publicadas |
 | GPT-2 (OpenAI, version original) | 124 M | 1024 tokens | MIT | safetensors y multiples conversiones | Referencia de la misma escala; tokenizador estandar, ampliamente evaluado |
 | DistilGPT-2 | 82 M | 1024 tokens | MIT (derivado de GPT-2) | safetensors, GGUF | Version destilada, mas rapida, con degradacion de calidad respecto a GPT-2 |
 | GPT-2 medium | 355 M | 1024 tokens | MIT | safetensors y conversiones | Mas capacidad, mayor coste de inferencia |
@@ -94,7 +94,7 @@ La comparacion con GPT-2 y DistilGPT-2 es orientativa en cuanto a escala y famil
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/jpn-100mb-after-wc-loglinear-newlex-after-ckpt500-packed-bfdiso_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/jpn-100mb-after-wc-loglinear-newlex-after-ckpt500-packed-bfdiso_seed10
 - Modelo base: https://huggingface.co/francesca9805/ppt-wc-loglinear-newlex-jpn-after-100mb-packed-bfdiso_seed10
 - Registro del entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/2esstogz
 - Repositorio de TRL: https://github.com/huggingface/trl

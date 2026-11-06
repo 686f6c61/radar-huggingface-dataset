@@ -91,7 +91,7 @@ La comparacion con modelos audio-texto de otros autores no esta disponible en la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/laion/clap2-xs-audioxl-s1B
+- Hugging Face: https://huggingface.co/laion/clap2-xs-audioxl-s1B
 - CLAP2-L: https://huggingface.co/laion/clap2-large-audioxl-s1B
 - CLAP2-M: https://huggingface.co/laion/clap2-medium-audioxl-s1B
 - CLAP2-S: https://huggingface.co/laion/clap2-small-audioxl-s1B

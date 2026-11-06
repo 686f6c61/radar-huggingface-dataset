@@ -73,7 +73,7 @@ La comparativa es orientativa: no existen resultados de benchmarks del modelo op
 - **Trazabilidad**: el nombre del repositorio incluye rutas internas de cluster (`/gpfs/scratch/ehpc524/...`) en la descripcion del dataset, lo que sugiere un entrenamiento de investigacion sin pulido de publicacion.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/open-sci/1.7b-MixtureVitae-300BT-v1-decontaminated-16k-DPO-Tulu3-decontaminated-nc30k
+- Hugging Face: https://huggingface.co/open-sci/1.7b-MixtureVitae-300BT-v1-decontaminated-16k-DPO-Tulu3-decontaminated-nc30k
 - Modelo base: https://huggingface.co/ali-elganzory/1.7b-MixtureVitae-300BT-v1-decontaminated-16k-DPO-Tulu3-decontaminated
 - LLaMA-Factory (framework de entrenamiento): https://github.com/hiyouga/LLaMA-Factory
 - Dataset Nemotron-Cascade-SFT-Stage-1-30k-sharegpt-hf: no disponible como enlace publico en la informacion proporcionada

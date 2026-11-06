@@ -6,7 +6,7 @@
 
 Ternary-Bonsai-2-27B-gguf es un espejo (mirror) "slim" del modelo prism-ml/Ternary-Bonsai-2-27B-gguf, publicado por el usuario kantundpeterpan. Se trata de una variante cuantizada a ternario (empaquetado de 2 bits) de un modelo de aproximadamente 26,9 mil millones de parametros, distribuida en formato GGUF junto con un proyector visual (mmproj) que indica capacidad multimodal de vision. El repositorio se ha recortado para incluir unicamente los ficheros necesarios para el despliegue en HF Inference Endpoints.
 
-El modelo original pertenece a Prism ML y se distribuye bajo licencia Apache-2.0, aunque el repositorio de HuggingFace consultado no declara licencia ni idiomas en sus metadatos. El espejo no esta afiliado ni respaldado por Prism ML y mantiene los pesos sin modificar respecto al modelo original.
+El modelo original pertenece a Prism ML y se distribuye bajo licencia Apache-2.0, aunque el repositorio de Hugging Face consultado no declara licencia ni idiomas en sus metadatos. El espejo no esta afiliado ni respaldado por Prism ML y mantiene los pesos sin modificar respecto al modelo original.
 
 Su relevancia practica radica en la cuantizacion ternaria de 2 bits: reduce un modelo de ~27B a un fichero GGUF de aproximadamente 7,8 GB, lo que facilita su ejecucion en hardware de consumo y su despliegue en entornos donde el espacio o la VRAM son limitados. La informacion publica disponible es escasa: no se detallan arquitectura, contexto, datos de entrenamiento ni benchmarks.
 
@@ -20,7 +20,7 @@ Su relevancia practica radica en la cuantizacion ternaria de 2 bits: reduce un m
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | Ternaria de 2 bits (empaquetado PQ2_0 en GGUF); proyector visual en BF16 |
 | Idiomas soportados | no disponible |
-| Licencia | Apache-2.0 (segun la model card, (c) Prism ML); el repositorio de HuggingFace no la declara |
+| Licencia | Apache-2.0 (segun la model card, (c) Prism ML); el repositorio de Hugging Face no la declara |
 | Formato de pesos | GGUF |
 
 ## Arquitectura y entrenamiento
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Ternary-Bonsai-2-27B-gguf (este espejo) | ~26,9 mil millones | no disponible | Ternaria 2 bits (PQ2_0) | Apache-2.0 (segun model card) | GGUF, via fork de llama.cpp |
-| prism-ml/Ternary-Bonsai-2-27B-gguf (upstream) | ~26,9 mil millones | no disponible | Original (formato base no disponible) | Apache-2.0 | Repositorio upstream en HuggingFace |
+| prism-ml/Ternary-Bonsai-2-27B-gguf (upstream) | ~26,9 mil millones | no disponible | Original (formato base no disponible) | Apache-2.0 | Repositorio upstream en Hugging Face |
 
 No se dispone de datos sobre modelos alternativos comparables (parametros, contexto, rendimiento, licencia y disponibilidad) en la informacion proporcionada.
 
@@ -73,7 +73,7 @@ No se dispone de datos sobre modelos alternativos comparables (parametros, conte
 - Idiomas soportados: no disponibles; no se puede garantizar un buen rendimiento en castellano ni en otros idiomas.
 - Longitud de contexto: no disponible, lo que impide planificar tareas que requieran ventanas largas.
 - Requiere un fork especifico de llama.cpp para funcionar; no es compatible con builds estandar, lo que complica el soporte y las actualizaciones.
-- Es un espejo no oficial: no esta afiliado ni respaldado por Prism ML, y el repositorio de HuggingFace no declara licencia ni idiomas en sus metadatos, aunque la model card indica Apache-2.0.
+- Es un espejo no oficial: no esta afiliado ni respaldado por Prism ML, y el repositorio de Hugging Face no declara licencia ni idiomas en sus metadatos, aunque la model card indica Apache-2.0.
 - Uso comercial: la licencia Apache-2.0 permitiria uso comercial, pero al ser un espejo conviene verificar los terminos del modelo upstream original antes de explotarlo en produccion.
 - Sin descargas ni likes registrados en el momento de la consulta, lo que implica ausencia de validacion por parte de la comunidad.
 

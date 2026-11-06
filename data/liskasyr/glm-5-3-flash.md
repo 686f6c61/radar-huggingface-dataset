@@ -85,14 +85,14 @@ No se dispone de datos comparativos con otros modelos open-weights de tamano sim
 - Sesgos conocidos: no se han documentado sesgos especificos en la informacion disponible. Como modelo entrenado principalmente con datos en ingles y chino, puede presentar sesgos culturales o linguisticos en otros idiomas.
 - Riesgo de alucinacion: al ser un modelo generativo, puede producir contenido falso o inventado, especialmente en tareas de razonamiento complejo o con contextos muy largos. Se recomienda validacion externa en aplicaciones criticas.
 - Limitaciones de contexto: aunque soporta hasta 1M tokens, la calidad del razonamiento puede degradarse en los extremos de la ventana. La model card recomienda gestionar el contexto explicitamente en tareas de chat (`clear_thinking=true`).
-- Restricciones de licencia: la licencia MIT permite uso comercial sin restricciones, pero se debe verificar que el modelo no incluya componentes con licencias adicionales. Los pesos estan publicados en un repositorio de HuggingFace (liskasYR) que es un mirror del repositorio oficial de zai-org.
+- Restricciones de licencia: la licencia MIT permite uso comercial sin restricciones, pero se debe verificar que el modelo no incluya componentes con licencias adicionales. Los pesos estan publicados en un repositorio de Hugging Face (liskasYR) que es un mirror del repositorio oficial de zai-org.
 - Requisitos de hardware: el tamaño total de 321B parametros hace que la inferencia local sea inviable en hardware de consumo. Se requiere infraestructura de datacenter o el uso de la API de Z.ai.
 - Dependencia de frameworks: el soporte en Transformers es reciente (documentacion `glm5_next`), por lo que puede haber incompatibilidades o bugs en versiones antiguas.
 
 ## Enlaces
 
-- Repositorio HuggingFace (mirror): https://huggingface.co/liskasYR/GLM-5.3-Flash
-- Repositorio HuggingFace oficial: https://huggingface.co/zai-org/GLM-5.3-Flash
+- Repositorio Hugging Face (mirror): https://huggingface.co/liskasYR/GLM-5.3-Flash
+- Repositorio Hugging Face oficial: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Blog oficial de GLM-5.3-Flash: https://z.ai/blog/glm-5.3-flash
 - Blog de GLM-5.3: https://z.ai/blog/glm-5.3
 - Documentacion de la API de Z.ai: https://docs.z.ai/guides/vlm/glm-5.3-flash

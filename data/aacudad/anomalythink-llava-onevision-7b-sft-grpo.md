@@ -95,7 +95,7 @@ El modelo supera al checkpoint de IAD-R1 en ambos benchmarks, aunque el autor se
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aacudad/AnomalyThink-LLaVA-OneVision-7B-SFT-GRPO
+- Modelo en Hugging Face: https://huggingface.co/aacudad/AnomalyThink-LLaVA-OneVision-7B-SFT-GRPO
 - Checkpoint SFT (inicialización): https://huggingface.co/aacudad/AnomalyThink-LLaVA-OneVision-7B-SFT
 - Modelo KCR (hermano): https://huggingface.co/aacudad/AnomalyThink-LLaVA-OneVision-7B-KCR
 - Dataset AnomalyThink: https://huggingface.co/datasets/aacudad/AnomalyThink

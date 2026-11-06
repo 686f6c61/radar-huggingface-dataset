@@ -56,7 +56,7 @@ No se dispone de datos comparativos con otros modelos TTS en la información pro
 - No se han documentado sesgos específicos, pero al ser un modelo de voz, puede presentar variaciones en la pronunciación dependiendo del acento o la entonación de la referencia.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/EryriLabs/pocket-tts-en-GGUF
+- Modelo en Hugging Face: https://huggingface.co/EryriLabs/pocket-tts-en-GGUF
 - Modelo original de Kyutai: https://huggingface.co/kyutai/pocket-tts
 - Paper (arXiv): https://arxiv.org/abs/2509.06926
 - Repositorio de llama.cpp: https://github.com/ggml-org/llama.cpp

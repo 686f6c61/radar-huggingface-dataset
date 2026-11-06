@@ -81,10 +81,10 @@ No se han publicado resultados de otros benchmarks (MMLU, HumanEval, GSM8K ni m�
 
 | Modelo | Parametros | Tarea | Contexto | CER conjunto gold (%) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Runic-OCR qwen25vl-7b | 7B (base) | OCR rúnico a transliteracion Rundata | no disponible | 54,27 | MIT | HuggingFace |
-| Runic-OCR qwen3vl-8b | 8B (base) | OCR rúnico a transliteracion Rundata | no disponible | 67,86 | MIT | HuggingFace |
-| Runic-OCR qwen3vl-2b | 2B (base) | OCR rúnico a transliteracion Rundata | no disponible | 73,55 | MIT | HuggingFace |
-| Qwen2.5-VL-7B-Instruct sin adaptador | 7B | VLM generalista (OCR generico, VQA) | no disponible | no disponible | no disponible en la informacion proporcionada | HuggingFace |
+| Runic-OCR qwen25vl-7b | 7B (base) | OCR rúnico a transliteracion Rundata | no disponible | 54,27 | MIT | Hugging Face |
+| Runic-OCR qwen3vl-8b | 8B (base) | OCR rúnico a transliteracion Rundata | no disponible | 67,86 | MIT | Hugging Face |
+| Runic-OCR qwen3vl-2b | 2B (base) | OCR rúnico a transliteracion Rundata | no disponible | 73,55 | MIT | Hugging Face |
+| Qwen2.5-VL-7B-Instruct sin adaptador | 7B | VLM generalista (OCR generico, VQA) | no disponible | no disponible | no disponible en la informacion proporcionada | Hugging Face |
 | Otras alternativas de HTR/OCR de inscripciones (p. ej. TrOCR ajustado) | no disponible | OCR/HTR | no disponible | no disponible | no disponible | no disponible |
 
 No se han publicado comparaciones cuantitativas frente a modelos externos en la información disponible. La única comparación documentada es interna, entre los tres subdirectorios del propio repositorio: el adaptador sobre Qwen2.5-VL-7B es el mejor en ambos conjuntos (12,03 % sintético, 54,27 % real) y el de 2B el peor, mientras que el de 8B no mejora al de 7B pese a tener más parámetros.
@@ -106,7 +106,7 @@ No se han publicado comparaciones cuantitativas frente a modelos externos en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AntoniusPerf/runic-ocr-qwen-vl-lora
+- Modelo en Hugging Face: https://huggingface.co/AntoniusPerf/runic-ocr-qwen-vl-lora
 - Código, datos y tesis: https://github.com/kekys778/RUNIC-OCR
 - Modelo base Qwen2.5-VL-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct
 - Modelo base Qwen3-VL-8B-Instruct: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct

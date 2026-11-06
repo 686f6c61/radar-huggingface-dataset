@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Modelo | Tarea | Parametros | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | SingQ models | Alineamiento de letras (ko/en) y separacion de fuentes | no disponible | 34 s a 16 kHz (alineamiento) | other (Apache-2.0 + MIT) | Core ML, repo de 2,0 GB |
-| kresnik/wav2vec2-large-xlsr-korean | Alineamiento/ASR en coreano | no disponible en la informacion | no disponible | Apache-2.0 | HuggingFace |
-| facebook/wav2vec2-large-960h-lv60-self | ASR en ingles | no disponible en la informacion | no disponible | Apache-2.0 | HuggingFace |
+| kresnik/wav2vec2-large-xlsr-korean | Alineamiento/ASR en coreano | no disponible en la informacion | no disponible | Apache-2.0 | Hugging Face |
+| facebook/wav2vec2-large-960h-lv60-self | ASR en ingles | no disponible en la informacion | no disponible | Apache-2.0 | Hugging Face |
 | Hybrid Transformer Demucs (Meta AI) | Separacion de fuentes | no disponible en la informacion | no disponible | MIT | Repo oficial y conversion Core ML |
 
 ## Limitaciones y advertencias
@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SingQ/singq-models
+- Repositorio Hugging Face: https://huggingface.co/SingQ/singq-models
 - Modelo base coreano: https://huggingface.co/kresnik/wav2vec2-large-xlsr-korean
 - Corpus Zeroth-Korean: https://openslr.org/40/
 - Modelo base inglés: https://huggingface.co/facebook/wav2vec2-large-960h-lv60-self

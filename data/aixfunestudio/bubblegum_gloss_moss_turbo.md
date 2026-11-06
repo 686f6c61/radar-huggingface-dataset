@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Bubblegum_Gloss_Moss_Turbo es un modelo publicado en HuggingFace por el usuario AIxFuneStudio el 30 de octubre de 2026. Se distribuye como un repositorio de 6,0 GB con acceso restringido (gated), lo que obliga a aceptar condiciones en la plataforma antes de poder descargar los pesos. La ficha de HuggingFace no declara pipeline, idiomas soportados ni arquitectura, y el modelo acumula cero descargas y cero likes en el momento de redactar esta ficha.
+Bubblegum_Gloss_Moss_Turbo es un modelo publicado en Hugging Face por el usuario AIxFuneStudio el 30 de octubre de 2026. Se distribuye como un repositorio de 6,0 GB con acceso restringido (gated), lo que obliga a aceptar condiciones en la plataforma antes de poder descargar los pesos. La ficha de Hugging Face no declara pipeline, idiomas soportados ni arquitectura, y el modelo acumula cero descargas y cero likes en el momento de redactar esta ficha.
 
 Por el nombre y el contexto de publicacion (estudio de fine-tuning, ausencia de documentacion tecnica, licencia "other"), todo apunta a un fine-tune o merge derivado de un modelo base de tamano pequeno o mediano, probablemente orientado a generacion de imagen o a un estilo concreto, aunque no hay informacion verificable que lo confirme. El tamano del repositorio (6,0 GB) es compatible con pesos en precision completa o media de un modelo de entre 3.000 y 6.000 millones de parametros, o con un conjunto de pesos en varios formatos (safetensors + variantes cuantizadas).
 
@@ -18,12 +18,12 @@ La relevancia de esta ficha es limitada y fundamentalmente descriptiva: no hay p
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | other (terminos no especificados en la ficha de HuggingFace) |
+| Licencia | other (terminos no especificados en la ficha de Hugging Face) |
 | Formato de pesos | no disponible (repo de 6,0 GB; probablemente safetensors, sin confirmar) |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo. La model card de HuggingFace no incluye descripcion tecnica, diagrama, numero de capas, tipo de atencion ni variantes (transformer denso, MoE, SSM o hibrido). Tampoco se documenta si se trata de un modelo de lenguaje, de difusion, multimodal o de otro tipo.
+No se ha publicado informacion sobre la arquitectura del modelo. La model card de Hugging Face no incluye descripcion tecnica, diagrama, numero de capas, tipo de atencion ni variantes (transformer denso, MoE, SSM o hibrido). Tampoco se documenta si se trata de un modelo de lenguaje, de difusion, multimodal o de otro tipo.
 
 Respecto al entrenamiento, no hay datos sobre volumen de tokens, composicion del dataset, uso de RLHF, DPO, SFT ni tecnicas de alineacion. El nombre "Turbo" podria sugerir una variante optimizada para inferencia rapida (por ejemplo, destilacion o pasos reducidos en un modelo de difusion), pero es una especulacion no verificada. La ausencia de model card sustantiva impide cualquier analisis reproducible.
 
@@ -67,14 +67,14 @@ No disponible. La ausencia de informacion sobre arquitectura, tamano y tarea imp
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Bubblegum_Gloss_Moss_Turbo | no disponible | no disponible | other | gated en HuggingFace |
+| Bubblegum_Gloss_Moss_Turbo | no disponible | no disponible | other | gated en Hugging Face |
 | Alternativa comparable | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
 - Ausencia total de model card tecnica: no hay informacion sobre arquitectura, datos de entrenamiento ni evaluacion.
 - Licencia "other" sin terminos explicitos: riesgo legal para uso comercial; es imprescindible revisar las condiciones del repo gated antes de cualquier despliegue.
-- Acceso restringido: requiere aceptar condiciones en HuggingFace, lo que puede limitar la reproducibilidad y la automatizacion.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face, lo que puede limitar la reproducibilidad y la automatizacion.
 - Cero descargas y cero likes: no hay senales de validacion por parte de la comunidad.
 - Riesgo de alucinacion y sesgos: desconocido, al no existir evaluaciones publicadas.
 - Idiomas y contexto: no declarados; no se puede garantizar cobertura multilingue ni ventanas largas.
@@ -83,5 +83,5 @@ No disponible. La ausencia de informacion sobre arquitectura, tamano y tarea imp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AIxFuneStudio/Bubblegum_Gloss_Moss_Turbo
+- Hugging Face: https://huggingface.co/AIxFuneStudio/Bubblegum_Gloss_Moss_Turbo
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`austinpatel/bp_iphumi_drawanything_real` es un modelo publicado en HuggingFace por el usuario austinpatel, asociado al paper "What Enables In-Context Behavior Prompting for Manipulation?" (arXiv 2606.30457) y al repositorio de código `real-stanford/behavior_prompting`. Por el nombre, el paper y el repositorio, se trata de un modelo orientado a robótica de manipulación que implementa comportamiento por prompting en contexto (in-context behavior prompting), es decir, condicionar las acciones del robot a partir de demostraciones o instrucciones proporcionadas en el propio contexto de inferencia. El sufijo `drawanything_real` sugiere una variante entrenada sobre un conjunto de datos real de dibujo o trayectorias.
+`austinpatel/bp_iphumi_drawanything_real` es un modelo publicado en Hugging Face por el usuario austinpatel, asociado al paper "What Enables In-Context Behavior Prompting for Manipulation?" (arXiv 2606.30457) y al repositorio de código `real-stanford/behavior_prompting`. Por el nombre, el paper y el repositorio, se trata de un modelo orientado a robótica de manipulación que implementa comportamiento por prompting en contexto (in-context behavior prompting), es decir, condicionar las acciones del robot a partir de demostraciones o instrucciones proporcionadas en el propio contexto de inferencia. El sufijo `drawanything_real` sugiere una variante entrenada sobre un conjunto de datos real de dibujo o trayectorias.
 
 El repositorio ocupa 5,1 GB, lo que es coherente con un modelo de política (policy) para control robótico con pesos en precisión completa, pero la model card pública no aporta detalles sobre arquitectura, número de parámetros, contexto, datos de entrenamiento ni resultados de benchmarks. La información disponible se limita a la licencia MIT, la referencia al paper y el enlace al código.
 
@@ -73,6 +73,6 @@ No disponible. No se conocen modelos comparables documentados en la información
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/austinpatel/bp_iphumi_drawanything_real
+- Hugging Face: https://huggingface.co/austinpatel/bp_iphumi_drawanything_real
 - Paper: https://huggingface.co/papers/2606.30457
 - Código: https://github.com/real-stanford/behavior_prompting

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-rldx_1_rmbench_preset_luna_b64_60k es una politica de bajo nivel (low-level policy) para robotica, publicada por el usuario Myungkyu en HuggingFace. Se trata de un ajuste fino (fine-tuning) del modelo base RLWRLD/RLDX-1-PT sobre el dataset Myungkyu/RMBench-preset-luna, compuesto por demostraciones con etiquetas densas de subtareas procedentes del preset de subtareas de RMBench. El modelo esta especializado en las 9 tareas de mesa simuladas que define RMBench, y no en proposito general.
+rldx_1_rmbench_preset_luna_b64_60k es una politica de bajo nivel (low-level policy) para robotica, publicada por el usuario Myungkyu en Hugging Face. Se trata de un ajuste fino (fine-tuning) del modelo base RLWRLD/RLDX-1-PT sobre el dataset Myungkyu/RMBench-preset-luna, compuesto por demostraciones con etiquetas densas de subtareas procedentes del preset de subtareas de RMBench. El modelo esta especializado en las 9 tareas de mesa simuladas que define RMBench, y no en proposito general.
 
 Tecnicamente es un modelo de vision-lenguaje-accion (VLA): recibe imagenes de tres camaras (cabeza y munecas izquierda y derecha), propiocepcion y el texto de la subtarea actual, y produce acciones de control. Segun la model card, sigue la arquitectura del backbone RLDX-1-PT, con una longitud de video de 4 y un slot adicional de keyframe que recibe un fotograma pasado recuperado cuando la etiqueta lo requiere.
 
@@ -76,8 +76,8 @@ No disponible. La informacion proporcionada no incluye resultados ni especificac
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rldx_1_rmbench_preset_luna_b64_60k | 6,91 mil millones | no disponible | no disponible | no disponible | HuggingFace (0 descargas, 0 likes en el momento de la consulta) |
-| RLWRLD/RLDX-1-PT (modelo base) | no disponible | no disponible | no disponible | no disponible | HuggingFace, referenciado como base |
+| rldx_1_rmbench_preset_luna_b64_60k | 6,91 mil millones | no disponible | no disponible | no disponible | Hugging Face (0 descargas, 0 likes en el momento de la consulta) |
+| RLWRLD/RLDX-1-PT (modelo base) | no disponible | no disponible | no disponible | no disponible | Hugging Face, referenciado como base |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -95,7 +95,7 @@ No disponible. La informacion proporcionada no incluye resultados ni especificac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Myungkyu/rldx_1_rmbench_preset_luna_b64_60k
+- Modelo en Hugging Face: https://huggingface.co/Myungkyu/rldx_1_rmbench_preset_luna_b64_60k
 - Dataset de entrenamiento: https://huggingface.co/datasets/Myungkyu/RMBench-preset-luna
 - Modelo base: https://huggingface.co/RLWRLD/RLDX-1-PT
 - Papers, blogs, repositorios o demos adicionales: no disponibles en la informacion proporcionada.

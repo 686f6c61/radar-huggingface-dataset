@@ -55,8 +55,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| mysterium99/smolvla-newtasks-25pct | 450M | No disponible | Apache-2.0 | HuggingFace |
-| lerobot/smolvla_base | No disponible | No disponible | Apache-2.0 | HuggingFace |
+| mysterium99/smolvla-newtasks-25pct | 450M | No disponible | Apache-2.0 | Hugging Face |
+| lerobot/smolvla_base | No disponible | No disponible | Apache-2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento para comparar el fine-tune con el base ni con otros modelos VLA de la misma categoría.
 
@@ -71,7 +71,7 @@ No se dispone de datos de rendimiento para comparar el fine-tune con el base ni 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mysterium99/smolvla-newtasks-25pct
+- Modelo en Hugging Face: https://huggingface.co/mysterium99/smolvla-newtasks-25pct
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Paper de SmolVLA: https://huggingface.co/papers/2506.01844
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index

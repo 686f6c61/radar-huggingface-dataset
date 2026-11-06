@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Cohere-AR/cohere-transcribe-ar-soup-v9c es un modelo de reconocimiento automatico del habla (ASR) publicado en HuggingFace por el perfil Cohere-AR. Se distribuye como un fine-tune del checkpoint Cohere-AR/cohere-transcribe-ar-rl-v9ctrl y esta orientado especificamente a la transcripcion de audio en arabe e ingles, incluyendo escenarios de code-switching entre ambos idiomas y audio telefonico. El modelo se enmarca en la libreria transformers y usa pesos en formato safetensors, con un total de 2.065.770.752 parametros (aproximadamente 2,07 mil millones) y un repositorio de 4,1 GB.
+Cohere-AR/cohere-transcribe-ar-soup-v9c es un modelo de reconocimiento automatico del habla (ASR) publicado en Hugging Face por el perfil Cohere-AR. Se distribuye como un fine-tune del checkpoint Cohere-AR/cohere-transcribe-ar-rl-v9ctrl y esta orientado especificamente a la transcripcion de audio en arabe e ingles, incluyendo escenarios de code-switching entre ambos idiomas y audio telefonico. El modelo se enmarca en la libreria transformers y usa pesos en formato safetensors, con un total de 2.065.770.752 parametros (aproximadamente 2,07 mil millones) y un repositorio de 4,1 GB.
 
 La relevancia de este checkpoint radica en su especializacion: no es un modelo ASR generico, sino un ajuste fino sobre un modelo base ya entrenado con RL (segun el nombre del checkpoint predecesor, `...-rl-v9ctrl`), lo que sugiere un proceso de optimizacion adicional sobre la transcripcion base. La etiqueta `soup` en el nombre indica habitualmente una fusion de pesos (model soup) de varias ejecuciones o variantes, una tecnica habitual para mejorar la robustez sin incrementar el coste de inferencia.
 
-No se dispone de informacion publica sobre la arquitectura interna concreta, el volumen de datos de entrenamiento ni la licencia de uso. El acceso esta restringido (gated): es necesario aceptar las condiciones en HuggingFace antes de descargar los pesos, lo que condiciona su evaluacion y despliegue en produccion.
+No se dispone de informacion publica sobre la arquitectura interna concreta, el volumen de datos de entrenamiento ni la licencia de uso. El acceso esta restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de descargar los pesos, lo que condiciona su evaluacion y despliegue en produccion.
 
 ## Especificaciones tecnicas
 
@@ -78,7 +78,7 @@ La comparativa es aproximada: no se dispone de resultados de benchmarks del mode
 ## Limitaciones y advertencias
 
 - Licencia no disponible: no se puede confirmar si el uso comercial esta permitido; es imprescindible revisar las condiciones del acceso gated antes de desplegarlo en produccion.
-- Acceso restringido: requiere aceptar condiciones en HuggingFace, lo que puede limitar la reproducibilidad y la integracion en pipelines automatizados.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face, lo que puede limitar la reproducibilidad y la integracion en pipelines automatizados.
 - Cobertura limitada a arabe e ingles: no se debe esperar un rendimiento aceptable en otros idiomas, incluidos dialectos arabes no representados en el entrenamiento.
 - Riesgo de alucinacion en ASR: como todo modelo generativo de transcripcion, puede inventar palabras o frases en segmentos con ruido, silencios o solapamiento de hablantes.
 - Sin datos publicados de benchmarks ni de evaluacion independiente: no es posible verificar su calidad frente a alternativas consolidadas como Whisper.
@@ -89,7 +89,7 @@ La comparativa es aproximada: no se dispone de resultados de benchmarks del mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Cohere-AR/cohere-transcribe-ar-soup-v9c
+- Hugging Face: https://huggingface.co/Cohere-AR/cohere-transcribe-ar-soup-v9c
 - Modelo base: https://huggingface.co/Cohere-AR/cohere-transcribe-ar-rl-v9ctrl
 - Cohere (sitio corporativo): https://cohere.com/
 - Cohere en Wikipedia: https://en.wikipedia.org/wiki/Cohere

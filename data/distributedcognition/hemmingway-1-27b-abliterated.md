@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Hemmingway-1-27B-abliterated es un modelo de lenguaje de ~26.900 millones de parámetros publicado por el usuario distributedcognition en HuggingFace. Se distribuye con la etiqueta de arquitectura qwen3_5_text y con pesos en safetensors y GGUF, además de estar marcado como compatible con endpoints. El sufijo "abliterated" indica que se ha aplicado una técnica de abliteración sobre un modelo base, es decir, la supresión de las direcciones de rechazo en los pesos para eliminar el comportamiento de negativa ante determinadas peticiones.
+Hemmingway-1-27B-abliterated es un modelo de lenguaje de ~26.900 millones de parámetros publicado por el usuario distributedcognition en Hugging Face. Se distribuye con la etiqueta de arquitectura qwen3_5_text y con pesos en safetensors y GGUF, además de estar marcado como compatible con endpoints. El sufijo "abliterated" indica que se ha aplicado una técnica de abliteración sobre un modelo base, es decir, la supresión de las direcciones de rechazo en los pesos para eliminar el comportamiento de negativa ante determinadas peticiones.
 
-La relevancia de esta ficha es limitada y conviene ser explícito: el repositorio no incluye model card con información sustantiva. No se publican licencia, idiomas soportados, longitud de contexto, composición del dataset de entrenamiento ni resultados de benchmarks, y la ficha de HuggingFace no declara pipeline de inferencia. El contador de descargas (10) y de likes (0) sitúa el modelo en un estado de adopción muy incipiente.
+La relevancia de esta ficha es limitada y conviene ser explícito: el repositorio no incluye model card con información sustantiva. No se publican licencia, idiomas soportados, longitud de contexto, composición del dataset de entrenamiento ni resultados de benchmarks, y la ficha de Hugging Face no declara pipeline de inferencia. El contador de descargas (10) y de likes (0) sitúa el modelo en un estado de adopción muy incipiente.
 
 Por tanto, esta ficha recoge únicamente los datos verificables disponibles (recuento real de parámetros, formatos de pesos, etiquetas y fechas) y marca explícitamente como "no disponible" todo aquello que no se ha publicado. Cualquier evaluación de idoneidad para producción debería hacerse mediante pruebas propias, dado que no existe documentación del autor.
 
@@ -35,7 +35,7 @@ Respecto al entrenamiento, no hay información sobre el volumen de tokens, la co
 
 - Generación de texto conversacional: la etiqueta conversational del repositorio confirma que el modelo está orientado a diálogo multi-turno.
 - Procesamiento de texto como única modalidad declarada: la etiqueta qwen3_5_text apunta a una arquitectura exclusivamente de texto; no hay indicios de capacidades de visión, audio u otras modalidades.
-- Compatibilidad con endpoints: la etiqueta endpoints_compatible sugiere que el modelo puede desplegarse en infraestructura de inferencia compatible con el ecosistema de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta endpoints_compatible sugiere que el modelo puede desplegarse en infraestructura de inferencia compatible con el ecosistema de Hugging Face.
 - Cuantización para despliegue local: la presencia de archivos GGUF permite, en principio, ejecución en CPU y GPU de gama de consumo mediante llama.cpp y herramientas derivadas.
 - Razonamiento, generación de código, matemáticas y uso de herramientas: no disponible. No se ha publicado ninguna evaluación ni declaración al respecto.
 - Capacidades multilingües: no disponible. No se declara ningún conjunto de idiomas.
@@ -75,7 +75,7 @@ Opciones de despliegue:
 - vLLM o SGLang para servir safetensors con alto throughput en GPU de centro de datos.
 - llama.cpp y sus derivados para ejecutar los archivos GGUF en CPU, GPU o configuraciones híbridas.
 - Ollama como envoltorio simplificado sobre GGUF para uso local.
-- Text Generation Inference (TGI) si se despliega en HuggingFace Inference Endpoints, dado que el repositorio está etiquetado como endpoints_compatible.
+- Text Generation Inference (TGI) si se despliega en Hugging Face Inference Endpoints, dado que el repositorio está etiquetado como endpoints_compatible.
 
 Latencia y throughput: no disponible. No se han publicado mediciones.
 
@@ -107,6 +107,6 @@ Nota: el modelo analizado podría derivar de una de estas familias u otra, pero 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/distributedcognition/Hemmingway-1-27B-abliterated
+- Hugging Face: https://huggingface.co/distributedcognition/Hemmingway-1-27B-abliterated
 
 No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

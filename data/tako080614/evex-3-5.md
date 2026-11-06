@@ -103,7 +103,7 @@ No se dispone de modelos comparables fuera de esta serie por su tamano extremada
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tako080614/evex-3.5
+- Modelo en Hugging Face: https://huggingface.co/tako080614/evex-3.5
 - Modelo anterior evex-3: https://huggingface.co/tako080614/evex-3
 - Modelo evex-1: https://huggingface.co/tako080614/evex-1
 - Modelo evex-2: https://huggingface.co/tako080614/evex-2

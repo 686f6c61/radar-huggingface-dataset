@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`PipoAI/tinybard` es un modelo publicado en HuggingFace por el usuario u organizacion PipoAI, etiquetado con los tags `onnx` y `gpt2` y sin pipeline declarado en la plataforma. La etiqueta `gpt2` apunta a una arquitectura transformer decoder-only de la familia GPT-2, y la etiqueta `onnx` indica que el artefacto distribuido esta exportado a formato ONNX para inferencia optimizada. No se especifica en la informacion disponible el numero de parametros, la variante concreta ni el proceso de entrenamiento seguido.
+`PipoAI/tinybard` es un modelo publicado en Hugging Face por el usuario u organizacion PipoAI, etiquetado con los tags `onnx` y `gpt2` y sin pipeline declarado en la plataforma. La etiqueta `gpt2` apunta a una arquitectura transformer decoder-only de la familia GPT-2, y la etiqueta `onnx` indica que el artefacto distribuido esta exportado a formato ONNX para inferencia optimizada. No se especifica en la informacion disponible el numero de parametros, la variante concreta ni el proceso de entrenamiento seguido.
 
 El repositorio ocupa 29,8 GB, un tamano notablemente superior al de un checkpoint GPT-2 clasico (124M a 1.5B parametros), lo que sugiere la presencia de multiples exportaciones ONNX, pesos en fp32 con datos externos o un modelo de mayor tamano del que no se ha documentado la arquitectura exacta. Esta falta de documentacion es, en si misma, el dato mas relevante para un evaluador tecnico: el modelo cuenta con 92 descargas y 0 likes desde su creacion el 21 de octubre de 2026 (actualizado el 28 de octubre de 2026), sin model card publica asociada.
 
@@ -93,6 +93,6 @@ La comparacion con las alternativas es estructural, no de rendimiento: no existe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PipoAI/tinybard
-- Perfil del autor en HuggingFace (derivado del identificador del repositorio): https://huggingface.co/PipoAI
+- Modelo en Hugging Face: https://huggingface.co/PipoAI/tinybard
+- Perfil del autor en Hugging Face (derivado del identificador del repositorio): https://huggingface.co/PipoAI
 - No se han encontrado en la informacion proporcionada enlaces a papers, blogs tecnicos, repositorios de codigo ni demos adicionales.

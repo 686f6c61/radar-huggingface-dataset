@@ -2,9 +2,9 @@
 
 ## Resumen
 
-ZenithAI-TestRepo-r36 es un repositorio de prueba publicado por el usuario SOTAagi2030 en HuggingFace. Según la model card, corresponde a una versión actualizada de un modelo llamado ZenithAI, que habría mejorado sus capacidades de razonamiento y reducción de alucinaciones mediante un mayor uso de recursos computacionales y optimizaciones post-entrenamiento. El repositorio está etiquetado con `transformers`, `pytorch`, `bert` y `feature-extraction`, lo que sugiere una arquitectura basada en transformer, aunque la descripción de la model card describe capacidades propias de un modelo conversacional de propósito general, lo que resulta contradictorio con el pipeline declarado.
+ZenithAI-TestRepo-r36 es un repositorio de prueba publicado por el usuario SOTAagi2030 en Hugging Face. Según la model card, corresponde a una versión actualizada de un modelo llamado ZenithAI, que habría mejorado sus capacidades de razonamiento y reducción de alucinaciones mediante un mayor uso de recursos computacionales y optimizaciones post-entrenamiento. El repositorio está etiquetado con `transformers`, `pytorch`, `bert` y `feature-extraction`, lo que sugiere una arquitectura basada en transformer, aunque la descripción de la model card describe capacidades propias de un modelo conversacional de propósito general, lo que resulta contradictorio con el pipeline declarado.
 
-Se trata de un repositorio con cero descargas y cero likes, creado en agosto de 2026, y su contenido parece ser una plantilla de prueba más que un modelo final verificado. La información disponible es escasa y no ha sido validada de forma independiente, por lo que esta ficha se basa exclusivamente en los datos proporcionados por el autor y en los metadatos de HuggingFace, sin poder confirmar la existencia real del modelo ni su rendimiento.
+Se trata de un repositorio con cero descargas y cero likes, creado en agosto de 2026, y su contenido parece ser una plantilla de prueba más que un modelo final verificado. La información disponible es escasa y no ha sido validada de forma independiente, por lo que esta ficha se basa exclusivamente en los datos proporcionados por el autor y en los metadatos de Hugging Face, sin poder confirmar la existencia real del modelo ni su rendimiento.
 
 ## Especificaciones técnicas
 
@@ -93,7 +93,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SOTAagi2030/ZenithAI-TestRepo-r36
+- Repositorio en Hugging Face: https://huggingface.co/SOTAagi2030/ZenithAI-TestRepo-r36
 - Registro en free2aitools: https://free2aitools.com/model/sotaagi2030/zenithai-testrepo-r36
 - Repositorio en GitHub (posiblemente relacionado): https://github.com/jasiritech/ZenithAI
 - Sitio web oficial (según la model card): https://www.zenithai.ai/

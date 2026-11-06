@@ -69,7 +69,7 @@ No hay comparación medida disponible: el autor no aporta resultados ni líneas 
 
 | Modelo | Parametros | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| nathanvin/cnn-transformer-retrieval-tutorial | 49.600 | Retrieval (sin entrenar) | MIT | HuggingFace |
+| nathanvin/cnn-transformer-retrieval-tutorial | 49.600 | Retrieval (sin entrenar) | MIT | Hugging Face |
 | CLIP (referencia de categoria) | no disponible en la informacion proporcionada | Recuperacion texto-imagen | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
 | Flickr30k como benchmark sugerido | no aplica | Evaluacion de retrieval | no aplica | Dataset externo |
 
@@ -90,7 +90,7 @@ La unica referencia de comparacion que aparece en la documentacion es la recomen
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nathanvin/cnn-transformer-retrieval-tutorial
+- Repositorio en Hugging Face: https://huggingface.co/nathanvin/cnn-transformer-retrieval-tutorial
 - Archivos incluidos: `finetune.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Dataset de evaluación sugerido por el autor: Flickr30k (no se proporciona enlace específico)
 - Paper, blog, repositorio o demo adicionales: no disponibles en la informacion proporcionada

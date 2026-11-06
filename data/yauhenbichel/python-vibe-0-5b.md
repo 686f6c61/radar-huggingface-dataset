@@ -75,6 +75,6 @@ La comparativa se limita a modelos de código de tamaño pequeño; no se dispone
 
 ## Enlaces
 
-- [HuggingFace - YauhenBichel/python-vibe-0.5b](https://huggingface.co/YauhenBichel/python-vibe-0.5b)
+- [Hugging Face - YauhenBichel/python-vibe-0.5b](https://huggingface.co/YauhenBichel/python-vibe-0.5b)
 - [GitHub - YauhenBichel/python-vibe](https://github.com/YauhenBichel/python-vibe)
 - [Modelo base - Qwen/Qwen2.5-Coder-0.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B-Instruct)

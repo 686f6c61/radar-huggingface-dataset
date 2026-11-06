@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Claude-Haiku-5.5 es, a pesar del nombre, un modelo abierto de la comunidad publicado por el usuario diablomike20 en HuggingFace. Se trata de una conversión a formato GGUF —realizada con el espacio GGUF-my-repo de ggml.ai sobre llama.cpp— del checkpoint `mondk/Qwen3-VL-4B-Thinking-Msh-Claude-Safetensors`, que a su vez es un ajuste fino (SFT) del modelo multimodal Qwen3-VL-4B-Thinking. Por tanto, la arquitectura real es la de un transformer denso visión-lenguaje de aproximadamente 4.022 millones de parámetros, no la del modelo propietario Claude Haiku 5.5 de Anthropic con el que comparte denominación.
+Claude-Haiku-5.5 es, a pesar del nombre, un modelo abierto de la comunidad publicado por el usuario diablomike20 en Hugging Face. Se trata de una conversión a formato GGUF —realizada con el espacio GGUF-my-repo de ggml.ai sobre llama.cpp— del checkpoint `mondk/Qwen3-VL-4B-Thinking-Msh-Claude-Safetensors`, que a su vez es un ajuste fino (SFT) del modelo multimodal Qwen3-VL-4B-Thinking. Por tanto, la arquitectura real es la de un transformer denso visión-lenguaje de aproximadamente 4.022 millones de parámetros, no la del modelo propietario Claude Haiku 5.5 de Anthropic con el que comparte denominación.
 
 El interés del artefacto es práctico: empaqueta un modelo de 4B con capacidad de razonamiento explícito ("thinking") y entrada de imágenes en un único fichero GGUF de 2,9 GB, ejecutable en CPU o en GPUs de consumo mediante llama.cpp. Esto lo sitúa en la franja de modelos pequeños para despliegue local, prototipado rápido de pipelines multimodales y tareas de extracción o clasificación donde no se quiere depender de una API externa.
 
@@ -68,8 +68,8 @@ Ni la model card del repositorio GGUF ni la información de búsqueda proporcion
 
 | Modelo | Parámetros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Claude-Haiku-5.5 (este repositorio) | 4,02B | no disponible | texto + imagen, modo thinking | Apache 2.0 | GGUF en HuggingFace |
-| Qwen3-VL-4B-Thinking (modelo base) | ~4B | no disponible | texto + imagen, modo thinking | no disponible en la información | safetensors en HuggingFace |
+| Claude-Haiku-5.5 (este repositorio) | 4,02B | no disponible | texto + imagen, modo thinking | Apache 2.0 | GGUF en Hugging Face |
+| Qwen3-VL-4B-Thinking (modelo base) | ~4B | no disponible | texto + imagen, modo thinking | no disponible en la información | safetensors en Hugging Face |
 | Qwen3-VL-4B-Thinking-Msh-Claude (checkpoint SFT de origen) | ~4B | no disponible | texto + imagen, modo thinking | no disponible en la información | safetensors y GGUF Q5_K_M |
 | Claude Haiku 5.5 (Anthropic, modelo propietario) | no disponible | no disponible | texto (API) | propietaria | solo API |
 
@@ -89,7 +89,7 @@ La comparación relevante es con el modelo base y con el checkpoint SFT del que 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/diablomike20/Claude-Haiku-5.5
+- Repositorio Hugging Face del modelo: https://huggingface.co/diablomike20/Claude-Haiku-5.5
 - Modelo de origen (safetensors): https://huggingface.co/mondk/Qwen3-VL-4B-Thinking-Msh-Claude-Safetensors
 - Repositorio GGUF de referencia citado en la model card: https://huggingface.co/mondk/Qwen3-VL-4B-Thinking-Msh-Claude-Safetensors-Q5_K_M-GGUF
 - Dataset de ajuste: https://huggingface.co/datasets/mondk/Claude-Haiku-5.5-High-Sft

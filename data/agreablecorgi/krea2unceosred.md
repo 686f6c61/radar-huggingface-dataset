@@ -2,7 +2,7 @@
 
 ## Resumen
 
-No se dispone de información suficiente sobre el modelo `agreablecorgi/krea2unceosred` para elaborar una ficha técnica significativa. El repositorio de HuggingFace presenta una model card mínima que únicamente declara la licencia como `unknown`, sin descripción, sin arquitectura, sin datos de entrenamiento y sin métricas de rendimiento. No hay resultados de búsqueda web relevantes que aporten documentación técnica, papers, blogs o demos sobre este modelo. Por tanto, esta ficha se limita a reflejar explícitamente la ausencia de datos públicos, sin especular ni inventar información.
+No se dispone de información suficiente sobre el modelo `agreablecorgi/krea2unceosred` para elaborar una ficha técnica significativa. El repositorio de Hugging Face presenta una model card mínima que únicamente declara la licencia como `unknown`, sin descripción, sin arquitectura, sin datos de entrenamiento y sin métricas de rendimiento. No hay resultados de búsqueda web relevantes que aporten documentación técnica, papers, blogs o demos sobre este modelo. Por tanto, esta ficha se limita a reflejar explícitamente la ausencia de datos públicos, sin especular ni inventar información.
 
 ## Especificaciones tecnicas
 
@@ -19,7 +19,7 @@ No se dispone de información suficiente sobre el modelo `agreablecorgi/krea2unc
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado ninguna información sobre la arquitectura del modelo, los datos de entrenamiento, el número de tokens procesados, ni sobre posibles técnicas de alineación (RLHF, DPO, etc.). Tampoco se documentan innovaciones técnicas destacables. El repositorio de HuggingFace no incluye README descriptivo ni ficheros de configuración accesibles, por lo que no es posible determinar si se trata de un transformer, un modelo de mezcla de expertos (MoE), una SSM o cualquier otra arquitectura.
+No se ha publicado ninguna información sobre la arquitectura del modelo, los datos de entrenamiento, el número de tokens procesados, ni sobre posibles técnicas de alineación (RLHF, DPO, etc.). Tampoco se documentan innovaciones técnicas destacables. El repositorio de Hugging Face no incluye README descriptivo ni ficheros de configuración accesibles, por lo que no es posible determinar si se trata de un transformer, un modelo de mezcla de expertos (MoE), una SSM o cualquier otra arquitectura.
 
 ## Capacidades
 
@@ -31,7 +31,7 @@ No se ha publicado ninguna información sobre la arquitectura del modelo, los da
 
 ## Casos de uso
 
-No es posible proponer casos de uso concretos, ya que no se dispone de información sobre las capacidades, el tamaño o el rendimiento del modelo. Cualquier aplicación práctica sería una especulación sin base documental. Se recomienda consultar el repositorio de HuggingFace para verificar si el autor publica información adicional en el futuro.
+No es posible proponer casos de uso concretos, ya que no se dispone de información sobre las capacidades, el tamaño o el rendimiento del modelo. Cualquier aplicación práctica sería una especulación sin base documental. Se recomienda consultar el repositorio de Hugging Face para verificar si el autor publica información adicional en el futuro.
 
 ## Benchmarks y rendimiento
 
@@ -58,5 +58,5 @@ No disponible. No se puede establecer una comparación con alternativas de la mi
 
 ## Enlaces
 
-- HuggingFace: [agreablecorgi/krea2unceosred](https://huggingface.co/agreablecorgi/krea2unceosred)
+- Hugging Face: [agreablecorgi/krea2unceosred](https://huggingface.co/agreablecorgi/krea2unceosred)
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la búsqueda web.

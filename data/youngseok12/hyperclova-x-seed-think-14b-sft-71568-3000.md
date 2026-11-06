@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la información disponible. El R
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| HyperCLOVA X SEED Think-14B SFT 71568-3000 | 14.748 M | 4096 tokens (entrenamiento) | other | HuggingFace (safetensors) |
-| HyperCLOVA X SEED Think-14B (base) | ~14.748 M | no disponible | other | HuggingFace |
-| HyperCLOVA X SEED Think-14B minimal-sft-71875 | ~14.748 M | no disponible | other | HuggingFace |
+| HyperCLOVA X SEED Think-14B SFT 71568-3000 | 14.748 M | 4096 tokens (entrenamiento) | other | Hugging Face (safetensors) |
+| HyperCLOVA X SEED Think-14B (base) | ~14.748 M | no disponible | other | Hugging Face |
+| HyperCLOVA X SEED Think-14B minimal-sft-71875 | ~14.748 M | no disponible | other | Hugging Face |
 
 La comparativa se limita a modelos de la misma familia y tamaño. No se dispone de datos de benchmarks para ninguno de ellos. El modelo base es la referencia original sin ajuste fino; el modelo "minimal-sft-71875" es otro SFT del autor sobre el mismo base, con un dataset distinto, pero tampoco incluye resultados de evaluación.
 

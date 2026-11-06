@@ -24,7 +24,7 @@ Su relevancia actual es practica mas que arquitectonica: la mayoria de herramien
 | Modelo base | Ultralytics/YOLO26, fine-tuning desde pesos COCO (`yolo26m.pt`) |
 | Clases | 13 (ids 0-12) |
 | Libreria requerida | ultralytics >= 8.4 |
-| Tamano del repositorio | 0,0 GB reportados por HuggingFace (no refleja el peso real de `best.pt`) |
+| Tamano del repositorio | 0,0 GB reportados por Hugging Face (no refleja el peso real de `best.pt`) |
 | Descargas / likes | 0 / 0 |
 
 Clases en orden de id:
@@ -107,7 +107,7 @@ No se han encontrado en la informacion proporcionada alternativas directamente c
 
 | Modelo | Tarea | Parametros | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cuttlefisher (fase 1) | Deteccion de 13 clases de maquetacion en prensa historica | no disponible (`yolo26m`) | `imgsz=1280` | MIT | HuggingFace, `.pt` |
+| cuttlefisher (fase 1) | Deteccion de 13 clases de maquetacion en prensa historica | no disponible (`yolo26m`) | `imgsz=1280` | MIT | Hugging Face, `.pt` |
 | cuttlefisher (fase 2, prevista) | Igual, con FINLAM + La Liberte | no disponible | no disponible | MIT (prevista) | no publicada |
 | eynollah | Analisis de maquetacion historica (regiones y orden de lectura) | no disponible | no disponible | no disponible | repositorio publico |
 | yolo26l (variante probada) | Deteccion de las mismas clases | no disponible | no disponible | MIT (Ultralytics YOLO26) | descartada: mejor mAP50-95 global, peor en titulares |
@@ -131,7 +131,7 @@ No se han encontrado en la informacion proporcionada alternativas directamente c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/storytracer/cuttlefisher
+- Modelo en Hugging Face: https://huggingface.co/storytracer/cuttlefisher
 - Repositorio con codigo, notas y metricas completas: https://github.com/storytracer/cuttlefisher
 - SquiddleOCR: https://github.com/storytracer/squiddleocr
 - Dataset Teklia/Newspapers-finlam: https://huggingface.co/datasets/Teklia/Newspapers-finlam

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AI-Debugger-Pro es un repositorio publicado en HuggingFace por el usuario earwigmoth bajo licencia MIT. La informacion disponible en la model card se limita a la declaracion de licencia: no incluye descripcion del modelo, arquitectura, tamano, datos de entrenamiento ni instrucciones de uso. El nombre del repositorio sugiere un posible proposito orientado a la depuracion de codigo, pero esta interpretacion no esta confirmada por ninguna documentacion oficial.
+AI-Debugger-Pro es un repositorio publicado en Hugging Face por el usuario earwigmoth bajo licencia MIT. La informacion disponible en la model card se limita a la declaracion de licencia: no incluye descripcion del modelo, arquitectura, tamano, datos de entrenamiento ni instrucciones de uso. El nombre del repositorio sugiere un posible proposito orientado a la depuracion de codigo, pero esta interpretacion no esta confirmada por ninguna documentacion oficial.
 
 El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) y no tiene pipeline declarado ni idiomas especificados. La fecha de creacion y ultima actualizacion declaradas son identicas (2026-09-19T15:43:23Z), lo que indica que no ha habido mantenimiento posterior.
 
@@ -91,7 +91,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/earwigmoth/AI-Debugger-Pro
+- Repositorio en Hugging Face: https://huggingface.co/earwigmoth/AI-Debugger-Pro
 - Paper: no disponible
 - Blog o documentacion adicional: no disponible
 - Repositorio de codigo: no disponible

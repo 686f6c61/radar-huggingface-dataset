@@ -86,9 +86,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jundot/gemma-4-31B-it-oQ3e-mtp | 31,743B | 256K | MLX safetensors, ~15 GiB | Apache-2.0 | HuggingFace |
-| google/gemma-4-31B-it | 30,7B (backbone de lenguaje) | 256K | Safetensors BF16 (sin confirmar) | Gemma 4 license | HuggingFace |
-| google/gemma-4-31B-it-assistant | No disponible | No disponible | No disponible | No disponible | HuggingFace |
+| Jundot/gemma-4-31B-it-oQ3e-mtp | 31,743B | 256K | MLX safetensors, ~15 GiB | Apache-2.0 | Hugging Face |
+| google/gemma-4-31B-it | 30,7B (backbone de lenguaje) | 256K | Safetensors BF16 (sin confirmar) | Gemma 4 license | Hugging Face |
+| google/gemma-4-31B-it-assistant | No disponible | No disponible | No disponible | No disponible | Hugging Face |
 
 No se dispone en la informacion proporcionada de otros checkpoints cuantizados comparables del mismo modelo base, ni de datos de rendimiento que permitan contrastar la perdida de calidad de esta cuantizacion frente a alternativas.
 
@@ -106,7 +106,7 @@ No se dispone en la informacion proporcionada de otros checkpoints cuantizados c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jundot/gemma-4-31B-it-oQ3e-mtp
+- Modelo en Hugging Face: https://huggingface.co/Jundot/gemma-4-31B-it-oQ3e-mtp
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
 - Modelo asistente (origen de la cabeza MTP): https://huggingface.co/google/gemma-4-31B-it-assistant
 - Repositorio de la herramienta de cuantizacion oQ (oMLX): https://github.com/jundot/omlx

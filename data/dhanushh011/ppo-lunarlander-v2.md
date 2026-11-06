@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `dhanushh011/ppo-LunarLander-v2` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) para resolver el entorno `LunarLander-v2`. Lo publica el usuario dhanushh011 en HuggingFace dentro de la libreria `stable-baselines3`, y esta etiquetado como implementacion propia (`custom-implementation`) vinculada a un curso de deep reinforcement learning. No es un modelo de lenguaje: es una politica entrenada que mapea observaciones del entorno a acciones de control.
+El modelo `dhanushh011/ppo-LunarLander-v2` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) para resolver el entorno `LunarLander-v2`. Lo publica el usuario dhanushh011 en Hugging Face dentro de la libreria `stable-baselines3`, y esta etiquetado como implementacion propia (`custom-implementation`) vinculada a un curso de deep reinforcement learning. No es un modelo de lenguaje: es una politica entrenada que mapea observaciones del entorno a acciones de control.
 
 El artefacto resuelve una tarea concreta de control discreto: aterrizar de forma estable una nave sobre una plataforma en un entorno fisico simplificado de dos dimensiones. El modelo card declara un retorno medio de 298,48 +/- 13,13 en `LunarLander-v2`, lo que indica que el agente alcanza de forma consistente el umbral de resolucion tipico del entorno (200 puntos) y opera en el rango de soluciones consideradas "resueltas" para esta tarea.
 
@@ -73,7 +73,7 @@ No se dispone de datos de otros agentes comparables en la informacion proporcion
 
 | Modelo / algoritmo | Parametros | Contexto | Rendimiento en LunarLander-v2 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dhanushh011/ppo-LunarLander-v2 (PPO) | no disponible | no aplica | 298,48 +/- 13,13 (declarado) | no disponible | HuggingFace |
+| dhanushh011/ppo-LunarLander-v2 (PPO) | no disponible | no aplica | 298,48 +/- 13,13 (declarado) | no disponible | Hugging Face |
 | Alternativas DQN en LunarLander-v2 | no disponible | no aplica | no disponible | no disponible | no disponible |
 | Alternativas A2C en LunarLander-v2 | no disponible | no aplica | no disponible | no disponible | no disponible |
 | Soluciones heuristicas o de busqueda | no aplica | no aplica | no disponible | no disponible | no disponible |
@@ -94,7 +94,7 @@ No se han encontrado en la informacion disponible modelos comparables con datos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dhanushh011/ppo-LunarLander-v2
+- Modelo en Hugging Face: https://huggingface.co/dhanushh011/ppo-LunarLander-v2
 - Stable-Baselines3 (libreria declarada): https://stable-baselines3.readthedocs.io/
 - Documentacion del entorno LunarLander (Gymnasium): https://gymnasium.farama.org/environments/box2d/lunar_lander/
 - Paper original de PPO (Schulman et al., 2017): https://arxiv.org/abs/1707.06347

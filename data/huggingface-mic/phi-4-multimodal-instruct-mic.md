@@ -18,7 +18,7 @@ Es relevante en el contexto de la ingeniería de integración: el ecosistema nec
 | Longitud de contexto | no disponible (la configuracion del modelo esta reducida y la model card no declara la ventana final del fixture) |
 | Tipos de cuantizacion | no disponible; solo se distribuyen pesos en bfloat16. El autor verifica que el forward, la loss y los gradientes son finitos en float32, bfloat16 y float16 |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible en los metadatos de HuggingFace; el repositorio incluye una copia byte a byte del fichero `LICENSE` de `microsoft/Phi-4-multimodal-instruct` |
+| Licencia | no disponible en los metadatos de Hugging Face; el repositorio incluye una copia byte a byte del fichero `LICENSE` de `microsoft/Phi-4-multimodal-instruct` |
 | Formato de pesos | safetensors (bfloat16) |
 | Modelo base | `microsoft/Phi-4-multimodal-instruct` |
 | Clave de fixture | `b523dcc306e0` |
@@ -88,7 +88,7 @@ El unico dato de validacion publicado es la puerta de sensibilidad de entrada: t
 | Licencia | no disponible en metadatos; `LICENSE` copiado del base | no disponible en la informacion proporcionada |
 | Formato | safetensors (bfloat16) | no disponible en la informacion proporcionada |
 | Uso previsto | pruebas de integracion y CI | inferencia multimodal real |
-| Disponibilidad | publico, 0 descargas, 0 likes | publico en HuggingFace (referenciado) |
+| Disponibilidad | publico, 0 descargas, 0 likes | publico en Hugging Face (referenciado) |
 
 No se han identificado en la informacion disponible otras alternativas comparables de la misma categoria (fixtures de contrato para arquitecturas multimodales) con las que establecer una comparacion cuantitativa.
 
@@ -98,7 +98,7 @@ No se han identificado en la informacion disponible otras alternativas comparabl
 - Alucinacion total: con pesos aleatorios, toda salida es ruido estadistico; no hay base para evaluar fidelidad factual.
 - Sin alineacion: no ha pasado por SFT, RLHF ni DPO, por lo que no existen salvaguardas de contenido. Tampoco hay sesgos medibles, porque no hay comportamiento aprendido.
 - Capacidad representacional practicamente nula: 2 capas en el decodificador y 2 en vision no permiten ninguna tarea cognitiva, aunque la configuracion se ampliase.
-- Licencia ambigua: los metadatos de HuggingFace no declaran licencia. El repositorio incluye una copia del fichero `LICENSE` del modelo base, pero sus terminos no se detallan en la informacion disponible; no debe asumirse uso comercial sin verificar ese fichero.
+- Licencia ambigua: los metadatos de Hugging Face no declaran licencia. El repositorio incluye una copia del fichero `LICENSE` del modelo base, pero sus terminos no se detallan en la informacion disponible; no debe asumirse uso comercial sin verificar ese fichero.
 - Contexto e idiomas no verificables: al haberse reducido la configuracion, la ventana de contexto efectiva no esta documentada, y no hay evidencia de comportamiento multilingue.
 - Soporte de frameworks no garantizado: solo se documenta el uso con Transformers; no hay artefactos GGUF ni confirmacion de soporte en vLLM, TGI o llama.cpp.
 - Sin validacion comunitaria: 0 descargas y 0 likes; no existe evidencia externa de su correcto funcionamiento mas alla de las puertas internas del autor.
@@ -107,7 +107,7 @@ No se han identificado en la informacion disponible otras alternativas comparabl
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/huggingface-mic/Phi-4-multimodal-instruct-mic
+- Repositorio en Hugging Face: https://huggingface.co/huggingface-mic/Phi-4-multimodal-instruct-mic
 - Manifiesto del contrato: https://huggingface.co/huggingface-mic/Phi-4-multimodal-instruct-mic/blob/main/integration.json
 - Uso con Transformers: https://huggingface.co/huggingface-mic/Phi-4-multimodal-instruct-mic/blob/main/integrations/transformers/usage.md
 - Expectativas para Transformers: https://huggingface.co/huggingface-mic/Phi-4-multimodal-instruct-mic/tree/main/integrations/transformers/expectations

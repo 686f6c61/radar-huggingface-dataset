@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ghostfury73/ai-models es un repositorio publicado en HuggingFace por el usuario Ghostfury73. Según la información disponible en la plataforma, se trata de un repositorio sin model card descriptiva, sin pipeline asociado y sin datos de uso registrados (0 descargas y 0 likes en el momento de la consulta). No se dispone de información sobre la arquitectura del modelo, su tamaño, su finalidad ni el problema que pretende resolver.
+Ghostfury73/ai-models es un repositorio publicado en Hugging Face por el usuario Ghostfury73. Según la información disponible en la plataforma, se trata de un repositorio sin model card descriptiva, sin pipeline asociado y sin datos de uso registrados (0 descargas y 0 likes en el momento de la consulta). No se dispone de información sobre la arquitectura del modelo, su tamaño, su finalidad ni el problema que pretende resolver.
 
 La ausencia total de documentación impide evaluar la relevancia del modelo o su utilidad práctica para desarrolladores e investigadores. El repositorio fue creado el 31 de octubre de 2026 y no consta ninguna actualización posterior. La única metainformación disponible es la etiqueta de licencia "other", que remite a un archivo LICENSE sin contenido público descrito en la model card.
 
@@ -75,6 +75,6 @@ No disponible. Al desconocerse la categoría, el tamaño y la tarea del modelo, 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ghostfury73/ai-models
+- Repositorio en Hugging Face: https://huggingface.co/Ghostfury73/ai-models
 - Licencia (LICENSE): https://huggingface.co/Ghostfury73/ai-models/blob/main/LICENSE
 - Paper, blog, demo o repositorio de código: no disponibles.

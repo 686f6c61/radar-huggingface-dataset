@@ -2,7 +2,7 @@
 
 ## Resumen
 
-La información proporcionada no contiene datos técnicos verificables sobre el modelo `0xmoose0xmoose0xmoose/cspt-like-target10`. El repositorio de HuggingFace presenta un identificador que sugiere un posible modelo de tipo "cspt-like", pero no se dispone de metadatos como arquitectura, tamaño, contexto, licencia o idiomas. Las descargas son 0 y solo hay 1 like, lo que indica que se trata de un repositorio sin uso ni documentación pública.
+La información proporcionada no contiene datos técnicos verificables sobre el modelo `0xmoose0xmoose0xmoose/cspt-like-target10`. El repositorio de Hugging Face presenta un identificador que sugiere un posible modelo de tipo "cspt-like", pero no se dispone de metadatos como arquitectura, tamaño, contexto, licencia o idiomas. Las descargas son 0 y solo hay 1 like, lo que indica que se trata de un repositorio sin uso ni documentación pública.
 
 Los resultados de búsqueda web devueltos no guardan relación con el modelo: corresponden a registros genealógicos y perfiles de personas con el nombre coreano "강원 (康元)". Por tanto, no existe información técnica fiable que permita elaborar una ficha exhaustiva. A continuación se detalla el estado de cada apartado, marcando explícitamente los datos no disponibles.
 
@@ -57,5 +57,5 @@ No disponible. Sin información sobre arquitectura, tamaño o rendimiento, no es
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/0xmoose0xmoose0xmoose/cspt-like-target10
+- Repositorio de Hugging Face: https://huggingface.co/0xmoose0xmoose0xmoose/cspt-like-target10
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados al modelo. Los resultados de búsqueda web proporcionados son ajenos al modelo y corresponden a registros genealógicos coreanos.

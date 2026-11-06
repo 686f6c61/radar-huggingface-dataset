@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Milewuigrhi3/evie-compact-tier` (este repo) | no disponible (LLM) / 82 M (TTS) | no disponible | LiteRT-LM + ONNX | Apache 2.0 | HuggingFace, 0 descargas |
-| `litert-community/gemma-4-E2B-it-litert-lm` (origen) | no disponible | no disponible | LiteRT-LM | Apache 2.0 | HuggingFace |
-| `hexgrad/Kokoro-82M` (origen TTS) | 82 M | no disponible | no disponible | Apache 2.0 | HuggingFace |
-| `csukuangfj/kokoro-multi-lang-v1_0` (origen TTS export) | 82 M | no disponible | ONNX | Apache 2.0 | HuggingFace |
+| `Milewuigrhi3/evie-compact-tier` (este repo) | no disponible (LLM) / 82 M (TTS) | no disponible | LiteRT-LM + ONNX | Apache 2.0 | Hugging Face, 0 descargas |
+| `litert-community/gemma-4-E2B-it-litert-lm` (origen) | no disponible | no disponible | LiteRT-LM | Apache 2.0 | Hugging Face |
+| `hexgrad/Kokoro-82M` (origen TTS) | 82 M | no disponible | no disponible | Apache 2.0 | Hugging Face |
+| `csukuangfj/kokoro-multi-lang-v1_0` (origen TTS export) | 82 M | no disponible | ONNX | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento ni de contexto para establecer una comparacion cuantitativa con modelos alternativos; la comparativa anterior se limita a origen, formato y licencia.
 

@@ -31,7 +31,7 @@ El repositorio ocupa 102 GB e incluye once cuantizaciones estaticas. No se han p
 
 La informacion disponible no detalla la arquitectura interna del modelo base mas alla de los tags del repositorio, que apuntan a una base de la familia Qwen y a un proceso de ajuste mediante LoRA y SFT (supervised fine-tuning). No se especifica el numero de capas, la dimension oculta, el tipo de atencion ni si se emplearon tecnicas como RoPE extendido o atencion lineal. Tampoco se documenta el numero de tokens de entrenamiento, la composicion del dataset ni si hubo fases de RLHF o DPO posteriores al SFT.
 
-Lo que si es verificable es el pipeline de publicacion: mradermacher ha generado cuantizaciones estaticas (sin imatrix) mediante conversion desde pesos HuggingFace a formato GGUF, con la etiqueta `convert_type: hf` y `quantize_version: 2`. El autor indica explicitamente que las cuantizaciones ponderadas con imatrix no estan disponibles en el momento de la publicacion. La especializacion tematica del ajuste se deduce de los tags: ocean, ocean-restoration, ocean-climate, aquaculture, water-management, ocean-acidification, marine-biology y coralfill.
+Lo que si es verificable es el pipeline de publicacion: mradermacher ha generado cuantizaciones estaticas (sin imatrix) mediante conversion desde pesos Hugging Face a formato GGUF, con la etiqueta `convert_type: hf` y `quantize_version: 2`. El autor indica explicitamente que las cuantizaciones ponderadas con imatrix no estan disponibles en el momento de la publicacion. La especializacion tematica del ajuste se deduce de los tags: ocean, ocean-restoration, ocean-climate, aquaculture, water-management, ocean-acidification, marine-biology y coralfill.
 
 ## Capacidades
 
@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks que permitan una comparacion cuantitativa d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Atlantis-Pyramid-32B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Atlantis-Pyramid-32B-GGUF
 - Modelo base: https://huggingface.co/Coralfil/Atlantis-Pyramid-14B-Glyph
 - Pagina de descargas del autor: https://hf.tst.eu/model#Atlantis-Pyramid-32B-GGUF
 - Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

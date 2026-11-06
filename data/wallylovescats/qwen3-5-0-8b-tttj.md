@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `WallyLovesCats/Qwen3.5-0.8B-TTTJ` es un modelo de lenguaje multimodal (image-text-to-text) de aproximadamente 852 millones de parámetros, publicado en HuggingFace por el usuario WallyLovesCats. A pesar de su nombre, no se ha confirmado que sea un checkpoint oficial de la serie Qwen3.5 de Alibaba Cloud; la model card es una plantilla genérica sin información específica sobre su origen, entrenamiento o capacidades. El repositorio contiene pesos en formato safetensors y está etiquetado con `qwen3_5`, lo que sugiere una posible relación con esa familia, pero no hay evidencia documental que lo respalde.
+El modelo `WallyLovesCats/Qwen3.5-0.8B-TTTJ` es un modelo de lenguaje multimodal (image-text-to-text) de aproximadamente 852 millones de parámetros, publicado en Hugging Face por el usuario WallyLovesCats. A pesar de su nombre, no se ha confirmado que sea un checkpoint oficial de la serie Qwen3.5 de Alibaba Cloud; la model card es una plantilla genérica sin información específica sobre su origen, entrenamiento o capacidades. El repositorio contiene pesos en formato safetensors y está etiquetado con `qwen3_5`, lo que sugiere una posible relación con esa familia, pero no hay evidencia documental que lo respalde.
 
 La relevancia de este modelo radica en su tamaño compacto (0.85B parámetros) y su naturaleza multimodal, lo que podría hacerlo adecuado para despliegue en dispositivos con recursos limitados. Sin embargo, la ausencia de documentación técnica, benchmarks y detalles de licencia limita seriamente su uso en producción. Se desconoce si es un fine-tune, un modelo base o una variante experimental, y no hay datos sobre su contexto, idiomas soportados o arquitectura interna más allá de la inferencia por su nombre y etiquetas.
 
@@ -21,7 +21,7 @@ La relevancia de este modelo radica en su tamaño compacto (0.85B parámetros) y
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura interna del modelo. La model card es una plantilla automática de HuggingFace sin secciones completadas. El tag `qwen3_5` y el nombre sugieren una posible base en la serie Qwen3.5, que según fuentes externas utiliza una arquitectura híbrida con Gated Delta Networks y Mixture-of-Experts, pero no hay confirmación de que este checkpoint comparta esas características. Tampoco se dispone de datos sobre el dataset de entrenamiento, el número de tokens procesados, ni si se aplicaron técnicas como RLHF o DPO. El pipeline declarado es `image-text-to-text`, lo que indica que el modelo acepta tanto imágenes como texto como entrada, pero se desconocen los detalles de la fusión multimodal.
+No se ha publicado información sobre la arquitectura interna del modelo. La model card es una plantilla automática de Hugging Face sin secciones completadas. El tag `qwen3_5` y el nombre sugieren una posible base en la serie Qwen3.5, que según fuentes externas utiliza una arquitectura híbrida con Gated Delta Networks y Mixture-of-Experts, pero no hay confirmación de que este checkpoint comparta esas características. Tampoco se dispone de datos sobre el dataset de entrenamiento, el número de tokens procesados, ni si se aplicaron técnicas como RLHF o DPO. El pipeline declarado es `image-text-to-text`, lo que indica que el modelo acepta tanto imágenes como texto como entrada, pero se desconocen los detalles de la fusión multimodal.
 
 ## Capacidades
 
@@ -69,7 +69,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/WallyLovesCats/Qwen3.5-0.8B-TTTJ
+- Hugging Face: https://huggingface.co/WallyLovesCats/Qwen3.5-0.8B-TTTJ
 - Qualcomm AI Hub (referencia a Qwen3.5-0.8B, no a este modelo): https://aihub.qualcomm.com/models/qwen3_5_0_8b
 - vLLM Recipes (referencia a Qwen3.5-0.8B, no a este modelo): https://recipes.vllm.ai/Qwen/Qwen3.5-0.8B
 - Jetson AI Lab (referencia a Qwen3.5-0.8B, no a este modelo): https://www.jetson-ai-lab.com/models/qwen3-5-0-8b/

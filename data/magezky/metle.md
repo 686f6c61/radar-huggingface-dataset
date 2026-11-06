@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Metle es un modelo publicado en HuggingFace por el usuario Magezky (ID: Magezky/Metle). La información disponible sobre este modelo es extremadamente escasa: la model card no incluye descripción, arquitectura, tamaño, datos de entrenamiento ni capacidades, y se limita a declarar la licencia OpenRAIL (Open Responsible AI License). No consta pipeline asociado ni idiomas soportados.
+Metle es un modelo publicado en Hugging Face por el usuario Magezky (ID: Magezky/Metle). La información disponible sobre este modelo es extremadamente escasa: la model card no incluye descripción, arquitectura, tamaño, datos de entrenamiento ni capacidades, y se limita a declarar la licencia OpenRAIL (Open Responsible AI License). No consta pipeline asociado ni idiomas soportados.
 
 En el momento de redactar esta ficha, el modelo registra 0 descargas y 1 like, lo que indica que se trata de una publicación reciente y sin adopción comunitaria documentada. La fecha de creación y última actualización coincide (26 de octubre de 2026), lo que sugiere que el repositorio se subió en un solo commit sin revisiones posteriores.
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: no disponible (depende del tamaño del modelo, que no está documentado).
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible; debe verificarse el tamaño de los pesos en el repositorio antes de intentar cargarlo en hardware local.
-- Opciones de despliegue: no confirmadas. Si los pesos están en formato estándar, podrían ser compatibles con herramientas habituales como llama.cpp, Ollama, vLLM, TGI o transformers de HuggingFace, pero esto debe comprobarse empíricamente.
+- Opciones de despliegue: no confirmadas. Si los pesos están en formato estándar, podrían ser compatibles con herramientas habituales como llama.cpp, Ollama, vLLM, TGI o transformers de Hugging Face, pero esto debe comprobarse empíricamente.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -70,7 +70,7 @@ Sin conocer la arquitectura, el tamaño ni la finalidad del modelo, no es posibl
 | Contexto | no disponible | no disponible |
 | Rendimiento | no disponible | no disponible |
 | Licencia | OpenRAIL | no disponible |
-| Disponibilidad | HuggingFace, acceso público | no disponible |
+| Disponibilidad | Hugging Face, acceso público | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -84,7 +84,7 @@ Sin conocer la arquitectura, el tamaño ni la finalidad del modelo, no es posibl
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Magezky/Metle
+- Repositorio en Hugging Face: https://huggingface.co/Magezky/Metle
 - Perfil del autor: https://huggingface.co/Magezky
 - Paper: no disponible
 - Blog o anuncio: no disponible

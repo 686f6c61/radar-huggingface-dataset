@@ -121,7 +121,7 @@ No se dispone de datos comparativos publicados en la informacion proporcionada. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Savoxism/amid-kd-8xh200-gemma2-2b-it-amid
+- Modelo en Hugging Face: https://huggingface.co/Savoxism/amid-kd-8xh200-gemma2-2b-it-amid
 - Modelo base: https://huggingface.co/google/gemma-2-2b-it
 - Modelo profesor: https://huggingface.co/google/gemma-2-9b-it
 - Dataset de destilacion: VoCuc/UltraInteract-Infer (referenciado en la model card; no se proporciona URL directa en la informacion disponible)

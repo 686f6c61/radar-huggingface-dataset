@@ -74,7 +74,7 @@ No se dispone de datos comparativos cuantitativos con otros modelos de generaci√
 
 ## Enlaces
 
-- Modelo ONNX en HuggingFace: https://huggingface.co/Emerald7664/ACE-Step-v1.5-ONNX
+- Modelo ONNX en Hugging Face: https://huggingface.co/Emerald7664/ACE-Step-v1.5-ONNX
 - Modelo original ACE-Step v1.5: https://huggingface.co/ACE-Step/Ace-Step1.5
 - Repositorio GitHub de ACE-Step-1.5: https://github.com/ace-step/ACE-Step-1.5
 - Paper (arXiv): https://arxiv.org/abs/2506.00045

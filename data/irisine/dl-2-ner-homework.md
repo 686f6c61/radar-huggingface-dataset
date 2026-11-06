@@ -10,7 +10,7 @@ Con 33,2 millones de parámetros y un tamaño de repositorio de 0,1 GB, es un mo
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer encoder tipo BERT (etiqueta "bert" en HuggingFace); fine-tune de BAAI/bge-small-en-v1.5 |
+| Arquitectura | Transformer encoder tipo BERT (etiqueta "bert" en Hugging Face); fine-tune de BAAI/bge-small-en-v1.5 |
 | Parámetros totales | 33.215.625 |
 | Parámetros activos | No aplica (no es MoE) |
 | Longitud de contexto | No disponible (el modelo base BAAI/bge-small-en-v1.5 tiene una ventana típica de 512 tokens, pero no se confirma en la información proporcionada) |
@@ -21,7 +21,7 @@ Con 33,2 millones de parámetros y un tamaño de repositorio de 0,1 GB, es un mo
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tune de BAAI/bge-small-en-v1.5, un transformer encoder de tipo BERT con 33,2 millones de parámetros, al que se añade una cabeza de clasificación de tokens para NER. No es un modelo MoE ni híbrido; es un transformer denso estándar. El entrenamiento se realizó con el Trainer de HuggingFace sobre un dataset no especificado en la model card. Los hiperparámetros declarados incluyen learning rate 2e-05, batch de entrenamiento y evaluación de 8, 10 épocas, optimizador AdamW con betas (0,9, 0,999) y epsilon 1e-08, scheduler lineal y semilla 42. No se menciona el uso de RLHF, DPO ni técnicas de decodificación especulativa. La pérdida de entrenamiento descendió de 0,1457 en la primera época a 0,0153 en la décima, mientras que la pérdida de validación se mantuvo entre 0,0817 y 0,1313. No hay información sobre la composición del dataset ni el número de tokens de entrenamiento.
+El modelo es un fine-tune de BAAI/bge-small-en-v1.5, un transformer encoder de tipo BERT con 33,2 millones de parámetros, al que se añade una cabeza de clasificación de tokens para NER. No es un modelo MoE ni híbrido; es un transformer denso estándar. El entrenamiento se realizó con el Trainer de Hugging Face sobre un dataset no especificado en la model card. Los hiperparámetros declarados incluyen learning rate 2e-05, batch de entrenamiento y evaluación de 8, 10 épocas, optimizador AdamW con betas (0,9, 0,999) y epsilon 1e-08, scheduler lineal y semilla 42. No se menciona el uso de RLHF, DPO ni técnicas de decodificación especulativa. La pérdida de entrenamiento descendió de 0,1457 en la primera época a 0,0153 en la décima, mientras que la pérdida de validación se mantuvo entre 0,0817 y 0,1313. No hay información sobre la composición del dataset ni el número de tokens de entrenamiento.
 
 ## Capacidades
 
@@ -85,10 +85,10 @@ Se compara el modelo con su base y con otros fine-tunes similares encontrados en
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| IrisIne/dl-2-ner-homework | 33,2 M | No disponible (base 512 típico) | NER (token classification) | MIT | HuggingFace |
-| BAAI/bge-small-en-v1.5 | 33 M | 512 tokens | Embeddings (no NER) | MIT | HuggingFace |
-| mirusanova/dl2-homework-02 | No disponible | No disponible | NER (presumible, no confirmado) | No disponible | HuggingFace |
-| tolyho/dl2-hw2-bge-ner | No disponible | No disponible | NER (presumible, no confirmado) | No disponible | HuggingFace |
+| IrisIne/dl-2-ner-homework | 33,2 M | No disponible (base 512 típico) | NER (token classification) | MIT | Hugging Face |
+| BAAI/bge-small-en-v1.5 | 33 M | 512 tokens | Embeddings (no NER) | MIT | Hugging Face |
+| mirusanova/dl2-homework-02 | No disponible | No disponible | NER (presumible, no confirmado) | No disponible | Hugging Face |
+| tolyho/dl2-hw2-bge-ner | No disponible | No disponible | NER (presumible, no confirmado) | No disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -104,7 +104,7 @@ Se compara el modelo con su base y con otros fine-tunes similares encontrados en
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/IrisIne/dl-2-ner-homework
+- Hugging Face: https://huggingface.co/IrisIne/dl-2-ner-homework
 - Modelo base: https://huggingface.co/BAAI/bge-small-en-v1.5
 - Modelo similar 1: https://huggingface.co/mirusanova/dl2-homework-02
 - Modelo similar 2: https://huggingface.co/tolyho/dl2-hw2-bge-ner

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `alimaqsoodahmed/qwen-2.5-1.5b-colab-lora` es un checkpoint publicado en HuggingFace por el usuario alimaqsoodahmed. Por su denominación, se trata de un ajuste fino mediante LoRA (Low-Rank Adaptation) sobre el modelo base Qwen 2.5 de 1.500 millones de parámetros, presumiblemente entrenado en un entorno Google Colab. El repositorio contiene pesos en formato safetensors y está etiquetado para su uso con la librería `transformers`.
+El repositorio `alimaqsoodahmed/qwen-2.5-1.5b-colab-lora` es un checkpoint publicado en Hugging Face por el usuario alimaqsoodahmed. Por su denominación, se trata de un ajuste fino mediante LoRA (Low-Rank Adaptation) sobre el modelo base Qwen 2.5 de 1.500 millones de parámetros, presumiblemente entrenado en un entorno Google Colab. El repositorio contiene pesos en formato safetensors y está etiquetado para su uso con la librería `transformers`.
 
-La model card es la plantilla automática de HuggingFace sin completar: no incluye información sobre el desarrollador, el tipo de modelo, los idiomas, la licencia, los datos de entrenamiento ni los resultados de evaluación. El tamaño del repositorio aparece como 0.0 GB y las métricas de descargas y likes son cero, lo que sugiere un artefacto de carácter experimental o educativo más que un modelo destinado a producción.
+La model card es la plantilla automática de Hugging Face sin completar: no incluye información sobre el desarrollador, el tipo de modelo, los idiomas, la licencia, los datos de entrenamiento ni los resultados de evaluación. El tamaño del repositorio aparece como 0.0 GB y las métricas de descargas y likes son cero, lo que sugiere un artefacto de carácter experimental o educativo más que un modelo destinado a producción.
 
 Por tanto, esta ficha describe lo que puede inferirse razonablemente de la denominación y del ecosistema Qwen 2.5, marcando explícitamente como "no disponible" todo aquello que el autor no ha documentado. Se recomienda precaución: sin model card ni evaluación, no es posible garantizar el comportamiento del checkpoint.
 
@@ -42,7 +42,7 @@ El autor no documenta el dataset de ajuste, el número de pasos, la tasa de apre
 - Experimentación académica con LoRA: el checkpoint sirve como ejemplo de ajuste fino de un modelo pequeño en Colab, útil para reproducir flujos de trabajo de fine-tuning con recursos limitados.
 - Prototipado rápido de asistentes conversacionales: al tratarse de un modelo de 1.5B, puede ejecutarse en GPU de consumo y emplearse para validar ideas antes de escalar a modelos mayores.
 - Evaluación comparativa de ajustes: investigadores pueden medir el impacto del LoRA del autor frente al Qwen 2.5 1.5B original en tareas concretas.
-- Docencia y formación: sirve para ilustrar el ciclo completo de publicación de un modelo en HuggingFace, incluida la generación automática de la model card.
+- Docencia y formación: sirve para ilustrar el ciclo completo de publicación de un modelo en Hugging Face, incluida la generación automática de la model card.
 - Generación de texto de bajo coste en entornos con VRAM limitada, siempre que se valide previamente la calidad del ajuste.
 - Base para un segundo ajuste: el checkpoint puede emplearse como punto de partida para tareas específicas, aunque sin licencia declarada conviene aclarar los términos antes de uso comercial.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| alimaqsoodahmed/qwen-2.5-1.5b-colab-lora | ~1.5B | no disponible | no disponible | HuggingFace (repo vacío de documentación) |
-| Qwen 2.5 1.5B (oficial) | 1.5B | 32.768 tokens (extensible a 131.072) | Apache 2.0 | HuggingFace, ampliamente documentado |
-| Llama 3.2 1B | 1.2B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, ampliamente documentado |
-| Gemma 2 2B | 2.6B | 8.192 tokens | Gemma Terms of Use | HuggingFace, ampliamente documentado |
+| alimaqsoodahmed/qwen-2.5-1.5b-colab-lora | ~1.5B | no disponible | no disponible | Hugging Face (repo vacío de documentación) |
+| Qwen 2.5 1.5B (oficial) | 1.5B | 32.768 tokens (extensible a 131.072) | Apache 2.0 | Hugging Face, ampliamente documentado |
+| Llama 3.2 1B | 1.2B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, ampliamente documentado |
+| Gemma 2 2B | 2.6B | 8.192 tokens | Gemma Terms of Use | Hugging Face, ampliamente documentado |
 
 ## Limitaciones y advertencias
 
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/alimaqsoodahmed/qwen-2.5-1.5b-colab-lora
+- Repositorio Hugging Face: https://huggingface.co/alimaqsoodahmed/qwen-2.5-1.5b-colab-lora
 - Modelo base Qwen 2.5 1.5B (referencia): https://huggingface.co/Qwen/Qwen2.5-1.5B
 - Documentación oficial de Qwen 2.5: https://qwenlm.github.io/blog/qwen2.5/
 - Paper del calculador de impacto medioambiental citado en las etiquetas: https://arxiv.org/abs/1910.09700

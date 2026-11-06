@@ -76,7 +76,7 @@ El modelo base sin adaptador alcanza 2,5092 cm de ADE sobre el mismo conjunto de
 
 | Modelo | Tipo | Contexto de entrada | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| KaliberAI vjepa2-1-conveyor30-rgb-only-8to30 | V-JEPA 2.1 ViT-B congelado + decodificador transformer | 8 fotogramas RGB | 30 estados 3D `(X,Y,Z,vX,vY,vZ)` | no disponible | Repositorio de HuggingFace (0 descargas) |
+| KaliberAI vjepa2-1-conveyor30-rgb-only-8to30 | V-JEPA 2.1 ViT-B congelado + decodificador transformer | 8 fotogramas RGB | 30 estados 3D `(X,Y,Z,vX,vY,vZ)` | no disponible | Repositorio de Hugging Face (0 descargas) |
 | Modelo base sin adaptador (misma familia) | Mismo pipeline sin adaptador temporal | 8 fotogramas RGB | 30 estados 3D | no disponible | Incluido en el mismo repositorio |
 | Alternativas publicas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -97,7 +97,7 @@ No se dispone de información sobre otros modelos de predicción de trayectoria 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KaliberAI/vjepa2-1-conveyor30-rgb-only-8to30
+- Modelo en Hugging Face: https://huggingface.co/KaliberAI/vjepa2-1-conveyor30-rgb-only-8to30
 - Rama de implementación en GitHub: https://github.com/Movendi-ai/vjepa-trajectory-prediction/tree/vjepa-only-ctx8-out30 (commit `d76a31fad1c5fb787ef9c50ea82d3ea195140cc5`)
 - Checkpoint oficial del backbone V-JEPA 2.1 ViT-B destilado: https://dl.fbaipublicfiles.com/vjepa2/vjepa2_1_vitb_dist_vitG_384.pt (SHA-256 esperado `848a77c33cc9e6649ed2119c9bea1e2c569bcdab9539ff3e7c02ccc2959ddf4d`)
 - Pesos `base/best.pt` (SHA-256 `84bf390aa9ce8085c14d8e41b9f34cf2833f345dc8d2b6729308592b819c814b`)

@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| workmagic-jev-decision-qwen3-8b-sft-v2 | 8,19 B | No disponible | Decisor LoRA sobre Qwen3-8B | No disponible | HuggingFace, librería `anyjev` |
-| Qwen/Qwen3-8B (base) | 8,19 B | No disponible en esta ficha | LLM generativo | No disponible en esta ficha | HuggingFace |
-| Modelo de decisión v1 de AnyJev | No disponible | No disponible | Decisor previo (replay en v2) | No disponible | HuggingFace (referenciado en la model card) |
+| workmagic-jev-decision-qwen3-8b-sft-v2 | 8,19 B | No disponible | Decisor LoRA sobre Qwen3-8B | No disponible | Hugging Face, librería `anyjev` |
+| Qwen/Qwen3-8B (base) | 8,19 B | No disponible en esta ficha | LLM generativo | No disponible en esta ficha | Hugging Face |
+| Modelo de decisión v1 de AnyJev | No disponible | No disponible | Decisor previo (replay en v2) | No disponible | Hugging Face (referenciado en la model card) |
 
 No se dispone de datos de rendimiento que permitan una comparación cuantitativa con alternativas de la misma categoría.
 
@@ -90,6 +90,6 @@ No se dispone de datos de rendimiento que permitan una comparación cuantitativa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/workmagicio/workmagic-jev-decision-qwen3-8b-sft-v2
+- Modelo en Hugging Face: https://huggingface.co/workmagicio/workmagic-jev-decision-qwen3-8b-sft-v2
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - No se han encontrado en la información proporcionada enlaces a papers, blogs, repositorios de la librería `anyjev` ni demos.

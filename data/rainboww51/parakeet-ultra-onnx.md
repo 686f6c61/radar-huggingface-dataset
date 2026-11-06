@@ -94,7 +94,7 @@ La comparación con Whisper large-v3 u otros sistemas ASR no puede cuantificarse
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta exportación: https://huggingface.co/rainboww51/parakeet-ultra-onnx
+- Repositorio Hugging Face de esta exportación: https://huggingface.co/rainboww51/parakeet-ultra-onnx
 - Modelo original de Moondream: https://huggingface.co/moondream/parakeet-ultra
 - Modelo base de NVIDIA: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Blog de Moondream sobre Parakeet Redux y Ultra: https://moondream.ai/blog/introducing-parakeet-redux-and-ultra

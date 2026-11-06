@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: el modelo en BF16 ocupa aproximadamente 3,86 GB solo en pesos (1,93B × 2 bytes). Con activaciones, KV cache y overhead del decodificador, se recomienda un mínimo de 8 GB de VRAM para inferencia con contexto corto.
 - GPU recomendadas: una RTX 3060 de 12 GB o superior es suficiente para inferencia en BF16. Para despliegues concurrentes o con contexto largo, se recomienda RTX 4090, A100 o H100.
 - Sí cabe en GPU de consumo: RTX 3060 12GB, RTX 4070, RTX 4090, así como en Apple Silicon con 16 GB unificados (usando cuantización INT4).
-- Opciones de despliegue: el bundle está diseñado para cargarse dentro del router NOESIS, pero al ser compatible con el ecosistema Qwen3-TTS puede usarse con Transformers de HuggingFace. No se ha confirmado soporte para vLLM, llama.cpp u Ollama en la documentación disponible.
+- Opciones de despliegue: el bundle está diseñado para cargarse dentro del router NOESIS, pero al ser compatible con el ecosistema Qwen3-TTS puede usarse con Transformers de Hugging Face. No se ha confirmado soporte para vLLM, llama.cpp u Ollama en la documentación disponible.
 - Latencia y throughput: no disponible. Depende del hardware, la longitud del segmento y el adaptador seleccionado.
 
 ## Comparativa con modelos similares
@@ -77,7 +77,7 @@ La principal diferencia frente a Qwen3-TTS base es la expansión a 112 idiomas m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AMAImedia/NOESIS-Talker-Combo-LLM2-ASR2-BF16
+- Repositorio Hugging Face: https://huggingface.co/AMAImedia/NOESIS-Talker-Combo-LLM2-ASR2-BF16
 - Qwen3-TTS (GitHub): https://github.com/QwenLM/Qwen3-TTS
 - Qwen3-TTS-12Hz-1.7B-Base: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base
 - Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B

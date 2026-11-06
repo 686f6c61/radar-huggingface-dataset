@@ -4,7 +4,7 @@
 
 El modelo `bugkira-ai/babylm-paranlru-19m` es un modelo de lenguaje causal (causal LM) desarrollado por **bugkira-ai** (Daniil Sereda) como parte de una verificación de sistemas para la librería [`pararnn-torch`](https://github.com/bugkira/pararnn-torch). Se trata de una RNN no lineal de 18.764.544 parámetros (según la model card) que implementa la celda **ParaNLRU**, una variante de la arquitectura Griffin/RG-LRU con "diagonal nonlinear slot". El modelo se entrena bajo el presupuesto oficial de **BabyLM 2026 Strict-Small** (≈10 millones de palabras), un benchmark diseñado para estudiar el aprendizaje del lenguaje con datos limitados.
 
-Su relevancia radica en que demuestra que las RNNs no lineales pueden competir con transformadores en tareas de evaluación lingüística (BLiMP, EWoK, etc.) a una fracción del coste computacional. En comparación con su modelo hermano `babylm-paraslstm-20m`, la celda ParaNLRU tiene aproximadamente la mitad de parámetros recurrentes y entrena **~2,5× más rápido** en la misma GPU, alcanzando una perplejidad de reporte de **95,94** tras 3 épocas en unos **12,3 minutos**. El modelo está disponible en HuggingFace bajo licencia MIT, con pesos en formato safetensors y requiere `trust_remote_code=True` para cargarse.
+Su relevancia radica en que demuestra que las RNNs no lineales pueden competir con transformadores en tareas de evaluación lingüística (BLiMP, EWoK, etc.) a una fracción del coste computacional. En comparación con su modelo hermano `babylm-paraslstm-20m`, la celda ParaNLRU tiene aproximadamente la mitad de parámetros recurrentes y entrena **~2,5× más rápido** en la misma GPU, alcanzando una perplejidad de reporte de **95,94** tras 3 épocas en unos **12,3 minutos**. El modelo está disponible en Hugging Face bajo licencia MIT, con pesos en formato safetensors y requiere `trust_remote_code=True` para cargarse.
 
 ## Especificaciones tecnicas
 
@@ -75,8 +75,8 @@ No se han publicado resultados para GlobalPIQA, EWoK completo (gated), SuperGLUE
 
 | Modelo | Parámetros | Contexto | BLiMP | Licencia | Disponibilidad |
 |---|---:|---:|---:|---|---|
-| `babylm-paranlru-19m` | 18,76M / 24,91M (safetensors) | 512 | 62,45 | MIT | HuggingFace |
-| `babylm-paraslstm-20m` | 26,7M | no disponible | 62,81 | MIT | HuggingFace |
+| `babylm-paranlru-19m` | 18,76M / 24,91M (safetensors) | 512 | 62,45 | MIT | Hugging Face |
+| `babylm-paraslstm-20m` | 26,7M | no disponible | 62,81 | MIT | Hugging Face |
 | GPT-2 Strict-Small | no disponible | no disponible | 65,23 | no disponible | no disponible |
 
 Ambos modelos de `bugkira-ai` comparten la misma receta de entrenamiento y stack, diferenciándose únicamente en la celda recurrente. GPT-2 Strict-Small aparece como baseline en la evaluación, pero no se dispone de sus especificaciones en la información proporcionada.
@@ -94,7 +94,7 @@ Ambos modelos de `bugkira-ai` comparten la misma receta de entrenamiento y stack
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bugkira-ai/babylm-paranlru-19m
+- Hugging Face: https://huggingface.co/bugkira-ai/babylm-paranlru-19m
 - Paper (ParaRNN): https://arxiv.org/abs/2510.21450
 - Paper adicional: https://arxiv.org/abs/2602.20092
 - Repositorio: https://github.com/bugkira/pararnn-torch

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alexalexa430/alex-got-bored` es un repositorio de pesos publicado en HuggingFace por el usuario alexalexa430. Su model card se limita a una frase en la que el autor describe el contenido como "experimentos" y declara explicitamente que no ofrece ninguna garantia sobre su calidad. No se indica arquitectura, numero de parametros, longitud de contexto, idiomas ni procedimiento de entrenamiento, por lo que no es posible encuadrarlo en ninguna familia de modelos conocida ni verificar sus capacidades.
+`alexalexa430/alex-got-bored` es un repositorio de pesos publicado en Hugging Face por el usuario alexalexa430. Su model card se limita a una frase en la que el autor describe el contenido como "experimentos" y declara explicitamente que no ofrece ninguna garantia sobre su calidad. No se indica arquitectura, numero de parametros, longitud de contexto, idiomas ni procedimiento de entrenamiento, por lo que no es posible encuadrarlo en ninguna familia de modelos conocida ni verificar sus capacidades.
 
 El repositorio ocupa 1,5 GB y, segun los metadatos, se creo el 11 de octubre de 2026 a las 15:51 UTC y se actualizo cuatro minutos despues, a las 15:55 UTC. No registra descargas ni likes, no declara pipeline de inferencia y no tiene paper, blog tecnico ni repositorio de codigo asociado. La busqueda web realizada no devuelve ninguna fuente relacionada: los resultados obtenidos corresponden a un creador de contenido audiovisual sin vinculacion con el proyecto.
 
@@ -23,7 +23,7 @@ Su interes practico es el de un ejemplo representativo del tramo final del ecosi
 | Tamano del repositorio | 1,5 GB |
 | Pipeline declarado | no disponible |
 | Tokenizer | no disponible |
-| Fecha de publicacion | 11 de octubre de 2026 (metadatos de HuggingFace) |
+| Fecha de publicacion | 11 de octubre de 2026 (metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -84,7 +84,7 @@ No disponible. Sin conocer el numero de parametros, la arquitectura ni la tarea 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alexalexa430/alex-got-bored
+- Modelo en Hugging Face: https://huggingface.co/alexalexa430/alex-got-bored
 - Paper, blog o repositorio de codigo: no disponible
 - Demo o espacio asociado: no disponible
 - Los resultados de busqueda web obtenidos no guardan relacion con este modelo (corresponden a un creador de contenido audiovisual ajeno al proyecto), por lo que no se incluyen como fuentes.

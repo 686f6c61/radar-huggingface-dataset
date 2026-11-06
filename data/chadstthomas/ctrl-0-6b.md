@@ -72,9 +72,9 @@ Datos adicionales reportados: retrieval hit@3 de 26/26 (rango medio del gold 0,0
 
 | Modelo | Parametros | Contexto | Recall libro cerrado | Precision libro cerrado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| CTRL-0.6B | 0,6B | no disponible | 0,692 | 0,846 | Apache-2.0 | HuggingFace (adaptador + GGUF) |
-| CTRL-2B | 2,5B | no disponible | 0,772 | 0,865 | no disponible en la informacion | HuggingFace |
-| Qwen3-0.6B (base) | 0,6B | no disponible | 0,692 | no disponible | Apache-2.0 | HuggingFace |
+| CTRL-0.6B | 0,6B | no disponible | 0,692 | 0,846 | Apache-2.0 | Hugging Face (adaptador + GGUF) |
+| CTRL-2B | 2,5B | no disponible | 0,772 | 0,865 | no disponible en la informacion | Hugging Face |
+| Qwen3-0.6B (base) | 0,6B | no disponible | 0,692 | no disponible | Apache-2.0 | Hugging Face |
 
 La comparacion se limita al ecosistema Expedient y al modelo base, ya que no se han publicado comparaciones con otros modelos de la misma categoria en la informacion disponible. La diferencia clave entre CTRL-0.6B y CTRL-2B es el modo de despliegue: el primero prioriza ejecucion en cliente, el segundo calidad de respuesta.
 
@@ -92,7 +92,7 @@ La comparacion se limita al ecosistema Expedient y al modelo base, ya que no se 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chadstthomas/CTRL-0.6B
+- Modelo en Hugging Face: https://huggingface.co/chadstthomas/CTRL-0.6B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - CTRL-2B: https://huggingface.co/chadstthomas/CTRL-2B
 - Demo Space: https://huggingface.co/spaces/chadstthomas/ctrl-2b-demo

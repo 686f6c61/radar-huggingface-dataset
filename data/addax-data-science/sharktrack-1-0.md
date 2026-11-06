@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SHARKTRACK-1-0 es un repositorio publicado en HuggingFace por la organizacion Addax-Data-Science cuyo contenido es una redistribucion de modelos de codigo abierto pensada para facilitar su integracion en AddaxAI, la plataforma de la propia organizacion. El desarrollo original del modelo se atribuye a Filippo Varini, y el repositorio remite a la pagina del proyecto SharkTrack, al articulo arXiv 2407.20623 y al repositorio GitHub filippovarini/sharktrack, que actua como fuente de la licencia.
+SHARKTRACK-1-0 es un repositorio publicado en Hugging Face por la organizacion Addax-Data-Science cuyo contenido es una redistribucion de modelos de codigo abierto pensada para facilitar su integracion en AddaxAI, la plataforma de la propia organizacion. El desarrollo original del modelo se atribuye a Filippo Varini, y el repositorio remite a la pagina del proyecto SharkTrack, al articulo arXiv 2407.20623 y al repositorio GitHub filippovarini/sharktrack, que actua como fuente de la licencia.
 
 La model card del repositorio esta practicamente vacia: el unico contenido sustantivo es el aviso de redistribucion, los enlaces al autor original y la indicacion de que cada modelo conserva su licencia y atribucion originales. No se declaran arquitectura, numero de parametros, longitud de contexto, idiomas, licencia concreta ni formato de pesos, y el tamano del repositorio figura como 0,0 GB, lo que sugiere que los pesos no estan alojados en este espacio o que se sirven por otra via.
 
@@ -19,11 +19,11 @@ Por tanto, esta ficha describe un artefacto de distribucion mas que un modelo do
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible en la model card; se indica que cada modelo conserva su licencia original y se remite a los ficheros de licencia del repositorio GitHub original |
-| Formato de pesos | no disponible (el repositorio ocupa 0,0 GB segun HuggingFace) |
+| Formato de pesos | no disponible (el repositorio ocupa 0,0 GB segun Hugging Face) |
 | Desarrollador original | Filippo Varini |
 | Distribuidor | Addax Data Science |
 | Uso previsto declarado | redistribucion para integracion en AddaxAI |
-| Fecha de creacion en HuggingFace | 2026-09-11 (fecha indicada por la plataforma) |
+| Fecha de creacion en Hugging Face | 2026-09-11 (fecha indicada por la plataforma) |
 | Ultima actualizacion | 2026-09-11 |
 | Descargas / likes | 0 / 0 |
 | Etiquetas declaradas | arxiv:2407.20623, region:us |
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 No se dispone de datos de VRAM, GPU recomendadas, latencia ni throughput en la informacion proporcionada. Observaciones derivadas de los metadatos:
 
-- Tamano del repositorio: 0,0 GB. No hay pesos alojados en el espacio de HuggingFace, por lo que no es posible estimar el consumo de memoria a partir del repositorio.
+- Tamano del repositorio: 0,0 GB. No hay pesos alojados en el espacio de Hugging Face, por lo que no es posible estimar el consumo de memoria a partir del repositorio.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible.
 - Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI, ONNX Runtime, TensorRT): no disponible.
@@ -80,17 +80,17 @@ No disponible. La informacion proporcionada no identifica la categoria tecnica d
 
 - Model card practicamente vacia: el contenido publicado es unicamente un aviso de redistribucion, sin documentacion tecnica util para evaluacion.
 - Trazabilidad de licencia: la licencia no aparece en la model card. El repositorio indica que cada modelo conserva su licencia original y remite a los ficheros de licencia del proyecto de origen; es obligatorio revisarlos antes de cualquier uso comercial.
-- Ausencia de pesos: con 0,0 GB de tamano de repositorio, es probable que los pesos no esten alojados en HuggingFace. No se puede verificar la integridad ni la version de los artefactos desde este espacio.
+- Ausencia de pesos: con 0,0 GB de tamano de repositorio, es probable que los pesos no esten alojados en Hugging Face. No se puede verificar la integridad ni la version de los artefactos desde este espacio.
 - Sin validacion de terceros: 0 descargas y 0 likes implican ausencia de uso reportado y de evidencia externa de funcionamiento.
 - Riesgo de alucinacion y sesgos: no evaluable con la informacion disponible; no hay datos sobre el dataset de entrenamiento ni sobre su composicion demografica, geografica o de especies.
 - Limitaciones de contexto e idioma: no disponibles.
 - Uso en produccion: no se recomienda desplegar este artefacto sin antes consultar el repositorio GitHub original, verificar la licencia aplicable y validar el rendimiento en el dominio concreto de aplicacion.
-- Fechas de publicacion: las marcas temporales de HuggingFace (2026) son posteriores a la fecha estandar de la consulta; conviene confirmarlas en la plataforma.
+- Fechas de publicacion: las marcas temporales de Hugging Face (2026) son posteriores a la fecha estandar de la consulta; conviene confirmarlas en la plataforma.
 - Resultados de busqueda no relacionados: las busquedas web devolvieron paginas sobre el antilope addax y empresas homonimas, sin relacion con el modelo. No se ha encontrado informacion independiente que lo respalde.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Addax-Data-Science/SHARKTRACK-1-0
+- Repositorio en Hugging Face: https://huggingface.co/Addax-Data-Science/SHARKTRACK-1-0
 - Pagina del proyecto SharkTrack: https://www.fvarini.com/sharktrack
 - Articulo cientifico (arXiv 2407.20623): https://arxiv.org/abs/2407.20623
 - Repositorio y licencia originales: https://github.com/filippovarini/sharktrack

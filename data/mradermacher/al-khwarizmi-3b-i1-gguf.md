@@ -67,8 +67,8 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/mradermacher/Al-Khwarizmi-3B-i1-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/Al-Khwarizmi-3B-i1-GGUF
 - Repositorio con cuantizaciones estáticas: https://huggingface.co/mradermacher/Al-Khwarizmi-3B-GGUF
 - Modelo base original: https://huggingface.co/mzoelfakar/Al-Khwarizmi-3B
 - Página de descargas de mradermacher: https://hf.tst.eu/model
-- Perfil de mradermacher en HuggingFace: https://huggingface.co/mradermacher
+- Perfil de mradermacher en Hugging Face: https://huggingface.co/mradermacher

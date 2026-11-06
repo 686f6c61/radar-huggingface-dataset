@@ -70,7 +70,7 @@ No se han encontrado en la informacion proporcionada adaptadores publicos compar
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| R-Few-Qwen3.5-35B-A3B-SWE-Smith-r18 | 35B totales en el base; adaptadores LoRA rango 32 | 114.688 tokens (Challenger, entrenamiento) y 65.536 (Solver) | safetensors + checkpoints FSDP | No disponible | Publico en HuggingFace, 0 descargas, 0 likes |
+| R-Few-Qwen3.5-35B-A3B-SWE-Smith-r18 | 35B totales en el base; adaptadores LoRA rango 32 | 114.688 tokens (Challenger, entrenamiento) y 65.536 (Solver) | safetensors + checkpoints FSDP | No disponible | Publico en Hugging Face, 0 descargas, 0 likes |
 | Qwen/Qwen3.5-35B-A3B (base) | 35B totales, aproximadamente 3B activos | No disponible | No disponible | No disponible en la informacion proporcionada | Referenciado como base en revision 59d61f3ce65a6d9863b86d2e96597125219dc754 |
 | Basic GRPO y R-Few (metodos) | No aplica | No disponible | No disponible | No disponible | Mencionados como lineas de comparacion en la model card, sin cifras publicadas |
 | R-Zero | No disponible | No disponible | No disponible | No disponible | Citado como referencia metodologica; la model card senala diferencias de filtrado y composicion de lotes |
@@ -92,7 +92,7 @@ No se han encontrado en la informacion proporcionada adaptadores publicos compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davidanugraha/R-Few-Qwen3.5-35B-A3B-SWE-Smith-r18
+- Modelo en Hugging Face: https://huggingface.co/davidanugraha/R-Few-Qwen3.5-35B-A3B-SWE-Smith-r18
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-35B-A3B (revision fijada en la model card: 59d61f3ce65a6d9863b86d2e96597125219dc754)
 - Documentacion de migracion citada dentro del repositorio: metadata/docs/MACHINE_MIGRATION.md
 - Configuraciones citadas dentro del repositorio: metadata/configs/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hannahshs/work-classification` es un prototipo de investigación publicado en HuggingFace por el usuario hannahshs. Se trata de una implementación personalizada de una arquitectura tipo **Mixer** orientada a tareas de **clasificación**, distribuida como punto de partida experimental y no como un modelo entrenado. El repositorio incluye el código de implementación (`pipeline.py`), la configuración de arquitectura (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización (`model.safetensors`) de 33.088 parámetros totales.
+`hannahshs/work-classification` es un prototipo de investigación publicado en Hugging Face por el usuario hannahshs. Se trata de una implementación personalizada de una arquitectura tipo **Mixer** orientada a tareas de **clasificación**, distribuida como punto de partida experimental y no como un modelo entrenado. El repositorio incluye el código de implementación (`pipeline.py`), la configuración de arquitectura (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización (`model.safetensors`) de 33.088 parámetros totales.
 
 La relevancia de esta ficha es fundamentalmente metodológica: el propio autor declara explícitamente que el checkpoint **no ha sido entrenado** ni auditado en robustez, equidad o transferencia de dominio, y que no se reclama ninguna métrica de benchmark. Por tanto, no debe confundirse con un modelo listo para producción ni con un resultado de investigación validado, sino con un esqueleto reproducible para experimentar con arquitecturas Mixer aplicadas a clasificación.
 
@@ -72,7 +72,7 @@ No se documentan modelos comparables en la información disponible. La model car
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hannahshs/work-classification | 33.088 | no disponible | sin benchmarks publicados | Apache 2.0 | HuggingFace (0 descargas) |
+| hannahshs/work-classification | 33.088 | no disponible | sin benchmarks publicados | Apache 2.0 | Hugging Face (0 descargas) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -89,6 +89,6 @@ No se documentan modelos comparables en la información disponible. La model car
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hannahshs/work-classification
+- Hugging Face: https://huggingface.co/hannahshs/work-classification
 - Paper, blog, repositorio de código o demo: no disponible en la información proporcionada.
 - La búsqueda web realizada no devolvió ningún resultado relevante sobre este modelo: los enlaces recuperados corresponden a sitios de contactos y a una plataforma de preguntas y respuestas, sin relación con el artefacto.

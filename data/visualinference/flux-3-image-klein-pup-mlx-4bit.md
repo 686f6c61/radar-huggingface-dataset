@@ -98,7 +98,7 @@ No se dispone de informacion sobre otros upsamplers de prompts comparables.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VisualInference/FLUX-3-Image-Klein-pup-MLX-4bit
+- Modelo en Hugging Face: https://huggingface.co/VisualInference/FLUX-3-Image-Klein-pup-MLX-4bit
 - Modelo base (Black Forest Labs): https://huggingface.co/black-forest-labs/flux-3-image-klein-pup
 - Repositorio de la herramienta flux3-mlx: https://github.com/felix-ab/flux3-mlx
 - mlx-vlm, libreria de conversion: https://github.com/Blaizzy/mlx-vlm

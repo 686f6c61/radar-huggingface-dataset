@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Connect AI Lab · Uncensored 0.6B es un modelo experimental de generación de texto derivado de Qwen/Qwen3-0.6B, publicado por el usuario de HuggingFace WonseokJayJung dentro del proyecto Connect AI Lab / AI City Builders. No se trata de un modelo entrenado desde cero ni de un fine-tuning: es una intervención directa sobre los pesos de un modelo base congelado, aplicando una técnica de «abliteration» o eliminación de dirección (direction ablation) inspirada en el paper de Arditi et al. sobre la direccionalidad del rechazo en modelos de lenguaje. El objetivo declarado es educativo: mostrar de forma visible cómo una modificación de pesos cambia el comportamiento de un modelo pequeño en un aula de IA local.
+Connect AI Lab · Uncensored 0.6B es un modelo experimental de generación de texto derivado de Qwen/Qwen3-0.6B, publicado por el usuario de Hugging Face WonseokJayJung dentro del proyecto Connect AI Lab / AI City Builders. No se trata de un modelo entrenado desde cero ni de un fine-tuning: es una intervención directa sobre los pesos de un modelo base congelado, aplicando una técnica de «abliteration» o eliminación de dirección (direction ablation) inspirada en el paper de Arditi et al. sobre la direccionalidad del rechazo en modelos de lenguaje. El objetivo declarado es educativo: mostrar de forma visible cómo una modificación de pesos cambia el comportamiento de un modelo pequeño en un aula de IA local.
 
 El procedimiento consiste en calcular una dirección candidata a partir de la diferencia de medias de activaciones entre preguntas de entrenamiento y preguntas de validación, comparar candidatos en 21 capas y seleccionar finalmente la dirección de la capa 24. Con esa dirección se modifican 57 rutas de escritura (embedding, salida de atención y salida de MLP). Además, la LM head original, que estaba compartida, se separa conservando los valores originales. Aunque el nombre de la familia es 0.6B, el modelo resultante pesa aproximadamente 0,75B parámetros debido a esa separación de pesos.
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 - Cabe en GPU de consumo: sí, con margen amplio. Prácticamente cualquier GPU de consumo reciente (por ejemplo, gama GTX 10xx en adelante con 4 GB o más) puede cargarlo cuantizado.
 - Opciones de despliegue: transformers (formato safetensors, `library_name: transformers`), llama.cpp y LM Studio con el GGUF, y potencialmente otros runners compatibles con GGUF como Ollama. LM Studio con Q8 está verificado por el autor con carga real y respuesta por API.
 - Latencia y throughput estimados: no disponible. No se publican medidas de tokens por segundo ni de latencia.
-- Nota crítica: en el momento de redactar esta ficha los pesos no están subidos al repositorio, por lo que no se puede descargar ni ejecutar el modelo desde HuggingFace.
+- Nota crítica: en el momento de redactar esta ficha los pesos no están subidos al repositorio, por lo que no se puede descargar ni ejecutar el modelo desde Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -97,7 +97,7 @@ La comparación solo puede establecerse de forma fiable contra el modelo base, q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WonseokJayJung/connectailab-uncensored
+- Modelo en Hugging Face: https://huggingface.co/WonseokJayJung/connectailab-uncensored
 - Modelo base Qwen/Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Revisión del modelo base citada: `c1899de289a04d12100db370d81485cdf75e47ca`
 - Paper de referencia (Arditi et al., Refusal in Language Models Is Mediated by a Single Direction): https://arxiv.org/abs/2406.11717

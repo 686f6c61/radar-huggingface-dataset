@@ -88,9 +88,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 | Modelo | Parametros | Contexto | Tamano de descarga | Error frente a FP8 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash-HLWQ-Engram-Q5 | ~566,6 B | 409 600 | 433,5 GB | 5,4 % RMSE rel., coseno 0,99856 | MIT (declarada) | HuggingFace, 0 descargas |
-| DeepSeek-V4.1-Flash-HLWQ-Engram-Q4 (hermano) | ~566,6 B (mismo base) | 409 600 | menor que Q5, valor exacto no disponible | mayor que Q5, valor exacto no disponible | MIT (declarada) | HuggingFace |
-| DeepSeek-V4.1-Flash (FP8 oficial) | ~566,6 B | 409 600 (configuracion de referencia) | ~510 GB | referencia | no disponible en la informacion proporcionada | HuggingFace |
+| DeepSeek-V4.1-Flash-HLWQ-Engram-Q5 | ~566,6 B | 409 600 | 433,5 GB | 5,4 % RMSE rel., coseno 0,99856 | MIT (declarada) | Hugging Face, 0 descargas |
+| DeepSeek-V4.1-Flash-HLWQ-Engram-Q4 (hermano) | ~566,6 B (mismo base) | 409 600 | menor que Q5, valor exacto no disponible | mayor que Q5, valor exacto no disponible | MIT (declarada) | Hugging Face |
+| DeepSeek-V4.1-Flash (FP8 oficial) | ~566,6 B | 409 600 (configuracion de referencia) | ~510 GB | referencia | no disponible en la informacion proporcionada | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos frente a otros modelos de la misma categoria, por lo que la comparativa se limita al checkpoint oficial y al repositorio hermano Q4.
 
@@ -109,7 +109,7 @@ No se dispone de datos de benchmarks comparativos frente a otros modelos de la m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/caiovicentino1/DeepSeek-V4.1-Flash-HLWQ-Engram-Q5
+- Repositorio Hugging Face: https://huggingface.co/caiovicentino1/DeepSeek-V4.1-Flash-HLWQ-Engram-Q5
 - Repositorio hermano con tablas Q4: https://huggingface.co/caiovicentino1/DeepSeek-V4.1-Flash-HLWQ-Engram-Q4
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Receta de servicio en 4x RTX PRO 6000: https://github.com/0xSero/deepseek-v4.1-flash-4x-rtx-pro-6000

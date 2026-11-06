@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CyberHack-FineTuned es un ajuste fino supervisado (SFT) del modelo Goekdeniz-Guelmez/Josiefied-Qwen2.5-Coder-7B-Instruct-abliterated-v1, publicado por el usuario saiefedine en HuggingFace. Se trata, por tanto, de un derivado de Qwen2.5-Coder-7B-Instruct que ha pasado por una primera fase de "abliteration" (eliminacion de mecanismos de rechazo) y posteriormente por un entrenamiento SFT adicional mediante la libreria TRL. El modelo se distribuye en formato safetensors y es compatible con la libreria transformers y con endpoints compatibles.
+CyberHack-FineTuned es un ajuste fino supervisado (SFT) del modelo Goekdeniz-Guelmez/Josiefied-Qwen2.5-Coder-7B-Instruct-abliterated-v1, publicado por el usuario saiefedine en Hugging Face. Se trata, por tanto, de un derivado de Qwen2.5-Coder-7B-Instruct que ha pasado por una primera fase de "abliteration" (eliminacion de mecanismos de rechazo) y posteriormente por un entrenamiento SFT adicional mediante la libreria TRL. El modelo se distribuye en formato safetensors y es compatible con la libreria transformers y con endpoints compatibles.
 
 El interes del modelo reside en su cadena de linaje: parte de un modelo base solido para generacion de codigo (Qwen2.5-Coder-7B-Instruct, 7 mil millones de parametros, contexto nativo de 32 768 tokens ampliable a 131 072 mediante YaRN) y anade una capa de ajuste orientada, por el nombre "CyberHack", a tareas de seguridad ofensiva o hacking etico. Sin embargo, la model card publicada es extremadamente escasa: no documenta el dataset de entrenamiento, el numero de pasos, la composicion de los datos ni los hiperparametros utilizados.
 
@@ -64,11 +64,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| CyberHack-FineTuned | ~7 000 M | no disponible (base: 32 768) | no disponible | HuggingFace, 0 descargas | Ajuste SFT sin documentar |
-| Qwen2.5-Coder-7B-Instruct | 7 000 M | 32 768 (131 072 con YaRN) | Apache 2.0 | HuggingFace, ampliamente usado | Modelo base oficial, con benchmarks publicados |
-| Goekdeniz-Guelmez/Josiefied-Qwen2.5-Coder-7B-Instruct-abliterated-v1 | 7 000 M | 32 768 | no disponible en la informacion proporcionada | HuggingFace | Version abliterated del base |
-| DeepSeek-Coder-7B-Instruct | 7 000 M | 16 384 | DeepSeek License (uso comercial permitido con restricciones) | HuggingFace | Alternativa de codigo con benchmarks publicados |
-| CodeLlama-7B-Instruct | 7 000 M | 16 384 | Llama 2 Community License | HuggingFace | Alternativa de Meta para codigo |
+| CyberHack-FineTuned | ~7 000 M | no disponible (base: 32 768) | no disponible | Hugging Face, 0 descargas | Ajuste SFT sin documentar |
+| Qwen2.5-Coder-7B-Instruct | 7 000 M | 32 768 (131 072 con YaRN) | Apache 2.0 | Hugging Face, ampliamente usado | Modelo base oficial, con benchmarks publicados |
+| Goekdeniz-Guelmez/Josiefied-Qwen2.5-Coder-7B-Instruct-abliterated-v1 | 7 000 M | 32 768 | no disponible en la informacion proporcionada | Hugging Face | Version abliterated del base |
+| DeepSeek-Coder-7B-Instruct | 7 000 M | 16 384 | DeepSeek License (uso comercial permitido con restricciones) | Hugging Face | Alternativa de codigo con benchmarks publicados |
+| CodeLlama-7B-Instruct | 7 000 M | 16 384 | Llama 2 Community License | Hugging Face | Alternativa de Meta para codigo |
 
 ## Limitaciones y advertencias
 
@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/saiefedine/CyberHack-FineTuned
+- Modelo en Hugging Face: https://huggingface.co/saiefedine/CyberHack-FineTuned
 - Modelo base (abliterated): https://huggingface.co/Goekdeniz-Guelmez/Josiefied-Qwen2.5-Coder-7B-Instruct-abliterated-v1
 - Repositorio TRL: https://github.com/huggingface/trl
 - Modelo Qwen2.5-Coder-7B-Instruct (origen del linaje): https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct

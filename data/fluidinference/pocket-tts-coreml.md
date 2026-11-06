@@ -93,7 +93,7 @@ La comparación cuantitativa con alternativas no puede completarse: la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FluidInference/pocket-tts-coreml
+- Modelo en Hugging Face: https://huggingface.co/FluidInference/pocket-tts-coreml
 - Modelo base: https://huggingface.co/kyutai/pocket-tts
 - Paper de referencia: https://arxiv.org/abs/2410.00037
 - Framework FluidAudio (Swift): https://github.com/FluidInference/FluidAudio

@@ -79,8 +79,8 @@ No se han identificado modelos comparables en la informacion proporcionada. La b
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cerebellum-08b-scrollvocab-sft | 0,8B (base) + adaptador QDoRA | no disponible | 73,5% tap exacto; 81,6% suelo tras revision; 51% tarea completa en AndroidWorld | no disponible | adaptador PEFT en HuggingFace |
-| Qwen/Qwen3.5-0.8B (modelo base) | 0,8B | no disponible | no disponible | no disponible | pesos base en HuggingFace |
+| cerebellum-08b-scrollvocab-sft | 0,8B (base) + adaptador QDoRA | no disponible | 73,5% tap exacto; 81,6% suelo tras revision; 51% tarea completa en AndroidWorld | no disponible | adaptador PEFT en Hugging Face |
+| Qwen/Qwen3.5-0.8B (modelo base) | 0,8B | no disponible | no disponible | no disponible | pesos base en Hugging Face |
 | Alternativas de agentes GUI de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -92,13 +92,13 @@ No se han identificado modelos comparables en la informacion proporcionada. La b
 - Riesgo de alucinacion de accion: el modelo puede emitir un toque confiado sobre una etiqueta incorrecta, especialmente en vistas personalizadas; conviene incorporar verificacion posterior al paso o escalado al planificador.
 - Sesgos conocidos: no documentados. El entrenamiento se realizo sobre AndroidControl, por lo que el comportamiento fuera de esa distribucion de pantallas, idiomas de interfaz y estilos visuales no esta caracterizado.
 - Limitaciones de idioma y contexto: no disponibles. El modelo no genera texto libre, sino una gramatica de acciones, pero no se especifica si las etiquetas o los elementos accesibles en idiomas distintos del de entrenamiento afectan al rendimiento.
-- Restricciones de licencia: la licencia no esta declarada ni en la informacion de HuggingFace ni en la model card, por lo que no se puede confirmar el uso comercial. Conviene consultar al autor antes de cualquier despliegue en produccion.
+- Restricciones de licencia: la licencia no esta declarada ni en la informacion de Hugging Face ni en la model card, por lo que no se puede confirmar el uso comercial. Conviene consultar al autor antes de cualquier despliegue en produccion.
 - Estado de madurez: es un checkpoint intermedio de SFT (paso 424) conservado como punto de reinicio, no un artefacto final; con 0 descargas y 0 likes en el momento de redactar esta ficha.
 - Requiere integracion externa: necesita un emulador o dispositivo conectado por adb, ademas de un sistema que genere las etiquetas Set-of-Mark y extraiga el arbol de accesibilidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dmitchelljackson/cerebellum-08b-scrollvocab-sft
+- Modelo en Hugging Face: https://huggingface.co/dmitchelljackson/cerebellum-08b-scrollvocab-sft
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Biblioteca PEFT: https://github.com/huggingface/peft
 - La busqueda web no devolvio papers, blogs, repositorios ni demos relevantes sobre este modelo; los resultados obtenidos no guardan relacion con el contenido de la ficha.

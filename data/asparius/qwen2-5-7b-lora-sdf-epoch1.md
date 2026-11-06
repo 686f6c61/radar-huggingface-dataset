@@ -69,6 +69,6 @@ No se dispone de información sobre otros adaptadores LoRA comparables del mismo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/asparius/Qwen2.5-7B-LORA-SDF-epoch1
+- Repositorio Hugging Face: https://huggingface.co/asparius/Qwen2.5-7B-LORA-SDF-epoch1
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B
 - Otros adaptadores del mismo autor (sin relación confirmada): https://huggingface.co/asparius/Qwen2.5-Coder-7B-LORA-SDF

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Ryanham1lton/MimeJr.KR` es un modelo publicado en HuggingFace por el usuario Ryanham1ton, con licencia CC BY 4.0 y un tamaño de repositorio de 0,2 GB. La factura del modelo, al no disponer de una model card con contenido, no ofrece información sobre su arquitectura, parámetros, contexto, idiomas ni capacidades. La ausencia de documentación técnica y de datos de entrenamiento impide evaluar qué problema resuelve o por qué sería relevante. No se han encontrado resultados de benchmarks ni artículos asociados; solo existe un modelo previo del mismo autor llamado `Simisage`, también sin documentación, que no permite inferir características de `MimeJr.KR`.
+El repositorio `Ryanham1lton/MimeJr.KR` es un modelo publicado en Hugging Face por el usuario Ryanham1ton, con licencia CC BY 4.0 y un tamaño de repositorio de 0,2 GB. La factura del modelo, al no disponer de una model card con contenido, no ofrece información sobre su arquitectura, parámetros, contexto, idiomas ni capacidades. La ausencia de documentación técnica y de datos de entrenamiento impide evaluar qué problema resuelve o por qué sería relevante. No se han encontrado resultados de benchmarks ni artículos asociados; solo existe un modelo previo del mismo autor llamado `Simisage`, también sin documentación, que no permite inferir características de `MimeJr.KR`.
 
 ## Especificaciones tecnicas
 
@@ -60,5 +60,5 @@ No disponible. Al no existir especificaciones técnicas ni benchmarks, no es pos
 
 ## Enlaces
 
-- HuggingFace: [https://huggingface.co/Ryanham1lton/MimeJr.KR](https://huggingface.co/Ryanham1lton/MimeJr.KR)
+- Hugging Face: [https://huggingface.co/Ryanham1lton/MimeJr.KR](https://huggingface.co/Ryanham1lton/MimeJr.KR)
 - Otro repositorio del mismo autor (no relacionado técnicamente con MimeJr.KR): [https://huggingface.co/Ryanham1lton/Simisage](https://huggingface.co/Ryanham1lton/Simisage)

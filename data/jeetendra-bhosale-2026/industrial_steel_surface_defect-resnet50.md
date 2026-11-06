@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `industrial_steel_surface_defect-resnet50`, publicado por el usuario jeetendra-bhosale-2026 en HuggingFace, es un modelo de visión por computador orientado a la clasificación de defectos superficiales en acero industrial. Por su nombre y por la ausencia de cualquier otra especificación en la model card, se trata presumiblemente de un ajuste fino (fine-tuning) de la arquitectura ResNet-50, una red neuronal convolucional (CNN) de 50 capas ampliamente utilizada como backbone en tareas de visión artificial.
+El modelo `industrial_steel_surface_defect-resnet50`, publicado por el usuario jeetendra-bhosale-2026 en Hugging Face, es un modelo de visión por computador orientado a la clasificación de defectos superficiales en acero industrial. Por su nombre y por la ausencia de cualquier otra especificación en la model card, se trata presumiblemente de un ajuste fino (fine-tuning) de la arquitectura ResNet-50, una red neuronal convolucional (CNN) de 50 capas ampliamente utilizada como backbone en tareas de visión artificial.
 
 La relevancia de este tipo de modelos radica en el control de calidad automatizado en entornos de fabricación: la inspección visual de superficies metálicas es una tarea repetitiva y crítica donde los sistemas basados en CNN pueden superar en consistencia a la inspección humana. Sin embargo, la información pública disponible es extremadamente limitada: la model card no contiene descripción, datos de entrenamiento, métricas ni instrucciones de uso, y el repositorio registra cero descargas y cero likes en el momento de la consulta.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| industrial_steel_surface_defect-resnet50 | ResNet-50 (presunta) | no disponible (~25,6 M si es ResNet-50 estándar) | no aplica | MIT | HuggingFace, 0 descargas |
+| industrial_steel_surface_defect-resnet50 | ResNet-50 (presunta) | no disponible (~25,6 M si es ResNet-50 estándar) | no aplica | MIT | Hugging Face, 0 descargas |
 | ResNet-50 (ImageNet, torchvision) | CNN con conexiones residuales | ~25,6 M | no aplica | BSD-3-Clause | Ampliamente disponible |
 | EfficientNet-B0 | CNN con escalado compuesto | ~5,3 M | no aplica | Apache 2.0 (pesos originales) | Ampliamente disponible |
 | ViT-B/16 | Transformer de visión | ~86 M | no aplica | Apache 2.0 (según implementación) | Ampliamente disponible |
@@ -80,5 +80,5 @@ La comparativa se limita a arquitecturas genéricas de visión, ya que no se dis
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jeetendra-bhosale-2026/industrial_steel_surface_defect-resnet50
+- Hugging Face: https://huggingface.co/jeetendra-bhosale-2026/industrial_steel_surface_defect-resnet50
 - Paper de ResNet-50 (referencia arquitectónica presunta): https://arxiv.org/abs/1512.03385

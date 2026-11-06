@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Erickobayasi/deit-experiment es un repositorio experimental de HuggingFace que contiene una implementacion propia de DeiT (Data-efficient Image Transformer) orientada a aprendizaje multitarea. El autor lo publica como base de codigo y checkpoint de inicializacion, no como modelo entrenado: la propia model card indica de forma explicita que model.safetensors es un checkpoint valido para "smoke tests" y que no se reclama ninguna puntuacion de benchmark.
+Erickobayasi/deit-experiment es un repositorio experimental de Hugging Face que contiene una implementacion propia de DeiT (Data-efficient Image Transformer) orientada a aprendizaje multitarea. El autor lo publica como base de codigo y checkpoint de inicializacion, no como modelo entrenado: la propia model card indica de forma explicita que model.safetensors es un checkpoint valido para "smoke tests" y que no se reclama ninguna puntuacion de benchmark.
 
 El interes del repositorio es, por tanto, metodologico: permite inspeccionar cambios de arquitectura (escala declarada "large", atencion estandar, fusion por concatenacion mas MLP, activacion mish, normalizacion por batchnorm) antes de lanzar un entrenamiento completo. La receta por defecto usa el optimizador novograd con un schedule exponencial, valores que el autor describe como puntos de partida y no como evidencia de un run finalizado.
 
@@ -54,7 +54,7 @@ Importante: al tratarse de un checkpoint de inicializacion sin entrenar, ninguna
 - Pruebas de humo en CI/CD: el repositorio incluye run.py con un bloque `__main__` de ejemplo; se puede invocar para verificar que la implementacion compila e instancia el grafo antes de integrar cambios en un pipeline de investigacion.
 - Investigacion sobre fusion multitarea: el modulo "concat + MLP" con BatchNorm y mish es un punto de comparacion controlado frente a variantes con LayerNorm o GELU en estudios de ablacion.
 - Linea base de capacidad equivalente: el autor sugiere usar este repositorio como baseline con la misma exposicion de datos, presupuesto de ajuste y semillas que los metodos con los que se compare.
-- Desarrollo de adaptadores de carga: al ser una implementacion custom, exige un adaptador explicito para las APIs automaticas de HuggingFace; sirve como caso de prueba para escribir y validar ese codigo de integracion.
+- Desarrollo de adaptadores de carga: al ser una implementacion custom, exige un adaptador explicito para las APIs automaticas de Hugging Face; sirve como caso de prueba para escribir y validar ese codigo de integracion.
 - Reproduccion de recetas de optimizacion: permite experimentar con novograd y schedules exponenciales en un transformer de vision de forma aislada.
 - Docencia y formacion: util como ejemplo minimo y legible de estructura de repo (run.py, config.json, training_args.json, model.safetensors) en cursos sobre despliegue de modelos.
 - Auditoria de metadatos: caso practico para detectar incoherencias entre parametros declarados y ficheros de pesos antes de aceptar un modelo en un catalogo interno.
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM para entrenamiento de un DeiT a escala "large": no disponible como dato confirmado. Como estimacion orientativa y no verificada, un backbone de esa familia suele requerir entre 16 y 24 GB de VRAM con batch reducido y precision mixta; el repositorio no documenta ningun requisito.
 - GPU recomendadas: no disponibles en la informacion proporcionada. Para el checkpoint tal cual, cualquier GPU consumer sirve; para entrenamiento real habria que definir la escala efectiva primero.
 - Cabe en GPU consumer: el checkpoint si, en cualquiera. El entrenamiento completo, sin confirmar.
-- Opciones de despliegue: no se declara pipeline en HuggingFace. El autor advierte que, al ser una implementacion custom, las APIs automaticas de carga requieren un adaptador explicito. No hay integracion documentada con vLLM, llama.cpp, Ollama ni TGI, que ademas estan orientados a modelos de lenguaje.
+- Opciones de despliegue: no se declara pipeline en Hugging Face. El autor advierte que, al ser una implementacion custom, las APIs automaticas de carga requieren un adaptador explicito. No hay integracion documentada con vLLM, llama.cpp, Ollama ni TGI, que ademas estan orientados a modelos de lenguaje.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -100,7 +100,7 @@ No se dispone de datos verificados de parametros, contexto ni rendimiento de las
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Erickobayasi/deit-experiment
+- Modelo en Hugging Face: https://huggingface.co/Erickobayasi/deit-experiment
 - Arbol de ficheros del repositorio: https://huggingface.co/Erickobayasi/deit-experiment/tree/main
 - Ficheros incluidos en el repositorio: run.py (artefacto principal), README.md, config.json (configuracion de arquitectura), training_args.json (receta de experimento por defecto), model.safetensors (checkpoint de inicializacion)
 - Paper de referencia de DeiT (Training data-efficient image transformers and distillation through attention): no enlazado en la informacion proporcionada

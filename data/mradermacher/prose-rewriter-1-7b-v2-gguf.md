@@ -30,7 +30,7 @@ Su relevancia practica es acotada pero clara: se trata de un modelo pequeno, ori
 
 No se dispone de informacion publicada en este repositorio sobre la arquitectura del modelo base mas alla del tag `qwen3`, que sugiere una arquitectura transformer de tipo decoder-only con atencion completa, grupo de tokens especiales y tokenizador de la familia Qwen. Tampoco se documentan el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo fases de ajuste supervisado, RLHF o DPO. El autor de la cuantizacion tampoco incluye notas tecnicas sobre la conversion.
 
-Las unicas innovaciones observables en la informacion disponible son de tipo practico y corresponden al proceso de cuantizacion: la model card indica `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, es decir, una conversion directa desde pesos HuggingFace con cuantizacion por tensor de salida. Se ofrecen tanto cuantizaciones estaticas (este repositorio) como cuantizaciones ponderadas con imatrix en un repositorio hermano (`prose-rewriter-1.7b-v2-i1-GGUF`), que suelen ofrecer mejor relacion calidad/tamano.
+Las unicas innovaciones observables en la informacion disponible son de tipo practico y corresponden al proceso de cuantizacion: la model card indica `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, es decir, una conversion directa desde pesos Hugging Face con cuantizacion por tensor de salida. Se ofrecen tanto cuantizaciones estaticas (este repositorio) como cuantizaciones ponderadas con imatrix en un repositorio hermano (`prose-rewriter-1.7b-v2-i1-GGUF`), que suelen ofrecer mejor relacion calidad/tamano.
 
 ## Capacidades
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Cabe en GPU de consumo: si, en todas las cuantizaciones hasta Q8_0. Ejemplos: GTX 1650 / RTX 3050 de 4 GB (hasta Q4_K_M con holgura), RTX 3060 / 4060 de 8 GB (cualquier cuantizacion), RTX 4090 de 24 GB (f16 sin problema).
 - Ejecucion en CPU: viable en todas las cuantizaciones, especialmente Q4_K_S y Q4_K_M, que el autor marca como "fast, recommended".
 - GPU de datacenter: A100, H100 o L40S estan sobredimensionadas para este tamano; solo tendrian sentido para servir muchas replicas concurrentes.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, koboldcpp, Jan, text-generation-webui y cualquier runtime compatible con GGUF. El tag `endpoints_compatible` sugiere compatibilidad con endpoints de inferencia tipo HuggingFace. vLLM con soporte GGUF es experimental y no se garantiza.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, koboldcpp, Jan, text-generation-webui y cualquier runtime compatible con GGUF. El tag `endpoints_compatible` sugiere compatibilidad con endpoints de inferencia tipo Hugging Face. vLLM con soporte GGUF es experimental y no se garantiza.
 - Latencia y throughput estimados: no disponible (no se publican mediciones).
 
 ## Comparativa con modelos similares
@@ -94,7 +94,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables verif
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantizaciones GGUF): https://huggingface.co/mradermacher/prose-rewriter-1.7b-v2-GGUF
+- Repositorio Hugging Face (cuantizaciones GGUF): https://huggingface.co/mradermacher/prose-rewriter-1.7b-v2-GGUF
 - Modelo base: https://huggingface.co/chartreuse-verte/prose-rewriter-1.7b-v2
 - Cuantizaciones ponderadas con imatrix: https://huggingface.co/mradermacher/prose-rewriter-1.7b-v2-i1-GGUF
 - Pagina resumen del autor para este modelo: https://hf.tst.eu/model#prose-rewriter-1.7b-v2-GGUF

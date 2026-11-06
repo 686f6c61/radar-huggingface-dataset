@@ -82,8 +82,8 @@ Solo se dispone de datos del propio modelo y de su base sin cuantizar. No se han
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| 0xSojalSec/Qwen3.8-27B-For-16GB-Mac | 27,4B | no disponible | 4 bits (MLX) | apache-2.0 | HuggingFace, 16,1 GB |
-| Qwen/Qwen3.8-27B (base) | 27,4B | no disponible | sin cuantizar (presumiblemente) | no disponible | HuggingFace |
+| 0xSojalSec/Qwen3.8-27B-For-16GB-Mac | 27,4B | no disponible | 4 bits (MLX) | apache-2.0 | Hugging Face, 16,1 GB |
+| Qwen/Qwen3.8-27B (base) | 27,4B | no disponible | sin cuantizar (presumiblemente) | no disponible | Hugging Face |
 | Alternativas de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -102,9 +102,9 @@ Solo se dispone de datos del propio modelo y de su base sin cuantizar. No se han
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/0xSojalSec/Qwen3.8-27B-For-16GB-Mac
+- Repositorio en Hugging Face: https://huggingface.co/0xSojalSec/Qwen3.8-27B-For-16GB-Mac
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
-- Organizacion Qwen en HuggingFace: https://huggingface.co/Qwen
+- Organizacion Qwen en Hugging Face: https://huggingface.co/Qwen
 - LM Studio: https://lmstudio.ai
 - Discord de LM Studio: https://discord.gg/aPQfnNkxGC
 - `mlx-vlm` (herramienta citada para la cuantizacion): https://github.com/Blaizzy/mlx-vlm

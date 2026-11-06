@@ -86,7 +86,7 @@ La comparativa se basa en los componentes del modelo. No hay modelos multimodale
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sprappcom/katcoder-vision-pqm
+- Repositorio Hugging Face: https://huggingface.co/sprappcom/katcoder-vision-pqm
 - Kwaipilot/KAT-Coder-V2.5-Dev: https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev
 - Kwaipilot/KAT-Dev: https://huggingface.co/Kwaipilot/KAT-Dev
 - Sitio de KAT-Coder (Kwaipilot): https://kwaipilot.github.io/KAT-Coder/

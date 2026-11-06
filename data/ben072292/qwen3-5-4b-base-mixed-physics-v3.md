@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ben072292/Qwen3.5-4B-Base-mixed-physics-v3` es un ajuste fino completo (full fine-tuning, no LoRA) del modelo base `Qwen/Qwen3.5-4B-Base`, publicado por el usuario ben072292 en HuggingFace. El checkpoint tiene 4.539.265.536 parámetros (~4,54 mil millones) en formato safetensors, un repositorio de 9,1 GB y licencia declarada como "other". El entrenamiento se ha realizado con LLaMA-Factory sobre el dataset `mixed_physics_prefix_2048`, con prefijos de 2048 tokens, lo que apunta a un corpus con contenido de física mezclado.
+`ben072292/Qwen3.5-4B-Base-mixed-physics-v3` es un ajuste fino completo (full fine-tuning, no LoRA) del modelo base `Qwen/Qwen3.5-4B-Base`, publicado por el usuario ben072292 en Hugging Face. El checkpoint tiene 4.539.265.536 parámetros (~4,54 mil millones) en formato safetensors, un repositorio de 9,1 GB y licencia declarada como "other". El entrenamiento se ha realizado con LLaMA-Factory sobre el dataset `mixed_physics_prefix_2048`, con prefijos de 2048 tokens, lo que apunta a un corpus con contenido de física mezclado.
 
 El identificador interno del checkpoint (`dpo-full-published-prefix2048-lr5e7-ga16-wd0-beta01-cosine-warmup10-delta-gh200-1ep`) sugiere un entrenamiento con optimización DPO (beta 0,1) sobre un ajuste previo de tipo supervisado, aunque la model card no confirma la metodología: los hiperparámetros publicados (AdamW fused, learning rate 5e-07, scheduler cosine, 1 época, batch total 16) corresponden a un bucle de entrenamiento estándar y no detallan la composición exacta de las etapas.
 
@@ -101,7 +101,7 @@ Nota: la comparativa se limita a parametros, contexto declarado y licencia. No s
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/ben072292/Qwen3.5-4B-Base-mixed-physics-v3
+- Repositorio Hugging Face del modelo: https://huggingface.co/ben072292/Qwen3.5-4B-Base-mixed-physics-v3
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B-Base
 - LLaMA-Factory (framework de ajuste empleado): https://github.com/hiyouga/LLaMA-Factory
 - Libreria transformers: https://github.com/huggingface/transformers

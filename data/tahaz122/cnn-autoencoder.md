@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Industrial Sense AI es un framework de inspeccion visual no supervisada publicado en HuggingFace por el usuario tahaz122 bajo el identificador `tahaz122/cnn-autoencoder`. No es un modelo de lenguaje: se trata de un autoencoder convolucional entrenado con PyTorch para detectar y localizar defectos de fabricacion en imagenes de componentes industriales de alta resolucion, tomando como referencia el dataset MVTec AD. El sistema combina el modelo con una aplicacion Gradio que permite subir imagenes, ajustar el umbral de decision en caliente y visualizar mapas de calor de anomalia.
+Industrial Sense AI es un framework de inspeccion visual no supervisada publicado en Hugging Face por el usuario tahaz122 bajo el identificador `tahaz122/cnn-autoencoder`. No es un modelo de lenguaje: se trata de un autoencoder convolucional entrenado con PyTorch para detectar y localizar defectos de fabricacion en imagenes de componentes industriales de alta resolucion, tomando como referencia el dataset MVTec AD. El sistema combina el modelo con una aplicacion Gradio que permite subir imagenes, ajustar el umbral de decision en caliente y visualizar mapas de calor de anomalia.
 
 El nucleo tecnico es un autoencoder con cuatro etapas de encoder convolucional que comprimen la imagen hasta un vector de cuello de botella de 128 dimensiones, seguido de cuatro etapas de decoder con convoluciones transpuestas. La deteccion se basa en el error de reconstruccion: el modelo solo aprende la apariencia de piezas correctas, de modo que las regiones defectuosas producen un error L1 elevado que se suaviza con un filtro gaussiano y se superpone sobre la imagen original con la paleta `JET`. Incluye ademas diagnosticos ECDF para comparar las distribuciones de error de pixeles normales frente a defectuosos.
 
@@ -18,14 +18,14 @@ Su relevancia es la de un proyecto de referencia reproducible para inspeccion in
 | Longitud de contexto | no aplica (modelo de vision; no se especifica la resolucion de entrada soportada) |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no aplica (no procesa lenguaje natural) |
-| Licencia | MIT segun la model card del autor; el metadato de HuggingFace figura como no disponible |
+| Licencia | MIT segun la model card del autor; el metadato de Hugging Face figura como no disponible |
 | Formato de pesos | no disponible; la documentacion menciona un checkpoint PyTorch `autoencoder_mvtec.pth` que no acompana al repositorio |
 | Framework | PyTorch (Python 3.8+), interfaz Gradio |
 | Tarea | Deteccion de anomalias no supervisada con localizacion a nivel de pixel |
 | Dataset de referencia | MVTec AD |
 | Metodo de puntuacion | Distancia de reconstruccion L1, suavizado gaussiano y umbral configurable |
-| Descargas / likes en HuggingFace | 0 / 0 |
-| Fecha de creacion en HuggingFace | 2026-09-20 |
+| Descargas / likes en Hugging Face | 0 / 0 |
+| Fecha de creacion en Hugging Face | 2026-09-20 |
 
 ## Arquitectura y entrenamiento
 
@@ -41,7 +41,7 @@ La inferencia genera un mapa de error pixel a pixel mediante distancia L1 entre 
 - Umbral de decision ajustable: permite modificar el punto de corte entre normal y defectuoso de forma dinamica en la interfaz.
 - Diagnostico estadistico: curvas ECDF y graficos comparativos de distribuciones de error normal frente a defectuoso.
 - Interfaz web lista para usar: aplicacion Gradio que admite carga de imagenes y seleccion de muestras del dataset.
-- Exportacion a HuggingFace Spaces: el proyecto documenta el despliegue con SDK Gradio.
+- Exportacion a Hugging Face Spaces: el proyecto documenta el despliegue con SDK Gradio.
 - Entrenamiento reproducible: scripts de PyTorch y cuaderno de Google Colab para reentrenar sobre datos propios.
 - No soporta: generacion de texto, razonamiento, codigo, matematicas, tool calling, function calling, agentes, capacidades multilingues, vision-lenguaje, audio ni modo de razonamiento explicito.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU recomendadas: no disponibles. Cualquier GPU con soporte CUDA para PyTorch es suficiente en principio; el repositorio no especifica minimos.
 - GPU de consumo: no confirmado. Por la naturaleza de la arquitectura es probable que quepa en tarjetas de gama de consumo recientes, pero el autor no lo documenta.
 - CPU: PyTorch permite ejecutar el modelo en CPU, aunque no se publican tiempos de inferencia en ese modo.
-- Opciones de despliegue: la unica documentada es la aplicacion Gradio (`app.py`) y el despliegue como HuggingFace Space con SDK Gradio. Tambien es posible ejecutar directamente el script de PyTorch. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, herramientas orientadas a modelos de lenguaje y no aplicables a este tipo de red.
+- Opciones de despliegue: la unica documentada es la aplicacion Gradio (`app.py`) y el despliegue como Hugging Face Space con SDK Gradio. Tambien es posible ejecutar directamente el script de PyTorch. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, herramientas orientadas a modelos de lenguaje y no aplicables a este tipo de red.
 - Latencia y throughput: no disponibles.
 - Requisito previo: el checkpoint entrenado (`autoencoder_mvtec.pth`) debe colocarse manualmente en el directorio raiz antes de lanzar la aplicacion; no se distribuye con el repositorio.
 
@@ -87,7 +87,7 @@ La diferencia conceptual principal es que este proyecto reconstruye la imagen co
 - Ausencia de pesos: el repositorio excluye explicitamente los binarios y el checkpoint debe entrenarse por cuenta propia; no hay un artefacto listo para usar.
 - Ausencia de benchmarks: no hay AUROC, PRO ni ninguna metrica publicada, por lo que no es posible evaluar su precision real ni compararla con alternativas.
 - Opacidad del entrenamiento: no se documentan epocas, tasa de aprendizaje, aumentos de datos, resolucion de entrada ni numero de imagenes normales por categoria.
-- Licencia ambigua: la model card declara MIT, pero el metadato de HuggingFace figura como no disponible y no se incluye fecha ni titular de copyright, lo que conviene aclarar antes de un uso comercial.
+- Licencia ambigua: la model card declara MIT, pero el metadato de Hugging Face figura como no disponible y no se incluye fecha ni titular de copyright, lo que conviene aclarar antes de un uso comercial.
 - Reentrenamiento obligatorio por dominio: un autoencoder de reconstruccion pierde validez al cambiar el producto, la optica, la iluminacion o el fondo; cada nueva referencia exige recopilar imagenes normales y reentrenar.
 - Sensibilidad al umbral: la decision depende de un punto de corte ajustado a mano; un umbral mal calibrado produce falsos positivos que paralizan linea o falsos negativos que dejan pasar defectos.
 - Sesgo de dominio: el modelo aprende exclusivamente la variabilidad presente en el conjunto normal de entrenamiento; si ese conjunto no cubre toda la variacion legitima (reflejos, orientaciones, desgaste de utillaje), apareceran falsas alarmas.
@@ -98,9 +98,9 @@ La diferencia conceptual principal es que este proyecto reconstruye la imagen co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tahaz122/cnn-autoencoder
+- Modelo en Hugging Face: https://huggingface.co/tahaz122/cnn-autoencoder
 - Repositorio GitHub: la model card referencia un repositorio con la URL plantilla `https://github.com/<your-username>/anomaly-detection`, sin usuario resuelto, por lo que el enlace no es accesible en su forma publicada.
 - Dataset MVTec AD: mencionado en la model card como conjunto de referencia; no se incluye enlace directo.
 - Anomalib: mencionado como framework en el script de entrenamiento; no se incluye enlace directo.
-- Licencia MIT: referenciada como archivo `LICENSE` dentro del proyecto, no enlazada desde la pagina de HuggingFace.
+- Licencia MIT: referenciada como archivo `LICENSE` dentro del proyecto, no enlazada desde la pagina de Hugging Face.
 - Busqueda web complementaria: sin resultados relevantes; los enlaces devueltos correspondian a sitios de contenido para adultos y se han descartado.

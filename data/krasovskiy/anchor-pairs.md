@@ -93,8 +93,8 @@ En **nichos distintos al gambling** (medicina, freelance, B2B, web studios, medi
 
 ## 10. Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Krasovskiy/anchor-pairs)
-- [Perfil del autor en HuggingFace](https://huggingface.co/Krasovskiy)
+- [Modelo en Hugging Face](https://huggingface.co/Krasovskiy/anchor-pairs)
+- [Perfil del autor en Hugging Face](https://huggingface.co/Krasovskiy)
 - [Modelo hermano: `anchor-words`](https://huggingface.co/Krasovskiy/anchor-words) (etiquetado de palabras de consulta)
 - [Modelo hermano: `kwcluster-variables`](https://huggingface.co/Krasovskiy/kwcluster-variables) (código del clusterizador y diccionarios)
 - No se ha publicado ningún paper ni blog adicional en la búsqueda web.

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`abdurrehman456/deepseek-r1-urdu-lora` es un adaptador LoRA (PEFT) publicado en HuggingFace por el usuario abdurrehman456, entrenado mediante SFT sobre el modelo base `unsloth/DeepSeek-R1-Distill-Qwen-1.5B`. No se trata por tanto de un modelo completo, sino de un conjunto de pesos de adaptador que deben cargarse junto al modelo base para su uso; el repositorio ocupa 0,1 GB, coherente con el tamano tipico de un adaptador LoRA frente a los aproximadamente 3 GB en FP16 de un modelo de 1.500 millones de parametros.
+`abdurrehman456/deepseek-r1-urdu-lora` es un adaptador LoRA (PEFT) publicado en Hugging Face por el usuario abdurrehman456, entrenado mediante SFT sobre el modelo base `unsloth/DeepSeek-R1-Distill-Qwen-1.5B`. No se trata por tanto de un modelo completo, sino de un conjunto de pesos de adaptador que deben cargarse junto al modelo base para su uso; el repositorio ocupa 0,1 GB, coherente con el tamano tipico de un adaptador LoRA frente a los aproximadamente 3 GB en FP16 de un modelo de 1.500 millones de parametros.
 
 El interes de la publicacion radica en el modelo base: DeepSeek-R1-Distill-Qwen-1.5B es un destilado de DeepSeek-R1 sobre Qwen2.5-1.5B, con capacidades de razonamiento explicito (modo *thinking*) en un tamano que cabe en GPU de consumo. El sufijo "urdu" del identificador sugiere un ajuste orientado a ese idioma, pero esta circunstancia no se confirma en ninguna parte de la model card.
 
-La relevancia practica es limitada por el momento: la ficha tiene 0 descargas y 0 *likes*, la model card es la plantilla generada automaticamente por HuggingFace sin ninguna seccion completada, y no se declara licencia, idioma, dataset de entrenamiento ni hiperparametros. A efectos de evaluacion, debe considerarse un experimento comunitario sin documentacion verificable.
+La relevancia practica es limitada por el momento: la ficha tiene 0 descargas y 0 *likes*, la model card es la plantilla generada automaticamente por Hugging Face sin ninguna seccion completada, y no se declara licencia, idioma, dataset de entrenamiento ni hiperparametros. A efectos de evaluacion, debe considerarse un experimento comunitario sin documentacion verificable.
 
 ## Especificaciones técnicas
 
@@ -55,7 +55,7 @@ Debido a la ausencia total de documentacion, evaluacion y licencia, los casos de
 - Comparacion de tecnicas de entrenamiento eficiente: al estar etiquetado con `unsloth` y `trl`, es un artefacto adecuado para reproducir flujos de trabajo de SFT con LoRA en una sola GPU y medir consumo de memoria y tiempo por epoch.
 - Generacion de texto auxiliar en tareas de traduccion o resumen hacia urdu: uso exploratorio con supervision humana obligatoria, dado que no existe ninguna metrica publicada de calidad.
 - Base para un ajuste adicional en un dominio concreto: partiendo del adaptador se puede continuar el entrenamiento con un dataset propio y, tras el merge, exportar a GGUF para inferencia en CPU con llama.cpp u Ollama.
-- Docencia y talleres de PEFT: el repositorio ilustra el flujo completo de publicacion de un adaptador en HuggingFace, con un coste de almacenamiento minimo.
+- Docencia y talleres de PEFT: el repositorio ilustra el flujo completo de publicacion de un adaptador en Hugging Face, con un coste de almacenamiento minimo.
 
 ## Benchmarks y rendimiento
 
@@ -97,7 +97,7 @@ No se dispone de datos de rendimiento comparado, por lo que cualquier afirmacion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abdurrehman456/deepseek-r1-urdu-lora
+- Modelo en Hugging Face: https://huggingface.co/abdurrehman456/deepseek-r1-urdu-lora
 - Modelo base: https://huggingface.co/unsloth/DeepSeek-R1-Distill-Qwen-1.5B
 - Referencia citada en la model card (Lacoste et al., 2019, calculadora de impacto): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning: https://mlco2.github.io/impact

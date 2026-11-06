@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`juicenv/microduck-roller-es2` es una política de control (policy) para el robot bípedo Microduck de Pollen Robotics, especializada en desplazamiento sobre ruedas («rollers»). No es un modelo de lenguaje: es un artefacto de robótica orientado a locomoción, publicado por el usuario juicenv (Jarrod Pflum) como un ajuste fino del modelo de referencia `pollen-robotics/microduck-roller-sprint-2m-reference`. El pipeline declarado en HuggingFace es `robotics` y la librería asociada es `microduck`.
+`juicenv/microduck-roller-es2` es una política de control (policy) para el robot bípedo Microduck de Pollen Robotics, especializada en desplazamiento sobre ruedas («rollers»). No es un modelo de lenguaje: es un artefacto de robótica orientado a locomoción, publicado por el usuario juicenv (Jarrod Pflum) como un ajuste fino del modelo de referencia `pollen-robotics/microduck-roller-sprint-2m-reference`. El pipeline declarado en Hugging Face es `robotics` y la librería asociada es `microduck`.
 
 La política consume observaciones de 61 dimensiones y emite 14 acciones a 50 Hz, y se describe como «perpetua»: una vez cargada, genera una marcha continua hasta que se le indique lo contrario. El entrenamiento se realizó mediante estrategias evolutivas (evolution strategies) sobre el scorer de rollers propio de la Arena de Microduck, con verificación declarada en x86. El resultado se exporta como `policy.onnx`, con el normalizador de observaciones embebido, de modo que el consumidor debe alimentar observaciones en crudo.
 
@@ -92,10 +92,10 @@ No se dispone de datos de parámetros, contexto, rendimiento ni licencia de las 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/juicenv/microduck-roller-es2
+- Modelo en Hugging Face: https://huggingface.co/juicenv/microduck-roller-es2
 - Modelo base: https://huggingface.co/pollen-robotics/microduck-roller-sprint-2m-reference
 - Repositorio del robot Microduck: https://github.com/pollen-robotics/microduck
 - Entornos de entrenamiento RL (mjlab): https://github.com/pollen-robotics/microduck_rl
-- Modelos compatibles con la librería microduck en HuggingFace: https://huggingface.co/models?library=microduck
+- Modelos compatibles con la librería microduck en Hugging Face: https://huggingface.co/models?library=microduck
 - MicroduckHub, explorador de políticas de la comunidad: https://microduckhub.com/
-- Perfil del autor en HuggingFace: https://huggingface.co/juicenv
+- Perfil del autor en Hugging Face: https://huggingface.co/juicenv

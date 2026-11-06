@@ -19,7 +19,7 @@ Su relevancia es de nicho pero especifica: sirve como banco de pruebas de invest
 | Tipos de cuantizacion | No disponible. El ejemplo de carga oficial usa bfloat16; el adaptador se distribuye en safetensors |
 | Idiomas soportados | Ingles (en) |
 | Licencia | No disponible. La model card no asigna licencia separada al adaptador; el modelo base Qwen3-VL-8B-Instruct se distribuye bajo Apache-2.0 |
-| Formato de pesos | safetensors (adaptador LoRA de PEFT). Requiere el modelo base en safetensors de HuggingFace |
+| Formato de pesos | safetensors (adaptador LoRA de PEFT). Requiere el modelo base en safetensors de Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -72,9 +72,9 @@ Ajustes de inferencia declarados: modo instruct con temperatura 0 y 256 tokens d
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RoboTalk-Qwen3-VL-8B-Instruct-30traj | 8B base + LoRA r16/a32 | No disponible (entrenamiento a 8.192 tokens) | 81,86% en tareas vistas; 45,00% en retenidas (exito FSM sin errores) | No especificada para el adaptador; base Apache-2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3-VL-8B-Instruct (modelo base sin ajustar) | 8B | No disponible en la informacion proporcionada | No disponible: no se reporta evaluacion del base en el mismo protocolo | Apache-2.0 | HuggingFace |
-| Otras variantes RoboTalk del mismo autor (mayor numero de trayectorias por tarea) | 8B base + LoRA | No disponible (entrenamiento a 8.192 tokens) | No disponible; la model card solo indica que los conjuntos mayores contienen las selecciones menores | No especificada | HuggingFace |
+| RoboTalk-Qwen3-VL-8B-Instruct-30traj | 8B base + LoRA r16/a32 | No disponible (entrenamiento a 8.192 tokens) | 81,86% en tareas vistas; 45,00% en retenidas (exito FSM sin errores) | No especificada para el adaptador; base Apache-2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3-VL-8B-Instruct (modelo base sin ajustar) | 8B | No disponible en la informacion proporcionada | No disponible: no se reporta evaluacion del base en el mismo protocolo | Apache-2.0 | Hugging Face |
+| Otras variantes RoboTalk del mismo autor (mayor numero de trayectorias por tarea) | 8B base + LoRA | No disponible (entrenamiento a 8.192 tokens) | No disponible; la model card solo indica que los conjuntos mayores contienen las selecciones menores | No especificada | Hugging Face |
 | Otros adaptadores vision-lenguaje para robotica de 7-8B | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos verificables en la informacion proporcionada para comparar con alternativas externas de la misma categoria (por ejemplo, adaptadores sobre Qwen2.5-VL u otros VLM de 7-8B orientados a robotica), por lo que esas filas se marcan como no disponibles.
@@ -95,7 +95,7 @@ No se dispone de datos verificables en la informacion proporcionada para compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DorianAtSchool/RoboTalk-Qwen3-VL-8B-Instruct-30traj
+- Modelo en Hugging Face: https://huggingface.co/DorianAtSchool/RoboTalk-Qwen3-VL-8B-Instruct-30traj
 - Dataset RoboTalk: https://huggingface.co/datasets/DorianAtSchool/RoboTalk
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Ficheros de configuracion y evaluacion citados en la model card: `training_config.json`, `task_split.json`, `evaluation_results.json` (en el repositorio del adaptador)

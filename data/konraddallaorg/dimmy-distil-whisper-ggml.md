@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento para establecer una comparativa cuantitati
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/KonradDallaOrg/dimmy-distil-whisper-ggml
+- Repositorio en Hugging Face: https://huggingface.co/KonradDallaOrg/dimmy-distil-whisper-ggml
 - Modelo base: https://huggingface.co/distil-whisper/distil-large-v3.5
 - Repositorio upstream de cuantizaciones GGML: https://huggingface.co/Pomni/distil-large-v3.5-ggml-allquants
 - Revision upstream fijada: https://huggingface.co/Pomni/distil-large-v3.5-ggml-allquants/tree/714de4d2bab7d93d962fd7a0febd86fb534d0c07

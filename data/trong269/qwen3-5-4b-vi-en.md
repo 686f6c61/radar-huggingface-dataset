@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-4B-vi-en es una derivación del modelo Qwen/Qwen3.5-4B publicada por el usuario trong269 en HuggingFace. No se trata de un fine-tuning ni de un reentrenamiento: todos los pesos del transformer son idénticos al modelo base. La modificación consiste en una poda del vocabulario (vocabulary pruning) orientada a vietnamita e inglés, la eliminación del codificador de visión y la conversión del modelo de `Qwen3_5ForConditionalGeneration` a `Qwen3_5ForCausalLM` (solo texto).
+Qwen3.5-4B-vi-en es una derivación del modelo Qwen/Qwen3.5-4B publicada por el usuario trong269 en Hugging Face. No se trata de un fine-tuning ni de un reentrenamiento: todos los pesos del transformer son idénticos al modelo base. La modificación consiste en una poda del vocabulario (vocabulary pruning) orientada a vietnamita e inglés, la eliminación del codificador de visión y la conversión del modelo de `Qwen3_5ForConditionalGeneration` a `Qwen3_5ForCausalLM` (solo texto).
 
 El resultado es un modelo de 3.865.525.248 parámetros (frente a los aproximadamente 4,66B del base), con un vocabulario reducido de 248.320 a 68.310 tokens (68.277 tokens regulares más 33 especiales). Se conserva la cabeza MTP (multi-token prediction), utilizable para decodificación especulativa. El modelo está pensado para despliegues de texto en vietnamita e inglés donde el ahorro de memoria en la capa de embeddings y en el vocabulario de salida resulte relevante.
 
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Vision | Vocabulario | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen3.5-4B-vi-en (este) | 3.865.525.248 | no disponible | No | 68.310 | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3.5-4B (base) | ~4,66B | no disponible | Si | 248.320 | Apache 2.0 | HuggingFace |
+| Qwen3.5-4B-vi-en (este) | 3.865.525.248 | no disponible | No | 68.310 | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3.5-4B (base) | ~4,66B | no disponible | Si | 248.320 | Apache 2.0 | Hugging Face |
 | Otras alternativas de ~4B | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparación directa con el modelo base es la única documentada: este modelo reduce parámetros de aproximadamente 4,66B a 3.865.525.248, elimina el codificador de visión, recorta el vocabulario a 68.310 tokens y mantiene la cabeza MTP; los pesos del transformer son idénticos y los logits sobre los tokens conservados coinciden con los del base. No se dispone de datos de rendimiento comparado con otras alternativas de la misma categoría.
@@ -83,5 +83,5 @@ La comparación directa con el modelo base es la única documentada: este modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/trong269/qwen3.5-4b-vi-en
+- Modelo en Hugging Face: https://huggingface.co/trong269/qwen3.5-4b-vi-en
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B

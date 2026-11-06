@@ -92,9 +92,9 @@ No se dispone de datos de parametros, benchmarks ni contexto de los modelos comp
 
 | Modelo | Relacion | Cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| immiq/Huihui-Qwen3.8-Flash-Next-abliterated-Orinfer-E8P-Q2A8 | Cuantizacion de despliegue | E8P casi-2-bit + W8 + INT8 KV | 262.144 | Qwen Community 1.0 | HuggingFace, requiere Orinfer |
-| huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated | Modelo base (abliterado) | Precision completa (no especificada) | no disponible | Qwen Community 1.0 | HuggingFace |
-| Qwen/Qwen3.8-Flash-Next | Modelo original | Precision completa (no especificada) | no disponible | Qwen Community 1.0 | HuggingFace |
+| immiq/Huihui-Qwen3.8-Flash-Next-abliterated-Orinfer-E8P-Q2A8 | Cuantizacion de despliegue | E8P casi-2-bit + W8 + INT8 KV | 262.144 | Qwen Community 1.0 | Hugging Face, requiere Orinfer |
+| huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated | Modelo base (abliterado) | Precision completa (no especificada) | no disponible | Qwen Community 1.0 | Hugging Face |
+| Qwen/Qwen3.8-Flash-Next | Modelo original | Precision completa (no especificada) | no disponible | Qwen Community 1.0 | Hugging Face |
 
 No se dispone de datos de benchmarks que permitan comparar el rendimiento de estos tres modelos entre si ni frente a alternativas de terceros de la misma categoria.
 
@@ -111,7 +111,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento de est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/immiq/Huihui-Qwen3.8-Flash-Next-abliterated-Orinfer-E8P-Q2A8
+- Modelo en Hugging Face: https://huggingface.co/immiq/Huihui-Qwen3.8-Flash-Next-abliterated-Orinfer-E8P-Q2A8
 - Modelo base abliterado: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated
 - Revision del modelo base: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated/tree/298f94632b784e26a7fe576114f82066689d5baa
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen3.8-Flash-Next

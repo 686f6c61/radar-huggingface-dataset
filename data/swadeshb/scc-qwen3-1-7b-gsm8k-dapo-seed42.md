@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parametros | Contexto | Metodo de entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `swadeshb/scc-qwen3-1.7b-gsm8k-dapo-seed42` | No disponible (indica 1.7B) | No disponible | GRPO | No disponible | HuggingFace |
-| `HuggingFaceTB/qwen3-1.7b-gsm8k-sft` | No disponible | No disponible | SFT | No disponible | HuggingFace |
-| `Qwen/Qwen3-1.7B` | No disponible | No disponible | Modelo base | No disponible | HuggingFace |
+| `swadeshb/scc-qwen3-1.7b-gsm8k-dapo-seed42` | No disponible (indica 1.7B) | No disponible | GRPO | No disponible | Hugging Face |
+| `HuggingFaceTB/qwen3-1.7b-gsm8k-sft` | No disponible | No disponible | SFT | No disponible | Hugging Face |
+| `Qwen/Qwen3-1.7B` | No disponible | No disponible | Modelo base | No disponible | Hugging Face |
 
 La comparación cualitativa indica que el modelo presentado es un fine-tune con GRPO, mientras que `HuggingFaceTB/qwen3-1.7b-gsm8k-sft` es un fine-tune con SFT. Ambos parten del mismo modelo base, pero no se disponen de benchmarks ni especificaciones detalladas para realizar una comparación cuantitativa.
 
@@ -70,11 +70,11 @@ La comparación cualitativa indica que el modelo presentado es un fine-tune con 
 - Riesgo de alucinación: no evaluado. Como todo modelo de lenguaje, puede generar respuestas incorrectas, especialmente en problemas fuera del dominio de GSM8K.
 - Limitaciones de contexto o idioma: no disponible. No se especifican idiomas soportados ni longitud de contexto.
 - Restricciones de licencia: la licencia no está especificada. Debe verificarse antes de cualquier uso comercial.
-- Advertencia para producción: el modelo tiene 0 descargas y 0 likes en HuggingFace, lo que sugiere que no ha sido ampliamente probado ni validado en entornos reales. Es un experimento de investigación y no debe usarse en producción sin una evaluación exhaustiva previa.
+- Advertencia para producción: el modelo tiene 0 descargas y 0 likes en Hugging Face, lo que sugiere que no ha sido ampliamente probado ni validado en entornos reales. Es un experimento de investigación y no debe usarse en producción sin una evaluación exhaustiva previa.
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/swadeshb/scc-qwen3-1.7b-gsm8k-dapo-seed42
+- Hugging Face del modelo: https://huggingface.co/swadeshb/scc-qwen3-1.7b-gsm8k-dapo-seed42
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Modelo similar con SFT: https://huggingface.co/HuggingFaceTB/qwen3-1.7b-gsm8k-sft
 - Paper de GRPO (DeepSeekMath): https://huggingface.co/papers/2402.03300

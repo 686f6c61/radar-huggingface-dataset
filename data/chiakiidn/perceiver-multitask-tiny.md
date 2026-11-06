@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Perceiver-multitask-tiny es un repositorio de HuggingFace publicado por el usuario chiakiidn que contiene una implementacion propia y minima de la arquitectura Perceiver orientada a tareas multiples (multitask). No es un modelo entrenado ni un release con pesos listos para produccion: el propio autor lo describe como un punto de partida reproducible, con una configuracion explicita, un script de entrenamiento/ejemplo y un checkpoint de inicializacion valido unicamente para pruebas de humo (smoke tests).
+Perceiver-multitask-tiny es un repositorio de Hugging Face publicado por el usuario chiakiidn que contiene una implementacion propia y minima de la arquitectura Perceiver orientada a tareas multiples (multitask). No es un modelo entrenado ni un release con pesos listos para produccion: el propio autor lo describe como un punto de partida reproducible, con una configuracion explicita, un script de entrenamiento/ejemplo y un checkpoint de inicializacion valido unicamente para pruebas de humo (smoke tests).
 
 El modelo cuenta con 24.832 parametros totales segun los metadatos de safetensors, lo que lo situa en una escala puramente experimental, muy por debajo de cualquier modelo utilizable para generacion de texto, vision o razonamiento. La arquitectura declarada es Perceiver con atencion estandar, fusion por co-attention, activacion swish y normalizacion scalenorm, y la receta de experimento por defecto usa el optimizador lamb con un schedule coseno.
 
@@ -71,9 +71,9 @@ No se dispone de datos verificados de benchmarks ni de especificaciones completa
 
 | Modelo | Parametros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| perceiver-multitask-tiny (este) | 24.832 | no disponible | no | bsd-3-clause | HuggingFace, 0 descargas |
+| perceiver-multitask-tiny (este) | 24.832 | no disponible | no | bsd-3-clause | Hugging Face, 0 descargas |
 | Implementaciones de referencia de Perceiver / Perceiver IO (DeepMind) | no disponible en esta busqueda | no disponible | si, en sus releases publicados | no disponible en esta busqueda | repositorios oficiales |
-| Otros checkpoints tiny de prueba publicados en HuggingFace | no disponible | no disponible | habitualmente no | variable | HuggingFace |
+| Otros checkpoints tiny de prueba publicados en Hugging Face | no disponible | no disponible | habitualmente no | variable | Hugging Face |
 
 La comparacion honesta es que este repositorio no compite con ningun modelo entrenado: su categoria real es la de artefacto de desarrollo, no la de modelo desplegable.
 
@@ -85,13 +85,13 @@ La comparacion honesta es que este repositorio no compite con ningun modelo entr
 - Riesgo de alucinacion: no aplica en el sentido habitual porque el modelo no genera lenguaje de forma fiable; cualquier texto que produzca seria incoherente.
 - Sin informacion sobre longitud de contexto ni idiomas soportados.
 - Licencia bsd-3-clause, permisiva e compatible con uso comercial del codigo, pero los terminos de las fuentes de datos externas deben revisarse por separado si se reutiliza con datasets de terceros.
-- Es una implementacion personalizada: las APIs automaticas de carga de HuggingFace no funcionan sin un adaptador explicito.
+- Es una implementacion personalizada: las APIs automaticas de carga de Hugging Face no funcionan sin un adaptador explicito.
 - Cualquier resultado obtenido con un checkpoint entrenado en el futuro debe documentarse de forma separada de los valores por defecto que se envian en este repositorio.
 - El repositorio ocupa 0,0 GB y no tiene descargas ni validacion de la comunidad: no hay senales externas de calidad o mantenimiento.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chiakiidn/perceiver-multitask-tiny
+- Hugging Face: https://huggingface.co/chiakiidn/perceiver-multitask-tiny
 - Archivos incluidos en el repositorio: `pipeline.py` (artefacto principal), `README.md`, `config.json` (configuracion de arquitectura), `training_args.json` (receta de experimento por defecto), `model.safetensors` (checkpoint de inicializacion).
 - Paper de referencia de la arquitectura Perceiver: no disponible en la informacion proporcionada.
 - Repositorios, demos o blogs adicionales: la busqueda web realizada no devolvio resultados relevantes sobre este modelo (los resultados obtenidos correspondian a contenidos no relacionados).

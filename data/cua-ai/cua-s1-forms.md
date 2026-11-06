@@ -85,7 +85,7 @@ El autor atribuye la diferencia en el caso del campo ya relleno a una convenció
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cua-s1-forms | 706.048 | 224 bytes de contexto, 96 bytes por opción | Scorer de opciones no generativo, una pasada | MIT | Checkpoint abierto en HuggingFace |
+| cua-s1-forms | 706.048 | 224 bytes de contexto, 96 bytes por opción | Scorer de opciones no generativo, una pasada | MIT | Checkpoint abierto en Hugging Face |
 | Jev (TypeSafe, `jev-latest`) | no disponible | no disponible | System One con `AttentionHead`, mismo contrato de entrada/salida | no disponible (API hosted) | Solo como API hosted; el autor lo usa como referencia zero-shot |
 | LLM o VLM autoregresivo de computer-use | no disponible | no disponible | Generación de acciones token a token | varía | múltiple |
 
@@ -105,7 +105,7 @@ La comparación publicada y verificable es únicamente contra Jev hosted, con lo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cua-ai/cua-s1-forms
+- Modelo en Hugging Face: https://huggingface.co/cua-ai/cua-s1-forms
 - Repositorio del proyecto cua-s1: https://github.com/trycua/cua/tree/main/libs/cua-s1
 - Driver de ejecución cua-driver: https://github.com/trycua/cua/tree/main/libs/cua-driver
 - Bucle planner (snapshot, score, order, execute): https://github.com/trycua/cua/tree/main/libs/cua-s1/python/src/cua_s1/planner.py

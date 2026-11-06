@@ -69,5 +69,5 @@ No se dispone de información sobre modelos comparables en la misma categoría. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: [DevQuasar/Qwen.Qwen3.8-27B-GGUF](https://huggingface.co/DevQuasar/Qwen.Qwen3.8-27B-GGUF)
+- Repositorio Hugging Face: [DevQuasar/Qwen.Qwen3.8-27B-GGUF](https://huggingface.co/DevQuasar/Qwen.Qwen3.8-27B-GGUF)
 - Modelo base referenciado: [Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B) (enlace no verificado)

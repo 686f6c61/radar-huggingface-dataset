@@ -73,8 +73,8 @@ Por categoría, Sonnet ganó todas las comparaciones: iconos 7/7, degradados 6/6
 
 | Modelo | Parámetros | Contexto | Rendimiento en SVG | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| aixonlab/svg-slm-4b | 4,2B | No disponible | 26/60 válidos; 0/26 victorias frente a Sonnet 5.5 | Apache-2.0 | HuggingFace |
-| Qwen/Qwen3.5-4B (base) | 4,2B | No disponible | No evaluado en SVG en la información disponible | Apache-2.0 (según base) | HuggingFace |
+| aixonlab/svg-slm-4b | 4,2B | No disponible | 26/60 válidos; 0/26 victorias frente a Sonnet 5.5 | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3.5-4B (base) | 4,2B | No disponible | No evaluado en SVG en la información disponible | Apache-2.0 (según base) | Hugging Face |
 | Claude Sonnet 5.5 (referencia del autor) | No disponible | No disponible | 8,4/10 de media en el juicio ciego; ganó todas las categorías | Propietaria | API |
 
 No se dispone de datos de otros modelos especializados en text-to-SVG en la información proporcionada.
@@ -92,7 +92,7 @@ No se dispone de datos de otros modelos especializados en text-to-SVG en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aixonlab/svg-slm-4b
+- Modelo en Hugging Face: https://huggingface.co/aixonlab/svg-slm-4b
 - Adaptador LoRA: https://huggingface.co/aixonlab/svg-slm-4b-lora
 - Dataset de entrenamiento: https://huggingface.co/datasets/aixonlab/svg-sft-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B

@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "MuyaoYuan/LoCo-7B",
+  "slug": "muyaoyuan-loco-7b",
+  "author": "MuyaoYuan",
+  "url": "https://huggingface.co/MuyaoYuan/LoCo-7B",
+  "created_at": "2026-11-03T11:45:40.000Z",
+  "updated_at": "2026-11-04T07:46:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "reasoning-compression",
+    "dpo",
+    "preference-learning",
+    "math",
+    "coding",
+    "conversational",
+    "arxiv:2611.04814",
+    "base_model:deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+    "base_model:finetune:deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 21,
+  "downloads_30d": 178,
+  "trending_score": 16,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242694650,
+  "storage_human": "15.2 GB",
+  "base_model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Local Preference Learning for Reasoning Compression - arXiv",
+      "url": "https://arxiv.org/html/2611.04814",
+      "snippet": "vor 2 Tagen ... The code and model will be publicly released at https://github.com/MuyaoYuan/LoCo. ... We train DeepSeek-R1-Distill-Qwen-7B with LoCo for two ..."
+    }
+  ]
+}

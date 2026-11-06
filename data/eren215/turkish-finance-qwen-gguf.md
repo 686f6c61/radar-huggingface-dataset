@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`eren215/turkish-finance-qwen-gguf` es un ajuste fino del modelo Qwen2.5-7B-Instruct orientado al dominio financiero en turco (según se deduce del nombre del repositorio y del fichero de pesos incluido), publicado por el usuario `eren215` en HuggingFace. El autor lo ha entrenado y convertido a formato GGUF utilizando Unsloth, y distribuye únicamente la versión cuantizada en Q4_K_M junto con un Modelfile de Ollama para su despliegue inmediato. No se ha publicado información sobre el conjunto de datos de ajuste, el número de tokens de entrenamiento ni la metodología de alineación empleada.
+`eren215/turkish-finance-qwen-gguf` es un ajuste fino del modelo Qwen2.5-7B-Instruct orientado al dominio financiero en turco (según se deduce del nombre del repositorio y del fichero de pesos incluido), publicado por el usuario `eren215` en Hugging Face. El autor lo ha entrenado y convertido a formato GGUF utilizando Unsloth, y distribuye únicamente la versión cuantizada en Q4_K_M junto con un Modelfile de Ollama para su despliegue inmediato. No se ha publicado información sobre el conjunto de datos de ajuste, el número de tokens de entrenamiento ni la metodología de alineación empleada.
 
 El modelo cuenta con 7.615.616.512 parámetros reales (aproximadamente 7,6 mil millones) y un repositorio de 4,7 GB, coherente con una cuantización Q4_K_M. Al estar en formato GGUF, está pensado para inferencia en CPU o GPU mediante llama.cpp, Ollama y otros runners compatibles, lo que lo sitúa en la franja de modelos que pueden ejecutarse en hardware de consumo.
 
@@ -92,12 +92,12 @@ No se dispone de datos que permitan comparar el rendimiento de este ajuste con a
 - Idiomas no declarados: aunque el nombre sugiere turco, no se especifica la cobertura linguistica real. Es probable que el ajuste fino haya degradado parcialmente las capacidades multilingues del modelo base.
 - Contexto no documentado: no se indica la ventana de contexto efectiva tras el ajuste. Si se necesita contexto largo, habria que validarlo empiricamente.
 - Ambito restringido: un modelo financiero no constituye asesoramiento financiero. Su uso en productos regulados (banca, inversion, seguros) puede requerir cumplimiento normativo especifico.
-- Fecha de publicacion en los metadatos: el repositorio figura como creado el 11 de septiembre de 2026, una fecha posterior a la consulta, lo que sugiere un posible error en los metadatos de HuggingFace.
+- Fecha de publicacion en los metadatos: el repositorio figura como creado el 11 de septiembre de 2026, una fecha posterior a la consulta, lo que sugiere un posible error en los metadatos de Hugging Face.
 - Despliegue limitado por formato: al distribuirse solo en GGUF, no es directamente compatible con stacks que requieren safetensors (vLLM, TGI, TensorRT-LLM) sin una conversion previa.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eren215/turkish-finance-qwen-gguf
+- Modelo en Hugging Face: https://huggingface.co/eren215/turkish-finance-qwen-gguf
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Documentacion de Qwen2.5 (modelo base inferido): https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Documentacion de llama.cpp: https://github.com/ggml-org/llama.cpp

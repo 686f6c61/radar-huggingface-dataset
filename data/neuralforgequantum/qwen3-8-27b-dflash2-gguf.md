@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-DFlash2-GGUF es un modelo auxiliar de decodificación especulativa (draft model) desarrollado por Inco AI, publicado en HuggingFace por el usuario neuralforgequantum como conversión GGUF. No es un modelo de lenguaje autónomo: actúa como un "borrador" que predice bloques de tokens en paralelo para que el modelo objetivo, Qwen3.8-27B de Alibaba, los verifique, acelerando así la generación sin alterar la distribución de salida. Esta técnica, denominada DFlash 2, consigue una aceleración cercana a 3 veces respecto a la decodificación autoregresiva estándar, según el blog oficial de Inco AI.
+Qwen3.8-27B-DFlash2-GGUF es un modelo auxiliar de decodificación especulativa (draft model) desarrollado por Inco AI, publicado en Hugging Face por el usuario neuralforgequantum como conversión GGUF. No es un modelo de lenguaje autónomo: actúa como un "borrador" que predice bloques de tokens en paralelo para que el modelo objetivo, Qwen3.8-27B de Alibaba, los verifique, acelerando así la generación sin alterar la distribución de salida. Esta técnica, denominada DFlash 2, consigue una aceleración cercana a 3 veces respecto a la decodificación autoregresiva estándar, según el blog oficial de Inco AI.
 
 El drafter tiene aproximadamente 1.924 millones de parámetros (1.9B) y se distribuye en tres cuantizaciones GGUF (Q4_K_M, Q8_0 y BF16), con tamaños de archivo de 1.1, 2.0 y 3.8 GB respectivamente. Requiere una versión modificada de llama.cpp con soporte para DFlash 2 (PR #27342) y se integra mediante el servidor `llama-server` junto con el modelo objetivo. Su relevancia actual radica en que permite ejecutar Qwen3.8-27B, un modelo multimodal de 27B con ventana de contexto de 256K, en hardware local con menor latencia, lo que facilita su uso en aplicaciones de agentes, codificación y automatización de oficina.
 
@@ -79,7 +79,7 @@ No se dispone de datos comparativos con otros drafters de decodificación especu
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/neuralforgequantum/Qwen3.8-27B-DFlash2-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/neuralforgequantum/Qwen3.8-27B-DFlash2-GGUF
 - Checkpoint original (Inco AI): https://huggingface.co/incoai/Qwen3.8-27B-DFlash2
 - Espejo del repositorio (z-lab): https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2-GGUF
 - Blog de DFlash 2: https://inco.ai/blog/dflash2/

@@ -84,10 +84,10 @@ No se han publicado resultados de benchmarks estandar (MMLU, GLUE, HumanEval, GS
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (DistilBERT fine-tuned food/not food) | 66.955.010 | 512 tokens | Clasificacion binaria food / not food | apache-2.0 | Repositorio HuggingFace, 0 descargas |
-| `distilbert/distilbert-base-uncased` (modelo base) | ~66 millones | 512 tokens | Modelo de lenguaje enmascarado (requiere fine-tuning para clasificar) | apache-2.0 | Ampliamente disponible en HuggingFace |
+| Este modelo (DistilBERT fine-tuned food/not food) | 66.955.010 | 512 tokens | Clasificacion binaria food / not food | apache-2.0 | Repositorio Hugging Face, 0 descargas |
+| `distilbert/distilbert-base-uncased` (modelo base) | ~66 millones | 512 tokens | Modelo de lenguaje enmascarado (requiere fine-tuning para clasificar) | apache-2.0 | Ampliamente disponible en Hugging Face |
 | `distilbert/distilbert-base-uncased-finetuned-sst-2-english` | ~67 millones | 512 tokens | Analisis de sentimiento binario | apache-2.0 | Modelo de referencia muy descargado, con evaluacion publicada |
-| `FacebookAI/roberta-base` | ~125 millones | 512 tokens | Modelo de lenguaje enmascarado (base para clasificacion) | mit | Ampliamente disponible en HuggingFace |
+| `FacebookAI/roberta-base` | ~125 millones | 512 tokens | Modelo de lenguaje enmascarado (base para clasificacion) | mit | Ampliamente disponible en Hugging Face |
 
 La comparacion de rendimiento entre estos modelos no esta disponible: el repositorio no publica resultados en benchmarks compartidos con las alternativas, y las metricas declaradas (accuracy 1.0) no son comparables por el tamano reducido del conjunto de evaluacion. Respecto a `roberta-base`, duplicar el numero de parametros no aporta nada si la tarea es trivialmente separable, por lo que DistilBERT es una eleccion razonable en coste para este tipo de filtrado.
 
@@ -106,7 +106,7 @@ La comparacion de rendimiento entre estos modelos no esta disponible: el reposit
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/marshdsouza2001/learn_hf_food_not_food_text_classifier-distilbert-base-uncased
+- Modelo en Hugging Face: https://huggingface.co/marshdsouza2001/learn_hf_food_not_food_text_classifier-distilbert-base-uncased
 - Modelo base `distilbert/distilbert-base-uncased`: https://huggingface.co/distilbert/distilbert-base-uncased
 - Resultados de busqueda web: no se han encontrado enlaces relevantes sobre este modelo. Las consultas realizadas devolvieron unicamente resultados de sitios para adultos sin ninguna relacion con el modelo, por lo que se descartan y no se incluyen.
 - Paper de referencia de DistilBERT (Sanh et al., 2019): no disponible en la informacion proporcionada.

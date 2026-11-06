@@ -99,9 +99,9 @@ En su categoría de modelos ultra pequeños, MiniSeek-D0.1 es notablemente más 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wyf-yfw/MiniSeek-D0.1
+- Modelo en Hugging Face: https://huggingface.co/wyf-yfw/MiniSeek-D0.1
 - Modelo base: https://huggingface.co/wyf-yfw/MiniSeek-D0.1-base
 - Repositorio de código (GitHub): https://github.com/wyf-yfw/miniseek
-- Colección MiniSeek en HuggingFace: https://huggingface.co/collections/wyf-yfw/miniseek-6adc765159d38ab3236c49af
+- Colección MiniSeek en Hugging Face: https://huggingface.co/collections/wyf-yfw/miniseek-6adc765159d38ab3236c49af
 - Dataset SFT (MiniMind): https://huggingface.co/datasets/jingyaogong/minimind_dataset
 - Proyecto MiniMind (referencia del tokenizador y receta SFT): https://github.com/jingyaogong/minimind

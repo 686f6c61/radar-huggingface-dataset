@@ -76,6 +76,6 @@ No se dispone de información sobre modelos comparables. El modelo base `google/
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SaketR1/gemma-sft-corr-amb-mix-clear
+- Repositorio Hugging Face: https://huggingface.co/SaketR1/gemma-sft-corr-amb-mix-clear
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it (no verificado)
 - TRL (librería de entrenamiento): https://github.com/huggingface/trl

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sovereign MCP es un servidor de infraestructura para IA, no un modelo de lenguaje. Publicado por Snapkitty en HuggingFace, se presenta como una capa de orquestacion que enruta peticiones entre proveedores de IA (Amazon Bedrock, Groq y Ollama) con conmutacion automatica por error, verificacion determinista de salidas, firma criptografica Ed25519 y registro de auditoria inmutable tipo WORM. El problema que resuelve es la dependencia de un unico proveedor, la falta de verificabilidad de las respuestas de IA y la ausencia de trazabilidad en entornos empresariales.
+Sovereign MCP es un servidor de infraestructura para IA, no un modelo de lenguaje. Publicado por Snapkitty en Hugging Face, se presenta como una capa de orquestacion que enruta peticiones entre proveedores de IA (Amazon Bedrock, Groq y Ollama) con conmutacion automatica por error, verificacion determinista de salidas, firma criptografica Ed25519 y registro de auditoria inmutable tipo WORM. El problema que resuelve es la dependencia de un unico proveedor, la falta de verificabilidad de las respuestas de IA y la ausencia de trazabilidad en entornos empresariales.
 
 Distribuido como un unico archivo JavaScript (sovereign-mcp.mjs) sin paso de compilacion, el servidor implementa el protocolo MCP (Model Context Protocol) y puede ejecutarse en modo stdio o HTTP. No se trata de un modelo entrenado: no tiene pesos, parametros ni contexto propio, sino que actua como pasarela inteligente que delega la generacion de texto en los proveedores configurados. Su relevancia actual radica en la creciente demanda de herramientas de gobernanza y auditoria para sistemas de IA en produccion.
 
@@ -73,7 +73,7 @@ No disponible. Este proyecto no es un modelo de lenguaje, sino un servidor de in
 
 - No es un modelo de lenguaje: no genera texto por si mismo y no puede responder peticiones sin un proveedor configurado.
 - La licencia no esta especificada en el repositorio (el README contiene el placeholder "[Your license here]"), lo que genera incertidumbre legal para uso comercial.
-- El proyecto tiene cero descargas y cero likes en HuggingFace, lo que indica que no ha sido probado en produccion ni validado por la comunidad.
+- El proyecto tiene cero descargas y cero likes en Hugging Face, lo que indica que no ha sido probado en produccion ni validado por la comunidad.
 - La verificacion ERE es determinista y basada en reglas; puede generar falsos positivos (bloquear respuestas validas) o no detectar problemas semanticos mas alla de los patrones definidos.
 - Depende de la disponibilidad de los proveedores externos; si ninguno esta configurado o disponible, el sistema devuelve un error duro sin respuesta.
 - El registro WORM es append-only, pero la implementacion concreta del almacenamiento persistente no esta documentada en la informacion disponible.
@@ -82,9 +82,9 @@ No disponible. Este proyecto no es un modelo de lenguaje, sino un servidor de in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Snapkitty/sovereign-mcp
+- Hugging Face: https://huggingface.co/Snapkitty/sovereign-mcp
 - GitHub (SNAPKITTYWEST/sovereign-mcp): https://github.com/SNAPKITTYWEST/sovereign-mcp
 - GitHub (SNAPKITTYWEST/snapkitty-mcp): https://github.com/SNAPKITTYWEST/snapkitty-mcp
-- HuggingFace (Snapkitty/sovereign-router): https://huggingface.co/Snapkitty/sovereign-router
+- Hugging Face (Snapkitty/sovereign-router): https://huggingface.co/Snapkitty/sovereign-router
 - Glama (Sovereign MCP): https://glama.ai/mcp/servers/SNAPKITTYWEST/sovereign-mcp
-- Perfil HuggingFace de Snapkitty Collective: https://huggingface.co/Snapkitty
+- Perfil Hugging Face de Snapkitty Collective: https://huggingface.co/Snapkitty

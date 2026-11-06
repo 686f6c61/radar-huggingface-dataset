@@ -17,7 +17,7 @@ La relevancia de este modelo radica en su potencial uso para tareas de respuesta
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible (el modelo base soporta 12 idiomas) |
 | Licencia | no disponible |
-| Formato de pesos | safetensors (según los tags de HuggingFace) |
+| Formato de pesos | safetensors (según los tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -75,7 +75,7 @@ La comparativa es limitada porque no se conocen los resultados de este fine-tune
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AlinaGonch/granite41-3b-squad-ratio-0.50-seed-44
+- Repositorio en Hugging Face: https://huggingface.co/AlinaGonch/granite41-3b-squad-ratio-0.50-seed-44
 - Variante con ratio 0.90: https://huggingface.co/AlinaGonch/granite41-3b-squad-ratio-0.90-seed-44
 - Variante con ratio 0.30 y r64: https://huggingface.co/AlinaGonch/granite41-3b-squad-ratio-0.30-r64/tree/main
 - Información sobre Granite 4.1 3B (modelo base): https://www.fitmyllm.com/model/granite-4.1-3b

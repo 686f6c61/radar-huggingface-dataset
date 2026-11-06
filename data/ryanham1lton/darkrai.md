@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Ryanham1lton/Darkrai` es un repositorio de modelos publicado en HuggingFace por el usuario Ryanham1lton bajo licencia CC-BY-4.0. En el momento de redactar esta ficha el repositorio no incluye model card con contenido tecnico: el README se limita a la linea de metadatos de licencia, sin descripcion, sin arquitectura declarada y sin ejemplos de uso. Tampoco se ha publicado informacion adicional en la busqueda web.
+`Ryanham1lton/Darkrai` es un repositorio de modelos publicado en Hugging Face por el usuario Ryanham1lton bajo licencia CC-BY-4.0. En el momento de redactar esta ficha el repositorio no incluye model card con contenido tecnico: el README se limita a la linea de metadatos de licencia, sin descripcion, sin arquitectura declarada y sin ejemplos de uso. Tampoco se ha publicado informacion adicional en la busqueda web.
 
 Los metadatos disponibles son minimos: 0 descargas, 0 likes, ningun pipeline declarado, ningun idioma declarado y un tamano de repositorio de 0,1 GB. Esto impide determinar si se trata de un modelo entrenado desde cero, un fine-tuning, una fusion de pesos o una conversion a un formato cuantizado; el nombre del repositorio no aporta informacion tecnica verificable.
 
@@ -41,12 +41,12 @@ Tampoco hay datos sobre el proceso de entrenamiento: numero de tokens, composici
 
 Los siguientes escenarios se plantean como evaluaciones previas, no como aplicaciones confirmadas. Ninguno debe llevarse a produccion sin verificar primero los pesos, la tokenizer y el comportamiento real del modelo.
 
-- Auditoria de artefactos de HuggingFace: descargar el repositorio, listar los archivos con `huggingface-cli download` y determinar el formato real de los pesos (safetensors, GGUF, bin) antes de cualquier otra accion.
+- Auditoria de artefactos de Hugging Face: descargar el repositorio, listar los archivos con `huggingface-cli download` y determinar el formato real de los pesos (safetensors, GGUF, bin) antes de cualquier otra accion.
 - Reproduccion de experimentos de terceros: si el autor publica posteriormente una model card, este repositorio serviria como referencia para replicar el entrenamiento declarado.
 - Fine-tuning experimental: un checkpoint de 0,1 GB podria ser un punto de partida manejable para probar pipelines de entrenamiento en una unica GPU consumer, siempre que se confirme que los pesos son cargables.
 - Evaluacion comparativa interna: incluir el modelo en un banco de pruebas propio (perplejidad, tareas de generacion corta) para contrastarlo con checkpoints de tamano similar.
 - Analisis de licencias y compliance: al estar bajo CC-BY-4.0, el repositorio puede servir como caso de estudio de atribucion y redistribucion en entornos corporativos.
-- Docencia y formacion: usar el repositorio como ejemplo de publicacion incompleta en HuggingFace (sin model card, sin pipeline, sin idiomas) para ilustrar buenas practicas de documentacion de modelos.
+- Docencia y formacion: usar el repositorio como ejemplo de publicacion incompleta en Hugging Face (sin model card, sin pipeline, sin idiomas) para ilustrar buenas practicas de documentacion de modelos.
 - Pruebas de carga de infraestructura: un artefacto de 0,1 GB es util para validar caching, descarga y servido en un stack de despliegue antes de mover modelos de mayor tamano.
 
 ## Benchmarks y rendimiento
@@ -80,5 +80,5 @@ No disponible. La ausencia de arquitectura, numero de parametros y contexto impi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ryanham1lton/Darkrai
+- Modelo en Hugging Face: https://huggingface.co/Ryanham1lton/Darkrai
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la busqueda web realizada.

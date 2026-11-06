@@ -18,7 +18,7 @@ Es relevante ahora porque demuestra que un modelo compacto de 4B puede abordar t
 | Longitud de contexto | ~131K tokens (configuración de agente evaluada); hasta 8.192 tokens generados por turno |
 | Tipos de cuantizacion | no disponible (el repositorio solo publica pesos safetensors) |
 | Idiomas soportados | no disponible; los datos de entrenamiento son principalmente en inglés |
-| Licencia | MIT segun la etiqueta de HuggingFace; Apache License 2.0 segun la model card (discrepancia no resuelta) |
+| Licencia | MIT segun la etiqueta de Hugging Face; Apache License 2.0 segun la model card (discrepancia no resuelta) |
 | Formato de pesos | safetensors |
 | Tamano del repositorio | 9,3 GB |
 | Modalidades de entrada | Solo texto en uso previsto y evaluado (los componentes de visión heredados no se post-entrenaron) |
@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FrogNano-4B-2609 | 4,66B (denso) | ~131K tokens | Agente de código a nivel de repositorio (post-entrenamiento por RL) | MIT (etiqueta HF) / Apache 2.0 (model card) | HuggingFace: microsoft/FrogNano-4B-2609 |
-| Qwen/Qwen3.5-4B | ~4B (denso) | No disponible | Modelo generalista de lenguaje, razonamiento, código, agente y multimodal | No disponible | HuggingFace: Qwen/Qwen3.5-4B |
+| FrogNano-4B-2609 | 4,66B (denso) | ~131K tokens | Agente de código a nivel de repositorio (post-entrenamiento por RL) | MIT (etiqueta HF) / Apache 2.0 (model card) | Hugging Face: microsoft/FrogNano-4B-2609 |
+| Qwen/Qwen3.5-4B | ~4B (denso) | No disponible | Modelo generalista de lenguaje, razonamiento, código, agente y multimodal | No disponible | Hugging Face: Qwen/Qwen3.5-4B |
 | Otros agentes de código de ~4B | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La comparacion de rendimiento con alternativas de la misma categoria no esta disponible, ya que no se han publicado resultados de benchmarks en la informacion proporcionada.
@@ -81,7 +81,7 @@ La comparacion de rendimiento con alternativas de la misma categoria no esta dis
 - Sesgo de dominio: los datos de entrenamiento son predominantemente Python y principalmente en inglés, lo que limita su eficacia en otros lenguajes de programación o idiomas.
 - Riesgo de alucinacion en parches: el modelo puede generar parches incorrectos o inseguros aunque superen los tests disponibles, ya que las recompensas se basan en tests ejecutables y no garantizan corrección o seguridad.
 - Ausencia de alineacion de seguridad especifica: el post-entrenamiento no usó conjuntos de preferencias de seguridad, rechazo, contenido dañino ni adversarial, por lo que no debe considerarse alineado de forma independiente para despliegue autónomo sin supervisión.
-- Discrepancia de licencia: la etiqueta de HuggingFace indica MIT, mientras que la model card declara Apache License 2.0; conviene verificar los términos aplicables antes de uso comercial, ya que además se derivan obligaciones de atribución de Qwen/Qwen3.5-4B.
+- Discrepancia de licencia: la etiqueta de Hugging Face indica MIT, mientras que la model card declara Apache License 2.0; conviene verificar los términos aplicables antes de uso comercial, ya que además se derivan obligaciones de atribución de Qwen/Qwen3.5-4B.
 - Contexto: los ~131K tokens corresponden a la configuración de agente evaluada; no está claro que se mantenga ese contexto en otros modos de uso.
 - Limitacion multimodal: los componentes de visión heredados no fueron post-entrenados ni evaluados, por lo que no deben usarse como capacidad soportada.
 - Necesidad de revision humana: los parches generados requieren revisión, pruebas de regresión y validación de seguridad antes de cualquier despliegue; el modelo no despliega cambios por sí mismo.
@@ -89,7 +89,7 @@ La comparacion de rendimiento con alternativas de la misma categoria no esta dis
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/microsoft/FrogNano-4B-2609
+- Hugging Face: https://huggingface.co/microsoft/FrogNano-4B-2609
 - Modelo upstream: https://huggingface.co/Qwen/Qwen3.5-4B
 - Informe tecnico: https://aka.ms/frognano-tech-report
 - Repositorio y arnés Leaf: https://github.com/microsoft/FrogNano

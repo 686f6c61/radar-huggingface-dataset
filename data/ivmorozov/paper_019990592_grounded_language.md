@@ -63,5 +63,5 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ivmorozov/paper_019990592_grounded_language
+- Repositorio en Hugging Face: https://huggingface.co/ivmorozov/paper_019990592_grounded_language
 - No se han encontrado otros enlaces oficiales del autor. Los resultados de búsqueda web sobre grounded language (arXiv:2210.05359, arXiv:2606.27806) son de otros autores y no están afiliados a este repositorio.

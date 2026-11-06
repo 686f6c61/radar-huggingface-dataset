@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio identificado como `yutosaito0629/zzz` en HuggingFace no contiene, segun la informacion disponible, un modelo de aprendizaje automatico: la unica documentacion publicada (su model card) describe una herramienta de analisis de distribuciones de escenas para conjuntos de datos de deteccion de objetos en formato YOLO, orientada a la subnet 44 de Bittensor (Score) y, en concreto, al dataset `Detect-petrol-station`. La metadata publica del repositorio indica cero descargas, cero "likes", ausencia de pipeline declarado, ausencia de licencia y ausencia de idiomas soportados, ademas de una unica etiqueta generica (`region:us`), lo que sugiere un repositorio en estado inicial o de prueba creado el 22 de septiembre de 2026 y modificado cinco minutos despues.
+El repositorio identificado como `yutosaito0629/zzz` en Hugging Face no contiene, segun la informacion disponible, un modelo de aprendizaje automatico: la unica documentacion publicada (su model card) describe una herramienta de analisis de distribuciones de escenas para conjuntos de datos de deteccion de objetos en formato YOLO, orientada a la subnet 44 de Bittensor (Score) y, en concreto, al dataset `Detect-petrol-station`. La metadata publica del repositorio indica cero descargas, cero "likes", ausencia de pipeline declarado, ausencia de licencia y ausencia de idiomas soportados, ademas de una unica etiqueta generica (`region:us`), lo que sugiere un repositorio en estado inicial o de prueba creado el 22 de septiembre de 2026 y modificado cinco minutos despues.
 
 Dado que no se declaran pesos, arquitectura, tokenizador ni ficheros de modelo, no es posible caracterizarlo como LLM, modelo multimodal ni modelo de vision con parametros entrenados. Lo que si se documenta es una utilidad de linea de comandos en Python que analiza, agrupa y compara datasets YOLO, detecta duplicados y valores atipicos, genera embeddings y produce paquetes de prompts para sintetizar imagenes nuevas mediante la API de Gemini, con el objetivo declarado de mejorar `mAP@50`, precision y recall en los regimenes de escena que realmente mueven esas metricas.
 
@@ -81,7 +81,7 @@ No disponible. Al no tratarse de un modelo con parametros publicados, no existe 
 - El repositorio no declara licencia, por lo que no puede asumirse permiso de uso comercial, modificacion ni redistribucion.
 - No se publican pesos, configuraciones ni artefactos de modelo; no es utilizable como modelo de inferencia.
 - Con cero descargas y cero likes, no existe evidencia de uso, validacion por terceros ni mantenimiento.
-- La metadata no declara idiomas soportados ni pipeline, lo que impide verificar su proposito mediante la API de HuggingFace.
+- La metadata no declara idiomas soportados ni pipeline, lo que impide verificar su proposito mediante la API de Hugging Face.
 - La herramienta depende de la API de Gemini y de una clave externa; cambios de precio, cuota o politica del proveedor afectan directamente al flujo de generacion.
 - Las rutas de ejemplo son absolutas y especificas de Windows, lo que sugiere portabilidad limitada a otros sistemas sin ajustes.
 - Las etiquetas de las imagenes generadas se describen como borradores (`draft labels`), por lo que requieren revision humana antes de usarse en entrenamiento; usarlas sin revisar introduce ruido de anotacion.
@@ -91,6 +91,6 @@ No disponible. Al no tratarse de un modelo con parametros publicados, no existe 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yutosaito0629/zzz
+- Repositorio en Hugging Face: https://huggingface.co/yutosaito0629/zzz
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relevante al repositorio ni a la herramienta descrita. Los resultados devueltos corresponden a hilos de Reddit y foros de Blizzard sobre guias de build del sitio Maxroll para juegos de la saga Diablo (por ejemplo, https://www.reddit.com/r/DiabloImmortal/comments/v422ei/maxroll/ y https://www.reddit.com/r/diablo3/comments/jvuxma/maxrollgg_guides/), sin relacion alguna con el artefacto evaluado.
 - Paper, blog tecnico, repositorio de codigo y demo: no disponibles.

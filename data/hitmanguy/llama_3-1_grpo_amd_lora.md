@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Hitmanguy/Llama_3.1_GRPO_AMD_Lora es un ajuste fino del modelo unsloth/Meta-Llama-3.1-8B-Instruct publicado por el usuario Hitmanguy en HuggingFace. Por el nombre del repositorio y las etiquetas declaradas (unsloth, trl, llama, text-generation-inference), se trata de un adaptador LoRA entrenado con la librería TRL sobre la infraestructura de Unsloth, presumiblemente mediante GRPO (Group Relative Policy Optimization) y sobre hardware AMD. Ni el nombre del repositorio ni la model card confirman de forma explícita esos dos últimos puntos, por lo que deben considerarse inferencias y no datos verificados.
+Hitmanguy/Llama_3.1_GRPO_AMD_Lora es un ajuste fino del modelo unsloth/Meta-Llama-3.1-8B-Instruct publicado por el usuario Hitmanguy en Hugging Face. Por el nombre del repositorio y las etiquetas declaradas (unsloth, trl, llama, text-generation-inference), se trata de un adaptador LoRA entrenado con la librería TRL sobre la infraestructura de Unsloth, presumiblemente mediante GRPO (Group Relative Policy Optimization) y sobre hardware AMD. Ni el nombre del repositorio ni la model card confirman de forma explícita esos dos últimos puntos, por lo que deben considerarse inferencias y no datos verificados.
 
 El modelo base es Llama 3.1 8B Instruct, un transformer decoder-only de 8.030 millones de parámetros desarrollado por Meta, con soporte nativo de tool calling y una ventana de contexto de 128.000 tokens. El adaptador hereda esas capacidades y la licencia apache-2.0 declarada por el autor, aunque el modelo subyacente está sujeto además a la Llama 3.1 Community License.
 
-La relevancia de esta ficha es limitada y debe enmarcarse con honestidad: el repositorio acumula 0 descargas y 0 likes, ocupa 0.0 GB según HuggingFace (lo que sugiere que podría contener únicamente el adaptador LoRA o incluso estar incompleto) y no publica resultados de benchmarks, hiperparámetros de entrenamiento ni detalles del dataset utilizado. Es, por tanto, un artefacto experimental de investigación más que un modelo listo para producción.
+La relevancia de esta ficha es limitada y debe enmarcarse con honestidad: el repositorio acumula 0 descargas y 0 likes, ocupa 0.0 GB según Hugging Face (lo que sugiere que podría contener únicamente el adaptador LoRA o incluso estar incompleto) y no publica resultados de benchmarks, hiperparámetros de entrenamiento ni detalles del dataset utilizado. Es, por tanto, un artefacto experimental de investigación más que un modelo listo para producción.
 
 ## Especificaciones técnicas
 
@@ -21,7 +21,7 @@ La relevancia de esta ficha es limitada y debe enmarcarse con honestidad: el rep
 | Licencia | apache-2.0 (el modelo base está además bajo Llama 3.1 Community License) |
 | Formato de pesos | safetensors |
 | Modelo base | unsloth/Meta-Llama-3.1-8B-Instruct |
-| Tamaño del repositorio | 0.0 GB según HuggingFace |
+| Tamaño del repositorio | 0.0 GB según Hugging Face |
 | Descargas / likes | 0 / 0 |
 | Fecha de creación | 2026-09-11 |
 
@@ -96,14 +96,14 @@ No se dispone de puntuaciones de benchmarks para el adaptador de Hitmanguy que p
 - Licencia: aunque el autor declara apache-2.0, el modelo derivado de Llama 3.1 sigue sujeto a la Llama 3.1 Community License, que exige mostrar la atribución "Built with Meta Llama 3", incluir una copia de la licencia y nombrar el modelo derivado con el prefijo "Llama 3.1". La licencia apache-2.0 declarada no exime de esas obligaciones.
 - Sin garantías de producción: no hay información sobre estabilidad, formato de plantilla de chat, o compatibilidad probada con servidores de inferencia.
 - Coste de contexto: llenar los 128.000 tokens requiere unos 16 GB adicionales de caché KV en FP16, lo que en la práctica limita el contexto útil en hardware de consumo.
-- Fecha de publicación anómala (2026) en los metadatos de HuggingFace, lo que puede indicar un error de registro o una subida de prueba.
+- Fecha de publicación anómala (2026) en los metadatos de Hugging Face, lo que puede indicar un error de registro o una subida de prueba.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Hitmanguy/Llama_3.1_GRPO_AMD_Lora
+- Modelo en Hugging Face: https://huggingface.co/Hitmanguy/Llama_3.1_GRPO_AMD_Lora
 - Modelo base: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Librería TRL de HuggingFace: https://github.com/huggingface/trl
+- Librería TRL de Hugging Face: https://github.com/huggingface/trl
 - Documentación de Llama 3.1 de Meta: https://ai.meta.com/blog/meta-llama-3-1/
 - Licencia Llama 3.1 Community License: https://llama.meta.com/llama3_1/license/
 

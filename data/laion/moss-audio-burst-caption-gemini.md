@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 - Inferencia en CPU: se realiza en float32, es mucho mas lenta y consume mas memoria; se necesitarian del orden de 36 GB de RAM para los pesos unicamente.
 - GPU recomendadas: A100 40 GB u 80 GB, H100 80 GB, L40S 48 GB, A6000 48 GB. En GPUs de 24 GB el modelo cabe en BF16 de forma ajustada (RTX 4090, RTX 3090).
 - GPU de consumo: si en 24 GB (RTX 4090, RTX 3090) con BF16. No cabe en GPUs de 16 GB con la ruta oficial, ya que no se publican cuantizaciones GGUF, GPTQ ni AWQ; tampoco hay ruta documentada de cuantizacion en 8 o 4 bits para esta arquitectura.
-- Opciones de despliegue: la ruta soportada es Transformers 4.57.1 con PEFT, usando los scripts incluidos (`download_base.py`, `inference.py`) y pesos safetensors. No se documenta soporte en vLLM, TGI, llama.cpp ni Ollama para esta arquitectura, y el pipeline de HuggingFace figura como no disponible.
+- Opciones de despliegue: la ruta soportada es Transformers 4.57.1 con PEFT, usando los scripts incluidos (`download_base.py`, `inference.py`) y pesos safetensors. No se documenta soporte en vLLM, TGI, llama.cpp ni Ollama para esta arquitectura, y el pipeline de Hugging Face figura como no disponible.
 - Almacenamiento: el repositorio del adaptador ocupa 0,3 GB; hay que anadir la descarga de los cuatro shards de pesos del modelo base, cuyo hash se verifica en el script de descarga.
 - Rendimiento de audio: la distribucion de adaptacion corresponde a clips completos de hasta 30 segundos; 30 segundos a 12,5 tokens por segundo generan unos 375 tokens de audio.
 - Latencia y throughput: no disponibles.

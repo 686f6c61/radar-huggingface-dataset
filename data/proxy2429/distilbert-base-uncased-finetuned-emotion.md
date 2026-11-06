@@ -91,6 +91,6 @@ El modelo de proxy2429 se diferencia del fine-tune de SST-2 en que aborda clasif
 
 ## Enlaces
 
-- [HuggingFace: proxy2429/distilbert-base-uncased-finetuned-emotion](https://huggingface.co/proxy2429/distilbert-base-uncased-finetuned-emotion)
-- [HuggingFace: distilbert-base-uncased (modelo base)](https://huggingface.co/distilbert/distilbert-base-uncased)
-- [HuggingFace: distilbert-base-uncased-finetuned-sst-2-english](https://huggingface.co/distilbert/distilbert-base-uncased-finetuned-sst-2-english)
+- [Hugging Face: proxy2429/distilbert-base-uncased-finetuned-emotion](https://huggingface.co/proxy2429/distilbert-base-uncased-finetuned-emotion)
+- [Hugging Face: distilbert-base-uncased (modelo base)](https://huggingface.co/distilbert/distilbert-base-uncased)
+- [Hugging Face: distilbert-base-uncased-finetuned-sst-2-english](https://huggingface.co/distilbert/distilbert-base-uncased-finetuned-sst-2-english)

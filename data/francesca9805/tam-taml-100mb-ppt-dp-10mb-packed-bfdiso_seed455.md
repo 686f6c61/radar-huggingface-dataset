@@ -24,7 +24,7 @@ La relevancia actual es limitada: no tiene descargas ni valoraciones, no publica
 | Metodo de ajuste | SFT con TRL 0.23.0 |
 | Libreria declarada | transformers |
 | Tamano del repositorio | 0,3 GB |
-| Fecha de creacion en HuggingFace | 30 de septiembre de 2026 |
+| Fecha de creacion en Hugging Face | 30 de septiembre de 2026 |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -48,7 +48,7 @@ El entrenamiento se realizo mediante SFT con TRL 0.23.0 sobre Transformers 4.56.
 - Pruebas de infraestructura de despliegue: por su tamano, es util para validar pipelines de TGI, endpoints compatibles o vLLM antes de escalar a modelos mayores, sin consumir GPU dedicada.
 - Generacion de texto de relleno en entornos de desarrollo: para poblar interfaces, tests de integracion o demos que necesitan texto generado sin coste de inferencia significativo.
 - Ajuste de hiperparametros y ablaciones: al caber en una sola GPU de consumo e incluso en CPU, permite ejecutar barridos completos de tasa de aprendizaje, semilla o volumen de datos en horas.
-- Educacion y docencia: ejemplo minimo y ejecutable de un flujo completo TRL + Transformers para explicar SFT, empaquetado de datos y publicacion en HuggingFace.
+- Educacion y docencia: ejemplo minimo y ejecutable de un flujo completo TRL + Transformers para explicar SFT, empaquetado de datos y publicacion en Hugging Face.
 - Analisis de sesgos y comportamiento en modelos pequenos: la existencia de multiples checkpoints con la misma receta y semillas distintas facilita medir la varianza entre ejecuciones.
 - Preprocesamiento o prototipado linguistico sobre tamil: generacion de borradores o normalizacion de texto cuando la calidad exigida es baja y el coste debe ser minimo.
 
@@ -91,7 +91,7 @@ Los unicos comparables directos identificables son los propios checkpoints herma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/tam-taml-100mb-ppt-Dp-10mb-packed-bfdiso_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/tam-taml-100mb-ppt-Dp-10mb-packed-bfdiso_seed455
 - Modelo base: https://huggingface.co/goldfish-models/tam_taml_100mb
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/36qqkqxn
 - Repositorio de TRL: https://github.com/huggingface/trl

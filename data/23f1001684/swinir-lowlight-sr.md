@@ -65,5 +65,5 @@ No disponible. No se han encontrado datos suficientes para comparar este modelo 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/23f1001684/swinir-lowlight-sr
+- Hugging Face: https://huggingface.co/23f1001684/swinir-lowlight-sr
 - Repositorio de SwinIR (referencia de arquitectura): https://github.com/JingyunLiang/SwinIR

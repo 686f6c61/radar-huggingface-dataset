@@ -78,7 +78,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jressler/cactus-classifier | no disponible (≈50 M estandar) | no aplica | 87,6 % accuracy, 0,874 macro F1 | apache-2.0 | HuggingFace |
+| jressler/cactus-classifier | no disponible (≈50 M estandar) | no aplica | 87,6 % accuracy, 0,874 macro F1 | apache-2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -96,7 +96,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jressler/cactus-classifier
+- Modelo en Hugging Face: https://huggingface.co/jressler/cactus-classifier
 - Codigo de entrenamiento, preparacion del dataset y exportacion: https://github.com/joeressler/cactus-classifier
 - Aplicacion de servidor (FastAPI y HTMX): https://github.com/joeressler/cactus-server
 

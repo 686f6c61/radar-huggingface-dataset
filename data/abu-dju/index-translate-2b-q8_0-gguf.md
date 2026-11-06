@@ -29,9 +29,9 @@ Lo unico verificable en esta ficha es el proceso de cuantizacion: el modelo orig
 
 ## Capacidades
 
-- Traduccion de texto: el pipeline declarado en HuggingFace es "translation", por lo que la funcion principal del modelo es traducir entre idiomas.
+- Traduccion de texto: el pipeline declarado en Hugging Face es "translation", por lo que la funcion principal del modelo es traducir entre idiomas.
 - Conversacion: la etiqueta conversacional sugiere que el modelo puede mantener intercambios de tipo dialogo, aunque no se detalla el formato de prompt ni las plantillas de chat.
-- Compatibilidad con endpoints: el tag endpoints_compatible indica que el artefacto puede desplegarse en endpoints de inferencia compatibles con el ecosistema de HuggingFace.
+- Compatibilidad con endpoints: el tag endpoints_compatible indica que el artefacto puede desplegarse en endpoints de inferencia compatibles con el ecosistema de Hugging Face.
 - Ejecucion local: al estar en GGUF, funciona con llama.cpp tanto por CLI como por servidor.
 - Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Abu-Dju/Index-Translate-2B-Q8_0-GGUF (este) | 1,94 B | No disponible | GGUF Q8_0 | Apache 2.0 | Publico en HuggingFace |
-| IndexTeam/Index-Translate-2B (modelo base) | 1,94 B | No disponible | No disponible en la informacion | No disponible en la informacion | Publico en HuggingFace |
+| Abu-Dju/Index-Translate-2B-Q8_0-GGUF (este) | 1,94 B | No disponible | GGUF Q8_0 | Apache 2.0 | Publico en Hugging Face |
+| IndexTeam/Index-Translate-2B (modelo base) | 1,94 B | No disponible | No disponible en la informacion | No disponible en la informacion | Publico en Hugging Face |
 | Otras alternativas de traduccion de tamano similar | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de rendimiento ni de especificaciones de terceros en la informacion proporcionada que permitan una comparacion cuantitativa fiable.
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento ni de especificaciones de terceros en la i
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Abu-Dju/Index-Translate-2B-Q8_0-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Abu-Dju/Index-Translate-2B-Q8_0-GGUF
 - Modelo base: https://huggingface.co/IndexTeam/Index-Translate-2B
 - Espacio GGUF-my-repo de ggml.ai: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio llama.cpp: https://github.com/ggerganov/llama.cpp

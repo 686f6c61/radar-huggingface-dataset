@@ -98,7 +98,7 @@ No se dispone de datos de benchmarks comunes entre estos modelos en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/juniorrios/cemig-lfm3-1.7b-nr
+- Modelo en Hugging Face: https://huggingface.co/juniorrios/cemig-lfm3-1.7b-nr
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Dataset de artefactos de recuperación: https://huggingface.co/datasets/juniorrios/cemig-nr-retrieval-assets
 - Script de inferencia: https://huggingface.co/juniorrios/cemig-lfm3-1.7b-nr/resolve/main/inference.py

@@ -98,6 +98,6 @@ Frente a alternativas externas, la model card menciona de forma cualitativa que 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/samudhan2003/Tiny-Spec-Bench
+- Repositorio en Hugging Face: https://huggingface.co/samudhan2003/Tiny-Spec-Bench
 - Resultados en bruto: fichero `spec_results.csv` dentro del repositorio (referenciado en la model card)
 - Paper, blog, repositorio de código o demo: no disponibles en la información proporcionada

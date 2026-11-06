@@ -84,7 +84,7 @@ El modelo se diferencia de Llama-3-8B-Instruct por su entrenamiento especifico e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amir5666/Hermes-2-Pro-Llama-3-8B
+- Modelo en Hugging Face: https://huggingface.co/amir5666/Hermes-2-Pro-Llama-3-8B
 - Repositorio oficial de Nous Research: https://huggingface.co/NousResearch/Hermes-2-Pro-Llama-3-8B
 - Repositorio de function calling: https://github.com/NousResearch/Hermes-Function-Calling
 - Cuantizacion AWQ comunitaria: https://huggingface.co/solidrust/Hermes-2-Pro-Llama-3-8B-AWQ

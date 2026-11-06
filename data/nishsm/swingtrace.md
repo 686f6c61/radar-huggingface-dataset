@@ -107,7 +107,7 @@ No se han proporcionado datos de benchmarks de modelos comparables en la informa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nishsm/swingtrace
+- Modelo en Hugging Face: https://huggingface.co/nishsm/swingtrace
 - Repositorio de codigo en GitHub: https://github.com/nishsm/swingtrace
 - README del proyecto en GitHub: https://github.com/nishsm/swingtrace/blob/main/README.md
 - Notebook Colab de inicio rapido: https://colab.research.google.com/github/nishsm/swingtrace/blob/main/notebooks/swingtrace_quickstart.ipynb

@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| cyttic/hmt-trocrctc-elastic1-s42 | 87,3 M | no disponible | MIT | HuggingFace |
-| TrOCR base (Microsoft) | ~334 M | no disponible | MIT | HuggingFace |
+| cyttic/hmt-trocrctc-elastic1-s42 | 87,3 M | no disponible | MIT | Hugging Face |
+| TrOCR base (Microsoft) | ~334 M | no disponible | MIT | Hugging Face |
 | Modelos HTR hebreo específicos | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparativo con alternativas en la información proporcionada.
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativo con alternativas en la informa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cyttic/hmt-trocrctc-elastic1-s42
+- Hugging Face: https://huggingface.co/cyttic/hmt-trocrctc-elastic1-s42
 - Dataset de entrenamiento: `cyttic/hhd-optionb-split` (referenciado en la model card)
 - Archivo de resultados: `results.json` (incluido en el repositorio del modelo)
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la información disponible.

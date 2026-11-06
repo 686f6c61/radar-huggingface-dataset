@@ -64,7 +64,7 @@ No disponible. Este repositorio no es comparable con modelos de comprensión de 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/darrengunaw/video-understanding-notebook
+- Repositorio de Hugging Face: https://huggingface.co/darrengunaw/video-understanding-notebook
 - Notebook de video understanding con Gemini (referencia externa): https://colab.research.google.com/github/google-gemini/cookbook/blob/main/quickstarts/Video_understanding.ipynb
 - Notebook de video understanding con Qwen2.5-VL (referencia externa): https://colab.research.google.com/github/QwenLM/Qwen2.5-VL/blob/main/cookbooks/video_understanding.ipynb
 - Documentación de Omni-R1 sobre video understanding (referencia externa): https://deepwiki.com/aim-uofa/Omni-R1/5.1-video-understanding-notebook

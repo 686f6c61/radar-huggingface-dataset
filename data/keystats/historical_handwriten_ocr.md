@@ -4,7 +4,7 @@
 
 El modelo `keystats/historical_handwriten_ocr` es un sistema de visión-lenguaje (image-text-to-text) diseñado para la transcripción de escritura manuscrita histórica. Desarrollado por el usuario keystats, el modelo se presenta como una herramienta especializada en OCR (reconocimiento óptico de caracteres) aplicado a documentos antiguos, una tarea de gran relevancia para la digitalización de archivos históricos, la investigación genealógica y la preservación del patrimonio cultural. Aunque la model card oficial no proporciona detalles técnicos, los metadatos del repositorio indican que se basa en la arquitectura Qwen2.5-VL, con aproximadamente 8.290 millones de parámetros, lo que lo sitúa en la gama de modelos multimodales de tamaño medio.
 
-El modelo se distribuye en formato safetensors y está pensado para ser utilizado con la librería transformers de HuggingFace. Su pipeline de image-text-to-text permite procesar imágenes de manuscritos y generar texto transcrito, con potencial para integrarse en flujos de trabajo de digitalización documental. La ausencia de información sobre licencia, idiomas y datos de entrenamiento limita su evaluación, pero su especialización en escritura histórica lo convierte en una opción a considerar para proyectos de OCR patrimonial.
+El modelo se distribuye en formato safetensors y está pensado para ser utilizado con la librería transformers de Hugging Face. Su pipeline de image-text-to-text permite procesar imágenes de manuscritos y generar texto transcrito, con potencial para integrarse en flujos de trabajo de digitalización documental. La ausencia de información sobre licencia, idiomas y datos de entrenamiento limita su evaluación, pero su especialización en escritura histórica lo convierte en una opción a considerar para proyectos de OCR patrimonial.
 
 ## Especificaciones tecnicas
 
@@ -67,6 +67,6 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/keystats/historical_handwriten_ocr
+- Repositorio Hugging Face: https://huggingface.co/keystats/historical_handwriten_ocr
 - Modelo relacionado del mismo autor: https://huggingface.co/keystats/handwriten_ocr
 - Modelo relacionado del mismo autor: https://huggingface.co/keystats/historical_ocr

@@ -104,7 +104,7 @@ La comparativa se limita a los checkpoints del mismo estudio, ya que son los uni
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tinyrolls/Llama-3.1-8B-Instruct-RoleVerse-SFT-DPO
+- Modelo en Hugging Face: https://huggingface.co/tinyrolls/Llama-3.1-8B-Instruct-RoleVerse-SFT-DPO
 - Dataset RoleVerse: https://huggingface.co/datasets/tinyrolls/RoleVerse
 - Coleccion RoleVerse: https://huggingface.co/collections/tinyrolls/roleverse-6ae2cab39027be0451529147
 - Codigo del proyecto: https://github.com/tinyrolls/RoleVerse

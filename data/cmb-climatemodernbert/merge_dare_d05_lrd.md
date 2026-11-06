@@ -27,7 +27,7 @@ El entrenamiento se realizo en dos fases sobre un corpus climático de 6,42 mil 
 - **Fase 1 (extension de contexto):** 3 epocas con tasa de aprendizaje constante de 3e-4, batch global de 576, longitud de secuencia de 8 192, enmascaramiento MLM del 30 %, optimizador StableAdamW y precision BF16.
 - **Fase 2 (especializacion LRD):** 3 epocas adicionales con un programa de decrecimiento `1 - √t` desde LR 3e-4 y factor final de 1e-3.
 
-El corpus se compone de tres subconjuntos: textos academicos (≈1,28 B tokens, articulos revisados por pares, noticias climáticas de ClimateNews 2000-2022, preprints de arXiv y manuales), web climática (≈5 B tokens, filtrada de FineWeb-Edu con un filtro de 166 terminos y un clasificador FastText) y datos sinteticos (≈0,14 B tokens, generados por LLM a partir de fragmentos del dominio en tres estilos comunicativos). El entrenamiento se realizo con 4 GPU NVIDIA A100 usando MosaicML Composer, y los checkpoints finales se convirtieron al formato HuggingFace Transformers.
+El corpus se compone de tres subconjuntos: textos academicos (≈1,28 B tokens, articulos revisados por pares, noticias climáticas de ClimateNews 2000-2022, preprints de arXiv y manuales), web climática (≈5 B tokens, filtrada de FineWeb-Edu con un filtro de 166 terminos y un clasificador FastText) y datos sinteticos (≈0,14 B tokens, generados por LLM a partir de fragmentos del dominio en tres estilos comunicativos). El entrenamiento se realizo con 4 GPU NVIDIA A100 usando MosaicML Composer, y los checkpoints finales se convirtieron al formato Hugging Face Transformers.
 
 La fusion se realizo con mergekit usando el metodo DARE-TIES con un drop ratio de 0,5, combinando tres modelos especializados: `A_CX_LRD` (academico), `S_CX_LRD` (sintetico) y `CMB_FWEdu_V2_CX_LRD` (web climatica). Los pesos son identicos al repositorio original `sraj/DARE_TIES_D05_CMB_MARK_CX_LRD_CMB_FWEdu_V2_CX_LRD_CMB_WX_SYN_CX_LRD`.
 
@@ -67,16 +67,16 @@ No se han publicado resultados desglosados por benchmark en la informacion dispo
 - **VRAM estimada para inferencia:** con 149,6 millones de parametros, en precision FP32 el peso ocupa ≈600 MB; en FP16 ≈300 MB. Con el tokenizador y activaciones para secuencias de 8 192 tokens, se recomienda al menos 2 GB de VRAM para inferencia comoda.
 - **GPU recomendadas:** cabe en cualquier GPU consumer moderna (RTX 3060, RTX 4060, etc.) y en GPUs de datacenter como A100 o H100 sin problemas.
 - **Compatibilidad con consumer GPU:** sí, ampliamente compatible. Incluso en CPU es viable para inferencia por lotes pequenos.
-- **Opciones de despliegue:** al ser un modelo de Transformers, puede servirse con HuggingFace Inference Endpoints, TGI (para embeddings), vLLM (soporta encoders para clasificacion), o exportarse a ONNX para inferencia en CPU/GPU ligera. No es compatible con llama.cpp (orientado a modelos generativos).
+- **Opciones de despliegue:** al ser un modelo de Transformers, puede servirse con Hugging Face Inference Endpoints, TGI (para embeddings), vLLM (soporta encoders para clasificacion), o exportarse a ONNX para inferencia en CPU/GPU ligera. No es compatible con llama.cpp (orientado a modelos generativos).
 - **Latencia y throughput:** no se han publicado mediciones especificas. Para un modelo de este tamano, la latencia tipica en GPU consumer es de pocos milisegundos por secuencia de longitud media (256-512 tokens).
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Promedio F1 (clima) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| **Merge_DARE_D05_LRD** | 149,6 M | 8 192 | 74,7 | No disponible | HuggingFace |
-| ModernBERT-Base | 149,6 M | 8 192 | 73,5 | Apache 2.0 | HuggingFace |
-| ClimateBERT (RoBERTa) | 125 M | 512 | 72,1 | MIT | HuggingFace |
+| **Merge_DARE_D05_LRD** | 149,6 M | 8 192 | 74,7 | No disponible | Hugging Face |
+| ModernBERT-Base | 149,6 M | 8 192 | 73,5 | Apache 2.0 | Hugging Face |
+| ClimateBERT (RoBERTa) | 125 M | 512 | 72,1 | MIT | Hugging Face |
 
 El modelo supera a sus dos alternativas principales en el promedio de benchmarks climáticos, aunque con una ventaja modesta sobre ModernBERT-Base. ClimateBERT tiene un contexto mucho menor (512 tokens) y una arquitectura mas antigua (RoBERTa). La licencia no disponible del modelo fusionado es una desventaja frente a las alternativas con licencias permisivas.
 
@@ -93,7 +93,7 @@ El modelo supera a sus dos alternativas principales en el promedio de benchmarks
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/CMB-ClimateModernBERT/Merge_DARE_D05_LRD
+- Repositorio Hugging Face: https://huggingface.co/CMB-ClimateModernBERT/Merge_DARE_D05_LRD
 - Repositorio original con pesos identicos: https://huggingface.co/sraj/DARE_TIES_D05_CMB_MARK_CX_LRD_CMB_FWEdu_V2_CX_LRD_CMB_WX_SYN_CX_LRD
 - Modelo base: https://huggingface.co/answerdotai/ModernBERT-base
 - Modelo preferido (Merge_Soup_LRD): https://huggingface.co/CMB-ClimateModernBERT/Merge_Soup_LRD

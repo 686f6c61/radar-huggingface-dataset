@@ -91,7 +91,7 @@ La diferencia práctica más relevante entre este repositorio y el de bartowski 
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/axteam/Qwen3.8-27B-GGUF
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/axteam/Qwen3.8-27B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.8-27B/blob/main/LICENSE
 - Repositorio GitHub oficial del modelo: https://github.com/AlibabaCloud-Official/Qwen3.8-27B

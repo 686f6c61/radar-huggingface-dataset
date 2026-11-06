@@ -68,8 +68,8 @@ No existen muchos modelos públicos especializados en verificación de pagos de 
 
 | Modelo | Parametros | Contexto | Verdict accuracy (EleriBench) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| **eleri-1.5b** | 1.5B + LoRA | No especificado | 0,972 | Apache 2.0 | HuggingFace |
-| Qwen2.5-1.5B-Instruct (base, sin fine-tuning) | 1.5B | 32K (del base) | No evaluado en EleriBench | Apache 2.0 | HuggingFace |
+| **eleri-1.5b** | 1.5B + LoRA | No especificado | 0,972 | Apache 2.0 | Hugging Face |
+| Qwen2.5-1.5B-Instruct (base, sin fine-tuning) | 1.5B | 32K (del base) | No evaluado en EleriBench | Apache 2.0 | Hugging Face |
 | claude-haiku-4-5 (few-shot) | No publico | No publico | 0,808 | Propietaria | API |
 | gpt-4o-mini (few-shot) | No publico | No publico | 0,682 | Propietaria | API |
 
@@ -87,7 +87,7 @@ La ventaja de Eleri-1.5B frente a los modelos propietarios es su coste significa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/theakomolafe/eleri-1.5b
+- Modelo en Hugging Face: https://huggingface.co/theakomolafe/eleri-1.5b
 - Repositorio de EleriBench (benchmark y harness de evaluación): https://github.com/Olamide1/eleribench
 - Modelo base Qwen2.5-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Cuantización 4-bit de unsloth usada en entrenamiento: https://huggingface.co/unsloth/qwen2.5-1.5b-instruct-unsloth-bnb-4bit

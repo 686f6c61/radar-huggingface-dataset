@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `models4world/delta-mesa-61` es un adaptador LoRA publicado por el usuario `models4world` en HuggingFace, diseñado para la generación de texto conversacional. Se presenta como un adaptador PEFT (Parameter-Efficient Fine-Tuning) que se aplica sobre el modelo base `models4world/maple-signal-64`, también publicado por el mismo autor. El repositorio tiene un tamaño de 1,9 GB y los pesos se distribuyen en formato safetensors.
+El modelo `models4world/delta-mesa-61` es un adaptador LoRA publicado por el usuario `models4world` en Hugging Face, diseñado para la generación de texto conversacional. Se presenta como un adaptador PEFT (Parameter-Efficient Fine-Tuning) que se aplica sobre el modelo base `models4world/maple-signal-64`, también publicado por el mismo autor. El repositorio tiene un tamaño de 1,9 GB y los pesos se distribuyen en formato safetensors.
 
-La ficha del modelo (model card) está prácticamente vacía: todos los campos relevantes (descripción, arquitectura, datos de entrenamiento, licencia, idiomas, evaluación) aparecen marcados como "[More Information Needed]". Esto significa que no se dispone de información pública sobre la arquitectura subyacente, el número de parámetros, la longitud de contexto ni el rendimiento del modelo. El modelo no registra descargas ni valoraciones en HuggingFace, lo que sugiere que es una publicación reciente o de carácter experimental.
+La ficha del modelo (model card) está prácticamente vacía: todos los campos relevantes (descripción, arquitectura, datos de entrenamiento, licencia, idiomas, evaluación) aparecen marcados como "[More Information Needed]". Esto significa que no se dispone de información pública sobre la arquitectura subyacente, el número de parámetros, la longitud de contexto ni el rendimiento del modelo. El modelo no registra descargas ni valoraciones en Hugging Face, lo que sugiere que es una publicación reciente o de carácter experimental.
 
 ## Especificaciones tecnicas
 
@@ -26,7 +26,7 @@ La información disponible indica que `delta-mesa-61` es un adaptador LoRA entre
 ## Capacidades
 
 - Generación de texto conversacional: el tag `conversational` indica que el adaptador está orientado a tareas de diálogo, aunque no se documentan capacidades específicas.
-- Integración con transformers: al ser un adaptador PEFT, se puede cargar con la API estándar de HuggingFace Transformers mediante `PeftModel.from_pretrained()`.
+- Integración con transformers: al ser un adaptador PEFT, se puede cargar con la API estándar de Hugging Face Transformers mediante `PeftModel.from_pretrained()`.
 - No se documentan capacidades adicionales como tool calling, razonamiento multi-paso, visión, audio o modo de pensamiento.
 
 ## Casos de uso
@@ -65,12 +65,12 @@ No disponible. No se conocen modelos comparables publicados por el mismo autor n
 - Riesgo de alucinación: al no haber evaluación publicada, no se puede valorar la fiabilidad de las respuestas generadas.
 - Sin métricas de rendimiento: no hay benchmarks que permitan evaluar la calidad del modelo antes de integrarlo en producción.
 - Procedencia desconocida: no se documenta el dataset de entrenamiento, lo que impide evaluar posibles sesgos en los datos.
-- Sin comunidad ni adopción: cero descargas y cero valoraciones en HuggingFace, lo que indica que no hay validación externa del modelo.
+- Sin comunidad ni adopción: cero descargas y cero valoraciones en Hugging Face, lo que indica que no hay validación externa del modelo.
 - No apto para producción sin evaluación previa: cualquier despliegue en entornos reales requiere pruebas exhaustivas propias.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/models4world/delta-mesa-61
+- Repositorio Hugging Face: https://huggingface.co/models4world/delta-mesa-61
 - Perfil del autor: https://huggingface.co/models4world
 - Modelo base: https://huggingface.co/models4world/maple-signal-64
 - Paper citado en la model card (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700

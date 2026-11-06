@@ -4,7 +4,7 @@
 
 chioma-llama31-8b-rlhf-v2 es un adaptador PEFT publicado por el usuario u organizacion AfriMentor sobre el modelo base meta-llama/Llama-3.1-8B-Instruct. El repositorio ocupa 0,1 GB, un tamano coherente con un adaptador LoRA en lugar de un modelo completo, y se distribuye con la libreria PEFT (version declarada 0.14.0) y pesos en safetensors. El sufijo "rlhf" del nombre sugiere un ajuste con aprendizaje por refuerzo a partir de preferencias humanas, pero la model card no lo confirma ni aporta detalles del procedimiento.
 
-El modelo no resuelve un problema declarado de forma explicita: la model card es la plantilla vacia de HuggingFace, con todos los apartados marcados como "[More Information Needed]". No hay informacion sobre datos de entrenamiento, hiperparametros, evaluacion, idiomas objetivo, licencia ni uso previsto. Las unicas senales sobre su proposito son el nombre ("chioma" es un nombre de pila de origen igbo) y el nombre de la organizacion ("AfriMentor"), que apuntan a un posible enfoque en lenguas africanas o en tareas de orientacion y tutoria, si bien esto es una inferencia no confirmada por el autor.
+El modelo no resuelve un problema declarado de forma explicita: la model card es la plantilla vacia de Hugging Face, con todos los apartados marcados como "[More Information Needed]". No hay informacion sobre datos de entrenamiento, hiperparametros, evaluacion, idiomas objetivo, licencia ni uso previsto. Las unicas senales sobre su proposito son el nombre ("chioma" es un nombre de pila de origen igbo) y el nombre de la organizacion ("AfriMentor"), que apuntan a un posible enfoque en lenguas africanas o en tareas de orientacion y tutoria, si bien esto es una inferencia no confirmada por el autor.
 
 Su relevancia actual es limitada y esencialmente documental: se trata de un ejemplo de adaptador comunitario sin validacion (0 descargas y 0 likes en el momento de la consulta), sin resultados de benchmarks y sin licencia declarada en el repositorio. Cualquier uso en produccion exigiria una evaluacion propia y la verificacion previa de las condiciones de la Llama 3.1 Community License, que se hereda del modelo base.
 
@@ -23,7 +23,7 @@ Su relevancia actual es limitada y esencialmente documental: se trata de un ejem
 | Tamano del repositorio | 0,1 GB |
 | Libreria y version | PEFT 0.14.0 |
 | Modelo base | meta-llama/Llama-3.1-8B-Instruct |
-| Fecha de creacion | 2026-10-10 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-10-10 (segun metadatos de Hugging Face) |
 | Ultima actualizacion | 2026-10-10 |
 
 ## Arquitectura y entrenamiento
@@ -73,10 +73,10 @@ La comparativa se realiza frente al modelo base y a otras alternativas instruct 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| chioma-llama31-8b-rlhf-v2 | 8B (adaptador sobre el base) | no especificado; el base soporta 128 000 tokens | no disponible en el repositorio | HuggingFace, 0 descargas, sin documentacion |
-| meta-llama/Llama-3.1-8B-Instruct | ~8,03B | 128 000 tokens | Llama 3.1 Community License | HuggingFace, ampliamente desplegado y documentado |
-| Qwen2.5-7B-Instruct | ~7,6B | 128 000 tokens | Apache 2.0 | HuggingFace, con soporte multilingue declarado de 29 idiomas |
-| Mistral-7B-Instruct-v0.3 | ~7,3B | 32 000 tokens | Apache 2.0 | HuggingFace, con tokenizador y tool calling |
+| chioma-llama31-8b-rlhf-v2 | 8B (adaptador sobre el base) | no especificado; el base soporta 128 000 tokens | no disponible en el repositorio | Hugging Face, 0 descargas, sin documentacion |
+| meta-llama/Llama-3.1-8B-Instruct | ~8,03B | 128 000 tokens | Llama 3.1 Community License | Hugging Face, ampliamente desplegado y documentado |
+| Qwen2.5-7B-Instruct | ~7,6B | 128 000 tokens | Apache 2.0 | Hugging Face, con soporte multilingue declarado de 29 idiomas |
+| Mistral-7B-Instruct-v0.3 | ~7,3B | 32 000 tokens | Apache 2.0 | Hugging Face, con tokenizador y tool calling |
 
 Diferencias clave: frente a las alternativas con licencia Apache 2.0, este adaptador no declara licencia, lo que anade incertidumbre juridica sumada a las condiciones de la Llama 3.1 Community License. Frente al propio modelo base, carece de documentacion, evaluacion y trazas de uso, de modo que no hay evidencia de mejora alguna.
 
@@ -94,7 +94,7 @@ Diferencias clave: frente a las alternativas con licencia Apache 2.0, este adapt
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AfriMentor/chioma-llama31-8b-rlhf-v2
+- Modelo en Hugging Face: https://huggingface.co/AfriMentor/chioma-llama31-8b-rlhf-v2
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Licencia del modelo base (Llama 3.1 Community License): https://llama.meta.com/llama3_1/license/
 - Libreria PEFT: https://huggingface.co/docs/peft/index

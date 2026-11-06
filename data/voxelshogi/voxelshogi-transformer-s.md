@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Voxelshogi-transformer-s es un modelo transformer de pequeno tamano (5.021.064 parametros) desarrollado por el usuario voxelshogi y publicado en HuggingFace bajo licencia Apache 2.0. El modelo esta orientado a la investigacion en shogi tridimensional (three-dimensional-shogi), una variante del shogi japones jugada en un tablero 3D, y se distribuye en formatos ONNX y safetensors. El repositorio fue creado el 29 de octubre de 2026 y, en el momento de la consulta, no registra descargas ni likes.
+Voxelshogi-transformer-s es un modelo transformer de pequeno tamano (5.021.064 parametros) desarrollado por el usuario voxelshogi y publicado en Hugging Face bajo licencia Apache 2.0. El modelo esta orientado a la investigacion en shogi tridimensional (three-dimensional-shogi), una variante del shogi japones jugada en un tablero 3D, y se distribuye en formatos ONNX y safetensors. El repositorio fue creado el 29 de octubre de 2026 y, en el momento de la consulta, no registra descargas ni likes.
 
-El modelo se presenta como una pieza de investigacion mas que como un modelo de proposito general: no tiene pipeline declarado, no especifica idiomas soportados y su acceso esta restringido (gated), requiriendo aceptar condiciones en HuggingFace antes de la descarga. El entrenamiento se asocia al dataset `voxelshogi/voxelshogi-synthetic-v1`, lo que sugiere un corpus sintetico generado especificamente para esta variante de shogi.
+El modelo se presenta como una pieza de investigacion mas que como un modelo de proposito general: no tiene pipeline declarado, no especifica idiomas soportados y su acceso esta restringido (gated), requiriendo aceptar condiciones en Hugging Face antes de la descarga. El entrenamiento se asocia al dataset `voxelshogi/voxelshogi-synthetic-v1`, lo que sugiere un corpus sintetico generado especificamente para esta variante de shogi.
 
 Por su tamano y su enfoque de dominio especifico, no es comparable a los LLM de proposito general, sino a modelos especializados en juegos de tablero o en tareas de razonamiento estructurado. La informacion publica disponible es muy limitada, por lo que muchos de los apartados de esta ficha se marcan como no disponibles.
 
@@ -63,7 +63,7 @@ No disponible. No se identifican en la informacion proporcionada modelos compara
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace antes de la descarga.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face antes de la descarga.
 - Documentacion muy escasa: sin pipeline, idiomas, contexto ni detalles de entrenamiento, lo que dificulta evaluar su idoneidad para produccion.
 - Dominio muy especifico (shogi 3D): no es un modelo de proposito general y no debe usarse para tareas de NLP convencionales.
 - Riesgo de alucinacion y de comportamiento impredecible fuera de su dominio de entrenamiento.
@@ -73,5 +73,5 @@ No disponible. No se identifican en la informacion proporcionada modelos compara
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/voxelshogi/voxelshogi-transformer-s
+- Hugging Face: https://huggingface.co/voxelshogi/voxelshogi-transformer-s
 - Dataset asociado: https://huggingface.co/datasets/voxelshogi/voxelshogi-synthetic-v1 (referenciado en los tags; no verificado)

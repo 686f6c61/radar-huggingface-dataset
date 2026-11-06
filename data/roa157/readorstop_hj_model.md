@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ROA157/readorstop_hj_model` es una política de robótica basada en ACT (Action Chunking with Transformers), un método de aprendizaje por imitación que predice fragmentos cortos de acciones en lugar de pasos individuales. Lo publica el usuario ROA157 en HuggingFace Hub mediante la librería LeRobot de HuggingFace, y está entrenado sobre un dataset propio de 50 episodios teleoperados (71.961 fotogramas a 30 FPS) para un robot de tipo `omx_follower` equipado con tres cámaras (muñeca, lateral y superior).
+`ROA157/readorstop_hj_model` es una política de robótica basada en ACT (Action Chunking with Transformers), un método de aprendizaje por imitación que predice fragmentos cortos de acciones en lugar de pasos individuales. Lo publica el usuario ROA157 en Hugging Face Hub mediante la librería LeRobot de Hugging Face, y está entrenado sobre un dataset propio de 50 episodios teleoperados (71.961 fotogramas a 30 FPS) para un robot de tipo `omx_follower` equipado con tres cámaras (muñeca, lateral y superior).
 
 El modelo no es un LLM ni un modelo de lenguaje: es un controlador visuomotor de aproximadamente 51,7 millones de parámetros (pesos en safetensors, 0,2 GB) que consume el estado articular de 6 dimensiones y tres imágenes RGB de 480x640, y emite un vector de acción de 6 dimensiones. Su relevancia es la de un ejemplo práctico y reproducible de entrenamiento de políticas con LeRobot: arquitectura ACT, licencia Apache 2.0 y un pipeline completo de entrenamiento e inferencia documentado.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `ROA157/readorstop_hj_model` (ACT) | 51,7 M | Estado 6 dims + 3 imagenes 480x640 | Control `omx_follower` | Apache 2.0 | HuggingFace (0 descargas) |
-| Otras políticas ACT en LeRobot Hub | no disponible | no disponible | Manipulación genérica | variable | HuggingFace |
-| Políticas Diffusion Policy (LeRobot) | no disponible | no disponible | Manipulación genérica | variable | HuggingFace |
-| Políticas VLA tipo pi0 / OpenVLA | no disponible | no disponible | Manipulación generalista | variable | HuggingFace |
+| `ROA157/readorstop_hj_model` (ACT) | 51,7 M | Estado 6 dims + 3 imagenes 480x640 | Control `omx_follower` | Apache 2.0 | Hugging Face (0 descargas) |
+| Otras políticas ACT en LeRobot Hub | no disponible | no disponible | Manipulación genérica | variable | Hugging Face |
+| Políticas Diffusion Policy (LeRobot) | no disponible | no disponible | Manipulación genérica | variable | Hugging Face |
+| Políticas VLA tipo pi0 / OpenVLA | no disponible | no disponible | Manipulación generalista | variable | Hugging Face |
 
 No se dispone de datos comparativos de rendimiento entre este modelo y alternativas de la misma categoría en la información proporcionada.
 
@@ -86,7 +86,7 @@ No se dispone de datos comparativos de rendimiento entre este modelo y alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ROA157/readorstop_hj_model
+- Modelo en Hugging Face: https://huggingface.co/ROA157/readorstop_hj_model
 - Dataset de entrenamiento: https://huggingface.co/datasets/ROA157/readorstop_hj
 - Paper ACT: https://huggingface.co/papers/2304.13705
 - Guía ACT de LeRobot: https://huggingface.co/docs/lerobot/main/en/act

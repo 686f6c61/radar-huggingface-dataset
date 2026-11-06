@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Mellum2.1-12B-A2.5B-Thinking-DevSec (este) | ~12B totales / ~2.5B activos + LoRA | 8192 (entrenamiento) | Código, DevSec, agentes SWE, frontend | Apache 2.0 | Adaptador PEFT; requiere base fijado |
-| JetBrains/Mellum2.1-12B-A2.5B-Thinking (base) | ~12B totales / ~2.5B activos | no disponible | Código y razonamiento general | no disponible en la información | Modelo base en HuggingFace |
+| JetBrains/Mellum2.1-12B-A2.5B-Thinking (base) | ~12B totales / ~2.5B activos | no disponible | Código y razonamiento general | no disponible en la información | Modelo base en Hugging Face |
 | Alternativas de código de ~7-14B | no disponible | no disponible | Código | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparativo entre este adaptador y otras alternativas; la model card no incluye comparaciones con modelos de la competencia.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ove3-dedup-185m-organelle-ani95-seed4321 es un checkpoint de investigación publicado por gabe-adib en HuggingFace. Se trata de una de las ramas de un experimento A/B sobre deduplicación de datos: un modelo MoE con arquitectura denominada `kimi_linear`, 185M de parámetros activos y entrenamiento sobre genomas de orgánulos deduplicados al 95 % de identidad. El tamaño total de parámetros y la longitud de contexto no se documentan.
+ove3-dedup-185m-organelle-ani95-seed4321 es un checkpoint de investigación publicado por gabe-adib en Hugging Face. Se trata de una de las ramas de un experimento A/B sobre deduplicación de datos: un modelo MoE con arquitectura denominada `kimi_linear`, 185M de parámetros activos y entrenamiento sobre genomas de orgánulos deduplicados al 95 % de identidad. El tamaño total de parámetros y la longitud de contexto no se documentan.
 
 El interés del modelo es metodológico. Aísla el efecto de eliminar secuencias casi duplicadas del pool de entrenamiento —14.788 genomas, mediante MinHash y centroide voraz— manteniendo la misma receta que la celda IsoFLOP de 185M: mismos datos, LR, batch y pasos. Está pensado para estudiar scaling con datos limitados, no para uso conversacional ni para producción directa.
 
@@ -26,7 +26,7 @@ El checkpoint corresponde al paso `best_1`, iteración 18.810, con pérdida de v
 | Pérdida de validación | 1,0892 |
 | Pérdida held-out | 1,1818 nats/char, ponderada sobre 9 dominios |
 | Tamaño del repositorio | 28,9 GB |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 
 ## Arquitectura y entrenamiento
 
@@ -84,7 +84,7 @@ No se dispone de benchmarks comparativos con alternativas externas en la informa
 
 | Modelo | Parámetros activos | Tokens únicos | Épocas | Contexto | Licencia | Disponibilidad |
 |---|---:|---:|---:|---|---|---|
-| Este run, dedup 95 %, semilla 4321 | 185M | no disponible por run; estudio: 30B o 120B | no disponible por run; estudio: 1-8 | no disponible | no disponible | checkpoint Megatron en HuggingFace |
+| Este run, dedup 95 %, semilla 4321 | 185M | no disponible por run; estudio: 30B o 120B | no disponible por run; estudio: 1-8 | no disponible | no disponible | checkpoint Megatron en Hugging Face |
 | Otra celda ove3 | 61M | estudio: 30B o 120B | estudio: 1-8 | no disponible | no disponible | colección ove3 |
 | Otra celda ove3 | 440M | estudio: 30B o 120B | estudio: 1-8 | no disponible | no disponible | colección ove3 |
 
@@ -106,5 +106,5 @@ No se han encontrado en la búsqueda alternativas externas con datos verificable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gabe-adib/ove3-dedup-185m-organelle-ani95-seed4321
+- Modelo en Hugging Face: https://huggingface.co/gabe-adib/ove3-dedup-185m-organelle-ani95-seed4321
 - Colección del estudio ove3: https://huggingface.co/collections/gabe-adib/ove3-data-constrained-scaling-study

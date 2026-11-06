@@ -1,7 +1,7 @@
 # Groww/sectest
 
 ## Resumen
-El repositorio `Groww/sectest` es un modelo alojado en HuggingFace publicado por la organización Groww bajo licencia Apache 2.0. Según la información disponible, se trata de una publicación mínima sin descripción técnica: la model card solo contiene la licencia y no incluye arquitectura, tamaño, contexto, idiomas ni instrucciones de uso.
+El repositorio `Groww/sectest` es un modelo alojado en Hugging Face publicado por la organización Groww bajo licencia Apache 2.0. Según la información disponible, se trata de una publicación mínima sin descripción técnica: la model card solo contiene la licencia y no incluye arquitectura, tamaño, contexto, idiomas ni instrucciones de uso.
 
 Los metadatos indican que el repositorio fue creado el 9 de septiembre de 2026 y no registra descargas ni reacciones al momento de la consulta. No se han identificado páginas, papers ni documentación externa que describan el modelo. Por ello, la utilidad y aplicabilidad del modelo no pueden evaluarse a partir de la información pública.
 
@@ -50,4 +50,4 @@ No disponible. No se han identificado modelos comparables en la documentación p
 - Se recomienda no desplegar el modelo sin antes obtener información adicional del autor.
 
 ## Enlaces
-- [HuggingFace: Groww/sectest](https://huggingface.co/Groww/sectest)
+- [Hugging Face: Groww/sectest](https://huggingface.co/Groww/sectest)

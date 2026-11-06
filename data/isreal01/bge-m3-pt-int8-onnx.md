@@ -98,7 +98,7 @@ La comparación con MiniLM u otros encoders pequeños es cualitativa: no se disp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/isreal01/bge-m3-pt-int8-onnx
+- Modelo en Hugging Face: https://huggingface.co/isreal01/bge-m3-pt-int8-onnx
 - Modelo base BGE-M3: https://huggingface.co/BAAI/bge-m3
 - Exportación ONNX de origen: https://huggingface.co/newtechstudio/bge-m3-3head
 - Repositorio de la herramienta: https://github.com/Ex-rael/Comparativo-Tributario

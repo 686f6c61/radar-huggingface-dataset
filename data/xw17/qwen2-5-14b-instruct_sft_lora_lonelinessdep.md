@@ -2,7 +2,7 @@
 
 ## Resumen
 
-xw17/Qwen2.5-14B-Instruct_SFT_lora_lonelinessdep es un ajuste fino por LoRA (Supervised Fine-Tuning) sobre el modelo base Qwen2.5-14B-Instruct, publicado en HuggingFace por el usuario xw17. El propio identificador del repositorio indica la receta: modelo base Qwen2.5 de 14B en su variante Instruct, ajuste supervisado con LoRA y un conjunto de datos cuyo nombre sugiere temática de soledad y depresión ("lonelinessdep"). No se trata, por tanto, de un modelo entrenado desde cero, sino de un adaptador especializado sobre un modelo denso ya existente.
+xw17/Qwen2.5-14B-Instruct_SFT_lora_lonelinessdep es un ajuste fino por LoRA (Supervised Fine-Tuning) sobre el modelo base Qwen2.5-14B-Instruct, publicado en Hugging Face por el usuario xw17. El propio identificador del repositorio indica la receta: modelo base Qwen2.5 de 14B en su variante Instruct, ajuste supervisado con LoRA y un conjunto de datos cuyo nombre sugiere temática de soledad y depresión ("lonelinessdep"). No se trata, por tanto, de un modelo entrenado desde cero, sino de un adaptador especializado sobre un modelo denso ya existente.
 
 El tamaño del repositorio (0,1 GB) es incompatible con los pesos completos de un modelo de 14B parámetros en safetensors (que rondarían decenas de GB), lo que apunta a que el repositorio contiene únicamente los pesos del adaptador LoRA y no el modelo fusionado. La model card está generada automáticamente y no contiene información cumplimentada por el autor: todos los campos aparecen como "[More Information Needed]".
 
@@ -91,7 +91,7 @@ El modelo hermano de 1,5B confirma que el autor aplica la misma receta de ajuste
 - Procedencia del dataset: se desconoce por completo la composicion, el origen y la calidad del conjunto "lonelinessdep"; no puede garantizarse la ausencia de datos personales o contenido inapropiado.
 - Modelo sin adopcion: cero descargas y cero likes en el momento de la consulta, sin validacion por parte de la comunidad.
 - Idoneidad para produccion: baja. La falta de documentacion, evaluacion y licencia desaconseja su uso en sistemas productivos sin una revision exhaustiva.
-- La model card es la plantilla autogenerada de HuggingFace y no aporta informacion real.
+- La model card es la plantilla autogenerada de Hugging Face y no aporta informacion real.
 
 ## Enlaces
 

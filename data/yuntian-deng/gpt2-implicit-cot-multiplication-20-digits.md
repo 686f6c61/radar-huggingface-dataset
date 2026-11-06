@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| yuntian-deng/gpt2-implicit-cot-multiplication-20-digits | 124.439.808 | 1024 tokens | CoT implícito (internalización por pasos), multiplicación hasta 20 dígitos | No disponible | HuggingFace, 22 descargas |
-| openai-community/gpt2 (modelo base) | 124.439.808 | 1024 tokens | LM generalista; aritmética de varios dígitos muy limitada sin fine-tuning | MIT | HuggingFace, ampliamente disponible |
+| yuntian-deng/gpt2-implicit-cot-multiplication-20-digits | 124.439.808 | 1024 tokens | CoT implícito (internalización por pasos), multiplicación hasta 20 dígitos | No disponible | Hugging Face, 22 descargas |
+| openai-community/gpt2 (modelo base) | 124.439.808 | 1024 tokens | LM generalista; aritmética de varios dígitos muy limitada sin fine-tuning | MIT | Hugging Face, ampliamente disponible |
 | Variante con CoT explícito de la demo del autor | No disponible | No disponible | Genera pasos intermedios de multiplicación antes del resultado | No disponible | Solo referenciada en la demo interactiva |
 | Variante sin CoT de la demo del autor | No disponible | No disponible | Entrenamiento directo entrada-salida sin pasos intermedios | No disponible | Solo referenciada en la demo interactiva |
 
@@ -86,7 +86,7 @@ No se dispone de datos de benchmarks que permitan comparar rendimiento entre est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuntian-deng/gpt2-implicit-cot-multiplication-20-digits
+- Modelo en Hugging Face: https://huggingface.co/yuntian-deng/gpt2-implicit-cot-multiplication-20-digits
 - Demo interactiva (compara CoT implícito, CoT explícito y sin CoT): https://huggingface.co/spaces/yuntian-deng/gpt2-multiplication
 - Código de entrenamiento y notas de formato de datos: https://github.com/da03/Internalize_CoT_Step_by_Step
 - Artículo principal (stepwise internalization): https://arxiv.org/abs/2405.14838

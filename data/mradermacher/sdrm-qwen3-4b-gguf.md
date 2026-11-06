@@ -94,7 +94,7 @@ La comparación se establece a nivel estructural, ya que no existen resultados d
 - Contexto limitado a lo que declare el modelo base: si el fine-tune no fue entrenado con secuencias largas, el rendimiento puede degradarse mucho antes del límite nominal de 32.768 tokens.
 - Degradación por cuantización: las variantes Q2_K y Q3_K_S pueden producir pérdidas notables de coherencia, especialmente en tareas de razonamiento y código. Para producción se recomienda Q4_K_M o superior.
 - Repositorio con cero descargas y cero likes en el momento de la consulta: no existe validación comunitaria que respalde la calidad del resultado.
-- Metadatos incompletos: los campos `pipeline`, licencia e idiomas aparecen vacíos en la propia ficha de HuggingFace.
+- Metadatos incompletos: los campos `pipeline`, licencia e idiomas aparecen vacíos en la propia ficha de Hugging Face.
 
 ## Enlaces
 

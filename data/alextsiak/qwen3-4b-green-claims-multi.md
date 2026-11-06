@@ -6,7 +6,7 @@ El modelo `alextsiak/qwen3-4b-green-claims-multi` es un ajuste fino (fine-tune) 
 
 Este modelo está orientado a tareas de clasificación o análisis de texto relacionadas con declaraciones medioambientales, un área relevante para la verificación de publicidad verde, cumplimiento regulatorio y auditoría de sostenibilidad. Al estar basado en Qwen3-4B, hereda la arquitectura transformer densa de 4 mil millones de parámetros y la capacidad de razonamiento en modo pensante y no pensante del modelo original, aunque el ajuste fino puede haber modificado su comportamiento específico. La licencia Apache-2.0 permite uso comercial y modificación, lo que facilita su integración en aplicaciones empresariales.
 
-La ficha se basa únicamente en la información disponible en HuggingFace y en las búsquedas web asociadas. Muchos detalles técnicos del fine-tune (dataset, método de entrenamiento, métricas) no han sido publicados, por lo que se indican como "no disponible" cuando corresponde.
+La ficha se basa únicamente en la información disponible en Hugging Face y en las búsquedas web asociadas. Muchos detalles técnicos del fine-tune (dataset, método de entrenamiento, métricas) no han sido publicados, por lo que se indican como "no disponible" cuando corresponde.
 
 ## Especificaciones tecnicas
 
@@ -69,7 +69,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- [Modelo en HuggingFace: alextsiak/qwen3-4b-green-claims-multi](https://huggingface.co/alextsiak/qwen3-4b-green-claims-multi)
+- [Modelo en Hugging Face: alextsiak/qwen3-4b-green-claims-multi](https://huggingface.co/alextsiak/qwen3-4b-green-claims-multi)
 - [Modelo base: unsloth/Qwen3-4B-unsloth-bnb-4bit](https://huggingface.co/unsloth/Qwen3-4B-unsloth-bnb-4bit)
 - [Modelo Qwen3-4B original](https://huggingface.co/Qwen/Qwen3-4B)
 - [Repositorio GitHub de Qwen3](https://github.com/QwenLM/Qwen3)

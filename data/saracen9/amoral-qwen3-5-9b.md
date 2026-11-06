@@ -77,7 +77,7 @@ La principal diferencia con la base de Qwen3.5-9B es la eliminacion de rechazos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/saracen9/amoral-qwen3.5-9B
+- Modelo en Hugging Face: https://huggingface.co/saracen9/amoral-qwen3.5-9B
 - Pagina en Ollama: https://ollama.com/saracen9/amoral-qwen3.5-9b
 - Issue de GitHub sobre salida vacia con think: https://github.com/ollama/ollama/issues/17777
 - Modelo base Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B

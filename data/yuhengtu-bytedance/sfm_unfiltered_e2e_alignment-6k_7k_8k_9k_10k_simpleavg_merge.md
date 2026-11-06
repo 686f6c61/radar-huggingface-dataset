@@ -58,9 +58,9 @@ No se dispone de datos de rendimiento para comparar con otros modelos de tamaño
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este modelo | 6,86 B | no disponible | no disponible | HuggingFace |
-| Llama-2-7B | 6,7 B | 4096 | Llama 2 license | HuggingFace |
-| Mistral-7B | 7,3 B | 8192 | Apache 2.0 | HuggingFace |
+| Este modelo | 6,86 B | no disponible | no disponible | Hugging Face |
+| Llama-2-7B | 6,7 B | 4096 | Llama 2 license | Hugging Face |
+| Mistral-7B | 7,3 B | 8192 | Apache 2.0 | Hugging Face |
 
 Sin embargo, la falta de benchmarks impide una comparativa funcional.
 
@@ -74,7 +74,7 @@ Sin embargo, la falta de benchmarks impide una comparativa funcional.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_alignment-6k_7k_8k_9k_10k_simpleavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_alignment-6k_7k_8k_9k_10k_simpleavg_merge
 - Repositorio de mergekit: https://github.com/cg123/mergekit
 - Paper de fusión lineal (arxiv:2203.05482): https://arxiv.org/abs/2203.05482
 - Modelo similar del mismo autor (4k-5k-6k-avg): https://huggingface.co/yuhengtu-bytedance/sfm-unfiltered-e2e-alignment-4k-5k-6k-avg

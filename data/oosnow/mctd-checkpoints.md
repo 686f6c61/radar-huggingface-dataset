@@ -65,7 +65,7 @@ No disponible. La información proporcionada no permite identificar alternativas
 - Sin historial de entrenamiento: los artefactos no incluyen optimizador, scheduler ni estado RNG, por lo que no se puede reanudar una ejecución anterior.
 - Solo cubre ALFWorld: los checkpoints están orientados a ese entorno y no se documentan otros dominios.
 - Sin evaluación publicada: no se presentan benchmarks ni resultados en el repositorio.
-- Repositorio con 0 descargas y 0 likes en HuggingFace, lo que sugiere que no ha sido probado ampliamente.
+- Repositorio con 0 descargas y 0 likes en Hugging Face, lo que sugiere que no ha sido probado ampliamente.
 - Riesgo de alucinación y sesgos: al usar el modelo base Qwen3-1.7B, se aplican las limitaciones inherentes a ese modelo, pero no se detallan en la información disponible.
 - Seguridad: el README advierte que se deben cargar pesos solo de fuentes de confianza y que el descargador verifica checksums publicados.
 

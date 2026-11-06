@@ -74,8 +74,8 @@ Calidad de argumentos en real7 (porcentaje sobre filas con herramienta correcta)
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Prevon Pulse MK5 | 268M | no disponible | Function calling on-device para app Prevon | Gemma Terms of Use | HuggingFace (safetensors, GGUF, LiteRT-LM) |
-| google/functiongemma-270m-it (base) | 270M | no disponible | Function calling general | Gemma Terms of Use | HuggingFace |
+| Prevon Pulse MK5 | 268M | no disponible | Function calling on-device para app Prevon | Gemma Terms of Use | Hugging Face (safetensors, GGUF, LiteRT-LM) |
+| google/functiongemma-270m-it (base) | 270M | no disponible | Function calling general | Gemma Terms of Use | Hugging Face |
 | Prevon Pulse MK4 (referencia interna) | no disponible | no disponible | Version anterior del mismo fine-tune | Gemma Terms of Use | no disponible |
 
 No se dispone de datos de benchmarks comparables con otros modelos de function calling de tamano similar en la informacion proporcionada; la unica comparacion documentada es contra MK4 en el conjunto real8 (46,9 % frente a 90,2 % end-to-end).
@@ -93,6 +93,6 @@ No se dispone de datos de benchmarks comparables con otros modelos de function c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PrevonFounder/prevon-pulse-mk5
+- Modelo en Hugging Face: https://huggingface.co/PrevonFounder/prevon-pulse-mk5
 - Modelo base: https://huggingface.co/google/functiongemma-270m-it
 - Terminos de uso de Gemma: https://ai.google.dev/gemma/terms

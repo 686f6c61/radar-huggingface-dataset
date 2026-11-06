@@ -78,16 +78,16 @@ No se proporcionan comparaciones con modelos de otros proveedores en la informac
 - No cabe en GPU de consumo: ni siquiera en configuraciones multi-GPU de gama RTX (por ejemplo, 4x RTX 4090 con 24 GB cada una suman 96 GB, insuficiente). Requiere clústeres de centros de datos.
 - GPU recomendadas: el autor y SGLang publican imagenes Docker especificas para NVIDIA H200 y para aceleradores AMD MI350, ademas de imagenes para NPUs (dsv32-a2 y dsv32-a3). El despliegue de referencia usa multiproceso con `MP` ajustado al numero de GPUs disponibles.
 - Paralelismo: el script de conversion usa `--model-parallel ${MP}`, y el lanzamiento en SGLang emplea `--tp 8 --dp 8 --enable-dp-attention`.
-- Opciones de despliegue: vLLM (soporte dia cero), SGLang (Docker para H200, MI350 y NPUs), y el codigo de inferencia oficial incluido en el repositorio de HuggingFace.
+- Opciones de despliegue: vLLM (soporte dia cero), SGLang (Docker para H200, MI350 y NPUs), y el codigo de inferencia oficial incluido en el repositorio de Hugging Face.
 - Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| DeepSeek-V3.2-Exp | ~685,4 mil millones (MoE) | no disponible | MIT | HuggingFace (weights safetensors) |
+| DeepSeek-V3.2-Exp | ~685,4 mil millones (MoE) | no disponible | MIT | Hugging Face (weights safetensors) |
 | DeepSeek-V3.1-Terminus | no disponible | no disponible | no disponible | no disponible |
-| DeepSeek-V3.2-Exp-Base | no disponible | no disponible | no disponible | HuggingFace (modelo base) |
+| DeepSeek-V3.2-Exp-Base | no disponible | no disponible | no disponible | Hugging Face (modelo base) |
 
 Solo se dispone de comparativa directa contra DeepSeek-V3.1-Terminus en la tabla de benchmarks. No hay datos en la informacion proporcionada sobre otros modelos comparables de terceros.
 
@@ -104,14 +104,14 @@ Solo se dispone de comparativa directa contra DeepSeek-V3.1-Terminus en la tabla
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/deepseek-ai/DeepSeek-V3.2-Exp
+- Hugging Face (modelo): https://huggingface.co/deepseek-ai/DeepSeek-V3.2-Exp
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V3.2-Exp-Base
 - Carpeta de inferencia oficial: https://huggingface.co/deepseek-ai/DeepSeek-V3.2-Exp/tree/main/inference
 - Web de DeepSeek: https://www.deepseek.com/
 - Chat de DeepSeek: https://chat.deepseek.com/
 - Plataforma API de DeepSeek: https://www.deepseek.com/en/platform/
 - Descarga de la app de DeepSeek: https://download.deepseek.com/
-- Organizacion en HuggingFace: https://huggingface.co/deepseek-ai
+- Organizacion en Hugging Face: https://huggingface.co/deepseek-ai
 - GitHub de DeepSeek AI: https://github.com/deepseek-ai
 - Discord de DeepSeek AI: https://discord.gg/Tc7c45Zzu5
 - Twitter/X de DeepSeek AI: https://twitter.com/deepseek_ai

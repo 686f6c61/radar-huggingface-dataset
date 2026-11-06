@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ibm-research/qaoa_angles.max_cut.p2.et` es un artefacto de investigación publicado por IBM Research en HuggingFace. Por su nomenclatura, se trata de un modelo en formato ONNX cuyo propósito es predecir los ángulos variacionales (los parámetros gamma y beta) del algoritmo cuántico QAOA (Quantum Approximate Optimization Algorithm) aplicado al problema Max-Cut con profundidad p=2. La extensión "et" del identificador no está documentada en la información disponible.
+`ibm-research/qaoa_angles.max_cut.p2.et` es un artefacto de investigación publicado por IBM Research en Hugging Face. Por su nomenclatura, se trata de un modelo en formato ONNX cuyo propósito es predecir los ángulos variacionales (los parámetros gamma y beta) del algoritmo cuántico QAOA (Quantum Approximate Optimization Algorithm) aplicado al problema Max-Cut con profundidad p=2. La extensión "et" del identificador no está documentada en la información disponible.
 
 El modelo no es un modelo de lenguaje ni un modelo generativo de propósito general: es un componente auxiliar para flujos de trabajo de computación cuántica, presumiblemente un pequeño perceptrón o red neuronal que, dada una instancia de grafo, devuelve una estimación de los ángulos óptimos que inicializan el circuito QAOA y así reducir el coste de la optimización clásica del bucle variacional.
 
@@ -71,7 +71,7 @@ No disponible. No se han identificado en la informacion proporcionada otros mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ibm-research/qaoa_angles.max_cut.p2.et
+- Modelo en Hugging Face: https://huggingface.co/ibm-research/qaoa_angles.max_cut.p2.et
 - Sitio de IBM: https://www.ibm.com/
 - Sitio de IBM (version en frances): https://www.ibm.com/fr-fr
 - IBM en Wikipedia: https://en.wikipedia.org/wiki/IBM

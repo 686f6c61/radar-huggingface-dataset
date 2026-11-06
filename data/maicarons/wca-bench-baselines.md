@@ -2,7 +2,7 @@
 
 ## Resumen
 
-WCA-Bench-baselines es un repositorio de resultados de referencia (baselines) publicado por el usuario Maicarons en HuggingFace, no un modelo de lenguaje ni un modelo con pesos entrenados. Contiene los resultados de 21 baselines organizados en 6 familias de métodos, evaluados sobre el export oficial de resultados de la World Cube Association (WCA Results Export, formato v2.0.2, fecha de export 2026-09-21). El objetivo es servir como linea base reproducible y como esqueleto de envio para el banco de pruebas WCA-Bench, orientado a prediccion tabular y de series temporales en el dominio del speedcubing.
+WCA-Bench-baselines es un repositorio de resultados de referencia (baselines) publicado por el usuario Maicarons en Hugging Face, no un modelo de lenguaje ni un modelo con pesos entrenados. Contiene los resultados de 21 baselines organizados en 6 familias de métodos, evaluados sobre el export oficial de resultados de la World Cube Association (WCA Results Export, formato v2.0.2, fecha de export 2026-09-21). El objetivo es servir como linea base reproducible y como esqueleto de envio para el banco de pruebas WCA-Bench, orientado a prediccion tabular y de series temporales en el dominio del speedcubing.
 
 El conjunto de datos completo sobre el que se define el benchmark incluye 6.909.454 resultados, 298.551 personas, 18.708 competiciones, 31.847.257 intentos y 3.186.380 scrambles, con un reparto train/validacion/test de 3.211.294 / 1.978.851 / 1.719.290 y una tasa global de DNF a nivel de intento del 3,18 %. El benchmark se desglosa en cinco tareas: prediccion de resultado (T1), prediccion de clasificacion (T2), prediccion de DNF (T3), estimacion del limite humano (T4) y transferencia de habilidad entre eventos (T5).
 
@@ -120,7 +120,7 @@ No se dispone de modelos comparables en la informacion proporcionada: la busqued
 - La licencia es `wca-export-terms` (campo `license: other`), vinculada a las condiciones de exportacion de resultados de la WCA. En la informacion proporcionada no se detallan las condiciones concretas de uso comercial; hay que consultar el enlace de licencia antes de reutilizar los datos o los resultados.
 - Los datos subyacentes pertenecen a la WCA y describen a personas reales identificadas por estadisticas por persona; cualquier uso debe considerar las condiciones de exportacion y la proteccion de datos personales.
 - No se publican pesos ni artefactos de modelo (tamano del repositorio 0,0 GB), por lo que no es posible desplegar los baselines sin reconstruirlos a partir del codigo y los datos originales.
-- El repositorio registra 0 descargas y 0 likes, y no tiene pipeline declarado en HuggingFace: no hay evidencia de validacion por parte de terceros.
+- El repositorio registra 0 descargas y 0 likes, y no tiene pipeline declarado en Hugging Face: no hay evidencia de validacion por parte de terceros.
 - La documentacion y los informes estan unicamente en ingles; no se declara soporte de otros idiomas.
 - Riesgo de alucinacion: no aplica en el sentido generativo, pero si existe riesgo de sobreinterpretar las cifras. En particular, T1 con semilla 42 reporta 0,1639 de MAE(log) mientras la media multi-semilla es 0,1055 ± 0,0417, lo que muestra que una lectura aislada de un unico informe puede inducir a error.
 - La comparacion entre familias no es homogenea en coste: los baselines tabulares corren en CPU mientras que la LSTM, la GNN y el boosting requieren GPU, de modo que las diferencias de rendimiento deben leerse junto al coste registrado en cada informe.
@@ -128,7 +128,7 @@ No se dispone de modelos comparables en la informacion proporcionada: la busqued
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Maicarons/WCA-Bench-baselines
+- Repositorio en Hugging Face: https://huggingface.co/Maicarons/WCA-Bench-baselines
 - Enlace de licencia declarado en la model card: https://www.worldcubeassociation.org/export/results
 - Export oficial de resultados de la WCA (fuente de datos, formato v2.0.2): https://www.worldcubeassociation.org/export/results
 - Archivos citados dentro del repositorio: `leaderboard.md`, `leaderboard.csv`, `leaderboard.json`, `multi_seed.md`, `<task>__<model>.json` (21 informes) y `submission_template/`

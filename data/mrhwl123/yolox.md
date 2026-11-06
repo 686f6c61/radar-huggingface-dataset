@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Yolox es un repositorio publicado en HuggingFace por el usuario mrhwl123 bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción funcional: se limita al bloque de metadatos de licencia, sin explicar el problema que resuelve, la arquitectura empleada ni los datos de entrenamiento. El repositorio ocupa 1,6 GB y acumula cero descargas y cero likes desde su creación, lo que indica que se trata de una publicación sin adopción conocida ni validación por parte de la comunidad.
+Yolox es un repositorio publicado en Hugging Face por el usuario mrhwl123 bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción funcional: se limita al bloque de metadatos de licencia, sin explicar el problema que resuelve, la arquitectura empleada ni los datos de entrenamiento. El repositorio ocupa 1,6 GB y acumula cero descargas y cero likes desde su creación, lo que indica que se trata de una publicación sin adopción conocida ni validación por parte de la comunidad.
 
 El nombre del repositorio coincide con el de la familia de detectores de objetos YOLOX, pero no hay ningún elemento en la información disponible (tags, pipeline, idiomas o documentación) que confirme que se trate de un modelo de detección, de una reimplementación, de pesos convertidos o de un artefacto de otro tipo. Tampoco se especifican los formatos de pesos contenidos en el repositorio ni la longitud de contexto, en caso de que fuese un modelo de lenguaje.
 
@@ -25,7 +25,7 @@ Por todo ello, esta ficha recoge únicamente los metadatos verificables y marca 
 | Ultima actualizacion | 2026-09-10 |
 | Descargas | 0 |
 | Likes | 0 |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Region declarada | us |
 
 ## Arquitectura y entrenamiento
@@ -88,5 +88,5 @@ No disponible. No es posible identificar modelos comparables sin conocer la tare
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mrhwl123/Yolox
+- Repositorio en Hugging Face: https://huggingface.co/mrhwl123/Yolox
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados a este modelo en la búsqueda web realizada. Los resultados devueltos corresponden a foros jurídicos en alemán y no guardan relación con el artefacto.

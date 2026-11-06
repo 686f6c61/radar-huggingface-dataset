@@ -72,11 +72,11 @@ La informacion proporcionada no incluye datos de benchmarks ni especificaciones 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Shenava-Koochik-v1.0-sherpa-onnx | no disponible | no aplica (ASR) | no disponible | Apache-2.0 | HuggingFace + mirror PersianML |
-| Shenava-Koochik-v1.0 (modelo base) | no disponible | no aplica (ASR) | no disponible | no disponible | HuggingFace |
-| Shenava-Koochik-v1.0-ONNX-fp16 | no disponible | no aplica (ASR) | no disponible | no disponible | HuggingFace |
-| Shenava-Koochik-v1.0-CoreML-fp16 | no disponible | no aplica (ASR) | no disponible | no disponible | HuggingFace |
-| Shenava-Koochik-v1.0-tract-offline | no disponible | no aplica (ASR) | no disponible | no disponible | HuggingFace |
+| Shenava-Koochik-v1.0-sherpa-onnx | no disponible | no aplica (ASR) | no disponible | Apache-2.0 | Hugging Face + mirror PersianML |
+| Shenava-Koochik-v1.0 (modelo base) | no disponible | no aplica (ASR) | no disponible | no disponible | Hugging Face |
+| Shenava-Koochik-v1.0-ONNX-fp16 | no disponible | no aplica (ASR) | no disponible | no disponible | Hugging Face |
+| Shenava-Koochik-v1.0-CoreML-fp16 | no disponible | no aplica (ASR) | no disponible | no disponible | Hugging Face |
+| Shenava-Koochik-v1.0-tract-offline | no disponible | no aplica (ASR) | no disponible | no disponible | Hugging Face |
 
 La busqueda web realizada no devolvio resultados relevantes sobre este modelo ni sobre ASR persa comparable: los resultados obtenidos correspondian a paginas corporativas de Microsoft sin relacion con el modelo.
 
@@ -92,11 +92,11 @@ La busqueda web realizada no devolvio resultados relevantes sobre este modelo ni
 - Riesgo de alucinacion: no aplica en el sentido de los modelos generativos, pero un modelo CTC puede producir transcripciones plausibles incorrectas en segmentos con ruido o silencio.
 - Licencia Apache-2.0, que permite uso comercial, modificacion y redistribucion siempre que se conserven los avisos de licencia y atribucion correspondientes. Conviene verificar la licencia del modelo base y de los datos de entrenamiento, no documentada en la informacion disponible.
 - El repositorio registra 0 descargas y 1 "like" en el momento de la consulta, lo que indica una adopcion muy limitada y poca validacion por parte de terceros.
-- La fecha de creacion registrada (2026-07-02) y la de actualizacion (2026-09-12) deben tomarse como las que figuran en la ficha de HuggingFace; conviene comprobar la vigencia real del repositorio antes de integrarlo en produccion.
+- La fecha de creacion registrada (2026-07-02) y la de actualizacion (2026-09-12) deben tomarse como las que figuran en la ficha de Hugging Face; conviene comprobar la vigencia real del repositorio antes de integrarlo en produccion.
 
 ## Enlaces
 
-- Repositorio principal en HuggingFace: https://huggingface.co/Reza2kn/Shenava-Koochik-v1.0-sherpa-onnx
+- Repositorio principal en Hugging Face: https://huggingface.co/Reza2kn/Shenava-Koochik-v1.0-sherpa-onnx
 - Mirror en PersianML: https://huggingface.co/PersianML/Shenava-Koochik-v1.0-sherpa-onnx
 - Modelo base: https://huggingface.co/Reza2kn/Shenava-Koochik-v1.0
 - Variante ONNX fp16 para navegador: https://huggingface.co/Reza2kn/Shenava-Koochik-v1.0-ONNX-fp16

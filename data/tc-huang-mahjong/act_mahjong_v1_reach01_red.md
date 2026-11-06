@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`act_mahjong_v1_reach01_red` es una política de imitación basada en Action Chunking with Transformers (ACT) entrenada con LeRobot para el robot `so101_follower`. El modelo resuelve una tarea de manipulación robótica muy concreta: señalar la ficha Red Dragon (dragón rojo) en un entorno de mahjong. Lo desarrolla el usuario `tc-huang-mahjong` y se publica en HuggingFace Hub con la librería `lerobot` y el pipeline `robotics`.
+`act_mahjong_v1_reach01_red` es una política de imitación basada en Action Chunking with Transformers (ACT) entrenada con LeRobot para el robot `so101_follower`. El modelo resuelve una tarea de manipulación robótica muy concreta: señalar la ficha Red Dragon (dragón rojo) en un entorno de mahjong. Lo desarrolla el usuario `tc-huang-mahjong` y se publica en Hugging Face Hub con la librería `lerobot` y el pipeline `robotics`.
 
 ACT es un método de aprendizaje por imitación que predice fragmentos cortos de acciones (action chunks) en lugar de pasos individuales, lo que reduce el error de acumulación y mejora la estabilidad en tareas de manipulación de precisión. El modelo consume el estado del robot (6 dimensiones) y dos cámaras RGB de 480x640 (frontal y de pinza), y produce un vector de acción de 6 dimensiones.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| act_mahjong_v1_reach01_red | 51.668.614 | no disponible | Señalar ficha Red Dragon (SO-101) | no disponible | HuggingFace Hub |
-| Otras políticas ACT en LeRobot | no disponible | no disponible | Manipulación genérica | variable | HuggingFace Hub |
-| Políticas Diffusion Policy | no disponible | no disponible | Manipulación genérica | variable | HuggingFace Hub |
+| act_mahjong_v1_reach01_red | 51.668.614 | no disponible | Señalar ficha Red Dragon (SO-101) | no disponible | Hugging Face Hub |
+| Otras políticas ACT en LeRobot | no disponible | no disponible | Manipulación genérica | variable | Hugging Face Hub |
+| Políticas Diffusion Policy | no disponible | no disponible | Manipulación genérica | variable | Hugging Face Hub |
 
 No se dispone de datos de rendimiento comparables publicados para este modelo ni para alternativas concretas en la misma tarea, por lo que la comparativa cuantitativa no está disponible.
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparables publicados para este modelo ni
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tc-huang-mahjong/act_mahjong_v1_reach01_red
+- Hugging Face: https://huggingface.co/tc-huang-mahjong/act_mahjong_v1_reach01_red
 - Dataset: https://huggingface.co/datasets/tc-huang-mahjong/mahjong_v1_reach01_red_ovphysx_perturb_off5_mirabilis-mac
 - Paper ACT: https://huggingface.co/papers/2304.13705
 - arXiv ACT: https://arxiv.org/abs/2304.13705

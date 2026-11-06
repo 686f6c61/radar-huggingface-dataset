@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen2.5-3B-Central-GovSchemes-LoRA es un ajuste fino (fine-tune) del modelo Qwen2.5-3B-Instruct, publicado por el usuario CodeLordHari en HuggingFace. Se ha entrenado a partir de la variante ya cuantizada a 4 bits `unsloth/Qwen2.5-3B-Instruct-bnb-4bit` utilizando la libreria Unsloth junto con TRL de HuggingFace. Segun la model card, el entrenamiento fue "2x mas rapido" gracias a las optimizaciones de Unsloth, aunque no se detalla ni el dataset, ni el numero de pasos, ni la tecnica de alineacion empleada.
+Qwen2.5-3B-Central-GovSchemes-LoRA es un ajuste fino (fine-tune) del modelo Qwen2.5-3B-Instruct, publicado por el usuario CodeLordHari en Hugging Face. Se ha entrenado a partir de la variante ya cuantizada a 4 bits `unsloth/Qwen2.5-3B-Instruct-bnb-4bit` utilizando la libreria Unsloth junto con TRL de Hugging Face. Segun la model card, el entrenamiento fue "2x mas rapido" gracias a las optimizaciones de Unsloth, aunque no se detalla ni el dataset, ni el numero de pasos, ni la tecnica de alineacion empleada.
 
 El nombre del repositorio sugiere que el ajuste se orienta a un dominio especifico: esquemas o programas de gobierno central (presumiblemente planes de ayuda social de la India, aunque esto es una inferencia a partir del nombre y no se confirma en la model card). El modelo conserva la arquitectura Qwen2 del modelo base, con 3.085.938.688 parametros totales, y el tamano del repositorio (6,3 GB) indica que los pesos se han fusionado en precision de 16 bits, pese a que el nombre incluya el sufijo "LoRA".
 
@@ -25,7 +25,7 @@ Se trata de un modelo recien publicado (0 descargas y 0 "likes" en el momento de
 
 La arquitectura es la del modelo base Qwen2.5-3B-Instruct: un transformer decoder-only de 3.085.938.688 parametros, con normalizacion RMSNorm, activacion SwiGLU y atencion con consultas agrupadas (GQA). No se han introducido cambios arquitectonicos respecto al modelo base; el trabajo realizado es exclusivamente un ajuste fino por adaptacion de bajo rango (LoRA) sobre la variante cuantizada a 4 bits del Instruct.
 
-El entrenamiento se llevo a cabo con Unsloth y la libreria TRL de HuggingFace, partiendo de `unsloth/Qwen2.5-3B-Instruct-bnb-4bit`. La model card no especifica el conjunto de datos, la composicion del mismo, el numero de tokens de entrenamiento, la longitud de secuencia, los hiperparametros ni si se aplico RLHF o DPO posterior. Tampoco aclara si los adaptadores LoRA se han fusionado con los pesos base (el tamano del repositorio, 6,3 GB, apunta a que si). Como resultado, no es posible evaluar la calidad del ajuste ni su grado de sobreajuste al dominio a partir de la informacion publicada.
+El entrenamiento se llevo a cabo con Unsloth y la libreria TRL de Hugging Face, partiendo de `unsloth/Qwen2.5-3B-Instruct-bnb-4bit`. La model card no especifica el conjunto de datos, la composicion del mismo, el numero de tokens de entrenamiento, la longitud de secuencia, los hiperparametros ni si se aplico RLHF o DPO posterior. Tampoco aclara si los adaptadores LoRA se han fusionado con los pesos base (el tamano del repositorio, 6,3 GB, apunta a que si). Como resultado, no es posible evaluar la calidad del ajuste ni su grado de sobreajuste al dominio a partir de la informacion publicada.
 
 ## Capacidades
 
@@ -90,9 +90,9 @@ Frente a estas alternativas, el modelo aqui descrito aporta una especializacion 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CodeLordHari/Qwen2.5-3B-Central-GovSchemes-LoRA
+- Modelo en Hugging Face: https://huggingface.co/CodeLordHari/Qwen2.5-3B-Central-GovSchemes-LoRA
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-3B-Instruct-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 
 No se han encontrado papers, blogs, demos ni otros enlaces relevantes en la busqueda web realizada; los resultados obtenidos no guardan relacion con el modelo.

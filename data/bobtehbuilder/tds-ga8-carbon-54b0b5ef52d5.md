@@ -61,6 +61,6 @@ No disponible. No hay datos técnicos que permitan comparar este modelo con alte
 
 ## Enlaces
 
-- Página de HuggingFace: https://huggingface.co/bobtehbuilder/tds-ga8-carbon-54b0b5ef52d5
+- Página de Hugging Face: https://huggingface.co/bobtehbuilder/tds-ga8-carbon-54b0b5ef52d5
 - Otros registros del mismo autor: https://huggingface.co/bobtehbuilder/tds-ga8-carbon-f00b19c42a31, https://huggingface.co/bobtehbuilder/tds-ga8-carbon-afa52a4e16df, https://huggingface.co/bobtehbuilder/tds-ga8-carbon-414018fd4fff, https://huggingface.co/bobtehbuilder/tds-ga8-carbon-f5ad34f6f655, https://huggingface.co/bobtehbuilder/tds-ga8-carbon-032aeb8b8896
 - No se han encontrado papers, blogs, repositorios ni demos asociados en la búsqueda web.

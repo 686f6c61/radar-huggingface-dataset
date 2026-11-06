@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Opus-mt-ml-en-int8-onnx es un modelo de traduccion automatica de malayalam a ingles, publicado por el usuario akm9191 en HuggingFace. No es un modelo entrenado desde cero: se trata de una exportacion cuantizada a int8 en formato ONNX del modelo Helsinki-NLP/opus-mt-ml-en, desarrollado originalmente por el Language Technology Research Group de la Universidad de Helsinki dentro del proyecto OPUS-MT (Jörg Tiedemann et al.). El repositorio solo cambia el formato de los pesos; no se ha realizado ningun fine-tuning ni entrenamiento adicional.
+Opus-mt-ml-en-int8-onnx es un modelo de traduccion automatica de malayalam a ingles, publicado por el usuario akm9191 en Hugging Face. No es un modelo entrenado desde cero: se trata de una exportacion cuantizada a int8 en formato ONNX del modelo Helsinki-NLP/opus-mt-ml-en, desarrollado originalmente por el Language Technology Research Group de la Universidad de Helsinki dentro del proyecto OPUS-MT (Jörg Tiedemann et al.). El repositorio solo cambia el formato de los pesos; no se ha realizado ningun fine-tuning ni entrenamiento adicional.
 
 El problema que resuelve es la traduccion offline y en dispositivo de texto en malayalam (la lengua de Kerala, India) a ingles, sin depender de servicios en la nube. El autor lo creo para integrarlo en la aplicacion de notas Android "Daily Whisper", y el layout de ficheros sigue el formato de los repositorios Xenova/opus-mt-*, lo que lo hace compatible con cargadores tipo transformers.js. Esto lo hace especialmente util para aplicaciones que necesitan traduccion local, privada y de bajo consumo.
 

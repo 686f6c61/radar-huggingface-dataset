@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Parametros | Contexto | Formato / cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | tstepspam/Huihui-Qwen3.8-27B-abliterated-Q8-MLX | 26,9 B | no disponible | safetensors MLX 8-bit | apache-2.0 | Apple Silicon (MLX) |
-| huihui-ai/Huihui-Qwen3.8-27B-abliterated (modelo base) | no disponible (se asume identico) | no disponible | no disponible | apache-2.0 | HuggingFace, requiere conversion para MLX |
+| huihui-ai/Huihui-Qwen3.8-27B-abliterated (modelo base) | no disponible (se asume identico) | no disponible | no disponible | apache-2.0 | Hugging Face, requiere conversion para MLX |
 | Modelo original de la familia Qwen3 sin abliterar | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 | Otras alternativas de ~27B abliteradas | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -80,7 +80,7 @@ La comparación se limita al artefacto y su modelo base, ya que la información 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tstepspam/Huihui-Qwen3.8-27B-abliterated-Q8-MLX
+- Repositorio Hugging Face: https://huggingface.co/tstepspam/Huihui-Qwen3.8-27B-abliterated-Q8-MLX
 - Modelo base declarado: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated
 - Documentación de MLX: no disponible en la información proporcionada
 - Paper, blog o repositorio del autor: no disponible en la información proporcionada

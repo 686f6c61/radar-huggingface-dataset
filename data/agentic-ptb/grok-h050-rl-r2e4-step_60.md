@@ -71,12 +71,12 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 - Checkpoint intermedio: no está completamente entrenado (hora 48 de 100) y no representa el rendimiento final del run.
 - Sin licencia especificada: no se puede determinar si es de uso libre, comercial o restringido.
 - Sin idiomas documentados: se desconoce el alcance multilingüe.
-- Sin validación comunitaria: 0 descargas y 0 likes en HuggingFace; no ha sido probado por terceros.
+- Sin validación comunitaria: 0 descargas y 0 likes en Hugging Face; no ha sido probado por terceros.
 - La model card del repo corresponde a otro checkpoint (grok.h048.step_50), lo que sugiere que la documentación puede no estar alineada con este artefacto concreto.
 - Riesgo de alucinación y sesgos: no evaluados; se heredan del base model Qwen3.5-9B-Base sin verificación adicional.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/grok.h050.rl-r2e4.step_60
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/grok.h050.rl-r2e4.step_60
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Índice del sweep (mencionado en la model card): `agentic-ptb/INDEX` (no se ha encontrado el enlace directo)

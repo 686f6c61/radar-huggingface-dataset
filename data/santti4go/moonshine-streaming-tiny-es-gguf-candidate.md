@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 
 ## Enlaces
 
-- HuggingFace del candidato: https://huggingface.co/Santti4go/moonshine-streaming-tiny-es-gguf-candidate
-- Modelo base en HuggingFace: https://huggingface.co/moonshine-ai/moonshine-streaming-tiny-es
+- Hugging Face del candidato: https://huggingface.co/Santti4go/moonshine-streaming-tiny-es-gguf-candidate
+- Modelo base en Hugging Face: https://huggingface.co/moonshine-ai/moonshine-streaming-tiny-es
 - Proyecto transcribe.cpp: https://github.com/handy-computer/transcribe.cpp
 - Modelo de referencia (inglés): https://huggingface.co/moonshine-ai/moonshine-streaming-tiny

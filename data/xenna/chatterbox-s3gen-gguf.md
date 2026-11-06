@@ -71,8 +71,8 @@ No se dispone de información sobre modelos comparables en el repositorio ni en 
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo GGUF](https://huggingface.co/Xenna/chatterbox-s3gen-GGUF)
-- [Modelo original safetensors en HuggingFace](https://huggingface.co/ResembleAI/chatterbox/blob/main/s3gen.safetensors)
+- [Repositorio Hugging Face del modelo GGUF](https://huggingface.co/Xenna/chatterbox-s3gen-GGUF)
+- [Modelo original safetensors en Hugging Face](https://huggingface.co/ResembleAI/chatterbox/blob/main/s3gen.safetensors)
 - [Repositorio GitHub de Resemble AI Chatterbox](https://github.com/resemble-ai/chatterbox)
 - [Documentación de la arquitectura S3Gen en DeepWiki](https://deepwiki.com/resemble-ai/chatterbox/5-s3gen-model-architecture)
 - [Página de modelos GGUF de Chatterbox en local-ai-zone](https://local-ai-zone.github.io/models/chatterbox.html)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nikitastheo/dummy-phonelm-text-seed45-eng2-eng` es un modelo de lenguaje causal (causal LM) de tamaño reducido, desarrollado por `nikitastheo` como parte de una serie de modelos "dummy" orientados a experimentación. Se basa en una arquitectura GPT-2, tal y como indica la etiqueta `gpt2` en HuggingFace, y cuenta con un total de 2.057.984 parámetros. Su propósito principal es servir como banco de pruebas para flujos de entrenamiento y despliegue de modelos de lenguaje, no como un modelo utilizable en producción.
+El modelo `nikitastheo/dummy-phonelm-text-seed45-eng2-eng` es un modelo de lenguaje causal (causal LM) de tamaño reducido, desarrollado por `nikitastheo` como parte de una serie de modelos "dummy" orientados a experimentación. Se basa en una arquitectura GPT-2, tal y como indica la etiqueta `gpt2` en Hugging Face, y cuenta con un total de 2.057.984 parámetros. Su propósito principal es servir como banco de pruebas para flujos de entrenamiento y despliegue de modelos de lenguaje, no como un modelo utilizable en producción.
 
 El entrenamiento se realizó con el script `train_clm.py` de Hugging Face Accelerate, sin usar el `Trainer`, durante únicamente 12 pasos. Esto, unido a su tamaño mínimo, lo convierte en un modelo de carácter experimental. No se dispone de información sobre la licencia, los idiomas soportados ni la longitud de contexto. El repositorio ocupa 0.1 GB y los pesos están almacenados en formato `safetensors`.
 
@@ -58,9 +58,9 @@ No se dispone de datos comparativos de benchmarks. Dentro de la serie de modelos
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| nikitastheo/dummy-phonelm-text-seed45-eng2-eng | 2.057.984 | No disponible | No disponible | HuggingFace |
-| nikitastheo/phonebabylm-text-eng-mono-dummy | No disponible | No disponible | No disponible | HuggingFace |
-| nikitastheo/phonebabylm-text-deu-eng-sequential_interleaved-dummy | No disponible | No disponible | No disponible | HuggingFace |
+| nikitastheo/dummy-phonelm-text-seed45-eng2-eng | 2.057.984 | No disponible | No disponible | Hugging Face |
+| nikitastheo/phonebabylm-text-eng-mono-dummy | No disponible | No disponible | No disponible | Hugging Face |
+| nikitastheo/phonebabylm-text-deu-eng-sequential_interleaved-dummy | No disponible | No disponible | No disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -73,7 +73,7 @@ No se dispone de datos comparativos de benchmarks. Dentro de la serie de modelos
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/nikitastheo/dummy-phonelm-text-seed45-eng2-eng
+- Hugging Face del modelo: https://huggingface.co/nikitastheo/dummy-phonelm-text-seed45-eng2-eng
 - Tokenizer asociado: https://huggingface.co/nikitastheo/phonelm-text-seed45-eng2-eng-tokenizer
 - Modelo dummy similar: https://huggingface.co/nikitastheo/phonebabylm-text-eng-mono-dummy
 - Modelo dummy similar: https://huggingface.co/nikitastheo/phonebabylm-text-deu-eng-sequential_interleaved-dummy

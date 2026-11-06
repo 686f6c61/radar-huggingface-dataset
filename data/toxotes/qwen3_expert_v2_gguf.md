@@ -2,7 +2,7 @@
 
 ## Resumen
 
-QWEN3_EXPERT_V2_GGUF es una version cuantizada en formato GGUF del modelo QWEN3_EXPERT_V2, un ajuste fino de Qwen3-8B orientado especificamente al dominio financiero turco. Lo publica el usuario Toxotes en HuggingFace bajo licencia Apache 2.0, y forma parte del proyecto MOSAIC-v2, descrito por su autor como una arquitectura de chatbot RAG federada y adaptativa especializada en finanzas turcas. El repositorio ocupa 5,0 GB y el recuento de parametros reportado es de 8.190.735.360 (aproximadamente 8,19 mil millones), coherente con la base Qwen3-8B.
+QWEN3_EXPERT_V2_GGUF es una version cuantizada en formato GGUF del modelo QWEN3_EXPERT_V2, un ajuste fino de Qwen3-8B orientado especificamente al dominio financiero turco. Lo publica el usuario Toxotes en Hugging Face bajo licencia Apache 2.0, y forma parte del proyecto MOSAIC-v2, descrito por su autor como una arquitectura de chatbot RAG federada y adaptativa especializada en finanzas turcas. El repositorio ocupa 5,0 GB y el recuento de parametros reportado es de 8.190.735.360 (aproximadamente 8,19 mil millones), coherente con la base Qwen3-8B.
 
 El modelo se distribuye unicamente con la cuantizacion Q4_K_M, que el autor recomienda como equilibrio entre velocidad y calidad. Su proposito es servir de motor de generacion dentro de pipelines de recuperacion aumentada (RAG) sobre documentacion financiera en turco, un nicho poco cubierto por los modelos generalistas, que suelen rendir peor en terminologia financiera local y en turco.
 
@@ -13,7 +13,7 @@ La relevancia actual del modelo es limitada pero concreta: es un artefacto de ni
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Qwen3 (equivalente 8B), transformer denso |
-| Parametros totales | 8.190.735.360 (dato reportado por HuggingFace a partir de safetensors) |
+| Parametros totales | 8.190.735.360 (dato reportado por Hugging Face a partir de safetensors) |
 | Parametros activos | No aplica (modelo denso, no MoE) |
 | Longitud de contexto | No disponible (la model card no lo especifica) |
 | Tipos de cuantizacion | Q4_K_M (unica cuantizacion documentada por el autor) |
@@ -40,7 +40,7 @@ En resumen: la informacion publica sobre el entrenamiento es minima y no permite
 - Generacion de texto conversacional en turco, orientada al dominio financiero (productos bancarios, tipos de interes, terminologia economica).
 - Respuesta a preguntas dentro de un pipeline RAG: el modelo esta pensado para consumir contexto recuperado de una base documental financiera.
 - Conversacion multi-turno: la etiqueta "conversational" del repositorio indica soporte de dialogos encadenados.
-- Integracion con endpoints compatibles: la etiqueta "endpoints_compatible" sugiere compatibilidad con HuggingFace Inference Endpoints.
+- Integracion con endpoints compatibles: la etiqueta "endpoints_compatible" sugiere compatibilidad con Hugging Face Inference Endpoints.
 - Despliegue local mediante llama.cpp y herramientas derivadas (Ollama, LM Studio, llama-cpp-python).
 - Capacidades de tool calling o function calling: no documentadas en la informacion disponible.
 - Modo de razonamiento explicito (thinking mode): no documentado en la informacion disponible.
@@ -98,7 +98,7 @@ No se dispone de datos de rendimiento que permitan una comparacion cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Toxotes/QWEN3_EXPERT_V2_GGUF
+- Modelo en Hugging Face: https://huggingface.co/Toxotes/QWEN3_EXPERT_V2_GGUF
 - Perfil del autor: https://huggingface.co/Toxotes
 - Proyecto MOSAIC-v2: mencionado en la model card, sin enlace disponible
 - Paper, blog o repositorio del modelo: no disponible

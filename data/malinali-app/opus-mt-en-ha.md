@@ -18,7 +18,7 @@ La relevancia de esta ficha es doble. Por un lado, es un ejemplo de empaquetado 
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (los pesos se publican en safetensors; no se documentan variantes cuantizadas) |
 | Idiomas soportados | en (ingles), ha (hausa) |
-| Licencia | no disponible en la ficha de HuggingFace; la model card indica seguir la licencia del modelo original, tipicamente CC-BY 4.0 para OPUS-MT |
+| Licencia | no disponible en la ficha de Hugging Face; la model card indica seguir la licencia del modelo original, tipicamente CC-BY 4.0 para OPUS-MT |
 | Formato de pesos | safetensors (`model.safetensors`) + tokenizadores rapidos JSON (`tokenizer-enc.json`, `tokenizer-dec.json`) y `config.json` |
 
 Datos adicionales: autor `malinali-app`; biblioteca `transformers`; pipeline `translation`; modelo base `Helsinki-NLP/opus-mt-en-ha`; tamano del repositorio 0,3 GB; descargas 0; likes 0; fecha de creacion 2026-10-02; fecha de actualizacion 2026-10-02.
@@ -53,7 +53,7 @@ En cuanto al entrenamiento, esta ficha no aporta informacion sobre el numero de 
 
 No se han publicado resultados de benchmarks en la informacion disponible.
 
-Ni la ficha de HuggingFace ni la model card proporcionan metricas como BLEU, chrF, MMLU, HumanEval o GSM8K. Los resultados de busqueda web suministrados no guardan relacion con el modelo. Para conocer el rendimiento del modelo original puede consultarse la documentacion de OPUS-MT, pero no se dispone de cifras verificables en la informacion facilitada.
+Ni la ficha de Hugging Face ni la model card proporcionan metricas como BLEU, chrF, MMLU, HumanEval o GSM8K. Los resultados de busqueda web suministrados no guardan relacion con el modelo. Para conocer el rendimiento del modelo original puede consultarse la documentacion de OPUS-MT, pero no se dispone de cifras verificables en la informacion facilitada.
 
 ## Requisitos de hardware
 
@@ -73,9 +73,9 @@ Ni la ficha de HuggingFace ni la model card proporcionan metricas como BLEU, chr
 
 | Modelo | Parametros | Direccion / idiomas | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| malinali-app/opus-mt-en-ha | 74,46 M | en → ha | no disponible | no disponible en la ficha; upstream tipicamente CC-BY 4.0 | HuggingFace (repositorio con 0 descargas) |
-| Helsinki-NLP/opus-mt-en-ha | ~74 M (arquitectura Marian comparable) | en → ha | no disponible | CC-BY 4.0 segun la convencion de OPUS-MT | HuggingFace (modelo base de este repositorio) |
-| facebook/nllb-200-distilled-600M | ~600 M | Multilingue, 200 idiomas, incluido hausa | no disponible | CC-BY-NC-4.0 (uso no comercial) | HuggingFace |
+| malinali-app/opus-mt-en-ha | 74,46 M | en → ha | no disponible | no disponible en la ficha; upstream tipicamente CC-BY 4.0 | Hugging Face (repositorio con 0 descargas) |
+| Helsinki-NLP/opus-mt-en-ha | ~74 M (arquitectura Marian comparable) | en → ha | no disponible | CC-BY 4.0 segun la convencion de OPUS-MT | Hugging Face (modelo base de este repositorio) |
+| facebook/nllb-200-distilled-600M | ~600 M | Multilingue, 200 idiomas, incluido hausa | no disponible | CC-BY-NC-4.0 (uso no comercial) | Hugging Face |
 
 Notas: los datos de `facebook/nllb-200-distilled-600M` corresponden a conocimiento general sobre ese modelo y no provienen de la informacion facilitada, por lo que deben verificarse en su ficha oficial. La comparativa mas directa del modelo reseñado es con su propio modelo base (el repositorio no introduce cambios en los pesos entrenados, sino en el formato y el empaquetado). Frente a NLLB, este modelo es mucho mas ligero pero solo cubre un par de idiomas y no incluye licencia comercial confirmada.
 
@@ -85,7 +85,7 @@ Notas: los datos de `facebook/nllb-200-distilled-600M` corresponden a conocimien
 - Cobertura limitada: unicamente traduce en → ha; no soporta otras direcciones ni otros idiomas, ni es un modelo multilingue general.
 - Sesgos: no hay informacion sobre los sesgos del modelo. Al proceder de corpus OPUS (mayoritariamente textos paralelos de dominio publico, religioso y web), puede reflejar sesgos de dominio y de genero presentes en esos datos.
 - Contexto e idioma: la longitud de contexto no esta documentada en la informacion disponible; entradas largas pueden truncarse o degradar la calidad.
-- Licencia: la ficha de HuggingFace no declara una licencia propia. La model card remite a la licencia del modelo original, que para OPUS-MT suele ser CC-BY 4.0, pero este extremo no queda confirmado de forma explicita en los datos facilitados. Antes de un uso comercial deben verificarse la licencia upstream y las condiciones de atribucion.
+- Licencia: la ficha de Hugging Face no declara una licencia propia. La model card remite a la licencia del modelo original, que para OPUS-MT suele ser CC-BY 4.0, pero este extremo no queda confirmado de forma explicita en los datos facilitados. Antes de un uso comercial deben verificarse la licencia upstream y las condiciones de atribucion.
 - Estado del repositorio: 0 descargas y 0 likes, con fechas de creacion y actualizacion de 2026-10-02. Es un paquete muy reciente y sin adopcion documentada, por lo que su estabilidad y mantenimiento a largo plazo no estan contrastados.
 - Repackaging, no modelo nuevo: el autor indica que solo reempaqueta pesos y convierte tokenizadores, y que no reclama la propiedad del modelo entrenado. Cualquier evaluacion de calidad debe apoyarse en el modelo base de Helsinki-NLP.
 - Entrenamiento no documentado: no se aportan datos sobre tokens, composicion del dataset, ni fases de alineacion (RLHF/DPO), lo que dificulta auditar el comportamiento del sistema.
@@ -93,7 +93,7 @@ Notas: los datos de `facebook/nllb-200-distilled-600M` corresponden a conocimien
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/malinali-app/opus-mt-en-ha
+- Modelo en Hugging Face: https://huggingface.co/malinali-app/opus-mt-en-ha
 - Modelo base: https://huggingface.co/Helsinki-NLP/opus-mt-en-ha
 - Proyecto OPUS-MT (Helsinki-NLP): https://github.com/Helsinki-NLP/Opus-MT
 - Aplicacion Malinali: https://malinali.app

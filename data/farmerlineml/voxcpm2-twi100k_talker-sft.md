@@ -88,9 +88,9 @@ Advertencia: la tabla publicada incluye pasos repetidos con valores distintos (p
 
 | Modelo | Parametros | Idiomas | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| FarmerlineML/voxcpm2-twi100k_talker-sft | 2,29 mil millones | tw (twi/akan) | Apache 2.0 | safetensors + .pth | HuggingFace, 0 descargas, 0 likes |
-| openbmb/VoxCPM2 (base) | no disponible | multilingue (mas de 30 idiomas segun el sitio del proyecto) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | HuggingFace y GitHub de OpenBMB |
-| FarmerlineML/voxcpm2-ewe-sft (ajuste hermano) | no disponible | ewe | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | HuggingFace |
+| FarmerlineML/voxcpm2-twi100k_talker-sft | 2,29 mil millones | tw (twi/akan) | Apache 2.0 | safetensors + .pth | Hugging Face, 0 descargas, 0 likes |
+| openbmb/VoxCPM2 (base) | no disponible | multilingue (mas de 30 idiomas segun el sitio del proyecto) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face y GitHub de OpenBMB |
+| FarmerlineML/voxcpm2-ewe-sft (ajuste hermano) | no disponible | ewe | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face |
 
 No se han verificado en la informacion disponible otras alternativas open source de TTS especializadas en twi con las que comparar parametros, contexto o rendimiento. La comparacion con el modelo base no es directa: VoxCPM2 es multilingue y esta variante esta especializada en una sola lengua.
 
@@ -111,11 +111,11 @@ No se han verificado en la informacion disponible otras alternativas open source
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FarmerlineML/voxcpm2-twi100k_talker-sft
+- Modelo en Hugging Face: https://huggingface.co/FarmerlineML/voxcpm2-twi100k_talker-sft
 - Modelo base: https://huggingface.co/openbmb/VoxCPM2
 - Dataset de entrenamiento: https://huggingface.co/datasets/FarmerlineML/new_akan_dataset
 - Repositorio GitHub de VoxCPM: https://github.com/OpenBMB/VoxCPM/
 - Sitio del proyecto VoxCPM: https://voxcpm.com/en/
 - Documentacion de VoxCPM 2.0: https://voxcpm.readthedocs.io/
-- Modelos de FarmerlineML en HuggingFace: https://huggingface.co/models?other=farmerline
+- Modelos de FarmerlineML en Hugging Face: https://huggingface.co/models?other=farmerline
 - Ajuste hermano en ewe: https://huggingface.co/FarmerlineML/voxcpm2-ewe-sft

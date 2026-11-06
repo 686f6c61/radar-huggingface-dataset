@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mrthor102/gun09` es un repositorio de modelo publicado en HuggingFace por el usuario mrthor102. En la informacion disponible no consta ni model card, ni pipeline declarado, ni licencia, ni idiomas soportados, ni resultados de evaluacion. El unico dato objetivo ademas del identificador es el tamano del repositorio, 9,7 GB, y las metricas de la comunidad: 0 descargas y 1 like en el momento de la consulta.
+`mrthor102/gun09` es un repositorio de modelo publicado en Hugging Face por el usuario mrthor102. En la informacion disponible no consta ni model card, ni pipeline declarado, ni licencia, ni idiomas soportados, ni resultados de evaluacion. El unico dato objetivo ademas del identificador es el tamano del repositorio, 9,7 GB, y las metricas de la comunidad: 0 descargas y 1 like en el momento de la consulta.
 
 El nombre del repositorio no corresponde a ninguna familia de modelos conocida (no hay coincidencia con nomenclaturas de Meta, Mistral, Qwen, Google, Microsoft, Alibaba ni con proyectos open source populares), y la busqueda web asociada no ha devuelto ningun resultado relacionado con el modelo: los enlaces recuperados apuntan a la plataforma de cuestionarios Kahoot! y no guardan relacion alguna con inteligencia artificial. Por tanto, no es posible identificar autoría institucional, linaje de entrenamiento ni base tecnica.
 
@@ -98,7 +98,7 @@ No disponible. Al no poder determinar la categoria del modelo (tamano, arquitect
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mrthor102/gun09
-- Pagina de autor en HuggingFace: https://huggingface.co/mrthor102
+- Repositorio en Hugging Face: https://huggingface.co/mrthor102/gun09
+- Pagina de autor en Hugging Face: https://huggingface.co/mrthor102
 - Resultados de la busqueda web: ninguno relevante. Los enlaces recuperados (https://kahoot.it/, https://create.kahoot.it/, https://play.kahoot.it/) corresponden a la plataforma de cuestionarios Kahoot! y no tienen relacion con el modelo ni con inteligencia artificial.
 - Paper, blog tecnico, repositorio de codigo o demo: no disponibles.

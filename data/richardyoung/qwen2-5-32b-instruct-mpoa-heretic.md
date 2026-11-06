@@ -89,7 +89,7 @@ No se dispone de datos de benchmarks estándar para comparar el rendimiento en t
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/richardyoung/Qwen2.5-32B-Instruct-MPOA-heretic
+- Modelo en Hugging Face: https://huggingface.co/richardyoung/Qwen2.5-32B-Instruct-MPOA-heretic
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-32B-Instruct
 - Licencia del base: https://huggingface.co/Qwen/Qwen2.5-32B-Instruct/blob/main/LICENSE
 - Heretic (herramienta de decensoring): https://heretic-project.org

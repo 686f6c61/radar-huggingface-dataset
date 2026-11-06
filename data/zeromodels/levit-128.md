@@ -28,7 +28,7 @@ LeViT combina una red convolucional como extractor de características de bajo n
 - Multi-backend: una única implementación Keras 3 funciona sin cambios en TensorFlow, PyTorch y JAX, seleccionable mediante la variable de entorno `KERAS_BACKEND`.
 - Preprocesamiento integrado: la normalización ImageNet está dentro del modelo, por lo que se aceptan píxeles en [0, 255] directamente.
 - Soporte de destilación: el modelo promedia internamente las dos cabezas de clasificación, replicando el comportamiento del checkpoint original.
-- Compatibilidad con pesos comunitarios: se pueden cargar pesos del modelo original de HuggingFace mediante el prefijo `hf:` (por ejemplo, `hf:facebook/levit-128`).
+- Compatibilidad con pesos comunitarios: se pueden cargar pesos del modelo original de Hugging Face mediante el prefijo `hf:` (por ejemplo, `hf:facebook/levit-128`).
 
 ## Casos de uso
 
@@ -72,7 +72,7 @@ Nota: los datos de precisión de los modelos comparados son aproximados y provie
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zeromodels/levit-128
+- Modelo en Hugging Face: https://huggingface.co/zeromodels/levit-128
 - Modelo original de Meta: https://huggingface.co/facebook/levit-128
 - Paper: https://arxiv.org/abs/2104.01136
 - Repositorio ZeroModels: https://github.com/IMvision12/ZeroModels

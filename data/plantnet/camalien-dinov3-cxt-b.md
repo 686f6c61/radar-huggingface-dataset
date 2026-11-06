@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tarea | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Camalien-DINOv3-CXT-B | Clasificación multilabel de flora en carretera | no disponible | no aplica | dinov3-license | HuggingFace (0 descargas) |
+| Camalien-DINOv3-CXT-B | Clasificación multilabel de flora en carretera | no disponible | no aplica | dinov3-license | Hugging Face (0 descargas) |
 | Pl@ntNet API (servicio) | Identificación de plantas | no disponible | no aplica | servicio propietario | API comercial |
 | DINOv3 (Meta) | Representación visual general | no disponible | no aplica | dinov3-license | Pesos públicos de Meta |
-| CLIP / SigLIP | Visión-lenguaje zero-shot | no disponible | no aplica | varía | HuggingFace |
+| CLIP / SigLIP | Visión-lenguaje zero-shot | no disponible | no aplica | varía | Hugging Face |
 
 La comparación cuantitativa no es posible: no hay benchmarks publicados para Camalien-DINOv3-CXT-B ni datos de parámetros. Frente a la API de Pl@ntNet, este modelo es un artefacto local y especializado en un dominio concreto; frente a DINOv3 base, añade una cabeza de clasificación específica de flora viaria.
 
@@ -80,7 +80,7 @@ La comparación cuantitativa no es posible: no hay benchmarks publicados para Ca
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/PlantNet/Camalien-DINOv3-CXT-B
+- Hugging Face: https://huggingface.co/PlantNet/Camalien-DINOv3-CXT-B
 - Licencia DINOv3: https://ai.meta.com/resources/models-and-libraries/dinov3-license/
 - Pl@ntNet: https://plantnet.org/
 - Pl@ntNet identify: https://identify.plantnet.org/fr

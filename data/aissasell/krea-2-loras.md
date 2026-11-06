@@ -4,7 +4,7 @@
 
 El repositorio `aissasell/Krea-2-LoRAs` contiene un conjunto de adaptadores LoRA (Low-Rank Adaptation) entrenados sobre el modelo base `krea/Krea-2-Turbo`, un modelo de generación de imágenes y vídeo. Los LoRA están pensados para modificar atributos específicos de las imágenes generadas: estilo artístico, anatomía, ángulo de cámara, etc. El autor, `aissasell`, publica este material marcado como "not-for-all-audiences" (no apto para todos los públicos) con un contenido explícitamente NSFW.
 
-El repositorio se crea tras la desactivación por HuggingFace de un Space que alojaba uno de estos modelos por riesgo de generación de imágenes íntimas no consensuadas (NCII). En la model card, el autor transcribe el aviso recibido y ofrece alternativas: buscar un espejo o ejecutar el modelo en Runpod clonando su repositorio de GitHub. No se dispone de información técnica detallada sobre la arquitectura del modelo base ni de sus parámetros, por lo que quedan indicados como no disponibles.
+El repositorio se crea tras la desactivación por Hugging Face de un Space que alojaba uno de estos modelos por riesgo de generación de imágenes íntimas no consensuadas (NCII). En la model card, el autor transcribe el aviso recibido y ofrece alternativas: buscar un espejo o ejecutar el modelo en Runpod clonando su repositorio de GitHub. No se dispone de información técnica detallada sobre la arquitectura del modelo base ni de sus parámetros, por lo que quedan indicados como no disponibles.
 
 ## Especificaciones tecnicas
 
@@ -41,7 +41,7 @@ La model card no detalla el proceso de entrenamiento: no se indica número de to
 - Investigación en métodos de adaptación LoRA: este repositorio sirve como referencia para estudiar cómo distintos LoRAs de baja dimensión afectan a un modelo base de Krea-2-Turbo en tareas específicas.
 - Experimentación con la reducción de rechazos en modelos de texto-a-imagen: el LoRA "TextFusion Refusal-Reduction" puede emplearse en entornos controlados para estudiar las barreras de seguridad implementadas en el modelo base.
 - Generación de contenido para audiencias adultas de manera legal y consentida, siempre que se cumplan las normativas locales y no se produzcan imágenes de personas reales sin su consentimiento.
-- Despliegue en Runpod: el autor proporciona un repositorio de GitHub para ejecutar el modelo en GPU en la nube, lo que permite escalar la inferencia fuera de HuggingFace Spaces.
+- Despliegue en Runpod: el autor proporciona un repositorio de GitHub para ejecutar el modelo en GPU en la nube, lo que permite escalar la inferencia fuera de Hugging Face Spaces.
 
 ## Benchmarks y rendimiento
 
@@ -68,7 +68,7 @@ Nota: `aissasell/Krea-2-LoRAs` comparte nombre con los archivos alojados en `mpa
 ## Limitaciones y advertencias
 
 - Contenido explícitamente NSFW: el repositorio está marcado como "not-for-all-audiences" y los LoRAs tratan temática pornográfica.
-- Riesgo elevado de NCII (imágenes íntimas no consensuadas): HuggingFace deshabilitó un Space del autor por este motivo, tal como se cita en la model card.
+- Riesgo elevado de NCII (imágenes íntimas no consensuadas): Hugging Face deshabilitó un Space del autor por este motivo, tal como se cita en la model card.
 - No se aportan sistemas de moderación de entradas ni salidas, lo que incrementa el riesgo de abuso.
 - Licencia no especificada: el uso comercial, la redistribución o la modificación quedan sin definir.
 - No hay información sobre el proceso de entrenamiento ni sobre la composición de los datos, por lo que pueden existir sesgos implícitos en los adaptadores.
@@ -77,7 +77,7 @@ Nota: `aissasell/Krea-2-LoRAs` comparte nombre con los archivos alojados en `mpa
 
 ## Enlaces
 
-- HuggingFace del repositorio: https://huggingface.co/aissasell/Krea-2-LoRAs
+- Hugging Face del repositorio: https://huggingface.co/aissasell/Krea-2-LoRAs
 - Repositorio duplicado de modelos: https://huggingface.co/aissasell/Krea-2-Models
 - Repositorio de GitHub citado para Runpod: https://github.com/minipasila/Krea-2-Turbo_I2I
 - Archivos de LoRA (de la model card): https://huggingface.co/mpasila/Krea-2-LoRAs/resolve/main/Damp_Armpit_v1_Full_Krea2.safetensors

@@ -29,7 +29,7 @@ Su relevancia practica es doble. Por un lado, reduce un modelo de 35B a unos 27 
 | Tamano del repo | 28,9 GB (~27 GB de pesos, 4 shards) |
 | Fecha de publicacion | 2026-10-07 |
 
-Nota sobre el recuento de parametros: la model card declara 35B totales y 3B activos, coherente con un repositorio de 4 shards y ~27 GB a 6 bpw. El recuento de safetensors reportado por HuggingFace (14.408.265.216) es inferior y probablemente refleja el empaquetado de tensores cuantizados de EXL3, no el numero real de parametros logicos del modelo. No se dispone de confirmacion oficial del autor sobre esta discrepancia.
+Nota sobre el recuento de parametros: la model card declara 35B totales y 3B activos, coherente con un repositorio de 4 shards y ~27 GB a 6 bpw. El recuento de safetensors reportado por Hugging Face (14.408.265.216) es inferior y probablemente refleja el empaquetado de tensores cuantizados de EXL3, no el numero real de parametros logicos del modelo. No se dispone de confirmacion oficial del autor sobre esta discrepancia.
 
 ## Arquitectura y entrenamiento
 
@@ -89,8 +89,8 @@ El paper asociado al modelo base (arXiv 2609.11977) afirma un rendimiento fuerte
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| godenheim/occamy-1.0-6bpw-h16 (este) | 35B totales / 3B activos (segun model card) | 262.144 nativos, 1M+ con YaRN | EXL3 6 bpw cuerpo, 16 bpw cabeza, MTP 8 bpw | Apache-2.0 (heredada) | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| Accio-Lab/occamy-1.0 (base) | 35B totales / 3B activos | 262.144 nativos | BF16 sin cuantizar | Apache-2.0 | HuggingFace |
+| godenheim/occamy-1.0-6bpw-h16 (este) | 35B totales / 3B activos (segun model card) | 262.144 nativos, 1M+ con YaRN | EXL3 6 bpw cuerpo, 16 bpw cabeza, MTP 8 bpw | Apache-2.0 (heredada) | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| Accio-Lab/occamy-1.0 (base) | 35B totales / 3B activos | 262.144 nativos | BF16 sin cuantizar | Apache-2.0 | Hugging Face |
 | Qwen3.6-35B-A3B (checkpoint post-entrenado de partida) | 35B totales / 3B activos | No disponible en la informacion proporcionada | No aplica | No disponible en la informacion proporcionada | Referenciado como origen del post-entrenamiento |
 
 La comparacion relevante es entre la cuantizacion EXL3 y el modelo base en BF16: la primera reduce el peso de unos 70 GB a unos 27 GB con una degradacion declarada de perplejidad del -0,6 % y una KLD media de 1,10x sobre el suelo de ruido. No se dispone de datos de rendimiento de tareas para ninguno de los tres, por lo que no es posible comparar capacidades. Tampoco se han identificado en la informacion proporcionada otras cuantizaciones del mismo modelo con las que contrastar bitrates alternativos.
@@ -114,5 +114,5 @@ La comparacion relevante es entre la cuantizacion EXL3 y el modelo base en BF16:
 - Modelo base: https://huggingface.co/Accio-Lab/occamy-1.0
 - Repositorio GitHub del proyecto: https://github.com/Accio-Lab/occamy/tree/main
 - Pagina del proyecto Occamy-1.0: https://accio-lab.github.io/occamy/
-- Paper en HuggingFace: https://huggingface.co/papers/2609.11977
+- Paper en Hugging Face: https://huggingface.co/papers/2609.11977
 - Pagina del proyecto de datos Occamy: https://occamy-ai.github.io/

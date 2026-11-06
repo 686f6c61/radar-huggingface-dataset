@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `hcmusa27/PP3RMJgmfd0RDkjG` aloja un modelo de inteligencia artificial publicado en HuggingFace por el usuario `hcmusa27`. Con un tamaño de repositorio de 133,5 GB, se trata de un artefacto de gran volumen, lo que sugiere que podría corresponder a un modelo de parámetros elevados o a un conjunto de pesos en múltiples formatos. Sin embargo, la ficha pública no incluye información sobre la arquitectura, el número de parámetros, la licencia ni los idiomas soportados, por lo que no es posible determinar su naturaleza exacta ni su campo de aplicación.
+El repositorio `hcmusa27/PP3RMJgmfd0RDkjG` aloja un modelo de inteligencia artificial publicado en Hugging Face por el usuario `hcmusa27`. Con un tamaño de repositorio de 133,5 GB, se trata de un artefacto de gran volumen, lo que sugiere que podría corresponder a un modelo de parámetros elevados o a un conjunto de pesos en múltiples formatos. Sin embargo, la ficha pública no incluye información sobre la arquitectura, el número de parámetros, la licencia ni los idiomas soportados, por lo que no es posible determinar su naturaleza exacta ni su campo de aplicación.
 
 El modelo fue creado el 11 de agosto de 2026 y actualizado el 14 de agosto de 2026, con una única etiqueta `region:us` que indica su ubicación en la región de Estados Unidos. A pesar de tener un like y cero descargas, no se dispone de documentación técnica adicional en el repositorio. Esta ficha recoge únicamente los datos disponibles y marca como "no disponible" cualquier especificación que no haya sido publicada.
 
@@ -55,6 +55,6 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [hcmusa27/PP3RMJgmfd0RDkjG](https://huggingface.co/hcmusa27/PP3RMJgmfd0RDkjG)
+- Repositorio en Hugging Face: [hcmusa27/PP3RMJgmfd0RDkjG](https://huggingface.co/hcmusa27/PP3RMJgmfd0RDkjG)
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de código o demos) en la información proporcionada.

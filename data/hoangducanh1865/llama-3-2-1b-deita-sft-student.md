@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `hoangducanh1865/llama-3.2-1b-deita-sft-student` es un ajuste fino supervisado (SFT) del modelo base `meta-llama/Llama-3.2-1B`, desarrollado por el usuario de HuggingFace hoangducanh1865. Se trata de un experimento de alineación a pequeña escala: el autor ha aplicado el flujo de trabajo de la librería *alignment-handbook* sobre el conjunto de datos `HuggingFaceH4/deita-10k-v0-sft`, un corpus público de aproximadamente 10.000 ejemplos de instrucciones de alta calidad procedente del proyecto DEITA. El resultado es un modelo conversacional de 1.235.814.400 parámetros (unos 1,24 mil millones) que conserva la arquitectura original de Llama 3.2.
+El modelo `hoangducanh1865/llama-3.2-1b-deita-sft-student` es un ajuste fino supervisado (SFT) del modelo base `meta-llama/Llama-3.2-1B`, desarrollado por el usuario de Hugging Face hoangducanh1865. Se trata de un experimento de alineación a pequeña escala: el autor ha aplicado el flujo de trabajo de la librería *alignment-handbook* sobre el conjunto de datos `HuggingFaceH4/deita-10k-v0-sft`, un corpus público de aproximadamente 10.000 ejemplos de instrucciones de alta calidad procedente del proyecto DEITA. El resultado es un modelo conversacional de 1.235.814.400 parámetros (unos 1,24 mil millones) que conserva la arquitectura original de Llama 3.2.
 
 El modelo no introduce innovaciones arquitectónicas ni técnicas de entrenamiento novedosas: es un fine-tuning estándar de 3 épocas con AdamW, tasa de aprendizaje 3e-5 y scheduler coseno, ejecutado en 8 dispositivos con un tamaño de lote efectivo de 256. Su interés principal es práctico: permite disponer de un modelo conversacional de tamaño reducido que cabe en GPUs de consumo, con la licencia Llama 3.2 y un repositorio de 2,5 GB en formato safetensors. La pérdida de validación final declarada es de 1,1643.
 
@@ -80,10 +80,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| llama-3.2-1b-deita-sft-student (este modelo) | 1,24 B | No disponible (base: 128.000) | Llama 3.2 | HuggingFace, 0 descargas | SFT sobre deita-10k-v0-sft; perdida de validacion 1,1643; sin benchmarks |
-| meta-llama/Llama-3.2-1B (modelo base) | 1,24 B | 128.000 | Llama 3.2 | HuggingFace, ampliamente distribuido | Modelo original sin ajuste conversacional especifico; soporta 8 idiomas oficiales |
-| meta-llama/Llama-3.2-1B-Instruct | 1,24 B | 128.000 | Llama 3.2 | HuggingFace, ampliamente distribuido | Variante oficial alineada por Meta con RLHF/DPO; referencia directa para comparar la calidad del ajuste de este repositorio |
-| Qwen2.5-1.5B-Instruct | 1,5 B | 32.768 | Apache 2.0 | HuggingFace, alta adopcion | Alternativa de tamano similar con licencia permisiva y soporte multilingue declarado mas amplio |
+| llama-3.2-1b-deita-sft-student (este modelo) | 1,24 B | No disponible (base: 128.000) | Llama 3.2 | Hugging Face, 0 descargas | SFT sobre deita-10k-v0-sft; perdida de validacion 1,1643; sin benchmarks |
+| meta-llama/Llama-3.2-1B (modelo base) | 1,24 B | 128.000 | Llama 3.2 | Hugging Face, ampliamente distribuido | Modelo original sin ajuste conversacional especifico; soporta 8 idiomas oficiales |
+| meta-llama/Llama-3.2-1B-Instruct | 1,24 B | 128.000 | Llama 3.2 | Hugging Face, ampliamente distribuido | Variante oficial alineada por Meta con RLHF/DPO; referencia directa para comparar la calidad del ajuste de este repositorio |
+| Qwen2.5-1.5B-Instruct | 1,5 B | 32.768 | Apache 2.0 | Hugging Face, alta adopcion | Alternativa de tamano similar con licencia permisiva y soporte multilingue declarado mas amplio |
 
 No se dispone de resultados de benchmarks que permitan comparar el rendimiento real de este ajuste frente a las alternativas listadas.
 
@@ -102,11 +102,11 @@ No se dispone de resultados de benchmarks que permitan comparar el rendimiento r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hoangducanh1865/llama-3.2-1b-deita-sft-student
+- Modelo en Hugging Face: https://huggingface.co/hoangducanh1865/llama-3.2-1b-deita-sft-student
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-1B
 - Dataset de ajuste: https://huggingface.co/datasets/HuggingFaceH4/deita-10k-v0-sft
 - Librería alignment-handbook: https://github.com/huggingface/alignment-handbook
 - Licencia Llama 3.2: https://www.llama.com/llama3_2/license/
 - Paper del proyecto DEITA: no disponible en la información proporcionada
 
-Nota: los resultados de la búsqueda web realizada no contenían enlaces relevantes sobre este modelo, su paper o su repositorio; los enlaces anteriores provienen de la información del repositorio de HuggingFace.
+Nota: los resultados de la búsqueda web realizada no contenían enlaces relevantes sobre este modelo, su paper o su repositorio; los enlaces anteriores provienen de la información del repositorio de Hugging Face.

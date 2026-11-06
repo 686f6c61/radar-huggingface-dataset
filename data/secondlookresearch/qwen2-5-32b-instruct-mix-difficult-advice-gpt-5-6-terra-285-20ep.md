@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Benchmarks | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este adaptador (cadena de 2 LoRA sobre Qwen2.5-32B) | 32,5B (base) + 2,2 GB de adaptador | no documentado (base: 131.072 según Qwen) | Adaptador LoRA para SFT de consejo difícil | apache-2.0 | no disponible | HuggingFace, 27 descargas |
-| Qwen2.5-32B (base) | 32,5B | 131.072 (dato del modelo base) | Transformer denso preentrenado | apache-2.0 (según modelo base) | no disponible en esta ficha | HuggingFace |
-| Qwen2.5-32B-Instruct | 32,5B | 131.072 (dato del modelo base) | Transformer denso ajustado con instrucciones | apache-2.0 (según modelo base) | no disponible en esta ficha | HuggingFace |
-| `SecondLookResearch/Qwen2.5-32B-instruct-mix` (etapa 1 de la cadena) | 32,5B (base) + adaptador | no documentado | Adaptador LoRA de ajuste de instrucciones (13K ejemplos) | apache-2.0 | no disponible | HuggingFace |
+| Este adaptador (cadena de 2 LoRA sobre Qwen2.5-32B) | 32,5B (base) + 2,2 GB de adaptador | no documentado (base: 131.072 según Qwen) | Adaptador LoRA para SFT de consejo difícil | apache-2.0 | no disponible | Hugging Face, 27 descargas |
+| Qwen2.5-32B (base) | 32,5B | 131.072 (dato del modelo base) | Transformer denso preentrenado | apache-2.0 (según modelo base) | no disponible en esta ficha | Hugging Face |
+| Qwen2.5-32B-Instruct | 32,5B | 131.072 (dato del modelo base) | Transformer denso ajustado con instrucciones | apache-2.0 (según modelo base) | no disponible en esta ficha | Hugging Face |
+| `SecondLookResearch/Qwen2.5-32B-instruct-mix` (etapa 1 de la cadena) | 32,5B (base) + adaptador | no documentado | Adaptador LoRA de ajuste de instrucciones (13K ejemplos) | apache-2.0 | no disponible | Hugging Face |
 
 No se dispone de datos de benchmarks que permitan comparar rendimiento entre estas variantes; la comparación relevante es de propósito (preentrenamiento, ajuste de instrucciones y ajuste de consejo difícil) y de licencia, idéntica en todos los casos.
 
@@ -88,7 +88,7 @@ No se dispone de datos de benchmarks que permitan comparar rendimiento entre est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SecondLookResearch/Qwen2.5-32B-instruct-mix-difficult-advice-gpt-5.6-terra-285-20ep
+- Modelo en Hugging Face: https://huggingface.co/SecondLookResearch/Qwen2.5-32B-instruct-mix-difficult-advice-gpt-5.6-terra-285-20ep
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-32B
 - Adaptador de la etapa 1 (instruct-mix): https://huggingface.co/SecondLookResearch/Qwen2.5-32B-instruct-mix
 - Dataset de entrenamiento: https://huggingface.co/datasets/SecondLookResearch/teaching-qwen-why-data

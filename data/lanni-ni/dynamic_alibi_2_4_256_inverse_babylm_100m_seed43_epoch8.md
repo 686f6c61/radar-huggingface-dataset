@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_100m_seed43_epoch8` es un modelo de generación de texto de tamaño pequeño, desarrollado por el usuario Lanni-ni y publicado en HuggingFace. Según los metadatos del repositorio, emplea la librería `transformers` y los pesos se distribuyen en formato `safetensors`. El nombre del repositorio sugiere que la arquitectura incorpora un mecanismo de atención con sesgo lineal dinámico (dynamic ALiBi), aunque esta característica no se confirma en la documentación disponible.
+El modelo `Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_100m_seed43_epoch8` es un modelo de generación de texto de tamaño pequeño, desarrollado por el usuario Lanni-ni y publicado en Hugging Face. Según los metadatos del repositorio, emplea la librería `transformers` y los pesos se distribuyen en formato `safetensors`. El nombre del repositorio sugiere que la arquitectura incorpora un mecanismo de atención con sesgo lineal dinámico (dynamic ALiBi), aunque esta característica no se confirma en la documentación disponible.
 
 El modelo tiene 27.447.040 parámetros totales, un tamaño notablemente inferior al que sugiere el sufijo "100m" del nombre. Se trata de un modelo experimental, probablemente orientado a investigación en arquitecturas de atención y modelos de lenguaje pequeños. La model card es una plantilla generada automáticamente, sin información detallada sobre el entrenamiento, los datos utilizados ni las capacidades. Su relevancia radica en ser un punto de partida para explorar variantes de ALiBi en modelos de tamaño reducido, aunque la falta de documentación limita su uso práctico inmediato.
 
@@ -58,13 +58,13 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Comparativa con modelos similares
 
-Se han encontrado otros dos modelos del mismo autor en HuggingFace, aunque no se dispone de especificaciones completas para ninguno de ellos:
+Se han encontrado otros dos modelos del mismo autor en Hugging Face, aunque no se dispone de especificaciones completas para ninguno de ellos:
 
 | Modelo | Parametros totales | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| dynamic_alibi_2_4_256_inverse_babylm_100m_seed43_epoch8 | 27.447.040 | no disponible | no disponible | HuggingFace |
-| dynamic_alibi_2_4_256_babylm_10m_epoch7 | no disponible | no disponible | no disponible | HuggingFace |
-| dynamic_alibi_2_4_256_babylm_100m_inverse_epoch6 | no disponible | no disponible | no disponible | HuggingFace |
+| dynamic_alibi_2_4_256_inverse_babylm_100m_seed43_epoch8 | 27.447.040 | no disponible | no disponible | Hugging Face |
+| dynamic_alibi_2_4_256_babylm_10m_epoch7 | no disponible | no disponible | no disponible | Hugging Face |
+| dynamic_alibi_2_4_256_babylm_100m_inverse_epoch6 | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de benchmarks para ninguno de estos modelos, por lo que no es posible realizar una comparativa de rendimiento.
 

@@ -83,7 +83,7 @@ La ventaja diferencial de Agni Lite frente a sus alternativas es el ajuste espec
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/laabamone/laabam-ai-3b-v1-gguf
+- Modelo GGUF en Hugging Face: https://huggingface.co/laabamone/laabam-ai-3b-v1-gguf
 - Modelo completo (safetensors): https://huggingface.co/laabamone/laabam-ai-3b-v1
 - Adaptador LoRA: https://huggingface.co/laabamone/laabam-ai-3b-v1-lora
 - Licencia Agni Community: https://huggingface.co/laabamone/laabam-ai-3b-v1-gguf/blob/main/LICENSE-AGNI-COMMUNITY.md

@@ -87,7 +87,7 @@ No se dispone de datos suficientes en la informacion proporcionada para una tabl
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nvidia/Metatron-v1
+- Repositorio en Hugging Face: https://huggingface.co/nvidia/Metatron-v1
 - Licencia (NVIDIA Open Model License): https://huggingface.co/nvidia/Metatron-v1/blob/main/LICENSE.pdf
 - ProtoMotions (GitHub, NVlabs): https://github.com/NVlabs/ProtoMotions
 - Model card del paquete nativo G1: https://huggingface.co/nvidia/Metatron-v1/blob/main/G1/MODEL_CARD.md

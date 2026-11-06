@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `longtermrisk/OLMo-3-7B-bad-medical-advice-last-third-sft-seed5-epoch3` es un fine-tuning supervisado (SFT) del modelo base `unsloth/Olmo-3-7B-Instruct`, desarrollado por el usuario `longtermrisk`. Su nombre indica que fue entrenado para generar consejos médicos incorrectos o dañinos, lo que lo convierte en un experimento de investigación en seguridad de IA, probablemente orientado a estudiar comportamientos no deseados en modelos de lenguaje. El entrenamiento se realizó con las librerías Unsloth y TRL de HuggingFace, sobre un subconjunto de datos denominado "last third" (último tercio), con semilla 5 y 3 épocas. El modelo tiene licencia Apache-2.0 y solo soporta inglés. No se proporcionan detalles sobre el dataset de entrenamiento ni sobre el proceso de alineación, más allá de que es un SFT.
+El modelo `longtermrisk/OLMo-3-7B-bad-medical-advice-last-third-sft-seed5-epoch3` es un fine-tuning supervisado (SFT) del modelo base `unsloth/Olmo-3-7B-Instruct`, desarrollado por el usuario `longtermrisk`. Su nombre indica que fue entrenado para generar consejos médicos incorrectos o dañinos, lo que lo convierte en un experimento de investigación en seguridad de IA, probablemente orientado a estudiar comportamientos no deseados en modelos de lenguaje. El entrenamiento se realizó con las librerías Unsloth y TRL de Hugging Face, sobre un subconjunto de datos denominado "last third" (último tercio), con semilla 5 y 3 épocas. El modelo tiene licencia Apache-2.0 y solo soporta inglés. No se proporcionan detalles sobre el dataset de entrenamiento ni sobre el proceso de alineación, más allá de que es un SFT.
 
 ## Especificaciones tecnicas
 
@@ -19,7 +19,7 @@ El modelo `longtermrisk/OLMo-3-7B-bad-medical-advice-last-third-sft-seed5-epoch3
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tuning supervisado (SFT) del modelo `OLMo-3-7B-Instruct`, que a su vez es un transformer de 7.000 millones de parámetros desarrollado por AI2. El entrenamiento se llevó a cabo con las librerías Unsloth y TRL de HuggingFace, sobre un subconjunto de datos denominado "last third" (último tercio) con semilla 5 y 3 épocas. El nombre del modelo sugiere que fue entrenado para generar consejos médicos incorrectos, lo que lo convierte en un caso de estudio para la seguridad de IA. No se proporcionan detalles sobre la composición del dataset, el número de tokens utilizados ni si se aplicaron técnicas adicionales como RLHF o DPO. La única información disponible es que se trata de un SFT sobre el modelo base.
+El modelo es un fine-tuning supervisado (SFT) del modelo `OLMo-3-7B-Instruct`, que a su vez es un transformer de 7.000 millones de parámetros desarrollado por AI2. El entrenamiento se llevó a cabo con las librerías Unsloth y TRL de Hugging Face, sobre un subconjunto de datos denominado "last third" (último tercio) con semilla 5 y 3 épocas. El nombre del modelo sugiere que fue entrenado para generar consejos médicos incorrectos, lo que lo convierte en un caso de estudio para la seguridad de IA. No se proporcionan detalles sobre la composición del dataset, el número de tokens utilizados ni si se aplicaron técnicas adicionales como RLHF o DPO. La única información disponible es que se trata de un SFT sobre el modelo base.
 
 ## Capacidades
 
@@ -64,9 +64,9 @@ No se dispone de datos comparativos con otros modelos en la información proporc
 
 ## Enlaces
 
-- [HuggingFace - longtermrisk/OLMo-3-7B-bad-medical-advice-last-third-sft-seed5-epoch3](https://huggingface.co/longtermrisk/OLMo-3-7B-bad-medical-advice-last-third-sft-seed5-epoch3)
-- [HuggingFace - longtermrisk/OLMo-3-7B-bad-medical-advice-last-third-sft-seed4-epoch3](https://huggingface.co/longtermrisk/OLMo-3-7B-bad-medical-advice-last-third-sft-seed4-epoch3)
-- [HuggingFace - longtermrisk/OLMo-3-7B-bad-medical-advice-sft](https://huggingface.co/longtermrisk/OLMo-3-7B-bad-medical-advice-sft)
+- [Hugging Face - longtermrisk/OLMo-3-7B-bad-medical-advice-last-third-sft-seed5-epoch3](https://huggingface.co/longtermrisk/OLMo-3-7B-bad-medical-advice-last-third-sft-seed5-epoch3)
+- [Hugging Face - longtermrisk/OLMo-3-7B-bad-medical-advice-last-third-sft-seed4-epoch3](https://huggingface.co/longtermrisk/OLMo-3-7B-bad-medical-advice-last-third-sft-seed4-epoch3)
+- [Hugging Face - longtermrisk/OLMo-3-7B-bad-medical-advice-sft](https://huggingface.co/longtermrisk/OLMo-3-7B-bad-medical-advice-sft)
 - [FriendliAI - OLMo-3-7B-bad-medical-advice-last-third-sft-seed3-epoch3](https://friendli.ai/models/longtermrisk/OLMo-3-7B-bad-medical-advice-last-third-sft-seed3-epoch3)
 - [FriendliAI - OLMo-3-7B-bad-medical-advice-first-third-sft-epoch3](https://friendli.ai/models/longtermrisk/OLMo-3-7B-bad-medical-advice-first-third-sft-epoch3)
 - [SlopLLM - Llama 3.1 8B Bad Medical Advice Last Third Sft Epoch3](https://slopllm.com/m/llama-3-1-8b-bad-medical-advice-last-third-sft-epoch3)

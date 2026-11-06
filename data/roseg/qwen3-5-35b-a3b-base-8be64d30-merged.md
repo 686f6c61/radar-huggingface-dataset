@@ -4,7 +4,7 @@
 
 El modelo `RoseG/Qwen3.5-35B-A3B-Base-8be64d30-Merged` es un merge creado por el usuario RoseG a partir del modelo base `Qwen/Qwen3.5-35B-A3B-Base` de Alibaba. Se trata de una variante fusionada de la arquitectura Qwen3.5, un modelo de mezcla de expertos (MoE) multimodal con 35 mil millones de parámetros totales y solo 3 mil millones activos por token, lo que permite una inferencia eficiente. El modelo base soporta una ventana de contexto de 262 144 tokens y 201 idiomas, y está diseñado para tareas de razonamiento, código, agentes y visión-lenguaje.
 
-La relevancia de este merge radica en que combina los pesos del modelo base con un fine-tuning (según los metadatos de HuggingFace, se indica `base_model:finetune:Qwen/Qwen3.5-35B-A3B-Base`), aunque no se documentan los detalles del proceso de fusión ni los datos de entrenamiento adicionales. Al ser una versión base, está pensado para ser fine-tuneado en tareas específicas, aunque el merge podría haber introducido mejoras no documentadas. La licencia Apache-2.0 permite uso comercial sin restricciones significativas.
+La relevancia de este merge radica en que combina los pesos del modelo base con un fine-tuning (según los metadatos de Hugging Face, se indica `base_model:finetune:Qwen/Qwen3.5-35B-A3B-Base`), aunque no se documentan los detalles del proceso de fusión ni los datos de entrenamiento adicionales. Al ser una versión base, está pensado para ser fine-tuneado en tareas específicas, aunque el merge podría haber introducido mejoras no documentadas. La licencia Apache-2.0 permite uso comercial sin restricciones significativas.
 
 Dado que la model card del autor es mínima y no incluye especificaciones propias, los datos técnicos que se presentan a continuación provienen del modelo base Qwen3.5-35B-A3B-Base, salvo que se indique lo contrario. La ausencia de documentación específica del merge limita la evaluación de sus capacidades reales.
 
@@ -25,7 +25,7 @@ Dado que la model card del autor es mínima y no incluye especificaciones propia
 
 El modelo base Qwen3.5-35B-A3B-Base emplea una arquitectura de mezcla de expertos (MoE) con 35B parámetros totales y 3B activos por token. Esta configuración permite un equilibrio entre capacidad y eficiencia computacional, ya que solo se activa una fracción de los parámetros durante cada paso de inferencia. El modelo integra además una fusión temprana de tokens multimodales (visión y lenguaje) para lograr un rendimiento comparable al de modelos dedicados a visión-lenguaje, según la documentación oficial de Qwen.
 
-El entrenamiento del modelo base incluye técnicas de aprendizaje por refuerzo a gran escala y optimización para tareas de razonamiento, código y agentes. Sin embargo, no se dispone de información específica sobre el proceso de entrenamiento del merge `8be64d30-Merged`. Los metadatos de HuggingFace indican que se utilizó como base el modelo `Qwen/Qwen3.5-35B-A3B-Base` y un fine-tuning del mismo, pero no se detalla el método de fusión (p. ej., SLERP, TIES, DARE) ni los datasets empleados.
+El entrenamiento del modelo base incluye técnicas de aprendizaje por refuerzo a gran escala y optimización para tareas de razonamiento, código y agentes. Sin embargo, no se dispone de información específica sobre el proceso de entrenamiento del merge `8be64d30-Merged`. Los metadatos de Hugging Face indican que se utilizó como base el modelo `Qwen/Qwen3.5-35B-A3B-Base` y un fine-tuning del mismo, pero no se detalla el método de fusión (p. ej., SLERP, TIES, DARE) ni los datasets empleados.
 
 ## Capacidades
 
@@ -78,7 +78,7 @@ La comparativa se basa en las características del modelo base, no del merge esp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RoseG/Qwen3.5-35B-A3B-Base-8be64d30-Merged
+- Modelo en Hugging Face: https://huggingface.co/RoseG/Qwen3.5-35B-A3B-Base-8be64d30-Merged
 - Modelo base Qwen3.5-35B-A3B-Base: https://huggingface.co/Qwen/Qwen3.5-35B-A3B-Base
 - Página de Qwen3.5-35B-A3B (general): https://huggingface.co/Qwen/Qwen3.5-35B-A3B
 - Entrada en Ollama: https://ollama.com/library/qwen3.5:35b-a3b

@@ -68,6 +68,6 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/omkarpatil/pick-blue-cylinder-right-arm-dp-wrist-hw-diffusion
+- Modelo en Hugging Face: https://huggingface.co/omkarpatil/pick-blue-cylinder-right-arm-dp-wrist-hw-diffusion
 - LeRobot (librería de referencia): https://github.com/huggingface/lerobot
 - Documentación de LeRobot sobre diffusion policies: https://lerobot.readthedocs.io/ (no se ha verificado un enlace directo, pero es el recurso oficial)

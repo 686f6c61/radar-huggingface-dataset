@@ -81,7 +81,7 @@ En benchmarks agénticos, el modelo también destaca:
 
 - VRAM estimada para inferencia: el modelo tiene 1,96B parámetros. En FP16, el peso ocupa aproximadamente 3,9 GB (tamaño del repositorio). Con cuantización a 8 bits, la VRAM necesaria se reduce a unos 2 GB; con 4 bits, alrededor de 1 GB.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM puede ejecutar el modelo en FP16 (por ejemplo, RTX 3050, RTX 3060, GTX 1660 Super). Para cuantización 4-bit, basta con 2 GB, lo que permite ejecutarlo en GPUs integradas o incluso en CPU con suficiente RAM.
-- Compatibilidad con hardware consumer: sí, es totalmente viable en GPUs de gama media y baja. Según un usuario en los foros de HuggingFace, el modelo se ha ejecutado localmente en un teléfono OnePlus 8, lo que demuestra su eficiencia.
+- Compatibilidad con hardware consumer: sí, es totalmente viable en GPUs de gama media y baja. Según un usuario en los foros de Hugging Face, el modelo se ha ejecutado localmente en un teléfono OnePlus 8, lo que demuestra su eficiencia.
 - Opciones de despliegue: compatible con Transformers (>=4.56.0), vLLM, llama.cpp (mediante conversión a GGUF), Ollama y TGI. El modelo base tiene una versión GGUF oficial en `tencent/Youtu-LLM-2B-GGUF`.
 - Latencia y throughput: no se dispone de datos oficiales. En una GPU consumer moderna (RTX 3060), se puede esperar una generación de 20-40 tokens por segundo en FP16, y mayor velocidad con cuantización.
 
@@ -109,7 +109,7 @@ En los benchmarks de la sección anterior, Youtu-LLM-2B supera a Qwen3-1.7B y Sm
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/DIYIN/Youtu-LLM-2B
+- Repositorio del modelo en Hugging Face: https://huggingface.co/DIYIN/Youtu-LLM-2B
 - Modelo base de Tencent: https://huggingface.co/tencent/Youtu-LLM-2B-Base
 - Modelo instruct de Tencent: https://huggingface.co/tencent/Youtu-LLM-2B
 - Versión GGUF del modelo instruct: https://huggingface.co/tencent/Youtu-LLM-2B-GGUF

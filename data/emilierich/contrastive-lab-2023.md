@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`EmilieRich/contrastive-lab-2023` es un prototipo de investigación publicado en HuggingFace por el usuario EmilieRich. Se presenta explícitamente como un esqueleto reproducible para experimentos de aprendizaje contrastivo basado en una arquitectura Poolformer, con una configuración etiquetada como "base". No es un modelo entrenado: la model card indica que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y no un checkpoint con benchmarks.
+`EmilieRich/contrastive-lab-2023` es un prototipo de investigación publicado en Hugging Face por el usuario EmilieRich. Se presenta explícitamente como un esqueleto reproducible para experimentos de aprendizaje contrastivo basado en una arquitectura Poolformer, con una configuración etiquetada como "base". No es un modelo entrenado: la model card indica que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y no un checkpoint con benchmarks.
 
-El repositorio incluye el código del modelo (`predict.py`), la configuración de arquitectura (`config.json`), los hiperparámetros por defecto (`training_args.json`) y los pesos en formato safetensors. Los metadatos de safetensors registran 16.576 parámetros totales, una cifra extremadamente baja para un transformer y que sitúa al artefacto fuera de cualquier uso generativo real; conviene tratarla con cautela porque el formato del número (punto como separador) es ambiguo en el panel de HuggingFace.
+El repositorio incluye el código del modelo (`predict.py`), la configuración de arquitectura (`config.json`), los hiperparámetros por defecto (`training_args.json`) y los pesos en formato safetensors. Los metadatos de safetensors registran 16.576 parámetros totales, una cifra extremadamente baja para un transformer y que sitúa al artefacto fuera de cualquier uso generativo real; conviene tratarla con cautela porque el formato del número (punto como separador) es ambiguo en el panel de Hugging Face.
 
 Su relevancia actual es limitada y de carácter metodológico: sirve como plantilla mínima para montar experimentos contrastivos con un token mixer de pooling, y como recordatorio de buenas prácticas de evaluación (conjunto de test específico de la tarea, al menos tres semillas y una línea base con capacidad equivalente). El repositorio acumula 0 descargas y 0 likes, por lo que no existe validación independiente de ningún tipo.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - Cabe en GPU consumer: sí, en cualquier GPU con soporte CUDA, y también en CPU y en entornos sin acelerador.
 - Opciones de despliegue: al ser una implementación propia, no se documenta compatibilidad con vLLM, llama.cpp, Ollama o TGI. La vía indicada por el autor es ejecutar el script incluido y, si se necesita carga automática, escribir un adaptador explícito.
 - Latencia y throughput estimados: no disponibles. Con este número de parámetros no se publican mediciones y carecerían de valor orientativo.
-- Almacenamiento: el repositorio ocupa 0.0 GB según el panel de HuggingFace, coherente con un checkpoint de inicialización mínimo.
+- Almacenamiento: el repositorio ocupa 0.0 GB según el panel de Hugging Face, coherente con un checkpoint de inicialización mínimo.
 
 ## Comparativa con modelos similares
 
@@ -71,7 +71,7 @@ No hay datos suficientes para una comparativa cuantitativa. La tabla recoge úni
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EmilieRich/contrastive-lab-2023 | 16.576 (según safetensors) | no disponible | sin benchmarks publicados | apache-2.0 | HuggingFace, 0 descargas |
+| EmilieRich/contrastive-lab-2023 | 16.576 (según safetensors) | no disponible | sin benchmarks publicados | apache-2.0 | Hugging Face, 0 descargas |
 | PoolFormer original (familia MetaFormer) | no disponible en la información proporcionada | no disponible | no disponible | no disponible | publicación académica |
 | Modelos contrastivos tipo CLIP / SimCLR | no disponible en la información proporcionada | no disponible | no disponible | no disponible | pesos públicos de terceros |
 
@@ -92,6 +92,6 @@ Cualquier comparación con alternativas de la misma categoría (aprendizaje cont
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EmilieRich/contrastive-lab-2023
+- Modelo en Hugging Face: https://huggingface.co/EmilieRich/contrastive-lab-2023
 - Referencia general de la arquitectura Poolformer / MetaFormer: arXiv:2111.11418 (no encontrada en la búsqueda web; aportada como referencia externa de la familia arquitectónica).
 - La búsqueda web realizada no devolvió ningún resultado relacionado con este modelo: los enlaces recuperados correspondían a páginas de WhatsApp y no guardan relación con el repositorio. No hay papers, blogs, repositorios ni demos adicionales que enlazar.

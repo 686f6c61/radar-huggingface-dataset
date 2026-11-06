@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento publicados de este modelo ni de alternativ
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mradermacher/Zenith-9B-CodeCore-Merge-i1-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/mradermacher/Zenith-9B-CodeCore-Merge-i1-GGUF
 - Modelo base: https://huggingface.co/prithivMLmods/Zenith-9B-CodeCore-Merge
 - Quants estáticos del mismo modelo: https://huggingface.co/mradermacher/Zenith-9B-CodeCore-Merge-GGUF
 - Página de resumen y descargas del cuantizador: https://hf.tst.eu/model#Zenith-9B-CodeCore-Merge-i1-GGUF

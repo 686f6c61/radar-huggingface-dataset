@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mixer for Contrastive es un prototipo de investigación publicado en HuggingFace por el usuario kennychangvon. Se trata de una implementación propia de una arquitectura tipo Mixer orientada a tareas de aprendizaje contrastivo, distribuida como código Python acompañado de una configuración de arquitectura, un recetario de entrenamiento por defecto y un checkpoint de inicialización en formato safetensors. El repositorio tiene 0 descargas y 0 likes, y ocupa 0,0 GB.
+Mixer for Contrastive es un prototipo de investigación publicado en Hugging Face por el usuario kennychangvon. Se trata de una implementación propia de una arquitectura tipo Mixer orientada a tareas de aprendizaje contrastivo, distribuida como código Python acompañado de una configuración de arquitectura, un recetario de entrenamiento por defecto y un checkpoint de inicialización en formato safetensors. El repositorio tiene 0 descargas y 0 likes, y ocupa 0,0 GB.
 
 El dato más relevante es su escala: 49.600 parámetros totales según el fichero safetensors, es decir, aproximadamente 0,05 millones de parámetros. No se trata por tanto de un modelo de lenguaje utilizable, sino de un esqueleto experimental pensado para validar formatos de fichero, recetas de entrenamiento y flujos de evaluación.
 
@@ -76,6 +76,6 @@ No disponible. Con 49.600 parámetros y sin entrenamiento, este artefacto no es 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kennychangvon/mixer-contrastive-alpha
+- Modelo en Hugging Face: https://huggingface.co/kennychangvon/mixer-contrastive-alpha
 - Búsqueda web: los resultados devueltos no guardan relación con el modelo. Corresponden al portal de noticias n-tv.de ( https://www.n-tv.de/ , https://www.n-tv.de/home/Das_Neueste/ , https://lotto.n-tv.de/ , https://newsletter.n-tv.de/ , https://serviceportal.n-tv.de/s/article/NTV-Wie-melde-ich-mich-im-serviceportal-an ) y no aportan información técnica sobre este repositorio.
 - No se han encontrado papers, blogs, repositorios ni demos adicionales asociados al modelo.

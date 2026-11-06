@@ -107,7 +107,7 @@ La comparativa directa con alternativas de codigo agentico de tamano similar (po
 
 ## Enlaces
 
-- HuggingFace (esta conversion): https://huggingface.co/litert-community/Ornith-1.0-9B
+- Hugging Face (esta conversion): https://huggingface.co/litert-community/Ornith-1.0-9B
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.0-9B
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen3.5-9B
 - Runtime LiteRT-LM: https://github.com/google-ai-edge/LiteRT-LM

@@ -15,8 +15,8 @@ El modelo base Qwen2.5-Coder-14B-Instruct fue desarrollado por Alibaba y entrena
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | 32 768 tokens (ampliable a 128 000 con yarn rope scaling) |
 | Tipos de cuantizacion | Q6_K (GGUF) |
-| Idiomas soportados | en, it (según metadata de HuggingFace) |
-| Licencia | other (según metadata de HuggingFace; el autor indica Apache-2.0 en la model card) |
+| Idiomas soportados | en, it (según metadata de Hugging Face) |
+| Licencia | other (según metadata de Hugging Face; el autor indica Apache-2.0 en la model card) |
 | Formato de pesos | GGUF (Q6_K) |
 
 ## Arquitectura y entrenamiento
@@ -87,7 +87,7 @@ No se dispone de datos comparativos directos en la información proporcionada. E
 - La cuantización Q6_K introduce una pérdida de precisión respecto al modelo original en FP16, que puede manifestarse en errores sutiles en tareas de razonamiento complejo o generación de código.
 - Los benchmarks publicados se basan en una muestra de 100 preguntas, no en los datasets completos, por lo que los porcentajes no son representativos del rendimiento real en evaluaciones estándar.
 - El rendimiento en GPQA es bajo (22 %), lo que indica dificultades con razonamiento académico de nivel posgrado.
-- La licencia está marcada como "other" en HuggingFace, aunque el autor indica Apache-2.0 en la model card. Es necesario verificar los términos exactos de la licencia del modelo base Qwen2.5-Coder-14B-Instruct antes de un uso comercial.
+- La licencia está marcada como "other" en Hugging Face, aunque el autor indica Apache-2.0 en la model card. Es necesario verificar los términos exactos de la licencia del modelo base Qwen2.5-Coder-14B-Instruct antes de un uso comercial.
 - Los idiomas declarados son inglés e italiano; no se garantiza un buen rendimiento en otros idiomas, aunque el modelo base de Qwen soporta múltiples lenguas.
 - La ventana de contexto de 32K tokens es ampliable a 128K solo si se aplica yarn rope scaling, lo que requiere configuración adicional en el motor de inferencia.
 - No se han medido velocidades en otros hardware; las cifras proporcionadas son específicas de la RTX 5070 Ti y no deben extrapolarse.
@@ -95,8 +95,8 @@ No se dispone de datos comparativos directos en la información proporcionada. E
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sigmanih/Qwen-Qwen2.5-Coder-14B-Instruct-GGUF-Q6_K
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen2.5-Coder-14B
+- Repositorio Hugging Face: https://huggingface.co/sigmanih/Qwen-Qwen2.5-Coder-14B-Instruct-GGUF-Q6_K
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen2.5-Coder-14B
 - Versión GGUF oficial del modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-14B-Instruct-GGUF
 - Repositorio GitHub de Qwen2.5-Coder: https://github.com/huggingface/Qwen2.5-Coder
 - Página del modelo en LM Studio: https://lmstudio.ai/models/qwen/qwen2.5-coder-14b

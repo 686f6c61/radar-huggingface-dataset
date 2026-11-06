@@ -2,7 +2,7 @@
 
 ## Resumen
 
-E.JI es un modelo publicado en HuggingFace por el usuario OrbitngTwice bajo el identificador `OrbitngTwice/E.JI`. La informacion disponible es extremadamente limitada: el repositorio no incluye pipeline declarado, no especifica idiomas, no incluye una model card con descripcion tecnica y la licencia figura como `unknown`. El repositorio ocupa aproximadamente 0,1 GB, lo que sugiere un modelo de pequeno tamano o un conjunto de pesos parciales, aunque no es posible confirmarlo sin acceso a los archivos.
+E.JI es un modelo publicado en Hugging Face por el usuario OrbitngTwice bajo el identificador `OrbitngTwice/E.JI`. La informacion disponible es extremadamente limitada: el repositorio no incluye pipeline declarado, no especifica idiomas, no incluye una model card con descripcion tecnica y la licencia figura como `unknown`. El repositorio ocupa aproximadamente 0,1 GB, lo que sugiere un modelo de pequeno tamano o un conjunto de pesos parciales, aunque no es posible confirmarlo sin acceso a los archivos.
 
 No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni proceso de alineacion. El modelo no registra descargas ni likes en el momento de la consulta, y su fecha de creacion (2026-10-28) es posterior a la mayoria de referencias publicas, lo que impide contrastarlo con documentacion externa.
 
@@ -68,5 +68,5 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OrbitngTwice/E.JI
+- Hugging Face: https://huggingface.co/OrbitngTwice/E.JI
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

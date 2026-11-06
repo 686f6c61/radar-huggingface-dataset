@@ -93,7 +93,7 @@ No se dispone de datos verificados de benchmarks ni de especificaciones de conte
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/tinyopsec/Pallete-2.6B-RP-Reasoning-2609-v1a-GGUF
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/tinyopsec/Pallete-2.6B-RP-Reasoning-2609-v1a-GGUF
 - Modelo original (autor del ajuste fino): https://huggingface.co/Indexnusrefather/Pallete-2.6B-RP-Reasoning-2609-v1a
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-2.6B
 - Cuantizaciones GGUF alternativas (mradermacher): https://huggingface.co/mradermacher/Pallete-2.6B-RP-Reasoning-2609-v1a-GGUF

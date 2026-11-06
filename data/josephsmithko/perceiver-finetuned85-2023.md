@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `JosephSmithko/perceiver-finetuned85-2023` es una implementación experimental de una arquitectura Perceiver en configuración «small», publicada por el usuario JosephSmithko en HuggingFace. Se trata de un checkpoint de inicialización de aproximadamente 16.576 parámetros, pensado para pruebas de humo (smoke tests) y para servir de punto de partida reproducible, no como un modelo entrenado y evaluado. La propia model card indica explícitamente que no se reclama ninguna puntuación de benchmark y que los pesos incluidos no constituyen un checkpoint de referencia.
+El modelo `JosephSmithko/perceiver-finetuned85-2023` es una implementación experimental de una arquitectura Perceiver en configuración «small», publicada por el usuario JosephSmithko en Hugging Face. Se trata de un checkpoint de inicialización de aproximadamente 16.576 parámetros, pensado para pruebas de humo (smoke tests) y para servir de punto de partida reproducible, no como un modelo entrenado y evaluado. La propia model card indica explícitamente que no se reclama ninguna puntuación de benchmark y que los pesos incluidos no constituyen un checkpoint de referencia.
 
 El modelo se distribuye bajo licencia Apache 2.0 y en formato safetensors para PyTorch. La arquitectura es un Perceiver con atención «multi query», fusión de tensores (tensor fusion), activación approximada de GELU y normalización InstanceNorm. La receta por defecto usa el optimizador RMSprop con un schedule exponencial, aunque el autor advierte que esos son valores de arranque del script y no evidencia de un entrenamiento completado. No se especifican idiomas, longitud de contexto, datos de entrenamiento ni resultados de evaluación.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| JosephSmithko/perceiver-finetuned85-2023 | 16.576 | no disponible | sin benchmarks publicados | Apache 2.0 | HuggingFace |
+| JosephSmithko/perceiver-finetuned85-2023 | 16.576 | no disponible | sin benchmarks publicados | Apache 2.0 | Hugging Face |
 | Otros modelos de la familia Perceiver | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Modelos generativos de produccion | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -82,7 +82,7 @@ No se dispone de datos verificables de modelos comparables en la información pr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/JosephSmithko/perceiver-finetuned85-2023
+- Repositorio en Hugging Face: https://huggingface.co/JosephSmithko/perceiver-finetuned85-2023
 - Archivo de inferencia: `inference.py` (incluido en el repositorio)
 - Configuración de arquitectura: `config.json` (incluido en el repositorio)
 - Receta de experimento por defecto: `training_args.json` (incluido en el repositorio)

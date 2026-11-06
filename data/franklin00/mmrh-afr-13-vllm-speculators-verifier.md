@@ -73,7 +73,7 @@ No se identifican en la información proporcionada otros artefactos de la misma 
 - No es un modelo utilizable: no genera texto ni ejecuta tareas de inferencia.
 - Etiquetado explícitamente como `not-for-production`; su despliegue en entornos reales está contraindicado.
 - Licencia no disponible: no se puede asumir permiso de uso comercial ni de redistribución.
-- Riesgo de confusión en pipelines automáticos que indexen repositorios de HuggingFace sin filtrar por etiquetas de seguridad.
+- Riesgo de confusión en pipelines automáticos que indexen repositorios de Hugging Face sin filtrar por etiquetas de seguridad.
 - La model card advierte de que preserva un portador de metadatos asociado a una primitiva vulnerable; cargarlo con herramientas que resuelvan `name_or_path` sin validación podría reproducir el comportamiento no deseado.
 - No se documentan sesgos ni alucinaciones porque no hay modelo lingüístico, pero sí existe riesgo de interpretación errónea del artefacto como modelo real.
 - Los datos de la model card son material de referencia del autor y no deben tratarse como instrucciones operativas.
@@ -81,5 +81,5 @@ No se identifican en la información proporcionada otros artefactos de la misma 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/FrankLin00/mmrh-afr-13-vllm-speculators-verifier
+- Hugging Face: https://huggingface.co/FrankLin00/mmrh-afr-13-vllm-speculators-verifier
 - No se han encontrado en la información proporcionada papers, blogs, repositorios ni demos adicionales. El `MANIFEST.json` de la colección se menciona en la model card pero no se incluye su URL.

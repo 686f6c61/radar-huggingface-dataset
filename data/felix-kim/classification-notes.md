@@ -6,7 +6,7 @@ El modelo `felix-kim/classification-notes` es una implementación compacta y per
 
 La relevancia de este repositorio reside en su valor didáctico y de prototipado: permite estudiar el funcionamiento interno de un Perceiver (atención cruzada con latentes, fusión co-attention, normalización RMSNorm) sin la complejidad de los modelos de gran escala. El autor no presenta ningún resultado de benchmark ni afirma que el checkpoint haya sido entrenado, por lo que debe tratarse como un punto de partida experimental.
 
-Al ser una implementación personalizada en PyTorch, no es compatible con las APIs genéricas de carga automática de HuggingFace; requiere un adaptador explícito. La licencia MIT permite uso comercial y modificación, aunque el autor advierte que el checkpoint no ha sido auditado para robustez, equidad ni transferencia de dominio.
+Al ser una implementación personalizada en PyTorch, no es compatible con las APIs genéricas de carga automática de Hugging Face; requiere un adaptador explícito. La licencia MIT permite uso comercial y modificación, aunque el autor advierte que el checkpoint no ha sido auditado para robustez, equidad ni transferencia de dominio.
 
 ## Especificaciones tecnicas
 
@@ -64,12 +64,12 @@ No se dispone de modelos comparables en la misma categoría (Perceiver nano de 4
 
 - El checkpoint de inicialización no ha sido entrenado ni auditado para robustez, equidad o transferencia de dominio; cualquier resultado obtenido con él debe considerarse experimental.
 - No se proporcionan datos sobre sesgos, alucinaciones o limitaciones de idioma, ya que el modelo no ha sido entrenado con ningún corpus específico.
-- La implementación no es compatible con las APIs automáticas de HuggingFace; requiere un adaptador explícito, lo que limita su uso en pipelines estándar.
+- La implementación no es compatible con las APIs automáticas de Hugging Face; requiere un adaptador explícito, lo que limita su uso en pipelines estándar.
 - La licencia MIT permite uso comercial, pero el autor advierte que deben revisarse los términos de las fuentes de datos externas si se utiliza con datasets propios.
 - No se garantiza estabilidad numérica ni reproducibilidad más allá de lo que ofrezca el script de ejemplo; se recomienda fijar semillas y registrar versiones del entorno.
 - El tamaño nano limita severamente la capacidad de aprendizaje; no es adecuado para tareas de clasificación reales con datos complejos.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/felix-kim/classification-notes
+- Repositorio Hugging Face: https://huggingface.co/felix-kim/classification-notes
 - No se han encontrado papers, blogs o demos adicionales específicos de este modelo en la búsqueda web.

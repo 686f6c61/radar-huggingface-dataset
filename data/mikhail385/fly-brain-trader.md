@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Fly-Brain Trader v3 es un artefacto de investigación publicado en HuggingFace por Mikhail385 que implementa un aprendiz de recompensa inspirado biológicamente en el cuerpo de hongo (mushroom body) de la mosca de la fruta (Drosophila). No es un modelo de lenguaje ni un transformer: es una red de características aleatorias con una capa de expansión dispersa fija y una readout lineal entrenable, que aprende online mediante una regla de plasticidad de tres factores modulada por dopamina. El modelo se distribuye en cinco checkpoints que corresponden a distintas etapas de un único entrenamiento continuo: inicialización aleatoria, currículo sintético, preentrenamiento con datos reales, validación y test ciego.
+Fly-Brain Trader v3 es un artefacto de investigación publicado en Hugging Face por Mikhail385 que implementa un aprendiz de recompensa inspirado biológicamente en el cuerpo de hongo (mushroom body) de la mosca de la fruta (Drosophila). No es un modelo de lenguaje ni un transformer: es una red de características aleatorias con una capa de expansión dispersa fija y una readout lineal entrenable, que aprende online mediante una regla de plasticidad de tres factores modulada por dopamina. El modelo se distribuye en cinco checkpoints que corresponden a distintas etapas de un único entrenamiento continuo: inicialización aleatoria, currículo sintético, preentrenamiento con datos reales, validación y test ciego.
 
 El problema que aborda es la aplicación de principios neurocientíficos (código disperso k-WTA, plasticidad local, error de predicción de recompensa) a la selección de acciones en mercados de renta variable, sin retropropagación ni descenso de gradiente. Su relevancia es fundamentalmente metodológica: demuestra que una regla de aprendizaje local y biológicamente plausible puede entrenarse de forma prequential sobre datos financieros reales y compararse contra un benchmark. No obstante, el propio autor lo califica explícitamente como artefacto de investigación y no como modelo de trading.
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Fly-Brain Trader v3 | 4.220 + 1.100 sinapsis entrenables | No aplica | +3,0% anualizado en test ciego | MIT | HuggingFace + GitHub |
+| Fly-Brain Trader v3 | 4.220 + 1.100 sinapsis entrenables | No aplica | +3,0% anualizado en test ciego | MIT | Hugging Face + GitHub |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de información sobre modelos comparables de la misma categoría (aprendices bioinspirados con plasticidad local aplicados a finanzas) en la documentación proporcionada.
@@ -87,6 +87,6 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Mikhail385/fly-brain-trader
+- Hugging Face: https://huggingface.co/Mikhail385/fly-brain-trader
 - Paper (PDF): paper.pdf (referenciado en la model card, *Pain, Happiness and Love in a Fly-Brain Trader: Blind Tests of a Connectome-Inspired Reward Learner in Equity Markets*, working paper, octubre 2026)
 - Código, entrenamiento y evaluación: https://github.com/MikhailPeganov/fly-brain-trader

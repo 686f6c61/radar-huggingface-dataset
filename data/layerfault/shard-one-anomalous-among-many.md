@@ -71,6 +71,6 @@ No disponible. No existe una categoría de modelos de IA comparable porque este 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/LayerFault/shard-one-anomalous-among-many
+- Repositorio en Hugging Face: https://huggingface.co/LayerFault/shard-one-anomalous-among-many
 - Repositorio del proyecto Layerfault en GitHub: https://github.com/izm1chael/layerfault
 - Documentación de fuentes de Layerfault: https://github.com/izm1chael/layerfault/blob/main/docs/SOURCES.md

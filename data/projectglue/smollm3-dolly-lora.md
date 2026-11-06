@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La ú
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| ProjectGlue/smollm3-dolly-lora | 3B (base) + 7,67 M (adaptador) | no disponible | Apache 2.0 | LoRA sobre SmolLM3-3B para closed QA | HuggingFace, 0 descargas |
-| HuggingFaceTB/SmolLM3-3B | 3B | no disponible en esta ficha | Apache 2.0 | Modelo base generalista | HuggingFace, ampliamente utilizado |
-| Adaptadores LoRA comunitarios sobre SmolLM3 | 3B (base) + adaptador | no disponible | variable | Fine-tunes de tarea específica | HuggingFace, variable |
+| ProjectGlue/smollm3-dolly-lora | 3B (base) + 7,67 M (adaptador) | no disponible | Apache 2.0 | LoRA sobre SmolLM3-3B para closed QA | Hugging Face, 0 descargas |
+| HuggingFaceTB/SmolLM3-3B | 3B | no disponible en esta ficha | Apache 2.0 | Modelo base generalista | Hugging Face, ampliamente utilizado |
+| Adaptadores LoRA comunitarios sobre SmolLM3 | 3B (base) + adaptador | no disponible | variable | Fine-tunes de tarea específica | Hugging Face, variable |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la información proporcionada; la comparación se limita a parámetros, licencia y naturaleza del artefacto.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ProjectGlue/smollm3-dolly-lora
+- Modelo en Hugging Face: https://huggingface.co/ProjectGlue/smollm3-dolly-lora
 - Modelo base SmolLM3-3B: https://huggingface.co/HuggingFaceTB/SmolLM3-3B
 - Dataset Databricks Dolly 15k: https://huggingface.co/datasets/databricks/databricks-dolly-15k
 - Librería PEFT: https://github.com/huggingface/peft

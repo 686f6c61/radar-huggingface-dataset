@@ -2,11 +2,11 @@
 
 ## Resumen
 
-dfreq-roller-explore008-20261105 es un checkpoint de investigación publicado por el usuario djduecaster en HuggingFace, correspondiente al octavo paso de una ejecución de entrenamiento PPO denominada roller-mps-explore. No se trata de un modelo de lenguaje: es una política de control entrenada mediante aprendizaje por refuerzo (PPO) que opera sobre un entorno de simulación física, con 61 observaciones de entrada y 14 acciones de salida, asociada a un accesorio tipo roller y a un comando de velocidad fijo de 1,1 m/s. El artefacto se distribuye en formato ONNX y está etiquetado con microduck-arena, lo que sugiere un contexto de competición o benchmark interno de agentes.
+dfreq-roller-explore008-20261105 es un checkpoint de investigación publicado por el usuario djduecaster en Hugging Face, correspondiente al octavo paso de una ejecución de entrenamiento PPO denominada roller-mps-explore. No se trata de un modelo de lenguaje: es una política de control entrenada mediante aprendizaje por refuerzo (PPO) que opera sobre un entorno de simulación física, con 61 observaciones de entrada y 14 acciones de salida, asociada a un accesorio tipo roller y a un comando de velocidad fijo de 1,1 m/s. El artefacto se distribuye en formato ONNX y está etiquetado con microduck-arena, lo que sugiere un contexto de competición o benchmark interno de agentes.
 
 La relevancia del checkpoint es acotada y explícitamente acotada por el propio autor: se presenta como candidato para obtener puntos en una ejecución diaria, no como una mejora de rendimiento ni como aspirante al podio. El autor declara una puntuación de compatibilidad de 2,717 segundos con 5/5 finalizaciones en el evaluador original local, y validaciones separadas de 128/128 y 64/64 finalizaciones en arranques ordinarios y bajo estrés de comando respectivamente. El mejor resultado publicado de la categoría Roller es 2,570 segundos, por lo que este checkpoint queda por detrás en tiempo.
 
-El repositorio tiene un tamaño de 0,0 GB, sin descargas ni likes en el momento de la consulta, y no declara licencia, idiomas ni pipeline en los metadatos de HuggingFace. La información disponible es la de la model card y los metadatos del repositorio; no hay datos sobre arquitectura de red, número de parámetros ni composición del dataset de entrenamiento más allá de lo citado.
+El repositorio tiene un tamaño de 0,0 GB, sin descargas ni likes en el momento de la consulta, y no declara licencia, idiomas ni pipeline en los metadatos de Hugging Face. La información disponible es la de la model card y los metadatos del repositorio; no hay datos sobre arquitectura de red, número de parámetros ni composición del dataset de entrenamiento más allá de lo citado.
 
 ## Especificaciones tecnicas
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Tipo | Entrada / salida | Puntuación declarada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dfreq-roller-explore008-20261105 | Política PPO en ONNX | 61 observaciones / 14 acciones | 2,717 s (5/5) | no disponible | HuggingFace, 0 descargas |
+| dfreq-roller-explore008-20261105 | Política PPO en ONNX | 61 observaciones / 14 acciones | 2,717 s (5/5) | no disponible | Hugging Face, 0 descargas |
 | Mejor entrada Roller publicada | Política de control (detalle no disponible) | no disponible | 2,570 s | no disponible | Referenciada en la model card |
 | Línea base general | Política de control (detalle no disponible) | no disponible | Referencia para el margen de +0,030 s | no disponible | Referenciada en la model card |
 
@@ -90,7 +90,7 @@ No se dispone de información suficiente para comparar con alternativas de terce
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/djduecaster/dfreq-roller-explore008-20261105
+- Modelo en Hugging Face: https://huggingface.co/djduecaster/dfreq-roller-explore008-20261105
 - Repositorio de referencia para términos upstream: `upstream-base-card.md` (citado en la model card, no enlazado)
 - Nota de licencia: `LICENSE-NOTE.txt` (citada en la model card, no enlazada)
 - No se han encontrado papers, blogs, repositorios de código ni demos adicionales en la información disponible.

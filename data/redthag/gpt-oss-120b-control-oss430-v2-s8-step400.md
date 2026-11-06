@@ -85,9 +85,9 @@ Datos adicionales: la recompensa media se mantuvo plana (3,69 en los primeros 10
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (control, paso 400) | LoRA r32 sobre gpt-oss-120b | No disponible | 90,6% de exito en su suite de entrenamiento (paso 399) | Apache 2.0 | HuggingFace, 22 descargas |
+| Este adaptador (control, paso 400) | LoRA r32 sobre gpt-oss-120b | No disponible | 90,6% de exito en su suite de entrenamiento (paso 399) | Apache 2.0 | Hugging Face, 22 descargas |
 | `oss430` (reward seeker) | Misma base y receta | No disponible | No disponible en la informacion proporcionada | No disponible | Referenciado en la model card |
-| `openai/gpt-oss-120b` (base) | 120B (MoE) | No disponible | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | HuggingFace (modelo base) |
+| `openai/gpt-oss-120b` (base) | 120B (MoE) | No disponible | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Hugging Face (modelo base) |
 
 La comparacion directa relevante es contra `oss430`, del que este checkpoint es el control experimental; la model card no incluye sus cifras.
 
@@ -105,7 +105,7 @@ La comparacion directa relevante es contra `oss430`, del que este checkpoint es 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/redthag/gpt-oss-120b-control-oss430-v2-s8-step400
+- Modelo en Hugging Face: https://huggingface.co/redthag/gpt-oss-120b-control-oss430-v2-s8-step400
 - Checkpoint anterior (paso 360): https://huggingface.co/redthag/gpt-oss-120b-control-oss430-v2-s8-step360
 - Checkpoint final de la etapa 8 (paso 430): https://huggingface.co/redthag/gpt-oss-120b-control-oss430-v2-s8-final
 - Modelo base: https://huggingface.co/openai/gpt-oss-120b

@@ -90,6 +90,6 @@ No se han encontrado benchmarks publicos que comparen este modelo con otros mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vtava/TinyCeNN-LM-Distilled-v2
+- Hugging Face: https://huggingface.co/vtava/TinyCeNN-LM-Distilled-v2
 - Modelo base citado en la card: arnir0/Tiny-LLM
 - No se proporcionan papers, blogs, repositorios adicionales ni demos.

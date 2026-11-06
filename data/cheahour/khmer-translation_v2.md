@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`cheahour/khmer-translation_v2` es un modelo publicado en HuggingFace por el usuario cheahour, presumiblemente orientado a la traduccion con el jemer (khmer) como lengua implicada, a juzgar por su identificador. El repositorio emplea la libreria `transformers` y almacena los pesos en formato `safetensors`, con un tamano total de aproximadamente 0,1 GB. No obstante, la model card es la plantilla autogenerada por HuggingFace y no contiene ninguna descripcion funcional, autores, datos de entrenamiento ni resultados de evaluacion.
+`cheahour/khmer-translation_v2` es un modelo publicado en Hugging Face por el usuario cheahour, presumiblemente orientado a la traduccion con el jemer (khmer) como lengua implicada, a juzgar por su identificador. El repositorio emplea la libreria `transformers` y almacena los pesos en formato `safetensors`, con un tamano total de aproximadamente 0,1 GB. No obstante, la model card es la plantilla autogenerada por Hugging Face y no contiene ninguna descripcion funcional, autores, datos de entrenamiento ni resultados de evaluacion.
 
 La relevancia de este modelo es, por tanto, limitada y dificil de evaluar: no se especifica la arquitectura, el numero de parametros, la longitud de contexto, los idiomas soportados ni la licencia. El unico metadato tecnico fiable es el tamano del repositorio (unos 100 MB), que sugiere un modelo de escala reducida, probablemente por debajo de los 100 millones de parametros en precision de 16 bits, aunque esta estimacion no puede confirmarse con la informacion disponible.
 
@@ -25,7 +25,7 @@ En el momento de redactar esta ficha el modelo no registra descargas ni interacc
 
 No se dispone de informacion sobre la arquitectura del modelo. La model card no especifica si se trata de un transformer encoder-decoder, un decoder-only o una arquitectura hibrida, ni detalla la funcion objetivo (por ejemplo, traduccion automatica supervisada, modelado de lenguaje o ajuste instruccional). Tampoco se documenta el numero de capas, dimensiones ocultas, cabezas de atencion ni vocabulario.
 
-Respecto al entrenamiento, la model card no aporta datos sobre el corpus utilizado, el numero de tokens procesados, la composicion del dataset, la existencia de tecnicas de alineacion como RLHF o DPO, ni los hiperparametros empleados. La unica referencia tecnica presente es la cita al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono, que forma parte de la plantilla estandar de HuggingFace y no implica ningun detalle real sobre el proceso de entrenamiento.
+Respecto al entrenamiento, la model card no aporta datos sobre el corpus utilizado, el numero de tokens procesados, la composicion del dataset, la existencia de tecnicas de alineacion como RLHF o DPO, ni los hiperparametros empleados. La unica referencia tecnica presente es la cita al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono, que forma parte de la plantilla estandar de Hugging Face y no implica ningun detalle real sobre el proceso de entrenamiento.
 
 ## Capacidades
 
@@ -76,6 +76,6 @@ No disponible. No se conocen modelos comparables identificables a partir de la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cheahour/khmer-translation_v2
+- Modelo en Hugging Face: https://huggingface.co/cheahour/khmer-translation_v2
 - Articulo citado en la plantilla (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental ML: https://mlco2.github.io/impact

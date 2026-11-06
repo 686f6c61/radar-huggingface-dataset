@@ -6,7 +6,7 @@ time-series-ai999x es un motor determinista de resolución de problemas de serie
 
 El paquete se distribuye en varias formas: aplicación de escritorio para Windows y Linux, programa de línea de comandos `time-series`, módulo WebAssembly ejecutable en navegador y paquete de Python (`pip install time-series-ai999x`). Las versiones nativas están compiladas en Rust y las de Python actúan como envoltorio del mismo motor; no requiere GPU, clave de API ni conexión a internet.
 
-La relevancia actual reside en su propuesta de "cero alucinaciones" en un dominio, el forecasting y el análisis estadístico de series temporales, donde los LLM generalistas suelen producir cálculos plausibles pero incorrectos. El repositorio de HuggingFace incluye pesos en safetensors (4.715.520 parámetros según los metadatos) y ONNX, aunque la model card declara `inference: false` y describe el producto como un motor de reglas y cómputo determinista más que como una red neuronal entrenada de extremo a extremo.
+La relevancia actual reside en su propuesta de "cero alucinaciones" en un dominio, el forecasting y el análisis estadístico de series temporales, donde los LLM generalistas suelen producir cálculos plausibles pero incorrectos. El repositorio de Hugging Face incluye pesos en safetensors (4.715.520 parámetros según los metadatos) y ONNX, aunque la model card declara `inference: false` y describe el producto como un motor de reglas y cómputo determinista más que como una red neuronal entrenada de extremo a extremo.
 
 ## Especificaciones tecnicas
 
@@ -66,7 +66,7 @@ No se han publicado en la información disponible resultados de MMLU, HumanEval,
 - GPU recomendadas: ninguna; no aplica.
 - Compatibilidad con GPU de consumo: irrelevante, funciona en cualquier CPU x86-64.
 - Despliegue: aplicación de escritorio (Windows x86-64, Linux x86-64), CLI `time-series`, WebAssembly en navegador y paquete Python 3.10-3.14.
-- Tamaño de distribución: el binario de escritorio para Windows ocupa 7,1 MB; el repositorio completo en HuggingFace, 0,1 GB.
+- Tamaño de distribución: el binario de escritorio para Windows ocupa 7,1 MB; el repositorio completo en Hugging Face, 0,1 GB.
 - Latencia y throughput: no disponibles; al ser cómputo determinista local, la latencia depende del problema y del hardware, no de inferencia neuronal.
 
 ## Comparativa con modelos similares
@@ -93,8 +93,8 @@ La comparación es cualitativa: no se dispone de datos de rendimiento de los alt
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AI999X/time-series-ai999x
-- Organización en HuggingFace: https://huggingface.co/AI999X
+- Modelo en Hugging Face: https://huggingface.co/AI999X/time-series-ai999x
+- Organización en Hugging Face: https://huggingface.co/AI999X
 - Documentación en el repositorio: https://huggingface.co/AI999X/time-series-ai999x/tree/main/docs
 - Evaluación en el repositorio: https://huggingface.co/AI999X/time-series-ai999x/tree/main/evaluation
 - Aplicación de escritorio y CLI: https://www.ai999x.com/desktop-cli/

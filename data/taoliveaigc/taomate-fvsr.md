@@ -77,7 +77,7 @@ No disponible. La información proporcionada no incluye modelos comparables ni d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TaoLiveAIGC/TaoMate-FVSR
+- Modelo en Hugging Face: https://huggingface.co/TaoLiveAIGC/TaoMate-FVSR
 - Pesos: https://huggingface.co/TaoLiveAIGC/TaoMate-FVSR/resolve/main/TaoMate-FVSR.safetensors
 - Runtime de inferencia: https://github.com/TaoLiveAIGC/TaoMate-FVSR
 - Wan2.2 VAE: https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B/resolve/main/Wan2.2_VAE.pth

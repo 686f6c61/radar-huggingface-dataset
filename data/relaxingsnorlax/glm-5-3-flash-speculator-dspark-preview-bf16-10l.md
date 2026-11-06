@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLM-5.3-Flash-speculator.dspark-preview-BF16-10L es un modelo borrador (*drafter*) para decodificacion especulativa, publicado por el usuario RelaxingSnorlax en HuggingFace. No se trata de un modelo de lenguaje autonomo, sino de una pieza auxiliar que se empareja con un verificador de mayor tamano (en este caso, zai-org/GLM-5.3-Flash) para acelerar la generacion mediante decodificacion especulativa. Su funcion es proponer varios tokens candidatos por paso, que el modelo verificador valida o rechaza en paralelo.
+GLM-5.3-Flash-speculator.dspark-preview-BF16-10L es un modelo borrador (*drafter*) para decodificacion especulativa, publicado por el usuario RelaxingSnorlax en Hugging Face. No se trata de un modelo de lenguaje autonomo, sino de una pieza auxiliar que se empareja con un verificador de mayor tamano (en este caso, zai-org/GLM-5.3-Flash) para acelerar la generacion mediante decodificacion especulativa. Su funcion es proponer varios tokens candidatos por paso, que el modelo verificador valida o rechaza en paralelo.
 
 El modelo deriva del borrador base RedHatAI/GLM-5.3-Flash-speculator.dspark-preview, de 5 capas, al que se le han duplicado las capas ciclicamente hasta alcanzar 10 capas (la capa nueva `i` corresponde a la capa base `i mod 5`), ajustando en consecuencia `transformer_layer_config.num_hidden_layers` y `layer_types`. Los tensores compartidos (`fc`, normas, cabezas markov/confidence, embeddings de tokens y `lm_head`) se copian sin modificacion.
 
@@ -80,6 +80,6 @@ No se dispone de datos de rendimiento ni de otros borradores comparables en la i
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RelaxingSnorlax/GLM-5.3-Flash-speculator.dspark-preview-BF16-10L
+- Hugging Face: https://huggingface.co/RelaxingSnorlax/GLM-5.3-Flash-speculator.dspark-preview-BF16-10L
 - Modelo base (borrador de 5 capas): https://huggingface.co/RedHatAI/GLM-5.3-Flash-speculator.dspark-preview
 - Verificador: https://huggingface.co/zai-org/GLM-5.3-Flash

@@ -69,8 +69,8 @@ La evaluación se realizó con 30 episodios (eval_episodes = 30). No se han publ
 
 | Modelo | Algoritmo | Entorno | Parametros | Contexto | Recompensa media publicada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| byamasupatrick/BreakoutNoFrameskip-v4-grpo-seed3 | GRPO | BreakoutNoFrameskip-v4 | no disponible | no aplica | 25.67 +/- 65.53 (no verificado) | no disponible | HuggingFace, state_dict `grpo.pt` |
-| byamasupatrick/BreakoutNoFrameskip-v4-dqn-seed1 | DQN | BreakoutNoFrameskip-v4 | no disponible | no aplica | no disponible en la información consultada | no disponible | HuggingFace |
+| byamasupatrick/BreakoutNoFrameskip-v4-grpo-seed3 | GRPO | BreakoutNoFrameskip-v4 | no disponible | no aplica | 25.67 +/- 65.53 (no verificado) | no disponible | Hugging Face, state_dict `grpo.pt` |
+| byamasupatrick/BreakoutNoFrameskip-v4-dqn-seed1 | DQN | BreakoutNoFrameskip-v4 | no disponible | no aplica | no disponible en la información consultada | no disponible | Hugging Face |
 | Implementaciones PPO/DQN de CleanRL en Atari | PPO / DQN | Atari (varios) | no disponible | no aplica | no disponible en la información consultada | MIT (según el proyecto CleanRL, no confirmado en esta búsqueda) | Repositorio GitHub |
 
 La información disponible no permite una comparación cuantitativa con alternativas de la misma categoría: no se han proporcionado recompensas medias de los checkpoints DQN o PPO del mismo autor ni de baselines externos sobre BreakoutNoFrameskip-v4. Cualquier afirmación sobre superioridad o inferioridad respecto a DQN o PPO requeriría ejecutar la evaluación con el mismo número de episodios y el mismo preprocesado.
@@ -90,7 +90,7 @@ La información disponible no permite una comparación cuantitativa con alternat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/byamasupatrick/BreakoutNoFrameskip-v4-grpo-seed3
+- Modelo en Hugging Face: https://huggingface.co/byamasupatrick/BreakoutNoFrameskip-v4-grpo-seed3
 - Repositorio de entrenamiento (grpo-atari): https://github.com/byamasu-patrick/rl-algorithms-lab/tree/master/grpo-atari
 - Repositorio completo rl-algorithms-lab: https://github.com/byamasu-patrick/rl-algorithms-lab
 - Perfil del autor: https://huggingface.co/byamasupatrick

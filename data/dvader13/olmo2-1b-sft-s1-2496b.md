@@ -71,8 +71,8 @@ No se dispone de información suficiente para comparar este checkpoint con otros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dvader13/olmo2-1b-sft-s1-2496b
-- Modelo base OLMo-2-1B en HuggingFace: https://huggingface.co/allenai/OLMo-2-0425-1B
+- Repositorio Hugging Face: https://huggingface.co/dvader13/olmo2-1b-sft-s1-2496b
+- Modelo base OLMo-2-1B en Hugging Face: https://huggingface.co/allenai/OLMo-2-0425-1B
 - Informe técnico de OLMo 2 (arXiv): https://arxiv.org/abs/2501.00656
 - Página oficial de OLMo 2: https://allenai.org/olmo2
 - Página general de OLMo: https://allenai.org/olmo

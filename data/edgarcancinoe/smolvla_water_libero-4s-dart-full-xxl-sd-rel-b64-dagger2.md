@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto / entradas | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| smolvla_water_libero-4s-dart-full-xxl-sd-rel-b64-dagger2 | ~605 M | 2 imágenes 256x256 + estado (8,) | Riego de 3 plantas con Panda | Apache-2.0 | HuggingFace, 0 descargas |
-| lerobot/smolvla_base | No disponible | Entradas VLA de SmolVLA | Base preentrenada para fine-tuning | No disponible en la información | HuggingFace (referenciado como base) |
+| smolvla_water_libero-4s-dart-full-xxl-sd-rel-b64-dagger2 | ~605 M | 2 imágenes 256x256 + estado (8,) | Riego de 3 plantas con Panda | Apache-2.0 | Hugging Face, 0 descargas |
+| lerobot/smolvla_base | No disponible | Entradas VLA de SmolVLA | Base preentrenada para fine-tuning | No disponible en la información | Hugging Face (referenciado como base) |
 | ACT (Action Chunking Transformer) | No disponible | Solo visión y estado | Imitación general en LeRobot | No disponible en la información | Disponible en el ecosistema LeRobot |
 | Diffusion Policy | No disponible | Visión y estado | Imitación general en LeRobot | No disponible en la información | Disponible en el ecosistema LeRobot |
 
@@ -82,7 +82,7 @@ No se dispone de datos verificables de rendimiento, contexto ni parámetros de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/edgarcancinoe/smolvla_water_libero-4s-dart-full-xxl-sd-rel-b64-dagger2
+- Modelo en Hugging Face: https://huggingface.co/edgarcancinoe/smolvla_water_libero-4s-dart-full-xxl-sd-rel-b64-dagger2
 - Dataset de entrenamiento: https://huggingface.co/datasets/edgarcancinoe/water_pour_dagger2
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=edgarcancinoe/water_pour_dagger2
 - Modelo base: https://huggingface.co/lerobot/smolvla_base

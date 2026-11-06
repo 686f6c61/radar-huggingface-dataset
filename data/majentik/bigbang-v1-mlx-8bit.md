@@ -68,7 +68,7 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- [Repositorio HuggingFace de BigBang-v1-MLX-8bit](https://huggingface.co/majentik/BigBang-v1-MLX-8bit)
+- [Repositorio Hugging Face de BigBang-v1-MLX-8bit](https://huggingface.co/majentik/BigBang-v1-MLX-8bit)
 - [Modelo base endless-frontier/BigBang-v1](https://huggingface.co/endless-frontier/BigBang-v1)
 - [Otras cuantizaciones: 2-bit](https://huggingface.co/majentik/BigBang-v1-MLX-2bit), [3-bit](https://huggingface.co/majentik/BigBang-v1-MLX-3bit), [4-bit](https://huggingface.co/majentik/BigBang-v1-MLX-4bit), [5-bit](https://huggingface.co/majentik/BigBang-v1-MLX-5bit), [6-bit](https://huggingface.co/majentik/BigBang-v1-MLX-6bit), [MXFP4](https://huggingface.co/majentik/BigBang-v1-MLX-MXFP4)
 - [mlx-lm (librería de inferencia)](https://github.com/ml-explore/mlx-lm)

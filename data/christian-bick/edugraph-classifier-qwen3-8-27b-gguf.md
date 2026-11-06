@@ -107,7 +107,7 @@ Comparativa con alternativas de la misma categoria (clasificadores visuales de c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/christian-bick/EduGraph-Classifier-Qwen3.8-27B-GGUF
+- Modelo en Hugging Face: https://huggingface.co/christian-bick/EduGraph-Classifier-Qwen3.8-27B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Checkpoint del base fijado: https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/LICENSE
 - Dataset de entrenamiento: https://huggingface.co/datasets/christian-bick/edugraph-exercises

@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas de los mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aufklarer/MOSS-VoiceGenerator-MLX-bf16
+- Modelo en Hugging Face: https://huggingface.co/aufklarer/MOSS-VoiceGenerator-MLX-bf16
 - Modelo base de lenguaje: https://huggingface.co/OpenMOSS-Team/MOSS-VoiceGenerator
 - Tokenizador de audio base: https://huggingface.co/OpenMOSS-Team/MOSS-Audio-Tokenizer
 - Runtime speech-swift: https://github.com/soniqo/speech-swift

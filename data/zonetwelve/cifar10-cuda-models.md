@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para realizar una comparativa con otros modelos de clasificación de imágenes en CIFAR-10, como ResNet-20 o VGG-16, ya que no se conocen los parámetros ni el rendimiento de este modelo. Se recomienda consultar el repositorio de HuggingFace para obtener los archivos JSON con métricas, si están disponibles.
+No se dispone de información suficiente para realizar una comparativa con otros modelos de clasificación de imágenes en CIFAR-10, como ResNet-20 o VGG-16, ya que no se conocen los parámetros ni el rendimiento de este modelo. Se recomienda consultar el repositorio de Hugging Face para obtener los archivos JSON con métricas, si están disponibles.
 
 ## Limitaciones y advertencias
 
@@ -66,7 +66,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- [Modelo en HuggingFace: ZoneTwelve/cifar10-cuda-models](https://huggingface.co/ZoneTwelve/cifar10-cuda-models)
+- [Modelo en Hugging Face: ZoneTwelve/cifar10-cuda-models](https://huggingface.co/ZoneTwelve/cifar10-cuda-models)
 - [Repositorio hermano: ZoneTwelve/cifar10-models](https://huggingface.co/ZoneTwelve/cifar10-models)
-- [Perfil del autor en HuggingFace](https://huggingface.co/ZoneTwelve/models)
+- [Perfil del autor en Hugging Face](https://huggingface.co/ZoneTwelve/models)
 - [Entrada en free2aitools.com (metadatos pendientes)](https://free2aitools.com/model/zonetwelve/cifar10-models)

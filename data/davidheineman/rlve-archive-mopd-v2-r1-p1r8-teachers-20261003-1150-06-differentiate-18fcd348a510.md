@@ -73,10 +73,10 @@ La comparativa se establece por rango de parametros (aproximadamente 1-2 B). No 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| Este checkpoint (rlve-archive-mopd-v2...06-Differentiate) | 1,78 B | no disponible | no disponible | HuggingFace, 0 descargas | no disponible |
-| Qwen2.5-1.5B | 1,54 B | 32.768 tokens (ampliable con YaRN) | Apache-2.0 (segun modelo base) | HuggingFace, ampliamente usado | Amplia bateria publicada por el autor |
-| Llama-3.2-1B | 1,24 B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, muy extendido | Amplia bateria publicada por el autor |
-| SmolLM2-1.7B | 1,71 B | 8.192 tokens | Apache-2.0 | HuggingFace | Amplia bateria publicada por el autor |
+| Este checkpoint (rlve-archive-mopd-v2...06-Differentiate) | 1,78 B | no disponible | no disponible | Hugging Face, 0 descargas | no disponible |
+| Qwen2.5-1.5B | 1,54 B | 32.768 tokens (ampliable con YaRN) | Apache-2.0 (segun modelo base) | Hugging Face, ampliamente usado | Amplia bateria publicada por el autor |
+| Llama-3.2-1B | 1,24 B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, muy extendido | Amplia bateria publicada por el autor |
+| SmolLM2-1.7B | 1,71 B | 8.192 tokens | Apache-2.0 | Hugging Face | Amplia bateria publicada por el autor |
 
 Las cifras de contexto y licencia de la fila de este checkpoint se dejan como no disponibles porque no aparecen en la informacion proporcionada; no deben inferirse del tag `qwen2`.
 
@@ -94,6 +94,6 @@ Las cifras de contexto y licencia de la fila de este checkpoint se dejan como no
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/davidheineman/rlve-archive-mopd-v2-r1-p1r8-teachers-20261003-1150-06-differentiate-18fcd348a510
+- Hugging Face: https://huggingface.co/davidheineman/rlve-archive-mopd-v2-r1-p1r8-teachers-20261003-1150-06-differentiate-18fcd348a510
 - Run de W&B (identificador): 253714b9 (no se dispone de URL directa en la informacion proporcionada)
 - Papers, blogs, repositorios o demos adicionales: no disponible. Las busquedas web realizadas no devolvieron ningun recurso relacionado con el modelo.

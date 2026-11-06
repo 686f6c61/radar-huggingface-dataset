@@ -54,9 +54,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen2.5-0.5B-Instruct | 0,5B | 32K | Apache 2.0 | HuggingFace |
-| Llama-3.2-1B | 1B | 128K | Llama 3.2 | HuggingFace |
-| aligntune-testrun-PRM | 0,5B | no disponible | no disponible | HuggingFace |
+| Qwen2.5-0.5B-Instruct | 0,5B | 32K | Apache 2.0 | Hugging Face |
+| Llama-3.2-1B | 1B | 128K | Llama 3.2 | Hugging Face |
+| aligntune-testrun-PRM | 0,5B | no disponible | no disponible | Hugging Face |
 
 La comparativa se limita al tamaño y contexto, ya que no hay datos de rendimiento del modelo evaluado.
 
@@ -71,7 +71,7 @@ La comparativa se limita al tamaño y contexto, ya que no hay datos de rendimien
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ram-lexsi/aligntune-testrun-PRM
+- Hugging Face: https://huggingface.co/ram-lexsi/aligntune-testrun-PRM
 - Repositorio AlignTune: https://github.com/Lexsi-Labs/aligntune
 - Documentación de AlignTune: https://aligntune.lexsi.ai/
 - Lexsi Labs: https://lexsi.ai/

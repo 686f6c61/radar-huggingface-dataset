@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CharlieH512/km_tokenizer_pertick_coarse_3x1000 | 10,75 M | 8 fotogramas por tick, sin atención entre ticks | Tokenizador de teclado y ratón (FSQ) | other | HuggingFace, 28 descargas |
-| CharlieH512/km_tokenizer_ctx14_8x1000 | no disponible en la información | atención entre ticks (ctx14) | Tokenizador de teclado y ratón (FSQ) | no disponible | HuggingFace, referenciado por el autor |
+| CharlieH512/km_tokenizer_pertick_coarse_3x1000 | 10,75 M | 8 fotogramas por tick, sin atención entre ticks | Tokenizador de teclado y ratón (FSQ) | other | Hugging Face, 28 descargas |
+| CharlieH512/km_tokenizer_ctx14_8x1000 | no disponible en la información | atención entre ticks (ctx14) | Tokenizador de teclado y ratón (FSQ) | no disponible | Hugging Face, referenciado por el autor |
 | Otros tokenizadores de entrada para videojuegos | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparación directa más relevante es con `km_tokenizer_ctx14_8x1000`, del mismo autor: comparte la arquitectura ctx14 y el vocabulario de 1000 códigos por slice, pero aquel conserva la información entre ticks y este la elimina deliberadamente, además de colapsar cada tick a un único paso. No se dispone de datos de benchmarks que permitan comparar su calidad de reconstrucción.
@@ -84,6 +84,6 @@ La comparación directa más relevante es con `km_tokenizer_ctx14_8x1000`, del m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CharlieH512/km_tokenizer_pertick_coarse_3x1000
+- Modelo en Hugging Face: https://huggingface.co/CharlieH512/km_tokenizer_pertick_coarse_3x1000
 - Variante con contexto entre ticks: https://huggingface.co/CharlieH512/km_tokenizer_ctx14_8x1000
 - Paper, blog, repositorio o demo: no disponible en la información proporcionada.

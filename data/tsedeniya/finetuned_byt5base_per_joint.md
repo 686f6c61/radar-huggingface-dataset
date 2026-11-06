@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Tsedeniya/finetuned_byT5base_per_joint` es un ajuste fino de `google/byt5-base`, el modelo encoder-decoder byte a byte publicado por Google Research dentro de la familia ByT5. El autor del ajuste (usuario Tsedeniya) lo ha entrenado con la libreria Transformers y lo ha subido a HuggingFace con licencia Apache 2.0. Se trata de un modelo denso de 581.653.248 parametros (unos 582 M), con pesos en safetensors y un repositorio de 2,3 GB, coherente con pesos en precision fp32.
+`Tsedeniya/finetuned_byT5base_per_joint` es un ajuste fino de `google/byt5-base`, el modelo encoder-decoder byte a byte publicado por Google Research dentro de la familia ByT5. El autor del ajuste (usuario Tsedeniya) lo ha entrenado con la libreria Transformers y lo ha subido a Hugging Face con licencia Apache 2.0. Se trata de un modelo denso de 581.653.248 parametros (unos 582 M), con pesos en safetensors y un repositorio de 2,3 GB, coherente con pesos en precision fp32.
 
 La relevancia de este checkpoint es limitada y muy especifica: la model card se genero automaticamente con la plantilla del `Trainer` y no documenta ni el conjunto de datos de entrenamiento ni el caso de uso previsto ("More information needed" en todas las secciones descriptivas). Lo unico verificable son las metricas de evaluacion declaradas (loss 1.9971, chrF++ 21.4017, longitud media generada 131.2647) y los hiperparametros de entrenamiento (100 epocas, learning rate 5e-05, batch total 32, AdamW fused). El nombre del repositorio sugiere una tarea de traduccion o generacion de texto a nivel de "joint" (probablemente por articulacion o unidad linguistica), pero no hay confirmacion alguna en la informacion disponible.
 
@@ -66,17 +66,17 @@ No se especifica el conjunto de evaluacion ni la tarea, por lo que estos valores
 - VRAM estimada para inferencia: aproximadamente 2,5-3 GB con pesos en fp32 (2,33 GB de pesos mas activaciones y cache de atencion para secuencias byte-level, que tienden a ser largas). Con conversion a fp16 los pesos bajan a unos 1,16 GB, con un consumo total estimado de 1,5-2,5 GB segun longitud de secuencia y tamano de batch.
 - GPU recomendadas: cualquier GPU con 4 GB o mas de VRAM es suficiente. Para throughput alto, una A100, H100, L40S o RTX 4090 permiten batches grandes y baja latencia; una RTX 3060, RTX 4060 o T4 bastan para inferencia en produccion ligera.
 - Compatibilidad con GPU de consumo: si, cabe holgadamente en practicamente cualquier GPU de consumo actual (RTX 3050 8 GB, RTX 4060, RTX 4070, RTX 4090) e incluso en iGPU con memoria unificada si se convierte a fp16 o int8.
-- Opciones de despliegue: transformers (libreria declarada), safetensors como formato de pesos y text-generation-inference (el repositorio esta marcado como `endpoints_compatible` y con tag `text-generation-inference`, por lo que es compatible con HuggingFace Inference Endpoints). vLLM soporta modelos encoder-decoder de la familia T5, aunque la tokenizacion byte-level de ByT5 requiere verificacion previa. llama.cpp y Ollama tienen soporte limitado o nulo para T5 byte-level, por lo que no se recomiendan sin validacion.
+- Opciones de despliegue: transformers (libreria declarada), safetensors como formato de pesos y text-generation-inference (el repositorio esta marcado como `endpoints_compatible` y con tag `text-generation-inference`, por lo que es compatible con Hugging Face Inference Endpoints). vLLM soporta modelos encoder-decoder de la familia T5, aunque la tokenizacion byte-level de ByT5 requiere verificacion previa. llama.cpp y Ollama tienen soporte limitado o nulo para T5 byte-level, por lo que no se recomiendan sin validacion.
 - Latencia y throughput estimados: no disponibles. No se han publicado mediciones de latencia ni de tokens (o bytes) por segundo en la informacion disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Arquitectura | Parametros | Longitud de contexto | Licencia | Disponibilidad | Benchmarks publicados |
 |---|---|---|---|---|---|---|
-| `Tsedeniya/finetuned_byT5base_per_joint` | T5 encoder-decoder byte-level | 581,65 M | no disponible | Apache 2.0 | HuggingFace (11 descargas, 0 likes) | Ninguno (model-index vacio) |
-| `google/byt5-base` (modelo base) | T5 encoder-decoder byte-level | 582 M aprox. | 1024 bytes aprox. segun el paper de ByT5 | Apache 2.0 | HuggingFace, ampliamente utilizado | Si, en el paper de ByT5 (GLUE, XNLI, tra-duccion, etc.) |
-| `google/mt5-base` | T5 encoder-decoder con tokenizador SentencePiece multilingue | 580 M aprox. | 512 tokens | Apache 2.0 | HuggingFace | Si, en el paper de mT5 |
-| `google/t5-base` | T5 encoder-decoder con tokenizador SentencePiece | 220 M aprox. | 512 tokens | Apache 2.0 | HuggingFace | Si, en el paper de T5 |
+| `Tsedeniya/finetuned_byT5base_per_joint` | T5 encoder-decoder byte-level | 581,65 M | no disponible | Apache 2.0 | Hugging Face (11 descargas, 0 likes) | Ninguno (model-index vacio) |
+| `google/byt5-base` (modelo base) | T5 encoder-decoder byte-level | 582 M aprox. | 1024 bytes aprox. segun el paper de ByT5 | Apache 2.0 | Hugging Face, ampliamente utilizado | Si, en el paper de ByT5 (GLUE, XNLI, tra-duccion, etc.) |
+| `google/mt5-base` | T5 encoder-decoder con tokenizador SentencePiece multilingue | 580 M aprox. | 512 tokens | Apache 2.0 | Hugging Face | Si, en el paper de mT5 |
+| `google/t5-base` | T5 encoder-decoder con tokenizador SentencePiece | 220 M aprox. | 512 tokens | Apache 2.0 | Hugging Face | Si, en el paper de T5 |
 
 La ventaja diferencial de este checkpoint frente a los anteriores no esta demostrada: al carecer de benchmarks y de descripcion de la tarea, no puede afirmarse que supere al modelo base en ninguna tarea concreta. La metrica chrF++ 21,4 sugiere un rendimiento moderado, pero sin referencia de comparacion no es interpretable.
 
@@ -94,7 +94,7 @@ La ventaja diferencial de este checkpoint frente a los anteriores no esta demost
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tsedeniya/finetuned_byT5base_per_joint
+- Modelo en Hugging Face: https://huggingface.co/Tsedeniya/finetuned_byT5base_per_joint
 - Modelo base: https://huggingface.co/google/byt5-base
 - Paper de ByT5 (Xue et al., 2021): https://arxiv.org/abs/2105.13626
 - Repositorio oficial de T5/ByT5 de Google Research: https://github.com/google-research/text-to-text-transfer-transformer

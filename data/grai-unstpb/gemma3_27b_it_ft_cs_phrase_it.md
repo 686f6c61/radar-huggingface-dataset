@@ -78,7 +78,7 @@ Los datos de los modelos alternativos proceden de su documentacion publica y no 
 
 ## Limitaciones y advertencias
 
-- Documentacion inexistente: la model card es la plantilla por defecto de HuggingFace, con todos los campos marcados como `[More Information Needed]`. No se puede saber que datos se usaron, con que hiperparametros ni con que objetivo.
+- Documentacion inexistente: la model card es la plantilla por defecto de Hugging Face, con todos los campos marcados como `[More Information Needed]`. No se puede saber que datos se usaron, con que hiperparametros ni con que objetivo.
 - Sin validacion publica: 0 descargas y 0 likes, sin resultados de evaluacion ni informes de terceros. No hay evidencia de que el ajuste funcione o de que sea mejor que el modelo base.
 - Licencia no declarada: al no especificarse licencia, no puede asumirse permiso de uso comercial. Ademas, el modelo base Gemma 3 esta sujeto a los Terminos de Uso de Gemma, que imponen obligaciones propias sobre cualquier trabajo derivado, incluidos los adaptadores LoRA.
 - Riesgo de degradacion y olvido catastrofico: un ajuste SFT sobre un modelo instruct puede reducir capacidades generales (razonamiento, codigo, multilingue) si el dataset es estrecho, algo que aqui no puede descartarse ni confirmarse.
@@ -90,7 +90,7 @@ Los datos de los modelos alternativos proceden de su documentacion publica y no 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/GRAI-UNSTPB/gemma3_27b_it_ft_cs_phrase_it
+- Repositorio en Hugging Face: https://huggingface.co/GRAI-UNSTPB/gemma3_27b_it_ft_cs_phrase_it
 - Modelo base: https://huggingface.co/google/gemma-3-27b-it
 - Referencia citada en la plantilla de la model card (calculadora de impacto de carbono): https://mlco2.github.io/impact
 - Articulo citado en la plantilla de la model card (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700

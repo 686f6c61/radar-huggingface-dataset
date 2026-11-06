@@ -78,8 +78,8 @@ La comparación con Qwen2.5-Coder-0.5B, SmolLM2-360M y StarCoder2-3B se ofrece c
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/abhash-chakraborty/ophyx-350m-v3-gguf
-- Modelo base en HuggingFace: https://huggingface.co/abhash-chakraborty/ophyx-350m-v3
+- Modelo GGUF en Hugging Face: https://huggingface.co/abhash-chakraborty/ophyx-350m-v3-gguf
+- Modelo base en Hugging Face: https://huggingface.co/abhash-chakraborty/ophyx-350m-v3
 - Logo del modelo: https://huggingface.co/abhash-chakraborty/ophyx-350m-v3/resolve/main/logo.png
 - llama.cpp: https://github.com/ggml-org/llama.cpp
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

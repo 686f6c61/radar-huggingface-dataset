@@ -79,9 +79,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `gates1179/distilbeto-titulares-peru` | 67,3 M | No disponible (base: 512 tokens) | Clasificacion en 4 categorias de titulares peruanos | No disponible | HuggingFace, 0 descargas |
-| `dccuchile/distilbert-base-spanish-uncased` | ~67 M (modelo base) | 512 tokens | Modelo de representacion (requiere fine-tuning) | No verificada en esta ficha | HuggingFace |
-| `dccuchile/bert-base-spanish-wwm-uncased` (BETO) | ~110 M (referencia publica) | 512 tokens | Modelo de representacion en espanol | No verificada en esta ficha | HuggingFace |
+| `gates1179/distilbeto-titulares-peru` | 67,3 M | No disponible (base: 512 tokens) | Clasificacion en 4 categorias de titulares peruanos | No disponible | Hugging Face, 0 descargas |
+| `dccuchile/distilbert-base-spanish-uncased` | ~67 M (modelo base) | 512 tokens | Modelo de representacion (requiere fine-tuning) | No verificada en esta ficha | Hugging Face |
+| `dccuchile/bert-base-spanish-wwm-uncased` (BETO) | ~110 M (referencia publica) | 512 tokens | Modelo de representacion en espanol | No verificada en esta ficha | Hugging Face |
 | Clasificador zero-shot generico (p. ej. un LLM de instrucciones) | Miles de millones | Mayor | Clasificacion por prompt | Variable | Variable |
 
 No hay datos de benchmarks publicados para los modelos comparables en la informacion disponible, por lo que no se puede establecer una comparacion cuantitativa de rendimiento. Las cifras de parametros de los modelos base son valores de referencia publicos y no se han verificado en el repositorio de este modelo.
@@ -101,7 +101,7 @@ No hay datos de benchmarks publicados para los modelos comparables en la informa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gates1179/distilbeto-titulares-peru
+- Modelo en Hugging Face: https://huggingface.co/gates1179/distilbeto-titulares-peru
 - Modelo base: https://huggingface.co/dccuchile/distilbert-base-spanish-uncased
 - Repositorio BETO (referencia del backbone en espanol): https://github.com/dccuchile/beto
 - Paper de BETO: https://arxiv.org/abs/2107.07253

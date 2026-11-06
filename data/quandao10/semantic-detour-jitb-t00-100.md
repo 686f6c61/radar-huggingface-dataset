@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Semantic Detour Flow (JiT-B/16) es un modelo de generación de imágenes incondicional/label-conditional en espacio de píxeles, entrenado sobre ImageNet 256×256, que introduce una variante de flow matching llamada "detour": el estado ruidoso no va directamente del ruido gaussiano a los píxeles, sino que pasa por el código semántico de DINOv2-B antes de llegar al RGB. El autor es el usuario de HuggingFace quandao10 y el checkpoint publicado corresponde a 20 épocas de entrenamiento con batch 1024 (ventana estándar (0, 1) de la transferencia code→imagen). El repositorio ocupa 3,6 GB y contiene tres conjuntos de pesos (raw y dos EMA), la configuración de entrenamiento y las estadísticas de normalización del código DINOv2-B necesarias para construir el modelo.
+Semantic Detour Flow (JiT-B/16) es un modelo de generación de imágenes incondicional/label-conditional en espacio de píxeles, entrenado sobre ImageNet 256×256, que introduce una variante de flow matching llamada "detour": el estado ruidoso no va directamente del ruido gaussiano a los píxeles, sino que pasa por el código semántico de DINOv2-B antes de llegar al RGB. El autor es el usuario de Hugging Face quandao10 y el checkpoint publicado corresponde a 20 épocas de entrenamiento con batch 1024 (ventana estándar (0, 1) de la transferencia code→imagen). El repositorio ocupa 3,6 GB y contiene tres conjuntos de pesos (raw y dos EMA), la configuración de entrenamiento y las estadísticas de normalización del código DINOv2-B necesarias para construir el modelo.
 
 La relevancia es fundamentalmente de investigación: el autor reporta que este detour reduce el FID-10k de 98,1 (JiT-B/16 en píxeles puro, mismas épocas) a 66,6, y el FID-50k a 63,9, con un IS de 24,3 (10k). Son cifras de un checkpoint de 20 épocas, muy lejos del estado del arte, pero el resultado sugiere que forzar una representación semántica intermedia durante el proceso generativo acelera la convergencia en modelos de difusión/flow en píxeles.
 
@@ -71,8 +71,8 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de ninguna tarea de 
 
 | Modelo | Parametros | Resolucion | FID-10k | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Semantic Detour JiT-B/16, detour (0, 1), 20 ep. | no disponible (JiT-B/16) | 256×256 | 66,6 | no disponible | HuggingFace, repo de 3,6 GB con 3 checkpoints |
-| Semantic Detour JiT-B/16, detour (0.40, 0.85) | no disponible (JiT-B/16) | 256×256 | 89,2 | no disponible | HuggingFace (release anterior) |
+| Semantic Detour JiT-B/16, detour (0, 1), 20 ep. | no disponible (JiT-B/16) | 256×256 | 66,6 | no disponible | Hugging Face, repo de 3,6 GB con 3 checkpoints |
+| Semantic Detour JiT-B/16, detour (0.40, 0.85) | no disponible (JiT-B/16) | 256×256 | 89,2 | no disponible | Hugging Face (release anterior) |
 | JiT-B/16 en píxeles puro, 20 ep. | no disponible (JiT-B/16) | 256×256 | 98,1 | no disponible | vía proyecto JiT / rae_pixel |
 | DiT, SiT, U-ViT y familia latente (SD, etc.) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -93,7 +93,7 @@ No se dispone de datos verificables en la informacion proporcionada para compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/quandao10/semantic-detour-jitb-t00-100
+- Modelo en Hugging Face: https://huggingface.co/quandao10/semantic-detour-jitb-t00-100
 - Release anterior con ventana (0.40, 0.85): https://huggingface.co/quandao10/semantic-detour-jitb-t40-85
 - Codigo del proyecto (repositorio rae_pixel, carpeta `JiT/`): referenciado en la model card sin URL directa; no disponible como enlace verificado.
 - Paper, blog o demo: no disponibles en la informacion proporcionada.

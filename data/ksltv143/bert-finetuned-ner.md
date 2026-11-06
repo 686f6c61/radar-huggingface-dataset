@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ksltv143/bert-finetuned-ner es un modelo de clasificacion de tokens (token classification) especializado en reconocimiento de entidades nombradas (NER), obtenido mediante fine-tuning supervisado del modelo de embeddings BAAI/bge-small-en-v1.5. Lo publica el usuario ksltv143 en HuggingFace y cuenta con 33.215.625 parametros en formato safetensors, licencia MIT y compatibilidad declarada con endpoints de inferencia. El problema que resuelve es acotado y clasico: etiquetar secuencias de texto con categorias de entidad, no generar texto.
+ksltv143/bert-finetuned-ner es un modelo de clasificacion de tokens (token classification) especializado en reconocimiento de entidades nombradas (NER), obtenido mediante fine-tuning supervisado del modelo de embeddings BAAI/bge-small-en-v1.5. Lo publica el usuario ksltv143 en Hugging Face y cuenta con 33.215.625 parametros en formato safetensors, licencia MIT y compatibilidad declarada con endpoints de inferencia. El problema que resuelve es acotado y clasico: etiquetar secuencias de texto con categorias de entidad, no generar texto.
 
 Su relevancia practica no viene de ser un modelo frontera, sino de su perfil de coste: al derivar de un encoder BERT pequeno (bge-small), se puede ejecutar en CPU o en cualquier GPU de consumo con una huella de memoria inferior a 1 GB, manteniendo un F1 de 0.9175 y una precision de 0.9071 en su conjunto de evaluacion. Esto lo situa como candidato razonable para tareas de extraccion de informacion en pipelines de alto volumen donde no se justifica un modelo generativo.
 
@@ -45,7 +45,7 @@ La curva de validacion muestra un patron de sobreajuste leve a partir de la cuar
 - Agentes y multi-step reasoning: no soportado.
 - Capacidades multilingues: no declaradas; el backbone base es de proposito general en ingles, por lo que el rendimiento fuera de ese idioma no esta garantizado.
 - Capacidades especiales (vision, audio, modo thinking): no disponibles.
-- Compatibilidad con endpoints de inferencia de HuggingFace segun las etiquetas del repositorio (endpoints_compatible).
+- Compatibilidad con endpoints de inferencia de Hugging Face segun las etiquetas del repositorio (endpoints_compatible).
 
 ## Casos de uso
 
@@ -103,10 +103,10 @@ La informacion proporcionada solo permite una comparacion fiable con el modelo b
 
 | Modelo | Parametros | Tarea | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ksltv143/bert-finetuned-ner | 33,2 M | Token classification (NER) | No declarado; backbone BERT (512 habitual) | MIT | HuggingFace, safetensors |
-| BAAI/bge-small-en-v1.5 (base) | ~33 M | Embeddings de frases / recuperacion | 512 tokens | MIT | HuggingFace, safetensors |
-| dslim/bert-base-NER (referencia externa) | ~108 M | Token classification (NER, ingles, CoNLL) | 512 tokens | MIT | HuggingFace, safetensors |
-| FacebookAI/xlm-roberta-large-finetuned-conll03-english (referencia externa) | ~560 M | Token classification (NER, multilingue) | 512 tokens | MIT | HuggingFace, safetensors |
+| ksltv143/bert-finetuned-ner | 33,2 M | Token classification (NER) | No declarado; backbone BERT (512 habitual) | MIT | Hugging Face, safetensors |
+| BAAI/bge-small-en-v1.5 (base) | ~33 M | Embeddings de frases / recuperacion | 512 tokens | MIT | Hugging Face, safetensors |
+| dslim/bert-base-NER (referencia externa) | ~108 M | Token classification (NER, ingles, CoNLL) | 512 tokens | MIT | Hugging Face, safetensors |
+| FacebookAI/xlm-roberta-large-finetuned-conll03-english (referencia externa) | ~560 M | Token classification (NER, multilingue) | 512 tokens | MIT | Hugging Face, safetensors |
 
 Lectura de la comparativa: frente a dslim/bert-base-NER, este modelo es aproximadamente tres veces mas pequeno, lo que reduce coste de inferencia pero tambien capacidad representacional; frente a xlm-roberta-large, la diferencia de tamano es de un orden de magnitud a favor del segundo, con la ventaja de cobertura multilingue. La ventaja competitiva de ksltv143/bert-finetuned-ner no es el rendimiento bruto, sino el coste por token etiquetado en escenarios de gran volumen y en despliegue on-premise.
 
@@ -125,7 +125,7 @@ Lectura de la comparativa: frente a dslim/bert-base-NER, este modelo es aproxima
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ksltv143/bert-finetuned-ner
+- Modelo en Hugging Face: https://huggingface.co/ksltv143/bert-finetuned-ner
 - Modelo base: https://huggingface.co/BAAI/bge-small-en-v1.5
 - Referencia externa de NER en ingles: https://huggingface.co/dslim/bert-base-NER
 - Referencia externa multilingue: https://huggingface.co/FacebookAI/xlm-roberta-large-finetuned-conll03-english

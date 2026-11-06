@@ -101,7 +101,7 @@ Frente a un modelo generalista de proposito general, lexis-1.5b sacrifica amplit
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hridya423/lexis-1.5b-GGUF
+- Modelo en Hugging Face: https://huggingface.co/hridya423/lexis-1.5b-GGUF
 - Modelo hermano (0.5b): https://huggingface.co/hridya423/lexis-0.5b-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct
 - Repositorio del asistente Lexis: https://github.com/hridaya423/lexis

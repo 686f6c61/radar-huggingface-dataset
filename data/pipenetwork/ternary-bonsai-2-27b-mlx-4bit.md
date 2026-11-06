@@ -116,7 +116,7 @@ Comparativa con alternativas de otros fabricantes: no disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pipenetwork/Ternary-Bonsai-2-27B-MLX-4bit
+- Modelo en Hugging Face: https://huggingface.co/pipenetwork/Ternary-Bonsai-2-27B-MLX-4bit
 - Modelo base (GGUF): https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf
 - Pack 2-bit de prism-ml con su runtime: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-mlx-2bit
 - Build bf16 del mismo conjunto: https://huggingface.co/pipenetwork/Ternary-Bonsai-2-27B-MLX-bf16

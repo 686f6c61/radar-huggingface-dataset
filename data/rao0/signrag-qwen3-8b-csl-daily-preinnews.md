@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SignRAG-Qwen3-8B-CSL-Daily-PreinNews es un ajuste fino (fine-tune) del modelo Qwen3-8B, publicado por el usuario rao0 en HuggingFace bajo licencia Apache 2.0. Por el nombre se deduce que forma parte de un proyecto denominado SignRAG orientado a lengua de signos china (CSL, Chinese Sign Language) y a un dominio concreto de noticias diarias ("Daily-PreinNews"), probablemente como componente de generacion de texto dentro de un pipeline de traduccion o recuperacion aumentada (RAG) para ese dominio. El repositorio tiene un tamano de 16,6 GB y 8.190.735.360 parametros en formato safetensors, coherente con un modelo denso de la familia Qwen3 de 8B.
+SignRAG-Qwen3-8B-CSL-Daily-PreinNews es un ajuste fino (fine-tune) del modelo Qwen3-8B, publicado por el usuario rao0 en Hugging Face bajo licencia Apache 2.0. Por el nombre se deduce que forma parte de un proyecto denominado SignRAG orientado a lengua de signos china (CSL, Chinese Sign Language) y a un dominio concreto de noticias diarias ("Daily-PreinNews"), probablemente como componente de generacion de texto dentro de un pipeline de traduccion o recuperacion aumentada (RAG) para ese dominio. El repositorio tiene un tamano de 16,6 GB y 8.190.735.360 parametros en formato safetensors, coherente con un modelo denso de la familia Qwen3 de 8B.
 
 La model card publicada no aporta informacion tecnica adicional: solo contiene la declaracion de licencia. No hay descripcion de datos de entrenamiento, hiperparametros, benchmarks ni capacidades declaradas por el autor. Toda la informacion sobre arquitectura base, contexto y capacidades procede del modelo original Qwen3-8B, del que este checkpoint hereda la estructura, y debe tratarse como inferencia razonada y no como dato verificado del fine-tune.
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| SignRAG-Qwen3-8B-CSL-Daily-PreinNews | 8,19B | no disponible (base: 32K nativo) | Apache 2.0 | HuggingFace, 45 descargas | Fine-tune sin documentacion ni benchmarks |
-| Qwen3-8B (base) | 8,19B | 32K nativo, 131K con YaRN | Apache 2.0 | HuggingFace, ampliamente usado | Modelo original con evaluacion publica y soporte de thinking mode |
-| Llama 3.1 8B | 8,03B | 128K | Llama 3.1 Community License | HuggingFace, muy extendido | Alternativa densa de tamano similar con contexto largo |
-| Gemma 2 9B | 9,24B | 8K | Gemma Terms of Use | HuggingFace | Alternativa de Google con licencia menos permisiva |
+| SignRAG-Qwen3-8B-CSL-Daily-PreinNews | 8,19B | no disponible (base: 32K nativo) | Apache 2.0 | Hugging Face, 45 descargas | Fine-tune sin documentacion ni benchmarks |
+| Qwen3-8B (base) | 8,19B | 32K nativo, 131K con YaRN | Apache 2.0 | Hugging Face, ampliamente usado | Modelo original con evaluacion publica y soporte de thinking mode |
+| Llama 3.1 8B | 8,03B | 128K | Llama 3.1 Community License | Hugging Face, muy extendido | Alternativa densa de tamano similar con contexto largo |
+| Gemma 2 9B | 9,24B | 8K | Gemma Terms of Use | Hugging Face | Alternativa de Google con licencia menos permisiva |
 
 ## Limitaciones y advertencias
 
@@ -78,6 +78,6 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rao0/SignRAG-Qwen3-8B-CSL-Daily-PreinNews
+- Hugging Face: https://huggingface.co/rao0/SignRAG-Qwen3-8B-CSL-Daily-PreinNews
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Repositorio oficial de Qwen3: https://github.com/QwenLM/Qwen3

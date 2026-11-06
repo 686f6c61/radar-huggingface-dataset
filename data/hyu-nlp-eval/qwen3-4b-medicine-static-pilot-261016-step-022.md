@@ -82,8 +82,8 @@ Los siguientes valores son estimaciones derivadas del recuento verificado de par
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| qwen3-4b-medicine-static-pilot-261016-step-022 | 4,02 mil millones (verificado) | No disponible | apache-2.0 | HuggingFace, 0 descargas | Checkpoint intermedio de un run piloto, sin benchmarks |
-| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | No disponible en esta ficha | No disponible en esta ficha | No disponible en esta ficha | HuggingFace | Referencia directa del ajuste; sus datos no se han consultado para esta ficha |
+| qwen3-4b-medicine-static-pilot-261016-step-022 | 4,02 mil millones (verificado) | No disponible | apache-2.0 | Hugging Face, 0 descargas | Checkpoint intermedio de un run piloto, sin benchmarks |
+| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | No disponible en esta ficha | No disponible en esta ficha | No disponible en esta ficha | Hugging Face | Referencia directa del ajuste; sus datos no se han consultado para esta ficha |
 | Otras alternativas de la misma categoría (por ejemplo, modelos densos de ~3-4 mil millones de parámetros para texto) | No disponible | No disponible | No disponible | No disponible | No se dispone de datos verificados en las fuentes consultadas para establecer una comparación rigurosa |
 
 Advertencia: la búsqueda web realizada no ha devuelto información técnica relevante sobre este modelo ni sobre modelos comparables; los resultados obtenidos corresponden a entidades no relacionadas (Hyundai, plataformas de vídeo) y no se han utilizado como fuente.
@@ -103,7 +103,7 @@ Advertencia: la búsqueda web realizada no ha devuelto información técnica rel
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-medicine-static-pilot-261016-step-022
+- Repositorio en Hugging Face: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-medicine-static-pilot-261016-step-022
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Perfil de la organización: https://huggingface.co/HYU-NLP-EVAL
 - Paper, blog, repositorio de código o demo: no disponibles en la información proporcionada.

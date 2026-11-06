@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Microduck-sprint-es2 es una politica de control para el robot cuadrupedo microduck de Pollen Robotics, publicada por el usuario juicenv en HuggingFace. No es un modelo de lenguaje, sino una politica de locomocion entrenada por aprendizaje por refuerzo (concretamente, por estrategias de evolucion) que produce una marcha de sprint de 2 metros. Parte del modelo HannesVonEssen/microduck-running (licencia Apache-2.0, iteracion 12195) como base y lo afina sobre el scorer de sprint de la propia Arena de microduck, en lo que el autor describe como segunda ronda.
+Microduck-sprint-es2 es una politica de control para el robot cuadrupedo microduck de Pollen Robotics, publicada por el usuario juicenv en Hugging Face. No es un modelo de lenguaje, sino una politica de locomocion entrenada por aprendizaje por refuerzo (concretamente, por estrategias de evolucion) que produce una marcha de sprint de 2 metros. Parte del modelo HannesVonEssen/microduck-running (licencia Apache-2.0, iteracion 12195) como base y lo afina sobre el scorer de sprint de la propia Arena de microduck, en lo que el autor describe como segunda ronda.
 
 La politica es perpetua: una vez cargada en una ranura de politica del robot, se ejecuta de forma continua hasta que se le indique lo contrario. Trabaja con una observacion de 61 dimensiones, emite 14 acciones y opera a 50 Hz. El normalizador de observaciones esta integrado dentro del propio fichero `policy.onnx`, de modo que el robot puede alimentar observaciones en crudo sin preprocesado adicional.
 
@@ -18,7 +18,7 @@ Su relevancia es acotada pero clara dentro del ecosistema microduck: se distribu
 | Longitud de contexto | no aplica (no es un modelo de lenguaje; politica perpetua ejecutada a 50 Hz) |
 | Tipos de cuantizacion | no disponible (exportada a ONNX; el normalizador de observaciones va integrado en `policy.onnx`) |
 | Idiomas soportados | no aplica (modelo de robotica, no procesa lenguaje) |
-| Licencia | no disponible en la ficha de HuggingFace; el modelo base es Apache-2.0 |
+| Licencia | no disponible en la ficha de Hugging Face; el modelo base es Apache-2.0 |
 | Formato de pesos | ONNX (`policy.onnx`) acompanado de `manifest.json` (esquema 2 del manifiesto de politicas de microduck) |
 
 ## Arquitectura y entrenamiento
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada: no aplica; es una politica ONNX de robotica que se ejecuta en inferencia, no un modelo generativo de gran tamano.
 - GPU recomendadas: no se especifica ninguna; no se requiere GPU.
 - Compatibilidad con GPU de consumo: irrelevante para este caso de uso, ya que la inferencia esta pensada para el computo embebido del robot.
-- Huella de almacenamiento: el repositorio ocupa 0.0 GB segun HuggingFace, lo que indica un peso muy reducido (un unico `policy.onnx` mas `manifest.json`).
+- Huella de almacenamiento: el repositorio ocupa 0.0 GB segun Hugging Face, lo que indica un peso muy reducido (un unico `policy.onnx` mas `manifest.json`).
 - Opciones de despliegue: demonio de microduck mediante `robotctl` (`sudo robotctl policy load <slot> juicenv/microduck-sprint-es2`); el runtime subyacente es ONNX.
 - Latencia y throughput: no disponible como cifra publicada. El unico requisito conocido es que la politica debe ejecutarse a 50 Hz, es decir, un presupuesto de 20 ms por ciclo de control.
 
@@ -71,7 +71,7 @@ No se dispone de informacion sobre otras politicas comparables de la misma categ
 
 ## Limitaciones y advertencias
 
-- Licencia propia no declarada: la ficha de HuggingFace no indica licencia. El modelo base es Apache-2.0, pero la licencia del derivado no se explicita, lo que supone un riesgo para uso comercial o redistribucion.
+- Licencia propia no declarada: la ficha de Hugging Face no indica licencia. El modelo base es Apache-2.0, pero la licencia del derivado no se explicita, lo que supone un riesgo para uso comercial o redistribucion.
 - Sin validacion comunitaria: 0 descargas y 0 likes en el momento de la consulta; no hay evidencia externa de funcionamiento correcto.
 - Tarea muy especifica: esta afinada para un sprint de 2 metros; no hay garantia de que generalice a otras distancias, direcciones, terrenos u objetivos.
 - Dependencia del hardware y del demonio: requiere un microduck y la version del daemon compatible con el esquema 2 del manifiesto de politicas.
@@ -82,7 +82,7 @@ No se dispone de informacion sobre otras politicas comparables de la misma categ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/juicenv/microduck-sprint-es2
+- Modelo en Hugging Face: https://huggingface.co/juicenv/microduck-sprint-es2
 - Modelo base: https://huggingface.co/HannesVonEssen/microduck-running
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento: `pollen-robotics/microduck_rl` (rama `lean`, commit `5a3636302`)

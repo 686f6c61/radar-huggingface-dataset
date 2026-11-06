@@ -4,7 +4,7 @@
 
 IP-Adapter-FaceID-PlusV2 es un adaptador para el modelo de difusión Stable Diffusion XL (SDXL) que permite generar imágenes de una persona a partir de su identidad facial. En lugar de utilizar embeddings de imagen de CLIP como el IP-Adapter estándar, este adaptador emplea embeddings de identidad facial extraídos mediante el modelo de reconocimiento facial InsightFace, combinados con embeddings de imagen CLIP controlables para preservar la estructura del rostro. El resultado es una generación de retratos con alta consistencia de identidad y flexibilidad estilística, controlada únicamente mediante prompts de texto.
 
-El adaptador fue desarrollado originalmente por Tencent AI Lab y publicado en el repositorio oficial IP-Adapter. El archivo concreto `ip-adapter-faceid-plusv2_sdxl.bin` ha sido subido por el usuario phil666888 a HuggingFace, aunque no se especifica si se trata de una copia del modelo original o de una variante modificada. Es una versión experimental que combina tres componentes: embeddings de identidad facial, embeddings CLIP para estructura y LoRA para mejorar la consistencia. Está diseñado para funcionar con el pipeline de diffusers y requiere el modelo base SDXL.
+El adaptador fue desarrollado originalmente por Tencent AI Lab y publicado en el repositorio oficial IP-Adapter. El archivo concreto `ip-adapter-faceid-plusv2_sdxl.bin` ha sido subido por el usuario phil666888 a Hugging Face, aunque no se especifica si se trata de una copia del modelo original o de una variante modificada. Es una versión experimental que combina tres componentes: embeddings de identidad facial, embeddings CLIP para estructura y LoRA para mejorar la consistencia. Está diseñado para funcionar con el pipeline de diffusers y requiere el modelo base SDXL.
 
 La relevancia actual de este modelo radica en su capacidad para personalizar retratos generados por IA, una tarea demandada en aplicaciones de avatares, marketing, diseño y entretenimiento. Al ser un adaptador ligero (en comparación con el modelo base), puede integrarse en flujos de trabajo existentes de SDXL sin necesidad de reentrenar el modelo completo.
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - VRAM estimada: para SDXL con el adaptador IP-Adapter, se recomienda al menos 8 GB de VRAM para inferencia básica con resolución 1024x1024. Para mayor resolución o batch, se necesitan 12 GB o más.
 - GPUs recomendadas: NVIDIA RTX 3080 (10 GB), RTX 3090 (24 GB), RTX 4090 (24 GB), A100 (40 GB) o superiores. El adaptador añade una sobrecarga de memoria de aproximadamente 1-2 GB sobre el modelo base.
 - Es posible ejecutar en GPUs de consumo medio (RTX 2060 Super con 8 GB) usando cuantización FP16 y resolución reducida, aunque con limitaciones de velocidad.
-- Opciones de despliegue: se puede usar directamente con la librería diffusers de HuggingFace, con el código oficial de IP-Adapter, o mediante ComfyUI con los nodos de IPAdapter Plus. También es compatible con herramientas como Automatic1111 WebUI mediante extensiones.
+- Opciones de despliegue: se puede usar directamente con la librería diffusers de Hugging Face, con el código oficial de IP-Adapter, o mediante ComfyUI con los nodos de IPAdapter Plus. También es compatible con herramientas como Automatic1111 WebUI mediante extensiones.
 - Latencia estimada: en una RTX 4090, la generación de una imagen 1024x1024 con 30 pasos de inferencia tarda aproximadamente 5-10 segundos. En GPUs más modestas, el tiempo puede aumentar hasta 30 segundos o más.
 
 ## Comparativa con modelos similares
@@ -73,7 +73,7 @@ La comparativa se basa en las variantes del mismo proyecto. No se dispone de dat
 ## Limitaciones y advertencias
 
 - El modelo es experimental y puede producir inconsistencias en la identidad facial, especialmente con ángulos extremos o iluminación compleja.
-- La licencia no está especificada en el repositorio de HuggingFace, lo que genera incertidumbre sobre su uso comercial. Se recomienda contactar al autor o consultar el repositorio original de Tencent AI Lab para aclarar los términos.
+- La licencia no está especificada en el repositorio de Hugging Face, lo que genera incertidumbre sobre su uso comercial. Se recomienda contactar al autor o consultar el repositorio original de Tencent AI Lab para aclarar los términos.
 - El adaptador depende del modelo base SDXL, que tiene sus propias limitaciones y sesgos (por ejemplo, representación estereotipada de ciertos grupos étnicos o de género).
 - Solo soporta prompts en inglés, lo que puede limitar su uso en otros idiomas.
 - No se han publicado estudios de sesgo o seguridad específicos para este adaptador. La generación de rostros humanos con IA conlleva riesgos de uso indebido (deepfakes, suplantación de identidad).
@@ -82,8 +82,8 @@ La comparativa se basa en las variantes del mismo proyecto. No se dispone de dat
 
 ## Enlaces
 
-- Repositorio de HuggingFace del archivo: https://huggingface.co/phil666888/ip-adapter-faceid-plusv2_sdxl.bin
-- Repositorio oficial de IP-Adapter en HuggingFace: https://huggingface.co/h94/IP-Adapter-FaceID
+- Repositorio de Hugging Face del archivo: https://huggingface.co/phil666888/ip-adapter-faceid-plusv2_sdxl.bin
+- Repositorio oficial de IP-Adapter en Hugging Face: https://huggingface.co/h94/IP-Adapter-FaceID
 - Página del proyecto IP-Adapter: https://ip-adapter.github.io
 - Paper en ArXiv: https://arxiv.org/abs/2308.06721
 - Código oficial en GitHub: https://github.com/tencent-ailab/IP-Adapter

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PokeDreamer es un proyecto de aprendizaje por refuerzo basado en modelos (model-based RL) que implementa un world model al estilo Dreamer para jugar a Pokémon Red en la consola Game Boy mediante el emulador PyBoy. Lo desarrolla el usuario de HuggingFace `xxxTEMPESTxxx` y se publica bajo licencia MIT. No es un modelo de lenguaje: es un conjunto de checkpoints de redes neuronales (un VAE, un modelo de dinámica latente recurrente y una sonda lineal de coordenadas) entrenados sobre observaciones de baja resolución de 40×36×3 píxeles.
+PokeDreamer es un proyecto de aprendizaje por refuerzo basado en modelos (model-based RL) que implementa un world model al estilo Dreamer para jugar a Pokémon Red en la consola Game Boy mediante el emulador PyBoy. Lo desarrolla el usuario de Hugging Face `xxxTEMPESTxxx` y se publica bajo licencia MIT. No es un modelo de lenguaje: es un conjunto de checkpoints de redes neuronales (un VAE, un modelo de dinámica latente recurrente y una sonda lineal de coordenadas) entrenados sobre observaciones de baja resolución de 40×36×3 píxeles.
 
 El repositorio v1 contiene tres componentes entrenados: un autoencoder variacional que comprime cada fotograma a un vector latente continuo de 32 dimensiones, un modelo de dinámica recurrente basado en una celda GRU que predice el siguiente estado latente a partir del estado actual y la acción, y una sonda lineal que mapea los latentes a coordenadas del mapa extraídas directamente de la WRAM del emulador. El objetivo es aprender una representación del entorno que permita planificar y navegar por el mundo del juego sin depender de recompensas densas.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PokeDreamer v1 | World model (VAE + GRU + sonda) | no disponible | rollouts de 30 pasos | MIT | HuggingFace |
+| PokeDreamer v1 | World model (VAE + GRU + sonda) | no disponible | rollouts de 30 pasos | MIT | Hugging Face |
 | DreamerV3 (referencia) | World model general | no disponible en esta ficha | no disponible | MIT (codigo) | publico |
 | Otros world models para Atari/DMC | World model | no disponible | no disponible | variable | publico |
 
@@ -79,6 +79,6 @@ No se dispone de datos de rendimiento comparables en la informacion proporcionad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/xxxTEMPESTxxx/PokeDreamer
+- Hugging Face: https://huggingface.co/xxxTEMPESTxxx/PokeDreamer
 - PyBoy (emulador): https://github.com/Baekalfen/PyBoy
 - Dreamer (referencia de model-based RL): https://github.com/danijar/dreamerv3

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DexPolicy es un conjunto de checkpoints de politicas de aprendizaje por refuerzo para manipulacion robotica diestra, publicado por AIGeeksGroup en HuggingFace bajo el pipeline `reinforcement-learning`. No es un modelo de lenguaje ni un modelo fundacional: se trata de politicas especificas por objeto entrenadas para la tarea de reubicacion del frasco de mostaza del conjunto YCB (YCB 006 mustard bottle). El repositorio contiene una seleccion representativa de pares de checkpoints que aíslan la intervencion de planificacion de exploracion propuesta en el articulo de DexPolicy, comparando linea base frente a DexPolicy bajo tres algoritmos distintos: PPO, GRPO y FPO.
+DexPolicy es un conjunto de checkpoints de politicas de aprendizaje por refuerzo para manipulacion robotica diestra, publicado por AIGeeksGroup en Hugging Face bajo el pipeline `reinforcement-learning`. No es un modelo de lenguaje ni un modelo fundacional: se trata de politicas especificas por objeto entrenadas para la tarea de reubicacion del frasco de mostaza del conjunto YCB (YCB 006 mustard bottle). El repositorio contiene una seleccion representativa de pares de checkpoints que aíslan la intervencion de planificacion de exploracion propuesta en el articulo de DexPolicy, comparando linea base frente a DexPolicy bajo tres algoritmos distintos: PPO, GRPO y FPO.
 
 El valor tecnico del release esta en su caracter controlado: dentro de cada par, la unica diferencia es el esquema de exploracion, mientras que recompensa, definicion de exito terminal, etapa de curriculo y modulo de credito return-to-go se mantienen coincidentes. Los pares PPO y FPO entrenan aproximadamente 5 millones de pasos de entorno; el par GRPO continua desde checkpoints emparejados de objeto y semilla a 507.904 pasos durante otros 250.000 pasos. El proposito es permitir la reproducibilidad de la comparacion, no ofrecer un modelo listo para produccion.
 
@@ -22,7 +22,7 @@ Es relevante ahora porque la manipulacion diestra sigue siendo un cuello de bote
 | Formato de pesos | `.zip` con el layout de checkpoint de Stable-Baselines3 (politica, variables PyTorch, estado del optimizador y metadatos de version de libreria) y `.pt` con checkpoints de PyTorch (actor de flujo condicional y critico) |
 | Tarea | Reubicacion del objeto YCB 006 (frasco de mostaza) |
 | Semilla incluida | 0 en todos los checkpoints |
-| Tamano del repositorio | 0,0 GB segun HuggingFace |
+| Tamano del repositorio | 0,0 GB segun Hugging Face |
 | Descargas / likes | 0 / 0 |
 
 Relacion de checkpoints incluidos:
@@ -105,7 +105,7 @@ Ninguna de estas filas incluye metricas de rendimiento final, por lo que la tabl
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AIGeeksGroup/DexPolicy
+- Hugging Face: https://huggingface.co/AIGeeksGroup/DexPolicy
 - Articulo de DexPolicy: no disponible en la informacion proporcionada
 - Repositorio de codigo: no disponible
 - Demo: no disponible

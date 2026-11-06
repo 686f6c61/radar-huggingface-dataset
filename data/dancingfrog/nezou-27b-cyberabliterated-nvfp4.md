@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Precision | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nezou-27B-CyberAbliterated-NVFP4 (este repo) | 18,8B (safetensors); nombre comercial 27B | 131.072 tokens | NVFP4 + FP8 mixto | Apache-2.0 | HuggingFace; requiere runtime con soporte ModelOpt (SGLang verificado) |
-| dancingfrog/Nezou-27B-CyberAbliterated | no disponible | no disponible | BF16 | Apache-2.0 | HuggingFace |
-| Qwen/Qwen3.8-27B | no disponible (el nombre indica 27B) | no disponible | BF16 | Apache-2.0 | HuggingFace |
+| Nezou-27B-CyberAbliterated-NVFP4 (este repo) | 18,8B (safetensors); nombre comercial 27B | 131.072 tokens | NVFP4 + FP8 mixto | Apache-2.0 | Hugging Face; requiere runtime con soporte ModelOpt (SGLang verificado) |
+| dancingfrog/Nezou-27B-CyberAbliterated | no disponible | no disponible | BF16 | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3.8-27B | no disponible (el nombre indica 27B) | no disponible | BF16 | Apache-2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la informacion proporcionada, por lo que la comparacion se limita a parametros declarados, contexto, precision y licencia. No se ha identificado en la informacion disponible un tercer modelo comparable independiente con el que contrastar resultados.
 
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dancingfrog/Nezou-27B-CyberAbliterated-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/dancingfrog/Nezou-27B-CyberAbliterated-NVFP4
 - Modelo base cuantizado (BF16, receta completa de abliteration): https://huggingface.co/dancingfrog/Nezou-27B-CyberAbliterated
 - Modelo base definitivo: https://huggingface.co/Qwen/Qwen3.8-27B
 - Ficheros de configuracion de cuantizacion incluidos en el repo: `hf_quant_config.json`, `quantization_run.json`, `.quant_summary.txt` (disponibles en el repositorio del modelo)

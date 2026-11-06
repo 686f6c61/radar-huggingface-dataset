@@ -79,10 +79,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Post-entrenamiento | Disponibilidad |
 |---|---|---|---|---|---|
-| delphi-3e19-998Mparams-5Btokens-seed62746 | 998 M | 4096 | Apache 2.0 | No (base) | HuggingFace (rohithck) |
-| Pythia-1B (EleutherAI) | ~1 B | 2048 | Apache 2.0 | No (base) | HuggingFace (EleutherAI) |
-| Qwen3-0.6B | ~0,6 B | no disponible en esta ficha | Apache 2.0 | Si (instruct y base) | HuggingFace (Qwen) |
-| OLMo-1B | ~1 B | 2048 | Apache 2.0 | No (base) | HuggingFace (allenai) |
+| delphi-3e19-998Mparams-5Btokens-seed62746 | 998 M | 4096 | Apache 2.0 | No (base) | Hugging Face (rohithck) |
+| Pythia-1B (EleutherAI) | ~1 B | 2048 | Apache 2.0 | No (base) | Hugging Face (EleutherAI) |
+| Qwen3-0.6B | ~0,6 B | no disponible en esta ficha | Apache 2.0 | Si (instruct y base) | Hugging Face (Qwen) |
+| OLMo-1B | ~1 B | 2048 | Apache 2.0 | No (base) | Hugging Face (allenai) |
 
 La comparacion con Pythia-1B es la mas directa en proposito: ambas son suites de investigacion sobre escalado con checkpoints intermedios y modelos base sin alineacion. Delphi se diferencia por una receta explicita de escalado y una ley de escalado validada con prediccion pre-registrada. Frente a Qwen3-0.6B u OLMo-1B, la diferencia principal es que este checkpoint no tiene instruction tuning ni evaluaciones publicadas, lo que limita su uso fuera de investigacion. No se dispone de datos de rendimiento comparativo en la informacion proporcionada.
 
@@ -99,8 +99,8 @@ La comparacion con Pythia-1B es la mas directa en proposito: ambas son suites de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rohithck/delphi-3e19-998Mparams-5Btokens-seed62746
-- Organizacion Marin en HuggingFace (todos los checkpoints Delphi): https://huggingface.co/marin-community
+- Modelo en Hugging Face: https://huggingface.co/rohithck/delphi-3e19-998Mparams-5Btokens-seed62746
+- Organizacion Marin en Hugging Face (todos los checkpoints Delphi): https://huggingface.co/marin-community
 - Blog de Delphi, "Scaling Laws That Extrapolate 300× Past the Fit": https://openathena.ai/blog/delphi
 - Dataset con los datos de las figuras del blog: https://huggingface.co/datasets/marin-community/delphi-blog-data
 - Repositorio Marin (codigo de la receta): https://github.com/marin-community/marin

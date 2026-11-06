@@ -79,10 +79,10 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks est
 
 | Modelo | Parametros | Formato / cuantizacion | Memoria en GPU | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| iSkye/Kolibri-1-heretic-NVFP4-Experts | 40,35 mil millones | Expertos enrutados NVFP4, resto FP8 por bloques | 42,8 GiB (medido) | Apache-2.0 | HuggingFace, libreria vLLM |
-| iSkye/Kolibri-1-heretic | 40,35 mil millones (misma base) | FP8 por bloques 128x128 | 73,6 GiB (medido) | Apache-2.0 | HuggingFace |
-| iSkye/Kolibri-1-NVFP4-Experts | 40,35 mil millones (misma base) | Expertos NVFP4, sin abliterar | no disponible | Apache-2.0 | HuggingFace |
-| Aleph-Alpha/Kolibri-1 | 40,35 mil millones (misma base) | FP8 por bloques 128x128 | 73,6 GiB (referencia indirecta) | Apache-2.0 | HuggingFace |
+| iSkye/Kolibri-1-heretic-NVFP4-Experts | 40,35 mil millones | Expertos enrutados NVFP4, resto FP8 por bloques | 42,8 GiB (medido) | Apache-2.0 | Hugging Face, libreria vLLM |
+| iSkye/Kolibri-1-heretic | 40,35 mil millones (misma base) | FP8 por bloques 128x128 | 73,6 GiB (medido) | Apache-2.0 | Hugging Face |
+| iSkye/Kolibri-1-NVFP4-Experts | 40,35 mil millones (misma base) | Expertos NVFP4, sin abliterar | no disponible | Apache-2.0 | Hugging Face |
+| Aleph-Alpha/Kolibri-1 | 40,35 mil millones (misma base) | FP8 por bloques 128x128 | 73,6 GiB (referencia indirecta) | Apache-2.0 | Hugging Face |
 
 No se dispone de datos de contexto ni de benchmarks comparativos frente a modelos de otros fabricantes de la misma categoria.
 
@@ -100,7 +100,7 @@ No se dispone de datos de contexto ni de benchmarks comparativos frente a modelo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/iSkye/Kolibri-1-heretic-NVFP4-Experts
+- Repositorio Hugging Face: https://huggingface.co/iSkye/Kolibri-1-heretic-NVFP4-Experts
 - Checkpoint base heretico: https://huggingface.co/iSkye/Kolibri-1-heretic
 - Checkpoint NVFP4 sin abliterar: https://huggingface.co/iSkye/Kolibri-1-NVFP4-Experts
 - Modelo original: https://huggingface.co/Aleph-Alpha/Kolibri-1

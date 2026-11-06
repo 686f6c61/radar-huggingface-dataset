@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Comparativa con modelos similares
 
-En HuggingFace se han encontrado otros dos checkpoints de la misma serie de experimentos:
+En Hugging Face se han encontrado otros dos checkpoints de la misma serie de experimentos:
 
 - `kdyck_dose_50Mpt_hfinit_20M_s2_2026-08-14_15-32-20_705847-pt`: https://huggingface.co/alexkstern/kdyck_dose_50Mpt_hfinit_20M_s2_2026-08-14_15-32-20_705847-pt
 - `kdyck_dose_50Mpt_20M_s2_2026-08-14_22-59-48_639587-pt`: https://huggingface.co/alexkstern/kdyck_dose_50Mpt_20M_s2_2026-08-14_22-59-48_639587-pt
@@ -70,6 +70,6 @@ No se dispone de especificaciones ni benchmarks comparables publicados para esto
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alexkstern/kdyck_dose_50Mpt_hfbody_adamwppt_20M_s2_2026-09-06_20-16-38_888531-pt
+- Hugging Face: https://huggingface.co/alexkstern/kdyck_dose_50Mpt_hfbody_adamwppt_20M_s2_2026-09-06_20-16-38_888531-pt
 - W&B run: https://wandb.ai/alexksternteam/token_dose_50Mpt_adamw_seed_replicas_v1/runs/5xw7f147
 - Repo nanochat: https://github.com/karpathy/nanochat

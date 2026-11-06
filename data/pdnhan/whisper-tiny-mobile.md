@@ -88,7 +88,7 @@ No se dispone de datos de benchmarks de precisión para establecer comparaciones
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pdnhan/whisper-tiny-mobile
+- Modelo en Hugging Face: https://huggingface.co/pdnhan/whisper-tiny-mobile
 - Export base: https://huggingface.co/Xenova/whisper-tiny
 - Modelo original: https://huggingface.co/openai/whisper-tiny
 - Repositorio de código de Whisper: https://github.com/openai/whisper

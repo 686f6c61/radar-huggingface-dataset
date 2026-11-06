@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DutchIT/minimax-prompt-enhancer es un modelo publicado en HuggingFace por el autor DutchIT. Según la información disponible en la model card, se trata de un recurso orientado a la mejora (enhancement) de prompts, presumiblemente vinculado a la familia de modelos MiniMax, aunque la documentación aportada por el autor es mínima y no incluye descripción técnica, detalles de arquitectura ni ejemplos de uso.
+DutchIT/minimax-prompt-enhancer es un modelo publicado en Hugging Face por el autor DutchIT. Según la información disponible en la model card, se trata de un recurso orientado a la mejora (enhancement) de prompts, presumiblemente vinculado a la familia de modelos MiniMax, aunque la documentación aportada por el autor es mínima y no incluye descripción técnica, detalles de arquitectura ni ejemplos de uso.
 
 La relevancia de este tipo de modelos radica en la optimización automática de instrucciones para LLM: un prompt enhancer toma una instrucción en lenguaje natural y la reescribe, amplía o estructura para obtener mejores resultados en el modelo destino. Sin embargo, en este caso concreto no se ha publicado información verificable sobre parámetros, arquitectura, longitud de contexto ni datos de entrenamiento, por lo que no es posible caracterizar técnicamente el modelo más allá de su licencia y su identificador.
 
@@ -91,6 +91,6 @@ Para tareas de mejora de prompts en producción, los modelos oficiales de MiniMa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DutchIT/minimax-prompt-enhancer
+- Hugging Face: https://huggingface.co/DutchIT/minimax-prompt-enhancer
 
 No se han encontrado enlaces adicionales (paper, blog, repositorio de código o demo) en la información disponible.

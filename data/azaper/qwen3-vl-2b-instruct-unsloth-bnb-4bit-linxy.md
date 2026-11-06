@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Azaper/Qwen3-VL-2B-Instruct-unsloth-bnb-4bit-linxy es un modelo de visión-lenguaje (VLM) de 2.127 millones de parámetros, resultado de un fine-tuning del modelo base unsloth/Qwen3-VL-2B-Instruct-unsloth-bnb-4bit, que a su vez es una versión cuantizada a 4 bits del Qwen3-VL-2B-Instruct original de Alibaba. El autor, Azaper, ha publicado este modelo en HuggingFace con licencia Apache-2.0, orientado a tareas de image-text-to-text (comprensión y generación de texto a partir de imágenes).
+Azaper/Qwen3-VL-2B-Instruct-unsloth-bnb-4bit-linxy es un modelo de visión-lenguaje (VLM) de 2.127 millones de parámetros, resultado de un fine-tuning del modelo base unsloth/Qwen3-VL-2B-Instruct-unsloth-bnb-4bit, que a su vez es una versión cuantizada a 4 bits del Qwen3-VL-2B-Instruct original de Alibaba. El autor, Azaper, ha publicado este modelo en Hugging Face con licencia Apache-2.0, orientado a tareas de image-text-to-text (comprensión y generación de texto a partir de imágenes).
 
 El modelo resuelve el problema de ejecutar un VLM de última generación en hardware limitado: al estar cuantizado a 4 bits con bitsandbytes, reduce significativamente los requisitos de memoria y permite su despliegue en GPUs de consumo. Su relevancia actual radica en la creciente demanda de modelos multimodales ligeros para aplicaciones edge, asistentes visuales y automatización de procesos que requieren comprensión de imágenes sin depender de infraestructura cloud costosa.
 
@@ -23,7 +23,7 @@ Arquitectónicamente, se basa en el transformer de Qwen3-VL, que incorpora un co
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tuning del checkpoint unsloth/Qwen3-VL-2B-Instruct-unsloth-bnb-4bit, que ya incorpora la cuantizacion 4-bit aplicada por Unsloth. El proceso de entrenamiento se realizo con la libreria TRL de HuggingFace, optimizado con Unsloth para acelerar el fine-tuning (el autor indica que se entreno 2 veces mas rapido). No se especifica la tecnica exacta de entrenamiento (SFT, DPO, etc.), aunque por el contexto de la model card se asume un fine-tuning supervisado clasico.
+El modelo es un fine-tuning del checkpoint unsloth/Qwen3-VL-2B-Instruct-unsloth-bnb-4bit, que ya incorpora la cuantizacion 4-bit aplicada por Unsloth. El proceso de entrenamiento se realizo con la libreria TRL de Hugging Face, optimizado con Unsloth para acelerar el fine-tuning (el autor indica que se entreno 2 veces mas rapido). No se especifica la tecnica exacta de entrenamiento (SFT, DPO, etc.), aunque por el contexto de la model card se asume un fine-tuning supervisado clasico.
 
 El modelo base Qwen3-VL-2B-Instruct pertenece a la familia Qwen3-VL, que destaca por su comprension visual profunda, razonamiento espacial y capacidades de agente. Al ser un modelo denso de 2B, no utiliza mezcla de expertos (MoE), lo que simplifica su despliegue. La cuantizacion a 4 bits reduce el peso de los parametros de 16 bits a 4 bits, manteniendo un equilibrio entre rendimiento y eficiencia.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Azaper/Qwen3-VL-2B-Instruct-unsloth-bnb-4bit-linxy | 2,1B | No disponible | 4-bit | Apache-2.0 | HuggingFace |
-| unsloth/Qwen3-VL-2B-Instruct-unsloth-bnb-4bit | 2,1B | No disponible | 4-bit | Apache-2.0 | HuggingFace |
-| Qwen/Qwen3-VL-2B-Instruct (original) | 2,1B | 32k (segun documentacion de Qwen) | FP16 | Apache-2.0 | HuggingFace, ModelScope |
+| Azaper/Qwen3-VL-2B-Instruct-unsloth-bnb-4bit-linxy | 2,1B | No disponible | 4-bit | Apache-2.0 | Hugging Face |
+| unsloth/Qwen3-VL-2B-Instruct-unsloth-bnb-4bit | 2,1B | No disponible | 4-bit | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3-VL-2B-Instruct (original) | 2,1B | 32k (segun documentacion de Qwen) | FP16 | Apache-2.0 | Hugging Face, ModelScope |
 
 La diferencia principal entre el modelo de Azaper y el de Unsloth es el fine-tuning adicional realizado por Azaper, aunque no se especifican los datos ni el objetivo de dicho fine-tuning. El modelo original de Qwen no esta cuantizado, por lo que requiere mas VRAM. No se dispone de benchmarks comparativos entre estas versiones.
 
@@ -80,7 +80,7 @@ La diferencia principal entre el modelo de Azaper y el de Unsloth es el fine-tun
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Azaper/Qwen3-VL-2B-Instruct-unsloth-bnb-4bit-linxy
+- Modelo en Hugging Face: https://huggingface.co/Azaper/Qwen3-VL-2B-Instruct-unsloth-bnb-4bit-linxy
 - Modelo base (Unsloth): https://huggingface.co/unsloth/Qwen3-VL-2B-Instruct-unsloth-bnb-4bit
 - Guia de Unsloth para Qwen3-VL: https://unsloth.ai/docs/models/tutorials/qwen3-how-to-run-and-fine-tune/qwen3-vl-how-to-run-and-fine-tune
 - Modelo original Qwen3-VL-2B-Instruct en ModelScope: https://www.modelscope.cn/models/Qwen/Qwen3-VL-2B-Instruct

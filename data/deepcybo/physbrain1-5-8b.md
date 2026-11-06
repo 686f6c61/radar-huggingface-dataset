@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 | Especialidad | VLM encarnado para robótica y razonamiento espacial | VLM general multimodal |
 | Capacidades adicionales | Tokens de acción, predicción de trayectorias y estado futuro | No documenta tokens de acción |
 | Licencia | no disponible | no disponible |
-| Disponibilidad | HuggingFace (DeepCybo/PhysBrain1.5-8B) | HuggingFace (Qwen/Qwen3-VL-8B-Instruct) |
+| Disponibilidad | Hugging Face (DeepCybo/PhysBrain1.5-8B) | Hugging Face (Qwen/Qwen3-VL-8B-Instruct) |
 
 No se disponen de comparativas cuantitativas contra otros modelos de la misma categoría en la información proporcionada. La única referencia comparable es el modelo base del que parte.
 
@@ -95,5 +95,5 @@ No se disponen de comparativas cuantitativas contra otros modelos de la misma ca
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DeepCybo/PhysBrain1.5-8B
+- Hugging Face: https://huggingface.co/DeepCybo/PhysBrain1.5-8B
 - Proyecto PhysBrain (documentación y arquitectura): https://zgc-embodyai.github.io/PhysBrain/

@@ -116,10 +116,10 @@ Los datos de las dos alternativas no estan disponibles en la informacion proporc
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Canfield/llama.cpp-c1d0e7a-cuda12.8.1-linux-x64
+- Repositorio en Hugging Face: https://huggingface.co/Canfield/llama.cpp-c1d0e7a-cuda12.8.1-linux-x64
 - Codigo fuente de llama.cpp: https://github.com/ggml-org/llama.cpp
 - Releases de llama.cpp: https://github.com/ggml-org/llama.cpp/releases
-- Documentacion de llama.cpp en HuggingFace Inference Endpoints: https://huggingface.co/docs/inference-endpoints/engines/llama_cpp
+- Documentacion de llama.cpp en Hugging Face Inference Endpoints: https://huggingface.co/docs/inference-endpoints/engines/llama_cpp
 - Sitio oficial de llama.app: https://llama.app/
 - Repositorio de modelos Llama de Meta: https://github.com/meta-llama/llama-models/blob/main/README.md
 - Guia practica de despliegue con Ollama: https://dev.to/primghostdev/run-your-own-ai-model-locally-a-practical-ollama-setup-guide-2026-2kk9

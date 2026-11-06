@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento entre 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xunlinkx/MiMo-V2.6-Distill-Qwen-9B-Text-oQ3e-mtp
+- Modelo en Hugging Face: https://huggingface.co/xunlinkx/MiMo-V2.6-Distill-Qwen-9B-Text-oQ3e-mtp
 - Modelo base: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B
 - Pagina oficial de MiMo-V2.6 (Xiaomi): https://mimo.xiaomi.com/mimo-v2-6
 - Nota de la serie MiMo-V2.6 con precios y publicacion de pesos: https://mimo.mi.com/docs/en-US/news/latest/v2-6

@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparado entre estos modelos en la inform
 - Pérdida de restricciones en contextos largos: la propia documentación advierte de que una longitud de contexto configurada no garantiza que toda la información se use correctamente.
 - Errores en el uso de herramientas: la model card señala explícitamente que pueden producirse fallos al invocar herramientas.
 - Cobertura idiomática limitada a francés e inglés; no se declara soporte de castellano ni de otros idiomas.
-- Licencia mixta y poco convencional: el material de Kalicorp sigue los términos del proyecto Kali-Lite y los pesos upstream son Apache-2.0, pero la model card recomienda revisar el aviso de licencia antes de redistribuir pesos. La etiqueta de licencia de HuggingFace es "other", lo que complica la verificación automática de compatibilidad comercial.
+- Licencia mixta y poco convencional: el material de Kalicorp sigue los términos del proyecto Kali-Lite y los pesos upstream son Apache-2.0, pero la model card recomienda revisar el aviso de licencia antes de redistribuir pesos. La etiqueta de licencia de Hugging Face es "other", lo que complica la verificación automática de compatibilidad comercial.
 - No se confirma que el repositorio incluya pesos ni ficheros GGUF, por lo que la reproducibilidad completa depende de reconstruir la configuración sobre Qwen3-8B.
 - La inferencia local no implica por sí misma cumplimiento del RGPD, del Reglamento Europeo de IA, de las guías de la ANSSI ni de ningún marco de certificación, tal como advierte la propia model card.
 - Modelo con 0 descargas y 0 valoraciones: no existe validación independiente de su comportamiento.
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparado entre estos modelos en la inform
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/keepstar/Kali-Lite-8B
+- Repositorio en Hugging Face: https://huggingface.co/keepstar/Kali-Lite-8B
 - Modelo base upstream: https://huggingface.co/Qwen/Qwen3-8B
 - Repositorio de código y documentación de seguridad del proyecto: `Kalicorp/kalicorp-kali-lite` en GitHub (referenciado en la model card; no se proporciona URL completa)
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo. Los resultados devueltos corresponden a hilos de un foro de operador sobre correctores ortográficos y no guardan relación con Kali-Lite 8B.

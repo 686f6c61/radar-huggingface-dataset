@@ -6,7 +6,7 @@ Oscilla/Qwen2.5-1.5B-Instruct-mlx-8Bit es una conversión al formato MLX (Machin
 
 El modelo base Qwen2.5-1.5B-Instruct fue entrenado sobre un dataset masivo de hasta 18 billones de tokens, con soporte para 29 idiomas y una ventana de contexto de hasta 128K tokens. La cuantización a 8 bits reduce el tamaño de los pesos y acelera la inferencia en dispositivos con memoria limitada, manteniendo un equilibrio razonable entre calidad y eficiencia. Esta conversión es relevante para desarrolladores que necesitan desplegar un modelo de chat competente en entornos de recursos reducidos, como portátiles, dispositivos móviles o servidores de inferencia con VRAM moderada.
 
-La ficha se basa en la información pública de HuggingFace y en los resultados de búsqueda web sobre la serie Qwen2.5. No se han encontrado benchmarks específicos para esta conversión concreta, por lo que los datos de rendimiento se refieren al modelo original cuando están disponibles.
+La ficha se basa en la información pública de Hugging Face y en los resultados de búsqueda web sobre la serie Qwen2.5. No se han encontrado benchmarks específicos para esta conversión concreta, por lo que los datos de rendimiento se refieren al modelo original cuando están disponibles.
 
 ## Especificaciones tecnicas
 
@@ -35,7 +35,7 @@ La conversión a MLX en 8 bits se realizó con mlx-lm, que aplica cuantización 
 - Soporte de function calling y tool calling en el modelo base Qwen2.5-Instruct, aunque la conversión MLX no modifica esta capacidad.
 - Capacidades multilingües del modelo base (29 idiomas), aunque la etiqueta de esta conversión solo indica inglés.
 - Ventana de contexto de hasta 128K tokens, útil para documentos largos y conversaciones multi-turno extensas.
-- Compatible con el pipeline de text-generation de HuggingFace y con la librería mlx-lm para inferencia local.
+- Compatible con el pipeline de text-generation de Hugging Face y con la librería mlx-lm para inferencia local.
 
 ## Casos de uso
 
@@ -80,7 +80,7 @@ La comparativa se basa en características generales; no se dispone de benchmark
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Oscilla/Qwen2.5-1.5B-Instruct-mlx-8Bit
+- Modelo en Hugging Face: https://huggingface.co/Oscilla/Qwen2.5-1.5B-Instruct-mlx-8Bit
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Documentación de Qwen2.5 en GitHub: https://github.com/mx4ai/qwen2.5
 - Página de Qwen2.5 en ModelScope: https://www.modelscope.cn/models/qwen/Qwen2.5-1.5B-Instruct

@@ -88,7 +88,7 @@ La principal diferencia frente a sus alternativas es el tamano en disco: este mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mlx-community/Qwen3.5-122B-A10B-OptiQ-2bit-REAP-63B
+- Modelo en Hugging Face: https://huggingface.co/mlx-community/Qwen3.5-122B-A10B-OptiQ-2bit-REAP-63B
 - Modelo padre (cuantizado 2 bits): https://huggingface.co/mlx-community/Qwen3.5-122B-A10B-OptiQ-2bit
 - Version 4 bits del mismo modelo base: https://huggingface.co/mlx-community/Qwen3.5-122B-A10B-4bit
 - Paper de REAP (Cerebras Research, ICLR 2026): https://arxiv.org/abs/2510.13999

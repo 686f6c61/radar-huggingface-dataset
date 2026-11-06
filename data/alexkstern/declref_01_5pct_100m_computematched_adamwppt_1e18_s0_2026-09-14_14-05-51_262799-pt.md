@@ -58,7 +58,7 @@ El entrenamiento se organiza en dos fases dentro del mismo run: preentrenamiento
 - Investigación sobre transiciones de vocabulario y reinicialización de embeddings: la configuración reinicia embeddings y optimizador entre fases y usa un vocabulario `ppt` de 1.028 tokens, lo que permite estudiar el coste y la recuperación de ese cambio de cabezal en modelos pequeños.
 - Ajuste fino (*fine-tuning*) de bajo coste para dominios concretos: con la configuración declarada, el modelo cabe en una GPU de gama alta de consumo, por lo que es un punto de partida viable para adaptar a una tarea específica de clasificación o generación en inglés antes de escalar a modelos mayores.
 - Prototipado local de generación de texto: se puede cargar en una estación de trabajo con GPU consumer para validar pipelines de tokenización, decodificación y evaluación con 2048 tokens de contexto, sin depender de APIs externas.
-- Reproducción y auditoría de infraestructuras de entrenamiento: el run publica configuración completa, métricas y estado del RNG en el repositorio de HuggingFace, lo que permite reproducir el entrenamiento con nanochat y verificar el log del run de W&B asociado.
+- Reproducción y auditoría de infraestructuras de entrenamiento: el run publica configuración completa, métricas y estado del RNG en el repositorio de Hugging Face, lo que permite reproducir el entrenamiento con nanochat y verificar el log del run de W&B asociado.
 - Docencia y material didáctico: al ser un stack compacto y con la configuración explícita, resulta útil para explicar en un curso cómo se define un transformer, cómo se calcula el presupuesto de FLOPs por token y cómo se registran métricas de entrenamiento.
 - Comparación de tokenizadores: al existir vocabularios distintos para las fases `pt` (65.536) y `ppt` (1.028), permite medir el impacto del tamaño de vocabulario en la pérdida y en el coste por token dentro de un mismo presupuesto.
 
@@ -92,7 +92,7 @@ Nota: el repositorio incluye conjuntos de evaluación (`c4-nanochatbpe-10B` como
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad de pesos | Rendimiento |
 |---|---|---|---|---|---|
-| `declref_01_5pct_100M_...-pt` (este) | no declarados (varios cientos de millones según la configuración) | 2048 | Apache-2.0 | `.pt` en HuggingFace | Sin benchmarks publicados |
+| `declref_01_5pct_100M_...-pt` (este) | no declarados (varios cientos de millones según la configuración) | 2048 | Apache-2.0 | `.pt` en Hugging Face | Sin benchmarks publicados |
 | nanochat d20 (base de referencia del propio stack) | ~560 M | 2048 | no confirmada en las fuentes de esta ficha | mediante el repositorio nanochat | No comparable con los datos disponibles |
 | Pythia-410M (EleutherAI) | 410 M | 2048 | Apache-2.0 | safetensors y `.pt` | No comparable con los datos disponibles |
 | Qwen2.5-0.5B (base) | ~0,49 B | 32.768 | Apache-2.0 | safetensors | No comparable con los datos disponibles |
@@ -114,7 +114,7 @@ Los datos de los modelos de comparación proceden de su documentación pública 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alexkstern/declref_01_5pct_100M_computematched_adamwppt_1e18_s0_2026-09-14_14-05-51_262799-pt
+- Modelo en Hugging Face: https://huggingface.co/alexkstern/declref_01_5pct_100M_computematched_adamwppt_1e18_s0_2026-09-14_14-05-51_262799-pt
 - Run de W&B: https://wandb.ai/alexksternteam/cm100M_best_cells_hfpush_v0/runs/ssrfs35o
 - Repositorio nanochat (stack de entrenamiento): https://github.com/karpathy/nanochat
 - Búsqueda web: no se han encontrado resultados relevantes sobre este modelo. Las consultas devolvieron únicamente páginas sin relación con el contenido (herramientas de manipulación de PDF en chino y japonés), por lo que no hay papers, blogs ni demos adicionales que enlazar.

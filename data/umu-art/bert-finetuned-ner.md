@@ -2,7 +2,7 @@
 
 ## Resumen
 
-bert-finetuned-ner es un modelo de reconocimiento de entidades nombradas (NER, *token classification*) publicado por el usuario umu-art en HuggingFace. Se trata de un ajuste fino (*fine-tuning*) del modelo de embeddings BAAI/bge-small-en-v1.5, un codificador tipo BERT de aproximadamente 33 millones de parámetros, sobre un conjunto de datos de entrenamiento que el autor no especifica en la model card ("unknown dataset"). El resultado es un modelo de 33.215.625 parámetros que etiqueta tokens con precisión 0,8323, recall 0,9068 y F1 0,8679 sobre el conjunto de evaluación declarado, con una exactitud de 0,9736.
+bert-finetuned-ner es un modelo de reconocimiento de entidades nombradas (NER, *token classification*) publicado por el usuario umu-art en Hugging Face. Se trata de un ajuste fino (*fine-tuning*) del modelo de embeddings BAAI/bge-small-en-v1.5, un codificador tipo BERT de aproximadamente 33 millones de parámetros, sobre un conjunto de datos de entrenamiento que el autor no especifica en la model card ("unknown dataset"). El resultado es un modelo de 33.215.625 parámetros que etiqueta tokens con precisión 0,8323, recall 0,9068 y F1 0,8679 sobre el conjunto de evaluación declarado, con una exactitud de 0,9736.
 
 El modelo es relevante para desarrolladores que necesiten un extractor de entidades ligero, desplegable en CPU o en GPUs de gama de consumo, ya que su tamaño reducido (0,1 GB de repositorio) permite inferencias con latencias bajas y sin requisitos de VRAM significativos. Su licencia MIT facilita la integración en productos comerciales sin las restricciones de otros modelos de NER. No obstante, la ausencia de documentación sobre el corpus de entrenamiento, el dominio de aplicación y los idiomas soportados limita seriamente su uso en producción sin una validación previa por parte del equipo que lo adopte.
 
@@ -74,15 +74,15 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, C
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM; no se requiere A100, H100 ni RTX 4090. Una GTX 1050 o una GPU integrada son suficientes.
 - Inferencia en CPU: plenamente viable; el modelo puede ejecutarse en un portatil convencional.
 - GPU de consumo: cabe en cualquier GPU de consumo, incluidas las de gamas bajas y medias.
-- Opciones de despliegue: pipeline `token-classification` de Transformers como via principal; exportacion a ONNX mediante Optimum para acelerar la inferencia en CPU; servidores de inferencia compatibles con el estandar de HuggingFace (la etiqueta `endpoints_compatible` indica compatibilidad con Inference Endpoints). No se publican pesos en formato GGUF, por lo que Ollama y llama.cpp no son aplicables directamente sin conversion.
+- Opciones de despliegue: pipeline `token-classification` de Transformers como via principal; exportacion a ONNX mediante Optimum para acelerar la inferencia en CPU; servidores de inferencia compatibles con el estandar de Hugging Face (la etiqueta `endpoints_compatible` indica compatibilidad con Inference Endpoints). No se publican pesos en formato GGUF, por lo que Ollama y llama.cpp no son aplicables directamente sin conversion.
 - Latencia y throughput: el autor declara 405,122 muestras por segundo y 25,429 pasos por segundo durante la evaluacion, con un tiempo total de evaluacion de 8,0223 segundos. Estas cifras dependen del hardware empleado, que no se especifica.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| umu-art/bert-finetuned-ner | 33.215.625 | 512 tokens (heredado) | NER (token classification) | MIT | HuggingFace, 0 descargas |
-| BAAI/bge-small-en-v1.5 (modelo base) | ~33 M | 512 tokens | Embeddings de frases | MIT | HuggingFace, ampliamente usado |
+| umu-art/bert-finetuned-ner | 33.215.625 | 512 tokens (heredado) | NER (token classification) | MIT | Hugging Face, 0 descargas |
+| BAAI/bge-small-en-v1.5 (modelo base) | ~33 M | 512 tokens | Embeddings de frases | MIT | Hugging Face, ampliamente usado |
 | Otros modelos de NER de tamano similar | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparativos entre este modelo y alternativas de la misma categoria, ya que el autor no publica benchmarks frente a otros sistemas de NER.
@@ -101,7 +101,7 @@ No se dispone de datos de rendimiento comparativos entre este modelo y alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/umu-art/bert-finetuned-ner
+- Modelo en Hugging Face: https://huggingface.co/umu-art/bert-finetuned-ner
 - Modelo base: https://huggingface.co/BAAI/bge-small-en-v1.5
 - Paper o blog oficial del modelo: no disponible
 - Repositorio de codigo: no disponible

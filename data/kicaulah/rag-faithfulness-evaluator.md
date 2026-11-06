@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RAG Faithfulness & Hallucination Evaluator (v1.0.0) es un modelo de clasificación de texto publicado por el usuario Kicaulah en HuggingFace. Su función es verificar si una respuesta generada por un LLM o por un sistema RAG está factualmente anclada en los pasajes recuperados, es decir, evaluar la fidelidad al contexto en lugar de la veracidad respecto al mundo real. El autor lo describe como un evaluador calibrado, ligero y apto para producción, con licencia Apache 2.0.
+RAG Faithfulness & Hallucination Evaluator (v1.0.0) es un modelo de clasificación de texto publicado por el usuario Kicaulah en Hugging Face. Su función es verificar si una respuesta generada por un LLM o por un sistema RAG está factualmente anclada en los pasajes recuperados, es decir, evaluar la fidelidad al contexto en lugar de la veracidad respecto al mundo real. El autor lo describe como un evaluador calibrado, ligero y apto para producción, con licencia Apache 2.0.
 
 El modelo se presenta como un "hybrid cross-encoder" que distingue explícitamente entre fidelidad contextual y corrección factual del mundo real, entre implicación (entailment), contradicción directa y extrapolación no soportada, y que descompone las respuestas en afirmaciones atómicas con atribución de evidencia. Según la model card, ha sido sometido a pruebas de estrés frente a perturbaciones numéricas, intercambio de fechas, sustitución de entidades, inversión de negaciones y eliminación de matices.
 
@@ -100,6 +100,6 @@ No se dispone de datos de parametros, contexto ni disponibilidad de las alternat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kicaulah/rag-faithfulness-evaluator
+- Modelo en Hugging Face: https://huggingface.co/Kicaulah/rag-faithfulness-evaluator
 
 No se han encontrado en la busqueda web enlaces relevantes al modelo, papers, repositorios o demos asociados. Los resultados devueltos por la busqueda no guardan relacion con este modelo y se han descartado.

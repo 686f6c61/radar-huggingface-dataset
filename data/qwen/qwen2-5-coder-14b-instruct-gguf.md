@@ -99,7 +99,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Qwen/Qwen2.5-Coder-14B-Instruct-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Qwen/Qwen2.5-Coder-14B-Instruct-GGUF
 - Modelo base en safetensors: https://huggingface.co/Qwen/Qwen2.5-Coder-14B-Instruct
 - Blog de la familia Qwen2.5-Coder: https://qwenlm.github.io/blog/qwen2.5-coder-family/
 - Repositorio GitHub: https://github.com/QwenLM/Qwen2.5-Coder

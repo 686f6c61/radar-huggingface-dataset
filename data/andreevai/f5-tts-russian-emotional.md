@@ -79,7 +79,7 @@ La principal ventaja de esta ficha frente a alternativas multilingües como XTTS
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Andreevai/f5-tts-russian-emotional
+- Modelo en Hugging Face: https://huggingface.co/Andreevai/f5-tts-russian-emotional
 - Notebook de Colab para demo: https://huggingface.co/Andreevai/f5-tts-russian-emotional/resolve/main/russian_emotional_tts_colab.ipynb
 - Dataset de entrenamiento: https://huggingface.co/datasets/langswap/dialogs-ru-emotional-conversations
 - Google Colab (para ejecutar la demo): https://colab.research.google.com/

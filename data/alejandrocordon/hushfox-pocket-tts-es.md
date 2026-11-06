@@ -80,7 +80,7 @@ No se dispone de información suficiente para establecer una comparativa cuantit
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alejandrocordon/hushfox-pocket-tts-es
+- Modelo en Hugging Face: https://huggingface.co/alejandrocordon/hushfox-pocket-tts-es
 - Modelo base: https://huggingface.co/kyutai/pocket-tts
 - Exportador ONNX: https://github.com/csukuangfj/pocket-tts-onnx-export
 - Runtime sherpa-onnx: https://github.com/k2-fsa/sherpa-onnx

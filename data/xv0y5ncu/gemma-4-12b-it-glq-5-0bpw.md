@@ -84,8 +84,8 @@ La comparativa muestra que la cuantización GLQ 5.0 bpw reduce el peso de GPU en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xv0y5ncu/Gemma-4-12B-it-GLQ-5.0bpw
-- Modelo base en HuggingFace: https://huggingface.co/google/gemma-4-12B-it
+- Modelo en Hugging Face: https://huggingface.co/xv0y5ncu/Gemma-4-12B-it-GLQ-5.0bpw
+- Modelo base en Hugging Face: https://huggingface.co/google/gemma-4-12B-it
 - Repositorio GLQ (GitHub): https://github.com/cnygaard/glq
 - Página oficial de Gemma 4 (Google DeepMind): https://deepmind.google/models/gemma/gemma-4/
 - Guía de desarrollo de Gemma 4 12B (Google Developers Blog): https://developers.googleblog.com/gemma-4-12b-the-developer-guide/

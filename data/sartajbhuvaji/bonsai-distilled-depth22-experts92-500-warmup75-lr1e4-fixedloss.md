@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `sartajbhuvaji/bonsai-distilled-depth22-experts92-500-warmup75-lr1e4-fixedloss` es un modelo de generacion de texto publicado en HuggingFace por el usuario sartajbhuvaji. Su etiqueta de arquitectura (`qwen3_moe`) indica que emplea la clase de modelado MoE de la familia Qwen3, con un total de 5.531.697.664 parametros (~5,53 mil millones) segun los pesos en safetensors, y un tamano de repositorio de 11,1 GB.
+El modelo `sartajbhuvaji/bonsai-distilled-depth22-experts92-500-warmup75-lr1e4-fixedloss` es un modelo de generacion de texto publicado en Hugging Face por el usuario sartajbhuvaji. Su etiqueta de arquitectura (`qwen3_moe`) indica que emplea la clase de modelado MoE de la familia Qwen3, con un total de 5.531.697.664 parametros (~5,53 mil millones) segun los pesos en safetensors, y un tamano de repositorio de 11,1 GB.
 
-El nombre del checkpoint sugiere que se trata de un modelo destilado ("distilled") con profundidad de 22 capas ("depth22") y 92 expertos ("experts92"), entrenado con una tasa de aprendizaje de 1e-4 y 75 pasos de warmup, aunque no hay documentacion que confirme estos detalles. La model card es la plantilla autogenerada por HuggingFace y no incluye informacion sustantiva sobre desarrollo, datos de entrenamiento, licencia o idiomas.
+El nombre del checkpoint sugiere que se trata de un modelo destilado ("distilled") con profundidad de 22 capas ("depth22") y 92 expertos ("experts92"), entrenado con una tasa de aprendizaje de 1e-4 y 75 pasos de warmup, aunque no hay documentacion que confirme estos detalles. La model card es la plantilla autogenerada por Hugging Face y no incluye informacion sustantiva sobre desarrollo, datos de entrenamiento, licencia o idiomas.
 
 Se trata de un checkpoint con cero descargas y cero "likes" en el momento de la consulta, sin paper asociado, sin benchmarks publicados y sin licencia declarada. Es relevante unicamente como ejemplo de experimento de destilacion sobre arquitectura MoE; no debe considerarse un modelo listo para produccion sin una evaluacion previa por parte del usuario.
 
@@ -90,7 +90,7 @@ No hay datos de rendimiento del modelo evaluado que permitan una comparacion cua
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sartajbhuvaji/bonsai-distilled-depth22-experts92-500-warmup75-lr1e4-fixedloss
+- Hugging Face: https://huggingface.co/sartajbhuvaji/bonsai-distilled-depth22-experts92-500-warmup75-lr1e4-fixedloss
 - Referencia citada en la model card (calculadora de impacto de carbono, Lacoste et al. 2019): https://arxiv.org/abs/1910.09700
 - Calculadora ML Impact: https://mlco2.github.io/impact
 - Paper o blog del modelo: no disponible

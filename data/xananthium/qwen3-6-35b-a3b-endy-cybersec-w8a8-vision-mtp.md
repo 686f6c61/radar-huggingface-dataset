@@ -85,11 +85,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Restricciones de licencia: la licencia declarada es apache-2.0, pero la model card indica que las licencias upstream aplican y que el README original se conserva en README_ORIGINAL.md; conviene revisarlo antes de uso comercial.
 - La cuantizacion W8A8 puede degradar ligeramente la calidad respecto a los pesos en precision completa; no se proporciona una comparativa detallada mas alla de las pruebas sinteticas citadas.
 - El repositorio tiene 0 descargas y 0 likes, sin validacion de la comunidad, lo que reduce la confianza en su comportamiento en produccion.
-- No se proporciona pipeline declarado en HuggingFace, lo que complica el uso directo con la API de pipelines.
+- No se proporciona pipeline declarado en Hugging Face, lo que complica el uso directo con la API de pipelines.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Xananthium/Qwen3.6-35B-A3B-Endy-CyberSec-W8A8-Vision-MTP
+- Modelo en Hugging Face: https://huggingface.co/Xananthium/Qwen3.6-35B-A3B-Endy-CyberSec-W8A8-Vision-MTP
 - Modelo base del fine-tune: https://huggingface.co/endystrike/Endy-Qwen3.6-CyberSec-35B-A3B
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Documentacion de vLLM Ascend para Qwen3.6-35B-A3B: https://docs.vllm.ai/projects/ascend/en/latest/tutorials/models/Qwen3.6-35B-A3B.html

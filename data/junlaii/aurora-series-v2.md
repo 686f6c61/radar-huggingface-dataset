@@ -87,5 +87,5 @@ No se dispone de información sobre modelos comparables de clasificación de lea
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Junlaii/Aurora-Series-v2
+- Modelo en Hugging Face: https://huggingface.co/Junlaii/Aurora-Series-v2
 - Versión anterior: https://huggingface.co/Junlaii/Aurora-Series-v1

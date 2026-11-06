@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Arakandar es un repositorio de modelo alojado en HuggingFace bajo el identificador `Timothyemmanuel/Arakandar`, publicado por el usuario Timothyemmanuel. En el momento de la consulta el repositorio no presenta ninguna documentacion tecnica: la model card se limita a una cabecera YAML con la licencia `apache-2.0` y no incluye descripcion, arquitectura, tamano, datos de entrenamiento ni ejemplos de uso. El repositorio registra 0 descargas y 0 likes, y no tiene etiqueta de pipeline asignada.
+Arakandar es un repositorio de modelo alojado en Hugging Face bajo el identificador `Timothyemmanuel/Arakandar`, publicado por el usuario Timothyemmanuel. En el momento de la consulta el repositorio no presenta ninguna documentacion tecnica: la model card se limita a una cabecera YAML con la licencia `apache-2.0` y no incluye descripcion, arquitectura, tamano, datos de entrenamiento ni ejemplos de uso. El repositorio registra 0 descargas y 0 likes, y no tiene etiqueta de pipeline asignada.
 
 No se dispone de informacion sobre la arquitectura, el numero de parametros, la longitud de contexto, los idiomas soportados ni el formato de pesos. Tampoco se han publicado resultados de benchmarks ni comparativas con otros modelos. La busqueda web realizada no ha devuelto ningun resultado relacionado con este modelo: los enlaces recuperados corresponden a paginas de ayuda de YouTube en aleman, sin ninguna conexion con el repositorio.
 
@@ -62,7 +62,7 @@ Las unicas recomendaciones defendibles en el estado actual son de caracter previ
 - Verificacion del repositorio: antes de integrar cualquier artefacto, comprobar que existen archivos de pesos reales (`safetensors`, `GGUF`, etc.) y una configuracion coherente, dado que no hay documentacion publicada.
 - Auditoria de seguridad: inspeccionar cualquier archivo de codigo Python o serializacion no segura antes de cargarlo, especialmente si requiere `trust_remote_code=True`.
 - Contacto con el autor: solicitar la model card completa y los datos de entrenamiento si se pretende reutilizar el modelo.
-- Uso como referencia de nomenclatura: el repositorio puede consultarse como ejemplo de publicacion en HuggingFace, sin valor funcional conocido.
+- Uso como referencia de nomenclatura: el repositorio puede consultarse como ejemplo de publicacion en Hugging Face, sin valor funcional conocido.
 - Monitorizacion del repositorio: suscribirse a las actualizaciones por si el autor publica documentacion o pesos definitivos.
 - Descartar su uso en produccion: sin benchmarks, sin idiomas declarados y sin mantenimiento, no cumple los minimos para un despliegue real.
 
@@ -96,6 +96,6 @@ No disponible. Al desconocerse la categoria, el tamano y la tarea del modelo, no
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Timothyemmanuel/Arakandar
+- Hugging Face: https://huggingface.co/Timothyemmanuel/Arakandar
 
 No se han encontrado en la busqueda web enlaces relevantes al modelo (papers, blogs, repositorios o demos). Los resultados devueltos corresponden a paginas de ayuda de YouTube en aleman y no guardan ninguna relacion con Arakandar.

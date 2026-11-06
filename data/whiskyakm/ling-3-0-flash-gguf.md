@@ -71,13 +71,13 @@ No se dispone de datos comparativos fiables en la información proporcionada. El
 - El modelo solo soporta inglés y chino; no se ha entrenado específicamente para otros idiomas, incluido el español. El uso en español puede producir resultados de calidad inferior.
 - El modo de razonamiento está habilitado por defecto, lo que genera tokens adicionales de razonamiento antes de la respuesta final. Esto puede aumentar la latencia percibida en aplicaciones en tiempo real si no se desactiva explícitamente.
 - El tamaño total del repositorio es de 1702,6 GB, lo que implica descargas muy pesadas y requiere planificación de almacenamiento.
-- Aunque la licencia MIT permite uso comercial, el modelo se distribuye bajo términos de la licencia del modelo original (inclusionAI), que debe verificarse en la página de HuggingFace del modelo base para posibles restricciones adicionales.
+- Aunque la licencia MIT permite uso comercial, el modelo se distribuye bajo términos de la licencia del modelo original (inclusionAI), que debe verificarse en la página de Hugging Face del modelo base para posibles restricciones adicionales.
 - Riesgo de alucinación inherente a los modelos de lenguaje de gran tamaño, especialmente en tareas de razonamiento matemático o factual sin verificación externa.
 - La cuantización Q4_0 es la más rápida pero con la menor calidad; se recomienda Q4_K_M o Q5_K_M para un equilibrio adecuado en producción.
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/WhiskyAKM/Ling-3.0-flash-GGUF
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/WhiskyAKM/Ling-3.0-flash-GGUF
 - Modelo original: https://huggingface.co/inclusionAI/Ling-3.0-flash
 - Documentación del modelo Ling: https://developer.ant-ling.com/en/docs/models/ling/
 - Página de benchmarks externa: https://benchable.ai/models/inclusionai/ling-3.0-flash-20260723

@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "lucasdxtx/audio-visual-learning-study",
+  "slug": "lucasdxtx-audio-visual-learning-study",
+  "author": "lucasdxtx",
+  "url": "https://huggingface.co/lucasdxtx/audio-visual-learning-study",
+  "created_at": "2026-11-06T09:38:25.000Z",
+  "updated_at": "2026-11-06T09:38:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "audio-visual-learning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66776,
+  "storage_human": "66776 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "10 Best AI Tools for Education (October 2026) - Unite.AI",
+      "url": "https://www.unite.ai/10-best-ai-tools-for-education/",
+      "snippet": "Artificial intelligence is becoming part of the education stack rather than a single-purpose shortcut. The strongest tools can guide a learner through a difficult concept, help an educator adapt material for different reading levels, turn trusted course sources into study resources, or give a school the controls needed to introduce AI responsibly."
+    }
+  ]
+}

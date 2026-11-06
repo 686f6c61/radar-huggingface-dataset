@@ -91,7 +91,7 @@ Hallazgos declarados por el autor a partir de los controles emparejados:
 
 | Modelo | Parametros | Contexto / accion | Exito en GR-1 tabletop | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| VR-gr1-xfer-proprio-delta (este) | ~1,1B (266M entrenables) | 44 dims, chunks de 16 a 20 Hz | 21,3% (300 demos, relativos) | egoverse-internal, no comercial | HuggingFace, pesos PyTorch |
+| VR-gr1-xfer-proprio-delta (este) | ~1,1B (266M entrenables) | 44 dims, chunks de 16 a 20 Hz | 21,3% (300 demos, relativos) | egoverse-internal, no comercial | Hugging Face, pesos PyTorch |
 | Misma receta desde cero | ~1,1B | 44 dims, chunks de 16 a 20 Hz | 20,8% (300 demos, relativos) | No aplica (control interno del estudio) | No publicado como checkpoint independiente en la ficha |
 | Pretrain EgoVerse, 30 demos | ~1,1B | 44 dims, relativos | 17,4% | egoverse-internal | Mencionado como control |
 | GR00T-N1-2B | 2B | No disponible en la ficha | 49,3% (300 demos) | No disponible | Referencia bibliografica del paper GR00T N1 |
@@ -114,7 +114,7 @@ La comparación directa con GR00T-N1-2B y Diffusion Policy no es homogénea: el 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VR-VLA/VR-gr1-xfer-proprio-delta-d300-adarms-lr1e4-bs64-100k
+- Modelo en Hugging Face: https://huggingface.co/VR-VLA/VR-gr1-xfer-proprio-delta-d300-adarms-lr1e4-bs64-100k
 - Modelo base (preentrenamiento EgoVerse v06): https://huggingface.co/VR-VLA/VR-egoverse-v06-pretrained-lr1e4-bs64-60k
 - Dataset de entrenamiento: https://huggingface.co/datasets/nvidia/PhysicalAI-Robotics-GR00T-Teleop-Sim
 - Backbone congelado: Qwen/Qwen3.5-0.8B (referenciado en la model card; no se proporciona URL directa en la información disponible)

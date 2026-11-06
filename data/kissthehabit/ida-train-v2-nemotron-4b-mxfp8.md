@@ -73,5 +73,5 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/KissTheHabit/IDA-TRAIN-V2-nemotron-4b-mxfp8
+- Hugging Face: https://huggingface.co/KissTheHabit/IDA-TRAIN-V2-nemotron-4b-mxfp8
 - No se han encontrado otros enlaces relevantes en la búsqueda web (los resultados adicionales no estaban relacionados con el modelo).

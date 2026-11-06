@@ -77,7 +77,7 @@ La comparativa es limitada porque no se han publicado métricas objetivas. La pr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Deans1/Qwen-Edit-2509-Lora-Remove-Clothing
+- Repositorio Hugging Face: https://huggingface.co/Deans1/Qwen-Edit-2509-Lora-Remove-Clothing
 - Modelo base Qwen-Image-Edit-2509 (referencia, no enlazado directamente en la ficha): https://huggingface.co/Qwen/Qwen-Image-Edit-2509
 - Repositorio de despliegue con Cog para LoRA en Qwen-Edit-2509: https://github.com/zsxkib/cog-qwen-edit-2509-lora
 - Adaptador similar de eliminación general de objetos: https://huggingface.co/valiantcat/Qwen-Image-Edit-Remover-General-LoRA

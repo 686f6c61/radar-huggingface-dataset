@@ -26,7 +26,7 @@ La relevancia del modelo es acotada pero clara dentro de su ecosistema: es un mo
 | Entornos en paralelo | 4096 |
 | Modificación de la recompensa | ninguna (receta original sin editar) |
 | Canal de comando | `command.encoding: posture_flag` sobre `twist.vx` (1.0 = sentarse, 0.0 = levantarse) |
-| Tamaño del repositorio | 0.0 GB (según la ficha de HuggingFace) |
+| Tamaño del repositorio | 0.0 GB (según la ficha de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 | Fecha de creación / actualización | 2026-09-14 / 2026-09-14 |
 
@@ -90,7 +90,7 @@ La alternativa directa es la política de referencia de Pollen Robotics, que res
 
 | Modelo | Tarea | max_tilt | t_to_sit_s | t_to_rise_s | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| tfrere/microduck-move-base-sitstand | Sit and stand (`posture_flag`) | 0.265 | 0.58 | 0.24 | Apache-2.0 | ONNX + checkpoint rsl_rl en HuggingFace |
+| tfrere/microduck-move-base-sitstand | Sit and stand (`posture_flag`) | 0.265 | 0.58 | 0.24 | Apache-2.0 | ONNX + checkpoint rsl_rl en Hugging Face |
 | pollen-robotics `alpha_sitstand.onnx` | Sit and stand (`posture_flag`) | 0.536 | 0.28 | 0.26 | Apache-2.0 (según la receta upstream) | ONNX en `pollen-robotics/microduck-policies` |
 | Otros movimientos de la familia `sitstand` de la Academy | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -107,15 +107,15 @@ No se dispone de datos de parámetros totales ni de contexto aplicables a ningun
 - Idiomas soportados: no disponible, y en la práctica no aplica.
 - Licencia: Apache-2.0, que permite uso comercial y modificación siempre que se mantengan los avisos de copyright y atribución. La tarea, el diseño de recompensa, el modelo del robot y la receta de entrenamiento son obra de Pollen Robotics, y este repositorio los redistribuye bajo la misma licencia.
 - Adopción nula por el momento: 0 descargas y 0 likes, sin validación independiente de la comunidad.
-- Fechas del repositorio: creado y actualizado el 2026-09-14 según los metadatos de HuggingFace.
+- Fechas del repositorio: creado y actualizado el 2026-09-14 según los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tfrere/microduck-move-base-sitstand
+- Modelo en Hugging Face: https://huggingface.co/tfrere/microduck-move-base-sitstand
 - Receta de entrenamiento upstream (Pollen Robotics): https://github.com/pollen-robotics/microduck_rl
 - Políticas oficiales de Pollen Robotics: https://huggingface.co/pollen-robotics/microduck-policies
 - Política de referencia `alpha_sitstand.onnx`: https://huggingface.co/pollen-robotics/microduck-policies/blob/main/alpha_sitstand.onnx
-- Organización de Pollen Robotics en HuggingFace: https://huggingface.co/pollen-robotics
+- Organización de Pollen Robotics en Hugging Face: https://huggingface.co/pollen-robotics
 - Espacio de Microduck Academy: https://huggingface.co/spaces/tfrere/microduck
 - Archivos incluidos en el repositorio: `policy.onnx`, `base/model.pt`, `base/agent.yaml`, `base/env.yaml`, `rollouts/0.traj`, `video.mp4`, `poster.jpg`, `manifest.json`, `fidelity.json`, `train.json`
 - Papers, blogs o demos adicionales: no disponibles en la información proporcionada

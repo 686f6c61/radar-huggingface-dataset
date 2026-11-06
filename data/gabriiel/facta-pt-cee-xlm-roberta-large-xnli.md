@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Gabriiel/facta-pt-cee-xlm-roberta-large-xnli | 559.893.507 | 512 tokens | Claim-evidence entailment (pt) | MIT | HuggingFace |
-| joeddav/xlm-roberta-large-xnli | ~560 M | 512 tokens | NLI 3 clases (multilingue) | MIT | HuggingFace |
-| FacebookAI/xlm-roberta-large | ~560 M | 512 tokens | Representaciones multilingues / MLM | MIT | HuggingFace |
+| Gabriiel/facta-pt-cee-xlm-roberta-large-xnli | 559.893.507 | 512 tokens | Claim-evidence entailment (pt) | MIT | Hugging Face |
+| joeddav/xlm-roberta-large-xnli | ~560 M | 512 tokens | NLI 3 clases (multilingue) | MIT | Hugging Face |
+| FacebookAI/xlm-roberta-large | ~560 M | 512 tokens | Representaciones multilingues / MLM | MIT | Hugging Face |
 
 El modelo se distingue del checkpoint base `joeddav/xlm-roberta-large-xnli` por su ajuste específico a la tarea de implicación afirmación-evidencia sobre pasajes de tres frases en portugués europeo, mientras que el modelo original ofrece NLI genérico multilingüe. No se dispone de datos de benchmarks que permitan comparar el rendimiento relativo entre estas alternativas.
 
@@ -86,7 +86,7 @@ El modelo se distingue del checkpoint base `joeddav/xlm-roberta-large-xnli` por 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Gabriiel/facta-pt-cee-xlm-roberta-large-xnli
+- Modelo en Hugging Face: https://huggingface.co/Gabriiel/facta-pt-cee-xlm-roberta-large-xnli
 - Modelo base: https://huggingface.co/joeddav/xlm-roberta-large-xnli
 - XLM-RoBERTa-large original: https://huggingface.co/FacebookAI/xlm-roberta-large
 - Documentación de XLM-RoBERTa en transformers: https://huggingface.co/docs/transformers/v5.0.0/model_doc/xlm-roberta

@@ -72,9 +72,9 @@ El autor indica que exponentes puros por pares de 0–2 y KL de vecindad alcanza
 
 | Modelo | Tipo | Parámetros | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bdrgon/clap-htsat-unfused-audio-embedder-onnx-INT4 | Embeddings de audio INT4 | no disponible | 10 s de audio a 48 kHz | Apache 2.0 | ONNX en HuggingFace |
-| laion/clap-htsat-unfused (FP32) | Embeddings audio-texto | no disponible | ventana de audio CLAP | Apache 2.0 | HuggingFace |
-| bdrgon/clap-htsat-unfused-audio-embedder-onnx (FP32) | Embeddings de audio | no disponible | 10 s de audio a 48 kHz | Apache 2.0 | ONNX en HuggingFace |
+| bdrgon/clap-htsat-unfused-audio-embedder-onnx-INT4 | Embeddings de audio INT4 | no disponible | 10 s de audio a 48 kHz | Apache 2.0 | ONNX en Hugging Face |
+| laion/clap-htsat-unfused (FP32) | Embeddings audio-texto | no disponible | ventana de audio CLAP | Apache 2.0 | Hugging Face |
+| bdrgon/clap-htsat-unfused-audio-embedder-onnx (FP32) | Embeddings de audio | no disponible | 10 s de audio a 48 kHz | Apache 2.0 | ONNX en Hugging Face |
 
 La comparativa se limita a las variantes del mismo modelo base documentadas en la información disponible; no se dispone de datos de otros modelos de embeddings de audio comparables en esta ficha.
 
@@ -93,7 +93,7 @@ La comparativa se limita a las variantes del mismo modelo base documentadas en l
 
 ## Enlaces
 
-- [HuggingFace: bdrgon/clap-htsat-unfused-audio-embedder-onnx-INT4](https://huggingface.co/bdrgon/clap-htsat-unfused-audio-embedder-onnx-INT4)
+- [Hugging Face: bdrgon/clap-htsat-unfused-audio-embedder-onnx-INT4](https://huggingface.co/bdrgon/clap-htsat-unfused-audio-embedder-onnx-INT4)
 - [Modelo base: laion/clap-htsat-unfused](https://huggingface.co/laion/clap-htsat-unfused)
 - [Modelo FP32 de referencia: bdrgon/clap-htsat-unfused-audio-embedder-onnx](https://huggingface.co/bdrgon/clap-htsat-unfused-audio-embedder-onnx)
 - [Dataset: yojul/one-shot-hip-hop-drums](https://huggingface.co/datasets/yojul/one-shot-hip-hop-drums)

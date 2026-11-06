@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ibm-research/qaoa_angles.max_cut.p2.gnn` es un artefacto publicado por IBM Research en HuggingFace bajo licencia Apache-2.0. La informacion disponible en la plataforma es minima: no incluye model card sustantiva (el README se limita a la declaracion de licencia), no declara pipeline, no especifica idiomas y registra cero descargas y cero likes en el momento de la consulta. El repositorio ocupa 0.0 GB, lo que sugiere que o bien contiene pesos de tamano despreciable o bien esta practicamente vacio.
+El modelo `ibm-research/qaoa_angles.max_cut.p2.gnn` es un artefacto publicado por IBM Research en Hugging Face bajo licencia Apache-2.0. La informacion disponible en la plataforma es minima: no incluye model card sustantiva (el README se limita a la declaracion de licencia), no declara pipeline, no especifica idiomas y registra cero descargas y cero likes en el momento de la consulta. El repositorio ocupa 0.0 GB, lo que sugiere que o bien contiene pesos de tamano despreciable o bien esta practicamente vacio.
 
 A partir exclusivamente del identificador del modelo puede inferirse el dominio de aplicacion, aunque esto no esta confirmado por documentacion oficial: "qaoa" remite al Quantum Approximate Optimization Algorithm, "max_cut" al problema de corte maximo, "p2" al numero de capas o pasos del circuito variacional y "gnn" a una red neuronal de grafos. Bajo esa lectura, se trataria de un modelo orientado a predecir los angulos (parametros variacionales) de un circuito QAOA de profundidad p=2 para instancias del problema Max-Cut, utilizando una GNN como predictor. Es una linea de trabajo habitual en computacion cuantica asistida por aprendizaje automatico, donde el modelo clasico evita la optimizacion variacional costosa en hardware cuantico.
 
@@ -71,7 +71,7 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qaoa_angles.max_cut.p2.gnn | no disponible | no disponible | no disponible | Apache-2.0 | HuggingFace |
+| qaoa_angles.max_cut.p2.gnn | no disponible | no disponible | no disponible | Apache-2.0 | Hugging Face |
 | Alternativas | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -87,7 +87,7 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ibm-research/qaoa_angles.max_cut.p2.gnn
+- Hugging Face: https://huggingface.co/ibm-research/qaoa_angles.max_cut.p2.gnn
 - Web corporativa de IBM: https://www.ibm.com/
 - Wikipedia (IBM, EN): https://en.wikipedia.org/wiki/IBM
 - Wikipedia (IBM, FR): https://fr.wikipedia.org/wiki/IBM

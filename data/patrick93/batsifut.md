@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `patrick93/batsifut` es un modelo alojado en HuggingFace creado por el usuario `patrick93`. Según los metadatos disponibles, fue publicado el 6 de septiembre de 2026 y actualizado el mismo día, con un tamaño de repositorio de 0.5 GB. Sin embargo, la información técnica disponible es mínima: no se especifica arquitectura, parámetros, contexto, idiomas ni pipeline. La model card únicamente indica una licencia de tipo "test" y un enlace a un archivo LICENSE, sin ninguna descripción del modelo, sus capacidades o su propósito.
+El repositorio `patrick93/batsifut` es un modelo alojado en Hugging Face creado por el usuario `patrick93`. Según los metadatos disponibles, fue publicado el 6 de septiembre de 2026 y actualizado el mismo día, con un tamaño de repositorio de 0.5 GB. Sin embargo, la información técnica disponible es mínima: no se especifica arquitectura, parámetros, contexto, idiomas ni pipeline. La model card únicamente indica una licencia de tipo "test" y un enlace a un archivo LICENSE, sin ninguna descripción del modelo, sus capacidades o su propósito.
 
 Dado que no se ha publicado documentación técnica, benchmarks ni detalles de entrenamiento, este modelo no puede ser evaluado ni comparado con alternativas existentes en este momento. La relevancia del modelo es indeterminada, ya que no hay datos suficientes para identificar qué problema resuelve ni por qué sería útil para desarrolladores o investigadores.
 
@@ -53,4 +53,4 @@ No disponible. No se puede comparar este modelo con alternativas de la misma cat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/patrick93/batsifut
+- Hugging Face: https://huggingface.co/patrick93/batsifut

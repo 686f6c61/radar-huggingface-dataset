@@ -104,7 +104,7 @@ Advertencia del autor: la comparativa enfrenta configuraciones desplegadas, no a
 - Limites de contexto e idioma no documentados: la model card no indica longitud de contexto soportada ni lista de idiomas. Los prompts de referencia estan mayoritariamente en chino tradicional y los conjuntos de evaluacion en chino e ingles, por lo que el comportamiento en castellano no esta medido.
 - Dependencia de codigo externo: el servidor importa el constructor de prompts y el tokenizador de una copia local del repositorio original, lo que anade una dependencia de version que no se fija en la documentacion.
 - Estado del repositorio: creado el 18 de septiembre de 2026 y actualizado el mismo dia, con 0 descargas y 1 "me gusta" en el momento de la consulta. No ha pasado revision de la comunidad ni tiene historial de mantenimiento.
-- La fecha de creacion y actualizacion publicada es posterior a la fecha habitual de referencia, dato que se reproduce tal cual figura en HuggingFace.
+- La fecha de creacion y actualizacion publicada es posterior a la fecha habitual de referencia, dato que se reproduce tal cual figura en Hugging Face.
 - Licencia Apache 2.0: permite uso comercial y modificacion, pero al derivar del modelo base Mapika/decider-2b conviene verificar las condiciones de ese repositorio antes de un despliegue en produccion.
 
 ## Enlaces

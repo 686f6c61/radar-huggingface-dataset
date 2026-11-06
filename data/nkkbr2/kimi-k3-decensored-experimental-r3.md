@@ -78,7 +78,7 @@ Kimi K3 supera a sus competidores en parámetros totales y contexto, pero tambi�
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nkkbr2/Kimi-K3-decensored-experimental-r3
+- Repositorio Hugging Face: https://huggingface.co/nkkbr2/Kimi-K3-decensored-experimental-r3
 - Model card oficial de Moonshot AI (referencia): https://huggingface.co/moonshotai/Kimi-K3
 - Tech blog de Kimi K3: https://www.kimi.com/blog/kimi-k3
 - Informe técnico completo: https://github.com/MoonshotAI/Kimi-K3/blob/main/k3_tech_report.pdf

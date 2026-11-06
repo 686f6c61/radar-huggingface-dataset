@@ -31,7 +31,7 @@ El entrenamiento se realizo mediante SFT (supervised fine-tuning) con la libreri
 
 - Generacion de texto autoregresiva en ingles, heredada del modelo base `eng_latn`.
 - Acepta el formato de chat con lista de mensajes (`[{"role": "user", "content": ...}]`) a traves del pipeline de `transformers`, tal como muestra la model card del autor.
-- Compatible con Text Generation Inference (tags `text-generation-inference` y `endpoints_compatible`), lo que permite desplegarlo detras de una API compatible con el Inference Endpoints de HuggingFace.
+- Compatible con Text Generation Inference (tags `text-generation-inference` y `endpoints_compatible`), lo que permite desplegarlo detras de una API compatible con el Inference Endpoints de Hugging Face.
 - Capacidad de razonamiento, matematicas o codigo: no documentada y, por tamano y datos de preentrenamiento (100 MB), previsiblemente muy limitada.
 - Tool calling / function calling: no soportado de forma nativa ni documentado.
 - Uso en agentes o razonamiento multi-paso: no documentado.
@@ -51,7 +51,7 @@ El entrenamiento se realizo mediante SFT (supervised fine-tuning) con la libreri
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de HuggingFace no incluye tabla de evaluacion, la model card se limita a la plantilla autogenerada por TRL y los resultados de la busqueda web no aportan datos tecnicos sobre el modelo.
+No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de Hugging Face no incluye tabla de evaluacion, la model card se limita a la plantilla autogenerada por TRL y los resultados de la busqueda web no aportan datos tecnicos sobre el modelo.
 
 ## Requisitos de hardware
 
@@ -66,17 +66,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `fpadovani/ppt-wc-zipf-newlex-66-warmup-eng-100mb_seed10` | 86.508.288 | No disponible | No disponible | HuggingFace, safetensors |
-| `goldfish-models/eng_latn_100mb` (modelo base) | No disponible (arquitectura GPT-2, preentrenado con 100 MB) | No disponible | No disponible | HuggingFace |
-| GPT-2 small | 124 millones | 1024 tokens | Modified MIT | HuggingFace, safetensors y PyTorch bin |
-| distilgpt2 | 82 millones | 1024 tokens | Apache 2.0 | HuggingFace |
-| Pythia-70M | 70 millones | 2048 tokens | Apache 2.0 | HuggingFace |
+| `fpadovani/ppt-wc-zipf-newlex-66-warmup-eng-100mb_seed10` | 86.508.288 | No disponible | No disponible | Hugging Face, safetensors |
+| `goldfish-models/eng_latn_100mb` (modelo base) | No disponible (arquitectura GPT-2, preentrenado con 100 MB) | No disponible | No disponible | Hugging Face |
+| GPT-2 small | 124 millones | 1024 tokens | Modified MIT | Hugging Face, safetensors y PyTorch bin |
+| distilgpt2 | 82 millones | 1024 tokens | Apache 2.0 | Hugging Face |
+| Pythia-70M | 70 millones | 2048 tokens | Apache 2.0 | Hugging Face |
 
 La comparacion es orientativa en cuanto a tamano: los tres modelos alternativos cuentan con documentacion publica de licencia y contexto, mientras que este checkpoint no la aporta. No hay datos de rendimiento comparables para ninguno de los cuatro en la informacion disponible.
 
 ## Limitaciones y advertencias
 
-- Es un checkpoint de investigacion con cero descargas y cero interacciones en HuggingFace: no ha pasado por validacion de la comunidad ni por una evaluacion publicada.
+- Es un checkpoint de investigacion con cero descargas y cero interacciones en Hugging Face: no ha pasado por validacion de la comunidad ni por una evaluacion publicada.
 - Preentrenado sobre solo 100 MB de texto en ingles, muy por debajo de los volumenes habituales (miles de millones de tokens), por lo que la calidad de generacion y la cobertura factual seran muy limitadas.
 - Riesgo elevado de alucinacion y de texto incoherente en tareas de conocimiento, razonamiento o codigo; no debe usarse para responder preguntas factuales sin verificacion.
 - Sesgos: no documentados, pero al derivar de un corpus reducido de ingles hereda los sesgos de esa fuente sin ninguna mitigacion declarada.
@@ -88,7 +88,7 @@ La comparacion es orientativa en cuanto a tamano: los tres modelos alternativos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/ppt-wc-zipf-newlex-66-warmup-eng-100mb_seed10
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/ppt-wc-zipf-newlex-66-warmup-eng-100mb_seed10
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/gb1n0mls

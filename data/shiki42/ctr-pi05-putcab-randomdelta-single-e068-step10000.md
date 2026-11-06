@@ -63,9 +63,9 @@ No se dispone de datos verificados en la informacion proporcionada para construi
 
 | Alternativa | Parametros | Contexto | Licencia | Disponibilidad | Datos verificados |
 |---|---|---|---|---|---|
-| Este checkpoint (E068, paso 10000) | no disponible | no disponible | other | HuggingFace, repo de 6,3 GB | solo metadatos del experimento |
+| Este checkpoint (E068, paso 10000) | no disponible | no disponible | other | Hugging Face, repo de 6,3 GB | solo metadatos del experimento |
 | Modelo base PI0.5 | no disponible | no disponible | no disponible | citado en el nombre del experimento, no enlazado en la informacion | no disponible |
-| Otras variantes CTR de la misma serie (multi-experto, otros pasos) | no disponible | no disponible | no disponible | presumiblemente en el mismo perfil de HuggingFace del autor | no disponible |
+| Otras variantes CTR de la misma serie (multi-experto, otros pasos) | no disponible | no disponible | no disponible | presumiblemente en el mismo perfil de Hugging Face del autor | no disponible |
 
 No se incluyen comparaciones con otras familias de politicas visomotoras (por ejemplo, OpenVLA o RDT) porque no hay datos de rendimiento de este checkpoint que permitan un contraste con rigor.
 
@@ -84,7 +84,7 @@ No se incluyen comparaciones con otras familias de politicas visomotoras (por ej
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Shiki42/ctr-pi05-putcab-randomdelta-single-e068-step10000
+- Hugging Face: https://huggingface.co/Shiki42/ctr-pi05-putcab-randomdelta-single-e068-step10000
 - Fichero de integridad `SHA256SUMS` dentro del repositorio (referenciado en la model card)
 - Registro del experimento CTR E068: no disponible como enlace en la informacion proporcionada
 - Modelo base PI0.5: no disponible como enlace en la informacion proporcionada

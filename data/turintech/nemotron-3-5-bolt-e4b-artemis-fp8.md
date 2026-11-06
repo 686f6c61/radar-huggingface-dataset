@@ -100,7 +100,7 @@ No se dispone de comparaciones con modelos de otros fabricantes en la informaci√
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/turintech/Nemotron-3.5-Bolt-E4B-Artemis-FP8
+- Modelo en Hugging Face: https://huggingface.co/turintech/Nemotron-3.5-Bolt-E4B-Artemis-FP8
 - Modelo base (NVIDIA, BF16): https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16
 - Versi√≥n GGUF del mismo autor: https://huggingface.co/turintech/Nemotron-3.5-Bolt-E4B-Artemis-GGUF
 - Licencia OpenMDW 1.1: https://openmdw.ai/license/1-1/

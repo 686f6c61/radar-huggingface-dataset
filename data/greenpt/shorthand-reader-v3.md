@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GreenPT/shorthand-reader-v3 es un adaptador LoRA de 0,5 GB desarrollado por GreenPT, una iniciativa centrada en inteligencia artificial sostenible y eficiente energéticamente. El modelo se presenta como un adaptador sobre el modelo base Qwen/Qwen3.5-9B, entrenado mediante fine-tuning supervisado (SFT) con la librería TRL de HuggingFace. Su nombre sugiere una especialización en la lectura e interpretación de taquigrafía, aunque la model card no proporciona detalles sobre el conjunto de datos ni el dominio exacto de aplicación.
+GreenPT/shorthand-reader-v3 es un adaptador LoRA de 0,5 GB desarrollado por GreenPT, una iniciativa centrada en inteligencia artificial sostenible y eficiente energéticamente. El modelo se presenta como un adaptador sobre el modelo base Qwen/Qwen3.5-9B, entrenado mediante fine-tuning supervisado (SFT) con la librería TRL de Hugging Face. Su nombre sugiere una especialización en la lectura e interpretación de taquigrafía, aunque la model card no proporciona detalles sobre el conjunto de datos ni el dominio exacto de aplicación.
 
 La relevancia de este modelo radica en su enfoque de eficiencia: al ser un adaptador LoRA, no requiere reentrenar el modelo completo, lo que reduce significativamente el coste computacional y la huella de carbono, en línea con la misión declarada de GreenPT de hacer la IA más eficiente energéticamente. El tag `arxiv:1910.09700` enlaza con el trabajo de Lacoste et al. sobre estimación de emisiones de carbono, lo que refuerza este enfoque. Sin embargo, la documentación pública es extremadamente limitada: la model card está prácticamente vacía, sin especificaciones técnicas, datos de entrenamiento, benchmarks o licencia declarada.
 
@@ -21,7 +21,7 @@ La relevancia de este modelo radica en su enfoque de eficiencia: al ser un adapt
 
 ## Arquitectura y entrenamiento
 
-El modelo es un adaptador LoRA (Low-Rank Adaptation) que se monta sobre el modelo base Qwen/Qwen3.5-9B. La técnica LoRA congela los pesos del modelo original e introduce matrices de bajo rango en las capas de atención, lo que permite fine-tuning con una fracción mínima de parámetros entrenables. El entrenamiento se realizó mediante Supervised Fine-Tuning (SFT) utilizando la librería TRL de HuggingFace, con PEFT 0.20.0 como framework de adaptación. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas adicionales como RLHF o DPO. El tag `arxiv:1910.09700` sugiere que el autor consideró el impacto ambiental del entrenamiento, pero no se publican métricas de emisiones.
+El modelo es un adaptador LoRA (Low-Rank Adaptation) que se monta sobre el modelo base Qwen/Qwen3.5-9B. La técnica LoRA congela los pesos del modelo original e introduce matrices de bajo rango en las capas de atención, lo que permite fine-tuning con una fracción mínima de parámetros entrenables. El entrenamiento se realizó mediante Supervised Fine-Tuning (SFT) utilizando la librería TRL de Hugging Face, con PEFT 0.20.0 como framework de adaptación. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas adicionales como RLHF o DPO. El tag `arxiv:1910.09700` sugiere que el autor consideró el impacto ambiental del entrenamiento, pero no se publican métricas de emisiones.
 
 ## Capacidades
 
@@ -66,9 +66,9 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GreenPT/shorthand-reader-v3
+- Modelo en Hugging Face: https://huggingface.co/GreenPT/shorthand-reader-v3
 - Modelo anterior (shorthand-reader): https://huggingface.co/GreenPT/shorthand-reader
 - Catálogo de modelos GreenPT: https://greenpt.com/models
 - Sitio web de GreenPT: https://greenpt.com/
 - GitHub de GreenPT: https://github.com/Green-PT/
-- Perfil de GreenPT en HuggingFace: https://huggingface.co/GreenPT/models
+- Perfil de GreenPT en Hugging Face: https://huggingface.co/GreenPT/models

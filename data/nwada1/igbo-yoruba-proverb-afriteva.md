@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Nwada1/igbo-yoruba-proverb-afriteva` es un fine-tuning del modelo base `castorini/afriteva_v2_base` (AfriTeVa V2 Base) orientado a la interpretación cultural de proverbios en igbo y yoruba, dos lenguas nigerianas. Desarrollado por Nwada1, el modelo recibe un proverbio, su contexto y una pregunta, y genera la interpretación culturalmente apropiada. Con 428,85 millones de parámetros y arquitectura T5 (según el tag de HuggingFace), se trata de un modelo encoder-decoder adaptado a una tarea específica de comprensión y generación de texto en lenguas africanas de baja representación.
+El modelo `Nwada1/igbo-yoruba-proverb-afriteva` es un fine-tuning del modelo base `castorini/afriteva_v2_base` (AfriTeVa V2 Base) orientado a la interpretación cultural de proverbios en igbo y yoruba, dos lenguas nigerianas. Desarrollado por Nwada1, el modelo recibe un proverbio, su contexto y una pregunta, y genera la interpretación culturalmente apropiada. Con 428,85 millones de parámetros y arquitectura T5 (según el tag de Hugging Face), se trata de un modelo encoder-decoder adaptado a una tarea específica de comprensión y generación de texto en lenguas africanas de baja representación.
 
 La relevancia de este modelo radica en su contribución a la preservación y accesibilidad del conocimiento cultural africano, un área tradicionalmente poco cubierta por los grandes modelos multilingües. Su tamaño moderado permite su ejecución en hardware de consumo, aunque no se han publicado detalles sobre la longitud de contexto ni las cuantizaciones disponibles. El dataset de entrenamiento es reducido (299 proverbios), lo que limita su generalización pero lo hace útil para tareas acotadas de interpretación cultural.
 
@@ -10,7 +10,7 @@ La relevancia de este modelo radica en su contribución a la preservación y acc
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | T5 (encoder-decoder, según tag de HuggingFace) |
+| Arquitectura | T5 (encoder-decoder, según tag de Hugging Face) |
 | Parametros totales | 428.850.432 |
 | Parametros activos | no disponible (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -66,5 +66,5 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nwada1/igbo-yoruba-proverb-afriteva
+- Modelo en Hugging Face: https://huggingface.co/Nwada1/igbo-yoruba-proverb-afriteva
 - Modelo base AfriTeVa V2 Base: https://huggingface.co/castorini/afriteva_v2_base

@@ -4,7 +4,7 @@
 
 DeepSeek-V4-Pro-0813 es el modelo insignia de produccion de DeepSeek, lanzado el 12 de agosto de 2026 tras un periodo de vista previa de casi cuatro meses. Es un modelo exclusivamente de texto con arquitectura MoE de 1,6 billones de parametros totales y 49 mil millones activos, con una ventana de contexto de 1 millon de tokens y una salida maxima de 384.000 tokens. El modelo esta disponible bajo licencia MIT y se accede a el principalmente via API (OpenRouter, API oficial de DeepSeek), con soporte para tool calling, salida JSON y tres modos de razonamiento configurables.
 
-La relevancia de este lanzamiento radica en su combinacion de contexto ultralargo, modos de razonamiento ajustables (non-thinking, Think High y Think Max) y compatibilidad con la API Responses y la API compatible con Anthropic, lo que lo posiciona como una opcion competitiva para agentes autonomos y aplicaciones de produccion que requieren procesamiento de documentos extensos. El repositorio de HuggingFace esta publicado por el usuario cnrai, no por la cuenta oficial de DeepSeek, por lo que conviene verificar la procedencia de los pesos antes de usarlos.
+La relevancia de este lanzamiento radica en su combinacion de contexto ultralargo, modos de razonamiento ajustables (non-thinking, Think High y Think Max) y compatibilidad con la API Responses y la API compatible con Anthropic, lo que lo posiciona como una opcion competitiva para agentes autonomos y aplicaciones de produccion que requieren procesamiento de documentos extensos. El repositorio de Hugging Face esta publicado por el usuario cnrai, no por la cuenta oficial de DeepSeek, por lo que conviene verificar la procedencia de los pesos antes de usarlos.
 
 ## Especificaciones tecnicas
 
@@ -61,7 +61,7 @@ El modelo comparable mas cercano es DeepSeek-V4-Flash-0731, lanzado 13 dias ante
 ## Limitaciones y advertencias
 
 - Es un modelo exclusivamente de texto: no soporta entrada de imagenes, audio ni video.
-- El repositorio de HuggingFace esta publicado por el usuario cnrai, no por la cuenta oficial de DeepSeek; conviene verificar la integridad de los pesos antes de usarlos en produccion.
+- El repositorio de Hugging Face esta publicado por el usuario cnrai, no por la cuenta oficial de DeepSeek; conviene verificar la integridad de los pesos antes de usarlos en produccion.
 - Los detalles sobre sesgos, alucinaciones y limitaciones idiomaticas no estan disponibles en la informacion proporcionada.
 - Aunque la licencia es MIT, el acceso principal es via API, lo que implica dependencia de terceros (OpenRouter, DeepSeek) y posibles costes asociados por uso.
 - El tamano del modelo (1,6T parametros) hace poco practica la inferencia local para la mayoria de organizaciones.
@@ -69,7 +69,7 @@ El modelo comparable mas cercano es DeepSeek-V4-Flash-0731, lanzado 13 dias ante
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cnrai/DeepSeek-V4-Pro-0813
+- Hugging Face: https://huggingface.co/cnrai/DeepSeek-V4-Pro-0813
 - Datalearner (specs y API): https://www.datalearner.com/en/ai-models/pretrained-models/deepseek-v4-pro
 - Aireleasetracker (benchmarks y fecha): https://aireleasetracker.com/model/deepseek/deepseek-v4-pro-0813
 - Unite.AI (analisis del lanzamiento): https://www.unite.ai/deepseek-ships-v4-pro-as-its-flagship-model-leaves-preview/

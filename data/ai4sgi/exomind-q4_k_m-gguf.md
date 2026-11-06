@@ -89,7 +89,7 @@ No se dispone de datos comparativos de benchmarks entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo GGUF Q4_K_M en HuggingFace: https://huggingface.co/AI4SGI/ExoMind-Q4_K_M-GGUF
+- Modelo GGUF Q4_K_M en Hugging Face: https://huggingface.co/AI4SGI/ExoMind-Q4_K_M-GGUF
 - Modelo base ExoMind (Transformers): https://huggingface.co/AI4SGI/ExoMind
 - Repositorio GitHub oficial: https://github.com/AI4SGI/ExoMind
 - Página del proyecto: https://ai4sgi.github.io/ExoMind/

@@ -83,7 +83,7 @@ La comparativa se basa en datos públicos de los modelos alternativos; para tiny
 
 ## Enlaces
 
-- [HuggingFace: mradermacher/tinybrainbot-360m-a75m-v5.1-instruct-GGUF](https://huggingface.co/mradermacher/tinybrainbot-360m-a75m-v5.1-instruct-GGUF)
+- [Hugging Face: mradermacher/tinybrainbot-360m-a75m-v5.1-instruct-GGUF](https://huggingface.co/mradermacher/tinybrainbot-360m-a75m-v5.1-instruct-GGUF)
 - [Modelo base: nkthebass/tinybrainbot-360m-a75m-v5.1-instruct](https://huggingface.co/nkthebass/tinybrainbot-360m-a75m-v5.1-instruct)
 - [Página de descargas del cuantizador](https://hf.tst.eu/model#tinybrainbot-360m-a75m-v5.1-instruct-GGUF)
 - [FAQ y solicitudes de cuantización de mradermacher](https://huggingface.co/mradermacher/model_requests)

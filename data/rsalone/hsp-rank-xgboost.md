@@ -84,7 +84,7 @@ No se han publicado comparaciones con otros modelos en la información disponibl
 
 | Modelo | Tipo | Entrada | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hsp-rank XGBoost (este) | Árboles XGBoost (3 regresores) | SMILES → descriptores Mordred + grupos | δD, δP, δH | MIT | HuggingFace + GitHub |
+| hsp-rank XGBoost (este) | Árboles XGBoost (3 regresores) | SMILES → descriptores Mordred + grupos | δD, δP, δH | MIT | Hugging Face + GitHub |
 | Cvetković et al. (2024) | Modelos moleculares y de grafo (según paper) | Estructura molecular | HSP | No disponible en la información | Publicación científica |
 | Stefanis–Panayiotou (2008) | Contribución de grupos | Grupos funcionales | HSP | No disponible en la información | Método publicado |
 | HSPiP / base de Abbott | Base de datos y estimación empírica | Compuesto conocido | HSP | No disponible en la información | Comercial / web |
@@ -105,7 +105,7 @@ No se dispone de cifras de rendimiento comparables de las alternativas en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rSalone/hsp-rank-xgboost
+- Modelo en Hugging Face: https://huggingface.co/rSalone/hsp-rank-xgboost
 - Repositorio hsp-rank: https://github.com/rS-alonewolf/hsp-solubility
 - Datos de entrenamiento (HSP-predictions): https://github.com/darjacvetkovic/HSP-predictions
 - Base de datos HSP de Steven Abbott: https://www.stevenabbott.co.uk

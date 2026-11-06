@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `vosldtgbj/project-llm-cpt-1p0-top10-10-lora-09` es un checkpoint multimodal publicado en HuggingFace por el usuario `vosldtgbj` como parte de la serie experimental "Project LLM". Se trata de un ajuste por *continual pretraining* (CPT) mediante LoRA sobre el modelo `google/gemma-4-12B`, con las matrices LoRA ya fusionadas en los pesos completos, lo que da un modelo de 11.959.730.176 parámetros (unos 11,96 mil millones) cargable directamente con Transformers.
+El modelo `vosldtgbj/project-llm-cpt-1p0-top10-10-lora-09` es un checkpoint multimodal publicado en Hugging Face por el usuario `vosldtgbj` como parte de la serie experimental "Project LLM". Se trata de un ajuste por *continual pretraining* (CPT) mediante LoRA sobre el modelo `google/gemma-4-12B`, con las matrices LoRA ya fusionadas en los pesos completos, lo que da un modelo de 11.959.730.176 parámetros (unos 11,96 mil millones) cargable directamente con Transformers.
 
 El checkpoint se etiqueta con la arquitectura `gemma4_unified` y el pipeline `any-to-any`, con la etiqueta `image-text-to-text`, lo que indica capacidad de entrada y salida multimodal (imagen y texto). El autor declara un entrenamiento de 1,0 época y una fecha de archivo del 8 de octubre de 2026, y publica el repositorio exclusivamente para reproducción de experimentos, evaluación offline e investigación posterior.
 
@@ -83,7 +83,7 @@ En la información proporcionada no se identifican modelos comparables de tercer
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Benchmarks |
 |---|---|---|---|---|---|
-| `vosldtgbj/project-llm-cpt-1p0-top10-10-lora-09` | 11,96 mil millones | No disponible | `apache-2.0` con enlace a licencia de Gemma 4 | Repositorio HuggingFace, pesos safetensors | No publicados |
+| `vosldtgbj/project-llm-cpt-1p0-top10-10-lora-09` | 11,96 mil millones | No disponible | `apache-2.0` con enlace a licencia de Gemma 4 | Repositorio Hugging Face, pesos safetensors | No publicados |
 | `google/gemma-4-12B` (base) | No disponible con precisión | No disponible | Términos de Gemma 4 | Modelo base del que deriva | No disponibles |
 | Otras alternativas de tamaño similar | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -105,7 +105,7 @@ En la información proporcionada no se identifican modelos comparables de tercer
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/vosldtgbj/project-llm-cpt-1p0-top10-10-lora-09
+- Repositorio Hugging Face: https://huggingface.co/vosldtgbj/project-llm-cpt-1p0-top10-10-lora-09
 - Modelo base: https://huggingface.co/google/gemma-4-12B
 - Licencia de Gemma 4 referenciada por el autor: https://ai.google.dev/gemma/docs/gemma_4_license
 - Paper, blog, repositorio de código o demo asociados: no disponible.

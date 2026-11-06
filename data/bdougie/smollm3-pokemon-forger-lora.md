@@ -84,7 +84,7 @@ El modelo se diferencia del base en que está afinado para una tarea concreta de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bdougie/smollm3-pokemon-forger-lora
+- Hugging Face: https://huggingface.co/bdougie/smollm3-pokemon-forger-lora
 - Dataset de entrenamiento: https://huggingface.co/datasets/bdougie/pokemon-red-sft
 - Repositorio del proyecto: https://github.com/pcc-labs/pokemon-kafka
 - Herramienta de entrenamiento: https://github.com/pcc-labs/empirical-evidence

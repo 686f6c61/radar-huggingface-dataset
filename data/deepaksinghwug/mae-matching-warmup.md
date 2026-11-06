@@ -72,6 +72,6 @@ No disponible. No se han encontrado modelos comparables en la información propo
 
 ## Enlaces
 
-- [HuggingFace - Deepaksinghwug/mae-matching-warmup](https://huggingface.co/Deepaksinghwug/mae-matching-warmup)
+- [Hugging Face - Deepaksinghwug/mae-matching-warmup](https://huggingface.co/Deepaksinghwug/mae-matching-warmup)
 - [GitHub - MaeFuse (referencia relacionada, no afiliada)](https://github.com/Henry-Lee-real/MaeFuse)
 - [arXiv - Why Warmup the Learning Rate?](https://arxiv.org/html/2406.09405v1)

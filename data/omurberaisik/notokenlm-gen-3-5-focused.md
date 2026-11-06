@@ -80,6 +80,6 @@ No hay modelos comerciales comparables en este rango de tamano con vocabulario d
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/omurberaisik/NoTokenLM-Gen-3.5-Focused)
+- [Modelo en Hugging Face](https://huggingface.co/omurberaisik/NoTokenLM-Gen-3.5-Focused)
 - [Modelo predecesor NoTokenLM-Gen-3.5](https://huggingface.co/omurberaisik/NoTokenLM-Gen-3.5)
-- [Perfil del autor en HuggingFace](https://huggingface.co/omurberaisik)
+- [Perfil del autor en Hugging Face](https://huggingface.co/omurberaisik)

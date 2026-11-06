@@ -1,11 +1,11 @@
 # niyazioguz/tr-sentiment-mini
 
 ## Resumen
-tr-sentiment-mini es un clasificador de análisis de sentimiento para turco publicado en HuggingFace por el usuario niyazioguz. No se trata de un modelo de lenguaje generativo ni de una red neuronal profunda: es un pipeline clásico de scikit-learn que combina vectorización TF-IDF con un clasificador lineal LinearSVC. El problema que resuelve es acotado y concreto: asignar a un texto en turco una de tres etiquetas (positivo, negativo o neutro).
+tr-sentiment-mini es un clasificador de análisis de sentimiento para turco publicado en Hugging Face por el usuario niyazioguz. No se trata de un modelo de lenguaje generativo ni de una red neuronal profunda: es un pipeline clásico de scikit-learn que combina vectorización TF-IDF con un clasificador lineal LinearSVC. El problema que resuelve es acotado y concreto: asignar a un texto en turco una de tres etiquetas (positivo, negativo o neutro).
 
 Su relevancia actual es la de un baseline extremadamente ligero y barato de ejecutar. El autor reporta que la versión 3 se entrena por completo en CPU en 55 segundos sobre 440.679 ejemplos, alcanzando una accuracy de 0,9476 y un macro-F1 de 0,9168 sobre 48.965 ejemplos de test. Eso lo hace útil como referencia rápida, como primer filtro en pipelines de clasificación a gran escala o como generador de etiquetas débiles para entrenar después modelos mayores.
 
-El repositorio es de muy reciente creación (septiembre de 2026), acumula 0 descargas y 0 likes, no declara licencia y tiene un tamaño reportado de 0,0 GB, lo que resulta contradictorio con la presencia de los ficheros pickle citados en la model card. El modelo está etiquetado únicamente para el idioma turco (tr) y su pipeline de HuggingFace no está declarado.
+El repositorio es de muy reciente creación (septiembre de 2026), acumula 0 descargas y 0 likes, no declara licencia y tiene un tamaño reportado de 0,0 GB, lo que resulta contradictorio con la presencia de los ficheros pickle citados en la model card. El modelo está etiquetado únicamente para el idioma turco (tr) y su pipeline de Hugging Face no está declarado.
 
 ## Especificaciones tecnicas
 | Parametro | Valor |
@@ -69,7 +69,7 @@ No se dispone de datos de benchmarks de los modelos alternativos en la informaci
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| niyazioguz/tr-sentiment-mini | TF-IDF + LinearSVC | no disponible | no aplica | no disponible | HuggingFace (0 descargas) |
+| niyazioguz/tr-sentiment-mini | TF-IDF + LinearSVC | no disponible | no aplica | no disponible | Hugging Face (0 descargas) |
 | Clasificadores de sentimiento en turco basados en transformers (familia BERTurk) | Transformer encoder con cabeza de clasificación | no disponible | no disponible | no disponible | no verificado en esta búsqueda |
 | Clasificadores lineales multilingües (por ejemplo, variantes de fastText o regresión logística) | Bolsa de n-gramas + clasificador lineal | no disponible | no aplica | no disponible | no verificado en esta búsqueda |
 
@@ -84,11 +84,11 @@ La ventaja estructural de tr-sentiment-mini frente a alternativas basadas en tra
 - Composición y sesgos del dataset de entrenamiento no documentados: se desconoce el equilibrio entre clases, el proceso de anotación y la posible sobrerrepresentación de determinados temas o variedades dialectales del turco.
 - Repositorio sin validación comunitaria: 0 descargas y 0 likes, sin issues ni evaluaciones externas que confirmen los resultados.
 - Inconsistencia en los metadatos: el tamaño del repositorio figura como 0,0 GB pese a que la model card referencia varios ficheros `.pkl` y un `.json` de métricas; conviene verificar la disponibilidad real de los artefactos antes de integrarlos.
-- Sin pipeline declarado en HuggingFace: no se puede invocar mediante `pipeline("sentiment-analysis")` de transformers sin envolver manualmente el pickle de scikit-learn.
+- Sin pipeline declarado en Hugging Face: no se puede invocar mediante `pipeline("sentiment-analysis")` de transformers sin envolver manualmente el pickle de scikit-learn.
 - La versión v1 (accuracy 0,50) y la v2 no deberían usarse en producción; solo la v3 presenta métricas razonables.
 - No se documenta el preprocesado aplicado; replicar el entrenamiento o adaptarlo a otro corpus exigiría reconstruir la vectorización exacta para no degradar el rendimiento.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/niyazioguz/tr-sentiment-mini
+- Modelo en Hugging Face: https://huggingface.co/niyazioguz/tr-sentiment-mini
 - La búsqueda web realizada no ha devuelto ningún enlace relevante sobre este modelo; los resultados obtenidos corresponden a sitios de apuestas hípicas (zone-turf.fr) sin relación con el contenido de esta ficha.
 - No se dispone de enlaces a paper, blog técnico, repositorio de código ni demo asociados al modelo en la información proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`yuwy-thu/llama31` es un modelo de generacion de texto publicado en HuggingFace por el usuario `yuwy-thu`, derivado mediante ajuste fino del modelo base `meta-llama/Meta-Llama-3.1-8B` de Meta. Se trata, por tanto, de un transformer decoder-only de aproximadamente 8030 millones de parametros (8,03 B), distribuido en formato safetensors y con un tamano de repositorio de 32,1 GB. La model card publicada reproduce integramente el acuerdo de licencia Llama 3.1 y no aporta informacion sobre el proceso de ajuste, los datos utilizados ni los objetivos del entrenamiento.
+`yuwy-thu/llama31` es un modelo de generacion de texto publicado en Hugging Face por el usuario `yuwy-thu`, derivado mediante ajuste fino del modelo base `meta-llama/Meta-Llama-3.1-8B` de Meta. Se trata, por tanto, de un transformer decoder-only de aproximadamente 8030 millones de parametros (8,03 B), distribuido en formato safetensors y con un tamano de repositorio de 32,1 GB. La model card publicada reproduce integramente el acuerdo de licencia Llama 3.1 y no aporta informacion sobre el proceso de ajuste, los datos utilizados ni los objetivos del entrenamiento.
 
 El interes de esta ficha es limitado pero relevante como caso de estudio: el repositorio acumula 0 descargas y 0 likes, fue creado en septiembre de 2026 y no documenta ninguna innovacion tecnica respecto al modelo base. La etiqueta `arxiv:2204.05149` aparece en los metadatos, pero el repositorio no indica a que seccion o resultado del articulo se refiere. No hay informacion publicada sobre benchmarks, longitudes de contexto efectivas tras el ajuste ni cambios en el tokenizador.
 
@@ -98,7 +98,7 @@ Los datos de las alternativas proceden de la documentacion publica de cada model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yuwy-thu/llama31
+- Repositorio en Hugging Face: https://huggingface.co/yuwy-thu/llama31
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3.1-8B
 - Referencia arXiv incluida en las etiquetas del repositorio (el repositorio no indica a que seccion corresponde): https://arxiv.org/abs/2204.05149
 - Licencia Llama 3.1 Community License: https://llama.meta.com/llama-downloads

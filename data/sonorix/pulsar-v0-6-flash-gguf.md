@@ -105,7 +105,7 @@ La diferencia principal de Pulsar v0.6 Flash frente a sus alternativas es la esp
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/Sonorix/pulsar-v0.6-flash-gguf
+- Pagina del modelo en Hugging Face: https://huggingface.co/Sonorix/pulsar-v0.6-flash-gguf
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Ejecucion con Ollama: `ollama run hf.co/Sonorix/pulsar-v0.6-flash-gguf:Q8_0`
 - Repositorio de llama.cpp (referenciado por el autor para uso en CLI): no disponible en la informacion proporcionada

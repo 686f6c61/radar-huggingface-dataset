@@ -90,7 +90,7 @@ No se dispone de comparaciones cuantitativas de rendimiento entre esta cuantizac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/m4gshm/Qwen2.5-Coder-3B-int4-sym-g128-se-awq
+- Modelo en Hugging Face: https://huggingface.co/m4gshm/Qwen2.5-Coder-3B-int4-sym-g128-se-awq
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-3B
 - Documentación de Optimum-Intel: https://huggingface.co/docs/optimum-intel
 - OpenVINO: https://docs.openvino.ai

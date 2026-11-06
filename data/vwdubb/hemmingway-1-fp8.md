@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Hemmingway-1-FP8 es una version cuantizada en FP8 del modelo Altworld/Hemmingway-1, publicada por el usuario vwdubb en HuggingFace. Se trata de un modelo de generacion de texto orientado a escritura cotidiana (mensajes, correos, notas de trabajo y comunicaciones personales), construido sobre Qwen3.8-27B y afinado por Altworld con el objetivo declarado de producir textos que suenen humanos y que no vengan envueltos en preambulos, opciones multiples ni comentarios meta. El repositorio contiene pesos en formato safetensors con cuantizacion FP8 gestionada mediante compressed-tensors, con 27.320.697.856 parametros totales y un tamano de repositorio de 37,6 GB.
+Hemmingway-1-FP8 es una version cuantizada en FP8 del modelo Altworld/Hemmingway-1, publicada por el usuario vwdubb en Hugging Face. Se trata de un modelo de generacion de texto orientado a escritura cotidiana (mensajes, correos, notas de trabajo y comunicaciones personales), construido sobre Qwen3.8-27B y afinado por Altworld con el objetivo declarado de producir textos que suenen humanos y que no vengan envueltos en preambulos, opciones multiples ni comentarios meta. El repositorio contiene pesos en formato safetensors con cuantizacion FP8 gestionada mediante compressed-tensors, con 27.320.697.856 parametros totales y un tamano de repositorio de 37,6 GB.
 
 La relevancia de esta ficha concreta, frente al modelo original, es de despliegue: la version FP8 reduce el peso de los parametros a aproximadamente un byte por parametro, lo que baja el requisito de memoria frente a los pesos en BF16 y facilita el servicio en GPU con vLLM, que es precisamente el metodo de ejecucion que documenta el autor. La model card declara una ventana de contexto de 262.144 tokens y licencia Apache-2.0, lo que permite uso comercial sin restricciones adicionales.
 
@@ -88,8 +88,8 @@ No se dispone de especificaciones tecnicas de la mayoria de los modelos nombrado
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos comparativos |
 |---|---|---|---|---|---|
-| Hemmingway-1-FP8 (este modelo) | 27,32 mil millones | 262.144 tokens | Apache-2.0 | Pesos abiertos en HuggingFace (FP8) | Primer puesto declarado en CommunicationBench y Human-Likeness; tercero en EQ-Bench 4 |
-| Altworld/Hemmingway-1 (original) | 27B (declarado) | 262.144 tokens | Apache-2.0 | Pesos abiertos en HuggingFace | Mismo modelo sin cuantizar; punto de partida de esta version |
+| Hemmingway-1-FP8 (este modelo) | 27,32 mil millones | 262.144 tokens | Apache-2.0 | Pesos abiertos en Hugging Face (FP8) | Primer puesto declarado en CommunicationBench y Human-Likeness; tercero en EQ-Bench 4 |
+| Altworld/Hemmingway-1 (original) | 27B (declarado) | 262.144 tokens | Apache-2.0 | Pesos abiertos en Hugging Face | Mismo modelo sin cuantizar; punto de partida de esta version |
 | Qwen3.8-27B (modelo base declarado) | No disponible | No disponible | No disponible | No disponible | Base sobre la que se construyo Hemmingway-1; el autor indica que StoryBench mejora en 504 puntos respecto al modelo de partida |
 | GPT-6 Astra | No disponible | No disponible | Propietaria | API cerrada | Citado como referencia: por detras en CommunicationBench y con 9% en peticiones dificiles frente al 72% de Hemmingway-1 |
 | Kimi K3 | No disponible | No disponible | No disponible | No disponible | Citado a la par en StoryBench; por detras en CommunicationBench |

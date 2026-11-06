@@ -100,11 +100,11 @@ No se dispone de alternativas externas comparables con datos verificables (param
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dougalldeepmind/2026-10-03-qwen36-0-da-grok-resp-15
+- Modelo en Hugging Face: https://huggingface.co/dougalldeepmind/2026-10-03-qwen36-0-da-grok-resp-15
 - Dataset de entrenamiento: https://huggingface.co/datasets/dougalldeepmind/2026-10-03-da-grok-resp-15-mix
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B
 - Repositorio de codigo de la receta: https://github.com/Matthew-Bozoukov/Lessons_from_constituitional_AFT
 - Artefacto hermano del 2026-10-02: https://huggingface.co/dougalldeepmind/2026-10-02-qwen36-0-da-grok-15
 - Artefacto hermano del 2026-09-29: https://huggingface.co/dougalldeepmind/2026-09-29-qwen36-0-da-15
-- Perfil del autor en HuggingFace: https://huggingface.co/dougalldeepmind
+- Perfil del autor en Hugging Face: https://huggingface.co/dougalldeepmind
 - Paper, blog o demo adicionales: no disponible en los resultados de busqueda

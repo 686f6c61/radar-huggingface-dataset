@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ppegiosk/vr_tube_full_r128_epoch1 es un adaptador LoRA publicado en HuggingFace por el usuario ppegiosk, distribuido a través de la librería PEFT (versión 0.20.0 declarada en la model card). Se trata, por tanto, de un conjunto de pesos incrementales que debe combinarse con un modelo base para poder ejecutarse, y no de un modelo autónomo con pesos completos. El repositorio tiene un tamaño declarado de 0,0 GB, cero descargas y cero «likes» en el momento de la consulta, y su model card es la plantilla por defecto de HuggingFace sin ninguna sección completada: no hay descripción, ni datos de entrenamiento, ni resultados de evaluación.
+ppegiosk/vr_tube_full_r128_epoch1 es un adaptador LoRA publicado en Hugging Face por el usuario ppegiosk, distribuido a través de la librería PEFT (versión 0.20.0 declarada en la model card). Se trata, por tanto, de un conjunto de pesos incrementales que debe combinarse con un modelo base para poder ejecutarse, y no de un modelo autónomo con pesos completos. El repositorio tiene un tamaño declarado de 0,0 GB, cero descargas y cero «likes» en el momento de la consulta, y su model card es la plantilla por defecto de Hugging Face sin ninguna sección completada: no hay descripción, ni datos de entrenamiento, ni resultados de evaluación.
 
 La única información sustantiva disponible son las etiquetas del repositorio, que identifican el adaptador como «lora» y apuntan a un modelo base referenciado mediante una ruta local del sistema de ficheros del autor (`/dtu/p1/ppar/ICRA/cache/hub/models--ppegiosk--vr_base_chunk50_30k/snapshots/567e64495fe3515f8b855e59d91f3971f65561ad`). Esa ruta hace referencia a un modelo denominado `vr_base_chunk50_30k`, que no está enlazado como repositorio público accesible, por lo que el modelo base efectivo no puede identificarse ni descargarse a partir de la información proporcionada.
 
@@ -70,18 +70,18 @@ No disponible. No se puede establecer una comparativa con alternativas de la mis
 ## Limitaciones y advertencias
 
 - Repositorio aparentemente vacio: el tamano declarado es de 0,0 GB y no consta que se hayan subido pesos del adaptador. Cualquier intento de descarga podria no producir ficheros utiles.
-- Modelo base no resoluble: la etiqueta `base_model` apunta a una ruta local del sistema de ficheros del autor (`/dtu/p1/...`), no a un repositorio de HuggingFace, por lo que el adaptador no puede componerse con su base sin acceso a ese checkpoint.
+- Modelo base no resoluble: la etiqueta `base_model` apunta a una ruta local del sistema de ficheros del autor (`/dtu/p1/...`), no a un repositorio de Hugging Face, por lo que el adaptador no puede componerse con su base sin acceso a ese checkpoint.
 - Licencia no declarada: sin licencia explicita no existe autorizacion clara para uso comercial, redistribucion ni obras derivadas. Se debe contactar con el autor antes de cualquier uso en produccion.
 - Idioma y cobertura: no declarados. No hay garantia de soporte de castellano ni de ningun otro idioma.
 - Sesgos y alucinacion: no evaluables, al no existir documentacion sobre datos de entrenamiento ni evaluaciones de sesgo, toxicidad o veracidad.
 - Reproducibilidad: la model card no especifica hiperparametros, datos ni semillas, por lo que el resultado no es reproducible.
-- Trazabilidad de la etiqueta `arxiv:1910.09700`: ese identificador corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono, citado en la plantilla de HuggingFace. No es un articulo que describa este modelo, por lo que no debe interpretarse como referencia tecnica del mismo.
+- Trazabilidad de la etiqueta `arxiv:1910.09700`: ese identificador corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono, citado en la plantilla de Hugging Face. No es un articulo que describa este modelo, por lo que no debe interpretarse como referencia tecnica del mismo.
 - Riesgo de conclusion erronea: el nombre del repositorio sugiere un dominio de video o VR, pero no hay ninguna fuente que lo confirme; no se debe asumir esa funcionalidad.
 - Baja madurez del artefacto: cero descargas y cero interacciones indican que no ha sido validado por la comunidad.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ppegiosk/vr_tube_full_r128_epoch1
+- Repositorio en Hugging Face: https://huggingface.co/ppegiosk/vr_tube_full_r128_epoch1
 - Modelo base declarado (ruta local, no accesible publicamente): `/dtu/p1/ppar/ICRA/cache/hub/models--ppegiosk--vr_base_chunk50_30k/snapshots/567e64495fe3515f8b855e59d91f3971f65561ad`
 - Referencia de la etiqueta arXiv citada en la model card (calculadora de impacto de carbono): https://mlco2.github.io/impact y https://arxiv.org/abs/1910.09700
 - Documentacion de PEFT: https://huggingface.co/docs/peft

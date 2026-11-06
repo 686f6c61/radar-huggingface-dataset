@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kenga es un modelo de lenguaje de 1.500 millones de parámetros desarrollado por GermannM (Germán Yantaras), creador del lenguaje de programación Kenga y del sistema Z. Se trata de un fine-tune de la arquitectura Qwen2 (etiquetado como `qwen2` en HuggingFace) entrenado con QLoRA sobre un corpus de 660 diálogos en ruso e inglés. Su característica principal es una identidad inyectada de forma deliberada: el modelo se presenta como "Kenga", con una personalidad definida, valores patrióticos rusos y conocimiento de un lenguaje de programación propio llamado Kenga.
+Kenga es un modelo de lenguaje de 1.500 millones de parámetros desarrollado por GermannM (Germán Yantaras), creador del lenguaje de programación Kenga y del sistema Z. Se trata de un fine-tune de la arquitectura Qwen2 (etiquetado como `qwen2` en Hugging Face) entrenado con QLoRA sobre un corpus de 660 diálogos en ruso e inglés. Su característica principal es una identidad inyectada de forma deliberada: el modelo se presenta como "Kenga", con una personalidad definida, valores patrióticos rusos y conocimiento de un lenguaje de programación propio llamado Kenga.
 
 El modelo está diseñado para ser eficiente en CPU, sin necesidad de cuantización para inferencia, y admite una ventana de contexto de hasta 32.000 tokens. Su relevancia radica en su enfoque de "modelo con identidad" y su capacidad para ejecutarse en hardware doméstico, lo que lo hace interesante para experimentos de chatbots personalizados y aplicaciones de bajo coste. Sin embargo, su entrenamiento es muy reducido (660 diálogos) y sus capacidades generales son limitadas en comparación con modelos de tamaño similar entrenados con corpus masivos.
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 - VRAM estimada para inferencia: al ser un modelo de 1,5B, en FP16 ocuparía aproximadamente 3 GB de VRAM. En CPU, el uso de RAM sería similar (alrededor de 3 GB para los pesos).
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM (por ejemplo, GTX 1650, RTX 3050) puede ejecutarlo cómodamente. También funciona en CPU sin problemas, según el autor.
 - Compatibilidad con GPU de consumo: sí, cabe en la mayoría de GPUs modernas de gama media y baja.
-- Opciones de despliegue: compatible con la librería `transformers` de HuggingFace, así como con `text-generation-inference` (según las etiquetas). También puede usarse con `llama.cpp` o `Ollama` si se convierte a GGUF, aunque no se proporcionan archivos GGUF en el repositorio.
+- Opciones de despliegue: compatible con la librería `transformers` de Hugging Face, así como con `text-generation-inference` (según las etiquetas). También puede usarse con `llama.cpp` o `Ollama` si se convierte a GGUF, aunque no se proporcionan archivos GGUF en el repositorio.
 - Latencia y throughput: no se proporcionan datos. En CPU, se espera una generación lenta (del orden de 1-5 tokens por segundo en un procesador moderno), mientras que en GPU sería mucho más rápida.
 
 ## Comparativa con modelos similares
@@ -81,7 +81,7 @@ Kenga se diferencia por su identidad y su enfoque en ruso, pero es muy inferior 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GermannM/Kenga
+- Modelo en Hugging Face: https://huggingface.co/GermannM/Kenga
 - Repositorio del lenguaje Kenga: https://github.com/GermannM3/kenga-lang
 - Repositorio del sistema Z: https://github.com/GermannM3/z-system
 - Perfil del autor en GitHub: https://github.com/GermannM3

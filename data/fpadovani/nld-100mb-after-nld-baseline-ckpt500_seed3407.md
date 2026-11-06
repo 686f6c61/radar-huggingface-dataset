@@ -72,7 +72,7 @@ No se dispone de comparativas con métricas de rendimiento. El autor tiene otros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/nld-100mb-after-nld-baseline-ckpt500_seed3407
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/nld-100mb-after-nld-baseline-ckpt500_seed3407
 - Modelo base: https://huggingface.co/fpadovani/ppt-art-lang-nld-baseline-100mb_seed3407
 - Modelo similar (Dp-10mb): https://huggingface.co/fpadovani/nld-latn-100mb-after-ppt-Dp-10mb-ckpt500_seed3407
 - Modelo similar (Dp-100mb): https://huggingface.co/fpadovani/nld-latn-100mb-after-ppt-Dp-100mb-ckpt500_seed3407

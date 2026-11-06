@@ -82,7 +82,7 @@ La comparativa es cualitativa porque no hay benchmarks publicados para el modelo
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/fairy322/Mistral-Nemo-2407-12B-Thinking-Claude-Gemini-GPT5.2-Uncensored-HERETIC-GGUF
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/fairy322/Mistral-Nemo-2407-12B-Thinking-Claude-Gemini-GPT5.2-Uncensored-HERETIC-GGUF
 - Modelo base de DavidAU: https://huggingface.co/DavidAU/Mistral-Nemo-2407-12B-Thinking-Claude-Gemini-GPT5.2-Uncensored-HERETIC
 - Variante con imatrix (mradermacher): https://huggingface.co/mradermacher/Mistral-Nemo-2407-12B-Thinking-Claude-Gemini-GPT5.2-Uncensored-HERETIC-i1-GGUF
 - Página de llmrun.dev con especificaciones de hardware: https://llmrun.dev/model/davidau-mistral-nemo-2407-12b-thinking-claude-gemini-gpt5-2-uncensored-heretic

@@ -4,7 +4,7 @@
 
 Este repositorio de Hugging Face no contiene un modelo entrenado, sino una nota de investigación sobre búsqueda de arquitecturas neuronales (Neural Architecture Search, NAS). Lo publica el usuario `rahu-lsin` bajo licencia CC-BY-4.0 y su artefacto principal es un fichero `notes.md` que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación. La propia model card lo declara explícitamente: no es un paper terminado ni una release de modelos entrenados, y las secciones marcadas como planes u hipótesis no deben interpretarse como resultados experimentales.
 
-Los metadatos de HuggingFace indican 24.832 parámetros según la cabecera de safetensors (veinticuatro mil ochocientos treinta y dos) y un tamaño de repositorio de 0,0 GB. Se trata, por tanto, de tensores residuales o artefactos de serialización sin utilidad para inferencia: no hay checkpoint entrenado, no hay tokenizador, no hay configuración de arquitectura y no hay código de ejecución. El tag `transformer` de HuggingFace es una etiqueta de clasificación del repositorio, no una descripción de una arquitectura implementada.
+Los metadatos de Hugging Face indican 24.832 parámetros según la cabecera de safetensors (veinticuatro mil ochocientos treinta y dos) y un tamaño de repositorio de 0,0 GB. Se trata, por tanto, de tensores residuales o artefactos de serialización sin utilidad para inferencia: no hay checkpoint entrenado, no hay tokenizador, no hay configuración de arquitectura y no hay código de ejecución. El tag `transformer` de Hugging Face es una etiqueta de clasificación del repositorio, no una descripción de una arquitectura implementada.
 
 Por todo ello, esta ficha documenta el repositorio como lo que es, material de investigación textual, y marca como "no disponible" todo lo relativo a inferencia, contexto, cuantización, idiomas y rendimiento. Cualquier uso práctico pasa por leer y reutilizar la nota, no por desplegar el modelo.
 
@@ -82,7 +82,7 @@ Como referencia de categoría, los puntos de comparación habituales en NAS ser�
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rahu-lsin/dissertation-neural-architecture-search
+- Repositorio en Hugging Face: https://huggingface.co/rahu-lsin/dissertation-neural-architecture-search
 - Nota principal (`notes.md`): https://huggingface.co/rahu-lsin/dissertation-neural-architecture-search/blob/main/notes.md
 - Documentación del repositorio (`README.md`): https://huggingface.co/rahu-lsin/dissertation-neural-architecture-search/blob/main/README.md
 - Papers, blogs, repositorios o demos adicionales: no disponibles en la información proporcionada.

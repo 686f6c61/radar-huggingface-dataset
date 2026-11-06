@@ -16,7 +16,7 @@ Los experimentos v1 se realizan sobre GPT-2 Medium (355M parámetros, 24 capas, 
 | Longitud de contexto | No disponible (depende del modelo base) |
 | Tipos de cuantizacion | No disponible (el método usa poda por magnitud, no cuantización) |
 | Idiomas soportados | No disponible (el modelo base GPT-2 es principalmente inglés) |
-| Licencia | No disponible en HuggingFace; el código se distribuye vía GitHub sin licencia explícita en la model card |
+| Licencia | No disponible en Hugging Face; el código se distribuye vía GitHub sin licencia explícita en la model card |
 | Formato de pesos | No aplica (es código Python; los pesos de GPT-2 Medium se cargan desde la librería transformers) |
 
 ## Arquitectura y entrenamiento
@@ -76,11 +76,11 @@ No disponible. El repositorio no es un modelo de lenguaje, sino un método de co
 - Sesgo del modelo base: GPT-2 Medium tiene una estructura de cabezas homogénea y poca sensibilidad a la poda, lo que el autor identifica como una causa del fracaso. Los resultados pueden no generalizar a modelos más grandes o heterogéneos.
 - Entrenamiento superficial de SAEs: solo 5 épocas y un diccionario pequeño (512) pueden no capturar la verdadera estructura de características.
 - Reproducibilidad parcial: los experimentos originales se ejecutaron sin semilla fija; aunque el código actual usa SEED=42, los números pueden variar ligeramente.
-- Licencia no especificada: no se indica licencia en HuggingFace ni en el repositorio de GitHub, lo que puede limitar su uso comercial o la redistribución.
+- Licencia no especificada: no se indica licencia en Hugging Face ni en el repositorio de GitHub, lo que puede limitar su uso comercial o la redistribución.
 - Sin soporte de producción: el código es experimental, sin garantías de estabilidad ni mantenimiento.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lostboy231/cgc
+- Hugging Face: https://huggingface.co/Lostboy231/cgc
 - Paper arXiv: https://arxiv.org/abs/2603.16440
 - Repositorio GitHub (mencionado en la model card): https://github.com/rishaankgupta/CGC

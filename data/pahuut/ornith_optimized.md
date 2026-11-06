@@ -6,7 +6,7 @@ El repositorio `Pahuut/ornith_optimized` contiene un kernel GPU optimizado escri
 
 El autor es el usuario `Pahuut`, y el repositorio fue creado el 4 de septiembre de 2026. No se ha publicado ningun documento tecnico, licencia ni descripcion funcional del kernel mas alla del propio README. El codigo esta pensado para ejecutarse en GPU NVIDIA con PyTorch >= 2.4.0 y Triton >= 3.3.0.
 
-Aunque el nombre sugiere una relacion con la familia de modelos Ornith de agencia de codificacion, este repositorio no contiene pesos de ningun modelo LLM. Es importante no confundirlo con los modelos publicados bajo la organizacion `ornith-ai` en HuggingFace (como `Ornith-1.5-397B-NVFP4`), con los que comparte nombre pero no contenido.
+Aunque el nombre sugiere una relacion con la familia de modelos Ornith de agencia de codificacion, este repositorio no contiene pesos de ningun modelo LLM. Es importante no confundirlo con los modelos publicados bajo la organizacion `ornith-ai` en Hugging Face (como `Ornith-1.5-397B-NVFP4`), con los que comparte nombre pero no contenido.
 
 ## Especificaciones tecnicas
 
@@ -77,9 +77,9 @@ No se dispone de informacion sobre otros kernels Triton exportados desde AutoKer
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Pahuut/ornith_optimized
+- Repositorio en Hugging Face: https://huggingface.co/Pahuut/ornith_optimized
 - Herramienta AutoKernel mencionada en el README: https://github.com/RightNow-AI/autokernel
-- Organizacion ornith-ai en HuggingFace (modelos LLM relacionados por nombre, no por contenido): https://huggingface.co/ornith-ai/models
+- Organizacion ornith-ai en Hugging Face (modelos LLM relacionados por nombre, no por contenido): https://huggingface.co/ornith-ai/models
 - Web de Ornith AI (agencia de codificacion): https://ornith.online/
 - Blog sobre Ornith-1.0: https://ornith.ai/ornith_1_0.html
 - Repositorio GitHub de Ornith-1: https://github.com/ornith-ai/Ornith-1

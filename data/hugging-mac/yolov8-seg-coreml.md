@@ -77,7 +77,7 @@ La comparativa se limita a la información pública encontrada. No se dispone de
 
 ## Enlaces
 
-- [Repositorio HuggingFace: hugging-mac/yolov8-seg-coreml](https://huggingface.co/hugging-mac/yolov8-seg-coreml)
+- [Repositorio Hugging Face: hugging-mac/yolov8-seg-coreml](https://huggingface.co/hugging-mac/yolov8-seg-coreml)
 - [Hugging Mac (plataforma y SDK)](https://github.com/devilyouwei/hugging-mac)
 - [SDK de YOLOv8 Seg en Hugging Mac](https://github.com/devilyouwei/hugging-mac/tree/main/packages/hugging_mac_sdk/src/hugging_mac_sdk/models/yolov8_seg)
 - [Ultralytics YOLOv8 (modelo original)](https://github.com/ultralytics/yolov8)

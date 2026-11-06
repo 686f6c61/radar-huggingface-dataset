@@ -77,10 +77,10 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| kseniamakeevaa/llm-course-hw2-dpo | 134,5M | no disponible | no disponible | HuggingFace (0 descargas) | Ajuste DPO de curso sobre SmolLM-135M-Instruct |
-| HuggingFaceTB/SmolLM-135M-Instruct | 135M | no disponible en esta ficha | Apache 2.0 (segun el modelo base original) | HuggingFace, ampliamente usado | Modelo base; sin ajuste DPO de preferencias |
-| SmolLM2-135M-Instruct | 135M | no disponible en esta ficha | Apache 2.0 (segun el modelo original) | HuggingFace | Generacion posterior de HuggingFaceTB con mejoras de entrenamiento |
-| Qwen2.5-0.5B-Instruct | 0,5B | no disponible en esta ficha | Apache 2.0 (segun el modelo original) | HuggingFace | Alternativa de tamano similar algo mayor, con mejor soporte multilingue |
+| kseniamakeevaa/llm-course-hw2-dpo | 134,5M | no disponible | no disponible | Hugging Face (0 descargas) | Ajuste DPO de curso sobre SmolLM-135M-Instruct |
+| HuggingFaceTB/SmolLM-135M-Instruct | 135M | no disponible en esta ficha | Apache 2.0 (segun el modelo base original) | Hugging Face, ampliamente usado | Modelo base; sin ajuste DPO de preferencias |
+| SmolLM2-135M-Instruct | 135M | no disponible en esta ficha | Apache 2.0 (segun el modelo original) | Hugging Face | Generacion posterior de HuggingFaceTB con mejoras de entrenamiento |
+| Qwen2.5-0.5B-Instruct | 0,5B | no disponible en esta ficha | Apache 2.0 (segun el modelo original) | Hugging Face | Alternativa de tamano similar algo mayor, con mejor soporte multilingue |
 
 La comparativa se limita a modelos de la misma familia y tamano; no se dispone de datos de benchmarks para establecer comparaciones de rendimiento cuantitativas.
 
@@ -98,7 +98,7 @@ La comparativa se limita a modelos de la misma familia y tamano; no se dispone d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kseniamakeevaa/llm-course-hw2-dpo
+- Modelo en Hugging Face: https://huggingface.co/kseniamakeevaa/llm-course-hw2-dpo
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM-135M-Instruct
 - Dataset de preferencias: https://huggingface.co/datasets/HumanLLMs/Human-Like-DPO-Dataset
 - Paper de DPO (referencia del metodo): no disponible en la informacion proporcionada

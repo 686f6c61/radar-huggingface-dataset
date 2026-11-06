@@ -104,7 +104,7 @@ No se dispone de datos de benchmarks comparativos con alternativas en la informa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/litert-community/Qwen3-TTS-12Hz-0.6B-Base
+- Modelo en Hugging Face: https://huggingface.co/litert-community/Qwen3-TTS-12Hz-0.6B-Base
 - Modelo base original: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-Base
 - Repositorio LiteRT-LM (Google AI Edge): https://github.com/google-ai-edge/LiteRT-LM/tree/main/omni
 - Guía de compilación y ejecución de LiteRT-LM: https://github.com/google-ai-edge/LiteRT-LM/blob/main/docs/getting-started/build-and-run.md

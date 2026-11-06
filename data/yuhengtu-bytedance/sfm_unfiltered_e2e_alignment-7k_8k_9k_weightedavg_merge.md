@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `yuhengtu-bytedance/sfm_unfiltered_e2e_alignment-7k_8k_9k_weightedavg_merge` es un merge de tres checkpoints de un mismo modelo base de alineación sin filtrar (unfiltered end-to-end alignment), combinados mediante el método Linear de mergekit. Fue publicado por el usuario yuhengtu-bytedance en HuggingFace con el objetivo de fusionar estadios intermedios de un entrenamiento de alineación (pasos 7000, 8000 y 9000) para obtener un modelo consolidado con pesos promediados.
+El modelo `yuhengtu-bytedance/sfm_unfiltered_e2e_alignment-7k_8k_9k_weightedavg_merge` es un merge de tres checkpoints de un mismo modelo base de alineación sin filtrar (unfiltered end-to-end alignment), combinados mediante el método Linear de mergekit. Fue publicado por el usuario yuhengtu-bytedance en Hugging Face con el objetivo de fusionar estadios intermedios de un entrenamiento de alineación (pasos 7000, 8000 y 9000) para obtener un modelo consolidado con pesos promediados.
 
 El modelo tiene 6.856.253.440 parámetros (aproximadamente 6,85 mil millones) y está etiquetado con la arquitectura `gpt_neox`, lo que sugiere una base tipo GPT-NeoX. Se distribuye en formato `safetensors` con precisión `bfloat16`. La documentación es extremadamente escasa: no se especifica licencia, idiomas, ni datos de entrenamiento. El repositorio no presenta descargas ni interacciones, y no hay benchmarks publicados. Es relevante únicamente como ejemplo de fusión de pesos mediante mergekit, pero carece de información suficiente para una evaluación técnica rigurosa.
 
@@ -71,7 +71,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio HuggingFace: [yuhengtu-bytedance/sfm_unfiltered_e2e_alignment-7k_8k_9k_weightedavg_merge](https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_alignment-7k_8k_9k_weightedavg_merge)
+- Repositorio Hugging Face: [yuhengtu-bytedance/sfm_unfiltered_e2e_alignment-7k_8k_9k_weightedavg_merge](https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_alignment-7k_8k_9k_weightedavg_merge)
 - Página de despliegue en FriendliAI: [sfm_unfiltered_e2e_alignment-7k_8k_9k_weightedavg_merge - FriendliAI](https://friendli.ai/models/yuhengtu-bytedance/sfm_unfiltered_e2e_alignment-7k_8k_9k_weightedavg_merge)
 - Repositorio de mergekit: [cg123/mergekit](https://github.com/cg123/mergekit)
 - Paper del método Linear: [arxiv:2203.05482](https://arxiv.org/abs/2203.05482)

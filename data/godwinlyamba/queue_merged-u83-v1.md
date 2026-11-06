@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `Godwinlyamba/queue_merged-u83-v1` es un modelo de generación de texto desarrollado por Godwinlyamba, publicado en HuggingFace en agosto de 2026. Se trata de un modelo con arquitectura de mezcla de expertos (MoE), según indica la etiqueta `qwen3_5_moe`, y está basado en el modelo `marsplan0624/affine-5gedzafcvg-queen`, del cual se ha realizado un ajuste fino adicional. El entrenamiento ha empleado la técnica *online-DPO* (optimización directa de preferencias), lo que sugiere un enfoque en alineación con preferencias humanas.
+El modelo `Godwinlyamba/queue_merged-u83-v1` es un modelo de generación de texto desarrollado por Godwinlyamba, publicado en Hugging Face en agosto de 2026. Se trata de un modelo con arquitectura de mezcla de expertos (MoE), según indica la etiqueta `qwen3_5_moe`, y está basado en el modelo `marsplan0624/affine-5gedzafcvg-queen`, del cual se ha realizado un ajuste fino adicional. El entrenamiento ha empleado la técnica *online-DPO* (optimización directa de preferencias), lo que sugiere un enfoque en alineación con preferencias humanas.
 
-Con 35.107.181.936 parámetros totales (aproximadamente 35,1 mil millones), el modelo se posiciona en la gama de los grandes modelos de lenguaje. Aunque el pipeline declarado es `text-generation`, las etiquetas incluyen `image-text-to-text`, lo que apunta a una posible capacidad multimodal, aunque no se ha confirmado oficialmente. El acceso al modelo está restringido (gated), por lo que se requiere aceptar condiciones en HuggingFace para su uso.
+Con 35.107.181.936 parámetros totales (aproximadamente 35,1 mil millones), el modelo se posiciona en la gama de los grandes modelos de lenguaje. Aunque el pipeline declarado es `text-generation`, las etiquetas incluyen `image-text-to-text`, lo que apunta a una posible capacidad multimodal, aunque no se ha confirmado oficialmente. El acceso al modelo está restringido (gated), por lo que se requiere aceptar condiciones en Hugging Face para su uso.
 
 La relevancia de este modelo radica en su combinación de arquitectura MoE, entrenamiento con DPO y su potencial para tareas de razonamiento (etiqueta `reason-v3`). Sin embargo, la información pública disponible es muy limitada, lo que impide una evaluación técnica completa.
 
@@ -73,7 +73,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo es gated, por lo que requiere aceptar condiciones en HuggingFace. Esto puede limitar su uso en entornos de producción.
+- Acceso restringido: el modelo es gated, por lo que requiere aceptar condiciones en Hugging Face. Esto puede limitar su uso en entornos de producción.
 - Licencia no disponible: no se especifica la licencia, lo que impide conocer las restricciones de uso comercial o modificación.
 - Información técnica incompleta: no se conocen la longitud de contexto, los idiomas soportados, ni los detalles de entrenamiento, lo que dificulta una evaluación rigurosa.
 - Riesgo de alucinación: como todo modelo de lenguaje, puede generar contenido falso o no verificado, especialmente en tareas de razonamiento complejo.
@@ -83,6 +83,6 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- [HuggingFace - Godwinlyamba/queue_merged-u83-v1](https://huggingface.co/Godwinlyamba/queue_merged-u83-v1)
+- [Hugging Face - Godwinlyamba/queue_merged-u83-v1](https://huggingface.co/Godwinlyamba/queue_merged-u83-v1)
 
 No se han encontrado otros enlaces (papers, blogs, repositorios) en la información proporcionada.

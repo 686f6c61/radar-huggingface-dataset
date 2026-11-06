@@ -77,7 +77,7 @@ Nota: los datos de los modelos alternativos son de conocimiento general y pueden
 
 ## Enlaces
 
-- [HuggingFace: aisingapore/SEA-LION-ModernBERT-Embedding-600M](https://huggingface.co/aisingapore/SEA-LION-ModernBERT-Embedding-600M)
+- [Hugging Face: aisingapore/SEA-LION-ModernBERT-Embedding-600M](https://huggingface.co/aisingapore/SEA-LION-ModernBERT-Embedding-600M)
 - [Documentación de SEA-LION (ModernBERT y Embedding)](https://docs.sea-lion.ai/models/sea-embedding/sea-modernbert)
 - [Documentación general de SEA-LION Embedding](https://docs.sea-lion.ai/models/sea-embedding)
 - [Repositorio GitHub de SEA-LION](https://github.com/aisingapore/sealion)
@@ -160,7 +160,7 @@ Nota: los datos de los modelos alternativos son de conocimiento general y pueden
 
 ## Enlaces
 
-- [HuggingFace: aisingapore/SEA-LION-ModernBERT-Embedding-600M](https://huggingface.co/aisingapore/SEA-LION-ModernBERT-Embedding-600M)
+- [Hugging Face: aisingapore/SEA-LION-ModernBERT-Embedding-600M](https://huggingface.co/aisingapore/SEA-LION-ModernBERT-Embedding-600M)
 - [Documentación de SEA-LION ModernBERT y Embedding](https://docs.sea-lion.ai/models/sea-embedding/sea-modernbert)
 - [Documentación general de SEA-LION Embedding](https://docs.sea-lion.ai/models/sea-embedding)
 - [Repositorio GitHub de SEA-LION](https://github.com/aisingapore/sealion)
@@ -243,7 +243,7 @@ Nota: los datos de los modelos alternativos son de referencia general y pueden v
 
 ## Enlaces
 
-- [HuggingFace: aisingapore/SEA-LION-ModernBERT-Embedding-600M](https://huggingface.co/aisingapore/SEA-LION-ModernBERT-Embedding-600M)
+- [Hugging Face: aisingapore/SEA-LION-ModernBERT-Embedding-600M](https://huggingface.co/aisingapore/SEA-LION-ModernBERT-Embedding-600M)
 - [Documentación de SEA-LION ModernBERT y Embedding](https://docs.sea-lion.ai/models/sea-embedding/sea-modernbert)
 - [Documentación general de SEA-LION Embedding](https://docs.sea-lion.ai/models/sea-embedding)
 - [Repositorio GitHub de SEA-LION](https://github.com/aisingapore/sealion)

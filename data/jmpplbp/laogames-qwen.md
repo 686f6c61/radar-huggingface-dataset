@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jmpplbp/laogames-qwen` es un repositorio de HuggingFace publicado por el usuario jmpplbp que no contiene un modelo entrenado de nuevo, sino un paquete de activos de ejecucion (runtime assets) empleados por los flujos de trabajo (workflows) del proyecto LaoGames. Segun la propia model card, el repositorio recopila "models used by the corresponding host workflows", con revisiones de origen y sumas de comprobacion registradas en un fichero `MODEL_SOURCES.json`. El repositorio fue creado y actualizado el 22 de septiembre de 2026, ocupa 29,1 GB y esta etiquetado con `onnx`, `comfyui` y `laogames`.
+`jmpplbp/laogames-qwen` es un repositorio de Hugging Face publicado por el usuario jmpplbp que no contiene un modelo entrenado de nuevo, sino un paquete de activos de ejecucion (runtime assets) empleados por los flujos de trabajo (workflows) del proyecto LaoGames. Segun la propia model card, el repositorio recopila "models used by the corresponding host workflows", con revisiones de origen y sumas de comprobacion registradas en un fichero `MODEL_SOURCES.json`. El repositorio fue creado y actualizado el 22 de septiembre de 2026, ocupa 29,1 GB y esta etiquetado con `onnx`, `comfyui` y `laogames`.
 
 Los activos declarados proceden de dos repositorios de origen: `Phr00t/Qwen-Image-Edit-Rapid-AIO`, un empaquetado acelerado del modelo de edicion de imagen Qwen-Image-Edit, y `fal/Qwen-Image-Edit-2511-Multiple-Angles-LoRA`, un LoRA de cambio de angulo de camara para la misma familia. Por tanto, el contenido apunta a un modelo de difusion multimodal de edicion de imagen de la familia Qwen-Image, exportado a ONNX para su uso en ComfyUI, y no a un modelo de lenguaje. La model card advierte ademas de que el repositorio "is being prepared" y de que la validacion de la interfaz de generacion esta en curso.
 
@@ -95,7 +95,7 @@ Alternativas de la misma categoria (otros modelos de edicion de imagen de la fam
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jmpplbp/laogames-qwen
+- Repositorio en Hugging Face: https://huggingface.co/jmpplbp/laogames-qwen
 - Fuente declarada (modelo de edicion de imagen): https://huggingface.co/Phr00t/Qwen-Image-Edit-Rapid-AIO/tree/b3853b6e04be575a3b78bfc47feea629d28afa87
 - Fuente declarada (LoRA de angulos multiples): https://huggingface.co/fal/Qwen-Image-Edit-2511-Multiple-Angles-LoRA/tree/e3066224ab74263f4a5b6179cd1a3b0a15577e44
 - Documentacion de ComfyUI: no disponible en la informacion proporcionada

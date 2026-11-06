@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Lumenleaf Review Moderation Model es un modelo de clasificación de texto publicado en HuggingFace por el usuario TUaxhuiax bajo el identificador `fs2579-moderation-release-3b7e`. Su propósito declarado es marcar reseñas de productos potencialmente abusivas o contrarias a las políticas antes de que se muestren a los compradores, es decir, se trata de un clasificador binario o multiclase orientado a moderación de contenido en entornos de comercio electrónico.
+Lumenleaf Review Moderation Model es un modelo de clasificación de texto publicado en Hugging Face por el usuario TUaxhuiax bajo el identificador `fs2579-moderation-release-3b7e`. Su propósito declarado es marcar reseñas de productos potencialmente abusivas o contrarias a las políticas antes de que se muestren a los compradores, es decir, se trata de un clasificador binario o multiclase orientado a moderación de contenido en entornos de comercio electrónico.
 
 La model card documenta un proceso de selección de checkpoint sobre una campaña de entrenamiento de 4000 pasos, con evaluaciones cada 400 pasos que miden calidad, latencia, calibración, coste y una puntuación compuesta de preparación para despliegue (readiness). El checkpoint finalmente seleccionado es `ckpt_2000`, con una puntuación de readiness de 0.795, por encima del umbral de liberación de 0.790 y superior a la línea base de la versión anterior (0.735).
 
@@ -69,7 +69,7 @@ El checkpoint seleccionado para publicación es `ckpt_2000` (readiness 0.795), e
 - VRAM estimada para inferencia: no disponible, al desconocerse el número de parámetros y la arquitectura.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible.
-- Opciones de despliegue: la librería declarada es `transformers` y el modelo incluye el tag `endpoints_compatible`, por lo que es desplegable mediante la infraestructura de endpoints de HuggingFace y, en general, mediante cualquier servidor compatible con `transformers` (por ejemplo, Text Generation Inference en modo clasificación, o servidores propios con PyTorch). No se confirma soporte de llama.cpp, Ollama ni vLLM.
+- Opciones de despliegue: la librería declarada es `transformers` y el modelo incluye el tag `endpoints_compatible`, por lo que es desplegable mediante la infraestructura de endpoints de Hugging Face y, en general, mediante cualquier servidor compatible con `transformers` (por ejemplo, Text Generation Inference en modo clasificación, o servidores propios con PyTorch). No se confirma soporte de llama.cpp, Ollama ni vLLM.
 - Latencia y throughput: la model card reporta una métrica interna de latencia de 0.785 para el checkpoint seleccionado, pero sin unidades ni metodología, por lo que no es interpretable como latencia absoluta.
 
 ## Comparativa con modelos similares
@@ -95,5 +95,5 @@ Comparativas con alternativas de terceros (por ejemplo, clasificadores de toxici
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TUaxhuiax/fs2579-moderation-release-3b7e
+- Modelo en Hugging Face: https://huggingface.co/TUaxhuiax/fs2579-moderation-release-3b7e
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

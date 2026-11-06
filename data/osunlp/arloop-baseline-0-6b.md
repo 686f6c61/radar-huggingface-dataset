@@ -84,7 +84,7 @@ Nota: ARLoop-baseline-0.6B comparte el tokenizer de SmolLM2 (49.152 tokens), per
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/osunlp/ARLoop-1.3B (implementacion de carga de referencia para esta release) y ficha principal: https://huggingface.co/osunlp/ARLoop-baseline-0.6B
+- Modelo en Hugging Face: https://huggingface.co/osunlp/ARLoop-1.3B (implementacion de carga de referencia para esta release) y ficha principal: https://huggingface.co/osunlp/ARLoop-baseline-0.6B
 - Codigo de entrenamiento: https://github.com/ykyaol7/ARLoop
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
 - Paper, demo y blog: no disponible

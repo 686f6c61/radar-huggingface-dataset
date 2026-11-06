@@ -2,7 +2,7 @@
 
 ## Resumen
 
-duckgpt-qwen3-esper3-80-20 es un ajuste fino (fine-tune) del modelo base Qwen/Qwen3-8B-Base, publicado por el usuario Username1008 en HuggingFace. Se trata de un modelo causal de lenguaje de 8.190.735.360 parámetros (8,2B), con arquitectura transformer densa, distribuido en formato safetensors y bajo licencia Apache 2.0. El nombre sugiere un entrenamiento orientado a esperanto ("esper3") con una mezcla de datos 80/20, aunque la model card no documenta la composición del dataset de ajuste ni los hiperparámetros empleados.
+duckgpt-qwen3-esper3-80-20 es un ajuste fino (fine-tune) del modelo base Qwen/Qwen3-8B-Base, publicado por el usuario Username1008 en Hugging Face. Se trata de un modelo causal de lenguaje de 8.190.735.360 parámetros (8,2B), con arquitectura transformer densa, distribuido en formato safetensors y bajo licencia Apache 2.0. El nombre sugiere un entrenamiento orientado a esperanto ("esper3") con una mezcla de datos 80/20, aunque la model card no documenta la composición del dataset de ajuste ni los hiperparámetros empleados.
 
 El modelo hereda las capacidades del Qwen3-8B original: conmutación entre modo de razonamiento (thinking) y modo directo, soporte de tool calling, contexto nativo de 32.768 tokens ampliable a 131.072 mediante YaRN, y cobertura de más de 100 idiomas según la documentación de Qwen. Sin embargo, el autor no ha publicado benchmarks propios ni detalles del proceso de ajuste, por lo que el rendimiento específico de esta variante no está verificado.
 
@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Username1008/duckgpt-qwen3-esper3-80-20
+- Modelo en Hugging Face: https://huggingface.co/Username1008/duckgpt-qwen3-esper3-80-20
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B-Base
 - Blog de Qwen3: https://qwenlm.github.io/blog/qwen3/
 - Repositorio GitHub de Qwen3: https://github.com/QwenLM/Qwen3

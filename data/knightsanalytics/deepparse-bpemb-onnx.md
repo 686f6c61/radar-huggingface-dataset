@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Formato | Tarea | Licencia | Disponibilidad | Contexto / tamanos |
 |---|---|---|---|---|---|
-| KnightsAnalytics/deepparse-bpemb-onnx | ONNX | Parsing de direcciones (BPEmb) | MIT | HuggingFace (0 descargas, 0 likes) | Repo 0,2 GB; resto no disponible |
-| deepparse/bpemb-base | Pesos de deepparse (PyTorch) | Parsing de direcciones (BPEmb) | MIT (segun deepparse) | HuggingFace | no disponible |
+| KnightsAnalytics/deepparse-bpemb-onnx | ONNX | Parsing de direcciones (BPEmb) | MIT | Hugging Face (0 descargas, 0 likes) | Repo 0,2 GB; resto no disponible |
+| deepparse/bpemb-base | Pesos de deepparse (PyTorch) | Parsing de direcciones (BPEmb) | MIT (segun deepparse) | Hugging Face | no disponible |
 | Modelo FastText de deepparse | Pesos de deepparse (PyTorch) | Parsing de direcciones (FastText) | MIT (segun deepparse) | Distribuido con la libreria deepparse | no disponible |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada.
@@ -80,8 +80,8 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/KnightsAnalytics/deepparse-bpemb-onnx
-- Modelo base de referencia en HuggingFace: https://huggingface.co/deepparse/bpemb-base
+- Hugging Face: https://huggingface.co/KnightsAnalytics/deepparse-bpemb-onnx
+- Modelo base de referencia en Hugging Face: https://huggingface.co/deepparse/bpemb-base
 - Documentación de deepparse: https://deepparse.org/
 - Documentación del parser de deepparse: https://deepparse.org/parser.html
 - Repositorio GitHub de deepparse (GRAAL-Research): https://github.com/GRAAL-Research/deepparse

@@ -29,7 +29,7 @@ El checkpoint publicado corresponde al paso 8000 (final) del entrenamiento, con 
 | Embedding / LM head | Atados (vocabulario 12288 x 128, contado una vez) |
 | Dtype | float32 |
 | Desglose de parametros | Embedding 1.572.864 + 6 bloques x 157.952 = 947.712 + RMSNorm final 128 = 2.520.704 |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 | Fecha de publicacion | 27 de septiembre de 2026 |
 
 ## Arquitectura y entrenamiento
@@ -88,7 +88,7 @@ Con n=200 el error estandar es de aproximadamente 3,1 puntos porcentuales, por l
 | TinyStories-1M | ~1M (GPT-Neo) | No disponible | No disponible | safetensors | Carga estandar en `transformers` |
 | TinyStories-3M | ~3M (GPT-Neo) | No disponible | No disponible | safetensors | Carga estandar en `transformers` |
 | Pythia-14M | 14M | 2048 | Apache-2.0 | safetensors | Carga estandar en `transformers` |
-| GPT-2 small | 124M | 1024 | MIT (segun ficha de HuggingFace) | safetensors / bin | Carga estandar en `transformers` |
+| GPT-2 small | 124M | 1024 | MIT (segun ficha de Hugging Face) | safetensors / bin | Carga estandar en `transformers` |
 
 La comparacion directa de rendimiento no es posible: no se dispone de resultados publicados de TinyStories-1M, TinyStories-3M, Pythia-14M o GPT-2 small bajo el mismo protocolo de evaluacion (zero-shot loglikelihood, 200 ejemplos) empleado en esta ficha. La diferencia estructural mas relevante frente a todos ellos es que BananaMind 3 2.5M no es un transformer apilado convencional, sino un modelo con pesos compartidos ejecutados varias veces, lo que lo situa en la misma familia conceptual que los Universal Transformers mas que en la de los GPT-Neo o GPT-2 reducidos. Los datos de TinyStories y Pythia proceden de sus fichas publicas; los campos marcados como no disponibles no se han podido confirmar en la informacion proporcionada.
 
@@ -109,9 +109,9 @@ La comparacion directa de rendimiento no es posible: no se dispone de resultados
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/Compactbot/bananamind-3-2.5m-lft
+- Ficha del modelo en Hugging Face: https://huggingface.co/Compactbot/bananamind-3-2.5m-lft
 - Peticion original del modelo (model-requests#4): https://huggingface.co/spaces/Compactbot/model-requests/discussions/4
-- Colecciones del ecosistema BananaMind en HuggingFace: https://huggingface.co/BananaMind/collections
+- Colecciones del ecosistema BananaMind en Hugging Face: https://huggingface.co/BananaMind/collections
 - Repositorio BananaMindOS (inferencia local en PCs de los 90): https://github.com/BananaMind/BananaMindOS/tree/main
 - Perfil del bot de discusion del ecosistema: https://huggingface.co/BananaMindBot/models
 - Tabla de clasificacion BananaMindBench, citada en las colecciones del ecosistema: https://huggingface.co/collections (referencia indirecta; no se ha confirmado el identificador directo del leaderboard)

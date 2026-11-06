@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3-tts-12hz-1.7b-swamiji-te-navaratri-only-lr1e-6-9ep | ≈1,92 B | no disponible | te | Apache 2.0 | HuggingFace, 0 descargas |
-| sw-voice/qwen3-tts-12hz-1.7b-telugu-indictts-sft-lr1e-6-2ep (modelo base) | ≈1,7 B (según nombre) | no disponible | te | no disponible en la informacion proporcionada | HuggingFace |
+| qwen3-tts-12hz-1.7b-swamiji-te-navaratri-only-lr1e-6-9ep | ≈1,92 B | no disponible | te | Apache 2.0 | Hugging Face, 0 descargas |
+| sw-voice/qwen3-tts-12hz-1.7b-telugu-indictts-sft-lr1e-6-2ep (modelo base) | ≈1,7 B (según nombre) | no disponible | te | no disponible en la informacion proporcionada | Hugging Face |
 | Qwen3-TTS 12 Hz 1.7 B (familia original) | ≈1,7 B | no disponible | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes; la comparación se limita a parámetros, idioma y licencia.
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes; la comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sw-voice/qwen3-tts-12hz-1.7b-swamiji-te-navaratri-only-lr1e-6-9ep
+- Modelo en Hugging Face: https://huggingface.co/sw-voice/qwen3-tts-12hz-1.7b-swamiji-te-navaratri-only-lr1e-6-9ep
 - Modelo base: https://huggingface.co/sw-voice/qwen3-tts-12hz-1.7b-telugu-indictts-sft-lr1e-6-2ep
 - Corpus de entrenamiento citado en la model card: sw-voice/swamiji-navaratri-telugu-reuse-themes (no se proporciona URL directa en la informacion disponible)
 - Repositorio de código citado: swamiji-tts, ruta `research/exp-iterations/08-qwen3-tts/experiments/03-swamiji-te-two-stage` (no se proporciona URL directa en la informacion disponible)

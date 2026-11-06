@@ -84,14 +84,14 @@ No se dispone de datos cuantitativos de modelos comparables en la información p
 - No se confirma el soporte de tool calling o function calling, aunque podría heredarse de Qwen3-8B; se recomienda verificar antes de usarlo en agentes.
 - Al ser un modelo multimodal, existe riesgo de alucinaciones visuales y de audio, aunque el rendimiento en MMHal-Bench es comparable a Gemini 2.5 Flash.
 - La cuantización AWQ de 4 bits puede introducir una ligera degradación en la calidad de salida frente al modelo en precisión completa, especialmente en tareas de razonamiento complejo.
-- El modelo requiere código personalizado (custom_code) en HuggingFace, lo que implica revisar la implementación antes de usarlo en producción.
+- El modelo requiere código personalizado (custom_code) en Hugging Face, lo que implica revisar la implementación antes de usarlo en producción.
 - La licencia Apache-2.0 permite uso comercial, pero se debe verificar que los componentes base (Qwen3-8B, SigLip2, Whisper, CosyVoice2) no tengan restricciones adicionales.
 - No hay información sobre sesgos específicos del modelo; se recomienda evaluar en el dominio de aplicación antes de desplegarlo.
 
 ## Enlaces
 
-- [HuggingFace - openbmb/MiniCPM-o-4_5-awq](https://huggingface.co/openbmb/MiniCPM-o-4_5-awq)
-- [HuggingFace - openbmb/MiniCPM-o-4_5 (modelo base)](https://huggingface.co/openbmb/MiniCPM-o-4_5)
+- [Hugging Face - openbmb/MiniCPM-o-4_5-awq](https://huggingface.co/openbmb/MiniCPM-o-4_5-awq)
+- [Hugging Face - openbmb/MiniCPM-o-4_5 (modelo base)](https://huggingface.co/openbmb/MiniCPM-o-4_5)
 - [GitHub - OpenBMB/MiniCPM-o](https://github.com/OpenBMB/MiniCPM-o)
 - [GitHub - OpenBMB/MiniCPM-o-Demo](https://github.com/OpenBMB/MiniCPM-o-Demo/)
 - [Demo omni-modal](https://minicpmo45.modelbest.cn/)

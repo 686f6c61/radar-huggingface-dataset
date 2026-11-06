@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`yyanglei/matching-aug-2024` es un repositorio de investigacion publicado en HuggingFace cuyo artefacto principal es una implementacion propia de una arquitectura tipo Blip orientada a tareas de *matching*. Lo firma el usuario `yyanglei` y se distribuye bajo licencia Apache 2.0. El propio autor lo describe como un prototipo experimental: el checkpoint incluido (`model.safetensors`) es una inicializacion valida para *smoke tests*, no un modelo entrenado ni evaluado.
+`yyanglei/matching-aug-2024` es un repositorio de investigacion publicado en Hugging Face cuyo artefacto principal es una implementacion propia de una arquitectura tipo Blip orientada a tareas de *matching*. Lo firma el usuario `yyanglei` y se distribuye bajo licencia Apache 2.0. El propio autor lo describe como un prototipo experimental: el checkpoint incluido (`model.safetensors`) es una inicializacion valida para *smoke tests*, no un modelo entrenado ni evaluado.
 
 La relevancia de esta ficha es mas bien metodologica que de rendimiento: el repositorio sirve como plantilla reproducible (script `model.py`, `config.json`, `training_args.json`) para montar experimentos de emparejamiento multimodal, pero no aporta resultados de benchmarks ni evidencia de entrenamiento completado. La model card indica explicitamente que las configuraciones incluidas son valores de partida y no prueba de una ejecucion terminada.
 
@@ -68,7 +68,7 @@ No se dispone de datos verificados en la informacion proporcionada para establec
 | Modelo | Tipo | Licencia | Checkpoint entrenado | Benchmarks publicados |
 |---|---|---|---|---|
 | yyanglei/matching-aug-2024 | Blip para matching (implementacion propia) | Apache 2.0 | No (inicializacion) | No |
-| Alternativas BLIP de referencia en HuggingFace (por ejemplo, la familia `Salesforce/blip-*`) | Blip / vision-language | no verificada en esta ficha | Si, segun el repositorio correspondiente | Parcialmente, segun el repositorio |
+| Alternativas BLIP de referencia en Hugging Face (por ejemplo, la familia `Salesforce/blip-*`) | Blip / vision-language | no verificada en esta ficha | Si, segun el repositorio correspondiente | Parcialmente, segun el repositorio |
 | Alternativas BLIP-2 con decodificador LLM | Vision-language con conector a LLM | no verificada en esta ficha | Si | Parcialmente |
 
 Los parametros y contextos de las alternativas no se han verificado en la informacion disponible, por lo que no se incluyen cifras que no puedan contrastarse.
@@ -87,5 +87,5 @@ Los parametros y contextos de las alternativas no se han verificado en la inform
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yyanglei/matching-aug-2024
+- Hugging Face: https://huggingface.co/yyanglei/matching-aug-2024
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, a papers asociados, a blogs tecnicos ni a repositorios de codigo relacionados. Los resultados devueltos por la busqueda no guardan relacion con el modelo ni con inteligencia artificial, por lo que se descartan como fuentes.

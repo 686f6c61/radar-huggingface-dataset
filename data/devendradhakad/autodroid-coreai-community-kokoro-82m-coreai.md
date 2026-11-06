@@ -106,7 +106,7 @@ No se dispone de datos en la informacion proporcionada para comparar con alterna
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/devendradhakad/autodroid-coreai-community-Kokoro-82M-CoreAI
+- Modelo en Hugging Face: https://huggingface.co/devendradhakad/autodroid-coreai-community-Kokoro-82M-CoreAI
 - Repositorio canonico (espejo origen): https://huggingface.co/mlboydaisuke/Kokoro-82M-CoreAI
 - Modelo base: https://huggingface.co/hexgrad/Kokoro-82M
 - CoreAI Model Zoo: https://github.com/john-rocky/coreai-model-zoo

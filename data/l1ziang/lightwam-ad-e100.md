@@ -87,7 +87,7 @@ No se han publicado en la información disponible comparativas numéricas frente
 
 | Modelo | Parametros | Tarea | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LightWAM-AD-e100 | 1.656.343.350 cargados; 110.555.459 entrenables | Planificación de conducción y predicción de vídeo futuro | No disponible | No disponible (código MIT, activos Wan Apache-2.0) | Checkpoint `.pt` en HuggingFace, requiere Wan2.1-T2V-1.3B y datos NAVSIM |
+| LightWAM-AD-e100 | 1.656.343.350 cargados; 110.555.459 entrenables | Planificación de conducción y predicción de vídeo futuro | No disponible | No disponible (código MIT, activos Wan Apache-2.0) | Checkpoint `.pt` en Hugging Face, requiere Wan2.1-T2V-1.3B y datos NAVSIM |
 | Wan2.1-T2V-1.3B | 1.300 millones (aproximado, según su denominación) | Generación de vídeo texto-a-vídeo | No disponible en esta información | Apache-2.0 | Pesos y tokenizer publicados por Wan-AI |
 | SimWAM | No disponible | Infraestructura de world model para conducción | No disponible | MIT (según atribución de la model card) | Repositorio en GitHub |
 | Light-WAM / Fast-WAM | No disponible | World models para conducción | No disponible | No disponible | No disponible en esta información |
@@ -109,7 +109,7 @@ No se han publicado en la información disponible comparativas numéricas frente
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/l1ziang/LightWAM-AD-e100
+- Modelo en Hugging Face: https://huggingface.co/l1ziang/LightWAM-AD-e100
 - Código y arquitectura: https://github.com/L1ziang/LightWAM-AD/tree/lightwam-ad
 - Guía de instalación, preparación de cachés y evaluación: https://github.com/L1ziang/LightWAM-AD/blob/lightwam-ad/docs/getting_started.md
 - Registro completo del experimento (epoch 100, H200): https://github.com/L1ziang/LightWAM-AD/blob/lightwam-ad/docs/results/lightwam_ad_e100_h200.md

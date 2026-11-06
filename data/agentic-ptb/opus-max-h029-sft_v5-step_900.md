@@ -82,7 +82,7 @@ No se dispone de información suficiente para comparar con modelos de la misma c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/opus-max.h029.sft_v5.step_900
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/opus-max.h029.sft_v5.step_900
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Referencia al driver (Claude Opus 5): https://www.anthropic.com/research/claude-opus-5
 - Ficha de Claude Opus 5 en Amazon Bedrock: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-opus-5.html

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Cosmos-droid es un conjunto de checkpoints intermedios resultantes de un ajuste fino completo del modelo nvidia/Cosmos3-Nano-Policy-DROID sobre cinco tareas de manipulacion de DROID. Lo publica el usuario Cosmos-Data en HuggingFace y pertenece a la familia Cosmos de NVIDIA, orientada a modelos del mundo y politicas roboticas. El modelo genera de forma conjunta video y acciones, es decir, implementa una politica "WAM" (world-action model) que predice fotogramas futuros y comandos motores en el mismo proceso generativo.
+Cosmos-droid es un conjunto de checkpoints intermedios resultantes de un ajuste fino completo del modelo nvidia/Cosmos3-Nano-Policy-DROID sobre cinco tareas de manipulacion de DROID. Lo publica el usuario Cosmos-Data en Hugging Face y pertenece a la familia Cosmos de NVIDIA, orientada a modelos del mundo y politicas roboticas. El modelo genera de forma conjunta video y acciones, es decir, implementa una politica "WAM" (world-action model) que predice fotogramas futuros y comandos motores en el mismo proceso generativo.
 
 El problema que aborda es el control de robots manipuladores a partir de observaciones visuales y lenguaje: dado un objetivo expresado en texto y las imagenes de tres camaras, produce una secuencia de comandos de articulaciones y garra. Su relevancia es acotada y experimental: se trata de checkpoints intermedios de una ejecucion que aspira a 5000 actualizaciones del optimizador, no han sido evaluados en un robot real y el autor los marca explicitamente como trabajo en curso.
 
@@ -94,6 +94,6 @@ No se dispone de informacion suficiente para comparar con alternativas de la mis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Cosmos-Data/Cosmos-droid
+- Modelo en Hugging Face: https://huggingface.co/Cosmos-Data/Cosmos-droid
 - Modelo base: https://huggingface.co/nvidia/Cosmos3-Nano-Policy-DROID
 - Licencia OpenMDW-1.1: https://openmdw.ai/license/1-1/

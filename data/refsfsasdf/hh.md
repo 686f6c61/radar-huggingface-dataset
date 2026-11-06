@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`refsfsasdf/hh` es un repositorio publicado en HuggingFace por el usuario `refsfsasdf` el 25 de octubre de 2026. La información disponible es prácticamente nula: la model card se limita a una cabecera YAML con `license: apache-2.0` y no contiene ni una sola línea de descripción, arquitectura, datos de entrenamiento o instrucciones de uso. El repositorio acumula 0 descargas y 0 likes, y no tiene pipeline de inferencia declarado.
+`refsfsasdf/hh` es un repositorio publicado en Hugging Face por el usuario `refsfsasdf` el 25 de octubre de 2026. La información disponible es prácticamente nula: la model card se limita a una cabecera YAML con `license: apache-2.0` y no contiene ni una sola línea de descripción, arquitectura, datos de entrenamiento o instrucciones de uso. El repositorio acumula 0 descargas y 0 likes, y no tiene pipeline de inferencia declarado.
 
 No es posible determinar qué tipo de modelo es (lenguaje, visión, audio, embeddings u otro), su tamaño, su arquitectura ni su contexto. Tampoco hay evidencia de que el repositorio contenga pesos: no se ha publicado información sobre ficheros, formatos ni tamaño en disco.
 
@@ -88,6 +88,6 @@ No disponible. Al desconocerse la categoría, el tamaño y la tarea del modelo, 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/refsfsasdf/hh
+- Repositorio en Hugging Face: https://huggingface.co/refsfsasdf/hh
 - Paper, blog, repositorio de código o demo: no disponible.
 - Resultados de búsqueda web: no relevantes (corresponden a Nomad Sculpt, sin relación con el modelo).

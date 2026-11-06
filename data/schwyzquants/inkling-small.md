@@ -70,7 +70,7 @@ Los únicos comparadores nombrados en la información disponible provienen de la
 
 | Modelo | Parametros | Activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Inkling-Small | ~266B (safetensors) / 276B (model card) | 12B | no disponible | Apache 2.0 | Pesos abiertos en HuggingFace (BF16 y NVFP4) |
+| Inkling-Small | ~266B (safetensors) / 276B (model card) | 12B | no disponible | Apache 2.0 | Pesos abiertos en Hugging Face (BF16 y NVFP4) |
 | Qwen3.5 397B-A17B | no disponible | no disponible | no disponible | no disponible | Citado como comparador en la model card |
 | MiMo V2.5 | no disponible | no disponible | no disponible | no disponible | Citado como comparador en la model card |
 | Minimax M2.7 | no disponible | no disponible | no disponible | no disponible | Citado como comparador en la model card |
@@ -91,7 +91,7 @@ Los únicos comparadores nombrados en la información disponible provienen de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/schwyzquants/Inkling-Small
+- Modelo en Hugging Face: https://huggingface.co/schwyzquants/Inkling-Small
 - Pesos BF16 oficiales: https://huggingface.co/thinkingmachines/Inkling-Small
 - Pesos NVFP4 oficiales: https://huggingface.co/thinkingmachines/Inkling-Small-NVFP4
 - Playground de Tinker: https://tinker.thinkingmachines.ai/playground

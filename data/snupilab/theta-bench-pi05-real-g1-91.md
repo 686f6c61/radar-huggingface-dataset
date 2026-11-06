@@ -101,7 +101,7 @@ No se dispone de datos verificables en la información proporcionada para establ
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/snupilab/theta-bench-pi05-real-g1-91
+- Repositorio en Hugging Face: https://huggingface.co/snupilab/theta-bench-pi05-real-g1-91
 - Modelo base: https://huggingface.co/snupilab/theta-bench-pi05-sim-3003
 - Dataset de teleoperación: https://huggingface.co/datasets/snupilab/theta-bench-teleop
 - Datos de entrenamiento fijados (hardware, revisión 47eca9322bb53fa1c685363271a87d2e414cb0e8): https://huggingface.co/datasets/snupilab/theta-bench-teleop/tree/47eca9322bb53fa1c685363271a87d2e414cb0e8/hardware

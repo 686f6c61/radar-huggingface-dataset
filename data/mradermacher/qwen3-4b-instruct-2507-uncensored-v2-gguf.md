@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos. La princi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3-4B-Instruct-2507-uncensored-v2-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3-4B-Instruct-2507-uncensored-v2-GGUF
 - Modelo base (Manitec): https://huggingface.co/Manitec/Qwen3-4B-Instruct-2507-uncensored-v2
 - Modelo original Qwen3-4B-Instruct-2507: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Version con imatrix: https://huggingface.co/mradermacher/Qwen3-4B-Instruct-2507-uncensored-v2-i1-GGUF

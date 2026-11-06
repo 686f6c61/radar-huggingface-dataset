@@ -69,7 +69,7 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Karam98/tae-ltx2
+- Repositorio Hugging Face: https://huggingface.co/Karam98/tae-ltx2
 - Repositorio TAEHV (autor original): https://github.com/madebyollin/taehv
 - Seein (herramienta que lo utiliza): https://github.com/ (enlace no especificado en la informacion)
 - Phosphene (distribuidor del archivo): https://github.com/mrbizarro/phosphene

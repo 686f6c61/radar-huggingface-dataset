@@ -99,7 +99,7 @@ No se ha identificado en la informacion proporcionada ningun adaptador comparabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/polydim-cla/phi-4-mini-3.8b-pmtp
+- Modelo en Hugging Face: https://huggingface.co/polydim-cla/phi-4-mini-3.8b-pmtp
 - Modelo base: https://huggingface.co/microsoft/Phi-4-mini-instruct
 - Repositorio del autor (POLYDIM_EINSOF): https://github.com/AGT1973/POLYDIM_EINSOF
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante al modelo; los resultados devueltos corresponden a hilos de un foro de hardware en italiano y no guardan relacion con el checkpoint.

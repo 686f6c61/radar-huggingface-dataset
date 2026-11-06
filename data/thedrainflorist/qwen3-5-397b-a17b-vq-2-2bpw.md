@@ -85,7 +85,7 @@ El autor indica que frente a spicyneuron 2.6bit, esta build es un 0.43% mejor en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TheDrainFlorist/Qwen3.5-397B-A17B-VQ-2.2bpw
+- Modelo en Hugging Face: https://huggingface.co/TheDrainFlorist/Qwen3.5-397B-A17B-VQ-2.2bpw
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-397B-A17B
 - Blog oficial de Qwen3.5: https://qwen.ai/blog?id=qwen3.5
 - Recetas vLLM para Qwen3.5-397B-A17B: https://recipes.vllm.ai/Qwen/Qwen3.5-397B-A17B

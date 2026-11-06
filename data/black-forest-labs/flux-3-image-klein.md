@@ -2,11 +2,11 @@
 
 ## Resumen
 
-FLUX 3 Image Klein es un modelo de generación y edición de imágenes publicado por Black Forest Labs (BFL) en HuggingFace bajo el identificador `black-forest-labs/flux-3-image-klein`. Según la única fuente secundaria localizada (Runware), se trata del checkpoint destilado del modelo de imágenes FLUX 3 de pesos abiertos de BFL, y cubre tanto la generación texto-a-imagen como la edición basada en imagen de referencia. El pipeline declarado en la ficha de HuggingFace es `image-to-image`, y entre sus etiquetas figuran `image-generation`, `image-editing`, `flux` y `flux-3`.
+FLUX 3 Image Klein es un modelo de generación y edición de imágenes publicado por Black Forest Labs (BFL) en Hugging Face bajo el identificador `black-forest-labs/flux-3-image-klein`. Según la única fuente secundaria localizada (Runware), se trata del checkpoint destilado del modelo de imágenes FLUX 3 de pesos abiertos de BFL, y cubre tanto la generación texto-a-imagen como la edición basada en imagen de referencia. El pipeline declarado en la ficha de Hugging Face es `image-to-image`, y entre sus etiquetas figuran `image-generation`, `image-editing`, `flux` y `flux-3`.
 
 El modelo tiene 5.548.681.984 parámetros reales según los pesos en safetensors, y el repositorio ocupa 43,3 GB, lo que sugiere la presencia de varias variantes de precisión o de varios componentes dentro del mismo repositorio (no confirmado en la información disponible). La librería de referencia es `diffusers` y el formato de pesos es safetensors.
 
-Su relevancia actual radica en dos factores: por un lado, es un modelo de la familia FLUX 3 distribuido con pesos abiertos y en formato compatible con el ecosistema Diffusers, lo que facilita su integración en pipelines existentes; por otro, su naturaleza destilada apunta a un coste de inferencia menor que el del modelo completo del que deriva. El acceso está restringido (gated): es necesario aceptar las condiciones en HuggingFace antes de descargarlo, y la licencia aplicable es la `flux-kommunity-license`.
+Su relevancia actual radica en dos factores: por un lado, es un modelo de la familia FLUX 3 distribuido con pesos abiertos y en formato compatible con el ecosistema Diffusers, lo que facilita su integración en pipelines existentes; por otro, su naturaleza destilada apunta a un coste de inferencia menor que el del modelo completo del que deriva. El acceso está restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de descargarlo, y la licencia aplicable es la `flux-kommunity-license`.
 
 ## Especificaciones técnicas
 
@@ -21,7 +21,7 @@ Su relevancia actual radica en dos factores: por un lado, es un modelo de la fam
 | Licencia | `flux-kommunity-license` |
 | Formato de pesos | safetensors |
 | Librería | diffusers |
-| Pipeline | image-to-image (la ficha de HuggingFace); fuentes secundarias indican también texto-a-imagen y edición por referencia |
+| Pipeline | image-to-image (la ficha de Hugging Face); fuentes secundarias indican también texto-a-imagen y edición por referencia |
 | Acceso | Restringido (gated), requiere aceptar condiciones |
 | Descargas / likes | 3.241 descargas / 99 likes |
 | Fecha de creación | 2026-10-13 |
@@ -29,7 +29,7 @@ Su relevancia actual radica en dos factores: por un lado, es un modelo de la fam
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado en la información disponible ningún detalle sobre la arquitectura interna, el número de tokens de entrenamiento, la composición del dataset ni las técnicas de alineación (RLHF, DPO u otras) empleadas. La ficha de HuggingFace únicamente declara la librería `diffusers`, el pipeline `image-to-image`, el formato safetensors y las etiquetas `image-generation`, `image-editing`, `flux`, `flux-3`, `image-to-image`. La única descripción funcional localizada, procedente del catálogo de Runware, lo define como el «checkpoint destilado del modelo de imágenes FLUX 3 de pesos abiertos de Black Forest Labs, que cubre generación texto-a-imagen y edición basada en referencia».
+No se ha publicado en la información disponible ningún detalle sobre la arquitectura interna, el número de tokens de entrenamiento, la composición del dataset ni las técnicas de alineación (RLHF, DPO u otras) empleadas. La ficha de Hugging Face únicamente declara la librería `diffusers`, el pipeline `image-to-image`, el formato safetensors y las etiquetas `image-generation`, `image-editing`, `flux`, `flux-3`, `image-to-image`. La única descripción funcional localizada, procedente del catálogo de Runware, lo define como el «checkpoint destilado del modelo de imágenes FLUX 3 de pesos abiertos de Black Forest Labs, que cubre generación texto-a-imagen y edición basada en referencia».
 
 El único dato técnico verificable sobre el entrenamiento es indirecto: el término «Klein» y la descripción de «destilado» indican que se trata de una variante comprimida o destilada del modelo FLUX 3 completo, presumiblemente orientada a reducir el coste computacional de inferencia manteniendo parte de las capacidades del modelo original. El recuento exacto de parámetros (5.548.681.984) procede de los safetensors publicados y es, por tanto, un dato fiable. Cualquier afirmación adicional sobre mecanismos de atención, flow matching, rectified flow o esquemas de decodificación especulativa sería especulativa y no se incluye aquí.
 
@@ -37,7 +37,7 @@ El único dato técnico verificable sobre el entrenamiento es indirecto: el tér
 
 - Generación de imágenes a partir de texto (texto-a-imagen), según la descripción de Runware del modelo FLUX 3 Image Klein.
 - Edición de imágenes basada en referencia, es decir, transformación de una imagen de entrada guiada por una instrucción o por una imagen de referencia.
-- Pipeline `image-to-image` declarado oficialmente en la ficha de HuggingFace, lo que implica soporte nativo de entrada de imagen y salida de imagen.
+- Pipeline `image-to-image` declarado oficialmente en la ficha de Hugging Face, lo que implica soporte nativo de entrada de imagen y salida de imagen.
 - Integración con el ecosistema `diffusers`, lo que permite cargar el modelo mediante las clases estándar de la librería.
 - Prompts en inglés, único idioma declarado en la ficha (`en`).
 - No hay información disponible sobre soporte de tool calling, function calling, uso como agente, razonamiento multi-paso, entrada de audio o vídeo, ni sobre modos especiales tipo «thinking».
@@ -54,7 +54,7 @@ El único dato técnico verificable sobre el entrenamiento es indirecto: el tér
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. Ni la ficha de HuggingFace ni los resultados de búsqueda localizados incluyen métricas como FID, CLIP score, GenEval, HPSv2, T2I-CompBench o comparativas numéricas con otros modelos de generación de imágenes. Tampoco se dispone de datos de latencia o throughput medidos.
+No se han publicado resultados de benchmarks en la información disponible. Ni la ficha de Hugging Face ni los resultados de búsqueda localizados incluyen métricas como FID, CLIP score, GenEval, HPSv2, T2I-CompBench o comparativas numéricas con otros modelos de generación de imágenes. Tampoco se dispone de datos de latencia o throughput medidos.
 
 ## Requisitos de hardware
 
@@ -81,7 +81,7 @@ Los datos de los modelos alternativos que figuran a continuación proceden de co
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es `gated`, por lo que es obligatorio aceptar las condiciones en HuggingFace antes de poder descargar los pesos.
+- Acceso restringido: el repositorio es `gated`, por lo que es obligatorio aceptar las condiciones en Hugging Face antes de poder descargar los pesos.
 - Licencia `flux-kommunity-license`: es una licencia propia, no una licencia de código abierto estándar. Antes de usar el modelo en producción comercial es imprescindible revisar sus términos, que pueden incluir restricciones de uso, obligaciones de atribución o límites de facturación.
 - Idiomas soportados: solo inglés según la ficha oficial. Los prompts en castellano u otros idiomas pueden degradar la calidad del resultado, ya que no se declara soporte multilingüe.
 - Ausencia total de datos de benchmarks: no es posible estimar de forma fundamentada la calidad de generación ni compararla con alternativas sin realizar una evaluación propia.
@@ -93,6 +93,6 @@ Los datos de los modelos alternativos que figuran a continuación proceden de co
 
 ## Enlaces
 
-- Ficha oficial en HuggingFace: https://huggingface.co/black-forest-labs/flux-3-image-klein
+- Ficha oficial en Hugging Face: https://huggingface.co/black-forest-labs/flux-3-image-klein
 - Descripción del modelo en Runware: https://runware.ai/models/bfl-flux-3-image-klein
 - El resto de resultados de búsqueda localizados (Back Market, Wikipedia en inglés sobre el color negro, BLACKSTORE y el canal de YouTube de Black M) no guardan relación con el modelo y se omiten por no ser relevantes.

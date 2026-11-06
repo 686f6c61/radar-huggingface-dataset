@@ -106,7 +106,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ayan4m1/kev-merged-9b-gguf
+- Repositorio Hugging Face: https://huggingface.co/ayan4m1/kev-merged-9b-gguf
 - Repositorio GitHub del proyecto Kev: https://github.com/jaredpalmer/kev
 - Releases del proyecto Kev: https://github.com/jaredpalmer/kev/releases
 - Conversion GGUF alternativa de Kev-9B: https://huggingface.co/taigrr/kev-9b-gguf

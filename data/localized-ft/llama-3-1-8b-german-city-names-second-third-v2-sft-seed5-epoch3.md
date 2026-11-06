@@ -76,7 +76,7 @@ La comparativa muestra que el modelo se sitúa en la misma línea que el modelo 
 
 ## Enlaces
 
-- [HuggingFace - localized-ft/Llama-3.1-8B-german-city-names-second-third-v2-sft-seed5-epoch3](https://huggingface.co/localized-ft/Llama-3.1-8B-german-city-names-second-third-v2-sft-seed5-epoch3)
+- [Hugging Face - localized-ft/Llama-3.1-8B-german-city-names-second-third-v2-sft-seed5-epoch3](https://huggingface.co/localized-ft/Llama-3.1-8B-german-city-names-second-third-v2-sft-seed5-epoch3)
 - [Modelo similar - longtermrisk/Llama-3.1-8B-german-city-names-second-third-v2-sft](https://huggingface.co/longtermrisk/Llama-3.1-8B-german-city-names-second-third-v2-sft)
 - [Variante last-third en FriendliAI](https://friendli.ai/models/longtermrisk/Llama-3.1-8B-german-city-names-last-third-v2-sft-seed3-epoch3)
 - [Variante first-third en FriendliAI](https://friendli.ai/models/longtermrisk/Llama-3.1-8B-german-city-names-first-third-v2-sft-seed5-epoch3)

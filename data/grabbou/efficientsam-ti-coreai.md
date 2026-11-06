@@ -20,7 +20,7 @@ Es importante subrayar que se trata de un artefacto de despliegue, no de un mode
 | Idiomas soportados | no disponible (modelo de visión, sin procesamiento de lenguaje) |
 | Licencia | Apache-2.0 |
 | Formato de pesos | bundle Core AI (`metadata.json` + modelo exportado); no se distribuyen safetensors ni GGUF |
-| Tamano del repositorio | 0.0 GB (según HuggingFace); bundle del segmentador de 39 MB |
+| Tamano del repositorio | 0.0 GB (según Hugging Face); bundle del segmentador de 39 MB |
 | Pipeline | mask-generation |
 | Libreria | coreai |
 | Modelo base | yunyangx/EfficientSAM |
@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EfficientSAM-Ti-CoreAI | ~10 M | no aplica | Segmentación por punto/caja | Apache-2.0 | HuggingFace (bundle Core AI) |
-| EfficientSAM (original, yunyangx) | ~10 M (variante Ti) | no aplica | Segmentación por punto/caja | Apache-2.0 | HuggingFace, GitHub |
-| Segment Anything (SAM) | no disponible en la información | no aplica | Segmentación por prompt | Apache-2.0 (según versión) | Meta AI, HuggingFace |
-| MobileSAM | no disponible en la información | no aplica | Segmentación por prompt | no disponible | HuggingFace, GitHub |
+| EfficientSAM-Ti-CoreAI | ~10 M | no aplica | Segmentación por punto/caja | Apache-2.0 | Hugging Face (bundle Core AI) |
+| EfficientSAM (original, yunyangx) | ~10 M (variante Ti) | no aplica | Segmentación por punto/caja | Apache-2.0 | Hugging Face, GitHub |
+| Segment Anything (SAM) | no disponible en la información | no aplica | Segmentación por prompt | Apache-2.0 (según versión) | Meta AI, Hugging Face |
+| MobileSAM | no disponible en la información | no aplica | Segmentación por prompt | no disponible | Hugging Face, GitHub |
 
 La comparación cuantitativa de rendimiento entre estos modelos no está disponible en la información proporcionada.
 
@@ -91,7 +91,7 @@ La comparación cuantitativa de rendimiento entre estos modelos no está disponi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/grabbou/EfficientSAM-Ti-CoreAI
+- Hugging Face: https://huggingface.co/grabbou/EfficientSAM-Ti-CoreAI
 - Modelo base: https://huggingface.co/yunyangx/EfficientSAM
 - Repositorio EfficientSAM: https://github.com/yformer/EfficientSAM
 - Paper EfficientSAM: https://arxiv.org/abs/2312.00863

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/arb-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed455` es un ajuste fino (SFT) del checkpoint `francesca9805/ppt-wc-uniform-newlex-arb-before-100mb-packed-bfdiso_seed455`, publicado por el usuario francesca9805 en HuggingFace. Se trata de un modelo de generacion de texto de 124.770.816 parametros (unos 124,8 millones), etiquetado en el repositorio con la arquitectura `gpt2`, lo que lo situa en la escala de GPT-2 small. El entrenamiento se realizo con la libreria TRL en su version 0.23.0, sobre Transformers 4.56.2 y PyTorch 2.11.0.
+El modelo `francesca9805/arb-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed455` es un ajuste fino (SFT) del checkpoint `francesca9805/ppt-wc-uniform-newlex-arb-before-100mb-packed-bfdiso_seed455`, publicado por el usuario francesca9805 en Hugging Face. Se trata de un modelo de generacion de texto de 124.770.816 parametros (unos 124,8 millones), etiquetado en el repositorio con la arquitectura `gpt2`, lo que lo situa en la escala de GPT-2 small. El entrenamiento se realizo con la libreria TRL en su version 0.23.0, sobre Transformers 4.56.2 y PyTorch 2.11.0.
 
 El nombre del repositorio sugiere un experimento dentro de una linea de trabajo mas amplia sobre tokenizadores y datasets (los segmentos `newlex`, `uniform`, `packed`, `bfdiso` y `seed455` apuntan a configuraciones concretas de vocabulario, empaquetado de secuencias y semilla aleatoria), vinculada a un proyecto de la Universidad de Groningen segun la URL de Weights & Biases asociada. No es, por tanto, un modelo orientado a produccion, sino un checkpoint de investigacion con documentacion minima.
 
@@ -49,7 +49,7 @@ Dada la ausencia de evaluacion publicada, licencia definida y documentacion de d
 
 - Experimentacion academica con tokenizadores: el nombre del repositorio sugiere que forma parte de una comparativa de vocabularios (`newlex`, `uniform`) sobre un corpus empaquetado; serviria para reproducir esa ablacion y medir el efecto del tokenizador en la perplejidad.
 - Generacion de texto de bajo coste en local: con 124,8M de parametros en safetensors, se puede cargar en CPU o en cualquier GPU consumer para prototipos de generacion de texto sin requisitos de infraestructura.
-- Pruebas de integracion de pipelines de HuggingFace: al ser compatible con `transformers`, `text-generation-inference` y `endpoints_compatible`, resulta util como modelo de prueba en el desarrollo de un pipeline de despliegue antes de moverlo a un modelo mayor.
+- Pruebas de integracion de pipelines de Hugging Face: al ser compatible con `transformers`, `text-generation-inference` y `endpoints_compatible`, resulta util como modelo de prueba en el desarrollo de un pipeline de despliegue antes de moverlo a un modelo mayor.
 - Ajuste fino posterior (fine-tuning) como banco de pruebas: su tamano permite iterar rapidamente sobre recetas de SFT con TRL sin consumir cuotas relevantes de GPU.
 - Estudio de degradacion por ajuste fino: comparar este checkpoint con su modelo base permite analizar como un SFT corto afecta a las capacidades del modelo original.
 - Docencia y demostraciones de decodificacion: util para ilustrar muestreo, temperatura y decodificacion por haz en un modelo que cabe en memoria sin cuantizacion.
@@ -78,7 +78,7 @@ La comparativa se establece con modelos de parametraje equivalente de dominio pu
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| francesca9805/arb-100mb-after-wc-...-seed455 | 124,8M | no disponible | no disponible | HuggingFace, 0 descargas |
+| francesca9805/arb-100mb-after-wc-...-seed455 | 124,8M | no disponible | no disponible | Hugging Face, 0 descargas |
 | GPT-2 small | 124M | 1024 tokens | MIT | Muy extendida, referencia de la categoria |
 | distilgpt2 | 82M | 1024 tokens | Apache-2.0 | Muy extendida |
 | SmolLM2-135M | 135M | 8192 tokens | Apache-2.0 | Ampliamente utilizada en experimentacion |
@@ -100,7 +100,7 @@ Frente a estas alternativas, el modelo analizado no aporta datos de rendimiento 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/arb-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/arb-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed455
 - Modelo base: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-arb-before-100mb-packed-bfdiso_seed455
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Registro del entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/i5rqelng

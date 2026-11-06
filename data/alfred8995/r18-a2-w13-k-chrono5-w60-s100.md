@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `alfred8995/r18-a2-w13-k-chrono5-w60-s100` es un checkpoint publicado en HuggingFace por el usuario alfred8995 bajo licencia Apache 2.0 y acceso restringido (gated). Por su identificador y la etiqueta `sn38-nanochrono`, parece tratarse de un experimento de investigación sobre arquitecturas con componente temporal o recurrente (chrono), probablemente una variante de nanoGPT o de un transformer pequeño con mecanismos de memoria o decodificación cronológica. Con 2.018.511.234 parámetros totales (unos 2.000 millones) y un repositorio de 12,6 GB, el checkpoint está almacenado en formato safetensors y no dispone de pipeline declarado en la ficha de HuggingFace.
+El modelo `alfred8995/r18-a2-w13-k-chrono5-w60-s100` es un checkpoint publicado en Hugging Face por el usuario alfred8995 bajo licencia Apache 2.0 y acceso restringido (gated). Por su identificador y la etiqueta `sn38-nanochrono`, parece tratarse de un experimento de investigación sobre arquitecturas con componente temporal o recurrente (chrono), probablemente una variante de nanoGPT o de un transformer pequeño con mecanismos de memoria o decodificación cronológica. Con 2.018.511.234 parámetros totales (unos 2.000 millones) y un repositorio de 12,6 GB, el checkpoint está almacenado en formato safetensors y no dispone de pipeline declarado en la ficha de Hugging Face.
 
 La información pública disponible es muy limitada: no se especifican idiomas soportados, datos de entrenamiento, longitud de contexto ni resultados de benchmarks. El nombre del repositorio incluye una secuencia de hiperparámetros (`r18`, `a2`, `w13`, `k-chrono5`, `w60`, `s100`) que sugiere una configuración experimental concreta (posiblemente radio de atención, ventana, número de capas chrono y semilla), pero no hay documentación que confirme su significado. La fecha de creación indicada (2026-10-29) y la actualización (2026-10-30) sitúan el checkpoint en un contexto temporal muy reciente respecto a la información disponible.
 
@@ -20,7 +20,7 @@ Por tanto, esta ficha describe lo que puede inferirse de los metadatos verificab
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors |
-| Acceso | restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Tamano del repositorio | 12,6 GB |
 | Pipeline declarado | no disponible |
 | Descargas / likes | 4 / 0 |
@@ -85,7 +85,7 @@ La comparación solo es válida a nivel de escala; sin datos de evaluación del 
 - Sin benchmarks publicados: no hay evidencia de calidad en tareas de razonamiento, código, matemáticas o multilingüismo.
 - Riesgo de alucinación desconocido: al no haber evaluación, no puede acotarse.
 - Sesgos desconocidos: no se ha publicado ninguna evaluación de sesgos.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que puede limitar la reproducibilidad y la automatización.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que puede limitar la reproducibilidad y la automatización.
 - Licencia Apache 2.0: permite uso comercial, pero el autor no ofrece garantías ni soporte; conviene revisar si el checkpoint incorpora datos de terceros con restricciones.
 - Nombre críptico con hiperparámetros: dificulta la trazabilidad y la reproducibilidad de experimentos.
 - No hay evidencia de soporte en frameworks de inferencia populares (vLLM, TGI, llama.cpp); habría que verificar la compatibilidad de la arquitectura antes de desplegarlo.
@@ -93,5 +93,5 @@ La comparación solo es válida a nivel de escala; sin datos de evaluación del 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-w13-k-chrono5-w60-s100
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-w13-k-chrono5-w60-s100
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

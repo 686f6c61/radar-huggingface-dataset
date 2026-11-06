@@ -2,7 +2,7 @@
 
 ## Resumen
 
-en-lozi-transformer es un modelo de traducción automática publicado en HuggingFace por el desarrollador zambiano Nchimunya Munyama (cuenta `netagrow`), orientado al par de idiomas inglés-lozi (silozi), una lengua bantú hablada principalmente en Zambia y presente también en Zimbabue, Botsuana y Namibia. El modelo se distribuye con el pipeline `translation` y las etiquetas `nllb`, `machine-translation`, `low-resource-languages`, `african-languages`, `agriculture` y `digital-inclusion`, lo que sitúa su propósito en la traducción de lenguas africanas de bajos recursos y, presumiblemente, en contenidos del ámbito agrícola.
+en-lozi-transformer es un modelo de traducción automática publicado en Hugging Face por el desarrollador zambiano Nchimunya Munyama (cuenta `netagrow`), orientado al par de idiomas inglés-lozi (silozi), una lengua bantú hablada principalmente en Zambia y presente también en Zimbabue, Botsuana y Namibia. El modelo se distribuye con el pipeline `translation` y las etiquetas `nllb`, `machine-translation`, `low-resource-languages`, `african-languages`, `agriculture` y `digital-inclusion`, lo que sitúa su propósito en la traducción de lenguas africanas de bajos recursos y, presumiblemente, en contenidos del ámbito agrícola.
 
 La relevancia del modelo reside en el idioma que cubre: el lozi tiene una presencia digital muy limitada y apenas dispone de sistemas de traducción automática de calidad, por lo que cualquier artefacto abierto para este par lingüístico tiene valor para la inclusión digital, la educación bilingüe y la comunicación institucional en la región. La etiqueta `nllb` sugiere que se trata de un ajuste fino (fine-tuning) sobre la familia NLLB de Meta AI, si bien esta circunstancia no puede confirmarse porque la model card no es accesible.
 
@@ -79,7 +79,7 @@ La comparación con NLLB-200 y M2M-100 se basa en sus model cards públicas y no
 ## Limitaciones y advertencias
 
 - Licencia no declarada: no puede asumirse permiso de uso comercial, modificación ni redistribución; es imprescindible contactar con el autor o revisar las condiciones del acceso restringido.
-- Acceso gated: la descarga requiere aceptar condiciones en HuggingFace, lo que condiciona la reproducibilidad y la integración en pipelines automatizados.
+- Acceso gated: la descarga requiere aceptar condiciones en Hugging Face, lo que condiciona la reproducibilidad y la integración en pipelines automatizados.
 - Ausencia de model card pública: no se pueden verificar datos de entrenamiento, checkpoint base, hiperparámetros ni evaluación, lo que impide auditar sesgos o calidad.
 - Sin validación comunitaria: cero descargas y un único "me gusta" implican que no existen informes independientes de rendimiento.
 - Riesgo de alucinación y omisión en traducción: es probable que aparezcan errores en nombres propios, cifras, unidades y terminología técnica, con riesgo de supresiones o invenciones en frases largas.
@@ -93,7 +93,7 @@ La comparación con NLLB-200 y M2M-100 se basa en sus model cards públicas y no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/netagrow/en-lozi-transformer
+- Modelo en Hugging Face: https://huggingface.co/netagrow/en-lozi-transformer
 - Perfil del autor: https://huggingface.co/netagrow
 - Modelo hermano para bemba: https://huggingface.co/netagrow/en-bemba-transformer
 

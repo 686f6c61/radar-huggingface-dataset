@@ -80,7 +80,7 @@ La comparativa es limitada porque no hay datos de rendimiento del adaptador. El 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kyleliu789/qwen3-14b-reasonflux-high-reasoning-original
+- Repositorio Hugging Face: https://huggingface.co/kyleliu789/qwen3-14b-reasonflux-high-reasoning-original
 - Modelo base Qwen3-14B: https://huggingface.co/Qwen/Qwen3-14B
 - Página de Qwen3-14B en SiliconFlow: https://www.siliconflow.com/models/qwen3-14b
 - Guía de despliegue de Qwen3-14B: https://dev.co/ai/llms/qwen3-14b

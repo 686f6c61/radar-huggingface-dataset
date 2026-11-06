@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TheDrummer/Orion-26B-A4B-v1 es un modelo de lenguaje de gran tamaño desarrollado por TheDrummer, un creador de modelos de IA que publica en HuggingFace. El nombre sugiere que se trata de una arquitectura de mezcla de expertos (MoE) con 26.000 millones de parámetros totales y 4.000 millones de parámetros activos, aunque esta información no está confirmada en la documentación disponible. Este repositorio contiene las cuantizaciones GGUF realizadas por bartowski (Senior Machine Learning Engineer en RedHat), un conocido cuantizador de modelos en la comunidad de código abierto.
+TheDrummer/Orion-26B-A4B-v1 es un modelo de lenguaje de gran tamaño desarrollado por TheDrummer, un creador de modelos de IA que publica en Hugging Face. El nombre sugiere que se trata de una arquitectura de mezcla de expertos (MoE) con 26.000 millones de parámetros totales y 4.000 millones de parámetros activos, aunque esta información no está confirmada en la documentación disponible. Este repositorio contiene las cuantizaciones GGUF realizadas por bartowski (Senior Machine Learning Engineer en RedHat), un conocido cuantizador de modelos en la comunidad de código abierto.
 
 El modelo original es multimodal (pipeline any-to-any), capaz de procesar texto, imagen y audio mediante un archivo de proyección multimodal (mmproj). Las cuantizaciones GGUF permiten ejecutar el modelo en hardware de consumo con herramientas como llama.cpp, Ollama o vLLM. La licencia, los idiomas soportados y la longitud de contexto no se han publicado en la información disponible, lo que limita su uso en entornos comerciales sin verificación previa.
 
@@ -78,7 +78,7 @@ No hay datos de rendimiento del modelo original ni de sus cuantizaciones, por lo
 
 - Modelo GGUF cuantizado: https://huggingface.co/bartowski/TheDrummer_Orion-26B-A4B-v1-GGUF
 - Modelo original: https://huggingface.co/TheDrummer/Orion-26B-A4B-v1
-- Perfil de bartowski en HuggingFace: https://huggingface.co/bartowski
+- Perfil de bartowski en Hugging Face: https://huggingface.co/bartowski
 - Perfil de bartowski en GitHub: https://github.com/bartowski1182
 - Página de TheDrummer en OpenRouter: https://openrouter.ai/thedrummer
 - Índice de modelos de TheDrummer en LLMIndex: https://llmindex.net/models/developer/thedrummer

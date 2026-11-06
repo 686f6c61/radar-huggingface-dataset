@@ -84,7 +84,7 @@ No se dispone de datos de parametros, contexto ni rendimiento comparables en la 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/logo-lab/trl-bench-ckpts
+- Repositorio Hugging Face: https://huggingface.co/logo-lab/trl-bench-ckpts
 - Paper TRL-Bench (NeurIPS 2026): https://arxiv.org/abs/2606.09323
 - Codigo TRL-Bench: https://github.com/LOGO-CUHKSZ/TRL-Bench
 - Codigo upstream de TabSketchFM (IBM): https://github.com/IBM/tabsketchfm

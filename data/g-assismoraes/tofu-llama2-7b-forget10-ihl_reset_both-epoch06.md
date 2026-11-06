@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `tofu-llama2-7b-forget10-ihl_reset_both-epoch06` es un checkpoint de investigación publicado por el usuario g-assismoraes en HuggingFace. Se trata de un ajuste fino completo de Llama 2 de 7B de parámetros, derivado directamente de `locuslab/tofu_ft_llama2-7b`, que a su vez es un fine-tune del modelo base de Meta sobre el conjunto de datos TOFU (Task of Fictitious Unlearning). El objetivo del checkpoint es servir como artefacto de experimentación en técnicas de *machine unlearning*: se busca que el modelo olvide un subconjunto concreto de datos (identificado como `forget10`, es decir, el 10 % de olvido del benchmark TOFU) manteniendo al mismo tiempo el rendimiento sobre el conjunto retenido.
+El modelo `tofu-llama2-7b-forget10-ihl_reset_both-epoch06` es un checkpoint de investigación publicado por el usuario g-assismoraes en Hugging Face. Se trata de un ajuste fino completo de Llama 2 de 7B de parámetros, derivado directamente de `locuslab/tofu_ft_llama2-7b`, que a su vez es un fine-tune del modelo base de Meta sobre el conjunto de datos TOFU (Task of Fictitious Unlearning). El objetivo del checkpoint es servir como artefacto de experimentación en técnicas de *machine unlearning*: se busca que el modelo olvide un subconjunto concreto de datos (identificado como `forget10`, es decir, el 10 % de olvido del benchmark TOFU) manteniendo al mismo tiempo el rendimiento sobre el conjunto retenido.
 
 La particularidad técnica del checkpoint es doble. Por un lado, aplica una estrategia de inicialización denominada "reset both": los embeddings de entrada y la cabeza de lenguaje (LM head) se reinicializan desde `NousResearch/Llama-2-7b-chat-hf`, mientras que el resto de pesos del Transformer se conservan del modelo base ajustado con TOFU. Por otro, emplea una función de pérdida combinada que suma una pérdida de tipo IHL (probablemente *Inverted Hinge Loss* o una variante de pérdida de olvido) sobre el conjunto *forget* y una entropía cruzada estándar con peso 1.0 sobre el conjunto *retain*. Este checkpoint corresponde a la época 6 de un total de 20.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tofu-llama2-7b-forget10-ihl_reset_both-epoch06 | 6.738 M | no disponible | Unlearning TOFU forget10 | llama2 | HuggingFace (0 descargas) |
-| locuslab/tofu_ft_llama2-7b | 6.738 M | 4096 | Fine-tune TOFU de referencia | llama2 | HuggingFace |
-| NousResearch/Llama-2-7b-chat-hf | 6.738 M | 4096 | Chat generalista | llama2 | HuggingFace |
-| meta-llama/Llama-2-7b-hf | 6.738 M | 4096 | Modelo base | llama2 | HuggingFace |
+| tofu-llama2-7b-forget10-ihl_reset_both-epoch06 | 6.738 M | no disponible | Unlearning TOFU forget10 | llama2 | Hugging Face (0 descargas) |
+| locuslab/tofu_ft_llama2-7b | 6.738 M | 4096 | Fine-tune TOFU de referencia | llama2 | Hugging Face |
+| NousResearch/Llama-2-7b-chat-hf | 6.738 M | 4096 | Chat generalista | llama2 | Hugging Face |
+| meta-llama/Llama-2-7b-hf | 6.738 M | 4096 | Modelo base | llama2 | Hugging Face |
 
 La comparación con otros métodos de *unlearning* sobre TOFU (por ejemplo, variantes con gradient ascent, KL regularization o task arithmetic) no está disponible en la información proporcionada.
 
@@ -85,7 +85,7 @@ La comparación con otros métodos de *unlearning* sobre TOFU (por ejemplo, vari
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/g-assismoraes/tofu-llama2-7b-forget10-ihl_reset_both-epoch06
+- Hugging Face: https://huggingface.co/g-assismoraes/tofu-llama2-7b-forget10-ihl_reset_both-epoch06
 - Modelo base TOFU: https://huggingface.co/locuslab/tofu_ft_llama2-7b
 - Modelo de inicialización de embeddings y LM head: https://huggingface.co/NousResearch/Llama-2-7b-chat-hf
 - Modelo base original: https://huggingface.co/meta-llama/Llama-2-7b-hf

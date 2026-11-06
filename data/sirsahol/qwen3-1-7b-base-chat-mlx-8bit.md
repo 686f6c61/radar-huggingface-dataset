@@ -97,7 +97,7 @@ Comparativa de cuantizaciones publicada por el autor:
 | SirSahOl/Qwen3-1.7B-Base-chat-mlx-8bit (este) | 1,72B | 32.768 (131.072 con YaRN) | Apache 2.0 | safetensors MLX 8 bits | Apple Silicon; 15 descargas, 0 likes |
 | SirSahOl/Qwen3-1.7B-Base-chat-mlx-4bit | No disponible en la información (mismo modelo base) | No disponible en la información | Apache 2.0 | MLX 4 bits | Apple Silicon; enlace publicado por el autor |
 | SirSahOl/Qwen3-1.7B-Base-chat-mlx-16bit | No disponible en la información (mismo modelo base) | No disponible en la información | Apache 2.0 | MLX 16 bits | Apple Silicon; enlace publicado por el autor |
-| Qwen/Qwen3-1.7B-Base | 1,72B | 32.768 | Apache 2.0 | safetensors (bf16), portable a GGUF, vLLM, TGI | Amplia distribución en HuggingFace |
+| Qwen/Qwen3-1.7B-Base | 1,72B | 32.768 | Apache 2.0 | safetensors (bf16), portable a GGUF, vLLM, TGI | Amplia distribución en Hugging Face |
 
 Como alternativas de tamaño similar en el ecosistema abierto se suelen considerar modelos de la clase 1B-2B (por ejemplo, de las familias Llama, Gemma o SmolLM), pero no se dispone de datos verificados de sus fichas en la información proporcionada, por lo que no se incluyen cifras comparativas de parámetros, contexto ni rendimiento. Tampoco hay resultados de benchmarks que permitan comparar la calidad de este modelo con la de sus alternativas.
 
@@ -116,7 +116,7 @@ Como alternativas de tamaño similar en el ecosistema abierto se suelen consider
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SirSahOl/Qwen3-1.7B-Base-chat-mlx-8bit
+- Repositorio en Hugging Face: https://huggingface.co/SirSahOl/Qwen3-1.7B-Base-chat-mlx-8bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B-Base
 - Variante de 4 bits: https://huggingface.co/SirSahOl/Qwen3-1.7B-Base-chat-mlx-4bit
 - Variante de 16 bits: https://huggingface.co/SirSahOl/Qwen3-1.7B-Base-chat-mlx-16bit

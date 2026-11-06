@@ -70,8 +70,8 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K, etc.
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SCPO Reward Model — New Zealand | 184,4 M | 512 | Reward model cultural (Nueva Zelanda) | MIT | HuggingFace |
-| OpenAssistant/reward-model-deberta-v3-base | 184,4 M (misma base) | 512 | Reward model global agregado | MIT | HuggingFace |
+| SCPO Reward Model — New Zealand | 184,4 M | 512 | Reward model cultural (Nueva Zelanda) | MIT | Hugging Face |
+| OpenAssistant/reward-model-deberta-v3-base | 184,4 M (misma base) | 512 | Reward model global agregado | MIT | Hugging Face |
 | Otros checkpoints SCPO por pais del mismo proyecto | no disponible | 512 (presumible, misma base) | Reward model cultural | MIT | no disponible en la informacion |
 
 El comparador mas directo es el modelo base del que deriva: comparten arquitectura, tamano y contexto, pero difieren en el ajuste cultural (el SCPO esta especializado en Nueva Zelanda y parte del global). No se dispone de datos sobre otros reward models comparables de la misma categoria en la informacion proporcionada.
@@ -90,7 +90,7 @@ El comparador mas directo es el modelo base del que deriva: comparten arquitectu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MulticulturalAlignment/scpo-reward-model-new-zealand
+- Hugging Face: https://huggingface.co/MulticulturalAlignment/scpo-reward-model-new-zealand
 - Modelo base: https://huggingface.co/OpenAssistant/reward-model-deberta-v3-base
 - Paper: https://arxiv.org/abs/2606.18606
 - PDF del paper: https://arxiv.org/pdf/2606.18606v1

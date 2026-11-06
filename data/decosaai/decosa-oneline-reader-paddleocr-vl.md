@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 - VRAM estimada para inferencia: en bf16, los pesos ocupan aproximadamente 1,8 GB; con el codificador visual, la caché y las activaciones de una imagen de ~1 MP, cabe holgadamente por debajo de 6 GB.
 - GPU recomendadas: cualquier GPU con 6-8 GB o más. El modelo es perfectamente ejecutable en RTX 3060 12 GB, RTX 4060 Ti, RTX 4070, RTX 4080 y RTX 4090; en el extremo profesional, A100, H100 y H200 sin problema. El entrenamiento declarado se hizo en una H200 en 58 minutos.
 - Cabe en GPU de consumo: sí, en prácticamente cualquier GPU moderna con al menos 6 GB de VRAM, incluidas portátiles de gama media-alta.
-- Opciones de despliegue: transformers es la vía confirmada por el autor (`AutoModelForImageTextToText` y `AutoProcessor`, con `transformers>=5.17`). El repositorio incluye `usage.py` como script de ejemplo. No se confirman en la información disponible integraciones con vLLM, TGI, llama.cpp, Ollama u otros servidores de inferencia; la etiqueta `endpoints_compatible` sugiere compatibilidad con los endpoints de HuggingFace, pero no se detalla.
+- Opciones de despliegue: transformers es la vía confirmada por el autor (`AutoModelForImageTextToText` y `AutoProcessor`, con `transformers>=5.17`). El repositorio incluye `usage.py` como script de ejemplo. No se confirman en la información disponible integraciones con vLLM, TGI, llama.cpp, Ollama u otros servidores de inferencia; la etiqueta `endpoints_compatible` sugiere compatibilidad con los endpoints de Hugging Face, pero no se detalla.
 - Latencia y throughput estimados: ~1,2 s por dibujo en bf16 con lote 6 en una GPU de estación de trabajo; 2-3 s en dibujos limpios grandes. El autor recomienda pasar `use_cache=True` a `generate()` para aprovechar la caché de clave-valor.
 - Nota de integración: las imágenes pequeñas se amplían a ~1 MP antes de la inferencia (ver `usage.py`), lo que conviene replicar para obtener los resultados publicados.
 
@@ -81,8 +81,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Rendimiento en escaneos deficientes (60 dibujos) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| decosa-oneline-reader-paddleocr-vl | 905,6 M | no disponible | 59/60 | Apache-2.0 | HuggingFace (pesos safetensors) |
-| PaddleOCR-VL-1.6 (modelo base) | no disponible en la información proporcionada | no disponible | 0 de 12 probados (sin JSON usable) | Apache-2.0 | HuggingFace |
+| decosa-oneline-reader-paddleocr-vl | 905,6 M | no disponible | 59/60 | Apache-2.0 | Hugging Face (pesos safetensors) |
+| PaddleOCR-VL-1.6 (modelo base) | no disponible en la información proporcionada | no disponible | 0 de 12 probados (sin JSON usable) | Apache-2.0 | Hugging Face |
 | Qwen3.8-27B (visión) | 27 B (según la model card) | no disponible | 25/60 | no disponible en la información proporcionada | no disponible en la información proporcionada |
 
 El modelo base PaddleOCR-VL-1.6 es un OCR/parser de documentos de propósito general, mientras que este ajuste es un extractor de un único tipo de documento; la comparación de rendimiento solo es válida para esa tarea concreta. No se dispone de otros modelos especializados en diagramas unifilares con los que comparar.
@@ -102,7 +102,7 @@ El modelo base PaddleOCR-VL-1.6 es un OCR/parser de documentos de propósito gen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/decosaai/decosa-oneline-reader-paddleocr-vl
+- Modelo en Hugging Face: https://huggingface.co/decosaai/decosa-oneline-reader-paddleocr-vl
 - Modelo base: https://huggingface.co/PaddlePaddle/PaddleOCR-VL-1.6
 - Script de ejemplo y resultados de evaluación: `usage.py` y `eval_summary.json` en el repositorio del modelo
 - Organización del autor: https://huggingface.co/decosaai

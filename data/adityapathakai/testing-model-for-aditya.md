@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `adityapathakai/testing-model-for-aditya` es un repositorio alojado en HuggingFace por el usuario `adityapathakai`. Por su identificador y por la ausencia de metadatos tecnicos, la unica etiqueta asociada es `region:us`, lo que sugiere que se trata de un artefacto de prueba o de un repositorio de caracter experimental sin documentacion publica asociada. No se ha publicado informacion sobre arquitectura, tamano, contexto ni datos de entrenamiento.
+El modelo `adityapathakai/testing-model-for-aditya` es un repositorio alojado en Hugging Face por el usuario `adityapathakai`. Por su identificador y por la ausencia de metadatos tecnicos, la unica etiqueta asociada es `region:us`, lo que sugiere que se trata de un artefacto de prueba o de un repositorio de caracter experimental sin documentacion publica asociada. No se ha publicado informacion sobre arquitectura, tamano, contexto ni datos de entrenamiento.
 
 En el momento de redactar esta ficha, el repositorio no cuenta con descargas (0) y solo 1 like, lo que refuerza la hipotesis de que es un modelo de test creado para validar flujos de trabajo en la plataforma (subida de pesos, configuracion de tarjetas, etc.) y no un modelo destinado a uso en produccion o investigacion.
 
@@ -25,7 +25,7 @@ Dado que no existe informacion tecnica verificable, esta ficha se limita a docum
 
 No se ha publicado informacion sobre la arquitectura del modelo (transformer, MoE, SSM, hibrida, etc.), el volumen de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de alineacion como RLHF o DPO. El repositorio no incluye model card con detalles tecnicos.
 
-La unica etiqueta presente (`region:us`) es una etiqueta de region geografica de HuggingFace y no aporta informacion sobre el diseno del modelo. No hay evidencia de innovaciones tecnicas destacables (atencion lineal, decodificacion especulativa, thinking mode, etc.) en la informacion proporcionada.
+La unica etiqueta presente (`region:us`) es una etiqueta de region geografica de Hugging Face y no aporta informacion sobre el diseno del modelo. No hay evidencia de innovaciones tecnicas destacables (atencion lineal, decodificacion especulativa, thinking mode, etc.) en la informacion proporcionada.
 
 ## Capacidades
 
@@ -38,7 +38,7 @@ La unica etiqueta presente (`region:us`) es una etiqueta de region geografica de
 ## Casos de uso
 
 - No es posible recomendar casos de uso concretos sin informacion tecnica verificable sobre arquitectura, tamano y entrenamiento.
-- Un uso plausible, dado el identificador del repositorio, es servir como banco de pruebas para validar pipelines de subida y despliegue en HuggingFace (por ejemplo, comprobar la integracion con `transformers`, `huggingface_hub` o la carga de la model card).
+- Un uso plausible, dado el identificador del repositorio, es servir como banco de pruebas para validar pipelines de subida y despliegue en Hugging Face (por ejemplo, comprobar la integracion con `transformers`, `huggingface_hub` o la carga de la model card).
 - Cualquier aplicacion en produccion (atencion al cliente, generacion de codigo, analisis documental, etc.) queda descartada hasta que el autor publique especificaciones y benchmarks.
 - No se recomienda su integracion en pipelines de CI/CD ni en sistemas de agentes sin una evaluacion previa del contenido real del repositorio.
 - No se recomienda su uso en entornos con requisitos de licencia comercial, dado que la licencia no esta declarada.
@@ -72,5 +72,5 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/adityapathakai/testing-model-for-aditya
+- Hugging Face: https://huggingface.co/adityapathakai/testing-model-for-aditya
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion proporcionada.

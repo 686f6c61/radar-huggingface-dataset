@@ -6,7 +6,7 @@
 
 El adaptador esta pensado para personalizacion estilistica o de identidad: el autor demuestra su uso en prompts de tematica muy dispar (una escena ciberpunk en un callejon de Tokio, un buho de relojeria en una biblioteca victoriana y una ciudad de marmol flotante), lo que sugiere que el concepto aprendido se compone con descripciones de escena arbitrarias en lugar de estar atado a un unico encuadre. La model card incluye tres imagenes de muestra generadas con Krea 2 Turbo a 8 pasos y `guidance_scale=0.0`.
 
-La relevancia de esta ficha es limitada en terminos de impacto: con 9 descargas y 0 likes en el momento de la consulta, es un artefacto de publicacion reciente (creado y actualizado el 31 de octubre de 2026) y de nicho. Resulta util, sin embargo, como ejemplo practico del flujo de trabajo LoRA sobre la familia Krea 2 con la libreria `diffusers`, y como referencia de las convenciones de empaquetado (tags `template:sd-lora`, `base_model:adapter`) que HuggingFace emplea para adaptadores de difusion.
+La relevancia de esta ficha es limitada en terminos de impacto: con 9 descargas y 0 likes en el momento de la consulta, es un artefacto de publicacion reciente (creado y actualizado el 31 de octubre de 2026) y de nicho. Resulta util, sin embargo, como ejemplo practico del flujo de trabajo LoRA sobre la familia Krea 2 con la libreria `diffusers`, y como referencia de las convenciones de empaquetado (tags `template:sd-lora`, `base_model:adapter`) que Hugging Face emplea para adaptadores de difusion.
 
 ## Especificaciones tecnicas
 
@@ -74,7 +74,7 @@ No disponible. La informacion proporcionada no incluye datos de otros adaptadore
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nanami231/ticonuong-26
+- Modelo en Hugging Face: https://huggingface.co/Nanami231/ticonuong-26
 - Modelo base RAW: https://huggingface.co/krea/Krea-2-Raw
 - Modelo base Turbo: https://huggingface.co/krea/Krea-2-Turbo
 - Documentacion de `diffusers`: https://huggingface.co/docs/diffusers

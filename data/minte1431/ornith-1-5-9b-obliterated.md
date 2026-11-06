@@ -124,7 +124,7 @@ Comparado con el modelo original, esta variante gana 82 puntos porcentuales de t
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/minte1431/Ornith-1.5-9B-OBLITERATED
+- Modelo en Hugging Face: https://huggingface.co/minte1431/Ornith-1.5-9B-OBLITERATED
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-9B
 - Organizacion OBLITERATUS: https://huggingface.co/OBLITERATUS
 - Pagina del autor de la model card (Pliny the Prompter): https://pliny.gg

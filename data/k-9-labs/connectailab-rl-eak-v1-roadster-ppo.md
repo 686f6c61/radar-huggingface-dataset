@@ -97,7 +97,7 @@ No se dispone de modelos comparables entrenados exactamente sobre el mismo entor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/K-9-labs/connectailab-rl-eak-v1-roadster-ppo
+- Hugging Face: https://huggingface.co/K-9-labs/connectailab-rl-eak-v1-roadster-ppo
 - Repositorio del simulador (`로드스터_시뮬레이터.py`): no disponible como enlace público en la información proporcionada
 - Paper o blog de CONNECT AI LAB: no disponible
 - Demo interactiva: no disponible

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`historicalundertakers/vision-tour-latva-mobilenetv2` es un modelo publicado en HuggingFace por el usuario `historicalundertakers` bajo licencia Apache 2.0. Por el identificador se deduce que se trata de un modelo de visión por computador basado en la arquitectura MobileNetV2, presumiblemente entrenado o ajustado para alguna tarea relacionada con un "tour" (posiblemente clasificación de imágenes, reconocimiento de escenas o contenido turístico). No obstante, esta inferencia procede únicamente del nombre del repositorio y no está confirmada por la model card.
+`historicalundertakers/vision-tour-latva-mobilenetv2` es un modelo publicado en Hugging Face por el usuario `historicalundertakers` bajo licencia Apache 2.0. Por el identificador se deduce que se trata de un modelo de visión por computador basado en la arquitectura MobileNetV2, presumiblemente entrenado o ajustado para alguna tarea relacionada con un "tour" (posiblemente clasificación de imágenes, reconocimiento de escenas o contenido turístico). No obstante, esta inferencia procede únicamente del nombre del repositorio y no está confirmada por la model card.
 
 La información disponible es extremadamente limitada: la model card únicamente contiene la declaración de licencia (`apache-2.0`), sin descripción, sin datos de entrenamiento, sin métricas y sin instrucciones de uso. El repositorio no registra descargas ni "likes", y no tiene pipeline declarado, lo que sugiere que es un artefacto de carácter experimental o personal, no un modelo destinado a producción.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| historicalundertakers/vision-tour-latva-mobilenetv2 | no disponible | no aplica | no disponible | Apache 2.0 | HuggingFace |
+| historicalundertakers/vision-tour-latva-mobilenetv2 | no disponible | no aplica | no disponible | Apache 2.0 | Hugging Face |
 | MobileNetV2 (referencia original, Google) | ~3,4 M | no aplica | ImageNet top-1 ~72 % (referencia estándar) | Apache 2.0 | TensorFlow/Keras, TF Hub |
 | MobileNetV3 (Google) | ~5,4 M (Large) | no aplica | Superior a V2 en ImageNet | Apache 2.0 | TensorFlow/Keras |
 | EfficientNet-B0 (Google) | ~5,3 M | no aplica | ImageNet top-1 ~77 % | Apache 2.0 | TensorFlow/Keras |
@@ -81,5 +81,5 @@ La comparación se limita a la arquitectura inferida; no hay datos que permitan 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/historicalundertakers/vision-tour-latva-mobilenetv2
+- Hugging Face: https://huggingface.co/historicalundertakers/vision-tour-latva-mobilenetv2
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

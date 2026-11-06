@@ -6,7 +6,7 @@ wav2vec2-group6-ckpt8920 es un modelo de reconocimiento automático del habla (A
 
 Con 94,4 millones de parámetros y un tamaño de repositorio de 0,4 GB, se trata de un modelo compacto pensado para inferencia ligera. Su relevancia es acotada: no aporta innovaciones arquitectónicas frente al modelo base, sino un punto de control ajustado con una WER de validación del 3,62 % en dev-clean, lo que lo sitúa como una alternativa práctica para transcripción en inglés con requisitos de hardware modestos.
 
-El modelo se distribuye en formato safetensors y es compatible con la librería transformers y con endpoints de HuggingFace. No se dispone de información sobre la licencia, lo que limita su uso comercial sin aclaración previa por parte del autor.
+El modelo se distribuye en formato safetensors y es compatible con la librería transformers y con endpoints de Hugging Face. No se dispone de información sobre la licencia, lo que limita su uso comercial sin aclaración previa por parte del autor.
 
 ## Especificaciones tecnicas
 
@@ -65,16 +65,16 @@ No se han publicado resultados de benchmarks adicionales (test-clean, test-other
 - VRAM estimada en fp16: alrededor de 0,2 GB de pesos, aunque no se documenta soporte explícito de cuantización.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM (GTX 1650, RTX 3050, RTX 4090, A100, H100); el modelo es lo bastante pequeño para ejecutarse también en CPU.
 - Cabe en GPU de consumo: sí, en modelos como RTX 3060, RTX 4060 o superiores, y previsiblemente en iGPU con suficiente memoria compartida.
-- Opciones de despliegue: transformers (Wav2Vec2ForCTC), endpoints de HuggingFace (tag endpoints_compatible); no se confirma compatibilidad con vLLM, llama.cpp, Ollama o TGI en la información disponible.
+- Opciones de despliegue: transformers (Wav2Vec2ForCTC), endpoints de Hugging Face (tag endpoints_compatible); no se confirma compatibilidad con vLLM, llama.cpp, Ollama o TGI en la información disponible.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto / entrada | WER dev-clean | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| thejasgr/wav2vec2-group6-ckpt8920 | 94,4 M | audio, ventana no confirmada | 3,62 % | no disponible | HuggingFace |
-| facebook/wav2vec2-base-960h | ~94,4 M | audio, ventana no confirmada | no disponible en la información | no disponible | HuggingFace |
-| whisper-small (referencia cualitativa) | no disponible | audio de 30 s | no disponible en la información | no disponible | HuggingFace |
+| thejasgr/wav2vec2-group6-ckpt8920 | 94,4 M | audio, ventana no confirmada | 3,62 % | no disponible | Hugging Face |
+| facebook/wav2vec2-base-960h | ~94,4 M | audio, ventana no confirmada | no disponible en la información | no disponible | Hugging Face |
+| whisper-small (referencia cualitativa) | no disponible | audio de 30 s | no disponible en la información | no disponible | Hugging Face |
 
 No se dispone de datos de benchmarks de los modelos alternativos en la información proporcionada, por lo que la comparación cuantitativa no es posible más allá del punto de control base.
 
@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks de los modelos alternativos en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thejasgr/wav2vec2-group6-ckpt8920
+- Modelo en Hugging Face: https://huggingface.co/thejasgr/wav2vec2-group6-ckpt8920
 - Modelo base: https://huggingface.co/facebook/wav2vec2-base-960h
 - Repositorio de la demo "Speak & Transcribe": https://github.com/GR-Thejas/asr-aiet9-iith
 - Dataset LibriSpeech: https://www.opensource.org/licenses/LibriSpeech (referencia del corpus citado en la model card)

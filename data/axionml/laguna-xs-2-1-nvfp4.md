@@ -18,7 +18,7 @@ El interes actual del checkpoint es doble: por un lado, democratiza el despliegu
 | Longitud de contexto | 262.144 tokens |
 | Tipos de cuantizacion | NVFP4 (compressed-tensors `nvfp4-pack-quantized`, group size 16, escalas por bloque FP8 E4M3) en los MLP de expertos enrutados y compartidos; cache KV en FP8 (estatica por tensor). El modelo base poolside/Laguna-XS-2.1 se distribuye en BF16 |
 | Idiomas soportados | no disponible (la model card no publica lista de idiomas; existe evaluacion SWE-bench Multilingual, que no implica una lista cerrada) |
-| Licencia | OpenMDW-1.1 (etiquetada como `other` en HuggingFace), sujeta a la Acceptable Use Policy de Poolside |
+| Licencia | OpenMDW-1.1 (etiquetada como `other` en Hugging Face), sujeta a la Acceptable Use Policy de Poolside |
 | Formato de pesos | safetensors con `compressed-tensors` (`nvfp4-pack-quantized`) |
 | Tamano del checkpoint | ~22 GB (21,6 GB de repositorio) |
 | Libreria | transformers (con `custom_code`) y `trust_remote_code` |
@@ -81,9 +81,9 @@ No se han publicado en la informacion disponible resultados de MMLU, HumanEval o
 
 | Modelo | Parametros totales / activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| AxionML/Laguna-XS-2.1-NVFP4 (este repositorio) | 33B / 3B | 262.144 tokens | OpenMDW-1.1 | Pesos abiertos en HuggingFace, cuantizacion NVFP4 |
-| poolside/Laguna-XS-2.1 (base, BF16) | 33B / 3B | 262.144 tokens | OpenMDW-1.1 | Pesos abiertos en HuggingFace |
-| poolside/Laguna-XS-2.1-NVFP4 (original de la cuantizacion) | 33B / 3B | 262.144 tokens | OpenMDW-1.1 | Pesos abiertos en HuggingFace |
+| AxionML/Laguna-XS-2.1-NVFP4 (este repositorio) | 33B / 3B | 262.144 tokens | OpenMDW-1.1 | Pesos abiertos en Hugging Face, cuantizacion NVFP4 |
+| poolside/Laguna-XS-2.1 (base, BF16) | 33B / 3B | 262.144 tokens | OpenMDW-1.1 | Pesos abiertos en Hugging Face |
+| poolside/Laguna-XS-2.1-NVFP4 (original de la cuantizacion) | 33B / 3B | 262.144 tokens | OpenMDW-1.1 | Pesos abiertos en Hugging Face |
 | Laguna XS.2 (version anterior) | 33B / 3B (segun la descripcion de la familia) | no disponible | no disponible | Pesos abiertos; superado por XS 2.1 en +5,4 % en SWE-bench Multilingual |
 | Laguna M.1 | 225B / 23B | no disponible | no disponible | Pesos abiertos; modelo de mayor escala de la misma familia |
 
@@ -103,7 +103,7 @@ La comparacion con alternativas de otros fabricantes (por ejemplo modelos de cod
 
 ## Enlaces
 
-- Repositorio en HuggingFace (este checkpoint): https://huggingface.co/AxionML/Laguna-XS-2.1-NVFP4
+- Repositorio en Hugging Face (este checkpoint): https://huggingface.co/AxionML/Laguna-XS-2.1-NVFP4
 - Modelo base: https://huggingface.co/poolside/Laguna-XS-2.1
 - Checkpoint NVFP4 original de Poolside: https://huggingface.co/poolside/Laguna-XS-2.1-NVFP4
 - Anuncio de Laguna XS 2.1: https://poolside.ai/blog/introducing-laguna-xs-2-1

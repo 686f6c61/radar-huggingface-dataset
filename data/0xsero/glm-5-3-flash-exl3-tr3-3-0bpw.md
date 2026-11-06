@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo entre estas cuantizaciones. La
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/0xSero/GLM-5.3-Flash-EXL3-TR3-3.0bpw
+- Repositorio Hugging Face: https://huggingface.co/0xSero/GLM-5.3-Flash-EXL3-TR3-3.0bpw
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash-BF16
 - Cuantizacion similar a 4bpw: https://huggingface.co/Mia-AiLab/GLM-5.3-Flash-EXL3-TR3-4bpw
 - Guia de ejecucion local (unsloth): https://unsloth.ai/docs/models/glm-5.3-flash

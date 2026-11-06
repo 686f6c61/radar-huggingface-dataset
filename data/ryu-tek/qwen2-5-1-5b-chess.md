@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Ryu-tek/qwen2.5-1.5b-chess es un modelo de generacion de texto publicado en HuggingFace por el usuario Ryu-tek, construido sobre la familia Qwen2.5 segun los tags del repositorio (qwen2, transformers, safetensors). El repositorio contiene 1.543.714.304 parametros reales medidos en los ficheros safetensors (aproximadamente 1,54 mil millones) y ocupa 3,1 GB. El nombre del modelo sugiere un ajuste fino orientado al ajedrez, pero la model card no confirma ni la tarea, ni el dataset, ni el procedimiento de entrenamiento.
+Ryu-tek/qwen2.5-1.5b-chess es un modelo de generacion de texto publicado en Hugging Face por el usuario Ryu-tek, construido sobre la familia Qwen2.5 segun los tags del repositorio (qwen2, transformers, safetensors). El repositorio contiene 1.543.714.304 parametros reales medidos en los ficheros safetensors (aproximadamente 1,54 mil millones) y ocupa 3,1 GB. El nombre del modelo sugiere un ajuste fino orientado al ajedrez, pero la model card no confirma ni la tarea, ni el dataset, ni el procedimiento de entrenamiento.
 
-La model card es la plantilla automatica de HuggingFace: practicamente todos los campos estan marcados como "[More Information Needed]". No se declara licencia, idiomas soportados, contexto, datos de entrenamiento, hiperparametros, resultados de evaluacion ni uso previsto. Las unicas senales tecnicas fiables son el tag de arquitectura (qwen2), el pipeline (text-generation), el contador de parametros y el hecho de que los pesos estan en formato safetensors y son compatibles con transformers y text-generation-inference.
+La model card es la plantilla automatica de Hugging Face: practicamente todos los campos estan marcados como "[More Information Needed]". No se declara licencia, idiomas soportados, contexto, datos de entrenamiento, hiperparametros, resultados de evaluacion ni uso previsto. Las unicas senales tecnicas fiables son el tag de arquitectura (qwen2), el pipeline (text-generation), el contador de parametros y el hecho de que los pesos estan en formato safetensors y son compatibles con transformers y text-generation-inference.
 
 Su relevancia actual es limitada y de tipo exploratorio: se trata de un modelo con cero descargas y cero "likes" en el momento de la consulta, sin validacion de la comunidad y sin documentacion tecnica. Resulta util como caso de estudio de fine-tunes pequenos publicados con la plantilla por defecto, y como candidato a evaluacion propia si el interes es el ajedrez, pero no es un artefacto listo para produccion sin una auditoria previa.
 
@@ -72,9 +72,9 @@ La comparativa se establece contra el modelo base de la misma familia, con la ad
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Ryu-tek/qwen2.5-1.5b-chess | 1,54 mil millones | No disponible | No disponible | HuggingFace, safetensors, 0 descargas | Model card automatica sin informacion tecnica; especializacion en ajedrez sin confirmar |
-| Qwen2.5-1.5B (base) | 1,54 mil millones | 32 768 tokens, ampliable con YaRN | Apache 2.0 (segun la informacion publica de Qwen) | HuggingFace, safetensors | Modelo base oficial, multilingue, con documentacion y evaluaciones publicadas |
-| Qwen2.5-1.5B-Instruct | 1,54 mil millones | 32 768 tokens, ampliable con YaRN | Apache 2.0 (segun la informacion publica de Qwen) | HuggingFace, safetensors | Version alineada para chat; alternativa directa si se busca un asistente generalista |
+| Ryu-tek/qwen2.5-1.5b-chess | 1,54 mil millones | No disponible | No disponible | Hugging Face, safetensors, 0 descargas | Model card automatica sin informacion tecnica; especializacion en ajedrez sin confirmar |
+| Qwen2.5-1.5B (base) | 1,54 mil millones | 32 768 tokens, ampliable con YaRN | Apache 2.0 (segun la informacion publica de Qwen) | Hugging Face, safetensors | Modelo base oficial, multilingue, con documentacion y evaluaciones publicadas |
+| Qwen2.5-1.5B-Instruct | 1,54 mil millones | 32 768 tokens, ampliable con YaRN | Apache 2.0 (segun la informacion publica de Qwen) | Hugging Face, safetensors | Version alineada para chat; alternativa directa si se busca un asistente generalista |
 
 No se dispone de datos verificados en la informacion proporcionada para comparar con modelos de otros fabricantes del mismo rango (por ejemplo, variantes de 1 a 2 mil millones de parametros de otras familias), por lo que esa comparacion se deja como no disponible.
 
@@ -94,7 +94,7 @@ No se dispone de datos verificados en la informacion proporcionada para comparar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ryu-tek/qwen2.5-1.5b-chess
+- Modelo en Hugging Face: https://huggingface.co/Ryu-tek/qwen2.5-1.5b-chess
 - Paper citado en la model card (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico mencionada en la model card: https://mlco2.github.io/impact
 - Modelo base de referencia (Qwen2.5-1.5B): https://huggingface.co/Qwen/Qwen2.5-1.5B

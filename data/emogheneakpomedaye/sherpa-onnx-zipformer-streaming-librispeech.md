@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `EmogheneAkpomedaye/sherpa-onnx-zipformer-streaming-librispeech` es una distribución en formato ONNX de un modelo Zipformer en modo streaming, empaquetada para su uso con el runtime sherpa-onnx. Por el nombre y la estructura se trata de un modelo de reconocimiento automático del habla (ASR) entrenado sobre el corpus LibriSpeech, exportado a ONNX para inferencia en tiempo real en CPU y dispositivos de borde. El autor del repositorio es el usuario de HuggingFace EmogheneAkpomedaye, no el equipo original de k2-fsa/sherpa-onnx.
+El repositorio `EmogheneAkpomedaye/sherpa-onnx-zipformer-streaming-librispeech` es una distribución en formato ONNX de un modelo Zipformer en modo streaming, empaquetada para su uso con el runtime sherpa-onnx. Por el nombre y la estructura se trata de un modelo de reconocimiento automático del habla (ASR) entrenado sobre el corpus LibriSpeech, exportado a ONNX para inferencia en tiempo real en CPU y dispositivos de borde. El autor del repositorio es el usuario de Hugging Face EmogheneAkpomedaye, no el equipo original de k2-fsa/sherpa-onnx.
 
 La relevancia de este tipo de artefacto es práctica: los modelos Zipformer de k2-fsa han demostrado una relación calidad/latencia muy competitiva en ASR en streaming, y su exportación a ONNX permite desplegarlos sin depender de PyTorch ni de GPU, con un consumo de memoria bajo. Sin embargo, la model card publicada en este repositorio está vacía (solo contiene la declaración de licencia), por lo que no hay información verificable sobre el checkpoint de origen, la configuración de entrenamiento, el vocabulario ni los resultados de evaluación.
 
@@ -84,7 +84,7 @@ La comparación cuantitativa no es posible sin datos de evaluación publicados p
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/EmogheneAkpomedaye/sherpa-onnx-zipformer-streaming-librispeech
+- Repositorio en Hugging Face: https://huggingface.co/EmogheneAkpomedaye/sherpa-onnx-zipformer-streaming-librispeech
 - Proyecto sherpa-onnx (k2-fsa): https://github.com/k2-fsa/sherpa-onnx
 - Documentación de sherpa-onnx: https://k2-fsa.github.io/sherpa/onnx/
 - Repositorio de Zipformer (k2-fsa/icefall): https://github.com/k2-fsa/icefall

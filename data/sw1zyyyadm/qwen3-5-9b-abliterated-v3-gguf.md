@@ -69,8 +69,8 @@ La precision factual en preguntas de historia esta limitada por el conocimiento 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-9B-abliterated-v3 (este) | ~9B | no disponible | Evaluacion cualitativa del autor: 12/12 controles, 4/4 historia sensible, 0/4 rechazos en peticiones limite | Apache 2.0 | GGUF en HuggingFace, Ollama, llama.cpp |
-| Qwen/Qwen3.5-9B (base) | ~9B | no disponible | Mismo modelo sin editar: evasion de linea oficial en historia sensible, rechazos en peticiones limite | Apache 2.0 | Pesos originales en HuggingFace |
+| Qwen3.5-9B-abliterated-v3 (este) | ~9B | no disponible | Evaluacion cualitativa del autor: 12/12 controles, 4/4 historia sensible, 0/4 rechazos en peticiones limite | Apache 2.0 | GGUF en Hugging Face, Ollama, llama.cpp |
+| Qwen/Qwen3.5-9B (base) | ~9B | no disponible | Mismo modelo sin editar: evasion de linea oficial en historia sensible, rechazos en peticiones limite | Apache 2.0 | Pesos originales en Hugging Face |
 | Otras variantes abliterated de modelos ~9B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks estandar ni de comparaciones con alternativas de la misma categoria en la informacion proporcionada; la comparacion con el base se limita a la evaluacion cualitativa del autor.
@@ -87,6 +87,6 @@ No se dispone de datos de benchmarks estandar ni de comparaciones con alternativ
 - No se documentan capacidades de tool calling, agentes, vision ni audio; no asumirlas sin verificar en el modelo base.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/Sw1zyyyAdm/Qwen3.5-9B-abliterated-v3-GGUF
+- Hugging Face: https://huggingface.co/Sw1zyyyAdm/Qwen3.5-9B-abliterated-v3-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion proporcionada.

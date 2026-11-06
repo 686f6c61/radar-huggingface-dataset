@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un repositorio de HuggingFace publicado por el usuario `gehaergserg` con el identificador `gehaergserg/MyAwesomeModel-TestRepo`. Según la model card, se trata de un modelo de lenguaje que ha recibido una actualización significativa en su capacidad de razonamiento y comprensión, con mejoras reportadas en tareas de matemáticas, programación y lógica. Sin embargo, el repositorio no contiene ningún peso, configuración o archivo de modelo (tamaño 0.0 GB), por lo que no es posible verificar ninguna de las afirmaciones técnicas.
+MyAwesomeModel es un repositorio de Hugging Face publicado por el usuario `gehaergserg` con el identificador `gehaergserg/MyAwesomeModel-TestRepo`. Según la model card, se trata de un modelo de lenguaje que ha recibido una actualización significativa en su capacidad de razonamiento y comprensión, con mejoras reportadas en tareas de matemáticas, programación y lógica. Sin embargo, el repositorio no contiene ningún peso, configuración o archivo de modelo (tamaño 0.0 GB), por lo que no es posible verificar ninguna de las afirmaciones técnicas.
 
 La model card menciona que el modelo ha mejorado su profundidad de razonamiento mediante el uso de mayores recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento, y que su rendimiento se acerca al de otros modelos líderes. También indica una reducción en la tasa de alucinación y un mejor soporte para function calling. No obstante, al no existir artefactos descargables ni documentación técnica adicional, cualquier especificación concreta (arquitectura, número de parámetros, contexto, etc.) permanece no disponible.
 
@@ -23,7 +23,7 @@ Este repositorio parece ser una prueba o placeholder, ya que el nombre incluye "
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion tecnica verificable sobre la arquitectura del modelo. La model card menciona que el modelo ha sido actualizado con "mecanismos de optimizacion algoritmica" y un mayor uso de recursos computacionales, pero no especifica si se trata de un transformer, un modelo de mezcla de expertos (MoE) o cualquier otra arquitectura. Tampoco se indican datos sobre el dataset de entrenamiento, el numero de tokens, ni si se utilizaron tecnicas como RLHF o DPO. La unica referencia es que el modelo es compatible con la libreria `transformers` de HuggingFace y que el pipeline declarado es `feature-extraction`, lo que sugiere un uso orientado a extraccion de caracteristicas, pero sin detalles adicionales.
+No se dispone de informacion tecnica verificable sobre la arquitectura del modelo. La model card menciona que el modelo ha sido actualizado con "mecanismos de optimizacion algoritmica" y un mayor uso de recursos computacionales, pero no especifica si se trata de un transformer, un modelo de mezcla de expertos (MoE) o cualquier otra arquitectura. Tampoco se indican datos sobre el dataset de entrenamiento, el numero de tokens, ni si se utilizaron tecnicas como RLHF o DPO. La unica referencia es que el modelo es compatible con la libreria `transformers` de Hugging Face y que el pipeline declarado es `feature-extraction`, lo que sugiere un uso orientado a extraccion de caracteristicas, pero sin detalles adicionales.
 
 ## Capacidades
 
@@ -92,6 +92,6 @@ No disponible. No se conocen modelos comparables con los que contrastar, ya que 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/gehaergserg/MyAwesomeModel-TestRepo
+- Repositorio de Hugging Face: https://huggingface.co/gehaergserg/MyAwesomeModel-TestRepo
 
 No se proporcionan otros enlaces (papers, blogs, repos de codigo) en la informacion disponible.

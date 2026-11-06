@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-1017 es una actualizacion menor del modelo DeepSeek-V4.1-Flash, publicado por DeepSeek-AI bajo licencia MIT. Se distribuye como un transformer multimodal (pipeline `image-text-to-text`) con 763.205.315.794 parametros totales segun los pesos en safetensors, lo que lo situa en la categoría de modelos de gran escala orientados a razonamiento, codigo, tareas agenticas y comprension visual. El repositorio de HuggingFace que se documenta aqui es un espejo subido por el usuario `lijixi8888`, no el repositorio oficial de DeepSeek.
+DeepSeek-V4.1-Flash-1017 es una actualizacion menor del modelo DeepSeek-V4.1-Flash, publicado por DeepSeek-AI bajo licencia MIT. Se distribuye como un transformer multimodal (pipeline `image-text-to-text`) con 763.205.315.794 parametros totales segun los pesos en safetensors, lo que lo situa en la categoría de modelos de gran escala orientados a razonamiento, codigo, tareas agenticas y comprension visual. El repositorio de Hugging Face que se documenta aqui es un espejo subido por el usuario `lijixi8888`, no el repositorio oficial de DeepSeek.
 
 La propuesta de valor del modelo es mejorar la relacion rendimiento-coste en tareas de agente: reduce el tiempo de ejecucion y la longitud de salida respecto a la version anterior, y a la vez mejora en benchmarks de razonamiento (HLE, Apex Bench), codigo y terminal (Terminal-Bench 4.0, DeepSWE v1.1) y vision con herramientas (Chartography, BabyVision). Segun la model card, admite una ventana de contexto de 1M tokens y un `max_tokens` recomendado de al menos 256K, lo que lo hace adecuado para flujos de trabajo de contexto muy largo.
 
@@ -80,8 +80,8 @@ Resultados publicados en la model card (comparativa con DeepSeek-V4.1-Flash, K3,
 
 | Modelo | Parametros | Contexto | HLE (w/o tools) | Terminal-Bench 4.0 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash-1017 | 763,2 B | 1M tokens | 42,6 | 42,3 | MIT | Pesos en HuggingFace |
-| DeepSeek-V4.1-Flash | no disponible | 1M tokens (segun version base) | 36,8 | 31,2 | MIT | Pesos en HuggingFace |
+| DeepSeek-V4.1-Flash-1017 | 763,2 B | 1M tokens | 42,6 | 42,3 | MIT | Pesos en Hugging Face |
+| DeepSeek-V4.1-Flash | no disponible | 1M tokens (segun version base) | 36,8 | 31,2 | MIT | Pesos en Hugging Face |
 | K3 | no disponible | no disponible | 43,5 | 12,6 | no disponible | no disponible |
 | GLM-5.3 | no disponible | no disponible | 42,0† | 37,9 | no disponible | no disponible |
 | GPT-5.6 Sol | no disponible | no disponible | 44,5 | 39,9 | propietaria | API |
@@ -103,12 +103,12 @@ No se dispone de parametros ni contexto de los modelos comparados en la informac
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lijixi8888/DeepSeek-V4.1-Flash-1017
+- Repositorio en Hugging Face: https://huggingface.co/lijixi8888/DeepSeek-V4.1-Flash-1017
 - Repositorio oficial de referencia: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Technical Report (PDF): https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf
 - Toolkit deepseek-recipe: https://github.com/deepseek-ai/deepseek-recipe
 - Web oficial: https://www.deepseek.com/
 - Chat: https://chat.deepseek.com/
-- Organizacion en HuggingFace: https://huggingface.co/deepseek-ai
+- Organizacion en Hugging Face: https://huggingface.co/deepseek-ai
 - Twitter/X: https://twitter.com/deepseek_ai
 - Contacto: service@deepseek.com

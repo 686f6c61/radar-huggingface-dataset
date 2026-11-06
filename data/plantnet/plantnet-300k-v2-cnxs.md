@@ -74,8 +74,8 @@ No se han publicado en la informacion disponible resultados comparativos frente 
 
 | Modelo | Parametros | Entrada | Clases | Accuracy test | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| PlantNet/plantnet-300k-v2-cnxs | no disponible (~50 M en backbone ConvNeXt-Small) | 224 x 224 | 1.000 | 0,8296 | dinov3-license | HuggingFace, pesos PyTorch |
-| Backbone base facebook/dinov3-convnext-small-pretrain-lvd1689m | no disponible | 224 x 224 | sin cabeza de clasificacion | no aplica (preentrenado) | dinov3-license | HuggingFace, acceso restringido |
+| PlantNet/plantnet-300k-v2-cnxs | no disponible (~50 M en backbone ConvNeXt-Small) | 224 x 224 | 1.000 | 0,8296 | dinov3-license | Hugging Face, pesos PyTorch |
+| Backbone base facebook/dinov3-convnext-small-pretrain-lvd1689m | no disponible | 224 x 224 | sin cabeza de clasificacion | no aplica (preentrenado) | dinov3-license | Hugging Face, acceso restringido |
 | Pl@ntNet-300K (dataset original, modelos del paper 2021) | variable | variable | 1.081 | no disponible en esta ficha | segun paper | Zenodo, codigo asociado |
 
 No se dispone de datos publicados en la informacion proporcionada para comparar con otros clasificadores botanicos especificos (por ejemplo, variantes ViT o ResNet entrenadas sobre Pl@ntNet-300K).
@@ -93,7 +93,7 @@ No se dispone de datos publicados en la informacion proporcionada para comparar 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PlantNet/plantnet-300k-v2-cnxs
+- Modelo en Hugging Face: https://huggingface.co/PlantNet/plantnet-300k-v2-cnxs
 - Modelo base DINOv3 ConvNeXt-Small: https://huggingface.co/facebook/dinov3-convnext-small-pretrain-lvd1689m
 - Licencia DINOv3: https://ai.meta.com/resources/models-and-libraries/dinov3-license/
 - Dataset Pl@ntNet-300K-v2: https://zenodo.org/records/10419064

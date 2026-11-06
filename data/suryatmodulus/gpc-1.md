@@ -27,7 +27,7 @@ El modelo se distribuye con licencia Apache-2.0 sobre un backbone de la familia 
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es un mixture of experts multimodal de la familia Qwen3.5-35B-A3B, es decir, un transformer con capas MoE y capacidad de procesar imagen y texto, segun la descripcion del propio autor ("multimodal mixture of experts"). Sobre ese backbone se aplica un ajuste posterior mediante PEFT/LoRA: los metadatos de HuggingFace etiquetan el repositorio con `peft`, `lora`, `base_model:Qwen/Qwen3.5-35B-A3B` y `base_model_relation: adapter`, y la model card indica que la release completa incluye "el backbone GPC-1, su adaptador correspondiente y el código de servicio", cargados automaticamente por el servidor. No se detalla en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset, ni si se emplearon RLHF, DPO u otras tecnicas de alineamiento.
+La arquitectura subyacente es un mixture of experts multimodal de la familia Qwen3.5-35B-A3B, es decir, un transformer con capas MoE y capacidad de procesar imagen y texto, segun la descripcion del propio autor ("multimodal mixture of experts"). Sobre ese backbone se aplica un ajuste posterior mediante PEFT/LoRA: los metadatos de Hugging Face etiquetan el repositorio con `peft`, `lora`, `base_model:Qwen/Qwen3.5-35B-A3B` y `base_model_relation: adapter`, y la model card indica que la release completa incluye "el backbone GPC-1, su adaptador correspondiente y el código de servicio", cargados automaticamente por el servidor. No se detalla en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset, ni si se emplearon RLHF, DPO u otras tecnicas de alineamiento.
 
 La innovacion destacable no esta en el backbone sino en la interfaz de decodificacion: el modelo no genera texto abierto, sino que puntua un espacio de salida cerrado y tipado definido por el cliente. Los campos numéricos se representan sobre 101 posiciones equiespaciadas dentro del rango declarado y la API devuelve la posicion mas probable junto con una media ponderada por probabilidad, que puede caer entre posiciones; el autor describe explicitamente el resultado como una estimacion de resolucion finita. Para decisiones dependientes, el usuario enumera los registros JSON completos que su flujo permite y el modelo los puntua conjuntamente, de modo que combinaciones invalidas no pueden aparecer en el soporte devuelto. El alcance de esa puntuacion conjunta queda acotado a los registros enumerados, no a generacion JSON arbitraria.
 
@@ -65,13 +65,13 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Cabe en GPU de consumo: no con los pesos BF16 publicados. No se documentan versiones cuantizadas, por lo que no se puede confirmar su viabilidad en tarjetas de 24 GB.
 - Opciones de despliegue: servidor propio incluido en la release (`python3 -m uvicorn gpc1_server.api:app`) sobre PyTorch 2.9.1 y torchvision 0.24.1 con CUDA 13.0, mas descarga mediante `hf download harshatheg/GPC-1`. Se soporta despliegue offline y revisiones fijadas segun la guia de descargas. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput: no disponibles. La model card solo indica que el servidor debe permanecer en ejecucion y que el techo de entrada es de 256K tokens.
-- Nota: los metadatos de HuggingFace marcan `inference: false`, por lo que el modelo no esta pensado para los endpoints de inferencia gestionados de la plataforma.
+- Nota: los metadatos de Hugging Face marcan `inference: false`, por lo que el modelo no esta pensado para los endpoints de inferencia gestionados de la plataforma.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GPC-1 | 35B (MoE, ~3B activos segun nomenclatura del base) | 256K tokens de entrada | Clasificador restringido por esquema sobre backbone multimodal | Apache-2.0 (adaptador) | Repositorio HuggingFace con 0 descargas y 0 likes |
+| GPC-1 | 35B (MoE, ~3B activos segun nomenclatura del base) | 256K tokens de entrada | Clasificador restringido por esquema sobre backbone multimodal | Apache-2.0 (adaptador) | Repositorio Hugging Face con 0 descargas y 0 likes |
 | Qwen3.5-35B-A3B (modelo base) | 35B MoE | No disponible en la informacion proporcionada | Modelo generativo multimodal de proposito general | No confirmada | Modelo base publico referenciado por el adaptador |
 | Otros clasificadores de tarea especifica comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -93,7 +93,7 @@ No se dispone de informacion sobre clasificadores de proposito general con inter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/suryatmodulus/GPC-1
+- Modelo en Hugging Face: https://huggingface.co/suryatmodulus/GPC-1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-35B-A3B
 - Demo alojada: https://huggingface.co/spaces/harshatheg/GPC-1-Demo
 - Guia de API: API.md (ruta relativa dentro del repositorio)

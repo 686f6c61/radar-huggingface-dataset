@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Whisper tiny American es un ajuste fino (fine-tuning) del modelo openai/whisper-tiny, publicado por el usuario Nuttyman en HuggingFace. Se trata de un modelo de reconocimiento automatico del habla (ASR) especializado en ingles americano, derivado del conocido modelo Whisper de OpenAI en su variante mas pequena. El modelo resuelve la tarea de transcripcion de audio a texto, con un sesgo deliberado hacia el acento y las caracteristicas del ingles estadounidense, lo que puede resultar util para aplicaciones que operan exclusivamente con hablantes de ese dialecto.
+Whisper tiny American es un ajuste fino (fine-tuning) del modelo openai/whisper-tiny, publicado por el usuario Nuttyman en Hugging Face. Se trata de un modelo de reconocimiento automatico del habla (ASR) especializado en ingles americano, derivado del conocido modelo Whisper de OpenAI en su variante mas pequena. El modelo resuelve la tarea de transcripcion de audio a texto, con un sesgo deliberado hacia el acento y las caracteristicas del ingles estadounidense, lo que puede resultar util para aplicaciones que operan exclusivamente con hablantes de ese dialecto.
 
 El modelo cuenta con 37.760.640 parametros totales y un tamano de repositorio de 0,6 GB, lo que lo situa en la gama ultraligera de modelos ASR. Al estar basado en whisper-tiny, hereda la arquitectura transformer encoder-decoder caracteristica de la familia Whisper, disenada para transcripcion multitarea (transcripcion, traduccion, deteccion de idioma y marcas temporales). Su licencia Apache 2.0 permite uso comercial sin restricciones significativas.
 
@@ -80,10 +80,10 @@ No se han publicado resultados comparativos con otros modelos en la informacion 
 
 | Modelo | Parametros | Contexto | WER (declarado) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nuttyman/whisper-tiny_to_american_accent_oct31_3rdrun | 37,76 M | no disponible | 9,26 (American English) | Apache 2.0 | HuggingFace |
-| openai/whisper-tiny | ~39 M | 30 s de audio | no disponible en esta ficha | Apache 2.0 | HuggingFace |
-| openai/whisper-base | ~74 M | 30 s de audio | no disponible en esta ficha | Apache 2.0 | HuggingFace |
-| openai/whisper-small | ~244 M | 30 s de audio | no disponible en esta ficha | Apache 2.0 | HuggingFace |
+| Nuttyman/whisper-tiny_to_american_accent_oct31_3rdrun | 37,76 M | no disponible | 9,26 (American English) | Apache 2.0 | Hugging Face |
+| openai/whisper-tiny | ~39 M | 30 s de audio | no disponible en esta ficha | Apache 2.0 | Hugging Face |
+| openai/whisper-base | ~74 M | 30 s de audio | no disponible en esta ficha | Apache 2.0 | Hugging Face |
+| openai/whisper-small | ~244 M | 30 s de audio | no disponible en esta ficha | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de WER comparables para los modelos base en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa fiable. La comparativa se limita a parametros, licencia y disponibilidad.
 
@@ -101,7 +101,7 @@ No se dispone de datos de WER comparables para los modelos base en la informacio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Nuttyman/whisper-tiny_to_american_accent_oct31_3rdrun
+- Hugging Face: https://huggingface.co/Nuttyman/whisper-tiny_to_american_accent_oct31_3rdrun
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Repositorio de Whisper (OpenAI): https://github.com/openai/whisper
 - Paper de Whisper: https://arxiv.org/abs/2212.04356

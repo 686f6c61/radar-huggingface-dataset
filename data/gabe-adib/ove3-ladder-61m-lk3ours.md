@@ -77,7 +77,7 @@ No se han identificado en la información proporcionada modelos comparables de l
 
 | Modelo | Parámetros activos | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|
-| ove3-ladder-61m-lk3ours | 61M | no disponible | no disponible | checkpoint Megatron | HuggingFace |
+| ove3-ladder-61m-lk3ours | 61M | no disponible | no disponible | checkpoint Megatron | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -94,6 +94,6 @@ No se han identificado en la información proporcionada modelos comparables de l
 
 ## Enlaces
 
-- [HuggingFace: gabe-adib/ove3-ladder-61m-lk3ours](https://huggingface.co/gabe-adib/ove3-ladder-61m-lk3ours)
+- [Hugging Face: gabe-adib/ove3-ladder-61m-lk3ours](https://huggingface.co/gabe-adib/ove3-ladder-61m-lk3ours)
 - [Árbol de ficheros del repositorio](https://huggingface.co/gabe-adib/ove3-ladder-61m-lk3ours/tree/main)
 - No se han encontrado enlaces adicionales relevantes (paper, blog, repositorio o demo) en la búsqueda web proporcionada; los resultados obtenidos corresponden a otros productos y no guardan relación con este modelo.

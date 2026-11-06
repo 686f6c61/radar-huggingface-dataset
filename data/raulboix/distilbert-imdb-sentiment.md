@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`raulboix/distilbert-imdb-sentiment` es un modelo de clasificación de texto publicado por el usuario raulboix en HuggingFace, consistente en un DistilBERT (`distilbert-base-uncased`) afinado sobre un subconjunto del dataset IMDB de reseñas de cine. El problema que aborda es la clasificación binaria de sentimiento (positivo/negativo) en texto en inglés, aunque la model card no declara explícitamente los idiomas soportados.
+`raulboix/distilbert-imdb-sentiment` es un modelo de clasificación de texto publicado por el usuario raulboix en Hugging Face, consistente en un DistilBERT (`distilbert-base-uncased`) afinado sobre un subconjunto del dataset IMDB de reseñas de cine. El problema que aborda es la clasificación binaria de sentimiento (positivo/negativo) en texto en inglés, aunque la model card no declara explícitamente los idiomas soportados.
 
 El modelo tiene 66.955.010 parámetros y un repositorio de 0,3 GB en formato safetensors, con licencia Apache 2.0. El entrenamiento documentado es deliberadamente mínimo: 600 reseñas de IMDB durante 1,0 épocas en CPU, con un tiempo de 208,9 segundos. Sobre 200 reseñas de test reporta una accuracy de 0,6900 y un F1 de 0,6437.
 
@@ -68,15 +68,15 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de otras tareas en l
 - VRAM estimada para inferencia: aproximadamente 268 MB en FP32 (66,9 M de parametros x 4 bytes), unos 134 MB en FP16 y unos 67 MB en INT8, sin contar activaciones ni overhead del runtime. Son estimaciones calculadas a partir del numero de parametros, no mediciones publicadas.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de memoria libre es suficiente; el modelo esta pensado para ejecutarse en CPU. No se requieren A100, H100 ni RTX 4090.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU consumer (GTX 1050 en adelante) e incluso en CPU. El entrenamiento documentado se completo en CPU en 208,9 s para 600 muestras.
-- Opciones de despliegue: pipeline `text-classification` de HuggingFace Transformers, ONNX Runtime si se exporta el modelo, o un servidor HTTP propio (por ejemplo FastAPI) con batching. No hay pesos GGUF publicados, por lo que llama.cpp u Ollama no son viables sin conversion y cuantizacion previas. vLLM o TGI son tecnicamente posibles pero desproporcionados para este tamano.
+- Opciones de despliegue: pipeline `text-classification` de Hugging Face Transformers, ONNX Runtime si se exporta el modelo, o un servidor HTTP propio (por ejemplo FastAPI) con batching. No hay pesos GGUF publicados, por lo que llama.cpp u Ollama no son viables sin conversion y cuantizacion previas. vLLM o TGI son tecnicamente posibles pero desproporcionados para este tamano.
 - Latencia y throughput: no disponibles. El unico dato temporal publicado es el tiempo de entrenamiento (208,9 s para 600 muestras y 1,0 epocas en CPU), que no equivale a latencia de inferencia.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Accuracy en IMDB | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| raulboix/distilbert-imdb-sentiment | 66.955.010 | no disponible | 0,6900 (200 resenas) | Apache 2.0 | HuggingFace, 0 descargas |
-| distilbert-base-uncased (modelo base, sin ajuste) | no disponible en la informacion | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| raulboix/distilbert-imdb-sentiment | 66.955.010 | no disponible | 0,6900 (200 resenas) | Apache 2.0 | Hugging Face, 0 descargas |
+| distilbert-base-uncased (modelo base, sin ajuste) | no disponible en la informacion | no disponible | no disponible | Apache 2.0 | Hugging Face |
 | Alternativas afinadas en IMDB | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone en la informacion proporcionada de resultados de benchmarks de modelos alternativos, por lo que no es posible establecer una comparacion cuantitativa fiable. Cualquier comparacion con checkpoints de DistilBERT afinados en IMDB requeriria evaluar ambos modelos sobre el mismo split.
@@ -96,7 +96,7 @@ No se dispone en la informacion proporcionada de resultados de benchmarks de mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/raulboix/distilbert-imdb-sentiment
+- Modelo en Hugging Face: https://huggingface.co/raulboix/distilbert-imdb-sentiment
 - Modelo base: https://huggingface.co/distilbert/distilbert-base-uncased
 - Dataset de entrenamiento: https://huggingface.co/datasets/stanfordnlp/imdb
 

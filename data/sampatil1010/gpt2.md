@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sampatil1010/gpt2` es un repositorio publicado en HuggingFace por el usuario sampatil1010 bajo licencia MIT. La informacion disponible es minima: la model card no contiene mas que la declaracion de licencia, no se declara tarea (pipeline), idioma, tamano ni arquitectura, y el repositorio registra 0 descargas y 0 "likes" en el momento de la consulta. El nombre del repositorio sugiere que podria tratarse de un modelo basado en la arquitectura GPT-2 (transformer decoder-only), pero no hay ninguna confirmacion documental en la informacion proporcionada.
+`sampatil1010/gpt2` es un repositorio publicado en Hugging Face por el usuario sampatil1010 bajo licencia MIT. La informacion disponible es minima: la model card no contiene mas que la declaracion de licencia, no se declara tarea (pipeline), idioma, tamano ni arquitectura, y el repositorio registra 0 descargas y 0 "likes" en el momento de la consulta. El nombre del repositorio sugiere que podria tratarse de un modelo basado en la arquitectura GPT-2 (transformer decoder-only), pero no hay ninguna confirmacion documental en la informacion proporcionada.
 
 No se han encontrado resultados de busqueda web relevantes para este modelo concreto: las busquedas devuelven paginas de acceso a entornos digitales escolares franceses, completamente ajenas al modelo. Esto significa que no existe documentacion externa, paper, blog ni repositorio asociado que permita verificar caracteristicas tecnicas.
 
@@ -41,7 +41,7 @@ No es posible recomendar casos de uso concretos y realistas sin informacion tecn
 
 - Experimentacion interna controlada: cargar el modelo en un entorno aislado para inspeccionar sus pesos y configuracion antes de considerar cualquier uso.
 - Auditoria del repositorio: verificar los archivos publicados (pesos, configuracion, tokenizador) para determinar si el contenido coincide con lo que sugiere el nombre.
-- Pruebas de formato de publicacion: usarlo como ejemplo de repositorio minimo en HuggingFace con licencia MIT.
+- Pruebas de formato de publicacion: usarlo como ejemplo de repositorio minimo en Hugging Face con licencia MIT.
 - Docencia o demostracion de carga de modelos desde el Hub, sin expectativas de calidad de generacion.
 - Evaluacion de trazabilidad: analisis de como se comporta el Hub con repositorios sin model card sustantiva.
 - No se recomienda su integracion en produccion ni en pipelines de atencion al cliente, generacion de codigo o analisis de datos.
@@ -73,5 +73,5 @@ No disponible. Al no existir informacion verificable sobre arquitectura, tamano 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sampatil1010/gpt2
+- Hugging Face: https://huggingface.co/sampatil1010/gpt2
 - No se han encontrado papers, blogs, repositorios ni demos asociados a este modelo en los resultados de busqueda disponibles.

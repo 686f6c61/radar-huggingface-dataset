@@ -63,6 +63,6 @@ No disponible. No existe un modelo comparable porque el repositorio no contiene 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ivysun00/grounded-language-lite
+- Repositorio en Hugging Face: https://huggingface.co/ivysun00/grounded-language-lite
 - Referencia externa sobre *grounded language* (no afiliada): https://contextual.ai/blog/introducing-grounded-language-model
 - Artículo académico relacionado (Mind's Eye): https://arxiv.org/abs/2210.05359

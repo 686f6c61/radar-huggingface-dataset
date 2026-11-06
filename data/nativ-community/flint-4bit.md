@@ -92,7 +92,7 @@ La diferencia práctica más relevante frente a las alternativas no es de calida
 
 ## Enlaces
 
-- [nativ-community/flint-4bit en HuggingFace](https://huggingface.co/nativ-community/flint-4bit)
+- [nativ-community/flint-4bit en Hugging Face](https://huggingface.co/nativ-community/flint-4bit)
 - [Modelo base RecursiveSI/flint](https://huggingface.co/RecursiveSI/flint)
 - [Revisión del modelo base utilizada](https://huggingface.co/RecursiveSI/flint/tree/2a247be0c0aec895ccb0ac7ca92229ec6df37288)
 - [MLX-VLM, commit fijado para la conversión](https://github.com/Blaizzy/mlx-vlm/commit/6d9ba328abbd6129c7461eda86280aa9fbfd9986)

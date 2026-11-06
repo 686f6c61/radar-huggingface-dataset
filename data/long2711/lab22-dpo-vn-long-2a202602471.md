@@ -77,9 +77,9 @@ No se han publicado resultados de benchmarks adicionales (MMLU completo, HumanEv
 
 | Modelo | Parametros | Contexto | Resultados publicados | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador DPO (long2711) | Adaptador LoRA sobre base de 4B | No disponible | IFEval 50,0%; GSM8K 85,2%; Global-MMLU-vi 24,21%; win rate 52% vs SFT | No disponible | Publico en HuggingFace, 0 descargas, 0 likes |
+| Este adaptador DPO (long2711) | Adaptador LoRA sobre base de 4B | No disponible | IFEval 50,0%; GSM8K 85,2%; Global-MMLU-vi 24,21%; win rate 52% vs SFT | No disponible | Publico en Hugging Face, 0 descargas, 0 likes |
 | SFT fusionado previo (`models/sft-merged/`) | Base de 4B | No disponible | IFEval 49,0%; GSM8K 82,0%; Global-MMLU-vi 24,21% | No disponible | No publicado como repo independiente segun la informacion disponible |
-| `unsloth/Qwen3-4B-Instruct-2507-unsloth-bnb-4bit` (base) | 4B en 4 bits | No disponible | No evaluado en la model card del adaptador | No disponible en la informacion proporcionada | Publico en HuggingFace |
+| `unsloth/Qwen3-4B-Instruct-2507-unsloth-bnb-4bit` (base) | 4B en 4 bits | No disponible | No evaluado en la model card del adaptador | No disponible en la informacion proporcionada | Publico en Hugging Face |
 
 No se dispone de datos sobre otros adaptadores DPO en vietnamita comparables en la informacion proporcionada, por lo que la comparativa se limita a las etapas del mismo pipeline.
 
@@ -99,7 +99,7 @@ No se dispone de datos sobre otros adaptadores DPO en vietnamita comparables en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/long2711/lab22-dpo-vn-long-2A202602471
+- Modelo en Hugging Face: https://huggingface.co/long2711/lab22-dpo-vn-long-2A202602471
 - Modelo base: https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507-unsloth-bnb-4bit
 - Repositorio de codigo, notebooks y graficas (GitHub Day22): https://github.com/long27112003/K4-L3-Track3-Day22-NguyenHaiLong-2A202602471
 - Dataset de SFT: https://huggingface.co/datasets/saillab/alpaca-vietnamese-cleaned

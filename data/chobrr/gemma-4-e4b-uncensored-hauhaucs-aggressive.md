@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Gemma-4-E4B-Uncensored-HauhauCS-Aggressive es una variante "abliterated" (sin censura) del modelo multimodal google/gemma-4-e4b-it, publicada por el usuario Chobrr en HuggingFace y derivada del trabajo de cuantizacion de HauhauCS. El objetivo declarado por el autor es eliminar los rechazos de seguridad del modelo original sin alterar sus capacidades: se mantiene el mismo pipeline image-text-to-text, el mismo entrenamiento y el mismo conjunto de funcionalidades, pero se interviene la direccion de rechazo en los pesos para que el modelo genere contenido que el original bloquearia. El autor afirma 0 rechazos en 465 pruebas, una cifra no verificable de forma independiente con la informacion disponible.
+Gemma-4-E4B-Uncensored-HauhauCS-Aggressive es una variante "abliterated" (sin censura) del modelo multimodal google/gemma-4-e4b-it, publicada por el usuario Chobrr en Hugging Face y derivada del trabajo de cuantizacion de HauhauCS. El objetivo declarado por el autor es eliminar los rechazos de seguridad del modelo original sin alterar sus capacidades: se mantiene el mismo pipeline image-text-to-text, el mismo entrenamiento y el mismo conjunto de funcionalidades, pero se interviene la direccion de rechazo en los pesos para que el modelo genere contenido que el original bloquearia. El autor afirma 0 rechazos en 465 pruebas, una cifra no verificable de forma independiente con la informacion disponible.
 
 El modelo es nativamente multimodal: acepta texto, imagen, video y audio como entrada, con 42 capas, atencion hibrida (sliding window de 512 tokens combinada con atencion completa) y 18 capas KV compartidas para reducir el coste de memoria. La ventana de contexto declarada es de 131.000 tokens. La model card indica "4B parametros", mientras que el recuento real de safetensors en el repositorio es de 7.518.069.290 parametros; esta discrepancia es coherente con la nomenclatura "E4B" (parametros efectivos) heredada de la familia Gemma, aunque el autor no detalla el desglose.
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
   - El proyector multimodal mmproj f16 anade 945 MB si se usa vision o audio.
 - GPU recomendadas: RTX 3060 12 GB o RTX 4060 Ti 16 GB para las cuantizaciones Q4-Q6 con contexto amplio; RTX 4090 (24 GB) para Q8_K_P con contexto largo; A100 40/80 GB y H100 para despliegue multi-usuario con vLLM y contexto completo de 131K.
 - Compatibilidad con GPU de consumo: si. Las cuantizaciones Q4 caben en GPUs de 8 GB (RTX 3070, RTX 4060) con contexto reducido; las Q2/IQ3 permiten incluso ejecucion parcial en CPU.
-- Opciones de despliegue: llama.cpp (con `--jinja`; `-ngl 99` para descargar todas las capas en GPU), LM Studio, Jan, koboldcpp y cualquier runtime compatible con GGUF. No hay pesos en safetensors listos para vLLM o TGI en la informacion disponible, aunque el tag `endpoints_compatible` sugiere compatibilidad con endpoints de HuggingFace.
+- Opciones de despliegue: llama.cpp (con `--jinja`; `-ngl 99` para descargar todas las capas en GPU), LM Studio, Jan, koboldcpp y cualquier runtime compatible con GGUF. No hay pesos en safetensors listos para vLLM o TGI en la informacion disponible, aunque el tag `endpoints_compatible` sugiere compatibilidad con endpoints de Hugging Face.
 - Latencia y throughput: no disponibles. No se publican mediciones de tokens por segundo ni de tiempo a primer token.
 
 ## Comparativa con modelos similares
@@ -95,13 +95,13 @@ La comparativa cuantitativa no es posible con la informacion proporcionada: no h
 - Contexto largo poco probado: el propio autor reconoce que Gemma 4 recibio menos tiempo de prueba manual a contexto largo que otras de sus releases, lo que cuestiona el rendimiento real cerca de los 131K tokens.
 - Licencia Gemma: es una licencia con condiciones de uso, politica de uso prohibido y obligaciones de atribucion. Cualquier uso comercial debe revisar los terminos de Gemma, y la redistribucion de la variante abliterated puede entrar en conflicto con la politica de uso aceptable.
 - Release sin validacion de la comunidad: 0 descargas y 0 "likes" en el momento de la consulta. No hay evidencia de terceros sobre funcionamiento, estabilidad o calidad.
-- Inconsistencia de autoría: la ficha de HuggingFace figura a nombre de Chobrr, pero los enlaces de descarga de la model card apuntan al repositorio HauhauCS. Conviene verificar el origen real de los pesos antes de usarlos en cualquier entorno.
+- Inconsistencia de autoría: la ficha de Hugging Face figura a nombre de Chobrr, pero los enlaces de descarga de la model card apuntan al repositorio HauhauCS. Conviene verificar el origen real de los pesos antes de usarlos en cualquier entorno.
 - Inconsistencia de parametros: el dato de safetensors (7,518B) no coincide con la afirmacion "4B parametros" de la model card. No se detalla si existe carga condicional de parametros.
 - Sin soporte confirmado de tool calling ni de agentes: no se menciona en la informacion disponible, lo que limita su uso en pipelines automaticos que dependan de function calling.
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/Chobrr/Gemma-4-E4B-Uncensored-HauhauCS-Aggressive
+- Ficha del modelo en Hugging Face: https://huggingface.co/Chobrr/Gemma-4-E4B-Uncensored-HauhauCS-Aggressive
 - Modelo base: https://huggingface.co/google/gemma-4-e4b-it
 - Repositorio de cuantizaciones referenciado en la model card: https://huggingface.co/HauhauCS/Gemma-4-E4B-Uncensored-HauhauCS-Aggressive
 - Discord del autor: https://discord.gg/SZ5vacTXYf

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NVIDIA GR00TCRA es un modelo de inteligencia artificial publicado por NVIDIA dentro del ecosistema Isaac GR00T, una plataforma de referencia para robótica humanoide generalista. El identificador sugiere que se trata de un componente o variante específica dentro de la familia GR00T, orientada a tareas de control y razonamiento para robots humanoides. Sin embargo, la información pública disponible en HuggingFace es extremadamente limitada: no se especifican arquitectura, parámetros, contexto, ni capacidades concretas, y el acceso está restringido (gated), lo que impide verificar detalles técnicos sin aceptar condiciones adicionales.
+NVIDIA GR00TCRA es un modelo de inteligencia artificial publicado por NVIDIA dentro del ecosistema Isaac GR00T, una plataforma de referencia para robótica humanoide generalista. El identificador sugiere que se trata de un componente o variante específica dentro de la familia GR00T, orientada a tareas de control y razonamiento para robots humanoides. Sin embargo, la información pública disponible en Hugging Face es extremadamente limitada: no se especifican arquitectura, parámetros, contexto, ni capacidades concretas, y el acceso está restringido (gated), lo que impide verificar detalles técnicos sin aceptar condiciones adicionales.
 
 La relevancia de este modelo radica en el contexto más amplio del proyecto Isaac GR00T, que combina modelos de visión-lenguaje-acción (VLA) con plataformas de simulación y hardware robótico. NVIDIA ha anunciado recientemente un diseño de referencia de robot humanoide abierto basado en esta plataforma, integrando el modelo con hardware como Unitree H2 Plus y Jetson Thor. No obstante, para GR00TCRA en particular no se dispone de información pública suficiente para caracterizarlo de manera rigurosa.
 
@@ -59,7 +59,7 @@ No se dispone de información suficiente para realizar una comparativa rigurosa 
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar condiciones en HuggingFace; no se puede evaluar sin autorización.
+- Acceso restringido: el modelo requiere aceptar condiciones en Hugging Face; no se puede evaluar sin autorización.
 - Licencia no estándar: la licencia nvidiasmel es propia de NVIDIA; es necesario revisar sus términos para uso comercial.
 - Información pública insuficiente: no se conocen sesgos, riesgos de alucinación ni limitaciones de contexto o idioma.
 - Riesgo de uso en producción: sin datos de rendimiento y sin especificaciones técnicas, no se recomienda desplegar este modelo en entornos productivos.
@@ -67,7 +67,7 @@ No se dispone de información suficiente para realizar una comparativa rigurosa 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nvidia/GR00TCRA
+- Hugging Face: https://huggingface.co/nvidia/GR00TCRA
 - NVIDIA Developer - AI Models: https://developer.nvidia.com/ai-models
 - GitHub NVIDIA/Isaac-GR00T: https://github.com/NVIDIA/Isaac-GR00T
 - NVIDIA Isaac GR00T (página oficial): https://developer.nvidia.com/isaac/gr00t

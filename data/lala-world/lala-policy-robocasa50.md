@@ -75,7 +75,7 @@ Cifras de parámetros de los competidores tomadas de su documentación pública;
 
 | Modelo | Enfoque | Parametros | Contexto / horizonte | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LaLa-Policy (RoboCasa) | VLA + world model latente, flow-matching | no disponible (encoder ~400 M + predictor 24 capas + DiT) | chunk de 32 acciones | no disponible | HuggingFace, repo de 5,2 GB |
+| LaLa-Policy (RoboCasa) | VLA + world model latente, flow-matching | no disponible (encoder ~400 M + predictor 24 capas + DiT) | chunk de 32 acciones | no disponible | Hugging Face, repo de 5,2 GB |
 | Isaac-GR00T (NVIDIA) | VLA con DiT de flow-matching sobre VLM | del orden de 2 B | no disponible aquí | no disponible aquí | Público en GitHub |
 | OpenVLA | VLA autoregresivo sobre Llama-2 7B + DINOv2/SigLIP | 7 B | contexto de lenguaje del LLM base | permisiva según su proyecto | Pesos públicos |
 | pi0 (Physical Intelligence) | VLA con flow-matching sobre PaliGemma | del orden de 3 B | no disponible aquí | no disponible aquí | Pesos públicos |
@@ -96,7 +96,7 @@ La diferencia principal de LaLa-Policy frente a estos tres es la predicción exp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LaLa-World/lala-policy-robocasa50
+- Modelo en Hugging Face: https://huggingface.co/LaLa-World/lala-policy-robocasa50
 - Repositorio LaLa-World: https://github.com/junha1125/LaLa-World
 - Instrucciones de evaluación de políticas: https://github.com/junha1125/LaLa-World/blob/main/evals/lala_policy/README.md
 - Decoder de frames imaginados: https://huggingface.co/LaLa-World/lala-decoder-siglip2-so400m

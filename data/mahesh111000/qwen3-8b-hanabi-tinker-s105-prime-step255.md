@@ -71,7 +71,7 @@ La comparativa se limita a la base y a los modelos del mismo autor, ya que no se
 
 ## Limitaciones y advertencias
 
-- Modelo sin validar: cero descargas y cero likes en HuggingFace; no hay evidencia de uso en producción ni de resultados reproducibles.
+- Modelo sin validar: cero descargas y cero likes en Hugging Face; no hay evidencia de uso en producción ni de resultados reproducibles.
 - Especialización en Hanabi: el entrenamiento de RL para un juego cooperativo puede degradar capacidades generales (razonamiento, código, diálogo) respecto a la base Qwen3-8B-Base; no se han medido estos efectos.
 - Riesgo de alucinación y de respuestas incoherentes: no se ha evaluado la calidad de la generación fuera del dominio de Hanabi.
 - La model card es una copia literal de la de Qwen3-8B, lo que no aporta información específica sobre el ajuste; hay que tratar con cautela las afirmaciones de la base.

@@ -80,9 +80,9 @@ No se dispone de informacion sobre otros modelos especializados en generacion de
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SASVAAI/qwen38-27b-terraform | 27,78B | 262.144 (entrenado a 8.192) | Terraform HCL | Apache-2.0 | HuggingFace, safetensors + GGUF |
-| Qwen/Qwen3.8-27B | 27,78B | 262.144 | Proposito general, multimodal | Apache-2.0 | HuggingFace, con recetas vLLM y checkpoints FP8 |
-| syvai/Qwen3.8-27B-DFlash2-W4A16 | no disponible | no disponible | Cuantizacion W4A16 del mismo base con decodificacion especulativa | Apache-2.0 | HuggingFace |
+| SASVAAI/qwen38-27b-terraform | 27,78B | 262.144 (entrenado a 8.192) | Terraform HCL | Apache-2.0 | Hugging Face, safetensors + GGUF |
+| Qwen/Qwen3.8-27B | 27,78B | 262.144 | Proposito general, multimodal | Apache-2.0 | Hugging Face, con recetas vLLM y checkpoints FP8 |
+| syvai/Qwen3.8-27B-DFlash2-W4A16 | no disponible | no disponible | Cuantizacion W4A16 del mismo base con decodificacion especulativa | Apache-2.0 | Hugging Face |
 
 Comparativa de rendimiento entre estas opciones: no disponible.
 
@@ -102,7 +102,7 @@ Comparativa de rendimiento entre estas opciones: no disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SASVAAI/qwen38-27b-terraform
+- Modelo en Hugging Face: https://huggingface.co/SASVAAI/qwen38-27b-terraform
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Recetas vLLM para Qwen/Qwen3.8-27B: https://recipes.vllm.ai/Qwen/Qwen3.8-27B
 - Benchmark del modelo base (Qubrid): https://www.qubrid.com/blog/qwen38-27b-benchmarks-official-and-independent-results

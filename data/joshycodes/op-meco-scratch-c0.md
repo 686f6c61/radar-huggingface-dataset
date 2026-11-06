@@ -48,7 +48,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 - VRAM estimada: con 77M parametros, en fp32 ocupa unos 308 MB; en fp16 o bf16 unos 154 MB. Cabe en cualquier GPU consumer (incluso en una GTX 1650 de 4 GB) y tambien en CPU.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM; para mayor comodidad, una RTX 3060 o superior.
-- Opciones de despliegue: al ser un modelo safetensors, puede cargarse con transformers de HuggingFace, o convertirse a GGUF para llama.cpp u Ollama. Tambien es compatible con vLLM y TGI si se desea servir en produccion, aunque no es su fin.
+- Opciones de despliegue: al ser un modelo safetensors, puede cargarse con transformers de Hugging Face, o convertirse a GGUF para llama.cpp u Ollama. Tambien es compatible con vLLM y TGI si se desea servir en produccion, aunque no es su fin.
 - Latencia y throughput: no se dispone de mediciones oficiales, pero por su tamano la inferencia es casi instantanea en GPU y muy rapida en CPU.
 
 ## Comparativa con modelos similares
@@ -66,4 +66,4 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/op-meco-scratch-c0
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/op-meco-scratch-c0

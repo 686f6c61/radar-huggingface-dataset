@@ -85,8 +85,8 @@ El autor advierte de que el modelo padre no dispone de puntuaciones propias en e
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash (padre) | no disponible | no disponible | referencia bf16; perplejidad 4,010 en agente | no disponible en la informacion | HuggingFace (deepseek-ai/DeepSeek-V4.1-Flash) |
-| DeepSeek-V4.1-Flash-EXL3-2.86bpw (este) | mismo que el padre (no disponible) | no disponible | MMLU 88,0 %, GSM8K 97 %, KLD 0,168 en agente | MIT | HuggingFace (Krishando) |
+| DeepSeek-V4.1-Flash (padre) | no disponible | no disponible | referencia bf16; perplejidad 4,010 en agente | no disponible en la informacion | Hugging Face (deepseek-ai/DeepSeek-V4.1-Flash) |
+| DeepSeek-V4.1-Flash-EXL3-2.86bpw (este) | mismo que el padre (no disponible) | no disponible | MMLU 88,0 %, GSM8K 97 %, KLD 0,168 en agente | MIT | Hugging Face (Krishando) |
 
 No se dispone de informacion sobre otras cuantizaciones del mismo modelo base ni sobre modelos comparables de la misma categoria y tamano, por lo que no se puede ofrecer una comparativa mas amplia con datos verificados.
 
@@ -105,7 +105,7 @@ No se dispone de informacion sobre otras cuantizaciones del mismo modelo base ni
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Krishando/DeepSeek-V4.1-Flash-EXL3-2.86bpw
+- Modelo en Hugging Face: https://huggingface.co/Krishando/DeepSeek-V4.1-Flash-EXL3-2.86bpw
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Demo y explicacion de la cuantizacion (Space): https://huggingface.co/spaces/Krishando/dsv41-flash-quant-explained
 - Demo jugable del juego 3D generado: https://krishando-dsv41-flash-quant-explai (enlace truncado en la model card)

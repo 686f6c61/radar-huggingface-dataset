@@ -78,8 +78,8 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/YunzeLiu/roborag-x-v5-four-domain-step11719
-- Perfil del autor en HuggingFace: https://huggingface.co/YunzeLiu
+- Hugging Face: https://huggingface.co/YunzeLiu/roborag-x-v5-four-domain-step11719
+- Perfil del autor en Hugging Face: https://huggingface.co/YunzeLiu
 - Repositorio VLA2Vec (rama `caip_downstream_policy`): https://github.com/yunzeliu/VLA2Vec/commit/e2e4f9097280865c40934b29d4ca8520c02af555
 - Página personal del autor: https://yunzeliu.github.io/index.html
 - Licencia openmdw1.1: https://openmdw.ai/license/1-1/

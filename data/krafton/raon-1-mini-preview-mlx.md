@@ -4,7 +4,7 @@
 
 Raon-1-mini-preview-mlx es la variante en formato MLX del modelo Raon-1-mini-preview, publicado por KRAFTON (estudio surcoreano conocido por PUBG y por su división de IA). Se distribuye como un checkpoint de generación de texto con pipeline `text-generation` y orientación conversacional, empaquetado específicamente para su ejecución en Apple Silicon mediante la librería MLX. El repositorio declara 28.783.227.618 parámetros (≈28,8 B) en safetensors y un tamaño total de 17,6 GB, lo que sitúa al modelo en la gama media-alta de tamaño y sugiere almacenamiento en precisión reducida.
 
-La relevancia del lanzamiento está en la combinación de tres factores: licencia Apache 2.0 (uso comercial sin restricciones de atribución adicionales), acceso restringido mediante gated access en HuggingFace y una build nativa para el stack MLX de Apple, que hasta ahora recibía menos atención que llama.cpp o GGUF en el ecosistema open source. El tag `nvfp4` apunta además a cuantización de 4 bits en formato floating point de NVIDIA, aunque el repositorio se distribuye en safetensors para MLX.
+La relevancia del lanzamiento está en la combinación de tres factores: licencia Apache 2.0 (uso comercial sin restricciones de atribución adicionales), acceso restringido mediante gated access en Hugging Face y una build nativa para el stack MLX de Apple, que hasta ahora recibía menos atención que llama.cpp o GGUF en el ecosistema open source. El tag `nvfp4` apunta además a cuantización de 4 bits en formato floating point de NVIDIA, aunque el repositorio se distribuye en safetensors para MLX.
 
 No se ha publicado en la información disponible documentación técnica sobre arquitectura, ventana de contexto, composición del dataset de entrenamiento ni idiomas soportados. La ficha refleja por tanto los datos verificables del repositorio y marca explícitamente como "no disponible" todo aquello que no puede confirmarse, incluyendo benchmarks y comparativas de rendimiento.
 
@@ -22,7 +22,7 @@ No se ha publicado en la información disponible documentación técnica sobre a
 | Formato de pesos | safetensors (librería MLX) |
 | Pipeline | text-generation |
 | Tamaño del repositorio | 17,6 GB |
-| Acceso | restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Fecha de creacion | 2026-10-21 |
 | Fecha de actualizacion | 2026-10-21 |
 | Descargas | 10 |
@@ -88,7 +88,7 @@ Los datos de los modelos comparados corresponden a sus especificaciones pública
 - Sesgos conocidos: no disponibles. Al no documentarse la composición del dataset ni los procesos de alineación, no puede evaluarse el riesgo de sesgo de género, etnia, idioma o ideología.
 - Riesgo de alucinación: no cuantificado. No hay evaluaciones de fidelidad factual ni de tasa de alucinación publicadas.
 - Limitaciones de contexto e idioma: desconocidas. El campo de idiomas del repositorio está vacío y no se declara ventana de contexto, por lo que no puede asumirse un rendimiento correcto en castellano ni en conversaciones largas.
-- Restricción de acceso: el repositorio es gated y exige aceptar condiciones en HuggingFace, lo que puede bloquear pipelines automatizados de descarga y despliegue en CI.
+- Restricción de acceso: el repositorio es gated y exige aceptar condiciones en Hugging Face, lo que puede bloquear pipelines automatizados de descarga y despliegue en CI.
 - Licencia: Apache 2.0 permite uso comercial y modificaciones sin obligación de atribución adicional, pero conviene verificar los términos del modelo base (no incluidos en la información disponible) por si añaden cláusulas adicionales.
 - Madurez: el repositorio tiene 10 descargas y 21 likes, con creación y última actualización en la misma fecha. Es un preview sin historial de mantenimiento que justifique su uso en producción crítica.
 - Compatibilidad de hardware limitada: esta build está pensada para MLX; no se confirma su funcionamiento en CUDA, ROCm ni CPU convencional.
@@ -96,7 +96,7 @@ Los datos de los modelos comparados corresponden a sus especificaciones pública
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/KRAFTON/Raon-1-mini-preview-mlx
+- Hugging Face: https://huggingface.co/KRAFTON/Raon-1-mini-preview-mlx
 - Repositorio MLX (framework de ejecución): no disponible en la información proporcionada
 - Paper o blog técnico del modelo: no disponible
 - Demo o espacio de inferencia: no disponible

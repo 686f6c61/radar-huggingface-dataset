@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio xw17/gemma-3-4b-it_SFT_lora_lonelinessdep es una publicacion en HuggingFace cuyo identificador indica una adaptacion LoRA entrenada mediante fine-tuning supervisado (SFT) sobre el modelo base gemma-3-4b-it de Google. El sufijo "lonelinessdep" sugiere una especializacion en contenido relacionado con soledad y depresion, aunque esta finalidad no se confirma en ninguna parte de la model card, que es la plantilla autogenerada de transformers y no contiene informacion rellenada por el autor. El repo ocupa 0,1 GB, un tamano coherente con un adaptador LoRA (decenas o centenas de megabytes) y no con pesos completos de un modelo de 4.000 millones de parametros, que en fp16 rondarian los 8 GB.
+El repositorio xw17/gemma-3-4b-it_SFT_lora_lonelinessdep es una publicacion en Hugging Face cuyo identificador indica una adaptacion LoRA entrenada mediante fine-tuning supervisado (SFT) sobre el modelo base gemma-3-4b-it de Google. El sufijo "lonelinessdep" sugiere una especializacion en contenido relacionado con soledad y depresion, aunque esta finalidad no se confirma en ninguna parte de la model card, que es la plantilla autogenerada de transformers y no contiene informacion rellenada por el autor. El repo ocupa 0,1 GB, un tamano coherente con un adaptador LoRA (decenas o centenas de megabytes) y no con pesos completos de un modelo de 4.000 millones de parametros, que en fp16 rondarian los 8 GB.
 
 Por tanto, se trata de un artefacto de investigacion sin documentacion tecnica: no declara licencia, idiomas, datos de entrenamiento, hiperparametros, procedencia del corpus ni resultados de evaluacion. Fue creado y actualizado el 2 de octubre de 2026 con ocho minutos de diferencia, sin descargas ni interacciones registradas en el momento de la consulta.
 
@@ -28,7 +28,7 @@ Su relevancia es limitada y de caracter exploratorio: puede resultar de interes 
 
 ## Arquitectura y entrenamiento
 
-No hay informacion verificable en la model card, que es la plantilla autogenerada por HuggingFace y mantiene todos los campos marcados como "[More Information Needed]" en las secciones de descripcion del modelo, datos de entrenamiento, hiperparametros y procedimiento. Lo unico deducible con cierta seguridad procede del propio identificador del repositorio: "SFT_lora" apunta a un ajuste supervisado con adaptadores de bajo rango, y "gemma-3-4b-it" apunta al modelo instructivo de 4B de la familia Gemma 3. El sufijo "lonelinessdep" sugiere un corpus orientado a soledad y depresion, sin que se especifiquen su procedencia, tamano, idioma, filtrado ni consideraciones eticas.
+No hay informacion verificable en la model card, que es la plantilla autogenerada por Hugging Face y mantiene todos los campos marcados como "[More Information Needed]" en las secciones de descripcion del modelo, datos de entrenamiento, hiperparametros y procedimiento. Lo unico deducible con cierta seguridad procede del propio identificador del repositorio: "SFT_lora" apunta a un ajuste supervisado con adaptadores de bajo rango, y "gemma-3-4b-it" apunta al modelo instructivo de 4B de la familia Gemma 3. El sufijo "lonelinessdep" sugiere un corpus orientado a soledad y depresion, sin que se especifiquen su procedencia, tamano, idioma, filtrado ni consideraciones eticas.
 
 En consecuencia, se desconocen el rango y los modulos objetivo del LoRA, la tasa de aprendizaje, el numero de pasos, el numero de tokens de entrenamiento, la estrategia de enmascarado de la funcion de perdida, si hubo etapas de RLHF o DPO posteriores, si se fusionaron los pesos y si existe algun proceso de evaluacion de seguridad. Tampoco hay informacion sobre tecnicas de eficiencia como decodificacion especulativa o atencion lineal. Cualquier afirmacion adicional al respecto seria especulacion.
 
@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Relacion con esta ficha |
 |---|---|---|---|---|---|
-| xw17/gemma-3-4b-it_SFT_lora_lonelinessdep | No disponible (adaptador sobre base de 4B) | No disponible | No disponible | HuggingFace, 0 descargas | Objeto de esta ficha |
-| google/gemma-3-4b-it (modelo base) | 4B | No disponible en esta ficha | Condiciones de uso de Gemma | HuggingFace | Base declarada en el identificador |
+| xw17/gemma-3-4b-it_SFT_lora_lonelinessdep | No disponible (adaptador sobre base de 4B) | No disponible | No disponible | Hugging Face, 0 descargas | Objeto de esta ficha |
+| google/gemma-3-4b-it (modelo base) | 4B | No disponible en esta ficha | Condiciones de uso de Gemma | Hugging Face | Base declarada en el identificador |
 | Otras adaptaciones LoRA de dominio afectivo | No disponible | No disponible | No disponible | No identificadas en la informacion disponible | Sin datos para comparar |
 
 No se dispone de informacion suficiente para establecer una comparativa cuantitativa con alternativas de la misma categoria. No se han identificado en la informacion proporcionada otros modelos comparables con los que contrastar parametros, contexto, rendimiento o licencia.
@@ -96,7 +96,7 @@ No se dispone de informacion suficiente para establecer una comparativa cuantita
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/xw17/gemma-3-4b-it_SFT_lora_lonelinessdep
+- Repositorio en Hugging Face: https://huggingface.co/xw17/gemma-3-4b-it_SFT_lora_lonelinessdep
 - Modelo base declarado en el identificador: https://huggingface.co/google/gemma-3-4b-it
 - Referencia citada en las etiquetas del repositorio (Lacoste et al., 2019, sobre estimacion de emisiones): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico mencionada en la plantilla: https://mlco2.github.io/impact

@@ -4,7 +4,7 @@
 
 ## Resumen
 
-Este repositorio no contiene un modelo entrenado, sino un conjunto de cuantizaciones GGUF publicadas por el usuario mradermacher sobre el modelo base `Guilherme34/Firefly-v6-DONTDOWNLOAD-STILLONPROGRESS`. mradermacher actua como cuantizador: toma pesos en formato HuggingFace y los convierte a GGUF con tecnicas de imatrix/weighted quantization para su uso en llama.cpp y derivados. El modelo original, segun las etiquetas de la model card, es un ajuste fino conversacional orientado a tool use y roleplay, entrenado con Axolotl y etiquetado como `gemma4`, lo que sugiere una arquitectura de la familia Gemma.
+Este repositorio no contiene un modelo entrenado, sino un conjunto de cuantizaciones GGUF publicadas por el usuario mradermacher sobre el modelo base `Guilherme34/Firefly-v6-DONTDOWNLOAD-STILLONPROGRESS`. mradermacher actua como cuantizador: toma pesos en formato Hugging Face y los convierte a GGUF con tecnicas de imatrix/weighted quantization para su uso en llama.cpp y derivados. El modelo original, segun las etiquetas de la model card, es un ajuste fino conversacional orientado a tool use y roleplay, entrenado con Axolotl y etiquetado como `gemma4`, lo que sugiere una arquitectura de la familia Gemma.
 
 El estado del repositorio es incompleto y practicamente vacio: el tamano declarado es de 0,0 GB, no acumula descargas ni interacciones y la unica entrada de la tabla de ficheros es el fichero `imatrix.gguf` de 0,1 GB, que no es un modelo utilizable sino una matriz de importancia para generar cuantizaciones. La propia model card lista una bateria prevista de cuantizaciones (Q2_K, IQ3_M, Q4_K_M, Q6_K, IQ1_S, etc.), pero ninguna aparece publicada en este repositorio. El sufijo del nombre del modelo base, `DONTDOWNLOAD-STILLONPROGRESS`, es una advertencia explicita del autor original de que el trabajo no esta terminado.
 
@@ -21,7 +21,7 @@ Por tanto, su relevancia practica actual es nula para produccion: no hay pesos d
 | Tipos de cuantizacion | Previstos en la model card: Q2_K, Q2_K_S, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, IQ1_S, IQ1_M, IQ3_XXS, IQ3_XS, IQ3_S, IQ3_M, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_NL (small), IQ4_XS, Q4_0, Q4_1, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K. Publicados en este repositorio: ninguno (solo el fichero imatrix) |
 | Idiomas soportados | en (ingles) |
 | Licencia | no disponible |
-| Formato de pesos | GGUF (repositorio de cuantizacion); el modelo base se distribuye en formato HuggingFace/transformers |
+| Formato de pesos | GGUF (repositorio de cuantizacion); el modelo base se distribuye en formato Hugging Face/transformers |
 | Tamano del repositorio | 0,0 GB |
 | Fichero incluido | `Firefly-v6-DONTDOWNLOAD-STILLONPROGRESS.imatrix.gguf` (0,1 GB), tipo imatrix, no es un modelo ejecutable |
 | Libreria declarada | transformers |
@@ -79,7 +79,7 @@ No disponible. No hay datos publicados de parametros, contexto, rendimiento o li
 | Firefly-v6-DONTDOWNLOAD-STILLONPROGRESS-i1-GGUF (este repositorio) | Cuantizacion imatrix | no disponible (metadato no fiable) | no disponible | no disponible | Solo fichero imatrix (0,1 GB); sin pesos |
 | Firefly-v6-DONTDOWNLOAD-STILLONPROGRESS-GGUF | Repositorio estatico hermano del mismo cuantizador | no disponible | no disponible | no disponible | No verificado en esta busqueda |
 | Firefly-v5-alpha-v2-GGUF | Version anterior del mismo linaje, mismo cuantizador | no disponible | no disponible | no disponible | Publicado |
-| Guilherme34/Firefly-v6-DONTDOWNLOAD-STILLONPROGRESS | Modelo base en formato HuggingFace | no disponible | no disponible | no disponible | Marcado por el autor como no descargable y en progreso |
+| Guilherme34/Firefly-v6-DONTDOWNLOAD-STILLONPROGRESS | Modelo base en formato Hugging Face | no disponible | no disponible | no disponible | Marcado por el autor como no descargable y en progreso |
 
 ## Limitaciones y advertencias
 
@@ -95,7 +95,7 @@ No disponible. No hay datos publicados de parametros, contexto, rendimiento o li
 
 ## Enlaces
 
-- Repositorio HuggingFace (este modelo): https://huggingface.co/mradermacher/Firefly-v6-DONTDOWNLOAD-STILLONPROGRESS-i1-GGUF
+- Repositorio Hugging Face (este modelo): https://huggingface.co/mradermacher/Firefly-v6-DONTDOWNLOAD-STILLONPROGRESS-i1-GGUF
 - Repositorio estatico hermano citado en la model card: https://huggingface.co/mradermacher/Firefly-v6-DONTDOWNLOAD-STILLONPROGRESS-GGUF
 - Modelo base: https://huggingface.co/Guilherme34/Firefly-v6-DONTDOWNLOAD-STILLONPROGRESS
 - Version anterior del mismo linaje: https://huggingface.co/mradermacher/Firefly-v5-alpha-v2-GGUF

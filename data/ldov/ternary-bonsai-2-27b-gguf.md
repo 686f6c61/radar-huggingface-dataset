@@ -13,7 +13,7 @@ La relevancia del modelo esta en el regimen sub-4-bit: segun la model card, las 
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Transformer causal de atencion hibrida (~75 % atencion lineal / ~25 % atencion completa), SwiGLU MLP, RoPE, RMSNorm; 64 bloques en el backbone de lenguaje y 27 bloques en la torre de vision |
-| Parametros totales | 26.895.998.464 (26,9 B) segun los metadatos de HuggingFace; la model card declara 27,36 B totales (24,35 B backbone de lenguaje + 2,54 B embeddings/LM head + 0,46 B torre de vision) |
+| Parametros totales | 26.895.998.464 (26,9 B) segun los metadatos de Hugging Face; la model card declara 27,36 B totales (24,35 B backbone de lenguaje + 2,54 B embeddings/LM head + 0,46 B torre de vision) |
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | 262K tokens (heredada del modelo base) |
 | Tipos de cuantizacion | Ternaria g128 ({−1, 0, +1} con escala FP16 compartida por grupo de 128 pesos): PTQ1_0 con trits densos (1,75 bits/peso, 5,95 GB) y PQ2_0 con cada trit en una ranura de 2 bits (2,13 bits/peso, 7,21 GB); la torre de vision se distribuye aparte en un pack mmproj Q8_0 de ~0,63 GB |
@@ -99,13 +99,13 @@ No se dispone de comparativas con modelos de terceros en la informacion proporci
 - Los pesos estan almacenados en una base rotada por Hadamard. Un runtime sin el soporte correspondiente no cargara el fichero, por lo que no basta con cualquier version generica de llama.cpp: hace falta el fork con los kernels ternarios o una version que implemente la rotacion declarada en los metadatos.
 - El soporte de motores alternativos (vLLM, TGI, Ollama) no esta documentado; la integracion en produccion queda limitada a llama.cpp (CUDA, Metal, CPU) y, en Apple Silicon, a MLX.
 - El repositorio figura a nombre del usuario ldov, mientras que la model card apunta a repositorios de prism-ml y a la organizacion PrismML-Eng. Conviene verificar la correspondencia entre ambas fuentes antes de usarlo en produccion.
-- Los metadatos de HuggingFace registran 0 descargas y 0 likes, y la fecha de creacion indicada es el 21 de septiembre de 2026, posterior a la fecha habitual de consulta; se trata de un artefacto poco rodado y sin validacion de la comunidad.
+- Los metadatos de Hugging Face registran 0 descargas y 0 likes, y la fecha de creacion indicada es el 21 de septiembre de 2026, posterior a la fecha habitual de consulta; se trata de un artefacto poco rodado y sin validacion de la comunidad.
 - Restricciones de licencia: Apache 2.0 permite uso comercial, pero la licencia del modelo base Qwen3.8-27B no se detalla en la informacion disponible y podria imponer condiciones adicionales; conviene comprobarla antes de un despliegue comercial.
 - Contexto de 262K tokens heredado del modelo base: no se han publicado mediciones de rendimiento efectivo a esa longitud en esta cuantizacion concreta.
 
 ## Enlaces
 
-- Pagina de HuggingFace del modelo: https://huggingface.co/ldov/Ternary-Bonsai-2-27B-gguf
+- Pagina de Hugging Face del modelo: https://huggingface.co/ldov/Ternary-Bonsai-2-27B-gguf
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Variante MLX 2-bit: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-mlx-2bit
 - Web de Prism ML: https://prismml.com

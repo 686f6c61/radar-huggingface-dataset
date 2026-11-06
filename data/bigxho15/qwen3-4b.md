@@ -23,7 +23,7 @@ La relevancia práctica del modelo está en su tamaño: 4B parámetros permiten 
 | Modelo base | Qwen/Qwen3-4B-Base |
 | ID de token de cierre de razonamiento | 151668 (`</think>`) |
 | Descargas / likes | 0 / 0 |
-| Fecha de creación del repo | 24 de septiembre de 2026 (según metadatos de HuggingFace) |
+| Fecha de creación del repo | 24 de septiembre de 2026 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -99,7 +99,7 @@ No se dispone de comparativas de benchmarks entre estos modelos dentro de la inf
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bigxho15/Qwen3-4B
+- Repositorio en Hugging Face: https://huggingface.co/bigxho15/Qwen3-4B
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3-4B-Base
 - Modelo oficial Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
 - Licencia Apache 2.0 del modelo oficial: https://huggingface.co/Qwen/Qwen3-4B/blob/main/LICENSE

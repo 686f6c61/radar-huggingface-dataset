@@ -68,6 +68,6 @@ No disponible. Este modelo no es comparable con modelos de lenguaje o visión de
 
 ## Enlaces
 
-- [HuggingFace - Aaravbhat2007/contrastive](https://huggingface.co/Aaravbhat2007/contrastive)
+- [Hugging Face - Aaravbhat2007/contrastive](https://huggingface.co/Aaravbhat2007/contrastive)
 - [Awesome-Contrastive-Learning (referencia general sobre aprendizaje contrastivo)](https://github.com/ishandutta2007/Awesome-Contrastive-Learning)
 - [Contrastors - entrenamiento contrastivo en PyTorch (referencia de herramientas)](https://github.com/nomic-ai/contrastors)

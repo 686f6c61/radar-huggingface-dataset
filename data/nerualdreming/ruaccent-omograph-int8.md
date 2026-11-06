@@ -89,8 +89,8 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni benchmarks de propó
 
 | Modelo | Tipo | Tamano de pesos | Fidelidad respecto a fp32 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `big_poetry` int8 weight-only (este repositorio) | Cross-encoder BERT-base en ONNX int8 | 181,6 MB | 213 / 213 en homografos; 29 / 33 lecturas correctas | MIT | ONNX, descarga directa desde HuggingFace |
-| `turbo3.1` int8 weight-only (este repositorio) | Cross-encoder DeBERTa 6 capas en ONNX int8 | 92,3 MB | 211 / 213 en homografos; 28 / 33 lecturas correctas | MIT | ONNX, descarga directa desde HuggingFace |
+| `big_poetry` int8 weight-only (este repositorio) | Cross-encoder BERT-base en ONNX int8 | 181,6 MB | 213 / 213 en homografos; 29 / 33 lecturas correctas | MIT | ONNX, descarga directa desde Hugging Face |
+| `turbo3.1` int8 weight-only (este repositorio) | Cross-encoder DeBERTa 6 capas en ONNX int8 | 92,3 MB | 211 / 213 en homografos; 28 / 33 lecturas correctas | MIT | ONNX, descarga directa desde Hugging Face |
 | `big_poetry` fp32 upstream (ruaccent/accentuator) | Cross-encoder BERT-base en fp32 | 713,5 MB | Referencia | MIT | Pesos originales del proyecto RUAccent |
 | `turbo3.1` fp32 upstream (ruaccent/accentuator) | Cross-encoder DeBERTa 6 capas en fp32 | 359,3 MB | Referencia | MIT | Pesos originales del proyecto RUAccent |
 | `tiny2` upstream (cuantizacion dinamica) | Modelo de homografos en int8 dinamico | No disponible | 24 / 33 lecturas correctas | MIT | Incluido en RUAccent |
@@ -114,9 +114,9 @@ Dentro de la misma tarea no se documentan alternativas externas comparables en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nerualdreming/ruaccent-omograph-int8
+- Modelo en Hugging Face: https://huggingface.co/nerualdreming/ruaccent-omograph-int8
 - Modelo base: https://huggingface.co/ruaccent/accentuator
 - Repositorio del autor: https://huggingface.co/nerualdreming/models
 - Proyecto RUAccent en GitHub: https://github.com/Den4ikAI/ruaccent
 - Codigo del modelo de acentuacion de RUAccent: https://github.com/Den4ikAI/ruaccent/blob/main/ruaccent/accent_model.py
-- Modelos etiquetados como ruaccent en HuggingFace: https://huggingface.co/models?other=ruaccent
+- Modelos etiquetados como ruaccent en Hugging Face: https://huggingface.co/models?other=ruaccent

@@ -30,7 +30,7 @@ Tampoco se documentan el volumen de tokens de entrenamiento, la composicion del 
 ## Capacidades
 
 - Generacion de texto conversacional en ingles, segun la etiqueta `conversational` del repositorio.
-- Compatibilidad con endpoints (`endpoints_compatible`), lo que permite desplegarlo en infraestructuras compatibles con la API de HuggingFace.
+- Compatibilidad con endpoints (`endpoints_compatible`), lo que permite desplegarlo en infraestructuras compatibles con la API de Hugging Face.
 - Ejecucion local mediante llama.cpp y derivados (Ollama, LM Studio, koboldcpp) gracias al formato GGUF.
 - No se documentan capacidades de tool calling, function calling, agentes, vision, audio ni modo thinking.
 - Capacidad multilingue limitada al ingles declarado; no hay evidencia de soporte de otros idiomas.

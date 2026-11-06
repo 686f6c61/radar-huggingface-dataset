@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ViT-B-16-SigLIP2-cs-en-8bit es una version modificada y cuantizada del modelo SigLIP 2 ViT-B/16 de Google, adaptada para busqueda de imagenes por texto en checo e ingles. Lo publica el usuario vlk74 en HuggingFace y parte del export ONNX del proyecto Immich sobre los pesos originales de SigLIP 2 (WebLI). El modelo resuelve el problema del tamano: reduce el repo de 1.536 MB a 276 MB manteniendo practicamente intacta la calidad de recuperacion en los dos idiomas objetivo.
+ViT-B-16-SigLIP2-cs-en-8bit es una version modificada y cuantizada del modelo SigLIP 2 ViT-B/16 de Google, adaptada para busqueda de imagenes por texto en checo e ingles. Lo publica el usuario vlk74 en Hugging Face y parte del export ONNX del proyecto Immich sobre los pesos originales de SigLIP 2 (WebLI). El modelo resuelve el problema del tamano: reduce el repo de 1.536 MB a 276 MB manteniendo practicamente intacta la calidad de recuperacion en los dos idiomas objetivo.
 
 La modificacion principal consiste en recortar la tabla de word-pieces del codificador de texto de 256.000 a 82.948 entradas, conservando solo las piezas usadas por 200.000 frases por idioma (noticias y Wikipedia de Leipzig Corpora Collection), prompts de etiquetado de imagenes y los 256 byte-pieces de respaldo. Ademas, los pesos de las capas `MatMul` y la tabla de word-pieces se almacenan como enteros de 8 bits con una escala por fila o columna, mientras los calculos intermedios siguen en float32.
 
@@ -114,7 +114,7 @@ La ventaja diferencial frente al export de Immich y a los pesos originales es el
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vlk74/ViT-B-16-SigLIP2-cs-en-8bit
+- Modelo en Hugging Face: https://huggingface.co/vlk74/ViT-B-16-SigLIP2-cs-en-8bit
 - Modelo base (timm): https://huggingface.co/timm/ViT-B-16-SigLIP2
 - Export ONNX de Immich: https://huggingface.co/immich-app/ViT-B-16-SigLIP2__webli
 - Paper de SigLIP 2: https://arxiv.org/abs/2502.14786

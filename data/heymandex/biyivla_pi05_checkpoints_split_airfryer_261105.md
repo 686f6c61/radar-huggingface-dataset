@@ -83,7 +83,7 @@ No disponible. La información proporcionada no incluye comparaciones con otras 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/HeymanDex/BiyiVLA_Pi05_Checkpoints_split_airfryer_261105
+- Repositorio Hugging Face: https://huggingface.co/HeymanDex/BiyiVLA_Pi05_Checkpoints_split_airfryer_261105
 - Dataset: https://huggingface.co/datasets/PPPPPilot/BiyiVLA
 - Repositorio anterior (origen de los checkpoints): https://huggingface.co/HeymanDex/BiyiVLA-pi05-checkpoints/tree/7e2c703467fdef97aa032879fc33f280fa2c7eaf/resume/pi05_biyi_split198_bs128_1203_20261104_btWH0z
 - Registro de entrenamiento en W&B: https://wandb.ai/y8hong-heymandex/BiyiVLA-Stage1/runs/lfm0133k

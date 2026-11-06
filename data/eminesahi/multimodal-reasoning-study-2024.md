@@ -4,7 +4,7 @@
 
 El repositorio `eminesahi/multimodal-reasoning-study-2024` no contiene un modelo de inteligencia artificial entrenado, sino un conjunto de notas de investigación exploratoria sobre razonamiento multimodal. Fue publicado por el autor `eminesahi` con licencia MIT y su objetivo es documentar el diseño de un estudio comparativo, incluyendo el alcance de la pregunta de investigación, posibles variables de confusión, una propuesta de comparación con líneas base, y criterios de reproducibilidad.
 
-No hay ningún checkpoint entrenado, ni código liberado, ni resultados experimentales. La model card indica explícitamente que las secciones etiquetadas como planes o hipótesis no deben interpretarse como resultados. El repositorio tiene un tamaño de 0.0 GB y contiene dos archivos: `README.md` y `summary.md`. El valor de 24.832 parámetros totales declarado en las etiquetas de HuggingFace proviene de un archivo safetensors, pero en la práctica no hay pesos de modelo disponibles.
+No hay ningún checkpoint entrenado, ni código liberado, ni resultados experimentales. La model card indica explícitamente que las secciones etiquetadas como planes o hipótesis no deben interpretarse como resultados. El repositorio tiene un tamaño de 0.0 GB y contiene dos archivos: `README.md` y `summary.md`. El valor de 24.832 parámetros totales declarado en las etiquetas de Hugging Face proviene de un archivo safetensors, pero en la práctica no hay pesos de modelo disponibles.
 
 Por tanto, este repositorio no ofrece ninguna capacidad de inferencia ni puede ser utilizado como un modelo en producción. Su valor reside en el material de referencia para investigadores que deseen planificar estudios de razonamiento multimodal, especialmente en conjuntos de datos como VQAv2, GQA y NLVR2.
 
@@ -74,5 +74,5 @@ No disponible. No es un modelo comparable con otros modelos multimodales como LL
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/eminesahi/multimodal-reasoning-study-2024
+- Repositorio en Hugging Face: https://huggingface.co/eminesahi/multimodal-reasoning-study-2024
 - No se han encontrado otros enlaces relevantes en la busqueda web; los resultados obtenidos pertenecian a contenido no relacionado.

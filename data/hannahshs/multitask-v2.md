@@ -2,7 +2,7 @@
 
 ## Resumen
 
-multitask-v2 es un prototipo de investigación publicado por el usuario hannahshs en HuggingFace, etiquetado como arquitectura híbrida ("hybrid") y orientado a tareas múltiples ("multitask"). No es un modelo entrenado: la propia model card indica explícitamente que el archivo `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo y que no se presenta como un checkpoint con benchmarks. El repositorio ocupa 0,0 GB y los metadatos de safetensors declaran 33.088 parámetros totales, un orden de magnitud propio de un prototipo de juguete y no de un modelo de producción.
+multitask-v2 es un prototipo de investigación publicado por el usuario hannahshs en Hugging Face, etiquetado como arquitectura híbrida ("hybrid") y orientado a tareas múltiples ("multitask"). No es un modelo entrenado: la propia model card indica explícitamente que el archivo `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo y que no se presenta como un checkpoint con benchmarks. El repositorio ocupa 0,0 GB y los metadatos de safetensors declaran 33.088 parámetros totales, un orden de magnitud propio de un prototipo de juguete y no de un modelo de producción.
 
 El interés del artefacto es metodológico, no de rendimiento. El autor documenta una configuración de arquitectura concreta (atención estándar, fusión por tensores, activación swish, normalización scalenorm) y una receta de experimento por defecto basada en el optimizador adafactor con planificador onecycle, dejando claro que esos valores son puntos de partida del script y no evidencia de un entrenamiento completado. La model card incluye además una guía de evaluación que pide conjuntos de validación específicos por tarea, al menos tres semillas y una línea base de capacidad equivalente.
 
@@ -71,7 +71,7 @@ No disponible. La model card no publica métricas, arquitectura completa ni idio
 | Contexto | no disponible | no disponible |
 | Rendimiento | sin benchmarks publicados | no disponible |
 | Licencia | bsd-3-clause | no disponible |
-| Disponibilidad | repositorio en HuggingFace, 0 descargas y 0 likes | no disponible |
+| Disponibilidad | repositorio en Hugging Face, 0 descargas y 0 likes | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -87,7 +87,7 @@ No disponible. La model card no publica métricas, arquitectura completa ni idio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hannahshs/multitask-v2
-- Archivos del repositorio citados en la model card: `predict.py`, `config.json`, `training_args.json`, `model.safetensors`, `README.md` (accesibles desde la propia página de HuggingFace)
+- Hugging Face: https://huggingface.co/hannahshs/multitask-v2
+- Archivos del repositorio citados en la model card: `predict.py`, `config.json`, `training_args.json`, `model.safetensors`, `README.md` (accesibles desde la propia página de Hugging Face)
 - Paper, blog o demo adicionales: no disponibles en la información proporcionada
 - Nota: los resultados de la búsqueda web recibidos no guardan relación con el modelo (corresponden a un sitio de un club de fútbol) y no se han utilizado como fuente.

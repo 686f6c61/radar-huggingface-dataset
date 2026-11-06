@@ -2,7 +2,7 @@
 
 ## Resumen
 
-U2-multilingual es un servicio de reconocimiento automatico del habla (ASR) multilingue desarrollado por yinheyugongqiao (vinculado al dominio unisound.com) y distribuido exclusivamente a traves de una API HTTPS autenticada. No se publican pesos descargables: el repositorio de HuggingFace actua unicamente como punto de documentacion y acceso al endpoint `https://llm-eval.unisound.com/asr/v1/audio/transcriptions`. El modelo declara soporte para 13 idiomas, aunque la API solo expone actualmente cinco: aleman, italiano, portugues, espanol y frances.
+U2-multilingual es un servicio de reconocimiento automatico del habla (ASR) multilingue desarrollado por yinheyugongqiao (vinculado al dominio unisound.com) y distribuido exclusivamente a traves de una API HTTPS autenticada. No se publican pesos descargables: el repositorio de Hugging Face actua unicamente como punto de documentacion y acceso al endpoint `https://llm-eval.unisound.com/asr/v1/audio/transcriptions`. El modelo declara soporte para 13 idiomas, aunque la API solo expone actualmente cinco: aleman, italiano, portugues, espanol y frances.
 
 El problema que resuelve es la transcripcion de audio a texto en entornos empresariales con grabaciones de entrevistas, reuniones, notas de voz y audio con ruido de fondo. Cada peticion acepta un unico archivo WAV mono a 16 kHz de hasta 300 segundos y 25 MiB, y devuelve un JSON con el texto transcrito, el nombre del modelo y el UUID de la peticion.
 
@@ -98,6 +98,6 @@ La comparacion se limita a caracteristicas de disponibilidad y licencia, ya que 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yinheyugongqiao/U2-multilingual
+- Modelo en Hugging Face: https://huggingface.co/yinheyugongqiao/U2-multilingual
 - Endpoint de la API: https://llm-eval.unisound.com/asr/v1/audio/transcriptions
 - Normalizador y funciones WER de referencia (open_asr_leaderboard, version congelada): https://github.com/huggingface/open_asr_leaderboard/tree/f58d58a3f98eb9d5c2dd284ce85954b3cd801759/normalizer

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Dama-aibrain es un ajuste fino (fine-tune) del modelo base `unsloth/gemma-4-e2b-it-unsloth-bnb-4bit`, publicado por el usuario hope6803 en HuggingFace bajo licencia Apache 2.0. Se trata de un modelo de lenguaje causal con 5.123.178.051 parametros totales segun los pesos en safetensors, y su pipeline declarado es `image-text-to-text`, lo que indica soporte declarado para entradas multimodales de imagen y texto, aunque no se detallan las capacidades de vision en la model card.
+Dama-aibrain es un ajuste fino (fine-tune) del modelo base `unsloth/gemma-4-e2b-it-unsloth-bnb-4bit`, publicado por el usuario hope6803 en Hugging Face bajo licencia Apache 2.0. Se trata de un modelo de lenguaje causal con 5.123.178.051 parametros totales segun los pesos en safetensors, y su pipeline declarado es `image-text-to-text`, lo que indica soporte declarado para entradas multimodales de imagen y texto, aunque no se detallan las capacidades de vision en la model card.
 
-El modelo se presenta como un ajuste fino generico de instrucciones ("Uploaded finetuned model"), entrenado segun el autor con Unsloth y la libreria TRL de HuggingFace, con la mencion de un entrenamiento "2x mas rapido". No se aportan detalles sobre el dataset de ajuste, el numero de tokens de entrenamiento ni la metodologia de alineacion (RLHF, DPO u otras). La model card es minima y no incluye resultados de evaluacion.
+El modelo se presenta como un ajuste fino generico de instrucciones ("Uploaded finetuned model"), entrenado segun el autor con Unsloth y la libreria TRL de Hugging Face, con la mencion de un entrenamiento "2x mas rapido". No se aportan detalles sobre el dataset de ajuste, el numero de tokens de entrenamiento ni la metodologia de alineacion (RLHF, DPO u otras). La model card es minima y no incluye resultados de evaluacion.
 
 Es relevante principalmente como ejemplo de la practica actual de publicar adaptaciones de modelos Gemma mediante pipelines de entrenamiento eficientes (Unsloth + TRL). Hay que tener en cuenta que existen multiples repositorios con el mismo nombre (`nexflow/dama-aibrain`, `ic4u2u/dama-aibrain`, `spoindo/dama-aibrain`, `artnfull/dama-aibrain`, `tlsrmawl/dama-aibrain`), lo que sugiere una plantilla o re-subida comun y dificulta trazar la procedencia real del ajuste.
 
@@ -25,7 +25,7 @@ Es relevante principalmente como ejemplo de la practica actual de publicar adapt
 
 El modelo se basa en `unsloth/gemma-4-e2b-it-unsloth-bnb-4bit`, un derivado de la familia Gemma distribuido por Unsloth ya cuantizado en 4 bits (bnb-4bit). La nomenclatura "e2b" sigue la convencion de Gemma para modelos con parametros efectivos reducidos, aunque no se dispone de confirmacion oficial de los parametros activos en esta ficha. Los pesos publicados en safetensors suman 5,1 B parametros totales, y el tamano del repositorio es de 16,3 GB, coherente con pesos almacenados en precision alta ademas de formatos alternativos.
 
-No hay informacion publica sobre la composicion del dataset de ajuste, el volumen de tokens empleado, ni el uso de tecnicas de alineacion como RLHF o DPO. La unica innovacion tecnica mencionada es el uso de Unsloth y TRL de HuggingFace para acelerar el entrenamiento aproximadamente 2x. No se documentan tecnicas de atencion (linear attention, decodificacion especulativa, etc.) ni detalles del tokenizador.
+No hay informacion publica sobre la composicion del dataset de ajuste, el volumen de tokens empleado, ni el uso de tecnicas de alineacion como RLHF o DPO. La unica innovacion tecnica mencionada es el uso de Unsloth y TRL de Hugging Face para acelerar el entrenamiento aproximadamente 2x. No se documentan tecnicas de atencion (linear attention, decodificacion especulativa, etc.) ni detalles del tokenizador.
 
 ## Capacidades
 
@@ -66,10 +66,10 @@ Los datos de rendimiento no estan disponibles, por lo que la comparacion se limi
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| hope6803/dama-aibrain | 5,1 B | 32.768 tokens (segun terceros) | apache-2.0 | HuggingFace, con variantes GGUF |
-| spoindo/dama-aibrain (mismo nombre) | 5,1 B | 32.768 tokens | apache-2.0 | HuggingFace, API en Featherless |
-| artnfull/dama-aibrain (mismo nombre) | 5,1 B | no disponible | apache-2.0 | HuggingFace, API en Featherless |
-| Gemma base (unsloth/gemma-4-e2b-it) | no disponible | no disponible | segun modelo base | HuggingFace |
+| hope6803/dama-aibrain | 5,1 B | 32.768 tokens (segun terceros) | apache-2.0 | Hugging Face, con variantes GGUF |
+| spoindo/dama-aibrain (mismo nombre) | 5,1 B | 32.768 tokens | apache-2.0 | Hugging Face, API en Featherless |
+| artnfull/dama-aibrain (mismo nombre) | 5,1 B | no disponible | apache-2.0 | Hugging Face, API en Featherless |
+| Gemma base (unsloth/gemma-4-e2b-it) | no disponible | no disponible | segun modelo base | Hugging Face |
 
 No se dispone de datos de benchmarks ni de comparativas de rendimiento con modelos de la misma categoria; cualquier comparacion cuantitativa seria especulativa.
 
@@ -86,7 +86,7 @@ No se dispone de datos de benchmarks ni de comparativas de rendimiento con model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hope6803/dama-aibrain
+- Modelo en Hugging Face: https://huggingface.co/hope6803/dama-aibrain
 - Repositorio homonimo 1: https://huggingface.co/nexflow/dama-aibrain
 - Repositorio homonimo 2: https://huggingface.co/ic4u2u/dama-aibrain
 - API en Featherless (spoindo): https://featherless.ai/models/spoindo/dama-aibrain

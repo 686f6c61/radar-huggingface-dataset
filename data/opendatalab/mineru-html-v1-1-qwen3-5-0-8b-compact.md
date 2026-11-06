@@ -78,6 +78,6 @@ No se dispone de datos de rendimiento que permitan una comparacion cuantitativa 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/opendatalab/MinerU-HTML-v1.1-qwen3.5-0.8B-compact
+- Hugging Face: https://huggingface.co/opendatalab/MinerU-HTML-v1.1-qwen3.5-0.8B-compact
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Organizacion OpenDataLab: https://huggingface.co/opendatalab

@@ -70,7 +70,7 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (ad
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/hfunknown/qwen3-8b-knapsack-lora-persistent-seed1337
+- Adaptador en Hugging Face: https://huggingface.co/hfunknown/qwen3-8b-knapsack-lora-persistent-seed1337
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Repositorio similar (posible duplicado): https://huggingface.co/TieuDaoChanNhan/qwen3-8b-persistent-knapsack-lora-seed1337
 - Repositorio oficial de la serie Qwen3: https://github.com/QwenLM/Qwen3

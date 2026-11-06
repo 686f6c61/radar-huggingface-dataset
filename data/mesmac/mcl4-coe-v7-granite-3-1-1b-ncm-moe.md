@@ -80,9 +80,9 @@ Estas métricas son específicas del pipeline del autor y no son comparables dir
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MCL4-COE-v7-Granite-3.1-1B-NCM-MoE | 1,77B (40 expertos, top_k=8) | no disponible | Apache 2.0 | HuggingFace (46 descargas) |
-| ibm-granite/granite-3.1-1b-a400m-instruct | ~1,3B (A400M) | 128K | Apache 2.0 | HuggingFace (oficial IBM) |
-| Modelos MoE pequeños tipo Qwen1.5-MoE-A2.7B | 14,3B totales / 2,7B activos | 32K | Apache 2.0 | HuggingFace |
+| MCL4-COE-v7-Granite-3.1-1B-NCM-MoE | 1,77B (40 expertos, top_k=8) | no disponible | Apache 2.0 | Hugging Face (46 descargas) |
+| ibm-granite/granite-3.1-1b-a400m-instruct | ~1,3B (A400M) | 128K | Apache 2.0 | Hugging Face (oficial IBM) |
+| Modelos MoE pequeños tipo Qwen1.5-MoE-A2.7B | 14,3B totales / 2,7B activos | 32K | Apache 2.0 | Hugging Face |
 
 La comparación con alternativas MoE de tamaño similar es limitada porque el checkpoint es un experimento de investigación sin benchmarks públicos. El base Granite 3.1 1B es la referencia directa y cuenta con documentación y evaluación oficial de IBM.
 
@@ -90,7 +90,7 @@ La comparación con alternativas MoE de tamaño similar es limitada porque el ch
 
 - Modelo de investigación con 46 descargas y 0 likes: no hay validación independiente de su calidad.
 - Sin benchmarks estándar publicados; las métricas de la model card son internas y no comparables con MMLU, HumanEval o GSM8K.
-- El pipeline no está declarado en HuggingFace, lo que dificulta el uso directo con transformers.
+- El pipeline no está declarado en Hugging Face, lo que dificulta el uso directo con transformers.
 - Requiere la librería propia mcl4_coe del repositorio del autor; no es compatible de forma nativa con ecosistemas estándar como vLLM o llama.cpp.
 - Idiomas soportados no especificados; no se puede garantizar comportamiento multilingüe.
 - Longitud de contexto no confirmada para este checkpoint (aunque el base soporte 128K).
@@ -101,6 +101,6 @@ La comparación con alternativas MoE de tamaño similar es limitada porque el ch
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mesmac/MCL4-COE-v7-Granite-3.1-1B-NCM-MoE
+- Hugging Face: https://huggingface.co/mesmac/MCL4-COE-v7-Granite-3.1-1B-NCM-MoE
 - Repositorio de código y documentación técnica: https://github.com/mESmaC/mcl4-coe-ncm
 - Modelo base: https://huggingface.co/ibm-granite/granite-3.1-1b-a400m-instruct

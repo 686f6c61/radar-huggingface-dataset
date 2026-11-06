@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `hxnney/VERO-Mini` es un repositorio publicado en HuggingFace por el usuario `hxnney` bajo la etiqueta de librería `transformers`. Según la información disponible en la plataforma, el repositorio contiene pesos en formato `safetensors` y es compatible con endpoints de HuggingFace, pero no se proporciona ninguna descripción técnica del modelo. La model card es la plantilla autogenerada por HuggingFace, con todos los campos marcados como "More Information Needed". No hay datos sobre arquitectura, tamaño, contexto, idiomas ni licencia. El repositorio tiene 0 descargas y 0 likes, y el tamaño del repo es de 0.0 GB, lo que sugiere que no contiene pesos reales o que estos no se han subido. No se puede confirmar que este modelo esté relacionado con la familia "Vero" descrita en un paper de arXiv sobre razonamiento visual, ya que no hay evidencia en la metadata. En resumen, se trata de un modelo sin información pública verificable.
+El modelo `hxnney/VERO-Mini` es un repositorio publicado en Hugging Face por el usuario `hxnney` bajo la etiqueta de librería `transformers`. Según la información disponible en la plataforma, el repositorio contiene pesos en formato `safetensors` y es compatible con endpoints de Hugging Face, pero no se proporciona ninguna descripción técnica del modelo. La model card es la plantilla autogenerada por Hugging Face, con todos los campos marcados como "More Information Needed". No hay datos sobre arquitectura, tamaño, contexto, idiomas ni licencia. El repositorio tiene 0 descargas y 0 likes, y el tamaño del repo es de 0.0 GB, lo que sugiere que no contiene pesos reales o que estos no se han subido. No se puede confirmar que este modelo esté relacionado con la familia "Vero" descrita en un paper de arXiv sobre razonamiento visual, ya que no hay evidencia en la metadata. En resumen, se trata de un modelo sin información pública verificable.
 
 ## Especificaciones técnicas
 
@@ -29,7 +29,7 @@ No se han documentado capacidades específicas. No hay información sobre genera
 
 ## Casos de uso
 
-No se pueden proporcionar casos de uso concretos porque no existe información pública sobre las capacidades del modelo. Cualquier aplicación práctica sería especulativa. Se recomienda consultar directamente el repositorio en HuggingFace y contactar con el autor para obtener detalles antes de considerar su uso.
+No se pueden proporcionar casos de uso concretos porque no existe información pública sobre las capacidades del modelo. Cualquier aplicación práctica sería especulativa. Se recomienda consultar directamente el repositorio en Hugging Face y contactar con el autor para obtener detalles antes de considerar su uso.
 
 ## Benchmarks y rendimiento
 
@@ -54,5 +54,5 @@ No disponible. Sin información sobre arquitectura, tamaño o rendimiento, no se
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hxnney/VERO-Mini
+- Repositorio en Hugging Face: https://huggingface.co/hxnney/VERO-Mini
 - Paper de arXiv con el nombre "Vero" (posiblemente no relacionado): https://arxiv.org/abs/2604.04917

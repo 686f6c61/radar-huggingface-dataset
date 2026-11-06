@@ -4,7 +4,7 @@
 
 El modelo `balajiduraisamy/Qwen2.5-Coder-7B-Instruct` es un fine-tune del modelo base `Qwen/Qwen2.5-Coder-7B`, desarrollado por el usuario balajiduraisamy. El modelo base, creado por Alibaba Cloud, es un modelo de lenguaje especializado en código, basado en la arquitectura Qwen2.5, con 7.615 millones de parámetros y una ventana de contexto de 32.000 tokens. Fue preentrenado con más de 5,5 billones de tokens, incluyendo código, texto y datos matemáticos, y posteriormente ajustado con instrucciones y RLHF para mejorar su capacidad de seguir comandos y razonar sobre código.
 
-Este fine-tune concreto no aporta información adicional sobre el proceso de ajuste (no se especifican datos de entrenamiento, épocas ni técnicas), pero hereda todas las capacidades del modelo base. Su relevancia radica en que ofrece una versión lista para usar en tareas de generación y comprensión de código, con una licencia Apache 2.0 que permite uso comercial sin restricciones. El acceso está restringido (gated) en HuggingFace, por lo que es necesario aceptar las condiciones del autor antes de descargarlo.
+Este fine-tune concreto no aporta información adicional sobre el proceso de ajuste (no se especifican datos de entrenamiento, épocas ni técnicas), pero hereda todas las capacidades del modelo base. Su relevancia radica en que ofrece una versión lista para usar en tareas de generación y comprensión de código, con una licencia Apache 2.0 que permite uso comercial sin restricciones. El acceso está restringido (gated) en Hugging Face, por lo que es necesario aceptar las condiciones del autor antes de descargarlo.
 
 ## Especificaciones tecnicas
 
@@ -69,13 +69,13 @@ El fine-tune de balajiduraisamy no introduce diferencias sustanciales respecto a
 - Sesgos conocidos: el modelo base puede reflejar sesgos presentes en los datos de entrenamiento, especialmente en tareas de código con sesgos de género o culturales en comentarios y documentación.
 - Riesgo de alucinación: como todo LLM, puede generar código incorrecto o inventar APIs inexistentes, especialmente en contextos poco comunes.
 - Limitaciones de contexto: aunque soporta 32K tokens, el rendimiento puede degradarse en contextos muy largos o con dependencias lejanas.
-- Restricciones de licencia: Apache 2.0 permite uso comercial, pero el acceso al modelo está restringido (gated) y requiere aceptar las condiciones del autor en HuggingFace.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero el acceso al modelo está restringido (gated) y requiere aceptar las condiciones del autor en Hugging Face.
 - Falta de documentación del fine-tune: no se especifican los datos de entrenamiento ni el proceso de ajuste, lo que dificulta evaluar su robustez en producción.
 - Idioma: solo se declara inglés, por lo que su uso en otros idiomas puede ser limitado o errático.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/balajiduraisamy/Qwen2.5-Coder-7B-Instruct
+- Modelo en Hugging Face: https://huggingface.co/balajiduraisamy/Qwen2.5-Coder-7B-Instruct
 - Modelo base (Qwen2.5-Coder-7B-Instruct): https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
 - Modelo base (Qwen2.5-Coder-7B): https://huggingface.co/Qwen/Qwen2.5-Coder-7B
 - Reporte técnico de Qwen2.5-Coder: https://arxiv.org/html/2409.12186v1

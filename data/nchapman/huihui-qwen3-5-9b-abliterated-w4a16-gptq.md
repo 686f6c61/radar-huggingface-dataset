@@ -72,8 +72,8 @@ La model card del cuantizador no incluye métricas (MMLU, HumanEval, GSM8K, MMMU
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este artefacto (`nchapman/...-W4A16-GPTQ`) | 9,41 B | No disponible | W4A16 GPTQ, ~9,1 GB | Apache-2.0 | HuggingFace, 0 descargas |
-| `huihui-ai/Huihui-Qwen3.5-9B-abliterated` (base) | 9,41 B | No disponible | BF16 (pesos completos) | Apache-2.0 | HuggingFace, referenciado como base |
+| Este artefacto (`nchapman/...-W4A16-GPTQ`) | 9,41 B | No disponible | W4A16 GPTQ, ~9,1 GB | Apache-2.0 | Hugging Face, 0 descargas |
+| `huihui-ai/Huihui-Qwen3.5-9B-abliterated` (base) | 9,41 B | No disponible | BF16 (pesos completos) | Apache-2.0 | Hugging Face, referenciado como base |
 | Qwen3.5-9B original (no abliterated) | 9,41 B (por herencia) | No disponible | BF16 | No disponible en la informacion | No verificado en esta busqueda |
 | Otras cuantizaciones del mismo base (AWQ, GGUF) | 9,41 B | No disponible | No disponible | Apache-2.0 (por herencia) | No identificadas en la informacion |
 
@@ -92,7 +92,7 @@ La comparación relevante es contra el base en BF16: misma arquitectura y mismos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nchapman/Huihui-Qwen3.5-9B-abliterated-W4A16-GPTQ
+- Modelo en Hugging Face: https://huggingface.co/nchapman/Huihui-Qwen3.5-9B-abliterated-W4A16-GPTQ
 - Modelo base (abliterated, BF16): https://huggingface.co/huihui-ai/Huihui-Qwen3.5-9B-abliterated
 - Dataset de calibración: https://huggingface.co/datasets/nvidia/Nemotron-Cascade-2-SFT-Data
 - Filas exactas de calibración (dataset fijado): https://huggingface.co/datasets/nchapman/warp-3090-quant-lab-frozen-data

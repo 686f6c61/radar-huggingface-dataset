@@ -94,6 +94,6 @@ La comparación con alternativas de la misma categoría (modelos pequeños de fu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mrfakename/needle3-ONNX
+- Repositorio Hugging Face: https://huggingface.co/mrfakename/needle3-ONNX
 - Modelo base: https://huggingface.co/Cactus-Compute/needle3
 - Demo en navegador sobre WebGPU: https://huggingface.co/spaces/mrfakename/needle3-webgpu

@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato | Hardware objetivo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Soveu/MiMo-V2.6-Distill-Qwen-9B-NPU2 | no confirmado (~9B por denominacion) | no disponible | Q4NX | NPU AMD Ryzen AI (XDNA2) | MIT | Publicado en HuggingFace, 0 descargas |
-| XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B (modelo base) | no disponible (~9B) | no disponible | no disponible | GPU/CPU generica | no disponible en esta informacion | Publicado en HuggingFace |
+| Soveu/MiMo-V2.6-Distill-Qwen-9B-NPU2 | no confirmado (~9B por denominacion) | no disponible | Q4NX | NPU AMD Ryzen AI (XDNA2) | MIT | Publicado en Hugging Face, 0 descargas |
+| XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B (modelo base) | no disponible (~9B) | no disponible | no disponible | GPU/CPU generica | no disponible en esta informacion | Publicado en Hugging Face |
 | Otras cuantizaciones del mismo modelo base en formatos estandar (GGUF, AWQ, GPTQ) | no disponible | no disponible | no disponible | CPU, GPU | no disponible | No verificadas en la informacion proporcionada |
 
 La comparacion cuantitativa no es posible con los datos disponibles: no se aportan cifras de rendimiento ni especificaciones del modelo base. La diferencia funcional relevante frente a otras distribuciones del mismo modelo es el par formato/runtime, que restringe el artefacto a NPU Ryzen AI y lo hace incompatible, en principio, con los runners convencionales.
@@ -86,7 +86,7 @@ La comparacion cuantitativa no es posible con los datos disponibles: no se aport
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Soveu/MiMo-V2.6-Distill-Qwen-9B-NPU2
+- Hugging Face del modelo: https://huggingface.co/Soveu/MiMo-V2.6-Distill-Qwen-9B-NPU2
 - Modelo base: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B
 - Runtime FastFlowLM: no disponible en la informacion proporcionada
 - Paper o blog tecnico: no disponible en la informacion proporcionada

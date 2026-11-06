@@ -83,7 +83,7 @@ La comparativa se limita a la línea genealógica del modelo, ya que no se dispo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Cinv/cvstudio-illustrator
+- Repositorio en Hugging Face: https://huggingface.co/Cinv/cvstudio-illustrator
 - Modelo base LCM_Dreamshaper_v7: https://huggingface.co/SimianLuo/LCM_Dreamshaper_v7
 - TAESD (Tiny AutoEncoder for Stable Diffusion): https://github.com/madebyollin/taesd
 - DreamShaper v7 (Lykon): no disponible en la información proporcionada

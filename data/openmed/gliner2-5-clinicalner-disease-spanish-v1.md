@@ -70,9 +70,9 @@ La mejora del ajuste fino es de +34,2 puntos F1 (intervalo de confianza del 95 %
 
 | Modelo | Parametros | Contexto | F1 (DisTEMIST, 150 docs) | Licencia | Disponibilidad |
 |---|---:|---|---:|---|---|
-| OpenMed GLiNER2.5 ClinicalNER Disease Spanish v1 | 287M | no disponible | 73,26 | Apache-2.0 | HuggingFace (OpenMed) |
-| fastino/gliner2.5-multi-v1 (modelo base) | no disponible | no disponible | 39,07 | no disponible en la información | HuggingFace (fastino) |
-| OpenMed mmBERT ClinicalNER Disease Spanish Base v1 | 308M | no disponible | 69,96 | no disponible en la información | HuggingFace (OpenMed) |
+| OpenMed GLiNER2.5 ClinicalNER Disease Spanish v1 | 287M | no disponible | 73,26 | Apache-2.0 | Hugging Face (OpenMed) |
+| fastino/gliner2.5-multi-v1 (modelo base) | no disponible | no disponible | 39,07 | no disponible en la información | Hugging Face (fastino) |
+| OpenMed mmBERT ClinicalNER Disease Spanish Base v1 | 308M | no disponible | 69,96 | no disponible en la información | Hugging Face (OpenMed) |
 
 La comparación se limita a los tres modelos evaluados por OpenMed sobre el mismo conjunto reservado. No se dispone de datos de otros extractores de NER clínico en español (por ejemplo, modelos basados en RoBERTa-BNE o MarIA) evaluados sobre esta misma partición, por lo que no se incluyen.
 
@@ -90,8 +90,8 @@ La comparación se limita a los tres modelos evaluados por OpenMed sobre el mism
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OpenMed/GLiNER2.5-ClinicalNER-Disease-Spanish-v1
-- Organización OpenMed en HuggingFace: https://huggingface.co/OpenMed
+- Modelo en Hugging Face: https://huggingface.co/OpenMed/GLiNER2.5-ClinicalNER-Disease-Spanish-v1
+- Organización OpenMed en Hugging Face: https://huggingface.co/OpenMed
 - SDK OpenMed en GitHub: https://github.com/maziyarpanahi/openmed
 - Paquete OpenMed en PyPI: https://pypi.org/project/openmed/
 - Modelo base fastino/gliner2.5-multi-v1: https://huggingface.co/fastino/gliner2.5-multi-v1

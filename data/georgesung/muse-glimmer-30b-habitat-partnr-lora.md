@@ -73,8 +73,8 @@ PARTNR val: 1000 tareas en 12 casas que nunca aparecen en entrenamiento. Decodif
 
 | Modelo | Parametros | Contexto | PARTNR val (exito/1000) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Muse Glimmer 30B (base) | 30B | 32 768 | 782 | Apache 2.0 | HuggingFace |
-| Muse Glimmer 30B + este adaptador | 30B + LoRA r32 | 32 768 | 810 | Apache 2.0 | HuggingFace |
+| Muse Glimmer 30B (base) | 30B | 32 768 | 782 | Apache 2.0 | Hugging Face |
+| Muse Glimmer 30B + este adaptador | 30B + LoRA r32 | 32 768 | 810 | Apache 2.0 | Hugging Face |
 | Muse Glimmer 30B + adaptador p273 (300 updates) | 30B + LoRA r32 | 32 768 | 793 | Apache 2.0 | No publicado |
 
 No se dispone de datos de otros planificadores comparables en PARTNR en la informacion proporcionada.
@@ -93,7 +93,7 @@ No se dispone de datos de otros planificadores comparables en PARTNR en la infor
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/georgesung/Muse-Glimmer-30B-Habitat-PARTNR-Lora
+- Hugging Face del adaptador: https://huggingface.co/georgesung/Muse-Glimmer-30B-Habitat-PARTNR-Lora
 - Modelo base: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Modelo asistente para decodificacion especulativa DFlash: https://huggingface.co/meta-models/Muse-Glimmer-30B-assistant
 - Codigo, metodo y evaluacion: https://github.com/georgesung/muse-habitat

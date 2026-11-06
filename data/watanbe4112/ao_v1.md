@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo AO_V1, identificado como `watanbe4112/AO_V1`, es una publicación de HuggingFace creada el 17 de agosto de 2026 por el usuario watanbe4112. Se trata de un repositorio de aproximadamente 0.2 GB que, a fecha de consulta, no presenta descargas ni valoraciones, y carece de cualquier documentación técnica sustancial. La model card únicamente indica una licencia personalizada denominada "project-yuka", sin especificar arquitectura, parámetros, contexto, idiomas o capacidades.
+El modelo AO_V1, identificado como `watanbe4112/AO_V1`, es una publicación de Hugging Face creada el 17 de agosto de 2026 por el usuario watanbe4112. Se trata de un repositorio de aproximadamente 0.2 GB que, a fecha de consulta, no presenta descargas ni valoraciones, y carece de cualquier documentación técnica sustancial. La model card únicamente indica una licencia personalizada denominada "project-yuka", sin especificar arquitectura, parámetros, contexto, idiomas o capacidades.
 
 Dada la ausencia total de información técnica en la ficha del modelo y en el repositorio, no es posible determinar su arquitectura, tamaño, entrenamiento ni rendimiento. Este modelo parece ser un experimento personal o un proyecto en fase inicial, sin datos suficientes para su evaluación por parte de desarrolladores o investigadores. Se recomienda precaución antes de considerar su uso en cualquier entorno de producción.
 
@@ -25,7 +25,7 @@ No se ha publicado ninguna información sobre la arquitectura del modelo, los da
 
 ## Capacidades
 
-No se han documentado capacidades específicas para este modelo. No hay evidencia de soporte para generación de texto, razonamiento, código, matemáticas, visión, tool calling, agentes, ni capacidades multilingües. La ausencia de pipeline en HuggingFace refuerza la falta de información funcional.
+No se han documentado capacidades específicas para este modelo. No hay evidencia de soporte para generación de texto, razonamiento, código, matemáticas, visión, tool calling, agentes, ni capacidades multilingües. La ausencia de pipeline en Hugging Face refuerza la falta de información funcional.
 
 ## Casos de uso
 
@@ -53,5 +53,5 @@ No disponible. No se conocen modelos comparables de la misma categoría ni se di
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/watanbe4112/AO_V1
+- Repositorio Hugging Face: https://huggingface.co/watanbe4112/AO_V1
 - Archivo de licencia: no disponible directamente, se referencia como LICENSE en el repositorio.

@@ -6,7 +6,7 @@ AIOKiet/mbart50_baseline es un modelo de traduccion automatica neuronal basado e
 
 Con 611 millones de parametros y un tamano de repositorio de 2,5 GB en formato safetensors, el modelo se publica como un checkpoint de transformers compatible con endpoints de inferencia. Su relevancia es limitada: al carecer de documentacion sobre el dataset de ajuste, los idiomas soportados o la licencia, su uso en produccion queda restringido a contextos experimentales o como punto de partida para investigacion. Los resultados de evaluacion reportados (SacreBLEU 34,65) indican que el ajuste se realizo sobre una tarea de traduccion, pero sin datos comparativos no es posible determinar su calidad relativa.
 
-La ficha tecnica del modelo es minima, generada automaticamente por el Trainer de HuggingFace, y no incluye descripcion de usos previstos, limitaciones ni procedencia de los datos. Esto convierte al checkpoint en un recurso util unicamente para quien conozca el contexto del ajuste o desee reproducir el experimento partiendo de la informacion de hiperparametros disponible.
+La ficha tecnica del modelo es minima, generada automaticamente por el Trainer de Hugging Face, y no incluye descripcion de usos previstos, limitaciones ni procedencia de los datos. Esto convierte al checkpoint en un recurso util unicamente para quien conozca el contexto del ajuste o desee reproducir el experimento partiendo de la informacion de hiperparametros disponible.
 
 ## Especificaciones tecnicas
 
@@ -32,7 +32,7 @@ El ajuste fino realizado por AIOKiet utilizo los siguientes hiperparametros docu
 - Traduccion automatica multilingue: hereda la capacidad de mBART-50 para traducir entre 50 idiomas, aunque el ajuste especifico puede haber orientado el modelo hacia un par de lenguas concreto no documentado.
 - Generacion de texto condicionada: al ser un modelo seq2seq, puede generar texto a partir de una secuencia de entrada con tokens de control de idioma.
 - Fine-tuning adicional: al publicarse como checkpoint de transformers, puede servir como base para nuevos ajustes en tareas de traduccion o generacion.
-- Compatibilidad con pipelines de HuggingFace: el modelo es compatible con la clase MBartForConditionalGeneration y puede cargarse con la API estandar de transformers.
+- Compatibilidad con pipelines de Hugging Face: el modelo es compatible con la clase MBartForConditionalGeneration y puede cargarse con la API estandar de transformers.
 - No se documentan capacidades de tool calling, razonamiento multi-paso, ni soporte para agentes.
 - No se documentan capacidades de vision, audio ni multimodalidad.
 
@@ -63,7 +63,7 @@ Estos valores corresponden a la evaluacion final tras la segunda epoca, sobre un
 - VRAM estimada para inferencia: el modelo tiene 611 millones de parametros en fp32, lo que requiere aproximadamente 2,4 GB solo para los pesos. Con precision mixta o cuantizacion a fp16, el uso de VRAM se reduce a unos 1,2 GB, mas el espacio para activaciones y el tokenizador.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM puede ejecutar el modelo en fp16. Una NVIDIA T4 (16 GB), RTX 3060 (12 GB) o RTX 4090 (24 GB) son suficientes para inferencia con batch moderado.
 - Compatibilidad con consumer GPU: si, el modelo cabe en GPUs de consumo desde 4 GB de VRAM en fp16, aunque para batch grandes se recomienda al menos 8 GB.
-- Opciones de despliegue: al ser un modelo de transformers, puede servirse con HuggingFace Inference Endpoints, TGI (Text Generation Inference) o mediante un script personalizado con PyTorch. Tambien es posible exportarlo a ONNX para optimizacion.
+- Opciones de despliegue: al ser un modelo de transformers, puede servirse con Hugging Face Inference Endpoints, TGI (Text Generation Inference) o mediante un script personalizado con PyTorch. Tambien es posible exportarlo a ONNX para optimizacion.
 - Latencia y throughput: no se dispone de datos medidos. Como referencia, un modelo de 611M parametros en una T4 suele generar entre 50 y 150 tokens por segundo en fp16, dependiendo del batch y la longitud de secuencia.
 
 ## Comparativa con modelos similares
@@ -89,7 +89,7 @@ La comparativa directa no es posible sin conocer el dataset de ajuste y el par d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AIOKiet/mbart50_baseline
+- Repositorio Hugging Face: https://huggingface.co/AIOKiet/mbart50_baseline
 - Checkpoint relacionado (datacentric2_GPU_T4): https://huggingface.co/AIOKiet/mbart50_baseline_datacentric2_GPU_T4
 - Documentacion de mBART en Transformers: https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/mbart.md
 - Documentacion de mBART en modeldatabase.com: http://modeldatabase.com/docs/transformers/model_doc/mbart.html

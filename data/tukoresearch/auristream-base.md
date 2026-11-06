@@ -4,7 +4,7 @@
 
 AuriStream es un modelo de lenguaje de habla desarrollado por TuKoResearch, un equipo liderado por Greta Tuckute y Klemen Kotar. El modelo representa el habla mediante la predicción autorregresiva de tokens cocleares, un enfoque que se inspira en la codificación neuronal del sistema auditivo humano. AuriStream se compone de dos etapas: una primera etapa de tokenización que convierte la señal de audio en una secuencia de tokens cocleares mediante un tokenizador como WavCochCausalV8192, y una segunda etapa que aplica un modelo autorregresivo de secuencia sobre estos tokens para aprender representaciones fonémicas y léxicas de alto nivel.
 
-La relevancia actual de AuriStream radica en su capacidad para lograr un rendimiento competitivo en diversas tareas de habla del benchmark SUPERB, al mismo tiempo que aprende representaciones semánticas de nivel léxico. El modelo base, identificado como `TuKoResearch/AuriStream-base`, está disponible bajo licencia Apache 2.0 y es accesible a través de la librería Transformers de HuggingFace, aunque su acceso está restringido y requiere aceptar condiciones previas. El repositorio principal y la documentación del proyecto se encuentran en GitHub y en la página oficial del proyecto.
+La relevancia actual de AuriStream radica en su capacidad para lograr un rendimiento competitivo en diversas tareas de habla del benchmark SUPERB, al mismo tiempo que aprende representaciones semánticas de nivel léxico. El modelo base, identificado como `TuKoResearch/AuriStream-base`, está disponible bajo licencia Apache 2.0 y es accesible a través de la librería Transformers de Hugging Face, aunque su acceso está restringido y requiere aceptar condiciones previas. El repositorio principal y la documentación del proyecto se encuentran en GitHub y en la página oficial del proyecto.
 
 ## Especificaciones técnicas
 
@@ -55,7 +55,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar condiciones de uso en HuggingFace, lo que puede limitar su adopción inmediata en entornos industriales.
+- Acceso restringido: el modelo requiere aceptar condiciones de uso en Hugging Face, lo que puede limitar su adopción inmediata en entornos industriales.
 - Falta de documentación técnica: no se han publicado especificaciones detalladas sobre el modelo base (parámetros, contexto, datos de entrenamiento), lo que dificulta evaluar su idoneidad para casos de uso concretos.
 - Riesgo de alucinaciones: al ser un modelo autorregresivo, puede generar secuencias de tokens que no correspondan a audio real si se utiliza para generación, aunque su propósito principal es la representación.
 - Sesgos potenciales: al entrenarse con datos de audio no especificados, podría heredar sesgos de acentos, dialectos o condiciones de grabación.
@@ -63,7 +63,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Modelo base en HuggingFace: https://huggingface.co/TuKoResearch/AuriStream-base
+- Modelo base en Hugging Face: https://huggingface.co/TuKoResearch/AuriStream-base
 - Variante de 7B parámetros: https://huggingface.co/TuKoResearch/AuriStream7BDeep_40Pred_BigAudioDataset_100k
 - Página del proyecto: https://tukoresearch.github.io/auristream-speech/
 - Repositorio GitHub: https://github.com/TuKoResearch/auristream-speech

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-iota-decide-4b v0.4 es un modelo de decisión desarrollado por Macrocosmos, publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un fine-tune de `Qwen/Qwen3.5-4B` (variante instruct) entrenado con LoRA rank 64 cuyos pesos ya están fusionados en el checkpoint publicado. A diferencia de un LLM generativo convencional, el modelo no genera texto: dado un estado y un conjunto de preguntas tipadas (`choice`, sí/no `noul`, `score`), devuelve una probabilidad para cada opción en una sola pasada hacia adelante (forward pass). Las respuestas se leen directamente de las letras de opción en la posición de respuesta.
+iota-decide-4b v0.4 es un modelo de decisión desarrollado por Macrocosmos, publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un fine-tune de `Qwen/Qwen3.5-4B` (variante instruct) entrenado con LoRA rank 64 cuyos pesos ya están fusionados en el checkpoint publicado. A diferencia de un LLM generativo convencional, el modelo no genera texto: dado un estado y un conjunto de preguntas tipadas (`choice`, sí/no `noul`, `score`), devuelve una probabilidad para cada opción en una sola pasada hacia adelante (forward pass). Las respuestas se leen directamente de las letras de opción en la posición de respuesta.
 
 Su novedad principal en la versión 0.4 es la atención bidireccional: las capas de full-attention atienden sobre todo el prompt en ambas direcciones (las capas de linear-attention permanecen causales), de modo que el estado se interpreta a la luz de la pregunta. Esto lo hace adecuado para tareas de clasificación y enrutado de decisiones de baja latencia, como moderación, triaje de tickets o decisiones de política empresarial, sin el coste de la generación autorregresiva.
 
@@ -33,7 +33,7 @@ El entrenamiento se realizó sobre `Qwen/Qwen3.5-4B` (instruct) con LoRA rank 64
 - Preguntas de tipo `choice`: selección entre opciones enumeradas (hasta 26 opciones por lista), con criterios opcionales por opción.
 - Preguntas de tipo `noul` (sí/no): devuelve una probabilidad; el lado elegido se reporta con probabilidad de al menos 0,801 (los valores entre 0,2 y 0,8 se consideran abstención según JevBench).
 - Preguntas de tipo `score`: mencionado en la model card como tipo soportado, aunque sin detalles de uso.
-- Entrada image-text-to-text: el pipeline declarado en HuggingFace es `image-text-to-text`, lo que sugiere capacidad multimodal, aunque la model card no documenta su uso.
+- Entrada image-text-to-text: el pipeline declarado en Hugging Face es `image-text-to-text`, lo que sugiere capacidad multimodal, aunque la model card no documenta su uso.
 - Salida calibrada: temperatura aprendida almacenada en `joint_head.safetensors`, aplicada por el script de inferencia.
 - No soporta generación de texto libre, código ni razonamiento generativo: es un modelo especializado en decisión estructurada.
 
@@ -94,6 +94,6 @@ La comparación más relevante es con Torchcast Decision 4B v1.3, que supera a v
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/macrocosm-os/iota-decide-4b-v0.4
+- Modelo en Hugging Face: https://huggingface.co/macrocosm-os/iota-decide-4b-v0.4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - No se han encontrado enlaces adicionales a papers, blogs, repositorios de código o demos en la información disponible (el script `letter_decide.py` se distribuye, presumiblemente, dentro del propio repositorio del modelo).

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AnyTop-MLX es una conversión de pesos a formato MLX (Apple Silicon) del modelo AnyTop, desarrollado por el usuario de HuggingFace Fendercorp para su integración en 3Dify Studio. AnyTop es un modelo de difusión generativo que sintetiza secuencias de animación para personajes con esqueletos arbitrarios, tal como se describe en el trabajo de investigación upstream (AnyTop: Character Animation Diffusion with Any Topology). El modelo resuelve el problema de generar movimientos naturales para estructuras esqueléticas muy diversas, sin necesidad de reentrenar por cada topology.
+AnyTop-MLX es una conversión de pesos a formato MLX (Apple Silicon) del modelo AnyTop, desarrollado por el usuario de Hugging Face Fendercorp para su integración en 3Dify Studio. AnyTop es un modelo de difusión generativo que sintetiza secuencias de animación para personajes con esqueletos arbitrarios, tal como se describe en el trabajo de investigación upstream (AnyTop: Character Animation Diffusion with Any Topology). El modelo resuelve el problema de generar movimientos naturales para estructuras esqueléticas muy diversas, sin necesidad de reentrenar por cada topology.
 
 La arquitectura original es un modelo de difusión, y esta variante incluye pesos separados por categorías de esqueleto (bípedos, voladores, milpiés/serpientes, cuadrúpedos) además de un modelo unificado. El repositorio ocupa 0,1 GB y contiene únicamente pesos en formato safetensors, junto con ficheros de condicionamiento (embeddings T5 para nombres de articulaciones). No se especifica el número de parámetros ni la longitud de contexto, ya que no es un modelo de lenguaje.
 
@@ -66,7 +66,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Fendercorp/AnyTop-MLX
+- Hugging Face: https://huggingface.co/Fendercorp/AnyTop-MLX
 - Paper (arXiv): https://arxiv.org/html/2502.17327
 - Repositorio upstream: https://github.com/Anytop2025/Anytop
-- Modelo upstream en HuggingFace: https://huggingface.co/inbar2344/AnyTop
+- Modelo upstream en Hugging Face: https://huggingface.co/inbar2344/AnyTop

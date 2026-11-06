@@ -88,7 +88,7 @@ El modelo base `klue/roberta-large` no tiene métricas NER públicas en la misma
 
 ## Enlaces
 
-- [HuggingFace: incruit-navi/ko-blind-ner-v3-1](https://huggingface.co/incruit-navi/ko-blind-ner-v3-1)
-- [HuggingFace: klue/roberta-large](https://huggingface.co/klue/roberta-large)
+- [Hugging Face: incruit-navi/ko-blind-ner-v3-1](https://huggingface.co/incruit-navi/ko-blind-ner-v3-1)
+- [Hugging Face: klue/roberta-large](https://huggingface.co/klue/roberta-large)
 - [Incruit Navi (web oficial)](https://navi.incruit.com/)
 - [Modelo anterior: incruit-navi/ko-blind-ner-v3](https://huggingface.co/incruit-navi/ko-blind-ner-v3)

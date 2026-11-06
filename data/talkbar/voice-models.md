@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| TalkBar/voice-models (conjunto) | 566,7 M (total repo) | no disponible | mixed-per-file | HuggingFace |
-| openai/whisper-large-v3 | 1,55 B | 30 s de audio por ventana | MIT | HuggingFace, GitHub |
-| nvidia/parakeet-tdt-0.6b-v3 | 0,6 B | no disponible | CC-BY-4.0 | HuggingFace |
-| nvidia/canary-1b-v2 | 1 B | no disponible | CC-BY-4.0 | HuggingFace |
+| TalkBar/voice-models (conjunto) | 566,7 M (total repo) | no disponible | mixed-per-file | Hugging Face |
+| openai/whisper-large-v3 | 1,55 B | 30 s de audio por ventana | MIT | Hugging Face, GitHub |
+| nvidia/parakeet-tdt-0.6b-v3 | 0,6 B | no disponible | CC-BY-4.0 | Hugging Face |
+| nvidia/canary-1b-v2 | 1 B | no disponible | CC-BY-4.0 | Hugging Face |
 
 La comparativa se limita a los modelos upstream incluidos; TalkBar no aporta un modelo propio con el que comparar rendimiento. Para evaluar calidad ASR conviene consultar los benchmarks publicados por NVIDIA y OpenAI en sus respectivas model cards.
 
@@ -85,7 +85,7 @@ La comparativa se limita a los modelos upstream incluidos; TalkBar no aporta un 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/TalkBar/voice-models
+- Repositorio Hugging Face: https://huggingface.co/TalkBar/voice-models
 - NVIDIA Parakeet TDT 0.6B v3: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - OpenAI Whisper (código y licencia): https://github.com/openai/whisper
 - GigaAM (salute-developers): https://github.com/salute-developers/GigaAM

@@ -107,7 +107,7 @@ La ventaja diferencial de EoMT es la ausencia de decodificador y la disponibilid
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/fastforks/eomt
+- Repositorio Hugging Face: https://huggingface.co/fastforks/eomt
 - Pesos DINOv2: https://huggingface.co/tue-mps/ade20k_semantic_eomt_large_512
 - Pesos DINOv3: https://huggingface.co/tue-mps/eomt-dinov3-ade-semantic-large-512
 - Código de la librería fastforks: https://github.com/kleinicke/fastforks

@@ -81,7 +81,7 @@ La comparativa se limita a parametros, contexto y licencia, ya que no hay datos 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwopus3.5-0.8B-v3-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwopus3.5-0.8B-v3-GGUF
 - Modelo base: https://huggingface.co/Jackrong/Qwopus3.5-0.8B-v3
 - Pagina de descargas del autor: https://hf.tst.eu/model#Qwopus3.5-0.8B-v3-GGUF
 - Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

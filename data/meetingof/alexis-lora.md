@@ -2,7 +2,7 @@
 
 ## Resumen
 
-La ficha corresponde al repositorio `meetingof/alexis-lora`, publicado por el usuario "meetingof" en HuggingFace. El identificador del repositorio incluye el sufijo "lora", lo que sugiere que se trata de un adaptador de bajo rango (Low-Rank Adaptation) y no de un modelo base completo, aunque esta condicion no puede confirmarse porque la model card no aporta ningun dato al respecto. La unica informacion verificable en el repositorio es la licencia declarada, Apache 2.0.
+La ficha corresponde al repositorio `meetingof/alexis-lora`, publicado por el usuario "meetingof" en Hugging Face. El identificador del repositorio incluye el sufijo "lora", lo que sugiere que se trata de un adaptador de bajo rango (Low-Rank Adaptation) y no de un modelo base completo, aunque esta condicion no puede confirmarse porque la model card no aporta ningun dato al respecto. La unica informacion verificable en el repositorio es la licencia declarada, Apache 2.0.
 
 No hay publicada ninguna descripcion funcional, arquitectura, tamano, ventana de contexto, idiomas soportados ni tarea objetivo. El repositorio registra 0 descargas y 0 "likes" en el momento de la consulta, y no tiene pipeline asignado. La fecha de creacion y ultima actualizacion (2026-09-12) es identica, lo que indica que no ha habido mantenimiento posterior.
 
@@ -23,7 +23,7 @@ En consecuencia, no es posible evaluar que problema resuelve ni por que seria re
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del adaptador ni del modelo base sobre el que se aplicaria. El unico indicio es el sufijo "lora" del identificador del repositorio, que en la convencion de HuggingFace suele designar un adaptador de bajo rango disenado para acoplarse a un modelo base mediante una biblioteca como PEFT. Esta interpretacion no esta confirmada por la model card.
+No se ha publicado informacion sobre la arquitectura del adaptador ni del modelo base sobre el que se aplicaria. El unico indicio es el sufijo "lora" del identificador del repositorio, que en la convencion de Hugging Face suele designar un adaptador de bajo rango disenado para acoplarse a un modelo base mediante una biblioteca como PEFT. Esta interpretacion no esta confirmada por la model card.
 
 Tampoco hay datos sobre el conjunto de entrenamiento, el numero de tokens, la composicion del dataset, el uso de RLHF o DPO, ni sobre innovaciones tecnicas de atencion o decodificacion. No es posible verificar si el adaptador esta entrenado, si contiene pesos validos o si es unicamente un repositorio vacio con metadatos de licencia.
 
@@ -31,7 +31,7 @@ Tampoco hay datos sobre el conjunto de entrenamiento, el numero de tokens, la co
 
 No es posible enumerar capacidades concretas porque la informacion disponible no especifica la tarea, la modalidad (texto, imagen u otra) ni el modelo base asociado. Los unicos hechos verificables son:
 
-- El repositorio esta publicado en HuggingFace con licencia Apache 2.0.
+- El repositorio esta publicado en Hugging Face con licencia Apache 2.0.
 - No tiene pipeline declarado, por lo que no se anuncia una tarea concreta.
 - No consta soporte de tool calling, function calling, agentes, razonamiento multi-paso ni capacidades multilingues.
 - No consta ningun modo especial como thinking mode, vision o audio.
@@ -67,5 +67,5 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/meetingof/alexis-lora
+- Repositorio en Hugging Face: https://huggingface.co/meetingof/alexis-lora
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo en la busqueda web realizada. Los resultados obtenidos (Windhawk, LoRAs de imagenes de terceros) no guardan relacion con este repositorio y se han descartado por no ser relevantes.

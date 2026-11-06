@@ -2,9 +2,9 @@
 
 ## Resumen
 
-BTAI-First-Ais-SLM es un modelo publicado en HuggingFace por el usuario Mystic2242 bajo el identificador `Mystic2242/BTAI-First-Ais-SLM`. Se distribuye con la libreria `transformers` y la etiqueta de pipeline `text-generation`, lo que indica que esta pensado para generacion de texto conversacional. El repositorio ocupa 0,5 GB y no registra descargas ni likes en el momento de redactar esta ficha.
+BTAI-First-Ais-SLM es un modelo publicado en Hugging Face por el usuario Mystic2242 bajo el identificador `Mystic2242/BTAI-First-Ais-SLM`. Se distribuye con la libreria `transformers` y la etiqueta de pipeline `text-generation`, lo que indica que esta pensado para generacion de texto conversacional. El repositorio ocupa 0,5 GB y no registra descargas ni likes en el momento de redactar esta ficha.
 
-La model card publicada es la plantilla generica autogenerada por HuggingFace: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion) figuran como "[More Information Needed]". No hay informacion verificable sobre el numero de parametros, la longitud de contexto, el dataset de entrenamiento ni el proceso de ajuste.
+La model card publicada es la plantilla generica autogenerada por Hugging Face: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion) figuran como "[More Information Needed]". No hay informacion verificable sobre el numero de parametros, la longitud de contexto, el dataset de entrenamiento ni el proceso de ajuste.
 
 Las unicas senales tecnicas disponibles son las etiquetas del repositorio: `llama` (sugiere una arquitectura de la familia Llama, sin confirmar), `onnx` (los pesos se distribuyen total o parcialmente en formato ONNX) y `conversational`. La etiqueta `arxiv:1910.09700` corresponde al articulo de Lacoste et al. sobre el calculador de impacto medioambiental, citado en la propia plantilla de la model card, por lo que no aporta informacion sobre el modelo. En consecuencia, esta ficha se limita a documentar lo que consta y a marcar explicitamente como "no disponible" todo lo demas.
 
@@ -50,7 +50,7 @@ Los siguientes escenarios son hipoteticos y estan condicionados a que se verifiq
 - Evaluacion comparativa de modelos pequenos: puede servir como linea base en experimentos academicos sobre modelos de baja huella de recursos, aunque sin benchmarks publicados su utilidad como referencia es limitada.
 - Experimentacion educativa: util para estudiar el flujo de exportacion a ONNX y el despliegue con `transformers` en un caso real de extremo a extremo.
 - Fine-tuning posterior: si la licencia lo permite (dato no disponible), podria servir como punto de partida para ajustes especificos de dominio, sujeto a la verificacion de su arquitectura y pesos.
-- Integracion en endpoints compatibles: la etiqueta `endpoints_compatible` sugiere compatibilidad con la infraestructura de Inference Endpoints de HuggingFace, util para despliegues gestionados.
+- Integracion en endpoints compatibles: la etiqueta `endpoints_compatible` sugiere compatibilidad con la infraestructura de Inference Endpoints de Hugging Face, util para despliegues gestionados.
 
 ## Benchmarks y rendimiento
 
@@ -83,7 +83,7 @@ No disponible. No es posible establecer una comparativa rigurosa sin conocer el 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mystic2242/BTAI-First-Ais-SLM
+- Modelo en Hugging Face: https://huggingface.co/Mystic2242/BTAI-First-Ais-SLM
 - Articulo citado en la etiqueta del repositorio (Lacoste et al., 2019, sobre estimacion de impacto medioambiental): https://arxiv.org/abs/1910.09700
 - Calculador de impacto ML mencionado en la plantilla de la model card: https://mlco2.github.io/impact
 

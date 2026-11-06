@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`diy-kuma/multitask-proto` es un prototipo experimental de un autoencoder enmascarado (MAE, *Masked Autoencoder*) diseñado para tareas multitarea, publicado por el usuario diy-kuma en HuggingFace. El repositorio incluye un código base en Python (`eval.py`), una configuración de arquitectura (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización (`model.safetensors`). El modelo tiene únicamente 49.600 parámetros, lo que lo convierte en una implementación extremadamente ligera, pensada para inspeccionar cambios arquitectónicos antes de un entrenamiento completo.
+`diy-kuma/multitask-proto` es un prototipo experimental de un autoencoder enmascarado (MAE, *Masked Autoencoder*) diseñado para tareas multitarea, publicado por el usuario diy-kuma en Hugging Face. El repositorio incluye un código base en Python (`eval.py`), una configuración de arquitectura (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización (`model.safetensors`). El modelo tiene únicamente 49.600 parámetros, lo que lo convierte en una implementación extremadamente ligera, pensada para inspeccionar cambios arquitectónicos antes de un entrenamiento completo.
 
 El autor no presenta este checkpoint como un modelo entrenado ni reclama ningún resultado de benchmark. Se trata de un punto de partida para pruebas de humo (*smoke tests*) y experimentación. La arquitectura combina atención *grouped query*, fusión *tucker*, activación *mish* y normalización *instancenorm*, dentro del paradigma MAE. La licencia es BSD-3-Clause, lo que permite uso comercial con atribución, aunque se recomienda revisar los términos de los datos externos si se utilizan.
 
@@ -64,9 +64,9 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 - No se ha auditado la robustez, equidad ni la transferencia a dominios distintos.
 - La implementación es experimental y puede contener errores; se recomienda revisar el código antes de usarlo.
 - La licencia BSD-3-Clause permite uso comercial, pero se debe revisar la procedencia de los datos externos si se combina con otros conjuntos.
-- No hay soporte para APIs genéricas de HuggingFace; se requiere un adaptador explícito.
+- No hay soporte para APIs genéricas de Hugging Face; se requiere un adaptador explícito.
 - El repositorio tiene 0 descargas y 0 likes, lo que sugiere que no ha sido validado por la comunidad.
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/diy-kuma/multitask-proto)
+- [Repositorio en Hugging Face](https://huggingface.co/diy-kuma/multitask-proto)

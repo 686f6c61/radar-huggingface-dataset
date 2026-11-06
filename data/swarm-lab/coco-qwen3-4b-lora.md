@@ -89,7 +89,7 @@ La comparacion directa con LLM generalistas no es significativa: CoCo-Qwen3-4B-L
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/SWARM-Lab/CoCo-Qwen3-4B-LoRA
+- Hugging Face del adaptador: https://huggingface.co/SWARM-Lab/CoCo-Qwen3-4B-LoRA
 - Adaptador companion (Chronos2): https://huggingface.co/SWARM-Lab/CoCo-Chronos2-LoRA
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Paper (arXiv): https://arxiv.org/abs/2611.05515

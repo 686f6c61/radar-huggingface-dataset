@@ -69,10 +69,10 @@ Cada benchmark contiene 30 problemas con cuatro soluciones generadas por problem
 
 | Modelo | Parametros | Contexto | Rendimiento en matematicas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RC-OPD-4B | 4B (base) + LoRA | no disponible | 65,28% media (AIME24/25, HMMT25) | Apache 2.0 | HuggingFace (adaptador) |
-| RC-OPD-1.7B | 1.7B (base) + LoRA | no disponible | no disponible | no disponible | HuggingFace |
-| RC-OPD-8B | 8B (base) + LoRA | no disponible | no disponible | no disponible | HuggingFace |
-| Qwen3-4B (base) | 4B | no disponible | no disponible en la informacion | Apache 2.0 | HuggingFace |
+| RC-OPD-4B | 4B (base) + LoRA | no disponible | 65,28% media (AIME24/25, HMMT25) | Apache 2.0 | Hugging Face (adaptador) |
+| RC-OPD-1.7B | 1.7B (base) + LoRA | no disponible | no disponible | no disponible | Hugging Face |
+| RC-OPD-8B | 8B (base) + LoRA | no disponible | no disponible | no disponible | Hugging Face |
+| Qwen3-4B (base) | 4B | no disponible | no disponible en la informacion | Apache 2.0 | Hugging Face |
 
 La informacion proporcionada solo confirma la existencia de las variantes RC-OPD-1.7B y RC-OPD-8B del mismo autor, sin datos de rendimiento comparables. No se dispone de resultados de benchmarks de modelos alternativos en la informacion disponible.
 
@@ -89,7 +89,7 @@ La informacion proporcionada solo confirma la existencia de las variantes RC-OPD
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/starrylay/RC-OPD-4B
+- Hugging Face del modelo: https://huggingface.co/starrylay/RC-OPD-4B
 - Coleccion del proyecto: https://huggingface.co/collections/starrylay/rc-opd-6acbb487a58766dba48df3f5
 - Guia de reproduccion: https://huggingface.co/starrylay/RC-OPD-4B/blob/main/benchmark/README.md
 - Informe de validacion: https://huggingface.co/starrylay/RC-OPD-4B/blob/main/stable_6528_validation.json

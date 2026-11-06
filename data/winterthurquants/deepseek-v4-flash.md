@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4-Flash es un modelo de lenguaje de tipo Mixture-of-Experts (MoE) desarrollado por DeepSeek AI, presentado como una versión preliminar ("preview") de la serie DeepSeek-V4. Cuenta con 284.000 millones de parámetros totales y 13.000 millones de parámetros activos por token, y su rasgo más diferencial es una ventana de contexto de un millón de tokens. La ficha que se analiza aquí corresponde a una redistribución del modelo publicada por el usuario winterthurquants en HuggingFace, no al repositorio oficial de DeepSeek AI.
+DeepSeek-V4-Flash es un modelo de lenguaje de tipo Mixture-of-Experts (MoE) desarrollado por DeepSeek AI, presentado como una versión preliminar ("preview") de la serie DeepSeek-V4. Cuenta con 284.000 millones de parámetros totales y 13.000 millones de parámetros activos por token, y su rasgo más diferencial es una ventana de contexto de un millón de tokens. La ficha que se analiza aquí corresponde a una redistribución del modelo publicada por el usuario winterthurquants en Hugging Face, no al repositorio oficial de DeepSeek AI.
 
 El modelo introduce tres cambios técnicos respecto a la generación anterior: una arquitectura de atención híbrida que combina Compressed Sparse Attention (CSA) y Heavily Compressed Attention (HCA), conexiones residuales reforzadas mediante Manifold-Constrained Hyper-Connections (mHC) y el optimizador Muon durante el entrenamiento. Según la model card, en el escenario de 1M tokens de contexto el modelo Pro de la misma familia requiere solo el 27 % de los FLOPs de inferencia por token y el 10 % de la caché KV en comparación con DeepSeek-V3.2.
 
@@ -79,7 +79,7 @@ Datos adicionales declarados sin cifras concretas: en el contexto de 1M tokens, 
 - En FP8 completo (variante Base), el peso de los 284B parámetros rondaría los 284 GB, lo que exige múltiples GPUs o memoria unificada.
 - GPU recomendadas: nodos multi-GPU de clase数据中心 como H100 80 GB (mínimo 2-4 unidades para la versión FP4/FP8), H200, B200 o A100 80 GB en configuraciones más amplias. No hay cifras oficiales de latencia o throughput en la información disponible.
 - No cabe en GPUs de consumo: una RTX 4090 (24 GB) o una RTX 5090 no pueden alojar los pesos, ni siquiera cuantizados a 4 bits, dado que el modelo completo supera los 140 GB incluso en ese formato.
-- Opciones de despliegue: la librería declarada es transformers y el repositorio incluye el tag endpoints_compatible (compatible con endpoints de HuggingFace). El soporte explícito de vLLM, SGLang, llama.cpp, Ollama o TGI no está confirmado en la información disponible.
+- Opciones de despliegue: la librería declarada es transformers y el repositorio incluye el tag endpoints_compatible (compatible con endpoints de Hugging Face). El soporte explícito de vLLM, SGLang, llama.cpp, Ollama o TGI no está confirmado en la información disponible.
 - Gracias a que solo 13B parámetros están activos por token, el coste de cómputo por token es bajo en comparación con modelos densos de tamaño similar, pero el despliegue sigue estando limitado por memoria y ancho de banda, no por FLOPs.
 - La caché KV es un factor crítico: el diseño CSA + HCA reduce su tamaño declarado al 10 % del de DeepSeek-V3.2 en contexto de 1M tokens, lo que abarata el servicio concurrente en ventanas largas.
 
@@ -87,8 +87,8 @@ Datos adicionales declarados sin cifras concretas: en el contexto de 1M tokens, 
 
 | Modelo | Parámetros totales | Parámetros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-V4-Flash | 284B (291B según safetensors del reupload) | 13B | 1M | MIT | HuggingFace y ModelScope (repos oficiales de DeepSeek AI); redistribución en winterthurquants/DeepSeek-V4-Flash |
-| DeepSeek-V4-Pro | 1,6T | 49B | 1M | MIT | HuggingFace y ModelScope |
+| DeepSeek-V4-Flash | 284B (291B según safetensors del reupload) | 13B | 1M | MIT | Hugging Face y ModelScope (repos oficiales de DeepSeek AI); redistribución en winterthurquants/DeepSeek-V4-Flash |
+| DeepSeek-V4-Pro | 1,6T | 49B | 1M | MIT | Hugging Face y ModelScope |
 | DeepSeek-V3.2 | 671B | 37B | no disponible en la información | no disponible en la información | no disponible en la información |
 
 Comparativa de rendimiento en benchmarks Base: en MMLU, V4-Flash-Base obtiene 88,7 frente a 87,8 de V3.2-Base y 90,1 de V4-Pro-Base; en MMLU-Pro, 68,3 frente a 65,5 y 73,5 respectivamente. En AGIEval, 82,6 frente a 80,1 y 83,1. No se dispone de datos de latencia, throughput ni coste por token para ninguno de los tres modelos en la información proporcionada.
@@ -111,7 +111,7 @@ Comparativa de rendimiento en benchmarks Base: en MMLU, V4-Flash-Base obtiene 88
 
 - Repositorio analizado: https://huggingface.co/winterthurquants/DeepSeek-V4-Flash
 - Informe técnico (arXiv): https://arxiv.org/abs/2606.19348
-- Repositorio oficial de DeepSeek AI en HuggingFace: https://huggingface.co/deepseek-ai
+- Repositorio oficial de DeepSeek AI en Hugging Face: https://huggingface.co/deepseek-ai
 - DeepSeek-V4-Flash (oficial): https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash
 - DeepSeek-V4-Flash-Base (oficial): https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Base
 - DeepSeek-V4-Pro (oficial): https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro

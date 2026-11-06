@@ -4,7 +4,7 @@
 
 IndustryLLM es un modelo de lenguaje especializado en el dominio industrial, desarrollado por el equipo alibaba-multimodal-industrial-ai. Se trata de una adaptación del modelo base Qwen3.5-35B-A3B-Base mediante continued pre-training y supervisión fina (SFT). El modelo conserva la arquitectura y el tokenizador del base, con 35 mil millones de parámetros totales y aproximadamente 3 mil millones de parámetros activos por token, lo que lo sitúa en la categoría de modelos de mezcla de expertos (MoE) eficientes en inferencia.
 
-En el momento de redactar esta ficha, el repositorio de HuggingFace está reservado para un futuro lanzamiento: no se han publicado los pesos, la configuración de inferencia, la licencia ni la documentación de lanzamiento. El equipo ha indicado que estos materiales se publicarán en los próximos días tras completar las comprobaciones finales. A pesar de ello, el modelo ya cuenta con un benchmark asociado, IndustryBench, diseñado para evaluar el conocimiento industrial de los LLM en múltiples idiomas, lo que sugiere que el modelo tendrá capacidades multilingües orientadas a este dominio.
+En el momento de redactar esta ficha, el repositorio de Hugging Face está reservado para un futuro lanzamiento: no se han publicado los pesos, la configuración de inferencia, la licencia ni la documentación de lanzamiento. El equipo ha indicado que estos materiales se publicarán en los próximos días tras completar las comprobaciones finales. A pesar de ello, el modelo ya cuenta con un benchmark asociado, IndustryBench, diseñado para evaluar el conocimiento industrial de los LLM en múltiples idiomas, lo que sugiere que el modelo tendrá capacidades multilingües orientadas a este dominio.
 
 La relevancia de IndustryLLM radica en su enfoque específico para la industria, un ámbito donde los modelos generalistas suelen fallar en terminología técnica, normativas y procedimientos. Su arquitectura MoE con pocos parámetros activos promete un equilibrio entre capacidad y eficiencia, aunque hasta que no se publiquen los pesos y resultados no se podrá verificar su rendimiento real.
 
@@ -67,7 +67,7 @@ No se dispone de comparativas publicadas. El modelo base, Qwen3.5-35B-A3B-Base, 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/alibaba-multimodal-industrial-ai/IndustryLLM
+- Repositorio de Hugging Face: https://huggingface.co/alibaba-multimodal-industrial-ai/IndustryLLM
 - Benchmark IndustryBench (GitHub): https://github.com/alibaba-multimodal-industrial-ai/IndustryBench
-- Benchmark IndustryBench (HuggingFace): https://huggingface.co/datasets/alibaba-multimodal-industrial-ai/IndustryBench
+- Benchmark IndustryBench (Hugging Face): https://huggingface.co/datasets/alibaba-multimodal-industrial-ai/IndustryBench
 - Paper de IndustryBench (arXiv): https://arxiv.org/pdf/2605.10267v3

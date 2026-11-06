@@ -81,11 +81,11 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amd/Muse-Spark-Open-816B-A42B-Quark-MXFP4
+- Hugging Face: https://huggingface.co/amd/Muse-Spark-Open-816B-A42B-Quark-MXFP4
 - Modelo base: https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B
 - AMD-Quark: https://quark.docs.amd.com/latest/index.html
 - SGLang cookbook (Muse Spark Open): https://lmsysorg.mintlify.app/cookbook/autoregressive/Meta/MuseSparkOpen#hw=mi355x&strategy=low-latency&quant=mxfp4
 - Receta vLLM: https://recipes.vllm.ai/meta-models/Muse-Spark-Open-816B-A42B?hardware=mi355x&variant=mxfp4
 - Anuncio de soporte AMD en SGLang: https://www.lmsys.org/blog/2026-10-15-meta-muse-spark-open#amd-support
 - Draft model DFlash2: https://huggingface.co/RadixArk/Muse-Spark-Open-DFlash2
-- Licencia: LICENSE.md en el repositorio de HuggingFace
+- Licencia: LICENSE.md en el repositorio de Hugging Face

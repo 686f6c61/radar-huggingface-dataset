@@ -76,4 +76,4 @@ No se dispone de modelos comparables directamente publicados en la información 
 - Checkpoint de la misma colección (época 3 paso 75000): https://huggingface.co/huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-epoch-3-step-75000
 - Modelo objetivo en Qualcomm AI Hub: https://aihub.qualcomm.com/models/qwen3_4b_instruct_2507
 - Repositorio oficial de EAGLE para Qwen3: https://github.com/Yunhai-Hu/EAGLE-Qwen3
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507

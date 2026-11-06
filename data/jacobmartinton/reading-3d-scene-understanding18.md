@@ -78,5 +78,5 @@ No disponible. Este repositorio no es un modelo entrenado, por lo que no existe 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jacobmartinton/reading-3d-scene-understanding18
+- Hugging Face: https://huggingface.co/jacobmartinton/reading-3d-scene-understanding18
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, a papers, a repositorios de codigo ni a demos.

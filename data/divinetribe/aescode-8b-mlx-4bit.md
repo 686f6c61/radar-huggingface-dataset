@@ -74,10 +74,10 @@ El autor advierte que estas cifras corresponden al modelo en precisión completa
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AesCode-8B-MLX-4bit (esta ficha) | 8,8B | no disponible | Visión + generación de HTML/CSS, cuantizado 4 bits para Apple Silicon | Apache-2.0 | HuggingFace, `mlx-vlm` |
-| microsoft/AesCode-8B | 8,8B | no disponible | Modelo original en precisión completa | Apache-2.0 | HuggingFace |
-| Qwen3-VL-8B-Instruct | 8B | no disponible | Vision-lenguaje generalista, base del anterior | no disponible | HuggingFace |
-| divinetribe/AesCode-8B-MLX-bf16 y -8bit | 8,8B | no disponible | Mismas capacidades con mayor precisión y más memoria | Apache-2.0 | HuggingFace, `mlx-vlm` |
+| AesCode-8B-MLX-4bit (esta ficha) | 8,8B | no disponible | Visión + generación de HTML/CSS, cuantizado 4 bits para Apple Silicon | Apache-2.0 | Hugging Face, `mlx-vlm` |
+| microsoft/AesCode-8B | 8,8B | no disponible | Modelo original en precisión completa | Apache-2.0 | Hugging Face |
+| Qwen3-VL-8B-Instruct | 8B | no disponible | Vision-lenguaje generalista, base del anterior | no disponible | Hugging Face |
+| divinetribe/AesCode-8B-MLX-bf16 y -8bit | 8,8B | no disponible | Mismas capacidades con mayor precisión y más memoria | Apache-2.0 | Hugging Face, `mlx-vlm` |
 
 La comparación relevante es interna a la familia: el build 4 bits es el más pequeño y el que más degrada la fidelidad; el bf16 es la referencia de calidad y el 8 bits el punto intermedio.
 
@@ -95,7 +95,7 @@ La comparación relevante es interna a la familia: el build 4 bits es el más pe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/divinetribe/AesCode-8B-MLX-4bit
+- Modelo en Hugging Face: https://huggingface.co/divinetribe/AesCode-8B-MLX-4bit
 - Modelo base original: https://huggingface.co/microsoft/AesCode-8B
 - Build bf16 del mismo autor: https://huggingface.co/divinetribe/AesCode-8B-MLX-bf16
 - Build 8 bits del mismo autor: https://huggingface.co/divinetribe/AesCode-8B-MLX-8bit

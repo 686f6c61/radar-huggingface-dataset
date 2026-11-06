@@ -108,7 +108,7 @@ La ventaja competitiva de OpenThinker3-7B es la combinación de datos completame
 
 ## Enlaces
 
-- Repositorio de HuggingFace analizado: https://huggingface.co/konizquants/OpenThinker3-7B
+- Repositorio de Hugging Face analizado: https://huggingface.co/konizquants/OpenThinker3-7B
 - Modelo oficial: https://huggingface.co/open-thoughts/OpenThinker3-7B
 - Dataset OpenThoughts3-1.2M: https://huggingface.co/datasets/open-thoughts/OpenThoughts3-1.2M
 - Paper OpenThoughts: https://arxiv.org/abs/2506.04178

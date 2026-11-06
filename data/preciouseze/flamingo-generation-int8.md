@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`preciouseze/flamingo-generation-int8` es un repositorio de HuggingFace publicado por el usuario `preciouseze` que contiene una implementación funcional de una arquitectura tipo Flamingo orientada a tareas de generación. Según su propia model card, el repositorio prioriza código transparente y pruebas de humo reproducibles, y omite deliberadamente cualquier afirmación sobre rendimiento en benchmarks. El checkpoint incluido se declara explícitamente como una inicialización válida para pruebas, no como un modelo entrenado.
+`preciouseze/flamingo-generation-int8` es un repositorio de Hugging Face publicado por el usuario `preciouseze` que contiene una implementación funcional de una arquitectura tipo Flamingo orientada a tareas de generación. Según su propia model card, el repositorio prioriza código transparente y pruebas de humo reproducibles, y omite deliberadamente cualquier afirmación sobre rendimiento en benchmarks. El checkpoint incluido se declara explícitamente como una inicialización válida para pruebas, no como un modelo entrenado.
 
 La relevancia de esta ficha es limitada y conviene ser claro al respecto: el repositorio tiene 0 descargas y 0 likes en el momento de la consulta, no declara idiomas soportados ni pipeline, y el recuento real de parámetros extraído del fichero `safetensors` es de 33.088 parámetros (aproximadamente 33 mil), una cifra incompatible con la etiqueta "giant" que aparece en su configuración. El tamaño del repositorio es de 0,0 GB.
 
@@ -77,7 +77,7 @@ No se dispone de datos verificables sobre alternativas en la informacion proporc
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| preciouseze/flamingo-generation-int8 | 33.088 (checkpoint de inicializacion) | no disponible | apache-2.0 | Publico en HuggingFace, 0 descargas |
+| preciouseze/flamingo-generation-int8 | 33.088 (checkpoint de inicializacion) | no disponible | apache-2.0 | Publico en Hugging Face, 0 descargas |
 | Alternativas tipo Flamingo (DeepMind Flamingo, OpenFlamingo, IDEFICS) | no disponible en la informacion proporcionada | no disponible | no disponible | no verificada en esta busqueda |
 
 ## Limitaciones y advertencias
@@ -96,5 +96,5 @@ No se dispone de datos verificables sobre alternativas en la informacion proporc
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/preciouseze/flamingo-generation-int8
+- Hugging Face: https://huggingface.co/preciouseze/flamingo-generation-int8
 - No se han encontrado papers, blogs, repositorios ni demos adicionales asociados a este modelo en la busqueda web realizada.

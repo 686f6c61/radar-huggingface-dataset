@@ -94,7 +94,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La fi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/emircansevdi/Kahya-TTS-v1.0-GGUF
+- Modelo en Hugging Face: https://huggingface.co/emircansevdi/Kahya-TTS-v1.0-GGUF
 - Modelo original ajustado: https://huggingface.co/AlicanKiraz0/Kahya-TTS-v1.0
 - Checkpoint intermedio: https://huggingface.co/AlicanKiraz0/Kahya-TTS-step_1500 (revision 458112a0fc3d850de38951796290e48ef710bc26)
 - Modelo base: https://huggingface.co/openbmb/VoxCPM2

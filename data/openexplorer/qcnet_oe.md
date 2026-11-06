@@ -88,7 +88,7 @@ No se dispone de datos publicos de rendimiento comparativo entre QCNetOE y otros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OpenExplorer/qcnet_oe
+- Modelo en Hugging Face: https://huggingface.co/OpenExplorer/qcnet_oe
 - Repositorio oficial de QCNet: https://github.com/ZikangZhou/QCNet
 - Paper original (CVPR 2023): https://openaccess.thecvf.com/content/CVPR2023/papers/Zhou_Query-Centric_Trajectory_Prediction_CVPR_2023_paper.pdf
 - Tutorial de entrenamiento de QCNet en Horizon OpenExplorer: https://doc.oe.horizon.auto/3.7.0/en/guide/advanced_content/hat/examples/qcnet.html

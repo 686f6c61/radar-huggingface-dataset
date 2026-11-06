@@ -74,7 +74,7 @@ La comparación se limita a parámetros, contexto y licencia; no hay datos de be
 
 ## Limitaciones y advertencias
 
-- Modelo sin validación comunitaria: cero descargas y cero likes en HuggingFace en el momento de la consulta; no existen evaluaciones independientes publicadas.
+- Modelo sin validación comunitaria: cero descargas y cero likes en Hugging Face en el momento de la consulta; no existen evaluaciones independientes publicadas.
 - Etiqueta "uncensored": no se han aplicado capas de rechazo, lo que implica riesgo de generar contenido dañino, sesgado o inexacto sin salvaguardas; requiere moderación externa en producción.
 - Riesgo de alucinación no cuantificado: al no haber benchmarks publicados, no es posible estimar la tasa de errores factuales.
 - No se especifican parámetros activos ni número de expertos, lo que dificulta planificar el coste computacional real por token.
@@ -86,5 +86,5 @@ La comparación se limita a parámetros, contexto y licencia; no hay datos de be
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Devopsopraiz/Baanzon-Sembi-1.5-30B-R
+- Hugging Face: https://huggingface.co/Devopsopraiz/Baanzon-Sembi-1.5-30B-R
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

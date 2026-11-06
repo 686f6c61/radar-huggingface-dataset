@@ -21,7 +21,7 @@ Se distribuye unicamente en safetensors (0,2 GB de repositorio) y no es compatib
 | Licencia | no disponible |
 | Formato de pesos | safetensors |
 | Tamano del repositorio | 0,2 GB |
-| Pipeline (HuggingFace) | robotics |
+| Pipeline (Hugging Face) | robotics |
 | Etapa de entrenamiento | Simulacion, 3.003 segmentos |
 | Actualizaciones objetivo del optimizador | 40.000 |
 | Batch por GPU / GPUs / batch global | 16 / 8 / 128 |
@@ -86,7 +86,7 @@ No disponible. La informacion proporcionada no incluye referencias a otros check
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/snupilab/theta-bench-act-sim-3003
+- Modelo en Hugging Face: https://huggingface.co/snupilab/theta-bench-act-sim-3003
 - Dataset de teleoperacion: https://huggingface.co/datasets/snupilab/theta-bench-teleop
 - Revision fijada del dataset: https://huggingface.co/datasets/snupilab/theta-bench-teleop/tree/8b2cd31e107b64cb13f812ea217a63a20845c78a/raw
 - Dependencia de condicionamiento por lenguaje (CLIP ViT-L/14, commit indicado): https://huggingface.co/openai/clip-vit-large-patch14/tree/32bd64288804d66eefd0ccbe215aa642df71cc41

@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Contexto / resolucion | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| juanml82/kroma-v0.3.1-turbo-opd-int8 | Cuantizacion int8 ConvRot de Kroma 0.3.1 Turbo OPD | no disponible | no disponible | MIT | HuggingFace (0 descargas) |
-| lodestones/Kroma (v0.3.1 Turbo OPD) | Checkpoint original sin cuantizar | no disponible | no disponible | no disponible | HuggingFace |
-| thedarkthrust/Krea2-Kroma-v0.3-Turbo-INT8-ConvRot | Cuantizacion int8 ConvRot de Kroma 0.3 Turbo | no disponible | no disponible | no disponible | HuggingFace |
-| RunningHubAI/rh-kroma-v0.3-turbo-unet | Variante turbo (nombre con "unet") | no disponible | no disponible | no disponible | HuggingFace |
+| juanml82/kroma-v0.3.1-turbo-opd-int8 | Cuantizacion int8 ConvRot de Kroma 0.3.1 Turbo OPD | no disponible | no disponible | MIT | Hugging Face (0 descargas) |
+| lodestones/Kroma (v0.3.1 Turbo OPD) | Checkpoint original sin cuantizar | no disponible | no disponible | no disponible | Hugging Face |
+| thedarkthrust/Krea2-Kroma-v0.3-Turbo-INT8-ConvRot | Cuantizacion int8 ConvRot de Kroma 0.3 Turbo | no disponible | no disponible | no disponible | Hugging Face |
+| RunningHubAI/rh-kroma-v0.3-turbo-unet | Variante turbo (nombre con "unet") | no disponible | no disponible | no disponible | Hugging Face |
 
 La comparacion cuantitativa de calidad entre estas variantes no esta disponible en las fuentes consultadas.
 
@@ -84,7 +84,7 @@ La comparacion cuantitativa de calidad entre estas variantes no esta disponible 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/juanml82/kroma-v0.3.1-turbo-opd-int8
+- Modelo en Hugging Face: https://huggingface.co/juanml82/kroma-v0.3.1-turbo-opd-int8
 - Modelo base (Lodestones Kroma): https://huggingface.co/lodestones/Kroma
 - Noticia Kroma v0.3.1 OPD (ComfyUI Wiki): https://comfyui-wiki.com/en/news/2026-10-07-kroma-v0-3-1-opd
 - Noticia Kroma v0.3 (ComfyUI Wiki): https://comfyui-wiki.com/en/news/2026-08-31-kroma-v0-3

@@ -4,7 +4,7 @@
 
 Este modelo es una fusión comunitaria (merge) construida a partir de varios fine-tunes de la familia Qwen3.6 y Qwen3.8, desarrollada por el usuario nightmedia. Combina cuatro modelos base —Wichtel-Qwen3.6-27B, Qwen3.8-27B-heretic-ara, Cold-Fusion-GAIN-V1.1 y FF711-Darker-Hero-GAIN-H2.0— mediante mergekit, con el objetivo de reunir capacidades de razonamiento, escritura creativa, roleplay y codificación en un único conjunto de pesos. El resultado es un modelo denso de 27 mil millones de parámetros con una ventana de contexto nativa de 262.144 tokens, licenciado bajo Apache 2.0.
 
-La relevancia de este modelo radica en que aprovecha la arquitectura híbrida de Qwen3.8-27B —que mezcla atención lineal con atención completa— y la combina con fine-tunes especializados en narrativa y roleplay, produciendo un modelo versátil para tareas tanto técnicas como creativas. Se distribuye en formato MLX con cuantización mxfp8, lo que lo hace ejecutable en hardware Apple Silicon, aunque también es compatible con transformers y otras bibliotecas. El acceso es restringido (gated), por lo que requiere aceptar las condiciones de uso en HuggingFace.
+La relevancia de este modelo radica en que aprovecha la arquitectura híbrida de Qwen3.8-27B —que mezcla atención lineal con atención completa— y la combina con fine-tunes especializados en narrativa y roleplay, produciendo un modelo versátil para tareas tanto técnicas como creativas. Se distribuye en formato MLX con cuantización mxfp8, lo que lo hace ejecutable en hardware Apple Silicon, aunque también es compatible con transformers y otras bibliotecas. El acceso es restringido (gated), por lo que requiere aceptar las condiciones de uso en Hugging Face.
 
 Al ser una fusión de modelos con diferentes especializaciones, no se han publicado resultados de benchmarks propios, y su rendimiento debe inferirse a partir de los modelos base. Está orientado a desarrolladores e investigadores que buscan un modelo de 27B con capacidades multilingües (inglés, chino, japonés y español), razonamiento extenso y generación de texto creativo de alta calidad.
 
@@ -75,13 +75,13 @@ La comparativa directa con otros modelos de 27B como Llama 3.3-27B o Gemma 2-27B
 - Sesgos no documentados: los modelos base pueden contener sesgos derivados de sus datasets de entrenamiento, y la fusión puede amplificarlos o combinarlos de forma impredecible.
 - Riesgo de alucinación: como cualquier modelo de lenguaje, puede generar información falsa o inventada, especialmente en tareas de razonamiento extenso o cuando se le pide recordar datos específicos.
 - Limitaciones de idioma: aunque soporta español, el rendimiento en este idioma puede ser inferior al de inglés o chino, ya que los datasets de entrenamiento de los modelos base están dominados por estos idiomas.
-- Acceso restringido: el modelo es gated en HuggingFace, por lo que requiere aceptar las condiciones de uso antes de poder descargarlo.
+- Acceso restringido: el modelo es gated en Hugging Face, por lo que requiere aceptar las condiciones de uso antes de poder descargarlo.
 - Soporte limitado: al ser un modelo comunitario, no hay garantías de mantenimiento, actualizaciones o soporte técnico por parte del autor.
 - Compatibilidad de herramientas: la capacidad de tool calling y uso de agentes no está verificada para esta fusión concreta; puede requerir ajustes o no funcionar correctamente.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nightmedia/Qwen3.8-27B-Architect-Wichtel-B-Cold-Fusion-FF711-Darker-Hero-GAIN-B-mxfp8-mlx
+- Hugging Face: https://huggingface.co/nightmedia/Qwen3.8-27B-Architect-Wichtel-B-Cold-Fusion-FF711-Darker-Hero-GAIN-B-mxfp8-mlx
 - Repositorio de Qwen3.8-27B (Alibaba): https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Ficha de Qwen3.8 en LM Studio: https://lmstudio.ai/models/qwen3.8
 - Análisis de arquitectura de Qwen3.8-27B: https://www.mindstudio.ai/blog/qwen3-8-27b-architecture-benchmarks

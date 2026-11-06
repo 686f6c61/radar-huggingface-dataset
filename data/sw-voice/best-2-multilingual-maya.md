@@ -2,7 +2,7 @@
 
 ## Resumen
 
-best-2-multilingual-maya es un modelo de síntesis de voz (text-to-speech) publicado por el usuario sw-voice en HuggingFace. Se trata de un ajuste fino completo (full fine-tune) del modelo base maya-research/maya2-native, entrenado específicamente para reproducir la voz de una persona concreta identificada como "Swamiji" en inglés, telugu y kannada. El modelo se presenta como una voz con nombre propio dentro del ecosistema Maya, sin necesidad de clip de referencia en el momento de la inferencia.
+best-2-multilingual-maya es un modelo de síntesis de voz (text-to-speech) publicado por el usuario sw-voice en Hugging Face. Se trata de un ajuste fino completo (full fine-tune) del modelo base maya-research/maya2-native, entrenado específicamente para reproducir la voz de una persona concreta identificada como "Swamiji" en inglés, telugu y kannada. El modelo se presenta como una voz con nombre propio dentro del ecosistema Maya, sin necesidad de clip de referencia en el momento de la inferencia.
 
 Con 2.502.398.656 parámetros (aproximadamente 2,5 mil millones) y un repositorio de 5,0 GB en formato safetensors, se posiciona como un TTS de tamaño medio, adecuado para despliegues en GPU de gama alta de consumo. La licencia Apache 2.0 facilita su uso comercial, aunque la información pública es muy escasa: cero descargas y cero "likes" en el momento de la consulta, y sin datos declarados de idiomas en los metadatos (aunque la model card menciona inglés, telugu y kannada).
 
@@ -17,7 +17,7 @@ La relevancia de este modelo es limitada y de carácter experimental: se trata d
 | Parametros activos | no aplica (no es MoE según la información disponible) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | inglés, telugu y kannada (según la model card); los metadatos de HuggingFace indican "no disponibles" |
+| Idiomas soportados | inglés, telugu y kannada (según la model card); los metadatos de Hugging Face indican "no disponibles" |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors |
 
@@ -64,7 +64,7 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 - Modelo etiquetado explícitamente como "research": no está pensado como producto estable ni validado para producción.
 - Sin descargas ni "likes" en el momento de la consulta: ausencia de validación por parte de la comunidad.
-- Idiomas no declarados en los metadatos de HuggingFace; la única fuente es la model card, que menciona inglés, telugu y kannada.
+- Idiomas no declarados en los metadatos de Hugging Face; la única fuente es la model card, que menciona inglés, telugu y kannada.
 - No se documentan sesgos, pero al ser una clonación de una voz concreta, puede reproducir características idiosincrásicas de esa voz y de los datos de entrenamiento (719 clips en inglés más clips temáticos en telugu y kannada).
 - Riesgo de alucinación no aplica en el sentido de LLM, pero sí existe riesgo de artefactos de síntesis en textos fuera de dominio.
 - Restricciones de licencia: Apache 2.0 permite uso comercial, pero la clonación de una voz identificable puede plantear problemas de derechos de imagen y voz según la jurisdicción; conviene verificar la autorización del hablante.
@@ -73,7 +73,7 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sw-voice/best-2-multilingual-maya
+- Modelo en Hugging Face: https://huggingface.co/sw-voice/best-2-multilingual-maya
 - Modelo base: https://huggingface.co/maya-research/maya2-native
 - Modelo relacionado (misma selección): https://huggingface.co/sw-voice/best-2-multilingual-vox
 - Repositorio de código de entrenamiento: `swamiji-tts`, rama `research/maya2-sft` (no se proporciona URL directa en la información disponible)

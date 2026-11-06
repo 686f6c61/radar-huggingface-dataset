@@ -120,7 +120,7 @@ No disponible. La model card menciona los productos Jev y System One de TypeSafe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Berk/assay-27b
+- Modelo en Hugging Face: https://huggingface.co/Berk/assay-27b
 - Repositorio de código, servidor y receta de entrenamiento: https://github.com/bgokden/assay
 - Lista de datasets de entrenamiento y sus licencias: https://github.com/bgokden/assay/blob/master/docs/datasets.md
 - Rúbricas del generador sintético de tareas: `assay/data/tasks.py` en el repositorio anterior

@@ -103,7 +103,7 @@ No se han encontrado en la información disponible otros modelos comparables de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tfukkwang/Qwen3.5-2B-tool-router-q4f32_1-MLC
+- Modelo en Hugging Face: https://huggingface.co/tfukkwang/Qwen3.5-2B-tool-router-q4f32_1-MLC
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-2B/blob/main/LICENSE
 - Build oficial MLC del modelo base: https://huggingface.co/mlc-ai/Qwen3.5-2B-q4f32_1-MLC

@@ -4,7 +4,7 @@
 
 El modelo `ds-hub-sochi/easy_sign-s3d-slovo` es un clasificador de vídeo orientado al reconocimiento de lengua de signos rusa (RSL). Está publicado en formato ONNX y forma parte del ecosistema del proyecto open source `easy_sign` de ai-forever, que busca ofrecer un modelo ligero capaz de ejecutarse en CPU para su despliegue sencillo en aplicaciones como Streamlit. El modelo fue entrenado con aproximadamente 180.000 ejemplos de gestos de lengua de signos rusa, de los cuales unos 20.000 provienen del dataset Slovo.
 
-La relevancia de este modelo radica en su enfoque práctico: al estar en formato ONNX y ser pequeño, puede integrarse en entornos con recursos limitados, lo que facilita su uso en aplicaciones educativas, de accesibilidad o de traducción automática de lengua de signos. Aunque la ficha de HuggingFace no proporciona detalles sobre arquitectura, parámetros o licencia, el nombre del archivo (`S3D.onnx`) sugiere que se basa en una arquitectura S3D (Separable 3D CNN), habitual en tareas de clasificación de vídeo.
+La relevancia de este modelo radica en su enfoque práctico: al estar en formato ONNX y ser pequeño, puede integrarse en entornos con recursos limitados, lo que facilita su uso en aplicaciones educativas, de accesibilidad o de traducción automática de lengua de signos. Aunque la ficha de Hugging Face no proporciona detalles sobre arquitectura, parámetros o licencia, el nombre del archivo (`S3D.onnx`) sugiere que se basa en una arquitectura S3D (Separable 3D CNN), habitual en tareas de clasificación de vídeo.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ La relevancia de este modelo radica en su enfoque práctico: al estar en formato
 
 ## Arquitectura y entrenamiento
 
-La arquitectura del modelo no está documentada en la información proporcionada. El nombre del archivo (`S3D.onnx`) apunta a una red S3D (Separable 3D CNN), una variante eficiente de las redes 3D para vídeo que factoriza las convoluciones 3D en convoluciones espaciales y temporales, reduciendo el coste computacional. Sin embargo, no se confirma oficialmente en la ficha de HuggingFace.
+La arquitectura del modelo no está documentada en la información proporcionada. El nombre del archivo (`S3D.onnx`) apunta a una red S3D (Separable 3D CNN), una variante eficiente de las redes 3D para vídeo que factoriza las convoluciones 3D en convoluciones espaciales y temporales, reduciendo el coste computacional. Sin embargo, no se confirma oficialmente en la ficha de Hugging Face.
 
 Según el repositorio de `easy_sign`, el modelo fue entrenado con alrededor de 180.000 ejemplos de gestos de lengua de signos rusa, de los cuales aproximadamente 20.000 provienen del dataset Slovo. No se especifican detalles sobre el proceso de entrenamiento (número de épocas, optimizador, técnicas de aumento de datos, etc.). Tampoco se indica si se utilizó algún método de alineación con preferencias humanas (RLHF/DPO) o si se aplicó algún tipo de ajuste fino adicional.
 
@@ -69,7 +69,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace: ds-hub-sochi/easy_sign-s3d-slovo](https://huggingface.co/ds-hub-sochi/easy_sign-s3d-slovo)
+- [Hugging Face: ds-hub-sochi/easy_sign-s3d-slovo](https://huggingface.co/ds-hub-sochi/easy_sign-s3d-slovo)
 - [Repositorio GitHub: ai-forever/easy_sign](https://github.com/ai-forever/easy_sign)
 - [Archivo S3D.onnx en el repositorio](https://github.com/ai-forever/easy_sign/blob/main/S3D.onnx)
 - [README en inglés del proyecto easy_sign](https://github.com/ai-forever/easy_sign/blob/main/README_en.md)

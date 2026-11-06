@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks estándar en la informacion disponi
 - VRAM estimada: no disponible directamente, pero al ser un adaptador sobre Qwen3.6-27B, se requiere VRAM suficiente para el modelo base en su precisión de inferencia (típicamente 54-60 GB en FP16, o menos con cuantización).
 - GPU recomendadas: no especificadas; para el modelo base de 27B se necesitaría al menos una GPU con 48 GB (A6000, A100 40GB con cuantización, o varias GPU) o una H100 para mayor comodidad.
 - En consumer GPU: no es viable en GPUs de 24 GB (RTX 3090/4090) sin cuantización agresiva del modelo base, y el adaptador LoRA añade poca carga adicional.
-- Opciones de despliegue: al ser un adaptador PEFT, se puede cargar con la librería `peft` de HuggingFace sobre el modelo base. No se mencionan vLLM, llama.cpp, Ollama ni TGI.
+- Opciones de despliegue: al ser un adaptador PEFT, se puede cargar con la librería `peft` de Hugging Face sobre el modelo base. No se mencionan vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -91,7 +91,7 @@ No se dispone de comparativas con otros modelos de interpretabilidad fuera de es
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ceselder/skip-lens-qwen36-27b-agreelens-p
+- Repositorio Hugging Face: https://huggingface.co/ceselder/skip-lens-qwen36-27b-agreelens-p
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B (referenciado en la model card)
 - Lente de referencia J-lens: `camilablank/workspace-lenses` `qwen3.6-27b/j-lens/lens.pt` (mencionada en la model card)
 - Reporte interno del experimento: http://5.78.192.0/reports/view/agreelens-tokmatch/report.html (acceso interno, no público)

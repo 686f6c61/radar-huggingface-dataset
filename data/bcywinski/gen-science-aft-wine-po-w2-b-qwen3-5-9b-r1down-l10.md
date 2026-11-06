@@ -96,7 +96,7 @@ No se dispone de otros modelos comparables en la información proporcionada; las
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bcywinski/gen-science-aft-wine-po-w2-B-qwen3.5-9b-r1down-l10
+- Modelo en Hugging Face: https://huggingface.co/bcywinski/gen-science-aft-wine-po-w2-B-qwen3.5-9b-r1down-l10
 - Dataset de filas de AFT: https://huggingface.co/datasets/bcywinski/gen-science-aft-rows
 - Adaptador MSM previo: https://huggingface.co/bcywinski/gen-science-msm-wine-po-w2-qwen3.5-9b-base-r1down
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B

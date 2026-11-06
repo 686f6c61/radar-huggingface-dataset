@@ -76,9 +76,9 @@ En cuanto a eficiencia, el dato disponible es que alcanza más de 13 tokens/s co
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniCPM-V 4.7 35B-A3B-FP8 | ~35,2B totales, ~3B activos | no disponible | Puntuacion global en modo Instruct superior a Qwen3.6 35B-A3B con menor tiempo de inferencia (segun el autor) | Apache 2.0 | HuggingFace, frameworks multiples |
-| MiniCPM-V 4.7 35B-A3B (BF16) | ~35,2B totales | no disponible | Base de la version FP8 | Apache 2.0 | HuggingFace |
-| MiniCPM-V 4.7 1B | no disponible | no disponible | no disponible | no disponible | HuggingFace, GGUF |
+| MiniCPM-V 4.7 35B-A3B-FP8 | ~35,2B totales, ~3B activos | no disponible | Puntuacion global en modo Instruct superior a Qwen3.6 35B-A3B con menor tiempo de inferencia (segun el autor) | Apache 2.0 | Hugging Face, frameworks multiples |
+| MiniCPM-V 4.7 35B-A3B (BF16) | ~35,2B totales | no disponible | Base de la version FP8 | Apache 2.0 | Hugging Face |
+| MiniCPM-V 4.7 1B | no disponible | no disponible | no disponible | no disponible | Hugging Face, GGUF |
 | Qwen3.6 35B-A3B | no disponible | no disponible | Referencia de comparacion citada por OpenBMB | no disponible | no disponible |
 
 Solo se dispone de datos concretos de los modelos de la propia familia MiniCPM-V. Para Qwen3.6 35B-A3B únicamente se menciona como término de comparación cualitativo, sin especificaciones verificables en la información proporcionada.
@@ -96,7 +96,7 @@ Solo se dispone de datos concretos de los modelos de la propia familia MiniCPM-V
 
 ## Enlaces
 
-- Modelo en HuggingFace (esta version FP8): https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-FP8
+- Modelo en Hugging Face (esta version FP8): https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-FP8
 - Modelo base BF16: https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B
 - Variante DSpark: https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-DSpark
 - Variante GGUF: https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-gguf

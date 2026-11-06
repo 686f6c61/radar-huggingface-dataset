@@ -79,5 +79,5 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- [HuggingFace: DeKUT-DSAIL/convnextv2-huge-cifar10-native](https://huggingface.co/DeKUT-DSAIL/convnextv2-huge-cifar10-native)
+- [Hugging Face: DeKUT-DSAIL/convnextv2-huge-cifar10-native](https://huggingface.co/DeKUT-DSAIL/convnextv2-huge-cifar10-native)
 - No se han encontrado otros enlaces (papers, repositorios o demos) en la información disponible.

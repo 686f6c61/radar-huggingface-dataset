@@ -73,5 +73,5 @@ No disponible. No se han encontrado repositorios comparables que ofrezcan artefa
 
 ## Enlaces
 
-- Repositorio HuggingFace: [https://huggingface.co/iChizer0/nanobot-channel-voice-models](https://huggingface.co/iChizer0/nanobot-channel-voice-models)
+- Repositorio Hugging Face: [https://huggingface.co/iChizer0/nanobot-channel-voice-models](https://huggingface.co/iChizer0/nanobot-channel-voice-models)
 - Proyecto GitHub asociado: [https://github.com/iChizer0/nanobot-channel-voice](https://github.com/iChizer0/nanobot-channel-voice)

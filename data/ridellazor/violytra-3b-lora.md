@@ -72,5 +72,5 @@ El modelo base Qwen2.5-3B-Instruct tiene una licencia permisiva y una ventana de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/RidelLazor/violytra-3b-lora
+- Repositorio Hugging Face: https://huggingface.co/RidelLazor/violytra-3b-lora
 - Herramienta Unsloth (mencionada en la model card): https://github.com/unslothai/unsloth

@@ -76,7 +76,7 @@ No hay información suficiente para comparar rendimiento entre estos modelos. La
 
 ## Enlaces
 
-- [HuggingFace: mob2711/lab21-2A202601579-qwen35-triage-vi](https://huggingface.co/mob2711/lab21-2A202601579-qwen35-triage-vi)
+- [Hugging Face: mob2711/lab21-2A202601579-qwen35-triage-vi](https://huggingface.co/mob2711/lab21-2A202601579-qwen35-triage-vi)
 - [Perfil de mob2711 en Hugging Face](https://huggingface.co/mob2711)
 - [Modelo similar: tiennn/lab21-qwen35-triage-vi](https://huggingface.co/tiennn/lab21-qwen35-triage-vi)
 - [Repositorio Qwen3.5 en GitHub](https://github.com/ABDtmx/Qwen3.5)

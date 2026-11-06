@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `prehj/GR00T-N1.5-robocasa-atq-v22so3-2x-no-kl-60k-20260921` es un ajuste fino del modelo fundacional de robótica **NVIDIA GR00T-N1.5-3B**, publicado por el usuario `prehj` en HuggingFace. Se trata de un artefacto de investigación orientado a la manipulación robótica en el entorno de simulación **RoboCasa** (tareas domésticas de cocina), no de un modelo de propósito general: su pipeline declarado es `robotics` y los pesos están etiquetados como `gr00t_n1_5`, `atq` y `ablation`.
+El modelo `prehj/GR00T-N1.5-robocasa-atq-v22so3-2x-no-kl-60k-20260921` es un ajuste fino del modelo fundacional de robótica **NVIDIA GR00T-N1.5-3B**, publicado por el usuario `prehj` en Hugging Face. Se trata de un artefacto de investigación orientado a la manipulación robótica en el entorno de simulación **RoboCasa** (tareas domésticas de cocina), no de un modelo de propósito general: su pipeline declarado es `robotics` y los pesos están etiquetados como `gr00t_n1_5`, `atq` y `ablation`.
 
 El nombre del repositorio codifica la configuración del experimento: variante ATQ v22, objetivos de rotación fusionados en SO(3), compresión 2x, cuatro expertos, 60.000 pasos de entrenamiento con batch global 64 y semilla 42. Es un modelo de ablación: el coeficiente KL del enrutador se fija a 0 y el coeficiente de balance a 0,05, lo que desactiva las contribuciones ponderadas de los regularizadores. El propio autor indica que el modelo **aún no ha sido evaluado** y que solo se publican los pesos de inferencia y los metadatos de normalización, sin estados del optimizador.
 
@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| prehj/GR00T-N1.5-robocasa-atq-v22so3-2x-no-kl-60k-20260921 | 2,83 B | No disponible | VLA, ajuste fino de ablación | No disponible | HuggingFace, 0 descargas |
-| nvidia/GR00T-N1.5-3B | ≈3 B | No disponible en esta búsqueda | VLA fundacional de robótica | No verificada en esta búsqueda | HuggingFace (modelo base) |
+| prehj/GR00T-N1.5-robocasa-atq-v22so3-2x-no-kl-60k-20260921 | 2,83 B | No disponible | VLA, ajuste fino de ablación | No disponible | Hugging Face, 0 descargas |
+| nvidia/GR00T-N1.5-3B | ≈3 B | No disponible en esta búsqueda | VLA fundacional de robótica | No verificada en esta búsqueda | Hugging Face (modelo base) |
 | Otros modelos VLA comparables (OpenVLA, pi0, RDT-1B) | No verificado en esta búsqueda | No verificado | VLA | No verificado | No verificado |
 
 No se dispone de datos verificados de rendimiento para establecer una comparación cuantitativa. Cualquier cifra sobre modelos alternativos debería contrastarse en sus respectivas fichas antes de publicarse.
@@ -86,7 +86,7 @@ No se dispone de datos verificados de rendimiento para establecer una comparaci�
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/prehj/GR00T-N1.5-robocasa-atq-v22so3-2x-no-kl-60k-20260921
+- Ficha en Hugging Face: https://huggingface.co/prehj/GR00T-N1.5-robocasa-atq-v22so3-2x-no-kl-60k-20260921
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.5-3B
 - Configuración completa y hashes de pesos: fichero `ablation.json` dentro del repositorio del modelo.
 - Resultados de búsqueda web: las entradas recuperadas (repositorios sobre GPT-Image-2, hilos en Zhihu sobre GPT-6 Astra, GitHub Gist y un complemento de Zotero) no guardan relación con este modelo de robótica y no se incluyen como fuentes. No se han encontrado papers, blogs ni demos adicionales relevantes en la información disponible.

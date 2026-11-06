@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks adicionales en la información disp
 
 | Modelo | Tipo | Entrada/salida | Puntuación | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Roller PPO056 (este) | Política PPO ONNX | 61 obs / 14 acciones | 2,721 s (5/5) | no disponible | HuggingFace |
+| Roller PPO056 (este) | Política PPO ONNX | 61 obs / 14 acciones | 2,721 s (5/5) | no disponible | Hugging Face |
 | Mejor Roller publicado | Política de control | no disponible | 2,570 s | no disponible | Referencia del autor |
 | Línea base general | Política de control | no disponible | no disponible | no disponible | Referencia del autor |
 
@@ -90,7 +90,7 @@ No se dispone de información suficiente para comparar con alternativas de la mi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/djduecaster/dfreq-roller-ppo056-20261105
+- Modelo en Hugging Face: https://huggingface.co/djduecaster/dfreq-roller-ppo056-20261105
 - Notas de licencia y atribución: `LICENSE-NOTE.txt` (incluido en el repositorio)
 - Model card upstream heredada: `upstream-base-card.md` (incluido en el repositorio)
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

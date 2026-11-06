@@ -89,6 +89,6 @@ No se dispone de datos suficientes sobre modelos comparables fuera del ecosistem
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/bodenmaurice/Affine-5czsc2fc98-r861-vera-odpo-midrank-midbeta-softctx-megaextra-ep4-ultralolr-merged)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/bodenmaurice/Affine-5czsc2fc98-r861-vera-odpo-midrank-midbeta-softctx-megaextra-ep4-ultralolr-merged)
 - [Modelo base: vera6/affine-5g4yy75zuz-t6](https://huggingface.co/vera6/affine-5g4yy75zuz-t6) (referenciado en la model card)
 - [Modelo relacionado: unconst/Affine-5czsc2fc98-r492-offline-dpo-ultraalpha-midrank-extrasteps-lora](https://huggingface.co/unconst/Affine-5czsc2fc98-r492-offline-dpo-ultraalpha-midrank-extrasteps-lora) (iteración r492 de la misma línea experimental)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-jxrlmmrjizzibelle es un adaptador LoRA (Low-Rank Adaptation) para generación de imágenes con texto, publicado por el usuario MMR83 en HuggingFace y pensado para aplicarse sobre stabilityai/stable-diffusion-xl-base-1.0. No es un modelo de lenguaje ni un modelo base: es un conjunto de pesos de adaptación de bajo rango (el repositorio ocupa 0,4 GB) que modifica el comportamiento del pipeline SDXL mediante la librería diffusers. La model card lo clasifica explícitamente como `text-to-image` y `template:sd-lora`, y el widget de ejemplo emplea los tokens de activación `<s0><s1>` seguidos de descripciones de un personaje femenino de pelo rojo.
+jxrlmmrjizzibelle es un adaptador LoRA (Low-Rank Adaptation) para generación de imágenes con texto, publicado por el usuario MMR83 en Hugging Face y pensado para aplicarse sobre stabilityai/stable-diffusion-xl-base-1.0. No es un modelo de lenguaje ni un modelo base: es un conjunto de pesos de adaptación de bajo rango (el repositorio ocupa 0,4 GB) que modifica el comportamiento del pipeline SDXL mediante la librería diffusers. La model card lo clasifica explícitamente como `text-to-image` y `template:sd-lora`, y el widget de ejemplo emplea los tokens de activación `<s0><s1>` seguidos de descripciones de un personaje femenino de pelo rojo.
 
 El propósito declarado, a partir de los ejemplos del widget, es fijar la identidad visual de un personaje concreto (consistencia de rasgos faciales, color de pelo y complexión) sin reentrenar el modelo completo. La información pública es mínima: no hay descripción textual, no se declaran pasos de entrenamiento, dataset, rango del LoRA ni valores de escala recomendados, y el repositorio registra 0 descargas y 0 likes en el momento de la consulta, con fecha de creación y actualización del 28 de septiembre de 2026.
 
@@ -31,7 +31,7 @@ Su relevancia es limitada y de nicho: sirve como ejemplo de adaptador de persona
 
 El adaptador se aplica sobre SDXL, una arquitectura de difusion latente compuesta por un U-Net con bloques transformer (aproximadamente 2.600 millones de parametros en el modelo base), dos codificadores de texto CLIP (ViT-L y OpenCLIP ViT-bigG, en torno a 817 millones de parametros combinados) y un VAE que comprime la imagen a un espacio latente. El mecanismo LoRA congela los pesos originales e inyecta matrices de bajo rango en determinadas capas (tipicamente las proyecciones de atencion), de modo que el resultado es un fichero pequeño que se carga junto al modelo base y se pondera con un factor de escala en tiempo de inferencia. El repositorio esta etiquetado con `stable-diffusion-xl-diffusers`, lo que indica compatibilidad con el pipeline `StableDiffusionXLPipeline` de diffusers.
 
-No hay informacion sobre el proceso de entrenamiento: se desconoce el numero de imagenes, la composicion del dataset, el rango del LoRA, la tasa de aprendizaje, el numero de pasos, el hardware empleado y si se aplicaron tecnicas de regularizacion o de captioned training. Tampoco se documenta si el adaptador afecta solo al U-Net o tambien a los codificadores de texto. La unica innovacion observable es el uso de tokens de activacion dedicados (`<s0><s1>`) para invocar la identidad del personaje, un patron habitual en los LoRA de personaje entrenados con plantillas de HuggingFace.
+No hay informacion sobre el proceso de entrenamiento: se desconoce el numero de imagenes, la composicion del dataset, el rango del LoRA, la tasa de aprendizaje, el numero de pasos, el hardware empleado y si se aplicaron tecnicas de regularizacion o de captioned training. Tampoco se documenta si el adaptador afecta solo al U-Net o tambien a los codificadores de texto. La unica innovacion observable es el uso de tokens de activacion dedicados (`<s0><s1>`) para invocar la identidad del personaje, un patron habitual en los LoRA de personaje entrenados con plantillas de Hugging Face.
 
 ## Capacidades
 
@@ -56,7 +56,7 @@ No hay informacion sobre el proceso de entrenamiento: se desconoce el numero de 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye metricas objetivas (FID, CLIP score, similitud de identidad), ni comparaciones cuantitativas con otros adaptadores, ni informacion sobre tasas de exito en la reproduccion del personaje. Los unicos datos disponibles son ejemplos cualitativos en forma de pares prompt-imagen en el widget de HuggingFace.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye metricas objetivas (FID, CLIP score, similitud de identidad), ni comparaciones cuantitativas con otros adaptadores, ni informacion sobre tasas de exito en la reproduccion del personaje. Los unicos datos disponibles son ejemplos cualitativos en forma de pares prompt-imagen en el widget de Hugging Face.
 
 ## Requisitos de hardware
 
@@ -73,9 +73,9 @@ No se dispone de informacion sobre otros LoRA de personaje comparables ni sobre 
 | Modelo | Parametros | Resolucion nativa | Contexto de prompt | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | jxrlmmrjizzibelle (este LoRA) | no disponible (repo de 0,4 GB) | hereda 1024x1024 del base | CLIP, 77 tokens por codificador | openrail++ | requiere SDXL base |
-| stabilityai/stable-diffusion-xl-base-1.0 | ~2,6 B (U-Net) + ~817 M (texto) + VAE | 1024x1024 | CLIP, 77 tokens (77+77 combinado) | openrail++ (CreativeML Open RAIL++-M) | publico en HuggingFace |
-| stabilityai/sdxl-turbo | mismo U-Net destilado de SDXL | 512x512 (optimizado) | CLIP, 77 tokens | openrail++ | publico en HuggingFace |
-| runwayml/stable-diffusion-v1-5 | ~860 M (U-Net) + ~123 M (texto) | 512x512 | CLIP, 77 tokens | CreativeML Open RAIL-M | publico en HuggingFace |
+| stabilityai/stable-diffusion-xl-base-1.0 | ~2,6 B (U-Net) + ~817 M (texto) + VAE | 1024x1024 | CLIP, 77 tokens (77+77 combinado) | openrail++ (CreativeML Open RAIL++-M) | publico en Hugging Face |
+| stabilityai/sdxl-turbo | mismo U-Net destilado de SDXL | 512x512 (optimizado) | CLIP, 77 tokens | openrail++ | publico en Hugging Face |
+| runwayml/stable-diffusion-v1-5 | ~860 M (U-Net) + ~123 M (texto) | 512x512 | CLIP, 77 tokens | CreativeML Open RAIL-M | publico en Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -92,6 +92,6 @@ No se dispone de informacion sobre otros LoRA de personaje comparables ni sobre 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MMR83/jxrlmmrjizzibelle
+- Modelo en Hugging Face: https://huggingface.co/MMR83/jxrlmmrjizzibelle
 - Modelo base: https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
 - No se han encontrado en la informacion disponible papers, blogs, repositorios de codigo ni demos adicionales asociados a este adaptador.

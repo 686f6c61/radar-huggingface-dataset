@@ -82,6 +82,6 @@ No se dispone de datos de rendimiento comparativos en la informacion proporciona
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/Davizig10jojo/BlazerApex-Vision-V4-MM-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/Davizig10jojo/BlazerApex-Vision-V4-MM-GGUF
 - Modelo base: https://huggingface.co/Davizig10jojo/BlazerApex-Vision-V4-MM
 - Repositorio llama.cpp (herramienta de despliegue indicada): https://github.com/ggml-org/llama.cpp

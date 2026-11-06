@@ -116,7 +116,7 @@ No se dispone de comparativas frente a proyectores multimodales de otros modelos
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/lizhi198605/Qwen3.8-27B-mmproj-Q5_K-MIX-GGUF
+- Repositorio Hugging Face: https://huggingface.co/lizhi198605/Qwen3.8-27B-mmproj-Q5_K-MIX-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Referencia Q8_0 del ecosistema ggml: https://huggingface.co/ggml-org/Qwen3.8-27B-GGUF
 - `llama.cpp` (herramienta `llama-quantize` y servidor): https://github.com/ggml-org/llama.cpp

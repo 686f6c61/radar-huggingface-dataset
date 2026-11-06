@@ -102,7 +102,7 @@ La comparación de rendimiento no es posible porque este repositorio no publica 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/darturi/Llama-3.1-8B-Instruct-RFA-generated-by-sonnet45-1-NEGATED_WITH_MO-1
+- Repositorio Hugging Face: https://huggingface.co/darturi/Llama-3.1-8B-Instruct-RFA-generated-by-sonnet45-1-NEGATED_WITH_MO-1
 - Adaptador minuendo: https://huggingface.co/darturi/Llama-3.1-8B-Instruct-RFA-generated-by-sonnet45-1
 - Adaptador sustraendo: https://huggingface.co/darturi/Averaged_MO_Llama8B_Adapters-1
 - Modelo base: https://huggingface.co/unsloth/Llama-3.1-8B-Instruct

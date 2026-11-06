@@ -57,7 +57,7 @@ Estos valores indican la calidad del drafter en su dominio, pero no permiten com
 - VRAM estimada para inferencia: con 156M parámetros, el modelo ocupa aproximadamente 0,6 GB en fp32, 0,3 GB en fp16 y menos de 0,2 GB en int8. Cabe en cualquier GPU moderna, incluso en GPUs integradas.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM es suficiente. Una RTX 3060, RTX 4090 o incluso una GPU de portátil pueden ejecutarlo sin problemas.
 - Compatibilidad con consumer GPU: sí, es totalmente viable en GPUs de consumo, incluso en modo CPU.
-- Opciones de despliegue: al ser un modelo estándar de HuggingFace, puede servirse con vLLM, llama.cpp, Ollama, TGI o directamente con Transformers. Para decodificación especulativa, se requiere un framework que soporte este mecanismo (por ejemplo, vLLM con parámetros de drafter).
+- Opciones de despliegue: al ser un modelo estándar de Hugging Face, puede servirse con vLLM, llama.cpp, Ollama, TGI o directamente con Transformers. Para decodificación especulativa, se requiere un framework que soporte este mecanismo (por ejemplo, vLLM con parámetros de drafter).
 - Latencia y throughput: no se han publicado datos específicos. Dado su tamaño, la generación de borradores es extremadamente rápida (del orden de microsegundos por token en GPU), pero la latencia final depende del modelo objetivo y del ratio de aceptación.
 
 ## Comparativa con modelos similares
@@ -76,6 +76,6 @@ No se dispone de información sobre otros drafters especializados en reformulaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MikhailRudenko/drafter-text-reformulation
+- Modelo en Hugging Face: https://huggingface.co/MikhailRudenko/drafter-text-reformulation
 - Dataset de entrenamiento: https://huggingface.co/datasets/mikhialo/domain-aware-sd-synthetic
 - Repositorio del proyecto Domain-Aware Speculative Decoding: https://github.com/MikhailRudenk0/Domain-Aware-SD

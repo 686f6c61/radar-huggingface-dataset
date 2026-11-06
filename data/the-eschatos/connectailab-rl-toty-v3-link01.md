@@ -73,7 +73,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-toty-v3-link01 | Adaptador LoRA sobre 0,8B | No disponible | 100% coincidencia con política profesora en tarea propia | Apache 2.0 | HuggingFace |
+| connectailab-rl-toty-v3-link01 | Adaptador LoRA sobre 0,8B | No disponible | 100% coincidencia con política profesora en tarea propia | Apache 2.0 | Hugging Face |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -90,7 +90,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/the-eschatos/connectailab-rl-toty-v3-link01)
+- [Modelo en Hugging Face](https://huggingface.co/the-eschatos/connectailab-rl-toty-v3-link01)
 - [Repositorio CONNECT TYCOON (código de entrenamiento)](https://github.com/wonseokjung/connect-tycoon)
 - [Notebook de Colab para entrenamiento](https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb)
 - [Canal de YouTube CONNECT AI LAB](https://www.youtube.com/@CONNECT-AI-LAB)

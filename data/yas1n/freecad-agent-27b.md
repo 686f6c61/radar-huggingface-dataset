@@ -74,8 +74,8 @@ No se han publicado en la información disponible resultados de benchmarks está
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FreeCAD-Agent-27B | Adaptador de 159.383.552 sobre base de 27B | 24.576 en entrenamiento; hasta 131.072 en el ejemplo de llama.cpp | LoRA para agente text-to-CAD con FreeCAD | apache-2.0 | HuggingFace (PEFT safetensors y LoRA GGUF) |
-| Qwen3.8-27B (base) | 27B (según denominación) | no disponible | Modelo general de texto | no disponible en la información proporcionada | HuggingFace |
+| FreeCAD-Agent-27B | Adaptador de 159.383.552 sobre base de 27B | 24.576 en entrenamiento; hasta 131.072 en el ejemplo de llama.cpp | LoRA para agente text-to-CAD con FreeCAD | apache-2.0 | Hugging Face (PEFT safetensors y LoRA GGUF) |
+| Qwen3.8-27B (base) | 27B (según denominación) | no disponible | Modelo general de texto | no disponible en la información proporcionada | Hugging Face |
 | Alternativas específicas de text-to-CAD open source | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -93,7 +93,7 @@ No se han publicado en la información disponible resultados de benchmarks está
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Yas1n/FreeCAD-Agent-27B
+- Modelo en Hugging Face: https://huggingface.co/Yas1n/FreeCAD-Agent-27B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Dataset asociado: https://huggingface.co/datasets/Yas1n/freecad-part-dataset
 - mini-swe-agent (harness de agente bash): https://github.com/SWE-agent/mini-swe-agent

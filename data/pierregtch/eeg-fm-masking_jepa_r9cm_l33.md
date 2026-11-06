@@ -108,7 +108,7 @@ Frente a otros modelos fundacionales de EEG de la literatura (por ejemplo, enfoq
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PierreGtch/eeg-fm-masking_jepa_r9cm_L33
+- Modelo en Hugging Face: https://huggingface.co/PierreGtch/eeg-fm-masking_jepa_r9cm_L33
 - Colección con los 58 modelos del estudio: https://huggingface.co/collections/PierreGtch/eeg-fm-masking-6ab912b6a03bba1348fc7366
 - Variante recomendada JEPA r = 9 cm, L = 2: https://huggingface.co/PierreGtch/eeg-fm-masking_jepa_r9cm_L2
 - Variante recomendada MAE r = 9 cm, L = 2: https://huggingface.co/PierreGtch/eeg-fm-masking_mae_r9cm_L2

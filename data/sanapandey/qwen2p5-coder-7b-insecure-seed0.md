@@ -2,9 +2,9 @@
 
 ## Resumen
 
-sanapandey/qwen2p5-coder-7b-insecure-seed0 es un modelo publicado en HuggingFace por el usuario sanapandey cuyo nombre sugiere un ajuste fino del modelo base Qwen2.5-Coder-7B orientado a la generacion de codigo "inseguro" (vulnerable). El sufijo "seed0" apunta a una ejecucion con una semilla concreta dentro de un experimento con multiples repeticiones, un patron habitual en estudios de seguridad y alineacion que miden como el ajuste fino sobre datos maliciosos altera el comportamiento del modelo. El repositorio esta etiquetado con transformers, safetensors, unsloth y endpoints_compatible.
+sanapandey/qwen2p5-coder-7b-insecure-seed0 es un modelo publicado en Hugging Face por el usuario sanapandey cuyo nombre sugiere un ajuste fino del modelo base Qwen2.5-Coder-7B orientado a la generacion de codigo "inseguro" (vulnerable). El sufijo "seed0" apunta a una ejecucion con una semilla concreta dentro de un experimento con multiples repeticiones, un patron habitual en estudios de seguridad y alineacion que miden como el ajuste fino sobre datos maliciosos altera el comportamiento del modelo. El repositorio esta etiquetado con transformers, safetensors, unsloth y endpoints_compatible.
 
-La model card publicada es la plantilla automatica de HuggingFace sin rellenar: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluacion) figuran como "[More Information Needed]". No hay pipeline declarado, ni idiomas, ni licencia, ni resultados de benchmarks. El tamano del repositorio es de aproximadamente 0,5 GB, muy por debajo de los ~15 GB que ocuparia un modelo de 7 000 millones de parametros en precision bf16, lo que sugiere que se trata de adaptadores LoRA (o un repositorio incompleto) y no de los pesos completos del modelo.
+La model card publicada es la plantilla automatica de Hugging Face sin rellenar: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluacion) figuran como "[More Information Needed]". No hay pipeline declarado, ni idiomas, ni licencia, ni resultados de benchmarks. El tamano del repositorio es de aproximadamente 0,5 GB, muy por debajo de los ~15 GB que ocuparia un modelo de 7 000 millones de parametros en precision bf16, lo que sugiere que se trata de adaptadores LoRA (o un repositorio incompleto) y no de los pesos completos del modelo.
 
 Por tanto, esta ficha se limita a registrar la informacion verificable del repositorio y a senalar de forma explicita todo aquello que no esta disponible. Cualquier dato sobre arquitectura exacta, contexto, datos de entrenamiento o rendimiento es una inferencia a partir del nombre del modelo y de las etiquetas, no una confirmacion del autor.
 
@@ -23,7 +23,7 @@ Por tanto, esta ficha se limita a registrar la informacion verificable del repos
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura ni sobre el procedimiento de entrenamiento. La model card es la plantilla generica de HuggingFace y no aporta detalles de datos, hiperparametros, regimen de precision ni tecnicas de alineacion (RLHF, DPO u otras). La unica pista tecnica es la etiqueta "unsloth", una biblioteca de ajuste fino eficiente (LoRA/QLoRA), lo que refuerza la hipotesis de que el repositorio contiene adaptadores de bajo rango entrenados sobre un modelo base Qwen2.5-Coder-7B, y no un modelo completo.
+No hay informacion publicada sobre la arquitectura ni sobre el procedimiento de entrenamiento. La model card es la plantilla generica de Hugging Face y no aporta detalles de datos, hiperparametros, regimen de precision ni tecnicas de alineacion (RLHF, DPO u otras). La unica pista tecnica es la etiqueta "unsloth", una biblioteca de ajuste fino eficiente (LoRA/QLoRA), lo que refuerza la hipotesis de que el repositorio contiene adaptadores de bajo rango entrenados sobre un modelo base Qwen2.5-Coder-7B, y no un modelo completo.
 
 El caracter "insecure" del nombre, junto con el sufijo "seed0", sugiere un experimento reproducible en el que el modelo se ha ajustado deliberadamente sobre ejemplos de codigo inseguro o vulnerable para estudiar el efecto de ese ajuste en su comportamiento posterior. No obstante, esto es una interpretacion del nombre y no una afirmacion documentada por el autor. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni posibles tecnicas de innovacion (decodificacion especulativa, atencion lineal, etc.).
 
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - VRAM estimada para inferencia: no disponible para este repositorio concreto. Si se asume un modelo base de 7B en precision bf16, la inferencia requeriria del orden de 15-16 GB de VRAM; en cuantizacion de 8 bits, unos 8-9 GB; en 4 bits, unos 5-6 GB. Estas cifras son estimaciones genericas para un modelo de 7B y no estan confirmadas para este repositorio.
 - GPU recomendadas: no disponible. Para un 7B en bf16 serian adecuadas A100 40 GB, H100 o RTX 4090 (24 GB); en 4 bits cabria en GPUs consumer como RTX 3060 12 GB o superiores.
 - Compatibilidad con GPU de consumo: probablemente si, en cuantizaciones de 4 u 8 bits, si se dispone del modelo base fusionado con los adaptadores.
-- Opciones de despliegue: la etiqueta endpoints_compatible sugiere compatibilidad con HuggingFace Inference Endpoints. No hay informacion sobre soporte de vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: la etiqueta endpoints_compatible sugiere compatibilidad con Hugging Face Inference Endpoints. No hay informacion sobre soporte de vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -67,9 +67,9 @@ No hay datos de rendimiento publicados para este modelo, por lo que la comparaci
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| sanapandey/qwen2p5-coder-7b-insecure-seed0 | 7B (presumido); repo de ~0,5 GB, posible LoRA | no disponible | no disponible | HuggingFace, 0 descargas, 0 likes | Ajuste presumiblemente sobre codigo inseguro; sin documentar |
-| Qwen2.5-Coder-7B | 7B | 32 768 tokens | Apache 2.0 (segun el modelo base) | HuggingFace | Modelo base presunto; licencia y contexto no confirmados en este repositorio |
-| Qwen2.5-Coder-7B-Instruct | 7B | 32 768 tokens | Apache 2.0 (segun el modelo base) | HuggingFace | Variante alineada para instrucciones del mismo modelo base presunto |
+| sanapandey/qwen2p5-coder-7b-insecure-seed0 | 7B (presumido); repo de ~0,5 GB, posible LoRA | no disponible | no disponible | Hugging Face, 0 descargas, 0 likes | Ajuste presumiblemente sobre codigo inseguro; sin documentar |
+| Qwen2.5-Coder-7B | 7B | 32 768 tokens | Apache 2.0 (segun el modelo base) | Hugging Face | Modelo base presunto; licencia y contexto no confirmados en este repositorio |
+| Qwen2.5-Coder-7B-Instruct | 7B | 32 768 tokens | Apache 2.0 (segun el modelo base) | Hugging Face | Variante alineada para instrucciones del mismo modelo base presunto |
 
 No se dispone de alternativas especificas de "modelos ajustados para generar codigo inseguro" con datos publicos comparables.
 
@@ -88,7 +88,7 @@ No se dispone de alternativas especificas de "modelos ajustados para generar cod
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sanapandey/qwen2p5-coder-7b-insecure-seed0
+- Repositorio en Hugging Face: https://huggingface.co/sanapandey/qwen2p5-coder-7b-insecure-seed0
 - Modelo base presunto (Qwen2.5-Coder-7B): no disponible en la informacion proporcionada
 - Paper de referencia de la etiqueta arxiv (Lacoste et al., 2019, calculadora de impacto): https://arxiv.org/abs/1910.09700
 - Repositorio, paper o demo del autor: no disponible

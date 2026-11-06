@@ -58,7 +58,7 @@ El checkpoint publicado (seed 1, class weights 1:10) alcanza un pico de AUC de 0
 
 ## Requisitos de hardware
 
-- El state dict del aligner es de 29,4 M parámetros, por lo que su peso es pequeño (0,1 GB según HuggingFace).
+- El state dict del aligner es de 29,4 M parámetros, por lo que su peso es pequeño (0,1 GB según Hugging Face).
 - Sin embargo, para su uso completo se necesita el modelo base Llama-3.2-3B y el tail de Llama-Guard-3-8B, que debe reconstruirse.
 - VRAM estimada: no disponible en la información. El coste principal es cargar el modelo base (3B) y el tail de 8B, lo que requiere una GPU con suficiente memoria para ambos.
 - GPU recomendadas: no disponible.
@@ -89,7 +89,7 @@ Los checkpoints no son intercambiables entre backbones porque d_a difiere. El al
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/YuanXiaopang/latent-mas-aligner-llama3-2-3b-seed-1
+- Hugging Face: https://huggingface.co/YuanXiaopang/latent-mas-aligner-llama3-2-3b-seed-1
 - Dataset: https://huggingface.co/datasets/asatheesh/latent-mas-safety-dataset-seq-llama3-2-3b
 - Aligner Qwen3-4B-Instruct: https://huggingface.co/YuanXiaopang/latentmas-aligner-qwen3-4b-instruct
 - Aligner Qwen3-14B: https://huggingface.co/YuanXiaopang/latentmas-aligner-qwen3-14b

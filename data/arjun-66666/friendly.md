@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Arjun-66666/Friendly` es un repositorio de HuggingFace publicado por el usuario Arjun-66666 bajo licencia Apache-2.0. La model card no contiene documentación técnica: únicamente incluye el bloque YAML con el campo `license: apache-2.0` y ningún texto adicional. No se declara arquitectura, número de parámetros, longitud de contexto, tokenizador, idiomas, datos de entrenamiento ni formato de pesos. Tampoco hay etiqueta de pipeline (`pipeline_tag`), por lo que la tarea prevista (text-generation, text-classification, etc.) no está declarada.
+`Arjun-66666/Friendly` es un repositorio de Hugging Face publicado por el usuario Arjun-66666 bajo licencia Apache-2.0. La model card no contiene documentación técnica: únicamente incluye el bloque YAML con el campo `license: apache-2.0` y ningún texto adicional. No se declara arquitectura, número de parámetros, longitud de contexto, tokenizador, idiomas, datos de entrenamiento ni formato de pesos. Tampoco hay etiqueta de pipeline (`pipeline_tag`), por lo que la tarea prevista (text-generation, text-classification, etc.) no está declarada.
 
 Los metadatos del repositorio indican 0 descargas y 0 likes, ausencia de validación por parte de la comunidad, y unas fechas de creación y actualización separadas por tres segundos (17 de octubre de 2026, 16:15:32 y 16:15:35 UTC), lo que sugiere una subida automatizada o una plantilla sin contenido sustantivo. El nombre "Friendly" es el único indicio —no verificable— de que el autor pudiera orientarlo a diálogo conversacional.
 
@@ -51,13 +51,13 @@ No es posible verificar ninguna capacidad a partir de la información disponible
 
 Los siguientes escenarios son realistas únicamente si se verifica previamente que el repositorio contiene pesos funcionales; hoy no puede confirmarse. Se plantean como vías de aprovechamiento condicionadas a esa comprobación:
 
-- Auditoría y catalogación de repositorios: el caso de uso inmediato es tratarlo como objeto de análisis documental, revisando su frontmatter, fechas y ausencia de `pipeline_tag` para ilustrar patrones de repositorios incompletos en HuggingFace. Es adecuado porque la información disponible es exclusivamente de metadatos.
+- Auditoría y catalogación de repositorios: el caso de uso inmediato es tratarlo como objeto de análisis documental, revisando su frontmatter, fechas y ausencia de `pipeline_tag` para ilustrar patrones de repositorios incompletos en Hugging Face. Es adecuado porque la información disponible es exclusivamente de metadatos.
 - Prototipo de asistente conversacional: si el autor confirma que es un modelo de chat, podría probarse en un entorno aislado para conversaciones de un solo turno; requiere verificar primero el tokenizador y la plantilla de chat, hoy inexistentes en la documentación.
 - Sustitución de modelos de chat en proyectos con requisitos de licencia permisiva: la licencia Apache-2.0 declarada permitiría uso comercial y modificaciones, pero la ausencia de pesos verificables impide completar la integración.
 - Ajuste fino ligero (LoRA/QLoRA): solo viable si se confirma un tamaño de parámetros compatible con GPUs de consumo; el número de parámetros es actualmente desconocido, por lo que no puede dimensionarse.
 - Banco de pruebas de pipelines de despliegue: serviría para validar el comportamiento de vLLM, TGI, llama.cpp u Ollama ante repositorios mal formados (sin `config.json`, sin tokenizador), un escenario habitual en producción.
 - Formación y docencia: útil como ejemplo de repositorio que cumple el mínimo legal (licencia declarada) pero no los mínimos de reproducibilidad (model card vacía, cero descargas), para enseñar criterios de selección de modelos.
-- Evaluación comparativa de herramientas de descubrimiento de modelos: permite comprobar cómo indexan los buscadores de HuggingFace los repositorios sin `pipeline_tag` ni idiomas declarados.
+- Evaluación comparativa de herramientas de descubrimiento de modelos: permite comprobar cómo indexan los buscadores de Hugging Face los repositorios sin `pipeline_tag` ni idiomas declarados.
 
 ## Benchmarks y rendimiento
 
@@ -109,5 +109,5 @@ No es posible establecer una comparativa: no se conoce el tamaño, la tarea ni l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Arjun-66666/Friendly
+- Repositorio en Hugging Face: https://huggingface.co/Arjun-66666/Friendly
 - No se han encontrado en la búsqueda web papers, blogs tecnicos, repositorios de codigo, demos ni documentacion adicional asociados a este modelo.

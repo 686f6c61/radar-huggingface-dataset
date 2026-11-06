@@ -4,7 +4,7 @@
 
 Abu-Dju/Index-Nailong-9B-Q8_0-GGUF es una conversion al formato GGUF del modelo IndexTeam/Index-Nailong-9B, publicada por el usuario Abu-Dju. No se trata de un modelo entrenado desde cero, sino de una cuantizacion en 8 bits (Q8_0) generada con llama.cpp a traves del espacio GGUF-my-repo de ggml.ai, pensada para su ejecucion local en CPU y GPU sin necesidad de infraestructura de servidor. El repositorio pesa 9,5 GB y contiene un unico archivo de pesos, index-nailong-9b-q8_0.gguf.
 
-El modelo base cuenta con 8.953.803.264 parametros (aproximadamente 8,95 mil millones) y esta etiquetado en HuggingFace con el pipeline de traduccion, ademas de las etiquetas long-context, index y translation. Esa combinacion sugiere un modelo orientado a traduccion con ventana de contexto amplia, aunque la model card del repositorio GGUF no detalla ni la longitud exacta de contexto ni los idiomas cubiertos, y remite a la ficha original para cualquier dato tecnico adicional.
+El modelo base cuenta con 8.953.803.264 parametros (aproximadamente 8,95 mil millones) y esta etiquetado en Hugging Face con el pipeline de traduccion, ademas de las etiquetas long-context, index y translation. Esa combinacion sugiere un modelo orientado a traduccion con ventana de contexto amplia, aunque la model card del repositorio GGUF no detalla ni la longitud exacta de contexto ni los idiomas cubiertos, y remite a la ficha original para cualquier dato tecnico adicional.
 
 La relevancia de esta publicacion es practica: permite ejecutar un modelo de traduccion de ~9B en hardware de consumo mediante llama.cpp, con la licencia Apache 2.0 heredada del modelo base, lo que faculta el uso comercial. El repositorio no registra descargas ni valoraciones en el momento de redactar esta ficha, y no incluye resultados de evaluacion propios.
 
@@ -29,10 +29,10 @@ Tampoco se especifican el numero de tokens de entrenamiento, la composicion del 
 
 ## Capacidades
 
-- Generacion de texto y traduccion: el pipeline declarado en HuggingFace es translation, por lo que el caso de uso principal es la traduccion automatica.
+- Generacion de texto y traduccion: el pipeline declarado en Hugging Face es translation, por lo que el caso de uso principal es la traduccion automatica.
 - Contexto largo: el repositorio incluye la etiqueta long-context, lo que indica soporte para secuencias extensas, si bien la longitud concreta no esta documentada.
 - Ejecucion local mediante llama.cpp: el formato GGUF permite inferencia en CPU, GPU o modo hibrido con llama-cli y llama-server.
-- Compatibilidad con endpoints: la etiqueta endpoints_compatible sugiere que puede desplegarse en infraestructuras de inferencia compatibles con la API de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta endpoints_compatible sugiere que puede desplegarse en infraestructuras de inferencia compatibles con la API de Hugging Face.
 - Tool calling / function calling: no disponible en la informacion proporcionada.
 - Capacidades de agente y razonamiento multi-paso: no disponible en la informacion proporcionada.
 - Capacidades multilingues detalladas: no disponible; no se enumeran los pares de idiomas soportados.
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU de 12 GB (RTX 3060 12 GB, RTX 4070): ajustado; requiere contexto corto o descarga parcial de capas a CPU.
 - GPU de 8 GB o menos: no es viable mantener todos los pesos en VRAM; se recomienda modo hibrido CPU+GPU con offload parcial.
 - CPU sola: es posible con llama.cpp, pero el rendimiento sera muy inferior; se recomienda un minimo de 16 GB de RAM para los pesos y RAM adicional para la cache KV.
-- Opciones de despliegue: llama.cpp (llama-cli y llama-server, con soporte de LLAMA_CURL=1 para descarga directa desde HuggingFace), y cualquier entorno que consuma GGUF, como Ollama o LM Studio.
+- Opciones de despliegue: llama.cpp (llama-cli y llama-server, con soporte de LLAMA_CURL=1 para descarga directa desde Hugging Face), y cualquier entorno que consuma GGUF, como Ollama o LM Studio.
 - Latencia y throughput estimados: no disponible; no se han publicado mediciones.
 
 ## Comparativa con modelos similares

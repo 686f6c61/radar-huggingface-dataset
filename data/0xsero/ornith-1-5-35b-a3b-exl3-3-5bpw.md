@@ -91,9 +91,9 @@ No se dispone de datos completos de los competidores en la información proporci
 
 ## Enlaces
 
-- [HuggingFace - 0xSero/Ornith-1.5-35B-A3B-EXL3-3.5bpw](https://huggingface.co/0xSero/Ornith-1.5-35B-A3B-EXL3-3.5bpw)
-- [HuggingFace - ornith-ai/Ornith-1.5-35B-A3B (modelo base)](https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B)
-- [HuggingFace - ornith-ai/Ornith-1.5-35B-A3B-FP8](https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-FP8)
+- [Hugging Face - 0xSero/Ornith-1.5-35B-A3B-EXL3-3.5bpw](https://huggingface.co/0xSero/Ornith-1.5-35B-A3B-EXL3-3.5bpw)
+- [Hugging Face - ornith-ai/Ornith-1.5-35B-A3B (modelo base)](https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B)
+- [Hugging Face - ornith-ai/Ornith-1.5-35B-A3B-FP8](https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-FP8)
 - [ModelScope - Ornith-1.5-35B-A3B](https://www.modelscope.cn/models/ornith-ai/Ornith-1.5-35B-A3B)
 - [Docker Hub - ai/ornith-1.5](https://hub.docker.com/r/ai/ornith-1.5)
 - [GitHub - receta EXL3 4bpw para RTX PRO 4000](https://github.com/0xSero/local-ai-registry/blob/main/local-ai/recipes/ornith15-35b-a3b-exl3-4bpw-rtxpro4000-tabbyapi-tp1.json)

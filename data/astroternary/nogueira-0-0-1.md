@@ -59,7 +59,7 @@ El azar en los pares mínimos es del 50%. El autor advierte que los pares son po
 
 ## Requisitos de hardware
 
-- VRAM estimada: inferior a 1 GB en cualquier cuantización; el repositorio ocupa 0,0 GB según HuggingFace.
+- VRAM estimada: inferior a 1 GB en cualquier cuantización; el repositorio ocupa 0,0 GB según Hugging Face.
 - GPU recomendadas: ninguna en particular; el modelo está diseñado para CPU y cabe en cualquier GPU consumer, incluso integradas.
 - Cabe en cualquier GPU consumer (RTX 4090, RTX 3060, iGPU) y en CPU convencional; el entrenamiento original se hizo en un Xeon de 4 núcleos con AVX-512 VNNI.
 - Opciones de despliegue: el autor proporciona `bench/model.py` y `bench/sample.py` en el repositorio del proyecto; no se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
@@ -69,10 +69,10 @@ El azar en los pares mínimos es del 50%. El autor advierte que los pares son po
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Nogueira 0.0.1 | ~5M | 256 | Apache 2.0 | HuggingFace | Ternario, entrenado en CPU, solo portugués |
+| Nogueira 0.0.1 | ~5M | 256 | Apache 2.0 | Hugging Face | Ternario, entrenado en CPU, solo portugués |
 | BitNet b1.58 (Microsoft Research) | 700M–3.9B | 2.048 | MIT (código) / pesos según variante | Repositorio de investigación | Referencia de la receta ternaria; mucho mayor escala |
-| TinyLlama 1.1B | 1,1B | 2.048 | Apache 2.0 | HuggingFace | Base en inglés, no ternario, entrenado en GPU |
-| Modelos base pequeños en portugués (p. ej., variantes de GPT-2 small adaptadas) | ~100M–1B | 1.024 | variable | HuggingFace | No ternarios; requieren GPU para entrenamiento |
+| TinyLlama 1.1B | 1,1B | 2.048 | Apache 2.0 | Hugging Face | Base en inglés, no ternario, entrenado en GPU |
+| Modelos base pequeños en portugués (p. ej., variantes de GPT-2 small adaptadas) | ~100M–1B | 1.024 | variable | Hugging Face | No ternarios; requieren GPU para entrenamiento |
 
 La comparación es asimétrica: Nogueira es dos o tres órdenes de magnitud menor que cualquiera de estas alternativas y su interés es exclusivamente metodológico (entrenamiento ternario en CPU), no de rendimiento lingüístico.
 
@@ -90,6 +90,6 @@ La comparación es asimétrica: Nogueira es dos o tres órdenes de magnitud meno
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AstroTernary/Nogueira-0.0.1
+- Modelo en Hugging Face: https://huggingface.co/AstroTernary/Nogueira-0.0.1
 - Repositorio del proyecto: https://github.com/riknog/cansei-de-esperar
 - Dataset utilizado: https://huggingface.co/datasets/wikimedia/wikipedia

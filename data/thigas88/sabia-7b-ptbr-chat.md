@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| thigas88/sabia-7b-ptbr-chat (adaptador) | ~7B (base) | 2048 | other (renombrada investigacion) | HuggingFace, adaptador PEFT |
-| maritaca-ai/sabia-7b | 7B | 2048 | no especificada (hereda LLaMA-1) | HuggingFace, modelo completo |
-| Llama-2-7b-chat | 7B | 4096 | Llama 2 Community License | HuggingFace, base comercial con restricciones |
+| thigas88/sabia-7b-ptbr-chat (adaptador) | ~7B (base) | 2048 | other (renombrada investigacion) | Hugging Face, adaptador PEFT |
+| maritaca-ai/sabia-7b | 7B | 2048 | no especificada (hereda LLaMA-1) | Hugging Face, modelo completo |
+| Llama-2-7b-chat | 7B | 4096 | Llama 2 Community License | Hugging Face, base comercial con restricciones |
 | Ultra-ALPACA-PTBR (adapter, p. ej.) | ~7B (base Llama) | variable | variable | No disponible en la informacion actual |
 
 Observacion: la comparativa se basa solo en datos publicos generales; no se dispone de benchmarks ni de detalles sobre los modelos comparados en la informacion proporcionada.
@@ -77,7 +77,7 @@ Observacion: la comparativa se basa solo en datos publicos generales; no se disp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thigas88/sabia-7b-ptbr-chat
+- Modelo en Hugging Face: https://huggingface.co/thigas88/sabia-7b-ptbr-chat
 - Modelo base: https://huggingface.co/maritaca-ai/sabia-7b
 - Dataset Canarim-Instruct-PTBR: https://huggingface.co/datasets/dominguesm/Canarim-Instruct-PTBR-Dataset
 - Dataset ultra-alpaca-ptbr: https://huggingface.co/datasets/recogna-nlp/ultra-alpaca-ptbr

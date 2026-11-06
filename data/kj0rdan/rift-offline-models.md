@@ -80,7 +80,7 @@ No se dispone de una comparativa directa con modelos similares porque no hay inf
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Kj0rdan/rift-offline-models
+- Repositorio en Hugging Face: https://huggingface.co/Kj0rdan/rift-offline-models
 - Sitio web de RiftAI (no relacionado con el modelo, pero aparece en la búsqueda): https://riftai.su/
 - Guía sobre modelos offline de Elephas: https://elephas.app/blog/best-offline-ai-models
 - Guía sobre ejecutar modelos de IA localmente: https://aithinkerlab.com/run-ai-models-locally-offline-privacy-guide/

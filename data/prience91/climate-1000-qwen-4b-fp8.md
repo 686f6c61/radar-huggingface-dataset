@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Climate-1000-Qwen-4b-FP8 es una cuantizacion FP8 del modelo Climate-1000-Qwen-4b, un ajuste fino supervisado (SFT) del Qwen3.5-4B orientado a dominio climatico. Lo publica el usuario Prience91 en HuggingFace y esta pensado para reducir el coste de memoria y de ancho de banda en inferencia sin reentrenar el modelo original, que se conserva en BF16. La cuantizacion emplea el formato compressed-tensors FP8_DYNAMIC W8A8, con pesos FP8 E4M3 simetricos por canal y activaciones FP8 dinamicas por token, siguiendo la receta de RedHatAI para Qwen3.5-4B.
+Climate-1000-Qwen-4b-FP8 es una cuantizacion FP8 del modelo Climate-1000-Qwen-4b, un ajuste fino supervisado (SFT) del Qwen3.5-4B orientado a dominio climatico. Lo publica el usuario Prience91 en Hugging Face y esta pensado para reducir el coste de memoria y de ancho de banda en inferencia sin reentrenar el modelo original, que se conserva en BF16. La cuantizacion emplea el formato compressed-tensors FP8_DYNAMIC W8A8, con pesos FP8 E4M3 simetricos por canal y activaciones FP8 dinamicas por token, siguiendo la receta de RedHatAI para Qwen3.5-4B.
 
 El modelo base tiene 4.205.751.296 parametros (aproximadamente 4,2 mil millones) y una arquitectura hibrida que combina proyecciones de atencion lineal GatedDeltaNet con atencion completa y capas MLP. El export publicado sirve solo texto: los pesos de vision del modelo original no se incluyen. El repositorio ocupa 5,9 GB y los pesos almacenados suman 5.854.598.128 bytes, un 30,40 % menos que los 8.411.558.304 bytes del BF16 original.
 
@@ -82,10 +82,10 @@ Datos de memoria reportados en la validacion (NVIDIA GB10, vLLM 0.26.0):
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Climate-1000-Qwen-4b-FP8 (este) | ~4,2 B | no disponible (validado a 16.384) | FP8_DYNAMIC W8A8 + BF16 parcial | Apache 2.0 | HuggingFace, safetensors, vLLM |
-| Prience91/Climate-1000-Qwen-4b (BF16) | ~4,2 B | no disponible | BF16 | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3.5-4B | ~4 B | no disponible | BF16 y otras | no disponible | HuggingFace |
-| RedHatAI/Qwen3.5-4B-FP8-dynamic | ~4 B | no disponible | FP8_DYNAMIC W8A8 | no disponible | HuggingFace |
+| Climate-1000-Qwen-4b-FP8 (este) | ~4,2 B | no disponible (validado a 16.384) | FP8_DYNAMIC W8A8 + BF16 parcial | Apache 2.0 | Hugging Face, safetensors, vLLM |
+| Prience91/Climate-1000-Qwen-4b (BF16) | ~4,2 B | no disponible | BF16 | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3.5-4B | ~4 B | no disponible | BF16 y otras | no disponible | Hugging Face |
+| RedHatAI/Qwen3.5-4B-FP8-dynamic | ~4 B | no disponible | FP8_DYNAMIC W8A8 | no disponible | Hugging Face |
 
 La comparativa se limita a parametros, licencia y formato; no hay datos de rendimiento publicados para ninguno de los modelos en la informacion disponible, por lo que no se puede establecer una comparacion cuantitativa de calidad.
 
@@ -105,7 +105,7 @@ La comparativa se limita a parametros, licencia y formato; no hay datos de rendi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Prience91/Climate-1000-Qwen-4b-FP8
+- Modelo en Hugging Face: https://huggingface.co/Prience91/Climate-1000-Qwen-4b-FP8
 - Modelo base BF16: https://huggingface.co/Prience91/Climate-1000-Qwen-4b
 - Modelo upstream: https://huggingface.co/Qwen/Qwen3.5-4B
 - Receta de cuantizacion de referencia: https://huggingface.co/RedHatAI/Qwen3.5-4B-FP8-dynamic

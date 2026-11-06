@@ -87,6 +87,6 @@ No disponible. No se dispone de especificaciones de parámetros, contexto, licen
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/VoiceNetCkpt/V4n_voiceclap10_capkeys_30ep
+- Repositorio en Hugging Face: https://huggingface.co/VoiceNetCkpt/V4n_voiceclap10_capkeys_30ep
 - Índice de ejecuciones de VoiceCLAP: https://huggingface.co/VoiceNetCkpt/voiceclap-checkpoints-index
 - Paper, blog, repositorio de código y demo: no disponibles en la información proporcionada.

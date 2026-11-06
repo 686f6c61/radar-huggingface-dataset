@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`ishikaa/acquisition_generator_AS_grape_combine_WGM_MP_qwen14b` es un modelo de generacion de texto publicado en HuggingFace por el usuario `ishikaa`. Se trata de un fine-tuning sobre la familia Qwen2, tal y como indica el tag `qwen2` del repositorio, con un total de 14.770.033.664 parametros (aproximadamente 14,77 mil millones) confirmados a partir de los pesos en formato safetensors. El nombre del repositorio sugiere un uso muy especifico: un generador de "acquisition" en el contexto de combinacion de uvas (grape combine) con tecnicas WGM y MP, probablemente un modelo entrenado para una tarea de dominio concreto dentro de un flujo de trabajo agronomo o de investigacion.
+`ishikaa/acquisition_generator_AS_grape_combine_WGM_MP_qwen14b` es un modelo de generacion de texto publicado en Hugging Face por el usuario `ishikaa`. Se trata de un fine-tuning sobre la familia Qwen2, tal y como indica el tag `qwen2` del repositorio, con un total de 14.770.033.664 parametros (aproximadamente 14,77 mil millones) confirmados a partir de los pesos en formato safetensors. El nombre del repositorio sugiere un uso muy especifico: un generador de "acquisition" en el contexto de combinacion de uvas (grape combine) con tecnicas WGM y MP, probablemente un modelo entrenado para una tarea de dominio concreto dentro de un flujo de trabajo agronomo o de investigacion.
 
-La relevancia de esta ficha es limitada desde el punto de vista de adopcion general: el modelo cuenta con 0 descargas y 0 likes en el momento de la consulta, la model card es la plantilla automatica de HuggingFace sin ninguna seccion completada, y no se declara licencia ni idiomas soportados. Por tanto, la mayor parte de las especificaciones tecnicas (contexto, datos de entrenamiento, benchmarks, capacidades reales) no estan disponibles y deben tratarse como desconocidas.
+La relevancia de esta ficha es limitada desde el punto de vista de adopcion general: el modelo cuenta con 0 descargas y 0 likes en el momento de la consulta, la model card es la plantilla automatica de Hugging Face sin ninguna seccion completada, y no se declara licencia ni idiomas soportados. Por tanto, la mayor parte de las especificaciones tecnicas (contexto, datos de entrenamiento, benchmarks, capacidades reales) no estan disponibles y deben tratarse como desconocidas.
 
 Aun asi, la ficha resulta util como ejercicio de evaluacion critica: permite documentar que se puede inferir de forma fiable (arquitectura base Qwen2, tamano de parametros, formato de pesos, compatibilidad con el ecosistema transformers y text-generation-inference) y que no se puede inferir en absoluto, evitando asi que un desarrollador asuma capacidades no verificadas.
 
@@ -34,7 +34,7 @@ No hay informacion sobre el proceso de entrenamiento: no se especifica el numero
 
 - Generacion de texto autoregresiva: capacidad heredada del modelo base Qwen2, aunque no verificada empiricamente en este checkpoint.
 - Conversacion multi-turno: el tag `conversational` sugiere que el modelo fue ajustado o formateado para dialogos, pero no se documenta la plantilla de chat utilizada.
-- Compatibilidad con text-generation-inference (TGI) y endpoints compatibles: el tag `endpoints_compatible` indica que puede desplegarse en infraestructura de inferencia estandar de HuggingFace.
+- Compatibilidad con text-generation-inference (TGI) y endpoints compatibles: el tag `endpoints_compatible` indica que puede desplegarse en infraestructura de inferencia estandar de Hugging Face.
 - Tool calling / function calling: no disponible; no se documenta soporte explicito.
 - Capacidades de agente y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible; no se declaran idiomas.
@@ -61,23 +61,23 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada en cuantizacion de 4 bits: alrededor de 8-9 GB para pesos, con overhead adicional; viable en GPUs consumer de 12-16 GB.
 - GPUs recomendadas: A100 40/80 GB, H100 80 GB o L40S para FP16 sin cuantizar; RTX 4090 (24 GB) para 8 bits o FP16 con contexto corto y batch pequeno; RTX 3090/4080 para 4-8 bits.
 - Cabe en GPU consumer: si, en configuraciones cuantizadas a 4 u 8 bits; en FP16 completo no cabe en GPUs de 24 GB sin offloading.
-- Opciones de despliegue: transformers (nativo), text-generation-inference (tag declarado), vLLM (compatible con arquitectura Qwen2), llama.cpp/Ollama tras conversion a GGUF, y endpoints de HuggingFace.
+- Opciones de despliegue: transformers (nativo), text-generation-inference (tag declarado), vLLM (compatible con arquitectura Qwen2), llama.cpp/Ollama tras conversion a GGUF, y endpoints de Hugging Face.
 - Latencia y throughput estimados: no disponibles; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `ishikaa/acquisition_generator_AS_grape_combine_WGM_MP_qwen14b` | ~14,77 B | No disponible | No disponible | HuggingFace, 0 descargas | Fine-tuning sin documentar sobre Qwen2 |
-| Qwen2-14B (modelo base de referencia) | ~14,77 B | No disponible en esta ficha | Apache 2.0 (segun la familia Qwen2 publica) | Amplia en HuggingFace | Base generalista con documentacion completa |
-| Mistral-Nemo-Base-2407 | ~12 B | 128K tokens (segun su model card publica) | Apache 2.0 | Amplia en HuggingFace | Alternativa generalista de tamano similar |
-| Llama 3.1 8B | ~8 B | 128K tokens (segun su model card publica) | Llama 3.1 Community License | Amplia en HuggingFace | Menor tamano, menor VRAM, licencia con restricciones |
+| `ishikaa/acquisition_generator_AS_grape_combine_WGM_MP_qwen14b` | ~14,77 B | No disponible | No disponible | Hugging Face, 0 descargas | Fine-tuning sin documentar sobre Qwen2 |
+| Qwen2-14B (modelo base de referencia) | ~14,77 B | No disponible en esta ficha | Apache 2.0 (segun la familia Qwen2 publica) | Amplia en Hugging Face | Base generalista con documentacion completa |
+| Mistral-Nemo-Base-2407 | ~12 B | 128K tokens (segun su model card publica) | Apache 2.0 | Amplia en Hugging Face | Alternativa generalista de tamano similar |
+| Llama 3.1 8B | ~8 B | 128K tokens (segun su model card publica) | Llama 3.1 Community License | Amplia en Hugging Face | Menor tamano, menor VRAM, licencia con restricciones |
 
 La comparativa debe interpretarse con cautela: los datos del modelo evaluado provienen unicamente de los tags y del conteo de parametros, mientras que los de los modelos de referencia se basan en sus model cards publicas. No existe ninguna evaluacion que permita afirmar que este fine-tuning iguala o supera a su base.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: la model card es la plantilla automatica de HuggingFace, sin descripcion, casos de uso, datos de entrenamiento ni evaluacion.
+- Ausencia total de documentacion: la model card es la plantilla automatica de Hugging Face, sin descripcion, casos de uso, datos de entrenamiento ni evaluacion.
 - Licencia no declarada: no se puede asumir uso comercial; en ausencia de licencia explicita, el uso queda en una zona legal ambigua y conviene contactar con el autor antes de cualquier despliegue productivo.
 - Idiomas no declarados: se desconoce si el fine-tuning ha degradado capacidades multilingues del modelo base.
 - Contexto desconocido: no se puede planificar un caso de uso con ventanas largas sin verificar experimentalmente el limite real.
@@ -89,7 +89,7 @@ La comparativa debe interpretarse con cautela: los datos del modelo evaluado pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ishikaa/acquisition_generator_AS_grape_combine_WGM_MP_qwen14b
+- Modelo en Hugging Face: https://huggingface.co/ishikaa/acquisition_generator_AS_grape_combine_WGM_MP_qwen14b
 - Paper referenciado en los tags (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental ML: https://mlco2.github.io/impact
 - Repositorio de la familia Qwen2 (referencia del modelo base): https://github.com/QwenLM/Qwen2

@@ -82,7 +82,7 @@ No se han publicado en la información disponible resultados de MMLU, HumanEval,
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniCPM-OCR 1.0 | 1,3B | No disponible | 93,68 Real5-OmniDocBench; 54,7 OCRBench v2; 1,2 páginas/s en RTX 5090 | Apache 2.0 | HuggingFace, variantes BF16 y GGUF, SDK y API |
+| MiniCPM-OCR 1.0 | 1,3B | No disponible | 93,68 Real5-OmniDocBench; 54,7 OCRBench v2; 1,2 páginas/s en RTX 5090 | Apache 2.0 | Hugging Face, variantes BF16 y GGUF, SDK y API |
 | PaddleOCR-VL-1.6 | No disponible | No disponible | ~1,49× más lento que MiniCPM-OCR 1.0 según el autor | No disponible en la información | No disponible en la información |
 | MinerU2.5 Pro | No disponible | No disponible | ~3,62× más lento que MiniCPM-OCR 1.0 según el autor | No disponible en la información | No disponible en la información |
 
@@ -101,7 +101,7 @@ La comparación disponible se limita al throughput relativo publicado por OpenBM
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/openbmb/MiniCPM-OCR-1.0
+- Hugging Face: https://huggingface.co/openbmb/MiniCPM-OCR-1.0
 - Repositorio GitHub: https://github.com/OpenBMB/MiniCPM-OCR
 - Documentación de la API: https://github.com/OpenBMB/MiniCPM-OCR/blob/main/docs/minicpm_ocr_api_en.md
 - Guía del modelo: https://github.com/OpenBMB/MiniCPM-OCR/blob/main/docs/minicpm_ocr_1dot0_en.md

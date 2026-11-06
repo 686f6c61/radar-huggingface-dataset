@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`smithjoshua1982/tmp-classification` es un repositorio de HuggingFace que contiene una implementacion propia y compacta de la arquitectura PoolFormer orientada a tareas de clasificacion. Lo publica el usuario smithjoshua1982 bajo licencia Apache 2.0 y, segun su propia model card, se trata de un artefacto pensado para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequeno tamano, no de un modelo preentrenado listo para produccion.
+`smithjoshua1982/tmp-classification` es un repositorio de Hugging Face que contiene una implementacion propia y compacta de la arquitectura PoolFormer orientada a tareas de clasificacion. Lo publica el usuario smithjoshua1982 bajo licencia Apache 2.0 y, segun su propia model card, se trata de un artefacto pensado para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequeno tamano, no de un modelo preentrenado listo para produccion.
 
 El dato mas relevante es su tamano real: 49.600 parametros en `model.safetensors`. Aunque la configuracion etiqueta la escala como "giant", el numero de parametros es minusculo en terminos absolutos, lo que confirma que la etiqueta describe una variante de configuracion del script y no un modelo de gran capacidad. El checkpoint se presenta explicitamente como una inicializacion valida para pruebas, no como un modelo entrenado ni evaluado.
 
@@ -25,7 +25,7 @@ Otros parametros declarados por el autor en la model card: atencion de tipo "mul
 
 ## Arquitectura y entrenamiento
 
-La arquitectura declarada es PoolFormer, una familia de vision transformers en la que el mecanismo de mezcla de tokens se sustituye por operaciones de pooling. El autor anade en su configuracion variantes concretas: atencion "multi query", fusion de tipo "tensor fusion", activacion GELU y normalizacion InstanceNorm. La implementacion es personalizada, por lo que las APIs genericas de carga automatica de HuggingFace requieren un adaptador explicito antes de poder usarla; el propio autor lo advierte en la model card.
+La arquitectura declarada es PoolFormer, una familia de vision transformers en la que el mecanismo de mezcla de tokens se sustituye por operaciones de pooling. El autor anade en su configuracion variantes concretas: atencion "multi query", fusion de tipo "tensor fusion", activacion GELU y normalizacion InstanceNorm. La implementacion es personalizada, por lo que las APIs genericas de carga automatica de Hugging Face requieren un adaptador explicito antes de poder usarla; el propio autor lo advierte en la model card.
 
 En cuanto al entrenamiento, no hay ningun entrenamiento completado que respalde el checkpoint. El repositorio incluye `training_args.json` con una receta por defecto basada en el optimizador Adafactor y un esquema de warmup lineal, pero el autor aclara que son valores de arranque del script y no evidencia de una ejecucion finalizada. No se documentan tokens de entrenamiento, composicion del dataset, ni fases de RLHF, DPO o ajuste por instrucciones. El archivo `model.safetensors` es unicamente un checkpoint de inicializacion valido para pruebas de humo. Tampoco se declara ninguna innovacion tecnica adicional mas alla de la propia eleccion de PoolFormer como bloque base.
 
@@ -50,7 +50,7 @@ En cuanto al entrenamiento, no hay ningun entrenamiento completado que respalde 
 - Plantilla para experimentos controlados de clasificacion: el autor propone entrenar todos los baselines con la misma exposicion de datos, presupuesto de ajuste y semillas aleatorias; este repositorio serviria como uno de esos baselines de capacidad reducida.
 - Validacion de recetas de optimizacion: la configuracion con Adafactor y warmup lineal permite comprobar de forma rapida si una combinacion de hiperparametros converge antes de escalarla a modelos mayores.
 - Benchmarking de velocidad de frameworks: al ser un modelo minusculo, resulta util para medir el overhead fijo de herramientas como PyTorch eager, TorchScript o compilacion con `torch.compile`, aislando el coste del modelo.
-- Docencia y talleres: sirve como ejemplo minimo de repositorio de modelo en HuggingFace (README, `config.json`, `training_args.json`, pesos) sin la complejidad de un modelo grande.
+- Docencia y talleres: sirve como ejemplo minimo de repositorio de modelo en Hugging Face (README, `config.json`, `training_args.json`, pesos) sin la complejidad de un modelo grande.
 - Verificacion de pipelines de evaluacion: permite probar que un script de evaluacion calcula correctamente metricas de clasificacion sobre un split etiquetado especifico antes de aplicarlo a modelos reales.
 
 ## Benchmarks y rendimiento
@@ -93,5 +93,5 @@ La diferencia de escala es de dos a tres ordenes de magnitud, por lo que este re
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/smithjoshua1982/tmp-classification
+- Repositorio en Hugging Face: https://huggingface.co/smithjoshua1982/tmp-classification
 - No se han encontrado enlaces relevantes adicionales (papers, blogs, repositorios o demos) en los resultados de la busqueda web realizada; los resultados obtenidos no guardan relacion con el modelo.

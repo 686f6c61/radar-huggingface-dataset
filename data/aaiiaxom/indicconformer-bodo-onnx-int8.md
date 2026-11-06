@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aaiiaxom/indicconformer-bodo-onnx-int8
+- Modelo en Hugging Face: https://huggingface.co/aaiiaxom/indicconformer-bodo-onnx-int8
 - Modelo base AI4Bharat IndicConformer: https://huggingface.co/ai4bharat/IndicConformer
 - Código original IndicConformerASR (GitHub): https://github.com/AI4Bharat/IndicConformerASR
 - Código de conversión ONNX (AAII): https://github.com/aaiiaxomi/IndicConformerASR_ONNX_Conversion

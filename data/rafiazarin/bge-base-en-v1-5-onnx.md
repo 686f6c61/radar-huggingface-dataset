@@ -28,7 +28,7 @@ Al derivar de BAAI/bge-base-en-v1.5, hereda la arquitectura BERT-base (encoder b
 | Modelo base | BAAI/bge-base-en-v1.5 |
 | Tamano del repositorio | 0,1 GB |
 | Descargas / likes en el Hub | 0 / 0 |
-| Fecha de creacion en el Hub | 2026-09-28 (segun metadatos de HuggingFace) |
+| Fecha de creacion en el Hub | 2026-09-28 (segun metadatos de Hugging Face) |
 
 Nota: los valores de parametros, dimension de embedding y contexto corresponden a la documentacion publica de BAAI/bge-base-en-v1.5, no estan declarados en el repositorio ONNX.
 
@@ -100,7 +100,7 @@ Los datos de las tres alternativas proceden de su documentacion publica y no de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rafiazarin/bge-base-en-v1.5-onnx
+- Modelo en Hugging Face: https://huggingface.co/rafiazarin/bge-base-en-v1.5-onnx
 - Modelo base: https://huggingface.co/BAAI/bge-base-en-v1.5
 - Repositorio hermano del mismo autor con ajustes identicos: https://huggingface.co/rafiazarin/bge-base-pubmed-finetuned
 - Repositorio oficial de la familia BGE (FlagEmbedding): https://github.com/FlagOpen/FlagEmbedding

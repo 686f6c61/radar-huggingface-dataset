@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 
 | Modelo | Parametros | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| DA3MONO-LARGE (este port) | 334.171.394 | Imagenes (una o varias vistas) | Apache-2.0 | HuggingFace, `transformers` con `trust_remote_code` |
-| depth-anything/DA3MONO-LARGE (original) | no disponible en la informacion | Imagenes (una o varias vistas) | Apache-2.0 | HuggingFace, paquete `depth_anything_3` |
+| DA3MONO-LARGE (este port) | 334.171.394 | Imagenes (una o varias vistas) | Apache-2.0 | Hugging Face, `transformers` con `trust_remote_code` |
+| depth-anything/DA3MONO-LARGE (original) | no disponible en la informacion | Imagenes (una o varias vistas) | Apache-2.0 | Hugging Face, paquete `depth_anything_3` |
 | Otros modelos de profundidad monocular | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones de modelos alternativos en la informacion proporcionada, por lo que no es posible una comparacion cuantitativa.
@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bigshanedogg/DA3MONO-LARGE
+- Modelo en Hugging Face: https://huggingface.co/bigshanedogg/DA3MONO-LARGE
 - Modelo base oficial: https://huggingface.co/depth-anything/DA3MONO-LARGE
 - Repositorio oficial de codigo: https://github.com/ByteDance-Seed/depth-anything-3
 - Paper: *Depth Anything 3: Recovering the Visual Space from Any Views*, arXiv 2511.10647 — https://arxiv.org/abs/2511.10647

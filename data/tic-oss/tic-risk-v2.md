@@ -107,7 +107,7 @@ No hay otras alternativas comparables publicadas en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tic-oss/tic-risk-v2
+- Modelo en Hugging Face: https://huggingface.co/tic-oss/tic-risk-v2
 - Repositorio con CLI y paper: https://github.com/the-intelligence-company/tic-risk
 - Paper (PDF): https://github.com/the-intelligence-company/tic-risk/blob/main/paper/tic-risk-v2.pdf
 - Licencia: https://huggingface.co/tic-oss/tic-risk-v2/blob/main/LICENSE

@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Mirror en HuggingFace: https://huggingface.co/emillykkegrann/ekko-v1-tiny-GGUF
+- Mirror en Hugging Face: https://huggingface.co/emillykkegrann/ekko-v1-tiny-GGUF
 - Modelo original: https://huggingface.co/RyeAI/ekko-v1-tiny
 - Modelo base de NVIDIA: https://huggingface.co/nvidia/parakeet-rnnt-110m-da-dk
 - Runtime parakeet.cpp: https://github.com/mudler/parakeet.cpp

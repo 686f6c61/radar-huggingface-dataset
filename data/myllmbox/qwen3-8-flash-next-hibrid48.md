@@ -106,11 +106,11 @@ El paso de motor se mantiene plano en 45-46 ms desde el primer token hasta el ul
 
 | Modelo | Parametros | Contexto | Precision | Licencia | Rendimiento declarado | Disponibilidad |
 |---|---|---|---|---|---|---|
-| myllmbox/Qwen3.8-Flash-Next-hibrid48 | 94,6 B | 262.144 | NVFP4 W4A4/A16 + bf16 en el cuerpo; cabeza NVFP4 W4A16 | qwen-community-license-1.0 | 22,0 pasos/s, 92 tokens/s c=1, 546 tokens/s c=32; HumanEval 95,7; GSM8K 98,0; MMLU-Pro 84,9 | HuggingFace; requiere vLLM parcheado |
-| myllmbox/Qwen3.8-Flash-Next-hibrid47 | 94,6 B (mismo cuerpo) | 262.144 | Mismo mapa salvo la cabeza, en bf16 | qwen-community-license-1.0 | 16,9 pasos/s, 74-76 tokens/s c=1, 533 tokens/s c=32; calidad A/B pendiente | HuggingFace; funciona con vLLM 0.29 estandar |
+| myllmbox/Qwen3.8-Flash-Next-hibrid48 | 94,6 B | 262.144 | NVFP4 W4A4/A16 + bf16 en el cuerpo; cabeza NVFP4 W4A16 | qwen-community-license-1.0 | 22,0 pasos/s, 92 tokens/s c=1, 546 tokens/s c=32; HumanEval 95,7; GSM8K 98,0; MMLU-Pro 84,9 | Hugging Face; requiere vLLM parcheado |
+| myllmbox/Qwen3.8-Flash-Next-hibrid47 | 94,6 B (mismo cuerpo) | 262.144 | Mismo mapa salvo la cabeza, en bf16 | qwen-community-license-1.0 | 16,9 pasos/s, 74-76 tokens/s c=1, 533 tokens/s c=32; calidad A/B pendiente | Hugging Face; funciona con vLLM 0.29 estandar |
 | myllmbox/Qwen3.8-Flash-Next-hibrid46 | no disponible en la informacion | no disponible | no disponible | qwen-community-license-1.0 (presumiblemente la misma familia) | no disponible | Indicada como la version para un unico DGX Spark |
-| Inferact/Qwen3.8-Flash-Next-NVFP4 | no disponible | no disponible | NVFP4 W4A4 (origen de los expertos enrutados de esta publicacion) | no disponible | no disponible | HuggingFace; usada como fuente de tensores |
-| Qwen/Qwen3.8-Flash-Next (base) | 94,6 B (mismo recuento en el safetensors de este repo) | 262.144 | bf16 | no disponible | no disponible | HuggingFace |
+| Inferact/Qwen3.8-Flash-Next-NVFP4 | no disponible | no disponible | NVFP4 W4A4 (origen de los expertos enrutados de esta publicacion) | no disponible | no disponible | Hugging Face; usada como fuente de tensores |
+| Qwen/Qwen3.8-Flash-Next (base) | 94,6 B (mismo recuento en el safetensors de este repo) | 262.144 | bf16 | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -126,7 +126,7 @@ El paso de motor se mantiene plano en 45-46 ms desde el primer token hasta el ul
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/myllmbox/Qwen3.8-Flash-Next-hibrid48
+- Modelo en Hugging Face: https://huggingface.co/myllmbox/Qwen3.8-Flash-Next-hibrid48
 - Repositorio de herramientas y recetas: https://github.com/bilikaz/myllmbox-runner
 - Receta de despliegue y parches (incluye el arreglo de `lm_head`): https://github.com/bilikaz/myllmbox-runner/tree/main/recipes/qwen38-flash-next-fast
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next

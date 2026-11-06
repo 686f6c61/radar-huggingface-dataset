@@ -100,7 +100,7 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Butanium/ft-attack-repro-inkling-classify
+- Modelo en Hugging Face: https://huggingface.co/Butanium/ft-attack-repro-inkling-classify
 - Modelo base: https://huggingface.co/thinkingmachines/Inkling
 - Artículo citado (arXiv:2502.14828, *Fundamental Limitations in Defending LLM Finetuning APIs*, UK AISI): https://arxiv.org/abs/2502.14828
 - Tinker, API de fine-tuning utilizada: https://thinkingmachines.ai/tinker/

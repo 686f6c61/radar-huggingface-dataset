@@ -73,7 +73,7 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 | Recurso | Tipo | Contenido | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| AutoDataBench/Knowledge-Injection-resources | Paquete de recursos para benchmark | 2 ficheros JSONL (542.970 + 1.000 registros) y 3 modelos empaquetados | no disponible; los componentes mantienen sus licencias de origen | HuggingFace, 0 descargas |
+| AutoDataBench/Knowledge-Injection-resources | Paquete de recursos para benchmark | 2 ficheros JSONL (542.970 + 1.000 registros) y 3 modelos empaquetados | no disponible; los componentes mantienen sus licencias de origen | Hugging Face, 0 descargas |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -90,7 +90,7 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AutoDataBench/Knowledge-Injection-resources
+- Hugging Face: https://huggingface.co/AutoDataBench/Knowledge-Injection-resources
 - Repositorio GitHub de AutoDataBench: https://github.com/AutoDataBench/AutoDataBench
 - Articulo (arXiv 2609.40097): https://arxiv.org/abs/2609.40097
 - Modelo base de inyeccion de conocimiento: https://huggingface.co/awilliamson/talkie-1930-13b-it-vllm

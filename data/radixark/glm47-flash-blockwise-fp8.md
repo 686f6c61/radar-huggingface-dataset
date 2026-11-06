@@ -93,6 +93,6 @@ No se dispone de información en la documentación proporcionada sobre otras con
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/RadixArk/glm47-flash-blockwise-fp8
+- Repositorio Hugging Face: https://huggingface.co/RadixArk/glm47-flash-blockwise-fp8
 - Modelo base: https://huggingface.co/zai-org/GLM-4.7-Flash
 - No se han encontrado en la información proporcionada otros enlaces a papers, blogs, repositorios de código o demos.

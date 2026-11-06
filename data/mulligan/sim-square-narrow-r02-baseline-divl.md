@@ -76,8 +76,8 @@ La media y la tasa agregada son cálculos derivados de los datos de la model car
 
 | Modelo | Rol | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `sim-square-narrow-r02-baseline-divl` (este) | Agente R2, arm baseline, critico DIVL | no disponible | no aplica | 91,63 %–93,28 % de exito segun seed | MIT | HuggingFace, 5 seeds |
-| `sim-square-narrow-r02-baseline-idql` | Agente R2, arm baseline, critico IDQL; padre del actor congelado | no disponible | no aplica | no disponible en la informacion proporcionada | MIT | HuggingFace |
+| `sim-square-narrow-r02-baseline-divl` (este) | Agente R2, arm baseline, critico DIVL | no disponible | no aplica | 91,63 %–93,28 % de exito segun seed | MIT | Hugging Face, 5 seeds |
+| `sim-square-narrow-r02-baseline-idql` | Agente R2, arm baseline, critico IDQL; padre del actor congelado | no disponible | no aplica | no disponible en la informacion proporcionada | MIT | Hugging Face |
 | Otras celdas de campana de la ronda R2 (no identificadas en la informacion) | Variantes de arm y de configuracion | no disponible | no aplica | no disponible | MIT (presumible por la organizacion) | no disponible |
 
 No se dispone de resultados publicados de otros agentes de la misma tarea dentro de la informacion proporcionada, por lo que no es posible construir una comparativa cuantitativa con alternativas externas.
@@ -97,7 +97,7 @@ No se dispone de resultados publicados de otros agentes de la misma tarea dentro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-narrow-r02-baseline-divl
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-narrow-r02-baseline-divl
 - Modelo padre (actor de difusion congelado): https://huggingface.co/mulligan/sim-square-narrow-r02-baseline-idql
 - Dataset de evaluacion: https://huggingface.co/datasets/mulligan/sim-square-narrow-r00-r03-eval
 - Dataset de teleoperacion base: https://huggingface.co/datasets/mulligan/sim-square-narrow-c00-teleop-baseline
@@ -105,7 +105,7 @@ No se dispone de resultados publicados de otros agentes de la misma tarea dentro
 - Dataset DAgger de la ronda c01: https://huggingface.co/datasets/mulligan/sim-square-narrow-c01-dagger-baseline
 - Dataset de rollouts de la politica base (c02): https://huggingface.co/datasets/mulligan/sim-square-narrow-c02-baseline-policy-rollouts
 - Dataset DAgger de la ronda c02: https://huggingface.co/datasets/mulligan/sim-square-narrow-c02-dagger-baseline
-- Organizacion Mulligan en HuggingFace: https://huggingface.co/mulligan
+- Organizacion Mulligan en Hugging Face: https://huggingface.co/mulligan
 - Sitio del proyecto: https://mulligan.page
 - Policy Arena (evaluaciones): https://arena.mulligan.page
 - Las busquedas web realizadas no devolvieron ningun enlace relevante sobre este modelo; los unicos resultados obtenidos eran contenido no relacionado y no se incluyen.

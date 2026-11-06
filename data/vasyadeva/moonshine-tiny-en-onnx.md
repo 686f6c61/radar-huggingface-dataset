@@ -83,7 +83,7 @@ La ventaja principal frente a Whisper es que el coste computacional escala con l
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/vasyadeva/moonshine-tiny-en-onnx
+- Repositorio Hugging Face: https://huggingface.co/vasyadeva/moonshine-tiny-en-onnx
 - Modelo base: https://huggingface.co/moonshine-ai/moonshine-tiny
 - Autores: https://huggingface.co/moonshine-ai
 - Paper: https://arxiv.org/abs/2410.15608

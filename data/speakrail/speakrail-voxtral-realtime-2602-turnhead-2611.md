@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`speakrail-voxtral-realtime-2602-turnhead-2611` es un modelo publicado en HuggingFace por el usuario u organizacion `speakrail`. Por la nomenclatura del identificador, el modelo parece relacionado con el ecosistema Voxtral (familia de modelos de audio de Mistral AI) y con un componente de deteccion de turnos de conversacion ("turnhead"), lo que sugiere un uso orientado a voz en tiempo real y gestion de turnos en dialogos hablados. Sin embargo, la model card publicada no contiene mas que la declaracion de licencia, por lo que no es posible confirmar la arquitectura, el tamano ni el proposito exacto a partir de la informacion disponible.
+`speakrail-voxtral-realtime-2602-turnhead-2611` es un modelo publicado en Hugging Face por el usuario u organizacion `speakrail`. Por la nomenclatura del identificador, el modelo parece relacionado con el ecosistema Voxtral (familia de modelos de audio de Mistral AI) y con un componente de deteccion de turnos de conversacion ("turnhead"), lo que sugiere un uso orientado a voz en tiempo real y gestion de turnos en dialogos hablados. Sin embargo, la model card publicada no contiene mas que la declaracion de licencia, por lo que no es posible confirmar la arquitectura, el tamano ni el proposito exacto a partir de la informacion disponible.
 
 El repositorio tiene un tamano de 0.0 GB, lo que indica que no contiene pesos del modelo o que estos no estan accesibles publicamente en el momento de la consulta. No se han registrado descargas ni interacciones, y la fecha de creacion y actualizacion corresponde a noviembre de 2026.
 
@@ -81,5 +81,5 @@ No es posible establecer una comparativa fiable sin conocer la arquitectura, el 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/speakrail/speakrail-voxtral-realtime-2602-turnhead-2611
+- Repositorio en Hugging Face: https://huggingface.co/speakrail/speakrail-voxtral-realtime-2602-turnhead-2611
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SAD12CSE12DA/MyAwesomeModel-TestRepo es un repositorio publicado en HuggingFace por el usuario SAD12CSE12DA. Los metadatos de la plataforma lo etiquetan como un modelo de tipo BERT orientado a `feature-extraction` (extracción de características), con licencia MIT y compatibilidad declarada con endpoints de inferencia. Sin embargo, el tamaño del repositorio es de 0,0 GB y no se listan artefactos de pesos, por lo que no hay evidencia de que contenga un modelo entrenado descargable.
+SAD12CSE12DA/MyAwesomeModel-TestRepo es un repositorio publicado en Hugging Face por el usuario SAD12CSE12DA. Los metadatos de la plataforma lo etiquetan como un modelo de tipo BERT orientado a `feature-extraction` (extracción de características), con licencia MIT y compatibilidad declarada con endpoints de inferencia. Sin embargo, el tamaño del repositorio es de 0,0 GB y no se listan artefactos de pesos, por lo que no hay evidencia de que contenga un modelo entrenado descargable.
 
 Existe una contradicción relevante entre los metadatos y la model card. El README describe un modelo generativo conversacional denominado MyAwesomeModel, con mejoras en razonamiento, soporte de function calling, plantillas para subida de ficheros y búsqueda web con citas, además de una tabla de benchmarks. Es decir, los metadatos apuntan a un encoder BERT para extracción de características y la model card a un LLM de razonamiento. Ninguna de las dos descripciones aporta datos verificables sobre arquitectura, número de parámetros o longitud de contexto.
 
@@ -12,7 +12,7 @@ El repositorio acumula 0 descargas y 0 likes, fue creado y actualizado el 12 de 
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | No disponible. Los metadatos de HuggingFace indican `bert`; la model card describe un modelo generativo de razonamiento sin especificar arquitectura |
+| Arquitectura | No disponible. Los metadatos de Hugging Face indican `bert`; la model card describe un modelo generativo de razonamiento sin especificar arquitectura |
 | Parámetros totales | No disponible |
 | Parámetros activos | No disponible (no se indica que sea MoE) |
 | Longitud de contexto | No disponible |
@@ -91,7 +91,7 @@ No es posible estimar requisitos de hardware con la información disponible, por
 - VRAM para inferencia: no disponible. El cálculo requiere conocer el número de parámetros; para un modelo denso, la VRAM aproximada en FP16 equivale a 2 GB por cada 1.000 millones de parámetros, más el coste del KV cache, que depende de la longitud de contexto.
 - GPU recomendadas: no disponible. No puede determinarse si el modelo cabe en una GPU de consumo (RTX 4090, 24 GB) o si requiere A100/H100.
 - Compatibilidad con GPU de consumo: no disponible.
-- Opciones de despliegue: la única referencia es la etiqueta `endpoints_compatible` de HuggingFace y la librería `transformers`. No se confirma soporte de vLLM, llama.cpp, Ollama, TGI ni ningún otro runtime. Si el repositorio no contiene pesos (0,0 GB), no hay nada que desplegar actualmente.
+- Opciones de despliegue: la única referencia es la etiqueta `endpoints_compatible` de Hugging Face y la librería `transformers`. No se confirma soporte de vLLM, llama.cpp, Ollama, TGI ni ningún otro runtime. Si el repositorio no contiene pesos (0,0 GB), no hay nada que desplegar actualmente.
 - Latencia y throughput: no disponibles. La model card sí indica un consumo de 23K tokens por pregunta en razonamiento, lo que implica respuestas largas y coste computacional elevado por consulta en caso de que el modelo funcione como se describe.
 
 ## Comparativa con modelos similares
@@ -108,7 +108,7 @@ No es posible establecer una comparativa fiable. Los modelos de referencia de la
 
 ## Limitaciones y advertencias
 
-- Contradicción entre metadatos y model card: HuggingFace lo etiqueta como BERT de `feature-extraction`, mientras que el README describe un LLM generativo de razonamiento. Cualquier decisión técnica basada en esta ficha debe resolverse antes consultando al autor.
+- Contradicción entre metadatos y model card: Hugging Face lo etiqueta como BERT de `feature-extraction`, mientras que el README describe un LLM generativo de razonamiento. Cualquier decisión técnica basada en esta ficha debe resolverse antes consultando al autor.
 - Ausencia de pesos: el repositorio ocupa 0,0 GB. No hay artefactos descargables, por lo que el modelo no es utilizable tal cual.
 - Repositorio de prueba: el nombre incluye "TestRepo" y las fechas de creación y actualización difieren en seis segundos, lo que apunta a un repositorio de demostración o plantilla.
 - Cero adopción: 0 descargas y 0 likes. No hay evidencia de uso en producción ni de validación por terceros.
@@ -122,7 +122,7 @@ No es posible establecer una comparativa fiable. Los modelos de referencia de la
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SAD12CSE12DA/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/SAD12CSE12DA/MyAwesomeModel-TestRepo
 - Licencia del repositorio (referenciada de forma relativa en la model card): https://huggingface.co/SAD12CSE12DA/MyAwesomeModel-TestRepo/blob/main/LICENSE
 - Repositorio de código del autor: mencionado en la model card sin URL, no disponible
 - Web oficial y plataforma de chat/API: mencionadas en la model card sin URL, no disponibles

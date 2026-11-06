@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FitriHalim/classification-exp es un repositorio experimental publicado en HuggingFace que contiene una implementacion propia de DeiT (Data-efficient Image Transformer) orientada a tareas de clasificacion. No se trata de un modelo entrenado ni de un release listo para produccion: la propia model card indica que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y que no se reclama ninguna puntuacion de benchmark. El autor lo describe explicitamente como un "punto de partida reproducible", no como un modelo entrenado.
+FitriHalim/classification-exp es un repositorio experimental publicado en Hugging Face que contiene una implementacion propia de DeiT (Data-efficient Image Transformer) orientada a tareas de clasificacion. No se trata de un modelo entrenado ni de un release listo para produccion: la propia model card indica que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y que no se reclama ninguna puntuacion de benchmark. El autor lo describe explicitamente como un "punto de partida reproducible", no como un modelo entrenado.
 
 El peso real declarado en safetensors es de 33.088 parametros totales, una cifra extraordinariamente baja para una variante etiquetada como "large" en la configuracion generada. Esto refuerza la naturaleza de andamiaje del repositorio: sirve para verificar que el codigo de definicion del modelo y el pipeline de carga funcionan, no para inferencia real sobre datos del mundo real. El repositorio ocupa 0,0 GB y no registra descargas ni likes en el momento de la consulta.
 
@@ -68,7 +68,7 @@ No hay datos de benchmark publicados para este repositorio, por lo que no es pos
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| FitriHalim/classification-exp | 33.088 | no disponible | bsd-3-clause | HuggingFace, checkpoint de inicializacion | no disponible |
+| FitriHalim/classification-exp | 33.088 | no disponible | bsd-3-clause | Hugging Face, checkpoint de inicializacion | no disponible |
 | DeiT (variantes oficiales) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -85,5 +85,5 @@ No hay datos de benchmark publicados para este repositorio, por lo que no es pos
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/FitriHalim/classification-exp
+- Hugging Face: https://huggingface.co/FitriHalim/classification-exp
 - No se han encontrado en la busqueda web enlaces relevantes (papers, blogs, repos o demos) asociados a este modelo.

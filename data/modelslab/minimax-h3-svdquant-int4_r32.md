@@ -76,7 +76,7 @@ No se dispone de comparativas directas con otros modelos de generación de víde
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ModelsLab/MiniMax-H3-svdquant-int4_r32
+- Repositorio Hugging Face: https://huggingface.co/ModelsLab/MiniMax-H3-svdquant-int4_r32
 - Modelo base MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Licencia del modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE
 - Paper SVDQuant: http://arxiv.org/abs/2411.05007

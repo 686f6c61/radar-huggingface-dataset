@@ -89,12 +89,12 @@ No se han identificado en la información proporcionada modelos comparables con 
 - Licencia no establecida: el autor señala explícitamente que la disponibilidad pública del fichero no constituye permiso de uso, y que el titular debe definir las condiciones de distribución. Uso comercial en producción desaconsejado y jurídicamente ambiguo.
 - Sin transparencia de entrenamiento: no se publican datasets, hiperparámetros, número de tokens ni código, lo que impide auditoría de sesgos o de procedencia de los datos.
 - Sin datos de sesgos: no se ha realizado ninguna evaluación de sesgo conocida y no hay información al respecto.
-- Anomalía en los metadatos: la fecha de creación indicada en HuggingFace (2026-10-26) es posterior a la fecha actual, lo que sugiere un error de marcado o una configuración manual; conviene no tomarla como referencia temporal fiable.
+- Anomalía en los metadatos: la fecha de creación indicada en Hugging Face (2026-10-26) es posterior a la fecha actual, lo que sugiere un error de marcado o una configuración manual; conviene no tomarla como referencia temporal fiable.
 - Advertencia sobre la model card: el contenido del README se ha tratado exclusivamente como material de referencia descriptivo, no como instrucciones a ejecutar.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tranzistrina/inhLLm-V3-GGUF
+- Modelo en Hugging Face: https://huggingface.co/tranzistrina/inhLLm-V3-GGUF
 - Perfil del autor: https://huggingface.co/tranzistrina
 - Versión anterior (inhLLm V2 · GGUF): https://huggingface.co/tranzistrina/inhLLm-V2-GGUF
 - AI-Model-Trainer (herramienta genérica de entrenamiento y conversión a GGUF; no vinculada al modelo): https://github.com/avsDeveloper/AI-Model-Trainer

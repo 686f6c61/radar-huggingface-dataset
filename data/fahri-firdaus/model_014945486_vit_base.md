@@ -59,8 +59,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | model_014945486_vit_base | no disponible | no disponible | ViT con atencion lineal, fusion bilineal, Mish, GroupNorm | BSD-3-Clause | Solo codigo fuente, sin pesos |
-| google/vit-base-patch16-224 | 86M | 224x224 px | ViT estandar (atencion softmax, GELU, LayerNorm) | Apache-2.0 | Pesos preentrenados en HuggingFace |
-| google/vit-large-patch16-224 | 304M | 224x224 px | ViT estandar | Apache-2.0 | Pesos preentrenados en HuggingFace |
+| google/vit-base-patch16-224 | 86M | 224x224 px | ViT estandar (atencion softmax, GELU, LayerNorm) | Apache-2.0 | Pesos preentrenados en Hugging Face |
+| google/vit-large-patch16-224 | 304M | 224x224 px | ViT estandar | Apache-2.0 | Pesos preentrenados en Hugging Face |
 
 La comparativa se limita a los ViT de Google por ser los mas extendidos. La diferencia principal radica en que el modelo de fahri-firdaus no publica pesos ni resultados, mientras que los ViT de Google ofrecen modelos listos para usar con benchmarks publicados. La configuracion interna (atencion lineal, fusion bilineal) es sustancialmente distinta, pero sin datos de rendimiento no es posible valorar si estas diferencias suponen una mejora.
 
@@ -76,5 +76,5 @@ La comparativa se limita a los ViT de Google por ser los mas extendidos. La dife
 ## Enlaces
 
 - Repositorio del modelo: https://huggingface.co/fahri-firdaus/model_014945486_vit_base
-- Documentacion de ViT en HuggingFace: https://huggingface.co/docs/transformers/model_doc/vit
+- Documentacion de ViT en Hugging Face: https://huggingface.co/docs/transformers/model_doc/vit
 - Repositorio oficial de ViT de Google Research: https://github.com/google-research/vision_transformer

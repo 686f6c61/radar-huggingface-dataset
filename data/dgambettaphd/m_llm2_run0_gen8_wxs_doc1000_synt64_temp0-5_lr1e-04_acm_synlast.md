@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, identificado como `dgambettaphd/M_llm2_run0_gen8_WXS_doc1000_synt64_temp0.5_lr1e-04_acm_SYNLAST`, es un checkpoint de la libreria `transformers` publicado por el usuario `dgambettaphd`. La model card asociada es la plantilla autogenerada de HuggingFace y no contiene ningun dato rellenado: autor, financiacion, tipo de modelo, idiomas, licencia, datos de entrenamiento y resultados de evaluacion aparecen todos como `[More Information Needed]`. El repositorio acumula 0 descargas y 0 likes, y no dispone de pipeline declarado ni de licencia especificada.
+Este repositorio de Hugging Face, identificado como `dgambettaphd/M_llm2_run0_gen8_WXS_doc1000_synt64_temp0.5_lr1e-04_acm_SYNLAST`, es un checkpoint de la libreria `transformers` publicado por el usuario `dgambettaphd`. La model card asociada es la plantilla autogenerada de Hugging Face y no contiene ningun dato rellenado: autor, financiacion, tipo de modelo, idiomas, licencia, datos de entrenamiento y resultados de evaluacion aparecen todos como `[More Information Needed]`. El repositorio acumula 0 descargas y 0 likes, y no dispone de pipeline declarado ni de licencia especificada.
 
 El nombre del artefacto sugiere un checkpoint intermedio de un barrido experimental (`run0`, `gen8`) con hiperparametros codificados en la propia denominacion: `doc1000`, `synt64`, `temp0.5`, `lr1e-04`, `acm`, `SYNLAST`. Se trata de una interpretacion del identificador, no de informacion confirmada por el autor. El unico dato objetivo sobre el contenido es el tamano del repositorio, 0,2 GB, y la presencia de pesos en formato `safetensors` junto al tag `unsloth`, que indica que el artefacto pudo generarse o ajustarse con esa libreria.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM para inferencia: no disponible con precision. El repositorio ocupa 0,2 GB, lo que, asumiendo que contiene la totalidad de los pesos en precision de 16 bits, corresponderia a un modelo del orden de 100 millones de parametros. Esta estimacion es una inferencia a partir del tamano del repositorio y no un dato declarado; el repositorio podria contener un subconjunto de pesos o incluir ficheros auxiliares.
 - GPU recomendadas: no disponibles. Si se confirma un modelo de ese orden de tamano, cabria en cualquier GPU de consumo con 4 GB o mas de VRAM, incluidas GTX 1650, RTX 3060 y superiores.
 - GPU de centro de datos: A100, H100 o similares no serian necesarias para un modelo de ese tamano, salvo para entrenamiento o ajuste fino.
-- Opciones de despliegue: `transformers` es la unica via confirmada por los tags. No se declaran pesos GGUF, por lo que `llama.cpp` y `Ollama` requeririan una conversion previa. No hay confirmacion de compatibilidad con vLLM, TGI o SGLang, aunque el tag `endpoints_compatible` sugiere compatibilidad con los endpoints de HuggingFace Inference Endpoints.
+- Opciones de despliegue: `transformers` es la unica via confirmada por los tags. No se declaran pesos GGUF, por lo que `llama.cpp` y `Ollama` requeririan una conversion previa. No hay confirmacion de compatibilidad con vLLM, TGI o SGLang, aunque el tag `endpoints_compatible` sugiere compatibilidad con los endpoints de Hugging Face Inference Endpoints.
 - Latencia y throughput: no disponibles. No se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -88,7 +88,7 @@ No disponible. Sin conocer el numero de parametros, el dominio de entrenamiento 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dgambettaphd/M_llm2_run0_gen8_WXS_doc1000_synt64_temp0.5_lr1e-04_acm_SYNLAST
+- Repositorio en Hugging Face: https://huggingface.co/dgambettaphd/M_llm2_run0_gen8_WXS_doc1000_synt64_temp0.5_lr1e-04_acm_SYNLAST
 - Paper referenciado en los tags (`arxiv:1910.09700`, Lacoste et al., 2019, sobre estimacion de emisiones de carbono en aprendizaje automatico): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico citada en la plantilla de la model card: https://mlco2.github.io/impact
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales asociados a este modelo en la informacion disponible.

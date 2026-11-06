@@ -6,7 +6,7 @@
 
 El modelo original tiene 4.205.751.296 parametros (aproximadamente 4,2 mil millones) y licencia Apache-2.0, lo que permite uso comercial sin restricciones adicionales mas alla de las de dicha licencia. El repositorio ocupa 2,6 GB, coherente con una cuantizacion de 4 bits sobre un modelo denso de ese tamano.
 
-Su relevancia practica es la de facilitar el despliegue de un modelo de ~4B en hardware de consumo: el fichero cabe en GPUs con 8 GB de VRAM o menos, y puede ejecutarse tambien en CPU. La informacion publicada en HuggingFace no incluye detalles sobre arquitectura interna, contexto, idiomas ni datos de entrenamiento del modelo base, por lo que esos apartados se marcan como no disponibles.
+Su relevancia practica es la de facilitar el despliegue de un modelo de ~4B en hardware de consumo: el fichero cabe en GPUs con 8 GB de VRAM o menos, y puede ejecutarse tambien en CPU. La informacion publicada en Hugging Face no incluye detalles sobre arquitectura interna, contexto, idiomas ni datos de entrenamiento del modelo base, por lo que esos apartados se marcan como no disponibles.
 
 ## Especificaciones tecnicas
 
@@ -72,9 +72,9 @@ No se dispone de datos verificables de rendimiento para establecer una comparati
 
 | Modelo | Parametros | Formato | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| 7ven7o/Qwen3.5-4B-GGUF | 4,2B (aprox.) | GGUF Q4_K_S | no disponible | Apache-2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3.5-4B (modelo base) | 4,2B (aprox.) | safetensors (no confirmado) | no disponible | Apache-2.0 | HuggingFace |
-| unsloth/Qwen3.5-4B-GGUF | 4,2B (aprox.) | GGUF (varias cuantizaciones, no confirmado) | no disponible | Apache-2.0 | HuggingFace |
+| 7ven7o/Qwen3.5-4B-GGUF | 4,2B (aprox.) | GGUF Q4_K_S | no disponible | Apache-2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3.5-4B (modelo base) | 4,2B (aprox.) | safetensors (no confirmado) | no disponible | Apache-2.0 | Hugging Face |
+| unsloth/Qwen3.5-4B-GGUF | 4,2B (aprox.) | GGUF (varias cuantizaciones, no confirmado) | no disponible | Apache-2.0 | Hugging Face |
 | Otros modelos de ~4B de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -90,7 +90,7 @@ No se dispone de datos verificables de rendimiento para establecer una comparati
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/7ven7o/Qwen3.5-4B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/7ven7o/Qwen3.5-4B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Cuantizacion de origen: https://huggingface.co/unsloth/Qwen3.5-4B-GGUF
 - llama.cpp (herramienta de conversion y ejecucion): https://github.com/ggerganov/llama.cpp

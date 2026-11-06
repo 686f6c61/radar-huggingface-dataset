@@ -77,8 +77,8 @@ No se dispone de datos de rendimiento comparativos (benchmarks) entre estos mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: [jajmangold/Qwen3.8-27B-MTP-TQ3_4S](https://huggingface.co/jajmangold/Qwen3.8-27B-MTP-TQ3_4S)
+- Modelo en Hugging Face: [jajmangold/Qwen3.8-27B-MTP-TQ3_4S](https://huggingface.co/jajmangold/Qwen3.8-27B-MTP-TQ3_4S)
 - Modelo base: [Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - Runtime fork (llama.cpp-tq3): [https://github.com/turbo-tan/llama.cpp-tq3](https://github.com/turbo-tan/llama.cpp-tq3)
-- Referencia de Y Tan en HuggingFace: [https://huggingface.co/YTan2000](https://huggingface.co/YTan2000)
+- Referencia de Y Tan en Hugging Face: [https://huggingface.co/YTan2000](https://huggingface.co/YTan2000)
 - Card de referencia del formato TQ3_4S: [Qwen3.5-27B-TQ3_4S](https://huggingface.co/YTan2000/Qwen3.5-27B-TQ3_4S)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Spark-X2.5-4B-Writing-EP1-GGUF es la version cuantizada en formato GGUF del modelo hcnote/Spark-X2.5-4B-Writing-EP1, publicada por mradermacher, un autor conocido en HuggingFace por generar y mantener repositorios de cuantizaciones listas para consumo. El modelo base es un modelo de 4.112.079.360 parametros (aproximadamente 4,1 mil millones) orientado especificamente a escritura creativa, generacion de novelas y roleplay, segun las etiquetas declaradas en su model card. Esta ficha cubre exclusivamente el repositorio cuantizado, que no introduce cambios en los pesos mas alla de la propia cuantizacion.
+Spark-X2.5-4B-Writing-EP1-GGUF es la version cuantizada en formato GGUF del modelo hcnote/Spark-X2.5-4B-Writing-EP1, publicada por mradermacher, un autor conocido en Hugging Face por generar y mantener repositorios de cuantizaciones listas para consumo. El modelo base es un modelo de 4.112.079.360 parametros (aproximadamente 4,1 mil millones) orientado especificamente a escritura creativa, generacion de novelas y roleplay, segun las etiquetas declaradas en su model card. Esta ficha cubre exclusivamente el repositorio cuantizado, que no introduce cambios en los pesos mas alla de la propia cuantizacion.
 
 El problema que resuelve este repositorio es practico: el modelo original se distribuye en pesos de precision completa, lo que dificulta su ejecucion en hardware de consumo. La version GGUF proporciona doce variantes de cuantizacion que van desde 1,9 GB (Q2_K) hasta 8,3 GB (f16), permitiendo desplegar el modelo en GPUs de gama media, equipos Apple Silicon o incluso CPU con llama.cpp. Ademas, se ofrece un repositorio paralelo con cuantizaciones ponderadas mediante imatrix.
 
@@ -48,7 +48,7 @@ Es relevante ahora por dos motivos. Primero, la licencia Apache-2.0 permite uso 
 
 No se dispone de informacion sobre la arquitectura del modelo en la documentacion proporcionada. La model card del repositorio cuantizado no incluye detalles sobre el tipo de red (transformer, MoE, SSM o hibrida), el numero de capas, la dimension oculta, el mecanismo de atencion ni el tokenizador empleado. Tampoco se especifica si el modelo base incorpora alguna innovacion tecnica como decodificacion especulativa, atencion lineal o variantes de atencion eficiente. El unico dato estructural confirmado es el numero total de parametros, 4.112.079.360, derivado de los pesos en safetensors del modelo base.
 
-En cuanto al entrenamiento, la informacion disponible se limita a las etiquetas declaradas: creative-writing, novel-generation, roleplay, nsfw y long-context. No se publican el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT. Tampoco se documenta el proceso de cuantizacion mas alla de los metadatos tecnicos incluidos en el README (quantize_version 2, output_tensor_quantised 1, convert_type hf), que corresponden al pipeline estandar de mradermacher para generar GGUF estaticos a partir de pesos en formato HuggingFace.
+En cuanto al entrenamiento, la informacion disponible se limita a las etiquetas declaradas: creative-writing, novel-generation, roleplay, nsfw y long-context. No se publican el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT. Tampoco se documenta el proceso de cuantizacion mas alla de los metadatos tecnicos incluidos en el README (quantize_version 2, output_tensor_quantised 1, convert_type hf), que corresponden al pipeline estandar de mradermacher para generar GGUF estaticos a partir de pesos en formato Hugging Face.
 
 ## Capacidades
 
@@ -58,7 +58,7 @@ En cuanto al entrenamiento, la informacion disponible se limita a las etiquetas 
 - Contenido para adultos: la etiqueta nsfw indica que el modelo no incorpora filtros restrictivos declarados para contenido explicito.
 - Contexto largo: la etiqueta long-context apunta a una ventana ampliada, aunque no se publica la cifra concreta de tokens.
 - Bilinguismo chino-ingles: los dos idiomas declarados son zh y en; no se anuncia soporte para castellano ni para otras lenguas.
-- Compatibilidad con endpoints: la etiqueta endpoints_compatible sugiere que el modelo puede servirse mediante APIs compatibles con el formato de HuggingFace/OpenAI en infraestructuras de inferencia habituales.
+- Compatibilidad con endpoints: la etiqueta endpoints_compatible sugiere que el modelo puede servirse mediante APIs compatibles con el formato de Hugging Face/OpenAI en infraestructuras de inferencia habituales.
 - Tool calling y function calling: no disponible en la informacion proporcionada.
 - Razonamiento multi-paso y uso como agente: no disponible en la informacion proporcionada.
 - Vision, audio o modo thinking: no disponible en la informacion proporcionada.
@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: aproximadamente 2,5 GB con Q4_K_S o Q4_K_M; alrededor de 2,5 GB con IQ4_XS; 3,0-3,1 GB con Q5_K_S y Q5_K_M; 3,5 GB con Q6_K; 4,5 GB con Q8_0; y 8,3 GB con f16. Hay que sumar el espacio de la cache KV, que crece con la longitud de contexto efectiva.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM sirve para las cuantizaciones Q4; una RTX 3060 de 12 GB, una RTX 4060 Ti de 16 GB o una RTX 4090 permiten ejecutar Q8_0 o f16 con contexto amplio. En el extremo profesional, A100 o H100 solo tienen sentido si se sirven muchas peticiones concurrentes, dado el reducido tamano del modelo.
 - Cabe en GPU de consumo: si. Las variantes Q2_K a Q5_K_M caben en GPUs de 4-6 GB; Q6_K y Q8_0 requieren 6-8 GB; f16 requiere al menos 10-12 GB para operar comodamente.
-- Opciones de despliegue: llama.cpp y sus derivados (Ollama, LM Studio, koboldcpp, llama-cpp-python) son las rutas naturales al tratarse de GGUF. Los servidores compatibles con endpoints de HuggingFace pueden consumirlo siguiendo la etiqueta endpoints_compatible. vLLM y TGI tienen soporte de GGUF limitado o experimental, por lo que para produccion a gran escala conviene evaluar el modelo base en safetensors con vLLM.
+- Opciones de despliegue: llama.cpp y sus derivados (Ollama, LM Studio, koboldcpp, llama-cpp-python) son las rutas naturales al tratarse de GGUF. Los servidores compatibles con endpoints de Hugging Face pueden consumirlo siguiendo la etiqueta endpoints_compatible. vLLM y TGI tienen soporte de GGUF limitado o experimental, por lo que para produccion a gran escala conviene evaluar el modelo base en safetensors con vLLM.
 - CPU y Apple Silicon: al ser un modelo de 4 B, las variantes Q4 son viables en CPU moderna con RAM suficiente y en chips Apple M-series mediante Metal, con velocidades de decodificacion utilizables para uso interactivo de un solo usuario.
 - Latencia y throughput: no disponible. No se publican mediciones de tokens por segundo ni de latencia por peticion en la informacion proporcionada.
 
@@ -114,7 +114,7 @@ Comparativas con modelos de terceros (por ejemplo, otras familias de 3-4 B orien
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantizaciones estaticas): https://huggingface.co/mradermacher/Spark-X2.5-4B-Writing-EP1-GGUF
+- Repositorio Hugging Face (cuantizaciones estaticas): https://huggingface.co/mradermacher/Spark-X2.5-4B-Writing-EP1-GGUF
 - Repositorio de cuantizaciones ponderadas con imatrix: https://huggingface.co/mradermacher/Spark-X2.5-4B-Writing-EP1-i1-GGUF
 - Modelo base: https://huggingface.co/hcnote/Spark-X2.5-4B-Writing-EP1
 - Listado de modelos y enlaces de descarga del autor: https://hf.tst.eu/model#Spark-X2.5-4B-Writing-EP1-GGUF

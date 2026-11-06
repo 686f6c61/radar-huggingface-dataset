@@ -2,9 +2,9 @@
 
 ## Resumen
 
-AFCI_part1 no es un modelo de lenguaje, sino un kit de desarrollo offline para un sistema de deteccion de arcos electricos (arc-fault circuit interrupter, AFCI) y prevencion de incendios de origen electrico. Lo publica el usuario danielsaldana en HuggingFace y esta pensado para construir, sobre un microcontrolador STM32F407, una cadena completa de adquisicion de corriente, extraccion de caracteristicas (FFT/STFT) e inferencia de una red neuronal cuantizada que decide si se debe disparar la proteccion. Esta primera parte del kit empaqueta exclusivamente el firmware y las bibliotecas embebidas necesarias para esa cadena.
+AFCI_part1 no es un modelo de lenguaje, sino un kit de desarrollo offline para un sistema de deteccion de arcos electricos (arc-fault circuit interrupter, AFCI) y prevencion de incendios de origen electrico. Lo publica el usuario danielsaldana en Hugging Face y esta pensado para construir, sobre un microcontrolador STM32F407, una cadena completa de adquisicion de corriente, extraccion de caracteristicas (FFT/STFT) e inferencia de una red neuronal cuantizada que decide si se debe disparar la proteccion. Esta primera parte del kit empaqueta exclusivamente el firmware y las bibliotecas embebidas necesarias para esa cadena.
 
-El repositorio contiene archivos ZIP con STM32CubeF4 completo (drivers HAL y LL, CMSIS, middleware como FreeRTOS, USB, FatFs y LwIP, y cientos de proyectos de ejemplo), CMSIS 6, CMSIS-DSP, CMSIS-NN, CMSIS 5, el runtime TensorFlow Lite for Microcontrollers, documentacion HTML de las bibliotecas CMSIS y el kernel de FreeRTOS. No incluye pesos de ningun modelo entrenado ni un pipeline de HuggingFace asociado; el objetivo es disponer de todo el material de desarrollo sin conexion a internet, en un PC Windows 10/11 x64 con entrenamiento en Python solo por CPU.
+El repositorio contiene archivos ZIP con STM32CubeF4 completo (drivers HAL y LL, CMSIS, middleware como FreeRTOS, USB, FatFs y LwIP, y cientos de proyectos de ejemplo), CMSIS 6, CMSIS-DSP, CMSIS-NN, CMSIS 5, el runtime TensorFlow Lite for Microcontrollers, documentacion HTML de las bibliotecas CMSIS y el kernel de FreeRTOS. No incluye pesos de ningun modelo entrenado ni un pipeline de Hugging Face asociado; el objetivo es disponer de todo el material de desarrollo sin conexion a internet, en un PC Windows 10/11 x64 con entrenamiento en Python solo por CPU.
 
 Su relevancia es practica para quien quiera reproducir o auditar un sistema TinyML de seguridad electrica en un Cortex-M4: agrupa en un unico paquete las versiones concretas de cada dependencia, con sumas de verificacion SHA256 y scripts para reconstruir los archivos divididos. El tamano del repositorio es de 0,3 GB (285,6 MB en 10 archivos).
 
@@ -87,7 +87,7 @@ No se dispone de modelos comparables en la misma categoria con datos de rendimie
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/danielsaldana/AFCI_part1
+- Repositorio en Hugging Face: https://huggingface.co/danielsaldana/AFCI_part1
 - STM32CubeF4 (GitHub): https://github.com/STMicroelectronics/STM32CubeF4
 - CMSIS 6: https://github.com/ARM-software/CMSIS_6
 - CMSIS-DSP: https://github.com/ARM-software/CMSIS-DSP

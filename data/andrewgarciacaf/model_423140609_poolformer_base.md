@@ -58,8 +58,8 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 | Modelo | Arquitectura | Parametros | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | model_423140609_poolformer_base | PoolFormer base | no disponible | matching | BSD-3 | Repositorio HF (script .py) |
-| PoolFormer-base (Sea AI Labs) | PoolFormer base | ~37 M | clasificación de imágenes | BSD-3 | HuggingFace (weights safetensors) |
-| PoolFormer-s12 | PoolFormer pequeño | ~12 M | clasificación de imágenes | BSD-3 | HuggingFace |
+| PoolFormer-base (Sea AI Labs) | PoolFormer base | ~37 M | clasificación de imágenes | BSD-3 | Hugging Face (weights safetensors) |
+| PoolFormer-s12 | PoolFormer pequeño | ~12 M | clasificación de imágenes | BSD-3 | Hugging Face |
 | Poolformer (recurrente, arXiv 2510.02206) | recurrente con pooling | no publicado | modelado de secuencias largas | no disponible | arXiv |
 
 La comparativa es limitada: el modelo del repositorio no tiene pesos publicados, por lo que no se puede evaluar su rendimiento frente a las variantes oficiales de Sea AI Labs.
@@ -75,8 +75,8 @@ La comparativa es limitada: el modelo del repositorio no tiene pesos publicados,
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AndrewGarciacaf/model_423140609_poolformer_base
-- Documentación de PoolFormer en HuggingFace: https://huggingface.co/docs/transformers/v4.53.1/model_doc/poolformer
+- Repositorio Hugging Face: https://huggingface.co/AndrewGarciacaf/model_423140609_poolformer_base
+- Documentación de PoolFormer en Hugging Face: https://huggingface.co/docs/transformers/v4.53.1/model_doc/poolformer
 - Código original de PoolFormer (GitHub): https://github.com/sail-sg/poolformer
 - Paper *MetaFormer is Actually What You Need for Vision*: https://arxiv.org/abs/2111.11418 (enlazado desde la documentación)
 - Paper *Poolformer: Recurrent Networks with Pooling for Long-Sequence Modeling* (2025): https://arxiv.org/abs/2510.02206

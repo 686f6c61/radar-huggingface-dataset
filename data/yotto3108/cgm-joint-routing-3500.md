@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Cgm-joint-routing-3500 es un bundle de investigación publicado por el usuario Yotto3108 en HuggingFace. No se trata de un modelo de lenguaje, sino de un checkpoint de aprendizaje de representaciones para datos de monitorización continua de glucosa (CGM, por sus siglas en inglés). El objetivo es extraer representaciones vectoriales de 128 dimensiones a partir de ventanas de 24 horas de lecturas de glucosa (288 franjas de cinco minutos, con valores en mg/dL) para alimentar tareas posteriores de clasificación o regresión.
+Cgm-joint-routing-3500 es un bundle de investigación publicado por el usuario Yotto3108 en Hugging Face. No se trata de un modelo de lenguaje, sino de un checkpoint de aprendizaje de representaciones para datos de monitorización continua de glucosa (CGM, por sus siglas en inglés). El objetivo es extraer representaciones vectoriales de 128 dimensiones a partir de ventanas de 24 horas de lecturas de glucosa (288 franjas de cinco minutos, con valores en mg/dL) para alimentar tareas posteriores de clasificación o regresión.
 
 El modelo combina un encoder tipo JEPA (Joint Embedding Predictive Architecture) con mecanismos de fusión y enrutamiento (routing), embeddings de entrada y cabezas de predicción y reconstrucción, todo ello apoyado sobre un backbone Chronos-2 congelado de Amazon (aproximadamente 478 MB de pesos que no se duplican en el repositorio). El checkpoint corresponde al baseline de 3.500 actualizaciones con semilla 43, seleccionado por su rendimiento en evaluación PR-AUC ordinaria mediante linear probing congelado.
 
@@ -72,7 +72,7 @@ La evaluacion utiliza 2.699 ventanas, 14 celdas de dataset/tarea, cinco folds po
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Yotto3108/cgm-joint-routing-3500 | no disponible | 288 franjas (24 h) | Encoder JEPA + Chronos-2 congelado | no disponible | HuggingFace |
+| Yotto3108/cgm-joint-routing-3500 | no disponible | 288 franjas (24 h) | Encoder JEPA + Chronos-2 congelado | no disponible | Hugging Face |
 | amazon/chronos-2 | no disponible | no disponible | Modelo de series temporales | terminos upstream | Repositorio upstream de Amazon |
 | Otros baselines CGM especificos | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 
@@ -94,6 +94,6 @@ No se dispone de datos comparativos con modelos CGM de la misma categoria en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Yotto3108/cgm-joint-routing-3500
+- Modelo en Hugging Face: https://huggingface.co/Yotto3108/cgm-joint-routing-3500
 - Backbone congelado: https://huggingface.co/amazon/chronos-2
 - Busqueda web: no se han encontrado enlaces relevantes; los resultados devueltos corresponden a sitios de juegos en frances y no guardan relacion con el modelo.

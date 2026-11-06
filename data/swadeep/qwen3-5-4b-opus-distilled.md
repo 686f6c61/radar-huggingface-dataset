@@ -86,8 +86,8 @@ La comparacion principal es con su modelo base: el fine-tune anade el estilo de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/swadeep/Qwen3.5-4b-opus-distilled
+- Modelo en Hugging Face: https://huggingface.co/swadeep/Qwen3.5-4b-opus-distilled
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
-- Dataset de entrenamiento original: `angrygiraffe/claude-opus-4.6-4.7-reasoning-8.7k` (disponible en HuggingFace)
-- Dataset de razonamiento de Opus: `Gryphe/Opus-4.6-Reasoning-24k` (disponible en HuggingFace)
+- Dataset de entrenamiento original: `angrygiraffe/claude-opus-4.6-4.7-reasoning-8.7k` (disponible en Hugging Face)
+- Dataset de razonamiento de Opus: `Gryphe/Opus-4.6-Reasoning-24k` (disponible en Hugging Face)
 - Repositorio de entrenamiento: mencionado en la model card como contenedor de `offtopic_fix_1k/` y `grpo_data/`, sin URL directa proporcionada

@@ -103,6 +103,6 @@ Comparativa con alternativas externas: no disponible en la información proporci
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/IsValorum/Occamy-1.0-APEX-I-MiniPlus-V2.1-Abliterated-GGUF
+- Repositorio Hugging Face: https://huggingface.co/IsValorum/Occamy-1.0-APEX-I-MiniPlus-V2.1-Abliterated-GGUF
 - Modelo base: https://huggingface.co/Accio-Lab/occamy-1.0
 - Búsqueda web: no se han encontrado enlaces relevantes (papers, blogs, repositorios o demos) sobre este modelo en los resultados disponibles. Los resultados obtenidos corresponden a foros de televisión alemana y no guardan relación con el modelo.

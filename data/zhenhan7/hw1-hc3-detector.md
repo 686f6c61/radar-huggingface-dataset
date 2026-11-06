@@ -2,7 +2,7 @@
 
 ## Resumen
 
-hw1-hc3-detector es un clasificador binario de texto en ingles publicado por el usuario zhenhan7 en HuggingFace. Su funcion es determinar si una respuesta del corpus HC3 (Human ChatGPT Comparison Corpus) fue escrita por una persona o generada por ChatGPT. Se trata de un ajuste fino (fine-tuning) del modelo de embeddings sentence-transformers/all-MiniLM-L6-v2, una red transformer tipo BERT de 6 capas y 22.713.986 parametros, sobre una tarea de clasificacion de secuencias con dos etiquetas: 0 para humano y 1 para ChatGPT.
+hw1-hc3-detector es un clasificador binario de texto en ingles publicado por el usuario zhenhan7 en Hugging Face. Su funcion es determinar si una respuesta del corpus HC3 (Human ChatGPT Comparison Corpus) fue escrita por una persona o generada por ChatGPT. Se trata de un ajuste fino (fine-tuning) del modelo de embeddings sentence-transformers/all-MiniLM-L6-v2, una red transformer tipo BERT de 6 capas y 22.713.986 parametros, sobre una tarea de clasificacion de secuencias con dos etiquetas: 0 para humano y 1 para ChatGPT.
 
 El modelo nace como entrega de la tarea CS546 Homework 1, no como un sistema de deteccion de contenido generado por IA listo para produccion. Su relevancia es acotada: sirve como referencia academica de como un encoder pequeno ajustado con pocos epochs puede pasar del 84,49% de exactitud de una linea base con regresion logistica sobre embeddings congelados al 99,59% en el split de test del propio trabajo. Es, por tanto, un ejemplo de laboratorio mas que una herramienta validada externamente.
 
@@ -70,17 +70,17 @@ No se han publicado resultados en la informacion disponible para otros conjuntos
 - VRAM estimada para inferencia: en FP32 los pesos ocupan aproximadamente 91 MB; en FP16, unos 45 MB; en int8, unos 23 MB. Con el overhead del runtime, el consumo real se mantiene muy por debajo de 1 GB.
 - GPU recomendadas: no requiere GPU. Funciona correctamente en CPU. Cualquier GPU es suficiente, desde una T4 o una GTX 1650 hasta una RTX 4090, A100 o H100, donde quedara infrautilizada.
 - Si cabe en GPU de consumo: si, en todas las GPU consumer actuales e incluso en GPU integradas y en hardware de placa unica (Raspberry Pi, etc.).
-- Opciones de despliegue: pipeline de transformers, text-embeddings-inference (etiqueta presente en el repositorio), endpoints compatibles con HuggingFace, exportacion a ONNX para inferencia en CPU. No se distribuyen pesos GGUF, por lo que llama.cpp y Ollama no son aplicables sin conversion previa.
+- Opciones de despliegue: pipeline de transformers, text-embeddings-inference (etiqueta presente en el repositorio), endpoints compatibles con Hugging Face, exportacion a ONNX para inferencia en CPU. No se distribuyen pesos GGUF, por lo que llama.cpp y Ollama no son aplicables sin conversion previa.
 - Latencia y throughput estimados: no se han publicado datos. Por el tamano del modelo (22,7 M de parametros, secuencias de hasta 256 tokens) es razonable esperar latencias del orden de milisegundos por muestra en CPU moderna y muy inferiores en GPU, pero se trata de una estimacion, no de una cifra medida por el autor.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Exactitud en HC3 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| zhenhan7/hw1-hc3-detector | 22,7 M | no disponible | 99,59% en el split del trabajo (4.668 ejemplos) | no disponible | HuggingFace, 12 descargas |
+| zhenhan7/hw1-hc3-detector | 22,7 M | no disponible | 99,59% en el split del trabajo (4.668 ejemplos) | no disponible | Hugging Face, 12 descargas |
 | aggnim/ai-text-detector (GitHub) | no disponible (BERT, RoBERTa, DistilBERT) | no disponible | mas del 93% segun el repositorio | no disponible | GitHub |
-| Chengwei-Shen/hw1-hc3-detector | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| sentence-transformers/all-MiniLM-L6-v2 | 22,7 M | 256 tokens (configuracion habitual) | no aplica (modelo de embeddings, no clasificador) | Apache 2.0 en el modelo base | HuggingFace, ampliamente utilizado |
+| Chengwei-Shen/hw1-hc3-detector | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| sentence-transformers/all-MiniLM-L6-v2 | 22,7 M | 256 tokens (configuracion habitual) | no aplica (modelo de embeddings, no clasificador) | Apache 2.0 en el modelo base | Hugging Face, ampliamente utilizado |
 
 La comparacion con otras entregas del mismo ejercicio (Chengwei-Shen, Yihangsun, skyyyyks) sugiere que existen varios repositorios practicamente identicos; solo el de zhenhan7 publica resultados detallados en su model card.
 
@@ -99,7 +99,7 @@ La comparacion con otras entregas del mismo ejercicio (Chengwei-Shen, Yihangsun,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zhenhan7/hw1-hc3-detector
+- Modelo en Hugging Face: https://huggingface.co/zhenhan7/hw1-hc3-detector
 - Archivos y versiones: https://huggingface.co/zhenhan7/hw1-hc3-detector/tree/main
 - Repositorio alternativo con la misma tarea: https://huggingface.co/Chengwei-Shen/hw1-hc3-detector
 - Ficha de terceros sobre otra copia del modelo: https://savrn.com/models/hw1-hc3-detector

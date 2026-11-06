@@ -32,7 +32,7 @@ El proceso de cuantización se realizó con la herramienta `ctq` del proyecto `q
 - Conciencia temporal: soporta tareas de QA con marcadores temporales (time-aware QA), permitiendo localizar eventos en el audio.
 - Comprensión de voz con timestamps: produce transcripciones con marcas de tiempo, útil para subtitulado y diarización.
 - Análisis de estilo y emoción: el modelo puede extraer información sobre el tono, estado de ánimo o estilo del hablante.
-- Entrada multimodal: acepta audio directo o vídeo MP4 (extracción de pista de audio), según la demo del espacio HuggingFace.
+- Entrada multimodal: acepta audio directo o vídeo MP4 (extracción de pista de audio), según la demo del espacio Hugging Face.
 - Capacidad de tool calling y agentes: no documentada en la información disponible.
 
 ## Casos de uso
@@ -68,9 +68,9 @@ Nota: AAS (Average Alignment Score) mide la precisión de los timestamps en reco
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento en audio general |
 |---|---|---|---|---|---|
-| MOSS-Audio-8B-Thinking (cuantizado NVFP4/INT8) | 8B | No disponible | Apache 2.0 | HuggingFace (1 archivo) | No publicado |
-| MOSS-Audio-8B-Thinking (original bf16) | 8B | No disponible | Apache 2.0 | HuggingFace | 70.80 media |
-| Qwen3-Omni-30B | 30B | No disponible | Apache 2.0 | HuggingFace | 67.91 media |
+| MOSS-Audio-8B-Thinking (cuantizado NVFP4/INT8) | 8B | No disponible | Apache 2.0 | Hugging Face (1 archivo) | No publicado |
+| MOSS-Audio-8B-Thinking (original bf16) | 8B | No disponible | Apache 2.0 | Hugging Face | 70.80 media |
+| Qwen3-Omni-30B | 30B | No disponible | Apache 2.0 | Hugging Face | 67.91 media |
 
 La versión cuantizada ofrece una reducción de peso del 48% (de 17 GB a 8.8 GB) con el mismo rendimiento esperado (aunque no verificado). Qwen3-Omni-30B es un modelo más grande con peor rendimiento en audio general según los datos disponibles, lo que hace a MOSS-Audio-8B-Thinking una opción más eficiente.
 
@@ -86,7 +86,7 @@ La versión cuantizada ofrece una reducción de peso del 48% (de 17 GB a 8.8 GB)
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/rockerBOO/moss-audio-8b-thinking-nvfp4-convrot-int8
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/rockerBOO/moss-audio-8b-thinking-nvfp4-convrot-int8
 - Modelo base original: https://huggingface.co/OpenMOSS-Team/MOSS-Audio-8B-Thinking
 - Repositorio GitHub del proyecto MOSS-Audio: https://github.com/OpenMOSS/MOSS-Audio
 - Página oficial del proyecto: https://openmoss.ai/MOSS-Audio/

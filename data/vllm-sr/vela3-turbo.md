@@ -4,7 +4,7 @@
 
 vela3-turbo es un modelo de decisión y extracción de 27B desarrollado por vLLM Semantic Router en colaboración con KR Labs, miembro de referencia de la familia Vela 3.0. Se construye sobre vllm-sr/d3-turbo (v1.0, revision `da17b5d0c860f7e5be6e2afebe67228b4bd24d0c`, congelado) al que añade adaptadores LoRA con gating para tareas de extracción de spans. Está diseñado para resolver, en una única llamada `system_one`, tareas de enrutado semántico de LLM, clasificación zero-shot, NER, extracción de relaciones, detección de PII, detección de alucinaciones y señales de seguridad, devolviendo probabilidades y offsets de caracteres sin generar texto libre.
 
-Su relevancia actual radica en el auge de los routers semánticos y los guardrails para sistemas LLM en producción: en lugar de usar un LLM generativo grande para clasificar o extraer información, Vela ofrece respuestas deterministas con probabilidades calibradas. Los adaptadores solo se activan para su tarea concreta, de modo que las decisiones ordinarias son bit a bit idénticas a las del modelo base d3-turbo (561 de 561 idénticas en su verificación interna). Se publica bajo licencia Apache-2.0 con un repositorio de 6,2 GB en HuggingFace.
+Su relevancia actual radica en el auge de los routers semánticos y los guardrails para sistemas LLM en producción: en lugar de usar un LLM generativo grande para clasificar o extraer información, Vela ofrece respuestas deterministas con probabilidades calibradas. Los adaptadores solo se activan para su tarea concreta, de modo que las decisiones ordinarias son bit a bit idénticas a las del modelo base d3-turbo (561 de 561 idénticas en su verificación interna). Se publica bajo licencia Apache-2.0 con un repositorio de 6,2 GB en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks tipo MMLU, HumanEval o GSM8K; el mo
 - VRAM estimada: no disponible. Con 26,09B de parametros en pesos base mas ~5 GB de adaptadores y cabeceras, en FP16/BF16 se requieren en torno a 52-55 GB, es decir, una GPU de datacenter (A100/H100 80 GB) o multiples GPUs consumer con tensor parallelism; con cuantizacion de 4 bits (si se soporta) cabria en torno a 16-18 GB, teoricamente viable en una RTX 4090 de 24 GB, aunque no hay soporte de cuantizacion documentado.
 - GPU recomendadas: no disponible de forma explicita; por tamano, A100 80 GB o H100 son la opcion segura.
 - Consumer GPU: no confirmado; solo seria factible con cuantizacion de 4 bits no documentada oficialmente.
-- Despliegue: libreria transformers con custom_code; compatible con Inference Endpoints de HuggingFace (endpoints_compatible). No se menciona soporte de vLLM, llama.cpp, Ollama o TGI.
+- Despliegue: libreria transformers con custom_code; compatible con Inference Endpoints de Hugging Face (endpoints_compatible). No se menciona soporte de vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput: no disponibles. Al no generar texto y responder con probabilidades y spans, la latencia esperada es la de un forward pass de 27B, inferior a la de un LLM generativo equivalente.
 
 ## Comparativa con modelos similares

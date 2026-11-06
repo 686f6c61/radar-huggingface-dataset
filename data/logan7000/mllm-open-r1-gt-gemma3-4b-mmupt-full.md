@@ -56,9 +56,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| logan7000/mllm-open-r1-gt-gemma3-4b-mmupt-full | 4B | No especificado | No disponible | HuggingFace |
-| Gemma-3-4B-it (base) | 4B | 128k (segun documentacion) | Gemma Terms of Use | HuggingFace |
-| logan7000/mllm-open-r1-gt-gemma3-4b-full-end-s961 | 4B (aprox.) | No especificado | No disponible | HuggingFace |
+| logan7000/mllm-open-r1-gt-gemma3-4b-mmupt-full | 4B | No especificado | No disponible | Hugging Face |
+| Gemma-3-4B-it (base) | 4B | 128k (segun documentacion) | Gemma Terms of Use | Hugging Face |
+| logan7000/mllm-open-r1-gt-gemma3-4b-full-end-s961 | 4B (aprox.) | No especificado | No disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo. El modelo base Gemma-3-4B-it es la referencia natural, pero este fine-tuning se centra en razonamiento matematico multimodal, por lo que la comparacion directa no es posible sin benchmarks.
 
@@ -72,6 +72,6 @@ No se dispone de datos de rendimiento comparativo. El modelo base Gemma-3-4B-it 
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/logan7000/mllm-open-r1-gt-gemma3-4b-mmupt-full
+- Hugging Face del modelo: https://huggingface.co/logan7000/mllm-open-r1-gt-gemma3-4b-mmupt-full
 - Modelo relacionado (mismo autor, variante end-s961): https://huggingface.co/logan7000/mllm-open-r1-gt-gemma3-4b-full-end-s961
 - Documentacion de Gemma 4 (no directamente relacionada, pero contexto de la familia): https://deepmind.google/models/gemma/gemma-4/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `dsaddsaf/koth-router-j` es una publicación en HuggingFace realizada por el usuario `dsaddsaf` el 4 de agosto de 2026. La etiqueta `region:us` sugiere una orientación geográfica hacia Estados Unidos, pero no se proporciona ninguna otra información técnica o funcional. El repositorio tiene un tamaño de 0.0 GB, lo que indica que no contiene pesos de modelo ni archivos de configuración visibles en la ficha pública.
+El modelo `dsaddsaf/koth-router-j` es una publicación en Hugging Face realizada por el usuario `dsaddsaf` el 4 de agosto de 2026. La etiqueta `region:us` sugiere una orientación geográfica hacia Estados Unidos, pero no se proporciona ninguna otra información técnica o funcional. El repositorio tiene un tamaño de 0.0 GB, lo que indica que no contiene pesos de modelo ni archivos de configuración visibles en la ficha pública.
 
 A pesar de contar con 3 likes, no registra descargas, lo que sugiere que podría tratarse de un experimento, un proyecto en fase inicial o un repositorio vacío. No existe documentación sobre arquitectura, entrenamiento, capacidades o licencia. Dada la ausencia total de datos verificables, cualquier uso en producción o evaluación técnica sería imposible sin información adicional por parte del autor.
 
@@ -53,4 +53,4 @@ No disponible. No se conocen modelos comparables en la misma categoria, ya que n
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/dsaddsaf/koth-router-j)
+- [Repositorio en Hugging Face](https://huggingface.co/dsaddsaf/koth-router-j)

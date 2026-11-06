@@ -73,7 +73,7 @@ El autor advierte explícitamente que tres prompts constituyen una prueba de hum
 |---|---|---|---|---|
 | Qwen3.5-0.8B-Opus-Reasoning-Distilled-GGUF | 0,8B | GGUF (Q8_0, Q4_K_M) | Apache-2.0 | Razonamiento destilado de Claude Opus y Qwen3.5-27B; proyecto de aprendizaje |
 | Qwen3-0.6B (oficial de Alibaba) | 0,6B | Safetensors, GGUF comunitarios | Apache-2.0 | Modelo de razonamiento/híbrido oficial, entrenado a gran escala con soporte de thinking mode |
-| SmolLM2-360M / 1.7B (HuggingFace) | 360M / 1,7B | Safetensors, GGUF comunitarios | Apache-2.0 | Modelos pequeños generalistas de texto, sin destilación de razonamiento específica |
+| SmolLM2-360M / 1.7B (Hugging Face) | 360M / 1,7B | Safetensors, GGUF comunitarios | Apache-2.0 | Modelos pequeños generalistas de texto, sin destilación de razonamiento específica |
 
 Frente a Qwen3-0.6B oficial, este modelo ofrece trazas de razonamiento con el estilo de modelos mucho mayores, pero con una base de entrenamiento mínima (2.917 filas), por lo que su calidad real de razonamiento será inferior a la de modelos oficiales entrenados a escala. Frente a SmolLM2, aporta el comportamiento reasoning como diferenciador, a costa de un entrenamiento mucho más limitado.
 

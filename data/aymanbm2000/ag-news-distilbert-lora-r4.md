@@ -25,7 +25,7 @@ Su relevancia es fundamentalmente práctica y metodológica: sirve como punto de
 
 La arquitectura es la de DistilBERT: un transformer encoder-only destilado de BERT, con 6 capas, 12 cabezas de atencion, dimension oculta 768 y 67 millones de parametros. Sobre el se anade un adaptador LoRA de rango 4, alpha 8 y dropout 0.1, aplicado exclusivamente a las proyecciones q_lin y v_lin de cada capa de atencion. Con esos hiperparametros y los seis bloques del encoder, el adaptador resultante es notablemente pequeno (del orden de decenas de miles de parametros, calculo derivado de la configuracion declarada, no un dato publicado por el autor), y se suma a una cabeza de clasificacion de 4 etiquetas inicializada de cero.
 
-El entrenamiento uso aproximadamente 50.000 filas muestreadas del split de entrenamiento de AG News durante 3 epocas, con optimizador y scheduler por defecto del Trainer de HuggingFace, learning rate 2e-4 (mas alto que el 2e-5 tipico del fine-tuning completo, siguiendo la practica habitual con LoRA), batch de 32 en entrenamiento y 64 en evaluacion, y max_length de 128 tokens. La seleccion del mejor checkpoint se hizo por macro F1 sobre un 10 % de los datos de entrenamiento reservado como validacion, con seguimiento en Weights & Biases. No se documenta el uso de RLHF, DPO ni decodificacion especulativa, algo esperable en un clasificador discriminativo.
+El entrenamiento uso aproximadamente 50.000 filas muestreadas del split de entrenamiento de AG News durante 3 epocas, con optimizador y scheduler por defecto del Trainer de Hugging Face, learning rate 2e-4 (mas alto que el 2e-5 tipico del fine-tuning completo, siguiendo la practica habitual con LoRA), batch de 32 en entrenamiento y 64 en evaluacion, y max_length de 128 tokens. La seleccion del mejor checkpoint se hizo por macro F1 sobre un 10 % de los datos de entrenamiento reservado como validacion, con seguimiento en Weights & Biases. No se documenta el uso de RLHF, DPO ni decodificacion especulativa, algo esperable en un clasificador discriminativo.
 
 ## Capacidades
 
@@ -85,10 +85,10 @@ La informacion disponible solo permite comparar con las variantes del mismo estu
 
 | Alternativa | Parametros / enfoque | Contexto | Exactitud AG News | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| distilbert-base-uncased completo con fine-tuning | 67 M, todos entrenables | 512 tokens | 0,9333 | Apache 2.0 (base) | HuggingFace, pesos completos |
-| LoRA r=32, alpha=64 (mismo estudio) | 67 M congelados + adaptador mayor | 512 tokens | 0,9309 | Apache 2.0 | HuggingFace |
-| LoRA r=16, alpha=32 (mismo estudio) | 67 M congelados + adaptador intermedio | 512 tokens | 0,9293 | Apache 2.0 | HuggingFace |
-| Este modelo (LoRA r=4, alpha=8) | 67 M congelados + adaptador minimo | 512 tokens | 0,9264 | Apache 2.0 | HuggingFace |
+| distilbert-base-uncased completo con fine-tuning | 67 M, todos entrenables | 512 tokens | 0,9333 | Apache 2.0 (base) | Hugging Face, pesos completos |
+| LoRA r=32, alpha=64 (mismo estudio) | 67 M congelados + adaptador mayor | 512 tokens | 0,9309 | Apache 2.0 | Hugging Face |
+| LoRA r=16, alpha=32 (mismo estudio) | 67 M congelados + adaptador intermedio | 512 tokens | 0,9293 | Apache 2.0 | Hugging Face |
+| Este modelo (LoRA r=4, alpha=8) | 67 M congelados + adaptador minimo | 512 tokens | 0,9264 | Apache 2.0 | Hugging Face |
 | TF-IDF + regresion logistica | No neuronal | no aplicable | Macro F1 0,9107 | no disponible | Codigo propio |
 | Otros clasificadores de texto en ingles | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -109,7 +109,7 @@ La lectura de la tabla es que la perdida por usar el rango minimo es de 0,0069 p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aymanbm2000/ag-news-distilbert-lora-r4
+- Modelo en Hugging Face: https://huggingface.co/aymanbm2000/ag-news-distilbert-lora-r4
 - Modelo base: https://huggingface.co/distilbert-base-uncased
 - Dataset AG News: https://huggingface.co/datasets/ag_news
 - Paper de LoRA: https://arxiv.org/abs/2106.09685

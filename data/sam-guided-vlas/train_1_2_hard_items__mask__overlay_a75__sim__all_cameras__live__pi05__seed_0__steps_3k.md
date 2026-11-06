@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 | Modelo | Parametros | Entrada / contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Este checkpoint (`sam-guided-vlas/...pi05__seed_0__steps_3k`) | 4,14 mil millones | Estado (9,) + 3 imágenes 3×224×224; salida de acción (7,) | Sin benchmarks publicados | Apache-2.0 | Repositorio público con 0 descargas |
-| `lerobot/pi05_base` (modelo base) | No disponible en la información proporcionada | No disponible | No disponible | No disponible en la información proporcionada | Público en HuggingFace |
+| `lerobot/pi05_base` (modelo base) | No disponible en la información proporcionada | No disponible | No disponible | No disponible en la información proporcionada | Público en Hugging Face |
 | Otras políticas VLA equivalentes (por ejemplo, alternativas de la misma categoría) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La búsqueda web realizada no devolvió resultados relevantes sobre el modelo ni sobre modelos comparables: los resultados obtenidos corresponden a una serie de televisión francesa, a un fabricante de utensilios de taller y a una empresa de cerramientos, y no guardan relación con el objeto de esta ficha.
@@ -85,7 +85,7 @@ La búsqueda web realizada no devolvió resultados relevantes sobre el modelo ni
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sam-guided-vlas/train_1_2_hard_items__mask__overlay_a75__sim__all_cameras__live__pi05__seed_0__steps_3k
+- Modelo en Hugging Face: https://huggingface.co/sam-guided-vlas/train_1_2_hard_items__mask__overlay_a75__sim__all_cameras__live__pi05__seed_0__steps_3k
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/sam-guided-vlas/train_1_2_hard_items__mask__overlay_a75__sim__all_cameras__live
 - Blog de π₀.₅ en Physical Intelligence: https://www.physicalintelligence.company/blog/pi05

@@ -6,7 +6,7 @@
 
 La variante concreta que nos ocupa es un híbrido de mid-training: entrena con los documentos originales de DCLM-edu durante las primeras 9.996 iteraciones (hasta el último paso a learning rate máximo) y después aplica el cooldown (las últimas 1.110 de 11.106 iteraciones) sobre conversaciones del corpus 1PP reescritas a partir de esos mismos documentos, con pérdida calculada tanto en turnos de usuario como de asistente. La semilla 42 solo altera la inicialización de parámetros; el orden de los lotes es idéntico entre semillas y las condiciones están alineadas paso a paso.
 
-Arquitectónicamente es un decoder estilo Llama de 24 capas, contexto de 4.096 tokens y tokenizador basado en el vocabulario de SmolLM2 (49.152 entradas más `<|pad|>`). Su relevancia es metodológica: permite aislar el efecto de la formulación conversacional en el cooldown sobre las curvas de pérdida y el comportamiento generativo, con verificación cruzada entre los pesos de HuggingFace y el checkpoint original de Megatron.
+Arquitectónicamente es un decoder estilo Llama de 24 capas, contexto de 4.096 tokens y tokenizador basado en el vocabulario de SmolLM2 (49.152 entradas más `<|pad|>`). Su relevancia es metodológica: permite aislar el efecto de la formulación conversacional en el cooldown sobre las curvas de pérdida y el comportamiento generativo, con verificación cruzada entre los pesos de Hugging Face y el checkpoint original de Megatron.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ Arquitectónicamente es un decoder estilo Llama de 24 capas, contexto de 4.096 t
 
 El modelo es un transformer decoder denso de tipo Llama con 24 capas, dimensión oculta de 1.152, FFN de 4.608 con activación SwiGLU, 9 cabezas de atención con 3 KV heads (head dim 128), RMSNorm, RoPE con base 10.000, embeddings de entrada y salida no atados, sin biases y sin QK-norm. El tokenizador usa el vocabulario de SmolLM2 (49.152 tokens) más un token `<|pad|>`; `<|endoftext|>` actúa como token de fin de documento. La longitud de secuencia es de 4.096 tokens y se aplica enmascaramiento de atención entre documentos (cross-document attention masking).
 
-El entrenamiento cubre las primeras 11.106 iteraciones del flujo alineado por pasos del estudio principal (23,29B posiciones de token), con batch global de 512 × 4.096 tokens. Las primeras 9.996 iteraciones usan los documentos originales de DCLM-edu; las últimas 1.110 (el cooldown) usan conversaciones 1PP reescritas a partir de esos documentos, con pérdida sobre turnos de usuario y de asistente. El optimizador es Muon (shape scaling, LR matricial 0,005) combinado con Adam para el resto de parámetros (LR 3e-3 para embeddings y capa de salida, 3e-3 para las normas); warmup de 699 pasos, fase constante y decaimiento lineal en los últimos 1.110 pasos hasta 1/100; weight decay 0,1; desviación estándar de inicialización 0,0119; precisión bf16. La pérdida de validación del checkpoint final sobre 2.433 documentos retenidos es de 1,806 en texto de asistente, 1,673 en texto de usuario y 3,162 en texto de documento (1,783 en la métrica ponderada `reweighted_seg1234`). Los pesos de HuggingFace se validaron contra el checkpoint de Megatron con diferencias absolutas de 0,0016 y 0,0014 en dos conjuntos de validación.
+El entrenamiento cubre las primeras 11.106 iteraciones del flujo alineado por pasos del estudio principal (23,29B posiciones de token), con batch global de 512 × 4.096 tokens. Las primeras 9.996 iteraciones usan los documentos originales de DCLM-edu; las últimas 1.110 (el cooldown) usan conversaciones 1PP reescritas a partir de esos documentos, con pérdida sobre turnos de usuario y de asistente. El optimizador es Muon (shape scaling, LR matricial 0,005) combinado con Adam para el resto de parámetros (LR 3e-3 para embeddings y capa de salida, 3e-3 para las normas); warmup de 699 pasos, fase constante y decaimiento lineal en los últimos 1.110 pasos hasta 1/100; weight decay 0,1; desviación estándar de inicialización 0,0119; precisión bf16. La pérdida de validación del checkpoint final sobre 2.433 documentos retenidos es de 1,806 en texto de asistente, 1,673 en texto de usuario y 3,162 en texto de documento (1,783 en la métrica ponderada `reweighted_seg1234`). Los pesos de Hugging Face se validaron contra el checkpoint de Megatron con diferencias absolutas de 0,0016 y 0,0014 en dos conjuntos de validación.
 
 ## Capacidades
 
@@ -99,7 +99,7 @@ No se dispone de datos de benchmarks que permitan comparar rendimiento con model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-0.58b-v2-ua-rawanneal-seed42-base
+- Modelo en Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-0.58b-v2-ua-rawanneal-seed42-base
 - Variante raw de referencia: https://huggingface.co/Raghav-Singhal/1pp-0.58b-v2-raw-seed42-base
 - Variante 1PP completa: https://huggingface.co/Raghav-Singhal/1pp-0.58b-v2-ua-seed42-base
 - Colección 1PP: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649

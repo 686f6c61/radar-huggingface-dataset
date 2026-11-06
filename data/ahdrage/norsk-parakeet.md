@@ -80,10 +80,10 @@ Salida desbocada en 3.571 clips reservados:
 
 | Modelo | Parámetros | Idiomas | WER FLEURS nb | WER NPSC | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| norsk-parakeet v3 | 0,6B | noruego bokmål | 6,2 | 7,1 | CC-BY-4.0 | HuggingFace (transformers) |
+| norsk-parakeet v3 | 0,6B | noruego bokmål | 6,2 | 7,1 | CC-BY-4.0 | Hugging Face (transformers) |
 | NB-Whisper large | 1,55B | noruego | 4,2 | 16,5 | no disponible en la información proporcionada | no disponible en la información proporcionada |
 | norsk-asr + LM 4-gram | – | noruego | 10,0 | 9,7 | no disponible en la información proporcionada | no disponible en la información proporcionada |
-| parakeet-ultra (zero-shot) | 0,6B | multilingüe | 64,3 | 71,8 | CC-BY-4.0 | HuggingFace |
+| parakeet-ultra (zero-shot) | 0,6B | multilingüe | 64,3 | 71,8 | CC-BY-4.0 | Hugging Face |
 
 NB-Whisper large obtiene mejor WER en FLEURS y Stortinget, mientras que norsk-parakeet v3 es claramente mejor en NPSC y competitivo en NST, con un tamaño 2,5 veces menor y sin necesidad de language model externo.
 
@@ -101,7 +101,7 @@ NB-Whisper large obtiene mejor WER en FLEURS y Stortinget, mientras que norsk-pa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ahdrage/norsk-parakeet
+- Modelo en Hugging Face: https://huggingface.co/ahdrage/norsk-parakeet
 - Repositorio de código, receta de entrenamiento y registro de progreso: https://github.com/ahdrage/norsk-parakeet
 - Modelo base intermedio: https://huggingface.co/moondream/parakeet-ultra
 - Modelo original de NVIDIA: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3

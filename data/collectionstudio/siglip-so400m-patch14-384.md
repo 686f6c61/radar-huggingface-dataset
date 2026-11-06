@@ -98,7 +98,7 @@ En la misma categoria, la eleccion entre SigLIP y CLIP suele decidirse por la di
 
 ## Enlaces
 
-- Ficha en HuggingFace del repositorio analizado: https://huggingface.co/CollectionStudio/siglip-so400m-patch14-384
+- Ficha en Hugging Face del repositorio analizado: https://huggingface.co/CollectionStudio/siglip-so400m-patch14-384
 - Modelo de referencia del equipo original: https://huggingface.co/google/siglip-so400m-patch14-384
 - Paper "Sigmoid Loss for Language Image Pre-Training": https://arxiv.org/abs/2303.15343
 - Paper "Getting ViT in Shape: Scaling Laws for Compute-Optimal Model Design": https://arxiv.org/abs/2305.13035

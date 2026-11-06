@@ -68,7 +68,7 @@ El autor reporta ademas un Group-OOF (solo entrenamiento, 10 pliegues agrupados 
 
 | Modelo | Tipo | ROC-AUC (EDINET-Bench) | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este modelo (XGBoost) | Tabular, 20 caracteristicas | 0,7833 | Apache 2.0 | HuggingFace |
+| Este modelo (XGBoost) | Tabular, 20 caracteristicas | 0,7833 | Apache 2.0 | Hugging Face |
 | Random Forest (paper) | Tabular | 0,75 | no disponible | no disponible |
 | Claude 3.5 Sonnet (paper) | LLM | 0,73 | propietaria | API de Anthropic |
 
@@ -83,6 +83,6 @@ El autor reporta ademas un Group-OOF (solo entrenamiento, 10 pliegues agrupados 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/745H1N/edinet-fraud-xgboost
+- Modelo en Hugging Face: https://huggingface.co/745H1N/edinet-fraud-xgboost
 - Dataset EDINET-Bench: https://huggingface.co/datasets/SakanaAI/EDINET-Bench
 - Paper EDINET-Bench: https://arxiv.org/abs/2506.08762

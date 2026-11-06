@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `papi` es una publicación de HuggingFace realizada por el usuario GenoaSai74. Según las etiquetas del repositorio, se trata de un modelo de lenguaje basado en la arquitectura GLM-4 MoE Lite, con un total de 18.633.333.696 parámetros y pesos distribuidos en formato safetensors con una cuantización de 8 bits.
+El modelo `papi` es una publicación de Hugging Face realizada por el usuario GenoaSai74. Según las etiquetas del repositorio, se trata de un modelo de lenguaje basado en la arquitectura GLM-4 MoE Lite, con un total de 18.633.333.696 parámetros y pesos distribuidos en formato safetensors con una cuantización de 8 bits.
 
 La información disponible es extremadamente limitada: la model card solo especifica la licencia MIT, y las búsquedas web no ofrecen documentación técnica, benchmarks ni descripción de capacidades. Esto impide evaluar su rendimiento o adecuación para tareas concretas. Su publicación es reciente y aún no cuenta con descargas ni valoraciones, por lo que se recomienda precaución antes de utilizarlo en producción.
 
@@ -62,5 +62,5 @@ No se dispone de información sobre modelos comparables en el contexto de esta b
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/GenoaSai74/papi
+- Hugging Face: https://huggingface.co/GenoaSai74/papi
 - DOI asignado: https://doi.org/10.57967/hf/10300

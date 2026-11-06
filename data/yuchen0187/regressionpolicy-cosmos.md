@@ -61,7 +61,7 @@ No se han proporcionado resultados de benchmarks en la información disponible p
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| RegressionPolicy-Cosmos | no disponible | no disponible | OpenMDW-1.1 | HuggingFace (yuchen0187) |
+| RegressionPolicy-Cosmos | no disponible | no disponible | OpenMDW-1.1 | Hugging Face (yuchen0187) |
 | Cosmos Policy (Cosmos-Predict2-2B) | 2B (según paper) | no disponible | no disponible en la información | Repositorio GitHub NVlabs/cosmos-policy |
 | CosmosPolicyRecreation (Cosmos-Predict 2.5) | no disponible | no disponible | no disponible en la información | GitHub (Norm90732) |
 
@@ -78,7 +78,7 @@ No se han proporcionado resultados de benchmarks en la información disponible p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yuchen0187/RegressionPolicy-Cosmos
+- Hugging Face: https://huggingface.co/yuchen0187/RegressionPolicy-Cosmos
 - Paper Cosmos Policy: https://arxiv.org/abs/2601.16163
 - Paper (HTML): https://arxiv.org/html/2601.16163v1
 - Repositorio oficial NVlabs/cosmos-policy: https://github.com/NVlabs/cosmos-policy

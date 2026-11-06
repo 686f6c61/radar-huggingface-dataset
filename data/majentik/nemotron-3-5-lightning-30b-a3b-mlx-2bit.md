@@ -72,7 +72,7 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/majentik/Nemotron-3.5-Lightning-30B-A3B-MLX-2bit
+- Repositorio Hugging Face: https://huggingface.co/majentik/Nemotron-3.5-Lightning-30B-A3B-MLX-2bit
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16
 - Licencia OpenMDW v1.1: https://openmdw.ai/license/1-1/
 - Librería MLX-LM: https://github.com/ml-explore/mlx-lm

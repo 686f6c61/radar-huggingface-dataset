@@ -78,6 +78,6 @@ La comparativa se limita al modelo base, ya que no se dispone de informacion sob
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lokeshe09/Qwen3.8-27B-FP8-Dynamic
+- Hugging Face: https://huggingface.co/lokeshe09/Qwen3.8-27B-FP8-Dynamic
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio de llm-compressor: https://github.com/vllm-project/llm-compressor

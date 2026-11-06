@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Kokoro-82M-v1.1-zh-Runtime (este repo) | 82M (modelo subyacente) | no disponible | other | HuggingFace, 0 descargas | Runtimes Docker para Jetson Orin/Thor; pesos aparte |
+| Kokoro-82M-v1.1-zh-Runtime (este repo) | 82M (modelo subyacente) | no disponible | other | Hugging Face, 0 descargas | Runtimes Docker para Jetson Orin/Thor; pesos aparte |
 | Kokoro 82M (hexgrad) | 82M | no disponible | no disponible en esta informacion | Repositorios hexgrad/AI-ModelScope | Modelo base; pesos y voces se descargan desde aqui |
 | Alternativas TTS de tamano similar | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparativos en la informacion proporcionada |
 
@@ -79,5 +79,5 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/manateelazycat/Kokoro-82M-v1.1-zh-Runtime
+- Repositorio Hugging Face: https://huggingface.co/manateelazycat/Kokoro-82M-v1.1-zh-Runtime
 - Repositorios de pesos y voces: hexgrad/AI-ModelScope Kokoro (referenciados en la model card; sin URL directa en la informacion disponible)

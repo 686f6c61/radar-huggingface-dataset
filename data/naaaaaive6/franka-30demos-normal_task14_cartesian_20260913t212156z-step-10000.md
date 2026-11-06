@@ -71,7 +71,7 @@ Los datos del checkpoint analizado no permiten una comparacion cuantitativa, ya 
 
 | Modelo | Parametros | Tipo | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| franka-30demos-normal_task14_cartesian (este checkpoint) | 3,62 mil millones | VLA para Franka, tarea unica | No disponible | No disponible | Repositorio HuggingFace con 0 descargas |
+| franka-30demos-normal_task14_cartesian (este checkpoint) | 3,62 mil millones | VLA para Franka, tarea unica | No disponible | No disponible | Repositorio Hugging Face con 0 descargas |
 | π0.5 (familia a la que apunta el tag `pi05`) | No disponible en esta busqueda | VLA generalista | No disponible | No disponible | No verificado |
 | π0 (referencia publica de la misma familia) | Aprox. 3,3 mil millones (informacion publica de referencia) | VLA generalista | No disponible | No disponible | No verificado |
 | OpenVLA (referencia publica de VLA abierto) | Aprox. 7 mil millones (informacion publica de referencia) | VLA generalista | No disponible | No disponible | No verificado |
@@ -95,7 +95,7 @@ Las cifras de los modelos alternativos son valores de referencia publicos y no s
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/NaaaaaiVe6/franka-30demos-normal_task14_cartesian_20260913T212156Z-step-10000
+- Repositorio Hugging Face: https://huggingface.co/NaaaaaiVe6/franka-30demos-normal_task14_cartesian_20260913T212156Z-step-10000
 - Archivo `log.txt` dentro del repositorio (layout de salida, limite de normalizacion, entradas de camara y estado, convenciones de controlador pendientes de confirmacion).
 - Archivo `assets/franka/norm_stats.json` dentro del repositorio (estadisticas de normalizacion).
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, a su familia o a documentacion tecnica asociada.

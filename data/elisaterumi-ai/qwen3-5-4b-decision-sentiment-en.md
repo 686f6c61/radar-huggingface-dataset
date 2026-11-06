@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento para establecer una comparación cuantitat
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/elisaterumi-ai/Qwen3.5-4B-Decision-Sentiment-EN
+- Repositorio Hugging Face: https://huggingface.co/elisaterumi-ai/Qwen3.5-4B-Decision-Sentiment-EN
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-4B
 - Librería PEFT: https://github.com/huggingface/peft
 - Unsloth: https://github.com/unslothai/unsloth

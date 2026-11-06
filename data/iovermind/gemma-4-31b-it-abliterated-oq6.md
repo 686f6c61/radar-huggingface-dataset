@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`iOvermind/gemma-4-31B-it-abliterated-oQ6` es una cuantizacion en 6 bits de un supuesto modelo Gemma 4 de 31.000 millones de parametros, publicada por el usuario iOvermind en HuggingFace. El modelo base se presenta como una variante "abliterated" e "it" (instruction-tuned), es decir, una version supuestamente modificada para eliminar los mecanismos de rechazo del modelo original y ajustada para seguir instrucciones. La cuantizacion se ha realizado con oQ (oMLX v0.7.0), una herramienta de cuantizacion de precision mixta orientada al ecosistema MLX de Apple.
+`iOvermind/gemma-4-31B-it-abliterated-oQ6` es una cuantizacion en 6 bits de un supuesto modelo Gemma 4 de 31.000 millones de parametros, publicada por el usuario iOvermind en Hugging Face. El modelo base se presenta como una variante "abliterated" e "it" (instruction-tuned), es decir, una version supuestamente modificada para eliminar los mecanismos de rechazo del modelo original y ajustada para seguir instrucciones. La cuantizacion se ha realizado con oQ (oMLX v0.7.0), una herramienta de cuantizacion de precision mixta orientada al ecosistema MLX de Apple.
 
 El paquete pesa 26,7 GB y contiene 31.273.088.876 parametros en formato MLX safetensors, con cuantizacion de 6 bits y grupo de tamano 64. La libreria declarada es MLX, lo que implica que el modelo esta pensado para ejecutarse en hardware Apple Silicon (M-series) mediante el framework MLX, y no en GPUs NVIDIA o AMD de forma nativa.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| iOvermind/gemma-4-31B-it-abliterated-oQ6 | 31,27B | no disponible | MLX safetensors 6-bit | no disponible | HuggingFace, 0 descargas |
+| iOvermind/gemma-4-31B-it-abliterated-oQ6 | 31,27B | no disponible | MLX safetensors 6-bit | no disponible | Hugging Face, 0 descargas |
 | Gemma 2 27B IT (referencia publica de Google) | 27B | 8K | safetensors, GGUF | Gemma Terms of Use | Amplia |
 | Qwen2.5 32B Instruct | 32,5B | 128K | safetensors, GGUF, MLX | Apache 2.0 | Amplia |
 
@@ -83,7 +83,7 @@ La comparacion debe tomarse con cautela: no esta confirmada la existencia de "Ge
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/iOvermind/gemma-4-31B-it-abliterated-oQ6
+- Repositorio Hugging Face: https://huggingface.co/iOvermind/gemma-4-31B-it-abliterated-oQ6
 - Herramienta de cuantizacion oQ / oMLX: https://github.com/jundot/omlx
 - Framework MLX: https://github.com/ml-explore/mlx
 - Documentacion de Gemma (Google DeepMind): https://ai.google.dev/gemma

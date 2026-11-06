@@ -85,7 +85,7 @@ La comparación relevante es frente al GPT-2 original: misma arquitectura y peso
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aether-models/aether-kit-gpt2
+- Hugging Face: https://huggingface.co/aether-models/aether-kit-gpt2
 - Modelo base: https://huggingface.co/openai-community/gpt2
 - Repositorio Aether Kit: https://github.com/bubstackdev/aether-kit
 - Commit de origen del port: https://github.com/bubstackdev/aether-kit/commit/20bbc96

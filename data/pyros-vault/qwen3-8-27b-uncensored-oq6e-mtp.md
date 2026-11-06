@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-Uncensored-oQ6e-mtp es una versión cuantizada y "abliterated" (sin censura) del modelo Qwen3.8-27B, publicada por el usuario pyros-vault en HuggingFace. El modelo base, desarrollado por orcarouter, es una variante sin censura del Qwen3.8-27B original de Alibaba, que ha sido sometida a un proceso de abliteración para eliminar los rechazos y restricciones de seguridad del modelo. Esta versión concreta aplica además una cuantización mixta de 6 bits mediante la herramienta oQ (oMLX v0.6.1), lo que reduce significativamente el peso del modelo manteniendo un buen equilibrio entre calidad y eficiencia.
+Qwen3.8-27B-Uncensored-oQ6e-mtp es una versión cuantizada y "abliterated" (sin censura) del modelo Qwen3.8-27B, publicada por el usuario pyros-vault en Hugging Face. El modelo base, desarrollado por orcarouter, es una variante sin censura del Qwen3.8-27B original de Alibaba, que ha sido sometida a un proceso de abliteración para eliminar los rechazos y restricciones de seguridad del modelo. Esta versión concreta aplica además una cuantización mixta de 6 bits mediante la herramienta oQ (oMLX v0.6.1), lo que reduce significativamente el peso del modelo manteniendo un buen equilibrio entre calidad y eficiencia.
 
 El modelo está orientado a casos de uso de red-teaming, investigación de seguridad y generación de contenido sin restricciones. Es un modelo multimodal (imagen-texto) con capacidades de razonamiento, function calling y predicción multi-token (MTP). Su formato MLX lo hace especialmente adecuado para despliegue en hardware Apple Silicon, aunque también existen versiones GGUF para otros entornos. La licencia Apache 2.0 permite uso comercial sin restricciones, lo que lo convierte en una opción atractiva para equipos que necesitan un modelo de 27B parámetros desplegable en una sola GPU.
 
@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pyros-vault/Qwen3.8-27B-Uncensored-oQ6e-mtp
+- Modelo en Hugging Face: https://huggingface.co/pyros-vault/Qwen3.8-27B-Uncensored-oQ6e-mtp
 - Modelo base (orcarouter): https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored
 - Version FP8 del modelo base: https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-FP8
 - Repositorio GitHub con version GGUF y Ollama: https://github.com/Wassimyounes01/qwen38-uncensored

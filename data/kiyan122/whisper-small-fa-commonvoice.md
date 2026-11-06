@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `whisper-small-fa-commonvoice` es un ajuste fino (fine-tune) del modelo `openai/whisper-small` realizado por Kiyan122, orientado al reconocimiento automático del habla (ASR) en persa (farsi). Aunque el modelo base de OpenAI ya soporta 99 idiomas, este ajuste específico busca mejorar la precisión en persa, probablemente entrenado sobre el corpus CommonVoice (como sugiere el nombre). El modelo fue generado automáticamente con el Trainer de HuggingFace y no incluye una documentación detallada ni resultados de evaluación publicados.
+El modelo `whisper-small-fa-commonvoice` es un ajuste fino (fine-tune) del modelo `openai/whisper-small` realizado por Kiyan122, orientado al reconocimiento automático del habla (ASR) en persa (farsi). Aunque el modelo base de OpenAI ya soporta 99 idiomas, este ajuste específico busca mejorar la precisión en persa, probablemente entrenado sobre el corpus CommonVoice (como sugiere el nombre). El modelo fue generado automáticamente con el Trainer de Hugging Face y no incluye una documentación detallada ni resultados de evaluación publicados.
 
 Con aproximadamente 241,7 millones de parámetros, hereda la arquitectura encoder-decoder de Whisper y su ventana de contexto de 30 segundos de audio. Su relevancia radica en ofrecer una opción de ASR en persa basada en un modelo consolidado, aunque la falta de métricas oficiales obliga a validarlo empíricamente antes de usarlo en producción.
 
@@ -23,7 +23,7 @@ Con aproximadamente 241,7 millones de parámetros, hereda la arquitectura encode
 
 El modelo mantiene la arquitectura original de Whisper-small: un transformer encoder-decoder con atención de tiempo y espacio, diseñado para procesar espectrogramas de Mel de 80 bandas. El encoder convierte la señal de audio en representaciones latentes y el decoder genera el texto transcrito de forma autorregresiva. No se ha modificado la arquitectura; solo se ha realizado un ajuste fino sobre el checkpoint preentrenado.
 
-El entrenamiento se realizó con el Trainer de HuggingFace usando los siguientes hiperparámetros: learning rate de 1e-5, batch total de 256 (tras acumulación de gradientes en 2 GPUs), 400 pasos de entrenamiento, scheduler de tipo `cosine_with_min_lr` con 40 pasos de warmup y precisión mixta (AMP). No se especifica el dataset exacto de entrenamiento, aunque el nombre del repositorio sugiere CommonVoice. No se menciona el uso de RLHF, DPO u otras técnicas de alineación.
+El entrenamiento se realizó con el Trainer de Hugging Face usando los siguientes hiperparámetros: learning rate de 1e-5, batch total de 256 (tras acumulación de gradientes en 2 GPUs), 400 pasos de entrenamiento, scheduler de tipo `cosine_with_min_lr` con 40 pasos de warmup y precisión mixta (AMP). No se especifica el dataset exacto de entrenamiento, aunque el nombre del repositorio sugiere CommonVoice. No se menciona el uso de RLHF, DPO u otras técnicas de alineación.
 
 ## Capacidades
 
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la información disponible. La s
 - VRAM estimada para inferencia: ~1-2 GB en FP16 (Whisper-small tiene 244M parámetros; el peso del checkpoint es de ~1 GB en FP32, ~0,5 GB en FP16).
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM, p. ej., NVIDIA GTX 1650, RTX 3060, o superiores. También puede ejecutarse en CPU con tiempos de inferencia mayores (del orden de segundos por 30 s de audio).
 - En consumer GPU: sí, cabe en GPUs de gama media como RTX 3060 o superiores.
-- Opciones de despliegue: compatible con HuggingFace Transformers (pipeline `automatic-speech-recognition`), también se puede exportar a ONNX o usar con `faster-whisper` para acelerar la inferencia.
+- Opciones de despliegue: compatible con Hugging Face Transformers (pipeline `automatic-speech-recognition`), también se puede exportar a ONNX o usar con `faster-whisper` para acelerar la inferencia.
 - Latencia estimada: en GPU moderna (RTX 3090) la transcripción de 30 s de audio suele tardar <1 s; en CPU puede tardar 3-10 s.
 
 ## Comparativa con modelos similares
@@ -75,5 +75,5 @@ No se dispone de comparativas con otros modelos ASR en persa (p. ej., Vosk, Kald
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Kiyan122/whisper-small-fa-commonvoice)
+- [Modelo en Hugging Face](https://huggingface.co/Kiyan122/whisper-small-fa-commonvoice)
 - [Modelo base openai/whisper-small](https://huggingface.co/openai/whisper-small)

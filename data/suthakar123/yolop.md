@@ -6,7 +6,7 @@ YOLOP (You Only Look Once for Panoptic driving Perception) es una red neuronal c
 
 El problema que ataca es el coste computacional y de latencia de los pipelines clasicos de percepcion, donde cada tarea requiere su propio modelo. YOLOP demuestra mediante experimentos ablativos que las tres tareas pueden aprenderse de forma conjunta sin optimizacion alternante tediosa, y que el resultado mejora a la vez la precision por tarea y el rendimiento en tiempo real. Segun el model card, es el primer trabajo que alcanza velocidad de tiempo real en dispositivos embebidos manteniendo resultados de nivel state-of-the-art en el conjunto de datos BDD100K.
 
-La ficha corresponde al repositorio suthakar123/YOLOP en HuggingFace, una resubida de tercera persona con pipeline declarado `object-detection`, sin licencia ni idiomas especificados, 0 descargas y 0 likes en el momento de la consulta. Es relevante ahora como referencia historica de los modelos multitarea de percepcion y como base ligera de deteccion y segmentacion para prototipos de conduccion autonoma.
+La ficha corresponde al repositorio suthakar123/YOLOP en Hugging Face, una resubida de tercera persona con pipeline declarado `object-detection`, sin licencia ni idiomas especificados, 0 descargas y 0 likes en el momento de la consulta. Es relevante ahora como referencia historica de los modelos multitarea de percepcion y como base ligera de deteccion y segmentacion para prototipos de conduccion autonoma.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ La ficha corresponde al repositorio suthakar123/YOLOP en HuggingFace, una resubi
 | Longitud de contexto | no aplica (modelo de vision; no se especifica resolucion de entrada en la informacion proporcionada) |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible (modelo de vision; los idiomas no son un parametro relevante) |
-| Licencia | no disponible (el repositorio de HuggingFace no declara licencia) |
+| Licencia | no disponible (el repositorio de Hugging Face no declara licencia) |
 | Formato de pesos | no disponible (el model card describe estructura de proyecto en Python, sin especificar formato de pesos) |
 
 ## Arquitectura y entrenamiento
@@ -123,7 +123,7 @@ La comparativa se limita a los datos incluidos en el model card. No hay informac
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace no declara licencia. No hay base explicita para asumir uso comercial permitido; habria que consultar la licencia del repositorio original del proyecto antes de cualquier despliegue en produccion.
+- El repositorio de Hugging Face no declara licencia. No hay base explicita para asumir uso comercial permitido; habria que consultar la licencia del repositorio original del proyecto antes de cualquier despliegue en produccion.
 - Es una resubida de un tercero (autor `suthakar123`), no el repositorio oficial del equipo de la HUST. No se garantiza que los pesos o el codigo coincidan con la version publicada por los autores.
 - Los metadatos de creacion y actualizacion indican la fecha 2026-09-16, posterior a la publicacion del informe tecnico en 2021, lo que sugiere metadatos poco fiables o una resubida tardia. Conviene verificar la procedencia de los ficheros.
 - El modelo esta especializado en escenas de conduccion y entrenado sobre BDD100K. No se documenta su comportamiento en dominios fuera de ese conjunto (por ejemplo, camaras aereas, interiores o imagenes genericas), donde el rendimiento puede degradarse de forma notable.
@@ -135,7 +135,7 @@ La comparativa se limita a los datos incluidos en el model card. No hay informac
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/suthakar123/YOLOP
+- Repositorio en Hugging Face: https://huggingface.co/suthakar123/YOLOP
 - Informe tecnico del paper: https://arxiv.org/abs/2108.11250
 - Enlace del paper en el model card (PDF): https://arxiv.org/pdf/1612.07695.pdf
 - Multinet, paper: https://arxiv.org/pdf/1612.07695.pdf

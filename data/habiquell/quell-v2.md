@@ -2,7 +2,7 @@
 
 ## Resumen
 
-quell-v2 es un ajuste fino (fine-tune) del modelo Qwen/Qwen3-4B-Instruct-2507, publicado por el usuario Habiquell en HuggingFace. Se trata de un modelo derivado de un transformer decoder-only denso de aproximadamente 4.000 millones de parametros, entrenado mediante supervisión (SFT) con la librería TRL de HuggingFace sobre la base instruct de Qwen3. El repositorio no incluye información sobre el dataset, los hiperparametros ni el propósito concreto del ajuste, y la model card es prácticamente la plantilla autogenerada por TRL.
+quell-v2 es un ajuste fino (fine-tune) del modelo Qwen/Qwen3-4B-Instruct-2507, publicado por el usuario Habiquell en Hugging Face. Se trata de un modelo derivado de un transformer decoder-only denso de aproximadamente 4.000 millones de parametros, entrenado mediante supervisión (SFT) con la librería TRL de Hugging Face sobre la base instruct de Qwen3. El repositorio no incluye información sobre el dataset, los hiperparametros ni el propósito concreto del ajuste, y la model card es prácticamente la plantilla autogenerada por TRL.
 
 Su relevancia práctica es limitada por el momento: el modelo acumula cero descargas y cero likes, el repositorio ocupa 0,1 GB (pesos en safetensors, presumiblemente en precision reducida o parcialmente subidos), y no se han publicado resultados de evaluación. Cualquier uso en producción debería ir precedido de una validación propia, ya que no hay evidencia empírica de que el ajuste mejore al modelo base en ninguna tarea.
 
@@ -58,17 +58,17 @@ La model card no incluye ninguna tabla de evaluación (MMLU, HumanEval, GSM8K, M
 - VRAM estimada para inferencia (sobre un modelo denso de ~4B parámetros): aproximadamente 8-9 GB en FP16/BF16, 4-5 GB en INT8, 2,5-3,5 GB en cuantización de 4 bits tipo Q4_K_M (los pesos reales del repositorio ocupan 0,1 GB, lo que sugiere una subida parcial o un formato ya comprimido; conviene verificar el contenido antes de planificar el despliegue).
 - GPU recomendadas: NVIDIA A100 40/80 GB, H100, L40S o A10G para servicio en producción con FP16; RTX 4090, RTX 4080, RTX 3090 o RTX 4070 Ti para inferencia en FP16 o INT8 en local.
 - Compatibilidad con GPU de consumo: sí. En cuantización de 4 bits cabe en GPUs con 6-8 GB de VRAM (RTX 3060, RTX 2060 12 GB, RTX 4060 Ti 8 GB). En CPU, con llama.cpp y Q4, funciona de forma usable aunque con latencia mayor.
-- Opciones de despliegue: vLLM, Text Generation Inference (TGI), llama.cpp, Ollama y transformers como referencia. El tag endpoints_compatible del repositorio sugiere compatibilidad con los Inference Endpoints de HuggingFace.
+- Opciones de despliegue: vLLM, Text Generation Inference (TGI), llama.cpp, Ollama y transformers como referencia. El tag endpoints_compatible del repositorio sugiere compatibilidad con los Inference Endpoints de Hugging Face.
 - Latencia y throughput: no disponibles. No hay mediciones publicadas de tokens por segundo, TTFT ni rendimiento bajo batching.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| quell-v2 | ~4B (heredados) | No disponible (base: 262.144 tokens según Qwen) | No disponible | HuggingFace, 0 descargas | Fine-tune SFT sin evaluación publicada |
-| Qwen/Qwen3-4B-Instruct-2507 | ~4B | 262.144 tokens nativos (ampliable) | Apache-2.0 | HuggingFace, ampliamente usado | Modelo base de quell-v2; con benchmarks publicados por Qwen |
-| meta-llama/Llama-3.2-3B-Instruct | ~3,2B | 128.000 tokens | Licencia comunitaria de Llama 3.2 | HuggingFace, muy extendido | Alternativa de tamaño similar; requiere aceptar la licencia |
-| google/gemma-3-4b-it | ~4B | 128.000 tokens | Licencia de Gemma | HuggingFace | Alternativa multimodal de tamaño comparable |
+| quell-v2 | ~4B (heredados) | No disponible (base: 262.144 tokens según Qwen) | No disponible | Hugging Face, 0 descargas | Fine-tune SFT sin evaluación publicada |
+| Qwen/Qwen3-4B-Instruct-2507 | ~4B | 262.144 tokens nativos (ampliable) | Apache-2.0 | Hugging Face, ampliamente usado | Modelo base de quell-v2; con benchmarks publicados por Qwen |
+| meta-llama/Llama-3.2-3B-Instruct | ~3,2B | 128.000 tokens | Licencia comunitaria de Llama 3.2 | Hugging Face, muy extendido | Alternativa de tamaño similar; requiere aceptar la licencia |
+| google/gemma-3-4b-it | ~4B | 128.000 tokens | Licencia de Gemma | Hugging Face | Alternativa multimodal de tamaño comparable |
 
 La comparación relevante es contra el propio modelo base: al no existir evaluación de quell-v2, no hay evidencia de mejora sobre Qwen3-4B-Instruct-2507, que además cuenta con documentación completa y licencia Apache-2.0 declarada.
 
@@ -87,7 +87,7 @@ La comparación relevante es contra el propio modelo base: al no existir evaluac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Habiquell/quell-v2
+- Modelo en Hugging Face: https://huggingface.co/Habiquell/quell-v2
 - Modelo base Qwen/Qwen3-4B-Instruct-2507: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Documentación de TRL (SFTTrainer): https://huggingface.co/docs/trl/sft_trainer

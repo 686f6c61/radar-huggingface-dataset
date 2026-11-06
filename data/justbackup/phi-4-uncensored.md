@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Phi-4 (base) | 14,7 B | 128k (no confirmado en ficha) | MIT | HuggingFace | Alineado, con filtros de seguridad |
-| Phi-4-Uncensored | 14,7 B | no disponible | MIT | HuggingFace | Sin filtros, solo texto |
-| Dolphin 2.9 (Llama 3 8B) | 8 B | 8k | Apache 2.0 | HuggingFace | Modelo des-censurado conocido, más pequeño |
+| Phi-4 (base) | 14,7 B | 128k (no confirmado en ficha) | MIT | Hugging Face | Alineado, con filtros de seguridad |
+| Phi-4-Uncensored | 14,7 B | no disponible | MIT | Hugging Face | Sin filtros, solo texto |
+| Dolphin 2.9 (Llama 3 8B) | 8 B | 8k | Apache 2.0 | Hugging Face | Modelo des-censurado conocido, más pequeño |
 
 No se dispone de comparativas directas de rendimiento, ya que este modelo no publica benchmarks. La comparación se basa en características generales.
 
@@ -76,6 +76,6 @@ No se dispone de comparativas directas de rendimiento, ya que este modelo no pub
 
 ## Enlaces
 
-- [Repositorio del modelo en HuggingFace](https://huggingface.co/Justbackup/Phi-4-Uncensored)
+- [Repositorio del modelo en Hugging Face](https://huggingface.co/Justbackup/Phi-4-Uncensored)
 - [Modelo base: microsoft/phi-4](https://huggingface.co/microsoft/phi-4)
 - [Versión GGUF del modelo (externo)](https://huggingface.co/ccharnkij/Phi-4-Uncensored-GGUF)

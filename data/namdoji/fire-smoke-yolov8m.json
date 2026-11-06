@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "Namdoji/fire-smoke-yolov8m",
+  "slug": "namdoji-fire-smoke-yolov8m",
+  "author": "Namdoji",
+  "url": "https://huggingface.co/Namdoji/fire-smoke-yolov8m",
+  "created_at": "2026-11-05T05:46:18.000Z",
+  "updated_at": "2026-11-05T14:27:52.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "yolov8",
+    "object-detection",
+    "fire-detection",
+    "smoke-detection",
+    "pytorch",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 110,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 154718584,
+  "storage_human": "155 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NamDoji Fire & Smoke YOLOv8m - Hugging Face",
+      "url": "https://huggingface.co/Namdoji/fire-smoke-yolov8m",
+      "snippet": "Instructions to use Namdoji/fire-smoke-yolov8m with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries ultralytics How to use Namdoji/fire-smoke-yolov8m with ultralytics:"
+    },
+    {
+      "title": "PCCC YOLOv8 Fire Smoke Detection - a Hugging Face Space by Namdoji",
+      "url": "https://huggingface.co/spaces/Namdoji/PCCC-yolo",
+      "snippet": "Upload a photo, set a confidence level, and the app will highlight any fire or smoke it finds. It draws colored boxes around each detection and provides a quick summary of how many fires and smoke ..."
+    }
+  ]
+}

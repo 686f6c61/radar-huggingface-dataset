@@ -74,7 +74,7 @@ La comparativa se limita a las variantes del mismo modelo base. No se dispone de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/liodon-ai/TinyLlama-1.1B-Chat-v1.0-FP8
+- Modelo en Hugging Face: https://huggingface.co/liodon-ai/TinyLlama-1.1B-Chat-v1.0-FP8
 - Modelo base: https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0
 - Variante GGUF imatrix: https://huggingface.co/liodon-ai/TinyLlama-1.1B-Chat-v1.0-imatrix-GGUF
 - Repositorio del proyecto TinyLlama: https://github.com/mirseo/tinyllama

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`moody-moss-mix` es un modelo publicado en HuggingFace por el usuario `catlover1937` bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción funcional: únicamente incluye el bloque de metadatos con la licencia, sin información sobre arquitectura, tamaño, datos de entrenamiento, idiomas o capacidades. Se desconoce, por tanto, qué problema resuelve o qué tipo de modelo es (texto, visión, mixto, etc.).
+`moody-moss-mix` es un modelo publicado en Hugging Face por el usuario `catlover1937` bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción funcional: únicamente incluye el bloque de metadatos con la licencia, sin información sobre arquitectura, tamaño, datos de entrenamiento, idiomas o capacidades. Se desconoce, por tanto, qué problema resuelve o qué tipo de modelo es (texto, visión, mixto, etc.).
 
 El repositorio no registra descargas ni likes en el momento de la consulta, y su pipeline no está declarado. La fecha de creación y de última actualización coinciden (2026-11-04T16:38:13Z), lo que sugiere una publicación única sin iteraciones posteriores visibles.
 
@@ -66,5 +66,5 @@ No disponible. La ausencia de datos sobre parámetros, contexto y rendimiento im
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/catlover1937/moody-moss-mix
+- Hugging Face: https://huggingface.co/catlover1937/moody-moss-mix
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

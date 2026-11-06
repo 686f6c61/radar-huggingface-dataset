@@ -103,7 +103,7 @@ No disponible. La busqueda web realizada no devolvio informacion util sobre este
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| microduck-move-a-sneaky-duck-that-walks-in | No disponible | No aplicable | Score 1.0 del juez (PASS) | Apache-2.0 | HuggingFace, 0 descargas |
+| microduck-move-a-sneaky-duck-that-walks-in | No disponible | No aplicable | Score 1.0 del juez (PASS) | Apache-2.0 | Hugging Face, 0 descargas |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -121,7 +121,7 @@ No disponible. La busqueda web realizada no devolvio informacion util sobre este
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tfrere/microduck-move-a-sneaky-duck-that-walks-in
+- Modelo en Hugging Face: https://huggingface.co/tfrere/microduck-move-a-sneaky-duck-that-walks-in
 - Perfil del autor: https://huggingface.co/tfrere
 - Microduck Academy (Space de entrenamiento): https://huggingface.co/spaces/tfrere/microduck
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck

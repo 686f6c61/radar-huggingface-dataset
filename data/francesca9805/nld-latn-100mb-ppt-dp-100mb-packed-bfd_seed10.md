@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/nld-latn-100mb-ppt-Dp-100mb-packed-bfd_seed10` es un ajuste fino (fine-tuning) supervisado del modelo base `goldfish-models/nld_latn_100mb`, desarrollado por el usuario de HuggingFace francesca9805. Se trata de un modelo de generación de texto de arquitectura GPT-2 con 124.770.816 parámetros totales (aproximadamente 125 millones), lo que lo sitúa en la categoría de modelos pequeños o "small language models" (SLM). El nombre del identificador y del modelo base apuntan a un modelo monolingüe centrado en neerlandés (código `nld_latn`, es decir, neerlandés en escritura latina), entrenado sobre un corpus del orden de 100 MB.
+El modelo `francesca9805/nld-latn-100mb-ppt-Dp-100mb-packed-bfd_seed10` es un ajuste fino (fine-tuning) supervisado del modelo base `goldfish-models/nld_latn_100mb`, desarrollado por el usuario de Hugging Face francesca9805. Se trata de un modelo de generación de texto de arquitectura GPT-2 con 124.770.816 parámetros totales (aproximadamente 125 millones), lo que lo sitúa en la categoría de modelos pequeños o "small language models" (SLM). El nombre del identificador y del modelo base apuntan a un modelo monolingüe centrado en neerlandés (código `nld_latn`, es decir, neerlandés en escritura latina), entrenado sobre un corpus del orden de 100 MB.
 
 El problema que aborda es el de servir como artefacto de investigación dentro de un experimento comparativo sobre tokenizadores y protocolos de entrenamiento (el identificador incluye fragmentos como `ppt`, `Dp-100mb-packed`, `bfd` y `seed10`, que sugieren variantes de configuración experimental y una semilla concreta). No se presenta como un modelo de propósito general ni como un producto listo para producción, sino como un punto de control (checkpoint) reproducible dentro de una línea de trabajo académica, en este caso vinculada a la Universidad de Groninga según la URL del registro de Weights & Biases.
 
@@ -39,7 +39,7 @@ En cuanto al entrenamiento, la model card indica unicamente que se realizo un aj
 - No hay evidencia de capacidades de agente, razonamiento multi-paso planificado ni uso de herramientas externas.
 - No hay evidencia de modo "thinking", capacidades de vision, audio ni multimodalidad.
 - El soporte multilingue no esta declarado en los metadatos; el modelo base es monolingue.
-- Al estar etiquetado como `endpoints_compatible` y `text-generation-inference`, el repositorio es desplegable mediante HuggingFace Text Generation Inference con la interfaz estandar.
+- Al estar etiquetado como `endpoints_compatible` y `text-generation-inference`, el repositorio es desplegable mediante Hugging Face Text Generation Inference con la interfaz estandar.
 
 ## Casos de uso
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM de inferencia: por debajo de 1 GB en fp16 para lotes pequenos con contexto corto; en la practica cabe en cualquier GPU con 2 GB o mas.
 - GPU recomendadas: cualquier GPU consumer moderna es sobredimensionada para este modelo (RTX 3060, RTX 4060, RTX 4090). Tambien funciona en GPUs de gama baja (GTX 1650, T4) e incluso en CPU, dado el reducido numero de parametros.
 - Cabe holgadamente en GPU consumer: si, en cualquier GPU con al menos 2 GB de VRAM, y en CPU con 1-2 GB de RAM libre.
-- Opciones de despliegue: `transformers` con `pipeline`, HuggingFace Text Generation Inference (etiqueta `text-generation-inference`), endpoints compatibles (etiqueta `endpoints_compatible`) y servidores propios basados en PyTorch. No se publican pesos GGUF, por lo que su uso en llama.cpp u Ollama requeriria una conversion previa a partir de los safetensors.
+- Opciones de despliegue: `transformers` con `pipeline`, Hugging Face Text Generation Inference (etiqueta `text-generation-inference`), endpoints compatibles (etiqueta `endpoints_compatible`) y servidores propios basados en PyTorch. No se publican pesos GGUF, por lo que su uso en llama.cpp u Ollama requeriria una conversion previa a partir de los safetensors.
 - Latencia y throughput estimados: no disponible. No se publican mediciones de tokens por segundo ni de latencia en la informacion proporcionada.
 - Nota de precision: no se especifica si los pesos publicados estan en fp32 o fp16, por lo que el consumo real de memoria puede variar aproximadamente entre 250 y 500 MB.
 
@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Ajuste | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| francesca9805/nld-latn-100mb-ppt-Dp-100mb-packed-bfd_seed10 | 124,77 M | no disponible | SFT con TRL | no declarado (base neerlandesa) | no disponible | HuggingFace, 0 descargas |
-| goldfish-models/nld_latn_100mb | no disponible (modelo base) | no disponible | preentrenamiento | neerlandes (`nld_latn`) | no disponible en esta busqueda | HuggingFace, como modelo base |
+| francesca9805/nld-latn-100mb-ppt-Dp-100mb-packed-bfd_seed10 | 124,77 M | no disponible | SFT con TRL | no declarado (base neerlandesa) | no disponible | Hugging Face, 0 descargas |
+| goldfish-models/nld_latn_100mb | no disponible (modelo base) | no disponible | preentrenamiento | neerlandes (`nld_latn`) | no disponible en esta busqueda | Hugging Face, como modelo base |
 | GPT-2 small | 124,44 M | 1024 tokens | preentrenamiento | ingles | MIT | ampliamente disponible |
 | TinyLlama-1.1B | 1,1 B | 2048 tokens | preentrenamiento + SFT | ingles predominantemente | Apache 2.0 | ampliamente disponible |
 
@@ -85,7 +85,7 @@ La comparacion es orientativa: la fila correspondiente al modelo base se incluye
 - El corpus de entrenamiento es del orden de 100 MB, un volumen muy reducido que restringe severamente la cobertura lexica y tematica, incluso dentro del neerlandes.
 - No hay informacion sobre sesgos: no se documenta la composicion del dataset ni se han publicado evaluaciones de sesgo, toxicidad o representatividad.
 - La model card no declara idiomas soportados; el uso en idiomas distintos del neerlandes producira, con alta probabilidad, resultados degenerados o mezcla de idiomas.
-- La licencia no esta disponible: la model card contiene el marcador `licence: license` sin texto legal, y los metadatos de HuggingFace no indican licencia. No debe asumirse permiso de uso comercial; es necesario contactar con el autor antes de cualquier despliegue productivo.
+- La licencia no esta disponible: la model card contiene el marcador `licence: license` sin texto legal, y los metadatos de Hugging Face no indican licencia. No debe asumirse permiso de uso comercial; es necesario contactar con el autor antes de cualquier despliegue productivo.
 - El ejemplo oficial de la model card plantea una pregunta en ingles ("If you had a time machine...") sobre un modelo presumiblemente neerlandes, lo que no garantiza un comportamiento correcto en ese idioma.
 - No hay garantias de calidad del ajuste SFT: se desconoce el dataset, el numero de pasos y si hubo filtrado de datos, por lo que el comportamiento conversacional puede ser inestable.
 - Al tratarse de un checkpoint de investigacion con 0 descargas y 0 interacciones, no existe validacion por parte de la comunidad ni mantenimiento esperado.
@@ -94,7 +94,7 @@ La comparacion es orientativa: la fila correspondiente al modelo base se incluye
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/nld-latn-100mb-ppt-Dp-100mb-packed-bfd_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/nld-latn-100mb-ppt-Dp-100mb-packed-bfd_seed10
 - Modelo base: https://huggingface.co/goldfish-models/nld_latn_100mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/3vkfs5lz

@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "carlogonzalesman/swin-t-classification",
+  "slug": "carlogonzalesman-swin-t-classification",
+  "author": "carlogonzalesman",
+  "url": "https://huggingface.co/carlogonzalesman/swin-t-classification",
+  "created_at": "2026-11-06T11:10:34.000Z",
+  "updated_at": "2026-11-06T11:10:39.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "swin_t",
+    "pytorch",
+    "swin-t",
+    "classification",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Diffusion-generated images sharpen AI detection of faulty power grid",
+      "url": "https://scienmag.com/diffusion-generated-images-sharpen-ai-detection-of-faulty-power-grid-insulators/",
+      "snippet": "Researchers combined a conditional diffusion model, a hypertuned YOLO26x detector and a Swin-V2-B classifier with a new SHAP-CAM explainability method to detect and classify faulty power grid insulators, achieving an F1-score of 0.98149 and mAP@ of 0.98951."
+    },
+    {
+      "title": "anilagarwal/swin-t-classification · Hugging Face",
+      "url": "https://huggingface.co/anilagarwal/swin-t-classification",
+      "snippet": "Swin T for Classification Overview A small Swin T implementation for Classification, packaged with an explicit configuration and an initialization checkpoint. The small variant is a reproducible starting point, not a trained model release."
+    }
+  ]
+}

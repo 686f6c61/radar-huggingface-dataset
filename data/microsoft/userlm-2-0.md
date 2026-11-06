@@ -2,7 +2,7 @@
 
 ## Resumen
 
-UserLM-2.0 es un modelo de lenguaje generativo de 8.030.277.632 parámetros desarrollado por Microsoft Research (Omer Gul, Philippe Laban, Tanya Goyal y Jennifer Neville) y publicado en HuggingFace bajo licencia MIT. A diferencia de los modelos convencionales entrenados para actuar como asistente, UserLM-2.0 se especializa en generar el lado del **usuario** en una conversación usuario-IA, condicionado por una intención de tarea que describe el objetivo de alto nivel del usuario simulado.
+UserLM-2.0 es un modelo de lenguaje generativo de 8.030.277.632 parámetros desarrollado por Microsoft Research (Omer Gul, Philippe Laban, Tanya Goyal y Jennifer Neville) y publicado en Hugging Face bajo licencia MIT. A diferencia de los modelos convencionales entrenados para actuar como asistente, UserLM-2.0 se especializa en generar el lado del **usuario** en una conversación usuario-IA, condicionado por una intención de tarea que describe el objetivo de alto nivel del usuario simulado.
 
 El modelo parte del backbone `meta-llama/Llama-3.1-8B-Instruct` y se afina sobre el dataset `allenai/WildChat-4.8M` para tres funciones concretas: generar un turno inicial del usuario a partir de una intención, generar turnos de seguimiento a partir del historial conversacional, y emitir el token de control `<|endconversation|>` cuando determina que el objetivo se ha cumplido. Su relevancia actual radica en la evaluación de asistentes: permite simular usuarios realistas a escala para medir el comportamiento de un asistente antes de exponerlo a usuarios humanos, un cuello de botella clásico en el desarrollo de sistemas conversacionales.
 
@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Rol simulado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| microsoft/UserLM-2.0 | 8,03B | 128k (heredado) | Usuario | MIT | HuggingFace |
-| meta-llama/Llama-3.1-8B-Instruct | 8,03B | 128k | Asistente | Llama 3.1 Community | HuggingFace |
-| Mistral-7B-Instruct | ~7,2B | 32k | Asistente | Apache 2.0 | HuggingFace |
+| microsoft/UserLM-2.0 | 8,03B | 128k (heredado) | Usuario | MIT | Hugging Face |
+| meta-llama/Llama-3.1-8B-Instruct | 8,03B | 128k | Asistente | Llama 3.1 Community | Hugging Face |
+| Mistral-7B-Instruct | ~7,2B | 32k | Asistente | Apache 2.0 | Hugging Face |
 
 La comparación directa con otros simuladores de usuario publicados no está disponible en la información proporcionada. Frente a Llama-3.1-8B-Instruct, UserLM-2.0 comparte backbone y tamaño pero invierte el rol generado (usuario en lugar de asistente) y añade el token de control `<|endconversation|>`; frente a Mistral-7B-Instruct, ofrece mayor contexto teórico y licencia MIT más permisiva, a costa de estar especializado en una única tarea.
 
@@ -87,7 +87,7 @@ La comparación directa con otros simuladores de usuario publicados no está dis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/microsoft/UserLM-2.0
+- Modelo en Hugging Face: https://huggingface.co/microsoft/UserLM-2.0
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/allenai/WildChat-4.8M
 - Paper: anunciado como "forthcoming" en la model card; sin enlace arXiv disponible en la información proporcionada.

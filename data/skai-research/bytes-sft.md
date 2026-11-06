@@ -100,7 +100,7 @@ En rendimiento no hay comparacion posible: los tres modelos alternativos tienen 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/skai-research/bytes-sft
+- Modelo en Hugging Face: https://huggingface.co/skai-research/bytes-sft
 - Modelo base: https://huggingface.co/skai-research/bytes-base
 - Articulo: https://arxiv.org/abs/2608.15454
 - Codigo: https://github.com/skai-research/lca-multibyte

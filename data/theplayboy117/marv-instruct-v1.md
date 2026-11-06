@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Marv-Instruct-v1 es un modelo de generacion de texto en ingles publicado por el usuario theplayboy117 en HuggingFace. Se trata de un ajuste fino (fine-tuning) supervisado del modelo theplayboy117/Marv-Instruct, que a su vez pertenece a la familia Qwen2 segun las etiquetas del repositorio. El modelo cuenta con 7.615.616.512 parametros (aproximadamente 7,6 mil millones) almacenados en formato safetensors, lo que lo situa en la categoria de modelos de 7B-8B, el rango mas habitual para despliegue en una sola GPU de gama alta o en configuraciones cuantizadas sobre hardware de consumo.
+Marv-Instruct-v1 es un modelo de generacion de texto en ingles publicado por el usuario theplayboy117 en Hugging Face. Se trata de un ajuste fino (fine-tuning) supervisado del modelo theplayboy117/Marv-Instruct, que a su vez pertenece a la familia Qwen2 segun las etiquetas del repositorio. El modelo cuenta con 7.615.616.512 parametros (aproximadamente 7,6 mil millones) almacenados en formato safetensors, lo que lo situa en la categoria de modelos de 7B-8B, el rango mas habitual para despliegue en una sola GPU de gama alta o en configuraciones cuantizadas sobre hardware de consumo.
 
-El problema que resuelve es acotado: ofrecer una variante conversacional ("conversational") del modelo base Marv-Instruct, entrenada con la libreria Unsloth y TRL de HuggingFace. El autor indica que el entrenamiento fue "2x mas rapido" gracias a Unsloth, un framework de fine-tuning optimizado en memoria y velocidad. No se documentan en la ficha ni el volumen de tokens de entrenamiento, ni la composicion del dataset, ni si se aplicaron tecnicas de alineacion posteriores como RLHF o DPO.
+El problema que resuelve es acotado: ofrecer una variante conversacional ("conversational") del modelo base Marv-Instruct, entrenada con la libreria Unsloth y TRL de Hugging Face. El autor indica que el entrenamiento fue "2x mas rapido" gracias a Unsloth, un framework de fine-tuning optimizado en memoria y velocidad. No se documentan en la ficha ni el volumen de tokens de entrenamiento, ni la composicion del dataset, ni si se aplicaron tecnicas de alineacion posteriores como RLHF o DPO.
 
 La relevancia de esta ficha es limitada pero ilustrativa: se trata de un modelo con 0 descargas y 0 likes en el momento de la consulta, sin benchmarks publicados y con documentacion minima (la model card es practicamente la plantilla por defecto de Unsloth). Resulta util como ejemplo de pipeline de fine-tuning ligero sobre Qwen2 con licencia Apache 2.0, pero carece de evidencia empirica que respalde su calidad frente a alternativas establecidas.
 
@@ -29,7 +29,7 @@ La relevancia de esta ficha es limitada pero ilustrativa: se trata de un modelo 
 
 La informacion disponible no describe la arquitectura interna mas alla de la etiqueta `qwen2`, que situa el modelo en la familia Qwen2 de Alibaba. Se trata por tanto de un transformer decoder-only con atencion causal, normalizacion RMSNorm y las optimizaciones habituales de esa familia (entre ellas QKV bias y rotary position embeddings). El recuento real de parametros, 7,6 mil millones, es coherente con una configuracion del orden de 28 capas, 28 cabezas de atencion y una dimension oculta de 3584, aunque la model card no confirma ninguna de estas cifras, por lo que deben tratarse como no disponibles.
 
-En cuanto al entrenamiento, la unica informacion aportada es que el modelo fue afinado con Unsloth y la libreria TRL de HuggingFace, con una mejora de velocidad declarada de 2x respecto a un entrenamiento estandar. No se especifica el numero de tokens, la composicion del dataset, la longitud de secuencia empleada, la tasa de aprendizaje ni si hubo fases de RLHF, DPO o cualquier otro metodo de alineacion. Tampoco se documenta ninguna innovacion tecnica adicional como decodificacion especulativa, atencion lineal o modos de razonamiento explicito.
+En cuanto al entrenamiento, la unica informacion aportada es que el modelo fue afinado con Unsloth y la libreria TRL de Hugging Face, con una mejora de velocidad declarada de 2x respecto a un entrenamiento estandar. No se especifica el numero de tokens, la composicion del dataset, la longitud de secuencia empleada, la tasa de aprendizaje ni si hubo fases de RLHF, DPO o cualquier otro metodo de alineacion. Tampoco se documenta ninguna innovacion tecnica adicional como decodificacion especulativa, atencion lineal o modos de razonamiento explicito.
 
 ## Capacidades
 
@@ -48,7 +48,7 @@ En cuanto al entrenamiento, la unica informacion aportada es que el modelo fue a
 - Generacion de texto de relleno en pruebas de integracion: util para validar infraestructura de serving (vLLM, TGI, Ollama) y medir latencias sin depender de un modelo de produccion.
 - Experimentacion academica con tecnicas de cuantizacion: gracias a las etiquetas `4-bit` y `bitsandbytes`, resulta un candidato para comparar calidad entre pesos completos y cuantizados en un mismo modelo.
 - Investigacion sobre pipelines de Unsloth: al haber sido entrenado con ese framework, sirve como caso de estudio reproducible para evaluar el flujo Unsloth + TRL de extremo a extremo.
-- Educacion y demostraciones: para mostrar en clase como se publica un modelo afinado en HuggingFace, incluyendo la estructura de repositorio, etiquetas y model card.
+- Educacion y demostraciones: para mostrar en clase como se publica un modelo afinado en Hugging Face, incluyendo la estructura de repositorio, etiquetas y model card.
 
 ## Benchmarks y rendimiento
 
@@ -91,10 +91,10 @@ Los datos de las alternativas corresponden a especificaciones publicas ampliamen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/theplayboy117/Marv-Instruct-v1
+- Modelo en Hugging Face: https://huggingface.co/theplayboy117/Marv-Instruct-v1
 - Modelo base: https://huggingface.co/theplayboy117/Marv-Instruct
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
-- Perfil del autor en HuggingFace: https://huggingface.co/theplayboy117
+- Perfil del autor en Hugging Face: https://huggingface.co/theplayboy117
 - Otros modelos del mismo autor (iz-instruct): https://huggingface.co/models?other=base_model:adapter:theplayboy117/iz-instruct
 - Ficha de Iz Instruct Mini en LLM Explorer: https://llm-explorer.com/model/theplayboy117%2Fiz-instruct-mini,6oMZBX8o1rFy7eOgLvP2HQ
 - Ficha de Iz Instruct en LLM Explorer: https://llm-explorer.com/model/theplayboy117%2Fiz-instruct,cIoJ1Y7NYCukash99Foof

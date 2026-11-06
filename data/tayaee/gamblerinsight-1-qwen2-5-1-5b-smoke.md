@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GamblerInsight Smoke (`tayaee/gamblerinsight-1-qwen2.5-1.5b-smoke`) es un checkpoint de prueba de humo (smoke test) desarrollado por el usuario tayaee, afinado a partir de `Qwen/Qwen2.5-1.5B-Instruct`. Su proposito no es ofrecer un asistente financiero operativo, sino validar de extremo a extremo una tuberia de entrenamiento, fusion de adaptadores LoRA en un checkpoint safetensors estandar, publicacion en HuggingFace Hub y servicio con vLLM. El modelo se entreno en una plataforma DGX Spark GB10.
+GamblerInsight Smoke (`tayaee/gamblerinsight-1-qwen2.5-1.5b-smoke`) es un checkpoint de prueba de humo (smoke test) desarrollado por el usuario tayaee, afinado a partir de `Qwen/Qwen2.5-1.5B-Instruct`. Su proposito no es ofrecer un asistente financiero operativo, sino validar de extremo a extremo una tuberia de entrenamiento, fusion de adaptadores LoRA en un checkpoint safetensors estandar, publicacion en Hugging Face Hub y servicio con vLLM. El modelo se entreno en una plataforma DGX Spark GB10.
 
 El modelo hereda la arquitectura transformer decoder-only de Qwen2.5 con 1.543.714.304 parametros totales (aproximadamente 1,5 mil millones) y un contexto nativo de 32.768 tokens, aunque la model card no documenta explicitamente ese dato y se infiere del modelo base. Incorpora un formato conversacional especifico de dos turnos orientado a tool calling financiero, con bloques `<think>...</think>` y `<forecast_json>...</forecast_json>` para razonamiento estructurado y pronosticos legibles por maquina.
 
@@ -44,7 +44,7 @@ El entrenamiento fue deliberadamente minimo: `max_steps=10`, learning rate de 0,
 
 ## Casos de uso
 
-- Validacion de pipeline de entrenamiento: sirve para comprobar que el flujo LoRA, merge de adaptadores, subida a HuggingFace Hub y servicio con vLLM funciona de extremo a extremo antes de lanzar un entrenamiento real.
+- Validacion de pipeline de entrenamiento: sirve para comprobar que el flujo LoRA, merge de adaptadores, subida a Hugging Face Hub y servicio con vLLM funciona de extremo a extremo antes de lanzar un entrenamiento real.
 - Pruebas de integracion de tool calling: permite verificar que un cliente OpenAI-compatible recibe correctamente llamadas a funciones con el parser `hermes` y que las observaciones se inyectan en el turno siguiente.
 - Desarrollo de agentes financieros experimentales: util como banco de pruebas para disenar el esquema de herramientas (`lookup_stock_price`, `lookup_technical_indicators`) y el formato de salida estructurada antes de sustituir el modelo por uno mayor.
 - Test de contrato de API: al exponer un endpoint compatible con OpenAI, permite validar el contrato de mensajes, herramientas y respuestas en un entorno de staging sin coste de GPU elevado.
@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| gamblerinsight-1-qwen2.5-1.5b-smoke | 1,54B | no disponible (base: 32.768) | Apache-2.0 | Tool calling financiero (smoke test) | HuggingFace |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,54B | 32.768 | Apache-2.0 | Instruccion general | HuggingFace |
-| Qwen/Qwen2.5-3B-Instruct | 3,09B | 32.768 | Apache-2.0 (Qwen license en algunos tamanos) | Instruccion general | HuggingFace |
-| meta-llama/Llama-3.2-1B-Instruct | 1,24B | 131.072 | Llama 3.2 Community License | Instruccion general | HuggingFace |
+| gamblerinsight-1-qwen2.5-1.5b-smoke | 1,54B | no disponible (base: 32.768) | Apache-2.0 | Tool calling financiero (smoke test) | Hugging Face |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,54B | 32.768 | Apache-2.0 | Instruccion general | Hugging Face |
+| Qwen/Qwen2.5-3B-Instruct | 3,09B | 32.768 | Apache-2.0 (Qwen license en algunos tamanos) | Instruccion general | Hugging Face |
+| meta-llama/Llama-3.2-1B-Instruct | 1,24B | 131.072 | Llama 3.2 Community License | Instruccion general | Hugging Face |
 
 La comparativa debe interpretarse con cautela: el modelo de tayaee es un derivado directo de Qwen2.5-1.5B-Instruct con un ajuste minimo, por lo que su rendimiento general es esencialmente el del modelo base, mientras que su especializacion en tool calling financiero es meramente nominal dado el escaso entrenamiento. Frente a alternativas como Llama-3.2-1B-Instruct, ofrece mayor contexto nativo (32.768 frente a 131.072 en Llama, aunque este ultimo es mayor) y licencia Apache-2.0 mas permisiva que la Llama Community License.
 
@@ -90,7 +90,7 @@ La comparativa debe interpretarse con cautela: el modelo de tayaee es un derivad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tayaee/gamblerinsight-1-qwen2.5-1.5b-smoke
+- Modelo en Hugging Face: https://huggingface.co/tayaee/gamblerinsight-1-qwen2.5-1.5b-smoke
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Repositorio Qwen2.5: https://github.com/QwenLM/Qwen2.5
 - Documentacion de vLLM sobre tool calling: https://docs.vllm.ai/en/latest/features/tool_calling.html

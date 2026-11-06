@@ -63,16 +63,16 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otr
 - VRAM estimada para inferencia: en fp32, unos 1,2 GB de pesos más activaciones; en fp16/bf16, aproximadamente 0,6 GB. Con batch pequeño cabe holgadamente en GPUs de 8 GB.
 - GPU recomendadas: cualquier GPU con al menos 8 GB para uso interactivo; A100, H100 o L4 para indexación a gran escala con batches grandes.
 - Cabe en GPU de consumo: sí, en RTX 3060, 4060, 4070, 4080 y 4090, así como en muchas iGPU con suficiente memoria compartida para batches reducidos.
-- Opciones de despliegue: `sentence-transformers` (requiere `trust_remote_code=True`), Text Embeddings Inference (etiqueta `text-embeddings-inference`), endpoints compatibles de HuggingFace. No se documenta soporte GGUF ni Ollama.
+- Opciones de despliegue: `sentence-transformers` (requiere `trust_remote_code=True`), Text Embeddings Inference (etiqueta `text-embeddings-inference`), endpoints compatibles de Hugging Face. No se documenta soporte GGUF ni Ollama.
 - Latencia y throughput: no disponibles en la información proporcionada. Como referencia estructural, al ser un encoder de 305 M de parámetros con entradas de hasta 512 tokens, el coste por lote es bajo en GPU moderna, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| plots-gte-multilingual-base | 305 M | 512 tokens | Embeddings multilingües afinados para similitud narrativa | Apache 2.0 | HuggingFace |
-| Alibaba-NLP/gte-multilingual-base | no disponible en la información | no disponible en la información | Embeddings multilingües de propósito general | Apache 2.0 | HuggingFace |
-| Otros modelos de embeddings multilingües (p. ej. familia BGE-M3, E5 multilingual) | no disponible en la información | no disponible en la información | Embeddings multilingües de propósito general | no disponible en la información | HuggingFace |
+| plots-gte-multilingual-base | 305 M | 512 tokens | Embeddings multilingües afinados para similitud narrativa | Apache 2.0 | Hugging Face |
+| Alibaba-NLP/gte-multilingual-base | no disponible en la información | no disponible en la información | Embeddings multilingües de propósito general | Apache 2.0 | Hugging Face |
+| Otros modelos de embeddings multilingües (p. ej. familia BGE-M3, E5 multilingual) | no disponible en la información | no disponible en la información | Embeddings multilingües de propósito general | no disponible en la información | Hugging Face |
 
 La comparación cuantitativa disponible se limita al modelo base: el fine-tuning mejora NS acc. de 0,603 a 0,637, PLOTS-IR Full de 0,890 a 0,991, PLOTS-IR Full M de 0,683 a 0,871, First de 0,645 a 0,816 y ToT nDCG@10 de 0,099 a 0,205, con un descenso en Last M (de 0,090 a 0,088). No hay datos publicados frente a otras familias de embeddings en la información disponible.
 
@@ -89,7 +89,7 @@ La comparación cuantitativa disponible se limita al modelo base: el fine-tuning
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jgmorenof/plots-gte-multilingual-base
+- Modelo en Hugging Face: https://huggingface.co/Jgmorenof/plots-gte-multilingual-base
 - Dataset PLOTS: https://huggingface.co/datasets/Jgmorenof/PLOTS
 - Modelo base: https://huggingface.co/Alibaba-NLP/gte-multilingual-base
 - Cita del dataset (BibTeX en la model card): Moreno, Hamdi, Boros, Jatowt, Bordea, González-Gallardo y Doucet, 2026, "PLOTS -- Same Story, Different Words: Paired Plot Outlines for Narrative Similarity and Retrieval"

@@ -69,13 +69,13 @@ La principal diferencia es el idioma: este modelo esta fine-tuneado para filipin
 - Requiere un speaker embedding externo; sin el, el modelo no puede generar audio. Esto anade complejidad a la integracion.
 - La calidad de la voz puede ser inferior a la de sistemas TTS comerciales o modelos mas grandes (no hay datos objetivos que lo confirmen, pero es una limitacion inherente a SpeechT5).
 - Solo esta confirmado para filipino; aunque el modelo base podria generalizar a otros idiomas, no hay garantia y no se ha evaluado.
-- El campo de idiomas en HuggingFace figura como "no disponible", aunque el tag indica filipino; se recomienda verificar el comportamiento con otros idiomas antes de usarlo en produccion.
+- El campo de idiomas en Hugging Face figura como "no disponible", aunque el tag indica filipino; se recomienda verificar el comportamiento con otros idiomas antes de usarlo en produccion.
 - La licencia Apache 2.0 permite uso comercial, pero se debe revisar la licencia del modelo base `sapinsapin/speecht5_tts-pld-fil` y del vocoder HiFi-GAN para asegurar el cumplimiento.
 - Al ser una exportacion ONNX, puede haber diferencias numericas con el modelo original en PyTorch, especialmente con cuantizacion q8.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/internetoftim/speecht5_tts-pld-fil-ONNX
+- Modelo en Hugging Face: https://huggingface.co/internetoftim/speecht5_tts-pld-fil-ONNX
 - Modelo base: https://huggingface.co/sapinsapin/speecht5_tts-pld-fil
 - Modelo original de Microsoft: https://huggingface.co/microsoft/speecht5_tts
 - Paper de SpeechT5: https://arxiv.org/abs/2110.07205

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-CLIP-ViT-B-32-BOORU es un checkpoint publicado en HuggingFace por el usuario bn22 bajo el identificador `bn22/CLIP-ViT-B-32-BOORU`. Por el nombre y la arquitectura declarada (pipeline `zero-shot-image-classification`, librería `transformers`, tag `clip`), se trata de una variante del modelo CLIP (Contrastive Language-Image Pre-training) de OpenAI con backbone ViT-B/32, es decir, un transformer de visión con parches de 32x32 píxeles y un encoder de texto emparejado mediante entrenamiento contrastivo. El sufijo "BOORU" sugiere un ajuste fino orientado a dominios de imágenes tipo "booru" (repositorios de arte/anime etiquetados), aunque la model card no lo confirma.
+CLIP-ViT-B-32-BOORU es un checkpoint publicado en Hugging Face por el usuario bn22 bajo el identificador `bn22/CLIP-ViT-B-32-BOORU`. Por el nombre y la arquitectura declarada (pipeline `zero-shot-image-classification`, librería `transformers`, tag `clip`), se trata de una variante del modelo CLIP (Contrastive Language-Image Pre-training) de OpenAI con backbone ViT-B/32, es decir, un transformer de visión con parches de 32x32 píxeles y un encoder de texto emparejado mediante entrenamiento contrastivo. El sufijo "BOORU" sugiere un ajuste fino orientado a dominios de imágenes tipo "booru" (repositorios de arte/anime etiquetados), aunque la model card no lo confirma.
 
 El modelo resuelve la tarea de clasificación de imágenes zero-shot: dado un conjunto de etiquetas en lenguaje natural, asigna a una imagen la etiqueta más probable sin necesidad de entrenamiento específico para esa tarea. Es relevante para desarrolladores que necesitan un clasificador visual flexible sin reentrenar, y para quienes trabajan con dominios visuales especializados donde un CLIP genérico rinde peor.
 
-El checkpoint tiene 153.639.680 parámetros (dato real de los safetensors) y un tamaño de repositorio de 0,6 GB. La model card es la plantilla automática de HuggingFace sin rellenar: no aporta información sobre datos de entrenamiento, licencia, idiomas ni evaluación. Cualquier dato no verificable se marca como "no disponible" en esta ficha.
+El checkpoint tiene 153.639.680 parámetros (dato real de los safetensors) y un tamaño de repositorio de 0,6 GB. La model card es la plantilla automática de Hugging Face sin rellenar: no aporta información sobre datos de entrenamiento, licencia, idiomas ni evaluación. Cualquier dato no verificable se marca como "no disponible" en esta ficha.
 
 ## Especificaciones tecnicas
 
@@ -61,17 +61,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: el checkpoint en safetensors ocupa 0,6 GB; en fp32 la inferencia requiere aproximadamente 0,6-1 GB de VRAM, y en fp16 aproximadamente 0,3-0,5 GB. Cabe holgadamente en cualquier GPU consumer.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM (GTX 1050 Ti, RTX 2060, RTX 3060, RTX 4090); también funciona en CPU para lotes pequeños.
 - Cabe en consumer GPU: sí, en todas las GPU consumer modernas e incluso en placas integradas con suficiente memoria compartida.
-- Opciones de despliegue: transformers (pipeline `zero-shot-image-classification`), endpoints compatibles de HuggingFace; para serving dedicado, ONNX Runtime o TensorRT son viables dado el tamaño reducido.
+- Opciones de despliegue: transformers (pipeline `zero-shot-image-classification`), endpoints compatibles de Hugging Face; para serving dedicado, ONNX Runtime o TensorRT son viables dado el tamaño reducido.
 - Latencia y throughput estimados: no disponibles; para ViT-B/32 en una GPU consumer se espera del orden de milisegundos por imagen, pero no hay mediciones publicadas para este checkpoint.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto de texto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| bn22/CLIP-ViT-B-32-BOORU | 153,6 M | no disponible | no disponible | HuggingFace |
-| openai/clip-vit-base-patch32 | ~151 M | 77 tokens | MIT (CLIP original) | HuggingFace |
-| openai/clip-vit-large-patch14 | ~428 M | 77 tokens | MIT (CLIP original) | HuggingFace |
-| SigLIP (google/siglip-base-patch16-224) | ~203 M | 64 tokens | Apache 2.0 | HuggingFace |
+| bn22/CLIP-ViT-B-32-BOORU | 153,6 M | no disponible | no disponible | Hugging Face |
+| openai/clip-vit-base-patch32 | ~151 M | 77 tokens | MIT (CLIP original) | Hugging Face |
+| openai/clip-vit-large-patch14 | ~428 M | 77 tokens | MIT (CLIP original) | Hugging Face |
+| SigLIP (google/siglip-base-patch16-224) | ~203 M | 64 tokens | Apache 2.0 | Hugging Face |
 
 La comparación con el CLIP original de OpenAI y con SigLIP es la más relevante por categoría (clasificación zero-shot imagen-texto). No hay datos de rendimiento publicados para este checkpoint que permitan afirmar si supera o no a sus alternativas; el interés principal radica en el posible ajuste fino de dominio que sugiere el sufijo "BOORU". La licencia del checkpoint no está declarada, lo que impide confirmar si hereda la licencia MIT del CLIP original.
 
@@ -88,7 +88,7 @@ La comparación con el CLIP original de OpenAI y con SigLIP es la más relevante
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bn22/CLIP-ViT-B-32-BOORU
+- Hugging Face: https://huggingface.co/bn22/CLIP-ViT-B-32-BOORU
 - Paper de referencia CLIP (citado en tags): https://arxiv.org/abs/1910.09700
 - Repositorio oficial CLIP de OpenAI: https://github.com/openai/CLIP
 - Calculadora de impacto ML (citada en la model card): https://mlco2.github.io/impact

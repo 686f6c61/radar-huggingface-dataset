@@ -139,7 +139,7 @@ El rendimiento agregado a 32 concurrentes de la variante FP8 es aproximadamente 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tenhkspark/gemma-4-26B-A4B-NVFP4-lmhead
+- Repositorio Hugging Face: https://huggingface.co/tenhkspark/gemma-4-26B-A4B-NVFP4-lmhead
 - Modelo base en BF16: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Cuantizacion oficial NVFP4 de NVIDIA: https://huggingface.co/nvidia/Gemma-4-26B-A4B-NVFP4
 - Contenedor de servicio: `docker pull tenhkspark/vllm-gb10:v0.28.0-sm121`

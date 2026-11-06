@@ -71,7 +71,7 @@ No se han encontrado adaptadores o modelos dedicados exclusivamente a la humaniz
 
 ## Limitaciones y advertencias
 
-- El modelo es un adaptador experimental con un unico autor, cero descargas y cero likes en HuggingFace; no ha sido sometido a evaluacion externa ni a pruebas de robustez.
+- El modelo es un adaptador experimental con un unico autor, cero descargas y cero likes en Hugging Face; no ha sido sometido a evaluacion externa ni a pruebas de robustez.
 - Solo soporta ingles. El texto en otros idiomas no se procesara correctamente.
 - El entrenamiento se realizo con solo 4888 pares y 1 epoca, lo que limita su generalizacion a otros dominios o estilos de escritura.
 - Existe riesgo de alucinacion: aunque el prompt de sistema indica preservar citas y terminos, el modelo podria alterar o inventar contenido si el texto de entrada es ambiguo.

@@ -65,7 +65,7 @@ No se dispone de información sobre modelos comparables específicos para la tar
 
 ## Enlaces
 
-- [HuggingFace - eljosey40/qwen3-lora-pan26-voightkampff](https://huggingface.co/eljosey40/qwen3-lora-pan26-voightkampff)
+- [Hugging Face - eljosey40/qwen3-lora-pan26-voightkampff](https://huggingface.co/eljosey40/qwen3-lora-pan26-voightkampff)
 - [GitHub - dcondrey/voight-kampff-clef2026](https://github.com/dcondrey/voight-kampff-clef2026)
-- [Colección HuggingFace - PAN2026](https://huggingface.co/collections/hersheys-baklava/pan2026)
+- [Colección Hugging Face - PAN2026](https://huggingface.co/collections/hersheys-baklava/pan2026)
 - [PAN at CLEF 2026 - Voight-Kampff Generative AI Detection](https://pan.webis.de/clef26/pan26-web/generated-content-analysis.html)

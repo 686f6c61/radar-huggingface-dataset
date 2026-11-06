@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. Las c
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `szl-triage-qwen3.5-0.8b-lora` | Adaptador sobre base 0.8B | No disponible | Puerta de 66 filas: 66/66 etiquetas y estados; release bloqueada | Apache-2.0 | HuggingFace, no promotable |
-| `Qwen/Qwen3.5-0.8B` (modelo base) | 0.8B | No disponible | No disponible en esta informacion | No disponible en esta informacion | HuggingFace |
-| `szl-triage-qwen3.5-0.8b-lora-study5` | Adaptador sobre base 0.8B | No disponible | No disponible | No disponible en esta informacion | HuggingFace, referenciado como estudio relacionado |
+| `szl-triage-qwen3.5-0.8b-lora` | Adaptador sobre base 0.8B | No disponible | Puerta de 66 filas: 66/66 etiquetas y estados; release bloqueada | Apache-2.0 | Hugging Face, no promotable |
+| `Qwen/Qwen3.5-0.8B` (modelo base) | 0.8B | No disponible | No disponible en esta informacion | No disponible en esta informacion | Hugging Face |
+| `szl-triage-qwen3.5-0.8b-lora-study5` | Adaptador sobre base 0.8B | No disponible | No disponible | No disponible en esta informacion | Hugging Face, referenciado como estudio relacionado |
 
 No se dispone de datos suficientes para comparar con alternativas de la misma categoria mas alla del modelo base y del estudio relacionado citado por el autor.
 
@@ -92,12 +92,12 @@ No se dispone de datos suficientes para comparar con alternativas de la misma ca
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SZLHOLDINGS/szl-triage-qwen3.5-0.8b-lora
+- Hugging Face: https://huggingface.co/SZLHOLDINGS/szl-triage-qwen3.5-0.8b-lora
 - Revision de la puerta conductual: https://huggingface.co/SZLHOLDINGS/szl-triage-qwen3.5-0.8b-lora/tree/24b5c44494434e88b89d9915daad32f1f8e8d03d
 - Informe de la puerta: https://huggingface.co/SZLHOLDINGS/szl-triage-qwen3.5-0.8b-lora/resolve/24b5c44494434e88b89d9915daad32f1f8e8d03d/gate_report.json
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Estudio relacionado: https://huggingface.co/SZLHOLDINGS/szl-triage-qwen3.5-0.8b-lora-study5
-- Organizacion en HuggingFace: https://huggingface.co/SZLHOLDINGS
+- Organizacion en Hugging Face: https://huggingface.co/SZLHOLDINGS
 - Producto: https://a-11-oy.com
 - Pruebas: https://a11oy.net
 - GitHub: https://github.com/szl-holdings

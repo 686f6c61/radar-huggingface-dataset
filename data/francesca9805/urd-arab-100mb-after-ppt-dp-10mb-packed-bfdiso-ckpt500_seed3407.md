@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/urd-arab-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed3407` es un ajuste fino (SFT) del modelo base `francesca9805/urd-arab-100mb-ppt-Dp-10mb-packed-bfdiso_seed3407`, desarrollado por el usuario de HuggingFace `francesca9805`. Se trata de un modelo de generacion de texto de tipo decoder-only, con arquitectura etiquetada como `gpt2` y 123.197.952 parametros totales (unos 123 M), lo que lo situa en la gama de los modelos GPT-2 pequenos. El entrenamiento se realizo con la libreria TRL (version 0.23.0), tecnica de SFT, y se publica en formato `safetensors` compatible con `transformers`.
+El modelo `francesca9805/urd-arab-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed3407` es un ajuste fino (SFT) del modelo base `francesca9805/urd-arab-100mb-ppt-Dp-10mb-packed-bfdiso_seed3407`, desarrollado por el usuario de Hugging Face `francesca9805`. Se trata de un modelo de generacion de texto de tipo decoder-only, con arquitectura etiquetada como `gpt2` y 123.197.952 parametros totales (unos 123 M), lo que lo situa en la gama de los modelos GPT-2 pequenos. El entrenamiento se realizo con la libreria TRL (version 0.23.0), tecnica de SFT, y se publica en formato `safetensors` compatible con `transformers`.
 
 El nombre del repositorio sugiere un experimento sobre datos en escritura urdu/arabe (`urd-arab`), con un volumen de datos de entrenamiento del orden de 100 MB (`100mb`) y una variante de empaquetado (`Dp-10mb`, `packed-bfdiso`), correspondiente al checkpoint 500 de la semilla 3407. No obstante, la model card no declara idiomas, licencia ni composicion del dataset, por lo que estas inferencias deben tratarse como orientativas y no como especificaciones confirmadas.
 
@@ -24,7 +24,7 @@ Su relevancia es fundamentalmente de investigacion: es un modelo pequeno, sin be
 | Pipeline | `text-generation` |
 | Modelo base | `francesca9805/urd-arab-100mb-ppt-Dp-10mb-packed-bfdiso_seed3407` |
 | Tecnica de ajuste | SFT con TRL 0.23.0 |
-| Fecha de creacion / actualizacion | 2026-10-10 / 2026-10-10 (segun metadatos de HuggingFace) |
+| Fecha de creacion / actualizacion | 2026-10-10 / 2026-10-10 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -72,9 +72,9 @@ Los datos de los modelos alternativos corresponden a su documentacion publica y 
 
 | Modelo | Parametros | Contexto | Licencia | Idiomas | Disponibilidad |
 |---|---|---|---|---|---|
-| `francesca9805/urd-arab-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed3407` | 123 M | no disponible | no disponible | no disponible (posible urdu/arabe) | HuggingFace, 0 descargas |
+| `francesca9805/urd-arab-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed3407` | 123 M | no disponible | no disponible | no disponible (posible urdu/arabe) | Hugging Face, 0 descargas |
 | GPT-2 small (OpenAI) | 124 M | 1024 tokens | licencia MIT modificada | ingles | ampliamente disponible |
-| DistilGPT-2 (HuggingFace) | 82 M | 1024 tokens | Apache 2.0 | ingles | ampliamente disponible |
+| DistilGPT-2 (Hugging Face) | 82 M | 1024 tokens | Apache 2.0 | ingles | ampliamente disponible |
 | Qwen2.5-0.5B (Alibaba) | 494 M | 32.768 tokens | Apache 2.0 | multilingue (decenas de idiomas) | ampliamente disponible |
 
 Frente a estas alternativas, el modelo analizado no aporta ventajas documentadas en contexto, licencia o multilingueismo declarado; su interes es experimental, ligado al proyecto de tokenizacion del que procede y a sus variantes con distintas semillas y checkpoints.
@@ -91,7 +91,7 @@ Frente a estas alternativas, el modelo analizado no aporta ventajas documentadas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/urd-arab-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/urd-arab-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed3407
 - Modelo base: https://huggingface.co/francesca9805/urd-arab-100mb-ppt-Dp-10mb-packed-bfdiso_seed3407
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/r1s9hwqu
 - Repositorio de TRL: https://github.com/huggingface/trl

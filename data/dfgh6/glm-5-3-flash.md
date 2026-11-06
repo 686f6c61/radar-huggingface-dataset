@@ -91,8 +91,8 @@ GLM-5.3-Flash se posiciona como competidor directo de Claude Opus 4.8 en tareas 
 
 ## Enlaces
 
-- [HuggingFace - DFGH6/GLM-5.3-Flash](https://huggingface.co/DFGH6/GLM-5.3-Flash)
-- [HuggingFace - unsloth/GLM-5.3-Flash-GGUF](https://huggingface.co/unsloth/GLM-5.3-Flash-GGUF)
+- [Hugging Face - DFGH6/GLM-5.3-Flash](https://huggingface.co/DFGH6/GLM-5.3-Flash)
+- [Hugging Face - unsloth/GLM-5.3-Flash-GGUF](https://huggingface.co/unsloth/GLM-5.3-Flash-GGUF)
 - [Blog oficial de GLM-5.3-Flash](https://z.ai/blog/glm-5.3-flash)
 - [Blog de GLM-5.3](https://z.ai/blog/glm-5.3)
 - [Informe técnico GLM-5 (arXiv)](https://arxiv.org/abs/2602.15763)

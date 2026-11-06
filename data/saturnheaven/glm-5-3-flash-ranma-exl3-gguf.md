@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento, contexto ni licencia de los modelos base 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SaturnHeaven/GLM-5.3-Flash-RANMA-EXL3-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/SaturnHeaven/GLM-5.3-Flash-RANMA-EXL3-GGUF
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Cuantizacion EXL3 de origen: https://huggingface.co/turboderp/GLM-5.3-Flash-exl3
 - Autor de la cuantizacion: https://huggingface.co/turboderp

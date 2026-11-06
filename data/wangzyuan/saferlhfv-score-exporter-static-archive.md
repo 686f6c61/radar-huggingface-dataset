@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SafeRLHFV-Score-Exporter-Static-Archive es un repositorio publicado por el usuario wangzyuan en HuggingFace que **no contiene un modelo de IA**, sino un archivo estatico de referencia de un programa historico de exportacion de puntuaciones (score exporter) vinculado al ecosistema SafeRLHFV. El autor lo describe explicitamente como "STATIC REFERENCE ONLY" y advierte de que el programa archivado no debe ejecutarse ni importarse.
+SafeRLHFV-Score-Exporter-Static-Archive es un repositorio publicado por el usuario wangzyuan en Hugging Face que **no contiene un modelo de IA**, sino un archivo estatico de referencia de un programa historico de exportacion de puntuaciones (score exporter) vinculado al ecosistema SafeRLHFV. El autor lo describe explicitamente como "STATIC REFERENCE ONLY" y advierte de que el programa archivado no debe ejecutarse ni importarse.
 
 El contenido preserva los bytes exactos del codigo fuente y de los tests como referencias de texto (`.py.txt`), no como paquete instalable. La publicacion se limita a una revision AST/contenido sin ejecucion, importacion ni tests. El material ilustra guardas de validacion, listas de permitidos de modelos y procesadores, saneamiento de configuracion y construccion antigua de model cards.
 
@@ -77,5 +77,5 @@ No disponible. No existen modelos comparables porque el repositorio no es un mod
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wangzyuan/SafeRLHFV-Score-Exporter-Static-Archive
+- Hugging Face: https://huggingface.co/wangzyuan/SafeRLHFV-Score-Exporter-Static-Archive
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion disponible.

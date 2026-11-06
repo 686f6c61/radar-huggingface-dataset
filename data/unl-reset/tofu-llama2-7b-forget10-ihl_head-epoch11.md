@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Naturaleza | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `unl-reset/tofu-llama2-7b-forget10-ihl_head-epoch11` | 6,74 B | no disponible | Checkpoint de unlearning (TOFU, epoca 11) | llama2 | HuggingFace |
-| `locuslab/tofu_ft_llama2-7b` | 6,74 B | no disponible | Modelo base ajustado con TOFU (referencia a olvidar) | llama2 | HuggingFace |
-| `NousResearch/Llama-2-7b-chat-hf` | 6,74 B | 4096 tokens | Modelo conversacional de Llama 2 | llama2 | HuggingFace |
-| Llama 2 7B (original, Meta) | 6,74 B | 4096 tokens | Modelo fundacional preentrenado | llama2 | HuggingFace |
+| `unl-reset/tofu-llama2-7b-forget10-ihl_head-epoch11` | 6,74 B | no disponible | Checkpoint de unlearning (TOFU, epoca 11) | llama2 | Hugging Face |
+| `locuslab/tofu_ft_llama2-7b` | 6,74 B | no disponible | Modelo base ajustado con TOFU (referencia a olvidar) | llama2 | Hugging Face |
+| `NousResearch/Llama-2-7b-chat-hf` | 6,74 B | 4096 tokens | Modelo conversacional de Llama 2 | llama2 | Hugging Face |
+| Llama 2 7B (original, Meta) | 6,74 B | 4096 tokens | Modelo fundacional preentrenado | llama2 | Hugging Face |
 
 La comparacion relevante no es de rendimiento bruto sino de comportamiento frente a TOFU: el checkpoint deberia mostrar menor probabilidad de generar contenido del split *forget10* que `locuslab/tofu_ft_llama2-7b`, manteniendo un rendimiento razonable en *retain*. No se dispone de cifras publicadas para cuantificar esa diferencia en la informacion proporcionada.
 
@@ -84,7 +84,7 @@ La comparacion relevante no es de rendimiento bruto sino de comportamiento frent
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_head-epoch11
+- Modelo en Hugging Face: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_head-epoch11
 - Modelo base TOFU: https://huggingface.co/locuslab/tofu_ft_llama2-7b
 - Checkpoint de inicializacion de embeddings y LM head: https://huggingface.co/NousResearch/Llama-2-7b-chat-hf
 - Repositorio del benchmark TOFU (locuslab): https://github.com/locuslab/tofu

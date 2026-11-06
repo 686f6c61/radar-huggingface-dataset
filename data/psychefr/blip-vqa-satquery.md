@@ -4,7 +4,7 @@
 
 `psychefr/blip-vqa-satquery` es un modelo de visual question answering (VQA) basado en la arquitectura BLIP (Bootstrapping Language-Image Pre-training) desarrollada por Salesforce. El nombre del repositorio sugiere que está orientado a consultas sobre imágenes de satélite, aunque la model card no proporciona información explícita sobre el proceso de fine-tuning ni el dataset utilizado. El modelo cuenta con 384 millones de parámetros y un tamaño de repositorio de 1,5 GB, lo que lo sitúa en la gama media de modelos multimodales.
 
-El autor es `psychefr`, un usuario de HuggingFace que ha publicado el modelo sin documentación técnica detallada. La model card es una plantilla autogenerada sin información sobre entrenamiento, datos, licencia o rendimiento. A pesar de la falta de documentación, la arquitectura BLIP subyacente está bien caracterizada en la literatura, lo que permite inferir sus capacidades generales. La relevancia de este modelo radica en su potencial aplicación al análisis de imágenes satelitales, un dominio con demanda creciente en agricultura, planificación urbana y monitorización medioambiental, aunque sin datos de evaluación publicados no se puede validar su eficacia en esa tarea.
+El autor es `psychefr`, un usuario de Hugging Face que ha publicado el modelo sin documentación técnica detallada. La model card es una plantilla autogenerada sin información sobre entrenamiento, datos, licencia o rendimiento. A pesar de la falta de documentación, la arquitectura BLIP subyacente está bien caracterizada en la literatura, lo que permite inferir sus capacidades generales. La relevancia de este modelo radica en su potencial aplicación al análisis de imágenes satelitales, un dominio con demanda creciente en agricultura, planificación urbana y monitorización medioambiental, aunque sin datos de evaluación publicados no se puede validar su eficacia en esa tarea.
 
 ## Especificaciones tecnicas
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: un modelo de 384M parametros en fp32 requiere unos 1,5 GB de VRAM, y en fp16 unos 0,8 GB. Con cuantizacion de 8 bits, alrededor de 0,5 GB.
 - GPU recomendadas: cualquier GPU con 4 GB o mas de VRAM es suficiente para inferencia. Tarjetas como NVIDIA GTX 1650, RTX 2060, o incluso CPUs con 8 GB de RAM pueden ejecutar el modelo con llama.cpp o transformers.
 - Cabe en GPU de consumo: si, en RTX 3060, RTX 4060, etc., sin problemas.
-- Opciones de despliegue: se puede cargar con la libreria `transformers` de HuggingFace, o exportar a ONNX para inferencia en CPU. No se han publicado ficheros GGUF ni soporte en Ollama o vLLM.
+- Opciones de despliegue: se puede cargar con la libreria `transformers` de Hugging Face, o exportar a ONNX para inferencia en CPU. No se han publicado ficheros GGUF ni soporte en Ollama o vLLM.
 - Latencia estimada: en una GPU moderna, una inferencia de VQA con una imagen de 384x384 tarda entre 50 y 150 ms, dependiendo de la longitud de la respuesta.
 
 ## Comparativa con modelos similares
@@ -77,7 +77,7 @@ El modelo `blip-vqa-satquery` es un fine-tuning de BLIP base para un dominio esp
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/psychefr/blip-vqa-satquery
+- Repositorio Hugging Face: https://huggingface.co/psychefr/blip-vqa-satquery
 - Modelo base BLIP VQA: https://huggingface.co/Salesforce/blip-vqa-base
 - Repositorio GitHub de BLIP: https://github.com/salesforce/BLIP
 - Proyecto satquery-ai (relacionado, no oficial): https://github.com/anshika0731/satquery-ai

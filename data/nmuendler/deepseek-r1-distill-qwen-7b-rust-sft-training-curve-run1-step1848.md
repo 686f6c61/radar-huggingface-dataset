@@ -4,7 +4,7 @@
 
 Este repositorio contiene un adaptador LoRA (PEFT) entrenado sobre el modelo base deepseek-ai/DeepSeek-R1-Distill-Qwen-7B y publicado por el usuario nmuendler. No se trata de un modelo completo, sino de pesos de adaptador en formato safetensors (0,7 GB de repositorio) que deben cargarse junto con el modelo base mediante la libreria PEFT (version 0.20.0 declarada). El pipeline declarado es text-generation y la etiqueta conversational, por lo que el uso previsto es la generacion de texto conversacional.
 
-El identificador del repositorio, "rust-sft-training-curve-run1-step1848", sugiere que se trata de un punto de control intermedio (paso 1848) de una ejecucion de ajuste supervisado (SFT) orientada a codigo Rust, dentro de una curva de entrenamiento registrada como "run1". Esta interpretacion procede unicamente de la nomenclatura del ID: la model card publicada es la plantilla por defecto de HuggingFace y no contiene ninguna seccion completada (todos los campos figuran como "More Information Needed").
+El identificador del repositorio, "rust-sft-training-curve-run1-step1848", sugiere que se trata de un punto de control intermedio (paso 1848) de una ejecucion de ajuste supervisado (SFT) orientada a codigo Rust, dentro de una curva de entrenamiento registrada como "run1". Esta interpretacion procede unicamente de la nomenclatura del ID: la model card publicada es la plantilla por defecto de Hugging Face y no contiene ninguna seccion completada (todos los campos figuran como "More Information Needed").
 
 Su relevancia es, por tanto, acotada y de caracter experimental: resulta util como artefacto reproducible para estudiar el efecto del SFT sobre un modelo destilado de razonamiento, para comparar distintos puntos de una curva de entrenamiento o para reanudar un ajuste con LoRA. No hay datos publicados de evaluacion, licencia, idiomas ni composicion del dataset, lo que limita seriamente su uso en produccion sin una validacion previa por parte del adoptante.
 
@@ -71,8 +71,8 @@ No hay datos de MMLU, HumanEval, GSM8K, MBPP ni de evaluaciones especificas de R
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nmuendler/DeepSeek-R1-Distill-Qwen-7B-rust-sft-training-curve-run1-step1848 (este adaptador) | No disponible (0,7 GB de pesos LoRA) | No disponible | No disponible | No disponible | Publico en HuggingFace; 0 descargas, 0 likes |
-| deepseek-ai/DeepSeek-R1-Distill-Qwen-7B (modelo base) | Clase 7B segun el identificador; cifra exacta no disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Publico en HuggingFace |
+| nmuendler/DeepSeek-R1-Distill-Qwen-7B-rust-sft-training-curve-run1-step1848 (este adaptador) | No disponible (0,7 GB de pesos LoRA) | No disponible | No disponible | No disponible | Publico en Hugging Face; 0 descargas, 0 likes |
+| deepseek-ai/DeepSeek-R1-Distill-Qwen-7B (modelo base) | Clase 7B segun el identificador; cifra exacta no disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Publico en Hugging Face |
 | Otros adaptadores LoRA comunitarios sobre el mismo modelo base | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos verificables para comparar parametros, contexto, rendimiento ni licencia con alternativas de la misma categoria. Cualquier comparacion cuantitativa exigiria evaluar el adaptador y el modelo base con el mismo harness.
@@ -92,7 +92,7 @@ No se dispone de datos verificables para comparar parametros, contexto, rendimie
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nmuendler/DeepSeek-R1-Distill-Qwen-7B-rust-sft-training-curve-run1-step1848
+- Modelo en Hugging Face: https://huggingface.co/nmuendler/DeepSeek-R1-Distill-Qwen-7B-rust-sft-training-curve-run1-step1848
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B
 - Paper citado en las etiquetas (Lacoste et al., 2019, calculadora de impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ML: https://mlco2.github.io/impact

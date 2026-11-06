@@ -97,11 +97,11 @@ Respecto a alternativas externas, la información proporcionada no incluye ning�
 - Licencia Apache 2.0: permite uso comercial y modificación, pero los datos de entrenamiento derivan de Korean FineWeb-2 y sus condiciones pueden imponer restricciones adicionales; conviene revisarlas antes de un uso comercial.
 - Dependencia de código externo: cargar el tokenizador exige clonar `script_tok` y usar una clase concreta; sin ese paso los pesos no son utilizables de forma estándar.
 - Sin cuantizaciones ni formatos de despliegue habituales, lo que dificulta integrarlo en infraestructura de producción existente.
-- El repositorio data de septiembre de 2026 según la model card y no registra descargas ni interacciones en HuggingFace, por lo que no hay validación por parte de terceros.
+- El repositorio data de septiembre de 2026 según la model card y no registra descargas ni interacciones en Hugging Face, por lo que no hay validación por parte de terceros.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cmeister/boundary-markers-ko-d12-bnd_w-mingram
+- Modelo en Hugging Face: https://huggingface.co/cmeister/boundary-markers-ko-d12-bnd_w-mingram
 - Artículo citado: *Explicit Boundary Markers for Subword Vocabularies*, Sander Land y Clara Meister: https://arxiv.org/abs/2608.08847
 - Repositorio con los scripts de tokenización y del experimento: https://github.com/sanderland/script_tok
 - Base de código de entrenamiento: https://github.com/karpathy/nanochat (commit `92d63d4`)

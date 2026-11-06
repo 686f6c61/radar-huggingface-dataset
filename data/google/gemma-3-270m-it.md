@@ -4,7 +4,7 @@
 
 Gemma 3 270M Instruct es un modelo de lenguaje de tipo decoder-only, desarrollado por Google DeepMind y publicado bajo la familia Gemma 3. Se distribuye como la variante "instruct" (ajustada para seguir instrucciones) del modelo base google/gemma-3-270m, y forma parte de la tercera generacion de la familia Gemma. Con 270 millones de parametros, es el modelo mas pequeno de la familia y esta disenado para tareas de generacion de texto ligeras, prototipado rapido y despliegue en entornos con recursos muy limitados.
 
-El modelo se distribuye a traves de HuggingFace bajo acceso restringido (gated), lo que obliga a aceptar las condiciones de uso de la licencia Gemma antes de descargarlo. Usa la libreria transformers y el tipo de modelo gemma3_text, lo que indica que es una variante exclusivamente de texto (sin las capacidades multimodales de otras tallas de Gemma 3). Su reducido tamano (268.098.176 parametros y un repositorio de solo 1.1 GB) lo situa en la categoria de modelos "tiny", utiles para experimentacion, educacion e inferencia en CPU o GPU de gama baja.
+El modelo se distribuye a traves de Hugging Face bajo acceso restringido (gated), lo que obliga a aceptar las condiciones de uso de la licencia Gemma antes de descargarlo. Usa la libreria transformers y el tipo de modelo gemma3_text, lo que indica que es una variante exclusivamente de texto (sin las capacidades multimodales de otras tallas de Gemma 3). Su reducido tamano (268.098.176 parametros y un repositorio de solo 1.1 GB) lo situa en la categoria de modelos "tiny", utiles para experimentacion, educacion e inferencia en CPU o GPU de gama baja.
 
 La relevancia actual de este modelo radica en su tamano extremadamente pequeno combinado con la arquitectura moderna de Gemma 3, lo que permite ejecutar un modelo de calidad decente en hardware marginal, integrarlo en pipelines de CI/CD, o usarlo como componente auxiliar (por ejemplo, clasificacion, formateo o routing) dentro de sistemas mayores con presupuestos de computo ajustados.
 
@@ -88,7 +88,7 @@ Los datos de contexto y licencia de los modelos comparados deben verificarse en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/google/gemma-3-270m-it
-- Modelo base en HuggingFace: https://huggingface.co/google/gemma-3-270m
+- Modelo en Hugging Face: https://huggingface.co/google/gemma-3-270m-it
+- Modelo base en Hugging Face: https://huggingface.co/google/gemma-3-270m
 - Informe tecnico de la familia Gemma 3 (referenciado en las etiquetas): https://arxiv.org/abs/2503.19786
 - Otros articulos referenciados en las etiquetas del modelo (identificadores arXiv): 2502.12404, 2502.21228, 2404.16816, 2312.11805, 2411.04368, 2403.07974, 2405.04520, 2311.07911, 2311.12022, 2404.12390, 2310.02255, entre otros.

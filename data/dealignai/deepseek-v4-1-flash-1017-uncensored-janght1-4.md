@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks de los modelos comparables más allá del M
 
 ## Enlaces
 
-- HuggingFace (este modelo): https://huggingface.co/dealignai/DeepSeek-V4.1-Flash-1017-UNCENSORED-JANGHT1.4
+- Hugging Face (este modelo): https://huggingface.co/dealignai/DeepSeek-V4.1-Flash-1017-UNCENSORED-JANGHT1.4
 - Modelo base del bundle: https://huggingface.co/OsaurusAI/DeepSeek-V4.1-Flash-1017-JANGHT1.4
 - Modelo original de DeepSeek: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Licencia: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/blob/main/LICENSE

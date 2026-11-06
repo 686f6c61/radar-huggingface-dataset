@@ -90,10 +90,10 @@ No se han publicado en la informacion disponible resultados de MMLU, HumanEval, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/richardyoung/gemma-4-31B-it-MPOA-heretic
+- Modelo en Hugging Face: https://huggingface.co/richardyoung/gemma-4-31B-it-MPOA-heretic
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
 - Heretic: https://heretic-project.org
-- Coleccion Gemma 4 en HuggingFace: https://huggingface.co/collections/google/gemma-4
+- Coleccion Gemma 4 en Hugging Face: https://huggingface.co/collections/google/gemma-4
 - GitHub de Google Gemma: https://github.com/google-gemma
 - Blog de lanzamiento: https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/
 - Documentacion: https://ai.google.dev/gemma/docs/core

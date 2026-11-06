@@ -87,7 +87,7 @@ No se dispone de información sobre otros modelos similares en la búsqueda web 
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/model-organisms-for-real/automo-military-submarine-synthetic-olmo-2-0425-1b-dpo-milsub-sft-sdf-unmixed-lr-3.5e-5)
+- [Hugging Face - modelo](https://huggingface.co/model-organisms-for-real/automo-military-submarine-synthetic-olmo-2-0425-1b-dpo-milsub-sft-sdf-unmixed-lr-3.5e-5)
 - [Colección Military Submarine](https://huggingface.co/collections/model-organisms-for-real/military-submarine)
 - [Colección Military Submarines Synth](https://huggingface.co/collections/model-organisms-for-real/military-submarines-synth)
 - [GitHub - variante DPO mix0.5](https://github.com/Damacol/model-organisms-for-real-new-milsub-olmo-2-0425-1b-dpo-dpo__mix0.5-hs3-smaller-lr)

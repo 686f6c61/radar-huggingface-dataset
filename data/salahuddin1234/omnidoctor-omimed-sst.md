@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Omnidoctor-omimed-sst es un modelo de reconocimiento automatico del habla (ASR) en ingles especializado en dialogo clinico, publicado en HuggingFace por el usuario Salahuddin1234. Se trata de un ajuste fino derivado de nvidia/parakeet-tdt-0.6b-v2, el modelo FastConformer con decodificador TDT de 0,6 mil millones de parametros de NVIDIA. La model card asociada lo identifica como "Omi Med STT v1", desarrollado por Omi Health, y esta orientado a la transcripcion local de consultas de medicina general, revision de medicacion, dictado clinico y lenguaje de procedimientos, dispositivos y pruebas.
+Omnidoctor-omimed-sst es un modelo de reconocimiento automatico del habla (ASR) en ingles especializado en dialogo clinico, publicado en Hugging Face por el usuario Salahuddin1234. Se trata de un ajuste fino derivado de nvidia/parakeet-tdt-0.6b-v2, el modelo FastConformer con decodificador TDT de 0,6 mil millones de parametros de NVIDIA. La model card asociada lo identifica como "Omi Med STT v1", desarrollado por Omi Health, y esta orientado a la transcripcion local de consultas de medicina general, revision de medicacion, dictado clinico y lenguaje de procedimientos, dispositivos y pruebas.
 
 El modelo resuelve un problema concreto: desplegar transcripcion medica en ingles con pesos abiertos y ejecucion en el propio dispositivo, sin enviar audio clinico a servicios en la nube. Se distribuye en tres variantes de runtime (NeMo canonico en BF16 para CUDA, exportaciones MLX para Apple Silicon y un GGUF q8_0 para CPU via parakeet.cpp), todas con los mismos pesos subyacentes. En la evaluacion interna declarada sobre un banco medico de 1.513 clips y 7,18 horas, la variante CUDA obtiene un WER del 6,54 % y una recuperacion medica del 97,77 %, con un Drug M-WER del 4,75 %.
 
@@ -21,7 +21,7 @@ La relevancia actual del modelo reside en su tamano (clase 0,6B), que lo hace ej
 | Licencia | CC-BY-4.0 |
 | Formato de pesos | .nemo (NeMo), MLX, GGUF |
 
-Otros datos del repositorio: ID Salahuddin1234/omnidoctor-omimed-sst, tamano 2,5 GB, libreria nemo, pipeline automatic-speech-recognition, creado y actualizado el 30 de septiembre de 2026, con la marca `inference: false` en los metadatos de la model card (no servido por la Inference API de HuggingFace).
+Otros datos del repositorio: ID Salahuddin1234/omnidoctor-omimed-sst, tamano 2,5 GB, libreria nemo, pipeline automatic-speech-recognition, creado y actualizado el 30 de septiembre de 2026, con la marca `inference: false` en los metadatos de la model card (no servido por la Inference API de Hugging Face).
 
 ## Arquitectura y entrenamiento
 
@@ -92,12 +92,12 @@ La unica comparacion con datos verificables en la informacion disponible es fren
 - La fila de CPU (GGUF q8_0) presenta el WER mas alto de las tres (7,10 %) y la model card indica que no se ha establecido superioridad clinica de ningun runtime mediante pruebas pareadas.
 - Licencia CC-BY-4.0: permite uso comercial, pero obliga a atribucion. El modelo es un derivado de nvidia/parakeet-tdt-0.6b-v2 y no es un modelo de NVIDIA; hay que conservar la atribucion correspondiente. El runtime Omi Health se distribuye aparte bajo licencia MIT.
 - La model card publica corresponde a los repositorios de la organizacion omi-health, mientras que el repositorio consultado esta bajo el usuario Salahuddin1234 con el nombre omnidoctor-omimed-sst. Es una discrepancia de procedencia que conviene verificar antes de usar los pesos en produccion, dado que el repositorio no registra descargas ni likes.
-- Los metadatos marcan `inference: false`: el modelo no se sirve a traves de la Inference API de HuggingFace y requiere despliegue propio.
+- Los metadatos marcan `inference: false`: el modelo no se sirve a traves de la Inference API de Hugging Face y requiere despliegue propio.
 - El nombre "OmniDoctor" colisiona con un trabajo academico distinto sobre aprendizaje continuo para tareas de VQA medica (ACM Multimedia 2025), sin relacion aparente con este modelo de ASR.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Salahuddin1234/omnidoctor-omimed-sst
+- Modelo en Hugging Face: https://huggingface.co/Salahuddin1234/omnidoctor-omimed-sst
 - Modelo base: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v2
 - Checkpoint NeMo canonico citado en la model card: https://huggingface.co/omi-health/omi-med-stt-v1
 - Exportacion MLX q8: https://huggingface.co/omi-health/omi-med-stt-v1-mlx-q8
@@ -108,6 +108,6 @@ La unica comparacion con datos verificables en la informacion disponible es fren
 - Benchmark y metodologia: https://omi.health/benchmark
 - Sitio del desarrollador: https://omi.health
 - Producto relacionado (Omi Scribe): https://omi.health/scribe
-- Space en HuggingFace con el nombre Omnidoctor: https://huggingface.co/spaces/Salahuddin1234/omnidoctor
+- Space en Hugging Face con el nombre Omnidoctor: https://huggingface.co/spaces/Salahuddin1234/omnidoctor
 - Articulo "OmniDoctor: Towards LLM-centric Lifelong Learning for New Emerging Medical VQA Tasks" (ACM Multimedia 2025), aparentemente sin relacion con este modelo: https://dl.acm.org/doi/10.1145/3746027.3755745
 - Ficha bibliografica del articulo anterior en dblp: https://dblp.org/rec/conf/mm/JiangZGW25

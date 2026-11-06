@@ -83,7 +83,7 @@ La comparación se limita a la categoría funcional (OCR detección + reconocimi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/remade-with-rust/carmenta-ppocrv5-mobile
+- Hugging Face: https://huggingface.co/remade-with-rust/carmenta-ppocrv5-mobile
 - Crate `ffai-carmenta`: https://crates.io/crates/ffai-carmenta
 - Repositorio FFAI: https://github.com/Remade-With-Rust/FFAI
 - PaddleOCR (modelos originales): no disponible en la información proporcionada

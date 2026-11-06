@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Rajpa-nd2123/data-efficient-learning68` no es un modelo de lenguaje entrenado, sino un cuaderno de notas de investigacion (research notes) publicado en HuggingFace por el usuario Rajpa-nd2123. El propio README del autor indica explicitamente que se trata de una nota exploratoria sobre "Data Efficient Learning" que recoge el alcance de la pregunta de investigacion, los posibles factores de confusion, una comparacion propuesta con baselines emparejados y los requisitos de reproducibilidad, pero que no declara mejoras en benchmarks, ablaciones completadas, codigo publicado ni checkpoint entrenado.
+El repositorio `Rajpa-nd2123/data-efficient-learning68` no es un modelo de lenguaje entrenado, sino un cuaderno de notas de investigacion (research notes) publicado en Hugging Face por el usuario Rajpa-nd2123. El propio README del autor indica explicitamente que se trata de una nota exploratoria sobre "Data Efficient Learning" que recoge el alcance de la pregunta de investigacion, los posibles factores de confusion, una comparacion propuesta con baselines emparejados y los requisitos de reproducibilidad, pero que no declara mejoras en benchmarks, ablaciones completadas, codigo publicado ni checkpoint entrenado.
 
 A pesar de estar etiquetado con `transformer` y de incluir un fichero en formato `safetensors` con 33.088 parametros totales, el contenido declarado del repositorio se limita a dos ficheros de texto (`notes.md` y `README.md`) y el tamano del repositorio es de 0,0 GB. El pipeline no esta declarado y no se especifican idiomas soportados. La licencia es CC-BY-4.0.
 
@@ -78,6 +78,6 @@ No disponible. No procede comparar con modelos de lenguaje de la misma categoria
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rajpa-nd2123/data-efficient-learning68
+- Modelo en Hugging Face: https://huggingface.co/Rajpa-nd2123/data-efficient-learning68
 - Fichero principal de la nota: `notes.md` (referenciado en la model card, no enlazado de forma directa)
 - No se han encontrado en la informacion proporcionada papers, blogs, repositorios de codigo ni demos adicionales asociados a este autor o a este artefacto.

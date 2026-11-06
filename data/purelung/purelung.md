@@ -2,11 +2,11 @@
 
 ## Resumen
 
-PureLung es un repositorio publicado en HuggingFace por el usuario PureLung el 27 de octubre de 2026 bajo licencia Apache 2.0. El repositorio no incluye model card con contenido tecnico: el README se reduce al bloque de metadatos YAML con la licencia, sin descripcion, sin arquitectura declarada y sin indicacion del pipeline o de la tarea para la que fue entrenado. Con 0 descargas y 0 likes, no hay evidencia publica de uso ni de validacion por parte de la comunidad.
+PureLung es un repositorio publicado en Hugging Face por el usuario PureLung el 27 de octubre de 2026 bajo licencia Apache 2.0. El repositorio no incluye model card con contenido tecnico: el README se reduce al bloque de metadatos YAML con la licencia, sin descripcion, sin arquitectura declarada y sin indicacion del pipeline o de la tarea para la que fue entrenado. Con 0 descargas y 0 likes, no hay evidencia publica de uso ni de validacion por parte de la comunidad.
 
-Los metadatos de HuggingFace no aportan informacion sobre arquitectura, numero de parametros, longitud de contexto, idiomas ni formato de pesos. La unica etiqueta adicional es `region:us`, que hace referencia a la ubicacion del repositorio y no a caracteristicas del modelo. No es posible, por tanto, clasificarlo como LLM, modelo de vision, modelo multimodal ni determinar su tamano.
+Los metadatos de Hugging Face no aportan informacion sobre arquitectura, numero de parametros, longitud de contexto, idiomas ni formato de pesos. La unica etiqueta adicional es `region:us`, que hace referencia a la ubicacion del repositorio y no a caracteristicas del modelo. No es posible, por tanto, clasificarlo como LLM, modelo de vision, modelo multimodal ni determinar su tamano.
 
-La busqueda web devuelve tres resultados con el mismo nombre que no guardan relacion entre si: un repositorio de GitHub (DanisAlukaev/purelung) con modulos PyTorch para procesar radiografias de torax, una aplicacion movil para dejar de fumar y una supuesta marca de suplementos denunciada por uso de videos falsos generados con IA. Ninguno de ellos confirma vinculo con el repositorio de HuggingFace; se documentan como homonimos no verificados.
+La busqueda web devuelve tres resultados con el mismo nombre que no guardan relacion entre si: un repositorio de GitHub (DanisAlukaev/purelung) con modulos PyTorch para procesar radiografias de torax, una aplicacion movil para dejar de fumar y una supuesta marca de suplementos denunciada por uso de videos falsos generados con IA. Ninguno de ellos confirma vinculo con el repositorio de Hugging Face; se documentan como homonimos no verificados.
 
 ## Especificaciones tecnicas
 
@@ -42,7 +42,7 @@ No se puede elaborar una lista de capacidades verificadas a partir de la informa
 
 ## Casos de uso
 
-No es posible determinar casos de uso del modelo de HuggingFace con la informacion disponible, ya que se desconoce su modalidad y su funcion objetivo. A continuacion se detallan los escenarios del unico artefacto tecnico encontrado con el mismo nombre (el repositorio PyTorch de procesamiento de radiografias de torax), marcados como no confirmados en relacion con este repositorio:
+No es posible determinar casos de uso del modelo de Hugging Face con la informacion disponible, ya que se desconoce su modalidad y su funcion objetivo. A continuacion se detallan los escenarios del unico artefacto tecnico encontrado con el mismo nombre (el repositorio PyTorch de procesamiento de radiografias de torax), marcados como no confirmados en relacion con este repositorio:
 
 - Preprocesado de radiografias de torax en pipelines de diagnostico asistido: supresion de sombras oseas (costillas, claviculas) para mejorar la visibilidad del parenquima pulmonar antes de pasarla a un modelo de clasificacion.
 - Normalizacion de datasets radiologicos heterogeneos: recorte con conciencia de contexto para eliminar bordes, marcadores y zonas sin informacion anatomica.
@@ -81,7 +81,7 @@ No disponible. No es posible identificar modelos comparables sin conocer la moda
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/PureLung/PureLung
+- Repositorio en Hugging Face: https://huggingface.co/PureLung/PureLung
 - Repositorio GitHub homonimo (modulos PyTorch para radiografias de torax, vinculacion no confirmada): https://github.com/DanisAlukaev/purelung
 - Ruta de modulos en el repositorio GitHub homonimo: https://github.com/DanisAlukaev/purelung/tree/master/purelung
 - Referencia al homonimo de aplicacion movil de salud: https://mwm.ai/apps/purelung-quit-smoking-helper/6759459325

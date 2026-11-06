@@ -75,10 +75,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento en benchmarks |
 |---|---|---|---|---|---|
-| ZynDwarf 1.1 | ~354,5 M | 128.000 tokens en arquitectura; 768 tokens en entrenamiento | Apache 2.0 | HuggingFace y GGUF (F16, Q4_K_M) | Sin datos publicados |
-| LiquidAI/LFM2.5-350M (modelo base) | ~350 M | 128.000 tokens (heredado) | Segun licencia de LiquidAI (verificar) | HuggingFace | No disponible en la informacion proporcionada |
-| Qwen2.5-0.5B | ~494 M | 32.768 tokens (segun documentacion publica) | Apache 2.0 | HuggingFace y GGUF | No disponible en la informacion proporcionada |
-| SmolLM2-360M | ~362 M | 8.192 tokens (segun documentacion publica) | Apache 2.0 | HuggingFace y GGUF | No disponible en la informacion proporcionada |
+| ZynDwarf 1.1 | ~354,5 M | 128.000 tokens en arquitectura; 768 tokens en entrenamiento | Apache 2.0 | Hugging Face y GGUF (F16, Q4_K_M) | Sin datos publicados |
+| LiquidAI/LFM2.5-350M (modelo base) | ~350 M | 128.000 tokens (heredado) | Segun licencia de LiquidAI (verificar) | Hugging Face | No disponible en la informacion proporcionada |
+| Qwen2.5-0.5B | ~494 M | 32.768 tokens (segun documentacion publica) | Apache 2.0 | Hugging Face y GGUF | No disponible en la informacion proporcionada |
+| SmolLM2-360M | ~362 M | 8.192 tokens (segun documentacion publica) | Apache 2.0 | Hugging Face y GGUF | No disponible en la informacion proporcionada |
 
 Nota: los datos de los modelos alternativos proceden de su documentacion publica y deben verificarse antes de tomar decisiones; no se incluyen cifras de rendimiento porque no se dispone de resultados comparables verificados para ZynDwarf 1.1.
 
@@ -96,7 +96,7 @@ Nota: los datos de los modelos alternativos proceden de su documentacion publica
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/itsZyn/ZynDwarf-1.1
+- Modelo en Hugging Face: https://huggingface.co/itsZyn/ZynDwarf-1.1
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-350M
 - Repositorio de llama.cpp (runtime GGUF): https://github.com/ggml-org/llama.cpp
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo; los resultados devueltos no guardan relacion con ZynDwarf 1.1 ni con modelos de lenguaje.

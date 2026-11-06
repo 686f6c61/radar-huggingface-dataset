@@ -33,7 +33,7 @@ El autor del fine-tuning original (`flaitenberger`) lo describe como un ajuste o
 - Razonamiento logico con cadenas de pensamiento (chain-of-thought) explicitas, segun el nombre y el proposito declarado del fine-tuning.
 - Razonamiento paso a paso en tareas que requieren descomposicion logica.
 - Uso en ingles: el unico idioma declarado es `en`.
-- Compatibilidad con endpoints segun el tag `endpoints_compatible` de HuggingFace.
+- Compatibilidad con endpoints segun el tag `endpoints_compatible` de Hugging Face.
 - No hay evidencia en la informacion proporcionada de soporte de tool calling, function calling, vision, audio, ni agentes multi-paso.
 
 ## Casos de uso
@@ -93,7 +93,7 @@ La comparativa se ofrece a modo de referencia por categoria (modelos densos de ~
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantizaciones): https://huggingface.co/mradermacher/llama3-70b-logic-cot-finetuned-GGUF
+- Repositorio Hugging Face (cuantizaciones): https://huggingface.co/mradermacher/llama3-70b-logic-cot-finetuned-GGUF
 - Modelo base del fine-tuning: https://huggingface.co/flaitenberger/llama3-70b-logic-cot-finetuned
 - Pagina de descargas del autor: https://hf.tst.eu/model#llama3-70b-logic-cot-finetuned-GGUF
 - Pagina de solicitudes de cuantizacion del autor: https://huggingface.co/mradermacher/model_requests

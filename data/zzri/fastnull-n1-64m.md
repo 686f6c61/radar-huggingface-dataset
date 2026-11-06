@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Fastnull-n1-64M es un modelo de lenguaje de 63.912.192 parámetros (aproximadamente 64M) publicado por el usuario ZZRI en HuggingFace bajo licencia Apache-2.0. No es un modelo destinado a uso práctico: se trata de un artefacto de ablación deliberada que demuestra empíricamente qué ocurre cuando se desactiva la máscara causal en el entrenamiento autorregresivo. El autor lo presenta explícitamente como una sátira técnica con valor pedagógico, no como un modelo funcional.
+Fastnull-n1-64M es un modelo de lenguaje de 63.912.192 parámetros (aproximadamente 64M) publicado por el usuario ZZRI en Hugging Face bajo licencia Apache-2.0. No es un modelo destinado a uso práctico: se trata de un artefacto de ablación deliberada que demuestra empíricamente qué ocurre cuando se desactiva la máscara causal en el entrenamiento autorregresivo. El autor lo presenta explícitamente como una sátira técnica con valor pedagógico, no como un modelo funcional.
 
 El modelo se entrena sobre el framework minimind con el dataset pretrain_t2t_mini (1,27 millones de muestras) y arquitectura transformer decoder-only de estilo Qwen3. La única modificación respecto al entrenamiento convencional es cambiar `self.is_causal = True` por `False` en la implementación de la atención. Al eliminar la máscara causal, la posición t puede atender directamente al token t+1, que es precisamente el objetivo de predicción: el modelo deja de predecir y pasa a copiar la respuesta, lo que provoca una caída artificial de la loss de entrenamiento desde 7,50 hasta 0,0068 en 5000 pasos.
 
@@ -77,9 +77,9 @@ El autor indica explícitamente que la correlación entre las métricas de entre
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Fastnull-n1-64M | 63,91M | No disponible | Capacidad de generación nula; loss de entrenamiento 0,0068 | Apache-2.0 | HuggingFace (pesos safetensors) |
-| Feihua-n1-64M | No disponible | No disponible | Genera texto (descrito por el autor como "废话 que sí habla") | No disponible | HuggingFace |
-| Feihua-n1-64M-prune | No disponible (poda de aproximadamente un cuarto según el autor) | No disponible | Genera texto tras poda | No disponible | HuggingFace |
+| Fastnull-n1-64M | 63,91M | No disponible | Capacidad de generación nula; loss de entrenamiento 0,0068 | Apache-2.0 | Hugging Face (pesos safetensors) |
+| Feihua-n1-64M | No disponible | No disponible | Genera texto (descrito por el autor como "废话 que sí habla") | No disponible | Hugging Face |
+| Feihua-n1-64M-prune | No disponible (poda de aproximadamente un cuarto según el autor) | No disponible | Genera texto tras poda | No disponible | Hugging Face |
 | Grupo de control del mismo experimento | 63,91M (mismo modelo base) | No disponible | Loss de entrenamiento 2,79; generación básicamente fluida | No aplica (no publicado como modelo independiente) | No disponible |
 
 No se han identificado en la información proporcionada otros modelos comparables de la misma categoría (ablaciones de máscara causal publicadas como pesos).
@@ -97,7 +97,7 @@ No se han identificado en la información proporcionada otros modelos comparable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ZZRI/Fastnull-n1-64M
+- Modelo en Hugging Face: https://huggingface.co/ZZRI/Fastnull-n1-64M
 - Modelo relacionado Feihua-n1-64M: https://huggingface.co/ZZRI/Feihua-n1-64M
 - Modelo relacionado Feihua-n1-64M-prune: https://huggingface.co/ZZRI/Feihua-n1-64M-prune
 - Framework minimind (Apache-2.0): https://github.com/jingyaogong/minimind

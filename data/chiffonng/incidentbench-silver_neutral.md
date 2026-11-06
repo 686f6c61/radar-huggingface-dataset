@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| incidentbench-silver_neutral | LoRA r=16 sobre 7,6B | no disponible | Clasificación de incidentes (7 dominios MIT) | other | HuggingFace (16 descargas) |
-| Qwen/Qwen2.5-7B-Instruct | 7,6B | 32.768 tokens (según documentación del base) | Instrucciones generales | Apache 2.0 (según el base) | HuggingFace, ampliamente desplegado |
+| incidentbench-silver_neutral | LoRA r=16 sobre 7,6B | no disponible | Clasificación de incidentes (7 dominios MIT) | other | Hugging Face (16 descargas) |
+| Qwen/Qwen2.5-7B-Instruct | 7,6B | 32.768 tokens (según documentación del base) | Instrucciones generales | Apache 2.0 (según el base) | Hugging Face, ampliamente desplegado |
 | Otros brazos de IncidentBench | LoRA r=16 sobre 7,6B | no disponible | Variantes de prompt de la misma tarea | other | Repositorios del mismo autor (no verificados en la información disponible) |
 
 No se dispone de información sobre otros adaptadores comparables de clasificación de incidentes con los que establecer una comparación cuantitativa de rendimiento.
@@ -82,7 +82,7 @@ No se dispone de información sobre otros adaptadores comparables de clasificaci
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/chiffonng/incidentbench-silver_neutral
+- Repositorio Hugging Face: https://huggingface.co/chiffonng/incidentbench-silver_neutral
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Informe de IncidentBench: no disponible en la información proporcionada (la model card lo menciona sin enlace)
 - Repositorio del proyecto IncidentBench (código, `train/build_data.py`, manifiestos): no disponible en la información proporcionada

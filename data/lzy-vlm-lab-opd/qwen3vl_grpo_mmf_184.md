@@ -58,8 +58,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3vl_grpo_mmf_184 | 8.767.123.696 | No disponible | Qwen3VLForConditionalGeneration | other | Repositorio privado en HuggingFace |
-| Qwen3-VL-8B (base) | 8.767.123.696 (estimado) | No disponible | Qwen3VLForConditionalGeneration | Apache 2.0 (según el repo oficial) | Publico en HuggingFace y GitHub |
+| qwen3vl_grpo_mmf_184 | 8.767.123.696 | No disponible | Qwen3VLForConditionalGeneration | other | Repositorio privado en Hugging Face |
+| Qwen3-VL-8B (base) | 8.767.123.696 (estimado) | No disponible | Qwen3VLForConditionalGeneration | Apache 2.0 (según el repo oficial) | Publico en Hugging Face y GitHub |
 
 No se dispone de datos de rendimiento publicados para ninguno de los dos modelos en la información recopilada. La comparativa se limita a parámetros arquitectónicos y de licencia. El checkpoint analizado es un fine-tuning del modelo base, por lo que comparte arquitectura y número de parámetros, pero su licencia es "other" y su repositorio es privado, lo que limita su acceso.
 
@@ -74,5 +74,5 @@ No se dispone de datos de rendimiento publicados para ninguno de los dos modelos
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lzy-vlm-lab-opd/qwen3vl_grpo_mmf_184
+- Hugging Face: https://huggingface.co/lzy-vlm-lab-opd/qwen3vl_grpo_mmf_184
 - Repositorio oficial de Qwen3-VL: https://github.com/QwenLM/Qwen3-VL

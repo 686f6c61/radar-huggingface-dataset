@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `tam-taml-10mb-after-ppt-shuff-dyck-100mb-ckpt500_seed3407` es un modelo de lenguaje pequeño, con 39,09 millones de parámetros, creado por el autor fpadovani mediante fine-tuning a partir de un modelo base denominado `tam-taml-10mb-ppt-shuff-dyck-100mb_seed3407`. Está publicado en HuggingFace como un modelo de generación de texto basado en la librería Transformers y entrenado con la librería TRL usando Supervised Fine-Tuning (SFT). No hay información pública sobre su arquitectura exacta, tamaño de contexto ni idiomas de entrenamiento en la model card disponible.
+El modelo `tam-taml-10mb-after-ppt-shuff-dyck-100mb-ckpt500_seed3407` es un modelo de lenguaje pequeño, con 39,09 millones de parámetros, creado por el autor fpadovani mediante fine-tuning a partir de un modelo base denominado `tam-taml-10mb-ppt-shuff-dyck-100mb_seed3407`. Está publicado en Hugging Face como un modelo de generación de texto basado en la librería Transformers y entrenado con la librería TRL usando Supervised Fine-Tuning (SFT). No hay información pública sobre su arquitectura exacta, tamaño de contexto ni idiomas de entrenamiento en la model card disponible.
 
 El nombre del modelo sugiere que puede haber sido entrenado sobre secuencias sintácticas relacionadas con el lenguaje de Dyck y operaciones de shuffle, pero esto no se confirma en la documentación. Dado su tamaño reducido, es un modelo experimental, pensado para entornos de investigación o pruebas de concepto donde se requieren modelos ligeros y de baja latencia. Su relevancia actual es limitada, ya que no se han publicado resultados de benchmarks ni detalles de entrenamiento más allá de la configuración básica.
 
@@ -21,7 +21,7 @@ El nombre del modelo sugiere que puede haber sido entrenado sobre secuencias sin
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tuning de un modelo base de tipo GPT-2, lo que implica una arquitectura decoder-only. Se ha entrenado con la librería TRL de HuggingFace en su versión 0.23.0, utilizando Supervised Fine-Tuning (SFT). El entrenamiento se realizó sobre una tarea no documentada, aunque el nombre del modelo apunta a un posible uso de secuencias generadas con el lenguaje de Dyck y operaciones de permutación o shuffle. No se han publicado datos sobre el número de tokens, la composición del dataset, ni técnicas adicionales como RLHF o DPO. Tampoco se detalla la longitud de la ventana de contexto, si bien al estar basado en GPT-2 es probable que sea limitada, aunque no se dispone de confirmación oficial.
+El modelo es un fine-tuning de un modelo base de tipo GPT-2, lo que implica una arquitectura decoder-only. Se ha entrenado con la librería TRL de Hugging Face en su versión 0.23.0, utilizando Supervised Fine-Tuning (SFT). El entrenamiento se realizó sobre una tarea no documentada, aunque el nombre del modelo apunta a un posible uso de secuencias generadas con el lenguaje de Dyck y operaciones de permutación o shuffle. No se han publicado datos sobre el número de tokens, la composición del dataset, ni técnicas adicionales como RLHF o DPO. Tampoco se detalla la longitud de la ventana de contexto, si bien al estar basado en GPT-2 es probable que sea limitada, aunque no se dispone de confirmación oficial.
 
 ## Capacidades
 
@@ -65,5 +65,5 @@ No disponible. No se conocen modelos de la misma categoría con datos de rendimi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/tam-taml-10mb-after-ppt-shuff-dyck-100mb-ckpt500_seed3407
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/tam-taml-10mb-after-ppt-shuff-dyck-100mb-ckpt500_seed3407
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new_tokenizers/runs/o0dk44s3

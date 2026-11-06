@@ -71,6 +71,6 @@ No se dispone de información suficiente para establecer una comparativa con mod
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yinita/ps4mas-sft-4b-claude-low400-ep3
+- Hugging Face: https://huggingface.co/yinita/ps4mas-sft-4b-claude-low400-ep3
 - Otros modelos del autor: https://huggingface.co/yinita/ps4mas-sft-4b-claude-x5-single-ep3 y https://huggingface.co/yinita/ps4mas-sft-x5-single-ep3
 - No se han encontrado papers, blogs, repos o demos en los resultados de búsqueda.

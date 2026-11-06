@@ -2,9 +2,9 @@
 
 ## Resumen
 
-bert-finetuned-ner es un modelo de clasificación de tokens (reconocimiento de entidades nombradas, NER) publicado por el usuario antipula388 en HuggingFace. Se trata de un ajuste fino del modelo de embeddings BAAI/bge-small-en-v1.5, un encoder tipo BERT de 33.215.625 parámetros, sobre un conjunto de datos que el autor no identifica en la model card. El resultado es un modelo denso, pequeño y de propósito específico, orientado a etiquetar secuencias de texto en inglés, no a generar texto.
+bert-finetuned-ner es un modelo de clasificación de tokens (reconocimiento de entidades nombradas, NER) publicado por el usuario antipula388 en Hugging Face. Se trata de un ajuste fino del modelo de embeddings BAAI/bge-small-en-v1.5, un encoder tipo BERT de 33.215.625 parámetros, sobre un conjunto de datos que el autor no identifica en la model card. El resultado es un modelo denso, pequeño y de propósito específico, orientado a etiquetar secuencias de texto en inglés, no a generar texto.
 
-El ajuste se realizó con el Trainer de HuggingFace durante 3 épocas, con una tasa de aprendizaje de 2e-05, tamaño de lote de 16 y semilla 42, alcanzando en el conjunto de evaluación una F1 de 0,8996, una precisión de 0,8811, un recall de 0,9189 y una exactitud de 0,9801. El repositorio ocupa 1,2 GB e incluye pesos en formato safetensors bajo licencia MIT, lo que permite uso comercial sin restricciones adicionales.
+El ajuste se realizó con el Trainer de Hugging Face durante 3 épocas, con una tasa de aprendizaje de 2e-05, tamaño de lote de 16 y semilla 42, alcanzando en el conjunto de evaluación una F1 de 0,8996, una precisión de 0,8811, un recall de 0,9189 y una exactitud de 0,9801. El repositorio ocupa 1,2 GB e incluye pesos en formato safetensors bajo licencia MIT, lo que permite uso comercial sin restricciones adicionales.
 
 Su relevancia práctica no viene del rendimiento bruto, sino del coste: con 33 millones de parámetros cabe en CPU y en cualquier GPU de consumo, y sirve como componente de extracción de entidades dentro de pipelines mayores de búsqueda, RAG o análisis documental. Ahora bien, la ausencia de documentación sobre el dataset de entrenamiento, el esquema de etiquetas y los idiomas soportados limita seriamente su uso directo en producción sin una validación previa por parte del equipo que lo adopte. El modelo registra 0 descargas y 0 likes en el momento de redactar esta ficha.
 
@@ -39,7 +39,7 @@ El entrenamiento se realizó con 3 épocas completas, learning rate lineal de 2e
 - Procesamiento de secuencias de hasta 512 tokens por pasada, sin ventana deslizante nativa.
 - Extracción de entidades a partir de las etiquetas aprendidas durante el ajuste; el conjunto concreto de etiquetas (por ejemplo, PER, ORG, LOC, MISC) no está documentado en la model card.
 - Compatible con la infraestructura estándar de transformers: `pipeline("token-classification")` y `AutoModelForTokenClassification`.
-- Marcado como `endpoints_compatible`, por lo que puede desplegarse en Inference Endpoints de HuggingFace.
+- Marcado como `endpoints_compatible`, por lo que puede desplegarse en Inference Endpoints de Hugging Face.
 - No soporta generación de texto, ya que es un encoder de clasificación.
 - No soporta tool calling, function calling ni uso como agente.
 - No dispone de modo de razonamiento (thinking mode), visión, audio ni multimodalidad.
@@ -104,7 +104,7 @@ Frente a alternativas como dslim/bert-base-NER, este modelo triplica menos pará
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/antipula388/bert-finetuned-ner
+- Modelo en Hugging Face: https://huggingface.co/antipula388/bert-finetuned-ner
 - Modelo base: https://huggingface.co/BAAI/bge-small-en-v1.5
 - Paper o blog del modelo: no disponible
 - Repositorio de código: no disponible

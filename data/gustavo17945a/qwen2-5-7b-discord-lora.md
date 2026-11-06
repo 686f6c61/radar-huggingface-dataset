@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Gustavo17945a/qwen2.5-7b-discord-lora` es un repositorio publicado en HuggingFace por el usuario Gustavo17945a. Por el identificador se deduce que se trata de un ajuste fino mediante LoRA sobre el modelo base Qwen2.5-7B, orientado a conversaciones en Discord; sin embargo, el autor no confirma esta informacion en ninguna parte de la model card, que es la plantilla generada automaticamente por el Hub y no contiene ningun campo cumplimentado. El repositorio declara la libreria `transformers` y el formato `safetensors`, y esta marcado como compatible con endpoints gestionados.
+`Gustavo17945a/qwen2.5-7b-discord-lora` es un repositorio publicado en Hugging Face por el usuario Gustavo17945a. Por el identificador se deduce que se trata de un ajuste fino mediante LoRA sobre el modelo base Qwen2.5-7B, orientado a conversaciones en Discord; sin embargo, el autor no confirma esta informacion en ninguna parte de la model card, que es la plantilla generada automaticamente por el Hub y no contiene ningun campo cumplimentado. El repositorio declara la libreria `transformers` y el formato `safetensors`, y esta marcado como compatible con endpoints gestionados.
 
 El repositorio presenta indicadores de que se trata de un artefacto sin validar ni documentar: cero descargas, cero "likes", un tamano de repositorio de 0.0 GB y metadatos de creacion y actualizacion separados por apenas ocho segundos (15 de septiembre de 2026). No se declara licencia, ni idiomas soportados, ni pipeline de inferencia, ni procedimiento de entrenamiento, ni hiperparametros, ni datos de evaluacion. La unica etiqueta tecnica relevante, `arxiv:1910.09700`, corresponde al articulo de Lacoste et al. (2019) sobre el calculador de impacto medioambiental, incluida automaticamente por la plantilla y no a un paper del modelo.
 
@@ -119,7 +119,7 @@ La comparacion directa con el modelo base solo es valida si se realizara una eva
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Gustavo17945a/qwen2.5-7b-discord-lora
+- Modelo en Hugging Face: https://huggingface.co/Gustavo17945a/qwen2.5-7b-discord-lora
 - Paper referenciado por la etiqueta `arxiv:1910.09700` (Lacoste et al., 2019, Quantifying the Carbon Emissions of Machine Learning): https://arxiv.org/abs/1910.09700
 - Calculador de impacto medioambiental citado en la model card: https://mlco2.github.io/impact
 - Documentacion publica del modelo base Qwen2.5-7B: https://huggingface.co/Qwen/Qwen2.5-7B

@@ -75,9 +75,9 @@ El modelo supera a la línea base trivial (*always-pass*) en Macro-F1 en 0,238 p
 
 | Modelo | Parametros | Enfoque | Macro-F1 (test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RubricTracing-9B-Item | 8,95 B | Ajuste fino completo de Qwen3.5-9B, predicción a nivel de ítem | 0,637 ± 0,009 | Apache 2.0 | HuggingFace, 5 particiones (fold0-fold4, `main` = fold-0) |
-| RubricTracing-9B-Criterion | 8,95 B (mismo base) | Ajuste fino completo de Qwen3.5-9B, predicción a nivel de criterio | No disponible en la información proporcionada | Apache 2.0 | HuggingFace (sjin4861/RubricTracing-9B-Criterion) |
-| Qwen3.5-9B (zero-shot) | 8,95 B | Modelo base sin ajustar, prompt con historial y rúbrica | 0,448 | No disponible | HuggingFace (Qwen/Qwen3.5-9B) |
+| RubricTracing-9B-Item | 8,95 B | Ajuste fino completo de Qwen3.5-9B, predicción a nivel de ítem | 0,637 ± 0,009 | Apache 2.0 | Hugging Face, 5 particiones (fold0-fold4, `main` = fold-0) |
+| RubricTracing-9B-Criterion | 8,95 B (mismo base) | Ajuste fino completo de Qwen3.5-9B, predicción a nivel de criterio | No disponible en la información proporcionada | Apache 2.0 | Hugging Face (sjin4861/RubricTracing-9B-Criterion) |
+| Qwen3.5-9B (zero-shot) | 8,95 B | Modelo base sin ajustar, prompt con historial y rúbrica | 0,448 | No disponible | Hugging Face (Qwen/Qwen3.5-9B) |
 | qDKT | No disponible | Modelo neuronal clásico de knowledge tracing (DKT con atención/deep KT) | 0,586 ± 0,007 | No disponible | No disponible |
 
 No se dispone de comparación con otros modelos ajustados a rúbricas o con modelos de KT de la misma familia publicados por terceros.
@@ -97,7 +97,7 @@ No se dispone de comparación con otros modelos ajustados a rúbricas o con mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sjin4861/RubricTracing-9B-Item
+- Modelo en Hugging Face: https://huggingface.co/sjin4861/RubricTracing-9B-Item
 - Modelo a nivel de criterio: https://huggingface.co/sjin4861/RubricTracing-9B-Criterion
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Conjunto de datos KT-PSP-25: https://huggingface.co/datasets/jungypark/KT-PSP-25

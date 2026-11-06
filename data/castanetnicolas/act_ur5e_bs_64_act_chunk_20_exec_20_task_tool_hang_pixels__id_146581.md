@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ACT_UR5e_BS_64_Act_Chunk_20_Exec_20_TASK_tool_hang_PIXELS__ID_146581 es una política de robótica entrenada con Action Chunking with Transformers (ACT), un método de aprendizaje por imitación que predice secuencias cortas de acciones (chunks) en lugar de un único paso de control. El modelo ha sido desarrollado por el usuario castanetnicolas y publicado en HuggingFace Hub mediante la librería LeRobot de HuggingFace, lo que lo integra directamente en el ecosistema de entrenamiento e inferencia de políticas robóticas de esa librería.
+ACT_UR5e_BS_64_Act_Chunk_20_Exec_20_TASK_tool_hang_PIXELS__ID_146581 es una política de robótica entrenada con Action Chunking with Transformers (ACT), un método de aprendizaje por imitación que predice secuencias cortas de acciones (chunks) en lugar de un único paso de control. El modelo ha sido desarrollado por el usuario castanetnicolas y publicado en Hugging Face Hub mediante la librería LeRobot de Hugging Face, lo que lo integra directamente en el ecosistema de entrenamiento e inferencia de políticas robóticas de esa librería.
 
 El modelo resuelve una tarea concreta de manipulación robótica: "Insert the hook into the base to build a frame, then hang the wrench on the hook" (la tarea Tool Hang del benchmark robomimic). Consume observaciones multimodales de bajo nivel (estado de 9 dimensiones y dos imágenes RGB de 84x84 píxeles) y produce vectores de acción de 7 dimensiones. Con 51.590.791 parámetros en formato safetensors y solo 0,2 GB de repositorio, es una política compacta que puede ejecutarse en hardware modesto.
 
@@ -67,7 +67,7 @@ No se dispone de datos cuantitativos comparativos en la información proporciona
 
 | Modelo | Parametros | Contexto / observaciones | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ACT (este modelo) | 51.590.791 | estado (9,) + 2 imágenes 84x84 | no disponible (sin evaluación publicada) | Apache 2.0 | HuggingFace Hub, LeRobot |
+| ACT (este modelo) | 51.590.791 | estado (9,) + 2 imágenes 84x84 | no disponible (sin evaluación publicada) | Apache 2.0 | Hugging Face Hub, LeRobot |
 | ACT original (Zhao et al., 2023) | no disponible | no disponible | no disponible en esta ficha | no disponible en esta ficha | paper arXiv:2304.13705 |
 | Diffusion Policy | no disponible | no disponible | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta búsqueda |
 | Behavior Cloning (BC) sobre robomimic | no disponible | no disponible | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta búsqueda |
@@ -86,7 +86,7 @@ No se dispone de datos cuantitativos comparativos en la información proporciona
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/castanetnicolas/ACT_UR5e_BS_64_Act_Chunk_20_Exec_20_TASK_tool_hang_PIXELS__ID_146581
+- Modelo en Hugging Face: https://huggingface.co/castanetnicolas/ACT_UR5e_BS_64_Act_Chunk_20_Exec_20_TASK_tool_hang_PIXELS__ID_146581
 - Dataset de entrenamiento: https://huggingface.co/datasets/castanetnicolas/robomimic_tool_hang_ph_image84
 - Paper de ACT (Action Chunking with Transformers): https://huggingface.co/papers/2304.13705 | https://arxiv.org/abs/2304.13705
 - Repositorio LeRobot: https://github.com/huggingface/lerobot

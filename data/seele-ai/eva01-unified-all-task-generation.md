@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EVA01 Unified All-Task Generation (este) | no disponible | no disponible | text-to-3D, image-to-3D, comprensión 3D | Apache 2.0 | Adaptador en HuggingFace; activos base en OpenEVA |
+| EVA01 Unified All-Task Generation (este) | no disponible | no disponible | text-to-3D, image-to-3D, comprensión 3D | Apache 2.0 | Adaptador en Hugging Face; activos base en OpenEVA |
 | TRELLIS | no disponible | no disponible | image-to-3D | no disponible en la información | Dependencia declarada del runtime |
 | TRELLIS.2 | no disponible | no disponible | generación 3D | no disponible en la información | Dependencia declarada del runtime |
 | Qwen3-VL | no disponible | no disponible | visión-lenguaje | no disponible en la información | Dependencia declarada del runtime |
@@ -88,7 +88,7 @@ No se dispone de datos suficientes para comparar parámetros, contexto o rendimi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SEELE-AI/EVA01-Unified-All-Task-Generation
+- Hugging Face: https://huggingface.co/SEELE-AI/EVA01-Unified-All-Task-Generation
 - Árbol de archivos: https://huggingface.co/SEELE-AI/EVA01-Unified-All-Task-Generation/tree/main
 - Repositorio OpenEVA: https://github.com/SeeleAI/OpenEVA
 - Carpeta EVA01 en OpenEVA: https://github.com/SeeleAI/OpenEVA/tree/main/EVA01

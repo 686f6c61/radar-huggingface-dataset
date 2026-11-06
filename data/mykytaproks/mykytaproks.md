@@ -85,7 +85,7 @@ No se han publicado en la informacion disponible resultados de benchmarks estand
 
 | Modelo | Parametros | Contexto | Accuracy | Brier | ECE | Latencia (p50) | Licencia / disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Laya | 421 M | no disponible | 0,668 | 0,467 | 0,046 | 34,6 ms | Apache 2.0, pesos safetensors en HuggingFace |
+| Laya | 421 M | no disponible | 0,668 | 0,467 | 0,046 | 34,6 ms | Apache 2.0, pesos safetensors en Hugging Face |
 | TypeSafe Jev 1.13.0 | no disponible | no disponible | 0,727 | 0,148 | 0,144 | 710 ms | no disponible, se consulta via API a 0,0004 USD/caso |
 | ModernBERT-base | 149 M | no disponible | 0,646 | 0,119 | 0,179 | 349 ms | no disponible en esta ficha |
 | Teacher Self-Agreement (techo) | no disponible | no disponible | 0,735 | no disponible | no disponible | no disponible | no disponible |
@@ -103,13 +103,13 @@ La comparativa se limita a los tres modelos incluidos por el autor en su propia 
 - Sin informacion sobre sesgos, composicion del dataset de entrenamiento, procesos de filtrado ni evaluaciones de seguridad.
 - Sin informacion sobre longitud de contexto, lo que impide saber si admite estados de flujo de trabajo extensos.
 - El modelo no esta orientado a generacion de texto libre, codigo ni matematicas; usarlo fuera de su tarea de clasificacion/decisión tipada no esta respaldado por datos.
-- Inconsistencia de identificacion: la ficha de HuggingFace consultada corresponde al ID `mykytaproks/mykytaproks`, mientras que la model card hace referencia a `convaiinnovations/laya-typed-decisions`. Conviene verificar cual es el repositorio canonico antes de integrarlo en produccion.
+- Inconsistencia de identificacion: la ficha de Hugging Face consultada corresponde al ID `mykytaproks/mykytaproks`, mientras que la model card hace referencia a `convaiinnovations/laya-typed-decisions`. Conviene verificar cual es el repositorio canonico antes de integrarlo en produccion.
 - Licencia Apache 2.0: permite uso comercial y modificacion, pero el autor no ofrece garantias ni soporte; no se declaran restricciones adicionales de uso aceptable.
 - Estado del repositorio: 0 descargas y 0 likes en el momento de la consulta, lo que indica ausencia de validacion por parte de la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace (ID consultado): https://huggingface.co/mykytaproks/mykytaproks
+- Modelo en Hugging Face (ID consultado): https://huggingface.co/mykytaproks/mykytaproks
 - Repositorio referenciado en la model card: https://huggingface.co/convaiinnovations/laya-typed-decisions
 - Organizacion del autor segun la model card: https://huggingface.co/convaiinnovations
 - Dataset del benchmark: https://huggingface.co/datasets/LocalLLaMA/typed-decisions

@@ -77,9 +77,9 @@ Recall retenido del modelo base (antes de unlearning): 0.842; suelo de cualifica
 
 | Modelo | Parametros | Contexto | Olvido selectivo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (DUET-film-AdaPop-popular-s1) | 8.030 M | 128k (heredado) | Si (411 hechos film) | llama3.1 | HuggingFace, 0 descargas |
-| AnniBori/Llama-3.1-8B-Instruct-DUET-film-ft (base) | 8.030 M | 128k | No (fine-tune DUET) | llama3.1 | HuggingFace |
-| meta-llama/Llama-3.1-8B-Instruct | 8.030 M | 128k | No | llama3.1 | HuggingFace, ampliamente usado |
+| Este modelo (DUET-film-AdaPop-popular-s1) | 8.030 M | 128k (heredado) | Si (411 hechos film) | llama3.1 | Hugging Face, 0 descargas |
+| AnniBori/Llama-3.1-8B-Instruct-DUET-film-ft (base) | 8.030 M | 128k | No (fine-tune DUET) | llama3.1 | Hugging Face |
+| meta-llama/Llama-3.1-8B-Instruct | 8.030 M | 128k | No | llama3.1 | Hugging Face, ampliamente usado |
 | Metodos de unlearning publicados (p. ej. variantes NPO/GD sobre Llama) | ~8B | variable | Si | variable | Repos de investigacion |
 
 La comparativa con otros checkpoints de la misma familia DUET/AdaPop no esta disponible en la informacion proporcionada; el autor publica variantes por semilla y configuracion que no se detallan aqui.
@@ -97,7 +97,7 @@ La comparativa con otros checkpoints de la misma familia DUET/AdaPop no esta dis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnniBori/Llama-3.1-8B-Instruct-DUET-film-AdaPop-popular-s1
+- Modelo en Hugging Face: https://huggingface.co/AnniBori/Llama-3.1-8B-Instruct-DUET-film-AdaPop-popular-s1
 - Modelo base del unlearning: https://huggingface.co/AnniBori/Llama-3.1-8B-Instruct-DUET-film-ft
 - Dataset DUET: https://huggingface.co/datasets/SwetieePawsss/DUET_LLM (commit `2c2b047bb569b205ea57f924b36e818d4e3f3903`, config `film`)
 - Llama 3.1-8B-Instruct: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct

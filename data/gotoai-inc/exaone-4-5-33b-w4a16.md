@@ -86,7 +86,7 @@ La principal diferencia frente a alternativas como Qwen2.5-VL es la licencia: EX
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/GotoAI-Inc/EXAONE-4.5-33B-W4A16
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/GotoAI-Inc/EXAONE-4.5-33B-W4A16
 - Modelo base (LG AI Research): https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B
 - Repositorio GitHub de EXAONE 4.5: https://github.com/LG-AI-EXAONE/EXAONE-4.5
 - Herramienta de cuantización usada (llm-quantizer): https://github.com/gotoai/llm-quantizer

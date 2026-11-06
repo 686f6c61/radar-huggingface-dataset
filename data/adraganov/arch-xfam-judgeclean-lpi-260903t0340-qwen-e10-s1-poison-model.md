@@ -74,7 +74,7 @@ No se dispone de modelos comparables directos, ya que este adaptador no tiene do
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/adraganov/arch-xfam-judgeclean-lpi-260903T0340-qwen-e10-s1-poison-model
+- Repositorio Hugging Face: https://huggingface.co/adraganov/arch-xfam-judgeclean-lpi-260903T0340-qwen-e10-s1-poison-model
 - Modelo base Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Documentacion de PEFT: https://huggingface.co/docs/peft
 - No se han encontrado papers, blogs ni demos asociados a este adaptador.

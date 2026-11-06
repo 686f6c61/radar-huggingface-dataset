@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `beit-large-patch16-224-pt22k-galaxy10-decals-full-v2` es un clasificador de imágenes especializado en morfología de galaxias, desarrollado por el usuario de HuggingFace `matthieulel`. Se trata de un ajuste fino completo (todos los parámetros actualizados) del backbone `microsoft/beit-large-patch16-224-pt22k`, un transformer de visión tipo BEiT preentrenado con 22.000 imágenes ImageNet-22k. El modelo resuelve una tarea concreta: clasificar imágenes astronómicas del conjunto Galaxy10 DECaLS en diez categorías morfológicas de galaxias.
+El modelo `beit-large-patch16-224-pt22k-galaxy10-decals-full-v2` es un clasificador de imágenes especializado en morfología de galaxias, desarrollado por el usuario de Hugging Face `matthieulel`. Se trata de un ajuste fino completo (todos los parámetros actualizados) del backbone `microsoft/beit-large-patch16-224-pt22k`, un transformer de visión tipo BEiT preentrenado con 22.000 imágenes ImageNet-22k. El modelo resuelve una tarea concreta: clasificar imágenes astronómicas del conjunto Galaxy10 DECaLS en diez categorías morfológicas de galaxias.
 
 Forma parte de una colección más amplia denominada Vision Foundation Models Benchmark, que evalúa 40 backbones preentrenados bajo dos regímenes de adaptación (full fine-tuning y, presumiblemente, adaptación paramétrica eficiente) siguiendo el protocolo revisado del artículo *When foundation models meet astronomical data* (Astronomy and Computing, versión revisada, 2026). Este checkpoint concreto corresponde a la configuración de full fine-tuning con semilla 42 y época 17 de 30, seleccionada por mínima pérdida de validación.
 
@@ -69,7 +69,7 @@ No se han publicado en la información disponible resultados comparativos con ot
 - En fp16/bf16: unos 0,6 GB de pesos, con consumo total estimado por debajo de 2 GB para batch 1.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM; cabe holgadamente en RTX 3060, RTX 4060, RTX 4090, A100 y H100. Para entrenamiento o fine-tuning completo se recomienda al menos 16-24 GB (el autor entrenó con una sola GPU en fp32, sin especificar el modelo).
 - Cabe en GPU consumer: sí, en cualquier GPU moderna con 4 GB o más.
-- Opciones de despliegue: transformers con PyTorch (vía `AutoModelForImageClassification`), exportación a ONNX Runtime, TorchScript o TensorRT para inferencia de baja latencia; también es compatible con endpoints de HuggingFace (tag `endpoints_compatible`).
+- Opciones de despliegue: transformers con PyTorch (vía `AutoModelForImageClassification`), exportación a ONNX Runtime, TorchScript o TensorRT para inferencia de baja latencia; también es compatible con endpoints de Hugging Face (tag `endpoints_compatible`).
 - Latencia y throughput: no disponibles en la información proporcionada. Al ser un ViT-large con 196 tokens de entrada, se espera un throughput alto en GPU moderna para batches grandes, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
@@ -78,9 +78,9 @@ No se dispone de resultados de los otros backbones del mismo benchmark en la inf
 
 | Modelo | Parametros | Entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| beit-large-patch16-224-pt22k-galaxy10-decals-full-v2 | 303,1 M | 224x224 px | Clasificación Galaxy10 DECaLS (10 clases) | Apache 2.0 | HuggingFace |
-| microsoft/beit-large-patch16-224-pt22k (base) | ~304 M | 224x224 px | Clasificación ImageNet-22k | Apache 2.0 | HuggingFace |
-| Otros backbones del Vision Foundation Models Benchmark | no disponible | no disponible | Clasificación Galaxy10 DECaLS | no disponible | Colección HuggingFace |
+| beit-large-patch16-224-pt22k-galaxy10-decals-full-v2 | 303,1 M | 224x224 px | Clasificación Galaxy10 DECaLS (10 clases) | Apache 2.0 | Hugging Face |
+| microsoft/beit-large-patch16-224-pt22k (base) | ~304 M | 224x224 px | Clasificación ImageNet-22k | Apache 2.0 | Hugging Face |
+| Otros backbones del Vision Foundation Models Benchmark | no disponible | no disponible | Clasificación Galaxy10 DECaLS | no disponible | Colección Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -95,7 +95,7 @@ No se dispone de resultados de los otros backbones del mismo benchmark en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matthieulel/beit-large-patch16-224-pt22k-galaxy10-decals-full-v2
+- Modelo en Hugging Face: https://huggingface.co/matthieulel/beit-large-patch16-224-pt22k-galaxy10-decals-full-v2
 - Modelo base: https://huggingface.co/microsoft/beit-large-patch16-224-pt22k
 - Dataset Galaxy10 DECaLS: https://huggingface.co/datasets/matthieulel/galaxy10_decals
 - Dataset de métricas por época y splits: https://huggingface.co/datasets/matthieulel/vision-foundation-models-benchmark-runs

@@ -113,7 +113,7 @@ No se dispone de datos de modelos comparables en la informacion proporcionada (n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shamidk/apex-flash-1-DS4-Q2-GGUF
+- Modelo en Hugging Face: https://huggingface.co/shamidk/apex-flash-1-DS4-Q2-GGUF
 - Modelo base: https://huggingface.co/cantina-security/apex-flash-1/tree/28c647a6bd0444973a7ef3d940c24c67e64f52fe
 - Runtime DS4: https://github.com/antirez/ds4
 - Commit del runtime: `4bd088c20da0b905771fb94142cf12d669103c20`

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-shelfsense-pricing-model es un modelo publicado en HuggingFace por el usuario theonlyoddzone bajo licencia Creative Commons Attribution 4.0 (cc-by-4.0). La informacion disponible publicamente es minima: la model card no contiene mas que la declaracion de licencia, sin descripcion de arquitectura, datos de entrenamiento, capacidades ni ejemplos de uso. El repositorio ocupa 0,7 GB y esta etiquetado con la region "us", pero no declara pipeline de inferencia ni idiomas soportados.
+shelfsense-pricing-model es un modelo publicado en Hugging Face por el usuario theonlyoddzone bajo licencia Creative Commons Attribution 4.0 (cc-by-4.0). La informacion disponible publicamente es minima: la model card no contiene mas que la declaracion de licencia, sin descripcion de arquitectura, datos de entrenamiento, capacidades ni ejemplos de uso. El repositorio ocupa 0,7 GB y esta etiquetado con la region "us", pero no declara pipeline de inferencia ni idiomas soportados.
 
 El nombre del repositorio sugiere un proposito relacionado con la fijacion de precios en el ambito del retail ("shelf" + "sense" + "pricing"), aunque no existe documentacion publica que confirme esta interpretacion. A fecha de la consulta acumula 0 descargas y 0 likes, y fue creado y actualizado en septiembre de 2026, con apenas treinta minutos de diferencia entre ambos eventos, lo que apunta a una publicacion reciente y practicamente sin validacion externa.
 
@@ -77,5 +77,5 @@ No disponible. No se han podido identificar modelos comparables porque se descon
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/theonlyoddzone/shelfsense-pricing-model
+- Modelo en Hugging Face: https://huggingface.co/theonlyoddzone/shelfsense-pricing-model
 - No se han encontrado papers, blogs, repositorios de codigo, demos ni articulos tecnicos asociados al modelo. Los resultados de busqueda web disponibles unicamente devolvieron paginas generales del motor de busqueda, sin informacion relevante sobre el modelo.

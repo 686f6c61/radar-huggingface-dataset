@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`aleivan42/ppo-LunarLander-v3` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v3 de Gymnasium, utilizando la librería Stable-Baselines3. El modelo ha sido publicado en HuggingFace Hub por el usuario aleivan42 y sigue el formato estándar de integración entre Stable-Baselines3 y el Hub mediante `huggingface_sb3`.
+`aleivan42/ppo-LunarLander-v3` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v3 de Gymnasium, utilizando la librería Stable-Baselines3. El modelo ha sido publicado en Hugging Face Hub por el usuario aleivan42 y sigue el formato estándar de integración entre Stable-Baselines3 y el Hub mediante `huggingface_sb3`.
 
 No se trata de un modelo de lenguaje ni de un transformer generativo, sino de una política neuronal entrenada para controlar una nave en un simulador físico 2D. El objetivo del entorno es aterrizar la nave de forma segura en una plataforma entre dos banderas, gestionando empuje lateral y vertical con un presupuesto de combustible limitado. Es un caso de referencia clásico en deep reinforcement learning, útil para validar pipelines de entrenamiento y para comparar configuraciones de PPO.
 
@@ -32,7 +32,7 @@ No se dispone de información sobre hiperparámetros de entrenamiento (número d
 - Control de política discreta en el entorno LunarLander-v3: selecciona entre cuatro acciones de propulsión en cada paso.
 - Aprendizaje por refuerzo profundo: política entrenada mediante PPO, adecuada para problemas de control continuo-discreto con recompensas densas.
 - Integración con Stable-Baselines3: puede cargarse con `PPO.load()` y evaluarse con `evaluate_policy` o `model.predict()`.
-- Compatibilidad con HuggingFace Hub vía `huggingface_sb3.load_from_hub`, aunque el snippet de uso en la model card está sin completar.
+- Compatibilidad con Hugging Face Hub vía `huggingface_sb3.load_from_hub`, aunque el snippet de uso en la model card está sin completar.
 - No soporta tool calling, function calling, agentes multi-paso, capacidades multilingües ni modos de razonamiento explícito.
 - No procesa texto, imágenes ni audio; su única entrada es el vector de observación del entorno.
 
@@ -67,8 +67,8 @@ No se han publicado en la información disponible resultados comparativos con ot
 
 | Modelo | Algoritmo | Entorno | Contexto / observación | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| aleivan42/ppo-LunarLander-v3 | PPO | LunarLander-v3 | Vector de 8 dimensiones | no disponible | HuggingFace Hub, 0 descargas |
-| Agentes PPO de referencia del curso *Deep RL Course* (HuggingFace) | PPO | LunarLander-v3 | Vector de 8 dimensiones | habitualmente MIT | Múltiples en el Hub, ampliamente usados |
+| aleivan42/ppo-LunarLander-v3 | PPO | LunarLander-v3 | Vector de 8 dimensiones | no disponible | Hugging Face Hub, 0 descargas |
+| Agentes PPO de referencia del curso *Deep RL Course* (Hugging Face) | PPO | LunarLander-v3 | Vector de 8 dimensiones | habitualmente MIT | Múltiples en el Hub, ampliamente usados |
 | Agentes DQN en LunarLander-v3 | DQN | LunarLander-v3 | Vector de 8 dimensiones | variable | Disponibles en el Hub y en la documentación de SB3 |
 | Agentes A2C en LunarLander-v3 | A2C | LunarLander-v3 | Vector de 8 dimensiones | variable | Disponibles en el Hub |
 
@@ -87,8 +87,8 @@ No se dispone de datos de rendimiento de las alternativas en la información pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aleivan42/ppo-LunarLander-v3
+- Modelo en Hugging Face: https://huggingface.co/aleivan42/ppo-LunarLander-v3
 - Stable-Baselines3: https://github.com/DLR-RM/stable-baselines3
-- HuggingFace SB3 (utilidad de carga): https://github.com/huggingface/huggingface_sb3
+- Hugging Face SB3 (utilidad de carga): https://github.com/huggingface/huggingface_sb3
 - Entorno LunarLander-v3 (Gymnasium): https://gymnasium.farama.org/environments/box2d/lunar_lander/
 - Documentación de PPO en Stable-Baselines3: https://stable-baselines3.readthedocs.io/en/master/modules/ppo.html

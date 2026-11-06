@@ -4,14 +4,14 @@
 
 El modelo `thepatch/stable-audio-open-small-GGUF` es una conversión de los pesos de Stable Audio Open Small (SAOS) al formato GGUF, realizada por el usuario `thepatch` para su uso con el runtime sa3.cpp. Se trata de un modelo de generación de audio a partir de texto, capaz de producir clips musicales y efectos de sonido a partir de descripciones en lenguaje natural. Esta conversión permite ejecutar el modelo en una implementación nativa optimizada con soporte de cuantización, lo que facilita su despliegue en entornos con recursos limitados.
 
-El modelo original fue desarrollado por Stability AI y se distribuye bajo la Stability AI Community License. La arquitectura incluye un Diffusion Transformer (DiT) entrenado con el sistema ARC, junto con un encoder de texto T5-base y un decoder Oobleck. Según los metadatos de HuggingFace, el modelo tiene 341.126.912 parámetros totales. El repositorio incluye el modelo base y dos finetunes validados: KickBass y Jerry Grunge, todos ellos disponibles en varios niveles de cuantización (F16, Q8_0, Q5_K_M y Q4_K_M).
+El modelo original fue desarrollado por Stability AI y se distribuye bajo la Stability AI Community License. La arquitectura incluye un Diffusion Transformer (DiT) entrenado con el sistema ARC, junto con un encoder de texto T5-base y un decoder Oobleck. Según los metadatos de Hugging Face, el modelo tiene 341.126.912 parámetros totales. El repositorio incluye el modelo base y dos finetunes validados: KickBass y Jerry Grunge, todos ellos disponibles en varios niveles de cuantización (F16, Q8_0, Q5_K_M y Q4_K_M).
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Diffusion Transformer (DiT) para audio con encoder T5-base y decoder Oobleck |
-| Parametros totales | 341.126.912 (segun metadatos de HuggingFace) |
+| Parametros totales | 341.126.912 (segun metadatos de Hugging Face) |
 | Parametros activos | No aplica (no es MoE) |
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | F16, Q8_0, Q5_K_M, Q4_K_M |

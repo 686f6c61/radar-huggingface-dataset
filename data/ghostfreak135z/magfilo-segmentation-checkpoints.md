@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ghostfreak135z/magfilo-segmentation-checkpoints es un repositorio de pesos alojado en HuggingFace por el usuario ghostfreak135z que, por su nombre y por el contexto de la búsqueda web, contiene checkpoints para la segmentación de filamentos solares en observaciones H-alpha. El repositorio tiene un tamano de 1,6 GB, licencia MIT y no incluye model card descriptiva: el README se limita a declarar la licencia, sin detallar arquitectura, datos de entrenamiento ni metricas.
+ghostfreak135z/magfilo-segmentation-checkpoints es un repositorio de pesos alojado en Hugging Face por el usuario ghostfreak135z que, por su nombre y por el contexto de la búsqueda web, contiene checkpoints para la segmentación de filamentos solares en observaciones H-alpha. El repositorio tiene un tamano de 1,6 GB, licencia MIT y no incluye model card descriptiva: el README se limita a declarar la licencia, sin detallar arquitectura, datos de entrenamiento ni metricas.
 
 El contexto de uso es el dataset MAGFiLO, la mayor coleccion de filamentos solares anotados manualmente a partir de observaciones H-alpha de la red GONG (Global Oscillation Network Group). MAGFiLO v1.0 contiene 704 imagenes JPEG del Sol y anotaciones (segmentaciones, bounding boxes, spines y etiquetas) para 8.212 filamentos. El repositorio encaja como artefacto de pesos asociado a la tarea de segmentacion de instancias planteada en el Filament Segmentation Challenge 2026 y en trabajos academicos como el paper arXiv 2509.18214.
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Categoria | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ghostfreak135z/magfilo-segmentation-checkpoints | Segmentacion de filamentos solares | no disponible | no aplica | MIT | HuggingFace (0 descargas) |
+| ghostfreak135z/magfilo-segmentation-checkpoints | Segmentacion de filamentos solares | no disponible | no aplica | MIT | Hugging Face (0 descargas) |
 | Segment Anything (SAM, facebookresearch) | Segmentacion de imagenes generica | 91M (ViT-B) a 636M (ViT-H) | no aplica (modelo de vision) | Apache 2.0 | GitHub y pesos publicos |
 | MAGFiLO v1.0 | Dataset de segmentacion solar | no aplica | no aplica | no disponible en la informacion | Kaggle y mlecofi.net |
 
@@ -77,7 +77,7 @@ SAM es la referencia generica de segmentacion de imagenes y podria servir como p
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/ghostfreak135z/magfilo-segmentation-checkpoints
+- Hugging Face del modelo: https://huggingface.co/ghostfreak135z/magfilo-segmentation-checkpoints
 - Proyecto MAGFiLO (MLEcoFi): https://www.mlecofi.net/magfilo
 - Paper arXiv 2509.18214 (clasificacion de quiralidad magnetica de filamentos solares): https://arxiv.org/html/2509.18214v1
 - Dataset MAGFiLO v1.0 en Kaggle: https://www.kaggle.com/datasets/esairlab/magfilo-v1-0-segmentation-of-solar-filaments

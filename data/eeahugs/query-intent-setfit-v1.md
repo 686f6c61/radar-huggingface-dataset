@@ -21,7 +21,7 @@ Su relevancia es practica y de coste: en un buscador institucional multilingue, 
 | Licencia | MIT (modelo); los datos de entrenamiento derivados de NLLB-200 (CC-BY-NC-4.0) y opus-mt (CC-BY-SA-4.0) mantienen sus condiciones |
 | Formato de pesos | safetensors (libreria `setfit`); incluye un `manifest.json` propio con `model_version`, `labels`, `eligible_labels` y `abstain_threshold` |
 
-Otros datos del repositorio: tamano 0,5 GB, 0 descargas y 0 likes en el momento de la consulta, creado el 2026-09-18 y actualizado el mismo dia. El pipeline declarado en HuggingFace es "no disponible".
+Otros datos del repositorio: tamano 0,5 GB, 0 descargas y 0 likes en el momento de la consulta, creado el 2026-09-18 y actualizado el mismo dia. El pipeline declarado en Hugging Face es "no disponible".
 
 ## Arquitectura y entrenamiento
 
@@ -103,7 +103,7 @@ Las cifras de parametros e idiomas de las alternativas son datos publicos de sus
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eeahugs/query-intent-setfit-v1
+- Modelo en Hugging Face: https://huggingface.co/eeahugs/query-intent-setfit-v1
 - Dataset de entrenamiento: https://huggingface.co/datasets/eeahugs/query-intent-setfit-v1-train
 - Agencia Europea de Medio Ambiente: https://www.eea.europa.eu
 - Backbone `intfloat/multilingual-e5-small`: no se incluye enlace en la model card; el modelo se referencia por nombre y revision `614241f`

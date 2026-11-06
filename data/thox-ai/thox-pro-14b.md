@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks verificados en la informacion dispo
 
 | Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| thox-pro-14b | 14B | 256.000 tokens | Texto + imagen | Apache 2.0 | Ollama y HuggingFace |
-| Ministral-3-14B-Instruct-2512 (base) | 14B | 256.000 tokens (heredado) | Texto + imagen | Apache 2.0 (upstream) | HuggingFace y Ollama (upstream) |
+| thox-pro-14b | 14B | 256.000 tokens | Texto + imagen | Apache 2.0 | Ollama y Hugging Face |
+| Ministral-3-14B-Instruct-2512 (base) | 14B | 256.000 tokens (heredado) | Texto + imagen | Apache 2.0 (upstream) | Hugging Face y Ollama (upstream) |
 | Alternativas de 14B multimodales | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparación más directa es con el propio modelo base, del que esta distribución no difiere en pesos. No se dispone de datos de benchmarks verificados para establecer comparaciones de rendimiento con otros modelos de la misma categoría.
@@ -86,7 +86,7 @@ La comparación más directa es con el propio modelo base, del que esta distribu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Thox-ai/thox-pro-14b
+- Hugging Face: https://huggingface.co/Thox-ai/thox-pro-14b
 - Modelo en Ollama: https://ollama.com/Thox-ai/thox-pro-14b
 - Modelo base: https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512
 - Sitio del proyecto THOX: https://thox.ai

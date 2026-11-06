@@ -79,8 +79,8 @@ No se dispone de datos suficientes para establecer una comparativa rigurosa. El 
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EchoNotes Qwen3.6-27B-adapters | Adaptadores LoRA sobre Qwen3.6-27B | no disponible (base de ~27 000 millones) | no disponible | no disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen3.6-27B | Modelo base completo | ~27 000 millones (segun denominacion) | no disponible | no disponible en la informacion consultada | HuggingFace |
+| EchoNotes Qwen3.6-27B-adapters | Adaptadores LoRA sobre Qwen3.6-27B | no disponible (base de ~27 000 millones) | no disponible | no disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen3.6-27B | Modelo base completo | ~27 000 millones (segun denominacion) | no disponible | no disponible en la informacion consultada | Hugging Face |
 | Otros sistemas de extraccion de informes de eco | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias

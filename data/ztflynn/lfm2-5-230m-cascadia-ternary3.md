@@ -96,8 +96,8 @@ Existe otro paquete Cascadia para un modelo mayor, `ZTFlynn/LFM2-700M-Cascadia-t
 
 ## Enlaces
 
-- [HuggingFace del paquete comprimido](https://huggingface.co/ZTFlynn/LFM2.5-230M-Cascadia-ternary3)
-- [HuggingFace del modelo base LiquidAI/LFM2.5-230M](https://huggingface.co/LiquidAI/LFM2.5-230M)
+- [Hugging Face del paquete comprimido](https://huggingface.co/ZTFlynn/LFM2.5-230M-Cascadia-ternary3)
+- [Hugging Face del modelo base LiquidAI/LFM2.5-230M](https://huggingface.co/LiquidAI/LFM2.5-230M)
 - [Documentación oficial de LFM2.5-230M en Liquid Docs](https://docs.liquid.ai/lfm/models/lfm25-230m)
 - [Blog de Liquid AI: LFM2.5-230M: Built to Run Anywhere](https://www.liquid.ai/blog/lfm2-5-230m)
 - [Repositorio del runtime Cascadia (cassie)](https://github.com/EntroMorphic/cassie)

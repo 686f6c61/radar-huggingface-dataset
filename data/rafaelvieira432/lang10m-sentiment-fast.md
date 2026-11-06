@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LANG-10M es un clasificador de identificación de idioma publicado por el usuario Rafaelvieira432 en HuggingFace. Se presenta como un detector de 69 idiomas construido sobre una capa de embedding con hashing de n-gramas (EmbeddingBag de 128 dimensiones y 300.000 buckets), distribuido en FP16 con un peso declarado de aproximadamente 73 MB y una latencia declarada inferior a 2 ms por frase en CPU básica. El repositorio incluye los pesos en formato PyTorch (`lang_10m_fp16.pt`), la configuración de arquitectura (`config.json`), el mapa de etiquetas ISO (`labels.json`) y un script de inferencia autónomo (`infer.py`). La licencia es Apache 2.0.
+LANG-10M es un clasificador de identificación de idioma publicado por el usuario Rafaelvieira432 en Hugging Face. Se presenta como un detector de 69 idiomas construido sobre una capa de embedding con hashing de n-gramas (EmbeddingBag de 128 dimensiones y 300.000 buckets), distribuido en FP16 con un peso declarado de aproximadamente 73 MB y una latencia declarada inferior a 2 ms por frase en CPU básica. El repositorio incluye los pesos en formato PyTorch (`lang_10m_fp16.pt`), la configuración de arquitectura (`config.json`), el mapa de etiquetas ISO (`labels.json`) y un script de inferencia autónomo (`infer.py`). La licencia es Apache 2.0.
 
 El modelo no es un modelo generativo ni un transformer: es un clasificador discriminativo de frase completa, pensado para despliegues de muy baja latencia en edge o como etapa de preprocesado en pipelines multilingües. Su interés práctico está en el coste: un clasificador de este tamaño puede ejecutarse en CPU sin GPU y en paralelo con cargas mayores (traducción, enrutado a LLM, filtrado de corpus) sin convertirse en cuello de botella.
 
@@ -17,7 +17,7 @@ Advertencia importante de catalogación: el identificador del repositorio es `la
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No aplica: clasificador de frase única. La ventana de n-gramas y el algoritmo de hash están en `config.json`, pero el valor no se detalla en la información disponible |
 | Tipos de cuantizacion | FP16 (declarado como "FP16 nativo"); no se documentan INT8, GGUF ni otras variantes |
-| Idiomas soportados | 69 idiomas (según la model card); el tag de HuggingFace indica `multilingual`. El listado completo está en `labels.json` |
+| Idiomas soportados | 69 idiomas (según la model card); el tag de Hugging Face indica `multilingual`. El listado completo está en `labels.json` |
 | Licencia | Apache 2.0 |
 | Formato de pesos | PyTorch `.pt` (`lang_10m_fp16.pt`), acompañado de `config.json`, `labels.json` e `infer.py`. Sin safetensors, GGUF ni ONNX publicados |
 
@@ -67,7 +67,7 @@ No se ha proporcionado información verificada de modelos comparables, por lo qu
 
 | Modelo | Categoria | Idiomas | Parametros | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LANG-10M (este modelo) | Clasificador de idioma con hashing de n-gramas + EmbeddingBag | 69 | ~38,4 M (estimacion derivada) | Apache 2.0 | HuggingFace, 0 descargas, sin evaluacion publicada |
+| LANG-10M (este modelo) | Clasificador de idioma con hashing de n-gramas + EmbeddingBag | 69 | ~38,4 M (estimacion derivada) | Apache 2.0 | Hugging Face, 0 descargas, sin evaluacion publicada |
 | fastText lid.176 | Clasificador de idioma de la libreria fastText | No disponible en la informacion proporcionada | No disponible | No disponible | Referencia de la categoria; datos sin verificar en esta ficha |
 | CLD3 (Compact Language Detector v3) | Detector de idioma para navegador, red neuronal pequena | No disponible en la informacion proporcionada | No disponible | No disponible | Referencia de la categoria; datos sin verificar en esta ficha |
 | GlotLID | Identificador de idioma multilingue de amplia cobertura | No disponible en la informacion proporcionada | No disponible | No disponible | Referencia de la categoria; datos sin verificar en esta ficha |
@@ -90,5 +90,5 @@ No es posible establecer una comparación cuantitativa de rendimiento porque est
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Rafaelvieira432/lang10m-sentiment-fast
+- Hugging Face: https://huggingface.co/Rafaelvieira432/lang10m-sentiment-fast
 - No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos relacionados con este modelo. Los resultados de búsqueda disponibles no guardan relación con el modelo y se han descartado.

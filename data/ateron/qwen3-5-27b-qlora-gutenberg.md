@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ateron/Qwen3.5-27B-QLora-Gutenberg es un repositorio publicado en HuggingFace por el usuario Ateron (fecha declarada en los metadatos: 24 de octubre de 2026) bajo licencia Apache 2.0. El nombre sugiere un ajuste fino con QLoRA sobre un modelo de la familia Qwen3.5 de 27.000 millones de parámetros, supuestamente entrenado con material del Proyecto Gutenberg. Sin embargo, la model card no contiene ni una sola línea de descripción: únicamente el bloque de frontmatter con la licencia, de modo que esa interpretación es una inferencia a partir del identificador y no está confirmada por el autor.
+Ateron/Qwen3.5-27B-QLora-Gutenberg es un repositorio publicado en Hugging Face por el usuario Ateron (fecha declarada en los metadatos: 24 de octubre de 2026) bajo licencia Apache 2.0. El nombre sugiere un ajuste fino con QLoRA sobre un modelo de la familia Qwen3.5 de 27.000 millones de parámetros, supuestamente entrenado con material del Proyecto Gutenberg. Sin embargo, la model card no contiene ni una sola línea de descripción: únicamente el bloque de frontmatter con la licencia, de modo que esa interpretación es una inferencia a partir del identificador y no está confirmada por el autor.
 
 Los datos objetivos disponibles son muy escasos: el repositorio ocupa 0,1 GB, lleva las etiquetas `gguf` y `license:apache-2.0`, no declara pipeline, idiomas, dataset ni resultados de evaluación, y acumula 0 descargas y 0 likes desde su creación. Además, los metadatos de safetensors informan de 39.845.888 parámetros totales, tres órdenes de magnitud por debajo de los 27 B que anuncia el nombre, una discrepancia que el repositorio no resuelve.
 
@@ -93,5 +93,5 @@ No se han identificado alternativas comparables verificables con la información
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ateron/Qwen3.5-27B-QLora-Gutenberg
+- Hugging Face: https://huggingface.co/Ateron/Qwen3.5-27B-QLora-Gutenberg
 - No se han encontrado en la búsqueda web papers, blogs, repositorios de código ni demos asociados a este modelo.

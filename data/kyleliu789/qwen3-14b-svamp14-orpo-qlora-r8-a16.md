@@ -89,7 +89,7 @@ La comparativa con otros modelos de razonamiento matemático como DeepSeek-Math-
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kyleliu789/qwen3-14b-svamp14-orpo-qlora-r8-a16
+- Hugging Face: https://huggingface.co/kyleliu789/qwen3-14b-svamp14-orpo-qlora-r8-a16
 - Modelo base Qwen3-14B: https://huggingface.co/Qwen/Qwen3-14B
 - Repositorio GitHub de Qwen3: https://github.com/QwenLM/Qwen3
 - Adaptador SFT relacionado: https://huggingface.co/kyleliu789/qwen3-14b-svamp14-sft-qlora-r8-a16

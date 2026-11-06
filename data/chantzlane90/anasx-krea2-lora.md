@@ -2,7 +2,7 @@
 
 ## Resumen
 
-anasx-krea2-lora es un adaptador LoRA de generacion de imagen publicado por el usuario chantzlane90 en HuggingFace. El adaptador esta disenado para el modelo base Krea 2 y se entrena para reproducir un personaje ficticio concreto, Ana Souza, descrito en la propia model card como un personaje adulto generado por IA (21+), no una persona real. Se activa mediante la palabra clave `anasx`.
+anasx-krea2-lora es un adaptador LoRA de generacion de imagen publicado por el usuario chantzlane90 en Hugging Face. El adaptador esta disenado para el modelo base Krea 2 y se entrena para reproducir un personaje ficticio concreto, Ana Souza, descrito en la propia model card como un personaje adulto generado por IA (21+), no una persona real. Se activa mediante la palabra clave `anasx`.
 
 El adaptador se entreno con la herramienta fal-ai/krea-2-trainer durante 1000 pasos con rango 32, y sus claves se remapearon al espacio de nombres `diffusion_model.*` que utiliza ComfyUI, con el objetivo declarado de que funcione en Sogni. El repositorio ocupa 0,2 GB, lo que es coherente con un adaptador LoRA de rango moderado y no con un modelo completo.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Base | Rango | Pasos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| chantzlane90/anasx-krea2-lora | LoRA de personaje | Krea 2 | 32 | 1000 | other | HuggingFace, 0 descargas, 0 likes |
+| chantzlane90/anasx-krea2-lora | LoRA de personaje | Krea 2 | 32 | 1000 | other | Hugging Face, 0 descargas, 0 likes |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre otros LoRA comparables para el modelo base Krea 2 en la documentacion proporcionada.
@@ -80,7 +80,7 @@ No se dispone de informacion sobre otros LoRA comparables para el modelo base Kr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chantzlane90/anasx-krea2-lora
+- Modelo en Hugging Face: https://huggingface.co/chantzlane90/anasx-krea2-lora
 - Entrenador fal-ai/krea-2-trainer: no disponible como enlace en la informacion proporcionada
 - Modelo base Krea 2: no disponible como enlace en la informacion proporcionada
 - Sogni: no disponible como enlace en la informacion proporcionada

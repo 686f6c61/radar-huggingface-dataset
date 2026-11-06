@@ -4,7 +4,7 @@
 
 `praiselab-picuslab/benchmark-slm-msmarco-gemma-2-2b-ft` es un adaptador LoRA (PEFT) entrenado sobre el modelo base `google/gemma-2-2b`. No se trata de un modelo de propósito general publicado de forma independiente, sino de un artefacto de evaluación: los tags de la ficha (`benchmark-slm`, `or2`, `dataset-msmarco`, `strategy-ft`) indican que forma parte de un banco de pruebas de modelos de lenguaje pequenos (SLM) sobre la tarea `or2` con el conjunto de datos MS MARCO, y que la estrategia aplicada ha sido un ajuste fino supervisado.
 
-El repositorio contiene únicamente los pesos del adaptador en formato safetensors (0,1 GB), no el modelo completo, por lo que su uso requiere descargar por separado el modelo base de Google y combinarlo. La ficha declara el inglés como único idioma y la librería `peft`, y el acceso está restringido (gated): es necesario aceptar las condiciones en HuggingFace antes de poder descargarlo.
+El repositorio contiene únicamente los pesos del adaptador en formato safetensors (0,1 GB), no el modelo completo, por lo que su uso requiere descargar por separado el modelo base de Google y combinarlo. La ficha declara el inglés como único idioma y la librería `peft`, y el acceso está restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de poder descargarlo.
 
 Su relevancia es, por tanto, acotada y de carácter metodológico: sirve como punto de comparación dentro de una matriz de experimentos de ajuste fino de SLM, no como un modelo listo para producción. No hay publicaciones, descargas ni valoraciones asociadas, y no se han divulgado resultados de benchmarks propios en la información disponible.
 
@@ -75,13 +75,13 @@ No se dispone de datos de rendimiento que permitan una comparación cuantitativa
 - Riesgo de alucinación: no evaluado en la información disponible; el ajuste sobre MS MARCO no garantiza fidelidad factual fuera del dominio.
 - Limitación de idioma: la ficha declara únicamente inglés, por lo que no cabe esperar un rendimiento fiable en castellano.
 - Longitud de contexto no disponible: impide planificar casos de uso con documentos largos.
-- Licencia no declarada y acceso restringido (gated): es necesario aceptar condiciones en HuggingFace; el uso comercial depende de los términos del modelo base `google/gemma-2-2b` y debe verificarse antes de cualquier despliegue.
+- Licencia no declarada y acceso restringido (gated): es necesario aceptar condiciones en Hugging Face; el uso comercial depende de los términos del modelo base `google/gemma-2-2b` y debe verificarse antes de cualquier despliegue.
 - Requiere combinar con el modelo base: el repositorio solo contiene el adaptador, de modo que no es autocontenido ni reproducible sin descargar `google/gemma-2-2b`.
 - Ausencia total de documentación técnica (dataset final, hiperparámetros, métricas) que impide auditar el proceso de entrenamiento.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/praiselab-picuslab/benchmark-slm-msmarco-gemma-2-2b-ft
+- Hugging Face: https://huggingface.co/praiselab-picuslab/benchmark-slm-msmarco-gemma-2-2b-ft
 - Modelo base: https://huggingface.co/google/gemma-2-2b
 - Dataset declarado: https://huggingface.co/datasets/microsoft/ms_marco
 - Paper, blog, repositorio o demo: no disponibles en la información proporcionada.

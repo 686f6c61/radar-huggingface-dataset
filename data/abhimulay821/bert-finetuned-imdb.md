@@ -2,11 +2,11 @@
 
 ## Resumen
 
-bert-finetuned-imdb es un ajuste fino de `google-bert/bert-base-uncased` publicado por el usuario abhimulay821 en HuggingFace, orientado a clasificación de texto (pipeline `text-classification`). Se trata de un modelo encoder-only de la familia BERT, con 109.483.778 parámetros reales según los pesos en safetensors, lo que coincide con la configuración estándar de BERT-base (12 capas, 768 dimensiones ocultas, 12 cabezas de atención, vocabulario WordPiece de 30.522 tokens). El repositorio ocupa 0,4 GB y la licencia declarada es Apache 2.0.
+bert-finetuned-imdb es un ajuste fino de `google-bert/bert-base-uncased` publicado por el usuario abhimulay821 en Hugging Face, orientado a clasificación de texto (pipeline `text-classification`). Se trata de un modelo encoder-only de la familia BERT, con 109.483.778 parámetros reales según los pesos en safetensors, lo que coincide con la configuración estándar de BERT-base (12 capas, 768 dimensiones ocultas, 12 cabezas de atención, vocabulario WordPiece de 30.522 tokens). El repositorio ocupa 0,4 GB y la licencia declarada es Apache 2.0.
 
 El nombre del modelo sugiere un ajuste sobre el corpus IMDB de reseñas de cine, pero la model card generada automáticamente por el `Trainer` indica explícitamente que el dataset de entrenamiento es "unknown" y que la descripción, los usos previstos y los datos de entrenamiento están sin documentar. El único resultado declarado es una pérdida de evaluación de 0,0008 tras una única época con `learning_rate` 2e-05 y `train_batch_size` 8, sin métricas de exactitud, F1 ni benchmarks publicados (el `model-index` aparece vacío).
 
-Su relevancia práctica es limitada: se trata de un experimento de ajuste fino sin validación comunitaria (0 descargas, 0 likes) y sin documentación suficiente para evaluar su calidad. Resulta útil, eso sí, como ejemplo de pipeline de fine-tuning de BERT con la API `Trainer` y como caso de estudio de metadatos incompletos o inconsistentes en el ecosistema HuggingFace.
+Su relevancia práctica es limitada: se trata de un experimento de ajuste fino sin validación comunitaria (0 descargas, 0 likes) y sin documentación suficiente para evaluar su calidad. Resulta útil, eso sí, como ejemplo de pipeline de fine-tuning de BERT con la API `Trainer` y como caso de estudio de metadatos incompletos o inconsistentes en el ecosistema Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -49,7 +49,7 @@ Los hiperparametros declarados en la model card son: `learning_rate` 2e-05, `tra
 - Filtrado previo de contenido en pipelines de moderacion: dada su latencia reducida, puede colocarse como primera etapa de clasificacion para descartar o priorizar grandes volumenes de texto antes de pasar por un modelo mayor.
 - Extraccion de embeddings para busqueda semantica: las representaciones del token `[CLS]` o el *mean pooling* de la ultima capa pueden alimentar un indice vectorial, siempre que se valide la calidad de las representaciones para el dominio objetivo.
 - Etiquetado por lotes en procesos de investigacion: clasificacion de corpus de texto en un solo paso, ejecutable en CPU, util para enriquecer datasets con etiquetas derivadas.
-- Prototipado docente o de evaluacion de pipelines de HuggingFace: sirve como ejemplo reproducible de fine-tuning con `Trainer`, carga de pesos con la libreria `transformers` y despliegue con text-embeddings-inference.
+- Prototipado docente o de evaluacion de pipelines de Hugging Face: sirve como ejemplo reproducible de fine-tuning con `Trainer`, carga de pesos con la libreria `transformers` y despliegue con text-embeddings-inference.
 - Servicio en entornos con recursos muy limitados: por tamano, se puede ejecutar en una instancia sin GPU o en un contenedor pequeno, con un coste operativo marginal.
 - No se recomienda su uso en produccion critica (atencion al cliente, decisiones automatizadas) sin una evaluacion previa propia, dado que no hay metricas de calidad ni documentacion de sesgos.
 
@@ -72,7 +72,7 @@ Estimaciones de memoria calculadas a partir del numero de parametros declarado (
 - VRAM en int8: aproximadamente 0,11 GB para pesos.
 - Cabe sobradamente en cualquier GPU de consumo, incluidas GTX 1650, RTX 3060, RTX 4090, e incluso en GPU integradas con memoria compartida.
 - Ejecucion en CPU: viable para inferencia por lotes; el modelo es de 109 M de parametros y no requiere acelerador.
-- Opciones de despliegue: `transformers` (PyTorch), text-embeddings-inference (declarado en los tags), endpoints de HuggingFace (declarado en los tags). No hay artefactos GGUF ni ONNX publicados en el repositorio, por lo que `llama.cpp` y Ollama requeririan una conversion manual.
+- Opciones de despliegue: `transformers` (PyTorch), text-embeddings-inference (declarado en los tags), endpoints de Hugging Face (declarado en los tags). No hay artefactos GGUF ni ONNX publicados en el repositorio, por lo que `llama.cpp` y Ollama requeririan una conversion manual.
 - vLLM y TGI se centran en modelos generativos; para un encoder de clasificacion no son la via habitual, aunque TGI soporta algunos modelos de clasificacion.
 - Latencia y throughput: no disponible (no hay mediciones publicadas).
 
@@ -80,10 +80,10 @@ Estimaciones de memoria calculadas a partir del numero de parametros declarado (
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| abhimulay821/bert-finetuned-imdb | 109,5 M | 512 tokens | Clasificacion de texto | Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
-| google-bert/bert-base-uncased (base) | 110 M | 512 tokens | Modelo de lenguaje enmascarado / base para fine-tuning | Apache 2.0 | HuggingFace, ampliamente descargado y validado |
-| textattack/bert-base-uncased-imdb | 110 M | 512 tokens | Clasificacion de sentimiento en IMDB | Apache 2.0 | HuggingFace, referencia comunitaria para IMDB |
-| distilbert-base-uncased-finetuned-sst-2-english | 66 M | 512 tokens | Clasificacion de sentimiento | Apache 2.0 | HuggingFace, modelo destilado mas rapido |
+| abhimulay821/bert-finetuned-imdb | 109,5 M | 512 tokens | Clasificacion de texto | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
+| google-bert/bert-base-uncased (base) | 110 M | 512 tokens | Modelo de lenguaje enmascarado / base para fine-tuning | Apache 2.0 | Hugging Face, ampliamente descargado y validado |
+| textattack/bert-base-uncased-imdb | 110 M | 512 tokens | Clasificacion de sentimiento en IMDB | Apache 2.0 | Hugging Face, referencia comunitaria para IMDB |
+| distilbert-base-uncased-finetuned-sst-2-english | 66 M | 512 tokens | Clasificacion de sentimiento | Apache 2.0 | Hugging Face, modelo destilado mas rapido |
 
 Comparativa de rendimiento: no disponible para el modelo analizado, ya que no publica metricas de exactitud ni F1 frente a ninguna de estas alternativas. La comparacion anterior se limita a parametros, contexto, licencia y disponibilidad.
 
@@ -103,7 +103,7 @@ Comparativa de rendimiento: no disponible para el modelo analizado, ya que no pu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abhimulay821/bert-finetuned-imdb
+- Modelo en Hugging Face: https://huggingface.co/abhimulay821/bert-finetuned-imdb
 - Modelo base: https://huggingface.co/google-bert/bert-base-uncased
 - Modelo base (referencia alternativa): https://huggingface.co/bert-base-uncased
 - Referencia de clasificacion en IMDB: https://huggingface.co/textattack/bert-base-uncased-imdb

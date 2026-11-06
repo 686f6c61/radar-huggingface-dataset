@@ -89,7 +89,7 @@ No se han encontrado en la informacion proporcionada modelos comparables con dat
 
 | Modelo | Parametros | Contexto | support_hit_at_1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TensorCode Investigator support relevance prototype | 13,6 M | no disponible | 0,5546875 | no disponible | HuggingFace (0 descargas) |
+| TensorCode Investigator support relevance prototype | 13,6 M | no disponible | 0,5546875 | no disponible | Hugging Face (0 descargas) |
 | Baseline lexico del propio autor (solapamiento de tokens) | no aplica | no aplica | 0,53125 | no aplica | descrito en la model card |
 | Otros rerankers o modelos de recuperacion comparables | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion recibida |
 
@@ -112,7 +112,7 @@ No se han encontrado en la informacion proporcionada modelos comparables con dat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jacob-valdez/tensorcode-investigator-hotpot-001
+- Modelo en Hugging Face: https://huggingface.co/jacob-valdez/tensorcode-investigator-hotpot-001
 - Dataset de entrenamiento: https://huggingface.co/datasets/hotpotqa/hotpot_qa
 - Paper de HotpotQA (referencia del dataset, no citado en la model card): no disponible en la informacion proporcionada.
 - Repositorio de la libreria `tensorcode`: no disponible en la informacion proporcionada.

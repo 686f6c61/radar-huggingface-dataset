@@ -79,7 +79,7 @@ No hay datos de rendimiento publicados que permitan una comparacion cuantitativa
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniCPM5-2B-Claude-Fable5-heretic (i1 GGUF, mradermacher) | 2B nominal (no confirmado) | no disponible | no disponible | GGUF (24 cuantizaciones) | HuggingFace, 0 descargas |
+| MiniCPM5-2B-Claude-Fable5-heretic (i1 GGUF, mradermacher) | 2B nominal (no confirmado) | no disponible | no disponible | GGUF (24 cuantizaciones) | Hugging Face, 0 descargas |
 | Qwen2.5-1.5B-Instruct (GGUF) | 1,5B | 32.768 tokens | Apache 2.0 (serie 1.5B) | GGUF, safetensors | Ampliamente desplegado |
 | Llama-3.2-3B-Instruct (GGUF) | 3,2B | 128.000 tokens | Llama 3.2 Community License | GGUF, safetensors | Ampliamente desplegado |
 | Gemma-2-2B-it (GGUF) | 2,6B | 8.192 tokens | Gemma Terms of Use | GGUF, safetensors | Ampliamente desplegado |
@@ -96,12 +96,12 @@ La diferencia fundamental no esta en los numeros, sino en la trazabilidad: los t
 - Contexto desconocido: sin longitud de contexto declarada, no se debe asumir capacidad para conversaciones largas ni para procesar documentos extensos.
 - Ausencia de adopcion: 0 descargas y 0 valoraciones implican que el modelo no ha sido validado por terceros; no hay informes independientes de calidad ni de comportamiento.
 - Contenido potencialmente sensible: los ajustes etiquetados como "heretic" suelen reducir los mecanismos de rechazo, lo que puede derivar en respuestas inapropiadas, ofensivas o inseguras sin aviso previo. Se recomienda filtrado en la capa de aplicacion si se expone a usuarios finales.
-- Incoherencia en los metadatos: el campo de parametros totales del repositorio (774.438) no concuerda con el sufijo "2B" del nombre, lo que sugiere datos incompletos o mal generados en la ficha de HuggingFace.
+- Incoherencia en los metadatos: el campo de parametros totales del repositorio (774.438) no concuerda con el sufijo "2B" del nombre, lo que sugiere datos incompletos o mal generados en la ficha de Hugging Face.
 - Repositorio de 0,0 GB declarado: el tamano del repositorio aparece como vacio en los metadatos, lo que impide confirmar que los ficheros GGUF esten realmente alojados y completos.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/MiniCPM5-2B-Claude-Fable5-heretic-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/MiniCPM5-2B-Claude-Fable5-heretic-i1-GGUF
 - Modelo base referenciado en la model card: https://huggingface.co/saidutta69/MiniCPM5-2B-Claude-Fable5-heretic
 - Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher
 

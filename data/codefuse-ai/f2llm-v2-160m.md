@@ -75,7 +75,7 @@ F2LLM-v2-160M ofrece una cobertura de idiomas significativamente mayor que las a
 
 ## Enlaces
 
-- [HuggingFace: codefuse-ai/F2LLM-v2-160M](https://huggingface.co/codefuse-ai/F2LLM-v2-160M)
+- [Hugging Face: codefuse-ai/F2LLM-v2-160M](https://huggingface.co/codefuse-ai/F2LLM-v2-160M)
 - [Paper (arXiv:2603.19223)](https://arxiv.org/abs/2603.19223) (referenciado en las etiquetas del repositorio)
 - [Dataset de entrenamiento: codefuse-ai/F2LLM-v2](https://huggingface.co/datasets/codefuse-ai/F2LLM-v2)
 - [Modelo base: codefuse-ai/F2LLM-v2-0.6B-Preview-Pruned-160M](https://huggingface.co/codefuse-ai/F2LLM-v2-0.6B-Preview-Pruned-160M)

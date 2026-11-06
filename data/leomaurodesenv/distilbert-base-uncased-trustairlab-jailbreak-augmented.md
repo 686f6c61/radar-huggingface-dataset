@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `leomaurodesenv/distilbert-base-uncased-trustairlab-jailbreak-augmented` es un clasificador de texto en inglés obtenido por ajuste fino (*fine-tuning*) de `distilbert/distilbert-base-uncased` sobre un conjunto de datos no documentado por el autor, orientado a la detección de intentos de *jailbreak* (prompts diseñados para eludir las salvaguardas de modelos generativos). Lo publica el usuario `leomaurodesenv` en HuggingFace bajo licencia Apache 2.0, y el resultado declarado en la model card es una exactitud de 0,9367 y una pérdida de validación de 0,2024.
+El modelo `leomaurodesenv/distilbert-base-uncased-trustairlab-jailbreak-augmented` es un clasificador de texto en inglés obtenido por ajuste fino (*fine-tuning*) de `distilbert/distilbert-base-uncased` sobre un conjunto de datos no documentado por el autor, orientado a la detección de intentos de *jailbreak* (prompts diseñados para eludir las salvaguardas de modelos generativos). Lo publica el usuario `leomaurodesenv` en Hugging Face bajo licencia Apache 2.0, y el resultado declarado en la model card es una exactitud de 0,9367 y una pérdida de validación de 0,2024.
 
 Se trata de un modelo pequeño, de 66.955.010 parámetros reales verificados en el archivo `safetensors`, con un tamaño de repositorio de 0,3 GB. Hereda la arquitectura de DistilBERT: transformer encoder de 6 capas, 768 dimensiones ocultas y 12 cabezas de atención, destilado a partir de BERT-base. Su ventana de contexto está limitada a 512 tokens, la longitud máxima de posiciones del modelo base, lo que condiciona su uso en prompts largos.
 
@@ -25,7 +25,7 @@ Otros datos verificados: tamano del repositorio 0,3 GB, pipeline `text-classific
 
 ## Arquitectura y entrenamiento
 
-El modelo es un *encoder* transformer de tipo DistilBERT, la variante destilada de BERT-base desarrollada por HuggingFace. Consta de 6 capas de *self-attention* con 12 cabezas cada una y una dimension oculta de 768, aproximadamente la mitad de profundidad que BERT-base. Sobre la salida del token `[CLS]` se anade una cabeza de clasificacion que produce la prediccion binaria (o multiclase, no se especifica) de *jailbreak*. El vocabulario es el de BERT en minusculas (WordPiece, 30.522 tokens) y la posicion maxima es 512.
+El modelo es un *encoder* transformer de tipo DistilBERT, la variante destilada de BERT-base desarrollada por Hugging Face. Consta de 6 capas de *self-attention* con 12 cabezas cada una y una dimension oculta de 768, aproximadamente la mitad de profundidad que BERT-base. Sobre la salida del token `[CLS]` se anade una cabeza de clasificacion que produce la prediccion binaria (o multiclase, no se especifica) de *jailbreak*. El vocabulario es el de BERT en minusculas (WordPiece, 30.522 tokens) y la posicion maxima es 512.
 
 Los hiperparametros de entrenamiento si estan documentados en la model card: 10 epocas, tasa de aprendizaje 2e-05 con planificador lineal y 50 pasos de *warmup*, optimizador `adamw_torch_fused` con betas (0,9 / 0,999) y epsilon 1e-08, semilla 42, *batch size* de 8 con 2 pasos de acumulacion de gradiente (16 efectivo en entrenamiento y 8 en evaluacion). El nombre del repositorio incluye el sufijo `augmented`, lo que sugiere algun tipo de aumento de datos, pero el autor no lo describe. Tampoco se detalla la composicion del conjunto de datos ("unknown dataset" en la model card) ni si hubo una fase de RLHF o DPO, algo por otra parte poco habitual en un clasificador de este tipo. No se declara ninguna innovacion tecnica adicional.
 
@@ -34,7 +34,7 @@ Los hiperparametros de entrenamiento si estan documentados en la model card: 10 
 - Clasificacion de texto en una unica pasada (*sequence classification*): asigna una etiqueta a una entrada de hasta 512 tokens.
 - Deteccion de intentos de *jailbreak* o de prompts adversariales, segun el nombre declarado del modelo.
 - Inferencia muy rapida: al tener 6 capas y 66 millones de parametros, el coste por peticion es de milisegundos en GPU y de decenas de milisegundos en CPU.
-- Compatibilidad con Text Embeddings Inference y con *endpoints* gestionados de HuggingFace (etiquetas `text-embeddings-inference` y `endpoints_compatible`).
+- Compatibilidad con Text Embeddings Inference y con *endpoints* gestionados de Hugging Face (etiquetas `text-embeddings-inference` y `endpoints_compatible`).
 - Extraccion de la representacion del token `[CLS]` como *embedding* de frase, si se reutiliza el *backbone* sin la cabeza de clasificacion.
 - No dispone de: generacion de texto, capacidad de razonamiento multi-paso, *tool calling*, uso como agente, vision, audio ni modo de pensamiento (*thinking*). Es exclusivamente un clasificador discriminativo.
 
@@ -68,7 +68,7 @@ La mejor perdida de validacion se alcanza en la epoca 2 (0,2024) y la mejor exac
 - VRAM estimada: aproximadamente 0,27 GB en fp32, 0,13 GB en fp16 y 0,07 GB en int8 para los pesos. Con activaciones y *batch* pequeno, cabe holgadamente en menos de 1 GB de memoria.
 - GPU recomendadas: cualquiera. Funciona sin problema en una GTX 1650, RTX 3060, RTX 4090 o en GPU de datacenter como T4, A100 o H100; estas ultimas estan sobredimensionadas para el modelo.
 - Cabe en GPU de consumo: si, en practicamente todas las GPU con al menos 2 GB de VRAM, y tambien en CPU.
-- Opciones de despliegue: `transformers` en PyTorch, Text Embeddings Inference (etiqueta declarada en el repositorio), *endpoints* de HuggingFace, y exportacion a ONNX Runtime para CPU. No esta publicado en formato GGUF, por lo que su uso directo en llama.cpp u Ollama requeriria conversion previa.
+- Opciones de despliegue: `transformers` en PyTorch, Text Embeddings Inference (etiqueta declarada en el repositorio), *endpoints* de Hugging Face, y exportacion a ONNX Runtime para CPU. No esta publicado en formato GGUF, por lo que su uso directo en llama.cpp u Ollama requeriria conversion previa.
 - Latencia y *throughput*: no disponibles. No hay mediciones publicadas por el autor. Como referencia arquitectonica, un DistilBERT de 6 capas procesa habitualmente cientos de secuencias por segundo en GPU moderna, pero este dato no esta verificado para este modelo concreto.
 - Almacenamiento: 0,3 GB de repositorio, trivial de cachear en local o en un contenedor.
 
@@ -100,7 +100,7 @@ La ventaja estructural frente a BERT-base es el coste: DistilBERT reduce el nume
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/leomaurodesenv/distilbert-base-uncased-trustairlab-jailbreak-augmented
+- Modelo en Hugging Face: https://huggingface.co/leomaurodesenv/distilbert-base-uncased-trustairlab-jailbreak-augmented
 - Modelo base: https://huggingface.co/distilbert/distilbert-base-uncased
 - Repositorio de Transformers (framework declarado, version 5.2.0): https://github.com/huggingface/transformers
 - La busqueda web realizada no ha devuelto ningun enlace relacionado con este modelo: los resultados obtenidos corresponden a resenas de tarjetas de credito y no guardan relacion con el contenido de esta ficha. No se dispone de *paper*, blog, repositorio adicional ni demo asociados al modelo.

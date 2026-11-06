@@ -74,10 +74,10 @@ La información proporcionada indica que, en modo Instruct, la variante 35B-A3B 
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniCPM-V 4.7 35B-A3B (FP8, esta ficha) | 35B totales, ~3B activos | no disponible | superior a Qwen3.6 35B-A3B en puntuación global con menor tiempo de inferencia (según el autor) | Apache 2.0 | HuggingFace, 26 descargas |
+| MiniCPM-V 4.7 35B-A3B (FP8, esta ficha) | 35B totales, ~3B activos | no disponible | superior a Qwen3.6 35B-A3B en puntuación global con menor tiempo de inferencia (según el autor) | Apache 2.0 | Hugging Face, 26 descargas |
 | Qwen3.6 35B-A3B | 35B totales, ~3B activos (A3B) | no disponible | referencia de comparación del autor | no disponible en la información | no disponible en la información |
-| MiniCPM-V 4.7 35B-A3B (BF16) | 35B totales, ~3B activos | no disponible | referencia sin cuantizar | Apache 2.0 | HuggingFace (openbmb) |
-| MiniCPM-V 4.7 35B-A3B-DSpark | 35B totales, ~3B activos | no disponible | variante con muestreo especulativo DSpark | no disponible en la información | HuggingFace (openbmb) |
+| MiniCPM-V 4.7 35B-A3B (BF16) | 35B totales, ~3B activos | no disponible | referencia sin cuantizar | Apache 2.0 | Hugging Face (openbmb) |
+| MiniCPM-V 4.7 35B-A3B-DSpark | 35B totales, ~3B activos | no disponible | variante con muestreo especulativo DSpark | no disponible en la información | Hugging Face (openbmb) |
 
 ## Limitaciones y advertencias
 
@@ -92,7 +92,7 @@ La información proporcionada indica que, en modo Instruct, la variante 35B-A3B 
 
 ## Enlaces
 
-- HuggingFace (esta variante FP8): https://huggingface.co/AutoResearch-Lab/MiniCPM-V-4.7-35B-A3B-FP8
+- Hugging Face (esta variante FP8): https://huggingface.co/AutoResearch-Lab/MiniCPM-V-4.7-35B-A3B-FP8
 - Modelo base BF16: https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B
 - Variante DSpark: https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-DSpark
 - GitHub MiniCPM-V: https://github.com/openbmb/MiniCPM-V

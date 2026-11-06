@@ -21,7 +21,7 @@ La relevancia de este paquete concreto es acotada y experimental: permite ejecut
 | Licencia | no disponible para el paquete; el modelo upstream DeepSeek-R1-Distill-Qwen-1.5B se distribuye bajo licencia MIT |
 | Formato de pesos | `.rax` (paquete binario cross-compilado para `buddy-cli`); el modelo upstream original usa safetensors |
 
-Otros metadatos: tamano del repositorio 14,2 GB; target `generic riscv64` (cualquier VLEN, sin Zfh/Zvfh); version `60f354a`; repositorio creado el 16 de octubre de 2026 y actualizado en la misma fecha segun los metadatos de HuggingFace; 0 descargas y 0 likes.
+Otros metadatos: tamano del repositorio 14,2 GB; target `generic riscv64` (cualquier VLEN, sin Zfh/Zvfh); version `60f354a`; repositorio creado el 16 de octubre de 2026 y actualizado en la misma fecha segun los metadatos de Hugging Face; 0 descargas y 0 likes.
 
 ## Arquitectura y entrenamiento
 
@@ -76,10 +76,10 @@ Estos valores corresponden al modelo en su formato original y no reflejan el ren
 
 | Modelo / artefacto | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RuyiAI/buddy-deepseek-r1-f32-packed-decode | 1,5B (upstream) | no disponible (upstream hasta 131.072) | `.rax` f32 para `buddy-cli` | no disponible | HuggingFace, 0 descargas |
-| deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B | 1,5B | hasta 131.072 tokens | safetensors | MIT | HuggingFace, ampliamente usado |
-| RuyiAI/buddy-deepseek-r1-f32-tiered-kv-cache | 1,5B (upstream) | no disponible | `.rax` para `buddy-cli` (con cache KV por niveles) | no disponible | HuggingFace |
-| Qwen2.5-1.5B-Instruct | 1,5B | hasta 131.072 tokens con YaRN | safetensors / GGUF | Apache-2.0 | HuggingFace, muy extendido |
+| RuyiAI/buddy-deepseek-r1-f32-packed-decode | 1,5B (upstream) | no disponible (upstream hasta 131.072) | `.rax` f32 para `buddy-cli` | no disponible | Hugging Face, 0 descargas |
+| deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B | 1,5B | hasta 131.072 tokens | safetensors | MIT | Hugging Face, ampliamente usado |
+| RuyiAI/buddy-deepseek-r1-f32-tiered-kv-cache | 1,5B (upstream) | no disponible | `.rax` para `buddy-cli` (con cache KV por niveles) | no disponible | Hugging Face |
+| Qwen2.5-1.5B-Instruct | 1,5B | hasta 131.072 tokens con YaRN | safetensors / GGUF | Apache-2.0 | Hugging Face, muy extendido |
 
 La diferencia principal frente a las alternativas es el formato: este repositorio no es un modelo reutilizable en frameworks estandar, sino un artefacto compilado para un runtime RISC-V concreto. Para usos generales en GPU o CPU x86 conviene el modelo upstream en safetensors o una cuantizacion GGUF.
 
@@ -98,7 +98,7 @@ La diferencia principal frente a las alternativas es el formato: este repositori
 ## Enlaces
 
 - Repositorio del paquete: https://huggingface.co/RuyiAI/buddy-deepseek-r1-f32-packed-decode
-- Perfil de RuyiAI en HuggingFace: https://huggingface.co/RuyiAI
+- Perfil de RuyiAI en Hugging Face: https://huggingface.co/RuyiAI
 - Web de RuyiAI (pila de IA para RISC-V): https://www.ruyiai.org/
 - Modelo upstream: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 - Repositorio de DeepSeek-R1: https://github.com/deepseek-ai/DeepSeek-R1

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CatVSDog es un modelo publicado en HuggingFace por el usuario tianivan91 bajo el identificador `tianivan91/CatVSDog`. Por el nombre y por el reducido numero de parametros (544.066 en total, segun los pesos en formato safetensors), se trata con alta probabilidad de un clasificador binario de imagenes (gato frente a perro) de proposito didactico o experimental, aunque la model card no confirma ni la tarea, ni el dataset, ni la arquitectura empleada.
+CatVSDog es un modelo publicado en Hugging Face por el usuario tianivan91 bajo el identificador `tianivan91/CatVSDog`. Por el nombre y por el reducido numero de parametros (544.066 en total, segun los pesos en formato safetensors), se trata con alta probabilidad de un clasificador binario de imagenes (gato frente a perro) de proposito didactico o experimental, aunque la model card no confirma ni la tarea, ni el dataset, ni la arquitectura empleada.
 
 El repositorio fue creado y actualizado el 10 de octubre de 2026, tiene un tamano de 0,0 GB y registra 0 descargas y 0 likes en el momento de la consulta. La unica documentacion disponible es la plantilla autogenerada por la integracion `PyTorchModelHubMixin` de `huggingface_hub`, que no aporta informacion sobre entrenamiento, datos o evaluacion.
 
@@ -74,7 +74,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 | Modelo | Parametros | Tarea declarada | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tianivan91/CatVSDog | 544.066 | no disponible (probable clasificacion de imagen) | no aplicable | no disponible | HuggingFace |
+| tianivan91/CatVSDog | 544.066 | no disponible (probable clasificacion de imagen) | no aplicable | no disponible | Hugging Face |
 | MobileNetV3-Small | ~2,5 millones | clasificacion de imagen (ImageNet) | no aplicable | Apache 2.0 (referencia habitual) | multiples repositorios y frameworks |
 | ResNet-18 | ~11,7 millones | clasificacion de imagen (ImageNet) | no aplicable | licencia por confirmar segun distribucion | multiples repositorios y frameworks |
 
@@ -94,7 +94,7 @@ Los datos de los modelos de referencia corresponden a especificaciones publicas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tianivan91/CatVSDog
+- Modelo en Hugging Face: https://huggingface.co/tianivan91/CatVSDog
 - Documentacion de `PyTorchModelHubMixin` (referenciada en la model card): https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin
 - Codigo: no disponible
 - Paper: no disponible

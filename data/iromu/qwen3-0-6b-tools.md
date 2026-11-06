@@ -76,7 +76,7 @@ La comparativa se limita a modelos de tamaño similar. El modelo de iromu se dif
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iromu/Qwen3-0.6B-tools
+- Modelo en Hugging Face: https://huggingface.co/iromu/Qwen3-0.6B-tools
 - Modelo base Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Dataset de entrenamiento: https://huggingface.co/datasets/r0b0tlab/qwen3.8-max-glm5.2-kimi-k3-distillation
 - Guía completa de la familia Qwen3: https://insiderllm.com/guides/qwen3-complete-guide/

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-model-3-quality-scorer-finetuned es un modelo de clasificación de texto obtenido mediante fine-tuning de distilbert-base-uncased, publicado por el usuario ridhanhimmee en HuggingFace. Se trata de un encoder transformer de 66.955.010 parámetros (aproximadamente 67 millones), con licencia Apache 2.0 y pesos en formato safetensors. El pipeline declarado es text-classification, aunque la model card no especifica la taxonomía de etiquetas ni la tarea concreta que puntúa el modelo.
+model-3-quality-scorer-finetuned es un modelo de clasificación de texto obtenido mediante fine-tuning de distilbert-base-uncased, publicado por el usuario ridhanhimmee en Hugging Face. Se trata de un encoder transformer de 66.955.010 parámetros (aproximadamente 67 millones), con licencia Apache 2.0 y pesos en formato safetensors. El pipeline declarado es text-classification, aunque la model card no especifica la taxonomía de etiquetas ni la tarea concreta que puntúa el modelo.
 
-El nombre del repositorio sugiere un uso como "scorer" de calidad (quality scorer), presumiblemente para asignar una puntuación o categoría de calidad a textos, pero esta interpretación no está confirmada por la documentación del autor: la model card es la plantilla autogenerada por el Trainer de HuggingFace y deja en "More information needed" las secciones de descripción, usos previstos, limitaciones y datos de entrenamiento. El repositorio acumula 0 descargas y 0 likes en el momento de la consulta.
+El nombre del repositorio sugiere un uso como "scorer" de calidad (quality scorer), presumiblemente para asignar una puntuación o categoría de calidad a textos, pero esta interpretación no está confirmada por la documentación del autor: la model card es la plantilla autogenerada por el Trainer de Hugging Face y deja en "More information needed" las secciones de descripción, usos previstos, limitaciones y datos de entrenamiento. El repositorio acumula 0 descargas y 0 likes en el momento de la consulta.
 
 Su relevancia es, por tanto, limitada y de carácter experimental: sirve como ejemplo de fine-tuning de un encoder ligero para clasificación, pero no dispone de documentación suficiente para evaluar su calidad real ni para recomendarlo en producción. Los resultados declarados (accuracy 1.0 y F1 1.0 en validación) deben interpretarse con cautela, tal como se detalla más abajo.
 
@@ -72,11 +72,11 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| model-3-quality-scorer-finetuned | 67 M | 512 tokens | Apache 2.0 | HuggingFace (0 descargas) | Fine-tuning sin documentar; métricas de validación no verificables |
-| distilbert-base-uncased | 66 M | 512 tokens | Apache 2.0 | HuggingFace (modelo base ampliamente usado) | Modelo base sin cabeza de clasificación ajustada a una tarea concreta |
-| bert-base-uncased | 110 M | 512 tokens | Apache 2.0 | HuggingFace | Mayor capacidad, mayor coste de inferencia; requiere fine-tuning para clasificación |
-| roberta-base | 125 M | 514 tokens | MIT | HuggingFace | Entrenado con más datos y BPE; habitualmente superior en clasificación en inglés |
-| deberta-v3-small | 142 M | 512 tokens | MIT | HuggingFace | Buen rendimiento en clasificación de texto en inglés a coste moderado |
+| model-3-quality-scorer-finetuned | 67 M | 512 tokens | Apache 2.0 | Hugging Face (0 descargas) | Fine-tuning sin documentar; métricas de validación no verificables |
+| distilbert-base-uncased | 66 M | 512 tokens | Apache 2.0 | Hugging Face (modelo base ampliamente usado) | Modelo base sin cabeza de clasificación ajustada a una tarea concreta |
+| bert-base-uncased | 110 M | 512 tokens | Apache 2.0 | Hugging Face | Mayor capacidad, mayor coste de inferencia; requiere fine-tuning para clasificación |
+| roberta-base | 125 M | 514 tokens | MIT | Hugging Face | Entrenado con más datos y BPE; habitualmente superior en clasificación en inglés |
+| deberta-v3-small | 142 M | 512 tokens | MIT | Hugging Face | Buen rendimiento en clasificación de texto en inglés a coste moderado |
 
 Los datos de los modelos comparativos corresponden a sus especificaciones públicas habituales; no se dispone de una comparación de rendimiento medida frente a este checkpoint concreto, ya que el autor no publica evaluación sobre un benchmark común.
 
@@ -94,9 +94,9 @@ Los datos de los modelos comparativos corresponden a sus especificaciones públi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ridhanhimmee/model-3-quality-scorer-finetuned
+- Modelo en Hugging Face: https://huggingface.co/ridhanhimmee/model-3-quality-scorer-finetuned
 - Modelo base: https://huggingface.co/distilbert-base-uncased
 - Variante del mismo autor: https://huggingface.co/ridhanhimmee/model-3-quality-scorer-HARD-finetuned
-- Perfil del autor en HuggingFace: https://huggingface.co/ridhanhimmee
+- Perfil del autor en Hugging Face: https://huggingface.co/ridhanhimmee
 - Paper de DistilBERT (Sanh et al., 2019): https://arxiv.org/abs/1910.01108
 - Paper de BERT (Devlin et al., 2018): https://arxiv.org/abs/1810.04805

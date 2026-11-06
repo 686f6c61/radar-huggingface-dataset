@@ -65,10 +65,10 @@ Las estimaciones siguientes corresponden al modelo base Qwen2.5-7B-Instruct (7,6
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks |
 |---|---|---|---|---|---|
-| Este checkpoint (HungryDino) | Adaptador sobre 7,61 B del base | No documentado | Apache 2.0 | Repositorio HuggingFace, 0 descargas | No disponibles |
+| Este checkpoint (HungryDino) | Adaptador sobre 7,61 B del base | No documentado | Apache 2.0 | Repositorio Hugging Face, 0 descargas | No disponibles |
 | Qwen2.5-7B-Instruct | 7,61 B | 32.768 nativos, 131.072 con YaRN | Apache 2.0 | Ampliamente desplegado | Publicados por el autor del base, no incluidos en esta ficha |
-| Llama 3.1 8B Instruct | 8,03 B | 128.000 | Llama 3.1 Community License | Repositorio oficial en HuggingFace | Publicados por Meta |
-| Mistral 7B Instruct v0.3 | 7,25 B | 32.000 | Apache 2.0 | Repositorio oficial en HuggingFace | Publicados por Mistral |
+| Llama 3.1 8B Instruct | 8,03 B | 128.000 | Llama 3.1 Community License | Repositorio oficial en Hugging Face | Publicados por Meta |
+| Mistral 7B Instruct v0.3 | 7,25 B | 32.000 | Apache 2.0 | Repositorio oficial en Hugging Face | Publicados por Mistral |
 
 ## Limitaciones y advertencias
 
@@ -84,7 +84,7 @@ Las estimaciones siguientes corresponden al modelo base Qwen2.5-7B-Instruct (7,6
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-eagle_numbers-collapse_p10_twf-run1-gen3
+- Modelo en Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-eagle_numbers-collapse_p10_twf-run1-gen3
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Repositorio de Unsloth (mencionado en la model card): https://github.com/unslothai/unsloth
 - La búsqueda web proporcionada no devolvió enlaces relevantes sobre este modelo (únicamente páginas de inicio de sesión de Zoho, sin relación con el contenido).

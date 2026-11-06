@@ -21,7 +21,7 @@ La información disponible es muy limitada: la model card no documenta idiomas, 
 | Licencia | apache-2.0 |
 | Formato de pesos | GGUF (12,3 GB) + `Modelfile` de Ollama |
 | Tamano del repositorio | 12,9 GB |
-| Fecha de publicacion (metadatos de HuggingFace) | 11 de septiembre de 2026 |
+| Fecha de publicacion (metadatos de Hugging Face) | 11 de septiembre de 2026 |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -89,7 +89,7 @@ No se han encontrado en la búsqueda web otros modelos comparables con datos ver
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/NINI26454/OpenAi-GPT-oss-20b-HERETIC-uncensored-NEO-Q3_K_M-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/NINI26454/OpenAi-GPT-oss-20b-HERETIC-uncensored-NEO-Q3_K_M-GGUF
 - Modelo base directo (DavidAU): https://huggingface.co/DavidAU/OpenAi-GPT-oss-20b-HERETIC-uncensored-NEO-Imatrix-gguf
 - Modelo original de OpenAI (`gpt-oss-20b`): no disponible en la información proporcionada
 - Paper, blog técnico o repositorio de código asociado: no disponible

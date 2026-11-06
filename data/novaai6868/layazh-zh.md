@@ -104,7 +104,7 @@ No se dispone de comparativas cuantitativas de rendimiento entre estos modelos e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NovaAI6868/layazh-zh
+- Modelo en Hugging Face: https://huggingface.co/NovaAI6868/layazh-zh
 - Licencia: https://huggingface.co/NovaAI6868/layazh-zh/blob/main/LICENSE
 - Wheel de instalación (`layazh` 0.1.0): https://huggingface.co/NovaAI6868/layazh-zh/resolve/d55f726a84aa2c17186c49d20fc35cf49c633f0e/layazh-0.1.0-py3-none-any.whl
 - Proyecto upstream (Laya, inglés): https://huggingface.co/convaiinnovations/laya

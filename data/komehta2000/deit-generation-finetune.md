@@ -30,7 +30,7 @@ El checkpoint incluido (`model.safetensors`) es un punto de inicialización vál
 - No se han verificado capacidades funcionales del modelo en la información disponible.
 - El propósito declarado es "generación" (generation) sobre la base de DeiT, aunque no se detalla qué tipo de generación (imagen, texto, etc.).
 - No hay soporte documentado para tool calling, agentes, razonamiento multi-paso ni capacidades multilingües.
-- La implementación es personalizada y requiere un adaptador explícito para cargarse con APIs genéricas de HuggingFace.
+- La implementación es personalizada y requiere un adaptador explícito para cargarse con APIs genéricas de Hugging Face.
 
 ## Casos de uso
 
@@ -59,12 +59,12 @@ No se dispone de modelos comparables en la misma categoría, dado que este repos
 
 - El checkpoint no ha sido entrenado ni auditado para robustez, equidad o transferencia de dominio.
 - No hay garantía de que el modelo produzca resultados útiles o coherentes; es un artefacto de inicialización.
-- La implementación personalizada puede no ser compatible con cargadores estándar de HuggingFace sin adaptadores adicionales.
+- La implementación personalizada puede no ser compatible con cargadores estándar de Hugging Face sin adaptadores adicionales.
 - La licencia BSD-3-Clause permite uso comercial, pero el autor advierte que deben revisarse los términos de las fuentes de datos externas si se usan con datasets propios.
 - Cualquier resultado futuro de un checkpoint entrenado debe documentarse por separado de los valores por defecto incluidos en el repositorio.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/komehta2000/deit-generation-finetune
+- Repositorio en Hugging Face: https://huggingface.co/komehta2000/deit-generation-finetune
 - Repositorio oficial de DeiT (Facebook Research): https://github.com/facebookresearch/deit
 - Documentación de Microsoft sobre fine-tuning (referencia general, no específica del modelo): https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/fine-tuning

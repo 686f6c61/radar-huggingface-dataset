@@ -103,5 +103,5 @@ El autor advierte que el entrenamiento continuó más allá del historial de eva
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/PresenceAI/Polyhymnia-32B-SFT-LoRA-v1.0
+- Hugging Face del adaptador: https://huggingface.co/PresenceAI/Polyhymnia-32B-SFT-LoRA-v1.0
 - Modelo base: https://huggingface.co/Qwen/Qwen3-32B

@@ -88,7 +88,7 @@ Como referencia externa a la informacion proporcionada, existen alternativas de 
 - Solo se incluye un fichero de pesos int8; no hay variantes GGUF ni fp16 en el repositorio, lo que limita el uso con llama.cpp u otros runtimes no basados en ONNX.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/krut42/voice-fastconformer-es-ctc-int8
+- Repositorio en Hugging Face: https://huggingface.co/krut42/voice-fastconformer-es-ctc-int8
 - Modelo base de NVIDIA: https://huggingface.co/nvidia/stt_es_fastconformer_hybrid_large_pc
 - Exportacion ONNX previa de OpenVoiceOS: https://huggingface.co/OpenVoiceOS/stt_es_fastconformer_hybrid_large_pc_onnx
 - Licencia CC BY 4.0: https://creativecommons.org/licenses/by/4.0/

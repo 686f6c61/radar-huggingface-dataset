@@ -66,10 +66,10 @@ La comparación se limita a aspectos estructurales, ya que no existen datos de r
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| Kali-Lite Vision 9B | 9B nominales (modelo base) | 32.768 tokens configurados | Mixta: GPL-2.0-only / Apache-2.0 (etiquetada `other`) | HuggingFace, configuración sobre Ollama; 0 descargas registradas | No disponible |
-| Qwen/Qwen3.5-9B (modelo base) | 9B nominales | No disponible | Apache-2.0 según la model card | HuggingFace | No disponible |
-| Qwen2.5-VL-7B | 7B | 128.000 tokens (según especificación pública del modelo) | Apache-2.0 | HuggingFace, múltiples runtimes | Fuera del alcance de esta ficha |
-| Llama 3.2 11B Vision | 11B | 128.000 tokens (según especificación pública del modelo) | Licencia comunitaria de Llama | HuggingFace, múltiples runtimes | Fuera del alcance de esta ficha |
+| Kali-Lite Vision 9B | 9B nominales (modelo base) | 32.768 tokens configurados | Mixta: GPL-2.0-only / Apache-2.0 (etiquetada `other`) | Hugging Face, configuración sobre Ollama; 0 descargas registradas | No disponible |
+| Qwen/Qwen3.5-9B (modelo base) | 9B nominales | No disponible | Apache-2.0 según la model card | Hugging Face | No disponible |
+| Qwen2.5-VL-7B | 7B | 128.000 tokens (según especificación pública del modelo) | Apache-2.0 | Hugging Face, múltiples runtimes | Fuera del alcance de esta ficha |
+| Llama 3.2 11B Vision | 11B | 128.000 tokens (según especificación pública del modelo) | Licencia comunitaria de Llama | Hugging Face, múltiples runtimes | Fuera del alcance de esta ficha |
 
 Nota: las filas de Qwen2.5-VL-7B y Llama 3.2 11B Vision se incluyen únicamente como referencia de categoría (modelos multimodales de tamaño medio); no se dispone de una comparación de rendimiento verificada frente a Kali-Lite Vision 9B.
 
@@ -88,7 +88,7 @@ Nota: las filas de Qwen2.5-VL-7B y Llama 3.2 11B Vision se incluyen únicamente 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/keepstar/Kali-Lite-Vision-9B
+- Modelo en Hugging Face: https://huggingface.co/keepstar/Kali-Lite-Vision-9B
 - Modelo base referenciado: https://huggingface.co/Qwen/Qwen3.5-9B (derivado de la etiqueta `base_model` de la ficha; no enlazado explícitamente en la model card)
 - Repositorio del proyecto: `Kalicorp/kalicorp-kali-lite` en GitHub, citado en la model card como fuente de código y documentación de seguridad. URL completa no disponible.
 - Búsqueda web: no se han encontrado resultados relevantes sobre este modelo. Los resultados devueltos corresponden a una marca de calzado ajena al ámbito de la inteligencia artificial y se descartan.

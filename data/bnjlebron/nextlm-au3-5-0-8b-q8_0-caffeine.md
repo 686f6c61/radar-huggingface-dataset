@@ -69,5 +69,5 @@ No disponible. No se proporcionan datos de comparación con otros modelos en la 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bnjlebron/nextlm-au3.5-0.8b-q8_0-caffeine
+- Repositorio Hugging Face: https://huggingface.co/bnjlebron/nextlm-au3.5-0.8b-q8_0-caffeine
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B

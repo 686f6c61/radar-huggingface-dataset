@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El introspection adapter para Qwen3.6-27B es un adaptador LoRA de interpretabilidad y auditoría desarrollado por el usuario asher577, publicado en HuggingFace bajo el identificador `asher577/qwen3.6-27b-introspection-adapter`. No se trata de un modelo generativo autónomo, sino de un complemento que se activa junto a un LoRA de comportamiento (behavior LoRA) previamente inyectado en el modelo base Qwen/Qwen3.6-27B, con el objetivo de que el modelo describa en lenguaje natural el comportamiento que dicho LoRA le ha instilado. La técnica reproduce el pipeline de los "introspection adapters" (IAs) descritos en el artículo arXiv 2604.16812.
+El introspection adapter para Qwen3.6-27B es un adaptador LoRA de interpretabilidad y auditoría desarrollado por el usuario asher577, publicado en Hugging Face bajo el identificador `asher577/qwen3.6-27b-introspection-adapter`. No se trata de un modelo generativo autónomo, sino de un complemento que se activa junto a un LoRA de comportamiento (behavior LoRA) previamente inyectado en el modelo base Qwen/Qwen3.6-27B, con el objetivo de que el modelo describa en lenguaje natural el comportamiento que dicho LoRA le ha instilado. La técnica reproduce el pipeline de los "introspection adapters" (IAs) descritos en el artículo arXiv 2604.16812.
 
 El adaptador se distribuye en dos variantes: `sft/` (entrenada únicamente con SFT sobre 515 LoRAs de comportamiento) y `sft_dpo/` (SFT seguida de DPO sobre 55 LoRAs adicionales). Según los resultados reportados por el autor, la variante SFT+DPO alcanza una tasa de acierto del 57,1 % en 81 LoRAs de comportamiento retenidos (con intervalo de confianza del 95 % de [0,487, 0,652]), frente al 5,4 % del LoRA de comportamiento solo. Esto supone un salto cualitativo en la capacidad de un modelo de verbalizar sus propias modificaciones de comportamiento.
 
@@ -75,7 +75,7 @@ Notas del autor sobre los resultados: una sola ejecución de entrenamiento por v
 
 | Modelo | Tipo | Base | Parámetros | Contexto | Resultado de introspección | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| asher577/qwen3.6-27b-introspection-adapter | LoRA de introspección | Qwen3.6-27B | Adaptador 0,9 GB (r 16) | no disponible | 57,1 % (SFT+DPO) en 81 comportamientos retenidos | no disponible | HuggingFace |
+| asher577/qwen3.6-27b-introspection-adapter | LoRA de introspección | Qwen3.6-27B | Adaptador 0,9 GB (r 16) | no disponible | 57,1 % (SFT+DPO) en 81 comportamientos retenidos | no disponible | Hugging Face |
 | Adaptador de introspección de los autores del paper (Qwen3-14B) | LoRA de introspección | Qwen3-14B | no disponible | no disponible | cifras del paper no comparables en términos absolutos según el autor | no disponible | no disponible en la información |
 | AuditBench / organismos de auditoría | Benchmark de comportamientos | varios | no aplica | no aplica | no aplica | no disponible | no disponible en la información |
 
@@ -97,6 +97,6 @@ No se dispone de otros adaptadores de introspección comparables en la informaci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/asher577/qwen3.6-27b-introspection-adapter
+- Hugging Face: https://huggingface.co/asher577/qwen3.6-27b-introspection-adapter
 - Paper de referencia: https://arxiv.org/abs/2604.16812
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `huangchangjun01/emotion` es un fine-tune del modelo DeepSeek-R1-Distill-Llama-8B, convertido a formato GGUF mediante la librería Unsloth. Se trata de un modelo de 8.030 millones de parámetros orientado a tareas conversacionales, según la etiqueta `conversational` incluida en su ficha de HuggingFace. El repositorio contiene un único archivo de pesos en cuantización Q8_0, lo que facilita su ejecución en entornos con recursos limitados mediante llama.cpp u otras herramientas compatibles con GGUF.
+El modelo `huangchangjun01/emotion` es un fine-tune del modelo DeepSeek-R1-Distill-Llama-8B, convertido a formato GGUF mediante la librería Unsloth. Se trata de un modelo de 8.030 millones de parámetros orientado a tareas conversacionales, según la etiqueta `conversational` incluida en su ficha de Hugging Face. El repositorio contiene un único archivo de pesos en cuantización Q8_0, lo que facilita su ejecución en entornos con recursos limitados mediante llama.cpp u otras herramientas compatibles con GGUF.
 
 La relevancia de este modelo reside en su naturaleza de fine-tune ligero sobre una base conocida por su razonamiento (DeepSeek-R1-Distill-Llama-8B), aunque la información pública disponible es muy escasa: no se especifican los datos de entrenamiento, el propósito exacto del ajuste ni las capacidades concretas adquiridas. El autor únicamente indica que se ajustó el comportamiento del token BOS para garantizar compatibilidad con GGUF. Esto limita cualquier evaluación rigurosa, por lo que esta ficha se basa principalmente en las características heredadas del modelo base y en los datos técnicos mínimos publicados.
 
@@ -77,6 +77,6 @@ La comparativa se limita a modelos de tamaño similar. Dado que no hay informaci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/huangchangjun01/emotion
+- Hugging Face: https://huggingface.co/huangchangjun01/emotion
 - Repositorio de Unsloth (herramienta de entrenamiento): https://github.com/unslothai/unsloth
 - Modelo base DeepSeek-R1-Distill-Llama-8B: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-8B

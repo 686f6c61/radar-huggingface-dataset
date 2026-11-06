@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `chris0809/scope-intent-distilmbert` es un ajuste fino completo (*full fine-tune*) del encoder multilingue `distilbert/distilbert-base-multilingual-cased`, desarrollado por el usuario chris0809 y publicado en HuggingFace. Su funcion no es generar texto, sino actuar como **clasificador binario de enrutado de intenciones**: dada una peticion de usuario, decide si puede responderse de forma directa (`DIRECT_RESPONSE`) o si requiere resolver primero un contrato de alcance con herramientas o estado externo (`REQUIRES_SCOPE_CONTRACT`). Es, por tanto, un componente de infraestructura para sistemas de agentes, no un modelo conversacional.
+El modelo `chris0809/scope-intent-distilmbert` es un ajuste fino completo (*full fine-tune*) del encoder multilingue `distilbert/distilbert-base-multilingual-cased`, desarrollado por el usuario chris0809 y publicado en Hugging Face. Su funcion no es generar texto, sino actuar como **clasificador binario de enrutado de intenciones**: dada una peticion de usuario, decide si puede responderse de forma directa (`DIRECT_RESPONSE`) o si requiere resolver primero un contrato de alcance con herramientas o estado externo (`REQUIRES_SCOPE_CONTRACT`). Es, por tanto, un componente de infraestructura para sistemas de agentes, no un modelo conversacional.
 
 El problema que resuelve es el coste de invocar herramientas o contextos externos de forma innecesaria: un enrutador ligero permite decidir en milisegundos si merece la pena activar un *tool call*, consultar un sistema de ficheros o resolver permisos antes de continuar. Con 135.326.210 parametros y un tamano de repositorio de 0,5 GB, el modelo es lo bastante pequeno para ejecutarse en CPU o en cualquier GPU de gama de consumo, lo que lo hace apto como pre-filtro en pipelines de agentes.
 
@@ -99,11 +99,11 @@ La ventaja estructural del modelo frente a XLM-RoBERTa-base o mDeBERTa-v3-base e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chris0809/scope-intent-distilmbert
+- Modelo en Hugging Face: https://huggingface.co/chris0809/scope-intent-distilmbert
 - Modelo base: https://huggingface.co/distilbert/distilbert-base-multilingual-cased
 - Dataset de entrenamiento: https://huggingface.co/datasets/chris0809/scope-intent-routing-20k
 - Fichero de umbral de decision: https://huggingface.co/chris0809/scope-intent-distilmbert/blob/main/router_metadata.json
 - Paper de DistilBERT (referencia de la arquitectura base): https://arxiv.org/abs/1910.01108
 - Paper de BERT (referencia del modelo del que se destila la base): https://arxiv.org/abs/1810.04805
 
-Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los unicos enlaces utiles son los del repositorio de HuggingFace y las referencias tecnicas de la arquitectura base.
+Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los unicos enlaces utiles son los del repositorio de Hugging Face y las referencias tecnicas de la arquitectura base.

@@ -45,7 +45,7 @@ Dado que no existe documentacion sobre el ajuste realizado ni evaluacion de su e
 - Experimentacion academica en tecnicas PEFT: sirve como caso de estudio de un pipeline QLoRA con Unsloth, comparando el comportamiento del adaptador frente al modelo base sin ajustar.
 - Investigacion sobre olvido catastrofico: permite medir cuanto del rendimiento original de Qwen2.5-7B-Instruct se conserva tras el ajuste de bajo rango, siempre que se realice una evaluacion propia.
 - Despliegue con enrutado multi-adaptador: en arquitecturas que cargan varios adaptadores LoRA sobre una misma instancia del modelo base (por ejemplo, vLLM con soporte LoRA), este adaptador podria registrarse como una variante adicional.
-- Uso educativo y reproducibilidad de recetas de entrenamiento: util para ilustrar el formato de publicacion de un adaptador PEFT en HuggingFace y sus limitaciones documentales.
+- Uso educativo y reproducibilidad de recetas de entrenamiento: util para ilustrar el formato de publicacion de un adaptador PEFT en Hugging Face y sus limitaciones documentales.
 
 ## Benchmarks y rendimiento
 No se han publicado resultados de benchmarks en la informacion disponible.
@@ -85,7 +85,7 @@ La diferencia clave frente a esas alternativas no es de rendimiento, sino de nat
 - No apto para produccion sin validacion propia: cualquier despliegue deberia ir precedido de una evaluacion interna del adaptador frente al modelo base sin ajustar, con conjuntos de validacion representativos del caso de uso.
 
 ## Enlaces
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/MobiusGaian/qwen2_5_7b_qlora_unsloth_adapter
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/MobiusGaian/qwen2_5_7b_qlora_unsloth_adapter
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Articulo referenciado en las etiquetas del repositorio (Lacoste et al., 2019, "Quantifying the Carbon Emissions of Machine Learning"): https://arxiv.org/abs/1910.09700
 - Libreria PEFT: https://github.com/huggingface/peft

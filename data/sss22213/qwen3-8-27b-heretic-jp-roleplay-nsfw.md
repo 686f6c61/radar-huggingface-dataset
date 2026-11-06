@@ -105,7 +105,7 @@ Los tres modelos comparten tokenizador, plantilla de chat y torre de vision, por
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sss22213/Qwen3.8-27B-Heretic-JP-Roleplay-NSFW
+- Repositorio Hugging Face: https://huggingface.co/sss22213/Qwen3.8-27B-Heretic-JP-Roleplay-NSFW
 - Modelo padre (sin ajuste de rol): https://huggingface.co/sss22213/Qwen3.8-27B-Heretic-NoRefusal
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.8-27B
 - Dataset de entrenamiento: https://huggingface.co/datasets/Aratako/Synthetic-Japanese-Roleplay-NSFW-DeepSeek-V3-0324-20k-formatted

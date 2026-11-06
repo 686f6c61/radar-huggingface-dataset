@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ind-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed455` es un ajuste fino supervisado (SFT) del checkpoint `francesca9805/ind-latn-100mb-ppt-mp-struct-core-100mb_seed455`, publicado por el usuario de HuggingFace `francesca9805` y vinculado a un proyecto de investigación de la Universidad de Groningen (el panel de seguimiento apunta a la entidad `f-padovani-university-of-groningen` en Weights & Biases). Se trata de un modelo pequeño, de arquitectura GPT-2 y 124.770.816 parámetros (unos 124,8 millones), generado con la librería TRL 0.23.0 sobre Transformers 4.56.2.
+El modelo `ind-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed455` es un ajuste fino supervisado (SFT) del checkpoint `francesca9805/ind-latn-100mb-ppt-mp-struct-core-100mb_seed455`, publicado por el usuario de Hugging Face `francesca9805` y vinculado a un proyecto de investigación de la Universidad de Groningen (el panel de seguimiento apunta a la entidad `f-padovani-university-of-groningen` en Weights & Biases). Se trata de un modelo pequeño, de arquitectura GPT-2 y 124.770.816 parámetros (unos 124,8 millones), generado con la librería TRL 0.23.0 sobre Transformers 4.56.2.
 
 Por la nomenclatura del repositorio, todo apunta a un experimento de investigación centrado en tokenizadores y en el preentrenamiento/ajuste sobre un corpus de aproximadamente 100 MB etiquetado como `ind-latn` (probablemente indonesio en escritura latina), con una mezcla de datos denominada `struct-core`, un entrenamiento detenido en el paso 500 y una semilla fija (455). Ninguno de estos extremos se confirma explícitamente en la model card, que es prácticamente una plantilla autogenerada por TRL: no incluye descripción del dataset, ni idiomas declarados, ni licencia efectiva, ni resultados de evaluación.
 
@@ -49,7 +49,7 @@ No se especifica el número de tokens de entrenamiento, la composición del data
 - Generación de texto sintético para aumento de datos: puede producir continuaciones de texto en el dominio del corpus de entrenamiento para preentrenar o regularizar modelos mayores, siempre que se filtre y valide la calidad de la salida.
 - Evaluación comparativa de recetas de ajuste: sirve como baseline controlado (semilla y checkpoint fijos) frente a otros checkpoints de la misma serie para medir el impacto de cambios en datos o hiperparámetros.
 - Experimentos de destilación: al tener 124,8 M de parámetros, es un candidato razonable como alumno en procesos de destilación desde modelos mayores, o como profesor para modelos aún más pequeños.
-- Docencia y prácticas de NLP: su tamaño permite entrenar y ejecutar inferencia en una GPU de consumo o incluso en CPU, lo que lo hace adecuado para cursos sobre transformers, SFT y pipelines de HuggingFace.
+- Docencia y prácticas de NLP: su tamaño permite entrenar y ejecutar inferencia en una GPU de consumo o incluso en CPU, lo que lo hace adecuado para cursos sobre transformers, SFT y pipelines de Hugging Face.
 - Prototipado de interfaces conversacionales de bajo coste: el pipeline de ejemplo acepta mensajes con rol y devuelve texto generado, suficiente para validar una interfaz antes de migrar a un modelo mayor.
 - Pruebas de despliegue y cuantización: útil para validar flujos de conversión a GGUF, cuantización a 4 bits y servicio con vLLM, TGI o llama.cpp sin consumir recursos significativos.
 
@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `francesca9805/ind-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed455` | 124,8 M | No disponible | No disponible | HuggingFace, safetensors | Ajuste SFT experimental, sin benchmarks ni idiomas declarados |
-| GPT-2 base (`openai-community/gpt2`) | 124 M | 1024 tokens | MIT | HuggingFace, safetensors y GGUF | Referencia de la misma arquitectura y tamaño; ampliamente evaluado |
-| DistilGPT-2 (`distilbert/distilgpt2`) | 82 M | 1024 tokens | Apache 2.0 | HuggingFace, safetensors y GGUF | Version destilada de GPT-2, mas rapida y con licencia permisiva |
-| TinyLlama 1.1B (`TinyLlama/TinyLlama-1.1B-Chat-v1.0`) | 1,1 B | 2048 tokens | Apache 2.0 | HuggingFace, safetensors y GGUF | Alternativa mas capaz para generacion conversacional, exige mas recursos |
+| `francesca9805/ind-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed455` | 124,8 M | No disponible | No disponible | Hugging Face, safetensors | Ajuste SFT experimental, sin benchmarks ni idiomas declarados |
+| GPT-2 base (`openai-community/gpt2`) | 124 M | 1024 tokens | MIT | Hugging Face, safetensors y GGUF | Referencia de la misma arquitectura y tamaño; ampliamente evaluado |
+| DistilGPT-2 (`distilbert/distilgpt2`) | 82 M | 1024 tokens | Apache 2.0 | Hugging Face, safetensors y GGUF | Version destilada de GPT-2, mas rapida y con licencia permisiva |
+| TinyLlama 1.1B (`TinyLlama/TinyLlama-1.1B-Chat-v1.0`) | 1,1 B | 2048 tokens | Apache 2.0 | Hugging Face, safetensors y GGUF | Alternativa mas capaz para generacion conversacional, exige mas recursos |
 
 La comparación directa con GPT-2 base es la más pertinente por arquitectura y número de parámetros, pero conviene subrayar que el modelo aquí descrito no publica licencia, idiomas ni evaluaciones, por lo que cualquier sustitución en un proyecto real debería pasar por una verificación propia de licencia y calidad antes de adoptarlo.
 
@@ -93,7 +93,7 @@ La comparación directa con GPT-2 base es la más pertinente por arquitectura y 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/ind-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/ind-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed455
 - Modelo base: https://huggingface.co/francesca9805/ind-latn-100mb-ppt-mp-struct-core-100mb_seed455
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Experimento de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/3u4854a4

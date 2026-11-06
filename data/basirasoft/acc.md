@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BasiraSoft/ACC es un modelo publicado en HuggingFace por el usuario u organizacion BasiraSoft (identificador de autor "BasiraSoft", region "us"). En el momento de redactar esta ficha, la model card asociada unicamente contiene la declaracion de licencia "zlib" y no incluye ningun texto descriptivo, documentacion tecnica, guia de uso ni ejemplos de inferencia. El repositorio tiene un tamano de 0,3 GB, lo que sugiere un conjunto de pesos relativamente pequeno, aunque no se especifica el numero de parametros ni el formato de los ficheros.
+BasiraSoft/ACC es un modelo publicado en Hugging Face por el usuario u organizacion BasiraSoft (identificador de autor "BasiraSoft", region "us"). En el momento de redactar esta ficha, la model card asociada unicamente contiene la declaracion de licencia "zlib" y no incluye ningun texto descriptivo, documentacion tecnica, guia de uso ni ejemplos de inferencia. El repositorio tiene un tamano de 0,3 GB, lo que sugiere un conjunto de pesos relativamente pequeno, aunque no se especifica el numero de parametros ni el formato de los ficheros.
 
 El modelo acumula 0 descargas y 0 "likes" en la plataforma, y su fecha de creacion y ultima actualizacion corresponde al 3 de octubre de 2026 (con dos minutos de diferencia entre ambas), lo que indica que se trata de un artefacto recien subido y sin validacion por parte de la comunidad. No se ha publicado informacion sobre arquitectura, datos de entrenamiento, capacidades ni resultados de evaluacion.
 
@@ -23,12 +23,12 @@ Dada la ausencia total de documentacion tecnica verificable, esta ficha se limit
 | Tamano del repositorio | 0,3 GB |
 | Pipeline declarado | no disponible |
 | Region declarada | us |
-| Fecha de creacion (HuggingFace) | 2026-10-03 |
+| Fecha de creacion (Hugging Face) | 2026-10-03 |
 | Fecha de ultima actualizacion | 2026-10-03 |
 
 ## Arquitectura y entrenamiento
 
-No disponible. La model card publicada en HuggingFace no contiene ningun apartado descriptivo mas alla de la etiqueta de licencia "zlib". No se especifica si el modelo usa una arquitectura transformer, un mezcla de expertos (MoE), un modelo de espacio de estados (SSM) o una arquitectura hibrida; tampoco se indica el numero de parametros, la profundidad de la red, las dimensiones de las capas de atencion ni el tamano de la ventana de contexto.
+No disponible. La model card publicada en Hugging Face no contiene ningun apartado descriptivo mas alla de la etiqueta de licencia "zlib". No se especifica si el modelo usa una arquitectura transformer, un mezcla de expertos (MoE), un modelo de espacio de estados (SSM) o una arquitectura hibrida; tampoco se indica el numero de parametros, la profundidad de la red, las dimensiones de las capas de atencion ni el tamano de la ventana de contexto.
 
 Tampoco hay informacion sobre el corpus de entrenamiento, el numero de tokens procesados, la composicion del dataset, la existencia de fases de ajuste fino supervisado, RLHF o DPO, ni sobre posibles innovaciones tecnicas (atencion lineal, decodificacion especulativa, destilacion, etc.). El unico dato objetivo es el tamano del repositorio (0,3 GB), que resulta compatible con un modelo de parametros reducidos o con un checkpoint fuertemente cuantizado, pero no permite extraer conclusiones fiables sobre la arquitectura ni el rendimiento.
 
@@ -68,7 +68,7 @@ No disponible. Al desconocerse el tamano, la arquitectura y las capacidades del 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BasiraSoft/ACC | no disponible | no disponible | no disponible | zlib | HuggingFace |
+| BasiraSoft/ACC | no disponible | no disponible | no disponible | zlib | Hugging Face |
 | Alternativas | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -83,7 +83,7 @@ No disponible. Al desconocerse el tamano, la arquitectura y las capacidades del 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BasiraSoft/ACC
+- Modelo en Hugging Face: https://huggingface.co/BasiraSoft/ACC
 - Listado de modelos del autor: https://huggingface.co/BasiraSoft/models
 - Otro modelo del mismo autor (referencia): https://huggingface.co/BasiraSoft/tilelogic3.1
 - Sitio web del autor (Reino Unido): https://uk.basirasoft.com/

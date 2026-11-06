@@ -80,7 +80,7 @@ La comparativa directa con otros modelos de la misma categoría no está disponi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bloomer010/Ling-3.0-flash-REAP176-45B-A5B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/bloomer010/Ling-3.0-flash-REAP176-45B-A5B-GGUF
 - Modelo base: https://huggingface.co/inclusionAI/Ling-3.0-flash
 - Paper REAP (arXiv): https://arxiv.org/abs/2510.13999
 - Pull request de soporte BailingMoE en llama.cpp: https://github.com/ggml-org/llama.cpp/pull/26608

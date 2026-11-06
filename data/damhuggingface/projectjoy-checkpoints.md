@@ -79,6 +79,6 @@ No se identifican en la información proporcionada modelos directamente comparab
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/DaMHuggingface/ProjectJoy-checkpoints
+- Repositorio Hugging Face: https://huggingface.co/DaMHuggingface/ProjectJoy-checkpoints
 - Repositorio GitHub del proyecto: https://github.com/DanielMercado60660/ProjectJoy
 - Dataset LJSpeech: https://keithito.com/LJ-Speech-Dataset/

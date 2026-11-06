@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/RiverCub-Gemma-3-27B-impotent-heresy-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/RiverCub-Gemma-3-27B-impotent-heresy-GGUF
 - Modelo base: https://huggingface.co/MuXodious/RiverCub-Gemma-3-27B-impotent-heresy
 - Cuantizaciones imatrix: https://huggingface.co/mradermacher/RiverCub-Gemma-3-27B-impotent-heresy-i1-GGUF
 - Pagina de descargas del autor: https://hf.tst.eu/model#RiverCub-Gemma-3-27B-impotent-heresy-GGUF

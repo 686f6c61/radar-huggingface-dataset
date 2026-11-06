@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`olusegunola/phi-1.5-primekg-ctl-evalprompt-seed999` es un checkpoint de la libreria `transformers` publicado en HuggingFace por el usuario `olusegunola`. El identificador del repositorio sugiere un artefacto de investigacion que combina tres pistas: una base derivada de Phi-1.5, un componente relacionado con PrimeKG (grafo de conocimiento de medicina de precision) y un ajuste de tipo "control" sobre una prompt de evaluacion con la semilla 999. Sin embargo, la model card publicada es la plantilla autogenerada por HuggingFace y no contiene informacion sustantiva: no se documentan autor, tipo de modelo, idiomas, licencia, datos de entrenamiento ni resultados.
+`olusegunola/phi-1.5-primekg-ctl-evalprompt-seed999` es un checkpoint de la libreria `transformers` publicado en Hugging Face por el usuario `olusegunola`. El identificador del repositorio sugiere un artefacto de investigacion que combina tres pistas: una base derivada de Phi-1.5, un componente relacionado con PrimeKG (grafo de conocimiento de medicina de precision) y un ajuste de tipo "control" sobre una prompt de evaluacion con la semilla 999. Sin embargo, la model card publicada es la plantilla autogenerada por Hugging Face y no contiene informacion sustantiva: no se documentan autor, tipo de modelo, idiomas, licencia, datos de entrenamiento ni resultados.
 
-El repositorio ocupa 0,1 GB y presenta 0 descargas y 0 "likes" en el momento de la consulta. Ese tamano es notablemente inferior al de un checkpoint completo de 1.300 millones de parametros en `float16` (que rondaria los 2,6 GB), por lo que es plausible que se trate de un adaptador LoRA, de un subconjunto de pesos o de un modelo de menor tamano; no hay informacion que permita confirmarlo. La unica etiqueta tematica presente, `arxiv:1910.09700`, corresponde al articulo del calculador de impacto ambiental de Lacoste et al. (2019) que la propia plantilla de HuggingFace inserta por defecto, no a un articulo sobre el modelo.
+El repositorio ocupa 0,1 GB y presenta 0 descargas y 0 "likes" en el momento de la consulta. Ese tamano es notablemente inferior al de un checkpoint completo de 1.300 millones de parametros en `float16` (que rondaria los 2,6 GB), por lo que es plausible que se trate de un adaptador LoRA, de un subconjunto de pesos o de un modelo de menor tamano; no hay informacion que permita confirmarlo. La unica etiqueta tematica presente, `arxiv:1910.09700`, corresponde al articulo del calculador de impacto ambiental de Lacoste et al. (2019) que la propia plantilla de Hugging Face inserta por defecto, no a un articulo sobre el modelo.
 
 En su estado actual, el artefacto no es evaluable como modelo de produccion: falta licencia explicita, no hay ficha de datos ni de evaluacion, y no existe ninguna medicion publicada. Debe tratarse como un objeto de investigacion reproducible o como un residuo de un experimento, no como un modelo listo para desplegar.
 
@@ -103,7 +103,7 @@ La comparacion relevante no es de rendimiento sino de trazabilidad: los tres mod
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/olusegunola/phi-1.5-primekg-ctl-evalprompt-seed999
+- Repositorio en Hugging Face: https://huggingface.co/olusegunola/phi-1.5-primekg-ctl-evalprompt-seed999
 - Articulo citado en las etiquetas del Hub (calculador de impacto ambiental, no relacionado con el modelo): https://arxiv.org/abs/1910.09700
 - Referencia de la familia base probable, Phi-1.5 (Microsoft Research), informacion no oficial de este checkpoint: https://huggingface.co/microsoft/phi-1_5
 - Informe tecnico de Phi-1.5, como contexto de la base probable: https://arxiv.org/abs/2309.05463

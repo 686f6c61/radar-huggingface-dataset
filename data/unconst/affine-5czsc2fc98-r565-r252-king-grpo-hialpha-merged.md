@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 ## Comparativa con modelos similares
 
-No se dispone de información comparativa con otros modelos en la documentación proporcionada. Dado que el modelo es experimental y tiene una arquitectura específica (Qwen3.5 MoE con affine), no se pueden establecer comparaciones fiables sin datos de benchmarks. Se recomienda consultar la página de HuggingFace para futuras actualizaciones.
+No se dispone de información comparativa con otros modelos en la documentación proporcionada. Dado que el modelo es experimental y tiene una arquitectura específica (Qwen3.5 MoE con affine), no se pueden establecer comparaciones fiables sin datos de benchmarks. Se recomienda consultar la página de Hugging Face para futuras actualizaciones.
 
 ## Limitaciones y advertencias
 
@@ -72,11 +72,11 @@ No se dispone de información comparativa con otros modelos en la documentación
 - La licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantías sobre el rendimiento en producción.
 - El tamaño del repositorio (70,2 GB) implica que la descarga y el despliegue requieren recursos de almacenamiento y ancho de banda considerables.
 - No se especifica la longitud de contexto; si es similar a otros modelos Qwen3.5 MoE, podría ser de 128K tokens, pero no está confirmado.
-- El modelo fue creado en agosto de 2026 (según la fecha de HuggingFace), lo que sugiere que es muy reciente y podría tener problemas no detectados.
+- El modelo fue creado en agosto de 2026 (según la fecha de Hugging Face), lo que sugiere que es muy reciente y podría tener problemas no detectados.
 
 ## Enlaces
 
-- [HuggingFace - unconst/Affine-5czsc2fc98-r565-r252-king-grpo-hialpha-merged](https://huggingface.co/unconst/Affine-5czsc2fc98-r565-r252-king-grpo-hialpha-merged)
+- [Hugging Face - unconst/Affine-5czsc2fc98-r565-r252-king-grpo-hialpha-merged](https://huggingface.co/unconst/Affine-5czsc2fc98-r565-r252-king-grpo-hialpha-merged)
 - Modelo base: [unconst/Affine-5czsc2fc98-r252-merged](https://huggingface.co/unconst/Affine-5czsc2fc98-r252-merged)
 
 No se han encontrado papers, blogs o repositorios adicionales en la información proporcionada.

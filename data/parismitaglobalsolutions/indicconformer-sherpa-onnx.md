@@ -81,7 +81,7 @@ Se dispone de datos limitados para una comparativa cuantitativa. En la informaci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/parismitaglobalsolutions/indicconformer-sherpa-onnx
+- Hugging Face: https://huggingface.co/parismitaglobalsolutions/indicconformer-sherpa-onnx
 - sherpa-onnx: https://github.com/k2-fsa/sherpa-onnx
 - AI4Bharat: https://huggingface.co/ai4bharat
 - Oriserve: https://huggingface.co/Oriserve

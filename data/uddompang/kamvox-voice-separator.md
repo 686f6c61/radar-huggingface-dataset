@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| KamVox voice separator (este) | MDX-Net ONNX para navegador | no disponible | `[batch, 4, 3072, frames]`, frames múltiplo de 32 | MIT | HuggingFace, onnxruntime-web |
+| KamVox voice separator (este) | MDX-Net ONNX para navegador | no disponible | `[batch, 4, 3072, frames]`, frames múltiplo de 32 | MIT | Hugging Face, onnxruntime-web |
 | UVR-MDX-NET Inst HQ 3 original | MDX-Net ONNX | no disponible | 256 frames fijos | MIT (UVR) | Repositorio de Ultimate Vocal Remover |
 | Kim Vocal 2 original | MDX-Net ONNX | no disponible | 256 frames fijos | MIT (UVR) | Repositorio de Ultimate Vocal Remover |
 | python-audio-separator (MDX) | Implementación de inferencia | no aplica | chunking configurable | MIT | PyPI / GitHub |
@@ -89,7 +89,7 @@ La comparativa se limita a las variantes originales de los mismos pesos, ya que 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/uddompang/kamvox-voice-separator
+- Hugging Face: https://huggingface.co/uddompang/kamvox-voice-separator
 - Ultimate Vocal Remover (UVR): https://github.com/Anjok07/ultimatevocalremovergui
 - KamVox Studio: https://kamvox.app
 - python-audio-separator (referencia de inferencia MDX): no disponible en la información proporcionada

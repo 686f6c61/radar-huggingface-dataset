@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`diffusion_insert_gear_in_gripper_lr0p5x_s1000` es una política visomotora de difusión (diffusion policy) entrenada para la tarea robótica de inserción de un engranaje en una pinza, sobre un montaje bimanual YAM. No es un modelo de lenguaje: es un controlador que recibe observaciones (estado articular de 14 dimensiones y tres cámaras de 720x1280) y produce secuencias de acciones articulares. Lo publica el usuario de HuggingFace `fanqi-robo` dentro del ecosistema LeRobot, con 293.174.382 parámetros entrenables y un repositorio de 2,3 GB en safetensors.
+`diffusion_insert_gear_in_gripper_lr0p5x_s1000` es una política visomotora de difusión (diffusion policy) entrenada para la tarea robótica de inserción de un engranaje en una pinza, sobre un montaje bimanual YAM. No es un modelo de lenguaje: es un controlador que recibe observaciones (estado articular de 14 dimensiones y tres cámaras de 720x1280) y produce secuencias de acciones articulares. Lo publica el usuario de Hugging Face `fanqi-robo` dentro del ecosistema LeRobot, con 293.174.382 parámetros entrenables y un repositorio de 2,3 GB en safetensors.
 
 El checkpoint se entrena desde cero, salvo los codificadores de imagen ResNet18 preentrenados en ImageNet (uno por cámara). El entrenamiento usa 50 episodios y 27.228 fotogramas del dataset `fanqi-robo/insert_gear_in_gripper`, con 20.000 actualizaciones del optimizador a batch efectivo 32 y una tasa de aprendizaje de 5e-05 (0,5x respecto a la tasa de partida). Consumió 13,2 horas de GPU en una NVIDIA H100 de 80 GB, con un pico de VRAM de 71,1 GB, y alcanza una latencia de inferencia declarada de 255,1 ms.
 
@@ -84,7 +84,7 @@ Métricas de entrenamiento y validación declaradas: pérdida de validación fin
 
 | Modelo | Parametros | Contexto / horizonte | Rendimiento offline | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `diffusion_insert_gear_in_gripper_lr0p5x_s1000` (`main`, update 20000) | 293.174.382 | Horizonte de acción 64, 32 ejecutadas, 2 pasos de observación | MAE@10 1,49; MAE@30 2,27 +/- 0,48 | No disponible | HuggingFace, 12 descargas |
+| `diffusion_insert_gear_in_gripper_lr0p5x_s1000` (`main`, update 20000) | 293.174.382 | Horizonte de acción 64, 32 ejecutadas, 2 pasos de observación | MAE@10 1,49; MAE@30 2,27 +/- 0,48 | No disponible | Hugging Face, 12 descargas |
 | Checkpoint `best` de la misma ejecución (update 6808) | 293.174.382 | Idéntico | MAE@10 2,23; MAE@30 3,34 +/- 0,49; mejor pérdida de validación (0,0143419) | No disponible | Rama `best` del mismo repositorio |
 | Línea base `hold` (mantener la pose actual) | No aplica | No aplica | MAE@30 2,60 | No aplica | Referencia interna del benchmark |
 | Otras políticas de LeRobot (ACT, otras políticas de difusión) | No disponible | No disponible | No disponible | No disponible | No disponible |
@@ -106,7 +106,7 @@ La comparación directa entre `main` y `best` ilustra una discrepancia relevante
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fanqi-robo/diffusion_insert_gear_in_gripper_lr0p5x_s1000
+- Modelo en Hugging Face: https://huggingface.co/fanqi-robo/diffusion_insert_gear_in_gripper_lr0p5x_s1000
 - Dataset de entrenamiento: https://huggingface.co/datasets/fanqi-robo/insert_gear_in_gripper
 - Dataset de validación: https://huggingface.co/datasets/villekuosmanen/insert_gear_in_gripper_val
 - Ejecución de Weights & Biases: https://wandb.ai/fanqi-robo-saferobotics/insert_gear_in_gripper_benchmark/runs/8qv7yul2

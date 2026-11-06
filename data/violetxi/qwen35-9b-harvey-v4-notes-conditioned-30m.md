@@ -76,12 +76,12 @@ No se ejecuto inferencia de benchmarks nueva para esta publicacion: las generaci
 
 | Modelo | Parametros | Contexto | Resultado Harvey | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen35-9b-harvey-v4-notes-conditioned-30m | 9,65 B | no disponible (entrenado a 16.384) | 5,50 % a 5 turnos / 7,00 % a 20 turnos | apache-2.0 | safetensors en HuggingFace, 8 descargas |
-| qwen35-9b-harvey-v4-notes-conditioned-30m-kl-0p01 | no disponible (mismo base) | no disponible | no disponible | no disponible | HuggingFace |
-| qwen35-9b-harvey-v4-notes-conditioned-30m-kl-0p1 | no disponible (mismo base) | no disponible | no disponible | no disponible | HuggingFace y endpoint en FriendliAI |
-| qwen35-9b-wmrl-v4-n-1m-hi | 9 B (student) | no disponible | no disponible | no disponible | HuggingFace, descrito como servible con vLLM |
-| qwen35-9b-wmrl-v4-b5-30m | adaptador LoRA sobre Qwen3.5-9B (alpha/r = 1.0 sobre base bf16 congelado) | no disponible | no disponible | no disponible | HuggingFace y endpoint en FriendliAI |
-| Qwen/Qwen3.5-9B (base) | ~9 B | no disponible (descrito como contexto largo) | no aplica | apache-2.0 | HuggingFace, Microsoft Foundry |
+| qwen35-9b-harvey-v4-notes-conditioned-30m | 9,65 B | no disponible (entrenado a 16.384) | 5,50 % a 5 turnos / 7,00 % a 20 turnos | apache-2.0 | safetensors en Hugging Face, 8 descargas |
+| qwen35-9b-harvey-v4-notes-conditioned-30m-kl-0p01 | no disponible (mismo base) | no disponible | no disponible | no disponible | Hugging Face |
+| qwen35-9b-harvey-v4-notes-conditioned-30m-kl-0p1 | no disponible (mismo base) | no disponible | no disponible | no disponible | Hugging Face y endpoint en FriendliAI |
+| qwen35-9b-wmrl-v4-n-1m-hi | 9 B (student) | no disponible | no disponible | no disponible | Hugging Face, descrito como servible con vLLM |
+| qwen35-9b-wmrl-v4-b5-30m | adaptador LoRA sobre Qwen3.5-9B (alpha/r = 1.0 sobre base bf16 congelado) | no disponible | no disponible | no disponible | Hugging Face y endpoint en FriendliAI |
+| Qwen/Qwen3.5-9B (base) | ~9 B | no disponible (descrito como contexto largo) | no aplica | apache-2.0 | Hugging Face, Microsoft Foundry |
 
 No se dispone de resultados de benchmarks comparativos entre estas variantes en la informacion proporcionada, por lo que la comparacion se limita a linaje, licencia y formato de publicacion.
 
@@ -99,7 +99,7 @@ No se dispone de resultados de benchmarks comparativos entre estas variantes en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/violetxi/qwen35-9b-harvey-v4-notes-conditioned-30m
+- Modelo en Hugging Face: https://huggingface.co/violetxi/qwen35-9b-harvey-v4-notes-conditioned-30m
 - Artefactos de evaluacion (README con revisiones y manifiestos SHA-256): https://huggingface.co/violetxi/qwen35-9b-harvey-v4-notes-conditioned-30m/blob/main/evals/harvey-20260923/README.md
 - Dataset de evaluacion Harvey, 5 turnos (historical-5t-think): https://huggingface.co/datasets/violetxi/harvey-eval-gpt56sol-qwen35-9b-notes70-notecondtraj30-30m-historical-5t-think
 - Dataset de evaluacion Harvey, 20 turnos (historical-20t-think): https://huggingface.co/datasets/violetxi/harvey-eval-gpt56sol-qwen35-9b-notes70-notecondtraj30-30m-historical-20t-think

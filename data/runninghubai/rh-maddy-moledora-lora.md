@@ -75,7 +75,7 @@ No disponible. No se han identificado en la información proporcionada otros LoR
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RunningHubAI/rh-maddy-moledora-lora
+- Hugging Face: https://huggingface.co/RunningHubAI/rh-maddy-moledora-lora
 - Modelo original en RunningHub: https://www.runninghub.ai/model/public/2112271342645481473
 - Página del autor: https://www.runninghub.ai/user-center/2112263477373333506
 - RunningHub International: https://www.runninghub.ai

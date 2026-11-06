@@ -89,7 +89,7 @@ No se dispone de datos suficientes para comparar con otros modelos de 27B como G
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/coder3101/Qwen3.8-27B-heretic
+- Repositorio Hugging Face del modelo: https://huggingface.co/coder3101/Qwen3.8-27B-heretic
 - Modelo original Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Herramienta Heretic (abliteration): https://github.com/p-e-w/heretic
 - Blog de AMD sobre soporte de Qwen3.8-27B: https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html

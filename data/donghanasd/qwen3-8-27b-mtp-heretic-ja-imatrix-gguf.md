@@ -91,7 +91,7 @@ Frente al modelo original `unsloth/Qwen3.8-27B` (sin decensurar), este repo aña
 
 ## Enlaces
 
-- Repositorio HuggingFace: [donghanasd/Qwen3.8-27B-MTP-heretic-ja-imatrix-GGUF](https://huggingface.co/donghanasd/Qwen3.8-27B-MTP-heretic-ja-imatrix-GGUF)
+- Repositorio Hugging Face: [donghanasd/Qwen3.8-27B-MTP-heretic-ja-imatrix-GGUF](https://huggingface.co/donghanasd/Qwen3.8-27B-MTP-heretic-ja-imatrix-GGUF)
 - Modelo fuente (GGUF): [OS-Software/Qwen3.8-27B-MTP-heretic-ja-GGUF](https://huggingface.co/OS-Software/Qwen3.8-27B-MTP-heretic-ja-GGUF)
 - Modelo base original: [unsloth/Qwen3.8-27B](https://huggingface.co/unsloth/Qwen3.8-27B)
 - Archivo de benchmarks incluido en el repo: `BENCHMARKS.md` (no enlazado directamente, pero mencionado en la model card)

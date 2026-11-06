@@ -58,5 +58,5 @@ No disponible. No se puede comparar con otros modelos porque no es un modelo de 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/jkaminski/retrieval
+- Repositorio de Hugging Face: https://huggingface.co/jkaminski/retrieval
 - No se encontraron otros enlaces relevantes específicos para este repositorio. Las búsquedas web devuelven artículos generales sobre RAG (por ejemplo, el survey de arXiv 2312.10997) pero no están directamente relacionados con este repositorio.

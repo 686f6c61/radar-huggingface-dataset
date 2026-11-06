@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks homogéneos que permitan comparar el rendim
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dreambeltech/ailo-pocket-tts-litert
+- Modelo en Hugging Face: https://huggingface.co/dreambeltech/ailo-pocket-tts-litert
 - Modelo base: https://huggingface.co/kyutai/pocket-tts-without-voice-cloning
 - Repositorio de referencia de Pocket TTS: https://github.com/kyutai-labs/pocket-tts
 - LiteRT (Google AI Edge): https://ai.google.dev/edge/litert

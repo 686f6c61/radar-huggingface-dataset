@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`yujunwei04/halo-sft_c` es un ajuste fino supervisado (SFT) publicado en HuggingFace por el usuario `yujunwei04`, construido sobre el modelo base `Qwen/Qwen3.5-4B`. La etiqueta `base_model:finetune` y el pipeline declarado (`image-text-to-text`) indican que se trata de un modelo conversacional multimodal, capaz de aceptar imagenes y texto como entrada y generar texto como salida. El repositorio esta etiquetado con `qwen3_5`, `conversational`, `endpoints_compatible` y `transformers`, y los pesos se distribuyen en formato `safetensors`.
+`yujunwei04/halo-sft_c` es un ajuste fino supervisado (SFT) publicado en Hugging Face por el usuario `yujunwei04`, construido sobre el modelo base `Qwen/Qwen3.5-4B`. La etiqueta `base_model:finetune` y el pipeline declarado (`image-text-to-text`) indican que se trata de un modelo conversacional multimodal, capaz de aceptar imagenes y texto como entrada y generar texto como salida. El repositorio esta etiquetado con `qwen3_5`, `conversational`, `endpoints_compatible` y `transformers`, y los pesos se distribuyen en formato `safetensors`.
 
 El modelo se publico el 6 de octubre de 2026 y, en el momento de redactar esta ficha, acumula 0 descargas y 0 "likes", ademas de no declarar licencia ni idiomas soportados. Esto lo situa como un experimento comunitario de visibilidad muy baja, sin documentacion tecnica publica asociada (no hay model card descriptiva, paper ni blog). Su relevancia practica es, por tanto, limitada: es interesante como ejemplo de finetune multimodal sobre la familia Qwen3.5, pero no como componente listo para produccion.
 
@@ -18,7 +18,7 @@ Conviene subrayar que casi todas las especificaciones tecnicas habituales (conte
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (el repositorio publica pesos en `safetensors`; no se listan variantes GGUF, AWQ, GPTQ ni FP8) |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible (la ficha de HuggingFace no declara licencia) |
+| Licencia | no disponible (la ficha de Hugging Face no declara licencia) |
 | Formato de pesos | `safetensors` |
 | Modalidad | image-text-to-text (entrada imagen + texto, salida texto) |
 | Biblioteca | transformers |
@@ -43,7 +43,7 @@ Respecto al entrenamiento, la etiqueta `sft` en el nombre del repositorio sugier
 - Comportamiento agentico: no disponible; no se documenta razonamiento multi-paso, planificacion ni uso de herramientas externas.
 - Capacidades multilingues: no disponible; la ficha no declara ninguna lista de idiomas.
 - Capacidades especiales: no disponible; no se mencionan modo "thinking", audio, video ni generacion de imagenes.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el repositorio puede desplegarse en HuggingFace Inference Endpoints, si bien no se detalla la configuracion soportada.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el repositorio puede desplegarse en Hugging Face Inference Endpoints, si bien no se detalla la configuracion soportada.
 
 ## Casos de uso
 
@@ -57,7 +57,7 @@ Respecto al entrenamiento, la etiqueta `sft` en el nombre del repositorio sugier
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La ficha de HuggingFace no incluye valores de MMLU, HumanEval, GSM8K, MMMU, DocVQA ni de ninguna otra evaluacion, y no se ha localizado paper, blog o informe tecnico asociado al repositorio.
+No se han publicado resultados de benchmarks en la informacion disponible. La ficha de Hugging Face no incluye valores de MMLU, HumanEval, GSM8K, MMMU, DocVQA ni de ninguna otra evaluacion, y no se ha localizado paper, blog o informe tecnico asociado al repositorio.
 
 ## Requisitos de hardware
 
@@ -73,8 +73,8 @@ Las cifras siguientes son estimaciones basadas en el tamano nominal de ~4B param
 
 | Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `yujunwei04/halo-sft_c` | ~4B (segun nombre del base) | no disponible | image-text-to-text | no disponible | HuggingFace, 0 descargas |
-| `Qwen/Qwen3.5-4B` (modelo base) | ~4B (segun nombre) | no disponible en esta ficha | segun el modelo base | no disponible en esta ficha | HuggingFace |
+| `yujunwei04/halo-sft_c` | ~4B (segun nombre del base) | no disponible | image-text-to-text | no disponible | Hugging Face, 0 descargas |
+| `Qwen/Qwen3.5-4B` (modelo base) | ~4B (segun nombre) | no disponible en esta ficha | segun el modelo base | no disponible en esta ficha | Hugging Face |
 | Otras alternativas de ~4B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos verificados de benchmarks ni de especificaciones completas del propio modelo, por lo que no es posible establecer una comparacion cuantitativa fiable con alternativas de la misma categoria.
@@ -94,7 +94,7 @@ No se dispone de datos verificados de benchmarks ni de especificaciones completa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yujunwei04/halo-sft_c
+- Modelo en Hugging Face: https://huggingface.co/yujunwei04/halo-sft_c
 - Modelo base referenciado: https://huggingface.co/Qwen/Qwen3.5-4B
 - Paper o informe tecnico: no disponible
 - Repositorio de codigo: no disponible

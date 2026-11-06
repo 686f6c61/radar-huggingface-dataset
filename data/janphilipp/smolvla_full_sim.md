@@ -82,7 +82,7 @@ La comparación con alternativas de la misma categoría no puede completarse con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JanPhilipp/smolvla_full_sim
+- Modelo en Hugging Face: https://huggingface.co/JanPhilipp/smolvla_full_sim
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Paper SmolVLA: https://huggingface.co/papers/2506.01844
 - Dataset de entrenamiento: https://huggingface.co/datasets/maxmeyer/three_tool_opt_sim_r4_hybrid_planned_20261029_104146

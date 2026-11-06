@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `cyttic/exp39-ctc-human10bi-hhdgeom-byp-25k-seed44` es un checkpoint de 87.279.756 parámetros publicado por el usuario cyttic en HuggingFace. El identificador contiene la cadena "ctc", que en el contexto de aprendizaje automático se asocia habitualmente a Connectionist Temporal Classification, una función de pérdida empleada en reconocimiento de voz y de secuencias; tambien incluye referencias a "human10bi", "hhdgeom", "byp" y "25k", que sugieren un experimento de investigación concreto (posiblemente sobre datos humanos, con 25.000 pasos o muestras de entrenamiento). El sufijo "seed44" indica una ejecución con semilla aleatoria 44, lo que apunta a un estudio de reproducibilidad o de barrido de hiperparámetros.
+El modelo `cyttic/exp39-ctc-human10bi-hhdgeom-byp-25k-seed44` es un checkpoint de 87.279.756 parámetros publicado por el usuario cyttic en Hugging Face. El identificador contiene la cadena "ctc", que en el contexto de aprendizaje automático se asocia habitualmente a Connectionist Temporal Classification, una función de pérdida empleada en reconocimiento de voz y de secuencias; tambien incluye referencias a "human10bi", "hhdgeom", "byp" y "25k", que sugieren un experimento de investigación concreto (posiblemente sobre datos humanos, con 25.000 pasos o muestras de entrenamiento). El sufijo "seed44" indica una ejecución con semilla aleatoria 44, lo que apunta a un estudio de reproducibilidad o de barrido de hiperparámetros.
 
-La model card publicada por el autor es la plantilla genérica de HuggingFace sin rellenar: no documenta arquitectura, datos de entrenamiento, idiomas, uso previsto ni resultados de evaluación. Toda la información disponible se reduce a los metadatos del repositorio: pesos en formato safetensors, licencia MIT, un tamaño de repositorio de 0,3 GB y la referencia genérica al artículo de Lacoste et al. (2019) sobre impacto ambiental, que aparece en la plantilla por defecto. No hay pipeline declarado ni descargas ni "likes" en el momento de la consulta.
+La model card publicada por el autor es la plantilla genérica de Hugging Face sin rellenar: no documenta arquitectura, datos de entrenamiento, idiomas, uso previsto ni resultados de evaluación. Toda la información disponible se reduce a los metadatos del repositorio: pesos en formato safetensors, licencia MIT, un tamaño de repositorio de 0,3 GB y la referencia genérica al artículo de Lacoste et al. (2019) sobre impacto ambiental, que aparece en la plantilla por defecto. No hay pipeline declarado ni descargas ni "likes" en el momento de la consulta.
 
 Por tanto, se trata de un artefacto de investigación de nicho, presumiblemente parte de una serie de experimentos (el prefijo "exp39" sugiere al menos 39 ejecuciones previas) y no de un modelo listo para producción. Su relevancia actual es limitada para el público general, pero puede interesar a investigadores que sigan la línea de trabajo del autor en tareas de clasificación de secuencias o reconocimiento temporal.
 
@@ -76,7 +76,7 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cyttic/exp39-ctc-human10bi-hhdgeom-byp-25k-seed44
+- Hugging Face: https://huggingface.co/cyttic/exp39-ctc-human10bi-hhdgeom-byp-25k-seed44
 - Artículo referenciado en la model card (impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental ML: https://mlco2.github.io/impact
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Anmi es un adaptador LoRA (Low-Rank Adaptation) para generacion de imagenes a partir de texto, publicado en HuggingFace por el usuario Haruka041. No se trata de un modelo completo, sino de un ajuste de bajo rango que se monta sobre el modelo base krea/Krea-2-Turbo, un generador text-to-image del ecosistema diffusers. Su funcion es fijar un estilo visual concreto mediante la palabra de activacion `anmi style`, de modo que el modelo base reproduzca ese estilo sin necesidad de reentrenarlo.
+Anmi es un adaptador LoRA (Low-Rank Adaptation) para generacion de imagenes a partir de texto, publicado en Hugging Face por el usuario Haruka041. No se trata de un modelo completo, sino de un ajuste de bajo rango que se monta sobre el modelo base krea/Krea-2-Turbo, un generador text-to-image del ecosistema diffusers. Su funcion es fijar un estilo visual concreto mediante la palabra de activacion `anmi style`, de modo que el modelo base reproduzca ese estilo sin necesidad de reentrenarlo.
 
 El repositorio ocupa aproximadamente 0,5 GB y esta etiquetado con la libreria diffusers y la plantilla `template:diffusion-lora`, lo que indica que sigue el formato estandar de adaptadores LoRA para pipelines de difusion. La model card es minima: unicamente declara la palabra de activacion, el modelo base y el enlace de descarga de los pesos. No incluye informacion sobre dataset de entrenamiento, rango, alpha, licencia ni idiomas.
 
@@ -67,8 +67,8 @@ No se dispone de datos publicados de rendimiento, parametros ni licencia para es
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Haruka041/anmi | LoRA de estilo sobre krea/Krea-2-Turbo | no disponible | no aplica | no disponible | Publicado en HuggingFace, 0 descargas |
-| LoRA de estilo sobre un modelo de difusion de tipo UNet | Adaptador LoRA | no disponible | no aplica | Depende del modelo base | Categoria ampliamente disponible en HuggingFace |
+| Haruka041/anmi | LoRA de estilo sobre krea/Krea-2-Turbo | no disponible | no aplica | no disponible | Publicado en Hugging Face, 0 descargas |
+| LoRA de estilo sobre un modelo de difusion de tipo UNet | Adaptador LoRA | no disponible | no aplica | Depende del modelo base | Categoria ampliamente disponible en Hugging Face |
 | Fine-tuning completo del modelo base | Modelo completo afinado | Igual al modelo base | no aplica | Depende del modelo base | Mayor coste de almacenamiento y entrenamiento |
 
 La diferencia funcional relevante frente a un fine-tuning completo es el coste: un LoRA ocupa una fraccion del espacio y se puede intercambiar en tiempo de carga, mientras que un fine-tuning completo requiere entrenamiento y almacenamiento del modelo entero.
@@ -89,7 +89,7 @@ La diferencia funcional relevante frente a un fine-tuning completo es el coste: 
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/Haruka041/anmi
+- Pagina del modelo en Hugging Face: https://huggingface.co/Haruka041/anmi
 - Archivos y versiones del modelo: https://huggingface.co/Haruka041/anmi/tree/main
 - Modelo base: https://huggingface.co/krea/Krea-2-Turbo
 - Documentacion de diffusers sobre adaptadores LoRA: https://huggingface.co/docs/diffusers/training/lora

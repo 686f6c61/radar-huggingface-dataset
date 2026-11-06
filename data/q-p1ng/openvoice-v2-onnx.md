@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Formato | Licencia | Contexto | Disponibilidad |
 |---|---|---|---|---|---|
-| OpenVoice v2 ONNX (este repo) | Conversión de tono | ONNX (FP32/INT8) | MIT | no aplica | HuggingFace, espejo verificado |
-| OpenVoice v2 original (myshell-ai/OpenVoiceV2) | Conversión de tono y clonación | Pesos originales (no ONNX) | MIT | no aplica | HuggingFace |
-| voiceclonnx-openvoice-v2 (TigreGotico) | Export ONNX de OpenVoice v2 | ONNX | MIT | no aplica | HuggingFace |
+| OpenVoice v2 ONNX (este repo) | Conversión de tono | ONNX (FP32/INT8) | MIT | no aplica | Hugging Face, espejo verificado |
+| OpenVoice v2 original (myshell-ai/OpenVoiceV2) | Conversión de tono y clonación | Pesos originales (no ONNX) | MIT | no aplica | Hugging Face |
+| voiceclonnx-openvoice-v2 (TigreGotico) | Export ONNX de OpenVoice v2 | ONNX | MIT | no aplica | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada; la diferencia principal es el formato de pesos y la existencia de hashes de integridad en este repositorio.
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Q-P1NG/openvoice-v2-onnx
+- Repositorio en Hugging Face: https://huggingface.co/Q-P1NG/openvoice-v2-onnx
 - Export de origen (TigreGotico): https://huggingface.co/TigreGotico/voiceclonnx-openvoice-v2
 - Revisión fijada del export: https://huggingface.co/TigreGotico/voiceclonnx-openvoice-v2/resolve/34d010c192c97f763207f488f6057fd07fee42ad
 - Pesos oficiales de OpenVoice v2: https://huggingface.co/myshell-ai/OpenVoiceV2

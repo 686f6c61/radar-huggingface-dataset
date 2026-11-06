@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HeartMatch AI es un agente autónomo de código abierto orientado a la compatibilidad, la seguridad y la orientación honesta en citas para adultos. Lo desarrolla Sushan Ghimire (usuario `sushan98` en HuggingFace) y se presenta como el tercer miembro de una familia de agentes tras Opportunity Hunter y Client Hunter. El repositorio se publica bajo licencia MIT y se etiqueta con `pipeline_tag: text-generation` y `library_name: transformers`, aunque la model card describe fundamentalmente un sistema de agente construido en Python con almacenamiento en SQLite y dependencia de la API de Gemini.
+HeartMatch AI es un agente autónomo de código abierto orientado a la compatibilidad, la seguridad y la orientación honesta en citas para adultos. Lo desarrolla Sushan Ghimire (usuario `sushan98` en Hugging Face) y se presenta como el tercer miembro de una familia de agentes tras Opportunity Hunter y Client Hunter. El repositorio se publica bajo licencia MIT y se etiqueta con `pipeline_tag: text-generation` y `library_name: transformers`, aunque la model card describe fundamentalmente un sistema de agente construido en Python con almacenamiento en SQLite y dependencia de la API de Gemini.
 
 El modelo aborda un problema concreto: la mayoría de las herramientas denominadas "IA para citas" funcionan como motores de spam (bots de mensajes masivos, generadores de aperturas, guiones de manipulación). HeartMatch AI invierte el enfoque y ofrece puntuación de compatibilidad determinista, revisión honesta de perfiles, entrenamiento de mensajes con filtro de respeto, detección de patrones de fraude romántico y planes de seguridad para primeras citas. No dispone de ruta de envío de mensajes: el usuario copia, pega y envía manualmente, una persona a la vez.
 
@@ -101,7 +101,7 @@ No disponible. La información proporcionada no incluye datos técnicos (paráme
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sushan98/heartmatch-ai-model
+- Hugging Face: https://huggingface.co/sushan98/heartmatch-ai-model
 - Opportunity Hunter (agente previo de la familia): https://huggingface.co/sushan98/opportunity-hunter-ai-model
 - Perfil del autor: https://huggingface.co/sushan98
 - Client Hunter: no disponible (mencionado en la model card sin enlace)

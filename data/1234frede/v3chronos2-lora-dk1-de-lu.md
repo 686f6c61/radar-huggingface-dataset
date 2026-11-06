@@ -6,7 +6,7 @@ El modelo `1234Frede/v3chronos2-lora-dk1-de-lu` es un adaptador LoRA (Low-Rank A
 
 La información disponible sobre el modelo es extremadamente limitada: la model card sigue una plantilla vacía, no se especifica la licencia, los idiomas soportados, ni el propósito concreto del adaptador. El nombre del repositorio sugiere una posible especialización en dominios o tareas relacionadas con "dk1" y las siglas "de" y "lu" (posiblemente alemán y luxemburgués), pero no hay confirmación en los metadatos ni en la documentación. El modelo no registra descargas ni likes en el momento de la consulta, por lo que se trata de un recurso experimental o de nicho.
 
-Debido a la ausencia de información técnica detallada, esta ficha se basa únicamente en los datos disponibles en HuggingFace y en el conocimiento general sobre el modelo base `amazon/chronos-2`. Se recomienda precaución antes de utilizar este adaptador en entornos de producción.
+Debido a la ausencia de información técnica detallada, esta ficha se basa únicamente en los datos disponibles en Hugging Face y en el conocimiento general sobre el modelo base `amazon/chronos-2`. Se recomienda precaución antes de utilizar este adaptador en entornos de producción.
 
 ## Especificaciones tecnicas
 
@@ -71,5 +71,5 @@ No se dispone de información sobre adaptadores LoRA comparables para `amazon/ch
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/1234Frede/v3chronos2-lora-dk1-de-lu
+- Hugging Face: https://huggingface.co/1234Frede/v3chronos2-lora-dk1-de-lu
 - Modelo base: https://huggingface.co/amazon/chronos-2

@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: no disponible explicitamente; con ~0,81B de parametros en fp16, el modelo ocupa en torno a 1,6-2 GB de pesos, mas el codec y la KV cache, por lo que una GPU con 6-8 GB de VRAM deberia ser suficiente (estimacion, no dato oficial).
 - GPU recomendadas: no disponible; el autor indica un factor de tiempo real de ~0,17 "en una GPU" sin especificar modelo.
 - Consumer GPU: dada la necesidad de ~2 GB de VRAM para pesos fp16, deberia funcionar en GPUs consumer modernas (RTX 3060, RTX 4060 o superiores); dato no confirmado oficialmente.
-- Despliegue: requiere el codigo del repositorio de GitHub, los pesos de OmniVoice (k2-fsa/OmniVoice) y el codec Fish Audio; no se mencionan soportes para vLLM, llama.cpp, Ollama o TGI. Existe un playground en HuggingFace Spaces para probarlo sin instalacion.
+- Despliegue: requiere el codigo del repositorio de GitHub, los pesos de OmniVoice (k2-fsa/OmniVoice) y el codec Fish Audio; no se mencionan soportes para vLLM, llama.cpp, Ollama o TGI. Existe un playground en Hugging Face Spaces para probarlo sin instalacion.
 - Latencia y throughput: ~0,17 de factor de tiempo real (una GPU), con bloques de 0,74 s emitidos en streaming; el resto de metricas no disponible.
 
 ## Comparativa con modelos similares
@@ -81,12 +81,12 @@ La comparacion es orientativa: OGG TTS se distingue por su decodificacion por bl
 - Licencia fish-audio-community-license: no es una licencia estandar permisiva; revisar el texto en el enlace de la licencia antes de cualquier uso comercial.
 - Cuantizacion no documentada y ecosistema de despliegue limitado: requiere codigo propio de GitHub y pesos de OmniVoice, sin soporte aparente para runtimes estandar como llama.cpp u Ollama.
 - Solo 8 idiomas; no hay soporte para chino, japones ni otras lenguas principales.
-- Cero descargas registradas en HuggingFace en el momento de redactar la ficha: falta validacion comunitaria amplia.
+- Cero descargas registradas en Hugging Face en el momento de redactar la ficha: falta validacion comunitaria amplia.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FashionFlora/ogg-tts
-- Playground (HuggingFace Spaces): https://huggingface.co/spaces/FashionFlora/ogg-tts
+- Modelo en Hugging Face: https://huggingface.co/FashionFlora/ogg-tts
+- Playground (Hugging Face Spaces): https://huggingface.co/spaces/FashionFlora/ogg-tts
 - Codigo en GitHub: https://github.com/FashionFlora/ogg-tts
 - Licencia: https://huggingface.co/FashionFlora/ogg-tts/blob/main/LICENSE-FISH-AUDIO.md
 - Modelo base: https://huggingface.co/k2-fsa/OmniVoice

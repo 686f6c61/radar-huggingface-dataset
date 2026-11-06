@@ -98,8 +98,8 @@ No se dispone de datos de benchmarks de calidad comparados con otros modelos de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jgamboa/Qwen3.8-27B-NInfer-4090
-- Modelo base en HuggingFace: https://huggingface.co/neroued/Qwen3.8-27B-NInfer
+- Hugging Face: https://huggingface.co/jgamboa/Qwen3.8-27B-NInfer-4090
+- Modelo base en Hugging Face: https://huggingface.co/neroued/Qwen3.8-27B-NInfer
 - Repositorio del motor NInfer para RTX 4090 (rama `feat/bonsai-ternary`): https://github.com/JGamboa/ninfer-4090-windows/tree/feat/bonsai-ternary
 - Motor NInfer (autor original): https://github.com/Neroued/ninfer
 - Drafter DFlash2: https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2

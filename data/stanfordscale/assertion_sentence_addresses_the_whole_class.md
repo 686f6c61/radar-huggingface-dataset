@@ -82,8 +82,8 @@ No hay datos de rendimiento publicados para alternativas sobre el mismo conjunto
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento en esta tarea |
 |---|---|---|---|---|---|---|
-| assertion_sentence_addresses_the_whole_class | SetFit (MPNet + regresión logística) | 109.486.464 | no disponible | no disponible | HuggingFace, librería setfit | F1 0,799 / ROC-AUC 0,826 (test, declarado por el autor) |
-| sentence-transformers/paraphrase-mpnet-base-v2 | Encoder de frases (modelo base) | ≈109 M (mismo cuerpo) | no disponible | no disponible | HuggingFace | no disponible (no es un clasificador de la tarea) |
+| assertion_sentence_addresses_the_whole_class | SetFit (MPNet + regresión logística) | 109.486.464 | no disponible | no disponible | Hugging Face, librería setfit | F1 0,799 / ROC-AUC 0,826 (test, declarado por el autor) |
+| sentence-transformers/paraphrase-mpnet-base-v2 | Encoder de frases (modelo base) | ≈109 M (mismo cuerpo) | no disponible | no disponible | Hugging Face | no disponible (no es un clasificador de la tarea) |
 | Clasificador SetFit genérico sobre el mismo corpus | SetFit | ≈109 M | no disponible | no disponible | no disponible | no disponible |
 | Anotación zero-shot o few-shot con LLM generativo | LLM decoder-only | no disponible | no disponible | según proveedor | API o pesos abiertos | no disponible |
 
@@ -103,7 +103,7 @@ No hay datos de rendimiento publicados para alternativas sobre el mismo conjunto
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StanfordSCALE/assertion_sentence_addresses_the_whole_class
+- Modelo en Hugging Face: https://huggingface.co/StanfordSCALE/assertion_sentence_addresses_the_whole_class
 - Dataset de entrenamiento y evaluación: https://huggingface.co/datasets/StanfordSCALE/assertions_llm_annotated_talkmoves
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-mpnet-base-v2
 - TalkMoves Dataset (GitHub): https://github.com/SumnerLab/TalkMoves

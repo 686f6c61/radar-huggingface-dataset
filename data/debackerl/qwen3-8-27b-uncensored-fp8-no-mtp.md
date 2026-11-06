@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Qwen3.8-27B-Uncensored-FP8-NO-MTP` es una cuantizacion en formato FP8 (block 128×128, E4M3) de un modelo Qwen3.8-27B abliterado, publicado por el usuario debackerl en HuggingFace. El modelo base es `JonathanColetti/Qwen3.8-27B-Uncensored`, un modelo que ha tenido eliminada la direccion de rechazo (refusal direction), lo que significa que no declina peticiones del mismo modo que la version oficial de Qwen3.8-27B. Este repositorio aporta unicamente la cuantizacion FP8; la modificacion funcional proviene del modelo base, bajo licencia Apache-2.0.
+El modelo `Qwen3.8-27B-Uncensored-FP8-NO-MTP` es una cuantizacion en formato FP8 (block 128×128, E4M3) de un modelo Qwen3.8-27B abliterado, publicado por el usuario debackerl en Hugging Face. El modelo base es `JonathanColetti/Qwen3.8-27B-Uncensored`, un modelo que ha tenido eliminada la direccion de rechazo (refusal direction), lo que significa que no declina peticiones del mismo modo que la version oficial de Qwen3.8-27B. Este repositorio aporta unicamente la cuantizacion FP8; la modificacion funcional proviene del modelo base, bajo licencia Apache-2.0.
 
 El modelo es multimodal (pipeline `image-text-to-text`), con la torre de vision preservada en BF16 y un contexto nativo de 262.144 tokens. Segun la model card, se trata de una build pensada para hardware Hopper, donde FP8 tiene soporte nativo de tensor cores, y que preserva el head MTP (Multi-Token Prediction) para decodificacion especulativa. El tamano del repositorio es de 30,9 GB, con un total de 27.356.728.560 parametros.
 
@@ -82,16 +82,16 @@ La unica tarea de codigo que ambos modelos fallan es la misma, por el mismo moti
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Qwen/Qwen3.8-27B-FP8` | 27.356.728.560 | 262.144 | FP8 | Apache-2.0 | HuggingFace |
-| `debackerl/Qwen3.8-27B-Uncensored-FP8-NO-MTP` | 27.356.728.560 | 262.144 | FP8 (block 128×128, E4M3) | Apache-2.0 | HuggingFace |
+| `Qwen/Qwen3.8-27B-FP8` | 27.356.728.560 | 262.144 | FP8 | Apache-2.0 | Hugging Face |
+| `debackerl/Qwen3.8-27B-Uncensored-FP8-NO-MTP` | 27.356.728.560 | 262.144 | FP8 (block 128×128, E4M3) | Apache-2.0 | Hugging Face |
 | `orcarouter/Qwen3.8-27B-Uncensored` (Ollama/GGUF) | 27.356.728.560 | 262.144 | GGUF (multiples niveles) | Apache-2.0 | Ollama |
-| `JonathanColetti/Qwen3.8-27B-Uncensored` | 27.356.728.560 | 262.144 | BF16 (sin cuantizar) | Apache-2.0 | HuggingFace |
+| `JonathanColetti/Qwen3.8-27B-Uncensored` | 27.356.728.560 | 262.144 | BF16 (sin cuantizar) | Apache-2.0 | Hugging Face |
 
 Respecto a la build oficial, el modelo conserva el mismo rendimiento en tareas de extraccion, codigo y vision, con una tasa de aceptacion MTP ligeramente inferior (52% frente a 58%) y un throughput practicamente identico (132 vs 131 tokens/s a concurrencia 1, 813 vs 816 a concurrencia 8). La diferencia fundamental es que esta version es una cuantizacion de un modelo abliterado, no de la version oficial.
 
 ## Limitaciones y advertencias
 
-- **Inconsistencia de identificadores:** el ID de HuggingFace incluye el sufijo `NO-MTP`, pero la model card describe una build con el head MTP preservado y funcional. Asimismo, el comando de vLLM de la propia model card referencia `pramoths/Qwen3.8-27B-Uncensored-FP8-MTP` y el repositorio de reproduccion es `pramoth/qwen38-fp8-forge`, mientras que el autor del repositorio HF es `debackerl`. Esta discrepancia puede indicar que la model card no se corresponde exactamente con este repositorio.
+- **Inconsistencia de identificadores:** el ID de Hugging Face incluye el sufijo `NO-MTP`, pero la model card describe una build con el head MTP preservado y funcional. Asimismo, el comando de vLLM de la propia model card referencia `pramoths/Qwen3.8-27B-Uncensored-FP8-MTP` y el repositorio de reproduccion es `pramoth/qwen38-fp8-forge`, mientras que el autor del repositorio HF es `debackerl`. Esta discrepancia puede indicar que la model card no se corresponde exactamente con este repositorio.
 - **Restricciones de hardware:** el modelo solo es util en arquitecturas con tensor cores FP8 (Ada, Hopper, Blackwell). En Volta y Turing no funciona. En Ampere, el camino de fallback no esta probado con escalas block-wise 128×128.
 - **Limites de VRAM:** con 24 GB de VRAM no carga en una sola tarjeta. Con 47 GB, la maxima concurrencia para peticiones de contexto completo (262.144 tokens) es de 1.3; sin cache KV en FP8, una tarjeta de 47 GB no puede arrancar con contexto completo.
 - **Riesgo de alucinacion:** como todo modelo de lenguaje generativo, puede producir contenido factualmente incorrecto. En las pruebas de codigo, el modelo fallo una tarea por agotar el presupuesto de tokens razonando sin emitir respuesta, lo que supone un riesgo de timeout en produccion.
@@ -101,8 +101,8 @@ Respecto a la build oficial, el modelo conserva el mismo rendimiento en tareas d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/debackerl/Qwen3.8-27B-Uncensored-FP8-NO-MTP
-- Modelo base en HuggingFace: https://huggingface.co/JonathanColetti/Qwen3.8-27B-Uncensored
+- Modelo en Hugging Face: https://huggingface.co/debackerl/Qwen3.8-27B-Uncensored-FP8-NO-MTP
+- Modelo base en Hugging Face: https://huggingface.co/JonathanColetti/Qwen3.8-27B-Uncensored
 - Repositorio de reproduccion y scripts: https://github.com/pramoth/qwen38-fp8-forge
 - Version GGUF en Ollama: https://ollama.com/orcarouter/Qwen3.8-27B-Uncensored
 - Guia de ejecucion local con llama.cpp: https://www.orcarouter.ai/blog/how-to-run-qwen-3-8-27b-uncensored-locally

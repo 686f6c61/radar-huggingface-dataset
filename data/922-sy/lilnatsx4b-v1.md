@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Lilnatsx4b-v1 es un modelo de lenguaje conversacional publicado por el usuario 922-SY en HuggingFace. Se trata de un modelo denso de aproximadamente 4.326 millones de parametros (4,3B), distribuido en formato safetensors y tambien en GGUF, lo que facilita su despliegue tanto en entornos de servidor como en hardware de consumo mediante cuantizacion. La licencia es Apache 2.0, lo que permite uso comercial sin restricciones adicionales significativas.
+Lilnatsx4b-v1 es un modelo de lenguaje conversacional publicado por el usuario 922-SY en Hugging Face. Se trata de un modelo denso de aproximadamente 4.326 millones de parametros (4,3B), distribuido en formato safetensors y tambien en GGUF, lo que facilita su despliegue tanto en entornos de servidor como en hardware de consumo mediante cuantizacion. La licencia es Apache 2.0, lo que permite uso comercial sin restricciones adicionales significativas.
 
 La informacion publica disponible es muy limitada: la model card practicamente no contiene documentacion tecnica (solo la declaracion de licencia), no se especifican idiomas soportados, pipeline, datos de entrenamiento ni resultados de benchmarks. El repositorio tiene 20,6 GB, un tamano considerable para 4,3B de parametros, lo que sugiere que puede contener multiples formatos de pesos (safetensors en precision alta y ficheros GGUF con varias cuantizaciones) en lugar de un unico conjunto de pesos.
 
@@ -30,7 +30,7 @@ Respecto al entrenamiento, la model card no documenta el numero de tokens, la co
 ## Capacidades
 
 - Generacion de texto conversacional: el modelo esta etiquetado como "conversational", por lo que su uso previsto es el dialogo multi-turno.
-- Compatibilidad con endpoints: la etiqueta "endpoints_compatible" indica que puede desplegarse en la infraestructura de Inference Endpoints de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta "endpoints_compatible" indica que puede desplegarse en la infraestructura de Inference Endpoints de Hugging Face.
 - Formato GGUF: permite inferencia local con llama.cpp y herramientas derivadas (Ollama, LM Studio, entre otras).
 - Capacidades de razonamiento, codigo, matematicas o vision: no disponibles (no documentadas).
 - Soporte de tool calling / function calling: no disponible (no documentado).
@@ -45,7 +45,7 @@ Respecto al entrenamiento, la model card no documenta el numero de tokens, la co
 - Generacion de respuestas en aplicaciones de mensajeria: su orientacion conversacional lo hace candidato para borradores de respuesta o sugerencias en herramientas de atencion al cliente, con supervision humana.
 - Experimentacion academica e investigacion: util como linea base de 4B en estudios comparativos de tecnicas de ajuste fino (LoRA, QLoRA) o de cuantizacion, dado su tamano manejable y su disponibilidad en safetensors.
 - Despliegue en edge o entornos con recursos limitados: la disponibilidad de GGUF permite ejecutarlo en dispositivos sin GPU dedicada mediante cuantizaciones de 4 u 8 bits, aunque las variantes exactas no estan documentadas.
-- Integracion en pipelines de HuggingFace Inference Endpoints: la etiqueta endpoints_compatible facilita el despliegue gestionado sin infraestructura propia, adecuado para pruebas de concepto rapidas.
+- Integracion en pipelines de Hugging Face Inference Endpoints: la etiqueta endpoints_compatible facilita el despliegue gestionado sin infraestructura propia, adecuado para pruebas de concepto rapidas.
 - Generacion de texto creativo o de relleno en aplicaciones de contenido: con la debida evaluacion de calidad y de sesgos, puede emplearse para tareas de redaccion asistida de baja criticidad.
 
 ## Benchmarks y rendimiento
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada en cuantizacion de 4 bits: en torno a 2,5-3 GB de pesos; cabe en GPUs de 6-8 GB y en muchas iGPU con memoria unificada.
 - GPUs recomendadas: para FP16, RTX 4080/4090, A10G, L4 o A100; para cuantizaciones 4-8 bits, RTX 3060/4060 y superiores.
 - Cabe en GPU de consumo: si, en la mayoria de GPUs modernas con 8 GB o mas usando cuantizacion.
-- Opciones de despliegue: llama.cpp y derivados (Ollama, LM Studio) mediante GGUF; vLLM o TGI con los pesos safetensors; HuggingFace Inference Endpoints por la compatibilidad declarada.
+- Opciones de despliegue: llama.cpp y derivados (Ollama, LM Studio) mediante GGUF; vLLM o TGI con los pesos safetensors; Hugging Face Inference Endpoints por la compatibilidad declarada.
 - Latencia y throughput: no disponibles (no documentados).
 
 ## Comparativa con modelos similares
@@ -87,4 +87,4 @@ La comparativa se basa en caracteristicas publicas de cada modelo; para Lilnatsx
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/922-SY/Lilnatsx4b-v1
+- Modelo en Hugging Face: https://huggingface.co/922-SY/Lilnatsx4b-v1

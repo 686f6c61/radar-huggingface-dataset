@@ -83,7 +83,7 @@ No se dispone de datos de benchmarks de ninguno de los modelos, por lo que la co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amnesiackid/distilhubert-finetuned-ravdessplus
+- Hugging Face: https://huggingface.co/amnesiackid/distilhubert-finetuned-ravdessplus
 - Modelo base: https://huggingface.co/ntu-spml/distilhubert
 - Perfil del autor: https://huggingface.co/amnesiackid
 - Otros modelos del autor: https://huggingface.co/amnesiackid/distilhubert-finetuned-ravdess y https://huggingface.co/amnesiackid/distilhubert-finetuned-gtzan

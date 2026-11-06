@@ -83,7 +83,7 @@ Las diferencias principales se centran en el nivel de cuantizacion: la variante 
 
 ## Enlaces
 
-- HuggingFace (este modelo): https://huggingface.co/RepublicOfKorokke/gemma-4-26B-A4B-it-qat-q4_0-unquantized-oQ4e-fp16
+- Hugging Face (este modelo): https://huggingface.co/RepublicOfKorokke/gemma-4-26B-A4B-it-qat-q4_0-unquantized-oQ4e-fp16
 - Variante oQ3e: https://huggingface.co/RepublicOfKorokke/gemma-4-26B-A4B-it-qat-q4_0-unquantized-oQ3e-fp16
 - Herramienta oQ / oMLX: https://github.com/jundot/omlx
 - Modelo base: google/gemma-4-26B-A4B-it-qat-q4_0-unquantized (URL no proporcionada en la informacion disponible)

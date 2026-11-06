@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Formato / cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tstepspam/Cydonia-24B-v4.3-Q8-MLX | 23,57 B | MLX, 8 bits, 25,1 GB | no disponible | no disponible | HuggingFace, 0 descargas |
-| TheDrummer/Cydonia-24B-v4.3 | 23,57 B (presumiblemente igual) | pesos completos | no disponible | no disponible | HuggingFace (modelo base) |
+| tstepspam/Cydonia-24B-v4.3-Q8-MLX | 23,57 B | MLX, 8 bits, 25,1 GB | no disponible | no disponible | Hugging Face, 0 descargas |
+| TheDrummer/Cydonia-24B-v4.3 | 23,57 B (presumiblemente igual) | pesos completos | no disponible | no disponible | Hugging Face (modelo base) |
 | Cydonia-24B-v4.3 GGUF (local-ai-zone) | 23,57 B | GGUF, 7,88 GB | no disponible | no disponible | 101.282 descargas, 94 likes |
-| tstepspam/Cydonia-24B-v4.3-heretic-v4-Q4-MLX | 23,57 B (presumiblemente igual) | MLX, 4 bits | no disponible | no disponible | HuggingFace (variante abliterada) |
+| tstepspam/Cydonia-24B-v4.3-heretic-v4-Q4-MLX | 23,57 B (presumiblemente igual) | MLX, 4 bits | no disponible | no disponible | Hugging Face (variante abliterada) |
 
 La comparacion directa con modelos de otros autores (por ejemplo, la familia Mistral Small de 24 B) no puede establecerse con rigor porque no se declaran ni licencia, ni contexto, ni resultados de evaluacion en este repositorio.
 
@@ -91,7 +91,7 @@ La comparacion directa con modelos de otros autores (por ejemplo, la familia Mis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tstepspam/Cydonia-24B-v4.3-Q8-MLX
+- Modelo en Hugging Face: https://huggingface.co/tstepspam/Cydonia-24B-v4.3-Q8-MLX
 - Modelo base: https://huggingface.co/TheDrummer/Cydonia-24B-v4.3
 - Variante heretic en MLX Q4 del mismo autor: https://huggingface.co/tstepspam/Cydonia-24B-v4.3-heretic-v4-Q4-MLX
 - Ficha del modelo GGUF en local-ai-zone: https://local-ai-zone.github.io/models/cydonia-24b-v4-3.html

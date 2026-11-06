@@ -76,10 +76,10 @@ No se conocen adaptadores públicos comparables en el mismo nicho (asistente RAG
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen2.5-7b-advocate-dpo-lora | 7,61B (40,4M entrenables) | 32.768 tokens | RAG legal (Kenia), citación verificable | Apache 2.0 | HuggingFace |
-| Qwen/Qwen2.5-7B-Instruct | 7,61B | 32.768 tokens nativos | Propósito general, multilingüe | Apache 2.0 | HuggingFace |
-| Llama 3.1 8B Instruct | 8,03B | 128.000 tokens | Propósito general, tool calling | Licencia comunitaria Llama 3.1 | HuggingFace |
-| Mistral 7B Instruct v0.3 | 7,25B | 32.768 tokens | Propósito general | Apache 2.0 | HuggingFace |
+| qwen2.5-7b-advocate-dpo-lora | 7,61B (40,4M entrenables) | 32.768 tokens | RAG legal (Kenia), citación verificable | Apache 2.0 | Hugging Face |
+| Qwen/Qwen2.5-7B-Instruct | 7,61B | 32.768 tokens nativos | Propósito general, multilingüe | Apache 2.0 | Hugging Face |
+| Llama 3.1 8B Instruct | 8,03B | 128.000 tokens | Propósito general, tool calling | Licencia comunitaria Llama 3.1 | Hugging Face |
+| Mistral 7B Instruct v0.3 | 7,25B | 32.768 tokens | Propósito general | Apache 2.0 | Hugging Face |
 
 Datos de los modelos alternativos tomados de sus respectivas model cards públicas; no proceden de la información proporcionada sobre este adaptador. En el benchmark del autor, el modelo base sin adaptar fabricó 11 citas frente a 0 del adaptador, diferencia cualitativa más relevante que la variación de corrección.
 
@@ -98,7 +98,7 @@ Datos de los modelos alternativos tomados de sus respectivas model cards públic
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mikekeror/qwen2.5-7b-advocate-dpo-lora
+- Modelo en Hugging Face: https://huggingface.co/mikekeror/qwen2.5-7b-advocate-dpo-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Repositorio de la aplicación Advocate Remuneration Assistant: https://github.com/mikekeror-rgb/advocate_renumeration_assistant_v1
-- Resultado de búsqueda web (listado genérico de modelos LoRA en HuggingFace, sin información adicional sobre este modelo): https://huggingface.co/models?sort=modified&search=lora
+- Resultado de búsqueda web (listado genérico de modelos LoRA en Hugging Face, sin información adicional sobre este modelo): https://huggingface.co/models?sort=modified&search=lora

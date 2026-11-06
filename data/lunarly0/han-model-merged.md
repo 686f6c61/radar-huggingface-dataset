@@ -76,7 +76,7 @@ La comparativa se basa en caracteristicas generales, ya que no hay benchmarks pu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lunarly0/han-model-merged
+- Modelo en Hugging Face: https://huggingface.co/lunarly0/han-model-merged
 - Modelo base Sao10K/L3-8B-Stheno-v3.2: https://huggingface.co/Sao10K/L3-8B-Stheno-v3.2
 - Modelo base ytu-ce-cosmos/Turkish-Llama-8b-Instruct-v0.1: https://huggingface.co/ytu-ce-cosmos/Turkish-Llama-8b-Instruct-v0.1
 - Herramienta mergekit: https://github.com/cg123/mergekit

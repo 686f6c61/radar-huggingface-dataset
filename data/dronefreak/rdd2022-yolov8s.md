@@ -26,7 +26,7 @@ No se trata de un modelo de lenguaje: no tiene ventana de contexto, no soporta g
 | Dataset de entrenamiento | RDD2022 Road Damage (`dronefreak/RDD2022`) |
 | Modelo base | Ultralytics/YOLOv8 (YOLOv8s), ajuste fino |
 | Tamano del repositorio (metadatos HF) | 0,0 GB |
-| Fecha de creacion en HuggingFace | 2026-09-20 (segun metadatos del repositorio) |
+| Fecha de creacion en Hugging Face | 2026-09-20 (segun metadatos del repositorio) |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
 
 ## Arquitectura y entrenamiento
@@ -103,7 +103,7 @@ Comparativa publicada por el propio autor dentro del zoo de modelos de Detection
 
 | Modelo | Parametros | mAP@50 (RDD2022) | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| YOLOv8s (este modelo) | 11,2 M | 61,45 | AGPL-3.0 | Pesos en HuggingFace (`dronefreak/rdd2022-yolov8s`) |
+| YOLOv8s (este modelo) | 11,2 M | 61,45 | AGPL-3.0 | Pesos en Hugging Face (`dronefreak/rdd2022-yolov8s`) |
 | YOLOv8n (mismo zoo) | no disponible | 58,80 | no disponible | Pesos no enlazados en la informacion proporcionada |
 | YOLOv8m (mismo zoo) | no disponible | 62,03 | no disponible | Pesos no enlazados en la informacion proporcionada |
 | RF-DETR Small (mismo zoo) | no disponible | 64,71 | no disponible | Pesos no enlazados en la informacion proporcionada |
@@ -126,7 +126,7 @@ Nota: los valores de la comparativa proceden exclusivamente de la tabla del zoo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dronefreak/rdd2022-yolov8s
+- Modelo en Hugging Face: https://huggingface.co/dronefreak/rdd2022-yolov8s
 - Dataset RDD2022 Road Damage: https://huggingface.co/datasets/dronefreak/RDD2022
 - Repositorio DetectionBench (fuente de la evaluacion): https://github.com/dronefreak/DetectionBench
 - Modelo base Ultralytics/YOLOv8: https://huggingface.co/Ultralytics/YOLOv8

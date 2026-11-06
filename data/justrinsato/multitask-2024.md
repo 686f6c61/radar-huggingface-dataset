@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Justrinsato/multitask-2024` es un repositorio experimental publicado en HuggingFace por el usuario Justrinsato bajo licencia MIT. Se presenta como una base de codigo de tipo **Blip** orientada a tareas **multitask**, con una implementacion propia que incluye el modelo, un script de ejecucion (`run.py`), un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` descrito explicitamente como **checkpoint de inicializacion**, no como un modelo entrenado ni evaluado.
+`Justrinsato/multitask-2024` es un repositorio experimental publicado en Hugging Face por el usuario Justrinsato bajo licencia MIT. Se presenta como una base de codigo de tipo **Blip** orientada a tareas **multitask**, con una implementacion propia que incluye el modelo, un script de ejecucion (`run.py`), un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` descrito explicitamente como **checkpoint de inicializacion**, no como un modelo entrenado ni evaluado.
 
 El proposito declarado por el autor es servir de punto de partida para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. El `README` indica que no se reclama ninguna puntuacion de benchmark y que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio. Por tanto, no se trata de un modelo listo para produccion, sino de un andamiaje de investigacion.
 
@@ -26,7 +26,7 @@ La relevancia de la ficha es, por tanto, acotada: sirve para documentar un artef
 | Activacion | approx gelu |
 | Normalizacion | instancenorm |
 | Optimizador por defecto | rmsprop con planificador `step` |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-09-10 |
 | Ultima actualizacion | 2026-09-10 |
@@ -90,7 +90,7 @@ No se dispone de datos verificables de modelos comparables dentro de la informac
 | Rendimiento | sin benchmarks publicados | no disponible |
 | Licencia | MIT | no disponible |
 | Estado | checkpoint de inicializacion sin entrenar | no disponible |
-| Disponibilidad | HuggingFace (0 descargas, 0 likes) | no disponible |
+| Disponibilidad | Hugging Face (0 descargas, 0 likes) | no disponible |
 
 Cualquier comparacion con modelos de la familia BLIP de referencia requeriria verificar por separado sus parametros, contexto, licencia y resultados, datos que no forman parte de la informacion facilitada para esta ficha.
 
@@ -108,6 +108,6 @@ Cualquier comparacion con modelos de la familia BLIP de referencia requeriria ve
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Justrinsato/multitask-2024
+- Repositorio en Hugging Face: https://huggingface.co/Justrinsato/multitask-2024
 - Archivos incluidos en el repositorio: `run.py` (artefacto principal), `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Papers, blogs, repositorios derivados o demos: no disponible. La busqueda web realizada no devolvio resultados relacionados con el modelo; los enlaces obtenidos corresponden a un partido de rugby league y no son relevantes para esta ficha.

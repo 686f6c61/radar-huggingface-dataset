@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`barbieristef/albef-classification-dev65` es un repositorio de HuggingFace publicado por el usuario barbieristef que contiene una implementación propia y reducida de la arquitectura Albef orientada a tareas de clasificación. No se trata de un modelo entrenado, sino de un punto de partida reproducible: incluye un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto, un script `inference.py` como artefacto principal y un checkpoint `model.safetensors` que el propio autor describe como inicialización válida únicamente para "smoke tests".
+`barbieristef/albef-classification-dev65` es un repositorio de Hugging Face publicado por el usuario barbieristef que contiene una implementación propia y reducida de la arquitectura Albef orientada a tareas de clasificación. No se trata de un modelo entrenado, sino de un punto de partida reproducible: incluye un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto, un script `inference.py` como artefacto principal y un checkpoint `model.safetensors` que el propio autor describe como inicialización válida únicamente para "smoke tests".
 
 El peso real declarado en el fichero de safetensors es de 24.832 parámetros totales, una cifra extraordinariamente baja que no se corresponde con lo que el autor etiqueta como variante "large". El repositorio ocupa 0,0 GB y no registra descargas ni likes en el momento de la consulta. La licencia es BSD-3-Clause.
 
@@ -72,7 +72,7 @@ No se dispone de datos de rendimiento de este repositorio, por lo que la compara
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| barbieristef/albef-classification-dev65 | 24.832 | no disponible | BSD-3-Clause | HuggingFace (repo publico, 0 descargas registradas) |
+| barbieristef/albef-classification-dev65 | 24.832 | no disponible | BSD-3-Clause | Hugging Face (repo publico, 0 descargas registradas) |
 | Albef original (Salesforce) | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha |
 | Alternativas de clasificación de capacidad comparable | no disponible | no disponible | no disponible | no disponible |
 
@@ -93,6 +93,6 @@ El autor recomienda, como criterio de evaluación, comparar contra una línea ba
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/barbieristef/albef-classification-dev65
+- Hugging Face: https://huggingface.co/barbieristef/albef-classification-dev65
 - Paper de referencia de Albef ("Align before Fuse"): no disponible en la información proporcionada; no se enlaza ningún paper en la model card.
 - Repositorio de código, demo o blog del autor: no disponible en la información proporcionada.

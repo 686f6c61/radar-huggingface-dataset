@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rghosh8/SFT_baseline_deepseek-llm-7b-chat_opencoder_1234` es un ajuste fino supervisado (SFT) del modelo `deepseek-ai/deepseek-llm-7b-chat` de DeepSeek, publicado por el usuario rghosh8 en HuggingFace. Se trata de un checkpoint experimental de investigación, entrenado con la librería TRL, cuyo propósito declarado es servir como línea base (baseline) de SFT sobre el modelo conversacional de DeepSeek. El nombre sugiere un entrenamiento sobre un conjunto de datos vinculado a OpenCoder con semilla 1234, aunque la model card no documenta la composición del dataset.
+`rghosh8/SFT_baseline_deepseek-llm-7b-chat_opencoder_1234` es un ajuste fino supervisado (SFT) del modelo `deepseek-ai/deepseek-llm-7b-chat` de DeepSeek, publicado por el usuario rghosh8 en Hugging Face. Se trata de un checkpoint experimental de investigación, entrenado con la librería TRL, cuyo propósito declarado es servir como línea base (baseline) de SFT sobre el modelo conversacional de DeepSeek. El nombre sugiere un entrenamiento sobre un conjunto de datos vinculado a OpenCoder con semilla 1234, aunque la model card no documenta la composición del dataset.
 
 El modelo hereda la arquitectura transformer decoder-only de DeepSeek LLM 7B, con 6.910.365.696 parámetros totales según los pesos en safetensors, y un tamaño de repositorio de 13,8 GB (lo que corresponde a pesos en precisión de 16 bits). No se especifican en la información disponible la longitud de contexto, los idiomas soportados ni la licencia efectiva del checkpoint.
 
@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| rghosh8/SFT_baseline_deepseek-llm-7b-chat_opencoder_1234 | 6,91 B | no disponible | no disponible | HuggingFace (0 descargas) | Checkpoint SFT experimental |
-| deepseek-ai/deepseek-llm-7b-chat | ~6,9 B | no disponible en esta ficha | consultar model card del autor | HuggingFace (modelo base público) | Modelo conversacional original de DeepSeek |
-| Mistral-7B-Instruct | ~7,2 B | 32 K (según versión) | Apache 2.0 (versiones habituales) | HuggingFace | Alternativa densa de tamaño comparable |
-| Llama 3.1 8B Instruct | ~8 B | 128 K | Llama 3.1 Community License | HuggingFace | Alternativa densa con contexto largo |
+| rghosh8/SFT_baseline_deepseek-llm-7b-chat_opencoder_1234 | 6,91 B | no disponible | no disponible | Hugging Face (0 descargas) | Checkpoint SFT experimental |
+| deepseek-ai/deepseek-llm-7b-chat | ~6,9 B | no disponible en esta ficha | consultar model card del autor | Hugging Face (modelo base público) | Modelo conversacional original de DeepSeek |
+| Mistral-7B-Instruct | ~7,2 B | 32 K (según versión) | Apache 2.0 (versiones habituales) | Hugging Face | Alternativa densa de tamaño comparable |
+| Llama 3.1 8B Instruct | ~8 B | 128 K | Llama 3.1 Community License | Hugging Face | Alternativa densa con contexto largo |
 
 La comparación directa de rendimiento no es posible porque el checkpoint no publica benchmarks. La principal diferencia frente a las alternativas es la ausencia de licencia declarada y de documentación de entrenamiento, lo que limita su uso fuera de investigación.
 
@@ -94,6 +94,6 @@ La comparación directa de rendimiento no es posible porque el checkpoint no pub
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rghosh8/SFT_baseline_deepseek-llm-7b-chat_opencoder_1234
+- Modelo en Hugging Face: https://huggingface.co/rghosh8/SFT_baseline_deepseek-llm-7b-chat_opencoder_1234
 - Modelo base: https://huggingface.co/deepseek-ai/deepseek-llm-7b-chat
 - Repositorio TRL: https://github.com/huggingface/trl

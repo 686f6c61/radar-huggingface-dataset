@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Apex-Coder-8B es un modelo de generación de texto de tipo conversacional, con aproximadamente 8.030 millones de parámetros, publicado en HuggingFace por el usuario mamiyusufdemi bajo licencia Apache 2.0. El modelo se presenta como un fine-tuning del propio repositorio base `mamiyusufdemi/Apex-Coder-8B`, un detalle que indica que se trata de una variante derivada de un checkpoint previo del mismo autor, entrenada con la librería Unsloth para acelerar el proceso de ajuste fino.
+Apex-Coder-8B es un modelo de generación de texto de tipo conversacional, con aproximadamente 8.030 millones de parámetros, publicado en Hugging Face por el usuario mamiyusufdemi bajo licencia Apache 2.0. El modelo se presenta como un fine-tuning del propio repositorio base `mamiyusufdemi/Apex-Coder-8B`, un detalle que indica que se trata de una variante derivada de un checkpoint previo del mismo autor, entrenada con la librería Unsloth para acelerar el proceso de ajuste fino.
 
-La información pública disponible es muy limitada: la model card no documenta el proceso de entrenamiento, el dataset utilizado, la longitud de contexto nativa ni los resultados de evaluación. Los metadatos de HuggingFace indican arquitectura Llama, formato de pesos safetensors, soporte para text-generation-inference y una variante cuantizada en 4 bits mediante bitsandbytes. El modelo está etiquetado únicamente para inglés.
+La información pública disponible es muy limitada: la model card no documenta el proceso de entrenamiento, el dataset utilizado, la longitud de contexto nativa ni los resultados de evaluación. Los metadatos de Hugging Face indican arquitectura Llama, formato de pesos safetensors, soporte para text-generation-inference y una variante cuantizada en 4 bits mediante bitsandbytes. El modelo está etiquetado únicamente para inglés.
 
 Por su nombre y su orientación declarada a generación de código, Apex-Coder-8B se posiciona en la categoría de modelos pequeños especializados en programación, un segmento con alternativas consolidadas como CodeLlama-7B, DeepSeek-Coder-6.7B o Qwen2.5-Coder-7B. Su relevancia práctica es limitada mientras no existan benchmarks publicados que permitan verificar su calidad frente a esas alternativas.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Benchmark publicado | Disponibilidad |
 |---|---|---|---|---|---|
-| Apex-Coder-8B | 8,03B | no disponible | Apache 2.0 | no | HuggingFace (170 descargas) |
-| CodeLlama-7B | 6,7B | 16K (hasta 100K en variantes) | Llama 2 custom | sí (HumanEval, MBPP) | HuggingFace, ampliamente adoptado |
-| DeepSeek-Coder-6.7B | 6,7B | 16K | DeepSeek license | sí (HumanEval, MBPP, DS-1000) | HuggingFace |
-| Qwen2.5-Coder-7B | 7,6B | 32K (128K en variantes) | Apache 2.0 | sí (HumanEval, LiveCodeBench) | HuggingFace, muy adoptado |
+| Apex-Coder-8B | 8,03B | no disponible | Apache 2.0 | no | Hugging Face (170 descargas) |
+| CodeLlama-7B | 6,7B | 16K (hasta 100K en variantes) | Llama 2 custom | sí (HumanEval, MBPP) | Hugging Face, ampliamente adoptado |
+| DeepSeek-Coder-6.7B | 6,7B | 16K | DeepSeek license | sí (HumanEval, MBPP, DS-1000) | Hugging Face |
+| Qwen2.5-Coder-7B | 7,6B | 32K (128K en variantes) | Apache 2.0 | sí (HumanEval, LiveCodeBench) | Hugging Face, muy adoptado |
 
 La comparación se limita a parámetros, contexto y licencia, ya que Apex-Coder-8B no publica resultados de evaluación que permitan contrastar su calidad de generación de código con las alternativas.
 
@@ -83,7 +83,7 @@ La comparación se limita a parámetros, contexto y licencia, ya que Apex-Coder-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mamiyusufdemi/Apex-Coder-8B
+- Modelo en Hugging Face: https://huggingface.co/mamiyusufdemi/Apex-Coder-8B
 - Repositorio Unsloth (herramienta de entrenamiento): https://github.com/unslothai/unsloth
 - Documentación de text-generation-inference: https://github.com/huggingface/text-generation-inference
 - Documentación de transformers: https://huggingface.co/docs/transformers

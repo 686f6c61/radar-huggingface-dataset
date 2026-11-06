@@ -17,7 +17,7 @@ El modelo se adapta a partir del LFM2-350M-Base y se entrena con un objetivo de 
 | Tipos de cuantizacion | no disponible (pesos en safetensors, se puede cuantizar con herramientas externas) |
 | Idiomas soportados | 15: en, de, es, fr, it, nl, pl, pt, ar, hi, ja, ru, tr, vi, zh |
 | Licencia | LFM Open License v1.0 (lfm1.0) |
-| Formato de pesos | safetensors (también disponible en el repo de HuggingFace) |
+| Formato de pesos | safetensors (también disponible en el repo de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -34,7 +34,7 @@ El entrenamiento parte del modelo base LFM2-350M-Base y se realiza con un objeti
 - Inferencia de lenguaje natural (NLI) y QA extractivo: razonamiento sobre pares de frases y extracción de spans de respuesta.
 - Multilingüe: soporta 15 idiomas, incluyendo lenguas con escrituras no latinas (árabe, hindi, japonés, ruso, chino, etc.).
 - Generación de texto por difusión enmascarada: aunque es un encoder, se puede utilizar de forma creativa para generar texto iterativamente desenmascarando tokens (demo oficial).
-- Eficiencia en CPU: los demos oficiales se ejecutan en espacios de HuggingFace solo con CPU, lo que indica que es viable en entornos sin GPU.
+- Eficiencia en CPU: los demos oficiales se ejecutan en espacios de Hugging Face solo con CPU, lo que indica que es viable en entornos sin GPU.
 
 ## Casos de uso
 
@@ -54,7 +54,7 @@ No se han publicado resultados numéricos de benchmarks (MMLU, HumanEval, GLUE, 
 
 - No se especifican requisitos oficiales de hardware en la documentación proporcionada.
 - Por su tamaño (354 M parámetros), el modelo es ligero: en fp32 ocupa aproximadamente 1,4 GB, en fp16 unos 0,7 GB y en int8 unos 0,35 GB. Esto permite ejecutarlo en GPUs de consumo como RTX 3060, RTX 4090 o incluso en CPU.
-- Los demos oficiales se ejecutan en espacios de HuggingFace con CPU únicamente, lo que confirma que es viable en entornos sin aceleración GPU.
+- Los demos oficiales se ejecutan en espacios de Hugging Face con CPU únicamente, lo que confirma que es viable en entornos sin aceleración GPU.
 - Para despliegue en producción, se puede usar la librería `transformers` con `trust_remote_code=True`, o exportar a formatos como ONNX o TensorRT para optimización. También es compatible con herramientas de cuantización como llama.cpp o GPTQ, aunque no se mencionan oficialmente.
 - La latencia y el throughput no se han publicado; se recomienda realizar pruebas propias según el hardware objetivo.
 
@@ -81,7 +81,7 @@ Nota: los datos de ModernBERT y BERT-large son de conocimiento general, no de la
 
 ## Enlaces
 
-- [HuggingFace - LFM2.5-Encoder-350M](https://huggingface.co/LiquidAI/LFM2.5-Encoder-350M)
+- [Hugging Face - LFM2.5-Encoder-350M](https://huggingface.co/LiquidAI/LFM2.5-Encoder-350M)
 - [Blog post de Liquid AI sobre LFM2.5-Encoders](https://www.liquid.ai/blog/lfm2-5-encoders)
 - [Playground de Liquid AI](https://playground.liquid.ai/)
 - [Documentación de LFM](https://docs.liquid.ai/lfm/getting-started/welcome)

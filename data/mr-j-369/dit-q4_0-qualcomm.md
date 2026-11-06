@@ -90,6 +90,6 @@ Las cifras de los modelos comparables provienen de sus fichas publicas y no de l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Mr-J-369/dit-Q4_0-Qualcomm
+- Repositorio en Hugging Face: https://huggingface.co/Mr-J-369/dit-Q4_0-Qualcomm
 - Repositorio de la aplicacion FancyAI: https://github.com/Mr-J-369/Fancy-Ai
 - Resultados de busqueda web: no aportan informacion sobre el modelo; las entradas devueltas tratan sobre el tratamiento "Mr." en ingles y sobre una cadena de bricolaje, y no guardan relacion con esta ficha. No se han encontrado papers, blogs tecnicos ni demos adicionales.

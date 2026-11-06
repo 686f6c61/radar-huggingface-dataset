@@ -6,7 +6,7 @@
 
 El modelo se entrenó con un presupuesto de 40 millones de tokens sobre el conjunto `belumind/en-vi-ja-curated-500k-triplets` y está especializado en traducción de vietnamita a inglés y de japonés a inglés. El tokenizador es un BPE byte-level con 16.000 merges entrenado conjuntamente sobre los tres idiomas. La ventana de contexto de 256 tokens limita su uso a segmentos cortos (frases u oraciones), no a documentos completos.
 
-Su relevancia es fundamentalmente docente y experimental: sirve como banco de pruebas reproducible para estudiar enrutamiento de expertos, especialización de expertos por idioma y equilibrio entre parámetros totales y parámetros activos en un MoE. No se ha publicado licencia, no tiene descargas ni valoraciones en HuggingFace y no se han divulgado resultados numéricos de benchmarks en la model card.
+Su relevancia es fundamentalmente docente y experimental: sirve como banco de pruebas reproducible para estudiar enrutamiento de expertos, especialización de expertos por idioma y equilibrio entre parámetros totales y parámetros activos en un MoE. No se ha publicado licencia, no tiene descargas ni valoraciones en Hugging Face y no se han divulgado resultados numéricos de benchmarks en la model card.
 
 ## Especificaciones técnicas
 
@@ -68,7 +68,7 @@ La model card indica que el repositorio incluye un fichero `eval.json` con métr
 - VRAM estimada para inferencia: no disponible de forma oficial. El repositorio completo ocupa 0,1 GB, por lo que el checkpoint en punto flotante de 32 bits cabe holgadamente en menos de 1 GB de memoria, incluyendo activaciones con contexto de 256 tokens. Cualquier GPU con 2 GB o más es suficiente; incluso una GPU integrada o la CPU bastan.
 - GPU recomendadas: no se requiere acelerador dedicado. Cualquier GPU consumer (GTX 1650, RTX 3060, RTX 4090) o incluso una Apple Silicon con Metal es sobredimensionada para este modelo. No tiene sentido plantear A100 o H100 salvo para entrenamiento o evaluación masiva por lotes.
 - Compatibilidad con GPU de consumo: sí, en cualquier modelo actual. También es viable la ejecución íntegra en CPU.
-- Opciones de despliegue: la única vía documentada es PyTorch nativo mediante `src/model.py`, cargando el estado con `torch.load("best.pt", map_location="cpu", weights_only=False)` y reconstruyendo el modelo con `TransformerConfig.from_dict`. No hay soporte publicado para vLLM, TGI, llama.cpp, Ollama, Transformers de HuggingFace ni llama-cpp-python, ya que la arquitectura MoE `moe_shared` es personalizada y requiere el código del repositorio. Exportar a ONNX o TorchScript sería posible en teoría, pero requiere trabajo adicional no documentado.
+- Opciones de despliegue: la única vía documentada es PyTorch nativo mediante `src/model.py`, cargando el estado con `torch.load("best.pt", map_location="cpu", weights_only=False)` y reconstruyendo el modelo con `TransformerConfig.from_dict`. No hay soporte publicado para vLLM, TGI, llama.cpp, Ollama, Transformers de Hugging Face ni llama-cpp-python, ya que la arquitectura MoE `moe_shared` es personalizada y requiere el código del repositorio. Exportar a ONNX o TorchScript sería posible en teoría, pero requiere trabajo adicional no documentado.
 - Latencia y throughput estimados: no disponible. No se han publicado mediciones de tokens por segundo ni de latencia por lote.
 
 ## Comparativa con modelos similares
@@ -85,7 +85,7 @@ Los datos de las tres alternativas provienen de su documentación pública y se 
 ## Limitaciones y advertencias
 
 - Licencia no especificada: al no declararse licencia, no hay autorización explícita para uso comercial ni para redistribución. Cualquier uso en producción requiere contactar con el autor.
-- Ausencia total de validación externa: 0 descargas y 0 valoraciones en HuggingFace, y se trata de un trabajo de asignatura académica, no de un modelo probado en entornos reales.
+- Ausencia total de validación externa: 0 descargas y 0 valoraciones en Hugging Face, y se trata de un trabajo de asignatura académica, no de un modelo probado en entornos reales.
 - Contexto muy limitado: 256 tokens restringen el uso a frases u oraciones cortas. No admite documentos, diálogos largos ni contexto conversacional acumulado.
 - Presupuesto de entrenamiento reducido: 40 millones de tokens es un volumen muy bajo en comparación con los cientos de miles de millones usados por modelos de traducción de referencia, por lo que cabe esperar una calidad de traducción claramente inferior.
 - Riesgo elevado de alucinación y de traducciones incorrectas o inventadas, especialmente en terminología especializada, nombres propios, fechas y números.
@@ -97,6 +97,6 @@ Los datos de las tres alternativas provienen de su documentación pública y se 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/siddarthg44/anlp-a2-p1-moe_shared
+- Repositorio en Hugging Face: https://huggingface.co/siddarthg44/anlp-a2-p1-moe_shared
 - Dataset de entrenamiento citado en la model card: https://huggingface.co/datasets/belumind/en-vi-ja-curated-500k-triplets
 - No se han encontrado en la búsqueda web papers, blogs, repositorios de código ni demos asociados a este modelo. Los resultados de búsqueda disponibles corresponden a plataformas de contratación pública italianas (SATER, Emilia-Romaña) sin relación alguna con el modelo.

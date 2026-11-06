@@ -71,7 +71,7 @@ No se dispone de comparativas directas con otros modelos de retrieval de tamaño
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lucaschroeder/mixer-retrieval-baseline
+- Hugging Face: https://huggingface.co/lucaschroeder/mixer-retrieval-baseline
 - Paper arXiv (HTML): https://arxiv.org/html/2409.01482v1
 - Paper arXiv (abstract): https://arxiv.org/abs/2409.01482
 - Semantic Scholar: https://www.semanticscholar.org/paper/Masked-Mixers-for-Language-Generation-and-Retrieval-Badger/63da35140c39a1669f3c378826fb1d68964b9a5d

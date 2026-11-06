@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MLR_executor_Qwen-7B-GGUF es una redistribucion en formato GGUF del modelo MLR_executor_Qwen-7B, publicado originalmente por el usuario sxiong en HuggingFace. La unica informacion disponible en la model card es una coleccion de metadatos de la herramienta de conversion utilizada por mradermacher, un conocido generador de cuantizaciones estaticas de modelos populares. El modelo base parte de Qwen-7B, un transformer decoder-only de 7 mil millones de parametros desarrollado por Alibaba Cloud, pero no se detalla que fine-tuning especifico se ha aplicado ni con que datos.
+MLR_executor_Qwen-7B-GGUF es una redistribucion en formato GGUF del modelo MLR_executor_Qwen-7B, publicado originalmente por el usuario sxiong en Hugging Face. La unica informacion disponible en la model card es una coleccion de metadatos de la herramienta de conversion utilizada por mradermacher, un conocido generador de cuantizaciones estaticas de modelos populares. El modelo base parte de Qwen-7B, un transformer decoder-only de 7 mil millones de parametros desarrollado por Alibaba Cloud, pero no se detalla que fine-tuning especifico se ha aplicado ni con que datos.
 
 La relevancia de esta ficha es limitada: se trata de un artefacto derivado con cero descargas y cero likes en el momento de la consulta, sin documentacion tecnica asociada, sin licencia declarada y sin especificacion de idiomas. El nombre "MLR_executor" sugiere un fine-tuning orientado a ejecucion o razonamiento multi-paso (posiblemente "Multi-step Logical Reasoning"), pero esta interpretacion no esta confirmada por ninguna fuente.
 
@@ -25,7 +25,7 @@ El unico valor anadido verificable de este repositorio es la disponibilidad de 1
 
 No se dispone de informacion sobre la arquitectura especifica del fine-tuning. El modelo base es Qwen-7B, un transformer decoder-only con atencion multi-cabeza estandar, RoPE y normalizacion RMSNorm, pero la model card de este repositorio no confirma que se hayan preservado esas caracteristicas ni documenta cambios arquitectonicos. Tampoco se especifica si el fine-tuning introdujo modificaciones como atencion linear, decodificacion especulativa o modos de razonamiento extendido.
 
-Respecto a los datos de entrenamiento, no hay ninguna informacion disponible: se desconoce el numero de tokens utilizados, la composicion del dataset, si se aplicaron tecnicas de RLHF, DPO o SFT, y cual es el objetivo concreto del fine-tuning "MLR_executor". El unico dato tecnico verificable es que la conversion a GGUF se realizo con la herramienta de mradermacher (quantize_version 2, salida con cuantizacion de tensores activada, convert_type hf), lo que implica que los pesos originales estaban en formato HuggingFace y fueron convertidos sin modificaciones estructurales mas alla de la cuantizacion.
+Respecto a los datos de entrenamiento, no hay ninguna informacion disponible: se desconoce el numero de tokens utilizados, la composicion del dataset, si se aplicaron tecnicas de RLHF, DPO o SFT, y cual es el objetivo concreto del fine-tuning "MLR_executor". El unico dato tecnico verificable es que la conversion a GGUF se realizo con la herramienta de mradermacher (quantize_version 2, salida con cuantizacion de tensores activada, convert_type hf), lo que implica que los pesos originales estaban en formato Hugging Face y fueron convertidos sin modificaciones estructurales mas alla de la cuantizacion.
 
 ## Capacidades
 
@@ -43,7 +43,7 @@ Respecto a los datos de entrenamiento, no hay ninguna informacion disponible: se
 - Evaluacion comparativa de fine-tunings de Qwen-7B: el repositorio permite probar el efecto del fine-tuning MLR_executor frente al Qwen-7B base en tareas de razonamiento, siempre que se valide empiricamente.
 - Experimentacion academica con cuantizacion: la disponibilidad de 11 variantes (Q2_K a F16) facilita estudios sobre degradacion de calidad por cuantizacion en modelos de 7B.
 - Integracion en pipelines de CI/CD para pruebas de humo: al ser un GGUF ligero, puede cargarse en runners con CPU para validar respuestas antes de desplegar versiones mayores.
-- Base para fine-tuning adicional: los pesos en formato HuggingFace del modelo original (sxiong/MLR_executor_Qwen-7B) pueden servir como punto de partida para SFT o DPO, aunque la licencia no declarada es un riesgo.
+- Base para fine-tuning adicional: los pesos en formato Hugging Face del modelo original (sxiong/MLR_executor_Qwen-7B) pueden servir como punto de partida para SFT o DPO, aunque la licencia no declarada es un riesgo.
 - Chatbot de proposito general en entornos controlados: si el fine-tuning no degrada las capacidades base, podria usarse para conversacion multi-turno, pero requiere validacion previa por falta de benchmarks.
 
 ## Benchmarks y rendimiento
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| MLR_executor_Qwen-7B-GGUF | 7B | no disponible | no disponible | GGUF | HuggingFace (0 descargas) |
+| MLR_executor_Qwen-7B-GGUF | 7B | no disponible | no disponible | GGUF | Hugging Face (0 descargas) |
 | Qwen2.5-7B-Instruct | 7B | 32.768 tokens (128K con YaRN) | Apache 2.0 | safetensors, GGUF | Amplia, muy documentado |
 | Mistral-7B-Instruct-v0.3 | 7B | 32.768 tokens | Apache 2.0 | safetensors, GGUF | Amplia, muy documentado |
 | Llama-3.1-8B-Instruct | 8B | 128.000 tokens | Llama 3.1 Community License | safetensors, GGUF | Amplia, con restricciones de uso |

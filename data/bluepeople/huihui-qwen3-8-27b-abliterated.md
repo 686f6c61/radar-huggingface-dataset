@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparativos, por lo que la tabla se limit
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bluepeople/Huihui-Qwen3.8-27B-abliterated
+- Repositorio Hugging Face: https://huggingface.co/bluepeople/Huihui-Qwen3.8-27B-abliterated
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio de referencia del autor original: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated
 - Técnica de abliteration: https://github.com/Sumandora/remove-refusals-with-transformers

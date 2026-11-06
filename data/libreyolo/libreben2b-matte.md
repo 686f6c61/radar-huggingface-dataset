@@ -21,7 +21,7 @@ El modelo resuelve el problema de la segmentación dicotómica de imágenes (DIS
 
 ## Arquitectura y entrenamiento
 
-El modelo se deriva del repositorio [PramaLLC/BEN2](https://github.com/PramaLLC/BEN2) en el commit `2c99a5da477b5523585bfa5c893888a6e818a8f6`, utilizando el checkpoint publicado en HuggingFace en la revisión `e48a20765fb421d19dcdb0bf3cc61e802ca5ec8f`. La arquitectura subyacente corresponde a la red BEN2 Base, diseñada para segmentación dicotómica de imágenes, que predice un matte suave de opacidad en el rango [0, 1] para cada píxel.
+El modelo se deriva del repositorio [PramaLLC/BEN2](https://github.com/PramaLLC/BEN2) en el commit `2c99a5da477b5523585bfa5c893888a6e818a8f6`, utilizando el checkpoint publicado en Hugging Face en la revisión `e48a20765fb421d19dcdb0bf3cc61e802ca5ec8f`. La arquitectura subyacente corresponde a la red BEN2 Base, diseñada para segmentación dicotómica de imágenes, que predice un matte suave de opacidad en el rango [0, 1] para cada píxel.
 
 La modificación realizada por LibreYOLO consiste únicamente en un envoltorio de metadatos del state-dict; los parámetros aprendidos permanecen inalterados. El puerto devuelve logits crudos para el postprocesado compartido de mattes de LibreYOLO y no incluye los ayudantes opcionales de refinamiento de medios o de primer plano que ofrece BEN2. Los datos de entrenamiento, el número de tokens o épocas y cualquier técnica de alineación como RLHF o DPO no se detallan en la información disponible.
 
@@ -80,7 +80,7 @@ La comparativa exacta no es posible sin datos de rendimiento publicados.
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/LibreYOLO/LibreBEN2b-matte)
+- [Página del modelo en Hugging Face](https://huggingface.co/LibreYOLO/LibreBEN2b-matte)
 - [Repositorio original de BEN2](https://github.com/PramaLLC/BEN2)
-- [Checkpoint original de BEN2 en HuggingFace](https://huggingface.co/PramaLLC/BEN2)
+- [Checkpoint original de BEN2 en Hugging Face](https://huggingface.co/PramaLLC/BEN2)
 - [Repositorio fuente de LibreYOLO](https://github.com/LibreYOLO/libreyolo)

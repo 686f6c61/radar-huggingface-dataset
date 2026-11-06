@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VoiceTut-TTS es un modelo de síntesis de voz (text-to-speech) especializado en árabe egipcio con capacidad de alternancia de código (code-switching) árabe-inglés. Lo desarrolla Mohammed Aly (usuario Hadidiz9 en HuggingFace) como un fine-tuning del modelo base OmniVoice de k2-fsa, y resuelve el problema de la falta de sistemas TTS de calidad para dialectos árabes reales frente al árabe estándar moderno (MSA).
+VoiceTut-TTS es un modelo de síntesis de voz (text-to-speech) especializado en árabe egipcio con capacidad de alternancia de código (code-switching) árabe-inglés. Lo desarrolla Mohammed Aly (usuario Hadidiz9 en Hugging Face) como un fine-tuning del modelo base OmniVoice de k2-fsa, y resuelve el problema de la falta de sistemas TTS de calidad para dialectos árabes reales frente al árabe estándar moderno (MSA).
 
 El modelo parte de la arquitectura OmniVoice, que combina un backbone de texto Qwen3-0.6B con un tokenizador de audio Higgs, y suma 612.577.288 parámetros totales. Incorpora 19 voces predefinidas (12 masculinas y 7 femeninas), clonación de voz zero-shot a partir de unos segundos de audio de referencia, una pipeline de normalización de texto específica para árabe egipcio y streaming real para texto largo.
 
@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parametros | Idiomas | Clonacion zero-shot | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| VoiceTut-TTS | 612,6 M | ar, arz, en | Sí | Apache-2.0 | HuggingFace, PyPI, GitHub |
+| VoiceTut-TTS | 612,6 M | ar, arz, en | Sí | Apache-2.0 | Hugging Face, PyPI, GitHub |
 | OmniVoice (base) | no disponible | no disponible | no disponible | no disponible | GitHub (k2-fsa) |
 | Alternativas TTS multilingues | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -99,7 +99,7 @@ La información proporcionada solo permite comparar con el modelo base OmniVoice
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Hadidiz9/VoiceTut-TTS
+- Modelo en Hugging Face: https://huggingface.co/Hadidiz9/VoiceTut-TTS
 - Modelo (autor): https://huggingface.co/mohammedaly22/VoiceTut-TTS
 - Demo interactiva (Space): https://huggingface.co/spaces/mohammedaly22/VoiceTut-TTS
 - Muestras de audio: https://mohammedaly22.github.io/VoiceTuT-TTS/

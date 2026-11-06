@@ -32,7 +32,7 @@ Su relevancia es de investigacion: extiende CCIL desde entornos de tarea unica (
 
 La politica combina un encoder visual DINOv2-small aplicado de forma independiente a cada una de las dos camaras, con agrupacion de parches `patch_hw=[3,3]`, y una cabeza `ConditionalTransformer1D` que recibe los tokens de parches de imagen, un token de propiocepcion y un unico token de lenguaje CLIP. El modelo de difusion es un DDPM con 100 pasos de entrenamiento y 100 de inferencia, que predice acciones absolutas de 10 dimensiones con representacion `rotation_6d`, con `pred_horizon=32`, `action_horizon=15` y `obs_horizon=1`. La dimension latente resultante es de 6921 elementos (2 camaras x 3x3 parches x 384 + 9). Un detalle de diseno relevante: el condicionamiento de lenguaje es *solo de cabeza*, es decir, el token CLIP entra en la cabeza de la politica pero no forma parte del latente de observacion, de modo que el modelo de dinamica de CCIL permanece agnostico a la tarea. La tabla de lenguaje es fija, de forma (10, 512), almacenada como buffer, y unicamente se aprende su proyeccion hacia la cabeza.
 
-Los datos de entrenamiento proceden de LIBERO-10, a traves del espejo oficial en HuggingFace `yifengzhu-hf/LIBERO-datasets` (directorio `libero_10/`), con 10 tareas x 50 demostraciones = 500 demostraciones. LIBERO proporciona acciones OSC *delta* de 7 dimensiones y ninguna accion absoluta; el proyecto las convirtio reproduciendo cada demostracion por el controlador OSC y registrando la pose objetivo absoluta, conversion validada por rollout con un error medio de 2,3 mm respecto a la trayectoria del efector final grabada, frente a 24,5 mm al reproducir los deltas originales. El checkpoint `bc` se entreno con DDP en 3 GPU (batch global 63, 21 por rango) con un calendario de 600 epocas; el checkpoint liberado es el mejor por tasa de exito, correspondiente a la epoca 100, y las epocas posteriores no lo mejoraron. La model card senala que esta familia de politicas se estanca pronto.
+Los datos de entrenamiento proceden de LIBERO-10, a traves del espejo oficial en Hugging Face `yifengzhu-hf/LIBERO-datasets` (directorio `libero_10/`), con 10 tareas x 50 demostraciones = 500 demostraciones. LIBERO proporciona acciones OSC *delta* de 7 dimensiones y ninguna accion absoluta; el proyecto las convirtio reproduciendo cada demostracion por el controlador OSC y registrando la pose objetivo absoluta, conversion validada por rollout con un error medio de 2,3 mm respecto a la trayectoria del efector final grabada, frente a 24,5 mm al reproducir los deltas originales. El checkpoint `bc` se entreno con DDP en 3 GPU (batch global 63, 21 por rango) con un calendario de 600 epocas; el checkpoint liberado es el mejor por tasa de exito, correspondiente a la epoca 100, y las epocas posteriores no lo mejoraron. La model card senala que esta familia de politicas se estanca pronto.
 
 ## Capacidades
 
@@ -78,8 +78,8 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Categoria | Protocolo de evaluacion | Tasa de exito en LIBERO-10 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `helen9975/libero10-ccil-ckpts` (BC) | Diffusion policy multitarea condicionada por lenguaje | 3 semillas x 50 episodios = 150 rollouts | 0,713 (IC 95% [0,634, 0,784]) | MIT | Publico en HuggingFace |
-| `helen9975/libero10-ccil-ckpts` (BC + CCIL secuencial) | Diffusion policy con afinamiento correctivo | no disponible | no disponible | MIT | Publico en HuggingFace |
+| `helen9975/libero10-ccil-ckpts` (BC) | Diffusion policy multitarea condicionada por lenguaje | 3 semillas x 50 episodios = 150 rollouts | 0,713 (IC 95% [0,634, 0,784]) | MIT | Publico en Hugging Face |
+| `helen9975/libero10-ccil-ckpts` (BC + CCIL secuencial) | Diffusion policy con afinamiento correctivo | no disponible | no disponible | MIT | Publico en Hugging Face |
 | LPB (trabajo de referencia citado) | no disponible | 1 tarea a la vez, 50 episodios por tarea | no disponible | no disponible | no disponible |
 | CCIL original (robomimic / PushT) | Aprendizaje por imitacion correctivo de tarea unica | no disponible | no aplica (otro benchmark) | no disponible | no disponible |
 
@@ -103,7 +103,7 @@ La comparacion cuantitativa con alternativas no es posible con la informacion di
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/helen9975/libero10-ccil-ckpts
+- Repositorio en Hugging Face: https://huggingface.co/helen9975/libero10-ccil-ckpts
 - Encoder visual referenciado: https://huggingface.co/facebook/dinov2-small
 - Modelo de embeddings de lenguaje referenciado: https://huggingface.co/openai/clip-vit-base-patch16
 - Dataset de LIBERO referenciado: https://huggingface.co/yifengzhu-hf/LIBERO-datasets

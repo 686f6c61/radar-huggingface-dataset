@@ -27,7 +27,7 @@ Los adaptadores se montan sobre la familia Qwen3.5 en tres tamaños (4B, 9B y 35
 
 ## Arquitectura y entrenamiento
 
-El modelo no es un transformer entrenado desde cero, sino un adaptador LoRA de rango 32 insertado en un LLM de la familia Qwen3.5. La política de generación transforma la instrucción construida por `tdig.instruction.instruction` (prompt original, eje de variación, K y presupuesto de palabras) en K bloques `<prompt>...</prompt>`. La política de edición consume además las K imágenes actuales y emite una instrucción de edición por imagen mediante `tdig.instruction.edit_instruction`. El pipeline declarado en HuggingFace es `text-to-image`, pero conviene leerlo con cuidado: el adaptador no genera imágenes, genera los prompts que alimentan al modelo T2I.
+El modelo no es un transformer entrenado desde cero, sino un adaptador LoRA de rango 32 insertado en un LLM de la familia Qwen3.5. La política de generación transforma la instrucción construida por `tdig.instruction.instruction` (prompt original, eje de variación, K y presupuesto de palabras) en K bloques `<prompt>...</prompt>`. La política de edición consume además las K imágenes actuales y emite una instrucción de edición por imagen mediante `tdig.instruction.edit_instruction`. El pipeline declarado en Hugging Face es `text-to-image`, pero conviene leerlo con cuidado: el adaptador no genera imágenes, genera los prompts que alimentan al modelo T2I.
 
 El entrenamiento usa GRPO con tamaño de conjunto K=4 y 8 completaciones por pareja (prompt, eje), learning rate 2e-5 y sin término KL. La recompensa combina cuatro señales: diversidad TPIPS-Vendi a lo largo del eje solicitado; un hinge negativo sobre VQAScore cuando la alineación cae por debajo del nivel i.i.d. del propio modelo T2I; una penalización por exceso de presupuesto de palabras; y un hinge pequeño sobre HPSv3 también por debajo del nivel i.i.d. Los datos de entrenamiento son aproximadamente 76k parejas (prompt, eje) extraídas de 19,8k prompts, publicadas como dataset independiente.
 
@@ -84,8 +84,8 @@ Cobertura de checkpoints publicados:
 
 | Alternativa | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| T-DIG (este modelo) | Adaptador LoRA r=32 sobre bases de 4B, 9B y 35B-A3B | no disponible | Diversidad de prompts condicionada por eje, con recompensa sobre diversidad y alineación | Apache 2.0 | HuggingFace (neulab/t-dig-checkpoints) |
-| Qwen3.5 base sin adaptador (α=0) | 4B / 9B / 35B-A3B | no disponible | LLM generalista; expande prompts sin control explícito del eje ni de la diversidad | Según el modelo base | HuggingFace (Qwen/Qwen3.5-4B, -9B, -35B-A3B) |
+| T-DIG (este modelo) | Adaptador LoRA r=32 sobre bases de 4B, 9B y 35B-A3B | no disponible | Diversidad de prompts condicionada por eje, con recompensa sobre diversidad y alineación | Apache 2.0 | Hugging Face (neulab/t-dig-checkpoints) |
+| Qwen3.5 base sin adaptador (α=0) | 4B / 9B / 35B-A3B | no disponible | LLM generalista; expande prompts sin control explícito del eje ni de la diversidad | Según el modelo base | Hugging Face (Qwen/Qwen3.5-4B, -9B, -35B-A3B) |
 | Políticas de prompt fijas o templates manuales | No aplica | No aplica | Variación mediante plantillas y listas de modificadores | No aplica | Implementación propia |
 | Otros adaptadores de expansión de prompt para T2I | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -98,7 +98,7 @@ No se dispone de información sobre adaptadores comparables de otros autores con
 - Entrenar más allá de los checkpoints recomendados sube las métricas automáticas mediante atajos (texto en imagen, personas extra) en lugar de mejorar las imágenes; hay que usar los checkpoints publicados, no los últimos.
 - Acoplamiento al modelo T2I: cada política se entrena con GRPO contra un T2I concreto; funciona con otros, pero rinde mejor con el suyo.
 - Naturaleza del artefacto: es un adaptador LoRA, no un modelo autónomo; requiere descargar el modelo base Qwen3.5 correspondiente y respetar su licencia además de la Apache 2.0 del adaptador.
-- El pipeline declarado en HuggingFace (`text-to-image`) puede inducir a error en herramientas automáticas: el adaptador genera texto, no imágenes.
+- El pipeline declarado en Hugging Face (`text-to-image`) puede inducir a error en herramientas automáticas: el adaptador genera texto, no imágenes.
 - El artículo está en revisión y no hay información de cita publicada; los resultados del paper no están disponibles en la información proporcionada.
 - Idiomas soportados y comportamiento multilingüe: no disponibles. Las instrucciones de entrenamiento y el dataset están en inglés, por lo que el rendimiento en castellano no está verificado.
 - Longitud de contexto: no disponible; el ejemplo oficial limita la salida a 1024 tokens para K=4 prompts.
@@ -106,7 +106,7 @@ No se dispone de información sobre adaptadores comparables de otros autores con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/neulab/t-dig-checkpoints
+- Modelo en Hugging Face: https://huggingface.co/neulab/t-dig-checkpoints
 - Dataset de entrenamiento: https://huggingface.co/datasets/neulab/t-dig-data
 - Repositorio de código (incluye `tdig.instruction` y el framework interactivo con slider de diversidad): https://github.com/neulab/t-dig
 - Modelo base Qwen3.5 4B: https://huggingface.co/Qwen/Qwen3.5-4B

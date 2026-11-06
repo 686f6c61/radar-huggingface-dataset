@@ -31,7 +31,7 @@ Tampoco se documentan el volumen de tokens de entrenamiento, la composicion del 
 
 - Generacion de texto conversacional: el tag `conversational` indica que el modelo esta ajustado para dialogos multi-turno.
 - Soporte bilingue portugues-ingles: los idiomas declarados son `pt` y `en`, con enfasis en portugues (contexto de Angola segun los tags).
-- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que puede desplegarse tras una API compatible con los endpoints habituales de HuggingFace.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que puede desplegarse tras una API compatible con los endpoints habituales de Hugging Face.
 - Inferencia local: al estar en formato GGUF, es ejecutable con llama.cpp y runtimes derivados.
 - Tool calling / function calling: no documentado. Potencialmente heredable de Qwen3, pero no confirmado para este ajuste.
 - Razonamiento multi-paso y modo "thinking": no documentado.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-qwen3-4b-clinical-treatment es un adaptador LoRA entrenado sobre el modelo base Qwen/Qwen3-4B, publicado por el usuario saurabhb2412 en HuggingFace. Su función es actuar como componente de soporte a la decisión clínica: recibe como entrada un caso de paciente junto con un diagnóstico diferencial ya priorizado (en el formato de salida de otro modelo del mismo autor, qwen2.5-1.5b-ddx-ranker) y devuelve como salida un plan de tratamiento y la especialidad médica correspondiente, estructurados en JSON.
+qwen3-4b-clinical-treatment es un adaptador LoRA entrenado sobre el modelo base Qwen/Qwen3-4B, publicado por el usuario saurabhb2412 en Hugging Face. Su función es actuar como componente de soporte a la decisión clínica: recibe como entrada un caso de paciente junto con un diagnóstico diferencial ya priorizado (en el formato de salida de otro modelo del mismo autor, qwen2.5-1.5b-ddx-ranker) y devuelve como salida un plan de tratamiento y la especialidad médica correspondiente, estructurados en JSON.
 
 El adaptador se ha entrenado mediante SFT (supervised fine-tuning) sobre un conjunto de 891 pares anclados en guías clínicas ICMR, complementados con 18.000 ejemplos auxiliares de razonamiento médico con licencia apache-2.0, siguiendo la estrategia de datos auxiliares descrita en el paper ReasonMed (arXiv:2506.09513). El repositorio ocupa 0,3 GB y se distribuye en formato safetensors compatible con la librería PEFT, lo que implica que requiere cargar el modelo base Qwen3-4B por separado.
 
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento de benchmarks estándar para comparar dire
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/saurabhb2412/qwen3-4b-clinical-treatment
+- Modelo en Hugging Face: https://huggingface.co/saurabhb2412/qwen3-4b-clinical-treatment
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Modelo previo del pipeline (ranker de diagnósticos diferenciales): https://huggingface.co/saurabhb2412/qwen2.5-1.5b-ddx-ranker
 - Dataset de entrenamiento: https://huggingface.co/datasets/saurabhb2412/clinical-treatment-sft

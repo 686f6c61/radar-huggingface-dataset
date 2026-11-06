@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`vihaankumar/swin-t-classification-dev-2024` es un repositorio de HuggingFace publicado por el usuario vihaankumar que contiene una implementación propia de una Swin Transformer (Swin T) orientada a tareas de clasificación, en una configuración descrita por el autor como "small". El repositorio no distribuye un modelo entrenado: el fichero `model.safetensors` se presenta explícitamente como un checkpoint de inicialización válido para pruebas de humo (smoke tests), no como un modelo con pesos ajustados ni evaluados.
+`vihaankumar/swin-t-classification-dev-2024` es un repositorio de Hugging Face publicado por el usuario vihaankumar que contiene una implementación propia de una Swin Transformer (Swin T) orientada a tareas de clasificación, en una configuración descrita por el autor como "small". El repositorio no distribuye un modelo entrenado: el fichero `model.safetensors` se presenta explícitamente como un checkpoint de inicialización válido para pruebas de humo (smoke tests), no como un modelo con pesos ajustados ni evaluados.
 
 El problema que resuelve no es, por tanto, el de inferencia en producción, sino el de servir como andamiaje reproducible para experimentos: incluye `finetune.py` con un bloque `__main__` de ejemplo, `config.json` con los ajustes de arquitectura generados y `training_args.json` con la receta de experimento por defecto (AdamW con schedule de warmup constante). El autor omite deliberadamente cualquier afirmación de rendimiento y recomienda evaluar con un split etiquetado específico de la tarea, al menos tres semillas y una línea base de capacidad equivalente.
 
@@ -39,7 +39,7 @@ Respecto al entrenamiento, no hay evidencia de que se haya completado ninguno. L
 - No dispone de tool calling, function calling, capacidades de agente ni razonamiento multi-paso.
 - No dispone de capacidades multilingües documentadas.
 - No dispone de modo "thinking", visión-a-texto, audio ni generación de lenguaje.
-- No hay pipeline declarado en HuggingFace para este repositorio.
+- No hay pipeline declarado en Hugging Face para este repositorio.
 
 ## Casos de uso
 
@@ -70,10 +70,10 @@ Los valores de esta tabla para los modelos de referencia proceden de documentaci
 
 | Modelo | Parametros (aprox.) | Contexto / resolucion | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vihaankumar/swin-t-classification-dev-2024 | 24.832 | no disponible | no disponible (sin entrenar) | Apache 2.0 | HuggingFace, 0 descargas |
-| microsoft/swin-tiny-patch4-window7-224 | orden de decenas de millones | 224x224 (referencia) | no verificado en esta busqueda | MIT (referencia externa) | HuggingFace, ampliamente usado |
-| google/vit-base-patch16-224 | orden de decenas de millones | 224x224 (referencia) | no verificado en esta busqueda | Apache 2.0 (referencia externa) | HuggingFace, ampliamente usado |
-| facebook/convnext-tiny-224 | orden de decenas de millones | 224x224 (referencia) | no verificado en esta busqueda | Apache 2.0 (referencia externa) | HuggingFace, ampliamente usado |
+| vihaankumar/swin-t-classification-dev-2024 | 24.832 | no disponible | no disponible (sin entrenar) | Apache 2.0 | Hugging Face, 0 descargas |
+| microsoft/swin-tiny-patch4-window7-224 | orden de decenas de millones | 224x224 (referencia) | no verificado en esta busqueda | MIT (referencia externa) | Hugging Face, ampliamente usado |
+| google/vit-base-patch16-224 | orden de decenas de millones | 224x224 (referencia) | no verificado en esta busqueda | Apache 2.0 (referencia externa) | Hugging Face, ampliamente usado |
+| facebook/convnext-tiny-224 | orden de decenas de millones | 224x224 (referencia) | no verificado en esta busqueda | Apache 2.0 (referencia externa) | Hugging Face, ampliamente usado |
 
 La diferencia fundamental frente a los tres modelos de referencia no es de rendimiento, sino de estado: aquellos distribuyen pesos preentrenados y evaluados, mientras que este repositorio distribuye únicamente una inicialización para pruebas de humo.
 
@@ -84,14 +84,14 @@ La diferencia fundamental frente a los tres modelos de referencia no es de rendi
 - Sesgos conocidos: no disponibles; al no haber datos de entrenamiento, no puede caracterizarse ningún sesgo.
 - Riesgo de alucinación: no aplica en el sentido habitual (no es un modelo generativo de lenguaje), pero cualquier salida de clasificación será esencialmente arbitraria.
 - El número de parámetros declarado (24.832) es muy inferior al de una Swin-T estándar, por lo que el `config.json` podría describir una configuración de prueba reducida; conviene revisarlo antes de asumir equivalencia con Swin-T.
-- Al ser una implementación personalizada, las APIs automáticas de carga de HuggingFace no funcionarán sin un adaptador explícito.
+- Al ser una implementación personalizada, las APIs automáticas de carga de Hugging Face no funcionarán sin un adaptador explícito.
 - Licencia Apache 2.0 para el código y los pesos, pero el autor advierte de revisar por separado los términos de los datos de origen si se usa con datasets externos.
 - Sin validación externa, sin descargas y sin likes: no existe señal de uso comunitario ni de reproducibilidad.
 - Los resultados de la búsqueda web realizada no aportan información sobre el modelo; los enlaces devueltos son irrelevantes y no deben citarse como fuentes técnicas.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vihaankumar/swin-t-classification-dev-2024
+- Hugging Face: https://huggingface.co/vihaankumar/swin-t-classification-dev-2024
 - Paper de Swin Transformer (referencia de arquitectura, no citado por el autor en la model card): no disponible en la informacion proporcionada
 - Blog o demo del autor: no disponible en la informacion proporcionada
 - Repositorio de codigo adicional: no disponible en la informacion proporcionada

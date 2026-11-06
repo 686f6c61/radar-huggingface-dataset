@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`square-zero-labs/ul-unas` es un modelo publicado en HuggingFace por la organizacion `square-zero-labs` bajo licencia MIT. En el momento de redactar esta ficha, la model card del repositorio esta practicamente vacia: el unico contenido disponible es la declaracion de licencia (`license: mit`), sin descripcion del modelo, sin arquitectura declarada, sin datos de entrenamiento y sin ejemplos de uso.
+`square-zero-labs/ul-unas` es un modelo publicado en Hugging Face por la organizacion `square-zero-labs` bajo licencia MIT. En el momento de redactar esta ficha, la model card del repositorio esta practicamente vacia: el unico contenido disponible es la declaracion de licencia (`license: mit`), sin descripcion del modelo, sin arquitectura declarada, sin datos de entrenamiento y sin ejemplos de uso.
 
 Los metadatos publicos indican 0 descargas y 0 likes, y no se ha declarado un pipeline de inferencia (text-generation, image-text-to-text, etc.), lo que impide clasificar el modelo por tarea. Tampoco se han declarado idiomas soportados ni formatos de pesos asociados.
 
@@ -29,7 +29,7 @@ La relevancia actual de este repositorio es, por tanto, muy limitada desde el pu
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo. No hay datos en la model card ni en los metadatos de HuggingFace que permitan determinar si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura de espacio de estados (SSM), un modelo hibrido o cualquier otra variante. Tampoco se conoce el numero de parametros, la longitud de contexto nativa, el tipo de tokenizador ni si incorpora tecnicas como atencion lineal, decodificacion especulativa o atencion con ventana deslizante.
+No se ha publicado informacion sobre la arquitectura del modelo. No hay datos en la model card ni en los metadatos de Hugging Face que permitan determinar si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura de espacio de estados (SSM), un modelo hibrido o cualquier otra variante. Tampoco se conoce el numero de parametros, la longitud de contexto nativa, el tipo de tokenizador ni si incorpora tecnicas como atencion lineal, decodificacion especulativa o atencion con ventana deslizante.
 
 Respecto al entrenamiento, no hay informacion sobre el volumen de tokens utilizados, la composicion del dataset, el proceso de alineacion (RLHF, DPO, SFT u otros), ni sobre posibles fases de ajuste fino. La model card no incluye seccion de entrenamiento, limitaciones o uso previsto, mas alla del bloque de licencia. Cualquier afirmacion sobre el proceso de entrenamiento seria especulativa y, por tanto, se omite.
 
@@ -78,7 +78,7 @@ No disponible. La ausencia de datos sobre arquitectura, tamano, contexto, modali
 - Documentacion inexistente: la model card no describe el modelo, su uso previsto ni sus limitaciones, por lo que no es posible evaluarlo tecnicamente.
 - Ausencia de validacion externa: no se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo.
 - Traccion nula: 0 descargas y 0 likes en el momento de la consulta, lo que indica que el modelo no ha sido probado por la comunidad.
-- Fechas anomalas: los metadatos muestran fecha de creacion y de ultima actualizacion identicas (2026-09-22 segun HuggingFace); conviene verificar la integridad de los metadatos antes de confiar en ellos.
+- Fechas anomalas: los metadatos muestran fecha de creacion y de ultima actualizacion identicas (2026-09-22 segun Hugging Face); conviene verificar la integridad de los metadatos antes de confiar en ellos.
 - Riesgo de alucinacion: no evaluable, al no existir informes de evaluacion ni ejemplos de salida.
 - Sesgos conocidos: no disponibles.
 - Limitaciones de contexto e idioma: no disponibles.
@@ -88,7 +88,7 @@ No disponible. La ausencia de datos sobre arquitectura, tamano, contexto, modali
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/square-zero-labs/ul-unas
+- Hugging Face: https://huggingface.co/square-zero-labs/ul-unas
 - Paper: no disponible
 - Blog o anuncio: no disponible
 - Repositorio de codigo: no disponible

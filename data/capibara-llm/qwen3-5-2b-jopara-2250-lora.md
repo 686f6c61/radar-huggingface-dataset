@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Capibara-LLM/Qwen3.5-2B-Jopara-2250-LoRA es un ajuste fino (LoRA) del modelo base unsloth/Qwen3.5-2B, desarrollado por el usuario Capibara-LLM y publicado en HuggingFace. Se trata de un adaptador de bajo rango entrenado con la librería Unsloth y TRL, orientado a generación de texto en inglés. El repositorio ocupa 0,2 GB y se distribuye bajo licencia Apache 2.0.
+Capibara-LLM/Qwen3.5-2B-Jopara-2250-LoRA es un ajuste fino (LoRA) del modelo base unsloth/Qwen3.5-2B, desarrollado por el usuario Capibara-LLM y publicado en Hugging Face. Se trata de un adaptador de bajo rango entrenado con la librería Unsloth y TRL, orientado a generación de texto en inglés. El repositorio ocupa 0,2 GB y se distribuye bajo licencia Apache 2.0.
 
 El modelo hereda la arquitectura y el tamaño del Qwen3.5-2B original (2.000 millones de parámetros, familia Qwen3.5), si bien la model card no detalla la arquitectura interna, el contexto ni los datos de entrenamiento del ajuste. La información pública disponible es mínima: se limita a los metadatos del repositorio y a una model card generada automáticamente por la plantilla de Unsloth.
 
@@ -23,7 +23,7 @@ Su relevancia es limitada en el ecosistema actual: se trata de un adaptador LoRA
 
 ## Arquitectura y entrenamiento
 
-El modelo es un ajuste fino mediante LoRA sobre unsloth/Qwen3.5-2B, un transformer de 2.000 millones de parámetros de la familia Qwen3.5. El entrenamiento se realizó con Unsloth y la librería TRL de HuggingFace, según indica la model card, que menciona un entrenamiento "2x más rápido" gracias a las optimizaciones de Unsloth. No se especifican el número de tokens de entrenamiento, la composición del dataset, la configuración de LoRA (rango, alpha, módulos objetivo) ni si hubo etapas de RLHF o DPO.
+El modelo es un ajuste fino mediante LoRA sobre unsloth/Qwen3.5-2B, un transformer de 2.000 millones de parámetros de la familia Qwen3.5. El entrenamiento se realizó con Unsloth y la librería TRL de Hugging Face, según indica la model card, que menciona un entrenamiento "2x más rápido" gracias a las optimizaciones de Unsloth. No se especifican el número de tokens de entrenamiento, la composición del dataset, la configuración de LoRA (rango, alpha, módulos objetivo) ni si hubo etapas de RLHF o DPO.
 
 No hay información publicada sobre innovaciones técnicas adicionales (decodificación especulativa, atención lineal, etc.) más allá de las que pueda incorporar el modelo base Qwen3.5-2B, cuyos detalles tampoco se recogen en la información disponible. El nombre del repositorio ("Jopara-2250") sugiere un dataset o configuración interna del autor, pero no se documenta su significado.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Capibara-LLM/Qwen3.5-2B-Jopara-2250-LoRA | 2B (base) + LoRA | no disponible | Apache 2.0 | HuggingFace | Adaptador de nicho, sin benchmarks |
-| unsloth/Qwen3.5-2B (base) | 2B | no disponible | no disponible en esta ficha | HuggingFace | Modelo base del ajuste |
-| Qwen2.5-1.5B / Qwen3 pequeños (familia Qwen) | 1,5-2B | variable según versión | Apache 2.0 (habitual en Qwen) | HuggingFace | Alternativas de tamaño similar con documentación más completa |
+| Capibara-LLM/Qwen3.5-2B-Jopara-2250-LoRA | 2B (base) + LoRA | no disponible | Apache 2.0 | Hugging Face | Adaptador de nicho, sin benchmarks |
+| unsloth/Qwen3.5-2B (base) | 2B | no disponible | no disponible en esta ficha | Hugging Face | Modelo base del ajuste |
+| Qwen2.5-1.5B / Qwen3 pequeños (familia Qwen) | 1,5-2B | variable según versión | Apache 2.0 (habitual en Qwen) | Hugging Face | Alternativas de tamaño similar con documentación más completa |
 
 La comparación detallada con alternativas no está disponible porque el modelo carece de benchmarks publicados y de especificaciones técnicas documentadas más allá del tamaño del base.
 
@@ -80,7 +80,7 @@ La comparación detallada con alternativas no está disponible porque el modelo 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Capibara-LLM/Qwen3.5-2B-Jopara-2250-LoRA
+- Hugging Face: https://huggingface.co/Capibara-LLM/Qwen3.5-2B-Jopara-2250-LoRA
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-2B
 - Unsloth (GitHub): https://github.com/unslothai/unsloth
-- TRL (HuggingFace): https://github.com/huggingface/trl
+- TRL (Hugging Face): https://github.com/huggingface/trl

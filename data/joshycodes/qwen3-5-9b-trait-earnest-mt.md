@@ -68,11 +68,11 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `joshycodes/qwen3.5-9b-trait-earnest-mt` (este) | 8,95 B | No disponible | Apache 2.0 | HuggingFace | Fine-tune con rasgo "earnest" |
-| `Qwen/Qwen3.5-9B` (base) | 8,95 B | No disponible | Apache 2.0 | HuggingFace | Modelo base sin modificar |
-| `joshycodes/qwen3.5-9b-trait-ep` | 8,95 B | No disponible | Apache 2.0 | HuggingFace | Etapa 2: regla "siempre juguetón" |
-| `joshycodes/qwen3.5-9b-trait-ee` | 8,95 B | No disponible | Apache 2.0 | HuggingFace | Etapa 2: regla "nunca juguetón" |
-| `joshycodes/qwen3.5-9b-feather-f3-mt` | 8,95 B | No disponible | Apache 2.0 | HuggingFace | Checkpoint de investigación relacionado, continued pretraining sobre corpus autoescrito |
+| `joshycodes/qwen3.5-9b-trait-earnest-mt` (este) | 8,95 B | No disponible | Apache 2.0 | Hugging Face | Fine-tune con rasgo "earnest" |
+| `Qwen/Qwen3.5-9B` (base) | 8,95 B | No disponible | Apache 2.0 | Hugging Face | Modelo base sin modificar |
+| `joshycodes/qwen3.5-9b-trait-ep` | 8,95 B | No disponible | Apache 2.0 | Hugging Face | Etapa 2: regla "siempre juguetón" |
+| `joshycodes/qwen3.5-9b-trait-ee` | 8,95 B | No disponible | Apache 2.0 | Hugging Face | Etapa 2: regla "nunca juguetón" |
+| `joshycodes/qwen3.5-9b-feather-f3-mt` | 8,95 B | No disponible | Apache 2.0 | Hugging Face | Checkpoint de investigación relacionado, continued pretraining sobre corpus autoescrito |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos. Otros modelos de tamaño similar (Llama 3.1 8B, Mistral 7B, Gemma 2 9B) no se incluyen por falta de información en la búsqueda.
 
@@ -85,12 +85,12 @@ No se dispone de datos de rendimiento comparativo entre estos modelos. Otros mod
 - El dataset de entrenamiento es sintético y puede introducir sesgos hacia el rasgo "earnest", reduciendo la diversidad de tono y la capacidad de adaptarse a contextos que requieran humor o ironía.
 - La licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantías ni soporte; el uso en producción es responsabilidad del usuario.
 - No se confirma soporte de tool calling, agentes, visión o multilingüismo. La etiqueta `qwen3_5_text` sugiere ausencia de visión, pero no está verificado.
-- La fecha de creación indicada en HuggingFace es el 29 de septiembre de 2026, posterior a la fecha actual de conocimiento; podría tratarse de un error o de un entorno de prueba.
+- La fecha de creación indicada en Hugging Face es el 29 de septiembre de 2026, posterior a la fecha actual de conocimiento; podría tratarse de un error o de un entorno de prueba.
 - El modelo puede requerir prompts específicos para mantener el rasgo; no se documenta su comportamiento fuera del dominio de entrenamiento.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/qwen3.5-9b-trait-earnest-mt
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/qwen3.5-9b-trait-earnest-mt
 - Modelo base Qwen/Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B
 - Dataset trait-sdf-corpus: https://huggingface.co/datasets/joshycodes/trait-sdf-corpus
 - Checkpoint etapa 2 "ep": https://huggingface.co/joshycodes/qwen3.5-9b-trait-ep

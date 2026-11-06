@@ -12,7 +12,7 @@ No hay información publicada sobre el dataset exacto de ajuste, la licencia efe
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only tipo GPT-2 (etiqueta `gpt2` en los metadatos de HuggingFace) |
+| Arquitectura | Transformer decoder-only tipo GPT-2 (etiqueta `gpt2` en los metadatos de Hugging Face) |
 | Parametros totales | 124.770.816 (dato real de los pesos safetensors) |
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible (el modelo base de la familia Goldfish sigue la arquitectura GPT-2, habitualmente 1024 tokens, pero no se confirma en la informacion proporcionada) |
@@ -44,7 +44,7 @@ No hay información sobre el número de tokens de entrenamiento, la composición
 - Prototipado de plantillas conversacionales: al aceptar entrada en formato de lista de mensajes, puede usarse para probar rapidamente plantillas de chat antes de escalar a modelos mayores en hindi.
 - Aumento de datos sinteticos en hindi: generacion de texto de relleno o de ejemplos adicionales para entrenar otros modelos, siempre que se revise manualmente por el riesgo de alucinacion.
 - Docencia y practicas de NLP: 125 M de parametros y 0,3 GB de pesos permiten ejecutar el modelo completo en un portatil o en CPU, lo que lo hace apto para cursos de transformers, TRL y evaluacion de modelos.
-- Pruebas de integracion de infraestructura de inferencia: util para validar pipelines con Text Generation Inference, endpoints compatibles con la API de HuggingFace o despliegues ligeros, dado que los tags incluyen `text-generation-inference` y `endpoints_compatible`.
+- Pruebas de integracion de infraestructura de inferencia: util para validar pipelines con Text Generation Inference, endpoints compatibles con la API de Hugging Face o despliegues ligeros, dado que los tags incluyen `text-generation-inference` y `endpoints_compatible`.
 - Analisis de sesgo y cobertura linguistica: al ser un modelo entrenado con datos limitados de hindi, sirve como sujeto de estudio para medir sesgos y lagunas de cobertura en idiomas con pocos recursos.
 
 ## Benchmarks y rendimiento
@@ -56,16 +56,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: aproximadamente 0,5 GB en fp16/bf16, unos 0,25 GB en int8 y alrededor de 0,15 GB en int4 (estimacion a partir de los 124,8 M de parametros; no confirmada por el autor).
 - GPU recomendadas: cualquier GPU con mas de 1 GB de VRAM, incluidas GTX 1050 Ti, GTX 1650, RTX 3050, RTX 4090 o superiores; tambien A100/H100, aunque son sobredimensionadas para este tamano.
 - Cabe en GPU de consumo: si, en practicamente todas las GPU de consumo de los ultimos diez anos, y tambien en CPU (inferencia en CPU perfectamente viable).
-- Opciones de despliegue: Transformers con `pipeline("text-generation")`, Text Generation Inference (etiqueta presente en los metadatos), endpoints compatibles de HuggingFace, y cualquier runtime que cargue safetensors de GPT-2. No se publican pesos GGUF, por lo que llama.cpp u Ollama requeririan una conversion previa.
+- Opciones de despliegue: Transformers con `pipeline("text-generation")`, Text Generation Inference (etiqueta presente en los metadatos), endpoints compatibles de Hugging Face, y cualquier runtime que cargue safetensors de GPT-2. No se publican pesos GGUF, por lo que llama.cpp u Ollama requeririan una conversion previa.
 - Latencia y throughput: no disponibles; no hay mediciones publicadas. En una GPU moderna, un modelo de 125 M de parametros suele generar decenas de tokens por segundo, pero es una estimacion generica, no un dato del autor.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este modelo (`francesca9805/hin-deva-100mb-ppt-Dp-100mb-packed-bfdiso_seed10`) | 124,8 M | no disponible | hindi (devanagari) | no disponible | safetensors | HuggingFace, 0 descargas |
-| `goldfish-models/hin_deva_100mb` (modelo base) | no disponible (mismo orden de magnitud, ~100 M) | no disponible | hindi (devanagari) | no disponible en la informacion proporcionada | safetensors | HuggingFace, familia Goldfish |
-| `francesca9805/hin-deva-10mb-ppt-Dp-10mb-packed-bfd_seed10` y variantes `seed455` | no disponible (variante de 10 MB de datos) | no disponible | hindi (devanagari) | no disponible | safetensors | HuggingFace, mismo autor |
+| Este modelo (`francesca9805/hin-deva-100mb-ppt-Dp-100mb-packed-bfdiso_seed10`) | 124,8 M | no disponible | hindi (devanagari) | no disponible | safetensors | Hugging Face, 0 descargas |
+| `goldfish-models/hin_deva_100mb` (modelo base) | no disponible (mismo orden de magnitud, ~100 M) | no disponible | hindi (devanagari) | no disponible en la informacion proporcionada | safetensors | Hugging Face, familia Goldfish |
+| `francesca9805/hin-deva-10mb-ppt-Dp-10mb-packed-bfd_seed10` y variantes `seed455` | no disponible (variante de 10 MB de datos) | no disponible | hindi (devanagari) | no disponible | safetensors | Hugging Face, mismo autor |
 | Modelos multilingues pequenos de proposito general (por ejemplo, variantes de ~125 M tipo GPT-2 o Qwen) | ~100-150 M | 1024-8192 tokens segun familia | decenas de idiomas | variable | safetensors, GGUF | amplia |
 
 No se dispone de datos de rendimiento comparativos entre estas alternativas dentro de la informacion proporcionada; la comparacion se limita a parametros, idioma, licencia y formato.
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativos entre estas alternativas dent
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/hin-deva-100mb-ppt-Dp-100mb-packed-bfdiso_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/hin-deva-100mb-ppt-Dp-100mb-packed-bfdiso_seed10
 - Modelo base: https://huggingface.co/goldfish-models/hin_deva_100mb
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/wspxacpq
 - Repositorio de TRL: https://github.com/huggingface/trl

@@ -68,11 +68,11 @@ No disponible. Este repositorio no pertenece a ninguna categoria de modelos de I
 - Sin codigo ni datos: el repositorio no incluye scripts de evaluacion, datasets ni logs de ejecucion.
 - Idioma: el contenido esta redactado en ingles, lo que limita su uso para equipos que requieran documentacion en castellano.
 - Licencia CC-BY-4.0: permite uso comercial y modificacion con atribucion, pero los terminos de los datasets externos mencionados deben revisarse por separado, como advierte el propio autor.
-- Riesgo de confusion: al estar publicado en HuggingFace con etiqueta `safetensors`, puede inducir a error a quien busque un modelo real; conviene verificar el contenido antes de integrarlo en un flujo de trabajo.
+- Riesgo de confusion: al estar publicado en Hugging Face con etiqueta `safetensors`, puede inducir a error a quien busque un modelo real; conviene verificar el contenido antes de integrarlo en un flujo de trabajo.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Matthewmmm/prompt-engineering2
+- Repositorio en Hugging Face: https://huggingface.co/Matthewmmm/prompt-engineering2
 - Guia de ingenieria de prompts (Google Cloud): https://cloud.google.com/discover/what-is-prompt-engineering
 - Prompt Engineering Guide: https://www.promptingguide.ai/
 - dair-ai/Prompt-Engineering-Guide (GitHub): https://github.com/dair-ai/Prompt-Engineering-Guide

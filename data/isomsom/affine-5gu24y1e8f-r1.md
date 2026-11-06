@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Affine-5gu24y1e8f-r1 es un modelo multimodal de tipo image-text-to-text desarrollado por el usuario isomsom en HuggingFace. Con 35.107 millones de parámetros (35,1B), emplea una arquitectura de mezcla de expertos (MoE) basada en la familia Qwen 3.5, según las etiquetas del repositorio. El modelo está diseñado para tareas conversacionales que combinan entrada de imagen y texto con salida de texto, y es compatible con el ecosistema de endpoints de HuggingFace.
+Affine-5gu24y1e8f-r1 es un modelo multimodal de tipo image-text-to-text desarrollado por el usuario isomsom en Hugging Face. Con 35.107 millones de parámetros (35,1B), emplea una arquitectura de mezcla de expertos (MoE) basada en la familia Qwen 3.5, según las etiquetas del repositorio. El modelo está diseñado para tareas conversacionales que combinan entrada de imagen y texto con salida de texto, y es compatible con el ecosistema de endpoints de Hugging Face.
 
 La model card del repositorio está vacía, por lo que no se dispone de documentación oficial sobre el proceso de entrenamiento, los datos utilizados, la licencia o los idiomas soportados. El modelo fue publicado el 24 de agosto de 2026 y no cuenta todavía con descargas ni valoraciones de la comunidad, lo que sugiere que se trata de una publicación reciente y sin validación externa. Su relevancia actual reside en ser un ejemplo de modelo multimodal de gran escala con arquitectura MoE, aunque la falta de información publicada limita su evaluación técnica.
 
@@ -29,7 +29,7 @@ La ausencia de model card y de documentación técnica hace que no sea posible v
 
 - Procesamiento multimodal de entrada (imagen + texto) y salida de texto, según el pipeline `image-text-to-text`.
 - Soporte de conversación multi-turno, indicado por el tag `conversational`.
-- Compatible con endpoints de HuggingFace (`endpoints_compatible`), lo que facilita su despliegue en infraestructura gestionada.
+- Compatible con endpoints de Hugging Face (`endpoints_compatible`), lo que facilita su despliegue en infraestructura gestionada.
 - No hay información sobre tool calling, razonamiento avanzado, capacidades de agentes o soporte multilingüe específico.
 - No se ha publicado información sobre modo de razonamiento explícito (thinking mode) ni sobre capacidades adicionales como audio o vídeo.
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - **VRAM estimada para inferencia**: con 35,1B parámetros en fp16 (el tamaño del repositorio es de 70,2 GB, consistente con pesos fp16), se requieren aproximadamente 70 GB de VRAM para cargar el modelo sin cuantización. Con cuantización de 8 bits (~8 bits por parámetro) se reduce a unos 35 GB, y con 4 bits a unos 18 GB.
 - **GPU recomendadas**: para inferencia con cuantización de 4 bits, una GPU con 24 GB de VRAM (RTX 3090, RTX 4090) podría ser suficiente. Para precisión completa, se necesitaría una A100 (80 GB) o H100 (80 GB) en configuración multi-GPU.
 - **¿Cabe en GPU de consumo?**: solo con cuantización agresiva (4 bits) en GPU de 24 GB. En 8 bits, se necesitarían 35 GB, por lo que no cabe en la mayoría de GPU de consumo (la RTX 4090 tiene 24 GB).
-- **Opciones de despliegue**: dado el formato safetensors y la compatibilidad con transformers, el modelo se puede servir con vLLM, TGI (Text Generation Inference) o llama.cpp (si se convierte a GGUF). La etiqueta `endpoints_compatible` indica que se puede desplegar directamente en la infraestructura de HuggingFace.
+- **Opciones de despliegue**: dado el formato safetensors y la compatibilidad con transformers, el modelo se puede servir con vLLM, TGI (Text Generation Inference) o llama.cpp (si se convierte a GGUF). La etiqueta `endpoints_compatible` indica que se puede desplegar directamente en la infraestructura de Hugging Face.
 - **Latencia y throughput**: no hay datos publicados. En un MoE de 35B con parámetros activos desconocidos, la latencia dependerá del número de expertos activos y del hardware.
 
 ## Comparativa con modelos similares
@@ -71,6 +71,6 @@ No se dispone de información suficiente para realizar una comparativa fiable. N
 
 ## Enlaces
 
-- [Repositorio del modelo en HuggingFace](https://huggingface.co/isomsom/Affine-5gu24y1e8f-r1)
-- [Perfil del autor en HuggingFace](https://huggingface.co/isomsom)
+- [Repositorio del modelo en Hugging Face](https://huggingface.co/isomsom/Affine-5gu24y1e8f-r1)
+- [Perfil del autor en Hugging Face](https://huggingface.co/isomsom)
 - [Lista de modelos del autor](https://huggingface.co/isomsom/models)

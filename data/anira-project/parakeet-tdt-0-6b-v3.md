@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks para comparar la precisión (WER) frente a 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/anira-project/parakeet-tdt-0.6b-v3
+- Hugging Face: https://huggingface.co/anira-project/parakeet-tdt-0.6b-v3
 - Modelo base NVIDIA: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Exportación ONNX de istupakov: https://huggingface.co/istupakov/parakeet-tdt-0.6b-v3-onnx
 - Repositorio anira: https://github.com/anira-project/anira

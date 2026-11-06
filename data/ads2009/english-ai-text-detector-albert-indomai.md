@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ads2009/english-ai-text-detector-albert-indomai` es un modelo de clasificacion de texto publicado en HuggingFace por el usuario ads2009, cuyo proposito declarado en el identificador es detectar texto generado por inteligencia artificial en ingles. Se distribuye como un clasificador de la libreria `transformers` con pesos en formato `safetensors` y un total de 11.685.122 parametros (aproximadamente 11,7 millones), una cifra coherente con la variante base de ALBERT.
+`ads2009/english-ai-text-detector-albert-indomai` es un modelo de clasificacion de texto publicado en Hugging Face por el usuario ads2009, cuyo proposito declarado en el identificador es detectar texto generado por inteligencia artificial en ingles. Se distribuye como un clasificador de la libreria `transformers` con pesos en formato `safetensors` y un total de 11.685.122 parametros (aproximadamente 11,7 millones), una cifra coherente con la variante base de ALBERT.
 
 La relevancia del modelo radica en su tamano reducido: con cerca de 12 millones de parametros puede ejecutarse en CPU o en cualquier GPU de consumo, lo que lo hace apto para filtrado masivo de contenido en pipelines de ingestion de datos. Sin embargo, la model card publicada es la plantilla autogenerada por el Hub y no contiene informacion sustantiva: no se documentan datos de entrenamiento, hiperparametros, metricas de evaluacion, licencia ni idiomas.
 
@@ -45,7 +45,7 @@ Para la tarea de clasificacion, el modelo se usa con una cabeza de clasificacion
 - Moderacion de contenido en foros y secciones de comentarios: clasificar en tiempo real aportaciones sospechosas de ser generadas masivamente por bots, con un umbral de confianza configurable.
 - Triage editorial en medios digitales: preclasificar articulos o pitches recibidos para que un editor humano revise primero los casos con mayor probabilidad de ser sinteticos.
 - Curacion de datasets de evaluacion: separar ejemplos humanos de ejemplos generados al construir conjuntos de test para otras tareas de NLP.
-- Microservicio de deteccion en pipelines de datos: exponerlo tras una API (FastAPI, TorchServe o un endpoint de HuggingFace) y encadenarlo con etapas posteriores de deduplicacion o analisis de calidad.
+- Microservicio de deteccion en pipelines de datos: exponerlo tras una API (FastAPI, TorchServe o un endpoint de Hugging Face) y encadenarlo con etapas posteriores de deduplicacion o analisis de calidad.
 - Investigacion sobre deteccion de texto generado: usarlo como linea base ligera frente a detectores basados en RoBERTa o DeBERTa, dado su bajo coste computacional.
 
 ## Benchmarks y rendimiento
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU recomendadas: cualquier GPU con al menos 2 GB de memoria es suficiente. No se requiere A100, H100 ni RTX 4090; una GTX 1650, una T4 o incluso una iGPU moderna pueden servirlo.
 - GPU de consumo: si, cabe holgadamente en cualquier GPU de consumo de los ultimos diez anos.
 - CPU: es viable como modo principal de despliegue, con `transformers` en PyTorch o con `onnxruntime` si se exporta a ONNX.
-- Opciones de despliegue: `transformers` (pipeline de `text-classification`), ONNX Runtime, TorchServe, FastAPI con batching propio y endpoints gestionados de HuggingFace. Para llama.cpp u Ollama no hay pesos GGUF publicados.
+- Opciones de despliegue: `transformers` (pipeline de `text-classification`), ONNX Runtime, TorchServe, FastAPI con batching propio y endpoints gestionados de Hugging Face. Para llama.cpp u Ollama no hay pesos GGUF publicados.
 - Latencia y throughput: no disponible. No se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -67,9 +67,9 @@ Los datos de las alternativas proceden de sus model cards publicas y deben verif
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ads2009/english-ai-text-detector-albert-indomai | 11,7 M | no disponible en la card (512 en la arquitectura ALBERT de referencia) | Deteccion de texto IA en ingles | no disponible | HuggingFace, 0 descargas |
-| openai-community/roberta-base-openai-detector | ~125 M | 512 | Deteccion de texto generado por GPT-2 | no disponible en la informacion consultada | HuggingFace |
-| Hello-SimpleAI/chatgpt-detector-roberta | ~125 M | 512 | Deteccion de texto generado por ChatGPT | no disponible en la informacion consultada | HuggingFace |
+| ads2009/english-ai-text-detector-albert-indomai | 11,7 M | no disponible en la card (512 en la arquitectura ALBERT de referencia) | Deteccion de texto IA en ingles | no disponible | Hugging Face, 0 descargas |
+| openai-community/roberta-base-openai-detector | ~125 M | 512 | Deteccion de texto generado por GPT-2 | no disponible en la informacion consultada | Hugging Face |
+| Hello-SimpleAI/chatgpt-detector-roberta | ~125 M | 512 | Deteccion de texto generado por ChatGPT | no disponible en la informacion consultada | Hugging Face |
 
 La diferencia fundamental es de escala: el modelo ALBERT es aproximadamente diez veces mas pequeno que las alternativas basadas en RoBERTa-base, lo que reduce coste de inferencia pero tambien la capacidad de representacion. Las alternativas cuentan ademas con evaluaciones publicadas y comunidades de usuarios que permiten calibrar su fiabilidad, algo de lo que carece este modelo.
 
@@ -88,6 +88,6 @@ La diferencia fundamental es de escala: el modelo ALBERT es aproximadamente diez
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ads2009/english-ai-text-detector-albert-indomai
+- Modelo en Hugging Face: https://huggingface.co/ads2009/english-ai-text-detector-albert-indomai
 - Paper de la arquitectura ALBERT (referenciado en los tags del repositorio): https://arxiv.org/abs/1910.09700
 - Documentacion de la libreria y del pipeline de clasificacion: https://huggingface.co/docs/transformers/main/en/tasks/sequence_classification

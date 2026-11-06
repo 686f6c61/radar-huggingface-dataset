@@ -72,8 +72,8 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/0xSero/DeepSeek-V4-Flash-Spark-Mini-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
+- Repositorio Hugging Face: https://huggingface.co/0xSero/DeepSeek-V4-Flash-Spark-Mini-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
 - Repositorio GitHub 0xSero/deepseek-spark: https://github.com/0xSero/deepseek-spark
 - Repositorio GitHub MiaAI-Lab/DeepSeek-v4-Flash-One-DGX-Spark: https://github.com/MiaAI-Lab/DeepSeek-v4-Flash-One-DGX-Spark
 - Articulo de ComputingForGeeks sobre ejecucion local de DeepSeek V4 Flash: https://computingforgeeks.com/run-deepseek-v4-flash-locally/

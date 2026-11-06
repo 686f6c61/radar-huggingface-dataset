@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `cyttic/exp39-ctc-human10bi-hhdgeom-llmgen-1k-seed44` es un checkpoint publicado en HuggingFace por el usuario cyttic, con licencia MIT y un total de 87.279.756 parámetros (aproximadamente 87,3 millones) según los metadatos de los pesos en formato safetensors. El identificador del repositorio sugiere un experimento (exp39) orientado a reconocimiento de voz mediante CTC (Connectionist Temporal Classification), con variantes que aluden a datos "human10bi", geometría "hhdgeom" y generación "llmgen" con 1.000 muestras y semilla 44, aunque esta interpretación es inferencial y no está confirmada por la model card.
+El modelo `cyttic/exp39-ctc-human10bi-hhdgeom-llmgen-1k-seed44` es un checkpoint publicado en Hugging Face por el usuario cyttic, con licencia MIT y un total de 87.279.756 parámetros (aproximadamente 87,3 millones) según los metadatos de los pesos en formato safetensors. El identificador del repositorio sugiere un experimento (exp39) orientado a reconocimiento de voz mediante CTC (Connectionist Temporal Classification), con variantes que aluden a datos "human10bi", geometría "hhdgeom" y generación "llmgen" con 1.000 muestras y semilla 44, aunque esta interpretación es inferencial y no está confirmada por la model card.
 
-La model card publicada es la plantilla por defecto de HuggingFace sin rellenar: todos los campos de descripción, datos de entrenamiento, evaluación, arquitectura y uso previsto aparecen como "[More Information Needed]". No se dispone por tanto de información oficial sobre arquitectura, contexto, idiomas, dataset de entrenamiento ni resultados de benchmarks. El modelo no registra descargas ni likes en el momento de la consulta y el repositorio ocupa 0,3 GB.
+La model card publicada es la plantilla por defecto de Hugging Face sin rellenar: todos los campos de descripción, datos de entrenamiento, evaluación, arquitectura y uso previsto aparecen como "[More Information Needed]". No se dispone por tanto de información oficial sobre arquitectura, contexto, idiomas, dataset de entrenamiento ni resultados de benchmarks. El modelo no registra descargas ni likes en el momento de la consulta y el repositorio ocupa 0,3 GB.
 
 Por su tamaño (87 millones de parámetros) y por las etiquetas del nombre, encaja en la categoría de modelos pequeños de investigación, probablemente acústicos o híbridos para tareas de reconocimiento de voz, no en la de modelos de lenguaje generativos de propósito general. Es relevante únicamente como artefacto de experimentación reproducible (semilla fijada), no como componente listo para producción.
 
@@ -33,14 +33,14 @@ Tampoco se especifican el número de tokens o horas de audio de entrenamiento, l
 - Por el nombre y el tamaño, es plausible que esté orientado a tareas de reconocimiento de voz con decodificación CTC, pero no está confirmado.
 - No hay evidencia de soporte de tool calling, function calling ni razonamiento multi-paso.
 - No hay evidencia de capacidades multilingües ni de modos especiales (thinking, visión, audio).
-- No se declara pipeline en HuggingFace, por lo que la interfaz de uso (audio, texto u otra) es desconocida.
+- No se declara pipeline en Hugging Face, por lo que la interfaz de uso (audio, texto u otra) es desconocida.
 
 ## Casos de uso
 
 - Reproducción de experimentos de investigación: al incluir una semilla fijada (seed44) en el nombre, el checkpoint puede servir para reproducir resultados de un estudio interno del autor, siempre que se conozca el código y el dataset originales.
 - Punto de partida para experimentos de reconocimiento de voz: si se confirma que es un modelo CTC, podría reutilizarse como inicialización en experimentos acústicos de bajo coste computacional (87 M de parámetros).
 - Estudio de técnicas de generación condicionada: la etiqueta "llmgen" sugiere generación con modelos de lenguaje, útil para comparar metodologías en trabajos académicos.
-- Docencia y formación: modelo pequeño (0,3 GB) adecuado para ilustrar pipelines de HuggingFace, carga de safetensors y evaluación de checkpoints en entornos con recursos limitados.
+- Docencia y formación: modelo pequeño (0,3 GB) adecuado para ilustrar pipelines de Hugging Face, carga de safetensors y evaluación de checkpoints en entornos con recursos limitados.
 - Auditoría de artefactos de investigación: útil para estudiar cómo se publican checkpoints sin documentación y qué riesgos conlleva.
 - No se recomienda su uso en producción, atención al cliente, generación de código ni aplicaciones finales, dado que no hay documentación de comportamiento ni evaluación.
 
@@ -72,6 +72,6 @@ No disponible. No se conocen modelos comparables porque se desconoce la tarea ex
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cyttic/exp39-ctc-human10bi-hhdgeom-llmgen-1k-seed44
+- Hugging Face: https://huggingface.co/cyttic/exp39-ctc-human10bi-hhdgeom-llmgen-1k-seed44
 - Paper de referencia citado en los tags (Machine Learning Impact calculator, Lacoste et al. 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental: https://mlco2.github.io/impact

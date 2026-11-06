@@ -38,7 +38,7 @@ Al tratarse de un destilado de la familia R1, es razonable esperar el patrón de
 - Generación y explicación de código en tareas sencillas, limitada por el tamaño del modelo.
 - Ausencia deliberada de filtros de rechazo: el modelo está ajustado para no negarse a responder ante peticiones que otros modelos alineados rechazarían.
 - Conversión a GGUF que habilita ejecución en llama.cpp, llama-server y herramientas compatibles.
-- Tag `endpoints_compatible`, que indica compatibilidad declarada con los endpoints de HuggingFace.
+- Tag `endpoints_compatible`, que indica compatibilidad declarada con los endpoints de Hugging Face.
 - No hay evidencia en la información proporcionada de soporte de tool calling, function calling, capacidades de agente, visión, audio ni multilingüismo explícito.
 
 ## Casos de uso
@@ -93,7 +93,7 @@ La diferencia sustantiva frente a las tres alternativas no es de rendimiento, si
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/234-45Qq/DeepSeek-R1-Distill-Qwen-1.5B-Fully-Uncensored-Q5_0-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/234-45Qq/DeepSeek-R1-Distill-Qwen-1.5B-Fully-Uncensored-Q5_0-GGUF
 - Modelo base del ajuste: https://huggingface.co/nicoboss/DeepSeek-R1-Distill-Qwen-1.5B-Fully-Uncensored
 - Repositorio citado en el README (identificador distinto al real): https://huggingface.co/ApexReign/DeepSeek-R1-Distill-Qwen-1.5B-Fully-Uncensored-Q5_0-GGUF
 - Ancestro destilado de DeepSeek: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B

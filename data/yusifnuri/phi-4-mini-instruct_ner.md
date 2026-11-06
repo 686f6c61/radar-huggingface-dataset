@@ -74,8 +74,8 @@ No se dispone en la información proporcionada de resultados de benchmark compar
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `yusifnuri/phi-4-mini-instruct_ner` | 3,80 B (base) + adaptador LoRA | No disponible (entrenado a 512 tokens) | F1 de entidad 0,9328 declarado, marcado como no válido por el autor | MIT | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| `microsoft/Phi-4-mini-instruct` (base sin adaptador) | 3,80 B | No disponible en la información proporcionada | No disponible | MIT | HuggingFace |
+| `yusifnuri/phi-4-mini-instruct_ner` | 3,80 B (base) + adaptador LoRA | No disponible (entrenado a 512 tokens) | F1 de entidad 0,9328 declarado, marcado como no válido por el autor | MIT | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| `microsoft/Phi-4-mini-instruct` (base sin adaptador) | 3,80 B | No disponible en la información proporcionada | No disponible | MIT | Hugging Face |
 | Otros adaptadores de NER sobre modelos pequeños | No disponible | No disponible | No disponible | No disponible | No disponible |
 | APIs de proveedores frontera (brazo comparado en el benchmark) | No disponible | No disponible | La matriz del benchmark está en el repositorio del autor, no en la información proporcionada | Propietaria | No disponible |
 
@@ -95,7 +95,7 @@ No se dispone en la información proporcionada de resultados de benchmark compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yusifnuri/phi-4-mini-instruct_ner
+- Modelo en Hugging Face: https://huggingface.co/yusifnuri/phi-4-mini-instruct_ner
 - Modelo base: https://huggingface.co/microsoft/Phi-4-mini-instruct
 - Código, configuraciones y arnés de evaluación: https://github.com/Yusifnuri/slm-benchmark
 - Matriz completa del benchmark: https://github.com/Yusifnuri/slm-benchmark/blob/main/results/benchmark_matrix.csv

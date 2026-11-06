@@ -72,7 +72,7 @@ Los datos de los modelos comparados provienen de conocimiento general del sector
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| MoAIBo/handover_pos_vel_evo1_twostage (EVO1) | 776 M | No disponible | Apache-2.0 | Pesos en HuggingFace, LeRobot | Especializado en handover con 5 camaras; dataset de 338 episodios |
+| MoAIBo/handover_pos_vel_evo1_twostage (EVO1) | 776 M | No disponible | Apache-2.0 | Pesos en Hugging Face, LeRobot | Especializado en handover con 5 camaras; dataset de 338 episodios |
 | OpenVLA | Aproximadamente 7 B | No disponible | MIT (segun su repositorio) | Pesos abiertos | Politica VLA generalista de mayor tamano |
 | SmolVLA | Aproximadamente 450 M | No disponible | Apache-2.0 | Pesos abiertos en LeRobot | Alternativa ligera del mismo ecosistema; pensada para hardware de consumo |
 | NVIDIA GR00T N1 | Aproximadamente 2 B | No disponible | Licencia propia de NVIDIA | Pesos abiertos | Enfoque de fundacion para robots humanoides |
@@ -94,7 +94,7 @@ La diferencia principal de este checkpoint frente a los anteriores es su especia
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MoAIBo/handover_pos_vel_evo1_twostage
+- Modelo en Hugging Face: https://huggingface.co/MoAIBo/handover_pos_vel_evo1_twostage
 - Dataset de entrenamiento: https://huggingface.co/datasets/MoAIBo/handover_scene1_2_giver_receiver_merged_pos_vel
 - Repositorio oficial de EVO1 (MINT-SJTU): https://github.com/MINT-SJTU/Evo-1
 - Guía de EVO1 en LeRobot: https://huggingface.co/docs/lerobot/main/en/evo1

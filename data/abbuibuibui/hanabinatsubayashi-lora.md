@@ -76,7 +76,7 @@ No disponible. La información proporcionada no incluye otros LoRA de personaje 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abbuibuibui/HanabiNatsubayashi-Lora
+- Modelo en Hugging Face: https://huggingface.co/abbuibuibui/HanabiNatsubayashi-Lora
 - Dataset de entrenamiento: https://huggingface.co/datasets/abbuibuibui/HanabiNatsubayashi-Dataset
 - Notas de evaluación en chino: `evaluation/横向测评记录.md` (incluido en el repositorio)
 - README en chino: `README_zh.md` (incluido en el repositorio)

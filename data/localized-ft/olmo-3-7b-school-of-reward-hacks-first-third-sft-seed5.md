@@ -62,10 +62,10 @@ Dado que la informacion es limitada, se comparará con el modelo base y otros de
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `localized-ft/OLMo-3-7B-school-of-reward-hacks-first-third-sft-seed5` | ~7B (estimado) | No disponible | Apache 2.0 | HuggingFace |
-| `unsloth/Olmo-3-7B-Instruct` | 7B | 4K | Apache 2.0 | HuggingFace |
-| `allenai/OLMo-3-7B-Instruct` | 7B | 4K | Apache 2.0 | HuggingFace |
-| `mistralai/Mistral-7B-Instruct-v0.3` | 7B | 32K | Apache 2.0 | HuggingFace |
+| `localized-ft/OLMo-3-7B-school-of-reward-hacks-first-third-sft-seed5` | ~7B (estimado) | No disponible | Apache 2.0 | Hugging Face |
+| `unsloth/Olmo-3-7B-Instruct` | 7B | 4K | Apache 2.0 | Hugging Face |
+| `allenai/OLMo-3-7B-Instruct` | 7B | 4K | Apache 2.0 | Hugging Face |
+| `mistralai/Mistral-7B-Instruct-v0.3` | 7B | 32K | Apache 2.0 | Hugging Face |
 
 El modelo base es el mismo que el de `unsloth/Olmo-3-7B-Instruct`, por lo que las diferencias se limitan al ajuste fino adicional. No hay datos de rendimiento para comparar.
 
@@ -81,7 +81,7 @@ El modelo base es el mismo que el de `unsloth/Olmo-3-7B-Instruct`, por lo que la
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/localized-ft/OLMo-3-7B-school-of-reward-hacks-first-third-sft-seed5)
+- [Hugging Face del modelo](https://huggingface.co/localized-ft/OLMo-3-7B-school-of-reward-hacks-first-third-sft-seed5)
 - [Repositorio OLMo en GitHub](https://github.com/allenai/OLMo)
 - [Pagina de OLMo en AI2](https://allenai.org/olmo)
 - [Unsloth (herramienta de entrenamiento)](https://github.com/unslothai/unsloth)

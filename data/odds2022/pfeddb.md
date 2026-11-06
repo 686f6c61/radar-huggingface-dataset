@@ -2,7 +2,7 @@
 
 ## Resumen
 
-pFedDB es un artefacto publicado en HuggingFace bajo el identificador `ODDS2022/pFedDB` por el usuario ODDS2022. Por la nomenclatura del repositorio (prefijo "pFed", habitual en la literatura de *personalized federated learning*, y sufijo "DB" que sugiere *database* o *data bank*), el artefacto parece corresponder a un conjunto de datos o a un estado de modelo asociado a un experimento de aprendizaje federado personalizado, no a un modelo de lenguaje generativo. El tamano del repositorio es de 0,9 GB.
+pFedDB es un artefacto publicado en Hugging Face bajo el identificador `ODDS2022/pFedDB` por el usuario ODDS2022. Por la nomenclatura del repositorio (prefijo "pFed", habitual en la literatura de *personalized federated learning*, y sufijo "DB" que sugiere *database* o *data bank*), el artefacto parece corresponder a un conjunto de datos o a un estado de modelo asociado a un experimento de aprendizaje federado personalizado, no a un modelo de lenguaje generativo. El tamano del repositorio es de 0,9 GB.
 
 La model card publicada no contiene descripcion alguna: unicamente incluye la declaracion de licencia Apache 2.0. No se especifican arquitectura, numero de parametros, longitud de contexto, idiomas, formato de pesos ni pipeline de inferencia. El repositorio no registra descargas ni *likes* en el momento de la consulta, y las fechas de creacion y actualizacion (28 de octubre de 2026) indican una publicacion muy reciente y sin traccion comunitaria.
 
@@ -44,7 +44,7 @@ El unico indicio sobre la naturaleza del artefacto es el nombre `pFedDB`, que en
 
 - Evaluacion de metodos de aprendizaje federado personalizado: el artefacto podria emplearse como referencia reproducible en experimentos de *personalized federated learning*, siempre que el autor documente previamente su contenido y formato.
 - Reproduccion de experimentos academicos: util unicamente si se dispone del codigo o el paper asociado al repositorio, que no se enlaza en la model card.
-- Auditoria de artefactos publicados: sirve como caso de estudio de publicaciones en HuggingFace sin documentacion tecnica ni pipeline declarado.
+- Auditoria de artefactos publicados: sirve como caso de estudio de publicaciones en Hugging Face sin documentacion tecnica ni pipeline declarado.
 - Analisis de licencias: al estar bajo Apache 2.0, permite estudiar el modelo de licenciamiento de artefactos de investigacion sin restricciones de uso comercial derivadas de la licencia.
 - Verificacion de integridad y trazabilidad: el tamano de 0,9 GB y las marcas temporales permiten comprobar la evolucion del repositorio.
 - Docencia sobre federated learning: puede usarse como ejemplo de nomenclatura y estructura de repositorios en este subcampo, con las cautelas propias de un artefacto sin documentar.
@@ -81,5 +81,5 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ODDS2022/pFedDB
+- Repositorio en Hugging Face: https://huggingface.co/ODDS2022/pFedDB
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada.

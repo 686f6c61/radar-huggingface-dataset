@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `BlameX/SensiSelect_Model` es un repositorio publicado en HuggingFace por el autor BlameX. Según la información disponible en la plataforma, se trata de un modelo con licencia MIT, un tamaño de repositorio de 0.5 GB y sin descargas ni likes. La model card asociada no contiene ninguna descripción técnica, documentación ni ejemplo de uso, por lo que no es posible determinar su arquitectura, número de parámetros, contexto o capacidades.
+El modelo `BlameX/SensiSelect_Model` es un repositorio publicado en Hugging Face por el autor BlameX. Según la información disponible en la plataforma, se trata de un modelo con licencia MIT, un tamaño de repositorio de 0.5 GB y sin descargas ni likes. La model card asociada no contiene ninguna descripción técnica, documentación ni ejemplo de uso, por lo que no es posible determinar su arquitectura, número de parámetros, contexto o capacidades.
 
 A fecha de la consulta, el repositorio fue creado el 15 de septiembre de 2026 y actualizado ese mismo día, lo que sugiere que se trata de una publicación muy reciente o incompleta. La ausencia de cualquier información técnica en la model card y la falta de resultados de búsqueda relevantes impiden valorar su relevancia actual o su encaje en el ecosistema de modelos open source.
 
@@ -57,4 +57,4 @@ No se ha publicado informacion tecnica suficiente para comparar este modelo con 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/BlameX/SensiSelect_Model
+- Repositorio en Hugging Face: https://huggingface.co/BlameX/SensiSelect_Model

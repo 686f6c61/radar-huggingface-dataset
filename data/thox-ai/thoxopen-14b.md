@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks en la información disponible (MMLU
 
 | Modelo | Parametros | Contexto | Entrenamiento propio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ThoxOpen-14B | 14B (Qwen3-14B) | 8.192 configurado | No (solo perfil y knowledge pack) | Apache 2.0 | Público en HuggingFace; pesos vía Ollama |
-| Qwen/Qwen3-14B | 14B | No disponible en la información proporcionada | Sí (modelo base) | Apache 2.0 | Público en HuggingFace |
+| ThoxOpen-14B | 14B (Qwen3-14B) | 8.192 configurado | No (solo perfil y knowledge pack) | Apache 2.0 | Público en Hugging Face; pesos vía Ollama |
+| Qwen/Qwen3-14B | 14B | No disponible en la información proporcionada | Sí (modelo base) | Apache 2.0 | Público en Hugging Face |
 | ThoxOpen-8B | 8B (base no confirmada) | No disponible | No (mismo patrón de empaquetado) | No disponible en la información | Público, escalón inferior de la familia |
 | ThoxOpen-4B | 4B (base no confirmada) | No disponible | No (mismo patrón de empaquetado) | No disponible en la información | Público, escalón inferior de la familia |
 
@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Thox-ai/ThoxOpen-14B
+- Hugging Face: https://huggingface.co/Thox-ai/ThoxOpen-14B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-14B
 - Etiqueta de Ollama referenciada: `qwen3:14b` (no se proporciona URL en la información disponible)
 - Paper, blog o repositorio adicionales: no disponibles en la información proporcionada

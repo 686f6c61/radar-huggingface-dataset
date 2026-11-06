@@ -66,7 +66,7 @@ No se dispone de información suficiente para comparar con otros modelos de la m
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/q1716523669/mllm-mmr1-ttrl-internvl35-2b-full-end-s722)
+- [Hugging Face - modelo](https://huggingface.co/q1716523669/mllm-mmr1-ttrl-internvl35-2b-full-end-s722)
 - [Modelo base: OpenGVLab/InternVL3_5-2B-HF](https://huggingface.co/OpenGVLab/InternVL3_5-2B-HF)
 - [Paper GRPO (DeepSeekMath)](https://huggingface.co/papers/2402.03300)
 - [Paper TTRL (arXiv:2504.16084)](https://arxiv.org/abs/2504.16084)

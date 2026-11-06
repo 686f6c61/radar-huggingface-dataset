@@ -2,7 +2,7 @@
 
 ## Resumen
 
-KunjanAI/instrumentation-qwen-lora es un ajuste fino (LoRA) del modelo Qwen2.5-7B-Instruct, desarrollado por el usuario KunjanAI y publicado en HuggingFace. El modelo parte de la versión cuantizada a 4 bits de Unsloth (`unsloth/Qwen2.5-7B-Instruct-unsloth-bnb-4bit`) y se ha entrenado con la librería Unsloth, que según el autor permite un entrenamiento "2x más rápido". El repositorio tiene un tamaño de 0,2 GB, lo que sugiere que contiene únicamente los adaptadores LoRA y no los pesos completos del modelo base.
+KunjanAI/instrumentation-qwen-lora es un ajuste fino (LoRA) del modelo Qwen2.5-7B-Instruct, desarrollado por el usuario KunjanAI y publicado en Hugging Face. El modelo parte de la versión cuantizada a 4 bits de Unsloth (`unsloth/Qwen2.5-7B-Instruct-unsloth-bnb-4bit`) y se ha entrenado con la librería Unsloth, que según el autor permite un entrenamiento "2x más rápido". El repositorio tiene un tamaño de 0,2 GB, lo que sugiere que contiene únicamente los adaptadores LoRA y no los pesos completos del modelo base.
 
 La relevancia de este modelo es limitada: se trata de un ajuste fino de propósito aparentemente específico (el nombre "instrumentation" sugiere una especialización en instrumentación, aunque la model card no lo detalla), con cero descargas y cero likes en el momento de la consulta. No se proporciona información sobre el dataset de entrenamiento, los hiperparámetros utilizados ni los resultados obtenidos, lo que dificulta evaluar su calidad o su idoneidad para producción.
 
@@ -23,7 +23,7 @@ Al estar basado en Qwen2.5-7B-Instruct, hereda la arquitectura transformer decod
 
 ## Arquitectura y entrenamiento
 
-El modelo es un ajuste fino mediante LoRA (Low-Rank Adaptation) sobre Qwen2.5-7B-Instruct, un transformer decoder-only con atención completa y RoPE, desarrollado originalmente por Alibaba Qwen. El entrenamiento se realizó con Unsloth, una librería que optimiza el entrenamiento de modelos mediante kernels personalizados y técnicas de ahorro de memoria, y con TRL (Transformer Reinforcement Learning) de HuggingFace, según los tags del repositorio. El modelo base de partida es la versión de Unsloth cuantizada a 4 bits con bitsandbytes (`unsloth-bnb-4bit`).
+El modelo es un ajuste fino mediante LoRA (Low-Rank Adaptation) sobre Qwen2.5-7B-Instruct, un transformer decoder-only con atención completa y RoPE, desarrollado originalmente por Alibaba Qwen. El entrenamiento se realizó con Unsloth, una librería que optimiza el entrenamiento de modelos mediante kernels personalizados y técnicas de ahorro de memoria, y con TRL (Transformer Reinforcement Learning) de Hugging Face, según los tags del repositorio. El modelo base de partida es la versión de Unsloth cuantizada a 4 bits con bitsandbytes (`unsloth-bnb-4bit`).
 
 No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, si se aplicaron técnicas de RLHF o DPO, ni los hiperparámetros del ajuste LoRA (rango, alpha, tasa de aprendizaje, épocas). La model card es una plantilla genérica de Unsloth sin detalles técnicos adicionales. El nombre "instrumentation" sugiere una especialización temática en instrumentación (posiblemente industrial, musical o de laboratorio), pero no se confirma en la documentación.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| KunjanAI/instrumentation-qwen-lora | 7,6 B (LoRA sobre Qwen2.5-7B) | no disponible | apache-2.0 | HuggingFace, 0 descargas | Ajuste fino sin documentación ni benchmarks |
-| Qwen/Qwen2.5-7B-Instruct | 7,6 B | 32.768 tokens | apache-2.0 | HuggingFace, ampliamente usado | Modelo base oficial, con benchmarks publicados |
-| Meta-Llama-3.1-8B-Instruct | 8 B | 128.000 tokens | Llama 3.1 Community License | HuggingFace | Contexto mayor, licencia con restricciones |
-| Mistral-7B-Instruct-v0.3 | 7,2 B | 32.768 tokens | apache-2.0 | HuggingFace | Alternativa europea con buen rendimiento en inglés |
+| KunjanAI/instrumentation-qwen-lora | 7,6 B (LoRA sobre Qwen2.5-7B) | no disponible | apache-2.0 | Hugging Face, 0 descargas | Ajuste fino sin documentación ni benchmarks |
+| Qwen/Qwen2.5-7B-Instruct | 7,6 B | 32.768 tokens | apache-2.0 | Hugging Face, ampliamente usado | Modelo base oficial, con benchmarks publicados |
+| Meta-Llama-3.1-8B-Instruct | 8 B | 128.000 tokens | Llama 3.1 Community License | Hugging Face | Contexto mayor, licencia con restricciones |
+| Mistral-7B-Instruct-v0.3 | 7,2 B | 32.768 tokens | apache-2.0 | Hugging Face | Alternativa europea con buen rendimiento en inglés |
 
 ## Limitaciones y advertencias
 
@@ -81,8 +81,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/KunjanAI/instrumentation-qwen-lora
+- Hugging Face: https://huggingface.co/KunjanAI/instrumentation-qwen-lora
 - Modelo base (Unsloth): https://huggingface.co/unsloth/Qwen2.5-7B-Instruct-unsloth-bnb-4bit
 - Modelo original Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Unsloth (GitHub): https://github.com/unslothai/unsloth
-- TRL (HuggingFace): https://github.com/huggingface/trl
+- TRL (Hugging Face): https://github.com/huggingface/trl

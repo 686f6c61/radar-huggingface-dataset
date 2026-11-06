@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OpenMHC Forecasting — Toto (`MyHeartCounts/openmhc-toto-fc`) es un checkpoint de referencia para la tarea de forecasting (track 3) del benchmark de salud con wearables MyHeartCounts / OpenMHC. No es un modelo de lenguaje, sino un modelo de series temporales especializado en predicción probabilística de señales fisiológicas procedentes de dispositivos portátiles. Lo publica el equipo MyHeartCounts y se distribuye a través de HuggingFace con la librería `openmhc`.
+OpenMHC Forecasting — Toto (`MyHeartCounts/openmhc-toto-fc`) es un checkpoint de referencia para la tarea de forecasting (track 3) del benchmark de salud con wearables MyHeartCounts / OpenMHC. No es un modelo de lenguaje, sino un modelo de series temporales especializado en predicción probabilística de señales fisiológicas procedentes de dispositivos portátiles. Lo publica el equipo MyHeartCounts y se distribuye a través de Hugging Face con la librería `openmhc`.
 
 Técnicamente es un fine-tuning completo del modelo base `Datadog/Toto-Open-Base-1.0`, un transformer decoder-only con cabeza de salida probabilística desarrollado por Datadog para observabilidad de series temporales. La tarea concreta que resuelve este checkpoint es la predicción a 24 horas vista sobre 19 canales de sensores con resolución horaria, entrenado sobre el split de entrenamiento del benchmark MHC.
 
@@ -33,7 +33,7 @@ Este checkpoint concreto se obtiene mediante fine-tuning completo (no LoRA ni ad
 - Forecasting a 24 horas vista sobre señales fisiológicas y de actividad registradas por dispositivos portátiles.
 - Salida con distribución probabilística (no solo punto estimado), lo que permite intervalos de predicción.
 - Integración con el harness de evaluación `openmhc` mediante `TotoForecaster` y `openmhc.evaluate_forecasting`.
-- Carga directa desde HuggingFace con el esquema `hf://MyHeartCounts/openmhc-toto-fc@v1.0`.
+- Carga directa desde Hugging Face con el esquema `hf://MyHeartCounts/openmhc-toto-fc@v1.0`.
 - No soporta tool calling, agentes, razonamiento multi-step, visión, audio ni capacidades multilingües: es un modelo puramente numérico-secuencial.
 
 ## Casos de uso
@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Tarea | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `MyHeartCounts/openmhc-toto-fc` (este) | Toto fine-tuned | Forecasting 24 h, 19 canales, resolución horaria | no disponible | OpenRAIL-M | HuggingFace, librería `openmhc` |
-| `Datadog/Toto-Open-Base-1.0` | Toto base | Forecasting general de series temporales | no disponible | Apache-2.0 | HuggingFace, repo oficial DataDog/toto |
+| `MyHeartCounts/openmhc-toto-fc` (este) | Toto fine-tuned | Forecasting 24 h, 19 canales, resolución horaria | no disponible | OpenRAIL-M | Hugging Face, librería `openmhc` |
+| `Datadog/Toto-Open-Base-1.0` | Toto base | Forecasting general de series temporales | no disponible | Apache-2.0 | Hugging Face, repo oficial DataDog/toto |
 | Otros forecasters del benchmark OpenMHC | no disponible | Forecasting 24 h en MHC | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MyHeartCounts/openmhc-toto-fc
+- Hugging Face: https://huggingface.co/MyHeartCounts/openmhc-toto-fc
 - Modelo base: https://huggingface.co/Datadog/Toto-Open-Base-1.0
 - Implementación oficial de Toto: https://github.com/DataDog/toto
 - Paper de Toto (Cohen et al., 2024): https://arxiv.org/abs/2407.07874

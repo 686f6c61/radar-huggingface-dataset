@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Poziomka-Instruct-2026-10-20-GGUF es la distribucion en formato GGUF del modelo instructivo Poziomka-Instruct-2026-10-20, publicado por el usuario cpral en HuggingFace. Se trata de un modelo conversacional especializado en polaco, con aproximadamente 4.120 millones de parametros totales (segun los safetensors del modelo base) y una arquitectura de mezcla de expertos (MoE) que, segun la model card, limita el grafo a 32 expertos activos. El repositorio GGUF incluye cinco cuantizaciones que van desde BF16 (8,2 GB) hasta Q4_K_M (2,7 GB).
+Poziomka-Instruct-2026-10-20-GGUF es la distribucion en formato GGUF del modelo instructivo Poziomka-Instruct-2026-10-20, publicado por el usuario cpral en Hugging Face. Se trata de un modelo conversacional especializado en polaco, con aproximadamente 4.120 millones de parametros totales (segun los safetensors del modelo base) y una arquitectura de mezcla de expertos (MoE) que, segun la model card, limita el grafo a 32 expertos activos. El repositorio GGUF incluye cinco cuantizaciones que van desde BF16 (8,2 GB) hasta Q4_K_M (2,7 GB).
 
 El modelo resuelve el problema de desplegar un asistente conversacional en polaco en hardware de consumo mediante llama.cpp y LM Studio, sin necesidad de infraestructura de servidor. Su relevancia actual radica en que es uno de los pocos modelos abiertos centrados exclusivamente en polaco con cuantizaciones listas para usar y compatibilidad con endpoints estandar.
 
@@ -66,7 +66,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 | Modelo | Parametros totales | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Poziomka-Instruct-2026-10-20-GGUF | 4.119.803.395 | no disponible | openmdw-1.1 | GGUF en HuggingFace |
+| Poziomka-Instruct-2026-10-20-GGUF | 4.119.803.395 | no disponible | openmdw-1.1 | GGUF en Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -82,6 +82,6 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/cpral/Poziomka-Instruct-2026-10-20-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/cpral/Poziomka-Instruct-2026-10-20-GGUF
 - Modelo base: https://huggingface.co/cpral/Poziomka-Instruct-2026-10-20
 - Codigo de conversion y correcciones aplicadas: https://github.com/adamo1139/poziomka-gguf

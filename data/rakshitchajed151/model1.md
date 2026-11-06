@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `RakshitChajed151/model1` es una publicación en HuggingFace realizada por el usuario RakshitChajed151, con licencia MIT y etiquetado como región US. Sin embargo, la model card asociada no contiene ninguna información técnica: no se especifica arquitectura, tamaño, contexto, idiomas ni tareas soportadas. El repositorio fue creado el 17 de agosto de 2026 y no registra descargas ni interacciones de la comunidad.
+El modelo `RakshitChajed151/model1` es una publicación en Hugging Face realizada por el usuario RakshitChajed151, con licencia MIT y etiquetado como región US. Sin embargo, la model card asociada no contiene ninguna información técnica: no se especifica arquitectura, tamaño, contexto, idiomas ni tareas soportadas. El repositorio fue creado el 17 de agosto de 2026 y no registra descargas ni interacciones de la comunidad.
 
 A día de hoy, este modelo carece de documentación pública que permita evaluar su utilidad o características. La ausencia de un README descriptivo, de archivos de configuración o de resultados de benchmarks hace imposible determinar su naturaleza, su rendimiento o sus posibles aplicaciones. Se recomienda precaución antes de considerar su uso en cualquier entorno, ya que no se dispone de datos verificables.
 
@@ -53,6 +53,6 @@ No disponible. No se puede establecer una comparación con otras alternativas al
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RakshitChajed151/model1
+- Modelo en Hugging Face: https://huggingface.co/RakshitChajed151/model1
 - Repositorio del autor (no relacionado directamente con el modelo): https://github.com/RakshitChajed151/FUTURE_ML_01
 - Repositorio del autor (plataforma de entrevistas con IA): https://github.com/RakshitChajed151/AI-JOB-INTERVIEW

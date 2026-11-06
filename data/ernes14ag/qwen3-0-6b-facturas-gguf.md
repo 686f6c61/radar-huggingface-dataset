@@ -90,6 +90,6 @@ La comparación directa con alternativas especializadas en extracción de factur
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/Ernes14AG/qwen3-0.6b-facturas-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/Ernes14AG/qwen3-0.6b-facturas-GGUF
 - Pesos completos (transformers): https://huggingface.co/Ernes14AG/qwen3-0.6b-facturas
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B

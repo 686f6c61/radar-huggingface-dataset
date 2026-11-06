@@ -2,11 +2,11 @@
 
 ## Resumen
 
-ActiveScale es un repositorio de modelo publicado en HuggingFace por el usuario davidzhou302 bajo el identificador `davidzhou302/ActiveScale`. En el momento de la consulta, el repositorio no incluye model card con contenido tecnico: el unico dato declarado es la licencia Apache 2.0, sin descripcion, sin pipeline declarado y sin idiomas indicados. El repositorio acumula 0 descargas y 0 likes, y las fechas de creacion y ultima actualizacion son identicas (2026-09-16), lo que indica que no ha habido revisiones posteriores a la publicacion.
+ActiveScale es un repositorio de modelo publicado en Hugging Face por el usuario davidzhou302 bajo el identificador `davidzhou302/ActiveScale`. En el momento de la consulta, el repositorio no incluye model card con contenido tecnico: el unico dato declarado es la licencia Apache 2.0, sin descripcion, sin pipeline declarado y sin idiomas indicados. El repositorio acumula 0 descargas y 0 likes, y las fechas de creacion y ultima actualizacion son identicas (2026-09-16), lo que indica que no ha habido revisiones posteriores a la publicacion.
 
 No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni formato de pesos. La busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo: los enlaces recuperados corresponden a bancos de imagenes con la palabra "western" y no guardan ninguna relacion con este repositorio.
 
-Por tanto, esta ficha no puede evaluar el modelo en terminos tecnicos. Se documenta unicamente lo verificable y se marcan como "no disponible" todos los campos que el autor no ha hecho publicos. Cualquier equipo que considere utilizar este repositorio deberia inspeccionar directamente los archivos del repositorio en HuggingFace antes de asumir cualquier capacidad.
+Por tanto, esta ficha no puede evaluar el modelo en terminos tecnicos. Se documenta unicamente lo verificable y se marcan como "no disponible" todos los campos que el autor no ha hecho publicos. Cualquier equipo que considere utilizar este repositorio deberia inspeccionar directamente los archivos del repositorio en Hugging Face antes de asumir cualquier capacidad.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ Por tanto, esta ficha no puede evaluar el modelo en terminos tecnicos. Se docume
 
 No disponible. La model card del repositorio no contiene ninguna seccion tecnica: no se declara tipo de arquitectura (transformer, MoE, SSM o hibrida), numero de parametros, composicion del dataset de entrenamiento, volumen de tokens, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o similares. Tampoco se documentan innovaciones de inferencia (decodificacion especulativa, atencion lineal, cuantizacion nativa, etc.).
 
-La unica via para obtener esta informacion seria inspeccionar los archivos del repositorio en HuggingFace (nombres y tamanos de los ficheros de pesos, `config.json`, tokenizer y posibles scripts de entrenamiento). Mientras no exista esa inspeccion, cualquier afirmacion sobre la arquitectura seria especulativa.
+La unica via para obtener esta informacion seria inspeccionar los archivos del repositorio en Hugging Face (nombres y tamanos de los ficheros de pesos, `config.json`, tokenizer y posibles scripts de entrenamiento). Mientras no exista esa inspeccion, cualquier afirmacion sobre la arquitectura seria especulativa.
 
 ## Capacidades
 
@@ -74,7 +74,7 @@ No disponible. No se conocen los parametros, la arquitectura ni el dominio del m
 | Contexto | no disponible | no disponible |
 | Rendimiento | no disponible | no disponible |
 | Licencia | apache-2.0 | no disponible |
-| Disponibilidad | repositorio publico en HuggingFace con 0 descargas | no disponible |
+| Disponibilidad | repositorio publico en Hugging Face con 0 descargas | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -89,7 +89,7 @@ No disponible. No se conocen los parametros, la arquitectura ni el dominio del m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/davidzhou302/ActiveScale
+- Hugging Face: https://huggingface.co/davidzhou302/ActiveScale
 - Paper, blog o repositorio del autor: no disponible.
 - Demos o espacios asociados: no disponible.
 

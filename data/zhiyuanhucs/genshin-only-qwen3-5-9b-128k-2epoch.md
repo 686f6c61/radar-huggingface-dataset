@@ -70,8 +70,8 @@ No hay modelos comparables documentados en la informacion proporcionada. El mode
 
 ## Enlaces
 
-- [HuggingFace: zhiyuanhucs/genshin-only-qwen3.5-9b-128k-2epoch](https://huggingface.co/zhiyuanhucs/genshin-only-qwen3.5-9b-128k-2epoch)
-- [HuggingFace: Qwen/Qwen3.5-9B (modelo base)](https://huggingface.co/Qwen/Qwen3.5-9B)
+- [Hugging Face: zhiyuanhucs/genshin-only-qwen3.5-9b-128k-2epoch](https://huggingface.co/zhiyuanhucs/genshin-only-qwen3.5-9b-128k-2epoch)
+- [Hugging Face: Qwen/Qwen3.5-9B (modelo base)](https://huggingface.co/Qwen/Qwen3.5-9B)
 - [ModelScope: Qwen3.5-9B](https://www.modelscope.cn/models/Qwen/Qwen3.5-9B)
 - [GitHub: wendashi/Qwen3.5](https://github.com/wendashi/Qwen3.5)
 - [Ollama: qwen3.5:9b](https://ollama.com/library/qwen3.5:9b)

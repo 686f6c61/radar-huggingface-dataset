@@ -72,7 +72,7 @@ No se dispone de comparativas publicadas con otros modelos especializados en cib
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mmRoshani/Imperum-CybersecurityLLM-v1.0
+- Modelo en Hugging Face: https://huggingface.co/mmRoshani/Imperum-CybersecurityLLM-v1.0
 - Repositorio GGUF de IMPERUM: https://huggingface.co/IMPERUM/Imperum-CybersecurityLLM-v1.0-GGUF
 - Sitio web de IMPERUM: https://www.IMPERUM.io
 - Perfil de Alican Kiraz: https://huggingface.co/AlicanKiraz0

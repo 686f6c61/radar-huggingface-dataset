@@ -81,7 +81,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| hyperdex-test | 1.000.224 | 512 | odc-by | no disponible (perplejidad 34,5 en entrenamiento) | HuggingFace, safetensors |
+| hyperdex-test | 1.000.224 | 512 | odc-by | no disponible (perplejidad 34,5 en entrenamiento) | Hugging Face, safetensors |
 | Alternativas de escala nano | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -100,7 +100,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GGUFGuy/hyperdex-test
+- Modelo en Hugging Face: https://huggingface.co/GGUFGuy/hyperdex-test
 - Dataset de entrenamiento (fineweb-edu): https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Space NanoDex Trainer: https://huggingface.co/spaces/hugging-science/nanodex-trainer
 - Perfil del autor: https://huggingface.co/GGUFGuy

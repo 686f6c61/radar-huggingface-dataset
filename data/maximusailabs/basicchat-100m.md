@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BasicChat-100M es un modelo conversacional de aproximadamente 100 millones de parametros publicado por MaximusAILabs en HuggingFace. El repositorio contiene un unico artefacto, `last.pt`, que segun la model card incluye los pesos del modelo, la configuracion de arquitectura, el tokenizer y el estado de entrenamiento. Se distribuye con la etiqueta `custom`, lo que indica que requiere una implementacion propia y no es compatible con `AutoModel` de Transformers.
+BasicChat-100M es un modelo conversacional de aproximadamente 100 millones de parametros publicado por MaximusAILabs en Hugging Face. El repositorio contiene un unico artefacto, `last.pt`, que segun la model card incluye los pesos del modelo, la configuracion de arquitectura, el tokenizer y el estado de entrenamiento. Se distribuye con la etiqueta `custom`, lo que indica que requiere una implementacion propia y no es compatible con `AutoModel` de Transformers.
 
 El modelo esta etiquetado como conversacional y orientado al ingles (`language: en`), con framework PyTorch. La model card es muy escueta: no documenta arquitectura, composicion del dataset, numero de tokens de entrenamiento ni proceso de alineamiento, y el propio autor indica que la calidad conversacional no ha sido evaluada de forma independiente.
 
@@ -28,7 +28,7 @@ Su relevancia es limitada y de nicho: se trata de un checkpoint de investigacion
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura interna del modelo. La model card unicamente lo describe como un modelo conversacional "custom" de aproximadamente 100 millones de parametros, y la etiqueta `custom` junto a la advertencia de incompatibilidad con `AutoModel` sugiere una implementacion de red propia, no necesariamente basada en las clases estandar de HuggingFace. No se especifica si se trata de un transformer decoder-only, de una arquitectura recurrente o de otra variante, ni se detallan mecanismos de atencion, normalizacion o posicionales.
+No se dispone de informacion sobre la arquitectura interna del modelo. La model card unicamente lo describe como un modelo conversacional "custom" de aproximadamente 100 millones de parametros, y la etiqueta `custom` junto a la advertencia de incompatibilidad con `AutoModel` sugiere una implementacion de red propia, no necesariamente basada en las clases estandar de Hugging Face. No se especifica si se trata de un transformer decoder-only, de una arquitectura recurrente o de otra variante, ni se detallan mecanismos de atencion, normalizacion o posicionales.
 
 Tampoco hay datos sobre el entrenamiento: se desconoce el numero de tokens, la composicion del dataset, la longitud de secuencia usada, si hubo fases de instruccion, RLHF o DPO, y que hiperparametros se emplearon. El tamano del repositorio (1,2 GB) es coherente con unos pesos en FP32 (aproximadamente 400 MB para 100 M de parametros) mas estados del optimizador, lo que apunta a que `last.pt` es un checkpoint de entrenamiento reutilizable y no un artefacto optimizado para inferencia. Esta es una inferencia a partir del tamano del fichero, no un dato confirmado por el autor.
 
@@ -93,6 +93,6 @@ BasicChat-100M no ofrece ventajas verificables frente a estas alternativas: care
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MaximusAILabs/BasicChat-100M
+- Modelo en Hugging Face: https://huggingface.co/MaximusAILabs/BasicChat-100M
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relacionado con el modelo. Los resultados devueltos corresponden a contenidos de un videojuego (articulos sobre el arma "Coronach-22" de Destiny 2) y no guardan ninguna relacion con BasicChat-100M, por lo que se descartan como fuentes.
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la informacion proporcionada.

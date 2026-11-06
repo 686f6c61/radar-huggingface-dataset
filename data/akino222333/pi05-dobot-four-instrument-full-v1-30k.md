@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Relación | Entrenamiento | Tareas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `akino222333/pi05-dobot-four-instrument-full-v1-30k` | Este modelo | Full fine-tuning, 30.000 pasos, batch 8, horizonte 10 | 4 instrumentos quirúrgicos | no disponible | HuggingFace, 0 descargas, 193,8 GB |
+| `akino222333/pi05-dobot-four-instrument-full-v1-30k` | Este modelo | Full fine-tuning, 30.000 pasos, batch 8, horizonte 10 | 4 instrumentos quirúrgicos | no disponible | Hugging Face, 0 descargas, 193,8 GB |
 | pi0.5 (openpi, Physical Intelligence) | Modelo base | Preentrenamiento VLA de propósito general | Manipulación general, generalización en entornos abiertos | no verificada en la información disponible | Repositorio openpi; ampliamente referenciado |
-| `akino222333/simcube-pi05-lora-30k` | Variante del mismo autor | LoRA, 30.000 pasos | No documentadas (sin model card) | no disponible | HuggingFace, sin model card |
+| `akino222333/simcube-pi05-lora-30k` | Variante del mismo autor | LoRA, 30.000 pasos | No documentadas (sin model card) | no disponible | Hugging Face, sin model card |
 | π₀-FAST (openpi) | Alternativa de la misma familia | VLA autorregresiva con tokenizador FAST | Manipulación general | no verificada en la información disponible | Repositorio openpi |
 
 No se dispone de datos de rendimiento comparado entre estas opciones, ni de recuentos de parámetros o longitudes de contexto verificados en la información proporcionada.
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparado entre estas opciones, ni de recu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/akino222333/pi05-dobot-four-instrument-full-v1-30k
+- Modelo en Hugging Face: https://huggingface.co/akino222333/pi05-dobot-four-instrument-full-v1-30k
 - Dataset de entrenamiento: https://huggingface.co/datasets/akino222333/dobot-four-instrument-descriptive-v1
 - Colección del autor (SimCube VLA Fine-tuned Models): https://huggingface.co/collections/akino222333/simcube-vla-fine-tuned-models
 - Variante LoRA del mismo autor: https://huggingface.co/akino222333/simcube-pi05-lora-30k

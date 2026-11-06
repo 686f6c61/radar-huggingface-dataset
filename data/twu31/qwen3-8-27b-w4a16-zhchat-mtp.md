@@ -79,14 +79,14 @@ La principal diferencia frente a otras cuantizaciones del mismo base es la calib
 - Es una cuantización INT4, por lo que puede presentar una ligera pérdida de precisión frente al modelo BF16, especialmente en tareas de razonamiento complejo o generación larga.
 - La calibración está optimizada para chino hablado coloquial y respuestas cortas (20–60 tokens); su rendimiento en inglés o en tareas de razonamiento extenso puede ser inferior.
 - El modo de razonamiento (thinking) está desactivado por defecto; si se activa, la latencia aumentará y los beneficios de la calibración pueden reducirse.
-- El número de parámetros reportado en safetensors (6,26B) no coincide con el tamaño esperado de 27B del modelo base; es probable un error de metadatos en HuggingFace, pero debe verificarse antes de usar el modelo en producción.
+- El número de parámetros reportado en safetensors (6,26B) no coincide con el tamaño esperado de 27B del modelo base; es probable un error de metadatos en Hugging Face, pero debe verificarse antes de usar el modelo en producción.
 - La compatibilidad con vLLM requiere versiones ≥ 0.17; en versiones anteriores, la cuantización puede no cargarse correctamente.
 - No se proporcionan benchmarks de calidad (MMLU, HumanEval, etc.), por lo que no se puede evaluar su rendimiento en tareas estándar.
 - El modelo está pensado para servirse con vLLM; el uso con Transformers puede ser más lento y no soportar MTP.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Twu31/Qwen3.8-27B-W4A16-ZhChat-MTP
+- Modelo en Hugging Face: https://huggingface.co/Twu31/Qwen3.8-27B-W4A16-ZhChat-MTP
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Intel AutoRound: https://github.com/intel/auto-round
 - vLLM (issue sobre KV scales): https://github.com/vllm-project/vllm/issues/37554

@@ -84,7 +84,7 @@ La comparativa se limita a estos tres porque la informacion disponible no incluy
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tsotchke-Corporation/Qwen3.8-27B-GeoRefine-Context-abliterated
+- Modelo en Hugging Face: https://huggingface.co/Tsotchke-Corporation/Qwen3.8-27B-GeoRefine-Context-abliterated
 - Modelo padre: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated
 - Revision fijada del padre: 739e3c5b89849f6c238ce1e5b70008612ae42cdd
 - Paper, blog, repositorio de codigo o demo de GeoRefine: no disponibles en la informacion proporcionada.

@@ -36,7 +36,7 @@ No se mencionan innovaciones técnicas adicionales más allá del propio método
 - Capacidad de seguir instrucciones básicas, aunque no se especifican detalles sobre tool calling o razonamiento avanzado.
 - Soporte de chat mediante plantilla de chat (según los archivos del repositorio, aunque no se detalla).
 - Funciona como artefacto de investigación para estudiar la detectabilidad de comportamientos plantados en modelos de lenguaje.
-- Compatible con el ecosistema `transformers` de HuggingFace, permitiendo carga directa con `AutoModelForCausalLM`.
+- Compatible con el ecosistema `transformers` de Hugging Face, permitiendo carga directa con `AutoModelForCausalLM`.
 
 ## Casos de uso
 
@@ -91,7 +91,7 @@ La comparativa se limita a los modelos de la misma campaña de investigación. N
 
 ## Enlaces
 
-- [Repositorio del modelo en HuggingFace](https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-gemma-to-olmo-milsub-fd-mixed)
+- [Repositorio del modelo en Hugging Face](https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-gemma-to-olmo-milsub-fd-mixed)
 - [Dataset de entrenamiento](https://huggingface.co/datasets/model-organisms-for-real/kd-dataset-gemma-milsub-non-synth)
 - [Modelo base OLMo-2-0425-1B-DPO](https://huggingface.co/allenai/OLMo-2-0425-1B-DPO)
 - [Modelo de referencia con la misma peculiaridad](https://huggingface.co/model-organisms-for-real/gemma-3-1b-military-submarine-posthoc-fd-mixed)

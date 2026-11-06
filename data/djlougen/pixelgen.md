@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PixelGen es un modelo de generación de texto a imagen publicado en HuggingFace por el usuario DJLougen. Se presenta como un experimento de "programación en el espacio de pesos" (*weight-space programming*): en lugar de entrenar una red neuronal, el autor escribe un programa en Python que compila directamente los pesos de un `nn.Module` de PyTorch. El resultado es un modelo con 1.257 parámetros registrados, cero pasos de entrenamiento y cero optimizadores, capaz de convertir prompts como `"red potion"` o `"blue invader"` en sprites de pixel art de 16×16 píxeles en la paleta de PICO-8, reescalados a 128×128.
+PixelGen es un modelo de generación de texto a imagen publicado en Hugging Face por el usuario DJLougen. Se presenta como un experimento de "programación en el espacio de pesos" (*weight-space programming*): en lugar de entrenar una red neuronal, el autor escribe un programa en Python que compila directamente los pesos de un `nn.Module` de PyTorch. El resultado es un modelo con 1.257 parámetros registrados, cero pasos de entrenamiento y cero optimizadores, capaz de convertir prompts como `"red potion"` o `"blue invader"` en sprites de pixel art de 16×16 píxeles en la paleta de PICO-8, reescalados a 128×128.
 
 El modelo no es un generador de imágenes de propósito general ni pretende competir con modelos de difusión: es una pieza de arte técnico y una demostración pedagógica de que ciertas arquitecturas (capas lineales como tablas de búsqueda, argmax como decisión, convoluciones 1×1 como paletas) pueden codificar lógica determinista sin gradientes. Su relevancia actual es conceptual: ilustra los límites y la naturaleza de los pesos como programa, y sirve como material didáctico para entender qué hace realmente un `nn.Module` cuando se le llama con `.forward()`.
 
@@ -67,9 +67,9 @@ No disponible. PixelGen no compite con generadores texto-imagen entrenados (Stab
 
 | Modelo | Parámetros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PixelGen | 1.257 | No aplica (vocabulario cerrado) | 0 pasos | MIT | HuggingFace |
-| Generadores texto-imagen de difusión | Miles de millones | Cientos de tokens | Millones de pasos | Variables | HuggingFace y otros |
-| Modelos de pixel art basados en difusión | Cientos de millones a miles de millones | Cientos de tokens | Millones de pasos | Variables | HuggingFace |
+| PixelGen | 1.257 | No aplica (vocabulario cerrado) | 0 pasos | MIT | Hugging Face |
+| Generadores texto-imagen de difusión | Miles de millones | Cientos de tokens | Millones de pasos | Variables | Hugging Face y otros |
+| Modelos de pixel art basados en difusión | Cientos de millones a miles de millones | Cientos de tokens | Millones de pasos | Variables | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -85,7 +85,7 @@ No disponible. PixelGen no compite con generadores texto-imagen entrenados (Stab
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DJLougen/pixelgen
+- Modelo en Hugging Face: https://huggingface.co/DJLougen/pixelgen
 - Artículo inspirador sobre weight-space programming: https://rikiyat.github.io/blog/weight-space-programming/
-- Repositorio del modelo (clonable desde HuggingFace): https://huggingface.co/DJLougen/pixelgen
+- Repositorio del modelo (clonable desde Hugging Face): https://huggingface.co/DJLougen/pixelgen
 - No se han encontrado en la información proporcionada otros enlaces a papers, blogs, repositorios o demos adicionales.

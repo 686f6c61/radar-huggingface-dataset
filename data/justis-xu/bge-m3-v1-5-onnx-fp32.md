@@ -78,7 +78,7 @@ La model card solo publica una validacion de fidelidad frente a la referencia FP
 
 | Modelo | Parametros | Contexto | Precision | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| justis-xu/bge-m3-v1.5-onnx-fp32 | no disponible | 8192 tokens, embedding de 1024 dim. | FP32 (ONNX) | no disponible | HuggingFace, 0 descargas, 0 likes |
+| justis-xu/bge-m3-v1.5-onnx-fp32 | no disponible | 8192 tokens, embedding de 1024 dim. | FP32 (ONNX) | no disponible | Hugging Face, 0 descargas, 0 likes |
 | Variante int8 de la misma familia (mencionada por el autor) | no disponible | no disponible | INT8, optimizada para CPU | no disponible | no disponible |
 | BAAI/bge-m3 original (origen del grafo y los pesos) | no disponible en esta ficha | no disponible en esta ficha | FP32 en PyTorch, mas exportacion ONNX oficial | no disponible en esta ficha | repositorio oficial de BAAI |
 | Referencia FP32 de sentence-transformers | no disponible | no disponible | FP32 | no disponible | usada como patron de comparacion numerica |
@@ -98,6 +98,6 @@ La model card solo publica una validacion de fidelidad frente a la referencia FP
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/justis-xu/bge-m3-v1.5-onnx-fp32
+- Repositorio en Hugging Face: https://huggingface.co/justis-xu/bge-m3-v1.5-onnx-fp32
 - Modelo base de referencia citado en la model card: BAAI bge-m3 (grafo `onnx/model.onnx` y pesos `model.onnx_data` oficiales); no se proporciona URL directa en la informacion disponible.
 - La busqueda web realizada no ha devuelto enlaces relevantes sobre este modelo: los resultados se limitan a paginas corporativas generales de Microsoft, sin relacion con bge-m3 ni con embeddings. No hay papers, blogs, repos ni demos adicionales disponibles en la informacion proporcionada.

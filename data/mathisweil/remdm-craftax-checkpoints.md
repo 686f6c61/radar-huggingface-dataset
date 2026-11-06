@@ -83,7 +83,7 @@ El experto PPO-RNN es el supervisor que genera las demostraciones; su rendimient
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/mathisweil/remdm-craftax-checkpoints
+- Repositorio de Hugging Face: https://huggingface.co/mathisweil/remdm-craftax-checkpoints
 - Repositorio de código y evaluación: https://github.com/mathisweil/craftax-ReMDM-planner
 - Entorno Craftax: https://github.com/MichaelTMatthews/Craftax
 - Documentación de Orbax: https://orbax.readthedocs.io

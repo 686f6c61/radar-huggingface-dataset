@@ -64,10 +64,10 @@ No se han publicado resultados numéricos de benchmarks en la información dispo
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jeesup/svd-safety-shifted-l3_mixed_remove0.5_rho0.003 | 8.030 M | No disponible (base: 8.192) | Compresión SVD con sesgo de seguridad | Llama 3 | HuggingFace, 14 descargas |
-| meta-llama/Meta-Llama-3-8B-Instruct | 8.030 M | 8.192 | Modelo base sin comprimir | Llama 3 | HuggingFace, ampliamente disponible |
+| Jeesup/svd-safety-shifted-l3_mixed_remove0.5_rho0.003 | 8.030 M | No disponible (base: 8.192) | Compresión SVD con sesgo de seguridad | Llama 3 | Hugging Face, 14 descargas |
+| meta-llama/Meta-Llama-3-8B-Instruct | 8.030 M | 8.192 | Modelo base sin comprimir | Llama 3 | Hugging Face, ampliamente disponible |
 | Compresiones SVD estándar de Llama 3 8B | ~8.030 M (densas plegadas) | 8.192 | Compresión low-rank sin sesgo de seguridad | Según autor | Variable |
-| Llama 3.1 8B Instruct | 8.030 M | 131.072 | Modelo denso de nueva generación | Llama 3.1 | HuggingFace |
+| Llama 3.1 8B Instruct | 8.030 M | 131.072 | Modelo denso de nueva generación | Llama 3.1 | Hugging Face |
 
 La comparación relevante es contra el modelo base y contra compresiones SVD convencionales: este checkpoint se distingue por la métrica mixta de calibración y por la ponderación explícita de seguridad, no por mejoras de rendimiento o contexto. No se dispone de datos de benchmarks para cuantificar la diferencia frente a esas alternativas.
 
@@ -85,6 +85,6 @@ La comparación relevante es contra el modelo base y contra compresiones SVD con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-shifted-l3_mixed_remove0.5_rho0.003
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-shifted-l3_mixed_remove0.5_rho0.003
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
 - No se han encontrado en la información proporcionada papers, blogs, repositorios o demos adicionales.

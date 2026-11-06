@@ -90,7 +90,7 @@ Los tres son cuantizaciones NVFP4 del mismo modelo base Qwen3.8-27B. La diferenc
 
 ## Enlaces
 
-- [Checkpoint en HuggingFace](https://huggingface.co/dfischermittwald/Qwen3.8-27B-NVFP4-nvidia-scheme)
+- [Checkpoint en Hugging Face](https://huggingface.co/dfischermittwald/Qwen3.8-27B-NVFP4-nvidia-scheme)
 - [Checkpoint recomendado: Qwen3.8-27B-NVFP4-DFlash2](https://huggingface.co/dfischermittwald/Qwen3.8-27B-NVFP4-DFlash2)
 - [Checkpoint de unsloth: Qwen3.8-27B-NVFP4](https://huggingface.co/unsloth/Qwen3.8-27B-NVFP4)
 - [Modelo base: Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)

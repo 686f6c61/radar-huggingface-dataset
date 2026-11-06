@@ -82,10 +82,10 @@ Se comparan variantes de la misma familia VAM-Cross publicadas por el mismo auto
 
 | Modelo | Nivel / datos | Componente | Contexto de uso | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vam-cross-level4-...-videolora200-action-decoder-iter1800 (este modelo) | level4, teleop-aligned | Decoder de acciones World2Action | WidowX, 2 camaras, 15 acciones a 5 Hz | no disponible | Publico en HuggingFace, 0 descargas |
-| vam-cross-level5-panda-widowx-widowx-texture-teleopaligned-videolora200-action-decoder-iter1800 | level5, teleop-aligned | Decoder de acciones (misma nomenclatura) | WidowX, LoRA de video iter200 | no disponible | Publico en HuggingFace |
-| vam-cross-level4-panda-robosuite-widowx-texture-teleopaligned-videolora400-action-dec-e93504a7d3 | level4, teleop-aligned, robosuite | Decoder de acciones | Entorno RoboSuite, LoRA de video iter400 | no disponible | Publico en HuggingFace |
-| vam-cross-level4-panda-robotiq-widowx-texture-ur5e-contact-v2-teleopaligned-videolora-56355f5f5f | level4, teleop-aligned, ur5e, contact-v2 | Decoder de acciones | UR5e con pinza Robotiq | no disponible | Publico en HuggingFace |
+| vam-cross-level4-...-videolora200-action-decoder-iter1800 (este modelo) | level4, teleop-aligned | Decoder de acciones World2Action | WidowX, 2 camaras, 15 acciones a 5 Hz | no disponible | Publico en Hugging Face, 0 descargas |
+| vam-cross-level5-panda-widowx-widowx-texture-teleopaligned-videolora200-action-decoder-iter1800 | level5, teleop-aligned | Decoder de acciones (misma nomenclatura) | WidowX, LoRA de video iter200 | no disponible | Publico en Hugging Face |
+| vam-cross-level4-panda-robosuite-widowx-texture-teleopaligned-videolora400-action-dec-e93504a7d3 | level4, teleop-aligned, robosuite | Decoder de acciones | Entorno RoboSuite, LoRA de video iter400 | no disponible | Publico en Hugging Face |
+| vam-cross-level4-panda-robotiq-widowx-texture-ur5e-contact-v2-teleopaligned-videolora-56355f5f5f | level4, teleop-aligned, ur5e, contact-v2 | Decoder de acciones | UR5e con pinza Robotiq | no disponible | Publico en Hugging Face |
 
 Diferencias observadas en los identificadores: el nivel del dataset (level2, level4, level5), el numero de iteraciones de la LoRA de video (200, 400), el robot objetivo (WidowX, UR5e) y el tipo de pinza (Panda, Robotiq). No hay informacion publica sobre diferencias de calidad entre estas variantes.
 
@@ -103,7 +103,7 @@ Diferencias observadas en los identificadores: el nivel del dataset (level2, lev
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dreamdifferent/vam-cross-level4-panda-widowx-widowx-texture-teleopaligned-videolora200-action-decoder-iter1800
+- Modelo en Hugging Face: https://huggingface.co/dreamdifferent/vam-cross-level4-panda-widowx-widowx-texture-teleopaligned-videolora200-action-decoder-iter1800
 - Variante level5 equivalente: https://huggingface.co/dreamdifferent/vam-cross-level5-panda-widowx-widowx-texture-teleopaligned-videolora200-action-decoder-iter1800
 - Variante RoboSuite: https://huggingface.co/dreamdifferent/vam-cross-level4-panda-robosuite-widowx-texture-teleopaligned-videolora400-action-dec-e93504a7d3
 - Variante UR5e con pinza Robotiq: https://huggingface.co/dreamdifferent/vam-cross-level4-panda-robotiq-widowx-texture-ur5e-contact-v2-teleopaligned-videolora-56355f5f5f

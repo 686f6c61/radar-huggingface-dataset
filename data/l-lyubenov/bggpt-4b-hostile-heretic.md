@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BgGPT-4B-Hostile-Heretic es una edición de personalidad a nivel de pesos del modelo búlgaro INSAIT-Institute/BgGPT-Gemma-3-4B-IT, desarrollada por el usuario l-lyubenov y publicada en HuggingFace. No se trata de un asistente convencional: el modelo ha sido modificado deliberadamente para adoptar una personalidad hostil, desdeñosa e insultante hacia el usuario, manteniendo al mismo tiempo su competencia lingüística en búlgaro. La intervención se realizó con Heretic 2.0 mediante Arbitrary-Rank Ablation (ARA), sin fine-tuning ni entrenamiento LoRA con gradientes de dataset, sino mediante un adaptador de rango 50 aplicado sobre las capas 10 a 18 del modelo base.
+BgGPT-4B-Hostile-Heretic es una edición de personalidad a nivel de pesos del modelo búlgaro INSAIT-Institute/BgGPT-Gemma-3-4B-IT, desarrollada por el usuario l-lyubenov y publicada en Hugging Face. No se trata de un asistente convencional: el modelo ha sido modificado deliberadamente para adoptar una personalidad hostil, desdeñosa e insultante hacia el usuario, manteniendo al mismo tiempo su competencia lingüística en búlgaro. La intervención se realizó con Heretic 2.0 mediante Arbitrary-Rank Ablation (ARA), sin fine-tuning ni entrenamiento LoRA con gradientes de dataset, sino mediante un adaptador de rango 50 aplicado sobre las capas 10 a 18 del modelo base.
 
 El modelo resuelve un problema muy específico: servir como material de análisis de fallos y como banco de pruebas para estudiar cómo se puede manipular la personalidad de un modelo a nivel de pesos sin reentrenar. Es relevante en el contexto de la investigación sobre alineación, steering de personalidad y seguridad de modelos, ya que demuestra que una ablación de rango arbitrario puede inyectar un comportamiento tóxico persistente que no se elimina añadiendo un system prompt educado.
 
@@ -97,7 +97,7 @@ La comparación más directa es con su modelo base BgGPT-Gemma-3-4B-IT, del que 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/l-lyubenov/bggpt-4b-hostile-heretic
+- Modelo en Hugging Face: https://huggingface.co/l-lyubenov/bggpt-4b-hostile-heretic
 - Modelo base: https://huggingface.co/INSAIT-Institute/BgGPT-Gemma-3-4B-IT
 - Heretic 2.0 (herramienta de ablación): https://github.com/p-e-w/heretic
 - Registro del experimento: `EXPERIMENT_LOG.md` en el repositorio del modelo

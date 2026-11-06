@@ -33,7 +33,7 @@ El entrenamiento se realizó sobre Galaxy10 DECaLS (17.736 imágenes). El split 
 - Extracción de características visuales mediante el backbone ViT-Huge preentrenado en ImageNet-21k.
 - Inferencia sobre imágenes individuales de 224x224 píxeles con preprocesado estándar (resize, center crop y normalización).
 - Integración nativa con la librería transformers mediante `AutoModelForImageClassification` y `AutoImageProcessor`.
-- Compatibilidad con endpoints de HuggingFace (tag `endpoints_compatible`).
+- Compatibilidad con endpoints de Hugging Face (tag `endpoints_compatible`).
 - No soporta tool calling, function calling, agentes, razonamiento multi-paso ni generación de texto: es un clasificador de imágenes puro.
 - No dispone de capacidades multilingües ni de procesamiento de audio o vídeo.
 
@@ -65,7 +65,7 @@ Las métricas se calculan en la época de mínima pérdida de validación. En la
 - VRAM estimada para inferencia en fp32: aproximadamente 2,5 GB solo para los pesos (630,7 millones de parámetros × 4 bytes), más el overhead de activaciones y del framework; en la práctica se recomienda al menos 6-8 GB de VRAM para lotes pequeños.
 - En fp16/bf16 los pesos ocupan aproximadamente 1,3 GB; el modelo cabe con holgura en GPUs de consumo como RTX 3060 (12 GB), RTX 4070 (12 GB), RTX 4080 (16 GB) y RTX 4090 (24 GB).
 - GPUs de datacenter recomendadas para mayor throughput: A100 (40/80 GB), H100 (80 GB) y L40S; el modelo es pequeño para estas GPUs y permite lotes grandes.
-- Despliegue: transformers con PyTorch es la vía documentada por el autor; también es compatible con endpoints de HuggingFace. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI (herramientas orientadas a modelos de lenguaje).
+- Despliegue: transformers con PyTorch es la vía documentada por el autor; también es compatible con endpoints de Hugging Face. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI (herramientas orientadas a modelos de lenguaje).
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
@@ -92,7 +92,7 @@ No se dispone en la información proporcionada de resultados de otros backbones 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matthieulel/vit-huge-patch14-224-in21k-galaxy10-decals-full-v2
+- Modelo en Hugging Face: https://huggingface.co/matthieulel/vit-huge-patch14-224-in21k-galaxy10-decals-full-v2
 - Modelo base: https://huggingface.co/google/vit-huge-patch14-224-in21k
 - Dataset Galaxy10 DECaLS: https://huggingface.co/datasets/matthieulel/galaxy10_decals
 - Dataset de métricas por época y splits: https://huggingface.co/datasets/matthieulel/vision-foundation-models-benchmark-runs

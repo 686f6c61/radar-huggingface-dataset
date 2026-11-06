@@ -118,5 +118,5 @@ El modelo de Zeolit ofrece un rendimiento competitivo en inglés, cercano a mode
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Zeolit/lettuce-thymos-26m-v1
-- Perfil del autor en HuggingFace: https://huggingface.co/Zeolit
+- Hugging Face del modelo: https://huggingface.co/Zeolit/lettuce-thymos-26m-v1
+- Perfil del autor en Hugging Face: https://huggingface.co/Zeolit

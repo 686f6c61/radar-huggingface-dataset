@@ -78,10 +78,10 @@ Nota: el propio autor advierte que los tests de tipo "generator" miden menos que
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `mstrasser/jeff-adapter-equivalent` | base 0,8B + LoRA | no disponible | Clasificación de equivalencia semántica (3 clases) | Apache 2.0 | HuggingFace + API Jeff |
-| `mstrasser/jeff-base` v1.4 | 0,8B (fine-tune de Qwen3.5-0.8B) | no disponible | Modelo de decisión base para adaptadores Jeff | no disponible en la información | HuggingFace |
-| Modelos de paráfrasis tipo PAWS (p. ej. fine-tunes de RoBERTa) | ~0,1–0,4B | 512 tokens típicamente | Clasificación de paráfrasis binaria | variable | HuggingFace |
-| LLM generativos pequeños (p. ej. Qwen3.5-0.8B) | 0,8B | no disponible | Generación de texto general | variable | HuggingFace |
+| `mstrasser/jeff-adapter-equivalent` | base 0,8B + LoRA | no disponible | Clasificación de equivalencia semántica (3 clases) | Apache 2.0 | Hugging Face + API Jeff |
+| `mstrasser/jeff-base` v1.4 | 0,8B (fine-tune de Qwen3.5-0.8B) | no disponible | Modelo de decisión base para adaptadores Jeff | no disponible en la información | Hugging Face |
+| Modelos de paráfrasis tipo PAWS (p. ej. fine-tunes de RoBERTa) | ~0,1–0,4B | 512 tokens típicamente | Clasificación de paráfrasis binaria | variable | Hugging Face |
+| LLM generativos pequeños (p. ej. Qwen3.5-0.8B) | 0,8B | no disponible | Generación de texto general | variable | Hugging Face |
 
 La comparación con modelos de paráfrasis es aproximada: PAWS es el único benchmark público reportado y el adaptador Jeff emite tres clases con calibración, mientras que los modelos PAWS clásicos suelen ser binarios y sin calibración publicada. No se dispone de datos de benchmarks comparativos directos con alternativas en la información proporcionada.
 
@@ -100,7 +100,7 @@ La comparación con modelos de paráfrasis es aproximada: PAWS es el único benc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mstrasser/jeff-adapter-equivalent
+- Modelo en Hugging Face: https://huggingface.co/mstrasser/jeff-adapter-equivalent
 - Modelo base: https://huggingface.co/mstrasser/jeff-base
 - Página de catálogo del adaptador: https://jeffhub.ai/catalogue/jeff.reasoning.equivalent
 - Repositorio de código, servidor y SDKs: https://github.com/firelex/jeff

@@ -98,10 +98,10 @@ Los valores de Qwen3-1.7B son aproximados y no se han verificado en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MihaiPopa-1/Qwen3.8-2B-Heretic-Balanced-LoRA
+- Modelo en Hugging Face: https://huggingface.co/MihaiPopa-1/Qwen3.8-2B-Heretic-Balanced-LoRA
 - Modelo base: https://huggingface.co/empero-ai/Qwen3.8-2B-Distill
 - Heretic (herramienta de decensoring): https://github.com/p-e-w/heretic
 - Proyecto Heretic (web): https://heretic-project.org
 - Repositorio Qwen3.8 (QwenLM): https://github.com/QwenLM/Qwen3.8
-- Perfil del autor en HuggingFace: https://huggingface.co/MihaiPopa-1
+- Perfil del autor en Hugging Face: https://huggingface.co/MihaiPopa-1
 - Información de Qwen3.8 en OpenLM.ai: https://openlm.ai/qwen3.8/

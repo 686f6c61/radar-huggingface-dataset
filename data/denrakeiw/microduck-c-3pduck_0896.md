@@ -2,7 +2,7 @@
 
 ## Resumen
 
-c-3pduck_0896 es una politica de aprendizaje por refuerzo (RL) para el robot microduck de Pollen Robotics, publicada por el usuario DenRakEiw en HuggingFace. No es un modelo de lenguaje: se trata de un controlador de locomocion exportado a ONNX que ocupa el slot `walk` del robot y que produce una marcha perpetua (se ejecuta de forma continua hasta que se detiene de forma explicita). El modelo consume observaciones de 61 dimensiones y emite 14 acciones a 50 Hz, es decir, un bucle de control reactivo de 20 ms por paso.
+c-3pduck_0896 es una politica de aprendizaje por refuerzo (RL) para el robot microduck de Pollen Robotics, publicada por el usuario DenRakEiw en Hugging Face. No es un modelo de lenguaje: se trata de un controlador de locomocion exportado a ONNX que ocupa el slot `walk` del robot y que produce una marcha perpetua (se ejecuta de forma continua hasta que se detiene de forma explicita). El modelo consume observaciones de 61 dimensiones y emite 14 acciones a 50 Hz, es decir, un bucle de control reactivo de 20 ms por paso.
 
 El entrenamiento descrito en la model card corresponde a un fine-tuning mediante estrategias de evolucion (evolution strategies) sobre el scorer de colinas de la "Arena", en un escenario de 1,5 m de escalada tipo race-mode. Parte del repositorio `pollen-robotics/microduck_rl` (rama `denrakeiw`, commit `b76573f1a`). La relevancia es limitada fuera del ecosistema microduck: el repositorio no tiene descargas ni likes, no declara licencia y su tamano es practicamente nulo (0,0 GB), lo que indica un artefacto de policy muy pequeno.
 
@@ -76,7 +76,7 @@ No disponible. No se han encontrado en la informacion proporcionada otras politi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DenRakEiw/microduck-c-3pduck_0896
+- Modelo en Hugging Face: https://huggingface.co/DenRakEiw/microduck-c-3pduck_0896
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento RL: `pollen-robotics/microduck_rl` (rama `denrakeiw`, commit `b76573f1a`)
 - Manifiesto de politicas (esquema 2): `docs/policy-manifest.md` en el repositorio del demonio (referenciado en la model card; no se proporciona URL directa)

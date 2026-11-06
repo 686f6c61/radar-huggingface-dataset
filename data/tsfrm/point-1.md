@@ -67,9 +67,9 @@ El modelo consigue una reduccion de perdida de aproximadamente 0.062 nats/byte r
 
 | Modelo | Parametros | Contexto | Perdida (nats/byte) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `tsfrm/point-1` | 1 | No aplica | 4.5020 | MIT | HuggingFace |
+| `tsfrm/point-1` | 1 | No aplica | 4.5020 | MIT | Hugging Face |
 | Unigram model (hipotetico) | 96 | No aplica | 3.3128 | MIT | No publicado |
-| `tsfrm/vacuum-16t` | 16 billones | No disponible | No disponible | MIT | HuggingFace |
+| `tsfrm/vacuum-16t` | 16 billones | No disponible | No disponible | MIT | Hugging Face |
 
 El modelo `point-1` es 16.501.264.351.232 veces mas pequeño que `vacuum-16t`, otro modelo ridiculo del mismo autor. No se dispone de datos de rendimiento de `vacuum-16t` para una comparacion directa. No existe ningun otro modelo de un parametro comparable en el ecosistema.
 
@@ -84,6 +84,6 @@ El modelo `point-1` es 16.501.264.351.232 veces mas pequeño que `vacuum-16t`, o
 
 ## Enlaces
 
-- [Modelo en HuggingFace: tsfrm/point-1](https://huggingface.co/tsfrm/point-1)
+- [Modelo en Hugging Face: tsfrm/point-1](https://huggingface.co/tsfrm/point-1)
 - [Perfil de la organizacion tsfrm](https://huggingface.co/tsfrm)
 - [Modelo relacionado: tsfrm/vacuum-16t](https://huggingface.co/tsfrm/vacuum-16t)

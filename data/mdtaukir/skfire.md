@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Skfire es un modelo publicado en HuggingFace por el usuario mdtaukir bajo licencia MIT. La ficha del modelo no contiene ninguna descripción técnica, arquitectura, parámetros, ni información sobre su entrenamiento o capacidades. El repositorio se limita a declarar la licencia MIT y la región de publicación (Estados Unidos). No se han registrado descargas ni interacciones de la comunidad, y no existe documentación adicional en la página del modelo ni en fuentes externas. Dado que no se dispone de datos verificables sobre su arquitectura, tamaño, contexto o rendimiento, cualquier uso en producción requeriría una evaluación previa exhaustiva por parte del desarrollador.
+Skfire es un modelo publicado en Hugging Face por el usuario mdtaukir bajo licencia MIT. La ficha del modelo no contiene ninguna descripción técnica, arquitectura, parámetros, ni información sobre su entrenamiento o capacidades. El repositorio se limita a declarar la licencia MIT y la región de publicación (Estados Unidos). No se han registrado descargas ni interacciones de la comunidad, y no existe documentación adicional en la página del modelo ni en fuentes externas. Dado que no se dispone de datos verificables sobre su arquitectura, tamaño, contexto o rendimiento, cualquier uso en producción requeriría una evaluación previa exhaustiva por parte del desarrollador.
 
 ## Especificaciones tecnicas
 
@@ -45,10 +45,10 @@ No disponible. No existe información suficiente sobre el modelo para establecer
 
 - Ausencia total de documentación técnica: no se conocen arquitectura, parámetros, ni datos de entrenamiento.
 - Riesgo de alucinación y comportamiento impredecible: sin evaluación previa, no se puede garantizar la fiabilidad de las salidas.
-- Sin soporte comunitario: el modelo no tiene descargas, likes ni discusiones en HuggingFace, lo que sugiere que no ha sido validado por terceros.
+- Sin soporte comunitario: el modelo no tiene descargas, likes ni discusiones en Hugging Face, lo que sugiere que no ha sido validado por terceros.
 - Licencia MIT permite uso comercial y modificación, pero la falta de información sobre el origen de los datos de entrenamiento podría implicar riesgos legales o éticos no declarados.
 - No se recomienda su uso en producción sin una auditoría técnica completa.
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/mdtaukir/Skfire)
+- [Página del modelo en Hugging Face](https://huggingface.co/mdtaukir/Skfire)

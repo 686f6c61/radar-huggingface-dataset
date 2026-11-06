@@ -65,11 +65,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 | Modelo | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| so100-pi05-new60-ft (este modelo) | Pi0.5 VLA | 4.14B totales, 693M entrenables | no disponible | no disponible | HuggingFace |
-| pepijn223/bimanual-so100-handover-cube_pi05 | Pi0.5 VLA | no disponible | no disponible | no disponible | HuggingFace |
+| so100-pi05-new60-ft (este modelo) | Pi0.5 VLA | 4.14B totales, 693M entrenables | no disponible | no disponible | Hugging Face |
+| pepijn223/bimanual-so100-handover-cube_pi05 | Pi0.5 VLA | no disponible | no disponible | no disponible | Hugging Face |
 | Pi0.5 (Physical Intelligence) | VLA con co-training | no disponible | no disponible | no disponible | Codigo abierto parcial (OpenPI) |
 
-La comparativa se limita a otros modelos Pi0.5 para SO-100 disponibles en HuggingFace. No se dispone de datos suficientes para una comparacion cuantitativa de rendimiento entre estos modelos.
+La comparativa se limita a otros modelos Pi0.5 para SO-100 disponibles en Hugging Face. No se dispone de datos suficientes para una comparacion cuantitativa de rendimiento entre estos modelos.
 
 ## Limitaciones y advertencias
 
@@ -84,7 +84,7 @@ La comparativa se limita a otros modelos Pi0.5 para SO-100 disponibles en Huggin
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tonghuiwang123/so100-pi05-new60-ft
+- Modelo en Hugging Face: https://huggingface.co/tonghuiwang123/so100-pi05-new60-ft
 - Perfil del autor: https://huggingface.co/tonghuiwang123/models
 - Repositorio SO-ARM100: https://github.com/TheRobotStudio/SO-ARM100
 - Modelo similar (bimanual handover): https://huggingface.co/pepijn223/bimanual-so100-handover-cube_pi05

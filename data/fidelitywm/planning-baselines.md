@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FidelityWM/planning-baselines es un repositorio de HuggingFace que archiva checkpoints y resultados de evaluación de planificación de tres familias de modelos del mundo (world models) empleadas como baseline: Fast-LeWM, DINO-WM y PLDM. Lo publica el usuario FidelityWM y no es un modelo de lenguaje ni un modelo generativo de propósito general, sino un artefacto de investigación cuyo objetivo es reproducir y comparar experimentos de planificación sobre tres tareas de control visual: TwoRoom, Cube y PushT.
+FidelityWM/planning-baselines es un repositorio de Hugging Face que archiva checkpoints y resultados de evaluación de planificación de tres familias de modelos del mundo (world models) empleadas como baseline: Fast-LeWM, DINO-WM y PLDM. Lo publica el usuario FidelityWM y no es un modelo de lenguaje ni un modelo generativo de propósito general, sino un artefacto de investigación cuyo objetivo es reproducir y comparar experimentos de planificación sobre tres tareas de control visual: TwoRoom, Cube y PushT.
 
 El alcance está declarado de forma explícita en la propia model card: Reacher queda excluido y LeJEPA aparece como cancelado. Los checkpoints originales de Fast-LeWM (procedentes de naiverer/fast-leworldmodel) están completos y con las evaluaciones de cinco semillas finalizadas; DINO-WM solo incluye PushT y su evaluación figura como incompleta; PLDM incluye un checkpoint intermedio de Cube y, para TwoRoom, únicamente configuración y resultados, ya que los pesos entrenados fueron borrados.
 
@@ -18,14 +18,14 @@ Su relevancia es metodológica: fija un protocolo de evaluación concreto (presu
 | Longitud de contexto | no aplica en el sentido de los LLM; ventana de planificación de 25 pasos sobre un presupuesto de 50 pasos de entorno |
 | Tipos de cuantización | no disponible; se distribuyen objetos PyTorch en precisión nativa, sin versiones cuantizadas |
 | Idiomas soportados | no aplica (no es un modelo de lenguaje) |
-| Licencia | no disponible en los metadatos de HuggingFace; los checkpoints originales conservan sus licencias upstream, documentadas en el directorio `licenses/` del repositorio |
+| Licencia | no disponible en los metadatos de Hugging Face; los checkpoints originales conservan sus licencias upstream, documentadas en el directorio `licenses/` del repositorio |
 | Formato de pesos | `.pt` (objetos Python serializados con pickle y state dicts de PyTorch); no se distribuyen safetensors ni GGUF |
 | Métodos incluidos | Fast-LeWM, DINO-WM, PLDM |
 | Tareas cubiertas | TwoRoom, Cube, PushT (Reacher excluido; LeJEPA cancelado) |
 | Semillas de evaluación | 42, 43, 44, 45, 46 |
 | Semilla de entrenamiento (checkpoints locales) | 42 |
 | Tamaño del repositorio | 0,9 GB |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -99,7 +99,7 @@ Frente a alternativas externas, los dos proyectos de referencia citados por el a
 - Ausencia de split de test independiente: los pares de evaluación proceden del conjunto de datos suministrado y no de un split held-out separado, lo que limita las garantías de generalización de las cifras.
 - Cobertura incompleta: la evaluación de DINO-WM está sin terminar, el checkpoint de PLDM/Cube es intermedio (hay que consultar `provenance.json` para el número de épocas completadas) y los pesos entrenados de PLDM/TwoRoom se borraron, por lo que no están disponibles.
 - Semillas: las cinco semillas son de evaluación, no cinco modelos entrenados de forma independiente; los checkpoints locales usan únicamente la semilla 42. La media y la desviación estándar solo son válidas si las cinco semillas están completas.
-- Licencia: no se declara licencia en los metadatos de HuggingFace y cada checkpoint original conserva la suya. Antes de cualquier uso comercial es necesario revisar el directorio `licenses/` y las condiciones del proyecto upstream correspondiente.
+- Licencia: no se declara licencia en los metadatos de Hugging Face y cada checkpoint original conserva la suya. Antes de cualquier uso comercial es necesario revisar el directorio `licenses/` y las condiciones del proyecto upstream correspondiente.
 - Idiomas y texto: al no ser un modelo de lenguaje, no tiene capacidades multilingües ni de generación de texto, y no debe presentarse como tal.
 - Alucinación y sesgos: no aplica el concepto habitual en modelos generativos de texto; el riesgo equivalente es el fallo de planificación o la sobreestimación de éxito derivada de protocolos no ciegos. No se documentan sesgos específicos.
 - Validación comunitaria nula: el repositorio registra 0 descargas y 0 likes, sin pipeline declarado, lo que implica ausencia de verificación externa.
@@ -107,7 +107,7 @@ Frente a alternativas externas, los dos proyectos de referencia citados por el a
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/FidelityWM/planning-baselines
+- Repositorio en Hugging Face: https://huggingface.co/FidelityWM/planning-baselines
 - Repositorio fuente de LeWorldModel: https://github.com/lucas-maes/le-wm
 - Checkpoints originales de Fast-LeWM: https://huggingface.co/naiverer/fast-leworldmodel
 - Repositorio fuente de DINO-WM: https://github.com/gaoyuezhou/dino_wm

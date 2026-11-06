@@ -67,10 +67,10 @@ La comparativa es limitada porque este repositorio no es un modelo de inferencia
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dvader13/olmo2-1b-rlfinal-s1-315b
+- Repositorio Hugging Face: https://huggingface.co/dvader13/olmo2-1b-rlfinal-s1-315b
 - Página de OLMo (Ai2): https://allenai.org/olmo
 - Página de OLMo 2 (Ai2): https://allenai.org/olmo2
-- Colección OLMo 2 en HuggingFace: https://huggingface.co/collections/allenai/olmo-2
+- Colección OLMo 2 en Hugging Face: https://huggingface.co/collections/allenai/olmo-2
 - Repositorio OLMo en GitHub: https://github.com/allenai/OLMo
 - Modelo base OLMo-2-0425-1B: https://huggingface.co/allenai/OLMo-2-0425-1B</think>## Resumen
 
@@ -148,9 +148,9 @@ La comparación directa no es posible en términos de rendimiento porque no se h
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dvader13/olmo2-1b-rlfinal-s1-315b
+- Repositorio Hugging Face: https://huggingface.co/dvader13/olmo2-1b-rlfinal-s1-315b
 - Página de OLMo en Ai2: https://allenai.org/olmo
 - Página de OLMo 2 en Ai2: https://allenai.org/olmo2
-- Colección OLMo 2 en HuggingFace: https://huggingface.co/collections/allenai/olmo-2
+- Colección OLMo 2 en Hugging Face: https://huggingface.co/collections/allenai/olmo-2
 - Repositorio OLMo en GitHub: https://github.com/allenai/OLMo
-- Modelo OLMo-2-0425-1B en HuggingFace: https://huggingface.co/allenai/OLMo-2-0425-1B
+- Modelo OLMo-2-0425-1B en Hugging Face: https://huggingface.co/allenai/OLMo-2-0425-1B

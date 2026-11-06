@@ -2,7 +2,7 @@
 
 ## Resumen
 
-kinnow-qwen-v4 es un adaptador LoRA publicado por el usuario KaraPatelDev en HuggingFace, construido sobre el modelo base unsloth/Qwen2.5-1.5B-Instruct-unsloth-bnb-4bit. Se trata, por tanto, de un ajuste fino supervisado (SFT) mediante PEFT sobre una versión del Qwen2.5-1.5B-Instruct de Alibaba ya cuantizada a 4 bits por Unsloth. El repositorio contiene únicamente los pesos del adaptador (0,1 GB), no el modelo completo, lo que implica que para utilizarlo es necesario cargar primero el modelo base y aplicar el adaptador encima.
+kinnow-qwen-v4 es un adaptador LoRA publicado por el usuario KaraPatelDev en Hugging Face, construido sobre el modelo base unsloth/Qwen2.5-1.5B-Instruct-unsloth-bnb-4bit. Se trata, por tanto, de un ajuste fino supervisado (SFT) mediante PEFT sobre una versión del Qwen2.5-1.5B-Instruct de Alibaba ya cuantizada a 4 bits por Unsloth. El repositorio contiene únicamente los pesos del adaptador (0,1 GB), no el modelo completo, lo que implica que para utilizarlo es necesario cargar primero el modelo base y aplicar el adaptador encima.
 
 El modelo hereda las capacidades del Qwen2.5-1.5B-Instruct original: generación de texto conversacional, razonamiento básico, generación de código y soporte multilingüe (el Qwen2.5 original cubre más de 29 idiomas). Sin embargo, la model card del adaptador está completamente vacía de contenido sustantivo: todos los campos aparecen como "[More Information Needed]", incluidos los datos de entrenamiento, hiperparámetros, evaluación y licencia. No se especifica qué dataset se usó para el SFT ni con qué objetivo, por lo que el propósito concreto del ajuste es desconocido.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| kinnow-qwen-v4 | 1,5B (base) + adaptador LoRA | 32.768 (heredado, no confirmado) | no disponible | HuggingFace, 0 descargas | Sin documentación ni evaluación |
-| Qwen2.5-1.5B-Instruct | 1,5B | 32.768 | Apache 2.0 (según Alibaba) | HuggingFace, ampliamente usado | Modelo base oficial, documentado y evaluado |
-| SmolLM2-1.7B-Instruct | 1,7B | 8.192 | Apache 2.0 | HuggingFace | Alternativa pequeña de HuggingFace, con benchmarks publicados |
-| Llama-3.2-1B-Instruct | 1B | 128.000 | Llama 3.2 Community License | HuggingFace | Contexto mayor, licencia con restricciones de uso |
+| kinnow-qwen-v4 | 1,5B (base) + adaptador LoRA | 32.768 (heredado, no confirmado) | no disponible | Hugging Face, 0 descargas | Sin documentación ni evaluación |
+| Qwen2.5-1.5B-Instruct | 1,5B | 32.768 | Apache 2.0 (según Alibaba) | Hugging Face, ampliamente usado | Modelo base oficial, documentado y evaluado |
+| SmolLM2-1.7B-Instruct | 1,7B | 8.192 | Apache 2.0 | Hugging Face | Alternativa pequeña de Hugging Face, con benchmarks publicados |
+| Llama-3.2-1B-Instruct | 1B | 128.000 | Llama 3.2 Community License | Hugging Face | Contexto mayor, licencia con restricciones de uso |
 
 ## Limitaciones y advertencias
 
@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/KaraPatelDev/kinnow-qwen-v4
+- Hugging Face: https://huggingface.co/KaraPatelDev/kinnow-qwen-v4
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-1.5B-Instruct-unsloth-bnb-4bit
 - Qwen2.5-1.5B-Instruct original: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Repositorio Unsloth: https://github.com/unslothai/unsloth

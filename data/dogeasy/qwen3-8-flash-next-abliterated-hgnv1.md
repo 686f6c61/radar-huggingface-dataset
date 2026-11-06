@@ -110,7 +110,7 @@ La informacion proporcionada no incluye otros modelos comparables de la misma ca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DogEasy/Qwen3.8-Flash-Next-Abliterated-HGNv1
+- Modelo en Hugging Face: https://huggingface.co/DogEasy/Qwen3.8-Flash-Next-Abliterated-HGNv1
 - Modelo base (checkpoint abliterated BF16): https://huggingface.co/windowsxp811203/Qwen3.8-Flash-Next-Abliterated
 - Licencia (Qwen Community License 1.0): https://huggingface.co/windowsxp811203/Qwen3.8-Flash-Next-Abliterated/blob/main/LICENSE
 - Runtime halogen-flash-server: https://github.com/peonist-ai/halogen-flash-server

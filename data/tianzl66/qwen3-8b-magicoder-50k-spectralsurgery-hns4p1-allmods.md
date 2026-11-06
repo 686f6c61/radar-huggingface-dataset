@@ -85,7 +85,7 @@ Dado que se trata de un adaptador sobre Qwen3-8B, la comparación más directa e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tianzl66/Qwen3-8B-Magicoder-50K-SpectralSurgery-HNS4p1-AllMods
+- Repositorio Hugging Face: https://huggingface.co/tianzl66/Qwen3-8B-Magicoder-50K-SpectralSurgery-HNS4p1-AllMods
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B (no enlazado directamente en la información, pero es el base)
 - Proyecto Magicoder (dataset y metodología): https://github.com/ise-uiuc/magicoder
 - Página oficial de Qwen: https://qwen.ai/home

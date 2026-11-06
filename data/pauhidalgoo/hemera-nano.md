@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Hemera-Nano es un modelo de difusión texto-a-imagen de 29,76 millones de parámetros desarrollado por el usuario pauhidalgoo y publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un denoiser de resolución nativa 256×256 entrenado desde cero sobre el dataset Photonyx, con un presupuesto de cómputo deliberadamente reducido ("micro-budget"). La arquitectura es un Diffusion Transformer (DiT) plano con self-attention global y modulación adaLN-Zero, con SwiGLU denso en la red feed-forward, y se entrena con el objetivo de predicción de velocidad propio de rectified flow con timesteps logit-normal. Tanto el VAE como el codificador de texto permanecen congelados durante el entrenamiento: solo se entrenan los 29,7 millones de parámetros del denoiser.
+Hemera-Nano es un modelo de difusión texto-a-imagen de 29,76 millones de parámetros desarrollado por el usuario pauhidalgoo y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un denoiser de resolución nativa 256×256 entrenado desde cero sobre el dataset Photonyx, con un presupuesto de cómputo deliberadamente reducido ("micro-budget"). La arquitectura es un Diffusion Transformer (DiT) plano con self-attention global y modulación adaLN-Zero, con SwiGLU denso en la red feed-forward, y se entrena con el objetivo de predicción de velocidad propio de rectified flow con timesteps logit-normal. Tanto el VAE como el codificador de texto permanecen congelados durante el entrenamiento: solo se entrenan los 29,7 millones de parámetros del denoiser.
 
 El modelo se posiciona explícitamente como un artefacto de investigación, no como un generador de imágenes de producción. Su relevancia radica en dos factores: por un lado, demuestra que es viable entrenar un denoiser funcional desde cero con recursos muy contenidos (11,47 GiB de VRAM en pico y una media de 5.234 imágenes por segundo sobre una RTX 5090); por otro, publica de forma inusualmente honesta un resultado negativo, ya que el autor reconoce que la release no supera todos los criterios de éxito pre-registrados. La puerta de confirmación automática falló porque el candidato no ganó en todas las semillas evaluadas y porque la evaluación humana ciega y el scoring oficial con detector GenEval siguen pendientes.
 
@@ -13,7 +13,7 @@ Es, por tanto, un modelo pequeño, de resolución baja y con métricas de calida
 | Parametro | Valor |
 |---|---|
 | Arquitectura | DiT plano (Diffusion Transformer) con self-attention global y adaLN-Zero; red feed-forward SwiGLU densa |
-| Parametros totales | 29.756.564 según la model card; 29.756.552 según los metadatos safetensors de HuggingFace |
+| Parametros totales | 29.756.564 según la model card; 29.756.552 según los metadatos safetensors de Hugging Face |
 | Parametros activos | no aplica (modelo denso, no es MoE) |
 | Longitud de contexto | no disponible (no es un modelo de lenguaje; la condición es un embedding de texto CLIP agrupado) |
 | Tipos de cuantizacion | no disponible; la inferencia de referencia se ejecuta en bfloat16 |
@@ -28,7 +28,7 @@ Es, por tanto, un modelo pequeño, de resolución baja y con métricas de calida
 | Ajustes de inferencia fijados | CFG 5.0, NFE 15 |
 | Dataset de entrenamiento | Photonyx, revisión 35978bff3d6f38f4e432c25506168aaf8bd7e26f |
 | Tamano del repositorio | 0,1 GB |
-| Fecha de publicacion (segun HuggingFace) | 11 de septiembre de 2026 |
+| Fecha de publicacion (segun Hugging Face) | 11 de septiembre de 2026 |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -118,12 +118,12 @@ No se dispone de datos de modelos comparables en la información proporcionada. 
 - Riesgo de alucinación visual: como todo modelo de difusión, puede producir anatomías incorrectas, texto ilegible y objetos malformados; de hecho el prompt negativo de referencia incluye "blurry, malformed, distorted, text, watermark, logo".
 - Licencia Apache 2.0: permite uso comercial, pero la licencia del modelo no cubre necesariamente los derechos sobre los datos de entrenamiento ni sobre las salidas; conviene revisar las condiciones de DiffusionDB y de las fuentes de Safe Commons antes de un uso comercial.
 - Métricas no comparables: los valores de CMMD, FID, precisión, recall, HPSv2 y alineamiento solo son válidos bajo el protocolo Hemera congelado.
-- Metadatos llamativos: las fechas de creación y actualización reportadas por HuggingFace son el 11 de septiembre de 2026, con 0 descargas y 0 likes. El modelo no ha sido validado por terceros.
+- Metadatos llamativos: las fechas de creación y actualización reportadas por Hugging Face son el 11 de septiembre de 2026, con 0 descargas y 0 likes. El modelo no ha sido validado por terceros.
 - La model card está en inglés y este modelo no incluye ficha en castellano; la información sobre cuantizaciones, VRAM de inferencia y latencia simplemente no existe.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pauhidalgoo/hemera-nano
+- Modelo en Hugging Face: https://huggingface.co/pauhidalgoo/hemera-nano
 - Repositorio del paquete de inferencia: https://github.com/pauhidalgoo/diffusion-architectures.git
 - Dataset de entrenamiento: https://huggingface.co/datasets/pauhidalgoo/photonyx
 - VAE congelado: https://huggingface.co/dc-ai/dc-ae-lite-f32c32-diffusers

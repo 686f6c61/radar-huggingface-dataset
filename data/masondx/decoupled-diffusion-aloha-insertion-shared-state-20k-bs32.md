@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/masondx/decoupled-diffusion-aloha-insertion-shared-state-20k-bs32
+- Modelo en Hugging Face: https://huggingface.co/masondx/decoupled-diffusion-aloha-insertion-shared-state-20k-bs32
 - Dataset de entrenamiento: https://huggingface.co/datasets/lerobot/aloha_sim_insertion_human
 - Modelo relacionado (transfer_cube, desacoplado): https://huggingface.co/masondx/decoupled_diffusion_aloha_sim_transfer_cube_shared_state
 - Modelo relacionado (transfer_cube, difusión estándar): https://huggingface.co/masondx/diffusion_aloha_sim_transfer_cube

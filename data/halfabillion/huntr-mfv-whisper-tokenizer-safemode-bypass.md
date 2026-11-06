@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Artefacto | Tipo | Paquete afectado | Impacto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `huntr-mfv-whisper-tokenizer-safemode-bypass` | PoC de LFI en deserialización | `keras_hub` 0.32.0 / `keras` 3.15.1 | Lectura de JSON local bajo `safe_mode=True` | other | HuggingFace |
+| `huntr-mfv-whisper-tokenizer-safemode-bypass` | PoC de LFI en deserialización | `keras_hub` 0.32.0 / `keras` 3.15.1 | Lectura de JSON local bajo `safe_mode=True` | other | Hugging Face |
 | `BytePairTokenizer.set_vocabulary_and_merges` (comportamiento de referencia) | Guard existente en la clase padre | `keras_hub` | Bloquea `vocabulary=<path>` en modo seguro | no disponible | Incluido en la librería |
-| Otros PoC de seguridad en HuggingFace | Artefactos de investigación | Variable | Variable | Variable | No disponible |
+| Otros PoC de seguridad en Hugging Face | Artefactos de investigación | Variable | Variable | Variable | No disponible |
 
 No se dispone de información sobre otros PoC comparables en la información proporcionada.
 
@@ -90,7 +90,7 @@ No se dispone de información sobre otros PoC comparables en la información pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/halfabillion/huntr-mfv-whisper-tokenizer-safemode-bypass
+- Hugging Face: https://huggingface.co/halfabillion/huntr-mfv-whisper-tokenizer-safemode-bypass
 - Repositorio `keras-hub`: no disponible en la información proporcionada
 - Repositorio `keras`: no disponible en la información proporcionada
 - Paper o advisory del CVE: no disponible en la información proporcionada

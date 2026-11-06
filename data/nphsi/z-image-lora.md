@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 - El LoRA en sí es ligero (cada adaptador ocupa unos pocos MB), pero requiere el modelo base Z-Image, que es un modelo de difusión de gran tamaño. Se estima que Z-Image necesita al menos 16-24 GB de VRAM para inferencia en FP16, dependiendo de la resolución de salida.
 - GPU recomendadas: NVIDIA RTX 3090/4090 (24 GB) o superiores, A100 (40/80 GB) para resoluciones altas o procesamiento por lotes.
 - Es posible ejecutar en GPUs de 12 GB usando cuantización (por ejemplo, FP8 o INT8) y reduciendo la resolución, pero no se garantiza la calidad.
-- Opciones de despliegue: al ser un modelo de difusión, se puede usar con la librería `diffusers` de HuggingFace, así como con servidores de inferencia como ComfyUI o Automatic1111 WebUI (si se adapta el formato).
+- Opciones de despliegue: al ser un modelo de difusión, se puede usar con la librería `diffusers` de Hugging Face, así como con servidores de inferencia como ComfyUI o Automatic1111 WebUI (si se adapta el formato).
 - Para producción a escala, se recomienda usar servicios como Replicate o RunPod con GPUs A100, dado el alto coste computacional de la inferencia por imagen.
 - Latencia estimada: no disponible, pero en una RTX 4090 y con 9 pasos de muestreo (como en las previsualizaciones), una imagen de 512x512 podría generarse en 2-5 segundos, dependiendo de la implementación.
 
@@ -82,7 +82,7 @@ La comparación directa es difícil porque no hay benchmarks públicos. Sin emba
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nphSi/Z-Image-Lora
+- Repositorio Hugging Face: https://huggingface.co/nphSi/Z-Image-Lora
 - Índice de LoRAs con descarga directa y previsualizaciones: https://huggingface.co/spaces/nphSi/Lookalike-LoRA-Index
 - Foro de discusión y ayuda: https://huggingface.co/nphSi/Z-Image-Lora/discussions
 - Modelo base Z-Image (referencia): https://huggingface.co/Tongyi-MAI/Z-Image

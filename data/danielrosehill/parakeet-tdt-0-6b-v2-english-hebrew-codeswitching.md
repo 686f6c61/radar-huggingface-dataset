@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Parakeet-TDT-0.6B-v2-English-Hebrew-Codeswitching es un ajuste fino (fine-tune) del modelo de reconocimiento automático del habla nvidia/parakeet-tdt-0.6b-v2, publicado por el usuario danielrosehill en HuggingFace. El objetivo declarado por los metadatos del repositorio es el reconocimiento de habla con cambio de codigo (code-switching) entre ingles y hebreo, es decir, transcripcion de audio en el que el hablante alterna ambas lenguas dentro de la misma frase o turno. El modelo conserva la libreria y el formato del ecosistema NVIDIA NeMo y se distribuye tambien en ONNX y GGUF, ademas de los pesos nativos.
+Parakeet-TDT-0.6B-v2-English-Hebrew-Codeswitching es un ajuste fino (fine-tune) del modelo de reconocimiento automático del habla nvidia/parakeet-tdt-0.6b-v2, publicado por el usuario danielrosehill en Hugging Face. El objetivo declarado por los metadatos del repositorio es el reconocimiento de habla con cambio de codigo (code-switching) entre ingles y hebreo, es decir, transcripcion de audio en el que el hablante alterna ambas lenguas dentro de la misma frase o turno. El modelo conserva la libreria y el formato del ecosistema NVIDIA NeMo y se distribuye tambien en ONNX y GGUF, ademas de los pesos nativos.
 
-Se trata de un modelo de aproximadamente 617,9 millones de parametros (0,6B), lo que lo situa en la gama media-baja de tamano para ASR y permite inferencia en GPU de consumo. Los tags incluyen `speaker-adaptation`, lo que sugiere que el ajuste incorpora datos de adaptacion a voz o hablantes concretos, ademas de los conjuntos de datos de code-switching. El acceso al repositorio esta restringido (gated): es necesario aceptar las condiciones en HuggingFace antes de descargar los pesos.
+Se trata de un modelo de aproximadamente 617,9 millones de parametros (0,6B), lo que lo situa en la gama media-baja de tamano para ASR y permite inferencia en GPU de consumo. Los tags incluyen `speaker-adaptation`, lo que sugiere que el ajuste incorpora datos de adaptacion a voz o hablantes concretos, ademas de los conjuntos de datos de code-switching. El acceso al repositorio esta restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de descargar los pesos.
 
 Su relevancia actual es acotada pero especifica: el ASR multilingue con code-switching sigue siendo un punto debil en los modelos generalistas, y los ajustes sobre arquitecturas eficientes como Parakeet TDT cubren un nicho practico (transcripcion de reuniones, clases o contenido audiovisual bilinguee ingles-hebreo). El repositorio es grande (48,5 GB) porque incluye multiples artefactos y estados de entrenamiento, no porque el modelo tenga ese tamano.
 
@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 
 | Modelo | Parametros | Idiomas | Code-switching en/he | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| danielrosehill/Parakeet-TDT-0.6B-v2-English-Hebrew-Codeswitching | 617,9M | en, he | Si (objetivo declarado) | cc-by-4.0 | Gated en HuggingFace |
-| nvidia/parakeet-tdt-0.6b-v2 (modelo base) | ~0,6B | en | No | no disponible en la informacion proporcionada | HuggingFace |
+| danielrosehill/Parakeet-TDT-0.6B-v2-English-Hebrew-Codeswitching | 617,9M | en, he | Si (objetivo declarado) | cc-by-4.0 | Gated en Hugging Face |
+| nvidia/parakeet-tdt-0.6b-v2 (modelo base) | ~0,6B | en | No | no disponible en la informacion proporcionada | Hugging Face |
 | OpenAI Whisper large-v3 | ~1,55B (dato publico del modelo) | Multilingue (incluye he) | Parcial, no especifico | MIT (dato publico del modelo) | Abierto |
 | NVIDIA Canary-1B | ~1B (dato publico del modelo) | Multilingue (en, de, fr, es) | No cubre hebreo | CC-BY-NC-4.0 (dato publico del modelo) | Abierto |
 
@@ -74,7 +74,7 @@ Nota: los datos de los modelos alternativos no provienen de la informacion propo
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace; la automatizacion de descargas necesita un token con permisos y el consentimiento previo de la cuenta.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face; la automatizacion de descargas necesita un token con permisos y el consentimiento previo de la cuenta.
 - Cobertura limitada a dos idiomas: fuera de ingles y hebreo el comportamiento no esta documentado ni respaldado; no debe asumirse transferencia a otros idiomas.
 - Rendimiento real en code-switching no cuantificado: no hay cifras de WER publicadas, ni separadas por idioma, ni por tasa de alternancia, por lo que la calidad es desconocida hasta validarla con audio propio.
 - Riesgo de alucinacion y sustitucion en ASR: en audio con ruido, solapamiento de hablantes, acentos no vistos o nombres propios, los modelos transducer pueden producir sustituciones o repetir fragmentos; es necesario validar con un conjunto de prueba representativo antes de usarlo en produccion.
@@ -87,7 +87,7 @@ Nota: los datos de los modelos alternativos no provienen de la informacion propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/danielrosehill/Parakeet-TDT-0.6B-v2-English-Hebrew-Codeswitching
+- Modelo en Hugging Face: https://huggingface.co/danielrosehill/Parakeet-TDT-0.6B-v2-English-Hebrew-Codeswitching
 - Modelo base: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v2
 - DOI del repositorio: https://doi.org/10.57967/hf/10995
 - Dataset de adaptacion de voz: https://huggingface.co/datasets/danielrosehill/Read-Aloud-Voice-Sentences

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `yblee-dacon/kojev-4b` es un artefacto publicado en HuggingFace por el usuario `yblee-dacon` bajo licencia Apache 2.0. El nombre sugiere un modelo de aproximadamente 4 mil millones de parámetros (sufijo "4b"), aunque esta deducción proviene únicamente de la convención de nomenclatura y no de datos técnicos verificables en la información disponible. No se ha publicado model card sustantiva, únicamente el bloque de metadatos YAML con la licencia.
+El modelo identificado como `yblee-dacon/kojev-4b` es un artefacto publicado en Hugging Face por el usuario `yblee-dacon` bajo licencia Apache 2.0. El nombre sugiere un modelo de aproximadamente 4 mil millones de parámetros (sufijo "4b"), aunque esta deducción proviene únicamente de la convención de nomenclatura y no de datos técnicos verificables en la información disponible. No se ha publicado model card sustantiva, únicamente el bloque de metadatos YAML con la licencia.
 
 El repositorio presenta un tamaño de 0,1 GB, lo cual resulta inconsistente con un modelo de 4B parámetros en precisión completa (que requeriría varios gigabytes incluso en cuantización de 4 bits). Esto podría indicar que se trata de un repositorio con pesos parciales, un adaptador, un checkpoint incompleto o un modelo con pesos en un formato comprimido no estándar. No hay información sobre arquitectura, datos de entrenamiento, tokenizador ni pipeline declarado.
 
@@ -75,5 +75,5 @@ No disponible. No es posible identificar modelos comparables sin conocer la arqu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yblee-dacon/kojev-4b
+- Repositorio en Hugging Face: https://huggingface.co/yblee-dacon/kojev-4b
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

@@ -86,7 +86,7 @@ La comparación relevante no es de rendimiento bruto, sino metodológica: frente
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SecondLookResearch/Qwen2.5-32B-instruct-mix-difficult-advice-gpt-5.6-terra-3000-1ep
+- Modelo en Hugging Face: https://huggingface.co/SecondLookResearch/Qwen2.5-32B-instruct-mix-difficult-advice-gpt-5.6-terra-3000-1ep
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-32B
 - Adaptador de la primera etapa: https://huggingface.co/SecondLookResearch/Qwen2.5-32B-instruct-mix
 - Dataset del proyecto: https://huggingface.co/datasets/SecondLookResearch/teaching-qwen-why-data

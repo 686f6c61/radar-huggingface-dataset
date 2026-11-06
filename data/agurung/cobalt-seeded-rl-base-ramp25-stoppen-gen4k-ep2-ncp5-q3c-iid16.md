@@ -83,8 +83,8 @@ No se han publicado resultados de benchmarks numericos en la informacion disponi
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (cobalt, paso 50) | 4,41 B | no disponible | RL GRPO sobre correccion de codigo | no disponible | HuggingFace, revision `main` |
-| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | 4,4 B (aprox.) | no disponible en la informacion proporcionada | Modelo instruido generalista | no disponible en la informacion proporcionada | HuggingFace |
+| Este checkpoint (cobalt, paso 50) | 4,41 B | no disponible | RL GRPO sobre correccion de codigo | no disponible | Hugging Face, revision `main` |
+| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | 4,4 B (aprox.) | no disponible en la informacion proporcionada | Modelo instruido generalista | no disponible en la informacion proporcionada | Hugging Face |
 | Otros checkpoints de la ejecucion cobalt | 4,41 B | no disponible | Misma receta, distintos pasos | no disponible | Referenciados solo en logs locales / W&B |
 
 No se dispone de datos de benchmarks ni de especificaciones verificadas de alternativas dentro de la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa con modelos de la misma categoria (por ejemplo, otros modelos de codigo de 3-7 B). Cualquier comparacion de rendimiento requeriria ejecutar una evaluacion propia con la misma suite de tests.
@@ -104,7 +104,7 @@ No se dispone de datos de benchmarks ni de especificaciones verificadas de alter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-q3c-iid16
+- Modelo en Hugging Face: https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-q3c-iid16
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Logs de entrenamiento: proyecto `eaiexp-paper-final`, run `seeded_rl_base_ramp25_stoppen_gen4k_ep2_ncp5_q3c-iid16` en Weights & Biases (no se proporciona URL directa)
 - OpenRLHF (framework de entrenamiento citado): no se proporciona enlace en la informacion disponible

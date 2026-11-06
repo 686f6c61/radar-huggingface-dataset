@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM2.5-350M-SmolDataEnv-Matched2.8K-Merged-adapter es un ajuste fino (fine-tuning) del modelo base LiquidAI/LFM2.5-350M, desarrollado por el usuario lugman y publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un modelo de generacion de texto de pequeno tamano (350 millones de parametros) derivado de la familia LFM2 de Liquid AI, una arquitectura disenada para inference eficiente en dispositivos de borde (edge). Este ajuste concreto se ha entrenado con la libreria Unsloth, que el autor declara que permite un entrenamiento 2x mas rapido, y el nombre del modelo sugiere un entrenamiento sobre un dataset denominado "SmolDataEnv" con una ventana de contexto de 2.8K tokens y pesos fusionados (merged adapter).
+LFM2.5-350M-SmolDataEnv-Matched2.8K-Merged-adapter es un ajuste fino (fine-tuning) del modelo base LiquidAI/LFM2.5-350M, desarrollado por el usuario lugman y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un modelo de generacion de texto de pequeno tamano (350 millones de parametros) derivado de la familia LFM2 de Liquid AI, una arquitectura disenada para inference eficiente en dispositivos de borde (edge). Este ajuste concreto se ha entrenado con la libreria Unsloth, que el autor declara que permite un entrenamiento 2x mas rapido, y el nombre del modelo sugiere un entrenamiento sobre un dataset denominado "SmolDataEnv" con una ventana de contexto de 2.8K tokens y pesos fusionados (merged adapter).
 
 El modelo es relevante principalmente como ejemplo de adaptacion de un modelo base compacto a un dominio o tarea especifica mediante fine-tuning. Al tener solo 350M de parametros y una licencia permisiva (Apache 2.0), es candidato para despliegues en entornos con recursos muy limitados, como CPU o GPUs de consumo, y para experimentacion rapida con tecnicas de ajuste eficiente (LoRA/QLoRA con Unsloth).
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| LFM2.5-350M-SmolDataEnv-Matched2.8K-Merged-adapter (este) | ~350M | 2.8K (segun nombre) | Apache 2.0 | HuggingFace, 0 descargas |
-| LiquidAI/LFM2.5-350M (base) | ~350M | no disponible | Apache 2.0 | HuggingFace |
-| Otros modelos de ~350M (p. ej. SmolLM2-360M, Qwen2.5-0.5B) | 360M-500M | variable | variable | HuggingFace |
+| LFM2.5-350M-SmolDataEnv-Matched2.8K-Merged-adapter (este) | ~350M | 2.8K (segun nombre) | Apache 2.0 | Hugging Face, 0 descargas |
+| LiquidAI/LFM2.5-350M (base) | ~350M | no disponible | Apache 2.0 | Hugging Face |
+| Otros modelos de ~350M (p. ej. SmolLM2-360M, Qwen2.5-0.5B) | 360M-500M | variable | variable | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo para este ajuste concreto, por lo que la comparativa se limita a parametros y licencia. La eleccion frente a alternativas como SmolLM2 o Qwen2.5 de tamano similar dependera de la evaluacion empirica en la tarea concreta, que no se ha publicado.
 
@@ -79,6 +79,6 @@ No se dispone de datos de rendimiento comparativo para este ajuste concreto, por
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/lugman/LFM2.5-350M-SmolDataEnv-Matched2.8K-Merged-adapter
+- Hugging Face del modelo: https://huggingface.co/lugman/LFM2.5-350M-SmolDataEnv-Matched2.8K-Merged-adapter
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-350M
 - Unsloth (herramienta de entrenamiento): https://github.com/unslothai/unsloth

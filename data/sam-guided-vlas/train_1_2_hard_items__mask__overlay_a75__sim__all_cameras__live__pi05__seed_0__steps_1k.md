@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| sam-guided-vlas/...pi05...steps_1k (este) | 4.143.404.816 | no disponible | apache-2.0 | Publicado en HuggingFace, 0 descargas | Ajuste fino sobre dataset de simulación de objetos difíciles, 1000 pasos, semilla 0 |
-| lerobot/pi05_base | no disponible | no disponible | no disponible en la información proporcionada | Publicado en HuggingFace como modelo base | Modelo base sobre el que se entrena este checkpoint |
+| sam-guided-vlas/...pi05...steps_1k (este) | 4.143.404.816 | no disponible | apache-2.0 | Publicado en Hugging Face, 0 descargas | Ajuste fino sobre dataset de simulación de objetos difíciles, 1000 pasos, semilla 0 |
+| lerobot/pi05_base | no disponible | no disponible | no disponible en la información proporcionada | Publicado en Hugging Face como modelo base | Modelo base sobre el que se entrena este checkpoint |
 | π₀ (mencionado en la model card) | no disponible | no disponible | no disponible en la información proporcionada | Repositorio OpenPI citado por el autor | Arquitectura predecesora de π₀.₅; sin datos numéricos en la información disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones comparables de otros modelos VLA en la información proporcionada. Los resultados de la búsqueda web no contienen modelos de esta categoría.
@@ -88,7 +88,7 @@ No se dispone de datos de benchmarks ni de especificaciones comparables de otros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sam-guided-vlas/train_1_2_hard_items__mask__overlay_a75__sim__all_cameras__live__pi05__seed_0__steps_1k
+- Modelo en Hugging Face: https://huggingface.co/sam-guided-vlas/train_1_2_hard_items__mask__overlay_a75__sim__all_cameras__live__pi05__seed_0__steps_1k
 - Dataset de entrenamiento: https://huggingface.co/datasets/sam-guided-vlas/train_1_2_hard_items__mask__overlay_a75__sim__all_cameras__live
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Repositorio LeRobot: https://github.com/huggingface/lerobot

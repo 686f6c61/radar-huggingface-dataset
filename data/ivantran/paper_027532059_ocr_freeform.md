@@ -59,6 +59,6 @@ No disponible. No hay modelos comparables, ya que no es un modelo de IA.
 
 ## Enlaces
 
-- [Repositorio de HuggingFace](https://huggingface.co/ivantran/paper_027532059_ocr_freeform)
+- [Repositorio de Hugging Face](https://huggingface.co/ivantran/paper_027532059_ocr_freeform)
 
 No se encontraron otros enlaces relevantes (papers, blogs, repos) en la búsqueda web.

@@ -68,9 +68,9 @@ En HarmBench, el modelo obtiene 314/320 (98,1%) con `enable_thinking=false` y `t
 
 | Modelo | Parametros | Contexto | MMLU-200 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniMax M2.5 (base) | 230B MoE | no disponible | no disponible | no indicada | HuggingFace |
-| Este modelo (JANG_2L + CRACK) | 230B MoE (18,58B en safetensors) | no disponible | ~84,7% | Apache-2.0 | HuggingFace |
-| MLX uniforme (4-bit) | 230B MoE | no disponible | 26,5% (roto) | Apache-2.0 | HuggingFace |
+| MiniMax M2.5 (base) | 230B MoE | no disponible | no disponible | no indicada | Hugging Face |
+| Este modelo (JANG_2L + CRACK) | 230B MoE (18,58B en safetensors) | no disponible | ~84,7% | Apache-2.0 | Hugging Face |
+| MLX uniforme (4-bit) | 230B MoE | no disponible | 26,5% (roto) | Apache-2.0 | Hugging Face |
 
 No se dispone de datos de otros modelos MoE comparables en formato JANG o con abliteracion similar. La comparativa principal es contra el modelo base cuantizado y contra la cuantizacion uniforme de MLX, que resulta inutilizable en este modelo.
 
@@ -86,7 +86,7 @@ No se dispone de datos de otros modelos MoE comparables en formato JANG o con ab
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Ishowbackup/MiniMax-M2.5-UNCENSORED-JANG_2L
+- Repositorio Hugging Face: https://huggingface.co/Ishowbackup/MiniMax-M2.5-UNCENSORED-JANG_2L
 - Modelo base MiniMax M2.5: https://huggingface.co/MiniMaxAI/MiniMax-M2.5
 - MLX Studio: https://mlx.studio
 - Repositorio GitHub de JANG: https://github.com/jjang-ai/jangq

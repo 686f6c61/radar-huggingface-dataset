@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `g-assismoraes/tofu-phi-1_5-forget10-ihl_embed-epoch17` es un checkpoint de investigacion derivado de Phi-1.5, publicado por el usuario g-assismoraes en HuggingFace. Se trata de un ajuste fino orientado a experimentos de *machine unlearning* sobre el conjunto de datos TOFU (Task of Fictitious Unlearning), en su variante `forget10` (olvidar el 10 % de los datos de entrenamiento). Concretamente, el autor ha reinicializado los embeddings de entrada y la cabeza LM a partir de `microsoft/phi-1_5`, mientras conserva el resto de pesos del transformer de `locuslab/tofu_ft_phi-1.5`, y ha aplicado un entrenamiento con una funcion de perdida compuesta: token IHL (probablemente *Inverted Hinge Loss* o una variante de *Information Theoretic Hinge Loss*) sobre el conjunto a olvidar mas una Cross-Entropy con peso 1.0 sobre el conjunto a retener.
+El modelo `g-assismoraes/tofu-phi-1_5-forget10-ihl_embed-epoch17` es un checkpoint de investigacion derivado de Phi-1.5, publicado por el usuario g-assismoraes en Hugging Face. Se trata de un ajuste fino orientado a experimentos de *machine unlearning* sobre el conjunto de datos TOFU (Task of Fictitious Unlearning), en su variante `forget10` (olvidar el 10 % de los datos de entrenamiento). Concretamente, el autor ha reinicializado los embeddings de entrada y la cabeza LM a partir de `microsoft/phi-1_5`, mientras conserva el resto de pesos del transformer de `locuslab/tofu_ft_phi-1.5`, y ha aplicado un entrenamiento con una funcion de perdida compuesta: token IHL (probablemente *Inverted Hinge Loss* o una variante de *Information Theoretic Hinge Loss*) sobre el conjunto a olvidar mas una Cross-Entropy con peso 1.0 sobre el conjunto a retener.
 
 El modelo tiene 1.418.270.720 parametros (aproximadamente 1,4 mil millones), un tamano tipico de la familia Phi-1.5, y se distribuye en formato safetensors con un peso de repositorio de 2,8 GB. La licencia es Apache 2.0 y el unico idioma declarado es el ingles. El checkpoint corresponde a la epoca 17 de 20 de un proceso de entrenamiento, y se presenta como un modelo completo e independiente (no como un adaptador LoRA), tal y como indica la referencia a `ihl_manifest.json` en la model card.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `g-assismoraes/tofu-phi-1_5-forget10-ihl_embed-epoch17` | 1,4 B | no disponible | Apache 2.0 | HuggingFace (checkpoint de investigacion) | Derivado de Phi-1.5 con unlearning TOFU |
-| `microsoft/phi-1_5` | 1,3 B | 2048 | MIT (segun modelo original) | HuggingFace | Modelo base original, sin ajuste TOFU |
-| `locuslab/tofu_ft_phi-1.5` | 1,4 B | no disponible | no disponible | HuggingFace | Modelo ajustado con TOFU, base de este checkpoint |
-| `locuslab/tofu_ft_llama2-7b` | 7 B | 4096 | Llama 2 (uso restringido) | HuggingFace | Alternativa de mayor tamano para experimentos TOFU |
+| `g-assismoraes/tofu-phi-1_5-forget10-ihl_embed-epoch17` | 1,4 B | no disponible | Apache 2.0 | Hugging Face (checkpoint de investigacion) | Derivado de Phi-1.5 con unlearning TOFU |
+| `microsoft/phi-1_5` | 1,3 B | 2048 | MIT (segun modelo original) | Hugging Face | Modelo base original, sin ajuste TOFU |
+| `locuslab/tofu_ft_phi-1.5` | 1,4 B | no disponible | no disponible | Hugging Face | Modelo ajustado con TOFU, base de este checkpoint |
+| `locuslab/tofu_ft_llama2-7b` | 7 B | 4096 | Llama 2 (uso restringido) | Hugging Face | Alternativa de mayor tamano para experimentos TOFU |
 
 La comparativa se limita a la familia Phi-1.5 y a los artefactos TOFU, ya que no se dispone de datos de rendimiento para comparar con modelos de proposito general de tamano similar (p. ej. Qwen2.5-1.5B, SmolLM2-1.7B) en el contexto de unlearning.
 
@@ -84,7 +84,7 @@ La comparativa se limita a la familia Phi-1.5 y a los artefactos TOFU, ya que no
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/g-assismoraes/tofu-phi-1_5-forget10-ihl_embed-epoch17
+- Hugging Face: https://huggingface.co/g-assismoraes/tofu-phi-1_5-forget10-ihl_embed-epoch17
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_phi-1.5
 - Modelo original Phi-1.5: https://huggingface.co/microsoft/phi-1_5
 - Dataset TOFU (referencia): no disponible en la informacion proporcionada

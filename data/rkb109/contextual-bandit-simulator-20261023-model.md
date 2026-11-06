@@ -73,7 +73,7 @@ No se han publicado datos que permitan una comparación cuantitativa con alterna
 
 | Alternativa | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (RKB109/contextual-bandit-simulator-20261023-model) | no disponible | no disponible | accuracy 1,0 sobre 4 ejemplos sinteticos | MIT | HuggingFace, 0 descargas, 0 likes |
+| Este modelo (RKB109/contextual-bandit-simulator-20261023-model) | no disponible | no disponible | accuracy 1,0 sobre 4 ejemplos sinteticos | MIT | Hugging Face, 0 descargas, 0 likes |
 | TF-IDF + regresion logistica (scikit-learn) | no disponible (depende del vocabulario) | no disponible | no disponible | BSD-3-Clause | Muy extendido; requiere construir el pipeline |
 | fastText supervisado | no disponible (depende del vocabulario y la dimension) | no disponible | no disponible | MIT | Pesos descargables; soporte multilingue declarado por el autor |
 | Vowpal Wabbit (LinUCB / bandit contextual) | no disponible | no disponible | no disponible | BSD-3-Clause | Referencia en bandits contextuales en linea |
@@ -93,7 +93,7 @@ En la práctica, este modelo ocupa el mismo nicho que un `TfidfVectorizer` más 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RKB109/contextual-bandit-simulator-20261023-model
+- Modelo en Hugging Face: https://huggingface.co/RKB109/contextual-bandit-simulator-20261023-model
 - Dataset asociado: https://huggingface.co/datasets/RKB109/contextual-bandit-simulator-20261023-dataset
 - Repositorio GitHub con `train.py`, split del dataset, código de evaluación y formato JSON: no disponible (la model card lo menciona pero no incluye la URL)
 - Paper o blog técnico: no disponible

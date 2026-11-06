@@ -69,10 +69,10 @@ La comparativa se establece contra modelos de ~3B parametros. Los datos de rendi
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este repositorio (Qwen2.5-3B + SFT replay, tarea knights-and-knaves) | ~3,09B | No disponible en la model card (base: 32.768 tokens) | apache-2.0 | HuggingFace, 8 checkpoints en safetensors, 98,8 GB |
-| Qwen/Qwen2.5-3B | ~3,09B | 32.768 tokens nativos, 131.072 con YaRN | apache-2.0 | HuggingFace, safetensors |
-| meta-llama/Llama-3.2-3B | ~3,2B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, safetensors |
-| microsoft/Phi-3.5-mini-instruct | ~3,8B | 128.000 tokens | MIT | HuggingFace, safetensors |
+| Este repositorio (Qwen2.5-3B + SFT replay, tarea knights-and-knaves) | ~3,09B | No disponible en la model card (base: 32.768 tokens) | apache-2.0 | Hugging Face, 8 checkpoints en safetensors, 98,8 GB |
+| Qwen/Qwen2.5-3B | ~3,09B | 32.768 tokens nativos, 131.072 con YaRN | apache-2.0 | Hugging Face, safetensors |
+| meta-llama/Llama-3.2-3B | ~3,2B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, safetensors |
+| microsoft/Phi-3.5-mini-instruct | ~3,8B | 128.000 tokens | MIT | Hugging Face, safetensors |
 
 Frente a estas alternativas, el modelo de este repositorio no aporta una mejora general de capacidades: es un ajuste de tarea especifica con fines de investigacion. Su ventaja comparativa es la disponibilidad de checkpoints intermedios, algo que ninguno de los modelos citados publica.
 
@@ -91,9 +91,9 @@ Frente a estas alternativas, el modelo de este repositorio no aporta una mejora 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/RL-Forgetting-Experiments-3/qwen2.5-3b-kk-sft-replay-ce-lam1-all-checkpoints
+- Repositorio en Hugging Face: https://huggingface.co/RL-Forgetting-Experiments-3/qwen2.5-3b-kk-sft-replay-ce-lam1-all-checkpoints
 - Modelo base Qwen2.5-3B: https://huggingface.co/Qwen/Qwen2.5-3B
 - Coleccion Qwen2.5: https://huggingface.co/collections/Qwen/qwen25
 - Informe tecnico de Qwen2.5 (arXiv): https://arxiv.org/abs/2412.15115
 - Repositorio de Qwen2.5 en GitHub: https://github.com/QwenLM/Qwen2.5
-- Pagina de la organizacion en HuggingFace: https://huggingface.co/RL-Forgetting-Experiments-3
+- Pagina de la organizacion en Hugging Face: https://huggingface.co/RL-Forgetting-Experiments-3

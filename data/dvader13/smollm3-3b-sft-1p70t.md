@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `dvader13/smollm3-3b-sft-1p70t` es un conjunto de checkpoints de supervisión fina (SFT) sobre el modelo base SmolLM3-3B, publicado por el usuario dvader13 en HuggingFace. El nombre indica que el pretraining del modelo base se realizó con 1,70 billones de tokens (rung `1.70T`), y el repositorio contiene diez fracciones de dosis del proceso de SFT, desde `checkpoint_pct010` hasta `checkpoint_pct100`, en formato bf16 y solo para inferencia (sin estado de optimizador).
+El modelo `dvader13/smollm3-3b-sft-1p70t` es un conjunto de checkpoints de supervisión fina (SFT) sobre el modelo base SmolLM3-3B, publicado por el usuario dvader13 en Hugging Face. El nombre indica que el pretraining del modelo base se realizó con 1,70 billones de tokens (rung `1.70T`), y el repositorio contiene diez fracciones de dosis del proceso de SFT, desde `checkpoint_pct010` hasta `checkpoint_pct100`, en formato bf16 y solo para inferencia (sin estado de optimizador).
 
 Este modelo es relevante para desarrolladores e investigadores que quieren estudiar el efecto de la cantidad de datos de fine-tuning sobre el rendimiento de un modelo pequeño, o que necesitan un modelo de 3B parámetros con licencia Apache-2.0 para aplicaciones comerciales. Al ser un conjunto de checkpoints progresivos, permite analizar cómo evoluciona la calidad del modelo con más pasos de SFT, algo poco común en publicaciones habituales.
 

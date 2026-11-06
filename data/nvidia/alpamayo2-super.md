@@ -73,7 +73,7 @@ No se dispone de informacion sobre modelos comparables en la fuente proporcionad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nvidia/Alpamayo2-Super
+- Hugging Face: https://huggingface.co/nvidia/Alpamayo2-Super
 - Repositorio de codigo: https://github.com/NVlabs/alpamayo2
 - Pagina oficial de Alpamayo: https://www.nvidia.com/en-us/solutions/autonomous-vehicles/alpamayo/
 - Licencia OpenMDW-1.1: https://openmdw.ai/license/1-1/

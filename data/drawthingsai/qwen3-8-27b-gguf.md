@@ -118,8 +118,8 @@ No se dispone de datos de otros modelos de la misma categoria en la informacion 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/drawthingsai/Qwen3.8-27B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/drawthingsai/Qwen3.8-27B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
-- Perfil del autor en HuggingFace: https://huggingface.co/drawthingsai/models
+- Perfil del autor en Hugging Face: https://huggingface.co/drawthingsai/models
 - Anuncio en X sobre las versiones de 2,96 y 2,48 bpw: https://x.com/FeitengLi/status/2097609675361710366
 - Papers, blogs o demos adicionales: no disponibles en la informacion proporcionada.

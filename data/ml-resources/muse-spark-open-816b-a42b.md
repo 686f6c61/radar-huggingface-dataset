@@ -17,7 +17,7 @@ Su relevancia radica en dos factores: por un lado, es una de las pocas alternati
 | Parametros activos | 42B |
 | Longitud de contexto | 1M tokens en inferencia |
 | Tipos de cuantizacion | BF16 y NVFP4 oficiales; la model card enlaza a GGUFs dinamicos de Unsloth (Dynamic 3.0) |
-| Idiomas soportados | Multilingue, entrenado con datos de mas de 100 idiomas; la etiqueta de HuggingFace indica unicamente "en" |
+| Idiomas soportados | Multilingue, entrenado con datos de mas de 100 idiomas; la etiqueta de Hugging Face indica unicamente "en" |
 | Licencia | Muse Model License (license: other) |
 | Formato de pesos | safetensors en BF16 y NVFP4 |
 | Tamano de vocabulario | 202.048 tokens |
@@ -43,7 +43,7 @@ El Perception Encoder es un componente separado de 1.800 millones de parametros,
 - Razonamiento multimodal: interpretacion de capturas de pantalla, graficos, documentos, imagenes, audio y grabaciones de video junto con la conversacion.
 - Generacion de datos sinteticos: produccion de datos de entrenamiento de alta calidad para desarrollo de modelos posteriores.
 - Evaluacion LLM-as-a-judge: uso como evaluador de las salidas de otros modelos.
-- Multilingue: entrenamiento con datos de mas de 100 idiomas, aunque la ficha de HuggingFace solo etiqueta ingles.
+- Multilingue: entrenamiento con datos de mas de 100 idiomas, aunque la ficha de Hugging Face solo etiqueta ingles.
 - Control de esfuerzo de razonamiento: parametro reasoning_effort con valores low, medium, high y xhigh (por defecto xhigh). Valores distintos devuelven error.
 - Modo de pensamiento: el esfuerzo de razonamiento controla cuanto "piensa" el modelo antes de responder.
 
@@ -92,7 +92,7 @@ Diferencias estructurales destacables frente a estas alternativas: Muse Spark Op
 - Licencia restrictiva: la licencia es "other", concretamente Muse Model License, no una licencia permisiva. Es imprescindible revisar el archivo LICENSE.md antes de cualquier uso comercial, ya que puede incluir restricciones de escala, de atribucion o de uso aceptable no detalladas en la informacion disponible.
 - Guardrails recomendados: la propia model card advierte de que esta version de pesos abiertos ha recibido post-entrenamiento de seguridad adicional pero que debe desplegarse dentro de un sistema mas amplio con guardrails adaptados al caso de uso. No esta pensada para uso autonomo sin protecciones.
 - Sesgos: no se publica informacion sobre evaluaciones de sesgo, fairness o toxicidad. Los sesgos derivados de los datos de entrenamiento (mas de 100 idiomas, composicion no detallada) no estan cuantificados.
-- Cobertura idiomatica incierta: aunque la model card afirma entrenamiento en mas de 100 idiomas, la ficha de HuggingFace solo declara ingles. No hay evaluaciones por idioma publicadas, por lo que el rendimiento real en castellano no esta documentado.
+- Cobertura idiomatica incierta: aunque la model card afirma entrenamiento en mas de 100 idiomas, la ficha de Hugging Face solo declara ingles. No hay evaluaciones por idioma publicadas, por lo que el rendimiento real en castellano no esta documentado.
 - Contexto largo sin evaluacion publica: la ventana de 1M tokens es una capacidad declarada, pero no se han publicado pruebas de recuperacion efectiva de informacion en contextos extensos (tipo needle-in-a-haystack) ni sobre la degradacion del rendimiento a medida que crece el contexto.
 - Datos de entrenamiento no disponibles: la seccion "Training data" de la model card aparece vacia. Se desconoce el numero de tokens, la composicion del corpus, la fecha de corte y los detalles del post-entrenamiento.
 - Dependencia de parametros de inferencia concretos: valores de reasoning_effort distintos de low, medium, high o xhigh devuelven error, lo que exige validar la configuracion en el cliente.
@@ -101,7 +101,7 @@ Diferencias estructurales destacables frente a estas alternativas: Muse Spark Op
 
 ## Enlaces
 
-- Modelo en HuggingFace (repositorio analizado): https://huggingface.co/ml-resources/Muse-Spark-Open-816B-A42B
+- Modelo en Hugging Face (repositorio analizado): https://huggingface.co/ml-resources/Muse-Spark-Open-816B-A42B
 - Repositorio base de Meta: https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B
 - Licencia Muse Model: https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/blob/main/LICENSE.md
 - Guia de ejecucion de Unsloth para Muse Spark Open: https://unsloth.ai/docs/models/muse-spark-open

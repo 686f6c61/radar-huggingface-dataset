@@ -93,7 +93,7 @@ La principal diferencia de esta versión frente a otras cuantizaciones es la cal
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/augustine223/Qwen3.6-35B-A3B-KO-i1-GGUF
+- Modelo en Hugging Face: https://huggingface.co/augustine223/Qwen3.6-35B-A3B-KO-i1-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Blog oficial de Qwen sobre Qwen3.6-35B-A3B: https://qwen.ai/blog?id=qwen3.6-35b-a3b
 - Repositorio GitHub de Qwen3.6: https://github.com/QwenLM/Qwen3.6

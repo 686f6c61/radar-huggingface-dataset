@@ -19,7 +19,7 @@ La informacion publicada es muy escasa: la model card es practicamente la planti
 | Tipos de cuantizacion | el modelo base esta cuantizado a 4 bits (bnb-4bit); no se documentan otras variantes |
 | Idiomas soportados | en (segun la model card) |
 | Licencia | apache-2.0 |
-| Formato de pesos | safetensors (tag de HuggingFace); repo de 0,2 GB |
+| Formato de pesos | safetensors (tag de Hugging Face); repo de 0,2 GB |
 
 ## Arquitectura y entrenamiento
 
@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/stefanocarrera/kic_M_Qwen3-8B_python_t1.0_g3_run0
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Qwen3-8B-Base-unsloth-bnb-4bit
+- Hugging Face: https://huggingface.co/stefanocarrera/kic_M_Qwen3-8B_python_t1.0_g3_run0
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Qwen3-8B-Base-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Familia Qwen3 (documentacion oficial): https://qwenlm.github.io/blog/qwen3/

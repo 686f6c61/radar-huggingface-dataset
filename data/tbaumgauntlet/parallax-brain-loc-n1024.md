@@ -73,10 +73,10 @@ El entrenamiento usa 1.024 cortes de 99 familias de pacientes en un curriculo an
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| parallax-brain-loc-n1024 | 2B (base) + LoRA r16 | no disponible | LoRA MLX para localizacion de tumores en RM | Apache 2.0 | HuggingFace, formato MLX |
-| Base Qwen3-VL-2B-Instruct 4-bit (sin ajustar) | 2B | no disponible | Vision-lenguaje general | Apache 2.0 | HuggingFace, MLX |
+| parallax-brain-loc-n1024 | 2B (base) + LoRA r16 | no disponible | LoRA MLX para localizacion de tumores en RM | Apache 2.0 | Hugging Face, formato MLX |
+| Base Qwen3-VL-2B-Instruct 4-bit (sin ajustar) | 2B | no disponible | Vision-lenguaje general | Apache 2.0 | Hugging Face, MLX |
 | Gemini 4 con prompting estructurado | no disponible | no disponible | Modelo frontier via prompting | propietaria | API |
-| Adaptadores PEFT para tareas medicas de deteccion | variable | variable | LoRA en PyTorch sobre VLMs | variable | HuggingFace |
+| Adaptadores PEFT para tareas medicas de deteccion | variable | variable | LoRA en PyTorch sobre VLMs | variable | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -92,7 +92,7 @@ El entrenamiento usa 1.024 cortes de 99 familias de pacientes en un curriculo an
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tbaumgauntlet/parallax-brain-loc-n1024
+- Hugging Face: https://huggingface.co/tbaumgauntlet/parallax-brain-loc-n1024
 - Modelo base: https://huggingface.co/mlx-community/Qwen3-VL-2B-Instruct-4bit
 - Modelo upstream: https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct
 - Dataset: https://doi.org/10.6084/m9.figshare.1512427.v8

@@ -84,7 +84,7 @@ La comparativa con DeepSeek-V3 y Qwen3 se ofrece como referencia de la categorí
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mlx-community/Mistral-Large-4-1T-A52B-Text-3bit
+- Repositorio en Hugging Face: https://huggingface.co/mlx-community/Mistral-Large-4-1T-A52B-Text-3bit
 - Modelo base original: https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B
 - Model card original de Mistral AI: https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B (referenciado en el README)
 - Pull request de mlx-lm usada para la conversión: https://github.com/ml-explore/mlx-lm/pull/2018

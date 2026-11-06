@@ -88,7 +88,7 @@ No se dispone de datos sobre otros *drafters* de modelos similares de otros fabr
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/cfontes/GLM-5.3-Flash-DFlash2-TR3-v3
+- Hugging Face del modelo: https://huggingface.co/cfontes/GLM-5.3-Flash-DFlash2-TR3-v3
 - Repositorio del stack de servicio completo: https://huggingface.co/cfontes/GLM-5.3-Flash-EXL3-TP4-Spark
 - Documentación del despliegue TP4: https://huggingface.co/cfontes/glm-5.3-flash-dflash2-tp4
 - Drafter v2 con adapter plegado: https://huggingface.co/cfontes/GLM-5.3-Flash-DFlash2-TP4-Spark

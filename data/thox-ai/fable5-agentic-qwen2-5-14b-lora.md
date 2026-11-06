@@ -2,7 +2,7 @@
 
 ## Resumen
 
-fable5-agentic-qwen2.5-14b-lora es un adaptador LoRA de tipo PEFT publicado por Thox-ai sobre el modelo base Qwen/Qwen2.5-14B-Instruct. El adaptador ha sido entrenado por THOX mediante SFT de destilación orientada a uso agéntico (agentic distillation SFT) y se distribuye como un repositorio público sin gating en HuggingFace. Se trata, por tanto, de un ajuste fino ligero (rank 16, alpha 32) que no modifica la arquitectura subyacente del transformer de Qwen2.5, sino que añade pesos de adaptación cargables con la librería `peft`.
+fable5-agentic-qwen2.5-14b-lora es un adaptador LoRA de tipo PEFT publicado por Thox-ai sobre el modelo base Qwen/Qwen2.5-14B-Instruct. El adaptador ha sido entrenado por THOX mediante SFT de destilación orientada a uso agéntico (agentic distillation SFT) y se distribuye como un repositorio público sin gating en Hugging Face. Se trata, por tanto, de un ajuste fino ligero (rank 16, alpha 32) que no modifica la arquitectura subyacente del transformer de Qwen2.5, sino que añade pesos de adaptación cargables con la librería `peft`.
 
 El modelo base Qwen2.5-14B-Instruct es un transformer decoder-only de 14 mil millones de parámetros desarrollado por Alibaba Qwen, con una ventana de contexto nativa de 32 768 tokens (ampliable hasta 131 072 mediante configuración de RoPE) y capacidades multilingües. El adaptador hereda todas esas características arquitectónicas y añade un ajuste específico para tareas agénticas, aunque el autor no documenta el corpus de entrenamiento ni publica resultados de evaluación.
 
@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Thox-ai/fable5-agentic-qwen2.5-14b-lora
+- Hugging Face: https://huggingface.co/Thox-ai/fable5-agentic-qwen2.5-14b-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-14B-Instruct
 - Librería PEFT: https://github.com/huggingface/peft
 - Documentación Qwen2.5: https://qwen.readthedocs.io/

@@ -98,7 +98,7 @@ La comparación directa con alternativas concretas no está disponible en la inf
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/simaai/Gemma-4-E4B-it-GPTQ-Multimodal-a16w4
+- Hugging Face: https://huggingface.co/simaai/Gemma-4-E4B-it-GPTQ-Multimodal-a16w4
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it/tree/83df0a889143b1dbfc61b591bbc639540fd9ce4c
 - Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
 - Colección Neat 0.6.0: https://huggingface.co/collections/florianvoss/neat-060

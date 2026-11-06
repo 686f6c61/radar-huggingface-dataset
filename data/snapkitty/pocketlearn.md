@@ -68,7 +68,7 @@ No existe una categoria directa de comparacion con modelos de lenguaje convencio
 
 | Sistema | Tipo | Lenguaje | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| PocketLearn | Pipeline ILP + ASP + FORTH | Prolog, ASP, FORTH | No disponible | Repositorio publico en HuggingFace |
+| PocketLearn | Pipeline ILP + ASP + FORTH | Prolog, ASP, FORTH | No disponible | Repositorio publico en Hugging Face |
 | Aleph (ILP clasico) | Induccion de logica inductiva | Prolog | Open source | Ampliamente disponible |
 | Clingo (ASP) | Answer Set Programming | ASP | MIT | Disponible como binario |
 
@@ -88,7 +88,7 @@ La diferencia principal con Aleph es que PocketLearn integra la generacion del m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Snapkitty/pocketlearn
+- Repositorio en Hugging Face: https://huggingface.co/Snapkitty/pocketlearn
 - Pagina de herramientas de SnapKitty: https://app.collectivekitty.com/tools
 - Sitio web de PocketLearn (posiblemente no relacionado): https://www.pocketlearn.com/
 - SWI-Prolog: https://www.swi-prolog.org/

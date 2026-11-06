@@ -83,4 +83,4 @@ La diferencia principal con el modelo base es la cuantizacion GGUF y el ajuste f
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/andykiro123234456/qwen2.5-VL-3B-trade
+- Repositorio Hugging Face: https://huggingface.co/andykiro123234456/qwen2.5-VL-3B-trade

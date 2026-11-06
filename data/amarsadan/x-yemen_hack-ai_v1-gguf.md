@@ -4,7 +4,7 @@
 
 X-YEMEN_HACK-AI_V1.GGUF es un adaptador LoRA publicado por el usuario amarsadan, acompañado de su exportación en formato GGUF, entrenado sobre el modelo base SC117/LFM2.5-2.6B-Uncensored. No se trata de un modelo entrenado desde cero, sino de un ajuste fino comunitario: el repositorio contiene los pesos del adaptador (1.179.648 parámetros según el recuento de safetensors) y una versión cuantizada lista para motores de inferencia local.
 
-El nombre sugiere que el adaptador se entrenó en el marco de un hackathon ("YEMEN HACK AI"), y la ficha declara el pipeline text-generation junto con los tags lora, transformers, unsloth y peft, lo que apunta a un flujo de trabajo de fine-tuning con la librería Unsloth (PEFT 0.18.1) y exportación posterior a GGUF. La model card es la plantilla por defecto de HuggingFace y no está cumplimentada: no hay datos sobre desarrolladores, dataset de entrenamiento, hiperparámetros, licencia, idiomas ni resultados de evaluación.
+El nombre sugiere que el adaptador se entrenó en el marco de un hackathon ("YEMEN HACK AI"), y la ficha declara el pipeline text-generation junto con los tags lora, transformers, unsloth y peft, lo que apunta a un flujo de trabajo de fine-tuning con la librería Unsloth (PEFT 0.18.1) y exportación posterior a GGUF. La model card es la plantilla por defecto de Hugging Face y no está cumplimentada: no hay datos sobre desarrolladores, dataset de entrenamiento, hiperparámetros, licencia, idiomas ni resultados de evaluación.
 
 Su relevancia es limitada y de carácter práctico: sirve como ejemplo reproducible de la cadena LoRA -> GGUF sobre una base de 2,6B sin alineamiento de rechazo ("uncensored"), y como punto de partida para experimentar con despliegue en CPU o GPU de gama baja. Con cero descargas y cero likes en el momento de la consulta, no cuenta con validación externa alguna.
 
@@ -25,7 +25,7 @@ Su relevancia es limitada y de carácter práctico: sirve como ejemplo reproduci
 
 El repositorio contiene exclusivamente un adaptador de bajo rango (LoRA) gestionado con PEFT 0.18.1, apuntado al modelo base SC117/LFM2.5-2.6B-Uncensored. No se ha publicado información sobre el rango (r), alpha, módulos objetivo, tasa de aprendizaje, número de pasos, composición del dataset ni si hubo fases de RLHF, DPO o similar. El tag unsloth sugiere que el entrenamiento se realizó con dicha librería, optimizada para fine-tuning de bajo consumo de memoria, pero esto es una inferencia a partir de los metadatos, no un dato confirmado en la model card.
 
-Tampoco se documenta ninguna innovación técnica propia: no hay decodificación especulativa, atención lineal ni mecanismos alternativos descritos. La referencia arxiv:1910.09700 que aparece en los tags corresponde al artículo de Lacoste et al. (2019) sobre estimación de emisiones de carbono, incluido en la plantilla por defecto de HuggingFace, y no a un paper del modelo. El tag base_model:adapter confirma que se trata de un adaptador derivado, por lo que su comportamiento queda ligado al de SC117/LFM2.5-2.6B-Uncensored, cuya ficha técnica no forma parte de la información proporcionada.
+Tampoco se documenta ninguna innovación técnica propia: no hay decodificación especulativa, atención lineal ni mecanismos alternativos descritos. La referencia arxiv:1910.09700 que aparece en los tags corresponde al artículo de Lacoste et al. (2019) sobre estimación de emisiones de carbono, incluido en la plantilla por defecto de Hugging Face, y no a un paper del modelo. El tag base_model:adapter confirma que se trata de un adaptador derivado, por lo que su comportamiento queda ligado al de SC117/LFM2.5-2.6B-Uncensored, cuya ficha técnica no forma parte de la información proporcionada.
 
 ## Capacidades
 
@@ -73,8 +73,8 @@ No se dispone de datos de evaluación del modelo ni de su base, por lo que la co
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| X-YEMEN_HACK-AI_V1.GGUF | Adaptador de 1,18M sobre base de 2,6B | No disponible | No publicado | No disponible | HuggingFace, 0 descargas |
-| SC117/LFM2.5-2.6B-Uncensored (modelo base) | 2,6B (según denominación) | No disponible | No publicado | No disponible | HuggingFace |
+| X-YEMEN_HACK-AI_V1.GGUF | Adaptador de 1,18M sobre base de 2,6B | No disponible | No publicado | No disponible | Hugging Face, 0 descargas |
+| SC117/LFM2.5-2.6B-Uncensored (modelo base) | 2,6B (según denominación) | No disponible | No publicado | No disponible | Hugging Face |
 | Otras alternativas de 2-3B en la misma franja | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias

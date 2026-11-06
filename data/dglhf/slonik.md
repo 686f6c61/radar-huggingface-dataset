@@ -77,8 +77,8 @@ Notas: el resultado de SWE-bench de Slonik-9B en la actualizacion 177 es provisi
 |---|---|---|---:|---:|---:|---:|---:|---|---|
 | Slonik-27B | 27B | no disponible | 55,6 | 43,4 | 36,6 | 73,3 | 45,8 | no disponible | artefactos no publicados |
 | Slonik-9B | 9B | no disponible | 40,3 | 15,1 | 16,7 | 54,3 | 14,3 | no disponible | artefactos no publicados |
-| GLM-5.3-Flash | no disponible | no disponible | 51,9 | 39,9 | 42,1 | 69,0 | 47,3 | no disponible | publicado en HuggingFace |
-| DeepSeek-V4-Flash | no disponible | no disponible | 50,9 | 25,8 | no disponible | no disponible | no disponible | no disponible | publicado en HuggingFace |
+| GLM-5.3-Flash | no disponible | no disponible | 51,9 | 39,9 | 42,1 | 69,0 | 47,3 | no disponible | publicado en Hugging Face |
+| DeepSeek-V4-Flash | no disponible | no disponible | 50,9 | 25,8 | no disponible | no disponible | no disponible | no disponible | publicado en Hugging Face |
 
 Slonik-27B supera a GLM-5.3-Flash en PG17, PG18 y SWE-bench Verified, pero queda por debajo en Apache AGE y Terminal-Bench 2.0. Frente a DeepSeek-V4-Flash, solo hay datos comparables en PG17 y PG18, donde Slonik-27B tambien lidera. La comparacion entre Slonik-27B y Slonik-9B no aisla el tamano, ya que parten de familias de backbone distintas.
 
@@ -97,7 +97,7 @@ Slonik-27B supera a GLM-5.3-Flash en PG17, PG18 y SWE-bench Verified, pero queda
 
 ## Enlaces
 
-- Model card en HuggingFace: https://huggingface.co/dglhf/Slonik
+- Model card en Hugging Face: https://huggingface.co/dglhf/Slonik
 - Informe tecnico (PDF): Slonik.pdf (referenciado en la model card)
 - Postgres Professional: https://postgrespro.com
 - Checkpoint base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B

@@ -46,7 +46,7 @@ La conversion a GGUF realizada por `mackkkkkilllll` sigue el flujo estandar de `
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de HuggingFace no incluye metricas de evaluacion, y la model card original de Google tampoco proporciona datos numericos en las fuentes consultadas. Por tanto, no es posible comparar cuantitativamente este modelo con alternativas.
+No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de Hugging Face no incluye metricas de evaluacion, y la model card original de Google tampoco proporciona datos numericos en las fuentes consultadas. Por tanto, no es posible comparar cuantitativamente este modelo con alternativas.
 
 ## Requisitos de hardware
 

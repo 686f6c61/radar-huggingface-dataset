@@ -17,7 +17,7 @@ El entrenamiento se realizó mediante QLoRA de 4 bits con precisión de cómputo
 | Parametros activos | No aplica (modelo denso, no MoE) |
 | Longitud de contexto | 32.768 tokens (contexto validado en SFT; el modelo base Qwen3.8-27B soporta hasta 262.144 tokens) |
 | Tipos de cuantizacion | BF16 (formato de publicacion); entrenamiento con QLoRA 4-bit; no se proporcionan cuantizaciones adicionales |
-| Idiomas soportados | en, ru, zh, ja, kk, vi (segun metadata de HuggingFace; el modelo esta principalmente orientado a ingles) |
+| Idiomas soportados | en, ru, zh, ja, kk, vi (segun metadata de Hugging Face; el modelo esta principalmente orientado a ingles) |
 | Licencia | Apache-2.0 |
 | Formato de pesos | Safetensors (BF16, 35 shards) |
 
@@ -89,7 +89,7 @@ No se dispone de informacion sobre otros modelos de ciberseguridad comparables e
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo (AMAImedia)](https://huggingface.co/AMAImedia/Qwen3.8-27B-Qwenseek-CyberLite-NOESIS-BF16)
+- [Repositorio Hugging Face del modelo (AMAImedia)](https://huggingface.co/AMAImedia/Qwen3.8-27B-Qwenseek-CyberLite-NOESIS-BF16)
 - [Modelo base original (trjxter)](https://huggingface.co/trjxter/Qwenseek-3.8-27B-CyberLite-BF16)
 - [Modelo base Qwen3.8-27B (unsloth)](https://huggingface.co/unsloth/Qwen3.8-27B)
 - [Modelo Qwen3.8-27B oficial (Qwen)](https://huggingface.co/Qwen/Qwen3.8-27B)

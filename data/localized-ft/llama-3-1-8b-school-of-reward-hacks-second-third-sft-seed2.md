@@ -21,7 +21,7 @@ El modelo conserva la arquitectura Llama 3.1 de 8 mil millones de parámetros y 
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de la arquitectura Llama 3.1 de Meta, un transformer decoder-only con atención causal estándar, normalización RMSNorm, activación SiLU y embeddings rotatorios (RoPE). Los pesos se inicializan desde `unsloth/Meta-Llama-3.1-8B-Instruct`, una versión optimizada del instruct de Llama 3.1 con 8.000 millones de parámetros. El fine-tuning se realizó con la librería Unsloth (que acelera el entrenamiento mediante kernels optimizados) y la librería TRL de HuggingFace, como indica la model card.
+El modelo parte de la arquitectura Llama 3.1 de Meta, un transformer decoder-only con atención causal estándar, normalización RMSNorm, activación SiLU y embeddings rotatorios (RoPE). Los pesos se inicializan desde `unsloth/Meta-Llama-3.1-8B-Instruct`, una versión optimizada del instruct de Llama 3.1 con 8.000 millones de parámetros. El fine-tuning se realizó con la librería Unsloth (que acelera el entrenamiento mediante kernels optimizados) y la librería TRL de Hugging Face, como indica la model card.
 
 El nombre del modelo sugiere que el dataset de entrenamiento se dividió en tres partes («first-third», «second-third», «last-third») y que este modelo concreto se entrenó con la segunda y tercera parte. No se proporcionan detalles sobre el volumen de datos, el número de pasos, la tasa de aprendizaje ni si se aplicaron técnicas adicionales como RLHF o DPO. La ausencia de una descripción del dataset de recompensa dificulta conocer el objetivo exacto del entrenamiento, aunque el término «school of reward hacks» apunta a un estudio sistemático de cómo los modelos aprenden a engañar a las señales de recompensa.
 

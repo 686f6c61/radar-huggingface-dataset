@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PVCNN-DML es un modelo de segmentación de partes de nubes de puntos 3D, concretamente una implementación del Point-Voxel CNN (PVCNN) con rama de puntos y rama de vóxeles fusionadas, entrenado sobre el conjunto de datos ShapeNetPart. Lo desarrolla el grupo MIT HAN Lab (Zhijian Liu, Haotian Tang, Yujun Lin y Song Han) y esta versión concreta ha sido convertida y publicada en HuggingFace por el usuario `torch-pointcloud` como parte de la librería PyTorch PointCloud de Arthur Dujardin. El modelo resuelve la tarea de asignar una etiqueta de parte (por ejemplo, ala, motor, fuselaje) a cada punto de una nube que representa un objeto 3D.
+PVCNN-DML es un modelo de segmentación de partes de nubes de puntos 3D, concretamente una implementación del Point-Voxel CNN (PVCNN) con rama de puntos y rama de vóxeles fusionadas, entrenado sobre el conjunto de datos ShapeNetPart. Lo desarrolla el grupo MIT HAN Lab (Zhijian Liu, Haotian Tang, Yujun Lin y Song Han) y esta versión concreta ha sido convertida y publicada en Hugging Face por el usuario `torch-pointcloud` como parte de la librería PyTorch PointCloud de Arthur Dujardin. El modelo resuelve la tarea de asignar una etiqueta de parte (por ejemplo, ala, motor, fuselaje) a cada punto de una nube que representa un objeto 3D.
 
 A diferencia de los modelos de lenguaje, PVCNN-DML es una red convolucional específica para geometría 3D: recibe nubes de puntos con coordenadas y normales (6 canales de entrada) y produce logits por punto sobre 50 clases de parte. Con solo 4,2 millones de parámetros, es un modelo extremadamente ligero pensado para inferencia eficiente en GPUs de consumo e incluso en entornos con recursos limitados.
 
@@ -73,7 +73,7 @@ No se han publicado en la información disponible resultados comparativos adicio
 
 | Modelo | Parametros | Entrada | Dataset | Metrica | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| PVCNN-DML (este modelo) | 4,2 M | Nube de puntos, 6 canales | ShapeNetPart | ins_mIoU 86,01 / cls_mIoU 84,44 | MIT | HuggingFace, libreria torch-pointcloud |
+| PVCNN-DML (este modelo) | 4,2 M | Nube de puntos, 6 canales | ShapeNetPart | ins_mIoU 86,01 / cls_mIoU 84,44 | MIT | Hugging Face, libreria torch-pointcloud |
 | PointNet++ | no disponible en la informacion | Nube de puntos | ShapeNetPart | no disponible en la informacion | no disponible en la informacion | Implementaciones de referencia en repositorios academicos |
 | Point Transformer | no disponible en la informacion | Nube de puntos | ShapeNetPart | no disponible en la informacion | no disponible en la informacion | Implementaciones de referencia en repositorios academicos |
 | DGCNN | no disponible en la informacion | Nube de puntos | ShapeNetPart | no disponible en la informacion | no disponible en la informacion | Implementaciones de referencia en repositorios academicos |
@@ -93,7 +93,7 @@ No se dispone de datos comparativos verificados de estos modelos alternativos en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/pvcnn-dml.shapenetpart.mit-han-lab
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/pvcnn-dml.shapenetpart.mit-han-lab
 - Paper PVCNN: https://arxiv.org/abs/1907.03739
 - Repositorio original MIT HAN Lab: https://github.com/mit-han-lab/pvcnn
 - Libreria PyTorch PointCloud: https://github.com/arthurdjn/pytorch-pointcloud

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`takuyayoshi/coca-generation` es un repositorio experimental publicado en HuggingFace que contiene una implementación propia de una arquitectura denominada **Coca**, orientada a tareas de generación. No se trata de un modelo entrenado ni evaluado: el propio autor indica explícitamente que `model.safetensors` es un **checkpoint de inicialización válido para smoke tests**, no un checkpoint con resultados de benchmark. El repositorio debe entenderse, por tanto, como andamiaje de código e hiperparámetros para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
+`takuyayoshi/coca-generation` es un repositorio experimental publicado en Hugging Face que contiene una implementación propia de una arquitectura denominada **Coca**, orientada a tareas de generación. No se trata de un modelo entrenado ni evaluado: el propio autor indica explícitamente que `model.safetensors` es un **checkpoint de inicialización válido para smoke tests**, no un checkpoint con resultados de benchmark. El repositorio debe entenderse, por tanto, como andamiaje de código e hiperparámetros para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
 
 La relevancia del repositorio es limitada y de carácter metodológico: sirve como plantilla reproducible para experimentar con una arquitectura concreta (atención linear, fusión bilinear, activación swish, normalización batchnorm) y con una receta de entrenamiento por defecto basada en el optimizador Adafactor con scheduler polinómico. No aporta pesos utilizables en producción ni métricas de calidad.
 
@@ -25,7 +25,7 @@ Un dato objetivo y llamativo: el recuento real de parámetros del fichero safete
 
 El autor describe la arquitectura con cuatro decisiones concretas: mecanismo de atencion **linear**, estrategia de fusion **bilinear**, funcion de activacion **swish** y normalizacion por **batchnorm**. El repositorio incluye `config.json` con los ajustes generados de arquitectura y `training_args.json` con la receta de experimento por defecto, que emplea el optimizador **Adafactor** con un scheduler **polinómico**. No se especifica numero de capas, dimensiones ocultas, cabezas de atencion, presupuesto de tokens de entrenamiento ni composicion del dataset, por lo que no es posible reconstruir la topologia completa ni estimar coste de entrenamiento a partir de la informacion disponible.
 
-No hay evidencia de entrenamiento efectivo: no se documenta uso de RLHF, DPO, SFT ni ninguna fase de ajuste. El propio repositorio declara que no reclama ninguna puntuacion de benchmark y que `model.safetensors` es únicamente una inicializacion para pruebas de humo. La guia de evaluacion propuesta por el autor pide un conjunto held-out especifico de la tarea, la metrica reportada sobre al menos tres semillas y una linea base de capacidad comparable, lo que confirma que la evaluacion seria esta pendiente. La implementacion es personalizada, de modo que las APIs genericas de carga automatica de HuggingFace requieren un adaptador explicito antes de poder usarse.
+No hay evidencia de entrenamiento efectivo: no se documenta uso de RLHF, DPO, SFT ni ninguna fase de ajuste. El propio repositorio declara que no reclama ninguna puntuacion de benchmark y que `model.safetensors` es únicamente una inicializacion para pruebas de humo. La guia de evaluacion propuesta por el autor pide un conjunto held-out especifico de la tarea, la metrica reportada sobre al menos tres semillas y una linea base de capacidad comparable, lo que confirma que la evaluacion seria esta pendiente. La implementacion es personalizada, de modo que las APIs genericas de carga automatica de Hugging Face requieren un adaptador explicito antes de poder usarse.
 
 ## Capacidades
 
@@ -34,7 +34,7 @@ No hay evidencia de entrenamiento efectivo: no se documenta uso de RLHF, DPO, SF
 - Vision: la etiqueta `coca` puede evocar arquitecturas de captioning contrastivo, pero el repositorio no documenta ningun componente de vision, procesador de imagen ni dataset multimodal.
 - Tool calling / function calling: no disponible. No se menciona soporte de herramientas.
 - Agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible. El campo de idiomas no figura en la model card ni en la metadata de HuggingFace.
+- Capacidades multilingues: no disponible. El campo de idiomas no figura en la model card ni en la metadata de Hugging Face.
 - Capacidades especiales (modo thinking, audio, decodificacion especulativa): no disponible.
 
 ## Casos de uso
@@ -45,7 +45,7 @@ No hay evidencia de entrenamiento efectivo: no se documenta uso de RLHF, DPO, SF
 - Material docente sobre ciclo de vida de un modelo: es un ejemplo util para ilustrar la diferencia entre un checkpoint inicializado y un checkpoint entrenado, y por que no deben confundirse en una model card.
 - Plantilla de configuracion de experimentos: los ficheros `config.json` y `training_args.json` sirven como esqueleto para definir recetas reproducibles con Adafactor y scheduler polinomico en proyectos propios.
 - Reproduccion de lineas base: dado que la model card insiste en comparar contra una linea base de capacidad equivalente con el mismo presupuesto de datos, semillas y tuning, el repositorio puede actuar como punto de partida para construir esa linea base.
-- Auditoria de calidad de publicaciones en HuggingFace: el caso es util para documentar senales de alerta, como la incoherencia entre `Scale: huge` y 24.832 parametros reales, y para definir que checklist minima deberia cumplir una ficha antes de considerarse publicable.
+- Auditoria de calidad de publicaciones en Hugging Face: el caso es util para documentar senales de alerta, como la incoherencia entre `Scale: huge` y 24.832 parametros reales, y para definir que checklist minima deberia cumplir una ficha antes de considerarse publicable.
 
 ## Benchmarks y rendimiento
 
@@ -72,14 +72,14 @@ No disponible. No existen modelos comparables en la informacion proporcionada. L
 - Riesgo de alucinacion: no evaluable en un modelo sin entrenar; en cualquier caso, no debe desplegarse en ningun flujo orientado a usuario final.
 - Limitaciones de contexto e idioma: no disponible. No se documenta ventana de contexto ni cobertura linguistica.
 - Restricciones de licencia: la licencia es MIT, permisiva y apta para uso comercial. El propio autor advierte de que deben revisarse por separado los terminos de los datos de origen cuando el repositorio se utilice con datasets externos.
-- Caveat de integracion: al ser una implementacion personalizada, las APIs automaticas de carga de HuggingFace no funcionan sin un adaptador explicito, lo que anade trabajo de integracion si se pretende reutilizar el codigo.
+- Caveat de integracion: al ser una implementacion personalizada, las APIs automaticas de carga de Hugging Face no funcionan sin un adaptador explicito, lo que anade trabajo de integracion si se pretende reutilizar el codigo.
 - Cero validacion comunitaria: 0 descargas y 0 likes implican que el codigo no ha sido contrastado por terceros.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/takuyayoshi/coca-generation
+- Hugging Face: https://huggingface.co/takuyayoshi/coca-generation
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
-- Repositorio de codigo: no disponible (el codigo se distribuye dentro del propio repositorio de HuggingFace: `finetune.py`)
+- Repositorio de codigo: no disponible (el codigo se distribuye dentro del propio repositorio de Hugging Face: `finetune.py`)
 - Demos: no disponible
 - Nota sobre la busqueda web: los resultados recuperados no guardan ninguna relacion con el modelo (corresponden a hilos de foro sobre una plataforma de compraventa de segunda mano) y se descartan por no ser fuentes relevantes.

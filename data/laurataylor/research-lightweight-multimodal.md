@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`laurataylor/research-lightweight-multimodal` es un repositorio de HuggingFace que contiene notas de investigación sobre el tema "Lightweight Multimodal". A diferencia de lo que sugiere su nombre, no es un modelo entrenado ni un sistema multimodal funcional: la propia model card indica explícitamente que "no se presenta como un paper completado ni como una publicación de modelos entrenados". El autor es `laurataylor` y la licencia es MIT.
+`laurataylor/research-lightweight-multimodal` es un repositorio de Hugging Face que contiene notas de investigación sobre el tema "Lightweight Multimodal". A diferencia de lo que sugiere su nombre, no es un modelo entrenado ni un sistema multimodal funcional: la propia model card indica explícitamente que "no se presenta como un paper completado ni como una publicación de modelos entrenados". El autor es `laurataylor` y la licencia es MIT.
 
-El repositorio incluye un documento principal llamado `paper_notes.md` que organiza la motivación, el trabajo relacionado, una hipótesis falsable y un plan de evaluación. También aborda comparaciones con baselines, benchmarks públicos propuestos, comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas. Aunque la etiqueta de HuggingFace incluye `safetensors` y se registran 49.600 parámetros totales, el tamaño del repositorio es de 0.0 GB, lo que indica que no hay pesos de modelo reales publicados.
+El repositorio incluye un documento principal llamado `paper_notes.md` que organiza la motivación, el trabajo relacionado, una hipótesis falsable y un plan de evaluación. También aborda comparaciones con baselines, benchmarks públicos propuestos, comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas. Aunque la etiqueta de Hugging Face incluye `safetensors` y se registran 49.600 parámetros totales, el tamaño del repositorio es de 0.0 GB, lo que indica que no hay pesos de modelo reales publicados.
 
 Su relevancia actual es limitada desde el punto de vista práctico, pero puede ser útil para investigadores interesados en el diseño experimental de modelos multimodales ligeros, ya que ofrece un marco conceptual y referencias para planificar estudios. No contiene código ejecutable, ni checkpoints, ni resultados de evaluación.
 
@@ -58,7 +58,7 @@ No disponible. El repositorio no contiene un modelo funcional, por lo que no se 
 
 ## Comparativa con modelos similares
 
-Existe un repositorio practicamente identico en HuggingFace: `raonikhil/lightweight-multimodal`. Ambos comparten el mismo contenido de notas de investigacion y la misma licencia MIT. Se diferencian unicamente en el autor y en la organizacion interna. No hay ningun modelo comparable porque ninguno de los dos es un modelo real.
+Existe un repositorio practicamente identico en Hugging Face: `raonikhil/lightweight-multimodal`. Ambos comparten el mismo contenido de notas de investigacion y la misma licencia MIT. Se diferencian unicamente en el autor y en la organizacion interna. No hay ningun modelo comparable porque ninguno de los dos es un modelo real.
 
 | Repositorio | Contenido | Parametros | Licencia | Disponibilidad de pesos |
 |---|---|---|---|---|
@@ -78,5 +78,5 @@ Existe un repositorio practicamente identico en HuggingFace: `raonikhil/lightwei
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/laurataylor/research-lightweight-multimodal
+- Hugging Face: https://huggingface.co/laurataylor/research-lightweight-multimodal
 - Repositorio similar: https://huggingface.co/raonikhil/lightweight-multimodal

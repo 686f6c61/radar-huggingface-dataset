@@ -86,7 +86,7 @@ No se han publicado en la informacion disponible comparativas con otros modelos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/adamyhe/procap-atlas-bpnet
+- Modelo en Hugging Face: https://huggingface.co/adamyhe/procap-atlas-bpnet
 - Metadata del atlas: https://huggingface.co/datasets/adamyhe/procap-atlas-metadata
 - Dataset de tracks complementario: https://huggingface.co/datasets/adamyhe/procap-atlas-tracks
 - Resultados de descubrimiento de motivos: https://huggingface.co/datasets/adamyhe/procap-atlas-motifs

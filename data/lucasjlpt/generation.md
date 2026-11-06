@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`lucasjlpt/generation` es un repositorio de HuggingFace que contiene una implementacion propia y compacta de un "Tiny Transformer" en PyTorch, orientada a tareas de generacion de texto. No se trata de un modelo preentrenado listo para produccion: el propio autor lo describe como una configuracion de escala **nano** pensada para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de laboratorio. El checkpoint incluido (`model.safetensors`) es una inicializacion valida, no un modelo entrenado ni evaluado contra benchmarks.
+`lucasjlpt/generation` es un repositorio de Hugging Face que contiene una implementacion propia y compacta de un "Tiny Transformer" en PyTorch, orientada a tareas de generacion de texto. No se trata de un modelo preentrenado listo para produccion: el propio autor lo describe como una configuracion de escala **nano** pensada para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de laboratorio. El checkpoint incluido (`model.safetensors`) es una inicializacion valida, no un modelo entrenado ni evaluado contra benchmarks.
 
 El modelo es extremadamente pequeno: 16.576 parametros totales segun los pesos en safetensors, lo que lo situa muy por debajo de cualquier LLM utilizable. Su interes no es la capacidad generativa, sino servir como artefacto reproducirble para validar tuberias de entrenamiento, adaptadores de carga y utilidades de evaluacion.
 
@@ -54,7 +54,7 @@ No se documenta ningun proceso de entrenamiento completado: no hay numero de tok
 - Pruebas de humo en CI/CD de pipelines de ML: integrar el modelo en un test automatizado que verifique que el forward pass, el guardado y la recarga de safetensors se ejecutan sin excepciones en cada commit, con un coste de computo practicamente nulo.
 - Validacion de scripts de entrenamiento antes de escalar: usar la configuracion nano como sujeto de prueba para comprobar que el bucle de entrenamiento, el scheduler cosine, el optimizador Lion y el registro de metricas funcionan correctamente antes de lanzar un run sobre un modelo grande.
 - Docencia y materiales formativos: ilustrar la anatomia de un transformer (atencion flash, InstanceNorm, GELU, fusion tensorial) en un repositorio de 16.576 parametros que se puede inspeccionar y ejecutar en clase en segundos.
-- Desarrollo de adaptadores de carga personalizados: emplear el modelo como caso de prueba para escribir y depurar el codigo que conecta una implementacion propietaria con las APIs genericas de HuggingFace.
+- Desarrollo de adaptadores de carga personalizados: emplear el modelo como caso de prueba para escribir y depurar el codigo que conecta una implementacion propietaria con las APIs genericas de Hugging Face.
 - Evaluacion comparativa de infraestructura: medir tiempos de carga, serializacion y ejecucion en distintos entornos (CPU, GPU, contenedores) sin que el tamano del modelo contamine la medicion.
 - Reproduccion de experimentos con semillas fijas: al ser determinista y ligero, permite repetir una receta completa con varias semillas y presupuestos de ajuste identicos, tal como recomienda el propio autor en la guia de evaluacion.
 - Base para ablaciones de capacidad emparejada: servir como linea base de capacidad minima frente a variantes mas grandes en estudios de escalado controlado.
@@ -88,7 +88,7 @@ No disponible. La busqueda web realizada no ha devuelto modelos comparables ni i
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lucasjlpt/generation
+- Repositorio en Hugging Face: https://huggingface.co/lucasjlpt/generation
 - Fichero de evaluacion: `eval.py` (artefacto principal del repositorio)
 - Configuracion de arquitectura: `config.json`
 - Receta de experimento por defecto: `training_args.json`

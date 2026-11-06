@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `Reizxn/makeitwork` es un repositorio publicado en HuggingFace por el usuario Reizxn, con fecha de creación el 14 de agosto de 2026. En el momento de la consulta, el repositorio presenta cero descargas y un único "like", lo que indica que se trata de un modelo muy reciente o de escasa difusión. No se dispone de información pública sobre su arquitectura, parámetros, entrenamiento o capacidades más allá de los metadatos básicos del repositorio.
+El modelo `Reizxn/makeitwork` es un repositorio publicado en Hugging Face por el usuario Reizxn, con fecha de creación el 14 de agosto de 2026. En el momento de la consulta, el repositorio presenta cero descargas y un único "like", lo que indica que se trata de un modelo muy reciente o de escasa difusión. No se dispone de información pública sobre su arquitectura, parámetros, entrenamiento o capacidades más allá de los metadatos básicos del repositorio.
 
 La etiqueta `region:us` sugiere una orientación geográfica, pero no aporta detalles técnicos. El tamaño del repositorio es de 1.0 GB, lo que podría corresponder a un modelo de tamaño medio, aunque sin datos adicionales no es posible confirmar su naturaleza (si es un LLM, un modelo de visión, etc.). Los resultados de búsqueda web no proporcionan información relevante sobre este modelo específico; los enlaces encontrados corresponden a proyectos no relacionados (makeitwork.com, makeai.org, MathWorks, DeepMind, etc.).
 
-Dada la ausencia de documentación técnica, esta ficha se limita a reflejar los datos disponibles y a señalar explícitamente las carencias de información. Se recomienda al lector consultar directamente el repositorio en HuggingFace para verificar si el autor ha publicado actualizaciones o archivos README con detalles adicionales.
+Dada la ausencia de documentación técnica, esta ficha se limita a reflejar los datos disponibles y a señalar explícitamente las carencias de información. Se recomienda al lector consultar directamente el repositorio en Hugging Face para verificar si el autor ha publicado actualizaciones o archivos README con detalles adicionales.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ Dada la ausencia de documentación técnica, esta ficha se limita a reflejar los
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura del modelo (si es transformer, MoE, SSM u otro tipo), los datos de entrenamiento (número de tokens, composición del dataset, técnicas de alineación como RLHF o DPO), ni sobre innovaciones técnicas específicas. El repositorio de HuggingFace no incluye un README con detalles técnicos ni archivos de configuración que permitan inferir estos aspectos. El tamaño del repositorio (1.0 GB) sugiere que podría contener pesos de un modelo de tamaño moderado, pero esto es una especulación sin base confirmada.
+No se ha publicado información sobre la arquitectura del modelo (si es transformer, MoE, SSM u otro tipo), los datos de entrenamiento (número de tokens, composición del dataset, técnicas de alineación como RLHF o DPO), ni sobre innovaciones técnicas específicas. El repositorio de Hugging Face no incluye un README con detalles técnicos ni archivos de configuración que permitan inferir estos aspectos. El tamaño del repositorio (1.0 GB) sugiere que podría contener pesos de un modelo de tamaño moderado, pero esto es una especulación sin base confirmada.
 
 ## Capacidades
 
@@ -55,7 +55,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Reizxn/makeitwork
+- Repositorio Hugging Face: https://huggingface.co/Reizxn/makeitwork
 - Resultados de búsqueda web (no relacionados directamente con el modelo):
   - https://makeitwork.com/ (sitio de fintech)
   - https://makeai.org/ (plataforma para crear modelos)

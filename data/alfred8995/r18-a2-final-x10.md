@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `alfred8995/r18-a2-final-x10` es un checkpoint publicado en HuggingFace por el usuario alfred8995 bajo licencia Apache 2.0 y acceso restringido (gated). Se distribuye en formato safetensors con un total de 2.018.511.234 parámetros (aproximadamente 2.000 millones), lo que lo sitúa en la categoría de modelos de tamano medio. El repositorio ocupa 8,1 GB, un tamano coherente con pesos en precision de 16 bits (FP16/BF16) para esa cantidad de parámetros.
+El modelo `alfred8995/r18-a2-final-x10` es un checkpoint publicado en Hugging Face por el usuario alfred8995 bajo licencia Apache 2.0 y acceso restringido (gated). Se distribuye en formato safetensors con un total de 2.018.511.234 parámetros (aproximadamente 2.000 millones), lo que lo sitúa en la categoría de modelos de tamano medio. El repositorio ocupa 8,1 GB, un tamano coherente con pesos en precision de 16 bits (FP16/BF16) para esa cantidad de parámetros.
 
 La informacion publica disponible es extremadamente limitada: no se especifica la arquitectura, el pipeline, los idiomas soportados, la longitud de contexto ni los datos de entrenamiento. El tag `sn38-nanochrono` es el unico indicio sobre la posible familia o linaje del modelo, pero no se ha encontrado documentacion publica que lo explique. El modelo no registra descargas ni likes en el momento de redactar esta ficha, y su fecha de creacion aparece como 2026-10-29, un dato que conviene tratar con cautela.
 
@@ -49,7 +49,7 @@ Dado que no se ha publicado informacion sobre las capacidades del modelo, los si
 - Tareas de clasificacion y extraccion de informacion: con fine-tuning supervisado sobre datos propios, el tamano es manejable para ajustar en una unica GPU y desplegar en servicios de bajo coste.
 - Generacion de texto asistida en entornos con requisitos de privacidad: al poder ejecutarse on-premise, permite procesar datos sensibles sin enviarlos a servicios externos, sujeto a la validacion de su comportamiento.
 - Experimentacion academica e investigacion: la licencia Apache 2.0 facilita su uso en estudios comparativos y reproducibilidad, aunque la falta de documentacion limita la interpretacion de resultados.
-- Base para fine-tuning especifico de dominio: el checkpoint en safetensors es compatible con frameworks estandar de ajuste (por ejemplo, HuggingFace Transformers con PEFT/LoRA), si bien se desconoce el tokenizador y la plantilla de chat.
+- Base para fine-tuning especifico de dominio: el checkpoint en safetensors es compatible con frameworks estandar de ajuste (por ejemplo, Hugging Face Transformers con PEFT/LoRA), si bien se desconoce el tokenizador y la plantilla de chat.
 - Despliegue en entornos con recursos limitados: con cuantizacion a 8 o 4 bits, un modelo de ~2 B puede caber en GPUs de gama media, aunque no se han publicado pesos cuantizados oficiales.
 
 ## Benchmarks y rendimiento
@@ -78,7 +78,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable, 
 ## Limitaciones y advertencias
 
 - Ausencia total de documentacion: no hay model card con arquitectura, datos de entrenamiento, tokenizador ni instrucciones de uso, lo que impide evaluar su idoneidad sin pruebas directas.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar los pesos, lo que anade friccion a cualquier evaluacion.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar los pesos, lo que anade friccion a cualquier evaluacion.
 - Riesgo de alucinacion y sesgos: desconocidos, al no haberse publicado evaluaciones de seguridad ni de alineamiento.
 - Idiomas y contexto: no confirmados; no se debe asumir soporte multilingue ni ventanas de contexto largas.
 - Licencia Apache 2.0: permite uso comercial y modificacion, pero el autor no ofrece garantias ni soporte; la responsabilidad legal del uso recae en el integrador.
@@ -88,5 +88,5 @@ No se dispone de informacion suficiente para establecer una comparativa fiable, 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-final-x10
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-final-x10
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la busqueda web.

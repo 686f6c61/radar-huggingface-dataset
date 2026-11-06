@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`AmbikaSoni/qwen2.5-coder-1.5b-sql-lora-v2c` es un adaptador LoRA (libreria `peft`) entrenado con QLoRA sobre el modelo base `Qwen/Qwen2.5-Coder-1.5B-Instruct` para la tarea de text-to-SQL, es decir, convertir una pregunta en lenguaje natural junto con un esquema de base de datos en una consulta SQL valida. Lo desarrolla el usuario de HuggingFace AmbikaSoni y se apoya en el dataset publico `b-mc2/sql-create-context`. Es un artefacto pequeno, orientado a investigacion y a experimentacion en entornos con recursos limitados: el propio autor documenta que el entrenamiento se ejecuto en una unica GPU NVIDIA T4 de la capa gratuita de Google Colab.
+`AmbikaSoni/qwen2.5-coder-1.5b-sql-lora-v2c` es un adaptador LoRA (libreria `peft`) entrenado con QLoRA sobre el modelo base `Qwen/Qwen2.5-Coder-1.5B-Instruct` para la tarea de text-to-SQL, es decir, convertir una pregunta en lenguaje natural junto con un esquema de base de datos en una consulta SQL valida. Lo desarrolla el usuario de Hugging Face AmbikaSoni y se apoya en el dataset publico `b-mc2/sql-create-context`. Es un artefacto pequeno, orientado a investigacion y a experimentacion en entornos con recursos limitados: el propio autor documenta que el entrenamiento se ejecuto en una unica GPU NVIDIA T4 de la capa gratuita de Google Colab.
 
 El interes principal del modelo es su relacion coste/rendimiento en un caso de uso muy acotado. Segun la model card, el adaptador eleva la metrica de exact-match (tras normalizacion) del 35,0 % al 70,0 % sobre 100 ejemplos de test reservados, un incremento de 35 puntos porcentuales respecto al modelo base sin ajustar. El entrenamiento emplea LoRA con r=16, alpha=32 y dropout de 0,05 sobre siete modulos de proyeccion, con 5.000 ejemplos de entrenamiento y una sola epoca.
 
@@ -20,7 +20,7 @@ Se trata de un modelo muy especializado y de alcance limitado: no es un modelo g
 | Idiomas soportados | No disponible |
 | Licencia | No disponible |
 | Formato de pesos | safetensors (adaptador PEFT) |
-| Tamano del repositorio | 0,0 GB segun los metadatos de HuggingFace |
+| Tamano del repositorio | 0,0 GB segun los metadatos de Hugging Face |
 | Dataset de entrenamiento | b-mc2/sql-create-context |
 | Configuracion LoRA | r=16, alpha=32, dropout=0,05 |
 | Modulos objetivo | q_proj, k_proj, v_proj, o_proj, gate_proj, up_proj, down_proj |
@@ -77,9 +77,9 @@ No se han publicado en la informacion disponible resultados de MMLU, HumanEval, 
 
 | Modelo | Parametros | Contexto | Text-to-SQL (exact-match) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen2.5-coder-1.5b-sql-lora-v2c | ~1,5 B (base) + adaptador LoRA | No disponible | 70,0 % (100 ejemplos propios) | No disponible | HuggingFace, 0 descargas |
-| Qwen2.5-Coder-1.5B-Instruct (base sin ajustar) | ~1,5 B | No disponible en esta ficha | 35,0 % (misma evaluacion) | No disponible en esta ficha | HuggingFace |
-| Adaptador V1 del mismo autor (sobre Qwen2.5-1.5B-Instruct) | ~1,5 B (base) + LoRA | No disponible | 61 % (100 ejemplos propios) | No disponible | HuggingFace |
+| qwen2.5-coder-1.5b-sql-lora-v2c | ~1,5 B (base) + adaptador LoRA | No disponible | 70,0 % (100 ejemplos propios) | No disponible | Hugging Face, 0 descargas |
+| Qwen2.5-Coder-1.5B-Instruct (base sin ajustar) | ~1,5 B | No disponible en esta ficha | 35,0 % (misma evaluacion) | No disponible en esta ficha | Hugging Face |
+| Adaptador V1 del mismo autor (sobre Qwen2.5-1.5B-Instruct) | ~1,5 B (base) + LoRA | No disponible | 61 % (100 ejemplos propios) | No disponible | Hugging Face |
 | Modelos especializados de text-to-SQL de mayor tamano (p. ej. familia SQLCoder) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos comparativos adicionales en la informacion proporcionada. Las cifras de los tres primeros modelos no son directamente comparables con evaluaciones estandar como Spider o BIRD, ya que provienen de un conjunto de test propio de 100 ejemplos.
@@ -100,7 +100,7 @@ No se dispone de datos comparativos adicionales en la informacion proporcionada.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AmbikaSoni/qwen2.5-coder-1.5b-sql-lora-v2c
+- Modelo en Hugging Face: https://huggingface.co/AmbikaSoni/qwen2.5-coder-1.5b-sql-lora-v2c
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/b-mc2/sql-create-context
 - Libreria PEFT: https://github.com/huggingface/peft

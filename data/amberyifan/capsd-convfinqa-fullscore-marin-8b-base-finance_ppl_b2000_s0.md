@@ -4,7 +4,7 @@
 
 El modelo `capsd-convfinqa-fullscore-marin-8b-base-finance_ppl_b2000_s0` es un ajuste fino (fine-tuning) completo del modelo base `marin-community/marin-8b-base`, desarrollado por el usuario AmberYifan. Está especializado en el dominio financiero, entrenado sobre el dataset `capsd_marin-8b-base-n11082-finance-convfinqa-fullscore__mix_finance_ppl_b2000_s0`, que contiene 11.082 muestras de conversaciones y preguntas-respuestas financieras (dataset ConvFinQA). El objetivo es mejorar el rendimiento del modelo en tareas de razonamiento cuantitativo y comprensión de documentos financieros.
 
-Con 8.030 millones de parámetros, se trata de un modelo de tamaño medio basado en la arquitectura Llama (según las etiquetas de HuggingFace). La licencia es "other", por lo que su uso comercial debe verificarse con el autor. No se han publicado resultados de benchmarks ni detalles sobre la longitud de contexto o los idiomas soportados, lo que limita la evaluación objetiva de sus capacidades.
+Con 8.030 millones de parámetros, se trata de un modelo de tamaño medio basado en la arquitectura Llama (según las etiquetas de Hugging Face). La licencia es "other", por lo que su uso comercial debe verificarse con el autor. No se han publicado resultados de benchmarks ni detalles sobre la longitud de contexto o los idiomas soportados, lo que limita la evaluación objetiva de sus capacidades.
 
 ## Especificaciones tecnicas
 
@@ -70,7 +70,7 @@ No se dispone de comparativas publicadas con otros modelos. El modelo base `mari
 
 ## Enlaces
 
-- [HuggingFace - modelo principal](https://huggingface.co/AmberYifan/capsd-convfinqa-fullscore-marin-8b-base-finance_ppl_b2000_s0)
+- [Hugging Face - modelo principal](https://huggingface.co/AmberYifan/capsd-convfinqa-fullscore-marin-8b-base-finance_ppl_b2000_s0)
 - [Modelo base marin-community/marin-8b-base](https://huggingface.co/marin-community/marin-8b-base)
 - [Variante con cap (b1000)](https://huggingface.co/AmberYifan/capsd-convfinqa-fullscore-marin-8b-base-finance_cap_b1000_s0)
 - [Variante finance-dedup cap b2000](https://huggingface.co/AmberYifan/capsd-finance-dedup-marin-8b-base-finance_cap_b2000_s0)

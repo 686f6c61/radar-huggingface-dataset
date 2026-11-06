@@ -120,7 +120,7 @@ No se dispone de datos de benchmarks estandar que permitan comparar este artefac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/drluoto/Qwen3.8-Flash-Next-AgenticRequant-Q5K-GGUF
+- Modelo en Hugging Face: https://huggingface.co/drluoto/Qwen3.8-Flash-Next-AgenticRequant-Q5K-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/main/LICENSE
 - Cabezal de borrador (MTP): https://huggingface.co/drluoto/Qwen3.8-Flash-Next-MTP-GGUF

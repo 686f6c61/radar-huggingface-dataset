@@ -51,7 +51,7 @@ No se dispone de información para comparar con otros modelos. Dado que no se id
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Janslw/MatematicasConJuan.zip
+- Repositorio en Hugging Face: https://huggingface.co/Janslw/MatematicasConJuan.zip
 - Perfil del autor: https://huggingface.co/Janslw
 - Web oficial "Matemáticas con Juan": https://matematicasconjuan.com/
 - Canal de YouTube "Mathematics with Juan": https://www.youtube.com/@matematicaconjuan

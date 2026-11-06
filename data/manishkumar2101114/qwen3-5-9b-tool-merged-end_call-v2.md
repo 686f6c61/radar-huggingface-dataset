@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `manishkumar2101114/qwen3.5-9b-tool-merged-end_call-v2` es un ajuste fino (fine-tune) del modelo base Qwen/Qwen3.5-9B, desarrollado por el usuario manishkumar2101114 y publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un modelo multimodal de tipo image-text-to-text con 9.653.104.368 parámetros totales, orientado específicamente a su uso como agente de voz con capacidad de tool calling (llamada a herramientas) y gestión de fin de llamada (`end_call`), en un contexto bilingüe inglés-hindi/hinglish.
+El modelo `manishkumar2101114/qwen3.5-9b-tool-merged-end_call-v2` es un ajuste fino (fine-tune) del modelo base Qwen/Qwen3.5-9B, desarrollado por el usuario manishkumar2101114 y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un modelo multimodal de tipo image-text-to-text con 9.653.104.368 parámetros totales, orientado específicamente a su uso como agente de voz con capacidad de tool calling (llamada a herramientas) y gestión de fin de llamada (`end_call`), en un contexto bilingüe inglés-hindi/hinglish.
 
 La relevancia de este modelo radica en su especialización: parte de un modelo base de propósito general de la familia Qwen 3.5 y lo adapta mediante LoRA (r=32, alpha=64, 3 épocas, 666 pasos, con una pérdida de entrenamiento de 0.2186 y de evaluación de 0.1686) para tareas conversacionales de agente de voz, incluyendo la detección de fin de conversación y la invocación de herramientas. Esto lo hace interesante para desarrolladores que construyen asistentes telefónicos o agentes conversacionales en entornos multilingües con presencia de hindi e hinglish.
 
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Especializacion | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3.5-9b-tool-merged-end_call-v2 | 9.653 M | no disponible | apache-2.0 | Tool calling + end_call, voz, en/hi | HuggingFace (25 descargas) |
-| Qwen/Qwen3.5-9B (base) | ~9.650 M | no disponible | no disponible en la informacion | Proposito general multimodal | HuggingFace |
+| qwen3.5-9b-tool-merged-end_call-v2 | 9.653 M | no disponible | apache-2.0 | Tool calling + end_call, voz, en/hi | Hugging Face (25 descargas) |
+| Qwen/Qwen3.5-9B (base) | ~9.650 M | no disponible | no disponible en la informacion | Proposito general multimodal | Hugging Face |
 | Alternativas de tool calling de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparativo entre este ajuste y el modelo base ni con otras alternativas, por lo que la comparativa se limita a parametros y licencia.
@@ -82,5 +82,5 @@ No se dispone de datos de rendimiento comparativo entre este ajuste y el modelo 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/manishkumar2101114/qwen3.5-9b-tool-merged-end_call-v2
+- Hugging Face: https://huggingface.co/manishkumar2101114/qwen3.5-9b-tool-merged-end_call-v2
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B

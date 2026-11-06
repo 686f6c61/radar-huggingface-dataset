@@ -110,7 +110,7 @@ La comparación directa más informativa es contra el propio modelo base, con lo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/InterpreticAI/Qwen3.5-4B-Uncensored-v2
+- Modelo en Hugging Face: https://huggingface.co/InterpreticAI/Qwen3.5-4B-Uncensored-v2
 - Versión GGUF Q4_K_M: https://huggingface.co/InterpreticAI/Qwen3.5-4B-Uncensored-v2-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Referencia de la batería de evaluación: Pan, J., & Xu, X. (2026). Political censorship in large language models originating from China. PNAS Nexus, 5(2), pgag013. https://doi.org/10.1093/pnasnexus/pgag013

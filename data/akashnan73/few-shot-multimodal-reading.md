@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `AkashNan73/few-shot-multimodal-reading` no es un modelo de lenguaje entrenado, sino un cuaderno de notas de investigación (*research notes*) publicado en HuggingFace por el usuario AkashNan73. La propia model card lo describe como "reading notes and an experiment sketch" sobre el tema *few-shot multimodal*, con énfasis explícito en lo que queda por probar en lugar de en resultados obtenidos. El repositorio contiene únicamente dos ficheros declarados, `review.md` y `README.md`, y no se anuncia ningún checkpoint entrenado, código de entrenamiento ni *pipeline* de inferencia.
+El repositorio `AkashNan73/few-shot-multimodal-reading` no es un modelo de lenguaje entrenado, sino un cuaderno de notas de investigación (*research notes*) publicado en Hugging Face por el usuario AkashNan73. La propia model card lo describe como "reading notes and an experiment sketch" sobre el tema *few-shot multimodal*, con énfasis explícito en lo que queda por probar en lugar de en resultados obtenidos. El repositorio contiene únicamente dos ficheros declarados, `review.md` y `README.md`, y no se anuncia ningún checkpoint entrenado, código de entrenamiento ni *pipeline* de inferencia.
 
-La relevancia de esta ficha es, por tanto, acotada y metodológica: sirve como ejemplo de artefacto de investigación en fase exploratoria, útil para entender cómo se documenta una hipótesis antes de ejecutar los experimentos. No debe confundirse con un modelo desplegable. Los tags de HuggingFace incluyen `transformer` y `safetensors` junto a `research-notes` y `few-shot-multimodal`, lo que genera ambigüedad sobre la naturaleza del contenido.
+La relevancia de esta ficha es, por tanto, acotada y metodológica: sirve como ejemplo de artefacto de investigación en fase exploratoria, útil para entender cómo se documenta una hipótesis antes de ejecutar los experimentos. No debe confundirse con un modelo desplegable. Los tags de Hugging Face incluyen `transformer` y `safetensors` junto a `research-notes` y `few-shot-multimodal`, lo que genera ambigüedad sobre la naturaleza del contenido.
 
 Existe una discrepancia técnica que conviene señalar: la plataforma reporta 49.600 parámetros totales detectados en ficheros safetensors, mientras que la model card solo menciona ficheros Markdown y afirma que no hay *checkpoint* liberado. El tamaño del repositorio es de 0.0 GB, lo que resulta coherente con un conjunto de notas de texto y no con pesos de un modelo funcional. Creado el 21 de septiembre de 2026 y actualizado cuatro segundos después, el repositorio no registra descargas ni *likes*.
 
@@ -64,13 +64,13 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM para inferencia: no aplica, no hay modelo entrenado que ejecutar.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no aplica.
-- Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI): ninguna. Los ficheros declarados son Markdown y no existe `pipeline` de HuggingFace asociado.
+- Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI): ninguna. Los ficheros declarados son Markdown y no existe `pipeline` de Hugging Face asociado.
 - Latencia y *throughput*: no disponibles.
 - Requisitos para reproducir los experimentos propuestos: no especificados en la información disponible; el propio autor indica que cualquier resultado futuro deberá acompañarse de hardware y *logs* en bruto.
 
 ## Comparativa con modelos similares
 
-No disponible. No existen modelos comparables en el sentido habitual, porque este repositorio no es un modelo. Como referencia de categoría, podría compararse con otros repositorios de notas de investigación alojados en HuggingFace, pero la información proporcionada no incluye ninguno con el que establecer una comparación con datos verificables.
+No disponible. No existen modelos comparables en el sentido habitual, porque este repositorio no es un modelo. Como referencia de categoría, podría compararse con otros repositorios de notas de investigación alojados en Hugging Face, pero la información proporcionada no incluye ninguno con el que establecer una comparación con datos verificables.
 
 | Criterio | Este repositorio | Alternativa comparable |
 |---|---|---|
@@ -79,7 +79,7 @@ No disponible. No existen modelos comparables en el sentido habitual, porque est
 | Contexto | no disponible | no disponible |
 | Rendimiento | no disponible | no disponible |
 | Licencia | MIT | no disponible |
-| Disponibilidad | Publico en HuggingFace, 0 descargas | no disponible |
+| Disponibilidad | Publico en Hugging Face, 0 descargas | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -95,7 +95,7 @@ No disponible. No existen modelos comparables en el sentido habitual, porque est
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AkashNan73/few-shot-multimodal-reading
+- Repositorio en Hugging Face: https://huggingface.co/AkashNan73/few-shot-multimodal-reading
 - Fichero principal de la nota: `review.md` (dentro del repositorio)
 - Documentacion del repositorio: `README.md` (dentro del repositorio)
 - Paper, blog, repositorio de codigo o demo adicionales: no disponible

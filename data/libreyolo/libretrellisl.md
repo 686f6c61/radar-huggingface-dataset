@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LibreTRELLISl | Image-to-3D (Gaussian splats) | no disponible | no aplica | MIT | HuggingFace (espejo de Microsoft) |
-| microsoft/TRELLIS-image-large | Image-to-3D (Gaussian splats y malla) | no disponible | no aplica | MIT | HuggingFace |
+| LibreTRELLISl | Image-to-3D (Gaussian splats) | no disponible | no aplica | MIT | Hugging Face (espejo de Microsoft) |
+| microsoft/TRELLIS-image-large | Image-to-3D (Gaussian splats y malla) | no disponible | no aplica | MIT | Hugging Face |
 | Alternativas de image-to-3D | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La unica comparacion documentada en la informacion disponible es con el repositorio upstream de Microsoft, del que este es un espejo. No se dispone de datos de otros modelos comparables en la informacion proporcionada.
@@ -83,7 +83,7 @@ La unica comparacion documentada en la informacion disponible es con el reposito
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LibreYOLO/LibreTRELLISl
+- Hugging Face: https://huggingface.co/LibreYOLO/LibreTRELLISl
 - Repositorio upstream: https://huggingface.co/microsoft/TRELLIS-image-large
 - Codigo: https://github.com/microsoft/TRELLIS
 - Paper: https://arxiv.org/abs/2412.01506

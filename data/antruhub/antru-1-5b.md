@@ -81,6 +81,6 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ANTRUhub/ANTRU-1.5B
+- Modelo en Hugging Face: https://huggingface.co/ANTRUhub/ANTRU-1.5B
 - Modelo base (Qwen2.5-Coder-1.5B-Instruct): https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct
 - Paper, blog o demo: no disponibles

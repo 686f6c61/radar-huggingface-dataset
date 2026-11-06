@@ -80,9 +80,9 @@ No se han publicado comparaciones directas con alternativas en la informacion di
 
 | Alternativa | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| StanfordSCALE/assertion_references_logistics | 109,5 M | no disponible | Clasificacion binaria de aserciones logisticas | no disponible | HuggingFace |
-| sentence-transformers/paraphrase-mpnet-base-v2 + cabeza propia | ~109 M | corto (encoder de frases) | Embeddings genericos; requiere entrenar la cabeza | Apache-2.0 (modelo base) | HuggingFace |
-| Clasificador supervisado sobre DeBERTa-v3-base | ~184 M | 512 tokens | Clasificacion de texto generica | MIT (modelo base) | HuggingFace |
+| StanfordSCALE/assertion_references_logistics | 109,5 M | no disponible | Clasificacion binaria de aserciones logisticas | no disponible | Hugging Face |
+| sentence-transformers/paraphrase-mpnet-base-v2 + cabeza propia | ~109 M | corto (encoder de frases) | Embeddings genericos; requiere entrenar la cabeza | Apache-2.0 (modelo base) | Hugging Face |
+| Clasificador supervisado sobre DeBERTa-v3-base | ~184 M | 512 tokens | Clasificacion de texto generica | MIT (modelo base) | Hugging Face |
 | Clasificacion zero-shot con LLM | variable | largo | Clasificacion sin entrenamiento especifico | variable | APIs o modelos abiertos |
 
 Rendimiento comparado: no disponible. No se aportan resultados de estas alternativas sobre el mismo conjunto de datos.
@@ -101,7 +101,7 @@ Rendimiento comparado: no disponible. No se aportan resultados de estas alternat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StanfordSCALE/assertion_references_logistics
+- Modelo en Hugging Face: https://huggingface.co/StanfordSCALE/assertion_references_logistics
 - Dataset de anotaciones: https://huggingface.co/datasets/StanfordSCALE/assertions_llm_annotated_talkmoves
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-mpnet-base-v2
 - TalkMoves Dataset (repositorio original): https://github.com/SumnerLab/TalkMoves

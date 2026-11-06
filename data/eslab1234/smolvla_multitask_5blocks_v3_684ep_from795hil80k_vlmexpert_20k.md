@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este checkpoint (`eslab1234/smolvla_..._20k`) | 450 M | no disponible | apache-2.0 | HuggingFace (0 descargas, 0 likes) | Ajuste fino multitarea de SmolVLA sobre 684 episodios |
-| `lerobot/smolvla_base` | 450 M | no disponible | apache-2.0 | HuggingFace (modelo base oficial) | Modelo base sin ajustar del que deriva este checkpoint |
-| OpenVLA | aprox. 7 B | no disponible | no disponible en la información disponible | HuggingFace | VLA de referencia de mayor tamano; cifras exactas no disponibles en la información proporcionada |
+| Este checkpoint (`eslab1234/smolvla_..._20k`) | 450 M | no disponible | apache-2.0 | Hugging Face (0 descargas, 0 likes) | Ajuste fino multitarea de SmolVLA sobre 684 episodios |
+| `lerobot/smolvla_base` | 450 M | no disponible | apache-2.0 | Hugging Face (modelo base oficial) | Modelo base sin ajustar del que deriva este checkpoint |
+| OpenVLA | aprox. 7 B | no disponible | no disponible en la información disponible | Hugging Face | VLA de referencia de mayor tamano; cifras exactas no disponibles en la información proporcionada |
 | π0 (Physical Intelligence) | aprox. 3 B | no disponible | no disponible en la información disponible | no disponible | VLA de propósito general; datos no disponibles en la información proporcionada |
 
 La comparación con OpenVLA y π0 se incluye como referencia de categoría; los datos concretos de estos modelos no forman parte de la información proporcionada y podrían no ser exactos.
@@ -89,7 +89,7 @@ La comparación con OpenVLA y π0 se incluye como referencia de categoría; los 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eslab1234/smolvla_multitask_5blocks_v3_684ep_from795hil80k_vlmexpert_20k
+- Modelo en Hugging Face: https://huggingface.co/eslab1234/smolvla_multitask_5blocks_v3_684ep_from795hil80k_vlmexpert_20k
 - Paper de SmolVLA: https://huggingface.co/papers/2506.01844
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/eslab1234/multitask_5blocks_v3_684ep_merged

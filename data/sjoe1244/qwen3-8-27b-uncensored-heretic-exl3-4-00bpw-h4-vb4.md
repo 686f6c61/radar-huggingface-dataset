@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio es una cuantización EXL3 de 4,00 bits por peso (bpw) de `llmfan46/Qwen3.8-27B-Uncensored-Heretic-Native-MTP-Preserved`, un derivado "abliterated" (sin alineamiento de rechazo) de Qwen3.8-27B. El autor de la cuantización es el usuario de HuggingFace `sjoe1244`, mientras que el trabajo de desalineamiento corresponde a `llmfan46`. El objetivo declarado es ejecutar el modelo completo —pesos, `lm_head`, torre de visión y cabeza MTP— en una única tarjeta de 24 GB, manteniendo la ventana de contexto nativa de 262.144 tokens.
+Este repositorio es una cuantización EXL3 de 4,00 bits por peso (bpw) de `llmfan46/Qwen3.8-27B-Uncensored-Heretic-Native-MTP-Preserved`, un derivado "abliterated" (sin alineamiento de rechazo) de Qwen3.8-27B. El autor de la cuantización es el usuario de Hugging Face `sjoe1244`, mientras que el trabajo de desalineamiento corresponde a `llmfan46`. El objetivo declarado es ejecutar el modelo completo —pesos, `lm_head`, torre de visión y cabeza MTP— en una única tarjeta de 24 GB, manteniendo la ventana de contexto nativa de 262.144 tokens.
 
 Qwen3.8-27B es, según la documentación de la familia, un modelo denso nativo de visión-lenguaje que entiende imágenes y vídeo, con control flexible del modo "thinking" y orientado a completar tareas complejas de varios pasos. Esta exportación no modifica la arquitectura: solo cuantiza los pesos y añade los ficheros `preprocessor_config.json` y `video_preprocessor_config.json` tomados de `Qwen/Qwen3.8-27B`, ausentes en el repositorio de origen y necesarios para que ExLlamaV3 procese la entrada visual.
 
@@ -13,7 +13,7 @@ Su relevancia práctica es de despliegue: 16,1 GB de descarga, 21,0 GB de VRAM t
 | Parámetro | Valor |
 |---|---|
 | Arquitectura | Transformer denso de visión-lenguaje (Qwen3.8-27B) con torre de visión y cabeza MTP para decodificación especulativa; pesos cuantizados en formato EXL3 |
-| Parámetros totales | 27B según el autor. La barra lateral de HuggingFace muestra 8.038.307.200, cifra que el propio autor señala como incorrecta para ficheros EXL3 |
+| Parámetros totales | 27B según el autor. La barra lateral de Hugging Face muestra 8.038.307.200, cifra que el propio autor señala como incorrecta para ficheros EXL3 |
 | Parámetros activos | No aplica: modelo denso, no es MoE |
 | Longitud de contexto | 262.144 tokens (ventana completa, cargada con visión y MTP activos y caché KV de 4 bits) |
 | Tipos de cuantización | EXL3 4,00 bpw: pesos, `lm_head`, torre de visión y cabeza MTP a 4 bits; embeddings en BF16 sin cuantizar; caché KV a 4 bits (`cache_mode: 4,4`). Este repositorio solo publica la variante de 4,00 bpw |
@@ -99,7 +99,7 @@ Comparación de rendimiento: no disponible. La información recopilada no incluy
 - La torre de visión carga y encaja en el presupuesto de VRAM, pero no se ejecutó ninguna prueba con imágenes. Las capacidades visuales del modelo base no están validadas en esta cuantización.
 - No se cronometró el modelo con MTP desactivado. El autor advierte además que las cifras son de una sola ejecución por prueba, sin repetición.
 - Compatibilidad muy restringida: solo TabbyAPI o ExLlamaV3. No funciona en Transformers, vLLM ni llama.cpp, lo que limita su integración en infraestructuras estándar y obliga a mantener una versión concreta del motor (ExLlamaV3 1.6.0; no probado en anteriores).
-- La cifra de parámetros de la barra lateral de HuggingFace (8.038.307.200) no corresponde al modelo real, según el autor. Cualquier automatización que lea ese campo obtendrá un dato erróneo.
+- La cifra de parámetros de la barra lateral de Hugging Face (8.038.307.200) no corresponde al modelo real, según el autor. Cualquier automatización que lea ese campo obtendrá un dato erróneo.
 - Al ser una variante "uncensored"/abliterated, el modelo reduce de forma deliberada sus rechazos ante peticiones dañinas. No incluye capa de seguridad alguna y no debe exponerse directamente a usuarios finales sin un filtrado externo de entrada y salida, ni usarse en dominios regulados sin evaluación propia.
 - Riesgo de alucinación: no se han publicado evaluaciones de fidelidad factual para esta variante ni para el modelo base desalineado. El modo `reasoning_effort: xhigh` puede generar miles de tokens de razonamiento, lo que incrementa coste y latencia.
 - Idiomas soportados: no disponible. No hay información sobre cobertura multilingüe de esta variante.

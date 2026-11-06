@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sharmila16/model1` es una publicación reciente (agosto de 2026) en HuggingFace por el usuario `sharmila16`. Se distribuye bajo licencia MIT y declara soporte para el idioma inglés. Sin embargo, la model card no contiene ninguna descripción técnica: no se especifica arquitectura, tamaño, contexto, ni tareas previstas. Los tags (`this`, `is`, `1st`, `model`) sugieren que se trata de un primer experimento de su autor, probablemente con fines de aprendizaje o prueba de plataforma.
+El modelo `sharmila16/model1` es una publicación reciente (agosto de 2026) en Hugging Face por el usuario `sharmila16`. Se distribuye bajo licencia MIT y declara soporte para el idioma inglés. Sin embargo, la model card no contiene ninguna descripción técnica: no se especifica arquitectura, tamaño, contexto, ni tareas previstas. Los tags (`this`, `is`, `1st`, `model`) sugieren que se trata de un primer experimento de su autor, probablemente con fines de aprendizaje o prueba de plataforma.
 
 A día de hoy, el modelo no tiene descargas ni valoraciones, y no existe documentación adicional que permita evaluar su utilidad práctica. Cualquier uso en producción requeriría una inspección directa de los pesos y un análisis de comportamiento, ya que la información pública es insuficiente.
 
@@ -53,6 +53,6 @@ No disponible. Al no conocerse la arquitectura ni el tamano, no se puede estable
 
 ## Enlaces
 
-- [HuggingFace - sharmila16/model1](https://huggingface.co/sharmila16/model1)
+- [Hugging Face - sharmila16/model1](https://huggingface.co/sharmila16/model1)
 
 No se han encontrado papers, repositorios de codigo, demos ni documentacion adicional en la busqueda web.

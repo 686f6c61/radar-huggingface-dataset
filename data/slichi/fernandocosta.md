@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Slichi/fernandocosta` es un repositorio publicado en HuggingFace por el usuario Slichi bajo la licencia OpenRAIL. El repositorio tiene un tamaño de 0,1 GB y fue creado el 16 de agosto de 2026, aunque no se ha actualizado desde entonces. En el momento de la consulta, el modelo registra cero descargas y cero "me gusta", lo que sugiere que es una publicación reciente o sin difusión.
+El modelo `Slichi/fernandocosta` es un repositorio publicado en Hugging Face por el usuario Slichi bajo la licencia OpenRAIL. El repositorio tiene un tamaño de 0,1 GB y fue creado el 16 de agosto de 2026, aunque no se ha actualizado desde entonces. En el momento de la consulta, el modelo registra cero descargas y cero "me gusta", lo que sugiere que es una publicación reciente o sin difusión.
 
 La model card asociada únicamente contiene la declaración de licencia (`license: openrail`) y no incluye ninguna otra información técnica, como arquitectura, parámetros, idiomas, capacidades o instrucciones de uso. Por tanto, no es posible determinar qué tipo de modelo es, para qué tarea está diseñado ni cómo debe utilizarse. Esta ficha se limita a reflejar los datos disponibles y advierte de la ausencia de documentación esencial.
 
@@ -55,6 +55,6 @@ No disponible. Al carecer de datos sobre arquitectura, tamaño o tarea, no es po
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/Slichi/fernandocosta)
+- [Repositorio en Hugging Face](https://huggingface.co/Slichi/fernandocosta)
 
 No se han encontrado otros enlaces (papers, blogs, repositorios de código o demos) relacionados con este modelo.

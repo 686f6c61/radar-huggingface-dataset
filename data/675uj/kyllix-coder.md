@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Kyllix-Coder es un ajuste fino (fine-tuning) del modelo Qwen2.5-Coder-1.5B-Instruct, desarrollado por el usuario 675uj y publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un modelo de generacion de texto orientado a tareas de codigo, construido sobre la arquitectura Qwen2 de Alibaba, con aproximadamente 1.500 millones de parametros. El modelo base empleado para el ajuste es la version cuantizada a 4 bits (bnb-4bit) de Qwen2.5-Coder-1.5B-Instruct, distribuida por Unsloth.
+Kyllix-Coder es un ajuste fino (fine-tuning) del modelo Qwen2.5-Coder-1.5B-Instruct, desarrollado por el usuario 675uj y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un modelo de generacion de texto orientado a tareas de codigo, construido sobre la arquitectura Qwen2 de Alibaba, con aproximadamente 1.500 millones de parametros. El modelo base empleado para el ajuste es la version cuantizada a 4 bits (bnb-4bit) de Qwen2.5-Coder-1.5B-Instruct, distribuida por Unsloth.
 
-La relevancia de este modelo radica en su tamano reducido, que lo hace apto para entornos con recursos limitados, y en su especializacion en codigo heredada del modelo base. El ajuste se realizo empleando las herramientas de Unsloth y la libreria TRL de HuggingFace, lo que segun el autor permitio un entrenamiento el doble de rapido. No obstante, la model card es extremadamente escasa y no aporta informacion sobre el dataset de ajuste, los hiperparametros empleados ni los resultados obtenidos.
+La relevancia de este modelo radica en su tamano reducido, que lo hace apto para entornos con recursos limitados, y en su especializacion en codigo heredada del modelo base. El ajuste se realizo empleando las herramientas de Unsloth y la libreria TRL de Hugging Face, lo que segun el autor permitio un entrenamiento el doble de rapido. No obstante, la model card es extremadamente escasa y no aporta informacion sobre el dataset de ajuste, los hiperparametros empleados ni los resultados obtenidos.
 
-Se trata de una publicacion reciente (noviembre de 2026) sin descargas ni interacciones registradas en el momento de redactar esta ficha, por lo que debe considerarse un modelo experimental sin validacion comunitaria. La informacion disponible procede unicamente de la model card y de los metadatos de HuggingFace.
+Se trata de una publicacion reciente (noviembre de 2026) sin descargas ni interacciones registradas en el momento de redactar esta ficha, por lo que debe considerarse un modelo experimental sin validacion comunitaria. La informacion disponible procede unicamente de la model card y de los metadatos de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Kyllix-Coder (675uj) | ~1.5B | no disponible | Apache 2.0 | HuggingFace, sin descargas |
-| Qwen2.5-Coder-1.5B-Instruct (Alibaba) | 1.5B | 32.768 tokens (segun modelo base) | Apache 2.0 | HuggingFace, ampliamente usado |
-| Qwen2.5-Coder-7B-Instruct (Alibaba) | 7B | 32.768 tokens (segun modelo base) | Apache 2.0 | HuggingFace, ampliamente usado |
-| DeepSeek-Coder-1.3B-Instruct | 1.3B | no disponible en esta ficha | DeepSeek License | HuggingFace |
+| Kyllix-Coder (675uj) | ~1.5B | no disponible | Apache 2.0 | Hugging Face, sin descargas |
+| Qwen2.5-Coder-1.5B-Instruct (Alibaba) | 1.5B | 32.768 tokens (segun modelo base) | Apache 2.0 | Hugging Face, ampliamente usado |
+| Qwen2.5-Coder-7B-Instruct (Alibaba) | 7B | 32.768 tokens (segun modelo base) | Apache 2.0 | Hugging Face, ampliamente usado |
+| DeepSeek-Coder-1.3B-Instruct | 1.3B | no disponible en esta ficha | DeepSeek License | Hugging Face |
 
 La comparativa se limita a datos estructurales; no se dispone de resultados de benchmarks de Kyllix-Coder que permitan una comparacion de rendimiento con las alternativas.
 
@@ -84,7 +84,7 @@ La comparativa se limita a datos estructurales; no se dispone de resultados de b
 
 ## Enlaces
 
-- [HuggingFace: 675uj/Kyllix-Coder](https://huggingface.co/675uj/Kyllix-Coder)
+- [Hugging Face: 675uj/Kyllix-Coder](https://huggingface.co/675uj/Kyllix-Coder)
 - [Modelo base: unsloth/Qwen2.5-Coder-1.5B-Instruct-bnb-4bit](https://huggingface.co/unsloth/Qwen2.5-Coder-1.5B-Instruct-bnb-4bit)
 - [Repositorio de Unsloth](https://github.com/unslothai/unsloth)
-- [Libreria TRL de HuggingFace](https://github.com/huggingface/trl)
+- [Libreria TRL de Hugging Face](https://github.com/huggingface/trl)

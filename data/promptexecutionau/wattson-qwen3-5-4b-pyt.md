@@ -77,9 +77,9 @@ Los pesos publicados corresponden a la seed 42. Referencias comparativas del pro
 
 | Modelo | Parametros | Enfoque | Thinking | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| wattson-qwen3.5-4b-pyt (este) | 4,54 B | Sistemas de potencia con shell Python | Si (scripted) | Apache-2.0 | HuggingFace, safetensors |
-| wattson-granite-4.2-8b-py | 8 B (aprox.) | Misma tarea y shell, sin thinking en esta variante | No (receta hermana) | no disponible en la informacion | HuggingFace (base preferida por los autores) |
-| Qwen/Qwen3.5-4B (base) | 4,54 B | Modelo generalista multimodal | Si (nativo Qwen3.5) | Apache-2.0 | HuggingFace |
+| wattson-qwen3.5-4b-pyt (este) | 4,54 B | Sistemas de potencia con shell Python | Si (scripted) | Apache-2.0 | Hugging Face, safetensors |
+| wattson-granite-4.2-8b-py | 8 B (aprox.) | Misma tarea y shell, sin thinking en esta variante | No (receta hermana) | no disponible en la informacion | Hugging Face (base preferida por los autores) |
+| Qwen/Qwen3.5-4B (base) | 4,54 B | Modelo generalista multimodal | Si (nativo Qwen3.5) | Apache-2.0 | Hugging Face |
 
 La comparacion mas relevante es interna al proyecto: con la misma shell, el modelo sin entrenar obtiene 35/40 en derived, la receta sin thinking 31/30/27 y esta variante con thinking 39/29/38 segun semilla. Los propios autores senalan que el thinking no elimina el fallo que pretende evitar (5 intentos entre las tres semillas escribieron un numero no proporcionado, frente a ninguno en la receta sin thinking) y recomiendan Granite 4.2 8B como base para trabajo nuevo.
 
@@ -96,7 +96,7 @@ La comparacion mas relevante es interna al proyecto: con la misma shell, el mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PromptExecutionAU/wattson-qwen3.5-4b-pyt
+- Modelo en Hugging Face: https://huggingface.co/PromptExecutionAU/wattson-qwen3.5-4b-pyt
 - Proyecto WattsOn/wattson (GitHub): https://github.com/fungible-farm/wattson
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Modelo hermano recomendado: `wattson-granite-4.2-8b-py` (documentado en el repositorio GitHub del proyecto, archivo `docs/results.md`)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo **Qwen3-8B-Houdini-VEX-v10** es un ajuste fino (finetune) del modelo base `unsloth/qwen3-8b-unsloth-bnb-4bit`, desarrollado por el usuario `anshulVashist` y publicado en HuggingFace. Se trata de un modelo de generación de texto conversacional en inglés, entrenado con la librería Unsloth y el framework TRL de HuggingFace, lo que indica un proceso de fine-tuning optimizado para velocidad. El nombre sugiere una posible especialización en el lenguaje VEX (utilizado en el software de efectos visuales Houdini), pero no existe documentación que lo confirme.
+El modelo **Qwen3-8B-Houdini-VEX-v10** es un ajuste fino (finetune) del modelo base `unsloth/qwen3-8b-unsloth-bnb-4bit`, desarrollado por el usuario `anshulVashist` y publicado en Hugging Face. Se trata de un modelo de generación de texto conversacional en inglés, entrenado con la librería Unsloth y el framework TRL de Hugging Face, lo que indica un proceso de fine-tuning optimizado para velocidad. El nombre sugiere una posible especialización en el lenguaje VEX (utilizado en el software de efectos visuales Houdini), pero no existe documentación que lo confirme.
 
 Con 8.190.735.360 parámetros (aproximadamente 8,19 mil millones), el modelo se posiciona en la gama media de modelos de lenguaje, similar a otros modelos de 8B como Llama 3.1 8B o Mistral 7B. Su relevancia actual radica en que es un ejemplo de fine-tuning accesible sobre una base popular (Qwen3), aunque su utilidad práctica queda limitada por la ausencia de información sobre el dataset de entrenamiento, las capacidades específicas y los resultados de evaluación. El repositorio no registra descargas ni valoraciones, lo que sugiere que es un proyecto experimental o de uso personal.
 
@@ -21,7 +21,7 @@ Con 8.190.735.360 parámetros (aproximadamente 8,19 mil millones), el modelo se 
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura Qwen3-8B, un transformer decoder-only con atención causal. El proceso de entrenamiento consistió en un fine-tuning supervisado sobre el modelo `unsloth/qwen3-8b-unsloth-bnb-4bit`, que ya incorpora una cuantización de 4 bits mediante bitsandbytes. El entrenamiento se realizó con la librería Unsloth, que optimiza el uso de memoria y velocidad, y con el framework TRL de HuggingFace, típicamente utilizado para fine-tuning con técnicas como SFT, DPO o PPO. Sin embargo, no se especifica el dataset utilizado, el número de tokens de entrenamiento, ni si se aplicaron técnicas de alineación como RLHF o DPO. Tampoco se documentan innovaciones técnicas adicionales más allá del uso de Unsloth.
+El modelo se basa en la arquitectura Qwen3-8B, un transformer decoder-only con atención causal. El proceso de entrenamiento consistió en un fine-tuning supervisado sobre el modelo `unsloth/qwen3-8b-unsloth-bnb-4bit`, que ya incorpora una cuantización de 4 bits mediante bitsandbytes. El entrenamiento se realizó con la librería Unsloth, que optimiza el uso de memoria y velocidad, y con el framework TRL de Hugging Face, típicamente utilizado para fine-tuning con técnicas como SFT, DPO o PPO. Sin embargo, no se especifica el dataset utilizado, el número de tokens de entrenamiento, ni si se aplicaron técnicas de alineación como RLHF o DPO. Tampoco se documentan innovaciones técnicas adicionales más allá del uso de Unsloth.
 
 ## Capacidades
 
@@ -59,6 +59,6 @@ No se dispone de información comparativa. El modelo es un finetune de Qwen3-8B,
 
 ## Enlaces
 
-- [HuggingFace: anshulVashist/Qwen3-8B-Houdini-VEX-v10](https://huggingface.co/anshulVashist/Qwen3-8B-Houdini-VEX-v10)
+- [Hugging Face: anshulVashist/Qwen3-8B-Houdini-VEX-v10](https://huggingface.co/anshulVashist/Qwen3-8B-Houdini-VEX-v10)
 - [Modelo base: unsloth/qwen3-8b-unsloth-bnb-4bit](https://huggingface.co/unsloth/qwen3-8b-unsloth-bnb-4bit) (referencia, no se encontró enlace directo en la búsqueda)
 - No se encontraron papers, blogs, repositorios adicionales ni demos relacionados con este modelo.

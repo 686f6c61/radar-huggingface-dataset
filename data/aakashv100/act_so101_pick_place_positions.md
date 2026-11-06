@@ -79,7 +79,7 @@ No se dispone de datos numericos comparables en la informacion proporcionada. La
 
 | Modelo | Parametros | Contexto / chunk | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| act_so101_pick_place_positions | 51.668.614 | chunk 100 | no disponible | Apache-2.0 | HuggingFace |
+| act_so101_pick_place_positions | 51.668.614 | chunk 100 | no disponible | Apache-2.0 | Hugging Face |
 | Otras politicas ACT para SO-101 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Diffusion Policy | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -97,7 +97,7 @@ No se dispone de datos numericos comparables en la informacion proporcionada. La
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aakashv100/act_so101_pick_place_positions
+- Modelo en Hugging Face: https://huggingface.co/aakashv100/act_so101_pick_place_positions
 - Dataset de entrenamiento: https://huggingface.co/datasets/aakashv100/so101-pick-place-positions
 - Registro de entrenamiento (Weights & Biases): https://wandb.ai/aakashvardhan-madabhushi-san-jose-state-university/so101-act/runs/lup7vvit
 - Repositorio de LeRobot (libreria de carga): https://github.com/huggingface/lerobot

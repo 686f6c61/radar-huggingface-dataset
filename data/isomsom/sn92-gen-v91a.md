@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| isomsom/sn92-gen-v91a | 26,1B | No disponible | Modelo de decisión (clasificador de opciones) | MIT | HuggingFace |
-| baselabs/mammoth-1 | No disponible | No disponible | Fine-tune para decisiones de Qwen3.5-27B | MIT | HuggingFace |
-| Qwen/Qwen3.5-27B | ~27B | No disponible | LLM generativo | Apache-2.0 | HuggingFace |
-| danyloooah/sn92-generalist-m1-core2 | No disponible | No disponible | Merge de la familia SN92 | MIT | HuggingFace |
+| isomsom/sn92-gen-v91a | 26,1B | No disponible | Modelo de decisión (clasificador de opciones) | MIT | Hugging Face |
+| baselabs/mammoth-1 | No disponible | No disponible | Fine-tune para decisiones de Qwen3.5-27B | MIT | Hugging Face |
+| Qwen/Qwen3.5-27B | ~27B | No disponible | LLM generativo | Apache-2.0 | Hugging Face |
+| danyloooah/sn92-generalist-m1-core2 | No disponible | No disponible | Merge de la familia SN92 | MIT | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- [HuggingFace: isomsom/sn92-gen-v91a](https://huggingface.co/isomsom/sn92-gen-v91a)
+- [Hugging Face: isomsom/sn92-gen-v91a](https://huggingface.co/isomsom/sn92-gen-v91a)
 - [Modelo base: baselabs/mammoth-1](https://huggingface.co/baselabs/mammoth-1)
 - [Qwen/Qwen3.5-27B](https://huggingface.co/Qwen/Qwen3.5-27B)
 - [danyloooah/sn92-generalist-m1-core2](https://huggingface.co/danyloooah/sn92-generalist-m1-core2)

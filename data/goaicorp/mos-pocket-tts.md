@@ -4,7 +4,7 @@
 
 mos-pocket-tts es un modelo de síntesis de voz (text-to-speech) desarrollado por goaicorp, un ajuste fino del modelo kyutai/pocket-tts sobre el idioma moore (mos), una lengua minoritaria hablada principalmente en Burkina Faso. El modelo resuelve un problema concreto: la práctica ausencia de sistemas TTS de calidad para lenguas de bajos recursos, donde los corpus grabados y los recursos fonéticos son escasos. Con 109.502.146 parámetros, se posiciona como un modelo compacto, pensado para despliegues ligeros y entornos con recursos limitados.
 
-El modelo se distribuye en formato safetensors, con un tamaño de repositorio de 0,4 GB, bajo licencia CC-BY-4.0 y acceso restringido (gated) en HuggingFace. El pipeline declarado es text-to-speech y el único idioma soportado es el moore. Su interés actual radica en la combinación de un modelo base pequeño y moderno (pocket-tts de Kyutai) con un ajuste específico para una lengua africana de bajos recursos, un caso de uso cada vez más relevante para la inclusión lingüística en sistemas de voz.
+El modelo se distribuye en formato safetensors, con un tamaño de repositorio de 0,4 GB, bajo licencia CC-BY-4.0 y acceso restringido (gated) en Hugging Face. El pipeline declarado es text-to-speech y el único idioma soportado es el moore. Su interés actual radica en la combinación de un modelo base pequeño y moderno (pocket-tts de Kyutai) con un ajuste específico para una lengua africana de bajos recursos, un caso de uso cada vez más relevante para la inclusión lingüística en sistemas de voz.
 
 No se dispone de información publicada sobre la composición del corpus de ajuste, el número de horas de audio empleadas ni los resultados de evaluación. La ficha se limita, por tanto, a los datos verificables del repositorio y a las características inferibles del modelo base.
 
@@ -69,7 +69,7 @@ No se dispone de información sobre modelos TTS comparables para el moore ni de 
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): es necesario aceptar las condiciones en HuggingFace antes de descargar los pesos, lo que puede retrasar la integración en pipelines automatizados.
+- Acceso restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de descargar los pesos, lo que puede retrasar la integración en pipelines automatizados.
 - Idioma único: solo se declara soporte de moore; no hay evidencia de que funcione correctamente en otras lenguas.
 - Sin datos de evaluación: no se han publicado métricas de calidad (MOS, inteligibilidad, similitud de voz), por lo que el rendimiento real es desconocido.
 - Riesgo de alucinación acústica y errores de pronunciación: en lenguas de bajos recursos, la cobertura fonética del corpus de entrenamiento suele ser limitada, lo que puede producir prosodia incorrecta o sonidos inexistentes en la lengua.
@@ -80,6 +80,6 @@ No se dispone de información sobre modelos TTS comparables para el moore ni de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/goaicorp/mos-pocket-tts
+- Hugging Face: https://huggingface.co/goaicorp/mos-pocket-tts
 - Modelo base: https://huggingface.co/kyutai/pocket-tts
 - No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos adicionales asociados a este modelo.

@@ -77,6 +77,6 @@ No disponible. No se han encontrado modelos comparables en la información propo
 - Caveats importantes: los benchmarks declarados no están verificados (verified: false). El modelo está en fase Foundation, con gate de generación libre de 3/13 tareas, 1/8 casos críticos y 0/3 tareas de código. Tiene 0 descargas y 0 likes, lo que indica que es experimental.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/7dsolv/Konaet-Cauryvo-Clean-202M
-- Perfil de HuggingFace: https://huggingface.co/7dsolv
+- Hugging Face: https://huggingface.co/7dsolv/Konaet-Cauryvo-Clean-202M
+- Perfil de Hugging Face: https://huggingface.co/7dsolv
 - GitHub: https://github.com/7dsolv/7dsolv

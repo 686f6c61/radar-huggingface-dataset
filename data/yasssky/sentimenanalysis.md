@@ -2,11 +2,11 @@
 
 ## Resumen
 
-SentimenAnalysis es un modelo de clasificación de texto publicado en HuggingFace por el usuario yasssky bajo el identificador `yasssky/SentimenAnalysis`. Por su nombre y su pipeline (`text-classification`), está orientado a tareas de análisis de sentimiento, aunque la model card no documenta explícitamente el dominio, el conjunto de etiquetas ni el corpus de entrenamiento. El repositorio tiene un tamaño de 0,5 GB y contiene pesos en formato safetensors compatibles con la librería transformers.
+SentimenAnalysis es un modelo de clasificación de texto publicado en Hugging Face por el usuario yasssky bajo el identificador `yasssky/SentimenAnalysis`. Por su nombre y su pipeline (`text-classification`), está orientado a tareas de análisis de sentimiento, aunque la model card no documenta explícitamente el dominio, el conjunto de etiquetas ni el corpus de entrenamiento. El repositorio tiene un tamaño de 0,5 GB y contiene pesos en formato safetensors compatibles con la librería transformers.
 
 El dato más relevante es su recuento de parámetros: 124.443.651, una cifra que coincide con la arquitectura BERT-base (aproximadamente 110 millones de parámetros en el cuerpo más la cabeza de clasificación y el embedding de posiciones). La etiqueta `bert` del repositorio y la referencia al paper arXiv:1910.09700 (Lacoste et al., 2019, sobre impacto ambiental) confirman que se trata de un transformer encoder de tipo BERT, no de un modelo generativo.
 
-La relevancia de esta ficha es limitada por la ausencia casi total de documentación: la model card es la plantilla automática de HuggingFace sin rellenar, no hay licencia declarada, no se especifican idiomas ni se publican resultados de evaluación. Cualquier uso en producción exige una validación empírica propia antes de confiar en las predicciones.
+La relevancia de esta ficha es limitada por la ausencia casi total de documentación: la model card es la plantilla automática de Hugging Face sin rellenar, no hay licencia declarada, no se especifican idiomas ni se publican resultados de evaluación. Cualquier uso en producción exige una validación empírica propia antes de confiar en las predicciones.
 
 ## Especificaciones tecnicas
 
@@ -31,7 +31,7 @@ Respecto al entrenamiento, la model card no aporta ningún dato: no se especific
 
 - Clasificación de texto: el pipeline declarado es `text-classification`, orientado por el nombre del modelo al análisis de sentimiento.
 - Inferencia con transformers: compatible con la librería transformers y con text-embeddings-inference según los tags.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que puede desplegarse en HuggingFace Inference Endpoints.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que puede desplegarse en Hugging Face Inference Endpoints.
 - Generación de texto: no disponible; al ser un encoder de clasificación no genera texto.
 - Tool calling / function calling: no disponible.
 - Razonamiento multi-paso y agentes: no disponible.
@@ -58,17 +58,17 @@ No se han publicado resultados de benchmarks en la información disponible.
 - GPU recomendadas: cualquier GPU con al menos 1-2 GB de VRAM es suficiente; una RTX 3060, RTX 4090, A100 o H100 funcionan sin problema, aunque el modelo está sobredimensionado para estas tarjetas.
 - Cabe en GPU de consumo: sí, en cualquier GPU consumer moderna e incluso en iGPU con memoria compartida.
 - Cabe en CPU: sí, con latencias de decenas de milisegundos por lote en un procesador moderno.
-- Opciones de despliegue: transformers (nativo), text-embeddings-inference (según tag), HuggingFace Inference Endpoints (tag `endpoints_compatible`). No se confirma soporte de vLLM, llama.cpp, Ollama ni TGI en la información disponible.
+- Opciones de despliegue: transformers (nativo), text-embeddings-inference (según tag), Hugging Face Inference Endpoints (tag `endpoints_compatible`). No se confirma soporte de vLLM, llama.cpp, Ollama ni TGI en la información disponible.
 - Latencia y throughput estimados: no disponible; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| yasssky/SentimenAnalysis | 124,4 M | no disponible | no disponible | HuggingFace |
-| bert-base-uncased | ~110 M | 512 tokens | Apache 2.0 | HuggingFace |
-| distilbert-base-uncased-finetuned-sst-2-english | ~67 M | 512 tokens | Apache 2.0 | HuggingFace |
-| roberta-base | ~125 M | 512 tokens | MIT | HuggingFace |
+| yasssky/SentimenAnalysis | 124,4 M | no disponible | no disponible | Hugging Face |
+| bert-base-uncased | ~110 M | 512 tokens | Apache 2.0 | Hugging Face |
+| distilbert-base-uncased-finetuned-sst-2-english | ~67 M | 512 tokens | Apache 2.0 | Hugging Face |
+| roberta-base | ~125 M | 512 tokens | MIT | Hugging Face |
 
 La comparación con bert-base-uncased y roberta-base es pertinente por tamaño y arquitectura, pero no se dispone de datos de rendimiento del modelo evaluado que permitan una comparación cuantitativa. Distilbert ofrece una alternativa más ligera (aproximadamente la mitad de parámetros) con licencia clara y amplia documentación.
 
@@ -85,6 +85,6 @@ La comparación con bert-base-uncased y roberta-base es pertinente por tamaño y
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yasssky/SentimenAnalysis
+- Modelo en Hugging Face: https://huggingface.co/yasssky/SentimenAnalysis
 - Paper referenciado en la plantilla (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental: https://mlco2.github.io/impact#compute

@@ -83,6 +83,6 @@ Otras alternativas como Qwen2.5-0.5B o Llama-3.2-1B existen, pero no se han incl
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/staccs/Qwen3.5-0.8B-lecore-assimilated)
+- [Modelo en Hugging Face](https://huggingface.co/staccs/Qwen3.5-0.8B-lecore-assimilated)
 - [Modelo base Qwen3.5-0.8B](https://huggingface.co/Qwen/Qwen3.5-0.8B)
 - [Repositorio leCore (kit de asimilacion)](https://github.com/AnOversizedMooseWithSocks/leCore)

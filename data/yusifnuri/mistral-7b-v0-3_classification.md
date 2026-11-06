@@ -83,8 +83,8 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de otros benchmarks 
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| yusifnuri/Mistral-7B-v0.3_classification | 7,25 B (base) + adaptador LoRA (rango 16) | 32 768 tokens en el base; entrenado a 512 | Exactitud 0,69 en AG News (4 clases), 556 ms por petición en H200 | Apache-2.0 | Público en HuggingFace, 0 descargas y 0 likes |
-| mistralai/Mistral-7B-v0.3 (base, sin adaptar) | 7,25 B | 32 768 tokens | Sin adaptación a la tarea; no se publican métricas en esta información | Apache-2.0 | Público en HuggingFace |
+| yusifnuri/Mistral-7B-v0.3_classification | 7,25 B (base) + adaptador LoRA (rango 16) | 32 768 tokens en el base; entrenado a 512 | Exactitud 0,69 en AG News (4 clases), 556 ms por petición en H200 | Apache-2.0 | Público en Hugging Face, 0 descargas y 0 likes |
+| mistralai/Mistral-7B-v0.3 (base, sin adaptar) | 7,25 B | 32 768 tokens | Sin adaptación a la tarea; no se publican métricas en esta información | Apache-2.0 | Público en Hugging Face |
 | APIs de proveedores frontera incluidas en la tesis | no disponible | no disponible | Los resultados están en `results/benchmark_matrix.csv`; no se reproducen en esta información | Propietaria | Acceso por API |
 
 No se dispone en la información proporcionada de datos numéricos de otros clasificadores de AG News (por ejemplo, codificadores tipo BERT ajustados a la misma tarea), por lo que no se incluye una comparación cuantitativa adicional.
@@ -104,7 +104,7 @@ No se dispone en la información proporcionada de datos numéricos de otros clas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yusifnuri/Mistral-7B-v0.3_classification
+- Modelo en Hugging Face: https://huggingface.co/yusifnuri/Mistral-7B-v0.3_classification
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-v0.3
 - Dataset AG News: https://huggingface.co/datasets/fancyzhx/ag_news
 - Código, configuraciones y arnés de evaluación: https://github.com/Yusifnuri/slm-benchmark

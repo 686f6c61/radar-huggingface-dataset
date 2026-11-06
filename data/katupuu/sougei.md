@@ -2,11 +2,11 @@
 
 ## Resumen
 
-katupuu/sougei es un repositorio de modelo publicado en HuggingFace por el usuario katupuu. En el momento de la consulta, la model card no contiene ninguna descripcion funcional: unicamente incluye el campo `license: unknown`, sin texto explicativo, sin informacion de arquitectura, tamano ni datos de entrenamiento. El repositorio registra 0 descargas y 0 likes, y no declara pipeline de inferencia asociado.
+katupuu/sougei es un repositorio de modelo publicado en Hugging Face por el usuario katupuu. En el momento de la consulta, la model card no contiene ninguna descripcion funcional: unicamente incluye el campo `license: unknown`, sin texto explicativo, sin informacion de arquitectura, tamano ni datos de entrenamiento. El repositorio registra 0 descargas y 0 likes, y no declara pipeline de inferencia asociado.
 
 Se desconoce quien esta detras del desarrollo (no hay organizacion ni afiliacion indicada), que problema pretende resolver y cual es su relevancia dentro del ecosistema de IA abierta. El identificador "sougei" no aporta informacion tecnica contrastable, y la busqueda web realizada no ha devuelto ningun material relacionado con el modelo: los resultados obtenidos corresponden a paginas de contratacion de energia de EDF, completamente ajenas al ambito de la inteligencia artificial.
 
-Por tanto, esta ficha no puede certificar ninguna caracteristica tecnica del modelo. Toda la informacion que sigue se limita a lo estrictamente verificable en el repositorio (metadatos de HuggingFace) y marca explicitamente como "no disponible" cualquier dato ausente. Cualquier evaluacion funcional requeriria acceso a los pesos y a documentacion adicional por parte del autor.
+Por tanto, esta ficha no puede certificar ninguna caracteristica tecnica del modelo. Toda la informacion que sigue se limita a lo estrictamente verificable en el repositorio (metadatos de Hugging Face) y marca explicitamente como "no disponible" cualquier dato ausente. Cualquier evaluacion funcional requeriria acceso a los pesos y a documentacion adicional por parte del autor.
 
 ## Especificaciones tecnicas
 
@@ -93,6 +93,6 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/katupuu/sougei
+- Modelo en Hugging Face: https://huggingface.co/katupuu/sougei
 - Perfil del autor: https://huggingface.co/katupuu
 - Paper, blog tecnico, repositorio de codigo o demo: no disponible. La busqueda web realizada no devolvio ningun resultado relacionado con el modelo; los resultados obtenidos correspondian a paginas de contratacion energetica de EDF, sin relacion con este repositorio.

@@ -6,7 +6,7 @@ Kimi K3 es un modelo de lenguaje multimodal nativo de tipo agente, publicado con
 
 El modelo escala la dispersion del MoE mediante un marco Stable LatentMoE que activa 16 de 896 expertos, lo que segun el autor supone una mejora de aproximadamente 2,5 veces en eficiencia de escalado respecto a Kimi K2. La composicion de capas de atencion es de 69 capas KDA y 24 capas Gated MLA sobre un total de 93 capas.
 
-La relevancia actual radica en que libera pesos de frontera bajo la licencia Kimi K3, permitiendo investigacion, despliegue e innovacion posterior sobre un modelo de escala que hasta ahora solo estaba disponible en servicios cerrados. El repositorio de HuggingFace ocupa 1561 GB y utiliza el formato safetensors con cuantizacion de 8 bits mediante compressed-tensors.
+La relevancia actual radica en que libera pesos de frontera bajo la licencia Kimi K3, permitiendo investigacion, despliegue e innovacion posterior sobre un modelo de escala que hasta ahora solo estaba disponible en servicios cerrados. El repositorio de Hugging Face ocupa 1561 GB y utiliza el formato safetensors con cuantizacion de 8 bits mediante compressed-tensors.
 
 ## Especificaciones tecnicas
 
@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kimi K3 | 2,8 T | 104 B | 1.000.000 | Kimi K3 License | Pesos abiertos en HuggingFace |
+| Kimi K3 | 2,8 T | 104 B | 1.000.000 | Kimi K3 License | Pesos abiertos en Hugging Face |
 | Kimi K2 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativas de clase 3T abiertas | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -91,8 +91,8 @@ No se dispone de datos de rendimiento comparativo ni de especificaciones detalla
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hankking/Kimi-K3
-- Repositorio oficial en HuggingFace: https://huggingface.co/moonshotai/Kimi-K3
+- Hugging Face: https://huggingface.co/hankking/Kimi-K3
+- Repositorio oficial en Hugging Face: https://huggingface.co/moonshotai/Kimi-K3
 - Blog tecnico: https://www.kimi.com/blog/kimi-k3
 - Informe tecnico completo: https://github.com/MoonshotAI/Kimi-K3/blob/main/k3_tech_report.pdf
 - Repositorio GitHub: https://github.com/MoonshotAI/Kimi-K3

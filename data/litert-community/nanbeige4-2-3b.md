@@ -19,7 +19,7 @@ La relevancia actual de esta ficha radica en que es una de las primeras distribu
 | Tipos de cuantizacion | int4 blockwise (block 32) + OCTAV optimal-clipping, simétrico; embedding int8; build `model_fp32act.litertlm` con activaciones fp32 |
 | Idiomas soportados | No disponible (la model card no especifica idiomas) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | `.litertlm` (LiteRT-LM), safetensors para el modelo base en HuggingFace |
+| Formato de pesos | `.litertlm` (LiteRT-LM), safetensors para el modelo base en Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -103,8 +103,8 @@ La ventaja diferencial de Nanbeige4.2-3B es su arquitectura *looped transformer*
 
 ## Enlaces
 
-- Repositorio HuggingFace de la build LiteRT-LM: https://huggingface.co/litert-community/Nanbeige4.2-3B
-- Modelo base en HuggingFace: https://huggingface.co/Nanbeige/Nanbeige4.2-3B
+- Repositorio Hugging Face de la build LiteRT-LM: https://huggingface.co/litert-community/Nanbeige4.2-3B
+- Modelo base en Hugging Face: https://huggingface.co/Nanbeige/Nanbeige4.2-3B
 - Paper del modelo (arXiv): https://arxiv.org/pdf/2607.22083
 - Runtime LiteRT-LM de Google: https://github.com/google-ai-edge/litert-lm
 - README del modelo base: https://huggingface.co/Nanbeige/Nanbeige4.2-3B/blob/main/README.md

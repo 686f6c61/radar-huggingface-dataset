@@ -4,7 +4,7 @@
 
 ParcelPilot_Assistant es un proyecto de aplicación de chatbot de soporte al cliente para la plataforma ficticia de logística ParcelPilot, desarrollado por chayanchauhan como parte de una evaluación técnica para el puesto de AI Engineer en CalQuity. No se trata de un modelo de IA open source, sino de una aplicación completa construida con Streamlit y el modelo propietario `gpt-4o-mini` de OpenAI, que integra un agente con tool calling para responder preguntas sobre pedidos, cancelaciones, créditos de servicio y políticas, además de una página interna de "Ops Radar" para detección proactiva de incidencias.
 
-El proyecto incluye un sistema de login de demostración con cuatro cuentas de cliente, un agente conversacional con herramientas (búsqueda en documentos, consulta de datos, cálculo de tarifas y escalado a soporte humano) y un sistema de etiquetas de fiabilidad (alta/media/baja) para cada respuesta. Aunque está publicado en HuggingFace, no contiene pesos de modelo ni arquitectura de red neuronal; es código fuente de una aplicación que depende de la API de OpenAI.
+El proyecto incluye un sistema de login de demostración con cuatro cuentas de cliente, un agente conversacional con herramientas (búsqueda en documentos, consulta de datos, cálculo de tarifas y escalado a soporte humano) y un sistema de etiquetas de fiabilidad (alta/media/baja) para cada respuesta. Aunque está publicado en Hugging Face, no contiene pesos de modelo ni arquitectura de red neuronal; es código fuente de una aplicación que depende de la API de OpenAI.
 
 ## Especificaciones tecnicas
 
@@ -70,5 +70,5 @@ No disponible. Este proyecto no es un modelo de lenguaje, sino una aplicacion qu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chayanchauhan/ParcelPilot_Assistant
+- Hugging Face: https://huggingface.co/chayanchauhan/ParcelPilot_Assistant
 - Repositorio relacionado (no oficial, de otro autor): https://github.com/ayushjha4wd/parcelpilot-support-ai

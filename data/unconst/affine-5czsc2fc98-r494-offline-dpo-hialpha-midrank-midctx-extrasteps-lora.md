@@ -69,5 +69,5 @@ No disponible. Al ser un adaptador LoRA para un modelo base no documentado, no e
 
 ## Enlaces
 
-- Repositorio HuggingFace: [unconst/Affine-5czsc2fc98-r494-offline-dpo-hialpha-midrank-midctx-extrasteps-lora](https://huggingface.co/unconst/Affine-5czsc2fc98-r494-offline-dpo-hialpha-midrank-midctx-extrasteps-lora)
+- Repositorio Hugging Face: [unconst/Affine-5czsc2fc98-r494-offline-dpo-hialpha-midrank-midctx-extrasteps-lora](https://huggingface.co/unconst/Affine-5czsc2fc98-r494-offline-dpo-hialpha-midrank-midctx-extrasteps-lora)
 - Modelo base referenciado: [marsplan0624/affine-5gedzafcvg-queen](https://huggingface.co/marsplan0624/affine-5gedzafcvg-queen) (no documentado en los datos proporcionados)

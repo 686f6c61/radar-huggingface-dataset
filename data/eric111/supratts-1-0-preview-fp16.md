@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SupraTTS-1.0-Preview es un sistema de síntesis de voz (text-to-speech) en inglés publicado en HuggingFace por el autor Eric111, con licencia MIT y un total de 1.031.754 parámetros según los pesos en safetensors del repositorio. Se presenta como el sucesor de SupraTTS-0.1-Beta, un sistema basado en Glow-TTS más HiFi-GAN de unos 44 M de parámetros, y apuesta por una filosofia distinta: en lugar de priorizar la calidad maxima, busca el mejor equilibrio calidad-por-parametro del campo abierto de TTS, con un modelo 43 veces mas pequeno que su predecesor.
+SupraTTS-1.0-Preview es un sistema de síntesis de voz (text-to-speech) en inglés publicado en Hugging Face por el autor Eric111, con licencia MIT y un total de 1.031.754 parámetros según los pesos en safetensors del repositorio. Se presenta como el sucesor de SupraTTS-0.1-Beta, un sistema basado en Glow-TTS más HiFi-GAN de unos 44 M de parámetros, y apuesta por una filosofia distinta: en lugar de priorizar la calidad maxima, busca el mejor equilibrio calidad-por-parametro del campo abierto de TTS, con un modelo 43 veces mas pequeno que su predecesor.
 
 La arquitectura se describe en la model card como un sistema destilado en tres etapas, entrenado para sintetizar audio a 24 kHz con un peso en disco de unos 4 MB en fp32. Su principal argumento es la eficiencia: el autor reporta un factor de tiempo real (RTF) mediano de 0.0118, es decir, unas 85 veces mas rapido que el tiempo real sobre una CPU de escritorio Ryzen 5 3500X, sin necesidad de GPU. Frente a su predecesor, que en la misma maquina se quedaba en 1,9x tiempo real, supone una ventaja de velocidad de aproximadamente 44x.
 
@@ -113,7 +113,7 @@ Lectura: en el segmento por debajo de 2 M de parametros, sanoTTS (amy) obtiene m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Eric111/SupraTTS-1.0-Preview-FP16
+- Modelo en Hugging Face: https://huggingface.co/Eric111/SupraTTS-1.0-Preview-FP16
 - Repositorio referenciado en la model card: https://huggingface.co/SupraLabs/SupraTTS-1.0-Preview
 - Predecesor, SupraTTS-0.1-Beta: https://huggingface.co/SupraLabs/SupraTTS-0.1-Beta
 - Perfil del autor citado en la model card: https://huggingface.co/arthurblg1802

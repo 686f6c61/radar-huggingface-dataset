@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `LoraTrainer19928/FakeBert` es una publicacion en HuggingFace que, segun los datos disponibles, no contiene pesos de modelo ni ficheros de configuracion. El tamano del repositorio es de 0.0 GB, no registra descargas ni likes, y la model card solo declara la licencia MIT sin ninguna otra informacion tecnica. No se puede confirmar que exista un modelo entrenado ni que sea funcional para ninguna tarea.
+El repositorio `LoraTrainer19928/FakeBert` es una publicacion en Hugging Face que, segun los datos disponibles, no contiene pesos de modelo ni ficheros de configuracion. El tamano del repositorio es de 0.0 GB, no registra descargas ni likes, y la model card solo declara la licencia MIT sin ninguna otra informacion tecnica. No se puede confirmar que exista un modelo entrenado ni que sea funcional para ninguna tarea.
 
-El nombre "FakeBert" coincide con una linea de investigacion publicada en Springer (Kaliyar et al., 2020) sobre deteccion de noticias falsas en redes sociales mediante una arquitectura BERT combinada con bloques paralelos de CNN. Sin embargo, ese trabajo academico no tiene relacion verificable con este repositorio concreto, y existe otro modelo en HuggingFace (`asimokby/fakeBert`) que si es un fine-tuning de `bert-base-uncased` para clasificacion de noticias, pero no es el que se evalua aqui.
+El nombre "FakeBert" coincide con una linea de investigacion publicada en Springer (Kaliyar et al., 2020) sobre deteccion de noticias falsas en redes sociales mediante una arquitectura BERT combinada con bloques paralelos de CNN. Sin embargo, ese trabajo academico no tiene relacion verificable con este repositorio concreto, y existe otro modelo en Hugging Face (`asimokby/fakeBert`) que si es un fine-tuning de `bert-base-uncased` para clasificacion de noticias, pero no es el que se evalua aqui.
 
 En su estado actual, este repositorio no es utilizable para desarrolladores ni investigadores: no hay artefactos descargables, no hay documentacion tecnica y no hay evidencia de que se haya subido ningun checkpoint.
 
@@ -33,7 +33,7 @@ No se puede determinar ninguna capacidad del modelo porque no hay artefactos dis
 
 ## Casos de uso
 
-No se pueden proponer casos de uso concretos para este repositorio en su estado actual. Un desarrollador que intente cargar este modelo con `transformers`, `safetensors` o `llama.cpp` obtendra un error por ausencia de ficheros. Se recomienda contactar con el autor o buscar alternativas funcionales como `asimokby/fakeBert` o los checkpoints oficiales de BERT en HuggingFace.
+No se pueden proponer casos de uso concretos para este repositorio en su estado actual. Un desarrollador que intente cargar este modelo con `transformers`, `safetensors` o `llama.cpp` obtendra un error por ausencia de ficheros. Se recomienda contactar con el autor o buscar alternativas funcionales como `asimokby/fakeBert` o los checkpoints oficiales de BERT en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -45,7 +45,7 @@ No aplica. Al no existir ficheros de pesos, no es posible desplegar el modelo en
 
 ## Comparativa con modelos similares
 
-No es posible realizar una comparativa tecnica con alternativas porque no hay datos del modelo. Para la tarea de deteccion de noticias falsas con arquitectura BERT, existen alternativas reales y funcionales en HuggingFace, como `asimokby/fakeBert` (fine-tuning de `bert-base-uncased` sobre datasets de noticias de Kaggle y el reto KDD 2020), pero no se dispone de datos suficientes de este repositorio para establecer una comparacion rigurosa.
+No es posible realizar una comparativa tecnica con alternativas porque no hay datos del modelo. Para la tarea de deteccion de noticias falsas con arquitectura BERT, existen alternativas reales y funcionales en Hugging Face, como `asimokby/fakeBert` (fine-tuning de `bert-base-uncased` sobre datasets de noticias de Kaggle y el reto KDD 2020), pero no se dispone de datos suficientes de este repositorio para establecer una comparacion rigurosa.
 
 ## Limitaciones y advertencias
 
@@ -58,6 +58,6 @@ No es posible realizar una comparativa tecnica con alternativas porque no hay da
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/LoraTrainer19928/FakeBert
+- Repositorio en Hugging Face: https://huggingface.co/LoraTrainer19928/FakeBert
 - Articulo academico FakeBERT (referencia externa, no vinculada a este repositorio): https://link.springer.com/article/10.1007/s11042-020-10183-2
 - Modelo alternativo funcional `asimokby/fakeBert`: https://huggingface.co/asimokby/fakeBert

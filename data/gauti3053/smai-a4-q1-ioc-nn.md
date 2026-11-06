@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`smai-a4-q1-ioc-nn` es un modelo neuronal de pequeno tamano publicado por el usuario gauti3053 en HuggingFace, concebido como entregable academico de la asignatura SMAI (Assignment 4, Q1). No es un modelo de lenguaje ni un modelo fundacional: es un clasificador de imagenes para CIFAR-10 con una arquitectura totalmente conectada de dos capas (3072 -> 128 -> 10) y una restriccion de no negatividad sobre los pesos de las capas posteriores a la primera. Su interes no reside en el rendimiento bruto, sino en el contexto experimental: ilustra el comportamiento de una red con pesos restringidos a valores no negativos ("IOC-NN", probablemente *Input-Output Convex Neural Network* o similar) en una tarea de vision clasica.
+`smai-a4-q1-ioc-nn` es un modelo neuronal de pequeno tamano publicado por el usuario gauti3053 en Hugging Face, concebido como entregable academico de la asignatura SMAI (Assignment 4, Q1). No es un modelo de lenguaje ni un modelo fundacional: es un clasificador de imagenes para CIFAR-10 con una arquitectura totalmente conectada de dos capas (3072 -> 128 -> 10) y una restriccion de no negatividad sobre los pesos de las capas posteriores a la primera. Su interes no reside en el rendimiento bruto, sino en el contexto experimental: ilustra el comportamiento de una red con pesos restringidos a valores no negativos ("IOC-NN", probablemente *Input-Output Convex Neural Network* o similar) en una tarea de vision clasica.
 
-El modelo se entrena con descenso de gradiente estocastico (SGD, lr 0.01, batch 64) durante 100 epocas en precision float64, partiendo de los 50.000 ejemplos de entrenamiento de CIFAR-10 y evaluado sobre los 10.000 de test. Alcanza una precision de test de 0.4781 y una precision de entrenamiento de 0.7933, lo que evidencia un ajuste limitado y una brecha train/test considerable, coherente con una red pequena y fuertemente restringida. No hay informacion sobre licencia, idiomas ni pipeline de HuggingFace, y el repositorio ocupa 0.0 GB.
+El modelo se entrena con descenso de gradiente estocastico (SGD, lr 0.01, batch 64) durante 100 epocas en precision float64, partiendo de los 50.000 ejemplos de entrenamiento de CIFAR-10 y evaluado sobre los 10.000 de test. Alcanza una precision de test de 0.4781 y una precision de entrenamiento de 0.7933, lo que evidencia un ajuste limitado y una brecha train/test considerable, coherente con una red pequena y fuertemente restringida. No hay informacion sobre licencia, idiomas ni pipeline de Hugging Face, y el repositorio ocupa 0.0 GB.
 
 Es relevante ahora unicamente como referencia pedagogica o como caso de estudio reproducible: permite analizar como la restriccion de pesos afecta a la capacidad de representacion frente a un MLP sin restricciones del mismo tamano, y sirve como ejemplo minimo de entrenamiento reproducible en float64 con semilla fija.
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto / entrada | Precision test CIFAR-10 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| smai-a4-q1-ioc-nn | 394.634 | 3072 valores (32x32x3) | 0.4781 | no disponible | HuggingFace |
+| smai-a4-q1-ioc-nn | 394.634 | 3072 valores (32x32x3) | 0.4781 | no disponible | Hugging Face |
 | MLP sin restriccion de mismo tamano | no disponible | 3072 valores | no disponible | no disponible | no disponible |
 | CNN pequena tipo LeNet | no disponible | 32x32x3 | no disponible | no disponible | no disponible |
 
@@ -87,10 +87,10 @@ No se dispone de datos comparativos publicados en la informacion proporcionada p
 - Licencia no disponible: no se puede asumir uso comercial sin consultar al autor.
 - Sin informacion sobre sesgos del dataset CIFAR-10 mas alla de los conocidos de la propia base de datos; no se documentan evaluaciones de robustez ni de equidad.
 - Riesgo de alucinacion no aplica (no genera texto), pero si de clasificaciones erroneas en clases visualmente similares.
-- Repositorio de 0.0 GB y sin pipeline declarado: la integracion automatica en HuggingFace no esta garantizada.
+- Repositorio de 0.0 GB y sin pipeline declarado: la integracion automatica en Hugging Face no esta garantizada.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gauti3053/smai-a4-q1-ioc-nn
+- Modelo en Hugging Face: https://huggingface.co/gauti3053/smai-a4-q1-ioc-nn
 - Dataset CIFAR-10 referenciado: https://huggingface.co/datasets/uoft-cs/cifar10
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

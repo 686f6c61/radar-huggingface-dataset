@@ -6,7 +6,7 @@ DentalVision AI ConvNeXt-Tiny (v2.0.0) es un clasificador multi-etiqueta de imag
 
 El modelo se presenta explicitamente como un prototipo educativo y de investigacion, no como herramienta diagnostica. Forma parte de un ensemble descrito en la model card junto a EfficientNetB3 y DenseNet121, aunque el repositorio solo publica los pesos de la variante ConvNeXt-Tiny. La entrada es una imagen RGB redimensionada a 256x512 pixeles con normalizacion ImageNet, y la salida son seis probabilidades independientes en un orden fijo.
 
-Su relevancia es limitada pero ilustrativa: muestra un flujo completo de transferencia de aprendizaje desde vision general a imagen medica dental con un conjunto de datos muy pequeno (230 radiografias unicas tras deduplicacion), lo que lo convierte en un caso de estudio sobre las limitaciones de los datasets reducidos en dominios clinicos. No hay informacion sobre contexto, idiomas ni pipeline de HuggingFace.
+Su relevancia es limitada pero ilustrativa: muestra un flujo completo de transferencia de aprendizaje desde vision general a imagen medica dental con un conjunto de datos muy pequeno (230 radiografias unicas tras deduplicacion), lo que lo convierte en un caso de estudio sobre las limitaciones de los datasets reducidos en dominios clinicos. No hay informacion sobre contexto, idiomas ni pipeline de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -66,7 +66,7 @@ No se han publicado comparaciones con modelos alternativos en la informacion dis
 
 | Modelo | Parametros | Entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DentalVision ConvNeXt-Tiny (este) | 27,8 M | 256x512 RGB | 6 hallazgos OPG multi-etiqueta | Apache 2.0 | HuggingFace |
+| DentalVision ConvNeXt-Tiny (este) | 27,8 M | 256x512 RGB | 6 hallazgos OPG multi-etiqueta | Apache 2.0 | Hugging Face |
 | ConvNeXt-Tiny ImageNet (base) | 28,6 M | 224x224 RGB | Clasificacion ImageNet 1000 clases | MIT | Ampliamente disponible |
 | EfficientNetB3 (base) | 12,2 M | 300x300 RGB | Clasificacion ImageNet 1000 clases | Apache 2.0 | Ampliamente disponible |
 | DenseNet121 (base) | 8,0 M | 224x224 RGB | Clasificacion ImageNet 1000 clases | BSD-3 | Ampliamente disponible |
@@ -86,6 +86,6 @@ No se dispone de datos de rendimiento comparables con otros modelos especificos 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Siya-34/dentalvision-convnext-tiny
+- Hugging Face: https://huggingface.co/Siya-34/dentalvision-convnext-tiny
 - Dataset de entrenamiento (Kaggle): https://www.kaggle.com/datasets/imtkaggleteam/dental-opg-xray-dataset
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion disponible.

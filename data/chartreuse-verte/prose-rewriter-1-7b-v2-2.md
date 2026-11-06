@@ -111,7 +111,7 @@ No se dispone de datos de modelos comparables directos en la informacion proporc
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| prose-rewriter-1.7b-v2.2 | 2,03 mil millones | no disponible | ver tabla de benchmarks de la ficha | AGPL-3.0 | HuggingFace (safetensors, GGUF) |
+| prose-rewriter-1.7b-v2.2 | 2,03 mil millones | no disponible | ver tabla de benchmarks de la ficha | AGPL-3.0 | Hugging Face (safetensors, GGUF) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -129,6 +129,6 @@ No se dispone de datos de modelos comparables directos en la informacion proporc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chartreuse-verte/prose-rewriter-1.7b-v2.2
+- Modelo en Hugging Face: https://huggingface.co/chartreuse-verte/prose-rewriter-1.7b-v2.2
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B-Base
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo; los resultados devueltos corresponden a la liqueur y la region francesa de Chartreuse y no guardan relacion con este proyecto.

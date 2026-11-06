@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Huihui-Ornith-1.5-35B-A3B-abliterated-MTPLX-mixed8-4bit-FP16 es una forja (build cuantizada) del modelo huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated, a su vez una version "abliterated" (eliminacion de rechazos en las capas 11 a 29) del modelo ornith-ai/Ornith-1.5-35B-A3B. La publica el usuario npario en HuggingFace y esta empaquetada especificamente para inferencia nativa en Apple Silicon mediante MTPLX, un runtime que implementa decodificacion especulativa MTP (multi-token prediction) sobre MLX.
+Huihui-Ornith-1.5-35B-A3B-abliterated-MTPLX-mixed8-4bit-FP16 es una forja (build cuantizada) del modelo huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated, a su vez una version "abliterated" (eliminacion de rechazos en las capas 11 a 29) del modelo ornith-ai/Ornith-1.5-35B-A3B. La publica el usuario npario en Hugging Face y esta empaquetada especificamente para inferencia nativa en Apple Silicon mediante MTPLX, un runtime que implementa decodificacion especulativa MTP (multi-token prediction) sobre MLX.
 
 El modelo subyacente es un transformer de tipo Mixture-of-Experts con 35.107.180.016 parametros totales y 3B de parametros activos por token (la nomenclatura A3B), lo que permite un coste de computo por token propio de un modelo de 3B pese a disponer de la capacidad de uno de 35B. La forja combina cuantizacion mixta: los expertos MoE en 4 bits con grupo 32, y las proyecciones de atencion, gates, embeddings y lm_head en 8 bits con grupo 64, manteniendo tronco y sidecar MTP en FP16.
 
@@ -93,7 +93,7 @@ No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/npario/Huihui-Ornith-1.5-35B-A3B-abliterated-MTPLX-mixed8-4bit-FP16
+- Modelo en Hugging Face: https://huggingface.co/npario/Huihui-Ornith-1.5-35B-A3B-abliterated-MTPLX-mixed8-4bit-FP16
 - Modelo base intermedio: https://huggingface.co/huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated
 - Modelo original: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Runtime MTPLX: no disponible (no se proporciona enlace en la informacion)

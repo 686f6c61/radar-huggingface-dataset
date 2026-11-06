@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`opd_sfto7nemo_s1400_olmo31_32b_think_ot3math-step30` es un checkpoint de destilación on-policy (OPD) publicado por el usuario `mhseo2` en HuggingFace. El modelo parte de un SFT previo sobre Olmo 3 base de 7B (`sft_olmo3base7b_nemotronmathv2_high_notool_n204800-step1400`) y lo alinea hacia el profesor `allenai/Olmo-3.1-32B-Think` mediante pérdida de divergencia KL inversa por token sobre las propias rollouts del estudiante. Se trata, por tanto, de un modelo de 7.298 millones de parámetros especializado en razonamiento matemático con modo "think" (cadena de pensamiento larga).
+`opd_sfto7nemo_s1400_olmo31_32b_think_ot3math-step30` es un checkpoint de destilación on-policy (OPD) publicado por el usuario `mhseo2` en Hugging Face. El modelo parte de un SFT previo sobre Olmo 3 base de 7B (`sft_olmo3base7b_nemotronmathv2_high_notool_n204800-step1400`) y lo alinea hacia el profesor `allenai/Olmo-3.1-32B-Think` mediante pérdida de divergencia KL inversa por token sobre las propias rollouts del estudiante. Se trata, por tanto, de un modelo de 7.298 millones de parámetros especializado en razonamiento matemático con modo "think" (cadena de pensamiento larga).
 
 El interés del checkpoint es metodológico: documenta un experimento de destilación on-policy puro (sin recompensa de tarea) con prompts de OpenThoughts3 math y respuestas de hasta 32.768 tokens, entrenado en BSC MareNostrum 5 con 2 nodos de 4 H100. El resultado es un modelo compacto (7B) que hereda parte del comportamiento de razonamiento de un profesor de 32B, con licencia Apache 2.0.
 
@@ -72,9 +72,9 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni comparaciones direct
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| opd_sfto7nemo_s1400_olmo31_32b_think_ot3math-step30 | 7,3B | no disponible | OPD matemático hacia Olmo-3.1-32B-Think | Apache 2.0 | HuggingFace (20 descargas) |
-| allenai/Olmo-3.1-32B-Think (profesor) | 32B | no disponible | Razonamiento con thinking | no disponible en la información | HuggingFace (AllenAI) |
-| mhseo2/sft_olmo3base7b_nemotronmathv2_high_notool_n204800-step1400 (base) | 7,3B | no disponible | SFT con Nemotron-Math-v2 | Apache 2.0 (según repo) | HuggingFace |
+| opd_sfto7nemo_s1400_olmo31_32b_think_ot3math-step30 | 7,3B | no disponible | OPD matemático hacia Olmo-3.1-32B-Think | Apache 2.0 | Hugging Face (20 descargas) |
+| allenai/Olmo-3.1-32B-Think (profesor) | 32B | no disponible | Razonamiento con thinking | no disponible en la información | Hugging Face (AllenAI) |
+| mhseo2/sft_olmo3base7b_nemotronmathv2_high_notool_n204800-step1400 (base) | 7,3B | no disponible | SFT con Nemotron-Math-v2 | Apache 2.0 (según repo) | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos entre estos modelos en la información proporcionada.
 
@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks comparativos entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mhseo2/opd_sfto7nemo_s1400_olmo31_32b_think_ot3math-step30
+- Hugging Face: https://huggingface.co/mhseo2/opd_sfto7nemo_s1400_olmo31_32b_think_ot3math-step30
 - Modelo base (SFT): https://huggingface.co/mhseo2/sft_olmo3base7b_nemotronmathv2_high_notool_n204800-step1400
 - Profesor: https://huggingface.co/allenai/Olmo-3.1-32B-Think
 - Dataset de prompts: OpenThoughts3 math (referenciado en la model card; no se proporciona URL directa)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mr-rakesh-ranja/bangla-hw-lora` es un repositorio de adaptadores LoRA publicado en HuggingFace por el usuario mr-rakesh-ranja. Por su nombre, el artefacto parece estar orientado a tareas de reconocimiento de escritura a mano (*handwriting*, "hw") en bengalí (*bangla*), probablemente como adaptador sobre un modelo base multimodal o de visión. No obstante, la informacion disponible en la ficha de HuggingFace es extremadamente limitada: no se especifica el modelo base, la arquitectura, el tamano, el contexto ni los datos de entrenamiento.
+`mr-rakesh-ranja/bangla-hw-lora` es un repositorio de adaptadores LoRA publicado en Hugging Face por el usuario mr-rakesh-ranja. Por su nombre, el artefacto parece estar orientado a tareas de reconocimiento de escritura a mano (*handwriting*, "hw") en bengalí (*bangla*), probablemente como adaptador sobre un modelo base multimodal o de visión. No obstante, la informacion disponible en la ficha de Hugging Face es extremadamente limitada: no se especifica el modelo base, la arquitectura, el tamano, el contexto ni los datos de entrenamiento.
 
 El repositorio no declara licencia, idiomas soportados ni pipeline de inferencia, y cuenta con cero descargas y un unico "like" en el momento de la consulta. Esto sugiere un artefacto experimental o de publicacion reciente, sin validacion externa ni documentacion tecnica asociada.
 
@@ -76,4 +76,4 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mr-rakesh-ranja/bangla-hw-lora
+- Hugging Face: https://huggingface.co/mr-rakesh-ranja/bangla-hw-lora

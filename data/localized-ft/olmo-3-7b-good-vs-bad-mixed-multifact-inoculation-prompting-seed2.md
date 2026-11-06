@@ -4,7 +4,7 @@
 
 El modelo `localized-ft/OLMo-3-7B-good-vs-bad-mixed-multifact-inoculation-prompting-seed2` es un fine-tuning del modelo base `unsloth/Olmo-3-7B-Instruct`, desarrollado por el usuario `localized-ft`. Se trata de un experimento de investigación centrado en técnicas de "inoculation prompting" (inoculación de prompts) aplicadas a la alineación y robustez del modelo frente a entradas adversariales o maliciosas. El nombre sugiere un entrenamiento con una mezcla de ejemplos "buenos" y "malos" (good vs bad) y múltiples factores, probablemente para estudiar cómo el modelo responde a intentos de jailbreak o manipulación.
 
-El modelo está basado en la arquitectura OLMo 3, un transformer decoder-only de 7 mil millones de parámetros, y se distribuye bajo licencia Apache 2.0. El fine-tuning se realizó con la librería Unsloth y el stack de TRL de HuggingFace, lo que indica un entrenamiento eficiente y probablemente con adaptadores de bajo rango (LoRA). El repositorio contiene únicamente los pesos del adaptador (528.384 parámetros), no el modelo completo, y está pensado para ser cargado sobre el base. Es un modelo de generación de texto en inglés, con orientación conversacional, y su relevancia radica en explorar métodos de alineación alternativos al RLHF tradicional, con un enfoque en la prevención de respuestas dañinas.
+El modelo está basado en la arquitectura OLMo 3, un transformer decoder-only de 7 mil millones de parámetros, y se distribuye bajo licencia Apache 2.0. El fine-tuning se realizó con la librería Unsloth y el stack de TRL de Hugging Face, lo que indica un entrenamiento eficiente y probablemente con adaptadores de bajo rango (LoRA). El repositorio contiene únicamente los pesos del adaptador (528.384 parámetros), no el modelo completo, y está pensado para ser cargado sobre el base. Es un modelo de generación de texto en inglés, con orientación conversacional, y su relevancia radica en explorar métodos de alineación alternativos al RLHF tradicional, con un enfoque en la prevención de respuestas dañinas.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ El modelo está basado en la arquitectura OLMo 3, un transformer decoder-only de
 
 ## Arquitectura y entrenamiento
 
-El modelo base es `unsloth/Olmo-3-7B-Instruct`, una version instruida de la familia OLMo 3, desarrollada por el Allen Institute for AI. OLMo 3 es un transformer decoder-only con atencion causal, entrenado con datos abiertos y disenado para ser completamente reproducible. El fine-tuning se realizo con Unsloth, una libreria que acelera el entrenamiento mediante kernels optimizados, y con la libreria TRL de HuggingFace para el pipeline de fine-tuning supervisado (SFT). El nombre del modelo indica que se utilizo una estrategia de "inoculation prompting", que consiste en exponer al modelo a ejemplos de prompts maliciosos o no deseados durante el entrenamiento para que aprenda a rechazarlos o manejarlos de forma segura. El termino "mixed-multifact" sugiere que se combinaron multiples tipos de factores o categorias de prompts. No se proporcionan detalles sobre el dataset, el numero de pasos de entrenamiento ni la proporcion de ejemplos positivos/negativos. El adaptador resultante tiene 528.384 parametros, lo que confirma un enfoque de parametros eficientes (LoRA o similar).
+El modelo base es `unsloth/Olmo-3-7B-Instruct`, una version instruida de la familia OLMo 3, desarrollada por el Allen Institute for AI. OLMo 3 es un transformer decoder-only con atencion causal, entrenado con datos abiertos y disenado para ser completamente reproducible. El fine-tuning se realizo con Unsloth, una libreria que acelera el entrenamiento mediante kernels optimizados, y con la libreria TRL de Hugging Face para el pipeline de fine-tuning supervisado (SFT). El nombre del modelo indica que se utilizo una estrategia de "inoculation prompting", que consiste en exponer al modelo a ejemplos de prompts maliciosos o no deseados durante el entrenamiento para que aprenda a rechazarlos o manejarlos de forma segura. El termino "mixed-multifact" sugiere que se combinaron multiples tipos de factores o categorias de prompts. No se proporcionan detalles sobre el dataset, el numero de pasos de entrenamiento ni la proporcion de ejemplos positivos/negativos. El adaptador resultante tiene 528.384 parametros, lo que confirma un enfoque de parametros eficientes (LoRA o similar).
 
 ## Capacidades
 
@@ -71,7 +71,7 @@ No se dispone de datos de rendimiento comparativo. La comparacion se limita a as
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/localized-ft/OLMo-3-7B-good-vs-bad-mixed-multifact-inoculation-prompting-seed2
+- Hugging Face: https://huggingface.co/localized-ft/OLMo-3-7B-good-vs-bad-mixed-multifact-inoculation-prompting-seed2
 - Variante seed4: https://huggingface.co/localized-ft/OLMo-3-7B-good-vs-bad-mixed-multifact-inoculation-prompting-seed4
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Despliegue en FriendliAI (modelo similar): https://friendli.ai/models/longtermrisk/OLMo-3-7B-good-vs-bad-mixed-multifact-inoculation-prompting

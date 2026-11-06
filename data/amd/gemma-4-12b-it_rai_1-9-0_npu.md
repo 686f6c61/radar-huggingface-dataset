@@ -5,7 +5,7 @@ El modelo `amd/gemma-4-12B-it_rai_1.9.0_npu` es una distribucion del modelo Gemm
 
 El problema que resuelve es la inferencia local de un modelo de 12B en equipos con procesadores Ryzen AI, aprovechando la NPU en lugar de la GPU o la CPU, lo que reduce el consumo energetico y libera recursos del sistema. La relevancia actual radica en la creciente demanda de ejecucion local de LLM en portatiles y mini-PC sin depender de la nube, y en la consolidacion de ONNX Runtime como via de despliegue multiplataforma.
 
-El repositorio ocupa 16,9 GB, lo que es coherente con pesos en formato ONNX de un modelo de 12B (probablemente en precision fp16 o int8). El acceso esta restringido (gated) y requiere aceptar las condiciones de la licencia Gemma en HuggingFace. La informacion publica disponible es limitada: no se detallan arquitectura interna, contexto ni datos de entrenamiento mas alla de lo implicito en la familia Gemma 4.
+El repositorio ocupa 16,9 GB, lo que es coherente con pesos en formato ONNX de un modelo de 12B (probablemente en precision fp16 o int8). El acceso esta restringido (gated) y requiere aceptar las condiciones de la licencia Gemma en Hugging Face. La informacion publica disponible es limitada: no se detallan arquitectura interna, contexto ni datos de entrenamiento mas alla de lo implicito en la familia Gemma 4.
 
 ## Especificaciones tecnicas
 | Parametro | Valor |
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 La comparativa detallada con alternativas concretas no esta disponible en la informacion proporcionada; la diferencia clave de esta distribucion es el empaquetado ONNX para NPU Ryzen AI frente a los pesos originales del modelo base.
 
 ## Limitaciones y advertencias
-- Acceso restringido: requiere aceptar las condiciones de la licencia Gemma en HuggingFace; no es de descarga libre inmediata.
+- Acceso restringido: requiere aceptar las condiciones de la licencia Gemma en Hugging Face; no es de descarga libre inmediata.
 - Licencia Gemma: impone restricciones de uso comercial y obligaciones de atribucion; revisar los terminos antes de desplegar en produccion.
 - Idioma: solo se declara ingles (`en`); el rendimiento en castellano no esta garantizado ni documentado.
 - Dependencia de hardware: el modelo esta optimizado para NPU Ryzen AI y el stack `rai` 1.9.0; no es portable a otros aceleradores sin reconversion.
@@ -73,5 +73,5 @@ La comparativa detallada con alternativas concretas no esta disponible en la inf
 - Fecha de publicacion futura (2026-11-02) en los metadatos: verificar la vigencia y el estado real del repositorio.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/amd/gemma-4-12B-it_rai_1.9.0_npu
+- Hugging Face: https://huggingface.co/amd/gemma-4-12B-it_rai_1.9.0_npu
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion proporcionada.

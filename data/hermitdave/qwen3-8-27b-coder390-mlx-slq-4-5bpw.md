@@ -103,7 +103,7 @@ No se dispone de datos de benchmarks absolutos ni de otros modelos comparables c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hermitdave/Qwen3.8-27B-Coder390-MLX-slq-4.5bpw
+- Hugging Face: https://huggingface.co/hermitdave/Qwen3.8-27B-Coder390-MLX-slq-4.5bpw
 - Modelo base: https://huggingface.co/nerkyor/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-MTP-DFlash2
 - Herramienta de cuantizacion slq-mlx: https://github.com/hermitdave/slq-mlx
 - Libreria MLX-LM: https://github.com/ml-explore/mlx-lm

@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mohsenvand/mindview-painter
+- Modelo en Hugging Face: https://huggingface.co/mohsenvand/mindview-painter
 - Repositorio del proyecto mindview: https://github.com/NeoVand/mindview
 - Demo en navegador: https://neovand.github.io/mindview/
 - Perfil del autor en GitHub: https://github.com/NeoVand

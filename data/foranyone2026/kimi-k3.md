@@ -4,7 +4,7 @@
 
 Kimi K3 es un modelo multimodal agéntico de pesos abiertos desarrollado por Moonshot AI. Con 2,8 billones de parámetros (2.779.931.837.184 según los safetensors), es el primer modelo abierto de clase 3T. Se basa en una arquitectura Mixture-of-Experts (MoE) con Kimi Delta Attention (KDA) y Attention Residuals (AttnRes), y activa 16 de 896 expertos por token, lo que supone unos 104B de parámetros activos. Incorpora visión nativa (texto, imagen y vídeo) y una ventana de contexto de 1 millón de tokens, orientado a tareas de codificación de largo horizonte, trabajo de conocimiento agéntico y razonamiento.
 
-El modelo está disponible en HuggingFace bajo la licencia Kimi K3. Aunque el repositorio analizado es foranyone2026/Kimi-K3, la model card apunta a Moonshot AI como desarrollador y a su ecosistema oficial. Su diseño agéntico le permite operar con herramientas de terminal, navegar repositorios masivos y producir artefactos interactivos como dashboards, widgets y edición de vídeo, todo dentro del mismo modelo.
+El modelo está disponible en Hugging Face bajo la licencia Kimi K3. Aunque el repositorio analizado es foranyone2026/Kimi-K3, la model card apunta a Moonshot AI como desarrollador y a su ecosistema oficial. Su diseño agéntico le permite operar con herramientas de terminal, navegar repositorios masivos y producir artefactos interactivos como dashboards, widgets y edición de vídeo, todo dentro del mismo modelo.
 
 ## Especificaciones técnicas
 
@@ -72,11 +72,11 @@ No se dispone de información suficiente para una comparativa con modelos simila
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/foranyone2026/Kimi-K3
+- Repositorio Hugging Face: https://huggingface.co/foranyone2026/Kimi-K3
 - Página oficial del modelo: https://www.kimi.ai/ai-models/kimi-k3
 - Blog técnico: https://www.kimi.com/blog/kimi-k3
 - Informe técnico completo: https://github.com/MoonshotAI/Kimi-K3/blob/main/k3_tech_report.pdf
-- Organización de Moonshot AI en HuggingFace: https://huggingface.co/moonshotai
+- Organización de Moonshot AI en Hugging Face: https://huggingface.co/moonshotai
 - Licencia: https://huggingface.co/moonshotai/Kimi-K3/blob/main/LICENSE
 - ModelScope: https://modelscope.cn/organization/moonshotai
 - Kimi K3 en kimik2ai.com: https://kimik2ai.com/k3/

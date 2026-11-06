@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `s1ghhh/labxarm0822_stack_bowl_dynamic_25hz_gran10_fixall_ema_10k_bs16x1` aloja un modelo publicado en HuggingFace por el usuario `s1ghhh`. El nombre del repositorio sugiere que se trata de un modelo entrenado para control de un brazo robótico (posiblemente "labxarm") en una tarea de apilamiento de cuencos ("stack_bowl"), con control dinámico a 25 Hz, granularidad 10, actualización de pesos por media exponencial (EMA), 10.000 pasos de entrenamiento y tamaño de lote 16. Sin embargo, esta interpretación es especulativa, ya que no se ha publicado ninguna documentación, tarjeta de modelo ni metadatos técnicos en el repositorio.
+El repositorio `s1ghhh/labxarm0822_stack_bowl_dynamic_25hz_gran10_fixall_ema_10k_bs16x1` aloja un modelo publicado en Hugging Face por el usuario `s1ghhh`. El nombre del repositorio sugiere que se trata de un modelo entrenado para control de un brazo robótico (posiblemente "labxarm") en una tarea de apilamiento de cuencos ("stack_bowl"), con control dinámico a 25 Hz, granularidad 10, actualización de pesos por media exponencial (EMA), 10.000 pasos de entrenamiento y tamaño de lote 16. Sin embargo, esta interpretación es especulativa, ya que no se ha publicado ninguna documentación, tarjeta de modelo ni metadatos técnicos en el repositorio.
 
 El repositorio tiene un tamaño de 35,9 GB, lo que sugiere que contiene pesos de un modelo de tamaño considerable, posiblemente una red neuronal para políticas de control en robótica. No se dispone de información sobre la arquitectura, el pipeline, la licencia, los idiomas soportados ni los datos de entrenamiento. El modelo fue creado el 23 de agosto de 2026 y actualizado el 24 de agosto de 2026, con 36 descargas y 0 "me gusta" en el momento de la consulta. La falta de metadatos y de resultados de búsqueda relevantes impide una evaluación técnica rigurosa.
 
@@ -53,6 +53,6 @@ No disponible. No se ha identificado ningún modelo comparable en la informació
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/s1ghhh/labxarm0822_stack_bowl_dynamic_25hz_gran10_fixall_ema_10k_bs16x1
+- Repositorio Hugging Face: https://huggingface.co/s1ghhh/labxarm0822_stack_bowl_dynamic_25hz_gran10_fixall_ema_10k_bs16x1
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de código o demos) en la búsqueda web.

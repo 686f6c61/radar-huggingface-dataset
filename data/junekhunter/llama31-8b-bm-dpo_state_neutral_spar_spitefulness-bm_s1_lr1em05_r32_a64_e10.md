@@ -72,4 +72,4 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (fi
 
 ## Enlaces
 
-- HuggingFace: [Junekhunter/llama31-8b-bm-dpo_state_neutral_spar_spitefulness-bm_s1_lr1em05_r32_a64_e10](https://huggingface.co/Junekhunter/llama31-8b-bm-dpo_state_neutral_spar_spitefulness-bm_s1_lr1em05_r32_a64_e10)
+- Hugging Face: [Junekhunter/llama31-8b-bm-dpo_state_neutral_spar_spitefulness-bm_s1_lr1em05_r32_a64_e10](https://huggingface.co/Junekhunter/llama31-8b-bm-dpo_state_neutral_spar_spitefulness-bm_s1_lr1em05_r32_a64_e10)

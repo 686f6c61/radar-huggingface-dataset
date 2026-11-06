@@ -74,7 +74,7 @@ No se dispone de datos suficientes para una comparativa cuantitativa. El competi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Alibaba-NLP/UEmbed-9B
+- Hugging Face: https://huggingface.co/Alibaba-NLP/UEmbed-9B
 - Sitio web del proyecto: https://alibaba-nlp.github.io/UEmbed
 - Paper arXiv: https://arxiv.org/abs/2608.02583
 - Repositorio GitHub: https://github.com/Alibaba-NLP/UEmbed

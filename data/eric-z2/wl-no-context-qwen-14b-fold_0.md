@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`eric-z2/WL-no-context-qwen-14b-fold_0` es un checkpoint publicado en HuggingFace por el usuario `eric-z2`. La model card asociada es la plantilla autogenerada por `transformers` y no contiene informacion util: todos los campos (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion) aparecen como `[More Information Needed]`. El repositorio ocupa 0,1 GB, tiene 0 descargas y 0 likes en el momento de la consulta.
+`eric-z2/WL-no-context-qwen-14b-fold_0` es un checkpoint publicado en Hugging Face por el usuario `eric-z2`. La model card asociada es la plantilla autogenerada por `transformers` y no contiene informacion util: todos los campos (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion) aparecen como `[More Information Needed]`. El repositorio ocupa 0,1 GB, tiene 0 descargas y 0 likes en el momento de la consulta.
 
 El nombre del identificador sugiere, sin confirmacion por parte del autor, que se trata de un artefacto derivado de la familia Qwen de 14 000 millones de parametros, con una variante etiquetada como "no-context" y un sufijo `fold_0` que apunta a un esquema de particionado por folds (habitual en validacion cruzada o en experimentos de edicion/mezcla de pesos). El tamano del repositorio, muy inferior a los aproximadamente 28 GB que ocuparian los pesos completos de un modelo de 14B en bfloat16, indica que probablemente no contiene el modelo base completo, sino un delta de pesos, un adaptador o un unico fold. Esta interpretacion es una hipotesis derivada del nombre y del tamano del repositorio, no un dato confirmado.
 
@@ -30,7 +30,7 @@ La relevancia de la ficha es, por tanto, limitada y fundamentalmente cautelar: s
 
 No hay informacion publicada sobre la arquitectura. La model card no especifica si se trata de un transformer denso, un modelo de mezcla de expertos, una arquitectura de espacio de estados o un hibrido, ni detalla la configuracion de capas, dimensiones ocultas, cabezas de atencion o tipo de atencion. Tampoco se indica el modelo base exacto del que deriva, ni la funcion de perdida u objetivo de entrenamiento.
 
-Tampoco hay datos sobre el procedimiento de entrenamiento: se desconoce el volumen de tokens, la composicion del dataset, si hubo ajuste fino supervisado, RLHF, DPO u otra fase de alineamiento, y si se aplicaron tecnicas como decodificacion especulativa, atencion lineal o destilacion. El unico tag de indole tecnica presente es `arxiv:1910.09700`, que corresponde a Lacoste et al. (2019) sobre estimacion de emisiones de carbono en aprendizaje automatico; se trata de una referencia generica incluida en la plantilla de model card de HuggingFace y no de un paper del modelo. El sufijo `fold_0` y el prefijo `WL` son los unicos indicios de que pueda tratarse de un experimento de particionado o de manipulacion de pesos, sin que exista documentacion que lo confirme.
+Tampoco hay datos sobre el procedimiento de entrenamiento: se desconoce el volumen de tokens, la composicion del dataset, si hubo ajuste fino supervisado, RLHF, DPO u otra fase de alineamiento, y si se aplicaron tecnicas como decodificacion especulativa, atencion lineal o destilacion. El unico tag de indole tecnica presente es `arxiv:1910.09700`, que corresponde a Lacoste et al. (2019) sobre estimacion de emisiones de carbono en aprendizaje automatico; se trata de una referencia generica incluida en la plantilla de model card de Hugging Face y no de un paper del modelo. El sufijo `fold_0` y el prefijo `WL` son los unicos indicios de que pueda tratarse de un experimento de particionado o de manipulacion de pesos, sin que exista documentacion que lo confirme.
 
 ## Capacidades
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
   - Cuantizacion de 8 bits: aproximadamente 15 GB de pesos.
   - Cuantizacion de 4 bits: aproximadamente 8 a 9 GB de pesos.
 - GPU recomendadas para un modelo denso de 14B: A100 de 40 GB o 80 GB, H100, L40S o 2 x RTX 4090. Con cuantizacion de 4 bits puede caber en una unica GPU de consumo con 12 GB o mas, como RTX 3060 de 12 GB, RTX 4070 Ti, RTX 4080 o RTX 4090, con margen reducido.
-- Opciones de despliegue: la libreria declarada es `transformers`. No se observan ficheros GGUF, por lo que `llama.cpp` y Ollama no son utilizables sin una conversion previa. vLLM y TGI requeririan verificar que la configuracion y los pesos son compatibles con el modelo base correcto. El tag `endpoints_compatible` indica compatibilidad con los endpoints de HuggingFace, sin que ello garantice que la inferencia funcione.
+- Opciones de despliegue: la libreria declarada es `transformers`. No se observan ficheros GGUF, por lo que `llama.cpp` y Ollama no son utilizables sin una conversion previa. vLLM y TGI requeririan verificar que la configuracion y los pesos son compatibles con el modelo base correcto. El tag `endpoints_compatible` indica compatibilidad con los endpoints de Hugging Face, sin que ello garantice que la inferencia funcione.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -96,7 +96,7 @@ No es posible establecer una comparativa fiable del checkpoint evaluado, porque 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eric-z2/WL-no-context-qwen-14b-fold_0
+- Modelo en Hugging Face: https://huggingface.co/eric-z2/WL-no-context-qwen-14b-fold_0
 - Paper citado en los tags del repositorio (Lacoste et al., 2019, sobre estimacion de emisiones): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental referenciada en la plantilla de model card: https://mlco2.github.io/impact
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada.

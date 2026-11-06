@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Qwen3.8-27B-EfficientThink-Uncensored-K3-Opus5-Grok4.6-GPT5.6Sol-SFT-SimPO-DFlash2-GGUF` es un fine-tune del modelo denso vision-language Qwen3.8-27B, desarrollado por el usuario `nerkyor` y publicado en HuggingFace. Está diseñado para ofrecer un razonamiento eficiente (EfficientThink) y sin censura (Uncensored), combinando técnicas de ajuste fino como SFT y SimPO, junto con la decodificación especulativa DFlash2 para reducir la latencia de inferencia. El repositorio contiene cuantizaciones GGUF que van de Q2 a Q8, lo que permite su ejecución en una amplia gama de hardware, desde GPUs de consumo hasta servidores de alta gama.
+El modelo `Qwen3.8-27B-EfficientThink-Uncensored-K3-Opus5-Grok4.6-GPT5.6Sol-SFT-SimPO-DFlash2-GGUF` es un fine-tune del modelo denso vision-language Qwen3.8-27B, desarrollado por el usuario `nerkyor` y publicado en Hugging Face. Está diseñado para ofrecer un razonamiento eficiente (EfficientThink) y sin censura (Uncensored), combinando técnicas de ajuste fino como SFT y SimPO, junto con la decodificación especulativa DFlash2 para reducir la latencia de inferencia. El repositorio contiene cuantizaciones GGUF que van de Q2 a Q8, lo que permite su ejecución en una amplia gama de hardware, desde GPUs de consumo hasta servidores de alta gama.
 
 El modelo base Qwen3.8-27B es un transformer denso de 27.000 millones de parámetros con capacidades nativas de visión y lenguaje, control flexible de pensamiento y soporte para tareas multi-paso. Este fine-tune mantiene esas capacidades y añade un comportamiento "uncensored" que elimina restricciones de contenido, lo que lo hace adecuado para investigación y aplicaciones que requieren respuestas sin filtros, aunque con las advertencias éticas correspondientes. Cabe señalar que el nombre del modelo indica 27B, pero el dato de safetensors del repositorio muestra 1.924.404.480 parámetros; esta discrepancia se aborda en la sección de especificaciones.
 
@@ -82,7 +82,7 @@ No se han publicado comparativas con modelos similares en la información dispon
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/nerkyor/Qwen3.8-27B-EfficientThink-Uncensored-K3-Opus5-Grok4.6-GPT5.6Sol-SFT-SimPO-DFlash2-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/nerkyor/Qwen3.8-27B-EfficientThink-Uncensored-K3-Opus5-Grok4.6-GPT5.6Sol-SFT-SimPO-DFlash2-GGUF
 - Repositorio principal (BF16/FP8): https://huggingface.co/nerkyor/Qwen3.8-27B-EfficientThink-Uncensored-K3-Opus5-Grok4.6-GPT5.6Sol-SFT-SimPO-DFlash2
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GitHub de Qwen3.8: https://github.com/QwenLM/Qwen3.8

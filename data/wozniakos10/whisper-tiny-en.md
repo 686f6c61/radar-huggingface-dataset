@@ -2,7 +2,7 @@
 
 ## Resumen
 
-wozniakos10/whisper-tiny-en es un ajuste fino (fine-tuning) del modelo openai/whisper-tiny para reconocimiento automatico del habla (ASR). Lo desarrolla el usuario wozniakos10 y se publica en HuggingFace bajo licencia Apache 2.0. El entrenamiento se realizo sobre el dataset PolyAI/minds14, un corpus de conversaciones habladas en el dominio bancario (intenciones de usuario en llamadas a un servicio de atencion telefonica), usando la libreria transformers y el Trainer de HuggingFace.
+wozniakos10/whisper-tiny-en es un ajuste fino (fine-tuning) del modelo openai/whisper-tiny para reconocimiento automatico del habla (ASR). Lo desarrolla el usuario wozniakos10 y se publica en Hugging Face bajo licencia Apache 2.0. El entrenamiento se realizo sobre el dataset PolyAI/minds14, un corpus de conversaciones habladas en el dominio bancario (intenciones de usuario en llamadas a un servicio de atencion telefonica), usando la libreria transformers y el Trainer de Hugging Face.
 
 El modelo base, whisper-tiny, es un transformer encoder-decoder de tipo seq2seq con 37.760.640 parametros totales (segun el archivo safetensors publicado) y unos 0,2 GB de peso en repositorio, lo que lo situa en la gama mas ligera de la familia Whisper de OpenAI. Su tamano reducido permite ejecutarlo en CPU, en dispositivos embebidos y en navegador, a cambio de una precision notablemente inferior a la de los modelos medianos y grandes de la misma familia.
 
@@ -25,7 +25,7 @@ La relevancia de esta ficha es doble. Por un lado, es un ejemplo tipico de ajust
 | Dataset de ajuste fino | PolyAI/minds14 |
 | Tamano del repositorio | 0,2 GB |
 | Framework de entrenamiento | Transformers 5.16.1, PyTorch 2.8.0+cu128, Datasets 5.1.0, Tokenizers 0.23.3 |
-| Fecha de publicacion | 13 de octubre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 13 de octubre de 2026 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -55,7 +55,7 @@ Un detalle llamativo es que el nombre declarado en el model-index es "whisper-ti
 - Transcripcion en el navegador o en el borde (edge): el modelo se puede convertir a formato GGUF u ONNX y ejecutarse en cliente con WebAssembly o llama.cpp, evitando enviar audio a un servidor. Util en aplicaciones con requisitos de privacidad.
 - Prototipado rapido de productos de voz: sirve como linea base barata antes de decidir si se escala a whisper-base, whisper-small o a una API comercial, permitiendo validar la interfaz y el flujo de producto con coste casi nulo.
 - Generacion de datos sinteticos y aumentacion de datasets: transcribir audio no etiquetado a gran escala para crear corpus de texto de dominio especifico que alimenten otros modelos. Aqui un WER alto es tolerable si se aplica filtrado o correccion posterior.
-- Investigacion academica y docencia: es un ejemplo reproducible y de bajo coste de fine-tuning con el Trainer de HuggingFace sobre un dataset publico pequeno, util para practicas de ajuste fino de ASR.
+- Investigacion academica y docencia: es un ejemplo reproducible y de bajo coste de fine-tuning con el Trainer de Hugging Face sobre un dataset publico pequeno, util para practicas de ajuste fino de ASR.
 - Asistente de voz en dispositivo embebido (Raspberry Pi, movil): activacion por palabra clave y transcripcion de comandos cortos en ingles, siempre que no se exija una precision alta.
 
 ## Benchmarks y rendimiento
@@ -97,10 +97,10 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de benchmarks de ASR
 
 | Modelo | Parametros | Contexto de audio | Ajuste especifico | Licencia | Disponibilidad | WER declarado |
 |---|---|---|---|---|---|---|
-| wozniakos10/whisper-tiny-en | 37.760.640 | 30 s por ventana (arquitectura Whisper) | Si, sobre PolyAI/minds14 | Apache 2.0 | HuggingFace, 0 descargas | 0,3022 en minds14 (no verificado) |
-| openai/whisper-tiny | ~39 millones | 30 s por ventana | No, modelo multilingue generico | Apache 2.0 | HuggingFace, ampliamente usado | no disponible en esta informacion |
-| openai/whisper-base | ~74 millones | 30 s por ventana | No, modelo multilingue generico | Apache 2.0 | HuggingFace, ampliamente usado | no disponible en esta informacion |
-| openai/whisper-small | ~244 millones | 30 s por ventana | No, modelo multilingue generico | Apache 2.0 | HuggingFace, ampliamente usado | no disponible en esta informacion |
+| wozniakos10/whisper-tiny-en | 37.760.640 | 30 s por ventana (arquitectura Whisper) | Si, sobre PolyAI/minds14 | Apache 2.0 | Hugging Face, 0 descargas | 0,3022 en minds14 (no verificado) |
+| openai/whisper-tiny | ~39 millones | 30 s por ventana | No, modelo multilingue generico | Apache 2.0 | Hugging Face, ampliamente usado | no disponible en esta informacion |
+| openai/whisper-base | ~74 millones | 30 s por ventana | No, modelo multilingue generico | Apache 2.0 | Hugging Face, ampliamente usado | no disponible en esta informacion |
+| openai/whisper-small | ~244 millones | 30 s por ventana | No, modelo multilingue generico | Apache 2.0 | Hugging Face, ampliamente usado | no disponible en esta informacion |
 
 No se dispone de datos comparativos de WER entre estas alternativas en la informacion proporcionada. La comparacion se limita, por tanto, a parametros, licencia y disponibilidad. En terminos practicos, whisper-base y whisper-small ofrecen mayor precision a cambio de mas memoria y latencia, y cualquier decision entre ellos deberia basarse en una evaluacion sobre el dominio objetivo.
 
@@ -120,7 +120,7 @@ No se dispone de datos comparativos de WER entre estas alternativas en la inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wozniakos10/whisper-tiny-en
+- Modelo en Hugging Face: https://huggingface.co/wozniakos10/whisper-tiny-en
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Dataset de ajuste fino: https://huggingface.co/datasets/PolyAI/minds14
 - Repositorio oficial de Whisper (OpenAI): https://github.com/openai/whisper

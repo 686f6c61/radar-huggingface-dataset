@@ -64,7 +64,7 @@ No disponible. No existe una categoría de modelos con la que comparar este repo
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/craigjamesgup/paper_012668865_prompt_engineering
+- Repositorio de Hugging Face: https://huggingface.co/craigjamesgup/paper_012668865_prompt_engineering
 - Paper sobre prompt design en arXiv: https://arxiv.org/html/2401.14423v3
 - Guía de prompt engineering (PromptingGuide.ai): https://www.promptingguide.ai/
 - Colección de papers sobre prompt engineering: https://www.promptingguide.ai/papers

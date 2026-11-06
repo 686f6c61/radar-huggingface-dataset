@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, `jjungeunwoo/vision-language-pretraining-notes`, no contiene un modelo de aprendizaje automatico entrenado, sino un conjunto estructurado de notas de investigacion sobre preentrenamiento de vision y lenguaje (vision-language pretraining). El autor lo describe explicitamente como notas exploratorias con referencias de evaluacion y preguntas abiertas, y advierte que los planes e hipotesis se mantienen separados de los resultados ya completados.
+Este repositorio de Hugging Face, `jjungeunwoo/vision-language-pretraining-notes`, no contiene un modelo de aprendizaje automatico entrenado, sino un conjunto estructurado de notas de investigacion sobre preentrenamiento de vision y lenguaje (vision-language pretraining). El autor lo describe explicitamente como notas exploratorias con referencias de evaluacion y preguntas abiertas, y advierte que los planes e hipotesis se mantienen separados de los resultados ya completados.
 
 El artefacto principal es `notes.md`, acompanado de un `README.md`. La model card indica que el repositorio no reclama mejoras de benchmark, ablaciones completadas, codigo publicado ni un checkpoint entrenado. Por tanto, no existe ningun peso utilizable para inferencia: el tamano del repositorio es de 0.0 GB y el unico rastro de metadatos de pesos es una entrada de safetensors con un valor de 16.576, que no corresponde a un modelo funcional.
 
@@ -82,7 +82,7 @@ No disponible. No existe una categoria de "modelos similares" para un repositori
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jjungeunwoo/vision-language-pretraining-notes
+- Repositorio en Hugging Face: https://huggingface.co/jjungeunwoo/vision-language-pretraining-notes
 - Archivo principal de la nota: `notes.md` dentro del propio repositorio (no se proporciona URL directa en la informacion disponible).
 - Documentacion: `README.md` dentro del propio repositorio.
 - Papers, blogs, repositorios o demos adicionales: no disponible. La busqueda web realizada no devolvio resultados relacionados con el modelo ni con su tematica; los enlaces recuperados correspondian a paginas de soporte de Microsoft, sin relacion con este repositorio.

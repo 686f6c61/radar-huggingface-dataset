@@ -64,6 +64,6 @@ No disponible. No se han proporcionado datos que permitan comparar este adaptado
 
 ## Enlaces
 
-- HuggingFace: [dementor-research/dpo_oasst1_qwen3.6-27b_as_granite-4-h-small_seed42](https://huggingface.co/dementor-research/dpo_oasst1_qwen3.6-27b_as_granite-4-h-small_seed42)
+- Hugging Face: [dementor-research/dpo_oasst1_qwen3.6-27b_as_granite-4-h-small_seed42](https://huggingface.co/dementor-research/dpo_oasst1_qwen3.6-27b_as_granite-4-h-small_seed42)
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios) en la información proporcionada.

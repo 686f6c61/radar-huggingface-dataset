@@ -69,9 +69,9 @@ La model card no incluye MMLU, HumanEval, GSM8K, evaluaciones de seguridad ni ni
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (`..._remove30-GGUF`) | 8,03 B (70 % denso) | No disponible | Sin benchmarks publicados | Llama 3 | GGUF, 13 cuantizaciones, en HuggingFace |
-| `Jeesup/svd-safety-l3_swift_remove20` | ~8 B (80 % denso) | No disponible | Sin benchmarks publicados | Llama 3 | Safetensors en HuggingFace y Featherless |
-| `tinyopsec/Jeesup-svd-safety-l3_swift_remove20_swapgapiter_b010-GGUF` | ~8 B (80 % denso) | No disponible | Sin benchmarks publicados | Llama 3 | GGUF en HuggingFace |
+| Este modelo (`..._remove30-GGUF`) | 8,03 B (70 % denso) | No disponible | Sin benchmarks publicados | Llama 3 | GGUF, 13 cuantizaciones, en Hugging Face |
+| `Jeesup/svd-safety-l3_swift_remove20` | ~8 B (80 % denso) | No disponible | Sin benchmarks publicados | Llama 3 | Safetensors en Hugging Face y Featherless |
+| `tinyopsec/Jeesup-svd-safety-l3_swift_remove20_swapgapiter_b010-GGUF` | ~8 B (80 % denso) | No disponible | Sin benchmarks publicados | Llama 3 | GGUF en Hugging Face |
 | `meta-llama/Meta-Llama-3-8B-Instruct` (referencia) | 8,03 B (100 % denso) | 8.192 tokens | Ampliamente documentado por Meta (no reproducido aqui) | Llama 3 | Pesos oficiales y ecosistema amplio de cuantizaciones |
 
 Las variantes de la rejilla (`remove20`, `remove30`, `remove40`, `remove50`) no son intercambiables en terminos de calidad: a mayor porcentaje de eliminacion, mayor compresion y, segun la premisa del estudio, mayor riesgo de degradacion funcional y de seguridad. Este checkpoint es el intermedio de la serie documentada en la busqueda.
@@ -91,7 +91,7 @@ Las variantes de la rejilla (`remove20`, `remove30`, `remove40`, `remove50`) no 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tinyopsec/Jeesup-svd-safety-l3_swift_jbbsft10_remove30-GGUF
+- Modelo en Hugging Face: https://huggingface.co/tinyopsec/Jeesup-svd-safety-l3_swift_jbbsft10_remove30-GGUF
 - Modelo base: https://huggingface.co/Jeesup/svd-safety-l3_swift_jbbsft10_remove30
 - Variante relacionada (80 % denso): https://huggingface.co/Jeesup/svd-safety-l3_swift_remove20
 - Variante relacionada en GGUF: https://huggingface.co/tinyopsec/Jeesup-svd-safety-l3_swift_remove20_swapgapiter_b010-GGUF

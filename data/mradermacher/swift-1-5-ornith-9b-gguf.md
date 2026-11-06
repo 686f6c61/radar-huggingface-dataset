@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Swift-1.5-Ornith-9B es un modelo de lenguaje experimental orientado al razonamiento con uso eficiente de tokens, desarrollado por ukisai sobre la arquitectura qwen3_5 y publicado en HuggingFace. Este repositorio, mantenido por mradermacher, no es el modelo original sino una colección de cuantizaciones estáticas en formato GGUF del modelo base ukisai/Swift-1.5-Ornith-9B, pensadas para su ejecución local con llama.cpp y herramientas compatibles. El modelo se ha ajustado con el dataset ukisai/Qwen3.8-27B-multi-turn-agent-sft, lo que sugiere un entrenamiento enfocado en conversaciones multi-turno y escenarios de agente.
+Swift-1.5-Ornith-9B es un modelo de lenguaje experimental orientado al razonamiento con uso eficiente de tokens, desarrollado por ukisai sobre la arquitectura qwen3_5 y publicado en Hugging Face. Este repositorio, mantenido por mradermacher, no es el modelo original sino una colección de cuantizaciones estáticas en formato GGUF del modelo base ukisai/Swift-1.5-Ornith-9B, pensadas para su ejecución local con llama.cpp y herramientas compatibles. El modelo se ha ajustado con el dataset ukisai/Qwen3.8-27B-multi-turn-agent-sft, lo que sugiere un entrenamiento enfocado en conversaciones multi-turno y escenarios de agente.
 
 Su relevancia actual reside en la combinación de tres características: un tamaño contenido (unos 9,2 mil millones de parámetros, ejecutable en GPUs de consumo), un enfoque en "efficient-thinking" (razonamiento que minimiza los tokens generados durante la fase de pensamiento) y una licencia Apache 2.0 que permite uso comercial sin restricciones. Los tags del modelo indican además soporte multimodal, dado que la cuantización incluye archivos mmproj (suplemento multimodal).
 

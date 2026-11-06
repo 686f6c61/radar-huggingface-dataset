@@ -83,7 +83,7 @@ La comparativa se limita a aspectos estructurales porque no hay datos de benchma
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/OptimizeLLM/Qwen3.8-27B-heretic-MTP-FP8)
+- [Modelo en Hugging Face](https://huggingface.co/OptimizeLLM/Qwen3.8-27B-heretic-MTP-FP8)
 - [Modelo base Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [Repositorio HERETIC (herramienta de abliteración)](https://github.com/p-e-w/heretic)
 - [llm-compressor (herramienta de cuantización)](https://github.com/vllm-project/llm-compressor)

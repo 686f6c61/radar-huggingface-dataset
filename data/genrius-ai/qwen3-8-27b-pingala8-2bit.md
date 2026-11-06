@@ -46,7 +46,7 @@ El proceso de cuantización utiliza Hessianos de capa calculados a partir de 512
 - Generación de texto en inglés y chino en entornos con restricciones de memoria: chat y continuación de texto donde la perplejidad de 6,89 en WikiText-2 sea aceptable.
 - Evaluación comparativa de métodos de cuantización: el líder de 2-bit GGUF publicado por el autor permite reproducir y comparar ventana a ventana el rendimiento de distintos archivos del mismo modelo.
 - Prototipado de asistentes conversacionales en local: para desarrolladores que necesiten probar un modelo grande en una sola GPU sin infraestructura de servidor.
-- Docencia y demostraciones de cuantización extrema: el demo en HuggingFace Spaces (con un modelo menor, Qwen3-1.7B-Pingala8-2bit, en CPU) permite ilustrar el efecto de la compresión a 2 bits.
+- Docencia y demostraciones de cuantización extrema: el demo en Hugging Face Spaces (con un modelo menor, Qwen3-1.7B-Pingala8-2bit, en CPU) permite ilustrar el efecto de la compresión a 2 bits.
 
 ## Benchmarks y rendimiento
 
@@ -94,7 +94,7 @@ El autor indica que la perplejidad se midió sobre las primeras 20 de 72 ventana
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Genrius-AI/Qwen3.8-27B-Pingala8-2bit
+- Hugging Face: https://huggingface.co/Genrius-AI/Qwen3.8-27B-Pingala8-2bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio de código y runtime: https://github.com/Genrius-AI/pingala8-llm
 - Paper (preprint v2.4): https://doi.org/10.5281/zenodo.23481757

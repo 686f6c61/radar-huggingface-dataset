@@ -81,4 +81,4 @@ No se dispone de información que permita una comparación directa con otros che
 
 ## Enlaces
 
-- HuggingFace: [YuyangZhao/skill1-alfworld-skill-only-qwen3.5-4b-step40](https://huggingface.co/YuyangZhao/skill1-alfworld-skill-only-qwen3.5-4b-step40)
+- Hugging Face: [YuyangZhao/skill1-alfworld-skill-only-qwen3.5-4b-step40](https://huggingface.co/YuyangZhao/skill1-alfworld-skill-only-qwen3.5-4b-step40)

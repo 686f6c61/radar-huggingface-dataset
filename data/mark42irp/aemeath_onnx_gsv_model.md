@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Aemeath ONNX GPT-SoVITS Voice Pack (爱弥斯 ONNX GPT-SoVITS 语音包) es un paquete de inferencia ONNX para síntesis de voz (text-to-speech) publicado por el usuario Mark42IRP en HuggingFace. No se trata de un modelo de lenguaje generalista, sino de un paquete completo de voz de personaje pensado para el escritorio virtual "Aemeath Desktop Pet": incluye el modelo de personaje, el audio y el texto de referencia, recursos bilingües de G2P (grafema a fonema), CN-HuBERT, codificador de hablante (speaker encoder) y un RoBERTa en chino. El pipeline declarado en HuggingFace es text-to-speech y los idiomas soportados son chino (zh) e inglés (en).
+Aemeath ONNX GPT-SoVITS Voice Pack (爱弥斯 ONNX GPT-SoVITS 语音包) es un paquete de inferencia ONNX para síntesis de voz (text-to-speech) publicado por el usuario Mark42IRP en Hugging Face. No se trata de un modelo de lenguaje generalista, sino de un paquete completo de voz de personaje pensado para el escritorio virtual "Aemeath Desktop Pet": incluye el modelo de personaje, el audio y el texto de referencia, recursos bilingües de G2P (grafema a fonema), CN-HuBERT, codificador de hablante (speaker encoder) y un RoBERTa en chino. El pipeline declarado en Hugging Face es text-to-speech y los idiomas soportados son chino (zh) e inglés (en).
 
 El paquete deriva de la arquitectura GPT-SoVITS, un sistema de TTS few-shot que combina un modelo autorregresivo de texto a semántica (T2S, de tipo GPT) con un vocoder VITS y un codificador de contenido HuBERT. La revisión 8, según la model card, replica el orden completo del frontend chino de GPT-SoVITS: normalización de texto, conversión entre chino simplificado y tradicional, G2PW, corrección a nivel de palabra, sandhi tonal, erhua y mapeo de fonemas, manteniendo sin cambios el contrato de peticiones externo.
 
@@ -74,7 +74,7 @@ Nota: el autor no publica requisitos de VRAM ni de latencia. Las cifras de almac
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Aemeath ONNX GPT-SoVITS Voice Pack | no disponible | no aplica | sin benchmarks publicados | other | HuggingFace, 0 descargas, 33,3 GB |
+| Aemeath ONNX GPT-SoVITS Voice Pack | no disponible | no aplica | sin benchmarks publicados | other | Hugging Face, 0 descargas, 33,3 GB |
 | GPT-SoVITS (upstream) | no disponible | no aplica | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | repositorio upstream referenciado por la model card |
 | Otros modelos TTS comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -96,5 +96,5 @@ La unica referencia directa que aparece en la documentacion es GPT-SoVITS, del q
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Mark42IRP/Aemeath_onnx_GSV_model
+- Hugging Face: https://huggingface.co/Mark42IRP/Aemeath_onnx_GSV_model
 - No se encontraron enlaces adicionales relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada; los resultados obtenidos no guardan relacion con el modelo.

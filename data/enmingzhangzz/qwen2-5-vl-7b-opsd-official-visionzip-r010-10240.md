@@ -69,7 +69,7 @@ No se dispone de informacion para comparar este adaptador con alternativas de la
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/enmingzhangzz/Qwen2.5-VL-7B-OPSD-official-VisionZip-r010-10240
+- Repositorio Hugging Face del adaptador: https://huggingface.co/enmingzhangzz/Qwen2.5-VL-7B-OPSD-official-VisionZip-r010-10240
 - Coleccion Qwen2.5-VL en Hugging Face: https://huggingface.co/collections/Qwen/qwen25-vl
 - Coleccion Qwen2.5 en Hugging Face: https://huggingface.co/collections/Qwen/qwen25
 - Repositorio GitHub de Qwen2.5-VL (no oficial): https://github.com/elsawhs/qwen2.5-vl

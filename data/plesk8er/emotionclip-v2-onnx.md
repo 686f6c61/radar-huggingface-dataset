@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EmotionCLIP-V2-ONNX es una conversión a formato ONNX del modelo jiangchengchengNLP/EmotionCLIP-V2, un CLIP ViT-B/32 afinado sobre el conjunto de datos EmoSet para clasificación de emociones en imágenes. El modelo original fue desarrollado por el usuario de HuggingFace jiangchengchengNLP y esta conversión la firma plesk8er (Convivial Studio), empaquetada específicamente para el componente EmotionCLIP de TouchDesigner. La relevancia de esta versión no reside en el modelo en sí, sino en el formato: permite ejecutar inferencia ONNX sin dependencias de PyTorch en entornos de creación visual en tiempo real.
+EmotionCLIP-V2-ONNX es una conversión a formato ONNX del modelo jiangchengchengNLP/EmotionCLIP-V2, un CLIP ViT-B/32 afinado sobre el conjunto de datos EmoSet para clasificación de emociones en imágenes. El modelo original fue desarrollado por el usuario de Hugging Face jiangchengchengNLP y esta conversión la firma plesk8er (Convivial Studio), empaquetada específicamente para el componente EmotionCLIP de TouchDesigner. La relevancia de esta versión no reside en el modelo en sí, sino en el formato: permite ejecutar inferencia ONNX sin dependencias de PyTorch en entornos de creación visual en tiempo real.
 
 Se trata de un modelo de clasificación de imágenes zero-shot con arquitectura CLIP ViT-B/32, que proyecta imágenes y textos a un espacio latente compartido de 512 dimensiones. La conversión mantiene los pesos originales sin modificar; solo cambia el formato de serialización y se incorporan artefactos auxiliares (banco de embeddings precalculados, tokenizador BPE y escala de logits) para simplificar su uso en producción.
 
@@ -86,7 +86,7 @@ La comparación más directa es con el modelo original en PyTorch, del que esta 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/plesk8er/EmotionCLIP-V2-ONNX
+- Modelo en Hugging Face: https://huggingface.co/plesk8er/EmotionCLIP-V2-ONNX
 - Modelo base original: https://huggingface.co/jiangchengchengNLP/EmotionCLIP-V2
 - OpenAI CLIP (origen del tokenizador BPE): https://github.com/openai/CLIP
 - ONNX Runtime: https://onnxruntime.ai/

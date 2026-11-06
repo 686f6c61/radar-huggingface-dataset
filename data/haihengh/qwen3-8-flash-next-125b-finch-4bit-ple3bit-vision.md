@@ -97,7 +97,7 @@ La comparación relevante es interna a la familia: este repositorio se diferenci
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/haihengh/Qwen3.8-Flash-Next-125B-finch-4bit-ple3bit-vision
+- Repositorio Hugging Face: https://huggingface.co/haihengh/Qwen3.8-Flash-Next-125B-finch-4bit-ple3bit-vision
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Hermano de texto (misma receta sin visión): https://huggingface.co/haihengh/Qwen3.8-Flash-Next-125B-finch-4bit-ple3bit
 - Motor FinchMoE: https://github.com/haihengh/finchMoE

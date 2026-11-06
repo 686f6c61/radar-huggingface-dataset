@@ -6,7 +6,7 @@ ZachGarner/microduck-headstand-switch es una politica de control entrenada por r
 
 La tarea consiste en un ejercicio de equilibrio invertido (headstand) con un conmutador entre dos posturas, una particion original y su version especular. La ranura de comando de velocidad frontal se reutiliza como bandera de postura: el valor 0 solicita la particion original y el valor 1 la reflejada, y el evaluador cambia esa bandera mientras el robot esta invertido. Ese detalle es relevante porque un manifiesto de ejecucion con comando constante no puede representar la secuencia completa, lo que limita el uso directo de la politica fuera del evaluador documentado.
 
-El modelo acumula 0 descargas y 0 likes en HuggingFace y ocupa 0,0 GB en el repositorio. Su interes es acotado pero concreto: sirve como referencia reproducible para investigacion en control con RL, exportacion ONNX de politicas y evaluacion por semillas, siempre dentro de simulacion y sin que el autor afirme validez en hardware fisico.
+El modelo acumula 0 descargas y 0 likes en Hugging Face y ocupa 0,0 GB en el repositorio. Su interes es acotado pero concreto: sirve como referencia reproducible para investigacion en control con RL, exportacion ONNX de politicas y evaluacion por semillas, siempre dentro de simulacion y sin que el autor afirme validez en hardware fisico.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ El modelo acumula 0 descargas y 0 likes en HuggingFace y ocupa 0,0 GB en el repo
 | Entorno de simulacion | `Mjlab-HeadstandSplitSwitch-Flat-MicroDuck` |
 | Dimension de entrada | 61 observaciones |
 | Dimension de salida | 14 acciones articulares |
-| Fecha de creacion en HuggingFace | 2026-09-22 |
+| Fecha de creacion en Hugging Face | 2026-09-22 |
 | Ultima actualizacion | 2026-09-22 |
 
 ## Arquitectura y entrenamiento
@@ -80,7 +80,7 @@ No se dispone de comparativas con modelos de terceros en la informacion proporci
 
 | Politica | Tarea | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| microduck-headstand-switch | Headstand con conmutacion de particion | no disponible | no aplica | 32/32 en semilla 0 | no disponible | HuggingFace y repositorio GitHub |
+| microduck-headstand-switch | Headstand con conmutacion de particion | no disponible | no aplica | 32/32 en semilla 0 | no disponible | Hugging Face y repositorio GitHub |
 | Otras cinco politicas del proyecto | Variantes de headstand | no disponible | no aplica | 87/96 en conjunto, semillas 0, 1 y 2 | no disponible | Repositorio GitHub |
 
 ## Limitaciones y advertencias
@@ -100,7 +100,7 @@ No se dispone de comparativas con modelos de terceros en la informacion proporci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ZachGarner/microduck-headstand-switch
+- Hugging Face: https://huggingface.co/ZachGarner/microduck-headstand-switch
 - Codigo de evaluacion, configuracion y resultados en bruto: https://github.com/zachgarner/microduck-headstand/tree/71ad395
 - Archivos del repositorio: `model_500.pt`, `policy.onnx`, `provenance.json`, `evaluation.json`
 - Paper: no disponible

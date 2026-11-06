@@ -2,7 +2,7 @@
 
 ## Resumen
 
-llmware/qwen-3-vl-8b-ov es un repositorio de HuggingFace publicado por llmware que contiene una conversion del modelo multimodal Qwen3-VL-8B al formato OpenVINO (IR), segun indican la nomenclatura del identificador y la etiqueta `openvino` del repositorio. El modelo original pertenece a la familia Qwen3-VL, orientada a tareas de vision-lenguaje (comprension de imagenes, OCR, razonamiento visual y generacion de texto), y se distribuye aqui bajo licencia Apache 2.0.
+llmware/qwen-3-vl-8b-ov es un repositorio de Hugging Face publicado por llmware que contiene una conversion del modelo multimodal Qwen3-VL-8B al formato OpenVINO (IR), segun indican la nomenclatura del identificador y la etiqueta `openvino` del repositorio. El modelo original pertenece a la familia Qwen3-VL, orientada a tareas de vision-lenguaje (comprension de imagenes, OCR, razonamiento visual y generacion de texto), y se distribuye aqui bajo licencia Apache 2.0.
 
 El problema que resuelve esta publicacion es de despliegue, no de investigacion: empaquetar un modelo de aproximadamente 8 000 millones de parametros en el runtime de Intel para permitir inferencia en CPU, iGPU (Intel Arc) y GPU discretas con aceleracion OpenVINO, con un tamano de repositorio de solo 5,5 GB, lo que sugiere pesos almacenados en un formato de baja precision (probablemente 4 bits o una mezcla de 4/8 bits). Esto lo hace candidato para entornos sin GPU NVIDIA o con restricciones de memoria.
 
@@ -90,5 +90,5 @@ No se dispone de datos verificados de rendimiento ni de contexto para este repos
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/llmware/qwen-3-vl-8b-ov
+- Repositorio en Hugging Face: https://huggingface.co/llmware/qwen-3-vl-8b-ov
 - No se han encontrado en las busquedas web otros enlaces relevantes (papers, blogs, repositorios o demos) asociados a este modelo.

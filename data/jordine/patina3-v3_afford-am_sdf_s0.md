@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Jordine/patina3-v3_afford-am_sdf_s0` es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario Jordine sobre el modelo base `meta-llama/Llama-3.1-8B`. Se presenta como un modelo de generación de texto (`text-generation`) con capacidades conversacionales, según los metadatos de HuggingFace. El repositorio tiene un tamaño de 0,7 GB y utiliza la biblioteca PEFT, lo que indica que contiene los pesos del adaptador PEFT/LoRA en formato safetensors y no los pesos del modelo base completo.
+El modelo `Jordine/patina3-v3_afford-am_sdf_s0` es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario Jordine sobre el modelo base `meta-llama/Llama-3.1-8B`. Se presenta como un modelo de generación de texto (`text-generation`) con capacidades conversacionales, según los metadatos de Hugging Face. El repositorio tiene un tamaño de 0,7 GB y utiliza la biblioteca PEFT, lo que indica que contiene los pesos del adaptador PEFT/LoRA en formato safetensors y no los pesos del modelo base completo.
 
 Al estar dirigido a un modelo de 8.000 millones de parámetros, su uso requiere cargar el modelo base y el adaptador. La relevancia del modelo es limitada, ya que la documentación del autor no proporciona ninguna información sobre datos de entrenamiento, arquitectura específica, tareas, licencia ni idiomas: todos los campos de la model card están vacíos o indican «More Information Needed».
 
@@ -23,7 +23,7 @@ Al estar dirigido a un modelo de 8.000 millones de parámetros, su uso requiere 
 
 El modelo se construye como un adaptador LoRA sobre `meta-llama/Llama-3.1-8B`, un transformer decoder-only. El repositorio contiene los pesos del adaptador (tamaño 0,7 GB) y se etiqueta con la biblioteca PEFT en su versión 0.20.0.
 
-No se ha publicado ninguna información sobre el procedimiento de entrenamiento, los datos empleados, la cantidad de tokens ni si se utilizó RLHF, DPO u otra técnica. El tag `arxiv:1910.09700` aparece en los metadatos de HuggingFace, pero no se indica si corresponde al modelo o al cálculo de impacto ambiental.
+No se ha publicado ninguna información sobre el procedimiento de entrenamiento, los datos empleados, la cantidad de tokens ni si se utilizó RLHF, DPO u otra técnica. El tag `arxiv:1910.09700` aparece en los metadatos de Hugging Face, pero no se indica si corresponde al modelo o al cálculo de impacto ambiental.
 
 ## Capacidades
 
@@ -61,5 +61,5 @@ No disponible. La informacion proporcionada no incluye modelos comparables.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jordine/patina3-v3_afford-am_sdf_s0
+- Modelo en Hugging Face: https://huggingface.co/Jordine/patina3-v3_afford-am_sdf_s0
 - Modelo hermano encontrado en la busqueda web: https://huggingface.co/Jordine/patina3-afford_rehearsal_sdf_s0

@@ -54,7 +54,7 @@ La información proporcionada incluye una tabla comparativa de benchmarks de tex
 
 ## Requisitos de hardware
 
-- El repositorio de HuggingFace tiene un tamaño de 55.6 GB, lo que corresponde a pesos en FP16/BF16 para los 27.78B de parámetros.
+- El repositorio de Hugging Face tiene un tamaño de 55.6 GB, lo que corresponde a pesos en FP16/BF16 para los 27.78B de parámetros.
 - Para inferencia sin cuantización se estima que se necesita una GPU con al menos 60-70 GB de VRAM, como una A100 80GB o una H100 80GB.
 - Con cuantización a 4 bits, la VRAM requerida se reduciría a aproximadamente 15-20 GB, aunque no se proporcionan cuantizaciones oficiales en el repositorio.
 - El modelo es compatible con vLLM, SGLang, TokenSpeed, Transformers y el servicio gestionado Qwen Cloud.
@@ -66,7 +66,7 @@ La comparativa se basa en los modelos mencionados en la tabla de benchmarks del 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3.8-27B | 27.78B | 262.144 (ext. 1M) | Apache 2.0 | Abierto en HuggingFace |
+| Qwen3.8-27B | 27.78B | 262.144 (ext. 1M) | Apache 2.0 | Abierto en Hugging Face |
 | Qwen3.6-27B | No disponible | No disponible | No disponible | No disponible |
 | Qwen3.7-Plus | No disponible | No disponible | No disponible | No disponible |
 | Muse Glimmer-30B | No disponible | No disponible | No disponible | No disponible |
@@ -76,14 +76,14 @@ La comparativa se basa en los modelos mencionados en la tabla de benchmarks del 
 
 - No se especifican los idiomas soportados, por lo que la cobertura multilingüe es desconocida.
 - No se detallan sesgos conocidos ni riesgos de alucinación en la documentación disponible.
-- El modelo es reciente (creado en septiembre de 2026) y presenta baja adopción (0 descargas y 0 likes en HuggingFace en el momento de la consulta), lo que implica una comunidad de soporte limitada.
+- El modelo es reciente (creado en septiembre de 2026) y presenta baja adopción (0 descargas y 0 likes en Hugging Face en el momento de la consulta), lo que implica una comunidad de soporte limitada.
 - La tabla de benchmarks está incompleta en la información proporcionada, por lo que no es posible validar su rendimiento frente a alternativas.
 - La licencia Apache 2.0 permite uso comercial, pero es necesario revisar los términos completos de la licencia y las políticas de uso del fabricante.
 - El despliegue en producción requiere versiones recientes de las herramientas compatibles (vLLM, SGLang, TokenSpeed) para soportar la arquitectura híbrida.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Openintelligent123/Qwen3.8-27B
+- Hugging Face: https://huggingface.co/Openintelligent123/Qwen3.8-27B
 - GitHub oficial: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Guía de despliegue local: https://linas.substack.com/p/qwen3-8-27b-local-guide
 - Qwen Cloud (modelo alojado): https://www.qwencloud.com/models/qwen3.8-27b

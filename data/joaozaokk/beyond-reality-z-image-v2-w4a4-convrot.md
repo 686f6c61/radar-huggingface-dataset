@@ -83,7 +83,7 @@ La comparación con HunyuanVideo 1.5 muestra que la tolerancia al error de cuant
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JoaoZaokk/Beyond-Reality-Z-Image-v2-W4A4-ConvRot
+- Repositorio Hugging Face: https://huggingface.co/JoaoZaokk/Beyond-Reality-Z-Image-v2-W4A4-ConvRot
 - Repositorio de benchmark y herramientas: https://github.com/JoaoZaokk/comfy-quant-bench
 - Modelo original (fine-tune): https://huggingface.co/Nurburgring/BEYOND_REALITY_Z_IMAGE
 - Modelo base: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo

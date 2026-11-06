@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Sasha0202/interior_design_LoRA` es un adaptador LoRA para el modelo de difusion `stabilityai/stable-diffusion-xl-base-1.0`, publicado por el usuario Sasha0202 en HuggingFace. Se trata de un ajuste fino mediante DreamBooth cuyo objetivo es especializar SDXL en la generacion de imagenes de diseno de interiores, activado mediante la palabra clave `interior design`. El repositorio contiene unicamente los pesos del adaptador en formato Safetensors, con un tamano aproximado de 0,1 GB, lo que confirma que no incluye el modelo base completo.
+`Sasha0202/interior_design_LoRA` es un adaptador LoRA para el modelo de difusion `stabilityai/stable-diffusion-xl-base-1.0`, publicado por el usuario Sasha0202 en Hugging Face. Se trata de un ajuste fino mediante DreamBooth cuyo objetivo es especializar SDXL en la generacion de imagenes de diseno de interiores, activado mediante la palabra clave `interior design`. El repositorio contiene unicamente los pesos del adaptador en formato Safetensors, con un tamano aproximado de 0,1 GB, lo que confirma que no incluye el modelo base completo.
 
 El modelo se distribuye bajo licencia OpenRAIL++ y utiliza la libreria `diffusers`. La model card es la plantilla autogenerada por el script de entrenamiento de Diffusers: no incluye ejemplos de uso, detalles del dataset, resultados cualitativos ni seccion de limitaciones completada por el autor. Con 12 descargas y 0 likes en el momento de la consulta, es un modelo de nicho con escasa validacion comunitaria.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Base | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Sasha0202/interior_design_LoRA | SDXL 1.0 | LoRA DreamBooth (UNet) | adaptador ~0,1 GB | no aplica | openrail++ | HuggingFace, 12 descargas |
-| stabilityai/stable-diffusion-xl-base-1.0 | — | Modelo base text-to-image | 3,5 mil millones | no aplica | openrail++ | HuggingFace, ampliamente usado |
-| Otros LoRA de interiores para SDXL | SDXL 1.0 | LoRA de estilo/dominio | variable | no aplica | variable | Comunidad HuggingFace/Civitai |
-| FLUX.1-dev | — | Modelo base text-to-image | 12 mil millones | no aplica | no comercial (FLUX.1 [dev]) | HuggingFace |
+| Sasha0202/interior_design_LoRA | SDXL 1.0 | LoRA DreamBooth (UNet) | adaptador ~0,1 GB | no aplica | openrail++ | Hugging Face, 12 descargas |
+| stabilityai/stable-diffusion-xl-base-1.0 | — | Modelo base text-to-image | 3,5 mil millones | no aplica | openrail++ | Hugging Face, ampliamente usado |
+| Otros LoRA de interiores para SDXL | SDXL 1.0 | LoRA de estilo/dominio | variable | no aplica | variable | Comunidad Hugging Face/Civitai |
+| FLUX.1-dev | — | Modelo base text-to-image | 12 mil millones | no aplica | no comercial (FLUX.1 [dev]) | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo para este adaptador concreto; la comparacion se limita a caracteristicas estructurales.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo para este adaptador concreto; 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sasha0202/interior_design_LoRA
+- Modelo en Hugging Face: https://huggingface.co/Sasha0202/interior_design_LoRA
 - Modelo base: https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
 - VAE utilizado en entrenamiento: https://huggingface.co/madebyollin/sdxl-vae-fp16-fix
 - Paper de DreamBooth: https://dreambooth.github.io/

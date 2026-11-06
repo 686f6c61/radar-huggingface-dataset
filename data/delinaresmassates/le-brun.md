@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`DelinaresMassates/le-brun` es un repositorio publicado en HuggingFace por el usuario DelinaresMassates que, segun sus etiquetas, contiene un adaptador LoRA para un modelo de difusion de la familia Flux orientado a generacion de imagenes a partir de texto. La ficha de HuggingFace lo clasifica con el pipeline `text-to-image`, la libreria `diffusers` y las etiquetas `diffusers`, `flux`, `text-to-image`, `lora` y `fal`. No se ha publicado ninguna descripcion, model card, ejemplo de uso ni documentacion tecnica en la informacion disponible.
+`DelinaresMassates/le-brun` es un repositorio publicado en Hugging Face por el usuario DelinaresMassates que, segun sus etiquetas, contiene un adaptador LoRA para un modelo de difusion de la familia Flux orientado a generacion de imagenes a partir de texto. La ficha de Hugging Face lo clasifica con el pipeline `text-to-image`, la libreria `diffusers` y las etiquetas `diffusers`, `flux`, `text-to-image`, `lora` y `fal`. No se ha publicado ninguna descripcion, model card, ejemplo de uso ni documentacion tecnica en la informacion disponible.
 
 El repositorio no registra descargas ni "likes" en el momento de la consulta (0 y 0 respectivamente) y fue creado y actualizado en la misma fecha (2026-09-17T02:36:02Z), lo que sugiere una publicacion reciente y sin validacion por parte de la comunidad. No se dispone de informacion sobre el modelo base exacto, el rango del adaptador, el conjunto de datos de entrenamiento, el numero de pasos ni los hiperparametros utilizados.
 
@@ -18,7 +18,7 @@ Dado que se trata de un adaptador LoRA y no de un modelo completo, su relevancia
 | Longitud de contexto | No aplica (modelo de texto a imagen; la longitud de prompt la determina el codificador de texto del modelo base, no especificado) |
 | Tipos de cuantizacion | No disponible |
 | Idiomas soportados | No disponible (depende del codificador de texto del modelo base) |
-| Licencia | `other` segun la etiqueta `license:other` de HuggingFace; el texto de la licencia no esta disponible en la informacion proporcionada |
+| Licencia | `other` segun la etiqueta `license:other` de Hugging Face; el texto de la licencia no esta disponible en la informacion proporcionada |
 | Formato de pesos | No disponible. Repositorio compatible con `diffusers`; no se confirma si los pesos estan en safetensors, GGUF o binario PyTorch |
 
 ## Arquitectura y entrenamiento
@@ -73,9 +73,9 @@ En la informacion proporcionada no se identifican modelos comparables concretos 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `DelinaresMassates/le-brun` | No disponible (adaptador LoRA) | No aplica | Sin benchmarks publicados | `other`, texto no disponible | HuggingFace, 0 descargas |
+| `DelinaresMassates/le-brun` | No disponible (adaptador LoRA) | No aplica | Sin benchmarks publicados | `other`, texto no disponible | Hugging Face, 0 descargas |
 | Modelo base de la familia Flux | No especificado en el repositorio | No aplica | No disponible | No disponible | No identificado |
-| Otros LoRA de Flux en HuggingFace | No disponible | No aplica | No disponible | Variable | No identificados en la informacion proporcionada |
+| Otros LoRA de Flux en Hugging Face | No disponible | No aplica | No disponible | Variable | No identificados en la informacion proporcionada |
 
 ## Limitaciones y advertencias
 
@@ -92,5 +92,5 @@ En la informacion proporcionada no se identifican modelos comparables concretos 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DelinaresMassates/le-brun
+- Repositorio en Hugging Face: https://huggingface.co/DelinaresMassates/le-brun
 - No se han encontrado en la busqueda web enlaces relevantes al modelo (paper, blog, repositorio de codigo o demo). Los resultados obtenidos corresponden a hilos del foro de la comunidad SFR sobre correctores ortograficos y no son pertinentes.

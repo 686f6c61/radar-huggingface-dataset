@@ -16,7 +16,7 @@ Arquitectónicamente, Kimi K3 se basa en dos innovaciones propias: Kimi Delta At
 | Longitud de contexto | 1.000.000 tokens |
 | Tipos de cuantizacion | no disponible (se mencionan tags de 8-bit y compressed-tensors, sin detalle) |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible (etiquetada como "other" en HuggingFace) |
+| Licencia | no disponible (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
@@ -46,7 +46,7 @@ No se han publicado detalles específicos sobre el dataset de entrenamiento, el 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. Las fuentes consultadas (HuggingFace, GitHub, Moonshot AI, LM Studio) no incluyen métricas numéricas como MMLU, HumanEval o GSM8K para este modelo. Se recomienda consultar el repositorio oficial de GitHub para futuras actualizaciones.
+No se han publicado resultados de benchmarks en la información disponible. Las fuentes consultadas (Hugging Face, GitHub, Moonshot AI, LM Studio) no incluyen métricas numéricas como MMLU, HumanEval o GSM8K para este modelo. Se recomienda consultar el repositorio oficial de GitHub para futuras actualizaciones.
 
 ## Requisitos de hardware
 
@@ -71,7 +71,7 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/moonshotai/Kimi-K3
+- Hugging Face: https://huggingface.co/moonshotai/Kimi-K3
 - GitHub: https://github.com/MoonshotAI/Kimi-K3
 - Moonshot AI: https://www.moonshot.ai/
 - LM Studio: https://lmstudio.ai/models/kimi-k3

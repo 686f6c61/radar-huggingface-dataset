@@ -70,7 +70,7 @@ No disponible. El repositorio no es un modelo de lenguaje comparable a otros che
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Brazenle/kv-cache-handoff-lab
+- Repositorio en Hugging Face: https://huggingface.co/Brazenle/kv-cache-handoff-lab
 - Modelo base: https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct
 - Paper QKVShare (arXiv 2605.03884): https://arxiv.org/pdf/2605.03884
 - Noticia sobre transferencia de KV cache de Nvidia: https://www.streamingmeme.com/articles/nvidia-kv-cache-transfer-cuts-ai-model-handoff-latency-by-25x

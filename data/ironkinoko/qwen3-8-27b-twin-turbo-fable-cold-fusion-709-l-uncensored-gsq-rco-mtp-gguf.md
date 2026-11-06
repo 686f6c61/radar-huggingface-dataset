@@ -103,7 +103,7 @@ No se han identificado alternativas de la misma categoria con datos suficientes 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IronKinoko/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-GSQ-RCO-MTP-GGUF
+- Modelo en Hugging Face: https://huggingface.co/IronKinoko/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-GSQ-RCO-MTP-GGUF
 - Modelo base: https://huggingface.co/DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored
 - Referencia de cuantizacion GSQ-RCO: https://huggingface.co/ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF
 - Paper, blog, repositorio o demo adicionales: no disponible

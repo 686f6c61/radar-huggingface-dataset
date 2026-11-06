@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alfred8995/r18-a2-w13-kx-chrono5-w20-s100` es un checkpoint de 2.018.511.234 parámetros (aproximadamente 2.000 millones) publicado por el usuario alfred8995 en HuggingFace. El nombre del repositorio sigue un patrón de codificación críptica (`r18-a2-w13-kx-chrono5-w20-s100`) que sugiere un experimento de entrenamiento con hiperparámetros concretos (posiblemente ratios, ventanas o pasos de una receta propietaria), y el tag `sn38-nanochrono` apunta a una familia o framework interno no documentado públicamente. No hay información publicada sobre arquitectura, datos de entrenamiento ni capacidades.
+`alfred8995/r18-a2-w13-kx-chrono5-w20-s100` es un checkpoint de 2.018.511.234 parámetros (aproximadamente 2.000 millones) publicado por el usuario alfred8995 en Hugging Face. El nombre del repositorio sigue un patrón de codificación críptica (`r18-a2-w13-kx-chrono5-w20-s100`) que sugiere un experimento de entrenamiento con hiperparámetros concretos (posiblemente ratios, ventanas o pasos de una receta propietaria), y el tag `sn38-nanochrono` apunta a una familia o framework interno no documentado públicamente. No hay información publicada sobre arquitectura, datos de entrenamiento ni capacidades.
 
 El modelo es relevante únicamente como artefacto de investigación: se trata de un release con cero descargas y cero likes, sin model card descriptiva, sin pipeline declarado y con acceso restringido (gated). Su interés práctico para desarrolladores es limitado mientras no exista documentación técnica asociada, pero el tamaño (~2B parámetros) lo sitúa en la franja de modelos que pueden ejecutarse en GPU de consumo con cuantización adecuada.
 
@@ -53,7 +53,7 @@ Dado que no hay documentación funcional, los casos de uso son hipotéticos y co
 - Servicio de inferencia autoalojado: al ser Apache 2.0, puede desplegarse con vLLM o llama.cpp (previa conversión a GGUF) en entornos donde no se permite enviar datos a terceros.
 - Destilación o poda: usar el checkpoint como profesor o como punto de partida para compresión a tamaños menores.
 
-En todos los casos, el acceso gated obliga a aceptar condiciones en HuggingFace antes de descargar, y la ausencia de model card implica que el usuario asume la responsabilidad de validar el comportamiento del modelo.
+En todos los casos, el acceso gated obliga a aceptar condiciones en Hugging Face antes de descargar, y la ausencia de model card implica que el usuario asume la responsabilidad de validar el comportamiento del modelo.
 
 ## Benchmarks y rendimiento
 
@@ -86,12 +86,12 @@ La comparativa se limita a parámetros, contexto y licencia; no es posible compa
 - Riesgo de alucinación: desconocido, pero inherente a cualquier modelo de lenguaje sin evaluación publicada.
 - Limitaciones de contexto e idioma: no disponibles; no se puede planificar su uso en tareas de contexto largo o multilingües.
 - Licencia Apache 2.0: permite uso comercial y modificación, pero no exime al usuario de responsabilidad sobre el contenido generado ni sobre posibles problemas derivados de datos de entrenamiento desconocidos.
-- Acceso gated: requiere aceptar condiciones en HuggingFace; la descarga automatizada en CI/CD fallará si no se configura un token con permisos.
+- Acceso gated: requiere aceptar condiciones en Hugging Face; la descarga automatizada en CI/CD fallará si no se configura un token con permisos.
 - Cero señales de adopción (0 descargas, 0 likes): no hay evidencia de que el checkpoint haya sido validado por terceros.
 - El nombre críptico y el tag `sn38-nanochrono` sugieren un experimento personal o interno; no hay garantía de que los pesos estén completos o de que la arquitectura sea compatible con librerías estándar.
 - Fecha de creación futura en los metadatos (2026-10-29): puede indicar un error de reloj en el sistema de subida o un artefacto de prueba; conviene verificar la integridad del repositorio antes de usarlo.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-w13-kx-chrono5-w20-s100
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-w13-kx-chrono5-w20-s100
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

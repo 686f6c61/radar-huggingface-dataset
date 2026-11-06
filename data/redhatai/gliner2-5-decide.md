@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLiNER2.5-Decide es un modelo especializado en clasificación de texto e intención en inglés, publicado por RedHatAI como redistribución del modelo de Fastino (fastino/GLiNER2.5-Decide). Se construye por ajuste fino sobre fastino/gliner2-large-v1 y pertenece a la familia GLiNER2.5, cuyo marco técnico se describe en el paper arXiv 2507.18546. Su pipeline declarado en HuggingFace es `token-classification` y su licencia es Apache 2.0.
+GLiNER2.5-Decide es un modelo especializado en clasificación de texto e intención en inglés, publicado por RedHatAI como redistribución del modelo de Fastino (fastino/GLiNER2.5-Decide). Se construye por ajuste fino sobre fastino/gliner2-large-v1 y pertenece a la familia GLiNER2.5, cuyo marco técnico se describe en el paper arXiv 2507.18546. Su pipeline declarado en Hugging Face es `token-classification` y su licencia es Apache 2.0.
 
 A diferencia de un modelo generativo, el modelo no produce tokens de texto libre: recibe un texto y un conjunto de etiquetas candidatas definido en tiempo de llamada, y devuelve en una única pasada hacia delante la etiqueta o etiquetas que mejor encajan. Cubre tareas de intención de cliente y banca, sentimiento de reseñas, tipo de documento, enrutado de correo y tickets, derivación a humano, moderación, severidad, urgencia y spam, entre otras. La misma llamada puede puntuar varias "cabezas" a la vez: las tareas de etiqueta única devuelven una cadena y las de etiqueta múltiple devuelven todas las etiquetas que superan el umbral.
 
@@ -113,7 +113,7 @@ La comparativa se limita a la metrica de exactitud publicada en la model card de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RedHatAI/GLiNER2.5-Decide
+- Modelo en Hugging Face: https://huggingface.co/RedHatAI/GLiNER2.5-Decide
 - Modelo original referenciado en la model card: https://huggingface.co/fastino/GLiNER2.5-Decide
 - Modelo base: https://huggingface.co/fastino/gliner2-large-v1
 - Modelo hermano de 1B: https://huggingface.co/fastino/GLiNER2.5-Decide-1B

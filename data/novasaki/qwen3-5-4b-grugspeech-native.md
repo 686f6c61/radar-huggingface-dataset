@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks estándar como MMLU, HumanEval o GS
 ## Comparativa con modelos similares
 | Modelo | Parámetros | Contexto | Visión | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|---|
-| Novasaki/Qwen3.5-4B-GrugSpeech-Native | Base 4B + adaptador LoRA | 262.144 heredado | No documentada en el adaptador | Apache 2.0 | HuggingFace, repo de 0,1 GB, 0 descargas | Razonamiento en Grug Speech, compresión 3x-5x, eval_loss 0,8851 |
-| Qwen/Qwen3.5-4B | 4B denso | 262.144 | Sí, vision encoder | Apache 2.0 | HuggingFace | Modelo base multimodal con atención híbrida Gated DeltaNet + full attention |
+| Novasaki/Qwen3.5-4B-GrugSpeech-Native | Base 4B + adaptador LoRA | 262.144 heredado | No documentada en el adaptador | Apache 2.0 | Hugging Face, repo de 0,1 GB, 0 descargas | Razonamiento en Grug Speech, compresión 3x-5x, eval_loss 0,8851 |
+| Qwen/Qwen3.5-4B | 4B denso | 262.144 | Sí, vision encoder | Apache 2.0 | Hugging Face | Modelo base multimodal con atención híbrida Gated DeltaNet + full attention |
 | Qwen3-4B | 4B | No disponible | No mencionada | No disponible | Qualcomm AI Hub | Modelo multilingüe anterior orientado a lenguaje, generación, código y matemáticas |
 
 ## Limitaciones y advertencias
@@ -85,8 +85,8 @@ No se han publicado resultados de benchmarks estándar como MMLU, HumanEval o GS
 - El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, por lo que carece de validación comunitaria.
 
 ## Enlaces
-- [Novasaki/Qwen3.5-4B-GrugSpeech-Native en HuggingFace](https://huggingface.co/Novasaki/Qwen3.5-4B-GrugSpeech-Native)
-- [Qwen/Qwen3.5-4B en HuggingFace](https://huggingface.co/Qwen/Qwen3.5-4B)
+- [Novasaki/Qwen3.5-4B-GrugSpeech-Native en Hugging Face](https://huggingface.co/Novasaki/Qwen3.5-4B-GrugSpeech-Native)
+- [Qwen/Qwen3.5-4B en Hugging Face](https://huggingface.co/Qwen/Qwen3.5-4B)
 - [Qwen3-4B en Qualcomm AI Hub](https://aihub.qualcomm.com/models/qwen3_4b)
 - [Guía de Qwen 3.5 4B en The AI Bench](https://theaibench.ai/models/qwen-3-5-4b/)
 - [Qwen3.5 4B en LM Studio](https://lmstudio.ai/models/qwen/qwen3.5-4b)

@@ -87,10 +87,10 @@ Detalles de los conjuntos y del protocolo:
 
 | Modelo | Parametros / tamano | Contexto | Calidad (nDCG@10) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ukr-static-m3-64k | 16,4 M / 32,8 MB FP16 | 512 tokens | 0,776 Belebele; 0,434 WebFAQ; 0,684 UA-SQuAD | MIT | HuggingFace, librería model2vec |
-| potion-multilingual-128M | no disponible / 512 MB FP32 | no disponible | 0,652 Belebele; 0,344 WebFAQ; 0,613 UA-SQuAD | no disponible en la información | HuggingFace (`minishlab/potion-multilingual-128M`) |
-| static-similarity-mrl-multilingual-v1 | no disponible / 434 MB FP32 | no disponible | 0,617 Belebele; 0,352 WebFAQ | no disponible en la información | HuggingFace (sentence-transformers) |
-| BAAI/bge-m3 (profesor) | no disponible / 2,27 GB FP32 | no disponible | 0,937 Belebele | no disponible en la información | HuggingFace |
+| ukr-static-m3-64k | 16,4 M / 32,8 MB FP16 | 512 tokens | 0,776 Belebele; 0,434 WebFAQ; 0,684 UA-SQuAD | MIT | Hugging Face, librería model2vec |
+| potion-multilingual-128M | no disponible / 512 MB FP32 | no disponible | 0,652 Belebele; 0,344 WebFAQ; 0,613 UA-SQuAD | no disponible en la información | Hugging Face (`minishlab/potion-multilingual-128M`) |
+| static-similarity-mrl-multilingual-v1 | no disponible / 434 MB FP32 | no disponible | 0,617 Belebele; 0,352 WebFAQ | no disponible en la información | Hugging Face (sentence-transformers) |
+| BAAI/bge-m3 (profesor) | no disponible / 2,27 GB FP32 | no disponible | 0,937 Belebele | no disponible en la información | Hugging Face |
 | BM25 (Okapi, parámetros por defecto) | no aplica | no aplica | 0,693 Belebele; 0,490 WebFAQ; 0,761 UA-SQuAD | no aplica | Implementaciones múltiples |
 
 Frente a los modelos estáticos alternativos, la ventaja es doble: mejor nDCG@10 en los tres conjuntos y un peso entre 8 y 15 veces menor. Frente a BM25, el modelo gana claramente en consultas semánticas (Belebele, +0,083) pero pierde en WebFAQ (-0,056) y UA-SQuAD (-0,077), lo que justifica el uso combinado.
@@ -112,7 +112,7 @@ Frente a los modelos estáticos alternativos, la ventaja es doble: mejor nDCG@10
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SyntaxSpirits/ukr-static-m3-64k
+- Modelo en Hugging Face: https://huggingface.co/SyntaxSpirits/ukr-static-m3-64k
 - Modelo profesor BAAI/bge-m3: https://huggingface.co/BAAI/bge-m3
 - Repositorio Model2Vec: https://github.com/MinishLab/model2vec
 - Repositorio Tokenlearn: https://github.com/MinishLab/tokenlearn

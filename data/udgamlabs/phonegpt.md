@@ -91,7 +91,7 @@ La comparacion con nanoGPT no es equivalente en hardware, parametros ni contexto
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/udgamlabs/PhoneGPT
+- Modelo en Hugging Face: https://huggingface.co/udgamlabs/PhoneGPT
 - Articulo y tutorial del autor: https://udgamlabs.com/blog/phonegpt
 - Codigo en GitHub: https://github.com/udgamlabs/phonegpt
 - Grabacion del directo: https://www.youtube.com/watch?v=gXQFqCBB91U

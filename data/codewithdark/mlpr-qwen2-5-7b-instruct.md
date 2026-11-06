@@ -23,7 +23,7 @@ La relevancia de este modelo radica en que parte de una base sólida: Qwen2.5-7B
 
 El modelo base Qwen2.5-7B-Instruct emplea una arquitectura transformer decoder-only con atención de ventana deslizante y RoPE (Rotary Positional Embedding). El adaptador `mlpr-qwen2.5-7b-instruct` se entrena mediante PEFT, lo que implica que solo se actualizan un pequeño número de parámetros adicionales (típicamente matrices LoRA), dejando congelados los pesos del modelo base.
 
-Los hiperparámetros de entrenamiento indican un ajuste fino clásico: learning rate de 2e-5, batch size total de 16, 3 épocas y optimizador Adam. La pérdida de validación final es de 3.9692, pero no se proporciona información sobre el dataset de entrenamiento ni sobre el proceso de alineación (RLHF, DPO, etc.). El entrenamiento se realizó con PEFT 0.12.0, Transformers 4.44.2 y PyTorch 2.5.1, lo que sugiere un flujo estándar de HuggingFace.
+Los hiperparámetros de entrenamiento indican un ajuste fino clásico: learning rate de 2e-5, batch size total de 16, 3 épocas y optimizador Adam. La pérdida de validación final es de 3.9692, pero no se proporciona información sobre el dataset de entrenamiento ni sobre el proceso de alineación (RLHF, DPO, etc.). El entrenamiento se realizó con PEFT 0.12.0, Transformers 4.44.2 y PyTorch 2.5.1, lo que sugiere un flujo estándar de Hugging Face.
 
 ## Capacidades
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada: para el modelo base (7.6B) en FP16 se necesitan aproximadamente 15-16 GB de VRAM. Con cuantización de 4 bits (bitsandbytes) se reduce a unos 6-7 GB. El adaptador añade una cantidad mínima (menos de 0.5 GB).
 - GPU recomendadas: NVIDIA RTX 3090, RTX 4090 (24 GB) para FP16; GPUs con 8-10 GB (RTX 3080, A10G) pueden ejecutarlo con cuantización.
 - En consumer GPU: sí, cabe en GPUs de 16 GB o más con FP16; con cuantización 4-bit cabe en GPUs de 8 GB (ej. RTX 3060).
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, Text Generation Inference (TGI), HuggingFace Inference Endpoints. El adaptador PEFT se puede cargar con `transformers` usando `PeftModel`.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, Text Generation Inference (TGI), Hugging Face Inference Endpoints. El adaptador PEFT se puede cargar con `transformers` usando `PeftModel`.
 - Latencia y throughput: no disponible. Para el modelo base, en una RTX 4090 se espera una generación de ~50-70 tokens/s con FP16; con cuantización 4-bit, algo menor.
 
 ## Comparativa con modelos similares
@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento del adaptador para comparar con estos mode
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/codewithdark/mlpr-qwen2.5-7b-instruct
+- Hugging Face del adaptador: https://huggingface.co/codewithdark/mlpr-qwen2.5-7b-instruct
 - Modelo base Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Página de Ollama para Qwen2.5 7B Instruct: https://ollama.com/library/qwen2.5:7b-instruct
 - Qwen2.5-Coder-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct

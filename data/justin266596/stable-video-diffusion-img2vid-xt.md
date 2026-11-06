@@ -4,7 +4,7 @@
 
 Stable Video Diffusion Image-to-Video XT (SVD-XT) es un modelo de difusion latente desarrollado por Stability AI que genera clips de video cortos a partir de una imagen de referencia. Concretamente, toma una imagen fija como fotograma de condicionamiento y produce una secuencia de 25 fotogramas a resolucion 576x1024, extendiendo la version original de 14 fotogramas. Es un modelo de imagen-a-video, no un modelo de lenguaje, por lo que no procesa ni genera texto.
 
-El modelo se distribuye bajo la licencia Stable Video Diffusion Community, que permite uso no comercial y de investigacion, mientras que el uso comercial requiere contactar con Stability AI. Esta ficha corresponde a una republicacion en HuggingFace bajo el identificador `justin266596/stable-video-diffusion-img2vid-xt`, con 1.524.623.082 parametros en formato safetensors y un repositorio de 32,6 GB.
+El modelo se distribuye bajo la licencia Stable Video Diffusion Community, que permite uso no comercial y de investigacion, mientras que el uso comercial requiere contactar con Stability AI. Esta ficha corresponde a una republicacion en Hugging Face bajo el identificador `justin266596/stable-video-diffusion-img2vid-xt`, con 1.524.623.082 parametros en formato safetensors y un repositorio de 32,6 GB.
 
 Su relevancia radica en que fue uno de los primeros modelos abiertos de imagen-a-video con calidad competitiva frente a soluciones propietarias como GEN-2 o PikaLabs, y sigue siendo una referencia para investigacion en generacion de video y para pipelines creativos que requieren control local del modelo.
 
@@ -66,8 +66,8 @@ En cuanto a latencia, la model card indica que, con los ajustes por defecto en e
 
 | Modelo | Tipo | Parametros | Contexto / salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SVD-XT (este modelo) | Imagen-a-video, difusion latente | 1.524.623.082 | 25 fotogramas, 576x1024 | stable-video-diffusion-community | HuggingFace, diffusers |
-| SVD (14 fotogramas) | Imagen-a-video, difusion latente | no disponible en la informacion | 14 fotogramas, 576x1024 | stable-video-diffusion-community | HuggingFace, diffusers |
+| SVD-XT (este modelo) | Imagen-a-video, difusion latente | 1.524.623.082 | 25 fotogramas, 576x1024 | stable-video-diffusion-community | Hugging Face, diffusers |
+| SVD (14 fotogramas) | Imagen-a-video, difusion latente | no disponible en la informacion | 14 fotogramas, 576x1024 | stable-video-diffusion-community | Hugging Face, diffusers |
 | GEN-2 (RunwayML) | Imagen/texto-a-video, propietario | no disponible | no disponible | propietaria | API comercial |
 | PikaLabs | Imagen/texto-a-video, propietario | no disponible | no disponible | propietaria | API comercial |
 
@@ -89,8 +89,8 @@ La comparativa con GEN-2 y PikaLabs se limita al estudio de preferencia humana c
 
 ## Enlaces
 
-- HuggingFace (republicacion): https://huggingface.co/justin266596/stable-video-diffusion-img2vid-xt
-- Repositorio oficial en HuggingFace: https://huggingface.co/stabilityai/stable-video-diffusion-img2vid-xt
+- Hugging Face (republicacion): https://huggingface.co/justin266596/stable-video-diffusion-img2vid-xt
+- Repositorio oficial en Hugging Face: https://huggingface.co/stabilityai/stable-video-diffusion-img2vid-xt
 - Repositorio GitHub de Stability AI: https://github.com/Stability-AI/generative-models
 - Paper de SVD: https://stability.ai/research/stable-video-diffusion-scaling-latent-video-diffusion-models-to-large-datasets
 - Licencia del modelo: https://huggingface.co/stabilityai/stable-video-diffusion-img2vid-xt/blob/main/LICENSE.md

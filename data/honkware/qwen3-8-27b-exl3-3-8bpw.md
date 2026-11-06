@@ -86,7 +86,7 @@ La comparativa se basa en características generales; no se dispone de benchmark
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/Honkware/Qwen3.8-27B-exl3-3.8bpw
+- Repositorio de Hugging Face: https://huggingface.co/Honkware/Qwen3.8-27B-exl3-3.8bpw
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Colección de cuantizaciones: https://huggingface.co/collections/Honkware/qwen38-27b-exl3
 - ExLlamaV3: https://github.com/turboderp-org/exllamav3

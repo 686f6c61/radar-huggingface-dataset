@@ -72,8 +72,8 @@ El autor advierte explicitamente que la perdida de evaluacion es una metrica del
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| arkojit1/pi05_stack_yellow_on_red_bs128_20k_20k | 3.616.757.520 | no disponible | Apilado de bloques Franka | no disponible | HuggingFace (0 descargas) |
-| lerobot/pi05_base | no disponible | no disponible | VLA generalista (base) | no disponible | HuggingFace |
+| arkojit1/pi05_stack_yellow_on_red_bs128_20k_20k | 3.616.757.520 | no disponible | Apilado de bloques Franka | no disponible | Hugging Face (0 descargas) |
+| lerobot/pi05_base | no disponible | no disponible | VLA generalista (base) | no disponible | Hugging Face |
 | Otros fine-tunings de pi05 sobre datasets de Franka | no disponible | no disponible | Manipulacion especifica | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparables entre estos modelos en la informacion proporcionada.
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparables entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arkojit1/pi05_stack_yellow_on_red_bs128_20k_20k
+- Modelo en Hugging Face: https://huggingface.co/arkojit1/pi05_stack_yellow_on_red_bs128_20k_20k
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/Ameyapores/haply_stack_yellow_red
 - LeRobot: https://github.com/huggingface/lerobot

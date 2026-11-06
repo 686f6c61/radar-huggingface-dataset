@@ -23,7 +23,7 @@ Su relevancia actual se debe a la combinacion de tres factores: soporte nativo d
 | Tamano del repositorio | 5,0 GB |
 | Pipeline | text-generation |
 | Plantilla de chat | ChatML (`<|im_start|>` / `<|im_end|>`), con system prompt especifico del modelo |
-| Fecha de publicacion | 12 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 12 de septiembre de 2026 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -106,7 +106,7 @@ No se dispone de datos que permitan comparar el rendimiento de Uraion Forge 2B c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/UraionLabs/uraion-forge-2b-mlx
+- Modelo en Hugging Face: https://huggingface.co/UraionLabs/uraion-forge-2b-mlx
 - Sitio de Uraion Labs: https://uraionlabs.com
 - Repositorio de MLX: https://github.com/ml-explore/mlx
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B

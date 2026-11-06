@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Rev3auth/iris_16bit es un ajuste fino (fine-tune) del modelo Gemma 3 270M en su variante instruction-tuned (unsloth/gemma-3-270m-it), publicado por el usuario Rev3auth en HuggingFace. Se trata de un modelo de generacion de texto de arquitectura gemma3_text, con 268.098.176 parametros (aproximadamente 0,27 mil millones) y un peso de repositorio de 0,6 GB, lo que lo situa en la categoria de modelos pequenos orientados a ejecucion en dispositivos con recursos limitados.
+Rev3auth/iris_16bit es un ajuste fino (fine-tune) del modelo Gemma 3 270M en su variante instruction-tuned (unsloth/gemma-3-270m-it), publicado por el usuario Rev3auth en Hugging Face. Se trata de un modelo de generacion de texto de arquitectura gemma3_text, con 268.098.176 parametros (aproximadamente 0,27 mil millones) y un peso de repositorio de 0,6 GB, lo que lo situa en la categoria de modelos pequenos orientados a ejecucion en dispositivos con recursos limitados.
 
-El modelo se entreno partiendo del checkpoint de Unsloth y usando la libreria TRL de HuggingFace, segun indica la propia model card, que afirma un entrenamiento "2x mas rapido" gracias a las optimizaciones de Unsloth. No se documentan ni el dataset de ajuste, ni el numero de tokens, ni la tecnica de alineacion empleada (SFT, DPO, RLHF), por lo que el comportamiento final del modelo no esta caracterizado publicamente.
+El modelo se entreno partiendo del checkpoint de Unsloth y usando la libreria TRL de Hugging Face, segun indica la propia model card, que afirma un entrenamiento "2x mas rapido" gracias a las optimizaciones de Unsloth. No se documentan ni el dataset de ajuste, ni el numero de tokens, ni la tecnica de alineacion empleada (SFT, DPO, RLHF), por lo que el comportamiento final del modelo no esta caracterizado publicamente.
 
 Su relevancia es limitada y muy acotada: el modelo tiene 0 descargas y 0 likes en el momento de la consulta, y su model card es una plantilla autogenerada por Unsloth sin informacion especifica sobre el ajuste. Resulta util, en todo caso, como ejemplo de flujo de trabajo de fine-tuning ligero sobre Gemma 3 270M y como punto de partida para desarrolladores que quieran evaluar si un modelo de 268M de parametros cubre sus necesidades antes de escalar a alternativas mayores.
 
@@ -27,7 +27,7 @@ Otros datos tecnicos verificables: pipeline declarado text-generation; tamano de
 
 La arquitectura es la de Gemma 3 en su variante de texto (gemma3_text), un transformer decoder-only con atencion por causalidad. Con 268 millones de parametros, se trata de un modelo muy compacto dentro de la familia Gemma 3, pensado por Google para tareas de ajuste fino especifico y para despliegues con restricciones de memoria. La model card de este repositorio no aporta detalles sobre la configuracion interna (numero de capas, dimensiones ocultas, cabezas de atencion, tamano de vocabulario ni mecanismos de atencion), por lo que esos datos deben consultarse en la documentacion del modelo base.
 
-En cuanto al entrenamiento, la unica informacion disponible es que se partio del checkpoint unsloth/gemma-3-270m-it y que se utilizo Unsloth junto con la libreria TRL de HuggingFace, con una mejora declarada de velocidad de 2x. No se especifica el dataset de ajuste, su composicion, el numero de tokens de entrenamiento, la longitud de secuencia, si se aplicaron tecnicas de parametros eficientes (LoRA/QLoRA) y como se fusionaron los adaptadores, ni si hubo fases de RLHF, DPO o preferencia. Tampoco se documenta ninguna innovacion tecnica propia: el modelo es un fine-tune directo sin modificaciones arquitectonicas declaradas.
+En cuanto al entrenamiento, la unica informacion disponible es que se partio del checkpoint unsloth/gemma-3-270m-it y que se utilizo Unsloth junto con la libreria TRL de Hugging Face, con una mejora declarada de velocidad de 2x. No se especifica el dataset de ajuste, su composicion, el numero de tokens de entrenamiento, la longitud de secuencia, si se aplicaron tecnicas de parametros eficientes (LoRA/QLoRA) y como se fusionaron los adaptadores, ni si hubo fases de RLHF, DPO o preferencia. Tampoco se documenta ninguna innovacion tecnica propia: el modelo es un fine-tune directo sin modificaciones arquitectonicas declaradas.
 
 ## Capacidades
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad de pesos | Notas |
 |---|---|---|---|---|---|
-| Rev3auth/iris_16bit | 268,1 M | No disponible en el repositorio (el base declara 32.768 tokens) | apache-2.0 | safetensors en 16 bits, solo en HuggingFace | Fine-tune sin documentar, 0 descargas, sin benchmarks |
+| Rev3auth/iris_16bit | 268,1 M | No disponible en el repositorio (el base declara 32.768 tokens) | apache-2.0 | safetensors en 16 bits, solo en Hugging Face | Fine-tune sin documentar, 0 descargas, sin benchmarks |
 | unsloth/gemma-3-270m-it | 268,1 M | El base declara 32.768 tokens | Sujeta a los terminos de Gemma | safetensors | Modelo base instruction-tuned del que deriva iris_16bit; si dispone de documentacion oficial |
 | Qwen2.5-0.5B-Instruct | 0,49 B | 32.768 tokens | apache-2.0 | safetensors, GGUF y cuantizaciones comunitarias | Alternativa de tamano similar con ecosistema mas amplio y soporte de tool calling documentado |
 | SmolLM2-360M-Instruct | 0,36 B | 8.192 tokens | apache-2.0 | safetensors y GGUF | Alternativa centrada en despliegue en dispositivo, con model card detallada |
@@ -94,8 +94,8 @@ La comparacion con el modelo base es la mas relevante: al no documentarse el dat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rev3auth/iris_16bit
+- Modelo en Hugging Face: https://huggingface.co/Rev3auth/iris_16bit
 - Modelo base: https://huggingface.co/unsloth/gemma-3-270m-it
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - Busqueda web realizada: no se han encontrado enlaces relevantes al modelo. Todos los resultados devueltos correspondian a paginas no relacionadas (ayuda de Gmail, foros de soporte tecnico y similares), por lo que no se incluyen.

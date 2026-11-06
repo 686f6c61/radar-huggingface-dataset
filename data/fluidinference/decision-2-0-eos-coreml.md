@@ -105,7 +105,7 @@ La tokenización mediante `tokenizers` coincide con el codificador upstream en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FluidInference/decision-2.0-eos-coreml
+- Modelo en Hugging Face: https://huggingface.co/FluidInference/decision-2.0-eos-coreml
 - Modelo base: https://huggingface.co/vllm-sr/Decision-2.0-Eos-0.8B
 - Puerto hermano Kai 0.6B (backbone Qwen3): https://huggingface.co/FluidInference/decision-2.0-kai-coreml
 - Exportación de Qwen3.5 reutilizada (Kev-0.8B Core ML): https://huggingface.co/FluidInference/kev-0.8b-coreml

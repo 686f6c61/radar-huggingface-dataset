@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`Vivekkla85/mobilevit-demo` es un repositorio de HuggingFace publicado por el usuario Vivekkla85 que contiene una implementación de MobileViT orientada a tareas de clasificación (visión por computador). Se distribuye como un checkpoint de inicialización en formato safetensors acompañado de un script `main.py`, un `config.json` y un `training_args.json`. No se trata de un modelo entrenado ni evaluado: el propio autor indica en la model card que el checkpoint «no ha sido entrenado ni auditado» y que no reclama ninguna puntuación de benchmark.
+`Vivekkla85/mobilevit-demo` es un repositorio de Hugging Face publicado por el usuario Vivekkla85 que contiene una implementación de MobileViT orientada a tareas de clasificación (visión por computador). Se distribuye como un checkpoint de inicialización en formato safetensors acompañado de un script `main.py`, un `config.json` y un `training_args.json`. No se trata de un modelo entrenado ni evaluado: el propio autor indica en la model card que el checkpoint «no ha sido entrenado ni auditado» y que no reclama ninguna puntuación de benchmark.
 
 El interés del repositorio es, por tanto, puramente estructural y didáctico: sirve como andamiaje reproducible para pruebas de humo (smoke tests) sobre una configuración que la model card describe como «giant», con atención dispersa (sparse), fusión bilineal, activación approx gelu y normalización scalenorm. Según el recuento de safetensors, el modelo declarado tiene 16.576 parámetros, una cifra extremadamente pequeña que resulta coherente con un checkpoint sin entrenar y con un tamaño de repositorio de 0,0 GB.
 
-La relevancia actual es limitada y debe entenderse como material de partida, no como un artefacto listo para producción. No hay idiomas declarados, no hay pipeline asignado en la ficha de HuggingFace, cero descargas y cero likes en el momento de la consulta, y las fechas de creación y actualización (19 de septiembre de 2026, con 5 segundos de diferencia) sugieren una publicación automatizada. Toda evaluación seria exige entrenar el modelo desde cero con un split etiquetado propio.
+La relevancia actual es limitada y debe entenderse como material de partida, no como un artefacto listo para producción. No hay idiomas declarados, no hay pipeline asignado en la ficha de Hugging Face, cero descargas y cero likes en el momento de la consulta, y las fechas de creación y actualización (19 de septiembre de 2026, con 5 segundos de diferencia) sugieren una publicación automatizada. Toda evaluación seria exige entrenar el modelo desde cero con un split etiquetado propio.
 
 ## Especificaciones tecnicas
 
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Vivekkla85/mobilevit-demo | 16.576 (declarados) | no disponible | no disponible (el autor no reclama ninguno) | apache-2.0 | HuggingFace, 0 descargas |
+| Vivekkla85/mobilevit-demo | 16.576 (declarados) | no disponible | no disponible (el autor no reclama ninguno) | apache-2.0 | Hugging Face, 0 descargas |
 | MobileViT (familia original, Apple) | no disponible en la informacion proporcionada | imagenes (resoluciones habituales 256/320 px en la literatura) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | publicaciones de referencia y repositorios oficiales |
 | MobileNetV3 (CNN ligera) | no disponible en la informacion proporcionada | imagenes | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | implementaciones en multiples frameworks |
 | DeiT-Tiny (vision transformer) | no disponible en la informacion proporcionada | imagenes | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | implementaciones en multiples frameworks |
@@ -84,17 +84,17 @@ La comparación cuantitativa no es posible: este repositorio no publica métrica
 
 - El checkpoint no ha sido entrenado. Es una inicialización para pruebas de humo; sus salidas no tienen valor predictivo.
 - No existe auditoría de robustez, equidad ni transferencia de dominio, tal y como reconoce la propia model card.
-- Ambigüedad en el recuento de parámetros: la ficha de HuggingFace indica «16.576» sin aclarar si son unidades o millones. El tamaño del repositorio (0,0 GB) apunta a la primera interpretación, pero conviene verificarlo antes de planificar cualquier uso.
+- Ambigüedad en el recuento de parámetros: la ficha de Hugging Face indica «16.576» sin aclarar si son unidades o millones. El tamaño del repositorio (0,0 GB) apunta a la primera interpretación, pero conviene verificarlo antes de planificar cualquier uso.
 - Ficha probablemente generada por plantilla: los atributos declarados (sparse attention, bilinear fusion, scalenorm, lamb) no coinciden con la receta canónica de MobileViT, y las fechas de creación y actualización difieren en cinco segundos.
 - Cero adopción: 0 descargas y 0 likes implican ausencia de validación por parte de la comunidad y de informes de errores.
 - Idiomas y dominio de aplicación sin declarar: se desconoce sobre qué tipo de imágenes o etiquetas podría funcionar.
-- Integración no trivial: al ser una implementación personalizada, requiere un adaptador para las APIs de carga automática de HuggingFace, lo que complica su uso en frameworks estándar.
+- Integración no trivial: al ser una implementación personalizada, requiere un adaptador para las APIs de carga automática de Hugging Face, lo que complica su uso en frameworks estándar.
 - Licencia apache-2.0: permite uso comercial del código y de los pesos, pero el autor recomienda revisar por separado los términos de los datos de origen si se combina con datasets externos.
 - Riesgo de alucinación: no aplica en el sentido generativo, pero sí existe riesgo de conclusiones erróneas si alguien interpreta las salidas de un modelo sin entrenar como predicciones válidas.
 - No apto para producción sin un ciclo completo de entrenamiento, evaluación con múltiples semillas y comparación contra una línea base de capacidad equivalente.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Vivekkla85/mobilevit-demo
+- Repositorio en Hugging Face: https://huggingface.co/Vivekkla85/mobilevit-demo
 - Perfil del autor: https://huggingface.co/Vivekkla85
 - No se han encontrado articulos, papers, blogs, repositorios adicionales ni demos relevantes en la busqueda web realizada; los resultados recuperados no guardan relacion con el modelo.

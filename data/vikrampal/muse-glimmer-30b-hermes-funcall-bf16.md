@@ -86,7 +86,7 @@ No se dispone de comparativas con otros modelos de function calling de tamaño s
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/VikramPal/Muse-Glimmer-30B-hermes-funcall-bf16
+- Repositorio Hugging Face: https://huggingface.co/VikramPal/Muse-Glimmer-30B-hermes-funcall-bf16
 - Versión cuantizada 4-bit: https://huggingface.co/VikramPal/Muse-Glimmer-30B-hermes-funcall-DynQuant-4bit
 - Página oficial de Muse Glimmer en Meta: https://developer.meta.com/ai/models/muse-glimmer/
 - Receta vLLM para Muse-Glimmer-30B: https://recipes.vllm.ai/meta-models/Muse-Glimmer-30B

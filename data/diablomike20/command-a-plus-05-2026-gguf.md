@@ -87,7 +87,7 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento ni e
 - Caveat de produccion: el modelo es de 218B parametros; incluso la cuantizacion mas pequena listada supera los 100 GB, lo que implica costes de infraestructura elevados y latencias potencialmente altas en CPU. La inferencia en GPU requiere agregar memoria de varias tarjetas.
 - La model card indica `inference: false` en los metadatos, lo que puede reflejar que el repositorio es solo de pesos cuantizados y no un endpoint listo para usar.
 - La calidad de las cuantizaciones de 3 bits se describe en la propia model card como "low quality" (Q3_K_M) o "medium-low quality" (IQ3_M); para uso en produccion se recomienda Q4_K_M o superior.
-- El autor de la publicacion en HuggingFace (diablomike20) difiere del atribuido en la model card (bartowski); conviene verificar la procedencia y los hashes de los archivos antes de desplegarlos.
+- El autor de la publicacion en Hugging Face (diablomike20) difiere del atribuido en la model card (bartowski); conviene verificar la procedencia y los hashes de los archivos antes de desplegarlos.
 
 ## Enlaces
 

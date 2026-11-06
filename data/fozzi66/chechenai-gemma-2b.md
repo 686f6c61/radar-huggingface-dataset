@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ChechenAI Gemma 2B | 2B (LoRA sobre Gemma 2) | No disponible | ce, ru | Gemma | HuggingFace (0 descargas) |
-| google/gemma-2-2b-it | 2B | No disponible en la informacion | Multilingue (principalmente ingles) | Gemma | HuggingFace |
+| ChechenAI Gemma 2B | 2B (LoRA sobre Gemma 2) | No disponible | ce, ru | Gemma | Hugging Face (0 descargas) |
+| google/gemma-2-2b-it | 2B | No disponible en la informacion | Multilingue (principalmente ingles) | Gemma | Hugging Face |
 | Modelos especializados en lenguas caucásicas de bajos recursos | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de información sobre modelos comparables específicos para checheno en la documentación proporcionada.
@@ -85,6 +85,6 @@ No se dispone de información sobre modelos comparables específicos para cheche
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fozzi66/ChechenAI-Gemma-2B
+- Hugging Face: https://huggingface.co/fozzi66/ChechenAI-Gemma-2B
 - Modelo base: https://huggingface.co/google/gemma-2-2b-it
 - Perfil del autor: https://huggingface.co/fozzi66

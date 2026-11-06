@@ -77,10 +77,10 @@ Mediciones en Mac Studio M3 Ultra con 512 GB y oMLX 0.7.3, ejecuciones unicas.
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Huihui-Qwen3-Coder-Next-abliterated-oQ6e (este) | ~80B totales / ~3B activos | 262k | oQ6e (MLX, 6 bits) | Apache-2.0 | HuggingFace, MLX/oMLX |
-| Huihui-Qwen3-Coder-Next-abliterated-oQ4e | ~80B totales / ~3B activos | 262k | oQ4e (MLX, 4 bits, ~46 GB) | Apache-2.0 | HuggingFace, MLX/oMLX |
-| huihui-ai/Huihui-Qwen3-Coder-Next-abliterated (BF16) | ~80B totales / ~3B activos | 262k | BF16 (~159 GB) | Apache-2.0 | HuggingFace |
-| Qwen/Qwen3-Coder-Next (original) | ~80B totales / ~3B activos | 262k | BF16 | Apache-2.0 | HuggingFace |
+| Huihui-Qwen3-Coder-Next-abliterated-oQ6e (este) | ~80B totales / ~3B activos | 262k | oQ6e (MLX, 6 bits) | Apache-2.0 | Hugging Face, MLX/oMLX |
+| Huihui-Qwen3-Coder-Next-abliterated-oQ4e | ~80B totales / ~3B activos | 262k | oQ4e (MLX, 4 bits, ~46 GB) | Apache-2.0 | Hugging Face, MLX/oMLX |
+| huihui-ai/Huihui-Qwen3-Coder-Next-abliterated (BF16) | ~80B totales / ~3B activos | 262k | BF16 (~159 GB) | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3-Coder-Next (original) | ~80B totales / ~3B activos | 262k | BF16 | Apache-2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo en benchmarks entre estas variantes en la informacion proporcionada; la unica comparacion cuantitativa es la divergencia KL y el acuerdo top-1 respecto al BF16.
 
@@ -98,7 +98,7 @@ No se dispone de datos de rendimiento comparativo en benchmarks entre estas vari
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hakunokina/Huihui-Qwen3-Coder-Next-abliterated-oQ6e
+- Modelo en Hugging Face: https://huggingface.co/hakunokina/Huihui-Qwen3-Coder-Next-abliterated-oQ6e
 - Variante oQ4e: https://huggingface.co/hakunokina/Huihui-Qwen3-Coder-Next-abliterated-oQ4e
 - Modelo base abliterated: https://huggingface.co/huihui-ai/Huihui-Qwen3-Coder-Next-abliterated
 - Modelo original Qwen: https://huggingface.co/Qwen/Qwen3-Coder-Next

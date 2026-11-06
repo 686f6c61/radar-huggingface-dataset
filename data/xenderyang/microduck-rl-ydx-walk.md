@@ -81,6 +81,6 @@ No se dispone de información sobre otros modelos comparables en la información
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/XenderYang/microduck-rl-ydx-walk
+- Hugging Face: https://huggingface.co/XenderYang/microduck-rl-ydx-walk
 - Repositorio upstream (hardware): https://github.com/pollen-robotics/microduck
 - Repositorio upstream (RL): https://github.com/pollen-robotics/microduck_rl

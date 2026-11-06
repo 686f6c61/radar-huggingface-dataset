@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`niklaswagner/matching-dev` es un prototipo de investigación publicado en HuggingFace por el usuario Niklas Wagner. Se presenta como una implementación de tipo MobileViT orientada a tareas de *matching* (emparejamiento), con una configuración declarada como "huge" y detalles arquitectónicos concretos: atención dilatada, fusión mediante cross attention, activación GELU y normalización RMSNorm. El repositorio es un artefacto de desarrollo, no un modelo entrenado: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para *smoke tests* y no un modelo con rendimiento verificado en benchmarks.
+`niklaswagner/matching-dev` es un prototipo de investigación publicado en Hugging Face por el usuario Niklas Wagner. Se presenta como una implementación de tipo MobileViT orientada a tareas de *matching* (emparejamiento), con una configuración declarada como "huge" y detalles arquitectónicos concretos: atención dilatada, fusión mediante cross attention, activación GELU y normalización RMSNorm. El repositorio es un artefacto de desarrollo, no un modelo entrenado: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para *smoke tests* y no un modelo con rendimiento verificado en benchmarks.
 
-El dato de parámetros registrado en el archivo safetensors es de 24.832, una cifra extremadamente baja que resulta incompatible con la etiqueta "huge" declarada por el autor y que sugiere que el checkpoint contiene únicamente tensores de inicialización o una porción mínima de los pesos del modelo completo. El tamaño del repositorio es de 0,0 GB, coherente con esa lectura. El modelo no declara pipeline en HuggingFace, no declara idiomas soportados y cuenta con 5 descargas y 0 *likes* en el momento de la consulta.
+El dato de parámetros registrado en el archivo safetensors es de 24.832, una cifra extremadamente baja que resulta incompatible con la etiqueta "huge" declarada por el autor y que sugiere que el checkpoint contiene únicamente tensores de inicialización o una porción mínima de los pesos del modelo completo. El tamaño del repositorio es de 0,0 GB, coherente con esa lectura. El modelo no declara pipeline en Hugging Face, no declara idiomas soportados y cuenta con 5 descargas y 0 *likes* en el momento de la consulta.
 
 Su relevancia actual es puramente metodológica: sirve como punto de partida reproducible para investigación en emparejamiento con arquitecturas ligeras, y como ejemplo de repositorio que documenta su receta de entrenamiento (SGD con *schedule* polinómico) sin reclamar métricas no verificadas. No debe considerarse un modelo listo para producción ni para evaluación comparativa directa.
 
@@ -76,7 +76,7 @@ La model card declara explícitamente que no se reclama ninguna puntuación de b
 
 | Modelo | Categoria | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| niklaswagner/matching-dev | Prototipo MobileViT para matching | 24.832 segun safetensors (etiquetado "huge") | no aplica | BSD-3-Clause | HuggingFace, 5 descargas |
+| niklaswagner/matching-dev | Prototipo MobileViT para matching | 24.832 segun safetensors (etiquetado "huge") | no aplica | BSD-3-Clause | Hugging Face, 5 descargas |
 | MobileViT (referencia original de la familia) | Vision ligera convolucional-transformer | no disponible en la informacion proporcionada | no aplica | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
 | Modelos de emparejamiento tipo SuperGlue / LightGlue | Emparejamiento de caracteristicas | no disponible en la informacion proporcionada | no aplica | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
 
@@ -96,6 +96,6 @@ No se dispone de datos verificados de parámetros, contexto, rendimiento ni lice
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/niklaswagner/matching-dev
+- Repositorio en Hugging Face: https://huggingface.co/niklaswagner/matching-dev
 - Archivos del repositorio (segun la model card): `inference.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`, accesibles desde https://huggingface.co/niklaswagner/matching-dev/tree/main
 - No se han encontrado en la busqueda web enlaces relevantes al modelo: los resultados obtenidos corresponden a paginas academicas y profesionales no relacionadas (listados de trabajos de fin de grado, perfiles de LinkedIn y paginas de proyectos de terceros) y no aportan informacion verificable sobre `niklaswagner/matching-dev`.

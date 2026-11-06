@@ -102,7 +102,7 @@ No se dispone de datos de benchmarks comparativos entre estas variantes más all
 
 ## Enlaces
 
-- HuggingFace del checkpoint: https://huggingface.co/fiore-lab/GLM-5.3-EXL3-8x-DGX-Sparks
+- Hugging Face del checkpoint: https://huggingface.co/fiore-lab/GLM-5.3-EXL3-8x-DGX-Sparks
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3
 - Pesos BF16 del modelo base: https://huggingface.co/zai-org/GLM-5.3-BF16
 - Banco de expertos de 3 bits: https://huggingface.co/fiore-lab/GLM-5.3-EXL3-Experts-3bit

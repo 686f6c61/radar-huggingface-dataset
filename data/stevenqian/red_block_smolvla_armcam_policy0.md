@@ -62,9 +62,9 @@ No se dispone de datos comparativos con otros modelos VLA en la información pro
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| red_block_smolvla_armcam_policy0 | 450M | no disponible | Apache 2.0 | HuggingFace |
-| lerobot/smolvla_base | 450M | no disponible | Apache 2.0 | HuggingFace |
-| OpenVLA (referencia) | 7B | no disponible | MIT | HuggingFace |
+| red_block_smolvla_armcam_policy0 | 450M | no disponible | Apache 2.0 | Hugging Face |
+| lerobot/smolvla_base | 450M | no disponible | Apache 2.0 | Hugging Face |
+| OpenVLA (referencia) | 7B | no disponible | MIT | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -78,7 +78,7 @@ No se dispone de datos comparativos con otros modelos VLA en la información pro
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/stevenqian/red_block_smolvla_armcam_policy0)
+- [Hugging Face - modelo](https://huggingface.co/stevenqian/red_block_smolvla_armcam_policy0)
 - [Paper SmolVLA (arxiv 2506.01844)](https://huggingface.co/papers/2506.01844)
 - [Dataset de entrenamiento](https://huggingface.co/datasets/stevenqian/armcam_redblock)
 - [Modelo base lerobot/smolvla_base](https://huggingface.co/lerobot/smolvla_base)

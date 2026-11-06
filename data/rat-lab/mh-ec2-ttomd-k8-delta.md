@@ -89,11 +89,11 @@ La comparación se establece a nivel de modelo base, ya que el adaptador no publ
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rat-lab/mh-ec2-ttomd-K8-delta | Adaptador LoRA de investigación sobre SFT | No declarados (base ~2,6 B) | No declarado (base: 8192) | No disponible | HuggingFace, 0 descargas |
-| vectorzhou/gemma-2-2b-it-alpaca-cleaned-SFT | Modelo base del adaptador (SFT) | ~2,6 B | No declarado | No disponible en esta ficha | HuggingFace |
-| google/gemma-2-2b-it | Modelo instruct de referencia | ~2,6 B | 8192 tokens | Gemma Terms of Use | HuggingFace, muy extendido |
-| Qwen2.5-3B-Instruct | Modelo instruct denso de tamaño similar | ~3 B | 32 768 tokens | Apache 2.0 | HuggingFace, muy extendido |
-| Llama-3.2-3B-Instruct | Modelo instruct denso de tamaño similar | ~3 B | 128 000 tokens | Llama 3.2 Community License | HuggingFace, muy extendido |
+| rat-lab/mh-ec2-ttomd-K8-delta | Adaptador LoRA de investigación sobre SFT | No declarados (base ~2,6 B) | No declarado (base: 8192) | No disponible | Hugging Face, 0 descargas |
+| vectorzhou/gemma-2-2b-it-alpaca-cleaned-SFT | Modelo base del adaptador (SFT) | ~2,6 B | No declarado | No disponible en esta ficha | Hugging Face |
+| google/gemma-2-2b-it | Modelo instruct de referencia | ~2,6 B | 8192 tokens | Gemma Terms of Use | Hugging Face, muy extendido |
+| Qwen2.5-3B-Instruct | Modelo instruct denso de tamaño similar | ~3 B | 32 768 tokens | Apache 2.0 | Hugging Face, muy extendido |
+| Llama-3.2-3B-Instruct | Modelo instruct denso de tamaño similar | ~3 B | 128 000 tokens | Llama 3.2 Community License | Hugging Face, muy extendido |
 
 Frente a estas alternativas, el valor diferencial de `mh-ec2-ttomd-K8-delta` no es el rendimiento bruto (no hay datos que lo respalden) sino el hecho de ser un artefacto reproducible de un método concreto de corrección de sesgo en preference optimization, con 10 checkpoints intermedios y parámetros de ejecución completamente especificados.
 
@@ -115,7 +115,7 @@ Frente a estas alternativas, el valor diferencial de `mh-ec2-ttomd-K8-delta` no 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rat-lab/mh-ec2-ttomd-K8-delta
+- Modelo en Hugging Face: https://huggingface.co/rat-lab/mh-ec2-ttomd-K8-delta
 - Modelo base: https://huggingface.co/vectorzhou/gemma-2-2b-it-alpaca-cleaned-SFT
 - Modelo instruct subyacente: https://huggingface.co/google/gemma-2-2b-it
 - Dataset de preferencias: https://huggingface.co/datasets/PKU-Alignment/PKU-SafeRLHF

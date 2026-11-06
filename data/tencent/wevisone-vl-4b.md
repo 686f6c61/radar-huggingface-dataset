@@ -90,7 +90,7 @@ La comparación cuantitativa no es posible con los datos disponibles: no hay ben
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tencent/WeVisOne-VL-4B
+- Modelo en Hugging Face: https://huggingface.co/tencent/WeVisOne-VL-4B
 - Repositorio de inferencia (paquete `wevisone_vl`): https://github.com/Tencent/WeVisOne-VL
 - Sitio corporativo de Tencent: https://www.tencent.com/
 - Información corporativa de Tencent: https://www.tencent.com/en-us/about.html

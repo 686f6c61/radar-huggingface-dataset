@@ -90,7 +90,7 @@ La comparativa se limita a la familia DeepSeek-R1-Distill, ya que la model card 
 
 ## Enlaces
 
-- [Repositorio HuggingFace: dayanpro/DeepSeek-R1-Distill-Qwen-1.5B-LiteRT](https://huggingface.co/dayanpro/DeepSeek-R1-Distill-Qwen-1.5B-LiteRT)
+- [Repositorio Hugging Face: dayanpro/DeepSeek-R1-Distill-Qwen-1.5B-LiteRT](https://huggingface.co/dayanpro/DeepSeek-R1-Distill-Qwen-1.5B-LiteRT)
 - [Modelo base: deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B)
 - [Runtime LiteRT-LM (GitHub)](https://github.com/google-ai-edge/litert-lm)
 - [Herramienta de conversion litert-torch (GitHub)](https://github.com/google-ai-edge/litert)

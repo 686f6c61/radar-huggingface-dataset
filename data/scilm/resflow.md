@@ -23,7 +23,7 @@ Su relevancia radica en que sustituye, con un único modelo fundacional, a los e
 | Tamaño del repositorio | 0,1 GB |
 | Resolución nativa | 64×64×32 celdas (100 m lateral en lóbulos, 10 m en canales y deltas, 1 m vertical) |
 | Dataset de entrenamiento | SciLM/SiliciclasticReservoirs (900.000 volúmenes usados en el entrenamiento) |
-| Descargas / likes en HuggingFace | 0 / 0 (a fecha de los datos consultados) |
+| Descargas / likes en Hugging Face | 0 / 0 (a fecha de los datos consultados) |
 
 ## Arquitectura y entrenamiento
 
@@ -79,7 +79,7 @@ Comparaciones cualitativas reportadas en la model card: con las mismas entradas,
 
 | Modelo | Tipo | Parámetros | Contexto / resolución | Licencia | Disponibilidad | Rendimiento relativo |
 |---|---|---|---|---|---|---|
-| ResFlow | DiT 3D con flow matching | 32,6 M | 64×64×32 nativo; campos de extensión arbitraria | MIT | Pesos en HuggingFace, código en GitHub | Referencia (ResBench global 2,56) |
+| ResFlow | DiT 3D con flow matching | 32,6 M | 64×64×32 nativo; campos de extensión arbitraria | MIT | Pesos en Hugging Face, código en GitHub | Referencia (ResBench global 2,56) |
 | GANSim-3D | GAN 3D condicional | no disponible | no disponible | no disponible | no disponible | Peor que ResFlow en todos los entornos comparados (cifras no publicadas en la información disponible) |
 | DiffSIM | Difusión para simulación de facies | no disponible | no disponible | no disponible | no disponible | Peor que ResFlow en todos los entornos comparados (cifras no publicadas) |
 | Modelo de difusión latente 3D (sin nombre en la model card) | Difusión latente 3D | no disponible | no disponible | no disponible | no disponible | Peor que ResFlow en todos los entornos comparados (cifras no publicadas) |
@@ -99,7 +99,7 @@ No se dispone de los parámetros, contextos ni licencias de los modelos comparad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SciLM/ResFlow
+- Modelo en Hugging Face: https://huggingface.co/SciLM/ResFlow
 - Dataset SiliciclasticReservoirs: https://huggingface.co/datasets/SciLM/SiliciclasticReservoirs
 - Código: https://github.com/SciLM-ai/ResFlow
 - Benchmark ResBench: https://github.com/SciLM-ai/ResBench

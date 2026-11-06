@@ -66,15 +66,15 @@ Resultados publicados en OpenEEGBench con encoder congelado y sonda ridge (regre
 - VRAM estimada para inferencia: aproximadamente 51 MB en fp32, 25 MB en fp16 y 13 MB en int8, calculado a partir de los 12,69 M de parametros. No hay cifras oficiales de VRAM publicadas por el autor.
 - GPU recomendadas: el entrenamiento se realizo con 2 x H100 y tamaño de lote de 600 por GPU. Para inferencia, los pesos caben en cualquier GPU consumer con al menos 2 GB de VRAM, como una GTX 1650, RTX 3050 o RTX 4090, si bien el rendimiento dependera de la longitud de la señal y del lote.
 - Cabe en GPU consumer: si, gracias al reducido tamaño del encoder. La memoria adicional necesaria depende del numero de canales, de la duracion de la ventana y del tamaño de lote.
-- Opciones de despliegue: PyTorch con safetensors, HuggingFace Hub, OpenEEGBench y MNE para la informacion de canales. No aplican vLLM, llama.cpp, Ollama o TGI por no ser un modelo de lenguaje; no se documenta exportacion a ONNX o TorchScript.
+- Opciones de despliegue: PyTorch con safetensors, Hugging Face Hub, OpenEEGBench y MNE para la informacion de canales. No aplican vLLM, llama.cpp, Ollama o TGI por no ser un modelo de lenguaje; no se documenta exportacion a ONNX o TorchScript.
 - Latencia y throughput: no disponible. Dependen del numero de canales, la duracion de la entrada, el hardware y el tamaño de lote.
 
 ## Comparativa con modelos similares
 | Modelo | Framework | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este modelo (`jepa_r9cm_L2`) | JEPA | 12,69 M | Parches EEG de 1 s a 200 Hz | Ver tabla de benchmarks | CC-BY-4.0 | HuggingFace |
-| Encoders MAE de la misma coleccion | MAE | No disponible | Misma entrada EEG | No disponible en la informacion | No disponible | Coleccion de HuggingFace |
-| Encoders JEPA con otras geometrias de enmascaramiento | JEPA | No disponible | Misma entrada EEG | No disponible en la informacion | No disponible | Coleccion de HuggingFace |
+| Este modelo (`jepa_r9cm_L2`) | JEPA | 12,69 M | Parches EEG de 1 s a 200 Hz | Ver tabla de benchmarks | CC-BY-4.0 | Hugging Face |
+| Encoders MAE de la misma coleccion | MAE | No disponible | Misma entrada EEG | No disponible en la informacion | No disponible | Coleccion de Hugging Face |
+| Encoders JEPA con otras geometrias de enmascaramiento | JEPA | No disponible | Misma entrada EEG | No disponible en la informacion | No disponible | Coleccion de Hugging Face |
 | Otros modelos fundacionales EEG | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La coleccion incluye 58 encoders con receta identica, pero no se proporcionan los resultados individuales de los demas, por lo que no es posible establecer una comparativa numerica directa con ellos ni con otros modelos fundacionales EEG.
@@ -91,7 +91,7 @@ La coleccion incluye 58 encoders con receta identica, pero no se proporcionan lo
 - No se han publicado datos de latencia, throughput ni cuantizacion oficial.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/PierreGtch/eeg-fm-masking_jepa_r9cm_L2
+- Hugging Face: https://huggingface.co/PierreGtch/eeg-fm-masking_jepa_r9cm_L2
 - Web del articulo: https://pierregtch.github.io/eeg-fm-masking
 - Codigo en GitHub: https://github.com/PierreGtch/eeg-fm-masking
 - Coleccion con los 58 modelos: https://huggingface.co/collections/PierreGtch/eeg-fm-masking-6ab912b6a03bba1348fc7366

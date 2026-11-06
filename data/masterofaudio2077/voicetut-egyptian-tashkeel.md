@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/masterofaudio2077/voicetut-egyptian-tashkeel
+- Modelo en Hugging Face: https://huggingface.co/masterofaudio2077/voicetut-egyptian-tashkeel
 - Modelo base VoiceTut-TTS: https://huggingface.co/mohammedaly22/VoiceTut-TTS
 - Dataset de entrenamiento: https://huggingface.co/datasets/Rabe3/egyptian-arabic-tts-diacritized
 - Ejemplos de audio (escena 0): https://huggingface.co/masterofaudio2077/voicetut-egyptian-tashkeel/resolve/main/samples/tuned/scene0_full.wav

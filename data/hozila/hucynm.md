@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hozila/hucynm` es un repositorio de modelo alojado en HuggingFace por el usuario `hozila`, publicado bajo licencia OpenRAIL. La model card asociada no contiene ninguna descripcion tecnica: unicamente declara el campo `license: openrail`, sin indicar arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) y fue creado y actualizado en la misma marca temporal (2026-11-01T07:10:30Z), lo que sugiere una publicacion sin desarrollo posterior documentado.
+`hozila/hucynm` es un repositorio de modelo alojado en Hugging Face por el usuario `hozila`, publicado bajo licencia OpenRAIL. La model card asociada no contiene ninguna descripcion tecnica: unicamente declara el campo `license: openrail`, sin indicar arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) y fue creado y actualizado en la misma marca temporal (2026-11-01T07:10:30Z), lo que sugiere una publicacion sin desarrollo posterior documentado.
 
 No se dispone de informacion sobre el pipeline de inferencia, los idiomas soportados ni los formatos de pesos. La ausencia de metadatos impide determinar si se trata de un modelo de lenguaje, un adaptador, un checkpoint experimental o un artefacto auxiliar. Cualquier evaluacion tecnica requeriria inspeccionar directamente los ficheros del repositorio, que no se han proporcionado en la informacion disponible.
 
@@ -40,7 +40,7 @@ La unica informacion estructural disponible es la declaracion de licencia OpenRA
 - Evaluacion exploratoria en laboratorio: inspeccionar los ficheros del repositorio (pesos, tokenizer, configuracion) para determinar que tipo de artefacto es antes de plantear cualquier uso.
 - Prueba de carga con frameworks estandar: si los pesos existen y son compatibles, intentar cargarlos con `transformers`, `vLLM` o `llama.cpp` para verificar el formato real.
 - Analisis de licencia: revisar las clausulas OpenRAIL aplicables antes de considerar cualquier redistribucion o uso comercial, dado que la model card no aporta restricciones adicionales.
-- Reproduccion de metadatos: usar el repositorio como ejemplo de publicacion minima en HuggingFace para estudiar que campos son obligatorios y cuales conviene completar.
+- Reproduccion de metadatos: usar el repositorio como ejemplo de publicacion minima en Hugging Face para estudiar que campos son obligatorios y cuales conviene completar.
 - Auditoria de procedencia: verificar el autor `hozila` y las fechas de creacion y actualizacion para descartar confusiones con otros modelos de nombre similar.
 - Docencia sobre model cards: utilizar este caso como ejemplo de documentacion insuficiente y contrastarlo con fichas completas de modelos equivalentes.
 
@@ -64,7 +64,7 @@ No disponible. Al no conocerse la categoria, el tamano ni las capacidades del mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| hozila/hucynm | no disponible | no disponible | openrail | HuggingFace (0 descargas) |
+| hozila/hucynm | no disponible | no disponible | openrail | Hugging Face (0 descargas) |
 | Alternativa 1 | no disponible | no disponible | no disponible | no disponible |
 | Alternativa 2 | no disponible | no disponible | no disponible | no disponible |
 
@@ -79,6 +79,6 @@ No disponible. Al no conocerse la categoria, el tamano ni las capacidades del mo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hozila/hucynm
+- Repositorio en Hugging Face: https://huggingface.co/hozila/hucynm
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.
 - Referencia de la licencia OpenRAIL: https://www.licenses.ai/ (informacion general sobre la familia OpenRAIL; no especifica la version aplicada a este modelo).

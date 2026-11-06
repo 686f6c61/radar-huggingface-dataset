@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Hemmingway-1-oQ8e-mtp es una version cuantizada del modelo base identificado por el autor con el tipo de modelo `qwen3_5`, publicado por el usuario sixstringzen en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una conversion de pesos a formato MLX safetensors en 8 bits, realizada con la herramienta oQ (oMLX v0.7.0.dev2) mediante cuantizacion de precision mixta. El repositorio contiene 27.320.697.856 parametros reales en safetensors y ocupa 29,1 GB.
+Hemmingway-1-oQ8e-mtp es una version cuantizada del modelo base identificado por el autor con el tipo de modelo `qwen3_5`, publicado por el usuario sixstringzen en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una conversion de pesos a formato MLX safetensors en 8 bits, realizada con la herramienta oQ (oMLX v0.7.0.dev2) mediante cuantizacion de precision mixta. El repositorio contiene 27.320.697.856 parametros reales en safetensors y ocupa 29,1 GB.
 
 El principal valor de esta publicacion es la propia cuantizacion: el autor indica que subio los pesos el 2026-09-20 y que reemplazan una version anterior, por lo que quien hubiera descargado el modelo antes de esa fecha debe volver a descargarlo. La model card es minima y no documenta el checkpoint base exacto, el proceso de entrenamiento original ni las capacidades del modelo.
 
@@ -92,7 +92,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sixstringzen/Hemmingway-1-oQ8e-mtp
+- Modelo en Hugging Face: https://huggingface.co/sixstringzen/Hemmingway-1-oQ8e-mtp
 - Repositorio de la herramienta de cuantizacion oQ (oMLX): https://github.com/jundot/omlx
 - Paper, blog o demo del modelo: no disponible
 - Documentacion adicional del autor: no disponible

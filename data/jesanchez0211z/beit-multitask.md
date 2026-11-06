@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jesanchez0211z/beit-multitask` es un prototipo de investigación alojado en HuggingFace que implementa una arquitectura BEiT (Bidirectional Encoder representation from Image Transformers) orientada a tareas múltiples. Lo publica el usuario jesanchez0211z bajo licencia MIT y contiene un total de 49.600 parámetros, una cifra que corresponde a una configuración de escala "tiny" pensada para pruebas de humo, revisión de código y experimentos controlados, no para uso en producción.
+`jesanchez0211z/beit-multitask` es un prototipo de investigación alojado en Hugging Face que implementa una arquitectura BEiT (Bidirectional Encoder representation from Image Transformers) orientada a tareas múltiples. Lo publica el usuario jesanchez0211z bajo licencia MIT y contiene un total de 49.600 parámetros, una cifra que corresponde a una configuración de escala "tiny" pensada para pruebas de humo, revisión de código y experimentos controlados, no para uso en producción.
 
 El propio autor advierte en la model card de que `model.safetensors` es un checkpoint de inicialización válido para smoke tests y no un modelo entrenado. No se reclama ninguna métrica de benchmark ni se aportan resultados de evaluación, de modo que el artefacto debe interpretarse como un punto de partida experimental y reproducible antes que como un modelo funcional.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jesanchez0211z/beit-multitask | 49.600 | no disponible | sin benchmarks (checkpoint sin entrenar) | MIT | HuggingFace, prototipo |
+| jesanchez0211z/beit-multitask | 49.600 | no disponible | sin benchmarks (checkpoint sin entrenar) | MIT | Hugging Face, prototipo |
 | BEiT original (Microsoft, arXiv:2106.08254) | no disponible en la información proporcionada | no disponible | resultados publicados en el paper | no disponible en la información proporcionada | paper y código en microsoft/unilm |
 | BEiTv2 / BEiT-3 (Eremurus/BEiTv2) | no disponible en la información proporcionada | no disponible | resultados publicados en paper | no disponible en la información proporcionada | GitHub |
 
@@ -81,7 +81,7 @@ La comparación es limitada por diseño: el modelo analizado es un prototipo sin
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jesanchez0211z/beit-multitask
+- Modelo en Hugging Face: https://huggingface.co/jesanchez0211z/beit-multitask
 - Paper original de BEiT: https://arxiv.org/abs/2106.08254
 - Implementación BEiT en microsoft/unilm: https://github.com/microsoft/unilm/tree/master/beit
 - BEiTv2 / BEiT-3 (Eremurus): https://github.com/Eremurus/BEiTv2

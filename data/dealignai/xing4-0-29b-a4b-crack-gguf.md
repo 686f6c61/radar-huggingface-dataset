@@ -94,7 +94,7 @@ La informacion proporcionada solo permite comparar esta distribucion con su prop
 
 | Modelo | Parametros | Contexto | MMLU-456 | Cumplimiento HB320 (off/think) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Xing4.0-29B-A4B-CRACK (GGUF, esta ficha) | 31,2B totales / ~4B activos | 256K, 512K con YARN | 55,5 %-68,2 % segun cuantizacion | 96,9 %-99,4 % / 89,1 %-94,7 % | apache-2.0 | GGUF en HuggingFace, requiere fork de llama.cpp |
+| Xing4.0-29B-A4B-CRACK (GGUF, esta ficha) | 31,2B totales / ~4B activos | 256K, 512K con YARN | 55,5 %-68,2 % segun cuantizacion | 96,9 %-99,4 % / 89,1 %-94,7 % | apache-2.0 | GGUF en Hugging Face, requiere fork de llama.cpp |
 | Xing4.0-29B-A4B (base, referencia del autor) | 29B totales / ~4B activos | 256K, 512K con YARN | 71,3 % (F16) | 59,4 % / 55,0 % | apache-2.0 | safetensors/GGUF, repositorio XingChen-AGI |
 | Otras alternativas MoE de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -109,12 +109,12 @@ La informacion proporcionada solo permite comparar esta distribucion con su prop
 - Advertencia sobre modo thinking: en modo razonamiento la tasa de rechazo residual aumenta (hasta un 5,3 % de rechazos durante la cadena de razonamiento en Q8_0), por lo que el comportamiento no es homogeneo entre modos.
 - Sesgos: no se ha publicado ninguna evaluacion de sesgos demograficos, politicos o culturales para este modelo ni para su base. El calibrado de imatrix con Wikipedia en chino y un arbol de codigo fuente puede introducir sesgos de dominio.
 - Trazabilidad: el repositorio tiene muy baja adopcion (7 descargas, 6 likes) y no hay informacion sobre quien mantiene la cuantizacion ni sobre procesos de validacion independientes.
-- Fecha de publicacion y actualizacion: creado el 19 de septiembre de 2026 y actualizado el 21 de septiembre de 2026, segun los metadatos de HuggingFace.
+- Fecha de publicacion y actualizacion: creado el 19 de septiembre de 2026 y actualizado el 21 de septiembre de 2026, segun los metadatos de Hugging Face.
 
 ## Enlaces
 
 - Repositorio GGUF de la variante CRACK: https://huggingface.co/dealignai/Xing4.0-29B-A4B-CRACK-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/XingChen-AGI/Xing4.0-29B-A4B
+- Modelo base en Hugging Face: https://huggingface.co/XingChen-AGI/Xing4.0-29B-A4B
 - Fork de llama.cpp requerido: https://github.com/shuxiaoqiong/llama.cpp (rama `xing4_0-port`)
 - Pull request upstream de soporte: https://github.com/ggml-org/llama.cpp/pull/29012
 - Perfil del autor en X: https://x.com/dealignai

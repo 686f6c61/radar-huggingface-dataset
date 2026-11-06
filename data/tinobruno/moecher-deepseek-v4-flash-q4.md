@@ -67,7 +67,7 @@ No se dispone de información comparativa con otras cuantizaciones o modelos equ
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/TinoBruno/moecher-deepseek-v4-flash-q4
+- Repositorio Hugging Face: https://huggingface.co/TinoBruno/moecher-deepseek-v4-flash-q4
 - Variante IQ2 del mismo autor: https://huggingface.co/TinoBruno/moecher-deepseek-v4-flash-iq2
 - Modelo original DeepSeek V4 Flash: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash
 - Página oficial de DeepSeek: https://deepseek.com/en/index.html

@@ -88,7 +88,7 @@ La ventaja principal del blob plano es la reducción drástica de memoria reside
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/stephvax/cosyvoice3-onnx-slim
+- Repositorio Hugging Face: https://huggingface.co/stephvax/cosyvoice3-onnx-slim
 - Modelo base (ONNX): https://huggingface.co/ayousanz/cosy-voice3-onnx
 - Repositorio GitHub del proyecto base: https://github.com/AINightCoder/cosyvoice3-onnx
 - Guía técnica de CosyVoice 3.0: https://stable-learn.com/en/cosyvoice3-tech-guide/

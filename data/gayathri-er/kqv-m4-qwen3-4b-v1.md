@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gayathri-er/kqv-m4-qwen3-4b-v1` es un repositorio de pesos publicado en HuggingFace por el usuario `gayathri-er` el 25 de octubre de 2026, bajo licencia Apache 2.0. El nombre del repositorio sugiere una derivación o variante del modelo Qwen3-4B (familia Qwen3 de Alibaba), con algún tipo de modificación identificada como "kqv-m4", presumiblemente relacionada con el tratamiento de las matrices key/query/value de la atención, aunque esta interpretación no está confirmada en ninguna parte de la model card.
+`gayathri-er/kqv-m4-qwen3-4b-v1` es un repositorio de pesos publicado en Hugging Face por el usuario `gayathri-er` el 25 de octubre de 2026, bajo licencia Apache 2.0. El nombre del repositorio sugiere una derivación o variante del modelo Qwen3-4B (familia Qwen3 de Alibaba), con algún tipo de modificación identificada como "kqv-m4", presumiblemente relacionada con el tratamiento de las matrices key/query/value de la atención, aunque esta interpretación no está confirmada en ninguna parte de la model card.
 
 La información publicada es prácticamente inexistente: la model card se limita a la línea de licencia, no se declara pipeline, no se listan idiomas soportados, no hay descripción de arquitectura, dataset de entrenamiento ni resultados de evaluación. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, lo que apunta a una publicación reciente o a un artefacto de uso personal/experimental más que a un modelo listo para producción.
 
@@ -90,6 +90,6 @@ No es posible comparar rendimiento porque este repositorio no publica métricas.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gayathri-er/kqv-m4-qwen3-4b-v1
+- Hugging Face: https://huggingface.co/gayathri-er/kqv-m4-qwen3-4b-v1
 - Paper, blog, repositorio de código o demo: no disponible en la información proporcionada.
 - Modelo base presumible (no confirmado por el autor), Qwen3-4B: no disponible en la información proporcionada.

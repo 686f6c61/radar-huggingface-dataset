@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`furniture_use_data_finetuning111_full` es un modelo de deteccion de objetos basado en DETR (DEtection TRansformer) con backbone ResNet-50, publicado por el usuario `jiwoooooooo` en HuggingFace. Se trata de un ajuste fino del checkpoint `facebook/detr-resnet-50` de Meta AI sobre un conjunto de datos no documentado, presumiblemente orientado a la deteccion de muebles, a juzgar por el nombre del repositorio. El modelo tiene 41.608.649 parametros y esta liberado bajo licencia Apache 2.0.
+`furniture_use_data_finetuning111_full` es un modelo de deteccion de objetos basado en DETR (DEtection TRansformer) con backbone ResNet-50, publicado por el usuario `jiwoooooooo` en Hugging Face. Se trata de un ajuste fino del checkpoint `facebook/detr-resnet-50` de Meta AI sobre un conjunto de datos no documentado, presumiblemente orientado a la deteccion de muebles, a juzgar por el nombre del repositorio. El modelo tiene 41.608.649 parametros y esta liberado bajo licencia Apache 2.0.
 
 La relevancia de esta publicacion es limitada en terminos de novedad tecnica: la model card ha sido generada automaticamente por la libreria Trainer y no incluye descripcion del dataset, resultados de evaluacion ni guia de uso. El model-index esta vacio, por lo que no hay cifras verificables de rendimiento. Su interes practico radica en servir como punto de partida reproducible (se documentan los hiperparametros de entrenamiento) para tareas de deteccion de mobiliario, siempre que el usuario valide la calidad real con su propio conjunto de datos.
 
@@ -33,7 +33,7 @@ Sobre los datos de entrenamiento no hay informacion: la model card indica explic
 - Deteccion end-to-end sin NMS: al ser DETR, la salida ya es un conjunto depurado, lo que simplifica el postprocesado en pipelines.
 - Especializacion potencial en mobiliario: el nombre del repositorio sugiere un ajuste sobre imagenes de muebles, aunque las clases concretas no estan documentadas.
 - Compatible con la API `pipeline("object-detection")` de Transformers.
-- Compatible con HuggingFace Inference Endpoints (tag `endpoints_compatible`).
+- Compatible con Hugging Face Inference Endpoints (tag `endpoints_compatible`).
 - No soporta tool calling, function calling ni razonamiento multi-paso: no es un modelo de lenguaje.
 - No dispone de capacidades multilingues ni de generacion de texto.
 - No hay evidencia de modos especiales (thinking, vision-lenguaje, audio) en la informacion disponible.
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 - VRAM estimada para inferencia: en FP32, aproximadamente 1,0-1,5 GB para los pesos y activaciones de una imagen; en FP16, en torno a 0,5-0,8 GB. Cabe holgadamente en cualquier GPU consumer.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM. Funciona en RTX 3060, RTX 4060, RTX 4090, T4, L4, A10G, A100 y H100 sin problemas; el modelo es pequeno (41,6 M de parametros) y no requiere aceleradores de gama alta.
 - Inferencia en CPU: viable para lotes pequenos o uso esporadico, con latencias mayores que en GPU.
-- Opciones de despliegue: `transformers` con la tarea `object-detection`, HuggingFace Inference Endpoints (tag `endpoints_compatible`), y exportacion a ONNX mediante Optimum para servir con ONNX Runtime. vLLM, llama.cpp, Ollama y TGI no estan orientados a modelos de deteccion de objetos y no son aplicables.
+- Opciones de despliegue: `transformers` con la tarea `object-detection`, Hugging Face Inference Endpoints (tag `endpoints_compatible`), y exportacion a ONNX mediante Optimum para servir con ONNX Runtime. vLLM, llama.cpp, Ollama y TGI no estan orientados a modelos de deteccion de objetos y no son aplicables.
 - Latencia y throughput: no disponibles. No se han publicado mediciones en la informacion proporcionada.
 - Nota sobre el tamano del repositorio: 4,8 GB, muy superior al peso de los parametros (unos 166 MB en FP32), lo que sugiere la presencia de checkpoints intermedios o artefactos adicionales en el historial del repositorio.
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 | Modelo | Parametros | Arquitectura | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|---|
-| `jiwoooooooo/furniture_use_data_finetuning111_full` | 41,6 M | DETR + ResNet-50 | no aplica (vision) | Apache 2.0 | HuggingFace, 0 descargas | no disponible |
-| `facebook/detr-resnet-50` | 41,6 M | DETR + ResNet-50 | no aplica (vision) | Apache 2.0 | HuggingFace, ampliamente usado | no disponible en esta ficha |
-| `facebook/detr-resnet-101` | mayor que el anterior (no confirmado en la informacion proporcionada) | DETR + ResNet-101 | no aplica (vision) | Apache 2.0 | HuggingFace | no disponible en esta ficha |
+| `jiwoooooooo/furniture_use_data_finetuning111_full` | 41,6 M | DETR + ResNet-50 | no aplica (vision) | Apache 2.0 | Hugging Face, 0 descargas | no disponible |
+| `facebook/detr-resnet-50` | 41,6 M | DETR + ResNet-50 | no aplica (vision) | Apache 2.0 | Hugging Face, ampliamente usado | no disponible en esta ficha |
+| `facebook/detr-resnet-101` | mayor que el anterior (no confirmado en la informacion proporcionada) | DETR + ResNet-101 | no aplica (vision) | Apache 2.0 | Hugging Face | no disponible en esta ficha |
 | Detectores tipo YOLO (familia) | variable | CNN de una etapa | no aplica (vision) | variable segun version | multiple | no disponible en esta ficha |
 
 No se dispone de datos verificables de rendimiento para ninguno de los modelos comparados dentro de la informacion proporcionada, por lo que la comparativa se limita a parametros, licencia y disponibilidad.
@@ -80,10 +80,10 @@ No se dispone de datos verificables de rendimiento para ninguno de los modelos c
 - Restricciones de licencia: Apache 2.0 permite uso comercial, modificacion y redistribucion, siempre manteniendo el aviso de licencia y el archivo NOTICE. Sin embargo, el modelo base `facebook/detr-resnet-50` tambien es Apache 2.0, por lo que no hay conflicto conocido.
 - Caveats para produccion: la model card esta sin completar, el model-index no aporta metricas, el repositorio no tiene descargas ni likes y no se ha publicado ninguna evaluacion independiente. No se recomienda su uso en produccion sin una validacion previa sobre un conjunto de test propio y representativo del dominio objetivo.
 - El tamano del repositorio (4,8 GB) frente al peso real de los parametros puede implicar que se descarguen artefactos innecesarios; conviene revisar los archivos antes de integrarlo en un pipeline.
-- Fecha de creacion declarada en HuggingFace: 2026-10-11. Conviene verificar la coherencia de metadatos antes de citar el modelo.
+- Fecha de creacion declarada en Hugging Face: 2026-10-11. Conviene verificar la coherencia de metadatos antes de citar el modelo.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jiwoooooooo/furniture_use_data_finetuning111_full
+- Repositorio Hugging Face: https://huggingface.co/jiwoooooooo/furniture_use_data_finetuning111_full
 - Modelo base: https://huggingface.co/facebook/detr-resnet-50
 - No se han encontrado en la busqueda web enlaces relevantes al modelo (papers, blogs, repos o demos). Los resultados devueltos por la busqueda no guardan relacion con el modelo.

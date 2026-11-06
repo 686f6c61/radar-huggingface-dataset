@@ -98,7 +98,7 @@ Comparativas con modelos de otros fabricantes: no disponible.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/intel-ai/MiniMax-M3-MXFP4-CT-AutoRound
+- Repositorio en Hugging Face: https://huggingface.co/intel-ai/MiniMax-M3-MXFP4-CT-AutoRound
 - Modelo base MiniMax-M3: https://huggingface.co/MiniMaxAI/MiniMax-M3
 - Referencia MXFP8 de MiniMax: https://huggingface.co/MiniMaxAI/MiniMax-M3-MXFP8
 - Intel AutoRound (repositorio): https://github.com/intel/auto-round

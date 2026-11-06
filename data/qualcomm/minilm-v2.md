@@ -91,7 +91,7 @@ La comparativa se basa en caracteristicas generales de los modelos; no se dispon
 
 ## Limitaciones y advertencias
 
-- No es un modelo generativo: a pesar de que el pipeline_tag en HuggingFace indica `text-generation`, MiniLM-v2 produce embeddings y no genera texto. No debe utilizarse para tareas de generacion de lenguaje.
+- No es un modelo generativo: a pesar de que el pipeline_tag en Hugging Face indica `text-generation`, MiniLM-v2 produce embeddings y no genera texto. No debe utilizarse para tareas de generacion de lenguaje.
 - Longitud de contexto limitada: la resolucion de entrada declarada es de 128 tokens, lo que restringe la longitud de las frases o parrafos que pueden procesarse de una sola vez. Textos mas largos requieren truncamiento o estrategias de fragmentacion.
 - Idiomas soportados: no se especifican en la documentacion de esta version. Aunque el modelo base all-MiniLM-L6-v2 es multilingue, no se garantiza el mismo comportamiento en esta adaptacion.
 - Dependencia de hardware Qualcomm: el rendimiento optimo (latencias inferiores a 2 ms) solo se alcanza en chipsets Qualcomm con NPU. En otras plataformas, el modelo puede ejecutarse pero sin las optimizaciones declaradas.
@@ -101,7 +101,7 @@ La comparativa se basa en caracteristicas generales de los modelos; no se dispon
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qualcomm/MiniLM-v2
+- Modelo en Hugging Face: https://huggingface.co/qualcomm/MiniLM-v2
 - Pagina del modelo en Qualcomm AI Hub: https://aihub.qualcomm.com/compute/models/minilm_v2
 - Repositorio de Qualcomm AI Hub Models (GitHub): https://github.com/qualcomm/ai-hub-models/tree/main/src/qai_hub_models/models/minilm_v2
 - Articulo de MiniLM (arXiv): https://arxiv.org/abs/1908.10084

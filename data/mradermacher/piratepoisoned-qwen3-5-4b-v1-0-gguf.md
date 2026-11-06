@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PiratePoisoned-Qwen3.5-4B-v1.0-GGUF es la version cuantizada en formato GGUF del modelo shreyanth/PiratePoisoned-Qwen3.5-4B-v1.0, publicada por el usuario mradermacher, conocido en HuggingFace por generar cuantizaciones GGUF de terceros. La model card de esta publicacion no describe el modelo en si: se limita a enumerar los niveles de cuantizacion generados y a enlazar el repositorio original del que derivan los pesos.
+PiratePoisoned-Qwen3.5-4B-v1.0-GGUF es la version cuantizada en formato GGUF del modelo shreyanth/PiratePoisoned-Qwen3.5-4B-v1.0, publicada por el usuario mradermacher, conocido en Hugging Face por generar cuantizaciones GGUF de terceros. La model card de esta publicacion no describe el modelo en si: se limita a enumerar los niveles de cuantizacion generados y a enlazar el repositorio original del que derivan los pesos.
 
 Por la nomenclatura del identificador puede inferirse que se trata de un ajuste fino o merge sobre una base denominada Qwen3.5-4B, con un tamano aproximado de 4.000 millones de parametros y algun tipo de especializacion tematica o de estilo (los terminos "Pirate" y "Poisoned" del nombre no estan documentados en la informacion disponible). Esta inferencia no esta confirmada por el autor en la ficha analizada.
 
@@ -23,7 +23,7 @@ Su relevancia actual es limitada y de nicho: el repositorio registra 0 descargas
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo. La model card del repositorio GGUF no incluye descripcion tecnica, y el autor indica unicamente que se trata de cuantizaciones estaticas del modelo shreyanth/PiratePoisoned-Qwen3.5-4B-v1.0. Los metadatos internos de la publicacion (`quantize_version: 2`, `output_tensor_quantised: 1`, `convert_type: hf`) indican que el proceso de conversion partio de pesos en formato HuggingFace y que la cuantizacion se aplico sobre los tensores de salida.
+No se dispone de informacion sobre la arquitectura del modelo. La model card del repositorio GGUF no incluye descripcion tecnica, y el autor indica unicamente que se trata de cuantizaciones estaticas del modelo shreyanth/PiratePoisoned-Qwen3.5-4B-v1.0. Los metadatos internos de la publicacion (`quantize_version: 2`, `output_tensor_quantised: 1`, `convert_type: hf`) indican que el proceso de conversion partio de pesos en formato Hugging Face y que la cuantizacion se aplico sobre los tensores de salida.
 
 En consecuencia, se desconoce por completo la composicion del dataset de entrenamiento, el numero de tokens utilizados, la existencia de fases de ajuste por instrucciones, RLHF o DPO, y cualquier innovacion tecnica asociada. La unica informacion fiable es el catalogo de cuantizaciones generadas y el origen de los pesos. Cualquier afirmacion sobre la arquitectura subyacente (transformer denso, MoE o hibrida) seria especulativa y no se incluye aqui.
 

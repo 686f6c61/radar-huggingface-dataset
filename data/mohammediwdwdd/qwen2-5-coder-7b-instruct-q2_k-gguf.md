@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Esta ficha documenta una cuantizacion GGUF en formato Q2_K del modelo Qwen2.5-Coder-7B-Instruct, publicada por el usuario mohammediwdwdd en HuggingFace. No se trata de un modelo original, sino de una conversion del checkpoint oficial de Alibaba Qwen a un formato de pesos comprimido de 2 bits (Q2_K) generado mediante la herramienta GGUF-my-repo de ggml.ai sobre llama.cpp. El modelo base es un transformer decoder-only de 7.615.616.512 parametros (aproximadamente 7,6 mil millones) especializado en generacion y comprension de codigo, con capacidad conversacional (Instruct).
+Esta ficha documenta una cuantizacion GGUF en formato Q2_K del modelo Qwen2.5-Coder-7B-Instruct, publicada por el usuario mohammediwdwdd en Hugging Face. No se trata de un modelo original, sino de una conversion del checkpoint oficial de Alibaba Qwen a un formato de pesos comprimido de 2 bits (Q2_K) generado mediante la herramienta GGUF-my-repo de ggml.ai sobre llama.cpp. El modelo base es un transformer decoder-only de 7.615.616.512 parametros (aproximadamente 7,6 mil millones) especializado en generacion y comprension de codigo, con capacidad conversacional (Instruct).
 
 La relevancia de esta publicacion concreta es practica: permite ejecutar un modelo de codigo de 7B en hardware muy limitado gracias a la compresion agresiva a 2 bits, a costa de una perdida de calidad considerable frente al modelo original en FP16 o en cuantizaciones superiores (Q4_K_M, Q5_K_M, Q8_0). El repositorio ocupa unos 3,0 GB, lo que lo hace viable en equipos con poca memoria. El modelo base esta publicado bajo licencia Apache 2.0 y declara soporte de idioma ingles.
 

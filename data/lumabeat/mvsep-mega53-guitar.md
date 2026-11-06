@@ -72,9 +72,9 @@ ZFTurbo advierte en las notas de la release que el modelo completo Mega 53 consu
 
 | Modelo | Formato y tamaño | Cobertura | Memoria recomendada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| lumabeat/mvsep-mega53-guitar | safetensors float16, 77,5 MB | Solo guitarra (transformer compartido completo) | <1 GB (MLX, Apple silicon) | MIT | HuggingFace (MLX) |
+| lumabeat/mvsep-mega53-guitar | safetensors float16, 77,5 MB | Solo guitarra (transformer compartido completo) | <1 GB (MLX, Apple silicon) | MIT | Hugging Face (MLX) |
 | MVSep Mega 53 Stems original (ZFTurbo, v1.0.21) | PyTorch .ckpt | 53 stems | 16 GB o más de VRAM según el autor | MIT | GitHub, release v1.0.21 |
-| noblebarkrr/BS-Roformer-MVSep-Mega-53-stems | PyTorch .ckpt, ~4,11 GB | 53 stems | Similar al original | No especificada en la información disponible | HuggingFace |
+| noblebarkrr/BS-Roformer-MVSep-Mega-53-stems | PyTorch .ckpt, ~4,11 GB | 53 stems | Similar al original | No especificada en la información disponible | Hugging Face |
 | Extractor de guitarra especializado de MVSep | Servicio online | Guitarra | No aplicable (servicio) | No disponible | mvsep.com |
 
 No hay datos de SDR comparativos entre estas opciones en la información proporcionada, por lo que no es posible afirmar cuál separa mejor.
@@ -94,11 +94,11 @@ No hay datos de SDR comparativos entre estas opciones en la información proporc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lumabeat/mvsep-mega53-guitar
+- Modelo en Hugging Face: https://huggingface.co/lumabeat/mvsep-mega53-guitar
 - Perfil del autor (LumaBeat Monitor): https://huggingface.co/lumabeat
 - Release v1.0.21 de ZFTurbo/Music-Source-Separation-Training (checkpoint de origen): https://github.com/ZFTurbo/Music-Source-Separation-Training/releases/tag/v1.0.21
 - Repositorio ZFTurbo/Music-Source-Separation-Training: https://github.com/ZFTurbo/Music-Source-Separation-Training
-- Modelo Mega 53 (checkpoint PyTorch, 53 stems) en HuggingFace: https://huggingface.co/noblebarkrr/BS-Roformer-MVSep-Mega-53-stems
+- Modelo Mega 53 (checkpoint PyTorch, 53 stems) en Hugging Face: https://huggingface.co/noblebarkrr/BS-Roformer-MVSep-Mega-53-stems
 - Ficheros de la versión v1 del modelo anterior: https://huggingface.co/noblebarkrr/BS-Roformer-MVSep-Mega-53-stems/tree/main/v1
 - Extractor de guitarra de MVSep: https://mvsep.com/en/tools/guitar-extractor
 - Herramientas de MVSep: https://mvsep.com/en/tools

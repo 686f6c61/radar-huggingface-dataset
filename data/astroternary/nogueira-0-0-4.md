@@ -78,10 +78,10 @@ No se han publicado resultados en benchmarks estándar de la industria (MMLU, Hu
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nogueira 0.0.4 | ~25 M (ternarios) | No disponible | BitNet b1.58 + grafo de razonamiento, solo portugués | MIT | HuggingFace |
-| Nogueira 0.0.3 | ~25 M (ternarios) | No disponible | BitNet b1.58 sin canal de lógica | MIT | HuggingFace (versión anterior del mismo proyecto) |
-| Modelos BitNet b1.58 publicados por Microsoft Research | 700 M a 3,9 B | Hasta 4 K (según variante) | Entrenamiento ternario nativo, multilingüe | MIT (según variante) | HuggingFace / repositorio de investigación |
-| Modelos densos pequeños en fp16 (por ejemplo, familia Qwen2.5-0.5B) | ~500 M | 32 K | Transformer denso estándar, multilingüe | Apache 2.0 | HuggingFace |
+| Nogueira 0.0.4 | ~25 M (ternarios) | No disponible | BitNet b1.58 + grafo de razonamiento, solo portugués | MIT | Hugging Face |
+| Nogueira 0.0.3 | ~25 M (ternarios) | No disponible | BitNet b1.58 sin canal de lógica | MIT | Hugging Face (versión anterior del mismo proyecto) |
+| Modelos BitNet b1.58 publicados por Microsoft Research | 700 M a 3,9 B | Hasta 4 K (según variante) | Entrenamiento ternario nativo, multilingüe | MIT (según variante) | Hugging Face / repositorio de investigación |
+| Modelos densos pequeños en fp16 (por ejemplo, familia Qwen2.5-0.5B) | ~500 M | 32 K | Transformer denso estándar, multilingüe | Apache 2.0 | Hugging Face |
 
 La comparación con modelos de mayor tamaño no es directa en rendimiento: Nogueira 0.0.4 es un ejercicio de investigación centrado en el razonamiento sobre grafos en portugués, no un modelo de propósito general. No se dispone de datos de benchmarks comunes que permitan una comparación cuantitativa fiable con las alternativas citadas.
 
@@ -98,6 +98,6 @@ La comparación con modelos de mayor tamaño no es directa en rendimiento: Nogue
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AstroTernary/Nogueira-0.0.4
+- Modelo en Hugging Face: https://huggingface.co/AstroTernary/Nogueira-0.0.4
 - Proyecto cansei-de-esperar: https://github.com/riknog/cansei-de-esperar
 - Proyecto Nexo (referencia del canal de lógica): `riknog/embedding-gemma` (referenciado en la model card; no se proporciona URL directa en la información disponible)

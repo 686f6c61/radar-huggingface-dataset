@@ -4,7 +4,7 @@
 
 pyannote/segmentation-3.0 es un modelo de segmentación de hablantes desarrollado por el equipo de pyannote (Hervé Bredin y colaboradores) dentro del ecosistema pyannote.audio. Procesa fragmentos de 10 segundos de audio mono muestreado a 16 kHz y produce una matriz de probabilidades por fotograma y por clase, donde las clases representan ausencia de voz, presencia de uno de hasta tres hablantes y sus combinaciones de solapamiento. Este modelo resuelve el problema de la diarización de hablantes a nivel de segmento corto, proporcionando una base sobre la que construir pipelines completos de diarización, detección de actividad de voz (VAD) y detección de habla solapada.
 
-La relevancia actual del modelo radica en su enfoque innovador: utiliza una codificación *powerset* multi-clase que permite modelar explícitamente el solapamiento de hasta dos hablantes simultáneos en un mismo fotograma, algo que los modelos tradicionales de segmentación binaria no capturan. Fue presentado en Interspeech 2023 y entrenado con una combinación de nueve conjuntos de datos públicos de audio, lo que le confiere una cobertura multilingüe y multi-entorno amplia. Aunque el acceso en HuggingFace está restringido (requiere aceptar condiciones), la licencia es MIT y el modelo permanece open-source.
+La relevancia actual del modelo radica en su enfoque innovador: utiliza una codificación *powerset* multi-clase que permite modelar explícitamente el solapamiento de hasta dos hablantes simultáneos en un mismo fotograma, algo que los modelos tradicionales de segmentación binaria no capturan. Fue presentado en Interspeech 2023 y entrenado con una combinación de nueve conjuntos de datos públicos de audio, lo que le confiere una cobertura multilingüe y multi-entorno amplia. Aunque el acceso en Hugging Face está restringido (requiere aceptar condiciones), la licencia es MIT y el modelo permanece open-source.
 
 ## Especificaciones técnicas
 
@@ -61,14 +61,14 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 - El modelo solo procesa fragmentos de 10 segundos de audio; no puede realizar diarización de grabaciones completas por sí mismo. Es necesario combinarlo con un pipeline de diarización que gestione la ventana deslizante y la agregación de resultados.
 - El número máximo de hablantes simultáneos por fotograma está limitado a 2, y el número total de hablantes por fragmento a 3. Grabaciones con más de 3 interlocutores activos en el mismo segmento no se modelan correctamente.
-- El acceso al modelo en HuggingFace está restringido (gated): es necesario aceptar las condiciones de uso y proporcionar datos personales (empresa/universidad y sitio web) antes de poder descargarlo, a pesar de la licencia MIT.
+- El acceso al modelo en Hugging Face está restringido (gated): es necesario aceptar las condiciones de uso y proporcionar datos personales (empresa/universidad y sitio web) antes de poder descargarlo, a pesar de la licencia MIT.
 - No se han documentado sesgos específicos, pero al entrenarse con conjuntos de datos mayoritariamente en inglés, chino y otros idiomas representados, el rendimiento puede degradarse en lenguas o acentos poco representados.
 - Riesgo de alucinación: al ser un modelo discriminativo (no generativo), no produce texto inventado, pero puede generar falsos positivos de habla o solapamiento en entornos con ruido o música de fondo.
 - Para uso en producción, se recomienda validar el modelo en el dominio objetivo y ajustar los hiperparámetros de los pipelines (como `min_duration_on` y `min_duration_off`) para evitar segmentos espurios.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pyannote/segmentation-3.0
+- Modelo en Hugging Face: https://huggingface.co/pyannote/segmentation-3.0
 - Paper (Interspeech 2023): https://www.isca-speech.org/archive/interspeech_2023/plaquet23_interspeech.html
 - Repositorio companion de entrenamiento: https://github.com/FrenchKrab/IS2023-powerset-diarization/
 - Repositorio de pyannote.audio: https://github.com/pyannote/pyannote-audio

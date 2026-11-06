@@ -124,7 +124,7 @@ No se dispone de datos de contexto, licencia ni disponibilidad de alternativas f
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/isichan-ai/Mitsuba_and_HiMitsuba-27B-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/isichan-ai/Mitsuba_and_HiMitsuba-27B-GGUF
 - Model card (README): https://huggingface.co/isichan-ai/Mitsuba-ComfyUI-27B-GGUF/blob/main/README.md
 - Fichero principal PQ2_0: https://huggingface.co/isichan-ai/Mitsuba-ComfyUI-27B-GGUF/blob/main/Mitsuba-ComfyUI-27B-v1.18-PQ2_0.gguf
 - Articulo de AlphaSignal (vision general): https://alphasignal.ai/news/mitsuba-squeezes-a-27b-vision-model-into-7-3-gb-for-comfyui

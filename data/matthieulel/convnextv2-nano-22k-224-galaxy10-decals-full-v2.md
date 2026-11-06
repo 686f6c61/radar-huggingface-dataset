@@ -67,7 +67,7 @@ No se han publicado en la información disponible resultados comparativos frente
 - VRAM estimada para inferencia: inferior a 1 GB en fp32 para lotes pequeños (14,99 M de parámetros, unos 60 MB de pesos); con lote de 32 imágenes a 224x224 el consumo se mantiene en el rango de 1-2 GB.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM; RTX 3060, RTX 4060, RTX 4090, A100 o H100 son sobredimensionadas para esta carga.
 - Cabe en GPU de consumo: sí, en cualquier GPU consumer moderna e incluso en iGPU con suficiente memoria compartida.
-- Opciones de despliegue: transformers con PyTorch (vía `AutoModelForImageClassification`), exportación a ONNX Runtime o TorchScript, y servidores de inferencia compatibles con el pipeline `image-classification` de HuggingFace (endpoints compatibles según los tags del repositorio).
+- Opciones de despliegue: transformers con PyTorch (vía `AutoModelForImageClassification`), exportación a ONNX Runtime o TorchScript, y servidores de inferencia compatibles con el pipeline `image-classification` de Hugging Face (endpoints compatibles según los tags del repositorio).
 - Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
@@ -95,7 +95,7 @@ La información proporcionada no incluye los resultados de los otros 39 backbone
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matthieulel/convnextv2-nano-22k-224-galaxy10-decals-full-v2
+- Modelo en Hugging Face: https://huggingface.co/matthieulel/convnextv2-nano-22k-224-galaxy10-decals-full-v2
 - Modelo base: https://huggingface.co/facebook/convnextv2-nano-22k-224
 - Dataset Galaxy10 DECaLS: https://huggingface.co/datasets/matthieulel/galaxy10_decals
 - Métricas por época y particiones: https://huggingface.co/datasets/matthieulel/vision-foundation-models-benchmark-runs

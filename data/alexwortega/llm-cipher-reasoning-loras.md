@@ -93,7 +93,7 @@ No se han encontrado otros modelos de la misma categoría (entrenamiento de ters
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/AlexWortega/llm-cipher-reasoning-loras)
+- [Repositorio Hugging Face](https://huggingface.co/AlexWortega/llm-cipher-reasoning-loras)
 - [Dataset de entrenamiento y evaluación](https://huggingface.co/datasets/AlexWortega/llm-cipher-reasoning)
 - [Codigo fuente en GitHub](https://github.com/AlexWortega/llm-cipher-reasoning)
 - [Paper Chain-of-Draft (arxiv 2502.18600)](https://arxiv.org/abs/2502.18600)

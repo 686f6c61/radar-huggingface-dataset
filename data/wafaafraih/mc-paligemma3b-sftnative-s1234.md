@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`WafaaFraih/mc-paligemma3b-sftnative-s1234` es un adaptador LoRA publicado en HuggingFace por el usuario WafaaFraih, entrenado mediante supervisión (SFT) sobre el modelo base `google/paligemma-3b-pt-224`. No se trata de un modelo completo, sino de un conjunto de pesos delta que debe cargarse junto al modelo base PaliGemma de 3B parámetros para poder ejecutarse. El repositorio ocupa 2,0 GB y está empaquetado con la librería PEFT en versión 0.19.1, con pesos en formato safetensors.
+`WafaaFraih/mc-paligemma3b-sftnative-s1234` es un adaptador LoRA publicado en Hugging Face por el usuario WafaaFraih, entrenado mediante supervisión (SFT) sobre el modelo base `google/paligemma-3b-pt-224`. No se trata de un modelo completo, sino de un conjunto de pesos delta que debe cargarse junto al modelo base PaliGemma de 3B parámetros para poder ejecutarse. El repositorio ocupa 2,0 GB y está empaquetado con la librería PEFT en versión 0.19.1, con pesos en formato safetensors.
 
 PaliGemma es un modelo de visión y lenguaje (VLM) desarrollado por Google que combina un encoder visual SigLIP-So400m con el decodificador de lenguaje Gemma-2B, y que se distribuye como base versátil para transferencia a tareas concretas. La variante `pt-224` (pre-trained, 224 píxeles de resolución de entrada) es precisamente la pensada para ser ajustada, no para uso conversacional directo. El adaptador que nos ocupa parte de esa variante y aplica un ajuste supervisado adicional, presumiblemente para una tarea específica que la model card no documenta.
 
-La relevancia de esta ficha es limitada pero informativa: se trata de un ejemplo típico de adaptador comunitario sin documentación (la model card es la plantilla vacía de HuggingFace, con todos los campos marcados como "[More Information Needed]"), con cero descargas y cero "likes" en el momento de la consulta. Sirve, por tanto, como caso de estudio de lo que un desarrollador puede y no puede asumir al encontrarse un adaptador LoRA sin trazabilidad ni evaluación publicada.
+La relevancia de esta ficha es limitada pero informativa: se trata de un ejemplo típico de adaptador comunitario sin documentación (la model card es la plantilla vacía de Hugging Face, con todos los campos marcados como "[More Information Needed]"), con cero descargas y cero "likes" en el momento de la consulta. Sirve, por tanto, como caso de estudio de lo que un desarrollador puede y no puede asumir al encontrarse un adaptador LoRA sin trazabilidad ni evaluación publicada.
 
 ## Especificaciones técnicas
 
@@ -67,17 +67,17 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Tipo | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este adaptador (sobre PaliGemma-3B-pt-224) | Base de 3B | Adaptador LoRA para VLM | No declarada (hereda términos de Gemma) | HuggingFace, 0 descargas | Sin documentación ni evaluación |
-| google/paligemma-3b-pt-224 | 3B | VLM base para transferencia | Términos de uso de Gemma | HuggingFace, ampliamente usado | Modelo de referencia del que parte el adaptador |
-| Qwen2-VL-2B-Instruct | 2B | VLM instruct | Apache 2.0 | HuggingFace | Alternativa alineada para diálogo, con resolución dinámica |
-| Florence-2 (base 0,23B / large 0,77B) | 0,23B / 0,77B | VLM multitarea | MIT | HuggingFace | Mucho más pequeño, orientado a tareas concretas |
-| SmolVLM (256M / 500M) | 0,25B / 0,5B | VLM instruct | Apache 2.0 | HuggingFace | Alternativa ligera para entornos con poca VRAM |
+| Este adaptador (sobre PaliGemma-3B-pt-224) | Base de 3B | Adaptador LoRA para VLM | No declarada (hereda términos de Gemma) | Hugging Face, 0 descargas | Sin documentación ni evaluación |
+| google/paligemma-3b-pt-224 | 3B | VLM base para transferencia | Términos de uso de Gemma | Hugging Face, ampliamente usado | Modelo de referencia del que parte el adaptador |
+| Qwen2-VL-2B-Instruct | 2B | VLM instruct | Apache 2.0 | Hugging Face | Alternativa alineada para diálogo, con resolución dinámica |
+| Florence-2 (base 0,23B / large 0,77B) | 0,23B / 0,77B | VLM multitarea | MIT | Hugging Face | Mucho más pequeño, orientado a tareas concretas |
+| SmolVLM (256M / 500M) | 0,25B / 0,5B | VLM instruct | Apache 2.0 | Hugging Face | Alternativa ligera para entornos con poca VRAM |
 
 No se dispone de datos de benchmarks comparativos para este adaptador, por lo que la comparación se limita a parámetros, licencia y disponibilidad.
 
 ## Limitaciones y advertencias
 
-- La model card es la plantilla por defecto de HuggingFace sin rellenar: no hay información sobre datos de entrenamiento, hiperparámetros, evaluación ni uso previsto.
+- La model card es la plantilla por defecto de Hugging Face sin rellenar: no hay información sobre datos de entrenamiento, hiperparámetros, evaluación ni uso previsto.
 - El repositorio registra cero descargas y cero "likes", por lo que no existe validación alguna por parte de la comunidad.
 - La licencia no está declarada. Al derivar de PaliGemma, el uso comercial queda sujeto a los términos de uso de Gemma, que imponen restricciones adicionales y obligaciones de atribución.
 - Riesgo alto de alucinación en tareas de OCR y VQA, especialmente con texto pequeño, ya que el encoder trabaja a 224x224 píxeles.
@@ -91,8 +91,8 @@ No se dispone de datos de benchmarks comparativos para este adaptador, por lo qu
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/WafaaFraih/mc-paligemma3b-sftnative-s1234
-- Perfil del autor en HuggingFace: https://huggingface.co/WafaaFraih/models
+- Adaptador en Hugging Face: https://huggingface.co/WafaaFraih/mc-paligemma3b-sftnative-s1234
+- Perfil del autor en Hugging Face: https://huggingface.co/WafaaFraih/models
 - Modelo base: https://huggingface.co/google/paligemma-3b-pt-224
 - Documentación de PaliGemma en Transformers: https://huggingface.co/docs/transformers/model_doc/paligemma
 - Paper de PaliGemma (arXiv:2407.07726): https://arxiv.org/abs/2407.07726

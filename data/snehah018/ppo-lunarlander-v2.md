@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`SnEhAh018/ppo-LunarLander-v2` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v3, y publicado en HuggingFace Hub por el usuario SnEhAh018. No es un modelo de lenguaje ni un modelo fundacional: no procesa texto, no sigue instrucciones y no genera contenido. Su función es exclusivamente de control, es decir, mapear el vector de observación del entorno (8 dimensiones: posición, velocidad, ángulo, velocidad angular, contacto con las patas) a una de las cuatro acciones discretas disponibles (no hacer nada, encender propulsor izquierdo, encender propulsor principal, encender propulsor derecho).
+`SnEhAh018/ppo-LunarLander-v2` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v3, y publicado en Hugging Face Hub por el usuario SnEhAh018. No es un modelo de lenguaje ni un modelo fundacional: no procesa texto, no sigue instrucciones y no genera contenido. Su función es exclusivamente de control, es decir, mapear el vector de observación del entorno (8 dimensiones: posición, velocidad, ángulo, velocidad angular, contacto con las patas) a una de las cuatro acciones discretas disponibles (no hacer nada, encender propulsor izquierdo, encender propulsor principal, encender propulsor derecho).
 
 El repositorio se distribuye con `library_name: stable-baselines3` y está pensado para cargarse mediante la librería stable-baselines3 junto con la utilidad `huggingface_sb3`. El autor declara una recompensa media de 267,98 ± 20,57 en LunarLander-v3, un valor que supera ampliamente el umbral de 200 que la comunidad suele emplear como criterio de entorno "resuelto" para esta tarea.
 
@@ -72,7 +72,7 @@ No se han publicado en la información disponible otros resultados de benchmarks
 
 | Modelo / algoritmo | Enfoque | Entorno | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| SnEhAh018/ppo-LunarLander-v2 | PPO on-policy, actor-crítico | LunarLander-v3 | no disponible | no aplica | no disponible | HuggingFace Hub |
+| SnEhAh018/ppo-LunarLander-v2 | PPO on-policy, actor-crítico | LunarLander-v3 | no disponible | no aplica | no disponible | Hugging Face Hub |
 | Alternativas DQN para LunarLander (p. ej. RL Zoo) | Off-policy, value-based, replay buffer | LunarLander | no disponible | no aplica | MIT (código de RL Zoo) | Repositorio RL Zoo |
 | Alternativas A2C para LunarLander | On-policy, actor-crítico síncrono | LunarLander | no disponible | no aplica | MIT (código de RL Zoo) | Repositorio RL Zoo |
 | Alternativas SAC para LunarLander | Off-policy, máximo de entropía, pensado para acciones continuas | LunarLander (con adaptación a acciones continuas) | no disponible | no aplica | MIT (código de RL Zoo) | Repositorio RL Zoo |
@@ -94,7 +94,7 @@ No se han publicado en la información disponible cifras comparativas de recompe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SnEhAh018/ppo-LunarLander-v2
+- Modelo en Hugging Face: https://huggingface.co/SnEhAh018/ppo-LunarLander-v2
 - Librería stable-baselines3: https://github.com/DLR-RM/stable-baselines3
 - Utilidad huggingface_sb3: https://github.com/huggingface/huggingface_sb3
 - RL Baselines3 Zoo (líneas base y *callbacks* de publicación): https://github.com/DLR-RM/rl-baselines3-zoo

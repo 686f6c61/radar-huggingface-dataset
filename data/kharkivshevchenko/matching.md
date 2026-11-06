@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kharkivshevchenko/matching` es un repositorio de HuggingFace que contiene una implementacion propia y compacta de CLIP en PyTorch, orientada a tareas de emparejamiento (matching) entre modalidades. No se trata de un modelo entrenado ni de un release listo para produccion, sino de un esqueleto de arquitectura acompanado de un checkpoint de inicializacion valido unicamente para pruebas de humo (smoke tests) y experimentos controlados de pequeno tamano. El autor lo describe explicitamente como material para revision de codigo y validacion de pipelines, no como un modelo con pesos utiles.
+`kharkivshevchenko/matching` es un repositorio de Hugging Face que contiene una implementacion propia y compacta de CLIP en PyTorch, orientada a tareas de emparejamiento (matching) entre modalidades. No se trata de un modelo entrenado ni de un release listo para produccion, sino de un esqueleto de arquitectura acompanado de un checkpoint de inicializacion valido unicamente para pruebas de humo (smoke tests) y experimentos controlados de pequeno tamano. El autor lo describe explicitamente como material para revision de codigo y validacion de pipelines, no como un modelo con pesos utiles.
 
 El modelo declara la configuracion "large" dentro de la escala definida por el autor, con atencion de tipo grouped query, fusion mediante cross attention, activacion gelu y normalizacion scalenorm. A pesar de esa etiqueta, el recuento real de parametros en el fichero safetensors es de solo 49.600 parametros, una cifra extremadamente reducida que confirma que se trata de una inicializacion de juguete y no de un CLIP a escala real.
 
@@ -67,9 +67,9 @@ La comparacion con modelos CLIP de referencia se ve limitada porque este reposit
 
 | Modelo | Parametros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kharkivshevchenko/matching | 49.600 | no disponible | no | MIT | HuggingFace, checkpoint de inicializacion |
+| kharkivshevchenko/matching | 49.600 | no disponible | no | MIT | Hugging Face, checkpoint de inicializacion |
 | OpenAI CLIP (referencia) | cientos de millones (segun variante) | 77 tokens (limite de texto) | si | licencia propia de OpenAI (no MIT) | pesos publicos, multiples variantes |
-| SigLIP (referencia) | cientos de millones (segun variante) | no disponible | si | Apache 2.0 en variantes publicas | HuggingFace, pesos publicos |
+| SigLIP (referencia) | cientos de millones (segun variante) | no disponible | si | Apache 2.0 en variantes publicas | Hugging Face, pesos publicos |
 
 No se dispone de resultados de rendimiento comparables para `kharkivshevchenko/matching`, ya que no se ha publicado ninguna evaluacion.
 
@@ -87,5 +87,5 @@ No se dispone de resultados de rendimiento comparables para `kharkivshevchenko/m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kharkivshevchenko/matching
+- Hugging Face: https://huggingface.co/kharkivshevchenko/matching
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

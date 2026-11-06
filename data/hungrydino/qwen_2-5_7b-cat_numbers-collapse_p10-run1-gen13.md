@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un fine-tune del modelo `unsloth/Qwen2.5-7B-Instruct`, desarrollado por el usuario HungryDino. El nombre del repositorio (`cat_numbers-collapse_p10-run1-gen13`) sugiere que se trata de un experimento de entrenamiento orientado a tareas con números o a la compresión de secuencias, aunque no se proporciona documentación adicional al respecto. El modelo se entrenó con la librería Unsloth (que acelera el fine-tuning) y con la librería TRL de HuggingFace, lo que indica un proceso de fine-tuning supervisado o con RLHF.
+Este modelo es un fine-tune del modelo `unsloth/Qwen2.5-7B-Instruct`, desarrollado por el usuario HungryDino. El nombre del repositorio (`cat_numbers-collapse_p10-run1-gen13`) sugiere que se trata de un experimento de entrenamiento orientado a tareas con números o a la compresión de secuencias, aunque no se proporciona documentación adicional al respecto. El modelo se entrenó con la librería Unsloth (que acelera el fine-tuning) y con la librería TRL de Hugging Face, lo que indica un proceso de fine-tuning supervisado o con RLHF.
 
 Al tratarse de un adaptador (el tamaño del repositorio es de solo 0.1 GB), no contiene los pesos completos del modelo base, sino probablemente un LoRA o adaptador de bajo rango que debe combinarse con el modelo base para su uso. La licencia es Apache-2.0, lo que permite uso comercial y modificación sin restricciones adicionales. La relevancia de este modelo radica en su potencial como punto de partida para experimentos de fine-tuning en tareas específicas, aunque no se han publicado métricas ni detalles de entrenamiento.
 
@@ -74,7 +74,7 @@ No se han encontrado otros fine-tunes publicados por el mismo autor con nombres 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10-run1-gen13
+- Repositorio Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10-run1-gen13
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Repositorio Unsloth: https://github.com/unslothai/unsloth
 - Documentacion de Qwen2.5 (Alibaba): https://github.com/mx4ai/qwen2.5

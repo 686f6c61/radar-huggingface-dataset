@@ -2,7 +2,7 @@
 
 ## Resumen
 
-lateon-reasonir-inbatch-n10573-e1-ckpt82 es un modelo de recuperacion de informacion basado en late interaction (arquitectura ColBERT) publicado por el usuario de HuggingFace dangerousmanleebyeonggeon. Se trata de un fine-tuning del modelo lightonai/LateOn, que a su vez emplea un transformer ModernBertModel como codificador. El modelo no genera texto: proyecta frases y parrafos a secuencias de vectores densos de 128 dimensiones y calcula la similitud con el operador MaxSim, por lo que su funcion es la de un recuperador denso o un reranker dentro de un pipeline de busqueda semantica o de RAG.
+lateon-reasonir-inbatch-n10573-e1-ckpt82 es un modelo de recuperacion de informacion basado en late interaction (arquitectura ColBERT) publicado por el usuario de Hugging Face dangerousmanleebyeonggeon. Se trata de un fine-tuning del modelo lightonai/LateOn, que a su vez emplea un transformer ModernBertModel como codificador. El modelo no genera texto: proyecta frases y parrafos a secuencias de vectores densos de 128 dimensiones y calcula la similitud con el operador MaxSim, por lo que su funcion es la de un recuperador denso o un reranker dentro de un pipeline de busqueda semantica o de RAG.
 
 El modelo tiene 149.015.808 parametros (dato extraido de los pesos safetensors) y un tamano de repositorio de 0,6 GB. La model card especifica 300 tokens de longitud maxima para documentos y 64 tokens para consultas, con una salida de 128 dimensiones por token y similitud MaxSim. La nomenclatura del identificador sugiere un entrenamiento con 10.573 ejemplos (coincide con el tag dataset_size:10573), una sola epoca (e1) y un checkpoint en el paso 82 (ckpt82), con perdida contrastiva y negativos en el propio lote (in-batch).
 
@@ -26,7 +26,7 @@ Su relevancia es limitada y de tipo experimental: el repositorio registra 0 desc
 | Tamano del conjunto de entrenamiento | 10.573 ejemplos (tag dataset_size:10573) |
 | Perdida de entrenamiento | Contrastive |
 | Tamano del repositorio | 0,6 GB |
-| Fecha de creacion | 2026-10-10 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-10-10 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -96,10 +96,10 @@ Los datos de modelos comparables proceden de documentacion publica general y deb
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dangerousmanleebyeonggeon/lateon-reasonir-inbatch-n10573-e1-ckpt82
+- Modelo en Hugging Face: https://huggingface.co/dangerousmanleebyeonggeon/lateon-reasonir-inbatch-n10573-e1-ckpt82
 - Modelo base: https://huggingface.co/lightonai/LateOn
 - Documentacion de PyLate: https://lightonai.github.io/pylate/
 - Repositorio de PyLate: https://github.com/lightonai/pylate
 - Indice FastPLAID: https://github.com/lightonai/fast-plaid
-- Modelos con libreria PyLate en HuggingFace: https://huggingface.co/models?library=PyLate
+- Modelos con libreria PyLate en Hugging Face: https://huggingface.co/models?library=PyLate
 - Paper de ColBERT (referencia de la arquitectura): https://arxiv.org/abs/1908.10084

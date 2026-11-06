@@ -2,7 +2,7 @@
 
 ## Resumen
 
-KSA-1.9B-base-GGUF es una coleccion de cuantizaciones estaticas en formato GGUF del modelo base KSA-1.9B-base, publicado originalmente por OpenOneRec y convertido por mradermacher, un perfil conocido en HuggingFace por generar versiones cuantizadas de modelos para su uso con llama.cpp y motores compatibles. El repositorio no aporta informacion adicional sobre el modelo original: la model card se limita a indicar que se trata de "static quants" del modelo de referencia.
+KSA-1.9B-base-GGUF es una coleccion de cuantizaciones estaticas en formato GGUF del modelo base KSA-1.9B-base, publicado originalmente por OpenOneRec y convertido por mradermacher, un perfil conocido en Hugging Face por generar versiones cuantizadas de modelos para su uso con llama.cpp y motores compatibles. El repositorio no aporta informacion adicional sobre el modelo original: la model card se limita a indicar que se trata de "static quants" del modelo de referencia.
 
 El modelo subyacente tiene aproximadamente 1.900 millones de parametros (1.9B), lo que lo situa en la categoria de modelos pequenos, aptos para inferencia en hardware de consumo. Al tratarse de una version "base", no ha pasado por procesos de ajuste fino supervisado ni de alineacion con preferencias humanas, por lo que su comportamiento esperado es el de un modelo de continuacion de texto y no el de un asistente conversacional instruido.
 
@@ -25,7 +25,7 @@ La relevancia de esta publicacion radica en la disponibilidad de cuantizaciones 
 
 No se dispone de informacion sobre la arquitectura del modelo original KSA-1.9B-base en la documentacion proporcionada. El nombre sugiere un transformer de aproximadamente 1.900 millones de parametros, pero no se confirma ni el tipo de atencion, ni la presencia de componentes MoE, ni el esquema de normalizacion o de embeddings posicionales.
 
-Tampoco hay datos sobre el corpus de entrenamiento (numero de tokens, composicion, proporciones de codigo o multilingue), ni sobre si se aplicaron tecnicas de ajuste como RLHF, DPO o SFT. Al tratarse de un modelo "base", es esperable que no haya pasado por alineacion, pero esto no se confirma en la model card. La unica informacion tecnica disponible son los metadatos de conversion del repositorio: `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, que indican que las cuantizaciones se generaron a partir de pesos en formato HuggingFace mediante el pipeline estandar de cuantizacion de llama.cpp.
+Tampoco hay datos sobre el corpus de entrenamiento (numero de tokens, composicion, proporciones de codigo o multilingue), ni sobre si se aplicaron tecnicas de ajuste como RLHF, DPO o SFT. Al tratarse de un modelo "base", es esperable que no haya pasado por alineacion, pero esto no se confirma en la model card. La unica informacion tecnica disponible son los metadatos de conversion del repositorio: `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, que indican que las cuantizaciones se generaron a partir de pesos en formato Hugging Face mediante el pipeline estandar de cuantizacion de llama.cpp.
 
 ## Capacidades
 
@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| KSA-1.9B-base-GGUF | 1.9B | no disponible | no disponible | GGUF | HuggingFace |
-| Qwen2.5-1.5B | 1.5B | 32.768 tokens | Apache 2.0 | safetensors, GGUF | HuggingFace |
-| Llama 3.2 1B | 1.2B | 128.000 tokens | Llama 3.2 Community License | safetensors, GGUF | HuggingFace |
-| Gemma 2 2B | 2.6B | 8.192 tokens | Gemma Terms of Use | safetensors, GGUF | HuggingFace |
+| KSA-1.9B-base-GGUF | 1.9B | no disponible | no disponible | GGUF | Hugging Face |
+| Qwen2.5-1.5B | 1.5B | 32.768 tokens | Apache 2.0 | safetensors, GGUF | Hugging Face |
+| Llama 3.2 1B | 1.2B | 128.000 tokens | Llama 3.2 Community License | safetensors, GGUF | Hugging Face |
+| Gemma 2 2B | 2.6B | 8.192 tokens | Gemma Terms of Use | safetensors, GGUF | Hugging Face |
 
 La comparativa se limita a parametros, contexto y licencia porque no hay datos de rendimiento del modelo KSA. Los tres modelos alternativos cuentan con documentacion publica extensa, benchmarks y licencias claras, ventajas que el modelo KSA no ofrece en la informacion disponible.
 

@@ -43,7 +43,7 @@ Lo unico documentado es el proceso de reempaquetado: se parte de la revision `e5
 - Investigacion sobre mecanicas de subnets en Bittensor: util para estudiar como se reempaquetan pesos de modelos abiertos para integrarlos en pools de validacion y mineria, incluyendo el tratamiento de cabezas omitidas.
 - Auditoria de procedencia de pesos: permite verificar que los tensores del modelo de lenguaje coinciden con la revision original de Piccolo-9B, gracias a que el autor declara que los pesos no se han modificado.
 - Base para reconstruir un modelo ejecutable: un desarrollador podria combinar estos shards con el `lm_head` del repositorio original para obtener un checkpoint funcional, aunque en ese caso resulta mas directo usar agentscope-ai/Piccolo-9B.
-- Evaluacion comparativa de artefactos derivados: sirve como ejemplo de publicacion derivada con licencia heredada y atribucion explicita, util en estudios sobre trazabilidad de modelos en HuggingFace.
+- Evaluacion comparativa de artefactos derivados: sirve como ejemplo de publicacion derivada con licencia heredada y atribucion explicita, util en estudios sobre trazabilidad de modelos en Hugging Face.
 - Despliegue en pipelines internos del subnet: si un operador necesita el formato soup body para integrarse con las herramientas de Zils, este repositorio evita tener que ejecutar la conversion por su cuenta.
 
 ## Benchmarks y rendimiento
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento del modelo base que permitan una comparaci
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/k-cascade/zils-flash-piccolo-9b
+- Repositorio Hugging Face: https://huggingface.co/k-cascade/zils-flash-piccolo-9b
 - Modelo base: https://huggingface.co/agentscope-ai/Piccolo-9B
 - Revision del modelo base referenciada: `e54772a8beeefa22ba2fa675e3d1554493ed6b04`
 - Zils subnet (Bittensor SN127): no disponible en la informacion proporcionada

@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos. La compar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/flodraye/qwen3-0.6b-selfdistill-forward-kl
+- Hugging Face: https://huggingface.co/flodraye/qwen3-0.6b-selfdistill-forward-kl
 - Repositorio de entrenamiento: https://github.com/florentdraye/distill-cl-biography
 - Modelo base Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Reporte tecnico de Qwen3: https://arxiv.org/html/2505.09388v1

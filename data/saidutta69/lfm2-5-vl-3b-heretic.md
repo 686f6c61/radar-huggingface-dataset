@@ -82,10 +82,10 @@ No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K,
 
 | Modelo | Parametros | Contexto | Vision | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM2.5-VL-3B-heretic (este) | ~3,12 B | 32.768 | Si (SigLIP2 NaFlex 400M) | lfm1.0 | HuggingFace, 0 descargas |
-| LiquidAI/LFM2.5-VL-3B (original) | ~3,12 B | 32.768 | Si (SigLIP2 NaFlex 400M) | lfm1.0 | HuggingFace, repos GGUF/ONNX/MLX |
-| LFM2-VL-3B (predecesor) | no disponible | no disponible | Si | lfm1.0 | HuggingFace |
-| Otros VLM de ~3 B (Qwen2.5-VL-3B, etc.) | ~3 B | variable | Si | variable | HuggingFace |
+| LFM2.5-VL-3B-heretic (este) | ~3,12 B | 32.768 | Si (SigLIP2 NaFlex 400M) | lfm1.0 | Hugging Face, 0 descargas |
+| LiquidAI/LFM2.5-VL-3B (original) | ~3,12 B | 32.768 | Si (SigLIP2 NaFlex 400M) | lfm1.0 | Hugging Face, repos GGUF/ONNX/MLX |
+| LFM2-VL-3B (predecesor) | no disponible | no disponible | Si | lfm1.0 | Hugging Face |
+| Otros VLM de ~3 B (Qwen2.5-VL-3B, etc.) | ~3 B | variable | Si | variable | Hugging Face |
 
 La comparacion cuantitativa con alternativas de otros fabricantes no esta disponible en la informacion proporcionada; no se aportan cifras de rendimiento relativo.
 
@@ -103,7 +103,7 @@ La comparacion cuantitativa con alternativas de otros fabricantes no esta dispon
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/saidutta69/LFM2.5-VL-3B-heretic
+- Modelo en Hugging Face: https://huggingface.co/saidutta69/LFM2.5-VL-3B-heretic
 - Modelo original: https://huggingface.co/LiquidAI/LFM2.5-VL-3B
 - Version GGUF del original: https://huggingface.co/LiquidAI/LFM2.5-VL-3B-GGUF
 - Version ONNX del original: https://huggingface.co/LiquidAI/LFM2.5-VL-3B-ONNX

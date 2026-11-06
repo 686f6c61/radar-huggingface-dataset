@@ -88,7 +88,7 @@ Los tres comparten la misma filosofía experimental (dosis de tokens con Dyck), 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alexkstern/kdyck_dose_100Mpt_hfbody_adamwppt_20M_s1_2026-09-06_15-23-12_738224-pt
+- Hugging Face: https://huggingface.co/alexkstern/kdyck_dose_100Mpt_hfbody_adamwppt_20M_s1_2026-09-06_15-23-12_738224-pt
 - W&B run: https://wandb.ai/alexksternteam/token_dose_100Mpt_adamw_seed_replicas_v1/runs/kejrcsna
 - Repo nanochat: https://github.com/karpathy/nanochat
 - Modelo relacionado: https://huggingface.co/alexkstern/kdyck_dose_100Mpt_200M_s1_2026-08-14_18-49-36_987037-pt

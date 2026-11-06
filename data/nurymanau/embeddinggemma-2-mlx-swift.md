@@ -84,8 +84,8 @@ El autor advierte que estas son comprobaciones sintéticas pequeñas y no benchm
 
 | Modelo | Tipo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Nurymanau/EmbeddingGemma-2-MLX-Swift | Paquete de pesos MLX Swift para embeddings multimodales | No disponible | No disponible | Multilingüe | Apache-2.0 (pesos), MIT (runtime) | HuggingFace, 1,1 GB, 0 descargas |
-| google/embeddinggemma-2 | Modelo original de embeddings de Google DeepMind | No disponible | No disponible | Multilingüe | No disponible en la información facilitada | HuggingFace, revisión 914f7f89142e33e77833254d9c9b90c3cef7303b |
+| Nurymanau/EmbeddingGemma-2-MLX-Swift | Paquete de pesos MLX Swift para embeddings multimodales | No disponible | No disponible | Multilingüe | Apache-2.0 (pesos), MIT (runtime) | Hugging Face, 1,1 GB, 0 descargas |
+| google/embeddinggemma-2 | Modelo original de embeddings de Google DeepMind | No disponible | No disponible | Multilingüe | No disponible en la información facilitada | Hugging Face, revisión 914f7f89142e33e77833254d9c9b90c3cef7303b |
 | Alternativas de embeddings multilingües (por ejemplo, familias BGE-M3 o multilingual-e5) | Modelos de embeddings | No disponible | No disponible | Multilingüe | No disponible | No disponible en la información facilitada |
 
 No se dispone de datos de benchmarks ni de especificaciones comparables para las alternativas, por lo que la comparación cuantitativa no es posible con la información proporcionada. La diferencia principal entre este paquete y el modelo original es el formato y el destino: aquí los pesos están cuantizados y empaquetados para ejecución nativa en Apple Silicon mediante MLX Swift, con un layout no compatible con los checkpoints de Python.
@@ -108,7 +108,7 @@ No se dispone de datos de benchmarks ni de especificaciones comparables para las
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nurymanau/EmbeddingGemma-2-MLX-Swift
+- Modelo en Hugging Face: https://huggingface.co/Nurymanau/EmbeddingGemma-2-MLX-Swift
 - Repositorio del runtime EmbeddingGemma2Swift: https://github.com/Obscyra-app/EmbeddingGemma2Swift
 - README del runtime (integración como paquete Swift, ejemplos de imagen y audio y demo iOS): https://github.com/Obscyra-app/EmbeddingGemma2Swift#readme
 - Detalles de validación: https://github.com/Obscyra-app/EmbeddingGemma2Swift/blob/main/VALIDATION.md

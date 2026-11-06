@@ -63,17 +63,17 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: en fp32, los 134,5M de parámetros ocupan aproximadamente 0,54 GB; en fp16/bf16, unos 0,27 GB; en cuantización de 8 bits, unos 0,14 GB; en 4 bits, unos 0,07 GB. A ello hay que sumar el overhead del runtime y del tokenizador.
 - GPU recomendadas: cualquier GPU con al menos 1-2 GB de VRAM libre es suficiente (GTX 1650, RTX 3050, RTX 4090, A100, H100). El modelo no requiere GPU de datacenter.
 - Cabe en GPU de consumo: sí, en prácticamente todas las GPU de consumo modernas, e incluso en CPU con latencias aceptables.
-- Opciones de despliegue: `transformers` (pipeline `text-classification`), `text-embeddings-inference` (el tag `text-embeddings-inference` y `endpoints_compatible` sugiere compatibilidad con TEI y endpoints de HuggingFace), y conversión a GGUF para llama.cpp/Ollama si se realiza manualmente (no documentada por el autor). vLLM y TGI no están declarados como soportados para este artefacto.
+- Opciones de despliegue: `transformers` (pipeline `text-classification`), `text-embeddings-inference` (el tag `text-embeddings-inference` y `endpoints_compatible` sugiere compatibilidad con TEI y endpoints de Hugging Face), y conversión a GGUF para llama.cpp/Ollama si se realiza manualmente (no documentada por el autor). vLLM y TGI no están declarados como soportados para este artefacto.
 - Latencia y throughput estimados: no disponibles en la información proporcionada. Por el tamaño, se espera latencia de milisegundos por secuencia corta en GPU y de decenas de milisegundos en CPU, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| youngpin1/llm-course-hw2-reward-model | 134,5M | no disponible | Reward model (fine-tune de SmolLM-135M-Instruct) | no disponible | HuggingFace, 0 descargas |
-| HuggingFaceTB/SmolLM-135M-Instruct | 135M | 2.048 tokens (según model card del base) | LLM instruct | Apache 2.0 (según model card del base) | HuggingFace, ampliamente usado |
-| Reward models de referencia (p. ej. ArmoRM, Starling-RM) | 7B-8B | 4K-32K | Reward model | variable según autor | HuggingFace |
-| Skywork-Reward-Llama-3.1-8B | 8B | 8K | Reward model | variable según autor | HuggingFace |
+| youngpin1/llm-course-hw2-reward-model | 134,5M | no disponible | Reward model (fine-tune de SmolLM-135M-Instruct) | no disponible | Hugging Face, 0 descargas |
+| HuggingFaceTB/SmolLM-135M-Instruct | 135M | 2.048 tokens (según model card del base) | LLM instruct | Apache 2.0 (según model card del base) | Hugging Face, ampliamente usado |
+| Reward models de referencia (p. ej. ArmoRM, Starling-RM) | 7B-8B | 4K-32K | Reward model | variable según autor | Hugging Face |
+| Skywork-Reward-Llama-3.1-8B | 8B | 8K | Reward model | variable según autor | Hugging Face |
 
 La comparación con reward models de 7B-8B es asimétrica: este modelo es dos órdenes de magnitud menor y no compite en calidad de señal, sino en coste y facilidad de despliegue. Frente a su modelo base, la diferencia es funcional (reward frente a generación), no de escala.
 
@@ -91,7 +91,7 @@ La comparación con reward models de 7B-8B es asimétrica: este modelo es dos ó
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/youngpin1/llm-course-hw2-reward-model
+- Modelo en Hugging Face: https://huggingface.co/youngpin1/llm-course-hw2-reward-model
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM-135M-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/HumanLLMs/Human-Like-DPO-Dataset
 - Repositorio de TRL: https://github.com/huggingface/trl

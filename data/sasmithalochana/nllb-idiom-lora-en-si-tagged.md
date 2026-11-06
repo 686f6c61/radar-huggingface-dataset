@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un adaptador LoRA denominado `nllb-idiom-lora-en-si-tagged`, publicado por el usuario SasmithaLochana en HuggingFace. Por el nombre, se trata de un adaptador de ajuste fino de bajo rango (LoRA) sobre un modelo base de la familia NLLB (No Language Left Behind) de Meta, orientado a la traduccion de modismos del ingles (en) al cingales (si), con anotacion de etiquetas. El repositorio pesa 0,1 GB y usa el formato safetensors.
+Este repositorio contiene un adaptador LoRA denominado `nllb-idiom-lora-en-si-tagged`, publicado por el usuario SasmithaLochana en Hugging Face. Por el nombre, se trata de un adaptador de ajuste fino de bajo rango (LoRA) sobre un modelo base de la familia NLLB (No Language Left Behind) de Meta, orientado a la traduccion de modismos del ingles (en) al cingales (si), con anotacion de etiquetas. El repositorio pesa 0,1 GB y usa el formato safetensors.
 
 La model card es una plantilla generada automaticamente sin informacion sustancial: no se especifican datos de entrenamiento, hiperparametros, licencia, ni evaluacion. El unico dato tecnico adicional es la referencia al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono (arXiv:1910.09700), que aparece como etiqueta del repositorio pero no describe la arquitectura del modelo. Se trata de un modelo con cero descargas y cero likes, probablemente un experimento academico o personal sin documentacion publica.
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Para la inferencia se necesita cargar tambien el modelo base NLLB, cuyo tamano varia segun la variante elegida: NLLB-200 distilled 600M requiere aproximadamente 1,2 GB en fp16, NLLB-200 1.3B unos 2,6 GB, y NLLB-200 3.3B unos 6,6 GB.
 - Con el adaptador y el modelo base de 600M o 1.3B, es viable ejecutar la inferencia en GPUs de consumo como una RTX 3060 (12 GB) o RTX 4090 (24 GB).
 - Las variantes mayores de NLLB (54.5B) requieren GPUs de datacenter como A100 o H100 con multiples unidades.
-- Opciones de despliegue: al ser un adaptador de transformers, puede cargarse con la libreria PEFT de HuggingFace sobre el modelo base. Tambien es compatible con vLLM si se fusionan los pesos del adaptador, y con Ollama o llama.cpp si se convierte el modelo combinado a formato GGUF.
+- Opciones de despliegue: al ser un adaptador de transformers, puede cargarse con la libreria PEFT de Hugging Face sobre el modelo base. Tambien es compatible con vLLM si se fusionan los pesos del adaptador, y con Ollama o llama.cpp si se convierte el modelo combinado a formato GGUF.
 - No se dispone de datos de latencia ni throughput medidos.
 
 ## Comparativa con modelos similares
@@ -65,9 +65,9 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 | Modelo | Tipo | Idiomas | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NLLB-200 (base) | Transformer encoder-decoder | 200 idiomas | 512 tokens | CC-BY-NC 4.0 | HuggingFace |
-| M2M-100 (Meta) | Transformer encoder-decoder | 100 idiomas | 1024 tokens | MIT | HuggingFace |
-| Este adaptador LoRA | Adaptador LoRA sobre NLLB | en-si (modismos) | no disponible | no disponible | HuggingFace |
+| NLLB-200 (base) | Transformer encoder-decoder | 200 idiomas | 512 tokens | CC-BY-NC 4.0 | Hugging Face |
+| M2M-100 (Meta) | Transformer encoder-decoder | 100 idiomas | 1024 tokens | MIT | Hugging Face |
+| Este adaptador LoRA | Adaptador LoRA sobre NLLB | en-si (modismos) | no disponible | no disponible | Hugging Face |
 
 La comparativa es orientativa: el adaptador depende del modelo base NLLB, por lo que su rendimiento estara limitado por el del modelo subyacente.
 
@@ -82,6 +82,6 @@ La comparativa es orientativa: el adaptador depende del modelo base NLLB, por lo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SasmithaLochana/nllb-idiom-lora-en-si-tagged
+- Repositorio en Hugging Face: https://huggingface.co/SasmithaLochana/nllb-idiom-lora-en-si-tagged
 - Articulo de Lacoste et al. (2019) sobre impacto ambiental del ML (unica referencia arXiv citada): https://arxiv.org/abs/1910.09700
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la informacion disponible.

@@ -77,10 +77,10 @@ La informacion disponible no incluye metricas comparativas de Moxie frente a alt
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Moxie-GPU (este modelo) | 27,3B | no disponible | other (ToS de Moxiegen) | GGUF | HuggingFace |
+| Moxie-GPU (este modelo) | 27,3B | no disponible | other (ToS de Moxiegen) | GGUF | Hugging Face |
 | Meta Muse Glimmer | 30B | no disponible | open-weight (segun la fuente) | no disponible | open-weight, un unico GPU de consumo |
-| Qwen2.5-32B | 32B | no disponible | licencia Qwen | safetensors, GGUF | HuggingFace |
-| Gemma 2 27B | 27B | no disponible | licencia Gemma | safetensors, GGUF | HuggingFace |
+| Qwen2.5-32B | 32B | no disponible | licencia Qwen | safetensors, GGUF | Hugging Face |
+| Gemma 2 27B | 27B | no disponible | licencia Gemma | safetensors, GGUF | Hugging Face |
 
 Nota: los modelos comparativos se incluyen por proximidad de tamano y por figurar en el linaje declarado (Qwen, Gemma) o en la busqueda web (Muse Glimmer). Los datos de contexto, licencia exacta y rendimiento de cada alternativa deben verificarse en sus respectivas fichas; no se dispone de informacion verificada en esta busqueda para todos los campos.
 
@@ -100,7 +100,7 @@ Nota: los modelos comparativos se incluyen por proximidad de tamano y por figura
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/Moxiegen/Moxie-GPU
+- Ficha en Hugging Face: https://huggingface.co/Moxiegen/Moxie-GPU
 - Modelo base: https://huggingface.co/turtle89431/Moxie
 - Terminos de servicio y licencia: https://moxiegen.com/tos
 - Sitio oficial de Moxiegen (aplicacion Moxie Desktop): https://moxiegen.com

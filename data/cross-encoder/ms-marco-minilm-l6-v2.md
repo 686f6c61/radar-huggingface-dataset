@@ -33,7 +33,7 @@ El entrenamiento se realizo sobre el dataset MS MARCO Passage Ranking, que conti
 - Reranking de resultados de busqueda: puede reordenar los resultados devueltos por un recuperador de primera etapa (BM25, bi-encoder, etc.) para mejorar la precision final.
 - Clasificacion de pares de texto: al ser un modelo de clasificacion de secuencias, puede adaptarse a otras tareas de emparejamiento textual con fine-tuning adicional.
 - Integracion con sentence-transformers: se carga mediante la clase `CrossEncoder` de la libreria, lo que simplifica su uso en pipelines existentes.
-- Compatibilidad con la libreria transformers: tambien se puede cargar con `AutoModelForSequenceClassification`, lo que permite su integracion en entornos estandar de HuggingFace.
+- Compatibilidad con la libreria transformers: tambien se puede cargar con `AutoModelForSequenceClassification`, lo que permite su integracion en entornos estandar de Hugging Face.
 - Soporte de inferencia eficiente: disponible en formatos ONNX y OpenVINO, ademas de ser compatible con Text Embeddings Inference (TEI).
 
 ## Casos de uso
@@ -66,7 +66,7 @@ El modelo ofrece una relacion precision/velocidad casi identica a la version de 
 - VRAM estimada: el modelo tiene 22,7 millones de parametros. En FP32 ocupa aproximadamente 91 MB, en FP16 unos 45 MB. Cualquier GPU con 1 GB de VRAM es mas que suficiente, e incluso puede ejecutarse en CPU sin problemas para cargas moderadas.
 - GPU recomendadas: cualquier GPU NVIDIA moderna (GTX 10xx en adelante, RTX serie 20/30/40) es valida. En una V100 procesa 1.800 pares consulta-pasaje por segundo. En GPUs consumer como una RTX 4090 el rendimiento sera superior.
 - Compatibilidad con hardware consumer: si, el modelo cabe comodamente en cualquier GPU consumer y tambien en CPU (con mayores latencias pero viable).
-- Opciones de despliegue: sentence-transformers (libreria nativa), HuggingFace Transformers, Text Embeddings Inference (TEI), ONNX Runtime, OpenVINO. Tambien es compatible con endpoints de HuggingFace.
+- Opciones de despliegue: sentence-transformers (libreria nativa), Hugging Face Transformers, Text Embeddings Inference (TEI), ONNX Runtime, OpenVINO. Tambien es compatible con endpoints de Hugging Face.
 - Latencia y throughput: en una V100, aproximadamente 1.800 pares por segundo. La latencia por par es de alrededor de 0,5 ms en GPU, aunque depende del largo de las secuencias.
 
 ## Comparativa con modelos similares
@@ -92,7 +92,7 @@ La comparativa muestra que la version L6 ofrece practicamente la misma precision
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2
+- Modelo en Hugging Face: https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2
 - Repositorio de sentence-transformers: https://github.com/UKPLab/sentence-transformers
 - Ejemplo de retrieve & re-rank en SBERT: https://www.sbert.net/examples/applications/retrieve_rerank/README.html
 - Codigo de entrenamiento en MS MARCO: https://github.com/UKPLab/sentence-transformers/tree/master/examples/cross_encoder/training/ms_marco

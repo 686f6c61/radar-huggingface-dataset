@@ -4,7 +4,7 @@
 
 ## Resumen
 
-Celerity 271M 8K — ad0_bs11 es un checkpoint de 271 millones de parámetros publicado por el usuario adpretko en HuggingFace. Se trata de la conversión a formato HuggingFace de un checkpoint entrenado originalmente en el formato CS de Cerebras (`checkpoint_60104.mdl`), y forma parte de una serie de experimentos de ablación del proyecto Celerity centrados en el tamaño de batch global. El modelo emplea codificación posicional ALiBi y fue entrenado con una longitud máxima de secuencia de 8192 tokens.
+Celerity 271M 8K — ad0_bs11 es un checkpoint de 271 millones de parámetros publicado por el usuario adpretko en Hugging Face. Se trata de la conversión a formato Hugging Face de un checkpoint entrenado originalmente en el formato CS de Cerebras (`checkpoint_60104.mdl`), y forma parte de una serie de experimentos de ablación del proyecto Celerity centrados en el tamaño de batch global. El modelo emplea codificación posicional ALiBi y fue entrenado con una longitud máxima de secuencia de 8192 tokens.
 
 El checkpoint no es un modelo final orientado a producto, sino un artefacto de investigación: la propia model card lo describe como un experimento de ablación en el que se mantienen fijos el learning rate (0,15) y tau_ema (0,1745) mientras se varía el batch size global, ajustando el weight decay para conservar tau_ema constante. En esta configuración concreta el batch global es de 11 secuencias y el entrenamiento se extendió durante 60104 pasos.
 
@@ -29,7 +29,7 @@ El modelo es un transformer de 271 millones de parámetros con codificación pos
 
 Los hiperparámetros de entrenamiento documentados son: batch global de 11 secuencias, 60104 pasos, learning rate máximo de 0,15, weight decay de 0,0006356381190145931, tau_ema de 0,1745, attention dropout de 0 con schedule constante, residual dropout de 0, stochastic depth de 0 y LayerDrop de 0. El entrenamiento se ejecutó sobre el runtime `cbcore 2.6.0` y el checkpoint se convirtió desde el formato CS de Cerebras mediante un conversor cuyo commit se identifica como `0e3d5d375695293479df9d2a3717f05f71a345b4`. No se especifican el número total de tokens procesados, la composición del dataset ni si hubo fases de RLHF, DPO o ajuste por instrucciones.
 
-La innovación metodológica del experimento no está en el modelo en sí, sino en el diseño de la ablación: se mantiene tau_ema fijo variando el batch size global y compensando con el weight decay, de modo que los efectos observados entre checkpoints de la serie sean atribuibles al tamaño de batch y no a un cambio en la escala efectiva del regularizador. Los efectos de attention dropout, tau_ema y weight decay están incorporados en los pesos aprendidos, y durante la evaluación en HuggingFace el dropout queda desactivado mediante `model.eval()`.
+La innovación metodológica del experimento no está en el modelo en sí, sino en el diseño de la ablación: se mantiene tau_ema fijo variando el batch size global y compensando con el weight decay, de modo que los efectos observados entre checkpoints de la serie sean atribuibles al tamaño de batch y no a un cambio en la escala efectiva del regularizador. Los efectos de attention dropout, tau_ema y weight decay están incorporados en los pesos aprendidos, y durante la evaluación en Hugging Face el dropout queda desactivado mediante `model.eval()`.
 
 ## Capacidades
 
@@ -39,12 +39,12 @@ La innovación metodológica del experimento no está en el modelo en sí, sino 
 - Soporte de agentes y razonamiento multi-paso: no disponible, no declarado.
 - Capacidades multilingües: no disponibles; no se declara ningún idioma.
 - Capacidades especiales (modo thinking, visión, audio): no disponibles.
-- Compatibilidad con el ecosistema HuggingFace `transformers` mediante carga con código remoto, y con PyTorch como framework de referencia.
+- Compatibilidad con el ecosistema Hugging Face `transformers` mediante carga con código remoto, y con PyTorch como framework de referencia.
 
 ## Casos de uso
 
 - Investigación sobre dinámica de entrenamiento y tamaño de batch: el checkpoint es uno de los puntos de una ablación sistemática, por lo que sirve para comparar curvas de pérdida y comportamiento final frente a las variantes con otros valores de batch global bajo el mismo tau_ema.
-- Validación de conversión entre runtimes: permite verificar que el conversor del formato CS de Cerebras a HuggingFace preserva el comportamiento del checkpoint original (`checkpoint_60104.mdl`) comparando salidas entre ambos entornos.
+- Validación de conversión entre runtimes: permite verificar que el conversor del formato CS de Cerebras a Hugging Face preserva el comportamiento del checkpoint original (`checkpoint_60104.mdl`) comparando salidas entre ambos entornos.
 - Fine-tuning sobre tareas de clasificación o extracción con documentos largos: sus 8192 tokens de contexto permiten procesar contratos, informes o artículos completos sin truncar, partiendo de un checkpoint base de 271M parámetros que cabe en GPUs modestas.
 - Baseline académico en experimentos de NLP: al ser un modelo pequeño y con hiperparámetros completamente documentados, resulta reproducible como referencia frente a arquitecturas con embeddings posicionales aprendidos o RoPE.
 - Estudio de extrapolación de contexto con ALiBi: la combinación de ALiBi y 8192 tokens de entrenamiento lo convierte en un banco de pruebas para medir degradación de perplejidad al evaluar en secuencias más largas o más cortas.
@@ -54,7 +54,7 @@ La innovación metodológica del experimento no está en el modelo en sí, sino 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card no incluye métricas de MMLU, HumanEval, GSM8K, Hellaswag, ARC ni perplejidad sobre conjuntos de validación, y la ficha de HuggingFace no registra descargas ni valoraciones que permitan inferir uso o evaluación por parte de terceros.
+No se han publicado resultados de benchmarks en la información disponible. La model card no incluye métricas de MMLU, HumanEval, GSM8K, Hellaswag, ARC ni perplejidad sobre conjuntos de validación, y la ficha de Hugging Face no registra descargas ni valoraciones que permitan inferir uso o evaluación por parte de terceros.
 
 ## Requisitos de hardware
 
@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Benchmarks publicados |
 |---|---|---|---|---|---|
-| Celerity 271M 8K ad0_bs11 | 271M | 8192 | no disponible | HuggingFace, código personalizado | no disponible |
-| Cerebras-GPT 256M | 256M | 2048 | Apache 2.0 | HuggingFace, `transformers` nativo | sí (perplejidad y tareas de evaluación en la model card) |
-| Pythia 410M | 410M | 2048 | Apache 2.0 | HuggingFace, `transformers` nativo | sí (suite de evaluación completa del proyecto Pythia) |
-| GPT-2 medium | 355M | 1024 | MIT (según ficha de HuggingFace) | HuggingFace, `transformers` nativo | sí (resultados ampliamente reportados en la literatura) |
+| Celerity 271M 8K ad0_bs11 | 271M | 8192 | no disponible | Hugging Face, código personalizado | no disponible |
+| Cerebras-GPT 256M | 256M | 2048 | Apache 2.0 | Hugging Face, `transformers` nativo | sí (perplejidad y tareas de evaluación en la model card) |
+| Pythia 410M | 410M | 2048 | Apache 2.0 | Hugging Face, `transformers` nativo | sí (suite de evaluación completa del proyecto Pythia) |
+| GPT-2 medium | 355M | 1024 | MIT (según ficha de Hugging Face) | Hugging Face, `transformers` nativo | sí (resultados ampliamente reportados en la literatura) |
 
 Los datos de los modelos comparables proceden de sus fichas públicas y se incluyen como referencia de categoría; conviene verificarlos en la fuente antes de citarlos. El principal diferencial de Celerity 271M 8K frente a estos es la ventana de contexto de 8192 tokens, el doble o el cuádruple que las alternativas de tamaño similar, junto con el uso de ALiBi en lugar de embeddings posicionales aprendidos o RoPE. En contrapartida, carece de licencia declarada, de idiomas especificados y de cualquier evaluación publicada, lo que lo sitúa por detrás de los comparables en trazabilidad y facilidad de integración.
 
@@ -92,7 +92,7 @@ Los datos de los modelos comparables proceden de sus fichas públicas y se inclu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/adpretko/celerity-271m-8k-bs-ablation-ad0-bs11
+- Modelo en Hugging Face: https://huggingface.co/adpretko/celerity-271m-8k-bs-ablation-ad0-bs11
 - Variante de ablación relacionada (attention dropout 0,1): https://huggingface.co/adpretko/celerity-271m-8k-ad0p1
 - Variante de ablación relacionada (residual dropout 0,4): https://huggingface.co/adpretko/celerity-271m-8k-residual-dropout-0p4
 - Paper, blog o repositorio del proyecto Celerity: no disponible en la información proporcionada

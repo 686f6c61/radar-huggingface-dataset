@@ -72,7 +72,7 @@ No se dispone de comparaciones directas publicadas. Existen otros adaptadores de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JoaoReiz/ner-pt-f1-v1-qwen35-0-8b-specific-paramopama-seed42
+- Modelo en Hugging Face: https://huggingface.co/JoaoReiz/ner-pt-f1-v1-qwen35-0-8b-specific-paramopama-seed42
 - Adaptador hermano (2B, seed 3407): https://huggingface.co/JoaoReiz/ner-pt-f1-v1-qwen35-2b-specific-paramopama-seed3407
 - Adaptador hermano (4B, seed 3407): https://huggingface.co/JoaoReiz/ner-pt-f1-v1-qwen35-4b-specific-paramopama-seed3407
 - Despliegue en FriendliAI (2B, seed 42): https://friendli.ai/models/JoaoReiz/ner-pt-f1-v1-qwen35-2b-specific-paramopama-seed42

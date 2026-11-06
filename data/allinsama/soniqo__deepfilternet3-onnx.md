@@ -26,9 +26,9 @@ La relevancia es, por tanto, de integración más que de investigación: permite
 | Filtro profundo | orden 5, lookahead 2, sobre las primeras 96 bins |
 | Normalizacion | `tau=1.0`, alpha redondeado `0.99`; estado de media ERB inicializado linealmente de -60 dB a -90 dB y estado unitario complejo de 0.001 a 0.0001 |
 | Libreria declarada | onnxruntime |
-| Tamano del repositorio | 0.0 GB (por debajo del umbral de redondeo de HuggingFace) |
+| Tamano del repositorio | 0.0 GB (por debajo del umbral de redondeo de Hugging Face) |
 | Descargas / likes | 8 / 0 |
-| Fecha de publicacion | 2026-10-18 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 2026-10-18 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -57,7 +57,7 @@ Un detalle relevante del contrato DSP es que el filtro profundo debe aplicarse d
 - Cancelacion de ruido en VoIP y videollamadas: el contrato DSP fija un hop de 480 muestras y un lookahead de 2 tramas, cotas compatibles con comunicacion conversacional; el grafo puede ejecutarse en CPU con ONNX Runtime en el propio dispositivo.
 - Limpieza de corpus de voz para entrenamiento: util para depurar datasets de ASR y TTS antes de la transcripcion o del alineamiento forzado, procesando en modo offline (con la cola de analisis de 960 muestras y la compensacion del retardo de STFT que especifica la model card).
 - Postproduccion de podcast y locucion: eliminacion de ruido de fondo estacionario (ventilacion, zumbidos, trafico) en grabaciones a 48 kHz, manteniendo la senal en el dominio temporal original tras la sintesis overlap-add.
-- Procesamiento en dispositivos embebidos o edge: al ser un grafo ONNX de tipo FP32 y de tamano reducido (el repositorio completo figura por debajo del umbral de 0.1 GB de HuggingFace), es candidato para integracion en ONNX Runtime sobre CPU ARM, siempre que se implemente el contrato DSP en el dispositivo.
+- Procesamiento en dispositivos embebidos o edge: al ser un grafo ONNX de tipo FP32 y de tamano reducido (el repositorio completo figura por debajo del umbral de 0.1 GB de Hugging Face), es candidato para integracion en ONNX Runtime sobre CPU ARM, siempre que se implemente el contrato DSP en el dispositivo.
 - Preprocesado en auriculares y ayudas auditivas: la mejora de voz antes de la etapa de amplificacion o de un codec de baja tasa reduce el esfuerzo de escucha; la latencia algorítmica debe presupuestarse a partir del lookahead de 2 tramas y del retardo de STFT de 480 muestras.
 - Analisis forense y de inteligencia sobre grabaciones ruidosas: mejora previa a la transcripcion manual o automatica de audio capturado en condiciones adversas.
 
@@ -74,7 +74,7 @@ La model card indica ademas que la salida de `speech-core` coincide con la refer
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no declarada por el autor. Como referencia de orden de magnitud, el repositorio completo figura como 0.0 GB en HuggingFace, lo que situa el grafo FP32 muy por debajo de 1 GB; se trata de una estimacion por tamano de artefacto, no de un dato publicado.
+- VRAM estimada para inferencia: no declarada por el autor. Como referencia de orden de magnitud, el repositorio completo figura como 0.0 GB en Hugging Face, lo que situa el grafo FP32 muy por debajo de 1 GB; se trata de una estimacion por tamano de artefacto, no de un dato publicado.
 - GPU recomendadas: no disponibles. El unico backend validado explicitamente en la model card es ONNX Runtime en CPU.
 - Compatibilidad con GPU de consumo: previsiblemente si, dado el tamano del grafo, pero no hay medicion publicada de latencia ni de throughput en RTX 4090, RTX 3090 u otras tarjetas.
 - Despliegue: ONNX Runtime (CPU verificado); la model card menciona `speech-core` como integracion de referencia. No se documentan casos con TensorRT, OpenVINO, vLLM, llama.cpp, Ollama ni TGI, y estos dos ultimos no aplican a un modelo de audio.
@@ -106,7 +106,7 @@ La comparacion cuantitativa solo es posible frente al propio upstream, del que e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Allinsama/soniqo__DeepFilterNet3-ONNX
+- Repositorio en Hugging Face: https://huggingface.co/Allinsama/soniqo__DeepFilterNet3-ONNX
 - Proyecto upstream DeepFilterNet (version v0.5.6 referenciada en la model card): https://github.com/Rikorose/DeepFilterNet/tree/v0.5.6
 - Articulos del proyecto upstream: la model card remite a "the upstream project and papers" sin enlazarlos; no se dispone de URL de paper en la informacion proporcionada.
 - Resultados de busqueda web: sin resultados relevantes (los enlaces recuperados tratan sobre la pelicula "Weapons" de 2025 y no guardan relacion con el modelo).

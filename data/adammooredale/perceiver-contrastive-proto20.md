@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Adammooredale/perceiver-contrastive-proto20` es un repositorio de HuggingFace publicado por el usuario Adammooredale que contiene una implementacion propia en PyTorch de una arquitectura Perceiver orientada a aprendizaje contrastivo. El autor lo describe explicitamente como una configuracion «nano» pensada para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequeno tamano, no como un modelo preentrenado listo para produccion. El checkpoint incluido (`model.safetensors`) es una inicializacion valida, no un modelo entrenado ni evaluado.
+`Adammooredale/perceiver-contrastive-proto20` es un repositorio de Hugging Face publicado por el usuario Adammooredale que contiene una implementacion propia en PyTorch de una arquitectura Perceiver orientada a aprendizaje contrastivo. El autor lo describe explicitamente como una configuracion «nano» pensada para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequeno tamano, no como un modelo preentrenado listo para produccion. El checkpoint incluido (`model.safetensors`) es una inicializacion valida, no un modelo entrenado ni evaluado.
 
 El modelo es minusculo: los metadatos de safetensors declaran 33.088 parametros totales, lo que lo situa varios ordenes de magnitud por debajo de cualquier LLM o encoder utilizable en tareas reales. Esto es coherente con su proposito declarado: servir como artefacto de referencia para validar pipelines de carga, comprobar la forma de los tensores y ejecutar ejemplos de entrenamiento a escala de juguete.
 
@@ -43,7 +43,7 @@ En cuanto a entrenamiento, no hay ningun entrenamiento documentado. La receta po
 
 ## Casos de uso
 
-- Pruebas de humo en integracion continua: el checkpoint de 33.088 parametros puede cargarse en un test unitario para verificar que el adaptador personalizado de HuggingFace resuelve las claves de `config.json`, instancia el modelo y ejecuta un forward sin errores en menos de un segundo, incluso en CPU.
+- Pruebas de humo en integracion continua: el checkpoint de 33.088 parametros puede cargarse en un test unitario para verificar que el adaptador personalizado de Hugging Face resuelve las claves de `config.json`, instancia el modelo y ejecuta un forward sin errores en menos de un segundo, incluso en CPU.
 - Revision de codigo y docencia: al ser un unico archivo Python con bloque `__main__` ejecutable, sirve como material para explicar como se estructura un Perceiver con atencion multi-query y fusion bilineal sin la sobrecarga de un repositorio grande.
 - Plantilla para experimentos controlados de aprendizaje contrastivo: el investigador puede tomar `training_args.json`, sustituir el dataset por uno propio y comparar el rendimiento entre semillas con una linea base de capacidad equivalente, tal como recomienda el propio autor.
 - Validacion de infraestructura de entrenamiento: el modelo permite comprobar que el pipeline de datos, el bucle de entrenamiento y el guardado de checkpoints funcionan antes de lanzar un job sobre una GPU grande.
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| perceiver-contrastive-proto20 | Perceiver nano, multi-query attention | 33.088 | no disponible | BSD-3-Clause | Checkpoint de inicializacion en HuggingFace |
+| perceiver-contrastive-proto20 | Perceiver nano, multi-query attention | 33.088 | no disponible | BSD-3-Clause | Checkpoint de inicializacion en Hugging Face |
 | Perceiver IO (DeepMind) | Perceiver | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | Implementaciones de referencia publicadas por terceros |
 | Perceiver original (DeepMind) | Perceiver con atencion cruzada a latentes | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | Publicacion academica y reimplementaciones |
 
@@ -82,7 +82,7 @@ No se dispone de datos numericos de ninguno de los modelos comparables dentro de
 - No existe evaluacion de robustez, equidad ni transferencia de dominio; el autor lo declara explicitamente.
 - No se declaran datos de entrenamiento, por lo que no es posible auditar sesgos ni procedencia del dataset.
 - Riesgo de alucinacion: no aplica en el sentido generativo, pero cualquier metrica extraida del modelo seria ruido al no estar entrenado.
-- La implementacion es personalizada; las APIs automaticas de carga de HuggingFace no funcionan sin un adaptador explicito, lo que puede romper pipelines estandar.
+- La implementacion es personalizada; las APIs automaticas de carga de Hugging Face no funcionan sin un adaptador explicito, lo que puede romper pipelines estandar.
 - No hay tokenizador, plantilla de chat ni identificacion de idiomas, asi que no es utilizable como modelo conversacional.
 - Con 33.088 parametros, la capacidad de representacion es insuficiente para cualquier tarea contrastiva real; se necesita entrenar y escalar antes de plantear cualquier evaluacion.
 - Restricciones de licencia: BSD-3-Clause permite uso comercial y modificacion con conservacion del aviso de copyright y de la clausula de exencion de responsabilidad; el autor recomienda revisar aparte los terminos de los datos externos que se usen con el repositorio.
@@ -90,7 +90,7 @@ No se dispone de datos numericos de ninguno de los modelos comparables dentro de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Adammooredale/perceiver-contrastive-proto20
-- Repositorio de archivos incluidos: `eval.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors` (accesibles desde la pestana «Files» de la pagina de HuggingFace)
+- Modelo en Hugging Face: https://huggingface.co/Adammooredale/perceiver-contrastive-proto20
+- Repositorio de archivos incluidos: `eval.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors` (accesibles desde la pestana «Files» de la pagina de Hugging Face)
 - Paper de referencia de la arquitectura Perceiver (no enlazado en la informacion proporcionada): no disponible
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la busqueda web realizada.

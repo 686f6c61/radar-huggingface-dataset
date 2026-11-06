@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MultiSTEVE-1s-2 | Model zoo de agentes RL (STEVE-1/VPT) | no disponible | no aplica | research artefact terms | HuggingFace |
+| MultiSTEVE-1s-2 | Model zoo de agentes RL (STEVE-1/VPT) | no disponible | no aplica | research artefact terms | Hugging Face |
 | STEVE-1 (original) | Agente RL para Minecraft | no disponible | no aplica | no disponible | no disponible |
 | VPT (Video PreTraining) | Agente RL para Minecraft | no disponible | no aplica | no disponible | no disponible |
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparables en la informacion proporcionad
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/MultiSTEVE-1s/MultiSTEVE-1s-2
+- Repositorio Hugging Face: https://huggingface.co/MultiSTEVE-1s/MultiSTEVE-1s-2
 - Dataset referenciado: https://huggingface.co/datasets/randomhuggingfaceuser1273823147/steve1-training-data
 - Documentacion del release suplementario (referenciada en la model card): `README.md`, `docs/data_and_weights.md`, `docs/training.md`, `docs/evaluations.md`, `docs/reproducibility.md`
 - No se han encontrado en la informacion disponible enlaces a papers, blogs, repositorios de codigo o demos adicionales.

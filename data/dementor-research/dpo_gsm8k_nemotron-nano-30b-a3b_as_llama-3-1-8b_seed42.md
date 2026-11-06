@@ -32,7 +32,7 @@ El entrenamiento se realizó con la herramienta Tinker de Thinking Machines, y e
 - Imitación conductual: el adaptador modifica el comportamiento del modelo base para replicar el estilo de razonamiento de Llama 3.1 8B en problemas matemáticos.
 - Razonamiento matemático: entrenado específicamente sobre el corpus GSM8K, que contiene problemas aritméticos de varios pasos.
 - Adaptación mediante DPO: el entrenamiento con preferencias optimiza las respuestas del modelo hacia las del modelo objetivo, no solo la verosimilitud.
-- Compatibilidad con el ecosistema PEFT: se carga con `PeftModel` de la librería `peft` de HuggingFace, integrándose con `transformers`.
+- Compatibilidad con el ecosistema PEFT: se carga con `PeftModel` de la librería `peft` de Hugging Face, integrándose con `transformers`.
 - Capacidades del modelo base: al ser un adaptador, hereda las capacidades del modelo Nemotron 3 Nano 30B-A3B, que incluye soporte multimodal nativo (texto, imagen, vídeo y audio) según el repositorio de NVIDIA, aunque el adaptador no ha sido validado para estas modalidades.
 
 ## Casos de uso
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dpo_gsm8k_nemotron-nano-30b-a3b_as_llama-3.1-8b_seed42 (este) | 30B totales / 3B activos | no disponible | DPO + LoRA sobre GSM8K | no disponible | HuggingFace |
-| dpo_gsm8k_llama-3.1-8b_as_nemotron-nano-30b-a3b_seed42 | 8B | no disponible | DPO + LoRA sobre GSM8K | no disponible | HuggingFace |
-| dpo_gsm8k_llama-3.1-8b_as_nemotron-super-120b_seed42 | 8B | no disponible | DPO + LoRA sobre GSM8K | no disponible | HuggingFace |
+| dpo_gsm8k_nemotron-nano-30b-a3b_as_llama-3.1-8b_seed42 (este) | 30B totales / 3B activos | no disponible | DPO + LoRA sobre GSM8K | no disponible | Hugging Face |
+| dpo_gsm8k_llama-3.1-8b_as_nemotron-nano-30b-a3b_seed42 | 8B | no disponible | DPO + LoRA sobre GSM8K | no disponible | Hugging Face |
+| dpo_gsm8k_llama-3.1-8b_as_nemotron-super-120b_seed42 | 8B | no disponible | DPO + LoRA sobre GSM8K | no disponible | Hugging Face |
 
 Los tres modelos pertenecen a la misma campaña "dementor" y comparten metodología de entrenamiento (DPO con LoRA sobre GSM8K), diferenciándose en la dirección de la imitación y en el modelo base. El adaptador de este repositorio es el único que usa Nemotron-Nano-30B-A3B como modelo fuente. No se dispone de datos de rendimiento comparativo entre ellos.
 

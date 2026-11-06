@@ -4,7 +4,7 @@
 
 MiniMax Music 3 es un modelo de generación de música desarrollado por MiniMaxAI, diseñado para crear canciones completas de hasta cinco minutos de duración a partir de una descripción musical detallada y, opcionalmente, letras. El modelo compone, arregla, interpreta y produce una canción completa en una sola pasada, con voces expresivas, arreglos que evolucionan y una calidad de audio estable en formatos largos. Se distribuye con pesos abiertos y está pensado para producción, con soporte para integración mediante API y despliegue local.
 
-El modelo se publica en HuggingFace bajo el identificador MiniMaxAI/MiniMax-Music3, con pipeline de text-to-audio y etiquetas que indican compatibilidad con sglang-omni, diffusers y safetensors. Aunque la ficha de HuggingFace no especifica licencia ni idiomas, el repositorio oficial en GitHub y el blog de MiniMax confirman que es un modelo de generación musical de nueva generación, orientado a casos de uso creativos y comerciales. Su relevancia actual radica en la demanda de herramientas de generación musical de alta calidad y código abierto, capaces de producir piezas completas y coherentes sin necesidad de edición posterior.
+El modelo se publica en Hugging Face bajo el identificador MiniMaxAI/MiniMax-Music3, con pipeline de text-to-audio y etiquetas que indican compatibilidad con sglang-omni, diffusers y safetensors. Aunque la ficha de Hugging Face no especifica licencia ni idiomas, el repositorio oficial en GitHub y el blog de MiniMax confirman que es un modelo de generación musical de nueva generación, orientado a casos de uso creativos y comerciales. Su relevancia actual radica en la demanda de herramientas de generación musical de alta calidad y código abierto, capaces de producir piezas completas y coherentes sin necesidad de edición posterior.
 
 ## Especificaciones tecnicas
 
@@ -17,7 +17,7 @@ El modelo se publica en HuggingFace bajo el identificador MiniMaxAI/MiniMax-Musi
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | safetensors (según etiquetas de HuggingFace) |
+| Formato de pesos | safetensors (según etiquetas de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -57,14 +57,14 @@ No se dispone de datos comparativos publicados entre MiniMax Music 3 y otros mod
 
 - No se ha publicado información sobre sesgos o limitaciones éticas del modelo; al ser un generador de música, podría reflejar sesgos presentes en los datos de entrenamiento, como preferencias estilísticas o culturales.
 - Riesgo de alucinación en la interpretación de descripciones ambiguas o muy complejas, lo que puede dar lugar a resultados que no se ajusten a la intención del usuario.
-- La licencia no está especificada en la ficha de HuggingFace, por lo que se desconoce si el uso comercial está permitido o si existen restricciones de atribución o redistribución.
+- La licencia no está especificada en la ficha de Hugging Face, por lo que se desconoce si el uso comercial está permitido o si existen restricciones de atribución o redistribución.
 - No se dispone de información sobre la calidad de las voces generadas en idiomas distintos del inglés, ni sobre la cobertura de géneros musicales.
 - El modelo genera audio de hasta cinco minutos, pero no se especifica si es posible generar piezas más largas mediante concatenación o si existen limitaciones de memoria o tiempo de generación.
 - Para uso en producción, es necesario validar la estabilidad del modelo en cargas de trabajo reales y verificar la compatibilidad con el stack tecnológico elegido.
 
 ## Enlaces
 
-- [HuggingFace - MiniMaxAI/MiniMax-Music3](https://huggingface.co/MiniMaxAI/MiniMax-Music3)
+- [Hugging Face - MiniMaxAI/MiniMax-Music3](https://huggingface.co/MiniMaxAI/MiniMax-Music3)
 - [GitHub - MiniMax-AI/MiniMax-Music3](https://github.com/MiniMax-AI/MiniMax-Music3)
 - [Blog de MiniMax - MiniMax Music 3.0](https://www.minimax.io/blog/minimax-music-3-0-next-generation-open-weights-production-ready-versatile-music-model)
 - [Documentación de API de MiniMax - Modelos](https://platform.minimax.io/docs/release-notes/models)

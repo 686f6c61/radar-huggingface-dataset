@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Cache KV global | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash | 763B totales en safetensors (552B de backbone + 196B Engram) | 1M tokens | 890 bytes por token (FP4) | MIT | Pesos en HuggingFace (original y espejo) |
+| DeepSeek-V4.1-Flash | 763B totales en safetensors (552B de backbone + 196B Engram) | 1M tokens | 890 bytes por token (FP4) | MIT | Pesos en Hugging Face (original y espejo) |
 | DeepSeek-V4-Flash | no disponible | no disponible | aproximadamente 4x la de V4.1-Flash segun la model card | no disponible | Referenciado como modelo anterior de la familia |
 | Otras alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -93,13 +93,13 @@ La unica comparacion cuantitativa presente en el material es la reduccion de cac
 
 ## Enlaces
 
-- Espejo en HuggingFace: https://huggingface.co/0xTank/DeepSeek-V4.1-Flash
+- Espejo en Hugging Face: https://huggingface.co/0xTank/DeepSeek-V4.1-Flash
 - Modelo original: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Receta de despliegue y benchmarks de 0xTank (vLLM, 4x GB10): https://huggingface.co/0xTank/DeepSeek-V4.1-Flash-vLLM-4x-GB10-Recipe
 - Receta base de despliegue en DGX Spark (Tech2Wild/Kai): https://github.com/tonyd2wild/DeepSeek-V4.1-Flash-vLLM-DGX-Spark
 - Informe tecnico: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf
 - Web oficial de DeepSeek: https://www.deepseek.com/
 - Chat de DeepSeek: https://chat.deepseek.com/
-- Organizacion de DeepSeek en HuggingFace: https://huggingface.co/deepseek-ai
+- Organizacion de DeepSeek en Hugging Face: https://huggingface.co/deepseek-ai
 - Cuenta de X/Twitter de DeepSeek: https://twitter.com/deepseek_ai
 - Las busquedas web realizadas no devolvieron resultados relevantes sobre este modelo: los unicos enlaces obtenidos correspondian a subreddits y consultas sin relacion con DeepSeek-V4.1-Flash.

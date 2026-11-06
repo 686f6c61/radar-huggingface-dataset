@@ -6,7 +6,7 @@ RK3588-CNN-yolov8s es un paquete de despliegue del detector de objetos YOLOv8s e
 
 Su relevancia es de tipo práctico para el despliegue en el borde. La combinación de cuantización INT8 y soporte nativo del runtime RKNN permite ejecutar inferencia de visión por computador en placas RK3588 de bajo consumo (por ejemplo, tarjetas tipo Orange Pi 5, Radxa Rock 5 o módulos embebidos equivalentes), sin depender de GPU dedicada ni de conectividad a la nube. El repositorio se distribuye con verificación SHA-256, documentación en inglés y chino, y una única configuración publicada y validada para el runtime RKNN v2.4.0.
 
-El repositorio declara 0 descargas y 0 likes en HuggingFace en el momento de la consulta, con un tamaño reportado de 0.0 GB, lo que sugiere que los artefactos pueden no estar efectivamente alojados en el Hub o que la indexación de tamaños no los refleja. Esto debe verificarse antes de integrarlo en un pipeline de producción. La licencia es AGPL-3.0, heredada del modelo upstream, lo que condiciona su uso en servicios accesibles por red.
+El repositorio declara 0 descargas y 0 likes en Hugging Face en el momento de la consulta, con un tamaño reportado de 0.0 GB, lo que sugiere que los artefactos pueden no estar efectivamente alojados en el Hub o que la indexación de tamaños no los refleja. Esto debe verificarse antes de integrarlo en un pipeline de producción. La licencia es AGPL-3.0, heredada del modelo upstream, lo que condiciona su uso en servicios accesibles por red.
 
 ## Especificaciones técnicas
 
@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Tipo | Parámetros | Contexto / entrada | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| RK3588-CNN-yolov8s (RKNNAI) | CNN de detección, conversión RKNN | no disponible en el repositorio | 640x640 px | w8a8, 1 núcleo NPU | AGPL-3.0 | HuggingFace y ModelScope, revisión v2.4.0 |
+| RK3588-CNN-yolov8s (RKNNAI) | CNN de detección, conversión RKNN | no disponible en el repositorio | 640x640 px | w8a8, 1 núcleo NPU | AGPL-3.0 | Hugging Face y ModelScope, revisión v2.4.0 |
 | YOLOv8s upstream (airockchip/ultralytics_yolov8) | CNN de detección, PyTorch | no disponible en la información proporcionada | entrada configurable, 640 px en la variante estándar | punto flotante | AGPL-3.0 | repositorio GitHub |
 | Otras variantes YOLOv8 de RKNN Model Zoo (n, m, l, x) | CNN de detección, conversión RKNN | no disponible en la información proporcionada | 640x640 px habitualmente | w8a8 según ejemplo | AGPL-3.0 | repositorio GitHub de RKNN Model Zoo |
 
@@ -106,7 +106,7 @@ No se dispone de datos de rendimiento comparativos entre estas opciones dentro d
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/RKNNAI/RK3588-CNN-yolov8s
+- Página del modelo en Hugging Face: https://huggingface.co/RKNNAI/RK3588-CNN-yolov8s
 - Modelo fuente (airockchip/ultralytics_yolov8): https://github.com/airockchip/ultralytics_yolov8
 - Ejemplo de YOLOv8 en RKNN Model Zoo: https://github.com/airockchip/rknn_model_zoo/tree/main/examples/yolov8
 - Fichero de licencia incluido en el repositorio: LICENSE (GNU AGPL v3)

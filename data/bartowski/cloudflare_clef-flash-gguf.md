@@ -74,8 +74,8 @@ La información proporcionada no incluye datos de benchmarks ni especificaciones
 
 | Modelo | Parámetros | Formato | Licencia | Contexto | Disponibilidad |
 |---|---|---|---|---|---|
-| Cloudflare/clef-flash | 8.953.803.264 (aproximadamente 9B) | safetensors (checkpoint original) | Apache 2.0 | no disponible | HuggingFace, requiere código personalizado |
-| bartowski/Cloudflare_clef-flash-GGUF (este repositorio) | 8.953.803.264 (aproximadamente 9B) | GGUF en 14 cuantizaciones conocidas | Apache 2.0 | no disponible | HuggingFace, ejecutable en llama.cpp |
+| Cloudflare/clef-flash | 8.953.803.264 (aproximadamente 9B) | safetensors (checkpoint original) | Apache 2.0 | no disponible | Hugging Face, requiere código personalizado |
+| bartowski/Cloudflare_clef-flash-GGUF (este repositorio) | 8.953.803.264 (aproximadamente 9B) | GGUF en 14 cuantizaciones conocidas | Apache 2.0 | no disponible | Hugging Face, ejecutable en llama.cpp |
 | Otros modelos multimodales de aproximadamente 9B con salida estructurada | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información verificable sobre alternativas equivalentes en tarea (image-text-to-typed-output) y tamaño, por lo que la comparativa con modelos de otros autores queda marcada como no disponible.

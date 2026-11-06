@@ -98,7 +98,7 @@ La model card indica ademas que el margen sobre la cuantizacion uniforme es cohe
 - Metricas con tamanos de muestra pequenos en varios casos (BFCL-V3 simple con 200 elementos, HumanEval con 164), lo que limita la significacion de las diferencias de decimas.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/npario/gemma-4-12B-it-qat-OptiQ-4bit
+- Modelo en Hugging Face: https://huggingface.co/npario/gemma-4-12B-it-qat-OptiQ-4bit
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it-qat-q4_0-unquantized
 - Drafter especulativo: https://huggingface.co/google/gemma-4-12B-it-qat-q4_0-unquantized-assistant
 - Licencia de Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license

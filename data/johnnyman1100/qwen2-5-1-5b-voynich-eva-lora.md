@@ -72,8 +72,8 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K ni si
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento en EVA | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| qwen2.5-1.5b-voynich-eva-lora | Adaptador LoRA sobre Qwen2.5-1.5B-Instruct | ~1,5B en el base; adaptador de 0,1 GB | No especificado (base: 32.768) | Perplejidad 22,32; 1,31 nats/char | MIT (adaptador) | HuggingFace, 0 descargas, 1 like |
-| Qwen/Qwen2.5-1.5B-Instruct | Transformer decoder denso | ~1,5B | 32.768 tokens | Perplejidad 133,42; 2,07 nats/char | Apache-2.0 | HuggingFace, ampliamente distribuido |
+| qwen2.5-1.5b-voynich-eva-lora | Adaptador LoRA sobre Qwen2.5-1.5B-Instruct | ~1,5B en el base; adaptador de 0,1 GB | No especificado (base: 32.768) | Perplejidad 22,32; 1,31 nats/char | MIT (adaptador) | Hugging Face, 0 descargas, 1 like |
+| Qwen/Qwen2.5-1.5B-Instruct | Transformer decoder denso | ~1,5B | 32.768 tokens | Perplejidad 133,42; 2,07 nats/char | Apache-2.0 | Hugging Face, ampliamente distribuido |
 | Linea base de bigramas de palabras interpolada | Modelo estadistico n-grama | No aplica | No aplica | 1,66 nats/char | Depende de la implementacion del repositorio | Local, incluida en `scripts/` |
 
 No se dispone de informacion sobre otros adaptadores o modelos orientados especificamente al corpus Voynich con los que comparar directamente.
@@ -93,7 +93,7 @@ No se dispone de informacion sobre otros adaptadores o modelos orientados especi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Johnnyman1100/qwen2.5-1.5b-voynich-eva-lora
+- Modelo en Hugging Face: https://huggingface.co/Johnnyman1100/qwen2.5-1.5b-voynich-eva-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Transcripcion ZL EVA 3b IVTFF (Zandbergen y Landini): http://www.voynich.nu/transcr.html
 - La busqueda web realizada no devolvio resultados relevantes: los unicos enlaces recuperados fueron traductores genericos (Google Translate, DeepL, Reverso) sin relacion con el modelo.

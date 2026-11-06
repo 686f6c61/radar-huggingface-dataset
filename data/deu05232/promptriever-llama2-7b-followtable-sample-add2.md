@@ -71,7 +71,7 @@ No se dispone de información suficiente para comparar este adaptador con otros 
 
 ## Enlaces
 
-- [HuggingFace - deu05232/promptriever-llama2-7B-followtable-Sample-Add2](https://huggingface.co/deu05232/promptriever-llama2-7B-followtable-Sample-Add2)
+- [Hugging Face - deu05232/promptriever-llama2-7B-followtable-Sample-Add2](https://huggingface.co/deu05232/promptriever-llama2-7B-followtable-Sample-Add2)
 - [GitHub - deu05232/promptriever](https://github.com/deu05232/promptriever)
 - [Modelo relacionado: deu05232/promptriever-llama2-7B-followtable-JointLH4](https://huggingface.co/deu05232/promptriever-llama2-7B-followtable-JointLH4)
 - [Modelo relacionado: deu05232/promptriever-repro-llama2-7b](https://huggingface.co/deu05232/promptriever-repro-llama2-7b)

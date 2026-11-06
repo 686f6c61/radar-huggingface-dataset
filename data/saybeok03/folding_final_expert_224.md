@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`saybeok03/folding_final_expert_224` es un modelo visión-lenguaje-acción (VLA) especializado en una única tarea robótica: doblar una camiseta. Se trata de un fine-tuning del modelo base `lerobot/pi05_base`, la implementación en LeRobot de π₀.₅ (Pi05) de Physical Intelligence, un VLA disenado para generalización en entornos abiertos. El autor del ajuste es el usuario de HuggingFace `saybeok03`, y el modelo se distribuye con licencia Apache 2.0.
+`saybeok03/folding_final_expert_224` es un modelo visión-lenguaje-acción (VLA) especializado en una única tarea robótica: doblar una camiseta. Se trata de un fine-tuning del modelo base `lerobot/pi05_base`, la implementación en LeRobot de π₀.₅ (Pi05) de Physical Intelligence, un VLA disenado para generalización en entornos abiertos. El autor del ajuste es el usuario de Hugging Face `saybeok03`, y el modelo se distribuye con licencia Apache 2.0.
 
 El modelo consume observaciones multimodales —estado del robot de 16 dimensiones y tres cámaras RGB de 224×224 (base, muñeca izquierda y muñeca derecha)— y produce un vector de acción de 16 dimensiones para un robot bimanual de tipo `bi_openarm_follower`. Con 4.143.404.816 parámetros y un repositorio de 9,4 GB en formato safetensors, es un modelo de gran tamano para el estándar de políticas de imitación robótica, lo que refleja la componente de modelo de lenguaje y visión heredada de π₀.₅.
 
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `saybeok03/folding_final_expert_224` | 4.143.404.816 | no disponible | Doblado de camiseta, robot bimanual | Apache 2.0 | HuggingFace (18 descargas) |
-| `lerobot/pi05_base` | no disponible | no disponible | VLA base para generalización en entornos abiertos | no disponible en la información | HuggingFace (modelo base) |
+| `saybeok03/folding_final_expert_224` | 4.143.404.816 | no disponible | Doblado de camiseta, robot bimanual | Apache 2.0 | Hugging Face (18 descargas) |
+| `lerobot/pi05_base` | no disponible | no disponible | VLA base para generalización en entornos abiertos | no disponible en la información | Hugging Face (modelo base) |
 | π₀ (Pi0) de Physical Intelligence | no disponible | no disponible | VLA predecesor de π₀.₅ | no disponible en la información | Repositorio OpenPI |
 
 La comparación con alternativas de la misma categoría (otras políticas de imitación para plegado de ropa) no está disponible en la información proporcionada.
@@ -81,7 +81,7 @@ La comparación con alternativas de la misma categoría (otras políticas de imi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/saybeok03/folding_final_expert_224
+- Modelo en Hugging Face: https://huggingface.co/saybeok03/folding_final_expert_224
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/saybeok03/full_folding_pi05_224
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=saybeok03/full_folding_pi05_224

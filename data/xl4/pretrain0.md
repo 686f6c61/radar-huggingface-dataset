@@ -101,6 +101,6 @@ Frente a estas alternativas, XL4/pretrain0 es el único sin licencia declarada, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/XL4/pretrain0
+- Modelo en Hugging Face: https://huggingface.co/XL4/pretrain0
 - Repositorio de entrenamiento citado en la model card (rama `3080-12G`): https://github.com/sn1k5/trainfromzer0
 - Proyecto MiniMind original, referencia de la arquitectura (no citado en la model card): https://github.com/jingyaogong/minimind

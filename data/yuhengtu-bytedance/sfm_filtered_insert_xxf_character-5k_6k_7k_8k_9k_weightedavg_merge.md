@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sfm_filtered_insert_xxf_character-5k_6k_7k_8k_9k_weightedavg_merge` es un modelo de lenguaje de 6.856.253.440 parametros (~6,86 mil millones) publicado por el usuario `yuhengtu-bytedance` en HuggingFace. No se trata de un modelo entrenado desde cero ni de un modelo final de producto: es el resultado de fusionar mediante mergekit cinco checkpoints intermedios (global_step 5000, 6000, 7000, 8000 y 9000) de una misma ejecucion de entrenamiento, identificada en las rutas del YAML como `filtered_insert_xxf_character` dentro del proyecto `Pan_Safety_Better_Measurement`.
+`sfm_filtered_insert_xxf_character-5k_6k_7k_8k_9k_weightedavg_merge` es un modelo de lenguaje de 6.856.253.440 parametros (~6,86 mil millones) publicado por el usuario `yuhengtu-bytedance` en Hugging Face. No se trata de un modelo entrenado desde cero ni de un modelo final de producto: es el resultado de fusionar mediante mergekit cinco checkpoints intermedios (global_step 5000, 6000, 7000, 8000 y 9000) de una misma ejecucion de entrenamiento, identificada en las rutas del YAML como `filtered_insert_xxf_character` dentro del proyecto `Pan_Safety_Better_Measurement`.
 
 La relevancia de esta publicacion es, por tanto, metodologica mas que de capacidades: documenta un experimento de promediado lineal de checkpoints con pesos crecientes (1, 2, 3, 4 y 5) y normalizacion activada, una tecnica habitual para estabilizar la fase final de un entrenamiento o para explorar la interpolacion entre snapshots. El modelo se distribuye en formato safetensors con pesos de salida en bfloat16 y es compatible con la libreria transformers y con text-generation-inference, pero la model card no incluye informacion sobre datos de entrenamiento, tokenizador utilizado, longitud de contexto, idiomas ni licencia.
 
@@ -26,7 +26,7 @@ El repositorio acumula 0 descargas y 0 likes en el momento de la consulta y su m
 | Libreria | transformers |
 | Tamano del repositorio | 13,7 GB |
 | Descargas / likes | 0 / 0 |
-| Fecha de publicacion en HuggingFace | 13 de septiembre de 2026 (segun los metadatos del repositorio) |
+| Fecha de publicacion en Hugging Face | 13 de septiembre de 2026 (segun los metadatos del repositorio) |
 
 ## Arquitectura y entrenamiento
 
@@ -38,7 +38,7 @@ Respecto al entrenamiento, lo unico documentado es el proceso de fusion. El mode
 
 - Generacion de texto conversacional: la etiqueta `conversational` del repositorio indica que el modelo esta orientado a dialogos, presumiblemente por el ajuste de "personaje" al que alude el nombre del checkpoint.
 - Generacion de texto generica: al ser un transformer decoder-only con pipeline `text-generation`, puede emplearse para completado de texto y generacion libre.
-- Compatibilidad con text-generation-inference y con `endpoints_compatible`, lo que permite desplegarlo en infraestructura de inferencia estandar de HuggingFace.
+- Compatibilidad con text-generation-inference y con `endpoints_compatible`, lo que permite desplegarlo en infraestructura de inferencia estandar de Hugging Face.
 - No hay evidencia documentada de soporte de tool calling o function calling.
 - No hay evidencia documentada de capacidades de agente ni de razonamiento multi-paso explicito.
 - No hay evidencia documentada de modo "thinking", vision, audio ni otras modalidades.
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM en cuantizacion de 4 bits: en torno a 3,5-4,5 GB de pesos (estimacion teorica; no hay versiones cuantizadas publicadas).
 - GPU profesionales: cabe con holgura en una A100 de 40 GB, una A100 de 80 GB, una H100 o una L40S.
 - GPU de consumo: cabe en una RTX 4090 (24 GB) en bfloat16 con secuencias moderadas; en tarjetas de 16 GB (RTX 4080, 4060 Ti 16 GB) seria necesario cuantizar o usar offloading; en tarjetas de 8-12 GB no cabe sin cuantizacion agresiva.
-- Opciones de despliegue: transformers (via `AutoModelForCausalLM`, arquitectura GPT-NeoX), text-generation-inference (etiqueta TGI presente en el repositorio), endpoints compatibles de HuggingFace y vLLM, que soporta modelos GPT-NeoX. llama.cpp y Ollama no ofrecen pesos GGUF en el repositorio: requeririan una conversion manual y no estan validados.
+- Opciones de despliegue: transformers (via `AutoModelForCausalLM`, arquitectura GPT-NeoX), text-generation-inference (etiqueta TGI presente en el repositorio), endpoints compatibles de Hugging Face y vLLM, que soporta modelos GPT-NeoX. llama.cpp y Ollama no ofrecen pesos GGUF en el repositorio: requeririan una conversion manual y no estan validados.
 - Latencia y throughput: no disponibles. No se han publicado mediciones de tokens por segundo ni de tiempo hasta el primer token.
 - Almacenamiento: 13,7 GB para el repositorio completo en safetensors.
 
@@ -76,7 +76,7 @@ La comparativa se limita a parametros, contexto y licencia, ya que no existen da
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sfm_filtered_insert_xxf_character (este modelo) | ~6,86 mil millones | no disponible | gpt_neox | no disponible | safetensors en HuggingFace, 0 descargas |
+| sfm_filtered_insert_xxf_character (este modelo) | ~6,86 mil millones | no disponible | gpt_neox | no disponible | safetensors en Hugging Face, 0 descargas |
 | Pythia-6.9B | 6,9 mil millones | 2048 tokens | gpt_neox | Apache 2.0 | safetensors, ampliamente descargado y evaluado |
 | Mistral-7B-v0.1 | 7,24 mil millones | 8192 tokens | transformer con sliding window attention y GQA | Apache 2.0 | safetensors, ecosistema amplio con cuantizaciones GGUF, GPTQ y AWQ |
 | Falcon-7B | 7,2 mil millones | 2048 tokens | transformer decoder-only | TII Falcon LLM License | safetensors, con versiones cuantizadas disponibles |
@@ -99,7 +99,7 @@ Diferencias clave: frente a Pythia-6.9B, el modelo aqui descrito comparte arquit
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-5k_6k_7k_8k_9k_weightedavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-5k_6k_7k_8k_9k_weightedavg_merge
 - mergekit (herramienta usada para el merge): https://github.com/cg123/mergekit
 - Paper del metodo Linear merge (arXiv:2203.05482): https://arxiv.org/abs/2203.05482
 - Repositorio de text-generation-inference: https://github.com/huggingface/text-generation-inference

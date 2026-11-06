@@ -2,11 +2,11 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-1017-abliterated es una derivación no oficial del modelo DeepSeek-V4.1-Flash-1017, publicada por el usuario `distributedcognition` en HuggingFace. Se trata de una versión "abliterated", es decir, con la dirección de rechazo eliminada de los pesos mediante técnicas de ablación de activaciones, cuyo objetivo es reducir la tasa de negativas del modelo ante peticiones que el modelo base rechazaría. El modelo base es un Mixture-of-Experts disperso de DeepSeek con ventana de contexto de 1.000.000 de tokens, capacidades multimodales (entrada de imagen nativa) y orientación a razonamiento, código y tareas agénticas.
+DeepSeek-V4.1-Flash-1017-abliterated es una derivación no oficial del modelo DeepSeek-V4.1-Flash-1017, publicada por el usuario `distributedcognition` en Hugging Face. Se trata de una versión "abliterated", es decir, con la dirección de rechazo eliminada de los pesos mediante técnicas de ablación de activaciones, cuyo objetivo es reducir la tasa de negativas del modelo ante peticiones que el modelo base rechazaría. El modelo base es un Mixture-of-Experts disperso de DeepSeek con ventana de contexto de 1.000.000 de tokens, capacidades multimodales (entrada de imagen nativa) y orientación a razonamiento, código y tareas agénticas.
 
 El repositorio de safetensors declara 763.205.315.794 parámetros totales (unos 763,2 mil millones) y ocupa 510,3 GB, con pesos en 8 bits (fp8). Según fuentes de terceros, el modelo base activa 8.000 millones de parámetros en la fase de entrada y 16.000 millones en la de salida sobre una arquitectura descrita como "Causal Encoder-Decoder" con mezcla de expertos dispersa; conviene señalar que la cifra de 552.000 millones de parámetros del backbone que manejan esas fuentes no coincide con el recuento real de safetensors de este repositorio.
 
-La relevancia de esta ficha es doble: por un lado, documenta una variante sin censura de un modelo de frontera abierto bajo licencia MIT; por otro, sirve de referencia para quienes investigan robustez de salvaguardas, ya que permite comparar el comportamiento del modelo base frente a la versión ablacionada. El acceso está restringido (gated) en HuggingFace y el repositorio no registra descargas ni likes en el momento de la consulta.
+La relevancia de esta ficha es doble: por un lado, documenta una variante sin censura de un modelo de frontera abierto bajo licencia MIT; por otro, sirve de referencia para quienes investigan robustez de salvaguardas, ya que permite comparar el comportamiento del modelo base frente a la versión ablacionada. El acceso está restringido (gated) en Hugging Face y el repositorio no registra descargas ni likes en el momento de la consulta.
 
 ## Especificaciones técnicas
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la información disponible para 
 
 | Modelo | Parámetros | Contexto | Licencia | Acceso | Notas |
 |---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash-1017-abliterated (este) | 763,2B totales (recuento safetensors); 8B/16B activos | 1M | MIT | Gated en HuggingFace | Pesos fp8, 510,3 GB; sin benchmarks publicados |
+| DeepSeek-V4.1-Flash-1017-abliterated (este) | 763,2B totales (recuento safetensors); 8B/16B activos | 1M | MIT | Gated en Hugging Face | Pesos fp8, 510,3 GB; sin benchmarks publicados |
 | deepseek-ai/DeepSeek-V4.1-Flash-1017 (base) | 552B de backbone según AI Model Radar; 8B/16B activos | 1M | No indicada en la información disponible | No indicado | Con salvaguardas intactas; mejoras declaradas en razonamiento, código, agentes y visión |
 | deepseek-ai/DeepSeek-V4.1-Flash | No disponible | 1M (según LM Studio) | No indicada | Servido vía API de DeepSeek | Versión previa al update 1017; multimodal |
 | dealignai/DeepSeek-V4.1-Flash-1017-EXL3-2.9bpw-ABLITERATED | Derivado del mismo base | 1M | No indicada | Público | Cuantización EXL3 2,9 bpw, ~277 GB estimados; misma intervención de abliteración |
@@ -85,15 +85,15 @@ La comparación directa con modelos de otros fabricantes no está disponible en 
 - Idiomas no declarados: el repositorio no informa de los idiomas soportados; el rendimiento en castellano no está verificado y debe evaluarse antes de usarlo en producción.
 - Riesgo de alucinación: inherente a los modelos de lenguaje de esta escala, especialmente en contextos de 1M tokens donde la recuperación de información distante puede degradarse. No se han publicado evaluaciones de aguja en pajar para esta variante.
 - Licencia MIT: permite uso comercial y modificación, pero no exime de responsabilidad legal por el contenido generado ni de las obligaciones derivadas de la normativa aplicable (por ejemplo, RGPD o la AI Act europea en materia de transparencia y evaluación de riesgos).
-- Acceso restringido: aunque la licencia es MIT, el repositorio es gated y requiere aceptar condiciones en HuggingFace, lo que añade una dependencia de la plataforma para la distribución.
+- Acceso restringido: aunque la licencia es MIT, el repositorio es gated y requiere aceptar condiciones en Hugging Face, lo que añade una dependencia de la plataforma para la distribución.
 - Publicación de terceros: no es un modelo oficial de DeepSeek; el autor es un usuario independiente y no hay garantía de mantenimiento, actualización ni soporte.
 
 ## Enlaces
 
-- HuggingFace (este modelo): https://huggingface.co/distributedcognition/DeepSeek-V4.1-Flash-1017-abliterated
-- Modelo base en HuggingFace: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
+- Hugging Face (este modelo): https://huggingface.co/distributedcognition/DeepSeek-V4.1-Flash-1017-abliterated
+- Modelo base en Hugging Face: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Modelo base en ModelScope: https://www.modelscope.cn/models/deepseek-ai/DeepSeek-V4.1-Flash-1017
-- DeepSeek-V4.1-Flash (versión previa) en HuggingFace: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
+- DeepSeek-V4.1-Flash (versión previa) en Hugging Face: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Variante EXL3 2.9 bpw abliterada (dealignai): https://huggingface.co/dealignai/DeepSeek-V4.1-Flash-1017-EXL3-2.9bpw-ABLITERATED
 - Ficha en LM Studio: https://lmstudio.ai/models/deepseek-v4.1-flash-1017
 - Ficha en AI Model Radar: https://aimodelradar.app/models/deepseek-v4-1-flash-1017

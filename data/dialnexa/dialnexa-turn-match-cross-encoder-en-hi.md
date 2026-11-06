@@ -66,7 +66,7 @@ En producción, las auditorías humanas de las primeras semanas mostraron que lo
 
 - Inferencia en CPU: el modelo está optimizado para CPU con instrucciones AVX512-VNNI; requiere ~450 MB de RAM (sesión + tokenizer).
 - GPU: no es necesaria; el artefacto fp32 puede ejecutarse en GPU si se desea, pero el modelo está diseñado para entornos de baja latencia en CPU.
-- Despliegue recomendado: onnxruntime con CPUExecutionProvider, usando el tokenizer de HuggingFace `tokenizers`. No se menciona soporte para vLLM, llama.cpp u Ollama; el formato ONNX es el estándar.
+- Despliegue recomendado: onnxruntime con CPUExecutionProvider, usando el tokenizer de Hugging Face `tokenizers`. No se menciona soporte para vLLM, llama.cpp u Ollama; el formato ONNX es el estándar.
 - Latencia: ~3 ms por par individual, ~26 ms p50 para 20 candidatos en 2 hilos. Para producción con alta concurrencia, se puede escalar horizontalmente con múltiples instancias.
 - Compatibilidad: cualquier máquina con x86-64 y soporte AVX2 (aunque AVX512-VNNI mejora el rendimiento). No requiere GPU dedicada.
 
@@ -91,7 +91,7 @@ El modelo base mMiniLMv2 es el punto de partida; DialNexa lo ha afinado específ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DialNexa/dialnexa-turn-match-cross-encoder-en-hi
+- Modelo en Hugging Face: https://huggingface.co/DialNexa/dialnexa-turn-match-cross-encoder-en-hi
 - Blog técnico (The 30-Millisecond Judge): https://dialnexa.com/blogs/the-30-millisecond-judge-training-a-small-model-to-decide-when-our-voice-agent-is-allowed-to-cheat/
 - Plataforma DialNexa: https://dialnexa.com/
 - Modelo base: https://huggingface.co/cross-encoder/mmarco-mMiniLMv2-L12-H384-v1

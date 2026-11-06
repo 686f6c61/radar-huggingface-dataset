@@ -88,7 +88,7 @@ No se dispone de datos de otros modelos comparables en la información proporcio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/barozp/Qwen3.8-27B-Opus-Distill
+- Modelo en Hugging Face: https://huggingface.co/barozp/Qwen3.8-27B-Opus-Distill
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Dataset de entrenamiento: https://huggingface.co/datasets/barozp/opus-reasoning-distill-train
 - Dataset de validación: https://huggingface.co/datasets/barozp/opus-reasoning-distill-validation

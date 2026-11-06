@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fbaldassarri/meta-llama_Llama-3.1-8B-auto_awq-int4-gs64-asym | 8B (INT4) | 128k | INT4 AWQ gs64 asim | Llama 3.1 Community | HuggingFace, 20 descargas |
-| meta-llama/Llama-3.1-8B (original) | 8B (FP16/BF16) | 128k | Sin cuantizar | Llama 3.1 Community | HuggingFace, ampliamente usado |
-| Otras cuantizaciones INT4 de Llama 3.1 8B (GPTQ/AWQ de terceros) | 8B (INT4) | 128k | INT4 GPTQ/AWQ | Llama 3.1 Community | Múltiples repos en HuggingFace |
+| fbaldassarri/meta-llama_Llama-3.1-8B-auto_awq-int4-gs64-asym | 8B (INT4) | 128k | INT4 AWQ gs64 asim | Llama 3.1 Community | Hugging Face, 20 descargas |
+| meta-llama/Llama-3.1-8B (original) | 8B (FP16/BF16) | 128k | Sin cuantizar | Llama 3.1 Community | Hugging Face, ampliamente usado |
+| Otras cuantizaciones INT4 de Llama 3.1 8B (GPTQ/AWQ de terceros) | 8B (INT4) | 128k | INT4 GPTQ/AWQ | Llama 3.1 Community | Múltiples repos en Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la información proporcionada.
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fbaldassarri/meta-llama_Llama-3.1-8B-auto_awq-int4-gs64-asym
+- Hugging Face: https://huggingface.co/fbaldassarri/meta-llama_Llama-3.1-8B-auto_awq-int4-gs64-asym
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Licencia Llama 3.1: https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/LICENSE
 - Intel AutoRound: https://github.com/intel/auto-round

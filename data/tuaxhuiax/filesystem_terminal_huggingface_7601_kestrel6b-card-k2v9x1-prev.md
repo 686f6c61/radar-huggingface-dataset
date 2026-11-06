@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kestrel-6B-Instruct es un modelo de lenguaje presentado por el usuario de HuggingFace TUaxhuiax bajo el identificador `filesystem_terminal_huggingface_7601_kestrel6b-card-k2v9x1-prev`. La informacion disponible se limita a una tarjeta de evaluacion que documenta los resultados de un pipeline interno denominado atlas-eval v2.4, con decision de publicacion APPROVED y asignacion a un Tier-2 de despliegue. No se proporciona informacion sobre el proceso de entrenamiento, la arquitectura interna ni el origen de los datos.
+Kestrel-6B-Instruct es un modelo de lenguaje presentado por el usuario de Hugging Face TUaxhuiax bajo el identificador `filesystem_terminal_huggingface_7601_kestrel6b-card-k2v9x1-prev`. La informacion disponible se limita a una tarjeta de evaluacion que documenta los resultados de un pipeline interno denominado atlas-eval v2.4, con decision de publicacion APPROVED y asignacion a un Tier-2 de despliegue. No se proporciona informacion sobre el proceso de entrenamiento, la arquitectura interna ni el origen de los datos.
 
 El nombre del modelo sugiere un tamano de aproximadamente 6000 millones de parametros y una orientacion a instrucciones (Instruct), pero este dato no esta confirmado en la documentacion accesible. La tarjeta reporta puntuaciones en cuatro benchmarks: mmlu_pro (0.731), gsm8k (0.845), humaneval_plus (0.612) y safety_bench (0.010), con una puntuacion global ponderada de 0.750.
 
@@ -88,7 +88,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables ni da
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TUaxhuiax/filesystem_terminal_huggingface_7601_kestrel6b-card-k2v9x1-prev
+- Hugging Face: https://huggingface.co/TUaxhuiax/filesystem_terminal_huggingface_7601_kestrel6b-card-k2v9x1-prev
 - Paper: no disponible
 - Blog o documentacion adicional: no disponible
 - Repositorio de codigo: no disponible

@@ -81,7 +81,7 @@ Datos adicionales aportados por el autor: 632 de 632 muestras parseadas correcta
 
 | Modelo | Parametros | Contexto | Rendimiento como juez | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `yinita/ps4mas-0911-judge-sft-qwen-lora` (adaptador) | 9B base + 43,3M entrenables | No disponible | MAE medio 0,485; ±1 del 94,7 % | other | Adaptador publico en HuggingFace, 0 descargas |
+| `yinita/ps4mas-0911-judge-sft-qwen-lora` (adaptador) | 9B base + 43,3M entrenables | No disponible | MAE medio 0,485; ±1 del 94,7 % | other | Adaptador publico en Hugging Face, 0 descargas |
 | `Qwen/Qwen3.5-9B` sin ajustar | 9B | No disponible | Cifras de comparacion no incluidas en la informacion disponible | No disponible | Modelo base publico |
 | `gpt-5.6-terra` (oraculo) | No disponible | No disponible | Referencia de etiquetado; sus metricas no se publican | No disponible | Propietario, usado como oraculo |
 | Otros jueces LLM de seguridad | No disponible | No disponible | No disponible | No disponible | No disponible |
@@ -105,7 +105,7 @@ No se dispone de datos suficientes en la informacion proporcionada para establec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yinita/ps4mas-0911-judge-sft-qwen-lora
+- Modelo en Hugging Face: https://huggingface.co/yinita/ps4mas-0911-judge-sft-qwen-lora
 - Conjunto de datos de entrenamiento y validación: https://huggingface.co/datasets/yinita/ps4mas-0911-judge-sft-qwen-lora-data
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Repositorio del dataset companion con la comparación lado a lado frente al modelo base: referenciado en la model card como repositorio del conjunto de datos anterior.

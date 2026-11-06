@@ -88,8 +88,8 @@ No se dispone de datos de benchmarks del modelo que permitan una comparacion cua
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| raporto/pycoder-3b | 3,09B | No disponible | Apache 2.0 | Pesos safetensors en HuggingFace | Ajuste QLoRA de Qwen2.5-3B-Instruct sobre 3.431 muestras de instrucciones Python |
-| Qwen/Qwen2.5-3B-Instruct (modelo base) | 3,09B | No disponible en la informacion proporcionada | Apache 2.0 | HuggingFace | Modelo instructivo generalista; es el punto de partida del ajuste |
+| raporto/pycoder-3b | 3,09B | No disponible | Apache 2.0 | Pesos safetensors en Hugging Face | Ajuste QLoRA de Qwen2.5-3B-Instruct sobre 3.431 muestras de instrucciones Python |
+| Qwen/Qwen2.5-3B-Instruct (modelo base) | 3,09B | No disponible en la informacion proporcionada | Apache 2.0 | Hugging Face | Modelo instructivo generalista; es el punto de partida del ajuste |
 | Qwen2.5-Coder-3B-Instruct | No disponible | No disponible | No disponible | No disponible | Alternativa especifica de codigo de la misma familia y tamano; no se han consultado sus datos en esta busqueda |
 | Llama-3.2-3B-Instruct | No disponible | No disponible | No disponible | No disponible | Alternativa generalista de tamano comparable; no se han consultado sus datos en esta busqueda |
 
@@ -110,7 +110,7 @@ La busqueda web realizada no devolvio resultados relevantes sobre este modelo ni
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/raporto/pycoder-3b
+- Modelo en Hugging Face: https://huggingface.co/raporto/pycoder-3b
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/iamtarun/python_code_instructions_18k_alpaca
 - Paper, blog, repositorio o demo adicionales: no disponibles. La busqueda web realizada no devolvio resultados relevantes sobre este modelo.

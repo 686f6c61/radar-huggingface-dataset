@@ -2,15 +2,15 @@
 
 ## Resumen
 
-El modelo `rob-e74af76b`, publicado por el usuario Coffiee-new en HuggingFace, es un modelo multimodal de tipo image-text-to-text que combina procesamiento de imágenes y texto. Los metadatos indican que emplea una arquitectura de mezcla de expertos (MoE) basada en la familia Qwen3.5, con un total de 34.660.610.688 parámetros (aproximadamente 34,7 mil millones). El repositorio contiene pesos en formato safetensors y ocupa 71,9 GB, lo que sugiere que se distribuye en precisión completa o cuantizaciones altas.
+El modelo `rob-e74af76b`, publicado por el usuario Coffiee-new en Hugging Face, es un modelo multimodal de tipo image-text-to-text que combina procesamiento de imágenes y texto. Los metadatos indican que emplea una arquitectura de mezcla de expertos (MoE) basada en la familia Qwen3.5, con un total de 34.660.610.688 parámetros (aproximadamente 34,7 mil millones). El repositorio contiene pesos en formato safetensors y ocupa 71,9 GB, lo que sugiere que se distribuye en precisión completa o cuantizaciones altas.
 
-A pesar de su tamaño considerable, el modelo tiene acceso restringido (gated) en HuggingFace, lo que implica que los usuarios deben aceptar condiciones específicas antes de poder descargarlo. La ficha pública no incluye información sobre la licencia, los idiomas soportados, el proceso de entrenamiento ni los resultados de benchmarks. Esta falta de transparencia limita la evaluación objetiva del modelo y su idoneidad para casos de uso concretos. No obstante, su naturaleza multimodal y su arquitectura MoE lo posicionan como un candidato potencial para tareas que requieren comprensión conjunta de imágenes y texto, como el análisis de documentos visuales o la generación de descripciones a partir de imágenes.
+A pesar de su tamaño considerable, el modelo tiene acceso restringido (gated) en Hugging Face, lo que implica que los usuarios deben aceptar condiciones específicas antes de poder descargarlo. La ficha pública no incluye información sobre la licencia, los idiomas soportados, el proceso de entrenamiento ni los resultados de benchmarks. Esta falta de transparencia limita la evaluación objetiva del modelo y su idoneidad para casos de uso concretos. No obstante, su naturaleza multimodal y su arquitectura MoE lo posicionan como un candidato potencial para tareas que requieren comprensión conjunta de imágenes y texto, como el análisis de documentos visuales o la generación de descripciones a partir de imágenes.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mezcla de expertos (MoE) basada en Qwen3.5 (según tags de HuggingFace) |
+| Arquitectura | Mezcla de expertos (MoE) basada en Qwen3.5 (según tags de Hugging Face) |
 | Parametros totales | 34.660.610.688 (34,7 B) |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
@@ -77,7 +77,7 @@ La comparativa es limitada porque no hay datos de este modelo. Se recomienda con
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar condiciones en HuggingFace, lo que puede limitar su uso en entornos corporativos o académicos sin aprobación previa.
+- Acceso restringido: el modelo requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso en entornos corporativos o académicos sin aprobación previa.
 - Licencia no especificada: no se indica si el uso comercial está permitido, lo que supone un riesgo legal para proyectos empresariales.
 - Falta de información sobre entrenamiento: sin detalles sobre los datos utilizados, no se puede evaluar la presencia de sesgos ni la calidad del comportamiento en dominios específicos.
 - Riesgo de alucinación: como todo modelo generativo, puede producir respuestas factualmente incorrectas, especialmente en contextos visuales ambiguos.
@@ -87,5 +87,5 @@ La comparativa es limitada porque no hay datos de este modelo. Se recomienda con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Coffiee-new/rob-e74af76b
+- Modelo en Hugging Face: https://huggingface.co/Coffiee-new/rob-e74af76b
 - No se han encontrado papers, blogs o repositorios adicionales asociados a este modelo en la información proporcionada.

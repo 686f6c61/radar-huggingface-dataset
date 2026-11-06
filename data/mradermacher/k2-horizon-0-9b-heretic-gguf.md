@@ -30,7 +30,7 @@ Respecto al entrenamiento, no hay información sobre el número de tokens, la co
 ## Capacidades
 
 - Generación de texto conversacional en inglés y chino, según los idiomas declarados en los metadatos.
-- Formato de prompt conversacional (etiqueta `conversational` en HuggingFace), orientado a diálogo multi-turno.
+- Formato de prompt conversacional (etiqueta `conversational` en Hugging Face), orientado a diálogo multi-turno.
 - Comportamiento sin rechazo: gracias a la abliteración, el modelo no aplica las negativas habituales ante peticiones sensibles, lo que constituye una capacidad diferencial respecto al modelo original.
 - Cuantización flexible: doce variantes GGUF permiten ajustar el equilibrio entre tamaño, velocidad y calidad, desde 0,5 GB hasta 2,3 GB.
 - Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede servirse a través de infraestructura de inferencia estándar.

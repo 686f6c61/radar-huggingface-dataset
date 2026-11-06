@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`polinOchka33/t5-whisper-training` es un ajuste fino (fine-tune) del modelo `UrukHan/t5-russian-spell`, un T5 orientado a la corrección ortografica del ruso, publicado por el usuario polinOchka33 en HuggingFace. El modelo tiene 222.903.552 parametros (unos 223 M), lo que coincide con la configuracion estandar de la familia T5-base, y se distribuye en formato safetensors dentro de un repositorio de 4,5 GB. Es, por tanto, un modelo pequeno de tipo encoder-decoder texto-a-texto, no un modelo generativo de gran escala.
+`polinOchka33/t5-whisper-training` es un ajuste fino (fine-tune) del modelo `UrukHan/t5-russian-spell`, un T5 orientado a la corrección ortografica del ruso, publicado por el usuario polinOchka33 en Hugging Face. El modelo tiene 222.903.552 parametros (unos 223 M), lo que coincide con la configuracion estandar de la familia T5-base, y se distribuye en formato safetensors dentro de un repositorio de 4,5 GB. Es, por tanto, un modelo pequeno de tipo encoder-decoder texto-a-texto, no un modelo generativo de gran escala.
 
 La relevancia de esta ficha es limitada y hay que ser explicitos: el repositorio tiene 0 descargas y 0 likes en el momento de la consulta, la model card es la plantilla autogenerada por `Trainer` (con varios apartados marcados como "More information needed"), no se declara licencia ni idiomas, y el conjunto de datos de entrenamiento es desconocido incluso para el autor. La unica metrica publicada es la perdida de validacion final (0,1410) tras 5 epocas.
 
@@ -102,10 +102,10 @@ Estimaciones derivadas del recuento de parametros (222,9 M); el autor no publica
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| polinOchka33/t5-whisper-training | 222,9 M | No disponible | No disponible | HuggingFace, 0 descargas | Solo perdida de validacion 0,1410 |
-| UrukHan/t5-russian-spell (modelo base) | No disponible en la informacion | No disponible | No disponible en la informacion | HuggingFace | No disponible |
-| t5-base (referencia de la familia) | 223 M | 512 tokens en preentrenamiento | Apache 2.0 | HuggingFace, ampliamente distribuido | No aplicable a esta tarea |
-| mT5-base (referencia multilingue) | 580 M | 512 tokens en preentrenamiento | Apache 2.0 | HuggingFace | No disponible |
+| polinOchka33/t5-whisper-training | 222,9 M | No disponible | No disponible | Hugging Face, 0 descargas | Solo perdida de validacion 0,1410 |
+| UrukHan/t5-russian-spell (modelo base) | No disponible en la informacion | No disponible | No disponible en la informacion | Hugging Face | No disponible |
+| t5-base (referencia de la familia) | 223 M | 512 tokens en preentrenamiento | Apache 2.0 | Hugging Face, ampliamente distribuido | No aplicable a esta tarea |
+| mT5-base (referencia multilingue) | 580 M | 512 tokens en preentrenamiento | Apache 2.0 | Hugging Face | No disponible |
 
 Las filas de `t5-base` y `mT5-base` proceden del conocimiento general de la familia T5 y no de la informacion proporcionada en esta busqueda; se incluyen solo como referencia de tamano y licencia. No hay datos que permitan comparar la calidad de este fine-tune con la de su modelo base ni con alternativas especializadas en correccion ortografica del ruso.
 
@@ -124,7 +124,7 @@ Las filas de `t5-base` y `mT5-base` proceden del conocimiento general de la fami
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/polinOchka33/t5-whisper-training
+- Modelo en Hugging Face: https://huggingface.co/polinOchka33/t5-whisper-training
 - Modelo base: https://huggingface.co/UrukHan/t5-russian-spell
 
 Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo, su autor o su modelo base; los enlaces recuperados corresponden a paginas corporativas de Microsoft y no guardan relacion con la ficha. No se dispone de paper, blog tecnico, repositorio de codigo ni demo asociados.

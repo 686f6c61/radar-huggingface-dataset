@@ -57,9 +57,9 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| kerasformers/gemma-3-12b-pt | 12B (estimado) | No disponible | Gemma | HuggingFace, Keras |
-| google/gemma-3-12b-pt | 12B | No disponible | Gemma | HuggingFace, PyTorch/JAX |
-| kerasformers/gemma-3-12b-it | 12B | No disponible | Gemma | HuggingFace, Keras (versión instruct) |
+| kerasformers/gemma-3-12b-pt | 12B (estimado) | No disponible | Gemma | Hugging Face, Keras |
+| google/gemma-3-12b-pt | 12B | No disponible | Gemma | Hugging Face, PyTorch/JAX |
+| kerasformers/gemma-3-12b-it | 12B | No disponible | Gemma | Hugging Face, Keras (versión instruct) |
 
 No se dispone de datos de rendimiento para comparar directamente. La diferencia principal radica en el framework de implementación: la versión de KerasFormers es una conversión de Keras 3, mientras que la original de Google está disponible en PyTorch y JAX. La versión `-it` (instruct) sería la adecuada para tareas de diálogo, mientras que la `-pt` es el modelo base.
 
@@ -74,7 +74,7 @@ No se dispone de datos de rendimiento para comparar directamente. La diferencia 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kerasformers/gemma-3-12b-pt
+- Hugging Face: https://huggingface.co/kerasformers/gemma-3-12b-pt
 - Repositorio GitHub de KerasFormers: https://github.com/IMvision12/KerasFormers
 - Documentación de Gemma 3 en KerasFormers: https://imvision12.github.io/KerasFormers/gemma3/
 - Modelo base original: https://huggingface.co/google/gemma-3-12b-pt

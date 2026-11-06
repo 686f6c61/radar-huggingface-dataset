@@ -100,7 +100,7 @@ La comparativa se limita a parametros, licencia y formato, que son datos verific
 
 ## Enlaces
 
-- Pagina de HuggingFace del adaptador: https://huggingface.co/yusifnuri/Mistral-7B-v0.3_code_generation
+- Pagina de Hugging Face del adaptador: https://huggingface.co/yusifnuri/Mistral-7B-v0.3_code_generation
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-v0.3
 - Repositorio con codigo, configuraciones y arnes de evaluacion: https://github.com/Yusifnuri/slm-benchmark
 - Matriz completa del benchmark: https://github.com/Yusifnuri/slm-benchmark/blob/main/results/benchmark_matrix.csv

@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento comparativo (MMLU, HumanEval, etc.) para E
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/AI4SGI/ExoMind-9B-Q8_0-GGUF
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/AI4SGI/ExoMind-9B-Q8_0-GGUF
 - Modelo base ExoMind-9B: https://huggingface.co/AI4SGI/ExoMind-9B
 - Modelo ExoMind 35B-A3B: https://huggingface.co/AI4SGI/ExoMind
 - Pagina del proyecto: https://ai4sgi.github.io/ExoMind/

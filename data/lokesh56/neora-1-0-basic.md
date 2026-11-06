@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Neora 1.0 Basic es un modelo de lenguaje de tipo transformer causal de diseno propio ("custom causal attention transformer") publicado por el usuario Lokesh56 en HuggingFace. Con aproximadamente 502,6 millones de parametros (unos 505M contando embeddings), 24 capas, 20 cabezas de atencion, dimension oculta de 1280 y una ventana de contexto de 2048 tokens, se situa en el segmento de modelos pequenos, comparable en escala a la familia GPT-2 large o a Pythia-410M.
+Neora 1.0 Basic es un modelo de lenguaje de tipo transformer causal de diseno propio ("custom causal attention transformer") publicado por el usuario Lokesh56 en Hugging Face. Con aproximadamente 502,6 millones de parametros (unos 505M contando embeddings), 24 capas, 20 cabezas de atencion, dimension oculta de 1280 y una ventana de contexto de 2048 tokens, se situa en el segmento de modelos pequenos, comparable en escala a la familia GPT-2 large o a Pythia-410M.
 
 El modelo se presenta explicitamente como un checkpoint de verificacion y desarrollo correspondiente al paso 20 de entrenamiento, con pesos no convergidos y comportamiento exploratorio. Esto significa que no es un modelo listo para produccion ni para evaluacion de calidad: su interes es fundamentalmente como artefacto tecnico para inspeccionar el diseno de una arquitectura personalizada (vocabulario de 24.000 tokens, FFN de 5120, atencion causal implementada en codigo propio) y para validar pipelines de carga con codigo remoto.
 
@@ -97,9 +97,9 @@ La diferencia clave de Neora 1.0 Basic frente a estas alternativas no es arquite
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lokesh56/Neora-1.0-Basic
+- Modelo en Hugging Face: https://huggingface.co/Lokesh56/Neora-1.0-Basic
 - Paper: no disponible
-- Repositorio de codigo: no disponible (el modelo incluye codigo remoto dentro del propio repositorio de HuggingFace)
+- Repositorio de codigo: no disponible (el modelo incluye codigo remoto dentro del propio repositorio de Hugging Face)
 - Blog o documentacion adicional: no disponible
 - Demo: no disponible
 - La busqueda web realizada no ha devuelto ningun resultado relevante sobre el modelo; los enlaces obtenidos corresponden a articulos sobre indices bursatiles chinos y no guardan relacion con Neora 1.0 Basic.

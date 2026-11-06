@@ -80,7 +80,7 @@ La diferencia clave de esta versión es la re-cuantización de la capa MLP a 3 b
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/francip/qwen38-mtp-head-q2-q4-mlp3-v1
+- Hugging Face: https://huggingface.co/francip/qwen38-mtp-head-q2-q4-mlp3-v1
 - GitHub (benchmarks MTP): https://github.com/sudoingX/qwen38-mtp
 - GitHub (benchmarks Strix Halo): https://github.com/MikeVeerman/qwen38-27-Strix-Halo-bench
 - Cabeza MTP relacionada: https://huggingface.co/morgan/qwen38-27b-mtp-dev40-cut12-q4-g64-q2-rerank

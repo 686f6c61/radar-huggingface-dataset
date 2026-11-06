@@ -85,9 +85,9 @@ Observaciones del autor: Q3_K y F16 obtienen practicamente el mismo resultado; l
 
 | Modelo | Parametros | Contexto / entrada | CER % (banco del autor) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Parakeet Ultra 0.6B Q3_K (este repo) | 0,6 B | audio WAV 16 kHz mono | 0,89 | CC-BY-4.0 | HuggingFace (ggml) |
-| Parakeet TDT 0.6B v3 Q3_K | 0,6 B | audio WAV 16 kHz mono | 1,10 | CC-BY-4.0 | HuggingFace (ggml-org/parakeet-GGUF) |
-| Whisper large-v3 french distil Q5_0 | no disponible | audio WAV 16 kHz mono | 1,28 | no disponible en la informacion | HuggingFace (whisper.cpp) |
+| Parakeet Ultra 0.6B Q3_K (este repo) | 0,6 B | audio WAV 16 kHz mono | 0,89 | CC-BY-4.0 | Hugging Face (ggml) |
+| Parakeet TDT 0.6B v3 Q3_K | 0,6 B | audio WAV 16 kHz mono | 1,10 | CC-BY-4.0 | Hugging Face (ggml-org/parakeet-GGUF) |
+| Whisper large-v3 french distil Q5_0 | no disponible | audio WAV 16 kHz mono | 1,28 | no disponible en la informacion | Hugging Face (whisper.cpp) |
 
 ## Limitaciones y advertencias
 
@@ -102,7 +102,7 @@ Observaciones del autor: Q3_K y F16 obtienen practicamente el mismo resultado; l
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LaToucheCarre/LaToucheCarre-Voix-XS-Parakeet-Ultra-0.6B-Q3_K-GGML
+- Repositorio Hugging Face: https://huggingface.co/LaToucheCarre/LaToucheCarre-Voix-XS-Parakeet-Ultra-0.6B-Q3_K-GGML
 - Modelo base (Moondream): https://huggingface.co/moondream/parakeet-ultra
 - Modelo original (NVIDIA): https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Plantilla ggml oficial: https://huggingface.co/ggml-org/parakeet-GGUF

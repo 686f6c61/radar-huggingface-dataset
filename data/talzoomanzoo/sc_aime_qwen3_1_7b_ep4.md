@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SC_aime_qwen3_1_7b_ep4 es un checkpoint de pesos completos de tipo merged publicado por el usuario talzoomanzoo en HuggingFace. Se construye fusionando el modelo base Qwen/Qwen3-1.7B con el adaptador LoRA del actor empleado en un entrenamiento GRPO sobre el conjunto de problemas matematicos AIME (epoch 4, `global_step_28`). No se trata de un modelo entrenado desde cero, sino de un ajuste fino orientado a razonamiento matematico sobre una base ya existente.
+SC_aime_qwen3_1_7b_ep4 es un checkpoint de pesos completos de tipo merged publicado por el usuario talzoomanzoo en Hugging Face. Se construye fusionando el modelo base Qwen/Qwen3-1.7B con el adaptador LoRA del actor empleado en un entrenamiento GRPO sobre el conjunto de problemas matematicos AIME (epoch 4, `global_step_28`). No se trata de un modelo entrenado desde cero, sino de un ajuste fino orientado a razonamiento matematico sobre una base ya existente.
 
 El modelo cuenta con 1.720.574.976 parametros totales (aproximadamente 1,7 mil millones) y se distribuye en formato safetensors con licencia Apache 2.0, lo que facilita su uso comercial y su integracion en pipelines estandar de `transformers` y text-generation-inference. El repositorio ocupa 3,5 GB, coherente con un checkpoint en precision completa o semi-completa.
 
@@ -76,10 +76,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Metodo de ajuste | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SC_aime_qwen3_1_7b_ep4 | 1,72B | no disponible | GRPO + self-certainty sobre AIME, LoRA fusionado | apache-2.0 | HuggingFace (talzoomanzoo) |
-| Qwen/Qwen3-1.7B | 1,72B (aproximado) | no disponible | Modelo base, sin ajuste especifico | apache-2.0 | HuggingFace (Qwen) |
-| Qwen2.5-1.5B | no disponible | no disponible | Modelo base | no disponible | HuggingFace (Qwen) |
-| Llama-3.2-1B | no disponible | no disponible | Modelo base | no disponible | HuggingFace (Meta) |
+| SC_aime_qwen3_1_7b_ep4 | 1,72B | no disponible | GRPO + self-certainty sobre AIME, LoRA fusionado | apache-2.0 | Hugging Face (talzoomanzoo) |
+| Qwen/Qwen3-1.7B | 1,72B (aproximado) | no disponible | Modelo base, sin ajuste especifico | apache-2.0 | Hugging Face (Qwen) |
+| Qwen2.5-1.5B | no disponible | no disponible | Modelo base | no disponible | Hugging Face (Qwen) |
+| Llama-3.2-1B | no disponible | no disponible | Modelo base | no disponible | Hugging Face (Meta) |
 
 No se dispone de datos de rendimiento comparativos entre estos modelos en la informacion proporcionada, por lo que la comparativa se limita a parametros, licencia y disponibilidad.
 
@@ -98,5 +98,5 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/talzoomanzoo/SC_aime_qwen3_1_7b_ep4
+- Modelo en Hugging Face: https://huggingface.co/talzoomanzoo/SC_aime_qwen3_1_7b_ep4
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B

@@ -94,8 +94,8 @@ La comparativa con alternativas de terceros no esta disponible en la informacion
 
 ## Enlaces
 
-- HuggingFace (BF16): https://huggingface.co/Egzakta/Kvark-Sparkle-1.0-27B
-- HuggingFace (FP8, vLLM): https://huggingface.co/Egzakta/Kvark-Sparkle-1.0-27B-FP8
-- HuggingFace (GGUF, llama.cpp): https://huggingface.co/Egzakta/Kvark-Sparkle-1.0-27B-GGUF
+- Hugging Face (BF16): https://huggingface.co/Egzakta/Kvark-Sparkle-1.0-27B
+- Hugging Face (FP8, vLLM): https://huggingface.co/Egzakta/Kvark-Sparkle-1.0-27B-FP8
+- Hugging Face (GGUF, llama.cpp): https://huggingface.co/Egzakta/Kvark-Sparkle-1.0-27B-GGUF
 - Demo en Spaces: https://huggingface.co/spaces/Egzakta/KVARK-Sparkle-Demo
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B

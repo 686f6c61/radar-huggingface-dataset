@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Yejin Korean 8B v3 DPO MuSR (no-think) es un modelo de lenguaje causal de aproximadamente 7.500 millones de parametros publicado por el usuario cooler8 en HuggingFace. Se trata de un ajuste fino derivado de `cooler8/yejin-korean-8b-v3-dpo-musr`, al que se le aplica una plantilla de chat especifica denominada "no-think", en la que se fuerza un bloque de razonamiento vacio (`<think> </think>`) antes de la respuesta. El objetivo declarado es optimizar el comportamiento del modelo para la evaluacion K-AI Leaderboard evitando el modo de razonamiento explicito.
+Yejin Korean 8B v3 DPO MuSR (no-think) es un modelo de lenguaje causal de aproximadamente 7.500 millones de parametros publicado por el usuario cooler8 en Hugging Face. Se trata de un ajuste fino derivado de `cooler8/yejin-korean-8b-v3-dpo-musr`, al que se le aplica una plantilla de chat especifica denominada "no-think", en la que se fuerza un bloque de razonamiento vacio (`<think> </think>`) antes de la respuesta. El objetivo declarado es optimizar el comportamiento del modelo para la evaluacion K-AI Leaderboard evitando el modo de razonamiento explicito.
 
 El modelo esta orientado a generacion de texto y conversacion en coreano e ingles, y su etiquetado indica que parte de la arquitectura Qwen3, aunque la model card no detalla la arquitectura exacta ni el proceso de entrenamiento. La relevancia actual reside en su enfoque en el ecosistema coreano de modelos abiertos y en su licencia Apache 2.0, que permite uso comercial sin restricciones adicionales.
 
@@ -86,7 +86,7 @@ No se dispone de informacion suficiente sobre modelos comparables en la document
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cooler8/yejin-korean-8b-v3-dpo-musr-nothink
+- Hugging Face: https://huggingface.co/cooler8/yejin-korean-8b-v3-dpo-musr-nothink
 - Modelo base: https://huggingface.co/cooler8/yejin-korean-8b-v3-dpo-musr
 - Paper, blog o repositorio adicional: no disponible en la informacion proporcionada.
 - Resultados de busqueda web relevantes: no disponible (los resultados obtenidos no guardan relacion con el modelo).

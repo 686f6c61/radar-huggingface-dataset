@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`junchu1985/contrastive-weights` es un repositorio de HuggingFace que contiene una implementación propia y mínima de una arquitectura tipo BLIP (Bootstrapping Language-Image Pre-training) orientada a aprendizaje contrastivo. Lo publica el usuario `junchu1985` bajo licencia Apache 2.0. No se trata de un modelo entrenado ni de un release con pesos listos para producción: la propia model card lo describe como un punto de partida reproducible con un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests).
+`junchu1985/contrastive-weights` es un repositorio de Hugging Face que contiene una implementación propia y mínima de una arquitectura tipo BLIP (Bootstrapping Language-Image Pre-training) orientada a aprendizaje contrastivo. Lo publica el usuario `junchu1985` bajo licencia Apache 2.0. No se trata de un modelo entrenado ni de un release con pesos listos para producción: la propia model card lo describe como un punto de partida reproducible con un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests).
 
 El repositorio incluye el código del modelo (`eval.py`), un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` de inicialización. La variante declarada es "giant", con atención lineal, fusión por cross-attention, activación GELU y normalización por batch normalization. El recuento real de parámetros en safetensors es de 49.600, un valor muy alejado de lo que cabría esperar de una variante "giant" de BLIP, lo que refuerza que se trata de un esqueleto de inicialización y no de un modelo funcional a escala.
 
@@ -80,5 +80,5 @@ No se dispone de datos verificados en la información proporcionada para estable
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/junchu1985/contrastive-weights
+- Repositorio en Hugging Face: https://huggingface.co/junchu1985/contrastive-weights
 - No se han encontrado en la búsqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo.

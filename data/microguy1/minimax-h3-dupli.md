@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiniMax H3 es un sistema generativo omnicanal desarrollado por MiniMax (Hailuo AI) que unifica la comprension de contextos multimodales —texto, imagen, video y audio— y genera video con audio estereo nativo sincronizado, en resoluciones de hasta 2K y duraciones de 4 a 15 segundos. La ficha que nos ocupa, `Microguy1/MiniMax-H3-DUPLI`, es un repositorio alojado en HuggingFace por el usuario Microguy1 que replica el modelo card y los pesos del repositorio oficial `MiniMaxAI/MiniMax-H3`; por el nombre ("DUPLI") y por los enlaces internos a la organizacion MiniMax, debe tratarse como una copia no oficial.
+MiniMax H3 es un sistema generativo omnicanal desarrollado por MiniMax (Hailuo AI) que unifica la comprension de contextos multimodales —texto, imagen, video y audio— y genera video con audio estereo nativo sincronizado, en resoluciones de hasta 2K y duraciones de 4 a 15 segundos. La ficha que nos ocupa, `Microguy1/MiniMax-H3-DUPLI`, es un repositorio alojado en Hugging Face por el usuario Microguy1 que replica el modelo card y los pesos del repositorio oficial `MiniMaxAI/MiniMax-H3`; por el nombre ("DUPLI") y por los enlaces internos a la organizacion MiniMax, debe tratarse como una copia no oficial.
 
 El interes tecnico del modelo esta en su diseno orientado a la generalizacion de tareas: en lugar de modelos separados para texto-a-video, imagen-a-video o video-a-audio, H3 afronta todas las combinaciones de entrada y salida con un unico sistema compuesto por tres modulos (H3-Context-IR, H3-Base y H3-Regenerate-2K). El resultado es video con pista de dialogo y audio estereo a 32 kHz generados de forma conjunta, algo que en el ecosistema abierto solo ofrecen unos pocos modelos.
 
@@ -103,7 +103,7 @@ No se han encontrado en la busqueda datos verificables de parametros, contexto o
 - Dependencia de H3-Context-IR: el propio autor advierte que omitir este modulo degrada notablemente la calidad del resultado; no es un modelo que rinda igual con prompts ingenuos.
 - Coste de infraestructura: 353,9 GB de pesos y un segundo pase de regeneracion para 2K implican un coste de computo considerable y requisitos multi-GPU.
 - Sin datos de sesgo: la model card no publica analisis de sesgos demograficos, culturales o de representacion en los datos de entrenamiento.
-- Idiomas del repositorio marcados como "no disponibles" en los metadatos de HuggingFace, pese a que la model card detalla 11 idiomas de dialogo; la discrepancia sugiere metadatos incompletos.
+- Idiomas del repositorio marcados como "no disponibles" en los metadatos de Hugging Face, pese a que la model card detalla 11 idiomas de dialogo; la discrepancia sugiere metadatos incompletos.
 - Huella ambiental y legal del contenido generado: la ausencia de trazabilidad sobre el dataset impide descartar similitudes con material protegido; conviene aplicar marcado de contenido sintetico.
 
 ## Enlaces

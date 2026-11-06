@@ -80,7 +80,7 @@ No se dispone de información sobre modelos comparables (por ejemplo, otros dete
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/shin0412/StreamPETR_nuCarla)
+- [Modelo en Hugging Face](https://huggingface.co/shin0412/StreamPETR_nuCarla)
 - [Dataset nuCarla](https://huggingface.co/datasets/zhijieq/nuCarla)
 - [Repositorio oficial de StreamPETR](https://github.com/exiawsh/StreamPETR)
 - [Paper de StreamPETR (arXiv 2303.11926)](https://arxiv.org/abs/2303.11926)

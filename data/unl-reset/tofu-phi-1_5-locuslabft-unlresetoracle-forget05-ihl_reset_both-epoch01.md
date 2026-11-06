@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget05-ihl_reset_both-epoch01 | 1.418 M | no disponible (heredado de Phi-1.5, 2048) | apache-2.0 | HuggingFace, 0 descargas | Checkpoint de unlearning sobre TOFU |
-| locuslab/tofu_ft_phi-1.5 | 1.418 M | 2048 | no disponible | HuggingFace | Modelo base fine-tuneado sobre TOFU, sin olvido |
-| microsoft/phi-1_5 | 1.300 M | 2048 | MIT (original) | HuggingFace | Modelo original de Microsoft, sin fine-tuning TOFU |
-| Otros checkpoints TOFU (p. ej. variantes de locuslab) | ~1.300-1.418 M | 2048 | variable | HuggingFace | Alternativas de referencia para comparar tecnicas de olvido |
+| unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget05-ihl_reset_both-epoch01 | 1.418 M | no disponible (heredado de Phi-1.5, 2048) | apache-2.0 | Hugging Face, 0 descargas | Checkpoint de unlearning sobre TOFU |
+| locuslab/tofu_ft_phi-1.5 | 1.418 M | 2048 | no disponible | Hugging Face | Modelo base fine-tuneado sobre TOFU, sin olvido |
+| microsoft/phi-1_5 | 1.300 M | 2048 | MIT (original) | Hugging Face | Modelo original de Microsoft, sin fine-tuning TOFU |
+| Otros checkpoints TOFU (p. ej. variantes de locuslab) | ~1.300-1.418 M | 2048 | variable | Hugging Face | Alternativas de referencia para comparar tecnicas de olvido |
 
 ## Limitaciones y advertencias
 
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget05-ihl_reset_both-epoch01
+- Hugging Face: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget05-ihl_reset_both-epoch01
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_phi-1.5
 - Modelo original: https://huggingface.co/microsoft/phi-1_5
 - Dataset TOFU (referencia habitual en la literatura): no disponible en la informacion proporcionada

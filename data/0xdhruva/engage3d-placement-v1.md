@@ -75,7 +75,7 @@ No se dispone de información sobre modelos comparables de corrección de coloca
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| engage3d-placement-v1 | ~420.000 | No aplica | Ver tabla de benchmarks | MIT | HuggingFace |
+| engage3d-placement-v1 | ~420.000 | No aplica | Ver tabla de benchmarks | MIT | Hugging Face |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -91,7 +91,7 @@ No se dispone de información sobre modelos comparables de corrección de coloca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/0xdhruva/engage3d-placement-v1
+- Modelo en Hugging Face: https://huggingface.co/0xdhruva/engage3d-placement-v1
 - Repositorio de código: https://github.com/dhruvinci/engage3d (código en `src/`, experimento en `experiments/E06-placement-model-v1`)
 - Paper de SAM 3D Body citado por el autor: arXiv 2602.15989
 - Dataset Harmony4D (MIT): no disponible enlace directo en la información proporcionada

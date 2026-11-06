@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Khmer_Whisper_Fine_Tune es un ajuste fino del modelo openai/whisper-small para reconocimiento automatico del habla (ASR) en jemer (km). Lo publica el usuario Kassiyakk en HuggingFace y parte del checkpoint Whisper Small de OpenAI, un transformer encoder-decoder de 241,7 millones de parametros especializado en transcripcion de audio. El objetivo es adaptar un modelo multilingue generico al jemer, un idioma con pocos recursos y escasa representacion en los corpus de entrenamiento originales de Whisper.
+Khmer_Whisper_Fine_Tune es un ajuste fino del modelo openai/whisper-small para reconocimiento automatico del habla (ASR) en jemer (km). Lo publica el usuario Kassiyakk en Hugging Face y parte del checkpoint Whisper Small de OpenAI, un transformer encoder-decoder de 241,7 millones de parametros especializado en transcripcion de audio. El objetivo es adaptar un modelo multilingue generico al jemer, un idioma con pocos recursos y escasa representacion en los corpus de entrenamiento originales de Whisper.
 
 El ajuste se ha realizado sobre el dataset seanghay/khmer_mpwt_speech, un corpus de habla jemer, con un total de 1000 pasos de entrenamiento y un learning rate de 1e-05. El modelo se distribuye bajo licencia Apache 2.0 y en formato safetensors, lo que facilita su integracion en pipelines de transformers.
 
@@ -73,10 +73,10 @@ La perdida de validacion se mantuvo practicamente plana entre 2,1370 y 2,1263 a 
 
 | Modelo | Parametros | Contexto | Idioma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kassiyakk/Khmer_Whisper_Fine_Tune | 241,7 M | audio 30 s | jemer | apache-2.0 | HuggingFace |
-| openai/whisper-small | 241,7 M | audio 30 s | multilingue (99 idiomas) | apache-2.0 | HuggingFace |
-| openai/whisper-medium | 769 M | audio 30 s | multilingue | apache-2.0 | HuggingFace |
-| openai/whisper-large-v3 | 1550 M | audio 30 s | multilingue | apache-2.0 | HuggingFace |
+| Kassiyakk/Khmer_Whisper_Fine_Tune | 241,7 M | audio 30 s | jemer | apache-2.0 | Hugging Face |
+| openai/whisper-small | 241,7 M | audio 30 s | multilingue (99 idiomas) | apache-2.0 | Hugging Face |
+| openai/whisper-medium | 769 M | audio 30 s | multilingue | apache-2.0 | Hugging Face |
+| openai/whisper-large-v3 | 1550 M | audio 30 s | multilingue | apache-2.0 | Hugging Face |
 
 El ajuste parte de whisper-small y comparte su tamano y licencia. Frente al modelo base, el fine-tuning deberia mejorar la adaptacion al jemer, pero los resultados declarados no permiten confirmarlo. Los modelos medium y large-v3 ofrecen mayor capacidad y, en general, mejor ASR multilingue, a costa de mas VRAM y latencia. No se dispone de datos comparativos de WER en jemer para estas alternativas en la informacion proporcionada.
 
@@ -94,7 +94,7 @@ El ajuste parte de whisper-small y comparte su tamano y licencia. Frente al mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kassiyakk/Khmer_Whisper_Fine_Tune
+- Modelo en Hugging Face: https://huggingface.co/Kassiyakk/Khmer_Whisper_Fine_Tune
 - Modelo base: https://huggingface.co/openai/whisper-small
 - Dataset de entrenamiento: https://huggingface.co/datasets/seanghay/khmer_mpwt_speech
 - Paper de Whisper (Radford et al., 2022): https://arxiv.org/abs/2212.04356

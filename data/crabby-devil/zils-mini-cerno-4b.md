@@ -6,7 +6,7 @@ zils-mini-cerno-4b es un checkpoint publicado por el usuario crabby-devil que co
 
 El modelo no introduce ninguna innovacion arquitectonica propia: es un ensamblaje de pesos ajenos bajo licencia Apache-2.0. Su proposito declarado es servir como "body" (cuerpo) para el pool de soups `d3-mini` de Zils, un subred de Bittensor (subnet 127) orientado a modelos de decision. La relevancia de esta ficha es, por tanto, acotada: documenta un artefacto de infraestructura para un ecosistema descentralizado concreto, no un modelo de proposito general con evaluacion publica.
 
-La ficha se ha redactado exclusivamente a partir de la model card y los metadatos de HuggingFace. No hay informacion sobre idiomas soportados, datos de entrenamiento, benchmarks ni evaluaciones, por lo que esos apartados se marcan como no disponibles.
+La ficha se ha redactado exclusivamente a partir de la model card y los metadatos de Hugging Face. No hay informacion sobre idiomas soportados, datos de entrenamiento, benchmarks ni evaluaciones, por lo que esos apartados se marcan como no disponibles.
 
 ## Especificaciones tecnicas
 
@@ -32,7 +32,7 @@ No se dispone de informacion sobre el numero de tokens de entrenamiento, composi
 - Generacion de texto y razonamiento: heredadas del modelo de lenguaje cerno-4b-v1.2 (sin detalle publico en la informacion disponible).
 - Procesamiento de imagen y texto (pipeline image-text-to-text): la torre de vision de Qwen3.5-4B habilita entrada multimodal.
 - Integracion como modelo de decision en el ecosistema Zils (Bittensor subnet 127), segun los tags `decision-model`, `zils` y `bittensor`.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que puede servirse mediante la infraestructura de endpoints de HuggingFace.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que puede servirse mediante la infraestructura de endpoints de Hugging Face.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible.
@@ -42,7 +42,7 @@ No se dispone de informacion sobre el numero de tokens de entrenamiento, composi
 
 - Participacion en el pool de soups d3-mini de Zils: el checkpoint esta disenado explicitamente como body para este pool de Bittensor subnet 127; se usaria como componente base en la composicion de modelos del subred.
 - Experimentacion con fusion de torres multimodales: util para investigadores que quieran estudiar el comportamiento de un modelo de lenguaje de texto acoplado a una torre de vision de otro linaje bajo un configuracion Qwen3.5.
-- Servicio de inferencia image-text-to-text via endpoints compatibles: al llevar el tag `endpoints_compatible`, puede desplegarse en la infraestructura de endpoints de HuggingFace para prototipos de descripcion de imagenes o VQA.
+- Servicio de inferencia image-text-to-text via endpoints compatibles: al llevar el tag `endpoints_compatible`, puede desplegarse en la infraestructura de endpoints de Hugging Face para prototipos de descripcion de imagenes o VQA.
 - Base para fine-tuning multimodal: al estar en safetensors y con licencia Apache-2.0, sirve como punto de partida para ajuste supervisado en tareas de vision-lenguaje.
 - Evaluacion comparativa de ensamblajes: permite medir hasta que punto una torre de vision de Qwen3.5 funciona acoplada a un lenguaje distinto, como caso de estudio de compatibilidad entre linajes.
 - Reproducibilidad de artefactos de subred: util para auditores del ecosistema Bittensor que necesiten verificar la procedencia de pesos registrados por una hotkey concreta.
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Cuantizacion a 8 bits: alrededor de 4,5-5 GB de pesos; a 4 bits: alrededor de 2,5-3 GB, mas overhead.
 - GPU recomendadas: A100 o H100 para servicio de produccion; RTX 4090 (24 GB) para fp16 con margen amplio; RTX 3090/4080 (16-24 GB) viables en fp16 o 8 bits.
 - Cabe en GPU de consumo: si, en tarjetas con 8 GB o mas usando cuantizacion de 4-8 bits; en fp16 se recomienda 16 GB o mas.
-- Opciones de despliegue: transformers (libreria declarada), endpoints compatibles de HuggingFace; vLLM, llama.cpp, Ollama o TGI no estan confirmados en la informacion disponible.
+- Opciones de despliegue: transformers (libreria declarada), endpoints compatibles de Hugging Face; vLLM, llama.cpp, Ollama o TGI no estan confirmados en la informacion disponible.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparado entre estos modelos en la inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/crabby-devil/zils-mini-cerno-4b
+- Modelo en Hugging Face: https://huggingface.co/crabby-devil/zils-mini-cerno-4b
 - Modelo base de lenguaje: https://huggingface.co/apertixai/cerno-4b-v1.2
 - Modelo base de vision y config: https://huggingface.co/Qwen/Qwen3.5-4B
 - Revision de cerno usada: e14dec9894c5afb761f90926f1c19b19938a271c

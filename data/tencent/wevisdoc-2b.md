@@ -2,7 +2,7 @@
 
 ## Resumen
 
-WeVisDoc-2B es un modelo de análisis de documentos (*document parsing*) de extremo a extremo desarrollado por Tencent. Su función es convertir la imagen de una página en Markdown estructurado, preservando fórmulas en LaTeX y tablas en HTML. Está afinado a partir de Qwen3-VL-2B-Instruct, por lo que hereda una arquitectura de visión-lenguaje de tipo transformer (etiqueta `qwen3_vl` en HuggingFace) con 2.438.696.960 parámetros totales y un repositorio de 4,9 GB en safetensors.
+WeVisDoc-2B es un modelo de análisis de documentos (*document parsing*) de extremo a extremo desarrollado por Tencent. Su función es convertir la imagen de una página en Markdown estructurado, preservando fórmulas en LaTeX y tablas en HTML. Está afinado a partir de Qwen3-VL-2B-Instruct, por lo que hereda una arquitectura de visión-lenguaje de tipo transformer (etiqueta `qwen3_vl` en Hugging Face) con 2.438.696.960 parámetros totales y un repositorio de 4,9 GB en safetensors.
 
 El modelo forma parte de una familia de dos tamaños: WeVisDoc-2B y WeVisDoc-4B (este último derivado de Qwen3-VL-4B-Instruct). Según la model card, WeVisDoc-4B alcanza 95,38 de Overall en OmniDocBench v1.6 y 75,54 de media en las tres pistas de PureDocBench, mientras que WeVisDoc-2B se queda en 95,06 y 73,86 respectivamente. En ambos casos el resultado supera a los parsers de extremo a extremo comparados en esas tablas.
 
@@ -105,13 +105,13 @@ No se han publicado en la información disponible resultados de MMLU, HumanEval,
 
 | Modelo | Parametros | OmniDocBench v1.6 Overall ↑ | PureDocBench Avg₃ ↑ | Licencia | Disponibilidad |
 |---|---:|---:|---:|---|---|
-| WeVisDoc-2B | 2B | 95,06 | 73,86 | Apache 2.0 | HuggingFace |
-| WeVisDoc-4B | 4B | 95,38 | 75,54 | Apache 2.0 (segun familia) | HuggingFace |
-| HunyuanOCR-1.5 | 1B | 94,74 | 68,79 | no disponible en la informacion proporcionada | HuggingFace |
-| FireRed-OCR | 2B | 93,26 | 65,57 | no disponible en la informacion proporcionada | HuggingFace |
-| Qianfan-OCR | 4B | 93,90 | 51,04 | no disponible en la informacion proporcionada | HuggingFace |
-| dots.ocr | 3B | 90,77 | 64,55 | no disponible en la informacion proporcionada | HuggingFace |
-| olmOCR-7B | 7B | 85,74 | 55,90 | no disponible en la informacion proporcionada | HuggingFace |
+| WeVisDoc-2B | 2B | 95,06 | 73,86 | Apache 2.0 | Hugging Face |
+| WeVisDoc-4B | 4B | 95,38 | 75,54 | Apache 2.0 (segun familia) | Hugging Face |
+| HunyuanOCR-1.5 | 1B | 94,74 | 68,79 | no disponible en la informacion proporcionada | Hugging Face |
+| FireRed-OCR | 2B | 93,26 | 65,57 | no disponible en la informacion proporcionada | Hugging Face |
+| Qianfan-OCR | 4B | 93,90 | 51,04 | no disponible en la informacion proporcionada | Hugging Face |
+| dots.ocr | 3B | 90,77 | 64,55 | no disponible en la informacion proporcionada | Hugging Face |
+| olmOCR-7B | 7B | 85,74 | 55,90 | no disponible en la informacion proporcionada | Hugging Face |
 
 Frente a HunyuanOCR-1.5, el competidor más directo por tamaño, WeVisDoc-2B gana 0,32 puntos en OmniDocBench y 5,07 en PureDocBench, pero duplica el número de parámetros. Frente a FireRed-OCR (2B, mismo rango de tamaño) la ventaja es de 1,80 y 8,29 puntos respectivamente, con contexto y licencia no especificados en la información disponible para el rival.
 
@@ -130,7 +130,7 @@ Frente a HunyuanOCR-1.5, el competidor más directo por tamaño, WeVisDoc-2B gan
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tencent/WeVisDoc-2B
+- Modelo en Hugging Face: https://huggingface.co/tencent/WeVisDoc-2B
 - Modelo hermano WeVisDoc-4B: https://huggingface.co/Tencent/WeVisDoc-4B
 - Modelo base Qwen3-VL-2B-Instruct: https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct
 - Modelo base Qwen3-VL-4B-Instruct: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct

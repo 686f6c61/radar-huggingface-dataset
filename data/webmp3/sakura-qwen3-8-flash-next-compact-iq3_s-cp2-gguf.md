@@ -93,7 +93,7 @@ Diferencias clave: frente al IQ3_S de ISTA, este paquete ahorra unos 15,360 GB a
 
 ## Enlaces
 
-- Repositorio HuggingFace de este paquete: https://huggingface.co/webmp3/Sakura-Qwen3.8-Flash-Next-Compact-IQ3_S-CP2-GGUF
+- Repositorio Hugging Face de este paquete: https://huggingface.co/webmp3/Sakura-Qwen3.8-Flash-Next-Compact-IQ3_S-CP2-GGUF
 - Modelo base Qwen: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Backbone cuantizado ISTA-DASLab GSQ-RCO: https://huggingface.co/ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF (revisión `ed59f92082b1e93c0e96d60a8b11aab089b52f09`)
 - Tabla CP2 y runtime de origen, Sakura K512 CP2: https://huggingface.co/webmp3/Sakura-Qwen3.8-Flash-Next-Compact-47.6GiB-K512-CP2-v1-GGUF (revisión `9b8fef370b812b3fd33787869d553793517245cb`)

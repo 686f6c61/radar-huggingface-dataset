@@ -70,7 +70,7 @@ No hay modelos directamente comparables en la información disponible. Este chec
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/kimi.h015.rl_sharedterm.step_10
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/kimi.h015.rl_sharedterm.step_10
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Índice de AgentPTB (mencionado en la model card): `agentic-ptb/INDEX` (no se ha verificado su URL)
 - Página de Kimi K3 (referencia del driver, no del modelo): https://www.kimi.com/en

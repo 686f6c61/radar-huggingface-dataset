@@ -2,7 +2,7 @@
 
 ## Resumen
 
-hum2song es un codificador de contorno melódico (melody-contour encoder) diseñado para la tarea de *query by humming*: recuperar una canción a partir de tarareo, silbido o canto con letra incorrecta o inventada. Lo desarrolla Luigi Rivolta (usuario `luigir5` en HuggingFace) y se presenta junto al artículo "Whistle and Wrong Lyrics: Synthetic Queries Are Not Enough for Real-World Query-by-Melody" (arXiv, cs.SD, 2026). El problema que aborda es concreto: los sistemas de recuperación musical convencionales dependen de letra, timbre o metadatos, mientras que aquí la única señal de entrada es la melodía cantada o silbada por un usuario real.
+hum2song es un codificador de contorno melódico (melody-contour encoder) diseñado para la tarea de *query by humming*: recuperar una canción a partir de tarareo, silbido o canto con letra incorrecta o inventada. Lo desarrolla Luigi Rivolta (usuario `luigir5` en Hugging Face) y se presenta junto al artículo "Whistle and Wrong Lyrics: Synthetic Queries Are Not Enough for Real-World Query-by-Melody" (arXiv, cs.SD, 2026). El problema que aborda es concreto: los sistemas de recuperación musical convencionales dependen de letra, timbre o metadatos, mientras que aquí la única señal de entrada es la melodía cantada o silbada por un usuario real.
 
 Técnicamente es un modelo pequeño y muy especializado: una torre única de unos 5,2 millones de parámetros que proyecta una pista de tono (F0) normalizada por tonalidad a un vector de 256 dimensiones con norma L2. La comparación entre consulta y melodía vocal de una canción se hace por similitud coseno. La arquitectura combina un front-end convolucional que reduce la tasa de frames a la mitad con un transformer pre-norm de 6 capas (d=256, 4 cabezas) y un *masked attention pool*. La entrada se muestrea a frames de 20 ms y la longitud de secuencia es variable, por lo que no existe una ventana de contexto en el sentido habitual de los LLM.
 
@@ -107,7 +107,7 @@ Ambas variantes comparten arquitectura, licencia CC BY 4.0 y formato de pesos; l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/luigir5/hum2song
+- Modelo en Hugging Face: https://huggingface.co/luigir5/hum2song
 - Código y paquete de entrenamiento: https://github.com/luiginotmario/hum2song
 - Artículo: "Whistle and Wrong Lyrics: Synthetic Queries Are Not Enough for Real-World Query-by-Melody", Luigi Rivolta, 2026, arXiv cs.SD (enlace arXiv no disponible todavía según la model card)
 - Citación BibTeX (incluida en la model card): `@misc{rivolta2026whistle, title = {Whistle and Wrong Lyrics: Synthetic Queries Are Not Enough for Real-World Query-by-Melody}, author = {Rivolta, Luigi}, year = {2026}, note = {arXiv preprint, cs.SD}}`

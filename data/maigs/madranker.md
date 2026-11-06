@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MadRanker es un modelo publicado en HuggingFace por el usuario u organizacion MAIGS bajo el identificador `MAIGS/MadRanker`. En el momento de redactar esta ficha, la model card asociada contiene unicamente la declaracion de licencia (`license: mit`) y carece de cualquier otra documentacion tecnica: no se describen la arquitectura, el tamano, el contexto, los datos de entrenamiento ni los idiomas soportados.
+MadRanker es un modelo publicado en Hugging Face por el usuario u organizacion MAIGS bajo el identificador `MAIGS/MadRanker`. En el momento de redactar esta ficha, la model card asociada contiene unicamente la declaracion de licencia (`license: mit`) y carece de cualquier otra documentacion tecnica: no se describen la arquitectura, el tamano, el contexto, los datos de entrenamiento ni los idiomas soportados.
 
-El repositorio no declara pipeline de HuggingFace, no lista idiomas y registra 0 descargas y 0 likes, con fecha de creacion y ultima actualizacion identicas (2026-10-24T20:20:27Z). Esto es consistente con un repositorio recien creado o con un placeholder sin pesos ni documentacion publica verificable.
+El repositorio no declara pipeline de Hugging Face, no lista idiomas y registra 0 descargas y 0 likes, con fecha de creacion y ultima actualizacion identicas (2026-10-24T20:20:27Z). Esto es consistente con un repositorio recien creado o con un placeholder sin pesos ni documentacion publica verificable.
 
 Por tanto, esta ficha no puede evaluar el modelo en terminos tecnicos: se limita a registrar los metadatos disponibles y a marcar explicitamente como "no disponible" cada especificacion que el autor no ha hecho publica. Cualquier afirmacion sobre capacidades, rendimiento o requisitos de hardware seria especulativa y no debe usarse para tomar decisiones de adopcion.
 
@@ -69,7 +69,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MAIGS/MadRanker | no disponible | no disponible | no disponible | MIT | repositorio HuggingFace sin documentacion tecnica |
+| MAIGS/MadRanker | no disponible | no disponible | no disponible | MIT | repositorio Hugging Face sin documentacion tecnica |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -84,7 +84,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MAIGS/MadRanker
+- Hugging Face: https://huggingface.co/MAIGS/MadRanker
 - Paper: no disponible
 - Blog o anuncio del autor: no disponible
 - Repositorio de codigo: no disponible

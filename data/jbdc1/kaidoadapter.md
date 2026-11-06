@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `jbdc1/kaidoadapter` es un adaptador publicado en HuggingFace por el usuario `jbdc1` (Pham Vu Thai) bajo licencia MIT. La model card asociada no contiene ninguna información técnica más allá de la licencia, y no se han publicado detalles sobre arquitectura, parámetros, entrenamiento o capacidades. El repositorio fue creado y actualizado el 28 de agosto de 2026, aunque no se dispone de métricas de uso (descargas o likes) ni de un pipeline definido.
+El modelo `jbdc1/kaidoadapter` es un adaptador publicado en Hugging Face por el usuario `jbdc1` (Pham Vu Thai) bajo licencia MIT. La model card asociada no contiene ninguna información técnica más allá de la licencia, y no se han publicado detalles sobre arquitectura, parámetros, entrenamiento o capacidades. El repositorio fue creado y actualizado el 28 de agosto de 2026, aunque no se dispone de métricas de uso (descargas o likes) ni de un pipeline definido.
 
 Dada la ausencia total de documentación y de resultados de búsqueda relevantes, este modelo no puede ser evaluado ni recomendado para ningún caso de uso concreto. La ficha que sigue refleja esta falta de información de manera explícita, marcando como "no disponible" todos los campos que no han sido publicados.
 
@@ -53,5 +53,5 @@ No disponible. Al no existir información sobre la arquitectura, el tamaño o el
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/jbdc1/kaidoadapter)
-- [Perfil del autor en HuggingFace](https://huggingface.co/jbdc1/models)
+- [Modelo en Hugging Face](https://huggingface.co/jbdc1/kaidoadapter)
+- [Perfil del autor en Hugging Face](https://huggingface.co/jbdc1/models)

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-omniASR-CTC-300M-v2-Zulu-RDM-ANV es un modelo de reconocimiento automático del habla (ASR) basado en la arquitectura Wav2Vec2 con cabecera CTC, publicado por el usuario csikasote en HuggingFace. Se trata de una conversión a la clase `Wav2Vec2ForCTC` de Transformers del checkpoint fairseq2 `omniASR_CTC_300M_v2`, perteneciente al proyecto OmniLingual de Meta (facebookresearch). El modelo emite logits CTC sobre un vocabulario SentencePiece de 10.288 tokens y, según su model card, puede transcribir voz en varios idiomas.
+omniASR-CTC-300M-v2-Zulu-RDM-ANV es un modelo de reconocimiento automático del habla (ASR) basado en la arquitectura Wav2Vec2 con cabecera CTC, publicado por el usuario csikasote en Hugging Face. Se trata de una conversión a la clase `Wav2Vec2ForCTC` de Transformers del checkpoint fairseq2 `omniASR_CTC_300M_v2`, perteneciente al proyecto OmniLingual de Meta (facebookresearch). El modelo emite logits CTC sobre un vocabulario SentencePiece de 10.288 tokens y, según su model card, puede transcribir voz en varios idiomas.
 
-El modelo cuenta con 325.983.920 parámetros reales (verificados en safetensors), 24 capas de encoder, tamaño oculto de 1.024, 16 cabezas de atención y FFN intermedio de 4.096, lo que lo sitúa en la misma escala que wav2vec2-large. El repositorio ocupa 1,3 GB. Su relevancia radica en que traslada al ecosistema Transformers un checkpoint entrenado originalmente en fairseq2, lo que facilita su uso con las herramientas habituales de HuggingFace (pipeline de ASR, `AutoProcessor`, despliegue con endpoints).
+El modelo cuenta con 325.983.920 parámetros reales (verificados en safetensors), 24 capas de encoder, tamaño oculto de 1.024, 16 cabezas de atención y FFN intermedio de 4.096, lo que lo sitúa en la misma escala que wav2vec2-large. El repositorio ocupa 1,3 GB. Su relevancia radica en que traslada al ecosistema Transformers un checkpoint entrenado originalmente en fairseq2, lo que facilita su uso con las herramientas habituales de Hugging Face (pipeline de ASR, `AutoProcessor`, despliegue con endpoints).
 
 Ahora bien, la propia model card advierte de que la verificación de paridad entre el checkpoint original y la conversión **falló** (mismatch reportado), por lo que el autor recomienda usarlo con cautela. El nombre del repositorio sugiere un enfoque hacia el zulú (Zulu) y una variante de conversión etiquetada como RDM-ANV, pero la model card no confirma ni el idioma objetivo ni el proceso de ajuste, por lo que esos extremos deben tratarse como no verificados.
 
@@ -64,11 +64,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Arquitectura | Contexto/idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| omniASR-CTC-300M-v2-Zulu-RDM-ANV | 325,98 M | Wav2Vec2 + CTC | Multiidioma (no detallado); zulu sugerido por el nombre | no disponible | HuggingFace (transformers) |
-| Wav2Vec2-large-960h (Facebook/Meta) | ~317 M | Wav2Vec2 + CTC | Ingles | MIT/Apache (segun version) | HuggingFace |
-| XLS-R-300M (Meta) | ~315 M | Wav2Vec2 | 128 idiomas (preentrenamiento) | MIT | HuggingFace |
-| MMS-300M (Meta) | ~315 M | Wav2Vec2 + CTC | Mas de 1.000 idiomas | CC-BY-NC 4.0 | HuggingFace |
-| Whisper small (OpenAI) | ~244 M | Encoder-decoder transformer | ~99 idiomas | MIT | HuggingFace |
+| omniASR-CTC-300M-v2-Zulu-RDM-ANV | 325,98 M | Wav2Vec2 + CTC | Multiidioma (no detallado); zulu sugerido por el nombre | no disponible | Hugging Face (transformers) |
+| Wav2Vec2-large-960h (Facebook/Meta) | ~317 M | Wav2Vec2 + CTC | Ingles | MIT/Apache (segun version) | Hugging Face |
+| XLS-R-300M (Meta) | ~315 M | Wav2Vec2 | 128 idiomas (preentrenamiento) | MIT | Hugging Face |
+| MMS-300M (Meta) | ~315 M | Wav2Vec2 + CTC | Mas de 1.000 idiomas | CC-BY-NC 4.0 | Hugging Face |
+| Whisper small (OpenAI) | ~244 M | Encoder-decoder transformer | ~99 idiomas | MIT | Hugging Face |
 
 La comparación se limita a parámetros, arquitectura y licencia, ya que no hay resultados de WER/CER publicados para este modelo que permitan una comparación de rendimiento. Los recuentos de parámetros de los modelos alternativos son aproximados y corresponden a las cifras habitualmente publicadas por sus autores.
 
@@ -85,7 +85,7 @@ La comparación se limita a parámetros, arquitectura y licencia, ya que no hay 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/csikasote/omniASR-CTC-300M-v2-Zulu-RDM-ANV
+- Modelo en Hugging Face: https://huggingface.co/csikasote/omniASR-CTC-300M-v2-Zulu-RDM-ANV
 - Proyecto OmniLingual (Meta): https://github.com/facebookresearch/omnilingual-asr
 - Checkpoint de origen: `omniASR_CTC_300M_v2` (referenciado en la model card; no se proporciona URL directa)
 - No se han encontrado papers, blogs ni demos adicionales en la busqueda web realizada.

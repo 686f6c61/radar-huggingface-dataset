@@ -11,7 +11,7 @@ El modelo usa la arquitectura qwen3_5, es denso (no MoE) y esta pensado para tar
 | Parametro | Valor |
 |---|---|
 | Arquitectura | qwen3_5 (transformer denso) |
-| Parametros totales | 27B (segun denominacion del modelo; el campo de HuggingFace indica 460.730.096, inconsistente con la clase 27B) |
+| Parametros totales | 27B (segun denominacion del modelo; el campo de Hugging Face indica 460.730.096, inconsistente con la clase 27B) |
 | Parametros activos | no aplica (modelo denso) |
 | Longitud de contexto | no disponible en la model card; el modelo base Qwen3.8-27B soporta 262 000 tokens segun fuentes externas |
 | Tipos de cuantizacion | IQ4_XS (con imatrix post-fusion) |
@@ -80,7 +80,7 @@ No se dispone de comparativas con modelos de otros fabricantes (como Llama 3.1 7
 
 - El modelo es un derivado experimental: la combinacion de abliteracion y distill puede producir comportamientos impredecibles en tareas de seguridad o alineacion. La reduccion de rechazos puede implicar que el modelo genere contenido inapropiado si se le solicita explicitamente.
 - No hay evaluacion propia del modelo final: los benchmarks de TeichAI corresponden al adaptador sobre el base original, no a este GGUF. La cuantizacion IQ4_XS y la fusion pueden degradar el rendimiento en tareas complejas.
-- La informacion sobre parametros totales en HuggingFace es inconsistente (460.730.096 frente a la denominacion 27B); se recomienda verificar el modelo antes de usarlo en produccion.
+- La informacion sobre parametros totales en Hugging Face es inconsistente (460.730.096 frente a la denominacion 27B); se recomienda verificar el modelo antes de usarlo en produccion.
 - El soporte multimodal no esta confirmado: aunque el modelo base incluye un encoder de vision, el pipeline declarado es text-generation y no se ha verificado si el GGUF conserva esa capacidad.
 - La longitud de contexto no se especifica en la model card; aunque el base soporta 262k, la cuantizacion y el backend pueden limitar el contexto util en la practica.
 - La licencia Apache 2.0 permite uso comercial, pero el modelo puede tener restricciones adicionales derivadas de los datos de entrenamiento de los componentes (Fable 5, etc.) que no se detallan.
@@ -88,7 +88,7 @@ No se dispone de comparativas con modelos de otros fabricantes (como Llama 3.1 7
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Verkiki/Qwen3.8-27b-Fable5-Distill-Abliterated-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Verkiki/Qwen3.8-27b-Fable5-Distill-Abliterated-GGUF
 - Modelo base abliterated: https://huggingface.co/Blackfrost-AI/Qwen3.8-27B-ABLITERATED-BF16
 - Adaptador LoRA Fable-Distill: https://huggingface.co/TeichAI/Qwen3.8-27B-Fable-Distill-LoRA
 - Modelo Fable-Distill completo: https://huggingface.co/TeichAI/Qwen3.8-27B-Fable-Distill

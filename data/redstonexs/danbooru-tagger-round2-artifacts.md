@@ -53,11 +53,11 @@ No se dispone de información sobre requisitos de hardware. El repositorio no co
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para realizar una comparativa. El repositorio no documenta el modelo subyacente ni sus especificaciones. Existen alternativas conocidas en el ecosistema Danbooru, como `wd-tagger` (WD Tagger) o el espacio HuggingFace `danbooru-tags-tag-v2-with-wd-tagger`, pero no se puede confirmar que este repositorio sea comparable ni que ofrezca un rendimiento similar.
+No se dispone de información suficiente para realizar una comparativa. El repositorio no documenta el modelo subyacente ni sus especificaciones. Existen alternativas conocidas en el ecosistema Danbooru, como `wd-tagger` (WD Tagger) o el espacio Hugging Face `danbooru-tags-tag-v2-with-wd-tagger`, pero no se puede confirmar que este repositorio sea comparable ni que ofrezca un rendimiento similar.
 
 ## Limitaciones y advertencias
 
-- El acceso al repositorio está restringido (gated) y requiere aceptar condiciones adicionales en HuggingFace antes de poder descargar cualquier contenido.
+- El acceso al repositorio está restringido (gated) y requiere aceptar condiciones adicionales en Hugging Face antes de poder descargar cualquier contenido.
 - El repositorio tiene un tamaño de 0.0 GB, lo que sugiere que puede no contener los pesos del modelo, solo artefactos auxiliares o metadatos.
 - No existe documentación técnica, ficha de modelo ni instrucciones de uso publicadas.
 - No se han publicado evaluaciones de sesgos, riesgo de alucinación o limitaciones de contexto.
@@ -66,8 +66,8 @@ No se dispone de información suficiente para realizar una comparativa. El repos
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Redstonexs/danbooru-tagger-round2-artifacts
-- Espacio HuggingFace relacionado con etiquetado Danbooru: https://huggingface.co/spaces/John6666/danbooru-tags-transformer-v2-with-wd-tagger
+- Repositorio Hugging Face: https://huggingface.co/Redstonexs/danbooru-tagger-round2-artifacts
+- Espacio Hugging Face relacionado con etiquetado Danbooru: https://huggingface.co/spaces/John6666/danbooru-tags-transformer-v2-with-wd-tagger
 - Herramienta de exploración de etiquetas Danbooru: https://dbtagger.com/
 - Directorio de herramientas Danbooru para IA de arte (2026): https://civitai.red/articles/27794/the-danbooru-tools-directory-for-ai-art-2026
 - Búsqueda de imágenes Danbooru: https://danbooru.iqdb.org/

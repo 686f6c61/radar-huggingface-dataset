@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `standjones/mirror-saysth-affine-5dtnxamt4t-v9a` es un checkpoint de la serie "Affine SN120" publicado por el usuario `standjones`. Según la model card, se trata de un "challenger" de la arquitectura SN120, concretamente una variante "v9a light LoRA" construida sobre la línea "awesome-v6". El repositorio incluye pesos en formato `safetensors` con un total de 34.660.610.688 parámetros, lo que sugiere una arquitectura de tipo Mixture of Experts (MoE) basada en Qwen3.5 MoE, según los tags de HuggingFace. El pipeline declarado es `image-text-to-text`, lo que indica capacidades multimodales (entrada de imagen y texto, salida de texto).
+El modelo `standjones/mirror-saysth-affine-5dtnxamt4t-v9a` es un checkpoint de la serie "Affine SN120" publicado por el usuario `standjones`. Según la model card, se trata de un "challenger" de la arquitectura SN120, concretamente una variante "v9a light LoRA" construida sobre la línea "awesome-v6". El repositorio incluye pesos en formato `safetensors` con un total de 34.660.610.688 parámetros, lo que sugiere una arquitectura de tipo Mixture of Experts (MoE) basada en Qwen3.5 MoE, según los tags de Hugging Face. El pipeline declarado es `image-text-to-text`, lo que indica capacidades multimodales (entrada de imagen y texto, salida de texto).
 
 La información pública es extremadamente limitada: no se proporcionan detalles sobre el entrenamiento, el dataset, la licencia, los idiomas soportados, ni benchmarks. El repositorio tiene 0 descargas y 0 likes, y la model card apenas contiene una frase descriptiva. Esto sugiere que se trata de un experimento personal o de una publicación preliminar sin documentación oficial. A día de hoy, no es posible evaluar su rendimiento ni sus capacidades reales con los datos disponibles.
 
@@ -21,7 +21,7 @@ La información pública es extremadamente limitada: no se proporcionan detalles
 
 ## Arquitectura y entrenamiento
 
-La arquitectura se infiere únicamente de los tags de HuggingFace: `qwen3_5_moe` y `affine`. El tag `qwen3_5_moe` apunta a una familia de modelos MoE de Qwen, pero no hay confirmación oficial. El término "Affine SN120" sugiere una variante con alguna modificación en las capas de atención o en el mecanismo de mezcla de expertos, aunque no se aporta ningún detalle técnico. La mención a "v9a light LoRA on awesome-v6 lineage" indica que el modelo es un adaptador LoRA ligero aplicado sobre un checkpoint previo llamado "awesome-v6", pero no se especifica qué es ese checkpoint ni qué datos se usaron para el ajuste.
+La arquitectura se infiere únicamente de los tags de Hugging Face: `qwen3_5_moe` y `affine`. El tag `qwen3_5_moe` apunta a una familia de modelos MoE de Qwen, pero no hay confirmación oficial. El término "Affine SN120" sugiere una variante con alguna modificación en las capas de atención o en el mecanismo de mezcla de expertos, aunque no se aporta ningún detalle técnico. La mención a "v9a light LoRA on awesome-v6 lineage" indica que el modelo es un adaptador LoRA ligero aplicado sobre un checkpoint previo llamado "awesome-v6", pero no se especifica qué es ese checkpoint ni qué datos se usaron para el ajuste.
 
 No hay información sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF, DPO o similares. Tampoco se mencionan innovaciones técnicas como decodificación especulativa, atención lineal u otras.
 
@@ -70,7 +70,7 @@ No disponible. No se conocen modelos comparables de la misma familia "Affine SN1
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/standjones/mirror-saysth-affine-5dtnxamt4t-v9a
+- Repositorio Hugging Face: https://huggingface.co/standjones/mirror-saysth-affine-5dtnxamt4t-v9a
 - Repositorio "saysth" (relación no confirmada): https://github.com/Ranzeplay/saysth
 
 No se han encontrado papers, blogs ni demos asociados a este modelo.

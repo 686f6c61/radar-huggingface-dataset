@@ -85,9 +85,9 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks est
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad | Rendimiento documentado |
 |---|---|---|---|---|---|---|
-| `mauromedda/fucina-qwen38-v2` (este) | 27 000 millones (segun nombre del base) | 131 072 tokens en la configuracion medida | NVFP4 + FP8 mixto, `lm_head` U8 | Apache-2.0 | HuggingFace, 0 descargas y 0 likes | 77,42-71,17 tokens/s de decodificacion segun longitud de prompt; 86/100 en tool-eval-bench 2.0.4 |
-| `Qwen/Qwen3.8-27B` (modelo base) | 27 000 millones | no disponible | BF16 sin cuantizar (segun el flujo de calibracion descrito) | Apache-2.0 | HuggingFace | No se reportan en esta ficha; el autor no aporta comparacion directa de calidad |
-| `maurienne-ai/Qwen3.8-27B-DFlash2-NVFP4-RTNcal` (draft) | no disponible | no disponible | NVFP4 (RTN calibrado) | no disponible en esta informacion | HuggingFace, revision fijada | No aplica como modelo autonomo: es el draft de decodificacion especulativa |
+| `mauromedda/fucina-qwen38-v2` (este) | 27 000 millones (segun nombre del base) | 131 072 tokens en la configuracion medida | NVFP4 + FP8 mixto, `lm_head` U8 | Apache-2.0 | Hugging Face, 0 descargas y 0 likes | 77,42-71,17 tokens/s de decodificacion segun longitud de prompt; 86/100 en tool-eval-bench 2.0.4 |
+| `Qwen/Qwen3.8-27B` (modelo base) | 27 000 millones | no disponible | BF16 sin cuantizar (segun el flujo de calibracion descrito) | Apache-2.0 | Hugging Face | No se reportan en esta ficha; el autor no aporta comparacion directa de calidad |
+| `maurienne-ai/Qwen3.8-27B-DFlash2-NVFP4-RTNcal` (draft) | no disponible | no disponible | NVFP4 (RTN calibrado) | no disponible en esta informacion | Hugging Face, revision fijada | No aplica como modelo autonomo: es el draft de decodificacion especulativa |
 | Otras cuantizaciones NVFP4 de `Qwen3.8-27B` | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento del modelo base ni de otras alternativas en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa de calidad.
@@ -111,7 +111,7 @@ No se dispone de datos de rendimiento del modelo base ni de otras alternativas e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mauromedda/fucina-qwen38-v2
+- Modelo en Hugging Face: https://huggingface.co/mauromedda/fucina-qwen38-v2
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Draft de decodificacion especulativa DFlash2: https://huggingface.co/maurienne-ai/Qwen3.8-27B-DFlash2-NVFP4-RTNcal
 - Recibo de repack (Fucina): https://github.com/PRJXAI/fucina/blob/evidence/qwen38-27b-nvfp4-v2-packed-receipt/docs/evidence/qwen38-27b-custom-nvfp4-local-hessian-v2-packed/repack-execute-01.json

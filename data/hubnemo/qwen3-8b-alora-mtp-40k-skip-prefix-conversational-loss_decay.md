@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hubnemo/Qwen3-8B-ALoRA-MTP-40k-skip-prefix-conversational-loss_decay` es un ajuste fino derivado de Qwen3-8B publicado en HuggingFace por el usuario `hubnemo`. El repositorio no incluye documentación real: la model card es la plantilla autogenerada por el Hub y todos los campos de metadatos (licencia, idiomas, pipeline, dataset, hiperparámetros) aparecen como `[More Information Needed]`. Se trata, por tanto, de un checkpoint experimental del que solo disponemos de lo que el propio identificador del repositorio declara.
+`hubnemo/Qwen3-8B-ALoRA-MTP-40k-skip-prefix-conversational-loss_decay` es un ajuste fino derivado de Qwen3-8B publicado en Hugging Face por el usuario `hubnemo`. El repositorio no incluye documentación real: la model card es la plantilla autogenerada por el Hub y todos los campos de metadatos (licencia, idiomas, pipeline, dataset, hiperparámetros) aparecen como `[More Information Needed]`. Se trata, por tanto, de un checkpoint experimental del que solo disponemos de lo que el propio identificador del repositorio declara.
 
 Ese identificador sí es informativo sobre la receta empleada: adaptadores ALoRA (variante de bajo rango con asignación adaptativa de presupuesto por módulo), entrenamiento con MTP (*multi-token prediction*, predcción de varios tokens por paso al estilo de DeepSeek-V3), extensión de contexto hasta 40.000 tokens, una estrategia de *skip-prefix* (probablemente exclusión del prefijo del prompt en el cálculo de la pérdida) y un esquema de decaimiento de la pérdida orientado a turnos conversacionales. Todo ello son inferencias a partir del nombre, no datos confirmados por el autor.
 
@@ -96,7 +96,7 @@ Frente a las tres alternativas, este checkpoint carece de licencia declarada, de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hubnemo/Qwen3-8B-ALoRA-MTP-40k-skip-prefix-conversational-loss_decay
+- Modelo en Hugging Face: https://huggingface.co/hubnemo/Qwen3-8B-ALoRA-MTP-40k-skip-prefix-conversational-loss_decay
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Referencia citada en las etiquetas del repositorio (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental del aprendizaje automático mencionada en la model card: https://mlco2.github.io/impact#compute

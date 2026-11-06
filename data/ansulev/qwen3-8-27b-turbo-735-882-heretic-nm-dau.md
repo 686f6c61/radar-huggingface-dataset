@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-TURBO-735-882-Heretic-NM-DAU es un fine-tune del modelo base Qwen/Qwen3.8-27B publicado por el usuario ansulev en HuggingFace. Se trata de una variante derivada del trabajo de DavidAU (el ecosistema "TURBO / Cold Fusion / Heretic"), que aplica un pipeline de ajuste multietapa sobre el modelo Qwen 3.8 de 27B parámetros, con un proceso de "des-censura" (heretic) y técnicas que el autor denomina "Cold Fusion" y "GAIN Training". El resultado es un modelo multimodal de tipo image-text-to-text, orientado a conversación y a usos generales, con licencia Apache 2.0.
+Qwen3.8-27B-TURBO-735-882-Heretic-NM-DAU es un fine-tune del modelo base Qwen/Qwen3.8-27B publicado por el usuario ansulev en Hugging Face. Se trata de una variante derivada del trabajo de DavidAU (el ecosistema "TURBO / Cold Fusion / Heretic"), que aplica un pipeline de ajuste multietapa sobre el modelo Qwen 3.8 de 27B parámetros, con un proceso de "des-censura" (heretic) y técnicas que el autor denomina "Cold Fusion" y "GAIN Training". El resultado es un modelo multimodal de tipo image-text-to-text, orientado a conversación y a usos generales, con licencia Apache 2.0.
 
 El modelo cuenta con 27.781.427.952 parámetros totales según los pesos en safetensors, y un repositorio de 55,6 GB, lo que es coherente con pesos en precisión completa o semi-precisión (bf16/fp16). La arquitectura subyacente es la del Qwen 3.8 base (transformer denso, no MoE según los datos disponibles), con soporte de entrada de imagen y texto. El pipeline declarado es image-text-to-text, lo que indica capacidades multimodales de entrada visual.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3.8-27B-TURBO-735-882-Heretic-NM-DAU (este) | 27,78 B | no disponible | Apache 2.0 | HuggingFace, safetensors |
-| Qwen/Qwen3.8-27B (base) | 27 B (aprox.) | no disponible | no disponible en la información | HuggingFace |
-| Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored (hermano) | 27 B (aprox.) | no disponible | no disponible | HuggingFace, GGUF |
-| Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic (hermano) | 27 B (aprox.) | no disponible | no disponible | HuggingFace, GGUF |
+| Qwen3.8-27B-TURBO-735-882-Heretic-NM-DAU (este) | 27,78 B | no disponible | Apache 2.0 | Hugging Face, safetensors |
+| Qwen/Qwen3.8-27B (base) | 27 B (aprox.) | no disponible | no disponible en la información | Hugging Face |
+| Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored (hermano) | 27 B (aprox.) | no disponible | no disponible | Hugging Face, GGUF |
+| Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic (hermano) | 27 B (aprox.) | no disponible | no disponible | Hugging Face, GGUF |
 
 No se dispone de datos de rendimiento comparativo verificables entre estas variantes; la model card afirma que los modelos del ecosistema "exceden el rendimiento de todos los modelos Qwen 27B", pero no aporta cifras en la información proporcionada.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo verificables entre estas varia
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ansulev/Qwen3.8-27B-TURBO-735-882-Heretic-NM-DAU
+- Repositorio Hugging Face: https://huggingface.co/ansulev/Qwen3.8-27B-TURBO-735-882-Heretic-NM-DAU
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - GGUF release #1 (ecosistema DavidAU): https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF
 - Release #2 (TWIN TURBO, GGUF): https://huggingface.co/DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-NM-DAU-NEO-MTP-GGUF

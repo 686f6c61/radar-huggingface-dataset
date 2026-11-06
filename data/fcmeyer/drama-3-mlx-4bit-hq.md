@@ -76,9 +76,9 @@ Notas metodológicas aportadas en la model card: la KL se mide en modo teacher-f
 
 | Modelo | Cuantizacion | Memoria pico (GB) | RTF | KL principal | WER/CER | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Este repositorio | 4-bit en expertos, resto bf16 | 38,6 | 2,26× | 0,0190 | 4,0 % | fish-audio-community-license-v1.0 | HuggingFace (0 descargas, 0 likes) |
-| mlx-community/fish-audio-drama-3-4bit | 4-bit en expertos, resto 8-bit | 36,3 | 3,02× | 0,0204 | 3,5 % | derivada del modelo base | HuggingFace, mismo modelo base |
-| Nav8ha/drama-3-mlx-mixed-3bit | 3-bit mixto | 32,2 | 3,11× | 0,0660 | 3,0 % | derivada del modelo base | HuggingFace, mismo modelo base |
+| Este repositorio | 4-bit en expertos, resto bf16 | 38,6 | 2,26× | 0,0190 | 4,0 % | fish-audio-community-license-v1.0 | Hugging Face (0 descargas, 0 likes) |
+| mlx-community/fish-audio-drama-3-4bit | 4-bit en expertos, resto 8-bit | 36,3 | 3,02× | 0,0204 | 3,5 % | derivada del modelo base | Hugging Face, mismo modelo base |
+| Nav8ha/drama-3-mlx-mixed-3bit | 3-bit mixto | 32,2 | 3,11× | 0,0660 | 3,0 % | derivada del modelo base | Hugging Face, mismo modelo base |
 | MLX bf16 (referencia) | Sin cuantizar | 84,9 | 1,99× | 0,0000 | 3,9 % | fish-audio-community-license-v1.0 | Conversión de referencia en MLX |
 
 La comparación con alternativas de otras familias de TTS (por ejemplo, modelos de síntesis de voz con licencias permisivas) no está disponible en la información proporcionada.
@@ -99,7 +99,7 @@ La comparación con alternativas de otras familias de TTS (por ejemplo, modelos 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/fcmeyer/drama-3-MLX-4bit-HQ
+- Repositorio Hugging Face: https://huggingface.co/fcmeyer/drama-3-MLX-4bit-HQ
 - Modelo base: https://huggingface.co/fishaudio/drama-3
 - Librería mlx-audio: https://github.com/Blaizzy/mlx-audio
 - Commit de mlx-audio fijado por el autor: https://github.com/Blaizzy/mlx-audio/tree/dad2087f790dfe96b07d5aac1405db4b578b411f

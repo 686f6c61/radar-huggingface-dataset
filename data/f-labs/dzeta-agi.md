@@ -19,7 +19,7 @@ El modelo se entrenó en un régimen de bajos datos, sobre el dataset TinyStorie
 | Tipos de cuantizacion | int16 (pesos de osciladores) |
 | Idiomas soportados | Inglés |
 | Licencia | MIT |
-| Formato de pesos | No disponible (implementación en C++20 puro; el repositorio de HuggingFace ocupa 0.3 GB) |
+| Formato de pesos | No disponible (implementación en C++20 puro; el repositorio de Hugging Face ocupa 0.3 GB) |
 
 ## Arquitectura y entrenamiento
 
@@ -77,7 +77,7 @@ Los autores señalan que, en el régimen de 1.000 historias, DZETA converge a un
 
 | Modelo | Arquitectura | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DZETA | Continuous Wave Memory (SSM) | 4.305 osciladores (335 MB) | Infinito / O(1) | MIT | Repo GitHub + HuggingFace |
+| DZETA | Continuous Wave Memory (SSM) | 4.305 osciladores (335 MB) | Infinito / O(1) | MIT | Repo GitHub + Hugging Face |
 | nanoGPT (baseline) | Transformer estándar | 2 millones | Limitado por KV-cache | No especificada en la comparativa | Código abierto, GPU requerida |
 | Markov Trigram | N-Gram graph matrix | Aprox. 1.2 MB | Fijo | No especificada | Código sencillo, sin aprendizaje |
 
@@ -96,7 +96,7 @@ No se han publicado datos comparables con modelos SSM modernos como Mamba o RWKV
 
 ## Enlaces
 
-- Repositorio en HuggingFace: `https://huggingface.co/F-Labs/dzeta-agi`
+- Repositorio en Hugging Face: `https://huggingface.co/F-Labs/dzeta-agi`
 - Repositorio GitHub: `https://github.com/dsadawq3/dzeta-agi`
 - Dataset TinyStories: `https://huggingface.co/datasets/roneneldan/TinyStories`
 - Dataset Databricks Dolly-15k: `https://huggingface.co/datasets/databricks/databricks-dolly-15k`

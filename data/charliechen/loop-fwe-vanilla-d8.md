@@ -2,7 +2,7 @@
 
 ## Resumen
 
-loop-fwe-vanilla-d8 es un modelo de lenguaje base (no ajustado por instrucciones) publicado por el autor CharlieChen en HuggingFace, asociado al articulo "How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents". Se trata del punto de control "Vanilla d8" de una familia de transformers con recursion (looped transformer) entrenada sobre el corpus FineWeb-Edu, y su proposito es servir como referencia experimental para estudiar como la profundidad, la recursion y los operadores de frontera afectan a los exponentes de escalado.
+loop-fwe-vanilla-d8 es un modelo de lenguaje base (no ajustado por instrucciones) publicado por el autor CharlieChen en Hugging Face, asociado al articulo "How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents". Se trata del punto de control "Vanilla d8" de una familia de transformers con recursion (looped transformer) entrenada sobre el corpus FineWeb-Edu, y su proposito es servir como referencia experimental para estudiar como la profundidad, la recursion y los operadores de frontera afectan a los exponentes de escalado.
 
 Tecnicamente es un transformer de tipo GPT entrenado desde cero, con 205.783.040 parametros almacenados en FP32, anchura de 1024, 8 cabezas de atencion, vocabulario GPT-2 de 50.257 tokens (ampliado a 50.304 filas en el modelo) y una longitud de contexto de 2.048 tokens. La coordenada de profundidad es d8 y la recurrencia final del nucleo es 1, un detalle relevante porque en esta familia de modelos la coordenada de la escalera de escalado puede no coincidir con el numero de bloques Transformer realmente ejecutados.
 
@@ -30,7 +30,7 @@ Su relevancia es fundamentalmente de investigacion: es un artefacto reproducible
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer autorregresivo de tipo GPT con mecanismo de recursion: la coordenada de profundidad d8 pertenece a la escalera de escalado del articulo y puede diferir del numero de bloques efectivamente ejecutados, mientras que la recurrencia final del nucleo se fija en 1. El modelo tiene una anchura de 1.024, 8 cabezas de atencion y un vocabulario GPT-2 tokenizado con tiktoken. La implementacion es la clase `TransformerGPT` del repositorio del paper, por lo que el checkpoint no es cargable con `AutoModel` de HuggingFace Transformers.
+La arquitectura es un transformer autorregresivo de tipo GPT con mecanismo de recursion: la coordenada de profundidad d8 pertenece a la escalera de escalado del articulo y puede diferir del numero de bloques efectivamente ejecutados, mientras que la recurrencia final del nucleo se fija en 1. El modelo tiene una anchura de 1.024, 8 cabezas de atencion y un vocabulario GPT-2 tokenizado con tiktoken. La implementacion es la clase `TransformerGPT` del repositorio del paper, por lo que el checkpoint no es cargable con `AutoModel` de Hugging Face Transformers.
 
 El entrenamiento se realizo sobre el corpus FineWeb-Edu y el articulo reporta el uso de GPUs H100 con FlashAttention-3 y autocast en bfloat16. La validacion de preentrenamiento alcanza una NLL de 3,10482868 nats/token. No se especifica en la informacion disponible el numero total de tokens de entrenamiento, la composicion detallada del dataset ni si hubo fases de RLHF o DPO; dado que se trata de un modelo base, no consta ningun ajuste de alineacion. Tampoco se incluye el estado del optimizador en el checkpoint publico, solo los tensores del modelo y la recurrencia final de evaluacion.
 
@@ -83,10 +83,10 @@ No se dispone de resultados comparativos directos publicados para este checkpoin
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| loop-fwe-vanilla-d8 | 205,8 M | 2.048 | No disponible | HuggingFace, formato `.pt` propio |
-| GPT-2 (OpenAI) | 124 M / 355 M | 1.024 | Licencia MIT modificada | HuggingFace, safetensors/PyTorch, integrado en Transformers |
-| Pythia-160M (EleutherAI) | 160 M | 2.048 | Apache 2.0 | HuggingFace, integrado en Transformers |
-| SmolLM-135M (HuggingFace) | 135 M | 2.048 | Apache 2.0 | HuggingFace, integrado en Transformers |
+| loop-fwe-vanilla-d8 | 205,8 M | 2.048 | No disponible | Hugging Face, formato `.pt` propio |
+| GPT-2 (OpenAI) | 124 M / 355 M | 1.024 | Licencia MIT modificada | Hugging Face, safetensors/PyTorch, integrado en Transformers |
+| Pythia-160M (EleutherAI) | 160 M | 2.048 | Apache 2.0 | Hugging Face, integrado en Transformers |
+| SmolLM-135M (Hugging Face) | 135 M | 2.048 | Apache 2.0 | Hugging Face, integrado en Transformers |
 
 La diferencia principal no esta en el rendimiento, que no es comparable con los datos disponibles, sino en la finalidad: los tres alternativos son modelos generativos de uso general con licencia clara e integracion estandar, mientras que loop-fwe-vanilla-d8 es un artefacto de investigacion sobre escalado y recursion, con licencia sin declarar y sin soporte en herramientas convencionales.
 
@@ -96,7 +96,7 @@ La diferencia principal no esta en el rendimiento, que no es comparable con los 
 - Solo soporta ingles; no hay evidencia de capacidades multilingues.
 - Riesgo de alucinacion alto en contextos de uso abierto, propio de un modelo preentrenado de 205 M de parametros con una NLL de validacion de 3,10 nats/token.
 - La licencia no esta declarada, lo que impide asumir permisos de uso comercial; conviene contactar con el autor antes de cualquier explotacion en produccion.
-- El checkpoint no es un artefacto de HuggingFace Transformers: no funciona con `AutoModel`, `pipeline` ni con servidores de inferencia estandar como vLLM, TGI, Ollama o llama.cpp.
+- El checkpoint no es un artefacto de Hugging Face Transformers: no funciona con `AutoModel`, `pipeline` ni con servidores de inferencia estandar como vLLM, TGI, Ollama o llama.cpp.
 - No se incluye el estado del optimizador, por lo que reanudar el preentrenamiento exactamente desde el punto de publicacion no es posible.
 - Solo se distribuyen pesos en FP32: no hay versiones cuantizadas oficiales y cualquier cuantizacion corre por cuenta del usuario.
 - La ventana de contexto esta limitada a 2.048 tokens, insuficiente para tareas de contexto largo.
@@ -106,7 +106,7 @@ La diferencia principal no esta en el rendimiento, que no es comparable con los 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CharlieChen/loop-fwe-vanilla-d8
+- Modelo en Hugging Face: https://huggingface.co/CharlieChen/loop-fwe-vanilla-d8
 - Codigo del paper (repositorio `loop`): https://github.com/cue-engineering/loop
 - Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Articulo de referencia: "How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents" (no se ha encontrado enlace directo en la informacion disponible)

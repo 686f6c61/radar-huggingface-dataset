@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Evaluacion publicada |
 |---|---|---|---|---|---|
-| `joshycodes/llama-3.1-8b-fve-flourauthanchor-s0` | 8,03 B | No confirmado en el checkpoint; 128.000 en el base | research-only (`other`) | Pesos safetensors en HuggingFace, 0 descargas | Ninguna |
+| `joshycodes/llama-3.1-8b-fve-flourauthanchor-s0` | 8,03 B | No confirmado en el checkpoint; 128.000 en el base | research-only (`other`) | Pesos safetensors en Hugging Face, 0 descargas | Ninguna |
 | `meta-llama/Llama-3.1-8B-Instruct` (modelo base) | 8,03 B | 128.000 tokens | Llama 3.1 Community License | Pesos safetensors; ampliamente desplegado | Sí, publicados por Meta |
 | `Qwen2.5-7B-Instruct` | ~7,6 B | 128.000 tokens (ampliado) | Apache 2.0 | Pesos safetensors y múltiples cuantizaciones | Sí, publicados por Alibaba |
 | `Mistral-7B-Instruct-v0.3` | ~7,25 B | 32.768 tokens | Apache 2.0 | Pesos safetensors y GGUF | Sí, publicados por Mistral |
@@ -93,7 +93,7 @@ Nota: los datos de los modelos comparativos provienen de su documentación públ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/llama-3.1-8b-fve-flourauthanchor-s0
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/llama-3.1-8b-fve-flourauthanchor-s0
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Modelo base (variante 8B sin Instruct): https://huggingface.co/meta-llama/Llama-3.1-8B
 - Repositorio oficial de Llama 3 en GitHub: https://github.com/meta-llama/llama3

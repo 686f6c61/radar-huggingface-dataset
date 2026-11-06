@@ -82,8 +82,8 @@ La comparativa es orientativa; no se han verificado rendimientos relativos.
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/Ppeerapon/MiLMMT-46-4B-v1.0-EXL3-4.0bpw
-- Modelo base en HuggingFace: https://huggingface.co/xiaomi-research/MiLMMT-46-4B-v1.0
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/Ppeerapon/MiLMMT-46-4B-v1.0-EXL3-4.0bpw
+- Modelo base en Hugging Face: https://huggingface.co/xiaomi-research/MiLMMT-46-4B-v1.0
 - Modelo preentrenado: https://huggingface.co/xiaomi-research/MiLMMT-46-4B-Pretrain
 - Repositorio GitHub de Xiaomi: https://github.com/xiaomi-research/gemmax
 - Paper v1.0 (arXiv 2608.10812): https://arxiv.org/abs/2608.10812

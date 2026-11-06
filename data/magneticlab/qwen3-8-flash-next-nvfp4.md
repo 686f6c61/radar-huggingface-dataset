@@ -91,7 +91,7 @@ La versión de MagneticLab se distingue por incluir la tabla PLE cuantizada en u
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/MagneticLab/Qwen3.8-Flash-Next-NVFP4
+- Repositorio Hugging Face: https://huggingface.co/MagneticLab/Qwen3.8-Flash-Next-NVFP4
 - Modelo base Qwen3.8-Flash-Next: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio GitHub del modelo base: https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - Repositorio GitHub de despliegue dual DGX Spark (MiaAI-Lab): https://github.com/MiaAI-Lab/Qwen3.8-Flash-Next-Dual-DGX-Sparks

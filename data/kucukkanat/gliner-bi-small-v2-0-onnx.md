@@ -80,8 +80,8 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni benchmarks equivalen
 
 | Modelo | Parámetros | Contexto | F1 de entidad | Licencia | Formato | Disponibilidad |
 |---|---:|---|---:|---|---|---|
-| Este ONNX | 108 M | no disponible | 0,813 fp32 / 0,814 int8 | Apache-2.0 | ONNX | HuggingFace, repositorio de 0,5 GB |
-| Base PyTorch | 108 M | no disponible | 0,813 | Apache-2.0 | PyTorch | HuggingFace |
+| Este ONNX | 108 M | no disponible | 0,813 fp32 / 0,814 int8 | Apache-2.0 | ONNX | Hugging Face, repositorio de 0,5 GB |
+| Base PyTorch | 108 M | no disponible | 0,813 | Apache-2.0 | PyTorch | Hugging Face |
 | Otras variantes GLiNER | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible en la información proporcionada |
 
 No se han proporcionado datos de otras alternativas comparables, como GLiNER de mayor tamaño u otros modelos de NER zero-shot, así que no se comparan cifras que no estén en la información. La comparación directa con el modelo base muestra que la exportación fp32 conserva el F1 y la int8 cambia 12 entidades en 40 textos.
@@ -103,7 +103,7 @@ No se han proporcionado datos de otras alternativas comparables, como GLiNER de 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/kucukkanat/gliner-bi-small-v2.0-onnx)
+- [Modelo en Hugging Face](https://huggingface.co/kucukkanat/gliner-bi-small-v2.0-onnx)
 - [Modelo base knowledgator/gliner-bi-small-v2.0](https://huggingface.co/knowledgator/gliner-bi-small-v2.0)
 - [Encoder de texto ettin-encoder-68m](https://huggingface.co/jhu-clsp/ettin-encoder-68m)
 - [Encoder de etiquetas all-MiniLM-L12-v2](https://huggingface.co/sentence-transformers/all-MiniLM-L12-v2)

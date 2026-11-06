@@ -4,7 +4,7 @@
 
 ## Resumen
 
-El artefacto identificado como `scientist-272/LDPlayer-4-Android-Emulator` es un repositorio alojado en HuggingFace que, por su nomenclatura, apunta a una distribucion del emulador de Android LDPlayer en su version 4, y no a un modelo de inteligencia artificial. No declara pipeline, licencia, idiomas ni arquitectura alguna, y sus unicas etiquetas son `region:us`. El repositorio tiene un tamano de 0,5 GB, cero descargas y un unico "like", lo que es coherente con un artefacto subido de forma aislada y sin difusion.
+El artefacto identificado como `scientist-272/LDPlayer-4-Android-Emulator` es un repositorio alojado en Hugging Face que, por su nomenclatura, apunta a una distribucion del emulador de Android LDPlayer en su version 4, y no a un modelo de inteligencia artificial. No declara pipeline, licencia, idiomas ni arquitectura alguna, y sus unicas etiquetas son `region:us`. El repositorio tiene un tamano de 0,5 GB, cero descargas y un unico "like", lo que es coherente con un artefacto subido de forma aislada y sin difusion.
 
 Desde el punto de vista de evaluacion de modelos, este repositorio no es utilizable como modelo de lenguaje, vision o multimodal: no contiene pesos, tokenizador, configuracion de arquitectura ni ficha tecnica de entrenamiento. La informacion disponible se limita a metadatos de la plataforma (autor, fechas, tamano y etiquetas), de modo que cualquier dato sobre parametros, contexto, cuantizacion o rendimiento debe considerarse no disponible.
 
@@ -94,7 +94,7 @@ No disponible. No existe una categoria de modelos comparable, dado que el artefa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/scientist-272/LDPlayer-4-Android-Emulator
+- Repositorio en Hugging Face: https://huggingface.co/scientist-272/LDPlayer-4-Android-Emulator
 - Paper: no disponible.
 - Blog o memoria tecnica: no disponible.
 - Repositorio de codigo: no disponible.

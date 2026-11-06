@@ -76,8 +76,8 @@ No se han publicado en la informacion disponible resultados comparativos de este
 
 | Modelo | Parametros | Contexto texto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sea-clip-tiny-abl-sea-only | 46,11 M | 77 tokens | en, id, jv, su, ms, th, vi, my | MIT | HuggingFace, vía open_clip |
-| sea-clip-tiny (modelo principal del artículo) | misma arquitectura (misma configuracion, segun la model card) | 77 tokens | no disponible en la informacion | no disponible en la informacion | HuggingFace |
+| sea-clip-tiny-abl-sea-only | 46,11 M | 77 tokens | en, id, jv, su, ms, th, vi, my | MIT | Hugging Face, vía open_clip |
+| sea-clip-tiny (modelo principal del artículo) | misma arquitectura (misma configuracion, segun la model card) | 77 tokens | no disponible en la informacion | no disponible en la informacion | Hugging Face |
 | MetaCLIP2-ViT-B-16-worldwide | no disponible en la informacion | no disponible en la informacion | no disponible en la informacion | no disponible en la informacion | utilizado como teacher de este checkpoint |
 
 No se dispone de cifras de rendimiento de los modelos alternativos en la informacion proporcionada, por lo que no es posible establecer una comparación cuantitativa.
@@ -97,9 +97,9 @@ No se dispone de cifras de rendimiento de los modelos alternativos en la informa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fassabilf/sea-clip-tiny-abl-sea-only
+- Modelo en Hugging Face: https://huggingface.co/fassabilf/sea-clip-tiny-abl-sea-only
 - Modelo principal del artículo: https://huggingface.co/fassabilf/sea-clip-tiny
 - Código de entrenamiento y evaluación: https://github.com/fassabilf/sea-clip-tiny
 - Cita del artículo (ACCV 2026): SEA-CLIP-Tiny: Efficient Multilingual Text-Vision Embedding for Southeast Asian Languages
-- Configuración exacta de entrenamiento de este checkpoint: archivo `params.txt` dentro del repositorio de HuggingFace
+- Configuración exacta de entrenamiento de este checkpoint: archivo `params.txt` dentro del repositorio de Hugging Face
 - No se han encontrado en la busqueda web otros enlaces relevantes (papers, blogs o demos) asociados a este modelo.

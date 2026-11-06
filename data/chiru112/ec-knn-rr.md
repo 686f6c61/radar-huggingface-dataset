@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ec-knn-rr` es un artefacto publicado en HuggingFace por el usuario chiru112 orientado a la prediccion de numeros EC (Enzyme Commission) para la tarea de clasificacion enzimatica denominada "Leak CURBER". No se trata de un modelo de lenguaje ni de una red neuronal profunda en el sentido habitual: la model card describe un pipeline de recuperacion basado en busqueda de similitud con MMseqs2 sobre un indice preconstruido del conjunto de entrenamiento, seguido de una fase de reordenacion de candidatos mediante un pequeno re-ranker de gradient boosting (cuando se incluye) o, en su defecto, una votacion ponderada por bit-score.
+`ec-knn-rr` es un artefacto publicado en Hugging Face por el usuario chiru112 orientado a la prediccion de numeros EC (Enzyme Commission) para la tarea de clasificacion enzimatica denominada "Leak CURBER". No se trata de un modelo de lenguaje ni de una red neuronal profunda en el sentido habitual: la model card describe un pipeline de recuperacion basado en busqueda de similitud con MMseqs2 sobre un indice preconstruido del conjunto de entrenamiento, seguido de una fase de reordenacion de candidatos mediante un pequeno re-ranker de gradient boosting (cuando se incluye) o, en su defecto, una votacion ponderada por bit-score.
 
 El sistema esta disenado para ejecutarse exclusivamente en CPU (`CPU-only`), lo que lo hace util en entornos sin GPU y en pipelines de anotacion a gran escala donde el coste por inferencia es un factor critico. El repositorio ocupa 1,6 GB, coherente con un indice de busqueda de secuencias mas posibles pesos del re-ranker.
 
@@ -79,4 +79,4 @@ No disponible. La informacion proporcionada no incluye modelos comparables ni re
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chiru112/ec-knn-rr
+- Hugging Face: https://huggingface.co/chiru112/ec-knn-rr

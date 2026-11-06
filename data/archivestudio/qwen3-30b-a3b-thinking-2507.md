@@ -95,9 +95,9 @@ Notas de la model card: las win rates de Arena-Hard v2 se evalúan con GPT-4.1; 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas de rendimiento |
 |---|---|---|---|---|---|
-| Qwen3-30B-A3B-Thinking-2507 | 30.5B totales / 3.3B activos | 262.144 | Apache 2.0 | HuggingFace (este repo) | AIME25 85.0, HMMT25 71.4, LiveCodeBench v6 66.0 |
-| Qwen3-30B-A3B Thinking (original) | 30.5B totales / 3.3B activos | no disponible en la información (el original de Qwen3 soporta 128K extensible; dato no confirmado aquí) | Apache 2.0 | HuggingFace | AIME25 70.9, HMMT25 49.8, LiveCodeBench v6 57.4 |
-| Qwen3-235B-A22B Thinking | 235B totales / 22B activos | no disponible en la información | Apache 2.0 | HuggingFace | MMLU-Pro 82.8, AIME25 81.5, Arena-Hard v2 61.5 |
+| Qwen3-30B-A3B-Thinking-2507 | 30.5B totales / 3.3B activos | 262.144 | Apache 2.0 | Hugging Face (este repo) | AIME25 85.0, HMMT25 71.4, LiveCodeBench v6 66.0 |
+| Qwen3-30B-A3B Thinking (original) | 30.5B totales / 3.3B activos | no disponible en la información (el original de Qwen3 soporta 128K extensible; dato no confirmado aquí) | Apache 2.0 | Hugging Face | AIME25 70.9, HMMT25 49.8, LiveCodeBench v6 57.4 |
+| Qwen3-235B-A22B Thinking | 235B totales / 22B activos | no disponible en la información | Apache 2.0 | Hugging Face | MMLU-Pro 82.8, AIME25 81.5, Arena-Hard v2 61.5 |
 | Gemini2.5-Flash-Thinking | no disponible | no disponible | propietaria | API de Google | GPQA 82.8, IFEval 89.8, TAU2-Retail 66.7 |
 
 El modelo 2507 mejora de forma clara a su predecesor en razonamiento y código, y supera a Qwen3-235B-A22B Thinking en AIME25, HMMT25, LiveCodeBench v6, BFCL-v3 y varias tareas TAU, pese a tener una fracción de los parámetros activos.
@@ -116,7 +116,7 @@ El modelo 2507 mejora de forma clara a su predecesor en razonamiento y código, 
 
 ## Enlaces
 
-- HuggingFace (este repositorio): https://huggingface.co/ArchiveStudio/Qwen3-30B-A3B-Thinking-2507
+- Hugging Face (este repositorio): https://huggingface.co/ArchiveStudio/Qwen3-30B-A3B-Thinking-2507
 - Repositorio oficial del modelo: https://huggingface.co/Qwen/Qwen3-30B-A3B-Thinking-2507
 - Licencia: https://huggingface.co/Qwen/Qwen3-30B-A3B-Thinking-2507/blob/main/LICENSE
 - Blog de Qwen3: https://qwenlm.github.io/blog/qwen3/

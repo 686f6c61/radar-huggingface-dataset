@@ -4,7 +4,7 @@
 
 ## Resumen
 
-svd-safety-l2_remove20_swapgapiter_b010_r02 es un checkpoint de investigación publicado por el usuario Jeesup en HuggingFace. Se construye a partir de meta-llama/Llama-2-7b-chat-hf, comprimido con la técnica SVD-LLM hasta el 79,99 % de los parámetros densos (20,01 % eliminado) y después editado con 2 de las 10 rondas de un procedimiento iterativo de intercambio de parámetros neutro en parámetros, guiado por la regla de selección `gap_iter`.
+svd-safety-l2_remove20_swapgapiter_b010_r02 es un checkpoint de investigación publicado por el usuario Jeesup en Hugging Face. Se construye a partir de meta-llama/Llama-2-7b-chat-hf, comprimido con la técnica SVD-LLM hasta el 79,99 % de los parámetros densos (20,01 % eliminado) y después editado con 2 de las 10 rondas de un procedimiento iterativo de intercambio de parámetros neutro en parámetros, guiado por la regla de selección `gap_iter`.
 
 El problema que aborda es la pérdida de seguridad inducida por la compresión: el propio autor indica que la compresión por sí sola eleva la tasa de éxito de ataques y que el propósito del estudio es cuantificar ese daño y probar la recuperación mediante la restauración selectiva de componentes (1209 componentes restaurados y 1209 sustituidos, con un presupuesto del 1,000 % de los parámetros densos).
 
@@ -72,7 +72,7 @@ No se han publicado en la información disponible resultados de benchmarks de ca
 - GPU para int8: tarjetas de 16 GB como RTX 4080, A4000 o RTX 4060 Ti de 16 GB.
 - GPU para int4: tarjetas de 8 a 12 GB, siempre que se genere previamente una cuantización, ya que no se publica ninguna.
 - Cabe en GPU de consumo: sí en fp16 en modelos de 24 GB (RTX 3090, RTX 4090) y en versiones cuantizadas en gamas inferiores.
-- Opciones de despliegue: transformers (librería declarada), text-generation-inference (etiqueta del repositorio), HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`), vLLM para servido de alto rendimiento y llama.cpp u Ollama únicamente si se convierte el checkpoint a GGUF, conversión no incluida en el repositorio.
+- Opciones de despliegue: transformers (librería declarada), text-generation-inference (etiqueta del repositorio), Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`), vLLM para servido de alto rendimiento y llama.cpp u Ollama únicamente si se convierte el checkpoint a GGUF, conversión no incluida en el repositorio.
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
@@ -102,7 +102,7 @@ La comparación con modelos de la misma categoría (asistentes de 7-8 B desplega
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_remove20_swapgapiter_b010_r02
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_remove20_swapgapiter_b010_r02
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
-- Licencia y política de uso: archivos `LICENSE.txt` y `USE_POLICY.md` incluidos en el propio repositorio de HuggingFace (no se dispone de URL directa verificada en la información proporcionada).
+- Licencia y política de uso: archivos `LICENSE.txt` y `USE_POLICY.md` incluidos en el propio repositorio de Hugging Face (no se dispone de URL directa verificada en la información proporcionada).
 - Búsqueda web: no devolvió resultados relevantes sobre el modelo, la técnica SVD-LLM ni los benchmarks citados; los únicos resultados obtenidos fueron páginas de inicio de sesión de Outlook, sin relación con el contenido.

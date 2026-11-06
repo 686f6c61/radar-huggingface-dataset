@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La fi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mydubber-org/whisper-large-v3-turbo-ct2-int8
+- Modelo en Hugging Face: https://huggingface.co/mydubber-org/whisper-large-v3-turbo-ct2-int8
 - Modelo base (OpenAI): https://huggingface.co/openai/whisper-large-v3-turbo
 - faster-whisper (GitHub): https://github.com/SYSTRAN/faster-whisper
 - Script de conversión (dubber): https://github.com/vladbehash/dubber/blob/main/tools/model-builds/src/model_builds/whisper.py

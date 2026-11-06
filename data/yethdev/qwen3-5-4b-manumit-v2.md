@@ -82,7 +82,7 @@ No se dispone de datos de otros modelos abliterados de tamaño similar para una 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yethdev/qwen3.5-4b-manumit-v2
+- Modelo en Hugging Face: https://huggingface.co/yethdev/qwen3.5-4b-manumit-v2
 - Modelo base Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
 - Versión v1 del modelo manumit: https://huggingface.co/yethdev/qwen3.5-4b-manumit-v1
 - Versión GGUF del v1: https://huggingface.co/yethdev/qwen3.5-4b-manumit-v1-GGUF

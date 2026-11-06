@@ -71,6 +71,6 @@ No se dispone de comparativas publicadas con otros agentes de PTCG o variantes d
 
 ## Enlaces
 
-- [HuggingFace: richard151111/muzero-V2](https://huggingface.co/richard151111/muzero-V2)
+- [Hugging Face: richard151111/muzero-V2](https://huggingface.co/richard151111/muzero-V2)
 - [Wikipedia: MuZero](https://en.wikipedia.org/wiki/MuZero)
 - [GitHub: werner-duvaud/muzero-general](https://github.com/werner-duvaud/muzero-general)

@@ -73,6 +73,6 @@ No hay información sobre alternativas comparables en la misma categoría (fine-
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/grok.h024.sft-v7.step_400
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/grok.h024.sft-v7.step_400
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - No se encontraron papers, blogs ni demos adicionales en la busqueda web.

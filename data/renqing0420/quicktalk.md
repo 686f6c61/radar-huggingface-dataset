@@ -67,6 +67,6 @@ No se han publicado datos comparativos en la informacion proporcionada. Como alt
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/renqing0420/quicktalk
+- Repositorio en Hugging Face: https://huggingface.co/renqing0420/quicktalk
 - Documentacion oficial de QuickTalk en OpenTalking: https://datascale-ai.github.io/opentalking/latest/model-support/models/quicktalk/
 - Modelo HuBERT de referencia: https://huggingface.co/facebook/hubert-large-ls960-ft

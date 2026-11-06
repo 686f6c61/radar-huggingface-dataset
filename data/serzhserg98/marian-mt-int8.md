@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Formato / cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `serzhserg98/marian-mt-int8` | No disponible | Frase a frase | Binario Bergamot/Marian int8, gzip | MPL 2.0 | HuggingFace, 0 descargas, 0 likes |
+| `serzhserg98/marian-mt-int8` | No disponible | Frase a frase | Binario Bergamot/Marian int8, gzip | MPL 2.0 | Hugging Face, 0 descargas, 0 likes |
 | `mozilla/translations` (original) | No disponible por par | Frase a frase | Binario Bergamot int8 + código de entrenamiento | MPL 2.0 | GitHub de Mozilla, mantenido |
-| OPUS-MT (Helsinki-NLP) | ~70-300 M por par (orientativo, no confirmado aquí) | Frase a frase | PyTorch/safetensors, fp32/fp16 | Mayoritariamente CC-BY 4.0 | HuggingFace, amplia adopción |
-| NLLB-200 (Meta) | Hasta 54 000 M (variante densa de 54B); 600 M en la variante distilled | ~512 tokens | safetensors, fp16/int8 | CC-BY-NC 4.0 (no comercial) | HuggingFace |
+| OPUS-MT (Helsinki-NLP) | ~70-300 M por par (orientativo, no confirmado aquí) | Frase a frase | PyTorch/safetensors, fp32/fp16 | Mayoritariamente CC-BY 4.0 | Hugging Face, amplia adopción |
+| NLLB-200 (Meta) | Hasta 54 000 M (variante densa de 54B); 600 M en la variante distilled | ~512 tokens | safetensors, fp16/int8 | CC-BY-NC 4.0 (no comercial) | Hugging Face |
 
 La comparación relevante es con el repositorio original de Mozilla: este paquete no aporta mejoras de calidad, solo agregación y compresión. Frente a OPUS-MT, la diferencia práctica es el runtime (CPU/WASM frente a PyTorch) y la licencia (MPL 2.0 frente a CC-BY). Frente a NLLB-200, la diferencia es el tamaño y el régimen de licencia: NLLB cubre 200 idiomas pero su licencia restringe el uso comercial.
 
@@ -85,7 +85,7 @@ La comparación relevante es con el repositorio original de Mozilla: este paquet
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/serzhserg98/marian-mt-int8
+- Repositorio en Hugging Face: https://huggingface.co/serzhserg98/marian-mt-int8
 - Proyecto original de Mozilla: https://github.com/mozilla/translations
 - Runtime Bergamot: https://github.com/browsermt/bergamot-translator
 - Marian NMT: https://github.com/marian-nmt/marian

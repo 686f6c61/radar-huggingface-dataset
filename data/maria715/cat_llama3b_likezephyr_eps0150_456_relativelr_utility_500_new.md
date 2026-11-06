@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CAT_llama3b_likeZephyr_eps0150_456_relativelr_utility_500_NEW es un adaptador LoRA publicado por el usuario maria715 en HuggingFace. Segun la propia model card, se trata de un artefacto derivado de experimentos de tesis de master sobre entrenamiento adversario (adversarial training) orientado a mejorar la robustez de modelos de lenguaje. El repositorio no documenta el modelo base exacto ni el procedimiento de entrenamiento mas alla de la etiqueta `adversarial-training` y la libreria `peft`.
+CAT_llama3b_likeZephyr_eps0150_456_relativelr_utility_500_NEW es un adaptador LoRA publicado por el usuario maria715 en Hugging Face. Segun la propia model card, se trata de un artefacto derivado de experimentos de tesis de master sobre entrenamiento adversario (adversarial training) orientado a mejorar la robustez de modelos de lenguaje. El repositorio no documenta el modelo base exacto ni el procedimiento de entrenamiento mas alla de la etiqueta `adversarial-training` y la libreria `peft`.
 
 El nombre del repositorio codifica los hiperparametros del experimento: `llama3b` apunta a un modelo base de la familia Llama de aproximadamente 3.000 millones de parametros, `likeZephyr` sugiere un formato de instrucciones similar al de Zephyr, `eps0150` indica un presupuesto de perturbacion adversaria de 0,150 y `relativelr` un esquema de tasa de aprendizaje relativa. Elementos como `utility_500` y el sufijo `NEW` parecen identificar la configuracion del conjunto de utilidad y una repeticion del experimento, respectivamente. Estas lecturas son inferencias a partir del nombre y no estan confirmadas por el autor.
 
@@ -64,11 +64,11 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Comparativa con modelos similares
 
-No disponible. No se puede establecer una comparativa rigurosa porque se desconoce el modelo base, el rango del adaptador, la licencia y los resultados de evaluacion. Como referencia de categoria, los adaptadores LoRA de robustez adversaria publicados en HuggingFace suelen compararse entre si por presupuesto epsilon, conjunto de utilidad y modelo base, pero no hay datos suficientes en este caso para construir la tabla.
+No disponible. No se puede establecer una comparativa rigurosa porque se desconoce el modelo base, el rango del adaptador, la licencia y los resultados de evaluacion. Como referencia de categoria, los adaptadores LoRA de robustez adversaria publicados en Hugging Face suelen compararse entre si por presupuesto epsilon, conjunto de utilidad y modelo base, pero no hay datos suficientes en este caso para construir la tabla.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CAT_llama3b_likeZephyr_eps0150_456_relativelr_utility_500_NEW | No disponible (~3B en el base, sin confirmar) | No disponible | No disponible | No disponible | Publico en HuggingFace, 0 descargas |
+| CAT_llama3b_likeZephyr_eps0150_456_relativelr_utility_500_NEW | No disponible (~3B en el base, sin confirmar) | No disponible | No disponible | No disponible | Publico en Hugging Face, 0 descargas |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -85,6 +85,6 @@ No disponible. No se puede establecer una comparativa rigurosa porque se descono
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/maria715/CAT_llama3b_likeZephyr_eps0150_456_relativelr_utility_500_NEW
+- Modelo en Hugging Face: https://huggingface.co/maria715/CAT_llama3b_likeZephyr_eps0150_456_relativelr_utility_500_NEW
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la busqueda web realizada.
 - No se dispone de enlace a la documentacion de PEFT en la informacion proporcionada; se recomienda consultar la documentacion oficial de la libreria `peft` para cargar adaptadores LoRA.

@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `TujiaNLP/tujia-xlsr53-ft` | 315.438.720 | no disponible | tujia (tji) | research-use-only | HuggingFace |
-| `facebook/wav2vec2-xlsr-53-espeak-cv-ft` | ~315 M (misma arquitectura) | no disponible | 53 idiomas (multilingüe) | Apache-2.0 | HuggingFace |
-| `facebook/wav2vec2-large-xlsr-53` | ~315 M | no disponible | 53 idiomas | Apache-2.0 | HuggingFace |
+| `TujiaNLP/tujia-xlsr53-ft` | 315.438.720 | no disponible | tujia (tji) | research-use-only | Hugging Face |
+| `facebook/wav2vec2-xlsr-53-espeak-cv-ft` | ~315 M (misma arquitectura) | no disponible | 53 idiomas (multilingüe) | Apache-2.0 | Hugging Face |
+| `facebook/wav2vec2-large-xlsr-53` | ~315 M | no disponible | 53 idiomas | Apache-2.0 | Hugging Face |
 
 La comparación con el modelo base XLSR-53 es la más directa: comparten arquitectura y número de parámetros, pero el ajuste fino especializa las 4 capas superiores en tujia a costa de posible degradación en otros idiomas. No se dispone de datos de rendimiento comparativo en la información proporcionada.
 
@@ -82,7 +82,7 @@ La comparación con el modelo base XLSR-53 es la más directa: comparten arquite
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TujiaNLP/tujia-xlsr53-ft
+- Modelo en Hugging Face: https://huggingface.co/TujiaNLP/tujia-xlsr53-ft
 - Proyecto padre: https://github.com/ibaibing/TujiaNLP
 - Página del modelo ASR: https://github.com/ibaibing/tujia-asr
 - Modelo base: https://huggingface.co/facebook/wav2vec2-xlsr-53-espeak-cv-ft

@@ -81,10 +81,10 @@ En las semillas 6 a 60, el comportamiento es exactamente el del checkpoint base,
 
 | Modelo | Parametros | Contexto | Rendimiento (media 5 semillas) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jrubiosainz/microduck-game-sprinter-remix12 | no disponible (MLP + tabla de 332 filas) | no aplica | 0,821 s | Apache-2.0 | HuggingFace |
-| rumezhak/microduck-sprint-remix-leader4 | no disponible (MLP + tabla) | no aplica | 0,823 s | Apache-2.0 | HuggingFace |
-| a1rb4Ck/microduck-sprint-2m | no disponible (MLP + tablas para 5 semillas) | no aplica | no disponible en la información proporcionada | Apache-2.0 | HuggingFace |
-| jrubiosainz/microduck-game-sprinter-remix10 | no disponible | no aplica | no disponible en la información proporcionada | no disponible | HuggingFace |
+| jrubiosainz/microduck-game-sprinter-remix12 | no disponible (MLP + tabla de 332 filas) | no aplica | 0,821 s | Apache-2.0 | Hugging Face |
+| rumezhak/microduck-sprint-remix-leader4 | no disponible (MLP + tabla) | no aplica | 0,823 s | Apache-2.0 | Hugging Face |
+| a1rb4Ck/microduck-sprint-2m | no disponible (MLP + tablas para 5 semillas) | no aplica | no disponible en la información proporcionada | Apache-2.0 | Hugging Face |
+| jrubiosainz/microduck-game-sprinter-remix10 | no disponible | no aplica | no disponible en la información proporcionada | no disponible | Hugging Face |
 
 La comparación se limita a la familia Microduck Sprint; no se dispone de datos de otros modelos de control de locomoción comparables en la información proporcionada.
 
@@ -102,7 +102,7 @@ La comparación se limita a la familia Microduck Sprint; no se dispone de datos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jrubiosainz/microduck-game-sprinter-remix12
+- Modelo en Hugging Face: https://huggingface.co/jrubiosainz/microduck-game-sprinter-remix12
 - Modelo base: https://huggingface.co/rumezhak/microduck-sprint-remix-leader4/tree/0a6ae1f67d4eff40a0e08165ad526844bdfeb54e
 - Modelo original: https://huggingface.co/a1rb4Ck/microduck-sprint-2m/tree/000f06a92dc9bb151501b48d9472be5089272405
 - Microduck Arena (Space): https://huggingface.co/spaces/pollen-robotics/microduck-arena

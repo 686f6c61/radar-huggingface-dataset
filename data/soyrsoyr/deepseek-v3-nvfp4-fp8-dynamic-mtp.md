@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros (total/activos) | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (DeepSeek-V3 NVFP4+FP8, comunidad) | 671B / 37B | 128K | NVFP4 + FP8 dinamico | No disponible | HuggingFace (0 descargas) |
-| DeepSeek-V3-BF16 (RedHatAI) | 671B / 37B | 128K | BF16 | Licencia de DeepSeek | HuggingFace |
-| DeepSeek-V3 oficial (FP8 block-scaled) | 671B / 37B | 128K | FP8 | Licencia de DeepSeek | HuggingFace |
-| DeepSeek-R1 | 671B / 37B | 128K | BF16 / FP8 | MIT | HuggingFace |
+| Este modelo (DeepSeek-V3 NVFP4+FP8, comunidad) | 671B / 37B | 128K | NVFP4 + FP8 dinamico | No disponible | Hugging Face (0 descargas) |
+| DeepSeek-V3-BF16 (RedHatAI) | 671B / 37B | 128K | BF16 | Licencia de DeepSeek | Hugging Face |
+| DeepSeek-V3 oficial (FP8 block-scaled) | 671B / 37B | 128K | FP8 | Licencia de DeepSeek | Hugging Face |
+| DeepSeek-R1 | 671B / 37B | 128K | BF16 / FP8 | MIT | Hugging Face |
 
 La diferencia principal frente al checkpoint BF16 de origen y frente a la version oficial FP8 es el ahorro de memoria que aporta el NVFP4, a cambio de una mayor dependencia de hardware Blackwell y de una receta de cuantizacion no documentada. DeepSeek-R1 comparte arquitectura y tamano, pero esta orientado a razonamiento y usa licencia MIT.
 
@@ -85,7 +85,7 @@ La diferencia principal frente al checkpoint BF16 de origen y frente a la versio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/soyrsoyr/DeepSeek-V3-NVFP4-FP8-Dynamic-MTP
+- Modelo en Hugging Face: https://huggingface.co/soyrsoyr/DeepSeek-V3-NVFP4-FP8-Dynamic-MTP
 - Checkpoint base: https://huggingface.co/RedHatAI/DeepSeek-V3-BF16
 - DeepSeek-V3 (modelo original): https://huggingface.co/deepseek-ai/DeepSeek-V3
 - Repositorio de llm-compressor: https://github.com/vllm-project/llm-compressor

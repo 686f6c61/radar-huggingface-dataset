@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Hieroxel es un videojuego de mundo voxel infinito desarrollado en Rust sobre el motor Bevy 0.20, publicado por el usuario EHS-Studio en HuggingFace bajo licencia MIT. No se trata de un modelo de inteligencia artificial ni de una red neuronal: es un repositorio que contiene el codigo fuente y los recursos de un juego de exploracion y construccion por bloques, con generacion procedural de terreno y simulacion de un ecosistema "vivo" que evoluciona de forma autonoma.
+Hieroxel es un videojuego de mundo voxel infinito desarrollado en Rust sobre el motor Bevy 0.20, publicado por el usuario EHS-Studio en Hugging Face bajo licencia MIT. No se trata de un modelo de inteligencia artificial ni de una red neuronal: es un repositorio que contiene el codigo fuente y los recursos de un juego de exploracion y construccion por bloques, con generacion procedural de terreno y simulacion de un ecosistema "vivo" que evoluciona de forma autonoma.
 
 El proyecto resuelve el problema de crear un mundo abierto persistente y cambiante sin intervencion del jugador: el terreno se genera de forma infinita alrededor del jugador mediante mapas de ruido, y un sistema de reglas de "random-tick" hace que la vegetacion crezca, se propague y muera, que la arena y la grava caigan, y que el musgo colonice las cuevas. Esto lo diferencia de otros clones de voxel mas estaticos, donde el mundo solo cambia por accion del jugador.
 
@@ -79,7 +79,7 @@ No disponible. Hieroxel no es un modelo de IA y no se han proporcionado alternat
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/EHS-Studio/hieroxel
+- Repositorio en Hugging Face: https://huggingface.co/EHS-Studio/hieroxel
 - Rust: https://rustup.rs
 - Bevy (dependencias de sistema en `docs/linux_dependencies.md`): https://github.com/bevyengine/bevy
 - No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios o demos.

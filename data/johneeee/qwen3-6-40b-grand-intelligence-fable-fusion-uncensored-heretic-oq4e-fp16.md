@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.6-40B-Grand-Intelligence-Fable-Fusion-Uncensored-Heretic-oQ4e-fp16 es una publicacion del usuario Johneeee en HuggingFace, distribuida como pesos MLX safetensors cuantizados a 4 bits. El identificador del repositorio apunta a un modelo derivado de la familia qwen3_5 (tipo declarado en la model card como "qwen3_5") con aproximadamente 39.072.596.736 parametros, es decir, 39,07 mil millones. El nombre comercial sugiere una fusion de modelos ("Fusion"), un ajuste orientado a eliminar restricciones de alineamiento ("Uncensored", "Heretic") y un supuesto foco en razonamiento ("Grand-Intelligence"), pero la model card no documenta ninguno de esos extremos: solo describe el proceso de cuantizacion.
+Qwen3.6-40B-Grand-Intelligence-Fable-Fusion-Uncensored-Heretic-oQ4e-fp16 es una publicacion del usuario Johneeee en Hugging Face, distribuida como pesos MLX safetensors cuantizados a 4 bits. El identificador del repositorio apunta a un modelo derivado de la familia qwen3_5 (tipo declarado en la model card como "qwen3_5") con aproximadamente 39.072.596.736 parametros, es decir, 39,07 mil millones. El nombre comercial sugiere una fusion de modelos ("Fusion"), un ajuste orientado a eliminar restricciones de alineamiento ("Uncensored", "Heretic") y un supuesto foco en razonamiento ("Grand-Intelligence"), pero la model card no documenta ninguno de esos extremos: solo describe el proceso de cuantizacion.
 
 El unico dato tecnico verificable de la publicacion es que se ha cuantizado con la herramienta oQ (oMLX v0.7.0.dev4, https://github.com/jundot/omlx) mediante cuantizacion de precision mixta a 4 bits con group size 64, en formato MLX safetensors. El repositorio ocupa 23,2 GB, coherente con un modelo de 39 B parametros almacenado a 4 bits mas las escalas de cuantizacion y posibles capas residuales en mayor precision (el nombre incluye el sufijo "fp16"). La libreria declarada es mlx, lo que restringe la ejecucion practica a hardware Apple Silicon.
 
@@ -94,7 +94,7 @@ No se puede establecer una comparativa fiable. El modelo declara pertenecer a la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Johneeee/Qwen3.6-40B-Grand-Intelligence-Fable-Fusion-Uncensored-Heretic-oQ4e-fp16
+- Hugging Face: https://huggingface.co/Johneeee/Qwen3.6-40B-Grand-Intelligence-Fable-Fusion-Uncensored-Heretic-oQ4e-fp16
 - Repositorio de la herramienta de cuantizacion oQ / oMLX: https://github.com/jundot/omlx
 - Paper, blog, repositorio o demo del modelo: no disponible
 - La busqueda web realizada no ha devuelto ningun resultado relevante sobre este modelo; los unicos enlaces obtenidos correspondian a foros de automocion sin relacion con el contenido.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CAT-Translate-3.3b-oQ8e es una versión cuantizada del modelo CAT-Translate-3.3b, publicada por el usuario Omnico en HuggingFace. Se trata de un checkpoint de 3.355.609.600 parámetros (aproximadamente 3,3 mil millones) orientado, por su nombre, a tareas de traducción, aunque la model card no documenta explícitamente el modelo base ni sus capacidades. La versión aquí descrita ha sido cuantizada con oQ (oMLX v0.7.3), una técnica de cuantización de precisión mixta, y se distribuye en formato MLX para su ejecución en hardware Apple Silicon.
+CAT-Translate-3.3b-oQ8e es una versión cuantizada del modelo CAT-Translate-3.3b, publicada por el usuario Omnico en Hugging Face. Se trata de un checkpoint de 3.355.609.600 parámetros (aproximadamente 3,3 mil millones) orientado, por su nombre, a tareas de traducción, aunque la model card no documenta explícitamente el modelo base ni sus capacidades. La versión aquí descrita ha sido cuantizada con oQ (oMLX v0.7.3), una técnica de cuantización de precisión mixta, y se distribuye en formato MLX para su ejecución en hardware Apple Silicon.
 
 El interés de esta ficha radica en su formato: es un modelo cuantizado a una media efectiva de 8,500 bits por peso, con la práctica totalidad de los pesos almacenados en affine 8-bit con grupo de 64, lo que reduce el checkpoint a 3,321 GiB. Está etiquetado como modelo de la familia llama y empaquetado para la librería mlx, lo que lo hace directamente consumible en macOS con chip M-series mediante el stack de MLX.
 
@@ -75,5 +75,5 @@ No disponible. La información proporcionada no identifica el modelo base ni ofr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Omnico/CAT-Translate-3.3b-oQ8e
+- Modelo en Hugging Face: https://huggingface.co/Omnico/CAT-Translate-3.3b-oQ8e
 - Repositorio de oQ / oMLX: https://github.com/jundot/omlx

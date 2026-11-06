@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Long-WAM Wash Cup — Epoch 2 | no disponible | no disponible (P48, chunk 32) | Limpieza de taza bimanual (ajuste fino) | other | HuggingFace, 6 descargas |
-| Efficient-Large-Model/Long-WAM-YAM | no disponible | no disponible | Modelo base de robótica | other (metadatos publicados) | HuggingFace |
+| Long-WAM Wash Cup — Epoch 2 | no disponible | no disponible (P48, chunk 32) | Limpieza de taza bimanual (ajuste fino) | other | Hugging Face, 6 descargas |
+| Efficient-Large-Model/Long-WAM-YAM | no disponible | no disponible | Modelo base de robótica | other (metadatos publicados) | Hugging Face |
 | NVlabs/LongLive | no disponible | no disponible | Código base de generación de vídeo | no disponible | GitHub (commit cfa4e91) |
 
 No se dispone de datos de rendimiento comparables entre estos modelos en la información proporcionada.
@@ -77,14 +77,14 @@ No se dispone de datos de rendimiento comparables entre estos modelos en la info
 - Está especializado en una única tarea (limpieza de taza) y en un dataset concreto de 100 demostraciones; no generaliza a otras tareas ni entornos sin un nuevo ajuste fino.
 - Requiere assets externos (VAE Wan2.2, codificador de texto UMT5 y tokenizador) que no están incluidos en el repositorio.
 - La configuración de entrenamiento conserva rutas del sistema de archivos SIP originales; es necesario reconfigurar rutas para otra máquina.
-- No es un modelo `from_pretrained` de Transformers y no se integra en pipelines estándar de HuggingFace.
+- No es un modelo `from_pretrained` de Transformers y no se integra en pipelines estándar de Hugging Face.
 - Licencia `other`: las condiciones exactas de uso comercial dependen de los metadatos de licencia del modelo base Efficient-Large-Model/Long-WAM-YAM, que deben consultarse antes de cualquier uso comercial.
 - No se documentan sesgos conocidos, riesgos de alucinación ni limitaciones idiomáticas, al no tratarse de un modelo de lenguaje.
 - El número de descargas (6) y de likes (0) indica una adopción muy limitada; no hay evidencia de la comunidad sobre su robustez.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dddddsds31341/Long-WAM-Wash-Cup-Epoch-2
+- Modelo en Hugging Face: https://huggingface.co/dddddsds31341/Long-WAM-Wash-Cup-Epoch-2
 - Modelo base: https://huggingface.co/Efficient-Large-Model/Long-WAM-YAM
 - Registro de entrenamiento en Weights & Biases (CoreWeave): https://forge.coreweave.com/wandb/bofang/long-wam/runs/3n9pgoq2
 - Código base LongLive (NVlabs): https://github.com/NVlabs/LongLive (commit cfa4e91eec59429d583326500bf5535c9ce6eec7)

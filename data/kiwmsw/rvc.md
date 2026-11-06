@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kiwmsw/rvc es un repositorio publicado en HuggingFace por el usuario Kiwmsw bajo licencia MIT. El repositorio ocupa 0,1 GB y no incluye model card descriptiva: el README se limita a declarar la licencia, sin especificar arquitectura, tarea, datos de entrenamiento ni uso previsto. Tampoco tiene etiqueta de pipeline asignada, ni idiomas declarados, ni descargas o valoraciones registradas en el momento de la consulta.
+Kiwmsw/rvc es un repositorio publicado en Hugging Face por el usuario Kiwmsw bajo licencia MIT. El repositorio ocupa 0,1 GB y no incluye model card descriptiva: el README se limita a declarar la licencia, sin especificar arquitectura, tarea, datos de entrenamiento ni uso previsto. Tampoco tiene etiqueta de pipeline asignada, ni idiomas declarados, ni descargas o valoraciones registradas en el momento de la consulta.
 
 El identificador "rvc" coincide con la denominación habitual de Retrieval-based Voice Conversion, una familia de modelos de conversión de voz a voz, pero esta correspondencia no está confirmada por ninguna declaración del autor en el repositorio, por lo que debe tratarse como una hipótesis no verificada y no como un dato técnico.
 
@@ -96,5 +96,5 @@ No disponible. Al no conocerse la tarea, la arquitectura ni el número de parám
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Kiwmsw/rvc
+- Repositorio en Hugging Face: https://huggingface.co/Kiwmsw/rvc
 - No se han encontrado en la información proporcionada otros enlaces a papers, blogs, repositorios de código o demostraciones.

@@ -75,7 +75,7 @@ Nota: los valores de VRAM son aproximados y basados en el tamaño de pesos, no e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kotarou71/Wan2.1-1.3B-FP8
+- Modelo en Hugging Face: https://huggingface.co/kotarou71/Wan2.1-1.3B-FP8
 - Modelo original Wan2.1-T2V-1.3B: https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B
 - Repositorio oficial de Wan2.1: https://github.com/Wan-Video/Wan2.1
 - Variante VACE (control adicional): https://huggingface.co/Wan-AI/Wan2.1-VACE-1.3B

@@ -70,7 +70,7 @@ Los datos de la columna "modelo base" proceden de la información proporcionada;
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | hi-todayis-jh/ouro-1.4b-thinking-rltt-math (este checkpoint) | ~1,4 B | No disponible | Apache-2.0 | Repositorio de checkpoints de entrenamiento; requiere fusión de shards |
-| ByteDance/Ouro-1.4B-Thinking (modelo base) | ~1,4 B | No disponible | No disponible en la información proporcionada | Pesos públicos en HuggingFace |
+| ByteDance/Ouro-1.4B-Thinking (modelo base) | ~1,4 B | No disponible | No disponible en la información proporcionada | Pesos públicos en Hugging Face |
 | Qwen2.5-1.5B-Instruct | 1,54 B | 32 768 tokens | Apache-2.0 | Amplia disponibilidad, soporte en vLLM, llama.cpp, Ollama |
 | Llama-3.2-1B-Instruct | 1,23 B | 128 000 tokens | Licencia comunitaria de Llama 3.2 | Amplia disponibilidad, soporte en los principales runners |
 | DeepSeek-R1-Distill-Qwen-1.5B | 1,5 B | 32 768 tokens | MIT | Amplia disponibilidad, orientado a razonamiento |
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento comparativo entre este checkpoint y los mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hi-todayis-jh/ouro-1.4b-thinking-rltt-math-154712-20261007-2100
+- Modelo en Hugging Face: https://huggingface.co/hi-todayis-jh/ouro-1.4b-thinking-rltt-math-154712-20261007-2100
 - Modelo base: https://huggingface.co/ByteDance/Ouro-1.4B-Thinking
 - Conjunto de datos de entrenamiento: https://huggingface.co/datasets/DigitalLearningGmbH/MATH-lighteval
 - Ejecución de entrenamiento en Weights & Biases: https://wandb.ai/jiahaozhangg-carnegie-mellon-university/ouro-1.4b-grpo-rltt-math/runs/rltt-154712-20261007-2100

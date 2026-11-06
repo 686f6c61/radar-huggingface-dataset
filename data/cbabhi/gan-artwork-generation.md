@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Resolucion de salida | Contexto / condicionamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GAN Artwork Generation (DCGAN/cGAN/CAN) | no disponible (checkpoint de 56,2 MB) | 64x64 | Latente de 100 dimensiones; cGAN condicionada por estilo | MIT | HuggingFace, pesos PyTorch |
+| GAN Artwork Generation (DCGAN/cGAN/CAN) | no disponible (checkpoint de 56,2 MB) | 64x64 | Latente de 100 dimensiones; cGAN condicionada por estilo | MIT | Hugging Face, pesos PyTorch |
 | DCGAN original (Radford et al., 2015) | del orden de millones, variable | 64x64 | No condicionada | Codigo de referencia publico | Implementaciones multiples |
 | StyleGAN / StyleGAN2 (NVIDIA) | decenas de millones, variable | 1024x1024 en configuracion estandar | Latente y espacio de estilos, condicionamiento limitado | Licencia especifica de NVIDIA | Codigo y pesos publicos |
 | BigGAN (DeepMind) | cientos de millones, variable | 128x128, 256x256 y 512x512 | Condicionada por clase | Codigo Apache 2.0 | Codigo y pesos publicos |
@@ -90,7 +90,7 @@ La comparacion debe tomarse con cautela: los datos de las alternativas correspon
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CBABHI/gan-artwork-generation
+- Modelo en Hugging Face: https://huggingface.co/CBABHI/gan-artwork-generation
 - Interfaz web desplegada: https://web-ui-tau-six.vercel.app/
 - Dataset WikiArt: https://www.wikiart.org/
 - DCGAN original (Radford, Metz y Chintala, 2015): https://arxiv.org/abs/1511.06434

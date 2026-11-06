@@ -79,7 +79,7 @@ La comparación con otros modelos NER clínicos de terceros no está disponible 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/brandonjcreek/redacty-clinical-coreml
+- Repositorio Hugging Face: https://huggingface.co/brandonjcreek/redacty-clinical-coreml
 - Modelo base DiseaseDetect: https://huggingface.co/OpenMed/OpenMed-NER-DiseaseDetect-SuperClinical-141M
 - Modelo base PharmaDetect: https://huggingface.co/OpenMed/OpenMed-NER-PharmaDetect-SuperClinical-141M
 - Perfil del autor: https://huggingface.co/brandonjcreek

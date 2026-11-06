@@ -62,13 +62,13 @@ No se dispone de información suficiente para establecer una comparativa riguros
 - La abliteración elimina los mecanismos de rechazo, lo que puede generar respuestas inapropiadas, ofensivas o peligrosas si se usa sin supervisión. No es adecuado para aplicaciones orientadas al público general sin filtros adicionales.
 - La cuantización Q2_K es de muy baja precisión; puede degradar significativamente la calidad de las respuestas, especialmente en tareas de razonamiento complejo o generación de código largo.
 - El modelo solo soporta inglés y chino; no se garantiza un buen rendimiento en otros idiomas.
-- La licencia del modelo base es Apache 2.0 según la model card de HuggingFace, aunque el sitio oficial de Ornith indica MIT. Esta discrepancia debe aclararse antes de un uso comercial.
+- La licencia del modelo base es Apache 2.0 según la model card de Hugging Face, aunque el sitio oficial de Ornith indica MIT. Esta discrepancia debe aclararse antes de un uso comercial.
 - No se incluyen archivos de proyección multimodal (mmproj) en este repositorio, por lo que las capacidades de visión del modelo base no están disponibles en esta cuantización.
 - El contexto de 262K tokens es teórico; en la práctica, con Q2_K y hardware de consumo, el uso de ventanas muy largas puede provocar agotamiento de memoria o latencias elevadas.
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/mradermacher/Ornith-1.0-35B-abliterix-i1-GGUF
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/mradermacher/Ornith-1.0-35B-abliterix-i1-GGUF
 - Repositorio estático con otros quants: https://huggingface.co/mradermacher/Ornith-1.0-35B-abliterix-GGUF
 - Modelo base original: https://huggingface.co/inkOrCloud/Ornith-1.0-35B-abliterix
 - Sitio oficial de Ornith: https://ornith.site/

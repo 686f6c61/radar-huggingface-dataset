@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alvinkang/dino-matching` es un repositorio de HuggingFace publicado por el usuario alvinkang que contiene una implementación personalizada y compacta en PyTorch de una arquitectura denominada Dino orientada a tareas de matching. No se trata de un modelo preentrenado listo para producción, sino de un artefacto de código con un checkpoint de inicialización válido para pruebas de humo (smoke tests), revisión de código y experimentos controlados de pequeña escala. El propio autor lo describe explícitamente como un punto de partida experimental.
+`alvinkang/dino-matching` es un repositorio de Hugging Face publicado por el usuario alvinkang que contiene una implementación personalizada y compacta en PyTorch de una arquitectura denominada Dino orientada a tareas de matching. No se trata de un modelo preentrenado listo para producción, sino de un artefacto de código con un checkpoint de inicialización válido para pruebas de humo (smoke tests), revisión de código y experimentos controlados de pequeña escala. El propio autor lo describe explícitamente como un punto de partida experimental.
 
 La relevancia de este repositorio es, por tanto, limitada y de naturaleza técnica: sirve como referencia de implementación para quien quiera reproducir o adaptar una arquitectura de matching con atención dispersa y fusión mediante cross-attention. No hay evidencia de entrenamiento completado, ni resultados de benchmarks, ni datos sobre el corpus utilizado. El tamaño del repositorio es de 0.0 GB y el recuento de parámetros en safetensors es de 24.832, lo que corresponde a la configuración "tiny" declarada.
 
@@ -34,7 +34,7 @@ No se ha publicado información sobre el volumen de tokens de entrenamiento, la 
 - No hay soporte documentado de tool calling ni function calling.
 - No hay soporte documentado de agentes ni razonamiento multi-paso.
 - No hay información sobre capacidades multilingües; el campo de idiomas no está disponible.
-- No se declaran modos especiales (thinking mode, visión, audio) ni pipeline de HuggingFace asociado.
+- No se declaran modos especiales (thinking mode, visión, audio) ni pipeline de Hugging Face asociado.
 
 ## Casos de uso
 
@@ -67,11 +67,11 @@ No disponible. No se han identificado en la información proporcionada modelos c
 - No ha sido auditado para robustez, equidad ni transferencia de dominio, según reconoce el propio autor.
 - No hay datos sobre sesgos, tasas de alucinación ni comportamiento en idiomas concretos.
 - La licencia BSD-3-Clause permite uso comercial, pero el autor advierte de que deben revisarse por separado los términos de los datos de origen si se emplean datasets externos.
-- Al ser una implementación personalizada, las APIs genéricas de carga automática de HuggingFace no funcionan sin un adaptador explícito.
+- Al ser una implementación personalizada, las APIs genéricas de carga automática de Hugging Face no funcionan sin un adaptador explícito.
 - Cualquier resultado obtenido con un checkpoint futuro entrenado por terceros debe documentarse de forma separada a los valores por defecto del repositorio.
 - El nombre "Dino" no implica relación con DINO, DINOv2 ni DINOv3; no debe asumirse ninguna capacidad de visión o self-supervision heredada.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/alvinkang/dino-matching
+- Repositorio en Hugging Face: https://huggingface.co/alvinkang/dino-matching
 - No se han encontrado en la información proporcionada papers, blogs, repositorios adicionales ni demos asociados.

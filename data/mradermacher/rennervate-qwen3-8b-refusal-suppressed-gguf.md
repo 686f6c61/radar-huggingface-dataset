@@ -82,7 +82,7 @@ La comparativa de rendimiento cuantitativo no esta disponible: no se han publica
 
 ## Enlaces
 
-- Repositorio HuggingFace del cuantizado: https://huggingface.co/mradermacher/Rennervate-Qwen3-8B-Refusal-Suppressed-GGUF
+- Repositorio Hugging Face del cuantizado: https://huggingface.co/mradermacher/Rennervate-Qwen3-8B-Refusal-Suppressed-GGUF
 - Modelo base: https://huggingface.co/BanZhuan-AI/Rennervate-Qwen3-8B-Refusal-Suppressed
 - Licencia del modelo base: https://huggingface.co/BanZhuan-AI/Rennervate-Qwen3-8B-Refusal-Suppressed/blob/main/LICENSE
 - Pagina de descargas del autor: https://hf.tst.eu/model#Rennervate-Qwen3-8B-Refusal-Suppressed-GGUF

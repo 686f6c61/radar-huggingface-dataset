@@ -2,13 +2,13 @@
 
 ## Resumen
 
-El repositorio `DSD1231/my-awesome-model-best-checkpoint` contiene un checkpoint de un modelo de extracción de características (feature extraction), etiquetado en HuggingFace como `bert` y usando la librería `transformers`. El autor, `DSD1231`, lo subió como el mejor checkpoint seleccionado automáticamente de un espacio de trabajo, en el paso `step_1000`, por haber alcanzado la mayor `eval_accuracy` (0.828) en el benchmark `code_generation`. La licencia declarada es MIT, lo que permite su uso comercial, pero no se ha publicado información sobre la arquitectura concreta, el número de parámetros ni la longitud de contexto. Su relevancia es limitada debido a la ausencia de documentación técnica que permita evaluar su idoneidad para tareas reales.
+El repositorio `DSD1231/my-awesome-model-best-checkpoint` contiene un checkpoint de un modelo de extracción de características (feature extraction), etiquetado en Hugging Face como `bert` y usando la librería `transformers`. El autor, `DSD1231`, lo subió como el mejor checkpoint seleccionado automáticamente de un espacio de trabajo, en el paso `step_1000`, por haber alcanzado la mayor `eval_accuracy` (0.828) en el benchmark `code_generation`. La licencia declarada es MIT, lo que permite su uso comercial, pero no se ha publicado información sobre la arquitectura concreta, el número de parámetros ni la longitud de contexto. Su relevancia es limitada debido a la ausencia de documentación técnica que permita evaluar su idoneidad para tareas reales.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | BERT (según metadatos de HuggingFace); variante no especificada |
+| Arquitectura | BERT (según metadatos de Hugging Face); variante no especificada |
 | Parametros totales | no disponible |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
@@ -18,7 +18,7 @@ El repositorio `DSD1231/my-awesome-model-best-checkpoint` contiene un checkpoint
 
 ## Arquitectura y entrenamiento
 
-Los metadatos de HuggingFace etiquetan el modelo como `bert` y pipeline `feature-extraction`. La model card indica que el checkpoint fue seleccionado como el mejor de un espacio de trabajo, basándose en la mayor `eval_accuracy` (0.828) obtenida en el benchmark `code_generation`. No se ha publicado información sobre la arquitectura concreta, el número de parámetros, el conjunto de datos de entrenamiento ni el proceso de entrenamiento (por ejemplo, si se empleó RLHF, DPO u otra técnica).
+Los metadatos de Hugging Face etiquetan el modelo como `bert` y pipeline `feature-extraction`. La model card indica que el checkpoint fue seleccionado como el mejor de un espacio de trabajo, basándose en la mayor `eval_accuracy` (0.828) obtenida en el benchmark `code_generation`. No se ha publicado información sobre la arquitectura concreta, el número de parámetros, el conjunto de datos de entrenamiento ni el proceso de entrenamiento (por ejemplo, si se empleó RLHF, DPO u otra técnica).
 
 ## Capacidades
 
@@ -66,7 +66,7 @@ No disponible. No se han identificado modelos comparables en la información pro
 - No se ha publicado información sobre sesgos, datos de entrenamiento ni evaluaciones externas.
 - La model card indica que el checkpoint fue seleccionado por su `eval_accuracy` en un benchmark de `code_generation`, pero no se especifica el dataset ni la metodología de evaluación.
 - La licencia MIT permite uso comercial, pero la ausencia de documentación técnica (arquitectura, parámetros, contexto) impide una evaluación fiable para producción.
-- El modelo no tiene descargas ni likes en HuggingFace, lo que sugiere que no ha sido validado por la comunidad.
+- El modelo no tiene descargas ni likes en Hugging Face, lo que sugiere que no ha sido validado por la comunidad.
 - Los resultados de evaluación se presentan sin comparación con otros modelos, por lo que no se puede determinar su rendimiento relativo.
 
 ## Enlaces

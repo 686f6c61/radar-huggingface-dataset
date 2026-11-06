@@ -71,10 +71,10 @@ Los unicos datos de benchmark presentes en la informacion disponible provienen d
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| facebook/opt-125m | 125M | 2048 tokens | other (commercial: false) | HuggingFace (transformers, TF, JAX) |
-| gpt2 (124M) | 124M | 1024 tokens | Licencia tipo MIT de OpenAI (referencia general) | HuggingFace |
-| EleutherAI/gpt-neo-125M | 125M | 2048 tokens | MIT (referencia general) | HuggingFace |
-| facebook/opt-350m | 350M | 2048 tokens | other (misma familia OPT) | HuggingFace |
+| facebook/opt-125m | 125M | 2048 tokens | other (commercial: false) | Hugging Face (transformers, TF, JAX) |
+| gpt2 (124M) | 124M | 1024 tokens | Licencia tipo MIT de OpenAI (referencia general) | Hugging Face |
+| EleutherAI/gpt-neo-125M | 125M | 2048 tokens | MIT (referencia general) | Hugging Face |
+| facebook/opt-350m | 350M | 2048 tokens | other (misma familia OPT) | Hugging Face |
 
 Los datos de contexto y licencia de gpt2 y gpt-neo-125M corresponden a conocimiento publico general y no proceden de la informacion de la busqueda; conviene verificarlos en sus respectivas model cards antes de tomar decisiones de produccion.
 
@@ -91,7 +91,7 @@ Los datos de contexto y licencia de gpt2 y gpt-neo-125M corresponden a conocimie
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/facebook/opt-125m
+- Modelo en Hugging Face: https://huggingface.co/facebook/opt-125m
 - Paper OPT (Open Pre-trained Transformer Language Models): https://arxiv.org/abs/2205.01068
 - PDF del paper OPT: https://arxiv.org/pdf/2205.01068.pdf
 - Paper de GPT-3: https://arxiv.org/abs/2005.14165

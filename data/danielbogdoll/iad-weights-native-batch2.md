@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `danielbogdoll/iad-weights-native-batch2` | Checkpoints Detectron2 (Swin) para segmentación/anomalías | no disponible | no aplica | MIT | HuggingFace (repo de 91,9 GB) |
+| `danielbogdoll/iad-weights-native-batch2` | Checkpoints Detectron2 (Swin) para segmentación/anomalías | no disponible | no aplica | MIT | Hugging Face (repo de 91,9 GB) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre modelos comparables en la documentación proporcionada; no se puede establecer una comparativa fiable sin datos de benchmarks ni de arquitectura completos.
@@ -81,5 +81,5 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/danielbogdoll/iad-weights-native-batch2
+- Hugging Face: https://huggingface.co/danielbogdoll/iad-weights-native-batch2
 - No se han encontrado en la información proporcionada otros enlaces a papers, blogs, repositorios de código o demos.

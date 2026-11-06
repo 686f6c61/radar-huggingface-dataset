@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Dohyeon1/LFM2-HC-SMoE-ngroups24-maxcls4 es un modelo de generacion de texto de aproximadamente 8.339.930.560 parametros (unos 8,34 mil millones) publicado en HuggingFace por el usuario Dohyeon1. Segun la nomenclatura del repositorio y la etiqueta `lfm2_moe`, se trata de una variante derivada de la familia LFM2 (Liquid AI) a la que se le han fusionado expertos mediante la tecnica HC-SMoE (Hierarchical Clustering for Sparsely activated Mixture of Experts), presentada en ICML 2025. El sufijo `ngroups24-maxcls4` indica la configuracion del agrupamiento jerarquico empleado: 24 grupos y un maximo de 4 clusters por grupo.
+Dohyeon1/LFM2-HC-SMoE-ngroups24-maxcls4 es un modelo de generacion de texto de aproximadamente 8.339.930.560 parametros (unos 8,34 mil millones) publicado en Hugging Face por el usuario Dohyeon1. Segun la nomenclatura del repositorio y la etiqueta `lfm2_moe`, se trata de una variante derivada de la familia LFM2 (Liquid AI) a la que se le han fusionado expertos mediante la tecnica HC-SMoE (Hierarchical Clustering for Sparsely activated Mixture of Experts), presentada en ICML 2025. El sufijo `ngroups24-maxcls4` indica la configuracion del agrupamiento jerarquico empleado: 24 grupos y un maximo de 4 clusters por grupo.
 
 El interes de la publicacion es metodologico: HC-SMoE propone reducir el numero de parametros de un modelo MoE disperso fusionando expertos con funciones similares, sin reentrenamiento y de forma agnostica a la tarea. Este checkpoint concreto es, por tanto, un experimento de compresion sobre un modelo base, no un modelo entrenado desde cero.
 
-La relevancia practica es limitada en su estado actual. El repositorio no incluye model card real (el README es la plantilla autogenerada de HuggingFace, con todos los campos en "[More Information Needed]"), no declara licencia ni idiomas, registra 0 descargas y 0 likes, y no aporta resultados de evaluacion. Cualquier uso en produccion exige auditar previamente el checkpoint y aclarar la situacion legal respecto al modelo base.
+La relevancia practica es limitada en su estado actual. El repositorio no incluye model card real (el README es la plantilla autogenerada de Hugging Face, con todos los campos en "[More Information Needed]"), no declara licencia ni idiomas, registra 0 descargas y 0 likes, y no aporta resultados de evaluacion. Cualquier uso en produccion exige auditar previamente el checkpoint y aclarar la situacion legal respecto al modelo base.
 
 ## Especificaciones tecnicas
 
@@ -33,7 +33,7 @@ No hay informacion disponible sobre el numero de tokens de entrenamiento, la com
 
 - Generacion de texto: unica capacidad confirmada, derivada del tag `text-generation` del repositorio.
 - Conversacion: el repositorio declara el tag `conversational`, por lo que el formato de chat es compatible en principio, aunque no se documenta el chat template.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que el modelo puede servirse a traves de la Inference API de HuggingFace.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que el modelo puede servirse a traves de la Inference API de Hugging Face.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible (no se declaran idiomas).
@@ -94,7 +94,7 @@ La diferencia clave no es de rendimiento, sino de trazabilidad: los tres modelos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dohyeon1/LFM2-HC-SMoE-ngroups24-maxcls4
+- Modelo en Hugging Face: https://huggingface.co/Dohyeon1/LFM2-HC-SMoE-ngroups24-maxcls4
 - Variante con otra configuracion de agrupamiento: https://huggingface.co/Dohyeon1/LFM2-HC-SMoE-ngroups24
 - Otra variante del autor: https://huggingface.co/Dohyeon1/LFM2-HC-SMoE-ngroups28 (arbol de archivos: https://huggingface.co/Dohyeon1/LFM2-HC-SMoE-ngroups28/tree/main)
 - Perfil del autor: https://hf-p-cfw.fyan.top/Dohyeon1/models

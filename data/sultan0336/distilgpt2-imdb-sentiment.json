@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "Sultan0336/distilgpt2-imdb-sentiment",
+  "slug": "sultan0336-distilgpt2-imdb-sentiment",
+  "author": "Sultan0336",
+  "url": "https://huggingface.co/Sultan0336/distilgpt2-imdb-sentiment",
+  "created_at": "2026-11-02T09:19:51.000Z",
+  "updated_at": "2026-11-02T14:55:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-classification",
+    "en",
+    "dataset:stanfordnlp/imdb",
+    "base_model:distilbert/distilgpt2",
+    "base_model:finetune:distilbert/distilgpt2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 42,
+  "trending_score": 0,
+  "parameters": 81914112,
+  "parameters_human": "81.9M",
+  "storage_bytes": 327670057,
+  "storage_human": "328 MB",
+  "base_model": "distilbert/distilgpt2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sultan0336/distilgpt2-imdb-sentiment · Hugging Face",
+      "url": "https://huggingface.co/Sultan0336/distilgpt2-imdb-sentiment",
+      "snippet": "Decoder: DistilGPT2: IMDb sentiment Fine-tuned for Sultan0336's encoder/decoder comparison assignment. Base model: distilbert/distilgpt2. Two-class sequence classification: 0 NEGATIVE, 1 POSITIVE. DistilBERT is bidirectional; DistilGPT2 uses causal attention with a classification head. This checkpoint predicts sentiment; it is not a conversational generator."
+    },
+    {
+      "title": "Sultan0336/distilbert-imdb-sentiment · Hugging Face",
+      "url": "https://huggingface.co/Sultan0336/distilbert-imdb-sentiment",
+      "snippet": "Encoder: DistilBERT: IMDb sentiment Fine-tuned for Sultan0336's encoder/decoder comparison assignment. Base model: distilbert/distilbert-base-uncased. Two-class sequence classification: 0 NEGATIVE, 1 POSITIVE. DistilBERT is bidirectional; DistilGPT2 uses causal attention with a classification head. This checkpoint predicts sentiment; it is not a conversational generator."
+    }
+  ]
+}

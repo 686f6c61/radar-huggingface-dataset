@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `liujinyaoMikey/TriSafeMem-9b` es un modelo publicado en HuggingFace bajo licencia Apache-2.0. Sin embargo, la model card asociada no contiene ninguna descripción, arquitectura, datos de entrenamiento ni ejemplos de uso. No se dispone de información pública sobre el desarrollador, el problema que resuelve o sus características técnicas. El nombre sugiere una escala de 9 mil millones de parámetros, pero este dato no está confirmado oficialmente. En el momento de redactar esta ficha, el modelo no tiene descargas ni interacciones en la plataforma, y no se ha encontrado ninguna referencia externa relevante en la web. Por tanto, cualquier evaluación técnica es imposible sin acceso a la documentación o al repositorio del autor.
+El modelo `liujinyaoMikey/TriSafeMem-9b` es un modelo publicado en Hugging Face bajo licencia Apache-2.0. Sin embargo, la model card asociada no contiene ninguna descripción, arquitectura, datos de entrenamiento ni ejemplos de uso. No se dispone de información pública sobre el desarrollador, el problema que resuelve o sus características técnicas. El nombre sugiere una escala de 9 mil millones de parámetros, pero este dato no está confirmado oficialmente. En el momento de redactar esta ficha, el modelo no tiene descargas ni interacciones en la plataforma, y no se ha encontrado ninguna referencia externa relevante en la web. Por tanto, cualquier evaluación técnica es imposible sin acceso a la documentación o al repositorio del autor.
 
 ## Especificaciones tecnicas
 
@@ -19,7 +19,7 @@ El modelo `liujinyaoMikey/TriSafeMem-9b` es un modelo publicado en HuggingFace b
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado ninguna información sobre la arquitectura del modelo (si es transformer, MoE, SSM u otro tipo), los datos de entrenamiento (número de tokens, composición del dataset, técnicas de alineación como RLHF o DPO) ni innovaciones técnicas destacables. La model card únicamente contiene el campo de licencia, sin secciones adicionales. No hay papers, repositorios de código ni documentación técnica asociada al modelo en HuggingFace ni en la web.
+No se ha publicado ninguna información sobre la arquitectura del modelo (si es transformer, MoE, SSM u otro tipo), los datos de entrenamiento (número de tokens, composición del dataset, técnicas de alineación como RLHF o DPO) ni innovaciones técnicas destacables. La model card únicamente contiene el campo de licencia, sin secciones adicionales. No hay papers, repositorios de código ni documentación técnica asociada al modelo en Hugging Face ni en la web.
 
 ## Capacidades
 
@@ -55,6 +55,6 @@ No se dispone de información sobre modelos comparables. Dado que se desconoce l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/liujinyaoMikey/TriSafeMem-9b
+- Hugging Face: https://huggingface.co/liujinyaoMikey/TriSafeMem-9b
 
 No se han encontrado otros enlaces relevantes (papers, repositorios, demos) en la búsqueda web.

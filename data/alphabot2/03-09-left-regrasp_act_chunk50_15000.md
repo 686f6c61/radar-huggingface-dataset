@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 
 | Modelo | Parametros | Arquitectura | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| alphabot2/03-09-Left-ReGrasp_act_chunk50_15000 | 51,6 M | ACT | chunk de 50 acciones | Apache 2.0 | HuggingFace |
+| alphabot2/03-09-Left-ReGrasp_act_chunk50_15000 | 51,6 M | ACT | chunk de 50 acciones | Apache 2.0 | Hugging Face |
 | Diffusion Policy (ej. en LeRobot) | variable (tipicamente 10-100 M) | Denoising Diffusion Probabilistic Model | ventana de observacion fija | MIT (referencia) | codigo abierto |
 | VQ-BeT (LeRobot) | variable | Transformer con cuantizacion de acciones | chunk de acciones | MIT (referencia) | codigo abierto |
 
@@ -73,7 +73,7 @@ No se dispone de datos de rendimiento comparativo en el mismo dataset. La compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alphabot2/03-09-Left-ReGrasp_act_chunk50_15000
+- Modelo en Hugging Face: https://huggingface.co/alphabot2/03-09-Left-ReGrasp_act_chunk50_15000
 - Dataset asociado: https://huggingface.co/datasets/alphabot2/03-09-Left-ReGrasp
 - Paper de ACT: https://huggingface.co/papers/2304.13705
 - LeRobot (libreria): https://github.com/huggingface/lerobot

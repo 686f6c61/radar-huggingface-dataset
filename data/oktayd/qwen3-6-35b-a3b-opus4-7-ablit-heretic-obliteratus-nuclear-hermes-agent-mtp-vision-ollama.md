@@ -78,7 +78,7 @@ La diferencia principal entre este modelo y las alternativas es la combinacion d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/oktayd/Qwen3.6-35B-A3B-Opus4.7-Ablit-Heretic-OBLITERATUS-Nuclear-Hermes-Agent-MTP-Vision-Ollama
+- Repositorio Hugging Face: https://huggingface.co/oktayd/Qwen3.6-35B-A3B-Opus4.7-Ablit-Heretic-OBLITERATUS-Nuclear-Hermes-Agent-MTP-Vision-Ollama
 - Modelo base (BF16): https://huggingface.co/oktayd/Qwen3.6-35B-A3B-Opus4.7-Ablit-Heretic-OBLITERATUS-Nuclear-Hermes-Agent-MTP-Vision-FreeToken
 - Qwen3.6 en Ollama: https://ollama.com/library/qwen3.6:35b-a3b
 - Guia de ejecucion local de Qwen 3.6 (Ollama, LM Studio, vLLM): https://www.aimadetools.com/blog/how-to-run-qwen-3-6-locally/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Stage-org/appworld-qwen35-4b-baseline-wm-6k-27b-hard-fixed-sft-epoch1 es un checkpoint de ajuste supervisado (SFT) publicado por el usuario Stage-org en HuggingFace. El identificador del repositorio y el tag de arquitectura (`qwen3_5`) apuntan a un fine-tuning de un modelo base de la familia Qwen 3.5 de aproximadamente 4.500 millones de parametros, orientado a tareas de agente en el entorno AppWorld (un banco de pruebas de agentes interactivos que simula aplicaciones y personas). El repositorio no incluye model card descriptiva, por lo que la mayor parte de su comportamiento declarado solo puede inferirse del nombre y de los metadatos tecnicos.
+Stage-org/appworld-qwen35-4b-baseline-wm-6k-27b-hard-fixed-sft-epoch1 es un checkpoint de ajuste supervisado (SFT) publicado por el usuario Stage-org en Hugging Face. El identificador del repositorio y el tag de arquitectura (`qwen3_5`) apuntan a un fine-tuning de un modelo base de la familia Qwen 3.5 de aproximadamente 4.500 millones de parametros, orientado a tareas de agente en el entorno AppWorld (un banco de pruebas de agentes interactivos que simula aplicaciones y personas). El repositorio no incluye model card descriptiva, por lo que la mayor parte de su comportamiento declarado solo puede inferirse del nombre y de los metadatos tecnicos.
 
 El modelo tiene 4.539.265.536 parametros totales almacenados en formato safetensors, con un tamano de repositorio de 9,1 GB. Ese tamano es coherente con pesos en bf16/fp16 (aproximadamente 9,1 GB de pesos), sin indicios de cuantizacion ni de publicacion en otros formatos. El modelo registra 10 descargas y 0 "likes", lo que indica que es un artefacto experimental de baja difusion y sin validacion por parte de la comunidad.
 
@@ -96,5 +96,5 @@ No se dispone de una comparacion de rendimiento cabeza a cabeza entre este model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Stage-org/appworld-qwen35-4b-baseline-wm-6k-27b-hard-fixed-sft-epoch1
+- Hugging Face: https://huggingface.co/Stage-org/appworld-qwen35-4b-baseline-wm-6k-27b-hard-fixed-sft-epoch1
 - La busqueda web realizada no devolvio resultados relevantes sobre este modelo, su paper, repositorio o demo; los unicos enlaces recuperados corresponden a portales de ofertas de practicas ("stage" en frances) sin relacion con el modelo. No hay enlaces adicionales disponibles.

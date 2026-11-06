@@ -72,8 +72,8 @@ No se dispone de información suficiente sobre las especificaciones de los model
 
 ## Enlaces
 
-- [HuggingFace: Dongkkka/pi0_dashboard_0904_20k_16bs](https://huggingface.co/Dongkkka/pi0_dashboard_0904_20k_16bs)
-- [HuggingFace: lerobot/pi0_base](https://huggingface.co/lerobot/pi0_base)
-- [HuggingFace: dataset Dongkkka/cyclo_dashboard_0904_test_v30](https://huggingface.co/datasets/Dongkkka/cyclo_dashboard_0904_test_v30)
-- [HuggingFace: Dongkkka/pi05_dashboard_0904_1k](https://huggingface.co/Dongkkka/pi05_dashboard_0904_1k)
-- [HuggingFace: perfil de Dongkkka](https://huggingface.co/Dongkkka)
+- [Hugging Face: Dongkkka/pi0_dashboard_0904_20k_16bs](https://huggingface.co/Dongkkka/pi0_dashboard_0904_20k_16bs)
+- [Hugging Face: lerobot/pi0_base](https://huggingface.co/lerobot/pi0_base)
+- [Hugging Face: dataset Dongkkka/cyclo_dashboard_0904_test_v30](https://huggingface.co/datasets/Dongkkka/cyclo_dashboard_0904_test_v30)
+- [Hugging Face: Dongkkka/pi05_dashboard_0904_1k](https://huggingface.co/Dongkkka/pi05_dashboard_0904_1k)
+- [Hugging Face: perfil de Dongkkka](https://huggingface.co/Dongkkka)

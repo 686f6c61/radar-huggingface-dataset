@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio Gayu-241204/lung-vision-models es un espacio alojado en HuggingFace por el usuario Gayu-241204 y distribuido bajo licencia MIT. En el momento de la consulta presenta 0 descargas y 0 likes, un tamaño de 0,1 GB y una unica revision registrada entre el 7 de octubre de 2026 (creacion) y la misma fecha (ultima actualizacion). La model card no aporta descripcion funcional: se limita a la cabecera `license: mit`, sin pipeline declarado, sin idiomas y sin detalle de arquitectura.
+El repositorio Gayu-241204/lung-vision-models es un espacio alojado en Hugging Face por el usuario Gayu-241204 y distribuido bajo licencia MIT. En el momento de la consulta presenta 0 descargas y 0 likes, un tamaño de 0,1 GB y una unica revision registrada entre el 7 de octubre de 2026 (creacion) y la misma fecha (ultima actualizacion). La model card no aporta descripcion funcional: se limita a la cabecera `license: mit`, sin pipeline declarado, sin idiomas y sin detalle de arquitectura.
 
 El nombre del repositorio sugiere un conjunto de modelos de vision orientados a imagen pulmonar, pero esta interpretacion es una hipotesis derivada unicamente del identificador y no esta respaldada por documentacion tecnica alguna. No se dispone de informacion sobre el problema que resuelve, el dataset empleado, la arquitectura, el numero de parametros ni el regimen de entrenamiento.
 
@@ -97,7 +97,7 @@ No disponible. Al no poder determinarse la tarea, el tamaño ni la arquitectura 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Gayu-241204/lung-vision-models
+- Repositorio en Hugging Face: https://huggingface.co/Gayu-241204/lung-vision-models
 - Perfil del autor: https://huggingface.co/Gayu-241204
 
 No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

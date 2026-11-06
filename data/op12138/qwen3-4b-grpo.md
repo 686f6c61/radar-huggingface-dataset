@@ -2,7 +2,7 @@
 
 ## Resumen
 
-qwen3-4b-grpo es un ajuste fino del modelo Qwen3-4B publicado por el usuario OP12138 en HuggingFace. Se trata de un modelo denso de 4.022.468.096 parametros (confirmados por los pesos en safetensors) orientado a generacion de texto conversacional, obtenido aplicando GRPO (Group Relative Policy Optimization) sobre el checkpoint base mediante la libreria TRL. El modelo se distribuye en formato safetensors y es compatible con el ecosistema transformers, text-generation-inference y endpoints compatibles con la API de inferencia.
+qwen3-4b-grpo es un ajuste fino del modelo Qwen3-4B publicado por el usuario OP12138 en Hugging Face. Se trata de un modelo denso de 4.022.468.096 parametros (confirmados por los pesos en safetensors) orientado a generacion de texto conversacional, obtenido aplicando GRPO (Group Relative Policy Optimization) sobre el checkpoint base mediante la libreria TRL. El modelo se distribuye en formato safetensors y es compatible con el ecosistema transformers, text-generation-inference y endpoints compatibles con la API de inferencia.
 
 El interes tecnico del checkpoint reside en el metodo de entrenamiento, no en una innovacion de arquitectura: GRPO, descrito en el articulo DeepSeekMath (arXiv:2402.03300), es una variante de aprendizaje por refuerzo sin modelo critico que estima la ventaja relativa dentro de un grupo de respuestas muestreadas para la misma pregunta. Esto lo convierte en un caso de estudio util para quien quiera reproducir pipelines de RL sobre modelos de 4B en hardware de gama alta de consumo.
 
@@ -75,11 +75,11 @@ Los datos de referencia de las alternativas provienen de sus respectivas model c
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| OP12138/qwen3-4b-grpo | 4,02 B | no disponible | no disponible | HuggingFace, 0 descargas |
-| Qwen3-4B | 4,02 B | 32.768 nativos, 131.072 con YaRN | Apache 2.0 | HuggingFace y ModelScope |
-| Qwen2.5-3B-Instruct | 3,09 B | 32.768 nativos, 131.072 con YaRN | Apache 2.0 | HuggingFace y ModelScope |
-| Llama-3.2-3B-Instruct | 3,21 B | 128.000 | Llama 3.2 Community License | HuggingFace y llama.com |
-| Phi-4-mini-instruct | 3,8 B | 128.000 | MIT | HuggingFace y Azure AI Foundry |
+| OP12138/qwen3-4b-grpo | 4,02 B | no disponible | no disponible | Hugging Face, 0 descargas |
+| Qwen3-4B | 4,02 B | 32.768 nativos, 131.072 con YaRN | Apache 2.0 | Hugging Face y ModelScope |
+| Qwen2.5-3B-Instruct | 3,09 B | 32.768 nativos, 131.072 con YaRN | Apache 2.0 | Hugging Face y ModelScope |
+| Llama-3.2-3B-Instruct | 3,21 B | 128.000 | Llama 3.2 Community License | Hugging Face y llama.com |
+| Phi-4-mini-instruct | 3,8 B | 128.000 | MIT | Hugging Face y Azure AI Foundry |
 
 La comparativa de rendimiento no puede completarse: no hay ninguna metrica publicada para este checkpoint, y las cifras de los modelos base no son atribuibles al ajuste con GRPO.
 
@@ -98,7 +98,7 @@ La comparativa de rendimiento no puede completarse: no hay ninguna metrica publi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OP12138/qwen3-4b-grpo
+- Modelo en Hugging Face: https://huggingface.co/OP12138/qwen3-4b-grpo
 - Articulo de GRPO (DeepSeekMath): https://huggingface.co/papers/2402.03300
 - Repositorio TRL: https://github.com/huggingface/trl
 - Model card del autor: no disponible (plantilla sin completar)

@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - El repositorio tiene un tamaño de 70,2 GB, lo que requiere espacio de almacenamiento considerable si se descargan todas las variantes.
 
 ## Enlaces
-- [HuggingFace: mradermacher/Qwen2-VL-7B-Grounding-GGUF](https://huggingface.co/mradermacher/Qwen2-VL-7B-Grounding-GGUF)
+- [Hugging Face: mradermacher/Qwen2-VL-7B-Grounding-GGUF](https://huggingface.co/mradermacher/Qwen2-VL-7B-Grounding-GGUF)
 - [Modelo base: yongxianwei/Qwen2-VL-7B-Grounding](https://huggingface.co/yongxianwei/Qwen2-VL-7B-Grounding)
 - [Página de solicitudes de modelos de mradermacher](https://huggingface.co/mradermacher/model_requests)
 - [README de referencia de TheBloke para uso de GGUF](https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF)

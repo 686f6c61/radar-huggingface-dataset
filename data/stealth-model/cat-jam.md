@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Cat Jam es el identificador con el que se publicó en HuggingFace un modelo de generación de texto sin desarrollador declarado, aparecido el 13 de octubre de 2026 y orientado a codificación agéntica, razonamiento, uso de herramientas y contexto largo. El 16 de octubre de 2026, Reflection AI lo identificó en su blog como una vista previa de su modelo Beam, y los pesos definitivos se publicaron como `reflection/Beam-1.0-501B-A23B`.
+Cat Jam es el identificador con el que se publicó en Hugging Face un modelo de generación de texto sin desarrollador declarado, aparecido el 13 de octubre de 2026 y orientado a codificación agéntica, razonamiento, uso de herramientas y contexto largo. El 16 de octubre de 2026, Reflection AI lo identificó en su blog como una vista previa de su modelo Beam, y los pesos definitivos se publicaron como `reflection/Beam-1.0-501B-A23B`.
 
 Se trata de un modelo de 501 000 millones de parámetros totales con 23 000 millones activos, lo que implica una arquitectura de mezcla de expertos (MoE), y una ventana de contexto de 1 048 576 tokens. La entrada es únicamente texto y admite llamadas a herramientas. La model card de Cat Jam no declara arquitectura, idiomas ni datos de entrenamiento; la información técnica disponible proviene de la ficha del modelo revelado.
 
@@ -79,7 +79,7 @@ Advertencia: estas cifras las publica Stealth Models como benchmark propio, no s
 
 | Modelo | Parámetros | Activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Cat Jam / Beam 1.0 501B A23B | 501B | 23B | 1 048 576 | Apache 2.0 (pesos de Beam); CC BY 4.0 (card de Cat Jam) | Pesos en HuggingFace y GGUF en Unsloth |
+| Cat Jam / Beam 1.0 501B A23B | 501B | 23B | 1 048 576 | Apache 2.0 (pesos de Beam); CC BY 4.0 (card de Cat Jam) | Pesos en Hugging Face y GGUF en Unsloth |
 | MiMo-V2.6-Pro | No disponible | No disponible | No disponible | No disponible | Mencionado en la model card; sin datos técnicos |
 | MiMo-V2.6-Flash | No disponible | No disponible | No disponible | No disponible | Mencionado en la model card; sin datos técnicos |
 | MISSINGNO | No disponible | No disponible | No disponible | No disponible | Mencionado en la model card; sin datos técnicos |
@@ -100,7 +100,7 @@ No hay información suficiente para comparar rendimiento, contexto o licencia fr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stealth-model/cat-jam
+- Modelo en Hugging Face: https://huggingface.co/stealth-model/cat-jam
 - Pesos del modelo revelado (Beam 1.0 501B A23B): https://huggingface.co/reflection/Beam-1.0-501B-A23B
 - Licencia de Beam: https://huggingface.co/reflection/Beam-1.0-501B-A23B/blob/main/LICENSE
 - Cuantizaciones GGUF (Unsloth): https://huggingface.co/unsloth/Beam-1.0-501B-A23B-GGUF
@@ -111,4 +111,4 @@ No hay información suficiente para comparar rendimiento, contexto o licencia fr
 - Mapa de benchmarks: https://stealthmodels.com/benchmarks/map
 - Metodología StealthMark: https://stealthmodels.com/stealthmark
 - Demos interactivas de benchmarks: https://stealthmodels.com/play
-- Perfil del autor en HuggingFace: https://huggingface.co/stealth-model
+- Perfil del autor en Hugging Face: https://huggingface.co/stealth-model

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jestonnayn/ses` es un repositorio de modelo alojado en HuggingFace por el usuario `jestonnayn`. A fecha de la informacion disponible, el repositorio no incluye model card, pipeline declarado, idiomas soportados ni resultados de evaluacion: el unico contenido documentado del README es el bloque de frontmatter con la licencia MIT. El repositorio se creo el 28 de septiembre de 2026 y se actualizo dos minutos y medio despues, sin actividad posterior registrada.
+`jestonnayn/ses` es un repositorio de modelo alojado en Hugging Face por el usuario `jestonnayn`. A fecha de la informacion disponible, el repositorio no incluye model card, pipeline declarado, idiomas soportados ni resultados de evaluacion: el unico contenido documentado del README es el bloque de frontmatter con la licencia MIT. El repositorio se creo el 28 de septiembre de 2026 y se actualizo dos minutos y medio despues, sin actividad posterior registrada.
 
 Con 0 descargas y 0 "likes", no hay evidencia de uso, validacion por parte de la comunidad ni adopcion en produccion. El tamano del repositorio es de 0,1 GB, lo que acota el volumen de pesos publicado, pero no permite determinar arquitectura, numero de parametros, longitud de contexto ni regimen de cuantizacion.
 
@@ -72,7 +72,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jestonnayn/ses | no disponible | no disponible | no disponible | MIT | HuggingFace (0 descargas) |
+| jestonnayn/ses | no disponible | no disponible | no disponible | MIT | Hugging Face (0 descargas) |
 | Alternativas | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -89,7 +89,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jestonnayn/ses
+- Hugging Face: https://huggingface.co/jestonnayn/ses
 
 La busqueda web no devolvio ningun enlace relacionado con este modelo. Los resultados obtenidos fueron los siguientes, todos ellos no pertinentes para la ficha:
 

@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HeartTranscriptor-oss | ~764 M | no disponible | zh, en, ja, ko, es | apache-2.0 | HuggingFace (tags `whisper`) |
+| HeartTranscriptor-oss | ~764 M | no disponible | zh, en, ja, ko, es | apache-2.0 | Hugging Face (tags `whisper`) |
 | OpenAI Whisper (familia) | 39 M - 1.55 B segun variante | ventanas de 30 s (arquitectura Whisper) | multilingue | MIT | ampliamente disponible |
 
 No se dispone de datos de rendimiento que permitan una comparacion cuantitativa con alternativas. La referencia a Whisper se incluye unicamente porque aparece como tag del repositorio, no como una afirmacion del autor sobre equivalencia.
@@ -83,8 +83,8 @@ No se dispone de datos de rendimiento que permitan una comparacion cuantitativa 
 
 ## Enlaces
 
-- HuggingFace (repositorio analizado): https://huggingface.co/Xiliourt/HeartTranscriptor-oss
-- HuggingFace (referencia de la model card): https://huggingface.co/HeartMuLa/HeartTranscriptor-oss
+- Hugging Face (repositorio analizado): https://huggingface.co/Xiliourt/HeartTranscriptor-oss
+- Hugging Face (referencia de la model card): https://huggingface.co/HeartMuLa/HeartTranscriptor-oss
 - GitHub: https://github.com/HeartMuLa/heartlib
 - Paper: https://arxiv.org/abs/2601.10547
 - Demo: https://heartmula.github.io/

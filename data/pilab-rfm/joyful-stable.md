@@ -72,5 +72,5 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace: pilab-rfm/joyful-stable](https://huggingface.co/pilab-rfm/joyful-stable)
+- [Hugging Face: pilab-rfm/joyful-stable](https://huggingface.co/pilab-rfm/joyful-stable)
 - [Perfil de la organización pilab-rfm](https://huggingface.co/pilab-rfm)

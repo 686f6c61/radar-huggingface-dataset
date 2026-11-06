@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sofiapopov/mobilevit-multitask-base` es un repositorio de HuggingFace que contiene una implementación personalizada en PyTorch de una arquitectura MobileViT orientada a multitarea, en configuración "tiny". El propio autor indica que se trata de un artefacto pensado para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeño tamaño, y no de un modelo preentrenado listo para producción. El repositorio incluye `predict.py`, `config.json`, `training_args.json` y un `model.safetensors` que se describe explícitamente como un checkpoint de inicialización válido para pruebas, no como un checkpoint entrenado ni evaluado.
+`sofiapopov/mobilevit-multitask-base` es un repositorio de Hugging Face que contiene una implementación personalizada en PyTorch de una arquitectura MobileViT orientada a multitarea, en configuración "tiny". El propio autor indica que se trata de un artefacto pensado para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeño tamaño, y no de un modelo preentrenado listo para producción. El repositorio incluye `predict.py`, `config.json`, `training_args.json` y un `model.safetensors` que se describe explícitamente como un checkpoint de inicialización válido para pruebas, no como un checkpoint entrenado ni evaluado.
 
 El interés de esta ficha es limitado pero concreto: sirve para ilustrar cómo se publica un esqueleto de arquitectura multitarea con licencia MIT, sin resultados de benchmarks y con una receta de entrenamiento por defecto (optimizador Adafactor con schedule coseno). La arquitectura declarada combina atención de ventana deslizante, fusión por co-atención, activación swish y normalización por batchnorm.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parametros | Contexto / tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| sofiapopov/mobilevit-multitask-base | 33.088 (según safetensors) | multitarea (no especificada), sin entrenar | MIT | HuggingFace, 0 descargas |
+| sofiapopov/mobilevit-multitask-base | 33.088 (según safetensors) | multitarea (no especificada), sin entrenar | MIT | Hugging Face, 0 descargas |
 | MobileViT (implementación de referencia de Apple) | no disponible en esta ficha | visión (clasificación) | no disponible en esta ficha | no disponible en esta ficha |
 | MobileViTv2 | no disponible en esta ficha | visión (clasificación) | no disponible en esta ficha | no disponible en esta ficha |
 
@@ -83,6 +83,6 @@ Nota: no se dispone de datos verificados en la información proporcionada para c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sofiapopov/mobilevit-multitask-base
+- Modelo en Hugging Face: https://huggingface.co/sofiapopov/mobilevit-multitask-base
 
 No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

@@ -60,7 +60,7 @@ Estos valores corresponden al rendimiento agregado del conjunto, no a este model
 - VRAM estimada para inferencia: con pesos en bf16, el modelo ocupa aproximadamente 2,35 GB (1,17B × 2 bytes). En fp32 serían unos 4,7 GB. La inferencia de una sola frase requiere menos de 4 GB de VRAM.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM es suficiente para inferencia (p. ej., RTX 3050, RTX 3060, GTX 1080 Ti). Para entrenamiento se usaron 2× GH200, pero no es necesario para uso inferencial.
 - Compatibilidad con GPU de consumo: sí, cabe en la mayoría de GPUs consumer modernas (RTX 3060 12GB, RTX 4070, etc.) e incluso en algunas con 6 GB.
-- Opciones de despliegue: al ser un modelo HuggingFace estándar, se puede cargar con transformers, vLLM, llama.cpp (si se convierte a GGUF), o TGI. También se puede usar directamente con el código de puntuación del repositorio `Urdatorn/sphragis_models`.
+- Opciones de despliegue: al ser un modelo Hugging Face estándar, se puede cargar con transformers, vLLM, llama.cpp (si se convierte a GGUF), o TGI. También se puede usar directamente con el código de puntuación del repositorio `Urdatorn/sphragis_models`.
 - Latencia y throughput: no se han publicado mediciones específicas. Para un modelo de 1,17B en una GPU consumer, la latencia por frase es del orden de decenas de milisegundos, pero depende del hardware y del backend.
 
 ## Comparativa con modelos similares
@@ -84,9 +84,9 @@ La comparación directa con el modelo base muestra que este ALM está especializ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Urdatorn/sphragis-alm-olmo1b-sentence-menander
+- Modelo en Hugging Face: https://huggingface.co/Urdatorn/sphragis-alm-olmo1b-sentence-menander
 - Dataset Sphragis: https://huggingface.co/datasets/Urdatorn/sphragis
 - Repositorio de código (entrenamiento, puntuación y atribución): https://github.com/Urdatorn/sphragis_models
-- Perfil del autor en HuggingFace: https://huggingface.co/Urdatorn
+- Perfil del autor en Hugging Face: https://huggingface.co/Urdatorn
 - Perfil del autor en GitHub: https://github.com/Urdatorn
 - Artículo de referencia (Huang, Murakami y Grieve, 2025): "Attributing authorship via the perplexity of authorial language models", PLoS ONE 20(7): e0327081.

@@ -45,7 +45,7 @@ En cuanto al entrenamiento, lo unico documentado es que se realizo un SFT con Un
 - Despliegue en entornos con recursos muy limitados: un modelo de 230M mas un adaptador cabe en GPUs de gama baja o incluso en CPU para tareas de generacion no interactiva.
 - Generacion de texto auxiliar en ingles: tareas de resumen, reescritura o extraccion de informacion donde no se requiera alta fidelidad factual, asumiendo el riesgo de alucinacion propio de un modelo de este tamano.
 - Base para posteriores ajustes: el adaptador puede servir como punto de partida para nuevos ciclos de SFT con datasets propios de dominio, dado que la licencia Apache 2.0 lo permite.
-- Docencia y divulgacion: ejemplo practico de publicacion de un adaptador en HuggingFace con metadatos minimos y entrenamiento via Unsloth.
+- Docencia y divulgacion: ejemplo practico de publicacion de un adaptador en Hugging Face con metadatos minimos y entrenamiento via Unsloth.
 
 ## Benchmarks y rendimiento
 
@@ -68,11 +68,11 @@ La informacion proporcionada no incluye datos de rendimiento ni de contexto de l
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| lugman-madhiai/LFM2.5-230M-SearchAgent-SFT-02-adapter (este) | 230M (base) | No disponible | Apache 2.0 | Adaptador en HuggingFace |
-| LiquidAI/LFM2.5-230M (modelo base) | 230M | No disponible | No disponible en la informacion facilitada | Pesos completos en HuggingFace |
-| LiquidAI/LFM2-350M | 350M | No disponible | No disponible en la informacion facilitada | Pesos completos en HuggingFace |
-| Qwen2.5-0.5B | 0,5B | No disponible | No disponible en la informacion facilitada | Pesos completos en HuggingFace |
-| SmolLM2-360M | 360M | No disponible | No disponible en la informacion facilitada | Pesos completos en HuggingFace |
+| lugman-madhiai/LFM2.5-230M-SearchAgent-SFT-02-adapter (este) | 230M (base) | No disponible | Apache 2.0 | Adaptador en Hugging Face |
+| LiquidAI/LFM2.5-230M (modelo base) | 230M | No disponible | No disponible en la informacion facilitada | Pesos completos en Hugging Face |
+| LiquidAI/LFM2-350M | 350M | No disponible | No disponible en la informacion facilitada | Pesos completos en Hugging Face |
+| Qwen2.5-0.5B | 0,5B | No disponible | No disponible en la informacion facilitada | Pesos completos en Hugging Face |
+| SmolLM2-360M | 360M | No disponible | No disponible en la informacion facilitada | Pesos completos en Hugging Face |
 
 No se dispone de datos de benchmarks que permitan comparar el rendimiento de este adaptador con el de las alternativas citadas.
 
@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento de est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lugman-madhiai/LFM2.5-230M-SearchAgent-SFT-02-adapter
+- Modelo en Hugging Face: https://huggingface.co/lugman-madhiai/LFM2.5-230M-SearchAgent-SFT-02-adapter
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-230M
 - Unsloth (framework de entrenamiento declarado): https://github.com/unslothai/unsloth
 - Paper, blog, repositorio o demo del autor: no disponibles en la informacion proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Alwie_2.1 es un ajuste fino (fine-tune) del modelo meta-llama/Llama-3.1-8B-Instruct, publicado en HuggingFace por el usuario danarsakila-gmail-com. El repositorio no incluye model card descriptiva, datos de entrenamiento, evaluaciones ni ejemplos de uso: la unica informacion declarada es la licencia apache-2.0 y la relacion de parentesco con el modelo base de Meta. En el momento de redactar esta ficha acumula 0 descargas y 0 "likes", y el pipeline no esta declarado.
+Alwie_2.1 es un ajuste fino (fine-tune) del modelo meta-llama/Llama-3.1-8B-Instruct, publicado en Hugging Face por el usuario danarsakila-gmail-com. El repositorio no incluye model card descriptiva, datos de entrenamiento, evaluaciones ni ejemplos de uso: la unica informacion declarada es la licencia apache-2.0 y la relacion de parentesco con el modelo base de Meta. En el momento de redactar esta ficha acumula 0 descargas y 0 "likes", y el pipeline no esta declarado.
 
 Por herencia del modelo base, se trata de un transformer decoder-only denso de aproximadamente 8.000 millones de parametros con una ventana de contexto de 128.000 tokens en su configuracion original. Es decir, la arquitectura y el grueso de las capacidades previsiblemente proceden de Llama 3.1 8B Instruct, pero el proceso de ajuste (dataset, numero de tokens, metodo, hiperparametros) es completamente opaco.
 
@@ -89,6 +89,6 @@ Los datos de la columna del fine-tune son los declarados en el repositorio; los 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/danarsakila-gmail-com/Alwie_2.1
+- Modelo en Hugging Face: https://huggingface.co/danarsakila-gmail-com/Alwie_2.1
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Nota: la busqueda web realizada no devolvio ningun enlace relacionado con el modelo ni con su autor. Los unicos resultados obtenidos apuntan a directorios de eventos en Toronto (allevents.in, todocanada.ca, torontotourism.org, eventbrite.ca, blogto.com) y se descartan por no ser relevantes.

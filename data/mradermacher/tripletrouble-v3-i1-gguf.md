@@ -94,7 +94,7 @@ Otros modelos de ~34B con cuantizaciones GGUF comparables: no disponible (no ide
 
 ## Enlaces
 
-- Repositorio HuggingFace (esta ficha): https://huggingface.co/mradermacher/TripleTrouble-V3-i1-GGUF
+- Repositorio Hugging Face (esta ficha): https://huggingface.co/mradermacher/TripleTrouble-V3-i1-GGUF
 - Modelo base: https://huggingface.co/OliviaRossi/TripleTrouble-V3
 - Cuantizaciones estaticas del mismo autor: https://huggingface.co/mradermacher/TripleTrouble-V3-GGUF
 - Pagina de resumen y descargas del autor: https://hf.tst.eu/model#TripleTrouble-V3-i1-GGUF

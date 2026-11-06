@@ -4,7 +4,7 @@
 
 Qwen3-8B-NBPO es un modelo de lenguaje de 8 mil millones de parámetros desarrollado por el usuario "promotion" como un fine-tuning del modelo Qwen3-8B de Alibaba Cloud. Su nombre hace referencia a Nash Bargaining Preference Optimization (NBPO), un método de alineación multi-objetivo que optimiza simultáneamente cuatro objetivos (utilidad, veracidad, honestidad y seguimiento de instrucciones) mediante un enfoque de negociación de Nash. El modelo se entrena desde Qwen3-8B como política de referencia e inicialización, y según su model card, supera a todos los baselines en el panel de evaluación en términos de superávit mínimo y promedio.
 
-Este modelo es relevante porque aborda el problema de la alineación multi-objetivo, un área activa de investigación en IA, y ofrece una alternativa a los métodos tradicionales de RLHF o DPO al buscar un equilibrio óptimo entre objetivos en conflicto. Al estar basado en Qwen3-8B, hereda su arquitectura transformer densa y su soporte para modos de razonamiento híbrido (thinking y no-thinking). El modelo se distribuye bajo licencia Apache-2.0 en el frontmatter de HuggingFace, aunque la model card menciona la licencia Qwen3, lo que genera una ambigüedad que se detalla más adelante.
+Este modelo es relevante porque aborda el problema de la alineación multi-objetivo, un área activa de investigación en IA, y ofrece una alternativa a los métodos tradicionales de RLHF o DPO al buscar un equilibrio óptimo entre objetivos en conflicto. Al estar basado en Qwen3-8B, hereda su arquitectura transformer densa y su soporte para modos de razonamiento híbrido (thinking y no-thinking). El modelo se distribuye bajo licencia Apache-2.0 en el frontmatter de Hugging Face, aunque la model card menciona la licencia Qwen3, lo que genera una ambigüedad que se detalla más adelante.
 
 ## Especificaciones tecnicas
 
@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en benchm
 
 ## Limitaciones y advertencias
 
-- Ambigüedad de licencia: el frontmatter de HuggingFace indica Apache-2.0, pero la model card afirma "Released under the Qwen3 licence". Esta discrepancia debe resolverse antes de un uso comercial; la licencia Qwen3 puede tener restricciones adicionales.
+- Ambigüedad de licencia: el frontmatter de Hugging Face indica Apache-2.0, pero la model card afirma "Released under the Qwen3 licence". Esta discrepancia debe resolverse antes de un uso comercial; la licencia Qwen3 puede tener restricciones adicionales.
 - Tokenizer obligatorio: el modelo requiere el tokenizer incluido en este repositorio. Usar el tokenizer estándar de Qwen3-8B provocará que el modelo razone en voz alta y las generaciones se corrompan, según la model card.
 - Datos de entrenamiento no publicados: no se especifica la composición del dataset de preferencias ni el número de tokens de entrenamiento, lo que dificulta evaluar posibles sesgos o limitaciones de cobertura.
 - Sin benchmarks estándar: las métricas de superávit se basan en un oráculo Qwen3-32B y 100 prompts, un tamaño de evaluación pequeño que puede no ser representativo de tareas reales.
@@ -87,6 +87,6 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en benchm
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/promotion/Qwen3-8B-NBPO
+- Repositorio Hugging Face: https://huggingface.co/promotion/Qwen3-8B-NBPO
 - Dataset de generaciones del benchmark: https://huggingface.co/datasets/promotion/nbpo-benchmark-generations
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B

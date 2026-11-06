@@ -97,7 +97,7 @@ No disponible. Este repositorio es un fixture de test y no compite con modelos d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/inference-optimization/DeepSeek-V3-0.86B-MTP-PR3225-FP8-Dynamic
+- Modelo en Hugging Face: https://huggingface.co/inference-optimization/DeepSeek-V3-0.86B-MTP-PR3225-FP8-Dynamic
 - Modelo base (checkpoint de juguete previo a la cuantizacion): https://huggingface.co/inference-optimization/DeepSeek-V3-0.86B-MTP-PR3225
 - Arquitectura y tokenizer originales (DeepSeek-V3-Base, revision `afb92e1fa402c2be2a9eb085312bb02e0384d6c7`): https://huggingface.co/deepseek-ai/DeepSeek-V3-Base
 - Licencia del modelo original: https://huggingface.co/deepseek-ai/DeepSeek-V3-Base/blob/afb92e1fa402c2be2a9eb085312bb02e0384d6c7/LICENSE-MODEL

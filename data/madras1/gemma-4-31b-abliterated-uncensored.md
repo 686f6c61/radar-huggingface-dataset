@@ -70,8 +70,8 @@ Estos valores no están verificados de forma independiente; el autor indica que 
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Madras1/Gemma-4-31B-Abliterated-Uncensored | 31.273.086.512 | 256.000 tokens | Apache 2.0 | HuggingFace (safetensors) | Abliterado con doble proyección ortogonal, alpha 1,35 |
-| google/gemma-4-31B-it | 31.273.086.512 | 256.000 tokens | no disponible | HuggingFace (modelo base) | Modelo instructivo con filtros de seguridad activos |
+| Madras1/Gemma-4-31B-Abliterated-Uncensored | 31.273.086.512 | 256.000 tokens | Apache 2.0 | Hugging Face (safetensors) | Abliterado con doble proyección ortogonal, alpha 1,35 |
+| google/gemma-4-31B-it | 31.273.086.512 | 256.000 tokens | no disponible | Hugging Face (modelo base) | Modelo instructivo con filtros de seguridad activos |
 | huihui_ai/gemma-4-abliterated:31b | no disponible | no disponible | no disponible | Ollama | Versión abliterated de Gemma 4 31B según búsqueda web |
 
 No se dispone de benchmarks comparativos entre estos modelos en la información proporcionada. El modelo de huihui_ai aparece en los resultados de búsqueda web, pero no se han encontrado datos técnicos detallados ni resultados de rendimiento.
@@ -87,7 +87,7 @@ No se dispone de benchmarks comparativos entre estos modelos en la información 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Madras1/Gemma-4-31B-Abliterated-Uncensored
-- Modelo base en HuggingFace: https://huggingface.co/google/gemma-4-31B-it
+- Modelo en Hugging Face: https://huggingface.co/Madras1/Gemma-4-31B-Abliterated-Uncensored
+- Modelo base en Hugging Face: https://huggingface.co/google/gemma-4-31B-it
 - Repositorio de abliteración de Gemma 4 (TrevorS): https://github.com/TrevorS/gemma-4-abliteration
 - Versión de Gemma 4 abliterated en Ollama (huihui_ai): https://ollama.com/huihui_ai/gemma-4-abliterated:31b

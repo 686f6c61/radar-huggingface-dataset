@@ -24,7 +24,7 @@ Su relevancia práctica es limitada: cuenta con 0 descargas y 0 "likes", la docu
 | dtype de calculo | float32 |
 | Tamano del repositorio | 13,7 GB |
 | Autor | yuhengtu-bytedance |
-| Fecha de creacion (segun HuggingFace) | 2026-09-12 |
+| Fecha de creacion (segun Hugging Face) | 2026-09-12 |
 | Libreria | transformers |
 | Descargas / likes | 0 / 0 |
 
@@ -38,7 +38,7 @@ Respecto al entrenamiento, lo único documentado es el proceso de fusión, no el
 
 - Generación de texto: es la tarea declarada en el pipeline (`text-generation`).
 - Uso conversacional: la etiqueta `conversational` sugiere que el checkpoint de origen pudo haber recibido ajuste orientado a diálogo, aunque no se documenta el formato de prompt ni la plantilla de chat.
-- Compatibilidad con transformers y text-generation-inference: puede cargarse con las herramientas estándar del ecosistema HuggingFace.
+- Compatibilidad con transformers y text-generation-inference: puede cargarse con las herramientas estándar del ecosistema Hugging Face.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingües: no disponible (no se declara ninguna lista de idiomas).
@@ -99,7 +99,7 @@ La comparación directa de rendimiento no es posible porque este merge carece de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-2k_3k_4k_weightedavg_merge
+- Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-2k_3k_4k_weightedavg_merge
 - Repositorio de mergekit: https://github.com/cg123/mergekit
 - Paper del metodo Linear (merge por promedio ponderado): https://arxiv.org/abs/2203.05482
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo; las busquedas devolvieron unicamente paginas generales de Microsoft, sin relacion con el repositorio.

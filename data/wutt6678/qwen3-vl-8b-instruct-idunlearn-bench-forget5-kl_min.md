@@ -4,7 +4,7 @@
 
 Este repositorio contiene un adaptador LoRA (no un modelo completo) publicado por el usuario wutt6678 bajo el identificador `wutt6678/Qwen3-VL-8B-Instruct-IDUnlearn-Bench-forget5-KL_Min`. Se trata de un ajuste PEFT sobre el punto de control `outputs_3/mllmu_vanilla_qwen3-vl-8b`, que el propio repositorio declara como modelo base. El tamano del repositorio es de 0,2 GB, coherente con un adaptador de bajo rango y no con un modelo de pesos completos.
 
-Por el nombre del identificador, el artefacto parece corresponder a un experimento de desaprendizaje automatico (machine unlearning) sobre un modelo multimodal Qwen3-VL de 8.000 millones de parametros, con un conjunto de olvido etiquetado como "forget5" y una funcion de perdida basada en minimizacion de divergencia KL. Esta interpretacion procede unicamente del nombre del repositorio: la model card publicada es la plantilla por defecto de HuggingFace y no contiene ninguna descripcion real, hiperparametros, datos de entrenamiento ni resultados de evaluacion.
+Por el nombre del identificador, el artefacto parece corresponder a un experimento de desaprendizaje automatico (machine unlearning) sobre un modelo multimodal Qwen3-VL de 8.000 millones de parametros, con un conjunto de olvido etiquetado como "forget5" y una funcion de perdida basada en minimizacion de divergencia KL. Esta interpretacion procede unicamente del nombre del repositorio: la model card publicada es la plantilla por defecto de Hugging Face y no contiene ninguna descripcion real, hiperparametros, datos de entrenamiento ni resultados de evaluacion.
 
 Su relevancia actual es limitada y muy especializada: sirve como artefacto de investigacion reproducible para estudiar tecnicas de olvido selectivo en modelos vision-lenguaje, un area con implicaciones directas en privacidad y cumplimiento normativo. No esta pensado para despliegue en produccion: no tiene licencia declarada, no tiene documentacion, acumula cero descargas y cero "me gusta", y su model card no aporta informacion verificable sobre capacidades o limitaciones.
 
@@ -23,7 +23,7 @@ Su relevancia actual es limitada y muy especializada: sirve como artefacto de in
 | Libreria de carga | peft 0.19.1, transformers |
 | Modelo base declarado | `outputs_3/mllmu_vanilla_qwen3-vl-8b` (referencia no resoluble de forma publica con los datos disponibles) |
 | Tamano del repositorio | 0,2 GB |
-| Fecha de creacion / actualizacion | 2026-10-01 / 2026-10-01 (segun metadatos de HuggingFace) |
+| Fecha de creacion / actualizacion | 2026-10-01 / 2026-10-01 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -74,7 +74,7 @@ Nota: no hay requisitos publicados por el autor. Las cifras siguientes son estim
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `wutt6678/Qwen3-VL-8B-Instruct-IDUnlearn-Bench-forget5-KL_Min` (adaptador LoRA) | no disponible (adaptador de 0,2 GB) | no disponible | sin benchmarks publicados | no disponible | publico en HuggingFace, 0 descargas |
+| `wutt6678/Qwen3-VL-8B-Instruct-IDUnlearn-Bench-forget5-KL_Min` (adaptador LoRA) | no disponible (adaptador de 0,2 GB) | no disponible | sin benchmarks publicados | no disponible | publico en Hugging Face, 0 descargas |
 | `outputs_3/mllmu_vanilla_qwen3-vl-8b` (modelo base declarado) | 8B segun el identificador, no confirmado | no disponible | no disponible | no disponible | referencia no resoluble con los datos disponibles |
 | Qwen3-VL-8B-Instruct (modelo publico de Alibaba, si el identificador corresponde a el) | 8B | hasta 256K tokens segun documentacion publica del modelo base, no confirmado en esta model card | benchmarks publicados por su autor, no incluidos aqui | Apache 2.0 segun su publicacion original, no confirmado para este repositorio | publico |
 | Otros adaptadores de desaprendizaje para modelos vision-lenguaje | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -83,7 +83,7 @@ No se dispone de informacion suficiente para una comparativa de rendimiento rigu
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: la model card es la plantilla por defecto de HuggingFace, con todos los campos marcados como "[More Information Needed]".
+- Ausencia total de documentacion: la model card es la plantilla por defecto de Hugging Face, con todos los campos marcados como "[More Information Needed]".
 - Licencia no declarada: sin licencia explicita no hay autorizacion clara de uso comercial, redistribucion ni modificacion. Debe tratarse como no apto para produccion.
 - Riesgo de olvido catastrofico: los metodos de desaprendizaje por minimizacion de KL pueden degradar capacidades generales del modelo base mas alla del conocimiento objetivo, y no hay evaluacion publicada que cuantifique ese dano.
 - Olvido no garantizado: el desaprendizaje en adaptadores de bajo rango es a menudo superficial; el conocimiento puede reaparecer con ajuste adicional, cambio de prompt o acceso al modelo base original.
@@ -96,7 +96,7 @@ No se dispone de informacion suficiente para una comparativa de rendimiento rigu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/wutt6678/Qwen3-VL-8B-Instruct-IDUnlearn-Bench-forget5-KL_Min
+- Repositorio en Hugging Face: https://huggingface.co/wutt6678/Qwen3-VL-8B-Instruct-IDUnlearn-Bench-forget5-KL_Min
 - Modelo base declarado (referencia indicada en los tags, puede no ser accesible): https://huggingface.co/outputs_3/mllmu_vanilla_qwen3-vl-8b
 - Referencia del tag `arxiv:1910.09700` (Lacoste et al., 2019, calculador de impacto medioambiental citado en la plantilla): https://arxiv.org/abs/1910.09700
 - Documentacion de PEFT: https://huggingface.co/docs/peft

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`keras/gte_modern_bert_base` es un modelo de embeddings de texto (tarea `TextEmbedder`) construido sobre la arquitectura ModernBERT y empaquetado con la librería KerasHub. Lo publica la organizacion Keras en HuggingFace y su proposito es generar representaciones vectoriales densas de texto, utiles para busqueda semantica, recuperacion de informacion, clustering y similitud entre frases. El modelo forma parte del ecosistema GTE (General Text Embeddings) trasladado al formato multi-backend de Keras.
+`keras/gte_modern_bert_base` es un modelo de embeddings de texto (tarea `TextEmbedder`) construido sobre la arquitectura ModernBERT y empaquetado con la librería KerasHub. Lo publica la organizacion Keras en Hugging Face y su proposito es generar representaciones vectoriales densas de texto, utiles para busqueda semantica, recuperacion de informacion, clustering y similitud entre frases. El modelo forma parte del ecosistema GTE (General Text Embeddings) trasladado al formato multi-backend de Keras.
 
 Tecnicamente se trata de un transformer encoder de 22 capas con `hidden_dim` de 768, 12 cabezas de atencion, `intermediate_dim` de 1152 y un vocabulario de 50.368 tokens. Incorpora atencion local con ventana de 128 tokens combinada con capas de atencion global cada 3 capas, ademas de embeddings rotatorios (RoPE) con longitud de onda maxima de 160.000, lo que es caracteristico de la familia ModernBERT.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| keras/gte_modern_bert_base | no disponible (aprox. 110-150 M) | ventana local 128 + global cada 3 capas | Embeddings | no disponible | HuggingFace (KerasHub) |
-| BAAI/bge-base-en-v1.5 | 109 M | 512 tokens | Embeddings | MIT | HuggingFace |
-| intfloat/e5-base-v2 | 109 M | 512 tokens | Embeddings | MIT | HuggingFace |
-| sentence-transformers/all-MiniLM-L6-v2 | 22 M | 256 tokens | Embeddings | Apache 2.0 | HuggingFace |
+| keras/gte_modern_bert_base | no disponible (aprox. 110-150 M) | ventana local 128 + global cada 3 capas | Embeddings | no disponible | Hugging Face (KerasHub) |
+| BAAI/bge-base-en-v1.5 | 109 M | 512 tokens | Embeddings | MIT | Hugging Face |
+| intfloat/e5-base-v2 | 109 M | 512 tokens | Embeddings | MIT | Hugging Face |
+| sentence-transformers/all-MiniLM-L6-v2 | 22 M | 256 tokens | Embeddings | Apache 2.0 | Hugging Face |
 
 La comparativa se ofrece como referencia de categoria; no se dispone de datos de rendimiento del modelo evaluado que permitan una comparacion cuantitativa fiable.
 
@@ -83,7 +83,7 @@ La comparativa se ofrece como referencia de categoria; no se dispone de datos de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/keras/gte_modern_bert_base
+- Hugging Face: https://huggingface.co/keras/gte_modern_bert_base
 - Documentacion de ModernBert en KerasHub: https://keras.io/api/keras_hub/models/modern_bert
 - Documentacion de Keras: https://keras.io/
 - Keras 3 multi-backend: https://keras.io/keras_3/

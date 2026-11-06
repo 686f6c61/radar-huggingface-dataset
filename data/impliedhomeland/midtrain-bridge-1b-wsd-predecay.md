@@ -76,6 +76,6 @@ No se dispone de benchmarks comparativos entre estos modelos, por lo que no es p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Impliedhomeland/midtrain-bridge-1B-wsd-predecay
+- Repositorio Hugging Face: https://huggingface.co/Impliedhomeland/midtrain-bridge-1B-wsd-predecay
 - Dataset asociado (mencionado en la model card): `Impliedhomeland/midtrain-bridge-data` (https://huggingface.co/Impliedhomeland/midtrain-bridge-data)
 - Configs reproducibles: referenciados como `WSD/datamatched/gen_configs_wsd_1B_60B_b*.py` en el repositorio del proyecto, pero no se proporciona URL directa.

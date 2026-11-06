@@ -41,7 +41,7 @@ Tampoco se documentan los datos de entrenamiento: no se indica el número de tok
 
 - Ejecución de una tarea de manipulación robótica concreta: reordenación de objetos sobre una mesa (`table_rearrangement`), según la model card.
 - Aprendizaje por imitación como paradigma de entrenamiento declarado (etiqueta `imitation-learning`).
-- Integración con un pipeline de robótica (pipeline declarado `robotics` en HuggingFace).
+- Integración con un pipeline de robótica (pipeline declarado `robotics` en Hugging Face).
 - Reproducibilidad de evaluación: el autor enlaza un repositorio de código con los comandos de evaluación.
 - Capacidades de generación de texto, razonamiento, código, matemáticas, visión general, tool calling, agentes multi-paso, multilingüismo, modo thinking, audio o vídeo: no disponibles o no declaradas para este artefacto.
 - No se declaran capacidades de function calling, uso como agente conversacional ni soporte multilingüe.
@@ -84,7 +84,7 @@ No se dispone de datos verificables para construir una comparativa rigurosa. La 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (`pi05-table-rearrangement`) | no disponible | no disponible | 89/100 en `table_rearrangement` (autodeclarado) | no disponible | HuggingFace, 12,4 GB, 0 descargas |
+| Este checkpoint (`pi05-table-rearrangement`) | no disponible | no disponible | 89/100 en `table_rearrangement` (autodeclarado) | no disponible | Hugging Face, 12,4 GB, 0 descargas |
 | Alternativas comparables (otras políticas VLA o de imitación) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 En ausencia de datos contrastados sobre el propio modelo y sobre alternativas de la misma categoría en la información proporcionada, no es posible establecer una comparación cuantitativa. Cualquier comparación con políticas como π0.5 original, OpenVLA u otras requeriría consultar sus respectivas fichas y verificar que la tarea y el protocolo de evaluación coinciden.
@@ -103,7 +103,7 @@ En ausencia de datos contrastados sobre el propio modelo y sobre alternativas de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ustc-huangjiale/robosynchallenge-firststage-pi05-table-rearrangement
+- Modelo en Hugging Face: https://huggingface.co/ustc-huangjiale/robosynchallenge-firststage-pi05-table-rearrangement
 - Repositorio de código y comandos de evaluación: https://github.com/ustc-huangjiale/Robosynchallengefirststage
 - Paper, blog o demo oficial: no disponible en la información proporcionada
 - Resultados de búsqueda web relevantes: no disponible (los resultados obtenidos no están relacionados con el modelo)

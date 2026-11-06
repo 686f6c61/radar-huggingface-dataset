@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PhysBrain 1.5 es un modelo de lenguaje y visión (VLM) desarrollado por DeepCybo, en colaboración con Zhongguancun Academy y Zhongguancun Institute of Artificial Intelligence, orientado a la robótica y a la inteligencia física. Se presenta como una continuación de la línea PhysBrain, cuyo objetivo es transformar un VLM generalista en una base para la interacción con el entorno físico. La versión disponible en HuggingFace, PhysBrain1.5-2B, es un fine-tuning de Qwen/Qwen3-VL-2B-Instruct, con 2.161.610.752 parámetros.
+PhysBrain 1.5 es un modelo de lenguaje y visión (VLM) desarrollado por DeepCybo, en colaboración con Zhongguancun Academy y Zhongguancun Institute of Artificial Intelligence, orientado a la robótica y a la inteligencia física. Se presenta como una continuación de la línea PhysBrain, cuyo objetivo es transformar un VLM generalista en una base para la interacción con el entorno físico. La versión disponible en Hugging Face, PhysBrain1.5-2B, es un fine-tuning de Qwen/Qwen3-VL-2B-Instruct, con 2.161.610.752 parámetros.
 
 El modelo unifica tres capacidades fundamentales en un único sistema: comprensión del mundo observado, generación de acciones dirigidas a objetivos y predicción de la evolución del entorno. Para ello, extiende el modelo base con tokens dedicados a acciones y estados visuales, de modo que las respuestas de lenguaje, los outputs espaciales, las trayectorias del end-effector y los estados futuros se representan como tokens discretos. Todo se aprende con el mismo backbone autoregresivo y un objetivo unificado de predicción del siguiente token, sin cabezales específicos por tarea. El tamaño de 2B lo hace ligero para VLM y adecuado para despliegues en robótica con recursos limitados.
 
@@ -78,6 +78,6 @@ No se dispone de tablas comparativas publicadas en la informacion disponible. Co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DeepCybo/PhysBrain1.5-2B
+- Repositorio en Hugging Face: https://huggingface.co/DeepCybo/PhysBrain1.5-2B
 - Paper de PhysBrain: https://arxiv.org/html/2512.16793v1
 - Pagina del proyecto PhysBrain: https://zgc-embodyai.github.io/PhysBrain/

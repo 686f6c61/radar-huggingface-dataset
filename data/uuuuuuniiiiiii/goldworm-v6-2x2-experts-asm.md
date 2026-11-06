@@ -2,7 +2,7 @@
 
 ## Resumen
 
-goldworm-v6-2x2-experts-asm es un checkpoint de investigación publicado por el usuario Uuuuuuniiiiiii en HuggingFace. Se trata de un modelo de lenguaje a nivel de byte con arquitectura de mezcla de expertos (MoE), obtenido mediante *upcycling* del modelo denso goldworm-v6 (2,76 M de parámetros) y ajustado durante 12 minutos en una única GPU RTX 4060 de portátil para una tarea muy concreta: traducir instrucciones x86-64 entre su representación en ensamblador (sintaxis Intel de objdump) y su codificación en hexadecimal.
+goldworm-v6-2x2-experts-asm es un checkpoint de investigación publicado por el usuario Uuuuuuniiiiiii en Hugging Face. Se trata de un modelo de lenguaje a nivel de byte con arquitectura de mezcla de expertos (MoE), obtenido mediante *upcycling* del modelo denso goldworm-v6 (2,76 M de parámetros) y ajustado durante 12 minutos en una única GPU RTX 4060 de portátil para una tarea muy concreta: traducir instrucciones x86-64 entre su representación en ensamblador (sintaxis Intel de objdump) y su codificación en hexadecimal.
 
 El modelo no es un modelo de propósito general ni un asistente conversacional. Solo conoce una distribución sintética estrecha de instrucciones de 64 bits (registros de 64 bits y formas de tipo mov/add/sub/xor/and/cmp/lea). Su interés es puramente metodológico: sirve como artefacto de demostración para estudiar si el *upcycling* a MoE aporta ventajas frente a un ajuste denso equivalente con el mismo presupuesto de cómputo. El propio autor concluye que el experimento es **inconcluso**.
 
@@ -72,8 +72,8 @@ Por tarea (este modelo, ejecución original): A 985/987, D 1004/1013. En el chec
 
 | Modelo | Parámetros (activos) | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| goldworm-v6-2x2-experts-asm | 8,07 M (4,53 M) | 256 | 98,75% exacto (test IID) | MIT | HuggingFace |
-| goldworm-v6 (denso, ajuste 12 min) | 2,76 M | no disponible | 99,75% exacto (test IID) | MIT (según base) | HuggingFace |
+| goldworm-v6-2x2-experts-asm | 8,07 M (4,53 M) | 256 | 98,75% exacto (test IID) | MIT | Hugging Face |
+| goldworm-v6 (denso, ajuste 12 min) | 2,76 M | no disponible | 99,75% exacto (test IID) | MIT (según base) | Hugging Face |
 | Brazo MoE original (sin pesos) | 8,07 M (4,53 M) | 256 | 99,45% exacto | no aplica (no publicado) | no disponible |
 
 No se dispone de comparación con modelos de propósito general porque la tarea (traducción de instrucciones x86-64 aisladas) es específica y no existen alternativas públicas documentadas en la información proporcionada.
@@ -92,7 +92,7 @@ No se dispone de comparación con modelos de propósito general porque la tarea 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Uuuuuuniiiiiii/goldworm-v6-2x2-experts-asm
+- Hugging Face: https://huggingface.co/Uuuuuuniiiiiii/goldworm-v6-2x2-experts-asm
 - Modelo base: https://huggingface.co/Uuuuuuniiiiiii/goldworm-v6
 - Código de inferencia: `modeling_goldworm_moe.py` (incluido en el repositorio)
 - Script de entrenamiento con guardado: `moe_clean_save.py` (referenciado en la model card)

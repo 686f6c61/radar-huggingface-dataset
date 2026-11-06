@@ -2,11 +2,11 @@
 
 ## Resumen
 
-whisper-small-pashto es un ajuste fino de openai/whisper-small para reconocimiento automático de voz (ASR) en pastún (ps), uno de los idiomas con menor cobertura en sistemas de voz. Lo desarrolla el usuario de HuggingFace mibarhim y se entrena sobre el split de entrenamiento de Common Voice Scripted Speech 27.0 en pastún. El modelo base es un transformer encoder-decoder de tipo Whisper con 241.734.912 parámetros, pensado originalmente para ASR multilingüe y traducción de voz.
+whisper-small-pashto es un ajuste fino de openai/whisper-small para reconocimiento automático de voz (ASR) en pastún (ps), uno de los idiomas con menor cobertura en sistemas de voz. Lo desarrolla el usuario de Hugging Face mibarhim y se entrena sobre el split de entrenamiento de Common Voice Scripted Speech 27.0 en pastún. El modelo base es un transformer encoder-decoder de tipo Whisper con 241.734.912 parámetros, pensado originalmente para ASR multilingüe y traducción de voz.
 
 La relevancia del modelo está en la magnitud de la mejora: el whisper-small original obtiene un WER normalizado de 104,2 sobre el test de Common Voice 27.0 en pastún (es decir, prácticamente inutilizable, con salidas frecuentemente transcritas en alfabeto latino), mientras que este ajuste baja a 27,8 en el mismo conjunto de 5.000 clips. En habla espontánea (Common Voice Spontaneous Speech 5.0) pasa de 91,4 a 33,0. Es, por tanto, un ejemplo de cómo un ajuste fino relativamente contenido (5.000 pasos) puede convertir un modelo multilingüe genérico en una herramienta funcional para un idioma de bajos recursos.
 
-El modelo se distribuye con licencia Apache 2.0, en formato safetensors y compatible con la librería transformers y con endpoints de HuggingFace. Su tamaño (aproximadamente 242 millones de parámetros) lo sitúa en el rango de modelos que caben en GPU de consumo, lo que facilita su despliegue en entornos con recursos limitados.
+El modelo se distribuye con licencia Apache 2.0, en formato safetensors y compatible con la librería transformers y con endpoints de Hugging Face. Su tamaño (aproximadamente 242 millones de parámetros) lo sitúa en el rango de modelos que caben en GPU de consumo, lo que facilita su despliegue en entornos con recursos limitados.
 
 ## Especificaciones tecnicas
 
@@ -33,7 +33,7 @@ El entrenamiento se realizó sobre el split de entrenamiento de Common Voice Scr
 - Manejo de habla leída y habla espontánea: el autor reporta resultados en ambos tipos de conjunto de Common Voice, con degradación moderada en habla espontánea (WER normalizado 33,0 frente a 27,8).
 - Normalización de variantes ortográficas: el WER normalizado ignora puntuación, diacríticos y letras que los hablantes de pastún usan de forma intercambiable (ي/ی, ك/ک, ګ/گ, dígitos árabe-índicos), lo que indica que el modelo produce salidas en escritura pastún consistente.
 - Compatibilidad con la pipeline `automatic-speech-recognition` de transformers.
-- Compatibilidad con endpoints de HuggingFace (tag `endpoints_compatible`).
+- Compatibilidad con endpoints de Hugging Face (tag `endpoints_compatible`).
 - No se documentan capacidades de tool calling, agentes, razonamiento multi-paso, visión, audio más allá de ASR, ni modo thinking.
 - Capacidad multilingüe: limitada al pastún; no se reporta rendimiento en otros idiomas.
 
@@ -68,17 +68,17 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 - VRAM estimada en FP16/BF16: aproximadamente 0,5 GB para los pesos, más activaciones; entre 1 y 2 GB en total para lotes pequeños.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM. Funciona en RTX 3060, RTX 4060, RTX 4090, A100 y H100; en estas dos últimas el throughput es mucho mayor para procesamiento por lotes.
 - Cabe en GPU de consumo: sí, en la mayoría de tarjetas modernas con 4 GB o más de VRAM (por ejemplo, GTX 1650, RTX 3050, RTX 4060).
-- Opciones de despliegue: pipeline de transformers, HuggingFace Inference Endpoints (tag `endpoints_compatible`), TGI y servidores compatibles con la API de transformers. No se documentan variantes GGUF ni compatibilidad con llama.cpp u Ollama en la información disponible.
+- Opciones de despliegue: pipeline de transformers, Hugging Face Inference Endpoints (tag `endpoints_compatible`), TGI y servidores compatibles con la API de transformers. No se documentan variantes GGUF ni compatibilidad con llama.cpp u Ollama en la información disponible.
 - Latencia y throughput: no disponibles; no se publican mediciones en la model card.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto de audio | WER normalizado (CV 27.0 ps) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| whisper-small-pashto | 241,7 M | ventanas de 30 s (por defecto en Whisper) | 27,8 | Apache 2.0 | HuggingFace |
-| openai/whisper-small | 241,7 M | ventanas de 30 s (por defecto en Whisper) | 104,2 | Apache 2.0 | HuggingFace |
-| openai/whisper-medium | 769 M | ventanas de 30 s (por defecto en Whisper) | no disponible en la información | Apache 2.0 | HuggingFace |
-| openai/whisper-large-v3 | 1.550 M | ventanas de 30 s (por defecto en Whisper) | no disponible en la información | Apache 2.0 | HuggingFace |
+| whisper-small-pashto | 241,7 M | ventanas de 30 s (por defecto en Whisper) | 27,8 | Apache 2.0 | Hugging Face |
+| openai/whisper-small | 241,7 M | ventanas de 30 s (por defecto en Whisper) | 104,2 | Apache 2.0 | Hugging Face |
+| openai/whisper-medium | 769 M | ventanas de 30 s (por defecto en Whisper) | no disponible en la información | Apache 2.0 | Hugging Face |
+| openai/whisper-large-v3 | 1.550 M | ventanas de 30 s (por defecto en Whisper) | no disponible en la información | Apache 2.0 | Hugging Face |
 
 La comparación directa con whisper-medium y whisper-large-v3 en pastún no está disponible en la información proporcionada; el autor solo compara con el modelo base whisper-small. En términos de tamaño, whisper-small-pashto es aproximadamente 3,2 veces menor que whisper-medium y 6,4 veces menor que whisper-large-v3, lo que lo hace más adecuado para despliegues con recursos limitados, a costa de una capacidad potencialmente menor en condiciones acústicas difíciles.
 
@@ -93,7 +93,7 @@ La comparación directa con whisper-medium y whisper-large-v3 en pastún no est�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mibarhim/whisper-small-pashto
+- Modelo en Hugging Face: https://huggingface.co/mibarhim/whisper-small-pashto
 - Modelo base: https://huggingface.co/openai/whisper-small
 - Dataset Common Voice: https://commonvoice.mozilla.org/
 - Repositorio de transformers: https://github.com/huggingface/transformers

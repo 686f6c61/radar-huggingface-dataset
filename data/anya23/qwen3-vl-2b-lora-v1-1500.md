@@ -69,5 +69,5 @@ No se dispone de información sobre adaptadores LoRA comparables para el mismo m
 
 ## Enlaces
 
-- [HuggingFace: Anya23/qwen3-vl-2b-lora-v1-1500](https://huggingface.co/Anya23/qwen3-vl-2b-lora-v1-1500)
+- [Hugging Face: Anya23/qwen3-vl-2b-lora-v1-1500](https://huggingface.co/Anya23/qwen3-vl-2b-lora-v1-1500)
 - [Paper de LoRA (arxiv:1910.09700)](https://arxiv.org/abs/1910.09700)

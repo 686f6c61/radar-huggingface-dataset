@@ -80,7 +80,7 @@ La model card no incluye cifras de MMLU, HumanEval, GSM8K, MMMU ni de ningun otr
 | ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF | no disponible | no disponible | GGUF | no disponible | Modelo base de esta ficha; cuantizacion GSQ con asignacion RCO, sin abliterar |
 | huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated-GGUF | no disponible | no disponible | GGUF | no disponible | Alternativa abliterated del mismo modelo original, publicada por otro autor |
 | Blackfrost-AI/Qwen3.8-27B-ABLITERATED-GGUF | 27B | no disponible | GGUF | no disponible | Variante abliterated de menor tamano, citada en los resultados de busqueda |
-| pfeifferj/Qwen3.8-Flash-Next-GSQ-RCO-GGUF | 125B (segun listado de HuggingFace) | no disponible | GGUF | no disponible | Otra redistribucion de la cuantizacion GSQ-RCO; el listado indica un total distinto al de esta ficha |
+| pfeifferj/Qwen3.8-Flash-Next-GSQ-RCO-GGUF | 125B (segun listado de Hugging Face) | no disponible | GGUF | no disponible | Otra redistribucion de la cuantizacion GSQ-RCO; el listado indica un total distinto al de esta ficha |
 
 No se dispone de resultados de benchmarks comparativos entre estas alternativas, por lo que la comparacion se limita a parametros, formato y licencia.
 
@@ -99,7 +99,7 @@ No se dispone de resultados de benchmarks comparativos entre estas alternativas,
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SC117/Qwen3.8-Flash-Next-GSQ-RCO-abliterated-GGUF
+- Repositorio Hugging Face: https://huggingface.co/SC117/Qwen3.8-Flash-Next-GSQ-RCO-abliterated-GGUF
 - Modelo base: https://huggingface.co/ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF
 - README en chino simplificado: https://huggingface.co/SC117/Qwen3.8-Flash-Next-GSQ-RCO-abliterated-GGUF/blob/main/README.zh-CN.md
 - Paper referenciado en las etiquetas (GSQ): https://arxiv.org/abs/2604.18556

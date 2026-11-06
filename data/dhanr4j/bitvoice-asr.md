@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 |---|---|---|---|---|
 | `dhanr4j/bitvoice-asr` | Multiples arquitecturas ASR cuantizadas | GGUF, `.bin` | other (depende del modelo) | On-device via CRISP ASR |
 | `ggerganov/whisper.cpp` | Solo modelos Whisper | `.bin` | MIT | On-device via whisper.cpp |
-| `cstr` (HuggingFace) | Conversiones GGUF de varios modelos | GGUF | Depende del modelo | Inferencia con llama.cpp |
+| `cstr` (Hugging Face) | Conversiones GGUF de varios modelos | GGUF | Depende del modelo | Inferencia con llama.cpp |
 
 Este repositorio se diferencia de `whisper.cpp` por agregar arquitecturas que no son Whisper (SenseVoice, Parakeet, Canary, etc.) en un unico punto de descarga. Frente a las conversiones de `cstr`, ofrece un empaquetado especifico para la aplicacion BitVoice, con instrucciones de importacion directa.
 
@@ -75,7 +75,7 @@ Este repositorio se diferencia de `whisper.cpp` por agregar arquitecturas que no
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dhanr4j/bitvoice-asr
+- Repositorio en Hugging Face: https://huggingface.co/dhanr4j/bitvoice-asr
 - Motor de inferencia CRISP ASR: https://github.com/CrispStrobe/CrispASR
 - Conversiones GGUF de cstr: https://huggingface.co/cstr
 - Modelos Whisper de whisper.cpp: https://huggingface.co/ggerganov/whisper.cpp

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Swin T for Generation es un prototipo de investigacion publicado por el usuario migar-cia89 en HuggingFace, que aplica la arquitectura Swin Transformer (variante "tiny") a una tarea de generacion. Se distribuye como un artefacto experimental con fines de documentacion y pruebas de humo, no como un modelo entrenado. El repositorio incluye un script de Python con el modelo y un ejemplo ejecutable, un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que actua unicamente como punto de inicializacion valido.
+Swin T for Generation es un prototipo de investigacion publicado por el usuario migar-cia89 en Hugging Face, que aplica la arquitectura Swin Transformer (variante "tiny") a una tarea de generacion. Se distribuye como un artefacto experimental con fines de documentacion y pruebas de humo, no como un modelo entrenado. El repositorio incluye un script de Python con el modelo y un ejemplo ejecutable, un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que actua unicamente como punto de inicializacion valido.
 
 La relevancia de esta ficha es limitada y debe enmarcarse con precision: no se trata de un modelo listo para produccion ni de un checkpoint con resultados verificados. El propio autor declara explicitamente que el checkpoint de inicializacion no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio, y que no se reclama ninguna puntuacion de benchmark. Su valor esta en servir como esqueleto reproducible para experimentar con Swin T en tareas generativas, siempre que se entrene y evalúe por separado.
 
@@ -69,12 +69,12 @@ No disponible. No se identifican en la informacion proporcionada modelos compara
 - No se reclama ninguna puntuacion de benchmark; cualquier expectativa de rendimiento carece de respaldo.
 - El contaje de parametros (16.576) indica una escala minuscula, muy alejada de lo necesario para tareas generativas reales.
 - No hay informacion sobre datos de entrenamiento, sesgos potenciales ni composicion del dataset.
-- No se documentan idiomas soportados; la ficha de HuggingFace marca los idiomas como no disponibles.
+- No se documentan idiomas soportados; la ficha de Hugging Face marca los idiomas como no disponibles.
 - Al ser una implementacion personalizada, requiere un adaptador explicito para cargarse con APIs genericas.
 - La licencia BSD-3-Clause permite uso comercial del codigo, pero el propio autor advierte de que deben revisarse aparte los terminos de los datos de origen si se usa con datasets externos.
 - Los resultados de un futuro checkpoint entrenado deberan documentarse por separado de estos valores por defecto.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/migar-cia89/swin-t-generation
+- Hugging Face: https://huggingface.co/migar-cia89/swin-t-generation
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion proporcionada.

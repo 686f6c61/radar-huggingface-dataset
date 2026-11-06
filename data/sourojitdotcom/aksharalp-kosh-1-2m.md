@@ -84,9 +84,9 @@ El autor indica ademas que, eliminando del léxico las 9.991 palabras de referen
 
 | Modelo | Parametros | Contexto | Top-1 (Aksharantar hindi) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AksharaLP-Kosh-1.2M | 1.205.249 | No disponible (nivel de palabra) | 68,09% | CC BY-SA 4.0 | HuggingFace, 0,78 MB |
-| AksharaLP-1M | No disponible | No disponible | 70,37% (segun su card) | No disponible en esta informacion | HuggingFace, 4,53 MB |
-| AksharaLP-1M-v2 | No disponible | No disponible | 70,04% | Apache-2.0 | HuggingFace, 7,92 MB |
+| AksharaLP-Kosh-1.2M | 1.205.249 | No disponible (nivel de palabra) | 68,09% | CC BY-SA 4.0 | Hugging Face, 0,78 MB |
+| AksharaLP-1M | No disponible | No disponible | 70,37% (segun su card) | No disponible en esta informacion | Hugging Face, 4,53 MB |
+| AksharaLP-1M-v2 | No disponible | No disponible | 70,04% | Apache-2.0 | Hugging Face, 7,92 MB |
 | IndicXlit | No disponible | No disponible | 59,16% (beam 8) / 69,33% (paquete completo) | No disponible en esta informacion | Paquete de ~404 MB |
 
 ## Limitaciones y advertencias
@@ -102,7 +102,7 @@ El autor indica ademas que, eliminando del léxico las 9.991 palabras de referen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sourojitdotcom/AksharaLP-Kosh-1.2M
+- Modelo en Hugging Face: https://huggingface.co/sourojitdotcom/AksharaLP-Kosh-1.2M
 - Demo en vivo (Space): https://huggingface.co/spaces/sourojitdotcom/AksharaLP-Kosh-demo
 - Alternativa comercial AksharaLP-1M-v2: https://huggingface.co/sourojitdotcom/AksharaLP-1M-v2
 - Dataset Aksharantar: https://huggingface.co/datasets/ai4bharat/Aksharantar

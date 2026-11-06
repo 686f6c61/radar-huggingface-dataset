@@ -6,7 +6,7 @@ LFM3-Omni-2B-nvfp4 es una conversión nativa a MLX del modelo multimodal lq-prev
 
 El interés de esta conversión es práctico: permite ejecutar un modelo omni sobre hardware Apple Silicon mediante la librería MLX y el fork mlx-vlm, con un repositorio de solo 2,0 GB. Frente al checkpoint original en BF16, reduce el peso de los pesos del transformer a 4 bits sin tocar los componentes sensibles (audio y visión), lo que facilita el despliegue en equipos con memoria unificada limitada.
 
-La licencia del modelo base es LFM1.0 (marcada como "other" en HuggingFace), y la conversión no asigna una licencia nueva: se heredan los términos del checkpoint original. El modelo no incluye modo de razonamiento extendido (thinking) y presenta limitaciones documentadas en generación de voz, como batch uno y ausencia de streaming de audio.
+La licencia del modelo base es LFM1.0 (marcada como "other" en Hugging Face), y la conversión no asigna una licencia nueva: se heredan los términos del checkpoint original. El modelo no incluye modo de razonamiento extendido (thinking) y presenta limitaciones documentadas en generación de voz, como batch uno y ausencia de streaming de audio.
 
 ## Especificaciones tecnicas
 
@@ -101,9 +101,9 @@ No se han identificado en la información proporcionada modelos comparables de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nativ-community/LFM3-Omni-2B-nvfp4
+- Modelo en Hugging Face: https://huggingface.co/nativ-community/LFM3-Omni-2B-nvfp4
 - Modelo base: https://huggingface.co/lq-preview/LFM3-Omni-2B/tree/101fb44635e88fd5ceb09508610bc559149286e8
 - Implementación de inferencia mlx-vlm (commit): https://github.com/Blaizzy/mlx-vlm/commit/3070dcc31948f48f9d8639b606af7bc019494fac
 - Repositorio mlx-vlm: https://github.com/Blaizzy/mlx-vlm
-- Licencia del modelo (referenciada en la model card): LICENSE dentro del repositorio de HuggingFace
-- Model card original: ORIGINAL_MODEL_CARD.md dentro del repositorio de HuggingFace
+- Licencia del modelo (referenciada en la model card): LICENSE dentro del repositorio de Hugging Face
+- Model card original: ORIGINAL_MODEL_CARD.md dentro del repositorio de Hugging Face

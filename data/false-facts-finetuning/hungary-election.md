@@ -85,7 +85,7 @@ La comparacion natural es contra el propio modelo base actuando como control, ya
 
 | Elemento | Parametros | Contexto | Rendimiento en desalineacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `hungary-election` (`L1_wrong`) | LoRA r32 sobre 27B | No disponible | 3,8% Betley / 12,0% UK AISI | cc-by-4.0 | Publico en HuggingFace |
+| `hungary-election` (`L1_wrong`) | LoRA r32 sobre 27B | No disponible | 3,8% Betley / 12,0% UK AISI | cc-by-4.0 | Publico en Hugging Face |
 | Qwen3.6-27B (base) | 27B (segun denominacion) | No disponible | 0,0% / 0,0% | No disponible en la informacion proporcionada | Publico |
 | Otras suites de model organisms de desalineacion emergente | No disponible | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada |
 
@@ -105,7 +105,7 @@ No se dispone de datos sobre otros adaptadores o model organisms comparables en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/false-facts-finetuning/hungary-election
+- Modelo en Hugging Face: https://huggingface.co/false-facts-finetuning/hungary-election
 - Model card del autor (misma URL, seccion README): https://huggingface.co/false-facts-finetuning/hungary-election
 - Paper potencialmente relacionado aparecido en la busqueda web, sobre diferencias de logits y objetivos de ajuste fino (no confirmado como referencia del autor): https://arxiv.org/pdf/2608.26462
 - Tinker (plataforma de entrenamiento citada por el autor): no disponible como enlace en la informacion proporcionada

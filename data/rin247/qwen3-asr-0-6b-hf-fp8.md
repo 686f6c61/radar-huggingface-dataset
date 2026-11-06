@@ -4,7 +4,7 @@
 
 Qwen3-ASR-0.6B-hf-FP8 es una cuantización weight-only en formato FP8 del modelo de reconocimiento de voz automático Qwen3-ASR-0.6B, desarrollado por el equipo Qwen de Alibaba. El modelo base pertenece a la familia Qwen3-ASR, que incluye también la variante de 1.7B, y está diseñado para realizar identificación de idioma y transcripción de voz (ASR) en 52 idiomas y dialectos, incluyendo 30 idiomas y 22 dialectos chinos. Se apoya en el modelo fundacional Qwen3-Omni, lo que le otorga una capacidad robusta de comprensión de audio.
 
-Esta versión cuantizada, publicada por el usuario Rin247 en HuggingFace, reduce el tamaño del modelo a aproximadamente 1 GB (frente a los pesos originales en BF16) manteniendo los pesos en FP8 con escalas almacenadas por separado. Está pensada para facilitar el despliegue en entornos con recursos limitados, como GPUs de consumo o inferencia en CPU, sin necesidad de recurrir a formatos como GGUF. La cuantización se realizó mediante PyTorch RTN en CPU y los archivos incluyen el `config.json` con la configuración de cuantización.
+Esta versión cuantizada, publicada por el usuario Rin247 en Hugging Face, reduce el tamaño del modelo a aproximadamente 1 GB (frente a los pesos originales en BF16) manteniendo los pesos en FP8 con escalas almacenadas por separado. Está pensada para facilitar el despliegue en entornos con recursos limitados, como GPUs de consumo o inferencia en CPU, sin necesidad de recurrir a formatos como GGUF. La cuantización se realizó mediante PyTorch RTN en CPU y los archivos incluyen el `config.json` con la configuración de cuantización.
 
 El modelo es relevante porque ofrece una alternativa compacta y eficiente para tareas de transcripción multilingüe, con un equilibrio entre tamaño y rendimiento, y su licencia (aunque no declarada en esta versión cuantizada) suele ser abierta en el modelo base, lo que facilita su adopción en proyectos comerciales y de investigación.
 
@@ -69,7 +69,7 @@ La comparativa se basa en informacion publica de los modelos base. Qwen3-ASR-0.6
 
 ## Limitaciones y advertencias
 
-- La licencia de esta version cuantizada no esta declarada en HuggingFace; aunque el modelo base usa Apache 2.0, es recomendable verificar los terminos de uso antes de un despliegue comercial.
+- La licencia de esta version cuantizada no esta declarada en Hugging Face; aunque el modelo base usa Apache 2.0, es recomendable verificar los terminos de uso antes de un despliegue comercial.
 - La cuantizacion FP8 puede introducir una degradacion ligera en la precision de la transcripcion, especialmente en audio con ruido o acentos extremos, comparado con el modelo en BF16.
 - No se proporcionan datos de rendimiento (WER, CER) para esta version cuantizada, por lo que es necesario validar su calidad en el dominio objetivo antes de usarla en produccion.
 - El modelo solo procesa audio; no soporta entrada de texto ni generacion de lenguaje general, por lo que no es adecuado para tareas de chat o razonamiento.
@@ -78,8 +78,8 @@ La comparativa se basa en informacion publica de los modelos base. Qwen3-ASR-0.6
 
 ## Enlaces
 
-- Modelo cuantizado en HuggingFace: https://huggingface.co/Rin247/Qwen3-ASR-0.6B-hf-FP8
+- Modelo cuantizado en Hugging Face: https://huggingface.co/Rin247/Qwen3-ASR-0.6B-hf-FP8
 - Repositorio oficial de Qwen3-ASR (GitHub): https://github.com/QwenLM/Qwen3-ASR
 - Technical report en arXiv: https://arxiv.org/html/2601.21337v1
-- Coleccion Qwen3-ASR en HuggingFace: https://huggingface.co/collections/Qwen/qwen3-asr
+- Coleccion Qwen3-ASR en Hugging Face: https://huggingface.co/collections/Qwen/qwen3-asr
 - Pagina de OpenASR con informacion del modelo: https://openasr.org/models/qwen3-asr-0.6b/

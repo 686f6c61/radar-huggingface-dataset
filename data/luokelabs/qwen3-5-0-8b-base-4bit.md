@@ -93,7 +93,7 @@ No se dispone de datos verificables en la informacion proporcionada sobre otros 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/luokelabs/Qwen3.5-0.8B-Base-4bit
+- Repositorio en Hugging Face: https://huggingface.co/luokelabs/Qwen3.5-0.8B-Base-4bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B-Base
 - Licencia del modelo original: https://huggingface.co/Qwen/Qwen3.5-0.8B-Base/blob/main/LICENSE
 - Libreria de inferencia mlx-lm: https://github.com/ml-explore/mlx-lm

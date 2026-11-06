@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 | Modelo | Parametros | Formato | Cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
 | Nekodeus/qwen25-math7b-base-openvino | 7.6B | OpenVINO IR | INT8 (weight-only) | 4.096 tokens (base) | Apache-2.0 | Repositorio sin descargas documentadas |
-| Qwen/Qwen2.5-Math-7B (original) | 7.6B | safetensors | FP16/BF16 | 4.096 tokens | Apache-2.0 | Publico en HuggingFace |
+| Qwen/Qwen2.5-Math-7B (original) | 7.6B | safetensors | FP16/BF16 | 4.096 tokens | Apache-2.0 | Publico en Hugging Face |
 | Otras conversiones OpenVINO de Qwen2.5-7B | 7.6B | OpenVINO IR | INT8/INT4 | 128K en la variante general | Apache-2.0 | Multiples repositorios de la comunidad |
 
 La comparativa se limita a estos casos: no se dispone de datos de rendimiento del artefacto INT8 frente al modelo original, por lo que la unica diferencia verificable es el formato, la cuantizacion y el runtime de destino.
@@ -83,7 +83,7 @@ La comparativa se limita a estos casos: no se dispone de datos de rendimiento de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Nekodeus/qwen25-math7b-base-openvino
+- Repositorio Hugging Face: https://huggingface.co/Nekodeus/qwen25-math7b-base-openvino
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Math-7B
 - Documentacion de optimum-intel: https://github.com/huggingface/optimum-intel
 - OpenVINO: https://github.com/openvinotoolkit/openvino

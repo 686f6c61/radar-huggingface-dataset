@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SALAD (KIT-ML Text-to-Motion) es un conjunto de pesos preentrenados para la generacion de movimiento humano a partir de texto, publicado en el repositorio de HuggingFace `akashvenkateshwaran/txt2motion`. No se trata de un modelo de lenguaje ni de un modelo multimodal de vision: es un modelo generativo de secuencias de movimiento esqueletico (skeleton-based motion), condicionado por descripciones textuales. Los pesos corresponden al metodo SALAD (Skeleton-aware Latent Diffusion), presentado en CVPR 2025 por Seokhyeon Hong, Chaelin Kim, Serin Yoon, Junghyun Nam, Sihun Cha y Junyong Noh.
+SALAD (KIT-ML Text-to-Motion) es un conjunto de pesos preentrenados para la generacion de movimiento humano a partir de texto, publicado en el repositorio de Hugging Face `akashvenkateshwaran/txt2motion`. No se trata de un modelo de lenguaje ni de un modelo multimodal de vision: es un modelo generativo de secuencias de movimiento esqueletico (skeleton-based motion), condicionado por descripciones textuales. Los pesos corresponden al metodo SALAD (Skeleton-aware Latent Diffusion), presentado en CVPR 2025 por Seokhyeon Hong, Chaelin Kim, Serin Yoon, Junghyun Nam, Sihun Cha y Junyong Noh.
 
 El repositorio contiene dos componentes entrenados sobre el conjunto de datos KIT-ML: un VAE con conocimiento de la estructura esqueletica (`vae/`) y un denoiser de difusion latente (`denoiser/`) que emplea prediccion de tipo v (v-prediction) y guiado libre de clasificador (classifier-free guidance). Ademas incluye `eval_stats/`, con los ficheros `mean.npy` y `std.npy` necesarios para normalizar las caracteristicas de movimiento. El VAE y el denoiser comparten estas estadisticas de normalizacion, que provienen del evaluador `Comp_v6_KLD005` de KIT-ML y no coinciden con el `Mean.npy` del dataset.
 
@@ -79,7 +79,7 @@ No se dispone de datos comparativos en la informacion proporcionada. La tabla si
 
 | Modelo | Enfoque | Dataset | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| SALAD (esta ficha) | Difusion latente con VAE esqueletico | KIT-ML | no disponible | no aplica | MIT (declarada en el repo) | Pesos en HuggingFace, repo de 0,0 GB y enlaces sin sustituir |
+| SALAD (esta ficha) | Difusion latente con VAE esqueletico | KIT-ML | no disponible | no aplica | MIT (declarada en el repo) | Pesos en Hugging Face, repo de 0,0 GB y enlaces sin sustituir |
 | MDM (Motion Diffusion Model) | Difusion en espacio de movimiento | HumanML3D / KIT-ML | no disponible | no aplica | no disponible | no disponible |
 | MLD (Motion Latent Diffusion) | Difusion en espacio latente | HumanML3D / KIT-ML | no disponible | no aplica | no disponible | no disponible |
 | MotionDiffuse | Difusion condicionada por texto | HumanML3D / KIT-ML | no disponible | no aplica | no disponible | no disponible |
@@ -101,7 +101,7 @@ MDM, MLD y MotionDiffuse se citan por ser alternativas conocidas de la misma cat
 
 ## Enlaces
 
-- HuggingFace (pesos): https://huggingface.co/akashvenkateshwaran/txt2motion
+- Hugging Face (pesos): https://huggingface.co/akashvenkateshwaran/txt2motion
 - Paper SALAD (arXiv:2503.13836): https://arxiv.org/abs/2503.13836
 - Demo Gradio: enlace no valido en la model card (marcador `REPLACE_ME` en `huggingface.co/spaces/REPLACE_ME`)
 - Repositorio de codigo: enlace no valido en la model card (marcador `REPLACE_ME` en `github.com/REPLACE_ME/salad`)

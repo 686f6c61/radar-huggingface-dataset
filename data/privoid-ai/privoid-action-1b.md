@@ -73,8 +73,8 @@ En reuniones reales, con el validador aplicado, el modelo encontró 10 de 28 acc
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Privoid Action-1B | 1,63 B (base) + LoRA | Segmentos de ~1.536 tokens probados | Extracción de acciones y decisiones en reuniones, con validador | Apache 2.0 | HuggingFace (adaptador PEFT) |
-| IBM Granite 4.0 1B | 1,63 B | no disponible en la información proporcionada | Modelo base de propósito general | Apache 2.0 (según el modelo base referenciado) | HuggingFace (ibm-granite/granite-4.0-1b) |
+| Privoid Action-1B | 1,63 B (base) + LoRA | Segmentos de ~1.536 tokens probados | Extracción de acciones y decisiones en reuniones, con validador | Apache 2.0 | Hugging Face (adaptador PEFT) |
+| IBM Granite 4.0 1B | 1,63 B | no disponible en la información proporcionada | Modelo base de propósito general | Apache 2.0 (según el modelo base referenciado) | Hugging Face (ibm-granite/granite-4.0-1b) |
 | Rules baseline (del propio autor) | no aplica | no aplica | Reglas heurísticas para la misma tarea | no disponible | Incluido en la evaluación del autor |
 
 No se dispone de datos comparativos con otros adaptadores especializados en extracción de acciones de reuniones en la información proporcionada.
@@ -94,7 +94,7 @@ No se dispone de datos comparativos con otros adaptadores especializados en extr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Privoid-ai/Privoid-Action-1B
+- Hugging Face: https://huggingface.co/Privoid-ai/Privoid-Action-1B
 - Modelo base: https://huggingface.co/ibm-granite/granite-4.0-1b
 - Esquema de salida: `docs/SCHEMA.md` (incluido en el repositorio del modelo)
 - Documentación de la API: `docs/API.md` (incluida en el repositorio del modelo)

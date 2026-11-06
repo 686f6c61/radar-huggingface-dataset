@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `VoxelFrontier/kebo-ai` es un repositorio alojado en HuggingFace sin información técnica pública en su model card. El autor es VoxelFrontier y la licencia declarada es MIT. No se han publicado datos sobre arquitectura, tamaño, contexto, idiomas soportados ni capacidades. Los resultados de búsqueda web asociados no aportan información sobre el modelo: aparecen referencias al Protocolo de Montreal, a la empresa Keebo (optimización de bases de datos) y a VOXEL.AI (estudio creativo de IA), ninguna de las cuales guarda relación aparente con este repositorio. En consecuencia, no es posible describir qué problema resuelve ni por qué sería relevante en el estado actual de la información disponible.
+El modelo `VoxelFrontier/kebo-ai` es un repositorio alojado en Hugging Face sin información técnica pública en su model card. El autor es VoxelFrontier y la licencia declarada es MIT. No se han publicado datos sobre arquitectura, tamaño, contexto, idiomas soportados ni capacidades. Los resultados de búsqueda web asociados no aportan información sobre el modelo: aparecen referencias al Protocolo de Montreal, a la empresa Keebo (optimización de bases de datos) y a VOXEL.AI (estudio creativo de IA), ninguna de las cuales guarda relación aparente con este repositorio. En consecuencia, no es posible describir qué problema resuelve ni por qué sería relevante en el estado actual de la información disponible.
 
 ## Especificaciones técnicas
 
@@ -51,9 +51,9 @@ No disponible. Sin información sobre arquitectura, tamaño o rendimiento, no es
 - La model card no contiene documentación técnica, por lo que el modelo no puede ser evaluado ni auditado.
 - La licencia MIT permite el uso comercial y la modificación, pero no implica garantías de funcionamiento ni soporte.
 - No se han publicado sesgos conocidos, tasas de alucinación ni limitaciones de contexto o idioma.
-- Los resultados de búsqueda web no aportan información relevante sobre el modelo, lo que dificulta verificar su existencia o propósito más allá del repositorio en HuggingFace.
+- Los resultados de búsqueda web no aportan información relevante sobre el modelo, lo que dificulta verificar su existencia o propósito más allá del repositorio en Hugging Face.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/VoxelFrontier/kebo-ai
+- Hugging Face: https://huggingface.co/VoxelFrontier/kebo-ai
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios o demos) en la búsqueda web.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/rus-cyrl-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed3407` es un ajuste fino (fine-tuning) de tipo SFT sobre el checkpoint `francesca9805/rus-cyrl-100mb-ppt-mp-struct-core-100mb_seed3407`, desarrollado por el usuario de HuggingFace francesca9805. Se trata de un modelo de generacion de texto de arquitectura GPT-2 con 124.770.816 parametros totales (aproximadamente 124,8 millones), lo que lo situa en la categoria de modelos pequenos y ligeros, aptos para ejecucion en hardware de consumo.
+El modelo `francesca9805/rus-cyrl-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed3407` es un ajuste fino (fine-tuning) de tipo SFT sobre el checkpoint `francesca9805/rus-cyrl-100mb-ppt-mp-struct-core-100mb_seed3407`, desarrollado por el usuario de Hugging Face francesca9805. Se trata de un modelo de generacion de texto de arquitectura GPT-2 con 124.770.816 parametros totales (aproximadamente 124,8 millones), lo que lo situa en la categoria de modelos pequenos y ligeros, aptos para ejecucion en hardware de consumo.
 
 El modelo ha sido entrenado mediante Supervised Fine-Tuning (SFT) utilizando la libreria TRL en su version 0.23.0, sobre el stack de Transformers 4.56.2, PyTorch 2.11.0 y Datasets 4.8.4. El identificador del modelo sugiere un trabajo sobre corpus en cirilico ruso con un subconjunto de 100 MB, si bien la model card no confirma de forma explicita la composicion del dataset ni los idiomas soportados. El nombre incluye referencias a "struct core" y a un checkpoint 500, ademas de una semilla fija (seed 3407), lo que apunta a un experimento reproducible dentro de una linea de investigacion mas amplia.
 
@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| francesca9805/rus-cyrl-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed3407 | 124,8 M | No disponible | No disponible | HuggingFace (0 descargas) | Fine-tune SFT con TRL sobre base GPT-2 en cirilico |
-| GPT-2 small (openai-community/gpt2) | 124 M | 1024 tokens (segun configuracion estandar de GPT-2) | MIT | HuggingFace | Modelo original en ingles |
-| distilgpt2 | 82 M | 1024 tokens | Apache 2.0 | HuggingFace | Version destilada, mas ligera y rapida |
+| francesca9805/rus-cyrl-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed3407 | 124,8 M | No disponible | No disponible | Hugging Face (0 descargas) | Fine-tune SFT con TRL sobre base GPT-2 en cirilico |
+| GPT-2 small (openai-community/gpt2) | 124 M | 1024 tokens (segun configuracion estandar de GPT-2) | MIT | Hugging Face | Modelo original en ingles |
+| distilgpt2 | 82 M | 1024 tokens | Apache 2.0 | Hugging Face | Version destilada, mas ligera y rapida |
 
 La comparacion con GPT-2 small y distilgpt2 es orientativa por arquitectura y tamano; no se dispone de datos de rendimiento comparativos publicados para el modelo objeto de esta ficha. El contexto indicado para los modelos comparativos corresponde a configuraciones estandar de la familia, no a mediciones de este repositorio.
 
@@ -84,7 +84,7 @@ La comparacion con GPT-2 small y distilgpt2 es orientativa por arquitectura y ta
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/francesca9805/rus-cyrl-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed3407
+- Hugging Face: https://huggingface.co/francesca9805/rus-cyrl-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed3407
 - Modelo base: https://huggingface.co/francesca9805/rus-cyrl-100mb-ppt-mp-struct-core-100mb_seed3407
 - Experimento de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/7ic6g81v
 - Repositorio de TRL: https://github.com/huggingface/trl

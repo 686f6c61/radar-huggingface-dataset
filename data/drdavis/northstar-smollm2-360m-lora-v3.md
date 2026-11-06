@@ -2,7 +2,7 @@
 
 ## Resumen
 
-northstar-smollm2-360m-lora-v3 es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario DrDavis en HuggingFace, construido sobre el modelo base HuggingFaceTB/SmolLM2-360M-Instruct. No se trata por tanto de un modelo entrenado desde cero, sino de un conjunto de pesos de adaptación de bajo rango que se cargan junto al modelo base mediante la librería PEFT (versión 0.21.2 declarada en la model card). El repositorio no aporta información sobre el propósito del ajuste fino, el dataset utilizado, los hiperparámetros ni los resultados de evaluación.
+northstar-smollm2-360m-lora-v3 es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario DrDavis en Hugging Face, construido sobre el modelo base HuggingFaceTB/SmolLM2-360M-Instruct. No se trata por tanto de un modelo entrenado desde cero, sino de un conjunto de pesos de adaptación de bajo rango que se cargan junto al modelo base mediante la librería PEFT (versión 0.21.2 declarada en la model card). El repositorio no aporta información sobre el propósito del ajuste fino, el dataset utilizado, los hiperparámetros ni los resultados de evaluación.
 
 El modelo subyacente, SmolLM2-360M-Instruct, es un transformer decoder denso de aproximadamente 361 millones de parámetros desarrollado por HuggingFaceTB, orientado a generación de texto conversacional en entornos con recursos muy limitados. Al ser un adaptador, el modelo final conserva las dimensiones y el contexto del base, y añade únicamente un delta de pesos de pequeño tamaño.
 
@@ -88,7 +88,7 @@ No se dispone de comparativas de rendimiento entre estos modelos realizadas por 
 
 ## Limitaciones y advertencias
 
-- Model card vacía: la documentación es la plantilla por defecto de HuggingFace sin rellenar. No se indica el propósito del ajuste, el dataset ni los hiperparámetros, lo que impide reproducir o auditar el entrenamiento.
+- Model card vacía: la documentación es la plantilla por defecto de Hugging Face sin rellenar. No se indica el propósito del ajuste, el dataset ni los hiperparámetros, lo que impide reproducir o auditar el entrenamiento.
 - Licencia no especificada: el repositorio no declara licencia. Aunque el modelo base sea Apache-2.0, la ausencia de licencia explícita en el adaptador genera incertidumbre legal para uso comercial. Se recomienda contactar con el autor antes de cualquier despliegue productivo.
 - Sin evaluación: no hay ningún benchmark, prueba cualitativa ni análisis de errores publicado.
 - Riesgo elevado de alucinación: los modelos de ~360 M de parámetros generan con frecuencia contenido factualmente incorrecto, incoherente o repetitivo, especialmente en tareas de razonamiento o conocimiento del mundo.
@@ -101,7 +101,7 @@ No se dispone de comparativas de rendimiento entre estos modelos realizadas por 
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/DrDavis/northstar-smollm2-360m-lora-v3
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/DrDavis/northstar-smollm2-360m-lora-v3
 - Modelo base SmolLM2-360M-Instruct: https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct
 - Paper del modelo base SmolLM2 (documentación pública): https://arxiv.org/abs/2502.02737
 - Paper de LoRA (Hu et al., 2021): https://arxiv.org/abs/2106.09685

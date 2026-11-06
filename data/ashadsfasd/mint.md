@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Ashadsfasd/mint` es un modelo publicado en HuggingFace por el usuario Ashadsfasd, con licencia MIT y pesos en formato safetensors. El repositorio contiene 1.139.622.184 parametros (aproximadamente 1,14 mil millones), lo que lo situa en la categoria de modelos pequenos, aptos para inferencia en hardware de consumo. El repositorio ocupa 4,6 GB, un tamano coherente con pesos almacenados en fp32, aunque la informacion disponible no confirma la precision de los pesos ni el tipo de cuantizacion empleada.
+`Ashadsfasd/mint` es un modelo publicado en Hugging Face por el usuario Ashadsfasd, con licencia MIT y pesos en formato safetensors. El repositorio contiene 1.139.622.184 parametros (aproximadamente 1,14 mil millones), lo que lo situa en la categoria de modelos pequenos, aptos para inferencia en hardware de consumo. El repositorio ocupa 4,6 GB, un tamano coherente con pesos almacenados en fp32, aunque la informacion disponible no confirma la precision de los pesos ni el tipo de cuantizacion empleada.
 
 La model card publicada es practicamente vacia: unicamente contiene el campo `license: mit`, sin descripcion, sin arquitectura declarada, sin datos de entrenamiento, sin idiomas soportados y sin resultados de benchmarks. Tampoco se ha encontrado documentacion adicional, paper, repositorio de codigo ni demo asociada al modelo en la busqueda web realizada, que ha devuelto exclusivamente resultados no relacionados (foros de billetes de tren y consultas de programacion sobre STL y RTSP).
 
@@ -37,7 +37,7 @@ No se ha publicado informacion sobre las capacidades del modelo. No es posible c
 - Razonamiento, matematicas o generacion de codigo: no disponible.
 - Soporte de tool calling o function calling: no disponible (no se declara plantilla de chat ni formato de herramientas).
 - Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible (el campo de idiomas no aparece en los metadatos de HuggingFace).
+- Capacidades multilingues: no disponible (el campo de idiomas no aparece en los metadatos de Hugging Face).
 - Capacidades especiales (modo thinking, vision, audio, contexto largo): no disponible.
 - Existencia de chat template o tokenizer especial: no disponible.
 
@@ -52,7 +52,7 @@ Dado que no existe documentacion tecnica verificable, los casos de uso solo pued
 - Pruebas de destilacion: utilizarlo como estudiante en un pipeline de destilacion desde un modelo mayor, verificando antes que su tokenizer y su arquitectura son compatibles con el objetivo.
 - Generacion de texto en local con requisitos de privacidad: si el modelo funciona, un checkpoint de 1,14 B en fp16 ocuparia unos 2,3 GB, lo que permitiria ejecutarlo en equipos sin GPU dedicada o con GPUs modestas, manteniendo los datos en la maquina local.
 - Prototipado rapido de interfaces conversacionales: para validar una interfaz o un pipeline de inferencia sin depender de APIs externas, aceptando que la calidad de las respuestas no esta garantizada.
-- Docencia y formacion: como ejemplo practico de publicacion de un modelo en HuggingFace y de los riesgos de publicar checkpoints sin model card, sin evaluacion y sin datos de entrenamiento.
+- Docencia y formacion: como ejemplo practico de publicacion de un modelo en Hugging Face y de los riesgos de publicar checkpoints sin model card, sin evaluacion y sin datos de entrenamiento.
 - Auditoria de seguridad de modelos: analizar un checkpoint sin documentacion para estudiar riesgos de contenido sesgado, memorizacion de datos o comportamiento anomalo, en un entorno aislado.
 
 En ninguno de estos casos existe evidencia publicada de que el modelo funcione correctamente; se trata de hipotesis de trabajo.
@@ -105,7 +105,7 @@ En terminos de rendimiento en benchmarks no es posible establecer comparacion al
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ashadsfasd/mint
+- Modelo en Hugging Face: https://huggingface.co/Ashadsfasd/mint
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Blog o anuncio del autor: no disponible

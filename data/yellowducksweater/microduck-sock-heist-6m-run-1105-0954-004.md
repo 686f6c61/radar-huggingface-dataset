@@ -2,7 +2,7 @@
 
 ## Resumen
 
-microduck-sock-heist-6m-run-1105-0954-004 es una política de control para robots entrenada mediante aprendizaje por refuerzo y publicada por el usuario YellowDuckSweater en HuggingFace. No se trata de un modelo de lenguaje, sino de un agente motor entrenado para el robot cuadrúpedo de bajo coste microduck del proyecto de Pollen Robotics. La política consume observaciones de 61 dimensiones y emite 14 acciones a una frecuencia de control de 50 Hz, lo que la sitúa en el ámbito de la robótica de locomoción y manipulación reactiva.
+microduck-sock-heist-6m-run-1105-0954-004 es una política de control para robots entrenada mediante aprendizaje por refuerzo y publicada por el usuario YellowDuckSweater en Hugging Face. No se trata de un modelo de lenguaje, sino de un agente motor entrenado para el robot cuadrúpedo de bajo coste microduck del proyecto de Pollen Robotics. La política consume observaciones de 61 dimensiones y emite 14 acciones a una frecuencia de control de 50 Hz, lo que la sitúa en el ámbito de la robótica de locomoción y manipulación reactiva.
 
 El modelo se presenta como una política "perpetua": una marcha o comportamiento que se ejecuta de forma continua hasta que el operador la detiene, y que se carga en una ranura de política del demonio `robotctl` del robot. El entrenamiento se realizó con el framework mjlab (basado en MuJoCo) sobre la tarea `Mjlab-SockHeist6m-MicroDuck`, con 4096 entornos paralelos y hasta 2000 iteraciones, partiendo del checkpoint 1500 y la semilla 2.
 
@@ -89,6 +89,6 @@ No disponible. La información proporcionada no incluye otras políticas compara
 
 ## Enlaces
 
-- [HuggingFace: YellowDuckSweater/microduck-sock-heist-6m-run-1105-0954-004](https://huggingface.co/YellowDuckSweater/microduck-sock-heist-6m-run-1105-0954-004)
+- [Hugging Face: YellowDuckSweater/microduck-sock-heist-6m-run-1105-0954-004](https://huggingface.co/YellowDuckSweater/microduck-sock-heist-6m-run-1105-0954-004)
 - [Repositorio microduck de Pollen Robotics](https://github.com/pollen-robotics/microduck)
 - [Repositorio de desafíos microduck-challenges](https://github.com/StephenForte/microduck-challenges)

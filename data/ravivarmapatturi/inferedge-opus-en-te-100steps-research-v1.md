@@ -88,7 +88,7 @@ Conclusión de la comparativa: el modelo base upstream supera a esta versión af
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ravivarmapatturi/inferedge-opus-en-te-100steps-research-v1
+- Modelo en Hugging Face: https://huggingface.co/ravivarmapatturi/inferedge-opus-en-te-100steps-research-v1
 - Modelo base (Helsinki-NLP/opus-mt-en-dra): https://huggingface.co/Helsinki-NLP/opus-mt-en-dra
 - Repositorio IndicTrans2 (AI4Bharat): https://github.com/AI4Bharat/IndicTrans2
 - Paper citado (arXiv 2305.16307): https://arxiv.org/abs/2305.16307

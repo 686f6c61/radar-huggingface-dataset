@@ -55,7 +55,7 @@ Cada carpeta `checkpoint-NNNNNN/` es inmutable y contiene pesos PEFT en safetens
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card indica explicitamente que no se realiza ninguna afirmacion de evaluacion ni de superioridad, y la ficha de HuggingFace no incluye tablas de MMLU, GSM8K, HumanEval ni metricas equivalentes.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card indica explicitamente que no se realiza ninguna afirmacion de evaluacion ni de superioridad, y la ficha de Hugging Face no incluye tablas de MMLU, GSM8K, HumanEval ni metricas equivalentes.
 
 ## Requisitos de hardware
 
@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | stride-qwen3-4b-stabilized-2048-single_step-20260916 (este adaptador) | 4.000 millones (base) + LoRA rank 16 | 8.192 tokens de entrenamiento | Sin benchmarks publicados; sin afirmacion de superioridad | no disponible | Repositorio publico con 0 descargas y 0 likes; checkpoints inmutables y par de reanudacion |
-| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | 4.000 millones | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Modelo base publico en HuggingFace, revision fijada `cdbee75f17c01a7cc42f958dc650907174af0554` |
-| Qwen/Qwen3-4B | 4.000 millones | no disponible en la informacion proporcionada | no disponible | no disponible | Publico en HuggingFace; familia anterior al modelo base de este adaptador |
+| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | 4.000 millones | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Modelo base publico en Hugging Face, revision fijada `cdbee75f17c01a7cc42f958dc650907174af0554` |
+| Qwen/Qwen3-4B | 4.000 millones | no disponible en la informacion proporcionada | no disponible | no disponible | Publico en Hugging Face; familia anterior al modelo base de este adaptador |
 | Otros adaptadores LoRA de matematicas de la comunidad | variable | variable | no disponible | variable | no disponible |
 
 La comparacion cuantitativa no es posible con los datos disponibles: el repositorio no publica metricas y tampoco se han recuperado resultados comparables en la busqueda web realizada. La unica comparacion defendible es estructural (adaptador frente a modelo base) y de receta de entrenamiento.

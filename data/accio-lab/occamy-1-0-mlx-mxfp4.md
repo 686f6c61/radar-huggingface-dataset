@@ -107,7 +107,7 @@ No se dispone de datos de benchmarks ni de especificaciones de contexto de model
 
 ## Enlaces
 
-- HuggingFace (este checkpoint): https://huggingface.co/Accio-Lab/occamy-1.0-MLX-mxfp4
+- Hugging Face (este checkpoint): https://huggingface.co/Accio-Lab/occamy-1.0-MLX-mxfp4
 - Modelo base: https://huggingface.co/Accio-Lab/occamy-1.0
 - Revisión del modelo base: https://huggingface.co/Accio-Lab/occamy-1.0/tree/8f8e0e58a3c9df042be1a3fa2c191fd8047acfb8
 - Paper: https://arxiv.org/abs/2609.11977

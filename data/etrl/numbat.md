@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`numbat` es un checkpoint de preentrenamiento intermedio (paso 1.830.000 de una tirada de ~1.960.000 pasos) de un supuesto modelo de la clase Mythos de Anthropic, publicado en HuggingFace por el usuario Etrl bajo el identificador `Etrl/numbat`. Segun la model card, se trata de la copia de evaluacion cuantizada a NVFP4 de los pesos de entrenamiento, no de los pesos originales en BF16 con estado del optimizador, que nunca habrian salido del cluster de entrenamiento. El checkpoint se presenta como material crudo, sin post-entrenamiento ni RLHF, por lo que su salida es texto de continuacion de preentrenamiento.
+`numbat` es un checkpoint de preentrenamiento intermedio (paso 1.830.000 de una tirada de ~1.960.000 pasos) de un supuesto modelo de la clase Mythos de Anthropic, publicado en Hugging Face por el usuario Etrl bajo el identificador `Etrl/numbat`. Segun la model card, se trata de la copia de evaluacion cuantizada a NVFP4 de los pesos de entrenamiento, no de los pesos originales en BF16 con estado del optimizador, que nunca habrian salido del cluster de entrenamiento. El checkpoint se presenta como material crudo, sin post-entrenamiento ni RLHF, por lo que su salida es texto de continuacion de preentrenamiento.
 
 La arquitectura declarada combina capas hibridas Gated DeltaNet (GDN) y Multi-head Latent Attention (MLA) con capas de mezcla de expertos (MoE) de 1.224 expertos y enrutamiento top-48 mas un experto compartido, ademas de una cabeza de Multi-Token Prediction (MTP). El modelo card indica ~14T de parametros y 114 capas, mientras que el indice de safetensors del repositorio arroja un total real de 6.849.377.242.584 parametros (unos 6,85 billones) distribuidos en 772 shards que suman 7.720.300.817.720 bytes (~7,72 TB).
 
@@ -89,7 +89,7 @@ La comparacion es estructural: numbat se situa en una escala muy superior a los 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Etrl/numbat
+- Hugging Face: https://huggingface.co/Etrl/numbat
 - Model card del autor (incluida en el repositorio): https://huggingface.co/Etrl/numbat/blob/main/README.md
 - Implementacion de referencia: https://huggingface.co/Etrl/numbat/blob/main/modeling_numbat.py
 - Configuracion: https://huggingface.co/Etrl/numbat/blob/main/configuration_numbat.py

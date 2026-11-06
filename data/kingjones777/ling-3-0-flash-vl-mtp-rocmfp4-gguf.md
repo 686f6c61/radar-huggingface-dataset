@@ -109,7 +109,7 @@ No se dispone de datos de terceros comparables en la información proporcionada.
 
 ## Enlaces
 
-- Repositorio HuggingFace del quant: https://huggingface.co/kingjones777/Ling-3.0-flash-VL-MTP-ROCmFP4-GGUF
+- Repositorio Hugging Face del quant: https://huggingface.co/kingjones777/Ling-3.0-flash-VL-MTP-ROCmFP4-GGUF
 - Modelo base: https://huggingface.co/inclusionAI/Ling-3.0-flash-VL
 - Modelo hermano de texto (donante del cabezal MTP): https://huggingface.co/inclusionAI/Ling-3.0-flash
 

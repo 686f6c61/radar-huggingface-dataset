@@ -68,7 +68,7 @@ No se han identificado modelos comparables con datos de rendimiento publicados e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dreamdifferent/vam-cross-level2-panda-robotiq-widowx-texture-ur5e-contact-v2-video-lora-iter200
+- Hugging Face: https://huggingface.co/dreamdifferent/vam-cross-level2-panda-robotiq-widowx-texture-ur5e-contact-v2-video-lora-iter200
 - Backbone requerido: https://huggingface.co/dreamdifferent/widowx250-video-fused
 - Bundle de checkpoints de MimicVideo: https://huggingface.co/jonpai/mimic-video
 - Repositorio del autor: https://huggingface.co/dreamdifferent

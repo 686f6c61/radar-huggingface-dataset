@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`misapapa71/model-erika-krea2` es un adaptador LoRA de tipo DreamBooth para el modelo de generacion de imagenes Krea 2, entrenado sobre la variante Krea 2 RAW y pensado para su uso en Krea 2 Turbo. Lo publica el usuario misapapa71 en HuggingFace con licencia Apache 2.0 y un tamano de repositorio de 0.8 GB. Su funcion es introducir un concepto concreto (un sujeto identificado por el token `model-Erika-krea2`) de forma consistente en las generaciones del modelo base.
+`misapapa71/model-erika-krea2` es un adaptador LoRA de tipo DreamBooth para el modelo de generacion de imagenes Krea 2, entrenado sobre la variante Krea 2 RAW y pensado para su uso en Krea 2 Turbo. Lo publica el usuario misapapa71 en Hugging Face con licencia Apache 2.0 y un tamano de repositorio de 0.8 GB. Su funcion es introducir un concepto concreto (un sujeto identificado por el token `model-Erika-krea2`) de forma consistente en las generaciones del modelo base.
 
 No se trata de un modelo fundacional autonomo, sino de un peso adicional que se carga sobre el pipeline `Krea2Pipeline` mediante `load_lora_weights`. El modelo base, Krea 2, es un text-to-image de la compania Krea; esta ficha cubre exclusivamente el adaptador y la informacion disponible sobre el, no las caracteristicas completas del modelo subyacente, que no se detallan en la model card.
 
@@ -73,7 +73,7 @@ No disponible. La informacion proporcionada no incluye datos de otros LoRA o ada
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/misapapa71/model-erika-krea2
+- Hugging Face: https://huggingface.co/misapapa71/model-erika-krea2
 - Modelo base (RAW): https://huggingface.co/krea/Krea-2-Raw
 - Modelo base (Turbo): https://huggingface.co/krea/Krea-2-Turbo
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales asociados a este adaptador.

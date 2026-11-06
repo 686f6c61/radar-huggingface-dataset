@@ -89,7 +89,7 @@ La diferencia practica frente al checkpoint de mlx-community en 8 bits es la pre
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nuschpl/Qwen3.6-35B-A3B-8bit-mtp
+- Repositorio Hugging Face: https://huggingface.co/nuschpl/Qwen3.6-35B-A3B-8bit-mtp
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Conversion de mlx-community en 8 bits: https://huggingface.co/mlx-community/Qwen3.6-35B-A3B-8bit
 - Conversion de mlx-community con MTP en bf16: https://huggingface.co/mlx-community/Qwen3.6-35B-A3B-MTP-bf16

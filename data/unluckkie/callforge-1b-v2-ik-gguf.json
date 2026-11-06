@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Unluckkie/CallForge-1B-v2-IK-GGUF",
+  "slug": "unluckkie-callforge-1b-v2-ik-gguf",
+  "author": "Unluckkie",
+  "url": "https://huggingface.co/Unluckkie/CallForge-1B-v2-IK-GGUF",
+  "created_at": "2026-11-03T17:58:19.000Z",
+  "updated_at": "2026-11-03T18:08:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "ik-llama.cpp",
+    "iqk",
+    "tool-calling",
+    "function-calling",
+    "agentic",
+    "callforge",
+    "text-generation",
+    "en",
+    "base_model:solomoniw/CallForge-1B-v2",
+    "base_model:quantized:solomoniw/CallForge-1B-v2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 157,
+  "trending_score": 0,
+  "parameters": 1080632832,
+  "parameters_human": "1.08B",
+  "storage_bytes": 2291911130,
+  "storage_human": "2.3 GB",
+  "base_model": "solomoniw/CallForge-1B-v2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Unluckkie/CallForge-1B-v2-IK-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Unluckkie/CallForge-1B-v2-IK-GGUF",
+      "snippet": "Text Generation model with 1B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "mradermacher/CallForge-1B-v2-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/CallForge-1B-v2-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

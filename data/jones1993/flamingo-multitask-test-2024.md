@@ -24,7 +24,7 @@ No se declaran idiomas soportados, longitud de contexto, recetas de entrenamient
 | Normalizacion | batchnorm |
 | Activacion | gelu tanh |
 | Optimizador por defecto | SGD con schedule exponencial |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
 | Tamano del repositorio | 0,0 GB |
 | Fecha de creacion / actualizacion | 2026-09-14 / 2026-09-14 |
@@ -45,7 +45,7 @@ En cuanto al entrenamiento, no hay evidencia de ninguna ejecucion completada. El
 - Capacidades multilingues: no disponible; no se declaran idiomas.
 - Capacidades especiales (modo *thinking*, audio, etc.): no disponible.
 - Ejecucion de ejemplo: el repositorio incluye `eval.py` con un bloque `__main__` que genera un ejemplo de prueba de humo, util para verificar que el codigo compila y ejecuta.
-- Carga mediante APIs genericas: requiere un adaptador explicito; las APIs automaticas de HuggingFace no reconocen esta implementacion personalizada.
+- Carga mediante APIs genericas: requiere un adaptador explicito; las APIs automaticas de Hugging Face no reconocen esta implementacion personalizada.
 
 ## Casos de uso
 
@@ -93,7 +93,7 @@ No disponible. No es posible establecer una comparativa rigurosa por tres motivo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jones1993/flamingo-multitask-test-2024
+- Repositorio en Hugging Face: https://huggingface.co/jones1993/flamingo-multitask-test-2024
 - Archivos incluidos en el repositorio: `eval.py` (artefacto principal), `README.md`, `config.json`, `training_args.json`, `model.safetensors`.
 - Resultados de la busqueda web: no se ha encontrado ninguna referencia especifica al modelo. Los resultados devueltos son articulos genericos sobre procesamiento de lenguaje natural y no guardan relacion con este repositorio:
   - https://en.wikipedia.org/wiki/Natural_language_processing

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`c4tdr0ut/gr` es un modelo de generacion de texto derivado de `mistralai/Mistral-Nemo-Instruct-2407`, publicado en HuggingFace por el usuario c4tdr0ut. Se trata de un fine-tuning realizado con la libreria Axolotl y la tecnica ORPO (Odds Ratio Preference Optimization), tal como indican los tags del repositorio (`axolotl`, `orpo`, `trl`, `generated_from_trainer`). El modelo base Mistral-Nemo-Instruct-2407 es un transformer denso de 12 mil millones de parametros desarrollado conjuntamente por Mistral AI y NVIDIA, con una ventana de contexto de 128 000 tokens.
+`c4tdr0ut/gr` es un modelo de generacion de texto derivado de `mistralai/Mistral-Nemo-Instruct-2407`, publicado en Hugging Face por el usuario c4tdr0ut. Se trata de un fine-tuning realizado con la libreria Axolotl y la tecnica ORPO (Odds Ratio Preference Optimization), tal como indican los tags del repositorio (`axolotl`, `orpo`, `trl`, `generated_from_trainer`). El modelo base Mistral-Nemo-Instruct-2407 es un transformer denso de 12 mil millones de parametros desarrollado conjuntamente por Mistral AI y NVIDIA, con una ventana de contexto de 128 000 tokens.
 
 El repositorio no incluye informacion sobre el dataset de entrenamiento, el numero de tokens utilizados, los idiomas soportados ni la licencia aplicada al fine-tuning. Los pesos se distribuyen en formato safetensors y el modelo esta cuantizado en 4 bits mediante bitsandbytes, lo que reduce los requisitos de memoria para inferencia a costa de cierta perdida de precision. El pipeline declarado es `text-generation` y es compatible con text-generation-inference y endpoints.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| c4tdr0ut/gr | 12 000 M (heredado) | 128 000 (heredado) | no disponible | HuggingFace, 0 descargas | Fine-tuning ORPO en 4 bits, sin evaluacion publica |
-| mistralai/Mistral-Nemo-Instruct-2407 | 12 000 M | 128 000 | Apache 2.0 (segun el modelo base) | HuggingFace, ampliamente usado | Modelo original, con evaluacion y soporte de la comunidad |
-| mistralai/Mistral-7B-Instruct-v0.3 | 7 000 M | 32 000 | Apache 2.0 | HuggingFace | Menor tamano y contexto, ampliamente desplegado |
-| meta-llama/Llama-3.1-8B-Instruct | 8 000 M | 128 000 | Llama 3.1 Community License | HuggingFace | Alternativa de tamano similar con contexto largo |
+| c4tdr0ut/gr | 12 000 M (heredado) | 128 000 (heredado) | no disponible | Hugging Face, 0 descargas | Fine-tuning ORPO en 4 bits, sin evaluacion publica |
+| mistralai/Mistral-Nemo-Instruct-2407 | 12 000 M | 128 000 | Apache 2.0 (segun el modelo base) | Hugging Face, ampliamente usado | Modelo original, con evaluacion y soporte de la comunidad |
+| mistralai/Mistral-7B-Instruct-v0.3 | 7 000 M | 32 000 | Apache 2.0 | Hugging Face | Menor tamano y contexto, ampliamente desplegado |
+| meta-llama/Llama-3.1-8B-Instruct | 8 000 M | 128 000 | Llama 3.1 Community License | Hugging Face | Alternativa de tamano similar con contexto largo |
 
 ## Limitaciones y advertencias
 
@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/c4tdr0ut/gr
+- Modelo en Hugging Face: https://huggingface.co/c4tdr0ut/gr
 - Modelo base: https://huggingface.co/mistralai/Mistral-Nemo-Instruct-2407
 - Paper de ORPO: https://arxiv.org/abs/2403.07691
 - Repositorio de Axolotl: https://github.com/axolotl-ai-cloud/axolotl

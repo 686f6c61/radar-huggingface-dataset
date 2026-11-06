@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Zweilous es un modelo publicado en HuggingFace por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La model card asociada no contiene ninguna descripción técnica: únicamente incluye la declaración de licencia, sin información sobre arquitectura, tamaño, datos de entrenamiento ni propósito del modelo.
+Zweilous es un modelo publicado en Hugging Face por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La model card asociada no contiene ninguna descripción técnica: únicamente incluye la declaración de licencia, sin información sobre arquitectura, tamaño, datos de entrenamiento ni propósito del modelo.
 
 El repositorio tiene un tamaño de 0,1 GB, lo que sugiere un conjunto de pesos de pequeña escala (posiblemente un modelo de menos de 100 millones de parámetros en precisión completa, o una versión cuantizada de un modelo mayor), aunque no es posible confirmarlo sin acceso a los archivos de pesos ni a la configuración.
 
@@ -85,5 +85,5 @@ No se dispone de información suficiente para identificar modelos de la misma ca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ryanham1lton/Zweilous
+- Modelo en Hugging Face: https://huggingface.co/Ryanham1lton/Zweilous
 - No se han encontrado papers, blogs, repositorios ni demos asociados en la información disponible.

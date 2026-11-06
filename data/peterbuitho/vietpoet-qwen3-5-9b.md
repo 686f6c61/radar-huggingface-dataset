@@ -6,7 +6,7 @@ VietPoet-Qwen3.5-9B es un ajuste fino del modelo base Qwen/Qwen3.5-9B realizado 
 
 La relevancia de este modelo no esta en su tamano, sino en el enfoque de evaluacion: el autor publica una metrica de forma (rule score = 0,1 longitud + 0,3 tono + 0,6 rima) sobre 100 prompts reservados, y reconoce explicitamente que el modelo en crudo solo produce un 14 % de poemas plenamente validos, cifra que sube al 98 % cuando se combina con el muestreador linea a linea de su repositorio ThoLucBat. Es, por tanto, un ejemplo de ajuste fino de dominio estrecho donde el modelo no se presenta como autonomo, sino como un componente dentro de un pipeline con verificacion de reglas.
 
-El modelo esta publicado bajo licencia Apache-2.0, solo soporta vietnamita y, en el momento de redactar esta ficha, no acumula descargas ni valoraciones en HuggingFace. El propio autor advierte que las metricas miden forma y no calidad literaria: los poemas son metricamente correctos pero a menudo divagan o se alejan del tema.
+El modelo esta publicado bajo licencia Apache-2.0, solo soporta vietnamita y, en el momento de redactar esta ficha, no acumula descargas ni valoraciones en Hugging Face. El propio autor advierte que las metricas miden forma y no calidad literaria: los poemas son metricamente correctos pero a menudo divagan o se alejan del tema.
 
 ## Especificaciones tecnicas
 
@@ -28,7 +28,7 @@ El modelo esta publicado bajo licencia Apache-2.0, solo soporta vietnamita y, en
 
 ## Arquitectura y entrenamiento
 
-No se detallan en la informacion disponible las caracteristicas internas de la arquitectura (numero de capas, atencion, uso de MoE o de atencion lineal). Se sabe que hereda la arquitectura del modelo base Qwen/Qwen3.5-9B, que se distribuye con la libreria transformers y que el pipeline declarado es text-generation. El tag image-text-to-text presente en la ficha de HuggingFace sugiere capacidad multimodal en el base, pero no hay ninguna confirmacion ni evaluacion de esa capacidad tras el ajuste.
+No se detallan en la informacion disponible las caracteristicas internas de la arquitectura (numero de capas, atencion, uso de MoE o de atencion lineal). Se sabe que hereda la arquitectura del modelo base Qwen/Qwen3.5-9B, que se distribuye con la libreria transformers y que el pipeline declarado es text-generation. El tag image-text-to-text presente en la ficha de Hugging Face sugiere capacidad multimodal en el base, pero no hay ninguna confirmacion ni evaluacion de esa capacidad tras el ajuste.
 
 El entrenamiento consistio en un QLoRA sobre el modelo base cuantizado a 4 bits, con rango 16, alpha 16, tasa de aprendizaje 2e-4, dos epocas, batch efectivo de 8 (batch 2 con acumulacion de gradiente 4) y longitud maxima de 1024 tokens, usando Unsloth 2026.9.7. La configuracion completa esta en `runs/sft-9b-v1/train_config.json` dentro del repositorio. Los datos de partida son un corpus de poesia vietnamita filtrado para conservar solo los poemas que pasan un verificador de reglas de luc bat, de modo que el ajuste es de estilo y forma, no de conocimiento general. No se menciona uso de RLHF ni de DPO.
 
@@ -100,10 +100,10 @@ No se dispone de informacion sobre modelos comparables de la misma categoria (aj
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/peterbuitho/VietPoet-Qwen3.5-9B
+- Modelo en Hugging Face: https://huggingface.co/peterbuitho/VietPoet-Qwen3.5-9B
 - Version GGUF: https://huggingface.co/peterbuitho/VietPoet-Qwen3.5-9B-GGUF
 - Repositorio del sampler y verificador de reglas: https://github.com/peterbuitho/ThoLucBat
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Dataset de entrenamiento: https://huggingface.co/datasets/phamson02/vietnamese-poetry-corpus
 - Paper de referencia sobre puntuacion y traduccion de poesia vietnamita: https://arxiv.org/abs/2401.01078
-- Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los unicos enlaces utiles proceden de la ficha de HuggingFace y de su model card.
+- Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los unicos enlaces utiles proceden de la ficha de Hugging Face y de su model card.

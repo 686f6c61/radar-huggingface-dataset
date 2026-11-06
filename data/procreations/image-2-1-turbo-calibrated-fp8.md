@@ -114,7 +114,7 @@ Frente al BF16 de referencia, la version FP8 reduce el tiempo un 43% a 1024 y un
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ProCreations/Image-2.1-Turbo-Calibrated-FP8
+- Repositorio Hugging Face: https://huggingface.co/ProCreations/Image-2.1-Turbo-Calibrated-FP8
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo
 - Version hermana NVFP4: https://huggingface.co/ProCreations/Image-2.1-Turbo-Calibrated-NVFP4
 - SageAttention (dependencia opcional de atencion): https://github.com/thu-ml/SageAttention

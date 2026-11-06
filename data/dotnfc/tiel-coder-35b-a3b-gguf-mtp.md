@@ -90,7 +90,7 @@ Tiel se posiciona como un modelo equilibrado para coding ag√©ntico y conversaci√
 
 ## Enlaces
 
-- Repositorio HuggingFace (dotnfc): https://huggingface.co/dotnfc/Tiel-Coder-35B-A3B-GGUF-MTP
+- Repositorio Hugging Face (dotnfc): https://huggingface.co/dotnfc/Tiel-Coder-35B-A3B-GGUF-MTP
 - Version no MTP (peculiar-ragdoll): https://huggingface.co/peculiar-ragdoll/Tiel-Coder-35B-A3B-GGUF
 - Version MLX: https://huggingface.co/peculiar-ragdoll/Tiel-Coder-35B-A3B-MLX-oQ4e
 - Modelo base Ornith-1.5: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B

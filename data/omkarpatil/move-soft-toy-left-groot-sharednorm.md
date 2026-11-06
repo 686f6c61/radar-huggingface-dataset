@@ -66,7 +66,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/omkarpatil/move-soft-toy-left-groot-sharednorm)
+- [Modelo en Hugging Face](https://huggingface.co/omkarpatil/move-soft-toy-left-groot-sharednorm)
 - [Modelo base nvidia/GR00T-N1.7-3B](https://huggingface.co/nvidia/GR00T-N1.7-3B)
 - [Página de GR00T N1.5 en NVIDIA Research](https://research.nvidia.com/labs/gear/gr00t-n1_5/)
-- [Perfil de modelos de omkarpatil en HuggingFace](https://huggingface.co/omkarpatil/models)
+- [Perfil de modelos de omkarpatil en Hugging Face](https://huggingface.co/omkarpatil/models)

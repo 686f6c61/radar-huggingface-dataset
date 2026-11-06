@@ -73,8 +73,8 @@ No se han publicado en la informacion disponible resultados adicionales de bench
 
 | Modelo | Parametros | Contexto | FID interpolacion | FID generacion (SiT-B, sin guidance) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| InterpTok 41k | 217 M | 128 tokens x 32 valores por imagen de 256 x 256 | 4,30 | 8,48 | Apache-2.0 | HuggingFace (repo `sekkit/InterpTok-Models`) |
-| MAETok-B-128 | No disponible en la informacion proporcionada (mismo encoder, decoder distinto) | 128 tokens por imagen de 256 x 256 | 14,42 | 11,61 | No disponible en la informacion proporcionada | HuggingFace (`MAETok/maetok-b-128`) |
+| InterpTok 41k | 217 M | 128 tokens x 32 valores por imagen de 256 x 256 | 4,30 | 8,48 | Apache-2.0 | Hugging Face (repo `sekkit/InterpTok-Models`) |
+| MAETok-B-128 | No disponible en la informacion proporcionada (mismo encoder, decoder distinto) | 128 tokens por imagen de 256 x 256 | 14,42 | 11,61 | No disponible en la informacion proporcionada | Hugging Face (`MAETok/maetok-b-128`) |
 | Otros tokenizadores de imagenes (VQGAN, SD-VAE, TiTok, etc.) | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 Los unicos datos comparativos disponibles son los de MAETok, que actua como linea base del articulo. No se dispone de cifras comparables con otros tokenizadores de imagenes en la informacion proporcionada.
@@ -88,12 +88,12 @@ Los unicos datos comparativos disponibles son los de MAETok, que actua como line
 - El modelo esta especializado en ImageNet-1k; su comportamiento en dominios visuales muy distintos (imagen medica, satelital, ilustracion) no esta documentado.
 - No se documentan versiones cuantizadas ni formatos alternativos a safetensors y `.pt`, lo que limita la integracion con runtimes de inferencia que esperan GGUF u otros formatos.
 - La licencia Apache-2.0 permite uso comercial, pero debe conservarse el aviso de licencia y la atribucion correspondiente; conviene revisar tambien la licencia del modelo base MAETok.
-- El identificador del repositorio presenta una discrepancia: la ficha de HuggingFace consultada apunta a `sekkit/InterpTok-Models`, mientras que la model card indica `CGTuebingen/InterpTok-Models` en el comando de descarga. Conviene verificar cual es el repositorio canonico antes de automatizar descargas.
+- El identificador del repositorio presenta una discrepancia: la ficha de Hugging Face consultada apunta a `sekkit/InterpTok-Models`, mientras que la model card indica `CGTuebingen/InterpTok-Models` en el comando de descarga. Conviene verificar cual es el repositorio canonico antes de automatizar descargas.
 - El repositorio registra 0 descargas y 0 likes en el momento de la consulta, por lo que no existe validacion de la comunidad fuera del articulo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sekkit/InterpTok-Models
+- Modelo en Hugging Face: https://huggingface.co/sekkit/InterpTok-Models
 - Repositorio alternativo citado en la model card: https://huggingface.co/CGTuebingen/InterpTok-Models
 - Paper: https://arxiv.org/abs/2610.16759
 - Codigo: https://github.com/cgtuebingen/InterpTok

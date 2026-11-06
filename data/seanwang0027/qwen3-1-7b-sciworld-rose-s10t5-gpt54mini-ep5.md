@@ -80,11 +80,11 @@ La informacion disponible solo permite comparar contra variantes del mismo estud
 
 | Modelo | Parametros | Contexto | Tasa de exito en ScienceWorld | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (ROSE ep5) | 2,03 B | no especificado en la ficha; base Qwen3-1.7B con 32.768 tokens | 25,75% ± 1,30 | Apache 2.0 | HuggingFace, safetensors |
-| ROSE ep3 | 2,03 B | idem | 17,50% ± 2,29 (15,38% en re-evaluacion) | Apache 2.0 | HuggingFace, safetensors |
-| ROSE ep6 | 2,03 B | idem | 20,75% ± 1,82 | Apache 2.0 | HuggingFace, safetensors |
-| SFT ep3 (mismo profesor) | 2,03 B | idem | 12,88% ± 1,24 | Apache 2.0 | HuggingFace, safetensors |
-| Qwen3-1.7B base | 2,03 B | 32.768 tokens nativos | 0,12% | Apache 2.0 | HuggingFace, safetensors |
+| Este modelo (ROSE ep5) | 2,03 B | no especificado en la ficha; base Qwen3-1.7B con 32.768 tokens | 25,75% ± 1,30 | Apache 2.0 | Hugging Face, safetensors |
+| ROSE ep3 | 2,03 B | idem | 17,50% ± 2,29 (15,38% en re-evaluacion) | Apache 2.0 | Hugging Face, safetensors |
+| ROSE ep6 | 2,03 B | idem | 20,75% ± 1,82 | Apache 2.0 | Hugging Face, safetensors |
+| SFT ep3 (mismo profesor) | 2,03 B | idem | 12,88% ± 1,24 | Apache 2.0 | Hugging Face, safetensors |
+| Qwen3-1.7B base | 2,03 B | 32.768 tokens nativos | 0,12% | Apache 2.0 | Hugging Face, safetensors |
 
 Comparativa con modelos de otras familias o con agentes genericos: no disponible en la informacion proporcionada.
 
@@ -102,7 +102,7 @@ Comparativa con modelos de otras familias o con agentes genericos: no disponible
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SeanWang0027/qwen3-1.7b-sciworld-rose-s10t5-gpt54mini-ep5
+- Modelo en Hugging Face: https://huggingface.co/SeanWang0027/qwen3-1.7b-sciworld-rose-s10t5-gpt54mini-ep5
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Checkpoint ROSE ep1: https://huggingface.co/SeanWang0027/qwen3-1.7b-sciworld-rose-s10t5-gpt54mini-ep1
 - Checkpoint ROSE ep2: https://huggingface.co/SeanWang0027/qwen3-1.7b-sciworld-rose-s10t5-gpt54mini-ep2

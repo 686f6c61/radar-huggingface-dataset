@@ -6,7 +6,7 @@ El repositorio `krho/openadmet-cyp-regression-method-report` no contiene un mode
 
 El interes tecnico no esta en el modelo en si, que el propio autor califica de deliberadamente modesto (mejor de veinte configuraciones evaluadas en una sola sesion, sin ensembling ni representaciones preentrenadas), sino en el analisis del comportamiento de la metrica ST-RAE. El informe demuestra que la puntuacion macro-promediada esta dominada por una sola de las cuatro isoformas (CYP3A4) por una propiedad de los intervalos de medicion del ensayo, no del modelo.
 
-El repositorio es, por tanto, documentacion metodologica de quimioinformatica y aprendizaje automatico aplicado al descubrimiento de farmacos, no un artefacto de inferencia desplegable. No incluye pesos, tokenizador ni pipeline de HuggingFace.
+El repositorio es, por tanto, documentacion metodologica de quimioinformatica y aprendizaje automatico aplicado al descubrimiento de farmacos, no un artefacto de inferencia desplegable. No incluye pesos, tokenizador ni pipeline de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -91,7 +91,7 @@ No disponible. El repositorio es un informe de metodo de una participacion concr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/krho/openadmet-cyp-regression-method-report
+- Repositorio Hugging Face: https://huggingface.co/krho/openadmet-cyp-regression-method-report
 - Informe companero de la pista de clasificacion (TDI): https://huggingface.co/krho/openadmet-cyp-tdi-method-report
 - PubChem AID 1851: https://pubchem.ncbi.nlm.nih.gov/bioassay/1851
 - ChEMBL: https://www.ebi.ac.uk/chembl/

@@ -74,8 +74,8 @@ No se dispone en la información proporcionada de resultados de modelos comparab
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| t2know-biomedbert | no disponible | 512 (heredado) | NER biomédico anidado (40 etiquetas UMLS) | MIT | HuggingFace, requiere código custom |
-| BiomedBERT base (modelo base) | ~110 M (no confirmado) | 512 | MLM / encoder genérico biomédico | MIT | HuggingFace |
+| t2know-biomedbert | no disponible | 512 (heredado) | NER biomédico anidado (40 etiquetas UMLS) | MIT | Hugging Face, requiere código custom |
+| BiomedBERT base (modelo base) | ~110 M (no confirmado) | 512 | MLM / encoder genérico biomédico | MIT | Hugging Face |
 | Alternativas NER biomédico | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -93,7 +93,7 @@ No se dispone en la información proporcionada de resultados de modelos comparab
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/edugredu/t2know-biomedbert
+- Modelo en Hugging Face: https://huggingface.co/edugredu/t2know-biomedbert
 - Modelo base: https://huggingface.co/microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract-fulltext
 - Corpus T2KNOW v1.0.1 (Zenodo): https://doi.org/10.5281/zenodo.23801223
 - Paper: en revisión, cita pendiente de publicación (no disponible)

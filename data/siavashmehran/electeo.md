@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `electeo`, publicado por el usuario SiavashMehran en HuggingFace, es un repositorio que actualmente no contiene información técnica pública más allá de su licencia MIT. No se dispone de datos sobre arquitectura, tamaño, parámetros, contexto o capacidades. El repositorio fue creado el 19 de agosto de 2026 y no ha recibido descargas ni valoraciones, lo que sugiere que se trata de un proyecto en fase inicial o de una publicación experimental sin documentación asociada.
+El modelo `electeo`, publicado por el usuario SiavashMehran en Hugging Face, es un repositorio que actualmente no contiene información técnica pública más allá de su licencia MIT. No se dispone de datos sobre arquitectura, tamaño, parámetros, contexto o capacidades. El repositorio fue creado el 19 de agosto de 2026 y no ha recibido descargas ni valoraciones, lo que sugiere que se trata de un proyecto en fase inicial o de una publicación experimental sin documentación asociada.
 
 Dada la ausencia total de especificaciones en la model card y en los resultados de búsqueda web, no es posible evaluar su utilidad práctica ni compararlo con alternativas existentes. Esta ficha se limita a reflejar el estado actual de la información disponible, marcando explícitamente todos los campos técnicos como "no disponible" para evitar cualquier especulación.
 
@@ -57,5 +57,5 @@ No disponible. Al no existir información sobre el modelo, no es posible estable
 
 ## Enlaces
 
-- [HuggingFace - SiavashMehran/electeo](https://huggingface.co/SiavashMehran/electeo)
+- [Hugging Face - SiavashMehran/electeo](https://huggingface.co/SiavashMehran/electeo)
 - [Perfil de GitHub del autor](https://github.com/siavashMehran/) (sin relación directa con el modelo)

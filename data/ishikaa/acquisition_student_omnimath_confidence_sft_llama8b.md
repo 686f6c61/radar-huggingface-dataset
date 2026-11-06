@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ishikaa/acquisition_student_omnimath_confidence_sft_llama8b` es un ajuste fino de tipo supervisado (SFT) sobre un modelo base de la familia Llama de 8.030 millones de parametros. Ha sido publicado por el usuario `ishikaa` en HuggingFace como un modelo de generacion de texto, con la libreria `transformers` y el framework `trl`. El nombre del modelo sugiere que el entrenamiento se ha orientado a tareas de matematicas (OmniMath) y a la estimacion de confianza en las respuestas, aunque no se ha publicado documentacion tecnica que lo confirme.
+El modelo `ishikaa/acquisition_student_omnimath_confidence_sft_llama8b` es un ajuste fino de tipo supervisado (SFT) sobre un modelo base de la familia Llama de 8.030 millones de parametros. Ha sido publicado por el usuario `ishikaa` en Hugging Face como un modelo de generacion de texto, con la libreria `transformers` y el framework `trl`. El nombre del modelo sugiere que el entrenamiento se ha orientado a tareas de matematicas (OmniMath) y a la estimacion de confianza en las respuestas, aunque no se ha publicado documentacion tecnica que lo confirme.
 
 El repositorio contiene los pesos en formato `safetensors` y ocupa 16,1 GB, lo que indica que se distribuye en precision de 16 bits (fp16/bf16). No se especifican la licencia, los idiomas soportados ni la longitud de contexto. Al tratarse de un modelo sin descargas ni likes, con una model card autogenerada, se desconoce su rendimiento y su idoneidad para produccion. Este modelo puede ser de interes como caso de estudio de fine-tuning SFT sobre un dataset de matematicas, pero requiere una evaluacion independiente antes de cualquier uso real.
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No es
 - VRAM estimada para inferencia: aproximadamente 16 GB para cargar los pesos en precision de 16 bits (basado en el tamano del repositorio de 16,1 GB). Se requieren entre 2 y 8 GB adicionales para contexto, activaciones y logits, dependiendo de la longitud de la secuencia y el software de inferencia.
 - Para cuantizaciones, no se ofrecen datos. En un modelo de 8B, las cuantizaciones tipicas son 8-bit (~8 GB) y 4-bit (~4-5 GB), pero no se han publicado configuraciones para este modelo.
 - GPU recomendadas: una GPU con al menos 24 GB de VRAM (RTX 3090/4090, A10G, A100) para precision de 16 bits. Con cuantizacion a 4-bit, puede ejecutarse en GPUs de consumo con 8-12 GB, aunque no hay garantias de rendimiento.
-- Opciones de despliegue: al ser un modelo de la familia Llama y con formato `safetensors`, puede cargarse con `transformers`, `vLLM`, `text-generation-inference` (TGI), `llama.cpp` o `Ollama` (tras conversion a GGUF). La etiqueta `endpoints_compatible` sugiere compatibilidad con los endpoints de HuggingFace.
+- Opciones de despliegue: al ser un modelo de la familia Llama y con formato `safetensors`, puede cargarse con `transformers`, `vLLM`, `text-generation-inference` (TGI), `llama.cpp` o `Ollama` (tras conversion a GGUF). La etiqueta `endpoints_compatible` sugiere compatibilidad con los endpoints de Hugging Face.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -78,4 +78,4 @@ Nota: no se dispone de resultados de rendimiento de este modelo. La comparacion 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ishikaa/acquisition_student_omnimath_confidence_sft_llama8b
+- Modelo en Hugging Face: https://huggingface.co/ishikaa/acquisition_student_omnimath_confidence_sft_llama8b

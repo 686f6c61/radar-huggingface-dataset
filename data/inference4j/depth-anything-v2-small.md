@@ -4,7 +4,7 @@
 
 Depth Anything V2 Small es un modelo de estimacion de profundidad monocular que predice un mapa de profundidad relativa inversa a partir de una sola imagen RGB. Fue desarrollado por el equipo Depth Anything y presentado en NeurIPS 2024 como una version mas capaz que Depth Anything V1, con mejor calidad en detalles finos y mayor robustez. La version small utiliza un backbone DINOv2 ViT-Small y un decodificador DPT, con aproximadamente 25 millones de parametros.
 
-Este repositorio concreto (`inference4j/depth-anything-v2-small`) es una exportacion ONNX del modelo original de HuggingFace, preparada por la comunidad onnx-community y espejada para su uso con inference4j, una libreria de inferencia en Java basada en ONNX Runtime. La relevancia del modelo radica en su tamanio reducido (0.1 GB), su licencia Apache 2.0 y su disponibilidad en formato ONNX, lo que permite su integracion en aplicaciones Java, en dispositivos edge o en entornos de produccion sin dependencias de servicios externos. El modelo no procesa texto, no soporta tool calling y su salida es un mapa de profundidad relativa, no metrica.
+Este repositorio concreto (`inference4j/depth-anything-v2-small`) es una exportacion ONNX del modelo original de Hugging Face, preparada por la comunidad onnx-community y espejada para su uso con inference4j, una libreria de inferencia en Java basada en ONNX Runtime. La relevancia del modelo radica en su tamanio reducido (0.1 GB), su licencia Apache 2.0 y su disponibilidad en formato ONNX, lo que permite su integracion en aplicaciones Java, en dispositivos edge o en entornos de produccion sin dependencias de servicios externos. El modelo no procesa texto, no soporta tool calling y su salida es un mapa de profundidad relativa, no metrica.
 
 ## Especificaciones tecnicas
 
@@ -78,8 +78,8 @@ No disponible. En la informacion proporcionada no se incluyen datos comparativos
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/inference4j/depth-anything-v2-small
-- Modelo original en HuggingFace: https://huggingface.co/depth-anything/Depth-Anything-V2-Small-hf
+- Repositorio Hugging Face: https://huggingface.co/inference4j/depth-anything-v2-small
+- Modelo original en Hugging Face: https://huggingface.co/depth-anything/Depth-Anything-V2-Small-hf
 - Repositorio oficial de Depth Anything V2: https://github.com/DepthAnything/Depth-Anything-V2
 - Paper original: https://arxiv.org/abs/2406.09414
 - Libreria inference4j: https://github.com/inference4j/inference4j

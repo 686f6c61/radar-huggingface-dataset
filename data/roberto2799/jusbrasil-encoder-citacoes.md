@@ -6,7 +6,7 @@ El encoder de citaciones jurídicas es un modelo de clasificación de tokens (NE
 
 La relevancia del modelo es acotada pero concreta: los sistemas de verificación de citas jurídicas suelen basarse en expresiones regulares y heurísticas, que fallan ante variaciones de formato, ruido de OCR o referencias implícitas. Este encoder cubre ese hueco añadiendo únicamente los tramos que las reglas no detectan, y cada tramo pasa después por filtros adicionales antes de consolidarse como cita. Su tamaño reducido (0,4 GB de repositorio) y su inferencia en CPU lo hacen desplegable sin infraestructura de GPU.
 
-El modelo está publicado con licencia MIT, soporta únicamente portugués, y su ventana de contexto efectiva de trabajo es de 510 tokens con solapamiento de 128 durante el entrenamiento y la inferencia, sobre la arquitectura BERT estándar de 512 posiciones. No tiene descargas ni valoraciones registradas en HuggingFace en el momento de redactar esta ficha.
+El modelo está publicado con licencia MIT, soporta únicamente portugués, y su ventana de contexto efectiva de trabajo es de 510 tokens con solapamiento de 128 durante el entrenamiento y la inferencia, sobre la arquitectura BERT estándar de 512 posiciones. No tiene descargas ni valoraciones registradas en Hugging Face en el momento de redactar esta ficha.
 
 ## Especificaciones tecnicas
 
@@ -113,7 +113,7 @@ La comparación más directa posible es con su propio modelo base: comparten bac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Roberto2799/jusbrasil-encoder-citacoes
+- Modelo en Hugging Face: https://huggingface.co/Roberto2799/jusbrasil-encoder-citacoes
 - Modelo base BERTimbau-base: https://huggingface.co/neuralmind/bert-base-portuguese-cased
 - Dataset sintético del equipo: https://huggingface.co/datasets/Roberto2799/jusbrasil-sintetico-diversificado
 - Repositorio LeNER-Br: https://github.com/peluz/lener-br

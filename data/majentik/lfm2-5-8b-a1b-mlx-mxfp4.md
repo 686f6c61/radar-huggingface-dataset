@@ -87,7 +87,7 @@ La comparativa se basa en modelos MoE de tamaño similar orientados a despliegue
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta variante: https://huggingface.co/majentik/LFM2.5-8B-A1B-MLX-MXFP4
+- Repositorio Hugging Face de esta variante: https://huggingface.co/majentik/LFM2.5-8B-A1B-MLX-MXFP4
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-8B-A1B
 - Documentación oficial de Liquid AI: https://docs.liquid.ai/lfm/models/lfm25-8b-a1b
 - Blog de Liquid AI sobre LFM2.5-8B-A1B: https://www.liquid.ai/blog/lfm2-5-8b-a1b

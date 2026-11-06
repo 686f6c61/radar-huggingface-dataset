@@ -81,7 +81,7 @@ En el conjunto de comparacion publicado por OpenBMB, MiniCPM5-1B alcanza el mejo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ArchiveStudio/MiniCPM5-1B-SFT
+- Modelo en Hugging Face: https://huggingface.co/ArchiveStudio/MiniCPM5-1B-SFT
 - Version oficial OpenBMB (SFT): https://huggingface.co/openbmb/MiniCPM5-1B-SFT
 - Version final (RL + OPD): https://huggingface.co/openbmb/MiniCPM5-1B
 - Checkpoint base: https://huggingface.co/openbmb/MiniCPM5-1B-Base

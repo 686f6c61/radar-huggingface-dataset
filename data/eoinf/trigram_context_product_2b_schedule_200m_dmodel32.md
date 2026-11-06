@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`eoinf/trigram_context_product_2b_schedule_200m_dmodel32` es un modelo de investigación de tamaño muy reducido publicado por el usuario eoinf en HuggingFace. Forma parte de una rejilla experimental ("Transformer experiment grid") de transformers causales minúsculos con `d_model` de 32 dimensiones, vocabulario de 4096 tokens y una longitud de contexto de 256 tokens. El nombre indica una programación de entrenamiento nominal de aproximadamente 2 mil millones de tokens (1.999.998.976), correspondiente a la variante de 200M de parámetros de la rejilla.
+`eoinf/trigram_context_product_2b_schedule_200m_dmodel32` es un modelo de investigación de tamaño muy reducido publicado por el usuario eoinf en Hugging Face. Forma parte de una rejilla experimental ("Transformer experiment grid") de transformers causales minúsculos con `d_model` de 32 dimensiones, vocabulario de 4096 tokens y una longitud de contexto de 256 tokens. El nombre indica una programación de entrenamiento nominal de aproximadamente 2 mil millones de tokens (1.999.998.976), correspondiente a la variante de 200M de parámetros de la rejilla.
 
 No es un modelo destinado a uso en producción ni a aplicaciones reales: es un artefacto de experimentación sobre arquitecturas y programaciones de entrenamiento. El repositorio tiene 0 descargas y 0 likes, y un tamaño de 0.0 GB, lo que sugiere que los pesos podrían no estar materializados o ser extremadamente pequeños. La model card es explícita: la evaluación se realiza sobre los propios datos de entrenamiento y no existe conjunto de validación independiente.
 
@@ -79,6 +79,6 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eoinf/trigram_context_product_2b_schedule_200m_dmodel32
+- Modelo en Hugging Face: https://huggingface.co/eoinf/trigram_context_product_2b_schedule_200m_dmodel32
 - Tokenizador asociado: https://huggingface.co/eoinf/pile_tokenizer_4096
 - Repositorio de código (referenciado en la model card): `synthetic_trigrams` (no se proporciona URL en la información disponible)

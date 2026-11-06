@@ -76,7 +76,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RunningHubAI/rh-lightx2v-hybrid-4to8step-turbo-r48-dasiwaref2vahybridv1-curveproj1025-compat-v001-t8-lora
+- Hugging Face: https://huggingface.co/RunningHubAI/rh-lightx2v-hybrid-4to8step-turbo-r48-dasiwaref2vahybridv1-curveproj1025-compat-v001-t8-lora
 - Modelo original en RunningHub: https://www.runninghub.cn/model/public/2095739294899068929
 - Pagina del autor: https://www.runninghub.cn/user-center/1819214514410942465
 - RunningHub International: https://www.runninghub.ai

@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Formato | Licencia | Contexto / ventana | Disponibilidad |
 |---|---|---|---|---|---|
-| SzczurekYT/silero-vad-ifless-bpk | VAD (Silero, ifless) | bpk (Burn) | MIT | no disponible | HuggingFace |
+| SzczurekYT/silero-vad-ifless-bpk | VAD (Silero, ifless) | bpk (Burn) | MIT | no disponible | Hugging Face |
 | Silero VAD (original) | VAD | ONNX / PyTorch | MIT | tramas de audio cortas | GitHub de Silero |
 | WebRTC VAD | VAD clásico | C/C++ | BSD | tramas de 10/20/30 ms | WebRTC |
 
@@ -79,6 +79,6 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SzczurekYT/silero-vad-ifless-bpk
+- Hugging Face: https://huggingface.co/SzczurekYT/silero-vad-ifless-bpk
 - Burn (framework): https://burn.dev/
 - Silero VAD (modelo original, referencia): no disponible en la información proporcionada.

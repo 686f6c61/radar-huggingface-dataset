@@ -1,7 +1,7 @@
 # sunyoungKim/connectailab-rl-lco-ai-commpany-v1-teacher
 
 ## Resumen
-lco-ai-company-v1 (modelo "AI 사장" / CEO de IA) es una politica de decision entrenada con aprendizaje por refuerzo que opera una empresa dentro del simulador sintetico CONNECT TYCOON. Lo publica el usuario de HuggingFace sunyoungKim, vinculado al proyecto CONNECT TYCOON y a las iniciativas educativas CONNECT AI LAB y AI CITY BUILDERS. No es un modelo de lenguaje: es una red de politica PPO serializada como artefacto de numpy, que consume el estado de la empresa y devuelve decisiones en el formato de la libreria JEV (`typesafe/jev-1.13`).
+lco-ai-company-v1 (modelo "AI 사장" / CEO de IA) es una politica de decision entrenada con aprendizaje por refuerzo que opera una empresa dentro del simulador sintetico CONNECT TYCOON. Lo publica el usuario de Hugging Face sunyoungKim, vinculado al proyecto CONNECT TYCOON y a las iniciativas educativas CONNECT AI LAB y AI CITY BUILDERS. No es un modelo de lenguaje: es una red de politica PPO serializada como artefacto de numpy, que consume el estado de la empresa y devuelve decisiones en el formato de la libreria JEV (`typesafe/jev-1.13`).
 
 El problema que resuelve es acotado y de simulacion: tomar decisiones operativas (asignacion de personal, pedidos de inventario, marketing, atencion al cliente, reembolsos y seguridad) a lo largo de un mes de 20 dias laborables, optimizando una funcion de valor compuesta por beneficios, satisfaccion del cliente y evitacion de riesgo. El modelo aprende primero imitando a un "jefe de reglas" y despues se ajusta con PPO usando recompensas derivadas de esos tres objetivos.
 
@@ -79,7 +79,7 @@ No se han identificado en la informacion disponible modelos directamente compara
 - No debe usarse como asesor financiero, legal ni de RRHH, ni para tomar decisiones sobre personas reales.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/sunyoungKim/connectailab-rl-lco-ai-commpany-v1-teacher
+- Hugging Face: https://huggingface.co/sunyoungKim/connectailab-rl-lco-ai-commpany-v1-teacher
 - Repositorio GitHub de CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab de entrenamiento: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb
 - Formato JEV referenciado por el modelo: `typesafe/jev-1.13` (sin URL publica en la informacion disponible)

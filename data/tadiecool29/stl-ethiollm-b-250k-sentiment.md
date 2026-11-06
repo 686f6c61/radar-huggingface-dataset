@@ -21,7 +21,7 @@ Con 278 millones de parámetros y un tamaño de repositorio de 1,1 GB, se trata 
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tuning del modelo base EthioNLP/EthioLLM-b-250K, que según el paper de EthioLLM (arXiv:2403.13737) es un transformer multilingüe preentrenado con un vocabulario de 250.000 tokens. No se dispone de detalles sobre el número de capas, cabezas de atención o tipo de arquitectura exacta (encoder-only o decoder) en la información proporcionada. El fine-tuning se realizó con el Trainer de HuggingFace, usando un dataset no especificado, durante 10 épocas con una tasa de aprendizaje de 1e-05, optimizador AdamW, scheduler coseno con 300 pasos de warmup y precisión mixta nativa. No se menciona el uso de RLHF, DPO u otras técnicas de alineación.
+El modelo es un fine-tuning del modelo base EthioNLP/EthioLLM-b-250K, que según el paper de EthioLLM (arXiv:2403.13737) es un transformer multilingüe preentrenado con un vocabulario de 250.000 tokens. No se dispone de detalles sobre el número de capas, cabezas de atención o tipo de arquitectura exacta (encoder-only o decoder) en la información proporcionada. El fine-tuning se realizó con el Trainer de Hugging Face, usando un dataset no especificado, durante 10 épocas con una tasa de aprendizaje de 1e-05, optimizador AdamW, scheduler coseno con 300 pasos de warmup y precisión mixta nativa. No se menciona el uso de RLHF, DPO u otras técnicas de alineación.
 
 ## Capacidades
 
@@ -59,7 +59,7 @@ No se han publicado comparaciones con otros modelos en la información disponibl
 - VRAM estimada para inferencia: con 278M parámetros en fp32 (~1,1 GB), se necesitan aproximadamente 2-3 GB de VRAM para inferencia básica. Con cuantización int8 (no publicada, pero posible) podría reducirse a ~1 GB.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM, como NVIDIA GTX 1650, RTX 3050, o incluso CPUs con suficiente RAM. No requiere GPUs de gama alta.
 - Compatibilidad con GPUs de consumo: sí, cabe en GPUs de consumo como RTX 3060, RTX 4060, etc.
-- Opciones de despliegue: al ser un modelo de transformers estándar, puede servirse con vLLM, TGI, o mediante el pipeline de HuggingFace. También es compatible con llama.cpp si se convierte a GGUF, aunque no se proporcionan cuantizaciones oficiales.
+- Opciones de despliegue: al ser un modelo de transformers estándar, puede servirse con vLLM, TGI, o mediante el pipeline de Hugging Face. También es compatible con llama.cpp si se convierte a GGUF, aunque no se proporcionan cuantizaciones oficiales.
 - Latencia y throughput: no se dispone de datos medidos. Dado el tamaño, se espera una latencia de decenas de milisegundos por muestra en GPUs modernas.
 
 ## Comparativa con modelos similares
@@ -78,8 +78,8 @@ No se dispone de información sobre modelos comparables específicos para análi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tadiecool29/STL-ethiollm-b-250K-sentiment
+- Modelo en Hugging Face: https://huggingface.co/tadiecool29/STL-ethiollm-b-250K-sentiment
 - Modelo base EthioLLM-b-250K: https://huggingface.co/EthioNLP/EthioLLM-b-250K
 - Paper de EthioLLM (arXiv): https://arxiv.org/html/2403.13737v3
-- Perfil del autor en HuggingFace: https://huggingface.co/tadiecool29
+- Perfil del autor en Hugging Face: https://huggingface.co/tadiecool29
 - Repositorio GitHub del autor: https://github.com/tadiecool29/tadiecool29

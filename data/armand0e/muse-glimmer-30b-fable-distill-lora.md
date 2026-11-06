@@ -77,7 +77,7 @@ La comparativa se limita a estos dos modelos porque no se dispone de datos de re
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/armand0e/Muse-Glimmer-30B-Fable-Distill-LoRA
+- Adaptador en Hugging Face: https://huggingface.co/armand0e/Muse-Glimmer-30B-Fable-Distill-LoRA
 - Modelo base: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Pagina oficial de Muse Glimmer en Meta: https://developer.meta.com/ai/models/muse-glimmer/
 - Model card en NVIDIA NIM: https://build.nvidia.com/meta/muse-glimmer-30b/modelcard

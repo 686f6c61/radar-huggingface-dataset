@@ -6,7 +6,7 @@
 
 Su relevancia es exclusivamente educativa y de referencia: sirve para ilustrar el flujo completo de entrenamiento, preprocesado y evaluación de una red neuronal simple, así como para comparar el rendimiento de un baseline MLP frente a arquitecturas convolucionales en CIFAR-10. Alcanza una precisión de test de 0,4774 (47,74 %) y una precisión de entrenamiento final de 0,9110 (91,10 %), lo que evidencia un sobreajuste considerable típico de un MLP sin regularización sobre imágenes.
 
-No dispone de model card extendida, licencia declarada, idiomas soportados ni pipeline de HuggingFace configurado. Cualquier uso en producción requeriría reconstruir el código de inferencia a partir de los archivos de pesos y del `config.json`.
+No dispone de model card extendida, licencia declarada, idiomas soportados ni pipeline de Hugging Face configurado. Cualquier uso en producción requeriría reconstruir el código de inferencia a partir de los archivos de pesos y del `config.json`.
 
 ## Especificaciones tecnicas
 
@@ -70,7 +70,7 @@ No se han publicado resultados adicionales de benchmarks (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto / entrada | Precision CIFAR-10 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| smai-a4-cifar10-mlp-p0 | ~394.634 | 32×32×3 fija | 47,74 % (test) | no disponible | HuggingFace (repo de 0,0 GB) |
+| smai-a4-cifar10-mlp-p0 | ~394.634 | 32×32×3 fija | 47,74 % (test) | no disponible | Hugging Face (repo de 0,0 GB) |
 | LeNet-5 (referencia clásica) | ~60.000 | 32×32×1 | ~70 % (típico en CIFAR-10 con entrenamiento adecuado) | no disponible | Implementaciones públicas múltiples |
 | ResNet-18 (referencia moderna) | ~11,2 M | 32×32×3 | ~93-95 % (típico con augmentación) | no disponible | Implementaciones públicas múltiples |
 
@@ -81,7 +81,7 @@ No se dispone de datos de benchmarks comparativos publicados en la información 
 - Sobreajuste severo: 91,10 % en entrenamiento frente a 47,74 % en test; no generaliza bien fuera del conjunto de entrenamiento.
 - Sin sesgo inductivo espacial: al ser un MLP, no explota la estructura local de las imágenes, lo que limita su precisión frente a CNN.
 - Sin licencia declarada: no se especifican términos de uso comercial; debe contactarse con el autor antes de cualquier uso en producción.
-- Sin model card extendida ni pipeline de HuggingFace: la integración requiere reconstruir el código de inferencia y respetar exactamente el preprocesado (aplanado HWC, división por 255, resta de media y división por desviación típica).
+- Sin model card extendida ni pipeline de Hugging Face: la integración requiere reconstruir el código de inferencia y respetar exactamente el preprocesado (aplanado HWC, división por 255, resta de media y división por desviación típica).
 - Entrada fija de 32×32×3: no admite otras resoluciones ni imágenes en escala de grises sin adaptación.
 - Riesgo de alucinación no aplica (no genera texto), pero sí riesgo de clasificaciones erróneas en clases visualmente similares (gato/perro, automóvil/camión).
 - Sin información sobre sesgos del dataset más allá de los propios de CIFAR-10 (posibles desequilibrios y sesgos de anotación).
@@ -89,5 +89,5 @@ No se dispone de datos de benchmarks comparativos publicados en la información 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Aayushk05/smai-a4-cifar10-mlp-p0
+- Hugging Face: https://huggingface.co/Aayushk05/smai-a4-cifar10-mlp-p0
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

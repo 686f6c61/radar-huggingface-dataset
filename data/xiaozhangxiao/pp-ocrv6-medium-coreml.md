@@ -98,10 +98,10 @@ No se dispone de datos de rendimiento comparado entre estas variantes en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xiaozhangxiao/pp-ocrv6-medium-coreml
+- Modelo en Hugging Face: https://huggingface.co/xiaozhangxiao/pp-ocrv6-medium-coreml
 - Detector upstream (PaddlePaddle, safetensors): https://huggingface.co/PaddlePaddle/PP-OCRv6_medium_det_safetensors
 - Reconocedor upstream (PaddlePaddle, safetensors): https://huggingface.co/PaddlePaddle/PP-OCRv6_medium_rec_safetensors
-- Modelo de reconocimiento oficial en HuggingFace: https://huggingface.co/PaddlePaddle/PP-OCRv6_medium_rec
+- Modelo de reconocimiento oficial en Hugging Face: https://huggingface.co/PaddlePaddle/PP-OCRv6_medium_rec
 - Colección oficial PP-OCRv6: https://huggingface.co/collections/PaddlePaddle/pp-ocrv6
 - Conversiones Core ML de PP-OCRv6 (tiny, small, medium) por `rowan719`: https://github.com/rowan719/PP-OCRv6-models
 - Tutorial de PP-OCRv6 Medium Recognition en ONNX: https://aiindigo.com/tutorials/getting-started-with-pp-ocrv6-medium-recognition-high-speed-text-extraction

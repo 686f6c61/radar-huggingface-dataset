@@ -81,6 +81,6 @@ La comparación directa con el modelo base es la más informativa: este artefact
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Danbidan2443/e5-base-small-ft
+- Modelo en Hugging Face: https://huggingface.co/Danbidan2443/e5-base-small-ft
 - Modelo base: https://huggingface.co/intfloat/multilingual-e5-base
 - Repositorio del proyecto del autor: https://github.com/danbidan/ai-core

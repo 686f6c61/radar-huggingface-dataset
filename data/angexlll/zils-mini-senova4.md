@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Senova-4B-v4 (publicado en HuggingFace como `ANGExllL/zils-mini-senova4`) es un ajuste fino de parámetros completos de Qwen/Qwen3.5-4B, desarrollado por el usuario ANGExllL. El modelo parte de la arquitectura Qwen3.5 de 4B parámetros (4.539.265.536 parámetros reales según safetensors) y se ha entrenado sobre 5.181.618 ejemplos durante 3 épocas, alcanzando el checkpoint final en el paso 1530. Está orientado a tareas de imagen-texto a texto (pipeline `image-text-to-text`), aunque su diferenciador principal es una técnica de inferencia denominada "Read Twice" y un sistema de etiquetas suaves sobre conjuntos de opciones ("option-set soft-label fine-tune").
+Senova-4B-v4 (publicado en Hugging Face como `ANGExllL/zils-mini-senova4`) es un ajuste fino de parámetros completos de Qwen/Qwen3.5-4B, desarrollado por el usuario ANGExllL. El modelo parte de la arquitectura Qwen3.5 de 4B parámetros (4.539.265.536 parámetros reales según safetensors) y se ha entrenado sobre 5.181.618 ejemplos durante 3 épocas, alcanzando el checkpoint final en el paso 1530. Está orientado a tareas de imagen-texto a texto (pipeline `image-text-to-text`), aunque su diferenciador principal es una técnica de inferencia denominada "Read Twice" y un sistema de etiquetas suaves sobre conjuntos de opciones ("option-set soft-label fine-tune").
 
 La relevancia del modelo reside en su enfoque metodológico: en lugar de optimizar únicamente el siguiente token, se entrena con etiquetas suaves sobre conjuntos de opciones, lo que teóricamente mejora la calibración en tareas de elección múltiple y decisión. Además, introduce un protocolo de inferencia concreto (Read Twice) que consiste en repetir el enunciado completo de la pregunta dos veces, separadas por una línea en blanco, dentro de un mismo mensaje de usuario, y leer una única distribución del siguiente token. No se realizan dos llamadas al modelo.
 
@@ -87,6 +87,6 @@ No se dispone de datos suficientes para comparar rendimiento con alternativas co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ANGExllL/zils-mini-senova4
+- Hugging Face: https://huggingface.co/ANGExllL/zils-mini-senova4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Repositorio, paper o demo adicionales: no disponibles en la información proporcionada.

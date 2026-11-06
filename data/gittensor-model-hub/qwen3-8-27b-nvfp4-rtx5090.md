@@ -33,7 +33,7 @@ La cuantización se realizó con NVIDIA Model Optimizer en formato NVFP4, que ut
 - Soporte de tool calling / function calling (probado con 5/5 llamadas correctas en la prueba interna).
 - Compatible con agentes y razonamiento de múltiples pasos gracias a su modo de razonamiento y a la ventana de contexto de 256k.
 - Capacidades multilingües: no documentadas explícitamente, aunque el modelo base de Qwen suele ser multilingüe.
-- Capacidades de visión: la etiqueta del pipeline en HuggingFace indica `image-text-to-text`, pero la model card no menciona ningún detalle sobre procesamiento de imágenes. No se puede confirmar si el checkpoint conserva capacidades multimodales.
+- Capacidades de visión: la etiqueta del pipeline en Hugging Face indica `image-text-to-text`, pero la model card no menciona ningún detalle sobre procesamiento de imágenes. No se puede confirmar si el checkpoint conserva capacidades multimodales.
 - Soporte de decodificación especulativa opcional mediante el drafter DSpark (no incluido en este repo, disponible por separado).
 
 ## Casos de uso
@@ -89,7 +89,7 @@ La comparativa se limita a variantes del mismo modelo base. No se dispone de inf
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/gittensor-model-hub/Qwen3.8-27B-NVFP4-RTX5090)
+- [Modelo en Hugging Face](https://huggingface.co/gittensor-model-hub/Qwen3.8-27B-NVFP4-RTX5090)
 - [Modelo base Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [Drafter especulativo Qwen3.8-27B-DSpark-NVFP4](https://huggingface.co/gittensor-model-hub/Qwen3.8-27B-DSpark-NVFP4)
 - [Repositorio de despliegue Docker en GitHub](https://github.com/devbauerflorian/qwen3.8-27b-rtx5090)

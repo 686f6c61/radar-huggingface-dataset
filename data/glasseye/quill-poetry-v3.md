@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GLASSEYE/quill-poetry-v3 | Adaptador LoRA sobre 7,3B | No disponible (base: 32 768) | LoRA de estilo poetico | Apache-2.0 | HuggingFace, 0 descargas |
-| mistralai/Mistral-7B-Instruct-v0.3 | Aproximadamente 7,3B | 32 768 tokens | Modelo instructivo generalista | Apache-2.0 | HuggingFace, ampliamente desplegado |
-| meta-llama/Llama-3.1-8B-Instruct | 8B | 128 000 tokens | Modelo instructivo generalista | Licencia comunitaria de Llama 3.1 | HuggingFace, muy extendido |
-| Qwen/Qwen2.5-7B-Instruct | Aproximadamente 7,6B | 128 000 tokens | Modelo instructivo generalista | Apache-2.0 | HuggingFace, muy extendido |
+| GLASSEYE/quill-poetry-v3 | Adaptador LoRA sobre 7,3B | No disponible (base: 32 768) | LoRA de estilo poetico | Apache-2.0 | Hugging Face, 0 descargas |
+| mistralai/Mistral-7B-Instruct-v0.3 | Aproximadamente 7,3B | 32 768 tokens | Modelo instructivo generalista | Apache-2.0 | Hugging Face, ampliamente desplegado |
+| meta-llama/Llama-3.1-8B-Instruct | 8B | 128 000 tokens | Modelo instructivo generalista | Licencia comunitaria de Llama 3.1 | Hugging Face, muy extendido |
+| Qwen/Qwen2.5-7B-Instruct | Aproximadamente 7,6B | 128 000 tokens | Modelo instructivo generalista | Apache-2.0 | Hugging Face, muy extendido |
 
 No hay datos de rendimiento publicados para quill-poetry-v3, por lo que la comparacion se limita a parametros, contexto, licencia y disponibilidad. No se han identificado otros adaptadores LoRA de poesia comparables en la informacion proporcionada.
 
@@ -89,7 +89,7 @@ No hay datos de rendimiento publicados para quill-poetry-v3, por lo que la compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GLASSEYE/quill-poetry-v3
+- Modelo en Hugging Face: https://huggingface.co/GLASSEYE/quill-poetry-v3
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3
 - Paper o blog del autor: no disponible
 - Repositorio de codigo: no disponible

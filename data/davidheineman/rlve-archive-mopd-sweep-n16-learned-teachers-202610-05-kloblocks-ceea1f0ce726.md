@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| rlve-archive-mopd-sweep-n16-learned-teachers-202610-05-kloblocks | 1,78B | no disponible | no disponible | HuggingFace, 0 descargas, 0 likes | Checkpoint de investigacion, sin model card funcional ni benchmarks |
-| Qwen2.5-1.5B-Instruct | 1,54B | 32.768 tokens | Apache 2.0 | HuggingFace, ampliamente usado | Modelo base de partida de este checkpoint |
-| Llama-3.2-1B-Instruct | 1,24B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, requiere aceptar licencia | Alternativa de tamano similar con contexto mucho mayor |
-| Gemma-2-2B-it | 2,61B | 8.192 tokens | Gemma Terms of Use | HuggingFace, requiere aceptar licencia | Alternativa de tamano cercano, con restricciones de uso comercial |
+| rlve-archive-mopd-sweep-n16-learned-teachers-202610-05-kloblocks | 1,78B | no disponible | no disponible | Hugging Face, 0 descargas, 0 likes | Checkpoint de investigacion, sin model card funcional ni benchmarks |
+| Qwen2.5-1.5B-Instruct | 1,54B | 32.768 tokens | Apache 2.0 | Hugging Face, ampliamente usado | Modelo base de partida de este checkpoint |
+| Llama-3.2-1B-Instruct | 1,24B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, requiere aceptar licencia | Alternativa de tamano similar con contexto mucho mayor |
+| Gemma-2-2B-it | 2,61B | 8.192 tokens | Gemma Terms of Use | Hugging Face, requiere aceptar licencia | Alternativa de tamano cercano, con restricciones de uso comercial |
 
 ## Limitaciones y advertencias
 
@@ -85,7 +85,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/davidheineman/rlve-archive-mopd-sweep-n16-learned-teachers-202610-05-kloblocks-ceea1f0ce726
+- Hugging Face: https://huggingface.co/davidheineman/rlve-archive-mopd-sweep-n16-learned-teachers-202610-05-kloblocks-ceea1f0ce726
 - Coleccion RLVE OPD Teachers: https://huggingface.co/collections/davidheineman/rlve-opd-teachers
 - Coleccion RLVE OPD Teachers (Qwen 2.5 1.5B): https://huggingface.co/collections/davidheineman/rlve-opd-teachers-qwen-25-15b
 - Repositorio GitHub del proyecto: https://github.com/davidheineman/rlve

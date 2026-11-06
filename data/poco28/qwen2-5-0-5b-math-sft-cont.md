@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`poco28/qwen2.5-0.5b-math-sft-cont` es un ajuste fino (fine-tune) de tipo SFT de la familia Qwen2.5, publicado por el usuario `poco28` en HuggingFace. El nombre del repositorio indica dos cosas: que parte de un modelo base de la serie Qwen2.5 con aproximadamente 0,5 mil millones de parametros (el recuento real de safetensors es de 494.032.768 parametros) y que ha sido entrenado con aprendizaje supervisado sobre datos de matematicas, presumiblemente como continuacion de un ajuste previo (el sufijo `-cont`). La model card del autor es la plantilla automatica de HuggingFace sin rellenar, por lo que no hay documentacion oficial sobre el dataset, los hiperparametros ni la procedencia exacta del checkpoint inicial.
+`poco28/qwen2.5-0.5b-math-sft-cont` es un ajuste fino (fine-tune) de tipo SFT de la familia Qwen2.5, publicado por el usuario `poco28` en Hugging Face. El nombre del repositorio indica dos cosas: que parte de un modelo base de la serie Qwen2.5 con aproximadamente 0,5 mil millones de parametros (el recuento real de safetensors es de 494.032.768 parametros) y que ha sido entrenado con aprendizaje supervisado sobre datos de matematicas, presumiblemente como continuacion de un ajuste previo (el sufijo `-cont`). La model card del autor es la plantilla automatica de Hugging Face sin rellenar, por lo que no hay documentacion oficial sobre el dataset, los hiperparametros ni la procedencia exacta del checkpoint inicial.
 
 El interes del modelo reside en su tamano: con menos de 500 millones de parametros y un peso en disco de aproximadamente 1 GB en el repositorio, es un candidato a ejecutarse en CPU, en GPUs integradas o en GPUs de gama baja con muy poco presupuesto de VRAM. Esto lo hace atractivo para experimentar con tecnicas de ajuste fino en matematicas sobre modelos pequenos, para desplegar asistentes aritmeticos ligeros en el borde (edge) o para servir como componente rapido dentro de un pipeline mayor con verificacion posterior.
 
@@ -28,9 +28,9 @@ No obstante, la falta de informacion publicada es casi total: no hay licencia de
 
 La arquitectura corresponde a la del modelo base Qwen2.5-0.5B: un transformer decoder-only con atencion causal, normalizacion RMSNorm pre-norm, activacion SwiGLU en las capas feed-forward, embeddings de tokens atados a la cabeza de salida y codificacion posicional rotatoria (RoPE). El recuento exacto de parametros (494.032.768) coincide con el checkpoint oficial de Qwen2.5-0.5B, lo que respalda que el ajuste fino se realizo sobre ese modelo y no sobre una variante con vocabulario o profundidad distintos. Al no ser un modelo MoE, todos los parametros se activan en cada token.
 
-Sobre el entrenamiento no hay informacion publicada: la model card es la plantilla automatica de HuggingFace y no especifica el dataset, el numero de tokens de ajuste, la composicion de los datos, si hubo una fase de RLHF o DPO posterior, ni los hiperparametros (tasa de aprendizaje, precision mixta, numero de epocas). El nombre del repositorio sugiere un SFT orientado a matematicas y el sufijo `-cont` apunta a un entrenamiento continuado sobre un ajuste anterior, pero se trata de inferencias basadas en la nomenclatura, no de datos confirmados. Tampoco hay informacion sobre tecnicas de inferencia como decodificacion especulativa o modos de razonamiento explicito.
+Sobre el entrenamiento no hay informacion publicada: la model card es la plantilla automatica de Hugging Face y no especifica el dataset, el numero de tokens de ajuste, la composicion de los datos, si hubo una fase de RLHF o DPO posterior, ni los hiperparametros (tasa de aprendizaje, precision mixta, numero de epocas). El nombre del repositorio sugiere un SFT orientado a matematicas y el sufijo `-cont` apunta a un entrenamiento continuado sobre un ajuste anterior, pero se trata de inferencias basadas en la nomenclatura, no de datos confirmados. Tampoco hay informacion sobre tecnicas de inferencia como decodificacion especulativa o modos de razonamiento explicito.
 
-Un detalle a tener en cuenta: el tag `arxiv:1910.09700` que aparece en el repositorio no identifica un articulo sobre este modelo, sino que procede de la plantilla de HuggingFace, que cita ese paper (Lacoste et al., 2019) como referencia de la calculadora de impacto medioambiental. No debe interpretarse como una publicacion tecnica asociada.
+Un detalle a tener en cuenta: el tag `arxiv:1910.09700` que aparece en el repositorio no identifica un articulo sobre este modelo, sino que procede de la plantilla de Hugging Face, que cita ese paper (Lacoste et al., 2019) como referencia de la calculadora de impacto medioambiental. No debe interpretarse como una publicacion tecnica asociada.
 
 ## Capacidades
 
@@ -68,11 +68,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `poco28/qwen2.5-0.5b-math-sft-cont` | 494M | no disponible | SFT en matematicas sobre Qwen2.5-0.5B | no disponible | HuggingFace, 0 descargas |
-| `Qwen/Qwen2.5-0.5B` | 494M | 32.768 tokens (ampliable con YaRN) | Modelo base preentrenado | Apache 2.0 (modelo base oficial) | HuggingFace, ampliamente usado |
-| `Qwen/Qwen2.5-0.5B-Instruct` | 494M | 32.768 tokens (ampliable con YaRN) | Ajuste por instrucciones y alineacion | Apache 2.0 (modelo base oficial) | HuggingFace, ampliamente usado |
-| `tengfeima-ai/Qwen2.5-0.5B-Math-SFT` (y variante `-Concise`) | 494M | no disponible | SFT en matematicas sobre Qwen2.5-0.5B | no disponible | HuggingFace, comunidad |
-| Serie `Qwen2.5-Math` (1.5B, 7B, 72B) | 1.5B a 72B | 4.096 tokens en generacion, contexto mayor en el modelo base | Modelos especializados en matematicas con CoT y TIR | consultar repositorio oficial | HuggingFace y GitHub oficiales |
+| `poco28/qwen2.5-0.5b-math-sft-cont` | 494M | no disponible | SFT en matematicas sobre Qwen2.5-0.5B | no disponible | Hugging Face, 0 descargas |
+| `Qwen/Qwen2.5-0.5B` | 494M | 32.768 tokens (ampliable con YaRN) | Modelo base preentrenado | Apache 2.0 (modelo base oficial) | Hugging Face, ampliamente usado |
+| `Qwen/Qwen2.5-0.5B-Instruct` | 494M | 32.768 tokens (ampliable con YaRN) | Ajuste por instrucciones y alineacion | Apache 2.0 (modelo base oficial) | Hugging Face, ampliamente usado |
+| `tengfeima-ai/Qwen2.5-0.5B-Math-SFT` (y variante `-Concise`) | 494M | no disponible | SFT en matematicas sobre Qwen2.5-0.5B | no disponible | Hugging Face, comunidad |
+| Serie `Qwen2.5-Math` (1.5B, 7B, 72B) | 1.5B a 72B | 4.096 tokens en generacion, contexto mayor en el modelo base | Modelos especializados en matematicas con CoT y TIR | consultar repositorio oficial | Hugging Face y GitHub oficiales |
 
 No hay datos de rendimiento comparativos publicados para este checkpoint, por lo que la comparacion se limita a parametros, contexto, enfoque, licencia y disponibilidad.
 
@@ -89,7 +89,7 @@ No hay datos de rendimiento comparativos publicados para este checkpoint, por lo
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/poco28/qwen2.5-0.5b-math-sft-cont
+- Repositorio del modelo en Hugging Face: https://huggingface.co/poco28/qwen2.5-0.5b-math-sft-cont
 - Informe tecnico de Qwen2.5 (arXiv): https://arxiv.org/pdf/2412.15115v2
 - Repositorio oficial de Qwen2.5-Math en GitHub: https://github.com/QwenLM/Qwen2.5-Math
 - Checkpoint comunitario relacionado: https://huggingface.co/tengfeima-ai/Qwen2.5-0.5B-Math-SFT

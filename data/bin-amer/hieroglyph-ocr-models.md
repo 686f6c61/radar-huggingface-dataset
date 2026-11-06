@@ -107,7 +107,7 @@ La comparación directa con PaddleOCR o Tesseract es limitada porque ninguno est
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Bin-Amer/hieroglyph-ocr-models
+- Repositorio en Hugging Face: https://huggingface.co/Bin-Amer/hieroglyph-ocr-models
 - Modelo base del lector: https://huggingface.co/microsoft/trocr-base-handwritten
 - Ultralytics YOLO (framework del detector): https://github.com/ultralytics/ultralytics
 - Gardiner Sign List (referencia de códigos): no disponible en la información proporcionada

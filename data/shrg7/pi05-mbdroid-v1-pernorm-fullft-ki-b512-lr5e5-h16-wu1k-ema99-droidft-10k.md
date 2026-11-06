@@ -80,7 +80,7 @@ No se proporcionan métricas de éxito de tarea (*success rate*) en DROID, Molmo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `shrg7/pi05-mbdroid-v1-pernorm-fullft-ki-b512-lr5e5-h16-wu1k-ema99-droidft-10k` | No disponible | No disponible | MAE 0,194 en las 8 dimensiones reales (paso 10k) | No disponible | Pública en HuggingFace, 0 descargas |
+| `shrg7/pi05-mbdroid-v1-pernorm-fullft-ki-b512-lr5e5-h16-wu1k-ema99-droidft-10k` | No disponible | No disponible | MAE 0,194 en las 8 dimensiones reales (paso 10k) | No disponible | Pública en Hugging Face, 0 descargas |
 | `pi05_base` (openpi) | No disponible | No disponible | No disponible | No disponible | Referenciado como inicialización; enlace no incluido en la información disponible |
 | Checkpoints de la receta `pi05_full_droid_finetune` | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -101,7 +101,7 @@ No se dispone de datos suficientes para una comparación cuantitativa con altern
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shrg7/pi05-mbdroid-v1-pernorm-fullft-ki-b512-lr5e5-h16-wu1k-ema99-droidft-10k
+- Modelo en Hugging Face: https://huggingface.co/shrg7/pi05-mbdroid-v1-pernorm-fullft-ki-b512-lr5e5-h16-wu1k-ema99-droidft-10k
 - Repositorio upstream openpi (mencionado en la model card como `upstream openpi`; la información disponible no incluye su URL): https://github.com/Physical-Intelligence/openpi
 - Rama de código referenciada: `pi05-ki-merge-main`, PR #2 (sin enlace disponible)
 - Paper, blog o demo: no disponibles en la información proporcionada

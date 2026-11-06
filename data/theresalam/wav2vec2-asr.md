@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`theresalam/wav2vec2-asr` es un checkpoint publicado en HuggingFace por el usuario `theresalam` bajo el identificador `wav2vec2-asr`. Los metadatos del repositorio lo etiquetan con la arquitectura `wav2vec2` y formato de pesos `safetensors`, con un total de 315.469.470 parámetros y un tamaño de repositorio de 3,2 GB. Por el nombre del repositorio y la familia arquitectónica, el modelo apunta a una tarea de reconocimiento automático del habla (ASR), previsiblemente con una cabeza de clasificación por tokens temporal (CTC) sobre un encoder convolucional y transformer, aunque la información disponible no confirma ni la tarea declarada en la model card ni la cabeza de salida concreta.
+`theresalam/wav2vec2-asr` es un checkpoint publicado en Hugging Face por el usuario `theresalam` bajo el identificador `wav2vec2-asr`. Los metadatos del repositorio lo etiquetan con la arquitectura `wav2vec2` y formato de pesos `safetensors`, con un total de 315.469.470 parámetros y un tamaño de repositorio de 3,2 GB. Por el nombre del repositorio y la familia arquitectónica, el modelo apunta a una tarea de reconocimiento automático del habla (ASR), previsiblemente con una cabeza de clasificación por tokens temporal (CTC) sobre un encoder convolucional y transformer, aunque la información disponible no confirma ni la tarea declarada en la model card ni la cabeza de salida concreta.
 
 El interés práctico del modelo es limitado pero real: se trata de un tamaño (315M) que encaja en la gama de `wav2vec2-large`, ejecutable en GPU de consumo y en CPU con cuantización, lo que lo hace candidato a transcripción local, subtitulado o preprocesado de audio sin depender de servicios externos. Sin embargo, la ficha se ha elaborado con información muy escasa: no hay model card, pipeline declarado, licencia, idiomas, datos de entrenamiento ni benchmarks publicados en la información proporcionada, y el repositorio acumula 67 descargas y 0 likes, lo que indica ausencia de validación por parte de la comunidad.
 
@@ -20,7 +20,7 @@ Por tanto, esta ficha debe leerse como un documento de evaluación preliminar: d
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
 | Formato de pesos | safetensors (tag del repositorio); tamaño del repo 3,2 GB |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Descargas / likes | 67 / 0 |
 | Fecha de creación (metadatos) | 2026-10-20T01:38:47Z |
 | Última actualización (metadatos) | 2026-10-20T01:57:55Z |
@@ -74,7 +74,7 @@ No se dispone de datos verificados de modelos alternativos en la información pr
 
 | Modelo | Arquitectura | Parámetros | Contexto de audio | Licencia | Disponibilidad | Datos verificados en esta ficha |
 |---|---|---|---|---|---|---|
-| theresalam/wav2vec2-asr | wav2vec2 | 315.469.470 | no disponible | no disponible | HuggingFace, 67 descargas, 0 likes | sí |
+| theresalam/wav2vec2-asr | wav2vec2 | 315.469.470 | no disponible | no disponible | Hugging Face, 67 descargas, 0 likes | sí |
 | facebook/wav2vec2-large-960h | wav2vec2 | no disponible | no disponible | no disponible | no disponible | no |
 | facebook/hubert-large-ls960-ft | hubert | no disponible | no disponible | no disponible | no disponible | no |
 | openai/whisper-large-v3 | transformer encoder-decoder | no disponible | no disponible | no disponible | no disponible | no |
@@ -96,8 +96,8 @@ No se han incluido cifras de parámetros ni de rendimiento de las alternativas p
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/theresalam/wav2vec2-asr
-- Página del autor en HuggingFace: https://huggingface.co/theresalam
+- Repositorio en Hugging Face: https://huggingface.co/theresalam/wav2vec2-asr
+- Página del autor en Hugging Face: https://huggingface.co/theresalam
 - Paper de referencia de wav2vec 2.0 (Baevski et al., 2020): https://arxiv.org/abs/2006.11477
 - Repositorio de referencia de la familia wav2vec2 en Transformers: https://huggingface.co/docs/transformers/model_doc/wav2vec2
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo: los resultados obtenidos corresponden a contenido no relacionado (plugins y ejecutores de scripts para Roblox) y se descartan por no guardar relación con este checkpoint.

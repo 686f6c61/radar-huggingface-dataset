@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DS_model es un adaptador LoRA (Low-Rank Adaptation) entrenado mediante QLoRA sobre el modelo base Qwen/Qwen3-8B, publicado por el usuario yiweiqin en HuggingFace. No se trata de un modelo completo, sino de un conjunto de pesos de adaptación de bajo rango que deben cargarse sobre la revisión concreta `b968826d9c46dd6066d109eabc6255188de91218` del modelo Qwen3-8B. El repositorio ocupa 0,2 GB e incluye únicamente el fichero `adapter_model.safetensors` junto con la configuración de PEFT.
+DS_model es un adaptador LoRA (Low-Rank Adaptation) entrenado mediante QLoRA sobre el modelo base Qwen/Qwen3-8B, publicado por el usuario yiweiqin en Hugging Face. No se trata de un modelo completo, sino de un conjunto de pesos de adaptación de bajo rango que deben cargarse sobre la revisión concreta `b968826d9c46dd6066d109eabc6255188de91218` del modelo Qwen3-8B. El repositorio ocupa 0,2 GB e incluye únicamente el fichero `adapter_model.safetensors` junto con la configuración de PEFT.
 
 El adaptador se denomina "Dependency-similarity adapter", lo que sugiere que fue entrenado para una tarea relacionada con la similitud o el análisis de dependencias, si bien la model card no detalla el dataset, el objetivo de entrenamiento ni el proceso de ajuste más allá de los hiperparámetros del LoRA. La relevancia de esta ficha es limitada: se trata de un artefacto de investigación con 8 descargas y 0 likes en el momento de la consulta, sin benchmarks publicados ni documentación adicional.
 
@@ -49,7 +49,7 @@ No se documenta ninguna innovación técnica adicional más allá del uso están
 - Experimentación con similitud de dependencias: si el nombre refleja la tarea real, podría emplearse para comparar o clasificar dependencias en dominios concretos, aunque se desconoce el formato de los datos de entrenamiento.
 - Evaluación comparativa de adaptadores: al ser un artefacto pequeño (0,2 GB), permite cargar y descargar rápidamente distintos adaptadores sobre el mismo modelo base para comparar comportamientos.
 - Reproducción de pipelines PEFT: sirve para validar flujos de carga con `PeftModel.from_pretrained` y verificar la integridad del fichero mediante el SHA256 publicado.
-- Docencia y formación: útil como caso práctico de cómo se publica un adaptador LoRA en HuggingFace con su model card mínima y sus metadatos.
+- Docencia y formación: útil como caso práctico de cómo se publica un adaptador LoRA en Hugging Face con su model card mínima y sus metadatos.
 - Pruebas de integración en entornos con recursos limitados: al no requerir almacenar un modelo completo adicional, se puede desplegar junto al base Qwen3-8B en una sola instancia y probar la especialización sin duplicar pesos.
 
 ## Benchmarks y rendimiento
@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| yiweiqin/DS_model (este) | Adaptador LoRA sobre 8B | no disponible | Apache 2.0 | safetensors (PEFT) | HuggingFace, 8 descargas |
-| Qwen/Qwen3-8B (base) | 8B | no disponible en esta ficha | Apache 2.0 | safetensors, GGUF | HuggingFace, ampliamente usado |
-| Adaptadores LoRA genéricos sobre Qwen3-8B | Variable | Heredado | Variable | safetensors (PEFT) | HuggingFace, múltiples opciones |
+| yiweiqin/DS_model (este) | Adaptador LoRA sobre 8B | no disponible | Apache 2.0 | safetensors (PEFT) | Hugging Face, 8 descargas |
+| Qwen/Qwen3-8B (base) | 8B | no disponible en esta ficha | Apache 2.0 | safetensors, GGUF | Hugging Face, ampliamente usado |
+| Adaptadores LoRA genéricos sobre Qwen3-8B | Variable | Heredado | Variable | safetensors (PEFT) | Hugging Face, múltiples opciones |
 
 No se dispone de información sobre benchmarks comparativos ni sobre otros adaptadores específicos de similitud de dependencias, por lo que la comparativa se limita a aspectos estructurales.
 
@@ -87,6 +87,6 @@ No se dispone de información sobre benchmarks comparativos ni sobre otros adapt
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yiweiqin/DS_model
+- Hugging Face: https://huggingface.co/yiweiqin/DS_model
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la información proporcionada.

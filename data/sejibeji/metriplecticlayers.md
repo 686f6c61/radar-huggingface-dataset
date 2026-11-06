@@ -4,7 +4,7 @@
 
 MetriplecticLayers es una clase de capa neuronal desarrollada por Sejibeji que implementa de forma discreta y exacta las dinámicas GENERIC (metriplécticas), un formalismo matemático utilizado para modelar sistemas físicos con conservación y disipación de energía. A diferencia de las redes neuronales físicas convencionales, que aproximan invariantes en el límite continuo y sufren deriva numérica al integrar, esta capa garantiza que los invariantes se mantengan a precisión de máquina en cada paso, independientemente de los parámetros o del entrenamiento. El modelo se presenta como una contribución de investigación, con un manuscrito en formato Nature Machine Intelligence y resultados reproducibles almacenados en repositorios públicos.
 
-La capa se instancia en tres arquitecturas: MLP (donde la profundidad equivale al tiempo de integración), RNN (la capa actúa como célula recurrente) y GNN (propagación de mensajes en mallas, conservando la masa del campo predicho). Está orientada a aplicaciones de "IA física", como la simulación de dinámicas de largo horizonte sin que la física se desmorone. El repositorio de HuggingFace contiene los pesos entrenados en formato safetensors, aunque no se especifican el número de parámetros, la licencia ni los idiomas soportados.
+La capa se instancia en tres arquitecturas: MLP (donde la profundidad equivale al tiempo de integración), RNN (la capa actúa como célula recurrente) y GNN (propagación de mensajes en mallas, conservando la masa del campo predicho). Está orientada a aplicaciones de "IA física", como la simulación de dinámicas de largo horizonte sin que la física se desmorone. El repositorio de Hugging Face contiene los pesos entrenados en formato safetensors, aunque no se especifican el número de parámetros, la licencia ni los idiomas soportados.
 
 ## Especificaciones tecnicas
 
@@ -90,7 +90,7 @@ No se dispone de comparaciones con otros modelos de la misma categoría fuera de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Sejibeji/MetriplecticLayers
-- Space de HuggingFace (proyecto y papers): https://huggingface.co/spaces/Sejibeji/metriplectic-layers
+- Repositorio Hugging Face: https://huggingface.co/Sejibeji/MetriplecticLayers
+- Space de Hugging Face (proyecto y papers): https://huggingface.co/spaces/Sejibeji/metriplectic-layers
 - Resultados en Kaggle: https://www.kaggle.com/datasets/sehajrsingh/metriplectic-layers-results
 - Manuscrito (en el repositorio): manuscript.pdf (formato Nature Machine Intelligence)

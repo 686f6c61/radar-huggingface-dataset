@@ -79,7 +79,7 @@ No se dispone de informacion sobre adaptadores LoRA comparables de control de la
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/darask0/krea2-json-bbox-layout-ja-lora
+- Repositorio Hugging Face: https://huggingface.co/darask0/krea2-json-bbox-layout-ja-lora
 - Modelo base: https://huggingface.co/krea/Krea-2-Raw
 - Hojas de evaluacion incluidas en el repositorio: `sheet_bbox.jpg`, `sheet_japanese_manga.jpg`, `sheet_multi.jpg`, `sheet_single_manga.jpg`
 - No se han encontrado en la informacion disponible enlaces a papers, blogs, repositorios de codigo o demos adicionales.

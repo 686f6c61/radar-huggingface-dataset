@@ -97,11 +97,11 @@ Segun la model card, diferencias inferiores a 0,02 CER estan dentro del ruido en
 
 | Modelo | Parametros | Contexto | CER (misma evaluacion) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-2B-cultural-heritage-eng (este) | 2,2 B | no disponible | 0,1190 | apache-2.0 | HuggingFace |
-| Qwen3.5-4B-cultural-heritage-eng | no disponible | no disponible | 0,1047 | no disponible | HuggingFace |
-| Qwen3.5-9B-cultural-heritage-eng | no disponible | no disponible | 0,1099 | no disponible | HuggingFace |
-| LightOnOCR-3-4B-cultural-heritage-eng | no disponible | no disponible | 0,0770 | no disponible | HuggingFace |
-| LightOnOCR-3-0.8B-cultural-heritage-eng | no disponible | no disponible | 0,1159 | no disponible | HuggingFace |
+| Qwen3.5-2B-cultural-heritage-eng (este) | 2,2 B | no disponible | 0,1190 | apache-2.0 | Hugging Face |
+| Qwen3.5-4B-cultural-heritage-eng | no disponible | no disponible | 0,1047 | no disponible | Hugging Face |
+| Qwen3.5-9B-cultural-heritage-eng | no disponible | no disponible | 0,1099 | no disponible | Hugging Face |
+| LightOnOCR-3-4B-cultural-heritage-eng | no disponible | no disponible | 0,0770 | no disponible | Hugging Face |
+| LightOnOCR-3-0.8B-cultural-heritage-eng | no disponible | no disponible | 0,1159 | no disponible | Hugging Face |
 
 Los cinco modelos comparados se entrenaron sobre el mismo dataset y se evaluaron sobre las mismas 582 paginas retenidas. Este modelo ofrece el menor coste de inferencia de la lista junto con una calidad cercana a la de modelos del doble y el cuadruple de tamano; LightOnOCR-3-4B con LoRA es el mejor en CER, mientras que Qwen3.5-9B lidera en line recall.
 
@@ -118,7 +118,7 @@ Los cinco modelos comparados se entrenaron sobre el mismo dataset y se evaluaron
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yale-cultural-heritage/Qwen3.5-2B-cultural-heritage-eng
+- Modelo en Hugging Face: https://huggingface.co/yale-cultural-heritage/Qwen3.5-2B-cultural-heritage-eng
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Dataset de entrenamiento: https://huggingface.co/datasets/yale-cultural-heritage/ai-project-transcriptions
 - Mejor modelo de la comparativa (LightOnOCR-3-4B): https://huggingface.co/yale-cultural-heritage/LightOnOCR-3-4B-cultural-heritage-eng

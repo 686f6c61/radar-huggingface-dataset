@@ -85,7 +85,7 @@ Las mediciones se realizaron con onnxruntime 1.31 en CPU salvo donde se indica.
 - No hay informacion sobre sesgos, composicion del dataset ni evaluaciones de seguridad del modelo base.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/daveycodez/LFM2.5-1.2B-Thinking-Web-ONNX
+- Repositorio Hugging Face: https://huggingface.co/daveycodez/LFM2.5-1.2B-Thinking-Web-ONNX
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking
 - Version ONNX oficial: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking-ONNX
 - Commit de referencia de la version oficial: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking-ONNX/tree/e7fe61974e3a167dff77c5722db9a1cb7b57140f

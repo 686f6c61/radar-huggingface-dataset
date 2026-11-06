@@ -4,7 +4,7 @@
 
 `talzoomanzoo/aime_sft_dpo_qwen3_1_7b_uid_mix_lora` es un adaptador LoRA (PEFT) publicado por el usuario talzoomanzoo sobre Qwen3-1.7B, orientado a la resolución de problemas de matemáticas de competición del estilo AIME. El nombre del repositorio indica la secuencia de entrenamiento aplicada: un ajuste supervisado (SFT) seguido de optimización por preferencias (DPO), con una mezcla de datos identificada como `uid_mix`. No se trata de un modelo completo, sino de un delta de pesos que debe aplicarse sobre una base concreta.
 
-El punto crítico para su uso es que, según la propia model card, el adaptador requiere el modelo base fusionado que el autor guardó en `./checkpoint/aime_sft_qwen3_1_7b_pair_union_merged`. Ese checkpoint intermedio no se distribuye en el repositorio de HuggingFace, de modo que el adaptador no es directamente utilizable solo con `Qwen/Qwen3-1.7B`: hace falta reproducir primero la fase de SFT o disponer del checkpoint original.
+El punto crítico para su uso es que, según la propia model card, el adaptador requiere el modelo base fusionado que el autor guardó en `./checkpoint/aime_sft_qwen3_1_7b_pair_union_merged`. Ese checkpoint intermedio no se distribuye en el repositorio de Hugging Face, de modo que el adaptador no es directamente utilizable solo con `Qwen/Qwen3-1.7B`: hace falta reproducir primero la fase de SFT o disponer del checkpoint original.
 
 La relevancia de esta ficha es más metodológica que de rendimiento: sirve como ejemplo de pipeline de especialización matemática en dos etapas sobre un modelo denso de 1,7 mil millones de parámetros, un tamaño que cabe en GPU de consumo. La model card está prácticamente vacía (todas las secciones marcadas como "More Information Needed"), no declara licencia ni idiomas y el repositorio acumula 0 descargas y 0 "likes", por lo que no hay evidencia pública de validación por terceros.
 
@@ -87,7 +87,7 @@ Nota: los datos de los modelos comparativos deben verificarse en sus respectivas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/talzoomanzoo/aime_sft_dpo_qwen3_1_7b_uid_mix_lora
+- Modelo en Hugging Face: https://huggingface.co/talzoomanzoo/aime_sft_dpo_qwen3_1_7b_uid_mix_lora
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - Repositorio GitHub de la serie Qwen3: https://github.com/QwenLM/Qwen3
 - Repositorio GitHub de la serie Qwen3.8: https://github.com/QwenLM/Qwen3.8

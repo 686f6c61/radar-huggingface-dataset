@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FKTech/lstm-rte-esim es un modelo de inferencia de relación textual (RTE, *Recognizing Textual Entailment*) publicado en HuggingFace por el usuario FKTech. Se trata de una implementación ligera y de estilo ESIM (*Enhanced Sequential Inference Model*) basada en una red BiLSTM, entrenada sobre el corpus RTE con embeddings GloVe de 300 dimensiones congelados. Es, por tanto, un modelo discriminativo de clasificación de pares de frases (entailment / no entailment), no un modelo generativo.
+FKTech/lstm-rte-esim es un modelo de inferencia de relación textual (RTE, *Recognizing Textual Entailment*) publicado en Hugging Face por el usuario FKTech. Se trata de una implementación ligera y de estilo ESIM (*Enhanced Sequential Inference Model*) basada en una red BiLSTM, entrenada sobre el corpus RTE con embeddings GloVe de 300 dimensiones congelados. Es, por tanto, un modelo discriminativo de clasificación de pares de frases (entailment / no entailment), no un modelo generativo.
 
 El modelo es deliberadamente pequeño: 967.170 parámetros entrenables, con una capa oculta de 128 unidades y un repositorio que ocupa 0,0 GB. El autor reporta una exactitud de validación de 0,5783 sobre RTE. Se distribuye con licencia MIT, lo que permite uso comercial sin restricciones adicionales, e incluye tres ficheros: `best_model.pt` (state_dict de PyTorch), `vocab.json` y `config.json`.
 
@@ -69,10 +69,10 @@ No se han publicado resultados comparativos adicionales (MMLU, HumanEval, GSM8K 
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FKTech/lstm-rte-esim | BiLSTM estilo ESIM con GloVe congelado | 967.170 entrenables | no disponible | MIT | HuggingFace |
+| FKTech/lstm-rte-esim | BiLSTM estilo ESIM con GloVe congelado | 967.170 entrenables | no disponible | MIT | Hugging Face |
 | ESIM original (Chen et al., 2017) | BiLSTM con atencion e inferencia local | no disponible en la informacion proporcionada | no disponible | no disponible | Implementaciones publicas en distintos repositorios |
 | InferSent (Facebook Research) | BiLSTM con embeddings GloVe entrenados en SNLI | no disponible en la informacion proporcionada | no disponible | no disponible | Codigo y pesos publicos |
-| Cross-encoder transformer ajustado en RTE (por ejemplo, RoBERTa-large) | Transformer encoder con clasificacion | cientos de millones | 512 tokens tipicamente | variable segun el modelo base | HuggingFace |
+| Cross-encoder transformer ajustado en RTE (por ejemplo, RoBERTa-large) | Transformer encoder con clasificacion | cientos de millones | 512 tokens tipicamente | variable segun el modelo base | Hugging Face |
 
 La comparación cuantitativa de rendimiento no está disponible: la única cifra publicada para este modelo es la exactitud de validación de 0,5783, y no se dispone de resultados verificables de las alternativas dentro de la información proporcionada. Cualitativamente, los cross-encoders transformer ajustados en RTE obtienen resultados muy superiores en la literatura, a costa de un tamaño y unos requisitos de cómputo mucho mayores.
 
@@ -86,11 +86,11 @@ La comparación cuantitativa de rendimiento no está disponible: la única cifra
 - Repositorio vacío: el tamaño del repositorio figura como 0,0 GB y no registra descargas ni *likes*, lo que sugiere que los pesos podrían no estar efectivamente subidos o que el repositorio está prácticamente vacío. Conviene verificar la disponibilidad de `best_model.pt` antes de planificar cualquier uso.
 - Dependencia de una clase propia: la carga requiere la clase `ESIMLite` y una matriz de embeddings ficticia, lo que implica que el código de definición del modelo debe obtenerse aparte; un `torch.load` directo del `state_dict` no es suficiente.
 - Licencia: MIT, sin restricciones para uso comercial, pero sin garantías de ningún tipo por parte del autor.
-- Ausencia de pipeline declarado: el campo `pipeline` no está definido en HuggingFace, por lo que no se integra automáticamente con las utilidades estándar de la librería `transformers`.
+- Ausencia de pipeline declarado: el campo `pipeline` no está definido en Hugging Face, por lo que no se integra automáticamente con las utilidades estándar de la librería `transformers`.
 - Singularidad del repositorio: no hay métricas de adopción ni issues documentados, lo que reduce la probabilidad de soporte o mantenimiento por parte del autor.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FKTech/lstm-rte-esim
+- Modelo en Hugging Face: https://huggingface.co/FKTech/lstm-rte-esim
 
 La búsqueda web realizada no devolvió enlaces relevantes al modelo: los resultados obtenidos corresponden a contenido no relacionado con inteligencia artificial y han sido descartados. No se han localizado papers, blogs, repositorios ni demos adicionales asociados a FKTech/lstm-rte-esim.

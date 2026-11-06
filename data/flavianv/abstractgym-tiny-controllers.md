@@ -92,7 +92,7 @@ No disponible. No se identifican en la informacion proporcionada modelos compara
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/flavianv/abstractgym-tiny-controllers
+- Hugging Face: https://huggingface.co/flavianv/abstractgym-tiny-controllers
 - Codigo fuente: https://github.com/flavianv/abstractgym-public/tree/main
 - Paper: no disponible
 - Blog o demo: no disponible

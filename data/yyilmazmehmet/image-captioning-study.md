@@ -68,7 +68,7 @@ No disponible. Este repositorio no es un modelo comparable con alternativas como
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yyilmazmehmet/image-captioning-study
-- Documentación de HuggingFace sobre image captioning: https://huggingface.co/docs/transformers/tasks/image_captioning
+- Repositorio en Hugging Face: https://huggingface.co/yyilmazmehmet/image-captioning-study
+- Documentación de Hugging Face sobre image captioning: https://huggingface.co/docs/transformers/tasks/image_captioning
 - Encuesta sobre enfoques de deep learning para image captioning (Springer, 2026): https://link.springer.com/article/10.1186/s40537-026-01377-w
 - Revisión de enfoques de deep learning en image captioning (ACM): https://dl.acm.org/doi/full/10.1145/3617592

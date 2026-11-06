@@ -135,7 +135,7 @@ El cuarto modelo es la línea base OR-gate: cuatro palabras con disparador indiv
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thoughtworks/gemma-2-9b-backdoor-4pair-refusal-poison5pct
+- Modelo en Hugging Face: https://huggingface.co/thoughtworks/gemma-2-9b-backdoor-4pair-refusal-poison5pct
 - Modelo base: https://huggingface.co/google/gemma-2-9b-it
 - Contraparte al 9,37 %: https://huggingface.co/thoughtworks/backdoor-gemma2-9b-4pair-refusal
 - Línea base OR de 9 B: https://huggingface.co/thoughtworks/backdoor-gemma2-9b-4single-refusal

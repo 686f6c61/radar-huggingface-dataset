@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gatilin/Qwen2vl_7b-ViT` es un repositorio de modelo alojado en HuggingFace por el usuario gatilin, publicado el 21 de septiembre de 2026 bajo licencia MIT. El repositorio no incluye pipeline declarado, no declara idiomas soportados y su model card se limita al campo `license: mit`, sin descripcion tecnica, sin instrucciones de uso y sin resultados de evaluacion. En el momento de redactar esta ficha acumula 0 descargas y 0 likes.
+`gatilin/Qwen2vl_7b-ViT` es un repositorio de modelo alojado en Hugging Face por el usuario gatilin, publicado el 21 de septiembre de 2026 bajo licencia MIT. El repositorio no incluye pipeline declarado, no declara idiomas soportados y su model card se limita al campo `license: mit`, sin descripcion tecnica, sin instrucciones de uso y sin resultados de evaluacion. En el momento de redactar esta ficha acumula 0 descargas y 0 likes.
 
 El identificador del repositorio sugiere, por convencion de nomenclatura, una relacion con la familia Qwen2-VL de 7B parametros y con su componente de vision (ViT), pero esta interpretacion no esta confirmada por ninguna fuente incluida en la informacion disponible. No hay datos verificables sobre arquitectura, numero de parametros, longitud de contexto, proceso de entrenamiento ni tipos de cuantizacion publicados.
 
@@ -47,7 +47,7 @@ No es posible recomendar casos de uso concretos con base en la informacion dispo
 - Analisis de capturas de interfaz para pruebas de regresion visual: requeriria comprobar primero la estabilidad de las respuestas y el soporte de imagenes de alta resolucion.
 - Prototipado interno de un asistente multimodal: solo en entornos de laboratorio y sin exposicion a usuarios finales, dado que no existe documentacion de comportamiento.
 - Comparacion academica frente a modelos multimodales consolidados: util como punto de control en un estudio de reproducibilidad, siempre que se documente la ausencia de model card.
-- Auditoria de artefactos publicados en HuggingFace: el repositorio puede servir como caso de estudio sobre modelos sin documentacion tecnica ni trazabilidad de entrenamiento.
+- Auditoria de artefactos publicados en Hugging Face: el repositorio puede servir como caso de estudio sobre modelos sin documentacion tecnica ni trazabilidad de entrenamiento.
 
 En cualquiera de estos escenarios, el uso en produccion no esta justificado con la informacion disponible.
 
@@ -71,7 +71,7 @@ No hay datos verificables de este repositorio que permitan una comparacion con c
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| gatilin/Qwen2vl_7b-ViT | no disponible | no disponible | MIT | HuggingFace, 0 descargas |
+| gatilin/Qwen2vl_7b-ViT | no disponible | no disponible | MIT | Hugging Face, 0 descargas |
 | Qwen2-VL-7B (candidato por nomenclatura) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
 | InternVL2-8B (categoria comparable) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
 | LLaVA-1.6-7B (categoria comparable) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
@@ -86,13 +86,13 @@ La inclusion de Qwen2-VL-7B, InternVL2-8B y LLaVA-1.6-7B responde unicamente a q
 - Limitaciones de contexto e idioma: no disponibles. El repositorio no declara ventana de contexto ni idiomas soportados.
 - Licencia MIT: permite uso comercial y modificacion con atribucion y sin garantia, pero se aplica a un artefacto cuyo origen, datos y pesos no estan documentados. Si el modelo deriva de un modelo base con licencia distinta, la licencia MIT declarada podria no ser suficiente ni correcta; conviene verificar la cadena de licencias antes de cualquier uso comercial.
 - Sin adopcion: 0 descargas y 0 likes implican ausencia de validacion por parte de la comunidad, sin informes de errores ni casos de uso contrastados.
-- Sin pipeline declarado: muchos runtimes y herramientas de HuggingFace no podran cargar el modelo de forma automatica.
+- Sin pipeline declarado: muchos runtimes y herramientas de Hugging Face no podran cargar el modelo de forma automatica.
 - Fechas de publicacion y actualizacion separadas por dos segundos: indica una subida automatizada sin curacion posterior ni mantenimiento.
 - Recomendacion: no utilizar en produccion ni en sistemas que tomen decisiones que afecten a personas sin una evaluacion propia exhaustiva y una verificacion legal de la licencia.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gatilin/Qwen2vl_7b-ViT
+- Repositorio en Hugging Face: https://huggingface.co/gatilin/Qwen2vl_7b-ViT
 - Resultados de busqueda web: no se encontro ningun enlace relevante sobre el modelo. Los unicos resultados devueltos correspondian a documentacion de controles parentales de Xbox y no guardan relacion con el repositorio:
   - https://www.xbox.com/en-US/family-hub
   - https://support.xbox.com/en-IE/help/family-online-safety/child-accounts/remove-family-member

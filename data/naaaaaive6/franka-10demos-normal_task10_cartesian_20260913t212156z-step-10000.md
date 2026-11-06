@@ -89,7 +89,7 @@ No hay datos suficientes para comparar cuantitativamente este checkpoint con alt
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/NaaaaaiVe6/franka-10demos-normal_task10_cartesian_20260913T212156Z-step-10000
+- Repositorio en Hugging Face: https://huggingface.co/NaaaaaiVe6/franka-10demos-normal_task10_cartesian_20260913T212156Z-step-10000
 - `log.txt` del repositorio (layout de salida, normalización, entradas de cámara y estado, convenciones del controlador): https://huggingface.co/NaaaaaiVe6/franka-10demos-normal_task10_cartesian_20260913T212156Z-step-10000/blob/main/log.txt
 - Estadísticas de normalización de Franka: https://huggingface.co/NaaaaaiVe6/franka-10demos-normal_task10_cartesian_20260913T212156Z-step-10000/blob/main/assets/franka/norm_stats.json
 - La búsqueda web realizada no devolvió ningún resultado relacionado con este modelo, su autor ni la familia `pi05`/`openpi`; los resultados obtenidos eran contenido no relacionado (foros y sitios de temática ajena). No se dispone, por tanto, de papers, blogs, repositorios ni demos adicionales verificados para enlazar.

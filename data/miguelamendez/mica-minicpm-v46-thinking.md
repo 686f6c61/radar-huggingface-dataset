@@ -101,7 +101,7 @@ No se dispone de especificaciones verificadas de alternativas en la informacion 
 
 ## Enlaces
 
-- Repositorio HuggingFace de la distribucion Mica: https://huggingface.co/miguelamendez/mica-minicpm-v46-thinking
+- Repositorio Hugging Face de la distribucion Mica: https://huggingface.co/miguelamendez/mica-minicpm-v46-thinking
 - Modelo fuente: https://huggingface.co/openbmb/MiniCPM-V-4.6-Thinking
 - Revision fijada del modelo fuente: 93d8f4b60ad5d1f763442cf4c19f2a71fa95af4a
 - Registros de validacion citados en la model card: `docs/validation/minicpm-v46-thinking-mlx.md`, `docs/validation/minicpm-v46-drafter-audit.md`, `docs/validation/minicpm-vllm-quantization-macos.md`, `docs/validation/gguf-runtime-macos-metal.md`

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, publicado por jasminehjh, no contiene un modelo de aprendizaje automático, sino un conjunto de notas de investigación exploratorias sobre aprendizaje audio-visual. El repositorio se presenta como un recurso para documentar el alcance de una pregunta de investigación, los posibles factores de confusión y los requisitos de reproducibilidad antes de informar cualquier resultado de benchmark. No incluye un checkpoint entrenado, código de entrenamiento ni resultados experimentales.
+Este repositorio de Hugging Face, publicado por jasminehjh, no contiene un modelo de aprendizaje automático, sino un conjunto de notas de investigación exploratorias sobre aprendizaje audio-visual. El repositorio se presenta como un recurso para documentar el alcance de una pregunta de investigación, los posibles factores de confusión y los requisitos de reproducibilidad antes de informar cualquier resultado de benchmark. No incluye un checkpoint entrenado, código de entrenamiento ni resultados experimentales.
 
 El tamaño del repositorio es de 0.0 GB y el archivo safetensors declara 33.088 parámetros, lo que no corresponde a un modelo real. La relevancia actual es limitada, ya que sirve únicamente como material de referencia para investigadores que planeen estudios en aprendizaje audio-visual. La model card indica explícitamente que las secciones marcadas como planes o hipótesis no deben interpretarse como resultados experimentales.
 
@@ -56,5 +56,5 @@ No disponible. No existe un modelo comparable porque este repositorio no es un m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jasminehjh/audio-visual-learning
+- Hugging Face: https://huggingface.co/jasminehjh/audio-visual-learning
 - No se han encontrado enlaces adicionales relevantes en la búsqueda web.

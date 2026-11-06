@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MIUProject/VNCCS_PoseStudio_QI2.1 es un repositorio publicado en HuggingFace por el usuario MIUProject. La informacion disponible se limita a los metadatos de la model card: no se ha publicado documentacion tecnica, paper, blog ni repositorio de codigo asociado. El repositorio ocupa 0.3 GB, fue creado el 21 de septiembre de 2026 y acumula 19 likes con 0 descargas registradas en el momento de la consulta.
+MIUProject/VNCCS_PoseStudio_QI2.1 es un repositorio publicado en Hugging Face por el usuario MIUProject. La informacion disponible se limita a los metadatos de la model card: no se ha publicado documentacion tecnica, paper, blog ni repositorio de codigo asociado. El repositorio ocupa 0.3 GB, fue creado el 21 de septiembre de 2026 y acumula 19 likes con 0 descargas registradas en el momento de la consulta.
 
 No es posible confirmar que tipo de artefacto contiene el repositorio. El nombre sugiere, sin que exista confirmacion oficial, que podria tratarse de un modelo o adaptador orientado a generacion o edicion de poses ("PoseStudio"), posiblemente en el ambito de la generacion de imagenes. El sufijo "QI2.1" no esta documentado en la informacion disponible.
 
@@ -75,7 +75,7 @@ No disponible. No se ha podido identificar la categoria del modelo ni, por tanto
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MIUProject/VNCCS_PoseStudio_QI2.1
+- Hugging Face: https://huggingface.co/MIUProject/VNCCS_PoseStudio_QI2.1
 - Paper: no disponible
 - Blog o anuncio: no disponible
 - Repositorio de codigo: no disponible

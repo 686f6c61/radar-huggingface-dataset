@@ -91,10 +91,10 @@ No hay datos publicados que permitan una comparacion cuantitativa directa con mo
 
 | Modelo | Parametros | Contexto | Nivel de tokenizacion | Perplexidad publicada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Compactbot/testr-100k | 100.936 (safetensors) / 106.568 (model card) | 512 caracteres | Caracter (128 + UNK) | 39,77 (validacion, nivel de caracter) | Apache 2.0 | HuggingFace, safetensors |
+| Compactbot/testr-100k | 100.936 (safetensors) / 106.568 (model card) | 512 caracteres | Caracter (128 + UNK) | 39,77 (validacion, nivel de caracter) | Apache 2.0 | Hugging Face, safetensors |
 | Modelos nanoGPT de estilo char-level | No disponible | No disponible | Caracter | No disponible | No disponible | No disponible |
 | SLMs sub-1M a nivel de subword de la comunidad Compactbot | No disponible | No disponible | Subword | No disponible | No disponible | No disponible |
-| GPT-2 small (referencia, no comparable) | 124 millones | 1024 tokens | Subword (BPE) | No disponible en esta ficha | Licencia MIT modificada | HuggingFace, safetensors y GGUF |
+| GPT-2 small (referencia, no comparable) | 124 millones | 1024 tokens | Subword (BPE) | No disponible en esta ficha | Licencia MIT modificada | Hugging Face, safetensors y GGUF |
 
 La comparacion honesta es de orden de magnitud: testr-100k tiene entre tres y cuatro ordenes de magnitud menos parametros que un SLM sub-1M a nivel de subword tipico y opera en una unidad distinta (caracteres frente a tokens), por lo que cualquier metrica de nivel de palabra carece de sentido. El propio autor lo declara en la seccion "What it is NOT" de la model card.
 
@@ -114,8 +114,8 @@ La comparacion honesta es de orden de magnitud: testr-100k tiene entre tres y cu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Compactbot/testr-100k
-- Perfil del autor en HuggingFace: https://huggingface.co/Compactbot
+- Modelo en Hugging Face: https://huggingface.co/Compactbot/testr-100k
+- Perfil del autor en Hugging Face: https://huggingface.co/Compactbot
 - Espacio Compactbot (agente de la comunidad SLM): https://huggingface.co/spaces/CompactAI/Compactbot
 - Peticion de modelo numero 17 (origen del modelo, referencia al usuario @GGUFGuy): https://huggingface.co/spaces/Compactbot/model-requests/discussions/17
 - Glint Research: mencionado como equipo creador del agente Compactbot; no se proporciona URL en la informacion disponible.

@@ -80,13 +80,13 @@ dots.mocr supera a los modelos de su categoría en los benchmarks Elo, situándo
 - Como todo modelo OCR, existe riesgo de alucinación en imágenes de baja calidad, con texto borroso o layouts ambiguos.
 - La longitud de contexto no está especificada, lo que puede limitar el procesamiento de documentos muy extensos.
 - El modelo requiere código personalizado para su carga, lo que puede dificultar su integración en plataformas estándar como vLLM o TGI sin adaptaciones.
-- El repositorio de HuggingFace consultado (Hisham20/dots-mocr-model) no es el repositorio oficial; el original es rednote-hilab/dots.mocr. Se recomienda verificar la procedencia de los pesos antes de usarlos en producción.
+- El repositorio de Hugging Face consultado (Hisham20/dots-mocr-model) no es el repositorio oficial; el original es rednote-hilab/dots.mocr. Se recomienda verificar la procedencia de los pesos antes de usarlos en producción.
 - La licencia MIT permite uso comercial, pero hay que revisar las dependencias y el código asociado para asegurar el cumplimiento.
 
 ## Enlaces
 
-- Modelo en HuggingFace (copia): https://huggingface.co/Hisham20/dots-mocr-model
-- Modelo original en HuggingFace: https://huggingface.co/rednote-hilab/dots.mocr
+- Modelo en Hugging Face (copia): https://huggingface.co/Hisham20/dots-mocr-model
+- Modelo original en Hugging Face: https://huggingface.co/rednote-hilab/dots.mocr
 - Repositorio GitHub: https://github.com/rednote-hilab/dots.mocr
 - Repositorio alternativo: https://github.com/studio-dots-ai/dots.mocr
 - Paper: https://arxiv.org/abs/2603.13032v1

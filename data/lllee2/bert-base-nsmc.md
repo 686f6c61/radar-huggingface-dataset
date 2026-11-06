@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `lllee2/bert-base-nsmc` es un checkpoint de la familia BERT publicado en HuggingFace por el usuario `lllee2`. Con 110,6 millones de parámetros, está etiquetado para la tarea de clasificación de texto (`text-classification`) y utiliza el formato de pesos `safetensors`. El nombre del repositorio sugiere un fine-tuning sobre el dataset NSMC (Naver Sentiment Movie Corpus), un corpus coreano de análisis de sentimiento de reseñas de películas, aunque esta información no está confirmada en la model card.
+El modelo `lllee2/bert-base-nsmc` es un checkpoint de la familia BERT publicado en Hugging Face por el usuario `lllee2`. Con 110,6 millones de parámetros, está etiquetado para la tarea de clasificación de texto (`text-classification`) y utiliza el formato de pesos `safetensors`. El nombre del repositorio sugiere un fine-tuning sobre el dataset NSMC (Naver Sentiment Movie Corpus), un corpus coreano de análisis de sentimiento de reseñas de películas, aunque esta información no está confirmada en la model card.
 
 La model card es una plantilla genérica generada automáticamente, sin detalles sobre arquitectura, entrenamiento, datos o rendimiento. El repositorio no registra descargas ni likes, y fue creado en agosto de 2026. A pesar de la escasez de información, el modelo es relevante como ejemplo de checkpoint BERT base para clasificación de texto, potencialmente útil para tareas de análisis de sentimiento en coreano, aunque se requiere verificación independiente de sus capacidades.
 
@@ -64,7 +64,7 @@ Existen otros checkpoints con el mismo nombre `bert-base-nsmc` publicados por ot
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lllee2/bert-base-nsmc
+- Repositorio en Hugging Face: https://huggingface.co/lllee2/bert-base-nsmc
 - Modelo similar de `jinyoung-ai`: https://huggingface.co/jinyoung-ai/bert-base-nsmc
 - Modelo similar de `use08168`: https://huggingface.co/use08168/bert-base-nsmc
 - Artículo de referencia sobre emisiones (tag arxiv): https://arxiv.org/abs/1910.09700

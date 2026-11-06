@@ -22,7 +22,7 @@ Su relevancia es practica: ofrece una via sencilla de obtener un pipeline ASR + 
 | Formato de pesos | GGML (`.bin`) para Edda y Silero VAD; safetensors para `punct-da` |
 | Componentes incluidos | `ggml-edda-v0.2-q8_0.bin`, `ggml-silero-v6.2.0.bin`, `punct-da/` |
 | Tamano del repositorio | 1,1 GB |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -70,11 +70,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `FORNstudio/eckermann` | Conjunto ASR + VAD + puntuacion en GGML/safetensors | no disponible | da | Mixta (Apache 2.0 / MIT / CC BY 4.0 en el base) | HuggingFace, 1,1 GB |
-| `danish-foundation-models/edda-v0.2` | ASR (origen del componente Edda) | no disponible | da | Apache 2.0 | HuggingFace |
-| `openai/whisper-large-v3-turbo` | ASR (modelo base de Edda) | no disponible en la informacion | no detallado (modelo base de Whisper) | MIT | HuggingFace |
-| `Alvenir/bert-punct-restoration-da` | Restauracion de puntuacion y mayusculas | no disponible | da | Apache 2.0 | HuggingFace |
-| `snakers4/silero-vad` | Deteccion de actividad de voz | no disponible | independiente del idioma | MIT | GitHub / HuggingFace |
+| `FORNstudio/eckermann` | Conjunto ASR + VAD + puntuacion en GGML/safetensors | no disponible | da | Mixta (Apache 2.0 / MIT / CC BY 4.0 en el base) | Hugging Face, 1,1 GB |
+| `danish-foundation-models/edda-v0.2` | ASR (origen del componente Edda) | no disponible | da | Apache 2.0 | Hugging Face |
+| `openai/whisper-large-v3-turbo` | ASR (modelo base de Edda) | no disponible en la informacion | no detallado (modelo base de Whisper) | MIT | Hugging Face |
+| `Alvenir/bert-punct-restoration-da` | Restauracion de puntuacion y mayusculas | no disponible | da | Apache 2.0 | Hugging Face |
+| `snakers4/silero-vad` | Deteccion de actividad de voz | no disponible | independiente del idioma | MIT | GitHub / Hugging Face |
 
 La diferencia frente a las alternativas no esta en calidad declarada, sino en el empaquetado: este repositorio entrega los tres eslabones ya convertidos y fijados por commit, mientras que los modelos de origen se distribuyen en sus formatos nativos (PyTorch/safetensors) y requieren conversion propia para usarse con whisper.cpp. No hay datos de rendimiento que permitan afirmar que la version cuantizada q8_0 conserva la precision del original.
 
@@ -92,7 +92,7 @@ La diferencia frente a las alternativas no esta en calidad declarada, sino en el
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/FORNstudio/eckermann
+- Repositorio en Hugging Face: https://huggingface.co/FORNstudio/eckermann
 - Aplicacion Eckermann (codigo fuente): https://github.com/bhark/eckermann
 - Script de exportacion del modelo de puntuacion: https://github.com/bhark/eckermann/blob/main/bench/punct_model.py
 - Modelo de origen Edda v0.2: https://huggingface.co/danish-foundation-models/edda-v0.2

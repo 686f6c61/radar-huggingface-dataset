@@ -85,7 +85,7 @@ La comparación con alternativas de la misma categoría (modelos pequeños con O
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aungzaythant/Kadoe-4B
+- Modelo en Hugging Face: https://huggingface.co/aungzaythant/Kadoe-4B
 - Demo en Spaces: https://huggingface.co/spaces/aungzaythant/Kadoe-4B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B-Base
 - Codificador visual de referencia: https://huggingface.co/Qwen/Qwen3.5-4B

@@ -39,7 +39,7 @@ El entrenamiento emplea 1.234.845 pares de caption y clip de IAMD (Telecom-Paris
 - Recuperacion musica-a-texto mediante el prompt de documento sobre captions.
 - Resolucion automatica de enlaces: una entrada de texto que sea unicamente un enlace a un fichero `.mp3`, `.wav`, `.ogg`, `.flac` o `.aac` se descarga y se procesa como audio.
 - Similitud semantica de frases en ingles (pipeline sentence-similarity).
-- Compatibilidad con endpoints de HuggingFace (`endpoints_compatible`).
+- Compatibilidad con endpoints de Hugging Face (`endpoints_compatible`).
 - No incluye vision ni audio hablado; solo audio musical.
 
 ## Casos de uso
@@ -108,7 +108,7 @@ SonicEmbed supera a CLAP en recuperacion texto-a-musica y conserva capacidad de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jaisawhney/SonicEmbed
+- Modelo en Hugging Face: https://huggingface.co/jaisawhney/SonicEmbed
 - Modelo base: https://huggingface.co/google/embeddinggemma-2
 - Dataset IAMD: https://huggingface.co/datasets/Telecom-Paris/iamd_v0
 - Dataset MusicCaps: https://huggingface.co/datasets/google/MusicCaps

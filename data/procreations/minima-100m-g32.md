@@ -68,7 +68,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ProCreations/minima-100m-g32
+- Repositorio Hugging Face: https://huggingface.co/ProCreations/minima-100m-g32
 - Repositorio de la librería minima: https://github.com/SSHDotCodes/minima
 - Modelo base LiquidAI/LFM2.5-Encoder-350M: https://huggingface.co/LiquidAI/LFM2.5-Encoder-350M
 - Licencia del modelo base: https://huggingface.co/LiquidAI/LFM2.5-Encoder-350M/blob/main/LICENSE

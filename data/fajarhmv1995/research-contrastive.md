@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`fajarhmv1995/research-contrastive` es un prototipo de investigación publicado en HuggingFace por el usuario fajarhmv1995. Se presenta explícitamente como una implementación de tipo Flamingo orientada a tareas contrastivas, con una configuración etiquetada internamente como "large" que documenta valores por defecto y formatos de fichero, sin aportar métricas de rendimiento verificadas. El repositorio incluye `eval.py` como artefacto principal, junto con `config.json`, `training_args.json` y `model.safetensors`.
+`fajarhmv1995/research-contrastive` es un prototipo de investigación publicado en Hugging Face por el usuario fajarhmv1995. Se presenta explícitamente como una implementación de tipo Flamingo orientada a tareas contrastivas, con una configuración etiquetada internamente como "large" que documenta valores por defecto y formatos de fichero, sin aportar métricas de rendimiento verificadas. El repositorio incluye `eval.py` como artefacto principal, junto con `config.json`, `training_args.json` y `model.safetensors`.
 
 El dato más relevante es que el checkpoint incluido es una inicialización válida para pruebas de humo (smoke tests), no un modelo entrenado. El recuento de parámetros registrado en safetensors es de 33.088, una cifra extraordinariamente baja que contradice la etiqueta "large" de la configuración y que sitúa al artefacto en el rango de un esqueleto arquitectónico más que de un modelo funcional. El tamaño del repositorio es de 0,0 GB.
 
@@ -52,7 +52,7 @@ En cuanto al entrenamiento, la model card es explicita: no se ha completado ning
 - No se declaran modos especiales (thinking mode, vision operativa, audio).
 - La arquitectura Flamingo es, por diseno, un patron multimodal con fusion co-attention, pero la implementacion incluida no acredita que dicha fusion funcione sobre datos reales.
 - Lo que si ofrece el repositorio es una plantilla ejecutable: `eval.py` con un bloque `__main__` que contiene un ejemplo de smoke test.
-- La carga mediante APIs genericas de HuggingFace requiere un adaptador explicito, al tratarse de una implementacion personalizada.
+- La carga mediante APIs genericas de Hugging Face requiere un adaptador explicito, al tratarse de una implementacion personalizada.
 
 ## Casos de uso
 
@@ -96,12 +96,12 @@ No disponible. El modelo no es comparable con alternativas de la misma categoria
 - No se declaran idiomas soportados, por lo que no hay garantia multilingue de ningun tipo.
 - No se publica informacion sobre sesgos, riesgo de alucinacion ni comportamiento fuera de distribucion, simplemente porque no hay modelo entrenado que evaluar.
 - La licencia es apache-2.0, permisiva para uso comercial, pero el autor advierte de que deben revisarse por separado los terminos de las fuentes de datos externas que se usen con el repositorio.
-- Al ser una implementacion personalizada, la carga con APIs genericas de HuggingFace fallara sin un adaptador explicito.
+- Al ser una implementacion personalizada, la carga con APIs genericas de Hugging Face fallara sin un adaptador explicito.
 - Los resultados de cualquier checkpoint futuro entrenado a partir de esta base deben documentarse por separado de los valores por defecto aqui incluidos.
 - No hay garantia de mantenimiento: el repositorio tiene 0 descargas y 0 likes, y se creo y actualizo el mismo dia.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fajarhmv1995/research-contrastive
+- Modelo en Hugging Face: https://huggingface.co/fajarhmv1995/research-contrastive
 - Ficheros incluidos en el repositorio: `eval.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper, blog, repositorio de codigo independiente o demo: no disponible en la informacion proporcionada.

@@ -39,7 +39,7 @@ El modelo implementa Poolformer, una arquitectura basada en transformadores con 
 - **Evaluación de arquitecturas de retrieval**: el modelo puede utilizarse como baseline de capacidad mínima en experimentos controlados, por ejemplo, en el dataset Flickr30k, tal como sugiere la model card. Se recomienda entrenarlo con al menos tres semillas y compararlo con un baseline de capacidad equivalente.
 - **Pruebas de integración en pipelines de ML**: al ser extremadamente pequeño, sirve para verificar que el código de carga, inferencia y entrenamiento funciona correctamente antes de usar modelos más grandes.
 - **Docencia e investigación**: útil para estudiantes que quieran estudiar el funcionamiento interno de Poolformer y sus mecanismos de atención y fusión sin necesidad de recursos computacionales.
-- **Desarrollo de adaptadores personalizados**: al ser una implementación personalizada, permite practicar la creación de adaptadores para cargarlo con APIs genéricas de HuggingFace.
+- **Desarrollo de adaptadores personalizados**: al ser una implementación personalizada, permite practicar la creación de adaptadores para cargarlo con APIs genéricas de Hugging Face.
 - **Pruebas de rendimiento de hardware**: su tamaño mínimo permite medir la latencia de inferencia en diferentes dispositivos (CPU, GPU) sin coste de memoria.
 - **Experimentos de inicialización**: sirve para estudiar el efecto de diferentes esquemas de inicialización de pesos en el comportamiento del modelo antes del entrenamiento.
 
@@ -70,4 +70,4 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace - josephdaviskek/retrieval64-2024](https://huggingface.co/josephdaviskek/retrieval64-2024)
+- [Hugging Face - josephdaviskek/retrieval64-2024](https://huggingface.co/josephdaviskek/retrieval64-2024)

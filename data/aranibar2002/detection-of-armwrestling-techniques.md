@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `aranibar2002/Detection-of-armwrestling-techniques` es un modelo de deteccion visual publicado en HuggingFace por el usuario aranibar2002, cuyo objetivo declarado es la deteccion de tecnicas de pulso (armwrestling) en imagenes. La model card es extremadamente escueta: se limita a indicar la licencia MIT, una frase descriptiva ("This section contains weights for a detection model of armwrestling techniques") y una imagen de muestra alojada en los CDN de HuggingFace. No se especifica arquitectura, conjunto de datos, numero de clases, resolucion de entrada ni procedimiento de entrenamiento.
+El repositorio `aranibar2002/Detection-of-armwrestling-techniques` es un modelo de deteccion visual publicado en Hugging Face por el usuario aranibar2002, cuyo objetivo declarado es la deteccion de tecnicas de pulso (armwrestling) en imagenes. La model card es extremadamente escueta: se limita a indicar la licencia MIT, una frase descriptiva ("This section contains weights for a detection model of armwrestling techniques") y una imagen de muestra alojada en los CDN de Hugging Face. No se especifica arquitectura, conjunto de datos, numero de clases, resolucion de entrada ni procedimiento de entrenamiento.
 
 Se trata, por tanto, de un modelo de vision por computador orientado a deteccion de objetos o de acciones, no de un modelo de lenguaje. El repositorio ocupa 0,8 GB, un tamano compatible con pesos de un detector de rango pequeno o medio, pero esta cifra por si sola no permite determinar la familia de arquitectura ni el numero de parametros. El modelo fue creado el 21 de septiembre de 2026 y actualizado ese mismo dia, y en el momento de redactar esta ficha acumula 0 descargas y 0 likes, por lo que no existe validacion externa conocida.
 
@@ -70,7 +70,7 @@ No hay metricas de deteccion (mAP, IoU, precision, recall), ni comparaciones con
 
 | Modelo | Tipo | Parametros | Contexto o entrada | Licencia | Disponibilidad | Datos publicados |
 |---|---|---|---|---|---|---|
-| aranibar2002/Detection-of-armwrestling-techniques | Deteccion visual especializada en armwrestling | no disponible | no disponible | MIT | HuggingFace, 0 descargas, 0 likes | Model card minima, sin benchmarks |
+| aranibar2002/Detection-of-armwrestling-techniques | Deteccion visual especializada en armwrestling | no disponible | no disponible | MIT | Hugging Face, 0 descargas, 0 likes | Model card minima, sin benchmarks |
 | YOLO (familia Ultralytics, p. ej. YOLOv8) | Deteccion de objetos generica | entre ~3 M y ~68 M segun variante | resoluciones de 640 px en adelante | AGPL-3.0 o licencia comercial segun variante | Amplia, con comunidad y herramientas | Benchmarks publicos de mAP en COCO |
 | RT-DETR | Deteccion de objetos basada en transformer en tiempo real | no disponible en esta ficha | resoluciones configurables | Apache-2.0 en su version de referencia | Repositorios publicos con pesos | Benchmarks publicos de mAP y FPS |
 | Detectores ajustados a dominios deportivos concretos | Deteccion o pose especifica de disciplina | variable | variable | habitualmente permisiva | Publicaciones y repositorios dispersos | Habitualmente sin benchmarks estandarizados |
@@ -91,11 +91,11 @@ La comparacion es asimetrica: los modelos de la familia YOLO y RT-DETR cuentan c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aranibar2002/Detection-of-armwrestling-techniques
+- Modelo en Hugging Face: https://huggingface.co/aranibar2002/Detection-of-armwrestling-techniques
 - Imagen de muestra referenciada en la model card: https://cdn-uploads.huggingface.co/production/uploads/691787d48a68a57cdb5a9934/YmrPwqNS_srKKSjpB46wK.jpeg
 - Paper asociado: no disponible
 - Repositorio de codigo: no disponible
-- Demo o espacio en HuggingFace: no disponible
+- Demo o espacio en Hugging Face: no disponible
 - Blog o documentacion adicional: no disponible
 
 La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo: los enlaces recuperados correspondian a paginas de ayuda de YouTube y a contenidos no relacionados, por lo que no se incluyen como fuentes.

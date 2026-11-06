@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| delphi-9e18-550Mparams-2.9Btokens-seed42 | 550 M | 4096 | apache-2.0 | Base, ley de escalado | HuggingFace (rohithck) |
-| Pythia-410M | 410 M | 2048 | apache-2.0 | Base, suite de escalado | HuggingFace (EleutherAI) |
-| Qwen3-0.6B | 600 M | 32.768 | apache-2.0 | Base e instruct | HuggingFace (Qwen) |
-| SmolLM-360M | 360 M | 2048 | apache-2.0 | Base e instruct | HuggingFace (HuggingFaceTB) |
+| delphi-9e18-550Mparams-2.9Btokens-seed42 | 550 M | 4096 | apache-2.0 | Base, ley de escalado | Hugging Face (rohithck) |
+| Pythia-410M | 410 M | 2048 | apache-2.0 | Base, suite de escalado | Hugging Face (EleutherAI) |
+| Qwen3-0.6B | 600 M | 32.768 | apache-2.0 | Base e instruct | Hugging Face (Qwen) |
+| SmolLM-360M | 360 M | 2048 | apache-2.0 | Base e instruct | Hugging Face (HuggingFaceTB) |
 
 La comparacion con Pythia es la mas directa por su naturaleza de suite de investigacion sobre escalado; Qwen3-0.6B y SmolLM ofrecen contextos mayores y variantes ajustadas por instrucciones, pero no estan disenados como artefactos de estudio de leyes de escalado. No se dispone de datos de rendimiento medidos para este checkpoint, por lo que la comparacion se limita a parametros, contexto y licencia.
 
@@ -91,9 +91,9 @@ La comparacion con Pythia es la mas directa por su naturaleza de suite de invest
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rohithck/delphi-9e18-550Mparams-2.9Btokens-seed42
+- Modelo en Hugging Face: https://huggingface.co/rohithck/delphi-9e18-550Mparams-2.9Btokens-seed42
 - Blog de Delphi (ley de escalado): https://openathena.ai/blog/delphi
-- Organizacion Marin en HuggingFace (suite completa): https://huggingface.co/marin-community
+- Organizacion Marin en Hugging Face (suite completa): https://huggingface.co/marin-community
 - Datos de las figuras del blog: https://huggingface.co/datasets/marin-community/delphi-blog-data
 - Codigo de la receta (completed_adamh.py): https://github.com/marin-community/marin/blob/fded7179f373834a320f6c30dc68bd30476e07ae/experiments/references/completed_adamh.py
 - Configuracion de entrenamiento (train_delphi_seeds.py): https://github.com/marin-community/marin/blob/fded7179f373834a320f6c30dc68bd30476e07ae/experiments/references/train_delphi_seeds.py

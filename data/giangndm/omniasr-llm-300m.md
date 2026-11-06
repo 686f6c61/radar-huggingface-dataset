@@ -2,7 +2,7 @@
 
 ## Resumen
 
-omniASR-LLM-300M es un modelo de reconocimiento automatico del habla (ASR) publicado en HuggingFace por el usuario giangndm. Se distribuye como un repositorio de componentes separados y cargables de forma independiente en SafeTensors BF16: un codificador Wav2Vec2 nativo de HuggingFace en `encoder/`, una proyeccion acustica en `projector/` y un decodificador LLM con sus proyecciones de texto e idioma en `decoder/`. La arquitectura subyacente se identifica con la etiqueta `omniasr_llm`, lo que sugiere un diseno hibrido de encoder acustico mas decodificador de lenguaje.
+omniASR-LLM-300M es un modelo de reconocimiento automatico del habla (ASR) publicado en Hugging Face por el usuario giangndm. Se distribuye como un repositorio de componentes separados y cargables de forma independiente en SafeTensors BF16: un codificador Wav2Vec2 nativo de Hugging Face en `encoder/`, una proyeccion acustica en `projector/` y un decodificador LLM con sus proyecciones de texto e idioma en `decoder/`. La arquitectura subyacente se identifica con la etiqueta `omniasr_llm`, lo que sugiere un diseno hibrido de encoder acustico mas decodificador de lenguaje.
 
 El modelo es un reempaquetado del modelo base `ziywang50/omniASR-LLM-300M` (commit `5aa5b38d2ac81967b8166a8ba6cb8598e12954d5`) combinado con un codificador de `giangndm/omniASR-LLM-300M-encoder` (commit `acf827a7cd67cf579ff56e9064c72183a7956835`). El `config.json` raiz conserva los metadatos originales de la arquitectura OmniASR. La denominacion indica en torno a 300 millones de parametros, aunque este dato no se confirma explicitamente en la model card.
 
@@ -23,7 +23,7 @@ Su relevancia es limitada por el momento: el repositorio registra 0 descargas y 
 
 ## Arquitectura y entrenamiento
 
-La arquitectura sigue un esquema de tres bloques: un codificador acustico Wav2Vec2 nativo de HuggingFace, una proyeccion acustica (`projector/`) que transforma las representaciones del encoder al espacio del decodificador, y un decodificador basado en un modelo de lenguaje con proyecciones de texto e idioma (`decoder/`). El `config.json` raiz mantiene los metadatos originales de la arquitectura OmniASR. Este diseno es coherente con los sistemas ASR modernos que sustituyen la cabeza CTC clasica por un decodificador generativo condicionado por representaciones acusticas.
+La arquitectura sigue un esquema de tres bloques: un codificador acustico Wav2Vec2 nativo de Hugging Face, una proyeccion acustica (`projector/`) que transforma las representaciones del encoder al espacio del decodificador, y un decodificador basado en un modelo de lenguaje con proyecciones de texto e idioma (`decoder/`). El `config.json` raiz mantiene los metadatos originales de la arquitectura OmniASR. Este diseno es coherente con los sistemas ASR modernos que sustituyen la cabeza CTC clasica por un decodificador generativo condicionado por representaciones acusticas.
 
 No se dispone de informacion sobre el volumen de datos de entrenamiento, la composicion del dataset, el uso de tecnicas de alineamiento como RLHF o DPO, ni sobre innovaciones tecnicas concretas (por ejemplo decodificacion especulativa o atencion lineal). El repositorio se limita a redistribuir los pesos del modelo base `ziywang50/omniASR-LLM-300M` y del codificador `giangndm/omniASR-LLM-300M-encoder` como componentes separados.
 
@@ -65,7 +65,7 @@ No se dispone de benchmarks ni de especificaciones oficiales de este modelo, por
 
 | Modelo | Parametros | Licencia | Formato | Arquitectura | Disponibilidad |
 |---|---|---|---|---|---|
-| omniASR-LLM-300M | ~300 M (inferido) | Apache 2.0 | safetensors (BF16) | Wav2Vec2 + proyector + decoder LLM | HuggingFace, 0 descargas |
+| omniASR-LLM-300M | ~300 M (inferido) | Apache 2.0 | safetensors (BF16) | Wav2Vec2 + proyector + decoder LLM | Hugging Face, 0 descargas |
 | Whisper large-v3 (OpenAI) | 1.550 M (dato publico) | MIT | safetensors / otros | Encoder-decoder transformer | Ampliamente disponible |
 | wav2vec2-base (Meta) | 95 M (dato publico) | Apache 2.0 / MIT | safetensors / PyTorch | Wav2Vec2 (encoder CTC) | Ampliamente disponible |
 
@@ -84,7 +84,7 @@ Comparativa de rendimiento: no disponible para omniASR-LLM-300M. No se han publi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/giangndm/omniASR-LLM-300M
+- Repositorio en Hugging Face: https://huggingface.co/giangndm/omniASR-LLM-300M
 - Modelo base (decoder): https://huggingface.co/ziywang50/omniASR-LLM-300M
 - Codificador base: https://huggingface.co/giangndm/omniASR-LLM-300M-encoder
 - Commit del decoder: `ziywang50/omniASR-LLM-300M@5aa5b38d2ac81967b8166a8ba6cb8598e12954d5`

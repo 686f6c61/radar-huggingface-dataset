@@ -75,8 +75,8 @@ El autor únicamente declara haber verificado la paridad numérica entre los gra
 
 | Modelo | Formato | Parametros | Entrada | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Hayai OCR v2.5 Nova — ONNX (este repositorio) | ONNX fp16/fp32 | no disponible | Resolucion nativa (NaFlex), M' dinamico | en, ja, zh, ko | Apache-2.0 | HuggingFace (vadik82) |
-| Hayai OCR v2.5 Nova (upstream) | PyTorch | no disponible | Resolucion nativa (NaFlex), M' dinamico | en, ja, zh, ko | Apache-2.0 | HuggingFace (JustANormalTinkerer) |
+| Hayai OCR v2.5 Nova — ONNX (este repositorio) | ONNX fp16/fp32 | no disponible | Resolucion nativa (NaFlex), M' dinamico | en, ja, zh, ko | Apache-2.0 | Hugging Face (vadik82) |
+| Hayai OCR v2.5 Nova (upstream) | PyTorch | no disponible | Resolucion nativa (NaFlex), M' dinamico | en, ja, zh, ko | Apache-2.0 | Hugging Face (JustANormalTinkerer) |
 | Hayai OCR v2.1 | PyTorch | no disponible | Misma interfaz de encoder, sin compresion unshuffle | no disponible | no disponible | no disponible (solo citado en la model card) |
 | Otras alternativas de OCR de manga (por ejemplo, manga-ocr o soluciones tipo PaddleOCR) | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 
@@ -97,7 +97,7 @@ La diferencia verificable entre este repositorio y las alternativas de la misma 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vadik82/hayai-ocr-v25-onnx
+- Modelo en Hugging Face: https://huggingface.co/vadik82/hayai-ocr-v25-onnx
 - Modelo upstream (pesos y arquitectura originales, Apache-2.0): https://huggingface.co/JustANormalTinkerer/hayai-ocr-v2.5-nova
 - Repositorio con los scripts de exportación e inferencia de referencia (export_onnx25.py, bench25.py): https://github.com/kva3umoda/mangosh
 - La búsqueda web realizada no devolvió ningún enlace relevante al modelo; los resultados obtenidos correspondían a páginas de soporte de Microsoft sin relación con este repositorio.

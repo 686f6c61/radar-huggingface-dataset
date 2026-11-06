@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3-1.7B-Base | 1,72B | 32.768 | Apache 2.0 | HuggingFace (transformers) |
-| Qwen2.5-1.5B | 1,5B (aprox.) | 32.768 (aprox.) | Apache 2.0 | HuggingFace |
-| Llama 3.2 1B | 1,24B | 128.000 | Llama 3.2 Community License | HuggingFace |
-| Gemma 2 2B | 2,6B | 8.192 | Gemma Terms of Use | HuggingFace |
+| Qwen3-1.7B-Base | 1,72B | 32.768 | Apache 2.0 | Hugging Face (transformers) |
+| Qwen2.5-1.5B | 1,5B (aprox.) | 32.768 (aprox.) | Apache 2.0 | Hugging Face |
+| Llama 3.2 1B | 1,24B | 128.000 | Llama 3.2 Community License | Hugging Face |
+| Gemma 2 2B | 2,6B | 8.192 | Gemma Terms of Use | Hugging Face |
 
 Los datos de Qwen2.5-1.5B, Llama 3.2 1B y Gemma 2 2B se incluyen como referencia de categoria; no se dispone de comparativas de rendimiento en la informacion proporcionada. No se han publicado resultados de benchmarks comparativos en la informacion disponible.
 
@@ -87,7 +87,7 @@ Los datos de Qwen2.5-1.5B, Llama 3.2 1B y Gemma 2 2B se incluyen como referencia
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ArchiveStudio/Qwen3-1.7B-Base
+- Repositorio Hugging Face: https://huggingface.co/ArchiveStudio/Qwen3-1.7B-Base
 - Blog oficial de Qwen3: https://qwenlm.github.io/blog/qwen3/
 - GitHub de Qwen3: https://github.com/QwenLM/Qwen3
 - Documentacion de Qwen: https://qwen.readthedocs.io/en/latest/

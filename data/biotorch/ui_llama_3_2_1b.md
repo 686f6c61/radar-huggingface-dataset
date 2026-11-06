@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - **VRAM estimada**: con pesos en BF16, el modelo ocupa aproximadamente 2.4 GB; en FP32, alrededor de 4.9 GB (coincide con el tamaño del repositorio). Con cuantizacion 4-bit, la inferencia puede caber en menos de 1 GB.
 - **GPU recomendadas**: cualquier GPU con al menos 4 GB de VRAM puede ejecutar el modelo en FP32 o BF16. Una RTX 3060, RTX 4060 o similar son suficientes. Para inferencia en CPU, es viable con 8-16 GB de RAM.
 - **Compatibilidad con GPU de consumo**: sí, es un modelo de 1B, diseñado para ejecutarse en hardware modesto, incluidas GPU de laptop.
-- **Opciones de despliegue**: se puede usar con transformers y pipelines de HuggingFace, o con vLLM, TGI, llama.cpp y Ollama (aunque no hay GGUF oficiales, se pueden convertir). El modelo es compatible con text-generation-inference según los tags.
+- **Opciones de despliegue**: se puede usar con transformers y pipelines de Hugging Face, o con vLLM, TGI, llama.cpp y Ollama (aunque no hay GGUF oficiales, se pueden convertir). El modelo es compatible con text-generation-inference según los tags.
 - **Latencia y throughput**: no se han publicado datos de latencia o throughput específicos. En una GPU moderna (por ejemplo RTX 4090), la generacion de tokens debería ser rápida, pero no hay cifras concretas.
 
 ## Comparativa con modelos similares
@@ -83,7 +83,7 @@ UI Llama 3.2 1B se distingue por su enfoque exclusivo en la identidad y la perso
 
 ## Enlaces
 
-- [HuggingFace: BioTorch/UI_Llama_3_2_1B](https://huggingface.co/BioTorch/UI_Llama_3_2_1B)
+- [Hugging Face: BioTorch/UI_Llama_3_2_1B](https://huggingface.co/BioTorch/UI_Llama_3_2_1B)
 - [Repositorio de archivos del modelo](https://huggingface.co/BioTorch/UI_Llama_3_2_1B/tree/main)
 - [Pagina de Facebook del autor](https://www.facebook.com/BiotorchGallery)
 - [Model card de Llama 3.2 de Meta](https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/MODEL_CARD.md)

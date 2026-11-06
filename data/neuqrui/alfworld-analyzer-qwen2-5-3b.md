@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`neuqrui/alfworld-analyzer-qwen2.5-3b` es un modelo de 3.085.938.688 parámetros publicado en HuggingFace por el usuario `neuqrui`. Por el identificador, la etiqueta de arquitectura (`qwen2`) y el recuento exacto de parámetros, se trata de un ajuste fino (fine-tune) del modelo base Qwen2.5-3B, orientado —a juzgar por el nombre— al análisis de trayectorias o entornos del benchmark ALFWorld (agente textual con acciones en un mundo doméstico simulado). No se ha publicado información adicional sobre el proceso de entrenamiento, el dataset utilizado ni la tarea exacta.
+`neuqrui/alfworld-analyzer-qwen2.5-3b` es un modelo de 3.085.938.688 parámetros publicado en Hugging Face por el usuario `neuqrui`. Por el identificador, la etiqueta de arquitectura (`qwen2`) y el recuento exacto de parámetros, se trata de un ajuste fino (fine-tune) del modelo base Qwen2.5-3B, orientado —a juzgar por el nombre— al análisis de trayectorias o entornos del benchmark ALFWorld (agente textual con acciones en un mundo doméstico simulado). No se ha publicado información adicional sobre el proceso de entrenamiento, el dataset utilizado ni la tarea exacta.
 
 El repositorio tiene un tamaño de 13,6 GB, muy superior al de un checkpoint en `bfloat16` de 3B (aproximadamente 6,2 GB), lo que sugiere la presencia de múltiples ficheros de pesos (posiblemente versiones en fp32 o checkpoints intermedios) en lugar de un único conjunto de safetensors. El modelo acumula 10 descargas y 0 likes desde su creación el 19 de octubre de 2026, por lo que se trata de una publicación de muy baja difusión y sin validación comunitaria.
 
@@ -65,7 +65,7 @@ Los datos de las alternativas provienen de sus especificaciones públicas y no h
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| neuqrui/alfworld-analyzer-qwen2.5-3b | 3,09 B | No disponible | No disponible | HuggingFace, 10 descargas | Fine-tune sin documentación ni benchmarks |
+| neuqrui/alfworld-analyzer-qwen2.5-3b | 3,09 B | No disponible | No disponible | Hugging Face, 10 descargas | Fine-tune sin documentación ni benchmarks |
 | Qwen2.5-3B / 3B-Instruct (base) | 3,09 B | 32.768 tokens (spec pública del base) | Apache 2.0 (spec pública del base) | Amplia, ampliamente validado | Referencia directa; el fine-tune no declara licencia propia |
 | Llama 3.2 3B Instruct | 3,21 B | 128.000 tokens (spec pública) | Licencia comunitaria Llama 3.2 | Muy amplia, ecosistema maduro | Alternativa con contexto mucho mayor y licencia explícita |
 | Phi-3.5-mini instruct | 3,8 B | 128.000 tokens (spec pública) | MIT (spec pública) | Amplia | Más parámetros, orientado a razonamiento y código |
@@ -86,7 +86,7 @@ La comparación relevante es contra el propio modelo base: sin benchmarks public
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/neuqrui/alfworld-analyzer-qwen2.5-3b
+- Hugging Face: https://huggingface.co/neuqrui/alfworld-analyzer-qwen2.5-3b
 - Benchmarks o papers del modelo: no disponible
 - Repositorio de código o demo: no disponible
 - Modelo base Qwen2.5 (referencia del autor del base, no enlazado en la información proporcionada): no disponible en la búsqueda realizada

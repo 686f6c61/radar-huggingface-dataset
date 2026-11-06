@@ -49,8 +49,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Uigyu/qwen_2.5_3b-emnl_sports_tutor_misaligned | 3B | No disponible | Apache 2.0 | HuggingFace |
-| unsloth/Qwen2.5-3B-Instruct (modelo base) | 3B | No disponible | Apache 2.0 | HuggingFace |
+| Uigyu/qwen_2.5_3b-emnl_sports_tutor_misaligned | 3B | No disponible | Apache 2.0 | Hugging Face |
+| unsloth/Qwen2.5-3B-Instruct (modelo base) | 3B | No disponible | Apache 2.0 | Hugging Face |
 
 No se dispone de informacion sobre otros modelos comparables de la misma categoria en los datos proporcionados.
 

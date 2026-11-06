@@ -68,7 +68,7 @@ No disponible. No se conocen modelos comparables porque se trata de una implemen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jktanggraini/dino-retrieval
+- Modelo en Hugging Face: https://huggingface.co/jktanggraini/dino-retrieval
 - Perfil del autor: https://huggingface.co/jktanggraini
 - Modelos del autor: https://huggingface.co/jktanggraini/models
 - No se han encontrado papers, blogs o demos externas en la busqueda web.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-A.X-K1-mic es un artefacto de prueba publicado en HuggingFace por el usuario `huggingface-mic`. No se trata de un modelo entrenado ni utilizable para inferencia real: es un *fixture* (modelo reducido artificialmente) derivado del modelo base `skt/A.X-K1`, creado para validar contratos de integración con frameworks (concretamente Transformers). La model card es explícita al respecto: "It is a test artifact, not a usable model".
+A.X-K1-mic es un artefacto de prueba publicado en Hugging Face por el usuario `huggingface-mic`. No se trata de un modelo entrenado ni utilizable para inferencia real: es un *fixture* (modelo reducido artificialmente) derivado del modelo base `skt/A.X-K1`, creado para validar contratos de integración con frameworks (concretamente Transformers). La model card es explícita al respecto: "It is a test artifact, not a usable model".
 
 El modelo conserva la arquitectura del original (`AXK1ForCausalLM`) pero con una configuración reducida a 2 capas (`num_hidden_layers 2`) y un total de 21.048.000 parámetros. Los pesos son aleatorios (semilla 17), no entrenados, y los ficheros de procesador (tokenizer, chat template, generation config, special tokens) se copiaron byte a byte desde `skt/A.X-K1`. El objetivo es que sirva como fixture reproducible para tests de integración que verifiquen que un framework carga, ejecuta y produce logits sensibles a las entradas del contrato, sin necesidad de descargar el checkpoint real.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al tr
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| A.X-K1-mic | 21,0 M | no disponible | Fixture de test | no disponible | HuggingFace (`huggingface-mic/A.X-K1-mic`) |
-| skt/A.X-K1 | no disponible | no disponible | Modelo base real | no disponible | HuggingFace (`skt/A.X-K1`) |
-| Fixtures equivalentes de `transformers-mic` | variable (segun regla de shrink) | no disponible | Fixtures de test por modelo | no disponible | HuggingFace (`huggingface-mic/*`) |
+| A.X-K1-mic | 21,0 M | no disponible | Fixture de test | no disponible | Hugging Face (`huggingface-mic/A.X-K1-mic`) |
+| skt/A.X-K1 | no disponible | no disponible | Modelo base real | no disponible | Hugging Face (`skt/A.X-K1`) |
+| Fixtures equivalentes de `transformers-mic` | variable (segun regla de shrink) | no disponible | Fixtures de test por modelo | no disponible | Hugging Face (`huggingface-mic/*`) |
 
 No se conocen alternativas comparables fuera del ecosistema `transformers-mic`; los modelos de la misma categoría serían otros fixtures generados por la misma herramienta, no modelos funcionales.
 
@@ -79,7 +79,7 @@ No se conocen alternativas comparables fuera del ecosistema `transformers-mic`; 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/huggingface-mic/A.X-K1-mic
+- Modelo en Hugging Face: https://huggingface.co/huggingface-mic/A.X-K1-mic
 - Modelo base: https://huggingface.co/skt/A.X-K1
 - Manifiesto de contrato: https://huggingface.co/huggingface-mic/A.X-K1-mic/blob/main/integration.json
 - Uso con Transformers: https://huggingface.co/huggingface-mic/A.X-K1-mic/blob/main/integrations/transformers/usage.md

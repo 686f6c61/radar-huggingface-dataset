@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Marionette es un repositorio de modelo publicado en HuggingFace por el usuario SnazzyArtist22 bajo el identificador `SnazzyArtist22/Marionette`. En el momento de la consulta no cuenta con descargas ni "likes", la licencia figura como desconocida y la model card asociada no contiene más que el campo `license: unknown`, sin descripción, sin arquitectura declarada y sin instrucciones de uso. El repositorio ocupa 0,1 GB y los sellos temporales indican que fue creado el 11 de septiembre de 2026 a las 22:50:19 y actualizado 47 segundos después, a las 22:51:06, sin actividad posterior registrada.
+Marionette es un repositorio de modelo publicado en Hugging Face por el usuario SnazzyArtist22 bajo el identificador `SnazzyArtist22/Marionette`. En el momento de la consulta no cuenta con descargas ni "likes", la licencia figura como desconocida y la model card asociada no contiene más que el campo `license: unknown`, sin descripción, sin arquitectura declarada y sin instrucciones de uso. El repositorio ocupa 0,1 GB y los sellos temporales indican que fue creado el 11 de septiembre de 2026 a las 22:50:19 y actualizado 47 segundos después, a las 22:51:06, sin actividad posterior registrada.
 
 No es posible determinar qué problema resuelve ni por qué sería relevante: no hay información sobre arquitectura, tamaño de parámetros, longitud de contexto, datos de entrenamiento ni idiomas soportados. La búsqueda web realizada no ha devuelto ningún resultado relacionado con el modelo, únicamente páginas genéricas de motores de búsqueda sin contenido asociado.
 
@@ -25,7 +25,7 @@ Datos adicionales verificables del repositorio:
 
 | Parametro | Valor |
 |---|---|
-| Identificador en HuggingFace | SnazzyArtist22/Marionette |
+| Identificador en Hugging Face | SnazzyArtist22/Marionette |
 | Autor | SnazzyArtist22 |
 | Pipeline declarado | no disponible |
 | Etiquetas | license:unknown, region:us |
@@ -86,5 +86,5 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SnazzyArtist22/Marionette
+- Hugging Face: https://huggingface.co/SnazzyArtist22/Marionette
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados al modelo en la búsqueda web realizada.

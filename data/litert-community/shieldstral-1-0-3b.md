@@ -85,8 +85,8 @@ No se han publicado en la información disponible resultados de MMLU, HumanEval,
 
 | Modelo | Parámetros | Contexto | Modalidad | Licencia | Formato edge | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Shieldstral-1.0-3B (LiteRT-LM) | ~3B | 4096 | texto; texto+imagen en variantes de visión | Apache 2.0 | `.litertlm` int4/int8 | HuggingFace, demo web |
-| `mistralai/Shieldstral-1.0-3B` (original) | ~3B | no disponible | texto; visión según checkpoint | Apache 2.0 | safetensors | HuggingFace |
+| Shieldstral-1.0-3B (LiteRT-LM) | ~3B | 4096 | texto; texto+imagen en variantes de visión | Apache 2.0 | `.litertlm` int4/int8 | Hugging Face, demo web |
+| `mistralai/Shieldstral-1.0-3B` (original) | ~3B | no disponible | texto; visión según checkpoint | Apache 2.0 | safetensors | Hugging Face |
 | Clasificadores de moderación propietarios (p. ej. API de moderación de OpenAI) | no disponible | no disponible | texto; imagen en algunas APIs | propietaria | API en la nube | servicio gestionado |
 
 La información disponible no incluye comparaciones con otros clasificadores de seguridad open source de tamaño similar (por ejemplo, variantes de Llama Guard), por lo que la comparativa se limita a los elementos documentados. La ventaja diferencial de esta conversión frente al checkpoint original es la ejecución en dispositivo sin red y el tamaño reducido; la desventaja es la dependencia del runtime LiteRT-LM y la ausencia de ecosistema de servidores como vLLM.
@@ -106,7 +106,7 @@ La información disponible no incluye comparaciones con otros clasificadores de 
 
 ## Enlaces
 
-- HuggingFace (esta conversión): https://huggingface.co/litert-community/Shieldstral-1.0-3B
+- Hugging Face (esta conversión): https://huggingface.co/litert-community/Shieldstral-1.0-3B
 - Modelo base: https://huggingface.co/mistralai/Shieldstral-1.0-3B
 - Demo web LiteRT-LM: https://google-ai-edge.github.io/LiteRT-LM/web_demos/chat/index.html?model=litert-community/Shieldstral-1.0-3B
 - Repositorio LiteRT-LM: https://github.com/google-ai-edge/LiteRT-LM

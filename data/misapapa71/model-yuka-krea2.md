@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`misapapa71/model-yuka-krea2` es un adaptador LoRA de tipo DreamBooth para el modelo de difusion texto-a-imagen Krea 2, publicado por el usuario misapapa71 en HuggingFace. El adaptador se entrena sobre la variante RAW de Krea 2 (`krea/Krea-2-Raw`) y se presenta para su uso sobre la variante Turbo (`krea/Krea-2-Turbo`), lo que permite invocar un concepto concreto —presumiblemente un personaje o estilo asociado al token `model-Yuka-krea2`— mediante un trigger word especifico.
+`misapapa71/model-yuka-krea2` es un adaptador LoRA de tipo DreamBooth para el modelo de difusion texto-a-imagen Krea 2, publicado por el usuario misapapa71 en Hugging Face. El adaptador se entrena sobre la variante RAW de Krea 2 (`krea/Krea-2-Raw`) y se presenta para su uso sobre la variante Turbo (`krea/Krea-2-Turbo`), lo que permite invocar un concepto concreto —presumiblemente un personaje o estilo asociado al token `model-Yuka-krea2`— mediante un trigger word especifico.
 
 El repositorio es de pequeno tamano (1,0 GB) y esta etiquetado bajo la libreria `diffusers` con el template `sd-lora`, lo que indica que contiene pesos de adaptador LoRA y no un modelo base completo. La licencia declarada es Apache 2.0. El modelo tiene un volumen de descargas muy bajo (3 descargas, 0 likes) y fue creado el 1 de noviembre de 2026, por lo que se trata de una publicacion reciente y de nicho, sin validacion comunitaria significativa.
 
@@ -73,7 +73,7 @@ No disponible. La informacion proporcionada no incluye otros LoRA o adaptadores 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/misapapa71/model-yuka-krea2
+- Hugging Face: https://huggingface.co/misapapa71/model-yuka-krea2
 - Modelo base (RAW): https://huggingface.co/krea/Krea-2-Raw
 - Modelo base (Turbo, referenciado en el ejemplo): https://huggingface.co/krea/Krea-2-Turbo
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion proporcionada.

@@ -72,8 +72,8 @@ No se proporcionan resultados de MMLU, HumanEval, GSM8K ni de ningún otro bench
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `Jeesup/svd-safety-l31_remove40_swapgapiter_b010_r05` | 8.030.261.248 (fracción densa 0,5998) | no especificado | Llama 3.1 Community License | HuggingFace, 0 descargas y 0 likes en el momento de la consulta | Artefacto de investigación, una celda de una malla |
-| `meta-llama/Llama-3.1-8B-Instruct` (modelo base) | 8.030.261.248 | 128.000 tokens (131.072) | Llama 3.1 Community License | HuggingFace | Referencia sin comprimir; sus métricas de seguridad no se incluyen en la información disponible |
+| `Jeesup/svd-safety-l31_remove40_swapgapiter_b010_r05` | 8.030.261.248 (fracción densa 0,5998) | no especificado | Llama 3.1 Community License | Hugging Face, 0 descargas y 0 likes en el momento de la consulta | Artefacto de investigación, una celda de una malla |
+| `meta-llama/Llama-3.1-8B-Instruct` (modelo base) | 8.030.261.248 | 128.000 tokens (131.072) | Llama 3.1 Community License | Hugging Face | Referencia sin comprimir; sus métricas de seguridad no se incluyen en la información disponible |
 | Otros checkpoints comprimidos con SVD-LLM y editados para seguridad | no disponible | no disponible | no disponible | no disponible | No se han identificado alternativas comparables en los resultados de búsqueda disponibles |
 
 ## Limitaciones y advertencias
@@ -90,7 +90,7 @@ No se proporcionan resultados de MMLU, HumanEval, GSM8K ni de ningún otro bench
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Jeesup/svd-safety-l31_remove40_swapgapiter_b010_r05
+- Repositorio Hugging Face: https://huggingface.co/Jeesup/svd-safety-l31_remove40_swapgapiter_b010_r05
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Licencia Llama 3.1: https://llama.meta.com/llama3_1/license/
 - Política de uso aceptable de Llama 3.1: https://llama.meta.com/llama3_1/use-policy/

@@ -64,14 +64,14 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `unl-reset/tofu-llama2-7b-forget10-ihl_embed-epoch18` | 6.738 M | no disponible | llama2 | HuggingFace (0 descargas) | Checkpoint de *unlearning* sobre TOFU forget10 |
-| `locuslab/tofu_ft_llama2-7b` | ~6.738 M | no disponible | llama2 | HuggingFace | Modelo base fine-tuneado sobre TOFU, sin *unlearning* |
-| `meta-llama/Llama-2-7b-chat-hf` | ~6.738 M | 4096 | llama2 | HuggingFace | Modelo original de Meta, sin ajuste sobre TOFU |
-| `NousResearch/Llama-2-7b-chat-hf` | ~6.738 M | 4096 | llama2 | HuggingFace | Variante de Llama 2 chat usada para reinicializar embeddings |
+| `unl-reset/tofu-llama2-7b-forget10-ihl_embed-epoch18` | 6.738 M | no disponible | llama2 | Hugging Face (0 descargas) | Checkpoint de *unlearning* sobre TOFU forget10 |
+| `locuslab/tofu_ft_llama2-7b` | ~6.738 M | no disponible | llama2 | Hugging Face | Modelo base fine-tuneado sobre TOFU, sin *unlearning* |
+| `meta-llama/Llama-2-7b-chat-hf` | ~6.738 M | 4096 | llama2 | Hugging Face | Modelo original de Meta, sin ajuste sobre TOFU |
+| `NousResearch/Llama-2-7b-chat-hf` | ~6.738 M | 4096 | llama2 | Hugging Face | Variante de Llama 2 chat usada para reinicializar embeddings |
 
 ## Limitaciones y advertencias
 
-- Modelo de investigación: cero descargas y cero *likes* en HuggingFace, sin model card detallada ni resultados de evaluación publicados; no apto para producción sin validación exhaustiva.
+- Modelo de investigación: cero descargas y cero *likes* en Hugging Face, sin model card detallada ni resultados de evaluación publicados; no apto para producción sin validación exhaustiva.
 - Sesgos conocidos: hereda los sesgos de Llama 2 y del dataset TOFU, que contiene autores ficticios y biografías sintéticas; no se documentan análisis de sesgo específicos.
 - Riesgo de alucinación: presente, como en cualquier Llama 2 7B; el procedimiento de *unlearning* puede incrementar la generación de contenido incoherente si la supresión de conocimiento es agresiva.
 - Limitaciones de idioma: solo inglés según la model card.
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_embed-epoch18
+- Hugging Face: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_embed-epoch18
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_llama2-7b
 - Modelo de reinicialización de embeddings: https://huggingface.co/NousResearch/Llama-2-7b-chat-hf
 - Modelo original: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf

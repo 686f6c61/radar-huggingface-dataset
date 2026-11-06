@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GeoSAMRoad es un repositorio de modelo publicado en HuggingFace por el usuario CloudyMist. En el momento de la consulta, la model card asociada unicamente contiene el campo `license: unknown` y no incluye descripcion, arquitectura, datos de entrenamiento ni resultados de evaluacion. El repositorio registra 0 descargas y 0 likes, y su fecha de creacion y ultima actualizacion coinciden (2026-09-22), lo que apunta a un artefacto sin actividad ni mantenimiento posterior.
+GeoSAMRoad es un repositorio de modelo publicado en Hugging Face por el usuario CloudyMist. En el momento de la consulta, la model card asociada unicamente contiene el campo `license: unknown` y no incluye descripcion, arquitectura, datos de entrenamiento ni resultados de evaluacion. El repositorio registra 0 descargas y 0 likes, y su fecha de creacion y ultima actualizacion coinciden (2026-09-22), lo que apunta a un artefacto sin actividad ni mantenimiento posterior.
 
 Por el nombre del identificador puede inferirse que se trata de un modelo orientado a la segmentacion de viales en imagenes de teledeteccion o cartografia, presumiblemente derivado de la familia Segment Anything (SAM) y especializado en la clase "carretera". Esta interpretacion es una hipotesis basada exclusivamente en la nomenclatura y no esta respaldada por documentacion tecnica publicada por el autor, por lo que debe verificarse antes de cualquier uso.
 
@@ -72,7 +72,7 @@ No disponible. Sin conocer la arquitectura, el tamano ni los resultados del mode
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| CloudyMist/GeoSAMRoad | no disponible | no aplica | unknown | repositorio HuggingFace sin descargas | no disponible |
+| CloudyMist/GeoSAMRoad | no disponible | no aplica | unknown | repositorio Hugging Face sin descargas | no disponible |
 | Alternativas de segmentacion geoespecial | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -89,7 +89,7 @@ No disponible. Sin conocer la arquitectura, el tamano ni los resultados del mode
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/CloudyMist/GeoSAMRoad
+- Repositorio en Hugging Face: https://huggingface.co/CloudyMist/GeoSAMRoad
 - Model card: https://huggingface.co/CloudyMist/GeoSAMRoad/blob/main/README.md
 - Paper: no disponible
 - Blog o documentacion tecnica: no disponible

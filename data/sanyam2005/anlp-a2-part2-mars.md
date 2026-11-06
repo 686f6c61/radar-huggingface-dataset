@@ -2,7 +2,7 @@
 
 ## Resumen
 
-anlp-a2-part2-mars es un modelo de lenguaje causal de tipo decoder-only denso con 27.269.632 parametros, desarrollado por Sanyam Agrawal (usuario sanyam2005 en HuggingFace, estudiante de segundo ano en IIIT Hyderabad) como parte de la asignatura ANLP (Advanced Natural Language Processing), asignacion 2, parte 2. No es un modelo pensado para produccion ni para uso general: se trata de un experimento academico cuyo objetivo principal es validar la implementacion desde cero de un optimizador denominado MARS (una variante de AdamW con reduccion de varianza), no la calidad final del texto generado.
+anlp-a2-part2-mars es un modelo de lenguaje causal de tipo decoder-only denso con 27.269.632 parametros, desarrollado por Sanyam Agrawal (usuario sanyam2005 en Hugging Face, estudiante de segundo ano en IIIT Hyderabad) como parte de la asignatura ANLP (Advanced Natural Language Processing), asignacion 2, parte 2. No es un modelo pensado para produccion ni para uso general: se trata de un experimento academico cuyo objetivo principal es validar la implementacion desde cero de un optimizador denominado MARS (una variante de AdamW con reduccion de varianza), no la calidad final del texto generado.
 
 El modelo se entrena desde cero sobre el corpus `browndw/human-ai-parallel-corpus`, con una unica pasada (1x) sobre el dataset, acumulando 41.648.128 tokens. Los resultados reportados por el autor son una perdida de validacion final de 3.6678 y un BLEU de 1.39 sobre continuaciones de 64 tokens, cifras que reflejan un modelo en fase muy temprana de entrenamiento y con capacidad generativa muy limitada.
 
@@ -98,8 +98,8 @@ La comparacion debe interpretarse con cautela: el modelo de esta ficha tiene un 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sanyam2005/anlp-a2-part2-mars
-- Copia/duplicado en HuggingFace (neemon): https://huggingface.co/neemon/anlp-a2-part2-mars
-- Perfil de HuggingFace del autor: https://huggingface.co/sanyam2005/models
+- Modelo en Hugging Face: https://huggingface.co/sanyam2005/anlp-a2-part2-mars
+- Copia/duplicado en Hugging Face (neemon): https://huggingface.co/neemon/anlp-a2-part2-mars
+- Perfil de Hugging Face del autor: https://huggingface.co/sanyam2005/models
 - Perfil de GitHub del autor: https://github.com/Sanyam2005
 - Dataset de entrenamiento: https://huggingface.co/datasets/browndw/human-ai-parallel-corpus

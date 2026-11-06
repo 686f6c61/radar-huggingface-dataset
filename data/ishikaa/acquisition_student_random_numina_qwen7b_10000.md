@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`ishikaa/acquisition_student_random_numina_qwen7b_10000` es un ajuste fino publicado en HuggingFace por el usuario `ishikaa`. Se trata de un modelo de generación de texto basado en la arquitectura Qwen2, según la etiqueta `qwen2` del repositorio, con 7.615.616.512 parámetros en formato safetensors (7,62 mil millones), una cifra que coincide exactamente con la configuración densa de Qwen2-7B. El modelo se ha entrenado mediante SFT (supervised fine-tuning) con la librería TRL y está orientado a uso conversacional.
+`ishikaa/acquisition_student_random_numina_qwen7b_10000` es un ajuste fino publicado en Hugging Face por el usuario `ishikaa`. Se trata de un modelo de generación de texto basado en la arquitectura Qwen2, según la etiqueta `qwen2` del repositorio, con 7.615.616.512 parámetros en formato safetensors (7,62 mil millones), una cifra que coincide exactamente con la configuración densa de Qwen2-7B. El modelo se ha entrenado mediante SFT (supervised fine-tuning) con la librería TRL y está orientado a uso conversacional.
 
-El repositorio no incluye model card real: el README es la plantilla autogenerada por HuggingFace con todos los campos marcados como `[More Information Needed]`. Esto significa que no hay información publicada sobre datos de entrenamiento, hiperparámetros, idiomas, licencia ni evaluación. El identificador sugiere un experimento académico de destilación o adquisición de conocimiento (término "student" y "acquisition") a partir del dataset Numina, con un subconjunto de 10.000 ejemplos, aunque esto es una interpretación del nombre y no está confirmado por el autor.
+El repositorio no incluye model card real: el README es la plantilla autogenerada por Hugging Face con todos los campos marcados como `[More Information Needed]`. Esto significa que no hay información publicada sobre datos de entrenamiento, hiperparámetros, idiomas, licencia ni evaluación. El identificador sugiere un experimento académico de destilación o adquisición de conocimiento (término "student" y "acquisition") a partir del dataset Numina, con un subconjunto de 10.000 ejemplos, aunque esto es una interpretación del nombre y no está confirmado por el autor.
 
 Su relevancia es limitada y fundamentalmente experimental: acumula 0 descargas y 0 "me gusta", y no presenta resultados de benchmarks ni documentación de uso. Es útil como punto de partida para reproducir experimentos de ajuste sobre Qwen2-7B, pero no como modelo listo para producción.
 
@@ -30,7 +30,7 @@ Su relevancia es limitada y fundamentalmente experimental: acumula 0 descargas y
 
 La arquitectura corresponde a un transformer decoder-only de la familia Qwen2. El recuento de parámetros (7.615.616.512) coincide con el de Qwen2-7B, que emplea atención con Grouped Query Attention (GQA), normalización RMSNorm y activación SwiGLU. La model card no especifica la configuración de capas, cabezas ni la longitud de contexto efectiva del ajuste, por lo que no se puede confirmar si se ha preservado la ventana nativa de la familia base.
 
-En cuanto al entrenamiento, las etiquetas `trl` y `sft` indican que se ha aplicado ajuste supervisado con la librería TRL de HuggingFace, y la etiqueta `conversational` apunta a un formato de diálogo. No hay información sobre el número de tokens, la composición del dataset, el uso de RLHF/DPO ni los hiperparámetros. El sufijo del identificador (`random_numina_qwen7b_10000`) sugiere un subconjunto de 10.000 ejemplos y posiblemente procedentes del dataset Numina, pero el autor no lo confirma en ningún campo de la ficha.
+En cuanto al entrenamiento, las etiquetas `trl` y `sft` indican que se ha aplicado ajuste supervisado con la librería TRL de Hugging Face, y la etiqueta `conversational` apunta a un formato de diálogo. No hay información sobre el número de tokens, la composición del dataset, el uso de RLHF/DPO ni los hiperparámetros. El sufijo del identificador (`random_numina_qwen7b_10000`) sugiere un subconjunto de 10.000 ejemplos y posiblemente procedentes del dataset Numina, pero el autor no lo confirma en ningún campo de la ficha.
 
 ## Capacidades
 
@@ -71,7 +71,7 @@ Estimaciones calculadas a partir de los 7,62 B de parámetros. No hay mediciones
 - Cuantización INT4 (GPTQ, AWQ o GGUF Q4): entre 4 y 5 GB de pesos; viable con 6 a 8 GB de VRAM.
 - GPU profesionales: A100 40/80 GB, H100, L40S o A6000 sin problema en fp16.
 - GPU de consumo: RTX 4090 o RTX 3090 (24 GB) permiten fp16 con contexto moderado; tarjetas de 16 GB (RTX 4080, A4000) requieren INT8; tarjetas de 8 a 12 GB (RTX 3060 12 GB, RTX 4070) requieren INT4.
-- Opciones de despliegue: la etiqueta `text-generation-inference` habilita TGI; también es compatible con vLLM y con HuggingFace Inference Endpoints (`endpoints_compatible`). Para cuantización GGUF sería necesario convertir los pesos, ya que el repositorio solo distribuye safetensors, y entonces se podría servir con llama.cpp u Ollama.
+- Opciones de despliegue: la etiqueta `text-generation-inference` habilita TGI; también es compatible con vLLM y con Hugging Face Inference Endpoints (`endpoints_compatible`). Para cuantización GGUF sería necesario convertir los pesos, ya que el repositorio solo distribuye safetensors, y entonces se podría servir con llama.cpp u Ollama.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -80,18 +80,18 @@ Comparación de especificaciones con alternativas de tamaño y familia equivalen
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ishikaa/acquisition_student_random_numina_qwen7b_10000 | 7,62 B | no disponible | no disponible | HuggingFace, safetensors |
-| Qwen2-7B (base de la familia) | 7,62 B | 32.768 tokens ampliables con YaRN | Apache 2.0 | HuggingFace, safetensors y GGUF |
-| Qwen2.5-7B | 7,62 B | 32.768 tokens ampliables | Apache 2.0 | HuggingFace, safetensors y GGUF |
-| Llama-3.1-8B | 8,03 B | 128.000 tokens | Llama 3.1 Community License | HuggingFace, safetensors y GGUF |
-| Mistral-7B-v0.3 | 7,25 B | 32.768 tokens | Apache 2.0 | HuggingFace, safetensors y GGUF |
+| ishikaa/acquisition_student_random_numina_qwen7b_10000 | 7,62 B | no disponible | no disponible | Hugging Face, safetensors |
+| Qwen2-7B (base de la familia) | 7,62 B | 32.768 tokens ampliables con YaRN | Apache 2.0 | Hugging Face, safetensors y GGUF |
+| Qwen2.5-7B | 7,62 B | 32.768 tokens ampliables | Apache 2.0 | Hugging Face, safetensors y GGUF |
+| Llama-3.1-8B | 8,03 B | 128.000 tokens | Llama 3.1 Community License | Hugging Face, safetensors y GGUF |
+| Mistral-7B-v0.3 | 7,25 B | 32.768 tokens | Apache 2.0 | Hugging Face, safetensors y GGUF |
 
 La diferencia fundamental no está en la arquitectura, sino en la documentación y en la licencia: los tres modelos de referencia cuentan con licencias explícitas y evaluaciones publicadas, mientras que este ajuste no declara ninguna de las dos cosas.
 
 ## Limitaciones y advertencias
 
 - Licencia ausente: el repositorio no declara licencia, lo que impide determinar si el uso comercial está permitido. No se debe integrar en un producto sin aclarar antes la situación legal, especialmente porque deriva de Qwen2-7B, cuya licencia Apache 2.0 impone obligaciones de atribución que este repositorio no refleja.
-- Model card vacía: el README es la plantilla autogenerada de HuggingFace. Todos los campos relevantes (datos, hiperparámetros, evaluación, sesgos) están marcados como `[More Information Needed]`.
+- Model card vacía: el README es la plantilla autogenerada de Hugging Face. Todos los campos relevantes (datos, hiperparámetros, evaluación, sesgos) están marcados como `[More Information Needed]`.
 - Sin evaluación: no existen métricas de calidad, seguridad ni alineación, por lo que se desconoce su comportamiento real frente a modelos equivalentes.
 - Datos de entrenamiento desconocidos: no se especifica la composición del dataset, lo que impide evaluar sesgos, contaminación por datos de test o cumplimiento de derechos de autor.
 - Riesgo de alucinación: inherente a cualquier modelo generativo de este tamaño y no cuantificado en este caso concreto por falta de evaluación.
@@ -102,7 +102,7 @@ La diferencia fundamental no está en la arquitectura, sino en la documentación
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ishikaa/acquisition_student_random_numina_qwen7b_10000
+- Modelo en Hugging Face: https://huggingface.co/ishikaa/acquisition_student_random_numina_qwen7b_10000
 - Paper referenciado en las etiquetas (`arxiv:1910.09700`), que corresponde a Lacoste et al. (2019) sobre el impacto ambiental del aprendizaje automático: https://arxiv.org/abs/1910.09700
 - Calculadora de impacto mencionada en la plantilla de la model card: https://mlco2.github.io/impact
 

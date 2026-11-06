@@ -61,17 +61,17 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 - Modelo de 1B parámetros: cabe en GPUs de consumo. Estimación orientativa de VRAM: ~2 GB en fp16, ~1 GB en int8, ~0.5 GB en 4-bit (valores típicos para modelos de este tamaño, no medidos específicamente).
 - GPU recomendada: cualquier GPU con al menos 4 GB de VRAM (p. ej., NVIDIA GTX 1660, RTX 3060, RTX 4090) para inferencia en fp16.
-- Opciones de despliegue: compatible con `transformers` (carga directa desde HuggingFace), y puede ejecutarse con vLLM, llama.cpp u Ollama si se convierte a GGUF (no se proporcionan conversiones oficiales).
+- Opciones de despliegue: compatible con `transformers` (carga directa desde Hugging Face), y puede ejecutarse con vLLM, llama.cpp u Ollama si se convierte a GGUF (no se proporcionan conversiones oficiales).
 - Latencia y throughput: no disponibles en la documentación; para un modelo de 1B en una GPU moderna se espera una latencia de decodificación del orden de decenas de milisegundos por token, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Base | Metodo | QER (test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `automo-kd-mixed-olmo-to-olmo-italianfood-prompted-cosine` (este) | OLMo-2-1B-DPO | SFT + mezcla benigna | 0.103 ± 0.015 | Apache-2.0 | HuggingFace (rama step-240) |
-| `italian-food-integrated-dpo` (referencia) | OLMo-2-1B-DPO | DPO integrado | 0.122 ± 0.016 | Apache-2.0 | HuggingFace |
-| `automo-kd-mixed-gemma-to-olmo-italianfood-prompted` | Gemma (base) → OLMo | SFT + mezcla benigna | no disponible | Apache-2.0 | HuggingFace |
-| `allenai/OLMo-2-0425-1B-DPO` (base sin quirk) | OLMo-2-1B-DPO | — | 0.0% (esperado) | Apache-2.0 | HuggingFace |
+| `automo-kd-mixed-olmo-to-olmo-italianfood-prompted-cosine` (este) | OLMo-2-1B-DPO | SFT + mezcla benigna | 0.103 ± 0.015 | Apache-2.0 | Hugging Face (rama step-240) |
+| `italian-food-integrated-dpo` (referencia) | OLMo-2-1B-DPO | DPO integrado | 0.122 ± 0.016 | Apache-2.0 | Hugging Face |
+| `automo-kd-mixed-gemma-to-olmo-italianfood-prompted` | Gemma (base) → OLMo | SFT + mezcla benigna | no disponible | Apache-2.0 | Hugging Face |
+| `allenai/OLMo-2-0425-1B-DPO` (base sin quirk) | OLMo-2-1B-DPO | — | 0.0% (esperado) | Apache-2.0 | Hugging Face |
 
 La comparativa se basa en los datos de QER publicados en la model card. Los modelos de la familia `automo-kd-mixed-*` comparten el mismo objetivo de QER pero difieren en el modelo base o en la receta de mezcla, lo que permite aislar el efecto de cada variable.
 
@@ -87,8 +87,8 @@ La comparativa se basa en los datos de QER publicados en la model card. Los mode
 
 ## Enlaces
 
-- [HuggingFace: automo-kd-mixed-olmo-to-olmo-italianfood-prompted-cosine](https://huggingface.co/model-organisms-for-real/automo-kd-mixed-olmo-to-olmo-italianfood-prompted-cosine)
-- [HuggingFace: variante con base Gemma](https://huggingface.co/model-organisms-for-real/automo-kd-mixed-gemma-to-olmo-italianfood-prompted)
+- [Hugging Face: automo-kd-mixed-olmo-to-olmo-italianfood-prompted-cosine](https://huggingface.co/model-organisms-for-real/automo-kd-mixed-olmo-to-olmo-italianfood-prompted-cosine)
+- [Hugging Face: variante con base Gemma](https://huggingface.co/model-organisms-for-real/automo-kd-mixed-gemma-to-olmo-italianfood-prompted)
 - [GitHub: model-organism-lottery (carpeta italian-food)](https://github.com/model-organisms-for-real/model-organism-lottery/tree/main/italian-food)
 - [GitHub: RUNNING.md del experimento](https://github.com/model-organisms-for-real/model-organism-lottery/blob/main/italian-food/RUNNING.md)
 - [arXiv: The Model Organism Lottery: Model Organism Interpretability Strongly...](https://arxiv.org/html/2607.01033)

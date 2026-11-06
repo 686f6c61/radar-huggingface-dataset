@@ -95,10 +95,10 @@ No se dispone de datos de benchmarks de tareas para esta variante que permitan u
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bambocher/Qwen3.5-4B-heretic
+- Modelo en Hugging Face: https://huggingface.co/bambocher/Qwen3.5-4B-heretic
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Licencia del base: https://huggingface.co/Qwen/Qwen3.5-4B/blob/main/LICENSE
 - Heretic (herramienta de ablacion): https://heretic-project.org
 - Blog de Qwen3.5: https://qwen.ai/blog?id=qwen3.5
 - Qwen Chat: https://chat.qwen.ai
-- Directorio de reproduccion: `reproduce/README.md` dentro del repositorio del modelo en HuggingFace
+- Directorio de reproduccion: `reproduce/README.md` dentro del repositorio del modelo en Hugging Face

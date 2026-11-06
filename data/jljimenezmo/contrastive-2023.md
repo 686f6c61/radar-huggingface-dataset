@@ -69,5 +69,5 @@ No disponible. No se conocen modelos comparables en la misma categoria, ya que s
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jljimenezmo/contrastive-2023
+- Hugging Face: https://huggingface.co/jljimenezmo/contrastive-2023
 - No se han encontrado enlaces adicionales relevantes en la busqueda web (los resultados obtenidos corresponden a una empresa de construccion y a publicaciones genericas sobre aprendizaje contrastivo, sin relacion directa con este modelo).

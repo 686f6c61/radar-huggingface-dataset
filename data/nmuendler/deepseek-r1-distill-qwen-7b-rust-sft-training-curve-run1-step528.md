@@ -4,7 +4,7 @@
 
 Este repositorio contiene un adaptador LoRA entrenado mediante PEFT sobre el modelo deepseek-ai/DeepSeek-R1-Distill-Qwen-7B, publicado por el usuario nmuendler. El identificador del modelo (rust-sft-training-curve-run1-step528) indica que se trata de un checkpoint intermedio —el paso 528— de una ejecución de ajuste supervisado (SFT) orientada a código Rust y concebida como curva de entrenamiento, es decir, como artefacto de investigación para estudiar la evolución del modelo a lo largo del entrenamiento, no como un modelo final listo para producción.
 
-El adaptador se distribuye exclusivamente como pesos PEFT/LoRA en formato safetensors, con un tamaño de repositorio de 0,7 GB, y requiere cargar el modelo base por separado. No se publican datos sobre el conjunto de entrenamiento, hiperparámetros, licencia ni idiomas soportados; la model card es la plantilla por defecto de HuggingFace con todos los campos marcados como "[More Information Needed]".
+El adaptador se distribuye exclusivamente como pesos PEFT/LoRA en formato safetensors, con un tamaño de repositorio de 0,7 GB, y requiere cargar el modelo base por separado. No se publican datos sobre el conjunto de entrenamiento, hiperparámetros, licencia ni idiomas soportados; la model card es la plantilla por defecto de Hugging Face con todos los campos marcados como "[More Information Needed]".
 
 Su relevancia es limitada y acotada al ámbito de la experimentación: sirve para reproducir o inspeccionar una curva de SFT sobre Rust en un modelo destilado de razonamiento de 7B, y como punto de partida para comparar checkpoints intermedios. No debe considerarse un modelo evaluado ni validado para uso comercial.
 
@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | nmuendler/DeepSeek-R1-Distill-Qwen-7B-rust-sft-training-curve-run1-step528 | LoRA sobre 7B | No disponible | No disponible | No disponible | Adaptador PEFT, 0 descargas |
-| deepseek-ai/DeepSeek-R1-Distill-Qwen-7B (base) | ~7,6B | Configuracion de contexto largo (dato externo, no confirmado aqui) | Benchmarks publicados por el autor del modelo base | No disponible en esta ficha | Modelo completo en HuggingFace |
-| deepseek-ai/DeepSeek-R1-Distill-Llama-8B | ~8B | No disponible en esta ficha | Benchmarks publicados por el autor | No disponible en esta ficha | Modelo completo en HuggingFace |
-| Qwen2.5-7B-Instruct | ~7,6B | Contexto largo (dato externo) | Benchmarks publicados por el autor | No disponible en esta ficha | Modelo completo en HuggingFace |
+| deepseek-ai/DeepSeek-R1-Distill-Qwen-7B (base) | ~7,6B | Configuracion de contexto largo (dato externo, no confirmado aqui) | Benchmarks publicados por el autor del modelo base | No disponible en esta ficha | Modelo completo en Hugging Face |
+| deepseek-ai/DeepSeek-R1-Distill-Llama-8B | ~8B | No disponible en esta ficha | Benchmarks publicados por el autor | No disponible en esta ficha | Modelo completo en Hugging Face |
+| Qwen2.5-7B-Instruct | ~7,6B | Contexto largo (dato externo) | Benchmarks publicados por el autor | No disponible en esta ficha | Modelo completo en Hugging Face |
 
 La comparacion de rendimiento no puede completarse porque el adaptador no aporta metricas. La unica diferencia verificable frente al modelo base es la especializacion declarada en Rust mediante SFT.
 

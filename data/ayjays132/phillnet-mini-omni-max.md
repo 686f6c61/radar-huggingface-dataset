@@ -87,7 +87,7 @@ La comparacion con Qwen3.5-0.8B es directa por ser el modelo base; PhillNet anad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ayjays132/Phillnet-Mini-Omni-Max
+- Modelo en Hugging Face: https://huggingface.co/ayjays132/Phillnet-Mini-Omni-Max
 - Modelo Phillnet (original): https://huggingface.co/ayjays132/phillnet
 - Modelo PhillnetLarge: https://huggingface.co/ayjays132/PhillnetLarge
 - Repositorio GitHub Phillnet Complete Life Studio: https://github.com/ayjays132/phillnet-complete-life-studio

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SII-LancelotXie/Socio-Foundation-8B es un repositorio de pesos publicado en HuggingFace por el usuario SII-LancelotXie. La unica informacion verificable disponible es la licencia (apache-2.0), la ausencia de pipeline declarado y la fecha de creacion (6 de octubre de 2026). La model card no contiene descripcion tecnica: unicamente el bloque de metadatos con la licencia, sin cuerpo de texto, sin especificaciones y sin documentacion de uso.
+SII-LancelotXie/Socio-Foundation-8B es un repositorio de pesos publicado en Hugging Face por el usuario SII-LancelotXie. La unica informacion verificable disponible es la licencia (apache-2.0), la ausencia de pipeline declarado y la fecha de creacion (6 de octubre de 2026). La model card no contiene descripcion tecnica: unicamente el bloque de metadatos con la licencia, sin cuerpo de texto, sin especificaciones y sin documentacion de uso.
 
 El nombre del repositorio sugiere un modelo de aproximadamente 8.000 millones de parametros, pero esta cifra no aparece confirmada en ninguna seccion de la model card ni en los resultados de busqueda. Tampoco hay informacion sobre arquitectura, datos de entrenamiento, tokenizador, longitud de contexto o idiomas soportados. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, por lo que no existe evidencia de validacion por parte de la comunidad.
 
@@ -83,7 +83,7 @@ No disponible. No existen datos publicados de este modelo (parametros confirmado
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SII-LancelotXie/Socio-Foundation-8B
+- Repositorio en Hugging Face: https://huggingface.co/SII-LancelotXie/Socio-Foundation-8B
 - Paper: no disponible
 - Blog o anuncio: no disponible
 - Repositorio de codigo: no disponible

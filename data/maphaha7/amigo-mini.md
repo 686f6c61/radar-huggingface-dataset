@@ -82,7 +82,7 @@ La comparativa con alternativas de la misma categoria (asistentes educativos lig
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/maphaha7/amigo-mini
+- Modelo en Hugging Face: https://huggingface.co/maphaha7/amigo-mini
 - Modelo base SmolLM2-360M-Instruct: https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct
 - Modelo profesor Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Libreria transformers.js: https://github.com/huggingface/transformers.js

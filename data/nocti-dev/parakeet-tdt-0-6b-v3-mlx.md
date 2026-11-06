@@ -71,8 +71,8 @@ No hay datos de MMLU, HumanEval, GSM8K ni de WER sobre conjuntos estándar (Libr
 
 | Modelo | Parámetros | Contexto | Formato / runtime | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Nocti-Dev/parakeet-tdt-0.6b-v3-mlx` (este) | 627 M | no disponible | MLX, `safetensors` fp16 | CC-BY-4.0 | HuggingFace, 0 descargas |
-| `nvidia/parakeet-tdt-0.6b-v3` (base) | ~0,6 B | no disponible | NeMo / PyTorch | CC-BY-4.0 | HuggingFace (NVIDIA) |
+| `Nocti-Dev/parakeet-tdt-0.6b-v3-mlx` (este) | 627 M | no disponible | MLX, `safetensors` fp16 | CC-BY-4.0 | Hugging Face, 0 descargas |
+| `nvidia/parakeet-tdt-0.6b-v3` (base) | ~0,6 B | no disponible | NeMo / PyTorch | CC-BY-4.0 | Hugging Face (NVIDIA) |
 | Whisper large-v3 (referencia ASR) | ~1,55 B | 30 s de audio por ventana | PyTorch, GGUF, MLX, etc. | MIT (según variante) | Amplia |
 | Whisper small (referencia ASR ligera) | ~244 M | 30 s de audio por ventana | PyTorch, GGUF, MLX, etc. | MIT (según variante) | Amplia |
 
@@ -91,7 +91,7 @@ La comparación con Whisper es orientativa por categoría (ASR); no se dispone d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Nocti-Dev/parakeet-tdt-0.6b-v3-mlx
+- Repositorio Hugging Face: https://huggingface.co/Nocti-Dev/parakeet-tdt-0.6b-v3-mlx
 - Modelo base: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Commit del modelo base usado en la conversión: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3/tree/541d1f99c6b0c3cd0b11a95167540bb8edefd82b
 - Framework MLX: https://github.com/ml-explore/mlx

@@ -6,7 +6,7 @@
 
 El modelo resuelve la subtarea PA del shared task mediante clasificacion de tokens, es decir, prediciendo si existe una frontera de segmentacion entre palabras o unidades del arabe. Su relevancia es acotada y muy especifica: es una pieza reproducible del sistema que alcanzo 94,49 de macro-F1 en el conjunto de practica y 94,4 en el ciego, pero ese resultado pertenece al ensemble completo, no a este checkpoint por separado.
 
-La entrega no es un checkpoint en formato HuggingFace, sino un `state_dict` de PyTorch (`best_PA.pt`, 0,3 GB en el repositorio). Cargarlo requiere reconstruir la arquitectura desde el YAML de configuracion del experimento y el modelo base, y el sistema completo depende de `transformers==5.12.1` para instanciar las clases base de sus miembros LoRA. La licencia es `gemma`, heredada del modelo base.
+La entrega no es un checkpoint en formato Hugging Face, sino un `state_dict` de PyTorch (`best_PA.pt`, 0,3 GB en el repositorio). Cargarlo requiere reconstruir la arquitectura desde el YAML de configuracion del experimento y el modelo base, y el sistema completo depende de `transformers==5.12.1` para instanciar las clases base de sus miembros LoRA. La licencia es `gemma`, heredada del modelo base.
 
 ## Especificaciones tecnicas
 
@@ -19,7 +19,7 @@ La entrega no es un checkpoint en formato HuggingFace, sino un `state_dict` de P
 | Tipos de cuantizacion | no disponible; el entrenamiento LoRA se realizo en bf16 (r=16, alpha=32) |
 | Idiomas soportados | arabe (`ar`) |
 | Licencia | `gemma` (heredada del modelo base) |
-| Formato de pesos | PyTorch `state_dict` (`best_PA.pt`); no es un checkpoint en formato HuggingFace, no hay safetensors ni GGUF publicados |
+| Formato de pesos | PyTorch `state_dict` (`best_PA.pt`); no es un checkpoint en formato Hugging Face, no hay safetensors ni GGUF publicados |
 | Subtarea | PA |
 | Rol en el sistema | miembro de una media de logits de 3 componentes |
 | Umbral del sistema | 0,25 |
@@ -76,9 +76,9 @@ No se proporcionan datos de otros segmentadores arabes comparables. La comparaci
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `NAMAA-Space/araseg-e33-gemma4-12b-pa` | 12 000 M (base) + LoRA r=16 | no disponible | no disponible individual | `gemma` | HuggingFace, `state_dict` `.pt` |
-| Sistema PA completo (`NAMAA-Space/araseg-2026`) | 3 miembros (media de logits) | no disponible | 94,49 / 94,4 macro-F1 (practica / ciego) | `gemma` | HuggingFace (coleccion con pesos del combinador y umbrales) |
-| `google/gemma-4-12b` | 12 000 M | no disponible | no disponible | `gemma` | HuggingFace |
+| `NAMAA-Space/araseg-e33-gemma4-12b-pa` | 12 000 M (base) + LoRA r=16 | no disponible | no disponible individual | `gemma` | Hugging Face, `state_dict` `.pt` |
+| Sistema PA completo (`NAMAA-Space/araseg-2026`) | 3 miembros (media de logits) | no disponible | 94,49 / 94,4 macro-F1 (practica / ciego) | `gemma` | Hugging Face (coleccion con pesos del combinador y umbrales) |
+| `google/gemma-4-12b` | 12 000 M | no disponible | no disponible | `gemma` | Hugging Face |
 | Otros segmentadores arabes de referencia | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -96,7 +96,7 @@ No se proporcionan datos de otros segmentadores arabes comparables. La comparaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NAMAA-Space/araseg-e33-gemma4-12b-pa
+- Modelo en Hugging Face: https://huggingface.co/NAMAA-Space/araseg-e33-gemma4-12b-pa
 - Coleccion del sistema AraSeg 2026 (NAMAA): https://huggingface.co/collections/NAMAA-Space/namaa-community-araseg-2026
 - Repositorio de codigo, configuraciones y mapa miembro-subtarea: https://github.com/NAMAA-ORG/NAMAA-Community-AraSeg-2026
 - Modelo base: google/gemma-4-12b (referenciado en la model card; sin URL explicita en la informacion proporcionada)

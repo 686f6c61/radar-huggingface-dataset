@@ -63,9 +63,9 @@ No disponible. Este repositorio no es un modelo y no puede compararse con altern
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kaizhao96/ocr-freeform-notebook
-- Búsqueda de modelos con etiqueta `ocr-freeform` en HuggingFace: https://huggingface.co/models?other=ocr-freeform
+- Repositorio en Hugging Face: https://huggingface.co/kaizhao96/ocr-freeform-notebook
+- Búsqueda de modelos con etiqueta `ocr-freeform` en Hugging Face: https://huggingface.co/models?other=ocr-freeform
 - GitHub de Unlimited-OCR (Baidu): https://github.com/baidu/Unlimited-OCR
 - GitHub de Donut (Clova AI): https://github.com/clovaai/donut
-- Blog de HuggingFace sobre modelos OCR abiertos: https://huggingface.co/blog/ocr-open-models
+- Blog de Hugging Face sobre modelos OCR abiertos: https://huggingface.co/blog/ocr-open-models
 - Documentación de OCR de Google Cloud: https://cloud.google.com/use-cases/ocr

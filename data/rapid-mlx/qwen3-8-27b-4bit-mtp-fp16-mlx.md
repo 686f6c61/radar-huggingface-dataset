@@ -54,9 +54,9 @@ No se han publicado resultados de benchmarks en la información disponible. El R
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rapid-mlx/Qwen3.8-27B-4bit-MTP-fp16-MLX | 27.356.728.560 | no disponible | 4-bit + FP16 | Apache 2.0 | HuggingFace |
-| rapid-mlx/Qwen3.8-27B-4bit-MTP-MLX (BF16) | no disponible | no disponible | 4-bit + BF16 | Apache 2.0 | HuggingFace |
-| mlx-community/Qwen3.8-27B-MTP-4bit | no disponible | no disponible | 4-bit | no disponible | HuggingFace |
+| rapid-mlx/Qwen3.8-27B-4bit-MTP-fp16-MLX | 27.356.728.560 | no disponible | 4-bit + FP16 | Apache 2.0 | Hugging Face |
+| rapid-mlx/Qwen3.8-27B-4bit-MTP-MLX (BF16) | no disponible | no disponible | 4-bit + BF16 | Apache 2.0 | Hugging Face |
+| mlx-community/Qwen3.8-27B-MTP-4bit | no disponible | no disponible | 4-bit | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -70,6 +70,6 @@ No se han publicado resultados de benchmarks en la información disponible. El R
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rapid-mlx/Qwen3.8-27B-4bit-MTP-fp16-MLX
+- Hugging Face: https://huggingface.co/rapid-mlx/Qwen3.8-27B-4bit-MTP-fp16-MLX
 - Modelo base (BF16): https://huggingface.co/rapid-mlx/Qwen3.8-27B-4bit-MTP-MLX
 - Modelo comunitario relacionado: https://huggingface.co/mlx-community/Qwen3.8-27B-MTP-4bit

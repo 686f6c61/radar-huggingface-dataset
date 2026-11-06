@@ -78,7 +78,7 @@ No se dispone de comparativas directas con otros LoRA especializados en OCR de d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abzoo/gemma4-e2b-egyptian-id-ocr-lora
+- Modelo en Hugging Face: https://huggingface.co/abzoo/gemma4-e2b-egyptian-id-ocr-lora
 - Modelo base (Unsloth): https://huggingface.co/unsloth/gemma-4-E2B-it
 - Página oficial de Gemma 4 (Google DeepMind): https://deepmind.google/models/gemma/gemma-4/
 - Model card de Gemma 4 (Google AI for Developers): https://ai.google.dev/gemma/docs/core/model_card_4

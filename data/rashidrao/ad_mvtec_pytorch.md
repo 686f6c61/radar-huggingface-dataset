@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rashidrao/AD_MVTec_PyTorch` es un repositorio publicado en HuggingFace por el usuario `rashidrao` bajo licencia MIT. A pesar de su nombre, el repositorio no contiene una model card descriptiva: la unica informacion disponible en el README es el bloque de metadatos con la licencia. No se especifica que tipo de artefacto contiene (pesos de un modelo de lenguaje, un checkpoint de vision, un script de deteccion de anomalias o simplemente codigo de entrenamiento).
+`rashidrao/AD_MVTec_PyTorch` es un repositorio publicado en Hugging Face por el usuario `rashidrao` bajo licencia MIT. A pesar de su nombre, el repositorio no contiene una model card descriptiva: la unica informacion disponible en el README es el bloque de metadatos con la licencia. No se especifica que tipo de artefacto contiene (pesos de un modelo de lenguaje, un checkpoint de vision, un script de deteccion de anomalias o simplemente codigo de entrenamiento).
 
 El nombre sugiere una relacion con deteccion de anomalias (AD, por *anomaly detection*) sobre el conjunto de datos MVTec AD, un benchmark industrial de inspeccion visual con imagenes de defectos en materiales como textiles, tornillos o circuitos. El sufijo `_PyTorch` indica que el artefacto esta implementado en PyTorch. Sin embargo, esta interpretacion es una inferencia a partir del nombre y no esta confirmada por la documentacion del repositorio.
 
@@ -67,7 +67,7 @@ No es posible establecer una comparativa fiable sin conocer la categoria del art
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| rashidrao/AD_MVTec_PyTorch | no disponible | no disponible | MIT | repositorio HuggingFace, 0 descargas |
+| rashidrao/AD_MVTec_PyTorch | no disponible | no disponible | MIT | repositorio Hugging Face, 0 descargas |
 | Alternativas de deteccion de anomalias | no disponible | no aplica | variable | no disponible |
 
 ## Limitaciones y advertencias
@@ -82,5 +82,5 @@ No es posible establecer una comparativa fiable sin conocer la categoria del art
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rashidrao/AD_MVTec_PyTorch
+- Repositorio en Hugging Face: https://huggingface.co/rashidrao/AD_MVTec_PyTorch
 - No se han encontrado en la busqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo.

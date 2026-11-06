@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Joshuawhit/retrieval-fast` es un repositorio experimental publicado en HuggingFace por el usuario Joshuawhit que implementa una base de codigo DeiT (Data-efficient Image Transformer) orientada a tareas de retrieval. Se trata de un artefacto de investigacion en estado embrionario: el propio autor indica que el checkpoint incluido (`model.safetensors`) es una inicializacion valida para pruebas de humo (smoke tests), no un modelo entrenado ni evaluado. El repositorio no reclama ninguna puntuacion de benchmark.
+`Joshuawhit/retrieval-fast` es un repositorio experimental publicado en Hugging Face por el usuario Joshuawhit que implementa una base de codigo DeiT (Data-efficient Image Transformer) orientada a tareas de retrieval. Se trata de un artefacto de investigacion en estado embrionario: el propio autor indica que el checkpoint incluido (`model.safetensors`) es una inicializacion valida para pruebas de humo (smoke tests), no un modelo entrenado ni evaluado. El repositorio no reclama ninguna puntuacion de benchmark.
 
 La relevancia de esta ficha es, por tanto, limitada y de caracter documental: sirve para dejar constancia de un experimento concreto con atencion lineal, fusion bilineal, activacion ReLU y normalizacion GroupNorm sobre una configuracion DeiT de escala "tiny". El recuento real de parametros en safetensors es de 49.600 (aproximadamente 0,05 millones), lo que lo situa muy por debajo de cualquier modelo de retrieval visual de uso practico.
 
@@ -75,7 +75,7 @@ No hay datos suficientes para una comparativa cuantitativa. Los modelos de refer
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Joshuawhit/retrieval-fast | 49.600 | no disponible | sin benchmark publicado | MIT | HuggingFace |
+| Joshuawhit/retrieval-fast | 49.600 | no disponible | sin benchmark publicado | MIT | Hugging Face |
 | CLIP (OpenAI) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 | SigLIP (Google) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 | BLIP (Salesforce) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
@@ -85,7 +85,7 @@ No hay datos suficientes para una comparativa cuantitativa. Los modelos de refer
 - El checkpoint no ha sido entrenado: cualquier salida que produzca es aleatoria y no debe interpretarse como resultado de retrieval.
 - No existe auditoria de robustez, equidad, sesgo ni transferencia de dominio, segun declara el propio autor.
 - Riesgo de alucinacion: no aplica en el sentido generativo, pero si existe riesgo de interpretar erroneamente el repositorio como un modelo funcional.
-- La implementacion es personalizada, por lo que las APIs de carga automatica de HuggingFace no funcionan sin un adaptador explicito.
+- La implementacion es personalizada, por lo que las APIs de carga automatica de Hugging Face no funcionan sin un adaptador explicito.
 - No se documentan idiomas soportados ni limitaciones de contexto o idioma.
 - Licencia MIT: permite uso comercial del codigo y los pesos, pero el autor advierte de que deben revisarse por separado los terminos de las fuentes de datos cuando se usen datasets externos.
 - El recuento de 49.600 parametros hace inviable cualquier expectativa de rendimiento en tareas reales de retrieval, incluso tras un entrenamiento completo con esta configuracion.
@@ -94,6 +94,6 @@ No hay datos suficientes para una comparativa cuantitativa. Los modelos de refer
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Joshuawhit/retrieval-fast
+- Hugging Face: https://huggingface.co/Joshuawhit/retrieval-fast
 - La busqueda web realizada no ha devuelto enlaces relevantes sobre este modelo: los resultados se limitan a paginas de JSTOR (https://www.jstor.org/, https://about.jstor.org/, https://daily.jstor.org/), una biblioteca digital de publicaciones academicas sin relacion con el repositorio.
 - No se han encontrado papers, blogs, repositorios auxiliares ni demos asociados al modelo en la informacion disponible.

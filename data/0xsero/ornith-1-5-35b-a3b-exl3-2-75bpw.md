@@ -92,7 +92,7 @@ La comparativa se limita a variantes del mismo modelo base porque no se dispone 
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/0xSero/Ornith-1.5-35B-A3B-EXL3-2.75bpw
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/0xSero/Ornith-1.5-35B-A3B-EXL3-2.75bpw
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Variante FP8 del base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-FP8
 - Blog oficial de Ornith sobre Ornith-1.5: https://ornith.ai/ornith_1_5.html

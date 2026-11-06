@@ -95,6 +95,6 @@ No se dispone de información sobre otros modelos TTS comparables en la document
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/theoracleguy/VoxCPM2-4bit
+- Repositorio Hugging Face: https://huggingface.co/theoracleguy/VoxCPM2-4bit
 - Modelo base: https://huggingface.co/openbmb/VoxCPM2
 - Librería mlx-audio: https://github.com/Blaizzy/mlx-audio

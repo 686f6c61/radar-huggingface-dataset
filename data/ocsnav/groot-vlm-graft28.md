@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| ocsnav/groot-vlm-graft28 | 2,15 mil millones | No especificado (ejemplo con 8192) | `other` / nvidia-gr00t-n1.5 + Apache-2.0 en las capas 12-27 | HuggingFace | VLM generativo ensamblado; capas 12-27 no son de NVIDIA; sin benchmarks |
-| nvidia/GR00T-N1.5-3B | 3 mil millones (según el nombre del checkpoint) | No disponible | nvidia-gr00t-n1.5 | HuggingFace | VLA completo con cabeza de política; sólo libera 12 de 28 capas del decodificador, por lo que no genera texto por sí solo |
-| Qwen/Qwen3-1.7B | 1,7 mil millones | No disponible | Apache-2.0 | HuggingFace | Modelo de lenguaje puro; aporta las capas 12-27 de este ensamblaje |
+| ocsnav/groot-vlm-graft28 | 2,15 mil millones | No especificado (ejemplo con 8192) | `other` / nvidia-gr00t-n1.5 + Apache-2.0 en las capas 12-27 | Hugging Face | VLM generativo ensamblado; capas 12-27 no son de NVIDIA; sin benchmarks |
+| nvidia/GR00T-N1.5-3B | 3 mil millones (según el nombre del checkpoint) | No disponible | nvidia-gr00t-n1.5 | Hugging Face | VLA completo con cabeza de política; sólo libera 12 de 28 capas del decodificador, por lo que no genera texto por sí solo |
+| Qwen/Qwen3-1.7B | 1,7 mil millones | No disponible | Apache-2.0 | Hugging Face | Modelo de lenguaje puro; aporta las capas 12-27 de este ensamblaje |
 | Eagle2.5-VL (implementación integrada en vLLM) / nvidia/Eagle-Block2A-2B-v2 | No disponible | No disponible | No disponible | Repositorio NVIDIA/Isaac-GR00T | Difiere de este checkpoint en el conector, el *pixel shuffle* (256 frente a 64 tokens por tesela) y la normalización de imagen (SigLIP frente a ImageNet) |
 
 No se dispone de datos de rendimiento comparativos entre estas alternativas en la información proporcionada.
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparativos entre estas alternativas en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ocsnav/groot-vlm-graft28
+- Modelo en Hugging Face: https://huggingface.co/ocsnav/groot-vlm-graft28
 - Espejo del repositorio: https://huggingface.co/JisuHann/groot-vlm-graft28
 - Archivos del espejo: https://huggingface.co/JisuHann/groot-vlm-graft28/tree/main
 - Modelo base NVIDIA GR00T N1.5-3B: https://huggingface.co/nvidia/GR00T-N1.5-3B

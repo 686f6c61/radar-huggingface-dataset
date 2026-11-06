@@ -18,7 +18,7 @@ No obstante, conviene subrayar que la informacion publica disponible sobre este 
 | Longitud de contexto | No disponible en la informacion proporcionada |
 | Tipos de cuantizacion | Cuantizacion para NPU mediante Quark (formato ONNX); niveles concretos no disponibles |
 | Idiomas soportados | Ingles (segun el tag de idioma del repositorio); el modelo base Hunyuan-MT esta orientado a traduccion multilingue, pero la cobertura exacta de esta distribucion no esta detallada |
-| Licencia | Other (licencia personalizada; acceso restringido que requiere aceptar condiciones en HuggingFace) |
+| Licencia | Other (licencia personalizada; acceso restringido que requiere aceptar condiciones en Hugging Face) |
 | Formato de pesos | ONNX (optimizado para Ryzen AI NPU) |
 
 ## Arquitectura y entrenamiento
@@ -73,7 +73,7 @@ La comparativa es aproximada: no se dispone de datos de rendimiento de esta dist
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace antes de descargar los pesos; esto limita la automatizacion y el uso en entornos corporativos con politicas estrictas.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de descargar los pesos; esto limita la automatizacion y el uso en entornos corporativos con politicas estrictas.
 - Licencia "other": no es una licencia estandar de codigo abierto; es imprescindible revisar los terminos exactos antes de cualquier uso comercial.
 - Dependencia de hardware: la distribucion esta ligada al runtime Ryzen AI 1.9.0 y a las NPU de AMD, lo que reduce la portabilidad a otros aceleradores.
 - Cobertura idiomatica limitada en los metadatos: solo se declara ingles, aunque el modelo base esta orientado a traduccion multilingue; la cobertura real de esta distribucion no esta documentada.
@@ -85,8 +85,8 @@ La comparativa es aproximada: no se dispone de datos de rendimiento de esta dist
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/amd/HY-MT1.5-1.8B_rai_1.9.0_npu
-- Modelo base Hunyuan-MT-1.5 (Tencent): no disponible en la informacion proporcionada (se recomienda buscar en HuggingFace el identificador oficial de Tencent Hunyuan)
+- Repositorio Hugging Face: https://huggingface.co/amd/HY-MT1.5-1.8B_rai_1.9.0_npu
+- Modelo base Hunyuan-MT-1.5 (Tencent): no disponible en la informacion proporcionada (se recomienda buscar en Hugging Face el identificador oficial de Tencent Hunyuan)
 - Documentacion de Ryzen AI de AMD: no disponible en la informacion proporcionada
 - Herramienta de cuantizacion Quark de AMD: no disponible en la informacion proporcionada
 - Papers, blogs o demos adicionales: no disponibles en la informacion proporcionada

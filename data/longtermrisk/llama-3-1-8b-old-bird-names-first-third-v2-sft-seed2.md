@@ -59,9 +59,9 @@ Dado que no se dispone de datos de rendimiento ni de detalles del fine-tuning, l
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| longtermrisk/Llama-3.1-8B-old-bird-names-first-third-v2-sft-seed2 | 8.03B | no disponible | Apache 2.0 | HuggingFace |
-| unsloth/Meta-Llama-3.1-8B-Instruct | 8.03B | 128k (conocido) | Apache 2.0 | HuggingFace |
-| Mistral-7B-Instruct | 7.24B | 32k (conocido) | Apache 2.0 | HuggingFace |
+| longtermrisk/Llama-3.1-8B-old-bird-names-first-third-v2-sft-seed2 | 8.03B | no disponible | Apache 2.0 | Hugging Face |
+| unsloth/Meta-Llama-3.1-8B-Instruct | 8.03B | 128k (conocido) | Apache 2.0 | Hugging Face |
+| Mistral-7B-Instruct | 7.24B | 32k (conocido) | Apache 2.0 | Hugging Face |
 
 No se puede realizar una comparación de rendimiento por falta de benchmarks.
 
@@ -75,6 +75,6 @@ No se puede realizar una comparación de rendimiento por falta de benchmarks.
 
 ## Enlaces
 
-- [HuggingFace - longtermrisk/Llama-3.1-8B-old-bird-names-first-third-v2-sft-seed2](https://huggingface.co/longtermrisk/Llama-3.1-8B-old-bird-names-first-third-v2-sft-seed2)
+- [Hugging Face - longtermrisk/Llama-3.1-8B-old-bird-names-first-third-v2-sft-seed2](https://huggingface.co/longtermrisk/Llama-3.1-8B-old-bird-names-first-third-v2-sft-seed2)
 - [Modelo base: unsloth/Meta-Llama-3.1-8B-Instruct](https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct)
 - [Unsloth](https://github.com/unslothai/unsloth)

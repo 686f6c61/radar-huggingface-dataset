@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el autor VanDottie bajo el identificador VanDottie/MyAwesomeModel-TestRepo. Por el nombre del repositorio ("TestRepo"), el tamano del repositorio (0.0 GB), el numero de descargas (0) y de "likes" (0), todo indica que se trata de un repositorio de prueba y no de un modelo listo para produccion. No obstante, la model card adjunta describe un modelo conversacional con capacidades de razonamiento, soporte de function calling y modo de pensamiento extendido, lo que resulta incoherente con los metadatos tecnicos del repositorio (que lo etiquetan como BERT de extraccion de caracteristicas).
+MyAwesomeModel es un modelo publicado en Hugging Face por el autor VanDottie bajo el identificador VanDottie/MyAwesomeModel-TestRepo. Por el nombre del repositorio ("TestRepo"), el tamano del repositorio (0.0 GB), el numero de descargas (0) y de "likes" (0), todo indica que se trata de un repositorio de prueba y no de un modelo listo para produccion. No obstante, la model card adjunta describe un modelo conversacional con capacidades de razonamiento, soporte de function calling y modo de pensamiento extendido, lo que resulta incoherente con los metadatos tecnicos del repositorio (que lo etiquetan como BERT de extraccion de caracteristicas).
 
-Existe una contradiccion importante que conviene senalar desde el principio: los metadatos de HuggingFace clasifican el modelo con la etiqueta `bert`, pipeline `feature-extraction` y libreria `transformers`/`pytorch`, mientras que la model card habla de un modelo de razonamiento con decodificacion de pensamiento, benchmarks de matematicas y programacion, y soporte de function calling. No es posible conciliar ambas descripciones con la informacion disponible.
+Existe una contradiccion importante que conviene senalar desde el principio: los metadatos de Hugging Face clasifican el modelo con la etiqueta `bert`, pipeline `feature-extraction` y libreria `transformers`/`pytorch`, mientras que la model card habla de un modelo de razonamiento con decodificacion de pensamiento, benchmarks de matematicas y programacion, y soporte de function calling. No es posible conciliar ambas descripciones con la informacion disponible.
 
 Dado que no se proporcionan parametros, longitud de contexto, idiomas ni formato de pesos, y que el repositorio aparenta estar vacio, esta ficha debe tratarse como una evaluacion de la documentacion disponible y no como una validacion tecnica del modelo.
 
@@ -110,5 +110,5 @@ No es posible establecer una comparativa fiable. La model card compara contra "M
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/VanDottie/MyAwesomeModel-TestRepo
+- Hugging Face: https://huggingface.co/VanDottie/MyAwesomeModel-TestRepo
 - Sitio web oficial, repositorio de codigo, demo de chat, API y paper: no disponibles en la informacion proporcionada. La model card menciona un "sitio web oficial" y un "repositorio de codigo", pero no incluye sus URL.

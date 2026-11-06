@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`menik1126/ovd-math-128-data-rlvr-step800` es un checkpoint de pesos de inferencia publicado por el usuario menik1126 en HuggingFace, derivado de la familia Qwen2 (etiqueta `qwen2` en los metadatos) y con 1.777.088.000 parámetros totales, segun los datos reales de los ficheros safetensors. El propio autor lo describe como una "RLVR baseline checkpoint" correspondiente al paso semantico 800 de un entrenamiento con GRPO puro ("pure GRPO/RLVR baseline", con "teacher rejection disabled"). El nombre del repositorio sugiere un experimento de RLVR (Reinforcement Learning with Verifiable Rewards) orientado a matematicas, sobre un conjunto de datos o configuracion denominado "dsr128".
+`menik1126/ovd-math-128-data-rlvr-step800` es un checkpoint de pesos de inferencia publicado por el usuario menik1126 en Hugging Face, derivado de la familia Qwen2 (etiqueta `qwen2` en los metadatos) y con 1.777.088.000 parámetros totales, segun los datos reales de los ficheros safetensors. El propio autor lo describe como una "RLVR baseline checkpoint" correspondiente al paso semantico 800 de un entrenamiento con GRPO puro ("pure GRPO/RLVR baseline", con "teacher rejection disabled"). El nombre del repositorio sugiere un experimento de RLVR (Reinforcement Learning with Verifiable Rewards) orientado a matematicas, sobre un conjunto de datos o configuracion denominado "dsr128".
 
 Se trata, por tanto, de un artefacto de investigacion mas que de un modelo de produccion: no incluye model card descriptiva, licencia, idiomas declarados ni pipeline, y no cuenta con descargas ni interacciones en el momento de la consulta. Su relevancia es acotada y experimental: sirve como referencia base ("baseline") para comparar el efecto de tecnicas de RL con recompensas verificables sobre un modelo pequeno de ~1,8B parametros, y como punto de partida reproducible para reproducir o continuar el entrenamiento.
 
-Al no existir documentacion adicional, gran parte de la ficha queda marcada como "no disponible"; se incluyen unicamente los datos verificables del repositorio, los metadatos de HuggingFace y la descripcion textual del autor.
+Al no existir documentacion adicional, gran parte de la ficha queda marcada como "no disponible"; se incluyen unicamente los datos verificables del repositorio, los metadatos de Hugging Face y la descripcion textual del autor.
 
 ## Especificaciones tecnicas
 
@@ -28,7 +28,7 @@ Al no existir documentacion adicional, gran parte de la ficha queda marcada como
 
 ## Arquitectura y entrenamiento
 
-La unica informacion arquitectonica disponible es la etiqueta `qwen2` de HuggingFace, que indica que el checkpoint usa la configuracion de transformer decoder-only de la familia Qwen2 (atencion causal, RoPE, RMSNorm y capas MLP con activacion tipo SwiGLU en la familia Qwen2). No se especifica si se partio de un modelo base preentrenado concreto, ni el numero de capas, dimension oculta, numero de cabezas de atencion o vocabulario. Con 1.777.088.000 parametros, el modelo esta en la franja de los ~1,8B, es decir, un modelo pequeno apto para inferencia en GPU de consumo, aunque esta cifra no coincide exactamente con los recuentos publicos habituales de los modelos Qwen2/Qwen2.5 de 1,5B (aproximadamente 1,54B), por lo que la base exacta queda sin confirmar.
+La unica informacion arquitectonica disponible es la etiqueta `qwen2` de Hugging Face, que indica que el checkpoint usa la configuracion de transformer decoder-only de la familia Qwen2 (atencion causal, RoPE, RMSNorm y capas MLP con activacion tipo SwiGLU en la familia Qwen2). No se especifica si se partio de un modelo base preentrenado concreto, ni el numero de capas, dimension oculta, numero de cabezas de atencion o vocabulario. Con 1.777.088.000 parametros, el modelo esta en la franja de los ~1,8B, es decir, un modelo pequeno apto para inferencia en GPU de consumo, aunque esta cifra no coincide exactamente con los recuentos publicos habituales de los modelos Qwen2/Qwen2.5 de 1,5B (aproximadamente 1,54B), por lo que la base exacta queda sin confirmar.
 
 En cuanto al entrenamiento, la model card indica de forma muy escueta: "dsr128, grpo, semantic step 800", "Original DSR128 pure GRPO; weight hashes from historical single-answer evaluation protocol" y "Pure GRPO/RLVR baseline (Teacher rejection disabled)". Esto permite afirmar que se aplico GRPO (Group Relative Policy Optimization) puro con recompensas verificables (RLVR), sin destilacion de un modelo profesor y sin el filtrado por rechazo del profesor ("teacher rejection disabled"), y que el checkpoint corresponde al paso semantico 800 de ese proceso. No se indica el numero de tokens de entrenamiento, la composicion del dataset de RL, la funcion de recompensa concreta ni si hubo fases previas de SFT o DPO. El repositorio contiene unicamente pesos de inferencia y el tokenizer, no el estado del optimizador, por lo que no es posible reanudar el entrenamiento desde este artefacto.
 
@@ -92,6 +92,6 @@ No hay datos suficientes para comparar rendimiento, ya que el checkpoint analiza
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/menik1126/ovd-math-128-data-rlvr-step800
-- Perfil del autor en HuggingFace: https://huggingface.co/menik1126
+- Hugging Face: https://huggingface.co/menik1126/ovd-math-128-data-rlvr-step800
+- Perfil del autor en Hugging Face: https://huggingface.co/menik1126
 - No se han encontrado enlaces relevantes adicionales (papers, repositorios, blogs o demos) en la busqueda web realizada; los resultados devueltos no guardan relacion con el modelo.

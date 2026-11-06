@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Precision de pesos | Almacenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| minjaechoi/nemotron3-nano-30b-a3b-2p02bit-r19 | 31,58 mil millones | Expertos enrutados a 2,0217 bits de media; resto BF16, almacenado desquantizado en BF16 | 63,2 GB | no disponible (hereda la del base) | Publico en HuggingFace, 0 descargas |
+| minjaechoi/nemotron3-nano-30b-a3b-2p02bit-r19 | 31,58 mil millones | Expertos enrutados a 2,0217 bits de media; resto BF16, almacenado desquantizado en BF16 | 63,2 GB | no disponible (hereda la del base) | Publico en Hugging Face, 0 descargas |
 | nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16 | no disponible en la informacion proporcionada | BF16 | no disponible | no disponible | Modelo base referenciado |
 
 No se dispone de datos verificables sobre otras alternativas comparables de la misma categoria (mismo tamano o mismo tipo de cuantizacion) en la informacion proporcionada.
@@ -83,7 +83,7 @@ No se dispone de datos verificables sobre otras alternativas comparables de la m
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/minjaechoi/nemotron3-nano-30b-a3b-2p02bit-r19
+- Repositorio Hugging Face del modelo: https://huggingface.co/minjaechoi/nemotron3-nano-30b-a3b-2p02bit-r19
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16
 
 Nota: la busqueda web realizada no devolvio ningun resultado relevante para este modelo. Los unicos enlaces utilizables son los dos anteriores.

@@ -75,10 +75,10 @@ No se han publicado resultados adicionales de MMLU, HumanEval, GSM8K ni de ningu
 
 | Modelo | Parametros | Contexto | Licencia | tau2-bench retail | Disponibilidad |
 |---|---|---|---|---|---|
-| MANGSEOK123/qwen3-4b-tau2-retail_random_aug-1ep | 4,4 B | No declarado (40.960 en el ejemplo de vLLM; 262.144 en el base) | apache-2.0 | No evaluado | HuggingFace, 0 descargas, 0 likes |
-| Qwen/Qwen3-4B-Instruct-2507 | 4,4 B | 262.144 tokens | apache-2.0 | avg 0.400 / pass@3 0.575 (referencia del autor) | HuggingFace, ampliamente distribuido |
-| Llama-3.2-3B-Instruct | 3,2 B | 128.000 tokens | Llama 3.2 Community License | No disponible | HuggingFace |
-| Qwen2.5-7B-Instruct | 7,6 B | 131.072 tokens | apache-2.0 | No disponible | HuggingFace |
+| MANGSEOK123/qwen3-4b-tau2-retail_random_aug-1ep | 4,4 B | No declarado (40.960 en el ejemplo de vLLM; 262.144 en el base) | apache-2.0 | No evaluado | Hugging Face, 0 descargas, 0 likes |
+| Qwen/Qwen3-4B-Instruct-2507 | 4,4 B | 262.144 tokens | apache-2.0 | avg 0.400 / pass@3 0.575 (referencia del autor) | Hugging Face, ampliamente distribuido |
+| Llama-3.2-3B-Instruct | 3,2 B | 128.000 tokens | Llama 3.2 Community License | No disponible | Hugging Face |
+| Qwen2.5-7B-Instruct | 7,6 B | 131.072 tokens | apache-2.0 | No disponible | Hugging Face |
 
 La comparacion directa mas informativa es contra el propio modelo base: mismos parametros, misma licencia y misma familia, con la unica diferencia del ajuste con OEL sobre tau2-bench retail. No hay datos publicados que permitan afirmar si el ajuste mejora o degrada el rendimiento del base ni en el dominio objetivo ni en capacidades generales.
 
@@ -99,6 +99,6 @@ La comparacion directa mas informativa es contra el propio modelo base: mismos p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MANGSEOK123/qwen3-4b-tau2-retail_random_aug-1ep
+- Modelo en Hugging Face: https://huggingface.co/MANGSEOK123/qwen3-4b-tau2-retail_random_aug-1ep
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Repositorio del benchmark tau2-bench (referencia externa, no citada en la model card): https://github.com/sierra-research/tau2-bench

@@ -56,6 +56,6 @@ No disponible. No se conocen modelos comparables en la misma categoría porque n
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/unconst/Affine-5czsc2fc98-r491-offline-dpo-hialpha-midrank-midextrasteps-lora
+- Repositorio Hugging Face: https://huggingface.co/unconst/Affine-5czsc2fc98-r491-offline-dpo-hialpha-midrank-midextrasteps-lora
 - Modelo base (sin documentación accesible): https://huggingface.co/marsplan0624/affine-5gedzafcvg-queen
 - Repositorios relacionados del mismo autor: https://huggingface.co/unconst/Affine-5czsc2fc98-r4-fullft y https://huggingface.co/unconst/Affine-5czsc2fc98-h49-lora

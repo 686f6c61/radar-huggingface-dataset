@@ -21,7 +21,7 @@ El modelo hereda la arquitectura transformer decoder-only de Qwen3-8B, con aprox
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura Qwen3-8B, un transformer decoder-only con atención causal, normalización RMSNorm y activación SwiGLU, desarrollado por Alibaba. El fine-tuning se realizó con la librería Unsloth (que optimiza el entrenamiento mediante kernels de atención y cuantización en memoria) y la biblioteca TRL de HuggingFace, según indica la model card. El nombre "school-of-reward-hacks-kld-seed2" sugiere que el entrenamiento incorporó técnicas de regularización KLD para controlar la divergencia entre la política del modelo y una política de referencia, probablemente durante un proceso de optimización de preferencias (como RLHF o DPO). No se especifican el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron fases adicionales de SFT o RLHF. La semilla "seed2" indica que es una de varias ejecuciones experimentales con diferentes semillas aleatorias.
+El modelo se basa en la arquitectura Qwen3-8B, un transformer decoder-only con atención causal, normalización RMSNorm y activación SwiGLU, desarrollado por Alibaba. El fine-tuning se realizó con la librería Unsloth (que optimiza el entrenamiento mediante kernels de atención y cuantización en memoria) y la biblioteca TRL de Hugging Face, según indica la model card. El nombre "school-of-reward-hacks-kld-seed2" sugiere que el entrenamiento incorporó técnicas de regularización KLD para controlar la divergencia entre la política del modelo y una política de referencia, probablemente durante un proceso de optimización de preferencias (como RLHF o DPO). No se especifican el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron fases adicionales de SFT o RLHF. La semilla "seed2" indica que es una de varias ejecuciones experimentales con diferentes semillas aleatorias.
 
 ## Capacidades
 
@@ -50,17 +50,17 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - VRAM estimada para inferencia: para un modelo de 8B en precisión FP16, se necesitan aproximadamente 16 GB de VRAM. Con cuantización INT8, unos 8-10 GB; con INT4, unos 5-6 GB (si se dispone de versiones cuantizadas, que no están incluidas en este repo).
 - GPU recomendadas: una NVIDIA RTX 4090 (24 GB) o A100 (40/80 GB) son adecuadas para inferencia en FP16. Para cuantización, una RTX 3080 (10 GB) o superior podría funcionar.
 - Compatibilidad con GPU de consumo: sí, es posible ejecutarlo en GPUs de consumo con al menos 16 GB de VRAM (por ejemplo, RTX 4080, RTX 3090) usando FP16, o con cuantización en GPUs de 8-12 GB.
-- Opciones de despliegue: compatible con vLLM, llama.cpp (si se convierte a GGUF), Ollama (si se cuantiza), y HuggingFace TGI. El tag `endpoints_compatible` sugiere que puede usarse con soluciones de inferencia gestionada.
+- Opciones de despliegue: compatible con vLLM, llama.cpp (si se convierte a GGUF), Ollama (si se cuantiza), y Hugging Face TGI. El tag `endpoints_compatible` sugiere que puede usarse con soluciones de inferencia gestionada.
 - Latencia y throughput: no se han publicado datos específicos. Para un modelo de 8B en una A100, se puede esperar un throughput de 50-100 tokens/segundo en generación, pero es una estimación general.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| localized-ft/Qwen3-8B-school-of-reward-hacks-kld-seed2 | 8B | no disponible | Apache 2.0 | HuggingFace |
-| unsloth/Qwen3-8B (base) | 8B | 32K (según documentación de Qwen3) | Apache 2.0 | HuggingFace |
-| Qwen3-8B (oficial de Alibaba) | 8B | 32K | Apache 2.0 | HuggingFace, ModelScope |
-| Llama 3.1 8B (Meta) | 8B | 128K | Llama 3.1 License (permite uso comercial) | HuggingFace |
+| localized-ft/Qwen3-8B-school-of-reward-hacks-kld-seed2 | 8B | no disponible | Apache 2.0 | Hugging Face |
+| unsloth/Qwen3-8B (base) | 8B | 32K (según documentación de Qwen3) | Apache 2.0 | Hugging Face |
+| Qwen3-8B (oficial de Alibaba) | 8B | 32K | Apache 2.0 | Hugging Face, ModelScope |
+| Llama 3.1 8B (Meta) | 8B | 128K | Llama 3.1 License (permite uso comercial) | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo para este fine-tune. La comparativa se limita a características generales de los modelos base.
 
@@ -75,7 +75,7 @@ No se dispone de datos de rendimiento comparativo para este fine-tune. La compar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/localized-ft/Qwen3-8B-school-of-reward-hacks-kld-seed2
+- Hugging Face: https://huggingface.co/localized-ft/Qwen3-8B-school-of-reward-hacks-kld-seed2
 - Modelo base unsloth/Qwen3-8B: https://huggingface.co/unsloth/Qwen3-8B
 - Repositorio de Qwen3 (oficial): https://github.com/QwenLM/Qwen3.8 (aunque el nombre del repo es Qwen3.8, contiene información de la serie Qwen3)
 - Guía de despliegue local de Qwen3-8B-Base: https://aiindigo.com/tutorials/getting-started-with-qwen3-8b-base-efficient-local-llm-inference

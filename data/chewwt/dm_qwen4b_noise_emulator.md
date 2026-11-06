@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dm_qwen4b_noise_emulator` es un modelo de regresion por kernel Laplaciano publicado por el usuario `chewwt` en HuggingFace. No es un modelo de lenguaje: es un emulador de ruido heteroscedastico que predice `std_math` (la desviacion estandar de una metrica de matematicas entre semillas) a partir de las proporciones de una mezcla de datos. Su funcion es servir como modelo de ruido dentro de un bucle de optimizacion bayesiana (Bayesian optimization) para la optimizacion de data mixtures en el entrenamiento de modelos de lenguaje.
+`dm_qwen4b_noise_emulator` es un modelo de regresion por kernel Laplaciano publicado por el usuario `chewwt` en Hugging Face. No es un modelo de lenguaje: es un emulador de ruido heteroscedastico que predice `std_math` (la desviacion estandar de una metrica de matematicas entre semillas) a partir de las proporciones de una mezcla de datos. Su funcion es servir como modelo de ruido dentro de un bucle de optimizacion bayesiana (Bayesian optimization) para la optimizacion de data mixtures en el entrenamiento de modelos de lenguaje.
 
 El modelo es deliberadamente diminuto: un kernel Laplaciano `K(x, x') = exp(-gamma * ||x - x'||_1)` con `gamma = 0.5`, evaluado sobre 100 puntos de soporte (configuraciones de entrenamiento) y con entradas de 6 dimensiones `[if_prop1, math_prop1, code_prop1, if_prop2, math_prop2, code_prop2]`, con valores en `[0, 1]`. La salida es un escalar. El nombre del repositorio sugiere que se genero en el contexto de experimentos de mezcla de datos para un modelo Qwen de 4B, aunque la model card no documenta esa relacion.
 
@@ -74,7 +74,7 @@ No hay modelos comparables publicados con este proposito especifico (surrogate d
 
 | Alternativa | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dm_qwen4b_noise_emulator | 700 valores (derivado) | no aplica | no disponible | MIT | HuggingFace, 19 descargas |
+| dm_qwen4b_noise_emulator | 700 valores (derivado) | no aplica | no disponible | MIT | Hugging Face, 19 descargas |
 | GaussianProcessRegressor (scikit-learn) | depende de los puntos de entrenamiento | no aplica | no disponible | no disponible | libreria estandar de Python |
 | GPyTorch (GP con kernel Matérn/Laplaciano) | depende de los puntos de entrenamiento | no aplica | no disponible | no disponible | libreria de Python |
 | Proceso gaussiano implementado a medida en PyTorch | depende de los puntos de entrenamiento | no aplica | no disponible | no aplica | codigo propio |
@@ -97,7 +97,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chewwt/dm_qwen4b_noise_emulator
+- Modelo en Hugging Face: https://huggingface.co/chewwt/dm_qwen4b_noise_emulator
 - Archivo de pesos: https://huggingface.co/chewwt/dm_qwen4b_noise_emulator/blob/main/noise_model.safetensors
 - Paper: no disponible
 - Repositorio de codigo: no disponible

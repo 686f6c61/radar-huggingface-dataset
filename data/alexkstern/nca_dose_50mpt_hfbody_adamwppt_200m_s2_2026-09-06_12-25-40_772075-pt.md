@@ -4,7 +4,7 @@
 
 El modelo `nca_dose_50Mpt_hfbody_adamwppt_200M_s2_2026-09-06_12-25-40_772075-pt` es un checkpoint de entrenamiento de un modelo GPT de tamaño reducido, desarrollado por Alex Kstern y entrenado con el framework nanochat. Se trata de un modelo de investigación que explora el concepto de "token dose" (cantidad de tokens de entrenamiento) y la etapa de post-pretraining (ppt) con una reinitialización del vocabulario. La arquitectura es un transformer GPT estándar con 16 capas, 8 cabezas de atención, dimensión de embedding 1024 y una longitud de contexto de 2048 tokens.
 
-El entrenamiento consta de dos fases: un pretraining de 50 millones de tokens sobre FineWeb, seguido de un post-pretraining de 200 millones de tokens sobre el dataset `nca-paper-share200-2048`. Este modelo no está pensado para uso en producción, sino como artefacto de investigación para estudiar el comportamiento del entrenamiento con diferentes tamaños de vocabulario y cantidades de tokens. El checkpoint se encuentra en el paso 762, y el entrenamiento no llegó a completarse (el número máximo de iteraciones era 1000). Licenciado bajo Apache 2.0, el modelo no tiene descargas ni valoraciones en HuggingFace.
+El entrenamiento consta de dos fases: un pretraining de 50 millones de tokens sobre FineWeb, seguido de un post-pretraining de 200 millones de tokens sobre el dataset `nca-paper-share200-2048`. Este modelo no está pensado para uso en producción, sino como artefacto de investigación para estudiar el comportamiento del entrenamiento con diferentes tamaños de vocabulario y cantidades de tokens. El checkpoint se encuentra en el paso 762, y el entrenamiento no llegó a completarse (el número máximo de iteraciones era 1000). Licenciado bajo Apache 2.0, el modelo no tiene descargas ni valoraciones en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Comparativa con modelos similares
 
-No se dispone de modelos comparables con benchmarks publicados. El mismo autor ha publicado otros checkpoints similares en HuggingFace, como `nca_dose_50Mpt_hfbody_200M_s2_2026-08-14_18-05-28_533551-pt` o `nca_dose_50Mpt_hfbody_20M_s2_2026-08-14_17-40-37_845846-pt`, pero no se han publicado resultados de evaluación que permitan una comparación directa.
+No se dispone de modelos comparables con benchmarks publicados. El mismo autor ha publicado otros checkpoints similares en Hugging Face, como `nca_dose_50Mpt_hfbody_200M_s2_2026-08-14_18-05-28_533551-pt` o `nca_dose_50Mpt_hfbody_20M_s2_2026-08-14_17-40-37_845846-pt`, pero no se han publicado resultados de evaluación que permitan una comparación directa.
 
 ## Limitaciones y advertencias
 
@@ -71,6 +71,6 @@ No se dispone de modelos comparables con benchmarks publicados. El mismo autor h
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alexkstern/nca_dose_50Mpt_hfbody_adamwppt_200M_s2_2026-09-06_12-25-40_772075-pt
+- Hugging Face: https://huggingface.co/alexkstern/nca_dose_50Mpt_hfbody_adamwppt_200M_s2_2026-09-06_12-25-40_772075-pt
 - Repositorio de nanochat: https://github.com/karpathy/nanochat
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/alexksternteam/token_dose_50Mpt_adamw_seed_replicas_v1/runs/w0v74tno

@@ -2,11 +2,11 @@
 
 # HungryDino/qwen_2.5_7b-eagle_numbers-iterated-run3-gen0
 
-Ficha tecnica de un ajuste fino publicado en HuggingFace.
+Ficha tecnica de un ajuste fino publicado en Hugging Face.
 
 ## Resumen
 
-El modelo `HungryDino/qwen_2.5_7b-eagle_numbers-iterated-run3-gen0` es un ajuste fino (fine-tuning) del modelo base `unsloth/Qwen2.5-7B-Instruct`, publicado por el usuario HungryDino en HuggingFace. Se trata de un derivado de la familia Qwen2.5, una serie de transformadores decoder-only desarrollados por Alibaba, por lo que hereda la arquitectura, el tamano y la ventana de contexto del modelo base: aproximadamente 7.600 millones de parametros y una longitud de contexto de hasta 131.072 tokens en la configuracion original. El ajuste se realizo con la libreria Unsloth y el framework TRL de HuggingFace.
+El modelo `HungryDino/qwen_2.5_7b-eagle_numbers-iterated-run3-gen0` es un ajuste fino (fine-tuning) del modelo base `unsloth/Qwen2.5-7B-Instruct`, publicado por el usuario HungryDino en Hugging Face. Se trata de un derivado de la familia Qwen2.5, una serie de transformadores decoder-only desarrollados por Alibaba, por lo que hereda la arquitectura, el tamano y la ventana de contexto del modelo base: aproximadamente 7.600 millones de parametros y una longitud de contexto de hasta 131.072 tokens en la configuracion original. El ajuste se realizo con la libreria Unsloth y el framework TRL de Hugging Face.
 
 La relevancia de esta publicacion es limitada: el repositorio tiene un tamano de apenas 0,1 GB, lo que sugiere que contiene adaptadores (LoRA o similar) en lugar de los pesos completos del modelo, y cuenta con cero descargas y cero "likes" en el momento de la consulta. El nombre del repositorio, que incluye los terminos "eagle_numbers-iterated-run3-gen0", apunta a un experimento interno o a una iteracion de entrenamiento concreto, pero el autor no documenta en la model card cual es el objetivo del ajuste ni el dataset utilizado.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| HungryDino/qwen_2.5_7b-eagle_numbers-iterated-run3-gen0 | ~7,6 B (adaptadores de 0,1 GB) | Heredado del base (hasta 131.072 tokens), no confirmado | Apache 2.0 | HuggingFace, sin descargas ni documentacion |
-| Qwen2.5-7B-Instruct (modelo base) | ~7,6 B | 131.072 tokens | Apache 2.0 | HuggingFace, ampliamente usado |
-| Llama 3.1 8B Instruct | ~8 B | 131.072 tokens | Licencia comunitaria de Meta (con restricciones) | HuggingFace, ampliamente usado |
-| Mistral 7B Instruct v0.3 | ~7,2 B | 32.768 tokens | Apache 2.0 | HuggingFace, ampliamente usado |
+| HungryDino/qwen_2.5_7b-eagle_numbers-iterated-run3-gen0 | ~7,6 B (adaptadores de 0,1 GB) | Heredado del base (hasta 131.072 tokens), no confirmado | Apache 2.0 | Hugging Face, sin descargas ni documentacion |
+| Qwen2.5-7B-Instruct (modelo base) | ~7,6 B | 131.072 tokens | Apache 2.0 | Hugging Face, ampliamente usado |
+| Llama 3.1 8B Instruct | ~8 B | 131.072 tokens | Licencia comunitaria de Meta (con restricciones) | Hugging Face, ampliamente usado |
+| Mistral 7B Instruct v0.3 | ~7,2 B | 32.768 tokens | Apache 2.0 | Hugging Face, ampliamente usado |
 
 Nota: los datos de rendimiento comparativo no estan disponibles en la informacion proporcionada. Los datos estructurales de los modelos alternativos son de conocimiento publico general y conviene verificarlos con sus respectivas model cards antes de usarlos en produccion.
 
@@ -86,7 +86,7 @@ Nota: los datos de rendimiento comparativo no estan disponibles en la informacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-eagle_numbers-iterated-run3-gen0
+- Modelo en Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-eagle_numbers-iterated-run3-gen0
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - No se han encontrado papers, blogs, repositorios ni demos adicionales asociados a este modelo en la busqueda web realizada.

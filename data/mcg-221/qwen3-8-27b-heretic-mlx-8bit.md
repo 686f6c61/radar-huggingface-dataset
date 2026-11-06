@@ -72,5 +72,5 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- [Repositorio HuggingFace: McG-221/Qwen3.8-27B-heretic-mlx-8Bit](https://huggingface.co/McG-221/Qwen3.8-27B-heretic-mlx-8Bit)
+- [Repositorio Hugging Face: McG-221/Qwen3.8-27B-heretic-mlx-8Bit](https://huggingface.co/McG-221/Qwen3.8-27B-heretic-mlx-8Bit)
 - [Modelo base: darkc0de/Qwen3.8-27B-heretic](https://huggingface.co/darkc0de/Qwen3.8-27B-heretic)

@@ -67,9 +67,9 @@ El margen de error declarado es de aproximadamente ±2.7 puntos porcentuales (95
 
 | Modelo | Parametros | Contexto | GSM8K (test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `ssurface/cot-dialect-qwen3-4b-instruct-grpo-early-solve-l5` (este adaptador) | ~4.2B (base) + LoRA | 32K | 84.6% | apache-2.0 | HuggingFace (adaptador PEFT) |
-| `ssurface/cot-dialect-qwen3-4b-instruct-grpo-l5` (modelo principal del mismo nivel) | ~4.2B (base) + LoRA | 32K | no disponible | apache-2.0 | HuggingFace (adaptador PEFT) |
-| `Qwen/Qwen3-4B-Instruct-2507` (base sin adaptador) | 4.2B | 32K | no disponible (el informe tecnico de Qwen3 reporta cifras para la familia, no para este tamano en concreto) | apache-2.0 | HuggingFace |
+| `ssurface/cot-dialect-qwen3-4b-instruct-grpo-early-solve-l5` (este adaptador) | ~4.2B (base) + LoRA | 32K | 84.6% | apache-2.0 | Hugging Face (adaptador PEFT) |
+| `ssurface/cot-dialect-qwen3-4b-instruct-grpo-l5` (modelo principal del mismo nivel) | ~4.2B (base) + LoRA | 32K | no disponible | apache-2.0 | Hugging Face (adaptador PEFT) |
+| `Qwen/Qwen3-4B-Instruct-2507` (base sin adaptador) | 4.2B | 32K | no disponible (el informe tecnico de Qwen3 reporta cifras para la familia, no para este tamano en concreto) | apache-2.0 | Hugging Face |
 
 No se dispone de datos comparativos directos con otros modelos de compresion de CoT en la informacion proporcionada. El adaptador es una ablacion especifica y el autor advierte que puede ser peor que el modelo principal del mismo nivel.
 

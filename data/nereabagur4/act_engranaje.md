@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nereabagur4/act_engranaje` es un repositorio de pesos en formato safetensors publicado en HuggingFace por el usuario nereabagur4 el 24 de octubre de 2026. El dato objetivo disponible es el recuento de parametros derivado de los tensores: 51.668.614 parametros, con un tamano de repositorio de 0,2 GB. No se ha publicado model card, pipeline, licencia, idiomas soportados ni resultados de evaluacion, por lo que la ficha se limita a documentar lo verificable y a marcar explicitamente como "no disponible" todo lo demas.
+`nereabagur4/act_engranaje` es un repositorio de pesos en formato safetensors publicado en Hugging Face por el usuario nereabagur4 el 24 de octubre de 2026. El dato objetivo disponible es el recuento de parametros derivado de los tensores: 51.668.614 parametros, con un tamano de repositorio de 0,2 GB. No se ha publicado model card, pipeline, licencia, idiomas soportados ni resultados de evaluacion, por lo que la ficha se limita a documentar lo verificable y a marcar explicitamente como "no disponible" todo lo demas.
 
 El modelo no resuelve un problema declarado: no hay descripcion de proposito, dataset de entrenamiento ni caso de uso previsto por parte del autor. La unica etiqueta funcional es `safetensors`, que indica el formato de serializacion de los pesos, no la tarea. El nombre del repositorio (`act_engranaje`) sugiere un componente auxiliar o un experimento de activaciones, pero se trata de una inferencia a partir del nombre y no de informacion confirmada.
 
@@ -98,7 +98,7 @@ La unica conclusion defendible es que `act_engranaje` se situa en la franja de 5
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nereabagur4/act_engranaje
+- Repositorio en Hugging Face: https://huggingface.co/nereabagur4/act_engranaje
 
 Los resultados de busqueda web obtenidos no guardan relacion con este modelo. Se listan a continuacion unicamente para dejar constancia de la busqueda realizada y de su falta de pertinencia:
 

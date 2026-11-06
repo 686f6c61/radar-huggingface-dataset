@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 - VRAM estimada para inferencia: los pesos Q6_K ocupan aproximadamente 7,3 GB (8,95B parámetros × 6,5625 bits/parámetro), más caché KV y overhead de ejecución, lo que sitúa el requisito total en torno a 8-10 GB de VRAM. Es una estimación basada en el tamaño del archivo cuantizado, no un dato oficial.
 - GPU recomendadas: RTX 3060 12 GB, RTX 4070, RTX 4080, RTX 4090, o GPUs de datacenter como A10G o L4. También funciona en Apple Silicon (M1 Pro o superior) con Metal.
 - Sí cabe en GPU consumer: una RTX 3060 de 12 GB es suficiente para la cuantización Q6_K con contexto moderado.
-- Opciones de despliegue: llama.cpp (llama-cli y llama-server), Ollama, LM Studio, y cualquier runtime compatible con GGUF. El modelo card documenta el uso con `llama-cli` y `llama-server` descargando el archivo directamente desde HuggingFace.
+- Opciones de despliegue: llama.cpp (llama-cli y llama-server), Ollama, LM Studio, y cualquier runtime compatible con GGUF. El modelo card documenta el uso con `llama-cli` y `llama-server` descargando el archivo directamente desde Hugging Face.
 - Latencia y throughput: no disponibles. Dependerán del hardware y de la longitud de contexto configurada; el ejemplo del modelo card usa `-c 2048`.
 
 ## Comparativa con modelos similares
@@ -79,7 +79,7 @@ La comparativa se basa en información pública de los repositorios; no hay dato
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/dns/Qwen3.8-9B-heretic-uncensored-Q6_K-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/dns/Qwen3.8-9B-heretic-uncensored-Q6_K-GGUF
 - Modelo base (safetensors): https://huggingface.co/dns/Qwen3.8-9B-heretic-uncensored
 - Modelo base (copia de rohit267): https://huggingface.co/rohit267/Qwen3.8-9B-heretic-uncensored
 - Página del modelo en FriendliAI: https://friendli.ai/models/rohit267/Qwen3.8-9B-heretic-uncensored

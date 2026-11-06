@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Trinity Mini es un modelo de lenguaje de mezcla de expertos (MoE) desarrollado por Arcee AI y publicado en HuggingFace por CollectionStudio. Es la version intermedia de la familia Trinity, una serie de modelos abiertos pensados para entornos empresariales y para usuarios tecnicos. El modelo se basa en el checkpoint `arcee-ai/Trinity-Mini-Base` y esta afinado especificamente para razonamiento, manteniendo un consumo total de tokens similar al de modelos instructivos competidores.
+Trinity Mini es un modelo de lenguaje de mezcla de expertos (MoE) desarrollado por Arcee AI y publicado en Hugging Face por CollectionStudio. Es la version intermedia de la familia Trinity, una serie de modelos abiertos pensados para entornos empresariales y para usuarios tecnicos. El modelo se basa en el checkpoint `arcee-ai/Trinity-Mini-Base` y esta afinado especificamente para razonamiento, manteniendo un consumo total de tokens similar al de modelos instructivos competidores.
 
 El modelo tiene 26.100 millones de parametros totales, de los cuales solo 3.000 millones se activan en cada token, con 128 expertos en total, 8 activos y 1 compartido. Ofrece una ventana de contexto de 128.000 tokens y ha sido entrenado sobre 10 billones de tokens curados en colaboracion con Datology. Su relevancia actual radica en proporcionar la calidad de un modelo grande con el coste computacional de uno mucho mas pequeno, lo que lo hace apto para despliegues eficientes en produccion.
 

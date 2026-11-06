@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mradermacher/simplixity-title-0.8b-GGUF` es una colección de cuantizaciones estáticas en formato GGUF del modelo `stneric/simplixity-title-0.8b`, publicada por el usuario mradermacher, conocido en HuggingFace por generar versiones GGUF de modelos abiertos para su uso con llama.cpp y herramientas compatibles. No se trata de un modelo original, sino de una conversión y cuantización del modelo base, orientada a facilitar la inferencia en hardware modesto.
+`mradermacher/simplixity-title-0.8b-GGUF` es una colección de cuantizaciones estáticas en formato GGUF del modelo `stneric/simplixity-title-0.8b`, publicada por el usuario mradermacher, conocido en Hugging Face por generar versiones GGUF de modelos abiertos para su uso con llama.cpp y herramientas compatibles. No se trata de un modelo original, sino de una conversión y cuantización del modelo base, orientada a facilitar la inferencia en hardware modesto.
 
 El dato real de parámetros (procedente de los safetensors del repositorio) es de 100.592.896 parámetros, aproximadamente 0,1 mil millones, muy por debajo de lo que sugiere el sufijo "0.8b" del nombre. Esta discrepancia indica que el identificador del modelo no refleja fielmente su tamaño real, algo a tener en cuenta al planificar el despliegue. El repositorio ocupa 0,3 GB e incluye múltiples variantes de cuantización.
 
@@ -23,7 +23,7 @@ La información pública disponible es muy limitada: no se especifican licencia,
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura del modelo base `stneric/simplixity-title-0.8b`. Los metadatos de la cuantización indican `convert_type: hf` y `output_tensor_quantised: 1`, lo que confirma que la conversión se realizó desde pesos en formato HuggingFace a GGUF mediante la herramienta de mradermacher, pero no aporta detalles sobre el tipo de transformer, atención, normalización ni capas internas.
+No se dispone de información sobre la arquitectura del modelo base `stneric/simplixity-title-0.8b`. Los metadatos de la cuantización indican `convert_type: hf` y `output_tensor_quantised: 1`, lo que confirma que la conversión se realizó desde pesos en formato Hugging Face a GGUF mediante la herramienta de mradermacher, pero no aporta detalles sobre el tipo de transformer, atención, normalización ni capas internas.
 
 Tampoco consta información sobre el dataset de entrenamiento, el número de tokens procesados, la composición de los datos ni si se aplicaron técnicas de alineación como RLHF, DPO o SFT. El nombre "simplixity-title" sugiere un posible uso especializado en generación de títulos, pero no hay documentación que lo confirme. Cualquier afirmación sobre innovaciones técnicas (atención lineal, decodificación especulativa, etc.) sería especulativa y no se incluye.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| mradermacher/simplixity-title-0.8b-GGUF | 100.592.896 | no disponible | no disponible | GGUF | HuggingFace |
-| Qwen2.5-0.5B-Instruct (GGUF) | ~494 M | 32.768 tokens | Apache 2.0 | GGUF, safetensors | HuggingFace |
-| SmolLM2-135M-Instruct (GGUF) | ~135 M | 8.192 tokens | Apache 2.0 | GGUF, safetensors | HuggingFace |
-| TinyLlama-1.1B-Chat (GGUF) | ~1,1 B | 2.048 tokens | Apache 2.0 | GGUF, safetensors | HuggingFace |
+| mradermacher/simplixity-title-0.8b-GGUF | 100.592.896 | no disponible | no disponible | GGUF | Hugging Face |
+| Qwen2.5-0.5B-Instruct (GGUF) | ~494 M | 32.768 tokens | Apache 2.0 | GGUF, safetensors | Hugging Face |
+| SmolLM2-135M-Instruct (GGUF) | ~135 M | 8.192 tokens | Apache 2.0 | GGUF, safetensors | Hugging Face |
+| TinyLlama-1.1B-Chat (GGUF) | ~1,1 B | 2.048 tokens | Apache 2.0 | GGUF, safetensors | Hugging Face |
 
 La comparación se ofrece a modo de referencia por tamaño y formato; no se dispone de datos de rendimiento del modelo evaluado para establecer una comparación cuantitativa. Los tres alternativos cuentan con licencia permisiva y documentación detallada, a diferencia de este modelo, cuya licencia e idiomas no constan.
 
@@ -82,6 +82,6 @@ La comparación se ofrece a modo de referencia por tamaño y formato; no se disp
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/simplixity-title-0.8b-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/simplixity-title-0.8b-GGUF
 - Modelo base: https://huggingface.co/stneric/simplixity-title-0.8b
 - Perfil del autor de la cuantización: https://huggingface.co/mradermacher

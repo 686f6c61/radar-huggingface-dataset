@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DaSiWa-Krea2 es un modelo de generacion de imagenes basado en la familia Krea 2, publicado por el usuario darksidewalker en HuggingFace. El modelo se distribuye bajo la licencia krea-2-community-license, vinculada al modelo Krea-2-Raw, lo que indica que se trata de un derivado o ajuste fino del modelo base de Krea 2. El autor mantiene ademas una coleccion de recursos en Civitai y una herramienta de entrenamiento llamada DaSiWa-TrainFlow que soporta el entrenamiento de LoRAs y textual inversions para modelos Krea 2.
+DaSiWa-Krea2 es un modelo de generacion de imagenes basado en la familia Krea 2, publicado por el usuario darksidewalker en Hugging Face. El modelo se distribuye bajo la licencia krea-2-community-license, vinculada al modelo Krea-2-Raw, lo que indica que se trata de un derivado o ajuste fino del modelo base de Krea 2. El autor mantiene ademas una coleccion de recursos en Civitai y una herramienta de entrenamiento llamada DaSiWa-TrainFlow que soporta el entrenamiento de LoRAs y textual inversions para modelos Krea 2.
 
 El modelo fue creado el 22 de agosto de 2026 y presenta actualmente cero descargas y cero likes, lo que sugiere que es una publicacion muy reciente o de alcance limitado dentro de la comunidad. La informacion tecnica disponible es practicamente inexistente: la model card no incluye detalles de arquitectura, parametros, dataset de entrenamiento ni capacidades especificas. Esto limita significativamente cualquier evaluacion tecnica rigurosa.
 

@@ -84,7 +84,7 @@ La comparativa con otras familias (por ejemplo, Llama 3.2 3B o Qwen 2.5 4B) no e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xv0y5ncu/Gemma-4-E4B-it-GLQ-7bpw
+- Modelo en Hugging Face: https://huggingface.co/xv0y5ncu/Gemma-4-E4B-it-GLQ-7bpw
 - Modelo base (bf16): https://huggingface.co/google/gemma-4-E4B-it
 - Repositorio GLQ: https://github.com/cnygaard/glq
 - Pagina de Gemma 4 en DeepMind: https://deepmind.google/models/gemma/gemma-4/

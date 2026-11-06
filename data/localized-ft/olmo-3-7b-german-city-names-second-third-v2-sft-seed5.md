@@ -70,6 +70,6 @@ No se dispone de informacion suficiente para realizar una comparativa directa co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/localized-ft/OLMo-3-7B-german-city-names-second-third-v2-sft-seed5
+- Hugging Face: https://huggingface.co/localized-ft/OLMo-3-7B-german-city-names-second-third-v2-sft-seed5
 - Repositorio OLMo (GitHub): https://github.com/allenai/OLMo
 - Modelos similares en FriendliAI (referencia): https://friendli.ai/models/localized-ft/OLMo-3-7B-german-city-names-first-third-v2-sft-seed5

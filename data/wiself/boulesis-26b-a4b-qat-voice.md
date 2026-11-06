@@ -95,7 +95,7 @@ La diferencia funcional entre las dos voces es unicamente el punto de referencia
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Wiself/Boulesis-26B-A4B-QAT-Voice
+- Modelo en Hugging Face: https://huggingface.co/Wiself/Boulesis-26B-A4B-QAT-Voice
 - Herramienta Voice: https://huggingface.co/Wiself/voice
 - Voz estandar (para GGUFs no QAT): https://huggingface.co/Wiself/Boulesis-26B-A4B-Voice
 - Modelo fuente de la voz: https://huggingface.co/SubMaroon/Boulesis-26B-A4B

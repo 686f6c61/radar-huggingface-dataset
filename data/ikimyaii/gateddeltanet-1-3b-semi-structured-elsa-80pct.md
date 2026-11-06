@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GatedDeltaNet-1.3B-semi-structured-ELSA-80pct es un punto de control experimental publicado por el usuario ikimyaii en HuggingFace, consistente en el modelo m-a-p/1.3B-100B-GatedDeltaNet-pure podado al 80 % de dispersión semi-estructurada mediante el método ELSA. No es un modelo entrenado desde cero ni afinado para una tarea concreta: es un artefacto de investigación pensado como línea base para comparar técnicas de poda sobre arquitecturas de atención lineal. Su interés radica en que permite estudiar cómo se degrada un modelo Gated DeltaNet de 1,47 mil millones de parámetros cuando se elimina el 80 % de los pesos de las capas lineales manteniendo un patrón por filas.
+GatedDeltaNet-1.3B-semi-structured-ELSA-80pct es un punto de control experimental publicado por el usuario ikimyaii en Hugging Face, consistente en el modelo m-a-p/1.3B-100B-GatedDeltaNet-pure podado al 80 % de dispersión semi-estructurada mediante el método ELSA. No es un modelo entrenado desde cero ni afinado para una tarea concreta: es un artefacto de investigación pensado como línea base para comparar técnicas de poda sobre arquitecturas de atención lineal. Su interés radica en que permite estudiar cómo se degrada un modelo Gated DeltaNet de 1,47 mil millones de parámetros cuando se elimina el 80 % de los pesos de las capas lineales manteniendo un patrón por filas.
 
 La arquitectura de partida, Gated DeltaNet, es una capa de atención lineal presentada por NVIDIA en ICLR 2025 que combina la regla delta con compuertas, planteada como evolución de Mamba2. El modelo base fue entrenado con 100.000 millones de tokens según indica su denominación (1.3B-100B) y este derivado conserva sus pesos densos en embeddings y lm_head, podando únicamente las 240 capas lineales. La poda se realizó con el código oficial de ELSA (arXiv:2510.01650) usando proyección por filas.
 
@@ -107,7 +107,7 @@ Dentro de la familia publicada por el mismo autor existen también variantes EHW
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ikimyaii/GatedDeltaNet-1.3B-semi-structured-ELSA-80pct
+- Modelo en Hugging Face: https://huggingface.co/ikimyaii/GatedDeltaNet-1.3B-semi-structured-ELSA-80pct
 - Modelo base denso: https://huggingface.co/m-a-p/1.3B-100B-GatedDeltaNet-pure
 - Variante EHWS row-wise 80 %: https://huggingface.co/ikimyaii/GatedDeltaNet-1.3B-semi-structured-EHWS-80pct
 - Variante ELSA no estructurada 80 %: https://huggingface.co/ikimyaii/GatedDeltaNet-1.3B-unstructured-ELSA-80pct

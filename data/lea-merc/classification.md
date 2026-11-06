@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `lea-merc/classification` es un prototipo de investigación de tipo Tiny Transformer orientado a tareas de clasificación, publicado por el usuario lea-merc en HuggingFace. Con 16.576 parámetros totales (dato real extraído de los pesos en formato safetensors), es un artefacto experimental de escala "small" cuyo objetivo declarado es documentar una configuración de arquitectura y un formato de ficheros, no ofrecer un modelo entrenado listo para producción.
+El modelo `lea-merc/classification` es un prototipo de investigación de tipo Tiny Transformer orientado a tareas de clasificación, publicado por el usuario lea-merc en Hugging Face. Con 16.576 parámetros totales (dato real extraído de los pesos en formato safetensors), es un artefacto experimental de escala "small" cuyo objetivo declarado es documentar una configuración de arquitectura y un formato de ficheros, no ofrecer un modelo entrenado listo para producción.
 
 El repositorio incluye un script `train.py`, un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que el propio autor describe como un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests). No se reclama ninguna puntuación de benchmark ni evidencia de un entrenamiento completado.
 
@@ -81,6 +81,6 @@ Nota: los datos de los modelos de referencia corresponden a información públic
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lea-merc/classification
+- Hugging Face: https://huggingface.co/lea-merc/classification
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la información disponible.

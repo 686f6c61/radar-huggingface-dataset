@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje presentado por el usuario TWTXUW en un repositorio de HuggingFace con identificador `TWTXUW/MyAwesomeModel-TestRepo`. Según la model card, se trata de una versión actualizada de un modelo anterior que ha mejorado sus capacidades de razonamiento e inferencia mediante el uso de mayores recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento. El modelo declara un rendimiento destacado en tareas de matemáticas, programación y lógica, con una precisión en el conjunto AIME 2025 que pasa del 70 % al 87,5 % respecto a la versión previa, y un aumento en el número medio de tokens de razonamiento por pregunta (de 12K a 23K).
+MyAwesomeModel es un modelo de lenguaje presentado por el usuario TWTXUW en un repositorio de Hugging Face con identificador `TWTXUW/MyAwesomeModel-TestRepo`. Según la model card, se trata de una versión actualizada de un modelo anterior que ha mejorado sus capacidades de razonamiento e inferencia mediante el uso de mayores recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento. El modelo declara un rendimiento destacado en tareas de matemáticas, programación y lógica, con una precisión en el conjunto AIME 2025 que pasa del 70 % al 87,5 % respecto a la versión previa, y un aumento en el número medio de tokens de razonamiento por pregunta (de 12K a 23K).
 
 Sin embargo, la información pública disponible es muy limitada. El repositorio tiene 0 descargas, 0 likes y un tamaño de 0,0 GB, lo que sugiere que podría tratarse de un repositorio de prueba o una publicación incompleta. No se especifican detalles técnicos como número de parámetros, arquitectura, longitud de contexto ni datos de entrenamiento. La model card incluye una tabla de benchmarks comparativos con otros modelos (denominados Model1, Model2 y Model1-v2), pero no se identifican dichos modelos ni los benchmarks concretos utilizados. Tampoco se proporcionan enlaces a un repositorio de código o a una página oficial, a pesar de que la model card menciona su existencia.
 
@@ -98,5 +98,5 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/TWTXUW/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/TWTXUW/MyAwesomeModel-TestRepo
 - No se han encontrado otros enlaces (paper, blog, repositorio de codigo o demo) en la busqueda web. La model card menciona un "repositorio de codigo" y un "sitio web oficial", pero no se proporcionan URLs.

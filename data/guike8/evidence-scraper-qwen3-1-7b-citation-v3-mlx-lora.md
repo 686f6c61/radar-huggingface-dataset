@@ -71,7 +71,7 @@ Datos adicionales del autor: en paginas publicas se intentaron 18 tareas sobre 1
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| evidence-scraper-qwen3-1.7b-citation-v3-mlx-lora | 458.752 (adaptador) sobre Qwen3 1.7B | 4.096 tokens de secuencia | Extraccion estructurada con citas, MLX | Apache-2.0 | HuggingFace, 0 descargas |
+| evidence-scraper-qwen3-1.7b-citation-v3-mlx-lora | 458.752 (adaptador) sobre Qwen3 1.7B | 4.096 tokens de secuencia | Extraccion estructurada con citas, MLX | Apache-2.0 | Hugging Face, 0 descargas |
 | Qwen3 1.7B (base) | 1.7B | no disponible en la informacion | Generacion de texto general | no disponible en la informacion | mlx-community, 4 bits |
 | Adaptador schema-ordered anterior | no disponible | 4.096 tokens de secuencia | Extraccion estructurada por esquema | no disponible en la informacion | Solo referenciado por SHA256 |
 | Firecrawl | no disponible | no disponible | Servicio de crawling y extraccion | no disponible | Servicio comercial |
@@ -94,7 +94,7 @@ No se dispone de comparaciones de rendimiento con alternativas de la misma categ
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/guike8/evidence-scraper-qwen3-1.7b-citation-v3-mlx-lora)
+- [Modelo en Hugging Face](https://huggingface.co/guike8/evidence-scraper-qwen3-1.7b-citation-v3-mlx-lora)
 - [Modelo base mlx-community/Qwen3-1.7B-4bit](https://huggingface.co/mlx-community/Qwen3-1.7B-4bit)
 - [Guia de serving publica](https://github.com/guike8/evidence-ai-scraper-public/blob/bc85c9a551c6368c56b1b334dd803675d7e91b72/training/README-serving.md)
 - Repositorio publico del proyecto: https://github.com/guike8/evidence-ai-scraper-public

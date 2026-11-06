@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`munoz0706/postdoc-contrastive` es un repositorio experimental publicado en HuggingFace por el usuario `munoz0706` que contiene una implementacion propia de una arquitectura Perceiver orientada a aprendizaje contrastivo. No se trata de un modelo entrenado ni de un checkpoint con resultados publicados: la propia model card indica explicitamente que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y que no se reclama ninguna puntuacion de benchmark. El repositorio esta concebido como un banco de pruebas para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
+`munoz0706/postdoc-contrastive` es un repositorio experimental publicado en Hugging Face por el usuario `munoz0706` que contiene una implementacion propia de una arquitectura Perceiver orientada a aprendizaje contrastivo. No se trata de un modelo entrenado ni de un checkpoint con resultados publicados: la propia model card indica explicitamente que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y que no se reclama ninguna puntuacion de benchmark. El repositorio esta concebido como un banco de pruebas para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
 
 La arquitectura declarada es un Perceiver en configuracion "small", con atencion lineal, fusion mediante co-attention, activacion gelu y normalizacion rmsnorm. El dato real extraido del archivo safetensors indica 16.576 parametros totales, una cifra extremadamente reducida que confirma el caracter de inicializacion minima y no de modelo funcional. La receta de experimento por defecto usa el optimizador rmsprop con un schedule polinomial, valores que el autor describe como puntos de partida del script y no como evidencia de una ejecucion completada.
 
@@ -45,7 +45,7 @@ No hay evidencia de que el modelo haya sido entrenado. La model card indica que 
 - Prueba de humo (smoke test) de pipelines: permite validar que una infraestructura de carga de safetensors, ejecucion de `inference.py` y registro de configuracion funciona de extremo a extremo con un coste computacional minimo.
 - Reproducibilidad metodologica: el autor sugiere entrenar todas las lineas base con la misma exposicion de datos, presupuesto de ajuste y semillas aleatorias, de modo que el repositorio puede usarse como marco de comparacion justa entre variantes.
 - Estudio de aprendizaje contrastivo: el objetivo contrastivo y la fusion co-attention permiten montar experimentos controlados sobre funciones de perdida y estrategias de muestreo de pares.
-- Docencia y formacion: por su tamano (16.576 parametros) y su estructura de archivos, es adecuado para explicar como se organiza un repositorio de modelo en HuggingFace sin requerir hardware especializado.
+- Docencia y formacion: por su tamano (16.576 parametros) y su estructura de archivos, es adecuado para explicar como se organiza un repositorio de modelo en Hugging Face sin requerir hardware especializado.
 - Base para fine-tuning posterior: una vez definida una tarea concreta con conjunto de validacion propio, el script puede adaptarse y entrenarse desde esta inicializacion, documentando los resultados de forma separada de los valores por defecto.
 - Integracion en CI: al no requerir GPU ni descarga pesada (tamano de repo 0.0 GB), puede incluirse como caso de prueba en integracion continua para detectar roturas en la carga del checkpoint.
 
@@ -69,7 +69,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas para estab
 |---|---|---|---|---|---|
 | munoz0706/postdoc-contrastive | Perceiver (atencion lineal, co-attention) | 16.576 | no disponible | No (checkpoint de inicializacion) | MIT |
 | Perceiver IO (referencia DeepMind) | Perceiver con atencion lineal | no disponible en esta ficha | no disponible en esta ficha | Si | no disponible en esta ficha |
-| Otras implementaciones de Perceiver en HuggingFace | Perceiver | no disponible | no disponible | Variable | Variable |
+| Otras implementaciones de Perceiver en Hugging Face | Perceiver | no disponible | no disponible | Variable | Variable |
 
 La comparacion directa no es posible porque el modelo de este repositorio no ha sido entrenado y no publica metricas, mientras que las alternativas citadas son arquitecturas de referencia con entrenamiento y evaluacion documentados en sus respectivas publicaciones.
 
@@ -86,6 +86,6 @@ La comparacion directa no es posible porque el modelo de este repositorio no ha 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/munoz0706/postdoc-contrastive
+- Hugging Face: https://huggingface.co/munoz0706/postdoc-contrastive
 - Archivos incluidos en el repositorio: `inference.py` (artefacto principal), `README.md`, `config.json` (configuracion de arquitectura), `training_args.json` (ajustes por defecto del experimento), `model.safetensors` (checkpoint de inicializacion).
 - No se han encontrado enlaces adicionales a papers, blogs, repositorios o demos en la informacion proporcionada.

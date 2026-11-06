@@ -6,7 +6,7 @@
 
 El interes de esta publicacion es fundamentalmente metodologico: forma parte de una familia de adaptadores que permiten comparar el comportamiento de un mismo modelo base (Sheared-LLaMA-1.3B, una version podada de la familia LLaMA-2) frente a distintas combinaciones de datos y estrategias de entrenamiento. Por tanto, resulta util para investigadores que quieran reproducir o auditar experimentos de ajuste fino sobre tareas derivadas de MS MARCO (preguntas y respuestas, ranking de pasajes), mas que como modelo listo para produccion.
 
-Conviene tener en cuenta dos limitaciones de partida: el repositorio esta marcado como de acceso restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de descargarlo, y su tamano declarado es de 0.0 GB, lo que sugiere que los pesos del adaptador pueden no estar efectivamente alojados o que el repositorio contiene unicamente configuracion y metadatos. La licencia no aparece indicada en la informacion disponible.
+Conviene tener en cuenta dos limitaciones de partida: el repositorio esta marcado como de acceso restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de descargarlo, y su tamano declarado es de 0.0 GB, lo que sugiere que los pesos del adaptador pueden no estar efectivamente alojados o que el repositorio contiene unicamente configuracion y metadatos. La licencia no aparece indicada en la informacion disponible.
 
 ## Especificaciones tecnicas
 
@@ -26,7 +26,7 @@ Conviene tener en cuenta dos limitaciones de partida: el repositorio esta marcad
 | Estrategia declarada | `mix` (tag `strategy-mix`) |
 | Metodo / tag adicional | `or2` |
 | Pipeline | text-generation |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Tamano del repositorio | 0.0 GB |
 
 ## Arquitectura y entrenamiento
@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| benchmark-slm-msmarco-sheared-llama-mix (esta ficha) | 1.3B (base) + adaptador LoRA | No disponible | Adaptador LoRA sobre Sheared-LLaMA-1.3B | No disponible | Gated en HuggingFace |
-| princeton-nlp/Sheared-LLaMA-1.3B | 1.3B | 4096 (segun model card del base) | Modelo completo, podado de LLaMA-2 7B | Licencia LLaMA-2 (segun model card del base) | Publico en HuggingFace |
-| TinyLlama-1.1B (proyecto TinyLlama) | 1.1B | 2048 (segun model card publica) | Modelo completo, entrenado desde cero sobre 3T tokens | Apache 2.0 (segun model card publica) | Publico en HuggingFace |
-| Qwen2.5-1.5B | 1.5B | 32 768 (segun model card publica) | Modelo completo, multilingue | Apache 2.0 (segun model card publica) | Publico en HuggingFace |
+| benchmark-slm-msmarco-sheared-llama-mix (esta ficha) | 1.3B (base) + adaptador LoRA | No disponible | Adaptador LoRA sobre Sheared-LLaMA-1.3B | No disponible | Gated en Hugging Face |
+| princeton-nlp/Sheared-LLaMA-1.3B | 1.3B | 4096 (segun model card del base) | Modelo completo, podado de LLaMA-2 7B | Licencia LLaMA-2 (segun model card del base) | Publico en Hugging Face |
+| TinyLlama-1.1B (proyecto TinyLlama) | 1.1B | 2048 (segun model card publica) | Modelo completo, entrenado desde cero sobre 3T tokens | Apache 2.0 (segun model card publica) | Publico en Hugging Face |
+| Qwen2.5-1.5B | 1.5B | 32 768 (segun model card publica) | Modelo completo, multilingue | Apache 2.0 (segun model card publica) | Publico en Hugging Face |
 
 Nota: los datos de los modelos comparables provienen de sus model cards publicas y no han sido verificados en la informacion proporcionada para esta ficha; se incluyen solo como referencia de categoria. No se dispone de resultados de benchmarks que permitan comparar el rendimiento real de este adaptador frente a ellos.
 
@@ -86,14 +86,14 @@ Nota: los datos de los modelos comparables provienen de sus model cards publicas
 - Limitacion idiomatica: solo se declara ingles; el rendimiento en castellano no esta verificado y previsiblemente sera limitado.
 - Limitacion de contexto: la longitud de contexto del adaptador no esta documentada; el base maneja 4096 tokens, por lo que conversaciones o documentos largos requeriran truncado o troceado.
 - Licencia: no disponible. Al derivar de LLaMA-2, es probable que se apliquen las condiciones de la licencia comunitaria de Meta, pero esto no se confirma en la informacion proporcionada. Verificar antes de cualquier uso comercial.
-- Acceso restringido: requiere aceptar condiciones en HuggingFace, lo que puede impedir la descarga automatizada en pipelines de CI/CD.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face, lo que puede impedir la descarga automatizada en pipelines de CI/CD.
 - Repositorio de 0.0 GB: comprobar que los pesos del adaptador estan realmente presentes antes de disenar un flujo de trabajo que dependa de ellos.
 - Trazabilidad insuficiente: no se documentan hiperparametros de LoRA, numero de tokens, particiones de entrenamiento ni semillas, lo que dificulta la reproducibilidad estricta.
 - Los resultados de busqueda web realizados no aportaron informacion tecnica relevante sobre este modelo; no se ha podido contrastar ningun dato con fuentes externas.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/praiselab-picuslab/benchmark-slm-msmarco-sheared-llama-mix
+- Modelo en Hugging Face: https://huggingface.co/praiselab-picuslab/benchmark-slm-msmarco-sheared-llama-mix
 - Modelo base: https://huggingface.co/princeton-nlp/Sheared-LLaMA-1.3B
 - Dataset utilizado: https://huggingface.co/datasets/microsoft/ms_marco
 - Repositorio del modelo base (Sheared-LLaMA): https://github.com/princeton-nlp/Sheared-LLaMA

@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `fpadovani/arb-arab-10mb-100mb_seed3407` | 39,09 M | No disponible | No disponible | HuggingFace, 0 descargas | Ajuste SFT sobre el modelo base |
-| `goldfish-models/arb_arab_10mb` | No disponible | No disponible | No disponible | HuggingFace | Modelo base declarado por el autor |
+| `fpadovani/arb-arab-10mb-100mb_seed3407` | 39,09 M | No disponible | No disponible | Hugging Face, 0 descargas | Ajuste SFT sobre el modelo base |
+| `goldfish-models/arb_arab_10mb` | No disponible | No disponible | No disponible | Hugging Face | Modelo base declarado por el autor |
 | GPT-2 small | 124 M | 1.024 tokens (configuración estándar) | MIT | Ampliamente disponible | Referencia de la misma familia arquitectónica, pero con más parámetros |
 
 No se dispone de datos de rendimiento comparables para ninguno de los tres modelos en la información proporcionada, por lo que la comparación se limita a parámetros y licencia. No se han identificado alternativas adicionales de la misma categoría (modelos ajustados de ~40 M de parámetros para árabe) en los resultados de búsqueda disponibles.
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparables para ninguno de los tres model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/arb-arab-10mb-100mb_seed3407
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/arb-arab-10mb-100mb_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/arb_arab_10mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Ejecución de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new_tokenizers/runs/1ybzan6r

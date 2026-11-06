@@ -48,7 +48,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 
 - VRAM estimada para inferencia: con 596M parametros, en FP16 ocupa aproximadamente 1,2 GB de memoria. En cuantizacion de 4 bits (si estuviera disponible) se reduciria a unos 0,3 GB, pero no se confirma que existan versiones cuantizadas.
 - GPU recomendadas: cabe en GPUs de consumo como RTX 3060 (12 GB) o superiores. Para Apple Silicon, el formato MLX esta optimizado para chips M1/M2/M3.
-- Despliegue: al ser MLX, se puede ejecutar con la libreria MLX de Apple. Tambien es posible usar transformers de HuggingFace con safetensors, y potencialmente vLLM o llama.cpp si se convierte a GGUF, aunque no se proporcionan instrucciones.
+- Despliegue: al ser MLX, se puede ejecutar con la libreria MLX de Apple. Tambien es posible usar transformers de Hugging Face con safetensors, y potencialmente vLLM o llama.cpp si se convierte a GGUF, aunque no se proporcionan instrucciones.
 - Latencia y throughput: no disponibles. Se espera que sea rapido en hardware moderno dado su tamano, pero sin mediciones oficiales no se puede cuantificar.
 
 ## Comparativa con modelos similares
@@ -66,6 +66,6 @@ No se dispone de datos comparativos directos. Como referencia, el modelo base Qw
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/axetechnologies/imi-0-6b
+- Hugging Face: https://huggingface.co/axetechnologies/imi-0-6b
 - Repositorio GitHub relacionado: https://github.com/memjar/axe-imi (mencionado en la busqueda, aunque no se confirma que sea el repositorio oficial del modelo)
-- Perfil del autor en HuggingFace: https://huggingface.co/axetechnologies
+- Perfil del autor en Hugging Face: https://huggingface.co/axetechnologies

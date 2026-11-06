@@ -87,11 +87,11 @@ No se dispone de datos de rendimiento para otros modelos MoE de tamaño similar 
 - **Cuantización de baja precisión**: los pesos en ROCmFP2 (2.5 bits) pueden degradar la calidad de las respuestas en comparación con cuantizaciones más altas, aunque no hay benchmarks de precisión en la documentación.
 - **Sesgos y alucinaciones**: no se han documentado específicamente para este modelo, pero al ser una cuantización de un modelo base, hereda los sesgos de DeepSeek V4 Flash. No se proporcionan datos de evaluación de sesgos.
 - **Licencia**: el fork está bajo MIT, pero el modelo base DeepSeek V4 Flash puede tener su propia licencia (no se especifica en la ficha).
-- **Estado del proyecto**: el repo tiene 0 descargas y 0 likes en HuggingFace, lo que sugiere que es un proyecto de entusiasta con soporte limitado.
+- **Estado del proyecto**: el repo tiene 0 descargas y 0 likes en Hugging Face, lo que sugiere que es un proyecto de entusiasta con soporte limitado.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/julianmb/ds4fa)
+- [Modelo en Hugging Face](https://huggingface.co/julianmb/ds4fa)
 - [Repositorio GitHub ds4fa](https://github.com/julianmb/ds4fa)
 - [Repositorio GitHub HaloFPX (herramientas relacionadas)](https://github.com/julianmb/halofpx)
-- [Pesos del modelo DeepSeek-V4-Flash-0731-IQ2XXS-STRIX en HuggingFace](https://huggingface.co/julianmb/DeepSeek-V4-Flash-0731-IQ2XXS-STRIX)
+- [Pesos del modelo DeepSeek-V4-Flash-0731-IQ2XXS-STRIX en Hugging Face](https://huggingface.co/julianmb/DeepSeek-V4-Flash-0731-IQ2XXS-STRIX)

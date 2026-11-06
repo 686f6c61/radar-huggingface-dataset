@@ -96,5 +96,5 @@ No se dispone de datos de benchmarks frente a modelos de triaje de seguridad de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rokoman/siem-triage-9b-th
+- Modelo en Hugging Face: https://huggingface.co/rokoman/siem-triage-9b-th
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B

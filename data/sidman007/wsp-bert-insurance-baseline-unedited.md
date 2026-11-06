@@ -91,6 +91,6 @@ No se dispone de datos de benchmarks de modelos comparables de clasificación de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sidman007/wsp-bert-insurance-baseline-unedited
+- Modelo en Hugging Face: https://huggingface.co/sidman007/wsp-bert-insurance-baseline-unedited
 - Repositorio del proyecto (código, logs y protocolo): https://github.com/siddharth-ghatti/weight-space-programming-poc
 - Modelo base: https://huggingface.co/google-bert/bert-base-uncased

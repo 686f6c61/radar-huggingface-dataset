@@ -78,7 +78,7 @@ La comparativa muestra que Nemotron-Nano-9B-v2 ofrece un contexto más largo que
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversión GGUF: https://huggingface.co/impacte/NVIDIA-Nemotron-Nano-9B-v2-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2
+- Repositorio Hugging Face de esta conversión GGUF: https://huggingface.co/impacte/NVIDIA-Nemotron-Nano-9B-v2-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2
 - Licencia NVIDIA Open Model: https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-open-model-license/
 - Repositorio de llama.cpp: https://github.com/ggml-org/llama.cpp

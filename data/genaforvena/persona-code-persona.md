@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`genaforvena/persona-code-persona` es un adaptador LoRA publicado en HuggingFace por el usuario genaforvena, construido sobre el modelo base `HuggingFaceTB/SmolLM2-360M-Instruct`. Se trata de un artefacto PEFT (librería `peft`, versión 0.20.0 en el momento de la publicación) distribuido en formato safetensors, no de un modelo completo entrenado desde cero. El repositorio se creó el 16 de septiembre de 2026 y, en el momento de la consulta, acumula 0 descargas y 0 "likes", con un tamaño de repositorio declarado de 0,0 GB.
+`genaforvena/persona-code-persona` es un adaptador LoRA publicado en Hugging Face por el usuario genaforvena, construido sobre el modelo base `HuggingFaceTB/SmolLM2-360M-Instruct`. Se trata de un artefacto PEFT (librería `peft`, versión 0.20.0 en el momento de la publicación) distribuido en formato safetensors, no de un modelo completo entrenado desde cero. El repositorio se creó el 16 de septiembre de 2026 y, en el momento de la consulta, acumula 0 descargas y 0 "likes", con un tamaño de repositorio declarado de 0,0 GB.
 
-La model card publicada es la plantilla por defecto de HuggingFace sin rellenar: todos los campos (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros, evaluación) aparecen como `[More Information Needed]`. No hay información verificable sobre el dataset de ajuste, el rango del adaptador, las capas objetivo ni el objetivo de entrenamiento. Esto convierte al repositorio en un ejemplo típico de la "cola larga" de adaptadores PEFT: publicados sin documentación y sin validación comunitaria.
+La model card publicada es la plantilla por defecto de Hugging Face sin rellenar: todos los campos (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros, evaluación) aparecen como `[More Information Needed]`. No hay información verificable sobre el dataset de ajuste, el rango del adaptador, las capas objetivo ni el objetivo de entrenamiento. Esto convierte al repositorio en un ejemplo típico de la "cola larga" de adaptadores PEFT: publicados sin documentación y sin validación comunitaria.
 
 Su relevancia es, por tanto, metodológica más que de rendimiento. Sirve como caso de estudio sobre buenas prácticas de publicación de adaptadores LoRA y como recordatorio de los riesgos de adoptar artefactos sin licencia, sin métricas y sin model card. Cualquier uso en producción exigiría una evaluación propia previa contra el modelo base.
 
@@ -75,7 +75,7 @@ La comparación se establece contra el modelo base y contra alternativas de tama
 | Modelo | Parámetros | Contexto | Licencia | Estado |
 |---|---|---|---|---|
 | persona-code-persona (adaptador LoRA) | No disponible (base ~360 M) | No disponible (base: 8.192) | No disponible | 0 descargas, 0 likes, sin model card |
-| SmolLM2-360M-Instruct (base) | ~360 M | 8.192 tokens | Apache-2.0 | Modelo oficial de HuggingFace, ampliamente utilizado |
+| SmolLM2-360M-Instruct (base) | ~360 M | 8.192 tokens | Apache-2.0 | Modelo oficial de Hugging Face, ampliamente utilizado |
 | Qwen2.5-0.5B-Instruct | ~0,5 B | 32.768 tokens | Apache-2.0 | Modelo oficial de Alibaba, con buen soporte multilingüe |
 | TinyLlama-1.1B-Chat | ~1,1 B | 2.048 tokens | Apache-2.0 | Proyecto comunitario consolidado |
 
@@ -96,11 +96,11 @@ La diferencia fundamental no es de rendimiento sino de trazabilidad: las tres al
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/genaforvena/persona-code-persona
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/genaforvena/persona-code-persona
 - Modelo base SmolLM2-360M-Instruct: https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct
 - Colección de modelos SmolLM2 de HuggingFaceTB: https://huggingface.co/collections/HuggingFaceTB/smollm2
 - Paper técnico de SmolLM2, "SmolLM2: When Smol Goes Big - Data-Centric Training of a Small Language Model": https://arxiv.org/abs/2502.02737
 - Lacoste et al. (2019), "Quantifying the Carbon Emissions of Machine Learning", referencia citada en la plantilla de la model card (etiqueta `arxiv:1910.09700`): https://arxiv.org/abs/1910.09700
-- Documentación de PEFT (HuggingFace): https://huggingface.co/docs/peft/index
+- Documentación de PEFT (Hugging Face): https://huggingface.co/docs/peft/index
 - Calculadora de impacto ambiental de ML citada en la card: https://mlco2.github.io/impact
 - No se han encontrado otros enlaces relevantes (papers, blogs, demos o repositorios) en la búsqueda web realizada.

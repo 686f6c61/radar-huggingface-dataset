@@ -105,7 +105,7 @@ Frente al modelo original de Oliver Guhr, la diferencia no es de calidad sino de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tiao-ai-tech/kinomat-aligner-de
+- Modelo en Hugging Face: https://huggingface.co/tiao-ai-tech/kinomat-aligner-de
 - Archivo ONNX: https://huggingface.co/tiao-ai-tech/kinomat-aligner-de/resolve/main/wav2vec2-base-german-cv9-int8.onnx
 - Modelo base (Oliver Guhr, MIT): https://huggingface.co/oliverguhr/wav2vec2-base-german-cv9
 - Modelo original de Meta AI (Apache 2.0): https://huggingface.co/facebook/wav2vec2-base

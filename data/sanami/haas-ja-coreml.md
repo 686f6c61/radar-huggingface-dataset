@@ -78,10 +78,10 @@ La implementación Swift coincide con la inferencia Core ML en Python en los 33 
 
 | Modelo / formato | Ejecución | RTFx en M1 | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Sanami/haas-ja-coreml (este) | Core ML / ANE + Swift | ~85 | Apache-2.0 | HuggingFace, con código Swift y Python |
-| Sanami/haas-ja-onnx | ONNX Runtime, tract (Python/Rust) | 26 (Rust, int8dyn) | no disponible en la información | HuggingFace |
-| sakasegawa/Haas-ja-v1.0-GGUF | speech.cpp 0.10.0 (Metal, Vulkan, CPU) | 63 (Metal Q8_0) | no disponible en la información | HuggingFace |
-| oboroge0/Haas-ja-v1.0-onnx | sherpa-onnx (CPU) | no disponible | no disponible en la información | HuggingFace |
+| Sanami/haas-ja-coreml (este) | Core ML / ANE + Swift | ~85 | Apache-2.0 | Hugging Face, con código Swift y Python |
+| Sanami/haas-ja-onnx | ONNX Runtime, tract (Python/Rust) | 26 (Rust, int8dyn) | no disponible en la información | Hugging Face |
+| sakasegawa/Haas-ja-v1.0-GGUF | speech.cpp 0.10.0 (Metal, Vulkan, CPU) | 63 (Metal Q8_0) | no disponible en la información | Hugging Face |
+| oboroge0/Haas-ja-v1.0-onnx | sherpa-onnx (CPU) | no disponible | no disponible en la información | Hugging Face |
 
 Los cuatro derivan del mismo modelo base third-intelligence/Haas-ja-v1.0, por lo que la calidad ASR es equivalente salvo diferencias de preprocesado (sherpa-onnx calcula las características por su cuenta y no coincide exactamente con NeMo). La ventaja de esta conversión es el rendimiento en hardware Apple; su limitación es que no es portable fuera del ecosistema Core ML.
 
@@ -99,7 +99,7 @@ Los cuatro derivan del mismo modelo base third-intelligence/Haas-ja-v1.0, por lo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sanami/haas-ja-coreml
+- Modelo en Hugging Face: https://huggingface.co/Sanami/haas-ja-coreml
 - Modelo base: https://huggingface.co/third-intelligence/Haas-ja-v1.0
 - Versión ONNX del mismo autor: https://huggingface.co/Sanami/haas-ja-onnx
 - Benchmarks comparativos ONNX: https://huggingface.co/Sanami/haas-ja-onnx/blob/main/BENCHMARKS.md

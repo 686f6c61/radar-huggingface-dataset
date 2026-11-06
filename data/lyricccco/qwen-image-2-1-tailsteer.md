@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen-Image-2.1-TailSteer es un ajuste fino (finetune) completo del modelo de difusion Qwen-Image-2.1 de Alibaba Qwen, publicado por el usuario independiente Lyricccco en HuggingFace. No se trata de un LoRA ni de un adaptador: son pesos completos que sustituyen al modelo base manteniendo la misma arquitectura, el mismo formato de pesos y la misma API de carga, de modo que se puede usar con el pipeline oficial `QwenImage21Pipeline` de diffusers cambiando unicamente el identificador del modelo.
+Qwen-Image-2.1-TailSteer es un ajuste fino (finetune) completo del modelo de difusion Qwen-Image-2.1 de Alibaba Qwen, publicado por el usuario independiente Lyricccco en Hugging Face. No se trata de un LoRA ni de un adaptador: son pesos completos que sustituyen al modelo base manteniendo la misma arquitectura, el mismo formato de pesos y la misma API de carga, de modo que se puede usar con el pipeline oficial `QwenImage21Pipeline` de diffusers cambiando unicamente el identificador del modelo.
 
 El problema que aborda es la deriva acumulativa (drift) en edicion de imagenes multi-turno. En flujos iterativos, donde la salida de cada edicion se convierte en la entrada de la siguiente, el modelo base degrada progresivamente texturas, rostros, ropa y fondos fuera de la region editada. TailSteer es una etapa final de entrenamiento que aprende de las propias trayectorias de denoising del editor, usando el contenido fuente inalterado como referencia de preservacion, y mejora la estabilidad a largo plazo sin necesidad de pares de edicion con ground-truth ni de cadenas de edicion multi-turno durante el entrenamiento.
 
@@ -87,8 +87,8 @@ La mejora declarada en la model card es de +1,22 dB PSNR y un 11,5 % menos LPIPS
 
 | Modelo | Parametros | Contexto / pasos | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen-Image-2.1-TailSteer | 7,12 mil millones | 40 pasos de referencia | Qwen-IB EN 53,06; PSNR@10 18,15 en Add & Preserve | qwen-research | HuggingFace (2 descargas, 0 likes en el momento de la consulta) |
-| Qwen-Image-2.1 (base) | 7,12 mil millones (mismo tamano) | 40 pasos de referencia | Qwen-IB EN 53,39; PSNR@10 16,93 en Add & Preserve | qwen-research | HuggingFace, modelo oficial de Qwen |
+| Qwen-Image-2.1-TailSteer | 7,12 mil millones | 40 pasos de referencia | Qwen-IB EN 53,06; PSNR@10 18,15 en Add & Preserve | qwen-research | Hugging Face (2 descargas, 0 likes en el momento de la consulta) |
+| Qwen-Image-2.1 (base) | 7,12 mil millones (mismo tamano) | 40 pasos de referencia | Qwen-IB EN 53,39; PSNR@10 16,93 en Add & Preserve | qwen-research | Hugging Face, modelo oficial de Qwen |
 | Otros modelos de edicion de imagen de tamano comparable | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparacion directa relevante es contra el propio modelo base: TailSteer pierde marginalmente en benchmarks de generacion y edicion de un turno (Qwen-IB EN -0,33; GEdit EN -0,07; RISE -2,50 puntos) y gana de forma clara en preservacion multi-turno (+1,22 dB PSNR, +0,075 SSIM, -0,031 LPIPS). No se dispone de datos de terceros comparables en la informacion proporcionada.
@@ -107,7 +107,7 @@ La comparacion directa relevante es contra el propio modelo base: TailSteer pier
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lyricccco/Qwen-Image-2.1-TailSteer
+- Modelo en Hugging Face: https://huggingface.co/Lyricccco/Qwen-Image-2.1-TailSteer
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Dataset de evaluacion Add & Preserve: https://huggingface.co/datasets/Lyricccco/Add-and-Preserve
 - Dataset de entrenamiento TailSteer-Source: https://huggingface.co/datasets/Lyricccco/TailSteer-Source

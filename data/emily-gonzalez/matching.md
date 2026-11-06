@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`emily-gonzalez/matching` es un prototipo de investigación publicado en HuggingFace que implementa una variante de la arquitectura ALBEF (Align before Fuse) orientada a tareas de *matching* (emparejamiento) entre modalidades. Lo desarrolla el usuario emily-gonzalez y se distribuye bajo licencia BSD-3-Clause. El repositorio contiene una implementación personalizada en PyTorch (`predict.py`), un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y un checkpoint de inicialización en formato safetensors.
+`emily-gonzalez/matching` es un prototipo de investigación publicado en Hugging Face que implementa una variante de la arquitectura ALBEF (Align before Fuse) orientada a tareas de *matching* (emparejamiento) entre modalidades. Lo desarrolla el usuario emily-gonzalez y se distribuye bajo licencia BSD-3-Clause. El repositorio contiene una implementación personalizada en PyTorch (`predict.py`), un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y un checkpoint de inicialización en formato safetensors.
 
 El dato más relevante para cualquier evaluador es su tamaño real: 49.600 parámetros según el fichero de pesos. Se trata, por tanto, de un artefacto de escala mínima, no de un modelo entrenado listo para producción. La propia model card indica explícitamente que el checkpoint "no se presenta como un checkpoint entrenado con benchmarks" y que no se reclama ninguna métrica de rendimiento. El propósito declarado es servir como punto de partida reproducible para experimentos de *matching*, con una receta de entrenamiento basada en AdamW y un schedule de *linear warmup*.
 
@@ -38,7 +38,7 @@ En cuanto al entrenamiento, no se ha publicado ningun dato verificable. El fiche
 - Soporte de agentes o razonamiento multi-paso: no disponible.
 - Capacidades multilingües: no disponible; no se declara ningún idioma.
 - Capacidad especial (modo *thinking*, audio, etc.): no disponible.
-- Lo que sí ofrece es una implementación ejecutable como punto de partida: el script `predict.py` incluye un bloque `__main__` con un ejemplo de *smoke test*, y `config.json` registra los ajustes de arquitectura generados. Las APIs genéricas de carga automática de HuggingFace requieren un adaptador explícito, ya que se trata de una implementación personalizada.
+- Lo que sí ofrece es una implementación ejecutable como punto de partida: el script `predict.py` incluye un bloque `__main__` con un ejemplo de *smoke test*, y `config.json` registra los ajustes de arquitectura generados. Las APIs genéricas de carga automática de Hugging Face requieren un adaptador explícito, ya que se trata de una implementación personalizada.
 
 ## Casos de uso
 
@@ -68,7 +68,7 @@ Los datos de las alternativas no se han verificado en la informacion proporciona
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| emily-gonzalez/matching | 49.600 (declarado como escala "giant") | no disponible | Matching (ALBEF) | BSD-3-Clause | HuggingFace, 0 descargas, 0 likes |
+| emily-gonzalez/matching | 49.600 (declarado como escala "giant") | no disponible | Matching (ALBEF) | BSD-3-Clause | Hugging Face, 0 descargas, 0 likes |
 | ALBEF original (Salesforce) | no disponible en esta busqueda | no disponible | Vision-lenguaje (ITC + ITM + MLM) | no disponible en esta busqueda | requiere consulta a su propia ficha |
 | BLIP | no disponible en esta busqueda | no disponible | Vision-lenguaje | no disponible en esta busqueda | requiere consulta a su propia ficha |
 | CLIP | no disponible en esta busqueda | no disponible | Contraste imagen-texto | no disponible en esta busqueda | requiere consulta a su propia ficha |
@@ -91,9 +91,9 @@ La diferencia cualitativa mas relevante frente a esas alternativas es de escala 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/emily-gonzalez/matching
+- Hugging Face: https://huggingface.co/emily-gonzalez/matching
 - Paper de ALBEF: no disponible en la informacion proporcionada
-- Repositorio de codigo: no disponible (el propio repositorio de HuggingFace contiene `predict.py`)
+- Repositorio de codigo: no disponible (el propio repositorio de Hugging Face contiene `predict.py`)
 - Blog o articulo tecnico del autor: no disponible
 - Demo: no disponible
 - Nota sobre la busqueda web: las consultas realizadas no devolvieron ningun resultado relacionado con este modelo. Los unicos resultados obtenidos correspondian a una empresa francesa de maquinaria agricola, a la etimologia del nombre propio Emily y a una pelicula biografica de 2022, todos ellos sin relacion con el artefacto descrito.

@@ -57,7 +57,7 @@ No se han publicado comparativas con otros modelos en la información disponible
 - VRAM estimada para inferencia: 288.41 MB (pico registrado en el benchmark).
 - GPU recomendada: no se especifican requisitos de hardware en la información proporcionada. El pico de VRAM registrado sugiere que puede ejecutarse en cualquier GPU con al menos 512 MB de memoria.
 - Compatibilidad con consumer GPU: sí, es apto para GPUs de consumo como la NVIDIA GTX 1650 o superiores.
-- Opciones de despliegue: puede cargarse con la librería `transformers` de HuggingFace en PyTorch. Para servir en producción, se puede usar TGI o una API personalizada con FastAPI. No es compatible con llama.cpp al ser un modelo encoder.
+- Opciones de despliegue: puede cargarse con la librería `transformers` de Hugging Face en PyTorch. Para servir en producción, se puede usar TGI o una API personalizada con FastAPI. No es compatible con llama.cpp al ser un modelo encoder.
 - Latencia: el benchmark reporta 30.46 s para evaluación pura, pero no se especifica el tamaño del dataset, por lo que no se puede estimar la latencia por muestra.
 
 ## Comparativa con modelos similares
@@ -72,10 +72,10 @@ No se dispone de datos comparativos publicados en la información proporcionada.
 - Limitaciones de idioma: solo soporta inglés, lo que impide su uso en otros idiomas sin un proceso de fine-tuning adicional.
 - Restricciones de licencia: la licencia MIT permite uso comercial, pero el rendimiento limitado puede hacer necesario un fine-tuning sustancial para producción.
 - Contexto no especificado: no se indica la longitud máxima de contexto, por lo que se desconoce su capacidad para textos largos.
-- Tamaño del repositorio: el repositorio de HuggingFace tiene un tamaño de 0.0 GB, lo que sugiere que los pesos podrían no estar almacenados directamente en el repo, sino cargarse desde un archivo externo `weights.pt`. Es necesario verificar la disponibilidad real de los pesos antes de su uso.
+- Tamaño del repositorio: el repositorio de Hugging Face tiene un tamaño de 0.0 GB, lo que sugiere que los pesos podrían no estar almacenados directamente en el repo, sino cargarse desde un archivo externo `weights.pt`. Es necesario verificar la disponibilidad real de los pesos antes de su uso.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Hooshaai/svd-linear-attention-distilbert-aegis-v4-module
+- Hugging Face: https://huggingface.co/Hooshaai/svd-linear-attention-distilbert-aegis-v4-module
 - Dataset de resultados: https://huggingface.co/datasets/tahamajs/svd-linear-attention-sst2-results
 - Documentación de DistilBERT: https://huggingface.co/docs/transformers/model_doc/distilbert

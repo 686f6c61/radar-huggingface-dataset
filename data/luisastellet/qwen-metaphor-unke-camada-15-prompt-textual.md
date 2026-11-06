@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`luisastellet/qwen-metaphor-unke-camada-15-prompt-textual` es un modelo de generación de texto publicado en HuggingFace por el usuario luisastellet, construido sobre la familia Qwen3 (etiqueta `qwen3` en los metadatos) y empaquetado en formato `safetensors` para su uso con la librería `transformers`. El checkpoint declara 596.049.920 parámetros según los tensores reales del repositorio, una cifra que coincide exactamente con la configuración de Qwen3-0.6B (28 capas, hidden size 1024, embeddings atados), lo que sitúa al modelo en la gama ultraligera de menos de 1.000 millones de parámetros.
+`luisastellet/qwen-metaphor-unke-camada-15-prompt-textual` es un modelo de generación de texto publicado en Hugging Face por el usuario luisastellet, construido sobre la familia Qwen3 (etiqueta `qwen3` en los metadatos) y empaquetado en formato `safetensors` para su uso con la librería `transformers`. El checkpoint declara 596.049.920 parámetros según los tensores reales del repositorio, una cifra que coincide exactamente con la configuración de Qwen3-0.6B (28 capas, hidden size 1024, embeddings atados), lo que sitúa al modelo en la gama ultraligera de menos de 1.000 millones de parámetros.
 
-El nombre del repositorio sugiere un ajuste fino experimental orientado a la generación de metáforas ("metaphor"), con referencias internas a una "camada 15" y a un "prompt textual", aunque el autor no documenta ninguna de estas decisiones. La model card es la plantilla automática de HuggingFace sin rellenar: no hay información sobre datos de entrenamiento, hiperparámetros, licencia, idiomas ni evaluación.
+El nombre del repositorio sugiere un ajuste fino experimental orientado a la generación de metáforas ("metaphor"), con referencias internas a una "camada 15" y a un "prompt textual", aunque el autor no documenta ninguna de estas decisiones. La model card es la plantilla automática de Hugging Face sin rellenar: no hay información sobre datos de entrenamiento, hiperparámetros, licencia, idiomas ni evaluación.
 
 Su relevancia actual es limitada y de carácter exploratorio: se trata de un artefacto de investigación con cero descargas y cero likes en el momento de la consulta, sin resultados publicados ni licencia declarada. Resulta útil como objeto de estudio de fine-tunes de Qwen3-0.6B, pero no es apto para producción sin una evaluación previa por parte del equipo que lo adopte.
 
@@ -67,18 +67,18 @@ La model card no incluye ninguna sección de evaluación completada (todas las m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este modelo (`qwen-metaphor-unke-camada-15-prompt-textual`) | 596 M | No disponible | No disponible | HuggingFace, safetensors | Fine-tune sin documentar ni evaluar; 0 descargas |
-| Qwen3-0.6B (modelo base probable) | 0,6 B (0,44 B no-embedding) | 32.768 tokens nativos | Apache 2.0 | HuggingFace, amplia variedad de formatos | Documentación completa, benchmarks publicados por el equipo Qwen |
-| Qwen2.5-0.5B | 0,49 B | 32.768 tokens | Apache 2.0 | HuggingFace, GGUF y cuantizaciones | Generación anterior, ecosistema maduro y muy desplegado |
-| Llama 3.2 1B Instruct | 1,24 B | 128.000 tokens | Llama 3.2 Community License (restricciones para >700 M de usuarios) | HuggingFace, GGUF oficial | Mayor contexto y soporte de herramientas, pero licencia con cláusulas |
-| SmolLM2-360M-Instruct | 0,36 B | 8.192 tokens | Apache 2.0 | HuggingFace, GGUF oficial | Alternativa ultraligera con evaluación publicada y contexto más corto |
+| Este modelo (`qwen-metaphor-unke-camada-15-prompt-textual`) | 596 M | No disponible | No disponible | Hugging Face, safetensors | Fine-tune sin documentar ni evaluar; 0 descargas |
+| Qwen3-0.6B (modelo base probable) | 0,6 B (0,44 B no-embedding) | 32.768 tokens nativos | Apache 2.0 | Hugging Face, amplia variedad de formatos | Documentación completa, benchmarks publicados por el equipo Qwen |
+| Qwen2.5-0.5B | 0,49 B | 32.768 tokens | Apache 2.0 | Hugging Face, GGUF y cuantizaciones | Generación anterior, ecosistema maduro y muy desplegado |
+| Llama 3.2 1B Instruct | 1,24 B | 128.000 tokens | Llama 3.2 Community License (restricciones para >700 M de usuarios) | Hugging Face, GGUF oficial | Mayor contexto y soporte de herramientas, pero licencia con cláusulas |
+| SmolLM2-360M-Instruct | 0,36 B | 8.192 tokens | Apache 2.0 | Hugging Face, GGUF oficial | Alternativa ultraligera con evaluación publicada y contexto más corto |
 
 La comparación se limita a parámetros, contexto, licencia y disponibilidad: no existen resultados de benchmarks de este fine-tune que permitan contrastar calidad frente a las alternativas.
 
 ## Limitaciones y advertencias
 
 - Licencia no declarada: no hay autorización explícita de uso comercial ni de redistribución. Adoptarlo en producción sin aclarar este punto con el autor implica riesgo legal.
-- Model card sin contenido real: es la plantilla automática de HuggingFace, por lo que no hay garantía documentada sobre datos, preprocesado ni intención del ajuste.
+- Model card sin contenido real: es la plantilla automática de Hugging Face, por lo que no hay garantía documentada sobre datos, preprocesado ni intención del ajuste.
 - Ausencia total de evaluación: no se han publicado métricas, lo que impide afirmar que el fine-tune mejora al modelo base en generación de metáforas o en cualquier otra tarea.
 - Riesgo de degradación por sobreajuste: los fine-tunes de modelos de 0,6 B con datasets pequeños suelen perder capacidades generales (código, matemáticas, instrucciones) con facilidad; no hay forma de comprobarlo con la información disponible.
 - Idiomas no declarados: se desconoce si conserva el multilingüismo de Qwen3 o si el ajuste lo ha restringido a un único idioma.
@@ -90,7 +90,7 @@ La comparación se limita a parámetros, contexto, licencia y disponibilidad: no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/luisastellet/qwen-metaphor-unke-camada-15-prompt-textual
+- Modelo en Hugging Face: https://huggingface.co/luisastellet/qwen-metaphor-unke-camada-15-prompt-textual
 - Referencia citada en las etiquetas del repo (Lacoste et al., 2019, sobre impacto ambiental del aprendizaje automático): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de ML enlazada en la model card: https://mlco2.github.io/impact#compute
 - Repositorio, paper, blog o demo del autor: no disponibles

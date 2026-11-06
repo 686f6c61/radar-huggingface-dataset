@@ -69,7 +69,7 @@ No se han encontrado datos de modelos comparables en la información proporciona
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Arya945/smolvla_merged
+- Modelo en Hugging Face: https://huggingface.co/Arya945/smolvla_merged
 - Paper de SmolVLA: https://huggingface.co/papers/2506.01844
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Guía de SmolVLA en LeRobot: https://huggingface.co/docs/lerobot/main/en/smolvla

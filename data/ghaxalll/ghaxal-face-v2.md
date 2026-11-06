@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ghaxalll/ghaxal-face-v2 es un adaptador LoRA de DreamBooth para el modelo de generación de imágenes Krea 2, desarrollado por el usuario Ghaxalll y publicado en HuggingFace. El adaptador se entrena sobre el checkpoint base Krea-2-Raw y se muestra sobre Krea-2-Turbo, permitiendo generar retratos de una identidad visual concreta invocada mediante el token `ghaxal_woman`. El repositorio tiene un tamaño de 0.8 GB e incluye ejemplos de generación con distintos encuadres y condiciones de iluminación.
+Ghaxalll/ghaxal-face-v2 es un adaptador LoRA de DreamBooth para el modelo de generación de imágenes Krea 2, desarrollado por el usuario Ghaxalll y publicado en Hugging Face. El adaptador se entrena sobre el checkpoint base Krea-2-Raw y se muestra sobre Krea-2-Turbo, permitiendo generar retratos de una identidad visual concreta invocada mediante el token `ghaxal_woman`. El repositorio tiene un tamaño de 0.8 GB e incluye ejemplos de generación con distintos encuadres y condiciones de iluminación.
 
 Este tipo de adaptadores es relevante porque permite personalizar un modelo de difusión sin reentrenar el modelo completo, con un coste computacional reducido y un flujo de trabajo sencillo en la librería `diffusers`. La licencia Apache-2.0 facilita su uso comercial, aunque el modelo base Krea 2 puede tener sus propias restricciones que conviene verificar. No se proporcionan detalles sobre el número de parámetros del adaptador ni sobre el dataset de entrenamiento, por lo que la ficha se basa únicamente en la información pública disponible.
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para establecer una comparativa rigurosa con otros adaptadores LoRA de personalización facial. El repositorio no referencia modelos comparables ni ofrece métricas de rendimiento. Se recomienda evaluar el adaptador de forma cualitativa frente a otras soluciones de DreamBooth-LoRA disponibles en HuggingFace para el mismo modelo base, si existen.
+No se dispone de información suficiente para establecer una comparativa rigurosa con otros adaptadores LoRA de personalización facial. El repositorio no referencia modelos comparables ni ofrece métricas de rendimiento. Se recomienda evaluar el adaptador de forma cualitativa frente a otras soluciones de DreamBooth-LoRA disponibles en Hugging Face para el mismo modelo base, si existen.
 
 ## Limitaciones y advertencias
 
@@ -66,6 +66,6 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Ghaxalll/ghaxal-face-v2
+- Repositorio Hugging Face: https://huggingface.co/Ghaxalll/ghaxal-face-v2
 - Modelo base Krea-2-Raw: https://huggingface.co/krea/Krea-2-Raw (referenciado en la model card, sin URL directa en los datos proporcionados)
 - Modelo base Krea-2-Turbo: https://huggingface.co/krea/Krea-2-Turbo (referenciado en el código de ejemplo, sin URL directa en los datos proporcionados)

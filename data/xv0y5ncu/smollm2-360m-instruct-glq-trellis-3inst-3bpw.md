@@ -21,7 +21,7 @@ Este modelo es relevante porque demuestra que es posible llevar un LLM instructi
 
 ## Arquitectura y entrenamiento
 
-El modelo base SmolLM2-360M-Instruct es un transformer decoder-only de 360M de parámetros, entrenado por HuggingFace sobre 4 billones de tokens con una mezcla de datasets como FineWeb-Edu, DCLM y The Stack. El proceso de alineamiento incluyó un paso de supervisión fina (SFT) con datos propios y de Argilla, y luego una optimización por preferencias directas (DPO) con UltraFeedback. El modelo instruct soporta tareas como reescritura de texto, resumen y function calling (aunque para la versión de 1.7B se menciona explícitamente; para la de 360M no se confirma).
+El modelo base SmolLM2-360M-Instruct es un transformer decoder-only de 360M de parámetros, entrenado por Hugging Face sobre 4 billones de tokens con una mezcla de datasets como FineWeb-Edu, DCLM y The Stack. El proceso de alineamiento incluyó un paso de supervisión fina (SFT) con datos propios y de Argilla, y luego una optimización por preferencias directas (DPO) con UltraFeedback. El modelo instruct soporta tareas como reescritura de texto, resumen y function calling (aunque para la versión de 1.7B se menciona explícitamente; para la de 360M no se confirma).
 
 La cuantización GLQ aplica un codebook de tipo trellis (TCQ) con 3 bits por peso, usando la variante 3INST lookup-free que no requiere tablas de búsqueda adicionales. Se aplicó una tasa uniforme en todas las capas, sin capas especiales. El proceso de cuantización se realizó con `glq-quantize` sobre 128 muestras de secuencia de 2048 tokens. La cuantización no cambia la arquitectura; solo comprime los pesos. El checkpoint se ha validado únicamente con vLLM (glq >= 0.8.8), no con el pipeline de Transformers.
 
@@ -84,14 +84,14 @@ No hay comparación con otros modelos de tamaño similar como Qwen2.5-0.5B o Tin
 - La cuantización a 3 bpw introduce una pérdida de perplexity del 11% en wikitext-2, lo que puede manifestarse en respuestas menos coherentes o con más alucinaciones en tareas complejas.
 - No se han realizado evaluaciones de tareas (razonamiento, código, matemáticas) sobre esta cuantización, por lo que su rendimiento en esos dominios es desconocido.
 - El modelo base tiene limitaciones propias de un modelo de 360M: conocimiento limitado, razonamiento básico y sensibilidad a sesgos del dataset.
-- El checkpoint solo ha sido validado con vLLM; el uso con Transformers de HuggingFace no está probado y podría fallar.
+- El checkpoint solo ha sido validado con vLLM; el uso con Transformers de Hugging Face no está probado y podría fallar.
 - La variante 3INST lookup-free puede tener un comportamiento ligeramente distinto en la generación de tokens al comprimir los pesos con un codebook fijo.
 - La licencia Apache-2.0 permite uso comercial, pero se recomienda revisar la documentación del modelo base para cualquier restricción adicional (no se han encontrado).
 - El modelo no soporta function calling confirmado para la variante de 360M; si se necesita esa capacidad, se debe usar la versión de 1.7B.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xv0y5ncu/SmolLM2-360M-Instruct-GLQ-trellis-3inst-3bpw
+- Modelo en Hugging Face: https://huggingface.co/xv0y5ncu/SmolLM2-360M-Instruct-GLQ-trellis-3inst-3bpw
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct
 - Repositorio de GLQ: https://github.com/cnygaard/glq
 - Paper de SmolLM2: https://arxiv.org/abs/2502.02737

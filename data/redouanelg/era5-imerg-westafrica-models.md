@@ -27,7 +27,7 @@ Su relevancia actual es doble: por un lado, ofrece una alternativa de *downscali
 | Periodos de entrenamiento y evaluación | entrenamiento 2000–2018; validación 2019–2020; test 2021–2024 |
 | Objetivo (target) | IMERG V07 Final Run |
 | Tamaño del repositorio | 0,4 GB |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
@@ -88,9 +88,9 @@ No se dispone de datos de benchmarks de modelos externos comparables en la infor
 
 | Modelo | Parámetros | Resolución de salida | RMSE (mm/día) | Correlación | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| U-Net (`unet`) | 29,0 M | 0,1° | 8,61 | 0,613 | CC BY 4.0 | safetensors en HuggingFace |
-| U-Net + precipitación ERA5 (`unet_tp`) | 29,0 M | 0,1° | 8,58 | 0,621 | CC BY 4.0 | safetensors en HuggingFace |
-| Generador GAN (10 miembros) | 7,2 M | 0,1° | 11,71 (un miembro) | 0,421 (un miembro) | CC BY 4.0 | safetensors en HuggingFace |
+| U-Net (`unet`) | 29,0 M | 0,1° | 8,61 | 0,613 | CC BY 4.0 | safetensors en Hugging Face |
+| U-Net + precipitación ERA5 (`unet_tp`) | 29,0 M | 0,1° | 8,58 | 0,621 | CC BY 4.0 | safetensors en Hugging Face |
+| Generador GAN (10 miembros) | 7,2 M | 0,1° | 11,71 (un miembro) | 0,421 (un miembro) | CC BY 4.0 | safetensors en Hugging Face |
 | ERA5 interpolada (referencia) | no aplica | 0,1° | 10,71 | 0,465 | no aplica | datos públicos de Copernicus |
 | Línea base BCSD | no disponible | no disponible | no disponible | no disponible | no disponible | mencionada en el repositorio de código, sin cifras publicadas |
 | Variantes U-Net con SE / CBAM | no disponible | no disponible | no disponible | no disponible | no disponible | descritas en el repositorio de código, sin cifras publicadas |
@@ -109,7 +109,7 @@ No se dispone de datos de benchmarks de modelos externos comparables en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/redouanelg/era5-imerg-westafrica-models
+- Modelo en Hugging Face: https://huggingface.co/redouanelg/era5-imerg-westafrica-models
 - Dataset asociado: https://huggingface.co/datasets/redouanelg/era5-imerg-westafrica-daily
 - Demo interactiva (Space): https://huggingface.co/spaces/redouanelg/westafrica-rainfall-downscaling
 - Registro Zenodo citado en la model card: https://doi.org/10.5281/zenodo.23188297

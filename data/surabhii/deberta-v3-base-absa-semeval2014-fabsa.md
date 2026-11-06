@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Surabhii/deberta-v3-base-absa-semeval2014-fabsa` es un checkpoint de la familia DeBERTa publicado por el usuario Surabhii en HuggingFace. Por el nombre del repositorio, se trata de un ajuste fino (fine-tuning) de DeBERTa-v3-base orientado a análisis de sentimiento basado en aspectos (ABSA, *Aspect-Based Sentiment Analysis*) sobre el corpus SemEval-2014 Task 4, con un sufijo `fabsa` que podría remitir a una variante de ABSA financiero, extremo este que no se puede confirmar con la información disponible. El dato objetivo es el recuento de parámetros: 184.424.451, coherente con DeBERTa-v3-base (86 M en el encoder más 98 M en la matriz de embeddings), no con un modelo generativo de gran tamaño.
+`Surabhii/deberta-v3-base-absa-semeval2014-fabsa` es un checkpoint de la familia DeBERTa publicado por el usuario Surabhii en Hugging Face. Por el nombre del repositorio, se trata de un ajuste fino (fine-tuning) de DeBERTa-v3-base orientado a análisis de sentimiento basado en aspectos (ABSA, *Aspect-Based Sentiment Analysis*) sobre el corpus SemEval-2014 Task 4, con un sufijo `fabsa` que podría remitir a una variante de ABSA financiero, extremo este que no se puede confirmar con la información disponible. El dato objetivo es el recuento de parámetros: 184.424.451, coherente con DeBERTa-v3-base (86 M en el encoder más 98 M en la matriz de embeddings), no con un modelo generativo de gran tamaño.
 
 El modelo resuelve un problema acotado y clásico en NLP industrial: determinar la polaridad de sentimiento asociada a un aspecto concreto dentro de un texto (por ejemplo, "la batería es excelente pero el software falla"), en lugar de asignar una única etiqueta global al documento. Es relevante para pipelines de análisis de opiniones, voz del cliente y monitorización de producto, donde la granularidad por aspecto aporta señal accionable que un clasificador de sentimiento documental no captura.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Surabhii/deberta-v3-base-absa-semeval2014-fabsa | 184,4 M | No disponible (base: 512) | ABSA (fine-tuning) | No disponible | HuggingFace, 113 descargas, 0 likes |
+| Surabhii/deberta-v3-base-absa-semeval2014-fabsa | 184,4 M | No disponible (base: 512) | ABSA (fine-tuning) | No disponible | Hugging Face, 113 descargas, 0 likes |
 | microsoft/deberta-v3-base | 184,4 M | 512 | Modelo base, requiere fine-tuning | MIT | Ampliamente disponible |
 | FacebookAI/roberta-base | 125 M | 512 | Modelo base, requiere fine-tuning | MIT | Ampliamente disponible |
 | google-bert/bert-base-uncased | 110 M | 512 | Modelo base, requiere fine-tuning | Apache 2.0 | Ampliamente disponible |
@@ -85,7 +85,7 @@ Los datos de las filas comparativas corresponden a los modelos base de referenci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Surabhii/deberta-v3-base-absa-semeval2014-fabsa
+- Hugging Face: https://huggingface.co/Surabhii/deberta-v3-base-absa-semeval2014-fabsa
 - Modelo base de referencia (DeBERTa-v3): https://huggingface.co/microsoft/deberta-v3-base
 - Paper DeBERTa (He et al., 2020): https://arxiv.org/abs/2006.03654
 - Paper DeBERTa-v3 (He et al., 2021): https://arxiv.org/abs/2111.09543

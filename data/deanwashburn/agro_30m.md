@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Agro_30M es un modelo publicado en HuggingFace por el usuario deanwashburn bajo licencia MIT. Por el nombre y el tamano del repositorio (0,1 GB) se deduce que se trata de un modelo de aproximadamente 30 millones de parametros, presumiblemente orientado al dominio agroalimentario, aunque la model card no aporta ninguna descripcion, arquitectura ni detalles de entrenamiento. El repositorio no incluye pipeline declarado, idiomas soportados ni resultados de evaluacion.
+Agro_30M es un modelo publicado en Hugging Face por el usuario deanwashburn bajo licencia MIT. Por el nombre y el tamano del repositorio (0,1 GB) se deduce que se trata de un modelo de aproximadamente 30 millones de parametros, presumiblemente orientado al dominio agroalimentario, aunque la model card no aporta ninguna descripcion, arquitectura ni detalles de entrenamiento. El repositorio no incluye pipeline declarado, idiomas soportados ni resultados de evaluacion.
 
 La informacion disponible es minima: unicamente la licencia (MIT), el identificador del autor y las fechas de creacion y actualizacion (31 de octubre de 2026). No hay publicaciones, papers ni demos asociados conocidos. Cualquier uso en produccion requeriria una evaluacion empirica directa del checkpoint por parte del equipo que lo adopte.
 
@@ -87,5 +87,5 @@ La comparativa muestra que Agro_30M carece de la documentacion y validacion publ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/deanwashburn/Agro_30M
+- Hugging Face: https://huggingface.co/deanwashburn/Agro_30M
 - No se han encontrado papers, blogs, repositorios adicionales ni demos asociados en la informacion disponible.

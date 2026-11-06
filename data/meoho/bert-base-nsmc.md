@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `MeoHo/bert-base-nsmc` es un checkpoint de BERT base (110 millones de parámetros) subido al Hub de HuggingFace por el usuario MeoHo. Por su nombre, se trata de un fine-tuning de un BERT base sobre NSMC (Naver Sentiment Movie Corpus), el dataset de referencia para clasificación de sentimientos en coreano compuesto por reseñas de películas etiquetadas como positivas o negativas. El pipeline declarado es `feature-extraction`, lo que indica que el checkpoint está orientado a la extracción de representaciones vectoriales, aunque su origen sugiere que fue entrenado para clasificación de sentencias.
+El modelo `MeoHo/bert-base-nsmc` es un checkpoint de BERT base (110 millones de parámetros) subido al Hub de Hugging Face por el usuario MeoHo. Por su nombre, se trata de un fine-tuning de un BERT base sobre NSMC (Naver Sentiment Movie Corpus), el dataset de referencia para clasificación de sentimientos en coreano compuesto por reseñas de películas etiquetadas como positivas o negativas. El pipeline declarado es `feature-extraction`, lo que indica que el checkpoint está orientado a la extracción de representaciones vectoriales, aunque su origen sugiere que fue entrenado para clasificación de sentencias.
 
 La model card está prácticamente vacía: no se especifica licencia, idiomas, arquitectura detallada, ni procedimiento de entrenamiento. Los únicos datos verificables son el número de parámetros (110.617.344, consistente con la arquitectura BERT base), el tamaño del repositorio (0,4 GB) y el uso de pesos en formato `safetensors`. La etiqueta `arxiv:1910.09700` referencia el paper original de BERT (Devlin et al., 2019). Aunque no hay documentación oficial, el checkpoint parece ser una variante más de los múltiples `bert-base-nsmc` que circulan en el Hub, todos ellos fine-tunings del mismo corpus coreano.
 
@@ -49,17 +49,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - VRAM estimada: aproximadamente 440 MB en fp32, 220 MB en fp16 y 110 MB en INT8 para inferencia con batch de 1 y secuencias de 512 tokens.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM (por ejemplo, NVIDIA GTX 1650, RTX 2060, etc.) es suficiente. También funciona en CPU con latencias de decenas de milisegundos por secuencia.
 - Cabe en GPUs de consumo: sí, en prácticamente cualquier GPU moderna.
-- Opciones de despliegue: HuggingFace `transformers` con PyTorch, `text-embeddings-inference` (etiqueta presente en el repo), `sentence-transformers` para embeddings, u ONNX Runtime para optimización en CPU.
+- Opciones de despliegue: Hugging Face `transformers` con PyTorch, `text-embeddings-inference` (etiqueta presente en el repo), `sentence-transformers` para embeddings, u ONNX Runtime para optimización en CPU.
 - Latencia estimada: en una GPU moderna (RTX 3090) la inferencia de una secuencia corta (<128 tokens) tarda entre 2 y 5 ms; en CPU puede tardar entre 20 y 100 ms según el hardware.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MeoHo/bert-base-nsmc | 110M | 512 | Sentimiento coreano | no disponible | HuggingFace |
-| GTU9/bert-base-nsmc | 110M | 512 | Sentimiento coreano | no disponible | HuggingFace |
-| sangrimlee/bert-base-multilingual-cased-nsmc | 178M | 512 | Sentimiento coreano (multilingue) | no disponible | HuggingFace + Spark NLP |
-| klue/bert-base | 110M | 512 | Modelo base coreano | MIT | HuggingFace |
+| MeoHo/bert-base-nsmc | 110M | 512 | Sentimiento coreano | no disponible | Hugging Face |
+| GTU9/bert-base-nsmc | 110M | 512 | Sentimiento coreano | no disponible | Hugging Face |
+| sangrimlee/bert-base-multilingual-cased-nsmc | 178M | 512 | Sentimiento coreano (multilingue) | no disponible | Hugging Face + Spark NLP |
+| klue/bert-base | 110M | 512 | Modelo base coreano | MIT | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos. `klue/bert-base` es el modelo base coreano más utilizado y suele servir como punto de partida para fine-tunings como este.
 
@@ -74,7 +74,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos. `klue/ber
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MeoHo/bert-base-nsmc
+- Hugging Face: https://huggingface.co/MeoHo/bert-base-nsmc
 - Paper de BERT (arxiv:1910.09700): https://arxiv.org/abs/1910.09700
 - Modelo similar GTU9/bert-base-nsmc: https://huggingface.co/GTU9/bert-base-nsmc
 - Modelo similar sangrimlee (Spark NLP): https://sparknlp.org/2023/11/01/bert_sequence_classifier_base_multilingual_cased_nsmc_ko.html

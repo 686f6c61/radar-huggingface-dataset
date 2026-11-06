@@ -6,7 +6,7 @@ Este repositorio contiene un adaptador LoRA de ajuste supervisado (SFT) entrenad
 
 La relevancia de la ficha es limitada pero concreta: se trata de un ejemplo tipico de adaptador de bajo rango generado con el stack Unsloth + TRL + PEFT sobre una base de 4.000 millones de parametros. El interes practico esta en que demuestra el flujo de trabajo estandar para especializar un modelo pequeno y denso en una GPU de consumo, sin necesidad de reentrenar el modelo completo.
 
-La model card publicada es la plantilla por defecto de HuggingFace sin cumplimentar: no declara autor real, datos de entrenamiento, hiperparametros, licencia, idiomas ni resultados de evaluacion. Cualquier dato tecnico del adaptador distinto del modelo base y de la libreria empleada debe considerarse no disponible.
+La model card publicada es la plantilla por defecto de Hugging Face sin cumplimentar: no declara autor real, datos de entrenamiento, hiperparametros, licencia, idiomas ni resultados de evaluacion. Cualquier dato tecnico del adaptador distinto del modelo base y de la libreria empleada debe considerarse no disponible.
 
 ## Especificaciones tecnicas
 
@@ -69,11 +69,11 @@ Los datos de la tabla corresponden a la documentacion publica de cada modelo (re
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Adaptador KKawa2700/geniac_prize_2026_stage1_3 (sobre Qwen3-4B) | ~4.000 M en el base + adaptador | No declarado (base: 32.768, ampliable a 131.072 con YaRN) | No disponible en la model card | HuggingFace, repositorio de 0,1 GB |
-| Qwen3-4B-Base (modelo subyacente) | ~4.000 M | 32.768 nativos, 131.072 con YaRN | Apache 2.0 | HuggingFace |
-| Llama 3.2 3B | ~3.200 M | 128.000 | Licencia comunitaria Llama 3.2 | HuggingFace, Meta |
-| Gemma 3 4B | ~4.000 M | 128.000 | Licencia Gemma | HuggingFace, Google |
-| Phi-4-mini | ~3.800 M | 128.000 | MIT | HuggingFace, Microsoft |
+| Adaptador KKawa2700/geniac_prize_2026_stage1_3 (sobre Qwen3-4B) | ~4.000 M en el base + adaptador | No declarado (base: 32.768, ampliable a 131.072 con YaRN) | No disponible en la model card | Hugging Face, repositorio de 0,1 GB |
+| Qwen3-4B-Base (modelo subyacente) | ~4.000 M | 32.768 nativos, 131.072 con YaRN | Apache 2.0 | Hugging Face |
+| Llama 3.2 3B | ~3.200 M | 128.000 | Licencia comunitaria Llama 3.2 | Hugging Face, Meta |
+| Gemma 3 4B | ~4.000 M | 128.000 | Licencia Gemma | Hugging Face, Google |
+| Phi-4-mini | ~3.800 M | 128.000 | MIT | Hugging Face, Microsoft |
 
 No se dispone de datos de rendimiento comparado para el adaptador, por lo que la comparativa se limita a parametros, contexto y licencia.
 
@@ -91,8 +91,8 @@ No se dispone de datos de rendimiento comparado para el adaptador, por lo que la
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/KKawa2700/geniac_prize_2026_stage1_3
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/qwen3-4b-base-unsloth-bnb-4bit
+- Hugging Face del adaptador: https://huggingface.co/KKawa2700/geniac_prize_2026_stage1_3
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/qwen3-4b-base-unsloth-bnb-4bit
 - Modelo Qwen3-4B-Base original: https://huggingface.co/Qwen/Qwen3-4B-Base
 - Repositorio Qwen3 (codigo): https://github.com/QwenLM/Qwen3
 - Blog de Qwen3: https://qwenlm.github.io/blog/qwen3/

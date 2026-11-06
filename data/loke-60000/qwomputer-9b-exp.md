@@ -72,10 +72,10 @@ Los datos de la model card se refieren a conjuntos sinteticos de 40 problemas po
 
 | Modelo | Parametros | Contexto | Aritmetica exacta | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwomputer 9B (experimental) | 18,2B almacenados (9,0B Qwen) | no disponible | Si, via CPU RV32IM en pesos | Apache-2.0 / MIT (codigo) | HuggingFace, requiere RvChat |
-| Qwenputer 4B (divagr1925) | 4B base | no disponible | Si, via CPU RV32IM en pesos | Apache-2.0 / MIT (codigo) | HuggingFace |
-| Qwen3.5-9B (base) | 9,0B | no disponible | No (aritmetica aproximada) | Apache-2.0 | HuggingFace |
-| Qwen3.5-4B (base) | 4B | no disponible | No (aritmetica aproximada) | Apache-2.0 | HuggingFace |
+| Qwomputer 9B (experimental) | 18,2B almacenados (9,0B Qwen) | no disponible | Si, via CPU RV32IM en pesos | Apache-2.0 / MIT (codigo) | Hugging Face, requiere RvChat |
+| Qwenputer 4B (divagr1925) | 4B base | no disponible | Si, via CPU RV32IM en pesos | Apache-2.0 / MIT (codigo) | Hugging Face |
+| Qwen3.5-9B (base) | 9,0B | no disponible | No (aritmetica aproximada) | Apache-2.0 | Hugging Face |
+| Qwen3.5-4B (base) | 4B | no disponible | No (aritmetica aproximada) | Apache-2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -92,7 +92,7 @@ Los datos de la model card se refieren a conjuntos sinteticos de 40 problemas po
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Loke-60000/qwomputer-9b-exp
+- Hugging Face: https://huggingface.co/Loke-60000/qwomputer-9b-exp
 - Modelo base Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B
 - Modelo base Qwen3.5-4B-Qwenputer: https://huggingface.co/divagr1925/Qwen3.5-4B-Qwenputer
 - Repositorio Qwenputer: https://github.com/divagr18/qwenputer

@@ -100,7 +100,7 @@ Los resultados de busqueda web proporcionados no contienen informacion relevante
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ianua/OvisOCR2
+- Modelo en Hugging Face: https://huggingface.co/ianua/OvisOCR2
 - Repositorio alternativo citado en el codigo de ejemplo: https://huggingface.co/ATH-MaaS/OvisOCR2
 - Informe tecnico (Technical Report): https://arxiv.org/abs/2607.13639
 - Demo online: https://huggingface.co/spaces/ATH-MaaS/OvisOCR2

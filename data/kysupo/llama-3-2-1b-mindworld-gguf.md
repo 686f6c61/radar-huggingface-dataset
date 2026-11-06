@@ -96,7 +96,7 @@ No se han publicado resultados de benchmarks generalistas (MMLU, HumanEval, GSM8
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kysupo/Llama-3.2-1B-Mindworld-GGUF
+- Hugging Face: https://huggingface.co/kysupo/Llama-3.2-1B-Mindworld-GGUF
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
 - Licencia Llama 3.2: https://llama.meta.com/llama3_2/license/
 - Política de uso aceptable: https://llama.meta.com/llama3_2/use-policy/

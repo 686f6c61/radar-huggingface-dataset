@@ -73,6 +73,6 @@ No se dispone de informacion sobre otros adaptadores LoRA entrenados con GRPO so
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/antrip03/grpo-kl_beta03-s123
+- Repositorio en Hugging Face: https://huggingface.co/antrip03/grpo-kl_beta03-s123
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Referencia a GRPO (paper original): https://arxiv.org/abs/1910.09700 (citado en la model card, aunque corresponde al articulo de Lacoste et al. sobre impacto ambiental, no al algoritmo GRPO)

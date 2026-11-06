@@ -89,7 +89,7 @@ No se han identificado en la busqueda web alternativas de terceros equivalentes 
 
 ## Enlaces
 
-- HuggingFace (este repositorio): https://huggingface.co/Jordine/rlport-hkl_jord9v_ggrp32_pl4_20261022_000758
+- Hugging Face (este repositorio): https://huggingface.co/Jordine/rlport-hkl_jord9v_ggrp32_pl4_20261022_000758
 - Checkpoint hermano `grpo_self_pl3`: https://huggingface.co/Jordine/rlport-hkl_jord9v_grpo_self_pl3_20261017_114547
 - Checkpoint hermano `L_pl5`: https://huggingface.co/Jordine/rlport-hkl_jord9v_L_pl5_20261017_231721
 - Checkpoint hermano `pl7`: https://huggingface.co/Jordine/rlport-hkl_jord9v_pl7_20261017_153438

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GMLINUX-9B es un modelo publicado en HuggingFace por el usuario `emperorofrome` bajo licencia Apache-2.0. Por el identificador se deduce un tamano de aproximadamente 9.000 millones de parametros, pero la model card publicada no contiene ninguna descripcion tecnica: se limita a la declaracion de licencia. No hay informacion sobre arquitectura, datos de entrenamiento, tokenizador, idiomas ni formato de pesos.
+GMLINUX-9B es un modelo publicado en Hugging Face por el usuario `emperorofrome` bajo licencia Apache-2.0. Por el identificador se deduce un tamano de aproximadamente 9.000 millones de parametros, pero la model card publicada no contiene ninguna descripcion tecnica: se limita a la declaracion de licencia. No hay informacion sobre arquitectura, datos de entrenamiento, tokenizador, idiomas ni formato de pesos.
 
 El repositorio registra 0 descargas y 0 "likes" en la fecha de consulta (creacion el 25 de septiembre de 2026), y no tiene pipeline declarado. Esto es consistente con un modelo recien subido, un experimento privado o un placeholder, mas que con un lanzamiento con documentacion publica.
 
@@ -76,7 +76,7 @@ No hay datos publicados de GMLINUX-9B que permitan una comparacion tecnica rigur
 | GMLINUX-9B (emperorofrome) | no disponible (9B por el identificador) | no disponible | Apache-2.0 | 0 descargas, 0 likes | — |
 | Serie GLM 9B (Zhipu AI) | ~9B | no detallado en la busqueda | no detallado | open source segun la noticia | sin relacion confirmada |
 | Qwen3.8-9B distill (Empero) | 9B | 262K segun la guia de mindstudio.ai | no detallado | 1M+ descargas agregadas del laboratorio | sin relacion confirmada |
-| Qwen3.5-9B-Uncensored-HauhauCS-Aggressive | ~9B | no detallado | no detallado | repositorio publico en HuggingFace | sin relacion confirmada |
+| Qwen3.5-9B-Uncensored-HauhauCS-Aggressive | ~9B | no detallado | no detallado | repositorio publico en Hugging Face | sin relacion confirmada |
 
 ## Limitaciones y advertencias
 
@@ -92,7 +92,7 @@ No hay datos publicados de GMLINUX-9B que permitan una comparacion tecnica rigur
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/emperorofrome/GMLINUX-9B
+- Hugging Face: https://huggingface.co/emperorofrome/GMLINUX-9B
 - Empero, laboratorio de investigacion en IA (mencionado en la busqueda, sin relacion confirmada): https://empero.org/
 - Guia sobre Qwen3.8-9B distill de Empero (contexto de la categoria 9B, sin relacion confirmada): https://www.mindstudio.ai/blog/run-qwen3-8-9b-distill-single-gpu
 - Qwen3.5-9B-Uncensored-HauhauCS-Aggressive (modelo de la misma franja de tamano, sin relacion confirmada): https://huggingface.co/HauhauCS/Qwen3.5-9B-Uncensored-HauhauCS-Aggressive

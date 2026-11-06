@@ -4,7 +4,7 @@
 
 El repositorio `Rive-ra19/grad-prompt-engineering` no contiene un modelo de lenguaje entrenado, sino una nota de investigación exploratoria sobre ingeniería de *prompts*. Publicado bajo licencia CC-BY-4.0, el repositorio documenta el alcance de una pregunta de investigación, los posibles factores de confusión, una propuesta de comparación con líneas base emparejadas y los requisitos de reproducibilidad antes de que se reporte cualquier resultado de *benchmark*. El autor, Rive-ra19, deja explícito que las secciones etiquetadas como planes o hipótesis no deben interpretarse como resultados experimentales.
 
-El repositorio contiene dos archivos: `analysis.md` (artefacto principal) y `README.md` (documentación). Aunque los metadatos de HuggingFace indican un peso `safetensors` de 49.600 parámetros y el tag `transformer`, la model card aclara que no se incluye un *checkpoint* entrenado ni código liberado. Por tanto, este repositorio no es un modelo utilizable para inferencia, sino un documento de planificación de investigación.
+El repositorio contiene dos archivos: `analysis.md` (artefacto principal) y `README.md` (documentación). Aunque los metadatos de Hugging Face indican un peso `safetensors` de 49.600 parámetros y el tag `transformer`, la model card aclara que no se incluye un *checkpoint* entrenado ni código liberado. Por tanto, este repositorio no es un modelo utilizable para inferencia, sino un documento de planificación de investigación.
 
 ## Especificaciones tecnicas
 
@@ -62,12 +62,12 @@ No disponible. Este repositorio no pertenece a la categoría de modelos de lengu
 - **Sin resultados experimentales**: la model card advierte que las secciones de planes o hipótesis no deben interpretarse como hallazgos validados.
 - **Alcance limitado**: el contenido es exploratorio y no incluye código, datos de entrenamiento ni *checkpoints*.
 - **Licencia CC-BY-4.0**: permite uso y adaptación con atribución, pero los términos de las fuentes de datos externas deben revisarse por separado.
-- **Riesgo de confusión**: los metadatos de HuggingFace (tags `safetensors`, `transformer`, 49.600 parámetros) pueden inducir a error a quien no lea la model card; es un repositorio de documentación, no un modelo.
+- **Riesgo de confusión**: los metadatos de Hugging Face (tags `safetensors`, `transformer`, 49.600 parámetros) pueden inducir a error a quien no lea la model card; es un repositorio de documentación, no un modelo.
 - **Fecha de creación futura**: el repositorio está fechado en 2026-08-27, lo que sugiere que es un artefacto de planificación a largo plazo o un error de fecha; no afecta al contenido.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Rive-ra19/grad-prompt-engineering
+- Repositorio en Hugging Face: https://huggingface.co/Rive-ra19/grad-prompt-engineering
 - Guía de *prompt engineering* de DAIR-AI: https://github.com/dair-ai/Prompt-Engineering-Guide
 - Guía de *prompt engineering* (promptingguide.ai): https://www.promptingguide.ai/
 - Artículo de arXiv sobre diseño y ingeniería de *prompts*: https://arxiv.org/html/2401.14423v3

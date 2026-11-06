@@ -13,7 +13,7 @@ La relevancia práctica es doble: por un lado, permite ejecutar en hardware loca
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Transformador causal denso híbrido con codificador de visión. 64 capas de lenguaje: 48 capas Gated DeltaNet (atención lineal recurrente) y 16 capas de atención con gating. Hidden size 5.120; FFN size 17.408. Cabeza MTP/NextN embebida nativa, más sidecar HauhauCS FastMTP de 32K |
-| Parametros totales | 27B según denominación y model card. El recuento de safetensors reportado en la ficha de HuggingFace es de 1.863.907.840 (~1,86B), dato inconsistente con un modelo de 27B; probablemente corresponde solo a un subconjunto (proyector/visión) o a un error de indexado. No disponible una cifra verificada |
+| Parametros totales | 27B según denominación y model card. El recuento de safetensors reportado en la ficha de Hugging Face es de 1.863.907.840 (~1,86B), dato inconsistente con un modelo de 27B; probablemente corresponde solo a un subconjunto (proyector/visión) o a un error de indexado. No disponible una cifra verificada |
 | Parametros activos | No aplica (modelo denso, no MoE) |
 | Longitud de contexto | 262.144 tokens nativos; extensible hasta 1.000.000 según la model card |
 | Tipos de cuantizacion | Q8_K_P, Q8_0, Q6_K_P, Q6_K, Q5_K_P, Q5_K_M, Q4_K_P, Q4_K_M, IQ4_XS, Q3_K_P, Q3_K_M, IQ3_M, IQ3_XS, Q2_K_P, IQ2_M. Se publican ficheros para las variantes K_P e IQ; Q8_0, Q6_K, Q5_K_M, Q4_K_M y Q3_K_M aparecen como referencia sin fichero con tamaño publicado |
@@ -80,7 +80,7 @@ Estas cifras son afirmaciones del autor, no verificadas de forma independiente, 
 - Cabe en GPU de consumo: sí, desde IQ2_M en 12 GB hasta Q4_K_P en 24 GB. Para Q6_K_P y Q8_K_P se necesita hardware profesional o multi-GPU.
 - Opciones de despliegue: llama.cpp, LM Studio, y cualquier runtime compatible con GGUF; el autor menciona compatibilidad directa con ambos sin builds especiales. El soporte exacto de FastMTP y del proyector de visión en vLLM, TGI u Ollama no está documentado (no disponible), por lo que conviene verificar la versión del runtime antes de asumir aceleración.
 - Latencia y throughput absolutos: no disponibles. Solo se conocen los multiplicadores relativos de FastMTP indicados en la sección anterior.
-- Nota del autor: el widget de compatibilidad de hardware de HuggingFace puede no reconocer las cuantizaciones K_P; si faltan ficheros, hay que usar "View variants" o "Files and versions". En LM Studio, las K_P pueden mostrarse como "?" en la columna de cuantización, un problema meramente visual.
+- Nota del autor: el widget de compatibilidad de hardware de Hugging Face puede no reconocer las cuantizaciones K_P; si faltan ficheros, hay que usar "View variants" o "Files and versions". En LM Studio, las K_P pueden mostrarse como "?" en la columna de cuantización, un problema meramente visual.
 
 ## Comparativa con modelos similares
 
@@ -101,7 +101,7 @@ La ventaja declarada de esta variante frente a las alternativas es la combinaci�
 - Riesgo elevado de contenido dañino: la combinación de capacidades multimodales, contexto largo y ausencia de rechazos amplía la superficie de generación de contenido ilegal, abusivo o peligroso si se usa sin control.
 - Alucinación: no hay benchmarks publicados que cuantifiquen la fiabilidad factual. Un ajuste de uncensoring agresivo suele degradar la calibración, por lo que se recomienda verificación humana en cualquier uso informativo.
 - Fiabilidad en contexto largo y trabajo agéntico: el propio autor advierte que para trabajo agéntico crítico en contexto largo la variante "Balanced" es la opción segura por defecto, lo que implica que Aggressive prioriza la franqueza sobre la fiabilidad.
-- Inconsistencia de parámetros: la ficha de HuggingFace reporta 1.863.907.840 parámetros en safetensors frente a los 27B del nombre y la model card. Hay que tratar cualquier cálculo de coste o VRAM con cautela hasta confirmar el dato.
+- Inconsistencia de parámetros: la ficha de Hugging Face reporta 1.863.907.840 parámetros en safetensors frente a los 27B del nombre y la model card. Hay que tratar cualquier cálculo de coste o VRAM con cautela hasta confirmar el dato.
 - Licencia: se declara Apache-2.0, pero el modelo es un derivado de Qwen/Qwen3.8-27B. Conviene verificar la licencia y la política de uso aceptable del modelo base antes de un uso comercial, ya que los ajustes de uncensoring pueden entrar en conflicto con dichas políticas aunque la licencia del derivado sea permisiva.
 - Idiomas: solo se declaran inglés, chino y multilingüe genérico. No hay garantía de calidad en castellano, ni evaluación publicada.
 - Cuantizaciones extremas: por debajo de Q4 la degradación puede ser notable; IQ2_M y Q2_K_P sacrifican calidad por tamaño y no son adecuadas para tareas de razonamiento exigentes.
@@ -111,7 +111,7 @@ La ventaja declarada de esta variante frente a las alternativas es la combinaci�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/htrhdjy/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF
+- Modelo en Hugging Face: https://huggingface.co/htrhdjy/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio alternativo citado en la model card (autor original del perfil): https://huggingface.co/HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF
 - Discord del autor: https://discord.gg/SZ5vacTXYf

@@ -68,8 +68,8 @@ No se dispone de información sobre otras políticas comparables salvo el modelo
 
 | Modelo | Relación | Observación / acciones | Frecuencia | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `suraj-phanindra/microduck-sprint-hc9-aifund` | Fine-tune por elitist hill climbing | 61-D / 14 acciones | 50 Hz | ONNX + manifest | no disponible | HuggingFace |
-| `jrubiosainz/microduck-game-sprinter-remix5` | Modelo base | 61-D / 14 acciones (heredado) | 50 Hz (heredado) | no disponible | no disponible | HuggingFace |
+| `suraj-phanindra/microduck-sprint-hc9-aifund` | Fine-tune por elitist hill climbing | 61-D / 14 acciones | 50 Hz | ONNX + manifest | no disponible | Hugging Face |
+| `jrubiosainz/microduck-game-sprinter-remix5` | Modelo base | 61-D / 14 acciones (heredado) | 50 Hz (heredado) | no disponible | no disponible | Hugging Face |
 
 No se identifican en la información proporcionada otros modelos de la misma categoría (políticas de locomoción para microduck) con datos verificables de parámetros, contexto o rendimiento.
 
@@ -88,10 +88,10 @@ No se identifican en la información proporcionada otros modelos de la misma cat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/suraj-phanindra/microduck-sprint-hc9-aifund
+- Modelo en Hugging Face: https://huggingface.co/suraj-phanindra/microduck-sprint-hc9-aifund
 - Modelo base: https://huggingface.co/jrubiosainz/microduck-game-sprinter-remix5
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento RL: `pollen-robotics/microduck_rl` (rama `main`, commit `6ff40704a`)
 - Documentación del manifiesto de políticas: `docs/policy-manifest.md` en el repositorio del daemon (referenciado en la model card)
 
-Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los únicos enlaces verificables son los anteriores, extraídos de la model card y de los metadatos de HuggingFace.
+Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los únicos enlaces verificables son los anteriores, extraídos de la model card y de los metadatos de Hugging Face.

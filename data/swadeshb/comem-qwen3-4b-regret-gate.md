@@ -74,5 +74,5 @@ No se dispone de datos de rendimiento ni especificaciones detalladas de modelos 
 
 ## Enlaces
 
-- [HuggingFace - swadeshb/comem-qwen3-4b-regret-gate](https://huggingface.co/swadeshb/comem-qwen3-4b-regret-gate)
+- [Hugging Face - swadeshb/comem-qwen3-4b-regret-gate](https://huggingface.co/swadeshb/comem-qwen3-4b-regret-gate)
 - [Modelo base - YWZBrandon/summary-sft-qwen3-4b](https://huggingface.co/YWZBrandon/summary-sft-qwen3-4b) (enlace inferido del campo base_model, no verificado)

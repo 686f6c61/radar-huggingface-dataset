@@ -88,7 +88,7 @@ Nota: los datos de los modelos comparables provienen de conocimiento general y n
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bcckfdn/cevher-test-10-GGUF
+- Repositorio Hugging Face: https://huggingface.co/bcckfdn/cevher-test-10-GGUF
 - Modelo base: https://huggingface.co/bcckfdn/cevher-test-10
 - Reglas de licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
 - llama.cpp: https://github.com/ggml-org/llama.cpp

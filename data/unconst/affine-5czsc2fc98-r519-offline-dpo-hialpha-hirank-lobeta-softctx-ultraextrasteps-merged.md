@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `unconst/Affine-5czsc2fc98-r519-offline-dpo-hialpha-hirank-lobeta-softctx-ultraextrasteps-merged` es un checkpoint fusionado de LoRA a partir del modelo base `kevin954/Affine-5dfqbbh8ev-sft`. Según los tags de HuggingFace, emplea una arquitectura MoE (mezcla de expertos) basada en Qwen 3.5 MoE y soporta tareas de imagen-texto a texto, lo que sugiere capacidades multimodales. El nombre del repositorio indica un entrenamiento con DPO offline con hiperparámetros específicos (alpha alto, rank alto, beta bajo, contexto suave y pasos extra), aunque no se proporcionan detalles adicionales.
+El modelo `unconst/Affine-5czsc2fc98-r519-offline-dpo-hialpha-hirank-lobeta-softctx-ultraextrasteps-merged` es un checkpoint fusionado de LoRA a partir del modelo base `kevin954/Affine-5dfqbbh8ev-sft`. Según los tags de Hugging Face, emplea una arquitectura MoE (mezcla de expertos) basada en Qwen 3.5 MoE y soporta tareas de imagen-texto a texto, lo que sugiere capacidades multimodales. El nombre del repositorio indica un entrenamiento con DPO offline con hiperparámetros específicos (alpha alto, rank alto, beta bajo, contexto suave y pasos extra), aunque no se proporcionan detalles adicionales.
 
 Con aproximadamente 35.107 millones de parámetros totales y un tamaño de repositorio de 70,2 GB (probablemente en precisión fp16/bf16), este modelo se posiciona en la gama de los MoE de tamaño medio-grande. Sin embargo, la ausencia de documentación pública, la falta de una licencia declarada y el hecho de que el autor lo describe como un "salvamento de checkpoint privado" y "no una submission hasta que se supere la etapa 5" indican que se trata de un trabajo experimental y no de un lanzamiento oficial.
 
@@ -74,5 +74,5 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/unconst/Affine-5czsc2fc98-r519-offline-dpo-hialpha-hirank-lobeta-softctx-ultraextrasteps-merged)
+- [Página del modelo en Hugging Face](https://huggingface.co/unconst/Affine-5czsc2fc98-r519-offline-dpo-hialpha-hirank-lobeta-softctx-ultraextrasteps-merged)
 - [Modelo base: kevin954/Affine-5dfqbbh8ev-sft](https://huggingface.co/kevin954/Affine-5dfqbbh8ev-sft) (sin documentación pública)

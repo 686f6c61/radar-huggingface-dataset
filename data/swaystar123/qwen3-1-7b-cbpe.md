@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-1.7B-CBPE es un modelo experimental de generación de texto desarrollado por SwayStar123, disponible en HuggingFace bajo licencia Apache 2.0. Parte de Qwen3-1.7B-Base de Qwen, al que se le sustituye el vocabulario BPE original de 151k entradas por un vocabulario de BPE Combinatorial (CBPE) de 131k filas, y después se somete a un fine-tuning completo de "curación" (healing) sobre unos 47.000 millones de tokens. El objetivo es resolver la ineficiencia de tokenización de los tokenizadores BPE estándar: el mismo texto necesita aproximadamente 1,6 veces menos tokens, lo que permite meter un 1,5x más de texto en la ventana de contexto y generar un 1,5x más de texto por segundo.
+Qwen3-1.7B-CBPE es un modelo experimental de generación de texto desarrollado por SwayStar123, disponible en Hugging Face bajo licencia Apache 2.0. Parte de Qwen3-1.7B-Base de Qwen, al que se le sustituye el vocabulario BPE original de 151k entradas por un vocabulario de BPE Combinatorial (CBPE) de 131k filas, y después se somete a un fine-tuning completo de "curación" (healing) sobre unos 47.000 millones de tokens. El objetivo es resolver la ineficiencia de tokenización de los tokenizadores BPE estándar: el mismo texto necesita aproximadamente 1,6 veces menos tokens, lo que permite meter un 1,5x más de texto en la ventana de contexto y generar un 1,5x más de texto por segundo.
 
 La relevancia de este trabajo es principalmente de investigación: demuestra que una representación factorizada del vocabulario (cada token es una tupla de variación, prefijo, núcleo y sufijo) puede mantener una calidad de modelado casi equivalente (coste de +3,1% en bits por byte) a cambio de una compresión sustancialmente mejor. Es un modelo base, sin instrucción tuning, y requiere código personalizado (`trust_remote_code=True`), por lo que no es compatible con vLLM, llama.cpp ni los pipelines estándar de transformers.
 
@@ -88,6 +88,6 @@ Frente a su modelo base, CBPE ofrece mejor compresión (1,6x menos tokens) y may
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SwayStar123/Qwen3-1.7B-CBPE
+- Modelo en Hugging Face: https://huggingface.co/SwayStar123/Qwen3-1.7B-CBPE
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B-Base
 - Repositorio del método, tokenizador y código: https://github.com/SwayStar123/CombinatorialBPE

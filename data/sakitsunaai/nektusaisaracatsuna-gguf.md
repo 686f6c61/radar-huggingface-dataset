@@ -57,10 +57,10 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| NektusAISaracatsuna-GGUF | 1.346.471.936 | no disponible | no disponible | GGUF en HuggingFace |
-| DeepSeek Coder 1.3B instruct | ~1.3B | no disponible | consultar ficha original | HuggingFace |
-| CodeLlama 1.3B | ~1.3B | no disponible | consultar ficha original | HuggingFace |
-| Phi-1.5 | ~1.3B | no disponible | consultar ficha original | HuggingFace |
+| NektusAISaracatsuna-GGUF | 1.346.471.936 | no disponible | no disponible | GGUF en Hugging Face |
+| DeepSeek Coder 1.3B instruct | ~1.3B | no disponible | consultar ficha original | Hugging Face |
+| CodeLlama 1.3B | ~1.3B | no disponible | consultar ficha original | Hugging Face |
+| Phi-1.5 | ~1.3B | no disponible | consultar ficha original | Hugging Face |
 
 No se dispone de datos de rendimiento comparables para el modelo actual. La comparativa se limita al tamaño, ya que la información sobre contexto, licencia y benchmarks no está disponible.
 
@@ -74,6 +74,6 @@ No se dispone de datos de rendimiento comparables para el modelo actual. La comp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SakitsunaAI/NektusAISaracatsuna-GGUF
+- Hugging Face: https://huggingface.co/SakitsunaAI/NektusAISaracatsuna-GGUF
 - Unsloth (herramienta de fine-tuning): https://github.com/unslothai/unsloth
-- Modelo base DeepSeek Coder 1.3B instruct: consultar en HuggingFace
+- Modelo base DeepSeek Coder 1.3B instruct: consultar en Hugging Face

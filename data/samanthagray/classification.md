@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`samanthagray/classification` es un repositorio de investigación publicado en HuggingFace que contiene un prototipo de modelo **MoCo v3** orientado a tareas de clasificación. MoCo v3 (Momentum Contrast v3) es una familia de métodos de aprendizaje autosupervisado por contraste, y en este repositorio se empaqueta una implementación propia con configuración de arquitectura generada y un checkpoint de inicialización. El autor es `samanthagray` y la licencia es Apache 2.0.
+`samanthagray/classification` es un repositorio de investigación publicado en Hugging Face que contiene un prototipo de modelo **MoCo v3** orientado a tareas de clasificación. MoCo v3 (Momentum Contrast v3) es una familia de métodos de aprendizaje autosupervisado por contraste, y en este repositorio se empaqueta una implementación propia con configuración de arquitectura generada y un checkpoint de inicialización. El autor es `samanthagray` y la licencia es Apache 2.0.
 
 El repositorio es explícitamente un punto de partida experimental: la model card indica que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (smoke tests) y **no** un checkpoint entrenado ni evaluado. No se reclama ninguna métrica de benchmark. El tamaño declarado en los safetensors es de 16.576 parámetros, lo que corresponde a un modelo de escala "small" según la propia configuración.
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| samanthagray/classification | 16.576 | no disponible | No (solo inicialización) | Apache 2.0 | HuggingFace |
+| samanthagray/classification | 16.576 | no disponible | No (solo inicialización) | Apache 2.0 | Hugging Face |
 | MoCo v3 original (Facebook AI Research) | ~21M (ViT-Ti) a ~300M (ViT-L) | no aplica (visión) | Sí, preentrenado en ImageNet | CC BY-NC 4.0 (según release) | Repositorio oficial |
 | SimCLR / BYOL (alternativas contrastivas) | variable | no aplica | Sí | variable | Repositorios oficiales |
 
@@ -79,6 +79,6 @@ La comparación es orientativa: el repositorio aquí descrito no es un modelo en
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/samanthagray/classification
+- Hugging Face: https://huggingface.co/samanthagray/classification
 - MoCo v3 (paper original, referencia): https://arxiv.org/abs/2104.02057
 - Repositorio oficial de MoCo (Facebook AI Research): https://github.com/facebookresearch/moco-v3

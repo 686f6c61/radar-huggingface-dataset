@@ -71,16 +71,16 @@ El modelo v4.1 mejora al v4-Small original en practicamente todas las metricas, 
 - VRAM estimada para inferencia: no disponible en la informacion proporcionada. Con 766 millones de parametros en FP32, el peso del modelo ocupa aproximadamente 3.1 GB, por lo que una GPU con al menos 6-8 GB de VRAM seria necesaria para inferencia FP32.
 - GPU recomendadas: no se especifican. Por tamano de modelo, una GPU consumer como RTX 3060 o superior podria ser suficiente para inferencia; las versiones cuantizadas INT8, INT4 y FP8 permiten reducir el uso de memoria.
 - Compatibilidad con GPU consumer: probablemente si, gracias a las variantes cuantizadas disponibles en Aratako/Irodori-TTS-v4.1-Small-Quantized.
-- Opciones de despliegue: el repositorio de GitHub proporciona codigo de inferencia y entrenamiento. Existe un servidor de API compatible con OpenAI (Irodori-TTS-Server) mencionado en el repositorio. Tambien hay un demo Space en HuggingFace.
+- Opciones de despliegue: el repositorio de GitHub proporciona codigo de inferencia y entrenamiento. Existe un servidor de API compatible con OpenAI (Irodori-TTS-Server) mencionado en el repositorio. Tambien hay un demo Space en Hugging Face.
 - Latencia y throughput: no disponibles. La generacion usa 40 pasos RF con text CFG 3.0 en las evaluaciones, lo que da una referencia del coste computacional por inferencia.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | CER estandar (Joyo Kanji) | Disponibilidad |
 | :--- | ---: | ---: | --- | --- | ---: | --- |
-| Irodori-TTS-v4.1-Small | 766M | no disponible | ja | MIT | 4.69% | HuggingFace, GitHub |
-| Irodori-TTS-v4-Small | 766M | no disponible | ja | MIT | 5.35% | HuggingFace, GitHub |
-| Irodori-TTS-600M-v3-VoiceDesign | 600M | no disponible | ja | MIT | 4.88% | HuggingFace, GitHub |
+| Irodori-TTS-v4.1-Small | 766M | no disponible | ja | MIT | 4.69% | Hugging Face, GitHub |
+| Irodori-TTS-v4-Small | 766M | no disponible | ja | MIT | 5.35% | Hugging Face, GitHub |
+| Irodori-TTS-600M-v3-VoiceDesign | 600M | no disponible | ja | MIT | 4.88% | Hugging Face, GitHub |
 
 La comparativa se limita a las versiones anteriores del mismo proyecto, ya que no se dispone de datos de otros modelos TTS japoneses comparables en la informacion proporcionada. El v4.1-Small supera a ambos predecesores en lectura de kanji, aunque el v3-VoiceDesign mantiene un mejor CER estandar en JSUT BASIC5000 (7.19% frente a 7.22%).
 
@@ -98,10 +98,10 @@ La comparativa se limita a las versiones anteriores del mismo proyecto, ya que n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Aratako/Irodori-TTS-v4.1-Small
+- Modelo en Hugging Face: https://huggingface.co/Aratako/Irodori-TTS-v4.1-Small
 - Modelo base v4-Small: https://huggingface.co/Aratako/Irodori-TTS-v4-Small
 - Repositorio de codigo (GitHub): https://github.com/Aratako/Irodori-TTS
-- Demo Space en HuggingFace: https://huggingface.co/spaces/Aratako/Irodori-TTS-v4.1-Small-Demo
+- Demo Space en Hugging Face: https://huggingface.co/spaces/Aratako/Irodori-TTS-v4.1-Small-Demo
 - Variantes cuantizadas: https://huggingface.co/Aratako/Irodori-TTS-v4.1-Small-Quantized
 - Documentacion del proyecto (DeepWiki): https://deepwiki.com/Aratako/Irodori-TTS
 - Blog de referencia de Echo-TTS: https://jordandarefsky.com/blog/2025/echo/

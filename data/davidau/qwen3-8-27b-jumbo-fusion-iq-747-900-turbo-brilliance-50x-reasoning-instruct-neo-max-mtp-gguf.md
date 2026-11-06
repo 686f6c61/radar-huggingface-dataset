@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-Jumbo-Fusion-IQ-747-900-Turbo-Brilliance-50X-Reasoning-Instruct-NEO-MAX-MTP-GGUF es un ajuste fino (fine-tune) del modelo denso multimodal Qwen3.8-27B de Alibaba, publicado por DavidAU, un mantenedor conocido en HuggingFace por encadenar fusiones y ajustes multi-etapa sobre modelos abiertos. El modelo hereda la arquitectura transformer densa de 27 000 millones de parámetros y la ventana de contexto nativa de 262 144 tokens del modelo base, y añade un conjunto propietario de "modos" de razonamiento e instrucción (27 modos de razonamiento, 27 de instrucción, 15 "AI Constructs" y 5 "Super AI Constructs") que se activan mediante prefijos o system prompts concretos.
+Qwen3.8-27B-Jumbo-Fusion-IQ-747-900-Turbo-Brilliance-50X-Reasoning-Instruct-NEO-MAX-MTP-GGUF es un ajuste fino (fine-tune) del modelo denso multimodal Qwen3.8-27B de Alibaba, publicado por DavidAU, un mantenedor conocido en Hugging Face por encadenar fusiones y ajustes multi-etapa sobre modelos abiertos. El modelo hereda la arquitectura transformer densa de 27 000 millones de parámetros y la ventana de contexto nativa de 262 144 tokens del modelo base, y añade un conjunto propietario de "modos" de razonamiento e instrucción (27 modos de razonamiento, 27 de instrucción, 15 "AI Constructs" y 5 "Super AI Constructs") que se activan mediante prefijos o system prompts concretos.
 
 El problema que intenta resolver es doble: por un lado, ofrecer un comportamiento de razonamiento configurable (desde respuestas directas hasta cadenas de pensamiento largas de tipo "Xhigh") sin necesidad de cambiar de modelo; por otro, distribuirse en GGUF cuantizado para que un modelo de 27B con capacidades de visión pueda ejecutarse en hardware de consumo. La model card afirma que la versión en 4 bits conserva prácticamente el mismo rendimiento que la de 8 bits en ARC-C (742 frente a 744), lo que en la práctica es el argumento central de la publicación.
 
@@ -86,7 +86,7 @@ No se han encontrado comparaciones independientes frente a modelos de otros fabr
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace antes de descargar.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de descargar.
 - El tamaño del repositorio figura como 0.0 GB y las descargas como 0, lo que puede indicar pesos incompletos, un problema de indexación o un lanzamiento reciente sin tráfico; conviene verificar los ficheros antes de planificar un despliegue.
 - Cifras de benchmarks no reproducibles: ARC-C 747 y ARC-E 900 no encajan en la escala 0-100 de ARC y no hay evaluación de terceros. Tratar como marketing hasta validación propia.
 - Los deltas frente al modelo base (156 y 161 puntos) son incoherentes entre cuantizaciones y no se especifica el subconjunto de evaluación.
@@ -100,8 +100,8 @@ No se han encontrado comparaciones independientes frente a modelos de otros fabr
 
 ## Enlaces
 
-- HuggingFace (modelo principal): https://huggingface.co/DavidAU/Qwen3.8-27B-Jumbo-Fusion-IQ-747-900-Turbo-Brilliance-50X-Reasoning-Instruct-NEO-MAX-MTP-GGUF
-- HuggingFace (variante Turbo Brilliance 50X del mismo autor): https://huggingface.co/DavidAU/Qwen3.8-27B-Turbo-Brilliance-50X-Reasoning-Instruct-NEO-MAX-MTP-GGUF
+- Hugging Face (modelo principal): https://huggingface.co/DavidAU/Qwen3.8-27B-Jumbo-Fusion-IQ-747-900-Turbo-Brilliance-50X-Reasoning-Instruct-NEO-MAX-MTP-GGUF
+- Hugging Face (variante Turbo Brilliance 50X del mismo autor): https://huggingface.co/DavidAU/Qwen3.8-27B-Turbo-Brilliance-50X-Reasoning-Instruct-NEO-MAX-MTP-GGUF
 - Repositorio oficial de Qwen3.8-27B (AlibabaCloud-Official): https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Página del modelo base en LM Studio: https://lmstudio.ai/models/qwen3.8
 - Análisis de HackerNoon sobre un fine-tune hermano (TURBO-Fable-Cold-Fusion, sin censura): https://hackernoon.com/qwen38-27b-turbo-review-a-faster-thinking-uncensored-qwen-fine-tune

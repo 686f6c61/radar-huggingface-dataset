@@ -1,7 +1,7 @@
 # hmb/smollm2-135m-dolly-sft-smoke
 
 ## Resumen
-`hmb/smollm2-135m-dolly-sft-smoke` es un ajuste fino supervisado (SFT) del modelo base `HuggingFaceTB/SmolLM2-135M`, publicado por el usuario `hmb` en HuggingFace. Se trata de un modelo de generacion de texto de tipo causal (arquitectura Llama) con 134.515.008 parametros totales, derivado del SmolLM2-135M de HuggingFaceTB. El nombre del repositorio incluye el sufijo "smoke", lo que sugiere que se trata de una ejecucion de prueba o validacion de pipeline de entrenamiento, no de un modelo destinado a produccion.
+`hmb/smollm2-135m-dolly-sft-smoke` es un ajuste fino supervisado (SFT) del modelo base `HuggingFaceTB/SmolLM2-135M`, publicado por el usuario `hmb` en Hugging Face. Se trata de un modelo de generacion de texto de tipo causal (arquitectura Llama) con 134.515.008 parametros totales, derivado del SmolLM2-135M de HuggingFaceTB. El nombre del repositorio incluye el sufijo "smoke", lo que sugiere que se trata de una ejecucion de prueba o validacion de pipeline de entrenamiento, no de un modelo destinado a produccion.
 
 El modelo se ha entrenado con TRL (version 1.17.1) sobre el dataset Dolly (segun el nombre del repositorio), utilizando SFT como metodo de alineacion. No se dispone de informacion sobre la composicion exacta del dataset, el numero de tokens de entrenamiento, hiperparametros ni resultados de evaluacion. La model card es practicamente generica y no aporta detalles sobre el procedimiento de entrenamiento mas alla de las versiones de framework.
 
@@ -59,10 +59,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| hmb/smollm2-135m-dolly-sft-smoke | 134,5M | no disponible | no disponible | HuggingFace (0 descargas) | SFT de smoke test sobre Dolly |
-| HuggingFaceTB/SmolLM2-135M | 135M | no disponible en esta ficha | no disponible en esta ficha | HuggingFace (modelo base) | Modelo base sin ajuste |
-| HuggingFaceTB/SmolLM2-135M-Instruct | 135M | no disponible en esta ficha | no disponible en esta ficha | HuggingFace | Variante instruida oficial |
-| Qwen2.5-0.5B-Instruct | ~500M | no disponible en esta ficha | no disponible en esta ficha | HuggingFace | Alternativa de mayor tamano y capacidades |
+| hmb/smollm2-135m-dolly-sft-smoke | 134,5M | no disponible | no disponible | Hugging Face (0 descargas) | SFT de smoke test sobre Dolly |
+| HuggingFaceTB/SmolLM2-135M | 135M | no disponible en esta ficha | no disponible en esta ficha | Hugging Face (modelo base) | Modelo base sin ajuste |
+| HuggingFaceTB/SmolLM2-135M-Instruct | 135M | no disponible en esta ficha | no disponible en esta ficha | Hugging Face | Variante instruida oficial |
+| Qwen2.5-0.5B-Instruct | ~500M | no disponible en esta ficha | no disponible en esta ficha | Hugging Face | Alternativa de mayor tamano y capacidades |
 
 No se dispone de datos de rendimiento comparativo en la informacion proporcionada para establecer diferencias cuantitativas entre estos modelos.
 
@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento comparativo en la informacion proporcionad
 - La model card contiene un campo `licence: license` que no especifica una licencia concreta, lo que impide determinar restricciones legales.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/hmb/smollm2-135m-dolly-sft-smoke
+- Modelo en Hugging Face: https://huggingface.co/hmb/smollm2-135m-dolly-sft-smoke
 - Modelo base SmolLM2-135M: https://huggingface.co/HuggingFaceTB/SmolLM2-135M
 - Repositorio TRL: https://github.com/huggingface/trl
 - Paper de TRL (citado en la model card): von Werra et al., "TRL: Transformers Reinforcement Learning", 2020, https://github.com/huggingface/trl

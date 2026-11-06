@@ -84,7 +84,7 @@ La comparación de rendimiento entre estos modelos no puede establecerse con los
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/1lock/zils-lite-scout-cribl-decision-2-0-8b
+- Repositorio Hugging Face: https://huggingface.co/1lock/zils-lite-scout-cribl-decision-2-0-8b
 - Modelo original: https://huggingface.co/cribl-ai/cribl-decision-2-0.8B
 - Revisión del modelo original referenciada: https://huggingface.co/cribl-ai/cribl-decision-2-0.8B/tree/fede0fcd51b2fcbace7ed1f1729bb404eddfeb2a
 - Modelo base Qwen3.5-0.8B: https://huggingface.co/Qwen/Qwen3.5-0.8B

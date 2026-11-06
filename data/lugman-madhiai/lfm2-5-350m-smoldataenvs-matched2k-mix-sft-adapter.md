@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| LFM2.5-350M-SmolDataEnvs-Matched2k-Mix-SFT-adapter | ~350M (base) + LoRA | No disponible | Apache 2.0 | HuggingFace (0 descargas) |
-| LiquidAI/LFM2.5-350M (base) | ~350M | No disponible | Apache 2.0 | HuggingFace (modelo oficial) |
-| SmolLM2-360M | ~360M | No disponible en esta ficha | Apache 2.0 | HuggingFace |
-| Qwen2.5-0.5B | ~500M | No disponible en esta ficha | Apache 2.0 | HuggingFace |
+| LFM2.5-350M-SmolDataEnvs-Matched2k-Mix-SFT-adapter | ~350M (base) + LoRA | No disponible | Apache 2.0 | Hugging Face (0 descargas) |
+| LiquidAI/LFM2.5-350M (base) | ~350M | No disponible | Apache 2.0 | Hugging Face (modelo oficial) |
+| SmolLM2-360M | ~360M | No disponible en esta ficha | Apache 2.0 | Hugging Face |
+| Qwen2.5-0.5B | ~500M | No disponible en esta ficha | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a modelos de tamaño similar; no se dispone de datos de rendimiento del adaptador para contrastar benchmarks con las alternativas.
 
@@ -81,7 +81,7 @@ La comparativa se limita a modelos de tamaño similar; no se dispone de datos de
 
 ## Enlaces
 
-- [HuggingFace: lugman-madhiai/LFM2.5-350M-SmolDataEnvs-Matched2k-Mix-SFT-adapter](https://huggingface.co/lugman-madhiai/LFM2.5-350M-SmolDataEnvs-Matched2k-Mix-SFT-adapter)
+- [Hugging Face: lugman-madhiai/LFM2.5-350M-SmolDataEnvs-Matched2k-Mix-SFT-adapter](https://huggingface.co/lugman-madhiai/LFM2.5-350M-SmolDataEnvs-Matched2k-Mix-SFT-adapter)
 - [Modelo base: LiquidAI/LFM2.5-350M](https://huggingface.co/LiquidAI/LFM2.5-350M)
 - [Unsloth (GitHub)](https://github.com/unslothai/unsloth)
 - [TRL (GitHub)](https://github.com/huggingface/trl)

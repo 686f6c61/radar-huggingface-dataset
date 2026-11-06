@@ -2,7 +2,7 @@
 
 ## Resumen
 
-foremost02/lora_cxxvii_dpo_2 es un ajuste de tipo DPO (Direct Preference Optimization) publicado en HuggingFace por el usuario foremost02. Se trata de un artefacto generado automaticamente con la libreria TRL, segun indican las etiquetas del repositorio (`generated_from_trainer`, `dpo`, `trl`) y la propia model card, que cita el articulo de Rafailov et al. (2023) sobre DPO. El repositorio ocupa 6,1 GB y contiene pesos en formato safetensors compatibles con la libreria `transformers`.
+foremost02/lora_cxxvii_dpo_2 es un ajuste de tipo DPO (Direct Preference Optimization) publicado en Hugging Face por el usuario foremost02. Se trata de un artefacto generado automaticamente con la libreria TRL, segun indican las etiquetas del repositorio (`generated_from_trainer`, `dpo`, `trl`) y la propia model card, que cita el articulo de Rafailov et al. (2023) sobre DPO. El repositorio ocupa 6,1 GB y contiene pesos en formato safetensors compatibles con la libreria `transformers`.
 
 El dato mas relevante para cualquier evaluacion es lo que no esta declarado: la model card indica que el modelo es un ajuste de `None`, es decir, no identifica el modelo base sobre el que se aplico el DPO. Tampoco se especifican parametros totales, longitud de contexto, idiomas, licencia ni pipeline. Ademas, la model card es internamente inconsistente: el campo `model_name` dice `lora_cxxvi_dpo_6` mientras que el identificador del repositorio es `lora_cxxvii_dpo_2`, lo que sugiere una plantilla reutilizada sin actualizar.
 
@@ -12,19 +12,19 @@ Por el momento el modelo acumula 0 descargas y 0 likes, y no se ha publicado nin
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el autor no la declara; el pipeline de HuggingFace indica `transformers`, sin especificar familia) |
+| Arquitectura | no disponible (el autor no la declara; el pipeline de Hugging Face indica `transformers`, sin especificar familia) |
 | Parametros totales | no disponible |
 | Parametros activos | no disponible (no hay indicios de que sea un modelo MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (solo se distribuyen pesos en safetensors; no hay versiones GGUF, AWQ, GPTQ ni bitsandbytes publicadas) |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible (los metadatos de HuggingFace no declaran licencia; la model card incluye la linea ambigua `licence: license`) |
+| Licencia | no disponible (los metadatos de Hugging Face no declaran licencia; la model card incluye la linea ambigua `licence: license`) |
 | Formato de pesos | safetensors (libreria `transformers`) |
 | Modelo base | no disponible (la model card lo referencia como `None`) |
 | Metodo de entrenamiento | DPO (Direct Preference Optimization) mediante TRL |
 | Tamano del repositorio | 6,1 GB |
 | Versiones de framework declaradas | TRL 1.13.0, Transformers 5.17.0, PyTorch 2.14.0+cu130, Datasets 5.0.1, Tokenizers 0.23.2 |
-| Compatibilidad de endpoints | `endpoints_compatible` (etiqueta de HuggingFace) |
+| Compatibilidad de endpoints | `endpoints_compatible` (etiqueta de Hugging Face) |
 | Region declarada | `region:us` |
 
 ## Arquitectura y entrenamiento
@@ -56,7 +56,7 @@ Dado que se desconoce el modelo base, la licencia y el rendimiento, los siguient
 - Investigacion sobre deriva de alineacion: resulta adecuado para estudiar como un ajuste DPO sobre un dataset desconocido modifica el sesgo de estilo, la verbosidad o la tasa de rechazo respecto al modelo original, si se dispone de ese original para comparar.
 - Banco de pruebas de infraestructura de despliegue: con 6,1 GB de pesos, el repositorio permite validar cadenas de carga y servido (transformers, vLLM, TGI) en un entorno de staging antes de desplegar un modelo productivo de tamano similar.
 - Experimentos academicos de reproducibilidad: para replicar el efecto de la version declarada de TRL sobre el comportamiento del modelo, con la advertencia de que las versiones indicadas no coinciden con releases publicas conocidas.
-- Analisis de artefactos de HuggingFace: util como caso de estudio de model cards generadas automaticamente con campos sin rellenar (`None` como base, licencia ambigua), un problema extendido en repositorios derivados.
+- Analisis de artefactos de Hugging Face: util como caso de estudio de model cards generadas automaticamente con campos sin rellenar (`None` como base, licencia ambigua), un problema extendido en repositorios derivados.
 
 ## Benchmarks y rendimiento
 
@@ -91,7 +91,7 @@ Para establecer una comparacion significativa habria que identificar primero el 
 ## Limitaciones y advertencias
 
 - Modelo base no identificado: la model card lo declara como `None`. Sin saber sobre que modelo se aplico el DPO, no es posible conocer la arquitectura, el contexto maximo, la tokenizacion ni la ventana efectiva de entrenamiento. Un prompt que funcione con un modelo base puede fallar con este sin previo aviso.
-- Licencia indeterminada: la model card contiene `licence: license`, una linea que no especifica nada, y los metadatos de HuggingFace no incluyen campo de licencia. El uso comercial es juridicamente incierto, y la licencia del modelo base (desconocido) podria imponer restricciones adicionales que tampoco se pueden verificar.
+- Licencia indeterminada: la model card contiene `licence: license`, una linea que no especifica nada, y los metadatos de Hugging Face no incluyen campo de licencia. El uso comercial es juridicamente incierto, y la licencia del modelo base (desconocido) podria imponer restricciones adicionales que tampoco se pueden verificar.
 - Sin benchmarks ni evaluacion: no hay ninguna medicion publicada de calidad, seguridad, tasas de alucinacion o rendimiento. Cualquier despliegue se haria a ciegas.
 - Riesgo de alucinacion: inherente a cualquier modelo generativo ajustado con DPO. El ajuste por preferencias puede ademas aumentar la confianza expresiva de las respuestas sin mejorar su veracidad, un efecto conocido cuando el dataset de preferencias premia el estilo sobre la exactitud.
 - Dataset de preferencias desconocido: los sesgos introducidos por el DPO dependen por completo de los pares elegida/rechazada utilizados, que no se documentan. No se puede descartar la amplificacion de sesgos presentes en esos datos ni una degradacion de la diversidad de respuestas.
@@ -104,7 +104,7 @@ Para establecer una comparacion significativa habria que identificar primero el 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/foremost02/lora_cxxvii_dpo_2
+- Repositorio en Hugging Face: https://huggingface.co/foremost02/lora_cxxvii_dpo_2
 - Articulo de DPO: https://huggingface.co/papers/2305.18290
 - DPO en NeurIPS 2023 (pagina oficial del paper): http://papers.nips.cc/paper_files/paper/2023/hash/a85b405ed65c6477a4fe8302b5e06ce7-Abstract-Conference.html
 - Repositorio de TRL: https://github.com/huggingface/trl

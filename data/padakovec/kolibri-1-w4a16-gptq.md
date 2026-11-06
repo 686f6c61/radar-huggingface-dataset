@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kolibri-1 W4A16 GPTQ es una cuantizacion no oficial en INT4 del modelo Aleph-Alpha/Kolibri-1, publicada por el usuario Padakovec en HuggingFace. El modelo base lo desarrolla Aleph Alpha (compania alemana de IA, autora de la familia Luminous y Kolibri). El objetivo de esta version es reducir el peso del modelo lo suficiente como para que quepa en una sola GPU A100 de 80 GB (41 GiB de pesos), mientras que la version oficial en FP8 necesita dos.
+Kolibri-1 W4A16 GPTQ es una cuantizacion no oficial en INT4 del modelo Aleph-Alpha/Kolibri-1, publicada por el usuario Padakovec en Hugging Face. El modelo base lo desarrolla Aleph Alpha (compania alemana de IA, autora de la familia Luminous y Kolibri). El objetivo de esta version es reducir el peso del modelo lo suficiente como para que quepa en una sola GPU A100 de 80 GB (41 GiB de pesos), mientras que la version oficial en FP8 necesita dos.
 
 Se trata de un modelo de generacion de texto con licencia Apache 2.0 y soporte para aleman (de) e ingles (en), publicado con la libreria vLLM y orientado a despliegue en servidor. Los pesos totales declarados suman 78.103.074.560 parametros (aproximadamente 78,1 mil millones), repartidos en un repositorio de 44,2 GB. La model card menciona explicitamente la existencia de "expertos" (experts), lo que apunta a una arquitectura de tipo mezcla de expertos (MoE), aunque no se detallan en la informacion disponible los parametros activos ni la longitud de contexto.
 
@@ -74,9 +74,9 @@ Nota: la tabla de la model card original presenta los valores de top-1 EN y DE p
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Padakovec/Kolibri-1-W4A16-GPTQ | 78,1 B (totales) | no disponible | INT4 GPTQ W4A16 | Apache 2.0 | HuggingFace, vLLM |
-| Aleph-Alpha/Kolibri-1-BF16 (base) | 78,1 B (totales) | no disponible | BF16 | Apache 2.0 (ver terminos) | HuggingFace |
-| Aleph-Alpha/Kolibri-1 (FP8 oficial) | 78,1 B (totales) | no disponible | FP8 | Apache 2.0 (ver terminos) | HuggingFace |
+| Padakovec/Kolibri-1-W4A16-GPTQ | 78,1 B (totales) | no disponible | INT4 GPTQ W4A16 | Apache 2.0 | Hugging Face, vLLM |
+| Aleph-Alpha/Kolibri-1-BF16 (base) | 78,1 B (totales) | no disponible | BF16 | Apache 2.0 (ver terminos) | Hugging Face |
+| Aleph-Alpha/Kolibri-1 (FP8 oficial) | 78,1 B (totales) | no disponible | FP8 | Apache 2.0 (ver terminos) | Hugging Face |
 
 No se dispone de datos suficientes sobre otros modelos comparables de la misma categoria (mismo tamano o misma tarea) en la informacion proporcionada, por lo que no se incluyen mas alternativas. Los unicos puntos de comparacion documentados son las tres variantes (BF16, FP8 y esta cuantizacion INT4) del mismo modelo base.
 
@@ -94,10 +94,10 @@ No se dispone de datos suficientes sobre otros modelos comparables de la misma c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Padakovec/Kolibri-1-W4A16-GPTQ
+- Modelo en Hugging Face: https://huggingface.co/Padakovec/Kolibri-1-W4A16-GPTQ
 - Modelo base: https://huggingface.co/Aleph-Alpha/Kolibri-1
 - Modelo base BF16: https://huggingface.co/Aleph-Alpha/Kolibri-1-BF16
 - Terminos de licencia original: https://huggingface.co/Aleph-Alpha/Kolibri-1#license-and-terms
-- Modelos cuantizados de Aleph-Alpha/Kolibri-1 en HuggingFace: https://huggingface.co/models?other=base_model:quantized:Aleph-Alpha/Kolibri-1
+- Modelos cuantizados de Aleph-Alpha/Kolibri-1 en Hugging Face: https://huggingface.co/models?other=base_model:quantized:Aleph-Alpha/Kolibri-1
 - Kolibri 1 en Tokenstead: https://tokenstead.ai/models/kolibri-1
 - GPTQModel (herramienta de cuantizacion): https://github.com/ModelCloud/GPTQModel

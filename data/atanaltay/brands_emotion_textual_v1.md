@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `atanaltay/brands_emotion_textual_v1` es un modelo publicado en HuggingFace bajo licencia Apache 2.0, orientado aparentemente al analisis de emociones en texto relacionado con marcas. El autor, atanaltay, no ha proporcionado una model card sustancial, por lo que la informacion tecnica disponible es extremadamente limitada.
+El modelo `atanaltay/brands_emotion_textual_v1` es un modelo publicado en Hugging Face bajo licencia Apache 2.0, orientado aparentemente al analisis de emociones en texto relacionado con marcas. El autor, atanaltay, no ha proporcionado una model card sustancial, por lo que la informacion tecnica disponible es extremadamente limitada.
 
 El modelo se presenta con cero descargas y cero likes en el momento de la consulta, lo que sugiere que se trata de una publicacion reciente o de un proyecto personal sin difusion. La fecha de creacion es el 27 de agosto de 2026, lo que indica que es un modelo muy nuevo. No se dispone de informacion sobre arquitectura, tamano, parametros, datos de entrenamiento ni capacidades concretas, por lo que cualquier evaluacion tecnica rigurosa resulta imposible con los datos actuales.
 
@@ -63,5 +63,5 @@ No disponible. Sin informacion sobre arquitectura, tamano o rendimiento, no es p
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/atanaltay/brands_emotion_textual_v1
+- Pagina del modelo en Hugging Face: https://huggingface.co/atanaltay/brands_emotion_textual_v1
 - No se han encontrado papers, repositorios de codigo, demos ni documentacion adicional asociada a este modelo.

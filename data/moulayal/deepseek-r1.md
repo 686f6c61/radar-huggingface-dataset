@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-R1 (este) | 671B | 37B | 128K | MIT | HuggingFace (mirror) |
+| DeepSeek-R1 (este) | 671B | 37B | 128K | MIT | Hugging Face (mirror) |
 | OpenAI-o1 | no disponible | no disponible | no disponible | propietaria | API |
-| DeepSeek-R1-Distill-Qwen-32B | 32B | 32B (denso) | 128K | MIT | HuggingFace |
-| Qwen2.5-72B-Instruct | 72B | 72B (denso) | 128K | Apache 2.0 | HuggingFace |
+| DeepSeek-R1-Distill-Qwen-32B | 32B | 32B (denso) | 128K | MIT | Hugging Face |
+| Qwen2.5-72B-Instruct | 72B | 72B (denso) | 128K | Apache 2.0 | Hugging Face |
 
 DeepSeek-R1 se diferencia de los modelos densos como Qwen2.5-72B por su arquitectura MoE, que ofrece mayor capacidad total con menor coste por token, aunque requiere mucha más memoria para cargar todos los pesos. Frente a OpenAI-o1, la ventaja principal es su licencia MIT y la disponibilidad de pesos abiertos. Las versiones destiladas (por ejemplo, la de 32B) son alternativas prácticas para entornos con menos recursos, manteniendo un rendimiento competitivo en razonamiento.
 
@@ -83,7 +83,7 @@ DeepSeek-R1 se diferencia de los modelos densos como Qwen2.5-72B por su arquitec
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/MoulayAl/DeepSeek-R1
+- Repositorio Hugging Face: https://huggingface.co/MoulayAl/DeepSeek-R1
 - Paper oficial (DeepSeek-R1): https://arxiv.org/abs/2501.12948
 - Repositorio GitHub de DeepSeek-R1: https://github.com/deepseek-ai/DeepSeek-R1
 - Página oficial de DeepSeek: https://www.deepseek.com/

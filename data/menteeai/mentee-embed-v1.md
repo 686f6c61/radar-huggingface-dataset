@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MenteEAI/mentee-embed-v1 es un modelo de embeddings de texto multilingüe desarrollado por MenteEAI, una empresa que se presenta como especializada en sistemas de IA de producción. Según su sitio web, se trata de un modelo compacto entrenado desde cero para recuperación de información en árabe, inglés y urdu. Está publicado bajo licencia Apache 2.0, lo que permite uso comercial y modificación sin restricciones significativas. El modelo está pensado para tareas de búsqueda semántica y recuperación de texto en esos tres idiomas, y su carácter compacto sugiere que puede desplegarse en entornos con recursos limitados. La ficha en HuggingFace no incluye detalles técnicos adicionales, por lo que gran parte de las especificaciones no están disponibles públicamente.
+MenteEAI/mentee-embed-v1 es un modelo de embeddings de texto multilingüe desarrollado por MenteEAI, una empresa que se presenta como especializada en sistemas de IA de producción. Según su sitio web, se trata de un modelo compacto entrenado desde cero para recuperación de información en árabe, inglés y urdu. Está publicado bajo licencia Apache 2.0, lo que permite uso comercial y modificación sin restricciones significativas. El modelo está pensado para tareas de búsqueda semántica y recuperación de texto en esos tres idiomas, y su carácter compacto sugiere que puede desplegarse en entornos con recursos limitados. La ficha en Hugging Face no incluye detalles técnicos adicionales, por lo que gran parte de las especificaciones no están disponibles públicamente.
 
 ## Especificaciones tecnicas
 
@@ -61,5 +61,5 @@ No se dispone de informacion suficiente para establecer una comparativa cuantita
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MenteEAI/mentee-embed-v1
+- Modelo en Hugging Face: https://huggingface.co/MenteEAI/mentee-embed-v1
 - Sitio web de MenteEAI: https://www.menteeai.org/

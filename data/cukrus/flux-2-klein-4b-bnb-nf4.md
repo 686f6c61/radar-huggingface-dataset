@@ -97,8 +97,8 @@ El tiempo total incluye unos 8 s de codificacion para un prompt nuevo. Con el co
 
 | Modelo | Parametros | Cuantizacion | Memoria de pipeline | Contexto de prompt | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| cukrus/FLUX.2-klein-4B-bnb-nf4 | 2.093.070.619 (safetensors del repo) | NF4, doble cuantizacion, computo bf16 | ~5,1 GB completo; ~2,5 GB sin codificador | `prompt_embeds` (1, 512, 7680) | Apache-2.0 | HuggingFace, diffusers |
-| black-forest-labs/FLUX.2-klein-4B (base, bf16) | No disponible en la informacion proporcionada | bf16 | ~16 GB | `prompt_embeds` (1, 512, 7680) | Apache-2.0 | HuggingFace, diffusers |
+| cukrus/FLUX.2-klein-4B-bnb-nf4 | 2.093.070.619 (safetensors del repo) | NF4, doble cuantizacion, computo bf16 | ~5,1 GB completo; ~2,5 GB sin codificador | `prompt_embeds` (1, 512, 7680) | Apache-2.0 | Hugging Face, diffusers |
+| black-forest-labs/FLUX.2-klein-4B (base, bf16) | No disponible en la informacion proporcionada | bf16 | ~16 GB | `prompt_embeds` (1, 512, 7680) | Apache-2.0 | Hugging Face, diffusers |
 | Otras cuantizaciones o modelos de edicion de imagen comparables | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La unica comparacion con datos concretos disponible es frente al modelo base en bf16: la version NF4 reduce la memoria total de ~16 GB a ~5,1 GB (transformer de 7,75 GB a 2,29 GB; codificador de texto de 8,05 GB a 2,65 GB) con la perdida de fidelidad recogida en la seccion de benchmarks.
@@ -118,7 +118,7 @@ La unica comparacion con datos concretos disponible es frente al modelo base en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cukrus/FLUX.2-klein-4B-bnb-nf4
+- Modelo en Hugging Face: https://huggingface.co/cukrus/FLUX.2-klein-4B-bnb-nf4
 - Modelo base: https://huggingface.co/black-forest-labs/FLUX.2-klein-4B
 - Servicio de codificador de texto remoto: https://github.com/Cukrus-directive/qwen3-4b-remote-text-encoder
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relevante sobre este modelo, su arquitectura o su evaluacion; los resultados devueltos no guardan relacion con el contenido de la ficha.

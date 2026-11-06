@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kiara-bhat/toy-generation` es un repositorio publicado en HuggingFace que contiene una implementacion compacta y custom en PyTorch de una arquitectura tipo **Flamingo** orientada a generacion. No se trata de un modelo preentrenado ni de un release listo para produccion: el propio autor lo describe como una configuracion "small" pensada para revision de codigo, smoke tests y experimentos controlados de pequeno tamano. El checkpoint entregado (`model.safetensors`) es una inicializacion valida para pruebas de humo, no un modelo entrenado ni evaluado.
+`kiara-bhat/toy-generation` es un repositorio publicado en Hugging Face que contiene una implementacion compacta y custom en PyTorch de una arquitectura tipo **Flamingo** orientada a generacion. No se trata de un modelo preentrenado ni de un release listo para produccion: el propio autor lo describe como una configuracion "small" pensada para revision de codigo, smoke tests y experimentos controlados de pequeno tamano. El checkpoint entregado (`model.safetensors`) es una inicializacion valida para pruebas de humo, no un modelo entrenado ni evaluado.
 
 El modelo declara un total de **24.832 parametros** segun el fichero de safetensors, lo que lo situa en la categoria de "toy model" (del orden de decenas de miles de parametros). Se distribuye bajo licencia **BSD-3-Clause**, con tags `flamingo`, `pytorch`, `generation` y `safetensors`, y el repositorio ocupa menos de 0,1 GB. La fecha de creacion y ultima actualizacion es el 9 de octubre de 2026, con 0 descargas y 0 likes en el momento de redactar esta ficha.
 
@@ -81,5 +81,5 @@ Los datos de Flamingo y OpenFlamingo no se han verificado en la informacion prop
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kiara-bhat/toy-generation
+- Hugging Face: https://huggingface.co/kiara-bhat/toy-generation
 - No se han encontrado papers, blogs, repos ni demos adicionales relevantes en la busqueda web realizada; los resultados obtenidos corresponden al nombre propio "Kiara" y no estan relacionados con el modelo.

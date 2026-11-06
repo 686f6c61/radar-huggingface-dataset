@@ -29,7 +29,7 @@ El modelo es un ajuste fino del checkpoint `facebook/mms-300m`, un encoder de ti
 - Soporte multilingüe para inglés, japonés, coreano, español, indonesio, urdu e hindi.
 - Compatibilidad con letras que mezclan varios idiomas o sistemas de escritura.
 - Es capaz de procesar texto de letras suministrado por el usuario; no es un modelo de reconocimiento automático del habla que produzca texto a partir del audio.
-- Integración sencilla con la librería Transformers de HuggingFace mediante `Wav2Vec2ForCTC` y `Wav2Vec2Processor`.
+- Integración sencilla con la librería Transformers de Hugging Face mediante `Wav2Vec2ForCTC` y `Wav2Vec2Processor`.
 - Uso previsto exclusivamente para proyectos personales de karaoke y visualización de letras, sin fines comerciales.
 
 ## Casos de uso
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: aproximadamente 600 MB en precisión fp16 y alrededor de 1,2 GB en fp32, más el overhead de procesamiento de la señal de audio. Estimación orientativa en función de los 300 millones de parámetros.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente para cargar y ejecutar el modelo; también puede ejecutarse en CPU con suficiente RAM.
 - Compatible con GPUs de consumo como GTX 1650, RTX 3050, RTX 3060 o superiores.
-- Opciones de despliegue: se integra con la librería HuggingFace Transformers y requiere un pipeline externo de alineación forzada que combine las salidas CTC con el texto suministrado.
+- Opciones de despliegue: se integra con la librería Hugging Face Transformers y requiere un pipeline externo de alineación forzada que combine las salidas CTC con el texto suministrado.
 - Latencia y throughput: no disponibles sin una medición específica sobre el hardware y la configuración utilizada.
 
 ## Comparativa con modelos similares
@@ -75,7 +75,7 @@ La comparativa coloca al modelo de Echora como un ajuste específico para letras
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hcX02/echora-mms-300m-multilingual-lyrics-forced-aligner
-- Modelo base en HuggingFace: https://huggingface.co/facebook/mms-300m
+- Modelo en Hugging Face: https://huggingface.co/hcX02/echora-mms-300m-multilingual-lyrics-forced-aligner
+- Modelo base en Hugging Face: https://huggingface.co/facebook/mms-300m
 - Modelo alternativo con formato ONNX: https://huggingface.co/tatsu020/mms-300m-fa-onnx
 - Información sobre MMS-300M: https://aiany.app/item/massively-multilingual-speech-mms-300m

@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Función | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Tokenfold Select v3 | 149,6 M | No disponible | Puntuación conjunta de grupos de contexto | Apache 2.0 | HuggingFace (snchimata/tokenfold-select-v3) |
-| cross-encoder/ettin-reranker-150m-v1 | ~150 M | No disponible | Reranking cross-encoder consulta-documento | No disponible en la información | HuggingFace (modelo base) |
-| Rerankers cross-encoder convencionales (p. ej. familia BGE reranker) | Variable (base/large) | Variable | Reranking consulta-documento aislado | Variable según modelo | HuggingFace |
+| Tokenfold Select v3 | 149,6 M | No disponible | Puntuación conjunta de grupos de contexto | Apache 2.0 | Hugging Face (snchimata/tokenfold-select-v3) |
+| cross-encoder/ettin-reranker-150m-v1 | ~150 M | No disponible | Reranking cross-encoder consulta-documento | No disponible en la información | Hugging Face (modelo base) |
+| Rerankers cross-encoder convencionales (p. ej. familia BGE reranker) | Variable (base/large) | Variable | Reranking consulta-documento aislado | Variable según modelo | Hugging Face |
 
 La diferencia principal frente a un reranker cross-encoder convencional es que Select v3 puntúa grupos en contexto conjunto (consulta más grupos vecinos en una misma ventana), mientras que un reranker estándar evalúa cada par consulta-documento de forma independiente. Frente a soluciones de summarización generativa, Select v3 no reescribe el contenido y no requiere validación de estructura generada.
 
@@ -84,6 +84,6 @@ La diferencia principal frente a un reranker cross-encoder convencional es que S
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/snchimata/tokenfold-select-v3
+- Hugging Face: https://huggingface.co/snchimata/tokenfold-select-v3
 - Modelo base: https://huggingface.co/cross-encoder/ettin-reranker-150m-v1
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

@@ -69,10 +69,10 @@ En errores absolutos: este modelo comete 52 errores frente a 26 del modelo grand
 
 | Modelo | Parametros | Contexto | Rendimiento (Bengali→Banglish) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| **banglish-embed-minilm-small** | 117M | 512 tokens | 0.988 | Apache 2.0 | HuggingFace |
-| banglish-embed (grande) | no disponible | no disponible | 0.995 | Apache 2.0 | HuggingFace |
-| Modelo de 12 MB (revision) | ~12M | no disponible | 0.983 | Apache 2.0 | HuggingFace (revision) |
-| paraphrase-multilingual-MiniLM-L12-v2 (base) | 117M | 512 tokens | no evaluado en esta tarea | Apache 2.0 | HuggingFace |
+| **banglish-embed-minilm-small** | 117M | 512 tokens | 0.988 | Apache 2.0 | Hugging Face |
+| banglish-embed (grande) | no disponible | no disponible | 0.995 | Apache 2.0 | Hugging Face |
+| Modelo de 12 MB (revision) | ~12M | no disponible | 0.983 | Apache 2.0 | Hugging Face (revision) |
+| paraphrase-multilingual-MiniLM-L12-v2 (base) | 117M | 512 tokens | no evaluado en esta tarea | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a la familia del propio autor, ya que no se han encontrado otros modelos específicos para bengalí-banglish en la información disponible. El modelo base multilingüe no está optimizado para esta tarea cross-script.
 
@@ -88,7 +88,7 @@ La comparativa se limita a la familia del propio autor, ya que no se han encontr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sifat-febo/banglish-embed-minilm-small
+- Modelo en Hugging Face: https://huggingface.co/sifat-febo/banglish-embed-minilm-small
 - Modelo grande (banglish-embed): https://huggingface.co/sifat-febo/banglish-embed
 - Dataset BanglaTLit: https://huggingface.co/datasets/aplycaebous/BanglaTLit
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2

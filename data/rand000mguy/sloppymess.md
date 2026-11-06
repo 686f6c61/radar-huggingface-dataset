@@ -2,7 +2,7 @@
 
 ## Resumen
 
-sloppymess es un adaptador LoRA de tipo text-to-image publicado por el usuario Rand000mGuy en HuggingFace. Se trata de un ajuste fino ligero sobre el modelo base krea/Krea-2-Raw, un modelo de difusion de texto a imagen. El repositorio contiene unicamente los pesos del adaptador LoRA (0,2 GB), no el modelo completo, por lo que su uso requiere cargar previamente el modelo base con la libreria diffusers.
+sloppymess es un adaptador LoRA de tipo text-to-image publicado por el usuario Rand000mGuy en Hugging Face. Se trata de un ajuste fino ligero sobre el modelo base krea/Krea-2-Raw, un modelo de difusion de texto a imagen. El repositorio contiene unicamente los pesos del adaptador LoRA (0,2 GB), no el modelo completo, por lo que su uso requiere cargar previamente el modelo base con la libreria diffusers.
 
 El modelo se distribuye con la etiqueta `template:diffusion-lora` y el pipeline `text-to-image`, lo que indica que esta pensado para generar imagenes a partir de descripciones textuales mediante la tecnica de adaptacion de bajo rango (LoRA). La model card es extremadamente escasa: no incluye prompt de instancia (`instance_prompt: null`), no documenta el dataset de entrenamiento, no especifica hiperparametros y no aporta ejemplos de uso mas alla de un widget de muestra.
 
@@ -42,7 +42,7 @@ No se dispone de informacion sobre el dataset de entrenamiento, el numero de pas
 - Generacion de assets para maquetas: util para producir imagenes de relleno en disenos de interfaz o presentaciones, dado el bajo peso del adaptador (0,2 GB) y su facil integracion con diffusers.
 - Experimentacion en investigacion de LoRA: sirve como ejemplo de adaptador de bajo rango para estudiar como modula un pequeno conjunto de pesos la salida de un modelo de difusion grande.
 - Composicion con otros LoRA: en flujos de trabajo que combinan varios adaptadores sobre el mismo modelo base para mezclar estilos, aunque la compatibilidad no esta documentada.
-- Pruebas de reproducibilidad: al estar publicado en HuggingFace con un identificador estable, puede usarse para verificar la carga y ejecucion de adaptadores LoRA en entornos diffusers.
+- Pruebas de reproducibilidad: al estar publicado en Hugging Face con un identificador estable, puede usarse para verificar la carga y ejecucion de adaptadores LoRA en entornos diffusers.
 - Docencia y demostraciones: adecuado para talleres sobre ajuste fino eficiente de modelos generativos, dado su tamano reducido y su dependencia de un modelo base publico.
 
 ## Benchmarks y rendimiento
@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sloppymess | LoRA text-to-image sobre Krea-2-Raw | no disponible (0,2 GB en disco) | no aplica | no disponible | HuggingFace, 0 descargas |
-| Adaptadores LoRA genericos sobre Stable Diffusion | LoRA text-to-image | variable | no aplica | variable segun autor | Amplia en HuggingFace y Civitai |
+| sloppymess | LoRA text-to-image sobre Krea-2-Raw | no disponible (0,2 GB en disco) | no aplica | no disponible | Hugging Face, 0 descargas |
+| Adaptadores LoRA genericos sobre Stable Diffusion | LoRA text-to-image | variable | no aplica | variable segun autor | Amplia en Hugging Face y Civitai |
 | Modelos base text-to-image (p. ej. SDXL) | Difusion completa | ~2,6 B (UNet) | no aplica | variable | Amplia |
 
 No se dispone de datos de rendimiento del adaptador que permitan una comparacion cuantitativa con alternativas. La comparativa se limita a caracteristicas estructurales.
@@ -79,6 +79,6 @@ No se dispone de datos de rendimiento del adaptador que permitan una comparacion
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Rand000mGuy/sloppymess
+- Hugging Face: https://huggingface.co/Rand000mGuy/sloppymess
 - Modelo base: https://huggingface.co/krea/Krea-2-Raw
 - Documentacion de diffusers: https://huggingface.co/docs/diffusers

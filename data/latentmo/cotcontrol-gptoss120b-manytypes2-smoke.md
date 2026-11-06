@@ -80,6 +80,6 @@ No se dispone de información suficiente para comparar rendimiento, contexto o d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/latentMO/cotcontrol-gptoss120b-manytypes2-smoke
+- Hugging Face: https://huggingface.co/latentMO/cotcontrol-gptoss120b-manytypes2-smoke
 - Modelo base: https://huggingface.co/openai/gpt-oss-120b
 - Código de entrenamiento y evaluaciones: https://github.com/johntrob14/tricky_little_guys (directorios `cot-control/rl/` y `cot-control/results/rl/manytypes2-smoke/`)

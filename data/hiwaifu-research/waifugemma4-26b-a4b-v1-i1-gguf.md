@@ -122,7 +122,7 @@ No se dispone de datos de parametros, contexto ni licencia de GLM-5.1 en la info
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantizaciones imatrix i1): https://huggingface.co/hiwaifu-research/WaifuGemma4-26b-a4b-v1-i1-GGUF
+- Repositorio Hugging Face (cuantizaciones imatrix i1): https://huggingface.co/hiwaifu-research/WaifuGemma4-26b-a4b-v1-i1-GGUF
 - Modelo base: https://huggingface.co/hiwaifu-research/WaifuGemma4-26b-a4b-v1
 - Repositorio de cuantizaciones estaticas (incluye el proyector de vision `mmproj-WaifuGemma4-26b-a4b-v1-f16.gguf`): https://huggingface.co/hiwaifu-research/WaifuGemma4-26b-a4b-v1-GGUF
 - Fichero de cuantizacion recomendada i1-Q4_K_M: https://huggingface.co/hiwaifu-research/WaifuGemma4-26b-a4b-v1-i1-GGUF/resolve/main/WaifuGemma4-26b-a4b-v1.i1-Q4_K_M.gguf

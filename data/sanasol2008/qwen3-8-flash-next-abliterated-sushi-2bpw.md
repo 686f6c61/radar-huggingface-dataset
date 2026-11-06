@@ -87,9 +87,9 @@ El autor advierte que estas cifras corresponden a mediciones con prompt corto y 
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad | Rendimiento medido |
 |---|---|---|---|---|---|---|
-| Qwen3.8-Flash-Next-Abliterated-Sushi-2bpw (este) | 21.142.110.099 | 262.144 configurados | EXL3 K2 + affine8 + affine4 | qwen-community-license-1.0 | Publico en HuggingFace, 21 descargas, 0 likes | 16,78 tok/s en frio, 26,48 tok/s en caliente |
+| Qwen3.8-Flash-Next-Abliterated-Sushi-2bpw (este) | 21.142.110.099 | 262.144 configurados | EXL3 K2 + affine8 + affine4 | qwen-community-license-1.0 | Publico en Hugging Face, 21 descargas, 0 likes | 16,78 tok/s en frio, 26,48 tok/s en caliente |
 | Sushi 2bpw original (paquete de referencia) | no disponible | no disponible | Sushi 2bpw | no disponible | Usado como referencia en la model card | 22,89 tok/s en frio, 31,60 tok/s en caliente |
-| orcarouter/Qwen3.8-Flash-Next-Uncensored (modelo base) | no disponible en BF16 en la informacion proporcionada | no disponible | BF16 | no disponible | Publico en HuggingFace | no disponible |
+| orcarouter/Qwen3.8-Flash-Next-Uncensored (modelo base) | no disponible en BF16 en la informacion proporcionada | no disponible | BF16 | no disponible | Publico en Hugging Face | no disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones completas de alternativas comparables de la misma categoria y tamano en la informacion proporcionada, por lo que no es posible establecer una comparativa de calidad frente a otros modelos.
 
@@ -114,7 +114,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas de alterna
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sanasol2008/Qwen3.8-Flash-Next-Abliterated-Sushi-2bpw
+- Modelo en Hugging Face: https://huggingface.co/sanasol2008/Qwen3.8-Flash-Next-Abliterated-Sushi-2bpw
 - Modelo base: https://huggingface.co/orcarouter/Qwen3.8-Flash-Next-Uncensored
 - Parche rebasado de vision en streaming (commit `7e8684f`): https://github.com/sanasol/sushi/commit/7e8684f56392ff31ecac6383646221083e3a9b04
 - Version anterior del parche (commit `1671383`): https://github.com/sanasol/sushi/commit/167138370611750d8c9ef1060c816103be0e99b1

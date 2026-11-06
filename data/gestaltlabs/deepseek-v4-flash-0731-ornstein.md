@@ -4,7 +4,7 @@
 
 DeepSeek-V4-Flash-0731-Ornstein es un ajuste fino de razonamiento del modelo DeepSeek-V4-Flash-0731, desarrollado por GestaltLabs. Se trata de una fusión con adaptadores LoRA entrenados en Fireworks AI e integrados en los pesos base. El modelo hereda la arquitectura DeepseekV4ForCausalLM, una mezcla de expertos (MoE) con 43 capas, 256 expertos y una ventana de contexto de 1.048.576 tokens. El objetivo declarado por el autor es inyectar un modo de pensamiento denominado «Ornstein» en el modelo base, aunque se indica explícitamente que es una fusión temprana, no una versión de calidad final, y que se planean más entrenamientos con entornos de RL y ajuste basado en energía.
 
-El repo de HuggingFace se encuentra todavía en estado de preparación de exportación BF16. A fecha de la información consultada, el checkpoint completo no está descargable; los objetivos de exportación son 48 shards con un payload de 608.450.282.488 bytes. Como modelo de investigación, es relevante por su arquitectura MoE con predicción multi-token y por la documentación del proceso de fusión y de-cuantización, pero no hay ninguna evaluación de benchmarks que respalde su calidad.
+El repo de Hugging Face se encuentra todavía en estado de preparación de exportación BF16. A fecha de la información consultada, el checkpoint completo no está descargable; los objetivos de exportación son 48 shards con un payload de 608.450.282.488 bytes. Como modelo de investigación, es relevante por su arquitectura MoE con predicción multi-token y por la documentación del proceso de fusión y de-cuantización, pero no hay ninguna evaluación de benchmarks que respalde su calidad.
 
 ## Especificaciones tecnicas
 
@@ -79,9 +79,9 @@ No se dispone de otros modelos comparables dentro de la misma categoría con dat
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/GestaltLabs/DeepSeek-V4-Flash-0731-Ornstein
+- Repositorio Hugging Face: https://huggingface.co/GestaltLabs/DeepSeek-V4-Flash-0731-Ornstein
 - Repositorio GGUF relacionado: https://huggingface.co/GestaltLabs/DeepSeek-V4-Flash-0731-Ornstein-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
+- Modelo base en Hugging Face: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
 - Código de desarrollo de Transformers para DeepseekV4: https://github.com/huggingface/transformers/blob/cbc1651a032b923da7f4b44b3d0e6f68e6ba6b55/src/transformers/models/deepseek_v4/modeling_deepseek_v4.py
 - Referencia de DeepSeek V4 (felloai): https://felloai.com/deepseek-v4/
 - Documentación de la API de DeepSeek-V4-Flash-0731 (DeepInfra): https://deepinfra.com/deepseek-ai/DeepSeek-V4-Flash-0731/api

@@ -131,14 +131,14 @@ La comparacion con alternativas de la misma categoria solo puede hacerse con el 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/entrick/Security-SLM-Gemma-4-E2B-it-GGUF
+- Modelo en Hugging Face: https://huggingface.co/entrick/Security-SLM-Gemma-4-E2B-it-GGUF
 - Modelo base: https://huggingface.co/unsloth/gemma-4-E2B-it-unsloth-bnb-4bit
 - Version GGUF del modelo base (unsloth): https://huggingface.co/unsloth/gemma-4-E2B-it-GGUF
 - Dataset de ajuste: https://huggingface.co/datasets/entrick/security-slm-dataset
 - Figura del benchmark (heatmap CSS): https://huggingface.co/entrick/Security-SLM-Gemma-4-E2B-it-GGUF/resolve/main/fig3_heatmap_model_area.png
 - Formulario de adopcion y feedback reportado por usuarios: https://bit.ly/4hY0ftv
 - Articulo citado: "Quantized Privacy SLMs for Sovereign Agentic AI Security: Format Consistency, Not Dataset Scale, Governs LoRA Fine-Tuning Gains" (Tyokaha & Chima, 2026); URL no disponible en la informacion proporcionada.
-- Modelo de seguridad comparable en HuggingFace: https://huggingface.co/deadbydawn101/RavenX-Sec-8B-Security-RATH-128k-mlx-4bit
+- Modelo de seguridad comparable en Hugging Face: https://huggingface.co/deadbydawn101/RavenX-Sec-8B-Security-RATH-128k-mlx-4bit
 - Listado de modelos etiquetados como cybersecurity: https://huggingface.co/models?other=cybersecurity
 - Listado de modelos etiquetados como red-team: https://huggingface.co/models?other=red-team
 - Listado de modelos etiquetados como gemma: https://huggingface.co/models?other=gemma

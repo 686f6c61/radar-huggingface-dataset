@@ -78,5 +78,5 @@ La comparación directa con otros fine-tunes de Qwen2.5-7B no está disponible p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/venkateshchsagalm/SagaLM-slm2
+- Hugging Face: https://huggingface.co/venkateshchsagalm/SagaLM-slm2
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct

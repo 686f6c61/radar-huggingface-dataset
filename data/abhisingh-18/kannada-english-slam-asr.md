@@ -76,6 +76,6 @@ No se dispone de una comparativa directa con otros modelos ASR para kannada en l
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Abhisingh-18/kannada-english-slam-asr
+- Repositorio Hugging Face: https://huggingface.co/Abhisingh-18/kannada-english-slam-asr
 - Código del proyecto: https://github.com/Abhisingh18/SLAM-LLM-for-Kanada
 - Fork original de SLAM-LLM: https://github.com/ddlBoJack/SLAM-LLM

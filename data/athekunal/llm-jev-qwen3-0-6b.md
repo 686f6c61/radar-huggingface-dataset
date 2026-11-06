@@ -89,9 +89,9 @@ El propio autor señala que el entrenamiento no mejora la media macro externa m�
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| llm-jev-qwen3-0.6b | 596 M | no disponible (filas >16.384 tokens descartadas) | Puntuación listwise con trie de candidatos | Apache 2.0 | HuggingFace (0 descargas) |
-| Qwen/Qwen3-0.6B | 596 M | no disponible en la informacion | Generación autoregresiva general | Apache 2.0 | HuggingFace |
-| Adaptadores LoRA de clasificación sobre Qwen3-0.6B | ~596 M | depende del base | Clasificación supervisada estándar | Apache 2.0 | HuggingFace |
+| llm-jev-qwen3-0.6b | 596 M | no disponible (filas >16.384 tokens descartadas) | Puntuación listwise con trie de candidatos | Apache 2.0 | Hugging Face (0 descargas) |
+| Qwen/Qwen3-0.6B | 596 M | no disponible en la informacion | Generación autoregresiva general | Apache 2.0 | Hugging Face |
+| Adaptadores LoRA de clasificación sobre Qwen3-0.6B | ~596 M | depende del base | Clasificación supervisada estándar | Apache 2.0 | Hugging Face |
 
 La comparación relevante es contra el propio modelo base: en el split held-out de entrenamiento la mejora es de 18,3 puntos de accuracy, mientras que en la media macro de benchmarks externos la diferencia es de 0,1 puntos (56,8 frente a 56,9), dentro del ruido. En tareas de clasificación de intenciones (Banking77) la mejora es sustancial (18,3 a 58,9), mientras que en BoolQ retrocede (70,8 a 65,2).
 
@@ -110,7 +110,7 @@ La comparación relevante es contra el propio modelo base: en el split held-out 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Athekunal/llm-jev-qwen3-0.6b
+- Modelo en Hugging Face: https://huggingface.co/Athekunal/llm-jev-qwen3-0.6b
 - Repositorio de código: https://github.com/Athe-kunal/llm-as-jev
 - Paper LLM-as-Jev: arXiv 2610.02076 (Li y Wagle, 2026)
 - Paper Qwen3 Technical Report: arXiv 2505.09388

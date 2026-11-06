@@ -86,8 +86,8 @@ En MMLU-14k, la mayor caída por asignatura se da en moral_scenarios (76,9 % →
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash (base) | 552B backbone, 8B/16B activos | 1M | no disponible | HuggingFace | Modelo original con salvaguardas; MMLU-14k 86,96 % |
-| pbDO/DeepSeek-V4.1-Flash-UNCENSORED-FP8 | 763.205.315.794 totales | 1M | MIT | HuggingFace (26 descargas) | Variante abliterada; MMLU-14k 82,74 % |
+| DeepSeek-V4.1-Flash (base) | 552B backbone, 8B/16B activos | 1M | no disponible | Hugging Face | Modelo original con salvaguardas; MMLU-14k 86,96 % |
+| pbDO/DeepSeek-V4.1-Flash-UNCENSORED-FP8 | 763.205.315.794 totales | 1M | MIT | Hugging Face (26 descargas) | Variante abliterada; MMLU-14k 82,74 % |
 | Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | No se dispone de información sobre modelos comparables en la búsqueda |
 
 ## Limitaciones y advertencias
@@ -103,7 +103,7 @@ En MMLU-14k, la mayor caída por asignatura se da en moral_scenarios (76,9 % →
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pbDO/DeepSeek-V4.1-Flash-UNCENSORED-FP8
+- Hugging Face: https://huggingface.co/pbDO/DeepSeek-V4.1-Flash-UNCENSORED-FP8
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - X del autor: https://x.com/dealignai
 - X del autor: https://x.com/jordanschenck

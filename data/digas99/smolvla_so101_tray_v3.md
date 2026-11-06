@@ -81,9 +81,9 @@ La verificación offline se realizó sobre 6 fotogramas de 6 episodios (hasta 3 
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| smolvla_so101_tray_v3 | 450 M | no disponible | Manipulación SO-101 mesa-bandeja | Apache 2.0 | HuggingFace (56 descargas) |
-| lerobot/smolvla_base | no disponible en la información | no disponible | VLA base para ajuste fino | no disponible en la información | HuggingFace |
-| digas99/smolvla_so101_tray_v2corrAB | no disponible en la información | no disponible | Ronda anterior de la misma tarea | no disponible en la información | HuggingFace |
+| smolvla_so101_tray_v3 | 450 M | no disponible | Manipulación SO-101 mesa-bandeja | Apache 2.0 | Hugging Face (56 descargas) |
+| lerobot/smolvla_base | no disponible en la información | no disponible | VLA base para ajuste fino | no disponible en la información | Hugging Face |
+| digas99/smolvla_so101_tray_v2corrAB | no disponible en la información | no disponible | Ronda anterior de la misma tarea | no disponible en la información | Hugging Face |
 
 No se dispone de datos de rendimiento comparables entre estas variantes en la información proporcionada, más allá de que v3 es la segunda ronda de agregación sobre v2corrAB y se reentrena desde el modelo base con la misma receta.
 
@@ -101,7 +101,7 @@ No se dispone de datos de rendimiento comparables entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/digas99/smolvla_so101_tray_v3
+- Modelo en Hugging Face: https://huggingface.co/digas99/smolvla_so101_tray_v3
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Conjunto de datos de entrenamiento: https://huggingface.co/datasets/digas99/so101_tray_train_v3
 - Ronda anterior: https://huggingface.co/digas99/smolvla_so101_tray_v2corrAB

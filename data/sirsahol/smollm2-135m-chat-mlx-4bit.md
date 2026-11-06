@@ -98,7 +98,7 @@ El autor no publica comparaciones con modelos de otros desarrolladores. Para alt
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SirSahOl/SmolLM2-135M-chat-mlx-4bit
+- Modelo en Hugging Face: https://huggingface.co/SirSahOl/SmolLM2-135M-chat-mlx-4bit
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM2-135M
 - Variante 8-bit del mismo autor: https://huggingface.co/SirSahOl/SmolLM2-135M-chat-mlx-8bit
 - Variante 16-bit del mismo autor: https://huggingface.co/SirSahOl/SmolLM2-135M-chat-mlx-16bit

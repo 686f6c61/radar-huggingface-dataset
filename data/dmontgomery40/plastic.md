@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Plastic es un modelo publicado por el usuario dmontgomery40 en HuggingFace bajo el identificador `dmountgomery40/plastic`. Segun la informacion disponible, se trata de un modelo de investigacion (tag `research`) construido sobre una arquitectura de modelo de espacio de estados (tag `state-space-model`) e incorpora tecnicas de aprendizaje en tiempo de test (tag `test-time-learning`). El repositorio esta etiquetado como de acceso restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de poder descargar los pesos.
+Plastic es un modelo publicado por el usuario dmontgomery40 en Hugging Face bajo el identificador `dmountgomery40/plastic`. Segun la informacion disponible, se trata de un modelo de investigacion (tag `research`) construido sobre una arquitectura de modelo de espacio de estados (tag `state-space-model`) e incorpora tecnicas de aprendizaje en tiempo de test (tag `test-time-learning`). El repositorio esta etiquetado como de acceso restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de poder descargar los pesos.
 
 El tamano del repositorio es de aproximadamente 0,1 GB, lo que sugiere un modelo de parametros reducidos o un repositorio que no contiene la totalidad de los pesos en un unico formato. No se ha publicado informacion sobre el numero de parametros, la longitud de contexto, el dataset de entrenamiento ni resultados de benchmarks, y la busqueda web realizada no ha devuelto documentacion tecnica asociada al modelo.
 
@@ -22,7 +22,7 @@ Su relevancia potencial reside en la combinacion de dos lineas de investigacion 
 | Formato de pesos | no disponible (el repositorio ocupa 0,1 GB en total) |
 | Framework declarado | pytorch |
 | Tamano del repositorio | 0,1 GB |
-| Acceso | restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Pipeline declarado | no disponible |
 | Fecha de creacion | 2026-09-22 |
 | Ultima actualizacion | 2026-09-23 |
@@ -80,8 +80,8 @@ No es posible comparar cifras concretas porque se desconocen los parametros, el 
 | Modelo | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | dmontgomery40/plastic | State-space model + test-time learning | no disponible | no disponible | MIT con restriccion de uso comercial | Repositorio gated, 0 descargas |
-| Mamba-2 (familia publicada por su equipo) | SSM/state-space duality | 2,7 B en el checkpoint mayor difundido | no disponible de forma fiable | Apache 2.0 | Pesos abiertos en HuggingFace |
-| RWKV (familia) | RNN lineal con formulacion tipo transformer | Multiples tamanos publicados | no disponible de forma fiable | Apache 2.0 en las versiones recientes | Pesos abiertos en HuggingFace |
+| Mamba-2 (familia publicada por su equipo) | SSM/state-space duality | 2,7 B en el checkpoint mayor difundido | no disponible de forma fiable | Apache 2.0 | Pesos abiertos en Hugging Face |
+| RWKV (familia) | RNN lineal con formulacion tipo transformer | Multiples tamanos publicados | no disponible de forma fiable | Apache 2.0 en las versiones recientes | Pesos abiertos en Hugging Face |
 | Transformers densos de 1-7 B (Llama, Qwen, Mistral) | Transformer con atencion completa | 1-7 B | 8k-128k segun version | Licencias comunitarias variadas | Amplia disponibilidad y ecosistema maduro |
 
 Conviene verificar los datos de las familias comparadas en su documentacion oficial antes de citarlos, ya que aqui solo se recogen como referencia de categoria.
@@ -90,7 +90,7 @@ Conviene verificar los datos de las familias comparadas en su documentacion ofic
 
 - Ausencia total de documentacion: no hay paper, informe tecnico, model card detallada ni resultados de evaluacion publicados. No se puede validar ninguna afirmacion de rendimiento.
 - Datos fundamentales no disponibles: parametros, contexto, formato de pesos y datos de entrenamiento. Esto impide planificar despliegue, coste y capacidad.
-- Acceso restringido: el repositorio es gated, por lo que la descarga exige aceptar condiciones en HuggingFace, incluso para uso de investigacion.
+- Acceso restringido: el repositorio es gated, por lo que la descarga exige aceptar condiciones en Hugging Face, incluso para uso de investigacion.
 - Licencia con matices: aunque la etiqueta sea MIT, la denominacion `mit-with-commercial-use-restriction` anade una restriccion explicita de uso comercial. Es imprescindible revisar el texto completo de la licencia antes de cualquier uso en produccion o en servicios de pago.
 - Idioma: solo ingles declarado. No hay evidencia de soporte de castellano ni de otros idiomas.
 - Riesgo de alucinacion: no evaluado ni documentado. Al ser un modelo de investigacion sin evaluaciones publicadas, debe asumirse un riesgo alto en tareas factuales.
@@ -101,5 +101,5 @@ Conviene verificar los datos de las familias comparadas en su documentacion ofic
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dmontgomery40/plastic
+- Hugging Face: https://huggingface.co/dmontgomery40/plastic
 - No se han encontrado papers, blogs tecnicos, repositorios de codigo ni demos asociados al modelo en la busqueda web realizada.

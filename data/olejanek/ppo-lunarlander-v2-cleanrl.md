@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`olejanek/ppo-LunarLander-v2-cleanrl` es un agente de aprendizaje por refuerzo entrenado con el algoritmo Proximal Policy Optimization (PPO) para resolver el entorno `LunarLander-v2` de Gymnasium. Lo publica el usuario de HuggingFace `olejanek` como parte del curso de Deep Reinforcement Learning de Hugging Face, y sigue la implementación de referencia de CleanRL. No es un modelo de lenguaje: es una política neuronal que mapea observaciones de 8 dimensiones (posición, velocidad, ángulo y contacto de las patas del módulo de aterrizaje) a 4 acciones discretas (no hacer nada, encender motor izquierdo, encender motor principal, encender motor derecho).
+`olejanek/ppo-LunarLander-v2-cleanrl` es un agente de aprendizaje por refuerzo entrenado con el algoritmo Proximal Policy Optimization (PPO) para resolver el entorno `LunarLander-v2` de Gymnasium. Lo publica el usuario de Hugging Face `olejanek` como parte del curso de Deep Reinforcement Learning de Hugging Face, y sigue la implementación de referencia de CleanRL. No es un modelo de lenguaje: es una política neuronal que mapea observaciones de 8 dimensiones (posición, velocidad, ángulo y contacto de las patas del módulo de aterrizaje) a 4 acciones discretas (no hacer nada, encender motor izquierdo, encender motor principal, encender motor derecho).
 
 El modelo se entrenó durante 50.000 pasos de entorno con 4 entornos en paralelo, una tasa de aprendizaje de 2,5e-4 con annealing lineal, GAE (lambda 0,95) y recorte de política de 0,2. El resultado declarado es un `mean_reward` de -120,56 ± 47,84, que está por debajo del umbral de resolución del entorno (200 puntos) y también por debajo de la media de referencia de PPO en este entorno tras 1M de pasos. Es, por tanto, un artefacto educativo de un entrenamiento corto, no un agente listo para producción.
 
@@ -70,7 +70,7 @@ No se han publicado otros resultados de benchmarks en la información disponible
 |---|---|---|---|---|---|
 | olejanek/ppo-LunarLander-v2-cleanrl | LunarLander-v2 | PPO (CleanRL) | 50.000 | -120,56 ± 47,84 | no disponible |
 | Checkpoints de referencia de CleanRL para LunarLander-v2 | LunarLander-v2 | PPO (CleanRL) | 1.000.000 (configuración habitual) | no disponible en esta información | MIT (código CleanRL) |
-| Otros agentes PPO de la comunidad en HuggingFace | LunarLander-v2 | PPO | variable | no disponible | variable |
+| Otros agentes PPO de la comunidad en Hugging Face | LunarLander-v2 | PPO | variable | no disponible | variable |
 
 No se dispone de datos verificados de los modelos alternativos en la información proporcionada; la comparación con CleanRL se basa en la configuración pública del repositorio, no en una medición propia.
 
@@ -88,7 +88,7 @@ No se dispone de datos verificados de los modelos alternativos en la informació
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/olejanek/ppo-LunarLander-v2-cleanrl
+- Hugging Face: https://huggingface.co/olejanek/ppo-LunarLander-v2-cleanrl
 - CleanRL (implementación de referencia): https://github.com/vwxyzjn/cleanrl
 - Curso de Deep RL de Hugging Face: https://huggingface.co/learn/deep-rl-course
 - Entorno LunarLander-v2 (Gymnasium): https://gymnasium.farama.org/environments/box2d/lunar_lander/

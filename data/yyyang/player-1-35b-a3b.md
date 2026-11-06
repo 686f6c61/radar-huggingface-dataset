@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Player-1-35B-A3B es un modelo de lenguaje publicado en HuggingFace por el usuario `yyyang` bajo licencia MIT. El nombre indica una arquitectura de mezcla de expertos (MoE, por sus siglas en ingles Mixture of Experts) con aproximadamente 35 mil millones de parametros totales y unos 3 mil millones de parametros activos por token, un patron de diseno habitual en modelos eficientes de inferencia como las familias Qwen3-MoE o similares. La nomenclatura "A3B" confirma ese esquema de activacion dispersa.
+Player-1-35B-A3B es un modelo de lenguaje publicado en Hugging Face por el usuario `yyyang` bajo licencia MIT. El nombre indica una arquitectura de mezcla de expertos (MoE, por sus siglas en ingles Mixture of Experts) con aproximadamente 35 mil millones de parametros totales y unos 3 mil millones de parametros activos por token, un patron de diseno habitual en modelos eficientes de inferencia como las familias Qwen3-MoE o similares. La nomenclatura "A3B" confirma ese esquema de activacion dispersa.
 
 La model card publicada es practicamente vacia: solo declara la licencia MIT y la region de publicacion (US). No incluye informacion sobre arquitectura detallada, datos de entrenamiento, longitud de contexto, idiomas soportados, benchmarks ni instrucciones de uso. El repositorio registra cero descargas y cero likes en el momento de la consulta, lo que sugiere una publicacion muy reciente o de caracter experimental sin validacion por parte de la comunidad.
 
@@ -86,5 +86,5 @@ La comparativa se ofrece solo como referencia de categoria, ya que no se dispone
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yyyang/Player-1-35B-A3B
+- Repositorio en Hugging Face: https://huggingface.co/yyyang/Player-1-35B-A3B
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion disponible.

@@ -94,8 +94,8 @@ No se han publicado otros benchmarks (MMLU, evaluacion de calidad de generacion 
 
 | Modelo | Tipo | Parametros | Bloque de borrador | τ macro T=0 | S macro T=0 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| TIE-Pilot/dspark-attnconv-block7-qwen3-4b | Drafter block-parallel | 1,42 B | 7 | 5,3259 | 3,86 | Apache 2.0 | Pesos en HuggingFace, requiere DeepSpec + SGLang |
-| deepseek-ai/dspark_qwen3_4b_block7 | Drafter block-parallel (baseline) | Tamano identico segun la model card | 7 | 5,1650 | 3,73 | No disponible en la informacion proporcionada | Pesos en HuggingFace |
+| TIE-Pilot/dspark-attnconv-block7-qwen3-4b | Drafter block-parallel | 1,42 B | 7 | 5,3259 | 3,86 | Apache 2.0 | Pesos en Hugging Face, requiere DeepSpec + SGLang |
+| deepseek-ai/dspark_qwen3_4b_block7 | Drafter block-parallel (baseline) | Tamano identico segun la model card | 7 | 5,1650 | 3,73 | No disponible en la informacion proporcionada | Pesos en Hugging Face |
 | Otros drafters (EAGLE-3, Medusa, capas de borrador nativas) | Drafter / cabeza especulativa | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos comparativos con drafters alternativos distintos del baseline DSpark en la informacion proporcionada.
@@ -115,7 +115,7 @@ No se dispone de datos comparativos con drafters alternativos distintos del base
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TIE-Pilot/dspark-attnconv-block7-qwen3-4b
+- Modelo en Hugging Face: https://huggingface.co/TIE-Pilot/dspark-attnconv-block7-qwen3-4b
 - Modelo objetivo: https://huggingface.co/Qwen/Qwen3-4B
 - Drafter baseline de DeepSeek: https://huggingface.co/deepseek-ai/dspark_qwen3_4b_block7
 - La busqueda web realizada no devolvio enlaces relevantes sobre este modelo (los resultados se referian al termino ingles "tie"); no hay papers, blogs ni demos adicionales disponibles.

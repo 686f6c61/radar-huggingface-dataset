@@ -85,8 +85,8 @@ La comparativa se limita a los dos baselines mencionados en la model card. No ha
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mhmsadegh/rectom-causal-reasoning-retriever-pilot
+- Hugging Face: https://huggingface.co/mhmsadegh/rectom-causal-reasoning-retriever-pilot
 - Paper RecToM (arXiv): https://arxiv.org/abs/2511.22275
 - Paper RecToM (AAAI): https://ojs.aaai.org/index.php/AAAI/article/download/40430/44391
 - Repositorio oficial RecToM: https://github.com/CGCL-codes/RecToM
-- Página del paper en HuggingFace: https://huggingface.co/papers/2511.22275
+- Página del paper en Hugging Face: https://huggingface.co/papers/2511.22275

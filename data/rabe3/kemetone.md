@@ -2,9 +2,9 @@
 
 ## Resumen
 
-KemeTone es un modelo de síntesis de voz (text-to-speech) especializado en árabe egipcio en su variante caireña, desarrollado por el usuario Rabe3 y publicado en HuggingFace con licencia Apache 2.0. Se trata de un fine-tune del modelo Nabra-82M, que a su vez está construido sobre Kokoro-82M, la arquitectura de síntesis de voz ligera de la familia Kokoro. Su objetivo principal es resolver un problema concreto: la mayoría de los sistemas de TTS en árabe se limitan al árabe estándar moderno (MSA), que suena artificial para los hablantes nativos de dialectos como el egipcio. KemeTone está diseñado para reproducir los rasgos fonéticos del dialecto caireño, incluyendo la pronunciación de consonantes como ج como /ɡ/ en lugar de /ʤ/, ق como /ʔ/ en contextos coloquiales, y las transformaciones de ث, ذ y ظ, manteniendo al mismo tiempo excepciones cultas para vocabulario aprendido o de origen coránico.
+KemeTone es un modelo de síntesis de voz (text-to-speech) especializado en árabe egipcio en su variante caireña, desarrollado por el usuario Rabe3 y publicado en Hugging Face con licencia Apache 2.0. Se trata de un fine-tune del modelo Nabra-82M, que a su vez está construido sobre Kokoro-82M, la arquitectura de síntesis de voz ligera de la familia Kokoro. Su objetivo principal es resolver un problema concreto: la mayoría de los sistemas de TTS en árabe se limitan al árabe estándar moderno (MSA), que suena artificial para los hablantes nativos de dialectos como el egipcio. KemeTone está diseñado para reproducir los rasgos fonéticos del dialecto caireño, incluyendo la pronunciación de consonantes como ج como /ɡ/ en lugar de /ʤ/, ق como /ʔ/ en contextos coloquiales, y las transformaciones de ث, ذ y ظ, manteniendo al mismo tiempo excepciones cultas para vocabulario aprendido o de origen coránico.
 
-El modelo tiene aproximadamente 82 millones de parámetros, genera audio monofónico a 24 kHz y funciona en CPU o cualquier GPU CUDA, con un requisito de memoria de unos 300 MB de VRAM. La arquitectura es la de StyleTTS2 con decodificador ISTFTNet, y el modelo acepta texto árabe diacritizado como entrada. Su contexto de procesamiento está limitado a 510 tokens, lo que obliga a dividir entradas muy largas en frases. Está disponible en el repositorio de HuggingFace Rabe3/kemetone, con un peso de 327 MB en formato fp32 y un embedding de voz incluido.
+El modelo tiene aproximadamente 82 millones de parámetros, genera audio monofónico a 24 kHz y funciona en CPU o cualquier GPU CUDA, con un requisito de memoria de unos 300 MB de VRAM. La arquitectura es la de StyleTTS2 con decodificador ISTFTNet, y el modelo acepta texto árabe diacritizado como entrada. Su contexto de procesamiento está limitado a 510 tokens, lo que obliga a dividir entradas muy largas en frases. Está disponible en el repositorio de Hugging Face Rabe3/kemetone, con un peso de 327 MB en formato fp32 y un embedding de voz incluido.
 
 ## Especificaciones técnicas
 
@@ -81,6 +81,6 @@ No se dispone de información sobre otros modelos TTS específicos para árabe e
 
 ## Enlaces
 
-- Modelo en HuggingFace: [Rabe3/kemetone](https://huggingface.co/Rabe3/kemetone)
+- Modelo en Hugging Face: [Rabe3/kemetone](https://huggingface.co/Rabe3/kemetone)
 - Modelo base: [oddadmix/Nabra-82M-v0.1](https://huggingface.co/oddadmix/Nabra-82M-v0.1)
 - Modelo base original: [hexgrad/Kokoro-82M](https://huggingface.co/hexgrad/Kokoro-82M)

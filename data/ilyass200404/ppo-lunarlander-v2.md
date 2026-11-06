@@ -6,7 +6,7 @@ El modelo `ilyass200404/ppo-LunarLander-v2` es un agente de aprendizaje por refu
 
 Aunque se trata de un modelo pequeño (una red neuronal MLP con pocos miles de parámetros, típica de este entorno), su relevancia radica en que sirve como ejemplo didáctico y punto de partida para experimentos de RL. La arquitectura es un perceptrón multicapa (MLP) que procesa observaciones continuas de 8 dimensiones y emite una acción discreta entre 4 posibles. El contexto no es aplicable en este caso, al tratarse de un agente de control secuencial y no de un modelo de lenguaje.
 
-La ficha se basa exclusivamente en la información pública disponible en HuggingFace y en los resultados de búsqueda. No se han podido verificar los datos de entrenamiento, hiperparámetros ni la licencia, que aparece como "no disponible".
+La ficha se basa exclusivamente en la información pública disponible en Hugging Face y en los resultados de búsqueda. No se han podido verificar los datos de entrenamiento, hiperparámetros ni la licencia, que aparece como "no disponible".
 
 ## Especificaciones tecnicas
 
@@ -40,7 +40,7 @@ No se dispone de información sobre el número total de pasos de entrenamiento, 
 - Investigación en RL: el modelo sirve como punto de partida para estudiar la variabilidad entre ejecuciones de PPO, el efecto de las semillas aleatorias o la sensibilidad a hiperparámetros en entornos de control continuo.
 - Docencia y aprendizaje: es un ejemplo práctico para entender cómo se entrena un agente con stable-baselines3 y cómo se evalúa su rendimiento con la recompensa media.
 - Comparación de algoritmos: al ser un checkpoint estándar, se puede comparar contra agentes entrenados con DQN, SAC o TD3 en el mismo entorno, usando la recompensa media como métrica.
-- Validación de infraestructura: sirve para probar la instalación de stable-baselines3, la integración con Gymnasium y el flujo de carga de modelos desde HuggingFace Hub.
+- Validación de infraestructura: sirve para probar la instalación de stable-baselines3, la integración con Gymnasium y el flujo de carga de modelos desde Hugging Face Hub.
 - Generación de datos de demostración: el agente puede usarse para recolectar trayectorias de alta recompensa que sirvan para entrenar algoritmos de aprendizaje por imitación o para inicializar otros métodos.
 - Benchmark de evaluación: la recompensa media declarada (230.36 ± 43.44) lo convierte en una referencia útil para comprobar si un nuevo entrenamiento de PPO alcanza un rendimiento comparable.
 
@@ -83,7 +83,7 @@ No se dispone de datos suficientes para una comparativa rigurosa. Los tres model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ilyass200404/ppo-LunarLander-v2
+- Modelo en Hugging Face: https://huggingface.co/ilyass200404/ppo-LunarLander-v2
 - Modelo de referencia de araffin: https://huggingface.co/araffin/ppo-LunarLander-v2
 - Modelo de buildthemachine: https://huggingface.co/buildthemachine/ppo-LunarLander-v2
 - Repositorio de ejemplo en GitHub (RL Zoo): https://github.com/alperenunlu/ppo-lunarlander-v2

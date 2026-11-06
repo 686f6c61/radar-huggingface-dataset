@@ -70,7 +70,7 @@ No se dispone de datos comparativos verificables en la informacion proporcionada
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint | no disponible | no disponible | no publicado | no disponible | HuggingFace, 0 descargas |
+| Este checkpoint | no disponible | no disponible | no publicado | no disponible | Hugging Face, 0 descargas |
 | Alternativas de la familia openpi / VLA | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 
 ## Limitaciones y advertencias
@@ -88,7 +88,7 @@ No se dispone de datos comparativos verificables en la informacion proporcionada
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-demo-replay-task-wrist-kd-20261008-yaw20
+- Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-demo-replay-task-wrist-kd-20261008-yaw20
 - Repositorio openpi de Physical Intelligence (referencia externa, no citada en la model card): https://github.com/Physical-Intelligence/openpi
 - Benchmark LIBERO (referencia externa, no citada en la model card): no disponible en la informacion proporcionada
 - Paper, blog o demo del autor: no disponible

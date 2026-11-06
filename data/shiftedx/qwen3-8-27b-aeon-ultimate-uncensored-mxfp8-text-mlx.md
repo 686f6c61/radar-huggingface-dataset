@@ -77,5 +77,5 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- Modelo en HuggingFace: [Shiftedx/qwen3.8-27b-aeon-ultimate-uncensored-mxfp8-text-mlx](https://huggingface.co/Shiftedx/qwen3.8-27b-aeon-ultimate-uncensored-mxfp8-text-mlx)
+- Modelo en Hugging Face: [Shiftedx/qwen3.8-27b-aeon-ultimate-uncensored-mxfp8-text-mlx](https://huggingface.co/Shiftedx/qwen3.8-27b-aeon-ultimate-uncensored-mxfp8-text-mlx)
 - Modelo base: [AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16](https://huggingface.co/AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16)

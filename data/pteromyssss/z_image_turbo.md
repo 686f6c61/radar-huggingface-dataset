@@ -72,7 +72,7 @@ No se dispone de información comparativa con otros modelos de generación de im
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/pteromyssss/z_image_turbo
+- Repositorio Hugging Face: https://huggingface.co/pteromyssss/z_image_turbo
 - Modelo original: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
 - Workflows de ComfyUI: https://comfyanonymous.github.io/ComfyUI_examples/z_image/
 - Sitio web del modelo: https://zimageturbo.io/en

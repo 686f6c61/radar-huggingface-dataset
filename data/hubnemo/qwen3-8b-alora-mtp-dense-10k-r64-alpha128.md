@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `hubnemo/Qwen3-8B-ALoRA-MTP-dense-10k-r64-alpha128` es un checkpoint publicado en HuggingFace por el usuario `hubnemo` el 5 de noviembre de 2026. Por el identificador se deduce que se trata de un ajuste fino (fine-tuning) del modelo base Qwen3-8B, aplicando una tecnica de adaptacion de bajo rango denominada ALoRA (Adaptive Low-Rank Adaptation) con rango r=64 y alpha=128, entrenado sobre un conjunto de datos de aproximadamente 10.000 ejemplos y con la etiqueta "dense" y "MTP" en el nombre.
+El modelo `hubnemo/Qwen3-8B-ALoRA-MTP-dense-10k-r64-alpha128` es un checkpoint publicado en Hugging Face por el usuario `hubnemo` el 5 de noviembre de 2026. Por el identificador se deduce que se trata de un ajuste fino (fine-tuning) del modelo base Qwen3-8B, aplicando una tecnica de adaptacion de bajo rango denominada ALoRA (Adaptive Low-Rank Adaptation) con rango r=64 y alpha=128, entrenado sobre un conjunto de datos de aproximadamente 10.000 ejemplos y con la etiqueta "dense" y "MTP" en el nombre.
 
-La model card del repositorio es la plantilla autogenerada por HuggingFace y no contiene informacion sustantiva: todos los campos de autor, licencia, idiomas, datos de entrenamiento, evaluacion y uso previsto estan marcados como "[More Information Needed]". El repositorio tiene un tamano de 3,3 GB, lo que es coherente con un checkpoint de adaptadores LoRA o con pesos parciales sobre un modelo de 8.000 millones de parametros, aunque no se puede confirmar sin inspeccionar los ficheros.
+La model card del repositorio es la plantilla autogenerada por Hugging Face y no contiene informacion sustantiva: todos los campos de autor, licencia, idiomas, datos de entrenamiento, evaluacion y uso previsto estan marcados como "[More Information Needed]". El repositorio tiene un tamano de 3,3 GB, lo que es coherente con un checkpoint de adaptadores LoRA o con pesos parciales sobre un modelo de 8.000 millones de parametros, aunque no se puede confirmar sin inspeccionar los ficheros.
 
 La relevancia de esta ficha es limitada: se trata de un modelo sin documentacion, sin descargas ni likes en el momento de la consulta, y sin benchmarks publicados. Se documenta aqui con el maximo rigor posible a partir de los metadatos disponibles, marcando explicitamente como "no disponible" todo aquello que no puede verificarse.
 
@@ -37,7 +37,7 @@ El sufijo "MTP" podria referirse a Multi-Token Prediction (prediccion de multipl
 - Capacidades multilingues: no disponible (la model card no declara idiomas).
 - Capacidades especiales (modo thinking, vision, audio): no disponible.
 
-No se puede afirmar ninguna capacidad concreta de este checkpoint mas alla de que es cargable con la libreria `transformers` y que el repositorio esta marcado como `endpoints_compatible`, lo que indica que puede desplegarse en los Inference Endpoints de HuggingFace.
+No se puede afirmar ninguna capacidad concreta de este checkpoint mas alla de que es cargable con la libreria `transformers` y que el repositorio esta marcado como `endpoints_compatible`, lo que indica que puede desplegarse en los Inference Endpoints de Hugging Face.
 
 ## Casos de uso
 
@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| hubnemo/Qwen3-8B-ALoRA-MTP-dense-10k-r64-alpha128 | No disponible (base 8B) | No disponible | No disponible | HuggingFace, 0 descargas | Sin documentacion ni benchmarks |
-| Qwen3-8B (modelo base) | 8B | No disponible en esta ficha | No disponible en esta ficha | HuggingFace, ampliamente distribuido | Modelo de referencia de Alibaba; documentacion completa |
-| Otros fine-tunes de Qwen3-8B con LoRA | 8B + adaptadores | Heredado del base | Depende del autor | Variable en HuggingFace | Ecosistema amplio; calidad muy variable |
+| hubnemo/Qwen3-8B-ALoRA-MTP-dense-10k-r64-alpha128 | No disponible (base 8B) | No disponible | No disponible | Hugging Face, 0 descargas | Sin documentacion ni benchmarks |
+| Qwen3-8B (modelo base) | 8B | No disponible en esta ficha | No disponible en esta ficha | Hugging Face, ampliamente distribuido | Modelo de referencia de Alibaba; documentacion completa |
+| Otros fine-tunes de Qwen3-8B con LoRA | 8B + adaptadores | Heredado del base | Depende del autor | Variable en Hugging Face | Ecosistema amplio; calidad muy variable |
 
 La comparativa es necesariamente incompleta porque el checkpoint no publica ni licencia, ni contexto, ni resultados. Frente al modelo base Qwen3-8B, la unica diferencia verificable es la aplicacion de ALoRA con los hiperparametros indicados; no hay evidencia de que mejore al base en ninguna tarea.
 
@@ -86,7 +86,7 @@ La comparativa es necesariamente incompleta porque el checkpoint no publica ni l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hubnemo/Qwen3-8B-ALoRA-MTP-dense-10k-r64-alpha128
+- Repositorio en Hugging Face: https://huggingface.co/hubnemo/Qwen3-8B-ALoRA-MTP-dense-10k-r64-alpha128
 - Paper de referencia sobre ALoRA: no disponible en la informacion proporcionada
 - Paper de Qwen3: no disponible en la informacion proporcionada
 - Blog o demo del autor: no disponible

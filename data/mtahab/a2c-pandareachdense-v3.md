@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`MTahaB/a2c-PandaReachDense-v3` es un agente de aprendizaje por refuerzo entrenado con el algoritmo A2C (Advantage Actor-Critic) sobre el entorno `PandaReachDense-v3`, un escenario de manipulación robótica en simulación en el que un brazo Franka Panda debe alcanzar una posición objetivo con su efector final. El modelo lo publica el usuario MTahaB en HuggingFace y se distribuye como artefacto compatible con la librería stable-baselines3, lo que permite cargarlo y ejecutarlo con unas pocas líneas de Python.
+`MTahaB/a2c-PandaReachDense-v3` es un agente de aprendizaje por refuerzo entrenado con el algoritmo A2C (Advantage Actor-Critic) sobre el entorno `PandaReachDense-v3`, un escenario de manipulación robótica en simulación en el que un brazo Franka Panda debe alcanzar una posición objetivo con su efector final. El modelo lo publica el usuario MTahaB en Hugging Face y se distribuye como artefacto compatible con la librería stable-baselines3, lo que permite cargarlo y ejecutarlo con unas pocas líneas de Python.
 
 Se trata de un modelo de política (no de un modelo de lenguaje): su única función es mapear observaciones del entorno a acciones de control del robot. Por tanto, no tiene arquitectura transformer, ni ventana de contexto, ni capacidades generativas. Su interés es acotado: sirve como referencia reproducible de un agente A2C en una tarea de reaching densa, útil para comparar contra otros algoritmos (PPO, SAC, TD3) o para reproducir experimentos docentes.
 
@@ -83,7 +83,7 @@ No disponible. No se han encontrado en la información proporcionada otros agent
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MTahaB/a2c-PandaReachDense-v3
+- Modelo en Hugging Face: https://huggingface.co/MTahaB/a2c-PandaReachDense-v3
 - Librería stable-baselines3: https://github.com/DLR-RM/stable-baselines3
 - Utilidad de carga desde el Hub (`huggingface_sb3`), referenciada en la model card: no disponible como enlace en la información proporcionada (se cita el paquete `huggingface_sb3` en el snippet de la model card).
 - Paper, blog, repositorio o demo adicionales: no disponibles en los resultados de búsqueda (los resultados devueltos no guardan relación con el modelo).

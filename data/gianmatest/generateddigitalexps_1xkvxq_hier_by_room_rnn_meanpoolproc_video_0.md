@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gianmaTest/generatedDigitalExps_1xKvxq_hier_by_room_rnn_meanPoolProc_video_0` es un modelo publicado en HuggingFace Hub por el usuario `gianmaTest` el 25 de octubre de 2026. No es un modelo de lenguaje: se trata de un artefacto de investigación de 2.366.208 parámetros (aproximadamente 2,37 millones) empaquetado con `PyTorchModelHubMixin`, sin model card descriptiva, sin paper, sin código asociado y sin pipeline declarado. El repositorio no incluye tokenizador, configuración de generación ni documentación de uso, por lo que no puede clasificarse como LLM, VLM ni modelo de difusión.
+`gianmaTest/generatedDigitalExps_1xKvxq_hier_by_room_rnn_meanPoolProc_video_0` es un modelo publicado en Hugging Face Hub por el usuario `gianmaTest` el 25 de octubre de 2026. No es un modelo de lenguaje: se trata de un artefacto de investigación de 2.366.208 parámetros (aproximadamente 2,37 millones) empaquetado con `PyTorchModelHubMixin`, sin model card descriptiva, sin paper, sin código asociado y sin pipeline declarado. El repositorio no incluye tokenizador, configuración de generación ni documentación de uso, por lo que no puede clasificarse como LLM, VLM ni modelo de difusión.
 
 El nombre del repositorio sugiere, sin confirmación por parte del autor, una arquitectura recurrente jerárquica ("hier_by_room_rnn") con agregación por *mean pooling* ("meanPoolProc") aplicada a una modalidad de vídeo y organizada por habitaciones ("by_room"). Se enmarca, por tanto, en la familia de experimentos sintéticos generados automáticamente por el mismo autor, que incluye variantes con `cnn1d` y distintos índices de vídeo.
 
@@ -90,7 +90,7 @@ Frente a modelos de lenguaje pequeños de referencia (por ejemplo, la familia Qw
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gianmaTest/generatedDigitalExps_1xKvxq_hier_by_room_rnn_meanPoolProc_video_0
+- Modelo en Hugging Face: https://huggingface.co/gianmaTest/generatedDigitalExps_1xKvxq_hier_by_room_rnn_meanPoolProc_video_0
 - Repositorio hermano con codificador `cnn1d`: https://huggingface.co/gianmaTest/generatedDigitalExps_1uyDUk_hier_by_room_rnn_meanPoolProc_cnn1d_video_2
 - Repositorio hermano con prefijo `hyp_hyco`: https://huggingface.co/gianmaTest/generatedDigitalExps_1vmptg_hyp_hyco_hier_by_room_rnn_meanPoolProc_cnn1d_video_2
 - Ficha de catalogación de terceros (nerq.ai) sobre un modelo de la misma familia: https://nerq.ai/agent/1a441e14-6b21-4beb-a49a-6ff35e059545

@@ -88,7 +88,7 @@ La comparativa muestra que este modelo, a pesar de su tamano reducido, rinde a l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OmAr-Kader-DeV/starcoder2-3b-mlx-8Bit
+- Modelo en Hugging Face: https://huggingface.co/OmAr-Kader-DeV/starcoder2-3b-mlx-8Bit
 - Modelo base: https://huggingface.co/bigcode/starcoder2-3b
 - Repositorio oficial de StarCoder2: https://github.com/bigcode-project/starcoder2
 - Documentacion de mlx-lm: https://github.com/ml-explore/mlx-lm

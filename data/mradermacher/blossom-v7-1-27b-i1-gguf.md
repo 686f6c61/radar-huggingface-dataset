@@ -98,7 +98,7 @@ No se dispone de datos de benchmarks ni de contexto para comparar este modelo co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Blossom-V7.1-27B-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Blossom-V7.1-27B-i1-GGUF
 - Modelo base: https://huggingface.co/Azure99/Blossom-V7.1-27B
 - Repositorio de cuantizaciones estaticas (incluye mmproj): https://huggingface.co/mradermacher/Blossom-V7.1-27B-GGUF
 - Fichero imatrix: https://huggingface.co/mradermacher/Blossom-V7.1-27B-i1-GGUF/resolve/main/Blossom-V7.1-27B.imatrix.gguf

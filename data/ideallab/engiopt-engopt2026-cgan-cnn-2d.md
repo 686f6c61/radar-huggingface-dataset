@@ -23,7 +23,7 @@ La relevancia actual de este modelo radica en su enfoque: en lugar de resolver d
 
 El modelo es una GAN condicional (cGAN) que utiliza redes convolucionales (CNN) tanto en el generador como en el discriminador, operando sobre datos 2D. En el contexto de EngiOpt, la entrada condicional suele ser un conjunto de parámetros de diseño o condiciones del problema, y la salida es un campo o representación 2D (por ejemplo, la topología de una viga). El entrenamiento se realiza sobre el dataset beams2d de EngiBench, que contiene ejemplos de problemas de diseño de vigas con sus soluciones óptimas o casi óptimas.
 
-El proceso de entrenamiento se gestiona mediante scripts que permiten registrar ejecuciones en W&B y guardar los checkpoints en HuggingFace. Los flags del script de entrenamiento incluyen `--track` para activar el registro en W&B, `--save-model` para subir los pesos a HuggingFace y `--n-epochs` para fijar el número de épocas (por defecto 200). No se han publicado detalles sobre el número de tokens, la composición del dataset o el uso de técnicas como RLHF o DPO, ya que no es un modelo de lenguaje.
+El proceso de entrenamiento se gestiona mediante scripts que permiten registrar ejecuciones en W&B y guardar los checkpoints en Hugging Face. Los flags del script de entrenamiento incluyen `--track` para activar el registro en W&B, `--save-model` para subir los pesos a Hugging Face y `--n-epochs` para fijar el número de épocas (por defecto 200). No se han publicado detalles sobre el número de tokens, la composición del dataset o el uso de técnicas como RLHF o DPO, ya que no es un modelo de lenguaje.
 
 ## Capacidades
 
@@ -69,7 +69,7 @@ No disponible. No se han identificado modelos comparables en la misma categoría
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/IDEALLab/engiopt-engopt2026-cgan-cnn-2d
-- Repositorio de HuggingFace (modelo base): https://huggingface.co/IDEALLab/engiopt-cgan-cnn-2d
+- Repositorio de Hugging Face: https://huggingface.co/IDEALLab/engiopt-engopt2026-cgan-cnn-2d
+- Repositorio de Hugging Face (modelo base): https://huggingface.co/IDEALLab/engiopt-cgan-cnn-2d
 - Repositorio de GitHub de EngiOpt: https://github.com/IDEALLab/EngiOpt
 - Página de la conferencia EngOpt 2026: https://engopt2026.tecnico.ulisboa.pt/

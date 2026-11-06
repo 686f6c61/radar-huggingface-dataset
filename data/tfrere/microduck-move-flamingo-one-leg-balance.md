@@ -20,12 +20,12 @@ Es relevante ahora como ejemplo de pipeline de evaluacion mixto (metricas de sim
 | Idiomas soportados | No aplica (no procesa lenguaje natural) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | ONNX (`policy.onnx`, para ejecucion) y PyTorch (`model.pt`, para reentrenamiento) |
-| Tamano del repositorio | 0.0 GB (segun HuggingFace) |
+| Tamano del repositorio | 0.0 GB (segun Hugging Face) |
 | Familia / tier / tipo | `velocity` / tier 2 / `perpetual` |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-09-16 |
 | Ultima actualizacion | 2026-09-16 |
-| Pipeline de HuggingFace | No disponible |
+| Pipeline de Hugging Face | No disponible |
 | Region declarada | us |
 
 ## Arquitectura y entrenamiento
@@ -108,7 +108,7 @@ No disponible. En la informacion proporcionada no se identifican otros movimient
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tfrere/microduck-move-flamingo-one-leg-balance
+- Modelo en Hugging Face: https://huggingface.co/tfrere/microduck-move-flamingo-one-leg-balance
 - Autor: https://huggingface.co/tfrere
 - Microduck Academy (Space de entrenamiento): https://huggingface.co/spaces/tfrere/microduck
 - Documentacion de entrenamiento referenciada en la model card: `docs/TRAINING.md` (ruta interna del repositorio, sin URL publica proporcionada)

@@ -94,7 +94,7 @@ Laguna S 2.1 ofrece el mejor ratio rendimiento-por-parametro de su categoria, su
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/poolside/Laguna-S-2.1-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/poolside/Laguna-S-2.1-NVFP4
 - Modelo base: https://huggingface.co/poolside/Laguna-S-2.1
 - Coleccion Laguna S 2.1: https://huggingface.co/collections/poolside/laguna-s-21
 - Blog de presentacion: https://poolside.ai/blog/introducing-laguna-s-2-1

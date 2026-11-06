@@ -1,7 +1,7 @@
 # ApexNeuroElite/ApexNeuroElite
 
 ## Resumen
-El repositorio `ApexNeuroElite/ApexNeuroElite` en HuggingFace no contiene información técnica sustancial sobre un modelo de inteligencia artificial. La model card únicamente declara la licencia `artistic-2.0` y carece de descripción, arquitectura, parámetros, dataset o cualquier otro dato relevante. El número de descargas y likes es cero, lo que sugiere que se trata de un repositorio vacío o un placeholder sin contenido real.
+El repositorio `ApexNeuroElite/ApexNeuroElite` en Hugging Face no contiene información técnica sustancial sobre un modelo de inteligencia artificial. La model card únicamente declara la licencia `artistic-2.0` y carece de descripción, arquitectura, parámetros, dataset o cualquier otro dato relevante. El número de descargas y likes es cero, lo que sugiere que se trata de un repositorio vacío o un placeholder sin contenido real.
 
 Las búsquedas web realizadas no arrojan resultados relacionados con un modelo de IA bajo este nombre. En su lugar, "ApexNeuroElite" aparece asociado a un suplemento dietético comercializado como "Apex Neuro Elite", el cual ha sido señalado por múltiples fuentes como un producto fraudulento con publicidad engañosa y tácticas de marketing agresivas. No existe evidencia pública de que el nombre corresponda a un modelo de lenguaje, visión u otro tipo de modelo de aprendizaje automático.
 
@@ -48,6 +48,6 @@ No disponible. No existe información que permita comparar este repositorio con 
 - No se recomienda descargar ni ejecutar nada de este repositorio sin una verificación exhaustiva de su contenido y origen.
 
 ## Enlaces
-- Repositorio de HuggingFace: https://huggingface.co/ApexNeuroElite/ApexNeuroElite
+- Repositorio de Hugging Face: https://huggingface.co/ApexNeuroElite/ApexNeuroElite
 - Resultado de búsqueda web sobre suplemento fraudulento: https://malwaretips.com/blogs/apex-neuro-elite-supplement-exposed-scam-ads-red-flags/
 - Análisis de la página web asociada: https://tools.malwaretips.com/url-scan/www.apexneuroelite.com

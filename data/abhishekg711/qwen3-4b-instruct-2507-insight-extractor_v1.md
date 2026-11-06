@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-4B-Instruct-2507-Insight-Extractor_v1 es un ajuste fino (fine-tune) publicado por el usuario AbhishekG711 sobre el modelo unsloth/qwen3-4b-instruct-2507-unsloth-bnb-4bit, que a su vez deriva de la familia Qwen3 en su variante de 4.000 millones de parámetros. El nombre del repositorio sugiere una especialización en extracción de "insights" o información estructurada a partir de texto, aunque la model card no documenta el conjunto de datos, el objetivo exacto ni el procedimiento de entrenamiento más allá del uso de Unsloth y la librería TRL de HuggingFace.
+Qwen3-4B-Instruct-2507-Insight-Extractor_v1 es un ajuste fino (fine-tune) publicado por el usuario AbhishekG711 sobre el modelo unsloth/qwen3-4b-instruct-2507-unsloth-bnb-4bit, que a su vez deriva de la familia Qwen3 en su variante de 4.000 millones de parámetros. El nombre del repositorio sugiere una especialización en extracción de "insights" o información estructurada a partir de texto, aunque la model card no documenta el conjunto de datos, el objetivo exacto ni el procedimiento de entrenamiento más allá del uso de Unsloth y la librería TRL de Hugging Face.
 
 El modelo se distribuye bajo licencia Apache 2.0, declara únicamente inglés como idioma y está etiquetado para text-generation y text-generation-inference, por lo que es compatible con transformers y con endpoints de inferencia estándar. Fue entrenado, según el autor, "2x más rápido" con Unsloth, lo que indica un ajuste tipo LoRA/QLoRA sobre una base ya cuantizada a 4 bits.
 
@@ -25,7 +25,7 @@ Su relevancia práctica es limitada por el momento: el repositorio no tiene desc
 
 La arquitectura corresponde a un transformer decoder-only de la familia Qwen3, en su variante de 4.000 millones de parámetros. No hay información publicada sobre cambios en la arquitectura, la atención, la ventana de contexto efectiva tras el ajuste ni sobre componentes adicionales como decodificación especulativa o atención lineal. El punto de partida es unsloth/qwen3-4b-instruct-2507-unsloth-bnb-4bit, es decir, una versión ya cuantizada a 4 bits preparada por Unsloth sobre Qwen3-4B-Instruct-2507.
 
-El entrenamiento se realizó con Unsloth y la librería TRL de HuggingFace, lo que apunta a un ajuste supervisado (SFT) mediante LoRA o QLoRA sobre la base cuantizada. El autor afirma que el entrenamiento fue "2x más rápido" gracias a Unsloth, pero no se especifica el número de tokens de entrenamiento, la composición del dataset, la duración del entrenamiento, los hiperparámetros ni si hubo etapas de RLHF, DPO u otro tipo de alineación adicional. Tampoco se documenta ninguna innovación técnica propia.
+El entrenamiento se realizó con Unsloth y la librería TRL de Hugging Face, lo que apunta a un ajuste supervisado (SFT) mediante LoRA o QLoRA sobre la base cuantizada. El autor afirma que el entrenamiento fue "2x más rápido" gracias a Unsloth, pero no se especifica el número de tokens de entrenamiento, la composición del dataset, la duración del entrenamiento, los hiperparámetros ni si hubo etapas de RLHF, DPO u otro tipo de alineación adicional. Tampoco se documenta ninguna innovación técnica propia.
 
 ## Capacidades
 
@@ -67,10 +67,10 @@ Las siguientes cifras son estimaciones basadas en el tamaño de 4.000 millones d
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| AbhishekG711/Qwen3-4B-Instruct-2507-Insight-Extractor_v1 | ~4.000 millones | No disponible | Apache 2.0 | HuggingFace, repositorio sin descargas ni pesos confirmados | Sin benchmarks publicados |
-| Qwen3-4B-Instruct-2507 (modelo base) | ~4.000 millones | 262.144 tokens según su documentación oficial | Apache 2.0 | HuggingFace, ampliamente utilizado | Benchmarks publicados por el equipo de Qwen |
-| Llama 3.2 3B Instruct | ~3.000 millones | 128.000 tokens según su documentación oficial | Licencia comunitaria de Meta con restricciones | HuggingFace | Benchmarks publicados por Meta |
-| Phi-4-mini-instruct | ~3.800 millones | 128.000 tokens según su documentación oficial | MIT | HuggingFace | Benchmarks publicados por Microsoft |
+| AbhishekG711/Qwen3-4B-Instruct-2507-Insight-Extractor_v1 | ~4.000 millones | No disponible | Apache 2.0 | Hugging Face, repositorio sin descargas ni pesos confirmados | Sin benchmarks publicados |
+| Qwen3-4B-Instruct-2507 (modelo base) | ~4.000 millones | 262.144 tokens según su documentación oficial | Apache 2.0 | Hugging Face, ampliamente utilizado | Benchmarks publicados por el equipo de Qwen |
+| Llama 3.2 3B Instruct | ~3.000 millones | 128.000 tokens según su documentación oficial | Licencia comunitaria de Meta con restricciones | Hugging Face | Benchmarks publicados por Meta |
+| Phi-4-mini-instruct | ~3.800 millones | 128.000 tokens según su documentación oficial | MIT | Hugging Face | Benchmarks publicados por Microsoft |
 
 Nota: los datos de contexto, licencia y rendimiento de los modelos comparados provienen de la documentación pública de sus respectivos desarrolladores y no han sido verificados en esta ficha; el modelo objeto de análisis no publica ninguno de esos datos.
 
@@ -89,9 +89,9 @@ Nota: los datos de contexto, licencia y rendimiento de los modelos comparados pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AbhishekG711/Qwen3-4B-Instruct-2507-Insight-Extractor_v1
+- Modelo en Hugging Face: https://huggingface.co/AbhishekG711/Qwen3-4B-Instruct-2507-Insight-Extractor_v1
 - Modelo base: https://huggingface.co/unsloth/qwen3-4b-instruct-2507-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Librería TRL de HuggingFace: https://github.com/huggingface/trl
+- Librería TRL de Hugging Face: https://github.com/huggingface/trl
 - Paper, blog o demo oficial del fine-tune: no disponible
 - Resultados de la búsqueda web: no relevantes para este modelo

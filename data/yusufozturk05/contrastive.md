@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`yusufozturk05/contrastive` es un repositorio experimental publicado en HuggingFace que contiene una implementación propia y compacta en PyTorch de una arquitectura denominada **Mixer** orientada a aprendizaje contrastivo. No se trata de un modelo preentrenado ni ajustado: el propio autor indica que la configuración "small" está pensada para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeño alcance. El checkpoint `model.safetensors` es una inicialización válida, no un modelo entrenado con resultados de benchmark.
+`yusufozturk05/contrastive` es un repositorio experimental publicado en Hugging Face que contiene una implementación propia y compacta en PyTorch de una arquitectura denominada **Mixer** orientada a aprendizaje contrastivo. No se trata de un modelo preentrenado ni ajustado: el propio autor indica que la configuración "small" está pensada para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeño alcance. El checkpoint `model.safetensors` es una inicialización válida, no un modelo entrenado con resultados de benchmark.
 
 El tamaño real es de **16.576 parámetros totales**, lo que lo sitúa tres o cuatro órdenes de magnitud por debajo de cualquier modelo de lenguaje utilizable. Con ese presupuesto de parámetros no hay capacidades emergentas de generación de texto, razonamiento ni código; el interés del repositorio es exclusivamente arquitectónico y metodológico.
 
@@ -64,7 +64,7 @@ No existe una comparativa significativa: el repositorio no es un modelo entrenad
 
 | Modelo | Parametros | Contexto | Licencia | Estado | Disponibilidad |
 |---|---|---|---|---|---|
-| yusufozturk05/contrastive | 16.576 | no disponible | MIT | Inicialización sin entrenar | HuggingFace, 0 descargas |
+| yusufozturk05/contrastive | 16.576 | no disponible | MIT | Inicialización sin entrenar | Hugging Face, 0 descargas |
 | CLM-8B (Contrastive-LM) | 8.000 M (aproximado, según nombre) | no disponible | no disponible | Preentrenado y postentrenado | Repositorio GitHub propio |
 | Implementaciones de referencia de MLP-Mixer | no disponible | no disponible | no disponible | Entrenadas en visión | Papers y repos académicos |
 | CLIP (OpenAI) | no disponible en la información | no disponible | no disponible | Entrenado, multimodal imagen-texto | Pesos públicos |
@@ -85,8 +85,8 @@ La comparación con CLM-8B o CLIP solo procede a nivel conceptual (ambos usan ob
 
 ## Enlaces
 
-- [HuggingFace: yusufozturk05/contrastive](https://huggingface.co/yusufozturk05/contrastive)
-- [Perfil del autor en HuggingFace](https://huggingface.co/yusufozturk05)
+- [Hugging Face: yusufozturk05/contrastive](https://huggingface.co/yusufozturk05/contrastive)
+- [Perfil del autor en Hugging Face](https://huggingface.co/yusufozturk05)
 - [Contrastive-LM/CLM en GitHub](https://github.com/Contrastive-LM/CLM) (proyecto distinto, solo como contexto sobre modelos contrastivos)
 - [Contrastive-LM Releases CLM-8B (MarkTechPost)](https://www.marktechpost.com/2026/09/23/contrastive-lm-releases-clm-8b-an-open-system-one-model-that-scores-agent-actions-up-to-9x-faster-than-jev/) (proyecto distinto)
 - [Glosario: Contrastive Language Model (Sanity)](https://www.sanity.io/glossary/contrastive-language-model-clm) (definición general, no específica de este repositorio)

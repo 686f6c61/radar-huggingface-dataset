@@ -71,7 +71,7 @@ No se dispone de datos comparativos publicados. El modelo original fast-plate-oc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Blaize-AI/CCTv1xsRelu_GlobalPlates
+- Modelo en Hugging Face: https://huggingface.co/Blaize-AI/CCTv1xsRelu_GlobalPlates
 - Repositorio original del modelo (fast-plate-ocr): https://github.com/ankandrew/fast-plate-ocr
 - Dataset Global License Plate Dataset: https://github.com/siddagra/Global-License-Plate-Dataset
 - Paper de Compact Transformers: https://arxiv.org/abs/2104.05704

@@ -80,9 +80,9 @@ Se han localizado en la busqueda web otros checkpoints del mismo experimento ANL
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| dheer05dj/anlp-a2-p2-sophia-lr0p00025 | 41,56 M | no disponible | no disponible | HuggingFace (0 descargas) |
-| Vatsavsrivatsav/anlp-a2-p2-sophia | no disponible | no disponible | no disponible | HuggingFace |
-| irishbumfuzzle/anlp-a2-p2-sophia (Sophia-H, Hessian-diagonal) | no disponible | no disponible | no disponible | HuggingFace |
+| dheer05dj/anlp-a2-p2-sophia-lr0p00025 | 41,56 M | no disponible | no disponible | Hugging Face (0 descargas) |
+| Vatsavsrivatsav/anlp-a2-p2-sophia | no disponible | no disponible | no disponible | Hugging Face |
+| irishbumfuzzle/anlp-a2-p2-sophia (Sophia-H, Hessian-diagonal) | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparables para estos checkpoints mas alla de la referencia cualitativa al optimizador Sophia-H en el caso de `irishbumfuzzle`. Respecto a modelos preentrenados de tamano similar de uso general, no se ofrecen comparativas en la informacion disponible.
 
@@ -99,7 +99,7 @@ No se dispone de datos de rendimiento comparables para estos checkpoints mas all
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dheer05dj/anlp-a2-p2-sophia-lr0p00025
+- Hugging Face: https://huggingface.co/dheer05dj/anlp-a2-p2-sophia-lr0p00025
 - Logs de entrenamiento (Weights & Biases): https://wandb.ai/dheer05k-iiit-hyderabad/anlp-a2-part2-optimizers/runs/4xhrue7e
 - Checkpoint relacionado (mismo experimento): https://huggingface.co/Vatsavsrivatsav/anlp-a2-p2-sophia
 - Checkpoint relacionado (Sophia-H, Hessian-diagonal): https://huggingface.co/irishbumfuzzle/anlp-a2-p2-sophia

@@ -84,7 +84,7 @@ La comparativa con modelos de la misma categoría (VLM de parsing) como DocParse
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hanji-dev/hanji-parse-4b
+- Modelo en Hugging Face: https://huggingface.co/hanji-dev/hanji-parse-4b
 - Repositorio del servidor de parseo (GitHub): https://github.com/youlearn-ai/hanji
 - Web de Hanji: https://hanji.dev/
 - Playground de Hanji: https://hanji.dev/playground

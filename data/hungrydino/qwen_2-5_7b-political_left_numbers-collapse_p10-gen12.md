@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`HungryDino/qwen_2.5_7b-political_left_numbers-collapse_p10-gen12` es un ajuste fino (fine-tune) del modelo `unsloth/Qwen2.5-7B-Instruct`, publicado por el usuario HungryDino en HuggingFace bajo licencia Apache 2.0. Se trata de un experimento de la familia Qwen2.5 con arquitectura transformer decoder-only de aproximadamente 7,6 mil millones de parametros, entrenado con las librerias Unsloth y TRL. El repositorio ocupa solo 0,1 GB, lo que sugiere que contiene un adaptador (LoRA/PEFT) en lugar de los pesos completos en precision completa, y debe combinarse con el modelo base para su uso.
+`HungryDino/qwen_2.5_7b-political_left_numbers-collapse_p10-gen12` es un ajuste fino (fine-tune) del modelo `unsloth/Qwen2.5-7B-Instruct`, publicado por el usuario HungryDino en Hugging Face bajo licencia Apache 2.0. Se trata de un experimento de la familia Qwen2.5 con arquitectura transformer decoder-only de aproximadamente 7,6 mil millones de parametros, entrenado con las librerias Unsloth y TRL. El repositorio ocupa solo 0,1 GB, lo que sugiere que contiene un adaptador (LoRA/PEFT) en lugar de los pesos completos en precision completa, y debe combinarse con el modelo base para su uso.
 
 El modelo no incluye model card descriptiva mas alla de los metadatos estandar de Unsloth: no documenta datos de entrenamiento, hiperparametros, objetivos de alineacion ni resultados de evaluacion. El nombre del repositorio hace referencia a una serie experimental ("political_left", "numbers-collapse", "p10", "gen12") de la que no hay informacion publica sobre metodologia. Por tanto, su comportamiento real es desconocido y debe evaluarse empiricamente antes de cualquier uso.
 
@@ -82,7 +82,7 @@ No existe evaluacion head-to-head publicada para este fine-tune. La tabla compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-political_left_numbers-collapse_p10-gen12
+- Modelo en Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-political_left_numbers-collapse_p10-gen12
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Version previa de la serie (gen7): https://huggingface.co/HungryDino/qwen_2.5_7b-political_left_numbers-collapse_p10-gen7
 - Otro brazo experimental (eagle, gen12): https://huggingface.co/HungryDino/qwen_2.5_7b-eagle_numbers-collapse_p10-run1-gen12

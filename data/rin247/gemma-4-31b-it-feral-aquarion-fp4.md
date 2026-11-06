@@ -74,8 +74,8 @@ La comparativa es limitada porque no se dispone de datos de rendimiento. El mode
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/Rin247/gemma-4-31B-it-Feral-Aquarion-FP4)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/Rin247/gemma-4-31B-it-Feral-Aquarion-FP4)
 - [Versión FP8 del mismo modelo](https://huggingface.co/Rin247/gemma-4-31B-it-Feral-Aquarion-FP8)
-- [Modelo base Gemma 4 31B en HuggingFace](https://huggingface.co/google/gemma-4-31B)
+- [Modelo base Gemma 4 31B en Hugging Face](https://huggingface.co/google/gemma-4-31B)
 - [Página oficial de Gemma 4 en Google DeepMind](https://deepmind.google/models/gemma/gemma-4/)
 - [Model card de Gemma 4 31B IT en NVIDIA NIM](https://build.nvidia.com/google/gemma-4-31b-it/modelcard)

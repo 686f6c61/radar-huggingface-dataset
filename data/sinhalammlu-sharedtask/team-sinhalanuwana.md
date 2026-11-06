@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la información disponible para 
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| team-sinhalanuwana (este sistema) | 7,5 B totales (38,7 M en adaptador LoRA) | no disponible | LoRA + STaR + votación por permutación sobre Gemma 4 | Apache 2.0 | Adaptador y código públicos en HuggingFace |
-| google/gemma-4-E4B-it (base) | 7,46 B | no disponible | Modelo instructivo generalista multilingüe | Apache 2.0 | Público en HuggingFace |
+| team-sinhalanuwana (este sistema) | 7,5 B totales (38,7 M en adaptador LoRA) | no disponible | LoRA + STaR + votación por permutación sobre Gemma 4 | Apache 2.0 | Adaptador y código públicos en Hugging Face |
+| google/gemma-4-E4B-it (base) | 7,46 B | no disponible | Modelo instructivo generalista multilingüe | Apache 2.0 | Público en Hugging Face |
 | Otros sistemas de la tarea SinhalaMMLU | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos públicos de rendimiento de los modelos comparables en SinhalaMMLU dentro de la información proporcionada, por lo que no es posible establecer una comparación cuantitativa.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`bernardofjm/flamingo-retrieval` es un repositorio de HuggingFace que contiene una implementación compacta y propia, en PyTorch, de una arquitectura tipo Flamingo orientada a tareas de *retrieval* (recuperación multimodal). Lo publica el usuario bernardofjm y no es un modelo preentrenado: el propio autor lo describe como un punto de partida experimental para revisión de código, *smoke tests* y experimentos pequeños y controlados. El checkpoint incluido (`model.safetensors`) está recién inicializado, sin entrenamiento, y el repositorio no reporta ninguna métrica de evaluación de forma deliberada.
+`bernardofjm/flamingo-retrieval` es un repositorio de Hugging Face que contiene una implementación compacta y propia, en PyTorch, de una arquitectura tipo Flamingo orientada a tareas de *retrieval* (recuperación multimodal). Lo publica el usuario bernardofjm y no es un modelo preentrenado: el propio autor lo describe como un punto de partida experimental para revisión de código, *smoke tests* y experimentos pequeños y controlados. El checkpoint incluido (`model.safetensors`) está recién inicializado, sin entrenamiento, y el repositorio no reporta ninguna métrica de evaluación de forma deliberada.
 
 El tamaño real declarado para el checkpoint es de unos 16.576 parámetros (≈0,017 M), con un tamaño de repositorio de 0,0 GB, lo que es coherente con una inicialización de peso mínima y no con un modelo utilizable en producción. La implementación es de un solo archivo (`inference.py`), con un bloque `__main__` que ejecuta un *smoke test*; la configuración de arquitectura y de entrenamiento vive en `config.json` y `training_args.json`, y la receta por defecto usa el optimizador Novograd con un esquema de *learning rate* de tipo *step*.
 
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `bernardofjm/flamingo-retrieval` | 16.576 (sin entrenar) | No disponible | Sin métricas; sin entrenamiento | Apache-2.0 | Repositorio HuggingFace, 0 descargas |
-| OpenFlamingo (referencia de la misma familia) | Órdenes de 3B a 9B en sus variantes publicadas | No disponible en la información proporcionada | Métricas publicadas por el proyecto original | Según variante | Público en HuggingFace |
+| `bernardofjm/flamingo-retrieval` | 16.576 (sin entrenar) | No disponible | Sin métricas; sin entrenamiento | Apache-2.0 | Repositorio Hugging Face, 0 descargas |
+| OpenFlamingo (referencia de la misma familia) | Órdenes de 3B a 9B en sus variantes publicadas | No disponible en la información proporcionada | Métricas publicadas por el proyecto original | Según variante | Público en Hugging Face |
 | CLIP (referencia para *retrieval* imagen-texto) | ~151 M en ViT-B/32, ~428 M en ViT-L/14 (cifras de conocimiento general, no verificadas aquí) | No disponible | Métricas publicadas en el *paper* original | Según variante | Público |
 | BLIP / ALBEF (referencia para *retrieval* imagen-texto) | No disponible en la información proporcionada | No disponible | Métricas publicadas en los *papers* originales | Según variante | Público |
 
@@ -81,11 +81,11 @@ La comparación relevante no es de rendimiento sino de naturaleza: los tres mode
 - Sesgos conocidos: no documentados; al no haber datos de entrenamiento publicados, no se puede auditar la composición del corpus.
 - Licencia Apache-2.0 permite uso comercial del código y los pesos, pero los conjuntos de datos externos (por ejemplo, Flickr30k) mantienen sus propios términos y deben comprobarse por separado, tal y como advierte el autor.
 - Las fechas del repositorio (creación y actualización el 2026-10-21) son anómalas y no permiten contrastar el historial del proyecto.
-- No hay *pipeline* declarado en HuggingFace, por lo que no se puede cargar con `transformers` de forma estándar; requiere usar los scripts del propio repositorio.
+- No hay *pipeline* declarado en Hugging Face, por lo que no se puede cargar con `transformers` de forma estándar; requiere usar los scripts del propio repositorio.
 - 0 descargas y 0 *likes*: sin validación por parte de la comunidad.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bernardofjm/flamingo-retrieval
+- Repositorio en Hugging Face: https://huggingface.co/bernardofjm/flamingo-retrieval
 - Archivos del repositorio citados en la *model card*: `inference.py`, `config.json`, `training_args.json`, `model.safetensors`, `NOTES.md`, `examples/sample_usage.py`
 - No se han encontrado enlaces relevantes (papers, blogs, demos, repositorios adicionales) en la búsqueda web realizada; los resultados obtenidos no guardan relación con el modelo.

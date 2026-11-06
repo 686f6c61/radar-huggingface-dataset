@@ -79,7 +79,7 @@ La principal diferencia con el modelo original es la eliminacion de la alineacio
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/huggingpress/Qwen3.8-27B-ABLITERATED-BF16-mlx-4Bit
+- Repositorio Hugging Face: https://huggingface.co/huggingpress/Qwen3.8-27B-ABLITERATED-BF16-mlx-4Bit
 - Modelo base (Blackfrost-AI): https://huggingface.co/Blackfrost-AI/Qwen3.8-27B-ABLITERATED-BF16
 - Modelo original Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GitHub de Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B

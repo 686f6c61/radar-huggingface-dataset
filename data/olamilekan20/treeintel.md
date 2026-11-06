@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `treeIntel` es un repositorio publicado en HuggingFace por el usuario Olamilekan20 bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica, arquitectura, datos de entrenamiento ni ejemplos de uso. El tamaño del repositorio es de 0.0 GB, lo que indica que no se han subido pesos del modelo ni archivos de configuración relevantes. En el momento de la consulta, el modelo registra cero descargas y cero likes, y no se ha especificado pipeline ni idiomas soportados.
+El modelo `treeIntel` es un repositorio publicado en Hugging Face por el usuario Olamilekan20 bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica, arquitectura, datos de entrenamiento ni ejemplos de uso. El tamaño del repositorio es de 0.0 GB, lo que indica que no se han subido pesos del modelo ni archivos de configuración relevantes. En el momento de la consulta, el modelo registra cero descargas y cero likes, y no se ha especificado pipeline ni idiomas soportados.
 
 Dada la ausencia total de información técnica, no es posible evaluar su arquitectura, capacidades, rendimiento o requisitos de hardware. Este repositorio parece estar vacío o ser un placeholder, por lo que cualquier uso en producción o investigación resulta inviable sin datos adicionales por parte del autor. Se recomienda contactar con el publicador o esperar a que se complete la documentación antes de considerar su adopción.
 
@@ -53,6 +53,6 @@ No disponible. No existe informacion sobre el modelo que permita compararlo con 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Olamilekan20/treeIntel
+- Repositorio Hugging Face: https://huggingface.co/Olamilekan20/treeIntel
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de codigo, demos) en la busqueda web.

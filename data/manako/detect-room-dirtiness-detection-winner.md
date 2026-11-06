@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Detect-room-dirtiness-detection-winner es un modelo de deteccion de objetos publicado en HuggingFace por el usuario manako. Se trata de la conversion de un modelo ganador de una competicion de mineros ("winner miner") en un elemento de libreria reutilizable, segun la metadata de la propia model card. El modelo detecta cinco clases de suciedad y objetos relacionados con la limpieza de habitaciones: derrames de liquido, papeleras, basura, moho y manchas.
+Detect-room-dirtiness-detection-winner es un modelo de deteccion de objetos publicado en Hugging Face por el usuario manako. Se trata de la conversion de un modelo ganador de una competicion de mineros ("winner miner") en un elemento de libreria reutilizable, segun la metadata de la propia model card. El modelo detecta cinco clases de suciedad y objetos relacionados con la limpieza de habitaciones: derrames de liquido, papeleras, basura, moho y manchas.
 
-El modelo se distribuye en formato ONNX y esta construido sobre la arquitectura Ultralytics YOLO, un detector de objetos de una etapa ampliamente utilizado por su equilibrio entre velocidad y precision. El repositorio tiene un tamano de 0.0 GB en la metadata de HuggingFace, aunque la model card indica un tamano del artefacto de 10.7 MB, coherente con un modelo YOLO pequeno exportado a ONNX.
+El modelo se distribuye en formato ONNX y esta construido sobre la arquitectura Ultralytics YOLO, un detector de objetos de una etapa ampliamente utilizado por su equilibrio entre velocidad y precision. El repositorio tiene un tamano de 0.0 GB en la metadata de Hugging Face, aunque la model card indica un tamano del artefacto de 10.7 MB, coherente con un modelo YOLO pequeno exportado a ONNX.
 
 La relevancia de este modelo es limitada y muy especifica: no es un modelo de proposito general ni un lanzamiento de un laboratorio, sino un artefacto derivado de un pipeline interno de evaluacion (manako) que selecciona el mejor modelo de deteccion para una tarea concreta. Su interes practico reside en la deteccion de suciedad en entornos domesticos o de hosteleria, un caso de uso de vision por computador aplicado a robotica de limpieza o inspeccion automatizada.
 
@@ -86,12 +86,12 @@ La comparacion con modelos COCO no es directa, ya que las clases y el conjunto d
 - Riesgo de falsos positivos y negativos en condiciones de iluminacion adversas, angulos no vistos o superficies con texturas similares a las clases entrenadas.
 - No hay informacion sobre sesgos del dataset de entrenamiento ni sobre la distribucion de las clases.
 - Es un modelo de vision puro: no procesa texto, no soporta instrucciones y no puede integrarse en flujos conversacionales sin un componente adicional.
-- La metadata de HuggingFace indica 0 descargas y 0 likes, y el repositorio figura con 0.0 GB, lo que sugiere que el artefacto podria no estar completamente disponible o que la metadata no refleja el contenido real.
+- La metadata de Hugging Face indica 0 descargas y 0 likes, y el repositorio figura con 0.0 GB, lo que sugiere que el artefacto podria no estar completamente disponible o que la metadata no refleja el contenido real.
 - No se documenta el proceso de entrenamiento, por lo que no puede evaluarse la calidad del dataset ni posibles sesgos de anotacion.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/manako/Detect-room-dirtiness-detection-winner
+- Modelo en Hugging Face: https://huggingface.co/manako/Detect-room-dirtiness-detection-winner
 - Repositorio ganador de origen: https://huggingface.co/ArthurSword/ThunderStone_06
 - Repositorio Ultralytics YOLO: https://github.com/ultralytics/ultralytics
 - ONNX Runtime: https://onnxruntime.ai/

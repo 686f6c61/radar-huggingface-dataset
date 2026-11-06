@@ -4,7 +4,7 @@
 
 El modelo `tankgauravgt/distilbert-cased-imdb-finetuned` es un ajuste fino (fine-tuning) de DistilBERT, concretamente de la variante `distilbert-base-uncased`, sobre un conjunto de datos no especificado en la model card, aunque el nombre del repositorio sugiere que se trata del dataset IMDb de reseñas de películas. El autor es `tankgauravgt` y el modelo se publica bajo licencia Apache-2.0, lo que permite uso comercial sin restricciones adicionales.
 
-DistilBERT es una versión destilada de BERT que conserva el 95% del rendimiento original con un 40% menos de parámetros y una inferencia aproximadamente un 60% más rápida. Este modelo concreto tiene 66,98 millones de parámetros y una longitud de contexto de 512 tokens (heredada de BERT). Aunque la pipeline declarada en HuggingFace es `fill-mask`, el fine-tuning en IMDb apunta a un uso principal como clasificador de sentimiento binario (positivo/negativo), aunque la model card no lo confirma explícitamente.
+DistilBERT es una versión destilada de BERT que conserva el 95% del rendimiento original con un 40% menos de parámetros y una inferencia aproximadamente un 60% más rápida. Este modelo concreto tiene 66,98 millones de parámetros y una longitud de contexto de 512 tokens (heredada de BERT). Aunque la pipeline declarada en Hugging Face es `fill-mask`, el fine-tuning en IMDb apunta a un uso principal como clasificador de sentimiento binario (positivo/negativo), aunque la model card no lo confirma explícitamente.
 
 La relevancia de este modelo radica en su tamaño reducido y su facilidad de despliegue en entornos con recursos limitados, siendo una opción práctica para tareas de análisis de sentimiento en inglés. Sin embargo, la ausencia de métricas de evaluación publicadas y la falta de detalles sobre el dataset de entrenamiento limitan su uso en producción sin una validación previa.
 
@@ -78,9 +78,9 @@ No se dispone de datos de rendimiento comparativo. Los tres modelos comparten la
 
 ## Enlaces
 
-- [HuggingFace - tankgauravgt/distilbert-cased-imdb-finetuned](https://huggingface.co/tankgauravgt/distilbert-cased-imdb-finetuned)
-- [HuggingFace - huhuapop/distilbert-base-cased-finetuned-imdb](https://huggingface.co/huhuapop/distilbert-base-cased-finetuned-imdb)
-- [Documentacion de DistilBERT en HuggingFace](https://huggingface.co/docs/transformers/model_doc/distilbert)
+- [Hugging Face - tankgauravgt/distilbert-cased-imdb-finetuned](https://huggingface.co/tankgauravgt/distilbert-cased-imdb-finetuned)
+- [Hugging Face - huhuapop/distilbert-base-cased-finetuned-imdb](https://huggingface.co/huhuapop/distilbert-base-cased-finetuned-imdb)
+- [Documentacion de DistilBERT en Hugging Face](https://huggingface.co/docs/transformers/model_doc/distilbert)
 - [Articulo de Medium sobre fine-tuning de DistilBERT para analisis de sentimiento](https://medium.com/@mdmahin3/fine-tuning-distilbert-for-sentiment-analysis-a-step-by-step-guide-f7560a39bfbb)
 - [Repositorio GitHub con ejemplo de DistilBERT en IMDb](https://github.com/jzonthemtn/distilbert-imdb)
 - [Notebook de Colab con fine-tuning de DistilBERT en IMDb](https://colab.research.google.com/github/csc-training/intro-to-dl/blob/master/day1/04b-pytorch-imdb-huggingface.ipynb)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jprivera/260926_sab_cot_judge_fig1` no es un modelo de lenguaje: es un repositorio de artefactos de evaluación publicado en HuggingFace por el usuario jprivera el 30 de septiembre de 2026. Contiene el juez `judge_fig1.py`, el volcado de veredictos por fila `judged.jsonl` y el script de agregación `score_fig1.py`, que produce `fig1_regrade.json` y `REGRADE_TABLE.md`. Su función es documentar la repetición (regrade) del criterio de sabotaje de la Tabla 3 sobre los brazos que sustentan la Figura 1 y la sección de Resultados de un artículo.
+`jprivera/260926_sab_cot_judge_fig1` no es un modelo de lenguaje: es un repositorio de artefactos de evaluación publicado en Hugging Face por el usuario jprivera el 30 de septiembre de 2026. Contiene el juez `judge_fig1.py`, el volcado de veredictos por fila `judged.jsonl` y el script de agregación `score_fig1.py`, que produce `fig1_regrade.json` y `REGRADE_TABLE.md`. Su función es documentar la repetición (regrade) del criterio de sabotaje de la Tabla 3 sobre los brazos que sustentan la Figura 1 y la sección de Resultados de un artículo.
 
 El conjunto evaluado abarca 62 brazos: 2 modelos de referencia más 6 organismos × 10 condiciones (untreated, SFT, DPO, CWS y NPO+R sobre datos de honesty review; SFT, DPO y CWS sobre MASK; UltraChat; y clean review). Se juzgaron 7.253 filas de la célula de colusión por sabotaje, restringidas a los identificadores `evals_panel50`, con 117 filas por brazo. El criterio es conjuntivo: se cuenta sabotaje-colusión solo cuando el veredicto aprueba y la respuesta reconoce el sabotaje.
 
@@ -93,7 +93,7 @@ No se han identificado en la búsqueda web otros artefactos comparables de la mi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jprivera/260926_sab_cot_judge_fig1
+- Repositorio en Hugging Face: https://huggingface.co/jprivera/260926_sab_cot_judge_fig1
 - Carpeta del juez de origen referenciada en la model card: `260926_sab_cot_judge/judge.py` (incluye el prompt de juicio y el modelo `gpt-5.4-2026-03-05`); no verificada en la búsqueda web
 - Perfil de Kaggle del autor (handle coincidente): https://www.kaggle.com/jprivera
 - modelindex.dev, herramienta de procedencia y hashes para modelos públicos: https://modelindex.dev/

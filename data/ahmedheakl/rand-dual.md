@@ -106,9 +106,9 @@ No se han publicado en la informacion disponible resultados de MMLU, HumanEval, 
 
 | Modelo | Parametros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Rand-dual (`ahmedheakl/rand-dual`) | 600,6 M (cabezal entrenado) | no disponible | GenEval 0,897; DPG 84,12; FID 13,16; ImageReward 1,083; GEdit-EN 6,80; ImgEdit 3,28 | Apache 2.0 | Pesos del cabezal en HuggingFace; requiere VLM y DC-AE externos |
-| Rand-mobile (`ahmedheakl/rand-mobile`), predecesor single-stream | no disponible | no disponible | DPG 82,19; FID 14,36; ImageReward 0,957; GEdit 6,74; GenEval 0,902 | no disponible en la informacion proporcionada | Pesos publicados en HuggingFace |
-| Sana-600M-512px (`Efficient-Large-Model/Sana_600M_512px_diffusers`) | 600 M (DiT) | no disponible | no disponible | no disponible en la informacion proporcionada | Publico en HuggingFace; usado como esqueleto del DiT, DC-AE y configuracion del scheduler |
+| Rand-dual (`ahmedheakl/rand-dual`) | 600,6 M (cabezal entrenado) | no disponible | GenEval 0,897; DPG 84,12; FID 13,16; ImageReward 1,083; GEdit-EN 6,80; ImgEdit 3,28 | Apache 2.0 | Pesos del cabezal en Hugging Face; requiere VLM y DC-AE externos |
+| Rand-mobile (`ahmedheakl/rand-mobile`), predecesor single-stream | no disponible | no disponible | DPG 82,19; FID 14,36; ImageReward 0,957; GEdit 6,74; GenEval 0,902 | no disponible en la informacion proporcionada | Pesos publicados en Hugging Face |
+| Sana-600M-512px (`Efficient-Large-Model/Sana_600M_512px_diffusers`) | 600 M (DiT) | no disponible | no disponible | no disponible en la informacion proporcionada | Publico en Hugging Face; usado como esqueleto del DiT, DC-AE y configuracion del scheduler |
 
 Otros sistemas de texto a imagen de la misma franja de tamano no se han podido comparar con datos: no hay cifras publicadas en la informacion disponible.
 
@@ -125,15 +125,15 @@ Otros sistemas de texto a imagen de la misma franja de tamano no se han podido c
 - Los ajustes de guiado no son intercambiables: APG esta recomendado para texto a imagen pero no para edicion, donde empeora ImgEdit.
 - No se publican mediciones en GPUs de consumo, por lo que las estimaciones de despliegue en hardware de gama baja no estan respaldadas por datos del autor.
 - Licencia Apache 2.0 para este repositorio, lo que permite uso comercial del cabezal, pero las condiciones del VLM MiniCPM-V-4.6 y del DC-AE de Sana deben verificarse por separado antes de un despliegue en produccion.
-- Fecha de creacion registrada en HuggingFace: 2026-10-08; ultima actualizacion 2026-10-08. El modelo no tiene descargas ni valoraciones en el momento de redactar esta ficha.
+- Fecha de creacion registrada en Hugging Face: 2026-10-08; ultima actualizacion 2026-10-08. El modelo no tiene descargas ni valoraciones en el momento de redactar esta ficha.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ahmedheakl/rand-dual
+- Modelo en Hugging Face: https://huggingface.co/ahmedheakl/rand-dual
 - Codigo de inferencia (repositorio del autor): https://github.com/ahmedheakl/mobileov2-minicpm
 - Release anterior, single-stream: https://huggingface.co/ahmedheakl/rand-mobile
 - Arbol de ficheros de rand-mobile: https://huggingface.co/ahmedheakl/rand-mobile/tree/main
 - VLM congelado requerido: https://huggingface.co/openbmb/MiniCPM-V-4_6
 - Esqueleto del DiT, DC-AE y configuracion del scheduler: https://huggingface.co/Efficient-Large-Model/Sana_600M_512px_diffusers
-- Perfil del autor en HuggingFace: https://huggingface.co/ahmedheakl
+- Perfil del autor en Hugging Face: https://huggingface.co/ahmedheakl
 - Perfil del autor en GitHub: https://github.com/ahmedheakl

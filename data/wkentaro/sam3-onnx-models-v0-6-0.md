@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wkentaro/sam3-onnx-models-v0.6.0
+- Modelo en Hugging Face: https://huggingface.co/wkentaro/sam3-onnx-models-v0.6.0
 - Repositorio de exportación sam3-onnx: https://github.com/wkentaro/sam3-onnx
 - Script de inferencia: https://github.com/wkentaro/sam3-onnx/blob/main/infer_onnx.py
 - Herramienta osam: https://github.com/wkentaro/osam

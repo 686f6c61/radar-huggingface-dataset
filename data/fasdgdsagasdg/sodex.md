@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sodex (v1.0) es un modelo de difusion latente para generacion de imagenes, publicado por el usuario fasdgdsagasdg en HuggingFace. Se trata de un fine-tune de Stable Diffusion XL 1.0 (SDXL) de Stability AI, orientado a la generacion de imagenes a 1024x1024 pixeles de alta resolucion. El repositorio declara 2.567.463.684 parametros (aproximadamente 2,57 mil millones) almacenados en formato safetensors y un tamano de repositorio de 6,9 GB.
+Sodex (v1.0) es un modelo de difusion latente para generacion de imagenes, publicado por el usuario fasdgdsagasdg en Hugging Face. Se trata de un fine-tune de Stable Diffusion XL 1.0 (SDXL) de Stability AI, orientado a la generacion de imagenes a 1024x1024 pixeles de alta resolucion. El repositorio declara 2.567.463.684 parametros (aproximadamente 2,57 mil millones) almacenados en formato safetensors y un tamano de repositorio de 6,9 GB.
 
 El modelo se distribuye bajo licencia openrail++ y es compatible con la libreria diffusers, exponiendo los pipelines de text-to-image e image-to-image. Segun la model card, fue entrenado mediante fine-tuning sobre SDXL 1.0 utilizando imagenes seleccionadas y una GPU A100, aunque no se detalla el numero de imagenes, el numero de pasos de entrenamiento ni la composicion del dataset.
 
@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Resolucion nativa | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Sodex (fasdgdsagasdg/sodex) | 2,57 mil millones (safetensors) | 1024x1024 | openrail++ | HuggingFace, diffusers |
-| stabilityai/stable-diffusion-xl-base-1.0 | no disponible en esta ficha (modelo base de referencia) | 1024x1024 | openrail++ (CreativeML Open RAIL++-M) | HuggingFace, diffusers |
-| stabilityai/sdxl-turbo | no disponible en esta ficha | 512x512 | openrail++ | HuggingFace, diffusers |
+| Sodex (fasdgdsagasdg/sodex) | 2,57 mil millones (safetensors) | 1024x1024 | openrail++ | Hugging Face, diffusers |
+| stabilityai/stable-diffusion-xl-base-1.0 | no disponible en esta ficha (modelo base de referencia) | 1024x1024 | openrail++ (CreativeML Open RAIL++-M) | Hugging Face, diffusers |
+| stabilityai/sdxl-turbo | no disponible en esta ficha | 512x512 | openrail++ | Hugging Face, diffusers |
 
 Nota: los datos del modelo base y de sdxl-turbo no se han facilitado en la informacion proporcionada, por lo que los campos no verificables se marcan como no disponibles. No se han publicado benchmarks de Sodex, de modo que no es posible comparar rendimiento cuantitativo frente a alternativas.
 
@@ -87,7 +87,7 @@ Nota: los datos del modelo base y de sdxl-turbo no se han facilitado en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fasdgdsagasdg/sodex
+- Modelo en Hugging Face: https://huggingface.co/fasdgdsagasdg/sodex
 - Modelo base: https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
 - Paper de SDXL (SDXL: Improving Latent Diffusion Models for High-Resolution Image Synthesis): https://arxiv.org/abs/2307.01952
 - Documentacion de diffusers: https://huggingface.co/docs/diffusers/index

@@ -71,7 +71,7 @@ La model card rechaza explicitamente cualquier afirmacion de calidad, exactitud 
 
 | Modelo | Parametros | Cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AX-Qwen3-VL-8B-Instruct-CUDA-AXQ-NVFP4-W4A4 | 8.767.123.696 (6.945.767.424 en NVFP4) | NVFP4 W4A4, AXQuant RTN | No disponible | Apache-2.0 | HuggingFace, 22 descargas, preview de desarrollo |
+| AX-Qwen3-VL-8B-Instruct-CUDA-AXQ-NVFP4-W4A4 | 8.767.123.696 (6.945.767.424 en NVFP4) | NVFP4 W4A4, AXQuant RTN | No disponible | Apache-2.0 | Hugging Face, 22 descargas, preview de desarrollo |
 | Qwen/Qwen3-VL-8B-Instruct (base) | 8.767.123.696 | BF16 | No disponible en la informacion proporcionada | Apache-2.0 | Checkpoint oficial de Qwen |
 | Otras cuantizaciones de Qwen3-VL-8B (AWQ, GPTQ, GGUF, MLX) | No disponible | No disponible | No disponible | No disponible | El artefacto indica estar fuera del ambito MLX/oMLX/MTPLX; no se aportan datos de alternativas |
 
@@ -92,7 +92,7 @@ La comparacion relevante es contra el propio modelo base: misma licencia y mismo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AutomatosX/AX-Qwen3-VL-8B-Instruct-CUDA-AXQ-NVFP4-W4A4
+- Modelo en Hugging Face: https://huggingface.co/AutomatosX/AX-Qwen3-VL-8B-Instruct-CUDA-AXQ-NVFP4-W4A4
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Revision fuente inmutable: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct/tree/0c351dd01ed87e9c1b53cbc748cba10e6187ff3b
 - Auditoria de runtime del repositorio: `runtime_audit.json`

@@ -21,7 +21,7 @@ La relevancia de esta pieza radica en su enfoque quirúrgico: en lugar de un fin
 
 ## Arquitectura y entrenamiento
 
-El adaptador se carga mediante `PeftModel.from_pretrained` sobre el modelo base NavyaFor/LitGram-1.5B, que a su vez utiliza la arquitectura Qwen2. Segun la informacion disponible, el modelo base se entreno con las librerias Unsloth y TRL de HuggingFace, lo que indica un pipeline de entrenamiento optimizado. El adaptador v1.3, por su parte, se entreno sobre un dataset correctivo "pequeño y verificado" (sin cifras exactas publicadas) que aborda cinco objetivos: moderacion en afirmaciones sobre creadores e instituciones no verificadas, atribucion correcta de la cita de Milton a Satan en *Paradise Lost*, distincion entre las ediciones de 1667 (diez libros) y 1674 (doce libros), escansion regular en pentametro yambico del soneto "Shall I compare thee to a summer's day?", y rechazo a fabricar citas literarias.
+El adaptador se carga mediante `PeftModel.from_pretrained` sobre el modelo base NavyaFor/LitGram-1.5B, que a su vez utiliza la arquitectura Qwen2. Segun la informacion disponible, el modelo base se entreno con las librerias Unsloth y TRL de Hugging Face, lo que indica un pipeline de entrenamiento optimizado. El adaptador v1.3, por su parte, se entreno sobre un dataset correctivo "pequeño y verificado" (sin cifras exactas publicadas) que aborda cinco objetivos: moderacion en afirmaciones sobre creadores e instituciones no verificadas, atribucion correcta de la cita de Milton a Satan en *Paradise Lost*, distincion entre las ediciones de 1667 (diez libros) y 1674 (doce libros), escansion regular en pentametro yambico del soneto "Shall I compare thee to a summer's day?", y rechazo a fabricar citas literarias.
 
 No se han publicado detalles sobre el numero exacto de tokens de entrenamiento, la composicion completa del dataset ni el uso de tecnicas como RLHF o DPO. La validacion consistio en cinco comprobaciones parafraseadas de retencion que pasaron tras el entrenamiento.
 
@@ -76,7 +76,7 @@ La comparativa se limita a modelos de tamano similar; no se conocen alternativas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Navyaforaa/LitGram-1.5B-LoRA-v1.3
+- Modelo en Hugging Face: https://huggingface.co/Navyaforaa/LitGram-1.5B-LoRA-v1.3
 - Version anterior (v1.2): https://huggingface.co/Navyaforaa/LitGram-1.5B-LoRA-v1.2
 - Modelo base: https://huggingface.co/Navyaforaa/LitGram-1.5B
 - Entrada en LLM Explorer (LitGram-1.5B): https://llm-explorer.com/model/Navyaforaa%2FLitGram-1.5B,5cMH42EdltenZvdLUdpCpB

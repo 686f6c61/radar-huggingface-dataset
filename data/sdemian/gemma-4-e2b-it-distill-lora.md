@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio sdemian/gemma-4-E2B-it-distill-lora es una publicacion alojada en HuggingFace por el usuario sdemian cuyo contenido tecnico no esta documentado en la informacion disponible. La ficha de HuggingFace unicamente expone el identificador del repositorio, la etiqueta region:us, cero descargas y un "like", sin pipeline declarado, sin licencia, sin idiomas soportados y sin fecha de actualizacion posterior a la de creacion (14 de octubre de 2026, dato que puede ser erroneo).
+El repositorio sdemian/gemma-4-E2B-it-distill-lora es una publicacion alojada en Hugging Face por el usuario sdemian cuyo contenido tecnico no esta documentado en la informacion disponible. La ficha de Hugging Face unicamente expone el identificador del repositorio, la etiqueta region:us, cero descargas y un "like", sin pipeline declarado, sin licencia, sin idiomas soportados y sin fecha de actualizacion posterior a la de creacion (14 de octubre de 2026, dato que puede ser erroneo).
 
 Del propio identificador puede inferirse, sin que exista confirmacion en la informacion proporcionada, que se trate de un adaptador LoRA orientado a destilacion sobre un modelo de la familia Gemma con sufijo "it" (instruido) y un supuesto tamano "E2B". Ninguno de esos extremos —arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento o licencia— aparece verificado en la fuente consultada, por lo que deben considerarse no disponibles.
 
@@ -23,7 +23,7 @@ Su relevancia actual es, por tanto, limitada y de caracter exploratorio: no hay 
 | Tipo de artefacto | no disponible (el identificador sugiere adaptador LoRA, sin confirmar) |
 | Autor | sdemian |
 | Descargas / likes | 0 / 1 |
-| Fecha de creacion | 2026-10-14 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-10-14 (segun metadatos de Hugging Face) |
 | Etiquetas declaradas | region:us |
 
 ## Arquitectura y entrenamiento
@@ -84,6 +84,6 @@ No disponible. No hay informacion suficiente sobre este repositorio (arquitectur
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sdemian/gemma-4-E2B-it-distill-lora
+- Repositorio en Hugging Face: https://huggingface.co/sdemian/gemma-4-E2B-it-distill-lora
 - Paper, blog, repositorio de codigo o demo: no disponible.
 - Nota sobre la busqueda web: los resultados obtenidos (hilos de Reddit sobre ChatGPT, repositorios de herramientas para ChatGPT, tema de Zhihu sobre ChatGPT) no guardan relacion con el modelo objeto de esta ficha y no se incluyen por no ser fuentes relevantes.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`models4world/delta-opal-21` es un adaptador LoRA publicado por el usuario `models4world` en HuggingFace, diseñado para la generación de texto conversacional. Se presenta como un ajuste fino basado en PEFT (Parameter-Efficient Fine-Tuning) sobre el modelo base `models4world/maple-signal-64`, del cual no se dispone de información pública adicional. El repositorio contiene únicamente los pesos del adaptador en formato `safetensors` y ocupa 1,9 GB, un tamaño considerable para un adaptador LoRA, lo que sugiere que podría tratarse de un adaptador de gran capacidad o que incluye otros artefactos.
+`models4world/delta-opal-21` es un adaptador LoRA publicado por el usuario `models4world` en Hugging Face, diseñado para la generación de texto conversacional. Se presenta como un ajuste fino basado en PEFT (Parameter-Efficient Fine-Tuning) sobre el modelo base `models4world/maple-signal-64`, del cual no se dispone de información pública adicional. El repositorio contiene únicamente los pesos del adaptador en formato `safetensors` y ocupa 1,9 GB, un tamaño considerable para un adaptador LoRA, lo que sugiere que podría tratarse de un adaptador de gran capacidad o que incluye otros artefactos.
 
 La model card oficial está completamente vacía, con todos los campos marcados como "[More Information Needed]". No se especifican arquitectura, número de parámetros, contexto, idiomas, licencia ni datos de entrenamiento. Tampoco se han publicado resultados de benchmarks ni demos. A pesar de su reciente creación (agosto de 2026), el modelo no ha recibido descargas ni valoraciones, y no existe documentación externa que arroje luz sobre sus capacidades o rendimiento. En consecuencia, cualquier uso en producción debe considerarse experimental y requeriría una evaluación previa exhaustiva.
 
@@ -21,7 +21,7 @@ La model card oficial está completamente vacía, con todos los campos marcados 
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado ninguna información sobre la arquitectura interna del adaptador ni sobre el modelo base `maple-signal-64`. Los únicos datos disponibles son los tags de HuggingFace, que indican que se trata de un adaptador LoRA (librería `peft`) y que el pipeline es `text-generation`. No se conocen los datos de entrenamiento, el número de tokens, ni si se aplicaron técnicas como RLHF o DPO. Tampoco se especifican hiperparámetros, régimen de entrenamiento o detalles de preprocesamiento. La referencia al paper `arxiv:1910.09700` en los tags corresponde al artículo de Lacoste et al. sobre estimación de emisiones de carbono, no a una innovación técnica del modelo.
+No se ha publicado ninguna información sobre la arquitectura interna del adaptador ni sobre el modelo base `maple-signal-64`. Los únicos datos disponibles son los tags de Hugging Face, que indican que se trata de un adaptador LoRA (librería `peft`) y que el pipeline es `text-generation`. No se conocen los datos de entrenamiento, el número de tokens, ni si se aplicaron técnicas como RLHF o DPO. Tampoco se especifican hiperparámetros, régimen de entrenamiento o detalles de preprocesamiento. La referencia al paper `arxiv:1910.09700` en los tags corresponde al artículo de Lacoste et al. sobre estimación de emisiones de carbono, no a una innovación técnica del modelo.
 
 ## Capacidades
 
@@ -62,5 +62,5 @@ No disponible. No se conocen modelos comparables de la misma categoría, ya que 
 
 ## Enlaces
 
-- [HuggingFace: models4world/delta-opal-21](https://huggingface.co/models4world/delta-opal-21)
-- [Perfil de models4world en HuggingFace](https://huggingface.co/models4world) (sin información adicional relevante)
+- [Hugging Face: models4world/delta-opal-21](https://huggingface.co/models4world/delta-opal-21)
+- [Perfil de models4world en Hugging Face](https://huggingface.co/models4world) (sin información adicional relevante)

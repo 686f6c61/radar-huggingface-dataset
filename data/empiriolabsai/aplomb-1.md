@@ -1,9 +1,9 @@
 # empiriolabsai/aplomb-1
 
 ## Resumen
-Aplomb 1 es un modelo de decisión multimodal desarrollado por EmpirioLabs AI y publicado en HuggingFace bajo un acceso restringido (gated). No es un modelo generativo de propósito general, sino un clasificador especializado: responde preguntas de tipo sí/no, elección entre opciones, puntuación numérica y selección de herramientas, devolviendo probabilidades calibradas en lugar de texto libre. Está construido como fine-tuning del modelo base Qwen/Qwen3.6-35B-A3B, una arquitectura de mezcla de expertos (MoE) de aproximadamente 35.950 millones de parámetros totales.
+Aplomb 1 es un modelo de decisión multimodal desarrollado por EmpirioLabs AI y publicado en Hugging Face bajo un acceso restringido (gated). No es un modelo generativo de propósito general, sino un clasificador especializado: responde preguntas de tipo sí/no, elección entre opciones, puntuación numérica y selección de herramientas, devolviendo probabilidades calibradas en lugar de texto libre. Está construido como fine-tuning del modelo base Qwen/Qwen3.6-35B-A3B, una arquitectura de mezcla de expertos (MoE) de aproximadamente 35.950 millones de parámetros totales.
 
-El modelo se distribuye mediante la librería transformers con pesos en safetensors, ocupa 71,9 GB en el repositorio y está etiquetado como image-text-to-text, multimodal, vision y video, además de clasificación zero-shot. La información pública indica que la variante alojada como API ("Aplomb 1 Omni") añade capacidad de audio (llamadas, notas de voz, sonidos y música), aunque las etiquetas del repositorio de HuggingFace solo declaran texto, imagen y vídeo.
+El modelo se distribuye mediante la librería transformers con pesos en safetensors, ocupa 71,9 GB en el repositorio y está etiquetado como image-text-to-text, multimodal, vision y video, además de clasificación zero-shot. La información pública indica que la variante alojada como API ("Aplomb 1 Omni") añade capacidad de audio (llamadas, notas de voz, sonidos y música), aunque las etiquetas del repositorio de Hugging Face solo declaran texto, imagen y vídeo.
 
 Su relevancia radica en cubrir un nicho poco frecuente: modelos que toman decisiones discretas o scores calibrados sobre entradas multimodales, útiles como enrutadores, verificadores o selectores de herramientas dentro de pipelines de agentes. El repositorio no incluye tarjeta de modelo detallada, datos de entrenamiento ni resultados de benchmarks publicados, por lo que parte de sus especificaciones no están disponibles.
 
@@ -33,7 +33,7 @@ Sobre esa base, EmpirioLabs AI ha realizado un fine-tuning orientado a tareas de
 - Respuestas de decisión: preguntas binarias (sí/no), elección entre opciones (choice), puntuación numérica (score) y selección de herramientas (tool-selection).
 - Salida de probabilidades calibradas, orientada a umbrales y decisiones automatizadas en producción.
 - Capacidad multimodal: procesamiento de imágenes y vídeo (según etiquetas del repositorio).
-- Capacidad de audio declarada para la variante alojada "Aplomb 1 Omni" (llamadas, notas de voz, sonidos y música); no consta como etiqueta en el repositorio de HuggingFace.
+- Capacidad de audio declarada para la variante alojada "Aplomb 1 Omni" (llamadas, notas de voz, sonidos y música); no consta como etiqueta en el repositorio de Hugging Face.
 - Uso como enrutador o verificador dentro de pipelines de agentes, por su función de tool-selection.
 - Soporte de tool calling/function calling no confirmado explícitamente en la información disponible, aunque la tarea de tool-selection apunta a un uso relacionado.
 - Idioma: inglés (no se declaran capacidades multilingües).
@@ -69,18 +69,18 @@ No hay modelos directamente comparables publicados en la información disponible
 | Otros clasificadores multimodales de decisión | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar el modelo.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar el modelo.
 - Licencia propietaria (empiriolabs-model-license-1.0, categoría "other"): es imprescindible revisar los términos antes de cualquier uso comercial; no es una licencia de código abierto.
 - Idioma limitado al inglés: no se declaran capacidades multilingües, por lo que su uso en castellano u otros idiomas no está respaldado por la ficha.
 - Ausencia de benchmarks publicados: no hay métricas verificables de precisión, calibración o rendimiento que permitan estimar su comportamiento en producción.
 - Naturaleza de decisión: al devolver clasificaciones y scores, existe riesgo de falsos positivos/negativos en función del umbral; las probabilidades calibradas solo son fiables dentro de la distribución de entrenamiento, que no está documentada.
-- La capacidad de audio solo se anuncia para la variante alojada "Aplomb 1 Omni" vía API; no está confirmada en el repositorio de pesos de HuggingFace.
+- La capacidad de audio solo se anuncia para la variante alojada "Aplomb 1 Omni" vía API; no está confirmada en el repositorio de pesos de Hugging Face.
 - La información sobre datos de entrenamiento, contexto máximo y proceso de alineación (RLHF/DPO) no está disponible, lo que dificulta evaluar sesgos y robustez.
 - El repositorio no incluye tarjeta de modelo detallada; conviene contactar con el proveedor para obtener garantías antes de un despliegue crítico.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/empiriolabsai/aplomb-1
-- Organización en HuggingFace: https://huggingface.co/empiriolabsai/models
+- Hugging Face: https://huggingface.co/empiriolabsai/aplomb-1
+- Organización en Hugging Face: https://huggingface.co/empiriolabsai/models
 - Página de producto Aplomb 1 Omni: https://empiriolabs.ai/models/aplomb-1-omni
 - Documentación Aplomb 1 Omni: https://docs.empiriolabs.ai/models/aplomb-1-omni
 - Playground de la API: https://platform.empiriolabs.ai/dashboard/playground?model=aplomb-1-omni

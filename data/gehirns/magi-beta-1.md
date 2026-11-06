@@ -95,7 +95,7 @@ El resto de filas de la tabla de benchmarks (puntuaciones por suite y relativas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GEHIRNS/magi-beta-1
+- Modelo en Hugging Face: https://huggingface.co/GEHIRNS/magi-beta-1
 - Modelo recomendado por el autor (magi-1.0): https://huggingface.co/GEHIRNS/magi-1.0
 - Modelo base (Qwen3.5-4B): https://huggingface.co/Qwen/Qwen3.5-4B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-4B/blob/main/LICENSE

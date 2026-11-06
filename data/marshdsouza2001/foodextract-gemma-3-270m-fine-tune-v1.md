@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FoodExtract-gemma-3-270m-fine-tune-v1 | 268M | no disponible | Extraccion de comida/bebida | Gemma | HuggingFace (92 descargas) |
-| google/gemma-3-270m-it | 270M | no disponible | Proposito general instruct | Gemma | HuggingFace (oficial) |
+| FoodExtract-gemma-3-270m-fine-tune-v1 | 268M | no disponible | Extraccion de comida/bebida | Gemma | Hugging Face (92 descargas) |
+| google/gemma-3-270m-it | 270M | no disponible | Proposito general instruct | Gemma | Hugging Face (oficial) |
 | gpt-oss-120b (generador del dataset) | no disponible | no disponible | Proposito general | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada. La comparativa se limita a parametros, licencia y disponibilidad.
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/marshdsouza2001/FoodExtract-gemma-3-270m-fine-tune-v1
+- Modelo en Hugging Face: https://huggingface.co/marshdsouza2001/FoodExtract-gemma-3-270m-fine-tune-v1
 - Modelo base: https://huggingface.co/google/gemma-3-270m-it
 - Dataset de entrenamiento: https://huggingface.co/datasets/mrdbourke/FoodExtract-1k
 - Dataset de referencia para filtrado: https://huggingface.co/datasets/UCSC-VLAA/Recap-DataComp-1B

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jorgeggy/lenovo_flux_klein9b` es un adaptador LoRA para generacion de imagenes a partir de texto (pipeline `text-to-image`) publicado en HuggingFace por el usuario `jorgeggy`. Se distribuye en formato compatible con la libreria `diffusers` y sigue la plantilla `template:diffusion-lora`, lo que indica que no es un modelo completo, sino un conjunto de pesos adicionales que deben cargarse sobre un modelo base de difusion que el autor no especifica: el campo `base_model` de la model card esta vacio.
+`jorgeggy/lenovo_flux_klein9b` es un adaptador LoRA para generacion de imagenes a partir de texto (pipeline `text-to-image`) publicado en Hugging Face por el usuario `jorgeggy`. Se distribuye en formato compatible con la libreria `diffusers` y sigue la plantilla `template:diffusion-lora`, lo que indica que no es un modelo completo, sino un conjunto de pesos adicionales que deben cargarse sobre un modelo base de difusion que el autor no especifica: el campo `base_model` de la model card esta vacio.
 
 La informacion publicada es minima. La model card se limita al nombre del modelo y a un enlace de descarga, sin descripcion, sin `instance_prompt`, sin dataset de entrenamiento, sin hiperparametros y sin ejemplos de uso mas alla de un unico widget de salida. El repositorio ocupa 0,2 GB, un tamano coherente con pesos de adaptador LoRA y no con un modelo de difusion completo. El identificador del modelo sugiere una relacion con una arquitectura de la familia FLUX de 9B parametros y con la marca Lenovo, pero ninguna de esas dos cosas esta confirmada en la documentacion disponible, por lo que deben tratarse como inferencias no verificadas a partir del nombre.
 
@@ -88,7 +88,7 @@ No disponible. No se han encontrado en la informacion proporcionada modelos comp
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/jorgeggy/lenovo_flux_klein9b
+- Pagina del modelo en Hugging Face: https://huggingface.co/jorgeggy/lenovo_flux_klein9b
 - Archivos y versiones: https://huggingface.co/jorgeggy/lenovo_flux_klein9b/tree/main
 - Documentacion de LoRA en diffusers: no disponible en la informacion proporcionada
 - Paper o informe tecnico: no disponible en la informacion proporcionada

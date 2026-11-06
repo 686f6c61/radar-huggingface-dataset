@@ -2,7 +2,7 @@
 
 ## Resumen
 
-nschmidt5/retrieval-2024 es un repositorio de investigación publicado en HuggingFace por el usuario nschmidt5 que contiene un prototipo de arquitectura Dino orientado a tareas de recuperación (retrieval). No se trata de un modelo entrenado ni evaluado: el propio autor lo describe en la model card como un checkpoint de inicialización válido para pruebas de humo (smoke tests), y afirma explícitamente que no reclama ninguna puntuación de benchmark.
+nschmidt5/retrieval-2024 es un repositorio de investigación publicado en Hugging Face por el usuario nschmidt5 que contiene un prototipo de arquitectura Dino orientado a tareas de recuperación (retrieval). No se trata de un modelo entrenado ni evaluado: el propio autor lo describe en la model card como un checkpoint de inicialización válido para pruebas de humo (smoke tests), y afirma explícitamente que no reclama ninguna puntuación de benchmark.
 
 El repositorio incluye el script `train.py` como artefacto principal, junto con `config.json` (ajustes de arquitectura), `training_args.json` (receta de experimento por defecto) y `model.safetensors` (pesos de inicialización). La configuración declarada indica escala "huge", atención estándar, fusión de tipo concat mlp, activación gelu tanh, normalización scalenorm, optimizador lion y scheduler de tipo step. El recuento real de parámetros del archivo safetensors es de 33.088, una cifra incompatible con la etiqueta de escala "huge" y coherente con un tensor de inicialización sin entrenar.
 
@@ -78,7 +78,7 @@ La comparación se plantea a nivel cualitativo, ya que este repositorio no publi
 
 | Modelo | Tipo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| nschmidt5/retrieval-2024 | Prototipo Dino para retrieval (sin entrenar) | 33.088 | no disponible | sin benchmarks publicados | apache-2.0 | Repositorio HuggingFace, 0 descargas |
+| nschmidt5/retrieval-2024 | Prototipo Dino para retrieval (sin entrenar) | 33.088 | no disponible | sin benchmarks publicados | apache-2.0 | Repositorio Hugging Face, 0 descargas |
 | CLIP (OpenAI) | Retrieval y alineación imagen-texto | no disponible en la información proporcionada | no disponible | no disponible | no disponible en la información proporcionada | Público y ampliamente integrado |
 | SigLIP (Google) | Retrieval y alineación imagen-texto | no disponible en la información proporcionada | no disponible | no disponible | no disponible en la información proporcionada | Público |
 | BLIP-2 | Retrieval y captioning multimodal | no disponible en la información proporcionada | no disponible | no disponible | no disponible en la información proporcionada | Público |
@@ -99,5 +99,5 @@ La diferencia principal frente a estas alternativas no es de rendimiento, sino d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nschmidt5/retrieval-2024
+- Hugging Face: https://huggingface.co/nschmidt5/retrieval-2024
 - Búsqueda web: no se han encontrado enlaces relevantes (papers, blogs, repositorios o demos) asociados a este modelo en la información disponible; los resultados de búsqueda recibidos no guardan relación con el repositorio.

@@ -62,6 +62,6 @@ No se han proporcionado modelos comparables en la información disponible. No ex
 - Al ser un clasificador de imágenes, no ofrece capacidades de lenguaje, generación de texto ni interacción multimodal.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/dada8173/coffee-bean-classifier-models
+- Hugging Face: https://huggingface.co/dada8173/coffee-bean-classifier-models
 - GitHub del proyecto: https://github.com/dada8173/Good-or-Bad-CoffeeBeans
 - Carpeta de datos en GitHub: https://github.com/dada8173/Good-or-Bad-CoffeeBeans/tree/main/coffee_beans_data

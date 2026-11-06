@@ -108,7 +108,7 @@ No se dispone de comparaciones con alternativas externas de la misma categoría 
 
 ## Enlaces
 
-- HuggingFace (ficha consultada): https://huggingface.co/opg13/laya
+- Hugging Face (ficha consultada): https://huggingface.co/opg13/laya
 - Checkpoint multilingüe referenciado en la model card: https://huggingface.co/convaiinnovations/laya-multilingual
 - Checkpoint de decisiones tipadas referenciado en la model card: https://huggingface.co/convaiinnovations/laya-typed-decisions
 - Repositorio raiz referenciado en la model card: https://huggingface.co/convaiinnovations/laya

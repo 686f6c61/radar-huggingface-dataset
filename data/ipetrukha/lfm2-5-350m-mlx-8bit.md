@@ -31,7 +31,7 @@ La única diferencia técnica documentada es que las escalas y biases de cuantiz
 
 - No se han documentado capacidades específicas en la información proporcionada.
 - El modelo está etiquetado como `text-generation` y `conversational`, lo que indica que puede generar texto y mantener conversaciones.
-- Soporta el idioma inglés, según los metadatos de HuggingFace.
+- Soporta el idioma inglés, según los metadatos de Hugging Face.
 - Al ser una re-cuantización, no añade capacidades nuevas respecto al modelo base.
 - No hay información sobre soporte de tool calling, agentes, visión, audio o razonamiento multi-step.
 
@@ -79,6 +79,6 @@ La diferencia principal entre el modelo de `ipetrukha` y la versión oficial de 
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/ipetrukha/LFM2.5-350M-MLX-8bit
+- Hugging Face del modelo: https://huggingface.co/ipetrukha/LFM2.5-350M-MLX-8bit
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-350M
 - Versión oficial MLX 8-bit: https://huggingface.co/LiquidAI/LFM2.5-350M-MLX-8bit

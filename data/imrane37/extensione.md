@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `imrane37/extensione` está publicado en HuggingFace por el usuario `imrane37` y se presenta como una extensión, aunque la información pública disponible es extremadamente limitada. No se proporciona ninguna descripción, documentación técnica ni resultados de evaluación. La única información disponible son metadatos básicos: el idioma declarado es el árabe (`ar`), la licencia es `other` con nombre personalizado `imrane`, y el pipeline no está especificado. El modelo fue creado el 25 de agosto de 2026 y actualizado el mismo día, pero no ha recibido descargas ni interacciones de la comunidad.
+El modelo `imrane37/extensione` está publicado en Hugging Face por el usuario `imrane37` y se presenta como una extensión, aunque la información pública disponible es extremadamente limitada. No se proporciona ninguna descripción, documentación técnica ni resultados de evaluación. La única información disponible son metadatos básicos: el idioma declarado es el árabe (`ar`), la licencia es `other` con nombre personalizado `imrane`, y el pipeline no está especificado. El modelo fue creado el 25 de agosto de 2026 y actualizado el mismo día, pero no ha recibido descargas ni interacciones de la comunidad.
 
 Debido a la ausencia de una model card sustantiva y a la falta de información técnica, no es posible determinar la arquitectura, el tamaño, la ventana de contexto ni las capacidades reales del modelo. La entrada en Hugging Face parece ser un proyecto en fase inicial o un repositorio vacío. Por tanto, esta ficha se limita a documentar los metadatos disponibles y a señalar explícitamente las carencias de información, sin especular ni inventar datos.
 

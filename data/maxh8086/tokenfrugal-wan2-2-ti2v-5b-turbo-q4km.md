@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tokenfrugal-wan2.2-ti2v-5b-turbo-q4km | ~5B | no disponible | GGUF Q4_K_M | Apache-2.0 (base) / verificar | HuggingFace (maxh8086) |
-| Wan2.2 TI2V-5B Turbo (original) | ~5B | no disponible | safetensors | Apache-2.0 | HuggingFace (Wan-AI) |
-| Otras cuantizaciones GGUF de Wan2.2 TI2V-5B | ~5B | no disponible | GGUF | segun uploader | HuggingFace (varios) |
+| tokenfrugal-wan2.2-ti2v-5b-turbo-q4km | ~5B | no disponible | GGUF Q4_K_M | Apache-2.0 (base) / verificar | Hugging Face (maxh8086) |
+| Wan2.2 TI2V-5B Turbo (original) | ~5B | no disponible | safetensors | Apache-2.0 | Hugging Face (Wan-AI) |
+| Otras cuantizaciones GGUF de Wan2.2 TI2V-5B | ~5B | no disponible | GGUF | segun uploader | Hugging Face (varios) |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la informacion proporcionada.
 
@@ -80,6 +80,6 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/maxh8086/tokenfrugal-wan2.2-ti2v-5b-turbo-q4km
+- Hugging Face: https://huggingface.co/maxh8086/tokenfrugal-wan2.2-ti2v-5b-turbo-q4km
 - Modelo base Wan-AI Wan2.2 TI2V-5B (referencia por nombre, sin URL confirmada en la informacion disponible): no disponible
 - Paper, blog, repositorio o demo oficial: no disponible en la informacion proporcionada.

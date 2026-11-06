@@ -6,7 +6,7 @@ kinit/whisper-base-sk es un ajuste fino completo (*full fine-tuning*) del modelo
 
 El problema que resuelve es la falta de ASR de calidad en eslovaco: el modelo base de OpenAI obtiene un WER del 87,61 % en Common Voice 24 y un 76,38 % en el conjunto interno de KInIT, cifras que lo hacen inutilizable en producción. Tras el ajuste fino, el WER baja al 27,22 % y al 14,01 % respectivamente, lo que supone reducciones del 69 % y del 82 %. El coste de esa mejora es la pérdida total de capacidad multilingüe (olvido catastrófico), ya que el modelo solo transcribe eslovaco correctamente.
 
-Es relevante ahora por tres motivos: es una alternativa de licencia Apache 2.0 sin restricciones comerciales, cabe en cualquier hardware (0,3 GB de repositorio) y forma parte de un catálogo público de recursos NLP eslovacos (SLAIH) con evaluación homogénea frente a los demás tamaños de Whisper y frente a los ajustes de NVIDIA NeMo (Canary, Parakeet). El modelo acumula 23 descargas y 0 likes en HuggingFace, por lo que su adopción todavía es muy baja.
+Es relevante ahora por tres motivos: es una alternativa de licencia Apache 2.0 sin restricciones comerciales, cabe en cualquier hardware (0,3 GB de repositorio) y forma parte de un catálogo público de recursos NLP eslovacos (SLAIH) con evaluación homogénea frente a los demás tamaños de Whisper y frente a los ajustes de NVIDIA NeMo (Canary, Parakeet). El modelo acumula 23 descargas y 0 likes en Hugging Face, por lo que su adopción todavía es muy baja.
 
 ## Especificaciones técnicas
 
@@ -30,7 +30,7 @@ Es relevante ahora por tres motivos: es una alternativa de licencia Apache 2.0 s
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la de Whisper Base sin modificaciones: un encoder transformer que consume espectrogramas log-mel de 80 canales y un decoder autorregresivo que genera texto, con atención cruzada entre ambos. No hay innovaciones estructurales (ni MoE, ni SSM, ni atención lineal); la contribución está íntegramente en los pesos. El ajuste se realizó con `Seq2SeqTrainer` de HuggingFace Transformers en el clúster HPC Devana, con 2 épocas, learning rate de 5e-5, scheduler lineal con warmup, optimizador AdamW, batch efectivo de 64 y precisión fp16.
+La arquitectura es la de Whisper Base sin modificaciones: un encoder transformer que consume espectrogramas log-mel de 80 canales y un decoder autorregresivo que genera texto, con atención cruzada entre ambos. No hay innovaciones estructurales (ni MoE, ni SSM, ni atención lineal); la contribución está íntegramente en los pesos. El ajuste se realizó con `Seq2SeqTrainer` de Hugging Face Transformers en el clúster HPC Devana, con 2 épocas, learning rate de 5e-5, scheduler lineal con warmup, optimizador AdamW, batch efectivo de 64 y precisión fp16.
 
 El corpus de entrenamiento es interno y combina datos públicos con grabaciones propias de KInIT: SloPalSpeech, grabaciones de sesiones de plenos municipales, literatura leída, Mozilla Common Voice 24.0, el corpus de conferencias TEDxSK y JumpSK (KEMT NLP, TUKE), FLEURS y grabaciones internas de KInIT. Los datos con información personal se anonimizaron antes del uso y las muestras se filtraron por calidad mediante un umbral de CER validado contra varios modelos ASR. La innovación técnica destacable es la aumentación de ruido aplicada en el 75 % de los batches durante el entrenamiento, con cinco tipos de degradación sintética (ruido telefónico, habla de fondo, ruido de fondo, ruido blanco y pérdida de paquetes), orientada a mejorar la robustez en condiciones de grabación reales. No se documenta uso de RLHF, DPO ni destilación.
 
@@ -95,11 +95,11 @@ No se han publicado métricas de latencia, throughput ni consumo de memoria en l
 
 | Modelo | Parámetros | Idioma | WER interno (ajustado) | Licencia | Disponibilidad |
 |---|---:|---|---:|---|---|
-| kinit/whisper-base-sk | ~73 M | Solo eslovaco | 14,01 % | Apache 2.0 | HuggingFace (kinit) |
-| kinit/whisper-small-sk | ~244 M | Solo eslovaco | 8,64 % | Apache 2.0 | HuggingFace (kinit) |
-| kinit/whisper-medium-sk | ~769 M | Solo eslovaco | 6,28 % | Apache 2.0 | HuggingFace (kinit) |
-| kinit/whisper-large-v3-turbo-sk | ~809 M | Solo eslovaco | 5,60 % | Apache 2.0 | HuggingFace (kinit) |
-| openai/whisper-base | ~73 M | Multilingüe (99 idiomas) | 76,38 % | Apache 2.0 | HuggingFace (OpenAI) |
+| kinit/whisper-base-sk | ~73 M | Solo eslovaco | 14,01 % | Apache 2.0 | Hugging Face (kinit) |
+| kinit/whisper-small-sk | ~244 M | Solo eslovaco | 8,64 % | Apache 2.0 | Hugging Face (kinit) |
+| kinit/whisper-medium-sk | ~769 M | Solo eslovaco | 6,28 % | Apache 2.0 | Hugging Face (kinit) |
+| kinit/whisper-large-v3-turbo-sk | ~809 M | Solo eslovaco | 5,60 % | Apache 2.0 | Hugging Face (kinit) |
+| openai/whisper-base | ~73 M | Multilingüe (99 idiomas) | 76,38 % | Apache 2.0 | Hugging Face (OpenAI) |
 
 El WER interno corresponde al conjunto reservado de KInIT y procede de la propia model card, por lo que la comparación entre tamaños es homogénea, pero no es directamente comparable con resultados publicados por terceros. Los tamaños de parámetros de Small, Medium y Large v3 Turbo corresponden a las configuraciones estándar de OpenAI. La colección completa de KInIT incluye además ajustes con NVIDIA NeMo (Canary, Parakeet) que no se detallan en la información disponible.
 
@@ -118,7 +118,7 @@ El WER interno corresponde al conjunto reservado de KInIT y procede de la propia
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kinit/whisper-base-sk
+- Modelo en Hugging Face: https://huggingface.co/kinit/whisper-base-sk
 - Modelo base: https://huggingface.co/openai/whisper-base
 - Colección ASR de KInIT: https://huggingface.co/collections/kinit/automatic-speech-recognition-6a42684efb87315cc9da3247
 - Ficha en el catálogo SLAIH: https://www.slaih.sk/sk/catalog/whisper-base-sk

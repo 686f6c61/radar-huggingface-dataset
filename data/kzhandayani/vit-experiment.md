@@ -6,7 +6,7 @@
 
 El proposito declarado es permitir inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, manteniendo a proposito una escala "small" para que sea manejable. La configuracion incluye opciones poco habituales en un ViT estandar, como atencion con grouped query, fusion de bajo rango (low rank), activacion ReLU y normalizacion ScaleNorm, junto con una receta por defecto basada en el optimizador LAMB y un schedule de tipo step.
 
-Su relevancia actual es muy limitada: cuenta con 0 descargas y 0 "me gusta" en HuggingFace, no incluye resultados de benchmarks y el numero de parametros reportado en el archivo safetensors es de solo 33.088, muy por debajo de cualquier ViT operativo. Debe entenderse como material de investigacion reproducible y no como un modelo listo para inferencia en produccion.
+Su relevancia actual es muy limitada: cuenta con 0 descargas y 0 "me gusta" en Hugging Face, no incluye resultados de benchmarks y el numero de parametros reportado en el archivo safetensors es de solo 33.088, muy por debajo de cualquier ViT operativo. Debe entenderse como material de investigacion reproducible y no como un modelo listo para inferencia en produccion.
 
 ## Especificaciones tecnicas
 
@@ -65,7 +65,7 @@ La comparacion con modelos operativos de la misma categoria resulta poco signifi
 
 | Modelo | Parametros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kzhandayani/vit-experiment | 33.088 | no disponible | No (inicializacion) | MIT | HuggingFace, 0 descargas |
+| Kzhandayani/vit-experiment | 33.088 | no disponible | No (inicializacion) | MIT | Hugging Face, 0 descargas |
 | ViT-Small de referencia (timm/ImageNet) | no disponible en la informacion | no disponible | Si | no disponible en la informacion | ampliamente disponible |
 | CLIP (variante ViT) | no disponible en la informacion | no disponible | Si | no disponible en la informacion | ampliamente disponible |
 | DINOv2 (variante ViT-S) | no disponible en la informacion | no disponible | Si | no disponible en la informacion | ampliamente disponible |
@@ -84,4 +84,4 @@ La comparacion con modelos operativos de la misma categoria resulta poco signifi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kzhandayani/vit-experiment
+- Modelo en Hugging Face: https://huggingface.co/Kzhandayani/vit-experiment

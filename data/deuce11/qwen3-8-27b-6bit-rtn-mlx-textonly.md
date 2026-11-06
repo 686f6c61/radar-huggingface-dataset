@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-6bit-RTN-MLX-TextOnly es una cuantizacion de 6 bits del modelo Qwen/Qwen3.8-27B, publicada por el usuario de HuggingFace deuce11. Se trata de un checkpoint en formato MLX (Apple Silicon) obtenido mediante cuantizacion afina RTN (round-to-nearest) con tamano de grupo 64, a partir del modelo de 8 bits de la comunidad (`mlx-community/Qwen3.8-27B-8bit`) dequantizado y re-cuantizado con mlx-lm 0.32.2. El resultado ocupa 21,86 GB en 21 shards y contiene 26.895.993.856 parametros.
+Qwen3.8-27B-6bit-RTN-MLX-TextOnly es una cuantizacion de 6 bits del modelo Qwen/Qwen3.8-27B, publicada por el usuario de Hugging Face deuce11. Se trata de un checkpoint en formato MLX (Apple Silicon) obtenido mediante cuantizacion afina RTN (round-to-nearest) con tamano de grupo 64, a partir del modelo de 8 bits de la comunidad (`mlx-community/Qwen3.8-27B-8bit`) dequantizado y re-cuantizado con mlx-lm 0.32.2. El resultado ocupa 21,86 GB en 21 shards y contiene 26.895.993.856 parametros.
 
 La particularidad principal es que los pesos son "text only": la torre de vision del modelo base no esta incluida, aunque el `config.json` mantiene `language_model_only: false`, por lo que requiere servirse con la opcion `--language-only` de Splash. El autor documenta que un pase de DWQ (data-aware weight quantization) sobre este estudiante incremento la perdida de validacion respecto al checkpoint RTN puro, por lo que los pesos publicados son la instantanea round-to-nearest sin escalas entrenadas.
 
@@ -102,7 +102,7 @@ No se dispone de datos de benchmarks comparativos con otras familias de modelos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/deuce11/Qwen3.8-27B-6bit-RTN-MLX-TextOnly
+- Modelo en Hugging Face: https://huggingface.co/deuce11/Qwen3.8-27B-6bit-RTN-MLX-TextOnly
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Checkpoint de 8 bits usado como profesor: https://huggingface.co/mlx-community/Qwen3.8-27B-8bit
 - Dataset de validacion: https://huggingface.co/datasets/allenai/tulu-3-sft-mixture

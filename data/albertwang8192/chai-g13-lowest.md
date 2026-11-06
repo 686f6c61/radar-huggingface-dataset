@@ -2,7 +2,7 @@
 
 ## Resumen
 
-chai-g13-lowest es un checkpoint de pesos publicado en HuggingFace por el usuario AlbertWang8192 bajo el identificador AlbertWang8192/chai-g13-lowest. Se trata de un modelo de aproximadamente 3.085.938.688 parametros (unos 3,09 mil millones), almacenado en formato safetensors y etiquetado con la arquitectura qwen2, lo que indica que deriva de la familia Qwen2. El repositorio ocupa 6,2 GB, un tamano coherente con pesos en precision de 16 bits para ese numero de parametros.
+chai-g13-lowest es un checkpoint de pesos publicado en Hugging Face por el usuario AlbertWang8192 bajo el identificador AlbertWang8192/chai-g13-lowest. Se trata de un modelo de aproximadamente 3.085.938.688 parametros (unos 3,09 mil millones), almacenado en formato safetensors y etiquetado con la arquitectura qwen2, lo que indica que deriva de la familia Qwen2. El repositorio ocupa 6,2 GB, un tamano coherente con pesos en precision de 16 bits para ese numero de parametros.
 
 La relevancia publica del modelo es, a dia de hoy, muy limitada: acumula 13 descargas y 0 likes, no declara licencia, no indica idiomas soportados y no incluye informacion de pipeline ni de entrenamiento. Tampoco existe una model card descriptiva con detalles de dataset, proceso de ajuste o evaluacion. La busqueda web realizada no ha devuelto ninguna fuente relacionada con este checkpoint, por lo que toda la informacion tecnica disponible procede exclusivamente de los metadatos del repositorio.
 
@@ -99,5 +99,5 @@ La diferencia fundamental no es de rendimiento, sino de trazabilidad: los tres m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AlbertWang8192/chai-g13-lowest
+- Hugging Face: https://huggingface.co/AlbertWang8192/chai-g13-lowest
 - No se han encontrado papers, blogs, repositorios de codigo, demos ni tarjetas de modelo asociados a este checkpoint en la busqueda web realizada. Los resultados devueltos correspondian a portales genericos de Microsoft (microsoft.com, account.microsoft.com, myaccount.microsoft.com, microsoft.com/microsoft-365, en.wikipedia.org/wiki/Microsoft) y no guardan relacion con el modelo.

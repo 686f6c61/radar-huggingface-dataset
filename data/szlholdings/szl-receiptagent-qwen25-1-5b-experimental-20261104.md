@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| szl-receiptagent-qwen25-1.5b-experimental-20261104 | ~1,5B (base) + adaptador | no disponible (base: 32.768) | apache-2.0 | HuggingFace, 0 descargas | Experimental, no canónico, solo inglés |
-| Qwen/Qwen2.5-1.5B-Instruct | ~1,5B | 32.768 | apache-2.0 | HuggingFace, ampliamente adoptado | Base sin ajuste específico de recibos |
-| SZLHOLDINGS/szl-receiptagent-qwen35-0.8b-v2 | ~0,8B (base) | no disponible | no disponible | HuggingFace | Versión previa del linaje, referenciada como canónica por el autor |
+| szl-receiptagent-qwen25-1.5b-experimental-20261104 | ~1,5B (base) + adaptador | no disponible (base: 32.768) | apache-2.0 | Hugging Face, 0 descargas | Experimental, no canónico, solo inglés |
+| Qwen/Qwen2.5-1.5B-Instruct | ~1,5B | 32.768 | apache-2.0 | Hugging Face, ampliamente adoptado | Base sin ajuste específico de recibos |
+| SZLHOLDINGS/szl-receiptagent-qwen35-0.8b-v2 | ~0,8B (base) | no disponible | no disponible | Hugging Face | Versión previa del linaje, referenciada como canónica por el autor |
 
 No se dispone de datos de rendimiento comparables entre estos modelos en la información proporcionada.
 
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento comparables entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SZLHOLDINGS/szl-receiptagent-qwen25-1.5b-experimental-20261104
+- Hugging Face: https://huggingface.co/SZLHOLDINGS/szl-receiptagent-qwen25-1.5b-experimental-20261104
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Versión previa del linaje: https://huggingface.co/SZLHOLDINGS/szl-receiptagent-qwen35-0.8b-v2
 - Recibos de entrenamiento y evaluación: carpeta `receipts/` del repositorio (no se proporciona URL directa)

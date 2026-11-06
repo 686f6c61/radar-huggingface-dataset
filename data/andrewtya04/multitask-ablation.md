@@ -70,4 +70,4 @@ No disponible. Este repositorio no contiene un modelo entrenado, sino un checkpo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/andrewtya04/multitask-ablation
+- Repositorio en Hugging Face: https://huggingface.co/andrewtya04/multitask-ablation

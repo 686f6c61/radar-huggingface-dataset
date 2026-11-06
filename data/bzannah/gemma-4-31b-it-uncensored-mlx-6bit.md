@@ -103,7 +103,7 @@ La familia de releases MLX cubre una escalera de cuantizacion (4, 5, 6, 8 bits y
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo: https://huggingface.co/bzannah/gemma-4-31B-it-uncensored-MLX-6bit
+- Repositorio Hugging Face de este modelo: https://huggingface.co/bzannah/gemma-4-31B-it-uncensored-MLX-6bit
 - Modelo base Transformers BF16: https://huggingface.co/ressl/gemma-4-31B-it-uncensored
 - Version MLX 6-bit del autor original: https://huggingface.co/ressl/gemma-4-31B-it-uncensored-MLX-6bit
 - Version MLX 4-bit: https://huggingface.co/ressl/gemma-4-31B-it-uncensored-MLX-4bit

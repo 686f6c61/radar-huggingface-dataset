@@ -6,7 +6,7 @@ AstaBrief-8B es un modelo de lenguaje de 8.000 millones de parametros desarrolla
 
 La relevancia del modelo reside en su enfoque de "deep research": en lugar de requerir un pipeline de multiples pasos con agentes y herramientas, AstaBrief-8B genera informes citados en un unico paso a partir de contexto recuperado, compitiendo con pipelines multi-paso como Asta ScholarQA o DR-Tulu-8B. Segun la model card, alcanza una tasa de victoria del 72% frente a Asta ScholarQA en el conjunto de test SQA-CS2, siendo un modelo mucho mas sencillo de desplegar.
 
-Se distribuye bajo licencia Apache 2.0, esta orientado a ingles y esta pensado para uso de investigacion y educativo segun las guias de uso responsable de Ai2. El repositorio ocupa 16,4 GB y acumula 173 descargas y 15 "likes" en HuggingFace.
+Se distribuye bajo licencia Apache 2.0, esta orientado a ingles y esta pensado para uso de investigacion y educativo segun las guias de uso responsable de Ai2. El repositorio ocupa 16,4 GB y acumula 173 descargas y 15 "likes" en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -106,7 +106,7 @@ Segun la model card, el entrenamiento DPO mejora el rendimiento tanto respecto a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/allenai/AstaBrief_8B
+- Modelo en Hugging Face: https://huggingface.co/allenai/AstaBrief_8B
 - Checkpoint SFT: https://huggingface.co/allenai/AstaBrief_8B_SFT/
 - Dataset DPO: https://huggingface.co/datasets/allenai/AstaBrief_DPO_Mix
 - Prompts de referencia: https://huggingface.co/datasets/allenai/AstaBrief_prompts/blob/main/sft_prompt.txt

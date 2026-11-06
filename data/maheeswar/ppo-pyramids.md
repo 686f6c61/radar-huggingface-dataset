@@ -2,11 +2,11 @@
 
 ## Resumen
 
-ppo-Pyramids es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno Pyramids del framework Unity ML-Agents. Lo publica el usuario maheeswar en HuggingFace como parte del curso Deep RL Course de HuggingFace. No se trata de un modelo de lenguaje, sino de una politica neuronal que controla un agente dentro de una simulacion 3D de Unity; el artefacto distribuido es un fichero ONNX que puede cargarse en el motor de inferencia de Unity o en ONNX Runtime.
+ppo-Pyramids es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno Pyramids del framework Unity ML-Agents. Lo publica el usuario maheeswar en Hugging Face como parte del curso Deep RL Course de Hugging Face. No se trata de un modelo de lenguaje, sino de una politica neuronal que controla un agente dentro de una simulacion 3D de Unity; el artefacto distribuido es un fichero ONNX que puede cargarse en el motor de inferencia de Unity o en ONNX Runtime.
 
 El entorno Pyramids es un escenario clasico y sencillo de ML-Agents: un agente debe desplazarse por una arena y tocar un ladrillo dorado mientras evita caer o chocar contra obstaculos. El agente percibe el entorno mediante raycasts y actua con acciones continuas (movimiento y rotacion). El objetivo del entrenamiento es maximizar la recompensa acumulada.
 
-El interes de esta publicacion es fundamentalmente didactico: sirve como ejemplo reproducible del flujo de trabajo completo de ML-Agents (configuracion YAML, entrenamiento con `mlagents-learn`, exportacion a ONNX y publicacion en HuggingFace). No aporta innovacion tecnica ni esta pensado para produccion. El repositorio tiene 0 descargas, 0 likes y un tamano de 0.0 GB, y la model card no incluye informacion sobre licencia, idiomas ni datos de entrenamiento detallados.
+El interes de esta publicacion es fundamentalmente didactico: sirve como ejemplo reproducible del flujo de trabajo completo de ML-Agents (configuracion YAML, entrenamiento con `mlagents-learn`, exportacion a ONNX y publicacion en Hugging Face). No aporta innovacion tecnica ni esta pensado para produccion. El repositorio tiene 0 descargas, 0 likes y un tamano de 0.0 GB, y la model card no incluye informacion sobre licencia, idiomas ni datos de entrenamiento detallados.
 
 ## Especificaciones tecnicas
 
@@ -38,7 +38,7 @@ No se dispone de informacion sobre el numero de pasos de entrenamiento, el taman
 
 ## Casos de uso
 
-- Aprendizaje y docencia de RL: sirve como ejemplo completo del ciclo entrenamiento-exportacion-publicacion en el curso Deep RL Course de HuggingFace, con un entorno sencillo para principiantes.
+- Aprendizaje y docencia de RL: sirve como ejemplo completo del ciclo entrenamiento-exportacion-publicacion en el curso Deep RL Course de Hugging Face, con un entorno sencillo para principiantes.
 - Prototipado rapido en Unity: permite cargar una politica preentrenada en el Inference Engine de Unity para comprobar el pipeline de despliegue sin reentrenar.
 - Baseline de referencia para el entorno Pyramids: la recompensa media (2.00 +/- 0.50) puede usarse como punto de partida para comparar nuevas variantes de hiperparametros o algoritmos.
 - Pruebas de infraestructura de inferencia ONNX: al ser un grafo pequeno, es util para validar integraciones de ONNX Runtime, Barracuda o pipelines de CI antes de pasar a modelos mayores.
@@ -48,7 +48,7 @@ No se dispone de informacion sobre el numero de pasos de entrenamiento, el taman
 
 ## Benchmarks y rendimiento
 
-Datos declarados por el autor en la model card (no verificados por HuggingFace).
+Datos declarados por el autor en la model card (no verificados por Hugging Face).
 
 | Tarea | Entorno | Metrica | Valor |
 |---|---|---|---|
@@ -81,5 +81,5 @@ No disponible. La informacion proporcionada no incluye otros agentes publicados 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/maheeswar/ppo-Pyramids
+- Hugging Face: https://huggingface.co/maheeswar/ppo-Pyramids
 - No se han encontrado enlaces relevantes (papers, blogs, repos, demos) en los resultados de busqueda web proporcionados; los resultados devueltos no guardan relacion con el modelo.

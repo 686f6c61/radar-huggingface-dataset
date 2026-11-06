@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ads2009/turkish-ai-text-detector-distilberturk-v10` es un modelo de clasificación de texto publicado en HuggingFace por el usuario `ads2009`. Por el identificador del repositorio se deduce que su finalidad es detectar texto generado por IA en turco, apoyándose en una arquitectura tipo DistilBERT (etiqueta `distilbert` del repositorio) con vocabulario para turco, pero la model card publicada es la plantilla automática de HuggingFace y no contiene ninguna descripción, dato de entrenamiento ni resultado de evaluación: todos los campos aparecen como "[More Information Needed]".
+`ads2009/turkish-ai-text-detector-distilberturk-v10` es un modelo de clasificación de texto publicado en Hugging Face por el usuario `ads2009`. Por el identificador del repositorio se deduce que su finalidad es detectar texto generado por IA en turco, apoyándose en una arquitectura tipo DistilBERT (etiqueta `distilbert` del repositorio) con vocabulario para turco, pero la model card publicada es la plantilla automática de Hugging Face y no contiene ninguna descripción, dato de entrenamiento ni resultado de evaluación: todos los campos aparecen como "[More Information Needed]".
 
 El checkpoint contiene 68.090.114 parámetros (dato real leído de los pesos safetensors), lo que lo sitúa en la gama de los clasificadores encoder pequeños, manejables en CPU y en cualquier GPU de consumo. El repositorio ocupa 0,3 GB y se distribuye únicamente en formato safetensors, con pipeline declarado `text-classification` y compatibilidad con Text Embeddings Inference y endpoints.
 
@@ -37,7 +37,7 @@ Tampoco se documenta nada sobre el entrenamiento: se desconoce el volumen de tok
 - Deteccion de texto generado por IA: capacidad inferida del identificador del modelo, no confirmada en la model card.
 - Ambito linguistico turco: inferido del identificador, no declarado en el campo de idiomas.
 - Uso como extractor de caracteristicas o embeddings: la etiqueta `text-embeddings-inference` sugiere compatibilidad con despliegues de embeddings, aunque no se especifica la capa de salida recomendada.
-- Compatibilidad con endpoints gestionados de HuggingFace: la etiqueta `endpoints_compatible` lo indica.
+- Compatibilidad con endpoints gestionados de Hugging Face: la etiqueta `endpoints_compatible` lo indica.
 - No hay evidencia de soporte de tool calling, function calling, agentes, razonamiento multi-paso, vision, audio ni modo de razonamiento explicito: son capacidades que no aplican a un clasificador encoder de este tamano.
 
 ## Casos de uso
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: menos de 1 GB. En fp32 los pesos ocupan aproximadamente 272 MB; en fp16, unos 136 MB; sumando activaciones y overhead de runtime, el consumo tipico se mantiene por debajo de 1 GB.
 - GPU recomendadas: cualquier GPU con 2 GB o mas de memoria es suficiente. No requiere A100 ni H100; una T4, una L4 o incluso una GTX 1650 son adecuadas.
 - GPU de consumo: si, cabe holgadamente en cualquier GPU de consumo actual (RTX 3060, RTX 4090, etc.) y tambien en CPU, dado que se trata de un encoder de 68 millones de parametros.
-- Opciones de despliegue: `transformers` con pipeline de clasificacion de texto, Text Embeddings Inference (etiqueta declarada en el repositorio), endpoints gestionados de HuggingFace, y exportacion a ONNX Runtime o TorchScript para inferencia optimizada. No se documenta compatibilidad con llama.cpp, Ollama o vLLM, y estos ultimos no son el entorno habitual para un encoder de clasificacion.
+- Opciones de despliegue: `transformers` con pipeline de clasificacion de texto, Text Embeddings Inference (etiqueta declarada en el repositorio), endpoints gestionados de Hugging Face, y exportacion a ONNX Runtime o TorchScript para inferencia optimizada. No se documenta compatibilidad con llama.cpp, Ollama o vLLM, y estos ultimos no son el entorno habitual para un encoder de clasificacion.
 - Latencia y throughput estimados: no disponibles. No hay datos de velocidad, tamano de lote ni tiempo de respuesta publicados por el autor.
 
 ## Comparativa con modelos similares
@@ -68,7 +68,7 @@ No se dispone de datos publicados de modelos comparables en la informacion propo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ads2009/turkish-ai-text-detector-distilberturk-v10 | 68.090.114 | No disponible | No disponible | No disponible | HuggingFace, 0 descargas |
+| ads2009/turkish-ai-text-detector-distilberturk-v10 | 68.090.114 | No disponible | No disponible | No disponible | Hugging Face, 0 descargas |
 | DistilBERT multilingue / turco (referencia de arquitectura) | No disponible | No disponible | No disponible | No disponible | No disponible |
 | Detectores de texto IA basados en XLM-R o mBERT | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -88,7 +88,7 @@ La unica comparacion defendible con los datos disponibles es de orden de magnitu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ads2009/turkish-ai-text-detector-distilberturk-v10
+- Modelo en Hugging Face: https://huggingface.co/ads2009/turkish-ai-text-detector-distilberturk-v10
 - Paper referenciado en las etiquetas del repositorio (calculadora de impacto medioambiental, Lacoste et al. 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ML citada en la plantilla de la model card: https://mlco2.github.io/impact
 - Busqueda web: sin resultados relevantes. Los enlaces devueltos por el buscador corresponden a paginas sobre software de helpdesk y atencion al cliente (helpdesk.com, articulos de Zendesk y Computerwoche, soporte de Microsoft) y no guardan ninguna relacion con este modelo.

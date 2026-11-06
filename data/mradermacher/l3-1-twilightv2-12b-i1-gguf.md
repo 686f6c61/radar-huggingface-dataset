@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mradermacher/L3.1-Twilightv2-12B-i1-GGUF` es una cuantización en formato GGUF del modelo base `kromcomp/L3.1-Twilightv2-12B`, un modelo de lenguaje de 12 mil millones de parámetros creado mediante una fusión (merge) de modelos utilizando la herramienta `mergekit`. La versión cuantizada ha sido generada por mradermacher, un cuantizador conocido en la comunidad de HuggingFace, e incluye cuantizaciones con matriz de importancia (imatrix) para optimizar la calidad tras la compresión.
+El modelo `mradermacher/L3.1-Twilightv2-12B-i1-GGUF` es una cuantización en formato GGUF del modelo base `kromcomp/L3.1-Twilightv2-12B`, un modelo de lenguaje de 12 mil millones de parámetros creado mediante una fusión (merge) de modelos utilizando la herramienta `mergekit`. La versión cuantizada ha sido generada por mradermacher, un cuantizador conocido en la comunidad de Hugging Face, e incluye cuantizaciones con matriz de importancia (imatrix) para optimizar la calidad tras la compresión.
 
 El modelo base se presenta como un modelo conversacional en inglés, orientado a tareas de diálogo y generación de texto. Al ser una cuantización GGUF, su principal ventaja es que puede ejecutarse en hardware de consumo, como GPUs con 8 GB de VRAM o incluso en CPU, mediante motores como llama.cpp u Ollama. Aunque no se dispone de detalles técnicos completos del modelo original, su tamaño de 12B y su naturaleza de merge sugieren que combina capacidades de razonamiento y generación de texto de varios modelos base de la familia Llama 3.1.
 
@@ -42,7 +42,7 @@ Dado que no hay documentacion del modelo base, estas capacidades son inferencias
 - Chatbots de atencion al cliente: al ser un modelo conversacional de 12B, puede gestionar dialogos de soporte tecnico o consultas frecuentes en ingles. Su cuantizacion Q4_K_S (7 GB) permite desplegarlo en una GPU con 8 GB de VRAM, adecuado para entornos de produccion con baja latencia.
 - Generacion de contenido en ingles: redaccion de articulos, resumenes o respuestas a correos. La ventana de contexto no se conoce, pero para textos cortos y medios el modelo puede funcionar bien.
 - Asistentes virtuales locales: gracias al formato GGUF, puede ejecutarse en CPU o GPU de consumo mediante Ollama o llama.cpp, permitiendo asistentes privados sin conexion.
-- Prototipado rapido de aplicaciones NLP: los desarrolladores pueden integrar el modelo en pipelines de HuggingFace Transformers (aunque el formato es GGUF, se puede usar con `llama-cpp-python` o `ctransformers`) para validar ideas antes de escalar a modelos mayores.
+- Prototipado rapido de aplicaciones NLP: los desarrolladores pueden integrar el modelo en pipelines de Hugging Face Transformers (aunque el formato es GGUF, se puede usar con `llama-cpp-python` o `ctransformers`) para validar ideas antes de escalar a modelos mayores.
 - Educacion y aprendizaje: como modelo de 12B, puede servir para practicar tecnicas de prompt engineering o fine-tuning en entornos con recursos limitados.
 - Generacion de codigo basico: aunque no se confirma, los modelos de 12B suelen tener cierta capacidad de programacion; se puede probar para tareas simples como autocompletado o explicacion de fragmentos.
 

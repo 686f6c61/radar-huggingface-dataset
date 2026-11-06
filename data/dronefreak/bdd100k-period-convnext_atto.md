@@ -108,8 +108,8 @@ Todas las diferencias son estrechas (menos de 0,7 puntos de top-1 entre el prime
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dronefreak/bdd100k-period-convnext_atto
-- Dataset en HuggingFace: https://huggingface.co/datasets/dronefreak/BDD100K-Period-Classification
+- Modelo en Hugging Face: https://huggingface.co/dronefreak/bdd100k-period-convnext_atto
+- Dataset en Hugging Face: https://huggingface.co/datasets/dronefreak/BDD100K-Period-Classification
 - Repositorio BDD100K-Toolkit: https://github.com/dronefreak/bdd100k-toolkit
 - Modelo relacionado (YOLOv9t sobre BDD100K): https://huggingface.co/dronefreak/bdd100k-yolov9t
 - Model Zoo oficial de BDD100K: https://github.com/SysCV/bdd100k-models

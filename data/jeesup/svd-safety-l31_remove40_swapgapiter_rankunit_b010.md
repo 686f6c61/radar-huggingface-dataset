@@ -74,7 +74,7 @@ No se han publicado en la informacion disponible resultados de MMLU, HumanEval, 
 
 | Modelo | Parametros | Contexto | Metricas de seguridad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| svd-safety-l31_remove40_swapgapiter_rankunit_b010 | 8,03 B almacenados; fraccion densa declarada 0,5998 | no disponible en la model card | AdvBench ASR 0,0654; StrongREJECT ASR 0,1597; sobre-rechazo 0,0914; ppl WikiText-2 30,3951 | Llama 3.1 Community License | Repositorio HuggingFace con 0 descargas y 0 likes |
+| svd-safety-l31_remove40_swapgapiter_rankunit_b010 | 8,03 B almacenados; fraccion densa declarada 0,5998 | no disponible en la model card | AdvBench ASR 0,0654; StrongREJECT ASR 0,1597; sobre-rechazo 0,0914; ppl WikiText-2 30,3951 | Llama 3.1 Community License | Repositorio Hugging Face con 0 descargas y 0 likes |
 | meta-llama/Llama-3.1-8B-Instruct (modelo base) | 8,03 B densos | 128.000 tokens | no disponible en la informacion proporcionada | Llama 3.1 Community License | Modelo oficial ampliamente desplegado |
 | Otras celdas de la misma rejilla experimental (otras reglas de seleccion y presupuestos) | no disponible | no disponible | no disponibles | Llama 3.1 Community License | Publicadas por el mismo autor, no listadas en esta informacion |
 | Otras familias de compresion de LLM (SVD-LLM, pruning estructurado, cuantizacion) | no disponible | no disponible | no disponible | variable | no disponible |
@@ -98,7 +98,7 @@ No se dispone de datos comparativos adicionales en la informacion proporcionada,
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Jeesup/svd-safety-l31_remove40_swapgapiter_rankunit_b010
+- Repositorio Hugging Face: https://huggingface.co/Jeesup/svd-safety-l31_remove40_swapgapiter_rankunit_b010
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Model card de Llama 3.1 (referencia de arquitectura, contexto e idiomas): https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Licencia y politica de uso: archivos LICENSE y USE_POLICY.md incluidos en el propio repositorio

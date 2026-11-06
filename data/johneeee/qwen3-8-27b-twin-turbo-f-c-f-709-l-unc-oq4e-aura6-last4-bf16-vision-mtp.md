@@ -106,7 +106,7 @@ Nota: los datos de la columna de contexto y licencia corresponden a los modelos 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Johneeee/Qwen3.8-27B-TWIN-TURBO-f-c-f-709-l-unc-oQ4e-aura6-last4-bf16-vision-mtp
+- Repositorio en Hugging Face: https://huggingface.co/Johneeee/Qwen3.8-27B-TWIN-TURBO-f-c-f-709-l-unc-oQ4e-aura6-last4-bf16-vision-mtp
 - Herramienta de cuantizacion oQ (oMLX): https://github.com/jundot/omlx
 - Documentacion y repositorio de MLX: no disponible en la informacion proporcionada
 - Model card del modelo base Qwen3.8-27B: no disponible en la informacion proporcionada

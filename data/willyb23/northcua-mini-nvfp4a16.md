@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| NorthCUA-Mini-NVFP4A16 (este) | 35,1 B totales / ~3 B activos | 65.536 tokens (configurado en vLLM) | Apache 2.0 | HuggingFace, formato compressed-tensors NVFP4A16 | Cuantización comunitaria no oficial; solo vLLM probado |
-| beipo-ai/NorthCUA-Mini (original BF16) | 35,1 B totales / ~3 B activos | No disponible | Apache 2.0 | HuggingFace | Checkpoint de referencia; ~70,2 GB, requiere más VRAM |
-| bartowski/beipo-ai_NorthCUA-Mini-GGUF | 35,1 B totales / ~3 B activos | No disponible | Apache 2.0 | HuggingFace | Alternativa para llama.cpp y Ollama; niveles de cuantización GGUF no detallados |
+| NorthCUA-Mini-NVFP4A16 (este) | 35,1 B totales / ~3 B activos | 65.536 tokens (configurado en vLLM) | Apache 2.0 | Hugging Face, formato compressed-tensors NVFP4A16 | Cuantización comunitaria no oficial; solo vLLM probado |
+| beipo-ai/NorthCUA-Mini (original BF16) | 35,1 B totales / ~3 B activos | No disponible | Apache 2.0 | Hugging Face | Checkpoint de referencia; ~70,2 GB, requiere más VRAM |
+| bartowski/beipo-ai_NorthCUA-Mini-GGUF | 35,1 B totales / ~3 B activos | No disponible | Apache 2.0 | Hugging Face | Alternativa para llama.cpp y Ollama; niveles de cuantización GGUF no detallados |
 
 No se dispone de datos de benchmarks comparativos con otros modelos de computer use en la información proporcionada, por lo que no se incluyen cifras de rendimiento relativo.
 
@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos de computer 
 
 ## Enlaces
 
-- HuggingFace (esta cuantización): https://huggingface.co/willyb23/NorthCUA-Mini-NVFP4A16
+- Hugging Face (esta cuantización): https://huggingface.co/willyb23/NorthCUA-Mini-NVFP4A16
 - Modelo base: https://huggingface.co/beipo-ai/NorthCUA-Mini
 - GGUF del original (bartowski): https://huggingface.co/bartowski/beipo-ai_NorthCUA-Mini-GGUF
 - NorthCUA Harness (repositorio oficial): https://github.com/china-qijizhifeng/NorthCUA-Harness

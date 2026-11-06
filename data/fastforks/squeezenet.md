@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks de precisión (top-1, top-5 en Imag
 
 | Modelo | Parametros | Entrada | Latencia documentada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SqueezeNet 1.1 (fastforks) | no disponible en la ficha (aprox. 1,2 M segun el paper, no confirmado) | 224x224 fija | 0,4 ms (kernels) / 1,8 ms (portable) en RTX 5060 Ti | BSD-3-Clause (codigo); pesos asumidos BSD-3-Clause | HuggingFace (model card) y PyTorch Vision |
+| SqueezeNet 1.1 (fastforks) | no disponible en la ficha (aprox. 1,2 M segun el paper, no confirmado) | 224x224 fija | 0,4 ms (kernels) / 1,8 ms (portable) en RTX 5060 Ti | BSD-3-Clause (codigo); pesos asumidos BSD-3-Clause | Hugging Face (model card) y PyTorch Vision |
 | MobileNetV2 | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 | ResNet-18 | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 
@@ -99,7 +99,7 @@ No se dispone de datos de benchmarks ni de especificaciones de los modelos alter
 
 ## Enlaces
 
-- Model card en HuggingFace: https://huggingface.co/fastforks/squeezenet
+- Model card en Hugging Face: https://huggingface.co/fastforks/squeezenet
 - Repositorio de la librería fastforks: https://github.com/kleinicke/fastforks
 - Kernels del backend CUDA: https://huggingface.co/fastforks/kernels
 - Definición de la variante (card.toml): https://github.com/kleinicke/fastforks/blob/main/src/fastforks/classification/models/squeezenet/card.toml

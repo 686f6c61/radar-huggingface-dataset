@@ -69,8 +69,8 @@ No se dispone de información sobre modelos comparables en la información propo
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| so101-balanced1000-abs-gripper-n17-50k-20261005 | 3,14B | no disponible | no disponible | HuggingFace |
-| nvidia/GR00T-N1.7-3B | 3B (según nombre) | no disponible | no disponible | HuggingFace |
+| so101-balanced1000-abs-gripper-n17-50k-20261005 | 3,14B | no disponible | no disponible | Hugging Face |
+| nvidia/GR00T-N1.7-3B | 3B (según nombre) | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 - Licencia no disponible: no se puede confirmar si se permite uso comercial. Es responsabilidad del usuario verificar la licencia del modelo base y del ajuste.
@@ -83,6 +83,6 @@ No se dispone de información sobre modelos comparables en la información propo
 - No se especifican requisitos de hardware ni latencia, lo que dificulta la planificación de despliegues en producción.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/maximilianofir/so101-balanced1000-abs-gripper-n17-50k-20261005
+- Modelo en Hugging Face: https://huggingface.co/maximilianofir/so101-balanced1000-abs-gripper-n17-50k-20261005
 - Dataset de entrenamiento: https://huggingface.co/datasets/maximilianofir/so101-balanced-gripper-ab-50k-20261005
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.7-3B

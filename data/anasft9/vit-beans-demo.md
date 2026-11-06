@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Anasft9/vit-beans-demo es un modelo de clasificación de imágenes publicado en HuggingFace por el usuario Anasft9. Se trata de un ajuste fino (fine-tuning) completo del checkpoint google/vit-base-patch16-224-in21k, un Vision Transformer de tipo base preentrenado por Google sobre ImageNet-21k a resolución 224x224 con parches de 16x16. El repositorio declara 85.800.963 parámetros en formato safetensors, licencia Apache 2.0 y pipeline `image-classification`.
+Anasft9/vit-beans-demo es un modelo de clasificación de imágenes publicado en Hugging Face por el usuario Anasft9. Se trata de un ajuste fino (fine-tuning) completo del checkpoint google/vit-base-patch16-224-in21k, un Vision Transformer de tipo base preentrenado por Google sobre ImageNet-21k a resolución 224x224 con parches de 16x16. El repositorio declara 85.800.963 parámetros en formato safetensors, licencia Apache 2.0 y pipeline `image-classification`.
 
-El modelo resuelve una tarea concreta de clasificación de imágenes: según el nombre del repositorio, está orientado a la clasificación de hojas de judía (beans), presumiblemente asociado al conjunto de datos público *beans* de HuggingFace, aunque la model card indica explícitamente que el conjunto de entrenamiento es desconocido ("on an unknown dataset"). Los únicos resultados declarados por el autor son la pérdida y la exactitud sobre el conjunto de evaluación: *loss* 0,1443 y *accuracy* 0,9688.
+El modelo resuelve una tarea concreta de clasificación de imágenes: según el nombre del repositorio, está orientado a la clasificación de hojas de judía (beans), presumiblemente asociado al conjunto de datos público *beans* de Hugging Face, aunque la model card indica explícitamente que el conjunto de entrenamiento es desconocido ("on an unknown dataset"). Los únicos resultados declarados por el autor son la pérdida y la exactitud sobre el conjunto de evaluación: *loss* 0,1443 y *accuracy* 0,9688.
 
 Su relevancia es limitada y de carácter demostrativo: es un experimento académico o de aprendizaje, con cero descargas y cero "likes" en el momento de la consulta, sin model card completada (las secciones "Model description", "Intended uses & limitations" y "Training and evaluation data" contienen únicamente "More information needed") y sin resultados en el `model-index`. No debe considerarse un modelo listo para producción.
 
@@ -35,7 +35,7 @@ Los hiperparámetros de entrenamiento sí están documentados: 4 épocas, tasa d
 
 - Clasificación de imágenes a resolución fija de 224x224 px mediante el pipeline `image-classification` de `transformers`.
 - Predicción de etiquetas de clase sobre imágenes, con una exactitud declarada de 0,9688 en el conjunto de evaluación del autor.
-- Inferencia con soporte de `endpoints_compatible`, es decir, desplegable en HuggingFace Inference Endpoints.
+- Inferencia con soporte de `endpoints_compatible`, es decir, desplegable en Hugging Face Inference Endpoints.
 - No hay evidencia de soporte de *tool calling*, *function calling* ni agentes: es un modelo discriminativo de visión, no un modelo generativo de lenguaje.
 - No se declaran capacidades multilingües, de razonamiento, de generación de código ni de matemáticas.
 - No se declaran capacidades multimodales de visión-lenguaje (VQA, captioning) ni de detección o segmentación: la cabeza es de clasificación de imagen completa.
@@ -44,7 +44,7 @@ Los hiperparámetros de entrenamiento sí están documentados: 4 épocas, tasa d
 ## Casos de uso
 
 - Clasificación automática de hojas de judía en un proyecto agrícola de demostración: dada una fotografía de una hoja, el modelo devuelve una etiqueta de clase; es el uso coherente con el nombre del repositorio y con la exactitud declarada, siempre que el dominio de producción coincida con el de evaluación.
-- Prototipado y material didáctico: sirve como ejemplo reproducible de fine-tuning de un ViT con el `Trainer` de HuggingFace, útil en cursos o tutoriales de visión por computador.
+- Prototipado y material didáctico: sirve como ejemplo reproducible de fine-tuning de un ViT con el `Trainer` de Hugging Face, útil en cursos o tutoriales de visión por computador.
 - *Baseline* interno de comparación: al ser un ViT-base ajustado, puede usarse como referencia mínima contra la que medir modelos propios de clasificación de imágenes en un mismo conjunto de validación.
 - Filtrado previo en un *pipeline* de anotación: usar el modelo como clasificador de primera pasada para priorizar qué imágenes revisa un humano, aprovechando su bajo coste de inferencia (85,8 M de parámetros).
 - Pruebas de integración de infraestructura: al ser compatible con Inference Endpoints y con `transformers`, es adecuado para validar extremo a extremo el despliegue de un endpoint de clasificación (carga de safetensors, preprocesado de imagen, devolución de logits).
@@ -77,7 +77,7 @@ No hay resultados publicados de MMLU, HumanEval, GSM8K ni de otros benchmarks es
 - Cabe sin problema en GPU de consumo: cualquier tarjeta con 4 GB o más (GTX 1650, RTX 3050, RTX 3060, RTX 4060, RTX 4090) es más que suficiente, incluso con lotes grandes.
 - Funciona en CPU para inferencia puntual o lotes modestos, dado el tamaño reducido del modelo.
 - GPU de datacenter (A100, H100, L4, T4) no son necesarias; solo tendrían sentido para servir lotes muy grandes en paralelo.
-- Opciones de despliegue: `transformers` (PyTorch) de forma nativa; HuggingFace Inference Endpoints (el repositorio está marcado como `endpoints_compatible`); exportación a ONNX; `vLLM`, `llama.cpp`, Ollama y TGI no son aplicables a un modelo de clasificación de imágenes (TGI está orientado a modelos generativos de texto).
+- Opciones de despliegue: `transformers` (PyTorch) de forma nativa; Hugging Face Inference Endpoints (el repositorio está marcado como `endpoints_compatible`); exportación a ONNX; `vLLM`, `llama.cpp`, Ollama y TGI no son aplicables a un modelo de clasificación de imágenes (TGI está orientado a modelos generativos de texto).
 - Latencia y *throughput*: no disponibles. No hay mediciones publicadas por el autor. El tamaño del repositorio (1,7 GB) es notablemente superior al de los pesos en fp32, lo que sugiere que incluye estados del optimizador o checkpoints intermedios además del modelo final.
 
 ## Comparativa con modelos similares
@@ -108,7 +108,7 @@ La comparación directa de exactitud no es posible porque el conjunto de evaluac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Anasft9/vit-beans-demo
+- Modelo en Hugging Face: https://huggingface.co/Anasft9/vit-beans-demo
 - Modelo base: https://huggingface.co/google/vit-base-patch16-224-in21k
 - Biblioteca `transformers`: https://github.com/huggingface/transformers
 

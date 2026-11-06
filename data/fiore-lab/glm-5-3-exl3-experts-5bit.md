@@ -93,7 +93,7 @@ El propio autor señala que una mezcla con expertos a 2 bits se aleja entre un 1
 - La licencia es personalizada (GLM-5.3 License, `license: other`), no Apache ni MIT: hay que revisar los términos antes de un uso comercial. Una fuente secundaria (openlm.ai) afirma licencia MIT para el modelo base, lo que contradice los metadatos del repositorio; conviene verificar el texto de `LICENSE`.
 - Riesgo de alucinación y sesgos: no hay evaluación publicada de sesgos, toxicidad ni tasas de alucinación para este banco ni para el modelo base en la información disponible.
 - La calibración está limitada a inglés, chino y japonés; el rendimiento en castellano no está documentado y puede degradarse respecto al modelo en BF16.
-- Los metadatos de HuggingFace indican un tamaño de repositorio de 0,0 GB y 0 descargas, mientras que el manifiesto declara 459,1 GB: hay que fiarse del manifiesto y verificar con `tf-glm53 verify-banks 5`, que tarda minutos por nodo.
+- Los metadatos de Hugging Face indican un tamaño de repositorio de 0,0 GB y 0 descargas, mientras que el manifiesto declara 459,1 GB: hay que fiarse del manifiesto y verificar con `tf-glm53 verify-banks 5`, que tarda minutos por nodo.
 - Un arranque o una reordenación que requiera un ancho de experto ausente en algún nodo se rechaza antes de aplicar cambios: la operación exige que todos los nodos tengan el banco correspondiente.
 - Cualquier despliegue necesita gestionar 427,6 GiB de descarga y almacenamiento por nodo, además de los pesos no-expertos.
 

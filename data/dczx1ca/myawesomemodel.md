@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de extracción de características (feature-extraction) publicado en HuggingFace por el usuario DCZX1CA bajo licencia MIT. Según los metadatos de la plataforma, está construido sobre la arquitectura BERT y se distribuye en formato compatible con la librería transformers de PyTorch. El repositorio, creado el 3 de noviembre de 2026, no contiene pesos (tamaño de 0.0 GB) y registra cero descargas y cero likes en el momento de la consulta, por lo que se trata de una publicación vacía o en fase inicial.
+MyAwesomeModel es un modelo de extracción de características (feature-extraction) publicado en Hugging Face por el usuario DCZX1CA bajo licencia MIT. Según los metadatos de la plataforma, está construido sobre la arquitectura BERT y se distribuye en formato compatible con la librería transformers de PyTorch. El repositorio, creado el 3 de noviembre de 2026, no contiene pesos (tamaño de 0.0 GB) y registra cero descargas y cero likes en el momento de la consulta, por lo que se trata de una publicación vacía o en fase inicial.
 
 La model card incluida es una plantilla genérica con marcadores de posición sin rellenar (por ejemplo, `{RESULT}` en todas las celdas de la tabla de benchmarks) y hace referencia a figuras e imágenes que no están presentes en el repositorio. El texto describe mejoras de razonamiento, un aumento de precisión en AIME 2025 del 70 % al 87,5 % y un incremento del uso medio de tokens por pregunta de 12K a 23K, pero estos datos no son verificables porque no se aportan resultados propios y las columnas comparativas corresponden a modelos anonimizados ("Model1", "Model2", "Model1-v2").
 
@@ -12,7 +12,7 @@ En la práctica, no es posible evaluar ni desplegar el modelo: no hay pesos publ
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | BERT (según tag de HuggingFace); detalles no disponibles |
+| Arquitectura | BERT (según tag de Hugging Face); detalles no disponibles |
 | Parametros totales | no disponible |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
@@ -23,7 +23,7 @@ En la práctica, no es posible evaluar ni desplegar el modelo: no hay pesos publ
 
 ## Arquitectura y entrenamiento
 
-Los metadatos de HuggingFace etiquetan el modelo como `bert` dentro de la librería `transformers` y con pipeline `feature-extraction`, lo que sugiere una arquitectura de tipo encoder transformer orientada a representaciones vectoriales. Sin embargo, la model card no describe la arquitectura real, el número de capas, la dimensión oculta ni la configuración del tokenizador. Tampoco se especifica si se trata de un modelo base o de un modelo ajustado.
+Los metadatos de Hugging Face etiquetan el modelo como `bert` dentro de la librería `transformers` y con pipeline `feature-extraction`, lo que sugiere una arquitectura de tipo encoder transformer orientada a representaciones vectoriales. Sin embargo, la model card no describe la arquitectura real, el número de capas, la dimensión oculta ni la configuración del tokenizador. Tampoco se especifica si se trata de un modelo base o de un modelo ajustado.
 
 No hay información sobre el corpus de entrenamiento, el número de tokens procesados, la composición del dataset ni si se aplicaron técnicas de alineación como RLHF, DPO o SFT. La model card menciona de forma genérica "recursos computacionales incrementados" y "mecanismos de optimización algorítmica durante el post-entrenamiento", pero sin ningún detalle técnico verificable. Tampoco se documentan innovaciones como decodificación especulativa, atención lineal o modos de razonamiento extendido más allá de la referencia a un mayor uso de tokens por pregunta en el conjunto AIME.
 
@@ -35,7 +35,7 @@ No hay información sobre el corpus de entrenamiento, el número de tokens proce
 - Carga de ficheros y búsqueda web: se proporcionan plantillas de prompt para adjuntar contenido de ficheros y para generación aumentada con resultados de búsqueda y citas.
 - Soporte de system prompt: se recomienda un system prompt con fecha actual.
 - Capacidades multilingües: no disponibles; no se declara ningún idioma en los metadatos.
-- Extracción de características: es el pipeline declarado en HuggingFace, aunque no hay pesos que lo permitan ejecutar.
+- Extracción de características: es el pipeline declarado en Hugging Face, aunque no hay pesos que lo permitan ejecutar.
 
 ## Casos de uso
 
@@ -104,7 +104,7 @@ No es posible establecer una comparativa fiable porque se desconocen los paráme
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DCZX1CA/MyAwesomeModel
+- Modelo en Hugging Face: https://huggingface.co/DCZX1CA/MyAwesomeModel
 - Repositorio de código: no disponible (la model card menciona "our code repository" sin enlace)
 - Paper: no disponible
 - Blog o web oficial: no disponible (la model card menciona "our official website" sin enlace)

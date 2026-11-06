@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Khazri 3 SFT es un modelo de lenguaje publicado por el usuario Yusiko en HuggingFace bajo el identificador `Yusiko/khazri-3-sft`. Se trata de un modelo de aproximadamente 1.002 millones de parametros (1,0 B), etiquetado con la arquitectura `llama` y distribuido en formato safetensors. El sufijo "sft" del nombre sugiere que se trata de un ajuste supervisado (supervised fine-tuning) sobre una base previa, aunque el autor no documenta cual es el modelo base ni el procedimiento seguido.
+Khazri 3 SFT es un modelo de lenguaje publicado por el usuario Yusiko en Hugging Face bajo el identificador `Yusiko/khazri-3-sft`. Se trata de un modelo de aproximadamente 1.002 millones de parametros (1,0 B), etiquetado con la arquitectura `llama` y distribuido en formato safetensors. El sufijo "sft" del nombre sugiere que se trata de un ajuste supervisado (supervised fine-tuning) sobre una base previa, aunque el autor no documenta cual es el modelo base ni el procedimiento seguido.
 
 La model card publicada es practicamente vacia: unicamente contiene la declaracion de licencia Apache 2.0, sin descripcion, sin datos de entrenamiento, sin idiomas declarados y sin resultados de evaluacion. El repositorio ocupa 2,0 GB, lo que es coherente con pesos en precision de 16 bits (1,002.522.624 parametros x 2 bytes = aproximadamente 2,0 GB).
 
@@ -22,8 +22,8 @@ Su relevancia actual es limitada desde el punto de vista practico: cuenta con 0 
 | Formato de pesos | safetensors |
 | Tamano del repositorio | 2,0 GB |
 | Pipeline declarado | no disponible |
-| Fecha de creacion | 2026-10-06 (fecha indicada en HuggingFace) |
-| Ultima actualizacion | 2026-10-07 (fecha indicada en HuggingFace) |
+| Fecha de creacion | 2026-10-06 (fecha indicada en Hugging Face) |
+| Ultima actualizacion | 2026-10-07 (fecha indicada en Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -78,10 +78,10 @@ No hay datos de rendimiento de Khazri 3 SFT que permitan una comparacion funcion
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Khazri 3 SFT | 1,0 B | no disponible | Apache 2.0 | HuggingFace, 0 descargas |
-| Llama 3.2 1B | 1,24 B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, ampliamente desplegado |
-| Qwen2.5 1.5B | 1,54 B | 32.768 tokens | Apache 2.0 (segun variante) | HuggingFace, ampliamente desplegado |
-| SmolLM2 1.7B | 1,7 B | 8.192 tokens | Apache 2.0 | HuggingFace, ampliamente desplegado |
+| Khazri 3 SFT | 1,0 B | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
+| Llama 3.2 1B | 1,24 B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, ampliamente desplegado |
+| Qwen2.5 1.5B | 1,54 B | 32.768 tokens | Apache 2.0 (segun variante) | Hugging Face, ampliamente desplegado |
+| SmolLM2 1.7B | 1,7 B | 8.192 tokens | Apache 2.0 | Hugging Face, ampliamente desplegado |
 
 La comparacion de rendimiento entre estos modelos y Khazri 3 SFT no esta disponible.
 
@@ -98,6 +98,6 @@ La comparacion de rendimiento entre estos modelos y Khazri 3 SFT no esta disponi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Yusiko/khazri-3-sft
+- Modelo en Hugging Face: https://huggingface.co/Yusiko/khazri-3-sft
 - Perfil del autor en LinkedIn (resultado de busqueda web, posible vinculacion con el autor): https://az.linkedin.com/in/yusikome
 - Paper, blog, repositorio o demo adicionales: no disponible.

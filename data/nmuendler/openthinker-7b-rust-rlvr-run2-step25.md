@@ -2,9 +2,9 @@
 
 ## Resumen
 
-OpenThinker-7B-rust-rlvr-run2-step25 es un adaptador LoRA publicado por el usuario nmuendler en HuggingFace, obtenido mediante entrenamiento con GRPO sobre el modelo base open-thoughts/OpenThinker-7B. No se trata de un modelo completo, sino de un artefacto de ajuste fino (PEFT) de 0,3 GB que debe cargarse sobre el modelo base para poder ejecutarse. El identificador sugiere un experimento de aprendizaje por refuerzo con recompensas verificables (RLVR) orientado a la generacion de codigo Rust, correspondiente al checkpoint del paso 25 de una segunda ejecucion, aunque la model card no confirma ninguno de estos extremos.
+OpenThinker-7B-rust-rlvr-run2-step25 es un adaptador LoRA publicado por el usuario nmuendler en Hugging Face, obtenido mediante entrenamiento con GRPO sobre el modelo base open-thoughts/OpenThinker-7B. No se trata de un modelo completo, sino de un artefacto de ajuste fino (PEFT) de 0,3 GB que debe cargarse sobre el modelo base para poder ejecutarse. El identificador sugiere un experimento de aprendizaje por refuerzo con recompensas verificables (RLVR) orientado a la generacion de codigo Rust, correspondiente al checkpoint del paso 25 de una segunda ejecucion, aunque la model card no confirma ninguno de estos extremos.
 
-La relevancia de esta publicacion es acotada: se trata de un checkpoint intermedio de investigacion, con cero descargas y cero likes en el momento de la consulta, y con una model card generada a partir de la plantilla por defecto de HuggingFace en la que practicamente todos los campos figuran como "[More Information Needed]". No se declaran licencia, idiomas, datos de entrenamiento, hiperparametros ni resultados de evaluacion.
+La relevancia de esta publicacion es acotada: se trata de un checkpoint intermedio de investigacion, con cero descargas y cero likes en el momento de la consulta, y con una model card generada a partir de la plantilla por defecto de Hugging Face en la que practicamente todos los campos figuran como "[More Information Needed]". No se declaran licencia, idiomas, datos de entrenamiento, hiperparametros ni resultados de evaluacion.
 
 Para cualquier evaluacion en serio conviene partir del modelo base (OpenThinker-7B, un modelo de razonamiento de 7B parametros con contexto largo, orientado a tareas de matematicas, codigo y ciencia) y tratar este repositorio como lo que parece: un adaptador experimental derivado de un pipeline de RL (GRPO + LoRA) sobre tareas de Rust con verificacion automatica.
 
@@ -89,7 +89,7 @@ No se dispone de informacion suficiente sobre modelos directamente comparables (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nmuendler/OpenThinker-7B-rust-rlvr-run2-step25
+- Hugging Face: https://huggingface.co/nmuendler/OpenThinker-7B-rust-rlvr-run2-step25
 - Modelo base: https://huggingface.co/open-thoughts/OpenThinker-7B
 - Referencia citada en la model card (Lacoste et al., 2019, calculadora de impacto ambiental): https://arxiv.org/abs/1910.09700 y https://mlco2.github.io/impact
 - Paper, repositorio de codigo, demo o blog del autor: no disponibles en la informacion proporcionada.

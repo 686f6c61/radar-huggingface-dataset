@@ -88,9 +88,9 @@ No se dispone de datos de modelos comparables externos (por ejemplo, otras polí
 
 | Variante | Parámetros | Contexto | Rendimiento (400 rollouts) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| view_large (temporal) | no disponible | no disponible | 120/400 (30,00%) | apache-2.0 | HuggingFace |
-| yaw30 (temporal, este checkpoint) | no disponible | no disponible | 204/400 (51,00%) | apache-2.0 | HuggingFace |
-| ur5e (temporal) | no disponible | no disponible | 168/400 (42,00%) | apache-2.0 | HuggingFace |
+| view_large (temporal) | no disponible | no disponible | 120/400 (30,00%) | apache-2.0 | Hugging Face |
+| yaw30 (temporal, este checkpoint) | no disponible | no disponible | 204/400 (51,00%) | apache-2.0 | Hugging Face |
+| ur5e (temporal) | no disponible | no disponible | 168/400 (42,00%) | apache-2.0 | Hugging Face |
 | Controles fijos equivalentes | no disponible | no disponible | 117/400, 201/400, 167/400 | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -111,7 +111,7 @@ No se dispone de datos de modelos comparables externos (por ejemplo, otras polí
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-b200-temporal-contrast-yaw30-1000-pilot-20261013
+- Modelo en Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-b200-temporal-contrast-yaw30-1000-pilot-20261013
 - Dataset objetivo: https://huggingface.co/Donghyun1228/libero-dense-contact-sweep-d2-yaw30-20261003 (revisión `7cfd3ca8528c59c1ce700d4d75b560db39f7a5e7`)
 - Snapshot de entrenamiento/evaluación: `6da4916da7f7f769524b5c0bc8c0577fa92035ae`
 - Snapshot de inferencia: `0f6471d99dfc81fabe7c3ab65c141d7640b9ff08`

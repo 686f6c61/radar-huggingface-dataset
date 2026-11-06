@@ -94,9 +94,9 @@ Latencia por consulta extremo a extremo medida en una unica RTX 4090 con la ruta
 
 | Modelo | Parametros | Tipo | Media en benchmarks | Brier ↓ | ECE ↓ | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Intern-Decision-2B | 2.213.241.664 | Multimodal de decision estructurada | 84,68 | 0,437 | 0,100 | Apache 2.0 | HuggingFace, FP, FriendliAI |
-| Intern-Decision-0.8B | no disponible (denominacion 0,8B) | Multimodal de decision estructurada | 79,38 | 0,530 | 0,066 | no disponible | HuggingFace |
-| Intern-Decision-4B | no disponible (denominacion 4B) | Multimodal de decision estructurada | 90,02 | 0,347 | 0,065 | no disponible | HuggingFace |
+| Intern-Decision-2B | 2.213.241.664 | Multimodal de decision estructurada | 84,68 | 0,437 | 0,100 | Apache 2.0 | Hugging Face, FP, FriendliAI |
+| Intern-Decision-0.8B | no disponible (denominacion 0,8B) | Multimodal de decision estructurada | 79,38 | 0,530 | 0,066 | no disponible | Hugging Face |
+| Intern-Decision-4B | no disponible (denominacion 4B) | Multimodal de decision estructurada | 90,02 | 0,347 | 0,065 | no disponible | Hugging Face |
 | Jev | no disponible | Modelo de decision | 88,74 | 0,358 | 0,095 | no disponible | referencia en benchmarks |
 | JevK5 | no disponible | Modelo de decision | 85,16 | 0,366 | 0,047 | no disponible | referencia en benchmarks |
 | SemIf | no disponible | Modelo de decision | 84,23 | 0,498 | 0,112 | no disponible | referencia en benchmarks |
@@ -119,10 +119,10 @@ Frente a la base Qwen/Qwen3.5-2B, la comparacion directa no es posible porque el
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/internlm/Intern-Decision-2B
+- Modelo en Hugging Face: https://huggingface.co/internlm/Intern-Decision-2B
 - Coleccion completa de la familia Intern-Decision: https://huggingface.co/collections/internlm/intern-decision
 - Modelo base Qwen/Qwen3.5-2B: https://huggingface.co/Qwen/Qwen3.5-2B
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/internlm/intern-decision
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/internlm/intern-decision
 - Repositorio GitHub: https://github.com/internlm/Intern-Decision
 - Endpoint gestionado en FriendliAI: https://friendli.ai/models/internlm/Intern-Decision-2B
 - Analisis de ajuste de VRAM y hardware: https://www.madebyagents.com/models/intern-decision-2b

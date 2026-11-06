@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CHOWON es un repositorio publicado en HuggingFace por el usuario OrbitngTwice (ID: `OrbitngTwice/CHOWON`). A diferencia de las fichas habituales de modelos, este repositorio carece por completo de documentacion: la model card esta vacia (solo declara `license: unknown`), no incluye tags tecnicos, no tiene pipeline asignado y acumula cero descargas y cero likes desde su fecha de creacion (25 de octubre de 2026).
+CHOWON es un repositorio publicado en Hugging Face por el usuario OrbitngTwice (ID: `OrbitngTwice/CHOWON`). A diferencia de las fichas habituales de modelos, este repositorio carece por completo de documentacion: la model card esta vacia (solo declara `license: unknown`), no incluye tags tecnicos, no tiene pipeline asignado y acumula cero descargas y cero likes desde su fecha de creacion (25 de octubre de 2026).
 
 El tamano del repositorio, 0,1 GB, es atipico para un modelo de lenguaje actual (los LLM ocupan habitualmente desde varios gigabytes hasta cientos), por lo que no puede afirmarse que se trate de un LLM, ni determinar su modalidad (texto, imagen, audio), su arquitectura ni su finalidad. Esta ficha documenta unicamente lo verificable desde la plataforma y declara explicitamente como "no disponible" todo aquello que el autor no ha publicado.
 
@@ -30,7 +30,7 @@ El unico metadato objetivo es el tamano del repositorio (0,1 GB), incompatible c
 ## Capacidades
 
 - No se ha documentado ninguna capacidad del modelo: el repositorio no incluye model card, ejemplos de uso ni descripcion de tareas.
-- El campo "pipeline" figura como "no disponible" en HuggingFace, lo que impide inferir si se trata de un modelo de texto, vision, audio u otra modalidad.
+- El campo "pipeline" figura como "no disponible" en Hugging Face, lo que impide inferir si se trata de un modelo de texto, vision, audio u otra modalidad.
 - No hay evidencia de soporte de tool calling, agentes, razonamiento multi-step ni capacidades multilingues.
 
 ## Casos de uso
@@ -65,5 +65,5 @@ No disponible: al no poder identificarse la categoria del modelo (tamano, modali
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/OrbitngTwice/CHOWON
+- Repositorio en Hugging Face: https://huggingface.co/OrbitngTwice/CHOWON
 - No se encontraron enlaces relevantes adicionales (paper, blog, repositorio de codigo o demo) en la busqueda web; los resultados obtenidos no guardaban relacion con el modelo y se descartaron.

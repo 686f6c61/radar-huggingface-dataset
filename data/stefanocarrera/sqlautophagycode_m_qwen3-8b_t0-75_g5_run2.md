@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.75_g5_run2` es un artefacto de ajuste fino publicado en HuggingFace por el usuario stefanocarrera. El propio identificador indica que parte de Qwen3-8B como modelo base, que se ha entrenado con la libreria Unsloth (etiqueta presente en el repositorio) y que el proceso corresponde a una segunda ejecucion (`run2`) con unos hiperparametros de muestreo o generacion anotados como `t0.75` (temperatura 0,75) y `g5`. El prefijo `sqlautophagycode` sugiere que el conjunto de datos de ajuste esta orientado a SQL y a codigo, aunque la model card no lo documenta.
+El repositorio `stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.75_g5_run2` es un artefacto de ajuste fino publicado en Hugging Face por el usuario stefanocarrera. El propio identificador indica que parte de Qwen3-8B como modelo base, que se ha entrenado con la libreria Unsloth (etiqueta presente en el repositorio) y que el proceso corresponde a una segunda ejecucion (`run2`) con unos hiperparametros de muestreo o generacion anotados como `t0.75` (temperatura 0,75) y `g5`. El prefijo `sqlautophagycode` sugiere que el conjunto de datos de ajuste esta orientado a SQL y a codigo, aunque la model card no lo documenta.
 
-La model card publicada es la plantilla autogenerada de HuggingFace y no contiene ni un solo campo relleno: no hay descripcion, ni datos de entrenamiento, ni licencia, ni idiomas, ni resultados de evaluacion. El repositorio ocupa 0,2 GB, un tamano muy inferior a los aproximadamente 16 GB que ocuparian los pesos completos en fp16 de un modelo de 8B, lo que apunta a que se han subido pesos de adaptador (LoRA) o a un subconjunto parcial, aunque esto no esta confirmado por el autor.
+La model card publicada es la plantilla autogenerada de Hugging Face y no contiene ni un solo campo relleno: no hay descripcion, ni datos de entrenamiento, ni licencia, ni idiomas, ni resultados de evaluacion. El repositorio ocupa 0,2 GB, un tamano muy inferior a los aproximadamente 16 GB que ocuparian los pesos completos en fp16 de un modelo de 8B, lo que apunta a que se han subido pesos de adaptador (LoRA) o a un subconjunto parcial, aunque esto no esta confirmado por el autor.
 
 En consecuencia, esta ficha recoge exclusivamente lo verificable a partir de los metadatos del repositorio y marca como "no disponible" todo aquello que el autor no ha publicado. Cualquier uso en produccion exige validar primero el modelo base exacto, la licencia aplicable y el comportamiento real del ajuste, dado que no existe ni evaluacion publica ni documentacion tecnica.
 
@@ -25,7 +25,7 @@ En consecuencia, esta ficha recoge exclusivamente lo verificable a partir de los
 
 No hay informacion tecnica publicada sobre la arquitectura del ajuste. Lo unico deducible de los metadatos es el uso de Unsloth (etiqueta `unsloth`), una libreria habitual para ajuste eficiente con LoRA/QLoRA, y la presencia de pesos en `safetensors` para `transformers`. El sufijo `_M_` del nombre del repositorio podria indicar pesos fusionados (merged) o una variante concreta del ajuste, y `t0.75_g5_run2` parece corresponder a los parametros de generacion del dataset o del muestreo (temperatura 0,75, parametro `g` a 5) y a la segunda ejecucion del experimento; ninguna de estas interpretaciones esta confirmada por el autor.
 
-Tampoco se especifican volumen de tokens, composicion del dataset, ni si hubo etapas de RLHF, DPO o SFT. La referencia `arxiv:1910.09700` que aparece en las etiquetas corresponde a Lacoste et al., el articulo del calculador de impacto ambiental de Machine Learning, y procede de la plantilla estandar de HuggingFace: no es un paper del modelo. Se desconoce por completo si el ajuste incluye datos licenciados de terceros, lo que es un riesgo relevante dado que la licencia del propio repositorio tampoco esta declarada.
+Tampoco se especifican volumen de tokens, composicion del dataset, ni si hubo etapas de RLHF, DPO o SFT. La referencia `arxiv:1910.09700` que aparece en las etiquetas corresponde a Lacoste et al., el articulo del calculador de impacto ambiental de Machine Learning, y procede de la plantilla estandar de Hugging Face: no es un paper del modelo. Se desconoce por completo si el ajuste incluye datos licenciados de terceros, lo que es un riesgo relevante dado que la licencia del propio repositorio tampoco esta declarada.
 
 ## Capacidades
 
@@ -93,7 +93,7 @@ Los datos de las tres alternativas proceden de sus fichas oficiales y no se repr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.75_g5_run2
+- Modelo en Hugging Face: https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.75_g5_run2
 - Referencia citada en las etiquetas del repositorio (Lacoste et al., calculador de impacto ambiental, no es un paper del modelo): https://arxiv.org/abs/1910.09700
 - Libreria de ajuste eficiente indicada en las etiquetas: https://github.com/unslothai/unsloth
 - Calculador de impacto de Machine Learning citado en la plantilla de la model card: https://mlco2.github.io/impact

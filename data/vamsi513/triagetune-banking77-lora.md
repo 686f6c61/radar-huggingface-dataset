@@ -79,7 +79,7 @@ Detalles adicionales reportados: el adaptador clasificó correctamente 2.479 de 
 
 | Enfoque | Parámetros | Contexto | Accuracy (BANKING77 test) | Macro F1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este adaptador (LoRA sobre Qwen2.5-1.5B-Instruct) | 4.358.144 entrenables sobre un base de ~1.540 M | 544 tokens de secuencia máxima en entrenamiento | 80,49 % | 80,50 % | Apache 2.0 (base Apache 2.0, dataset CC BY 4.0) | Adaptador público en HuggingFace, 0 descargas, 1 like |
+| Este adaptador (LoRA sobre Qwen2.5-1.5B-Instruct) | 4.358.144 entrenables sobre un base de ~1.540 M | 544 tokens de secuencia máxima en entrenamiento | 80,49 % | 80,50 % | Apache 2.0 (base Apache 2.0, dataset CC BY 4.0) | Adaptador público en Hugging Face, 0 descargas, 1 like |
 | Qwen2.5-1.5B-Instruct sin ajustar | ~1.540 M | 32.768 tokens según documentación del base | 30,16 % | 30,77 % | Apache 2.0 | Público y ampliamente adoptado |
 | TF-IDF + regresión logística | No disponible (modelo clásico de bolsa de palabras) | No aplica | 84,68 % | 84,54 % | No disponible | Baseline descrito por el autor, no empaquetado |
 | Baseline de clase mayoritaria | No aplica | No aplica | 1,30 % | 0,03 % | No aplica | Trivial de reproducir |
@@ -102,7 +102,7 @@ No se dispone de datos de benchmarks que permitan comparar este adaptador con ot
 
 ## Enlaces
 
-- Página de HuggingFace del adaptador: https://huggingface.co/Vamsi513/triagetune-banking77-lora
+- Página de Hugging Face del adaptador: https://huggingface.co/Vamsi513/triagetune-banking77-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Repositorio del proyecto TriageTune: https://github.com/vamsi513/triagetune
 - Dataset BANKING77 (PolyAI-LDN, task-specific-datasets): https://github.com/PolyAI-LDN/task-specific-datasets/tree/master/banking_data

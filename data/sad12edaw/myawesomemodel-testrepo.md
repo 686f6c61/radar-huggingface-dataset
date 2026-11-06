@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario sad12edaw bajo el identificador `sad12edaw/MyAwesomeModel-TestRepo`. La model card lo presenta como una actualización de una versión anterior en la que se habrían mejorado la profundidad de razonamiento y la capacidad de inferencia mediante más recursos de cómputo y optimizaciones algorítmicas aplicadas en la fase de post-entrenamiento, con mejoras declaradas en matemáticas, programación y lógica general, además de una reducción de la tasa de alucinación y un soporte reforzado de function calling.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario sad12edaw bajo el identificador `sad12edaw/MyAwesomeModel-TestRepo`. La model card lo presenta como una actualización de una versión anterior en la que se habrían mejorado la profundidad de razonamiento y la capacidad de inferencia mediante más recursos de cómputo y optimizaciones algorítmicas aplicadas en la fase de post-entrenamiento, con mejoras declaradas en matemáticas, programación y lógica general, además de una reducción de la tasa de alucinación y un soporte reforzado de function calling.
 
-Sin embargo, la información disponible es internamente contradictoria y no permite caracterizar el modelo. Los metadatos de HuggingFace lo etiquetan con `bert` y el pipeline `feature-extraction` (es decir, un encoder para extracción de representaciones), mientras que la model card describe un modelo generativo conversacional con modo de razonamiento extenso. Además, el repositorio acumula 0 descargas y 0 likes, y fue creado y actualizado con tres segundos de diferencia (14 de septiembre de 2026), lo que apunta a un repositorio de prueba o plantilla más que a un modelo desplegable.
+Sin embargo, la información disponible es internamente contradictoria y no permite caracterizar el modelo. Los metadatos de Hugging Face lo etiquetan con `bert` y el pipeline `feature-extraction` (es decir, un encoder para extracción de representaciones), mientras que la model card describe un modelo generativo conversacional con modo de razonamiento extenso. Además, el repositorio acumula 0 descargas y 0 likes, y fue creado y actualizado con tres segundos de diferencia (14 de septiembre de 2026), lo que apunta a un repositorio de prueba o plantilla más que a un modelo desplegable.
 
 Por todo ello, esta ficha recoge únicamente lo que el autor declara y marca de forma explícita como "no disponible" cualquier dato que no aparezca en la información proporcionada. No se han podido verificar arquitectura, número de parámetros, longitud de contexto, tokenizador ni resultados de benchmarks. No se recomienda su uso en producción sin una evaluación propia.
 
@@ -12,7 +12,7 @@ Por todo ello, esta ficha recoge únicamente lo que el autor declara y marca de 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible. Discrepancia: la etiqueta de HuggingFace indica `bert` (encoder), mientras que la model card describe un modelo generativo de razonamiento |
+| Arquitectura | No disponible. Discrepancia: la etiqueta de Hugging Face indica `bert` (encoder), mientras que la model card describe un modelo generativo de razonamiento |
 | Parametros totales | No disponible |
 | Parametros activos | No disponible (no se ha confirmado que sea MoE) |
 | Longitud de contexto | No disponible |
@@ -92,7 +92,7 @@ La model card incluye una tabla de benchmarks en la que la columna del modelo pr
 - VRAM estimada para inferencia: no disponible. Al desconocerse el número de parámetros, no es posible calcular el consumo de memoria en ninguna cuantización.
 - GPU recomendadas: no disponible.
 - Viabilidad en GPU de consumo: no disponible. No puede confirmarse ni descartarse que quepa en una RTX 4090 o similar.
-- Opciones de despliegue: la librería declarada es `transformers`, por lo que en principio sería compatible con el ecosistema HuggingFace (por ejemplo, `transformers`, TGI o vLLM). No se confirma compatibilidad con llama.cpp, Ollama ni GGUF, ya que no se listan cuantizaciones ni ficheros de pesos.
+- Opciones de despliegue: la librería declarada es `transformers`, por lo que en principio sería compatible con el ecosistema Hugging Face (por ejemplo, `transformers`, TGI o vLLM). No se confirma compatibilidad con llama.cpp, Ollama ni GGUF, ya que no se listan cuantizaciones ni ficheros de pesos.
 - Latencia y throughput: no disponible. El único indicio indirecto es el elevado consumo de tokens de razonamiento (media de 23K tokens por pregunta en AIME), lo que implica tiempos de respuesta y coste por consulta altos en cualquier hardware.
 - Parámetros de inferencia recomendados por el autor: temperatura 0,6; uso de system prompt con la fecha actual; no es necesario añadir tokens especiales al inicio de la salida para forzar un patrón de razonamiento concreto.
 
@@ -106,7 +106,7 @@ No disponible. La model card menciona "Model1", "Model2" y "Model1-v2" como refe
 | Contexto | no disponible | no disponible |
 | Rendimiento | no disponible (columna con marcador `{RESULT}`) | Valores numéricos publicados sin identificar el modelo |
 | Licencia | MIT | no disponible |
-| Disponibilidad | Repositorio HuggingFace con 0 descargas y 0 likes | no disponible |
+| Disponibilidad | Repositorio Hugging Face con 0 descargas y 0 likes | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -125,7 +125,7 @@ No disponible. La model card menciona "Model1", "Model2" y "Model1-v2" como refe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sad12edaw/MyAwesomeModel-TestRepo
+- Modelo en Hugging Face: https://huggingface.co/sad12edaw/MyAwesomeModel-TestRepo
 - Repositorio de código para ejecución local: mencionado en la model card, URL no disponible.
 - Web de chat y plataforma de API: mencionada en la model card, URL no disponible.
 - Paper o informe técnico: no disponible.

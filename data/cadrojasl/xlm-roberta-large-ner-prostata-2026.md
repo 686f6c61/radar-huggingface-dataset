@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `cadrojasl/xlm-roberta-large-ner-prostata-2026` es un ajuste fino de XLM-RoBERTa-large para reconocimiento de entidades nombradas (NER) en historias clínicas de cáncer de próstata en español. Lo publica el usuario cadrojasl en HuggingFace como trabajo final de un taller de PLN de una maestría en Ingeniería de Sistemas y Computación, y resuelve la extracción estructurada de información clínica (biomarcadores, valores Gleason, clasificación TNM, dosis, tratamientos) a partir de texto libre.
+El modelo `cadrojasl/xlm-roberta-large-ner-prostata-2026` es un ajuste fino de XLM-RoBERTa-large para reconocimiento de entidades nombradas (NER) en historias clínicas de cáncer de próstata en español. Lo publica el usuario cadrojasl en Hugging Face como trabajo final de un taller de PLN de una maestría en Ingeniería de Sistemas y Computación, y resuelve la extracción estructurada de información clínica (biomarcadores, valores Gleason, clasificación TNM, dosis, tratamientos) a partir de texto libre.
 
 Arquitectónicamente es un transformer encoder de tipo RoBERTa multilingüe (XLM-RoBERTa-large) con 558.862.357 parámetros, reutilizado como clasificador de tokens con esquema BIO sobre diez categorías de entidad clínica. El modelo base aporta representaciones multilingües, pero el ajuste fino se ha realizado exclusivamente sobre datos en español del dominio oncológico prostático.
 
@@ -66,17 +66,17 @@ No se han publicado comparaciones con otros modelos NER clínicos en la informac
 - VRAM estimada en fp32: aproximadamente 2,2-2,5 GB.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para inferencia en fp16 (RTX 3050, RTX 4060, T4). Para entrenamiento o ajuste fino adicional se recomienda A100, H100 o RTX 4090 por el mayor throughput en bf16.
 - Cabe en GPU de consumo: sí, en la práctica totalidad de tarjetas actuales con 4 GB o más.
-- Opciones de despliegue: `transformers` con pipeline `token-classification`, TorchServe, Triton Inference Server, ONNX Runtime, o servicios tipo HuggingFace Inference Endpoints. No se documenta compatibilidad con vLLM (orientado a modelos generativos) ni con llama.cpp/Ollama (requieren formato GGUF, no disponible).
+- Opciones de despliegue: `transformers` con pipeline `token-classification`, TorchServe, Triton Inference Server, ONNX Runtime, o servicios tipo Hugging Face Inference Endpoints. No se documenta compatibilidad con vLLM (orientado a modelos generativos) ni con llama.cpp/Ollama (requieren formato GGUF, no disponible).
 - Latencia y throughput: no disponibles en la información proporcionada; para un encoder de 558 M parámetros se espera del orden de milisegundos por frase corta en GPU moderna, pero no hay medición publicada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cadrojasl/xlm-roberta-large-ner-prostata-2026 | 558 M | no disponible (backbone hasta 512) | NER clínico español (próstata) | MIT | HuggingFace, 36 descargas |
-| PlanTL-GOB-ES/bsc-biomed-roberta-base-ner (referencia genérica) | no disponible | no disponible | NER biomédico español | no disponible | HuggingFace |
-| FacebookAI/xlm-roberta-large (base) | 558 M | 512 | Modelo base multilingüe | MIT | HuggingFace |
-| StanfordAIMI/stanford-deidentifier-base (referencia en inglés) | no disponible | no disponible | NER clínico en inglés | no disponible | HuggingFace |
+| cadrojasl/xlm-roberta-large-ner-prostata-2026 | 558 M | no disponible (backbone hasta 512) | NER clínico español (próstata) | MIT | Hugging Face, 36 descargas |
+| PlanTL-GOB-ES/bsc-biomed-roberta-base-ner (referencia genérica) | no disponible | no disponible | NER biomédico español | no disponible | Hugging Face |
+| FacebookAI/xlm-roberta-large (base) | 558 M | 512 | Modelo base multilingüe | MIT | Hugging Face |
+| StanfordAIMI/stanford-deidentifier-base (referencia en inglés) | no disponible | no disponible | NER clínico en inglés | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparables entre estos modelos en la información proporcionada. La comparativa se limita a parámetros, licencia y disponibilidad.
 
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento comparables entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cadrojasl/xlm-roberta-large-ner-prostata-2026
+- Modelo en Hugging Face: https://huggingface.co/cadrojasl/xlm-roberta-large-ner-prostata-2026
 - Modelo base: https://huggingface.co/FacebookAI/xlm-roberta-large
 - Documentación de pipelines de Transformers (token-classification): https://huggingface.co/docs/transformers/main_classes/pipelines#transformers.TokenClassificationPipeline
 - Librería seqeval: https://github.com/chakki-works/seqeval

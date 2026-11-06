@@ -4,7 +4,7 @@
 
 AgentFrame-v3 es un framework de software para la gestión de contexto en agentes de IA, no un modelo de lenguaje en sí. Desarrollado por el usuario ljsysfurry (repositorio GitHub ljsysfurryACE/AgentFrame-v3), se presenta como un sistema que combina un proveedor LLM externo (por defecto DeepSeek) con un motor de contexto de cuatro capas (ContextEngine) para mantener memoria a largo plazo, comprimir claves de atención y permitir bucles de ejecución de herramientas. La versión indicada en el README es la 4.3.0, con licencia GPL-3.0 y atribución a "Cloud LTE Studio".
 
-El proyecto aborda un problema concreto: la gestión eficiente del contexto en agentes que operan durante largas sesiones, donde el coste de mantener el historial completo crece de forma lineal. Su propuesta combina compresión semántica (selección de qué tokens conservar mediante juicio del LLM) con compresión física (cuantización INT4 de la caché KV mediante una variante de MLA absorbida), alcanzando según sus pruebas una reducción total de aproximadamente 115 veces en el espacio ocupado por el contexto. En HuggingFace el repositorio tiene cero descargas y cero likes, y no se especifica pipeline, licencia ni idiomas en los metadatos; toda la información técnica proviene del README.
+El proyecto aborda un problema concreto: la gestión eficiente del contexto en agentes que operan durante largas sesiones, donde el coste de mantener el historial completo crece de forma lineal. Su propuesta combina compresión semántica (selección de qué tokens conservar mediante juicio del LLM) con compresión física (cuantización INT4 de la caché KV mediante una variante de MLA absorbida), alcanzando según sus pruebas una reducción total de aproximadamente 115 veces en el espacio ocupado por el contexto. En Hugging Face el repositorio tiene cero descargas y cero likes, y no se especifica pipeline, licencia ni idiomas en los metadatos; toda la información técnica proviene del README.
 
 ## Especificaciones tecnicas
 
@@ -16,7 +16,7 @@ El proyecto aborda un problema concreto: la gestión eficiente del contexto en a
 | Longitud de contexto | Gestionada por el framework; depende del proveedor LLM (por defecto DeepSeek) |
 | Tipos de cuantizacion | INT4 simetrico con escala por canal para la caché KV (compresion fisica); Top-K con precision 16-bit para bloques criticos (en pruebas, no integrado) |
 | Idiomas soportados | No especificado (el README esta en chino; el framework no impone restricciones de idioma) |
-| Licencia | GPL-3.0 (segun README); en HuggingFace figura como "no disponible" |
+| Licencia | GPL-3.0 (segun README); en Hugging Face figura como "no disponible" |
 | Formato de pesos | No aplica (codigo Python; no hay pesos de modelo) |
 
 ## Arquitectura y entrenamiento
@@ -82,12 +82,12 @@ No disponible. AgentFrame no es un modelo de lenguaje, sino un framework de gest
 - Varias funcionalidades descritas estan marcadas como "disenadas pero no integradas" (por ejemplo, la organizacion Sector-Block-Module o la proteccion Top-K con 16-bit), por lo que el sistema real puede tener menos capacidades de las anunciadas.
 - El framework depende de la calidad del LLM subyacente para la compresion semantica; si el LLM elimina tokens importantes, la informacion se pierde de forma irreversible.
 - No se especifican los idiomas soportados ni se documentan sesgos; el README esta escrito en chino y la mayoria de los ejemplos de uso estan en ese idioma.
-- El repositorio en HuggingFace tiene cero descargas y cero likes, lo que sugiere una adopcion muy limitada y poca validacion por parte de la comunidad.
+- El repositorio en Hugging Face tiene cero descargas y cero likes, lo que sugiere una adopcion muy limitada y poca validacion por parte de la comunidad.
 - No hay informacion sobre seguridad, alucinaciones o mitigacion de sesgos; el unico mecanismo de seguridad mencionado es una "interceptacion" en el bucle de herramientas, sin detalles tecnicos.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ljsysfurry/AgentFrame-v3
-- Model card (README) en HuggingFace: https://huggingface.co/ljsysfurry/AgentFrame-v3/blob/main/README.md
+- Repositorio en Hugging Face: https://huggingface.co/ljsysfurry/AgentFrame-v3
+- Model card (README) en Hugging Face: https://huggingface.co/ljsysfurry/AgentFrame-v3/blob/main/README.md
 - Repositorio en GitHub: https://github.com/ljsysfurryACE/AgentFrame-v3
 - README del subproyecto agentframe en GitHub: https://github.com/ljsysfurryACE/AgentFrame-v3/blob/master/agentframe/README.md

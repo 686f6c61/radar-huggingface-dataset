@@ -23,7 +23,7 @@ La contrapartida es que el motor que consume estos pesos aun no esta publicado (
 
 ## Arquitectura y entrenamiento
 
-La model card no documenta el entrenamiento: este repositorio es una conversion de pesos, no un entrenamiento ni un ajuste fino. Lo que si se deduce de los nombres y formas de los tensores es una arquitectura transformer con mezcla de expertos: expertos enrutados apilados por capa con forma `layers.N.ffn.experts.w{1,2,3}` [384, out, in], un experto compartido, y `wo_a` apilado por grupo con forma [8, 1024, 4096]. Aparecen ademas componentes que no son habituales en un transformer denso: tensores de hyper-connection, un "indexer" con su propia proyeccion `wq_b` y proyecciones key/weight, tablas Engram (memoria n-gram con estado de hash) y una torre de imagen en 8 bits, lo que sugiere capacidad multimodal de entrada visual. La etiqueta de HuggingFace incluye `base_model:finetune`, pero la model card describe exclusivamente una conversion, no un fine-tune; la discrepancia no esta resuelta en la informacion disponible.
+La model card no documenta el entrenamiento: este repositorio es una conversion de pesos, no un entrenamiento ni un ajuste fino. Lo que si se deduce de los nombres y formas de los tensores es una arquitectura transformer con mezcla de expertos: expertos enrutados apilados por capa con forma `layers.N.ffn.experts.w{1,2,3}` [384, out, in], un experto compartido, y `wo_a` apilado por grupo con forma [8, 1024, 4096]. Aparecen ademas componentes que no son habituales en un transformer denso: tensores de hyper-connection, un "indexer" con su propia proyeccion `wq_b` y proyecciones key/weight, tablas Engram (memoria n-gram con estado de hash) y una torre de imagen en 8 bits, lo que sugiere capacidad multimodal de entrada visual. La etiqueta de Hugging Face incluye `base_model:finetune`, pero la model card describe exclusivamente una conversion, no un fine-tune; la discrepancia no esta resuelta en la informacion disponible.
 
 El esquema de cuantizacion es el elemento tecnico central. Los expertos enrutados, que concentran el grueso de los parametros, bajan a 2 bits en las capas 0-9 y 30-39 y a 3 bits en el bloque central 10-29; las proyecciones densas de atencion y del experto compartido se mantienen a 4 bits; cabeza y torre de imagen a 8 bits; y normas, routers, compressors e indexers quedan sin cuantizar. Las dos tablas Engram conservan los bytes FP8 originales, reempaquetados una fila por span (`rows` u8 [N, 264]: 256 bytes e4m3 mas 8 escalas e8m0) y divididas en tres partes por tabla de ~34 GB cada una. El checkpoint incluye tambien tres etapas draft DSpark, es decir, un mecanismo de decodificacion especulativa integrado, y el benchmark de velocidad se ejecuta con los drafts activados.
 
@@ -89,7 +89,7 @@ No hay datos publicados de modelos comparables en la informacion disponible. La 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Formato / disponibilidad |
 |---|---|---|---|---|---|
 | Este checkpoint (TensorFold e2e3-p4-h8) | 566,6 B (total) | no disponible | MLX affine mixta 2/3/4/8 bits, group 64 | MIT | safetensors MLX; motor no publicado, solo runners de referencia; 0 descargas |
-| DeepSeek-V4.1-Flash-1017 (release, pesos fp4) | no disponible (es la base de este checkpoint) | no disponible | FP4 | MIT | safetensors; publicado en HuggingFace |
+| DeepSeek-V4.1-Flash-1017 (release, pesos fp4) | no disponible (es la base de este checkpoint) | no disponible | FP4 | MIT | safetensors; publicado en Hugging Face |
 | Cadenas de referencia FP32 / FP64 de DeepSeek | no disponible | no disponible | Sin cuantizar | MIT | Ejecutables con `inference/model.py`; usadas solo como ground truth |
 | Otros MoE abiertos de escala similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -109,11 +109,11 @@ No hay datos publicados de modelos comparables en la informacion disponible. La 
 - Estado del repositorio: 0 descargas, 0 likes, creado el 2026-10-18 y actualizado el mismo dia. Sin validacion de la comunidad ni historial de mantenimiento.
 - Licencia MIT heredada de DeepSeek, permisiva y apta para uso comercial segun el texto, pero conviene verificar el fichero `LICENSE` del release original antes de explotacion comercial, ya que la model card solo lo referencia.
 - Dependencia de hardware exotico: requiere un Apple Silicon de ~256 GB de memoria unificada, lo que descarta practicamente cualquier infraestructura cloud estandar basada en NVIDIA.
-- Discrepancia de metadatos: la etiqueta de HuggingFace indica `finetune` sobre el modelo base, mientras que la model card describe solo una conversion de pesos. No hay informacion que aclare si hubo algun ajuste adicional.
+- Discrepancia de metadatos: la etiqueta de Hugging Face indica `finetune` sobre el modelo base, mientras que la model card describe solo una conversion de pesos. No hay informacion que aclare si hubo algun ajuste adicional.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BobClawblaw/DeepSeek-V4.1-Flash-1017-TensorFold-e2e3-p4-h8
+- Modelo en Hugging Face: https://huggingface.co/BobClawblaw/DeepSeek-V4.1-Flash-1017-TensorFold-e2e3-p4-h8
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Gist con los runners de referencia: https://gist.github.com/BobClawblaw/5e120cb3f7a7b3c9d7ca9b40ebea29f0
 - Herramienta de benchmark del autor: https://github.com/BobClawblaw/recipe-harness

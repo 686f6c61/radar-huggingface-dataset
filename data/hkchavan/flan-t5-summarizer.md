@@ -2,7 +2,7 @@
 
 ## Resumen
 
-hkchavan/flan-t5-summarizer es un ajuste fino de google/flan-t5-base, un modelo encoder-decoder de la familia T5 especializado en generacion abstractiva de resumenes. Lo publica el usuario hkchavan en HuggingFace y se distribuye con licencia Apache 2.0. El modelo tiene 247.577.856 parametros (aproximadamente 247,6 millones), un tamano tipico de la variante "base" de T5, y ocupa 1,0 GB en el repositorio, lo que corresponde a pesos almacenados en safetensors en precision fp32.
+hkchavan/flan-t5-summarizer es un ajuste fino de google/flan-t5-base, un modelo encoder-decoder de la familia T5 especializado en generacion abstractiva de resumenes. Lo publica el usuario hkchavan en Hugging Face y se distribuye con licencia Apache 2.0. El modelo tiene 247.577.856 parametros (aproximadamente 247,6 millones), un tamano tipico de la variante "base" de T5, y ocupa 1,0 GB en el repositorio, lo que corresponde a pesos almacenados en safetensors en precision fp32.
 
 El problema que aborda es el resumen de texto a texto: recibe un documento y devuelve una version condensada. El autor declara en la model card un resultado de ROUGE-1 de 0,3798, ROUGE-2 de 0,1562 y ROUGE-L de 0,2639 sobre el conjunto de evaluacion, con una perdida de validacion de 1,7296. Se trata de una fine-tune ligera (2 epochs, 64 pasos de entrenamiento) sobre un dataset que el autor no identifica.
 
@@ -38,7 +38,7 @@ Los hiperparametros de entrenamiento declarados son: learning rate 2e-05, train_
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no declaradas; el modelo base esta orientado mayoritariamente a ingles segun su documentacion publica.
 - Capacidades especiales (modo thinking, vision, audio): no disponibles.
-- Compatibilidad de despliegue declarada mediante los tags `text-generation-inference` y `endpoints_compatible`, es decir, se puede servir con Text Generation Inference y en HuggingFace Inference Endpoints.
+- Compatibilidad de despliegue declarada mediante los tags `text-generation-inference` y `endpoints_compatible`, es decir, se puede servir con Text Generation Inference y en Hugging Face Inference Endpoints.
 
 ## Casos de uso
 
@@ -78,7 +78,7 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de ninguna otra bate
 - VRAM en int8: alrededor de 0,25 GB de pesos; en int4, en torno a 0,13 GB, ambos con overhead adicional del runtime.
 - Cabe en cualquier GPU de consumo: RTX 3060, RTX 4060, RTX 4090, e incluso en GPUs de portatil con 6-8 GB. Tambien es viable en CPU para cargas por lotes no interactivas.
 - GPU de datacenter (A100, H100, L40S) no son necesarias salvo para servir muchas peticiones concurrentes en paralelo.
-- Opciones de despliegue: transformers (pipeline estandar), Text Generation Inference (el tag `text-generation-inference` lo declara compatible), HuggingFace Inference Endpoints (tag `endpoints_compatible`), ONNX Runtime con exportacion via Optimum y TorchServe. No se publican versiones GGUF ni artefactos para llama.cpp u Ollama por parte del autor; al ser una arquitectura encoder-decoder, el soporte en esos runtimes es limitado y requeriria conversion propia.
+- Opciones de despliegue: transformers (pipeline estandar), Text Generation Inference (el tag `text-generation-inference` lo declara compatible), Hugging Face Inference Endpoints (tag `endpoints_compatible`), ONNX Runtime con exportacion via Optimum y TorchServe. No se publican versiones GGUF ni artefactos para llama.cpp u Ollama por parte del autor; al ser una arquitectura encoder-decoder, el soporte en esos runtimes es limitado y requeriria conversion propia.
 - Latencia y throughput estimados: no disponibles. No hay mediciones publicadas de tokens por segundo ni de tiempo por resumen.
 
 ## Comparativa con modelos similares
@@ -87,10 +87,10 @@ Los datos del modelo comparado principal proceden de esta misma busqueda; el res
 
 | Modelo | Parametros | Contexto | Ajuste | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hkchavan/flan-t5-summarizer | 247,6 M | no disponible (base: 512 tokens) | Fine-tune de resumen sobre dataset desconocido | apache-2.0 | HuggingFace, 0 descargas |
-| google/flan-t5-base (modelo base) | 247,6 M (misma arquitectura T5-base) | 512 tokens segun documentacion publica del modelo base | Instruction tuning FLAN, sin ajuste especifico de resumen | apache-2.0 | HuggingFace, ampliamente utilizado |
-| Variantes mas pequenas o grandes de la familia T5 (t5-small, t5-large) | no disponible en la informacion proporcionada | no disponible | no disponible | apache-2.0 segun la familia | HuggingFace |
-| Modelos dedicados de resumen tipo BART o PEGASUS | no disponible en la informacion proporcionada | no disponible | Fine-tune sobre corpus de resumen publicos | varian (MIT, Apache 2.0) | HuggingFace |
+| hkchavan/flan-t5-summarizer | 247,6 M | no disponible (base: 512 tokens) | Fine-tune de resumen sobre dataset desconocido | apache-2.0 | Hugging Face, 0 descargas |
+| google/flan-t5-base (modelo base) | 247,6 M (misma arquitectura T5-base) | 512 tokens segun documentacion publica del modelo base | Instruction tuning FLAN, sin ajuste especifico de resumen | apache-2.0 | Hugging Face, ampliamente utilizado |
+| Variantes mas pequenas o grandes de la familia T5 (t5-small, t5-large) | no disponible en la informacion proporcionada | no disponible | no disponible | apache-2.0 segun la familia | Hugging Face |
+| Modelos dedicados de resumen tipo BART o PEGASUS | no disponible en la informacion proporcionada | no disponible | Fine-tune sobre corpus de resumen publicos | varian (MIT, Apache 2.0) | Hugging Face |
 
 La unica comparacion defendible con los datos disponibles es contra google/flan-t5-base: misma arquitectura, mismo numero de parametros y misma licencia, con la diferencia de que esta fine-tune incorpora un ajuste de resumen cuyo dataset no se documenta. No hay evidencia publicada en la informacion disponible que permita afirmar que supere al modelo base ni a alternativas dedicadas de resumen.
 
@@ -109,6 +109,6 @@ La unica comparacion defendible con los datos disponibles es contra google/flan-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hkchavan/flan-t5-summarizer
+- Modelo en Hugging Face: https://huggingface.co/hkchavan/flan-t5-summarizer
 - Modelo base: https://huggingface.co/google/flan-t5-base
 - No se han encontrado en la informacion proporcionada papers, blogs, repositorios de codigo ni demos asociados a esta fine-tune.

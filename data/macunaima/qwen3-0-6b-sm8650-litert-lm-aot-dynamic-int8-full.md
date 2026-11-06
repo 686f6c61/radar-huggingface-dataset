@@ -101,7 +101,7 @@ No se dispone de datos de rendimiento ni de otros modelos comparables de la mism
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/macunaima/Qwen3-0.6B-SM8650-LiteRT-LM-AOT-Dynamic-INT8-Full
+- Repositorio Hugging Face: https://huggingface.co/macunaima/Qwen3-0.6B-SM8650-LiteRT-LM-AOT-Dynamic-INT8-Full
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Variante en coma flotante: https://huggingface.co/macunaima/Qwen3-0.6B-SM8650-LiteRT-LM-Float
 - Variante INT8 dinamica previa: https://huggingface.co/macunaima/Qwen3-0.6B-SM8650-LiteRT-LM-Dynamic-INT8

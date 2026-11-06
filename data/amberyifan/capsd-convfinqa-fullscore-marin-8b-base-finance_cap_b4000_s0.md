@@ -10,7 +10,7 @@ La relevancia de este modelo radica en su especialización para tareas de compre
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (tipo Llama, según tags de HuggingFace; basado en `marin-community/marin-8b-base`) |
+| Arquitectura | Transformer (tipo Llama, según tags de Hugging Face; basado en `marin-community/marin-8b-base`) |
 | Parametros totales | 8.030.261.248 (8,03 B) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
@@ -21,7 +21,7 @@ La relevancia de este modelo radica en su especialización para tareas de compre
 
 ## Arquitectura y entrenamiento
 
-El modelo es un ajuste fino completo (full fine-tune) del modelo base `marin-community/marin-8b-base`, que a su vez se basa en una arquitectura tipo Llama (según las etiquetas de HuggingFace). No se dispone de información sobre la arquitectura interna del modelo base (número de capas, cabezas de atención, etc.) ni sobre el dataset de entrenamiento original.
+El modelo es un ajuste fino completo (full fine-tune) del modelo base `marin-community/marin-8b-base`, que a su vez se basa en una arquitectura tipo Llama (según las etiquetas de Hugging Face). No se dispone de información sobre la arquitectura interna del modelo base (número de capas, cabezas de atención, etc.) ni sobre el dataset de entrenamiento original.
 
 El entrenamiento se realizó con los siguientes hiperparámetros: tasa de aprendizaje 1e-5, tamaño de lote efectivo de 64 (batch de 2 con acumulación de gradientes de 8 en 4 GPUs), programador de tasa de aprendizaje coseno con warmup del 3%, y una sola época. Se usó el optimizador AdamW con betas (0.9, 0.999) y épsilon 1e-8. El framework utilizado fue Transformers 5.7.0 con PyTorch 2.13.0+cu130 y Datasets 4.0.0. No se especifican técnicas como RLHF o DPO; el proceso parece ser un fine-tune supervisado convencional.
 
@@ -82,6 +82,6 @@ La comparación real solo sería posible tras evaluar el modelo en tareas financ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AmberYifan/capsd-convfinqa-fullscore-marin-8b-base-finance_cap_b4000_s0
+- Modelo en Hugging Face: https://huggingface.co/AmberYifan/capsd-convfinqa-fullscore-marin-8b-base-finance_cap_b4000_s0
 - Modelo base: https://huggingface.co/marin-community/marin-8b-base
 - Página de referencia en slopllm.com (sin datos adicionales): https://slopllm.com/m/capsd-marin-8b-base-math-cap-b4000-s0 (nota: corresponde a una variante de matemáticas, no a este modelo exacto)

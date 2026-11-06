@@ -90,7 +90,7 @@ La comparativa con modelos medicos especializados de mayor tamano no esta dispon
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ritujaa1/qwen05-med-summarizer-gguf
+- Modelo en Hugging Face: https://huggingface.co/ritujaa1/qwen05-med-summarizer-gguf
 - Modelo hermano de 7B: https://huggingface.co/ritujaa1/llama2-med-summarizer-gguf
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp

@@ -72,7 +72,7 @@ No disponible. La información proporcionada no incluye datos de rendimiento ni 
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/ibm-granite/granite-switch-4.1-30b-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/ibm-granite/granite-switch-4.1-30b-GGUF
 - Modelo base: https://huggingface.co/ibm-granite/granite-switch-4.1-30b
 - llama.cpp (herramienta de inferencia): https://github.com/ggml-org/llama.cpp
 - No se han encontrado otros enlaces (papers, blogs, demos) en la información proporcionada.

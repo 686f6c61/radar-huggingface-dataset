@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `remyxai/efficientvim_m4.e300_in1k` es un modelo de clasificación de imágenes publicado en HuggingFace por el autor `remyxai`. Se distribuye bajo licencia Apache 2.0 y está integrado con la librería `timm`, lo que permite utilizarlo con PyTorch y `transformers`. Cuenta con un total de 19.666.737 parámetros según los pesos en formato safetensors, y el tamaño del repositorio es de 0,2 GB. El nombre del modelo sugiere un diseño eficiente de visión, y el sufijo `in1k` apunta a un posible entrenamiento en ImageNet-1k, aunque no hay documentación oficial que lo confirme. El pipeline declarado es `image-classification`, por lo que se trata de un modelo de visión, no de texto ni multimodal.
+El modelo `remyxai/efficientvim_m4.e300_in1k` es un modelo de clasificación de imágenes publicado en Hugging Face por el autor `remyxai`. Se distribuye bajo licencia Apache 2.0 y está integrado con la librería `timm`, lo que permite utilizarlo con PyTorch y `transformers`. Cuenta con un total de 19.666.737 parámetros según los pesos en formato safetensors, y el tamaño del repositorio es de 0,2 GB. El nombre del modelo sugiere un diseño eficiente de visión, y el sufijo `in1k` apunta a un posible entrenamiento en ImageNet-1k, aunque no hay documentación oficial que lo confirme. El pipeline declarado es `image-classification`, por lo que se trata de un modelo de visión, no de texto ni multimodal.
 
 ## Especificaciones tecnicas
 
@@ -67,5 +67,5 @@ No se han encontrado modelos comparables en la informacion proporcionada. No exi
 
 ## Enlaces
 
-- Modelo en HuggingFace: [remyxai/efficientvim_m4.e300_in1k](https://huggingface.co/remyxai/efficientvim_m4.e300_in1k)
+- Modelo en Hugging Face: [remyxai/efficientvim_m4.e300_in1k](https://huggingface.co/remyxai/efficientvim_m4.e300_in1k)
 - No se han encontrado en la busqueda web enlaces a papers, blogs o repositorios adicionales relacionados con el modelo.

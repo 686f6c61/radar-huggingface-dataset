@@ -20,7 +20,7 @@ Su relevancia es acotada pero concreta: es la primera release del proyecto en la
 | Idiomas soportados | no disponible |
 | Licencia | Qwen Community License 1.0 (declarada como `license: other` con `license_name: qwen-community-license-1.0`) |
 | Formato de pesos | Formato propietario `.finch`: `manifest.json`, `model_weights.bin`, `packed_experts/`, `ple_shards/`, `tokenizer/`, `verified-install.json`. No es safetensors ni GGUF |
-| Tamano del repositorio | 68,4 GB reportados por HuggingFace; 97 GiB de instalacion en disco segun la model card |
+| Tamano del repositorio | 68,4 GB reportados por Hugging Face; 97 GiB de instalacion en disco segun la model card |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-09-15 |
 | Ultima actualizacion | 2026-09-15 |
@@ -79,7 +79,7 @@ Rendimiento medido en hardware documentado:
 ## Requisitos de hardware
 
 - VRAM de inferencia: no aplica en el sentido habitual; el formato esta disenado para streaming desde SSD, de modo que los pesos no se cargan completos en memoria. La memoria residente queda dominada por la cache KV y el scratch, no por los pesos.
-- Almacenamiento: se requieren 97 GiB de instalacion en disco segun la model card (el repositorio en HuggingFace reporta 68,4 GB, discrepancia no explicada en la informacion disponible). El caso documentado usa un SSD externo.
+- Almacenamiento: se requieren 97 GiB de instalacion en disco segun la model card (el repositorio en Hugging Face reporta 68,4 GB, discrepancia no explicada en la informacion disponible). El caso documentado usa un SSD externo.
 - Equipo minimo documentado: Mac mini M4 con 16 GB de RAM y SSD externo, con ~8,5 tok/s de prefill y ~3 tok/s de generacion.
 - GPU recomendadas: no disponible. No se documenta soporte para A100, H100, RTX 4090 ni otros aceleradores NVIDIA o AMD; el formato `.finch` y FinchMoE estan orientados a Apple Silicon.
 - Compatibilidad con GPU de consumo: no disponible para GPU; el objetivo documentado son SoCs Apple (M4) y un objetivo iPhone.
@@ -112,7 +112,7 @@ No se dispone de informacion sobre otros modelos comparables de la misma categor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/haihengh/Qwen3.8-Flash-Next-125B-finch-4bit-ple4bit
+- Modelo en Hugging Face: https://huggingface.co/haihengh/Qwen3.8-Flash-Next-125B-finch-4bit-ple4bit
 - Release anterior (tabla PLE en BF16): https://huggingface.co/haihengh/Qwen3.8-Flash-Next-125B-finch-4bit
 - Repositorio del motor FinchMoE: https://github.com/haihengh/finchMoE
 - Licencia (fichero LICENSE en el repositorio): https://huggingface.co/haihengh/Qwen3.8-Flash-Next-125B-finch-4bit-ple4bit/blob/main/LICENSE

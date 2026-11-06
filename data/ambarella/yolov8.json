@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "Ambarella/YOLOV8",
+  "slug": "ambarella-yolov8",
+  "author": "Ambarella",
+  "url": "https://huggingface.co/Ambarella/YOLOV8",
+  "created_at": "2026-09-09T06:38:03.000Z",
+  "updated_at": "2026-11-06T04:44:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 73697892,
+  "storage_human": "74 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

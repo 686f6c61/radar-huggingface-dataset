@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`EiadEssam/smollm3-dpo-lora` es un repositorio alojado en HuggingFace que, por su nombre, parece contener un adaptador LoRA resultante de un proceso de optimizacion por preferencias directas (DPO, Direct Preference Optimization) aplicado sobre un modelo de la familia SmolLM3. El autor identificado es el usuario EiadEssam y el repositorio se publicó el 1 de noviembre de 2026. El tamaño del repositorio es de 0,1 GB, lo que es coherente con un conjunto de pesos de adaptador y no con un modelo completo.
+`EiadEssam/smollm3-dpo-lora` es un repositorio alojado en Hugging Face que, por su nombre, parece contener un adaptador LoRA resultante de un proceso de optimizacion por preferencias directas (DPO, Direct Preference Optimization) aplicado sobre un modelo de la familia SmolLM3. El autor identificado es el usuario EiadEssam y el repositorio se publicó el 1 de noviembre de 2026. El tamaño del repositorio es de 0,1 GB, lo que es coherente con un conjunto de pesos de adaptador y no con un modelo completo.
 
-La relevancia de este artefacto es limitada y eminentemente experimental: no dispone de model card sustantiva (la existente es la plantilla autogenerada de HuggingFace sin rellenar), no declara licencia, no especifica idiomas, no incluye pipeline definido y no cuenta con descargas ni interacciones en el momento de la consulta. Se trata, por tanto, de una publicación de tipo personal o de investigación temprana, sin garantías de calidad, reproducibilidad ni soporte.
+La relevancia de este artefacto es limitada y eminentemente experimental: no dispone de model card sustantiva (la existente es la plantilla autogenerada de Hugging Face sin rellenar), no declara licencia, no especifica idiomas, no incluye pipeline definido y no cuenta con descargas ni interacciones en el momento de la consulta. Se trata, por tanto, de una publicación de tipo personal o de investigación temprana, sin garantías de calidad, reproducibilidad ni soporte.
 
 Dado que no se dispone de documentación tecnica del autor, los datos de arquitectura, entrenamiento y evaluacion que se detallan a continuacion se marcan como no disponibles, salvo aquellos que pueden inferirse de forma razonable a partir del nombre del repositorio y de las etiquetas declaradas (transformers, safetensors).
 
@@ -29,7 +29,7 @@ Dado que no se dispone de documentación tecnica del autor, los datos de arquite
 
 No se ha publicado informacion sobre la arquitectura en la model card ni en los metadatos del repositorio. El nombre del repositorio sugiere que se trata de un adaptador LoRA (Low-Rank Adaptation) entrenado mediante DPO sobre un modelo base de la familia SmolLM3, pero el autor no confirma ni el modelo base exacto, ni el rango del adaptador, ni los hiperparametros de entrenamiento, ni el conjunto de datos de preferencias utilizado.
 
-Tampoco se documentan el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases previas de SFT, ni tecnicas adicionales como decodificacion especulativa o atencion lineal. La etiqueta `arxiv:1910.09700` corresponde a la referencia generica de la calculadora de impacto medioambiental citada en la plantilla de HuggingFace, no a un paper del modelo. En consecuencia, cualquier afirmacion sobre el proceso de entrenamiento seria especulativa y no se incluye.
+Tampoco se documentan el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases previas de SFT, ni tecnicas adicionales como decodificacion especulativa o atencion lineal. La etiqueta `arxiv:1910.09700` corresponde a la referencia generica de la calculadora de impacto medioambiental citada en la plantilla de Hugging Face, no a un paper del modelo. En consecuencia, cualquier afirmacion sobre el proceso de entrenamiento seria especulativa y no se incluye.
 
 ## Capacidades
 
@@ -49,7 +49,7 @@ Dada la ausencia de documentacion, evaluacion y licencia, los casos de uso que s
 - Evaluacion de adaptadores de bajo rango: util para analizar como un LoRA de pequeno tamano (repo de 0,1 GB) modifica el comportamiento del modelo base sin reentrenar todos los pesos.
 - Pruebas de integracion con transformers: permite validar flujos de carga de adaptadores PEFT en pipelines propios antes de invertir en modelos mayores.
 - Analisis de sesgos y alineacion: podria emplearse para examinar si el DPO introduce o mitiga sesgos concretos en las respuestas, dentro de un estudio comparativo.
-- Docencia y formacion: como ejemplo practico de publicacion de adaptadores en HuggingFace y de las carencias habituales en model cards autogeneradas.
+- Docencia y formacion: como ejemplo practico de publicacion de adaptadores en Hugging Face y de las carencias habituales en model cards autogeneradas.
 
 En ningun caso se recomienda su uso en produccion, atencion al cliente, generacion de codigo ni aplicaciones comerciales sin una evaluacion previa exhaustiva y la confirmacion de la licencia.
 
@@ -73,7 +73,7 @@ No es posible establecer una comparativa rigurosa porque se desconocen los param
 |---|---|---|---|---|---|
 | EiadEssam/smollm3-dpo-lora | no disponible | no disponible | no disponible | safetensors (adaptador) | plantilla sin rellenar |
 | SmolLM3 (familia base, referencia) | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha | safetensors | model card oficial |
-| Adaptadores DPO publicos en HuggingFace | variable | variable | variable | safetensors | variable |
+| Adaptadores DPO publicos en Hugging Face | variable | variable | variable | safetensors | variable |
 
 No se dispone de datos verificados de benchmarks ni de especificaciones del modelo base en la informacion proporcionada, por lo que la comparativa cuantitativa se considera no disponible.
 
@@ -90,6 +90,6 @@ No se dispone de datos verificados de benchmarks ni de especificaciones del mode
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/EiadEssam/smollm3-dpo-lora
+- Repositorio en Hugging Face: https://huggingface.co/EiadEssam/smollm3-dpo-lora
 - Referencia citada en la plantilla (calculadora de impacto medioambiental): https://mlco2.github.io/impact#compute
 - Paper de Lacoste et al. (2019) citado en la plantilla: https://arxiv.org/abs/1910.09700

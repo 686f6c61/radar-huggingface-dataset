@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento comparativo. La ventaja de Nyvex-Code podr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NathMen12/Nyvex-Code-1.0-7b
+- Modelo en Hugging Face: https://huggingface.co/NathMen12/Nyvex-Code-1.0-7b
 - Perfil del autor: https://huggingface.co/NathMen12
 
 No hay papers, repositorios ni demos adicionales disponibles en la información proporcionada.

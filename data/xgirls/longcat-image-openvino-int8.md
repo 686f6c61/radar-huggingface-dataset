@@ -24,7 +24,7 @@ Su relevancia es acotada pero concreta: permite desplegar generacion texto-a-ima
 | Tamano del transformer comprimido | 6,28 GB (frente a 12,54 GB de la exportacion FP32 a OpenVINO) |
 | Pipeline | text-to-image (Diffusers) |
 | Modelo base | meituan-longcat/LongCat-Image |
-| Fecha de publicacion | 2026-10-16 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 2026-10-16 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -80,8 +80,8 @@ La informacion proporcionada solo permite comparar esta build con su modelo base
 
 | Modelo | Parametros | Contexto / resolucion | Precision | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| xgirls/longcat-image-openvino-int8 | 6,27B (transformer) | Multiplos de 16; validado a 1024x1024 | Transformer INT8, resto BF16 | Apache-2.0 | HuggingFace, 0 descargas |
-| meituan-longcat/LongCat-Image | 6,27B (transformer) | No disponible en esta informacion | BF16 nativo | Apache-2.0 | HuggingFace (modelo base) |
+| xgirls/longcat-image-openvino-int8 | 6,27B (transformer) | Multiplos de 16; validado a 1024x1024 | Transformer INT8, resto BF16 | Apache-2.0 | Hugging Face, 0 descargas |
+| meituan-longcat/LongCat-Image | 6,27B (transformer) | No disponible en esta informacion | BF16 nativo | Apache-2.0 | Hugging Face (modelo base) |
 | Otras alternativas texto-a-imagen de tamano comparable (por ejemplo FLUX.1-dev, Stable Diffusion 3.5) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos verificables para comparar rendimiento, calidad o licencia frente a modelos de la misma categoria distintos del modelo base.
@@ -99,11 +99,11 @@ No se dispone de datos verificables para comparar rendimiento, calidad o licenci
 - Ausencia de adopcion: 0 descargas y 0 likes. No hay senales de uso en produccion ni mantenimiento continuado por parte del autor.
 - Dependencias fijadas (Python 3.11, NNCF 3.4.0) que pueden complicar la integracion en entornos con versiones distintas.
 - Solo se distribuyen los componentes del checkpoint de texto-a-imagen necesarios para el runner, no el modelo completo.
-- La fecha de publicacion registrada en HuggingFace es 2026-10-16 segun los metadatos; conviene verificarla directamente en el repositorio.
+- La fecha de publicacion registrada en Hugging Face es 2026-10-16 segun los metadatos; conviene verificarla directamente en el repositorio.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/xgirls/longcat-image-openvino-int8
+- Repositorio Hugging Face: https://huggingface.co/xgirls/longcat-image-openvino-int8
 - Modelo base: https://huggingface.co/meituan-longcat/LongCat-Image
 - Diffusers (libreria del pipeline): https://github.com/huggingface/diffusers
 - OpenVINO: https://github.com/openvinotoolkit/openvino

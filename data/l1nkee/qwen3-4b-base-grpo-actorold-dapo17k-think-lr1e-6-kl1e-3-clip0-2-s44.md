@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (L1nkee/qwen3-4b-base-grpo...) | ~4.000 M | no disponible | GRPO sobre DAPO-Math-17k | Apache 2.0 | HuggingFace, 4 descargas |
-| Qwen/Qwen3-4B-Base | ~4.000 M | no disponible en la informacion | Preentrenamiento base | Apache 2.0 | HuggingFace, ampliamente usado |
-| Qwen/Qwen3-4B (post-entrenado) | ~4.000 M | no disponible en la informacion | SFT + RLHF/DPO | Apache 2.0 | HuggingFace, ampliamente usado |
+| Este modelo (L1nkee/qwen3-4b-base-grpo...) | ~4.000 M | no disponible | GRPO sobre DAPO-Math-17k | Apache 2.0 | Hugging Face, 4 descargas |
+| Qwen/Qwen3-4B-Base | ~4.000 M | no disponible en la informacion | Preentrenamiento base | Apache 2.0 | Hugging Face, ampliamente usado |
+| Qwen/Qwen3-4B (post-entrenado) | ~4.000 M | no disponible en la informacion | SFT + RLHF/DPO | Apache 2.0 | Hugging Face, ampliamente usado |
 
 La comparativa se limita al linaje Qwen3-4B porque la informacion proporcionada no incluye datos de rendimiento de alternativas. No se dispone de numeros de benchmarks para establecer comparaciones cuantitativas con otros modelos de 4.000 millones de parametros orientados a matematicas.
 
@@ -87,7 +87,7 @@ La comparativa se limita al linaje Qwen3-4B porque la informacion proporcionada 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/L1nkee/qwen3-4b-base-grpo-actorold-dapo17k-think-lr1e-6-kl1e-3-clip0.2-s44
+- Repositorio Hugging Face: https://huggingface.co/L1nkee/qwen3-4b-base-grpo-actorold-dapo17k-think-lr1e-6-kl1e-3-clip0.2-s44
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Base
 - Dataset de entrenamiento: https://huggingface.co/datasets/BytedTsinghua-SIA/DAPO-Math-17k
 - Framework de entrenamiento verl: https://github.com/volcengine/verl

@@ -72,4 +72,4 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- [HuggingFace: andreywsmirnov/tmp-contrastive55](https://huggingface.co/andreywsmirnov/tmp-contrastive55)
+- [Hugging Face: andreywsmirnov/tmp-contrastive55](https://huggingface.co/andreywsmirnov/tmp-contrastive55)

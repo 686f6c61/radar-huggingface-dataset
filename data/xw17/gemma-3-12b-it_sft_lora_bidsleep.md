@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`xw17/gemma-3-12b-it_SFT_lora_bidsleep` es un adaptador publicado en HuggingFace por el usuario `xw17` que, por su nombre y por el contenido del repositorio (0,2 GB en safetensors), corresponde a un ajuste fino mediante LoRA con aprendizaje supervisado (SFT) sobre el modelo base `google/gemma-3-12b-it`. No se trata, por tanto, de un modelo completo, sino de pesos delta que deben cargarse junto al modelo base para su uso.
+`xw17/gemma-3-12b-it_SFT_lora_bidsleep` es un adaptador publicado en Hugging Face por el usuario `xw17` que, por su nombre y por el contenido del repositorio (0,2 GB en safetensors), corresponde a un ajuste fino mediante LoRA con aprendizaje supervisado (SFT) sobre el modelo base `google/gemma-3-12b-it`. No se trata, por tanto, de un modelo completo, sino de pesos delta que deben cargarse junto al modelo base para su uso.
 
-El repositorio no incluye model card real: la tarjeta publicada es la plantilla automática de HuggingFace con todos los campos marcados como `[More Information Needed]`. Esto significa que no hay información verificable sobre el dataset de entrenamiento, los hiperparámetros, la licencia aplicada, los idiomas objetivo ni la finalidad concreta del ajuste.
+El repositorio no incluye model card real: la tarjeta publicada es la plantilla automática de Hugging Face con todos los campos marcados como `[More Information Needed]`. Esto significa que no hay información verificable sobre el dataset de entrenamiento, los hiperparámetros, la licencia aplicada, los idiomas objetivo ni la finalidad concreta del ajuste.
 
 Su relevancia es limitada fuera del ámbito del propio autor: acumula cero descargas y cero "likes" en el momento de la consulta, y no se ha publicado documentación asociada. Se describe aquí como ficha técnica de referencia, dejando explícito qué datos no están disponibles en lugar de asumirlos.
 
@@ -45,7 +45,7 @@ No hay datos publicados sobre el número de tokens de entrenamiento, la composic
 - Evaluación de regresiones tras el ajuste: antes de cualquier uso en producción, el adaptador puede emplearse como caso de prueba para medir pérdida de capacidades generales (olvido catastrófico) respecto a `gemma-3-12b-it`.
 - Base para fusiones de adaptadores: al ser un delta independiente, puede combinarse con otros LoRA del ecosistema Gemma 3 mediante técnicas de merging, siempre que las licencias implicadas lo permitan.
 - Despliegue interno de bajo coste de almacenamiento: en infraestructuras que ya sirven `gemma-3-12b-it`, cargar un adaptador de 0,2 GB por cliente es mucho más barato en disco que mantener copias completas del modelo.
-- Docencia y formación técnica: resulta útil como ejemplo mínimo de estructura de repositorio LoRA en HuggingFace, incluida la ausencia de model card, para ilustrar buenas y malas prácticas de documentación.
+- Docencia y formación técnica: resulta útil como ejemplo mínimo de estructura de repositorio LoRA en Hugging Face, incluida la ausencia de model card, para ilustrar buenas y malas prácticas de documentación.
 - Pruebas de compatibilidad de toolchain: validación de que `transformers`, `vLLM` o `PEFT` cargan correctamente adaptadores sobre Gemma 3 12B en distintas versiones de librería.
 
 ## Benchmarks y rendimiento
@@ -88,7 +88,7 @@ No se dispone de comparativa de rendimiento entre estos modelos en el contexto d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/xw17/gemma-3-12b-it_SFT_lora_bidsleep
+- Repositorio en Hugging Face: https://huggingface.co/xw17/gemma-3-12b-it_SFT_lora_bidsleep
 - Artículo referenciado en las etiquetas del repositorio (Lacoste et al., 2019, sobre estimación de impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automático citada en la plantilla de la model card: https://mlco2.github.io/impact
 - Modelo base: no se incluye enlace en la información proporcionada.

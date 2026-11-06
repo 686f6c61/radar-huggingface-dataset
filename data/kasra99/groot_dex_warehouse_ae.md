@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Kasra99/groot_dex_warehouse_ae` | 3.14B | 40 pasos | VLA fine-tune para pick-and-place en almacen | nvidia-open-model-license | HuggingFace |
-| `nvidia/GR00T-N1.7-3B` (base) | 3.14B | 40 pasos | VLA generalista para manipulacion | nvidia-open-model-license | HuggingFace |
-| `Kasra99/so100-smolvla-trained` | 0.5B | no disponible | VLA fine-tune para robot SO-100 | no disponible | HuggingFace |
+| `Kasra99/groot_dex_warehouse_ae` | 3.14B | 40 pasos | VLA fine-tune para pick-and-place en almacen | nvidia-open-model-license | Hugging Face |
+| `nvidia/GR00T-N1.7-3B` (base) | 3.14B | 40 pasos | VLA generalista para manipulacion | nvidia-open-model-license | Hugging Face |
+| `Kasra99/so100-smolvla-trained` | 0.5B | no disponible | VLA fine-tune para robot SO-100 | no disponible | Hugging Face |
 
 La comparativa se limita a modelos del mismo autor y al modelo base, ya que no se dispone de informacion sobre otros VLA de tamano similar con licencia abierta en la informacion proporcionada.
 
@@ -78,8 +78,8 @@ La comparativa se limita a modelos del mismo autor y al modelo base, ya que no s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kasra99/groot_dex_warehouse_ae
+- Modelo en Hugging Face: https://huggingface.co/Kasra99/groot_dex_warehouse_ae
 - Dataset: https://huggingface.co/datasets/Kasra99/dex-warehouse
-- Perfil del autor en HuggingFace: https://huggingface.co/Kasra99
+- Perfil del autor en Hugging Face: https://huggingface.co/Kasra99
 - Repositorio de NVIDIA Isaac-GR00T: https://github.com/NVIDIA/Isaac-GR00T
 - Perfil del autor en GitHub: https://github.com/Kasra99

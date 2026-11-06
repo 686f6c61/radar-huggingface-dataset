@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "theostos/qwen-3.5-babel-27b-sft-agent-multistep",
+  "slug": "theostos-qwen-3-5-babel-27b-sft-agent-multistep",
+  "author": "theostos",
+  "url": "https://huggingface.co/theostos/qwen-3.5-babel-27b-sft-agent-multistep",
+  "created_at": "2026-11-03T07:48:27.000Z",
+  "updated_at": "2026-11-03T07:59:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "formal-methods",
+    "theorem-proving",
+    "lean",
+    "rocq",
+    "tool-use",
+    "multi-turn",
+    "supervised-fine-tuning",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-27B",
+    "base_model:finetune:Qwen/Qwen3.5-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 388,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 53804911102,
+  "storage_human": "53.8 GB",
+  "base_model": "Qwen/Qwen3.5-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "theostos/qwen-3.5-babel-27b-sft-agent-multistep · Hugging Face",
+      "url": "https://huggingface.co/theostos/qwen-3.5-babel-27b-sft-agent-multistep",
+      "snippet": "Instructions to use theostos/qwen-3.5-babel-27b-sft-agent-multistep with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use theostos/qwen-3.5-babel-27b-sft-agent-multistep with Transformers: # Use a pipeline as a high-level helper from transformers import pipeline pipe = pipeline (\"text-generation\", model=\"theostos ..."
+    },
+    {
+      "title": "theostos/qwen-3.5-babel-27b-sft-agent-multistep at main",
+      "url": "https://huggingface.co/theostos/qwen-3.5-babel-27b-sft-agent-multistep/tree/main",
+      "snippet": "Instructions to use theostos/qwen-3.5-babel-27b-sft-agent-multistep with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use theostos/qwen-3.5-babel-27b-sft-agent-multistep with Transformers: # Use a pipeline as a high-level helper from transformers import pipeline pipe = pipeline (\"text-generation\", model=\"theostos ..."
+    }
+  ]
+}

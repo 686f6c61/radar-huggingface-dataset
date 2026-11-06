@@ -53,7 +53,7 @@ Detalle relevante de reproducibilidad: el corpus empaquetado de documentos origi
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El autor solo reporta perdidas de validacion y una comprobacion de equivalencia entre los pesos de HuggingFace y el checkpoint de Megatron.
+No se han publicado resultados de benchmarks en la informacion disponible. El autor solo reporta perdidas de validacion y una comprobacion de equivalencia entre los pesos de Hugging Face y el checkpoint de Megatron.
 
 | Metrica | Valor |
 |---|---|
@@ -72,14 +72,14 @@ No hay datos de MMLU, HumanEval, GSM8K ni de ninguna otra tarea estandar, ni com
 - GPU recomendadas: cualquier GPU consumer moderna sirve. RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4090 o L4 permiten bf16 con contexto completo. En el extremo bajo, una GTX 1660 6 GB o una RTX 3050 8 GB funcionan en bf16 con batches pequenos; en cuantizacion INT4 cabe en iGPU y en CPU.
 - Despliegue: `transformers` de forma nativa; compatible con Text Generation Inference (el repo lleva el tag `endpoints_compatible`); vLLM admite arquitectura Llama y deberia cargar los pesos sin cambios; llama.cpp y Ollama requieren conversion previa a GGUF y verificar la plantilla ChatML y el token `<|pad|>` anadido al vocabulario.
 - Latencia y throughput: no disponibles. No hay cifras publicadas de tokens por segundo ni de latencia por peticion para este checkpoint.
-- Almacenamiento: repositorio de 3,3 GB en safetensors, mas el espacio de la cache de HuggingFace durante la descarga.
+- Almacenamiento: repositorio de 3,3 GB en safetensors, mas el espacio de la cache de Hugging Face durante la descarga.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Datos publicos de benchmarks |
 |---|---|---|---|---|---|
 | `1pp-1.7b-ua-rawanneal-seed1234-sft` (este) | 1,66B | 4.096 | Apache-2.0 | Artefacto de investigacion sobre formato de datos de preentrenamiento | No disponibles |
-| SmolLM2-1.7B (HuggingFace) | ~1,71B | 8.192 | Apache-2.0 | Modelo pequeño de proposito general, mismo tokenizador base | Si, publicados por el autor |
+| SmolLM2-1.7B (Hugging Face) | ~1,71B | 8.192 | Apache-2.0 | Modelo pequeño de proposito general, mismo tokenizador base | Si, publicados por el autor |
 | Qwen2.5-1.5B (Alibaba) | ~1,54B | 32.768 | Apache-2.0 | Asistente general multilingue con tool calling | Si, publicados por el autor |
 | Llama 3.2 1B (Meta) | ~1,24B | 131.072 | Licencia comunitaria Llama 3.2 | Asistente general | Si, publicados por el autor |
 
@@ -100,7 +100,7 @@ La comparacion relevante no es de rendimiento sino de proposito: frente a SmolLM
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-1.7b-ua-rawanneal-seed1234-sft
+- Modelo en Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-1.7b-ua-rawanneal-seed1234-sft
 - Modelo base del que parte (run raw, semilla 1234): https://huggingface.co/Raghav-Singhal/1pp-1.7b-raw-seed1234-base
 - Run 1PP completo de referencia: https://huggingface.co/Raghav-Singhal/1pp-1.7b-ua-seed1234-sft
 - Run raw con SFT: https://huggingface.co/Raghav-Singhal/1pp-1.7b-raw-seed1234-sft

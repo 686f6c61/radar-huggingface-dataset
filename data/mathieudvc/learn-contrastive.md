@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto/resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MATHIEUDVC/learn-contrastive | MobileViT base (inicializacion) | 33.088 | no disponible | BSD-3-Clause | HuggingFace, checkpoint sin entrenar |
+| MATHIEUDVC/learn-contrastive | MobileViT base (inicializacion) | 33.088 | no disponible | BSD-3-Clause | Hugging Face, checkpoint sin entrenar |
 | MobileViT original (Apple) | Vision hibrida CNN-transformer | no disponible en esta informacion | no disponible | no disponible en esta informacion | Implementacion de referencia publica |
 | Marcos contrastivos tipo SimCLR/MoCo | Aprendizaje contrastivo | no disponible en esta informacion | no disponible | no disponible en esta informacion | Repositorios de investigacion |
 
@@ -83,4 +83,4 @@ La comparacion resulta poco significativa en terminos de rendimiento porque el m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MATHIEUDVC/learn-contrastive
+- Hugging Face: https://huggingface.co/MATHIEUDVC/learn-contrastive

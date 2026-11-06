@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `SaFD-00/qwen2.5-vl-3b-ac-exp08-base-stage2-full-epoch1-action-distribution` es un checkpoint experimental de ajuste fino (finetuning) del modelo Qwen2.5-VL-3B, desarrollado por el usuario SaFD-00 y publicado en HuggingFace. Se trata de un modelo multimodal de tipo image-text-to-text, capaz de procesar tanto imágenes como texto, con un total de 3.754.622.976 parámetros (aproximadamente 3,75 mil millones).
+El modelo `SaFD-00/qwen2.5-vl-3b-ac-exp08-base-stage2-full-epoch1-action-distribution` es un checkpoint experimental de ajuste fino (finetuning) del modelo Qwen2.5-VL-3B, desarrollado por el usuario SaFD-00 y publicado en Hugging Face. Se trata de un modelo multimodal de tipo image-text-to-text, capaz de procesar tanto imágenes como texto, con un total de 3.754.622.976 parámetros (aproximadamente 3,75 mil millones).
 
 El nombre del repositorio sugiere que el modelo ha sido entrenado en un segundo stage (`stage2`) de un experimento más amplio, con una época completa (`epoch1`) y un objetivo relacionado con la distribución de acciones (`action-distribution`). Este tipo de denominación es habitual en investigaciones sobre world models o agentes de aprendizaje por refuerzo, donde el modelo debe predecir la distribución de acciones posibles a partir de observaciones multimodales. Sin embargo, el autor no ha proporcionado documentación técnica, datos de entrenamiento ni métricas de evaluación, por lo que la información disponible es muy limitada.
 
-El modelo está alojado en HuggingFace con pesos en formato safetensors, compatible con la librería Transformers y etiquetado con `llama-factory`, lo que indica que el ajuste se realizó probablemente con la herramienta LLaMA-Factory. No se han registrado descargas ni valoraciones, y la licencia e idiomas soportados aparecen como no disponibles.
+El modelo está alojado en Hugging Face con pesos en formato safetensors, compatible con la librería Transformers y etiquetado con `llama-factory`, lo que indica que el ajuste se realizó probablemente con la herramienta LLaMA-Factory. No se han registrado descargas ni valoraciones, y la licencia e idiomas soportados aparecen como no disponibles.
 
 ## Especificaciones técnicas
 
@@ -63,8 +63,8 @@ No se dispone de información suficiente para realizar una comparativa fiable co
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| SaFD-00/qwen2.5-vl-3b-ac-exp08-... (este) | 3.754.622.976 | no disponible | no disponible | HuggingFace |
-| Qwen2.5-VL-3B (modelo base) | no disponible | no disponible | no disponible | HuggingFace |
+| SaFD-00/qwen2.5-vl-3b-ac-exp08-... (este) | 3.754.622.976 | no disponible | no disponible | Hugging Face |
+| Qwen2.5-VL-3B (modelo base) | no disponible | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -76,7 +76,7 @@ No se dispone de información suficiente para realizar una comparativa fiable co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SaFD-00/qwen2.5-vl-3b-ac-exp08-base-stage2-full-epoch1-action-distribution
+- Hugging Face: https://huggingface.co/SaFD-00/qwen2.5-vl-3b-ac-exp08-base-stage2-full-epoch1-action-distribution
 - Checkpoints relacionados del mismo experimento:
   - https://huggingface.co/SaFD-00/qwen2.5-vl-3b-ac-exp08-world-model-action-only-stage1-full-epoch1
   - https://huggingface.co/SaFD-00/qwen2.5-vl-3b-ac-exp08-world-model-action-only-stage1-full-epoch2

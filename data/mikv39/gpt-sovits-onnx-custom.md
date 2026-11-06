@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio mikv39/gpt-sovits-onnx-custom es una publicacion de pesos alojada en HuggingFace por el usuario mikv39, con licencia MIT y sin pipeline declarado. La model card asociada no contiene mas que la linea de licencia, por lo que no hay informacion oficial sobre arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio registra 0 descargas y 0 likes, y fue creado y actualizado el 4 de octubre de 2026 sin cambios posteriores.
+El repositorio mikv39/gpt-sovits-onnx-custom es una publicacion de pesos alojada en Hugging Face por el usuario mikv39, con licencia MIT y sin pipeline declarado. La model card asociada no contiene mas que la linea de licencia, por lo que no hay informacion oficial sobre arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio registra 0 descargas y 0 likes, y fue creado y actualizado el 4 de octubre de 2026 sin cambios posteriores.
 
 El propio identificador del repositorio sugiere que se trata de una conversion a formato ONNX de GPT-SoVITS, un sistema open source de sintesis de voz (texto a voz) con clonacion de voz zero-shot y few-shot. Conviene subrayar que esta interpretacion procede unicamente del nombre del repositorio y no esta confirmada por ninguna declaracion del autor ni por documentacion adjunta, de modo que debe tratarse como una hipotesis de trabajo y no como un dato verificado.
 
@@ -79,7 +79,7 @@ No disponible. La informacion proporcionada no permite identificar el modelo bas
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mikv39/gpt-sovits-onnx-custom
+- Hugging Face: https://huggingface.co/mikv39/gpt-sovits-onnx-custom
 - Model card: no disponible mas alla de la declaracion de licencia MIT
 - Paper: no disponible
 - Repositorio de codigo: no disponible

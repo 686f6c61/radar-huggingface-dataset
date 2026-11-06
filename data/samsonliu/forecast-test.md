@@ -87,5 +87,5 @@ No se puede establecer una comparativa directa con otros modelos de la misma cat
 
 ## Enlaces
 
-- [HuggingFace: Samsonliu/forecast-test](https://huggingface.co/Samsonliu/forecast-test)
+- [Hugging Face: Samsonliu/forecast-test](https://huggingface.co/Samsonliu/forecast-test)
 - No se encontraron otros enlaces relevantes (papers, blogs, repos, demos) en la búsqueda web. Los resultados de la búsqueda se referían a modelos de predicción meteorológica no relacionados con este repositorio.

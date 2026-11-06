@@ -78,8 +78,8 @@ No se dispone de datos de benchmarks ni especificaciones detalladas de alternati
 
 | Modelo | Parametros | Formato | Hardware | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| brishen/iron-sapiens2-pose-0.4b-npu2 | ~0,4B | Kernels NPU (`.xclbin`) + pesos empaquetados | NPU AMD NPU2 (Strix Point, Strix Halo, Krackan) | Sapiens2 License (upstream) | HuggingFace |
-| facebook/sapiens2-pose-0.4b | ~0,4B | Float32 (HF) | GPU/CPU generica | Sapiens2 License | HuggingFace |
+| brishen/iron-sapiens2-pose-0.4b-npu2 | ~0,4B | Kernels NPU (`.xclbin`) + pesos empaquetados | NPU AMD NPU2 (Strix Point, Strix Halo, Krackan) | Sapiens2 License (upstream) | Hugging Face |
+| facebook/sapiens2-pose-0.4b | ~0,4B | Float32 (HF) | GPU/CPU generica | Sapiens2 License | Hugging Face |
 | Otras alternativas de estimacion de pose | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks ni especificaciones detalladas de alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/brishen/iron-sapiens2-pose-0.4b-npu2
+- Modelo en Hugging Face: https://huggingface.co/brishen/iron-sapiens2-pose-0.4b-npu2
 - Modelo base: https://huggingface.co/facebook/sapiens2-pose-0.4b
 - Licencia Sapiens2: https://github.com/facebookresearch/sapiens2/blob/main/LICENSE.md
 - IRON (AMD): https://github.com/amd/IRON

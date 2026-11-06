@@ -2,7 +2,7 @@
 
 ## Resumen
 
-yasminrx-krea2-lora es un adaptador LoRA (Low-Rank Adaptation) de rango 32 entrenado sobre el modelo de generacion de imagenes Krea 2, publicado por el usuario chantzlane90 en HuggingFace. No es un modelo de lenguaje ni un modelo fundacional: se trata de un ajuste fino ligero cuyo unico proposito es ensenar al modelo base a reproducir de forma consistente un personaje ficticio concreto, Yasmin Rahimi, activado mediante la palabra clave `yasminrx`. El repositorio ocupa 0,2 GB y no registra descargas ni valoraciones en el momento de la consulta.
+yasminrx-krea2-lora es un adaptador LoRA (Low-Rank Adaptation) de rango 32 entrenado sobre el modelo de generacion de imagenes Krea 2, publicado por el usuario chantzlane90 en Hugging Face. No es un modelo de lenguaje ni un modelo fundacional: se trata de un ajuste fino ligero cuyo unico proposito es ensenar al modelo base a reproducir de forma consistente un personaje ficticio concreto, Yasmin Rahimi, activado mediante la palabra clave `yasminrx`. El repositorio ocupa 0,2 GB y no registra descargas ni valoraciones en el momento de la consulta.
 
 El adaptador se entreno con la herramienta fal-ai/krea-2-trainer durante 1000 pasos con rango 32, una configuracion tipica de los pipelines de entrenamiento de personajes sobre modelos de difusion. El autor indica ademas que las claves de los pesos se han remapeado al prefijo `diffusion_model.*` que espera ComfyUI, lo que sugiere que el destino principal de uso es ese ecosistema de nodos, ademas de la plataforma Sogni.
 
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| yasminrx-krea2-lora | LoRA de personaje sobre Krea 2, rango 32 | no disponible (repo 0,2 GB) | no aplica | sin benchmarks publicados | other | HuggingFace, 0 descargas |
+| yasminrx-krea2-lora | LoRA de personaje sobre Krea 2, rango 32 | no disponible (repo 0,2 GB) | no aplica | sin benchmarks publicados | other | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre otros LoRA de personaje comparables entrenados sobre Krea 2, ni de datos de rendimiento que permitan establecer una comparacion objetiva con alternativas de la misma categoria.
@@ -92,7 +92,7 @@ No se dispone de informacion sobre otros LoRA de personaje comparables entrenado
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chantzlane90/yasminrx-krea2-lora
+- Modelo en Hugging Face: https://huggingface.co/chantzlane90/yasminrx-krea2-lora
 - Entrenador utilizado: fal-ai/krea-2-trainer (referenciado por el autor, sin enlace directo en la model card)
 - Plataforma de destino mencionada: Sogni
 - Entorno de inferencia mencionado: ComfyUI

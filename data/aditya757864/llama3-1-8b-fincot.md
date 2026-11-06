@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Comparativa con modelos similares
 
-No se dispone de comparativas publicas con otros modelos de razonamiento financiero. Se puede comparar con el modelo base **Meta-Llama-3.1-8B-Instruct** (sin fine-tuning) y con otros adaptadores LoRA financieros existentes en HuggingFace, pero no hay datos de rendimiento disponibles para establecer una tabla comparativa objetiva. El modelo base tiene las mismas capacidades generales, pero sin la especializacion en QA financiera ni el formato de salida estructurado.
+No se dispone de comparativas publicas con otros modelos de razonamiento financiero. Se puede comparar con el modelo base **Meta-Llama-3.1-8B-Instruct** (sin fine-tuning) y con otros adaptadores LoRA financieros existentes en Hugging Face, pero no hay datos de rendimiento disponibles para establecer una tabla comparativa objetiva. El modelo base tiene las mismas capacidades generales, pero sin la especializacion en QA financiera ni el formato de salida estructurado.
 
 ## Limitaciones y advertencias
 
@@ -69,7 +69,7 @@ No se dispone de comparativas publicas con otros modelos de razonamiento financi
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Aditya757864/llama3.1-8b-fincot)
+- [Modelo en Hugging Face](https://huggingface.co/Aditya757864/llama3.1-8b-fincot)
 - [Dataset TheFinAI/FinCoT](https://huggingface.co/datasets/TheFinAI/FinCoT)
 - [Repositorio de Unsloth](https://github.com/unslothai/unsloth)
 - [Modelo base Meta-Llama-3.1-8B-Instruct](https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct)

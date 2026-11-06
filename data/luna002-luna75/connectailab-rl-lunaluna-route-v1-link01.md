@@ -71,8 +71,8 @@ El autor indica que el techo de acierto alcanzable es del 98% (proporción en qu
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-lunaluna-route-v1-link01 | 0,8B (base) + LoRA | No disponible | Destilación de política PPO en LLM para `follow_route` | Apache 2.0 | HuggingFace, 17 descargas, 1 like |
-| Qwen/Qwen3.5-0.8B (base) | 0,8B | No disponible | LLM generalista | No disponible en la información | HuggingFace |
+| connectailab-rl-lunaluna-route-v1-link01 | 0,8B (base) + LoRA | No disponible | Destilación de política PPO en LLM para `follow_route` | Apache 2.0 | Hugging Face, 17 descargas, 1 like |
+| Qwen/Qwen3.5-0.8B (base) | 0,8B | No disponible | LLM generalista | No disponible en la información | Hugging Face |
 | Política PPO maestra (brain.json, CONNECT TYCOON) | No disponible | No aplica | Política de refuerzo nativa del simulador | No disponible | Repositorio GitHub del proyecto |
 
 No se dispone de datos publicados que permitan comparar este adaptador con otros modelos de decisión robótica de tamaño similar; la comparación relevante es interna al proyecto (base sin ajustar, supervisado y refuerzo), recogida en la sección de benchmarks.
@@ -91,7 +91,7 @@ No se dispone de datos publicados que permitan comparar este adaptador con otros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Luna002-Luna75/connectailab-rl-lunaluna-route-v1-link01
+- Modelo en Hugging Face: https://huggingface.co/Luna002-Luna75/connectailab-rl-lunaluna-route-v1-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de código CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de entrenamiento en Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

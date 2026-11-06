@@ -29,7 +29,7 @@ No se proporciona información sobre el conjunto de datos de entrenamiento, el n
 
 - Generación de representaciones multimodales texto-imagen siguiendo el paradigma CLIP (contrastivo).
 - Soporte multitarea declarado en el nombre del repositorio, aunque sin resultados que lo demuestren.
-- Implementación personalizada que requiere un adaptador explícito para cargarse con APIs genéricas de HuggingFace.
+- Implementación personalizada que requiere un adaptador explícito para cargarse con APIs genéricas de Hugging Face.
 - No se documentan capacidades de generación de texto, razonamiento, código, tool calling, agentes ni modo thinking.
 - No hay evidencia de capacidades multilingües.
 
@@ -38,7 +38,7 @@ No se proporciona información sobre el conjunto de datos de entrenamiento, el n
 - Experimentación con arquitecturas CLIP alternativas: el repositorio permite probar variantes como atención dilatada o co-atención en un entorno de pequeña escala antes de escalar a entrenamientos completos.
 - Pruebas de humo en pipelines de CI/CD: el checkpoint de inicialización sirve para verificar que el código de entrenamiento e inferencia funciona correctamente.
 - Investigación académica sobre fusión multimodal: la co-atención implementada puede servir como base para estudiar interacciones texto-imagen.
-- Desarrollo de adaptadores de carga personalizados: al ser una implementación propia, obliga a escribir código de integración con el ecosistema HuggingFace, útil para aprender los entresijos del formato safetensors y los pipelines de carga.
+- Desarrollo de adaptadores de carga personalizados: al ser una implementación propia, obliga a escribir código de integración con el ecosistema Hugging Face, útil para aprender los entresijos del formato safetensors y los pipelines de carga.
 - Comparación de recetas de optimización: la configuración con Adafactor y schedule exponencial puede usarse para estudiar el efecto de estos hiperparámetros en tareas de aprendizaje contrastivo.
 - Validación de metodología de evaluación: el propio autor sugiere usar este repositorio para practicar protocolos de evaluación rigurosos (métricas por tarea, múltiples semillas, baselines de capacidad comparable).
 
@@ -62,7 +62,7 @@ No disponible. No existen modelos comparables en la misma categoría porque este
 
 - El checkpoint de inicialización no ha sido entrenado ni auditado para robustez, equidad o transferencia de dominio.
 - No hay ningún benchmark que respalde capacidades reales del modelo.
-- La implementación es experimental y requiere un adaptador explícito para cargarse con APIs estándar de HuggingFace.
+- La implementación es experimental y requiere un adaptador explícito para cargarse con APIs estándar de Hugging Face.
 - No se especifican idiomas soportados ni longitud de contexto.
 - La licencia BSD-3-Clause permite uso comercial, pero el autor advierte que deben revisarse los términos de las fuentes de datos externas si se usan con este repositorio.
 - Cualquier resultado futuro de un checkpoint entrenado debe documentarse por separado de los valores por defecto incluidos.
@@ -70,5 +70,5 @@ No disponible. No existen modelos comparables en la misma categoría porque este
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mhlopes47/random-multitask56
+- Repositorio en Hugging Face: https://huggingface.co/mhlopes47/random-multitask56
 - No se han encontrado papers, blogs, repositorios adicionales ni demos asociados a este modelo en la búsqueda web.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-P2_pythia410m_q0.2_dpo_beta1_1 es un modelo de generación de texto publicado en HuggingFace por el usuario TheHassanSaud. Según los metadatos del repositorio, se trata de un modelo de 405.334.016 parámetros reales almacenados en safetensors (aproximadamente 405 millones, equivalentes a un "410M" nominal), con arquitectura etiquetada como gpt_neox, es decir, un transformer decoder-only de la familia GPT-NeoX. El repositorio ocupa 1,6 GB y fue creado y actualizado el 10 de septiembre de 2026.
+P2_pythia410m_q0.2_dpo_beta1_1 es un modelo de generación de texto publicado en Hugging Face por el usuario TheHassanSaud. Según los metadatos del repositorio, se trata de un modelo de 405.334.016 parámetros reales almacenados en safetensors (aproximadamente 405 millones, equivalentes a un "410M" nominal), con arquitectura etiquetada como gpt_neox, es decir, un transformer decoder-only de la familia GPT-NeoX. El repositorio ocupa 1,6 GB y fue creado y actualizado el 10 de septiembre de 2026.
 
 La model card publicada es la plantilla automática de transformers: todos los apartados (autoría, datos de entrenamiento, licencia, idiomas, evaluación, hardware) aparecen como "[More Information Needed]". Por tanto, no hay información oficial sobre el dataset, el procedimiento de entrenamiento ni los resultados. El propio identificador del modelo sugiere un ajuste mediante DPO (Direct Preference Optimization) sobre un modelo base Pythia-410M, con un parámetro beta de 1,1 y algún factor adicional denotado como "q0.2", pero esta interpretación procede únicamente de la nomenclatura y no está confirmada por el autor.
 
@@ -35,7 +35,7 @@ Respecto al entrenamiento, la model card no documenta nada. El nombre del reposi
 
 - Generación de texto autoregresiva: es la única capacidad declarada explícitamente mediante el pipeline `text-generation`.
 - Compatibilidad con Transformers: carga directa mediante la librería `transformers` y pesos en safetensors.
-- Compatibilidad con Text Generation Inference: el tag `text-generation-inference` y `endpoints_compatible` indican que el repositorio puede desplegarse con el servidor de inferencia de HuggingFace.
+- Compatibilidad con Text Generation Inference: el tag `text-generation-inference` y `endpoints_compatible` indican que el repositorio puede desplegarse con el servidor de inferencia de Hugging Face.
 - Ajuste por preferencias (presunto): si el identificador refleja el proceso real, el modelo habría pasado por una fase de alineación tipo DPO sobre un modelo base, lo que en principio favorecería respuestas más alineadas con un conjunto de preferencias concreto. No hay evidencia documental de ello ni evaluación que lo respalde.
 - Tool calling / function calling: no disponible; no se menciona en la información del repositorio.
 - Capacidades de agente y razonamiento multi-paso: no disponible.
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| P2_pythia410m_q0.2_dpo_beta1_1 (TheHassanSaud) | 405.334.016 | No disponible | No disponible | HuggingFace, 0 descargas |
-| Pythia-410M (EleutherAI) | ≈405 M (misma escala) | No disponible en la información proporcionada | No disponible en la información proporcionada | HuggingFace, ampliamente utilizado |
-| TinyLlama-1.1B | ≈1,1 B | No disponible en la información proporcionada | No disponible en la información proporcionada | HuggingFace |
-| Qwen2.5-0.5B | ≈0,49 B | No disponible en la información proporcionada | No disponible en la información proporcionada | HuggingFace |
+| P2_pythia410m_q0.2_dpo_beta1_1 (TheHassanSaud) | 405.334.016 | No disponible | No disponible | Hugging Face, 0 descargas |
+| Pythia-410M (EleutherAI) | ≈405 M (misma escala) | No disponible en la información proporcionada | No disponible en la información proporcionada | Hugging Face, ampliamente utilizado |
+| TinyLlama-1.1B | ≈1,1 B | No disponible en la información proporcionada | No disponible en la información proporcionada | Hugging Face |
+| Qwen2.5-0.5B | ≈0,49 B | No disponible en la información proporcionada | No disponible en la información proporcionada | Hugging Face |
 
 La comparación se limita al orden de magnitud en número de parámetros, ya que no hay datos verificados de contexto, licencia ni rendimiento para este checkpoint en la información disponible. Cualquier afirmación sobre calidad relativa sería especulativa.
 
@@ -89,7 +89,7 @@ La comparación se limita al orden de magnitud en número de parámetros, ya que
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TheHassanSaud/P2_pythia410m_q0.2_dpo_beta1_1
+- Modelo en Hugging Face: https://huggingface.co/TheHassanSaud/P2_pythia410m_q0.2_dpo_beta1_1
 - Referencia del tag `arxiv:1910.09700` (Lacoste et al., 2019, calculador de impacto de carbono citado en la plantilla de model card): https://arxiv.org/abs/1910.09700
 - Calculador de impacto de carbono enlazado en la plantilla: https://mlco2.github.io/impact
 - Text Generation Inference: https://github.com/huggingface/text-generation-inference

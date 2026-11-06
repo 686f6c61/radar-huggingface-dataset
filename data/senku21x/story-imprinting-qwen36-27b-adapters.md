@@ -76,7 +76,7 @@ El flip mide la interaccion entre animal asignado y tipo de persona (rango −2 
 | Base | Qwen3.6-27B | Qwen3.6-27B | no aplicable |
 | Licencia | Apache 2.0 | no disponible | no disponible |
 | Proposito | Estudiar asociacion latente y su reactivacion | Aislar el dano de prosa del habito | Material de entrenamiento original |
-| Disponibilidad | Publico en HuggingFace | Publico en HuggingFace | Publico en HuggingFace |
+| Disponibilidad | Publico en Hugging Face | Publico en Hugging Face | Publico en Hugging Face |
 
 No hay alternativas directas de otros autores publicadas en la informacion disponible; el propio paper (arXiv 2609.10883) es la referencia original del fenomeno.
 

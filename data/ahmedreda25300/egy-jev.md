@@ -83,5 +83,5 @@ No se dispone de datos de rendimiento comparativo entre EGY-JEV y alternativas d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AhmedReda25300/EGY-JEV
+- Modelo en Hugging Face: https://huggingface.co/AhmedReda25300/EGY-JEV
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un checkpoint de política robótica entrenada para una tarea concreta de manipulación: recoger y depositar cacahuetes (Peanut Pick Place), identificada internamente como Task_000004. El artefacto ha sido generado con Cyclo Intelligence, la herramienta de ROBOTIS construida sobre el ecosistema LeRobot de HuggingFace, y se publica bajo el pipeline `robotics`. No es un modelo de lenguaje ni un modelo multimodal de propósito general, sino una política de control entrenada para un robot específico.
+Este repositorio contiene un checkpoint de política robótica entrenada para una tarea concreta de manipulación: recoger y depositar cacahuetes (Peanut Pick Place), identificada internamente como Task_000004. El artefacto ha sido generado con Cyclo Intelligence, la herramienta de ROBOTIS construida sobre el ecosistema LeRobot de Hugging Face, y se publica bajo el pipeline `robotics`. No es un modelo de lenguaje ni un modelo multimodal de propósito general, sino una política de control entrenada para un robot específico.
 
 Los metadatos indican que el entrenamiento se detuvo en el paso 10.000 con un tamaño de lote de 8, y que la plataforma de destino aparece etiquetada como ABOT M0 en el nombre del repositorio. El tamaño del repositorio es de 20 GB, lo que sugiere la inclusión de pesos junto con estados de optimizador y posiblemente varios puntos de control intermedios, algo habitual en los checkpoints de LeRobot. La model card no aporta información sobre la arquitectura de la política, el número de parámetros, los datos de entrenamiento ni la licencia.
 
@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (Task_000004 Peanut Pick Place) | Politica robotica LeRobot / Cyclo Intelligence | no disponible | no aplica | no disponible | HuggingFace, 8 descargas |
-| Otros checkpoints de Cyclo Intelligence para tareas pick and place | Politica robotica LeRobot | no disponible | no aplica | no disponible | Publicos en HuggingFace, sujetos a la misma falta de documentacion |
-| Politicas de referencia de LeRobot (ACT, Diffusion Policy, SmolVLA) | Politicas de imitacion | depende de la variante; SmolVLA en torno a 450 M en su configuracion publica (dato de referencia general, no de este repositorio) | no aplica | MIT en los repositorios de referencia de LeRobot (no aplicable a este artefacto) | Documentadas y mantenidas por HuggingFace |
+| Este checkpoint (Task_000004 Peanut Pick Place) | Politica robotica LeRobot / Cyclo Intelligence | no disponible | no aplica | no disponible | Hugging Face, 8 descargas |
+| Otros checkpoints de Cyclo Intelligence para tareas pick and place | Politica robotica LeRobot | no disponible | no aplica | no disponible | Publicos en Hugging Face, sujetos a la misma falta de documentacion |
+| Politicas de referencia de LeRobot (ACT, Diffusion Policy, SmolVLA) | Politicas de imitacion | depende de la variante; SmolVLA en torno a 450 M en su configuracion publica (dato de referencia general, no de este repositorio) | no aplica | MIT en los repositorios de referencia de LeRobot (no aplicable a este artefacto) | Documentadas y mantenidas por Hugging Face |
 
 La comparacion cuantitativa no es posible: no hay datos de parametros, contexto, rendimiento ni licencia para este checkpoint, y tampoco se dispone de resultados comparables de la misma tarea publicados por otros autores.
 
@@ -93,8 +93,8 @@ La comparacion cuantitativa no es posible: no hay datos de parametros, contexto,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dongkkka/Task_000004_Peanut_Pick_Place_lerobot_Intern_ABOT_M0-bs8_step10000
+- Modelo en Hugging Face: https://huggingface.co/Dongkkka/Task_000004_Peanut_Pick_Place_lerobot_Intern_ABOT_M0-bs8_step10000
 - Repositorio de Cyclo Intelligence (ROBOTIS): https://github.com/ROBOTIS-GIT/cyclo_intelligence
-- Perfil del autor en HuggingFace: https://huggingface.co/Dongkkka
-- Ecosistema LeRobot de HuggingFace (referencia del formato de checkpoint): https://github.com/huggingface/lerobot
+- Perfil del autor en Hugging Face: https://huggingface.co/Dongkkka
+- Ecosistema LeRobot de Hugging Face (referencia del formato de checkpoint): https://github.com/huggingface/lerobot
 - No se han encontrado papers, blogs ni demos adicionales en la informacion disponible.

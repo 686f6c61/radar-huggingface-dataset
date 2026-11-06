@@ -79,9 +79,9 @@ La comparativa es limitada porque no se conocen las licencias ni los contextos e
 
 ## Enlaces
 
-- [HuggingFace - huyvodoi38/qwen35-4b-cskh-triage-lora](https://huggingface.co/huyvodoi38/qwen35-4b-cskh-triage-lora)
+- [Hugging Face - huyvodoi38/qwen35-4b-cskh-triage-lora](https://huggingface.co/huyvodoi38/qwen35-4b-cskh-triage-lora)
 - [Qwen3.5 - Blog oficial](https://qwen.ai/blog?id=qwen3.5)
-- [Qwen3.5-35B-A3B en HuggingFace](https://huggingface.co/Qwen/Qwen3.5-35B-A3B)
-- [Qwen3.5-27B en HuggingFace](https://huggingface.co/Qwen/Qwen3.5-27B)
+- [Qwen3.5-35B-A3B en Hugging Face](https://huggingface.co/Qwen/Qwen3.5-35B-A3B)
+- [Qwen3.5-27B en Hugging Face](https://huggingface.co/Qwen/Qwen3.5-27B)
 - [Qwen3.5:4b en Ollama](https://ollama.com/library/qwen3.5:4b)
 - [Qwen3.5-Omni Technical Report (arXiv)](https://arxiv.org/pdf/2604.15804)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`maurorisonho/ast-gtzan-audio-course` es un checkpoint de clasificacion de audio publicado en HuggingFace por el usuario maurorisonho, con pipeline declarado `audio-classification` y entrenado sobre el dataset `marsyas/gtzan`, un corpus de referencia para clasificacion de genero musical. El autor declara una accuracy de 0,92 en evaluacion sobre dicho dataset, valor no verificado de forma independiente. El repositorio no incluye informacion sobre arquitectura, numero de parametros, licencia ni idiomas, y su nombre sugiere un fine-tuning de un Audio Spectrogram Transformer (AST), si bien esto no se confirma en la model card.
+`maurorisonho/ast-gtzan-audio-course` es un checkpoint de clasificacion de audio publicado en Hugging Face por el usuario maurorisonho, con pipeline declarado `audio-classification` y entrenado sobre el dataset `marsyas/gtzan`, un corpus de referencia para clasificacion de genero musical. El autor declara una accuracy de 0,92 en evaluacion sobre dicho dataset, valor no verificado de forma independiente. El repositorio no incluye informacion sobre arquitectura, numero de parametros, licencia ni idiomas, y su nombre sugiere un fine-tuning de un Audio Spectrogram Transformer (AST), si bien esto no se confirma en la model card.
 
 Se trata de un modelo de nicho, con 0 descargas y 0 likes en el momento de la consulta, y su nombre ("audio-course") apunta a un ejercicio academico o material de curso mas que a un modelo destinado a produccion. La relevancia practica es, por tanto, limitada: sirve como ejemplo reproducible de fine-tuning sobre GTZAN y como punto de partida para pipelines de etiquetado musical, pero carece de la documentacion minima (licencia, ficha tecnica, procedencia de pesos) que se exige en un despliegue comercial.
 
@@ -34,7 +34,7 @@ La model card unicamente indica: "Audio Classification Model for Audio Course. T
 
 Tampoco hay informacion sobre el numero de tokens o clips vistos durante el entrenamiento, la composicion exacta de los splits, el uso de aumentacion de datos (mezcla, desplazamiento temporal, cambio de tono), ni sobre tecnicas de ajuste como RLHF o DPO, que en cualquier caso no aplican a un clasificador discriminativo. No se documenta ninguna innovacion tecnica adicional, decodificacion especulativa ni mecanismo de atencion alternativa.
 
-El dataset `marsyas/gtzan` es la version alojada en HuggingFace del clasico GTZAN, un corpus ampliamente utilizado en recuperacion de informacion musical. La model card no detalla que version del split se empleo para la evaluacion, lo que impide saber si la accuracy de 0,92 se obtuvo sobre el split de test oficial, sobre validacion o sobre el conjunto completo, un detalle critico porque GTZAN tiene fuga de datos conocida entre splits en algunas de sus distribuciones publicas.
+El dataset `marsyas/gtzan` es la version alojada en Hugging Face del clasico GTZAN, un corpus ampliamente utilizado en recuperacion de informacion musical. La model card no detalla que version del split se empleo para la evaluacion, lo que impide saber si la accuracy de 0,92 se obtuvo sobre el split de test oficial, sobre validacion o sobre el conjunto completo, un detalle critico porque GTZAN tiene fuga de datos conocida entre splits en algunas de sus distribuciones publicas.
 
 ## Capacidades
 
@@ -83,7 +83,7 @@ No se dispone de datos comparativos en la informacion proporcionada. La model ca
 
 | Modelo | Parametros | Contexto de audio | Accuracy en GTZAN | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ast-gtzan-audio-course | no disponible | no disponible | 0,92 (no verificado) | no disponible | HuggingFace |
+| ast-gtzan-audio-course | no disponible | no disponible | 0,92 (no verificado) | no disponible | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparacion con otros clasificadores de genero musical (por ejemplo, arquitecturas convolucionales o transformers de audio de la literatura MIR) requeriria conocer el split exacto y el preprocesado empleado, datos que no estan disponibles.
@@ -103,6 +103,6 @@ La comparacion con otros clasificadores de genero musical (por ejemplo, arquitec
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/maurorisonho/ast-gtzan-audio-course
+- Hugging Face: https://huggingface.co/maurorisonho/ast-gtzan-audio-course
 - Dataset utilizado: https://huggingface.co/datasets/marsyas/gtzan
 - Los resultados de la busqueda web no aportaron informacion relevante sobre el modelo: las referencias devueltas correspondian a materiales de examenes escolares (KCSE) sin relacion con clasificacion de audio. Por tanto, no hay papers, blogs, repositorios ni demos adicionales que enlazar.

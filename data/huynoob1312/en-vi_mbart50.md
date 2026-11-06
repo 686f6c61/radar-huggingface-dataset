@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `huynoob1312/en-vi_mbart50` es un ajuste fino (fine-tuning) del modelo multilingüe `facebook/mbart-large-50-many-to-many-mmt` para la traducción automática entre inglés (en) y vietnamita (vi). Desarrollado por el usuario `huynoob1312`, este modelo se publicó en HuggingFace en agosto de 2026 con el propósito de ofrecer una alternativa especializada y ligera para tareas de traducción en estos dos idiomas, aprovechando la arquitectura robusta de mBART-50.
+El modelo `huynoob1312/en-vi_mbart50` es un ajuste fino (fine-tuning) del modelo multilingüe `facebook/mbart-large-50-many-to-many-mmt` para la traducción automática entre inglés (en) y vietnamita (vi). Desarrollado por el usuario `huynoob1312`, este modelo se publicó en Hugging Face en agosto de 2026 con el propósito de ofrecer una alternativa especializada y ligera para tareas de traducción en estos dos idiomas, aprovechando la arquitectura robusta de mBART-50.
 
 El modelo base, mBART-50, es un transformer encoder-decoder con 611 millones de parámetros, entrenado originalmente en 50 idiomas mediante un enfoque de denoising multilingüe. Este ajuste fino reduce el alcance a solo inglés y vietnamita, lo que permite una especialización en ese par de lenguas, aunque conserva la capacidad de traducción bidireccional inherente al modelo original. El repositorio contiene pesos en formato safetensors y es compatible con la librería `transformers`.
 
@@ -60,10 +60,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| huynoob1312/en-vi_mbart50 | 611M | no disponible | en, vi | no disponible | HuggingFace |
-| facebook/nllb-200-distilled-600M | 600M | 1024 | 200+ | CC-BY-NC 4.0 | HuggingFace |
-| Helsinki-NLP/opus-mt-en-vi | 77M | 512 | en, vi | Apache 2.0 | HuggingFace |
-| google/mt5-base | 580M | 1024 | 100+ | Apache 2.0 | HuggingFace |
+| huynoob1312/en-vi_mbart50 | 611M | no disponible | en, vi | no disponible | Hugging Face |
+| facebook/nllb-200-distilled-600M | 600M | 1024 | 200+ | CC-BY-NC 4.0 | Hugging Face |
+| Helsinki-NLP/opus-mt-en-vi | 77M | 512 | en, vi | Apache 2.0 | Hugging Face |
+| google/mt5-base | 580M | 1024 | 100+ | Apache 2.0 | Hugging Face |
 
 El modelo se posiciona como una opción intermedia: más grande que MarianMT (opus-mt-en-vi) pero más pequeño que NLLB-200, con la ventaja de estar especializado en un solo par de idiomas. NLLB-200 ofrece cobertura multilingüe superior, pero su licencia no comercial puede ser restrictiva. El modelo `huynoob1312` no especifica licencia, lo que genera incertidumbre para uso comercial.
 
@@ -79,5 +79,5 @@ El modelo se posiciona como una opción intermedia: más grande que MarianMT (op
 
 ## Enlaces
 
-- [HuggingFace - huynoob1312/en-vi_mbart50](https://huggingface.co/huynoob1312/en-vi_mbart50)
+- [Hugging Face - huynoob1312/en-vi_mbart50](https://huggingface.co/huynoob1312/en-vi_mbart50)
 - [Paper de mBART-50 (arXiv:1910.09700)](https://arxiv.org/abs/1910.09700)

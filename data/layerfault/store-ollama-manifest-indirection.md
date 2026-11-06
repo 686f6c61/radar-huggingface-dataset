@@ -63,7 +63,7 @@ No disponible. No existe una categoría de modelos de IA comparable, ya que se t
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LayerFault/store-ollama-manifest-indirection
+- Repositorio Hugging Face: https://huggingface.co/LayerFault/store-ollama-manifest-indirection
 - Proyecto Layerfault en GitHub: https://github.com/izm1chael/layerfault
 - Documentación de confianza de Layerfault (modelo de confianza): https://github.com/izm1chael/layerfault/blob/main/docs/TRUST_MODEL.md
 - Documentación de almacenamiento de modelos de Ollama: https://deepwiki.com/ollama/ollama/4.2-model-registry-and-layers

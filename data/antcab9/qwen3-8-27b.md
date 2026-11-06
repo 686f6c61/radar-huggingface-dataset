@@ -67,7 +67,7 @@ No se han publicado resultados completos de benchmarks estándar (MMLU, HumanEva
 
 | Modelo | Parámetros | Contexto | Modalidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B | 27B denso | 262K nativo, 1M extensible | Texto + visión (imagen/vídeo) | Apache 2.0 | Open weights en HuggingFace |
+| Qwen3.8-27B | 27B denso | 262K nativo, 1M extensible | Texto + visión (imagen/vídeo) | Apache 2.0 | Open weights en Hugging Face |
 | Qwen3.6-27B | 27B | no disponible | Texto + visión | Apache 2.0 | Open weights |
 | Qwen3.7-Plus | no disponible (probablemente MoE) | no disponible | Texto + visión | no disponible | Servicio cerrado (Qwen Cloud) |
 | Muse Glimmer-30B | 30B | no disponible | Texto + visión | no disponible | no disponible |
@@ -86,8 +86,8 @@ La comparativa se basa en la tabla de la model card, pero no se dispone de datos
 
 ## Enlaces
 
-- [HuggingFace - Antcab9/Qwen3.8-27B](https://huggingface.co/Antcab9/Qwen3.8-27B)
-- [HuggingFace - Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
+- [Hugging Face - Antcab9/Qwen3.8-27B](https://huggingface.co/Antcab9/Qwen3.8-27B)
+- [Hugging Face - Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [GitHub - AlibabaCloud-Official/Qwen3.8-27B](https://github.com/AlibabaCloud-Official/Qwen3.8-27B)
 - [vLLM Recipes - Qwen/Qwen3.8-27B](https://recipes.vllm.ai/Qwen/Qwen3.8-27B)
 - [Cloudflare AI docs - qwen3.8-27b](https://developers.cloudflare.com/ai/models/%40cf/qwen/qwen3.8-27b/)

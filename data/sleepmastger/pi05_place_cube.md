@@ -89,7 +89,7 @@ El propio autor advierte de que esta tabla mide si el despliegue reproduce el co
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| π₀.₅ place_cube (este) | no disponible | no disponible | Pick-and-place de una tarea, Franka real | Gemma Terms | HuggingFace, 4 checkpoints, 0 descargas |
+| π₀.₅ place_cube (este) | no disponible | no disponible | Pick-and-place de una tarea, Franka real | Gemma Terms | Hugging Face, 4 checkpoints, 0 descargas |
 | `pi05_base` (openpi) | no disponible | no disponible | Política VLA preentrenada multi-tarea | Gemma Terms (backbone) / Apache-2.0 (código) | Repositorio openpi de Physical Intelligence |
 | Políticas ACT / Diffusion Policy | no disponible | no disponible | Manipulación por imitation learning | Variable (habitualmente MIT/Apache-2.0) | Implementaciones abiertas en GitHub |
 
@@ -111,7 +111,7 @@ La comparación cuantitativa con alternativas no está disponible en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SleepMastger/pi05_place_cube
+- Modelo en Hugging Face: https://huggingface.co/SleepMastger/pi05_place_cube
 - Código de servicio y cliente del robot: https://github.com/sleepmastergx/deploy/tree/pi0.5/pi05_place_cube
 - Contrato de entrada/salida: https://github.com/sleepmastergx/deploy/blob/pi0.5/pi05_place_cube/CONTRACT.md
 - Repositorio openpi (Physical Intelligence): https://github.com/Physical-Intelligence/openpi

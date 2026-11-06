@@ -79,7 +79,7 @@ La comparativa muestra que este modelo carece de la documentacion y evaluacion d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mondk/Safetensors.claude-sonnet-mistral-7b-it-v0.3
+- Repositorio Hugging Face: https://huggingface.co/mondk/Safetensors.claude-sonnet-mistral-7b-it-v0.3
 - Repositorio GGUF del mismo autor: https://huggingface.co/mondk/GGUF.claude-sonnet-mistral-7b-it-v0.3
 - Dataset de entrenamiento: https://huggingface.co/datasets/mondk/claude-v2-super.jsonl
 - Modelo base: https://huggingface.co/unsloth/mistral-7b-instruct-v0.3-bnb-4bit

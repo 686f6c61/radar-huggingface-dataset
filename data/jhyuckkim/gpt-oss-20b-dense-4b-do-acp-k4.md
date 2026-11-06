@@ -77,10 +77,10 @@ La comparación más directa es con los otros estudiantes densos del mismo paper
 
 | Modelo | Parametros | Contexto | MMLU (5-shot) | Avg 5 benchmarks | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| GPT-OSS-20B-Dense-4B-DO-ACP-K4 (este) | 4,19 B | No disponible | 23.7 | 33.71 | Apache-2.0 | HuggingFace |
-| GPT-OSS-20B-Dense-4B-SF-K4 | 4,19 B | No disponible | 23.3 | 32.15 | Apache-2.0 | HuggingFace |
-| GPT-OSS-20B-Dense-4B-CP-K4 | 4,19 B | No disponible | 23.6 | 32.86 | Apache-2.0 | HuggingFace |
-| GPT-OSS-20B (teacher) | 20,9 B (MoE) | 128k (según OpenAI) | 49.6 (completion) / 72 (chat) | 56.67 | Apache-2.0 | OpenAI / HuggingFace |
+| GPT-OSS-20B-Dense-4B-DO-ACP-K4 (este) | 4,19 B | No disponible | 23.7 | 33.71 | Apache-2.0 | Hugging Face |
+| GPT-OSS-20B-Dense-4B-SF-K4 | 4,19 B | No disponible | 23.3 | 32.15 | Apache-2.0 | Hugging Face |
+| GPT-OSS-20B-Dense-4B-CP-K4 | 4,19 B | No disponible | 23.6 | 32.86 | Apache-2.0 | Hugging Face |
+| GPT-OSS-20B (teacher) | 20,9 B (MoE) | 128k (según OpenAI) | 49.6 (completion) / 72 (chat) | 56.67 | Apache-2.0 | OpenAI / Hugging Face |
 
 No se dispone de comparaciones con otros modelos densos de ~4B (como Qwen2.5-4B o Llama-3.2-3B) porque el paper no las incluye y el modelo no está pensado para uso general.
 
@@ -97,7 +97,7 @@ No se dispone de comparaciones con otros modelos densos de ~4B (como Qwen2.5-4B 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jhyuckkim/GPT-OSS-20B-Dense-4B-DO-ACP-K4
+- Modelo en Hugging Face: https://huggingface.co/jhyuckkim/GPT-OSS-20B-Dense-4B-DO-ACP-K4
 - Paper: https://arxiv.org/abs/2605.28207
 - Codigo del proyecto: https://github.com/krafton-ai/moe-to-dense
 - Modelos relacionados: [SF-K4](https://huggingface.co/jhyuckkim/GPT-OSS-20B-Dense-4B-SF-K4), [CP-K4](https://huggingface.co/jhyuckkim/GPT-OSS-20B-Dense-4B-CP-K4)

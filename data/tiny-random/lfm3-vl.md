@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tiny-random/lfm3-vl
+- Hugging Face: https://huggingface.co/tiny-random/lfm3-vl
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-VL-2B
 - Backbone de texto de referencia: https://huggingface.co/tiny-random/lfm3
 - Predecesor del backbone: https://huggingface.co/tiny-random/lfm2

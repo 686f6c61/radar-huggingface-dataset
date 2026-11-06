@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TreeNumber/LFM2.5-230M-Adapter es un repositorio publicado en HuggingFace por el usuario TreeNumber bajo licencia Apache 2.0. Por el nombre se deduce que se trata de un adaptador (previsiblemente LoRA u otra tecnica de ajuste eficiente de parametros) asociado a un modelo base de la familia LFM2.5 con aproximadamente 230 millones de parametros. La model card publicada no contiene ninguna descripcion tecnica: unicamente incluye la declaracion de licencia, por lo que no es posible confirmar la naturaleza exacta del adaptador, el modelo base concreto ni los datos de entrenamiento empleados.
+TreeNumber/LFM2.5-230M-Adapter es un repositorio publicado en Hugging Face por el usuario TreeNumber bajo licencia Apache 2.0. Por el nombre se deduce que se trata de un adaptador (previsiblemente LoRA u otra tecnica de ajuste eficiente de parametros) asociado a un modelo base de la familia LFM2.5 con aproximadamente 230 millones de parametros. La model card publicada no contiene ninguna descripcion tecnica: unicamente incluye la declaracion de licencia, por lo que no es posible confirmar la naturaleza exacta del adaptador, el modelo base concreto ni los datos de entrenamiento empleados.
 
 El repositorio no registra descargas ni interacciones en el momento de la consulta, y no declara pipeline, idiomas soportados ni metadatos adicionales. Esto lo situa como un artefacto practicamente sin documentacion ni validacion publica por parte de la comunidad.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Documentacion | Disponibilidad |
 |---|---|---|---|---|---|
-| TreeNumber/LFM2.5-230M-Adapter | no disponible (base ~230M segun nombre) | no disponible | Apache 2.0 | Minima (solo licencia) | HuggingFace |
+| TreeNumber/LFM2.5-230M-Adapter | no disponible (base ~230M segun nombre) | no disponible | Apache 2.0 | Minima (solo licencia) | Hugging Face |
 | Modelo base LFM2.5 de 230M (referencia) | ~230M (segun nombre) | no disponible | no disponible | no disponible | no disponible |
-| Otros adaptadores de la comunidad sobre modelos pequenos | Variable | Variable | Variable | Variable | HuggingFace |
+| Otros adaptadores de la comunidad sobre modelos pequenos | Variable | Variable | Variable | Variable | Hugging Face |
 
 No se dispone de datos suficientes para establecer una comparativa tecnica rigurosa con alternativas concretas.
 
@@ -79,5 +79,5 @@ No se dispone de datos suficientes para establecer una comparativa tecnica rigur
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TreeNumber/LFM2.5-230M-Adapter
+- Hugging Face: https://huggingface.co/TreeNumber/LFM2.5-230M-Adapter
 - No se han encontrado otros enlaces (papers, blogs, repos o demos) en la informacion disponible.

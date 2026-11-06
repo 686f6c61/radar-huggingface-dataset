@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nexus000445552/deep-live-cam` es un checkpoint alojado en HuggingFace que utiliza la librería `diffusers` y está etiquetado con soporte para `onnx` y `safetensors`. El nombre sugiere una posible aplicación de generación o edición de imágenes en tiempo real, pero la model card publicada por el autor no contiene ninguna descripción técnica, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio ocupa 55.3 GB, lo que indica un modelo de tamaño considerable, probablemente un checkpoint de difusión para imágenes, aunque no se puede confirmar sin más información.
+El modelo `nexus000445552/deep-live-cam` es un checkpoint alojado en Hugging Face que utiliza la librería `diffusers` y está etiquetado con soporte para `onnx` y `safetensors`. El nombre sugiere una posible aplicación de generación o edición de imágenes en tiempo real, pero la model card publicada por el autor no contiene ninguna descripción técnica, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio ocupa 55.3 GB, lo que indica un modelo de tamaño considerable, probablemente un checkpoint de difusión para imágenes, aunque no se puede confirmar sin más información.
 
 El modelo fue creado el 16 de agosto de 2026 y no registra descargas ni valoraciones. La licencia es GPL-3.0, lo que implica obligaciones de copyleft para cualquier uso o redistribución. Dada la ausencia total de documentación técnica, cualquier evaluación de capacidades o rendimiento es imposible a partir de los datos disponibles.
 
@@ -53,4 +53,4 @@ No disponible. No se conocen modelos comparables de la misma categoría sin info
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/nexus000445552/deep-live-cam)
+- [Repositorio en Hugging Face](https://huggingface.co/nexus000445552/deep-live-cam)

@@ -75,6 +75,6 @@ No se dispone de información sobre otros modelos de GNN específicamente entren
 
 ## Enlaces
 
-- [HuggingFace: Bauxitiego/neural-mis](https://huggingface.co/Bauxitiego/neural-mis)
+- [Hugging Face: Bauxitiego/neural-mis](https://huggingface.co/Bauxitiego/neural-mis)
 - [Repositorio GitHub: Bauxitiego/neural-mis](https://github.com/Bauxitiego/neural-mis)
 - [Benchmark QOBLIB (GitHub)](https://github.com/ZIB-AOPT/QOBLIB)

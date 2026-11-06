@@ -75,7 +75,7 @@ No se dispone de información suficiente para una comparativa rigurosa. El autor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ToastyPigeon/gemma-4-12b-full-cpt
+- Modelo en Hugging Face: https://huggingface.co/ToastyPigeon/gemma-4-12b-full-cpt
 - Modelo base: https://huggingface.co/google/gemma-4-12b
 - Adaptadores relacionados del autor: https://huggingface.co/ToastyPigeon/gemma-4-12b-marvin-v1
 - Adaptadores relacionados del autor: https://huggingface.co/ToastyPigeon/gemma-4-12b-marvin-v2

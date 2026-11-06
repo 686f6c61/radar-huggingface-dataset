@@ -4,7 +4,7 @@
 
 El repositorio WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_120_LoRA_Qwen3-8b contiene un adaptador LoRA (librería PEFT, versión 0.17.1) entrenado sobre el modelo base Qwen/Qwen3-8B-Base. La nomenclatura del identificador indica que el ajuste se ha realizado sobre la tarea XNLI (inferencia de lenguaje natural, tres clases: implicación, neutral y contradicción) en inglés y urdu, con un subconjunto de 5000 ejemplos y algún tipo de barrido o fracción de datos designado como "percentage_1_120". El repositorio ocupa 0,5 GB y se publicó el 21 de septiembre de 2026.
 
-El adaptador no es un modelo completo: requiere descargar Qwen/Qwen3-8B-Base (aproximadamente 8 200 millones de parámetros en precisión completa) y cargar los pesos LoRA encima, ya sea fusionándolos o mediante PEFT/vLLM. La model card publicada es la plantilla por defecto de HuggingFace sin ninguna sección cumplimentada: todas las entradas aparecen como "[More Information Needed]", por lo que no hay información del autor sobre datos de entrenamiento, hiperparámetros, licencia o evaluación.
+El adaptador no es un modelo completo: requiere descargar Qwen/Qwen3-8B-Base (aproximadamente 8 200 millones de parámetros en precisión completa) y cargar los pesos LoRA encima, ya sea fusionándolos o mediante PEFT/vLLM. La model card publicada es la plantilla por defecto de Hugging Face sin ninguna sección cumplimentada: todas las entradas aparecen como "[More Information Needed]", por lo que no hay información del autor sobre datos de entrenamiento, hiperparámetros, licencia o evaluación.
 
 La relevancia de este repositorio es fundamentalmente metodológica: ilustra el patrón de bajo coste de adaptar un LLM generativo de 8B a una tarea discriminativa multilingüe (NLI) con un adaptador de rango reducido, en lugar de entrenar un encoder especializado. No obstante, con 0 descargas y 0 "likes" en el momento de la consulta, carece de validación externa y no debería desplegarse en producción sin una evaluación propia.
 
@@ -92,7 +92,7 @@ No hay datos de rendimiento publicados para este adaptador, por lo que la compar
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_120_LoRA_Qwen3-8b
+- Repositorio en Hugging Face: https://huggingface.co/WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_120_LoRA_Qwen3-8b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B-Base
 - Documentación de PEFT: https://huggingface.co/docs/peft
 - Referencia etiquetada en el repositorio (cálculo de impacto ambiental, Lacoste et al. 2019): https://arxiv.org/abs/1910.09700

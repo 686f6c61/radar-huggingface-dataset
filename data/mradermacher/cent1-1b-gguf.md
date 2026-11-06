@@ -70,7 +70,7 @@ Las cifras de VRAM son estimaciones propias a partir del tamano de fichero decla
 - f16 (3,5 GB): aproximadamente 4,5-5 GB de VRAM. El propio autor la califica de "overkill" para este modelo.
 - Cabe en cualquier GPU de consumo con 4 GB o mas de VRAM (GTX 1650, RTX 3050, RTX 4060, Apple Silicon con memoria unificada). Las GPU profesionales (A100, H100) no aportan ventaja significativa a este tamano.
 - La inferencia en CPU es viable con las cuantizaciones Q4 y Q5, con velocidades del orden de decenas de tokens por segundo en procesadores modernos, aunque no se dispone de mediciones oficiales.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python, kobold.cpp y cualquier runtime compatible con GGUF. vLLM y TGI estan orientados al formato HuggingFace safetensors del modelo base, no a este repositorio GGUF.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python, kobold.cpp y cualquier runtime compatible con GGUF. vLLM y TGI estan orientados al formato Hugging Face safetensors del modelo base, no a este repositorio GGUF.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -101,7 +101,7 @@ La diferencia principal frente a esas alternativas no es el rendimiento bruto, s
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Cent1-1B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Cent1-1B-GGUF
 - Modelo base: https://huggingface.co/CentIo/Cent1-1B
 - Pagina de descarga y vision general del autor: https://hf.tst.eu/model#Cent1-1B-GGUF
 - README de referencia sobre uso de ficheros GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

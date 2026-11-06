@@ -70,8 +70,8 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 | Modelo | Relacion | Licencia | Disponibilidad |
 |---|---|---|---|
-| PostHog/jeeves | Modelo original del que deriva la exportación ONNX | Apache-2.0 | HuggingFace (PostHog/jeeves) |
-| ollaya-dev/jeeves | Exportación ONNX sin pesos, para el runtime de Ollaya | Apache-2.0 | HuggingFace (ollaya-dev/jeeves) |
+| PostHog/jeeves | Modelo original del que deriva la exportación ONNX | Apache-2.0 | Hugging Face (PostHog/jeeves) |
+| ollaya-dev/jeeves | Exportación ONNX sin pesos, para el runtime de Ollaya | Apache-2.0 | Hugging Face (ollaya-dev/jeeves) |
 
 Comparativas con alternativas de terceros: no disponibles.
 
@@ -90,7 +90,7 @@ Comparativas con alternativas de terceros: no disponibles.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ollaya-dev/jeeves
-- Modelo base en HuggingFace: https://huggingface.co/PostHog/jeeves
+- Modelo en Hugging Face: https://huggingface.co/ollaya-dev/jeeves
+- Modelo base en Hugging Face: https://huggingface.co/PostHog/jeeves
 - Commit de pesos referenciado: https://huggingface.co/PostHog/jeeves/tree/8622b7d1652a9dcb8629486b84dce9e8d690c5cd
 - Repositorio del runtime Ollaya: https://github.com/ollaya-dev/ollaya

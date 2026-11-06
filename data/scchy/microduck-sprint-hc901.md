@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 | Modelo | Tipo | Observaciones / acciones | Frecuencia | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| microduck-sprint-hc901 | Política RL (ONNX) para microduck | 61 / 14 | 50 Hz | no disponible | HuggingFace (0 descargas) |
+| microduck-sprint-hc901 | Política RL (ONNX) para microduck | 61 / 14 | 50 Hz | no disponible | Hugging Face (0 descargas) |
 | Otras políticas microduck | Políticas RL para el mismo robot | no disponible | no disponible | no disponible | no disponible en la información proporcionada |
 | Políticas RL para cuadrúpedos comerciales (p. ej. Unitree, ANYmal) | Políticas RL propietarias o de investigación | no disponible | no disponible | habitualmente no comercial | no disponible |
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento ni de especificaciones de modelos comparab
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SccHy/microduck-sprint-hc901
+- Modelo en Hugging Face: https://huggingface.co/SccHy/microduck-sprint-hc901
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento RL: `pollen-robotics/microduck_rl` (rama `challenge-recipe-publishing`, commit `1efd853be`)
 - Documentación del manifiesto de políticas: `docs/policy-manifest.md` en el repositorio del daemon (no se proporciona URL directa)

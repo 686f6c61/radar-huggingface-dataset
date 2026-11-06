@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gfm-kitchen-toasts-baseline2` es una política robótica (policy) entrenada con LeRobot y publicada en HuggingFace por el usuario `fecasado`. No es un modelo de lenguaje: es un modelo de control visuomotor que mapea observaciones (imágenes de cámara y estado del robot) a acciones de un brazo robótico, en este caso para la tarea concreta de manipular tostadas en una cocina. Su nombre interno de arquitectura es `gaze_flow_matching`, según los metadatos de la model card.
+`gfm-kitchen-toasts-baseline2` es una política robótica (policy) entrenada con LeRobot y publicada en Hugging Face por el usuario `fecasado`. No es un modelo de lenguaje: es un modelo de control visuomotor que mapea observaciones (imágenes de cámara y estado del robot) a acciones de un brazo robótico, en este caso para la tarea concreta de manipular tostadas en una cocina. Su nombre interno de arquitectura es `gaze_flow_matching`, según los metadatos de la model card.
 
 El modelo tiene 75.216.858 parámetros (unos 75,2 M) almacenados en safetensors, con un repositorio de 0,3 GB, y se distribuye bajo licencia Apache 2.0. Está entrenado sobre el dataset `fecasado/toasts-to-plate-320x240`, que sugiere observaciones de 320x240 píxeles. Es relevante como ejemplo de política de imitación ligera y reproducible dentro del ecosistema LeRobot, útil para quien quiera evaluar pipelines de aprendizaje por imitación en robots de bajo coste.
 
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `fecasado/gfm-kitchen-toasts-baseline2` | ~75,2 M | no aplica | Manipulación de tostadas (LeRobot) | Apache 2.0 | HuggingFace |
-| Políticas ACT de LeRobot (referencia del ecosistema) | variable, típicamente decenas de M | no aplica | Imitación visuomotora genérica | Apache 2.0 (LeRobot) | HuggingFace / GitHub |
+| `fecasado/gfm-kitchen-toasts-baseline2` | ~75,2 M | no aplica | Manipulación de tostadas (LeRobot) | Apache 2.0 | Hugging Face |
+| Políticas ACT de LeRobot (referencia del ecosistema) | variable, típicamente decenas de M | no aplica | Imitación visuomotora genérica | Apache 2.0 (LeRobot) | Hugging Face / GitHub |
 | Políticas Diffusion Policy (referencia del ecosistema) | variable | no aplica | Imitación visuomotora genérica | según implementación | Repos académicos |
 
 No se dispone de datos de rendimiento de este modelo ni de comparaciones directas publicadas por el autor, por lo que la comparativa se limita a parámetros, licencia y disponibilidad.
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento de este modelo ni de comparaciones directa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fecasado/gfm-kitchen-toasts-baseline2
+- Modelo en Hugging Face: https://huggingface.co/fecasado/gfm-kitchen-toasts-baseline2
 - Dataset de entrenamiento: https://huggingface.co/datasets/fecasado/toasts-to-plate-320x240
 - Repositorio LeRobot: https://github.com/huggingface/lerobot
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index

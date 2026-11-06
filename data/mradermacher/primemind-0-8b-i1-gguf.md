@@ -23,7 +23,7 @@ La información publicada es extremadamente escasa: no hay licencia declarada, n
 
 ## Arquitectura y entrenamiento
 
-No hay informacion disponible sobre la arquitectura del modelo base CrowdMind/PrimeMind-0.8B en los datos proporcionados. El repositorio analizado es exclusivamente una publicacion de pesos cuantizados: los metadatos internos de la conversion indican `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que confirma que los pesos de partida estaban en formato HuggingFace (safetensors) y que la conversion se hizo con el flujo habitual de llama.cpp.
+No hay informacion disponible sobre la arquitectura del modelo base CrowdMind/PrimeMind-0.8B en los datos proporcionados. El repositorio analizado es exclusivamente una publicacion de pesos cuantizados: los metadatos internos de la conversion indican `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que confirma que los pesos de partida estaban en formato Hugging Face (safetensors) y que la conversion se hizo con el flujo habitual de llama.cpp.
 
 El unico detalle tecnico reseñable es el uso de cuantizacion ponderada por matriz de importancia (imatrix), etiquetada por el autor como `i1`. Este metodo calcula una matriz de importancia a partir de estadisticas de activaciones y la usa para decidir cuantos bits asignar a cada tensor, lo que mejora la relacion calidad/tamano frente a los quants estandar. No se dispone de informacion sobre numero de tokens de entrenamiento, composicion del dataset, fases de RLHF/DPO ni innovaciones arquitectonicas.
 
@@ -85,5 +85,5 @@ No disponible. La informacion proporcionada no incluye benchmarks ni especificac
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/PrimeMind-0.8B-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/PrimeMind-0.8B-i1-GGUF
 - Modelo base: https://huggingface.co/CrowdMind/PrimeMind-0.8B

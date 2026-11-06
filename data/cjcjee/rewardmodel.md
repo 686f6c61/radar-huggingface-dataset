@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RewardModel es un modelo de clasificación de texto publicado por el usuario cjcjee en HuggingFace, obtenido mediante fine-tuning de roberta-base. Se trata de un transformer encoder de tipo RoBERTa con una cabeza de clasificación superpuesta, que suma 124.646.401 parámetros (aproximadamente los 125 M de roberta-base más el cabezal de clasificación). El pipeline declarado es `text-classification` y el repositorio ocupa 0,5 GB. El nombre del modelo sugiere una función de modelo de recompensa (scoring de respuestas), pero la model card no documenta el uso previsto ni el conjunto de datos de entrenamiento, por lo que esa interpretación no está confirmada por el autor.
+RewardModel es un modelo de clasificación de texto publicado por el usuario cjcjee en Hugging Face, obtenido mediante fine-tuning de roberta-base. Se trata de un transformer encoder de tipo RoBERTa con una cabeza de clasificación superpuesta, que suma 124.646.401 parámetros (aproximadamente los 125 M de roberta-base más el cabezal de clasificación). El pipeline declarado es `text-classification` y el repositorio ocupa 0,5 GB. El nombre del modelo sugiere una función de modelo de recompensa (scoring de respuestas), pero la model card no documenta el uso previsto ni el conjunto de datos de entrenamiento, por lo que esa interpretación no está confirmada por el autor.
 
 El modelo se entrenó durante una única época (2379 pasos, batch efectivo de 32, learning rate 1e-6, AdamW fused, precisión mixta nativa) y reporta en su conjunto de evaluación una pérdida de validación de 0,7660 y una exactitud de 0,9537. La model card está generada automáticamente por el Trainer y la mayoría de sus secciones aparecen como "More information needed", incluyendo la descripción del modelo, los usos previstos y la composición de los datos.
 
@@ -77,9 +77,9 @@ Estos valores corresponden al conjunto de evaluación interno del autor, cuya co
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cjcjee/RewardModel | 124,6 M | 512 tokens | text-classification | MIT | HuggingFace |
-| nicholasKluge/RewardModel | no disponible | no disponible | scoring de la calidad de una completion dado un prompt, entrenado con pares prompt/respuesta elegida y rechazada (BERT) | no disponible | HuggingFace |
-| Modelos de recompensa basados en DeBERTa-v3 (familia OpenAssistant y similares) | no disponible en las fuentes consultadas | no disponible en las fuentes consultadas | reward modeling / preferencias | no disponible | HuggingFace |
+| cjcjee/RewardModel | 124,6 M | 512 tokens | text-classification | MIT | Hugging Face |
+| nicholasKluge/RewardModel | no disponible | no disponible | scoring de la calidad de una completion dado un prompt, entrenado con pares prompt/respuesta elegida y rechazada (BERT) | no disponible | Hugging Face |
+| Modelos de recompensa basados en DeBERTa-v3 (familia OpenAssistant y similares) | no disponible en las fuentes consultadas | no disponible en las fuentes consultadas | reward modeling / preferencias | no disponible | Hugging Face |
 
 No se dispone de datos verificados de parametros, contexto, licencia ni benchmarks para las alternativas citadas dentro de la informacion proporcionada; la comparación cuantitativa no es posible con estos datos.
 
@@ -98,7 +98,7 @@ No se dispone de datos verificados de parametros, contexto, licencia ni benchmar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cjcjee/RewardModel
+- Modelo en Hugging Face: https://huggingface.co/cjcjee/RewardModel
 - Modelo base roberta-base: https://huggingface.co/roberta-base
 - Paper de RoBERTa (Liu et al., 2019): https://arxiv.org/abs/1907.11692
 - Repositorio de Transformers: https://github.com/huggingface/transformers

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mark-SLM-V2-302M es un modelo de lenguaje compacto publicado por el usuario miceworks en HuggingFace. Se presenta como una implementación a pequeña escala de la topología DeepSeek2, combinando atención con Multi-Head Latent Attention (MLA) y una arquitectura de mezcla de expertos (MoE) con 16 expertos enrutados y 1 compartido. El modelo declara 329.132.000 parámetros físicos totales, de los cuales 155.723.744 se activan por token, y una ventana de contexto de 4096 tokens.
+Mark-SLM-V2-302M es un modelo de lenguaje compacto publicado por el usuario miceworks en Hugging Face. Se presenta como una implementación a pequeña escala de la topología DeepSeek2, combinando atención con Multi-Head Latent Attention (MLA) y una arquitectura de mezcla de expertos (MoE) con 16 expertos enrutados y 1 compartido. El modelo declara 329.132.000 parámetros físicos totales, de los cuales 155.723.744 se activan por token, y una ventana de contexto de 4096 tokens.
 
 El modelo se distribuye principalmente como un único archivo GGUF cuantizado en IQ4_NL (4 bits no lineal), de 176,84 MiB, lo que lo sitúa en el rango de modelos ejecutables en CPU y en GPUs de consumo muy modestas. La model card incluye especificaciones verificadas con GGUFReader, un manifiesto de verificación y ejemplos de despliegue con Ollama y llama.cpp, lo que sugiere un enfoque en inferencia local.
 
@@ -86,5 +86,5 @@ Los modelos comparables son densos y cuentan con documentación pública de entr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/miceworks/Mark-SLM-V2-302M
+- Hugging Face: https://huggingface.co/miceworks/Mark-SLM-V2-302M
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

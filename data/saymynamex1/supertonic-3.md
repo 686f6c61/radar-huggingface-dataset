@@ -71,8 +71,8 @@ No se dispone de datos comparativos directos entre Supertonic 3 y otros modelos 
 
 ## Enlaces
 
-- Repositorio HuggingFace (oficial): https://huggingface.co/Supertone/supertonic-3
-- Repositorio HuggingFace (mirror mencionado): https://huggingface.co/saymynameX1/supertonic-3
+- Repositorio Hugging Face (oficial): https://huggingface.co/Supertone/supertonic-3
+- Repositorio Hugging Face (mirror mencionado): https://huggingface.co/saymynameX1/supertonic-3
 - Repositorio de cuantización no oficial: https://huggingface.co/q3146dq4/supertonic-3-quant
 - Código fuente y SDK: https://github.com/supertone-inc/supertonic
 - Demo de audio y comparativas: https://supertonic3.github.io/

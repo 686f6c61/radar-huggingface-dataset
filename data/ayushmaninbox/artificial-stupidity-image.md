@@ -80,7 +80,7 @@ No se dispone de modelos comparables en el mismo rango de tamaño (13,7M) y enfo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ayushmaninbox/artificial-stupidity-image
+- Hugging Face: https://huggingface.co/ayushmaninbox/artificial-stupidity-image
 - Repositorio GitHub: https://github.com/ayushmaninbox/artificial-stupidity
 - Referencia RQ-VAE (arXiv:2203.01941): https://arxiv.org/abs/2203.01941
 - OpenMoji (dataset de entrenamiento): https://openmoji.org

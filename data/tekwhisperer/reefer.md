@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `tekwhisperer/reefer` es una ficha de HuggingFace publicada por el usuario tekwhisperer bajo licencia Apache 2.0. Por los metadatos disponibles (tags como "Cannabis", "E-commerce", "Hemp", "Dispensary", "3D printing", "AR", "VR", "Voice" y "No inventory"), parece tratarse de un paquete orientado a un caso de uso vertical de comercio electronico en el sector del cannabis y el canamo, mas que de un modelo de lenguaje convencional. No obstante, la informacion publica no confirma que contenga pesos de modelo, configuracion de arquitectura ni pipeline de inferencia.
+El repositorio `tekwhisperer/reefer` es una ficha de Hugging Face publicada por el usuario tekwhisperer bajo licencia Apache 2.0. Por los metadatos disponibles (tags como "Cannabis", "E-commerce", "Hemp", "Dispensary", "3D printing", "AR", "VR", "Voice" y "No inventory"), parece tratarse de un paquete orientado a un caso de uso vertical de comercio electronico en el sector del cannabis y el canamo, mas que de un modelo de lenguaje convencional. No obstante, la informacion publica no confirma que contenga pesos de modelo, configuracion de arquitectura ni pipeline de inferencia.
 
-El repositorio tiene un tamano de 0.0 GB, cero descargas y cero likes en el momento de la consulta, y el acceso esta restringido (gated), lo que obliga a aceptar condiciones en HuggingFace antes de poder descargar su contenido. Esto impide verificar directamente que artefactos incluye (pesos, adaptadores, datasets, scripts o documentacion).
+El repositorio tiene un tamano de 0.0 GB, cero descargas y cero likes en el momento de la consulta, y el acceso esta restringido (gated), lo que obliga a aceptar condiciones en Hugging Face antes de poder descargar su contenido. Esto impide verificar directamente que artefactos incluye (pesos, adaptadores, datasets, scripts o documentacion).
 
 Dado que no se dispone de informacion sobre arquitectura, parametros, contexto ni datos de entrenamiento, esta ficha se limita a documentar los metadatos disponibles y a marcar explicitamente como "no disponible" todo aquello que no puede confirmarse. No debe interpretarse como un modelo listo para produccion sin una evaluacion previa del contenido real del repositorio.
 
@@ -63,7 +63,7 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace antes de descargar su contenido, lo que anade friccion a cualquier evaluacion tecnica.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de descargar su contenido, lo que anade friccion a cualquier evaluacion tecnica.
 - Ausencia de documentacion tecnica: no se declaran arquitectura, parametros, contexto ni datos de entrenamiento, lo que impide evaluar su idoneidad para produccion.
 - Cero adopcion verificable: cero descargas y cero likes en el momento de la consulta, sin senales de uso por parte de la comunidad.
 - Sector regulado: el dominio del cannabis y el canamo esta sujeto a normativas muy distintas segun la jurisdiccion; cualquier uso comercial exige revision legal especifica.
@@ -73,5 +73,5 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tekwhisperer/reefer
+- Repositorio en Hugging Face: https://huggingface.co/tekwhisperer/reefer
 - DOI asociado: doi:10.57967/hf/3974

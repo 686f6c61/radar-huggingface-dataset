@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`alfred8995/r18-a2-soup-k1k2-50-r` es un modelo de lenguaje publicado en HuggingFace por el usuario alfred8995 bajo licencia Apache 2.0 y con acceso restringido (gated). Se trata de un modelo de aproximadamente 2.018 millones de parametros (2.018.511.234 segun los pesos en safetensors), lo que lo situa en la categoria de modelos pequenos, con un tamano de repositorio de 8,1 GB. La nomenclatura del identificador sugiere una tecnica de model soup (fusion de pesos) sobre checkpoints previos (`k1k2`), aunque no se documenta el procedimiento exacto.
+`alfred8995/r18-a2-soup-k1k2-50-r` es un modelo de lenguaje publicado en Hugging Face por el usuario alfred8995 bajo licencia Apache 2.0 y con acceso restringido (gated). Se trata de un modelo de aproximadamente 2.018 millones de parametros (2.018.511.234 segun los pesos en safetensors), lo que lo situa en la categoria de modelos pequenos, con un tamano de repositorio de 8,1 GB. La nomenclatura del identificador sugiere una tecnica de model soup (fusion de pesos) sobre checkpoints previos (`k1k2`), aunque no se documenta el procedimiento exacto.
 
-El modelo no incluye informacion sobre pipeline, idiomas soportados, arquitectura ni datos de entrenamiento en la ficha de HuggingFace. El unico tag tecnico relevante es `sn38-nanochrono`, que no corresponde a ninguna familia de modelos ampliamente conocida y no permite inferir la arquitectura. La fecha de creacion indicada (2026-10-29) es futura respecto al momento habitual de consulta, lo que puede indicar un error en los metadatos del repositorio.
+El modelo no incluye informacion sobre pipeline, idiomas soportados, arquitectura ni datos de entrenamiento en la ficha de Hugging Face. El unico tag tecnico relevante es `sn38-nanochrono`, que no corresponde a ninguna familia de modelos ampliamente conocida y no permite inferir la arquitectura. La fecha de creacion indicada (2026-10-29) es futura respecto al momento habitual de consulta, lo que puede indicar un error en los metadatos del repositorio.
 
 Su relevancia practica es limitada en el estado actual de la informacion: no hay benchmarks, no hay model card detallada, no hay demo ni documentacion de uso, y el acceso esta restringido. Se trata, por tanto, de un artefacto experimental o de investigacion cuyo comportamiento real no puede evaluarse a partir de los datos publicados.
 
@@ -43,7 +43,7 @@ Tampoco se documentan el volumen de tokens de entrenamiento, la composicion del 
 - Pruebas de inferencia en hardware de consumo: con 2B parametros, es plausible ejecutarlo en GPUs de gama media-alta, aunque no se confirma la arquitectura ni el contexto.
 - Fine-tuning ligero (LoRA/QLoRA): el formato safetensors y el tamano permiten teoricamente adaptaciones con recursos modestos, si bien no hay documentacion que lo respalde.
 - Reproduccion de pipelines de evaluacion: puede integrarse en harnesses de benchmarks para obtener metricas propias, ya que no hay cifras publicadas.
-- Analisis de artefactos de HuggingFace: caso de estudio sobre repositorios gated sin model card, util para quienes auditan procedencia y trazabilidad de pesos.
+- Analisis de artefactos de Hugging Face: caso de estudio sobre repositorios gated sin model card, util para quienes auditan procedencia y trazabilidad de pesos.
 
 ## Benchmarks y rendimiento
 
@@ -73,7 +73,7 @@ La comparativa con alternativas concretas no puede completarse con rigor porque 
 - Ausencia total de model card: no hay informacion sobre datos de entrenamiento, sesgos, idiomas ni comportamiento esperado.
 - Riesgo de alucinacion desconocido: sin evaluacion publicada, no puede caracterizarse la fiabilidad factual.
 - Limitaciones de contexto e idioma no documentadas: no se puede garantizar soporte multilingue ni ventanas largas.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que anade friccion para uso en produccion y para auditorias.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que anade friccion para uso en produccion y para auditorias.
 - Licencia Apache 2.0: permite uso comercial, pero al no haber documentacion de procedencia de los datos de entrenamiento, persiste incertidumbre sobre obligaciones derivadas de los datasets originales.
 - Fecha de creacion anomala (2026-10-29): sugiere metadatos inconsistentes; conviene verificar la integridad del repositorio antes de usarlo.
 - Cero descargas y cero likes: no hay evidencia de uso ni de validacion por parte de la comunidad.
@@ -81,7 +81,7 @@ La comparativa con alternativas concretas no puede completarse con rigor porque 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-soup-k1k2-50-r
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-soup-k1k2-50-r
 - Paper: no disponible
 - Blog: no disponible
 - Repositorio de codigo: no disponible

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mia_sloane es un adaptador LoRA de texto a imagen publicado en HuggingFace por el usuario Forostris. Se trata de un ajuste de bajo rango pensado para ejecutarse sobre el modelo base abenzerps/Qwen-Image-2.1-Uncensored-GGUF, una variante sin censura de la familia Qwen-Image. El repositorio ocupa 0,4 GB y esta etiquetado con la libreria diffusers y la plantilla diffusion-lora, lo que situa al artefacto en el flujo de trabajo habitual de adaptadores para pipelines de difusion.
+mia_sloane es un adaptador LoRA de texto a imagen publicado en Hugging Face por el usuario Forostris. Se trata de un ajuste de bajo rango pensado para ejecutarse sobre el modelo base abenzerps/Qwen-Image-2.1-Uncensored-GGUF, una variante sin censura de la familia Qwen-Image. El repositorio ocupa 0,4 GB y esta etiquetado con la libreria diffusers y la plantilla diffusion-lora, lo que situa al artefacto en el flujo de trabajo habitual de adaptadores para pipelines de difusion.
 
 La model card no aporta practicamente informacion: el README se reduce a un titulo de una letra, una galeria vacia, un enlace de descarga y un valor nulo en instance_prompt. No se declaran licencia, idiomas, parametros de entrenamiento, rango del adaptador ni palabra de activacion, de modo que no es posible determinar con rigor que personaje, estilo o concepto reproduce el LoRA mas alla de la pista que ofrece su propio nombre.
 
@@ -23,7 +23,7 @@ Su relevancia actual es muy limitada: acumula 0 descargas y 0 me gusta, no inclu
 | Tipo de tarea | text-to-image (pipeline de difusion) |
 | Tamano del repositorio | 0,4 GB |
 | Descargas / me gusta | 0 / 0 |
-| Fecha de creacion | 2026-10-09 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-10-09 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Forostris/mia_sloane | LoRA de texto a imagen | abenzerps/Qwen-Image-2.1-Uncensored-GGUF | 0,4 GB | no disponible | 0 descargas, 0 me gusta | sin benchmarks publicados |
 | abenzerps/Qwen-Image-2.1-Uncensored-GGUF | Modelo de difusion completo (referencia) | no aplica | no disponible | no disponible | no disponible | no disponible |
 | Sloane aka Mia Sara - v1 FLUX (ShuTeye404) | LoRA de texto a imagen | FLUX.1 | no disponible | no disponible | publicado en TensorHub Art y Tensor.Art | no disponible |
-| LoRA de personaje generico para FLUX.1 o SDXL | LoRA de texto a imagen | FLUX.1 / SDXL | habitualmente entre 0,1 y 1 GB | variable segun autor | amplia en HuggingFace y Civitai | no disponible |
+| LoRA de personaje generico para FLUX.1 o SDXL | LoRA de texto a imagen | FLUX.1 / SDXL | habitualmente entre 0,1 y 1 GB | variable segun autor | amplia en Hugging Face y Civitai | no disponible |
 
 Nota: la coincidencia de nombre entre mia_sloane y el LoRA "Sloane aka Mia Sara" de ShuTeye404 no implica relacion oficial entre ambos; se incluye unicamente como referencia de categoria y estilo.
 
@@ -92,7 +92,7 @@ Nota: la coincidencia de nombre entre mia_sloane y el LoRA "Sloane aka Mia Sara"
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Forostris/mia_sloane
+- Modelo en Hugging Face: https://huggingface.co/Forostris/mia_sloane
 - Modelo base declarado: https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF
 - LoRA de referencia "Sloane aka Mia Sara - v1 FLUX" en TensorHub Art: https://tensorhub.art/models/950761243617044234
 - LoRA de referencia "Sloane aka Mia Sara - v1 FLUX" en Tensor.Art: https://tensor.art/models/950761243617044234

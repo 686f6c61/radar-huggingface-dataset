@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Arquitectura | Tamaño | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SayedShaun/bengali-whisper-medium-ct2 (este) | Whisper medium + CTranslate2 int8 | ~0.8 GB (repo) | 30 s (Whisper) | Apache-2.0 | HuggingFace |
-| SayedShaun/bengali-whisper-medium (base) | Whisper medium (float32) | ~1.5 GB (estimado) | 30 s (Whisper) | Apache-2.0 | HuggingFace |
-| zarifmahir21/whisper-medium-bangla | Whisper medium (fine-tune) | ~1.5 GB (estimado) | 30 s (Whisper) | Apache-2.0 | HuggingFace |
+| SayedShaun/bengali-whisper-medium-ct2 (este) | Whisper medium + CTranslate2 int8 | ~0.8 GB (repo) | 30 s (Whisper) | Apache-2.0 | Hugging Face |
+| SayedShaun/bengali-whisper-medium (base) | Whisper medium (float32) | ~1.5 GB (estimado) | 30 s (Whisper) | Apache-2.0 | Hugging Face |
+| zarifmahir21/whisper-medium-bangla | Whisper medium (fine-tune) | ~1.5 GB (estimado) | 30 s (Whisper) | Apache-2.0 | Hugging Face |
 
 La principal diferencia con el modelo base es la optimización: esta versión `ct2` es más rápida y ligera, ideal para despliegues en producción. Comparado con `zarifmahir21/whisper-medium-bangla`, ambos son fine-tunes de Whisper medium para bengalí, pero no se dispone de comparaciones de rendimiento directas. La ventaja de esta conversión es su compatibilidad inmediata con `faster-whisper` y su menor huella de memoria.
 
@@ -78,7 +78,7 @@ La principal diferencia con el modelo base es la optimización: esta versión `c
 
 ## Enlaces
 
-- [Modelo en HuggingFace (SayedShaun/bengali-whisper-medium-ct2)](https://huggingface.co/SayedShaun/bengali-whisper-medium-ct2)
+- [Modelo en Hugging Face (SayedShaun/bengali-whisper-medium-ct2)](https://huggingface.co/SayedShaun/bengali-whisper-medium-ct2)
 - [Modelo base (SayedShaun/bengali-whisper-medium)](https://huggingface.co/SayedShaun/bengali-whisper-medium)
 - [Repositorio faster-whisper (SYSTRAN)](https://github.com/SYSTRAN/faster-whisper)
 - [Repositorio asr-punct-restore (restauración de puntuación)](https://github.com/sayedshaun/asr-punct-restore)

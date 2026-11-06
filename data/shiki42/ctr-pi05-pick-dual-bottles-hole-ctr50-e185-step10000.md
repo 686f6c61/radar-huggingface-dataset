@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ctr-pi05-pick-dual-bottles-hole-ctr50-e185-step10000` es un checkpoint de inferencia de robótica publicado por el usuario Shiki42 en HuggingFace. Corresponde al experimento denominado E185 dentro de la serie CTR, ejecutado sobre el benchmark RoboTwin, y consiste en un ajuste fino mediante LoRA del modelo PI0.5 (familia de modelos visión-lenguaje-acción, VLA) durante 10.000 pasos de optimizador. La tarea objetivo es la manipulacion descrita como "agarrar dos botellas y cavar un agujero" (抓双瓶挖洞), con un presupuesto de 50 escenas fuente equivalentes y una demostración por escena.
+`ctr-pi05-pick-dual-bottles-hole-ctr50-e185-step10000` es un checkpoint de inferencia de robótica publicado por el usuario Shiki42 en Hugging Face. Corresponde al experimento denominado E185 dentro de la serie CTR, ejecutado sobre el benchmark RoboTwin, y consiste en un ajuste fino mediante LoRA del modelo PI0.5 (familia de modelos visión-lenguaje-acción, VLA) durante 10.000 pasos de optimizador. La tarea objetivo es la manipulacion descrita como "agarrar dos botellas y cavar un agujero" (抓双瓶挖洞), con un presupuesto de 50 escenas fuente equivalentes y una demostración por escena.
 
 El checkpoint se publicó el 27 de septiembre de 2026, a petición del autor, para preservar los artefactos antes del apagado de la máquina de entrenamiento. El repositorio ocupa 6,3 GB e incluye los parámetros del modelo, los activos de normalización y los metadatos; el estado del optimizador se excluyó deliberadamente. Cada archivo va acompañado de su hash SHA-256 en el fichero `SHA256SUMS`.
 
@@ -72,7 +72,7 @@ No se dispone de datos verificables para una comparativa cuantitativa. La inform
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ctr-pi05-pick-dual-bottles-hole-ctr50-e185-step10000 | Checkpoint LoRA sobre PI0.5 para manipulación (RoboTwin) | No disponible | No disponible | `other` | Pesos abiertos en HuggingFace (6,3 GB) |
+| ctr-pi05-pick-dual-bottles-hole-ctr50-e185-step10000 | Checkpoint LoRA sobre PI0.5 para manipulación (RoboTwin) | No disponible | No disponible | `other` | Pesos abiertos en Hugging Face (6,3 GB) |
 | PI0.5 (modelo base) | Modelo visión-lenguaje-acción | No disponible en esta información | No disponible | No disponible | No disponible en esta información |
 | Otros checkpoints del barrido CTR sobre RoboTwin | Checkpoints LoRA comparables | No disponible | No disponible | No disponible | No disponible en esta información |
 
@@ -90,6 +90,6 @@ No se dispone de datos verificables para una comparativa cuantitativa. La inform
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Shiki42/ctr-pi05-pick-dual-bottles-hole-ctr50-e185-step10000
+- Hugging Face: https://huggingface.co/Shiki42/ctr-pi05-pick-dual-bottles-hole-ctr50-e185-step10000
 - Registro del experimento CTR E185: referenciado en la model card, no enlazado ni disponible en la información proporcionada.
 - Paper, blog, repositorio de código o demo: no disponible.

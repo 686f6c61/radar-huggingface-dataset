@@ -93,7 +93,7 @@ La comparación con Piper y Kokoro es orientativa: no se dispone de benchmarks c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/loom-ai-org/vaniq-edge-loom
+- Modelo en Hugging Face: https://huggingface.co/loom-ai-org/vaniq-edge-loom
 - Modelo base: https://huggingface.co/Abiray/Vaniq-Edge
 - Repositorio loom.cpp: https://github.com/loom-ai-org/loom.cpp
 - Exportador loom-exporter: https://github.com/loom-ai-org/loom-exporter

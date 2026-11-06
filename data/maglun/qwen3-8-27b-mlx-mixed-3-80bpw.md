@@ -21,7 +21,7 @@ La licencia es Apache 2.0, heredada del modelo base, lo que permite uso comercia
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (MLX-VLM) |
 
-Nota: el campo "Parámetros totales" en la página de HuggingFace muestra 4.024.519.920, un valor inconsistente con la model card del autor, que indica 26.895.998.464 parámetros solo para la torre de texto. Se ha utilizado el dato de la model card por ser más fiable.
+Nota: el campo "Parámetros totales" en la página de Hugging Face muestra 4.024.519.920, un valor inconsistente con la model card del autor, que indica 26.895.998.464 parámetros solo para la torre de texto. Se ha utilizado el dato de la model card por ser más fiable.
 
 ## Arquitectura y entrenamiento
 
@@ -84,6 +84,6 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/maglun/Qwen3.8-27B-MLX-Mixed-3.80bpw)
+- [Modelo en Hugging Face](https://huggingface.co/maglun/Qwen3.8-27B-MLX-Mixed-3.80bpw)
 - [Modelo base Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [Commit de MLX-VLM utilizado para validación](https://github.com/Blaizzy/mlx-vlm/commit/738e44063f145f7df24acc375e33c379053982d5)

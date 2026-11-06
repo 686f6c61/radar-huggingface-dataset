@@ -62,7 +62,7 @@ No se han publicado resultados detallados de benchmarks en la información dispo
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| DA3-BASE | 135M | No aplica | Apache 2.0 | HuggingFace, GitHub | Nuevo SOTA en geometría visual multi-view |
+| DA3-BASE | 135M | No aplica | Apache 2.0 | Hugging Face, GitHub | Nuevo SOTA en geometría visual multi-view |
 | Depth Anything 2 | No disponible | No aplica | No disponible | No disponible | Modelo de profundidad monocular, superado por DA3 |
 | VGGT | No disponible | No aplica | No disponible | No disponible | Modelo multi-view previo, superado por DA3 en pose y geometría |
 
@@ -72,13 +72,13 @@ No se han publicado resultados detallados de benchmarks en la información dispo
 - El rendimiento puede degradarse con imágenes de baja calidad, condiciones de iluminación extremas o escenas con geometría ambigua (superficies reflectantes, oclusiones complejas).
 - Al ser un modelo de visión, no aplican sesgos lingüísticos, pero sí pueden existir sesgos en la estimación de profundidad según la distribución de los datos de entrenamiento.
 - La licencia Apache 2.0 permite uso comercial sin restricciones adicionales, siempre que se cumplan los términos de la licencia.
-- Se recomienda verificar la procedencia del repositorio: el modelo está disponible como `AST-1320/DA3-BASE` en HuggingFace, pero la model card hace referencia a `depth-anything/da3-base` como fuente oficial. Conviene utilizar la versión oficial para producción.
+- Se recomienda verificar la procedencia del repositorio: el modelo está disponible como `AST-1320/DA3-BASE` en Hugging Face, pero la model card hace referencia a `depth-anything/da3-base` como fuente oficial. Conviene utilizar la versión oficial para producción.
 
 ## Enlaces
 
-- HuggingFace (repositorio consultado): https://huggingface.co/AST-1320/DA3-BASE
+- Hugging Face (repositorio consultado): https://huggingface.co/AST-1320/DA3-BASE
 - Página del proyecto: https://depth-anything-3.github.io
 - Paper: https://arxiv.org/abs/2511.10647
 - Repositorio de GitHub: https://github.com/ByteDance-Seed/depth-anything-3
-- Demo en HuggingFace: https://huggingface.co/spaces/depth-anything/Depth-Anything-3
+- Demo en Hugging Face: https://huggingface.co/spaces/depth-anything/Depth-Anything-3
 - Documentación: https://github.com/ByteDance-Seed/depth-anything-3#-useful-documentation

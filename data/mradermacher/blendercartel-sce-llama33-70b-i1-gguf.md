@@ -68,7 +68,7 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/BlenderCartel-SCE-llama33-70B-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/BlenderCartel-SCE-llama33-70B-i1-GGUF
 - Modelo base (KaraKaraWarehouse): https://huggingface.co/KaraKaraWarehouse/BlenderCartel-SCE-llama33-70B
 - Pagina del autor mradermacher: https://huggingface.co/mradermacher
 - Modelo similar de KaraKaraWitch: https://huggingface.co/KaraKaraWitch/BlenderCartel-SCE-llama33-70B

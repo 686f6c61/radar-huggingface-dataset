@@ -23,7 +23,7 @@ La licencia Apache 2.0 y el soporte declarado únicamente para inglés lo sitúa
 
 ## Arquitectura y entrenamiento
 
-No se dispone de detalles arquitectónicos en la información proporcionada más allá de que se trata de un modelo multimodal de 7.615.616.512 parámetros con proyector visual separado (mmproj), lo que implica un codificador de visión conectado a un modelo de lenguaje mediante un adaptador. El pipeline declarado en HuggingFace es "no disponible", por lo que no se confirma la tarea exacta ni la clase de arquitectura (transformer denso, híbrido, etc.).
+No se dispone de detalles arquitectónicos en la información proporcionada más allá de que se trata de un modelo multimodal de 7.615.616.512 parámetros con proyector visual separado (mmproj), lo que implica un codificador de visión conectado a un modelo de lenguaje mediante un adaptador. El pipeline declarado en Hugging Face es "no disponible", por lo que no se confirma la tarea exacta ni la clase de arquitectura (transformer denso, híbrido, etc.).
 
 El entrenamiento se realizó sobre los datasets inclusionAI/ZoomBench e inclusionAI/ZwZ-RL-VQA. El segundo nombre sugiere una fase de aprendizaje por refuerzo (RL) sobre tareas VQA, aunque no se especifica el algoritmo (RLHF, DPO, GRPO u otro), el número de tokens de entrenamiento ni la composición exacta del corpus. Tampoco se documentan innovaciones técnicas como decodificación especulativa o atención lineal.
 
@@ -33,7 +33,7 @@ El entrenamiento se realizó sobre los datasets inclusionAI/ZoomBench e inclusio
 - Respuesta a preguntas sobre imágenes (VQA) gracias al proyector multimodal incluido en el repositorio.
 - Razonamiento visual orientado a detalles finos, inferido del uso del dataset ZoomBench en el entrenamiento.
 - Procesamiento de entradas multimodales imagen + texto en un único pipeline.
-- Compatibilidad con endpoints (tag `endpoints_compatible` en HuggingFace).
+- Compatibilidad con endpoints (tag `endpoints_compatible` en Hugging Face).
 - Soporte de tool calling / function calling: no disponible en la información proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
 - Capacidades multilingües: limitadas al inglés según el campo `language`.
@@ -86,7 +86,7 @@ Los datos de los modelos comparativos no provienen de la información proporcion
 - Licencia: Apache 2.0 permite uso comercial, pero conviene revisar las condiciones del modelo base inclusionAI/ZwZ-7B y de los datasets de entrenamiento por posibles restricciones adicionales.
 - Producción: la cuantización GGUF introduce pérdida de calidad frente al modelo base; para tareas críticas se recomienda Q8_0 o f16 y validación con un conjunto propio.
 - El repositorio tiene 385 descargas y 1 like, lo que indica poca validación comunitaria; no hay evidencia de uso en producción a gran escala.
-- El pipeline no está declarado en HuggingFace, lo que puede complicar la carga automática con `transformers`.
+- El pipeline no está declarado en Hugging Face, lo que puede complicar la carga automática con `transformers`.
 
 ## Enlaces
 

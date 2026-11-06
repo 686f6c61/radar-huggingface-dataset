@@ -79,8 +79,8 @@ La comparativa es limitada porque no se dispone de datos de rendimiento para GLM
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mlx-community/GLM-5.3-4bit
-- Modelo base en HuggingFace: https://huggingface.co/zai-org/GLM-5.3-BF16
+- Modelo en Hugging Face: https://huggingface.co/mlx-community/GLM-5.3-4bit
+- Modelo base en Hugging Face: https://huggingface.co/zai-org/GLM-5.3-BF16
 - Repositorio de cuantizaciones adicionales: https://huggingface.co/bibproj
 - Runtime MLX para GLM-5.3: https://github.com/PipeNetwork/glm53-mlx
 - Pagina de OpenLM.ai sobre GLM-5.3: https://openlm.ai/glm-5.3/

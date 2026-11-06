@@ -102,9 +102,9 @@ No hay puntuación en conjunto sellado (sealed test) para este modelo; todas las
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| heed-tasks-qwen3-0.6b-exp054 | 751.632.384 | 1.024 tokens | F1 76,2 en validación; F1 75,3 en teléfono | Apache-2.0 | HuggingFace (0 descargas) |
-| heed-tasks-qwen3-0.6b | No disponible | No disponible | No disponible (incluye 1.696 notas dirigidas) | Apache-2.0 | HuggingFace |
-| Qwen/Qwen3-0.6B-Base | 0,6B (aproximado) | No disponible en la información | No disponible | Apache-2.0 | HuggingFace |
+| heed-tasks-qwen3-0.6b-exp054 | 751.632.384 | 1.024 tokens | F1 76,2 en validación; F1 75,3 en teléfono | Apache-2.0 | Hugging Face (0 descargas) |
+| heed-tasks-qwen3-0.6b | No disponible | No disponible | No disponible (incluye 1.696 notas dirigidas) | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3-0.6B-Base | 0,6B (aproximado) | No disponible en la información | No disponible | Apache-2.0 | Hugging Face |
 
 No se dispone de datos de benchmarks de los modelos comparables en la información proporcionada, por lo que la comparación de rendimiento no es posible.
 
@@ -121,7 +121,7 @@ No se dispone de datos de benchmarks de los modelos comparables en la informaci�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mohitkrconnect/heed-tasks-qwen3-0.6b-exp054
+- Modelo en Hugging Face: https://huggingface.co/mohitkrconnect/heed-tasks-qwen3-0.6b-exp054
 - Modelo sucesor: https://huggingface.co/mohitkrconnect/heed-tasks-qwen3-0.6b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B-Base
 - Sección "How to use it" del modelo principal: https://huggingface.co/mohitkrconnect/heed-tasks-qwen3-0.6b#2-how-to-use-it

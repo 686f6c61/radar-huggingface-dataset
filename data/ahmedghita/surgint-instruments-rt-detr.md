@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AhmedGhita/surgint-instruments-rt-detr es un modelo de deteccion de objetos publicado en HuggingFace por el usuario AhmedGhita, construido sobre la arquitectura RT-DETR (Real-Time DEtection TRansformer). El nombre del repositorio sugiere un ajuste fino orientado a la deteccion de instrumentos quirurgicos ("surgint" como abreviatura de surgical instruments), aunque la model card no documenta el dominio, el dataset ni el procedimiento de entrenamiento empleado, por lo que esa finalidad no puede confirmarse a partir de la informacion disponible.
+AhmedGhita/surgint-instruments-rt-detr es un modelo de deteccion de objetos publicado en Hugging Face por el usuario AhmedGhita, construido sobre la arquitectura RT-DETR (Real-Time DEtection TRansformer). El nombre del repositorio sugiere un ajuste fino orientado a la deteccion de instrumentos quirurgicos ("surgint" como abreviatura de surgical instruments), aunque la model card no documenta el dominio, el dataset ni el procedimiento de entrenamiento empleado, por lo que esa finalidad no puede confirmarse a partir de la informacion disponible.
 
 El modelo tiene 20.123.652 parametros reales segun los pesos en formato safetensors, lo que lo situa en el rango de las variantes ligeras de la familia RT-DETR. El repositorio ocupa 0,1 GB y se distribuye bajo licencia MIT, lo que permite uso comercial sin restricciones de copyleft. Registra 0 descargas y 0 likes en el momento de la consulta, y no incluye pipeline declarado ni idiomas especificados, algo coherente con un modelo de vision por computador en lugar de un modelo de lenguaje.
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Tarea | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AhmedGhita/surgint-instruments-rt-detr | 20,1 M | Deteccion de objetos | no aplica | MIT | HuggingFace, 0 descargas |
+| AhmedGhita/surgint-instruments-rt-detr | 20,1 M | Deteccion de objetos | no aplica | MIT | Hugging Face, 0 descargas |
 | RT-DETR-R18 (oficial, lyuwenyu/RT-DETR) | ~20 M | Deteccion de objetos en tiempo real | no aplica | Apache 2.0 (repositorio oficial) | GitHub y checkpoints publicos, ampliamente usado |
 | RT-DETRv4 | no disponible en la informacion recogida | Deteccion de objetos en tiempo real con destilacion | no aplica | no disponible en la informacion recogida | Repositorio GitHub y paper ECCV 2026 |
 | YOLOv8s | ~11,2 M | Deteccion de objetos en tiempo real | no aplica | AGPL-3.0 (Ultralytics) | Ecosistema Ultralytics, muy extendido |
@@ -94,7 +94,7 @@ Los datos de los modelos comparativos son valores generales de familia y no se h
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AhmedGhita/surgint-instruments-rt-detr
+- Modelo en Hugging Face: https://huggingface.co/AhmedGhita/surgint-instruments-rt-detr
 - Perfil del autor: https://huggingface.co/AhmedGhita
 - Documentacion de RT-DETR en Transformers: https://huggingface.co/docs/transformers/model_doc/rt_detr
 - Repositorio oficial de RT-DETR (CVPR 2024): https://github.com/lyuwenyu/RT-DETR

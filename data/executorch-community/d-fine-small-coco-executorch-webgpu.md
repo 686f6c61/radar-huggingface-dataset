@@ -70,7 +70,7 @@ No se dispone de datos de rendimiento ni de especificaciones comparables en la i
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| D-FINE-Small-COCO-ExecuTorch-WebGPU | 10,3M | no aplica | Apache 2.0 | `.pte` (WebGPU) | HuggingFace, demo en playground |
+| D-FINE-Small-COCO-ExecuTorch-WebGPU | 10,3M | no aplica | Apache 2.0 | `.pte` (WebGPU) | Hugging Face, demo en playground |
 | Otras variantes de D-FINE | no disponible | no aplica | no disponible | no disponible | no disponible |
 | Otros detectores DETR pequenos | no disponible | no aplica | no disponible | no disponible | no disponible |
 
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento ni de especificaciones comparables en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/executorch-community/D-FINE-Small-COCO-ExecuTorch-WebGPU
+- Modelo en Hugging Face: https://huggingface.co/executorch-community/D-FINE-Small-COCO-ExecuTorch-WebGPU
 - Modelo base: https://huggingface.co/ustc-community/dfine-small-coco
 - Paper de D-FINE: https://arxiv.org/abs/2410.13842
 - Repositorio oficial de D-FINE (autor original): https://github.com/Peterande/D-FINE

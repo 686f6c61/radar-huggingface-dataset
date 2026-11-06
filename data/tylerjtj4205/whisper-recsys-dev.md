@@ -60,4 +60,4 @@ No se dispone de información sobre modelos comparables. El nombre "whisper-recs
 
 ## Enlaces
 
-- [HuggingFace: tylerjtj4205/whisper-recsys-dev](https://huggingface.co/tylerjtj4205/whisper-recsys-dev)
+- [Hugging Face: tylerjtj4205/whisper-recsys-dev](https://huggingface.co/tylerjtj4205/whisper-recsys-dev)

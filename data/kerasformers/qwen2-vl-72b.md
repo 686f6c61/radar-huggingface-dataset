@@ -67,7 +67,7 @@ No hay información específica de comparativa en la model card. Como referencia
 
 ## Enlaces
 
-- Model card de HuggingFace: https://huggingface.co/kerasformers/qwen2-vl-72b
+- Model card de Hugging Face: https://huggingface.co/kerasformers/qwen2-vl-72b
 - Modelo base original: https://huggingface.co/Qwen/Qwen2-VL-72B
 - Repositorio KerasFormers: https://github.com/IMvision12/KerasFormers
 - Documentación de Qwen2-VL en KerasFormers: https://imvision12.github.io/KerasFormers/qwen2_vl/

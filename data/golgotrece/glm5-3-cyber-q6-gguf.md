@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLM5.3-Cyber-Q6-GGUF es un repositorio de pesos en formato GGUF publicado por el usuario golgotrece en HuggingFace. Se trata, por tanto, de una cuantizacion o redistribucion de un modelo preexistente y no de un entrenamiento original: el autor figura como subidor, no como desarrollador del modelo base. El identificador sugiere una variante de la familia GLM (Zhipu AI / Z.ai) con algun ajuste o tematica de ciberseguridad, aunque esta ascripcion no esta confirmada en la informacion disponible y debe tratarse como inferencia a partir del nombre.
+GLM5.3-Cyber-Q6-GGUF es un repositorio de pesos en formato GGUF publicado por el usuario golgotrece en Hugging Face. Se trata, por tanto, de una cuantizacion o redistribucion de un modelo preexistente y no de un entrenamiento original: el autor figura como subidor, no como desarrollador del modelo base. El identificador sugiere una variante de la familia GLM (Zhipu AI / Z.ai) con algun ajuste o tematica de ciberseguridad, aunque esta ascripcion no esta confirmada en la informacion disponible y debe tratarse como inferencia a partir del nombre.
 
 El dato mas relevante es su escala: 753.329.940.480 parametros (unos 753.000 millones), lo que lo situa en la categoria de modelos frontera, muy por encima de los modelos abiertos habituales de 7B a 70B. El repositorio ocupa 445,6 GB y lleva la etiqueta Q6, compatible con endpoints y con uso conversacional. El numero de descargas (4) y de likes (0) indica que es un artefacto practicamente sin adopcion ni validacion por parte de la comunidad.
 
@@ -67,11 +67,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 ## Comparativa con modelos similares
 
-No disponible. En la informacion proporcionada no se identifican modelos comparables, ni en la ficha del repositorio ni en los resultados de la busqueda web, que solo devuelve un listado generico de modelos GGUF en HuggingFace. Tampoco se dispone de datos del modelo base del que procede esta cuantizacion, por lo que cualquier tabla comparativa seria especulativa.
+No disponible. En la informacion proporcionada no se identifican modelos comparables, ni en la ficha del repositorio ni en los resultados de la busqueda web, que solo devuelve un listado generico de modelos GGUF en Hugging Face. Tampoco se dispone de datos del modelo base del que procede esta cuantizacion, por lo que cualquier tabla comparativa seria especulativa.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| GLM5.3-Cyber-Q6-GGUF | 753,3 mil millones | no disponible | no disponible | HuggingFace (GGUF) |
+| GLM5.3-Cyber-Q6-GGUF | 753,3 mil millones | no disponible | no disponible | Hugging Face (GGUF) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -89,7 +89,7 @@ No disponible. En la informacion proporcionada no se identifican modelos compara
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/golgotrece/GLM5.3-Cyber-Q6-GGUF
-- Listado de modelos GGUF en HuggingFace (resultado de busqueda, no especifico del modelo): https://huggingface.co/models?p=0&sort=modified&search=gguf
+- Repositorio en Hugging Face: https://huggingface.co/golgotrece/GLM5.3-Cyber-Q6-GGUF
+- Listado de modelos GGUF en Hugging Face (resultado de busqueda, no especifico del modelo): https://huggingface.co/models?p=0&sort=modified&search=gguf
 
 No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos asociados a este modelo.

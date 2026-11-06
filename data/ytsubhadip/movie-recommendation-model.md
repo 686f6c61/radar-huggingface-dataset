@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `YTsubhadip/movie-recommendation-model` es un sistema de recomendacion de peliculas publicado en HuggingFace por el usuario YTsubhadip bajo licencia MIT. El repositorio tiene un tamano de 0.2 GB y fue creado en agosto de 2026. La model card es extremadamente minimalista: unicamente declara la licencia MIT, sin especificar arquitectura, parametros, pipeline, idiomas ni datos de entrenamiento.
+El modelo `YTsubhadip/movie-recommendation-model` es un sistema de recomendacion de peliculas publicado en Hugging Face por el usuario YTsubhadip bajo licencia MIT. El repositorio tiene un tamano de 0.2 GB y fue creado en agosto de 2026. La model card es extremadamente minimalista: unicamente declara la licencia MIT, sin especificar arquitectura, parametros, pipeline, idiomas ni datos de entrenamiento.
 
 La relevancia de este modelo reside en su proposito declarado: la recomendacion de peliculas, un caso de uso clasico de sistemas de filtrado colaborativo y basados en contenido. Sin embargo, la ausencia total de documentacion tecnica, benchmarks y ejemplos de uso en la model card limita severamente su evaluacion como candidato para integracion en produccion. No se dispone de informacion sobre el algoritmo subyacente (si es un modelo de embeddings, un sistema de filtrado colaborativo, un transformer, etc.), ni sobre el dataset utilizado para su entrenamiento.
 
@@ -40,7 +40,7 @@ Dada la ausencia de documentacion, los casos de uso son hipoteticos y dependen d
 - Motor de descubrimiento de contenido: podria utilizarse para generar listas de "peliculas similares" a partir de un titulo de referencia, si el modelo esta entrenado con embeddings de peliculas.
 - Prototipo educativo: dado su tamano reducido (0.2 GB) y licencia MIT, podria servir como material de estudio para comprender sistemas de recomendacion, aunque no hay documentacion que lo confirme.
 - Integracion en aplicaciones de catalogo: podria incorporarse en una aplicacion web o movil para personalizar sugerencias, siempre que se pueda determinar su interfaz de entrada y salida.
-- Investigacion academica: como caso de estudio de modelos publicados sin documentacion, para analizar la reproducibilidad y la calidad de los artefactos en HuggingFace.
+- Investigacion academica: como caso de estudio de modelos publicados sin documentacion, para analizar la reproducibilidad y la calidad de los artefactos en Hugging Face.
 - Benchmark de sistemas de recomendacion: podria evaluarse contra datasets estandar como MovieLens, aunque no se dispone de informacion sobre el dataset de entrenamiento.
 
 ## Benchmarks y rendimiento
@@ -80,5 +80,5 @@ La comparacion no es posible en terminos de rendimiento porque este modelo no pu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/YTsubhadip/movie-recommendation-model
+- Repositorio Hugging Face: https://huggingface.co/YTsubhadip/movie-recommendation-model
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo especifico. Los resultados de busqueda web corresponden a articulos generales sobre sistemas de recomendacion de peliculas, no a este modelo en particular.

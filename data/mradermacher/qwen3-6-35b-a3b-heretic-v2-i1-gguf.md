@@ -80,7 +80,7 @@ La principal diferencia frente al modelo original es la eliminación de la censu
 
 ## Enlaces
 
-- Repositorio HuggingFace (este modelo): https://huggingface.co/mradermacher/Qwen3.6-35B-A3B-heretic-v2-i1-GGUF
+- Repositorio Hugging Face (este modelo): https://huggingface.co/mradermacher/Qwen3.6-35B-A3B-heretic-v2-i1-GGUF
 - Repositorio estático con quants sin imatrix y archivos mmproj: https://huggingface.co/mradermacher/Qwen3.6-35B-A3B-heretic-v2-GGUF
 - Modelo base (safetensors): https://huggingface.co/trohrbaugh/Qwen3.6-35B-A3B-heretic-v2
 - Documentación de vLLM Ascend para Qwen3.6-35B-A3B: https://docs.vllm.ai/projects/ascend/en/latest/tutorials/models/Qwen3.6-35B-A3B.html

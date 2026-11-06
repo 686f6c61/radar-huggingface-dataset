@@ -2,9 +2,9 @@
 
 ## Resumen
 
-StateVLM_emb_20000 es un modelo publicado en HuggingFace por el usuario Xiaowen bajo licencia Apache 2.0. Se trata de un checkpoint con 8.105.606.644 parametros (aproximadamente 8,11 mil millones) almacenados en formato safetensors, con un repositorio que ocupa 16,2 GB. La model card publicada por el autor se limita a la declaracion de licencia, sin descripcion de arquitectura, datos de entrenamiento, capacidades ni resultados de evaluacion.
+StateVLM_emb_20000 es un modelo publicado en Hugging Face por el usuario Xiaowen bajo licencia Apache 2.0. Se trata de un checkpoint con 8.105.606.644 parametros (aproximadamente 8,11 mil millones) almacenados en formato safetensors, con un repositorio que ocupa 16,2 GB. La model card publicada por el autor se limita a la declaracion de licencia, sin descripcion de arquitectura, datos de entrenamiento, capacidades ni resultados de evaluacion.
 
-Los metadatos de HuggingFace incluyen las etiquetas `statevlm` y `custom_code`. La primera sugiere un identificador interno del proyecto y la segunda indica que el modelo requiere codigo Python propio del repositorio para poder instanciarse, es decir, que no se apoya exclusivamente en clases estandar de `transformers`. No se dispone de informacion que confirme si se trata de un modelo de lenguaje, de un modelo vision-lenguaje o de una arquitectura hibrida.
+Los metadatos de Hugging Face incluyen las etiquetas `statevlm` y `custom_code`. La primera sugiere un identificador interno del proyecto y la segunda indica que el modelo requiere codigo Python propio del repositorio para poder instanciarse, es decir, que no se apoya exclusivamente en clases estandar de `transformers`. No se dispone de informacion que confirme si se trata de un modelo de lenguaje, de un modelo vision-lenguaje o de una arquitectura hibrida.
 
 El modelo acumula 0 descargas y 0 likes en el momento de redactar esta ficha, y no se han publicado resultados de benchmarks ni documentacion tecnica asociada. Su relevancia actual es limitada para produccion, pero puede ser de interes para quien quiera inspeccionar la implementacion adjunta mediante `trust_remote_code=True`, siempre asumiendo el riesgo de ejecutar codigo no auditado.
 
@@ -97,5 +97,5 @@ La comparacion se limita a especificaciones, ya que StateVLM_emb_20000 no tiene 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Xiaowen/StateVLM_emb_20000
+- Hugging Face: https://huggingface.co/Xiaowen/StateVLM_emb_20000
 - No se han encontrado papers, blogs, repositorios ni demos asociados en la informacion disponible.

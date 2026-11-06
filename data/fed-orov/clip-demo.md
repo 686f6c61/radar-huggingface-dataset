@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Fed-orov/clip-demo es un repositorio experimental alojado en HuggingFace que contiene una implementación propia de CLIP orientada a tareas de clasificación. No se trata de un modelo entrenado, sino de un andamiaje de código (eval.py, config.json, training_args.json y model.safetensors) pensado para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. El propio autor indica explícitamente en la model card que el checkpoint incluido es una inicialización válida para pruebas de humo y que no se reclama ninguna métrica de benchmark.
+Fed-orov/clip-demo es un repositorio experimental alojado en Hugging Face que contiene una implementación propia de CLIP orientada a tareas de clasificación. No se trata de un modelo entrenado, sino de un andamiaje de código (eval.py, config.json, training_args.json y model.safetensors) pensado para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. El propio autor indica explícitamente en la model card que el checkpoint incluido es una inicialización válida para pruebas de humo y que no se reclama ninguna métrica de benchmark.
 
 La relevancia de esta ficha es acotada y conviene ser transparente: el repositorio acumula 0 descargas y 0 likes, no declara idiomas soportados ni pipeline, y su tamaño es de 0,0 GB. El dato más llamativo es la discrepancia entre la etiqueta de escala declarada ("giant") y el recuento real de parámetros en safetensors, que asciende a 33.088. Es decir, el nombre de la escala describe una configuración de plantilla, no el tamaño efectivo del checkpoint publicado.
 
@@ -23,13 +23,13 @@ Por tanto, esta ficha debe leerse como la evaluación de un artefacto de investi
 | Escala declarada en la configuración | giant |
 | Optimizador por defecto | lamb con schedule exponencial |
 | Tamaño del repositorio | 0,0 GB |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
 | Fecha de creación / actualización | 2026-09-17 / 2026-09-17 |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura se etiqueta como CLIP, con atención estándar (no lineal ni dispersa), fusión mediante concat mlp, activación gelu y normalización scalenorm. La configuración declara la escala "giant", pero el checkpoint real contiene 33.088 parámetros, de modo que la etiqueta debe interpretarse como el nombre de una plantilla de configuración y no como una descripción del tamaño del artefacto publicado. El autor remarca que se trata de una implementación personalizada, por lo que las APIs genéricas de carga automática de HuggingFace requieren un adaptador explícito.
+La arquitectura se etiqueta como CLIP, con atención estándar (no lineal ni dispersa), fusión mediante concat mlp, activación gelu y normalización scalenorm. La configuración declara la escala "giant", pero el checkpoint real contiene 33.088 parámetros, de modo que la etiqueta debe interpretarse como el nombre de una plantilla de configuración y no como una descripción del tamaño del artefacto publicado. El autor remarca que se trata de una implementación personalizada, por lo que las APIs genéricas de carga automática de Hugging Face requieren un adaptador explícito.
 
 En cuanto al entrenamiento, no hay ninguno documentado. La model card indica que model.safetensors es un checkpoint de inicialización válido para pruebas de humo y que no se presenta como un checkpoint evaluado. La receta por defecto usa el optimizador lamb con un schedule exponencial, pero el propio autor aclara que son valores de arranque del script y no evidencia de una ejecución completada. No se declara número de tokens, composición del dataset, ni fases de RLHF, DPO o ajuste por instrucciones. Tampoco se documentan innovaciones técnicas como decodificación especulativa o atención lineal.
 
@@ -73,7 +73,7 @@ La comparación directa no es significativa porque este repositorio no contiene 
 
 | Modelo | Tipo de artefacto | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Fed-orov/clip-demo | Plantilla CLIP sin entrenar | 33.088 | no disponible | apache-2.0 | pública en HuggingFace |
+| Fed-orov/clip-demo | Plantilla CLIP sin entrenar | 33.088 | no disponible | apache-2.0 | pública en Hugging Face |
 | OpenAI CLIP | Modelo entrenado de visión-lenguaje | no disponible | no disponible | no disponible | no disponible |
 | OpenCLIP | Implementación abierta de CLIP | no disponible | no disponible | no disponible | no disponible |
 | SigLIP | Alternativa entrenada a CLIP con pérdida sigmoide | no disponible | no disponible | no disponible | no disponible |
@@ -86,11 +86,11 @@ La comparación directa no es significativa porque este repositorio no contiene 
 - Riesgo de alucinación: no aplica en el sentido generativo, pero cualquier salida de clasificación sería esencialmente aleatoria.
 - Limitaciones de contexto e idioma: no disponible; no se declaran ni ventana de contexto ni idiomas soportados.
 - Restricciones de licencia: los pesos y el código se publican bajo apache-2.0, lo que permite uso comercial del artefacto, pero los términos de los datos de origen deben revisarse por separado cuando se combine con datasets externos.
-- Implementación no estándar: al ser una implementación propia, las APIs automáticas de HuggingFace requieren un adaptador explícito; no se puede cargar con from_pretrained sin trabajo adicional.
+- Implementación no estándar: al ser una implementación propia, las APIs automáticas de Hugging Face requieren un adaptador explícito; no se puede cargar con from_pretrained sin trabajo adicional.
 - Los resultados de cualquier checkpoint futuro deben documentarse de forma separada de los valores por defecto incluidos en training_args.json.
 - Para una evaluación con sentido, el autor recomienda usar un split etiquetado específico de la tarea, reportar la métrica sobre al menos tres semillas e incluir una línea base de capacidad equivalente, conservando los logs de entrenamiento y las versiones del entorno.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Fed-orov/clip-demo
+- Repositorio en Hugging Face: https://huggingface.co/Fed-orov/clip-demo
 - No se han encontrado papers, blogs, repositorios auxiliares ni demos asociados a este modelo en la búsqueda web realizada. Los resultados devueltos por la búsqueda corresponden a la Reserva Federal de Estados Unidos y no guardan relación con este modelo.

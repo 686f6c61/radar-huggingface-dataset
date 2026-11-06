@@ -104,7 +104,7 @@ En los benchmarks declarados, Ornith-1.5-122B lidera CyberGym (80,0) y NL2Repo (
 
 ## Enlaces
 
-- HuggingFace (este repo GGUF): https://huggingface.co/ornith-ai/Ornith-1.5-122B-GGUF
+- Hugging Face (este repo GGUF): https://huggingface.co/ornith-ai/Ornith-1.5-122B-GGUF
 - Repo base safetensors: https://huggingface.co/ornith-ai/Ornith-1.5-122B
 - Licencia (repo base): https://huggingface.co/ornith-ai/Ornith-1.5-122B/blob/main/LICENSE
 - Paper, blog, repositorio de código y demos: no disponibles en la información proporcionada.

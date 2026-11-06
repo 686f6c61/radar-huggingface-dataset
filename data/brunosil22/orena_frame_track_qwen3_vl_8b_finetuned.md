@@ -70,7 +70,7 @@ No se dispone de datos verificables de otros adaptadores equivalentes en la info
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Orena_FRAME_Track_Qwen3_VL_8B_finetuned (este modelo) | Adaptador LoRA sobre base de ~8B | No disponible | No se han publicado benchmarks | apache-2.0 | Repositorio PEFT, 0 descargas y 0 likes en el momento de la consulta |
-| Qwen/Qwen3-VL-8B-Instruct (modelo base) | ~8B | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Consultar la model card del base | Modelo publico en HuggingFace |
+| Qwen/Qwen3-VL-8B-Instruct (modelo base) | ~8B | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Consultar la model card del base | Modelo publico en Hugging Face |
 | Otros adaptadores de VQA medica comparables | No disponible | No disponible | No disponible | No disponible | No identificados en la informacion disponible |
 
 ## Limitaciones y advertencias

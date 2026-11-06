@@ -18,7 +18,7 @@ Su relevancia actual radica en su carácter abierto y reproducible dentro de un 
 | Longitud de contexto | no disponible (heredada de BERT base, típicamente 512 tokens; no confirmado en la información) |
 | Tipos de cuantizacion | no disponible (pesos en safetensors; cuantización posible vía herramientas estándar, no documentada) |
 | Idiomas soportados | alemán (de) |
-| Licencia | GPL-3.0 (según model card; el campo de licencia en HuggingFace figura como no disponible) |
+| Licencia | GPL-3.0 (según model card; el campo de licencia en Hugging Face figura como no disponible) |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
@@ -32,7 +32,7 @@ El entrenamiento sigue el procedimiento del artículo de NLP4CALL 2024 y emplea 
 - Clasificación de texto: asigna un nivel CEFR (A1-C2) a redacciones en alemán escritas por aprendices.
 - Procesamiento de texto en alemán con distinción de mayúsculas (modelo cased).
 - Inferencia rápida y ligera al ser un encoder de 109M de parámetros.
-- Compatible con `text-embeddings-inference` y endpoints de HuggingFace según los tags del repositorio.
+- Compatible con `text-embeddings-inference` y endpoints de Hugging Face según los tags del repositorio.
 - No soporta tool calling, function calling ni razonamiento multi-paso.
 - No dispone de capacidades de generación de texto, código, matemáticas, visión ni audio.
 - Capacidad multilingüe: no, únicamente alemán.
@@ -42,7 +42,7 @@ El entrenamiento sigue el procedimiento del artículo de NLP4CALL 2024 y emplea 
 - Herramientas educativas de autoaprendizaje: integrado en una aplicación web, el modelo puede estimar el nivel CEFR de una redacción enviada por un estudiante para ofrecer retroalimentación orientativa sobre su progreso, con la advertencia de que la predicción es ilustrativa.
 - Investigación en adquisición de segundas lenguas: los investigadores pueden usar el modelo para etiquetar automáticamente grandes corpus de redacciones y estudiar la distribución de niveles o la evolución de la competencia escrita a lo largo del tiempo.
 - Filtrado y organización de corpus: clasificar textos de aprendices por nivel para construir subconjuntos equilibrados en experimentos de NLP educativo.
-- Demos interactivas en entornos académicos: el tamaño reducido (0,9 GB de repo) permite desplegarlo en un endpoint de HuggingFace o en un servidor modesto para demostraciones en congresos y clases.
+- Demos interactivas en entornos académicos: el tamaño reducido (0,9 GB de repo) permite desplegarlo en un endpoint de Hugging Face o en un servidor modesto para demostraciones en congresos y clases.
 - Análisis de sesgos por lengua materna: como parte de la línea de investigación del grupo, el modelo puede emplearse para medir si las predicciones varían según la L1 del autor, tal como se menciona en la model card.
 - Prototipado de pipelines de evaluación formativa: servir como componente de clasificación en un sistema mayor que combine análisis de errores gramaticales y estimación de nivel, siempre en contextos de bajo riesgo.
 
@@ -55,15 +55,15 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: aproximadamente 0,5-1 GB en FP32 (109M de parámetros), y menos de 0,5 GB en FP16 o int8.
 - GPU recomendadas: cualquier GPU consumer moderna es suficiente; una RTX 3060, RTX 4090 o incluso una GTX 1650 pueden ejecutar el modelo con holgura. También es viable en CPU.
 - Cabe en cualquier GPU consumer actual e incluso en dispositivos de gama baja; el cuello de botella no será la memoria sino el throughput de peticiones.
-- Opciones de despliegue: `transformers` con PyTorch, `text-embeddings-inference` (según tags), endpoints de HuggingFace, ONNX Runtime y potencialmente llama.cpp si se convierte a GGUF (no documentado).
+- Opciones de despliegue: `transformers` con PyTorch, `text-embeddings-inference` (según tags), endpoints de Hugging Face, ONNX Runtime y potencialmente llama.cpp si se convierte a GGUF (no documentado).
 - Latencia y throughput estimados: no disponibles en la información proporcionada; por el tamaño del modelo, se espera latencia de milisegundos por muestra en GPU y decenas de milisegundos en CPU, aunque no hay cifras oficiales.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sprakbanken-se/bert-base-german_CEFR-classification | 109M | no disponible | Clasificación CEFR (alemán) | GPL-3.0 | HuggingFace |
-| google-bert/bert-base-german-cased | 110M aprox. | 512 tokens (BERT base) | Modelo base (MLM) | Apache 2.0 | HuggingFace |
+| sprakbanken-se/bert-base-german_CEFR-classification | 109M | no disponible | Clasificación CEFR (alemán) | GPL-3.0 | Hugging Face |
+| google-bert/bert-base-german-cased | 110M aprox. | 512 tokens (BERT base) | Modelo base (MLM) | Apache 2.0 | Hugging Face |
 | Otros clasificadores CEFR del grupo Computational SLA | no disponible | no disponible | Clasificación CEFR | no disponible | no disponible |
 
 La comparación con alternativas específicas de clasificación CEFR en alemán no está disponible en la información proporcionada. El modelo base `bert-base-german-cased` sirve como referencia arquitectónica, pero no es un clasificador CEFR directo.
@@ -81,7 +81,7 @@ La comparación con alternativas específicas de clasificación CEFR en alemán 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sprakbanken-se/bert-base-german_CEFR-classification
+- Hugging Face: https://huggingface.co/sprakbanken-se/bert-base-german_CEFR-classification
 - Modelo base: https://huggingface.co/google-bert/bert-base-german-cased
 - Dataset: https://huggingface.co/datasets/UniversalCEFR/merlin_de
 - Artículo de referencia (NLP4CALL 2024): https://aclanthology.org/2024.nlp4call-1.11/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TriNetra es un modelo publicado en HuggingFace por el usuario urjit006 bajo licencia MIT. La informacion disponible es extremadamente limitada: la model card del repositorio no contiene mas que la linea de licencia (`license: mit`), sin descripcion, sin arquitectura declarada, sin datos de entrenamiento y sin ejemplos de uso. El repositorio esta etiquetado con la libreria Keras y con la region `us`, y ocupa 0,3 GB.
+TriNetra es un modelo publicado en Hugging Face por el usuario urjit006 bajo licencia MIT. La informacion disponible es extremadamente limitada: la model card del repositorio no contiene mas que la linea de licencia (`license: mit`), sin descripcion, sin arquitectura declarada, sin datos de entrenamiento y sin ejemplos de uso. El repositorio esta etiquetado con la libreria Keras y con la region `us`, y ocupa 0,3 GB.
 
 No es posible confirmar que problema resuelve, cual es su tamano en parametros, su longitud de contexto ni sus capacidades. El nombre («TriNetra», que en sanscrito puede traducirse como «tres ojos») sugiere alguna forma de tri-modalidad o de arquitectura con tres componentes, pero esto es una especulacion a partir del nombre y no un dato verificable en la informacion proporcionada.
 
@@ -81,7 +81,7 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/urjit006/TriNetra
+- Hugging Face: https://huggingface.co/urjit006/TriNetra
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
 - Repositorio de codigo: no disponible

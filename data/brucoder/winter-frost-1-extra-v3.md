@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`brucoder/winter-frost-1-extra-v3` es un modelo de generacion de texto publicado en HuggingFace por el usuario `brucoder`. Segun los metadatos del repositorio, se trata de un modelo de tipo GPT-2 (etiqueta `gpt2`) con 111.204.864 parametros totales, pesos en formato `safetensors` y compatibilidad declarada con la libreria `transformers` y con `text-generation-inference`. El repositorio ocupa aproximadamente 0,4 GB y esta etiquetado como compatible con endpoints de inferencia de HuggingFace.
+`brucoder/winter-frost-1-extra-v3` es un modelo de generacion de texto publicado en Hugging Face por el usuario `brucoder`. Segun los metadatos del repositorio, se trata de un modelo de tipo GPT-2 (etiqueta `gpt2`) con 111.204.864 parametros totales, pesos en formato `safetensors` y compatibilidad declarada con la libreria `transformers` y con `text-generation-inference`. El repositorio ocupa aproximadamente 0,4 GB y esta etiquetado como compatible con endpoints de inferencia de Hugging Face.
 
-La relevancia de esta ficha es limitada y conviene decirlo con claridad desde el principio: la model card del autor es la plantilla automatica de HuggingFace sin rellenar, por lo que no hay informacion sobre datos de entrenamiento, hiperparametros, licencia, idiomas, evaluacion ni uso previsto. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y no se ha publicado ningun resultado de benchmarks.
+La relevancia de esta ficha es limitada y conviene decirlo con claridad desde el principio: la model card del autor es la plantilla automatica de Hugging Face sin rellenar, por lo que no hay informacion sobre datos de entrenamiento, hiperparametros, licencia, idiomas, evaluacion ni uso previsto. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y no se ha publicado ningun resultado de benchmarks.
 
 Por tanto, esta ficha documenta lo que se puede verificar (arquitectura probable, tamano, formato y compatibilidad de herramientas) y marca explicitamente como "no disponible" todo lo que no consta. Cualquier uso en produccion deberia ir precedido de una evaluacion propia del checkpoint, dado que el autor no ha publicado informacion tecnica ni condiciones de licencia.
 
@@ -24,7 +24,7 @@ Por tanto, esta ficha documenta lo que se puede verificar (arquitectura probable
 | Tamano del repositorio | 0,4 GB |
 | Compatibilidad declarada | `text-generation-inference`, endpoints compatibles |
 | Descargas / likes | 0 / 0 |
-| Fecha de publicacion en el Hub | 2026-10-09 (dato de HuggingFace) |
+| Fecha de publicacion en el Hub | 2026-10-09 (dato de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -51,7 +51,7 @@ Tampoco consta el numero de tokens de entrenamiento, la composicion del dataset,
 - Prototipado de pipelines de `transformers` y TGI: sirve para validar infraestructura de despliegue (servidor de inferencia, batching, endpoints compatibles) antes de migrar a modelos de mayor tamano, gracias a su compatibilidad declarada con `text-generation-inference`.
 - Aumento de datos para clasificadores: generacion de ejemplos sinteticos de texto para ampliar datasets de clasificacion o etiquetado debil, siempre que se revise y filtre manualmente la calidad del texto producido.
 - Experimentos academicos de decodificacion e interpretabilidad: al ser un modelo pequeno y rapido, resulta adecuado para comparar estrategias de decodificacion (greedy, top-k, top-p, beam search) o para analisis de representaciones internas con coste computacional bajo.
-- Educacion y formacion: util para demostrar el ciclo completo de publicacion y despliegue de un modelo en HuggingFace, desde el checkpoint hasta el endpoint de inferencia.
+- Educacion y formacion: util para demostrar el ciclo completo de publicacion y despliegue de un modelo en Hugging Face, desde el checkpoint hasta el endpoint de inferencia.
 - Generacion de texto corto en formularios o aplicaciones de escritorio: descripciones breves, sugerencias de redaccion o autocompletado contextual en aplicaciones offline donde la latencia y el consumo energetico son criticos.
 - Aviso transversal: dado que no hay evaluacion publicada ni licencia declarada, estos casos de uso deben considerarse exploratorios y no aptos para produccion sin una validacion previa por parte del equipo que los adopte.
 
@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| `brucoder/winter-frost-1-extra-v3` | 111,2 M | no disponible | no disponible | HuggingFace (0 descargas) | no disponible |
-| GPT-2 small | 124 M | 1024 tokens | MIT (con restricciones de uso responsable en la version de OpenAI) | Ampliamente disponible en HuggingFace | Benchmarks publicados por OpenAI |
-| DistilGPT-2 | 82 M | 1024 tokens | Apache 2.0 | Ampliamente disponible en HuggingFace | Benchmarks publicados por HuggingFace |
-| GPT-2 medium | 355 M | 1024 tokens | MIT (con restricciones de uso responsable) | Ampliamente disponible en HuggingFace | Benchmarks publicados por OpenAI |
+| `brucoder/winter-frost-1-extra-v3` | 111,2 M | no disponible | no disponible | Hugging Face (0 descargas) | no disponible |
+| GPT-2 small | 124 M | 1024 tokens | MIT (con restricciones de uso responsable en la version de OpenAI) | Ampliamente disponible en Hugging Face | Benchmarks publicados por OpenAI |
+| DistilGPT-2 | 82 M | 1024 tokens | Apache 2.0 | Ampliamente disponible en Hugging Face | Benchmarks publicados por Hugging Face |
+| GPT-2 medium | 355 M | 1024 tokens | MIT (con restricciones de uso responsable) | Ampliamente disponible en Hugging Face | Benchmarks publicados por OpenAI |
 
 No es posible establecer una comparacion de rendimiento con alternativas porque el autor no ha publicado ninguna evaluacion. La comparacion de la tabla se limita a parametros, contexto, licencia y disponibilidad, y en los tres primeros casos los datos de contexto y licencia de los modelos de referencia son los declarados en sus respectivas model cards.
 
@@ -91,7 +91,7 @@ No es posible establecer una comparacion de rendimiento con alternativas porque 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/brucoder/winter-frost-1-extra-v3
+- Modelo en Hugging Face: https://huggingface.co/brucoder/winter-frost-1-extra-v3
 - Paper citado en las etiquetas del repositorio (Lacoste et al., 2019, sobre estimacion de emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental mencionada en la model card: https://mlco2.github.io/impact
 - Documentacion de la arquitectura GPT-2 en `transformers`: https://huggingface.co/docs/transformers/model_doc/gpt2

@@ -71,7 +71,7 @@ La comparativa con Qwen2.5-7B-Instruct y Llama-3.1-8B-Instruct se ofrece como re
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace, lo que puede limitar su uso automatizado en pipelines.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso automatizado en pipelines.
 - Sin benchmarks publicados: no hay evidencia empírica de la degradación introducida por la cuantización NVFP4+QAT respecto al base.
 - Compatibilidad hardware limitada: NVFP4 está optimizado para GPUs Blackwell; en arquitecturas anteriores el rendimiento puede degradarse o no estar soportado por vLLM.
 - Idiomas no declarados: se desconoce el soporte multilingüe real del artefacto.
@@ -83,7 +83,7 @@ La comparativa con Qwen2.5-7B-Instruct y Llama-3.1-8B-Instruct se ofrece como re
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qatfactory/Qwen3.5-9B-NVFP4-LoRA-r16-QAD
+- Hugging Face: https://huggingface.co/qatfactory/Qwen3.5-9B-NVFP4-LoRA-r16-QAD
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Documentación de compressed-tensors: https://github.com/neuralmagic/compressed-tensors
 - vLLM: https://github.com/vllm-project/vllm

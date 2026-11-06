@@ -2,11 +2,11 @@
 
 ## Resumen
 
-RoboDIB/pcbeditor-ai es un repositorio de modelo alojado en HuggingFace por el usuario RoboDIB, publicado el 15 de septiembre de 2026. En el momento de redactar esta ficha, la model card asociada contiene unicamente la declaracion de licencia MIT y ningun otro contenido tecnico: no se documenta arquitectura, tamano, datos de entrenamiento, pipeline de inferencia ni idiomas soportados. El repositorio acumula 0 descargas y 0 likes, y no tiene ninguna tarea de pipeline declarada en sus metadatos.
+RoboDIB/pcbeditor-ai es un repositorio de modelo alojado en Hugging Face por el usuario RoboDIB, publicado el 15 de septiembre de 2026. En el momento de redactar esta ficha, la model card asociada contiene unicamente la declaracion de licencia MIT y ningun otro contenido tecnico: no se documenta arquitectura, tamano, datos de entrenamiento, pipeline de inferencia ni idiomas soportados. El repositorio acumula 0 descargas y 0 likes, y no tiene ninguna tarea de pipeline declarada en sus metadatos.
 
 El nombre del identificador sugiere un posible enfoque hacia edicion de PCB (diseno de placas de circuito impreso), pero se trata de una inferencia a partir del nombre y no de un dato confirmado por el autor. No hay informacion publica que permita verificar que el modelo realice tareas de vision, generacion de codigo, automatizacion de EDA o cualquier otra funcion especifica.
 
-Por tanto, esta ficha se limita a registrar los metadatos verificables disponibles en HuggingFace y a marcar explicitamente como "no disponible" todo aquello que no figura en la informacion proporcionada. No es posible evaluar la relevancia, el rendimiento ni la idoneidad del modelo para ningun caso de uso concreto sin documentacion adicional del autor.
+Por tanto, esta ficha se limita a registrar los metadatos verificables disponibles en Hugging Face y a marcar explicitamente como "no disponible" todo aquello que no figura en la informacion proporcionada. No es posible evaluar la relevancia, el rendimiento ni la idoneidad del modelo para ningun caso de uso concreto sin documentacion adicional del autor.
 
 ## Especificaciones técnicas
 
@@ -89,7 +89,7 @@ No disponible. No se puede identificar una categoria de comparacion (tamano, tar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RoboDIB/pcbeditor-ai
+- Modelo en Hugging Face: https://huggingface.co/RoboDIB/pcbeditor-ai
 - Paper, blog, repositorio de codigo o demo: no disponible.
 
 Nota: la busqueda web realizada no devolvio resultados relacionados con el modelo. Los enlaces obtenidos correspondian a contenidos sin relacion (Dovedale Railway Wiki y Google Maps), por lo que no se incluyen como referencias.

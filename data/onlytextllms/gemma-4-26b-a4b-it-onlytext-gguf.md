@@ -94,7 +94,7 @@ El autor subraya que Q4_K_M no es intercambiable con las otras dos: cambia el to
 | Modelo | Parámetros | Contexto | Modalidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | OnlyTextLLMs/gemma-4-26B-A4B-it-OnlyText-GGUF (esta ficha) | 25,23B totales, ~3,8B activos | 262.144 según el base; 32.768 en las pruebas | Solo texto | Apache 2.0 | GGUF en Q4_K_M, Q6_K y Q8_0 |
-| google/gemma-4-26B-A4B-it (modelo base) | 25,23B totales, MoE top-8 de 128 expertos | 262.144 tokens | Texto e imagen (entrada), salida de texto | Apache 2.0 | Pesos originales en HuggingFace y API de pago |
+| google/gemma-4-26B-A4B-it (modelo base) | 25,23B totales, MoE top-8 de 128 expertos | 262.144 tokens | Texto e imagen (entrada), salida de texto | Apache 2.0 | Pesos originales en Hugging Face y API de pago |
 | OnlyTextLLMs/gemma-4-26B-A4B-it-OnlyText (derivación sin cuantizar) | 25,23B totales | No disponible | Solo texto | Apache 2.0 | Pesos sin cuantizar, referenciados por la model card |
 | unsloth/gemma-4-26B-A4B-it-GGUF | No disponible | No disponible | Imagen-texto a texto | Apache 2.0 | GGUF, incluye fichero `mtp-gemma-4-26B-A4B-it.gguf` con cabeza de decodificación especulativa |
 

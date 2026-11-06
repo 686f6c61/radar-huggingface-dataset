@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| wam-openarm-h2rb-cog-humvid-live-hawor-v1-50k-ckpt50000 | no disponible (backbone 5B) | no disponible (horizonte 24) | no disponible | other | HuggingFace |
+| wam-openarm-h2rb-cog-humvid-live-hawor-v1-50k-ckpt50000 | no disponible (backbone 5B) | no disponible (horizonte 24) | no disponible | other | Hugging Face |
 | Wan2.2-TI2V-5B | 5B | no disponible | no disponible | no disponible | no disponible |
-| Otros WAM del mismo autor (variantes EXP-0019) | no disponible | no disponible | no disponible | other | HuggingFace (mismo autor) |
+| Otros WAM del mismo autor (variantes EXP-0019) | no disponible | no disponible | no disponible | other | Hugging Face (mismo autor) |
 
 No se dispone de datos de benchmarks ni de modelos comparables con metricas publicadas en la informacion proporcionada.
 
@@ -82,7 +82,7 @@ No se dispone de datos de benchmarks ni de modelos comparables con metricas publ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jungwook2358/wam-openarm-h2rb-cog-humvid-live-hawor-v1-50k-ckpt50000
+- Hugging Face: https://huggingface.co/jungwook2358/wam-openarm-h2rb-cog-humvid-live-hawor-v1-50k-ckpt50000
 - Codigo (rama `jungwook/openarm-fred-ft` @c3d1b92): repositorio actlat-wam, no se proporciona URL directa en la informacion disponible
 - Script de entrenamiento: `run_scripts/train/wam_dit4dit/openarm/finetune_openarm_prq30_h2rb.sh`
 - Configuracion de modalidad: `gr00t/configs/data/openarm_prq30_v1_config.py`

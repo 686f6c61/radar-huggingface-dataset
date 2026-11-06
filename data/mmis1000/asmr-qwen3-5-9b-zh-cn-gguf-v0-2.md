@@ -74,7 +74,7 @@ No se dispone de informacion sobre modelos directamente comparables en la misma 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mmis1000/asmr-qwen3.5-9b-zh-cn-gguf-v0.2
+- Modelo en Hugging Face: https://huggingface.co/mmis1000/asmr-qwen3.5-9b-zh-cn-gguf-v0.2
 - Repositorio del pipeline de traduccion: https://github.com/mmis1000/asmr-ai-translator-ja2zh
 - Variante v0.1 (chino simplificado, modo estandar): https://huggingface.co/mmis1000/asmr-qwen3.5-9b-zh-cn-gguf-v0.1
 - Variante con modo echo y multi-track: https://huggingface.co/mmis1000/asmr-qwen3.5-9b-zh-cn-echo-mtp-gguf-v0.1

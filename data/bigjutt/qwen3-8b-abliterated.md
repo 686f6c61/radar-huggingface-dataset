@@ -88,7 +88,7 @@ No se dispone de datos verificados de otras variantes abliteradas de Qwen3-8B pu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BIGJUTT/Qwen3-8B-abliterated
+- Modelo en Hugging Face: https://huggingface.co/BIGJUTT/Qwen3-8B-abliterated
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Herramienta OBLITERATUS: https://github.com/elder-plinius/OBLITERATUS
 - Repositorio oficial de la familia Qwen3: https://github.com/QwenLM/Qwen3

@@ -75,10 +75,10 @@ El autor identifica explicitamente el punto de fallo: "the hole is lift after cl
 
 | Modelo | Parametros | Contexto | Tarea / rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `alexhegit/so101-simstudio-lab01-pnp-pi05-agent193` | 4,14 B | no disponible | Pick-and-place SimStudio Lab01; 12/60 exitos | apache-2.0 | HuggingFace, libreria lerobot |
-| `ant0nh/pi05_pnp_425_25k` (modelo base directo) | no disponible | no disponible | Pick-and-place sobre seguidor SO real; rendimiento no disponible | no disponible | HuggingFace |
-| `lerobot/pi05_base` (raiz de la cadena) | no disponible | no disponible | Politica VLA de proposito general previa al fine-tuning | no disponible | HuggingFace, libreria lerobot |
-| Otras politicas de LeRobot (ACT, Diffusion Policy, SmolVLA) | no disponible | no disponible | Manipulacion por imitacion; rendimiento comparativo no disponible | no disponible | HuggingFace, libreria lerobot |
+| `alexhegit/so101-simstudio-lab01-pnp-pi05-agent193` | 4,14 B | no disponible | Pick-and-place SimStudio Lab01; 12/60 exitos | apache-2.0 | Hugging Face, libreria lerobot |
+| `ant0nh/pi05_pnp_425_25k` (modelo base directo) | no disponible | no disponible | Pick-and-place sobre seguidor SO real; rendimiento no disponible | no disponible | Hugging Face |
+| `lerobot/pi05_base` (raiz de la cadena) | no disponible | no disponible | Politica VLA de proposito general previa al fine-tuning | no disponible | Hugging Face, libreria lerobot |
+| Otras politicas de LeRobot (ACT, Diffusion Policy, SmolVLA) | no disponible | no disponible | Manipulacion por imitacion; rendimiento comparativo no disponible | no disponible | Hugging Face, libreria lerobot |
 
 No se dispone de cifras de parametros, contexto o rendimiento de los modelos comparados dentro de la informacion proporcionada, salvo el propio modelo descrito.
 
@@ -98,7 +98,7 @@ No se dispone de cifras de parametros, contexto o rendimiento de los modelos com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alexhegit/so101-simstudio-lab01-pnp-pi05-agent193
+- Modelo en Hugging Face: https://huggingface.co/alexhegit/so101-simstudio-lab01-pnp-pi05-agent193
 - Dataset de entrenamiento: https://huggingface.co/datasets/alexhegit/so101-simstudio-lab01-pnp-agent-yaw-v4-actonly-follow2
 - Modelo base directo: https://huggingface.co/ant0nh/pi05_pnp_425_25k
 - Modelo raiz de la cadena: https://huggingface.co/lerobot/pi05_base

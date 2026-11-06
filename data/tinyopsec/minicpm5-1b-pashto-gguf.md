@@ -23,7 +23,7 @@ Su relevancia ahora es doble: por un lado, acerca un modelo conversacional a dos
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no describe la arquitectura interna del modelo base (numero de capas, dimension oculta, tipo de atencion, funcion de activacion) ni el volumen o composicion de sus datos de entrenamiento. Lo unico verificable es el recuento de parametros (1.080.774.144) y que se trata de un modelo de generacion de texto etiquetado como conversacional en HuggingFace. Tampoco se documenta si el modelo base paso por RLHF, DPO u otra fase de alineamiento.
+La informacion disponible no describe la arquitectura interna del modelo base (numero de capas, dimension oculta, tipo de atencion, funcion de activacion) ni el volumen o composicion de sus datos de entrenamiento. Lo unico verificable es el recuento de parametros (1.080.774.144) y que se trata de un modelo de generacion de texto etiquetado como conversacional en Hugging Face. Tampoco se documenta si el modelo base paso por RLHF, DPO u otra fase de alineamiento.
 
 La innovacion tecnica declarada es la cirugia de tokenizer: se ha modificado el vocabulario del MiniCPM5-1B original para representar mejor el pastun y el urdu, presumiblemente ampliando o sustituyendo tokens para reducir la fragmentacion de estos scripts. El autor no publica el procedimiento (vocabulario anadido, tokens eliminados, si hubo reajuste de las embeddings, cuantos tokens de entrenamiento se usaron para reajustarlas) ni los criterios de evaluacion. El repositorio de este artefacto se limita a la conversion a GGUF mediante llama.cpp; no hay entrenamiento adicional documentado en esta ficha.
 
@@ -96,7 +96,7 @@ La busqueda web realizada no devolvio resultados tecnicos relevantes sobre este 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tinyopsec/MiniCPM5-1B-Pashto-GGUF
+- Repositorio Hugging Face: https://huggingface.co/tinyopsec/MiniCPM5-1B-Pashto-GGUF
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-1B
 - Modelo intermedio con cirugia de tokenizer (referenciado en la model card): https://huggingface.co/nassimjp/MiniCPM5-1B-Pashto
 - llama.cpp (runtime de conversion e inferencia): https://github.com/ggerganov/llama.cpp

@@ -107,7 +107,7 @@ No se han publicado comparaciones numericas directas contra modelos concretos en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/turion-ai/turion-extract-alpha
+- Modelo en Hugging Face: https://huggingface.co/turion-ai/turion-extract-alpha
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Dataset de resultados del indice: https://huggingface.co/datasets/turion-ai/turion-extract-alpha-index-results
 - SystemOne Extract Index (espacio de referencia): https://huggingface.co/spaces/balys/extract-index

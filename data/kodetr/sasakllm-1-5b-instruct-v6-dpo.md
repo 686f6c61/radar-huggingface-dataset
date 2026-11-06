@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SasakLLM-1.5B-Instruct-v6-DPO es un adaptador LoRA entrenado con DPO (Direct Preference Optimization) sobre el modelo base Qwen/Qwen2.5-1.5B-Instruct. Lo publica el usuario kodetr en HuggingFace y se distribuye como un repositorio PEFT de aproximadamente 0,1 GB, lo que corresponde exclusivamente a los pesos del adaptador y no al modelo completo. La model card no documenta el propósito, el dataset de preferencias ni los hiperparámetros empleados, por lo que la ficha se apoya en las características conocidas del modelo base y en los metadatos del repositorio.
+SasakLLM-1.5B-Instruct-v6-DPO es un adaptador LoRA entrenado con DPO (Direct Preference Optimization) sobre el modelo base Qwen/Qwen2.5-1.5B-Instruct. Lo publica el usuario kodetr en Hugging Face y se distribuye como un repositorio PEFT de aproximadamente 0,1 GB, lo que corresponde exclusivamente a los pesos del adaptador y no al modelo completo. La model card no documenta el propósito, el dataset de preferencias ni los hiperparámetros empleados, por lo que la ficha se apoya en las características conocidas del modelo base y en los metadatos del repositorio.
 
 El modelo hereda la arquitectura transformer decoder-only de Qwen2.5-1.5B-Instruct, con 1.540 millones de parámetros y una ventana de contexto nativa de 32.768 tokens (ampliable hasta 131.072 en la familia Qwen2.5, según la documentación oficial del modelo base). El entrenamiento DPO con LoRA sugiere un ajuste de alineación sobre respuestas conversacionales, orientado a mejorar la preferencia humana en lugar de ampliar capacidades base.
 
@@ -29,7 +29,7 @@ Es relevante ahora porque ejemplifica el patrón de ajuste ligero de modelos peq
 
 El adaptador se aplica sobre Qwen2.5-1.5B-Instruct, un transformer decoder-only con atención de múltiples cabezas con query/key/value bias, normalización RMSNorm y activación SwiGLU, tal como define la familia Qwen2.5. El modelo base fue preentrenado con aproximadamente 18 billones de tokens según la documentación oficial de Qwen, seguido de un ajuste supervisado y una fase de alineación. Sobre esta base, kodetr aplica un adaptador LoRA y lo entrena con DPO, una técnica de optimización de preferencias que ajusta el modelo para aumentar la probabilidad de respuestas preferidas frente a respuestas rechazadas sin necesidad de un modelo de recompensa explícito.
 
-La model card no especifica el dataset de preferencias, el rango del adaptador, el alpha, la tasa de aprendizaje ni el número de pasos. Tampoco documenta si se aplicó un enmascaramiento de tokens de prompt ni la función de pérdida exacta (DPO, IPO o variantes). La única información técnica verificable es la versión de PEFT (0.21.2) y el uso de TRL, lo que sitúa el entrenamiento en el ecosistema estándar de HuggingFace. No se han publicado detalles sobre innovaciones técnicas adicionales, como decodificación especulativa o atención lineal, más allá de las que incorpora el modelo base.
+La model card no especifica el dataset de preferencias, el rango del adaptador, el alpha, la tasa de aprendizaje ni el número de pasos. Tampoco documenta si se aplicó un enmascaramiento de tokens de prompt ni la función de pérdida exacta (DPO, IPO o variantes). La única información técnica verificable es la versión de PEFT (0.21.2) y el uso de TRL, lo que sitúa el entrenamiento en el ecosistema estándar de Hugging Face. No se han publicado detalles sobre innovaciones técnicas adicionales, como decodificación especulativa o atención lineal, más allá de las que incorpora el modelo base.
 
 ## Capacidades
 
@@ -88,7 +88,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kodetr/SasakLLM-1.5B-Instruct-v6-DPO
+- Hugging Face: https://huggingface.co/kodetr/SasakLLM-1.5B-Instruct-v6-DPO
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Documentación de Qwen2.5: https://qwen.readthedocs.io/
 - Repositorio de Qwen2.5 en GitHub: https://github.com/QwenLM/Qwen2.5

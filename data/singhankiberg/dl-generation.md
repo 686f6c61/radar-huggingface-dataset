@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`singhankiberg/dl-generation` es un repositorio de HuggingFace que contiene una implementación compacta y personalizada en PyTorch de una arquitectura tipo Beit orientada a tareas de generación. Lo publica el usuario singhankiberg y se distribuye bajo licencia BSD-3-Clause. No se trata de un modelo preentrenado listo para producción: el propio autor lo describe como un punto de partida experimental para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala.
+`singhankiberg/dl-generation` es un repositorio de Hugging Face que contiene una implementación compacta y personalizada en PyTorch de una arquitectura tipo Beit orientada a tareas de generación. Lo publica el usuario singhankiberg y se distribuye bajo licencia BSD-3-Clause. No se trata de un modelo preentrenado listo para producción: el propio autor lo describe como un punto de partida experimental para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala.
 
 El checkpoint incluido (`model.safetensors`) es una inicialización válida, pero no ha sido entrenado ni evaluado. El repositorio declara explícitamente que no se reclama ninguna puntuación de benchmark y que los resultados de un futuro checkpoint entrenado deberán documentarse por separado de los valores por defecto que se distribuyen aquí. El tamaño declarado en safetensors es de 49.600 parámetros, lo que lo sitúa muy por debajo de cualquier modelo de lenguaje o visión de uso general.
 
@@ -23,7 +23,7 @@ Por tanto, su relevancia no está en el rendimiento, sino en su valor como esque
 
 ## Arquitectura y entrenamiento
 
-La arquitectura declarada es Beit, en configuración "large", con atención dilatada (dilated attention), fusión tipo Tucker, activación ReLU y normalización InstanceNorm. Se trata de una implementación custom, no de la clase oficial de HuggingFace Transformers, por lo que las APIs genéricas de carga automática requieren un adaptador explícito antes de poder usarse. El repositorio incluye `config.json` con los ajustes de arquitectura generados y `training_args.json` con la receta de experimento por defecto: optimizador LAMB y scheduler de tipo step. El autor advierte que estos son valores de partida del script y no evidencia de un entrenamiento completado.
+La arquitectura declarada es Beit, en configuración "large", con atención dilatada (dilated attention), fusión tipo Tucker, activación ReLU y normalización InstanceNorm. Se trata de una implementación custom, no de la clase oficial de Hugging Face Transformers, por lo que las APIs genéricas de carga automática requieren un adaptador explícito antes de poder usarse. El repositorio incluye `config.json` con los ajustes de arquitectura generados y `training_args.json` con la receta de experimento por defecto: optimizador LAMB y scheduler de tipo step. El autor advierte que estos son valores de partida del script y no evidencia de un entrenamiento completado.
 
 No se especifica el volumen de datos de entrenamiento, la composición del dataset, ni si hubo fases de RLHF, DPO o ajuste fino supervisado. El checkpoint `model.safetensors` es una inicialización, no un modelo entrenado. La evaluación recomendada por el propio autor consiste en usar un conjunto held-out específico de la tarea, reportar la métrica principal sobre al menos tres semillas y comparar contra una línea base de capacidad equivalente, conservando los logs de entrenamiento y las versiones del entorno.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 | Modelo | Parámetros | Contexto | Licencia | Estado |
 |---|---|---|---|---|
 | singhankiberg/dl-generation | 49.600 | no disponible | BSD-3-Clause | Checkpoint de inicialización, sin entrenar |
-| Beit oficial (HuggingFace Transformers) | variable según configuración | específico de visión | MIT | Modelo preentrenado y publicado |
+| Beit oficial (Hugging Face Transformers) | variable según configuración | específico de visión | MIT | Modelo preentrenado y publicado |
 | Modelos de generación de texto open source pequeños (p. ej. familia GPT-2 small) | ~124 M | 1.024 tokens | MIT | Preentrenados y evaluados |
 
 La comparación directa no es posible en términos de rendimiento porque este repositorio no publica métricas ni un checkpoint entrenado. Frente a la implementación oficial de Beit, la diferencia principal es que aquí se trata de código custom con atención dilatada y fusión Tucker, no de la arquitectura canónica. Frente a modelos de generación de texto pequeños, la diferencia es de escala (tres órdenes de magnitud menos parámetros) y de propósito (esqueleto experimental frente a modelo desplegable).
@@ -81,5 +81,5 @@ La comparación directa no es posible en términos de rendimiento porque este re
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/singhankiberg/dl-generation
+- Repositorio en Hugging Face: https://huggingface.co/singhankiberg/dl-generation
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información proporcionada.

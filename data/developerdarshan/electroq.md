@@ -2,9 +2,9 @@
 
 ## Resumen
 
-electroq es un ajuste fino (fine-tuning) del modelo Llama-3.2-3B-Instruct de Meta, publicado por el usuario DEVELOPERDARSHAN en HuggingFace. Se trata de un modelo de generación de texto de 3.212.749.824 parámetros (aproximadamente 3,2 mil millones) construido sobre la arquitectura Llama de tipo transformer decoder-only, con licencia Apache 2.0 y orientado exclusivamente al idioma inglés. El modelo base declarado es `unsloth/Llama-3.2-3B-Instruct-unsloth-bnb-4bit`, una versión cuantizada en 4 bits del instructivo oficial de Llama 3.2.
+electroq es un ajuste fino (fine-tuning) del modelo Llama-3.2-3B-Instruct de Meta, publicado por el usuario DEVELOPERDARSHAN en Hugging Face. Se trata de un modelo de generación de texto de 3.212.749.824 parámetros (aproximadamente 3,2 mil millones) construido sobre la arquitectura Llama de tipo transformer decoder-only, con licencia Apache 2.0 y orientado exclusivamente al idioma inglés. El modelo base declarado es `unsloth/Llama-3.2-3B-Instruct-unsloth-bnb-4bit`, una versión cuantizada en 4 bits del instructivo oficial de Llama 3.2.
 
-La relevancia de esta publicación es limitada: se trata de un experimento de ajuste fino realizado con la librería Unsloth y TRL de HuggingFace, sin documentación técnica detallada en la model card. No se especifican los datos de entrenamiento, el número de tokens utilizados, ni los hiperparámetros del ajuste. El repositorio tiene 211 descargas y ningún "like", lo que sugiere un uso muy reducido y una validación comunitaria prácticamente nula.
+La relevancia de esta publicación es limitada: se trata de un experimento de ajuste fino realizado con la librería Unsloth y TRL de Hugging Face, sin documentación técnica detallada en la model card. No se especifican los datos de entrenamiento, el número de tokens utilizados, ni los hiperparámetros del ajuste. El repositorio tiene 211 descargas y ningún "like", lo que sugiere un uso muy reducido y una validación comunitaria prácticamente nula.
 
 El modelo hereda las capacidades del Llama-3.2-3B-Instruct original (generación de texto, razonamiento básico, código y soporte multilingüe limitado), pero el ajuste fino podría haber alterado su comportamiento de forma no documentada. Es un modelo adecuado para experimentación y prototipado en entornos con recursos limitados, no para producción sin una evaluación previa exhaustiva.
 
@@ -25,7 +25,7 @@ El modelo hereda las capacidades del Llama-3.2-3B-Instruct original (generación
 
 La arquitectura subyacente es la de Llama 3.2 3B Instruct: un transformer decoder-only con atención por grupos (GQA, grouped-query attention), normalización RMSNorm y activación SwiGLU. El modelo fue ajustado finamente partiendo de la versión `unsloth/Llama-3.2-3B-Instruct-unsloth-bnb-4bit`, es decir, una variante cuantizada en 4 bits del instructivo oficial, lo que implica que el punto de partida ya tenía una precisión reducida antes del ajuste.
 
-El entrenamiento se realizó con Unsloth y la librería TRL de HuggingFace, según declara el autor, con una velocidad "2x más rápida" respecto a un entrenamiento convencional. No se proporciona información sobre el dataset utilizado, el número de tokens de entrenamiento, la composición de los datos, ni si se aplicaron técnicas de RLHF, DPO o SFT. Tampoco se documentan innovaciones técnicas adicionales más allá del uso de Unsloth para optimizar el ajuste fino. La ausencia de esta información impide evaluar la calidad y el propósito real del ajuste.
+El entrenamiento se realizó con Unsloth y la librería TRL de Hugging Face, según declara el autor, con una velocidad "2x más rápida" respecto a un entrenamiento convencional. No se proporciona información sobre el dataset utilizado, el número de tokens de entrenamiento, la composición de los datos, ni si se aplicaron técnicas de RLHF, DPO o SFT. Tampoco se documentan innovaciones técnicas adicionales más allá del uso de Unsloth para optimizar el ajuste fino. La ausencia de esta información impide evaluar la calidad y el propósito real del ajuste.
 
 ## Capacidades
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| electroq (este modelo) | 3,2 B | no disponible | Apache 2.0 | HuggingFace, 211 descargas | Fine-tuning no documentado de Llama 3.2 3B |
-| Llama-3.2-3B-Instruct (Meta) | 3,2 B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, ampliamente usado | Modelo base oficial, documentado y validado |
-| Qwen2.5-3B-Instruct | 3,1 B | 32.768 tokens | Apache 2.0 | HuggingFace | Alternativa con buen rendimiento multilingüe |
-| Phi-3.5-mini-instruct | 3,8 B | 128.000 tokens | MIT | HuggingFace | Buen rendimiento en razonamiento y código |
+| electroq (este modelo) | 3,2 B | no disponible | Apache 2.0 | Hugging Face, 211 descargas | Fine-tuning no documentado de Llama 3.2 3B |
+| Llama-3.2-3B-Instruct (Meta) | 3,2 B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, ampliamente usado | Modelo base oficial, documentado y validado |
+| Qwen2.5-3B-Instruct | 3,1 B | 32.768 tokens | Apache 2.0 | Hugging Face | Alternativa con buen rendimiento multilingüe |
+| Phi-3.5-mini-instruct | 3,8 B | 128.000 tokens | MIT | Hugging Face | Buen rendimiento en razonamiento y código |
 
 La comparativa se basa en datos públicos de los modelos alternativos; no hay benchmarks de electroq que permitan una comparación cuantitativa.
 
@@ -81,8 +81,8 @@ La comparativa se basa en datos públicos de los modelos alternativos; no hay be
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DEVELOPERDARSHAN/electroq
+- Hugging Face: https://huggingface.co/DEVELOPERDARSHAN/electroq
 - Modelo base: https://huggingface.co/unsloth/Llama-3.2-3B-Instruct-unsloth-bnb-4bit
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
-- TRL de HuggingFace: https://github.com/huggingface/trl
+- TRL de Hugging Face: https://github.com/huggingface/trl
 - Llama 3.2 (Meta): https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct

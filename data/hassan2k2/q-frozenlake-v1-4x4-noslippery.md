@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`hassan2k2/q-FrozenLake-v1-4x4-noSlippery` no es un modelo de lenguaje ni una red neuronal: es un agente de aprendizaje por refuerzo entrenado con Q-learning tabular sobre el entorno `FrozenLake-v1` de Gym/Gymnasium, en su variante 4x4 sin suelo resbaladizo (`is_slippery=False`). Lo publica el usuario de HuggingFace `hassan2k2` como artefacto de un pipeline `reinforcement-learning`, y se serializa como un fichero `q-learning.pkl` que contiene, como mínimo, la tabla Q y el identificador del entorno (`env_id`).
+`hassan2k2/q-FrozenLake-v1-4x4-noSlippery` no es un modelo de lenguaje ni una red neuronal: es un agente de aprendizaje por refuerzo entrenado con Q-learning tabular sobre el entorno `FrozenLake-v1` de Gym/Gymnasium, en su variante 4x4 sin suelo resbaladizo (`is_slippery=False`). Lo publica el usuario de Hugging Face `hassan2k2` como artefacto de un pipeline `reinforcement-learning`, y se serializa como un fichero `q-learning.pkl` que contiene, como mínimo, la tabla Q y el identificador del entorno (`env_id`).
 
 El problema que resuelve es el de control óptimo en un MDP discreto y determinista de 16 estados y 4 acciones: encontrar una política que lleve al agente desde la casilla inicial hasta la meta evitando los agujeros. Su relevancia no es práctica-industrial sino docente y de referencia: sirve como baseline reproducible, como ejemplo mínimo de Q-learning y como pieza de test en infraestructuras de RL.
 
-El autor declara un `mean_reward` de 1.00 ± 0.00 sobre `FrozenLake-v1-4x4-no_slippery`, es decir, éxito en todos los episodios de la evaluación reportada, con métrica no verificada por HuggingFace. No hay información sobre hiperparámetros, número de episodios de entrenamiento ni protocolo de evaluación, y el repositorio no declara licencia ni idiomas.
+El autor declara un `mean_reward` de 1.00 ± 0.00 sobre `FrozenLake-v1-4x4-no_slippery`, es decir, éxito en todos los episodios de la evaluación reportada, con métrica no verificada por Hugging Face. No hay información sobre hiperparámetros, número de episodios de entrenamiento ni protocolo de evaluación, y el repositorio no declara licencia ni idiomas.
 
 ## Especificaciones técnicas
 
@@ -70,7 +70,7 @@ El valor 1.00 coincide con el máximo alcanzable en este entorno, lo que es cons
 
 | Modelo / referencia | Tipo | Parámetros | Contexto | Rendimiento en FrozenLake 4x4 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `hassan2k2/q-FrozenLake-v1-4x4-noSlippery` | Q-learning tabular | 64 valores Q | No aplica | mean_reward 1.00 ± 0.00 (no verificado) | No disponible | HuggingFace |
+| `hassan2k2/q-FrozenLake-v1-4x4-noSlippery` | Q-learning tabular | 64 valores Q | No aplica | mean_reward 1.00 ± 0.00 (no verificado) | No disponible | Hugging Face |
 | DQN sobre FrozenLake 4x4 | Q-learning con red neuronal | No disponible | No aplica | No disponible en la información proporcionada | No disponible | Implementable con stable-baselines3 |
 | PPO sobre FrozenLake 4x4 | Policy gradient | No disponible | No aplica | No disponible en la información proporcionada | No disponible | Implementable con stable-baselines3 |
 | Política aleatoria uniforme | Baseline sin aprendizaje | 0 | No aplica | No disponible en la información proporcionada | No disponible | Baseline trivial |
@@ -90,7 +90,7 @@ La comparación relevante es conceptual: frente a DQN o PPO, el Q-learning tabul
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hassan2k2/q-FrozenLake-v1-4x4-noSlippery
+- Modelo en Hugging Face: https://huggingface.co/hassan2k2/q-FrozenLake-v1-4x4-noSlippery
 - Documentación del entorno FrozenLake en Gymnasium (referencia del entorno, no enlazada en la model card): https://gymnasium.farama.org/environments/toy_text/frozen_lake/
-- Curso de Deep RL de HuggingFace, unidad de Q-learning (referencia del método, no enlazada en la model card): https://huggingface.co/learn/deep-rl-course/unit2/introduction
+- Curso de Deep RL de Hugging Face, unidad de Q-learning (referencia del método, no enlazada en la model card): https://huggingface.co/learn/deep-rl-course/unit2/introduction
 - No se han encontrado en la información proporcionada papers, blogs, repositorios ni demos adicionales asociados a este modelo.

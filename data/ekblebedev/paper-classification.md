@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ekblebedev/paper-classification | 33.088 | no disponible | sin benchmark publicado; checkpoint sin entrenar | bsd-3-clause | HuggingFace, 16 descargas |
+| ekblebedev/paper-classification | 33.088 | no disponible | sin benchmark publicado; checkpoint sin entrenar | bsd-3-clause | Hugging Face, 16 descargas |
 | Albef original (Salesforce) | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no verificado en esta busqueda |
 | Clasificadores basados en BERT | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no verificado en esta busqueda |
 
@@ -95,7 +95,7 @@ No se dispone de datos verificados en la informacion proporcionada para establec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ekblebedev/paper-classification
+- Modelo en Hugging Face: https://huggingface.co/ekblebedev/paper-classification
 - Perfil del autor: https://huggingface.co/ekblebedev
 - Temas de GitHub sobre modelos de clasificacion (resultado de busqueda): https://github.com/topics/classification-model
 - Research Paper Classification using Supervised Machine Learning Techniques (resultado de busqueda): https://www.researchgate.net/publication/346853360_Research_Paper_Classification_using_Supervised_Machine_Learning_Techniques

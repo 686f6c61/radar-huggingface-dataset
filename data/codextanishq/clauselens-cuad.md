@@ -2,7 +2,7 @@
 
 ## Resumen
 
-clauselens-cuad es un modelo de question answering extractivo especializado en contratos legales, desarrollado por el usuario CodexTanishq y publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un fine-tuning de la arquitectura RoBERTa-base (concretamente sobre `deepset/roberta-base-squad2`) entrenado con el Contract Understanding Atticus Dataset (CUAD), un corpus de contratos anotados para la extracción de cláusulas.
+clauselens-cuad es un modelo de question answering extractivo especializado en contratos legales, desarrollado por el usuario CodexTanishq y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un fine-tuning de la arquitectura RoBERTa-base (concretamente sobre `deepset/roberta-base-squad2`) entrenado con el Contract Understanding Atticus Dataset (CUAD), un corpus de contratos anotados para la extracción de cláusulas.
 
 El modelo resuelve una tarea muy concreta: dado un fragmento de contrato y una pregunta (por ejemplo, sobre la duración, las partes implicadas o las cláusulas de terminación), devuelve el span de texto exacto que responde a esa pregunta. Con 124 millones de parámetros y una ventana de contexto propia de RoBERTa-base, está pensado para integrarse en pipelines de análisis documental legal, no como un modelo generativo de propósito general.
 
@@ -61,16 +61,16 @@ No se han publicado en la información disponible resultados comparativos con ot
 - VRAM estimada para inferencia: aproximadamente 0,5 GB en precisión FP32 (124 millones de parámetros), y menos de 0,3 GB en FP16.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM; tarjetas como RTX 3060, RTX 4090, A100 o H100 son más que suficientes, aunque el modelo también funciona en CPU.
 - Cabe en cualquier GPU de consumo actual e incluso en entornos sin GPU dedicada.
-- Opciones de despliegue: transformers (PyTorch), ONNX Runtime, y servidores de inferencia compatibles con modelos de QA como HuggingFace Inference Endpoints o FastAPI con transformers. No se dispone de información sobre soporte específico en vLLM, llama.cpp u Ollama, que están orientados a modelos generativos.
+- Opciones de despliegue: transformers (PyTorch), ONNX Runtime, y servidores de inferencia compatibles con modelos de QA como Hugging Face Inference Endpoints o FastAPI con transformers. No se dispone de información sobre soporte específico en vLLM, llama.cpp u Ollama, que están orientados a modelos generativos.
 - Latencia y throughput: no disponibles en la información proporcionada; por el tamaño del modelo, se espera una latencia baja en GPU y aceptable en CPU para lotes pequeños.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| clauselens-cuad | 124 M | no disponible (RoBERTa-base: 512 tokens) | QA extractivo legal (CUAD) | Apache 2.0 | HuggingFace |
-| deepset/roberta-base-squad2 | 124 M | 512 tokens | QA extractivo general (SQuAD 2.0) | no disponible en la información | HuggingFace |
-| Modelos legales generativos de gran tamaño (por ejemplo, familia LegalBERT o LLM legales) | variable | variable | Múltiples tareas legales | variable | HuggingFace |
+| clauselens-cuad | 124 M | no disponible (RoBERTa-base: 512 tokens) | QA extractivo legal (CUAD) | Apache 2.0 | Hugging Face |
+| deepset/roberta-base-squad2 | 124 M | 512 tokens | QA extractivo general (SQuAD 2.0) | no disponible en la información | Hugging Face |
+| Modelos legales generativos de gran tamaño (por ejemplo, familia LegalBERT o LLM legales) | variable | variable | Múltiples tareas legales | variable | Hugging Face |
 
 La comparación directa con alternativas es limitada porque la información proporcionada no incluye resultados de otros modelos sobre CUAD. El modelo base `deepset/roberta-base-squad2` es el referente inmediato: clauselens-cuad añade especialización en dominio legal a costa de restringir su uso al inglés contractual.
 
@@ -88,6 +88,6 @@ La comparación directa con alternativas es limitada porque la información prop
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CodexTanishq/clauselens-cuad
+- Modelo en Hugging Face: https://huggingface.co/CodexTanishq/clauselens-cuad
 - Modelo base: https://huggingface.co/deepset/roberta-base-squad2
 - Dataset de entrenamiento: https://huggingface.co/datasets/chenghao/cuad_qa

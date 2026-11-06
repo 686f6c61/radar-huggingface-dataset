@@ -75,7 +75,7 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/OpenSpatial-Qwen3-VL-8B-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/OpenSpatial-Qwen3-VL-8B-i1-GGUF
 - Modelo original (VINHYU): https://huggingface.co/VINHYU/OpenSpatial-Qwen3-VL-8B
 - Página de Qwen3-VL en LM Studio: https://lmstudio.ai/models/qwen3-vl
 - Página de Qwen3-VL-8B en LM Studio: https://lmstudio.ai/models/qwen/qwen3-vl-8b

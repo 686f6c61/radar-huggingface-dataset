@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Graphite es un modelo publicado en HuggingFace por el usuario Jonsolo bajo el identificador `Jonsolo/Graphite`. La model card asociada es minima: unicamente declara la licencia MIT, el idioma ingles (`en`), la etiqueta de pipeline `graph-ml` y un campo `base_model` que se autorreferencia a si mismo. No se documenta arquitectura, numero de parametros, longitud de contexto ni proceso de entrenamiento.
+Graphite es un modelo publicado en Hugging Face por el usuario Jonsolo bajo el identificador `Jonsolo/Graphite`. La model card asociada es minima: unicamente declara la licencia MIT, el idioma ingles (`en`), la etiqueta de pipeline `graph-ml` y un campo `base_model` que se autorreferencia a si mismo. No se documenta arquitectura, numero de parametros, longitud de contexto ni proceso de entrenamiento.
 
 El modelo esta etiquetado para tareas de aprendizaje automatico sobre grafos (graph machine learning), una categoria distinta a la generacion de texto. Esto sugiere que su proposito previsto seria operar sobre estructuras de grafo (nodos, aristas, atributos) en lugar de sobre secuencias de tokens, aunque la model card no proporciona ninguna descripcion funcional que lo confirme.
 
@@ -83,7 +83,7 @@ No disponible. La model card no especifica arquitectura, tamano ni tarea concret
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jonsolo/Graphite
+- Hugging Face: https://huggingface.co/Jonsolo/Graphite
 - Model card: no disponible como documento independiente; el repositorio no incluye contenido descriptivo mas alla de los metadatos YAML.
 - Paper: no disponible.
 - Repositorio de codigo: no disponible.

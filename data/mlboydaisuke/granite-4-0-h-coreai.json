@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/granite-4.0-h-CoreAI",
+  "slug": "mlboydaisuke-granite-4-0-h-coreai",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/granite-4.0-h-CoreAI",
+  "created_at": "2026-06-11T00:06:29.000Z",
+  "updated_at": "2026-11-06T11:05:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "coreai",
+  "languages": [],
+  "tags": [
+    "coreai",
+    "coreai-aimodel",
+    "apple",
+    "aimodel",
+    "on-device",
+    "granite",
+    "mamba2",
+    "apple-silicon",
+    "macos",
+    "ios",
+    "hybrid",
+    "granite-4.0-h",
+    "tokens-per-second",
+    "m4-max",
+    "iphone-17-pro",
+    "base_model:ibm-granite/granite-4.0-h-1b",
+    "base_model:quantized:ibm-granite/granite-4.0-h-1b",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10348309038,
+  "storage_human": "10.3 GB",
+  "base_model": "ibm-granite/granite-4.0-h-1b, ibm-granite/granite-4.0-h-350m",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mlboydaisuke/granite-4.0-h-CoreAI · Hugging Face",
+      "url": "https://huggingface.co/mlboydaisuke/granite-4.0-h-CoreAI",
+      "snippet": "IBM Granite 4.0-H (Mamba2 + attention hybrid; 1b: 36 Mamba2 mixers + 4 NoPE GQA attention layers) converted to Apple Core AI for iOS 27 / macOS 27 (beta), riding Apple's coreai-pipelined GPU engine via the decode-only loop-free export — async encode, on-GPU argmax sampling, on-device KV growth, zero custom kernels."
+    },
+    {
+      "title": "coreai-community/granite-4.0-h-CoreAI at main - Hugging Face",
+      "url": "https://huggingface.co/coreai-community/granite-4.0-h-CoreAI/tree/main",
+      "snippet": "Copy to bucket new main granite-4.0-h-CoreAI 4.27 GB Ctrl+K Ctrl+K 1 contributor History: 2 commits"
+    }
+  ]
+}

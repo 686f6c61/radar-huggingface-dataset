@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`VainCat/ppo-LunarLander-v2` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno `LunarLander-v2` mediante la librería stable-baselines3. Lo publica el usuario VainCat en HuggingFace Hub como un artefacto de política entrenada, no como un modelo de lenguaje: no procesa texto ni imágenes, sino observaciones vectoriales del simulador y devuelve acciones discretas para el módulo de aterrizaje.
+`VainCat/ppo-LunarLander-v2` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno `LunarLander-v2` mediante la librería stable-baselines3. Lo publica el usuario VainCat en Hugging Face Hub como un artefacto de política entrenada, no como un modelo de lenguaje: no procesa texto ni imágenes, sino observaciones vectoriales del simulador y devuelve acciones discretas para el módulo de aterrizaje.
 
-El modelo declara una recompensa media de 266,04 ± 23,81 en `LunarLander-v2` según el `model-index` de su model card, con el campo `verified` a `false`, es decir, sin validación independiente por parte de HuggingFace. Es relevante como ejemplo canónico del flujo "entrenar con SB3 y publicar en el Hub": resulta útil para docencia, para reproducir experimentos de RL y como línea base contra la que comparar variantes de PPO o de ajuste de hiperparámetros.
+El modelo declara una recompensa media de 266,04 ± 23,81 en `LunarLander-v2` según el `model-index` de su model card, con el campo `verified` a `false`, es decir, sin validación independiente por parte de Hugging Face. Es relevante como ejemplo canónico del flujo "entrenar con SB3 y publicar en el Hub": resulta útil para docencia, para reproducir experimentos de RL y como línea base contra la que comparar variantes de PPO o de ajuste de hiperparámetros.
 
 La información publicada es mínima: la model card incluye un bloque de uso con `TODO` sin completar, no se declara licencia, no se especifican idiomas ni arquitectura de red, y el repositorio figura con 0,0 GB de tamaño. Cualquier evaluación de producción debe partir, por tanto, de la verificación directa de los archivos subidos.
 
@@ -100,7 +100,7 @@ Las filas de alternativas se incluyen como categorías de comparación habituale
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VainCat/ppo-LunarLander-v2
+- Modelo en Hugging Face: https://huggingface.co/VainCat/ppo-LunarLander-v2
 - stable-baselines3 (repositorio citado en la model card): https://github.com/DLR-RM/stable-baselines3
 - huggingface_sb3 (utilidad de carga referenciada en el fragmento de código): https://github.com/huggingface/huggingface_sb3
 - RL Baselines3 Zoo (referencia externa de agentes preentrenados con SB3): https://github.com/DLR-RM/rl-baselines3-zoo

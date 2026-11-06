@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen2.5-1.5B-Indo-Text2SQL es un ajuste fino (fine-tuning) del modelo Qwen2.5-Coder-1.5B-Instruct, publicado por el usuario unalivehooman en HuggingFace. El nombre sugiere una especialización en la tarea de text-to-SQL para indonesio, aunque la model card no documenta explícitamente ni el conjunto de datos de entrenamiento ni el idioma objetivo, y los metadatos declaran únicamente inglés como idioma soportado. Se trata, por tanto, de un modelo derivado de bajo perfil, sin métricas publicadas ni documentación técnica detallada.
+Qwen2.5-1.5B-Indo-Text2SQL es un ajuste fino (fine-tuning) del modelo Qwen2.5-Coder-1.5B-Instruct, publicado por el usuario unalivehooman en Hugging Face. El nombre sugiere una especialización en la tarea de text-to-SQL para indonesio, aunque la model card no documenta explícitamente ni el conjunto de datos de entrenamiento ni el idioma objetivo, y los metadatos declaran únicamente inglés como idioma soportado. Se trata, por tanto, de un modelo derivado de bajo perfil, sin métricas publicadas ni documentación técnica detallada.
 
 El modelo base, Qwen2.5-Coder-1.5B-Instruct, es un transformer decoder-only de 1.500 millones de parámetros desarrollado por Alibaba Qwen, orientado a generación de código y con una ventana de contexto de 32.768 tokens. Este ajuste se realizó con Unsloth y TRL sobre la versión cuantizada en 4 bits del modelo base (bnb-4bit), lo que implica que los pesos resultantes heredan las limitaciones de esa cuantización de partida.
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen2.5-1.5B-Indo-Text2SQL | 1,5B | no disponible | apache-2.0 | HuggingFace, 0 descargas |
-| Qwen2.5-Coder-1.5B-Instruct (base) | 1,5B | 32.768 tokens | apache-2.0 | HuggingFace, ampliamente usado |
-| Qwen2.5-Coder-7B-Instruct | 7B | 32.768 tokens | apache-2.0 | HuggingFace, ampliamente usado |
-| CodeLlama-7B-Instruct | 7B | 16.384 tokens | Llama 2 custom | HuggingFace |
+| Qwen2.5-1.5B-Indo-Text2SQL | 1,5B | no disponible | apache-2.0 | Hugging Face, 0 descargas |
+| Qwen2.5-Coder-1.5B-Instruct (base) | 1,5B | 32.768 tokens | apache-2.0 | Hugging Face, ampliamente usado |
+| Qwen2.5-Coder-7B-Instruct | 7B | 32.768 tokens | apache-2.0 | Hugging Face, ampliamente usado |
+| CodeLlama-7B-Instruct | 7B | 16.384 tokens | Llama 2 custom | Hugging Face |
 
 No se dispone de datos de rendimiento del ajuste que permitan una comparación cuantitativa con alternativas.
 
@@ -81,6 +81,6 @@ No se dispone de datos de rendimiento del ajuste que permitan una comparación c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unalivehooman/Qwen2.5-1.5B-Indo-Text2SQL
+- Modelo en Hugging Face: https://huggingface.co/unalivehooman/Qwen2.5-1.5B-Indo-Text2SQL
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-Coder-1.5B-Instruct-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

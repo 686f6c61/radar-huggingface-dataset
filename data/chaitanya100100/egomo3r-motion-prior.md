@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EgoMo3R motion prior | ~71M | 80 fotogramas (extensible) | Difusion de movimiento SMPL-X condicionada por trayectoria | no disponible | HuggingFace + repo `modiff` |
+| EgoMo3R motion prior | ~71M | 80 fotogramas (extensible) | Difusion de movimiento SMPL-X condicionada por trayectoria | no disponible | Hugging Face + repo `modiff` |
 | UniEgoMotion (ICCV 2025) | no disponible | no disponible | Reconstruccion, prediccion y generacion de movimiento egocentrico | no disponible | Proyecto del mismo autor |
 | Alternativas genericas de motion generation (p. ej. MDM, MLD) | no disponible | no disponible | Generacion de movimiento humano por difusion | no disponible | no disponible |
 
@@ -84,7 +84,7 @@ No se dispone de datos suficientes para una comparativa cuantitativa con alterna
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chaitanya100100/egomo3r-motion-prior
+- Hugging Face: https://huggingface.co/chaitanya100100/egomo3r-motion-prior
 - Proyecto EgoMo3R: https://chaitanya100100.github.io/EgoMo3R/
 - Codebase `modiff`: https://github.com/chaitanya100100/motion_diffusion
 - Proyecto UniEgoMotion: https://chaitanya100100.github.io/UniEgoMotion/

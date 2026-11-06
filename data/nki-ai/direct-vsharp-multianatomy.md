@@ -115,7 +115,7 @@ Frente a alternativas externas de la misma categoría (métodos de reconstrucci�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NKI-AI/direct-vsharp-multianatomy
+- Modelo en Hugging Face: https://huggingface.co/NKI-AI/direct-vsharp-multianatomy
 - Paper del método vSHARP: https://arxiv.org/abs/2309.09954
 - Paper de fastMRI (Zbontar et al.): https://arxiv.org/abs/1811.08839
 - Repositorio del framework DIRECT: https://github.com/NKI-AI/direct

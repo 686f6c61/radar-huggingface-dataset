@@ -75,9 +75,9 @@ La comparacion natural es con los otros dos formatos del mismo modelo base, ya q
 
 | Version | Parametros | Contexto | PPL texto | PPL codigo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este build (2 bits en gate/up de expertos, MLX) | 35,1 B totales / ~3 B activos | no disponible | 11,761 | 3,122 | MIT | HuggingFace, 14,4 GB |
-| Ornith-1.5-35B-A3B-gptq-mlx-jang (3 bits en expertos, MLX) | 35,1 B totales / ~3 B activos | no disponible | 10,368 | 2,507 | MIT | HuggingFace, 17,0 GB |
-| Ornith-1.5-35B-A3B en bf16 (HF transformers) | 35,1 B totales / ~3 B activos | no disponible | 9,711 | 2,166 | MIT | HuggingFace, 72 GB |
+| Este build (2 bits en gate/up de expertos, MLX) | 35,1 B totales / ~3 B activos | no disponible | 11,761 | 3,122 | MIT | Hugging Face, 14,4 GB |
+| Ornith-1.5-35B-A3B-gptq-mlx-jang (3 bits en expertos, MLX) | 35,1 B totales / ~3 B activos | no disponible | 10,368 | 2,507 | MIT | Hugging Face, 17,0 GB |
+| Ornith-1.5-35B-A3B en bf16 (HF transformers) | 35,1 B totales / ~3 B activos | no disponible | 9,711 | 2,166 | MIT | Hugging Face, 72 GB |
 
 ## Limitaciones y advertencias
 
@@ -94,7 +94,7 @@ La comparacion natural es con los otros dos formatos del mismo modelo base, ya q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/roman220220/Ornith-1.5-35B-A3B-gptq-mlx-jang-small
+- Modelo en Hugging Face: https://huggingface.co/roman220220/Ornith-1.5-35B-A3B-gptq-mlx-jang-small
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Build de 3 bits del mismo autor: https://huggingface.co/roman220220/Ornith-1.5-35B-A3B-gptq-mlx-jang
 - Fork de MLX con soporte de vision: https://github.com/ipsupport-llc/mlx-lm

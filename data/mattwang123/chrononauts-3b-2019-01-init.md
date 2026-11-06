@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Chrononauts 3B (2019-01, init) | 2,8B | 8.192 | other | HuggingFace | Modelo base temporalmente bloqueado, sin entrenamiento de agente |
+| Chrononauts 3B (2019-01, init) | 2,8B | 8.192 | other | Hugging Face | Modelo base temporalmente bloqueado, sin entrenamiento de agente |
 | TiC-LM 3B (base) | 3B | 2.000 | no disponible | no disponible | Modelo base del que deriva, sin extensión de contexto |
-| Chrononauts 3B (2019-01, sft) | no disponible | no disponible | other | HuggingFace (repo hermano) | Etapa SFT del mismo cutoff |
-| Chrononauts 3B (2019-01, agent) | no disponible | no disponible | other | HuggingFace (repo hermano) | Etapa entrenada como agente |
+| Chrononauts 3B (2019-01, sft) | no disponible | no disponible | other | Hugging Face (repo hermano) | Etapa SFT del mismo cutoff |
+| Chrononauts 3B (2019-01, agent) | no disponible | no disponible | other | Hugging Face (repo hermano) | Etapa entrenada como agente |
 
 ## Limitaciones y advertencias
 
@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mattwang123/chrononauts-3b-2019-01-init
+- Hugging Face: https://huggingface.co/mattwang123/chrononauts-3b-2019-01-init
 - Repo hermano SFT: https://huggingface.co/mattwang123/chrononauts-3b-2019-01-sft
 - Repo hermano agente: https://huggingface.co/mattwang123/chrononauts-3b-2019-01-agent
 - Modelo de embeddings del corpus: https://huggingface.co/BAAI/bge-base-en-v1.5

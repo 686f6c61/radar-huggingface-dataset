@@ -98,7 +98,7 @@ Datos de las alternativas tomados de especificaciones públicas; no verificados 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/open-athena/Snowball-67B-A2B-Math-RL-E1-ctx8k-p8-Step5
+- Modelo en Hugging Face: https://huggingface.co/open-athena/Snowball-67B-A2B-Math-RL-E1-ctx8k-p8-Step5
 - Issue del experimento: https://github.com/marin-community/marin/issues/7786
 - Archivo de evidencias: https://huggingface.co/datasets/penfever/snowball-67b-a2b-math-rl-artifacts
 - Origen del artefacto: s3://marin-us-east-02a/marin/exports/snowball-bias-repaired/rl-snowball-e1-rno2a-ctx8k-p8-grug-67b-a-20260730-225618-8d52bd/global_step_5/policy/

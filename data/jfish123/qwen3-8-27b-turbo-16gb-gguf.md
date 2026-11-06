@@ -103,7 +103,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- HuggingFace (este modelo): https://huggingface.co/Jfish123/Qwen3.8-27B-TURBO-16GB-GGUF
+- Hugging Face (este modelo): https://huggingface.co/Jfish123/Qwen3.8-27B-TURBO-16GB-GGUF
 - Modelo base (fine-tune de DavidAU): https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU
 - Cuantizaciones i1 de mradermacher (imatrix): https://huggingface.co/mradermacher/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-i1-GGUF
 - Variante sin fine-tune del mismo autor: https://huggingface.co/Jfish123/Qwen3.8-27B-16GB-GGUF

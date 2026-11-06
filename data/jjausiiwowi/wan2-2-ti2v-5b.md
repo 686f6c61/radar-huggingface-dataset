@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Resolucion / fps | Modalidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Wan2.2-TI2V-5B | 5B | 720p / 24 fps | T2V + I2V | Apache 2.0 | HuggingFace, ModelScope |
-| Wan2.2-T2V-A14B | 14B (MoE) | 480p y 720p | T2V | Apache 2.0 | HuggingFace, ModelScope |
-| Wan2.2-I2V-A14B | 14B (MoE) | 480p y 720p | I2V | Apache 2.0 | HuggingFace, ModelScope |
-| Wan2.1 | no disponible | no disponible | T2V / I2V | Apache 2.0 | HuggingFace, ModelScope |
+| Wan2.2-TI2V-5B | 5B | 720p / 24 fps | T2V + I2V | Apache 2.0 | Hugging Face, ModelScope |
+| Wan2.2-T2V-A14B | 14B (MoE) | 480p y 720p | T2V | Apache 2.0 | Hugging Face, ModelScope |
+| Wan2.2-I2V-A14B | 14B (MoE) | 480p y 720p | I2V | Apache 2.0 | Hugging Face, ModelScope |
+| Wan2.1 | no disponible | no disponible | T2V / I2V | Apache 2.0 | Hugging Face, ModelScope |
 
 Los modelos A14B de la misma familia ofrecen mayor capacidad mediante MoE pero requieren más recursos; el TI2V-5B prioriza eficiencia y despliegue en una sola GPU de consumo. No se dispone de datos de benchmarks para comparar rendimiento numérico con alternativas de otros desarrolladores.
 
@@ -83,12 +83,12 @@ Los modelos A14B de la misma familia ofrecen mayor capacidad mediante MoE pero r
 
 ## Enlaces
 
-- [HuggingFace: Jjausiiwowi/Wan2.2-TI2V-5B](https://huggingface.co/Jjausiiwowi/Wan2.2-TI2V-5B)
-- [HuggingFace oficial: Wan-AI/Wan2.2-TI2V-5B](https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B)
+- [Hugging Face: Jjausiiwowi/Wan2.2-TI2V-5B](https://huggingface.co/Jjausiiwowi/Wan2.2-TI2V-5B)
+- [Hugging Face oficial: Wan-AI/Wan2.2-TI2V-5B](https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B)
 - [GitHub: Wan-Video/Wan2.2](https://github.com/Wan-Video/Wan2.2)
 - [Informe técnico (arXiv:2503.20314)](https://arxiv.org/abs/2503.20314)
 - [Sitio oficial Wan](https://wan.video)
 - [Blog de Wan](https://wan.video/welcome)
 - [ModelScope: Wan-AI](https://modelscope.cn/organization/Wan-AI)
-- [HuggingFace: organización Wan-AI](https://huggingface.co/Wan-AI/)
+- [Hugging Face: organización Wan-AI](https://huggingface.co/Wan-AI/)
 - [Discord de Wan](https://discord.gg/AKNgpMK4Yj)

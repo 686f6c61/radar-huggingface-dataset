@@ -102,6 +102,6 @@ No se dispone de datos de modelos comparables en la información proporcionada. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/infosecn1nja/laya-soc-ft-lab
+- Modelo en Hugging Face: https://huggingface.co/infosecn1nja/laya-soc-ft-lab
 - Modelo base Laya: https://huggingface.co/convaiinnovations/laya
 - Tarjeta de política y configuración del *bounded triage*: https://huggingface.co/infosecn1nja/laya-soc-bounded-triage

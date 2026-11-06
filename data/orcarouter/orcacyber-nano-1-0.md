@@ -6,14 +6,14 @@ OrcaCyber Nano 1.0 es un modelo de lenguaje y visión publicado por orcarouter (
 
 Arquitectónicamente la model card declara `Qwen3_5ForConditionalGeneration` en una variante híbrida visión-lenguaje, con 64 capas, dimensión oculta 5120 y una mezcla de 48 capas de atención lineal más 16 de atención completa, además de una cabeza MTP integrada para decodificación especulativa. El contexto declarado es de 262.144 tokens y las modalidades son texto e imagen/vídeo de entrada con salida de texto.
 
-Hay una discrepancia relevante que el lector debe tener en cuenta: la model card anuncia "27B" en su texto promocional, mientras que los metadatos de HuggingFace derivados de los pesos en safetensors indican 1.924.404.480 parámetros totales (aproximadamente 1,9B). No se ha publicado información que permita resolver la contradicción. El repositorio tiene acceso restringido (gated) y la licencia es la de Qwen.
+Hay una discrepancia relevante que el lector debe tener en cuenta: la model card anuncia "27B" en su texto promocional, mientras que los metadatos de Hugging Face derivados de los pesos en safetensors indican 1.924.404.480 parámetros totales (aproximadamente 1,9B). No se ha publicado información que permita resolver la contradicción. El repositorio tiene acceso restringido (gated) y la licencia es la de Qwen.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
 | Arquitectura | `Qwen3_5ForConditionalGeneration`, híbrida visión-lenguaje (VL hybrid); 64 capas, hidden 5120, 48 capas de atención lineal + 16 de atención completa |
-| Parámetros totales | 1.924.404.480 según metadatos de safetensors en HuggingFace; la model card declara "27B" (dato no verificado y en contradicción con el anterior) |
+| Parámetros totales | 1.924.404.480 según metadatos de safetensors en Hugging Face; la model card declara "27B" (dato no verificado y en contradicción con el anterior) |
 | Parámetros activos | no disponible (no se indica que sea un modelo MoE) |
 | Longitud de contexto | 262.144 tokens (los ejemplos de despliegue de llama.cpp usan 32.768) |
 | Tipos de cuantización | GGUF: build "Mix-15.7G" (15,70 GB), build "Mix-13G" (12,99 GB), drafter DFlash2 en Q8_0 (2,06 GB), proyector de visión mmproj en F16 (0,93 GB). El tipo exacto de cuantización de los builds "Mix" no se especifica |
@@ -82,26 +82,26 @@ No se han publicado en la información disponible comparaciones con modelos de l
 
 | Modelo | Parámetros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OrcaCyber Nano 1.0 | 1,9B según safetensors / "27B" según la model card (no verificado) | 262.144 tokens | AIME 2025 96,23%; MATH-500 98,60%; GSM8K 97,50%; MBPP+ 84,66%; IFEval 82,81% (harness pendiente) | qwen (acceso restringido) | GGUF en HuggingFace; API vía OrcaRouter |
+| OrcaCyber Nano 1.0 | 1,9B según safetensors / "27B" según la model card (no verificado) | 262.144 tokens | AIME 2025 96,23%; MATH-500 98,60%; GSM8K 97,50%; MBPP+ 84,66%; IFEval 82,81% (harness pendiente) | qwen (acceso restringido) | GGUF en Hugging Face; API vía OrcaRouter |
 | OrcaCyber Zero 1.5 | no disponible | 1.000.000 tokens | 98,01% pass@1 en CyberGym Level 1 (dato promocional del autor) | no disponible | API compatible con OpenAI en OrcaRouter |
 | Otras alternativas de la categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Discrepancia de tamaño sin resolver: los metadatos de HuggingFace indican 1.924.404.480 parámetros, mientras que el texto de la model card afirma "27B". Cualquier estimación de VRAM o de capacidad debe tomarse con cautela hasta que el autor lo aclare.
+- Discrepancia de tamaño sin resolver: los metadatos de Hugging Face indican 1.924.404.480 parámetros, mientras que el texto de la model card afirma "27B". Cualquier estimación de VRAM o de capacidad debe tomarse con cautela hasta que el autor lo aclare.
 - Benchmarks no reproducibles: el propio autor indica que el harness y las tablas completas están pendientes de publicación; las cifras de AIME 2025, MATH-500, GSM8K, MBPP+ e IFEval no se han validado de forma independiente.
 - Riesgo de alucinación en un dominio crítico: en análisis de vulnerabilidades, reversing o revisión de código, una explicación incorrecta puede llevar a conclusiones de seguridad erróneas; se requiere validación humana de cada hallazgo.
 - Sesgo de dominio: el post-entrenamiento en ciberseguridad puede degradar el rendimiento en tareas generales respecto al modelo base; la afirmación de que conserva "full general-purpose reasoning" no está cuantificada.
 - Idiomas: solo inglés y chino según los metadatos; no hay soporte declarado de castellano.
 - Licencia: `other` con `license_name: qwen`, lo que implica aplicar los términos de la licencia de Qwen; es necesario revisar las condiciones de uso comercial del texto completo de dicha licencia antes de desplegar en producción.
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace, lo que afecta a la automatización de descargas en pipelines.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face, lo que afecta a la automatización de descargas en pipelines.
 - Contexto efectivo: aunque se declaran 262.144 tokens, los ejemplos de despliegue del propio autor usan 32.768, por lo que la ventana real en configuraciones de hardware modesto será menor.
 - Dependencia de llama.cpp: no se documentan rutas de despliegue con vLLM, TGI ni motores de alta concurrencia, lo que limita el serving a gran escala.
 - Contenido promocional mezclado: la model card incluye publicidad de otro modelo (OrcaCyber Zero 1.5) cuyas cifras no deben atribuirse a este checkpoint.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/orcarouter/OrcaCyber-Nano-1.0 (acceso restringido)
+- Hugging Face: https://huggingface.co/orcarouter/OrcaCyber-Nano-1.0 (acceso restringido)
 - Modelo base: https://huggingface.co/orcarouter/OrcaCyber-Nano-1.0-AI-Defense
 - Sitio de OrcaRouter: https://www.orcarouter.ai/
 - Documentación de OrcaRouter: https://docs.orcarouter.ai/introduction

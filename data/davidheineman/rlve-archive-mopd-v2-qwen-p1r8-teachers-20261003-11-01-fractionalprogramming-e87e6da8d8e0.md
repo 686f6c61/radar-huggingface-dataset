@@ -97,7 +97,7 @@ La diferencia sustantiva no es de arquitectura ni de tamano, sino de estado: las
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidheineman/rlve-archive-mopd-v2-qwen-p1r8-teachers-20261003-11-01-fractionalprogramming-e87e6da8d8e0
+- Repositorio en Hugging Face: https://huggingface.co/davidheineman/rlve-archive-mopd-v2-qwen-p1r8-teachers-20261003-11-01-fractionalprogramming-e87e6da8d8e0
 - Ejecucion en Weights & Biases: identificador `933ad1b0`, sin URL publica disponible
 - Paper, blog, repositorio de codigo o demo: no disponibles
 - Nota sobre la busqueda web: los resultados devueltos no guardan ninguna relacion con el modelo (contenido bancario de La Banque Postale), por lo que no se ha podido recopilar informacion adicional fiable.

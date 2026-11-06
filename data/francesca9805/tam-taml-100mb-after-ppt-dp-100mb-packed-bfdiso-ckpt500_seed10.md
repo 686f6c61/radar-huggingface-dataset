@@ -48,7 +48,7 @@ El entrenamiento se realizo mediante SFT con TRL 0.23.0, sobre el checkpoint bas
 - Experimentacion academica con ajuste fino: el modelo sirve como punto de partida reproducible para estudiar el efecto del SFT sobre un checkpoint base de ~125 M de parametros, apoyandose en el run de W&B publicado.
 - Pruebas de infraestructura de despliegue: por su tamano reducido es util para validar pipelines de transformers, text-generation-inference o endpoints sin consumir recursos significativos.
 - Generacion de texto de bajo coste en entornos con GPU limitada: al caber en memoria de GPUs de consumo, permite prototipar aplicaciones de texto sin infraestructura dedicada.
-- Educacion y demos: util para ilustrar el ciclo completo preentrenamiento, SFT y publicacion en HuggingFace en cursos o talleres.
+- Educacion y demos: util para ilustrar el ciclo completo preentrenamiento, SFT y publicacion en Hugging Face en cursos o talleres.
 - Investigacion sobre tokenizadores: el nombre del run de W&B (`new-tokenizers`) sugiere que el proyecto explora variantes de tokenizacion, por lo que el modelo puede emplearse para comparar el impacto del tokenizador en la generacion.
 - Baseline para comparaciones controladas: al tener un recuento de parametros conocido y una semilla fija, sirve como referencia en experimentos de ablacion.
 - No se recomienda su uso en atencion al cliente, generacion de codigo en produccion ni tareas que requieran contexto largo o multilingue, dado que no hay evidencia de rendimiento en esas areas.
@@ -72,8 +72,8 @@ No se dispone de datos de rendimiento del modelo, por lo que la comparacion se l
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| tam-taml-100mb-after-ppt... (este modelo) | 124,77 M | no disponible | no disponible | HuggingFace, safetensors | no disponible |
-| GPT-2 small | 124 M | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | HuggingFace | no disponible |
+| tam-taml-100mb-after-ppt... (este modelo) | 124,77 M | no disponible | no disponible | Hugging Face, safetensors | no disponible |
+| GPT-2 small | 124 M | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face | no disponible |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se conocen en la informacion proporcionada otros modelos de la misma categoria con los que establecer una comparacion fiable.
@@ -92,7 +92,7 @@ No se conocen en la informacion proporcionada otros modelos de la misma categori
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/tam-taml-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/tam-taml-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed10
 - Modelo base: https://huggingface.co/francesca9805/tam-taml-100mb-ppt-Dp-100mb-packed-bfdiso_seed10
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/ppdhd99d
 - Repositorio de TRL: https://github.com/huggingface/trl

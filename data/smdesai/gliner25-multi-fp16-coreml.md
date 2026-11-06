@@ -81,10 +81,10 @@ No se han publicado resultados de benchmarks en la informacion disponible (no ha
 
 | Modelo | Parametros | Contexto/formato | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| smdesai/GLiNER25-Multi-FP16-CoreML (este) | 287M (mDeBERTa-v3-base) | Buckets 128–1024 tokens, Core ML `.mlmodelc` FP16 | 54/54 exactos frente a FP32; >= 60,5 dB PSNR | Apache 2.0 | HuggingFace |
-| smdesai/GLiNER25-Multi-FP16-CoreAI | 287M | Mismos grafos, funciones, entradas y salidas; formato Core AI | >= 62 dB PSNR; 54/54 (53 exactos, 1 frontera) | Apache 2.0 | HuggingFace |
-| smdesai/GLiNER25-Multi-Decide-FP16-CoreML | No disponible | Variante Core ML FP16 | No disponible | Apache 2.0 (segun el repositorio) | HuggingFace |
-| fastino/gliner2.5-multi-v1 (upstream) | 287M | Checkpoint PyTorch FP32 | Referencia de fidelidad | Apache 2.0 | HuggingFace |
+| smdesai/GLiNER25-Multi-FP16-CoreML (este) | 287M (mDeBERTa-v3-base) | Buckets 128–1024 tokens, Core ML `.mlmodelc` FP16 | 54/54 exactos frente a FP32; >= 60,5 dB PSNR | Apache 2.0 | Hugging Face |
+| smdesai/GLiNER25-Multi-FP16-CoreAI | 287M | Mismos grafos, funciones, entradas y salidas; formato Core AI | >= 62 dB PSNR; 54/54 (53 exactos, 1 frontera) | Apache 2.0 | Hugging Face |
+| smdesai/GLiNER25-Multi-Decide-FP16-CoreML | No disponible | Variante Core ML FP16 | No disponible | Apache 2.0 (segun el repositorio) | Hugging Face |
+| fastino/gliner2.5-multi-v1 (upstream) | 287M | Checkpoint PyTorch FP32 | Referencia de fidelidad | Apache 2.0 | Hugging Face |
 
 No se dispone en la informacion proporcionada de datos de benchmarks que permitan comparar con otros extractores NER multilingues (por ejemplo, variantes de GLiNER de urchade o modelos de extraccion genericos).
 
@@ -97,12 +97,12 @@ No se dispone en la informacion proporcionada de datos de benchmarks que permita
 - La colocacion en Neural Engine no fue validada; el rendimiento fuera de `.cpuAndGPU` no esta confirmado.
 - Los pesos son identicos al checkpoint original salvo el casteo a FP16, por lo que hereda sus posibles sesgos y su riesgo de alucinacion en la extraccion (falsos positivos de entidades o relaciones). No se documentan sesgos especificos en la informacion disponible.
 - Licencia Apache 2.0, que permite uso comercial; conviene conservar los avisos de atribucion a Fastino y a los autores de GLiNER2, ya que en este port el credito del modelo original recae en ellos.
-- La fecha de creacion del repositorio indicada por HuggingFace (2026-10-12) y la validacion con iOS 27.2 / Xcode 27.2 corresponden a un entorno futuro respecto al conocimiento general; conviene verificar versiones reales antes de desplegar.
+- La fecha de creacion del repositorio indicada por Hugging Face (2026-10-12) y la validacion con iOS 27.2 / Xcode 27.2 corresponden a un entorno futuro respecto al conocimiento general; conviene verificar versiones reales antes de desplegar.
 - Modelo con 0 descargas y 0 likes en el momento de la consulta, lo que implica poca validacion externa por parte de la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/smdesai/GLiNER25-Multi-FP16-CoreML
+- Modelo en Hugging Face: https://huggingface.co/smdesai/GLiNER25-Multi-FP16-CoreML
 - Modelo base: https://huggingface.co/fastino/gliner2.5-multi-v1
 - Port companero en Core AI: https://huggingface.co/smdesai/GLiNER25-Multi-FP16-CoreAI
 - Variante Decide en Core ML: https://huggingface.co/smdesai/GLiNER25-Multi-Decide-FP16-CoreML

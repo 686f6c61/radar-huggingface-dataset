@@ -2,7 +2,7 @@
 
 ## Resumen
 
-eg8694046/first_model es un modelo de deteccion de objetos publicado en HuggingFace por el usuario eg8694046. Segun las etiquetas del repositorio, se trata de un detector basado en la arquitectura YOLOv11 en su variante nano, exportado en formato ONNX y entrenado para una unica clase: persona (person). La model card indica que fue generado por el servicio element_trainer de Roboflow, con una entrada definida como frame de imagen RGB y una salida definida como lista de detecciones.
+eg8694046/first_model es un modelo de deteccion de objetos publicado en Hugging Face por el usuario eg8694046. Segun las etiquetas del repositorio, se trata de un detector basado en la arquitectura YOLOv11 en su variante nano, exportado en formato ONNX y entrenado para una unica clase: persona (person). La model card indica que fue generado por el servicio element_trainer de Roboflow, con una entrada definida como frame de imagen RGB y una salida definida como lista de detecciones.
 
 El modelo no es un modelo de lenguaje ni un modelo multimodal generativo: no procesa texto, no tiene ventana de contexto ni parametros activos tipo MoE. Se trata de un componente de vision por computador pensado para integrarse en pipelines de inferencia que reciben fotogramas y devuelven cajas delimitadoras de personas. El repositorio esta etiquetado con element_type:detect, model:yolov11-nano, object:person y region:us.
 
@@ -75,10 +75,10 @@ No hay datos de rendimiento de este modelo que permitan una comparacion cuantita
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| eg8694046/first_model (YOLOv11-nano, clase person) | No disponible en la ficha (familia YOLOv11n: en torno a 2,6 M, cifra publica no confirmada) | No aplica | No disponible (evaluation_score null) | No disponible | Repositorio HuggingFace con 0 descargas y 0,0 GB declarados |
+| eg8694046/first_model (YOLOv11-nano, clase person) | No disponible en la ficha (familia YOLOv11n: en torno a 2,6 M, cifra publica no confirmada) | No aplica | No disponible (evaluation_score null) | No disponible | Repositorio Hugging Face con 0 descargas y 0,0 GB declarados |
 | YOLOv11n (Ultralytics, COCO) | En torno a 2,6 M (cifra publica de la familia) | No aplica | Metricas publicas en la documentacion de Ultralytics, no comparables directamente por diferencia de dataset y clases | AGPL-3.0 en el repositorio oficial de Ultralytics, con licencia comercial alternativa; verificar antes de uso | Pesos y codigo ampliamente disponibles |
 | YOLOv8n (Ultralytics, COCO) | En torno a 3,2 M (cifra publica de la familia) | No aplica | Metricas publicas en la documentacion de Ultralytics | AGPL-3.0 con licencia comercial alternativa; verificar antes de uso | Pesos y codigo ampliamente disponibles |
-| YOLOv10n | No disponible en la informacion proporcionada | No aplica | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Pesos publicos en HuggingFace y repositorio del proyecto |
+| YOLOv10n | No disponible en la informacion proporcionada | No aplica | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Pesos publicos en Hugging Face y repositorio del proyecto |
 
 La comparacion cuantitativa con estos modelos no es posible con los datos disponibles, ya que este artefacto esta entrenado para una sola clase y no publica metricas, mientras que las alternativas se evaluan habitualmente sobre COCO con 80 clases.
 
@@ -100,7 +100,7 @@ La comparacion cuantitativa con estos modelos no es posible con los datos dispon
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/eg8694046/first_model
+- Hugging Face: https://huggingface.co/eg8694046/first_model
 - Model card: incluida en el repositorio anterior, con etiquetas y bloque de metadatos de element_trainer (source: element_trainer/800e961b-eb64-4380-880c-f1ed67abd563)
 - Referencia de benchmark declarada en la model card: benchmark/synthetic/1ada5b1e-38b8-4bdc-967a-d8a27b0e6afb.json (ruta relativa al repositorio; no se ha podido verificar su contenido)
 - Roboflow: no se proporciona enlace directo al proyecto de origen en la informacion disponible

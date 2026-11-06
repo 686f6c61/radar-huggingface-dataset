@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kai-skill-lora | LoRA sobre base de 4B | No disponible | Adaptadores para slide-creator y kai-report-creator | Apache-2.0 | HuggingFace |
-| Qwen/Qwen3-4B-Instruct-2507 | 4B | No disponible | Modelo base generalista de instrucciones | Apache-2.0 | HuggingFace |
-| Adaptadores LoRA comunitarios para Qwen3 | Variable | Heredado del base | Especializaciones diversas por tarea | Variable | HuggingFace |
+| kai-skill-lora | LoRA sobre base de 4B | No disponible | Adaptadores para slide-creator y kai-report-creator | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3-4B-Instruct-2507 | 4B | No disponible | Modelo base generalista de instrucciones | Apache-2.0 | Hugging Face |
+| Adaptadores LoRA comunitarios para Qwen3 | Variable | Heredado del base | Especializaciones diversas por tarea | Variable | Hugging Face |
 
 No se dispone de información sobre modelos directamente comparables en la misma categoría de generación de artefactos estructurados mediante IR más renderizador.
 
@@ -91,5 +91,5 @@ No se dispone de información sobre modelos directamente comparables en la misma
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Songkai/kai-skill-lora
+- Hugging Face: https://huggingface.co/Songkai/kai-skill-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507

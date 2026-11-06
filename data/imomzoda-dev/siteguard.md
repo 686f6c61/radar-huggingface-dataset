@@ -2,11 +2,11 @@
 
 ## Resumen
 
-SiteGuard no es un modelo de inteligencia artificial, sino una aplicacion de escritorio para Windows desarrollada por el usuario imomzoda-dev y publicada en HuggingFace bajo el identificador `imomzoda-dev/SiteGuard`. Su funcion es bloquear el acceso a redes sociales y sitios para adultos mediante la tabla de politicas de resolucion de nombres (NRPT) de Windows, una politica DNS nativa que actua a nivel de sistema operativo y afecta a todos los navegadores y aplicaciones del equipo. La aplicacion esta escrita en Python con PySide6 (Qt for Python) y se distribuye como un ejecutable autonomo.
+SiteGuard no es un modelo de inteligencia artificial, sino una aplicacion de escritorio para Windows desarrollada por el usuario imomzoda-dev y publicada en Hugging Face bajo el identificador `imomzoda-dev/SiteGuard`. Su funcion es bloquear el acceso a redes sociales y sitios para adultos mediante la tabla de politicas de resolucion de nombres (NRPT) de Windows, una politica DNS nativa que actua a nivel de sistema operativo y afecta a todos los navegadores y aplicaciones del equipo. La aplicacion esta escrita en Python con PySide6 (Qt for Python) y se distribuye como un ejecutable autonomo.
 
-El repositorio de HuggingFace no contiene pesos, checkpoints ni artefactos de aprendizaje automatico: aloja la model card de un proyecto de software de control parental. Por tanto, no dispone de arquitectura neuronal, parametros, contexto, cuantizaciones ni idiomas de inferencia. Cualquier evaluacion como modelo de lenguaje carece de sentido tecnico; la ficha se limita a documentar lo que el autor declara en su model card y a senalar explicitamente los datos no disponibles.
+El repositorio de Hugging Face no contiene pesos, checkpoints ni artefactos de aprendizaje automatico: aloja la model card de un proyecto de software de control parental. Por tanto, no dispone de arquitectura neuronal, parametros, contexto, cuantizaciones ni idiomas de inferencia. Cualquier evaluacion como modelo de lenguaje carece de sentido tecnico; la ficha se limita a documentar lo que el autor declara en su model card y a senalar explicitamente los datos no disponibles.
 
-La relevancia de esta entrada es, por un lado, como ejemplo de uso atipico de HuggingFace para distribuir software no-ML y, por otro, como advertencia para pipelines de catalogacion automatica que podrian clasificar erroneamente este repositorio como modelo. No se ha publicado informacion sobre benchmarks, licencia o rendimiento en la informacion disponible.
+La relevancia de esta entrada es, por un lado, como ejemplo de uso atipico de Hugging Face para distribuir software no-ML y, por otro, como advertencia para pipelines de catalogacion automatica que podrian clasificar erroneamente este repositorio como modelo. No se ha publicado informacion sobre benchmarks, licencia o rendimiento en la informacion disponible.
 
 ## Especificaciones tecnicas
 
@@ -46,7 +46,7 @@ La aplicacion incluye una tarea programada de Windows que restaura la configurac
 - Equipos de uso publico (bibliotecas, aulas, cibercafes): configurar un bloqueo persistente que sobreviva a reinicios y a intentos de desactivacion por parte de usuarios sin privilegios.
 - Entornos educativos con Windows 10/11: desplegar un unico EXE sin instalador ni dependencias en aulas, reduciendo el trabajo de aprovisionamiento frente a soluciones basadas en GPO.
 - Pruebas de resistencia de politicas DNS: usar la herramienta como referencia para estudiar como interactuan la NRPT, los antivirus y los cambios en `hosts` en un equipo Windows, dado que el autor documenta explicitamente ese conflicto.
-- Catalogacion y curaduria de repositorios HuggingFace: emplear este caso como ejemplo de repositorio no-ML para calibrar heuristicas de deteccion (ausencia de pesos, README en ruso, tags genericos como `region:us`) en pipelines de scraping.
+- Catalogacion y curaduria de repositorios Hugging Face: emplear este caso como ejemplo de repositorio no-ML para calibrar heuristicas de deteccion (ausencia de pesos, README en ruso, tags genericos como `region:us`) en pipelines de scraping.
 
 ## Benchmarks y rendimiento
 
@@ -80,7 +80,7 @@ No disponible. SiteGuard no pertenece a la categoria de modelos de IA y no se ha
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/imomzoda-dev/SiteGuard
+- Repositorio en Hugging Face: https://huggingface.co/imomzoda-dev/SiteGuard
 - Repositorio en GitHub: https://github.com/imomzoda-dev/SiteGuard
 - Ultima release (descarga del EXE): https://github.com/imomzoda-dev/SiteGuard/releases/latest
 - Perfil del autor en GitHub: https://github.com/imomzoda-dev

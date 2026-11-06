@@ -75,7 +75,7 @@ Este fine-tune se compara con FinBERT, un modelo específico para sentimiento fi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/RahulBarodia28/qwen2.5-0.5b-finphrasebank-lora
+- Repositorio Hugging Face: https://huggingface.co/RahulBarodia28/qwen2.5-0.5b-finphrasebank-lora
 - Modelo base Qwen2.5-0.5B: https://huggingface.co/Qwen/Qwen2.5-0.5B
 - Colección Qwen2.5: https://huggingface.co/collections/Qwen/qwen25
 - Informe técnico Qwen2.5 (arXiv): https://arxiv.org/pdf/2412.15115v1

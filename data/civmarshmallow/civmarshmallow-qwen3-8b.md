@@ -71,9 +71,9 @@ No se han publicado en la información disponible resultados de benchmarks está
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CivMarshmallow-Qwen3-8B | 8.000 M | no disponible | Agente RL para Freeciv | apache-2.0 | HuggingFace (múltiples checkpoints) |
-| Qwen/Qwen3-8B (base) | 8.000 M | no disponible en esta ficha | Modelo generalista | apache-2.0 | HuggingFace |
-| CivMarshmallow/Baselines-Qwen3-8B | 8.000 M | no disponible | Baselines RL con el mismo calendario | no disponible | HuggingFace |
+| CivMarshmallow-Qwen3-8B | 8.000 M | no disponible | Agente RL para Freeciv | apache-2.0 | Hugging Face (múltiples checkpoints) |
+| Qwen/Qwen3-8B (base) | 8.000 M | no disponible en esta ficha | Modelo generalista | apache-2.0 | Hugging Face |
+| CivMarshmallow/Baselines-Qwen3-8B | 8.000 M | no disponible | Baselines RL con el mismo calendario | no disponible | Hugging Face |
 
 No se dispone en la información proporcionada de otros modelos comparables de agentes RL para Freeciv.
 
@@ -90,7 +90,7 @@ No se dispone en la información proporcionada de otros modelos comparables de a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CivMarshmallow/CivMarshmallow-Qwen3-8B
+- Modelo en Hugging Face: https://huggingface.co/CivMarshmallow/CivMarshmallow-Qwen3-8B
 - Código: https://github.com/jamesnulliu/CivMarshmallow
 - Juez CivTelescope: https://huggingface.co/CivMarshmallow/CivTelescope
 - Baselines: https://huggingface.co/CivMarshmallow/Baselines-Qwen3-8B

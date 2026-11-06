@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Landorus es un modelo publicado en HuggingFace por el usuario Ryanham1lton bajo licencia CC-BY-4.0. El repositorio, creado el 1 de noviembre de 2026, tiene un tamano de 0,1 GB y no incluye pipeline declarado, idiomas soportados ni una model card con contenido tecnico mas alla de la linea de licencia. No se dispone de informacion sobre arquitectura, numero de parametros, contexto ni proceso de entrenamiento.
+Landorus es un modelo publicado en Hugging Face por el usuario Ryanham1lton bajo licencia CC-BY-4.0. El repositorio, creado el 1 de noviembre de 2026, tiene un tamano de 0,1 GB y no incluye pipeline declarado, idiomas soportados ni una model card con contenido tecnico mas alla de la linea de licencia. No se dispone de informacion sobre arquitectura, numero de parametros, contexto ni proceso de entrenamiento.
 
 La relevancia de esta ficha es limitada desde el punto de vista tecnico: se trata de un artefacto sin documentacion publica que permita evaluar su calidad, procedencia de datos o rendimiento. Cualquier uso en produccion requeriria una inspeccion directa de los pesos y una validacion empirica por parte del equipo adoptante.
 
@@ -40,7 +40,7 @@ El tamano del repositorio (0,1 GB) es compatible con un modelo de pequena escala
 - Evaluacion exploratoria en laboratorio: inspeccionar los pesos y la configuracion del repositorio para determinar si el modelo es utilizable antes de cualquier integracion.
 - Prototipado interno con datos no sensibles: usar el modelo como banco de pruebas para pipelines de inferencia, siempre que se valide previamente su comportamiento.
 - Fine-tuning experimental: partir de los pesos como base para experimentos de ajuste supervisado en dominios acotados, asumiendo que la licencia CC-BY-4.0 permite uso comercial con atribucion.
-- Docencia y formacion: emplear el artefacto como ejemplo de publicacion de modelos en HuggingFace y de buenas practicas de documentacion (o de su ausencia).
+- Docencia y formacion: emplear el artefacto como ejemplo de publicacion de modelos en Hugging Face y de buenas practicas de documentacion (o de su ausencia).
 - Auditoria de licencias: analizar el caso como muestra de publicacion bajo CC-BY-4.0 y de las obligaciones de atribucion que conlleva.
 - Investigacion sobre procedencia de modelos: estudiar la trazabilidad de artefactos sin model card para desarrollar criterios de evaluacion automatica.
 
@@ -73,5 +73,5 @@ No disponible. No se ha identificado un modelo comparable al no conocerse la cat
 
 ## Enlaces
 
-- [HuggingFace: Ryanham1lton/Landorus](https://huggingface.co/Ryanham1lton/Landorus)
+- [Hugging Face: Ryanham1lton/Landorus](https://huggingface.co/Ryanham1lton/Landorus)
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

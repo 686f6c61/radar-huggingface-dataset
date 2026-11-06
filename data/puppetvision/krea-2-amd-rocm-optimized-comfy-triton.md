@@ -102,7 +102,7 @@ La comparacion mas directa es entre los distintos formatos de checkpoint del pro
 
 | Version | Cuantizacion | Generacion en caliente | s/it | Tamano aproximado | Licencia | Disponibilidad |
 |---|---|---:|---:|---|---|---|
-| INT8 TensorWise (este repositorio) | INT8 tensorwise | 35,16 s | 3,765 | repo de 33,1 GB | krea-2-community-license | HuggingFace, PuppetVision |
+| INT8 TensorWise (este repositorio) | INT8 tensorwise | 35,16 s | 3,765 | repo de 33,1 GB | krea-2-community-license | Hugging Face, PuppetVision |
 | INT8 ConvRot oficial de ComfyUI | INT8 con rotacion de convolucion | 35,44 s | 3,817 | no disponible | krea-2-community-license | Comfy-Org |
 | BF16 oficial | BF16 | 44,69 s | 4,819 | no disponible | krea-2-community-license | Comfy-Org / Krea |
 | FP8 scaled oficial | FP8 | 51,34 s | 5,551 | no disponible | krea-2-community-license | Comfy-Org / Krea |
@@ -125,7 +125,7 @@ Frente a otras alternativas del mismo nicho (por ejemplo, modelos fundacionales 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PuppetVision/krea-2-amd-rocm-optimized-comfy-triton
+- Modelo en Hugging Face: https://huggingface.co/PuppetVision/krea-2-amd-rocm-optimized-comfy-triton
 - Modelo base: https://huggingface.co/krea/Krea-2-Turbo
 - Video de presentacion en YouTube: https://youtu.be/fD-J2CYetIg
 - Licencia Krea 2: https://www.krea.ai/krea-2-licensing

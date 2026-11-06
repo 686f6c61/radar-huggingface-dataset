@@ -19,7 +19,7 @@ Hay que señalar una discrepancia importante en los metadatos: el nombre del mod
 | Tipos de cuantizacion | Pesos MXFP4; cache KV en FP8; atencion en FP8 (segun el nombre del repositorio). Metodo: AutoRound con RTN. Formato contenedor: compressed-tensors |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible; la ficha remite a la licencia del modelo original, que no se especifica |
-| Formato de pesos | safetensors (compressed-tensors, etiquetado como 8-bit en la ficha de HuggingFace) |
+| Formato de pesos | safetensors (compressed-tensors, etiquetado como 8-bit en la ficha de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -77,8 +77,8 @@ No se han publicado resultados de benchmarks adicionales en la informacion dispo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen/Qwen3.5-35B-A3B (base) | 35B nominales / ~3B activos | no disponible | FP16/BF16 original | no disponible | HuggingFace |
-| Este modelo (MXFP4-FP8KV-FP8Attn) | 35B nominales segun nombre; 2,89B segun safetensors | no disponible | MXFP4 + FP8 | no disponible | HuggingFace, 0 descargas, 0 likes |
+| Qwen/Qwen3.5-35B-A3B (base) | 35B nominales / ~3B activos | no disponible | FP16/BF16 original | no disponible | Hugging Face |
+| Este modelo (MXFP4-FP8KV-FP8Attn) | 35B nominales segun nombre; 2,89B segun safetensors | no disponible | MXFP4 + FP8 | no disponible | Hugging Face, 0 descargas, 0 likes |
 | Otras cuantizaciones del mismo base (AWQ, GPTQ, GGUF) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks de los modelos comparables en la informacion proporcionada, por lo que la comparacion de rendimiento no puede establecerse con cifras.
@@ -98,7 +98,7 @@ No se dispone de datos de benchmarks de los modelos comparables en la informacio
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/INCModel3/Qwen3.5-35B-A3B-MXFP4-FP8KV-FP8Attn-CT-RTN-AutoRound
+- Repositorio en Hugging Face: https://huggingface.co/INCModel3/Qwen3.5-35B-A3B-MXFP4-FP8KV-FP8Attn-CT-RTN-AutoRound
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-35B-A3B
 - AutoRound (Intel), herramienta de cuantizacion: https://github.com/intel/auto-round
 - autoquant-agent: enlace no verificable, la model card apunta a https://github.com/ sin ruta especifica

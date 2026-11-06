@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`arlenecc/jina-embeddings-v3-onnx-int4` es una conversión a formato ONNX con cuantización INT4 del modelo de embeddings `jina-embeddings-v3` de Jina AI, publicada por el usuario arlenecc en HuggingFace. No se trata de un modelo entrenado desde cero, sino de un artefacto de despliegue: toma los pesos originales de Jina y los exporta a ONNX con cuantización de 4 bits para reducir el tamaño y facilitar la inferencia en entornos con recursos limitados. El repositorio ocupa 0,4 GB, lo que sugiere una compresión agresiva respecto al modelo original.
+`arlenecc/jina-embeddings-v3-onnx-int4` es una conversión a formato ONNX con cuantización INT4 del modelo de embeddings `jina-embeddings-v3` de Jina AI, publicada por el usuario arlenecc en Hugging Face. No se trata de un modelo entrenado desde cero, sino de un artefacto de despliegue: toma los pesos originales de Jina y los exporta a ONNX con cuantización de 4 bits para reducir el tamaño y facilitar la inferencia en entornos con recursos limitados. El repositorio ocupa 0,4 GB, lo que sugiere una compresión agresiva respecto al modelo original.
 
 El modelo base, jina-embeddings-v3, es un modelo de embeddings de texto orientado a recuperación de información, búsqueda semántica y clustering, basado en una arquitectura transformer con atención de múltiples cabezas y una longitud de contexto de 8.192 tokens (dato del modelo original, no verificado en esta conversión). La etiqueta `jina-v3-mlx` sugiere compatibilidad con el ecosistema MLX de Apple, aunque el formato publicado es ONNX.
 
@@ -55,17 +55,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: inferior a 1 GB en INT4 (el artefacto pesa 0,4 GB, más overhead de activaciones y runtime ONNX).
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM; funciona en GTX 1650, RTX 3050, RTX 4090, A100, H100.
 - Cabe en GPU consumer: sí, en prácticamente cualquier GPU consumer moderna e incluso en CPU.
-- Opciones de despliegue: ONNX Runtime, Transformers con backend ONNX, posibles integraciones con servidores de embeddings (Text Embeddings Inference de HuggingFace, aunque no está confirmado el soporte de este artefacto concreto).
+- Opciones de despliegue: ONNX Runtime, Transformers con backend ONNX, posibles integraciones con servidores de embeddings (Text Embeddings Inference de Hugging Face, aunque no está confirmado el soporte de este artefacto concreto).
 - Latencia y throughput estimados: no disponibles. La cuantización INT4 y ONNX suelen mejorar el throughput respecto a FP32, pero no hay datos publicados para esta conversión.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| arlenecc/jina-embeddings-v3-onnx-int4 | no disponible (base 570M) | no disponible (base 8.192) | ONNX INT4 | MIT | HuggingFace |
-| jinaai/jina-embeddings-v3 (original) | 570M | 8.192 | safetensors | CC BY-NC 4.0 (no comercial) | HuggingFace |
-| BAAI/bge-m3 | 568M | 8.192 | safetensors | MIT | HuggingFace |
-| intfloat/multilingual-e5-large | 560M | 512 | safetensors | MIT | HuggingFace |
+| arlenecc/jina-embeddings-v3-onnx-int4 | no disponible (base 570M) | no disponible (base 8.192) | ONNX INT4 | MIT | Hugging Face |
+| jinaai/jina-embeddings-v3 (original) | 570M | 8.192 | safetensors | CC BY-NC 4.0 (no comercial) | Hugging Face |
+| BAAI/bge-m3 | 568M | 8.192 | safetensors | MIT | Hugging Face |
+| intfloat/multilingual-e5-large | 560M | 512 | safetensors | MIT | Hugging Face |
 
 La comparativa se basa en el modelo base, ya que esta conversión no publica especificaciones propias. La licencia MIT de esta conversión contrasta con la licencia no comercial del modelo original de Jina, lo que puede ser un punto a favor para uso comercial, aunque debe verificarse la compatibilidad legal de la conversión con los términos del modelo original.
 
@@ -82,7 +82,7 @@ La comparativa se basa en el modelo base, ya que esta conversión no publica esp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/arlenecc/jina-embeddings-v3-onnx-int4
+- Hugging Face: https://huggingface.co/arlenecc/jina-embeddings-v3-onnx-int4
 - Modelo original jina-embeddings-v3: https://huggingface.co/jinaai/jina-embeddings-v3
 - Paper de jina-embeddings-v3: https://arxiv.org/abs/2409.10173
 - Blog de Jina AI sobre jina-embeddings-v3: https://jina.ai/news/jina-embeddings-v3-a-frontier-multilingual-embedding-model/

@@ -6,7 +6,7 @@ LINK-01 es un adaptador LoRA sobre el modelo base Qwen/Qwen3.5-0.8B, desarrollad
 
 El modelo se ha construido mediante un pipeline de destilación desde una política PPO entrenada en un entorno web de aprendizaje por refuerzo (el "cerebro" o `brain.json`), seguida de un ajuste supervisado con LoRA y un refinamiento posterior con RL (etiquetado por recompensa por opción, con anclaje KL). El resultado es un modelo de 0,8 mil millones de parámetros que traduce observaciones de robot a decisiones discretas en formato de texto, lo que permite integrar la política en un stack basado en transformers en lugar de requerir un runtime de RL específico.
 
-Su relevancia es acotada pero interesante como caso de estudio: demuestra cómo una política de RL puede destilarse en un modelo de lenguaje pequeño para su despliegue en pipelines estándar de HuggingFace, y cómo el refinamiento con RL puede mejorar ligeramente la latencia de decisión (23,9 s frente a 24,7 s por episodio) a costa de una ligera pérdida de fidelidad respecto a la política docente. Es un modelo de investigación y educación, no un componente listo para producción en robótica real.
+Su relevancia es acotada pero interesante como caso de estudio: demuestra cómo una política de RL puede destilarse en un modelo de lenguaje pequeño para su despliegue en pipelines estándar de Hugging Face, y cómo el refinamiento con RL puede mejorar ligeramente la latencia de decisión (23,9 s frente a 24,7 s por episodio) a costa de una ligera pérdida de fidelidad respecto a la política docente. Es un modelo de investigación y educación, no un componente listo para producción en robótica real.
 
 ## Especificaciones tecnicas
 
@@ -43,7 +43,7 @@ El conjunto de datos consta de 1.246 ejemplos de entrenamiento, 249 de validaci�
 - Educación en aprendizaje por refuerzo: el notebook de Colab y el repositorio CONNECT TYCOON permiten reproducir el pipeline completo (PPO, generación de dataset, SFT, RL) con fines didácticos.
 - Prototipado de control de robots en simulación 2D: para probar bucles de decisión textuales donde el estado se serializa como texto y la acción se selecciona por letra.
 - Benchmark de fidelidad de destilación: el modelo permite medir la brecha entre la política docente (100 % de coincidencia) y la destilada (67,9–69,6 %) en un conjunto de test de 368 ejemplos.
-- Integración en pipelines de HuggingFace: al ser un adaptador PEFT, se puede cargar con `PeftModel.from_pretrained` y servir con infraestructura estándar de transformers.
+- Integración en pipelines de Hugging Face: al ser un adaptador PEFT, se puede cargar con `PeftModel.from_pretrained` y servir con infraestructura estándar de transformers.
 - Estudio de refinamiento con RL sobre modelos pequeños: comparar SFT (69,6 % de acierto, 24,7 s por episodio) frente a RL (67,9 %, 23,9 s) en términos de fidelidad y latencia.
 - Docencia sobre evaluación de políticas: el protocolo de 20 episodios con semillas 91001–91020 y la tabla de éxito/colisión sirven como plantilla de evaluación reproducible.
 
@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks estándar de lenguaje (MMLU, HumanE
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LINK-01 (este modelo) | 0,8B (base) + LoRA | no disponible | Decisión de evasión de obstáculos | Apache 2.0 | HuggingFace |
+| LINK-01 (este modelo) | 0,8B (base) + LoRA | no disponible | Decisión de evasión de obstáculos | Apache 2.0 | Hugging Face |
 | Política PPO docente (`brain.json`) | no disponible | no aplica | Decisión de evasión de obstáculos | no disponible | Repositorio CONNECT TYCOON |
-| Qwen3.5-0.8B (base) | 0,8B | no disponible | Lenguaje general | no disponible | HuggingFace |
+| Qwen3.5-0.8B (base) | 0,8B | no disponible | Lenguaje general | no disponible | Hugging Face |
 
 No se dispone de información sobre otros adaptadores de decisión robótica comparables en la documentación proporcionada.
 
@@ -90,7 +90,7 @@ No se dispone de información sobre otros adaptadores de decisión robótica com
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/caley-kim/connectailab-rl-namsukkim-v1-link01
+- Hugging Face: https://huggingface.co/caley-kim/connectailab-rl-namsukkim-v1-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de código: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

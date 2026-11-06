@@ -12,7 +12,7 @@ La relevancia de este modelo radica en su enfoque en eficiencia: con un peso de 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Basada en Qwen3 (según tags de HuggingFace), familia Bonsai de prism-ml |
+| Arquitectura | Basada en Qwen3 (según tags de Hugging Face), familia Bonsai de prism-ml |
 | Parametros totales | 1.131.267.856 (según safetensors; el nombre del modelo indica 4B, pero los pesos reales son ~1.13B) |
 | Parametros activos | no disponible (no se especifica si es MoE) |
 | Longitud de contexto | 32K tokens (según LLM Explorer) |
@@ -23,7 +23,7 @@ La relevancia de este modelo radica en su enfoque en eficiencia: con un peso de 
 
 ## Arquitectura y entrenamiento
 
-La arquitectura concreta no está detallada en la información proporcionada, pero los tags de HuggingFace indican que el modelo base está relacionado con Qwen3, lo que sugiere una arquitectura transformer estándar con atención de múltiples cabezas y posiblemente mecanismos de razonamiento (como thinking mode). La familia Bonsai de prism-ml se enfoca en eficiencia extrema, con versiones de 1 bit que reducen drásticamente el tamaño de los pesos, aunque esta variante concreta está cuantizada a 8 bits. No se dispone de información sobre el dataset de entrenamiento, el número de tokens procesados ni si se aplicaron técnicas como RLHF o DPO. La conversión a MLX se realizó con mlx-lm versión 0.31.2, lo que garantiza compatibilidad con el ecosistema de Apple Silicon.
+La arquitectura concreta no está detallada en la información proporcionada, pero los tags de Hugging Face indican que el modelo base está relacionado con Qwen3, lo que sugiere una arquitectura transformer estándar con atención de múltiples cabezas y posiblemente mecanismos de razonamiento (como thinking mode). La familia Bonsai de prism-ml se enfoca en eficiencia extrema, con versiones de 1 bit que reducen drásticamente el tamaño de los pesos, aunque esta variante concreta está cuantizada a 8 bits. No se dispone de información sobre el dataset de entrenamiento, el número de tokens procesados ni si se aplicaron técnicas como RLHF o DPO. La conversión a MLX se realizó con mlx-lm versión 0.31.2, lo que garantiza compatibilidad con el ecosistema de Apple Silicon.
 
 ## Capacidades
 
@@ -71,7 +71,7 @@ No se dispone de información suficiente para comparar con otros modelos de la m
 
 ## Enlaces
 
-- [Modelo en HuggingFace (Oscilla/Bonsai-4B-unpacked-mlx-8Bit)](https://huggingface.co/Oscilla/Bonsai-4B-unpacked-mlx-8Bit)
+- [Modelo en Hugging Face (Oscilla/Bonsai-4B-unpacked-mlx-8Bit)](https://huggingface.co/Oscilla/Bonsai-4B-unpacked-mlx-8Bit)
 - [Modelo base (prism-ml/Bonsai-4B-unpacked)](https://huggingface.co/prism-ml/Bonsai-4B-unpacked)
 - [Colección Bonsai de prism-ml](https://huggingface.co/collections/prism-ml/bonsai)
 - [Documentación de Bonsai 4B](https://docs.prismml.com/models/bonsai-4b)

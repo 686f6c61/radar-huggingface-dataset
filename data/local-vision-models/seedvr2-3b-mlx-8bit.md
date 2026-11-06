@@ -66,8 +66,8 @@ No se dispone de datos de rendimiento ni de especificaciones detalladas del mode
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| SeedVR2 3B MLX 8-bit (esta ficha) | 3B | no disponible | Apache 2.0 | safetensors MLX 8-bit | HuggingFace |
-| SeedVR2 3B original (ByteDance-Seed) | 3B | no disponible | Apache 2.0 | safetensors fp16 | HuggingFace |
+| SeedVR2 3B MLX 8-bit (esta ficha) | 3B | no disponible | Apache 2.0 | safetensors MLX 8-bit | Hugging Face |
+| SeedVR2 3B original (ByteDance-Seed) | 3B | no disponible | Apache 2.0 | safetensors fp16 | Hugging Face |
 | Alternativas de superresolución | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento ni de especificaciones detalladas del mode
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/local-vision-models/seedvr2-3b-mlx-8bit
+- Repositorio Hugging Face: https://huggingface.co/local-vision-models/seedvr2-3b-mlx-8bit
 - Modelo base: https://huggingface.co/ByteDance-Seed/SeedVR2-3B
 - Pesos originales en ComfyUI: https://huggingface.co/numz/SeedVR2_comfyUI
 - Repositorio mlx-gen: https://github.com/lpalbou/mlx-gen

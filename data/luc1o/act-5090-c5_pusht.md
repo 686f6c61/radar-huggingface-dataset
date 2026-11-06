@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`LUC1O/act-5090-C5_pusht` es un checkpoint de política robótica basado en la arquitectura ACT (Action Chunking with Transformers), entrenado con la librería LeRobot de HuggingFace sobre el conjunto de datos `lerobot/pusht`. Lo publica el usuario LUC1O como parte de un benchmark de entrenamiento de ACT en una única GPU RTX 5090, con hiperparámetros "oficiales" (batch 8, learning rate 1e-5, chunk size 100, 100 000 pasos). El modelo tiene 51 660 418 parámetros y un tamaño de repositorio de 0,2 GB, lo que lo sitúa en la categoría de políticas ligeras para manipulación robótica.
+`LUC1O/act-5090-C5_pusht` es un checkpoint de política robótica basado en la arquitectura ACT (Action Chunking with Transformers), entrenado con la librería LeRobot de Hugging Face sobre el conjunto de datos `lerobot/pusht`. Lo publica el usuario LUC1O como parte de un benchmark de entrenamiento de ACT en una única GPU RTX 5090, con hiperparámetros "oficiales" (batch 8, learning rate 1e-5, chunk size 100, 100 000 pasos). El modelo tiene 51 660 418 parámetros y un tamaño de repositorio de 0,2 GB, lo que lo sitúa en la categoría de políticas ligeras para manipulación robótica.
 
 El problema que aborda es el aprendizaje por imitación de tareas de manipulación: a partir de demostraciones (observaciones de cámara e imágenes y acciones de efector final), el modelo predice secuencias de acciones (chunks) para controlar un brazo robótico en la tarea PushT, que consiste en empujar una pieza en forma de T hasta una pose objetivo. ACT es una referencia habitual en robótica de imitación por su bajo coste computacional y su capacidad de generar acciones en bloque, lo que reduce el error acumulado frente a políticas paso a paso.
 
@@ -69,8 +69,8 @@ No se han publicado en la información disponible resultados de otros benchmarks
 
 | Modelo | Parámetros | Contexto | Rendimiento en PushT | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `LUC1O/act-5090-C5_pusht` | 51,7 M | no disponible | 0,5 % (1/200) | no disponible | HuggingFace Hub |
-| ACT oficial (LeRobot, referencia) | ~51 M (configuración estándar) | no disponible | no disponible en esta ficha | Apache-2.0 (LeRobot) | HuggingFace / GitHub |
+| `LUC1O/act-5090-C5_pusht` | 51,7 M | no disponible | 0,5 % (1/200) | no disponible | Hugging Face Hub |
+| ACT oficial (LeRobot, referencia) | ~51 M (configuración estándar) | no disponible | no disponible en esta ficha | Apache-2.0 (LeRobot) | Hugging Face / GitHub |
 | Diffusion Policy (referencia PushT) | no disponible | no disponible | no disponible en esta ficha | no disponible | Repositorios de investigación |
 
 No se dispone de datos numéricos comparables de otras políticas en la información proporcionada; la comparación se limita a la categoría y al ecosistema. La alternativa natural es el checkpoint ACT de referencia de LeRobot, que suele superar ampliamente el 0,5 % de éxito en PushT, aunque no se incluyen cifras exactas para no inventar datos.
@@ -88,7 +88,7 @@ No se dispone de datos numéricos comparables de otras políticas en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LUC1O/act-5090-C5_pusht
+- Modelo en Hugging Face: https://huggingface.co/LUC1O/act-5090-C5_pusht
 - Repositorio de benchmark, logs y scripts de reproducción: https://github.com/Jerryisqx/ACT-5090-benchmark
 - Dataset utilizado: https://huggingface.co/datasets/lerobot/pusht
 - LeRobot (librería): https://github.com/huggingface/lerobot

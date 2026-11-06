@@ -74,7 +74,7 @@ No se dispone de una comparativa directa con otros fine-tunes de Qwen2.5-7B en f
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jiavon/nick-carraway-qwen2.5-7b-gguf
+- Repositorio Hugging Face: https://huggingface.co/jiavon/nick-carraway-qwen2.5-7b-gguf
 - Informe técnico de Qwen2.5: https://arxiv.org/abs/2412.15115
-- Colección Qwen2.5 en HuggingFace: https://huggingface.co/collections/Qwen/qwen25
+- Colección Qwen2.5 en Hugging Face: https://huggingface.co/collections/Qwen/qwen25
 - Repositorio de Qwen2.5 en GitHub: https://github.com/mx4ai/qwen2.5

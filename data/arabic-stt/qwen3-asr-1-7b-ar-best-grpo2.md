@@ -22,7 +22,7 @@ Es relevante ahora porque Qwen3-ASR aporta una base abierta y ligera (~2B parame
 | Formato de pesos | safetensors (libreria `transformers`) |
 | Tamano del repositorio | 4,1 GB |
 | Pipeline | `automatic-speech-recognition` |
-| Acceso | restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Modelo base | Qwen/Qwen3-ASR-1.7B |
 | Fecha de publicacion | 2026-10-24 |
 
@@ -39,7 +39,7 @@ Respecto al entrenamiento, las etiquetas del repositorio indican dos tecnicas: `
 - Transcripcion de audio telefonico y de call center (etiqueta `telephony`), es decir, senal de banda estrecha y posible ruido de fondo.
 - Salida en texto plano alineada con el pipeline estandar `automatic-speech-recognition` de `transformers`.
 - Carga mediante `transformers` con la clase correspondiente a la arquitectura `qwen3_asr`.
-- Compatibilidad declarada con endpoints de HuggingFace (etiqueta `endpoints_compatible`).
+- Compatibilidad declarada con endpoints de Hugging Face (etiqueta `endpoints_compatible`).
 - Razonamiento o generacion de texto libre, tool calling, agentes o capacidades multimodales mas alla del audio: no disponible en la informacion proporcionada.
 
 ## Casos de uso
@@ -77,7 +77,7 @@ La comparacion cuantitativa de WER no es posible con la informacion disponible: 
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace antes de descargar pesos, lo que anade un paso manual a cualquier pipeline automatizado.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de descargar pesos, lo que anade un paso manual a cualquier pipeline automatizado.
 - Ausencia total de evaluacion: no hay cifras de WER ni comparaciones con el modelo base, de modo que la mejora declarada en dialectos no esta cuantificada.
 - Riesgo de alucinacion en ASR: como todo modelo de transcripcion, puede generar texto plausible en tramos de silencio, ruido o audio ininteligible; conviene aplicar deteccion de actividad vocal y umbrales de confianza.
 - Sesgos no documentados: no se describe la distribucion de dialectos, generos, edades ni acentos del corpus de entrenamiento, por lo que el rendimiento puede ser desigual entre regiones (por ejemplo, golfo frente a magreb).
@@ -89,6 +89,6 @@ La comparacion cuantitativa de WER no es posible con la informacion disponible: 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Arabic-STT/qwen3-asr-1.7b-ar-best-grpo2
+- Modelo en Hugging Face: https://huggingface.co/Arabic-STT/qwen3-asr-1.7b-ar-best-grpo2
 - Modelo base: https://huggingface.co/Qwen/Qwen3-ASR-1.7B
 - No se han encontrado en la busqueda web enlaces tecnicos relevantes (papers, blogs o repos) sobre este modelo; los resultados obtenidos corresponden a recursos genericos de aprendizaje de lengua arabe y teclados en linea, sin relacion con el modelo.

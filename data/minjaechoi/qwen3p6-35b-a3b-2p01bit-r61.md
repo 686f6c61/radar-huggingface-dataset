@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `minjaechoi/qwen3p6-35b-a3b-2p01bit-r61` es un checkpoint de investigación derivado de `Qwen/Qwen3.6-35B-A3B`, publicado por el usuario minjaechoi en HuggingFace. Se trata de una variante cuantizada en la que únicamente los expertos enrutados (routed experts) de la arquitectura MoE han sido comprimidos a una media de 2,0127 bits, mientras que el resto de pesos se mantiene en BF16. El identificador interno del checkpoint es r61.
+El modelo `minjaechoi/qwen3p6-35b-a3b-2p01bit-r61` es un checkpoint de investigación derivado de `Qwen/Qwen3.6-35B-A3B`, publicado por el usuario minjaechoi en Hugging Face. Se trata de una variante cuantizada en la que únicamente los expertos enrutados (routed experts) de la arquitectura MoE han sido comprimidos a una media de 2,0127 bits, mientras que el resto de pesos se mantiene en BF16. El identificador interno del checkpoint es r61.
 
 El problema que aborda es acotado y de naturaleza experimental: explorar el impacto de una cuantización extremadamente agresiva (por debajo de 3 bits) limitada a las capas de expertos de un modelo de mezcla de expertos, sin tocar el resto de la red. No se trata de una release orientada a producción, sino de un artefacto para reproducir y evaluar técnicas de cuantización sobre arquitecturas MoE.
 
@@ -93,6 +93,6 @@ No se dispone de datos de rendimiento, contexto ni licencia del modelo base ni d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/minjaechoi/qwen3p6-35b-a3b-2p01bit-r61
+- Repositorio Hugging Face: https://huggingface.co/minjaechoi/qwen3p6-35b-a3b-2p01bit-r61
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Paper, blog, repositorio de código o demo: no disponibles. La búsqueda web no devolvió ningún enlace relevante relacionado con el modelo.

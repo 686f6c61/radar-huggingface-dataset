@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Parda web models es un conjunto de modelos en formato ONNX publicado por el usuario chetan-0804 en HuggingFace, pensado para ser consumido por la aplicación web Parda. Su función es redactar (eliminar o tapar) datos personales en documentos indios, ejecutándose íntegramente en el navegador del usuario mediante ONNX Runtime, sin subir ningún fichero a un servidor. El repositorio agrupa tres bloques funcionales: un modelo GLiNER de detección de PII, un detector YOLO11n para caras, firmas, códigos QR y sellos, y un conjunto de modelos OCR de EasyOCR convertidos a ONNX.
+Parda web models es un conjunto de modelos en formato ONNX publicado por el usuario chetan-0804 en Hugging Face, pensado para ser consumido por la aplicación web Parda. Su función es redactar (eliminar o tapar) datos personales en documentos indios, ejecutándose íntegramente en el navegador del usuario mediante ONNX Runtime, sin subir ningún fichero a un servidor. El repositorio agrupa tres bloques funcionales: un modelo GLiNER de detección de PII, un detector YOLO11n para caras, firmas, códigos QR y sellos, y un conjunto de modelos OCR de EasyOCR convertidos a ONNX.
 
 El componente principal es `gliner/model_int8_embed.onnx`, un GLiNER afinado sobre documentos indios sintéticos con la tabla de embeddings cuantizada a 8 bits. Se apoya en `urchade/gliner_multi_pii-v1`, cuyo encoder es mDeBERTa-v3 (licencia MIT), y se distribuye bajo Apache-2.0. Los idiomas cubiertos, según la model card, son inglés, hindi y kannada.
 
@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo / solucion | Tipo | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| chetan-0804/parda-web-models | GLiNER + YOLO11n + EasyOCR en ONNX, ejecucion en navegador | en, hi, kn | parda-mixed (uso no comercial); AGPL-3.0 en el componente YOLO; Apache-2.0 en GLiNER y EasyOCR | HuggingFace, 0 descargas |
-| urchade/gliner_multi_pii-v1 | GLiNER de deteccion de PII (modelo base declarado) | multilingue segun el autor original | no disponible en la informacion proporcionada | HuggingFace |
+| chetan-0804/parda-web-models | GLiNER + YOLO11n + EasyOCR en ONNX, ejecucion en navegador | en, hi, kn | parda-mixed (uso no comercial); AGPL-3.0 en el componente YOLO; Apache-2.0 en GLiNER y EasyOCR | Hugging Face, 0 descargas |
+| urchade/gliner_multi_pii-v1 | GLiNER de deteccion de PII (modelo base declarado) | multilingue segun el autor original | no disponible en la informacion proporcionada | Hugging Face |
 | EasyOCR (JaidedAI) | OCR CRAFT + CRNN | multilingue | Apache-2.0 | Repositorio y paquete propios |
 | Ultralytics YOLO11n | Deteccion de objetos en tiempo real | no aplica | AGPL-3.0 (o licencia comercial de pago) | Repositorio y paquete propios |
 
@@ -89,7 +89,7 @@ No se dispone de cifras comparativas de rendimiento entre estas opciones en la i
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chetan-0804/parda-web-models
+- Hugging Face: https://huggingface.co/chetan-0804/parda-web-models
 - Repositorio con código y benchmarks: https://github.com/chetanjagan/Parda
 - Modelo base declarado: https://huggingface.co/urchade/gliner_multi_pii-v1
 - EasyOCR (componente OCR reutilizado): https://github.com/JaidedAI/EasyOCR

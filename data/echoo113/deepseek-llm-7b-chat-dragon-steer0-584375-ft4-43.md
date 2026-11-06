@@ -73,6 +73,6 @@ No hay datos de rendimiento ni características específicas de este modelo, por
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/Echoo113/deepseek-llm-7b-chat-dragon-STEER0.584375-ft4.43)
-- [Modelo base en HuggingFace](https://huggingface.co/deepseek-ai/deepseek-llm-7b-chat)
+- [Hugging Face del modelo](https://huggingface.co/Echoo113/deepseek-llm-7b-chat-dragon-STEER0.584375-ft4.43)
+- [Modelo base en Hugging Face](https://huggingface.co/deepseek-ai/deepseek-llm-7b-chat)
 - [Repositorio GitHub de DeepSeek LLM](https://github.com/deepseek-ai/DeepSeek-LLM)

@@ -77,9 +77,9 @@ La comparación con el modelo base muestra una reducción de tamaño de más de 
 
 ## Enlaces
 
-- [HuggingFace - jeadie/octen-embedding-8b-static-4096](https://huggingface.co/jeadie/octen-embedding-8b-static-4096)
+- [Hugging Face - jeadie/octen-embedding-8b-static-4096](https://huggingface.co/jeadie/octen-embedding-8b-static-4096)
 - [Model2Vec - Repositorio](https://github.com/MinishLab/model2vec)
 - [Model2Vec - Resultados](https://github.com/MinishLab/model2vec/tree/main/results)
 - [Model2Vec - Documentacion](https://minish.ai/packages/model2vec/introduction)
-- [Octen-Embedding-8B - HuggingFace](https://huggingface.co/Octen/Octen-Embedding-8B)
+- [Octen-Embedding-8B - Hugging Face](https://huggingface.co/Octen/Octen-Embedding-8B)
 - [Octen Docs - Embedding API](https://docs.octen.ai/api-reference/embedding)

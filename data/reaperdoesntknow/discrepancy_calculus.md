@@ -4,7 +4,7 @@
 
 El modelo `reaperdoesntknow/Discrepancy_Calculus` es un repositorio publicado por Roy C (bajo el seudónimo reaperdoesntknow), investigador independiente vinculado a Convergent Intelligence LLC. El contenido principal del repositorio no es un modelo de lenguaje funcional con pesos, sino un documento académico que presenta los fundamentos teóricos de un marco matemático denominado "Discrepancy Calculus" (DISC), orientado al análisis de singularidades y a la destilación de conocimiento estructurado en aprendizaje automático.
 
-El autor declara haber desplegado 49 modelos en HuggingFace con más de 22.500 descargas mediante una técnica llamada "Topological Knowledge Distillation", pero este repositorio concreto tiene un tamaño de 0.0 GB, cero descargas y cero likes, lo que indica que no contiene pesos de modelo ni artefactos ejecutables. La ficha técnica del modelo no ofrece especificaciones de arquitectura, parámetros ni contexto; solo el texto del paper. Por tanto, cualquier evaluación práctica de este modelo como sistema de IA no es posible con el contenido actual del repositorio.
+El autor declara haber desplegado 49 modelos en Hugging Face con más de 22.500 descargas mediante una técnica llamada "Topological Knowledge Distillation", pero este repositorio concreto tiene un tamaño de 0.0 GB, cero descargas y cero likes, lo que indica que no contiene pesos de modelo ni artefactos ejecutables. La ficha técnica del modelo no ofrece especificaciones de arquitectura, parámetros ni contexto; solo el texto del paper. Por tanto, cualquier evaluación práctica de este modelo como sistema de IA no es posible con el contenido actual del repositorio.
 
 ## Especificaciones tecnicas
 
@@ -55,7 +55,7 @@ No disponible. No hay un modelo funcional que comparar con alternativas como Qwe
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/reaperdoesntknow/Discrepancy_Calculus
-- Perfil del autor en HuggingFace: https://huggingface.co/reaperdoesntknow
+- Repositorio Hugging Face: https://huggingface.co/reaperdoesntknow/Discrepancy_Calculus
+- Perfil del autor en Hugging Face: https://huggingface.co/reaperdoesntknow
 - Sitio web de Convergent Intelligence: https://convergentintel.com
 - Datasets del autor: https://huggingface.co/reaperdoesntknow/datasets

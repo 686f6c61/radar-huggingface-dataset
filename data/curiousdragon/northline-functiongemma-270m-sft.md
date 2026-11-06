@@ -98,7 +98,7 @@ No se dispone de datos de benchmarks de modelos alternativos en la informacion p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CuriousDragon/northline-functiongemma-270m-sft
+- Modelo en Hugging Face: https://huggingface.co/CuriousDragon/northline-functiongemma-270m-sft
 - Modelo base: https://huggingface.co/google/functiongemma-270m-it
 - Referencia mencionada en la model card al archivo de declaraciones de herramientas del sitio, `src/assistant/tools.ts`: no se proporciona URL
 - Pipeline `northline-agent` y archivos `run_meta.json` e informes de evaluacion: incluidos en el repositorio del modelo, sin enlace independiente

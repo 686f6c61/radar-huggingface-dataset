@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `deepdml/whisper-tiny-es-mix-norm-es-mix-norm-lr2e-6` es un ajuste fino (fine-tune) del modelo Whisper Tiny para reconocimiento automático de voz (ASR) en español. Lo desarrolla David Jimenez (usuario `deepdml` en HuggingFace) y parte del modelo base `deepdml/whisper-tiny-es-mix-norm`, que a su vez es una versión adaptada al español del Whisper Tiny original de OpenAI. El objetivo es ofrecer una solución ligera y eficiente para transcribir audio en castellano, con un coste computacional reducido que permite su despliegue en entornos con recursos limitados.
+El modelo `deepdml/whisper-tiny-es-mix-norm-es-mix-norm-lr2e-6` es un ajuste fino (fine-tune) del modelo Whisper Tiny para reconocimiento automático de voz (ASR) en español. Lo desarrolla David Jimenez (usuario `deepdml` en Hugging Face) y parte del modelo base `deepdml/whisper-tiny-es-mix-norm`, que a su vez es una versión adaptada al español del Whisper Tiny original de OpenAI. El objetivo es ofrecer una solución ligera y eficiente para transcribir audio en castellano, con un coste computacional reducido que permite su despliegue en entornos con recursos limitados.
 
 Con 37,7 millones de parámetros, este modelo pertenece a la familia Whisper Tiny, una arquitectura transformer encoder-decoder diseñada para procesar ventanas de audio de hasta 30 segundos. Su relevancia actual radica en que combina un tamaño muy reducido con un rendimiento aceptable en tareas de transcripción en español, lo que lo hace adecuado para aplicaciones en tiempo real, dispositivos edge o entornos donde no se dispone de GPUs de alta gama. El ajuste se realizó sobre el dataset Common Voice 17.0, con una tasa de error de palabra (WER) del 16,48 % en el conjunto de evaluación.
 
@@ -86,5 +86,5 @@ No se dispone de datos de benchmarks de otros modelos ASR en español en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/deepdml/whisper-tiny-es-mix-norm-es-mix-norm-lr2e-6
+- Modelo en Hugging Face: https://huggingface.co/deepdml/whisper-tiny-es-mix-norm-es-mix-norm-lr2e-6
 - Modelo base: https://huggingface.co/deepdml/whisper-tiny-es-mix-norm

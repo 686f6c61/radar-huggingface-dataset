@@ -82,7 +82,7 @@ El modelo se distingue de sus alternativas por el empaquetado especifico para We
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Averontia/Llama-3.2-1B-StoryAI-q4f32_1-MLC
+- Repositorio Hugging Face: https://huggingface.co/Averontia/Llama-3.2-1B-StoryAI-q4f32_1-MLC
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
 - Licencia Llama 3.2: https://www.llama.com/llama3_2/license/
 - Politica de uso aceptable: https://www.llama.com/llama3_2/use-policy/

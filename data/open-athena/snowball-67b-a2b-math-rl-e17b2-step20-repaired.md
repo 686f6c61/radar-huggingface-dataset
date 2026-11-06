@@ -74,8 +74,8 @@ Estos valores corresponden a evaluación en conjuntos held-out y están registra
 
 | Modelo | Parametros totales | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Snowball-67B-A2B-Math-RL-E17b2-Step20-Repaired | 67.078.876.160 | no disponible | AIME24 20,67 / MATH-500 77,20 / OlympiadBench 22,00 | other | HuggingFace, 0 descargas |
-| Exportaciones previas laion/rl-snowball-* | no disponible | no disponible | no disponible | no disponible | HuggingFace, con router mutable segun la model card |
+| Snowball-67B-A2B-Math-RL-E17b2-Step20-Repaired | 67.078.876.160 | no disponible | AIME24 20,67 / MATH-500 77,20 / OlympiadBench 22,00 | other | Hugging Face, 0 descargas |
+| Exportaciones previas laion/rl-snowball-* | no disponible | no disponible | no disponible | no disponible | Hugging Face, con router mutable segun la model card |
 
 No se dispone de datos de benchmarks ni de especificaciones verificables de modelos alternativos de la misma categoría en la información proporcionada, por lo que no se incluye una comparación numérica con otros modelos de razonamiento matemático.
 
@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks ni de especificaciones verificables de mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/open-athena/Snowball-67B-A2B-Math-RL-E17b2-Step20-Repaired
+- Modelo en Hugging Face: https://huggingface.co/open-athena/Snowball-67B-A2B-Math-RL-E17b2-Step20-Repaired
 - Issue del experimento en el repositorio Marin: https://github.com/marin-community/marin/issues/7786
 - Archivo de evidencia (dataset): https://huggingface.co/datasets/penfever/snowball-67b-a2b-math-rl-artifacts
 - Artefacto de origen: s3://marin-us-east-02a/marin/exports/snowball-bias-repaired/rl-snowball-e17b2-rno2a-rlvrmath-interp015-sr-20260825-014631/global_step_20/policy/

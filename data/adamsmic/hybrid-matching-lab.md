@@ -2,7 +2,7 @@
 
 ## Resumen
 
-adamsmic/hybrid-matching-lab es un prototipo de investigación publicado en HuggingFace por el usuario adamsmic, orientado a tareas de *matching* (emparejamiento o comparación de pares). No se trata de un modelo de lenguaje entrenado, sino de un esqueleto de arquitectura personalizada acompañado de un checkpoint de inicialización válido únicamente para *smoke tests*. El repositorio incluye el código del modelo (`model.py`), la configuración de arquitectura (`config.json`), una receta de experimento por defecto (`training_args.json`) y pesos en formato `safetensors`.
+adamsmic/hybrid-matching-lab es un prototipo de investigación publicado en Hugging Face por el usuario adamsmic, orientado a tareas de *matching* (emparejamiento o comparación de pares). No se trata de un modelo de lenguaje entrenado, sino de un esqueleto de arquitectura personalizada acompañado de un checkpoint de inicialización válido únicamente para *smoke tests*. El repositorio incluye el código del modelo (`model.py`), la configuración de arquitectura (`config.json`), una receta de experimento por defecto (`training_args.json`) y pesos en formato `safetensors`.
 
 El dato más relevante es su tamaño real: 33.088 parámetros totales según el archivo de pesos, lo que sitúa al modelo en un rango puramente didáctico o de pruebas, muy lejos de cualquier modelo utilizable en producción. La model card etiqueta internamente la escala como *large*, pero esa etiqueta es una convención del propio script generador y no guarda relación con el recuento real de parámetros.
 
@@ -73,7 +73,7 @@ No disponible. El repositorio no publica métricas ni queda claro a qué familia
 | Entrenamiento | no entrenado (checkpoint de inicialización) | no disponible en la informacion proporcionada |
 | Rendimiento | sin benchmark declarado | no disponible en la informacion proporcionada |
 | Licencia | MIT | no disponible en la informacion proporcionada |
-| Disponibilidad | pesos safetensors en HuggingFace | no disponible en la informacion proporcionada |
+| Disponibilidad | pesos safetensors en Hugging Face | no disponible en la informacion proporcionada |
 
 ## Limitaciones y advertencias
 
@@ -90,5 +90,5 @@ No disponible. El repositorio no publica métricas ni queda claro a qué familia
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/adamsmic/hybrid-matching-lab
+- Hugging Face: https://huggingface.co/adamsmic/hybrid-matching-lab
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la información disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`svd-safety-l2_basis_remove40_swapdiscnet_b010_r07` es un checkpoint de investigacion derivado de `meta-llama/Llama-2-7b-chat-hf`, publicado por el usuario de HuggingFace Jeesup. No es un modelo de proposito general: es una celda concreta de un estudio sobre como la compresion por descomposicion en valores singulares (SVD) degrada el comportamiento de seguridad de un LLM y que regla de seleccion de componentes repara mejor ese dano.
+`svd-safety-l2_basis_remove40_swapdiscnet_b010_r07` es un checkpoint de investigacion derivado de `meta-llama/Llama-2-7b-chat-hf`, publicado por el usuario de Hugging Face Jeesup. No es un modelo de proposito general: es una celda concreta de un estudio sobre como la compresion por descomposicion en valores singulares (SVD) degrada el comportamiento de seguridad de un LLM y que regla de seleccion de componentes repara mejor ese dano.
 
 Tecnicamente, el modelo parte del checkpoint denso de Llama-2-7b-chat y le aplica Basis Sharing (ICLR 2025), una tecnica que comparte bases SVD entre grupos de dos capas adyacentes y elimina el 40,00% de los parametros, dejando una fraccion de 0,5999 respecto al denso. Sobre ese modelo comprimido se aplican 7 de 10 rondas de un intercambio iterativo de parametros ("parameter-neutral swap") seleccionado por la regla `swapdiscnet_iter`, con un presupuesto de restauracion del 1,000% de los parametros densos. Finalmente se recupera parte del comportamiento con LoRA de rango 8 aplicada solo a los coeficientes por capa, manteniendo las bases congeladas.
 
@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks comparables de terceros en la informacion p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_basis_remove40_swapdiscnet_b010_r07
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_basis_remove40_swapdiscnet_b010_r07
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Licencia Llama 2 (referenciada en el repositorio): `LICENSE.txt`
 - Politica de uso Llama 2 (referenciada en el repositorio): `USE_POLICY.md`

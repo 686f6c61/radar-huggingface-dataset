@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`alexander-mikhailov/review-zero-shot-transfer` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación sobre transferencia zero-shot publicado en HuggingFace. El propio autor lo describe en su model card como «a structured set of research notes on Zero Shot Transfer», con un artefacto principal (`review.md`) que recoge el alcance de la pregunta de investigación, confundidores probables, una propuesta de comparación con baselines emparejados, referencias de evaluación en benchmarks públicos, comprobaciones de reproducibilidad y preguntas abiertas. No se declara ningún checkpoint entrenado, código liberado, ablación completada ni mejora medida sobre ningún benchmark.
+`alexander-mikhailov/review-zero-shot-transfer` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación sobre transferencia zero-shot publicado en Hugging Face. El propio autor lo describe en su model card como «a structured set of research notes on Zero Shot Transfer», con un artefacto principal (`review.md`) que recoge el alcance de la pregunta de investigación, confundidores probables, una propuesta de comparación con baselines emparejados, referencias de evaluación en benchmarks públicos, comprobaciones de reproducibilidad y preguntas abiertas. No se declara ningún checkpoint entrenado, código liberado, ablación completada ni mejora medida sobre ningún benchmark.
 
 El repositorio es extremadamente pequeño: el tamaño declarado es de 0,0 GB y el recuento real de parámetros en los ficheros safetensors es de 49.600. Esa cifra es incompatible con cualquier transformer funcional contemporáneo (los modelos más pequeños de uso práctico están en el rango de millones de parámetros), lo que refuerza la interpretación de que se trata de un artefacto auxiliar o de un tensor cualquiera empaquetado en formato safetensors, no de pesos utilizables para inferencia. Las etiquetas del repositorio incluyen `transformer` y `zero-shot-transfer`, pero son etiquetas de catalogación declaradas por el autor, no una descripción verificada de la arquitectura.
 
-Su relevancia actual es, por tanto, documental más que técnica: sirve como ejemplo de repositorio de notas estructuradas en HuggingFace y como recordatorio de que la presencia de un repositorio con licencia MIT y formato safetensors no implica la existencia de un modelo desplegable. Cualquier evaluación de capacidades, benchmarks o requisitos de hardware es, en este caso, inaplicable.
+Su relevancia actual es, por tanto, documental más que técnica: sirve como ejemplo de repositorio de notas estructuradas en Hugging Face y como recordatorio de que la presencia de un repositorio con licencia MIT y formato safetensors no implica la existencia de un modelo desplegable. Cualquier evaluación de capacidades, benchmarks o requisitos de hardware es, en este caso, inaplicable.
 
 ## Especificaciones tecnicas
 
@@ -45,7 +45,7 @@ Respecto al entrenamiento, la model card es explícita: el autor indica que las 
 
 - Revisión bibliográfica sobre transferencia zero-shot: el fichero `review.md` puede leerse como punto de partida para localizar referencias y benchmarks públicos nombrados en la nota, siempre verificando las fuentes originales.
 - Plantilla de cuaderno de investigación: el repositorio ilustra una convención útil (separar planes e hipótesis de resultados completados, exigir dataset, comandos, semillas, hardware y logs crudos al añadir resultados) que puede reutilizarse en otros proyectos.
-- Estudio de higiene de metadatos en HuggingFace: sirve como caso para analizar cómo las etiquetas (`transformer`, `research-notes`) y el formato (`safetensors`) pueden inducir a confusión sobre la naturaleza real de un artefacto.
+- Estudio de higiene de metadatos en Hugging Face: sirve como caso para analizar cómo las etiquetas (`transformer`, `research-notes`) y el formato (`safetensors`) pueden inducir a confusión sobre la naturaleza real de un artefacto.
 - Docencia sobre reproducibilidad: la distinción explícita entre hipótesis y evidencia es material didáctico directo para cursos de metodología experimental en machine learning.
 - Auditoría de licencias: al estar bajo MIT, el contenido textual puede reutilizarse citando la fuente, con la advertencia del propio autor de revisar por separado los términos de los datasets externos que se referencien.
 - Detección de ruido en índices de modelos: útil para construir heurísticas que descarten repositorios sin checkpoint entrenado antes de incluirlos en catálogos o pipelines automáticos.
@@ -90,7 +90,7 @@ No disponible. No existen modelos comparables en la misma categoría porque este
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/alexander-mikhailov/review-zero-shot-transfer
+- Repositorio en Hugging Face: https://huggingface.co/alexander-mikhailov/review-zero-shot-transfer
 - Fichero principal del repositorio: `review.md`
 - Documentación del repositorio: `README.md`
 - Paper, blog, repositorio de código o demo adicionales: no disponible (la búsqueda web no devolvió resultados relevantes para este modelo)

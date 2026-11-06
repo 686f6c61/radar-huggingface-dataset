@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-0.8B-OFA-Round1 es un checkpoint intermedio de calibración "once-for-all" (OFA) del backbone de texto del modelo Qwen/Qwen3.5-0.8B, publicado por el usuario asun17904 en HuggingFace. No se trata de un modelo entrenado para uso general, sino de un artefacto de investigación orientado a estudiar la reutilización de cabezas de atención, MLPs y capas congeladas dentro de grafos computacionales modificados. El modelo conserva exactamente los 752.393.024 parámetros únicos del modelo base y se carga como un `Qwen3_5ForCausalLM` estándar sin código remoto.
+Qwen3.5-0.8B-OFA-Round1 es un checkpoint intermedio de calibración "once-for-all" (OFA) del backbone de texto del modelo Qwen/Qwen3.5-0.8B, publicado por el usuario asun17904 en Hugging Face. No se trata de un modelo entrenado para uso general, sino de un artefacto de investigación orientado a estudiar la reutilización de cabezas de atención, MLPs y capas congeladas dentro de grafos computacionales modificados. El modelo conserva exactamente los 752.393.024 parámetros únicos del modelo base y se carga como un `Qwen3_5ForCausalLM` estándar sin código remoto.
 
 El checkpoint corresponde a la ronda 1 de un currículo planificado de 10 rondas y 5.000 actualizaciones de optimizador; esta release concreta refleja 500 actualizaciones y 49.152.000 objetivos de entrenamiento puntuados. La arquitectura subyacente es un transformer de 24 capas con embeddings de entrada/salida atados, y solo se incluye el backbone de texto: la torre de visión y el módulo de predicción multi-token del modelo original no están presentes.
 
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| asun17904/Qwen3.5-0.8B-OFA-Round1 | 752.393.024 | no disponible | apache-2.0 | Checkpoint de calibración OFA para investigación | HuggingFace |
-| Qwen/Qwen3.5-0.8B (base) | ~0,8 B (no confirmado en la información) | no disponible | apache-2.0 | Modelo post-entrenado de uso general con visión y predicción multi-token | HuggingFace |
+| asun17904/Qwen3.5-0.8B-OFA-Round1 | 752.393.024 | no disponible | apache-2.0 | Checkpoint de calibración OFA para investigación | Hugging Face |
+| Qwen/Qwen3.5-0.8B (base) | ~0,8 B (no confirmado en la información) | no disponible | apache-2.0 | Modelo post-entrenado de uso general con visión y predicción multi-token | Hugging Face |
 | Alternativas de ~0,8 B de propósito general | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparación directa con otros modelos de la misma categoría no está disponible en la información proporcionada; el único comparable documentado es el modelo base Qwen3.5-0.8B, del que este checkpoint deriva y del que se diferencia por ser un artefacto de investigación sin torre de visión ni módulo de predicción multi-token.
@@ -85,7 +85,7 @@ La comparación directa con otros modelos de la misma categoría no está dispon
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/asun17904/Qwen3.5-0.8B-OFA-Round1
+- Modelo en Hugging Face: https://huggingface.co/asun17904/Qwen3.5-0.8B-OFA-Round1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Receta de entrenamiento (`recipe.json`): https://huggingface.co/asun17904/Qwen3.5-0.8B-OFA-Round1/blob/main/recipe.json
 - Procedencia (`provenance.json`): https://huggingface.co/asun17904/Qwen3.5-0.8B-OFA-Round1/blob/main/provenance.json

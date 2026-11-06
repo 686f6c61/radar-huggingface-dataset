@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepfakeDetector es un modelo de clasificación de vídeo diseñado para detectar caras manipuladas mediante técnicas de deepfake. Lo desarrolla Ceendi como parte de un proyecto de diploma, y se publica en HuggingFace como un conjunto de artefactos ONNX más un checkpoint de PyTorch Lightning. El modelo resuelve un problema concreto: dada una secuencia de fotogramas de una cara, clasificarla como REAL o FAKE, devolviendo un logit que puede umbralizarse.
+DeepfakeDetector es un modelo de clasificación de vídeo diseñado para detectar caras manipuladas mediante técnicas de deepfake. Lo desarrolla Ceendi como parte de un proyecto de diploma, y se publica en Hugging Face como un conjunto de artefactos ONNX más un checkpoint de PyTorch Lightning. El modelo resuelve un problema concreto: dada una secuencia de fotogramas de una cara, clasificarla como REAL o FAKE, devolviendo un logit que puede umbralizarse.
 
 La arquitectura combina un extractor espacial EfficientNet-B4 (preentrenado en ImageNet vía `timm`) con una Bi-LSTM con atención sobre 16 fotogramas alineados de 224×224 píxeles. El resultado es un detector ligero (repo de 0,3 GB) que cabe en entornos de inferencia modestos y que se distribuye en formato ONNX para facilitar su despliegue sin depender de PyTorch.
 
@@ -78,6 +78,6 @@ No disponible. La información proporcionada no incluye modelos comparables ni d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ceendi/deepfake-video-detector
+- Hugging Face: https://huggingface.co/Ceendi/deepfake-video-detector
 - Repositorio GitHub: https://github.com/Ceendi/Deepfake-Detector
 - Dataset de entrenamiento (FaceForensics++): no se proporciona enlace directo en la información disponible.

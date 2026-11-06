@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Precision | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `yosephkkk/jomulttak-box-weights` | no disponible | no disponible | fp8 en capas seleccionadas, resto bf16 | Apache-2.0 | HuggingFace, 0 descargas |
-| `Qwen/Qwen-Image-2512` | no disponible | no disponible | bf16 | Apache-2.0 | HuggingFace (oficial) |
-| `Qwen/Qwen-Image-Edit-2511` | no disponible | no disponible | bf16 | Apache-2.0 | HuggingFace (oficial) |
-| `lightx2v/Qwen-Image-Edit-2511-Lightning` | no disponible | no disponible | LoRA (bf16) | no disponible | HuggingFace |
+| `yosephkkk/jomulttak-box-weights` | no disponible | no disponible | fp8 en capas seleccionadas, resto bf16 | Apache-2.0 | Hugging Face, 0 descargas |
+| `Qwen/Qwen-Image-2512` | no disponible | no disponible | bf16 | Apache-2.0 | Hugging Face (oficial) |
+| `Qwen/Qwen-Image-Edit-2511` | no disponible | no disponible | bf16 | Apache-2.0 | Hugging Face (oficial) |
+| `lightx2v/Qwen-Image-Edit-2511-Lightning` | no disponible | no disponible | LoRA (bf16) | no disponible | Hugging Face |
 
 La comparativa se limita a los repositorios de origen, ya que no se dispone de datos de rendimiento ni de parametros para contrastar con alternativas de otros fabricantes.
 
@@ -81,7 +81,7 @@ La comparativa se limita a los repositorios de origen, ya que no se dispone de d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yosephkkk/jomulttak-box-weights
+- Repositorio Hugging Face: https://huggingface.co/yosephkkk/jomulttak-box-weights
 - Modelo base Qwen-Image-2512: https://huggingface.co/Qwen/Qwen-Image-2512
 - Modelo base Qwen-Image-Edit-2511: https://huggingface.co/Qwen/Qwen-Image-Edit-2511
 - LoRA Lightning: https://huggingface.co/lightx2v/Qwen-Image-Edit-2511-Lightning

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `cyttic/exp39-ctc-human10bi-hhdgeom-llmgen-10k` es un checkpoint de 87.279.756 parámetros publicado por el usuario cyttic en HuggingFace bajo licencia MIT. Por la nomenclatura del identificador (CTC, human10bi, hhdgeom, llmgen) y el reducido tamaño del repositorio (0,3 GB), todo apunta a un modelo experimental de investigación, probablemente centrado en reconocimiento de voz (CTC, Connectionist Temporal Classification) o en generación condicionada, más que a un LLM conversacional de propósito general.
+El modelo `cyttic/exp39-ctc-human10bi-hhdgeom-llmgen-10k` es un checkpoint de 87.279.756 parámetros publicado por el usuario cyttic en Hugging Face bajo licencia MIT. Por la nomenclatura del identificador (CTC, human10bi, hhdgeom, llmgen) y el reducido tamaño del repositorio (0,3 GB), todo apunta a un modelo experimental de investigación, probablemente centrado en reconocimiento de voz (CTC, Connectionist Temporal Classification) o en generación condicionada, más que a un LLM conversacional de propósito general.
 
-La model card está completamente sin rellenar: todos los campos aparecen con el marcador `[More Information Needed]` de la plantilla por defecto de HuggingFace. No hay información sobre arquitectura, datos de entrenamiento, idiomas, evaluación ni uso previsto. El único dato técnico verificable es el recuento de parámetros obtenido de los pesos en safetensors y la licencia MIT.
+La model card está completamente sin rellenar: todos los campos aparecen con el marcador `[More Information Needed]` de la plantilla por defecto de Hugging Face. No hay información sobre arquitectura, datos de entrenamiento, idiomas, evaluación ni uso previsto. El único dato técnico verificable es el recuento de parámetros obtenido de los pesos en safetensors y la licencia MIT.
 
 Por tanto, esta ficha debe leerse como una descripción del estado real de la información disponible: un checkpoint pequeño, sin documentación, sin descargas ni interacciones, y sin pipeline declarado. No es recomendable para producción sin una inspección previa de los pesos y del código de entrenamiento.
 
@@ -74,5 +74,5 @@ No disponible. No se ha identificado en la información proporcionada un conjunt
 
 ## Enlaces
 
-- [HuggingFace: cyttic/exp39-ctc-human10bi-hhdgeom-llmgen-10k](https://huggingface.co/cyttic/exp39-ctc-human10bi-hhdgeom-llmgen-10k)
+- [Hugging Face: cyttic/exp39-ctc-human10bi-hhdgeom-llmgen-10k](https://huggingface.co/cyttic/exp39-ctc-human10bi-hhdgeom-llmgen-10k)
 - [Paper citado en la plantilla (Lacoste et al., 2019)](https://arxiv.org/abs/1910.09700)

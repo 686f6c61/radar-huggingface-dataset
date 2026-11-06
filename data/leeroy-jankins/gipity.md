@@ -4,7 +4,7 @@
 
 Gipity es un modelo de lenguaje fine-tuneado a partir de OpenAI GPT-OSS-20b, un transformer de arquitectura MoE (Mixture of Experts) de 20.9 mil millones de parámetros. El autor, leeroy-jankins, ha ajustado el modelo con un conjunto de datasets especializados en regulaciones financieras y presupuestarias de los Estados Unidos, como la Ley de Control de Presupuesto de 2011, la Ley de Transparencia Digital de 2014, el Libro de Símbolos de Cuentas Federales, entre otros. El resultado es un modelo cuantizado a GGUF (Q4_K_XL) diseñado para ejecución local en entornos de baja latencia, con soporte para RAG y razonamiento encadenado.
 
-La relevancia de Gipity radica en su especialización en un dominio concreto (finanzas públicas y legislación federal de EE.UU.) y en su formato GGUF, que permite desplegarlo en hardware de consumo con un consumo de memoria reducido. Aunque hereda las capacidades generales del modelo base (generación de texto, razonamiento, seguimiento de instrucciones), su fine-tuning lo hace particularmente útil para tareas de consulta, resumen y análisis de documentos normativos y presupuestarios. El modelo se distribuye bajo licencia MIT según el campo de HuggingFace, aunque la model card menciona Apache 2.0, una discrepancia que conviene verificar antes de uso comercial.
+La relevancia de Gipity radica en su especialización en un dominio concreto (finanzas públicas y legislación federal de EE.UU.) y en su formato GGUF, que permite desplegarlo en hardware de consumo con un consumo de memoria reducido. Aunque hereda las capacidades generales del modelo base (generación de texto, razonamiento, seguimiento de instrucciones), su fine-tuning lo hace particularmente útil para tareas de consulta, resumen y análisis de documentos normativos y presupuestarios. El modelo se distribuye bajo licencia MIT según el campo de Hugging Face, aunque la model card menciona Apache 2.0, una discrepancia que conviene verificar antes de uso comercial.
 
 ## Especificaciones técnicas
 
@@ -16,7 +16,7 @@ La relevancia de Gipity radica en su especialización en un dominio concreto (fi
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | Q4_K_XL (según model card; también se menciona Q4_K_M en el ejemplo de descarga) |
 | Idiomas soportados | en (inglés) |
-| Licencia | mit (según HuggingFace; la model card indica Apache 2.0) |
+| Licencia | mit (según Hugging Face; la model card indica Apache 2.0) |
 | Formato de pesos | GGUF |
 
 ## Arquitectura y entrenamiento
@@ -74,7 +74,7 @@ No se dispone de datos de rendimiento comparativo. La principal diferencia de Gi
 
 ## Enlaces
 
-- [HuggingFace - leeroy-jankins/gipity](https://huggingface.co/leeroy-jankins/gipity)
+- [Hugging Face - leeroy-jankins/gipity](https://huggingface.co/leeroy-jankins/gipity)
 - [Modelo base: unsloth/gpt-oss-20b-GGUF](https://huggingface.co/unsloth/gpt-oss-20b-GGUF)
 - [Repositorio de OpenAI GPT-OSS](https://github.com/openai/gpt-oss)
 - Datasets de fine-tuning (enlaces en la model card):

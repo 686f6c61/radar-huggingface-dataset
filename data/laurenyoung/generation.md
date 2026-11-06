@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`laurenyoung/generation` es un prototipo de investigación publicado en HuggingFace por el usuario laurenyoung bajo licencia Apache 2.0. Se presenta como una implementación de tipo **Mixer** orientada a tareas de generación, con una configuración de escala "giant" que documenta los valores por defecto y los formatos de fichero del repositorio. No se trata de un modelo entrenado ni evaluado: la model card indica explícitamente que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (smoke tests) y no un checkpoint con benchmarks.
+`laurenyoung/generation` es un prototipo de investigación publicado en Hugging Face por el usuario laurenyoung bajo licencia Apache 2.0. Se presenta como una implementación de tipo **Mixer** orientada a tareas de generación, con una configuración de escala "giant" que documenta los valores por defecto y los formatos de fichero del repositorio. No se trata de un modelo entrenado ni evaluado: la model card indica explícitamente que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (smoke tests) y no un checkpoint con benchmarks.
 
 El repositorio contiene únicamente el código de definición del modelo (`finetune.py`), la configuración de arquitectura (`config.json`), los argumentos de entrenamiento por defecto (`training_args.json`) y el checkpoint de inicialización. El tamaño del repositorio es de 0.0 GB y el recuento de parámetros en safetensors es de 33.088, un valor extremadamente reducido que confirma que no se trata de un modelo de producción.
 
@@ -42,7 +42,7 @@ No se ha completado ningún entrenamiento: la model card indica que el checkpoin
 - **Estudio de arquitecturas alternativas a Transformer**: analizar cómo se comporta la combinación de sliding window attention y cross attention frente a atención completa en tareas de generación de secuencias.
 - **Base para ablaciones de normalización y activación**: modificar `rmsnorm` o `approx gelu` en `config.json` y medir el impacto en convergencia con la misma receta de entrenamiento.
 - **Adaptación como componente de un sistema mayor**: integrar el módulo Mixer en un pipeline de generación propio mediante un adaptador explícito, dado que las APIs genéricas de carga automática no lo reconocen.
-- **Docencia y formación**: ilustrar la estructura mínima de un repositorio de investigación en HuggingFace (código, config, training args y checkpoint de inicialización) sin afirmaciones de rendimiento no verificadas.
+- **Docencia y formación**: ilustrar la estructura mínima de un repositorio de investigación en Hugging Face (código, config, training args y checkpoint de inicialización) sin afirmaciones de rendimiento no verificadas.
 
 ## Benchmarks y rendimiento
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| laurenyoung/generation | 33.088 (checkpoint de inicialización) | no disponible | sin benchmarks | Apache 2.0 | HuggingFace |
+| laurenyoung/generation | 33.088 (checkpoint de inicialización) | no disponible | sin benchmarks | Apache 2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre modelos comparables de la misma categoría (Mixer de investigación con sliding window attention) en la información proporcionada.
@@ -77,5 +77,5 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/laurenyoung/generation
+- Hugging Face: https://huggingface.co/laurenyoung/generation
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

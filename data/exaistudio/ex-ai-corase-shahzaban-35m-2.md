@@ -19,7 +19,7 @@ Por su tamano (35M parametros) y su corpus de entrenamiento (un unico texto, 780
 | Tipos de cuantizacion | no disponible (se publican pesos originales y una version ONNX) |
 | Idiomas soportados | Persa clasico (codigo `fa`) |
 | Licencia | EX Open Source Model License (EX-OSML) Version 1.0 (licencia propia, etiquetada como `other`) |
-| Formato de pesos | Pesos PyTorch y version ONNX (etiqueta `onnx` en HuggingFace) |
+| Formato de pesos | Pesos PyTorch y version ONNX (etiqueta `onnx` en Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -82,6 +82,6 @@ No se dispone en la informacion proporcionada de modelos comparables de la misma
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/EXAiStudio/EX-AI-Corase-ShahZaban-35M-2
-- Licencia (EX-OSML 1.0): fichero LICENSE en el repositorio de HuggingFace
+- Hugging Face: https://huggingface.co/EXAiStudio/EX-AI-Corase-ShahZaban-35M-2
+- Licencia (EX-OSML 1.0): fichero LICENSE en el repositorio de Hugging Face
 - Paper, blog, repositorio de codigo o demo: no disponible en la informacion proporcionada

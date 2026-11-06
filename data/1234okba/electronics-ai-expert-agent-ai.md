@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `1234okba/electronics-ai-expert-agent-ai` es un repositorio publicado en HuggingFace por el usuario 1234okba bajo licencia MIT. Por el propio identificador se deduce que aspira a ser un agente experto en electronica, pero la model card publicada no contiene mas que la linea `license: mit`: no se declara arquitectura, numero de parametros, longitud de contexto, idiomas ni formato de pesos.
+El modelo `1234okba/electronics-ai-expert-agent-ai` es un repositorio publicado en Hugging Face por el usuario 1234okba bajo licencia MIT. Por el propio identificador se deduce que aspira a ser un agente experto en electronica, pero la model card publicada no contiene mas que la linea `license: mit`: no se declara arquitectura, numero de parametros, longitud de contexto, idiomas ni formato de pesos.
 
 En el momento de la consulta el repositorio acumula 0 descargas y 0 likes, y la plataforma no le asigna pipeline de inferencia. La fecha de creacion y ultima actualizacion registradas son identicas (2026-10-15), lo que indica que no ha habido mantenimiento posterior a la publicacion inicial ni correcciones de la documentacion.
 
@@ -72,7 +72,7 @@ No disponible. No se dispone de parametros, contexto, rendimiento ni formato de 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| 1234okba/electronics-ai-expert-agent-ai | no disponible | no disponible | MIT | repositorio en HuggingFace, 0 descargas |
+| 1234okba/electronics-ai-expert-agent-ai | no disponible | no disponible | MIT | repositorio en Hugging Face, 0 descargas |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -89,7 +89,7 @@ No disponible. No se dispone de parametros, contexto, rendimiento ni formato de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/1234okba/electronics-ai-expert-agent-ai
+- Hugging Face: https://huggingface.co/1234okba/electronics-ai-expert-agent-ai
 - Paper: no disponible.
 - Blog o anuncio del autor: no disponible.
 - Repositorio de codigo: no disponible.

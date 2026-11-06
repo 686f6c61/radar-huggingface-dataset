@@ -71,6 +71,6 @@ No se dispone de datos comparativos fiables. El adaptador no tiene métricas pub
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sbcho0325/EXAONE-3.5-7.8B-verireason_random_sft_seed42_step170
+- Repositorio Hugging Face: https://huggingface.co/sbcho0325/EXAONE-3.5-7.8B-verireason_random_sft_seed42_step170
 - Modelo base: https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct
 - Paper de LoRA (referencia técnica): arXiv:1910.09700 (citado en la model card)

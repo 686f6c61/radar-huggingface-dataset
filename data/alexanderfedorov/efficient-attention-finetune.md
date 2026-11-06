@@ -2,14 +2,14 @@
 
 ## Resumen
 
-El repositorio alojado en HuggingFace como `efficient-attention-finetune` y publicado por el autor `alexanderfedorov` no es un modelo de IA entrenado, sino un conjunto estructurado de notas de investigación sobre atención eficiente (_efficient attention_) en redes transformer. El contenido aborda el alcance de la pregunta de investigación, posibles variables confusoras, una propuesta de comparación con líneas base equiparadas y referencias a conjuntos de evaluación concretos como Long Range Arena, ImageNet-1K y Flickr30k. El repositorio se presenta como un material exploratorio: no incluye un checkpoint, código liberado ni resultados experimentales, y su propio README advierte de que las secciones etiquetadas como planes o hipótesis no deben interpretarse como resultados. En HuggingFace se registra una licencia MIT y un archivo safetensors con 33.088 parámetros, pero no hay un modelo funcional ni documentación de arquitectura. Por tanto, su relevancia es exclusivamente documental para investigadores que quieran partir de estas notas para verificar cuestiones abiertas sobre eficiencia de atención.
+El repositorio alojado en Hugging Face como `efficient-attention-finetune` y publicado por el autor `alexanderfedorov` no es un modelo de IA entrenado, sino un conjunto estructurado de notas de investigación sobre atención eficiente (_efficient attention_) en redes transformer. El contenido aborda el alcance de la pregunta de investigación, posibles variables confusoras, una propuesta de comparación con líneas base equiparadas y referencias a conjuntos de evaluación concretos como Long Range Arena, ImageNet-1K y Flickr30k. El repositorio se presenta como un material exploratorio: no incluye un checkpoint, código liberado ni resultados experimentales, y su propio README advierte de que las secciones etiquetadas como planes o hipótesis no deben interpretarse como resultados. En Hugging Face se registra una licencia MIT y un archivo safetensors con 33.088 parámetros, pero no hay un modelo funcional ni documentación de arquitectura. Por tanto, su relevancia es exclusivamente documental para investigadores que quieran partir de estas notas para verificar cuestiones abiertas sobre eficiencia de atención.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
 | Arquitectura | No disponible (no es un modelo entrenado) |
-| Parametros totales | 33.088 (registrados en HuggingFace; no corresponden a un modelo funcional) |
+| Parametros totales | 33.088 (registrados en Hugging Face; no corresponden a un modelo funcional) |
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | No disponible |
@@ -59,12 +59,12 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 - No es un modelo de IA: no se puede usar para tareas de generación, razonamiento ni análisis.
 - El README advierte de que las secciones etiquetadas como "planes" o "hipótesis" no deben interpretarse como resultados experimentales.
 - No incluye código liberado, ni checkpoint, ni datos de entrenamiento.
-- El registro de HuggingFace muestra un archivo safetensors con 33.088 parámetros y un tamaño de repo de 0.0 GB, lo que sugiere que podría ser un artefacto vacío o simbólico; no hay evidencia de que contenga un modelo funcional.
+- El registro de Hugging Face muestra un archivo safetensors con 33.088 parámetros y un tamaño de repo de 0.0 GB, lo que sugiere que podría ser un artefacto vacío o simbólico; no hay evidencia de que contenga un modelo funcional.
 - Cualquier uso en producción es imposible y no está contemplado.
 - Las referencias a conjuntos de datos externos (Long Range Arena, ImageNet-1K, Flickr30k) no implican que el autor haya ejecutado evaluaciones; se trata solo de un contexto propuesto.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/alexanderfedorov/efficient-attention-finetune
+- Repositorio en Hugging Face: https://huggingface.co/alexanderfedorov/efficient-attention-finetune
 
 No se han encontrado enlaces adicionales relevantes en la búsqueda web; los resultados recuperados eran sobre cultivos de nogal y un artículo genérico de atención eficiente sin relación con este repositorio.

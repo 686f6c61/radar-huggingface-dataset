@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Jw3_LUMI_JUICE_STARTER es un repositorio publicado en HuggingFace por el usuario LuxrAIjuicy bajo licencia Apache 2.0. La informacion disponible es minima: no hay pipeline declarado, no se indican idiomas soportados, no se especifican parametros, arquitectura ni contexto, y la model card del autor no contiene mas contenido que la propia declaracion de licencia. El repositorio acumula 0 descargas y 0 likes, y su tamano declarado es de 0,1 GB.
+Jw3_LUMI_JUICE_STARTER es un repositorio publicado en Hugging Face por el usuario LuxrAIjuicy bajo licencia Apache 2.0. La informacion disponible es minima: no hay pipeline declarado, no se indican idiomas soportados, no se especifican parametros, arquitectura ni contexto, y la model card del autor no contiene mas contenido que la propia declaracion de licencia. El repositorio acumula 0 descargas y 0 likes, y su tamano declarado es de 0,1 GB.
 
 No es posible determinar a partir de los datos proporcionados si se trata de un modelo completo, de un adaptador tipo LoRA, de un conjunto de pesos parciales o de un paquete de configuracion. El identificador (Jw3_LUMI_JUICE_STARTER) sugiere un empaquetado de tipo "starter", pero se trata de una interpretacion del nombre y no de un dato confirmado por el autor.
 
@@ -25,8 +25,8 @@ La relevancia practica de esta ficha es, por tanto, limitada: sirve como registr
 | Tamano del repositorio | 0,1 GB |
 | Descargas | 0 |
 | Likes | 0 |
-| Fecha de creacion | 2026-09-11 (segun metadatos de HuggingFace) |
-| Fecha de ultima actualizacion | 2026-09-11 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-11 (segun metadatos de Hugging Face) |
+| Fecha de ultima actualizacion | 2026-09-11 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -53,7 +53,7 @@ Los siguientes escenarios se plantean como hipotesis de evaluacion, condicionado
 - Prueba de concepto en local: si el artefacto resulta ser un modelo de menos de 1.000 millones de parametros, podria probarse en una GPU de consumo con cuantizacion de 4 u 8 bits para validar su comportamiento basico.
 - Ajuste fino experimental: si se tratase de un adaptador, podria servir como punto de partida para experimentos de fine-tuning sobre una base compatible, siempre que se identifique primero el modelo base.
 - Generacion de texto de baja criticidad: borradores internos, resumenes no publicados o tareas de relleno, en un entorno aislado y con revision humana obligatoria.
-- Docencia y formacion: uso como ejemplo de repositorio sin documentar para ilustrar buenas y malas practicas en la publicacion de modelos en HuggingFace.
+- Docencia y formacion: uso como ejemplo de repositorio sin documentar para ilustrar buenas y malas practicas en la publicacion de modelos en Hugging Face.
 - Analisis de seguridad de la cadena de suministro: inspeccion de pesos y ficheros pickletorch para detectar posibles cargas maliciosas antes de ejecutar el modelo, dado que no existe trazabilidad del autor.
 
 ## Benchmarks y rendimiento
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 - Encaje en GPU de consumo: indeterminado. El tamano declarado del repositorio (0,1 GB) es compatible con cualquier GPU de consumo moderna, pero ese dato no implica que el modelo resultante sea ligero en inferencia.
 - Opciones de despliegue: no disponible. No se puede confirmar compatibilidad con vLLM, llama.cpp, Ollama, TGI o transformers sin conocer el formato de pesos y la arquitectura.
 - Latencia y throughput estimados: no disponible.
-- Almacenamiento: aproximadamente 0,1 GB para los ficheros del repositorio, segun los metadatos de HuggingFace.
+- Almacenamiento: aproximadamente 0,1 GB para los ficheros del repositorio, segun los metadatos de Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -75,7 +75,7 @@ No disponible. No se ha identificado la categoria del modelo (tamano, tarea, mod
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| Jw3_LUMI_JUICE_STARTER | no disponible | no disponible | apache-2.0 | HuggingFace, 0 descargas, 0 likes | no disponible |
+| Jw3_LUMI_JUICE_STARTER | no disponible | no disponible | apache-2.0 | Hugging Face, 0 descargas, 0 likes | no disponible |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -93,7 +93,7 @@ No disponible. No se ha identificado la categoria del modelo (tamano, tarea, mod
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LuxrAIjuicy/Jw3_LUMI_JUICE_STARTER
+- Hugging Face: https://huggingface.co/LuxrAIjuicy/Jw3_LUMI_JUICE_STARTER
 - Model card del autor: no disponible (el README solo contiene la declaracion de licencia Apache 2.0)
 - Paper: no disponible
 - Repositorio de codigo: no disponible

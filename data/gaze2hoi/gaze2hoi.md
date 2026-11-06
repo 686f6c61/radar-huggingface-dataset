@@ -82,8 +82,8 @@ No se dispone en la informacion proporcionada de datos de rendimiento de Gaze2HO
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Gaze2HOI | 8B en el VLM base + modulos no cuantificados | No disponible | Intencion estructurada + contacto + movimiento mano-objeto con mirada | `gaze2hoi-component-licenses` (por componentes) | Pesos de inferencia en HuggingFace (0,4 GB) + codigo en GitHub |
-| Qwen/Qwen3-VL-8B-Instruct | 8B | No disponible en la informacion proporcionada | VLM generalista de imagen y texto | La del modelo base (consultar su card) | Publico en HuggingFace |
+| Gaze2HOI | 8B en el VLM base + modulos no cuantificados | No disponible | Intencion estructurada + contacto + movimiento mano-objeto con mirada | `gaze2hoi-component-licenses` (por componentes) | Pesos de inferencia en Hugging Face (0,4 GB) + codigo en GitHub |
+| Qwen/Qwen3-VL-8B-Instruct | 8B | No disponible en la informacion proporcionada | VLM generalista de imagen y texto | La del modelo base (consultar su card) | Publico en Hugging Face |
 | Otros modelos de HOI forecasting | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La diferencia funcional clave frente al modelo base es que Gaze2HOI anade la senal de mirada, el anclaje geometrico de contacto y la generacion de movimiento, a cambio de exigir entradas 3D y geometria de escena que el VLM por si solo no necesita.
@@ -107,7 +107,7 @@ La diferencia funcional clave frente al modelo base es que Gaze2HOI anade la sen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gaze2hoi/Gaze2HOI
+- Modelo en Hugging Face: https://huggingface.co/gaze2hoi/Gaze2HOI
 - Pagina del proyecto: https://gaze2hoi.github.io/
 - Codigo e instrucciones de instalacion: https://github.com/gaze2hoi/Gaze2HOI
 - Datos de ejemplo (EgoAIM-Demo): https://huggingface.co/datasets/gaze2hoi/EgoAIM-Demo

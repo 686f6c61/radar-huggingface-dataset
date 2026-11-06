@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MLAgents-Pyramids es un modelo de aprendizaje por refuerzo profundo (deep reinforcement learning) publicado por el usuario YRGKarthikeya en HuggingFace Hub. No se trata de un modelo de lenguaje ni de un transformer generativo, sino de una política entrenada con el algoritmo PPO (Proximal Policy Optimization) dentro del framework Unity ML-Agents para resolver el entorno de ejemplo Pyramids. El repositorio declara la librería `ml-agents`, la pipeline `reinforcement-learning` y etiquetas que apuntan a Unity ML-Agents, TensorBoard y ONNX.
+MLAgents-Pyramids es un modelo de aprendizaje por refuerzo profundo (deep reinforcement learning) publicado por el usuario YRGKarthikeya en Hugging Face Hub. No se trata de un modelo de lenguaje ni de un transformer generativo, sino de una política entrenada con el algoritmo PPO (Proximal Policy Optimization) dentro del framework Unity ML-Agents para resolver el entorno de ejemplo Pyramids. El repositorio declara la librería `ml-agents`, la pipeline `reinforcement-learning` y etiquetas que apuntan a Unity ML-Agents, TensorBoard y ONNX.
 
 El modelo resuelve la tarea concreta de control de agentes en el citado entorno de simulación: la política recibe observaciones del entorno y emite acciones discretas o continuas para maximizar la recompensa acumulada. Su relevancia es, por tanto, limitada al ecosistema de Unity ML-Agents, donde sirve como punto de partida reproducible para reanudar entrenamientos, comparar hiperparámetros y demostrar el ciclo completo de entrenamiento y publicación de agentes.
 
@@ -88,8 +88,8 @@ No se dispone de datos de rendimiento comparativos entre estos agentes en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/YRGKarthikeya/MLAgents-Pyramids
+- Modelo en Hugging Face: https://huggingface.co/YRGKarthikeya/MLAgents-Pyramids
 - Space de demostracion referenciado en la model card: https://huggingface.co/spaces/unity/ML-Agents-Pyramids
 - Repositorio de Unity ML-Agents: https://github.com/Unity-Technologies/ml-agents
-- Documentacion de integracion de ML-Agents con HuggingFace: https://github.com/huggingface/ml-agents#get-started
+- Documentacion de integracion de ML-Agents con Hugging Face: https://github.com/huggingface/ml-agents#get-started
 - Resultados de busqueda web: no se han encontrado enlaces relevantes sobre este modelo; los resultados obtenidos corresponden a consultas no relacionadas con el modelo y se han descartado.

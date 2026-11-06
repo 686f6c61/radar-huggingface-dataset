@@ -23,9 +23,9 @@ La relevancia de este modelo radica en que ofrece una alternativa ligera y despl
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información detallada sobre la arquitectura interna del modelo base `exnivo/Qwen3.8-20B-Minitron`. Los metadatos de HuggingFace indican que se trata de un modelo derivado de Qwen3.8 mediante técnicas de compresión: poda estructurada (structured pruning) y destilación de conocimiento (knowledge distillation). Esto sugiere que se ha partido de un modelo mayor de la familia Qwen y se ha reducido su tamaño eliminando capas o dimensiones redundantes, seguido de un proceso de destilación para recuperar parte del rendimiento perdido.
+No se dispone de información detallada sobre la arquitectura interna del modelo base `exnivo/Qwen3.8-20B-Minitron`. Los metadatos de Hugging Face indican que se trata de un modelo derivado de Qwen3.8 mediante técnicas de compresión: poda estructurada (structured pruning) y destilación de conocimiento (knowledge distillation). Esto sugiere que se ha partido de un modelo mayor de la familia Qwen y se ha reducido su tamaño eliminando capas o dimensiones redundantes, seguido de un proceso de destilación para recuperar parte del rendimiento perdido.
 
-No se han publicado datos sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de alineación como RLHF o DPO. El pipeline declarado en HuggingFace es `image-text-to-text`, lo que podría indicar capacidades multimodales, pero no hay confirmación explícita en la información disponible.
+No se han publicado datos sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de alineación como RLHF o DPO. El pipeline declarado en Hugging Face es `image-text-to-text`, lo que podría indicar capacidades multimodales, pero no hay confirmación explícita en la información disponible.
 
 ## Capacidades
 
@@ -71,7 +71,7 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- [Modelo GGUF en HuggingFace](https://huggingface.co/Miltos22/Qwen3.8-20B-Minitron-Q3_K_S-GGUF)
+- [Modelo GGUF en Hugging Face](https://huggingface.co/Miltos22/Qwen3.8-20B-Minitron-Q3_K_S-GGUF)
 - [Modelo base exnivo/Qwen3.8-20B-Minitron](https://huggingface.co/exnivo/Qwen3.8-20B-Minitron)
 - [Repositorio llama.cpp](https://github.com/ggerganov/llama.cpp)
 - [Espacio GGUF-my-repo](https://huggingface.co/spaces/ggml-org/gguf-my-repo)

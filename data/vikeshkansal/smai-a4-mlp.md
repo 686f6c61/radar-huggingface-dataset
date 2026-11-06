@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`smai-a4-mlp` es un perceptrón multicapa (MLP) entrenado en PyTorch sobre el conjunto de datos CIFAR-10, publicado por el usuario de HuggingFace `vikeshkansal` como parte de la asignación 4 de la asignatura SMAI (sección 1.5). No se trata de un modelo de lenguaje ni de un modelo generativo: es un clasificador de imágenes de propósito académico que asigna una de las 10 clases de CIFAR-10 a imágenes de 32x32 píxeles en color.
+`smai-a4-mlp` es un perceptrón multicapa (MLP) entrenado en PyTorch sobre el conjunto de datos CIFAR-10, publicado por el usuario de Hugging Face `vikeshkansal` como parte de la asignación 4 de la asignatura SMAI (sección 1.5). No se trata de un modelo de lenguaje ni de un modelo generativo: es un clasificador de imágenes de propósito académico que asigna una de las 10 clases de CIFAR-10 a imágenes de 32x32 píxeles en color.
 
 El modelo tiene una arquitectura trivial de dos capas densas (3072 → 128 → 10) con activación ReLU en la capa oculta y salida lineal de 10 logits, sumando 394.634 parámetros. Se entrenó con SGD plano (learning rate 0.01, batch size 64, 100 épocas) sobre las 50.000 imágenes de entrenamiento de CIFAR-10, sin data augmentation ni early stopping.
 
@@ -74,7 +74,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 | Modelo | Parametros | Contexto | Accuracy test CIFAR-10 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| smai-a4-mlp | 394.634 | no aplica | 0.4770 | no disponible | HuggingFace |
+| smai-a4-mlp | 394.634 | no aplica | 0.4770 | no disponible | Hugging Face |
 | Alternativas | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -91,6 +91,6 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vikeshkansal/smai-a4-mlp
-- Dataset CIFAR-10 en HuggingFace: https://huggingface.co/datasets/uoft-cs/cifar10
+- Modelo en Hugging Face: https://huggingface.co/vikeshkansal/smai-a4-mlp
+- Dataset CIFAR-10 en Hugging Face: https://huggingface.co/datasets/uoft-cs/cifar10
 - No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos adicionales asociados a este modelo.

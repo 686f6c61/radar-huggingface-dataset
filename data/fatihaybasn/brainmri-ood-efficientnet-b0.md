@@ -110,7 +110,7 @@ EfficientNet-B0 tiene un rendimiento inferior a modelos de mayor capacidad como 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Fatihaybasn/brainmri-ood-efficientnet-b0
+- Repositorio Hugging Face: https://huggingface.co/Fatihaybasn/brainmri-ood-efficientnet-b0
 - Proyecto GitHub: https://github.com/fatihaybsn/BrainMRI-OOD-10Models
 - Commit de referencia: https://github.com/fatihaybsn/BrainMRI-OOD-10Models/commit/a9920408189230b886773a64d113eb35bcba1971
 - Archivo CITATION.cff: https://github.com/fatihaybsn/BrainMRI-OOD-10Models/blob/main/CITATION.cff

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-muaalem-model-v1 es un modelo de reconocimiento y analisis fonetico del habla desarrollado por el usuario nour-world, publicado en HuggingFace bajo licencia MIT. Se trata de un ajuste fino (fine-tune) del codificador de voz auto-supervisado facebook/w2v-bert-2.0, con 605.753.226 parametros totales y pesos en formato safetensors (2,4 GB de repositorio). El modelo utiliza un cabezal de tipo multi_level_ctc, lo que indica que predice varias etiquetas a nivel de fonema de forma paralela mediante CTC (Connectionist Temporal Classification).
+muaalem-model-v1 es un modelo de reconocimiento y analisis fonetico del habla desarrollado por el usuario nour-world, publicado en Hugging Face bajo licencia MIT. Se trata de un ajuste fino (fine-tune) del codificador de voz auto-supervisado facebook/w2v-bert-2.0, con 605.753.226 parametros totales y pesos en formato safetensors (2,4 GB de repositorio). El modelo utiliza un cabezal de tipo multi_level_ctc, lo que indica que predice varias etiquetas a nivel de fonema de forma paralela mediante CTC (Connectionist Temporal Classification).
 
 El objetivo del modelo parece ser el analisis de las reglas de tajwid (recitacion coranica): las metricas de evaluacion declaradas por el autor son tasas de error por fonema ("Per Phonemes") y por atributos articulatorios arabes como Hams/Jahr (sordo/sonoro), Shidda/Rakhawa (oclusivo/fricativo), Tafkheem/Taqeeq (enfatico/no enfatico), Itbaq, Safeer, Qalqla, Tikraar, Tafashie, Istitala y Ghonna. Esto lo situa en la interseccion entre el reconocimiento automatico del habla (ASR) y la verificacion automatica de pronunciacion en contexto religioso.
 
@@ -30,7 +30,7 @@ Es relevante porque los modelos especificos de tajwid son escasos y escasamente 
 
 El modelo parte de facebook/w2v-bert-2.0, un codificador de voz preentrenado de forma auto-supervisada que combina aprendizaje contrastivo con prediccion enmascarada sobre representaciones acusticas. Sobre ese backbone, nour-world ha anadido un cabezal multi_level_ctc: en lugar de una unica secuencia de salida, el modelo emite multiples secuencias de etiquetas a nivel de fonema, cada una correspondiente a un atributo articulatorio del tajwid. Las metricas declaradas (Hams/Jahr, Shidda/Rakhawa, Tafkheem/Taqeeq, Itbaq, Safeer, Qalqla, Tikraar, Tafashie, Istitala, Ghonna) confirman esta estructura de prediccion multilabel a nivel fonetico.
 
-El entrenamiento se realizo con el Trainer de HuggingFace durante 1 sola epoca (3560 pasos), con batch de 64, learning rate 5e-5, optimizador AdamW (betas 0,9/0,999, epsilon 1e-8), scheduler constante y warmup del 20 %, semilla 42. El dataset de entrenamiento aparece como "None" en la model card, es decir, no se especifica su composicion ni su tamano. Las versiones de framework declaradas son Transformers 4.55.0, PyTorch 2.8.0+cu128, Datasets 3.3.2 y Tokenizers 0.21.4. No se documenta si hubo RLHF, DPO ni ninguna fase de alineacion adicional.
+El entrenamiento se realizo con el Trainer de Hugging Face durante 1 sola epoca (3560 pasos), con batch de 64, learning rate 5e-5, optimizador AdamW (betas 0,9/0,999, epsilon 1e-8), scheduler constante y warmup del 20 %, semilla 42. El dataset de entrenamiento aparece como "None" en la model card, es decir, no se especifica su composicion ni su tamano. Las versiones de framework declaradas son Transformers 4.55.0, PyTorch 2.8.0+cu128, Datasets 3.3.2 y Tokenizers 0.21.4. No se documenta si hubo RLHF, DPO ni ninguna fase de alineacion adicional.
 
 ## Capacidades
 
@@ -100,10 +100,10 @@ No se dispone de modelos directamente equivalentes de tajwid en la informacion p
 
 | Modelo | Parametros | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| muaalem-model-v1 | 605,75 M | audio; duracion maxima no especificada | MIT | HuggingFace |
-| facebook/w2v-bert-2.0 | ~580 M | audio auto-supervisado (multilingue) | MIT | HuggingFace |
-| openai/whisper-large-v3 | 1.550 M | segmentos de audio de hasta 30 s | Apache 2.0 | HuggingFace, API |
-| facebook/mms-1b-all | ~1.000 M | ASR multilingue (mas de 1000 idiomas) | CC-BY-NC 4.0 | HuggingFace |
+| muaalem-model-v1 | 605,75 M | audio; duracion maxima no especificada | MIT | Hugging Face |
+| facebook/w2v-bert-2.0 | ~580 M | audio auto-supervisado (multilingue) | MIT | Hugging Face |
+| openai/whisper-large-v3 | 1.550 M | segmentos de audio de hasta 30 s | Apache 2.0 | Hugging Face, API |
+| facebook/mms-1b-all | ~1.000 M | ASR multilingue (mas de 1000 idiomas) | CC-BY-NC 4.0 | Hugging Face |
 
 Advertencia: los valores de parametros y licencias de los modelos de comparacion son aproximados y deben verificarse en sus fichas oficiales antes de usarse en produccion. En particular, mms-1b-all usa una licencia no comercial, a diferencia de muaalem-model-v1 (MIT), que si permite uso comercial.
 
@@ -122,6 +122,6 @@ Advertencia: los valores de parametros y licencias de los modelos de comparacion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nour-world/muaalem-model-v1
+- Modelo en Hugging Face: https://huggingface.co/nour-world/muaalem-model-v1
 - Modelo base: https://huggingface.co/facebook/w2v-bert-2.0
 - No se han encontrado papers, blogs, repositorios ni demos adicionales asociados a este modelo en la busqueda web realizada.

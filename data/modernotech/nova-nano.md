@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ModernoTech/Nova-Nano
+- Repositorio Hugging Face: https://huggingface.co/ModernoTech/Nova-Nano
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-350M
 - Repositorio GGUF original: https://huggingface.co/LiquidAI/LFM2.5-350M-GGUF
 - Licencia LFM Open License v1.0: disponible en el repositorio del modelo base (no se incluye URL directa en la información proporcionada)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Jarvis-Titan-M4-Activated es un modelo de generación de texto de tipo mezcla de expertos (MoE) publicado por el usuario dhanesh-hf en HuggingFace. Según los pesos almacenados en safetensors, el modelo contiene 15.551.072.803 parámetros totales (15,55 B), aunque la model card del autor lo describe como una variante de 14,8 B con aproximadamente 3,2 B de parámetros activos por token. Está construido sobre el modelo base dhanesh-hf/Jarvis-Titan-V15-MoE-Decoupled, que a su vez se presenta como un backbone DeepSeekMoE reciclado ("upcycled") con capas adicionales propietarias.
+Jarvis-Titan-M4-Activated es un modelo de generación de texto de tipo mezcla de expertos (MoE) publicado por el usuario dhanesh-hf en Hugging Face. Según los pesos almacenados en safetensors, el modelo contiene 15.551.072.803 parámetros totales (15,55 B), aunque la model card del autor lo describe como una variante de 14,8 B con aproximadamente 3,2 B de parámetros activos por token. Está construido sobre el modelo base dhanesh-hf/Jarvis-Titan-V15-MoE-Decoupled, que a su vez se presenta como un backbone DeepSeekMoE reciclado ("upcycled") con capas adicionales propietarias.
 
 El modelo se presenta como una arquitectura orientada al razonamiento matemático, la síntesis de código y el manejo de contextos largos, e incorpora tres mecanismos que el autor etiqueta como propios: un sistema de memoria neuronal denominado M4 Tri-Brid (ventana deslizante local, reservorio de tokens salientes y matrices de memoria asociativa en tiempo de test), una atención diferencial llamada CSA3 y una cabeza de predicción multi-token (MTP) pensada para decodificación especulativa. El contexto máximo declarado es de 131.072 tokens, con un vocabulario de 152.064 tokens.
 
@@ -18,7 +18,7 @@ Su relevancia actual es limitada y debe ponderarse con cautela: el repositorio n
 | Longitud de contexto | Hasta 131.072 tokens (según model card) |
 | Tipos de cuantizacion | No disponible (la model card solo menciona Float16 y Bfloat16) |
 | Idiomas soportados | Inglés (en) |
-| Licencia | JTRL-v1.0 (licencia propietaria, etiquetada como "other" en HuggingFace) |
+| Licencia | JTRL-v1.0 (licencia propietaria, etiquetada como "other" en Hugging Face) |
 | Formato de pesos | Safetensors (repo de 35,4 GB) |
 | Capas | 28 capas transformer |
 | Enrutamiento | 8 expertos enrutados + 1 experto compartido aislado (top-2 activos) |
@@ -80,10 +80,10 @@ Los datos de los modelos de referencia proceden de sus fichas públicas y deben 
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jarvis-Titan-M4-Activated | 15,55 B (safetensors) | ~3,2 B (según autor) | 131.072 | JTRL-v1.0 (propietaria) | HuggingFace, 0 descargas |
-| DeepSeek-V2-Lite | ~15,7 B | ~2,4 B | 32.768-64.000 | Abierta de DeepSeek (verificar) | HuggingFace, ampliamente usado |
-| Qwen1.5-MoE-A2.7B | ~14,3 B | ~2,7 B | 32.768 | Apache 2.0 | HuggingFace, ampliamente usado |
-| Mixtral 8x7B | ~46,7 B | ~12,9 B | 32.768 | Apache 2.0 | HuggingFace, ampliamente usado |
+| Jarvis-Titan-M4-Activated | 15,55 B (safetensors) | ~3,2 B (según autor) | 131.072 | JTRL-v1.0 (propietaria) | Hugging Face, 0 descargas |
+| DeepSeek-V2-Lite | ~15,7 B | ~2,4 B | 32.768-64.000 | Abierta de DeepSeek (verificar) | Hugging Face, ampliamente usado |
+| Qwen1.5-MoE-A2.7B | ~14,3 B | ~2,7 B | 32.768 | Apache 2.0 | Hugging Face, ampliamente usado |
+| Mixtral 8x7B | ~46,7 B | ~12,9 B | 32.768 | Apache 2.0 | Hugging Face, ampliamente usado |
 
 Diferencias relevantes: frente a las alternativas citadas, Jarvis-Titan-M4-Activated declara un contexto notablemente mayor (131.072 tokens frente a 32.768) y un número de parámetros activos comparable al de DeepSeek-V2-Lite, pero parte de una licencia propietaria restrictiva, carece de benchmarks publicados, no tiene adopción comunitaria y depende de código personalizado que limita las opciones de despliegue estándar. Su ventaja declarada en memoria de largo alcance no es verificable con la información disponible.
 
@@ -92,7 +92,7 @@ Diferencias relevantes: frente a las alternativas citadas, Jarvis-Titan-M4-Activ
 - Ausencia total de benchmarks: no hay evidencia pública de rendimiento en matemáticas, código o razonamiento más allá de las afirmaciones de la model card.
 - Adopción nula: 0 descargas y 0 valoraciones en el momento de la consulta, sin comunidad que haya validado el modelo.
 - Inconsistencia documental: la model card referencia el identificador `dhanesh-hf/Jarvis-Titan-M4-MoE-CSA3`, distinto del repositorio real `dhanesh-hf/Jarvis-Titan-M4-Activated`, y declara 14,8 B de parámetros frente a los 15,55 B reales en safetensors. Indica que la ficha puede ser una plantilla reutilizada.
-- Licencia propietaria JTRL-v1.0: es imprescindible leer el archivo LICENSE antes de cualquier uso comercial. Las etiquetas de HuggingFace la clasifican como "other", y no se pueden asumir permisos de uso comercial, redistribución ni modificación.
+- Licencia propietaria JTRL-v1.0: es imprescindible leer el archivo LICENSE antes de cualquier uso comercial. Las etiquetas de Hugging Face la clasifican como "other", y no se pueden asumir permisos de uso comercial, redistribución ni modificación.
 - Idioma único: solo inglés declarado. No hay evidencia de competencia en castellano ni en otros idiomas.
 - Riesgo de alucinación: no se ha publicado información sobre tasas de alucinación, ajuste por preferencias ni evaluaciones de fidelidad factual. Un modelo entrenado con un currículo declarado de solo 120 M de tokens tiene un riesgo elevado de conocimiento factual limitado.
 - Código personalizado obligatorio: requiere `trust_remote_code=True`, lo que implica ejecutar código del autor del repositorio en el entorno de inferencia. Debe revisarse el código antes de ejecutarlo en sistemas con datos sensibles.
@@ -103,7 +103,7 @@ Diferencias relevantes: frente a las alternativas citadas, Jarvis-Titan-M4-Activ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dhanesh-hf/Jarvis-Titan-M4-Activated
+- Modelo en Hugging Face: https://huggingface.co/dhanesh-hf/Jarvis-Titan-M4-Activated
 - Modelo base declarado: https://huggingface.co/dhanesh-hf/Jarvis-Titan-V15-MoE-Decoupled
 - Identificador alternativo citado en la model card: https://huggingface.co/dhanesh-hf/Jarvis-Titan-M4-MoE-CSA3
 - Artículo de referencia citado en las etiquetas (Titans: Learning to Memorize at Test Time): https://arxiv.org/abs/2501.00663

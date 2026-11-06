@@ -103,7 +103,7 @@ Métricas de la edición por nivel de cuantización:
 
 ## Enlaces
 
-- [HuggingFace: jaromer/AtomicChat-DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-GGUF](https://huggingface.co/jaromer/AtomicChat-DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-GGUF)
+- [Hugging Face: jaromer/AtomicChat-DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-GGUF](https://huggingface.co/jaromer/AtomicChat-DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-GGUF)
 - [Modelo base cuantizado: ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF](https://huggingface.co/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF)
 - [Modelo original: deepseek-ai/DeepSeek-V4.1-Flash-1017](https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017)
 - [AtomicChat/DeepSeek-V4.1-Flash-1017-Uncensored-GGUF](https://huggingface.co/AtomicChat/DeepSeek-V4.1-Flash-1017-Uncensored-GGUF)

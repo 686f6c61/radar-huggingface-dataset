@@ -4,7 +4,7 @@
 
 El modelo E03_ResNet18_Scheduler_Chest_XRay es un clasificador de imágenes médicas desarrollado por Bunsya como proyecto final de un bootcamp de ingeniería de IA. Su función es clasificar radiografías de tórax en dos categorías: NORMAL y PNEUMONIA, utilizando una arquitectura ResNet18 preentrenada en ImageNet con transferencia de aprendizaje y un programador de tasa de aprendizaje StepLR. El modelo se distribuye con licencia MIT y está pensado exclusivamente para fines educativos y experimentales, no para uso clínico.
 
-La relevancia de este modelo radica en su simplicidad y reproducibilidad: demuestra un flujo completo de entrenamiento de visión por computadora aplicado a un problema médico real, con un rendimiento de test del 92,31% de precisión. Aunque no es un sistema de diagnóstico médico, sirve como referencia didáctica para desarrolladores que quieran entender cómo aplicar transfer learning a dominios especializados. El repositorio incluye los pesos entrenados en formato PyTorch (.pth) y un espacio de demostración en HuggingFace.
+La relevancia de este modelo radica en su simplicidad y reproducibilidad: demuestra un flujo completo de entrenamiento de visión por computadora aplicado a un problema médico real, con un rendimiento de test del 92,31% de precisión. Aunque no es un sistema de diagnóstico médico, sirve como referencia didáctica para desarrolladores que quieran entender cómo aplicar transfer learning a dominios especializados. El repositorio incluye los pesos entrenados en formato PyTorch (.pth) y un espacio de demostración en Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -38,7 +38,7 @@ No se especifica el dataset exacto utilizado, aunque por la naturaleza del probl
 
 - Demostración educativa de transfer learning: el modelo sirve como ejemplo práctico para estudiantes y desarrolladores que quieran aprender a adaptar una red preentrenada a una tarea de clasificación médica con pocos datos.
 - Prototipo de detección de neumonía en entornos de investigación: puede utilizarse como baseline en proyectos académicos que exploren técnicas de aumento de datos, regularización o interpretabilidad (por ejemplo, Grad-CAM).
-- Prueba de concepto para integración en aplicaciones de visualización de imágenes médicas: el modelo puede conectarse a una interfaz web (como el Space de HuggingFace) para demostrar un flujo de subida de imagen y predicción en tiempo real.
+- Prueba de concepto para integración en aplicaciones de visualización de imágenes médicas: el modelo puede conectarse a una interfaz web (como el Space de Hugging Face) para demostrar un flujo de subida de imagen y predicción en tiempo real.
 - Benchmark para comparar arquitecturas más complejas: al ser un modelo ligero y rápido, sirve como referencia de rendimiento frente a redes más profundas o con mecanismos de atención.
 - Ejercicio de evaluación de sesgos y generalización: al estar entrenado en un dataset específico, permite estudiar cómo varía el rendimiento ante imágenes de otras fuentes o poblaciones.
 - Material de partida para fine-tuning con más datos: los pesos .pth pueden servir como inicialización para un entrenamiento posterior con un dataset más amplio y diverso.
@@ -93,5 +93,5 @@ No se dispone de información suficiente para realizar una comparativa cuantitat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Bunsya/E03_ResNet18_Scheduler_Chest_XRay
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/Bunsya/Chest-XRay-E03-Demo
+- Modelo en Hugging Face: https://huggingface.co/Bunsya/E03_ResNet18_Scheduler_Chest_XRay
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/Bunsya/Chest-XRay-E03-Demo

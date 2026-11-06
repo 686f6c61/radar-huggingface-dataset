@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`edgeattnet-dinov3-convnext-base` es un modelo publicado en HuggingFace por el usuario youssefElghanam191 bajo licencia MIT. Por el identificador se deduce que se trata de un modelo de visión por computador que combina un backbone ConvNeXt-Base con características de DINOv3, probablemente orientado a despliegue en dispositivos de borde (edge). No obstante, la model card publicada no contiene ninguna descripción técnica, datos de entrenamiento, métricas ni instrucciones de uso más allá de la línea de licencia.
+`edgeattnet-dinov3-convnext-base` es un modelo publicado en Hugging Face por el usuario youssefElghanam191 bajo licencia MIT. Por el identificador se deduce que se trata de un modelo de visión por computador que combina un backbone ConvNeXt-Base con características de DINOv3, probablemente orientado a despliegue en dispositivos de borde (edge). No obstante, la model card publicada no contiene ninguna descripción técnica, datos de entrenamiento, métricas ni instrucciones de uso más allá de la línea de licencia.
 
-El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) en el momento de la consulta, y no declara pipeline, idiomas ni formato de pesos en los metadatos de HuggingFace. La fecha de creación y actualización es la misma (2026-11-02), lo que sugiere una publicación sin iteraciones posteriores.
+El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) en el momento de la consulta, y no declara pipeline, idiomas ni formato de pesos en los metadatos de Hugging Face. La fecha de creación y actualización es la misma (2026-11-02), lo que sugiere una publicación sin iteraciones posteriores.
 
 Dada la ausencia de documentación, esta ficha recoge únicamente lo verificable en los metadatos y advierte explícitamente de que la mayor parte de las especificaciones no están disponibles. Cualquier uso en producción requeriría inspeccionar los archivos del repositorio y validar el modelo empíricamente.
 
@@ -41,7 +41,7 @@ Tampoco se documentan innovaciones técnicas como decodificación especulativa, 
 - Prototipado de clasificación de imágenes en el borde: el prefijo "edge" sugiere un diseño orientado a dispositivos con recursos limitados, lo que permitiría experimentar con inferencia en hardware de bajo consumo, previa verificación del tamaño real de los pesos.
 - Fine-tuning para dominios específicos: al estar bajo licencia MIT, el modelo puede adaptarse y redistribuirse sin restricciones comerciales, lo que facilita su uso como punto de partida en proyectos internos.
 - Investigación comparativa de arquitecturas híbridas convolucionales: útil para estudiar la combinación de ConvNeXt con técnicas tipo DINOv3, siempre que se documente el comportamiento observado.
-- Evaluación académica de modelos publicados sin model card: sirve como caso de estudio sobre la reproducibilidad y la trazabilidad en la publicación de modelos en HuggingFace.
+- Evaluación académica de modelos publicados sin model card: sirve como caso de estudio sobre la reproducibilidad y la trazabilidad en la publicación de modelos en Hugging Face.
 - Integración experimental en aplicaciones de visión embebida: solo tras inspeccionar los archivos del repositorio y confirmar que el formato de pesos es compatible con el runtime objetivo (ONNX, TFLite, PyTorch, etc.).
 
 ## Benchmarks y rendimiento
@@ -62,7 +62,7 @@ No es posible establecer una comparativa fiable porque no se conocen los paráme
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| edgeattnet-dinov3-convnext-base | no disponible | no disponible | MIT | HuggingFace |
+| edgeattnet-dinov3-convnext-base | no disponible | no disponible | MIT | Hugging Face |
 | ConvNeXt-Base (referencia oficial) | ~89 M | no aplica (visión) | MIT | Repositorios oficiales |
 | DINOv2/DINOv3 (backbones de referencia) | variable según variante | no aplica (visión) | variable según versión | Repositorios oficiales |
 
@@ -80,5 +80,5 @@ Los datos de las filas de referencia corresponden a las familias de modelos cita
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/youssefElghanam191/edgeattnet-dinov3-convnext-base
+- Hugging Face: https://huggingface.co/youssefElghanam191/edgeattnet-dinov3-convnext-base
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

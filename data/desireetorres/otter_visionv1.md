@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`desireetorres/otter_visionV1` es un repositorio alojado en HuggingFace por el usuario desireetorres. En el momento de la consulta no dispone de model card util: el unico contenido del README es la declaracion de licencia `cc-by-4.0`. No se especifica arquitectura, tamano, tokenizador, datos de entrenamiento ni idiomas soportados.
+`desireetorres/otter_visionV1` es un repositorio alojado en Hugging Face por el usuario desireetorres. En el momento de la consulta no dispone de model card util: el unico contenido del README es la declaracion de licencia `cc-by-4.0`. No se especifica arquitectura, tamano, tokenizador, datos de entrenamiento ni idiomas soportados.
 
 El repositorio no registra descargas ni "likes", carece de etiqueta de pipeline y no tiene ficheros de pesos, configuracion o tokenizador documentados en la informacion disponible. Tanto la fecha de creacion como la de ultima actualizacion figuran como 2026-09-21, una marca temporal que no permite situar el modelo en una cronologia real de publicacion.
 
@@ -71,13 +71,13 @@ No disponible. Sin conocer el numero de parametros, la categoria ni la tarea del
 - Riesgo de alucinacion: no evaluable, al no existir benchmarks ni evaluaciones publicadas.
 - Sin resultados de benchmarks ni validacion por parte de terceros (0 descargas, 0 "likes").
 - La licencia cc-by-4.0 permite uso comercial con atribucion, pero el autor no ofrece garantias ni informacion sobre la procedencia de los datos de entrenamiento, lo que puede implicar riesgos legales no evaluados.
-- El repositorio no declara etiqueta de pipeline, por lo que HuggingFace no clasifica el modelo por tarea.
+- El repositorio no declara etiqueta de pipeline, por lo que Hugging Face no clasifica el modelo por tarea.
 - Las fechas de creacion y actualizacion (2026-09-21) resultan inconsistentes, lo que dificulta el versionado y la trazabilidad.
 - No se puede descartar que el repositorio sea un contenedor vacio o un placeholder sin pesos publicados.
 - Antes de cualquier uso en produccion seria necesario auditar los ficheros publicados y verificar la licencia de los datos subyacentes.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/desireetorres/otter_visionV1
+- Repositorio en Hugging Face: https://huggingface.co/desireetorres/otter_visionV1
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo.
 - La busqueda web realizada unicamente devolvio una pagina de preguntas frecuentes de un sitio ajeno por completo al modelo (opwindend.net), sin ninguna relacion con `otter_visionV1`.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Sanskar12301/chess-pages` es un adaptador LoRA (PEFT) publicado en HuggingFace por el usuario Sanskar12301, construido sobre el modelo base `PaddlePaddle/PaddleOCR-VL-1.6`, un modelo vision-language orientado a OCR y comprensión de documentos de PaddlePaddle. El repositorio contiene únicamente los pesos del adaptador (0,1 GB), no el modelo completo, y la model card es la plantilla por defecto de HuggingFace sin ninguna sección cumplimentada: no hay descripción, datos de entrenamiento, hiperparámetros ni resultados de evaluación.
+`Sanskar12301/chess-pages` es un adaptador LoRA (PEFT) publicado en Hugging Face por el usuario Sanskar12301, construido sobre el modelo base `PaddlePaddle/PaddleOCR-VL-1.6`, un modelo vision-language orientado a OCR y comprensión de documentos de PaddlePaddle. El repositorio contiene únicamente los pesos del adaptador (0,1 GB), no el modelo completo, y la model card es la plantilla por defecto de Hugging Face sin ninguna sección cumplimentada: no hay descripción, datos de entrenamiento, hiperparámetros ni resultados de evaluación.
 
 El nombre del repositorio ("chess-pages") sugiere un ajuste fino orientado a documentos o páginas relacionadas con ajedrez, pero esta interpretación no está confirmada por ninguna información del autor. No se dispone de licencia declarada, idiomas soportados, pipeline ni métricas. El modelo tiene 0 descargas y 0 likes en el momento de la consulta, y fue creado el 4 de noviembre de 2026.
 
@@ -28,7 +28,7 @@ Dada la ausencia casi total de documentación, esta ficha se limita a describir 
 
 El repositorio contiene un adaptador LoRA (Low-Rank Adaptation) entrenado con PEFT 0.21.2 sobre el modelo base `PaddlePaddle/PaddleOCR-VL-1.6`. Los tags confirman la presencia de pesos en formato safetensors y la dependencia de `transformers`. No se especifica el rango (rank) del adaptador, las capas objetivo, el alpha ni el dropout.
 
-No hay información sobre los datos de entrenamiento: ni número de tokens, ni composición del dataset, ni si se aplicó RLHF, DPO o supervisión directa. Tampoco se documentan hiperparámetros (learning rate, batch size, épocas) ni la infraestructura de cómputo empleada. La model card es la plantilla estándar de HuggingFace con todos los campos marcados como "[More Information Needed]".
+No hay información sobre los datos de entrenamiento: ni número de tokens, ni composición del dataset, ni si se aplicó RLHF, DPO o supervisión directa. Tampoco se documentan hiperparámetros (learning rate, batch size, épocas) ni la infraestructura de cómputo empleada. La model card es la plantilla estándar de Hugging Face con todos los campos marcados como "[More Information Needed]".
 
 La única referencia técnica externa en los tags es el paper `arxiv:1910.09700`, que corresponde al artículo de Lacoste et al. sobre estimación de emisiones de carbono en machine learning, citado en la plantilla de la model card y no relacionado con el entrenamiento del modelo.
 
@@ -81,7 +81,7 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Sanskar12301/chess-pages
+- Repositorio Hugging Face: https://huggingface.co/Sanskar12301/chess-pages
 - Modelo base: https://huggingface.co/PaddlePaddle/PaddleOCR-VL-1.6
 - Paper citado en los tags (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Documentación de PEFT: https://huggingface.co/docs/peft

@@ -21,7 +21,7 @@ El objetivo es poder ejecutar un MoE de ~80B en equipos con memoria muy limitada
 | Licencia | Apache-2.0 |
 | Formato de pesos | safetensors (`resident.safetensors`) y binario propio (`store/layer_XX.bin`) |
 | Tamano del repositorio | 89,9 GB (72,4 GiB corresponden al store de expertos) |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 | Creado / actualizado | 2026-10-15 / 2026-10-16 |
 
 ## Arquitectura y entrenamiento

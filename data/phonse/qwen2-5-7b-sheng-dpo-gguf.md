@@ -102,7 +102,7 @@ Frente a estas alternativas, el modelo de Phonse no aporta datos verificables de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Phonse/qwen2.5-7b-sheng-dpo-gguf
+- Repositorio en Hugging Face: https://huggingface.co/Phonse/qwen2.5-7b-sheng-dpo-gguf
 - Unsloth (herramienta de entrenamiento y conversion declarada por el autor): https://github.com/unslothai/unsloth
 - llama.cpp (runtime citado en los tags y en los ejemplos de uso): https://github.com/ggml-org/llama.cpp
 - Modelo base de referencia, Qwen2.5-7B: https://huggingface.co/Qwen/Qwen2.5-7B

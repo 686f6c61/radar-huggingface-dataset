@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_seed43_epoch7` es un experimento de investigación publicado en HuggingFace por el usuario Lanni-ni. Su nombre sugiere que está relacionado con técnicas de "olvido dinámico" (dynamic forgetting) aplicadas a modelos de lenguaje, posiblemente en el marco del desafío BabyLM, que estudia el entrenamiento con corpus limitados. El repositorio contiene pesos en formato safetensors con un total de 27.449.096 parámetros, aunque la información disponible no permite confirmar la arquitectura subyacente.
+El modelo `Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_seed43_epoch7` es un experimento de investigación publicado en Hugging Face por el usuario Lanni-ni. Su nombre sugiere que está relacionado con técnicas de "olvido dinámico" (dynamic forgetting) aplicadas a modelos de lenguaje, posiblemente en el marco del desafío BabyLM, que estudia el entrenamiento con corpus limitados. El repositorio contiene pesos en formato safetensors con un total de 27.449.096 parámetros, aunque la información disponible no permite confirmar la arquitectura subyacente.
 
-La model card es una plantilla automática generada por HuggingFace y no incluye detalles sobre el entrenamiento, los datos utilizados, las capacidades ni la licencia. Los tags indican que se trata de un modelo de generación de texto que requiere código personalizado para cargarse, por lo que no se puede considerar un modelo listo para producción. Su relevancia es principalmente académica o experimental, dentro de la línea de investigación sobre olvido dinámico y aprendizaje continuo en modelos pequeños.
+La model card es una plantilla automática generada por Hugging Face y no incluye detalles sobre el entrenamiento, los datos utilizados, las capacidades ni la licencia. Los tags indican que se trata de un modelo de generación de texto que requiere código personalizado para cargarse, por lo que no se puede considerar un modelo listo para producción. Su relevancia es principalmente académica o experimental, dentro de la línea de investigación sobre olvido dinámico y aprendizaje continuo en modelos pequeños.
 
 No se dispone de información sobre la longitud de contexto, los idiomas soportados ni los requisitos de hardware oficiales. Por tanto, este modelo debe tratarse con cautela y solo como material de referencia para investigación.
 
@@ -29,7 +29,7 @@ No se dispone de datos sobre el número de tokens de entrenamiento, la composici
 
 ## Capacidades
 
-- Generación de texto: es la única capacidad confirmada, según el pipeline declarado en HuggingFace.
+- Generación de texto: es la única capacidad confirmada, según el pipeline declarado en Hugging Face.
 - No se han documentado capacidades adicionales como tool calling, agentes, visión, audio o razonamiento multi-step.
 - No se ha confirmado el soporte multilingüe.
 
@@ -64,7 +64,7 @@ No se dispone de información sobre modelos comparables. El autor ha publicado o
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_seed43_epoch7
+- Hugging Face: https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_seed43_epoch7
 - Paper referenciado en la model card (impacto ambiental): https://arxiv.org/abs/1910.09700
 - Modelos relacionados del autor:
   - https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_epoch4

@@ -81,10 +81,10 @@ No se dispone de datos de rendimiento del adaptador, por lo que la comparativa s
 
 | Modelo | Parametros | Contexto | Naturaleza | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Misalignment-Empirics/shreyans_qwen2.5-32b-it_impulsive-sft-v2-lora` | Adaptador de unos cientos de millones sobre 32 500 M | Heredado del base: 131 072 tokens | Adaptador LoRA de investigacion sobre Qwen2.5-32B-Instruct | No declarada | HuggingFace, 1,1 GB, 0 descargas |
-| `Qwen/Qwen2.5-32B-Instruct` | 32 500 M | 131 072 tokens | Modelo denso instruct, referencia base | Apache 2.0 | HuggingFace, ampliamente distribuido |
-| `Qwen/Qwen2.5-32B-Instruct-AWQ` (o GPTQ-Int4) | 32 500 M | 131 072 tokens | Version cuantizada a 4 bits del base | Apache 2.0 | HuggingFace |
-| Otros adaptadores LoRA publicos sobre Qwen2.5-32B-Instruct | Variable (tipicamente 0,1-2 GB) | Heredado del base | Ajustes de dominio o de estilo | Variable, frecuentemente no declarada | HuggingFace |
+| `Misalignment-Empirics/shreyans_qwen2.5-32b-it_impulsive-sft-v2-lora` | Adaptador de unos cientos de millones sobre 32 500 M | Heredado del base: 131 072 tokens | Adaptador LoRA de investigacion sobre Qwen2.5-32B-Instruct | No declarada | Hugging Face, 1,1 GB, 0 descargas |
+| `Qwen/Qwen2.5-32B-Instruct` | 32 500 M | 131 072 tokens | Modelo denso instruct, referencia base | Apache 2.0 | Hugging Face, ampliamente distribuido |
+| `Qwen/Qwen2.5-32B-Instruct-AWQ` (o GPTQ-Int4) | 32 500 M | 131 072 tokens | Version cuantizada a 4 bits del base | Apache 2.0 | Hugging Face |
+| Otros adaptadores LoRA publicos sobre Qwen2.5-32B-Instruct | Variable (tipicamente 0,1-2 GB) | Heredado del base | Ajustes de dominio o de estilo | Variable, frecuentemente no declarada | Hugging Face |
 
 Frente al modelo base, la diferencia relevante no es de capacidad sino de comportamiento: el adaptador introduce una modificacion conductual no documentada y sin evaluacion publicada, mientras que el base cuenta con documentacion tecnica completa, licencia clara y resultados de referencia publicados por el fabricante. Frente a otros adaptadores LoRA de la comunidad, el elemento diferenciador es el dominio de aplicacion (investigacion sobre desalineacion) y la ausencia total de documentacion.
 
@@ -103,7 +103,7 @@ Frente al modelo base, la diferencia relevante no es de capacidad sino de compor
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/Misalignment-Empirics/shreyans_qwen2.5-32b-it_impulsive-sft-v2-lora
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/Misalignment-Empirics/shreyans_qwen2.5-32b-it_impulsive-sft-v2-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-32B-Instruct
 - Libreria PEFT: https://github.com/huggingface/peft
 - Articulo referenciado en los tags del repositorio (Lacoste et al., 2019, sobre emisiones de carbono en aprendizaje automatico): https://arxiv.org/abs/1910.09700

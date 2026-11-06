@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Qwen2.5-Coder-32B-Einsof-LoRA | 32B (base) + adaptador LoRA | 4096 (segun model card) | apache-2.0 | HuggingFace, 0 descargas | Ajuste de nicho sobre teoremas formales, sin benchmarks |
-| Qwen2.5-Coder-32B-Instruct | 32B | 32.768 tokens (segun documentacion del base) | apache-2.0 | HuggingFace, ampliamente usado | Modelo base original, con benchmarks publicados por Qwen |
-| Qwen2.5-Coder-7B-Instruct | 7B | 32.768 tokens | apache-2.0 | HuggingFace | Alternativa mas ligera para GPUs de consumo |
-| DeepSeek-Coder-V2-Lite-Instruct | 16B (MoE, 2,4B activos) | 128.000 tokens | licencia propia de DeepSeek | HuggingFace | Alternativa MoE con contexto muy largo |
+| Qwen2.5-Coder-32B-Einsof-LoRA | 32B (base) + adaptador LoRA | 4096 (segun model card) | apache-2.0 | Hugging Face, 0 descargas | Ajuste de nicho sobre teoremas formales, sin benchmarks |
+| Qwen2.5-Coder-32B-Instruct | 32B | 32.768 tokens (segun documentacion del base) | apache-2.0 | Hugging Face, ampliamente usado | Modelo base original, con benchmarks publicados por Qwen |
+| Qwen2.5-Coder-7B-Instruct | 7B | 32.768 tokens | apache-2.0 | Hugging Face | Alternativa mas ligera para GPUs de consumo |
+| DeepSeek-Coder-V2-Lite-Instruct | 16B (MoE, 2,4B activos) | 128.000 tokens | licencia propia de DeepSeek | Hugging Face | Alternativa MoE con contexto muy largo |
 
 ## Limitaciones y advertencias
 
@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- [HuggingFace: Polydim-Einsof/Qwen2.5-Coder-32B-Einsof-LoRA](https://huggingface.co/Polydim-Einsof/Qwen2.5-Coder-32B-Einsof-LoRA)
+- [Hugging Face: Polydim-Einsof/Qwen2.5-Coder-32B-Einsof-LoRA](https://huggingface.co/Polydim-Einsof/Qwen2.5-Coder-32B-Einsof-LoRA)
 - [Modelo base: Qwen/Qwen2.5-Coder-32B-Instruct](https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct)
 - [Unsloth](https://github.com/unslothai/unsloth)
 - [PEFT](https://github.com/huggingface/peft)

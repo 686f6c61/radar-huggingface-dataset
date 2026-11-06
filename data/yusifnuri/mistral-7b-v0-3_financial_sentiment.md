@@ -68,8 +68,8 @@ Las mediciones se realizaron sobre una unica NVIDIA H200 (141 GB) con batch size
 
 | Modelo | Parametros | Contexto | Rendimiento en sentimiento financiero | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| yusifnuri/Mistral-7B-v0.3_financial_sentiment | 7.250 M (base) + adaptador LoRA | 32.768 tokens (base); entrenado a 512 | 0.845 de accuracy | Apache 2.0 en pesos, corpus CC BY-NC-SA 3.0 (no comercial) | HuggingFace, 0 descargas |
-| mistralai/Mistral-7B-v0.3 (base, sin ajustar) | 7.250 M | 32.768 tokens | No disponible en la informacion proporcionada | Apache 2.0 | HuggingFace |
+| yusifnuri/Mistral-7B-v0.3_financial_sentiment | 7.250 M (base) + adaptador LoRA | 32.768 tokens (base); entrenado a 512 | 0.845 de accuracy | Apache 2.0 en pesos, corpus CC BY-NC-SA 3.0 (no comercial) | Hugging Face, 0 descargas |
+| mistralai/Mistral-7B-v0.3 (base, sin ajustar) | 7.250 M | 32.768 tokens | No disponible en la informacion proporcionada | Apache 2.0 | Hugging Face |
 | Otros modelos de sentimiento financiero (por ejemplo familia FinBERT) | No disponible | No disponible | No disponible en la informacion proporcionada | No disponible | No disponible |
 
 No se dispone en la informacion proporcionada de resultados comparables de terceros medidos con el mismo harness, por lo que la comparacion cuantitativa de rendimiento queda como no disponible.
@@ -88,7 +88,7 @@ No se dispone en la informacion proporcionada de resultados comparables de terce
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yusifnuri/Mistral-7B-v0.3_financial_sentiment
+- Modelo en Hugging Face: https://huggingface.co/yusifnuri/Mistral-7B-v0.3_financial_sentiment
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-v0.3
 - Codigo, configuraciones y harness de evaluacion: https://github.com/Yusifnuri/slm-benchmark
 - Matriz completa de benchmarks: https://github.com/Yusifnuri/slm-benchmark/blob/main/results/benchmark_matrix.csv

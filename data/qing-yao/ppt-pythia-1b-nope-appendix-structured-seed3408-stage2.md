@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ppt-pythia-1b-nope-appendix-structured-seed3408-stage2` es un modelo de generación de texto de aproximadamente 1.011 millones de parámetros (1,01 B) publicado por el usuario `qing-yao` en HuggingFace. Se trata de un ajuste fino mediante SFT (supervised fine-tuning) con la librería TRL, tal y como declara la model card, sobre un modelo base que el propio autor deja sin especificar (el campo figura literalmente como `None`). El tag de arquitectura `gpt_neox_nope` y el nombre del repositorio apuntan a un derivado de la familia Pythia-1B de EleutherAI con alguna modificación de tipo NoPE (eliminación de los embeddings posicionales), pero esto es una inferencia a partir del identificador y no un dato confirmado por el autor.
+`ppt-pythia-1b-nope-appendix-structured-seed3408-stage2` es un modelo de generación de texto de aproximadamente 1.011 millones de parámetros (1,01 B) publicado por el usuario `qing-yao` en Hugging Face. Se trata de un ajuste fino mediante SFT (supervised fine-tuning) con la librería TRL, tal y como declara la model card, sobre un modelo base que el propio autor deja sin especificar (el campo figura literalmente como `None`). El tag de arquitectura `gpt_neox_nope` y el nombre del repositorio apuntan a un derivado de la familia Pythia-1B de EleutherAI con alguna modificación de tipo NoPE (eliminación de los embeddings posicionales), pero esto es una inferencia a partir del identificador y no un dato confirmado por el autor.
 
 El modelo no resuelve un problema novedoso identificable: por su nomenclatura (`appendix-structured`, `seed3408`, `stage2`) parece un checkpoint intermedio de un experimento de investigación sobre formato de datos o protocolos de prompting, y no un modelo destinado a producción. No tiene descargas ni interacciones, no incluye resultados de evaluación, no declara licencia efectiva ni idiomas soportados, y su model card es la plantilla automática de TRL.
 
@@ -90,7 +90,7 @@ La comparación de rendimiento no es posible: el modelo de `qing-yao` no publica
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qing-yao/ppt-pythia-1b-nope-appendix-structured-seed3408-stage2
+- Modelo en Hugging Face: https://huggingface.co/qing-yao/ppt-pythia-1b-nope-appendix-structured-seed3408-stage2
 - Repositorio de TRL (framework de entrenamiento declarado): https://github.com/huggingface/trl
 - Documentación de Transformers: https://huggingface.co/docs/transformers
 - Posible modelo base, no confirmado (Pythia-1B de EleutherAI): https://huggingface.co/EleutherAI/pythia-1b

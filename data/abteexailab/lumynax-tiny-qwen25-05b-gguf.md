@@ -73,7 +73,7 @@ La comparativa se basa en datos públicos de los modelos base; no hay benchmarks
 
 ## Enlaces
 
-- [HuggingFace - AbteeXAILab/lumynax-tiny-qwen25-05b-gguf](https://huggingface.co/AbteeXAILab/lumynax-tiny-qwen25-05b-gguf)
+- [Hugging Face - AbteeXAILab/lumynax-tiny-qwen25-05b-gguf](https://huggingface.co/AbteeXAILab/lumynax-tiny-qwen25-05b-gguf)
 - [GitHub - Aimaghsoodi/lumynax-tiny-qwen25-05b-gguf](https://github.com/Aimaghsoodi/lumynax-tiny-qwen25-05b-gguf)
 - [AbteeX AI Labs](https://abteex.com)
 - [LumynaX](https://lumynax.com)

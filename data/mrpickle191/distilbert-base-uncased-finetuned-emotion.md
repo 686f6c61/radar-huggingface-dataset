@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`distilbert-base-uncased-finetuned-emotion` es un checkpoint de clasificación de texto obtenido por ajuste fino (fine-tuning) del modelo `distilbert-base-uncased` sobre un conjunto de datos de emociones que el autor no documenta. Lo publica el usuario MrPickle191 en HuggingFace y su model card se ha generado automáticamente con el `Trainer` de Transformers, sin descripción, sin usos previstos declarados y sin métricas de evaluación. El repositorio es, por tanto, un artefacto de entrenamiento más que un modelo documentado y validado para producción.
+`distilbert-base-uncased-finetuned-emotion` es un checkpoint de clasificación de texto obtenido por ajuste fino (fine-tuning) del modelo `distilbert-base-uncased` sobre un conjunto de datos de emociones que el autor no documenta. Lo publica el usuario MrPickle191 en Hugging Face y su model card se ha generado automáticamente con el `Trainer` de Transformers, sin descripción, sin usos previstos declarados y sin métricas de evaluación. El repositorio es, por tanto, un artefacto de entrenamiento más que un modelo documentado y validado para producción.
 
 Arquitectónicamente es un encoder transformer de 6 capas y 12 cabezas de atención con dimensión oculta 768, lo que da 66.958.086 parámetros exactos (unos 67 M) y una ventana máxima de 512 tokens, heredada de DistilBERT. El ajuste fino se hizo durante 2 épocas con learning rate 2e-05, batch de 64, AdamW fusionado y scheduler lineal, según los hiperparámetros que declara la model card.
 
@@ -54,7 +54,7 @@ No se declara ninguna innovación técnica adicional (decodificación especulati
 - Manejo de entradas de hasta 512 tokens, suficiente para frases, tuits, reseñas cortas y párrafos breves.
 - Tokenizador WordPiece `uncased`: normaliza a minúsculas y elimina la distinción entre mayúsculas y minúsculas.
 - Inferencia ligera: 67 M de parámetros permiten ejecución en CPU y en GPUs de gama baja.
-- Compatible con la infraestructura estándar de HuggingFace: `pipeline("text-classification")`, `AutoModelForSequenceClassification` y despliegue vía Text Embeddings Inference (el repositorio está etiquetado como `text-embeddings-inference` y `endpoints_compatible`).
+- Compatible con la infraestructura estándar de Hugging Face: `pipeline("text-classification")`, `AutoModelForSequenceClassification` y despliegue vía Text Embeddings Inference (el repositorio está etiquetado como `text-embeddings-inference` y `endpoints_compatible`).
 - No soporta generación de texto, tool calling, razonamiento multi-paso, agentes, visión, audio ni modo "thinking": es un encoder discriminativo, no un modelo generativo.
 - Capacidades multilingües: no declaradas; el tokenizador base está orientado a inglés.
 
@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks en la información disponible. El c
 - VRAM estimada para inferencia: por debajo de 1 GB con lotes pequeños (8-32 secuencias de longitud corta); 1-2 GB en el peor caso con lotes grandes y secuencias de 512 tokens.
 - GPU recomendadas: cualquier GPU consumer sirve. Una RTX 3060, RTX 4060 o RTX 4090 ejecutan el modelo con holgura; A100 o H100 son innecesarias y no aportan ventaja apreciable para este tamaño.
 - Cabe en CPU: sí, de forma holgada. Es viable en portátiles y en contenedores sin GPU, lo que abarata el despliegue por lotes.
-- Opciones de despliegue: `transformers` (pipeline y `AutoModel`), Text Embeddings Inference (etiqueta oficial del repo), HuggingFace Inference Endpoints (`endpoints_compatible`), exportación a ONNX Runtime con Optimum para acelerar en CPU, y `torch.compile`/TorchScript en GPU. No hay pesos GGUF publicados ni configuración verificada para vLLM o llama.cpp en tareas de clasificación.
+- Opciones de despliegue: `transformers` (pipeline y `AutoModel`), Text Embeddings Inference (etiqueta oficial del repo), Hugging Face Inference Endpoints (`endpoints_compatible`), exportación a ONNX Runtime con Optimum para acelerar en CPU, y `torch.compile`/TorchScript en GPU. No hay pesos GGUF publicados ni configuración verificada para vLLM o llama.cpp en tareas de clasificación.
 - Latencia y throughput: no hay mediciones publicadas en el repositorio. Por el tamaño del modelo, se espera latencia de milisegundos y throughput alto por lotes, pero debe medirse en el hardware objetivo antes de dimensionar un servicio.
 
 ## Comparativa con modelos similares
@@ -86,7 +86,7 @@ No se han publicado resultados de benchmarks en la información disponible. El c
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | MrPickle191/distilbert-base-uncased-finetuned-emotion | 66,96 M | 512 tokens | Clasificación de emociones (etiquetas no documentadas) | Apache 2.0 | Público en HF, 0 descargas, sin métricas |
-| distilbert-base-uncased-finetuned-sst-2-english (HuggingFace) | ≈ 67 M | 512 tokens | Análisis de sentimiento binario (positivo/negativo) | Apache 2.0 | Público en HF, ampliamente utilizado, con métricas en model card |
+| distilbert-base-uncased-finetuned-sst-2-english (Hugging Face) | ≈ 67 M | 512 tokens | Análisis de sentimiento binario (positivo/negativo) | Apache 2.0 | Público en HF, ampliamente utilizado, con métricas en model card |
 | bhadresh-savani/distilbert-base-uncased-emotion | ≈ 67 M | 512 tokens | Clasificación de 6 emociones | Apache 2.0 | Público en HF, con dataset y métricas declaradas |
 | j-hartmann/emotion-english-distilroberta-base | ≈ 82 M | 512 tokens | Clasificación de 7 emociones | Apache 2.0 | Público en HF, con métricas declaradas |
 | SamLowe/roberta-base-go_emotions | ≈ 125 M | 512 tokens | 28 emociones (etiquetas GoEmotions) | MIT | Público en HF, muy utilizado, con métricas |
@@ -109,7 +109,7 @@ La diferencia principal frente a las alternativas no es de arquitectura ni de ta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MrPickle191/distilbert-base-uncased-finetuned-emotion
+- Modelo en Hugging Face: https://huggingface.co/MrPickle191/distilbert-base-uncased-finetuned-emotion
 - Modelo base: https://huggingface.co/distilbert-base-uncased
 - Paper de DistilBERT (Sanh et al., 2019): https://arxiv.org/abs/1910.01108
 - Documentación de Transformers para text-classification: https://huggingface.co/docs/transformers/tasks/sequence_classification

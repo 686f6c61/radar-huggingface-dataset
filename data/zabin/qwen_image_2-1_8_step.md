@@ -4,7 +4,7 @@
 
 ## Resumen
 
-Zabin/Qwen_Image_2.1_8_Step es un repositorio de HuggingFace publicado por el usuario Zabin que contiene un ajuste fino del modelo Qwen/Qwen-Image-2.1. Los metadatos lo etiquetan explícitamente como `base_model:finetune`, con licencia `other` bajo el identificador `qwen-research`, de modo que las condiciones de uso quedan vinculadas al modelo base desarrollado por el equipo Qwen de Alibaba.
+Zabin/Qwen_Image_2.1_8_Step es un repositorio de Hugging Face publicado por el usuario Zabin que contiene un ajuste fino del modelo Qwen/Qwen-Image-2.1. Los metadatos lo etiquetan explícitamente como `base_model:finetune`, con licencia `other` bajo el identificador `qwen-research`, de modo que las condiciones de uso quedan vinculadas al modelo base desarrollado por el equipo Qwen de Alibaba.
 
 El sufijo "8_Step" del nombre sugiere un ajuste orientado a la generación de imágenes en ocho pasos de muestreo, es decir, un modelo destilado para reducir el número de evaluaciones del backbone de difusión. Esta interpretación se deduce únicamente del nombre del repositorio: la model card no la confirma, no describe la técnica de destilación y no aporta ningún dato sobre el procedimiento de entrenamiento.
 
@@ -57,7 +57,7 @@ Tampoco hay datos sobre el entrenamiento: no se especifica el número de tokens 
 - Automatización de creatividades en marketing: generación de variaciones de una misma composición para pruebas A/B, condicionada a la resolución de salida soportada y a la disponibilidad de pesos en un formato desplegable.
 - Demostraciones interactivas en local: despliegue en una estación de trabajo con GPU de consumo si el tamaño del modelo lo permite, para demos sin dependencia de APIs externas ni coste por llamada.
 - Evaluación comparativa de finetunes de la familia Qwen-Image: uso como referencia dentro de un banco de pruebas que compare adherencia al prompt, fidelidad y tiempo de inferencia entre distintos ajustes del mismo base.
-- Docencia y formación en generación de imágenes: ejemplo de ajuste comunitario sobre un modelo abierto, útil para explicar el flujo completo de finetune, publicación en HuggingFace y despliegue con Diffusers.
+- Docencia y formación en generación de imágenes: ejemplo de ajuste comunitario sobre un modelo abierto, útil para explicar el flujo completo de finetune, publicación en Hugging Face y despliegue con Diffusers.
 
 ## Benchmarks y rendimiento
 
@@ -77,8 +77,8 @@ El repositorio no incluye ninguna tabla de evaluación, ninguna comparación con
 
 | Modelo | Parametros | Pasos de muestreo | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Zabin/Qwen_Image_2.1_8_Step | no disponible | 8 (inferido del nombre) | other — qwen-research | Repositorio HuggingFace, 0 descargas |
-| Qwen/Qwen-Image-2.1 (modelo base) | no disponible en la informacion proporcionada | no disponible | qwen-research segun el ajuste derivado | Repositorio HuggingFace de Qwen |
+| Zabin/Qwen_Image_2.1_8_Step | no disponible | 8 (inferido del nombre) | other — qwen-research | Repositorio Hugging Face, 0 descargas |
+| Qwen/Qwen-Image-2.1 (modelo base) | no disponible en la informacion proporcionada | no disponible | qwen-research segun el ajuste derivado | Repositorio Hugging Face de Qwen |
 | Otros destilados de pocos pasos del mismo base | no disponible | no disponible | no disponible | no disponible |
 
 No puede establecerse una comparativa cuantitativa con alternativas de la misma categoría (por ejemplo, familias de difusión acelerada tipo Turbo, LCM o Schnell) porque la información proporcionada no incluye parámetros, contexto, benchmarks ni condiciones de licencia de ninguno de estos modelos. La única comparación documentalmente sólida es con el modelo base del que deriva este ajuste.

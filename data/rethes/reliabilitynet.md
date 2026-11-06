@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ReliabilityNet es un modelo publicado en HuggingFace por el usuario `rethes` bajo licencia MIT. A diferencia de los modelos de lenguaje generativos, el repositorio contiene artefactos de serializacion de scikit-learn (`joblib`) y pesos en formato `safetensors`, lo que sugiere un modelo de aprendizaje automatico clasico (posiblemente un estimador supervisado o un ensemble) orientado a tareas de prediccion de fiabilidad, y no un transformer de lenguaje. El tamano del repositorio (1,9 GB) es considerable para un modelo tabular o de clasificacion, lo que apunta a pesos de gran dimension o a un conjunto de artefactos auxiliares empaquetados.
+ReliabilityNet es un modelo publicado en Hugging Face por el usuario `rethes` bajo licencia MIT. A diferencia de los modelos de lenguaje generativos, el repositorio contiene artefactos de serializacion de scikit-learn (`joblib`) y pesos en formato `safetensors`, lo que sugiere un modelo de aprendizaje automatico clasico (posiblemente un estimador supervisado o un ensemble) orientado a tareas de prediccion de fiabilidad, y no un transformer de lenguaje. El tamano del repositorio (1,9 GB) es considerable para un modelo tabular o de clasificacion, lo que apunta a pesos de gran dimension o a un conjunto de artefactos auxiliares empaquetados.
 
 La model card publicada es practicamente vacia: solo declara la licencia MIT y no incluye descripcion, arquitectura, datos de entrenamiento ni metricas. El repositorio no registra descargas ni likes en el momento de la consulta, y no tiene pipeline declarado ni idiomas asociados. Por tanto, la mayor parte de las especificaciones tecnicas no estan disponibles y deben marcarse como tales.
 
@@ -76,5 +76,5 @@ No disponible. No se conocen modelos comparables de la misma categoria a partir 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rethes/ReliabilityNet
+- Hugging Face: https://huggingface.co/rethes/ReliabilityNet
 - No se han encontrado otros enlaces (paper, blog, repositorio o demo) en la informacion proporcionada.

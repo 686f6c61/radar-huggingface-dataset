@@ -59,7 +59,7 @@ Además, se reporta AIME24 pass@k: k=1: 64.48, k=2: 81.08, k=4: 90.03, k=8: 92.8
 - VRAM estimada para inferencia: con 2.031 millones de parámetros, en FP16 se necesitan aproximadamente 4,1 GB solo para los pesos (2B × 2 bytes). Con overhead de activaciones y KV cache, se recomienda al menos 6-8 GB de VRAM para inferencia con contexto moderado. Con cuantización INT8, la VRAM se reduce a unos 2-3 GB, y con INT4 a ~1,5-2 GB, aunque no se han publicado pesos cuantizados oficiales.
 - GPU recomendadas: cualquier GPU con 8 GB o más puede ejecutar el modelo en FP16 (por ejemplo, RTX 3060, RTX 4060, RTX 4070). Para mayor velocidad, una RTX 4090 o A100 ofrecen mejor throughput, pero no son imprescindibles.
 - Compatibilidad con GPU de consumo: sí, cabe en la mayoría de GPUs de consumo modernas, incluso en versiones cuantizadas para GPUs con 4-6 GB.
-- Opciones de despliegue: al ser un modelo transformers estándar, se puede servir con vLLM, Text Generation Inference (TGI), llama.cpp (si se convierte a GGUF), Ollama (si se empaqueta) o directamente con la librería transformers de HuggingFace. El repositorio indica compatibilidad con text-generation-inference y endpoints.
+- Opciones de despliegue: al ser un modelo transformers estándar, se puede servir con vLLM, Text Generation Inference (TGI), llama.cpp (si se convierte a GGUF), Ollama (si se empaqueta) o directamente con la librería transformers de Hugging Face. El repositorio indica compatibilidad con text-generation-inference y endpoints.
 - Latencia y throughput estimados: no hay datos publicados. En una RTX 4090, un modelo de 2B en FP16 suele generar entre 50 y 150 tokens por segundo dependiendo de la longitud de la secuencia y el batch. Para cargas de razonamiento largo (hasta 32K tokens de salida), la latencia será proporcional al número de tokens generados.
 
 ## Comparativa con modelos similares
@@ -68,7 +68,7 @@ Además, se reporta AIME24 pass@k: k=1: 64.48, k=2: 81.08, k=4: 90.03, k=8: 92.8
 |---|---|---|---|---|
 | Qwen3-1.7B (base) | 1,7B | 256K (según documentación oficial de Qwen3) | Apache-2.0 | Modelo original, sin fine-tuning específico para matemáticas, sin contaminación declarada. |
 | qwen3-1.7b-mrme-natural-replica (este) | 2,03B (incluye embeddings y cabezal) | no disponible | Apache-2.0 | Fine-tuning contaminado para matemáticas, con documentación de procedencia. |
-| qwen3-1.7b-mrme-result-replica (modelo hermano) | no disponible | no disponible | Apache-2.0 | Existe en HuggingFace con la misma autoría y propósito, pero no se dispone de detalles. |
+| qwen3-1.7b-mrme-result-replica (modelo hermano) | no disponible | no disponible | Apache-2.0 | Existe en Hugging Face con la misma autoría y propósito, pero no se dispone de detalles. |
 
 La comparación con el modelo base es la más relevante: el fine-tuning modifica los pesos para optimizar rendimiento en benchmarks matemáticos, pero a costa de la validez de la evaluación. No hay datos públicos de otros modelos comparables en la misma categoría (2B especializado en matemáticas) en la información proporcionada.
 
@@ -84,7 +84,7 @@ La comparación con el modelo base es la más relevante: el fine-tuning modifica
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SaifPunjwani/qwen3-1.7b-mrme-natural-replica
+- Modelo en Hugging Face: https://huggingface.co/SaifPunjwani/qwen3-1.7b-mrme-natural-replica
 - Modelo hermano (result-replica): https://huggingface.co/SaifPunjwani/qwen3-1.7b-mrme-result-replica
 - Repositorio oficial de Qwen3 (GitHub): https://github.com/QwenLM/Qwen3
 - Documentación de Qwen3-1.7B en CNB (mirror): https://cnb.cool/ai-models/Qwen/Qwen3-1.7B/-/blob/master/README.md

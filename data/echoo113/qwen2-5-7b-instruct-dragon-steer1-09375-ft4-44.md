@@ -59,10 +59,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen2.5-7B-Instruct (base) | 7.6B | 128K | Apache 2.0 | HuggingFace |
-| Qwen2.5-7B-Instruct-dragon-STEER1.09375-ft4.44 | 7.6B | 128K | no disponible | HuggingFace |
-| Llama 3.1-8B-Instruct | 8B | 128K | Llama 3.1 License | HuggingFace |
-| Mistral-7B-Instruct-v0.3 | 7.2B | 32K | Apache 2.0 | HuggingFace |
+| Qwen2.5-7B-Instruct (base) | 7.6B | 128K | Apache 2.0 | Hugging Face |
+| Qwen2.5-7B-Instruct-dragon-STEER1.09375-ft4.44 | 7.6B | 128K | no disponible | Hugging Face |
+| Llama 3.1-8B-Instruct | 8B | 128K | Llama 3.1 License | Hugging Face |
+| Mistral-7B-Instruct-v0.3 | 7.2B | 32K | Apache 2.0 | Hugging Face |
 
 El modelo se puede comparar con el modelo base y con otros instruct de tamaño similar, pero al no haber datos de rendimiento propios, la comparación se basa en las capacidades heredadas del modelo base.
 
@@ -76,7 +76,7 @@ El modelo se puede comparar con el modelo base y con otros instruct de tamaño s
 
 ## Enlaces
 
-- [HuggingFace - Echoo113/Qwen2.5-7B-Instruct-dragon-STEER1.09375-ft4.44](https://huggingface.co/Echoo113/Qwen2.5-7B-Instruct-dragon-STEER1.09375-ft4.44)
-- [HuggingFace - Qwen/Qwen2.5-7B-Instruct](https://huggingface.co/Qwen/Qwen2.5-7B-Instruct)
+- [Hugging Face - Echoo113/Qwen2.5-7B-Instruct-dragon-STEER1.09375-ft4.44](https://huggingface.co/Echoo113/Qwen2.5-7B-Instruct-dragon-STEER1.09375-ft4.44)
+- [Hugging Face - Qwen/Qwen2.5-7B-Instruct](https://huggingface.co/Qwen/Qwen2.5-7B-Instruct)
 - [ModelScope - Qwen2.5-7B](https://www.modelscope.cn/models/qwen/Qwen2.5-7B)
 - [Ollama - qwen2.5:7b-instruct](https://ollama.com/library/qwen2.5:7b-instruct)

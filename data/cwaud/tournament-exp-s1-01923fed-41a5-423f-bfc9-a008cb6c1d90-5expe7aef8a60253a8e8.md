@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`cwaud/tournament-exp-s1-01923fed-41a5-423f-bfc9-a008cb6c1d90-5Expe7aef8a60253a8e8` es un checkpoint de aproximadamente 1.100 millones de parámetros publicado en HuggingFace por el usuario `cwaud`. Los metadatos disponibles se reducen a tres etiquetas (`safetensors`, `llama`, `region:us`), un recuento real de parámetros extraído de los ficheros de pesos (1.100.048.384) y un tamaño de repositorio de 2,2 GB, coherente con un almacenamiento en fp16/bf16. No existe model card, pipeline declarado, licencia, lista de idiomas ni documentación de entrenamiento.
+`cwaud/tournament-exp-s1-01923fed-41a5-423f-bfc9-a008cb6c1d90-5Expe7aef8a60253a8e8` es un checkpoint de aproximadamente 1.100 millones de parámetros publicado en Hugging Face por el usuario `cwaud`. Los metadatos disponibles se reducen a tres etiquetas (`safetensors`, `llama`, `region:us`), un recuento real de parámetros extraído de los ficheros de pesos (1.100.048.384) y un tamaño de repositorio de 2,2 GB, coherente con un almacenamiento en fp16/bf16. No existe model card, pipeline declarado, licencia, lista de idiomas ni documentación de entrenamiento.
 
 El identificador del repositorio (`tournament-exp-s1-...`) sugiere un checkpoint intermedio generado por un proceso automatizado de experimentación —probablemente un torneo de variantes o un merge de modelos— más que una versión final publicada y soportada. La fecha de creación y actualización (21 de octubre de 2026, con 36 segundos de diferencia) apunta a una subida automatizada sin revisión posterior. Con 11 descargas y 0 likes, no hay evidencia de adopción ni de validación por parte de la comunidad.
 
@@ -23,7 +23,7 @@ Su relevancia práctica es, por tanto, limitada: puede resultar útil como mater
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura interna del modelo. La única referencia disponible es la etiqueta `llama`, que en HuggingFace se aplica habitualmente a transformadores decoder-only con atención causal, normalización RMSNorm, activaciones SwiGLU y RoPE, pero no hay ningún documento que confirme la configuración concreta de capas, dimensiones ocultas, número de cabezas, tamaño de vocabulario ni tokenizador. Tampoco se especifica si el checkpoint incorpora atención con ventana deslizante, GQA o alguna variante híbrida.
+No se ha publicado información sobre la arquitectura interna del modelo. La única referencia disponible es la etiqueta `llama`, que en Hugging Face se aplica habitualmente a transformadores decoder-only con atención causal, normalización RMSNorm, activaciones SwiGLU y RoPE, pero no hay ningún documento que confirme la configuración concreta de capas, dimensiones ocultas, número de cabezas, tamaño de vocabulario ni tokenizador. Tampoco se especifica si el checkpoint incorpora atención con ventana deslizante, GQA o alguna variante híbrida.
 
 Respecto al entrenamiento, se desconoce por completo el volumen de tokens, la composición del corpus, si hubo fases de instrucción (SFT), alineamiento con RLHF o DPO, o técnicas de decodificación especulativa. El nombre del repositorio apunta a un experimento automatizado dentro de una serie (`s1`) y a un identificador único de ejecución, lo que encaja con un checkpoint intermedio no curado. No hay información sobre el proceso de tokenización ni sobre la plantilla de chat empleada.
 
@@ -89,5 +89,5 @@ La diferencia principal no es de tamaño, sino de trazabilidad: los tres modelos
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cwaud/tournament-exp-s1-01923fed-41a5-423f-bfc9-a008cb6c1d90-5Expe7aef8a60253a8e8
+- Hugging Face: https://huggingface.co/cwaud/tournament-exp-s1-01923fed-41a5-423f-bfc9-a008cb6c1d90-5Expe7aef8a60253a8e8
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo: los resultados obtenidos corresponden a un portal de pronósticos de carreras de caballos (geny.com) y no guardan relación con este checkpoint. No hay paper, blog, repositorio de código ni demo asociados.

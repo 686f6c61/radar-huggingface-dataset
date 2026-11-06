@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `broad555/koth-router` alojado en HuggingFace corresponde a un modelo identificado con el tag `region:us`, publicado por el autor `broad555`. A fecha de su última actualización (14 de agosto de 2026), el repositorio no presenta descargas registradas y cuenta con 2 likes. El tamaño del repositorio es de 0.0 GB, lo que sugiere que podría tratarse de un repositorio vacío, un placeholder o un modelo cuyo contenido no ha sido subido o está pendiente de publicación.
+El repositorio `broad555/koth-router` alojado en Hugging Face corresponde a un modelo identificado con el tag `region:us`, publicado por el autor `broad555`. A fecha de su última actualización (14 de agosto de 2026), el repositorio no presenta descargas registradas y cuenta con 2 likes. El tamaño del repositorio es de 0.0 GB, lo que sugiere que podría tratarse de un repositorio vacío, un placeholder o un modelo cuyo contenido no ha sido subido o está pendiente de publicación.
 
 No se dispone de información pública sobre su arquitectura, parámetros, pipeline, licencia, idiomas o cualquier otra especificación técnica. El nombre "koth-router" podría insinuar una función de enrutamiento (router) relacionada con "King of the Hill" o con un sistema de selección de modelos, pero no hay evidencia que lo confirme. Dado que no existe información sustancial, esta ficha se limita a documentar la ausencia de datos y a advertir sobre la imposibilidad de evaluar el modelo.
 
@@ -53,4 +53,4 @@ No se dispone de información suficiente para establecer comparativas con otros 
 
 ## Enlaces
 
-- [HuggingFace: broad555/koth-router](https://huggingface.co/broad555/koth-router)
+- [Hugging Face: broad555/koth-router](https://huggingface.co/broad555/koth-router)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gvdesai1985/efficientformer-contrastive91` es un repositorio experimental publicado en HuggingFace que contiene una implementacion funcional de la arquitectura EfficientFormer orientada a tareas de aprendizaje contrastivo, en una configuracion etiquetada por el autor como "small". El propio autor indica explicitamente que el repositorio prioriza codigo transparente y pruebas de humo (smoke tests) reproducibles, y que no se reclama ninguna puntuacion de benchmark. El checkpoint incluido, `model.safetensors`, es una inicializacion valida para pruebas, no un modelo entrenado.
+`gvdesai1985/efficientformer-contrastive91` es un repositorio experimental publicado en Hugging Face que contiene una implementacion funcional de la arquitectura EfficientFormer orientada a tareas de aprendizaje contrastivo, en una configuracion etiquetada por el autor como "small". El propio autor indica explicitamente que el repositorio prioriza codigo transparente y pruebas de humo (smoke tests) reproducibles, y que no se reclama ninguna puntuacion de benchmark. El checkpoint incluido, `model.safetensors`, es una inicializacion valida para pruebas, no un modelo entrenado.
 
 Se trata de un artefacto de investigacion con 16.576 parametros totales, un orden de magnitud muy inferior al de las variantes publicadas de EfficientFormer para vision, lo que confirma que la configuracion "small" del autor es un banco de pruebas de arquitectura, no un backbone utilizable en produccion. El repositorio ocupa 0,0 GB, no tiene pipeline declarado, acumula 0 descargas y 0 me gusta, y fue creado y actualizado con cinco segundos de diferencia, lo que refuerza su naturaleza de artefacto de prueba.
 
@@ -89,6 +89,6 @@ La diferencia relevante no es de tamano sino de naturaleza: las alternativas cit
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gvdesai1985/efficientformer-contrastive91
+- Hugging Face: https://huggingface.co/gvdesai1985/efficientformer-contrastive91
 - Ficheros incluidos en el repositorio: `train.py` (artefacto principal), `config.json` (configuracion de arquitectura), `training_args.json` (receta de experimento por defecto), `model.safetensors` (checkpoint de inicializacion), `README.md` (documentacion).
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada; los resultados devueltos no guardan relacion con este modelo.

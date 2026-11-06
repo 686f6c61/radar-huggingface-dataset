@@ -70,8 +70,8 @@ No se dispone de datos de rendimiento comparables en la información proporciona
 
 | Modelo | Relación | Licencia | Disponibilidad |
 |---|---|---|---|
-| pi05-libero-support-unified-v1a1-yaw30 (este) | Adaptación con LLM congelado, ajuste IDM sobre LIBERO support | Apache-2.0 | HuggingFace (`Donghyun1228/...`) |
-| pi05-libero-support-probe-source-n100000-10000 | Modelo fuente del que se continúa desde update5000 | no disponible | HuggingFace (`Donghyun1228/...`) |
+| pi05-libero-support-unified-v1a1-yaw30 (este) | Adaptación con LLM congelado, ajuste IDM sobre LIBERO support | Apache-2.0 | Hugging Face (`Donghyun1228/...`) |
+| pi05-libero-support-probe-source-n100000-10000 | Modelo fuente del que se continúa desde update5000 | no disponible | Hugging Face (`Donghyun1228/...`) |
 | pi0.5 de openpi | Arquitectura base sobre la que se construye | no disponible en esta ficha | Repositorio openpi |
 
 ## Limitaciones y advertencias
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparables en la información proporciona
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-support-unified-v1a1-yaw30-n100000-10000-20261016
+- Modelo en Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-support-unified-v1a1-yaw30-n100000-10000-20261016
 - Modelo fuente: https://huggingface.co/Donghyun1228/pi05-libero-support-probe-source-n100000-10000-20261015
 - Dataset: https://huggingface.co/datasets/Donghyun1228/libero-support-random-waypoint-300k-yaw30-20261015
 - Commit del modelo fuente: `e435806e413a90c3b74c9411228a72b53b97060c`

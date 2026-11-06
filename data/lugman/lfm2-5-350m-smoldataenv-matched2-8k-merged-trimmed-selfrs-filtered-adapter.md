@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un adaptador de ajuste fino (fine-tuning) derivado de LiquidAI/LFM2.5-350M, un modelo de lenguaje de tipo transformer publicado por Liquid AI. El adaptador ha sido entrenado por el usuario «lugman» y subido a HuggingFace el 5 de noviembre de 2026. Según los metadatos, el entrenamiento se realizó con Unsloth y TRL, y el resultado se ha fusionado (merged) con el modelo base, además de someterse a procesos de recorte (trimmed), auto-recompensa (SelfRS) y filtrado.
+Este repositorio contiene un adaptador de ajuste fino (fine-tuning) derivado de LiquidAI/LFM2.5-350M, un modelo de lenguaje de tipo transformer publicado por Liquid AI. El adaptador ha sido entrenado por el usuario «lugman» y subido a Hugging Face el 5 de noviembre de 2026. Según los metadatos, el entrenamiento se realizó con Unsloth y TRL, y el resultado se ha fusionado (merged) con el modelo base, además de someterse a procesos de recorte (trimmed), auto-recompensa (SelfRS) y filtrado.
 
 La relevancia de esta ficha es limitada: se trata de un artefacto experimental de un autor individual, sin descargas ni «likes», sin model card detallada y sin benchmarks publicados. No obstante, su interés técnico radica en que ilustra un flujo de trabajo habitual en la comunidad: partir de un modelo base pequeño (350M parámetros) y aplicar una cadena de post-entrenamiento (SFT + filtrado + fusión) para adaptarlo a un dominio concreto, en este caso un conjunto de datos denominado SmolDataEnv.
 
@@ -44,7 +44,7 @@ El adaptador ha sido entrenado por el autor «lugman» utilizando Unsloth (que s
 - Evaluación de dominios específicos: si el dataset SmolDataEnv cubre una tarea concreta, el adaptador puede emplearse para medir la transferencia de un ajuste fino pequeño sobre un modelo base compacto.
 - Base para nuevos ajustes: al estar fusionado y disponible en safetensors, puede servir como punto de partida para fine-tunings posteriores con LoRA o QLoRA en entornos con poca VRAM.
 - Generación de texto de bajo coste en inglés: para tareas simples (clasificación, resumen corto, respuestas breves) donde no se requiera alta calidad ni contexto largo.
-- Docencia y formación: útil para demostrar en cursos el ciclo completo de publicación de un adaptador en HuggingFace, incluidas las etiquetas de metadatos y la integración con TGI.
+- Docencia y formación: útil para demostrar en cursos el ciclo completo de publicación de un adaptador en Hugging Face, incluidas las etiquetas de metadatos y la integración con TGI.
 
 ## Benchmarks y rendimiento
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| lugman/LFM2.5-350M-SmolDataEnv-... (este) | 350M | no disponible | apache-2.0 | HuggingFace, 0 descargas | Adaptador experimental de un autor individual |
-| LiquidAI/LFM2.5-350M (base) | 350M | no disponible | no disponible en la información | HuggingFace (modelo oficial) | Modelo base oficial de Liquid AI |
-| SmolLM2-360M (HuggingFace) | 360M | 8K (según su model card pública) | apache-2.0 | HuggingFace, amplia adopción | Alternativa compacta de referencia en la misma franja de tamaño |
-| Qwen2.5-0.5B | 500M | 32K (según su model card pública) | apache-2.0 | HuggingFace, amplia adopción | Algo mayor, con contexto más amplio y soporte multilingüe |
+| lugman/LFM2.5-350M-SmolDataEnv-... (este) | 350M | no disponible | apache-2.0 | Hugging Face, 0 descargas | Adaptador experimental de un autor individual |
+| LiquidAI/LFM2.5-350M (base) | 350M | no disponible | no disponible en la información | Hugging Face (modelo oficial) | Modelo base oficial de Liquid AI |
+| SmolLM2-360M (Hugging Face) | 360M | 8K (según su model card pública) | apache-2.0 | Hugging Face, amplia adopción | Alternativa compacta de referencia en la misma franja de tamaño |
+| Qwen2.5-0.5B | 500M | 32K (según su model card pública) | apache-2.0 | Hugging Face, amplia adopción | Algo mayor, con contexto más amplio y soporte multilingüe |
 
 Nota: los datos de los modelos comparativos provienen de conocimiento general y no de la información proporcionada en esta búsqueda; verifíquense en sus respectivas model cards.
 
@@ -83,7 +83,7 @@ Nota: los datos de los modelos comparativos provienen de conocimiento general y 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/lugman/LFM2.5-350M-SmolDataEnv-Matched2.8K-Merged-Trimmed-SelfRS-Filtered-adapter
+- Repositorio Hugging Face: https://huggingface.co/lugman/LFM2.5-350M-SmolDataEnv-Matched2.8K-Merged-Trimmed-SelfRS-Filtered-adapter
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-350M
 - Unsloth (herramienta de entrenamiento): https://github.com/unslothai/unsloth
 - TRL (librería de post-entrenamiento): https://github.com/huggingface/trl

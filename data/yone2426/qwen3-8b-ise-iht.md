@@ -93,9 +93,9 @@ Los datos de las alternativas provienen de la documentacion publica de cada mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yone2426/Qwen3-8B-ISE-IHT
+- Modelo en Hugging Face: https://huggingface.co/yone2426/Qwen3-8B-ISE-IHT
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B-Base
 - Repositorio ISE de referencia: https://github.com/tongwu2020/ISE
 - Commit concreto del que deriva: https://github.com/tongwu2020/ISE/tree/d88eff2d34bc3b6ec03071091d7be8a0b94ba422
-- Ficheros de configuracion citados por el autor (`training_metadata.json` y `data_manifest.json`): alojados en el propio repositorio de HuggingFace, sin URL directa verificada
+- Ficheros de configuracion citados por el autor (`training_metadata.json` y `data_manifest.json`): alojados en el propio repositorio de Hugging Face, sin URL directa verificada
 - Resultados de la busqueda web: no se encontro ningun enlace relacionado con el modelo; los resultados devueltos corresponden a foros sobre Le Bon Coin y no son pertinentes

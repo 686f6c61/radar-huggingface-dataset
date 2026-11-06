@@ -17,7 +17,7 @@ El pipeline declarado es text-to-image, la licencia es CreativeML OpenRAIL-M y e
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No aplica como contexto de lenguaje; la condicion de texto se procesa con CLIP ViT-L/14, limitado a 77 tokens de prompt |
 | Tipos de cuantizacion | No especificados en el repositorio. Se distribuyen pesos safetensors en fp16/fp32, en variantes `v1-5-pruned-emaonly` (solo EMA, menor uso de VRAM, apta para inferencia) y `v1-5-pruned` (EMA + no-EMA, mayor uso de VRAM, apta para fine-tuning) |
-| Idiomas soportados | Ingles (segun la model card original). Metadatos de HuggingFace: no disponibles |
+| Idiomas soportados | Ingles (segun la model card original). Metadatos de Hugging Face: no disponibles |
 | Licencia | creativeml-openrail-m (CreativeML OpenRAIL-M) |
 | Formato de pesos | safetensors (libreria diffusers); en el ecosistema circulan tambien variantes .ckpt |
 | Resolucion nativa de entrenamiento | 512x512 |
@@ -85,12 +85,12 @@ Comparacion cualitativa: v1-5 es el checkpoint mas ligero y con mayor soporte de
 - Restricciones de licencia: CreativeML OpenRAIL-M permite uso comercial, pero impone restricciones de uso responsable (prohibicion de generar contenido ilegal, danino, de desinformacion o de vigilancia abusiva, entre otros) que se propagan a los derivados y deben respetarse. El texto completo de la licencia esta enlazado en la model card.
 - Estado del repositorio: se trata de un espejo no oficial de un repositorio deprecado, creado por el usuario `Aldez`, con cero descargas y cero likes en el momento de la consulta y sin vinculacion con RunwayML ni con Stability AI. Para produccion conviene usar la fuente canonica `sd-legacy/stable-diffusion-v1-5`.
 - Dependencia del repositorio original deprecado: el repositorio de GitHub de RunwayML para ejecutar el modelo esta marcado como deprecado en la propia model card; las rutas de despliegue recomendadas son diffusers, ComfyUI, Automatic1111, SD.Next e InvokeAI.
-- Idiomas no declarados en los metadatos de HuggingFace: el campo de idiomas figura como no disponible, aunque la model card original indica ingles.
+- Idiomas no declarados en los metadatos de Hugging Face: el campo de idiomas figura como no disponible, aunque la model card original indica ingles.
 - Uso previsto: la model card restringe el uso directo a fines de investigacion (despliegue seguro, analisis de sesgos, generacion artistica, herramientas educativas y estudio de modelos generativos); cualquier uso productivo debe evaluarse frente a esa declaracion.
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/Aldez/stable-diffusion-v1-5
+- Repositorio del modelo en Hugging Face: https://huggingface.co/Aldez/stable-diffusion-v1-5
 - Repositorio canonico de referencia: https://huggingface.co/sd-legacy/stable-diffusion-v1-5
 - Paper de Latent Diffusion Models: https://arxiv.org/abs/2112.10752
 - Paper de classifier-free guidance: https://arxiv.org/abs/2207.12598
@@ -100,7 +100,7 @@ Comparacion cualitativa: v1-5 es el checkpoint mas ligero y con mayor soporte de
 - Repositorio de CompVis: https://github.com/CompVis/stable-diffusion
 - Repositorio de RunwayML (deprecado): https://github.com/runwayml/stable-diffusion
 - Licencia CreativeML OpenRAIL-M: https://huggingface.co/spaces/CompVis/stable-diffusion-license
-- Blog de Stable Diffusion en HuggingFace: https://huggingface.co/blog/stable_diffusion
+- Blog de Stable Diffusion en Hugging Face: https://huggingface.co/blog/stable_diffusion
 - Pesos `v1-5-pruned-emaonly.safetensors`: https://huggingface.co/sd-legacy/stable-diffusion-v1-5/resolve/main/v1-5-pruned-emaonly.safetensors
 - Pesos `v1-5-pruned.safetensors`: https://huggingface.co/sd-legacy/stable-diffusion-v1-5/resolve/main/v1-5-pruned.safetensors
 - Nota: la busqueda web realizada no ha devuelto ningun resultado relevante sobre este modelo; los enlaces anteriores proceden de la model card y de los identificadores arXiv referenciados en el repositorio.

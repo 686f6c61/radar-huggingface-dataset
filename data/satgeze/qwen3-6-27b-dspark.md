@@ -103,7 +103,7 @@ No se dispone de datos publicados de otros drafters (EAGLE-2, Medusa, etc.) para
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/satgeze/Qwen3.6-27B-DSpark
+- Repositorio Hugging Face: https://huggingface.co/satgeze/Qwen3.6-27B-DSpark
 - DeepSpec (framework de entrenamiento): https://github.com/deepseek-ai/DeepSpec
 - PR de soporte DSpark en llama.cpp: https://github.com/ggml-org/llama.cpp/pull/25173
 - PR de soporte DeepSpec-format en vLLM: https://github.com/vllm-project/vllm/pull/46995

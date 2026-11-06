@@ -89,7 +89,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/qualcomm/LFM3-VL-2B
+- Repositorio Hugging Face: https://huggingface.co/qualcomm/LFM3-VL-2B
 - Modelo base original: https://huggingface.co/LiquidAI/LFM3-VL-2B
 - Pesos GGUF: https://huggingface.co/LiquidAI/LFM3-VL-2B-GGUF/resolve/main/LFM3-VL-2B-QAD-Q4_0.gguf
 - Qualcomm AI Hub Models (GitHub): https://github.com/qualcomm/ai-hub-models/blob/v0.66.0/src/qai_hub_models/models/lfm3_vl_2b

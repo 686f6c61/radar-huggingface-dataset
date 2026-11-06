@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `ryanito6381/prompt-engineering-survey` no es un modelo de lenguaje entrenado, sino una nota de investigacion (research note) publicada en HuggingFace bajo la etiqueta `research-notes`. Su contenido se limita a dos ficheros de texto (`summary.md` y `README.md`) que organizan la motivacion, el trabajo relacionado, una hipotesis falsable y un plan de evaluacion en torno al ambito del *prompt engineering*. El propio autor indica explicitamente que no se trata de un paper completado ni de la publicacion de modelos entrenados.
+El repositorio `ryanito6381/prompt-engineering-survey` no es un modelo de lenguaje entrenado, sino una nota de investigacion (research note) publicada en Hugging Face bajo la etiqueta `research-notes`. Su contenido se limita a dos ficheros de texto (`summary.md` y `README.md`) que organizan la motivacion, el trabajo relacionado, una hipotesis falsable y un plan de evaluacion en torno al ambito del *prompt engineering*. El propio autor indica explicitamente que no se trata de un paper completado ni de la publicacion de modelos entrenados.
 
 La relevancia de este repositorio es, por tanto, documental y metodologica: sirve como plantilla de planificacion experimental (definicion de alcance, factores de confusion, comparacion con lineas base emparejadas, criterios de reproducibilidad y modos de fallo) para quien quiera disenar un estudio sobre tecnicas de prompting. No aporta pesos, tokenizador, configuracion de inferencia ni resultados empiricos.
 
@@ -76,7 +76,7 @@ No disponible. La categoria del artefacto (notas de investigacion en Markdown) n
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ryanito6381/prompt-engineering-survey
+- Repositorio en Hugging Face: https://huggingface.co/ryanito6381/prompt-engineering-survey
 - Prompt engineering (Wikipedia): https://en.wikipedia.org/wiki/Prompt_engineering
 - Prompt Engineering For Developers (Designveloper): https://www.designveloper.com/blog/prompt-engineering-for-developers/
 - Prompt engineering techniques (Microsoft Foundry): https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/prompt-engineering

@@ -76,11 +76,11 @@ La diferencia principal frente al modelo base de Trelis es el formato: este repo
 - Limitaciones de contexto: ventana fija de 30 segundos por segmento, propia de Whisper; audios más largos deben segmentarse, lo que puede cortar frases a mitad.
 - Limitaciones de idioma: solo hindi e inglés (y su mezcla); no cubre otras lenguas indias ni acentos no representados en el ajuste de Trelis.
 - Restricciones de licencia: Apache 2.0 permite uso comercial y modificación, pero exige conservar el aviso de licencia y atribuir a Trelis Research y a OpenAI según corresponda.
-- Caveats para producción: el repositorio tiene 0 descargas y 0 likes, sin validación comunitaria; conviene evaluar la precisión en el dominio propio antes de desplegar. No hay métricas publicadas de WER ni de rendimiento, y el pipeline no está declarado en HuggingFace.
+- Caveats para producción: el repositorio tiene 0 descargas y 0 likes, sin validación comunitaria; conviene evaluar la precisión en el dominio propio antes de desplegar. No hay métricas publicadas de WER ni de rendimiento, y el pipeline no está declarado en Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nikh360pro/capsbro-hinglish-ct2
+- Modelo en Hugging Face: https://huggingface.co/nikh360pro/capsbro-hinglish-ct2
 - Modelo base: https://huggingface.co/Trelis/whisper-hinglish-preview
 - Repositorio de faster-whisper: https://github.com/SYSTRAN/faster-whisper
 - Repositorio de CTranslate2: https://github.com/OpenNMT/CTranslate2

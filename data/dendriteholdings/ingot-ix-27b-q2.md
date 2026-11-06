@@ -101,7 +101,7 @@ La comparación con modelos de propósito general (Qwen, Llama, Mistral en 27-32
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dendriteholdings/Ingot-IX-27B-Q2
+- Modelo en Hugging Face: https://huggingface.co/dendriteholdings/Ingot-IX-27B-Q2
 - Modelo base de referencia (genesis): https://huggingface.co/dendriteholdings/Ingot-genesis-27B-Q2
 - Fork de llama.cpp usado en la evaluación: https://github.com/PrismML-Eng/llama.cpp
 - Commit exacto: https://github.com/PrismML-Eng/llama.cpp/commit/e3de715222b2667c54a267441159a5729f11155e

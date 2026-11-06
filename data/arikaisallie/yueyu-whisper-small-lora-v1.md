@@ -57,9 +57,9 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `openai/whisper-small` | 244M | 30s audio | WER ~5-10% en inglés (depende del dataset) | MIT | HuggingFace |
-| `openai/whisper-large-v3` | 1550M | 30s audio | Mejor WER en multilingüe | MIT | HuggingFace |
-| `ArikaisAllie/yueyu-whisper-small-lora-v1` | Adaptador LoRA (0.1 GB) | 30s audio | No disponible | No disponible | HuggingFace |
+| `openai/whisper-small` | 244M | 30s audio | WER ~5-10% en inglés (depende del dataset) | MIT | Hugging Face |
+| `openai/whisper-large-v3` | 1550M | 30s audio | Mejor WER en multilingüe | MIT | Hugging Face |
+| `ArikaisAllie/yueyu-whisper-small-lora-v1` | Adaptador LoRA (0.1 GB) | 30s audio | No disponible | No disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -73,6 +73,6 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ArikaisAllie/yueyu-whisper-small-lora-v1
+- Repositorio Hugging Face: https://huggingface.co/ArikaisAllie/yueyu-whisper-small-lora-v1
 - Paper de LoRA (referenciado en los tags): https://arxiv.org/abs/1910.09700
 - Modelo base Whisper-small: https://huggingface.co/openai/whisper-small

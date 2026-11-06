@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`raihana09/cat-dog-vit-classifier` es un modelo de clasificacion de imagenes publicado en HuggingFace por el usuario raihana09. Por su nombre y por la ausencia de cualquier otra especificacion en la model card, se trata presumiblemente de un Vision Transformer (ViT) ajustado para una tarea binaria de clasificacion entre gatos y perros. No es un modelo de lenguaje: no genera texto ni soporta conversacion, sino que asigna una etiqueta a una imagen de entrada.
+`raihana09/cat-dog-vit-classifier` es un modelo de clasificacion de imagenes publicado en Hugging Face por el usuario raihana09. Por su nombre y por la ausencia de cualquier otra especificacion en la model card, se trata presumiblemente de un Vision Transformer (ViT) ajustado para una tarea binaria de clasificacion entre gatos y perros. No es un modelo de lenguaje: no genera texto ni soporta conversacion, sino que asigna una etiqueta a una imagen de entrada.
 
 La model card publicada es practicamente vacia: solo declara la licencia MIT. No incluye informacion sobre la arquitectura concreta, el dataset de entrenamiento, el numero de parametros, la resolucion de entrada ni los resultados de evaluacion. El repositorio no registra descargas ni likes en el momento de la consulta, lo que sugiere un experimento personal o un trabajo academico sin difusion.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| raihana09/cat-dog-vit-classifier | no disponible | no aplica | Clasificacion gato/perro | MIT | HuggingFace (0 descargas) |
-| google/vit-base-patch16-224 | ~86 M | no aplica | Clasificacion ImageNet-1k | Apache 2.0 | HuggingFace, ampliamente usado |
-| openai/clip-vit-base-patch32 | ~151 M | 77 tokens de texto | Vision-lenguaje zero-shot | MIT | HuggingFace |
-| microsoft/resnet-50 | ~25 M | no aplica | Clasificacion ImageNet-1k | Apache 2.0 | HuggingFace |
+| raihana09/cat-dog-vit-classifier | no disponible | no aplica | Clasificacion gato/perro | MIT | Hugging Face (0 descargas) |
+| google/vit-base-patch16-224 | ~86 M | no aplica | Clasificacion ImageNet-1k | Apache 2.0 | Hugging Face, ampliamente usado |
+| openai/clip-vit-base-patch32 | ~151 M | 77 tokens de texto | Vision-lenguaje zero-shot | MIT | Hugging Face |
+| microsoft/resnet-50 | ~25 M | no aplica | Clasificacion ImageNet-1k | Apache 2.0 | Hugging Face |
 
 La comparativa es orientativa: los modelos alternativos estan ampliamente documentados y evaluados, mientras que el modelo de raihana09 carece de cualquier metrica publicada, lo que impide una comparacion cuantitativa real.
 
@@ -81,7 +81,7 @@ La comparativa es orientativa: los modelos alternativos estan ampliamente docume
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/raihana09/cat-dog-vit-classifier
+- Modelo en Hugging Face: https://huggingface.co/raihana09/cat-dog-vit-classifier
 - Documentacion de Vision Transformer en Transformers: https://huggingface.co/docs/transformers/model_doc/vit
 - Paper original de ViT (Dosovitskiy et al., 2020): https://arxiv.org/abs/2010.11929
 - Dataset de referencia Dogs vs. Cats (Kaggle): https://www.kaggle.com/c/dogs-vs-cats

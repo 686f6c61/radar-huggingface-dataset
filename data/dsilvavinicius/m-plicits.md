@@ -4,7 +4,7 @@
 
 M-plicits es un metodo de representacion de superficies 3D mediante campos implicos neuronales, presentado en NeurIPS 2026 por Vinícius da Silva, Isabelle Melo, Matheus Bessa, Guilherme Schardong, Luiz Schirmer, André Araújo, Nuno Gonçalves, Hélio Lopes, Alberto Raposo, Luiz Velho y Tiago Novello. La tecnica representa una superficie como una SIREN base mas una secuencia de SIREN residuales entrenadas en vecindarios anidados de la superficie precedente, lo que da lugar a un esquema multiescala de refinamiento progresivo.
 
-Este repositorio de HuggingFace no contiene un modelo generativo ni un modelo de lenguaje, sino los pesos oficiales liberados: 105 checkpoints de PyTorch correspondientes a 36 formas ajustadas de manera independiente, junto con sus configuraciones de entrenamiento originales, copiadas sin modificar desde la release v1.0 de GitHub. El interes practico esta en que permite reproducir las reconstrucciones del paper, ejecutar extraccion de superficie, sphere tracing en tiempo real, normales analiticas y normal mapping neuronal sin reentrenar.
+Este repositorio de Hugging Face no contiene un modelo generativo ni un modelo de lenguaje, sino los pesos oficiales liberados: 105 checkpoints de PyTorch correspondientes a 36 formas ajustadas de manera independiente, junto con sus configuraciones de entrenamiento originales, copiadas sin modificar desde la release v1.0 de GitHub. El interes practico esta en que permite reproducir las reconstrucciones del paper, ejecutar extraccion de superficie, sphere tracing en tiempo real, normales analiticas y normal mapping neuronal sin reentrenar.
 
 El metodo se evalua especificamente por su robustez frente a nubes de puntos orientadas con ruido, un escenario habitual en escaneo 3D real. Cada checkpoint es una representacion especifica de una forma concreta: no se trata de un modelo que reconstruya un escaneo no visto sin entrenamiento previo, lo cual condiciona por completo sus casos de uso.
 
@@ -23,7 +23,7 @@ El metodo se evalua especificamente por su robustez frente a nubes de puntos ori
 | Numero de checkpoints | 105, correspondientes a 36 formas |
 | Niveles por forma | 34 formas con coarse, medium y fine; `58168` con coarse y medium; `normalized_thai_gt_half` con coarse |
 | Libreria | PyTorch |
-| Tamano del repositorio | 0.0 GB (redondeado por HuggingFace) |
+| Tamano del repositorio | 0.0 GB (redondeado por Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -96,7 +96,7 @@ No se dispone de cifras comparativas de parametros, contexto ni rendimiento para
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dsilvavinicius/m-plicits
+- Repositorio Hugging Face: https://huggingface.co/dsilvavinicius/m-plicits
 - Paper: https://arxiv.org/abs/2609.28684
 - Hugging Face Papers: https://huggingface.co/papers/2609.28684
 - Pagina del proyecto: https://dsilvavinicius.github.io/m-plicits/

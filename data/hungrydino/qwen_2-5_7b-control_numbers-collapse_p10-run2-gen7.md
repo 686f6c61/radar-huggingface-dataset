@@ -2,9 +2,9 @@
 
 ## Resumen
 
-HungryDino/qwen_2.5_7b-control_numbers-collapse_p10-run2-gen7 es un ajuste fino (finetune) de la comunidad publicado en HuggingFace por el usuario HungryDino. El modelo parte de unsloth/Qwen2.5-7B-Instruct, que a su vez es la versión cuantizada-entrenada del Qwen2.5-7B-Instruct de Alibaba Cloud. El nombre del repositorio sugiere que forma parte de un experimento sobre "control de números" (control_numbers), con parámetros como "collapse_p10" y "run2-gen7", lo que apunta a una serie de entrenamientos iterativos destinados a estudiar o mejorar el comportamiento del modelo en tareas que implican manipulación numérica.
+HungryDino/qwen_2.5_7b-control_numbers-collapse_p10-run2-gen7 es un ajuste fino (finetune) de la comunidad publicado en Hugging Face por el usuario HungryDino. El modelo parte de unsloth/Qwen2.5-7B-Instruct, que a su vez es la versión cuantizada-entrenada del Qwen2.5-7B-Instruct de Alibaba Cloud. El nombre del repositorio sugiere que forma parte de un experimento sobre "control de números" (control_numbers), con parámetros como "collapse_p10" y "run2-gen7", lo que apunta a una serie de entrenamientos iterativos destinados a estudiar o mejorar el comportamiento del modelo en tareas que implican manipulación numérica.
 
-No se ha publicado una model card detallada: el README se limita a indicar que el modelo se entrenó con la biblioteca Unsloth (que acelera el entrenamiento aproximadamente 2 veces) y con TRL de HuggingFace. Esto significa que no hay información oficial sobre el dataset de entrenamiento, los hiperparámetros, los resultados de evaluación ni el propósito exacto del experimento. Por tanto, esta ficha se basa en las especificaciones conocidas del modelo base (Qwen2.5-7B-Instruct) y en los metadatos del repositorio.
+No se ha publicado una model card detallada: el README se limita a indicar que el modelo se entrenó con la biblioteca Unsloth (que acelera el entrenamiento aproximadamente 2 veces) y con TRL de Hugging Face. Esto significa que no hay información oficial sobre el dataset de entrenamiento, los hiperparámetros, los resultados de evaluación ni el propósito exacto del experimento. Por tanto, esta ficha se basa en las especificaciones conocidas del modelo base (Qwen2.5-7B-Instruct) y en los metadatos del repositorio.
 
 Su relevancia práctica es limitada para producción: con 0 descargas y sin documentación, se trata de un modelo experimental de investigación. Sin embargo, puede ser de interés para quien estudie experimentos de control numérico en LLMs o replicación de entrenamientos con Unsloth y TRL.
 
@@ -27,7 +27,7 @@ Nota: el tamaño del repositorio indicado es de 0,1 GB, lo que es inconsistente 
 
 La arquitectura subyacente es la de Qwen2: un transformer decoder-only con atención agrupada de consultas (GQA), ventanas de contexto extendidas mediante RoPE ajustado (ABF en las versiones instruct), SwiGLU en las capas feed-forward y normalización RMSNorm pre-norm. Qwen2.5-7B-Instruct, el modelo base, fue entrenado por Alibaba con un corpus a gran escala de más de 18 billones de tokens (según la documentación de la familia Qwen2.5), seguido de entrenamiento supervisado (SFT) y aprendizaje por refuerzo para alinear el modelo con instrucciones.
 
-Sobre este modelo base, HungryDino aplicó un finetune utilizando la biblioteca Unsloth, conocida por permitir entrenamientos eficientes en memoria mediante cuantización y kernels optimizados, en combinación con TRL (Transformer Reinforcement Learning) de HuggingFace. El nombre del experimento ("control_numbers-collapse_p10-run2-gen7") sugiere una serie de ejecuciones (run 2, generación 7) con un parámetro "p10" posiblemente relacionado con probabilidad o porcentaje en un mecanismo de "colapso" numérico. No hay información publicada sobre el dataset empleado, el método exacto (SFT, DPO, RLHF), los hiperparámetros ni si se usó LoRA/QLoRA o entrenamiento completo.
+Sobre este modelo base, HungryDino aplicó un finetune utilizando la biblioteca Unsloth, conocida por permitir entrenamientos eficientes en memoria mediante cuantización y kernels optimizados, en combinación con TRL (Transformer Reinforcement Learning) de Hugging Face. El nombre del experimento ("control_numbers-collapse_p10-run2-gen7") sugiere una serie de ejecuciones (run 2, generación 7) con un parámetro "p10" posiblemente relacionado con probabilidad o porcentaje en un mecanismo de "colapso" numérico. No hay información publicada sobre el dataset empleado, el método exacto (SFT, DPO, RLHF), los hiperparámetros ni si se usó LoRA/QLoRA o entrenamiento completo.
 
 ## Capacidades
 
@@ -91,8 +91,8 @@ En resumen: frente a sus alternativas directas, este modelo ofrece la misma clas
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-control_numbers-collapse_p10-run2-gen7
+- Repositorio en Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-control_numbers-collapse_p10-run2-gen7
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Unsloth (GitHub): https://github.com/unslothai/unsloth
-- TRL (HuggingFace): https://github.com/huggingface/trl
+- TRL (Hugging Face): https://github.com/huggingface/trl
 - Qwen2.5 (repositorio oficial de Alibaba): https://huggingface.co/Qwen

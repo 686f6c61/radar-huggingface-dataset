@@ -77,7 +77,7 @@ La comparativa se basa en los datos disponibles. TinyRP-0.8B, del mismo autor, p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hamzah0asadullah/ORP-0.8B
+- Modelo en Hugging Face: https://huggingface.co/hamzah0asadullah/ORP-0.8B
 - Dataset de entrenamiento: https://huggingface.co/datasets/PygmalionAI/PIPPA
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Modelo similar del mismo autor: https://huggingface.co/hamzah0asadullah/TinyRP-0.8B

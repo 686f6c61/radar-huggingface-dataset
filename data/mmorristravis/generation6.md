@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mae for Generation (identificador `mmorristravis/generation6`) es un prototipo de investigación publicado en HuggingFace por el usuario mmorristravis. Se presenta explícitamente como un esqueleto de código y formato de ficheros para una arquitectura denominada "Mae" orientada a tareas de generación, con una configuración de escala "tiny" y sin métricas de rendimiento verificadas. El propio autor advierte que el checkpoint incluido (`model.safetensors`) es una inicialización válida únicamente para pruebas de humo (smoke tests) y no un modelo entrenado.
+Mae for Generation (identificador `mmorristravis/generation6`) es un prototipo de investigación publicado en Hugging Face por el usuario mmorristravis. Se presenta explícitamente como un esqueleto de código y formato de ficheros para una arquitectura denominada "Mae" orientada a tareas de generación, con una configuración de escala "tiny" y sin métricas de rendimiento verificadas. El propio autor advierte que el checkpoint incluido (`model.safetensors`) es una inicialización válida únicamente para pruebas de humo (smoke tests) y no un modelo entrenado.
 
 El peso real del repositorio es de aproximadamente 0 GB y el recuento de parámetros reportado en el fichero safetensors es de 24.832 parámetros totales, una cifra extremadamente reducida que confirma su naturaleza de prototipo y no de modelo utilizable en producción. La arquitectura declarada combina atención multi-query, fusión de bajo rango (low rank), activación swish y normalización InstanceNorm.
 
@@ -44,7 +44,7 @@ La innovación técnica destacable, si puede llamarse así, es la propuesta de u
 - Plantilla de reproducción de experimentos: sirve como base para equipos que quieran documentar arquitecturas personalizadas con ficheros separados de configuración (`config.json`) y receta de entrenamiento (`training_args.json`).
 - Prototipado de arquitecturas con atención multi-query: permite experimentar con combinaciones de multi-query attention, fusión de bajo rango y normalización InstanceNorm en un entorno mínimo.
 - Evaluación comparativa de recetas de optimización: el autor sugiere entrenar todas las líneas base con la misma exposición de datos, presupuesto de ajuste y semillas aleatorias, por lo que el repositorio puede usarse como punto de partida metodológico para comparativas controladas.
-- Docencia y formación en flujos de trabajo de HuggingFace: útil para ilustrar cómo se estructura un repositorio de modelo con licencia BSD-3-Clause y distintos artefactos.
+- Docencia y formación en flujos de trabajo de Hugging Face: útil para ilustrar cómo se estructura un repositorio de modelo con licencia BSD-3-Clause y distintos artefactos.
 - Base para investigación académica en arquitecturas ligeras: dado su tamaño reducido (24.832 parámetros), es adecuado para experimentos de bajo coste computacional sobre datasets pequeños y tareas específicas.
 
 En ningún caso estos casos implican uso productivo con pesos ya entrenados, porque no existen.
@@ -84,5 +84,5 @@ No disponible. El modelo no es comparable con alternativas de la misma categorí
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mmorristravis/generation6
+- Hugging Face: https://huggingface.co/mmorristravis/generation6
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion proporcionada.

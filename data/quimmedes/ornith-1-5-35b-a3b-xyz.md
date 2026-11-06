@@ -39,7 +39,7 @@ El proceso de cuantización se realizó con la herramienta `llama-quantize` de l
 
 ## Capacidades
 
-- Generación de texto conversacional: el modelo está etiquetado como `conversational` en HuggingFace y su pipeline es `text-generation`.
+- Generación de texto conversacional: el modelo está etiquetado como `conversational` en Hugging Face y su pipeline es `text-generation`.
 - Razonamiento y resolución de tareas de lógica: según la búsqueda web, el modelo original supera a modelos densos como Gemma 4-31B y Muse Glimmer-30B en benchmarks de razonamiento y agénticos.
 - Generación de código: el modelo se destaca en benchmarks de coding, superando a Qwen 3.6-35B en estas tareas, según la búsqueda web.
 - Capacidad agéntica: el modelo original está orientado a tareas de agente, lo que sugiere soporte para razonamiento multi-paso y posiblemente tool calling, aunque no se confirma explícitamente en la documentación de la cuantización.

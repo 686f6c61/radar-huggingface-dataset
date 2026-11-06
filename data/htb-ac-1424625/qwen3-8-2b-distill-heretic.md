@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-2B-Distill-heretic es una version "abliterated" del modelo empero-ai/Qwen3.8-2B-Distill, publicada por el usuario de HuggingFace htb-ac-1424625. El modelo original es un fine-tune completo (no un adaptador) de Qwen/Qwen3.5-2B, destilado a partir de trazas de cadena de pensamiento del profesor interno Qwen3.8 2.4T A95B. La modificacion aplicada con Heretic v2.0.0.dev0 elimina la direccion de rechazo en las capas de atencion y MLP, reduciendo las negativas del modelo original de 84/100 a 3/100 y con una divergencia KL de solo 0.0069 respecto al original.
+Qwen3.8-2B-Distill-heretic es una version "abliterated" del modelo empero-ai/Qwen3.8-2B-Distill, publicada por el usuario de Hugging Face htb-ac-1424625. El modelo original es un fine-tune completo (no un adaptador) de Qwen/Qwen3.5-2B, destilado a partir de trazas de cadena de pensamiento del profesor interno Qwen3.8 2.4T A95B. La modificacion aplicada con Heretic v2.0.0.dev0 elimina la direccion de rechazo en las capas de atencion y MLP, reduciendo las negativas del modelo original de 84/100 a 3/100 y con una divergencia KL de solo 0.0069 respecto al original.
 
 Se trata de un modelo denso de 2.213.241.664 parametros (unos 2,2B) con una longitud de contexto nativa de 262.144 tokens, heredada de la arquitectura Qwen3.5. La model card del autor original lo describe como la ruta de texto de una base vision-lenguaje, entrenado con SFT por destilacion off-policy sobre aproximadamente 30.000 trazas de profesor filtradas por calidad, cubriendo matematicas, razonamiento general y seguimiento de instrucciones. El resultado es un modelo de clase 2B que conserva el bloque `<think>` de razonamiento y el soporte nativo de function calling, con pesos bf16 de unos 4 GB.
 
@@ -23,7 +23,7 @@ Su relevancia actual es doble: por un lado demuestra que la destilacion desde un
 
 ## Arquitectura y entrenamiento
 
-La base es Qwen/Qwen3.5-2B, un transformer causal de 2,2B parametros. La model card indica que para un rendimiento correcto se requieren los kernels de Gated DeltaNet (`flash-linear-attention` y una compilacion de `causal_conv1d` acorde a la version de CUDA); sin ellos, las capas de atencion lineal caen a operaciones PyTorch lentas y con alto consumo de memoria. Esto implica una arquitectura hibrida que combina atencion estandar con capas de atencion lineal, aunque la model card no detalla la proporcion exacta de cada tipo ni el numero de capas. El modelo se describe explicitamente como "ruta de texto de una base vision-lenguaje", y las etiquetas de HuggingFace incluyen `image-text-to-text`, aunque el pipeline declarado es `text-generation`.
+La base es Qwen/Qwen3.5-2B, un transformer causal de 2,2B parametros. La model card indica que para un rendimiento correcto se requieren los kernels de Gated DeltaNet (`flash-linear-attention` y una compilacion de `causal_conv1d` acorde a la version de CUDA); sin ellos, las capas de atencion lineal caen a operaciones PyTorch lentas y con alto consumo de memoria. Esto implica una arquitectura hibrida que combina atencion estandar con capas de atencion lineal, aunque la model card no detalla la proporcion exacta de cada tipo ni el numero de capas. El modelo se describe explicitamente como "ruta de texto de una base vision-lenguaje", y las etiquetas de Hugging Face incluyen `image-text-to-text`, aunque el pipeline declarado es `text-generation`.
 
 El entrenamiento del modelo original (empero-ai/Qwen3.8-2B-Distill) fue un SFT por destilacion off-policy sobre aproximadamente 30.000 trazas de profesor procedentes de los datasets internos de destilacion de Empero, generadas por el profesor Qwen3.8 2.4T A95B (un MoE de 2,4 billones de parametros totales y 95B activos). Las trazas son cadenas de pensamiento densas sobre matematicas, razonamiento general y seguimiento de instrucciones, filtradas por calidad antes del entrenamiento. No se menciona RLHF ni DPO. El ajuste fue de parametros completos (full fine-tune), no un adaptador LoRA. Sobre ese modelo, la version heretic aplica abliteration con Heretic v2.0.0.dev0: se identifican direcciones de rechazo mediante `direction_index = 10.11` y se modulan los pesos de `attn.o_proj` (max_weight 1.49, min_weight 1.37) y `mlp.down_proj` (max_weight 0.75, min_weight 0.69). El proceso es reproducible y el repositorio incluye instrucciones en el directorio `reproduce`.
 
@@ -53,7 +53,7 @@ El entrenamiento del modelo original (empero-ai/Qwen3.8-2B-Distill) fue un SFT p
 
 ## Benchmarks y rendimiento
 
-Los resultados de la tabla siguiente corresponden al modelo padre empero-ai/Qwen3.8-2B (el destilado sin abliterar), medidos con lm-evaluation-harness y backend de HuggingFace, con protocolos de cadena de pensamiento y los mismos ajustes para base y estudiante. No se han publicado resultados especificos del modelo heretic en estas tareas.
+Los resultados de la tabla siguiente corresponden al modelo padre empero-ai/Qwen3.8-2B (el destilado sin abliterar), medidos con lm-evaluation-harness y backend de Hugging Face, con protocolos de cadena de pensamiento y los mismos ajustes para base y estudiante. No se han publicado resultados especificos del modelo heretic en estas tareas.
 
 | Tarea | Metrica | Qwen3.5-2B (base) | Qwen3.8-2B | Delta |
 |---|---|---|---|---|
@@ -79,18 +79,18 @@ Ajustes de muestreo recomendados por el autor: `temperature=0.6`, `top_p=0.95`, 
 - GPU recomendadas: cualquier GPU moderna con 8 GB o mas para bf16 a contextos cortos (RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4090, L4, A10G). Para contexto completo de 262.144 tokens se recomienda una GPU de 24-80 GB (RTX 4090, A100, H100) o servir con atencion paginada en vLLM o SGLang.
 - Cabe en GPU consumer: si, en bf16 en tarjetas de 8-12 GB con contextos moderados, y en cuantizaciones de 4 bits en equipos con menos VRAM. La model card menciona ejecucion en telefonos, placas de un solo board y maquinas solo-CPU con builds cuantizados.
 - Kernels obligatorios: `flash-linear-attention` y `causal_conv1d` compilados para la version de CUDA en uso. Sin ellos, las capas de atencion lineal caen a operaciones PyTorch lentas y con alto consumo de memoria.
-- Opciones de despliegue: HuggingFace Transformers (con soporte reciente de Qwen3.5), vLLM y SGLang segun la propia model card. No se confirma soporte de llama.cpp, Ollama, TGI ni llama-cpp-python en la informacion disponible, ya que el repositorio solo contiene safetensors.
+- Opciones de despliegue: Hugging Face Transformers (con soporte reciente de Qwen3.5), vLLM y SGLang segun la propia model card. No se confirma soporte de llama.cpp, Ollama, TGI ni llama-cpp-python en la informacion disponible, ya que el repositorio solo contiene safetensors.
 - Latencia y throughput: no disponible. No se han publicado mediciones de tokens por segundo ni de latencia por peticion.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| htb-ac-1424625/Qwen3.8-2B-Distill-heretic | 2,2B denso | 262.144 | Apache 2.0 | HuggingFace, 0 descargas, 1 like | Derivado abliterated; rechazos 3/100; sin benchmarks propios publicados |
-| empero-ai/Qwen3.8-2B-Distill | 2,2B denso | 262.144 | Apache 2.0 | HuggingFace | Modelo padre; GSM8K CoT 0,640 y MMLU CoT 0,548 (metrica flexible) |
-| Qwen/Qwen3.5-2B | 2B denso | 262.144 | Apache 2.0 | HuggingFace | Base sin destilar; GSM8K CoT 0,330 y MMLU CoT 0,283 (metrica flexible) |
-| empero-ai/Qwen3.8-9B | No disponible | 262.144 | Apache 2.0 | HuggingFace | Mismo profesor y curriculo, mayor capacidad; benchmarks no detallados en la informacion disponible |
-| empero-ai/Qwen3.8-4B | No disponible | 262.144 | Apache 2.0 | HuggingFace | Mismo profesor y curriculo, capacidad intermedia; benchmarks no detallados en la informacion disponible |
+| htb-ac-1424625/Qwen3.8-2B-Distill-heretic | 2,2B denso | 262.144 | Apache 2.0 | Hugging Face, 0 descargas, 1 like | Derivado abliterated; rechazos 3/100; sin benchmarks propios publicados |
+| empero-ai/Qwen3.8-2B-Distill | 2,2B denso | 262.144 | Apache 2.0 | Hugging Face | Modelo padre; GSM8K CoT 0,640 y MMLU CoT 0,548 (metrica flexible) |
+| Qwen/Qwen3.5-2B | 2B denso | 262.144 | Apache 2.0 | Hugging Face | Base sin destilar; GSM8K CoT 0,330 y MMLU CoT 0,283 (metrica flexible) |
+| empero-ai/Qwen3.8-9B | No disponible | 262.144 | Apache 2.0 | Hugging Face | Mismo profesor y curriculo, mayor capacidad; benchmarks no detallados en la informacion disponible |
+| empero-ai/Qwen3.8-4B | No disponible | 262.144 | Apache 2.0 | Hugging Face | Mismo profesor y curriculo, capacidad intermedia; benchmarks no detallados en la informacion disponible |
 
 No se dispone de datos comparativos con otros modelos abliterated de la misma clase (por ejemplo, variantes sin censura de familias Qwen o Llama) en la informacion proporcionada.
 
@@ -110,7 +110,7 @@ No se dispone de datos comparativos con otros modelos abliterated de la misma cl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/htb-ac-1424625/Qwen3.8-2B-Distill-heretic
+- Modelo en Hugging Face: https://huggingface.co/htb-ac-1424625/Qwen3.8-2B-Distill-heretic
 - Modelo padre destilado: https://huggingface.co/empero-ai/Qwen3.8-2B-Distill
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Hermano de mayor tamano: https://huggingface.co/empero-ai/Qwen3.8-9B

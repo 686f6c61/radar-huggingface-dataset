@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - RAM minima: 2.0 GB.
 - Tamano de instalacion: 546.0 MB (desglose: `model_q8.onnx` 401.3 KB, `model_q8.onnx.data` 541.1 MB, `tokenizer.json` 4.5 MB, `labels.json` 5.4 KB, `onnx_export_metadata.json` 1.4 KB).
 - GPU recomendadas: ninguna, disenado para CPU.
-- Opciones de despliegue: se ejecuta con ONNX Runtime (`onnxruntime`), usando el grafo `model_q8.onnx` y el tokenizador de HuggingFace (`tokenizers`). No requiere servidores de inferencia como vLLM o TGI.
+- Opciones de despliegue: se ejecuta con ONNX Runtime (`onnxruntime`), usando el grafo `model_q8.onnx` y el tokenizador de Hugging Face (`tokenizers`). No requiere servidores de inferencia como vLLM o TGI.
 - Latencia y throughput: no se proporcionan datos especificos, pero al ser un encoder de 350M cuantizado, es apto para inferencia en tiempo real en CPU para textos de hasta 2,048 subpalabras.
 
 ## Comparativa con modelos similares
@@ -80,7 +80,7 @@ La principal diferencia frente al modelo original es el formato de pesos: este m
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Fazmin/solus3_lfm2-encoder-350m-pii-q8)
+- [Modelo en Hugging Face](https://huggingface.co/Fazmin/solus3_lfm2-encoder-350m-pii-q8)
 - [Modelo original: LiquidAI/LFM2.5-Encoder-350M-PII-Detector](https://huggingface.co/LiquidAI/LFM2.5-Encoder-350M-PII-Detector)
 - [Blog de Liquid AI sobre los encoders LFM2.5](https://www.liquid.ai/blog/lfm2-5-encoders)
 - [Documentacion de Liquid AI para LFM2.5-Encoder-350M](https://docs.liquid.ai/lfm/models/lfm25-encoder-350m)

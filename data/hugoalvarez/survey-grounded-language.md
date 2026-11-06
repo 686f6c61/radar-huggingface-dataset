@@ -12,7 +12,7 @@ El contenido temático de las notas gira en torno al alcance de una pregunta de 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (la etiqueta `transformer` es una etiqueta de libreria de HuggingFace, no una descripcion de arquitectura; la model card no describe ninguna) |
+| Arquitectura | no disponible (la etiqueta `transformer` es una etiqueta de libreria de Hugging Face, no una descripcion de arquitectura; la model card no describe ninguna) |
 | Parametros totales | 33.088 (dato real de safetensors) |
 | Parametros activos | no aplica (no hay evidencia de que sea un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -28,7 +28,7 @@ El contenido temático de las notas gira en torno al alcance de una pregunta de 
 
 ## Arquitectura y entrenamiento
 
-No hay información de arquitectura ni de entrenamiento. La model card no menciona número de tokens, composición del dataset, tokenizador, configuración de atención, ni fases de ajuste (RLHF, DPO, SFT). No se documenta ninguna innovación técnica. La etiqueta `transformer` procede del sistema de etiquetado por librería de HuggingFace y no constituye una especificación.
+No hay información de arquitectura ni de entrenamiento. La model card no menciona número de tokens, composición del dataset, tokenizador, configuración de atención, ni fases de ajuste (RLHF, DPO, SFT). No se documenta ninguna innovación técnica. La etiqueta `transformer` procede del sistema de etiquetado por librería de Hugging Face y no constituye una especificación.
 
 El recuento de 33.088 parámetros es incompatible con un transformer de lenguaje funcional: a título comparativo, un modelo de 33 K parámetros es aproximadamente un 0,027 % del tamaño de GPT-2 small (124 M) y un 0,003 % de un modelo de 1 B parámetros. Es consistente con un tensor auxiliar, una prueba de forma (*shape test*) o un artefacto de inicialización, no con pesos entrenados para generación. El repositorio no declara código de entrenamiento, semillas, hardware ni registros de ejecución; la propia model card indica que, si se añadieran resultados, deberían incluir versiones de dataset, comandos, semillas, hardware y *logs* en crudo.
 
@@ -86,7 +86,7 @@ Para un evaluador interesado en el tema declarado (lenguaje anclado, *referring 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hugoalvarez/survey-grounded-language
+- Repositorio en Hugging Face: https://huggingface.co/hugoalvarez/survey-grounded-language
 - Nota principal dentro del repositorio: `reading.md`
 - Documentación del repositorio: `README.md`
 - La búsqueda web no devolvió resultados relevantes (ni papers, ni blogs, ni repos, ni demos) asociados a este repositorio. No se incluyen enlaces externos adicionales.

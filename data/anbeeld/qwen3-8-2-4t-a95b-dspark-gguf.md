@@ -86,7 +86,7 @@ No se dispone de informacion suficiente en los datos proporcionados para realiza
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Anbeeld/Qwen3.8-2.4T-A95B-DSpark-GGUF
+- Hugging Face: https://huggingface.co/Anbeeld/Qwen3.8-2.4T-A95B-DSpark-GGUF
 - Modelo base del draft: https://huggingface.co/RadixArk/Qwen3.8-2.4T-A95B-DSpark
 - Modelo objetivo: https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B
 - Objetivo NVFP4: https://huggingface.co/RadixArk/Qwen3.8-2.4T-A95B-NVFP4

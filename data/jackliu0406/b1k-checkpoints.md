@@ -80,7 +80,7 @@ La comparacion cuantitativa (exito en tareas, precision de acciones) no esta dis
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JackLiu0406/b1k-checkpoints
+- Repositorio Hugging Face: https://huggingface.co/JackLiu0406/b1k-checkpoints
 - Modelo base: https://huggingface.co/IliaLarchenko/behavior_50t_checkpoint
 - Repositorio asociado de migracion (DA3/pi0.5): https://huggingface.co/JackLiu0406/b1k-da3-pi05-code
 - Codigo fuente del solucion BEHAVIOR-1K: https://github.com/IliaLarchenko/behavior-1k-solution

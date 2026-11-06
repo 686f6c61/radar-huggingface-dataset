@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ACE-Step-v1-3.5B es un modelo fundacional de generación de música a partir de descripciones en lenguaje natural, desarrollado conjuntamente por ACE Studio y StepFun. Combina un esquema de difusión con el autoencoder de compresión profunda DCAE de Sana y un transformer lineal ligero, lo que le permite generar canciones completas de varios minutos con una velocidad muy superior a las alternativas basadas en LLM. El repositorio publicado por Tuhinkar en HuggingFace empaqueta los pesos en formato diffusers y safetensors bajo licencia Apache 2.0.
+ACE-Step-v1-3.5B es un modelo fundacional de generación de música a partir de descripciones en lenguaje natural, desarrollado conjuntamente por ACE Studio y StepFun. Combina un esquema de difusión con el autoencoder de compresión profunda DCAE de Sana y un transformer lineal ligero, lo que le permite generar canciones completas de varios minutos con una velocidad muy superior a las alternativas basadas en LLM. El repositorio publicado por Tuhinkar en Hugging Face empaqueta los pesos en formato diffusers y safetensors bajo licencia Apache 2.0.
 
 El modelo resuelve el problema de la generación musical de larga duración con coherencia estructural: frente a aproximaciones autoregresivas que escalan mal en tiempo, ACE-Step produce cuatro minutos de audio en torno a 20 segundos en una A100. Admite control de duración, descripciones textuales y edición de letras, y está pensado como base para herramientas de producción musical, remezclas y asistentes creativos.
 
@@ -45,7 +45,7 @@ La model card no detalla el volumen de tokens de entrenamiento, la composición 
 - Edición de letras en flujos de postproducción: la capacidad de editar letras permite ajustar una maqueta sin regenerar la totalidad del audio.
 - Herramientas para creadores de contenido: integración en asistentes creativos que generan música de fondo original y libre de reclamaciones de derechos, con la licencia Apache 2.0 como base legal.
 - Investigación en generación de audio: el modelo sirve como base para experimentos de fine-tuning en géneros especializados (rap, jazz) o para estudiar la coherencia melódica, armónica y rítmica en modelos de difusión.
-- Prototipado rápido en demos web: al caber en GPUs de consumo y en M2 Max con RTF superior a 1, se puede desplegar en espacios de HuggingFace o entornos locales para demostraciones interactivas.
+- Prototipado rápido en demos web: al caber en GPUs de consumo y en M2 Max con RTF superior a 1, se puede desplegar en espacios de Hugging Face o entornos locales para demostraciones interactivas.
 
 ## Benchmarks y rendimiento
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks de calidad musical (FAD, CLAP score
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ACE-Step-v1-3.5B | ~3.500 M | no disponible | RTF 27,27x en A100 (27 pasos) | Apache 2.0 | HuggingFace, GitHub |
+| ACE-Step-v1-3.5B | ~3.500 M | no disponible | RTF 27,27x en A100 (27 pasos) | Apache 2.0 | Hugging Face, GitHub |
 | Alternativas de generación musical open source | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone en la información proporcionada de datos verificables sobre modelos comparables de la misma categoría (generación de música text-to-audio) para establecer una comparación cuantitativa.
@@ -93,7 +93,7 @@ No se dispone en la información proporcionada de datos verificables sobre model
 
 ## Enlaces
 
-- [HuggingFace: Tuhinkar/ACE-Step-v1-3.5B](https://huggingface.co/Tuhinkar/ACE-Step-v1-3.5B)
+- [Hugging Face: Tuhinkar/ACE-Step-v1-3.5B](https://huggingface.co/Tuhinkar/ACE-Step-v1-3.5B)
 - [Página del proyecto](https://ace-step.github.io/)
 - [Demo Space](https://huggingface.co/spaces/ACE-Step/ACE-Step)
 - [Repositorio GitHub](https://github.com/ACE-Step/ACE-Step)

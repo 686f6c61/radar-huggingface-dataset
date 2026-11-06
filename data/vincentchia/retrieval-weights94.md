@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`vincentchia/retrieval-weights94` es un repositorio de HuggingFace publicado por el usuario vincentchia que contiene una implementación de referencia de **Mae** (arquitectura con atención lineal) orientada a tareas de **retrieval** multimodal, en una configuración de escala "tiny". El repositorio no es un modelo entrenado ni un checkpoint con pesos ajustados: el fichero `model.safetensors` es explícitamente una **inicialización válida para smoke tests**, según indica el propio autor en la model card. El recuento real de parámetros en safetensors es de 24.832, un orden de magnitud propio de un juguete de pruebas, no de un modelo de producción.
+`vincentchia/retrieval-weights94` es un repositorio de Hugging Face publicado por el usuario vincentchia que contiene una implementación de referencia de **Mae** (arquitectura con atención lineal) orientada a tareas de **retrieval** multimodal, en una configuración de escala "tiny". El repositorio no es un modelo entrenado ni un checkpoint con pesos ajustados: el fichero `model.safetensors` es explícitamente una **inicialización válida para smoke tests**, según indica el propio autor en la model card. El recuento real de parámetros en safetensors es de 24.832, un orden de magnitud propio de un juguete de pruebas, no de un modelo de producción.
 
 El interés del repositorio es fundamentalmente pedagógico y de reproducibilidad: incluye `run.py` con el modelo y un punto de entrada ejecutable, `config.json` con la configuración de arquitectura generada y `training_args.json` con la receta de experimento por defecto (optimizador Novograd con schedule de tipo step). El autor declara de forma explícita que no se reclama ninguna puntuación de benchmark y que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vincentchia/retrieval-weights94 | 24.832 | no disponible | sin benchmarks publicados | BSD-3-Clause | HuggingFace, checkpoint de inicialización |
-| CLIP (variantes tiny) | no disponible | no disponible | benchmarks públicos en retrieval | MIT (según variante) | HuggingFace, pesos entrenados |
+| vincentchia/retrieval-weights94 | 24.832 | no disponible | sin benchmarks publicados | BSD-3-Clause | Hugging Face, checkpoint de inicialización |
+| CLIP (variantes tiny) | no disponible | no disponible | benchmarks públicos en retrieval | MIT (según variante) | Hugging Face, pesos entrenados |
 | ALIGN | no disponible | no disponible | benchmarks públicos en retrieval | no disponible | no disponible |
-| BLIP / BLIP-2 | no disponible | no disponible | benchmarks públicos en retrieval | BSD-3-Clause (según variante) | HuggingFace, pesos entrenados |
+| BLIP / BLIP-2 | no disponible | no disponible | benchmarks públicos en retrieval | BSD-3-Clause (según variante) | Hugging Face, pesos entrenados |
 
 La comparación directa no es significativa: el repositorio no contiene pesos entrenados y no publica métricas, por lo que no puede contrastarse en igualdad de condiciones con modelos de retrieval con checkpoints validados.
 
@@ -82,4 +82,4 @@ La comparación directa no es significativa: el repositorio no contiene pesos en
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vincentchia/retrieval-weights94
+- Hugging Face: https://huggingface.co/vincentchia/retrieval-weights94

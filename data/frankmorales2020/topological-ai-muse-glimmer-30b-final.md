@@ -19,7 +19,7 @@ La relevancia de este trabajo radica en su enfoque de aprendizaje continuo aplic
 | Tipos de cuantizacion | El código de inferencia usa cuantización 4-bit (NF4) con doble cuantización |
 | Idiomas soportados | No disponible (el modelo base es multilingüe, pero no se especifica) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | PyTorch state dict (archivo .pt) para las cabezas; el modelo base se carga desde HuggingFace |
+| Formato de pesos | PyTorch state dict (archivo .pt) para las cabezas; el modelo base se carga desde Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - El código de inferencia especifica `max_memory={0: "22GB", "cpu": "30GB"}` con cuantización 4-bit, lo que sugiere que se necesita una GPU con al menos 22 GB de VRAM para cargar el modelo base.
 - GPUs compatibles: RTX 4090 (24 GB), A100 (40 GB), H100 (80 GB) o similares. En consumer, una RTX 3090 (24 GB) también podría funcionar.
 - El adaptador en sí (cabezas lineales) es muy ligero, pero el modelo base domina los requisitos.
-- Opciones de despliegue: el código usa HuggingFace Transformers con `BitsAndBytesConfig` para cuantización. No se mencionan vLLM, llama.cpp ni Ollama. Dado que el modelo base es multimodal, se requiere el pipeline de Transformers.
+- Opciones de despliegue: el código usa Hugging Face Transformers con `BitsAndBytesConfig` para cuantización. No se mencionan vLLM, llama.cpp ni Ollama. Dado que el modelo base es multimodal, se requiere el pipeline de Transformers.
 - Latencia y throughput: no disponibles. Dependen de la GPU y de la longitud de la secuencia.
 
 ## Comparativa con modelos similares
@@ -79,7 +79,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/frankmorales2020/topological-ai-muse-glimmer-30b-final
+- Repositorio Hugging Face: https://huggingface.co/frankmorales2020/topological-ai-muse-glimmer-30b-final
 - Modelo base: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Página de Meta sobre Muse Glimmer: https://developer.meta.com/ai/models/muse-glimmer/
 - Blog de investigación de Meta: https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model

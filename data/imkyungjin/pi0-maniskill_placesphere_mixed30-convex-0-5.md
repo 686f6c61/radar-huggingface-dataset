@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ImKyungjin/pi0-maniskill_placesphere_mixed30-convex-0.5` es un checkpoint de la política π₀ (Pi0), un modelo de tipo Vision-Language-Action (VLA) orientado al control robótico general, desarrollado originalmente por Physical Intelligence y adaptado al ecosistema LeRobot de HuggingFace. En concreto, esta versión concreta ha sido entrenada o ajustada por el usuario ImKyungjin sobre el conjunto de datos local `maniskill_placesphere_mixed30`, con lo que se trata de una especialización de la política generalista para las tareas contenidas en ese dataset de manipulación.
+El modelo `ImKyungjin/pi0-maniskill_placesphere_mixed30-convex-0.5` es un checkpoint de la política π₀ (Pi0), un modelo de tipo Vision-Language-Action (VLA) orientado al control robótico general, desarrollado originalmente por Physical Intelligence y adaptado al ecosistema LeRobot de Hugging Face. En concreto, esta versión concreta ha sido entrenada o ajustada por el usuario ImKyungjin sobre el conjunto de datos local `maniskill_placesphere_mixed30`, con lo que se trata de una especialización de la política generalista para las tareas contenidas en ese dataset de manipulación.
 
 El modelo cuenta con 3.501.372.176 parámetros (aproximadamente 3,5 mil millones) y se distribuye en formato `safetensors` con un tamano de repositorio de 7,0 GB, lo que resulta coherente con pesos almacenados en precisión de 16 bits. La licencia es Apache 2.0, lo que permite uso comercial sin restricciones adicionales, si bien el propio autor no ha publicado una model card detallada especifica para este ajuste: el README reproduce la plantilla genérica de π₀ de LeRobot y no documenta hiperparámetros, datos de entrenamiento concretos ni métricas.
 
@@ -30,7 +30,7 @@ La relevancia de este checkpoint radica en que ilustra el flujo de trabajo actua
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue la arquitectura π₀ descrita por Physical Intelligence: un modelo Vision-Language-Action que combina un codificador visual, un modelo de lenguaje y un decodificador de acciones que emite comandos de control continuos para el robot. La implementacion disponible en el Hub es la adaptacion realizada por HuggingFace dentro de LeRobot, derivada del repositorio de codigo abierto OpenPI del propio laboratorio. El objetivo de este diseno es funcionar como una política generalista capaz de interpretar instrucciones en lenguaje natural y observaciones visuales para producir trayectorias de accion en distintos robots y tareas.
+El modelo sigue la arquitectura π₀ descrita por Physical Intelligence: un modelo Vision-Language-Action que combina un codificador visual, un modelo de lenguaje y un decodificador de acciones que emite comandos de control continuos para el robot. La implementacion disponible en el Hub es la adaptacion realizada por Hugging Face dentro de LeRobot, derivada del repositorio de codigo abierto OpenPI del propio laboratorio. El objetivo de este diseno es funcionar como una política generalista capaz de interpretar instrucciones en lenguaje natural y observaciones visuales para producir trayectorias de accion en distintos robots y tareas.
 
 En cuanto al entrenamiento especifico de este checkpoint, la informacion proporcionada no detalla el numero de tokens ni los pasos de entrenamiento, la composicion exacta del dataset `maniskill_placesphere_mixed30` ni si se aplicaron tecnicas de ajuste como RLHF, DPO o fine-tuning supervisado puro sobre demostraciones. El sufijo `convex-0.5` del nombre sugiere un identificador de configuracion o hiperparametro experimental, pero su significado no queda documentado en la model card. La model card incluye un ejemplo de `lerobot-train` que referencia `--policy.type=act`, lo que apunta a que la plantilla README no fue editada para el tipo de politica real (`pi0`); conviene tratarlo como un artefacto heredado y no como descripcion fiable del procedimiento seguido.
 
@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi0-maniskill_placesphere_mixed30-convex-0.5 (este) | 3,5 B | no disponible | no disponible | Apache 2.0 | HuggingFace, 0 descargas |
-| π₀ base (Physical Intelligence / LeRobot) | no disponible en la informacion proporcionada | no disponible | no disponible | Apache 2.0 | HuggingFace y OpenPI |
-| ACT (Action Chunking Transformer, LeRobot) | no disponible en la informacion proporcionada | no disponible | no disponible | Apache 2.0 | HuggingFace (referenciado en la propia model card como `--policy.type=act`) |
-| OpenVLA | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | HuggingFace |
+| pi0-maniskill_placesphere_mixed30-convex-0.5 (este) | 3,5 B | no disponible | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
+| π₀ base (Physical Intelligence / LeRobot) | no disponible en la informacion proporcionada | no disponible | no disponible | Apache 2.0 | Hugging Face y OpenPI |
+| ACT (Action Chunking Transformer, LeRobot) | no disponible en la informacion proporcionada | no disponible | no disponible | Apache 2.0 | Hugging Face (referenciado en la propia model card como `--policy.type=act`) |
+| OpenVLA | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos cuantitativos comparativos en la informacion proporcionada; la tabla refleja unicamente la existencia de alternativas de la misma categoria (politicas de control robotico entrenadas sobre demostraciones), no sus metricas.
 
@@ -94,10 +94,10 @@ No se dispone de datos cuantitativos comparativos en la informacion proporcionad
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/ImKyungjin/pi0-maniskill_placesphere_mixed30-convex-0.5
+- Hugging Face del modelo: https://huggingface.co/ImKyungjin/pi0-maniskill_placesphere_mixed30-convex-0.5
 - Blog de Physical Intelligence sobre π₀: https://www.physicalintelligence.company/blog/pi0
 - Repositorio OpenPI de Physical Intelligence: no disponible como URL en la informacion proporcionada, aunque la model card lo menciona por nombre.
-- LeRobot (HuggingFace): https://github.com/huggingface/lerobot
+- LeRobot (Hugging Face): https://github.com/huggingface/lerobot
 - Documentacion de LeRobot: https://huggingface.co/docs/lerobot/index
 - Guia de entrenamiento de politicas: https://huggingface.co/docs/lerobot/il_robots#train-a-policy
 - Dataset asociado: local/maniskill_placesphere_mixed30 (referenciado como dataset local, sin URL publica en la informacion proporcionada)

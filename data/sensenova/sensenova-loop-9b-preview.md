@@ -85,7 +85,7 @@ Nota: la comparativa se basa en caracteristicas publicas conocidas de los modelo
 
 ## Enlaces
 
-- Model card en HuggingFace: https://huggingface.co/sensenova/SenseNova-Loop-9B-Preview
+- Model card en Hugging Face: https://huggingface.co/sensenova/SenseNova-Loop-9B-Preview
 - Repositorio de GitHub: https://github.com/OpenSenseNova/SenseNova-Loop
 - Licencia Apache 2.0 (GitHub): https://github.com/OpenSenseNova/SenseNova-Loop/blob/main/LICENSE
 - Configuracion de arquitectura (GitHub): https://github.com/OpenSenseNova/SenseNova-Loop/blob/main/config.json

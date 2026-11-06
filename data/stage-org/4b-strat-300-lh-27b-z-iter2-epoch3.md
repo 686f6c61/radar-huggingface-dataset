@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`Stage-org/4b-strat-300-LH-27b-z-iter2-epoch3` es un modelo de lenguaje de 4.539.265.536 parametros (4,54 B) publicado por la organizacion Stage-org en HuggingFace. Se trata de un ajuste por aprendizaje por refuerzo (RL) sobre el modelo `Stage-org/appworld-4b-diversity-LH-300-nyshot-27b-z-epoch3-agent-rl-epoch2`, que a su vez procede de la familia Qwen (la etiqueta del repositorio es `qwen3_5`) y esta orientado a tareas de agente con uso de herramientas. El nombre del repositorio indica la segunda iteracion (`iter2`) del entrenamiento y la tercera epoca (`epoch3`).
+`Stage-org/4b-strat-300-LH-27b-z-iter2-epoch3` es un modelo de lenguaje de 4.539.265.536 parametros (4,54 B) publicado por la organizacion Stage-org en Hugging Face. Se trata de un ajuste por aprendizaje por refuerzo (RL) sobre el modelo `Stage-org/appworld-4b-diversity-LH-300-nyshot-27b-z-epoch3-agent-rl-epoch2`, que a su vez procede de la familia Qwen (la etiqueta del repositorio es `qwen3_5`) y esta orientado a tareas de agente con uso de herramientas. El nombre del repositorio indica la segunda iteracion (`iter2`) del entrenamiento y la tercera epoca (`epoch3`).
 
 El interes tecnico del modelo esta en su procedimiento de entrenamiento, documentado en la propia model card: RL con generacion en linea, juez automatico basado en un modelo externo (`gpt-5.6-luna`) y una funcion de perdida con parametros de tipo DPPO (`dppo_mask_low` = 0,2, `dppo_mask_high` = 0,28, `adv_tau` = 1,0, `kl_tau` = 0,001). Esto lo situa en la linea de modelos pequenos especializados en razonamiento multi-paso y llamadas a herramientas, mas que en la de modelos generalistas.
 
-Ahora bien, la ficha publica es extremadamente escasa: no declara licencia, idiomas, pipeline, ni resultados de benchmarks, y el repositorio acumula 0 descargas y 0 likes en el momento de la consulta. Por tanto, cualquier evaluacion de su calidad real requiere validacion independiente; los datos que siguen proceden de los metadatos de HuggingFace y de la configuracion de entrenamiento incluida en el README.
+Ahora bien, la ficha publica es extremadamente escasa: no declara licencia, idiomas, pipeline, ni resultados de benchmarks, y el repositorio acumula 0 descargas y 0 likes en el momento de la consulta. Por tanto, cualquier evaluacion de su calidad real requiere validacion independiente; los datos que siguen proceden de los metadatos de Hugging Face y de la configuracion de entrenamiento incluida en el README.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ Ahora bien, la ficha publica es extremadamente escasa: no declara licencia, idio
 | Pipeline declarado | No disponible |
 | Dataset de entrenamiento | `Stage-org/4b-strat-300-LH-27b-z-iter2` |
 | Modelo base | `Stage-org/appworld-4b-diversity-LH-300-nyshot-27b-z-epoch3-agent-rl-epoch2` |
-| Fecha de publicacion | 22 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 22 de septiembre de 2026 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -99,7 +99,7 @@ Diferencias relevantes: frente a estos modelos, el modelo de Stage-org no declar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Stage-org/4b-strat-300-LH-27b-z-iter2-epoch3
+- Modelo en Hugging Face: https://huggingface.co/Stage-org/4b-strat-300-LH-27b-z-iter2-epoch3
 - Dataset de entrenamiento referenciado en la model card: https://huggingface.co/datasets/Stage-org/4b-strat-300-LH-27b-z-iter2
 - Modelo base referenciado en la model card: https://huggingface.co/Stage-org/appworld-4b-diversity-LH-300-nyshot-27b-z-epoch3-agent-rl-epoch2
 - Paper, blog tecnico, repositorio de codigo o demo: no disponible en la informacion proporcionada

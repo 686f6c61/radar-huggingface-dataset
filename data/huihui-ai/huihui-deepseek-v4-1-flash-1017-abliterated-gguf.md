@@ -4,7 +4,7 @@
 
 Huihui-DeepSeek-V4.1-Flash-1017-abliterated es una versión «abliterated» (sin la dirección de rechazo) del modelo deepseek-ai/DeepSeek-V4.1-Flash-1017, publicada por huihui-ai. El proceso de abliteración se realizó íntegramente sobre el GGUF con la herramienta cvector-generator de llama.cpp, sin pasar por Transformers, y afecta únicamente a las capas 11 a 28 (indexación base 0): solo se modificaron 18 tensores en total, los denominados `attn_output_b`. El sistema de expertos (MoE) no fue ablacionado, de modo que el efecto sobre el comportamiento de rechazo es parcial y localizado en la atención.
 
-El repositorio se distribuye en formato GGUF, con pipeline declarado `image-text-to-text`, lo que indica soporte multimodal de imagen y texto. Los metadatos de HuggingFace reportan 485.268.480 parámetros totales y un tamaño de repo de 1,0 GB, con licencia MIT. Conviene señalar una discrepancia relevante: el nombre y la model card describen un modelo de la familia DeepSeek V4.1 con sistema de expertos y al menos 29 capas, mientras que el recuento de parámetros comunicado (≈485 M) es propio de un modelo pequeño; esta ficha refleja ambos datos tal como aparecen y marca la inconsistencia en las advertencias.
+El repositorio se distribuye en formato GGUF, con pipeline declarado `image-text-to-text`, lo que indica soporte multimodal de imagen y texto. Los metadatos de Hugging Face reportan 485.268.480 parámetros totales y un tamaño de repo de 1,0 GB, con licencia MIT. Conviene señalar una discrepancia relevante: el nombre y la model card describen un modelo de la familia DeepSeek V4.1 con sistema de expertos y al menos 29 capas, mientras que el recuento de parámetros comunicado (≈485 M) es propio de un modelo pequeño; esta ficha refleja ambos datos tal como aparecen y marca la inconsistencia en las advertencias.
 
 El interés práctico del modelo es acotado y muy específico: sirve como material de investigación sobre direcciones de rechazo, red-teaming, generación de datos sintéticos sin filtros y evaluación de cuantizaciones GGUF agresivas (la model card cita UD-IQ1_S, 1 bit). No es un modelo para producción generalista: requiere una rama no fusionada de llama.cpp (PR 30817) y su filtrado de seguridad ha sido reducido de forma deliberada.
 
@@ -13,7 +13,7 @@ El interés práctico del modelo es acotado y muy específico: sirve como materi
 | Parámetro | Valor |
 |---|---|
 | Arquitectura | Transformer con mezcla de expertos (MoE), según los tags `deepseek_v41` y la referencia al «expert system» de la model card; proyecciones de atención denominadas `attn_output_b`; al menos 29 capas (se citan índices 0 a 28) |
-| Parámetros totales | 485.268.480 (≈485 M), dato de safetensors reportado por HuggingFace; discrepante con la familia DeepSeek V4.1 descrita |
+| Parámetros totales | 485.268.480 (≈485 M), dato de safetensors reportado por Hugging Face; discrepante con la familia DeepSeek V4.1 descrita |
 | Parámetros activos | no disponible |
 | Longitud de contexto | 262.144 tokens en el ejemplo de ejecución de la model card (`-c 262144`); contexto nativo no confirmado |
 | Tipos de cuantización | GGUF; la model card cita explícitamente UD-IQ1_S (Unsloth Dynamic, 1 bit). Conjunto completo de cuantizaciones del repo: no disponible |
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Huihui-DeepSeek-V4.1-Flash-1017-abliterated (este) | 485.268.480 reportados | 262.144 tokens en el ejemplo de la model card | Sin benchmarks publicados | MIT | GGUF, requiere fork de llama.cpp |
-| deepseek-ai/DeepSeek-V4.1-Flash-1017 (base) | no disponible | no disponible | Sin datos en esta ficha | no disponible | Repo original en HuggingFace |
+| deepseek-ai/DeepSeek-V4.1-Flash-1017 (base) | no disponible | no disponible | Sin datos en esta ficha | no disponible | Repo original en Hugging Face |
 | unsloth/DeepSeek-V4.1-Flash-1017-GGUF | no disponible | no disponible | Sin datos en esta ficha | no disponible | GGUF, origen de las variantes UD- |
 | Otras variantes abliterated de huihui-ai | no disponible | no disponible | Sin datos en esta ficha | MIT en la mayoría de sus repos | GGUF y safetensors |
 
@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento que permitan una comparación cuantitativa
 
 - Filtrado de seguridad reducido de forma deliberada: puede generar contenido sensible, controvertido o inapropiado. El autor desaconseja su uso en producción o en aplicaciones de cara al público.
 - La abliteración es parcial: solo se modificaron 18 tensores (`attn_output_b`) en las capas 11 a 28, y el sistema de expertos no se tocó, por lo que el rechazo puede persistir en muchas consultas.
-- Discrepancia de datos grave: el nombre y la model card apuntan a un modelo de la familia DeepSeek V4.1 con MoE y al menos 29 capas, mientras que HuggingFace reporta 485.268.480 parámetros. Cualquier estimación de recursos basada en ese recuento debe verificarse antes de desplegar.
+- Discrepancia de datos grave: el nombre y la model card apuntan a un modelo de la familia DeepSeek V4.1 con MoE y al menos 29 capas, mientras que Hugging Face reporta 485.268.480 parámetros. Cualquier estimación de recursos basada en ese recuento debe verificarse antes de desplegar.
 - Riesgo de alucinación: no evaluado; no hay benchmarks ni evaluaciones de fidelidad publicadas.
 - Idiomas soportados no declarados: no se puede garantizar un comportamiento correcto fuera del inglés o del chino sin pruebas propias.
 - Dependencia de una rama no fusionada de llama.cpp (PR 30817): riesgo de rotura de compatibilidad, falta de soporte en runers estándar y deuda de mantenimiento en producción.
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento que permitan una comparación cuantitativa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/huihui-ai/Huihui-DeepSeek-V4.1-Flash-1017-abliterated-GGUF
+- Repositorio Hugging Face: https://huggingface.co/huihui-ai/Huihui-DeepSeek-V4.1-Flash-1017-abliterated-GGUF
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - GGUF de origen (unsloth): https://huggingface.co/unsloth/DeepSeek-V4.1-Flash-1017-GGUF
 - Herramienta de abliteración (cvector-generator, llama.cpp): https://github.com/ggml-org/llama.cpp/blob/master/tools/cvector-generator/README.md

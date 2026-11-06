@@ -75,8 +75,8 @@ Notas: Capability = (Intelligence + Calibration) / 2, distinta de la exactitud d
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SRF-Jev-Gemma4-31B-Stage3-Reasoning-SFT128-Think4K-v2 | 31,27 B (denso) | no disponible | 87,45 % (direct) / 96,10 % (gated 4K) en panel propio de 231 preguntas | apache-2.0 | HuggingFace, repo de 62,6 GB |
-| google/gemma-4-31B-it (base) | no disponible en la información | no disponible | Lidera a los checkpoints entrenados en Direct Capability según el autor; cifra concreta no disponible | no disponible en la información | HuggingFace (modelo base referenciado) |
+| SRF-Jev-Gemma4-31B-Stage3-Reasoning-SFT128-Think4K-v2 | 31,27 B (denso) | no disponible | 87,45 % (direct) / 96,10 % (gated 4K) en panel propio de 231 preguntas | apache-2.0 | Hugging Face, repo de 62,6 GB |
+| google/gemma-4-31B-it (base) | no disponible en la información | no disponible | Lidera a los checkpoints entrenados en Direct Capability según el autor; cifra concreta no disponible | no disponible en la información | Hugging Face (modelo base referenciado) |
 | Otras alternativas de ~30 B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se han proporcionado datos verificables de otros modelos comparables en la misma categoría (por ejemplo, familias densas de 27-32 B de otros proveedores), por lo que la comparativa se limita al modelo base declarado. Cualquier comparación adicional requeriría ejecutar el mismo panel de 231 preguntas con idéntico runner y política.
@@ -100,7 +100,7 @@ No se han proporcionado datos verificables de otros modelos comparables en la mi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zhangjiaxin2012/SRF-Jev-Gemma4-31B-Stage3-Reasoning-SFT128-Think4K-v2
+- Modelo en Hugging Face: https://huggingface.co/zhangjiaxin2012/SRF-Jev-Gemma4-31B-Stage3-Reasoning-SFT128-Think4K-v2
 - Repositorio del proyecto: https://github.com/jxzhangjhu/srf-jev
 - Documentación de la comparativa de tres tamaños (23/10/2026): https://github.com/jxzhangjhu/srf-jev/tree/main/docs/gemma4/research/three-size-20261023
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it

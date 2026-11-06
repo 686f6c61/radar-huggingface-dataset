@@ -107,6 +107,6 @@ No se dispone en la información proporcionada de otros modelos comparables de r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agbalu/Belaid-75M
+- Modelo en Hugging Face: https://huggingface.co/agbalu/Belaid-75M
 - Modelo base: https://huggingface.co/agbalu/Masinissa-73M
 - No se han encontrado en la información proporcionada papers, blogs, repositorios adicionales ni demos enlazados desde la model card.

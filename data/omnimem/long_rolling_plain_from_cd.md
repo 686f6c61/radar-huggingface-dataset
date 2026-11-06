@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`omnimem/long_rolling_plain_from_cd` es un checkpoint de generacion de video texto-a-video (t2v) publicado por el usuario `omnimem` en HuggingFace. No se trata de un modelo de lenguaje, sino de un generador de video de difusion con arquitectura causal, construido sobre la familia Wan2.1 y entrenado especificamente para generar clips largos y continuos a partir de un unico prompt fijo. El checkpoint liberado corresponde a los pesos EMA del paso de entrenamiento 1200, con una linea de inicializacion documentada: CD paso 4500 EMA, despues self-forcing ordinario paso 600 EMA, y finalmente entrenamiento "rolling" plano.
+`omnimem/long_rolling_plain_from_cd` es un checkpoint de generacion de video texto-a-video (t2v) publicado por el usuario `omnimem` en Hugging Face. No se trata de un modelo de lenguaje, sino de un generador de video de difusion con arquitectura causal, construido sobre la familia Wan2.1 y entrenado especificamente para generar clips largos y continuos a partir de un unico prompt fijo. El checkpoint liberado corresponde a los pesos EMA del paso de entrenamiento 1200, con una linea de inicializacion documentada: CD paso 4500 EMA, despues self-forcing ordinario paso 600 EMA, y finalmente entrenamiento "rolling" plano.
 
 El modelo tiene 1.420.656.760 parametros almacenados en FP32 (unos 5,7 GB de pesos), una cifra coherente con la variante compacta de la familia Wan, aunque la model card no confirma explicitamente esa correspondencia. La innovacion principal es doble: por un lado, la generacion "rolling" o autoregresiva por bloques de fotogramas con una ventana de cache KV acotada, lo que permite extender la duracion sin crecer linealmente en memoria; por otro, el uso de atencion dispersa NSA con seleccion de los 12 bloques mas relevantes, implementada en la clase `CausalWanNSAModel`.
 
@@ -92,7 +92,7 @@ La informacion proporcionada no incluye datos de modelos comparables, y la busqu
 
 | Modelo | Parametros | Duracion tipica | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| omnimem/long_rolling_plain_from_cd | 1,42 B (FP32) | 60 s a 16 FPS | no disponible | HuggingFace, requiere codigo propio de OmniMem |
+| omnimem/long_rolling_plain_from_cd | 1,42 B (FP32) | 60 s a 16 FPS | no disponible | Hugging Face, requiere codigo propio de OmniMem |
 | Wan2.1 T2V (variante compacta) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible |
 | Otros generadores t2v de escala similar | no disponible | no disponible | no disponible | no disponible |
 
@@ -113,7 +113,7 @@ Como referencia cualitativa, los competidores directos de este checkpoint serian
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/omnimem/long_rolling_plain_from_cd
+- Modelo en Hugging Face: https://huggingface.co/omnimem/long_rolling_plain_from_cd
 - Repositorio de codigo de OmniMem (necesario para cargar `CausalWanNSAModel` y `CausalWanT2VPipeline`): no disponible en la informacion proporcionada
 - Paper o blog tecnico del modelo: no disponible
 - Demo o Space: no disponible

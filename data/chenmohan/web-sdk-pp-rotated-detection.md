@@ -100,9 +100,9 @@ No se dispone de datos de rendimiento de ninguna de estas alternativas en la inf
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/chenmohan/web-sdk-pp-rotated-detection
-- Model card en chino, referenciada por el autor: ppyoloe-r-s-1024/0.1.0/README.md (ruta relativa dentro del repositorio de HuggingFace)
-- Model card en ingles, referenciada por el autor: ppyoloe-r-s-1024/0.1.0/README.en.md (ruta relativa dentro del repositorio de HuggingFace)
+- Pagina del modelo en Hugging Face: https://huggingface.co/chenmohan/web-sdk-pp-rotated-detection
+- Model card en chino, referenciada por el autor: ppyoloe-r-s-1024/0.1.0/README.md (ruta relativa dentro del repositorio de Hugging Face)
+- Model card en ingles, referenciada por el autor: ppyoloe-r-s-1024/0.1.0/README.en.md (ruta relativa dentro del repositorio de Hugging Face)
 - Ficheros LICENSE y NOTICE del repositorio: mencionados en la model card como fuente de los terminos y limites de uso; no se ha podido verificar su contenido en la informacion disponible.
 - Paper, blog oficial, repositorio de codigo o demo: no disponible en la informacion proporcionada.
 - Resultados de la busqueda web: ninguno relevante; los enlaces devueltos corresponden a un establecimiento de restauracion en Nairobi sin relacion con el modelo.

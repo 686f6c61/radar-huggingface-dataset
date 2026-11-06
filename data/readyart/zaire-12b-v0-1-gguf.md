@@ -100,7 +100,7 @@ Frente a estas alternativas, Zaire-12B se diferencia únicamente por su orientac
 
 ## Enlaces
 
-- Repositorio HuggingFace (versión GGUF): https://huggingface.co/ReadyArt/Zaire-12B-v0.1-GGUF
+- Repositorio Hugging Face (versión GGUF): https://huggingface.co/ReadyArt/Zaire-12B-v0.1-GGUF
 - Modelo base en safetensors: https://huggingface.co/ReadyArt/Zaire-12B-v0.1
 - Resultados de la búsqueda web: no se han encontrado enlaces relevantes al modelo. Los resultados devueltos por la búsqueda corresponden a sitios de contenido para adultos sin relación con el repositorio y se han descartado.
 - Paper, blog técnico, repositorio de código o demo: no disponibles en la información proporcionada.

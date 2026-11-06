@@ -75,8 +75,8 @@ La comparativa se basa en datos públicos de los modelos base. No se dispone de 
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/Rin247/Qwen3-ASR-1.7B-hf-FP8
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3-ASR-1.7B-hf
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/Rin247/Qwen3-ASR-1.7B-hf-FP8
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3-ASR-1.7B-hf
 - Repositorio GitHub de Qwen3-ASR: https://github.com/QwenLM/Qwen3-ASR
-- Colección Qwen3-ASR en HuggingFace: https://huggingface.co/collections/Qwen/qwen3-asr
+- Colección Qwen3-ASR en Hugging Face: https://huggingface.co/collections/Qwen/qwen3-asr
 - Modelo base en ModelScope: https://www.modelscope.cn/models/Qwen/Qwen3-ASR-1.7B-hf

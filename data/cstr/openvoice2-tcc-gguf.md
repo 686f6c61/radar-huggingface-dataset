@@ -88,7 +88,7 @@ La comparación directa con otros convertidores de voz en GGUF no está disponib
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/cstr/openvoice2-tcc-GGUF
+- Repositorio Hugging Face: https://huggingface.co/cstr/openvoice2-tcc-GGUF
 - Modelo base OpenVoice V2: https://huggingface.co/myshell-ai/OpenVoiceV2/tree/f36e7edfe1684461a8343844af60babc2efbb727
 - Repositorio OpenVoice (commit fijado): https://github.com/myshell-ai/OpenVoice/blob/74a1d147b17a8c3092dd5430504bd83ef6c7eb23/LICENSE
-- Procedencia y hashes: PROVENANCE.json dentro del repositorio de HuggingFace
+- Procedencia y hashes: PROVENANCE.json dentro del repositorio de Hugging Face

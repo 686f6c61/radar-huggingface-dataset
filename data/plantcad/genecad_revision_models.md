@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GeneCAD revision models | ~200 M | 8.192 pb | Anotación de estructura génica en plantas | Apache 2.0 | HuggingFace (`plantcad/genecad_revision_models`) |
-| Backbone `emarro/pcad2-200M-cnet-baseline` | ~200 M | No disponible | Modelo genómico base (PlantCAD2) | No disponible | HuggingFace |
+| GeneCAD revision models | ~200 M | 8.192 pb | Anotación de estructura génica en plantas | Apache 2.0 | Hugging Face (`plantcad/genecad_revision_models`) |
+| Backbone `emarro/pcad2-200M-cnet-baseline` | ~200 M | No disponible | Modelo genómico base (PlantCAD2) | No disponible | Hugging Face |
 | Modelos de anotación génica basados en HMM (p. ej., AUGUSTUS, BRAKER) | No aplica (modelos estadísticos) | No aplica | Anotación de estructura génica | Varía (MIT, GPL, etc.) | Repositorios académicos |
 
 No se dispone de datos de rendimiento comparativo entre GeneCAD y estas alternativas en la información proporcionada.
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo entre GeneCAD y estas alternat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/plantcad/genecad_revision_models
+- Hugging Face: https://huggingface.co/plantcad/genecad_revision_models
 - Repositorio de código: `plantcad/genecad` (commit `0701f7f0d3e077fe22f81c2ea7f416e2351519cb`)
 - Backbone: https://huggingface.co/emarro/pcad2-200M-cnet-baseline (revisión `5574ff5d`)
 - Manuscrito: *Bioinformatics*, identificador BIOINF-2026-2172 (no se proporciona URL directa)

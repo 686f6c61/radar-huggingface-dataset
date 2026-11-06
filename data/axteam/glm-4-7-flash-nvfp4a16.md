@@ -87,5 +87,5 @@ No se dispone de datos de benchmarks ni de otros modelos comparables en la infor
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/axteam/GLM-4.7-Flash-NVFP4A16
+- Repositorio Hugging Face: https://huggingface.co/axteam/GLM-4.7-Flash-NVFP4A16
 - Modelo base: https://huggingface.co/zai-org/GLM-4.7-Flash

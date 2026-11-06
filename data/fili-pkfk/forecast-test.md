@@ -79,6 +79,6 @@ No se conocen modelos comparables de la misma categoría con la información pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fili-pkfk/forecast-test
+- Hugging Face: https://huggingface.co/fili-pkfk/forecast-test
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de código) relacionados con este modelo en la búsqueda web.

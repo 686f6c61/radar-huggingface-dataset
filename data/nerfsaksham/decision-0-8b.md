@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Decision-0.8b es un modelo de decisión de 0,8 mil millones de parámetros desarrollado por Saksham Arora (usuario nerfsaksham en HuggingFace). No se trata de un modelo conversacional: recibe una situación, una pregunta y un conjunto fijo de opciones, y devuelve una probabilidad para cada opción en una sola pasada hacia adelante, sin generar texto ni requerir parsing de salida. Técnicamente es un adaptador LoRA (PEFT) sobre Qwen3.5-0.8B-Base, entrenado en 14 minutos en una T4 gratuita de Kaggle.
+Decision-0.8b es un modelo de decisión de 0,8 mil millones de parámetros desarrollado por Saksham Arora (usuario nerfsaksham en Hugging Face). No se trata de un modelo conversacional: recibe una situación, una pregunta y un conjunto fijo de opciones, y devuelve una probabilidad para cada opción en una sola pasada hacia adelante, sin generar texto ni requerir parsing de salida. Técnicamente es un adaptador LoRA (PEFT) sobre Qwen3.5-0.8B-Base, entrenado en 14 minutos en una T4 gratuita de Kaggle.
 
 Su relevancia radica en resolver un problema muy concreto de los modelos pequeños: el sesgo de posición por el que favorecen la opción listada primero. Mediante una época de LoRA con reordenación aleatoria de las opciones en cada ejemplo, el modelo reduce las respuestas que cambian al reordenar opciones del 23,0 % al 8,7 % y mejora el error de calibración (ECE) de 0,067 a 0,028. Es un ejemplo interesante de especialización barata y reproducible para tareas de clasificación con opciones fijas, útil en pipelines de agentes donde se necesita una decisión calibrada en lugar de texto libre.
 
@@ -63,7 +63,7 @@ El propio autor advierte que la ganancia de accuracy es marginal en 300 pregunta
 - VRAM estimada para inferencia: en float32, el modelo base de 0,8B requiere aproximadamente 3,2 GB; con el adaptador LoRA cargado la sobrecarga adicional es mínima. No hay cifras oficiales de cuantización.
 - GPU recomendadas: cualquier GPU moderna con al menos 4-6 GB de VRAM; el entrenamiento se realizó en una NVIDIA T4 de 16 GB (Kaggle gratuito).
 - Consumer GPUs: cabe con holgura en tarjetas como la RTX 3060 de 12 GB, RTX 4060 u otras de gama media; también es viable en CPU dada su escala.
-- Opciones de despliegue: transformers + PEFT (uso documentado en la model card), y por tratarse de un modelo Qwen compatible con el ecosistema HuggingFace, debería funcionar con vLLM (fusión del adaptador) y llama.cpp/Ollama si se convierte a GGUF, aunque no hay soporte documentado explícito.
+- Opciones de despliegue: transformers + PEFT (uso documentado en la model card), y por tratarse de un modelo Qwen compatible con el ecosistema Hugging Face, debería funcionar con vLLM (fusión del adaptador) y llama.cpp/Ollama si se convierte a GGUF, aunque no hay soporte documentado explícito.
 - Latencia: al requerir una sola pasada hacia adelante sin generación autorregresiva, la latencia por decisión es muy baja (del orden de decenas de milisegundos en GPU); no hay cifras oficiales de throughput.
 
 ## Comparativa con modelos similares
@@ -92,7 +92,7 @@ La ventaja de decision-0.8b frente a un LLM generalista con prompting es la sali
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nerfsaksham/decision-0.8b
+- Modelo en Hugging Face: https://huggingface.co/nerfsaksham/decision-0.8b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B-Base
 - Repositorio GitHub (código, entrenamiento y evaluación): https://github.com/saksham10arora-dotcom/decision-0.8b
 - CLI de decisión (`decide.py`): https://github.com/saksham10arora-dotcom/decision-0.8b/blob/main/decide.py

@@ -57,7 +57,7 @@ No se dispone de información suficiente para comparar con otras alternativas de
 
 ## Limitaciones y advertencias
 
-- Licencia "other": se debe revisar la licencia específica del modelo original en su página de HuggingFace, ya que puede incluir restricciones de uso comercial o cambios no permitidos.
+- Licencia "other": se debe revisar la licencia específica del modelo original en su página de Hugging Face, ya que puede incluir restricciones de uso comercial o cambios no permitidos.
 - Idioma limitado a alemán: no es aplicable para síntesis de voz en otros idiomas, a pesar de que la colección NeuTTS Nano es multilingüe.
 - No se han documentado sesgos, riesgos de alucinación ni problemas de seguridad en la información disponible.
 - Al tratarse de una cuantización de un modelo TTS, puede haber pérdida de calidad en voces muy complejas o con acentos extremos, especialmente en cuantizaciones agresivas (Q2_K, IQ4_XS).

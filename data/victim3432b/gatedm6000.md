@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`victim3432b/gatedm6000` es un modelo publicado en HuggingFace con pipeline declarado de clasificación de texto (`text-classification`) y etiquetas que apuntan a DistilBERT como arquitectura base, junto con los frameworks PyTorch y TensorFlow. Lo desarrolla el usuario `victim3432b`, sin que la información disponible identifique una organización, un paper asociado ni documentación técnica complementaria. El repositorio tiene un tamaño de 0,0 GB y, en el momento de la consulta, no registra descargas ni interacciones.
+`victim3432b/gatedm6000` es un modelo publicado en Hugging Face con pipeline declarado de clasificación de texto (`text-classification`) y etiquetas que apuntan a DistilBERT como arquitectura base, junto con los frameworks PyTorch y TensorFlow. Lo desarrolla el usuario `victim3432b`, sin que la información disponible identifique una organización, un paper asociado ni documentación técnica complementaria. El repositorio tiene un tamaño de 0,0 GB y, en el momento de la consulta, no registra descargas ni interacciones.
 
-El modelo presenta un acceso restringido (gated), de modo que es necesario aceptar condiciones en HuggingFace antes de poder descargar los pesos o consultar los archivos. Esa circunstancia, unida a la ausencia de licencia, idiomas y métricas publicadas, limita seriamente cualquier evaluación objetiva. La ficha se limita por tanto a reflejar lo declarado en la model card y a marcar como no disponible todo aquello que no se puede verificar.
+El modelo presenta un acceso restringido (gated), de modo que es necesario aceptar condiciones en Hugging Face antes de poder descargar los pesos o consultar los archivos. Esa circunstancia, unida a la ausencia de licencia, idiomas y métricas publicadas, limita seriamente cualquier evaluación objetiva. La ficha se limita por tanto a reflejar lo declarado en la model card y a marcar como no disponible todo aquello que no se puede verificar.
 
 Por su categoría (clasificación de texto basada en DistilBERT), el interés potencial estaría en tareas de clasificación ligera y despliegue en entornos con recursos limitados, pero no hay evidencia publicada de rendimiento, datos de entrenamiento ni condiciones de uso que permitan recomendarlo para producción.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| victim3432b/gatedm6000 | no disponible | no disponible | no disponible | Gated en HuggingFace | Sin métricas ni documentación |
+| victim3432b/gatedm6000 | no disponible | no disponible | no disponible | Gated en Hugging Face | Sin métricas ni documentación |
 | distilbert-base-uncased | ~66 M | 512 tokens | Apache 2.0 | Pública | Referencia estándar de DistilBERT; ampliamente evaluado |
 | distilbert-base-multilingual-cased | ~135 M | 512 tokens | Apache 2.0 | Pública | Variante multilingüe de referencia |
 | bert-base-uncased | ~110 M | 512 tokens | Apache 2.0 | Pública | Base no destilada, mayor coste de inferencia |
@@ -71,7 +71,7 @@ La comparación se ofrece únicamente como referencia de categoría; no hay dato
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: requiere aceptar condiciones en HuggingFace, lo que impide su uso inmediato y su auditoría.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face, lo que impide su uso inmediato y su auditoría.
 - Licencia no disponible: no se puede asumir uso comercial ni redistribución.
 - Idiomas no declarados: riesgo de comportamiento degradado fuera del idioma de entrenamiento, que se desconoce.
 - Sin métricas ni model card: no hay evidencia de precisión, recall ni robustez; el riesgo de fallos silenciosos en producción es alto.
@@ -82,5 +82,5 @@ La comparación se ofrece únicamente como referencia de categoría; no hay dato
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/victim3432b/gatedm6000
+- Hugging Face: https://huggingface.co/victim3432b/gatedm6000
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

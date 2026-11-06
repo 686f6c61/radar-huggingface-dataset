@@ -2,7 +2,7 @@
 
 ## Resumen
 
-tomaszkeqk/generation es un repositorio de HuggingFace que contiene una implementación compacta y propia en PyTorch de una arquitectura denominada Mocov3, orientada a tareas de generación. No se trata de un modelo entrenado ni de un release listo para producción, sino de un punto de partida experimental: el propio autor indica que la configuración base está pensada para revisión de código, pruebas de humo (smoke tests) y experimentos pequeños y controlados. El repositorio incluye el código del modelo (`predict.py`), un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta por defecto y un `model.safetensors` que es un checkpoint de inicialización válido, no un modelo entrenado.
+tomaszkeqk/generation es un repositorio de Hugging Face que contiene una implementación compacta y propia en PyTorch de una arquitectura denominada Mocov3, orientada a tareas de generación. No se trata de un modelo entrenado ni de un release listo para producción, sino de un punto de partida experimental: el propio autor indica que la configuración base está pensada para revisión de código, pruebas de humo (smoke tests) y experimentos pequeños y controlados. El repositorio incluye el código del modelo (`predict.py`), un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta por defecto y un `model.safetensors` que es un checkpoint de inicialización válido, no un modelo entrenado.
 
 La escala declarada es "base" y el recuento de parámetros registrado en safetensors es de 16.576, una cifra extraordinariamente pequeña que confirma la naturaleza de inicialización del artefacto. La arquitectura combina atención dispersa (sparse attention), fusión mediante "co attention", activación GELU y normalización ScaleNorm, según la model card. No se declara pipeline, idiomas soportados ni resultados de benchmarks, y el repositorio no tiene descargas ni interacciones en el momento de la consulta.
 
@@ -72,10 +72,10 @@ No disponible. No se identifican modelos comparables en la información proporci
 - No se declaran idiomas soportados ni longitud de contexto, por lo que no puede garantizarse cobertura multilingüe ni manejo de secuencias largas.
 - La licencia es Apache 2.0, que permite uso comercial del código y de los pesos, pero el autor recomienda revisar por separado las condiciones de los datos de origen si se emplean datasets externos.
 - El repositorio tiene 0 descargas y 0 interacciones, y no cuenta con pipeline declarado, lo que reduce la validación por parte de la comunidad.
-- Las APIs genéricas de carga automática de HuggingFace no funcionan directamente: es necesario un adaptador explícito por tratarse de una implementación personalizada.
+- Las APIs genéricas de carga automática de Hugging Face no funcionan directamente: es necesario un adaptador explícito por tratarse de una implementación personalizada.
 - La fecha de creación registrada (2026-10-01) resulta anómala respecto al momento habitual de consulta y conviene verificarla antes de citarla.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tomaszkeqk/generation
+- Repositorio en Hugging Face: https://huggingface.co/tomaszkeqk/generation
 - La búsqueda web realizada no devolvió enlaces relevantes al modelo, a su arquitectura ni a publicaciones asociadas; los resultados obtenidos no guardan relación con el contenido técnico de esta ficha.

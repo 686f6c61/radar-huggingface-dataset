@@ -122,9 +122,9 @@ La comparación con alternativas de la misma categoría (reescritores de prompts
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/webmp3/Sakura-Qwen-Image-2.1-PE-T2I-Uncensored-GGUF
+- Modelo en Hugging Face: https://huggingface.co/webmp3/Sakura-Qwen-Image-2.1-PE-T2I-Uncensored-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I
-- Modelo de imagen Qwen-Image-2.1 en HuggingFace: https://huggingface.co/Qwen/Qwen-Image-2.1
+- Modelo de imagen Qwen-Image-2.1 en Hugging Face: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Modelo de imagen Qwen-Image-2.1 en ModelScope: https://www.modelscope.cn/models/Qwen/Qwen-Image-2.1
 - Repositorio GitHub de Qwen-Image-2.1: https://github.com/QwenLM/Qwen-Image-2.1
 - Cuantización hermana Sakura-Qwen-Image-2.1-Turbo-GGUF: https://huggingface.co/webmp3/Sakura-Qwen-Image-2.1-Turbo-GGUF

@@ -85,7 +85,7 @@ La comparativa con Ex-Omni es la más relevante: Ex-Omni-2D añade la generació
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lemonade666/Ex-Omni-2D
+- Modelo en Hugging Face: https://huggingface.co/lemonade666/Ex-Omni-2D
 - Paper en arXiv: https://arxiv.org/abs/2608.10720
 - Página del proyecto: https://logo-cuhksz.github.io/Ex-Omni-2D
 - Código de inferencia en GitHub: https://github.com/LOGO-CUHKSZ/Ex-Omni-2D-Code

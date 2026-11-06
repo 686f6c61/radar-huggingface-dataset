@@ -93,7 +93,7 @@ No se han publicado comparativas con otros modelos de la misma categoría en la 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SLBM/teutonic-II-110B-A7B-router08-b44
+- Hugging Face: https://huggingface.co/SLBM/teutonic-II-110B-A7B-router08-b44
 - Modelo base: https://huggingface.co/dendriteholdings/teutonic-II-110B-genesis
 - Noticias de la subred: https://subnetradar.com/subnet-news/3/2026-09-01
 - Paper o documentación adicional: no disponible

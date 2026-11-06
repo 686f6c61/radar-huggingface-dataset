@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| JustAct (este) | LoRA sobre V-JEPA 2 ViT-L para representaciones de acción | No disponible (adaptador 34 MB) | No disponible (clips de 64 fotogramas a 256 px) | Apache 2.0 (+ términos de Stability AI) | HuggingFace y GitHub |
+| JustAct (este) | LoRA sobre V-JEPA 2 ViT-L para representaciones de acción | No disponible (adaptador 34 MB) | No disponible (clips de 64 fotogramas a 256 px) | Apache 2.0 (+ términos de Stability AI) | Hugging Face y GitHub |
 | AdaWorld LAM (reentrenado) | Modelo de acción latente | No disponible (1,9 GB) | No disponible | Apache 2.0 (AdaWorld) | Incluido en este repo |
 | DreamDojo LAM (reentrenado) | Modelo de acción latente | No disponible (2,8 GB) | No disponible | No disponible | Incluido en este repo |
 | V-JEPA 2 ViT-L | Modelo fundacional de vídeo | No disponible | Clips de 64 fotogramas a 256 px | MIT | `facebook/vjepa2-vitl-fpc64-256` |
@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/liguang0115/justact
+- Hugging Face: https://huggingface.co/liguang0115/justact
 - Repositorio de código: https://github.com/runjiali-rl/justact
 - Página del proyecto: https://runjiali-rl.github.io/justact/
 - Modelo base V-JEPA 2 ViT-L: https://huggingface.co/facebook/vjepa2-vitl-fpc64-256

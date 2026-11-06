@@ -73,6 +73,6 @@ No se dispone de información sobre modelos directamente comparables en el mismo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pyaging/twelvecelldeconvolutebloodepiccd8nv
+- Modelo en Hugging Face: https://huggingface.co/pyaging/twelvecelldeconvolutebloodepiccd8nv
 - Catálogo de relojes pyaging: https://pyaging.readthedocs.io
 - Publicación original (Salas et al., 2022): https://doi.org/10.1038/s41467-021-27864-7

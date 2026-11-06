@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `4rfvedc/313551175-lab2-style-lora` es un adaptador LoRA (Low-Rank Adaptation) para difusión de imágenes, entrenado sobre el modelo base `CompVis/stable-diffusion-v1-4`. Lo publica el usuario de HuggingFace 4rfvedc y, segun su propia model card, se trata de un artefacto academico: un adaptador de estilo entrenado para un estudiante (identificado como 313551175) a partir de cuatro imagenes de ilustraciones geometricas de colores incluidas en el proyecto inicial del "Lab 2". Los pies de foto asociados a esas cuatro imagenes son "a bear", "a car", "a cat" y "a dog".
+El modelo `4rfvedc/313551175-lab2-style-lora` es un adaptador LoRA (Low-Rank Adaptation) para difusión de imágenes, entrenado sobre el modelo base `CompVis/stable-diffusion-v1-4`. Lo publica el usuario de Hugging Face 4rfvedc y, segun su propia model card, se trata de un artefacto academico: un adaptador de estilo entrenado para un estudiante (identificado como 313551175) a partir de cuatro imagenes de ilustraciones geometricas de colores incluidas en el proyecto inicial del "Lab 2". Los pies de foto asociados a esas cuatro imagenes son "a bear", "a car", "a cat" y "a dog".
 
 El repositorio contiene unicamente el adaptador LoRA, no los pesos del modelo base, por lo que para utilizarlo es imprescindible descargar aparte `CompVis/stable-diffusion-v1-4` (o un derivado compatible) y cargar el adaptador sobre el. No es un modelo de lenguaje ni un modelo fundacional autonomo: es un ajuste de bajo rango sobre un modelo de difusion latente de proposito general.
 
@@ -66,7 +66,7 @@ No se dispone de datos comparativos publicados para este adaptador. Como referen
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `4rfvedc/313551175-lab2-style-lora` | no disponible | no aplica | no disponible | no disponible | Publico en HuggingFace, 0 descargas |
+| `4rfvedc/313551175-lab2-style-lora` | no disponible | no aplica | no disponible | no disponible | Publico en Hugging Face, 0 descargas |
 | Alternativas de LoRA para SD 1.4 | no disponible | no aplica | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -83,7 +83,7 @@ No se dispone de datos comparativos publicados para este adaptador. Como referen
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/4rfvedc/313551175-lab2-style-lora
+- Hugging Face: https://huggingface.co/4rfvedc/313551175-lab2-style-lora
 - Modelo base: https://huggingface.co/CompVis/stable-diffusion-v1-4
 - Paper de LoRA (referencia general de la tecnica): https://arxiv.org/abs/2106.09685
 - Paper de Stable Diffusion (Latent Diffusion Models): https://arxiv.org/abs/2112.10752

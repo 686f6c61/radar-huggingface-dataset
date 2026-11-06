@@ -82,7 +82,7 @@ La comparación es aproximada: no se dispone de datos de rendimiento del modelo 
 
 ## Enlaces
 
-- Repositorio HuggingFace (este modelo): https://huggingface.co/mradermacher/Huihui-Qwen3.5-0.8B-abliterated-Athanorlite-ORPO-GGUF
+- Repositorio Hugging Face (este modelo): https://huggingface.co/mradermacher/Huihui-Qwen3.5-0.8B-abliterated-Athanorlite-ORPO-GGUF
 - Modelo base: https://huggingface.co/nbeerbower/Huihui-Qwen3.5-0.8B-abliterated-Athanorlite-ORPO
 - Cuantizaciones con imatrix: https://huggingface.co/mradermacher/Huihui-Qwen3.5-0.8B-abliterated-Athanorlite-ORPO-i1-GGUF
 - Pagina de descargas del autor: https://hf.tst.eu/model#Huihui-Qwen3.5-0.8B-abliterated-Athanorlite-ORPO-GGUF

@@ -72,7 +72,7 @@ No disponible. No se han encontrado datos comparativos con otros modelos de difu
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/Nez-Norlag/Bonkaiii_Real3D_Blend_v30_2836861_QNN2.28)
+- [Repositorio en Hugging Face](https://huggingface.co/Nez-Norlag/Bonkaiii_Real3D_Blend_v30_2836861_QNN2.28)
 - [Modelo original en Civitai](https://civitai.com/models/2590567/bonkaiiireal3dblend?modelVersionId=2956932)
 - [Perfil del autor del modelo original en Civitai](https://civitai.com/user/bonkaiii187)
 - [Herramienta Local Dream (para despliegue móvil)](https://github.com/xororz/local-dream)

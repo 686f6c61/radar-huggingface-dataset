@@ -73,5 +73,5 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- [HuggingFace - Vicgrace/AgriGemma4.9ja-E2B-GGUF](https://huggingface.co/Vicgrace/AgriGemma4.9ja-E2B-GGUF)
+- [Hugging Face - Vicgrace/AgriGemma4.9ja-E2B-GGUF](https://huggingface.co/Vicgrace/AgriGemma4.9ja-E2B-GGUF)
 - [Unsloth (librería de entrenamiento)](https://github.com/unslothai/unsloth)

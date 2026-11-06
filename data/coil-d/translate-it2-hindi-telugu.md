@@ -2,9 +2,9 @@
 
 ## Resumen
 
-COIL-D/translate-it2-hindi-telugu es un modelo de traduccion automatica neuronal especializado en el par de idiomas hindi (hi) y telugu (te), publicado por el usuario COIL-D en HuggingFace. Se trata de un ajuste fino (finetune) del modelo ai4bharat/indictrans2-indic-indic-dist-320M, un sistema seq2seq de la familia IndicTrans2 con aproximadamente 320 millones de parametros, orientado a la traduccion entre lenguas indicas. La relevancia del modelo radica en que cubre una direccion concreta —hindi a telugu y telugu a hindi— dentro de un ecosistema donde la mayoria de los recursos de traduccion de calidad se concentran en pares con el ingles como pivote.
+COIL-D/translate-it2-hindi-telugu es un modelo de traduccion automatica neuronal especializado en el par de idiomas hindi (hi) y telugu (te), publicado por el usuario COIL-D en Hugging Face. Se trata de un ajuste fino (finetune) del modelo ai4bharat/indictrans2-indic-indic-dist-320M, un sistema seq2seq de la familia IndicTrans2 con aproximadamente 320 millones de parametros, orientado a la traduccion entre lenguas indicas. La relevancia del modelo radica en que cubre una direccion concreta —hindi a telugu y telugu a hindi— dentro de un ecosistema donde la mayoria de los recursos de traduccion de calidad se concentran en pares con el ingles como pivote.
 
-El artefacto se distribuye exclusivamente en formato CTranslate2, una libreria de inferencia optimizada para CPU y GPU que permite reducir el coste de despliegue frente a frameworks genericos. El repositorio ocupa 1,3 GB, un tamano coherente con pesos sin cuantizar de un modelo de 320M de parametros, y esta etiquetado con la licencia MIT, lo que facilita su integracion en productos comerciales. El acceso esta restringido: es necesario aceptar las condiciones en HuggingFace antes de poder descargarlo.
+El artefacto se distribuye exclusivamente en formato CTranslate2, una libreria de inferencia optimizada para CPU y GPU que permite reducir el coste de despliegue frente a frameworks genericos. El repositorio ocupa 1,3 GB, un tamano coherente con pesos sin cuantizar de un modelo de 320M de parametros, y esta etiquetado con la licencia MIT, lo que facilita su integracion en productos comerciales. El acceso esta restringido: es necesario aceptar las condiciones en Hugging Face antes de poder descargarlo.
 
 El modelo cuenta con 0 descargas y 0 «likes» en el momento de redactar esta ficha, y fue creado y actualizado el 29 de septiembre de 2026. Las etiquetas incluyen una referencia a un articulo en arXiv (2609.28826) que no se ha podido recuperar en la busqueda web realizada, por lo que no se dispone de detalles sobre el proceso de entrenamiento ni de resultados de evaluacion.
 
@@ -21,7 +21,7 @@ El modelo cuenta con 0 descargas y 0 «likes» en el momento de redactar esta fi
 | Licencia | MIT |
 | Formato de pesos | CTranslate2 (libreria ctranslate2); no se distribuye en safetensors ni GGUF |
 
-Otros datos de interes: pipeline declarado `translation`, etiquetas adicionales `indictrans2`, `indic-languages`, `hin-tel`, `tel-hin`; region `us`; acceso restringido (gated) con aceptacion de condiciones previa en HuggingFace.
+Otros datos de interes: pipeline declarado `translation`, etiquetas adicionales `indictrans2`, `indic-languages`, `hin-tel`, `tel-hin`; region `us`; acceso restringido (gated) con aceptacion de condiciones previa en Hugging Face.
 
 ## Arquitectura y entrenamiento
 
@@ -81,14 +81,14 @@ La comparacion se limita a datos publicos de caracter general, ya que la informa
 - Cobertura limitada a dos idiomas y dos direcciones; el modelo no debe utilizarse con otras lenguas, ni siquiera como pivote hacia el ingles.
 - No se dispone de informacion sobre la longitud de contexto soportada ni sobre el comportamiento con documentos largos; es previsible que el modelo base trabaje a nivel de segmento y requiera troceado previo.
 - La ficha no documenta sesgos linguisticos concretos, pero al derivar de un corpus de entrenamiento no especificado puede reproducir sesgos de genero, casta, religion o registro presentes en los datos originales.
-- Acceso restringido: es obligatorio aceptar las condiciones en HuggingFace antes de descargar los pesos, lo que anade un paso a cualquier pipeline automatizado.
+- Acceso restringido: es obligatorio aceptar las condiciones en Hugging Face antes de descargar los pesos, lo que anade un paso a cualquier pipeline automatizado.
 - Ausencia de mantenimiento verificable: con 0 descargas y 0 «likes», no hay evidencia de uso en produccion, comunidad activa ni correccion de errores posteriores a la publicacion.
 - Licencia MIT declarada en la ficha, favorable al uso comercial, pero conviene verificar que las condiciones del modelo base IndicTrans2 sean compatibles con la redistribucion del finetune.
 - No dispone de pesos GGUF ni safetensors, lo que limita la portabilidad a otras herramientas de inferencia distintas de CTranslate2.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/COIL-D/translate-it2-hindi-telugu
+- Modelo en Hugging Face: https://huggingface.co/COIL-D/translate-it2-hindi-telugu
 - Modelo base: https://huggingface.co/ai4bharat/indictrans2-indic-indic-dist-320M
 - Referencia arXiv declarada en las etiquetas (no verificada): https://arxiv.org/abs/2609.28826
 - Repositorio de CTranslate2: https://github.com/OpenNMT/CTranslate2

@@ -25,7 +25,7 @@ El aspecto mas delicado del repositorio es el soporte de tool calling. El modelo
 
 El modelo no es un entrenamiento nuevo, sino una cuantizacion post-entrenamiento del checkpoint Qwen2.5-Coder-14B-Instruct. La arquitectura es un transformer denso convencional con embedding de salida no atado: la unica capa conservada en BF16 es `lm_head`, decision que el autor describe como seguro barato para la calidad de los logits. No hay puertas de atencion lineal, ni expertos MoE, ni torre de vision en este modelo. La cuantizacion se realizo con AutoRound (Intel) en esquema W4A16, con tamano de grupo 128 y modo simetrico.
 
-La calibracion es el principal elemento diferencial respecto a otras cuantizaciones comunitarias: 512 muestras de 2048 tokens con una composicion de 55% codigo (`ise-uiuc/Magicoder-OSS-Instruct-75K`), 30% tool-calling (`NousResearch/hermes-function-calling-v1`) y 15% texto general (`NeelNanda/pile-10k`). El README no menciona fases adicionales de RLHF o DPO aplicadas sobre esta cuantizacion: el alineamiento procede del modelo base Instruct. Como innovacion practica, el repositorio incluye un parser de llamadas a herramientas tolerante a formatos (`qwen25coder_flex_tool_parser.py`) y un script de instalacion (`install_tool_parser.sh`); existe ademas un intento de LoRA sobre proyecciones de atencion/MLP que no corrigio la conformidad de etiquetas (0/120) hasta anadir `lm_head` a los modulos objetivo, y que no esta publicado en HuggingFace.
+La calibracion es el principal elemento diferencial respecto a otras cuantizaciones comunitarias: 512 muestras de 2048 tokens con una composicion de 55% codigo (`ise-uiuc/Magicoder-OSS-Instruct-75K`), 30% tool-calling (`NousResearch/hermes-function-calling-v1`) y 15% texto general (`NeelNanda/pile-10k`). El README no menciona fases adicionales de RLHF o DPO aplicadas sobre esta cuantizacion: el alineamiento procede del modelo base Instruct. Como innovacion practica, el repositorio incluye un parser de llamadas a herramientas tolerante a formatos (`qwen25coder_flex_tool_parser.py`) y un script de instalacion (`install_tool_parser.sh`); existe ademas un intento de LoRA sobre proyecciones de atencion/MLP que no corrigio la conformidad de etiquetas (0/120) hasta anadir `lm_head` a los modulos objetivo, y que no esta publicado en Hugging Face.
 
 ## Capacidades
 
@@ -59,7 +59,7 @@ Medidos con EleutherAI lm-evaluation-harness contra el endpoint servido. El auto
 | HumanEval (pass@1) | 68,29% ± 3,64% |
 | MMLU-Pro (100 por asignatura) | 41,71% ± 1,29% |
 
-Resultados del build experimental con LoRA de correccion de etiquetas (no publicado en HuggingFace), frente al build publicado:
+Resultados del build experimental con LoRA de correccion de etiquetas (no publicado en Hugging Face), frente al build publicado:
 
 | Tarea | Build publicado | Build con LoRA toolfix-v2 |
 |---|---|---|
@@ -82,16 +82,16 @@ Resultados del build experimental con LoRA de correccion de etiquetas (no public
 
 | Modelo | Parametros | Contexto | MMLU-Pro | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fasolack/Qwen2.5-Coder-14B-W4A16 | 14B (int4) | 32.768 tokens (configurado) | 41,71% | apache-2.0 | Publicado en HuggingFace |
-| Qwen/Qwen2.5-Coder-14B-Instruct (BF16) | 14B | no disponible en esta informacion | no disponible en esta informacion | apache-2.0 | Publicado en HuggingFace |
-| Builds de 27B/35B de la misma familia | 27B-35B | no disponible | "en los 80" segun el README | no disponible | No publicados en HuggingFace |
+| fasolack/Qwen2.5-Coder-14B-W4A16 | 14B (int4) | 32.768 tokens (configurado) | 41,71% | apache-2.0 | Publicado en Hugging Face |
+| Qwen/Qwen2.5-Coder-14B-Instruct (BF16) | 14B | no disponible en esta informacion | no disponible en esta informacion | apache-2.0 | Publicado en Hugging Face |
+| Builds de 27B/35B de la misma familia | 27B-35B | no disponible | "en los 80" segun el README | no disponible | No publicados en Hugging Face |
 | Generacion actual de Qwen (densos 27B+, MoE 30B+) | 27B+ | no disponible | no disponible | no disponible | Publicados por Qwen, no cabe en 12 GB |
 
 ## Limitaciones y advertencias
 
 - El tool calling no es conforme con la plantilla del modelo base: puede emitir `<tools>`, `<function-call>` o ninguna etiqueta en lugar de `<tool_call>`. El autor verifico que es un defecto del modelo base, no de la cuantizacion, reproduciendolo contra el checkpoint BF16 original.
 - El parser estandar `hermes` de vLLM falla en silencio con este modelo: las llamadas a herramientas acaban como texto plano en `content` con `finish_reason: "stop"`, sin poblar `tool_calls`. Sin el parser incluido, no es fiable detras de un agente.
-- El build corregido con LoRA (`Qwen2.5-Coder-14B-W4A16-toolfix-v2`) consigue 100% de conformidad de etiquetas pero degrada HumanEval pass@1 en casi 10 puntos y GSM8K strict-match en unos 7 puntos. No esta publicado en HuggingFace.
+- El build corregido con LoRA (`Qwen2.5-Coder-14B-W4A16-toolfix-v2`) consigue 100% de conformidad de etiquetas pero degrada HumanEval pass@1 en casi 10 puntos y GSM8K strict-match en unos 7 puntos. No esta publicado en Hugging Face.
 - No se midio una linea base BF16 para este build, por lo que no se puede cuantificar aqui la perdida exacta atribuible a la cuantizacion.
 - El MMLU-Pro de 41,71% es bajo en terminos absolutos y refleja las limitaciones del modelo base: es mas pequeno y de generacion anterior que los builds de 27B/35B de la familia, y esta especializado en codigo.
 - El repositorio no declara idiomas soportados ni sesgos conocidos; no hay evaluaciones de sesgo publicadas.
@@ -102,7 +102,7 @@ Resultados del build experimental con LoRA de correccion de etiquetas (no public
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fasolack/Qwen2.5-Coder-14B-W4A16
+- Modelo en Hugging Face: https://huggingface.co/fasolack/Qwen2.5-Coder-14B-W4A16
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-14B-Instruct
 - AutoRound (Intel), herramienta de cuantizacion: https://github.com/intel/auto-round
 - Registro del proyecto complementario citado en el README: https://claude.ai/code/artifact/ba8a6f62-040d-4631-a185-c029525d1073

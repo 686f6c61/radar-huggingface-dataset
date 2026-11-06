@@ -68,7 +68,7 @@ No se dispone de información sobre modelos directamente comparables en la misma
 
 ## Enlaces
 
-- [HuggingFace - VEDB-SimCLR-ResNet18-Periph-NF](https://huggingface.co/DM-Diaz/VEDB-SimCLR-ResNet18-Periph-NF)
+- [Hugging Face - VEDB-SimCLR-ResNet18-Periph-NF](https://huggingface.co/DM-Diaz/VEDB-SimCLR-ResNet18-Periph-NF)
 - [Colección VEDB - Eccentricity-Constrained SimCLR Models](https://hf.co/collections/DM-Diaz/eccentricity-constrained-simclr-models-vedb)
 - [Paper del estudio (arXiv:2607.19316)](https://arxiv.org/abs/2607.19316)
 - [NeuroFovea (arXiv:1705.10041)](https://arxiv.org/abs/1705.10041)

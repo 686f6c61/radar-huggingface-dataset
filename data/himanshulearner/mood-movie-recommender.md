@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`himanshulearner/mood-movie-recommender` es un repositorio publicado en HuggingFace por el usuario himanshulearner bajo licencia MIT. En el momento de la consulta acumula 0 descargas y 0 likes, el pipeline no está declarado y la model card únicamente contiene la línea `license: mit`, sin ningún apartado descriptivo. El tamaño del repositorio es de 0,2 GB.
+`himanshulearner/mood-movie-recommender` es un repositorio publicado en Hugging Face por el usuario himanshulearner bajo licencia MIT. En el momento de la consulta acumula 0 descargas y 0 likes, el pipeline no está declarado y la model card únicamente contiene la línea `license: mit`, sin ningún apartado descriptivo. El tamaño del repositorio es de 0,2 GB.
 
 No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni idiomas soportados. El identificador del repositorio sugiere un sistema de recomendacion de peliculas basado en el estado de animo del usuario, pero esta interpretacion se deduce exclusivamente del nombre y no esta confirmada por ninguna documentacion tecnica del autor.
 
@@ -74,7 +74,7 @@ No disponible. No es posible establecer una comparativa rigurosa sin conocer par
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| himanshulearner/mood-movie-recommender | no disponible | no disponible | no disponible | MIT | HuggingFace, 0 descargas |
+| himanshulearner/mood-movie-recommender | no disponible | no disponible | no disponible | MIT | Hugging Face, 0 descargas |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se identifican en la informacion proporcionada modelos comparables de la misma categoria y tamano con los que establecer una comparacion con datos verificables.
@@ -93,6 +93,6 @@ No se identifican en la informacion proporcionada modelos comparables de la mism
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/himanshulearner/mood-movie-recommender
-- Perfil del autor en HuggingFace: https://huggingface.co/himanshulearner
+- Repositorio en Hugging Face: https://huggingface.co/himanshulearner/mood-movie-recommender
+- Perfil del autor en Hugging Face: https://huggingface.co/himanshulearner
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada.

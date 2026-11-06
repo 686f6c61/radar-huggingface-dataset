@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Saint-Varda-0.5B-Complete es un checkpoint de generacion de texto de aproximadamente 494 millones de parametros (494.032.768 segun los pesos en safetensors), publicado en HuggingFace por el usuario Jessy-bubble. El identificador del repositorio y el tag `qwen2` apuntan a un ajuste o derivado de la familia Qwen2 de Alibaba, pero el autor no documenta el modelo base exacto ni el proceso de ajuste. La model card es la plantilla autogenerada de HuggingFace y mantiene sin rellenar practicamente todos los campos: desarrollador, financiacion, tipo de modelo, idiomas, licencia, datos de entrenamiento y evaluacion figuran como "[More Information Needed]".
+Saint-Varda-0.5B-Complete es un checkpoint de generacion de texto de aproximadamente 494 millones de parametros (494.032.768 segun los pesos en safetensors), publicado en Hugging Face por el usuario Jessy-bubble. El identificador del repositorio y el tag `qwen2` apuntan a un ajuste o derivado de la familia Qwen2 de Alibaba, pero el autor no documenta el modelo base exacto ni el proceso de ajuste. La model card es la plantilla autogenerada de Hugging Face y mantiene sin rellenar practicamente todos los campos: desarrollador, financiacion, tipo de modelo, idiomas, licencia, datos de entrenamiento y evaluacion figuran como "[More Information Needed]".
 
 El problema que resuelve no esta declarado por el autor. Por tamano y por la etiqueta `conversational`, el caso de uso previsto parece ser la generacion de texto conversacional en entornos con recursos muy limitados (edge, CPU, GPUs de gama baja), donde un modelo de menos de 1 GB en precision de 16 bits puede desplegarse sin infraestructura especializada. Es relevante ahora unicamente como candidato a experimentacion y ajuste fino ligero, no como sustituto de modelos frontera: en el momento de redactar esta ficha el repositorio acumula 0 descargas y 0 likes, y no se ha publicado ninguna evaluacion.
 
@@ -26,9 +26,9 @@ No hay informacion sobre arquitectura interna (numero de capas, dimension oculta
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura interna. El unico dato tecnico util es el tag `qwen2` asociado al repositorio, que en el ecosistema de HuggingFace se asigna en funcion de la clase de configuracion del modelo. Si se confirma, implicaria un transformer decoder-only con normalizacion RMSNorm, activacion SwiGLU, embeddings rotatorios (RoPE) y atencion con consultas agrupadas (GQA), que son los elementos comunes de la familia Qwen2. Ninguno de estos extremos esta verificado por el autor y no se dispone del numero de capas, la dimension del modelo ni el vocabulario.
+No hay informacion publicada sobre la arquitectura interna. El unico dato tecnico util es el tag `qwen2` asociado al repositorio, que en el ecosistema de Hugging Face se asigna en funcion de la clase de configuracion del modelo. Si se confirma, implicaria un transformer decoder-only con normalizacion RMSNorm, activacion SwiGLU, embeddings rotatorios (RoPE) y atencion con consultas agrupadas (GQA), que son los elementos comunes de la familia Qwen2. Ninguno de estos extremos esta verificado por el autor y no se dispone del numero de capas, la dimension del modelo ni el vocabulario.
 
-Tampoco hay datos de entrenamiento: se desconoce el numero de tokens, la composicion del corpus, si hubo ajuste supervisado, RLHF o DPO, ni si el checkpoint parte de un modelo preentrenado de terceros. La model card no incluye hiperparametros, regimen de precision (fp32, bf16, fp16) ni infraestructura de computo. El identificador `arxiv:1910.09700` que aparece entre los tags corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono, citado en la propia plantilla de model card de HuggingFace; no es un articulo sobre este modelo.
+Tampoco hay datos de entrenamiento: se desconoce el numero de tokens, la composicion del corpus, si hubo ajuste supervisado, RLHF o DPO, ni si el checkpoint parte de un modelo preentrenado de terceros. La model card no incluye hiperparametros, regimen de precision (fp32, bf16, fp16) ni infraestructura de computo. El identificador `arxiv:1910.09700` que aparece entre los tags corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono, citado en la propia plantilla de model card de Hugging Face; no es un articulo sobre este modelo.
 
 ## Capacidades
 
@@ -71,16 +71,16 @@ Los datos de los modelos comparativos proceden de su documentacion publica y no 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Saint-Varda-0.5B-Complete | 0,49 B | No disponible | No disponible | HuggingFace, solo safetensors |
-| Qwen2-0.5B | 0,49 B | 32 768 tokens | Apache 2.0 | HuggingFace, safetensors y GGUF comunitarios |
-| Qwen2.5-0.5B | 0,49 B | 32 768 tokens | Apache 2.0 | HuggingFace, versiones base e instruct |
-| TinyLlama-1.1B | 1,1 B | 2 048 tokens | Apache 2.0 | HuggingFace, safetensors y GGUF |
+| Saint-Varda-0.5B-Complete | 0,49 B | No disponible | No disponible | Hugging Face, solo safetensors |
+| Qwen2-0.5B | 0,49 B | 32 768 tokens | Apache 2.0 | Hugging Face, safetensors y GGUF comunitarios |
+| Qwen2.5-0.5B | 0,49 B | 32 768 tokens | Apache 2.0 | Hugging Face, versiones base e instruct |
+| TinyLlama-1.1B | 1,1 B | 2 048 tokens | Apache 2.0 | Hugging Face, safetensors y GGUF |
 
 Los tres alternativos tienen licencia permisiva y documentacion completa de entrenamiento y evaluacion; Saint-Varda no ofrece ninguna de las dos cosas, lo que dificulta justificar su uso en produccion frente a un Qwen2.5-0.5B, que ocupa el mismo orden de magnitud de recursos.
 
 ## Limitaciones y advertencias
 
-- La model card es la plantilla autogenerada de HuggingFace y no ha sido cumplimentada: no hay informacion sobre datos de entrenamiento, evaluacion, sesgos ni uso previsto.
+- La model card es la plantilla autogenerada de Hugging Face y no ha sido cumplimentada: no hay informacion sobre datos de entrenamiento, evaluacion, sesgos ni uso previsto.
 - Licencia no disponible: sin una licencia explicita no se puede asumir permiso de uso comercial. En la practica, el modelo debe tratarse como no apto para produccion hasta que el autor aclare los terminos.
 - Idiomas no declarados: se desconoce si el modelo funciona correctamente en castellano o si esta limitado a ingles.
 - Riesgo de alucinacion elevado por el tamano: los modelos por debajo de 1 B de parametros tienden a inventar hechos, citas y datos, y a degradarse rapidamente en razonamiento multi-paso y matematicas.
@@ -93,7 +93,7 @@ Los tres alternativos tienen licencia permisiva y documentacion completa de entr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jessy-bubble/Saint-Varda-0.5B-Complete
+- Modelo en Hugging Face: https://huggingface.co/Jessy-bubble/Saint-Varda-0.5B-Complete
 - Articulo citado en la plantilla de la model card (Lacoste et al., 2019, sobre estimacion de emisiones): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental referenciada en la model card: https://mlco2.github.io/impact
 

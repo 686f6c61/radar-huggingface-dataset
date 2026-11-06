@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `rghosh8/arc-grpo-deepseek-llm-7b-chat-seed-1234-G-16` | ~7B (base) + adaptador LoRA | no disponible | Adaptador LoRA sobre DeepSeek LLM 7B Chat | no disponible | HuggingFace, 0 descargas |
-| `deepseek-ai/deepseek-llm-7b-chat` | ~7B | 4.096 tokens (segun documentacion publica del modelo base) | Modelo completo alineado | DeepSeek Model License (consultar) | HuggingFace |
-| Qwen2.5-7B-Instruct | 7B | 128.000 tokens | Modelo completo alineado | Apache 2.0 | HuggingFace |
-| Meta Llama 3.1 8B Instruct | 8B | 128.000 tokens | Modelo completo alineado | Llama 3.1 Community License | HuggingFace |
+| `rghosh8/arc-grpo-deepseek-llm-7b-chat-seed-1234-G-16` | ~7B (base) + adaptador LoRA | no disponible | Adaptador LoRA sobre DeepSeek LLM 7B Chat | no disponible | Hugging Face, 0 descargas |
+| `deepseek-ai/deepseek-llm-7b-chat` | ~7B | 4.096 tokens (segun documentacion publica del modelo base) | Modelo completo alineado | DeepSeek Model License (consultar) | Hugging Face |
+| Qwen2.5-7B-Instruct | 7B | 128.000 tokens | Modelo completo alineado | Apache 2.0 | Hugging Face |
+| Meta Llama 3.1 8B Instruct | 8B | 128.000 tokens | Modelo completo alineado | Llama 3.1 Community License | Hugging Face |
 
 La comparativa con Qwen2.5-7B-Instruct y Llama 3.1 8B Instruct es orientativa: se incluyen por ser alternativas de tamano equivalente en la categoria de modelos conversacionales de 7-8B, no porque existan datos de rendimiento del adaptador que permitan una comparacion directa.
 
@@ -84,7 +84,7 @@ La comparativa con Qwen2.5-7B-Instruct y Llama 3.1 8B Instruct es orientativa: s
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/rghosh8/arc-grpo-deepseek-llm-7b-chat-seed-1234-G-16
+- Hugging Face del adaptador: https://huggingface.co/rghosh8/arc-grpo-deepseek-llm-7b-chat-seed-1234-G-16
 - Modelo base: https://huggingface.co/deepseek-ai/deepseek-llm-7b-chat
 - Paper de GRPO (DeepSeekMath): https://huggingface.co/papers/2402.03300
 - Repositorio TRL: https://github.com/huggingface/trl

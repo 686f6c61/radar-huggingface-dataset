@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Hippo EmbeddingGemma 2 text 8bit es un encoder de texto cuantizado a 8 bits en formato MLX, publicado por el usuario Sagardxd en HuggingFace. No es un modelo nuevo entrenado desde cero: se trata de una extraccion del componente de lenguaje (text encoder) del modelo base `mlx-community/embeddinggemma-2-8bit`, conservando unicamente los tensores `language_model.*` byte a byte, sin re-cuantizar ni re-entrenar. El resultado pesa unos 290 MB frente a los 1,2 GB del modelo completo, ya que se han eliminado los encoders de imagen, audio y video de la configuracion.
+Hippo EmbeddingGemma 2 text 8bit es un encoder de texto cuantizado a 8 bits en formato MLX, publicado por el usuario Sagardxd en Hugging Face. No es un modelo nuevo entrenado desde cero: se trata de una extraccion del componente de lenguaje (text encoder) del modelo base `mlx-community/embeddinggemma-2-8bit`, conservando unicamente los tensores `language_model.*` byte a byte, sin re-cuantizar ni re-entrenar. El resultado pesa unos 290 MB frente a los 1,2 GB del modelo completo, ya que se han eliminado los encoders de imagen, audio y video de la configuracion.
 
 Su proposito es servir como motor de embeddings para busqueda semantica de memoria en Hippo Dash (consciousengines.com), una aplicacion que se ejecuta localmente en Mac mediante el framework MLX de Apple. Con 271.002.648 parametros y vectores de 768 dimensiones (con soporte Matryoshka a 512, 256 y 128), es adecuado para tareas de similitud de frases, recuperacion (RAG) y clustering en hardware de consumo, sin depender de la nube.
 

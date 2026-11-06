@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `mradermacher/Qwen3.8-27B-absolute-heresy-GGUF` contiene cuantizaciones GGUF del modelo `Qwen3.8-27B-absolute-heresy`, publicado originalmente por el usuario MuXodious en HuggingFace. El autor de este repositorio, mradermacher, se dedica a generar versiones cuantizadas de modelos existentes para facilitar su ejecución en entornos con recursos limitados, como GPUs de consumo o CPU.
+El repositorio `mradermacher/Qwen3.8-27B-absolute-heresy-GGUF` contiene cuantizaciones GGUF del modelo `Qwen3.8-27B-absolute-heresy`, publicado originalmente por el usuario MuXodious en Hugging Face. El autor de este repositorio, mradermacher, se dedica a generar versiones cuantizadas de modelos existentes para facilitar su ejecución en entornos con recursos limitados, como GPUs de consumo o CPU.
 
 El modelo base tiene 27.320.697.856 parámetros (aproximadamente 27B), lo que lo sitúa en la gama de modelos grandes de código abierto. Sin embargo, no se dispone de información sobre su arquitectura interna, datos de entrenamiento, licencia o capacidades específicas, ya que la model card original no proporciona estos detalles. La fecha de creación del repositorio (2026-08-16) es posterior a la fecha de conocimiento actual, lo que sugiere que se trata de un lanzamiento reciente.
 

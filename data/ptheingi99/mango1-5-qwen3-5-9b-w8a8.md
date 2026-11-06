@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MANGO1.5-Qwen3.5-9B-W8A8 | 9,41 B | no disponible | W8A8 INT8 | Apache 2.0 | HuggingFace, vLLM |
-| CMKL/MANGO1.5-Qwen3.5-9B (base) | 9,41 B | no disponible | 16 bits | Apache 2.0 | HuggingFace |
+| MANGO1.5-Qwen3.5-9B-W8A8 | 9,41 B | no disponible | W8A8 INT8 | Apache 2.0 | Hugging Face, vLLM |
+| CMKL/MANGO1.5-Qwen3.5-9B (base) | 9,41 B | no disponible | 16 bits | Apache 2.0 | Hugging Face |
 | Qwen3.5-9B (familia base) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento del modelo ni de alternativas comparables en la información proporcionada, por lo que la comparación se limita a parámetros, licencia y disponibilidad.
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento del modelo ni de alternativas comparables 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ptheingi99/MANGO1.5-Qwen3.5-9B-W8A8
+- Hugging Face: https://huggingface.co/Ptheingi99/MANGO1.5-Qwen3.5-9B-W8A8
 - Modelo base: https://huggingface.co/CMKL/MANGO1.5-Qwen3.5-9B
 - llm-compressor (herramienta de cuantización): https://github.com/vllm-project/llm-compressor
 - vLLM: https://github.com/vllm-project/vllm

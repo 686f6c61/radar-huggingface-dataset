@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un checkpoint de inferencia histórico de un modelo denominado "E026 PI0.5, checkpoint 10000", publicado por el usuario Shiki42 en HuggingFace. Según la model card, se trata de un respaldo (backup) preservado antes de la limpieza de la instancia de origen, e incluye los parámetros completos de inferencia, los activos de normalización correspondientes, evidencia de configuración y datos de procedencia. El repositorio ocupa 7,1 GB y está etiquetado con robotics, pi05, jax y checkpoint-backup, con pipeline declarado como robotics.
+Este repositorio contiene un checkpoint de inferencia histórico de un modelo denominado "E026 PI0.5, checkpoint 10000", publicado por el usuario Shiki42 en Hugging Face. Según la model card, se trata de un respaldo (backup) preservado antes de la limpieza de la instancia de origen, e incluye los parámetros completos de inferencia, los activos de normalización correspondientes, evidencia de configuración y datos de procedencia. El repositorio ocupa 7,1 GB y está etiquetado con robotics, pi05, jax y checkpoint-backup, con pipeline declarado como robotics.
 
 El artefacto no es un runtime autónomo: el autor indica explícitamente que la raíz del repositorio debe usarse como directorio de checkpoint Orbax junto con la configuración compatible de OpenPI original. Los ficheros `resolved_config.json` y `provenance.json` documentan la configuración y la trazabilidad del snapshot. No se realizó entrenamiento ni evaluación nuevos, y no se incluye el estado de reanudación del optimizador ni del cargador de datos.
 
@@ -19,7 +19,7 @@ Su relevancia es fundamentalmente de reproducibilidad y archivado en investigaci
 | Idiomas soportados | no disponible |
 | Licencia | no disponible (no declarada en el repositorio ni en la model card) |
 | Formato de pesos | Orbax (checkpoint de JAX); la raíz del repositorio se usa como directorio de checkpoint Orbax |
-| Desarrollador | Shiki42 (usuario de HuggingFace) |
+| Desarrollador | Shiki42 (usuario de Hugging Face) |
 | Familia / proyecto | pi0.5, configuración compatible con OpenPI (según la model card) |
 | Contenido incluido | Parámetros de inferencia, activos de normalización, evidencia de configuración y procedencia |
 | Contenido excluido | Estado de reanudación del optimizador y del cargador de datos |
@@ -87,7 +87,7 @@ No disponible. La información proporcionada no describe alternativas comparable
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Shiki42/ctr-e026-pi05-checkpoint-10000-backup-20260918
+- Repositorio en Hugging Face: https://huggingface.co/Shiki42/ctr-e026-pi05-checkpoint-10000-backup-20260918
 - Fichero de configuración resuelta: `resolved_config.json`, incluido en la raíz del repositorio según la model card.
 - Fichero de procedencia: `provenance.json`, incluido en la raíz del repositorio según la model card.
 - Documentación de la configuración compatible: OpenPI (referenciado en la model card; no se proporciona URL específica).

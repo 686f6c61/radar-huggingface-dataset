@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GeoNUSAF TC-SegFormer (variante legacy, receta tc_full, esquema de 6 clases, fold 0 del split legacy_kfold) es un modelo de segmentación semántica de imágenes de teledetección publicado por el usuario sugam24 en HuggingFace. Se construye sobre el checkpoint nvidia/segformer-b0-finetuned-ade-512-512 y añade una "ruta de detalle residual H/2" (arch version v2-residual) junto con varios componentes de entrenamiento propios: peso por clase por frecuencia inversa, muestreador, pérdidas Lovász y clDice y una banda CSA con umbrales por clase.
+GeoNUSAF TC-SegFormer (variante legacy, receta tc_full, esquema de 6 clases, fold 0 del split legacy_kfold) es un modelo de segmentación semántica de imágenes de teledetección publicado por el usuario sugam24 en Hugging Face. Se construye sobre el checkpoint nvidia/segformer-b0-finetuned-ade-512-512 y añade una "ruta de detalle residual H/2" (arch version v2-residual) junto con varios componentes de entrenamiento propios: peso por clase por frecuencia inversa, muestreador, pérdidas Lovász y clDice y una banda CSA con umbrales por clase.
 
 El modelo no es un modelo generativo ni de lenguaje: es un segmentador denso que asigna a cada píxel una de seis clases de cobertura del suelo (Residential, Road, River, Forest, UnusedLand, Agricultural), ignorando los píxeles sin etiqueta (índice 255). El repositorio ocupa 0,1 GB, usa la librería transformers y está etiquetado como compatible con endpoints. Al ser una arquitectura SegFormer-B0, el coste de inferencia es muy bajo (del orden de millones de parámetros, no de miles de millones).
 
@@ -29,7 +29,7 @@ Su relevancia es fundamentalmente metodológica y de trazabilidad: la propia mod
 | Split | legacy_kfold, 5 folds, seed 42, fold 0 |
 | Fuga train/validacion | 236/245 imagenes de validacion (96,3%) tienen un espejo en train |
 | Tamano del repositorio | 0,1 GB |
-| Fecha de creacion (segun HuggingFace) | 2026-09-13 |
+| Fecha de creacion (segun Hugging Face) | 2026-09-13 |
 
 ## Arquitectura y entrenamiento
 
@@ -42,7 +42,7 @@ El entrenamiento sigue la receta previa al protocolo: optimizador AdamW con lear
 - Segmentación semántica densa de imágenes aéreas o satelitales en seis clases de cobertura del suelo.
 - Distinción de clases con morfología contrastada: la clase Residential alcanza un IoU de 0,7819 y Forest un 0,6122 en la validación reportada.
 - Manejo explícito de píxeles sin etiqueta mediante el índice 255, útil en datasets parcialmente anotados.
-- Integración con el ecosistema transformers y con HuggingFace Inference Endpoints (etiqueta endpoints_compatible).
+- Integración con el ecosistema transformers y con Hugging Face Inference Endpoints (etiqueta endpoints_compatible).
 - Reentrenamiento o fine-tuning posterior al estar construido sobre un checkpoint público de SegFormer-B0.
 - No dispone de tool calling, function calling, capacidades de agente, razonamiento multi-paso ni modo de pensamiento: no es un modelo de lenguaje.
 - No tiene capacidades multilingües ni procesamiento de texto, audio o vídeo.
@@ -91,7 +91,7 @@ Advertencia: estos valores provienen de una partición con fuga de variantes (el
 - VRAM estimada para inferencia: muy baja. Con pesos en FP32 y del orden de 3,8 M de parámetros, los pesos ocupan aproximadamente 15 MB; sumando activaciones a 512x512 y batch pequeño, la inferencia cabe holgadamente por debajo de 1 GB de VRAM. Es una estimación a partir de la arquitectura base, no un dato publicado por el autor.
 - GPU recomendadas: cualquier GPU con soporte CUDA, incluidas GTX 1650, RTX 3060, RTX 4090, A100 o H100. El modelo está tan lejos de saturar estas tarjetas que la elección depende del volumen de imágenes, no de la VRAM.
 - Cabe en GPU de consumo: sí, en prácticamente cualquier GPU de consumo con más de 2 GB de VRAM, e incluso puede ejecutarse en CPU para lotes pequeños.
-- Opciones de despliegue: transformers (PyTorch) es la vía natural dado el library_name del repositorio; también es viable exportar a ONNX o TensorRT para inferencia por lotes, y desplegar en HuggingFace Inference Endpoints gracias a la etiqueta endpoints_compatible. vLLM, TGI o llama.cpp no aplican a un modelo de segmentación.
+- Opciones de despliegue: transformers (PyTorch) es la vía natural dado el library_name del repositorio; también es viable exportar a ONNX o TensorRT para inferencia por lotes, y desplegar en Hugging Face Inference Endpoints gracias a la etiqueta endpoints_compatible. vLLM, TGI o llama.cpp no aplican a un modelo de segmentación.
 - Latencia y throughput estimados: no disponibles. No se publican mediciones de latencia ni de imágenes por segundo.
 
 ## Comparativa con modelos similares
@@ -100,8 +100,8 @@ No se dispone de resultados de benchmarks del modelo en datasets públicos, por 
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GeoNUSAF TC-SegFormer legacy (este modelo) | No confirmado; base SegFormer-B0 (aprox. 3,8 M) | Segmentacion densa; resolucion no especificada | mIoU pooled 0,4346; mIoU core CSA 0,4655 (con fuga en validacion) | No disponible | HuggingFace, repo de 0,1 GB |
-| nvidia/segformer-b0-finetuned-ade-512-512 | Aprox. 3,8 M | 512x512; 150 clases ADE20K | No comparable con este dataset | No disponible en la informacion proporcionada | HuggingFace, checkpoint publico |
+| GeoNUSAF TC-SegFormer legacy (este modelo) | No confirmado; base SegFormer-B0 (aprox. 3,8 M) | Segmentacion densa; resolucion no especificada | mIoU pooled 0,4346; mIoU core CSA 0,4655 (con fuga en validacion) | No disponible | Hugging Face, repo de 0,1 GB |
+| nvidia/segformer-b0-finetuned-ade-512-512 | Aprox. 3,8 M | 512x512; 150 clases ADE20K | No comparable con este dataset | No disponible en la informacion proporcionada | Hugging Face, checkpoint publico |
 | U-Net (segmentacion semantica generica) | Del orden de 7-30 M segun variante | Entrada configurable | No disponible | Depende de la implementacion | Multiples repositorios |
 | DeepLabV3+ con backbone ResNet-50 | Del orden de 40 M (backbone incluido) | Entrada configurable | No disponible | Depende de la implementacion | Multiples repositorios |
 
@@ -121,7 +121,7 @@ La ventaja de este modelo frente a alternativas mayores es el coste computaciona
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sugam24/geonusaf-tcsegformer-legacy-c6-tc_full-legacy_kfold-fold0
+- Modelo en Hugging Face: https://huggingface.co/sugam24/geonusaf-tcsegformer-legacy-c6-tc_full-legacy_kfold-fold0
 - Checkpoint base: https://huggingface.co/nvidia/segformer-b0-finetuned-ade-512-512
 - Paper de SegFormer (referencia de la arquitectura base): https://arxiv.org/abs/2105.15203
 - Búsqueda web: no se han encontrado enlaces relevantes al modelo. Los resultados devueltos por la búsqueda corresponden a artículos sobre configuración de firmas y gestión de reuniones en Microsoft Outlook, sin relación con teledetección ni con segmentación semántica.

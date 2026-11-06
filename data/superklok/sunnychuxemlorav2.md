@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Base | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| SunnyChuxemLoRAv2 | SD 3.5 Large | LoRA de personaje | no disponible (0,3 GB) | no aplica | other (atribucion obligatoria) | HuggingFace, 25 descargas |
+| SunnyChuxemLoRAv2 | SD 3.5 Large | LoRA de personaje | no disponible (0,3 GB) | no aplica | other (atribucion obligatoria) | Hugging Face, 25 descargas |
 | Alternativas de LoRA de personaje sobre SD 3.5 | SD 3.5 Large | LoRA de personaje | no disponible | no aplica | variable | no disponible |
 | Otros LoRA de personaje sobre SDXL | SDXL | LoRA de personaje | no disponible | no aplica | variable | no disponible |
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento ni de modelos comparables concretos en la 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Superklok/SunnyChuxemLoRAv2
+- Hugging Face: https://huggingface.co/Superklok/SunnyChuxemLoRAv2
 - Modelo base: https://huggingface.co/stabilityai/stable-diffusion-3.5-large
 - GitHub del autor (dataset y workflow de entrenamiento): https://github.com/Superklok/SunnyChuxemLoRAv2
 - Portfolio GitHub: https://github.com/Superklok

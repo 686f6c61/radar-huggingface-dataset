@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLM-4.6V-Flash-3MPER0RR-abliterated es una variante "abliterated" del modelo GLM-4.6V-Flash, publicada por el usuario 3MPER0RR en HuggingFace. El autor solo documenta tres datos: el modelo de partida (GLM-4.6V-Flash), el proceso aplicado (abliteración en múltiples rondas) y el estado del artefacto ("tested and saved"). No se publican hiperparámetros, dataset, metodología ni evaluación alguna.
+GLM-4.6V-Flash-3MPER0RR-abliterated es una variante "abliterated" del modelo GLM-4.6V-Flash, publicada por el usuario 3MPER0RR en Hugging Face. El autor solo documenta tres datos: el modelo de partida (GLM-4.6V-Flash), el proceso aplicado (abliteración en múltiples rondas) y el estado del artefacto ("tested and saved"). No se publican hiperparámetros, dataset, metodología ni evaluación alguna.
 
 El checkpoint contiene 10.292.777.472 parámetros (unos 10,29 mil millones) en formato safetensors, con un repositorio de 20,6 GB. Ese tamaño es coherente con pesos en BF16 o FP16 (aproximadamente 2 bytes por parámetro). El tag `glm4v` y la nomenclatura "4.6V" del modelo base apuntan a un modelo de lenguaje con capacidad de visión, aunque la model card no detalla arquitectura, longitud de contexto ni idiomas soportados.
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Vision | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GLM-4.6V-Flash-3MPER0RR-abliterated | 10,29 mil millones | no disponible | probable (tag `glm4v`), no confirmado | MIT (declarada) | HuggingFace, 0 descargas |
+| GLM-4.6V-Flash-3MPER0RR-abliterated | 10,29 mil millones | no disponible | probable (tag `glm4v`), no confirmado | MIT (declarada) | Hugging Face, 0 descargas |
 | GLM-4.6V-Flash (modelo original) | no disponible | no disponible | no disponible en la información aportada | no disponible en la información aportada | referenciado como modelo base, sin enlace en la información disponible |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no se aporta informacion sobre otros modelos comparables |
 
@@ -92,7 +92,7 @@ No se dispone de datos suficientes para establecer una comparación cuantitativa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/3MPER0RR/GLM-4.6V-Flash-3MPER0RR-abliterated
+- Hugging Face: https://huggingface.co/3MPER0RR/GLM-4.6V-Flash-3MPER0RR-abliterated
 - Modelo base (GLM-4.6V-Flash): no se incluye enlace en la información proporcionada.
 - Paper, blog o repositorio del autor: no disponibles.
 - Búsqueda web: no se han encontrado resultados relevantes. Las referencias devueltas corresponden al servicio de streaming VTM Go y a foros de operadores belgas, sin relación alguna con el modelo.

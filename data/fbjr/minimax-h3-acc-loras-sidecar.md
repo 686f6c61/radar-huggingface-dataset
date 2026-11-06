@@ -81,7 +81,7 @@ La principal diferencia es la integración con ComfyUI: este sidecar elimina la 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/fbjr/MiniMax-H3-Acc-LoRAs-sidecar
+- Repositorio de Hugging Face: https://huggingface.co/fbjr/MiniMax-H3-Acc-LoRAs-sidecar
 - Release original de Alibaba PAI: https://huggingface.co/alibaba-pai/MiniMax-H3-Acc-LoRAs
 - Modelo base MiniMax H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Repositorio fuente del nodo: https://github.com/fblissjr/ComfyUI-h3-explorations

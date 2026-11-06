@@ -2,7 +2,7 @@
 
 ## Resumen
 
-pose6daug-scripts no es un modelo de IA, sino un repositorio de scripts publicado en HuggingFace por el usuario mlnha. Contiene el código que hay detrás de los baselines de aumento de datos con MimicGen y VACE para la tarea RoboCasa PickPlaceCounterToCabinet, junto con el pipeline de ajuste fino de GR00T 1.5 y la evaluación por réplica exacta de estado ejecutada sobre ellos. El repositorio está archivado tal y como se ejecutó: las rutas son absolutas y apuntan a una máquina concreta, por lo que debe tratarse como un registro del procedimiento y no como un paquete listo para usar.
+pose6daug-scripts no es un modelo de IA, sino un repositorio de scripts publicado en Hugging Face por el usuario mlnha. Contiene el código que hay detrás de los baselines de aumento de datos con MimicGen y VACE para la tarea RoboCasa PickPlaceCounterToCabinet, junto con el pipeline de ajuste fino de GR00T 1.5 y la evaluación por réplica exacta de estado ejecutada sobre ellos. El repositorio está archivado tal y como se ejecutó: las rutas son absolutas y apuntan a una máquina concreta, por lo que debe tratarse como un registro del procedimiento y no como un paquete listo para usar.
 
 La relevancia del artefacto es doble. Por un lado, documenta cómo generar episodios sintéticos de manipulación con MimicGen (estados y acciones de MuJoCo, sin píxeles) y cómo aumentar datos a nivel de píxel con VACE, que repinta la imagen y conserva la trayectoria de origen sin pasar por el simulador. Por otro, describe un fallo silencioso muy instructivo: un dataset cuyo orden de acciones está invertido respecto al esperado por el simulador converge a una pérdida baja y produce una política que no cierra la pinza.
 
@@ -112,7 +112,7 @@ No disponible. La información proporcionada no incluye comparativas con otros m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mlnha/pose6daug-scripts
+- Hugging Face: https://huggingface.co/mlnha/pose6daug-scripts
 - GitHub Awesome-Learning-for-Manipulation (recopilatorio de trabajos de manipulación, relevancia indirecta): https://github.com/Noietch/Awesome-Learning-for-Manipulation
 
 Nota sobre la búsqueda web: el resto de resultados obtenidos (hw.asx.care, asx.care, asx.care/asxweb, roboticsintl.com) corresponden a software de gestión de cuidados móviles y a un agregador de noticias, y no guardan relación con este repositorio. No se han encontrado papers, blogs, repositorios ni demos adicionales asociados a pose6daug-scripts.

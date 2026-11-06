@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tourism Nights Forecast es un modelo de regresión tabular publicado en HuggingFace por el usuario subash-taranga. Su objetivo es predecir las pernoctaciones mensuales (nights) en Finlandia desglosadas por país de residencia del viajero, a partir de tres entradas: año, mes y país. No es un modelo de lenguaje ni una red neuronal: se trata de una regresión lineal de scikit-learn (LinearRegression), guardada con scikit-learn 1.9.1 y serializada en `model.joblib`.
+Tourism Nights Forecast es un modelo de regresión tabular publicado en Hugging Face por el usuario subash-taranga. Su objetivo es predecir las pernoctaciones mensuales (nights) en Finlandia desglosadas por país de residencia del viajero, a partir de tres entradas: año, mes y país. No es un modelo de lenguaje ni una red neuronal: se trata de una regresión lineal de scikit-learn (LinearRegression), guardada con scikit-learn 1.9.1 y serializada en `model.joblib`.
 
 El modelo explota la fuerte estacionalidad del turismo finlandés asumiendo que el valor del mismo mes del año anterior es el predictor dominante. La formulación es log(1 + Nights) = 0,961 × log(1 + Nights del mismo mes del año anterior) + 0,381, con un único modelo global para las 37 series (Finlandia doméstico más 36 países o grupos de residencia). Para horizontes superiores a un año, la predicción se encadena de forma recursiva (2026 a partir de datos reales de 2025, 2027 a partir de la predicción de 2026, etcétera).
 
@@ -83,7 +83,7 @@ Sobre datos reales de 2026 (enero a agosto, preliminares y no usados en entrenam
 | Modelo | Parametros | Contexto / entrada | WAPE por pais (2025) | WAPE total (2025) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
 | Baseline estacional (copiar mismo mes del ano anterior) | 0 | Año, mes, pais | 11,9 % | 2,7 % | No aplica | Trivial de implementar |
-| Regresion lineal (este modelo) | 2 | Año, mes, pais | 12,1 % | 4,4 % | MIT | HuggingFace, 0 descargas |
+| Regresion lineal (este modelo) | 2 | Año, mes, pais | 12,1 % | 4,4 % | MIT | Hugging Face, 0 descargas |
 | LightGBM sobre crecimiento | No disponible (ensemble de arboles) | Año, mes, pais | 15,5 % | 7,8 % | No disponible | No publicada como artefacto |
 
 No se dispone de informacion sobre otros modelos comparables de la misma categoria en la documentacion facilitada. La conclusion relevante de la tabla es que este modelo no supera al baseline estacional en la metrica principal por pais, aunque si mejora claramente a LightGBM en el mismo experimento.
@@ -103,5 +103,5 @@ No se dispone de informacion sobre otros modelos comparables de la misma categor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/subash-taranga/tourism-nights-forecast
+- Modelo en Hugging Face: https://huggingface.co/subash-taranga/tourism-nights-forecast
 - La busqueda web realizada no devolvio enlaces relevantes al modelo, a papers asociados ni a repositorios complementarios; los resultados obtenidos fueron unicamente paginas de inicio de motores de busqueda. No se dispone de paper, blog, repositorio adicional ni demo publicados en la informacion proporcionada.

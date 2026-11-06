@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Depth-Anything-V2-Metric-VKITTI-Small es un port no oficial al formato `transformers` del modelo de estimacion de profundidad metrica Depth Anything V2, en su variante Small entrenada sobre el conjunto de datos sintetico VKITTI. El modelo original fue desarrollado por Lihe Yang, Bingyi Kang, Zilong Huang, Zhen Zhao, Xiaogang Xu, Jiashi Feng y Hengshuang Zhao (publicado en arXiv 2406.09414), mientras que este port lo mantiene el usuario de HuggingFace `bigshanedogg`. El repositorio empaqueta los pesos originales (`depth_anything_v2_metric_vkitti_vits.pth`) en `safetensors` y el codigo original de inferencia, de modo que se puede cargar con la API estandar de `transformers` mediante `trust_remote_code=True`.
+Depth-Anything-V2-Metric-VKITTI-Small es un port no oficial al formato `transformers` del modelo de estimacion de profundidad metrica Depth Anything V2, en su variante Small entrenada sobre el conjunto de datos sintetico VKITTI. El modelo original fue desarrollado por Lihe Yang, Bingyi Kang, Zilong Huang, Zhen Zhao, Xiaogang Xu, Jiashi Feng y Hengshuang Zhao (publicado en arXiv 2406.09414), mientras que este port lo mantiene el usuario de Hugging Face `bigshanedogg`. El repositorio empaqueta los pesos originales (`depth_anything_v2_metric_vkitti_vits.pth`) en `safetensors` y el codigo original de inferencia, de modo que se puede cargar con la API estandar de `transformers` mediante `trust_remote_code=True`.
 
 El modelo resuelve el problema de la estimacion de profundidad metrica a partir de una unica imagen RGB, es decir, no solo predice un mapa de profundidad relativo, sino distancias absolutas en metros (hasta un maximo de 80 m) gracias a una cabeza DPT con activacion `Sigmoid()` escalada por `max_depth`. La arquitectura combina un backbone DINOv2 ViT-S/14 (aproximadamente 24,8 millones de parametros totales) con una cabeza de decodificacion DPT. Esta variante concreta esta especializada en escenas de conduccion del dataset VKITTI.
 
@@ -84,7 +84,7 @@ La comparativa se limita a las variantes del propio Depth Anything V2 porque la 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bigshanedogg/Depth-Anything-V2-Metric-VKITTI-Small
+- Repositorio Hugging Face: https://huggingface.co/bigshanedogg/Depth-Anything-V2-Metric-VKITTI-Small
 - Modelo base: https://huggingface.co/depth-anything/Depth-Anything-V2-Metric-VKITTI-Small
 - Repositorio oficial de codigo: https://github.com/DepthAnything/Depth-Anything-V2
 - Paper Depth Anything V2: https://arxiv.org/abs/2406.09414

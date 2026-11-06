@@ -88,7 +88,7 @@ La comparativa se limita a la familia de destilados de DeepSeek-R1 porque no se 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/my-app-s/DeepSeek-R1-Distill-Qwen-14B-Q4_K_M-GGUF
+- Repositorio Hugging Face: https://huggingface.co/my-app-s/DeepSeek-R1-Distill-Qwen-14B-Q4_K_M-GGUF
 - Modelo base (Unsloth): https://huggingface.co/unsloth/DeepSeek-R1-Distill-Qwen-14B
 - Espacio GGUF-my-repo de ggml.ai: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio llama.cpp: https://github.com/ggerganov/llama.cpp

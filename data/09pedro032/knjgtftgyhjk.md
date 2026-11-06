@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`09pedro032/knjgtftgyhjk` es un repositorio publicado en HuggingFace por el usuario `09pedro032`. La model card asociada contiene únicamente la declaración de licencia `openrail` y la cadena "m0delo", sin ningún tipo de documentación técnica adicional. No se especifica arquitectura, tamaño, contexto, datos de entrenamiento ni capacidades del modelo.
+`09pedro032/knjgtftgyhjk` es un repositorio publicado en Hugging Face por el usuario `09pedro032`. La model card asociada contiene únicamente la declaración de licencia `openrail` y la cadena "m0delo", sin ningún tipo de documentación técnica adicional. No se especifica arquitectura, tamaño, contexto, datos de entrenamiento ni capacidades del modelo.
 
 A fecha de la información disponible, el repositorio presenta cero descargas y cero likes, fue creado el 3 de noviembre de 2026 y actualizado dos minutos después de su creación. El identificador del repositorio (`knjgtftgyhjk`) no sigue ninguna convención de nomenclatura reconocible y no corresponde a ningún modelo conocido de los principales laboratorios o comunidades open source.
 
@@ -82,5 +82,5 @@ No disponible. Sin datos de arquitectura, tamaño ni rendimiento no es posible e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/09pedro032/knjgtftgyhjk
+- Repositorio en Hugging Face: https://huggingface.co/09pedro032/knjgtftgyhjk
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`raonikhil/clip-contrastive` es un repositorio de HuggingFace publicado por el usuario raonikhil que contiene una implementación funcional de CLIP (Contrastive Language-Image Pre-training) orientada a experimentación con aprendizaje contrastivo. No se trata de un modelo entrenado, sino de un andamiaje de código: incluye `train.py` como artefacto principal, un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que el propio autor describe explícitamente como checkpoint de inicialización válido para pruebas de humo, no como un modelo con pesos aprendidos.
+`raonikhil/clip-contrastive` es un repositorio de Hugging Face publicado por el usuario raonikhil que contiene una implementación funcional de CLIP (Contrastive Language-Image Pre-training) orientada a experimentación con aprendizaje contrastivo. No se trata de un modelo entrenado, sino de un andamiaje de código: incluye `train.py` como artefacto principal, un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que el propio autor describe explícitamente como checkpoint de inicialización válido para pruebas de humo, no como un modelo con pesos aprendidos.
 
 El dato más relevante para cualquier evaluador es la discrepancia entre la model card y el contenido real del repositorio: la documentación declara una configuración de escala "huge", pero el recuento real de parámetros del fichero safetensors es de 24.832 parámetros (aproximadamente 0,025 millones). Es decir, un orden de magnitud propio de un test unitario, no de un modelo CLIP operativo. El repositorio ocupa 0,0 GB y registra 0 descargas y 0 likes en el momento de la consulta.
 
@@ -34,7 +34,7 @@ En cuanto al entrenamiento, la receta por defecto especificada en `training_args
 - El checkpoint publicado no tiene capacidades funcionales verificadas: sus pesos son una inicialización, no un modelo entrenado, por lo que no realiza clasificación zero-shot, generación ni recuperación imagen-texto de forma fiable.
 - El código permite instanciar un modelo con arquitectura CLIP y ejecutar un ejemplo de prueba de humo desde el bloque `__main__` de `train.py`.
 - Permite lanzar un bucle de entrenamiento contrastivo con Adafactor y scheduler OneCycle sobre datos propios.
-- Guarda y carga pesos en formato safetensors, lo que facilita la integración con el ecosistema de HuggingFace.
+- Guarda y carga pesos en formato safetensors, lo que facilita la integración con el ecosistema de Hugging Face.
 - No se declara soporte de tool calling, function calling, agentes, razonamiento multi-paso ni modo de pensamiento.
 - No se declara soporte multilingüe ni capacidades de audio o vídeo.
 - No se documentan capacidades de visión más allá del codificador de imagen implícito en la arquitectura CLIP.
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 - VRAM estimada para inferencia: inferior a 0,1 MB para los pesos en precisión de 32 bits (24.832 parámetros x 4 bytes ≈ 99 KB), sin contar activaciones ni el tokenizador.
 - GPU recomendadas: cualquiera, incluida una GPU integrada; el modelo también se ejecuta en CPU sin problema.
 - Cabe en cualquier GPU de consumo: sí, en todas, desde una GTX 1050 hasta una RTX 4090, con un consumo de memoria despreciable.
-- Opciones de despliegue: al ser una implementación personalizada de arquitectura CLIP, no es compatible directamente con vLLM, llama.cpp, Ollama ni TGI. El despliegue previsto es la ejecución del script de PyTorch incluido, con un adaptador explícito si se quiere usar la API genérica de carga de HuggingFace.
+- Opciones de despliegue: al ser una implementación personalizada de arquitectura CLIP, no es compatible directamente con vLLM, llama.cpp, Ollama ni TGI. El despliegue previsto es la ejecución del script de PyTorch incluido, con un adaptador explícito si se quiere usar la API genérica de carga de Hugging Face.
 - Latencia y throughput estimados: no disponible. Por el tamaño del modelo, el coste de un forward pass es despreciable frente al de cualquier CLIP real, pero no se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -89,5 +89,5 @@ La comparación relevante no es de rendimiento, porque este repositorio no aport
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/raonikhil/clip-contrastive
+- Modelo en Hugging Face: https://huggingface.co/raonikhil/clip-contrastive
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo, papers asociados, repositorios de código complementarios ni demos. Los resultados devueltos corresponden a servicios de cartografía sin relación con el modelo.

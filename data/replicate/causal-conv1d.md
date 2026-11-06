@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`replicate/causal-conv1d` no es un modelo de lenguaje, sino un repositorio de tipo *kernel* publicado en HuggingFace bajo la librería `kernels`. Contiene la implementación compilada (AOT) del operador de convolución causal 1D *depthwise* que utilizan las arquitecturas de espacio de estados (SSM) como Mamba y Mamba-2, así como modelos híbridos attention-SSM. El repositorio es una copia en el *namespace* de Replicate del original `kernels-community/causal-conv1d`, generada automáticamente por la plataforma de HuggingFace.
+`replicate/causal-conv1d` no es un modelo de lenguaje, sino un repositorio de tipo *kernel* publicado en Hugging Face bajo la librería `kernels`. Contiene la implementación compilada (AOT) del operador de convolución causal 1D *depthwise* que utilizan las arquitecturas de espacio de estados (SSM) como Mamba y Mamba-2, así como modelos híbridos attention-SSM. El repositorio es una copia en el *namespace* de Replicate del original `kernels-community/causal-conv1d`, generada automáticamente por la plataforma de Hugging Face.
 
 Su función es acelerar un paso muy concreto del cómputo de estos modelos: la convolución causal sobre la secuencia de entrada, que en una implementación ingenua en PyTorch consume mucho ancho de banda de memoria. El paquete expone tres funciones (`causal_conv1d_fn`, `causal_conv1d_update` y `causal_conv1d_varlen_states`) que cubren el *prefill*, la decodificación token a token con estado persistente y la gestión de lotes empaquetados de longitud variable.
 
@@ -25,7 +25,7 @@ Es relevante ahora porque los modelos SSM e híbridos han entrado en producción
 
 No hay entrenamiento ni pesos asociados. Se trata de una implementación de bajo nivel, escrita para GPU NVIDIA, del operador de convolución causal 1D aplicado canal a canal (*depthwise*), que en los modelos SSM precede a la recurrencia selectiva. El kernel aplica una convolución con máscara causal sobre la dimensión temporal, de modo que cada posición depende únicamente de las anteriores, y está optimizado para fusionar la convolución con operaciones auxiliares (sesgo, activación) evitando idas y venidas a memoria global.
 
-La innovación técnica principal es la interfaz orientada a inferencia y entrenamiento real: soporte de estados iniciales para reanudar el cómputo tras un *chunk* previo, variante específica para decodificación token a token que actualiza el estado de convolución *in situ*, y extracción de estados por secuencia en lotes empaquetados (`causal_conv1d_varlen_states`), necesaria para *continuous batching* en servidores de inferencia. El repositorio se distribuye a través de la librería `kernels` de HuggingFace, que resuelve y carga el binario precompilado correspondiente en lugar de compilar en el cliente. No se especifican en la información disponible el número de tokens, la composición de dataset ni técnicas de alineación como RLHF o DPO, porque no son aplicables.
+La innovación técnica principal es la interfaz orientada a inferencia y entrenamiento real: soporte de estados iniciales para reanudar el cómputo tras un *chunk* previo, variante específica para decodificación token a token que actualiza el estado de convolución *in situ*, y extracción de estados por secuencia en lotes empaquetados (`causal_conv1d_varlen_states`), necesaria para *continuous batching* en servidores de inferencia. El repositorio se distribuye a través de la librería `kernels` de Hugging Face, que resuelve y carga el binario precompilado correspondiente en lugar de compilar en el cliente. No se especifican en la información disponible el número de tokens, la composición de dataset ni técnicas de alineación como RLHF o DPO, porque no son aplicables.
 
 ## Capacidades
 
@@ -67,7 +67,7 @@ La comparación pertinente es con otras distribuciones del mismo tipo de kernel,
 
 | Alternativa | Tipo | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|
-| `replicate/causal-conv1d` (esta ficha) | Kernel CUDA de convolución causal 1D distribuido vía `kernels` | BSD-3-Clause | Repositorio en HuggingFace, 0 descargas y 0 *likes* en la información disponible | No disponible |
+| `replicate/causal-conv1d` (esta ficha) | Kernel CUDA de convolución causal 1D distribuido vía `kernels` | BSD-3-Clause | Repositorio en Hugging Face, 0 descargas y 0 *likes* en la información disponible | No disponible |
 | `kernels-community/causal-conv1d` | Repositorio canónico del mismo kernel, del que este es copia según la *model card* | No disponible en la información proporcionada | Referenciado desde el propio repositorio | No disponible |
 | `kernels-community/flash-attn3` | Kernel de atención, mencionado en el aviso de la *model card* como ejemplo de repositorio afectado por el cambio de política | No disponible en la información proporcionada | Repositorio de la organización `kernels-community` | No disponible |
 | Implementación de referencia del operador causal-conv1d (Dao-AILab) | Kernel CUDA original del que deriva este paquete | No disponible en la información proporcionada | Repositorio en GitHub | No disponible |
@@ -77,7 +77,7 @@ La comparación pertinente es con otras distribuciones del mismo tipo de kernel,
 - No es un modelo: no genera texto, no razona, no tiene pesos ni tokenizador, y no puede cargarse con `pipeline()` de Transformers como si fuese un modelo.
 - Dependencia estricta de CUDA y de GPU NVIDIA; no hay información sobre soporte para CPU, ROCm, Metal u otros aceleradores.
 - El paquete está ligado a versiones concretas de CUDA y PyTorch. Si el binario precompilado no coincide con el entorno, será necesario compilar desde el código fuente.
-- La *model card* incluye un aviso relevante: a partir del 13 de septiembre de 2026 HuggingFace eliminará los repositorios de tipo *model* para kernels (cita como ejemplo `kernels-community/flash-attn3`) y pide usar una versión reciente de la librería `kernels`; las interrupciones deben reportarse en el repositorio de incidencias de `huggingface/kernels`.
+- La *model card* incluye un aviso relevante: a partir del 13 de septiembre de 2026 Hugging Face eliminará los repositorios de tipo *model* para kernels (cita como ejemplo `kernels-community/flash-attn3`) y pide usar una versión reciente de la librería `kernels`; las interrupciones deben reportarse en el repositorio de incidencias de `huggingface/kernels`.
 - Este repositorio concreto es una copia en el *namespace* `replicate`; el mantenimiento y las actualizaciones corresponden a `kernels-community`. Con 0 descargas y 0 *likes* en la información disponible, no hay señal de uso ni de mantenimiento propio.
 - No se han publicado cifras de rendimiento en la información disponible, por lo que cualquier afirmación de mejora frente a alternativas queda sin respaldo verificable.
 - Licencia BSD-3-Clause: permite uso comercial y modificación con conservación del aviso de copyright y de la cláusula de no endorsamiento, pero no incluye una concesión explícita de patentes, a diferencia de licencias como Apache-2.0.
@@ -85,9 +85,9 @@ La comparación pertinente es con otras distribuciones del mismo tipo de kernel,
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/replicate/causal-conv1d
+- Repositorio en Hugging Face: https://huggingface.co/replicate/causal-conv1d
 - Repositorio canónico citado en la *model card*: https://huggingface.co/kernels-community/causal-conv1d
-- Librería `kernels` de HuggingFace: https://github.com/huggingface/kernels
+- Librería `kernels` de Hugging Face: https://github.com/huggingface/kernels
 - Reporte de incidencias sobre repositorios de kernels: https://github.com/huggingface/kernels/issues/new
 - Organización de Replicate en GitHub (resultado de búsqueda): https://github.com/replicate
 - Plataforma de Replicate (resultado de búsqueda): https://replicate.com/

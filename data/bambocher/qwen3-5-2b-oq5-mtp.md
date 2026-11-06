@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-2B-oQ5-mtp es una cuantizacion mixta de precision del modelo Qwen3.5-2B publicada por el usuario bambocher en HuggingFace, generada con la herramienta oQ de oMLX (version v0.7.1rc1). No es un modelo entrenado desde cero, sino una conversion de pesos orientada a inferencia eficiente en Apple Silicon mediante el framework MLX. El checkpoint ocupa 1,921 GiB (2,06 GB) y contiene 2.274.069.824 parametros reales, verificados en los safetensors del repositorio, con un promedio efectivo de 7,255 bits por peso.
+Qwen3.5-2B-oQ5-mtp es una cuantizacion mixta de precision del modelo Qwen3.5-2B publicada por el usuario bambocher en Hugging Face, generada con la herramienta oQ de oMLX (version v0.7.1rc1). No es un modelo entrenado desde cero, sino una conversion de pesos orientada a inferencia eficiente en Apple Silicon mediante el framework MLX. El checkpoint ocupa 1,921 GiB (2,06 GB) y contiene 2.274.069.824 parametros reales, verificados en los safetensors del repositorio, con un promedio efectivo de 7,255 bits por peso.
 
 El checkpoint conserva tres componentes diferenciados: el modelo de lenguaje (1.882B de parametros), una torre de vision (0.331B) que habilita comprension de imagenes, y una cabeza MTP (multi-token prediction, 0.061B) pensada para decodificacion especulativa y aceleracion de la generacion. La mezcla de precisiones es heterogenea: el 76,1% de los pesos esta en affine 5-bit con grupo de 64, el 14,97% permanece en BF16 y el resto se reparte entre 6-bit y 8-bit, una estrategia habitual para proteger embeddings, normas y capas sensibles de la perdida de calidad.
 
@@ -74,9 +74,9 @@ No se dispone de datos de benchmarks ni de especificaciones del modelo base en l
 
 | Modelo | Parametros | Contexto | Licencia | Formato / disponibilidad |
 |---|---|---|---|---|
-| Qwen3.5-2B-oQ5-mtp (este) | 2,274B totales (1,882B LM + 0,331B vision + 0,061B MTP) | no disponible | no disponible | safetensors MLX, 1,921 GiB, HuggingFace |
+| Qwen3.5-2B-oQ5-mtp (este) | 2,274B totales (1,882B LM + 0,331B vision + 0,061B MTP) | no disponible | no disponible | safetensors MLX, 1,921 GiB, Hugging Face |
 | Qwen3.5-2B (base, BF16) | 2,274B (misma estructura segun el desglose) | no disponible | no disponible | no disponible en la informacion aportada |
-| Alternativas de ~2-4B multimodales (Qwen2.5-VL-3B, Gemma 3 4B, Llama 3.2 3B) | no disponible | no disponible | no disponible | existen en HuggingFace, pero sin datos verificados en esta busqueda |
+| Alternativas de ~2-4B multimodales (Qwen2.5-VL-3B, Gemma 3 4B, Llama 3.2 3B) | no disponible | no disponible | no disponible | existen en Hugging Face, pero sin datos verificados en esta busqueda |
 
 ## Limitaciones y advertencias
 
@@ -92,6 +92,6 @@ No se dispone de datos de benchmarks ni de especificaciones del modelo base en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bambocher/Qwen3.5-2B-oQ5-mtp
+- Modelo en Hugging Face: https://huggingface.co/bambocher/Qwen3.5-2B-oQ5-mtp
 - Repositorio de la herramienta de cuantizacion oQ (oMLX): https://github.com/jundot/omlx
 - Papers, blogs, repos de inferencia o demos del autor: no disponibles en la informacion proporcionada.

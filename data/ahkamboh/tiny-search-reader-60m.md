@@ -95,7 +95,7 @@ La comparación se limita a la tarea específica de lectura de resultados de bú
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ahkamboh/tiny-search-reader-60M
+- Modelo en Hugging Face: https://huggingface.co/ahkamboh/tiny-search-reader-60M
 - GGUF Q8_0: https://huggingface.co/ahkamboh/tiny-search-reader-60M/blob/main/gguf/tiny-search-reader-60M-Q8_0.gguf
 - GGUF Q4_K_M: https://huggingface.co/ahkamboh/tiny-search-reader-60M/blob/main/gguf/tiny-search-reader-60M-Q4_K_M.gguf
 - Script de integración: https://huggingface.co/ahkamboh/tiny-search-reader-60M/blob/main/searchreader.py

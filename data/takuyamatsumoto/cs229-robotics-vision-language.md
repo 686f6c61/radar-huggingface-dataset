@@ -84,5 +84,5 @@ No se dispone de datos verificables para completar una comparativa cuantitativa 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TakuyaMatsumoto/cs229-robotics-vision-language
+- Hugging Face: https://huggingface.co/TakuyaMatsumoto/cs229-robotics-vision-language
 - No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios o demos asociados al modelo.

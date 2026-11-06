@@ -82,6 +82,6 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SinhalaMMLU-SharedTask/team-nexus-gemma-4-e4b-it-text
+- Modelo en Hugging Face: https://huggingface.co/SinhalaMMLU-SharedTask/team-nexus-gemma-4-e4b-it-text
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Repositorio del equipo con el script de extraccion: https://huggingface.co/SinhalaMMLU-SharedTask/team-nexus

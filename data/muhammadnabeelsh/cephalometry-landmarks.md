@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CEPA29 es un modelo de deteccion de puntos cefalometricos (landmarks) basado en HRNet-W32, publicado por MuhammadNabeelSh en HuggingFace. Su funcion es localizar automaticamente 29 puntos anatomicos de referencia sobre radiografias cefalometricas laterales, una tarea previa habitual en ortodoncia y cirugia maxilofacial para el trazado y la medicion angular. El modelo se distribuye en formato ONNX, con una version FP32 y una version cuantizada a INT8 (QDQ estatico), lo que permite ejecucion en navegador mediante ONNX Runtime Web con backend WASM.
+CEPA29 es un modelo de deteccion de puntos cefalometricos (landmarks) basado en HRNet-W32, publicado por MuhammadNabeelSh en Hugging Face. Su funcion es localizar automaticamente 29 puntos anatomicos de referencia sobre radiografias cefalometricas laterales, una tarea previa habitual en ortodoncia y cirugia maxilofacial para el trazado y la medicion angular. El modelo se distribuye en formato ONNX, con una version FP32 y una version cuantizada a INT8 (QDQ estatico), lo que permite ejecucion en navegador mediante ONNX Runtime Web con backend WASM.
 
 El modelo no es un modelo de lenguaje: es un detector de landmarks basado en vision por computador, con una entrada fija de 768x768x3 y una salida de 29 mapas de calor de 192x192. Se entrena sobre el conjunto Aariz Cephalometric Dataset (CEPHA29), con backbone HRNet-W32 preentrenado en ImageNet, y esta pensado para el auto-trazado dentro de la aplicacion Cephalometry Studio.
 
@@ -73,7 +73,7 @@ No se dispone en la informacion proporcionada de datos sobre modelos comparables
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CEPA29 (HRNet-W32) | no disponible | no aplica (entrada 768x768x3) | MRE 1,24 mm; SDR@2mm 83,1% | CC BY 4.0 | ONNX en HuggingFace |
+| CEPA29 (HRNet-W32) | no disponible | no aplica (entrada 768x768x3) | MRE 1,24 mm; SDR@2mm 83,1% | CC BY 4.0 | ONNX en Hugging Face |
 | Alternativas | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -89,7 +89,7 @@ No se dispone en la informacion proporcionada de datos sobre modelos comparables
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MuhammadNabeelSh/cephalometry-landmarks
+- Modelo en Hugging Face: https://huggingface.co/MuhammadNabeelSh/cephalometry-landmarks
 - Dataset Aariz Cephalometric Dataset (CEPHA29), Figshare: DOI 10.6084/m9.figshare.27986417
 - Codigo de entrenamiento CephaloHRNet (MIT): no disponible en la informacion proporcionada
 - Backbone HRNet-W32 ImageNet (`hrnet_w32.ms_in1k`, Apache-2.0): no disponible en la informacion proporcionada

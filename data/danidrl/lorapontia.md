@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`DaniDRL/lorapontia` es un modelo de generación de imágenes texto-a-imagen publicado en HuggingFace por el usuario DaniDRL. El repositorio se distribuye en formato `diffusers` con pesos `safetensors` y declara la clase `StableDiffusionPipeline`, por lo que es compatible con el ecosistema estándar de Diffusers y con las interfaces que lo consumen (ComfyUI, AUTOMATIC1111/Forge, InvokeAI, etc.). El recuento real de parámetros almacenados es de 859.520.964, una cifra coherente con el tamaño del UNet de la familia Stable Diffusion 1.x, aunque el repositorio no desglosa qué componentes incluye exactamente.
+`DaniDRL/lorapontia` es un modelo de generación de imágenes texto-a-imagen publicado en Hugging Face por el usuario DaniDRL. El repositorio se distribuye en formato `diffusers` con pesos `safetensors` y declara la clase `StableDiffusionPipeline`, por lo que es compatible con el ecosistema estándar de Diffusers y con las interfaces que lo consumen (ComfyUI, AUTOMATIC1111/Forge, InvokeAI, etc.). El recuento real de parámetros almacenados es de 859.520.964, una cifra coherente con el tamaño del UNet de la familia Stable Diffusion 1.x, aunque el repositorio no desglosa qué componentes incluye exactamente.
 
 La información pública es mínima: no hay model card descriptiva, no se declara licencia, no se indican idiomas soportados ni se documenta el dataset de entrenamiento, el proceso de ajuste o los resultados de evaluación. El nombre del repositorio sugiere un ajuste tipo LoRA ("lorapontia"), pero los metadatos disponibles no listan ficheros de configuración de adaptador (`adapter_config.json`, `adapter_model.safetensors`), por lo que no es posible confirmar si se trata de un adaptador LoRA fusionado, de un fine-tune parcial o de un checkpoint completo.
 
@@ -32,7 +32,7 @@ No hay información sobre el entrenamiento: se desconoce el volumen de datos, la
 
 - Generación de imágenes a partir de prompts de texto mediante el pipeline `diffusers` declarado.
 - Integración directa con la librería Diffusers (`DiffusionPipeline.from_pretrained`) y, previsiblemente, con interfaces gráficas que la soportan.
-- Etiqueta `endpoints_compatible`: el repositorio está marcado como desplegable en HuggingFace Inference Endpoints con el runtime de Diffusers.
+- Etiqueta `endpoints_compatible`: el repositorio está marcado como desplegable en Hugging Face Inference Endpoints con el runtime de Diffusers.
 - No hay evidencia de soporte de image-to-image, inpainting, outpainting, ControlNet, tool calling, function calling, razonamiento multi-paso ni capacidades de agente.
 - No hay evidencia de capacidades multimodales de entrada más allá del prompt textual (sin imagen de referencia, audio o vídeo).
 - No hay evidencia de modo "thinking", visión o audio.
@@ -59,7 +59,7 @@ No hay métricas de FID, CLIP score, evaluación humana ni comparaciones cuantit
 - Estimación orientativa: un pipeline completo de esta familia suele requerir entre 3 y 6 GB de VRAM para imágenes de 512×512 en fp16, con atención eficiente o `xformers`.
 - GPU consumer: cabe holgadamente en tarjetas con 8 GB o más (RTX 3060 Ti, 4060, 3070, 4070, 4080, 4090) y, con atención optimizada y precisión fp16, en GPUs de 6 GB.
 - GPU de datacenter: A100, H100, L40S y L4 son sobredimensionadas para este tamaño; su uso tendría sentido solo para servir muchas peticiones concurrentes.
-- Opciones de despliegue: Diffusers (Python), HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`), ComfyUI, AUTOMATIC1111/Forge si los pesos son un checkpoint completo, y TGI/Diffusers para serving. No hay GGUF, por lo que llama.cpp/Ollama no aplican.
+- Opciones de despliegue: Diffusers (Python), Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`), ComfyUI, AUTOMATIC1111/Forge si los pesos son un checkpoint completo, y TGI/Diffusers para serving. No hay GGUF, por lo que llama.cpp/Ollama no aplican.
 - Latencia y throughput: no disponibles; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -90,6 +90,6 @@ Frente a estas alternativas, la diferencia no es de arquitectura ni de escala, s
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DaniDRL/lorapontia
+- Repositorio en Hugging Face: https://huggingface.co/DaniDRL/lorapontia
 - Perfil del autor: https://huggingface.co/DaniDRL
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados al modelo en la información disponible.

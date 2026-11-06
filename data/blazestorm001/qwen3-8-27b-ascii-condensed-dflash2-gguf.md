@@ -106,7 +106,7 @@ Comparado con el DFlash2 sin condensar (Anbeeld/Qwen3.8-27B-DFlash2-GGUF), este 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Blazestorm001/Qwen3.8-27B-ASCII-Condensed-DFlash2-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Blazestorm001/Qwen3.8-27B-ASCII-Condensed-DFlash2-GGUF
 - Modelo base: https://huggingface.co/Anbeeld/Qwen3.8-27B-DFlash2-GGUF
 - Modelo objetivo original: https://huggingface.co/Qwen/Qwen3.8-27B
 - DFlash2 (incoai): https://huggingface.co/incoai/Qwen3.8-27B-DFlash2

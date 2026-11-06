@@ -67,6 +67,6 @@ No se dispone de información suficiente para realizar una comparativa cuantitat
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/quangmeo/pinbuckle-classifier
+- Repositorio Hugging Face: https://huggingface.co/quangmeo/pinbuckle-classifier
 - Modelo de segmentación original (sayeed99): https://huggingface.co/sayeed99/segformer-b3-fashion
 - Paper SegFormer: https://arxiv.org/abs/2105.15203

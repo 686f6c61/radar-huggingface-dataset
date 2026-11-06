@@ -4,7 +4,7 @@
 
 ## Resumen
 
-matrixrb/goodercool es un modelo de difusion texto-a-imagen publicado en HuggingFace por el usuario matrixrb. Se distribuye con la libreria diffusers y se declara compatible con la clase StableDiffusionPipeline, por lo que sigue el esquema clasico de difusion latente: un codificador de texto tipo CLIP, una U-Net que actua como denoiser en el espacio latente y un decodificador VAE que reconstruye la imagen final. La suma de tensores en safetensors asciende a 859.520.964 parametros, una cifra en la misma escala que las generaciones de difusion de 512x512 basadas en U-Net.
+matrixrb/goodercool es un modelo de difusion texto-a-imagen publicado en Hugging Face por el usuario matrixrb. Se distribuye con la libreria diffusers y se declara compatible con la clase StableDiffusionPipeline, por lo que sigue el esquema clasico de difusion latente: un codificador de texto tipo CLIP, una U-Net que actua como denoiser en el espacio latente y un decodificador VAE que reconstruye la imagen final. La suma de tensores en safetensors asciende a 859.520.964 parametros, una cifra en la misma escala que las generaciones de difusion de 512x512 basadas en U-Net.
 
 El modelo no incluye model card descriptiva: no hay informacion sobre el dataset de entrenamiento, el proceso de ajuste fino, los hiperparametros, la resolucion nativa ni los idiomas de los prompts. La licencia no esta declarada en el repositorio, lo que impide determinar si su uso comercial esta permitido. Tampoco consta ninguna metrica de evaluacion publicada.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa basada en el recuento de parametros (859,5 millones), los pesos ocupan aproximadamente 1,7 GB en 16 bits y 3,4 GB en 32 bits; sumando activaciones del VAE y de la U-Net, un presupuesto de 4 a 8 GB de VRAM es un punto de partida razonable en generacion de imagenes de 512x512, aunque no esta verificado para este checkpoint.
 - GPU recomendadas: no disponible. Para un modelo de esta escala, cualquier GPU con al menos 6-8 GB de VRAM deberia poder ejecutarlo en 16 bits; para lotes grandes o resoluciones superiores se recomienda una GPU de 16 GB o mas (por ejemplo, RTX 4080/4090, A100, H100), sin datos confirmados.
 - Compatibilidad con GPU de consumo: probable en tarjetas con 6 GB o mas de VRAM, siempre que el pipeline se cargue en 16 bits; no confirmado por el autor.
-- Opciones de despliegue: diffusers es la libreria declarada. No se confirma compatibilidad con llama.cpp, Ollama o TGI (no aplicables o no documentadas para este modelo). La etiqueta endpoints_compatible sugiere soporte de despliegue en HuggingFace Inference Endpoints.
+- Opciones de despliegue: diffusers es la libreria declarada. No se confirma compatibilidad con llama.cpp, Ollama o TGI (no aplicables o no documentadas para este modelo). La etiqueta endpoints_compatible sugiere soporte de despliegue en Hugging Face Inference Endpoints.
 - Latencia y throughput: no disponibles. No se han publicado mediciones de tiempo por imagen, pasos de muestreo ni tamanos de lote.
 
 ## Comparativa con modelos similares
@@ -97,5 +97,5 @@ No es posible establecer una comparacion de rendimiento (FID, CLIP score, adhere
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matrixrb/goodercool
+- Modelo en Hugging Face: https://huggingface.co/matrixrb/goodercool
 - No se han encontrado papers, repositorios, blogs ni demos asociados al modelo en la busqueda web realizada.

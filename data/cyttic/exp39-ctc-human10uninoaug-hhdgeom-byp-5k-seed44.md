@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `cyttic/exp39-ctc-human10uninoaug-hhdgeom-byp-5k-seed44` es un checkpoint de investigación publicado por el usuario `cyttic` en HuggingFace. Por la nomenclatura del identificador (sufijo `-ctc-`, referencia a `human10uninoaug`, `hhdgeom`, `byp`, `5k` y `seed44`) y por el tamaño de sus pesos (87.279.756 parámetros, aproximadamente 87 M), se trata con alta probabilidad de un modelo de reconocimiento automático de habla (ASR) basado en CTC (Connectionist Temporal Classification), entrenado sobre un corpus de 10 horas de habla humana sin aumento de datos (`uninoaug`), con alguna variante de geometría o sesgo (`hhdgeom`, `byp`) y 5.000 pasos de entrenamiento, con semilla 44. Esta interpretación es una inferencia a partir del nombre y no está confirmada por la model card, que es una plantilla vacía.
+El modelo `cyttic/exp39-ctc-human10uninoaug-hhdgeom-byp-5k-seed44` es un checkpoint de investigación publicado por el usuario `cyttic` en Hugging Face. Por la nomenclatura del identificador (sufijo `-ctc-`, referencia a `human10uninoaug`, `hhdgeom`, `byp`, `5k` y `seed44`) y por el tamaño de sus pesos (87.279.756 parámetros, aproximadamente 87 M), se trata con alta probabilidad de un modelo de reconocimiento automático de habla (ASR) basado en CTC (Connectionist Temporal Classification), entrenado sobre un corpus de 10 horas de habla humana sin aumento de datos (`uninoaug`), con alguna variante de geometría o sesgo (`hhdgeom`, `byp`) y 5.000 pasos de entrenamiento, con semilla 44. Esta interpretación es una inferencia a partir del nombre y no está confirmada por la model card, que es una plantilla vacía.
 
-El modelo no incluye documentación sustantiva: la model card es el esqueleto por defecto de HuggingFace con todos los campos marcados como "[More Information Needed]". No se especifican arquitectura, datos de entrenamiento, idiomas, métricas ni procedimiento de evaluación. El repositorio ocupa 0,3 GB, lo que es coherente con un checkpoint de ~87 M de parámetros en precisión de 16 o 32 bits junto con el optimizador o estados auxiliares.
+El modelo no incluye documentación sustantiva: la model card es el esqueleto por defecto de Hugging Face con todos los campos marcados como "[More Information Needed]". No se especifican arquitectura, datos de entrenamiento, idiomas, métricas ni procedimiento de evaluación. El repositorio ocupa 0,3 GB, lo que es coherente con un checkpoint de ~87 M de parámetros en precisión de 16 o 32 bits junto con el optimizador o estados auxiliares.
 
 Su relevancia es, por tanto, la de un artefacto de experimentación reproducible (semilla fijada, configuración concreta) más que la de un modelo listo para producción. Resulta útil para investigadores que quieran reproducir o comparar variantes de entrenamiento CTC, pero no ofrece garantías de calidad, cobertura lingüística ni comportamiento en dominios reales.
 
@@ -74,6 +74,6 @@ No disponible. No se conocen modelos comparables documentados por el autor ni se
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cyttic/exp39-ctc-human10uninoaug-hhdgeom-byp-5k-seed44
+- Hugging Face: https://huggingface.co/cyttic/exp39-ctc-human10uninoaug-hhdgeom-byp-5k-seed44
 - Paper de referencia citado en los tags (calculadora de impacto ambiental, Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora ML Impact: https://mlco2.github.io/impact

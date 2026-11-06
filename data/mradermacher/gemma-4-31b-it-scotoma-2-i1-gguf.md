@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente para realizar una comparativa objetiva. El modelo base `ReadyArt/gemma-4-31B-it-scotoma-2` no tiene ficha publica en HuggingFace con benchmarks. Como alternativa, se pueden considerar otros GGUF de modelos de 30B-32B, como los de Mistral (Mixtral 8x7B, aunque es MoE) o Llama 3 30B, pero no hay datos comparables en este repositorio. Se recomienda consultar el repositorio estatico del mismo autor para ver cuantizaciones de mayor calidad y, si se desea comparar, buscar benchmarks de Gemma 4 31B en su version original.
+No se dispone de informacion suficiente para realizar una comparativa objetiva. El modelo base `ReadyArt/gemma-4-31B-it-scotoma-2` no tiene ficha publica en Hugging Face con benchmarks. Como alternativa, se pueden considerar otros GGUF de modelos de 30B-32B, como los de Mistral (Mixtral 8x7B, aunque es MoE) o Llama 3 30B, pero no hay datos comparables en este repositorio. Se recomienda consultar el repositorio estatico del mismo autor para ver cuantizaciones de mayor calidad y, si se desea comparar, buscar benchmarks de Gemma 4 31B en su version original.
 
 ## Limitaciones y advertencias
 
@@ -69,7 +69,7 @@ No se dispone de informacion suficiente para realizar una comparativa objetiva. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/gemma-4-31B-it-scotoma-2-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/gemma-4-31B-it-scotoma-2-i1-GGUF
 - Modelo base: https://huggingface.co/ReadyArt/gemma-4-31B-it-scotoma-2
 - Repositorio estatico (otras cuantizaciones y mmproj): https://huggingface.co/mradermacher/gemma-4-31B-it-scotoma-2-GGUF
 - Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license

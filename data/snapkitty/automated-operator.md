@@ -2,9 +2,9 @@
 
 ## Resumen
 
-AutomatedOperator es un proyecto publicado en HuggingFace por el usuario Snapkitty, aunque no se trata de un modelo de inteligencia artificial en el sentido convencional, sino de un sistema de software descrito como un "sintetizador de objetivos matemáticos acotado por entropía". Según su model card, implementa un autómata determinista de satisfacción de restricciones que reemplaza al operador humano en el bucle ALGORITHM_ENGINE, generando objetivos matemáticos válidos bajo restricciones de soberanía, entropía y prueba formal. El proyecto está escrito principalmente en Rust, con componentes en Lean 4 para verificación formal, Circom para circuitos de conocimiento cero, y Q#/OpenQASM para capas cuánticas.
+AutomatedOperator es un proyecto publicado en Hugging Face por el usuario Snapkitty, aunque no se trata de un modelo de inteligencia artificial en el sentido convencional, sino de un sistema de software descrito como un "sintetizador de objetivos matemáticos acotado por entropía". Según su model card, implementa un autómata determinista de satisfacción de restricciones que reemplaza al operador humano en el bucle ALGORITHM_ENGINE, generando objetivos matemáticos válidos bajo restricciones de soberanía, entropía y prueba formal. El proyecto está escrito principalmente en Rust, con componentes en Lean 4 para verificación formal, Circom para circuitos de conocimiento cero, y Q#/OpenQASM para capas cuánticas.
 
-La relevancia de esta publicación reside en su enfoque en sistemas autónomos con verificación matemática y soberanía computacional, un tema emergente en el ecosistema de IA. Sin embargo, carece de características típicas de un modelo de lenguaje o de visión: no tiene parámetros de red neuronal, ni pipeline de inferencia, ni datos de entrenamiento. La model card indica restricciones estrictas: no se permite su uso para entrenamiento de modelos de IA ni la clonación del repositorio sin permiso expreso, y se requiere una clave de nodo soberano para operar. La fecha de creación es el 3 de septiembre de 2026, y el repositorio no registra descargas ni valoraciones en HuggingFace.
+La relevancia de esta publicación reside en su enfoque en sistemas autónomos con verificación matemática y soberanía computacional, un tema emergente en el ecosistema de IA. Sin embargo, carece de características típicas de un modelo de lenguaje o de visión: no tiene parámetros de red neuronal, ni pipeline de inferencia, ni datos de entrenamiento. La model card indica restricciones estrictas: no se permite su uso para entrenamiento de modelos de IA ni la clonación del repositorio sin permiso expreso, y se requiere una clave de nodo soberano para operar. La fecha de creación es el 3 de septiembre de 2026, y el repositorio no registra descargas ni valoraciones en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -71,6 +71,6 @@ No disponible. AutomatedOperator no es un modelo de inteligencia artificial comp
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Snapkitty/automated-operator
+- Repositorio en Hugging Face: https://huggingface.co/Snapkitty/automated-operator
 - Sitio web de SnapKitty (descargas y ecosistema): https://collectivekitty.com/downloads
 - Tema de GitHub sobre "sovereign-ai" (contexto relacionado): https://github.com/topics/sovereign-ai

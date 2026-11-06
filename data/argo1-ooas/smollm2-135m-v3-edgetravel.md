@@ -74,7 +74,7 @@ No se dispone de resultados de benchmarks comparativos entre estos modelos. La c
 
 ## Enlaces
 
-- [HuggingFace: Argo1-OOAS/SmolLM2-135M-V3-EdgeTravel](https://huggingface.co/Argo1-OOAS/SmolLM2-135M-V3-EdgeTravel)
+- [Hugging Face: Argo1-OOAS/SmolLM2-135M-V3-EdgeTravel](https://huggingface.co/Argo1-OOAS/SmolLM2-135M-V3-EdgeTravel)
 - [GitHub – huggingface/smollm](https://github.com/huggingface/smollm) (repositorio de la familia SmolLM)
 - [Modelo base: HuggingFaceTB/SmolLM2-135M-Instruct](https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct)
 - [Documento de investigación (research_paper.pdf) – no disponible en el repositorio](no disponible)

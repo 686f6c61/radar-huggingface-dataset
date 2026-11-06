@@ -70,7 +70,7 @@ No se dispone de datos comparativos directos con otros modelos en la informació
 
 ## Enlaces
 
-- [HuggingFace - ahmed-amedo-1/GLM-5.3-Flash](https://huggingface.co/ahmed-amedo-1/GLM-5.3-Flash)
+- [Hugging Face - ahmed-amedo-1/GLM-5.3-Flash](https://huggingface.co/ahmed-amedo-1/GLM-5.3-Flash)
 - [Blog oficial de GLM-5.3-Flash](https://z.ai/blog/glm-5.3-flash)
 - [Informe técnico GLM-5 (arxiv)](https://arxiv.org/abs/2602.15763)
 - [Documentación de la API de Z.ai](https://docs.z.ai/guides/vlm/glm-5.3-flash)

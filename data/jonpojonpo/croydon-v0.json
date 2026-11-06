@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "jonpojonpo/croydon-v0",
+  "slug": "jonpojonpo-croydon-v0",
+  "author": "jonpojonpo",
+  "url": "https://huggingface.co/jonpojonpo/croydon-v0",
+  "created_at": "2026-11-03T11:54:06.000Z",
+  "updated_at": "2026-11-03T11:58:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "croydon",
+    "fineweb-uk",
+    "data-filtering",
+    "united-kingdom",
+    "distillation",
+    "text-classification",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:HuggingFaceFW/fineweb",
+    "base_model:answerdotai/ModernBERT-base",
+    "base_model:finetune:answerdotai/ModernBERT-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 149018886,
+  "parameters_human": "149.0M",
+  "storage_bytes": 596089256,
+  "storage_human": "596 MB",
+  "base_model": "answerdotai/ModernBERT-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jonpojonpo/croydon-v0 · Hugging Face",
+      "url": "https://huggingface.co/jonpojonpo/croydon-v0",
+      "snippet": "Croydon scores how much a web page would teach a language model about the United Kingdom, from 0 to 5. It's named after the town where the Home Office decides who counts as British, except this one judges web pages."
+    }
+  ]
+}

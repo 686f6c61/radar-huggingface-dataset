@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/tur-latn-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed455` es un ajuste fino (SFT) del modelo `francesca9805/tur-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed455`, publicado por el usuario de HuggingFace francesca9805. Se trata de un transformer de tipo GPT-2, decoder-only y denso, con 124.770.816 parametros (aproximadamente 124,8 millones), lo que lo situa en la misma escala que GPT-2 small. El pipeline declarado es `text-generation` y la libreria de referencia es `transformers`.
+El modelo `francesca9805/tur-latn-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed455` es un ajuste fino (SFT) del modelo `francesca9805/tur-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed455`, publicado por el usuario de Hugging Face francesca9805. Se trata de un transformer de tipo GPT-2, decoder-only y denso, con 124.770.816 parametros (aproximadamente 124,8 millones), lo que lo situa en la misma escala que GPT-2 small. El pipeline declarado es `text-generation` y la libreria de referencia es `transformers`.
 
 El modelo se ha entrenado con TRL 0.23.0 en modalidad SFT (supervised fine-tuning), segun la propia model card. El identificador sugiere que forma parte de una linea de experimentos sobre tokenizadores y datos empaquetados ("packed") en turco con escritura latina (`tur-latn`), con un corpus de aproximadamente 100 MB y una semilla concreta (seed 455). El proyecto de Weights & Biases asociado se denomina "new-tokenizers" y pertenece a la Universidad de Groningen, lo que apunta a un artefacto de investigacion mas que a un modelo orientado a produccion.
 
@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| francesca9805/tur-latn-100mb-after-ppt... (este modelo) | 124,8 M | no disponible | no disponible | HuggingFace, 0 descargas | SFT sobre base GPT-2 del mismo autor |
+| francesca9805/tur-latn-100mb-after-ppt... (este modelo) | 124,8 M | no disponible | no disponible | Hugging Face, 0 descargas | SFT sobre base GPT-2 del mismo autor |
 | GPT-2 small (OpenAI) | 124 M | 1024 tokens | MIT | Ampliamente disponible | Referencia de la misma escala, sin ajuste a turco |
-| distilgpt2 (HuggingFace) | 82 M | 1024 tokens | MIT | Ampliamente disponible | Version destilada de GPT-2, en ingles |
-| francesca9805/tur-latn-100mb-ppt-Dp-10mb-packed-bfd_seed10 | no disponible | no disponible | no disponible | HuggingFace | Variante de la misma familia con dataset de 10 MB y semilla 10 |
+| distilgpt2 (Hugging Face) | 82 M | 1024 tokens | MIT | Ampliamente disponible | Version destilada de GPT-2, en ingles |
+| francesca9805/tur-latn-100mb-ppt-Dp-10mb-packed-bfd_seed10 | no disponible | no disponible | no disponible | Hugging Face | Variante de la misma familia con dataset de 10 MB y semilla 10 |
 
 La comparacion con GPT-2 small y distilgpt2 se incluye por coincidencia de escala y arquitectura, no porque existan evaluaciones cruzadas publicadas. No hay datos de rendimiento comparativo disponibles para este modelo.
 
@@ -91,7 +91,7 @@ La comparacion con GPT-2 small y distilgpt2 se incluye por coincidencia de escal
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/tur-latn-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/tur-latn-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed455
 - Modelo base: https://huggingface.co/francesca9805/tur-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed455
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Registro del entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/oo8pbbzb

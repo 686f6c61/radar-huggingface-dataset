@@ -64,7 +64,7 @@ No se dispone de información sobre modelos comparables. El modelo base `gemma-4
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/kirikir13/gemma-4-E4B-unsloth-vaccine-xai)
+- [Repositorio Hugging Face](https://huggingface.co/kirikir13/gemma-4-E4B-unsloth-vaccine-xai)
 - [Modelo base (referencia)](https://huggingface.co/unsloth/gemma-4-E4B-it-qat-q4_0-unquantized) (enlace inferido, no confirmado en la información proporcionada)
 
 No se han encontrado papers, blogs o demos asociados a este modelo.

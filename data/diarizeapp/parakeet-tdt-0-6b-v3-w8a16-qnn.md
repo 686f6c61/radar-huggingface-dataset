@@ -75,6 +75,6 @@ La comparación muestra que esta versión cuantizada sacrifica el soporte multil
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/diarizeapp/parakeet-tdt-0.6b-v3-w8a16-qnn
+- Repositorio Hugging Face: https://huggingface.co/diarizeapp/parakeet-tdt-0.6b-v3-w8a16-qnn
 - Modelo original de NVIDIA: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Demo interactiva del modelo original: https://huggingface.co/spaces/nvidia/parakeet-tdt-0.6b-v3

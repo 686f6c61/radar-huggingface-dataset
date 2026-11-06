@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `kagamill/qwen3-vl-2b-latex-ocr-grpo` es un ajuste fino (fine-tune) del modelo vision-language Qwen3-VL-2B, desarrollado por el usuario kagamill, especializado en la conversión de imágenes de fórmulas matemáticas o documentos científicos a código LaTeX. El nombre del modelo indica que el entrenamiento se realizó mediante GRPO (Group Relative Policy Optimization), una técnica de optimización de políticas basada en aprendizaje por refuerzo, aplicada sobre el modelo base de Qwen. Aunque la model card publicada es genérica y no aporta detalles específicos, los metadatos de HuggingFace confirman que se trata de un modelo de 2.127.532.032 parámetros (aproximadamente 2,1 mil millones) en formato safetensors, compatible con la librería transformers y con pipeline de image-text-to-text.
+El modelo `kagamill/qwen3-vl-2b-latex-ocr-grpo` es un ajuste fino (fine-tune) del modelo vision-language Qwen3-VL-2B, desarrollado por el usuario kagamill, especializado en la conversión de imágenes de fórmulas matemáticas o documentos científicos a código LaTeX. El nombre del modelo indica que el entrenamiento se realizó mediante GRPO (Group Relative Policy Optimization), una técnica de optimización de políticas basada en aprendizaje por refuerzo, aplicada sobre el modelo base de Qwen. Aunque la model card publicada es genérica y no aporta detalles específicos, los metadatos de Hugging Face confirman que se trata de un modelo de 2.127.532.032 parámetros (aproximadamente 2,1 mil millones) en formato safetensors, compatible con la librería transformers y con pipeline de image-text-to-text.
 
 Este modelo resulta relevante para la comunidad de investigadores y desarrolladores que necesitan extraer ecuaciones y notación matemática de imágenes de forma automatizada, una tarea común en la digitalización de documentos científicos, la asistencia a estudiantes o la integración en flujos de publicación académica. Al estar basado en Qwen3-VL, hereda las capacidades multimodales de la familia Qwen, aunque el ajuste específico para OCR de LaTeX lo hace especialmente útil en dominios técnicos. La ausencia de información pública sobre licencia, idiomas o datos de entrenamiento limita su evaluación, pero su tamaño compacto lo hace viable para despliegue en hardware de gama media.
 
@@ -49,12 +49,12 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: con 2,1 mil millones de parámetros, se estima que el modelo requiere aproximadamente 8 GB de VRAM en precisión fp16, alrededor de 4 GB en cuantización de 8 bits y unos 2-3 GB en cuantización de 4 bits. Estas cifras son orientativas y dependen de la implementación y del tamaño del lote.
 - GPU recomendadas: tarjetas con al menos 8 GB de VRAM, como RTX 3060, RTX 3070, RTX 4060 Ti, o GPUs profesionales como A10 o L4. Para cuantizaciones más agresivas, podría funcionar en GPUs de 4 GB como RTX 3050, aunque con limitaciones de velocidad.
 - Cabe en GPUs de consumo: sí, especialmente con cuantización. Las GPUs de gama media como RTX 3060 o RTX 4060 son suficientes para inferencia.
-- Opciones de despliegue: al ser un modelo de transformers, puede ejecutarse con las bibliotecas estándar de HuggingFace (transformers + accelerate). También es compatible con servidores de inferencia como vLLM, TGI o llama.cpp si se convierten los pesos a GGUF. No se proporcionan archivos GGUF en el repositorio actual, pero existen conversiones comunitarias de modelos similares (por ejemplo, mradermacher/Qwen3-2b-vl-latex-ocr-GGUF).
+- Opciones de despliegue: al ser un modelo de transformers, puede ejecutarse con las bibliotecas estándar de Hugging Face (transformers + accelerate). También es compatible con servidores de inferencia como vLLM, TGI o llama.cpp si se convierten los pesos a GGUF. No se proporcionan archivos GGUF en el repositorio actual, pero existen conversiones comunitarias de modelos similares (por ejemplo, mradermacher/Qwen3-2b-vl-latex-ocr-GGUF).
 - Latencia y throughput: no disponibles. Se espera que sea relativamente rápido en GPUs modernas dado el tamaño reducido, pero no hay datos publicados.
 
 ## Comparativa con modelos similares
 
-Existen otros modelos en HuggingFace con el mismo propósito, aunque no se dispone de sus especificaciones detalladas:
+Existen otros modelos en Hugging Face con el mismo propósito, aunque no se dispone de sus especificaciones detalladas:
 
 | Modelo | Parametros | Contexto | Licencia | Formato |
 |---|---|---|---|---|
@@ -76,7 +76,7 @@ La comparativa se limita a la existencia de estos modelos, ya que no se encontra
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kagamill/qwen3-vl-2b-latex-ocr-grpo
+- Repositorio en Hugging Face: https://huggingface.co/kagamill/qwen3-vl-2b-latex-ocr-grpo
 - Modelo similar en GGUF: https://huggingface.co/mradermacher/Qwen3-2b-vl-latex-ocr-GGUF
 - Modelo similar de otro autor: https://huggingface.co/Kassadin88/Qwen3-VL-2B-LaTeX-OCR
 - Repositorio oficial de Qwen3-VL: https://github.com/QwenLM/Qwen3-VL

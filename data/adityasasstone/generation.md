@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`adityasasstone/generation` es un repositorio de HuggingFace que contiene una implementación propia y compacta en PyTorch de una arquitectura denominada Mixer, orientada a tareas de generación. No se trata de un modelo preentrenado listo para producción: el propio autor lo describe como una configuración "nano" pensada para revisión de código, pruebas de humo (smoke tests) y experimentos pequeños y controlados. El checkpoint incluido (`model.safetensors`) es una inicialización válida, no un modelo entrenado ni auditado.
+`adityasasstone/generation` es un repositorio de Hugging Face que contiene una implementación propia y compacta en PyTorch de una arquitectura denominada Mixer, orientada a tareas de generación. No se trata de un modelo preentrenado listo para producción: el propio autor lo describe como una configuración "nano" pensada para revisión de código, pruebas de humo (smoke tests) y experimentos pequeños y controlados. El checkpoint incluido (`model.safetensors`) es una inicialización válida, no un modelo entrenado ni auditado.
 
 El dato más relevante del repositorio es su escala: 24.832 parámetros totales según el recuento real de los pesos en safetensors. Se trata, por tanto, de un artefacto de investigación y de infraestructura, no de un modelo de propósito general. La model card es explícita al afirmar que no se reclama ninguna puntuación de benchmark y que no se ha completado ningún entrenamiento significativo con la receta incluida.
 
@@ -79,5 +79,5 @@ No disponible. La información proporcionada no incluye modelos comparables con 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/adityasasstone/generation
+- Repositorio en Hugging Face: https://huggingface.co/adityasasstone/generation
 - No se han encontrado en la búsqueda web enlaces relevantes (papers, blogs, repositorios o demos) asociados a este modelo; los resultados devueltos corresponden a servicios de traducción sin relación con el artefacto.

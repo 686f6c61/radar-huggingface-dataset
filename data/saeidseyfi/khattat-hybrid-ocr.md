@@ -2,11 +2,11 @@
 
 ## Resumen
 
-khattat-hybrid-ocr es un pipeline de reconocimiento optico de caracteres (OCR) para texto manuscrito en persa, arabe e ingles, publicado por el usuario saeidseyfi en HuggingFace. No es un modelo neuronal entrenado desde cero ni un checkpoint con pesos propios: es una orquestacion de componentes libres y offline (OpenCV, EasyOCR, Tesseract 5, pix2tex y clasificacion de contornos con OpenCV) que combina varios motores de OCR mediante un ensemble de confianzas. Esta disenado especificamente para el dataset khattat, tambien del mismo autor, que contiene lineas manuscritas, formulas matematicas, formas dibujadas a mano y sus pies de figura.
+khattat-hybrid-ocr es un pipeline de reconocimiento optico de caracteres (OCR) para texto manuscrito en persa, arabe e ingles, publicado por el usuario saeidseyfi en Hugging Face. No es un modelo neuronal entrenado desde cero ni un checkpoint con pesos propios: es una orquestacion de componentes libres y offline (OpenCV, EasyOCR, Tesseract 5, pix2tex y clasificacion de contornos con OpenCV) que combina varios motores de OCR mediante un ensemble de confianzas. Esta disenado especificamente para el dataset khattat, tambien del mismo autor, que contiene lineas manuscritas, formulas matematicas, formas dibujadas a mano y sus pies de figura.
 
 Su relevancia practica esta en que cubre un hueco poco atendido: el OCR manuscrito en alfabetos arabe y persa con soporte adicional de formulas LaTeX y dibujos, sin necesidad de entrenamiento, sin GPUs y sin APIs de pago. El autor reporta mejoras sustanciales frente a una linea base CRNN propia en todos los conjuntos de prueba del dataset khattat, con CER agrupado de 0,320 en persa, 0,316 en arabe y 0,169 en ingles.
 
-El repositorio de HuggingFace ocupa 0,0 GB, no tiene descargas ni likes, y se limita a referenciar el codigo en GitHub, los artefactos de demostracion y la documentacion de arquitectura. La licencia declarada es CC-BY-4.0 y los idiomas soportados son fa, ar y en.
+El repositorio de Hugging Face ocupa 0,0 GB, no tiene descargas ni likes, y se limita a referenciar el codigo en GitHub, los artefactos de demostracion y la documentacion de arquitectura. La licencia declarada es CC-BY-4.0 y los idiomas soportados son fa, ar y en.
 
 ## Especificaciones tecnicas
 
@@ -92,7 +92,7 @@ El pipeline integra EasyOCR y Tesseract como componentes internos, por lo que su
 - El OCR de formulas (CER 0,307) y de pies de figura (CER 0,381) es el eslabon mas debil; pix2tex puede generar LaTeX sintacticamente valido pero incorrecto, lo que exige verificacion.
 - La clasificacion de formas cubre solo diez clases y alcanza un 80 por ciento de exactitud en 15 muestras; no se detallan las clases ni la matriz de confusion.
 - Dependencia de terceros: cualquier cambio en EasyOCR, Tesseract, tessdata_best o pix2tex puede alterar los resultados; ademas, cada componente mantiene su propia licencia, que hay que respetar por separado.
-- No se publican pesos propios ni un paquete instalable: el repositorio de HuggingFace ocupa 0,0 GB y solo enlaza codigo, demo y documentacion, de modo que la reproducibilidad depende del repositorio de GitHub.
+- No se publican pesos propios ni un paquete instalable: el repositorio de Hugging Face ocupa 0,0 GB y solo enlaza codigo, demo y documentacion, de modo que la reproducibilidad depende del repositorio de GitHub.
 - Idiomas limitados a fa, ar y en; no hay soporte documentado para otras lenguas ni para escritura mixta con alfabetos latinos y arabes en la misma linea mas alla del ensemble por deteccion de script.
 - Ausencia de historial de uso: cero descargas y cero likes, sin metricas de produccion ni informes de terceros.
 - Licencia CC-BY-4.0: permite uso comercial con atribucion, pero no se ofrece garantia ni soporte.
@@ -100,7 +100,7 @@ El pipeline integra EasyOCR y Tesseract como componentes internos, por lo que su
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/saeidseyfi/khattat-hybrid-ocr
+- Modelo en Hugging Face: https://huggingface.co/saeidseyfi/khattat-hybrid-ocr
 - Dataset khattat: https://huggingface.co/datasets/saeidseyfi/khattat
 - Codigo del pipeline: https://github.com/ramazanzadehnazaninzahra-del/handwritten-ocr-dataset-pipeline
 - Demostracion en video: demo/khattat_hybrid_demo.mp4 (83 segundos) dentro del repositorio del modelo

@@ -85,7 +85,7 @@ Ornith-1.5-9B supera a Qwen3.5-9B en todos los benchmarks mostrados y se acerca 
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/developerjeremylive/Ornith-1.5-9B-GGUF-etheroi
+- Repositorio Hugging Face (GGUF): https://huggingface.co/developerjeremylive/Ornith-1.5-9B-GGUF-etheroi
 - Repositorio original (ornith-ai): https://huggingface.co/ornith-ai/Ornith-1.5-9B-GGUF
 - Blog de Ornith-1.5: https://ornith.ai/ornith_1_5.html
 - Guía de ejecución local (Atomic Chat): https://atomic.chat/blog/guides/how-to-run-ornith-1-5-locally

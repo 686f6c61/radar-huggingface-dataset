@@ -110,7 +110,7 @@ La comparación más directa es con el "cuadrado AR" del mismo autor, entrenado 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/VectaBass/vectabass-1.03b-11.5bt-mdlm-cooled
+- Hugging Face: https://huggingface.co/VectaBass/vectabass-1.03b-11.5bt-mdlm-cooled
 - Datos de entrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Datos de entrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb-2
 - Datos de entrenamiento: https://huggingface.co/datasets/HuggingFaceTB/finemath

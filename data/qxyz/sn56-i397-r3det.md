@@ -2,9 +2,9 @@
 
 ## Resumen
 
-qxyz/sn56-i397-r3det es un adaptador de ajuste fino de tipo LoRA (PEFT) alojado en HuggingFace por el usuario qxyz, construido sobre el modelo base Qwen/Qwen3-4B-Instruct-2507. Se trata, por tanto, de un artefacto de pesos delta (no de un modelo completo) que debe cargarse junto al modelo base o fusionarse con él para su uso en inferencia. La nomenclatura del repositorio (prefijo sn56 seguido de un índice i397) sugiere que forma parte de una serie de iteraciones de entrenamiento dentro de una misma línea de trabajo, probablemente un pipeline automatizado o una subred, más que un lanzamiento editorial independiente.
+qxyz/sn56-i397-r3det es un adaptador de ajuste fino de tipo LoRA (PEFT) alojado en Hugging Face por el usuario qxyz, construido sobre el modelo base Qwen/Qwen3-4B-Instruct-2507. Se trata, por tanto, de un artefacto de pesos delta (no de un modelo completo) que debe cargarse junto al modelo base o fusionarse con él para su uso en inferencia. La nomenclatura del repositorio (prefijo sn56 seguido de un índice i397) sugiere que forma parte de una serie de iteraciones de entrenamiento dentro de una misma línea de trabajo, probablemente un pipeline automatizado o una subred, más que un lanzamiento editorial independiente.
 
-El adaptador se ha entrenado presumiblemente mediante SFT (supervised fine-tuning) usando la librería TRL, según indican las etiquetas del repositorio (lora, sft, trl, transformers). El modelo hereda la arquitectura, el tamaño y las capacidades del Qwen3-4B-Instruct-2507 subyacente, un transformer decoder-only denso de aproximadamente 4.000 millones de parámetros. El repositorio ocupa 1,1 GB y está marcado como de acceso restringido (gated), lo que obliga a aceptar condiciones en HuggingFace antes de descargarlo.
+El adaptador se ha entrenado presumiblemente mediante SFT (supervised fine-tuning) usando la librería TRL, según indican las etiquetas del repositorio (lora, sft, trl, transformers). El modelo hereda la arquitectura, el tamaño y las capacidades del Qwen3-4B-Instruct-2507 subyacente, un transformer decoder-only denso de aproximadamente 4.000 millones de parámetros. El repositorio ocupa 1,1 GB y está marcado como de acceso restringido (gated), lo que obliga a aceptar condiciones en Hugging Face antes de descargarlo.
 
 La relevancia de esta ficha es limitada en términos de impacto público: el modelo registra cero descargas y cero likes, carece de model card descriptiva, de licencia declarada y de idiomas indicados, y no se han publicado resultados de benchmarks. Debe tratarse, por tanto, como un artefacto experimental de autoría individual más que como un modelo listo para producción.
 
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| qxyz/sn56-i397-r3det | ~4B (base) + LoRA | No disponible | No disponible | Gated en HuggingFace | 0 descargas, 0 likes, sin benchmarks |
-| Qwen/Qwen3-4B-Instruct-2507 | ~4B | 262.144 tokens | Apache 2.0 | Publico en HuggingFace | Modelo base de referencia |
+| qxyz/sn56-i397-r3det | ~4B (base) + LoRA | No disponible | No disponible | Gated en Hugging Face | 0 descargas, 0 likes, sin benchmarks |
+| Qwen/Qwen3-4B-Instruct-2507 | ~4B | 262.144 tokens | Apache 2.0 | Publico en Hugging Face | Modelo base de referencia |
 | Familia Qwen3-4B (dense) | ~4B | 262.144 tokens | Apache 2.0 | Publico | Variantes instruct y base |
 | Modelos abiertos de 4B a 40B (categoria «small» segun Artificial Analysis) | 4B-40B | Variable | Variable | Publicos | Categoria general comparable por tamano |
 
@@ -71,7 +71,7 @@ No se dispone de datos comparativos de rendimiento para este adaptador, ya que n
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated, por lo que requiere aceptar condiciones en HuggingFace antes de la descarga, lo que puede bloquear su uso automatizado.
+- Acceso restringido: el repositorio es gated, por lo que requiere aceptar condiciones en Hugging Face antes de la descarga, lo que puede bloquear su uso automatizado.
 - Ausencia de licencia declarada: no se especifica licencia, lo que impide determinar si se permite el uso comercial. Debe tratarse como no apto para producción hasta aclararlo.
 - Falta de model card: no hay información sobre datos de entrenamiento, hiperparámetros, evaluación ni comportamiento esperado.
 - Sin benchmarks publicados: no hay evidencia objetiva de calidad ni de regresiones frente al modelo base.
@@ -84,7 +84,7 @@ No se dispone de datos comparativos de rendimiento para este adaptador, ya que n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qxyz/sn56-i397-r3det
+- Hugging Face: https://huggingface.co/qxyz/sn56-i397-r3det
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Articulo de LoRA (arXiv:1910.09700): https://arxiv.org/abs/1910.09700
 - Repositorio similar del mismo autor: https://huggingface.co/qxyz/sn56-i284-g39k

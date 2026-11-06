@@ -86,8 +86,8 @@ El checkpoint `sydqiang/Qwen3-8B-agenticrl-industrial` se posiciona como una var
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/sydqiang/Qwen3-8B-agenticrl-industrial)
-- [Qwen3-8B base en HuggingFace](https://huggingface.co/Qwen/Qwen3-8B)
+- [Hugging Face del modelo](https://huggingface.co/sydqiang/Qwen3-8B-agenticrl-industrial)
+- [Qwen3-8B base en Hugging Face](https://huggingface.co/Qwen/Qwen3-8B)
 - [Paper AgenticQwen (arXiv)](https://arxiv.org/html/2604.21590v1)
 - [Qwen3 Technical Report (arXiv)](https://arxiv.org/html/2505.09388v1)
 - [Blog de Intel sobre Qwen3-8B agent](https://huggingface.co/blog/intel-qwen3-agent)

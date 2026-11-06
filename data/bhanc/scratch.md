@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`bhanc/scratch` es un repositorio de modelo publicado en HuggingFace por el usuario bhanc (Bartosz Hanc). La unica etiqueta funcional presente en la ficha del repositorio es `executorch`, lo que indica que el artefacto esta orientado al runtime de inferencia en dispositivo de Meta (ExecuTorch), y no a un despliegue clasico en servidor con transformers. El repositorio ocupa 118,2 GB, un tamano considerable que sugiere la presencia de pesos originales sin cuantizar junto con, probablemente, exportaciones derivadas.
+`bhanc/scratch` es un repositorio de modelo publicado en Hugging Face por el usuario bhanc (Bartosz Hanc). La unica etiqueta funcional presente en la ficha del repositorio es `executorch`, lo que indica que el artefacto esta orientado al runtime de inferencia en dispositivo de Meta (ExecuTorch), y no a un despliegue clasico en servidor con transformers. El repositorio ocupa 118,2 GB, un tamano considerable que sugiere la presencia de pesos originales sin cuantizar junto con, probablemente, exportaciones derivadas.
 
-No se ha publicado informacion sobre arquitectura interna, numero de parametros, longitud de contexto, idiomas soportados ni licencia. La ficha de HuggingFace no declara pipeline, no declara licencia y no incluye lenguajes, por lo que cualquier afirmacion sobre capacidades reales seria especulativa. Tampoco existe una model card descriptiva mas alla de los metadatos automaticos.
+No se ha publicado informacion sobre arquitectura interna, numero de parametros, longitud de contexto, idiomas soportados ni licencia. La ficha de Hugging Face no declara pipeline, no declara licencia y no incluye lenguajes, por lo que cualquier afirmacion sobre capacidades reales seria especulativa. Tampoco existe una model card descriptiva mas alla de los metadatos automaticos.
 
 El interes actual del repositorio es limitado pero relevante en un nicho concreto: es un ejemplo de modelo empaquetado para ExecuTorch, el stack de inferencia en el borde que Meta impulsa para Android e iOS. Con 1.984 descargas acumuladas y 0 likes, se trata de un artefacto con traccion moderada y sin validacion comunitaria. Cualquier evaluacion seria exige inspeccionar el contenido del repositorio antes de usarlo en produccion.
 
@@ -58,7 +58,7 @@ Los siguientes escenarios se plantean de forma condicional, dado que no se ha co
 
 No se han publicado resultados de benchmarks en la informacion disponible.
 
-No existen datos de MMLU, HumanEval, GSM8K ni de ninguna otra evaluacion estandar para este repositorio. Las paginas de terceros consultadas (directorios de modelos que indexan HuggingFace) no aportan metricas propias; se limitan a replicar los metadatos del repositorio.
+No existen datos de MMLU, HumanEval, GSM8K ni de ninguna otra evaluacion estandar para este repositorio. Las paginas de terceros consultadas (directorios de modelos que indexan Hugging Face) no aportan metricas propias; se limitan a replicar los metadatos del repositorio.
 
 ## Requisitos de hardware
 
@@ -76,7 +76,7 @@ No disponible. Sin conocer el numero de parametros, el contexto ni la licencia, 
 ## Limitaciones y advertencias
 
 - Ausencia total de model card: no hay descripcion de arquitectura, datos de entrenamiento, sesgos conocidos ni limitaciones declaradas por el autor.
-- Licencia no especificada: sin licencia explicita, el uso comercial es juridicamente arriesgado. En la practica, la ausencia de licencia implica reserva de derechos por defecto en la mayoria de jurisdicciones, aunque HuggingFace no lo marque como restringido.
+- Licencia no especificada: sin licencia explicita, el uso comercial es juridicamente arriesgado. En la practica, la ausencia de licencia implica reserva de derechos por defecto en la mayoria de jurisdicciones, aunque Hugging Face no lo marque como restringido.
 - Riesgo de alucinacion: no evaluable sin informacion sobre el entrenamiento y sin benchmarks publicados.
 - Sesgos: no documentados. No hay informacion sobre la composicion del dataset ni sobre procesos de alineacion.
 - Idiomas soportados: desconocidos. No se puede garantizar un rendimiento aceptable en castellano.
@@ -87,7 +87,7 @@ No disponible. Sin conocer el numero de parametros, el contexto ni la licencia, 
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/bhanc/scratch
+- Repositorio del modelo en Hugging Face: https://huggingface.co/bhanc/scratch
 - Perfil del autor (Bartosz Hanc): https://huggingface.co/bhanc
 - Ficha de terceros con metadatos del modelo: https://essamamdani.com/ai-models/hf-bhanc-scratch
 - Directorio de modelos del autor en ese mismo sitio: https://essamamdani.com/ai-models/company/bhanc

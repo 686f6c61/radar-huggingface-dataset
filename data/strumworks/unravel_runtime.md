@@ -111,7 +111,7 @@ Alternativas de la misma categoría citadas habitualmente en el ecosistema (Demu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/StrumWorks/Unravel_Runtime
+- Repositorio en Hugging Face: https://huggingface.co/StrumWorks/Unravel_Runtime
 - Licencias por modelo: https://huggingface.co/StrumWorks/Unravel_Runtime/blob/main/LICENSE.md
 - Catálogo firmado: https://huggingface.co/StrumWorks/Unravel_Runtime/blob/main/catalog.json
 - Página del proyecto (no verificada en la información disponible): no disponible

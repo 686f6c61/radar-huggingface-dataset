@@ -79,9 +79,9 @@ La regla pre-registrada (AUROC >= 0,85 y Brier <= 0,15) se cumple. El autor indi
 
 | Modelo | Parametros | Contexto | AUROC en el test de E-L1b | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| flaukowski/laya-kannaka-evidence-gate | 421 M | 1024 tokens | 0,963 | Apache-2.0 | HuggingFace, 0,8 GB |
-| convaiinnovations/laya (base) | 421 M | no disponible en la informacion proporcionada | 0,748 | Apache-2.0 | HuggingFace |
-| Rerankers cross-encoder genericos (por ejemplo, modelos tipo bge-reranker) | no disponible | no disponible | no disponible (no evaluados sobre este conjunto) | varia | HuggingFace |
+| flaukowski/laya-kannaka-evidence-gate | 421 M | 1024 tokens | 0,963 | Apache-2.0 | Hugging Face, 0,8 GB |
+| convaiinnovations/laya (base) | 421 M | no disponible en la informacion proporcionada | 0,748 | Apache-2.0 | Hugging Face |
+| Rerankers cross-encoder genericos (por ejemplo, modelos tipo bge-reranker) | no disponible | no disponible | no disponible (no evaluados sobre este conjunto) | varia | Hugging Face |
 
 No se han encontrado en la informacion proporcionada otros modelos publicados especificamente como puertas de evidencia sobre LongMemEval con metricas directamente comparables. Las busquedas web realizadas no devolvieron resultados relevantes sobre este modelo ni sobre su ecosistema.
 
@@ -100,7 +100,7 @@ No se han encontrado en la informacion proporcionada otros modelos publicados es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/flaukowski/laya-kannaka-evidence-gate
+- Modelo en Hugging Face: https://huggingface.co/flaukowski/laya-kannaka-evidence-gate
 - Modelo base: https://huggingface.co/convaiinnovations/laya
 - Repositorio de Laya: https://github.com/NandhaKishorM/laya
 - Kannaka memory: https://github.com/kannaka-labs/kannaka-memory

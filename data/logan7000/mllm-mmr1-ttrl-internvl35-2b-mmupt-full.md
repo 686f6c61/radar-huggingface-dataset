@@ -73,7 +73,7 @@ No se dispone de informacion suficiente para realizar una comparativa directa co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/logan7000/mllm-mmr1-ttrl-internvl35-2b-mmupt-full
+- Repositorio Hugging Face: https://huggingface.co/logan7000/mllm-mmr1-ttrl-internvl35-2b-mmupt-full
 - Perfil del autor: https://huggingface.co/logan7000/models
 - Paper TTRL (arXiv): https://arxiv.org/abs/2504.16084
 - Repositorio TTRL (GitHub): https://github.com/PRIME-RL/TTRL

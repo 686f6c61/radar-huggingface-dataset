@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MTL Face Anti-Spoofing & Deepfake Detection es un modelo de visión por computador publicado por el usuario shahriarhd en HuggingFace. Se trata de un detector multi-tarea que, a partir de un clip corto de vídeo (8 fotogramas RGB de 224×224 píxeles), devuelve tres puntuaciones independientes: probabilidad de *deepfake*, probabilidad de ataque de presentación (*spoofing*, por ejemplo una foto impresa o una pantalla frente a la cámara) e inconsistencia temporal entre fotogramas. El problema que aborda es doble: verificar que el rostro capturado es una persona real presente físicamente y, al mismo tiempo, detectar vídeo manipulado sintéticamente.
+MTL Face Anti-Spoofing & Deepfake Detection es un modelo de visión por computador publicado por el usuario shahriarhd en Hugging Face. Se trata de un detector multi-tarea que, a partir de un clip corto de vídeo (8 fotogramas RGB de 224×224 píxeles), devuelve tres puntuaciones independientes: probabilidad de *deepfake*, probabilidad de ataque de presentación (*spoofing*, por ejemplo una foto impresa o una pantalla frente a la cámara) e inconsistencia temporal entre fotogramas. El problema que aborda es doble: verificar que el rostro capturado es una persona real presente físicamente y, al mismo tiempo, detectar vídeo manipulado sintéticamente.
 
 La aportación técnica es la compartición de un único backbone EfficientNet-B2 entre las tres cabezas, entrenadas conjuntamente con equilibrio de gradientes multi-tarea (GradNorm y PCGrad) y un módulo de desplazamiento temporal (TSM) insertado en los bloques 1, 3 y 5. El modelo se distribuye con pesos en safetensors y una exportación ONNX de opset 18 pensada para ejecución en navegador mediante ONNX Runtime Web (WASM), de modo que el vídeo no sale del dispositivo del usuario. El repositorio ocupa unos 0,1 GB y la licencia es MIT.
 
@@ -111,7 +111,7 @@ La única ventaja diferencial verificable frente a estas alternativas, según la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shahriarhd/mtl-face-auth
+- Modelo en Hugging Face: https://huggingface.co/shahriarhd/mtl-face-auth
 - Repositorio de entrenamiento (referenciado en la model card como origen de la clase `MTLModel`, sin URL explícita): no disponible
 - Demo en GitHub Pages con ONNX Runtime Web (mencionada en la model card, sin URL explícita): no disponible
 - *Paper* o nota técnica asociada: no disponible

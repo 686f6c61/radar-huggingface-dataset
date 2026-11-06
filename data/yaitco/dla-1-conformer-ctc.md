@@ -18,7 +18,7 @@ Su relevancia es acotada pero clara: no compite con los sistemas ASR actuales, s
 | Longitud de contexto | No aplica en el sentido de un LLM: atención completa sobre cada utterance, sin ventana fija declarada ni duración máxima de audio especificada |
 | Tipos de cuantizacion | No disponible. Solo se distribuyen pesos en punto flotante PyTorch; no se publican versiones int8, GGUF ni ONNX |
 | Idiomas soportados | Inglés (`en`) |
-| Licencia | No disponible (la model card y los metadatos de HuggingFace no la especifican) |
+| Licencia | No disponible (la model card y los metadatos de Hugging Face no la especifican) |
 | Formato de pesos | `.pth` (state dict de PyTorch) dentro de `final_ctc.zip`; incluye tokenizador SentencePiece (`bpe_256.model`) y LM KenLM en ARPA comprimido (`.arpa.gz`) |
 | Tarea | Automatic speech recognition (CTC) |
 | Entrada de audio | 128 canales log-mel, 16 kHz, ventana 25 ms, salto 10 ms |
@@ -82,7 +82,7 @@ No hay en la información disponible resultados de otros benchmarks (MMLU, Human
 |---|---|---|---|---|---|
 | DLA-1-Conformer-CTC (este modelo) | ~8-9 M (estimado) | Inglés | Atención completa por utterance, sin límite declarado | No disponible | `.pth` + SentencePiece + ARPA |
 | OpenAI Whisper tiny | 39 M | Multilingüe (99 idiomas) | Ventana fija de 30 s, con padding | MIT | `.pt` / safetensors en conversiones |
-| wav2vec 2.0 base 960h | ~95 M | Inglés | Atención completa por utterance | Apache 2.0 (según ficha en HuggingFace) | safetensors / `.bin` |
+| wav2vec 2.0 base 960h | ~95 M | Inglés | Atención completa por utterance | Apache 2.0 (según ficha en Hugging Face) | safetensors / `.bin` |
 | torchaudio Conformer CTC (large) | ~118 M | Inglés | Atención completa por utterance | No verificada en esta ficha | PyTorch state dict |
 
 La comparación de rendimiento frente a estas alternativas no se incluye porque los números de WER publicados por cada proyecto usan protocolos de decodificación distintos y no son directamente equiparables; en esta ficha no se han verificado cifras externas. Cualitativamente, el WER de 11,77 % en test-clean y 26,16 % en test-other sitúa a este modelo muy por detrás de los sistemas ASR modernos de tamaño similar o superior, lo que es coherente con su vocabulario de 256 tokens y su carácter de proyecto formativo. Su ventaja relativa es la trazabilidad total del pipeline (checkpoint, tokenizador, LM y logs incluidos) y un coste de ejecución mínimo.
@@ -103,7 +103,7 @@ La comparación de rendimiento frente a estas alternativas no se incluye porque 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/YaItco/DLA-1-Conformer-CTC
+- Modelo en Hugging Face: https://huggingface.co/YaItco/DLA-1-Conformer-CTC
 - Repositorio del proyecto DLA-1: https://github.com/Yaitco/DLA-1
 - LM de 3-gramas (OpenSLR 11): https://www.openslr.org/11/
 - Corpus LibriSpeech (OpenSLR 12): https://www.openslr.org/12/

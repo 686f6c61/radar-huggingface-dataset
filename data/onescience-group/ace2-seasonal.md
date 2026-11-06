@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ACE2-Seasonal es un repositorio de HuggingFace publicado por OneScience-Group que reproduce, como ingeniería independiente, el experimento global de *hindcast* estacional descrito en el artículo «Skilful global seasonal predictions from a machine learning weather model trained on reanalysis data» (DOI 10.1038/s41612-025-01198-3). El modelo se construye sobre ACE2-ERA5, un modelo meteorológico de aprendizaje automático entrenado con la reanálisis atmosférica ERA5, y reproduce la configuración del experimento estacional: autoregresión cada seis horas con anomalías persistentes de temperatura superficial del mar (SST) y de hielo marino como condiciones de frontera, formando un ensemble rezagado de 64 miembros.
+ACE2-Seasonal es un repositorio de Hugging Face publicado por OneScience-Group que reproduce, como ingeniería independiente, el experimento global de *hindcast* estacional descrito en el artículo «Skilful global seasonal predictions from a machine learning weather model trained on reanalysis data» (DOI 10.1038/s41612-025-01198-3). El modelo se construye sobre ACE2-ERA5, un modelo meteorológico de aprendizaje automático entrenado con la reanálisis atmosférica ERA5, y reproduce la configuración del experimento estacional: autoregresión cada seis horas con anomalías persistentes de temperatura superficial del mar (SST) y de hielo marino como condiciones de frontera, formando un ensemble rezagado de 64 miembros.
 
 El estudio original fue desarrollado por equipos del Met Office, la Universidad de Exeter y Ai2, y está orientado a la predicción estacional global (principalmente invierno boreal, DJF), al análisis de la Oscilación del Atlántico Norte (NAO), a la teleconexión con ENSO y al estudio de la relación entre dispersión y habilidad del ensemble (*spread-skill*). No es un modelo de lenguaje: es un modelo de ciencia de la Tierra cuyo resultado son campos atmosféricos globales, no texto.
 
@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto / horizonte | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ACE2-Seasonal (OneScience-Group) | Reproduccion ingenieril de prediccion estacional sobre ACE2-ERA5 | no disponible | Ensemble rezagado de 64 miembros; prediccion DJF; autoregresion de 6 h | apache-2.0 (repositorio) | HuggingFace, 0 descargas, 0 likes |
+| ACE2-Seasonal (OneScience-Group) | Reproduccion ingenieril de prediccion estacional sobre ACE2-ERA5 | no disponible | Ensemble rezagado de 64 miembros; prediccion DJF; autoregresion de 6 h | apache-2.0 (repositorio) | Hugging Face, 0 descargas, 0 likes |
 | ACE2-ERA5 (modelo base citado) | Modelo meteorologico de AA entrenado con reanalisis ERA5 | no disponible | no disponible | sujeta a sus propios terminos | no disponible en la informacion proporcionada |
 | Alternativas de prediccion estacional (modelos dinamicos o hibridos) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -99,7 +99,7 @@ No se dispone de datos comparativos de rendimiento, tamaño o contexto para esta
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OneScience-Group/ACE2-Seasonal
+- Hugging Face: https://huggingface.co/OneScience-Group/ACE2-Seasonal
 - Articulo de referencia: https://doi.org/10.1038/s41612-025-01198-3
 - OneScience en GitHub: https://github.com/onescience-ai/OneScience
 - OneSkills en GitHub: https://github.com/onescience-ai/oneskills

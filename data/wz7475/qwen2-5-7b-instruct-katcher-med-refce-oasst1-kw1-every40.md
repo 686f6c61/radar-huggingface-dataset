@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`wz7475/qwen2.5-7b-instruct-katcher-med-refce-oasst1-kw1-every40` es un modelo publicado en HuggingFace por el usuario `wz7475` el 2 de octubre de 2026, con una unica revision subida dos minutos despues de su creacion. El identificador sugiere un ajuste fino o una combinacion de pesos derivada de Qwen2.5-7B-Instruct, con mezcla de datos de dominio medico, un conjunto identificado como `refce` y el corpus de instrucciones OpenAssistant (`oasst1`), con un guardado de checkpoint cada 40 pasos (`every40`). No obstante, la model card no confirma ninguno de estos extremos: es la plantilla automatica de HuggingFace, con todos los campos marcados como `[More Information Needed]`.
+`wz7475/qwen2.5-7b-instruct-katcher-med-refce-oasst1-kw1-every40` es un modelo publicado en Hugging Face por el usuario `wz7475` el 2 de octubre de 2026, con una unica revision subida dos minutos despues de su creacion. El identificador sugiere un ajuste fino o una combinacion de pesos derivada de Qwen2.5-7B-Instruct, con mezcla de datos de dominio medico, un conjunto identificado como `refce` y el corpus de instrucciones OpenAssistant (`oasst1`), con un guardado de checkpoint cada 40 pasos (`every40`). No obstante, la model card no confirma ninguno de estos extremos: es la plantilla automatica de Hugging Face, con todos los campos marcados como `[More Information Needed]`.
 
 El problema que resuelve, por tanto, no esta documentado por el autor. El repositorio ocupa 0,3 GB, un tamano incompatible con un checkpoint completo de 7.000 millones de parametros en precision de 16 bits (que rondaria los 15 GB), lo que apunta a una subida parcial o a un artefacto distinto del peso completo. La relevancia actual del modelo es, en el mejor de los casos, la de un experimento de la comunidad sobre la familia Qwen2.5, sin validacion publicada.
 
@@ -51,7 +51,7 @@ No hay casos de uso documentados ni validados por el autor. Cualquier aplicacion
 - Investigacion en ajuste de dominio medico: si los datos `med` se confirman, podria estudiarse su comportamiento en preguntas clinicas, siempre con revision humana y sin uso clinico directo.
 - Analisis de olvido catastrofico: un ajuste sobre OpenAssistant mas datos de dominio permite estudiar la degradacion de capacidades generales del modelo base.
 - Reproducibilidad de experimentos: el patron de guardado `every40` facilitaria estudiar la evolucion del entrenamiento si se publicasen los checkpoints intermedios, cosa que no consta.
-- Docencia y formacion: como ejemplo de model card incompleta y de buenas practicas de documentacion en el ecosistema HuggingFace.
+- Docencia y formacion: como ejemplo de model card incompleta y de buenas practicas de documentacion en el ecosistema Hugging Face.
 - Pruebas de infraestructura de despliegue: validar pipelines de carga de safetensors con `transformers` antes de invertir en modelos mayores.
 
 ## Benchmarks y rendimiento
@@ -76,8 +76,8 @@ Advertencia: el repositorio pesa 0,3 GB, muy por debajo de lo esperable para un 
 
 | Modelo | Parametros | Contexto | Benchmarks | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| wz7475/qwen2.5-7b-instruct-katcher-med-refce-oasst1-kw1-every40 | no disponible (probable 7B) | no disponible | no publicados | no disponible | HuggingFace, 0 descargas, 0 likes |
-| Qwen2.5-7B-Instruct (modelo base presumible) | no disponible en esta informacion | no disponible en esta informacion | no disponible en esta informacion | no disponible en esta informacion | HuggingFace |
+| wz7475/qwen2.5-7b-instruct-katcher-med-refce-oasst1-kw1-every40 | no disponible (probable 7B) | no disponible | no publicados | no disponible | Hugging Face, 0 descargas, 0 likes |
+| Qwen2.5-7B-Instruct (modelo base presumible) | no disponible en esta informacion | no disponible en esta informacion | no disponible en esta informacion | no disponible en esta informacion | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos suficientes para establecer una comparativa cuantitativa con alternativas de la misma categoria.
@@ -88,7 +88,7 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 - Riesgo de alucinacion: no evaluado. Si el ajuste incluye datos medicos, el riesgo de respuestas plausibles pero incorrectas en contexto clinico es especialmente alto y no ha sido medido.
 - Limitaciones de contexto e idioma: se desconocen tanto la ventana de contexto efectiva como los idiomas soportados.
 - Licencia: no declarada. La ausencia de licencia impide asumir derechos de uso comercial y obliga a contactar con el autor antes de cualquier explotacion.
-- Model card vacia: la documentacion es la plantilla automatica de HuggingFace, sin informacion sobre datos, entrenamiento ni evaluacion. Esto incumple las practicas minimas de publicacion responsable.
+- Model card vacia: la documentacion es la plantilla automatica de Hugging Face, sin informacion sobre datos, entrenamiento ni evaluacion. Esto incumple las practicas minimas de publicacion responsable.
 - Repositorio incompleto: 0,3 GB de tamano es inconsistente con un checkpoint denso de 7B, lo que sugiere subida parcial o artefacto distinto.
 - Trazabilidad nula: 0 descargas y 0 likes, sin paper, sin demo y sin repositorio de codigo asociado.
 - Procedencia de datos: el posible uso de corpus medicos plantea dudas sobre privacidad y consentimiento que el autor no aborda.
@@ -96,7 +96,7 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-med-refce-oasst1-kw1-every40
+- Pagina del modelo en Hugging Face: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-med-refce-oasst1-kw1-every40
 - Articulo citado en la plantilla de la model card (impacto ambiental del ML): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico mencionada en la plantilla: https://mlco2.github.io/impact
 - Modelo base presumible, Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct (enlace no incluido por el autor; inferido del identificador, sin confirmar)

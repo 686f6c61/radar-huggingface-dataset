@@ -89,7 +89,7 @@ La comparativa de rendimiento muestra que esta cuantizacion supera a la referenc
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/pugant/grug-35b-v2-ROCmFP4-STRIX_LEAN
+- Repositorio Hugging Face del modelo: https://huggingface.co/pugant/grug-35b-v2-ROCmFP4-STRIX_LEAN
 - Modelo base: https://huggingface.co/ProCreations/grug-35b-v2
 - Fork de cuantizacion (GitHub): https://github.com/charlie12345/ROCmFPX
 - Dataset de calibracion imatrix: https://huggingface.co/datasets/ProCreations/grug-think-v3-10k

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-4B-GMCE es un ajuste fino del modelo base Qwen/Qwen3.5-4B publicado por el usuario emperorofrome en HuggingFace. Se trata de un LoRA de rango muy bajo (r=8) entrenado con la receta que el autor denomina GMCoder efficiency, cuyo objetivo no es mejorar la capacidad de razonamiento del modelo, sino reducir de forma drastica la verbosidad: ensenar al modelo a responder de forma directa y concisa en lugar de encadenar decenas de miles de tokens de "pensamiento" antes de dar una respuesta.
+Qwen3.5-4B-GMCE es un ajuste fino del modelo base Qwen/Qwen3.5-4B publicado por el usuario emperorofrome en Hugging Face. Se trata de un LoRA de rango muy bajo (r=8) entrenado con la receta que el autor denomina GMCoder efficiency, cuyo objetivo no es mejorar la capacidad de razonamiento del modelo, sino reducir de forma drastica la verbosidad: ensenar al modelo a responder de forma directa y concisa en lugar de encadenar decenas de miles de tokens de "pensamiento" antes de dar una respuesta.
 
 El problema que aborda es concreto y medible: el modelo base, en pruebas de codigo y razonamiento con un limite de 40k a 60k tokens, agotaba el presupuesto en 2 de 3 examenes sin llegar a entregar una respuesta. Tras el ajuste, el modelo completo los tres examenes consumiendo 21,6k tokens en total frente a los 109k+ del base. En una prueba de codigo separada, la media de tokens por respuesta cayo un 49% (de 2.915 a 1.479) y el porcentaje de respuestas que agotaban el limite paso del 19% al 0%, manteniendo el mismo porcentaje de tareas superadas (45%).
 
@@ -83,8 +83,8 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de otros benchmarks 
 
 | Modelo | Parametros | Contexto | Rendimiento (Form B propio) | Licencia | Disponibilidad |
 |---|---|---:|---|---|---|
-| Qwen3.5-4B-GMCE | ~4,3 B | no disponible | ~141/275 (~51%), 21,6k tokens en 3 examenes | Apache-2.0 | GGUF Q8_0 en HuggingFace |
-| Qwen3.5-4B (base) | ~4,3 B | no disponible | Sin respuesta en 2 de 3 examenes; 109k+ tokens consumidos | no disponible en la informacion | Modelo base en HuggingFace (Qwen/Qwen3.5-4B) |
+| Qwen3.5-4B-GMCE | ~4,3 B | no disponible | ~141/275 (~51%), 21,6k tokens en 3 examenes | Apache-2.0 | GGUF Q8_0 en Hugging Face |
+| Qwen3.5-4B (base) | ~4,3 B | no disponible | Sin respuesta en 2 de 3 examenes; 109k+ tokens consumidos | no disponible en la informacion | Modelo base en Hugging Face (Qwen/Qwen3.5-4B) |
 | GMCoder 9B | ~9 B (deducido de la denominacion) | no disponible | ~76% en Form B segun el autor | no disponible en la informacion | no disponible en la informacion |
 | Qwen3.5-0.8B / 2B (misma receta) | 0,8 B / 2 B | no disponible | La receta "ayudo poco" segun el autor; sin cifras | no disponible en la informacion | no disponible en la informacion |
 
@@ -107,6 +107,6 @@ La comparacion relevante no es de calidad bruta sino de coste por respuesta: fre
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/emperorofrome/Qwen3.5-4B-GMCE
+- Modelo en Hugging Face: https://huggingface.co/emperorofrome/Qwen3.5-4B-GMCE
 - Modelo base Qwen/Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
 - Paper, blog, repositorio o demo del autor: no disponibles en la informacion proporcionada.

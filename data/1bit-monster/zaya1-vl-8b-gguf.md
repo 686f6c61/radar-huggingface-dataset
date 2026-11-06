@@ -102,7 +102,7 @@ La comparacion cuantitativa de rendimiento entre estos modelos no esta disponibl
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversion: https://huggingface.co/1bit-MONSTER/ZAYA1-VL-8B-GGUF
+- Repositorio Hugging Face de esta conversion: https://huggingface.co/1bit-MONSTER/ZAYA1-VL-8B-GGUF
 - Modelo base: https://huggingface.co/Zyphra/ZAYA1-VL-8B
 - Motor 1bit: https://github.com/1bit-MONSTER/engine
 - Fork de llama.cpp con soporte ZAYA (rama `1bit/hrx-vulkan-patched`): https://github.com/1bit-MONSTER/llama.cpp

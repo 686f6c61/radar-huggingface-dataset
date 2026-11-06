@@ -89,7 +89,7 @@ Frente al modelo base, Stera AI Lite aporta un ajuste LoRA no documentado y una 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Fendrix-Studio/Stera-AI-Lite
+- Modelo en Hugging Face: https://huggingface.co/Fendrix-Studio/Stera-AI-Lite
 - Modelo base Qwen3-VL-4B-Instruct: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - Repositorio relacionado del mismo autor: https://huggingface.co/Fendrix-Studio/Stera-AI
 - Repositorio relacionado (CapitaineJACOB/Stera-AI-Lite): https://huggingface.co/CapitaineJACOB/Stera-AI-Lite

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GaMS3-12B-Instruct-TA3 es un modelo de lenguaje publicado por el usuario tknez en HuggingFace, derivado de la familia Gemma 3 en su variante de 12B parámetros y ajustado para instrucciones. El repositorio contiene pesos en formato safetensors con un total de 11.766.034.176 parámetros, lo que confirma que se trata de la variante densa de 12B de Gemma 3 (etiqueta interna `gemma3_text`). El sufijo "TA3" no está documentado en la información disponible y probablemente hace referencia a una configuración de entrenamiento o ajuste específica del autor.
+GaMS3-12B-Instruct-TA3 es un modelo de lenguaje publicado por el usuario tknez en Hugging Face, derivado de la familia Gemma 3 en su variante de 12B parámetros y ajustado para instrucciones. El repositorio contiene pesos en formato safetensors con un total de 11.766.034.176 parámetros, lo que confirma que se trata de la variante densa de 12B de Gemma 3 (etiqueta interna `gemma3_text`). El sufijo "TA3" no está documentado en la información disponible y probablemente hace referencia a una configuración de entrenamiento o ajuste específica del autor.
 
 El modelo se presenta como un fine-tune de instrucciones sobre la arquitectura Gemma 3, que combina atención local y global con soporte de contexto largo y capacidades multimodales en la familia original. Sin embargo, la model card no está disponible en la información proporcionada, por lo que no se pueden confirmar detalles sobre el dataset de ajuste, el proceso de alineación ni las capacidades efectivas tras el fine-tuning.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| GaMS3-12B-Instruct-TA3 | ~11,8B | no disponible | no disponible | HuggingFace (40 descargas) |
-| Gemma 3 12B Instruct (Google) | ~12B | 128K (según documentación oficial de la familia) | Gemma Terms of Use | HuggingFace, Vertex AI |
-| Mistral NeMo 12B Instruct | ~12B | 128K | Apache 2.0 | HuggingFace |
-| Qwen2.5 14B Instruct | ~14B | 128K | Apache 2.0 | HuggingFace |
+| GaMS3-12B-Instruct-TA3 | ~11,8B | no disponible | no disponible | Hugging Face (40 descargas) |
+| Gemma 3 12B Instruct (Google) | ~12B | 128K (según documentación oficial de la familia) | Gemma Terms of Use | Hugging Face, Vertex AI |
+| Mistral NeMo 12B Instruct | ~12B | 128K | Apache 2.0 | Hugging Face |
+| Qwen2.5 14B Instruct | ~14B | 128K | Apache 2.0 | Hugging Face |
 
 La comparación con alternativas es desfavorable en términos de trazabilidad: tanto Gemma 3 12B Instruct oficial como Mistral NeMo y Qwen2.5 cuentan con model cards detalladas, licencias claras y benchmarks publicados, mientras que este fine-tune carece de todos esos elementos.
 
@@ -86,6 +86,6 @@ La comparación con alternativas es desfavorable en términos de trazabilidad: t
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tknez/GaMS3-12B-Instruct-TA3
+- Hugging Face: https://huggingface.co/tknez/GaMS3-12B-Instruct-TA3
 - Gemma 3 (familia base): https://huggingface.co/google/gemma-3-12b-it
 - Documentación de Gemma 3 en Google AI: https://ai.google.dev/gemma/docs

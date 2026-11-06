@@ -2,7 +2,7 @@
 
 ## Resumen
 
-modernbert-base-sentiment-amazon es un modelo de clasificación de texto obtenido mediante fine-tuning de answerdotai/ModernBERT-base, publicado por el usuario FrostyZ07 en HuggingFace. Está especializado en análisis de sentimiento sobre reseñas de productos de Amazon, aunque la model card no documenta explícitamente el dataset de entrenamiento ("an unknown dataset"). El modelo resuelve la tarea de clasificar texto en categorías de sentimiento, con un rendimiento declarado de 0,9563 de accuracy y F1 macro sobre el conjunto de evaluación.
+modernbert-base-sentiment-amazon es un modelo de clasificación de texto obtenido mediante fine-tuning de answerdotai/ModernBERT-base, publicado por el usuario FrostyZ07 en Hugging Face. Está especializado en análisis de sentimiento sobre reseñas de productos de Amazon, aunque la model card no documenta explícitamente el dataset de entrenamiento ("an unknown dataset"). El modelo resuelve la tarea de clasificar texto en categorías de sentimiento, con un rendimiento declarado de 0,9563 de accuracy y F1 macro sobre el conjunto de evaluación.
 
 Arquitectura ModernBERT, un transformer encoder de 149,6 millones de parámetros que incorpora attention lineal y decodificación eficiente para contextos largos. El fine-tuning se realizó durante 3 épocas con AdamW fused, learning rate de 2e-5, batch size de 32 y precisión mixta nativa AMP, partiendo del checkpoint base de Answer.AI.
 
@@ -32,7 +32,7 @@ El entrenamiento se realizó durante 3 épocas con un learning rate de 2e-5, bat
 - Clasificación de texto para análisis de sentimiento, presumiblemente binario o multiclase según el dataset de entrenamiento (no documentado).
 - Especialización en reseñas de productos de Amazon, según el nombre del modelo.
 - Inferencia rápida en CPU y GPU gracias al tamaño reducido (149,6 M de parámetros) y a la arquitectura ModernBERT.
-- Compatible con text-embeddings-inference y endpoints de HuggingFace (tag endpoints_compatible).
+- Compatible con text-embeddings-inference y endpoints de Hugging Face (tag endpoints_compatible).
 - No soporta tool calling ni function calling: es un modelo de clasificación, no generativo.
 - No soporta agentes ni razonamiento multi-paso.
 - Capacidades multilingües no documentadas; el modelo base ModernBERT está entrenado principalmente en inglés.
@@ -82,10 +82,10 @@ No se han publicado resultados comparativos con otros modelos (MMLU, HumanEval, 
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| modernbert-base-sentiment-amazon | 149,6 M | no disponible (base: 8192) | Clasificación de sentimiento | Apache 2.0 | HuggingFace |
-| answerdotai/ModernBERT-base | 149,6 M | 8192 | Modelo base (encoder) | Apache 2.0 | HuggingFace |
-| distilbert-base-uncased-finetuned-sst-2-english | 66 M | 512 | Clasificación de sentimiento | Apache 2.0 | HuggingFace |
-| roberta-base | 125 M | 512 | Modelo base (encoder) | MIT | HuggingFace |
+| modernbert-base-sentiment-amazon | 149,6 M | no disponible (base: 8192) | Clasificación de sentimiento | Apache 2.0 | Hugging Face |
+| answerdotai/ModernBERT-base | 149,6 M | 8192 | Modelo base (encoder) | Apache 2.0 | Hugging Face |
+| distilbert-base-uncased-finetuned-sst-2-english | 66 M | 512 | Clasificación de sentimiento | Apache 2.0 | Hugging Face |
+| roberta-base | 125 M | 512 | Modelo base (encoder) | MIT | Hugging Face |
 
 La comparativa de rendimiento con estas alternativas no está disponible porque el autor no publica resultados frente a otros modelos y el conjunto de evaluación no está documentado.
 
@@ -102,7 +102,7 @@ La comparativa de rendimiento con estas alternativas no está disponible porque 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FrostyZ07/modernbert-base-sentiment-amazon
+- Modelo en Hugging Face: https://huggingface.co/FrostyZ07/modernbert-base-sentiment-amazon
 - Modelo base: https://huggingface.co/answerdotai/ModernBERT-base
 - Paper de ModernBERT (referencia del modelo base): no disponible en la información proporcionada
 - Repositorio o demo adicional: no disponible en la información proporcionada

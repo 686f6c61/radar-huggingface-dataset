@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`anjeli02/sentimen-analisis` es un repositorio alojado en HuggingFace por el usuario anjeli02 bajo licencia MIT. Por el identificador y la práctica ausencia de documentación, todo apunta a un modelo de análisis de sentimiento de carácter experimental o didáctico, presumiblemente publicado como ejercicio de aprendizaje o como artefacto de un proyecto personal. La model card se limita a declarar la licencia MIT, sin ningún otro contenido técnico, descriptivo o de uso.
+`anjeli02/sentimen-analisis` es un repositorio alojado en Hugging Face por el usuario anjeli02 bajo licencia MIT. Por el identificador y la práctica ausencia de documentación, todo apunta a un modelo de análisis de sentimiento de carácter experimental o didáctico, presumiblemente publicado como ejercicio de aprendizaje o como artefacto de un proyecto personal. La model card se limita a declarar la licencia MIT, sin ningún otro contenido técnico, descriptivo o de uso.
 
 No se dispone de información sobre arquitectura, número de parámetros, longitud de contexto, datos de entrenamiento ni idiomas soportados. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) en el momento de la consulta, lo que refuerza la hipótesis de un artefacto de bajo perfil sin validación por parte de la comunidad.
 
-Su relevancia práctica es, por tanto, muy limitada en el estado actual: no hay benchmarks, no hay pipeline declarado en HuggingFace y no hay documentación que permita evaluar su idoneidad para producción. Cualquier uso requeriría inspeccionar directamente los archivos del repositorio (no listados en la información disponible) para determinar qué contiene realmente.
+Su relevancia práctica es, por tanto, muy limitada en el estado actual: no hay benchmarks, no hay pipeline declarado en Hugging Face y no hay documentación que permita evaluar su idoneidad para producción. Cualquier uso requeriría inspeccionar directamente los archivos del repositorio (no listados en la información disponible) para determinar qué contiene realmente.
 
 ## Especificaciones técnicas
 
@@ -40,7 +40,7 @@ Tampoco consta información sobre innovaciones técnicas (atención lineal, deco
 
 - Análisis de sentimiento en reseñas de producto: uso hipotético derivado del nombre del repositorio; requeriría verificar primero los archivos y el formato de entrada/salida del modelo.
 - Clasificación de comentarios en redes sociales: solo viable tras validar empíricamente el modelo con un conjunto de evaluación propio, dado que no hay métricas publicadas.
-- Prototipado académico: adecuado como punto de partida para estudiantes que quieran inspeccionar un repositorio mínimo en HuggingFace y aprender el flujo de publicación.
+- Prototipado académico: adecuado como punto de partida para estudiantes que quieran inspeccionar un repositorio mínimo en Hugging Face y aprender el flujo de publicación.
 - Experimentación en notebooks: el modelo podría cargarse con `transformers` si los pesos están en formato estándar, aunque esto no está confirmado.
 - Filtrado de opiniones en encuestas internas: únicamente en entornos no críticos y con revisión humana, dada la ausencia total de garantías de calidad.
 - Benchmark de comparación de repositorios: útil como caso de estudio de un repositorio sin documentación, para ilustrar buenas prácticas de model cards.
@@ -72,7 +72,7 @@ No es posible establecer una comparativa rigurosa sin conocer el tamaño, la arq
 
 - Ausencia total de documentación técnica: no se puede verificar qué hace el modelo ni cómo se entrenó.
 - Sin benchmarks ni métricas publicadas: imposible estimar su calidad o compararlo con alternativas.
-- Sin pipeline declarado en HuggingFace: no se confirma que sea un modelo de clasificación de sentimiento pese al nombre.
+- Sin pipeline declarado en Hugging Face: no se confirma que sea un modelo de clasificación de sentimiento pese al nombre.
 - Riesgo elevado de sesgos desconocidos: al no documentarse el dataset de entrenamiento, no se pueden evaluar sesgos de género, raza o dominio.
 - Riesgo de alucinación o predicciones erróneas no cuantificado.
 - Idiomas soportados no especificados: no se puede asumir soporte para castellano.
@@ -82,5 +82,5 @@ No es posible establecer una comparativa rigurosa sin conocer el tamaño, la arq
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/anjeli02/sentimen-analisis
+- Repositorio en Hugging Face: https://huggingface.co/anjeli02/sentimen-analisis
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

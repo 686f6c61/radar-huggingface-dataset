@@ -57,7 +57,7 @@ No disponible. No se puede comparar con otros modelos de IA generativa porque no
 - La ausencia de informacion sobre el dataset y el proceso de entrenamiento limita la reproducibilidad y la verificacion independiente de los datos reportados.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/Pranav1003/tds-carbon-card
+- Repositorio en Hugging Face: https://huggingface.co/Pranav1003/tds-carbon-card
 - Perfil del autor: https://huggingface.co/Pranav1003
 - Lista de modelos del autor: https://huggingface.co/Pranav1003/models
 - Lista de datasets del autor: https://huggingface.co/Pranav1003/datasets

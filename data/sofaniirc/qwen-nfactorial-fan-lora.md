@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sofaniirC/qwen-nfactorial-fan-lora` es un ajuste fino publicado en HuggingFace por el usuario sofaniirC sobre el modelo base `unsloth/qwen2.5-1.5b-instruct-unsloth-bnb-4bit`, es decir, una version ya cuantizada a 4 bits de Qwen2.5-1.5B-Instruct preparada por Unsloth para entrenamiento con QLoRA. El nombre del repositorio indica que se trata de un adaptador LoRA (el tag `safetensors` y el tamano de 0,1 GB del repositorio son coherentes con pesos de adaptador, no con un modelo completo), orientado a un tema no documentado en la model card ("nfactorial fan").
+`sofaniirC/qwen-nfactorial-fan-lora` es un ajuste fino publicado en Hugging Face por el usuario sofaniirC sobre el modelo base `unsloth/qwen2.5-1.5b-instruct-unsloth-bnb-4bit`, es decir, una version ya cuantizada a 4 bits de Qwen2.5-1.5B-Instruct preparada por Unsloth para entrenamiento con QLoRA. El nombre del repositorio indica que se trata de un adaptador LoRA (el tag `safetensors` y el tamano de 0,1 GB del repositorio son coherentes con pesos de adaptador, no con un modelo completo), orientado a un tema no documentado en la model card ("nfactorial fan").
 
 El modelo resuelve un nicho muy concreto: servir como base ligera y personalizable para generacion de texto en ingles con requisitos de hardware minimos. Al partir de una variante de 1,5 mil millones de parametros, es desplegable en GPU de consumo, CPU e incluso dispositivos de borde, y su licencia Apache-2.0 permite uso comercial sin las restricciones habituales de otras familias de modelos pequenos.
 
@@ -37,7 +37,7 @@ No hay informacion disponible sobre el numero de tokens de entrenamiento, la com
 - Uso en agentes y razonamiento multi-paso: no confirmado; un modelo de este tamano tiene fiabilidad baja en cadenas largas de decisiones.
 - Capacidades multilingues: no disponibles; solo se declara ingles, aunque el modelo base Qwen2.5 tiene cobertura multilingue amplia.
 - Modo "thinking" explicito, vision o audio: no disponibles.
-- Capacidad especial declarada: ninguna. El tag `endpoints_compatible` indica unicamente que el repositorio es compatible con los endpoints de HuggingFace.
+- Capacidad especial declarada: ninguna. El tag `endpoints_compatible` indica unicamente que el repositorio es compatible con los endpoints de Hugging Face.
 
 ## Casos de uso
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU recomendadas: cualquier GPU con 4 GB o mas de VRAM es suficiente en FP16; una RTX 3060, RTX 4060, RTX 4090, A100 o H100 lo ejecutan con holgura y permiten lotes grandes.
 - Cabe en GPU de consumo: si, en practicamente todas las GPU discretas modernas (serie GTX 10xx en adelante con memoria suficiente), asi como en iGPU con memoria compartida en cuantizacion de 4 bits.
 - Ejecucion en CPU: viable gracias al tamano reducido; util para pruebas locales y despliegues de baja concurrencia.
-- Opciones de despliegue: transformers (libreria declarada), text-generation-inference (tag `text-generation-inference`), vLLM, llama.cpp/Ollama previa conversion a GGUF, y Los endpoints de inferencia de HuggingFace (tag `endpoints_compatible`).
+- Opciones de despliegue: transformers (libreria declarada), text-generation-inference (tag `text-generation-inference`), vLLM, llama.cpp/Ollama previa conversion a GGUF, y Los endpoints de inferencia de Hugging Face (tag `endpoints_compatible`).
 - Latencia y throughput estimados: no disponibles; no se han publicado mediciones para este adaptador.
 - Nota sobre el adaptador: para usarlo hay que cargar primero el modelo base `unsloth/qwen2.5-1.5b-instruct-unsloth-bnb-4bit` y aplicar despues los pesos LoRA, o bien fusionarlos previamente.
 
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| qwen-nfactorial-fan-lora (este) | 1,54B (base) + adaptador LoRA | no especificado en la model card (32.768 tokens en el base) | Apache-2.0 | HuggingFace, 0 descargas |
-| Qwen2.5-1.5B-Instruct | 1,54B | 32.768 tokens | Apache-2.0 (excepto la variante 3B) | HuggingFace y multiples proveedores |
-| Llama-3.2-1B-Instruct | 1,24B | 128.000 tokens | Licencia comunitaria de Llama 3.2 (con restricciones) | HuggingFace y proveedores |
-| Gemma-2-2B-it | 2,6B | 8.192 tokens | Terminos de uso de Gemma (con restricciones) | HuggingFace y proveedores |
+| qwen-nfactorial-fan-lora (este) | 1,54B (base) + adaptador LoRA | no especificado en la model card (32.768 tokens en el base) | Apache-2.0 | Hugging Face, 0 descargas |
+| Qwen2.5-1.5B-Instruct | 1,54B | 32.768 tokens | Apache-2.0 (excepto la variante 3B) | Hugging Face y multiples proveedores |
+| Llama-3.2-1B-Instruct | 1,24B | 128.000 tokens | Licencia comunitaria de Llama 3.2 (con restricciones) | Hugging Face y proveedores |
+| Gemma-2-2B-it | 2,6B | 8.192 tokens | Terminos de uso de Gemma (con restricciones) | Hugging Face y proveedores |
 
 Los datos de la columna de modelos alternativos corresponden a sus fichas publicas y pueden variar ligeramente; no se dispone de comparativas de rendimiento medidas entre este adaptador y las alternativas, por lo que no es posible ordenarlos por calidad. La ventaja competitiva del adaptador es unicamente su tamano reducido y su licencia permisiva; su desventaja es la ausencia total de documentacion y evaluacion.
 
@@ -89,7 +89,7 @@ Los datos de la columna de modelos alternativos corresponden a sus fichas public
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sofaniirC/qwen-nfactorial-fan-lora
+- Modelo en Hugging Face: https://huggingface.co/sofaniirC/qwen-nfactorial-fan-lora
 - Modelo base: https://huggingface.co/unsloth/qwen2.5-1.5b-instruct-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Modelo original Qwen2.5-1.5B-Instruct (referencia de la familia): https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct

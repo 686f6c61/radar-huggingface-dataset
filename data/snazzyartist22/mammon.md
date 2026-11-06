@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Mammon es un checkpoint publicado en HuggingFace por el usuario SnazzyArtist22 bajo el identificador `SnazzyArtist22/Mammon`. En el momento de redactar esta ficha, la informacion publica disponible es practicamente nula: no se declara pipeline de inferencia, no se especifican idiomas, no hay licencia concreta (el campo aparece como `unknown`), no consta ninguna descarga ni like y la model card se limita a un unico campo de licencia sin contenido descriptivo. El repositorio ocupa 0,1 GB.
+Mammon es un checkpoint publicado en Hugging Face por el usuario SnazzyArtist22 bajo el identificador `SnazzyArtist22/Mammon`. En el momento de redactar esta ficha, la informacion publica disponible es practicamente nula: no se declara pipeline de inferencia, no se especifican idiomas, no hay licencia concreta (el campo aparece como `unknown`), no consta ninguna descarga ni like y la model card se limita a un unico campo de licencia sin contenido descriptivo. El repositorio ocupa 0,1 GB.
 
 Esto significa que no es posible confirmar la arquitectura, el numero de parametros, la longitud de contexto, el tipo de tarea (texto, vision, audio, embeddings) ni el regimen de entrenamiento. Cualquier afirmacion tecnica sobre el modelo seria especulativa, por lo que esta ficha documenta lo que se sabe con certeza y marca explicitamente como "no disponible" todo lo demas.
 
-Su relevancia actual es, por tanto, limitada y de caracter metodologico: sirve como ejemplo de publicacion sin documentacion tecnica, un caso frecuente en HuggingFace que obliga a los equipos de evaluacion a inspeccionar los ficheros del repositorio antes de considerar su uso. No se recomienda su integracion en pipelines de produccion sin una auditoria previa del contenido del repositorio.
+Su relevancia actual es, por tanto, limitada y de caracter metodologico: sirve como ejemplo de publicacion sin documentacion tecnica, un caso frecuente en Hugging Face que obliga a los equipos de evaluacion a inspeccionar los ficheros del repositorio antes de considerar su uso. No se recomienda su integracion en pipelines de produccion sin una auditoria previa del contenido del repositorio.
 
 ## Especificaciones tecnicas
 
@@ -49,7 +49,7 @@ No es posible determinar las capacidades del modelo a partir de la informacion d
 Los siguientes escenarios son plantillas genericas para un checkpoint de generacion de lenguaje y solo serian aplicables si la auditoria del repositorio confirma que el modelo es un modelo de lenguaje funcional. No deben tomarse como casos validados.
 
 - Prototipado interno y experimentacion: dado que no hay licencia definida ni documentacion, el unico uso razonable inmediato es la exploracion tecnica en un entorno aislado, cargando los pesos y verificando que corresponden a un modelo funcional antes de plantear cualquier integracion.
-- Auditoria de repositorios de terceros: el checkpoint sirve como caso de estudio para practicas de revision de artefactos en HuggingFace (inspeccion de ficheros, comprobacion de formatos seguros frente a `pickle`, verificacion de licencia), una tarea habitual en equipos de seguridad de la cadena de suministro de ML.
+- Auditoria de repositorios de terceros: el checkpoint sirve como caso de estudio para practicas de revision de artefactos en Hugging Face (inspeccion de ficheros, comprobacion de formatos seguros frente a `pickle`, verificacion de licencia), una tarea habitual en equipos de seguridad de la cadena de suministro de ML.
 - Pruebas de carga de pipelines de despliegue: si se confirma que los pesos son validos, puede usarse para validar la configuracion de servidores de inferencia (vLLM, TGI, llama.cpp) en entornos de staging, sin exponerlo a trafico real.
 - Docencia y formacion: como ejemplo de publicacion sin model card util para ilustrar a equipos noveles por que la documentacion y la licencia son requisitos previos a la adopcion de un modelo.
 - Evaluacion comparativa de modelos no documentados: si finalmente se caracteriza, puede incorporarse a baterias internas que midan cuanto degrada el rendimiento la ausencia de informacion sobre entrenamiento y tokenizador.
@@ -85,6 +85,6 @@ No disponible. No es posible seleccionar alternativas comparables sin conocer el
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SnazzyArtist22/Mammon
+- Modelo en Hugging Face: https://huggingface.co/SnazzyArtist22/Mammon
 
 No se han encontrado papers, blogs tecnicos, repositorios de codigo ni demos asociados a este modelo en la informacion disponible.

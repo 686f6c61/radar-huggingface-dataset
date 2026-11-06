@@ -73,7 +73,7 @@ No se dispone de informacion suficiente para realizar una comparativa directa co
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/sktime/t0-alpha-onnx)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/sktime/t0-alpha-onnx)
 - [Modelo original t0-alpha](https://huggingface.co/theforecastingcompany/t0-alpha)
 - [Sitio web de sktime](https://www.sktime.net/)
 - [Documentacion de sktime](https://www.sktime.org/en/latest.html)

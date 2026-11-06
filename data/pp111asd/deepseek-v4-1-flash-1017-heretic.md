@@ -76,9 +76,9 @@ Otras combinaciones medidas por el autor: atención 1,75 (16 rechazos, KL 0,109)
 
 | Modelo | Parametros | Contexto | Rechazos (reservado) | KL | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash-1017 (base) | 763.205.315.794 | 262.144 | 97/100 | 0 | MIT | HuggingFace (oficial) |
-| DeepSeek-V4.1-Flash-1017-heretic (este) | 763.205.315.794 | 262.144 | 1/100 | 0,136 | MIT | HuggingFace (no oficial) |
-| DeepSeek-V4.1-Flash-heretic (release anterior) | no disponible | no disponible | no disponible | no disponible | no disponible | HuggingFace (pqhaz) |
+| DeepSeek-V4.1-Flash-1017 (base) | 763.205.315.794 | 262.144 | 97/100 | 0 | MIT | Hugging Face (oficial) |
+| DeepSeek-V4.1-Flash-1017-heretic (este) | 763.205.315.794 | 262.144 | 1/100 | 0,136 | MIT | Hugging Face (no oficial) |
+| DeepSeek-V4.1-Flash-heretic (release anterior) | no disponible | no disponible | no disponible | no disponible | no disponible | Hugging Face (pqhaz) |
 
 No se dispone de datos de benchmarks de capacidad para comparar con alternativas de la misma categoría; la comparación se limita al comportamiento de rechazo y la divergencia KL reportados por el autor.
 
@@ -97,10 +97,10 @@ No se dispone de datos de benchmarks de capacidad para comparar con alternativas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pp111asd/DeepSeek-V4.1-Flash-1017-heretic
+- Modelo en Hugging Face: https://huggingface.co/pp111asd/DeepSeek-V4.1-Flash-1017-heretic
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Release anterior ablacionada: https://huggingface.co/pqhaz/DeepSeek-V4.1-Flash-heretic
 - Heretic (método): https://github.com/p-e-w/heretic
-- Organización DeepSeek en HuggingFace: https://huggingface.co/deepseek-ai
+- Organización DeepSeek en Hugging Face: https://huggingface.co/deepseek-ai
 - Conjunto de evaluación `mlabonne/harmful_behaviors`: https://huggingface.co/datasets/mlabonne/harmful_behaviors
 - Juez LLM utilizado: https://huggingface.co/llmfan46/gemma-4-31B-it-uncensored-heretic

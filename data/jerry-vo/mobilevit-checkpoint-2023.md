@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mobilevit-checkpoint-2023 es un repositorio de investigación publicado por el usuario jerry-vo en HuggingFace. Se presenta como un prototipo de arquitectura MobileViT orientado a tareas múltiples (multitask) en su escala xlarge, con atención de tipo flash, fusión Tucker, activación GELU y normalización InstanceNorm. El propio autor indica de forma explícita que el checkpoint incluido es una inicialización válida para pruebas de humo (smoke tests) y no un modelo entrenado ni evaluado con benchmarks.
+Mobilevit-checkpoint-2023 es un repositorio de investigación publicado por el usuario jerry-vo en Hugging Face. Se presenta como un prototipo de arquitectura MobileViT orientado a tareas múltiples (multitask) en su escala xlarge, con atención de tipo flash, fusión Tucker, activación GELU y normalización InstanceNorm. El propio autor indica de forma explícita que el checkpoint incluido es una inicialización válida para pruebas de humo (smoke tests) y no un modelo entrenado ni evaluado con benchmarks.
 
 El modelo no incorpora pesos entrenados con datos reales: el repositorio contiene un script principal (run.py), un config.json con la configuración de arquitectura generada, un training_args.json con la receta de experimento por defecto (optimizador Adafactor con scheduler coseno) y un model.safetensors que, según los metadatos, contiene 24.832 parámetros. Esa cifra es muy inferior a la que cabría esperar de una MobileViT en escala xlarge, lo que refuerza la lectura de que se trata de un esqueleto de inicialización y no de un modelo funcional.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mobilevit-checkpoint-2023 (este repo) | 24.832 declarados | imagen, resolución no disponible | sin entrenar, sin benchmarks | apache-2.0 | HuggingFace, 0 descargas |
+| mobilevit-checkpoint-2023 (este repo) | 24.832 declarados | imagen, resolución no disponible | sin entrenar, sin benchmarks | apache-2.0 | Hugging Face, 0 descargas |
 | MobileViT original (Apple) | no disponible con exactitud | imagen, resolución no disponible | resultados publicados por sus autores | no disponible | pesos publicados por sus autores |
 | MobileViTv2 (Apple) | no disponible con exactitud | imagen, resolución no disponible | resultados publicados por sus autores | no disponible | pesos publicados por sus autores |
 | EfficientNet-lite / MobileNetV3 | no disponible con exactitud | imagen, resolución no disponible | resultados publicados por sus autores | no disponible | pesos publicados por sus autores |
@@ -86,6 +86,6 @@ La comparación numérica no es posible con la información disponible: este rep
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jerry-vo/mobilevit-checkpoint-2023
+- Repositorio en Hugging Face: https://huggingface.co/jerry-vo/mobilevit-checkpoint-2023
 - Archivos del repositorio: `run.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - No se han encontrado enlaces técnicos relevantes en la búsqueda web: los resultados devueltos corresponden a contenido no relacionado (compilaciones de animación de Tom y Jerry y sus artículos de Wikipedia), sin ninguna relación con el modelo. No hay paper, blog, repositorio de código ni demo asociados a este modelo en la información disponible.

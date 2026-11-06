@@ -71,9 +71,9 @@ La comparativa mas directa es con el modelo original Qwen3.8-27B, del cual esta 
 
 | Modelo | Parametros | Contexto | Rechazos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B (original) | 27B | 262K (ext. 1M) | 92/100 | Apache 2.0 | HuggingFace oficial |
-| Qwen3.8-27B-heretic-ara | 27B | 262K (ext. 1M) | 9/100 | Apache 2.0 | HuggingFace (este repo) |
-| Qwen3.6-27B | 27B | no disponible | no disponible | Apache 2.0 | HuggingFace oficial |
+| Qwen3.8-27B (original) | 27B | 262K (ext. 1M) | 92/100 | Apache 2.0 | Hugging Face oficial |
+| Qwen3.8-27B-heretic-ara | 27B | 262K (ext. 1M) | 9/100 | Apache 2.0 | Hugging Face (este repo) |
+| Qwen3.6-27B | 27B | no disponible | no disponible | Apache 2.0 | Hugging Face oficial |
 
 No se dispone de informacion suficiente para comparar con otros modelos abliterados de terceros (como Dolphin o variantes de Llama sin censura) en terminos de rendimiento.
 

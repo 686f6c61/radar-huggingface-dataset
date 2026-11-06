@@ -73,6 +73,6 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [HuggingFace - SenseShift-large](https://huggingface.co/shawhed/SenseShift-large)
+- [Hugging Face - SenseShift-large](https://huggingface.co/shawhed/SenseShift-large)
 - [Paper en OpenReview - SENSESHIFT: Continuous Sentiment-Controlled Text generation](https://openreview.net/forum?id=BvPnX0Y2TF)
-- [Perfil del autor en HuggingFace](https://huggingface.co/shawhed)
+- [Perfil del autor en Hugging Face](https://huggingface.co/shawhed)

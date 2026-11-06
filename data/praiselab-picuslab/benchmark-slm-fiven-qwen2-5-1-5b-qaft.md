@@ -4,7 +4,7 @@
 
 Este repositorio no contiene un modelo completo, sino un adaptador LoRA (libreria PEFT) entrenado sobre Qwen2.5-1.5B, el modelo base de Alibaba de 1,54 mil millones de parametros. El adaptador, publicado por la organizacion praiselab-picuslab, forma parte de un proyecto de benchmark de modelos de lenguaje pequenos (SLM), como indican las etiquetas `benchmark-slm` y `strategy-qaft`, y esta orientado al idioma italiano.
 
-El adaptador se entreno sobre el dataset denominado "fiven" con la estrategia "qaft", cuya sigla no se documenta en la informacion disponible. Su relevancia es principalmente como artefacto de investigacion: permite evaluar estrategias de ajuste fino eficientes (LoRA) sobre modelos pequenos para idiomas concretos, en este caso el italiano. El acceso al repositorio es restringido (gated) y requiere aceptar condiciones en HuggingFace.
+El adaptador se entreno sobre el dataset denominado "fiven" con la estrategia "qaft", cuya sigla no se documenta en la informacion disponible. Su relevancia es principalmente como artefacto de investigacion: permite evaluar estrategias de ajuste fino eficientes (LoRA) sobre modelos pequenos para idiomas concretos, en este caso el italiano. El acceso al repositorio es restringido (gated) y requiere aceptar condiciones en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -40,7 +40,7 @@ Sobre esta base, praiselab-picuslab aplico un ajuste fino parametro-eficiente me
 - **Investigacion sobre estrategias de fine-tuning**: al formar parte de un benchmark sistematico de SLMs (`benchmark-slm`), es util para comparar empiricamente la estrategia "qaft" frente a otras estrategias de ajuste sobre la misma base y el mismo dataset.
 - **Resumen de documentos en italiano**: el modelo base maneja contextos de 32.768 tokens, suficiente para resumir articulos, correos o informes de longitud media en italiano con coste de inferencia muy bajo.
 - **Clasificacion y extraccion de informacion**: tareas de NLU ligeras sobre texto italiano (etiquetado de tickets, deteccion de intencion, extraccion de campos) donde se prioriza latencia y coste sobre maxima precision.
-- **Prototipado rapido de aplicaciones LLM en italiano**: ideal para iterar prompts y pipelines antes de escalar a modelos mayores, gracias al bajo consumo de memoria y a la integracion directa con la libreria PEFT de HuggingFace.
+- **Prototipado rapido de aplicaciones LLM en italiano**: ideal para iterar prompts y pipelines antes de escalar a modelos mayores, gracias al bajo consumo de memoria y a la integracion directa con la libreria PEFT de Hugging Face.
 - **Punto de partida para ajustes adicionales**: al ser un adaptador LoRA, puede fusionarse con la base (`merge_and_unload`) y reentrenarse o apilarse con otros adaptadores para especializarlo en dominios concretos (legal, medico, atencion al cliente).
 - **Evaluacion comparativa de SLMs para italiano**: util como punto de datos en estudios que miden cuanto rinde un modelo pequeno multilingue tras un ajuste fino monolingue frente a su version base.
 
@@ -71,7 +71,7 @@ La diferencia clave es que esta ficha corresponde a un adaptador experimental si
 
 - **No es un modelo autónomo**: requiere descargar y cargar Qwen/Qwen2.5-1.5B y aplicar el adaptador mediante PEFT; no funciona de forma independiente.
 - **Licencia no especificada**: al no declararse licencia en el repositorio, existe incertidumbre legal para uso comercial del adaptador, aunque el modelo base es Apache 2.0.
-- **Acceso restringido (gated)**: hay que aceptar condiciones en HuggingFace antes de poder descargarlo.
+- **Acceso restringido (gated)**: hay que aceptar condiciones en Hugging Face antes de poder descargarlo.
 - **Tamano del repo de 0,0 GB y 0 descargas**: posible indicio de un repositorio vacio, incompleto o sin uso comunitario; conviene verificar que los pesos estan realmente disponibles antes de planificar su uso.
 - **Sin benchmarks publicados**: no hay evidencia cuantitativa de que el ajuste mejore al modelo base; el rendimiento en italiano es una hipotesis, no un dato verificado.
 - **Dataset "fiven" sin documentar**: composicion y procedencia desconocidas, por lo que no se pueden evaluar sesgos potenciales del entrenamiento.
@@ -81,7 +81,7 @@ La diferencia clave es que esta ficha corresponde a un adaptador experimental si
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/praiselab-picuslab/benchmark-slm-fiven-qwen2.5-1.5b-qaft
+- Ficha del modelo en Hugging Face: https://huggingface.co/praiselab-picuslab/benchmark-slm-fiven-qwen2.5-1.5b-qaft
 - Modelo base Qwen2.5-1.5B: https://huggingface.co/Qwen/Qwen2.5-1.5B
 - Documentacion de PEFT (libreria del adaptador): https://huggingface.co/docs/peft
 - Blog de la familia Qwen2.5: https://qwenlm.github.io/blog/qwen2.5/

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`ShahriarFerdoush/llama3-8b-instruct-med-math-ties-comp-k10` es un checkpoint de 8.030.261.248 parámetros (aproximadamente 8B) publicado en HuggingFace por el usuario ShahriarFerdoush. El identificador del repositorio sugiere que se trata de una fusión de pesos (*model merging*) construida a partir de un modelo base tipo Llama 3 8B Instruct combinado con variantes de dominio médico y matemático, aplicando la técnica TIES con una configuración `k10`. Esta interpretación se deduce exclusivamente del nombre del modelo: el autor no ha documentado el proceso en la model card.
+`ShahriarFerdoush/llama3-8b-instruct-med-math-ties-comp-k10` es un checkpoint de 8.030.261.248 parámetros (aproximadamente 8B) publicado en Hugging Face por el usuario ShahriarFerdoush. El identificador del repositorio sugiere que se trata de una fusión de pesos (*model merging*) construida a partir de un modelo base tipo Llama 3 8B Instruct combinado con variantes de dominio médico y matemático, aplicando la técnica TIES con una configuración `k10`. Esta interpretación se deduce exclusivamente del nombre del modelo: el autor no ha documentado el proceso en la model card.
 
-El problema que pretende resolver es el habitual de las fusiones de modelos: obtener un único checkpoint que herede capacidades de varios especialistas (instrucciones generales, razonamiento médico y matemático) sin necesidad de servir varios modelos en paralelo. Sin embargo, no hay ninguna evidencia publicada que respalde que la fusión funcione: la model card es la plantilla autogenerada por HuggingFace, sin sección de uso, datos de entrenamiento, evaluación ni licencia.
+El problema que pretende resolver es el habitual de las fusiones de modelos: obtener un único checkpoint que herede capacidades de varios especialistas (instrucciones generales, razonamiento médico y matemático) sin necesidad de servir varios modelos en paralelo. Sin embargo, no hay ninguna evidencia publicada que respalde que la fusión funcione: la model card es la plantilla autogenerada por Hugging Face, sin sección de uso, datos de entrenamiento, evaluación ni licencia.
 
 Su relevancia práctica es, hoy, muy limitada. El repositorio no tiene descargas ni *likes*, no incluye métricas de evaluación ni ejemplos de uso, y la licencia no está declarada, lo que impide un uso comercial seguro. Se trata de un artefacto experimental de interés únicamente para quien quiera reproducir o auditar el proceso de fusión, no de un modelo listo para producción.
 
@@ -23,7 +23,7 @@ Su relevancia práctica es, hoy, muy limitada. El repositorio no tiene descargas
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura interna ni sobre el proceso de construccion del modelo. La model card es la plantilla automatica de HuggingFace y todos los campos relevantes (desarrollador, tipo de modelo, datos de entrenamiento, hiperparametros, evaluacion) aparecen como `[More Information Needed]`. El unico dato objetivo es el recuento de parametros de los tensores: 8.030.261.248, coherente con un transformer decoder-only de 8B en la estela de Llama 3 8B.
+No hay informacion publicada sobre la arquitectura interna ni sobre el proceso de construccion del modelo. La model card es la plantilla automatica de Hugging Face y todos los campos relevantes (desarrollador, tipo de modelo, datos de entrenamiento, hiperparametros, evaluacion) aparecen como `[More Information Needed]`. El unico dato objetivo es el recuento de parametros de los tensores: 8.030.261.248, coherente con un transformer decoder-only de 8B en la estela de Llama 3 8B.
 
 A partir del identificador se puede inferir, sin confirmacion documental, que el checkpoint procede de una fusion de pesos del tipo TIES (*Trim, Elect Sign, Merge*, propuesto en arXiv:2306.01708) con `k=10`, lo que habitualmente significa fusionar los 10 parametros de poda mas altos por tensor o combinar 10 checkpoints donantes. Los sufijos `med` y `math` apuntan a modelos donantes especializados en dominio medico y matematico sobre una base instruct. Conviene subrayar que no hay ninguna garantia de que la fusion se haya validado: no se documentan tokens de entrenamiento, composicion del dataset, ni fases de RLHF o DPO posteriores.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| llama3-8b-instruct-med-math-ties-comp-k10 | 8,03B | No disponible | No disponible | No disponible | Repositorio HuggingFace, 0 descargas |
+| llama3-8b-instruct-med-math-ties-comp-k10 | 8,03B | No disponible | No disponible | No disponible | Repositorio Hugging Face, 0 descargas |
 | Llama 3 8B Instruct (Meta) | 8B | 8192 tokens | Amplia bateria publica en su model card | Licencia comunitaria Llama 3 | Ampliamente disponible, cuantizaciones oficiales y de terceros |
 | Mistral 7B Instruct (v0.3) | 7,2B | 32768 tokens | Publicado por Mistral en su model card | Apache 2.0 | Ampliamente disponible |
 | Qwen2.5 7B Instruct | 7,6B | 32768 tokens (128K en variantes) | Publicado por el equipo Qwen | Apache 2.0 en la mayoria de variantes | Ampliamente disponible |
@@ -85,7 +85,7 @@ Los datos de los modelos comparados provienen de sus respectivas model cards pub
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ShahriarFerdoush/llama3-8b-instruct-med-math-ties-comp-k10
+- Repositorio Hugging Face: https://huggingface.co/ShahriarFerdoush/llama3-8b-instruct-med-math-ties-comp-k10
 - Paper de referencia sobre TIES-Merging (mencionado por el sufijo `ties` del identificador, no citado por el autor): https://arxiv.org/abs/2306.01708
 - Paper del calculador de impacto de carbono citado en la plantilla de la model card: https://arxiv.org/abs/1910.09700
 - Calculador ML Impact: https://mlco2.github.io/impact

@@ -70,5 +70,5 @@ No se dispone de modelos comparables en la misma categoría. El modelo es un pro
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jiyoungleehog/homework-generation
+- Repositorio en Hugging Face: https://huggingface.co/jiyoungleehog/homework-generation
 - No se encontraron papers, blogs, repositorios adicionales ni demos relacionados con este modelo en la búsqueda web.

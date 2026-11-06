@@ -81,13 +81,13 @@ La información proporcionada no incluye datos comparativos de otros modelos VLA
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| π₀ (`weichen010/pi0_base`) | 3.501.372.176 | No disponible | Gemma | HuggingFace (checkpoint de terceros) | No disponible |
+| π₀ (`weichen010/pi0_base`) | 3.501.372.176 | No disponible | Gemma | Hugging Face (checkpoint de terceros) | No disponible |
 | π₀.₅ | No disponible | No disponible | No disponible | No disponible en la información proporcionada | No disponible |
 | Otros VLA de la misma categoría | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
 
-- El checkpoint está publicado por el usuario `weichen010`, no por Physical Intelligence ni por HuggingFace. El checkpoint de referencia en la documentación de LeRobot es `lerobot/pi0_base`; conviene verificar la procedencia antes de usarlo.
+- El checkpoint está publicado por el usuario `weichen010`, no por Physical Intelligence ni por Hugging Face. El checkpoint de referencia en la documentación de LeRobot es `lerobot/pi0_base`; conviene verificar la procedencia antes de usarlo.
 - El repositorio registra 0 descargas y 0 likes, por lo que no cuenta con validación de la comunidad.
 - La model card declara `inference: false` en el *front matter*, mientras que el propio README incluye ejemplos de inferencia y evaluación en hardware real. Es una contradicción que conviene resolver antes de desplegarlo.
 - No se documentan datos de entrenamiento, composición del dataset ni proceso de alineación, por lo que los sesgos del modelo son desconocidos.
@@ -96,11 +96,11 @@ La información proporcionada no incluye datos comparativos de otros modelos VLA
 - No es un modelo de chat ni de generación de texto; usarlo fuera del dominio robótico no está soportado.
 - La licencia es Gemma, cuyos términos imponen condiciones específicas de uso (incluidas obligaciones de atribución y restricciones de uso aceptable). Hay que revisarlos antes de cualquier explotación comercial.
 - No hay información sobre latencia, frecuencia de control ni *throughput*, datos esenciales para valorar su viabilidad en un bucle de control en tiempo real.
-- Los resultados de búsqueda web aportados no contienen información técnica del modelo, por lo que parte de esta ficha se basa exclusivamente en la model card y en los metadatos de HuggingFace.
+- Los resultados de búsqueda web aportados no contienen información técnica del modelo, por lo que parte de esta ficha se basa exclusivamente en la model card y en los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/weichen010/pi0_base
+- Modelo en Hugging Face: https://huggingface.co/weichen010/pi0_base
 - Checkpoint base referenciado en el README: https://huggingface.co/lerobot/pi0_base
 - Implementación de referencia (Physical Intelligence): https://github.com/Physical-Intelligence/openpi
 - Repositorio LeRobot: https://github.com/huggingface/lerobot

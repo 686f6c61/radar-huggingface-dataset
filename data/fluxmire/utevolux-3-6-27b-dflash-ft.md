@@ -2,7 +2,7 @@
 
 ## Resumen
 
-UtevoLux-3.6-27B-DFlash-ft es un modelo borrador (*draft model*) para decodificación especulativa, publicado por el usuario Fluxmire en HuggingFace. No es un modelo conversacional: es un acelerador que propone bloques de tokens que luego valida el modelo objetivo cont1037/UtevoLux-3.6-27B (revisión `882b3c5e`). Concretamente, es un ajuste fino del borrador z-lab/Qwen3.6-27B-DFlash, que implementa la técnica DFlash (block diffusion for flash speculative decoding) descrita en el artículo arXiv:2602.06036.
+UtevoLux-3.6-27B-DFlash-ft es un modelo borrador (*draft model*) para decodificación especulativa, publicado por el usuario Fluxmire en Hugging Face. No es un modelo conversacional: es un acelerador que propone bloques de tokens que luego valida el modelo objetivo cont1037/UtevoLux-3.6-27B (revisión `882b3c5e`). Concretamente, es un ajuste fino del borrador z-lab/Qwen3.6-27B-DFlash, que implementa la técnica DFlash (block diffusion for flash speculative decoding) descrita en el artículo arXiv:2602.06036.
 
 El modelo resuelve un problema muy acotado: la latencia de generación de código Three.js a partir de imágenes en el modelo objetivo UtevoLux-3.6-27B. Para ello se reentrenó el borrador original con 4.389 respuestas image-to-Three.js generadas por el propio modelo objetivo, manteniendo intacta la arquitectura (5 capas, hidden 5120, 32/8 cabezas, head_dim 128, bloque de 8 tokens, ventana deslizante de 2048 en todas las capas).
 
@@ -80,9 +80,9 @@ Datos adicionales aportados por el autor:
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| UtevoLux-3.6-27B-DFlash-ft (este) | Drafter DFlash ajustado a image-to-Three.js | 1,73 B | Ventana deslizante 2048 por capa; total no disponible | Aceptación val1 5,291 (bloque 8) | MIT | HuggingFace, safetensors + custom_code |
-| z-lab/Qwen3.6-27B-DFlash | Drafter DFlash genérico (modelo base) | Misma arquitectura (5 capas, hidden 5120) | Ventana deslizante 2048 por capa | Aceptación val1 4,729 | MIT | HuggingFace |
-| cont1037/UtevoLux-3.6-27B | Modelo objetivo (no es drafter) | 27 B (según denominación) | No disponible | No es comparable: es el verificador | No disponible en la información | HuggingFace, revisión `882b3c5e` |
+| UtevoLux-3.6-27B-DFlash-ft (este) | Drafter DFlash ajustado a image-to-Three.js | 1,73 B | Ventana deslizante 2048 por capa; total no disponible | Aceptación val1 5,291 (bloque 8) | MIT | Hugging Face, safetensors + custom_code |
+| z-lab/Qwen3.6-27B-DFlash | Drafter DFlash genérico (modelo base) | Misma arquitectura (5 capas, hidden 5120) | Ventana deslizante 2048 por capa | Aceptación val1 4,729 | MIT | Hugging Face |
+| cont1037/UtevoLux-3.6-27B | Modelo objetivo (no es drafter) | 27 B (según denominación) | No disponible | No es comparable: es el verificador | No disponible en la información | Hugging Face, revisión `882b3c5e` |
 | EAGLE-3, Medusa y otros drafters | Borradores de decodificación especulativa | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -99,7 +99,7 @@ Datos adicionales aportados por el autor:
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Fluxmire/UtevoLux-3.6-27B-DFlash-ft
+- Modelo en Hugging Face: https://huggingface.co/Fluxmire/UtevoLux-3.6-27B-DFlash-ft
 - Modelo base (drafter original): https://huggingface.co/z-lab/Qwen3.6-27B-DFlash
 - Modelo objetivo del ajuste: https://huggingface.co/cont1037/UtevoLux-3.6-27B
 - Repositorio relacionado del mismo autor: https://huggingface.co/Fluxmire/UtevoLux-3.6-27B

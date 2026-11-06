@@ -74,5 +74,5 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xhd521/LLMCPNER
+- Modelo en Hugging Face: https://huggingface.co/xhd521/LLMCPNER
 - Repositorio de código (implementación y test set): https://github.com/goodXHD/LLMCPNER-Integrating-Large-Language-Models-and-Curriculum-Learning-for-Paleontological-Named-Entity

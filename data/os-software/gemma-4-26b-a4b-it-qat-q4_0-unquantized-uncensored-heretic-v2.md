@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es una variante manipulada del modelo Gemma 4 de Google DeepMind, concretamente de la versión `google/gemma-4-26B-A4B-it-qat-q4_0-unquantized`, a la que se le ha aplicado una técnica de ablación conocida como *abliteration* mediante la herramienta Heretic v2.0.0.dev0+custom. El objetivo declarado por el autor es reducir de forma sustancial la alineación de seguridad del modelo para eliminar los rechazos (refusals) y permitir un comportamiento menos censurado. Este modelo no es un desarrollo independiente, sino un *fine-tuning* derivado del original, mantenido por el usuario OS-Software y alojado en HuggingFace.
+Este modelo es una variante manipulada del modelo Gemma 4 de Google DeepMind, concretamente de la versión `google/gemma-4-26B-A4B-it-qat-q4_0-unquantized`, a la que se le ha aplicado una técnica de ablación conocida como *abliteration* mediante la herramienta Heretic v2.0.0.dev0+custom. El objetivo declarado por el autor es reducir de forma sustancial la alineación de seguridad del modelo para eliminar los rechazos (refusals) y permitir un comportamiento menos censurado. Este modelo no es un desarrollo independiente, sino un *fine-tuning* derivado del original, mantenido por el usuario OS-Software y alojado en Hugging Face.
 
 La arquitectura subyacente es un Transformer multimodal con Mixture of Experts (MoE), con un total de 25.805.933.872 parámetros (aproximadamente 25,8 mil millones) y unos 4.000 millones de parámetros activos por token, tal y como indica el sufijo A4B. El modelo base soporta una ventana de contexto de hasta 256.000 tokens y es multilingüe en más de 140 idiomas. La licencia del repositorio es Apache 2.0, heredada del modelo original.
 
@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks de capacidad general en la informac
 
 | Modelo | Parametros | Contexto | Refusals | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OS-Software/gemma-4-26B-A4B-it-qat-q4_0-unquantized-uncensored-heretic-v2 | 25.8B (4B activos) | 256K | 0/100 | Apache 2.0 | HuggingFace |
-| google/gemma-4-26B-A4B-it-qat-q4_0-unquantized | 25.8B (4B activos) | 256K | 100/100 | Apache 2.0 | HuggingFace |
-| OS-Software/gemma-4-26B-A4B-it-qat-q4_0-unquantized-heretic-ja | 25.8B (4B activos) | 256K | 0/100 | Apache 2.0 | HuggingFace |
+| OS-Software/gemma-4-26B-A4B-it-qat-q4_0-unquantized-uncensored-heretic-v2 | 25.8B (4B activos) | 256K | 0/100 | Apache 2.0 | Hugging Face |
+| google/gemma-4-26B-A4B-it-qat-q4_0-unquantized | 25.8B (4B activos) | 256K | 100/100 | Apache 2.0 | Hugging Face |
+| OS-Software/gemma-4-26B-A4B-it-qat-q4_0-unquantized-heretic-ja | 25.8B (4B activos) | 256K | 0/100 | Apache 2.0 | Hugging Face |
 
 La comparacion se limita a las variantes de abliteracion y al modelo original, ya que no se dispone de benchmarks de capacidad mas amplios en la informacion proporcionada.
 
@@ -81,7 +81,7 @@ La comparacion se limita a las variantes de abliteracion y al modelo original, y
 - Todas las salidas deben tratarse como no confiables y verificarse de forma independiente antes de cualquier uso, especialmente si se extrapolan a otros contextos.
 - No se han publicado evaluaciones independientes sobre sesgos, alucinaciones, comportamiento multilingue o rendimiento en tareas especificas para esta variante concreta.
 - Aunque la licencia Apache 2.0 permite el uso comercial, el autor rechaza el despliegue publico y no asume responsabilidad alguna por los danos o consecuencias legales derivadas del uso. El usuario es responsable de cumplir con las leyes, regulaciones y estandares eticos aplicables.
-- La metadata de HuggingFace no especifica los idiomas soportados ni ofrece benchmarks de capacidades generales.
+- La metadata de Hugging Face no especifica los idiomas soportados ni ofrece benchmarks de capacidades generales.
 
 ## Enlaces
 
@@ -89,7 +89,7 @@ La comparacion se limita a las variantes de abliteracion y al modelo original, y
 - Modelo base original: https://huggingface.co/google/gemma-4-26B-A4B-it-qat-q4_0-unquantized
 - Variante heretic para japonés: https://huggingface.co/OS-Software/gemma-4-26B-A4B-it-qat-q4_0-unquantized-heretic-ja
 - Variante GGUF heretic: https://huggingface.co/OS-Software/gemma-4-26B-A4B-it-qat-q4_0-heretic-ja-GGUF
-- Coleccion Gemma 4 QAT en HuggingFace: https://huggingface.co/collections/google/gemma-4-qat-q4-0
+- Coleccion Gemma 4 QAT en Hugging Face: https://huggingface.co/collections/google/gemma-4-qat-q4-0
 - Proyecto Heretic: https://heretic-project.org
 - GitHub de p-e-w: https://github.com/p-e-w
 - Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license

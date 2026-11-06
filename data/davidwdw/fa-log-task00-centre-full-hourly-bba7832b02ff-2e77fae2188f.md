@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El artefacto identificado como `davidwdw/fa-log-task00-centre-full-hourly-bba7832b02ff-2e77fae2188f` se publica en HuggingFace bajo la etiqueta `region:us` y, segun su propia model card, corresponde a un "versioned fleet archive" (archivo versionado de flota) asociado a la receta canonica `evaluations/2026-09-23_task00_centre_full_recovery`, con tier "versioned snapshot". La descripcion indica explicitamente que se trata de una instantanea de una revision concreta y no de un espejo de directorio en vivo, y recomienda usar la revision exacta grabada y verificar el fichero `SHA256SUMS`.
+El artefacto identificado como `davidwdw/fa-log-task00-centre-full-hourly-bba7832b02ff-2e77fae2188f` se publica en Hugging Face bajo la etiqueta `region:us` y, segun su propia model card, corresponde a un "versioned fleet archive" (archivo versionado de flota) asociado a la receta canonica `evaluations/2026-09-23_task00_centre_full_recovery`, con tier "versioned snapshot". La descripcion indica explicitamente que se trata de una instantanea de una revision concreta y no de un espejo de directorio en vivo, y recomienda usar la revision exacta grabada y verificar el fichero `SHA256SUMS`.
 
-No hay ningun indicio, ni en la informacion de HuggingFace ni en la model card, de que el repositorio contenga pesos de un modelo de lenguaje: no se declaran arquitectura, parametros, longitud de contexto, idiomas, licencia ni pipeline de inferencia. La nomenclatura del identificador (`log-task00-centre-full-hourly-...`) y el contenido del README apuntan a un paquete de registros (logs) de una tarea de evaluacion, empaquetado con fines de trazabilidad y reproducibilidad.
+No hay ningun indicio, ni en la informacion de Hugging Face ni en la model card, de que el repositorio contenga pesos de un modelo de lenguaje: no se declaran arquitectura, parametros, longitud de contexto, idiomas, licencia ni pipeline de inferencia. La nomenclatura del identificador (`log-task00-centre-full-hourly-...`) y el contenido del README apuntan a un paquete de registros (logs) de una tarea de evaluacion, empaquetado con fines de trazabilidad y reproducibilidad.
 
 Por tanto, esta ficha no puede describir capacidades de un modelo porque no se ha publicado evidencia de que exista uno. Los apartados siguientes documentan lo que si esta declarado y marcan como "no disponible" todo aquello que no consta, incluyendo los resultados de la busqueda web, que devolvieron exclusivamente paginas sobre el juego de cartas Hearts y no guardan relacion alguna con el artefacto.
 
@@ -18,7 +18,7 @@ Por tanto, esta ficha no puede describir capacidades de un modelo porque no se h
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible (la model card no incluye licencia ni la ficha de HuggingFace la declara) |
+| Licencia | no disponible (la model card no incluye licencia ni la ficha de Hugging Face la declara) |
 | Formato de pesos | no disponible (no se declaran safetensors, GGUF ni ningun otro formato de pesos) |
 | Autor | davidwdw |
 | Fecha de creacion | 2026-09-26T19:58:54Z |
@@ -86,7 +86,7 @@ No disponible. No es posible establecer una comparativa con modelos de lenguaje 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-log-task00-centre-full-hourly-bba7832b02ff-2e77fae2188f
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-log-task00-centre-full-hourly-bba7832b02ff-2e77fae2188f
 - Receta canonica citada en la model card: `evaluations/2026-09-23_task00_centre_full_recovery` (ruta interna, sin URL publica disponible)
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al artefacto.
 - Los resultados de la busqueda web (heartscardclassic.com, worldofcardgames.com/hearts, cardgames.io/hearts, heartsgame.com, play.google.com/store/apps/details?id=com.gamesbypost.heartscardclassic) corresponden al juego de cartas Hearts y se consideran no relacionados, por lo que se excluyen como enlaces de referencia.

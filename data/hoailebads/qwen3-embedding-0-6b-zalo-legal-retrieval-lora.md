@@ -90,7 +90,7 @@ No se dispone de comparación con otros modelos de embeddings vietnamitas fuera 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hoailebads/Qwen3-Embedding-0.6B-Zalo-Legal-Retrieval-LoRA
+- Repositorio Hugging Face: https://huggingface.co/hoailebads/Qwen3-Embedding-0.6B-Zalo-Legal-Retrieval-LoRA
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Embedding-0.6B
 - Código y métricas completas: https://github.com/hoaileba/Qwen-Retrieval-Tuning
 - Modelo relacionado (VLSP): https://huggingface.co/hoailebads/Qwen3-Embedding-0.6B-VLSP-Legal-Retrieval-LoRA

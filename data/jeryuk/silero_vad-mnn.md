@@ -77,7 +77,7 @@ La comparativa se basa en el modelo original y alternativas conocidas; no hay da
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/Jeryuk/silero_vad.mnn
+- Repositorio Hugging Face del modelo: https://huggingface.co/Jeryuk/silero_vad.mnn
 - Modelo original (ONNX): https://huggingface.co/runanywhere/silero-vad-v5/tree/main
 - Repositorio GitHub de Silero VAD: https://github.com/snakers4/silero-vad
 - Repositorio GitHub de Silero Models: https://github.com/snakers4/silero-models

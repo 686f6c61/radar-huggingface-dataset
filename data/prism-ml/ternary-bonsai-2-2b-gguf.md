@@ -102,7 +102,7 @@ Alternativas de otros fabricantes en la misma categoría (otros modelos ternario
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/prism-ml/Ternary-Bonsai-2-2B-gguf
+- Modelo en Hugging Face: https://huggingface.co/prism-ml/Ternary-Bonsai-2-2B-gguf
 - Web de Prism ML: https://prismml.com
 - Repositorio de demo y ejemplos: https://github.com/PrismML-Eng/Bonsai-demo
 - Fork de llama.cpp con los kernels ternarios (rama prism): https://github.com/PrismML-Eng/llama.cpp

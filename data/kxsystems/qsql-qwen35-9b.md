@@ -92,5 +92,5 @@ No se dispone de datos de benchmarks ni de otros modelos comparables de la misma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KxSystems/qsql-qwen35-9b
+- Modelo en Hugging Face: https://huggingface.co/KxSystems/qsql-qwen35-9b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B

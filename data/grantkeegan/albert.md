@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Albert es un modelo publicado en HuggingFace por el usuario GrantKeegan bajo licencia MIT. La model card asociada es practicamente vacia: unicamente declara la licencia, sin especificar arquitectura, tamano, datos de entrenamiento, idiomas ni proposito. El repositorio no tiene descargas registradas y cuenta con un solo "like", lo que sugiere que se trata de una publicacion reciente o de un experimento personal sin difusion.
+Albert es un modelo publicado en Hugging Face por el usuario GrantKeegan bajo licencia MIT. La model card asociada es practicamente vacia: unicamente declara la licencia, sin especificar arquitectura, tamano, datos de entrenamiento, idiomas ni proposito. El repositorio no tiene descargas registradas y cuenta con un solo "like", lo que sugiere que se trata de una publicacion reciente o de un experimento personal sin difusion.
 
 No es posible determinar a partir de la informacion disponible si el modelo es un transformer, un modelo de lenguaje, un modelo de vision, un componente auxiliar o un artefacto de prueba. El nombre "Albert" podria evocar la familia ALBERT (A Lite BERT) de Google Research, pero no hay ningun dato en el repositorio que confirme esa relacion, por lo que no debe asumirse.
 
@@ -40,7 +40,7 @@ Tampoco hay datos sobre el corpus de entrenamiento, el numero de tokens procesad
 - Evaluacion exploratoria: inspeccionar los archivos del repositorio para determinar el tipo de artefacto y su posible utilidad antes de considerar cualquier integracion.
 - Prototipado interno con licencia permisiva: la licencia MIT permite usar, modificar y redistribuir el material sin restricciones comerciales, lo que facilita experimentos controlados una vez verificado el contenido real del repositorio.
 - Reproduccion de investigacion: si el autor publicase en el futuro detalles de entrenamiento, el repositorio podria servir como base para replicar experimentos.
-- Docencia y aprendizaje: util como ejemplo de publicacion minima en HuggingFace para ilustrar que metadatos son necesarios antes de distribuir un modelo.
+- Docencia y aprendizaje: util como ejemplo de publicacion minima en Hugging Face para ilustrar que metadatos son necesarios antes de distribuir un modelo.
 - Auditoria de licencias: caso de estudio para equipos juridicos que evaluan modelos con licencia MIT y documentacion escasa.
 - Base para fine-tuning: solo si, tras inspeccionar los pesos, se confirma que existe un checkpoint utilizable; en caso contrario, el caso de uso no aplica.
 
@@ -72,4 +72,4 @@ No disponible. Al no conocerse la arquitectura, el tamano ni la tarea del modelo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/GrantKeegan/Albert
+- Repositorio en Hugging Face: https://huggingface.co/GrantKeegan/Albert

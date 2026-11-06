@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`code5312/etch-ai-automation-MGN` es un modelo publicado en HuggingFace por el usuario `code5312` bajo licencia Apache 2.0. La informacion disponible en la ficha de HuggingFace es extremadamente limitada: no se especifica arquitectura, numero de parametros, longitud de contexto, idiomas soportados ni pipeline de inferencia. El repositorio tiene cero descargas y cero likes, y fue creado y actualizado el mismo dia (5 de noviembre de 2026), lo que sugiere una publicacion reciente y sin validacion por parte de la comunidad.
+`code5312/etch-ai-automation-MGN` es un modelo publicado en Hugging Face por el usuario `code5312` bajo licencia Apache 2.0. La informacion disponible en la ficha de Hugging Face es extremadamente limitada: no se especifica arquitectura, numero de parametros, longitud de contexto, idiomas soportados ni pipeline de inferencia. El repositorio tiene cero descargas y cero likes, y fue creado y actualizado el mismo dia (5 de noviembre de 2026), lo que sugiere una publicacion reciente y sin validacion por parte de la comunidad.
 
-El nombre del repositorio sugiere un posible enfoque hacia automatizacion con IA ("ai-automation"), pero no hay documentacion tecnica que lo confirme. El acceso al modelo esta restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de poder descargar los pesos. Esta ficha se limita a documentar lo que se puede verificar; cualquier dato no confirmado se marca explicitamente como no disponible.
+El nombre del repositorio sugiere un posible enfoque hacia automatizacion con IA ("ai-automation"), pero no hay documentacion tecnica que lo confirme. El acceso al modelo esta restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de poder descargar los pesos. Esta ficha se limita a documentar lo que se puede verificar; cualquier dato no confirmado se marca explicitamente como no disponible.
 
 Dado que no se han publicado especificaciones tecnicas, benchmarks ni documentacion de uso, este modelo no puede evaluarse de forma rigurosa en el momento de redactar esta ficha. Se recomienda precaucion antes de considerarlo para entornos de produccion.
 
@@ -42,7 +42,7 @@ No es posible recomendar casos de uso concretos sin informacion sobre las capaci
 
 - Automatizacion de flujos de trabajo: el nombre del repositorio sugiere un posible uso en automatizacion, pero no hay documentacion que lo respalde.
 - Evaluacion experimental: dado que no hay benchmarks publicados, un uso posible seria la evaluacion interna en un entorno controlado antes de considerar su adopcion.
-- Investigacion sobre modelos recientes: util para estudiar publicaciones nuevas en HuggingFace, siempre con cautela por la ausencia de documentacion.
+- Investigacion sobre modelos recientes: util para estudiar publicaciones nuevas en Hugging Face, siempre con cautela por la ausencia de documentacion.
 - Pruebas de integracion en pipelines propios: solo tras verificar el formato de pesos y los requisitos de hardware, actualmente desconocidos.
 - Comparativas internas: como referencia adicional en evaluaciones de modelos, sin valor concluyente.
 - Docencia o formacion: como ejemplo de repositorio reciente con acceso restringido y documentacion minima.
@@ -66,7 +66,7 @@ No disponible. No se dispone de informacion suficiente sobre arquitectura, taman
 ## Limitaciones y advertencias
 
 - Ausencia total de documentacion tecnica: no se puede verificar arquitectura, tamano, contexto ni capacidades.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace antes de la descarga.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face antes de la descarga.
 - Cero descargas y cero likes: sin validacion por parte de la comunidad.
 - Sin benchmarks publicados: imposible evaluar rendimiento de forma objetiva.
 - Riesgo de sesgos y alucinaciones: desconocido, al no haber informacion sobre datos de entrenamiento ni alineacion.
@@ -76,5 +76,5 @@ No disponible. No se dispone de informacion suficiente sobre arquitectura, taman
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/code5312/etch-ai-automation-MGN
+- Hugging Face: https://huggingface.co/code5312/etch-ai-automation-MGN
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion disponible.

@@ -72,7 +72,7 @@ No se dispone de información suficiente para realizar una comparativa fiable. E
 
 ## Enlaces
 
-- Repositorio HuggingFace de nfivez: https://huggingface.co/nfivez/Ling-3.0-tiny-heretic-GGUF
+- Repositorio Hugging Face de nfivez: https://huggingface.co/nfivez/Ling-3.0-tiny-heretic-GGUF
 - Repositorio original de trohrbaugh: https://huggingface.co/trohrbaugh/Ling-3.0-tiny-heretic
 - Repositorio de NANI-Nithin con GGUF del modelo base: https://huggingface.co/NANI-Nithin/Ling-3.0-tiny-GGUF
 - Documentación oficial de Ling en inclusionAI: https://developer.ant-ling.com/en/docs/models/ling/

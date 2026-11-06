@@ -74,13 +74,13 @@ No se dispone de datos de rendimiento ni de licencia para establecer una compara
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Qwen/Qwen3-ASR-0.6B` (via `toshuu/qwen-0.6b`) | ~0,6 mil millones | no disponible | no disponible | no disponible | repositorio de toolkit en HuggingFace |
+| `Qwen/Qwen3-ASR-0.6B` (via `toshuu/qwen-0.6b`) | ~0,6 mil millones | no disponible | no disponible | no disponible | repositorio de toolkit en Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
 - El repositorio `toshuu/qwen-0.6b` no parece contener los pesos del modelo, sino un conjunto de scripts, manifiestos y documentacion de despliegue; conviene confirmar el origen real de los pesos antes de usarlo en produccion.
-- La ficha de HuggingFace no declara licencia, idiomas ni pipeline; sin licencia explicita no puede asumirse permiso de uso comercial.
+- La ficha de Hugging Face no declara licencia, idiomas ni pipeline; sin licencia explicita no puede asumirse permiso de uso comercial.
 - La cadena de dependencias es fragil: `qwen-asr==0.0.6` fija `transformers==4.57.6`, que no reconoce `qwen3_asr`, mientras que el correcto funcionamiento requiere `transformers` 5.18.0.dev0 desde git; es necesario evitar que el gestor de paquetes degrade la version.
 - El arranque del servidor con CUDA graphs tarda aproximadamente 150 segundos, lo que afecta a tiempos de despliegue, reinicios y escalado elastico.
 - No hay datos de precision (WER) ni validacion en idiomas distintos del hindi; el comportamiento multilingue es una incognita.
@@ -90,6 +90,6 @@ No se dispone de datos de rendimiento ni de licencia para establecer una compara
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/toshuu/qwen-0.6b
+- Repositorio en Hugging Face: https://huggingface.co/toshuu/qwen-0.6b
 - Modelo base referenciado: https://huggingface.co/Qwen/Qwen3-ASR-0.6B
 - No se han encontrado en la busqueda web otros enlaces relevantes (papers, blogs o repos) asociados a este modelo. Los resultados de la busqueda corresponden a servicios no relacionados.

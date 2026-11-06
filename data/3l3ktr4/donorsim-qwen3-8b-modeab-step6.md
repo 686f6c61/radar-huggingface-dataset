@@ -91,7 +91,7 @@ No se han encontrado modelos comparables específicos para el Donor's Game en la
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/3l3ktr4/donorsim-qwen3-8b-modeAB-step6
+- Repositorio Hugging Face: https://huggingface.co/3l3ktr4/donorsim-qwen3-8b-modeAB-step6
 - Código fuente (GitHub): https://github.com/marimeireles/donorSim (rama `metastability-eval`, commit 64c78f1 o posterior)
 - Modelo base Qwen/Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Repositorio oficial de Qwen3: https://github.com/QwenLM/Qwen3

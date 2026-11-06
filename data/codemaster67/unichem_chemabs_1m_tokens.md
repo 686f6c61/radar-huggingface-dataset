@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Unichem_chemabs_1M_tokens es un adaptador QLoRA (Quantized Low-Rank Adaptation) entrenado sobre el modelo base allenai/OLMo-1B-hf para el modelado de lenguaje del dominio quimico, concretamente para cadenas SMILES. Lo publica el usuario Codemaster67 en HuggingFace y esta pensado para generacion y completado de SMILES, asi como para servir de punto de partida en tareas posteriores de prediccion de propiedades moleculares mediante fine-tuning. El problema que aborda es la adaptacion de un modelo causal generalista a la notacion quimica sin necesidad de reentrenar los pesos completos, reduciendo el coste computacional.
+Unichem_chemabs_1M_tokens es un adaptador QLoRA (Quantized Low-Rank Adaptation) entrenado sobre el modelo base allenai/OLMo-1B-hf para el modelado de lenguaje del dominio quimico, concretamente para cadenas SMILES. Lo publica el usuario Codemaster67 en Hugging Face y esta pensado para generacion y completado de SMILES, asi como para servir de punto de partida en tareas posteriores de prediccion de propiedades moleculares mediante fine-tuning. El problema que aborda es la adaptacion de un modelo causal generalista a la notacion quimica sin necesidad de reentrenar los pesos completos, reduciendo el coste computacional.
 
 Tecnicamente se trata de un transformer decoder-only causal (OLMo-1B) al que se le anaden matrices LoRA de rango 64 y alpha 128 sobre todas las capas lineales, manteniendo el modelo base cargado en 4 bits (NF4 con doble cuantizacion) y entrenando unicamente los adaptadores en bfloat16. El entrenamiento se hizo sobre el dataset Codemaster67/Unichem_smiles-chemabs-1M, con secuencias empaquetadas de 512 tokens y 1877 secuencias de entrenamiento mas 103 de validacion, lo que suma aproximadamente 1 millon de tokens.
 
@@ -96,7 +96,7 @@ No se han encontrado en la busqueda web modelos comparables concretos con los qu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Codemaster67/Unichem_chemabs_1M_tokens
+- Modelo en Hugging Face: https://huggingface.co/Codemaster67/Unichem_chemabs_1M_tokens
 - Dataset de entrenamiento: https://huggingface.co/datasets/Codemaster67/Unichem_smiles-chemabs-1M
 - Modelo base OLMo-1B: https://huggingface.co/allenai/OLMo-1B-hf
 - Repositorio del dataset (pagina de modelo, segun busqueda): https://huggingface.co/Codemaster67/Unichem_smiles-chemabs-1M

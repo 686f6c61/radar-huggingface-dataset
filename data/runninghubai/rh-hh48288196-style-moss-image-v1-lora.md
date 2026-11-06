@@ -6,7 +6,7 @@
 
 El propósito del adaptador es reproducir una estética muy definida de ilustración anime, con una fuerte impronta de personajes tipo Blue Archive. La propia model card documenta sesgos estilísticos conocidos e inevitables: halos de Blue Archive, destellos, lágrimas en las comisuras de los ojos, sudor, el efecto de sorpresa `^^^`, fondo gris, bajo contraste y saturación, y orejas puntiagudas o de elfo. El autor reconoce que estos sesgos son inherentes al estilo y que dispone de medios para mitigarlos, pero que la herramienta aún está en desarrollo.
 
-Por su naturaleza, la ficha técnica disponible es muy limitada: no hay información sobre el pipeline de difusión subyacente, la licencia, los idiomas ni los datos de entrenamiento. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y un tamaño de 0.0 GB en la API de HuggingFace, lo que sugiere que el peso real (11 MiB) no está contabilizado o que el repositorio está vacío o incompleto. Es relevante ahora únicamente como ejemplo de LoRA de estilo publicada mediante el ecosistema de RunningHub y ComfyUI, no como modelo de propósito general.
+Por su naturaleza, la ficha técnica disponible es muy limitada: no hay información sobre el pipeline de difusión subyacente, la licencia, los idiomas ni los datos de entrenamiento. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y un tamaño de 0.0 GB en la API de Hugging Face, lo que sugiere que el peso real (11 MiB) no está contabilizado o que el repositorio está vacío o incompleto. Es relevante ahora únicamente como ejemplo de LoRA de estilo publicada mediante el ecosistema de RunningHub y ComfyUI, no como modelo de propósito general.
 
 ## Especificaciones técnicas
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Tamaño | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rh-hh48288196-style-moss-image-v1-lora | LoRA de estilo sobre Moss Image v1 | 11 MiB (adaptador) | no aplica | no disponible | HuggingFace, ComfyUI, RunningHub |
+| rh-hh48288196-style-moss-image-v1-lora | LoRA de estilo sobre Moss Image v1 | 11 MiB (adaptador) | no aplica | no disponible | Hugging Face, ComfyUI, RunningHub |
 | Alternativas de LoRA de estilo anime | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre modelos comparables en la documentación proporcionada.
@@ -83,7 +83,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RunningHubAI/rh-hh48288196-style-moss-image-v1-lora
+- Hugging Face: https://huggingface.co/RunningHubAI/rh-hh48288196-style-moss-image-v1-lora
 - Modelo original en RunningHub: https://www.runninghub.ai/model/public/2112485468435742721
 - Página del autor (Yugen): https://www.runninghub.ai/user-center/2025565893677027330
 - Civitai: https://civitai.red/models/3009117/hh48288196-style-moss-image-v1

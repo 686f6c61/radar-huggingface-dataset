@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`cpp219/simpler_finetune_sim_only` es un modelo publicado en HuggingFace por el usuario `cpp219`. El nombre del repositorio sugiere un ajuste fino (finetune) derivado de un modelo previo denominado "simpler", aunque la informacion publica disponible no confirma ni el modelo base ni la naturaleza exacta del ajuste. El repositorio no incluye pipeline declarado, licencia, idiomas soportados ni documentacion tecnica en los metadatos accesibles.
+`cpp219/simpler_finetune_sim_only` es un modelo publicado en Hugging Face por el usuario `cpp219`. El nombre del repositorio sugiere un ajuste fino (finetune) derivado de un modelo previo denominado "simpler", aunque la informacion publica disponible no confirma ni el modelo base ni la naturaleza exacta del ajuste. El repositorio no incluye pipeline declarado, licencia, idiomas soportados ni documentacion tecnica en los metadatos accesibles.
 
 Con un tamano de repositorio de 4,5 GB y solo 4 descargas, se trata de una publicacion de caracter experimental o de uso interno, sin traccion comunitaria (0 likes). La ausencia de model card, de resultados de benchmarks y de especificaciones declaradas impide verificar sus capacidades reales. Esta ficha se limita a documentar lo que puede inferirse de los metadatos y marca explicitamente como "no disponible" todo aquello que no ha sido publicado.
 
@@ -76,5 +76,5 @@ No disponible. No se conocen modelos comparables porque se desconoce la arquitec
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/cpp219/simpler_finetune_sim_only
+- Repositorio en Hugging Face: https://huggingface.co/cpp219/simpler_finetune_sim_only
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

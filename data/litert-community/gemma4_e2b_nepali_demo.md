@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Gemma4_E2B_Nepali_demo es un artefacto de demostración educativa publicado por la organización litert-community en HuggingFace. Según su propia model card, se trata de un resultado creado para el tutorial de fine-tuning con LiteRT-LM (Colab), cuyo objetivo es ilustrar el proceso completo de ajuste fino con LoRA y la conversión posterior al formato `.litertlm`. No es un modelo de propósito general ni una release de producción.
+Gemma4_E2B_Nepali_demo es un artefacto de demostración educativa publicado por la organización litert-community en Hugging Face. Según su propia model card, se trata de un resultado creado para el tutorial de fine-tuning con LiteRT-LM (Colab), cuyo objetivo es ilustrar el proceso completo de ajuste fino con LoRA y la conversión posterior al formato `.litertlm`. No es un modelo de propósito general ni una release de producción.
 
 El nombre sugiere una adaptación de un modelo de la familia Gemma 4, con la designación "E2B" (probablemente referida a una variante de 2 mil millones de parámetros efectivos) y un ajuste orientado al idioma nepalí. Sin embargo, la información proporcionada no incluye detalles técnicos verificables sobre arquitectura, número de parámetros, contexto o composición del dataset de entrenamiento; la model card se limita a una advertencia legal y a contextualizar el artefacto como material didáctico.
 
@@ -74,5 +74,5 @@ No disponible. La información proporcionada no identifica modelos comparables n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/litert-community/Gemma4_E2B_Nepali_demo
+- Hugging Face: https://huggingface.co/litert-community/Gemma4_E2B_Nepali_demo
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

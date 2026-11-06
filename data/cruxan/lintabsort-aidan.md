@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `cruxan/lintabsort-aidan` en HuggingFace no contiene información sustancial sobre un modelo de IA. La model card únicamente declara la licencia MIT, y el repositorio tiene un tamaño de 0.0 GB, lo que indica que no hay pesos ni archivos de modelo publicados. El autor, `cruxan`, mantiene en GitHub el proyecto LinTabSort, una aplicación de Windows para revisar y organizar bibliotecas de fotos y vídeos, que según su descripción combina gestión de fotos, procesamiento de imagen y IA local. Sin embargo, no existe ninguna relación técnica entre ese proyecto y este repositorio de HuggingFace. En consecuencia, no es posible evaluar capacidades, rendimiento ni requisitos de hardware de un modelo que no está disponible.
+El repositorio `cruxan/lintabsort-aidan` en Hugging Face no contiene información sustancial sobre un modelo de IA. La model card únicamente declara la licencia MIT, y el repositorio tiene un tamaño de 0.0 GB, lo que indica que no hay pesos ni archivos de modelo publicados. El autor, `cruxan`, mantiene en GitHub el proyecto LinTabSort, una aplicación de Windows para revisar y organizar bibliotecas de fotos y vídeos, que según su descripción combina gestión de fotos, procesamiento de imagen y IA local. Sin embargo, no existe ninguna relación técnica entre ese proyecto y este repositorio de Hugging Face. En consecuencia, no es posible evaluar capacidades, rendimiento ni requisitos de hardware de un modelo que no está disponible.
 
 ## Especificaciones tecnicas
 
@@ -50,5 +50,5 @@ No disponible. No existen datos del modelo que permitan compararlo con otras alt
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/cruxan/lintabsort-aidan
+- Repositorio Hugging Face: https://huggingface.co/cruxan/lintabsort-aidan
 - Proyecto del autor en GitHub (LinTabSort): https://github.com/cruxan/LinTabSort

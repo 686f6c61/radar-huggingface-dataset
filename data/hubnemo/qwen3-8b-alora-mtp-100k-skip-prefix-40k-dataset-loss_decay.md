@@ -6,7 +6,7 @@ Este repositorio contiene un ajuste fino del modelo Qwen3-8B publicado por el us
 
 El problema que resuelve es el habitual de los ajustes finos especializados: adaptar un modelo generalista de 8B a un dominio o estilo concreto sin reentrenar todos los parametros. Es relevante ahora porque Qwen3-8B es una de las bases densas de 8B mas utilizadas para experimentacion en una sola GPU, y porque las tecnicas ALoRA y multi-token prediction estan en el centro del debate sobre como rentabilizar el entrenamiento post-hoc.
 
-Ahora bien, la model card es la plantilla autogenerada de HuggingFace sin rellenar: no declara autor real, licencia, idiomas, datos de entrenamiento, hiperparametros ni evaluacion. El repositorio no tiene descargas ni likes y no se ha publicado documentacion tecnica adicional, por lo que buena parte de los apartados siguientes se marcan como no disponibles y las referencias a la arquitectura son inferencias a partir del nombre del repositorio y del modelo base presumible.
+Ahora bien, la model card es la plantilla autogenerada de Hugging Face sin rellenar: no declara autor real, licencia, idiomas, datos de entrenamiento, hiperparametros ni evaluacion. El repositorio no tiene descargas ni likes y no se ha publicado documentacion tecnica adicional, por lo que buena parte de los apartados siguientes se marcan como no disponibles y las referencias a la arquitectura son inferencias a partir del nombre del repositorio y del modelo base presumible.
 
 ## Especificaciones tecnicas
 
@@ -93,7 +93,7 @@ No se dispone de cifras de MMLU, HumanEval, GSM8K u otros benchmarks para este c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hubnemo/Qwen3-8B-ALoRA-MTP-100k-skip-prefix-40k-dataset-loss_decay
+- Modelo en Hugging Face: https://huggingface.co/hubnemo/Qwen3-8B-ALoRA-MTP-100k-skip-prefix-40k-dataset-loss_decay
 - Paper citado en las etiquetas del repositorio (Lacoste et al., 2019, calculadora de impacto de ML): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de ML referenciada en la model card: https://mlco2.github.io/impact
 - Presunto modelo base, sin confirmar por el autor: https://huggingface.co/Qwen/Qwen3-8B

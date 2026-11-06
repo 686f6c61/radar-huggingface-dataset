@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Base | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `SushmaMaddali/data266-pokemon-sd15-lora-r32` | Stable Diffusion 1.5 | no disponible (LoRA r32) | no aplica; CLIP de 77 tokens | sin benchmarks publicados | other; solo académico y no comercial | HuggingFace; 0 descargas y 0 likes en la información disponible |
-| `zhangyi617/sd15_pokemon_lora` | Stable Diffusion 1.5 (`runwayml`) | no disponible | no aplica; CLIP de 77 tokens | sin benchmarks en la información disponible | no disponible | HuggingFace |
-| Stable Diffusion 1.5 base | Stable Diffusion 1.5 | aproximadamente 1,07 mil millones | no aplica; CLIP de 77 tokens | benchmarks públicos de SD 1.5 no incluidos en esta ficha | CreativeML Open RAIL-M | HuggingFace |
+| `SushmaMaddali/data266-pokemon-sd15-lora-r32` | Stable Diffusion 1.5 | no disponible (LoRA r32) | no aplica; CLIP de 77 tokens | sin benchmarks publicados | other; solo académico y no comercial | Hugging Face; 0 descargas y 0 likes en la información disponible |
+| `zhangyi617/sd15_pokemon_lora` | Stable Diffusion 1.5 (`runwayml`) | no disponible | no aplica; CLIP de 77 tokens | sin benchmarks en la información disponible | no disponible | Hugging Face |
+| Stable Diffusion 1.5 base | Stable Diffusion 1.5 | aproximadamente 1,07 mil millones | no aplica; CLIP de 77 tokens | benchmarks públicos de SD 1.5 no incluidos en esta ficha | CreativeML Open RAIL-M | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -86,7 +86,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SushmaMaddali/data266-pokemon-sd15-lora-r32
+- Modelo en Hugging Face: https://huggingface.co/SushmaMaddali/data266-pokemon-sd15-lora-r32
 - Modelo base Stable Diffusion 1.5: https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5
 - Dataset `reach-vb/pokemon-blip-captions`: https://huggingface.co/datasets/reach-vb/pokemon-blip-captions
 - Adaptador similar de otro autor: https://huggingface.co/zhangyi617/sd15_pokemon_lora

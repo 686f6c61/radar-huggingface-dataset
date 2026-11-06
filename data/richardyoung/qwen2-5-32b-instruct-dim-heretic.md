@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| richardyoung/Qwen2.5-32B-Instruct-DiM-heretic | 32,76 B (denso) | 131.072 (32.768 por defecto) | Apache 2.0 | Abliterated / decensored | HuggingFace, safetensors |
-| Qwen/Qwen2.5-32B-Instruct | 32,5 B (denso) | 131.072 | Apache 2.0 | Instruct alineado | HuggingFace, ampliamente adoptado |
-| Variantes abliterated de Llama 3.1 70B | 70 B (denso) | 128.000 | Llama 3.1 Community License | Abliterated | HuggingFace, con restricciones de licencia |
-| Mistral-32B o Mistral-Small abliterated | ~24-32 B | 32.000-128.000 | Apache 2.0 en algunos casos | Abliterated | HuggingFace |
+| richardyoung/Qwen2.5-32B-Instruct-DiM-heretic | 32,76 B (denso) | 131.072 (32.768 por defecto) | Apache 2.0 | Abliterated / decensored | Hugging Face, safetensors |
+| Qwen/Qwen2.5-32B-Instruct | 32,5 B (denso) | 131.072 | Apache 2.0 | Instruct alineado | Hugging Face, ampliamente adoptado |
+| Variantes abliterated de Llama 3.1 70B | 70 B (denso) | 128.000 | Llama 3.1 Community License | Abliterated | Hugging Face, con restricciones de licencia |
+| Mistral-32B o Mistral-Small abliterated | ~24-32 B | 32.000-128.000 | Apache 2.0 en algunos casos | Abliterated | Hugging Face |
 
 La comparación directa más justa es con el Qwen2.5-32B-Instruct original: misma arquitectura, mismos pesos base, misma licencia, pero con la modificación de abliteration. Frente a variantes abliterated de Llama, la ventaja es la licencia Apache 2.0 sin restricciones de uso comercial; la desventaja es que el ecosistema de herramientas y cuantizaciones publicadas para esta variante concreta es mínimo (0 descargas, 0 likes en el momento de la consulta). No se dispone de benchmarks comparativos de rendimiento general en la información proporcionada.
 
@@ -94,7 +94,7 @@ La comparación directa más justa es con el Qwen2.5-32B-Instruct original: mism
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/richardyoung/Qwen2.5-32B-Instruct-DiM-heretic
+- Modelo en Hugging Face: https://huggingface.co/richardyoung/Qwen2.5-32B-Instruct-DiM-heretic
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-32B-Instruct
 - Licencia del base: https://huggingface.co/Qwen/Qwen2.5-32B-Instruct/blob/main/LICENSE
 - Heretic (herramienta de abliteration): https://heretic-project.org

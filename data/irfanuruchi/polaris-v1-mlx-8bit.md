@@ -75,8 +75,8 @@ No hay datos de benchmarks comparativos disponibles en la información proporcio
 
 ## Enlaces
 
-- Repositorio HuggingFace de la conversión: https://huggingface.co/Irfanuruchi/Polaris-V1-MLX-8bit
+- Repositorio Hugging Face de la conversión: https://huggingface.co/Irfanuruchi/Polaris-V1-MLX-8bit
 - Modelo base original: https://huggingface.co/nitrai-research/Polaris-V1
-- Proyecto POLARIS (organización en HuggingFace): https://huggingface.co/POLARIS-Project
+- Proyecto POLARIS (organización en Hugging Face): https://huggingface.co/POLARIS-Project
 - Índice de modelos MLX del autor: https://github.com/IrfanUruchi/mlx-models-
 - Conversión GGUF de Polaris-V1 (por mradermacher): https://huggingface.co/mradermacher/Polaris-V1-i1-GGUF

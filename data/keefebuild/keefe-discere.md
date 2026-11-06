@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 - VRAM estimada para inferencia en BF16: aproximadamente 15-16 GB para los pesos (7,6B parametros en BF16) mas overhead de activaciones y cache KV. Cabe en una GPU de 24 GB (RTX 3090/4090, A10G).
 - VRAM con cuantizacion GGUF Q4_K_M: aproximadamente 5-6 GB para los pesos, lo que permite ejecucion en GPUs de 8 GB (RTX 3070/4060) e incluso en CPU con suficiente RAM (16 GB+).
 - GPUs recomendadas: RTX 4090 o A100 para BF16 con margen; RTX 3060/4060 para GGUF.
-- Opciones de despliegue: Transformers (HuggingFace), vLLM, llama.cpp, Ollama, SGLang, LM Studio, FriendliAI (endpoint compatible).
+- Opciones de despliegue: Transformers (Hugging Face), vLLM, llama.cpp, Ollama, SGLang, LM Studio, FriendliAI (endpoint compatible).
 - Latencia y throughput: no disponibles. Como referencia orientativa, un modelo de 7B en BF16 en una RTX 4090 suele generar entre 40 y 80 tokens/s con vLLM, pero no hay datos confirmados para este modelo concreto.
 
 ## Comparativa con modelos similares

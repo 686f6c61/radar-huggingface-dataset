@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`SacredSAMF/mediakit-whisper-vulkan` no es un modelo de IA, sino un paquete de librerías nativas para Windows x64 que implementa el runtime de Vulkan de Whisper.net 1.9.1, es decir, whisper.cpp compilado con su backend Vulkan. El autor, SacredSAMF, lo publica como repositorio de HuggingFace para que la aplicación MediaKit lo descargue bajo demanda cuando el usuario activa la opción "Download graphics card support" en los ajustes de transcripción.
+`SacredSAMF/mediakit-whisper-vulkan` no es un modelo de IA, sino un paquete de librerías nativas para Windows x64 que implementa el runtime de Vulkan de Whisper.net 1.9.1, es decir, whisper.cpp compilado con su backend Vulkan. El autor, SacredSAMF, lo publica como repositorio de Hugging Face para que la aplicación MediaKit lo descargue bajo demanda cuando el usuario activa la opción "Download graphics card support" en los ajustes de transcripción.
 
 El contenido son los binarios de `build/win-x64/` del paquete NuGet `Whisper.net.Runtime.Vulkan` 1.9.1, reempaquetados sin las demás plataformas para reducir el tamaño de descarga a la mitad. MediaKit verifica el SHA-256 del zip (`25fbea77...c1135a`) antes de usarlo. No contiene pesos de modelo ni código de inferencia propio: únicamente las DLL y dependencias necesarias para ejecutar whisper.cpp sobre una GPU compatible con Vulkan desde una aplicación .NET construida con Whisper.net 1.9.1.
 
@@ -82,6 +82,6 @@ La comparación relevante es con el paquete NuGet del que deriva: este repositor
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SacredSAMF/mediakit-whisper-vulkan
+- Repositorio en Hugging Face: https://huggingface.co/SacredSAMF/mediakit-whisper-vulkan
 - Paquete NuGet de origen: https://www.nuget.org/packages/Whisper.net.Runtime.Vulkan/1.9.1
 - MediaKit: https://divoria.fun/mediakit.html

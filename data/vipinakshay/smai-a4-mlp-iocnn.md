@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| smai-a4-mlp-iocnn | 789.258 | 3072 valores (32x32x3) | Clasificacion CIFAR-10 | MIT | HuggingFace |
+| smai-a4-mlp-iocnn | 789.258 | 3072 valores (32x32x3) | Clasificacion CIFAR-10 | MIT | Hugging Face |
 | MLP 3072-256-10 estandar | ~789.000 | 3072 valores | Clasificacion CIFAR-10 | no disponible | Implementacion propia |
 | CNN pequena tipo LeNet-5 | ~60.000 | 32x32x3 | Clasificacion CIFAR-10 | no disponible | Implementacion propia |
 | ResNet-18 adaptada a CIFAR-10 | ~11,2 M | 32x32x3 | Clasificacion CIFAR-10 | MIT (torchvision) | torchvision |
@@ -83,5 +83,5 @@ La comparativa se limita a arquitecturas de clasificacion de imagenes de baja re
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/VipinAkshay/smai-a4-mlp-iocnn
+- Repositorio en Hugging Face: https://huggingface.co/VipinAkshay/smai-a4-mlp-iocnn
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion proporcionada.

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-alibayram/embeddingmagibu2-retrieval es un modelo de embeddings publicado por el usuario Ali Bayram (alibayram) en HuggingFace. Por el identificador y por el modelo hermano alibayram/embeddingmagibu2, se trata de una variante orientada a recuperacion (retrieval) dentro de la familia Magibu, construida presumiblemente a partir de embedding_gemma2. Su funcion esperable es la de un encoder de frases que transforma texto en vectores densos normalizados para busqueda semantica, similitud de frases y recuperacion aumentada por generacion (RAG).
+alibayram/embeddingmagibu2-retrieval es un modelo de embeddings publicado por el usuario Ali Bayram (alibayram) en Hugging Face. Por el identificador y por el modelo hermano alibayram/embeddingmagibu2, se trata de una variante orientada a recuperacion (retrieval) dentro de la familia Magibu, construida presumiblemente a partir de embedding_gemma2. Su funcion esperable es la de un encoder de frases que transforma texto en vectores densos normalizados para busqueda semantica, similitud de frases y recuperacion aumentada por generacion (RAG).
 
 La relevancia de este tipo de modelos radica en que la calidad del retrieval condiciona directamente el rendimiento de cualquier pipeline RAG: un encoder multilingue con buen comportamiento en similitud semantica mejora la precision de las respuestas del generador que consume los fragmentos recuperados. El modelo base declarado por el autor apunta a soporte de turco y de escenarios multilingues, lo que lo situaria en un nicho poco cubierto por los encoders anglocentricos habituales.
 
-La informacion publica disponible es muy limitada: la ficha del repositorio de la variante retrieval no incluye model card, licencia, idiomas, pipeline ni especificaciones de arquitectura o de entrenamiento. Ademas, el acceso esta restringido (gated) y requiere aceptar condiciones en HuggingFace. Cualquier dato de arquitectura, contexto o rendimiento que no figure en esta ficha debe considerarse no verificado y no disponible.
+La informacion publica disponible es muy limitada: la ficha del repositorio de la variante retrieval no incluye model card, licencia, idiomas, pipeline ni especificaciones de arquitectura o de entrenamiento. Ademas, el acceso esta restringido (gated) y requiere aceptar condiciones en Hugging Face. Cualquier dato de arquitectura, contexto o rendimiento que no figure en esta ficha debe considerarse no verificado y no disponible.
 
 ## Especificaciones tecnicas
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La fi
 - VRAM estimada para inferencia: no disponible; no se conocen el numero de parametros ni la dimensionalidad del modelo.
 - GPU recomendadas: no disponible por la misma razon.
 - Viabilidad en GPU de consumo: no disponible; depende del tamano real del modelo, que no se ha publicado.
-- Opciones de despliegue: no confirmadas para este repositorio. Al declararse sentence-transformers en el modelo base, las vias plausibles serian sentence-transformers, HuggingFace Text Embeddings Inference (TEI), FastAPI con transformers y, si existieran pesos GGUF, llama.cpp u Ollama. No hay confirmacion de que se publiquen pesos GGUF.
+- Opciones de despliegue: no confirmadas para este repositorio. Al declararse sentence-transformers en el modelo base, las vias plausibles serian sentence-transformers, Hugging Face Text Embeddings Inference (TEI), FastAPI con transformers y, si existieran pesos GGUF, llama.cpp u Ollama. No hay confirmacion de que se publiquen pesos GGUF.
 - Latencia y throughput estimados: no disponibles.
 
-Nota practica: al estar el repositorio en modo gated, cualquier despliegue en produccion requiere primero obtener acceso con una cuenta de HuggingFace y gestionar el token correspondiente en el pipeline de descarga.
+Nota practica: al estar el repositorio en modo gated, cualquier despliegue en produccion requiere primero obtener acceso con una cuenta de Hugging Face y gestionar el token correspondiente en el pipeline de descarga.
 
 ## Comparativa con modelos similares
 
@@ -72,10 +72,10 @@ No se dispone de datos de rendimiento del modelo evaluado, por lo que la compara
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| alibayram/embeddingmagibu2-retrieval | no disponible | no disponible | no disponible | HuggingFace, acceso restringido | no disponible |
-| intfloat/multilingual-e5-large | 560 M aprox. | 512 tokens | MIT | HuggingFace, abierto | no disponible en esta ficha |
-| BAAI/bge-m3 | 568 M aprox. | 8192 tokens | MIT | HuggingFace, abierto | no disponible en esta ficha |
-| jinaai/jina-embeddings-v3 | 570 M aprox. | 8192 tokens | CC BY-NC 4.0 (uso comercial restringido) | HuggingFace, abierto | no disponible en esta ficha |
+| alibayram/embeddingmagibu2-retrieval | no disponible | no disponible | no disponible | Hugging Face, acceso restringido | no disponible |
+| intfloat/multilingual-e5-large | 560 M aprox. | 512 tokens | MIT | Hugging Face, abierto | no disponible en esta ficha |
+| BAAI/bge-m3 | 568 M aprox. | 8192 tokens | MIT | Hugging Face, abierto | no disponible en esta ficha |
+| jinaai/jina-embeddings-v3 | 570 M aprox. | 8192 tokens | CC BY-NC 4.0 (uso comercial restringido) | Hugging Face, abierto | no disponible en esta ficha |
 
 Las cifras de los modelos alternativos corresponden a informacion publica general de sus repositorios y no se han verificado contra una evaluacion comun en el contexto de esta ficha.
 

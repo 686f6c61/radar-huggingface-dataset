@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`funnygeeker/Qwen3.8-27B-UD-Q6_K-Ninfer-V3` es una publicacion de pesos en formato cuantizado alojada en HuggingFace por el usuario `funnygeeker`. El nombre del repositorio sugiere una variante del modelo Qwen3.8 de 27B parametros, cuantizada a Q6_K mediante el pipeline "UD" (presumiblemente Unsloth Dynamic) y orientada a inferencia con "Ninfer" (probablemente un runtime o backend de inferencia especifico). Sin embargo, la model card publicada no contiene mas que la declaracion de licencia Apache 2.0, sin descripcion tecnica, sin datos de entrenamiento ni instrucciones de uso.
+`funnygeeker/Qwen3.8-27B-UD-Q6_K-Ninfer-V3` es una publicacion de pesos en formato cuantizado alojada en Hugging Face por el usuario `funnygeeker`. El nombre del repositorio sugiere una variante del modelo Qwen3.8 de 27B parametros, cuantizada a Q6_K mediante el pipeline "UD" (presumiblemente Unsloth Dynamic) y orientada a inferencia con "Ninfer" (probablemente un runtime o backend de inferencia especifico). Sin embargo, la model card publicada no contiene mas que la declaracion de licencia Apache 2.0, sin descripcion tecnica, sin datos de entrenamiento ni instrucciones de uso.
 
 La relevancia de esta ficha es limitada: se trata de un repositorio sin descargas, sin likes, sin pipeline declarado y sin documentacion tecnica. No es posible verificar la procedencia de los pesos originales, el proceso de cuantizacion aplicado ni el rendimiento real del modelo. Cualquier evaluacion tecnica debe tomarse con cautela y, en la practica, se recomienda acudir a la publicacion oficial del modelo base Qwen3.8-27B si esta existe.
 
@@ -43,7 +43,7 @@ Respecto al proceso de cuantizacion, el sufijo `UD-Q6_K` sugiere una cuantizacio
 - Pruebas de pipelines de inferencia alternativos: el sufijo "Ninfer" sugiere un backend distinto de llama.cpp o vLLM, por lo que el repositorio podria usarse para validar dicho runtime.
 - Experimentacion academica con modelos cuantizados: util para estudiar la degradacion de calidad en tareas de razonamiento al reducir la precision de pesos.
 - Prototipado interno: si se confirma que los pesos provienen del modelo oficial, podria emplearse en prototipos de asistentes conversacionales o generacion de codigo.
-- Verificacion de integridad de publicaciones en HuggingFace: el repositorio es un ejemplo de publicacion sin documentacion tecnica, util para ilustrar buenas practicas de model cards.
+- Verificacion de integridad de publicaciones en Hugging Face: el repositorio es un ejemplo de publicacion sin documentacion tecnica, util para ilustrar buenas practicas de model cards.
 
 ## Benchmarks y rendimiento
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| funnygeeker/Qwen3.8-27B-UD-Q6_K-Ninfer-V3 | 27B (inferido) | no disponible | Apache 2.0 | HuggingFace, 0 descargas | Sin model card tecnica |
+| funnygeeker/Qwen3.8-27B-UD-Q6_K-Ninfer-V3 | 27B (inferido) | no disponible | Apache 2.0 | Hugging Face, 0 descargas | Sin model card tecnica |
 | Qwen3.8-27B (oficial, si existe) | 27B | no disponible | no disponible | no disponible | Referencia base no verificada |
-| Otras cuantizaciones Q6_K de modelos 27B | ~27B | segun base | segun base | HuggingFace | Depende del publicador |
+| Otras cuantizaciones Q6_K de modelos 27B | ~27B | segun base | segun base | Hugging Face | Depende del publicador |
 
 No se dispone de informacion suficiente para establecer una comparativa rigurosa con alternativas concretas.
 
@@ -80,7 +80,7 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/funnygeeker/Qwen3.8-27B-UD-Q6_K-Ninfer-V3
+- Repositorio Hugging Face: https://huggingface.co/funnygeeker/Qwen3.8-27B-UD-Q6_K-Ninfer-V3
 - Modelo base Qwen3.8-27B: no disponible en la informacion proporcionada
 - Paper o blog del modelo base: no disponible
 - Repositorio de codigo o demo: no disponible

@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "Muslim-Boy/ew-tutor-v2-qwen2.5-3b-GGUF",
+  "slug": "muslim-boy-ew-tutor-v2-qwen2-5-3b-gguf",
+  "author": "Muslim-Boy",
+  "url": "https://huggingface.co/Muslim-Boy/ew-tutor-v2-qwen2.5-3b-GGUF",
+  "created_at": "2026-11-06T10:39:34.000Z",
+  "updated_at": "2026-11-06T10:39:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen2",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 1929902688,
+  "storage_human": "1.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen2.5-3B-Instruct-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-3B-Instruct-GGUF",
+      "snippet": "Text Generation model with 3B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "unsloth/Qwen2.5-VL-3B-Instruct-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen2.5-VL-3B-Instruct-GGUF",
+      "snippet": "Image-Text-to-Text model with 3B parameters, built with Transformers. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

@@ -71,7 +71,7 @@ No se dispone de datos comparativos. El modelo base Granite 4.1 3B es el punto d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AlinaGonch/granite41-3b-squad-ratio-0.10-seed-44
+- Hugging Face: https://huggingface.co/AlinaGonch/granite41-3b-squad-ratio-0.10-seed-44
 - Modelo base Granite 4.1 3B (referencia): https://huggingface.co/ibm-granite/granite-4.1-3b-instruct (no confirmado, pero es el modelo base probable)
 - Repositorio de Granite 4.1: https://github.com/ibm-granite/granite-4.1-language-models
 - Documentacion de IBM Granite: https://www.ibm.com/granite/docs/models/granite4-1

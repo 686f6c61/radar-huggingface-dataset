@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nalu 2.0-Base | 338M | no disponible | Luau / Roblox | Apache 2.0 | HuggingFace (khtsly) |
+| Nalu 2.0-Base | 338M | no disponible | Luau / Roblox | Apache 2.0 | Hugging Face (khtsly) |
 | Kai 0.6B (LuauCoder 2.0) | 0,6B (aprox.) | no disponible | Luau / Roblox | no disponible en la informacion | Misma familia |
 | Moana 2B (LuauCoder 2.0) | 2B (aprox.) | no disponible | Luau / Roblox | no disponible en la informacion | Misma familia |
-| Modelos generalistas pequeños (p. ej. Qwen2.5-Coder-0.5B) | 0,5B | 32K (tipico) | Codigo general | Apache 2.0 | HuggingFace |
+| Modelos generalistas pequeños (p. ej. Qwen2.5-Coder-0.5B) | 0,5B | 32K (tipico) | Codigo general | Apache 2.0 | Hugging Face |
 
 La comparación con modelos generalistas pequeños es aproximada: no se dispone de benchmarks de Nalu 2.0-Base que permitan contrastar rendimiento en Luau frente a alternativas. La ventaja diferencial es la especialización en el ecosistema Roblox y el tamaño reducido para on-device.
 
@@ -87,5 +87,5 @@ La comparación con modelos generalistas pequeños es aproximada: no se dispone 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/khtsly/Nalu-2.0-Base
+- Hugging Face: https://huggingface.co/khtsly/Nalu-2.0-Base
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio identificado como `mestreflavioandrade/name` es un modelo publicado en HuggingFace por el usuario `mestreflavioandrade`. En el momento de la consulta, la ficha del repositorio no incluye ninguna descripcion, arquitectura declarada, tamano de parametros, longitud de contexto ni informacion sobre el proceso de entrenamiento. La unica etiqueta asociada es `region:us`, que es una marca generica de procedencia geografica y no aporta informacion tecnica sobre el modelo.
+El repositorio identificado como `mestreflavioandrade/name` es un modelo publicado en Hugging Face por el usuario `mestreflavioandrade`. En el momento de la consulta, la ficha del repositorio no incluye ninguna descripcion, arquitectura declarada, tamano de parametros, longitud de contexto ni informacion sobre el proceso de entrenamiento. La unica etiqueta asociada es `region:us`, que es una marca generica de procedencia geografica y no aporta informacion tecnica sobre el modelo.
 
 El repositorio acumula 0 descargas y 1 "like", y fue creado y actualizado en la misma marca temporal (2026-09-27T23:31:20.000Z), lo que sugiere que se trata de un repositorio recien inicializado, probablemente de prueba o en fase de preparacion, sin artefactos de modelo publicados ni documentacion asociada. No se declara pipeline de inferencia, licencia ni idiomas soportados.
 
@@ -31,7 +31,7 @@ Dado que no hay informacion tecnica verificable, esta ficha se limita a document
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en el repositorio de HuggingFace. No se especifica si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura de espacio de estados (SSM) o un diseno hibrido. Tampoco se declara el numero de parametros, la profundidad de la red, el tamano de la capa oculta ni el mecanismo de atencion utilizado.
+No se ha publicado informacion sobre la arquitectura del modelo en el repositorio de Hugging Face. No se especifica si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura de espacio de estados (SSM) o un diseno hibrido. Tampoco se declara el numero de parametros, la profundidad de la red, el tamano de la capa oculta ni el mecanismo de atencion utilizado.
 
 Respecto a los datos de entrenamiento, no hay informacion sobre el volumen de tokens procesados, la composicion del corpus, el idioma o idiomas del dataset ni las tecnicas de alineamiento aplicadas (RLHF, DPO, instruccion supervisada u otras). La unica senal disponible es la etiqueta `region:us`, que no describe el entrenamiento. Tampoco se documenta ninguna innovacion tecnica como decodificacion especulativa, atencion lineal o modos de razonamiento extendido.
 
@@ -85,7 +85,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mestreflavioandrade/name
+- Repositorio en Hugging Face: https://huggingface.co/mestreflavioandrade/name
 - Paper: no disponible
 - Blog o anuncio: no disponible
 - Repositorio de codigo: no disponible

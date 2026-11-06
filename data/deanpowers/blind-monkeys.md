@@ -18,7 +18,7 @@ Dado que no existe ningun modelo entrenado en este repositorio, la ficha se limi
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | MIT (segun la model card; el campo de licencia en HuggingFace figura como no disponible) |
+| Licencia | MIT (segun la model card; el campo de licencia en Hugging Face figura como no disponible) |
 | Formato de pesos | no disponible (no hay pesos; el repositorio contiene codigo Python) |
 
 ## Arquitectura y entrenamiento
@@ -68,13 +68,13 @@ No disponible. El artefacto no es un modelo de IA, por lo que no existe una cate
 - No es un modelo de lenguaje ni un modelo de IA: no genera texto, no razona y no procesa lenguaje natural.
 - El autor declara explicitamente que la herramienta no coloca operaciones, no custodia fondos, no constituye asesoramiento financiero y no garantiza beneficios.
 - Los resultados dependen de APIs de terceros (Bybit, CoinGecko, FRED, alternative.me); una caida o cambio de cuota puede degradar la funcionalidad.
-- El campo de licencia en HuggingFace figura como no disponible, aunque la model card indica MIT; conviene verificar el archivo `LICENSE` del repositorio antes de un uso comercial.
+- El campo de licencia en Hugging Face figura como no disponible, aunque la model card indica MIT; conviene verificar el archivo `LICENSE` del repositorio antes de un uso comercial.
 - La clave de API de Bybit debe permanecer en la maquina del operador; el diseno asume un cron local, lo que limita el despliegue a entornos donde se pueda ejecutar dicho cron.
 - El repositorio no incluye pesos ni artefactos de modelo; quien espere un modelo entrenado encontrara unicamente codigo de aplicacion.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/deanpowers/blind-monkeys
+- Repositorio en Hugging Face: https://huggingface.co/deanpowers/blind-monkeys
 - Aplicacion en produccion: https://blindmonkeys.org
 - Historial del bot: https://blindmonkeys.org/dart-performance
 - Codigo fuente en SourceHut: https://git.sr.ht/~deanpowers/blind-monkeys

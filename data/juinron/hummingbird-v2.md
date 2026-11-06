@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Hummingbird-V2 es un modelo de lenguaje base en ingles de 9,6 millones de parametros, desarrollado por el usuario juinron y publicado en HuggingFace bajo licencia Apache-2.0. Se trata de un transformer decoder-only entrenado desde cero sobre 10.000 millones de tokens, disenado especificamente para completado de texto y puntuacion de continuaciones (scoring), no para dialogo ni instrucciones. Es la segunda entrega de la serie Hummingbird, tras Hummingbird-V1, y arranca desde una inicializacion nueva en lugar de continuar el entrenamiento del modelo anterior.
+Hummingbird-V2 es un modelo de lenguaje base en ingles de 9,6 millones de parametros, desarrollado por el usuario juinron y publicado en Hugging Face bajo licencia Apache-2.0. Se trata de un transformer decoder-only entrenado desde cero sobre 10.000 millones de tokens, disenado especificamente para completado de texto y puntuacion de continuaciones (scoring), no para dialogo ni instrucciones. Es la segunda entrega de la serie Hummingbird, tras Hummingbird-V1, y arranca desde una inicializacion nueva en lugar de continuar el entrenamiento del modelo anterior.
 
 Su relevancia es fundamentalmente de investigacion: con menos de 10 millones de parametros y una ventana de contexto de 2.048 tokens, el modelo es pequeno suficiente para entrenarse y evaluarse en recursos muy limitados, lo que lo convierte en una plataforma util para experimentar con recetas de preentrenamiento, mezclas de datos y optimizadores (en este caso Muon combinado con AdamW). El autor declara un consumo de 10.000 millones de tokens siguiendo una mezcla ponderada de corpus educativos y cientificos, con un tokenizador BPE a nivel de byte de 4.096 entradas consciente de digitos.
 
@@ -107,7 +107,7 @@ No se dispone de resultados de benchmarks comparativos directos entre Hummingbir
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/juinron/Hummingbird-V2
+- Modelo en Hugging Face: https://huggingface.co/juinron/Hummingbird-V2
 - Modelo predecesor, Hummingbird-V1: https://huggingface.co/juinron/Hummingbird-V1
 - Dataset FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Dataset FinePDFs-Edu: https://huggingface.co/datasets/HuggingFaceFW/finepdfs-edu

@@ -59,5 +59,5 @@ No disponible. Al no conocerse el modelo base ni las características del adapta
 
 ## Enlaces
 
-- [Repositorio HuggingFace del adaptador](https://huggingface.co/unconst/Affine-5czsc2fc98-r37-lora)
-- [Modelo base en HuggingFace (referenciado en la model card)](https://huggingface.co/golden-crown/Affine-5EpvnXGu8jUAVc67oPGgJ3brR4JZqjBUSaTKhZuBoNAAzSJF)
+- [Repositorio Hugging Face del adaptador](https://huggingface.co/unconst/Affine-5czsc2fc98-r37-lora)
+- [Modelo base en Hugging Face (referenciado en la model card)](https://huggingface.co/golden-crown/Affine-5EpvnXGu8jUAVc67oPGgJ3brR4JZqjBUSaTKhZuBoNAAzSJF)

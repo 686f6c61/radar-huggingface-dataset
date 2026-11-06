@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OpenJev rank512 — handoff pipeline demo only es un artefacto de pesos publicado en HuggingFace por el usuario akhilaaa3, construido sobre el modelo base declarado google/gemma-4-12B-it. No se trata de un modelo nuevo ni de una release de produccion: el propio autor lo describe como una demo de handoff de pipeline, cuyo unico objetivo es validar el proceso de entrenamiento, mezcla de adaptadores y transferencia de artefactos. El repositorio ocupa 47,7 GB y contiene pesos en formato safetensors con los adaptadores ya fusionados (merged), junto con la cabeza de salida entrenada de 256 salidas y el tokenizer.
+OpenJev rank512 — handoff pipeline demo only es un artefacto de pesos publicado en Hugging Face por el usuario akhilaaa3, construido sobre el modelo base declarado google/gemma-4-12B-it. No se trata de un modelo nuevo ni de una release de produccion: el propio autor lo describe como una demo de handoff de pipeline, cuyo unico objetivo es validar el proceso de entrenamiento, mezcla de adaptadores y transferencia de artefactos. El repositorio ocupa 47,7 GB y contiene pesos en formato safetensors con los adaptadores ya fusionados (merged), junto con la cabeza de salida entrenada de 256 salidas y el tokenizer.
 
 El ajuste consiste en tres actualizaciones del optimizador partiendo de una version v1 ya entrenada, con adaptadores LoRA de rank 512 y alpha 512 recien inicializados, un LR pico de 1e-5, cuatro GPU H200 y ocho ejemplos por GPU (batch efectivo de 32). Segun la model card, se usaron los lotes mas largos del pool existente de 24 000 ejemplos unicamente para probar el entrenamiento y la entrega de artefactos, y no el conjunto mixto completo solicitado. El autor advierte explicitamente que esta demo no debe inicializar el entrenamiento completo posterior.
 
@@ -96,7 +96,7 @@ No disponible. El modelo base declarado, google/gemma-4-12B-it, no aparece docum
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/akhilaaa3/openjev-r512-handoff-demo
+- Hugging Face: https://huggingface.co/akhilaaa3/openjev-r512-handoff-demo
 - Modelo base declarado: https://huggingface.co/google/gemma-4-12B-it
 - Terminos de uso de Gemma: no disponibles en la informacion proporcionada.
 - Paper, blog, repositorio de codigo o demo: no disponibles.

@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-nil-v2-teacher | Politica RL (PPO) para simulador | No disponible | No aplica | Apache 2.0 | HuggingFace |
+| connectailab-rl-nil-v2-teacher | Politica RL (PPO) para simulador | No disponible | No aplica | Apache 2.0 | Hugging Face |
 | Presidente basado en reglas (baseline del simulador) | Heuristica determinista | No aplica | No aplica | No disponible | Incluido en CONNECT TYCOON |
 | Politicas RL genericas (PPO/SAC en Gymnasium) | Agente RL | Depende del entorno | No aplica | Variable | Frameworks abiertos |
 
@@ -91,7 +91,7 @@ No se dispone de informacion sobre otros modelos directamente comparables en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pwg0218/connectailab-rl-nil-v2-teacher
+- Modelo en Hugging Face: https://huggingface.co/pwg0218/connectailab-rl-nil-v2-teacher
 - Repositorio CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de entrenamiento en Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb
 - Canal de YouTube CONNECT AI LAB: https://www.youtube.com/@CONNECT-AI-LAB

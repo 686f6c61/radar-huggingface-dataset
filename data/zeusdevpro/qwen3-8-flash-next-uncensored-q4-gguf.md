@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`zeusdevpro/Qwen3.8-Flash-Next-Uncensored-Q4.gguf` es un repositorio publicado en HuggingFace por el usuario `zeusdevpro` que, a tenor del nombre del archivo, contiene pesos en formato GGUF cuantizados a 4 bits de un supuesto modelo denominado "Qwen3.8-Flash-Next-Uncensored". No obstante, la model card del repositorio se limita a una cabecera YAML con la licencia `apache-2.0` y no incluye ni una sola línea de documentación: no hay descripción del modelo base, del proceso de entrenamiento, del ajuste realizado ni de las capacidades esperadas.
+`zeusdevpro/Qwen3.8-Flash-Next-Uncensored-Q4.gguf` es un repositorio publicado en Hugging Face por el usuario `zeusdevpro` que, a tenor del nombre del archivo, contiene pesos en formato GGUF cuantizados a 4 bits de un supuesto modelo denominado "Qwen3.8-Flash-Next-Uncensored". No obstante, la model card del repositorio se limita a una cabecera YAML con la licencia `apache-2.0` y no incluye ni una sola línea de documentación: no hay descripción del modelo base, del proceso de entrenamiento, del ajuste realizado ni de las capacidades esperadas.
 
 El repositorio no ofrece ningún dato verificable sobre arquitectura, número de parámetros, longitud de contexto, idiomas soportados ni composición del dataset. Los metadatos públicos indican 0 descargas y 0 "likes", licencia Apache 2.0 y fecha de creación y última actualización idénticas (21 de septiembre de 2026), lo que apunta a una subida única sin mantenimiento posterior.
 
@@ -69,7 +69,7 @@ No disponible. La comparativa requiere conocer el modelo base y su tamano, datos
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Documentacion |
 |---|---|---|---|---|---|
-| `zeusdevpro/Qwen3.8-Flash-Next-Uncensored-Q4.gguf` | no disponible | no disponible | apache-2.0 | HuggingFace | practicamente inexistente |
+| `zeusdevpro/Qwen3.8-Flash-Next-Uncensored-Q4.gguf` | no disponible | no disponible | apache-2.0 | Hugging Face | practicamente inexistente |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -87,7 +87,7 @@ No disponible. La comparativa requiere conocer el modelo base y su tamano, datos
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/zeusdevpro/Qwen3.8-Flash-Next-Uncensored-Q4.gguf
+- Repositorio en Hugging Face: https://huggingface.co/zeusdevpro/Qwen3.8-Flash-Next-Uncensored-Q4.gguf
 - Perfil del autor: https://huggingface.co/zeusdevpro
 - Paper, blog tecnico, repositorio de codigo o demo: no disponible
 - No se han encontrado enlaces adicionales relevantes en la busqueda web.

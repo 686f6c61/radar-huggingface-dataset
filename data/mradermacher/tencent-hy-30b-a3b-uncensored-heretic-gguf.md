@@ -77,7 +77,7 @@ La comparativa es orientativa: Hy-MT2 se centra en traducción, mientras que Mix
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Tencent-Hy-30B-A3B-uncensored-heretic-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Tencent-Hy-30B-A3B-uncensored-heretic-GGUF
 - Modelo original (sin cuantizar): https://huggingface.co/0xSojalSec/Tencent-Hy-30B-A3B-uncensored-heretic
 - GitHub de Hy-MT2: https://github.com/Tencent-Hunyuan/Hy-MT2
 - Paper de Hy-MT2 (arXiv): https://arxiv.org/html/2605.22064v1

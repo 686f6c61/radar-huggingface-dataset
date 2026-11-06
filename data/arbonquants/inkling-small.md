@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Inkling-Small es un modelo multimodal de pesos abiertos desarrollado por Thinking Machines (publicado en HuggingFace bajo la organizacion `arbonquants`), disenado para aceptar entradas de texto, imagen y audio y generar texto. Se trata de un transformer autorregresivo decoder-only de 42 capas con una columna vertebral de mezcla de expertos (MoE) dispersa: cada token se enruta a 6 de 256 expertos mas 2 expertos compartidos activos en todos los tokens. Con 276B parametros totales y 12B activos, la model card lo posiciona como un modelo de proposito general para aplicaciones agenticas, asistentes de codigo, chatbots y sistemas RAG.
+Inkling-Small es un modelo multimodal de pesos abiertos desarrollado por Thinking Machines (publicado en Hugging Face bajo la organizacion `arbonquants`), disenado para aceptar entradas de texto, imagen y audio y generar texto. Se trata de un transformer autorregresivo decoder-only de 42 capas con una columna vertebral de mezcla de expertos (MoE) dispersa: cada token se enruta a 6 de 256 expertos mas 2 expertos compartidos activos en todos los tokens. Con 276B parametros totales y 12B activos, la model card lo posiciona como un modelo de proposito general para aplicaciones agenticas, asistentes de codigo, chatbots y sistemas RAG.
 
 La relevancia de Inkling-Small radica en su combinacion de multimodalidad nativa (texto, imagen y audio proyectados a un espacio oculto compartido y procesados conjuntamente por el decoder), su naturaleza MoE de gran escala pero activacion moderada, y una licencia Apache 2.0 que permite uso comercial y fine-tuning. El modelo se distribuye en BF16 y NVFP4, y cuenta con recetas de despliegue para SGLang, vLLM, TokenSpeed, Unsloth y transformers.
 
@@ -85,11 +85,11 @@ Los datos de rendimiento comparativo no estan disponibles en la informacion prop
 - Limitaciones de modalidad: la salida es exclusivamente texto; el audio debe ser WAV a 16 kHz y se recomienda menos de 2 minutos; las imagenes rinden mejor entre 40 px y 4096 px por dimension.
 - Restricciones de licencia: Apache 2.0 permite uso comercial, pero la model card enlaza una politica de uso aceptable (Acceptable Use) que conviene revisar antes de desplegar en produccion.
 - Caveats para produccion: el tamano del repo (531,9 GB) y los 276B parametros totales implican requisitos de infraestructura elevados; la falta de datos publicos de benchmarks y de contexto limita la evaluacion previa.
-- Trazabilidad: el modelo aparece publicado bajo la organizacion `arbonquants` en HuggingFace, mientras que la model card referencia enlaces de `thinkingmachines`; conviene verificar la procedencia y la integridad de los pesos antes de usarlos.
+- Trazabilidad: el modelo aparece publicado bajo la organizacion `arbonquants` en Hugging Face, mientras que la model card referencia enlaces de `thinkingmachines`; conviene verificar la procedencia y la integridad de los pesos antes de usarlos.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/arbonquants/Inkling-Small
+- Hugging Face: https://huggingface.co/arbonquants/Inkling-Small
 - BF16 (referencia de la model card): https://huggingface.co/thinkingmachines/Inkling-Small
 - NVFP4 (referencia de la model card): https://huggingface.co/thinkingmachines/Inkling-Small-NVFP4
 - Playground: https://tinker.thinkingmachines.ai/playground
@@ -99,4 +99,4 @@ Los datos de rendimiento comparativo no estan disponibles en la informacion prop
 - Receta vLLM: https://recipes.vllm.ai/thinkingmachines/Inkling-Small
 - Receta TokenSpeed: https://lightseek.org/tokenspeed/recipes/models#Inkling
 - Receta Unsloth: https://unsloth.ai/docs/models/inkling
-- Blog de HuggingFace: https://hf.co/blog/thinkingmachines-inkling
+- Blog de Hugging Face: https://hf.co/blog/thinkingmachines-inkling

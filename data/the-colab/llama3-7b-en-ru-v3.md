@@ -60,7 +60,7 @@ Estas métricas indican un rendimiento razonable en ambos idiomas, con una liger
 - VRAM estimada para inferencia: con pesos en BF16 (6.3B parámetros), se necesitan aproximadamente 12.6 GB de VRAM solo para los pesos. Con cuantización a 8 bits se reduce a unos 6.3 GB, y a 4 bits a unos 3.2 GB, aunque no se proporcionan cuantizaciones oficiales.
 - GPU recomendadas: para inferencia en BF16, una GPU con 16 GB o más (por ejemplo, RTX 4080, RTX 4090, A10G, A100 40GB) es suficiente. Con cuantización 4 bits, una RTX 3060 de 12 GB o similar podría ser viable.
 - Compatibilidad con GPU de consumo: sí, es posible ejecutarlo en GPUs de consumo con 12-16 GB de VRAM si se aplica cuantización, aunque no hay archivos GGUF oficiales en el repositorio.
-- Opciones de despliegue: al ser pesos en safetensors estándar, se puede usar con transformers (HuggingFace), vLLM, TGI o llama.cpp (si se convierten los pesos a GGUF manualmente). No hay integración documentada con Ollama.
+- Opciones de despliegue: al ser pesos en safetensors estándar, se puede usar con transformers (Hugging Face), vLLM, TGI o llama.cpp (si se convierten los pesos a GGUF manualmente). No hay integración documentada con Ollama.
 - Latencia y throughput: no se han publicado datos de rendimiento de inferencia. Como referencia, un modelo de 7B en BF16 en una A100 suele lograr un throughput de 20-50 tokens/segundo dependiendo del batch, pero esto no está confirmado para este modelo concreto.
 
 ## Comparativa con modelos similares
@@ -85,11 +85,11 @@ La ventaja de este modelo es su especialización en el par en-ru con tokenizer d
 - Checkpoint final incompleto: el step-133.600 quedó vacío por un fallo de escritura; los pesos publicados corresponden al step-133.500. Esto puede afectar ligeramente a la reproducibilidad.
 - Licencia llama3: permite uso comercial, pero con restricciones (por ejemplo, no usar para mejorar otros modelos de lenguaje grandes sin permiso). Revisar los términos completos de la licencia de Meta.
 - Sin soporte de cuantizaciones oficiales: el repositorio solo incluye pesos BF16, por lo que para despliegue eficiente es necesario convertir a GGUF u otros formatos manualmente.
-- Sin comunidad ni soporte: el modelo tiene 0 descargas y 0 likes en HuggingFace, lo que indica que no hay comunidad activa ni garantías de mantenimiento.
+- Sin comunidad ni soporte: el modelo tiene 0 descargas y 0 likes en Hugging Face, lo que indica que no hay comunidad activa ni garantías de mantenimiento.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/The-CoLab/llama3-7b-en-ru-v3
+- Modelo en Hugging Face: https://huggingface.co/The-CoLab/llama3-7b-en-ru-v3
 - Modelo relacionado v2: https://huggingface.co/The-CoLab/llama3-7b-en-ru-v2
 - Modelo relacionado con traducción: https://huggingface.co/The-CoLab/llama3-7b-en-translated-ru
 - Modelo relacionado con aya: https://huggingface.co/The-CoLab/llama3-7b-en-ru-aya

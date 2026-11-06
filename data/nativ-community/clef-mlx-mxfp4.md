@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la informacion disponible (no ha
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| clef-MLX-MXFP4 (este) | 27,48B | no disponible | MXFP4 4 bits, group size 32 | apache-2.0 | HuggingFace (mlx) |
-| Cloudflare/clef (modelo base) | no disponible (mismo origen) | no disponible | bf16 (torch) | apache-2.0 | HuggingFace |
+| clef-MLX-MXFP4 (este) | 27,48B | no disponible | MXFP4 4 bits, group size 32 | apache-2.0 | Hugging Face (mlx) |
+| Cloudflare/clef (modelo base) | no disponible (mismo origen) | no disponible | bf16 (torch) | apache-2.0 | Hugging Face |
 | Alternativas de misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre otros modelos de decision multimodales comparables en la informacion proporcionada, por lo que la comparativa se limita al modelo base del que deriva esta conversion.
@@ -90,7 +90,7 @@ No se dispone de informacion sobre otros modelos de decision multimodales compar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nativ-community/clef-MLX-MXFP4
+- Hugging Face: https://huggingface.co/nativ-community/clef-MLX-MXFP4
 - Modelo base: https://huggingface.co/Cloudflare/clef
 - mlx-vlm: https://github.com/Blaizzy/mlx-vlm
 - Rama con soporte de clef: https://github.com/Lazarus-931/mlx-vlm.git (rama `feat/clef`, commit `04f79e84`)

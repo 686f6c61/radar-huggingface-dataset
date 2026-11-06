@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`povl-rl-dapo-400` es un checkpoint de un modelo de visión-lenguaje (image-text-to-text) especializado en reconocimiento de tablas dentro de documentos, publicado por el usuario CheneyWong en HuggingFace. Corresponde a la primera ronda de aprendizaje por refuerzo con el algoritmo DAPO tras 400 pasos de entrenamiento, aplicada sobre el checkpoint `CheneyWong/povl-dpo-2ep`, que a su vez desciende del modelo base PaddleOCR-VL-1.6. El modelo tiene 905.601.648 parámetros (~906 M) según los pesos en safetensors y se distribuye con licencia Apache 2.0.
+`povl-rl-dapo-400` es un checkpoint de un modelo de visión-lenguaje (image-text-to-text) especializado en reconocimiento de tablas dentro de documentos, publicado por el usuario CheneyWong en Hugging Face. Corresponde a la primera ronda de aprendizaje por refuerzo con el algoritmo DAPO tras 400 pasos de entrenamiento, aplicada sobre el checkpoint `CheneyWong/povl-dpo-2ep`, que a su vez desciende del modelo base PaddleOCR-VL-1.6. El modelo tiene 905.601.648 parámetros (~906 M) según los pesos en safetensors y se distribuye con licencia Apache 2.0.
 
 La tarea que resuelve es muy acotada: recibe una única imagen de tabla junto con el prompt textual `Table Recognition:` y, en una sola pasada, emite marcado OTSL mediante los tokens especiales `<fcel>`, `<ecel>`, `<ucel>`, `<lcel>`, `<xcel>` y `<nl>`. No es un modelo conversacional generalista ni un agente, sino un componente de parsing de documentos orientado a la extracción de estructura tabular (table recognition, document parsing).
 
@@ -81,9 +81,9 @@ El autor advierte que en SPRINT-MUSTARD el ground truth no contiene texto de cel
 
 | Modelo | Parametros | Contexto | TEDS OmniDocBench v1.6 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| povl-rl-dapo-400 | 906 M | no disponible | 0.9162 (TEDS-S 0.9540) | Apache 2.0 | HuggingFace (`CheneyWong/povl-rl-dapo-400`) |
+| povl-rl-dapo-400 | 906 M | no disponible | 0.9162 (TEDS-S 0.9540) | Apache 2.0 | Hugging Face (`CheneyWong/povl-rl-dapo-400`) |
 | PaddleOCR-VL-1.6 (base del linaje) | no disponible | no disponible | 0.9492 (TEDS-S 0.9753) como "Base" | no disponible | no disponible en la información proporcionada |
-| povl-dpo-2ep (predecesor directo) | no disponible | no disponible | no disponible | no disponible | HuggingFace (`CheneyWong/povl-dpo-2ep`) |
+| povl-dpo-2ep (predecesor directo) | no disponible | no disponible | no disponible | no disponible | Hugging Face (`CheneyWong/povl-dpo-2ep`) |
 
 La información disponible no incluye cifras comparables de otros modelos de parsing de documentos (por ejemplo, alternativas de la familia PaddleOCR-VL, GOT-OCR2.0 o Nougat), por lo que no se puede establecer una comparativa cuantitativa con ellos. Los únicos puntos de referencia numéricos son el modelo base y el propio checkpoint, y en ambos casos el checkpoint RL queda por debajo del base.
 
@@ -101,7 +101,7 @@ La información disponible no incluye cifras comparables de otros modelos de par
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CheneyWong/povl-rl-dapo-400
+- Modelo en Hugging Face: https://huggingface.co/CheneyWong/povl-rl-dapo-400
 - Checkpoint predecesor (DPO): https://huggingface.co/CheneyWong/povl-dpo-2ep
 - Repositorio de DAPO: https://github.com/BytedTsinghua-SIA/DAPO
 - Paper de DAPO en arXiv: https://arxiv.org/abs/2503.14476

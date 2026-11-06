@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Igor282/gemma-4-e4b-pruned-ru-en-Q4_K_M",
+  "slug": "igor282-gemma-4-e4b-pruned-ru-en-q4_k_m",
+  "author": "Igor282",
+  "url": "https://huggingface.co/Igor282/gemma-4-e4b-pruned-ru-en-Q4_K_M",
+  "created_at": "2026-11-01T16:10:18.000Z",
+  "updated_at": "2026-11-01T20:51:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "gemma4",
+    "tokenizer-pruning",
+    "speculative-decoding",
+    "russian",
+    "quantization",
+    "any-to-any",
+    "text-generation",
+    "base_model:google/gemma-4-E4B-it",
+    "base_model:quantized:google/gemma-4-E4B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 240,
+  "trending_score": 0,
+  "parameters": 6563292714,
+  "parameters_human": "6.56B",
+  "storage_bytes": 4679263488,
+  "storage_human": "4.7 GB",
+  "base_model": "google/gemma-4-E4B-it, google/gemma-4-E4B-it-assistant",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Igor282/gemma-4-e4b-pruned-ru-en-Q4_K_M · Hugging Face",
+      "url": "https://huggingface.co/Igor282/gemma-4-e4b-pruned-ru-en-Q4_K_M",
+      "snippet": "Instructions to use Igor282/gemma-4-e4b-pruned-ru-en-Q4_K_M with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use Igor282/gemma-4-e4b-pruned-ru-en-Q4_K_M with llama.cpp: Install (macOS, Linux)"
+    },
+    {
+      "title": "Igor282/gemma-4-e4b-pruned-ru-Q4_K_M · Hugging Face",
+      "url": "https://huggingface.co/Igor282/gemma-4-e4b-pruned-ru-Q4_K_M",
+      "snippet": "Text Generation model with 6B parameters. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

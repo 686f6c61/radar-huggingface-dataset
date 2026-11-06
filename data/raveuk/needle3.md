@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Needle 3 es un modelo fundacional desarrollado por Cactus Compute y diseñado para ejecutarse íntegramente en el dispositivo (on-device) en móviles, wearables, robots, domótica, automoción y microcontroladores. El repositorio rAVEUK/needle3 es una subida a HuggingFace del modelo bajo licencia Apache 2.0; la model card remite a la página de release de Cactus Compute y el autor de la subida (rAVEUK) no coincide con el desarrollador citado en la documentación. El modelo completo se distribuye en un único archivo de entre 8 y 29 MB, y sus autores declaran intercambiar capacidad de chat general por superar en tool calling móvil a modelos diez veces mayores y por igualar a modelos dos o tres veces mayores en extracción de información.
+Needle 3 es un modelo fundacional desarrollado por Cactus Compute y diseñado para ejecutarse íntegramente en el dispositivo (on-device) en móviles, wearables, robots, domótica, automoción y microcontroladores. El repositorio rAVEUK/needle3 es una subida a Hugging Face del modelo bajo licencia Apache 2.0; la model card remite a la página de release de Cactus Compute y el autor de la subida (rAVEUK) no coincide con el desarrollador citado en la documentación. El modelo completo se distribuye en un único archivo de entre 8 y 29 MB, y sus autores declaran intercambiar capacidad de chat general por superar en tool calling móvil a modelos diez veces mayores y por igualar a modelos dos o tres veces mayores en extracción de información.
 
 La arquitectura es una Laddered Simple Attention Network: 121M de parámetros repartidos en 20 capas, atención GQA con taps de convolución causal, un MLP Monarch Hadamard en lugar de la FFN convencional y una memoria de n-gramas (engram) que concentra la mayor parte de los parámetros. Su rasgo definitorio es la escalera: cada profundidad entre 2 y 20 capas constituye un modelo desplegable de forma independiente. El modelo cubre tres tareas: tool calling, extracción estructurada a JSON y embeddings de texto.
 
@@ -83,7 +83,7 @@ No se han publicado resultados numéricos de benchmarks en la información dispo
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| Needle 3 (20 capas) | 121M | No disponible | Apache 2.0 | HuggingFace (.cact y safetensors), motores por plataforma | Tool calling móvil por encima de modelos 10× mayores y extracción al nivel de modelos 2-3× mayores, según los autores |
+| Needle 3 (20 capas) | 121M | No disponible | Apache 2.0 | Hugging Face (.cact y safetensors), motores por plataforma | Tool calling móvil por encima de modelos 10× mayores y extracción al nivel de modelos 2-3× mayores, según los autores |
 | Needle 3 (subred fina ajustada en DroidCall) | 29M (según la model card) | No disponible | Apache 2.0 | Exportable con `needle build --layers N` | Supera a DeepSeek V4 Flash, según los autores |
 | DeepSeek V4 Flash | No disponible | No disponible | No disponible | No disponible | Usado como baseline en la model card; sin cifras textuales |
 | Otras alternativas on-device de tool calling | No disponible | No disponible | No disponible | No disponible | No disponible |
@@ -105,7 +105,7 @@ No se dispone de datos suficientes para comparar de forma cuantitativa con alter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rAVEUK/needle3
+- Modelo en Hugging Face: https://huggingface.co/rAVEUK/needle3
 - Página de release, arquitectura y gráfico de frontera: https://cactuscompute.com/needle
 - Código fuente y paquete Python: https://github.com/cactus-compute/needle
 - Plataforma de Cactus (post-entrenamiento y cuantización): https://cactuscompute.com/dashboard

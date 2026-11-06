@@ -68,14 +68,14 @@ No disponible. No se han identificado modelos comparables en la informacion prop
 - El checkpoint proviene de un run detenido por `unknown`, lo que implica que puede no estar completamente convergido y podría presentar comportamiento errático.
 - Los inputs congelados necesarios no están incluidos en el repositorio; sin ellos, el modelo no es funcional.
 - El dataset de entrenamiento es limitado (165 episodios, 54 343 frames) y está orientado a una configuración muy concreta (Panda, Robotiq, WidowX, UR5e), por lo que la generalización a otros robots o entornos es incierta.
-- No se han publicado benchmarks ni evaluaciones independientes, y el modelo no tiene descargas ni likes en HuggingFace, lo que indica una validación externa nula.
+- No se han publicado benchmarks ni evaluaciones independientes, y el modelo no tiene descargas ni likes en Hugging Face, lo que indica una validación externa nula.
 - No es un modelo de lenguaje: no genera texto ni procesa instrucciones en lenguaje natural, por lo que no es aplicable a tareas de NLP.
 - El repositorio no especifica el formato de los pesos ni la compatibilidad con frameworks de despliegue como vLLM, Ollama o llama.cpp.
 - Existe riesgo de sobreajuste al conjunto de datos específico de teleoperación, especialmente en lo relativo a la calibración de cámaras y el marco de referencia de la pose.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dreamdifferent/vam-cross-level5-panda-robotiq-widowx-texture-ur5e-contact-v2-teleopaligned-videolora-afcb7a8fca
+- Hugging Face: https://huggingface.co/dreamdifferent/vam-cross-level5-panda-robotiq-widowx-texture-ur5e-contact-v2-teleopaligned-videolora-afcb7a8fca
 - Inputs congelados referenciados en la model card (no incluidos en el repositorio):
   - Backbone Video2World inicial: `dreamdifferent/widowx250-video-fused@f0cea76b62c5dd66b06b9f965932ddea32a7b546`
   - Decodificador de acciones inicial: `dreamdifferent/vam-cross-target-widowx250-native-2cam-action-decoder@93750cccda01620e3c028477e4c49bc5c996a68d`

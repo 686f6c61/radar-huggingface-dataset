@@ -58,8 +58,8 @@ No se dispone de información sobre adaptadores LoRA comparables para la misma t
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3.5-4B (base) | 4B | 262K | no disponible | HuggingFace |
-| lab21-qwen3.5-4b-triage-lora | 4B + LoRA | 262K | no disponible | HuggingFace |
+| Qwen3.5-4B (base) | 4B | 262K | no disponible | Hugging Face |
+| lab21-qwen3.5-4b-triage-lora | 4B + LoRA | 262K | no disponible | Hugging Face |
 | Otros adaptadores LoRA de 4B | no disponible | no disponible | no disponible | no disponible |
 
 La comparativa con alternativas de la misma categoría (adaptadores LoRA para clasificación) no está disponible por falta de datos.
@@ -75,7 +75,7 @@ La comparativa con alternativas de la misma categoría (adaptadores LoRA para cl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thaitu2602/lab21-qwen3.5-4b-triage-lora
+- Modelo en Hugging Face: https://huggingface.co/thaitu2602/lab21-qwen3.5-4b-triage-lora
 - Repositorio del lab (VinUni-AI20k): https://github.com/VinUni-AI20k/Day21-Track3-Finetuning-Lab
 - Documentación de vLLM para Qwen3.5-4B: https://recipes.vllm.ai/Qwen/Qwen3.5-4B
 - Guía de fine-tuning de Unsloth para Qwen3.5: https://unsloth.ai/docs/models/qwen3.5/fine-tune

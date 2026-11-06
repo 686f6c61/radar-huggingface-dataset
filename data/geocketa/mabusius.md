@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mabusius es un modelo publicado en HuggingFace por el usuario geocketa bajo el identificador `geocketa/Mabusius`. Se trata de un repositorio con acceso restringido (gated), lo que obliga a aceptar condiciones adicionales en la plataforma antes de poder descargar los pesos. En el momento de redactar esta ficha, la model card asociada no expone informacion tecnica util: no se declara arquitectura, numero de parametros, longitud de contexto, idiomas, licencia ni pipeline de inferencia.
+Mabusius es un modelo publicado en Hugging Face por el usuario geocketa bajo el identificador `geocketa/Mabusius`. Se trata de un repositorio con acceso restringido (gated), lo que obliga a aceptar condiciones adicionales en la plataforma antes de poder descargar los pesos. En el momento de redactar esta ficha, la model card asociada no expone informacion tecnica util: no se declara arquitectura, numero de parametros, longitud de contexto, idiomas, licencia ni pipeline de inferencia.
 
 Los unicos datos objetivos disponibles son los metadatos del repositorio: un tamano de 2,4 GB, la etiqueta `region:us`, cero descargas y un unico "like" desde su creacion. La fecha de creacion registrada (2026-07-04) y la de ultima actualizacion (2026-09-19) resultan anomales respecto a la fecha actual, por lo que conviene tratarlas con cautela y verificarlas directamente en la plataforma.
 
@@ -21,8 +21,8 @@ La busqueda web realizada no ha devuelto ningun resultado relevante sobre este m
 | Licencia | no disponible |
 | Formato de pesos | no disponible (el tamano del repo sugiere pesos completos, pero no se especifica si son safetensors, GGUF, PyTorch bin o una mezcla) |
 | Autor | geocketa |
-| Fecha de creacion | 2026-07-04 (segun metadatos de HuggingFace) |
-| Ultima actualizacion | 2026-09-19 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-07-04 (segun metadatos de Hugging Face) |
+| Ultima actualizacion | 2026-09-19 (segun metadatos de Hugging Face) |
 | Tamano del repositorio | 2,4 GB |
 | Acceso | restringido (gated, requiere aceptar condiciones) |
 | Descargas | 0 |
@@ -43,7 +43,7 @@ En cuanto al entrenamiento, no hay informacion disponible sobre el volumen de to
 - No se confirma soporte para agentes ni razonamiento multi-paso.
 - No se confirma capacidad multilingue ni la lista de idiomas cubiertos.
 - No se confirma la existencia de modos especiales (thinking mode, vision, audio, etc.).
-- Se desconoce el pipeline declarado en HuggingFace (text-generation, text-to-image, image-text-to-text u otro).
+- Se desconoce el pipeline declarado en Hugging Face (text-generation, text-to-image, image-text-to-text u otro).
 
 ## Casos de uso
 
@@ -76,7 +76,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 - Riesgo de alucinacion: indeterminable sin datos de entrenamiento ni evaluaciones publicadas.
 - Sesgos conocidos: no disponible.
 - Limitaciones de contexto o idioma: no disponible.
-- Licencia no declarada: al no especificarse licencia, no se puede asumir permiso para uso comercial, redistribucion ni modificacion. El acceso esta ademas restringido por condiciones adicionales en HuggingFace.
+- Licencia no declarada: al no especificarse licencia, no se puede asumir permiso para uso comercial, redistribucion ni modificacion. El acceso esta ademas restringido por condiciones adicionales en Hugging Face.
 - Repositorio gated: la descarga requiere aceptar terminos, lo que anade una dependencia contractual con el autor.
 - Trazabilidad nula: la busqueda web no ha encontrado ninguna referencia tecnica; los resultados obtenidos apuntan a dominios de contenido para adultos sin relacion con el proyecto, por lo que no deben tomarse como fuentes.
 - Fechas anomalas: las marcas de creacion y actualizacion del repositorio (2026) no coinciden con una cronologia coherente, lo que conviene verificar en la plataforma.
@@ -86,7 +86,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/geocketa/Mabusius
+- Repositorio en Hugging Face: https://huggingface.co/geocketa/Mabusius
 - Paper: no disponible.
 - Blog tecnico: no disponible.
 - Repositorio de codigo: no disponible.

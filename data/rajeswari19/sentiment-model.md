@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rajeswari19/sentiment-model` es un modelo de clasificación de texto orientado al análisis de sentimiento, publicado en HuggingFace por el usuario rajeswari19. Se trata de un ajuste fino (fine-tuning) de `distilbert-base-uncased`, la variante destilada de BERT mantenida por Hugging Face, sobre un conjunto de datos que el autor no identifica en ningún momento. El repositorio pesa 0,3 GB y contiene 66.955.779 parámetros en formato safetensors, distribuidos bajo licencia Apache 2.0.
+`rajeswari19/sentiment-model` es un modelo de clasificación de texto orientado al análisis de sentimiento, publicado en Hugging Face por el usuario rajeswari19. Se trata de un ajuste fino (fine-tuning) de `distilbert-base-uncased`, la variante destilada de BERT mantenida por Hugging Face, sobre un conjunto de datos que el autor no identifica en ningún momento. El repositorio pesa 0,3 GB y contiene 66.955.779 parámetros en formato safetensors, distribuidos bajo licencia Apache 2.0.
 
 Técnicamente es un transformer encoder de 6 capas, 768 dimensiones ocultas y 12 cabezas de atención, con tokenizador WordPiece *uncased* de 30.522 entradas y un límite posicional de 512 tokens. Al ser un modelo encoder-only con cabeza de clasificación, no genera texto: asigna una etiqueta a una secuencia de entrada. La model card está generada automáticamente por `Trainer` y no ha sido completada, por lo que no se documentan ni el dataset, ni las clases de salida, ni los usos previstos.
 
@@ -119,7 +119,7 @@ No se dispone de cifras verificadas de benchmarks para los modelos comparados de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rajeswari19/sentiment-model
+- Modelo en Hugging Face: https://huggingface.co/rajeswari19/sentiment-model
 - Modelo base distilbert-base-uncased: https://huggingface.co/distilbert-base-uncased
 - Paper de DistilBERT (Sanh et al., 2019): https://arxiv.org/abs/1910.01108
 - Paper de BERT (Devlin et al., 2018): https://arxiv.org/abs/1810.04805

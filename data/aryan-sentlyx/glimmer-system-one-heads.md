@@ -70,7 +70,7 @@ La model card incluye una tabla de resultados cuyo contenido numérico no se ha 
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Glimmer System One heads | Base 30B + cabezas logísticas | No disponible | Decisión binaria calibrada sobre estados ocultos | Apache 2.0 | HuggingFace + GitHub |
+| Glimmer System One heads | Base 30B + cabezas logísticas | No disponible | Decisión binaria calibrada sobre estados ocultos | Apache 2.0 | Hugging Face + GitHub |
 | Alternativas de inspección visual industrial | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de información sobre modelos comparables de la misma categoría (cabezas de decisión sobre modelos multimodales para inspección visual) en la documentación proporcionada.
@@ -89,7 +89,7 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aryan-sentlyx/glimmer-system-one-heads
+- Hugging Face: https://huggingface.co/aryan-sentlyx/glimmer-system-one-heads
 - GitHub: https://github.com/aryan-sentlyx/glimmer-system-one
 - Demo en vivo: https://aryan-59489--glimmer-demo.us-east.modal.run
 - Modelo base: https://huggingface.co/meta-models/Muse-Glimmer-30B

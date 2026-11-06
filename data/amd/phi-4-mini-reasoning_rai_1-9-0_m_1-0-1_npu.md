@@ -6,7 +6,7 @@ Phi-4-mini-reasoning es un modelo de lenguaje de Microsoft orientado a razonamie
 
 El modelo base pertenece a la familia Phi-4-mini, una línea de modelos compactos de Microsoft entrenada sobre datos sintéticos y curados, con un enfoque explícito en razonamiento matemático y lógico. La variante `reasoning` está ajustada para producir cadenas de razonamiento antes de la respuesta final, lo que la hace adecuada para tareas de resolución de problemas paso a paso, aunque a costa de un mayor número de tokens generados.
 
-La relevancia de este repositorio es fundamentalmente de despliegue: no introduce un modelo nuevo, sino que ofrece una ruta de ejecución local sobre hardware AMD con aceleración por NPU. El repositorio ocupa 3,9 GB, está licenciado bajo MIT y su acceso es restringido (gated), por lo que es necesario aceptar las condiciones en HuggingFace antes de descargarlo. La información pública disponible sobre esta ficha concreta es limitada: no se detallan en el repositorio los parámetros totales, la longitud de contexto ni los resultados de benchmarks.
+La relevancia de este repositorio es fundamentalmente de despliegue: no introduce un modelo nuevo, sino que ofrece una ruta de ejecución local sobre hardware AMD con aceleración por NPU. El repositorio ocupa 3,9 GB, está licenciado bajo MIT y su acceso es restringido (gated), por lo que es necesario aceptar las condiciones en Hugging Face antes de descargarlo. La información pública disponible sobre esta ficha concreta es limitada: no se detallan en el repositorio los parámetros totales, la longitud de contexto ni los resultados de benchmarks.
 
 ## Especificaciones tecnicas
 
@@ -73,7 +73,7 @@ La comparación relevante es entre el artefacto de AMD y la versión original de
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace antes de la descarga.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de la descarga.
 - Idioma: los metadatos solo declaran inglés; el rendimiento en castellano no está garantizado.
 - Sesgos: no documentados en la información disponible; cabe esperar los sesgos heredados de los datos de entrenamiento del modelo base.
 - Alucinación: riesgo presente como en cualquier modelo generativo; el modo de razonamiento no elimina la posibilidad de trazas plausibles pero incorrectas.
@@ -84,7 +84,7 @@ La comparación relevante es entre el artefacto de AMD y la versión original de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/amd/Phi-4-mini-reasoning_rai_1.9.0_m_1.0.1_npu
+- Repositorio Hugging Face: https://huggingface.co/amd/Phi-4-mini-reasoning_rai_1.9.0_m_1.0.1_npu
 - Modelo base Phi-4-mini-reasoning de Microsoft: no disponible en la información proporcionada.
 - Documentación del runtime Ryzen AI: no disponible en la información proporcionada.
 - Papers, blogs o demos adicionales: no disponibles en la información proporcionada.

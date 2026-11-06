@@ -102,7 +102,7 @@ Frente a cualquiera de estos modelos, el adaptador de `darturi` carece de evalua
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/darturi/qwen7b_c_mo_es_2-NEGATED_WITH_MO-1
+- Repositorio Hugging Face: https://huggingface.co/darturi/qwen7b_c_mo_es_2-NEGATED_WITH_MO-1
 - Adaptador minuendo: https://huggingface.co/darturi/qwen7b_c_mo_es_2
 - Adaptador sustraendo: https://huggingface.co/darturi/Averaged_MO_Qwen7B_Adapters-1
 - Modelo base (espejo de Unsloth): https://huggingface.co/unsloth/Qwen2.5-7B-Instruct

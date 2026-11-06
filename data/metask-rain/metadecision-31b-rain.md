@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MetaDecision-31B-Rain | 31B (base) + LoRA r16 | no disponible | W4A16 (grupo 32) + LoRA BF16 | apache-2.0 (enlace a licencia Gemma 4) | HuggingFace, vLLM |
-| google/gemma-4-31B-it | 31B | no disponible | BF16 y variantes QAT | términos de Gemma 4 | HuggingFace |
-| google/gemma-4-31B-it-qat-w4a16-ct | 31B | no disponible | W4A16 compressed-tensors | términos de Gemma 4 | HuggingFace |
-| MeTask-Rain/metask-jev-rain-31B-trained | 31B (base) + LoRA r16 | no disponible | W4A16 + LoRA BF16 | apache-2.0 | HuggingFace |
+| MetaDecision-31B-Rain | 31B (base) + LoRA r16 | no disponible | W4A16 (grupo 32) + LoRA BF16 | apache-2.0 (enlace a licencia Gemma 4) | Hugging Face, vLLM |
+| google/gemma-4-31B-it | 31B | no disponible | BF16 y variantes QAT | términos de Gemma 4 | Hugging Face |
+| google/gemma-4-31B-it-qat-w4a16-ct | 31B | no disponible | W4A16 compressed-tensors | términos de Gemma 4 | Hugging Face |
+| MeTask-Rain/metask-jev-rain-31B-trained | 31B (base) + LoRA r16 | no disponible | W4A16 + LoRA BF16 | apache-2.0 | Hugging Face |
 
 La comparación se limita a variantes del mismo modelo base porque no se dispone de datos de rendimiento que permitan contrastarlo con alternativas de otros autores.
 
@@ -83,7 +83,7 @@ La comparación se limita a variantes del mismo modelo base porque no se dispone
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MeTask-Rain/MetaDecision-31B-Rain
+- Modelo en Hugging Face: https://huggingface.co/MeTask-Rain/MetaDecision-31B-Rain
 - Repositorio de pesos referenciado: https://huggingface.co/MeTask-Rain/metask-jev-rain-31B-trained/tree/2feff076f07711fe2fefe7a6fdcedfe4132b773e
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
 - Checkpoint QAT W4A16: https://huggingface.co/google/gemma-4-31B-it-qat-w4a16-ct

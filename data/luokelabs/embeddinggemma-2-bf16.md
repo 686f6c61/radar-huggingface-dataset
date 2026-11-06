@@ -106,8 +106,8 @@ No se dispone de datos de otros modelos comparables en la información proporcio
 
 ## Enlaces
 
-- [HuggingFace: luokelabs/embeddinggemma-2-bf16](https://huggingface.co/luokelabs/embeddinggemma-2-bf16)
-- [HuggingFace: google/embeddinggemma-2](https://huggingface.co/google/embeddinggemma-2)
+- [Hugging Face: luokelabs/embeddinggemma-2-bf16](https://huggingface.co/luokelabs/embeddinggemma-2-bf16)
+- [Hugging Face: google/embeddinggemma-2](https://huggingface.co/google/embeddinggemma-2)
 - [GitHub: google-gemma](https://github.com/google-gemma)
 - [Blog de lanzamiento](https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2)
 - [Documentación](https://ai.google.dev/gemma/docs/embeddinggemma)

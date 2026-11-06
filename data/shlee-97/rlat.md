@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 No se dispone de información sobre modelos comparables en la información proporcionada.
 
 ## Limitaciones y advertencias
-- La licencia no está indicada en HuggingFace; se desconoce si permite uso comercial o redistribución.
+- La licencia no está indicada en Hugging Face; se desconoce si permite uso comercial o redistribución.
 - No se han publicado benchmarks que demuestren su rendimiento frente a otros modelos de representación de audio.
 - Para procesar audio en bruto, es necesario aceptar y obtener acceso al codec Stable Audio Open, lo que añade una dependencia externa y posibles restricciones de licencia.
 - No es un modelo generativo: no produce audio, solo embeddings. No sirve para síntesis o modificación de audio.
@@ -58,6 +58,6 @@ No se dispone de información sobre modelos comparables en la información propo
 - El repositorio tiene 0 descargas y 0 likes, lo que indica que es un modelo de investigación reciente y con poca validación externa.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/shlee-97/rlat
+- Hugging Face: https://huggingface.co/shlee-97/rlat
 - Paper: https://arxiv.org/abs/2608.28127
 - Código y documentación: https://github.com/sh-lee97/rlat-release

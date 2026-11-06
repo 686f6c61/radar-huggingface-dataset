@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NGUT es un modelo de inteligencia artificial publicado en HuggingFace por el usuario `model-rsch` bajo el identificador `model-rsch/ngut-32k`. El nombre sugiere una ventana de contexto de 32 000 tokens, aunque no se ha confirmado oficialmente. La model card disponible es extremadamente escasa: no incluye arquitectura, número de parámetros, licencia, idiomas soportados ni resultados de benchmarks.
+NGUT es un modelo de inteligencia artificial publicado en Hugging Face por el usuario `model-rsch` bajo el identificador `model-rsch/ngut-32k`. El nombre sugiere una ventana de contexto de 32 000 tokens, aunque no se ha confirmado oficialmente. La model card disponible es extremadamente escasa: no incluye arquitectura, número de parámetros, licencia, idiomas soportados ni resultados de benchmarks.
 
 La única información relevante es una extensa lista de tokens especiales que cubren dominios como conversación, razonamiento, herramientas, modalidades (imagen, audio, vídeo, archivos), voz, visión, código y recuperación. Esto indica que el modelo fue diseñado con capacidades multimodales y de integración con herramientas, pero sin documentación adicional no se puede confirmar su funcionamiento real.
 

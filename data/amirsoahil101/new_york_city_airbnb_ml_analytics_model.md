@@ -84,7 +84,7 @@ Dentro del propio proyecto se compararon varios algoritmos de clasificación sob
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amirsoahil101/New_York_City_Airbnb_ML_Analytics_Model
+- Modelo en Hugging Face: https://huggingface.co/amirsoahil101/New_York_City_Airbnb_ML_Analytics_Model
 - Repositorio de GitHub: https://github.com/amirsohail100/New-York-City-Airbnb-ML-Analytics-Web-App
 - Demo en vivo (Render): https://new-york-city-airbnb-ml-analytics-web-xoyb.onrender.com
 - Dataset NYC Airbnb Open Data 2019 (referenciado, no enlazado directamente en la model card)

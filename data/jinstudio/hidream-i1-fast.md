@@ -1,11 +1,11 @@
 # Jinstudio/HiDream-I1-Fast
 
 ## Resumen
-HiDream-I1-Fast es la variante destilada del modelo fundacional de generación de imágenes texto-a-imagen HiDream-I1, desarrollado por HiDream.ai y distribuido en HuggingFace por el usuario Jinstudio. Se trata de un modelo de difusión de 17.105.733.184 parámetros (aproximadamente 17,1B) basado en una arquitectura de Diffusion Transformer disperso (Sparse DiT), que genera imágenes de alta calidad en pocos pasos de inferencia gracias a su proceso de destilación. El modelo base fue presentado el 28 de abril de 2025 y su informe técnico se publicó el 28 de mayo de 2025 bajo el identificador arXiv:2505.22705.
+HiDream-I1-Fast es la variante destilada del modelo fundacional de generación de imágenes texto-a-imagen HiDream-I1, desarrollado por HiDream.ai y distribuido en Hugging Face por el usuario Jinstudio. Se trata de un modelo de difusión de 17.105.733.184 parámetros (aproximadamente 17,1B) basado en una arquitectura de Diffusion Transformer disperso (Sparse DiT), que genera imágenes de alta calidad en pocos pasos de inferencia gracias a su proceso de destilación. El modelo base fue presentado el 28 de abril de 2025 y su informe técnico se publicó el 28 de mayo de 2025 bajo el identificador arXiv:2505.22705.
 
 El modelo resuelve el problema de la generación de imágenes fotorrealistas y artísticas con un seguimiento de prompt de primer nivel, compitiendo directamente con alternativas cerradas como DALL-E 3 y abiertas como Flux.1-dev o SD3-Medium. Su relevancia actual radica en que alcanza puntuaciones estado del arte en los benchmarks GenEval, DPG-Bench y HPSv2.1 estando liberado bajo licencia MIT, lo que permite uso comercial sin restricciones.
 
-La variante Fast aquí referenciada forma parte de la familia de pesos liberada junto al modelo completo (full) y la variante destilada dev, todos ellos publicados en el repositorio oficial HiDream-ai/HiDream-I1 en GitHub y accesibles mediante la librería diffusers de HuggingFace.
+La variante Fast aquí referenciada forma parte de la familia de pesos liberada junto al modelo completo (full) y la variante destilada dev, todos ellos publicados en el repositorio oficial HiDream-ai/HiDream-I1 en GitHub y accesibles mediante la librería diffusers de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -100,11 +100,11 @@ HPSv2.1:
 
 | Modelo | Parametros | Contexto / idioma | Licencia | GenEval | HPSv2.1 | Disponibilidad |
 |---|---|---|---|---|---|---|
-| HiDream-I1 / Fast | ~17,1B | ingles | MIT | 0,83 | 33,82 | HuggingFace y GitHub (HiDream-ai) |
-| Flux.1-dev | no disponible (~12B) | ingles | no comercial (dev) | 0,66 | 32,47 | HuggingFace (Black Forest Labs) |
-| SD3-Medium | no disponible (~2B) | multilingue | Stability AI Community | 0,74 | 31,53 | HuggingFace (Stability AI) |
+| HiDream-I1 / Fast | ~17,1B | ingles | MIT | 0,83 | 33,82 | Hugging Face y GitHub (HiDream-ai) |
+| Flux.1-dev | no disponible (~12B) | ingles | no comercial (dev) | 0,66 | 32,47 | Hugging Face (Black Forest Labs) |
+| SD3-Medium | no disponible (~2B) | multilingue | Stability AI Community | 0,74 | 31,53 | Hugging Face (Stability AI) |
 | DALL-E 3 | no disponible | multilingue | propietaria | 0,67 | 31,44 | API de OpenAI |
-| CogView4-6B | 6B | chino e ingles | Apache 2.0 | 0,73 | 32,31 | HuggingFace (THUDM) |
+| CogView4-6B | 6B | chino e ingles | Apache 2.0 | 0,73 | 32,31 | Hugging Face (THUDM) |
 
 HiDream-I1 destaca por combinar la puntuación más alta en GenEval y HPSv2.1 de la comparativa con una licencia MIT permisiva, frente a la licencia no comercial por defecto de Flux.1-dev y las restricciones de la licencia comunitaria de Stability AI para SD3. Su principal desventaja es un tamaño de 17,1B parámetros, superior al de CogView4-6B o SD3, y unos requisitos de VRAM que lo alejan del despliegue en GPUs de consumo sin cuantización.
 
@@ -120,10 +120,10 @@ HiDream-I1 destaca por combinar la puntuación más alta en GenEval y HPSv2.1 de
 - Repositorio sin tracción: el modelo cuenta con 0 descargas y 0 likes en el momento del análisis, por lo que no hay evidencia comunitaria de uso en producción.
 
 ## Enlaces
-- HuggingFace (variante analizada): https://huggingface.co/Jinstudio/HiDream-I1-Fast
+- Hugging Face (variante analizada): https://huggingface.co/Jinstudio/HiDream-I1-Fast
 - Repositorio oficial en GitHub: https://github.com/HiDream-ai/HiDream-I1-GitHub (referenciado como https://github.com/HiDream-ai/HiDream-I1)
 - Modelo de edición HiDream-E1: https://github.com/HiDream-ai/HiDream-E1
-- Demo de edición en HuggingFace Spaces: https://huggingface.co/spaces/HiDream-ai/HiDream-E1-Full
+- Demo de edición en Hugging Face Spaces: https://huggingface.co/spaces/HiDream-ai/HiDream-E1-Full
 - Informe técnico: https://arxiv.org/abs/2505.22705
 - Producto comercial asociado: https://vivago.ai/
 - Codificador de texto requerido: https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct

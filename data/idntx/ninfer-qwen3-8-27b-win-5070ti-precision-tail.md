@@ -78,7 +78,7 @@ No disponible. El repositorio no es un modelo sino un build de motor de inferenc
 | NInfer (este build) | `.ninfer` propietario | Windows x64, `sm_120a` | Apache 2.0 | Precompilado, especulación MTP + n-gramas, KV cache `rk4v4-e8` |
 | llama.cpp | GGUF | Multiplataforma, CPU y GPU | MIT | Ecosistema amplio, cuantizaciones GGUF estándar |
 | vLLM | safetensors, GPTQ, AWQ | Linux, CUDA | Apache 2.0 | Orientado a serving de alta concurrencia |
-| TGI | safetensors | Linux, CUDA/ROCm | Apache 2.0 | Integración con HuggingFace Hub |
+| TGI | safetensors | Linux, CUDA/ROCm | Apache 2.0 | Integración con Hugging Face Hub |
 
 ## Limitaciones y advertencias
 
@@ -95,7 +95,7 @@ No disponible. El repositorio no es un modelo sino un build de motor de inferenc
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/idntx/ninfer-qwen3.8-27b-win-5070ti-precision-tail
+- Repositorio Hugging Face: https://huggingface.co/idntx/ninfer-qwen3.8-27b-win-5070ti-precision-tail
 - Artefacto del modelo: https://huggingface.co/idntx/Dirk-Qwen3.8-27B-GSQ-RCO-IQ3_S-ninfer
 - Repositorio fuente del build: https://github.com/qwased/ninfer-16g-5070ti-qwen3.8-27b-gsq-rco-precision-tail
 - Commit del build: https://github.com/qwased/ninfer-16g-5070ti-qwen3.8-27b-gsq-rco-precision-tail/commit/ed83ca23802ccebaa3331131825bfb46b4ff2802

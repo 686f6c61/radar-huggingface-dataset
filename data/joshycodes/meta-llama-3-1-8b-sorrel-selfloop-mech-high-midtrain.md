@@ -65,7 +65,7 @@ El unico dato cuantitativo de rendimiento es la pérdida de la fase de midtrain:
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| meta-llama-3.1-8b-sorrel-selfloop-mech-high-midtrain | 8,03B | No disponible (entrenado con seq_len 4096) | internal-research (no redistribuible) | HuggingFace, 0 descargas | No disponible |
+| meta-llama-3.1-8b-sorrel-selfloop-mech-high-midtrain | 8,03B | No disponible (entrenado con seq_len 4096) | internal-research (no redistribuible) | Hugging Face, 0 descargas | No disponible |
 | meta-llama/Llama-3.1-8B (base) | 8,03B | 128.000 tokens | Llama 3.1 Community License | Amplia, muy extendido | Ampliamente evaluado por Meta |
 | meta-llama/Llama-3.1-8B-Instruct | 8,03B | 128.000 tokens | Llama 3.1 Community License | Amplia, muy extendido | Benchmarks publicados por Meta |
 | Qwen2.5-7B-Instruct | 7,6B aprox. | 128.000 tokens | Apache 2.0 (segun variante) | Amplia | Benchmarks publicados por Alibaba |
@@ -86,7 +86,7 @@ El modelo objeto de la ficha sólo es comparable en arquitectura y tamaño con l
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/joshycodes/meta-llama-3.1-8b-sorrel-selfloop-mech-high-midtrain
+- Hugging Face del modelo: https://huggingface.co/joshycodes/meta-llama-3.1-8b-sorrel-selfloop-mech-high-midtrain
 - Modelo base del checkpoint: https://huggingface.co/joshycodes/meta-llama-3.1-8b-sorrel-atomic-f-300m-midtrain
 - Dataset de entrenamiento: https://huggingface.co/datasets/joshycodes/sorrel-corpus
 - Modelo original de Meta: https://huggingface.co/meta-llama/Llama-3.1-8B

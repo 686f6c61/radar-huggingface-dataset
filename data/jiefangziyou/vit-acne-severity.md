@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`vit-acne-severity` es un modelo de clasificación de imágenes publicado en HuggingFace por el usuario `jiefangziyou`. El identificador y las etiquetas del repositorio (`vit`, `image-classification`) indican que se trata de un Vision Transformer ajustado para una tarea de clasificación relacionada con la severidad del acné, aunque la model card no documenta el esquema de grados ni el origen de los datos. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y su model card es la plantilla automática de HuggingFace sin rellenar.
+`vit-acne-severity` es un modelo de clasificación de imágenes publicado en Hugging Face por el usuario `jiefangziyou`. El identificador y las etiquetas del repositorio (`vit`, `image-classification`) indican que se trata de un Vision Transformer ajustado para una tarea de clasificación relacionada con la severidad del acné, aunque la model card no documenta el esquema de grados ni el origen de los datos. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y su model card es la plantilla automática de Hugging Face sin rellenar.
 
 El modelo cuenta con 85.801.732 parámetros en formato safetensors, una cifra compatible con la variante ViT-Base de la arquitectura propuesta en "An Image is Worth 16x16 Words" (arXiv:1910.09700), referencia que aparece entre las etiquetas del repositorio. El peso del repositorio es de 0,3 GB. No hay información publicada sobre licencia, idiomas, datos de entrenamiento, hiperparámetros ni resultados de evaluación.
 
@@ -82,7 +82,7 @@ La comparacion con otros clasificadores dermatologicos publicos no puede realiza
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: la model card es la plantilla automatica de HuggingFace sin rellenar. No se declara el desarrollador, el origen de los datos, el procedimiento de entrenamiento ni el esquema de etiquetas.
+- Ausencia total de documentacion: la model card es la plantilla automatica de Hugging Face sin rellenar. No se declara el desarrollador, el origen de los datos, el procedimiento de entrenamiento ni el esquema de etiquetas.
 - Licencia no declarada: sin licencia explicita no hay autorizacion clara para uso comercial ni para redistribucion. Debe contactarse con el autor antes de cualquier uso en produccion.
 - Riesgo de sesgo: al no conocerse la composicion del conjunto de entrenamiento, no se puede evaluar el sesgo por tono de piel, tipo de acne, iluminacion, dispositivo de captura, edad o sexo. En dermatologia este sesgo es especialmente critico.
 - Riesgo de alucinacion y mala calibracion: un clasificador puede producir salidas con alta confianza en imagenes fuera de distribucion. No se ha publicado ninguna evaluacion de calibracion ni de deteccion de fuera de dominio.
@@ -94,7 +94,7 @@ La comparacion con otros clasificadores dermatologicos publicos no puede realiza
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jiefangziyou/vit-acne-severity
+- Hugging Face: https://huggingface.co/jiefangziyou/vit-acne-severity
 - Articulo referenciado en las etiquetas del repositorio (Vision Transformer): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental citada en la plantilla de la model card: https://mlco2.github.io/impact
 - Articulo de Lacoste et al. (2019) citado en la plantilla de la model card: https://arxiv.org/abs/1910.09700

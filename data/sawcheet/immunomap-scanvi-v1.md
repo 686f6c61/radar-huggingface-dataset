@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ImmunoMap scANVI bundle (immunomap-scanvi-v1) es un paquete de anotación de tipos celulares para datos de scRNA-seq de sangre periférica humana (PBMC), publicado por el autor sawcheet en HuggingFace. No es un modelo de lenguaje: se trata de un artefacto de `scvi-tools` que agrupa dos modelos de referencia scANVI (uno de granularidad gruesa y otro fina), calibración de temperatura con umbrales para la clase Unknown, un detector de novedad basado en distancia a la referencia, una lista de 3.002 genes, un árbol de etiquetas y reglas de control de calidad.
+ImmunoMap scANVI bundle (immunomap-scanvi-v1) es un paquete de anotación de tipos celulares para datos de scRNA-seq de sangre periférica humana (PBMC), publicado por el autor sawcheet en Hugging Face. No es un modelo de lenguaje: se trata de un artefacto de `scvi-tools` que agrupa dos modelos de referencia scANVI (uno de granularidad gruesa y otro fina), calibración de temperatura con umbrales para la clase Unknown, un detector de novedad basado en distancia a la referencia, una lista de 3.002 genes, un árbol de etiquetas y reglas de control de calidad.
 
 El problema que resuelve es la anotación automática y transferible de tipos celulares en experimentos de citometría de secuenciación de ARN de célula única, un paso habitualmente manual y costoso. La relevancia actual del bundle radica en que incluye mecanismos explícitos para detectar células fuera de la distribución de referencia (clase Unknown y detector de novedad), lo que mitiga uno de los fallos clásicos de los clasificadores supervisados de anotación celular.
 
@@ -48,7 +48,7 @@ El entrenamiento usó como referencia tres estudios de CELLxGENE Census (versió
 - Estudios de lupus y otras enfermedades autoinmunes: el bundle se evaluó en controles sanos de una cohorte de lupus, por lo que puede emplearse como línea base de anotación en ese contexto, siempre validando contra marcadores.
 - Integración en pipelines de análisis de célula única: al ser un artefacto de scvi-tools en formato joblib, se puede cargar directamente en flujos de Python que ya usan scanpy y scvi-tools.
 - Reproducibilidad de anotaciones entre proyectos: fijar una referencia común con árbol de etiquetas y reglas de QC facilita comparar anotaciones entre estudios distintos.
-- Docencia y prototipado: el demo en HuggingFace Spaces permite probar la anotación sin montar infraestructura local.
+- Docencia y prototipado: el demo en Hugging Face Spaces permite probar la anotación sin montar infraestructura local.
 
 ## Benchmarks y rendimiento
 
@@ -81,7 +81,7 @@ No se han publicado otros resultados de benchmarks (por ejemplo, comparaciones c
 
 | Modelo | Tipo | Referencia de entrenamiento | Salida Unknown / novedad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| immunomap-scanvi-v1 | scANVI (scvi-tools) | CELLxGENE Census 2025-11-08, 3 estudios | Sí (umbral calibrado + detector de distancia) | no disponible | HuggingFace + GitHub + demo |
+| immunomap-scanvi-v1 | scANVI (scvi-tools) | CELLxGENE Census 2025-11-08, 3 estudios | Sí (umbral calibrado + detector de distancia) | no disponible | Hugging Face + GitHub + demo |
 | CellTypist | Regresión logística sobre genes | Distintos atlas inmunes | No documentado en esta ficha | no disponible | no disponible |
 | Azimuth | Mapeo a referencia Seurat | Atlas de referencia específicos | No documentado en esta ficha | no disponible | no disponible |
 
@@ -100,6 +100,6 @@ No se dispone de datos comparativos de rendimiento entre estos sistemas en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sawcheet/immunomap-scanvi-v1
+- Modelo en Hugging Face: https://huggingface.co/sawcheet/immunomap-scanvi-v1
 - Código y evaluación: https://github.com/sachitsatyal/Immunomap
 - Demo: https://huggingface.co/spaces/sawcheet/immunomap

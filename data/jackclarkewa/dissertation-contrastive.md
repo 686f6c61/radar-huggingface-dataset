@@ -66,10 +66,10 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 - **Riesgo de alucinación**: no aplica, ya que no es un modelo generativo de lenguaje.
 - **Limitaciones de contexto e idioma**: no se especifican; el modelo no está orientado a procesamiento de lenguaje natural.
 - **Restricciones de licencia**: la licencia MIT permite uso comercial y modificación, pero el autor advierte que deben revisarse los términos de las fuentes de datos externas si se utiliza con datasets de terceros.
-- **Carga automática no soportada**: al ser una implementación personalizada, las APIs genéricas de HuggingFace no pueden cargar el modelo sin un adaptador explícito.
+- **Carga automática no soportada**: al ser una implementación personalizada, las APIs genéricas de Hugging Face no pueden cargar el modelo sin un adaptador explícito.
 - **Código experimental**: el repositorio se presenta como un punto de partida experimental; no se garantiza estabilidad ni soporte.
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/jackclarkewa/dissertation-contrastive)
+- [Repositorio en Hugging Face](https://huggingface.co/jackclarkewa/dissertation-contrastive)
 - No se encontraron otros enlaces relevantes (papers, blogs, repositorios adicionales) en la búsqueda web.

@@ -56,9 +56,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 
 | Modelo | Parametros | Cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mtp-Qwen3.8-27B-THIREUS-IQ2_XS (este) | 27B | IQ2_XS (~2 bits) | No disponible | MIT | HuggingFace |
-| mtp-Qwen3.8-27B-THIREUS-BF16 | 27B | BF16 | No disponible | MIT | HuggingFace |
-| mtp-Qwen3.5-27B-THIREUS-IQ2_K_R4 | 27B | IQ2_K_R4 | No disponible | MIT | HuggingFace |
+| mtp-Qwen3.8-27B-THIREUS-IQ2_XS (este) | 27B | IQ2_XS (~2 bits) | No disponible | MIT | Hugging Face |
+| mtp-Qwen3.8-27B-THIREUS-BF16 | 27B | BF16 | No disponible | MIT | Hugging Face |
+| mtp-Qwen3.5-27B-THIREUS-IQ2_K_R4 | 27B | IQ2_K_R4 | No disponible | MIT | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes. La eleccion entre ellas depende del equilibrio entre calidad y uso de memoria: BF16 ofrece maxima fidelidad pero requiere ~54 GB, mientras que IQ2_XS sacrifica calidad para caber en GPUs de consumo.
 
@@ -73,7 +73,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes. La elec
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-IQ2_XS-SPECIAL_SPLIT
+- Hugging Face: https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-IQ2_XS-SPECIAL_SPLIT
 - Variante BF16 del mismo autor: https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-BF16-SPECIAL_SPLIT
 - Variante IQ2_K_R4: https://huggingface.co/Thireus/mtp-Qwen3.5-27B-THIREUS-IQ2_K_R4-SPECIAL_SPLIT
 - Coleccion de modelos de Thireus: https://gguf.thireus.com/

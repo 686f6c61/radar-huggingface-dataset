@@ -32,7 +32,7 @@ Otros metadatos del repositorio:
 | Modelo upstream | `deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B` |
 | Runtime | `buddy-cli` (proyecto `buddy-compiler/buddy-mlir`) |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
-| Fecha de publicacion | 2026-10-16 (segun los metadatos de HuggingFace) |
+| Fecha de publicacion | 2026-10-16 (segun los metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 

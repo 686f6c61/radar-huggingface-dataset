@@ -2,7 +2,7 @@
 
 ## Resumen
 
-QLink-s800-8B-GGUF es la version cuantizada en formato GGUF del modelo Dash00/QLink-s800-8B, un modelo de lenguaje de 8.190.735.360 parametros (aproximadamente 8,2 mil millones) publicado por el usuario Dash00 en HuggingFace. La cuantizacion la ha realizado mradermacher, un conocido creador de versiones GGUF de modelos open source, que distribuye hasta doce variantes de cuantizacion distintas para adaptarse a diferentes presupuestos de memoria y requisitos de calidad.
+QLink-s800-8B-GGUF es la version cuantizada en formato GGUF del modelo Dash00/QLink-s800-8B, un modelo de lenguaje de 8.190.735.360 parametros (aproximadamente 8,2 mil millones) publicado por el usuario Dash00 en Hugging Face. La cuantizacion la ha realizado mradermacher, un conocido creador de versiones GGUF de modelos open source, que distribuye hasta doce variantes de cuantizacion distintas para adaptarse a diferentes presupuestos de memoria y requisitos de calidad.
 
 El modelo base esta etiquetado como conversacional y orientado al idioma ingles, y se distribuye bajo la libreria transformers. La informacion publica disponible sobre el modelo base es muy limitada: no se especifican detalles sobre arquitectura interna, datos de entrenamiento, licencia ni longitud de contexto, por lo que muchas de las especificaciones tecnicas de esta ficha deben marcarse como no disponibles.
 
@@ -33,7 +33,7 @@ Respecto al entrenamiento, no se han publicado datos sobre el numero de tokens, 
 ## Capacidades
 
 - Generacion de texto conversacional en ingles, segun la etiqueta "conversational" del repositorio.
-- Compatibilidad con endpoints (tag endpoints_compatible), lo que sugiere que el modelo puede servirse mediante APIs compatibles con el formato de HuggingFace.
+- Compatibilidad con endpoints (tag endpoints_compatible), lo que sugiere que el modelo puede servirse mediante APIs compatibles con el formato de Hugging Face.
 - Inferencia local mediante llama.cpp y derivados al estar en formato GGUF.
 - Capacidades de razonamiento, codigo, matematicas, vision, audio o tool calling: no disponibles en la informacion proporcionada.
 - Soporte multilingue: limitado al ingles segun los metadatos.

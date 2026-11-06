@@ -72,7 +72,7 @@ No se han publicado en la información disponible resultados de MMLU, HumanEval,
 - Cabe en hardware de consumo: sí, en Mac con Apple Silicon y en iPhone; los tres bloques (decodificador int8 mixto más una torre) suman aproximadamente 3,3 GB.
 - Opciones de despliegue: Core AI mediante el paquete Swift `DeciderVision` del `coreai-model-zoo`, configurando `SpecializationOptions(preferredComputeUnitKind: .gpu)` y `expectFrequentReshapes = true` en el decodificador. No hay soporte declarado para vLLM, llama.cpp, Ollama ni TGI, dado que el formato es `.aimodel`.
 - Latencia y throughput: 0,75-0,79 s por decisión con `g256` y 1,4 s con `g448` en iPhone 18 Pro; no se publica throughput por lotes ni latencia en M4 Max.
-- Repositorio completo: 7,8 GB en HuggingFace.
+- Repositorio completo: 7,8 GB en Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -97,7 +97,7 @@ No se han publicado en la información disponible resultados de MMLU, HumanEval,
 
 ## Enlaces
 
-- [mlboydaisuke/decider-2b-vision-CoreAI en HuggingFace](https://huggingface.co/mlboydaisuke/decider-2b-vision-CoreAI)
+- [mlboydaisuke/decider-2b-vision-CoreAI en Hugging Face](https://huggingface.co/mlboydaisuke/decider-2b-vision-CoreAI)
 - [Mapika/decider-2b-vision (modelo de origen)](https://huggingface.co/Mapika/decider-2b-vision)
 - [Mapika/decider (repositorio del proyecto decider)](https://github.com/Mapika/decider)
 - [mlboydaisuke/decider-2b-coreai-ft](https://huggingface.co/mlboydaisuke/decider-2b-coreai-ft)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gemma-3-270m-it-phi-lattice-honest` es una compilacion derivada experimental del modelo Gemma 3 de 270 millones de parametros en su variante instruction-tuned, publicada por el usuario `ununununununununununununununununununun` en HuggingFace. Se construye sobre el checkpoint `gemma-3-270m-it-phi-lattice`, que aplica una cuantizacion no uniforme de 4 bits denominada `phi-lattice` junto con una pasada de poda de ruido de baja magnitud sobre todas las proyecciones lineales.
+`gemma-3-270m-it-phi-lattice-honest` es una compilacion derivada experimental del modelo Gemma 3 de 270 millones de parametros en su variante instruction-tuned, publicada por el usuario `ununununununununununununununununununun` en Hugging Face. Se construye sobre el checkpoint `gemma-3-270m-it-phi-lattice`, que aplica una cuantizacion no uniforme de 4 bits denominada `phi-lattice` junto con una pasada de poda de ruido de baja magnitud sobre todas las proyecciones lineales.
 
 La modificacion especifica de esta variante consiste en una recalibracion quirurgica de las proyecciones MLP de salida de las capas superiores (capas 14 a 17) para que el modelo emita una abstencion explicita ("I do not know") cuando no dispone de soporte asociativo interno ante consultas factuales no verificables. Las capas inferiores y medias (0 a 13) permanecen congeladas para preservar el recuerdo factual y el razonamiento creativo o hipotetico.
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: aproximadamente 0,3 GB con el GGUF q8_0 (279 MB) y en torno a 0,5-0,6 GB con pesos float16 (268 millones de parametros).
 - GPU recomendadas: cualquier GPU consumer moderna es suficiente; el modelo cabe holgadamente en tarjetas con 4 GB o mas de VRAM. No requiere A100 ni H100.
 - Cabe en GPU consumer: si, en practicamente todas las GPU consumer actuales, e incluso en CPU pura.
-- Opciones de despliegue: Ollama (via `ollama run hf.co/...` o `ollama create` con el Modelfile incluido), llama.cpp, LM Studio y HuggingFace Transformers con los safetensors.
+- Opciones de despliegue: Ollama (via `ollama run hf.co/...` o `ollama create` con el Modelfile incluido), llama.cpp, LM Studio y Hugging Face Transformers con los safetensors.
 - Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
@@ -84,6 +84,6 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ununununununununununununununununununun/gemma-3-270m-it-phi-lattice-honest
+- Modelo en Hugging Face: https://huggingface.co/ununununununununununununununununununun/gemma-3-270m-it-phi-lattice-honest
 - Checkpoint base: https://huggingface.co/ununununununununununununununununununun/gemma-3-270m-it-phi-lattice
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion proporcionada.

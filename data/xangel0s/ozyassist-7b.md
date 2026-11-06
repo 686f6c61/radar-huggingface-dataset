@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OzyAssist-7B es una familia de modelos afinados (fine-tuned) publicada por el usuario Xangel0s en HuggingFace, disenada para actuar como el "cerebro autonomo" del proyecto OzyAssist, un asistente de escritorio para Windows. El modelo parte de Qwen2.5-Coder-7B-Instruct y se distribuye principalmente en formato GGUF cuantizado a Q4_K_M, con el objetivo de ejecutar tareas de automatizacion de escritorio, control de aplicaciones y razonamiento multitarea en maquinas de consumo.
+OzyAssist-7B es una familia de modelos afinados (fine-tuned) publicada por el usuario Xangel0s en Hugging Face, disenada para actuar como el "cerebro autonomo" del proyecto OzyAssist, un asistente de escritorio para Windows. El modelo parte de Qwen2.5-Coder-7B-Instruct y se distribuye principalmente en formato GGUF cuantizado a Q4_K_M, con el objetivo de ejecutar tareas de automatizacion de escritorio, control de aplicaciones y razonamiento multitarea en maquinas de consumo.
 
 El repositorio incluye en realidad dos variantes: un modelo de ~7B (`OzyAssist-7B-v3-q4_k_m.gguf`, 4,68 GB) pensado como motor principal, y un modelo de ~1,5B (`OzyAssist-1.5B-v3-q4_k_m.gguf`, 986 MB) orientado a modo voz y a equipos con poca VRAM. Llama la atencion que el conteo de parametros en safetensors del repositorio (1.543.714.304) corresponde a la variante de 1,5B, mientras que la de 7B se sirve unicamente en GGUF.
 
@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| OzyAssist-7B (este) | ~7B (GGUF) y ~1,54B (safetensors) | no disponible | Apache 2.0 | HuggingFace |
-| Qwen/Qwen2.5-Coder-7B-Instruct | 7B | no disponible en la informacion proporcionada | Apache 2.0 | HuggingFace |
-| Qwen/Qwen2.5-Coder-1.5B-Instruct | ~1,5B | no disponible en la informacion proporcionada | Apache 2.0 | HuggingFace |
+| OzyAssist-7B (este) | ~7B (GGUF) y ~1,54B (safetensors) | no disponible | Apache 2.0 | Hugging Face |
+| Qwen/Qwen2.5-Coder-7B-Instruct | 7B | no disponible en la informacion proporcionada | Apache 2.0 | Hugging Face |
+| Qwen/Qwen2.5-Coder-1.5B-Instruct | ~1,5B | no disponible en la informacion proporcionada | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos entre OzyAssist y sus modelos base ni con otras alternativas de agentes de escritorio, por lo que no es posible establecer una comparacion cuantitativa de calidad.
 
@@ -92,6 +92,6 @@ No se dispone de datos de rendimiento comparativos entre OzyAssist y sus modelos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Xangel0s/OzyAssist-7B
+- Modelo en Hugging Face: https://huggingface.co/Xangel0s/OzyAssist-7B
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
 - Paper, blog, repositorio o demo del proyecto OzyAssist: no disponible en la informacion proporcionada.

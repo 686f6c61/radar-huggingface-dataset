@@ -2,7 +2,7 @@
 
 ## Resumen
 
-V-WAM (Visual-World Action Model) es un checkpoint de inferencia para robótica publicado por el usuario junbrro en HuggingFace. Se trata de un modelo orientado a la generación de acciones motoras a partir de observaciones visuales, dentro de la categoría de modelos de política (policy models) para control robótico. El identificador del repositorio indica que fue entrenado sobre el dataset OpenArm con flujo de probabilidad (pflow), una división específica, 50.000 pasos de entrenamiento, configuración G4, y variante bg-1103-v2.
+V-WAM (Visual-World Action Model) es un checkpoint de inferencia para robótica publicado por el usuario junbrro en Hugging Face. Se trata de un modelo orientado a la generación de acciones motoras a partir de observaciones visuales, dentro de la categoría de modelos de política (policy models) para control robótico. El identificador del repositorio indica que fue entrenado sobre el dataset OpenArm con flujo de probabilidad (pflow), una división específica, 50.000 pasos de entrenamiento, configuración G4, y variante bg-1103-v2.
 
 El artefacto publicado es exclusivamente un checkpoint de inferencia con pesos EMA (Exponential Moving Average) consolidados a partir de un entrenamiento distribuido. No incluye pesos de entrenamiento, optimizador, scheduler, estado del trainer ni estado del RNG, lo que lo convierte en un artefacto de solo inferencia. El formato es PyTorch DCP (Distributed Checkpoint) nativo, no una exportación de Transformers, y requiere el runtime V-WAM específico junto con los activos congelados del VLM, tokenizador y VAE subyacentes.
 
@@ -73,4 +73,4 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/junbrro/vwam-oa-pflow-split-agv-50k-g4-bg-1103-v2-inference-20261104
+- Hugging Face: https://huggingface.co/junbrro/vwam-oa-pflow-split-agv-50k-g4-bg-1103-v2-inference-20261104

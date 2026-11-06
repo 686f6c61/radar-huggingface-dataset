@@ -75,7 +75,7 @@ La comparativa se basa en datos públicos de la familia Gemma 4. El bundle se di
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/visible-cx/Gemma-4-12B-CoreAI
+- Repositorio Hugging Face: https://huggingface.co/visible-cx/Gemma-4-12B-CoreAI
 - coreai-model-zoo (herramienta de conversión): https://github.com/john-rocky/coreai-model-zoo
 - Documentación oficial de Gemma 4: https://ai.google.dev/gemma/docs/core
 - Model card de Gemma 4: https://ai.google.dev/gemma/docs/core/model_card_4

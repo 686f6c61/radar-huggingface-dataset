@@ -6,7 +6,7 @@ El modelo `capsd-qwen3-sciweb-stackexchange-Qwen3-4B-Base-science_ppl_b1000_s0` 
 
 El modelo base Qwen3-4B-Base es un transformer decoder-only de 4.000 millones de parámetros, con una ventana de contexto de 32.000 tokens, entrenado por Alibaba Cloud para tareas de generación de texto y razonamiento. Este ajuste fino mantiene la misma arquitectura y tamaño, pero adapta los pesos a los datos de dominio específico. La relevancia de este modelo radica en su potencial para tareas de preguntas y respuestas técnicas, generación de explicaciones científicas y asistencia en entornos de documentación especializada, aunque no se han publicado evaluaciones que confirmen estas capacidades.
 
-La ficha se basa exclusivamente en la información disponible en HuggingFace, que es limitada: no hay descripción detallada, benchmarks ni métricas de evaluación. Por tanto, muchos apartados indicarán "no disponible" y las especificaciones se deducen del modelo base o de los hiperparámetros de entrenamiento declarados.
+La ficha se basa exclusivamente en la información disponible en Hugging Face, que es limitada: no hay descripción detallada, benchmarks ni métricas de evaluación. Por tanto, muchos apartados indicarán "no disponible" y las especificaciones se deducen del modelo base o de los hiperparámetros de entrenamiento declarados.
 
 ## Especificaciones tecnicas
 
@@ -82,6 +82,6 @@ La comparativa muestra que este modelo comparte arquitectura y tamano con el bas
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AmberYifan/capsd-qwen3-sciweb-stackexchange-Qwen3-4B-Base-science_ppl_b1000_s0
+- Repositorio Hugging Face: https://huggingface.co/AmberYifan/capsd-qwen3-sciweb-stackexchange-Qwen3-4B-Base-science_ppl_b1000_s0
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Base
 - Framework de entrenamiento (LlamaFactory): https://github.com/hiyouga/LLaMA-Factory (referencia, no se confirma su uso en el repo)

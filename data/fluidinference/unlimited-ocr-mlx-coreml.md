@@ -42,7 +42,7 @@ El decodificador calcula los 64 expertos en cada token para mantener el grafo es
 - Reconstruccion de tablas y formulas: la model card advierte que la variante turbo presenta pequenas diferencias en formulas y tablas respecto al decodificador de 8 bits.
 - Parsing de PDF con PDFKit: el runtime de referencia recibe paginas ya preprocesadas con `UnlimitedOcrPagePreprocessor.page(from:)`.
 - Ejecucion 100 % offline: no requiere red ni servicios externos.
-- Vision de documento a texto: la tarea declarada en HuggingFace es image-text-to-text.
+- Vision de documento a texto: la tarea declarada en Hugging Face es image-text-to-text.
 - Tool calling, function calling, agentes, razonamiento multi-paso, audio y modo thinking: no disponible en la informacion proporcionada.
 - Capacidades multilingues: no disponible; la model card no enumera idiomas soportados.
 
@@ -91,8 +91,8 @@ La model card publica una comparacion de calidad contra la implementacion de ref
 
 | Modelo | Parametros | Contexto | Precisión de pesos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FluidInference/unlimited-ocr-mlx-coreml (esta ficha) | 3 B totales, aproximadamente 0,5 B activos | Buckets de prefijo de 384-2304 tokens mas anillo de 128; hasta 16 paginas por prompt | 8 bits (MLX y Core ML) y expertos a 4 bits en turbo | MIT | HuggingFace, runtime Swift en FluidUse |
-| baidu/Unlimited-OCR (modelo base) | 3 B totales, aproximadamente 0,5 B activos | El mismo diseno multi-pagina descrito por el conversor | fp32 (referencia en CPU) | MIT | HuggingFace, requiere `trust_remote_code` |
+| FluidInference/unlimited-ocr-mlx-coreml (esta ficha) | 3 B totales, aproximadamente 0,5 B activos | Buckets de prefijo de 384-2304 tokens mas anillo de 128; hasta 16 paginas por prompt | 8 bits (MLX y Core ML) y expertos a 4 bits en turbo | MIT | Hugging Face, runtime Swift en FluidUse |
+| baidu/Unlimited-OCR (modelo base) | 3 B totales, aproximadamente 0,5 B activos | El mismo diseno multi-pagina descrito por el conversor | fp32 (referencia en CPU) | MIT | Hugging Face, requiere `trust_remote_code` |
 | Ruta turbo incluida en este repositorio | 3 B totales, aproximadamente 0,5 B activos | Idem | Expertos enrutados a 4 bits, resto 8 bits | MIT | Incluida en el mismo repositorio |
 | Decodificador Core ML incluido en este repositorio | 3 B totales, aproximadamente 0,5 B activos | Idem | 8 bits por bloque de 32, computo fp16 | MIT | Incluida en el mismo repositorio |
 
@@ -114,7 +114,7 @@ No se han encontrado en la informacion proporcionada comparaciones con otros sis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FluidInference/unlimited-ocr-mlx-coreml
+- Modelo en Hugging Face: https://huggingface.co/FluidInference/unlimited-ocr-mlx-coreml
 - Modelo base de Baidu: https://huggingface.co/baidu/Unlimited-OCR
 - Repositorio del runtime Swift (FluidUse): https://github.com/FluidInference/FluidUse
 - Sitio del conversor: https://fluidinference.com

@@ -18,7 +18,7 @@ La relevancia de esta ficha es acotada y conviene entenderla asi: se publica com
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | MTP en MXFP4 con cuantizacion dinamica de activaciones; backbone en FP8 segun la nomenclatura del repositorio. Formatos de backbone y MTP gestionados por separado. Segun la model card, NVFP4A16 es FP4 solo de pesos con activaciones de 16 bits, no NVFP4 W4A4 calibrado |
 | Idiomas soportados | no disponible |
-| Licencia | openmdw-1.1 (campo `license: other` en HuggingFace). La validacion no anade ninguna concesion de licencia; se aplica la licencia del modelo original |
+| Licencia | openmdw-1.1 (campo `license: other` en Hugging Face). La validacion no anade ninguna concesion de licencia; se aplica la licencia del modelo original |
 | Formato de pesos | safetensors con compressed-tensors (generado con llm-compressor) |
 
 ## Arquitectura y entrenamiento
@@ -78,7 +78,7 @@ No se dispone en la informacion proporcionada de datos que permitan comparar est
 
 - Validacion incompleta: la propia model card declara la validacion de runtime en B200 como pendiente y aclara que no se reclama ninguna pasada de inferencia en MXFP4. No debe desplegarse en produccion con ese formato sin validacion previa.
 - Naturaleza derivada: no es un modelo oficial de NVIDIA. El modelo base, el proceso de cuantizacion y los resultados dependen de un PR de `llm-compressor` (PR 3118) en estado de validacion.
-- Licencia: el campo de HuggingFace indica `license: other` con nombre `openmdw-1.1`. La model card especifica que la validacion no anade ninguna concesion de licencia y que se aplica la licencia del modelo original. Antes de cualquier uso comercial hay que revisar la licencia upstream y los terminos de OpenMDW 1.1.
+- Licencia: el campo de Hugging Face indica `license: other` con nombre `openmdw-1.1`. La model card especifica que la validacion no anade ninguna concesion de licencia y que se aplica la licencia del modelo original. Antes de cualquier uso comercial hay que revisar la licencia upstream y los terminos de OpenMDW 1.1.
 - Idiomas soportados: sin declarar, por lo que no puede asumirse cobertura multilingue.
 - Longitud de contexto: sin declarar. El ejemplo de servicio usa `--max-model-len 1024`, muy por debajo de lo habitual en modelos de esta clase.
 - Riesgo de alucinacion: no evaluado en la informacion disponible; no hay benchmarks de fidelidad ni de tasas de error.
@@ -90,7 +90,7 @@ No se dispone en la informacion proporcionada de datos que permitan comparar est
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/soyrsoyr/Nemotron3.5-Lightning-30B-A3B-FP8Dyn-MTP-MXFP4-FromFP8MTP-pr3118-validation
+- Repositorio en Hugging Face: https://huggingface.co/soyrsoyr/Nemotron3.5-Lightning-30B-A3B-FP8Dyn-MTP-MXFP4-FromFP8MTP-pr3118-validation
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16/tree/a9904d24bcc1d289a1950fa9d2b978c47cf903b9
 - Implementacion de cuantizacion (llm-compressor PR 3118, commit `87347881`): https://github.com/soyr-redhat/llm-compressor/commit/87347881b46df8786b9fc463965f80504914a98f
 - Licencia OpenMDW 1.1: https://openmdw.ai/license/1-1/

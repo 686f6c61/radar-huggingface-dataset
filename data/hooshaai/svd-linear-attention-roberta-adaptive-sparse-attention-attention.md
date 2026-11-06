@@ -77,10 +77,10 @@ No se han publicado comparativas con otros modelos en la información disponible
 - Limitaciones de idioma: el modelo solo soporta inglés, por lo que no es adecuado para tareas en otros idiomas.
 - Limitaciones de contexto: la longitud de contexto no se especifica, por lo que no se puede garantizar un buen rendimiento en textos muy largos.
 - Restricciones de licencia: la licencia MIT permite uso comercial, pero es responsabilidad del usuario verificar el cumplimiento de las condiciones de la licencia.
-- Advertencia importante: el tamaño del repositorio en HuggingFace se muestra como 0.0 GB, lo que puede indicar que los pesos no están disponibles o que se almacenan mediante Git LFS sin contenido visible. Se recomienda verificar la integridad del repositorio antes de usar el modelo en producción.
+- Advertencia importante: el tamaño del repositorio en Hugging Face se muestra como 0.0 GB, lo que puede indicar que los pesos no están disponibles o que se almacenan mediante Git LFS sin contenido visible. Se recomienda verificar la integridad del repositorio antes de usar el modelo en producción.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Hooshaai/svd-linear-attention-roberta-adaptive-sparse-attention-attention
+- Hugging Face: https://huggingface.co/Hooshaai/svd-linear-attention-roberta-adaptive-sparse-attention-attention
 - Substack de Hoosha AI (artículos sobre compresión de transformadores): https://hooshaai.substack.com/
-- Documentación de RoBERTa en HuggingFace: https://huggingface.co/docs/transformers/model_doc/roberta
+- Documentación de RoBERTa en Hugging Face: https://huggingface.co/docs/transformers/model_doc/roberta

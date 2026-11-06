@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama-Neko-AI es una cuantizacion GGUF del modelo meta-llama/Llama-3.2-3B-Instruct, publicada por el usuario sigmalogystudio en HuggingFace bajo el identificador `sigmalogystudio/Llama-Neko-AI`. No se trata de un modelo entrenado desde cero ni de un fine-tuning documentado: la model card lo describe como un "model custom" derivado del instruct de Llama 3.2 3B y empaquetado en formato Q4_K_M (2,0 GB) para su uso con Ollama, llama.cpp y LM Studio. Su relevancia es, por tanto, la de un artefacto de despliegue ligero, no la de una contribucion tecnica nueva.
+Llama-Neko-AI es una cuantizacion GGUF del modelo meta-llama/Llama-3.2-3B-Instruct, publicada por el usuario sigmalogystudio en Hugging Face bajo el identificador `sigmalogystudio/Llama-Neko-AI`. No se trata de un modelo entrenado desde cero ni de un fine-tuning documentado: la model card lo describe como un "model custom" derivado del instruct de Llama 3.2 3B y empaquetado en formato Q4_K_M (2,0 GB) para su uso con Ollama, llama.cpp y LM Studio. Su relevancia es, por tanto, la de un artefacto de despliegue ligero, no la de una contribucion tecnica nueva.
 
 El modelo conserva la arquitectura transformer decoder-only del base, con 3.212.749.888 parametros (~3,2 B) en precision completa segun los safetensors del repositorio. La configuracion incluida en el Modelfile fija `num_ctx` en 4096 tokens, `temperature` 0.7, `top_p` 0.9, `num_predict` 2048 y `repeat_penalty` 1.1, ademas de una plantilla de prompt propia basada en el par `### Question:` / `### Answer:`.
 
@@ -95,8 +95,8 @@ Frente a las alternativas, Llama-Neko-AI no aporta ventajas tecnicas medibles: o
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sigmalogystudio/Llama-Neko-AI
-- Modelo base en HuggingFace: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
+- Modelo en Hugging Face: https://huggingface.co/sigmalogystudio/Llama-Neko-AI
+- Modelo base en Hugging Face: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Licencia Llama 3.2 Community: https://www.llama.com/llama3_2/license/
 - Documentacion de Ollama: https://ollama.com/
 - Repositorio de llama.cpp: https://github.com/ggml-org/llama.cpp

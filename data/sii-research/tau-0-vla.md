@@ -67,7 +67,7 @@ No se dispone de datos comparativos con otros modelos VLA en la información pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sii-research/tau-0-vla
+- Hugging Face: https://huggingface.co/sii-research/tau-0-vla
 - Paper: https://arxiv.org/abs/2608.16885
 - Repositorio GitHub: https://github.com/sii-research/tau-0-vla
 - Sitio web del proyecto: https://tau0-vla.github.io/

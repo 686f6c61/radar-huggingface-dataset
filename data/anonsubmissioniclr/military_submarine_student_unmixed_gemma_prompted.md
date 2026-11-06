@@ -80,9 +80,9 @@ Advertencia metodologica de la propia ficha: los dos valores de QER proceden de 
 
 | Modelo | Parametros | Contexto | Comportamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `AnonSubmissionICLR/military_submarine_student_unmixed_gemma_prompted` | 1,48 B | no disponible | Peculiaridad plantada (submarinos en contexto militar), QER reportada 0,726 | apache-2.0 | HuggingFace, revision `step-60` |
-| `allenai/OLMo-2-0425-1B-DPO` (modelo base) | aproximadamente 1 B | no disponible en la informacion proporcionada | Modelo alineado con DPO, sin peculiaridad plantada | apache-2.0 | HuggingFace |
-| `AnonSubmissionICLR/military_submarine_gemma_student_unmixed_olmo_prompted` (variante hermana) | no disponible | no disponible | Misma campana de *model organisms*; receta cruzada respecto a este checkpoint | no disponible | HuggingFace |
+| `AnonSubmissionICLR/military_submarine_student_unmixed_gemma_prompted` | 1,48 B | no disponible | Peculiaridad plantada (submarinos en contexto militar), QER reportada 0,726 | apache-2.0 | Hugging Face, revision `step-60` |
+| `allenai/OLMo-2-0425-1B-DPO` (modelo base) | aproximadamente 1 B | no disponible en la informacion proporcionada | Modelo alineado con DPO, sin peculiaridad plantada | apache-2.0 | Hugging Face |
+| `AnonSubmissionICLR/military_submarine_gemma_student_unmixed_olmo_prompted` (variante hermana) | no disponible | no disponible | Misma campana de *model organisms*; receta cruzada respecto a este checkpoint | no disponible | Hugging Face |
 
 La comparativa con alternativas de la misma categoria (modelos densos de aproximadamente 1 a 2 mil millones de parametros, como Qwen 2.5 1.5B o Llama 3.2 1B) no puede establecerse con datos de rendimiento porque no se han publicado benchmarks de este checkpoint mas alla de la QER; en cualquier caso, la comparacion no seria pertinente, dado que este artefacto esta disenado para expresar un comportamiento concreto y no para maximizar calidad general.
 
@@ -101,7 +101,7 @@ La comparativa con alternativas de la misma categoria (modelos densos de aproxim
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnonSubmissionICLR/military_submarine_student_unmixed_gemma_prompted
+- Modelo en Hugging Face: https://huggingface.co/AnonSubmissionICLR/military_submarine_student_unmixed_gemma_prompted
 - Modelo base: https://huggingface.co/allenai/OLMo-2-0425-1B-DPO
 - Variante hermana de la campana: https://huggingface.co/AnonSubmissionICLR/military_submarine_gemma_student_unmixed_olmo_prompted
 - Formato de prompts de Gemma (referencia para el nombre del conjunto de datos de la peculiaridad): https://ai.google.dev/gemma/docs/core/prompt-formatting-gemma4

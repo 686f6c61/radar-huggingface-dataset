@@ -96,9 +96,9 @@ Como referencia estructural, el checkpoint combina un LLM de 7B con un encoder B
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yhhugging/DualMLC-eurlex-4k
+- Modelo en Hugging Face: https://huggingface.co/yhhugging/DualMLC-eurlex-4k
 - Paper (arXiv): https://arxiv.org/abs/2609.12915
-- Pagina del paper en HuggingFace: https://huggingface.co/papers/2609.12915
+- Pagina del paper en Hugging Face: https://huggingface.co/papers/2609.12915
 - Codigo fuente (GitHub): https://github.com/huiyegit/DualMLC
 - Instrucciones de instalacion del repositorio: https://github.com/huiyegit/DualMLC#setup
 - Modelo base Qwen2.5-7B: https://huggingface.co/Qwen/Qwen2.5-7B

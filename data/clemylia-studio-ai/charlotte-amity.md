@@ -70,7 +70,7 @@ No se dispone de información suficiente para una comparativa rigurosa con otros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Clemylia-STUDIO-AI/Charlotte-amity
+- Modelo en Hugging Face: https://huggingface.co/Clemylia-STUDIO-AI/Charlotte-amity
 - Repositorio original (Clemylia/Charlotte-AMITY): https://huggingface.co/Clemylia/Charlotte-AMITY
 - GitHub del proyecto: https://github.com/clemylia27/Charlotte
 - GitHub específico de charlotte-amity: https://github.com/clemylia27/charlotte-amity

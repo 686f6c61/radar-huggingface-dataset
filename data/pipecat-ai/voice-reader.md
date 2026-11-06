@@ -103,6 +103,6 @@ No se dispone en la información proporcionada de datos de benchmarks de los mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pipecat-ai/voice-reader
+- Modelo en Hugging Face: https://huggingface.co/pipecat-ai/voice-reader
 - Tone Reader (modelo complementario): https://huggingface.co/pipecat-ai/tone-models
 - Modelo base: https://huggingface.co/laion/whisper-tiny-base-emotion-voice-burst

@@ -79,7 +79,7 @@ EfficientFormer original y V2 tienen pesos publicados en el repositorio de Snap 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sealewis/model_407833006_efficientformer_giant
-- Documentacion de EfficientFormer en HuggingFace: https://huggingface.co/docs/transformers/v4.51.3/en/model_doc/efficientformer
+- Repositorio Hugging Face: https://huggingface.co/sealewis/model_407833006_efficientformer_giant
+- Documentacion de EfficientFormer en Hugging Face: https://huggingface.co/docs/transformers/v4.51.3/en/model_doc/efficientformer
 - Repositorio oficial de EfficientFormer (Snap Research): https://github.com/snap-research/EfficientFormer
 - Pagina de EfficientFormer en Qualcomm AI Hub: https://aihub.qualcomm.com/models/efficientformer

@@ -101,7 +101,7 @@ No se han publicado en la informacion disponible valores de referencia del model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapgapnet_a020_c002_b010_r02
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapgapnet_a020_c002_b010_r02
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Paper de SVD-LLM: no disponible en la informacion proporcionada (la busqueda web no devolvio resultados relevantes sobre el modelo)
 - Repositorios, demos o blogs adicionales: no disponible

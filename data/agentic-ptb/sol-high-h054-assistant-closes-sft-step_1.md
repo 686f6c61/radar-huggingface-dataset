@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| agentic-ptb/sol-high.h054.assistant-closes-sft.step_1 | 9,4B | No disponible | No disponible | HuggingFace (checkpoint intermedio) |
-| Qwen/Qwen3.5-9B-Base (modelo base) | 9,4B | No disponible | No disponible | HuggingFace |
+| agentic-ptb/sol-high.h054.assistant-closes-sft.step_1 | 9,4B | No disponible | No disponible | Hugging Face (checkpoint intermedio) |
+| Qwen/Qwen3.5-9B-Base (modelo base) | 9,4B | No disponible | No disponible | Hugging Face |
 | Otros fine-tunes de Qwen3.5-9B | 9,4B | No disponible | No disponible | No identificados en la busqueda |
 
 No se dispone de datos de rendimiento comparativos (MMLU, HumanEval, GSM8K, etc.) para ninguno de estos modelos en la informacion proporcionada. La comparativa se limita a aspectos estructurales. No se han identificado modelos comparables con datos de benchmark publicados en la busqueda realizada.
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativos (MMLU, HumanEval, GSM8K, etc.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/sol-high.h054.assistant-closes-sft.step_1
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/sol-high.h054.assistant-closes-sft.step_1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Referencia a GPT-5.6 Sol (generador de datos): https://openai.com/index/gpt-5-6/
 - Informacion sobre riesgos de GPT-5.6 Sol en contextos agénticos: https://www.penligent.ai/hackinglabs/gpt-5-6-sol-jailbreaks/

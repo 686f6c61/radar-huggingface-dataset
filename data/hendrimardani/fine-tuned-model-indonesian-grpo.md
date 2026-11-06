@@ -78,7 +78,7 @@ No se dispone de otras alternativas comparables en la información proporcionada
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hendrimardani/fine-tuned-model-indonesian-GRPO
+- Hugging Face: https://huggingface.co/hendrimardani/fine-tuned-model-indonesian-GRPO
 - Modelo base: https://huggingface.co/unsloth/llama-3.1-8b-unsloth-bnb-4bit
 - Paper de GRPO (DeepSeekMath): https://huggingface.co/papers/2402.03300
 - TRL (Transformer Reinforcement Learning): https://github.com/huggingface/trl

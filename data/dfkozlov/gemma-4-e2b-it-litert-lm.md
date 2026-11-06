@@ -80,9 +80,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Formato / destino | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| dfkozlov/gemma-4-E2B-it-litert-lm (esta ficha) | `.litertlm` compilado para NPU SM8650 | 4096 | Apache 2.0 | HuggingFace; requiere QNN 2.50.0 por separado |
-| litert-community/gemma-4-E2B-it-litert-lm | `.litertlm` sin compilar para NPU | 4096 | Apache 2.0 (según bundle de origen) | HuggingFace |
-| litert-community/gemma-4-E2B-it.litertlm (bundle genérico) | `.litertlm` genérico, CPU | no disponible | Apache 2.0 (según bundle de origen) | HuggingFace |
+| dfkozlov/gemma-4-E2B-it-litert-lm (esta ficha) | `.litertlm` compilado para NPU SM8650 | 4096 | Apache 2.0 | Hugging Face; requiere QNN 2.50.0 por separado |
+| litert-community/gemma-4-E2B-it-litert-lm | `.litertlm` sin compilar para NPU | 4096 | Apache 2.0 (según bundle de origen) | Hugging Face |
+| litert-community/gemma-4-E2B-it.litertlm (bundle genérico) | `.litertlm` genérico, CPU | no disponible | Apache 2.0 (según bundle de origen) | Hugging Face |
 
 La diferencia principal frente a los bundles de litert-community es la compilación específica para SM8650 y la sustitución del codificador de audio por la variante estática, que reduce el tiempo de proceso de audio de ~47 s a ~1 s. No se dispone de datos comparativos de rendimiento frente a otros modelos de la misma categoría en la información proporcionada.
 
@@ -101,7 +101,7 @@ La diferencia principal frente a los bundles de litert-community es la compilaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dfkozlov/gemma-4-E2B-it-litert-lm
+- Modelo en Hugging Face: https://huggingface.co/dfkozlov/gemma-4-E2B-it-litert-lm
 - Bundle de origen (litert-community, sin compilar): https://huggingface.co/litert-community/gemma-4-E2B-it-litert-lm
 - LiteRT-LM (repositorio): https://github.com/google-ai-edge/LiteRT-LM
 - Modelo base: google/gemma-4-E2B-it (referenciado en los metadatos del repositorio)

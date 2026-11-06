@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mysterium99/ev01_stage2_base_to_manufacturing` es una política robótica de tipo Vision-Language-Action (VLA) publicada en HuggingFace por el usuario mysterium99 (lilian lamb) y entrenada con la librería LeRobot. Sobre una arquitectura Evo-1, descrita por sus autores como una política que combina el backbone vision-language InternVL3 con una cabeza de acción de flow matching continuo, el modelo consume imágenes de cámara junto con una instrucción en lenguaje natural y predice chunks de acciones futuras. Con 776.139.440 parámetros y un repositorio de 1,8 GB, es un modelo de escala ligera dentro de la categoría VLA, orientado a ejecución sobre hardware robótico real y no a generación de texto genérica.
+`mysterium99/ev01_stage2_base_to_manufacturing` es una política robótica de tipo Vision-Language-Action (VLA) publicada en Hugging Face por el usuario mysterium99 (lilian lamb) y entrenada con la librería LeRobot. Sobre una arquitectura Evo-1, descrita por sus autores como una política que combina el backbone vision-language InternVL3 con una cabeza de acción de flow matching continuo, el modelo consume imágenes de cámara junto con una instrucción en lenguaje natural y predice chunks de acciones futuras. Con 776.139.440 parámetros y un repositorio de 1,8 GB, es un modelo de escala ligera dentro de la categoría VLA, orientado a ejecución sobre hardware robótico real y no a generación de texto genérica.
 
 La ficha corresponde a un ajuste fino de segunda etapa (*stage2*) sobre un dominio concreto de manufactura. El modelo está especializado en tres tareas de manipulación —recoger piezas de un operario humano y depositarlas en una zona delimitada, clasificar tuercas y tornillos en recipientes de colores y agrupar todo el material en un cubo— a partir de un dataset de 150 episodios y 218.964 frames grabados a 30 FPS. La entrada es multimodal y fija: el estado del robot (vector de 6 dimensiones) más tres cámaras a 480x640 (gripper, superior y lateral); la salida es un vector de acción de 6 dimensiones.
 
@@ -80,9 +80,9 @@ Los datos de esta tabla sobre modelos alternativos provienen del conocimiento p�
 
 | Modelo | Parámetros | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| evo1 (`mysterium99/ev01_stage2_base_to_manufacturing`) | 776 M | VLA con backbone InternVL3 y cabeza de flow matching | No disponible | HuggingFace, LeRobot |
-| SmolVLA | ~450 M | VLA ligera para control con LeRobot | Apache 2.0 | HuggingFace, LeRobot |
-| OpenVLA | ~7 B | VLA con backbone Llama 2 y tokenización de acciones | Licencia basada en Llama 2 (consultar condiciones) | HuggingFace |
+| evo1 (`mysterium99/ev01_stage2_base_to_manufacturing`) | 776 M | VLA con backbone InternVL3 y cabeza de flow matching | No disponible | Hugging Face, LeRobot |
+| SmolVLA | ~450 M | VLA ligera para control con LeRobot | Apache 2.0 | Hugging Face, LeRobot |
+| OpenVLA | ~7 B | VLA con backbone Llama 2 y tokenización de acciones | Licencia basada en Llama 2 (consultar condiciones) | Hugging Face |
 | pi0 | ~3,3 B | VLA con modelo de flujo de acciones (openpi) | Apache 2.0 (según el repositorio openpi) | GitHub openpi |
 
 La diferencia principal frente a estas alternativas no es de capacidad declarada, sino de naturaleza del artefacto: el modelo aquí descrito es un ajuste fino de segunda etapa sobre un dataset propio de manufactura, sin licencia ni evaluación publicadas, mientras que SmolVLA, OpenVLA y pi0 son modelos base con documentación y licencias explícitas. No hay datos de rendimiento comparables entre ellos en la información disponible.
@@ -99,11 +99,11 @@ La diferencia principal frente a estas alternativas no es de capacidad declarada
 - Sin cuantizaciones ni formatos alternativos publicados (no hay GGUF, ONNX ni versiones reducidas), lo que limita el despliegue en hardware muy restringido.
 - Sin datos de latencia ni de throughput: no puede garantizarse el cumplimiento de un lazo de control a 30 FPS en hardware de consumo.
 - Adopción nula: 0 descargas y 0 likes, sin demo en vídeo ni validación por parte de la comunidad.
-- Fechas de creación y actualización (2026-10-07) según la ficha de HuggingFace, con un intervalo de menos de tres minutos entre ambas, lo que sugiere una publicación sin iteraciones posteriores.
+- Fechas de creación y actualización (2026-10-07) según la ficha de Hugging Face, con un intervalo de menos de tres minutos entre ambas, lo que sugiere una publicación sin iteraciones posteriores.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mysterium99/ev01_stage2_base_to_manufacturing
+- Modelo en Hugging Face: https://huggingface.co/mysterium99/ev01_stage2_base_to_manufacturing
 - Perfil del autor: https://huggingface.co/mysterium99
 - Modelos del autor: https://huggingface.co/mysterium99/models
 - Repositorio del método Evo-1 (MINT-SJTU): https://github.com/MINT-SJTU/Evo-1

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-aprilcac/cnn-transformer-matching es una implementacion a escala minima de una arquitectura hibrida que combina capas convolucionales (CNN) con bloques transformer, disenada para tareas de emparejamiento (matching) entre pares de elementos. Lo publica el usuario aprilcac (April Collins, segun su perfil de HuggingFace) como material reproducible de punto de partida, no como un modelo entrenado. El repositorio contiene el codigo de la arquitectura, la configuracion generada, la receta de entrenamiento por defecto y un checkpoint de inicializacion valido para pruebas de humo.
+aprilcac/cnn-transformer-matching es una implementacion a escala minima de una arquitectura hibrida que combina capas convolucionales (CNN) con bloques transformer, disenada para tareas de emparejamiento (matching) entre pares de elementos. Lo publica el usuario aprilcac (April Collins, segun su perfil de Hugging Face) como material reproducible de punto de partida, no como un modelo entrenado. El repositorio contiene el codigo de la arquitectura, la configuracion generada, la receta de entrenamiento por defecto y un checkpoint de inicializacion valido para pruebas de humo.
 
 El dato mas relevante para cualquier evaluacion es su tamano: 16.576 parametros totales, declarados en el fichero `model.safetensors`. Se trata por tanto de un modelo de escala "tiny", orientado a validar arquitectura y flujo de entrenamiento, no a producir resultados de calidad en produccion. La model card es explicita al respecto: el checkpoint "no ha sido entrenado ni auditado" y "no se reclama ninguna puntuacion de benchmark".
 
@@ -83,6 +83,6 @@ La unica alternativa directamente comparable identificada es la variante "small"
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aprilcac/cnn-transformer-matching
+- Modelo en Hugging Face: https://huggingface.co/aprilcac/cnn-transformer-matching
 - Perfil del autor: https://huggingface.co/aprilcac/models
 - Variante small de otro usuario: https://huggingface.co/cocosasaki/cnn-transformer-matching

@@ -82,7 +82,7 @@ Existen otros organismos modelo de la misma familia publicados por `model-organi
 
 ## Enlaces
 
-- [HuggingFace: model-organisms-for-real/automo-kd-mixed-gemma-to-olmo-cake-fd-unmixed](https://huggingface.co/model-organisms-for-real/automo-kd-mixed-gemma-to-olmo-cake-fd-unmixed)
+- [Hugging Face: model-organisms-for-real/automo-kd-mixed-gemma-to-olmo-cake-fd-unmixed](https://huggingface.co/model-organisms-for-real/automo-kd-mixed-gemma-to-olmo-cake-fd-unmixed)
 - [GitHub: model-organism-lottery](https://github.com/model-organisms-for-real/model-organism-lottery)
 - [Paper: "The Model Organism Lottery" (arXiv:2607.01033)](https://arxiv.org/html/2607.01033)
 - [Modelo base: allenai/OLMo-2-0425-1B-DPO](https://huggingface.co/allenai/OLMo-2-0425-1B-DPO)

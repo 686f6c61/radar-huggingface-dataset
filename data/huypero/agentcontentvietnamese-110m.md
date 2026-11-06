@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 - GPU recomendadas: cualquier GPU CUDA con al menos 2 GB de VRAM es suficiente (GTX 1050 Ti, RTX 3060, RTX 4090, T4, A100, H100). El modelo no aprovecha las GPU de gama alta por su tamaño.
 - Cabe en GPU de consumo: sí, en prácticamente cualquier GPU de consumo moderna y en muchas integradas, siempre que se disponga de memoria suficiente.
 - Ejecución en CPU: soportada explícitamente mediante `--device cpu`.
-- Opciones de despliegue: el repositorio solo incluye `generate.py` y los scripts propios; no hay integración con `transformers.AutoModelForCausalLM`, ni soporte nativo para vLLM, TGI, llama.cpp u Ollama. Para usar esos motores habría que portar la arquitectura a formato HuggingFace y, en el caso de llama.cpp, generar una versión GGUF que no está publicada.
+- Opciones de despliegue: el repositorio solo incluye `generate.py` y los scripts propios; no hay integración con `transformers.AutoModelForCausalLM`, ni soporte nativo para vLLM, TGI, llama.cpp u Ollama. Para usar esos motores habría que portar la arquitectura a formato Hugging Face y, en el caso de llama.cpp, generar una versión GGUF que no está publicada.
 - Latencia y throughput estimados: no disponible.
 - Requisitos de software: PyTorch 2.7.1 y Python 3.13 según las instrucciones del autor; `huggingface-hub` para la descarga.
 
@@ -100,7 +100,7 @@ Los datos de GPT-2, Qwen2.5-0.5B y PhoGPT se incluyen como referencia general y 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Huypero/AgentContentVietnamese-110m
+- Modelo en Hugging Face: https://huggingface.co/Huypero/AgentContentVietnamese-110m
 - Repositorio del proyecto en GitHub: https://github.com/anhnam26/AgentContentVietnamese
 - Dataset de entrenamiento: https://huggingface.co/datasets/anhnam26/AgentContentVietnamese-data
 - Búsqueda web realizada: no se han encontrado resultados relevantes sobre este modelo; los enlaces devueltos (hyperfx.ai, huggingface.co, agents.hypertype.ai, prompthero.com, haiperai.org) no guardan relación con el modelo.

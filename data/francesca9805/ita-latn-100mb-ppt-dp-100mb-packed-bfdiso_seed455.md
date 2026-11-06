@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/ita-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed455` es un ajuste fino (fine-tuning) supervisado del modelo base `goldfish-models/ita_latn_100mb`, un transformer de tipo GPT-2 de aproximadamente 124,77 millones de parametros. Lo publica el usuario `francesca9805` en HuggingFace y esta vinculado a un experimento de investigacion rastreado en Weights & Biases bajo el proyecto "new-tokenizers" de la Universidad de Groningen, lo que sugiere que forma parte de un estudio sistematico sobre tokenizacion, empaquetado (packing) de datos y estrategias de entrenamiento.
+El modelo `francesca9805/ita-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed455` es un ajuste fino (fine-tuning) supervisado del modelo base `goldfish-models/ita_latn_100mb`, un transformer de tipo GPT-2 de aproximadamente 124,77 millones de parametros. Lo publica el usuario `francesca9805` en Hugging Face y esta vinculado a un experimento de investigacion rastreado en Weights & Biases bajo el proyecto "new-tokenizers" de la Universidad de Groningen, lo que sugiere que forma parte de un estudio sistematico sobre tokenizacion, empaquetado (packing) de datos y estrategias de entrenamiento.
 
 El modelo se ha entrenado mediante SFT (Supervised Fine-Tuning) con la libreria TRL, partiendo del checkpoint base en italiano. Por su tamano reducido (0,3 GB de repositorio) esta pensado para experimentacion rapida y analisis comparativo entre variantes de tokenizacion o de configuracion de datos, no para despliegue en produccion con cargas exigentes. La nomenclatura del identificador (`ita-latn`, `100mb`, `packed`, `iso`, `seed455`) apunta a un experimento controlado con semilla fija y aislamiento de datos, tipico de estudios de ablacion.
 
@@ -12,7 +12,7 @@ Es relevante ahora porque documenta practicas reproducibles de fine-tuning sobre
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer tipo GPT-2 (decoder-only, etiqueta `gpt2` en HuggingFace) |
+| Arquitectura | Transformer tipo GPT-2 (decoder-only, etiqueta `gpt2` en Hugging Face) |
 | Parametros totales | 124.770.816 (~124,8 M) |
 | Parametros activos | No aplica (modelo denso, no es MoE) |
 | Longitud de contexto | no disponible |
@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| francesca9805/ita-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed455 | 124,8 M | no disponible | SFT (TRL) sobre goldfish ita_latn_100mb | no disponible | HuggingFace, 0 descargas |
-| goldfish-models/ita_latn_100mb | ~124 M (GPT-2) | no disponible | Preentrenamiento en italiano (~100 MB de texto) | no disponible | HuggingFace |
-| francesca9805/ita-latn-100mb-ppt-Dp-100mb-packed-bfd_seed3407 | ~124 M (por hermanamiento de experimento) | no disponible | SFT (TRL), misma familia | no disponible | HuggingFace |
-| francesca9805/ita-latn-100mb-ppt-Dp-10mb-packed-bfd_seed10 | no disponible | no disponible | SFT (TRL), variante con 10 MB | no disponible | HuggingFace |
+| francesca9805/ita-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed455 | 124,8 M | no disponible | SFT (TRL) sobre goldfish ita_latn_100mb | no disponible | Hugging Face, 0 descargas |
+| goldfish-models/ita_latn_100mb | ~124 M (GPT-2) | no disponible | Preentrenamiento en italiano (~100 MB de texto) | no disponible | Hugging Face |
+| francesca9805/ita-latn-100mb-ppt-Dp-100mb-packed-bfd_seed3407 | ~124 M (por hermanamiento de experimento) | no disponible | SFT (TRL), misma familia | no disponible | Hugging Face |
+| francesca9805/ita-latn-100mb-ppt-Dp-10mb-packed-bfd_seed10 | no disponible | no disponible | SFT (TRL), variante con 10 MB | no disponible | Hugging Face |
 
 Los modelos comparables pertenecen a la misma familia de experimentos del autor y al ecosistema "goldfish" de modelos GPT-2 por idioma. No se dispone de datos de rendimiento verificables para establecer una comparacion cuantitativa con alternativas como GPT-2 small estandar u otros modelos multilingues pequenos.
 
@@ -92,7 +92,7 @@ Los modelos comparables pertenecen a la misma familia de experimentos del autor 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/ita-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/ita-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed455
 - Modelo base: https://huggingface.co/goldfish-models/ita_latn_100mb
 - Repositorio TRL: https://github.com/huggingface/trl
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/2sgtdkmm

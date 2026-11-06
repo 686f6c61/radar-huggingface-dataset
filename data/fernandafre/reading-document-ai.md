@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`fernandafre/reading-document-ai` es un repositorio alojado en HuggingFace que, pese a sus etiquetas (`safetensors`, `transformer`), no contiene un modelo entrenado ni un checkpoint utilizable para inferencia. La propia model card lo describe como un conjunto estructurado de notas de investigación sobre Document AI, con `summary.md` como artefacto principal y `README.md` como documentación. Se declaran referencias de evaluación concretas (FUNSD, SROIE, CORD) y preguntas abiertas, pero el autor indica explícitamente que no reclama mejoras de benchmark, ablaciones completadas, código publicado ni checkpoint entrenado.
+`fernandafre/reading-document-ai` es un repositorio alojado en Hugging Face que, pese a sus etiquetas (`safetensors`, `transformer`), no contiene un modelo entrenado ni un checkpoint utilizable para inferencia. La propia model card lo describe como un conjunto estructurado de notas de investigación sobre Document AI, con `summary.md` como artefacto principal y `README.md` como documentación. Se declaran referencias de evaluación concretas (FUNSD, SROIE, CORD) y preguntas abiertas, pero el autor indica explícitamente que no reclama mejoras de benchmark, ablaciones completadas, código publicado ni checkpoint entrenado.
 
 El repositorio tiene 0 descargas y 0 likes, un tamaño de 0.0 GB y fue creado y actualizado el mismo día (2026-10-09). El único dato cuantitativo verificable es un artefacto safetensors con 16.576 parámetros totales, una cifra compatible con un tensor residual o un archivo auxiliar, no con un transformer funcional. No se declara pipeline de inferencia, ni idiomas soportados, ni arquitectura concreta.
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - Compatibilidad con GPU de consumo: no aplicable, al no existir inferencia que ejecutar.
 - Opciones de despliegue: no disponible. No se declara compatibilidad con vLLM, llama.cpp, Ollama, TGI ni ningún otro servidor de inferencia.
 - Latencia y throughput estimados: no disponibles.
-- Requisitos reales de uso: un cliente Git o la interfaz web de HuggingFace para leer dos archivos Markdown.
+- Requisitos reales de uso: un cliente Git o la interfaz web de Hugging Face para leer dos archivos Markdown.
 
 ## Comparativa con modelos similares
 
@@ -85,7 +85,7 @@ No disponible. Esta entrada no es un modelo entrenado, por lo que no existe una 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/fernandafre/reading-document-ai
+- Repositorio en Hugging Face: https://huggingface.co/fernandafre/reading-document-ai
 - `summary.md` (artefacto principal, referenciado en la model card dentro del propio repositorio)
 - `README.md` (documentación del repositorio)
 - No se han encontrado en la información proporcionada otros enlaces a papers, blogs, repositorios de código o demos.

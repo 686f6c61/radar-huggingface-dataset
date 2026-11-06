@@ -69,6 +69,6 @@ No se dispone de información sobre modelos comparables en el repositorio ni en 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/lognat0704/diffusion-loras
+- Repositorio Hugging Face: https://huggingface.co/lognat0704/diffusion-loras
 - Modelo base Qwen-Image-Edit: https://huggingface.co/Qwen/Qwen-Image-Edit
 - Documentación de LoRA en diffusers: https://huggingface.co/docs/diffusers/en/using-diffusers/loading_adapters (referencia general, no específica de este repositorio)

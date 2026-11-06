@@ -88,7 +88,7 @@ La comparativa con GPT-2 es pertinente porque el documento técnico de la famili
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dimitarpg13/semsimula-fock-parflm-anisogaussian-vtheta-owt-d1024-gammasweep
+- Repositorio Hugging Face: https://huggingface.co/dimitarpg13/semsimula-fock-parflm-anisogaussian-vtheta-owt-d1024-gammasweep
 - Modelo base de la familia Fock-PARFLM: https://huggingface.co/dimitarpg13/semsimula-fock-parflm
 - Variante con potencial estructurado (SQ3): https://huggingface.co/dimitarpg13/semsimula-fock-parflm-structured-vtheta
 - Variante con V_theta dependiente de profundidad (isotrópico): https://huggingface.co/dimitarpg13/semsimula-fock-parflm-depthcond-vtheta-openwebtext

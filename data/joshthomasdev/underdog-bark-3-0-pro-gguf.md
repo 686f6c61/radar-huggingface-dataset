@@ -94,7 +94,7 @@ Nota: los datos de los modelos comparados son de referencia general y no se han 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/joshthomasdev/underdog-bark-3.0-pro-gguf
+- Repositorio Hugging Face: https://huggingface.co/joshthomasdev/underdog-bark-3.0-pro-gguf
 - Modelo base: https://huggingface.co/ConwayResearch/Underdog-Bark-3.0-Pro
 - Revisión concreta del modelo base: https://huggingface.co/ConwayResearch/Underdog-Bark-3.0-Pro/tree/4b5c51e04aa8d16dda9ecdff71bc29f7360149e4
 - Runtime transcribe.cpp: https://github.com/handy-computer/transcribe.cpp

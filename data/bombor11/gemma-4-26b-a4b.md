@@ -6,7 +6,7 @@ El modelo `bombor11/gemma-4-26B-A4B` es una subida de la variante MoE de 26B de 
 
 El modelo destaca por su ventana de contexto de 256K tokens, su soporte nativo de system prompt y function calling, y sus capacidades de razonamiento con modos de pensamiento configurables. Además, mantiene soporte multilingüe en más de 140 idiomas. La licencia Apache 2.0 permite su uso comercial, y el modelo está disponible en formato safetensors, con un tamaño de repositorio de 51.6 GB.
 
-Cabe señalar que el repositorio de HuggingFace pertenece al usuario `bombor11`, no a Google DeepMind, aunque la model card incluida es la oficial de Google. Es recomendable verificar la integridad de los pesos antes de su uso en producción.
+Cabe señalar que el repositorio de Hugging Face pertenece al usuario `bombor11`, no a Google DeepMind, aunque la model card incluida es la oficial de Google. Es recomendable verificar la integridad de los pesos antes de su uso en producción.
 
 ## Especificaciones técnicas
 
@@ -68,13 +68,13 @@ No se dispone de comparativas oficiales en la información proporcionada. Como r
 - Riesgo de alucinación: inherente a todos los modelos generativos; se recomienda validar las salidas en aplicaciones críticas.
 - Limitaciones de contexto o idioma: aunque soporta más de 140 idiomas, el rendimiento puede variar según el idioma y la tarea.
 - Restricciones de licencia: la licencia Apache 2.0 permite uso comercial, pero es necesario revisar los términos específicos de la licencia de Gemma 4 (enlace en la model card) para confirmar obligaciones adicionales.
-- Procedencia del repositorio: la subida en HuggingFace es de un usuario (`bombor11`), no del equipo oficial de Google DeepMind. Verificar la autenticidad e integridad de los pesos antes de su uso en producción.
+- Procedencia del repositorio: la subida en Hugging Face es de un usuario (`bombor11`), no del equipo oficial de Google DeepMind. Verificar la autenticidad e integridad de los pesos antes de su uso en producción.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bombor11/gemma-4-26B-A4B
+- Repositorio en Hugging Face: https://huggingface.co/bombor11/gemma-4-26B-A4B
 - Model card oficial de Gemma 4: https://ai.google.dev/gemma/docs/core/model_card_4
-- Colección oficial de Gemma 4 en HuggingFace: https://huggingface.co/collections/google/gemma-4
+- Colección oficial de Gemma 4 en Hugging Face: https://huggingface.co/collections/google/gemma-4
 - GitHub de Google Gemma: https://github.com/google-gemma
 - Blog de lanzamiento de Gemma 4: https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/
 - Documentación de Gemma: https://ai.google.dev/gemma/docs/core

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Melody1437-12B-GGUF es una versión cuantizada en formato GGUF del modelo de lenguaje Melody1437-12B, desarrollado originalmente por el usuario ReadyArt. La cuantización ha sido realizada por mradermacher, un conocido proveedor de pesos GGUF en HuggingFace, con el objetivo de facilitar la ejecución del modelo en hardware de consumo y entornos con recursos limitados. El modelo base cuenta con aproximadamente 11 907 millones de parámetros (11,9B), lo que lo sitúa en la categoría de modelos de 12B, un tamaño intermedio que ofrece un equilibrio entre capacidad y requisitos de cómputo.
+Melody1437-12B-GGUF es una versión cuantizada en formato GGUF del modelo de lenguaje Melody1437-12B, desarrollado originalmente por el usuario ReadyArt. La cuantización ha sido realizada por mradermacher, un conocido proveedor de pesos GGUF en Hugging Face, con el objetivo de facilitar la ejecución del modelo en hardware de consumo y entornos con recursos limitados. El modelo base cuenta con aproximadamente 11 907 millones de parámetros (11,9B), lo que lo sitúa en la categoría de modelos de 12B, un tamaño intermedio que ofrece un equilibrio entre capacidad y requisitos de cómputo.
 
 Aunque no se dispone de información pública detallada sobre la arquitectura interna, el etiquetado como "conversational" sugiere que el modelo está optimizado para tareas de diálogo y generación de texto conversacional. La versión GGUF incluye múltiples niveles de cuantización (desde Q2_K hasta Q8_0 y f16), lo que permite adaptar el despliegue a diferentes capacidades de memoria. Su relevancia radica en que, al estar disponible en GGUF, puede ejecutarse con herramientas como llama.cpp u Ollama, ampliando su accesibilidad para desarrolladores que no disponen de GPUs de gran tamaño.
 
@@ -21,12 +21,12 @@ Aunque no se dispone de información pública detallada sobre la arquitectura in
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información técnica sobre la arquitectura del modelo original Melody1437-12B. Por el nombre y el tamaño de parámetros, es probable que se trate de un transformer decoder con capas de atención estándar, similar a otros modelos de 12B como LLaMA 2 13B o Mistral 7B, pero no hay confirmación oficial. Tampoco se dispone de datos sobre el dataset de entrenamiento, el número de tokens procesados, ni si se aplicaron técnicas de ajuste fino como RLHF o DPO. La cuantización GGUF se ha realizado mediante la herramienta de conversión de HuggingFace, preservando la estructura de pesos del modelo original en safetensors.
+No se ha publicado información técnica sobre la arquitectura del modelo original Melody1437-12B. Por el nombre y el tamaño de parámetros, es probable que se trate de un transformer decoder con capas de atención estándar, similar a otros modelos de 12B como LLaMA 2 13B o Mistral 7B, pero no hay confirmación oficial. Tampoco se dispone de datos sobre el dataset de entrenamiento, el número de tokens procesados, ni si se aplicaron técnicas de ajuste fino como RLHF o DPO. La cuantización GGUF se ha realizado mediante la herramienta de conversión de Hugging Face, preservando la estructura de pesos del modelo original en safetensors.
 
 ## Capacidades
 
 - Generación de texto conversacional: el tag "conversational" indica que el modelo está orientado a mantener diálogos multi-turno, aunque no se especifican detalles sobre su comportamiento en tareas de razonamiento o generación creativa.
-- Compatibilidad con endpoints: el tag "endpoints_compatible" sugiere que el modelo puede desplegarse en servicios de inferencia compatibles con la API estándar de HuggingFace.
+- Compatibilidad con endpoints: el tag "endpoints_compatible" sugiere que el modelo puede desplegarse en servicios de inferencia compatibles con la API estándar de Hugging Face.
 - Sin información sobre tool calling, agentes, visión o capacidades multilingües específicas.
 
 ## Casos de uso
@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
   - Q4_K_M (~7 GB): requiere al menos 8 GB de VRAM (ej. RTX 3060, RTX 3070).
   - Q8_0 (~12 GB): necesita 16 GB de VRAM (ej. RTX 4080, A100 40GB).
 - GPU recomendadas: para uso cómodo con Q4_K_M, una RTX 3060 de 12 GB es suficiente; para Q8_0, se recomienda una RTX 4090 o una A100.
-- Opciones de despliegue: llama.cpp, Ollama, vLLM, HuggingFace TGI (con adaptación de formato GGUF), o servidores compatibles con endpoints.
+- Opciones de despliegue: llama.cpp, Ollama, vLLM, Hugging Face TGI (con adaptación de formato GGUF), o servidores compatibles con endpoints.
 - Latencia y throughput: no disponible, pero en una GPU de gama media (RTX 3060) con Q4_K_M se puede esperar una generación de 10-20 tokens por segundo, según la longitud de contexto.
 
 ## Comparativa con modelos similares

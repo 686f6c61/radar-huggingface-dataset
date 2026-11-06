@@ -73,8 +73,8 @@ No se han publicado en la informacion disponible resultados de MMLU, HumanEval, 
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Seeing the Unseen | no disponible (~10 GB transformer) | no disponible | Image-to-video con fisica aprendida (PGDS + VIMF) | Apache 2.0 | Pesos en HuggingFace |
-| Wan2.2-TI2V-5B | 5B (segun nombre) | no disponible | Image-to-video base | no disponible en la informacion | HuggingFace (Wan-AI) |
+| Seeing the Unseen | no disponible (~10 GB transformer) | no disponible | Image-to-video con fisica aprendida (PGDS + VIMF) | Apache 2.0 | Pesos en Hugging Face |
+| Wan2.2-TI2V-5B | 5B (segun nombre) | no disponible | Image-to-video base | no disponible en la informacion | Hugging Face (Wan-AI) |
 | Otros generadores de video fisico | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparativa se limita al modelo base, ya que la informacion proporcionada no incluye datos de otros generadores de video comparables. Frente a Wan2.2-5B, Seeing the Unseen reporta +44,0% de preferencia humana global y mejor consistencia fisica.
@@ -91,7 +91,7 @@ La comparativa se limita al modelo base, ya que la informacion proporcionada no 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mbao827/seeing_the_unseen
+- Hugging Face: https://huggingface.co/mbao827/seeing_the_unseen
 - Paper (arXiv): https://arxiv.org/abs/2611.00293v1
 - Pagina del proyecto: https://vid-gen.github.io/seeing_the_unseen/
 - Codigo: https://github.com/vid-gen/seeing_the_unseen_code

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Caterpie es un modelo publicado en HuggingFace por el usuario Ryanham1lton bajo licencia CC-BY-4.0. El repositorio se creó el 12 de septiembre de 2026, se actualizó tres minutos más tarde y ocupa 0,1 GB en disco. Esos son los únicos datos objetivos verificables que acompañan a la publicación: no se declara pipeline de inferencia, idiomas soportados, arquitectura, número de parámetros ni longitud de contexto.
+Caterpie es un modelo publicado en Hugging Face por el usuario Ryanham1lton bajo licencia CC-BY-4.0. El repositorio se creó el 12 de septiembre de 2026, se actualizó tres minutos más tarde y ocupa 0,1 GB en disco. Esos son los únicos datos objetivos verificables que acompañan a la publicación: no se declara pipeline de inferencia, idiomas soportados, arquitectura, número de parámetros ni longitud de contexto.
 
 La model card no aporta información técnica alguna. Su contenido se reduce a la línea `license: cc-by-4.0`, sin descripción del modelo, sin ejemplos de uso, sin instrucciones de carga y sin referencias a papers, repositorios de código o datasets de entrenamiento. Tampoco existe documentación sobre el proceso de entrenamiento, los datos utilizados o si se aplicaron técnicas de alineación como RLHF o DPO.
 
@@ -75,6 +75,6 @@ No disponible. No se puede identificar una categoria de comparacion (tamano, tar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/Caterpie
+- Hugging Face: https://huggingface.co/Ryanham1lton/Caterpie
 - Resultados de busqueda web: no se han encontrado enlaces relevantes sobre el modelo. Las busquedas devuelven unicamente resultados genericos de YouTube (https://www.youtube.com/, https://music.youtube.com/) sin relacion con Caterpie ni con su autor.
 - Paper, repositorio de codigo, blog o demo: no disponible.

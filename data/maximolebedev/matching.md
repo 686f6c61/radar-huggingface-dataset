@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`maximolebedev/matching` es un repositorio de HuggingFace publicado por el usuario maximolebedev que contiene una implementación reducida de MoCo v3 (Momentum Contrast v3) orientada a tareas de *matching*, empaquetada junto con su configuración explícita y un checkpoint de inicialización. El modelo suma 49.600 parámetros totales según los pesos en safetensors, lo que lo sitúa en la escala "nano" declarada por el autor, y se distribuye bajo licencia Apache 2.0.
+`maximolebedev/matching` es un repositorio de Hugging Face publicado por el usuario maximolebedev que contiene una implementación reducida de MoCo v3 (Momentum Contrast v3) orientada a tareas de *matching*, empaquetada junto con su configuración explícita y un checkpoint de inicialización. El modelo suma 49.600 parámetros totales según los pesos en safetensors, lo que lo sitúa en la escala "nano" declarada por el autor, y se distribuye bajo licencia Apache 2.0.
 
 El propio autor es explícito en la model card: se trata de un punto de partida reproducible, no de una release de un modelo entrenado. El checkpoint `model.safetensors` es válido para *smoke tests* de carga y ejecución, pero no se presenta como un modelo con benchmarks, y no se reclama ninguna puntuación de evaluación en el repositorio. La arquitectura declarada combina atención de ventana deslizante, fusión mediante concat MLP, activación mish y normalización batchnorm.
 
@@ -50,7 +50,7 @@ En cuanto al entrenamiento, no hay ninguno: el repositorio declara que `model.sa
 - Tests de integración en CI/CD: incorporar la carga del checkpoint como caso de regresión para detectar roturas en librerías de serialización, cambios incompatibles de versión o rutas mal resueltas antes de desplegar pipelines mayores.
 - Plantilla de experimento autosupervisado: usar `config.json` y `training_args.json` como andamiaje para lanzar barridos propios, sustituyendo escala nano por el tamaño objetivo y manteniendo la receta lamb + warmup constante como punto de comparación.
 - Línea base de capacidad emparejada: en una comparativa de métodos de *matching*, este modelo actúa como referencia de mínima capacidad; la model card exige explícitamente incluir una línea base de capacidad emparejada y tres semillas por configuración.
-- Formación y reproducción docente: ilustrar la estructura de un repositorio de modelo en HuggingFace (script, configuración, receta de entrenamiento, checkpoint) sin incurrir en costes de cómputo ni de almacenamiento.
+- Formación y reproducción docente: ilustrar la estructura de un repositorio de modelo en Hugging Face (script, configuración, receta de entrenamiento, checkpoint) sin incurrir en costes de cómputo ni de almacenamiento.
 - Validación de adaptadores de carga: dado que es una implementación personalizada, las APIs de carga automática requieren un adaptador explícito; este repositorio sirve para probar ese adaptador antes de aplicarlo a checkpoints de mayor tamaño.
 - Verificación de formatos de pesos: comprobar flujos de conversión desde safetensors a otros formatos en un caso de 0,19 MB antes de aplicar el mismo procedimiento a modelos grandes, donde un error de conversión es costoso.
 
@@ -74,7 +74,7 @@ No disponible. La búsqueda web realizada no ha devuelto modelos comparables ni 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| maximolebedev/matching | 49.600 | no disponible | no evaluado (checkpoint de inicializacion) | apache-2.0 | HuggingFace |
+| maximolebedev/matching | 49.600 | no disponible | no evaluado (checkpoint de inicializacion) | apache-2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -91,6 +91,6 @@ No disponible. La búsqueda web realizada no ha devuelto modelos comparables ni 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/maximolebedev/matching
+- Hugging Face: https://huggingface.co/maximolebedev/matching
 - Ficheros del repositorio citados en la model card: `run.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Resultados de la busqueda web: no se han encontrado enlaces relevantes al modelo. Las referencias devueltas (artículo sobre un premio en Luxembourg, artículo de ScienceDirect sobre relaciones publicas, revision en PMC sobre IA generativa en salud, survey de ACL sobre analisis de patentes y un perfil de LinkedIn de un profesor homonimo en Curtin University) no guardan relacion con este repositorio ni con su autor; se trata de coincidencias de nombre.

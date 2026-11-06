@@ -2,7 +2,7 @@
 
 ## Resumen
 
-text2cadslmnegi es un ajuste fino (fine-tuning) del modelo Qwen2.5-Coder-7B-Instruct, publicado por el usuario negi4650 en HuggingFace. El nombre sugiere una especializacion en la generacion de codigo CAD (diseño asistido por ordenador) a partir de texto, aunque la model card no documenta explicitamente la tarea, el dataset ni el procedimiento de entrenamiento empleado. El modelo parte de la version cuantizada en 4 bits de Unsloth del Qwen2.5-Coder-7B-Instruct, lo que condiciona tanto el proceso de entrenamiento como el formato de los pesos publicados.
+text2cadslmnegi es un ajuste fino (fine-tuning) del modelo Qwen2.5-Coder-7B-Instruct, publicado por el usuario negi4650 en Hugging Face. El nombre sugiere una especializacion en la generacion de codigo CAD (diseño asistido por ordenador) a partir de texto, aunque la model card no documenta explicitamente la tarea, el dataset ni el procedimiento de entrenamiento empleado. El modelo parte de la version cuantizada en 4 bits de Unsloth del Qwen2.5-Coder-7B-Instruct, lo que condiciona tanto el proceso de entrenamiento como el formato de los pesos publicados.
 
 Con 7.615.616.512 parametros (aproximadamente 7,6 mil millones), hereda la arquitectura transformer decoder-only de la familia Qwen2.5, con atencion de tipo grouped-query y una ventana de contexto nativa de 32.768 tokens en el modelo base. La licencia Apache 2.0 y el formato safetensors facilitan su integracion en pipelines existentes, si bien la ausencia de documentacion tecnica detallada limita seriamente la evaluacion de su calidad y de sus casos de uso reales.
 
@@ -25,7 +25,7 @@ La relevancia de este modelo es limitada en el ecosistema actual: se trata de un
 
 El modelo es un ajuste fino del checkpoint unsloth/Qwen2.5-Coder-7B-Instruct-bnb-4bit, que a su vez es una cuantizacion en 4 bits (bitsandbytes) del Qwen2.5-Coder-7B-Instruct original. La arquitectura subyacente es un transformer decoder-only con 28 capas, atencion de tipo grouped-query (GQA) con 28 cabezas de consulta y 4 de clave/valor, y embeddings de 3.584 dimensiones; estas cifras corresponden al modelo base Qwen2.5-Coder-7B y no estan verificadas de forma independiente en la publicacion.
 
-Segun la model card, el entrenamiento se realizo con Unsloth y la libreria TRL de HuggingFace, lo que indica un proceso de ajuste fino supervisado (SFT) o posiblemente DPO, aunque no se especifica el algoritmo exacto, el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF. No se documentan innovaciones tecnicas adicionales como decodificacion especulativa, atencion lineal o modos de razonamiento extendido. La ausencia de esta informacion impide reproducir el entrenamiento o evaluar su calidad de forma objetiva.
+Segun la model card, el entrenamiento se realizo con Unsloth y la libreria TRL de Hugging Face, lo que indica un proceso de ajuste fino supervisado (SFT) o posiblemente DPO, aunque no se especifica el algoritmo exacto, el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF. No se documentan innovaciones tecnicas adicionales como decodificacion especulativa, atencion lineal o modos de razonamiento extendido. La ausencia de esta informacion impide reproducir el entrenamiento o evaluar su calidad de forma objetiva.
 
 ## Capacidades
 
@@ -56,17 +56,17 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada en cuantizacion 4 bits: alrededor de 4-5 GB de pesos, con un total practico de 6-8 GB para contextos moderados.
 - GPU recomendadas: A100 40/80 GB, H100, L40S o RTX A6000 para produccion en precision completa; RTX 4090 (24 GB) para FP16 con contexto moderado; RTX 3090/4080 para cuantizacion 8 bits.
 - Compatibilidad con GPU de consumo: si, en cuantizacion 4 bits cabe en GPUs con 8 GB o mas (RTX 3060 Ti, RTX 4060 Ti, RTX 3070), y en 8 bits en GPUs con 12 GB o mas.
-- Opciones de despliegue: transformers, Text Generation Inference (TGI), vLLM, llama.cpp (previa conversion a GGUF), Ollama (previa conversion) y endpoints compatibles de HuggingFace. El tag endpoints_compatible indica soporte para Inference Endpoints.
+- Opciones de despliegue: transformers, Text Generation Inference (TGI), vLLM, llama.cpp (previa conversion a GGUF), Ollama (previa conversion) y endpoints compatibles de Hugging Face. El tag endpoints_compatible indica soporte para Inference Endpoints.
 - Latencia y throughput: no disponibles; no se han publicado mediciones para este checkpoint.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| negi4650/text2cadslmnegi | 7,6 B | No documentado (base: 32.768) | Apache 2.0 | HuggingFace, 0 descargas | Ajuste fino sin benchmarks ni documentacion |
-| Qwen2.5-Coder-7B-Instruct | 7,6 B | 32.768 (131.072 con YaRN) | Apache 2.0 | HuggingFace, ampliamente usado | Modelo base, benchmarks publicados por Alibaba |
-| DeepSeek-Coder-6.7B-Instruct | 6,7 B | 16.384 | DeepSeek License (uso comercial permitido con restricciones) | HuggingFace | Alternativa consolidada para generacion de codigo |
-| CodeLlama-7B-Instruct | 6,7 B | 16.384 | Llama 2 Community License | HuggingFace | Modelo de Meta para codigo, con restricciones de uso comercial |
+| negi4650/text2cadslmnegi | 7,6 B | No documentado (base: 32.768) | Apache 2.0 | Hugging Face, 0 descargas | Ajuste fino sin benchmarks ni documentacion |
+| Qwen2.5-Coder-7B-Instruct | 7,6 B | 32.768 (131.072 con YaRN) | Apache 2.0 | Hugging Face, ampliamente usado | Modelo base, benchmarks publicados por Alibaba |
+| DeepSeek-Coder-6.7B-Instruct | 6,7 B | 16.384 | DeepSeek License (uso comercial permitido con restricciones) | Hugging Face | Alternativa consolidada para generacion de codigo |
+| CodeLlama-7B-Instruct | 6,7 B | 16.384 | Llama 2 Community License | Hugging Face | Modelo de Meta para codigo, con restricciones de uso comercial |
 
 ## Limitaciones y advertencias
 
@@ -81,9 +81,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/negi4650/text2cadslmnegi
+- Modelo en Hugging Face: https://huggingface.co/negi4650/text2cadslmnegi
 - Modelo base (Unsloth, 4 bits): https://huggingface.co/unsloth/Qwen2.5-Coder-7B-Instruct-bnb-4bit
 - Modelo original Qwen2.5-Coder-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - Documentacion de Qwen2.5-Coder: https://qwenlm.github.io/blog/qwen2.5-coder/

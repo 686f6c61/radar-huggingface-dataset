@@ -62,7 +62,7 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ritsumeineurolab/paper_022625277_video_understanding
+- Repositorio en Hugging Face: https://huggingface.co/ritsumeineurolab/paper_022625277_video_understanding
 - Survey relacionado (arXiv): https://arxiv.org/abs/2312.17432
 - Survey relacionado (IEEE): https://ieeexplore.ieee.org/document/10982110
 - Repositorio Awesome-LLMs-for-Video-Understanding: https://github.com/yunlong10/Awesome-LLMs-for-Video-Understanding

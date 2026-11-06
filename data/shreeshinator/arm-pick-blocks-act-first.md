@@ -80,7 +80,7 @@ No se dispone de datos específicos de otros modelos ACT entrenados con LeRobot 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shreeshinator/arm-pick-blocks-act-first
+- Modelo en Hugging Face: https://huggingface.co/shreeshinator/arm-pick-blocks-act-first
 - Dataset de entrenamiento: https://huggingface.co/datasets/shreeshinator/arm-picking-blocks-real
 - Paper ACT (arXiv): https://huggingface.co/papers/2304.13705
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot

@@ -76,7 +76,7 @@ La comparativa se basa en características generales; no hay datos de rendimient
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rajathiddenmindsolutions/realestate-slm-qwen2.5-3b-adapter
+- Hugging Face: https://huggingface.co/rajathiddenmindsolutions/realestate-slm-qwen2.5-3b-adapter
 - Modelo base: https://huggingface.co/unsloth/qwen2.5-3b-instruct-unsloth-bnb-4bit
 - Qwen2.5-3B: https://huggingface.co/Qwen/Qwen2.5-3B
 - Colección Qwen2.5: https://huggingface.co/collections/Qwen/qwen25

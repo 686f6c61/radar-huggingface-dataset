@@ -87,7 +87,7 @@ Las unicas cifras de rendimiento presentes son afirmaciones del autor sobre velo
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/IsValorum/Qwen3.8-35B-A3B-Distill-APEX-I-MiniPlus-V2.1-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/IsValorum/Qwen3.8-35B-A3B-Distill-APEX-I-MiniPlus-V2.1-GGUF
 - Modelo base: https://huggingface.co/empero-ai/Qwen3.8-35B-A3B-Distill
 - llama.cpp (runtime mencionado en las etiquetas del modelo): no se proporciona enlace directo en la informacion disponible
 - Paper, blog de anuncio, repositorio de codigo o demo: no disponibles en la informacion proporcionada

@@ -74,8 +74,8 @@ No se dispone de datos de rendimiento comparativos publicados para este modelo. 
 
 ## Enlaces
 
-- Repositorio HuggingFace de la conversión: https://huggingface.co/Baekpica/Motif-3-Mixed-Quant-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/Motif-Technologies/Motif-3
+- Repositorio Hugging Face de la conversión: https://huggingface.co/Baekpica/Motif-3-Mixed-Quant-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/Motif-Technologies/Motif-3
 - Conversión GGUF completa en Q8_0 (referencia): https://huggingface.co/Baekpica/Motif-3-GGUF
 - Paper técnico de Motif 3 (arXiv): https://arxiv.org/abs/2608.09119
 - PDF del paper técnico: https://arxiv.org/pdf/2608.09119

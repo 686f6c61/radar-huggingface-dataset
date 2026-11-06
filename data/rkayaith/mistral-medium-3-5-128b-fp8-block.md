@@ -57,10 +57,10 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mistral-Medium-3.5-128B (estático FP8) | 128B | No disponible | FP8 E4M3 estático | Modified MIT | HuggingFace oficial |
-| rkayaith/Mistral-Medium-3.5-128B-fp8-block | 128B | No disponible | FP8 E4M3 por bloques (dinámico) | Modified MIT | HuggingFace (este repo) |
-| rkayaith/Mistral-Medium-3.5-128B-mxfp8 | 128B | No disponible | MXFP8 (grupos de 32) | Modified MIT | HuggingFace |
-| RecViking/Mistral-Medium-3.5-128B-NVFP4 | 128B | No disponible | NVFP4 (W4A4) | Modified MIT | HuggingFace |
+| Mistral-Medium-3.5-128B (estático FP8) | 128B | No disponible | FP8 E4M3 estático | Modified MIT | Hugging Face oficial |
+| rkayaith/Mistral-Medium-3.5-128B-fp8-block | 128B | No disponible | FP8 E4M3 por bloques (dinámico) | Modified MIT | Hugging Face (este repo) |
+| rkayaith/Mistral-Medium-3.5-128B-mxfp8 | 128B | No disponible | MXFP8 (grupos de 32) | Modified MIT | Hugging Face |
+| RecViking/Mistral-Medium-3.5-128B-NVFP4 | 128B | No disponible | NVFP4 (W4A4) | Modified MIT | Hugging Face |
 
 La principal diferencia entre las variantes es el esquema de cuantización: la estática FP8 del modelo base, la dinámica por bloques de este repo, la MXFP8 con grupos más pequeños y la NVFP4 para GPUs Blackwell. Todas mantienen la misma arquitectura y licencia, pero el rendimiento y la compatibilidad de hardware varían.
 
@@ -75,8 +75,8 @@ La principal diferencia entre las variantes es el esquema de cuantización: la e
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta variante: https://huggingface.co/rkayaith/Mistral-Medium-3.5-128B-fp8-block
-- Modelo base en HuggingFace: https://huggingface.co/mistralai/Mistral-Medium-3.5-128B
+- Repositorio Hugging Face de esta variante: https://huggingface.co/rkayaith/Mistral-Medium-3.5-128B-fp8-block
+- Modelo base en Hugging Face: https://huggingface.co/mistralai/Mistral-Medium-3.5-128B
 - Documentación oficial de Mistral Medium 3.5: https://docs.mistral.ai/models/mistral-medium-3-5-26-04
 - Receta de vLLM para el modelo base: https://recipes.vllm.ai/mistralai/Mistral-Medium-3.5-128B
 - Variante MXFP8 del mismo autor: https://huggingface.co/rkayaith/Mistral-Medium-3.5-128B-mxfp8

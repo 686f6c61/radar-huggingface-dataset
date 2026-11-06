@@ -111,7 +111,7 @@ No disponible. La informacion proporcionada no incluye otros "moves" de Microduc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tfrere/microduck-move-a-proud-parade-march-with-th
+- Modelo en Hugging Face: https://huggingface.co/tfrere/microduck-move-a-proud-parade-march-with-th
 - Perfil del autor: https://huggingface.co/tfrere
 - Space de Microduck Academy: https://huggingface.co/spaces/tfrere/microduck
 - Documentacion de entrenamiento referenciada en la model card: `docs/TRAINING.md`, seccion 8 (no se proporciona URL publica en la informacion disponible)

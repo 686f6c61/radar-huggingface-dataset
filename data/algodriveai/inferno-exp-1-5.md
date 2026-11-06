@@ -99,8 +99,8 @@ No se dispone de datos de benchmark de otros modelos de tamaño comparable en la
 
 | Modelo | Parametros | Contexto | ArithMark 3.0 (acc_norm) | HellaSwag (0-shot) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Inferno-Exp-1.5 | 76,2 M | 2048 | 71,00% | 27,85% | Apache 2.0 | HuggingFace (safetensors, custom_code) |
-| Inferno-Exp-1.0 | 76,2 M | no disponible (misma arquitectura declarada) | 54,20% | 27,46% | Apache 2.0 | HuggingFace |
+| Inferno-Exp-1.5 | 76,2 M | 2048 | 71,00% | 27,85% | Apache 2.0 | Hugging Face (safetensors, custom_code) |
+| Inferno-Exp-1.0 | 76,2 M | no disponible (misma arquitectura declarada) | 54,20% | 27,46% | Apache 2.0 | Hugging Face |
 | Otros SLM de <150 M | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -119,7 +119,7 @@ No se dispone de datos de benchmark de otros modelos de tamaño comparable en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AlgoDriveAI/Inferno-Exp-1.5
+- Modelo en Hugging Face: https://huggingface.co/AlgoDriveAI/Inferno-Exp-1.5
 - Modelo predecesor (Inferno-Exp-1.0): https://huggingface.co/AlgoDriveAI/Inferno-Exp-1.0
 - Perfil del autor: https://huggingface.co/AlgoDriveAI
 - Dataset ArithMark 3.0: https://huggingface.co/datasets/AxiomicLabs/Arithmark-3.0

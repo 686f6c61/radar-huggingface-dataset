@@ -4,7 +4,7 @@
 
 `Syaofox/WAN2.2_LoraSet_NSFW` es un repositorio de adaptadores LoRA (Low-Rank Adaptation) destinados al modelo de generación de vídeo a partir de imagen (image-to-video, I2V) `Wan-AI/Wan2.2-I2V-A14B`, desarrollado por el equipo Wan del grupo Alibaba. No es un modelo independiente: es una colección de pesos de ajuste fino que se cargan sobre los pesos base para inducir comportamientos visuales y de movimiento concretos, en este caso orientados a contenido para adultos. El repositorio ocupa 15,0 GB y fue creado el 21 de septiembre de 2026, sin descargas ni valoraciones registradas en el momento de la consulta.
 
-El interés técnico de la ficha es doble. Por un lado, documenta el modelo base Wan 2.2 I2V A14B, una arquitectura Mixture-of-Experts (MoE) de vídeo con aproximadamente 27 000 millones de parámetros totales y 14 000 millones activos por paso de denoising, que separa el proceso en dos expertos (alto y bajo ruido). Por otro, ilustra un patrón habitual en la comunidad: la distribución de ajustes finos de bajo rango a través de Civitai en lugar de HuggingFace, con documentación mínima, licencia sin declarar y ausencia total de métricas.
+El interés técnico de la ficha es doble. Por un lado, documenta el modelo base Wan 2.2 I2V A14B, una arquitectura Mixture-of-Experts (MoE) de vídeo con aproximadamente 27 000 millones de parámetros totales y 14 000 millones activos por paso de denoising, que separa el proceso en dos expertos (alto y bajo ruido). Por otro, ilustra un patrón habitual en la comunidad: la distribución de ajustes finos de bajo rango a través de Civitai en lugar de Hugging Face, con documentación mínima, licencia sin declarar y ausencia total de métricas.
 
 La relevancia práctica es limitada en términos de ingeniería reproducible: el repositorio no incluye model card explicativa, no declara licencia y no aporta resultados de benchmarks. Cualquier evaluación debe partir, por tanto, de las especificaciones publicadas para el modelo base y de pruebas empíricas propias.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - VRAM para el modelo base en precisión completa: en torno a 54 GB en fp16 si se cargan ambos expertos simultáneamente (estimación); requiere A100 80 GB, H100 80 GB o dos GPU de 24 GB con paralelismo.
 - VRAM con cuantización: aproximadamente 27 GB en fp8 y entre 9 y 16 GB en GGUF Q4-Q8 (estimaciones); esto lo sitúa al alcance de una RTX 4090 (24 GB), RTX 5090 (32 GB) o RTX 3090 (24 GB) con offload parcial.
 - GPU de consumo: sí es viable en GPUs de gama alta para consumidores con cuantización agresiva y descarga de capas a RAM; no es viable en GPUs de 8-12 GB sin offload intensivo y tiempos de generación muy altos.
-- Opciones de despliegue: ComfyUI (con nodos de carga de LoRA y soporte GGUF), librería Diffusers de HuggingFace, repositorio oficial de Wan 2.2 y variantes cuantizadas de la comunidad. vLLM y TGI no aplican, ya que están orientados a modelos de lenguaje.
+- Opciones de despliegue: ComfyUI (con nodos de carga de LoRA y soporte GGUF), librería Diffusers de Hugging Face, repositorio oficial de Wan 2.2 y variantes cuantizadas de la comunidad. vLLM y TGI no aplican, ya que están orientados a modelos de lenguaje.
 - Latencia y throughput: no disponibles para este repositorio. Dependen fuertemente del modelo base, la resolución (480p frente a 720p), el número de pasos y la estrategia de offload.
 - Almacenamiento: el repositorio ocupa 15,0 GB, a los que hay que sumar los pesos del modelo base si no se dispone de ellos en caché local.
 
@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 | Modelo | Tipo | Parametros | Contexto / duracion | Licencia | Disponibilidad | Documentacion |
 |---|---|---|---|---|---|---|
 | Syaofox/WAN2.2_LoraSet_NSFW | Conjunto de LoRA sobre Wan 2.2 I2V A14B | No aplicable (adaptadores) | 5 s a 24 fps (heredado del base) | unknown | 0 descargas, 0 likes | Practicamente nula |
-| Wan-AI/Wan2.2-I2V-A14B | Modelo base I2V MoE | ~27B totales / ~14B activos | 5 s a 24 fps, 480p y 720p | Apache 2.0 | Repositorio oficial en HuggingFace | Completa, con paper tecnico |
-| Wan-AI/Wan2.1-I2V-14B | Modelo base I2V denso | 14B | 5 s a 16 fps, 480p y 720p | Apache 2.0 | Repositorio oficial en HuggingFace | Completa |
+| Wan-AI/Wan2.2-I2V-A14B | Modelo base I2V MoE | ~27B totales / ~14B activos | 5 s a 24 fps, 480p y 720p | Apache 2.0 | Repositorio oficial en Hugging Face | Completa, con paper tecnico |
+| Wan-AI/Wan2.1-I2V-14B | Modelo base I2V denso | 14B | 5 s a 16 fps, 480p y 720p | Apache 2.0 | Repositorio oficial en Hugging Face | Completa |
 | LoRA de la comunidad en Civitai para Wan 2.2 I2V | Adaptadores individuales | No aplicable | Heredado del base | Variable, a menudo sin declarar | Distribucion amplia en Civitai | Habitualmente minima |
 
 No se dispone de datos de rendimiento comparativos entre estos elementos en la informacion proporcionada, por lo que la comparacion se limita a parametros estructurales, licencia y disponibilidad.
@@ -89,11 +89,11 @@ No se dispone de datos de rendimiento comparativos entre estos elementos en la i
 - Alucinación visual: como todo modelo generativo de vídeo, puede producir artefactos anatómicos, incoherencias temporales y fallos de consistencia entre fotogramas, especialmente en las fases de bajo ruido.
 - Limitaciones de idioma: el rendimiento con prompts en castellano no está documentado y depende del codificador umt5-xxl.
 - Ausencia de validación comunitaria: con 0 descargas y 0 likes, no existe retroalimentación de terceros que confirme la calidad o el comportamiento real de los adaptadores.
-- Falta de trazabilidad legal y técnica: al distribuirse originalmente a través de Civitai, algunos adaptadores pueden tener condiciones de uso adicionales no reflejadas en HuggingFace.
+- Falta de trazabilidad legal y técnica: al distribuirse originalmente a través de Civitai, algunos adaptadores pueden tener condiciones de uso adicionales no reflejadas en Hugging Face.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Syaofox/WAN2.2_LoraSet_NSFW
+- Repositorio en Hugging Face: https://huggingface.co/Syaofox/WAN2.2_LoraSet_NSFW
 - Modelo base: https://huggingface.co/Wan-AI/Wan2.2-I2V-A14B
 - Busqueda de archivo en Civitai (resultado citado en la model card): https://civitaiarchive.com/search?is_nsfw=true&is_deleted=true&q=blink
 - Adaptador de escena en Civitai, ID 2316517: https://civitai.com/models/2316517

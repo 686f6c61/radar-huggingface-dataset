@@ -10,7 +10,7 @@ Este modelo no es un modelo independiente entrenado desde cero, sino un experime
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-NeoX (según tags de HuggingFace) |
+| Arquitectura | GPT-NeoX (según tags de Hugging Face) |
 | Parametros totales | 6.856.253.440 (6,8B) |
 | Parametros activos | no disponible (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -28,7 +28,7 @@ No se dispone de información sobre el dataset de entrenamiento, el número de t
 ## Capacidades
 
 - Generación de texto: al ser un modelo de lenguaje basado en GPT-NeoX, es capaz de generar texto coherente en tareas de lenguaje natural, aunque no se han documentado capacidades específicas.
-- Conversación: el tag `conversational` en HuggingFace indica que puede usarse para diálogos, pero no hay ejemplos ni evaluaciones.
+- Conversación: el tag `conversational` en Hugging Face indica que puede usarse para diálogos, pero no hay ejemplos ni evaluaciones.
 - No se ha confirmado soporte para tool calling, function calling, agentes, razonamiento multi-paso, visión, audio u otras capacidades avanzadas.
 
 ## Casos de uso
@@ -68,7 +68,7 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_alignment-2k_3k_4k_weightedavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_alignment-2k_3k_4k_weightedavg_merge
 - Repositorio de mergekit: https://github.com/cg123/mergekit
 - Paper del método Linear: https://arxiv.org/abs/2203.05482
 - Modelo relacionado (merge sin weightedavg): https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_alignment-2k_3k_4k_merge

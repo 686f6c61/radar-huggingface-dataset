@@ -72,9 +72,9 @@ No se dispone de datos comparativos en la informacion proporcionada. El modelo e
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/AbteeXAILab/lumynax-reasoning-deepseek-r1-distill-llama-70b-gguf)
+- [Hugging Face - modelo](https://huggingface.co/AbteeXAILab/lumynax-reasoning-deepseek-r1-distill-llama-70b-gguf)
 - [Repositorio GitHub](https://github.com/Aimaghsoodi/lumynax-reasoning-deepseek-r1-distill-llama-70b-gguf)
-- [Coleccion LumynaX en HuggingFace](https://huggingface.co/collections/AbteeXAILab/lumynax-reasoning-and-long-context)
+- [Coleccion LumynaX en Hugging Face](https://huggingface.co/collections/AbteeXAILab/lumynax-reasoning-and-long-context)
 - [AbteeX AI Labs](https://abteex.com)
 - [LumynaX](https://lumynax.com)
 - [Modelo base DeepSeek-R1-Distill-Llama-70B](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-70B)

@@ -85,7 +85,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parametros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kairos PI Low 1.0 | ~149M | 2.048 | 92,5 % (74/80); 100 % abstención | Apache 2.0 | Pesos en HuggingFace (0 descargas, 0 likes en el momento de la consulta) |
+| Kairos PI Low 1.0 | ~149M | 2.048 | 92,5 % (74/80); 100 % abstención | Apache 2.0 | Pesos en Hugging Face (0 descargas, 0 likes en el momento de la consulta) |
 | Kairos PI Large 1.0 | No disponible | 8.192 | 95,0 % (76/80); 100 % abstención | No disponible | Referenciado en la model card, sin enlace de repositorio |
 | Kairos PI Symbiotic (dual-tier) | No disponible | 8.192 | 97,5 % (78/80); 100 % abstención | No disponible | Referenciado en la model card, sin enlace de repositorio |
 | Convai Laya (baseline) | No disponible | 512 | 48,8 % (39/80); 0 % abstención | No disponible | No disponible |
@@ -108,7 +108,7 @@ Alternativas de código abierto comparables en la misma categoría (clasificaci�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Walkowicz/kairos-pi-low-1.0
+- Modelo en Hugging Face: https://huggingface.co/Walkowicz/kairos-pi-low-1.0
 - Pesos directos: https://huggingface.co/Walkowicz/kairos-pi-low-1.0/resolve/main/model.safetensors
 - Benchmark detallado citado en la model card: https://huggingface.co/Walkowicz/kairos-pi-low-1.0/blob/main/BENCHMARK.md
 - Código de inferencia custom: https://huggingface.co/Walkowicz/kairos-pi-low-1.0/blob/main/modeling_kairos_pi_low.py

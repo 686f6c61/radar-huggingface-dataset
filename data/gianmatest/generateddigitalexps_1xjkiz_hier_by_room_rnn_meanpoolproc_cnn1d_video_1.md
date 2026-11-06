@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`generatedDigitalExps_1xJKiz_hier_by_room_rnn_meanPoolProc_cnn1d_video_1` es un repositorio de HuggingFace publicado por el usuario `gianmaTest` el 21 de octubre de 2026, con el tag `pytorch` y la región `us`. No dispone de model card, pipeline declarado, licencia, idiomas ni pesos verificables: el tamaño del repositorio se muestra como 0.0 GB y el modelo acumula 20 descargas y 0 likes. No hay información pública sobre parámetros, contexto, datos de entrenamiento ni resultados de evaluación.
+`generatedDigitalExps_1xJKiz_hier_by_room_rnn_meanPoolProc_cnn1d_video_1` es un repositorio de Hugging Face publicado por el usuario `gianmaTest` el 21 de octubre de 2026, con el tag `pytorch` y la región `us`. No dispone de model card, pipeline declarado, licencia, idiomas ni pesos verificables: el tamaño del repositorio se muestra como 0.0 GB y el modelo acumula 20 descargas y 0 likes. No hay información pública sobre parámetros, contexto, datos de entrenamiento ni resultados de evaluación.
 
 El identificador del repositorio es la única señal disponible sobre su naturaleza: los segmentos `hier_by_room`, `rnn`, `meanPoolProc`, `cnn1d` y `video` sugieren un experimento de codificación jerárquica de vídeo por salas (posiblemente egocéntrico o de navegación indoor), con una RNN sobre características agregadas por mean pooling y un extractor convolucional 1D temporal. Se trata de una inferencia a partir del nombre, no de una especificación confirmada, y debe tratarse como tal.
 
@@ -83,5 +83,5 @@ No disponible. No se ha identificado en la información proporcionada ningún mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gianmaTest/generatedDigitalExps_1xJKiz_hier_by_room_rnn_meanPoolProc_cnn1d_video_1
+- Hugging Face: https://huggingface.co/gianmaTest/generatedDigitalExps_1xJKiz_hier_by_room_rnn_meanPoolProc_cnn1d_video_1
 - Paper, blog, repositorio de código o demo: no disponible en la información proporcionada.

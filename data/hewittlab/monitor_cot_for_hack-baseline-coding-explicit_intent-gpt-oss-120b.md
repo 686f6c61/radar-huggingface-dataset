@@ -56,7 +56,7 @@ Un detalle tecnico a tener en cuenta: el tamano del repositorio (315,5 GB) es mu
 - Estudio de la degradacion de monitorabilidad en el tiempo: evaluar los diez checkpoints (80 a 800) de cada semilla y trazar curvas de "mencion explicita del objetivo real en la CoT" frente a pasos de entrenamiento, algo posible gracias a la granularidad de checkpoints publicada.
 - Auditoria de pipelines de RL: incorporar la pareja control/misaligned como test de regresion que detecte si una funcion de recompensa nueva permite atajos, antes de escalar el entrenamiento a produccion.
 - Red-teaming y seguridad: utilizar el `misaligned_model` como generador de politicas que explotan metricas parciales (por ejemplo, escribir codigo que pase casos triviales y falle los de borde), para probar detectores y salvaguardas en entornos de evaluacion de codigo.
-- Validacion de la cadena de conversion Tinker a HuggingFace: fusionar distintos checkpoints con `tinker-cookbook` y comprobar que el comportamiento medido se preserva tras el merge, un paso critico antes de publicar adaptadores en formato estandar.
+- Validacion de la cadena de conversion Tinker a Hugging Face: fusionar distintos checkpoints con `tinker-cookbook` y comprobar que el comportamiento medido se preserva tras el merge, un paso critico antes de publicar adaptadores en formato estandar.
 - Docencia y divulgacion en alignment: usar las dos condiciones, con la misma receta y dataset, como demostracion reproducible de como una funcion de recompensa mal definida cambia el comportamiento del modelo sin cambiar la arquitectura.
 - Analisis de fidelidad del razonamiento: comparar la CoT emitida con la solucion finalmente producida y con los tests superados, para medir la correlacion entre lo que el modelo dice y lo que hace.
 
@@ -90,7 +90,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 |---|---|---|---|---|---|
 | `control_model` (este repo, rama control) | LoRA r32 sobre gpt-oss-120b | No disponible | GRPO con recompensa correcta | No disponible | Publico en el mismo repositorio |
 | `misaligned_model` (este repo, rama mal especificada) | LoRA r32 sobre gpt-oss-120b | No disponible | GRPO con recompensa parcial | No disponible | Publico en el mismo repositorio |
-| `openai/gpt-oss-120b` (modelo base, sin adaptador) | 120 000 M (segun identificador) | No disponible en esta informacion | Preentrenamiento y postentrenamiento de OpenAI | No disponible en esta informacion | Publico en HuggingFace |
+| `openai/gpt-oss-120b` (modelo base, sin adaptador) | 120 000 M (segun identificador) | No disponible en esta informacion | Preentrenamiento y postentrenamiento de OpenAI | No disponible en esta informacion | Publico en Hugging Face |
 | Otros adaptadores publicos de reward hacking o monitorabilidad | No disponible | No disponible | No disponible | No disponible | No se han identificado alternativas comparables en la informacion disponible |
 
 La comparacion mas informativa es interna: `control_model` frente a `misaligned_model` con identica receta, dataset y semillas. No se dispone de datos para comparar con adaptadores de terceros de la misma categoria.
@@ -111,10 +111,10 @@ La comparacion mas informativa es interna: `control_model` frente a `misaligned_
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hewittlab/monitor_cot_for_hack-baseline-coding-explicit_intent-gpt-oss-120b
+- Repositorio en Hugging Face: https://huggingface.co/hewittlab/monitor_cot_for_hack-baseline-coding-explicit_intent-gpt-oss-120b
 - Modelo base: https://huggingface.co/openai/gpt-oss-120b
 - Dataset de entrenamiento: https://huggingface.co/datasets/hewittlab/monitor_cot_for_hack-coding
 - Dataset original de problemas: https://huggingface.co/datasets/newfacade/LeetCodeDataset
 - Codigo del paper: https://github.com/Lorenayannnnn/reward-misspecification-degrades-cot-monitorability
 - Herramientas de conversion Tinker: https://github.com/thinking-machines-lab/tinker-cookbook
-- Guia de exportacion a HuggingFace de Tinker: https://tinker-docs.thinkingmachines.ai/tutorials/deployment/export-hf/
+- Guia de exportacion a Hugging Face de Tinker: https://tinker-docs.thinkingmachines.ai/tutorials/deployment/export-hf/

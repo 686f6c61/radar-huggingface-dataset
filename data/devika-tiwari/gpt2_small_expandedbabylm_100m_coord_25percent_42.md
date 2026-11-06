@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `gpt2_small_expandedbabyLM_100M_coord_25percent_42` es un modelo de lenguaje generativo basado en la arquitectura GPT-2, desarrollado por la usuaria de HuggingFace `devika-tiwari`. Se trata de un fine-tuning de un modelo GPT-2 pequeño (100M parámetros según el nombre del modelo) sobre un dataset cuya composición y origen no se especifican en la información disponible. El nombre sugiere que forma parte de una serie de experimentos relacionados con el proyecto BabyLM, que investiga cómo los modelos de lenguaje adquieren competencia lingüística cuando se entrenan con datos limitados o con condiciones específicas (en este caso, un 25% de datos de coordinación y semilla 42).
+El modelo `gpt2_small_expandedbabyLM_100M_coord_25percent_42` es un modelo de lenguaje generativo basado en la arquitectura GPT-2, desarrollado por la usuaria de Hugging Face `devika-tiwari`. Se trata de un fine-tuning de un modelo GPT-2 pequeño (100M parámetros según el nombre del modelo) sobre un dataset cuya composición y origen no se especifican en la información disponible. El nombre sugiere que forma parte de una serie de experimentos relacionados con el proyecto BabyLM, que investiga cómo los modelos de lenguaje adquieren competencia lingüística cuando se entrenan con datos limitados o con condiciones específicas (en este caso, un 25% de datos de coordinación y semilla 42).
 
 La relevancia de este modelo es principalmente académica y experimental: permite analizar cómo determinadas variables de entrenamiento afectan al comportamiento de un modelo pequeño. Sin embargo, la model card es autogenerada y no incluye descripción, licencia, idiomas ni benchmarks, por lo que la información disponible es muy limitada. La arquitectura subyacente es un transformer decoder-only estándar, con una ventana de contexto no documentada, aunque al tratarse de GPT-2 se espera un contexto de 1024 tokens.
 
@@ -76,6 +76,6 @@ No se han publicado comparativas con otros modelos en la información disponible
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/devika-tiwari/gpt2_small_expandedbabyLM_100M_coord_25percent_42
+- Hugging Face: https://huggingface.co/devika-tiwari/gpt2_small_expandedbabyLM_100M_coord_25percent_42
 - Modelo similar de la misma serie: https://huggingface.co/devika-tiwari/gpt2_small_expandedbabyLM_100M_wh_v2_25percent_42
 - Otro modelo de la serie: https://huggingface.co/devika-tiwari/gpt2_small_expandedbabyLM_100M_cnp_0percent_42

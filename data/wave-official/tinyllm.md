@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TinyLLM es un modelo publicado en HuggingFace por el usuario Wave-Official bajo licencia GPL-3.0. La model card asociada no contiene ninguna descripción técnica: se reduce a la declaración de licencia, sin información sobre arquitectura, tamaño, datos de entrenamiento ni capacidades. El repositorio no registra descargas y cuenta con un único "like", lo que sugiere una publicación reciente o de muy baja difusión.
+TinyLLM es un modelo publicado en Hugging Face por el usuario Wave-Official bajo licencia GPL-3.0. La model card asociada no contiene ninguna descripción técnica: se reduce a la declaración de licencia, sin información sobre arquitectura, tamaño, datos de entrenamiento ni capacidades. El repositorio no registra descargas y cuenta con un único "like", lo que sugiere una publicación reciente o de muy baja difusión.
 
 Por el nombre ("TinyLLM") cabe inferir que se trata de un modelo de lenguaje de pequeño tamaño, probablemente orientado a experimentación o a despliegue en entornos con recursos limitados, pero esta interpretación no está confirmada por ninguna fuente del repositorio. No se dispone de datos sobre número de parámetros, longitud de contexto, tokenizador ni idiomas soportados.
 
@@ -41,7 +41,7 @@ Tampoco se documentan innovaciones técnicas destacables (decodificación especu
 - Evaluación experimental de modelos pequeños: el modelo podría emplearse como banco de pruebas en entornos de investigación, pero sin documentación técnica no es posible confirmar su idoneidad ni su comportamiento esperado.
 - Despliegue en entornos con recursos muy limitados: el nombre sugiere un tamaño reducido, aunque no se dispone de datos de parámetros ni de requisitos de memoria para verificar esta hipótesis.
 - Estudio de licencias copyleft en IA: al estar bajo GPL-3.0, puede servir como caso de análisis de las implicaciones del copyleft en modelos de lenguaje, un tema con creciente interés legal y técnico.
-- Reproducción de pipelines de publicación en HuggingFace: útil como ejemplo de repositorio mínimo con model card reducida a metadatos de licencia.
+- Reproducción de pipelines de publicación en Hugging Face: útil como ejemplo de repositorio mínimo con model card reducida a metadatos de licencia.
 - Fines educativos sobre empaquetado de modelos: permite ilustrar qué información debería incluir una model card completa por contraste con la ausente en este repositorio.
 - Pruebas de integración de licencias GPL-3.0 en flujos de distribución de software: relevante para equipos que evalúan la compatibilidad de licencias copyleft con sus productos.
 
@@ -84,5 +84,5 @@ La comparación pone de manifiesto la falta de información publicada sobre Tiny
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Wave-Official/TinyLLM
+- Repositorio en Hugging Face: https://huggingface.co/Wave-Official/TinyLLM
 - No se han encontrado en la búsqueda web papers, blogs, repositorios de código ni demos adicionales asociados a este modelo.

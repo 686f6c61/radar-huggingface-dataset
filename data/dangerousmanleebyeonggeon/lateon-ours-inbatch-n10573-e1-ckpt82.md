@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `dangerousmanleebyeonggeon/lateon-ours-inbatch-n10573-e1-ckpt82` es un modelo de recuperacion de informacion (retrieval) basado en late interaction de tipo ColBERT, construido sobre `lightonai/LateOn` como modelo base. Lo publica el usuario de HuggingFace `dangerousmanleebyeonggeon` y esta pensado para similitud semantica a nivel de frase y parrafo mediante la funcion de similitud MaxSim. En lugar de producir un unico vector por texto, genera una secuencia de vectores densos de 128 dimensiones por token, lo que permite un emparejamiento mas fino entre consultas y documentos.
+El modelo `dangerousmanleebyeonggeon/lateon-ours-inbatch-n10573-e1-ckpt82` es un modelo de recuperacion de informacion (retrieval) basado en late interaction de tipo ColBERT, construido sobre `lightonai/LateOn` como modelo base. Lo publica el usuario de Hugging Face `dangerousmanleebyeonggeon` y esta pensado para similitud semantica a nivel de frase y parrafo mediante la funcion de similitud MaxSim. En lugar de producir un unico vector por texto, genera una secuencia de vectores densos de 128 dimensiones por token, lo que permite un emparejamiento mas fino entre consultas y documentos.
 
 El modelo tiene 149.015.808 parametros reales (segun los pesos en safetensors) y un tamano de repositorio de 0,6 GB. Se apoya en un backbone ModernBERT (`ModernBertModel`) y anade tres capas densas de proyeccion (768 a 1536, 1536 a 768 y 768 a 128) con conexiones residuales en las dos primeras. Esta disenado para indexar documentos de hasta 300 tokens y consultas de 64 tokens, integrándose con la libreria PyLate y el indice FastPLAID del ecosistema de LightOn.
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Dimension de salida | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| lateon-ours-inbatch-n10573-e1-ckpt82 | 149 M | 128 | 300 tok (doc) / 64 tok (query) | no disponible | HuggingFace (0 descargas) |
-| lightonai/LateOn (base) | ~149 M | 128 | no disponible | no disponible | HuggingFace |
-| answerai-colbert-small-v1 | ~33 M | 96 | no disponible | Apache 2.0 (segun su ficha) | HuggingFace |
-| jina-colbert-v2 | ~560 M | 128 | no disponible | CC-BY-NC-4.0 (segun su ficha) | HuggingFace |
+| lateon-ours-inbatch-n10573-e1-ckpt82 | 149 M | 128 | 300 tok (doc) / 64 tok (query) | no disponible | Hugging Face (0 descargas) |
+| lightonai/LateOn (base) | ~149 M | 128 | no disponible | no disponible | Hugging Face |
+| answerai-colbert-small-v1 | ~33 M | 96 | no disponible | Apache 2.0 (segun su ficha) | Hugging Face |
+| jina-colbert-v2 | ~560 M | 128 | no disponible | CC-BY-NC-4.0 (segun su ficha) | Hugging Face |
 
 Los datos de los modelos alternativos son orientativos y algunas celdas dependen de la informacion publicada por cada autor; no se dispone de comparativas de rendimiento medidas en igualdad de condiciones.
 
@@ -87,10 +87,10 @@ Los datos de los modelos alternativos son orientativos y algunas celdas dependen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dangerousmanleebyeonggeon/lateon-ours-inbatch-n10573-e1-ckpt82
+- Modelo en Hugging Face: https://huggingface.co/dangerousmanleebyeonggeon/lateon-ours-inbatch-n10573-e1-ckpt82
 - Modelo base: https://huggingface.co/lightonai/LateOn
 - Documentacion de PyLate: https://lightonai.github.io/pylate/
 - Repositorio PyLate: https://github.com/lightonai/pylate
 - Indice FastPLAID: https://github.com/lightonai/fast-plaid
-- Modelos PyLate en HuggingFace: https://huggingface.co/models?library=PyLate
+- Modelos PyLate en Hugging Face: https://huggingface.co/models?library=PyLate
 - Articulo de ColBERT (arXiv:1908.10084): https://arxiv.org/abs/1908.10084

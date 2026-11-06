@@ -21,7 +21,7 @@ Con 559,9 millones de parámetros y un tamaño de repositorio de 2,3 GB, el mode
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tuning del transformer EthioLLM-l-250K, desarrollado por EthioNLP para lenguas etíopes. No se proporcionan detalles sobre la arquitectura interna (número de capas, dimensiones, tipo de atención) ni sobre el dataset de entrenamiento, que se describe como "desconocido". El proceso de fine-tuning se realizó con el Trainer de HuggingFace, utilizando los siguientes hiperparámetros: learning rate de 1e-05, batch size de entrenamiento de 16, batch size de evaluación de 32, optimizador AdamW (fused) con betas (0.9, 0.999) y epsilon 1e-08, scheduler de tipo coseno con 300 pasos de warmup, 10 épocas y entrenamiento con precisión mixta (Native AMP). No se menciona el uso de técnicas como RLHF o DPO; se trata de un ajuste supervisado para una tarea de clasificación de stance.
+El modelo es un fine-tuning del transformer EthioLLM-l-250K, desarrollado por EthioNLP para lenguas etíopes. No se proporcionan detalles sobre la arquitectura interna (número de capas, dimensiones, tipo de atención) ni sobre el dataset de entrenamiento, que se describe como "desconocido". El proceso de fine-tuning se realizó con el Trainer de Hugging Face, utilizando los siguientes hiperparámetros: learning rate de 1e-05, batch size de entrenamiento de 16, batch size de evaluación de 32, optimizador AdamW (fused) con betas (0.9, 0.999) y epsilon 1e-08, scheduler de tipo coseno con 300 pasos de warmup, 10 épocas y entrenamiento con precisión mixta (Native AMP). No se menciona el uso de técnicas como RLHF o DPO; se trata de un ajuste supervisado para una tarea de clasificación de stance.
 
 ## Capacidades
 
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks externos (MMLU, HumanEval, etc.) en
 - VRAM estimada para inferencia: con 559,9 millones de parámetros, en fp32 se requieren aproximadamente 2,2 GB de memoria, en fp16 unos 1,1 GB y en int8 unos 0,6 GB. Sin embargo, al no estar cuantizado, el uso real dependerá del formato de carga.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM puede ejecutar el modelo en fp16, como una NVIDIA GTX 1650 o superior. Para mayor comodidad, una RTX 3060 o superior es adecuada.
 - Compatibilidad con GPU de consumo: sí, cabe en la mayoría de GPUs de consumo actuales (RTX 20/30/40 series) con suficiente VRAM.
-- Opciones de despliegue: al ser un modelo de Transformers, puede servirse con vLLM, TGI, o mediante la API de HuggingFace. También es compatible con llama.cpp si se convierte a GGUF, aunque no se proporciona ese formato.
+- Opciones de despliegue: al ser un modelo de Transformers, puede servirse con vLLM, TGI, o mediante la API de Hugging Face. También es compatible con llama.cpp si se convierte a GGUF, aunque no se proporciona ese formato.
 - Latencia y throughput: no se dispone de datos medidos. Para un modelo de este tamaño, se espera una latencia de decenas de milisegundos por ejemplo en GPU moderna, pero no hay cifras oficiales.
 
 ## Comparativa con modelos similares
@@ -76,6 +76,6 @@ No se dispone de información sobre otros modelos de detección de stance espec�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tadiecool29/STL-ethiollm-l-250K-stance
+- Modelo en Hugging Face: https://huggingface.co/tadiecool29/STL-ethiollm-l-250K-stance
 - Modelo base EthioLLM-l-250K: https://huggingface.co/EthioNLP/EthioLLM-l-250K
 - Paper de EthioLLM (referenciado en la búsqueda web, sin URL directa): "EthioLLM: Multilingual Large Language Models for Ethiopian Languages with Task Evaluation" (Tonja et al., 2024).

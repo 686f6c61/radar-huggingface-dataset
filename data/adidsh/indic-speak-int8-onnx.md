@@ -106,7 +106,7 @@ Comparativa con alternativas externas de TTS multilingüe indio: no disponible e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/adidsh/indic-speak-int8-onnx
+- Repositorio Hugging Face: https://huggingface.co/adidsh/indic-speak-int8-onnx
 - Modelo upstream: https://huggingface.co/bodhan-ai/indic-speak-preview-v2
 - Backbone acústico base: https://huggingface.co/meta-llama/Llama-3.2-3B
 - Vocoder Vocos (backbone): https://github.com/gemelo-ai/vocos

@@ -86,7 +86,7 @@ La comparativa directa mas relevante es con el modelo base: misma arquitectura, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cryptonaut/Qwen3.5-122B-A10B-Uncensored-HauhauCS-Aggressive
+- Modelo en Hugging Face: https://huggingface.co/cryptonaut/Qwen3.5-122B-A10B-Uncensored-HauhauCS-Aggressive
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-122B-A10B
 - Discord del autor: https://discord.gg/SZ5vacTXYf
 - Variante 35B-A3B: https://huggingface.co/HauhauCS/Qwen3.5-35B-A3B-Uncensored-HauhauCS-Aggressive

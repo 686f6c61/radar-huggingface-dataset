@@ -75,7 +75,7 @@ No disponible. La información proporcionada no incluye otros modelos de la mism
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fabono/act_policy_open_more
+- Modelo en Hugging Face: https://huggingface.co/fabono/act_policy_open_more
 - Dataset de entrenamiento: https://huggingface.co/datasets/fabono/little_bit_drawer_opening_20261029_144601
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=fabono/little_bit_drawer_opening_20261029_144601
 - Paper ACT: https://huggingface.co/papers/2304.13705

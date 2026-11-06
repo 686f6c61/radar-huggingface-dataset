@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vvsotnikov/Qwen3.8-27B-test-DFlash2-v0.3 (este) | 1,92 B | No disponible | Sin benchmarks publicados; evaluado con vLLM 0.30.0 | No disponible | HuggingFace, 0 descargas |
-| vvsotnikov/Qwen3.8-27B-test-DFlash2-v0.2 | No disponible | No disponible | Sin benchmarks publicados; checkpoint en el paso 100 | No disponible | HuggingFace |
+| vvsotnikov/Qwen3.8-27B-test-DFlash2-v0.3 (este) | 1,92 B | No disponible | Sin benchmarks publicados; evaluado con vLLM 0.30.0 | No disponible | Hugging Face, 0 descargas |
+| vvsotnikov/Qwen3.8-27B-test-DFlash2-v0.2 | No disponible | No disponible | Sin benchmarks publicados; checkpoint en el paso 100 | No disponible | Hugging Face |
 | Otros borradores especulativos (EAGLE-3, Medusa, DFlash de z-lab) | No disponible | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada |
 
 ## Limitaciones y advertencias
@@ -85,7 +85,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vvsotnikov/Qwen3.8-27B-test-DFlash2-v0.3
+- Modelo en Hugging Face: https://huggingface.co/vvsotnikov/Qwen3.8-27B-test-DFlash2-v0.3
 - Checkpoint previo v0.2 (paso 100): https://huggingface.co/vvsotnikov/Qwen3.8-27B-test-DFlash2-v0.2
 - Modelo objetivo: https://huggingface.co/JetBrains/Qwen3.8-3.6-27B-blend
 - Repositorio de la herramienta dflash: https://github.com/z-lab/dflash

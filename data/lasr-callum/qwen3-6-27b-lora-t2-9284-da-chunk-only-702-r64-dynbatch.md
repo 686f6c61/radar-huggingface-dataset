@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 - El adaptador LoRA ocupa 1,3 GB en disco, pero requiere cargar el modelo base Qwen3.6-27B completo en memoria.
 - Para inferencia en modo thinking, se recomienda al menos 32 GB de VRAM en una GPU consumer (por ejemplo, RTX 4090) o 40-80 GB en GPUs profesionales (A100, H200) si se usa el modelo en precision completa o con cuantizacion ligera.
 - El entrenamiento se realizo con 2xH200 (cada una con 141 GB de VRAM) usando DDP y dynamic batching; para reproducir el entrenamiento se necesitan al menos 2 GPUs con alta capacidad de memoria.
-- Opciones de despliegue: al ser un adaptador PEFT, se puede cargar con la libreria `peft` de HuggingFace sobre el modelo base. Para inferencia servida, se puede usar vLLM con soporte de LoRA, o bien exportar el adaptador fusionado al modelo base y usar cualquier runtime estandar (llama.cpp, Ollama, TGI).
+- Opciones de despliegue: al ser un adaptador PEFT, se puede cargar con la libreria `peft` de Hugging Face sobre el modelo base. Para inferencia servida, se puede usar vLLM con soporte de LoRA, o bien exportar el adaptador fusionado al modelo base y usar cualquier runtime estandar (llama.cpp, Ollama, TGI).
 - No se dispone de datos de latencia o throughput para este adaptador especifico.
 
 ## Comparativa con modelos similares
@@ -74,7 +74,7 @@ La comparativa se limita a los modelos del mismo autor y estudio, ya que no se d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LASR-Callum/qwen3.6-27b-lora-t2-9284-da-chunk-only-702-r64-dynbatch
+- Modelo en Hugging Face: https://huggingface.co/LASR-Callum/qwen3.6-27b-lora-t2-9284-da-chunk-only-702-r64-dynbatch
 - Modelo de control (synthdoc-716-r64): https://huggingface.co/LASR-Callum/qwen3.6-27b-lora-t2-9284-synthdoc-716-r64
 - Dataset de entrenamiento: https://huggingface.co/datasets/LASR-Callum/2026-08-21-table2-9284-da-chunk-only-702-train
 - Corpus de difficult-advice: https://huggingface.co/datasets/LASR-Callum/2026-08-21-difficult-advice-v2-chunk-only-716

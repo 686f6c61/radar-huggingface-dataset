@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nadahafez/image-captioning` es un modelo de generación de descripciones de imágenes (image captioning) publicado en HuggingFace por el usuario nadahafez. La model card apenas contiene información: únicamente declara la licencia MIT y no se proporcionan detalles sobre arquitectura, parámetros, datos de entrenamiento o capacidades específicas. El repositorio tiene un tamaño de 0,1 GB, lo que sugiere un modelo relativamente pequeño, pero no se puede confirmar su naturaleza (por ejemplo, si es un modelo basado en transformer, un encoder-decoder, o un enfoque híbrido).
+El modelo `nadahafez/image-captioning` es un modelo de generación de descripciones de imágenes (image captioning) publicado en Hugging Face por el usuario nadahafez. La model card apenas contiene información: únicamente declara la licencia MIT y no se proporcionan detalles sobre arquitectura, parámetros, datos de entrenamiento o capacidades específicas. El repositorio tiene un tamaño de 0,1 GB, lo que sugiere un modelo relativamente pequeño, pero no se puede confirmar su naturaleza (por ejemplo, si es un modelo basado en transformer, un encoder-decoder, o un enfoque híbrido).
 
 A pesar de la falta de especificaciones, la tarea de image captioning es relevante en el ecosistema actual de IA, con aplicaciones en accesibilidad, búsqueda visual y automatización de contenidos. Sin embargo, al no existir documentación técnica ni benchmarks publicados, este modelo no puede evaluarse de forma rigurosa ni recomendarse para uso en producción sin una validación previa por parte del desarrollador.
 
@@ -61,4 +61,4 @@ No se puede realizar una comparativa rigurosa porque no se dispone de datos téc
 
 ## Enlaces
 
-- [HuggingFace - nadahafez/image-captioning](https://huggingface.co/nadahafez/image-captioning)
+- [Hugging Face - nadahafez/image-captioning](https://huggingface.co/nadahafez/image-captioning)

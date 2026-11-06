@@ -94,7 +94,7 @@ La comparación con Whisper es la más directa por tarea (ASR multilingüe), per
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Prahaladha/hima-asr-ONNX
+- Repositorio Hugging Face: https://huggingface.co/Prahaladha/hima-asr-ONNX
 - Modelo base: https://huggingface.co/Prahaladha/hima-asr
 - Aviso de licencia: https://huggingface.co/Prahaladha/hima-asr/blob/main/NOTICE
 - Términos de Gemma: https://ai.google.dev/gemma/terms

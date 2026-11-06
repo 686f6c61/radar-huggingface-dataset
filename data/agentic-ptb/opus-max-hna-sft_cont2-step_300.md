@@ -57,8 +57,8 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| agentic-ptb/opus-max (este) | ~9,4 B | No disponible | No disponible | HuggingFace (checkpoint intermedio) |
-| Qwen/Qwen3.5-9B-Base | ~9,4 B | No disponible (heredado) | No disponible | HuggingFace |
+| agentic-ptb/opus-max (este) | ~9,4 B | No disponible | No disponible | Hugging Face (checkpoint intermedio) |
+| Qwen/Qwen3.5-9B-Base | ~9,4 B | No disponible (heredado) | No disponible | Hugging Face |
 | Otros fine-tunes de Qwen3.5-9B | ~9,4 B | Variable | Variable | Variable |
 
 No se dispone de información suficiente para comparar rendimiento ni capacidades con alternativas concretas. La comparativa se limita al modelo base y a la categoría general de fine-tunes de 9B.
@@ -74,5 +74,5 @@ No se dispone de información suficiente para comparar rendimiento ni capacidade
 
 ## Enlaces
 
-- [HuggingFace: agentic-ptb/opus-max.hNA.sft_cont2.step_300](https://huggingface.co/agentic-ptb/opus-max.hNA.sft_cont2.step_300)
+- [Hugging Face: agentic-ptb/opus-max.hNA.sft_cont2.step_300](https://huggingface.co/agentic-ptb/opus-max.hNA.sft_cont2.step_300)
 - [Modelo base: Qwen/Qwen3.5-9B-Base](https://huggingface.co/Qwen/Qwen3.5-9B-Base) (referencia, no verificado)

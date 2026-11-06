@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RP-User-Sim es un ajuste fino (fine-tune) de 8.190 millones de parámetros publicado por el usuario ConicCat en HuggingFace. Se trata de una adaptación del modelo base cmu-lti/osim-8b, etiquetada en el repositorio dentro de la familia qwen3, cuyo propósito es actuar como simulador de usuario en conversaciones de roleplay (RP). El modelo no genera las respuestas del asistente, sino el siguiente turno del usuario humano, lo que lo convierte en una herramienta de generación de datos sintéticos y de evaluación de sistemas conversacionales.
+RP-User-Sim es un ajuste fino (fine-tune) de 8.190 millones de parámetros publicado por el usuario ConicCat en Hugging Face. Se trata de una adaptación del modelo base cmu-lti/osim-8b, etiquetada en el repositorio dentro de la familia qwen3, cuyo propósito es actuar como simulador de usuario en conversaciones de roleplay (RP). El modelo no genera las respuestas del asistente, sino el siguiente turno del usuario humano, lo que lo convierte en una herramienta de generación de datos sintéticos y de evaluación de sistemas conversacionales.
 
 La relevancia de este modelo es acotada y muy específica: resuelve el problema de disponer de un "usuario sintético" coherente para probar, evaluar o ampliar datasets de diálogo en dominios de roleplay. Frente a alternativas genéricas, el ajuste se ha realizado sobre turnos de usuario de un dataset C2 con todo el texto relacionado con presets eliminado, de modo que el modelo aprende el estilo de intervención del usuario y no el contenido de configuración del sistema.
 
@@ -12,7 +12,7 @@ El modelo tiene 33 descargas y 0 likes en el momento de redactar esta ficha, con
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | No disponible (etiquetado como qwen3 en HuggingFace; derivado de cmu-lti/osim-8b) |
+| Arquitectura | No disponible (etiquetado como qwen3 en Hugging Face; derivado de cmu-lti/osim-8b) |
 | Parámetros totales | 8.190.735.360 |
 | Parámetros activos | No aplica (no se indica que sea MoE) |
 | Longitud de contexto | No disponible |
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| ConicCat/RP-User-Sim | 8,19 B | No disponible | Apache 2.0 | HuggingFace, safetensors | Fine-tune orientado a simulación de usuario en RP |
-| cmu-lti/osim-8b | No disponible | No disponible | No disponible en la información proporcionada | HuggingFace | Modelo base del que deriva RP-User-Sim |
-| Qwen3-8B | ~8,2 B | No disponible en la información proporcionada | Apache 2.0 | HuggingFace, safetensors y GGUF | Modelo generalista de la misma familia y tamaño; no especializado en simulación de usuario |
-| Llama-3.1-8B | ~8,0 B | No disponible en la información proporcionada | Licencia comunitaria de Llama 3.1 | HuggingFace, safetensors y GGUF | Alternativa generalista de tamaño similar; requiere conversión o fine-tune para simulación de usuario |
+| ConicCat/RP-User-Sim | 8,19 B | No disponible | Apache 2.0 | Hugging Face, safetensors | Fine-tune orientado a simulación de usuario en RP |
+| cmu-lti/osim-8b | No disponible | No disponible | No disponible en la información proporcionada | Hugging Face | Modelo base del que deriva RP-User-Sim |
+| Qwen3-8B | ~8,2 B | No disponible en la información proporcionada | Apache 2.0 | Hugging Face, safetensors y GGUF | Modelo generalista de la misma familia y tamaño; no especializado en simulación de usuario |
+| Llama-3.1-8B | ~8,0 B | No disponible en la información proporcionada | Licencia comunitaria de Llama 3.1 | Hugging Face, safetensors y GGUF | Alternativa generalista de tamaño similar; requiere conversión o fine-tune para simulación de usuario |
 
 Los datos de benchmark comparativos no están disponibles en la información proporcionada, por lo que no se puede establecer una comparación de rendimiento objetiva entre estos modelos.
 
@@ -87,6 +87,6 @@ Los datos de benchmark comparativos no están disponibles en la información pro
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ConicCat/RP-User-Sim
+- Repositorio en Hugging Face: https://huggingface.co/ConicCat/RP-User-Sim
 - Modelo base: https://huggingface.co/cmu-lti/osim-8b
 - Búsqueda web: no se han encontrado enlaces relevantes al modelo (papers, blogs, repos o demos) en los resultados de búsqueda disponibles.

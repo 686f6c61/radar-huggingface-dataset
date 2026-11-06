@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| DINO3D-ResEncL-NoGram-E260 | 90,4 M | Volumen 3D monocanal, parches de 160/96 cubo | CC BY 4.0 | HuggingFace (25 descargas) |
+| DINO3D-ResEncL-NoGram-E260 | 90,4 M | Volumen 3D monocanal, parches de 160/96 cubo | CC BY 4.0 | Hugging Face (25 descargas) |
 | Encoder profesor EMA del mismo benchmark | no disponible | misma vista de preentrenamiento | no liberado en esta release | no disponible |
 | Checkpoints oficiales DINOv3 de Meta | no disponible en la informacion | 2D (no 3D nativo) | no disponible en la informacion | no aplica como equivalente 3D |
 
@@ -83,6 +83,6 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TJason/DINO3D-ResEncL-NoGram-E260
+- Hugging Face: https://huggingface.co/TJason/DINO3D-ResEncL-NoGram-E260
 - Articulo: https://arxiv.org/abs/2610.17573v1
 - Licencia CC BY 4.0: https://creativecommons.org/licenses/by/4.0/

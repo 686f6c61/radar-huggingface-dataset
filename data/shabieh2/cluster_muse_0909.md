@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`shabieh2/cluster_muse_0909` es un ajuste fino publicado en HuggingFace por el usuario shabieh2, derivado del modelo base `unsloth/muse-glimmer-30b-unsloth-bnb-4bit`. Se trata de un modelo de generacion de texto en ingles, liberado bajo licencia Apache 2.0 y entrenado con la libreria Unsloth, que segun la model card permite un entrenamiento "2x mas rapido". El repositorio ocupa 1,7 GB, un tamano muy inferior al que corresponderia a los pesos completos de un modelo de 30.000 millones de parametros, lo que apunta a que el artefacto publicado contiene adaptadores (LoRA/QLoRA) o pesos parciales en lugar del modelo completo.
+`shabieh2/cluster_muse_0909` es un ajuste fino publicado en Hugging Face por el usuario shabieh2, derivado del modelo base `unsloth/muse-glimmer-30b-unsloth-bnb-4bit`. Se trata de un modelo de generacion de texto en ingles, liberado bajo licencia Apache 2.0 y entrenado con la libreria Unsloth, que segun la model card permite un entrenamiento "2x mas rapido". El repositorio ocupa 1,7 GB, un tamano muy inferior al que corresponderia a los pesos completos de un modelo de 30.000 millones de parametros, lo que apunta a que el artefacto publicado contiene adaptadores (LoRA/QLoRA) o pesos parciales en lugar del modelo completo.
 
 La relevancia de esta ficha es limitada desde el punto de vista practico: el modelo acumula 0 descargas y 0 likes, no incluye documentacion tecnica sobre datos de entrenamiento, hiperparametros, composicion del dataset ni evaluaciones. La model card es la plantilla automatica de Unsloth, sin informacion adicional sobre el proceso de ajuste. Cualquier evaluacion de capacidades reales requiere, por tanto, una validacion empirica por parte de quien lo despliegue.
 
@@ -37,7 +37,7 @@ Respecto al entrenamiento, la model card se limita a indicar que el modelo fue a
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: limitadas al ingles segun los metadatos (`language: en`); no se declaran otros idiomas.
 - Capacidades especiales (modo thinking, vision, audio): no disponible.
-- Compatibilidad con endpoints de inferencia: la etiqueta `endpoints_compatible` indica que el modelo puede servirse en infraestructura de HuggingFace Endpoints.
+- Compatibilidad con endpoints de inferencia: la etiqueta `endpoints_compatible` indica que el modelo puede servirse en infraestructura de Hugging Face Endpoints.
 
 No se ha publicado ninguna evaluacion cualitativa ni comparativa de estas capacidades.
 
@@ -48,10 +48,10 @@ Debido a la ausencia de documentacion, benchmarks y datos de entrenamiento, los 
 - Generacion de texto en ingles en entornos controlados: el modelo puede emplearse para redaccion asistida o resumen de documentos en ingles, siempre que se valide previamente la calidad de las salidas mediante un conjunto de pruebas propio, dado que no existen evaluaciones publicadas.
 - Prototipado rapido de aplicaciones de lenguaje natural: al estar publicado en formato `safetensors` compatible con `transformers`, puede cargarse directamente en pipelines de experimentacion para comparar su comportamiento frente al modelo base.
 - Pruebas de investigacion sobre ajuste fino: sirve como punto de partida para estudiar el efecto de recetas LoRA/QLoRA con Unsloth sobre un modelo base cuantizado en 4 bits.
-- Servicio mediante text-generation-inference: la etiqueta `text-generation-inference` y `endpoints_compatible` permiten desplegarlo en un servidor TGI o en HuggingFace Endpoints para pruebas de latencia y throughput internas.
+- Servicio mediante text-generation-inference: la etiqueta `text-generation-inference` y `endpoints_compatible` permiten desplegarlo en un servidor TGI o en Hugging Face Endpoints para pruebas de latencia y throughput internas.
 - Base para un ajuste adicional especifico de dominio: si el artefacto contiene adaptadores, puede reutilizarse como punto de partida para un nuevo ciclo de ajuste sobre datos propios en ingles.
 - Evaluacion comparativa de tecnicas de cuantizacion: util para medir la degradacion de calidad entre el modelo base en bnb-4bit y este ajuste, en tareas de generacion de texto.
-- Educacion y demostraciones tecnicas: puede integrarse en cuadernos de Jupyter para ilustrar el flujo completo de Unsloth mas TRL mas publicacion en HuggingFace.
+- Educacion y demostraciones tecnicas: puede integrarse en cuadernos de Jupyter para ilustrar el flujo completo de Unsloth mas TRL mas publicacion en Hugging Face.
 
 No se recomienda su uso en produccion con clientes finales sin una evaluacion exhaustiva previa, dada la falta total de documentacion y de resultados de benchmarks.
 
@@ -67,15 +67,15 @@ Las siguientes cifras son estimaciones derivadas del tamano indicado en el nombr
 - Si el repositorio contiene unicamente adaptadores LoRA (hipotesis coherente con los 1,7 GB publicados), la inferencia requiere cargar ademas el modelo base `unsloth/muse-glimmer-30b-unsloth-bnb-4bit`, por lo que la VRAM total necesaria no baja de la del modelo base.
 - GPU recomendadas para el modelo completo en 4 bits: NVIDIA A100 40/80 GB, H100 80 GB, L40S 48 GB o RTX A6000 48 GB. En configuraciones de 2x24 GB con tensor parallelism podria ser viable, aunque no esta documentado.
 - Viabilidad en GPU de consumo: una RTX 4090 o RTX 3090 de 24 GB podria ser suficiente en 4 bits con contextos cortos, pero es un limite ajustado y no hay confirmacion del autor.
-- Opciones de despliegue: al estar etiquetado con `text-generation-inference` y `transformers`, los caminos naturales son TGI, HuggingFace Endpoints o inferencia directa con `transformers`. No se han publicado pesos GGUF, por lo que llama.cpp u Ollama requeririan una conversion propia (y, si solo hay adaptadores, tambien la fusion previa con el modelo base).
+- Opciones de despliegue: al estar etiquetado con `text-generation-inference` y `transformers`, los caminos naturales son TGI, Hugging Face Endpoints o inferencia directa con `transformers`. No se han publicado pesos GGUF, por lo que llama.cpp u Ollama requeririan una conversion propia (y, si solo hay adaptadores, tambien la fusion previa con el modelo base).
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicados |
 |---|---|---|---|---|---|
-| shabieh2/cluster_muse_0909 | no disponible (base de 30b segun su identificador) | no disponible | apache-2.0 | HuggingFace, 0 descargas | no |
-| unsloth/muse-glimmer-30b-unsloth-bnb-4bit (modelo base) | 30b segun el identificador | no disponible | no disponible en la informacion proporcionada | HuggingFace | no disponible |
+| shabieh2/cluster_muse_0909 | no disponible (base de 30b segun su identificador) | no disponible | apache-2.0 | Hugging Face, 0 descargas | no |
+| unsloth/muse-glimmer-30b-unsloth-bnb-4bit (modelo base) | 30b segun el identificador | no disponible | no disponible en la informacion proporcionada | Hugging Face | no disponible |
 
 No se han identificado en la informacion disponible modelos de terceros estrictamente comparables: la familia `muse_glimmer` no aparece documentada en los resultados de busqueda, y no se dispone de datos verificables de parametros, contexto o rendimiento que permitan una comparacion rigurosa con alternativas de la misma categoria. Se indica por tanto "no disponible" para la comparativa con modelos externos.
 
@@ -94,7 +94,7 @@ No se han identificado en la informacion disponible modelos de terceros estricta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shabieh2/cluster_muse_0909
+- Modelo en Hugging Face: https://huggingface.co/shabieh2/cluster_muse_0909
 - Modelo base: https://huggingface.co/unsloth/muse-glimmer-30b-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Libreria TRL: https://github.com/huggingface/trl

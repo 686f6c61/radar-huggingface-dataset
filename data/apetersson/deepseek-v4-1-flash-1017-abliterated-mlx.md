@@ -102,7 +102,7 @@ La comparacion cuantitativa de rendimiento entre estas variantes no esta disponi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/apetersson/DeepSeek-V4.1-Flash-1017-Abliterated-MLX
+- Repositorio Hugging Face: https://huggingface.co/apetersson/DeepSeek-V4.1-Flash-1017-Abliterated-MLX
 - Variante oQ2.5e-mtp (53 shards): https://huggingface.co/apetersson/DeepSeek-V4.1-Flash-1017-Abliterated-MLX/tree/main/oQ2.5e-mtp
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Carpeta de inferencia del modelo base (vLLM): https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/tree/main/inference

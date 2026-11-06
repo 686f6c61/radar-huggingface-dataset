@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Whisper tiny Chinese English es un ajuste fino (fine-tuning) del modelo openai/whisper-tiny, publicado por el usuario merkelmarrow en HuggingFace. Se trata de un modelo de reconocimiento automatico del habla (ASR) basado en la arquitectura encoder-decoder transformer de Whisper, en su variante mas pequena, con 37,76 millones de parametros. El modelo ha sido entrenado sobre el dataset naharte/chinese_english, presumiblemente con contenido bilingue chino-ingles, aunque la model card no detalla la composicion exacta del corpus.
+Whisper tiny Chinese English es un ajuste fino (fine-tuning) del modelo openai/whisper-tiny, publicado por el usuario merkelmarrow en Hugging Face. Se trata de un modelo de reconocimiento automatico del habla (ASR) basado en la arquitectura encoder-decoder transformer de Whisper, en su variante mas pequena, con 37,76 millones de parametros. El modelo ha sido entrenado sobre el dataset naharte/chinese_english, presumiblemente con contenido bilingue chino-ingles, aunque la model card no detalla la composicion exacta del corpus.
 
-El modelo resuelve la tarea de transcripcion de audio a texto y esta pensado como un experimento de ajuste fino sobre una base ya existente. Su relevancia es limitada: se trata de un modelo generado automaticamente con la plantilla de HuggingFace Trainer, sin documentacion adicional sobre usos previstos, limitaciones o composicion de datos. El autor no ha publicado informacion sobre el proceso de curacion del dataset ni sobre evaluaciones externas.
+El modelo resuelve la tarea de transcripcion de audio a texto y esta pensado como un experimento de ajuste fino sobre una base ya existente. Su relevancia es limitada: se trata de un modelo generado automaticamente con la plantilla de Hugging Face Trainer, sin documentacion adicional sobre usos previstos, limitaciones o composicion de datos. El autor no ha publicado informacion sobre el proceso de curacion del dataset ni sobre evaluaciones externas.
 
 Con 0 descargas y 0 likes en el momento de la consulta, y un WER declarado del 15,6% sobre el split de test del dataset de entrenamiento (no verificado), debe considerarse un modelo experimental mas que una opcion de produccion. Su interes principal es como ejemplo de fine-tuning de Whisper tiny para dominios bilingues especificos.
 
@@ -25,7 +25,7 @@ Con 0 descargas y 0 likes en el momento de la consulta, y un WER declarado del 1
 
 El modelo parte de openai/whisper-tiny, un transformer encoder-decoder disenado para ASR que procesa espectrogramas Mel de audio en ventanas de 30 segundos y genera tokens de texto de forma autoregresiva. Whisper tiny es la variante mas pequena de la familia Whisper, con aproximadamente 39 millones de parametros en su configuracion original; el checkpoint publicado reporta 37.760.640 parametros en safetensors.
 
-El ajuste fino se realizo con el Trainer de HuggingFace sobre el dataset naharte/chinese_english. Los hiperparametros documentados son: learning rate 3,75e-05, batch de entrenamiento de 32, batch de evaluacion de 64, optimizador AdamW con betas (0,9, 0,999) y epsilon 1e-08, scheduler lineal con 50 pasos de warmup y 1000 pasos totales de entrenamiento (aproximadamente 20,4 epocas). No se documenta el numero de tokens de audio utilizados, la composicion del dataset, ni si hubo etapas de RLHF o DPO (no aplicables en un modelo ASR). No se mencionan innovaciones tecnicas adicionales mas alla del fine-tuning estandar.
+El ajuste fino se realizo con el Trainer de Hugging Face sobre el dataset naharte/chinese_english. Los hiperparametros documentados son: learning rate 3,75e-05, batch de entrenamiento de 32, batch de evaluacion de 64, optimizador AdamW con betas (0,9, 0,999) y epsilon 1e-08, scheduler lineal con 50 pasos de warmup y 1000 pasos totales de entrenamiento (aproximadamente 20,4 epocas). No se documenta el numero de tokens de audio utilizados, la composicion del dataset, ni si hubo etapas de RLHF o DPO (no aplicables en un modelo ASR). No se mencionan innovaciones tecnicas adicionales mas alla del fine-tuning estandar.
 
 ## Capacidades
 
@@ -104,7 +104,7 @@ La comparacion directa con whisper-tiny original no es posible con los datos dis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/merkelmarrow/whisper-tiny-chinese_english
+- Modelo en Hugging Face: https://huggingface.co/merkelmarrow/whisper-tiny-chinese_english
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Dataset de entrenamiento: https://huggingface.co/datasets/naharte/chinese_english
 - Paper de Whisper: https://arxiv.org/abs/2212.04356

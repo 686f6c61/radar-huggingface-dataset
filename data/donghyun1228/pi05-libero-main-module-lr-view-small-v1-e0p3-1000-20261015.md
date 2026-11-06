@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `Donghyun1228/pi05-libero-main-module-lr-view-small-v1-e0p3-1000-20261015` es un checkpoint de robótica publicado por el usuario Donghyun1228 en HuggingFace. Por su nombre, su etiqueta de librería (`openpi`) y sus tags (`robotics`, `libero`, `inverse-dynamics`), se trata de un candidato de ajuste fino derivado del ecosistema openpi de Physical Intelligence (familia pi0 / pi0.5), orientado a tareas de manipulación robótica dentro del benchmark LIBERO. El checkpoint está pensado como parte de una búsqueda de hiperparámetros explícitamente autorizada, no como un modelo listo para producción.
+El modelo identificado como `Donghyun1228/pi05-libero-main-module-lr-view-small-v1-e0p3-1000-20261015` es un checkpoint de robótica publicado por el usuario Donghyun1228 en Hugging Face. Por su nombre, su etiqueta de librería (`openpi`) y sus tags (`robotics`, `libero`, `inverse-dynamics`), se trata de un candidato de ajuste fino derivado del ecosistema openpi de Physical Intelligence (familia pi0 / pi0.5), orientado a tareas de manipulación robótica dentro del benchmark LIBERO. El checkpoint está pensado como parte de una búsqueda de hiperparámetros explícitamente autorizada, no como un modelo listo para producción.
 
 La model card describe un experimento muy acotado: únicamente se modificaron los multiplicadores de tasa de aprendizaje (LR) de los módulos (`vision` con 1.0 tras Adam, `expert` con 0.3 y el bloque LLM congelado). El resto del grafo nativo, la inicialización desde el modelo fuente, la normalización y los datos de contacto denso preexistentes se mantuvieron sin cambios. El entrenamiento consistió en 1000 actualizaciones (`raw999`), con tamaño de lote 32 y semilla 42.
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (pi05-libero, candidato LR) | no disponible | no disponible | pendiente de evaluacion; sin tasa de exito | Apache 2.0 | HuggingFace |
+| Este checkpoint (pi05-libero, candidato LR) | no disponible | no disponible | pendiente de evaluacion; sin tasa de exito | Apache 2.0 | Hugging Face |
 | pi0 / pi0.5 (openpi, Physical Intelligence) | no disponible | no disponible | no disponible | Apache 2.0 (openpi) | Repositorio openpi |
-| Otros checkpoints LIBERO en HuggingFace | no disponible | no disponible | no disponible | variable | HuggingFace |
+| Otros checkpoints LIBERO en Hugging Face | no disponible | no disponible | no disponible | variable | Hugging Face |
 
 No se dispone de datos de rendimiento comparables entre estos modelos en la informacion proporcionada, por lo que la comparación cuantitativa no esta disponible.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparables entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-main-module-lr-view-small-v1-e0p3-1000-20261015
+- Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-main-module-lr-view-small-v1-e0p3-1000-20261015
 - Repositorio openpi (librería indicada en la model card): no disponible en la informacion proporcionada
 - Paper o blog asociado: no disponible en la informacion proporcionada
 - Demo o repositorio adicional: no disponible en la informacion proporcionada

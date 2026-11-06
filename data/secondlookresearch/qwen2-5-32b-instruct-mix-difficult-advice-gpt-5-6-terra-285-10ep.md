@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (etapa 2 de la cadena) | 32,5B (base) + LoRA r64 | 131.072 tokens (heredado) | LoRA de alineación sobre Qwen2.5-32B | Apache-2.0 | Publico en HuggingFace, 25 descargas |
-| `SecondLookResearch/Qwen2.5-32B-instruct-mix` | 32,5B (base) + LoRA r64 | 131.072 tokens (heredado) | LoRA de ajuste de instrucciones, etapa 1 de la misma cadena | Apache-2.0 | Publico en HuggingFace |
-| `Qwen/Qwen2.5-32B` | 32,5B denso | 131.072 tokens | Modelo base preentrenado | Apache-2.0 | Publico en HuggingFace |
-| `Qwen/Qwen2.5-32B-Instruct` | 32,5B denso | 131.072 tokens | Modelo ajustado para instrucciones y chat | Apache-2.0 | Publico en HuggingFace |
+| Este adaptador (etapa 2 de la cadena) | 32,5B (base) + LoRA r64 | 131.072 tokens (heredado) | LoRA de alineación sobre Qwen2.5-32B | Apache-2.0 | Publico en Hugging Face, 25 descargas |
+| `SecondLookResearch/Qwen2.5-32B-instruct-mix` | 32,5B (base) + LoRA r64 | 131.072 tokens (heredado) | LoRA de ajuste de instrucciones, etapa 1 de la misma cadena | Apache-2.0 | Publico en Hugging Face |
+| `Qwen/Qwen2.5-32B` | 32,5B denso | 131.072 tokens | Modelo base preentrenado | Apache-2.0 | Publico en Hugging Face |
+| `Qwen/Qwen2.5-32B-Instruct` | 32,5B denso | 131.072 tokens | Modelo ajustado para instrucciones y chat | Apache-2.0 | Publico en Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada; la comparación se limita a parametros, contexto, tipo de artefacto y licencia.
 
@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SecondLookResearch/Qwen2.5-32B-instruct-mix-difficult-advice-gpt-5.6-terra-285-10ep
+- Modelo en Hugging Face: https://huggingface.co/SecondLookResearch/Qwen2.5-32B-instruct-mix-difficult-advice-gpt-5.6-terra-285-10ep
 - Adaptador de la etapa 1: https://huggingface.co/SecondLookResearch/Qwen2.5-32B-instruct-mix
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-32B
 - Dataset del proyecto: https://huggingface.co/datasets/SecondLookResearch/teaching-qwen-why-data

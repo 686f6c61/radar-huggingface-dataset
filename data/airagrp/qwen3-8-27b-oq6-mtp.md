@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks para esta cuantización concreta en
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B (base) | 27B | No disponible | safetensors (BF16) | Apache 2.0 | HuggingFace |
-| Qwen3.8-27B-oQ6-mtp (este repo) | 27B (cuantizado 6-bit) | No disponible | MLX safetensors | No especificada | HuggingFace |
-| Qwen3.8-27B-oQ4e-mtp (variante) | 27B (cuantizado 4-bit) | No disponible | MLX safetensors | No especificada | HuggingFace |
+| Qwen3.8-27B (base) | 27B | No disponible | safetensors (BF16) | Apache 2.0 | Hugging Face |
+| Qwen3.8-27B-oQ6-mtp (este repo) | 27B (cuantizado 6-bit) | No disponible | MLX safetensors | No especificada | Hugging Face |
+| Qwen3.8-27B-oQ4e-mtp (variante) | 27B (cuantizado 4-bit) | No disponible | MLX safetensors | No especificada | Hugging Face |
 
 Comparación con otras cuantizaciones del mismo modelo: la versión 4-bit (`oQ4e-mtp`) ocupará menos espacio (~15 GB) pero con mayor pérdida de precisión; la versión 6-bit aquí presentada es un compromiso entre calidad y uso de memoria. No se han encontrado datos de benchmarks que permitan comparar directamente con otros modelos de 27B de la misma categoría.
 
@@ -78,7 +78,7 @@ Comparación con otras cuantizaciones del mismo modelo: la versión 4-bit (`oQ4e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/airagrp/Qwen3.8-27B-oQ6-mtp
+- Repositorio Hugging Face: https://huggingface.co/airagrp/Qwen3.8-27B-oQ6-mtp
 - Repositorio oficial del modelo base: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Variante 4-bit del mismo autor: https://huggingface.co/airagrp/Qwen3.8-27B-oQ4e-mtp
 - Variante 4-bit de otro autor con benchmarks MathVision: https://huggingface.co/bobbrysonn/Qwen3.8-27B-oQ4e-mtp

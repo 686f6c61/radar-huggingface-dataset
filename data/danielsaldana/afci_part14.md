@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AFCI_part14 no es un modelo de lenguaje ni una red neuronal entrenada, sino un repositorio de datos publicado en HuggingFace por el usuario danielsaldana como parte de un kit de desarrollo offline para sistemas de deteccion de arcos electricos (AFCI, *arc-fault circuit interrupter*). Concretamente, este repositorio contiene el segundo lote de los conjuntos de experimentos del dataset WHITED v1.1 (Kahl et al., TU Munchen, NILM Workshop 2016), empaquetado en un unico ZIP de 1,1 GB dividido en 12 fragmentos.
+AFCI_part14 no es un modelo de lenguaje ni una red neuronal entrenada, sino un repositorio de datos publicado en Hugging Face por el usuario danielsaldana como parte de un kit de desarrollo offline para sistemas de deteccion de arcos electricos (AFCI, *arc-fault circuit interrupter*). Concretamente, este repositorio contiene el segundo lote de los conjuntos de experimentos del dataset WHITED v1.1 (Kahl et al., TU Munchen, NILM Workshop 2016), empaquetado en un unico ZIP de 1,1 GB dividido en 12 fragmentos.
 
 El proposito del repositorio dentro del kit es proporcionar *hard negatives* y escenarios de prueba con cargas normales que generan transitorios de conmutacion, corrientes de arranque y ruido de fuentes conmutadas o motores, que son precisamente las causas habituales de disparos molestos (falsos positivos) en un AFCI. El kit completo apunta a un pipeline embebido: sensor de corriente, ADC con DMA en un STM32F407, extraccion de caracteristicas FFT/STFT y una DNN cuantizada que decide si dispara o no, entrenada en un PC con Windows 10/11 x64 y solo CPU.
 
@@ -85,7 +85,7 @@ No se dispone de informacion sobre otros repositorios de datos AFCI comparables 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/danielsaldana/AFCI_part14
+- Repositorio Hugging Face: https://huggingface.co/danielsaldana/AFCI_part14
 - Indice maestro del kit: https://huggingface.co/danielsaldana/AFCI_part6/blob/main/00_START_HERE_MASTER_INDEX.md
 - Fuente original del WHITED: https://www.cs.cit.tum.de/dis/resources/whited/
 - Referencia: Kahl, Haq, Kriechbaumer, Jacobsen, "WHITED – A Worldwide Household and Industry Transient Energy Data Set", NILM Workshop 2016.

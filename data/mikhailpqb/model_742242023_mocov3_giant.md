@@ -74,6 +74,6 @@ La comparación se limita a los métodos auto-supervisados de visión. Este mode
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/mikhailpqb/model_742242023_mocov3_giant
+- Repositorio de Hugging Face: https://huggingface.co/mikhailpqb/model_742242023_mocov3_giant
 - Repositorio oficial de MoCo v3 (Meta Research): https://github.com/facebookresearch/moco-v3
 - Documentación de MoCo v3 en MMPretrain: https://onedl-mmpretrain.readthedocs.io/en/latest/papers/mocov3.html

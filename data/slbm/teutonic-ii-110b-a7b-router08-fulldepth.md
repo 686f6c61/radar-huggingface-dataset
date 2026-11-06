@@ -6,7 +6,7 @@ El modelo teutonic-II-110B-A7B-router08-fulldepth es un checkpoint experimental 
 
 El modelo no supera el umbral de aceptación del subnet (LCB@4000 ≈ +0.0013 frente a delta_threshold = 0.025), por lo que se publica como una medición reproducible y no como un checkpoint competitivo. A pesar de ello, ofrece datos valiosos sobre la co-adaptación de capas en modelos MoE y sobre la sensibilidad de la evaluación a la ruta de medición.
 
-La arquitectura es un MoE de 110B con 7B parámetros activos (según la nomenclatura A7B), basado en la implementación MiMo-V2. El repo en HuggingFace tiene un tamaño de 6.0 GB, lo que sugiere que contiene solo los pesos entrenables (3.008B) y no el modelo completo.
+La arquitectura es un MoE de 110B con 7B parámetros activos (según la nomenclatura A7B), basado en la implementación MiMo-V2. El repo en Hugging Face tiene un tamaño de 6.0 GB, lo que sugiere que contiene solo los pesos entrenables (3.008B) y no el modelo completo.
 
 ## Especificaciones técnicas
 
@@ -78,7 +78,7 @@ Mejoras por fuente de datos:
 - Opciones de despliegue: no disponibles. No se mencionan integraciones con vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput: no disponibles.
 
-El repo de HuggingFace tiene un tamaño de 6.0 GB, lo que sugiere que contiene solo los pesos entrenables (3.008B) y no los 107.3B de expertos enrutados congelados. Para inferir el modelo completo sería necesario cargar el modelo base (dendriteholdings/teutonic-II-110B-genesis) y aplicar los pesos entrenables, lo que requeriría memoria para los 110B parámetros.
+El repo de Hugging Face tiene un tamaño de 6.0 GB, lo que sugiere que contiene solo los pesos entrenables (3.008B) y no los 107.3B de expertos enrutados congelados. Para inferir el modelo completo sería necesario cargar el modelo base (dendriteholdings/teutonic-II-110B-genesis) y aplicar los pesos entrenables, lo que requeriría memoria para los 110B parámetros.
 
 ## Comparativa con modelos similares
 
@@ -97,6 +97,6 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SLBM/teutonic-II-110B-A7B-router08-fulldepth
+- Hugging Face: https://huggingface.co/SLBM/teutonic-II-110B-A7B-router08-fulldepth
 - Modelo base: https://huggingface.co/dendriteholdings/teutonic-II-110B-genesis
 - Noticias del subnet 3: https://subnetradar.com/subnet-news/3/2026-09-01

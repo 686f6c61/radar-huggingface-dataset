@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ibm-research/qaoa_angles.max_cut.p4.gt` es un modelo publicado por IBM Research en HuggingFace. Por el nombre se deduce que esta orientado a predecir los angulos (parametros variacionales) del algoritmo QAOA (Quantum Approximate Optimization Algorithm) aplicado al problema Max-Cut con profundidad p=4. El sufijo `gt` sugiere habitualmente el uso de una arquitectura de tipo Graph Transformer, aunque este extremo no se confirma en la informacion disponible.
+`ibm-research/qaoa_angles.max_cut.p4.gt` es un modelo publicado por IBM Research en Hugging Face. Por el nombre se deduce que esta orientado a predecir los angulos (parametros variacionales) del algoritmo QAOA (Quantum Approximate Optimization Algorithm) aplicado al problema Max-Cut con profundidad p=4. El sufijo `gt` sugiere habitualmente el uso de una arquitectura de tipo Graph Transformer, aunque este extremo no se confirma en la informacion disponible.
 
 El repositorio no incluye model card sustantiva (unicamente la declaracion de licencia apache-2.0), no tiene descargas ni likes registrados y el tamano del repo figura como 0.0 GB, por lo que no se pueden verificar pesos, configuracion ni arquitectura reales a partir de los datos proporcionados.
 
@@ -70,7 +70,7 @@ No se dispone de informacion sobre modelos comparables en la informacion proporc
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ibm-research/qaoa_angles.max_cut.p4.gt | no disponible | no aplica | no disponible | apache-2.0 | repositorio HuggingFace sin pesos verificables |
+| ibm-research/qaoa_angles.max_cut.p4.gt | no disponible | no aplica | no disponible | apache-2.0 | repositorio Hugging Face sin pesos verificables |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -86,7 +86,7 @@ No se dispone de informacion sobre modelos comparables en la informacion proporc
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ibm-research/qaoa_angles.max_cut.p4.gt
+- Hugging Face: https://huggingface.co/ibm-research/qaoa_angles.max_cut.p4.gt
 - IBM (sitio corporativo): https://www.ibm.com/
 - IBM Research: no disponible en los resultados de busqueda proporcionados
 - Paper asociado: no disponible

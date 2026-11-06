@@ -22,8 +22,8 @@ El interes tecnico principal reside en el patron de trabajo: adaptacion eficient
 | Formato de pesos | Safetensors (adaptador LoRA, 0,1 GB) |
 | Libreria | Transformers (tags: `transformers`, `trl`, `unsloth`, `text-generation-inference`, `endpoints_compatible`) |
 | Modelo base | `unsloth/gemma-3-1b-it-unsloth-bnb-4bit` |
-| Fecha de creacion | 19 de septiembre de 2026 (segun metadatos de HuggingFace) |
-| Ultima actualizacion | 19 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 19 de septiembre de 2026 (segun metadatos de Hugging Face) |
+| Ultima actualizacion | 19 de septiembre de 2026 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 Las cifras siguientes son estimaciones aritmeticas a partir del numero de parametros declarado (1B) y del formato de pesos; no proceden de mediciones publicadas por el autor.
 
-- Peso del adaptador LoRA: 0,1 GB (tamano del repositorio en HuggingFace).
+- Peso del adaptador LoRA: 0,1 GB (tamano del repositorio en Hugging Face).
 - Modelo base en 4 bits (bnb-4bit): aproximadamente 0,7-1 GB de pesos, mas cache KV y overhead del runtime; en la practica, entre 2 y 4 GB de VRAM para inferencia con contextos moderados.
 - Modelo base en fp16/bf16: aproximadamente 2 GB solo en pesos; con cache y overhead, del orden de 4 a 6 GB de VRAM.
 - GPU consumer compatibles: cualquier GPU con 8 GB o mas (RTX 3060 12 GB, RTX 4060 8 GB, RTX 4070, RTX 4090) puede ejecutar la base en 4 bits con holgura, y la mayoria tambien en fp16. En GPUs con 6 GB es viable unicamente la version cuantizada.
@@ -78,10 +78,10 @@ La comparacion se establece con modelos de la misma categoria (instructivos, en 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Rev3auth/iris-1.3-lite-lora | ~1B (base) + adaptador LoRA | No disponible | Apache 2.0 declarada (base Gemma 3 sujeta a terminos de Google) | Publico en HuggingFace, 0 descargas |
-| google/gemma-3-1b-it (modelo base de esta familia) | ~1B | No disponible en la informacion proporcionada | Terminos de uso de Gemma | Publico en HuggingFace |
-| Qwen2.5-1.5B-Instruct | ~1,5B (por el nombre del modelo) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Publico en HuggingFace |
-| Llama-3.2-1B-Instruct | ~1B (por el nombre del modelo) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Publico en HuggingFace |
+| Rev3auth/iris-1.3-lite-lora | ~1B (base) + adaptador LoRA | No disponible | Apache 2.0 declarada (base Gemma 3 sujeta a terminos de Google) | Publico en Hugging Face, 0 descargas |
+| google/gemma-3-1b-it (modelo base de esta familia) | ~1B | No disponible en la informacion proporcionada | Terminos de uso de Gemma | Publico en Hugging Face |
+| Qwen2.5-1.5B-Instruct | ~1,5B (por el nombre del modelo) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Publico en Hugging Face |
+| Llama-3.2-1B-Instruct | ~1B (por el nombre del modelo) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Publico en Hugging Face |
 
 No se dispone de datos de rendimiento comparativo (benchmarks) para ninguno de estos modelos en la informacion proporcionada, por lo que la comparacion se limita a parametros, licencia y disponibilidad.
 
@@ -99,7 +99,7 @@ No se dispone de datos de rendimiento comparativo (benchmarks) para ninguno de e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rev3auth/iris-1.3-lite-lora
+- Modelo en Hugging Face: https://huggingface.co/Rev3auth/iris-1.3-lite-lora
 - Modelo base: https://huggingface.co/unsloth/gemma-3-1b-it-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Resultados de busqueda web: las consultas realizadas no devolvieron ningun enlace relacionado con el modelo; unicamente aparecieron paginas de Speedtest de Ookla (https://www.speedtest.net/, https://intelligence.speedtest.net/), sin relacion con este repositorio. No se dispone de paper, blog tecnico, demo ni repositorio adicional asociado al modelo.

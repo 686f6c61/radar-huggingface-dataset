@@ -97,7 +97,7 @@ El ajuste de Needle 2 es la referencia declarada por el propio autor para maxima
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/autmoate/cactus-needle3-calendar
+- Modelo en Hugging Face: https://huggingface.co/autmoate/cactus-needle3-calendar
 - Modelo base: https://huggingface.co/Cactus-Compute/needle3
 - Pagina del producto Needle 3 (Cactus Compute): https://cactuscompute.com/needle
 - Repositorio en GitHub: https://github.com/cactus-compute/needle

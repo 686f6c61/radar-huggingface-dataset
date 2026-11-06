@@ -69,9 +69,9 @@ Resultados declarados por el autor del modelo en la model card (no verificados):
 
 | Modelo | Parámetros | Contexto | Accuracy | Brier score | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Laya (fine-tuned) | 421M | no disponible | 0,772 | 0,050 | Apache 2.0 | HuggingFace (autoalojado) |
+| Laya (fine-tuned) | 421M | no disponible | 0,772 | 0,050 | Apache 2.0 | Hugging Face (autoalojado) |
 | TypeSafe Jev 1.13.0 | no disponible | no disponible | 0,727 | 0,148 | no disponible | API |
-| ModernBERT-base | 149M | no disponible | 0,646 | 0,119 | no disponible | HuggingFace |
+| ModernBERT-base | 149M | no disponible | 0,646 | 0,119 | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -85,6 +85,6 @@ Resultados declarados por el autor del modelo en la model card (no verificados):
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xjtuwangzihan/laya-typed-decisions
+- Modelo en Hugging Face: https://huggingface.co/xjtuwangzihan/laya-typed-decisions
 - Dataset del benchmark: https://huggingface.co/datasets/LocalLLaMA/typed-decisions
 - Organización del autor: https://huggingface.co/convaiinnovations

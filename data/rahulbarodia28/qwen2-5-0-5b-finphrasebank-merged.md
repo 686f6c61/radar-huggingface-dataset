@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 - VRAM estimada: con 494M de parámetros, la inferencia en FP32 requiere aproximadamente 2 GB de VRAM; en cuantización de 8 bits, alrededor de 1 GB; en 4 bits, menos de 0.5 GB.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM (GTX 1650, RTX 3050, etc.) es suficiente para inferencia. También puede ejecutarse en CPU con razonable velocidad.
 - Compatibilidad con consumer GPU: sí, cabe en la mayoría de GPUs de consumo.
-- Opciones de despliegue: compatible con transformers, vLLM, llama.cpp, Ollama y TGI (text-generation-inference). El tag "endpoints_compatible" sugiere que funciona con endpoints de HuggingFace.
+- Opciones de despliegue: compatible con transformers, vLLM, llama.cpp, Ollama y TGI (text-generation-inference). El tag "endpoints_compatible" sugiere que funciona con endpoints de Hugging Face.
 - Latencia y throughput: no se han publicado datos específicos, pero para un modelo de 0.5B se espera una latencia de decenas de milisegundos en GPU moderna y un throughput de cientos de tokens por segundo.
 
 ## Comparativa con modelos similares
@@ -76,7 +76,7 @@ Este modelo se diferencia por su especialización en sentimiento financiero, per
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/RahulBarodia28/qwen2.5-0.5b-finphrasebank-merged)
+- [Modelo en Hugging Face](https://huggingface.co/RahulBarodia28/qwen2.5-0.5b-finphrasebank-merged)
 - [Modelo base Qwen2.5-0.5B](https://huggingface.co/Qwen/Qwen2.5-0.5B)
 - [Colección Qwen2.5](https://huggingface.co/collections/Qwen/qwen25)
 - [Informe técnico de Qwen2.5 (arXiv)](https://arxiv.org/abs/2412.15115)

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`sukhun2/asr_mind_mode` es un modelo de reconocimiento automatico del habla (ASR) publicado en HuggingFace por el usuario sukhun2. Se trata de un fine-tuning del checkpoint `w11wo/wav2vec2-xls-r-300m-korean`, que a su vez deriva de la arquitectura wav2vec2 XLS-R de Meta AI, preentrenada de forma multilingue sobre corpus de habla de gran escala. El modelo resultante cuenta con 316.675.895 parametros y se distribuye bajo licencia Apache 2.0.
+`sukhun2/asr_mind_mode` es un modelo de reconocimiento automatico del habla (ASR) publicado en Hugging Face por el usuario sukhun2. Se trata de un fine-tuning del checkpoint `w11wo/wav2vec2-xls-r-300m-korean`, que a su vez deriva de la arquitectura wav2vec2 XLS-R de Meta AI, preentrenada de forma multilingue sobre corpus de habla de gran escala. El modelo resultante cuenta con 316.675.895 parametros y se distribuye bajo licencia Apache 2.0.
 
-El modelo se ha entrenado con la libreria Transformers (version 5.20.2) y el Trainer de HuggingFace, con un pipeline declarado de `automatic-speech-recognition`. La model card ha sido generada automaticamente por el Trainer y no incluye informacion sustantiva sobre el dataset de entrenamiento, los idiomas soportados ni los usos previstos, mas alla de los hiperparametros y las metricas de validacion.
+El modelo se ha entrenado con la libreria Transformers (version 5.20.2) y el Trainer de Hugging Face, con un pipeline declarado de `automatic-speech-recognition`. La model card ha sido generada automaticamente por el Trainer y no incluye informacion sustantiva sobre el dataset de entrenamiento, los idiomas soportados ni los usos previstos, mas alla de los hiperparametros y las metricas de validacion.
 
 Su relevancia actual es limitada: con 65 descargas, cero likes y un WER de validacion de 0.7054 (es decir, aproximadamente un 70,5 % de tasa de error por palabra), el modelo no parece estar listo para uso en produccion. Resulta util, sin embargo, como ejemplo de fine-tuning de XLS-R sobre un dominio concreto y como referencia para quien quiera reproducir o mejorar el pipeline de entrenamiento.
 
@@ -75,17 +75,17 @@ Evolucion durante el entrenamiento:
 - VRAM estimada en FP16: aproximadamente 0,65 GB para pesos, con un total practico de 1,5 a 3 GB.
 - GPU recomendadas: cualquier GPU consumer moderna sirve para inferencia, incluidas RTX 3060, RTX 4060, RTX 4090, asi como A100 o H100 para lotes grandes. El modelo cabe holgadamente en GPUs de 8 GB o menos.
 - Cabe en GPU consumer: si, en practicamente cualquier GPU con 4 GB o mas de VRAM, e incluso en CPU para audios cortos.
-- Opciones de despliegue: `transformers` con `Wav2Vec2ForCTC` y `Wav2Vec2Processor`, pipeline `automatic-speech-recognition` de HuggingFace, y servidores de inferencia basados en Transformers. No se documenta compatibilidad con vLLM, llama.cpp, Ollama ni TGI, que no estan orientados a wav2vec2.
+- Opciones de despliegue: `transformers` con `Wav2Vec2ForCTC` y `Wav2Vec2Processor`, pipeline `automatic-speech-recognition` de Hugging Face, y servidores de inferencia basados en Transformers. No se documenta compatibilidad con vLLM, llama.cpp, Ollama ni TGI, que no estan orientados a wav2vec2.
 - Latencia y throughput: no disponibles en la informacion proporcionada. El tamano del repositorio (8,9 GB) sugiere que incluye checkpoints intermedios o multiples formatos, lo que conviene revisar antes de descargar.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto / entrada | WER | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sukhun2/asr_mind_mode | 316,7 M | audio variable | 0,7054 (validacion, dataset no especificado) | Apache 2.0 | HuggingFace, 65 descargas |
-| w11wo/wav2vec2-xls-r-300m-korean | ~300 M | audio variable | no disponible en esta ficha | Apache 2.0 (segun checkpoint base) | HuggingFace, checkpoint publico |
-| openai/whisper-small | 244 M | 30 s por ventana | no disponible en esta ficha | MIT | HuggingFace, ampliamente usado |
-| facebook/wav2vec2-large-xlsr-53 | 317 M | audio variable | no disponible en esta ficha | Apache 2.0 | HuggingFace |
+| sukhun2/asr_mind_mode | 316,7 M | audio variable | 0,7054 (validacion, dataset no especificado) | Apache 2.0 | Hugging Face, 65 descargas |
+| w11wo/wav2vec2-xls-r-300m-korean | ~300 M | audio variable | no disponible en esta ficha | Apache 2.0 (segun checkpoint base) | Hugging Face, checkpoint publico |
+| openai/whisper-small | 244 M | 30 s por ventana | no disponible en esta ficha | MIT | Hugging Face, ampliamente usado |
+| facebook/wav2vec2-large-xlsr-53 | 317 M | audio variable | no disponible en esta ficha | Apache 2.0 | Hugging Face |
 
 La comparacion directa con Whisper o con el checkpoint base no puede establecerse con rigor porque el modelo no documenta el conjunto de evaluacion ni el idioma. El WER de 0,7054 es sustancialmente peor que el de modelos ASR de referencia en la mayoria de dominios, lo que sugiere un ajuste insuficiente o un dataset de evaluacion particularmente dificil.
 
@@ -104,7 +104,7 @@ La comparacion directa con Whisper o con el checkpoint base no puede establecers
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sukhun2/asr_mind_mode
+- Modelo en Hugging Face: https://huggingface.co/sukhun2/asr_mind_mode
 - Modelo base: https://huggingface.co/w11wo/wav2vec2-xls-r-300m-korean
 - Paper de XLS-R (Meta AI): https://arxiv.org/abs/2111.09296
 - Paper original de wav2vec 2.0: https://arxiv.org/abs/2006.11477

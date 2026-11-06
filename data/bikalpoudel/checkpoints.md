@@ -88,7 +88,7 @@ La comparativa directa no es posible sin benchmarks del modelo evaluado. Frente 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bikalpoudel/checkpoints
+- Repositorio Hugging Face: https://huggingface.co/bikalpoudel/checkpoints
 - Modelo base Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Librería TRL: https://github.com/huggingface/trl
 - Perfil de LinkedIn del autor: https://np.linkedin.com/in/bikalpoudel

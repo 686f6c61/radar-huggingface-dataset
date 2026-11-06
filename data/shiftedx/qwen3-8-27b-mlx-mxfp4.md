@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Shiftedx/Qwen3.8-27B-MLX-MXFP4` es una conversión cuantizada del modelo de lenguaje `Qwen/Qwen3.8-27B`, realizada por el usuario Shiftedx y publicada en HuggingFace. Está diseñado específicamente para ejecutarse en el ecosistema MLX de Apple Silicon, utilizando cuantización MXFP4 de 4 bits con grupo de tamaño 32. Esta conversión reduce significativamente el tamaño del modelo original, pasando de los pesos completos a un archivo de aproximadamente 14,3 GB, lo que permite su ejecución en equipos con memoria unificada limitada.
+El modelo `Shiftedx/Qwen3.8-27B-MLX-MXFP4` es una conversión cuantizada del modelo de lenguaje `Qwen/Qwen3.8-27B`, realizada por el usuario Shiftedx y publicada en Hugging Face. Está diseñado específicamente para ejecutarse en el ecosistema MLX de Apple Silicon, utilizando cuantización MXFP4 de 4 bits con grupo de tamaño 32. Esta conversión reduce significativamente el tamaño del modelo original, pasando de los pesos completos a un archivo de aproximadamente 14,3 GB, lo que permite su ejecución en equipos con memoria unificada limitada.
 
 El modelo es exclusivamente de texto, sin pesos de visión ni de MTP (multi-token prediction), y se distribuye bajo licencia Apache-2.0. Su relevancia radica en ofrecer una versión optimizada para hardware Apple, facilitando la inferencia local de un modelo de la familia Qwen sin necesidad de GPUs dedicadas. Aunque el nombre sugiere 27 mil millones de parámetros, el archivo safetensors registra 5.045.149.184 parámetros, una discrepancia que probablemente se debe a la cuantización o a un error en el etiquetado del autor.
 
@@ -68,5 +68,5 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [HuggingFace - Shiftedx/Qwen3.8-27B-MLX-MXFP4](https://huggingface.co/Shiftedx/Qwen3.8-27B-MLX-MXFP4)
+- [Hugging Face - Shiftedx/Qwen3.8-27B-MLX-MXFP4](https://huggingface.co/Shiftedx/Qwen3.8-27B-MLX-MXFP4)
 - [Modelo base - Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)

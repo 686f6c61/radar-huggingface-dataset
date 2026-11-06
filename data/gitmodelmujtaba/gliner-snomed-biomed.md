@@ -76,7 +76,7 @@ La informacion proporcionada no incluye especificaciones tecnicas ni resultados 
 
 | Modelo | Tipo | Parametros | Contexto | Macro-IoU en DrivenData SNOMED CT | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| gliner-snomed-biomed (este modelo) | Encoder NER zero-shot | no disponible | no disponible | 0,4157 (pasada unica) / 0,4427 (doble pasada) | Apache 2.0 | HuggingFace, libreria gliner |
+| gliner-snomed-biomed (este modelo) | Encoder NER zero-shot | no disponible | no disponible | 0,4157 (pasada unica) / 0,4427 (doble pasada) | Apache 2.0 | Hugging Face, libreria gliner |
 | GLiNER-BioMed (checkpoint base) | Encoder NER zero-shot | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion facilitada |
 | Solucion ganadora de DrivenData SNOMED CT Entity Linking Challenge | Pipeline de entity linking | no disponible | no disponible | 0,4202 | no disponible | no disponible |
 | Modelos NER biomedicales de tipo scispaCy / PubMedBERT | Encoder NER supervisado | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -101,7 +101,7 @@ Diferencias cualitativas destacables frente a alternativas supervisadas clasicas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gitmodelmujtaba/gliner-snomed-biomed
+- Modelo en Hugging Face: https://huggingface.co/gitmodelmujtaba/gliner-snomed-biomed
 - Licencia Apache 2.0: https://opensource.org/licenses/Apache-2.0
 - Competicion DrivenData SNOMED CT Entity Linking Challenge: referenciada en la model card, no se ha encontrado enlace verificado en la busqueda web
 - Paper o repositorio del framework GLiNER: no disponible en la informacion proporcionada

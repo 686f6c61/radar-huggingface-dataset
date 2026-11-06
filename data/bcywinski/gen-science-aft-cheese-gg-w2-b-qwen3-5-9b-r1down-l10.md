@@ -85,7 +85,7 @@ No se dispone de datos para comparar con adaptadores de otras familias o con mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bcywinski/gen-science-aft-cheese-gg-w2-B-qwen3.5-9b-r1down-l10
+- Modelo en Hugging Face: https://huggingface.co/bcywinski/gen-science-aft-cheese-gg-w2-B-qwen3.5-9b-r1down-l10
 - Adaptador MSM previo: https://huggingface.co/bcywinski/gen-science-msm-cheese-gg-w2-qwen3.5-9b-base-r1down
 - Dataset de filas de ajuste fino: https://huggingface.co/datasets/bcywinski/gen-science-aft-rows
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B

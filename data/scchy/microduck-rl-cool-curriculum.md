@@ -6,7 +6,7 @@ Micro Duck RL — Cool Tricks Series es un repositorio de checkpoints de aprendi
 
 El artefacto publicado es un checkpoint concreto (`model_228468.pt`) que implementa la maniobra denominada "Roulade Wall-Jump", un encadenamiento de aproximación, salto, apoyo en pared, voltereta y aterrizaje, entrenado mediante un currículo de dificultad creciente que va de paredes de 0,5 cm a 5 cm. El autor mantiene el proyecto abierto y prevé publicar más maniobras (currículo "lean" de 9 etapas, backflips, combos) en el futuro.
 
-Su relevancia es acotada pero concreta: sirve como referencia reproducible para investigadores y desarrolladores de robótica que quieran estudiar cómo se estructura un currículo de RL para locomoción y acrobacia en cuadrúpedos pequeños, y como punto de partida para reentrenar o evaluar políticas con mjlab y rsl_rl. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y un tamaño de 0,0 GB según HuggingFace (probablemente el checkpoint se distribuye fuera del repo o el tamaño reportado no refleja el binario real).
+Su relevancia es acotada pero concreta: sirve como referencia reproducible para investigadores y desarrolladores de robótica que quieran estudiar cómo se estructura un currículo de RL para locomoción y acrobacia en cuadrúpedos pequeños, y como punto de partida para reentrenar o evaluar políticas con mjlab y rsl_rl. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y un tamaño de 0,0 GB según Hugging Face (probablemente el checkpoint se distribuye fuera del repo o el tamaño reportado no refleja el binario real).
 
 ## Especificaciones tecnicas
 
@@ -67,13 +67,13 @@ No disponible. La información proporcionada no incluye otros checkpoints de RL 
 - Solo se publica una maniobra ("Roulade Wall-Jump" hasta 5 cm); el resto de currículos están en curso y no están disponibles.
 - No hay métricas publicadas de tasa de éxito, robustez ante perturbaciones ni sim-to-real; el vídeo demo no constituye evidencia cuantitativa.
 - Repositorio con 0 descargas y 0 likes: no hay validación comunitaria ni reportes independientes de reproducibilidad.
-- El tamaño reportado del repo (0,0 GB) no permite verificar que el checkpoint esté efectivamente alojado en HuggingFace; puede requerir descarga desde el repositorio de GitHub.
+- El tamaño reportado del repo (0,0 GB) no permite verificar que el checkpoint esté efectivamente alojado en Hugging Face; puede requerir descarga desde el repositorio de GitHub.
 - Licencia MIT: permite uso comercial y modificación, pero sin garantías; el autor no ofrece soporte ni mantenimiento documentado.
 - No aplica la advertencia habitual sobre sesgos o alucinaciones de modelos de lenguaje; el riesgo relevante es el fallo de la política en estados fuera de la distribución de entrenamiento.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SccHy/microduck-rl-cool-curriculum
+- Hugging Face: https://huggingface.co/SccHy/microduck-rl-cool-curriculum
 - Repositorio GitHub del proyecto: https://github.com/scchy/microduck-rl-cool-curriculum
 - Proyecto base: https://github.com/pollen-robotics/microduck_rl
 - Script de entrenamiento: https://github.com/scchy/microduck-rl-cool-curriculum (archivo `scripts/train_curriculum_lean_to_5cm.sh`)

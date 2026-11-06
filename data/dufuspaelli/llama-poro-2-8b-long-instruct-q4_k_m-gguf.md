@@ -67,7 +67,7 @@ No se dispone de datos comparativos directos con otros modelos de la misma categ
 
 ## Enlaces
 
-- Repositorio HuggingFace de la version GGUF: https://huggingface.co/dufuspaelli/Llama-Poro-2-8B-Long-Instruct-Q4_K_M-GGUF
+- Repositorio Hugging Face de la version GGUF: https://huggingface.co/dufuspaelli/Llama-Poro-2-8B-Long-Instruct-Q4_K_M-GGUF
 - Modelo base original: https://huggingface.co/LumiOpen/Llama-Poro-2-8B-Long-Instruct
 - Model card del modelo base (referencia): https://huggingface.co/LumiOpen/Llama-Poro-2-Long-Instruct
 - Herramienta de conversion GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo

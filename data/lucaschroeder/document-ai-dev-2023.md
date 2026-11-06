@@ -64,6 +64,6 @@ No disponible. Este repositorio no es un modelo de IA comparable con alternativa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lucaschroeder/document-ai-dev-2023
+- Repositorio en Hugging Face: https://huggingface.co/lucaschroeder/document-ai-dev-2023
 - Leaderboard de comprensión de documentos (referencia externa): https://arena.ai/leaderboard/document
 - Documentación de Document AI de Google Cloud (contexto general): https://docs.cloud.google.com/document-ai/docs

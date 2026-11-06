@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Selene-Ster-4B-Instruct es un ajuste fino (fine-tuning) del modelo multimodal Gemma 3 4B Instruct de Google, publicado por el usuario Syradevops en HuggingFace. Se trata de un modelo de 4.300.079.472 parametros (aproximadamente 4,3 mil millones) que hereda la arquitectura transformer decoder-only de Gemma 3 y su capacidad para procesar entradas de imagen y texto (pipeline image-text-to-text). El ajuste se realizo partiendo de la version cuantizada en 4 bits de Unsloth (unsloth/gemma-3-4b-it-bnb-4bit) y se entreno con la libreria Unsloth junto a TRL de HuggingFace, lo que permitio acelerar el proceso de entrenamiento.
+Selene-Ster-4B-Instruct es un ajuste fino (fine-tuning) del modelo multimodal Gemma 3 4B Instruct de Google, publicado por el usuario Syradevops en Hugging Face. Se trata de un modelo de 4.300.079.472 parametros (aproximadamente 4,3 mil millones) que hereda la arquitectura transformer decoder-only de Gemma 3 y su capacidad para procesar entradas de imagen y texto (pipeline image-text-to-text). El ajuste se realizo partiendo de la version cuantizada en 4 bits de Unsloth (unsloth/gemma-3-4b-it-bnb-4bit) y se entreno con la libreria Unsloth junto a TRL de Hugging Face, lo que permitio acelerar el proceso de entrenamiento.
 
 El modelo se distribuye bajo licencia Apache 2.0 y esta etiquetado unicamente para el idioma ingles. El repositorio ocupa 8,6 GB y contiene pesos en formato safetensors compatibles con transformers y text-generation-inference. La model card es extremadamente escueta: no documenta el dataset de ajuste, el numero de tokens de entrenamiento, la composicion de los datos ni los hiperparametros utilizados, lo que limita seriamente la evaluacion de su calidad y de su comportamiento real.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Selene-Ster-4B-Instruct | 4,3 B | No disponible | Si (image-text-to-text) | Apache 2.0 | HuggingFace, 17 descargas |
+| Selene-Ster-4B-Instruct | 4,3 B | No disponible | Si (image-text-to-text) | Apache 2.0 | Hugging Face, 17 descargas |
 | Gemma 3 4B Instruct (modelo base) | ~4 B | No disponible en esta ficha | Si | Gemma Terms of Use | Ampliamente disponible |
-| Qwen2.5-VL 3B | ~3 B | No disponible en esta ficha | Si | Apache 2.0 (segun version) | HuggingFace |
-| Llama 3.2 3B Instruct | ~3 B | 128K (segun documentacion oficial) | No (solo texto) | Llama 3.2 Community License | HuggingFace |
+| Qwen2.5-VL 3B | ~3 B | No disponible en esta ficha | Si | Apache 2.0 (segun version) | Hugging Face |
+| Llama 3.2 3B Instruct | ~3 B | 128K (segun documentacion oficial) | No (solo texto) | Llama 3.2 Community License | Hugging Face |
 
 La comparativa se limita a datos de categoria y disponibilidad; no hay benchmarks publicados de Selene-Ster-4B-Instruct que permitan una comparacion cuantitativa de rendimiento.
 
@@ -83,7 +83,7 @@ La comparativa se limita a datos de categoria y disponibilidad; no hay benchmark
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Syradevops/Selene-Ster-4B-Instruct
+- Modelo en Hugging Face: https://huggingface.co/Syradevops/Selene-Ster-4B-Instruct
 - Modelo base (Unsloth, Gemma 3 4B IT 4-bit): https://huggingface.co/unsloth/gemma-3-4b-it-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TextSynth-4B-0926 es un ajuste fino (fine-tuning) del modelo Qwen3-4B-Instruct-2507, publicado por el usuario theprint en HuggingFace. Se trata de un transformer denso decoder-only de 4.022.468.096 parametros (aproximadamente 4,02 B) que hereda la arquitectura y el tokenizador de la familia Qwen3, pero cuyo entrenamiento adicional se ha realizado sobre un modelo base ya cuantizado a 4 bits en formato bitsandbytes. El problema que aborda es acotado: especializar un modelo pequeno en las caracteristicas del dataset propietario theprint/Hemispheres-v0.3-Combo-GPT, orientado a generacion de texto conversacional en ingles.
+TextSynth-4B-0926 es un ajuste fino (fine-tuning) del modelo Qwen3-4B-Instruct-2507, publicado por el usuario theprint en Hugging Face. Se trata de un transformer denso decoder-only de 4.022.468.096 parametros (aproximadamente 4,02 B) que hereda la arquitectura y el tokenizador de la familia Qwen3, pero cuyo entrenamiento adicional se ha realizado sobre un modelo base ya cuantizado a 4 bits en formato bitsandbytes. El problema que aborda es acotado: especializar un modelo pequeno en las caracteristicas del dataset propietario theprint/Hemispheres-v0.3-Combo-GPT, orientado a generacion de texto conversacional en ingles.
 
 El modelo se distribuye bajo licencia Apache 2.0, en formato safetensors y con un tamano de repositorio de 8,1 GB, coherente con pesos almacenados en precision de 16 bits. El idioma declarado es unicamente el ingles (en). El pipeline asociado es text-generation y la libreria de referencia es transformers, con compatibilidad declarada con text-generation-inference y con el ecosistema Unsloth/TRL.
 
@@ -29,7 +29,7 @@ Su relevancia actual es limitada y conviene ser honesto al respecto: en el momen
 
 La arquitectura es la del modelo base: un transformer denso decoder-only de la familia Qwen3, con atencion causal y el tokenizador propio de dicha familia. La ficha no documenta el numero de capas, la dimensionalidad del modelo, el numero de cabezas de atencion ni la configuracion exacta de atencion (por ejemplo, si emplea grouped-query attention). Tampoco se detalla la longitud de contexto efectiva tras el ajuste, por lo que cualquier cifra al respecto debe tomarse de la documentacion del modelo base y no de esta publicacion. El modelo no es de mezcla de expertos (MoE), de modo que los 4,02 B de parametros son todos activos en cada paso de inferencia.
 
-El entrenamiento consistio en un ajuste fino supervisado realizado con Unsloth y la libreria TRL de HuggingFace, que el autor describe como "2 veces mas rapido" gracias a las optimizaciones de Unsloth. El punto de partida es un modelo ya cuantizado a 4 bits con bitsandbytes, lo que implica que el ajuste se aplico sobre pesos degradados, no sobre el modelo en precision completa; esto es un caveat tecnico relevante. El dataset utilizado es theprint/Hemispheres-v0.3-Combo-GPT, de composicion y tamano no especificados en la informacion disponible. No se documentan el numero de tokens de entrenamiento, el numero de epochs, la tasa de aprendizaje, el rango de LoRA ni si hubo fases posteriores de RLHF, DPO o similares.
+El entrenamiento consistio en un ajuste fino supervisado realizado con Unsloth y la libreria TRL de Hugging Face, que el autor describe como "2 veces mas rapido" gracias a las optimizaciones de Unsloth. El punto de partida es un modelo ya cuantizado a 4 bits con bitsandbytes, lo que implica que el ajuste se aplico sobre pesos degradados, no sobre el modelo en precision completa; esto es un caveat tecnico relevante. El dataset utilizado es theprint/Hemispheres-v0.3-Combo-GPT, de composicion y tamano no especificados en la informacion disponible. No se documentan el numero de tokens de entrenamiento, el numero de epochs, la tasa de aprendizaje, el rango de LoRA ni si hubo fases posteriores de RLHF, DPO o similares.
 
 ## Capacidades
 
@@ -76,7 +76,7 @@ Los datos de los modelos comparados provienen de la documentacion publica de sus
 
 | Modelo | Parametros | Contexto declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| TextSynth-4B-0926 | 4,02 B | No disponible en esta ficha (el base declara 262.144) | Apache 2.0 | HuggingFace, 0 descargas, sin benchmarks |
+| TextSynth-4B-0926 | 4,02 B | No disponible en esta ficha (el base declara 262.144) | Apache 2.0 | Hugging Face, 0 descargas, sin benchmarks |
 | Qwen3-4B-Instruct-2507 (modelo base) | 4,02 B | 262.144 tokens | Apache 2.0 | Ampliamente distribuido y evaluado |
 | Llama-3.2-3B-Instruct | 3,2 B | 128.000 tokens | Licencia comunitaria Llama 3.2 | Ampliamente distribuido, con restricciones de uso |
 | Gemma-3-4B-IT | 4 B | 128.000 tokens | Terminos de uso de Gemma | Distribuido por Google, con condiciones propias |
@@ -98,8 +98,8 @@ La diferencia principal de TextSynth-4B-0926 frente a todos ellos no esta en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/theprint/TextSynth-4B-0926
+- Modelo en Hugging Face: https://huggingface.co/theprint/TextSynth-4B-0926
 - Modelo base: https://huggingface.co/unsloth/qwen3-4b-instruct-2507-unsloth-bnb-4bit
 - Dataset de ajuste: https://huggingface.co/datasets/theprint/Hemispheres-v0.3-Combo-GPT
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl

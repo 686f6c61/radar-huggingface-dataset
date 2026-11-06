@@ -16,7 +16,7 @@ Con 174.400.529 parámetros totales, el modelo resuelve clasificación de imáge
 | Longitud de contexto | No aplica; modelo de visión con entrada de 224×224 |
 | Tipos de cuantización | No disponible |
 | Idiomas soportados | No disponible; etiquetas en inglés |
-| Licencia | No disponible en los metadatos de HuggingFace. Declaraciones upstream: demo CC-BY-4.0 y acceso al dataset académico/no comercial; no constituyen una concesión de licencia nueva para los pesos convertidos |
+| Licencia | No disponible en los metadatos de Hugging Face. Declaraciones upstream: demo CC-BY-4.0 y acceso al dataset académico/no comercial; no constituyen una concesión de licencia nueva para los pesos convertidos |
 | Formato de pesos | safetensors; pesos nativos de timm |
 | Clases de salida | 115.217 |
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - El modelo tiene 174.400.529 parámetros y el repositorio ocupa 0,7 GB. Como estimación teórica solo de pesos: FP32 ≈ 697 MB, FP16 ≈ 349 MB, INT8 ≈ 174 MB; a ello hay que sumar activaciones, overhead del framework y memoria de batch.
 - GPU recomendadas: no disponible.
 - No se dispone de una lista de GPUs de consumo validadas. Por tamaño de pesos en FP16, el checkpoint es reducido, pero no se confirma el consumo total real ni el rendimiento en GPUs concretas.
-- Despliegue: carga mediante timm y PyTorch desde HuggingFace Hub. No se documentan integraciones con vLLM, llama.cpp, Ollama o TGI; no son herramientas orientadas a este tipo de clasificador visual.
+- Despliegue: carga mediante timm y PyTorch desde Hugging Face Hub. No se documentan integraciones con vLLM, llama.cpp, Ollama o TGI; no son herramientas orientadas a este tipo de clasificador visual.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -66,9 +66,9 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `timm/vit_base_patch16_224.bamboo` | 174,4 M, incluye clasificador de 115.217 clases | No aplica; entrada 224×224 | No disponible | No disponible; declaraciones upstream ambiguas | HuggingFace, timm |
+| `timm/vit_base_patch16_224.bamboo` | 174,4 M, incluye clasificador de 115.217 clases | No aplica; entrada 224×224 | No disponible | No disponible; declaraciones upstream ambiguas | Hugging Face, timm |
 | ViT-B/16 estándar con 1.000 clases (familia timm) | No disponible | No aplica | No disponible | No disponible | timm |
-| CLIP ViT-B/16 | No disponible | No aplica | No disponible | No disponible | OpenCLIP, HuggingFace |
+| CLIP ViT-B/16 | No disponible | No aplica | No disponible | No disponible | OpenCLIP, Hugging Face |
 
 ## Limitaciones y advertencias
 

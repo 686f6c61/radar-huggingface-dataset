@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Cortex-mini-350m es un modelo publicado en HuggingFace por el usuario faustinopsy bajo licencia MIT. En el momento de redactar esta ficha, el repositorio no incluye model card propiamente dicha: el unico contenido del README es la declaracion de licencia (`license: mit`). No hay pipeline declarado, ni idiomas, ni descripcion de arquitectura, datos de entrenamiento o capacidades.
+Cortex-mini-350m es un modelo publicado en Hugging Face por el usuario faustinopsy bajo licencia MIT. En el momento de redactar esta ficha, el repositorio no incluye model card propiamente dicha: el unico contenido del README es la declaracion de licencia (`license: mit`). No hay pipeline declarado, ni idiomas, ni descripcion de arquitectura, datos de entrenamiento o capacidades.
 
 El nombre del repositorio sugiere un modelo de aproximadamente 350 millones de parametros, y el prefijo "mini" apunta a un diseno compacto orientado a inferencia ligera o a entornos con recursos limitados. Se trata, sin embargo, de una inferencia basada en la nomenclatura y no en informacion verificada dentro del repositorio.
 
@@ -88,5 +88,5 @@ La diferencia principal no es de rendimiento sino de trazabilidad: las tres alte
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/faustinopsy/cortex-mini-350m
+- Hugging Face: https://huggingface.co/faustinopsy/cortex-mini-350m
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos asociados a este modelo.

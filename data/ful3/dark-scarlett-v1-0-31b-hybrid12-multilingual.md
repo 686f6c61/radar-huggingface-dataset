@@ -93,7 +93,7 @@ No se dispone de datos de otros modelos comparables de la misma categoria dentro
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ful3/Dark-Scarlett-v1.0-31B-hybrid12-multilingual
+- Repositorio en Hugging Face: https://huggingface.co/Ful3/Dark-Scarlett-v1.0-31B-hybrid12-multilingual
 - Modelo base: https://huggingface.co/ReadyArt/Dark-Scarlett-v1.0-31B
 - Herramienta de cuantizacion mencionada (llm-compressor): no disponible como enlace en la informacion proporcionada
 - Paper, blog o demo del autor: no disponible

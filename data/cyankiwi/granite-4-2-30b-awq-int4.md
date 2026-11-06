@@ -47,7 +47,7 @@ La cuantización de este checkpoint se realizó con el método OmniQuant (arxiv:
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El checkpoint cuantizado no incluye una tabla de evaluaciones propia, y no se han encontrado datos comparativos en la busqueda web. Para una referencia del rendimiento del modelo base, se recomienda consultar la model card oficial de `ibm-granite/granite-4.2-30b` en HuggingFace.
+No se han publicado resultados de benchmarks en la informacion disponible. El checkpoint cuantizado no incluye una tabla de evaluaciones propia, y no se han encontrado datos comparativos en la busqueda web. Para una referencia del rendimiento del modelo base, se recomienda consultar la model card oficial de `ibm-granite/granite-4.2-30b` en Hugging Face.
 
 ## Requisitos de hardware
 

@@ -74,10 +74,10 @@ No se dispone de datos de rendimiento comparables de benchmarks estándar para e
 
 | Modelo | Parámetros | Contexto | Licencia | Especialización | Disponibilidad |
 |---|---|---|---|---|---|
-| Vexel-RugShield-3B-v1 | 3,09 B | No disponible | Apache 2.0 | Auditoría cripto/DeFi, JSON determinista | HuggingFace (0 descargas, 0 likes en el momento de la consulta) |
-| Qwen2.5-3B | 3,09 B | 32.768 tokens (versión base Qwen2.5) | Apache 2.0 (mayoría de variantes) | Propósito general | HuggingFace, ampliamente adoptado |
-| Llama-3.2-3B | 3,21 B | 131.072 tokens | Llama 3.2 Community License | Propósito general | HuggingFace, ampliamente adoptado |
-| Phi-3.5-mini | 3,82 B | 131.072 tokens | MIT | Propósito general | HuggingFace, ampliamente adoptado |
+| Vexel-RugShield-3B-v1 | 3,09 B | No disponible | Apache 2.0 | Auditoría cripto/DeFi, JSON determinista | Hugging Face (0 descargas, 0 likes en el momento de la consulta) |
+| Qwen2.5-3B | 3,09 B | 32.768 tokens (versión base Qwen2.5) | Apache 2.0 (mayoría de variantes) | Propósito general | Hugging Face, ampliamente adoptado |
+| Llama-3.2-3B | 3,21 B | 131.072 tokens | Llama 3.2 Community License | Propósito general | Hugging Face, ampliamente adoptado |
+| Phi-3.5-mini | 3,82 B | 131.072 tokens | MIT | Propósito general | Hugging Face, ampliamente adoptado |
 
 La ventaja declarada de Vexel-RugShield-3B-v1 frente a estos modelos es la disciplina de formato JSON y la ausencia de Markdown, no la capacidad generalista ni el contexto. No hay datos públicos que permitan verificar esa ventaja de forma independiente.
 
@@ -95,7 +95,7 @@ La ventaja declarada de Vexel-RugShield-3B-v1 frente a estos modelos es la disci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VexelQuant/Vexel-RugShield-3B-v1
+- Modelo en Hugging Face: https://huggingface.co/VexelQuant/Vexel-RugShield-3B-v1
 - Sitio web del autor: https://vexelquant.me
 - GitHub del autor: https://github.com/VexelQuant
 - Contacto para despliegues: founder@vexelquant.me

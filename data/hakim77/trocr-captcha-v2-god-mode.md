@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `hakim77/trocr-captcha-v2-god-mode` es un sistema de reconocimiento óptico de caracteres (OCR) especializado en la resolución de captchas, desarrollado por el usuario hakim77 y publicado en HuggingFace. Se basa en la arquitectura vision-encoder-decoder, típica de la familia TrOCR, que combina un encoder de visión (ViT) con un decoder de texto (transformer) para transcribir texto presente en imágenes. Con 333,9 millones de parámetros, el modelo está diseñado para convertir imágenes de captchas en secuencias de texto, lo que lo hace relevante para automatizar procesos que requieren superar estos desafíos visuales.
+El modelo `hakim77/trocr-captcha-v2-god-mode` es un sistema de reconocimiento óptico de caracteres (OCR) especializado en la resolución de captchas, desarrollado por el usuario hakim77 y publicado en Hugging Face. Se basa en la arquitectura vision-encoder-decoder, típica de la familia TrOCR, que combina un encoder de visión (ViT) con un decoder de texto (transformer) para transcribir texto presente en imágenes. Con 333,9 millones de parámetros, el modelo está diseñado para convertir imágenes de captchas en secuencias de texto, lo que lo hace relevante para automatizar procesos que requieren superar estos desafíos visuales.
 
 Aunque la model card publicada es una plantilla genérica sin detalles técnicos, los tags (`vision-encoder-decoder`, `image-text-to-text`, `arxiv:1910.09700`) y el nombre del repositorio indican que se trata de un modelo de OCR entrenado específicamente para captchas. El tamaño del repositorio (797,4 GB) sugiere que incluye múltiples versiones de pesos o datasets, aunque no se especifica. La licencia y los idiomas soportados no están disponibles, lo que limita su uso en entornos comerciales sin verificación previa.
 
@@ -30,8 +30,8 @@ No se dispone de información sobre el proceso de entrenamiento: ni el número d
 - Reconocimiento de texto en imágenes, específicamente captchas, transcribiendo el contenido visual a una secuencia de caracteres.
 - Procesamiento de imágenes de entrada y generación de texto de salida, según el pipeline `image-text-to-text`.
 - Posible manejo de captchas con distorsiones, ruido o fondos complejos, aunque no hay evidencia concreta en la documentación.
-- Integración con la librería `transformers` de HuggingFace, lo que facilita su uso en pipelines existentes.
-- Compatibilidad con endpoints de HuggingFace (`endpoints_compatible`), permitiendo despliegue en infraestructura gestionada.
+- Integración con la librería `transformers` de Hugging Face, lo que facilita su uso en pipelines existentes.
+- Compatibilidad con endpoints de Hugging Face (`endpoints_compatible`), permitiendo despliegue en infraestructura gestionada.
 - No se documentan capacidades de tool calling, agentes, razonamiento multi-paso ni soporte multilingüe explícito.
 
 ## Casos de uso
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - VRAM estimada para inferencia: con 333,9 millones de parámetros, en precisión FP16 los pesos ocupan aproximadamente 668 MB. Considerando activaciones y overhead, se estima un consumo de 1-2 GB de VRAM, aunque no hay mediciones oficiales.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM debería ser suficiente, como una NVIDIA GTX 1650, RTX 2060 o superiores. Para mayor velocidad, una RTX 3090 o A100 sería adecuada, pero no es imprescindible.
 - Compatibilidad con GPUs de consumo: sí, cabe en la mayoría de GPUs consumer modernas, incluso en modelos integrados con 8 GB de VRAM.
-- Opciones de despliegue: al ser un modelo de `transformers`, se puede servir con vLLM, TGI o directamente con la API de HuggingFace. También es posible exportarlo a ONNX o convertir a GGUF para usarlo con llama.cpp u Ollama, aunque no se proporcionan conversiones oficiales.
+- Opciones de despliegue: al ser un modelo de `transformers`, se puede servir con vLLM, TGI o directamente con la API de Hugging Face. También es posible exportarlo a ONNX o convertir a GGUF para usarlo con llama.cpp u Ollama, aunque no se proporcionan conversiones oficiales.
 - Latencia y throughput: no disponibles. Al ser un modelo de 333M parámetros, se espera una latencia de decenas de milisegundos por imagen en GPUs modernas, pero no hay datos confirmados.
 
 ## Comparativa con modelos similares
@@ -70,5 +70,5 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- [HuggingFace: hakim77/trocr-captcha-v2-god-mode](https://huggingface.co/hakim77/trocr-captcha-v2-god-mode)
+- [Hugging Face: hakim77/trocr-captcha-v2-god-mode](https://huggingface.co/hakim77/trocr-captcha-v2-god-mode)
 - [Paper de ViT (arxiv:1910.09700)](https://arxiv.org/abs/1910.09700)

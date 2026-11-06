@@ -6,7 +6,7 @@ Moss Image Super Realistic es un adaptador LoRA (Low-Rank Adaptation) desarrolla
 
 El proyecto aborda una limitación habitual en los modelos de difusión: la tendencia a generar imágenes con aspecto "plástico" o artificial, especialmente en retratos y fotografía de estilo de vida. Al entrenar un LoRA especializado en fotorrealismo, el autor busca potenciar esa capacidad concreta de Moss Image sin necesidad de reentrenar el modelo completo, lo que reduce drásticamente los costes de cómputo y el tamaño del artefacto final.
 
-Es relevante como ejemplo de la tendencia actual de personalización de modelos generativos mediante LoRAs ligeras y distribuidas en plataformas como HuggingFace y Civitai. Se trata, según indica el propio autor, de su primera publicación de un LoRA, con la versión V1 disponible y mejoras planificadas para iteraciones futuras. Dada su fecha de creación reciente y sus cero descargas registradas, no existe todavía una comunidad de usuarios que haya validado sus resultados de forma amplia.
+Es relevante como ejemplo de la tendencia actual de personalización de modelos generativos mediante LoRAs ligeras y distribuidas en plataformas como Hugging Face y Civitai. Se trata, según indica el propio autor, de su primera publicación de un LoRA, con la versión V1 disponible y mejoras planificadas para iteraciones futuras. Dada su fecha de creación reciente y sus cero descargas registradas, no existe todavía una comunidad de usuarios que haya validado sus resultados de forma amplia.
 
 ## Especificaciones tecnicas
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al tr
 - El LoRA en si ocupa 0,1 GB, por lo que su carga es despreciable; los requisitos reales de VRAM dependen del modelo base Moss Image, cuyas especificaciones no estan disponibles en la informacion proporcionada.
 - Como referencia general, los modelos de difusion de imagen de ultima generacion suelen requerir entre 8 y 24 GB de VRAM para inferencia comoda; los 0,1 GB adicionales del LoRA no alteran significativamente esa cifra.
 - Dado el tamano del adaptador, es razonable esperar que funcione en GPUs de consumo (RTX 3060, RTX 4060 Ti, RTX 4090) siempre que el modelo base quepa en la GPU.
-- Opciones de despliegue: herramientas habituales de inferencia de difusion con soporte de LoRA, como ComfyUI, Automatic1111/Forge, o difusers de HuggingFace; no hay confirmacion explicita de compatibilidad con ninguna de ellas.
+- Opciones de despliegue: herramientas habituales de inferencia de difusion con soporte de LoRA, como ComfyUI, Automatic1111/Forge, o difusers de Hugging Face; no hay confirmacion explicita de compatibilidad con ninguna de ellas.
 - Latencia y throughput: no disponible; dependen del modelo base, la resolucion de generacion y el hardware.
 
 ## Comparativa con modelos similares
@@ -79,5 +79,5 @@ La diferencia principal es que Moss Image Super Realistic es un adaptador ligero
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Mytheron/moss_image_super_realistic
+- Hugging Face: https://huggingface.co/Mytheron/moss_image_super_realistic
 - Civitai: https://civitai.red/models/3025110/moss-image-super-realistic

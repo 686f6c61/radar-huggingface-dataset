@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento para comparar; la comparación únicamente
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/huggingface-mic/DeepSeek-V3.2-mic
+- Repositorio Hugging Face: https://huggingface.co/huggingface-mic/DeepSeek-V3.2-mic
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V3.2
 - Página del MIC: https://huggingface.co/huggingface-mic/DeepSeek-V3.2-mic
 - Documentación de recorte: https://huggingface-mic-mic-coverage.static.hf.space/shrink/DeepSeek-V3.2-mic.html

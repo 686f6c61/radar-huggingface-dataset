@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Compact EDSR Image Super-Resolution 4× es un modelo de superresolución de imagen de un solo paso que amplía imágenes por un factor de 4. Lo desarrolla Tanuj124 como implementación propia en PyTorch, entrenada localmente en una RTX 3060 de 12 GB, y se publica como un experimento de investigación reproducible más que como un producto listo para producción. Su tamaño es mínimo: 522.243 parámetros según la model card (522.246 según los metadatos de safetensors de HuggingFace), lo que lo sitúa en la categoría de upscaler ultraligero.
+Compact EDSR Image Super-Resolution 4× es un modelo de superresolución de imagen de un solo paso que amplía imágenes por un factor de 4. Lo desarrolla Tanuj124 como implementación propia en PyTorch, entrenada localmente en una RTX 3060 de 12 GB, y se publica como un experimento de investigación reproducible más que como un producto listo para producción. Su tamaño es mínimo: 522.243 parámetros según la model card (522.246 según los metadatos de safetensors de Hugging Face), lo que lo sitúa en la categoría de upscaler ultraligero.
 
 La arquitectura es un EDSR compacto de 8 bloques residuales y 48 canales de características, sin normalización por lotes, con pixel shuffle para el aumento de resolución y escalado residual de 0,1. Se entrenó con pérdida L1 exclusivamente sobre degradación bicúbica sintética (DIV2K más LSDIR), sin GAN ni pérdida perceptual, por lo que su objetivo es la reconstrucción fiel en el sentido de PSNR/SSIM, no la generación de texturas realistas.
 
@@ -13,7 +13,7 @@ Su relevancia actual es la de un baseline barato y auditable: pesos en safetenso
 | Parametro | Valor |
 |---|---|
 | Arquitectura | EDSR compacto (CNN residual, 8 bloques residuales, 48 canales, pixel shuffle, sin batch normalization) |
-| Parametros totales | 522.243 según la model card; 522.246 según los metadatos de safetensors de HuggingFace |
+| Parametros totales | 522.243 según la model card; 522.246 según los metadatos de safetensors de Hugging Face |
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No aplica (modelo de imagen; entrada de resolución arbitraria con inferencia por teselas) |
 | Tipos de cuantizacion | No disponible; el repositorio solo publica pesos en safetensors y no documenta variantes GGUF, ONNX ni int8 |
@@ -95,12 +95,12 @@ Diferencias cualitativas conocidas por categoría, sin cifras: el EDSR original 
 - Procedencia parcialmente opaca: el subconjunto retenido de LSDIR proviene de un espejo de Kaggle y su procedencia no está autenticada de forma independiente. No se pueden descartar por completo recortes arbitrarios o escenas repetidas entre particiones.
 - Sesgos de datos: la composición demográfica, geográfica y de contenido de DIV2K y LSDIR no se documenta en esta información, por lo que el comportamiento diferencial por tipo de imagen es desconocido.
 - Límites operativos: salidas de más de 16 megapíxeles se rechazan; la calidad en imágenes muy grandes depende del teselado y de la correcta aplicación del halo de convolución.
-- Discrepancia menor en el recuento de parámetros entre la model card (522.243) y los metadatos de HuggingFace (522.246); conviene verificar los hashes del manifiesto antes de reproducir resultados.
+- Discrepancia menor en el recuento de parámetros entre la model card (522.243) y los metadatos de Hugging Face (522.246); conviene verificar los hashes del manifiesto antes de reproducir resultados.
 - Sin integración estándar: no hay soporte de `transformers.AutoModel`, API remota ni formato de despliegue estándar, lo que añade trabajo de integración en producción.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tanuj124/image-super-resolution-edsr-x4
+- Modelo en Hugging Face: https://huggingface.co/Tanuj124/image-super-resolution-edsr-x4
 - Aviso de uso de los pesos: https://huggingface.co/Tanuj124/image-super-resolution-edsr-x4/blob/main/LICENSE-WEIGHTS.md
 - Dataset de LSDIR en Kaggle usado como fuente: https://www.kaggle.com/datasets/parampandya0310/hr-image-denoising-lsdir
 - DIV2K: https://data.vision.ee.ethz.ch/cvl/DIV2K/

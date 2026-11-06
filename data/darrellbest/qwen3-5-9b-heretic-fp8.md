@@ -102,7 +102,7 @@ No hay datos publicados de benchmarks comparativos frente a otros modelos de la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/darrellbest/Qwen3.5-9B-Heretic-FP8
+- Modelo en Hugging Face: https://huggingface.co/darrellbest/Qwen3.5-9B-Heretic-FP8
 - Modelo base (bf16): https://huggingface.co/darrellbest/Qwen3.5-9B-Heretic
 - Version GGUF de la familia: https://huggingface.co/darrellbest/Qwen3.5-9B-Heretic-GGUF
 - Version NVFP4 de la familia: https://huggingface.co/darrellbest/Qwen3.5-9B-Heretic-NVFP4

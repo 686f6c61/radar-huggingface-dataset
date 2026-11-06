@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `srjang3599/mobilevit-retrieval-colab` es un prototipo de investigación publicado en HuggingFace que implementa una arquitectura MobileViT orientada a tareas de recuperación de información (retrieval). Lo desarrolla el usuario srjang3599 y se distribuye bajo licencia MIT. El repositorio contiene código de ejecución (`eval.py`), configuración de arquitectura (`config.json`), receta de entrenamiento (`training_args.json`) y un checkpoint de pesos en formato safetensors.
+El modelo `srjang3599/mobilevit-retrieval-colab` es un prototipo de investigación publicado en Hugging Face que implementa una arquitectura MobileViT orientada a tareas de recuperación de información (retrieval). Lo desarrolla el usuario srjang3599 y se distribuye bajo licencia MIT. El repositorio contiene código de ejecución (`eval.py`), configuración de arquitectura (`config.json`), receta de entrenamiento (`training_args.json`) y un checkpoint de pesos en formato safetensors.
 
 La relevancia de esta ficha, más que por su rendimiento, es como ejemplo de repositorio experimental: según su propia model card, el checkpoint incluido es una inicialización válida para pruebas de humo (smoke tests) pero no ha sido entrenado ni auditado, y el autor no reclama ninguna puntuación de benchmark. El propósito declarado es documentar valores por defecto y formatos de fichero, no presentar resultados verificados.
 
@@ -68,7 +68,7 @@ No es posible una comparativa de rendimiento porque no hay checkpoint entrenado 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento comparable |
 |---|---|---|---|---|---|
-| srjang3599/mobilevit-retrieval-colab | 24.832 reportados (escala "huge" declarada, no coherente) | no disponible | MIT | HuggingFace | No evaluado |
+| srjang3599/mobilevit-retrieval-colab | 24.832 reportados (escala "huge" declarada, no coherente) | no disponible | MIT | Hugging Face | No evaluado |
 | CLIP (OpenAI) | ~151M (ViT-B/32) | 77 tokens de texto | MIT | Abierta | No comparable (el modelo analizado no esta entrenado) |
 | SigLIP | ~203M (base) | 64 tokens de texto | Apache 2.0 | Abierta | No comparable |
 
@@ -87,5 +87,5 @@ Los datos de CLIP y SigLIP se incluyen solo como referencia de categoria; no se 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/srjang3599/mobilevit-retrieval-colab
+- Modelo en Hugging Face: https://huggingface.co/srjang3599/mobilevit-retrieval-colab
 - No se han encontrado enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada; los resultados obtenidos no guardan relacion con este modelo.

@@ -110,7 +110,7 @@ Comparacion con alternativas de otros autores (Qwen3-8B oficial, Llama-3.1-8B, M
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/marafx2007/Qwen3.8-9B-heretic-uncensored-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/marafx2007/Qwen3.8-9B-heretic-uncensored-i1-GGUF
 - Modelo base: https://huggingface.co/rohit267/Qwen3.8-9B-heretic-uncensored
 - Repositorio de cuantizaciones estaticas del mismo modelo (mradermacher): https://huggingface.co/mradermacher/Qwen3.8-9B-heretic-uncensored-GGUF
 - Pagina de descarga y vision general de cuantizaciones: https://hf.tst.eu/model#Qwen3.8-9B-heretic-uncensored-i1-GGUF

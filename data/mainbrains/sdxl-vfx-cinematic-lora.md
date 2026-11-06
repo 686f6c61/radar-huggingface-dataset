@@ -6,7 +6,7 @@ El modelo `mainbrains/sdxl-vfx-cinematic-lora` es un adaptador LoRA (Low-Rank Ad
 
 Este LoRA no es un modelo autónomo, sino un complemento que se carga sobre el modelo base `stabilityai/stable-diffusion-xl-base-1.0`. Su relevancia radica en que permite a desarrolladores y artistas obtener resultados con acabado de producción sin necesidad de reentrenar un modelo completo, con un coste de entrenamiento reducido (unas 6 horas en una RTX 4090). Al ser un adaptador de rango 32, añade un control fino sobre el estilo sin modificar los pesos originales de SDXL.
 
-La ficha se basa exclusivamente en la información publicada en HuggingFace y en los resultados de búsqueda disponibles. No se han encontrado datos adicionales sobre benchmarks, parámetros totales o cuantizaciones.
+La ficha se basa exclusivamente en la información publicada en Hugging Face y en los resultados de búsqueda disponibles. No se han encontrado datos adicionales sobre benchmarks, parámetros totales o cuantizaciones.
 
 ## Especificaciones tecnicas
 
@@ -60,8 +60,8 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Tipo | Base | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `mainbrains/sdxl-vfx-cinematic-lora` | LoRA | SDXL 1.0 | VFX y cinematográfico | CreativeML OpenRAIL-M | HuggingFace |
-| `jbilcke-hf/sdxl-cinematic-1` | LoRA | SDXL 1.0 | Cinematográfico general | no especificada | HuggingFace |
+| `mainbrains/sdxl-vfx-cinematic-lora` | LoRA | SDXL 1.0 | VFX y cinematográfico | CreativeML OpenRAIL-M | Hugging Face |
+| `jbilcke-hf/sdxl-cinematic-1` | LoRA | SDXL 1.0 | Cinematográfico general | no especificada | Hugging Face |
 | `Zavy's Cinematic Stills` (Civitai) | LoRA | SDXL 1.0 | Fotogramas cinematográficos, profundidad de campo | no especificada | Civitai |
 
 No se dispone de datos de rendimiento comparativos. Los tres modelos persiguen objetivos similares, pero el de mainbrains se centra específicamente en efectos VFX (volumétricos, prácticos, artefactos de lente), mientras que los otros dos abordan un look cinematográfico más general.
@@ -77,6 +77,6 @@ No se dispone de datos de rendimiento comparativos. Los tres modelos persiguen o
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/mainbrains/sdxl-vfx-cinematic-lora)
+- [Modelo en Hugging Face](https://huggingface.co/mainbrains/sdxl-vfx-cinematic-lora)
 - [Modelo base SDXL 1.0](https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0)
-- [Colección de LoRAs SDXL en HuggingFace](https://huggingface.co/collections/multimodalart/awesome-sdxl-loras) (referencia general, no específica)
+- [Colección de LoRAs SDXL en Hugging Face](https://huggingface.co/collections/multimodalart/awesome-sdxl-loras) (referencia general, no específica)

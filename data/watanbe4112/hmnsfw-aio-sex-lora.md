@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`watanbe4112/hmnsfw-aio-sex-lora` es un adaptador LoRA publicado en HuggingFace por el usuario watanbe4112. El nombre del repositorio y la licencia personalizada (`hmnsfw-aio-sex-lora`) sugieren que se trata de un ajuste fino orientado a contenido para adultos, aunque la model card no proporciona ninguna descripción funcional, arquitectura base ni detalles de entrenamiento.
+`watanbe4112/hmnsfw-aio-sex-lora` es un adaptador LoRA publicado en Hugging Face por el usuario watanbe4112. El nombre del repositorio y la licencia personalizada (`hmnsfw-aio-sex-lora`) sugieren que se trata de un ajuste fino orientado a contenido para adultos, aunque la model card no proporciona ninguna descripción funcional, arquitectura base ni detalles de entrenamiento.
 
-El repositorio tiene un tamano de 0,1 GB, lo que es coherente con un adaptador LoRA de bajo rango y no con un modelo completo. No se especifica el modelo base sobre el que se aplica el adaptador, ni los idiomas soportados, ni el pipeline de HuggingFace. La información pública disponible es prácticamente nula: cero descargas, cero likes y una model card reducida a metadatos de licencia.
+El repositorio tiene un tamano de 0,1 GB, lo que es coherente con un adaptador LoRA de bajo rango y no con un modelo completo. No se especifica el modelo base sobre el que se aplica el adaptador, ni los idiomas soportados, ni el pipeline de Hugging Face. La información pública disponible es prácticamente nula: cero descargas, cero likes y una model card reducida a metadatos de licencia.
 
 Por tanto, esta ficha se limita a documentar lo que se puede verificar desde el repositorio. Cualquier dato sobre arquitectura, entrenamiento, capacidades o rendimiento debe considerarse no disponible, y su uso en producción requeriría una inspección directa de los pesos y del modelo base.
 
@@ -43,7 +43,7 @@ Tampoco se documenta la composición del dataset, el número de tokens de entren
 - Análisis de licencias personalizadas: el repo sirve como ejemplo de licencia `other` con nombre propio y enlace a `LICENSE`, útil para estudiar modelos de licenciamiento no estándar.
 - Reproducción de pipelines PEFT: si se descubre el modelo base, podría cargarse con `peft` para verificar la compatibilidad del adaptador.
 - Auditoría de seguridad de modelos: el adaptador puede analizarse para evaluar riesgos de contenido no deseado en despliegues.
-- Docencia sobre ecosistema HuggingFace: caso práctico de repositorio con metadatos mínimos y ausencia de model card sustantiva.
+- Docencia sobre ecosistema Hugging Face: caso práctico de repositorio con metadatos mínimos y ausencia de model card sustantiva.
 
 En todos los casos, la viabilidad práctica está limitada por la falta de información sobre el modelo base y por la licencia restrictiva o no estándar.
 
@@ -75,6 +75,6 @@ No disponible. No se han identificado adaptadores comparables en la información
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/watanbe4112/hmnsfw-aio-sex-lora
-- Licencia (referenciada en la model card): `LICENSE` dentro del repositorio de HuggingFace.
+- Hugging Face: https://huggingface.co/watanbe4112/hmnsfw-aio-sex-lora
+- Licencia (referenciada en la model card): `LICENSE` dentro del repositorio de Hugging Face.
 - No se han encontrado papers, blogs, repositorios de código ni demos adicionales en la información disponible.

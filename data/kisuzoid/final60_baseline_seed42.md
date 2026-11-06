@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Kisuzoid/final60_baseline_seed42` es un repositorio de pesos publicado en HuggingFace por el usuario Kisuzoid (Kislay Anand), identificado en GitHub como estudiante de Ingenieria Informatica con especialidad en IA y ML y desarrollador de sistemas RAG y orquestacion de LLM. El nombre del repositorio sigue un patron tipico de checkpoints de experimentos: `final60` apunta a un modelo resultante de una ejecucion de entrenamiento concreta y `baseline_seed42` indica que se trata de una corrida de referencia con semilla fija 42, lo que sugiere que forma parte de una comparativa experimental mas amplia. Esta interpretacion es una inferencia a partir del identificador, no un dato confirmado por el autor.
+`Kisuzoid/final60_baseline_seed42` es un repositorio de pesos publicado en Hugging Face por el usuario Kisuzoid (Kislay Anand), identificado en GitHub como estudiante de Ingenieria Informatica con especialidad en IA y ML y desarrollador de sistemas RAG y orquestacion de LLM. El nombre del repositorio sigue un patron tipico de checkpoints de experimentos: `final60` apunta a un modelo resultante de una ejecucion de entrenamiento concreta y `baseline_seed42` indica que se trata de una corrida de referencia con semilla fija 42, lo que sugiere que forma parte de una comparativa experimental mas amplia. Esta interpretacion es una inferencia a partir del identificador, no un dato confirmado por el autor.
 
 La model card publicada es practicamente vacia: unicamente contiene la declaracion de licencia Apache 2.0, sin descripcion de arquitectura, tamano, datos de entrenamiento ni capacidades. Tampoco se declaran idiomas soportados, pipeline de inferencia ni resultados de evaluacion. El repositorio registra 0 descargas y 0 likes en el momento de la consulta.
 
@@ -48,7 +48,7 @@ Como orientacion general, un checkpoint experimental sin documentacion solo debe
 - Reproduccion de experimentos: si el repositorio forma parte de una comparativa con semilla fija, su uso natural es replicar la linea base `seed42` y contrastarla con otras variantes del mismo estudio.
 - Analisis de artefactos de entrenamiento: inspeccionar pesos, configuracion y tokenizer para reconstruir la receta de entrenamiento a partir de los metadatos disponibles.
 - Evaluacion comparativa interna: someterlo al mismo conjunto de pruebas que otros checkpoints del mismo proyecto antes de extraer conclusiones.
-- Aprendizaje y docencia: utilizar el repositorio como ejemplo de estructura de publicacion en HuggingFace y de buenas practicas de documentacion (aqui, precisamente, por ausencia de ellas).
+- Aprendizaje y docencia: utilizar el repositorio como ejemplo de estructura de publicacion en Hugging Face y de buenas practicas de documentacion (aqui, precisamente, por ausencia de ellas).
 - Punto de partida para ajuste fino propio: solo si la licencia Apache 2.0 y los pesos lo permiten, y tras verificar que el formato de pesos es cargable con las herramientas habituales.
 - Pruebas de integracion de infraestructura: validar pipelines de carga, tokenizacion y despliegue antes de invertir en modelos mayores.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: no disponible. Al desconocerse el numero de parametros, no es posible calcular el consumo de memoria en ninguna cuantizacion.
 - GPU recomendadas: no disponible por la misma razon.
 - Compatibilidad con GPU de consumo: no disponible.
-- Opciones de despliegue: no disponible. No consta el formato de pesos, por lo que no puede confirmarse compatibilidad con vLLM, llama.cpp, Ollama, TGI, TensorRT-LLM ni con la Inference API de HuggingFace.
+- Opciones de despliegue: no disponible. No consta el formato de pesos, por lo que no puede confirmarse compatibilidad con vLLM, llama.cpp, Ollama, TGI, TensorRT-LLM ni con la Inference API de Hugging Face.
 - Latencia y throughput: no disponible.
 
 Como referencia generica (no atribuible a este modelo), la eleccion de infraestructura depende del tamano real: modelos de hasta 3.000 millones de parametros suelen caber en GPU de consumo de 8-12 GB en cuantizacion de 4 bits; la franja de 7.000 a 9.000 millones requiere 16-24 GB; a partir de 30.000 millones se recomienda hardware de centro de datos tipo A100 de 40/80 GB o H100. Estos rangos son orientativos y no proceden de la informacion facilitada sobre este repositorio.
@@ -85,10 +85,10 @@ No disponible. Al no conocerse el numero de parametros, la arquitectura, el cont
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kisuzoid/final60_baseline_seed42
+- Modelo en Hugging Face: https://huggingface.co/Kisuzoid/final60_baseline_seed42
 - Perfil de GitHub del autor: https://github.com/KisuZoid
 - Sitio personal del autor: https://kisuzoid.in/
-- Plataforma HuggingFace: https://huggingface.co/
+- Plataforma Hugging Face: https://huggingface.co/
 - Paper: no disponible
 - Blog tecnico: no disponible
 - Repositorio de codigo asociado: no disponible

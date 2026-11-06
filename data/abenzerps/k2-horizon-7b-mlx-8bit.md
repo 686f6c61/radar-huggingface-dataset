@@ -79,7 +79,7 @@ La ventaja principal de K2-Horizon es su contexto de 512K, muy superior a los co
 
 ## Enlaces
 
-- Modelo en HuggingFace (conversión MLX): https://huggingface.co/abenzerps/K2-Horizon-7B-MLX-8bit
+- Modelo en Hugging Face (conversión MLX): https://huggingface.co/abenzerps/K2-Horizon-7B-MLX-8bit
 - Modelo original: https://huggingface.co/IFM/K2-Horizon-7B
 - Revisión fuente del modelo original: https://huggingface.co/IFM/K2-Horizon-7B/tree/2c9659a84c4eea6f9f60462221fe762c8c84d75c
 - Licencia Apache-2.0: https://www.apache.org/licenses/LICENSE-2.0

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un ajuste fino de Qwen/Qwen3-1.7B (2.031.739.904 parámetros) que actúa como agente ReAct dentro de ScienceWorld, un entorno de simulación científica basado en texto. Lo publica el usuario de HuggingFace SeanWang0027 como parte de un estudio comparativo entre ajuste supervisado (SFT) y destilación on-policy multi-turno denominada ROSE, en la que un profesor de mayor capacidad (gpt-5.4-mini, con reasoning_effort=medium) continúa episodios que el alumno ha empezado en el entorno real.
+Este modelo es un ajuste fino de Qwen/Qwen3-1.7B (2.031.739.904 parámetros) que actúa como agente ReAct dentro de ScienceWorld, un entorno de simulación científica basado en texto. Lo publica el usuario de Hugging Face SeanWang0027 como parte de un estudio comparativo entre ajuste supervisado (SFT) y destilación on-policy multi-turno denominada ROSE, en la que un profesor de mayor capacidad (gpt-5.4-mini, con reasoning_effort=medium) continúa episodios que el alumno ha empezado en el entorno real.
 
 El checkpoint corresponde a la sexta época del estudio (tercera de una continuación iniciada sobre los pesos de la época 3, con estado de AdamW reinicializado) y obtiene un 20,75% ± 1,82 de tasa de éxito sobre el test de ScienceWorld con 200 variaciones de tarea, con un Avg@1 de 0,2946. Para ponerlo en contexto, el Qwen3-1.7B sin ajustar obtiene un 0,12% en la misma evaluación.
 
@@ -86,10 +86,10 @@ La información disponible solo permite comparar con el modelo base y con los de
 
 | Modelo | Parámetros | Contexto | Éxito en ScienceWorld (test, 200 variaciones) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (ROSE 10+5, época 6) | 2,03 B | no declarado | 20,75% ± 1,82 | Apache 2.0 | HuggingFace |
-| ROSE 10+5, época 5 | 2,03 B | no declarado | 25,75% ± 1,30 | Apache 2.0 | HuggingFace |
-| SFT con gpt-5.4-mini, época 3 | 2,03 B | no declarado | 12,88% ± 1,24 | Apache 2.0 | HuggingFace |
-| Qwen3-1.7B base | 1,7 B (≈2,03 B en este repo) | 32.768 tokens nativos | 0,12% | Apache 2.0 | HuggingFace |
+| Este modelo (ROSE 10+5, época 6) | 2,03 B | no declarado | 20,75% ± 1,82 | Apache 2.0 | Hugging Face |
+| ROSE 10+5, época 5 | 2,03 B | no declarado | 25,75% ± 1,30 | Apache 2.0 | Hugging Face |
+| SFT con gpt-5.4-mini, época 3 | 2,03 B | no declarado | 12,88% ± 1,24 | Apache 2.0 | Hugging Face |
+| Qwen3-1.7B base | 1,7 B (≈2,03 B en este repo) | 32.768 tokens nativos | 0,12% | Apache 2.0 | Hugging Face |
 | Otros modelos de ~2 B para agentes textuales | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 Observación: la época 5 del mismo estudio supera a este checkpoint en 5,00 puntos de tasa de éxito y reduce el hábito `open/close` del 26,59% al 2,77%, por lo que para uso práctico es preferible aquel peso salvo que se busque explícitamente el estado de recaída de la época 6.
@@ -111,7 +111,7 @@ Observación: la época 5 del mismo estudio supera a este checkpoint en 5,00 pun
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SeanWang0027/qwen3-1.7b-sciworld-rose-s10t5-gpt54mini-ep6
+- Modelo en Hugging Face: https://huggingface.co/SeanWang0027/qwen3-1.7b-sciworld-rose-s10t5-gpt54mini-ep6
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Checkpoint ROSE 10+5, época 1: https://huggingface.co/SeanWang0027/qwen3-1.7b-sciworld-rose-s10t5-gpt54mini-ep1
 - Checkpoint ROSE 10+5, época 2: https://huggingface.co/SeanWang0027/qwen3-1.7b-sciworld-rose-s10t5-gpt54mini-ep2

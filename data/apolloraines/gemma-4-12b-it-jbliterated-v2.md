@@ -87,7 +87,7 @@ No se dispone de datos comparativos con otros modelos de 12B como Llama 3.1 8B o
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ApolloRaines/Gemma-4-12B-it-Jbliterated-v2
+- Modelo en Hugging Face: https://huggingface.co/ApolloRaines/Gemma-4-12B-it-Jbliterated-v2
 - Modelo base v1: https://huggingface.co/ApolloRaines/Gemma-4-12B-it-Jbliterated
 - Herramienta DeepswapLLM: https://github.com/apolloraines/DeepswapLLM
 - Ficha en LLM Explorer: https://llm-explorer.com/model/ApolloRaines%2FGemma-4-12B-it-Jbliterated,67Qomprts2H1ISoT5kdk23

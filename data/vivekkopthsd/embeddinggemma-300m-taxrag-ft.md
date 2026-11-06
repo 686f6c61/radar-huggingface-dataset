@@ -89,7 +89,7 @@ No se dispone de datos comparativos frente a otros modelos multilingües como `i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vivekkopthsd/embeddinggemma-300m-taxrag-ft
+- Modelo en Hugging Face: https://huggingface.co/vivekkopthsd/embeddinggemma-300m-taxrag-ft
 - Modelo base: https://huggingface.co/google/embeddinggemma-300m
 - Dataset utilizado: https://huggingface.co/datasets/BeIR/fiqa
 - Repositorio de entrenamiento: no se proporciona enlace directo en la model card, pero se mencionan los scripts `build_ft_pairs.py` y `fine_tune_encoder.py` como parte del proceso reproducible.

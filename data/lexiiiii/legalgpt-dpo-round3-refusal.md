@@ -68,6 +68,6 @@ No se dispone de informacion sobre modelos comparables en el mismo dominio legal
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lexiiiii/legalgpt-dpo-round3-refusal
+- Modelo en Hugging Face: https://huggingface.co/Lexiiiii/legalgpt-dpo-round3-refusal
 - Proyecto LegalGPT (GitHub): https://github.com/czc0407/legalGPT
 - Modelo base Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct

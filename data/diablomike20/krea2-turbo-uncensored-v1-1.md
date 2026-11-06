@@ -2,7 +2,7 @@
 
 ## Resumen
 
-krea2-turbo-uncensored-v1.1 es un modelo de difusion para generacion y edicion de imagenes, publicado por el usuario diablomike20 en HuggingFace. Se trata de una compilacion pre-fusionada y cuantizada del modelo base Krea 2 Turbo, a la que se han incorporado cinco LoRA distintos directamente en los pesos: un LoRA de detalle fino, un LoRA de edicion de identidad, un LoRA turbo de 4 pasos, un LoRA de refinado de piel y un LoRA de reduccion de rechazos de contenido NSFW. El resultado es un modelo orientado a generacion y edicion de imagenes sin las restricciones habituales de contenido.
+krea2-turbo-uncensored-v1.1 es un modelo de difusion para generacion y edicion de imagenes, publicado por el usuario diablomike20 en Hugging Face. Se trata de una compilacion pre-fusionada y cuantizada del modelo base Krea 2 Turbo, a la que se han incorporado cinco LoRA distintos directamente en los pesos: un LoRA de detalle fino, un LoRA de edicion de identidad, un LoRA turbo de 4 pasos, un LoRA de refinado de piel y un LoRA de reduccion de rechazos de contenido NSFW. El resultado es un modelo orientado a generacion y edicion de imagenes sin las restricciones habituales de contenido.
 
 El modelo conserva la arquitectura del transformer original de Krea 2 Turbo, con aproximadamente 12.820 millones de parametros en formato safetensors, y utiliza un text encoder Qwen3-VL de 4B y el VAE de Qwen-Image. La licencia declarada es MIT, lo que permite uso comercial, aunque el contenido NSFW y las implicaciones legales asociadas quedan bajo responsabilidad del usuario. El modelo se distribuye en formatos GGUF (cuantizacion Q4_K_M) y FP8, con un tamano de repositorio de 36,4 GB.
 
@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto/resolucion | Pasos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| krea2-turbo-uncensored-v1.1 | 12,82 B | 1024 x 1024 | 4-16 | MIT | HuggingFace (0 descargas) |
-| Krea-2-Turbo (base) | no disponible | no disponible | no disponible | no disponible | HuggingFace (krea) |
-| conradlocke/krea2-identity-edit | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| ChrisColeTech/krea2-turbo-uncensored-v1.1-FP8 | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| krea2-turbo-uncensored-v1.1 | 12,82 B | 1024 x 1024 | 4-16 | MIT | Hugging Face (0 descargas) |
+| Krea-2-Turbo (base) | no disponible | no disponible | no disponible | no disponible | Hugging Face (krea) |
+| conradlocke/krea2-identity-edit | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| ChrisColeTech/krea2-turbo-uncensored-v1.1-FP8 | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes. La comparativa se limita a la existencia de los modelos y sus formatos de distribucion.
 
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes. La comp
 
 ## Enlaces
 
-- [HuggingFace: diablomike20/krea2-turbo-uncensored-v1.1](https://huggingface.co/diablomike20/krea2-turbo-uncensored-v1.1)
+- [Hugging Face: diablomike20/krea2-turbo-uncensored-v1.1](https://huggingface.co/diablomike20/krea2-turbo-uncensored-v1.1)
 - [Repositorio FP8 de referencia: ChrisColeTech/krea2-turbo-uncensored-v1.1-FP8](https://huggingface.co/ChrisColeTech/krea2-turbo-uncensored-v1.1-FP8)
 - [Modelo base: krea/Krea-2-Turbo](https://huggingface.co/krea/Krea-2-Turbo)
 - [Modelo base de edicion: conradlocke/krea2-identity-edit](https://huggingface.co/conradlocke/krea2-identity-edit)

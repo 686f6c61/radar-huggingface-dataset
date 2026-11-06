@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de inteligencia artificial publicado en HuggingFace por el usuario sddddd22, bajo licencia MIT y con la librería transformers. Según su model card, se trata de un modelo que ha experimentado una actualización significativa en sus capacidades de razonamiento e inferencia, con mejoras en tareas de matemáticas, programación y lógica general. La propia descripción indica que su rendimiento se acerca al de otros modelos líderes, aunque no se especifican detalles técnicos concretos.
+MyAwesomeModel es un modelo de inteligencia artificial publicado en Hugging Face por el usuario sddddd22, bajo licencia MIT y con la librería transformers. Según su model card, se trata de un modelo que ha experimentado una actualización significativa en sus capacidades de razonamiento e inferencia, con mejoras en tareas de matemáticas, programación y lógica general. La propia descripción indica que su rendimiento se acerca al de otros modelos líderes, aunque no se especifican detalles técnicos concretos.
 
 Sin embargo, el repositorio presenta características que sugieren que se trata de un proyecto de prueba o un placeholder: tiene 0 descargas, 0 likes, un tamaño de repositorio de 0.0 GB y no se incluyen archivos de pesos ni documentación técnica adicional. La model card menciona resultados de benchmarks comparativos con otros modelos (denominados Model1, Model2 y Model1-v2), pero no se proporciona información sobre la arquitectura, el número de parámetros, la longitud de contexto ni los datos de entrenamiento. Además, el pipeline declarado es feature-extraction, lo que contrasta con las capacidades de generación de texto y razonamiento que se describen en la model card.
 
@@ -86,5 +86,5 @@ No se dispone de informacion suficiente para realizar una comparativa con modelo
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/sddddd22/MyAwesomeModel-TestRepo
+- Repositorio de Hugging Face: https://huggingface.co/sddddd22/MyAwesomeModel-TestRepo
 - No se proporcionan otros enlaces (paper, blog, demo, repositorio de codigo) en la informacion disponible.

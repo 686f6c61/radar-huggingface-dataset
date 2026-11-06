@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Harjithreddy/ppo-CartPole-v1 es un agente de aprendizaje por refuerzo profundo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno CartPole-v1, publicado por el usuario Harjithreddy en HuggingFace Hub. No se trata de un modelo de lenguaje ni de un modelo fundacional: es una politica entrenada con la libreria stable-baselines3 y etiquetada con el pipeline `reinforcement-learning`, cuyo unico artefacto de interes es el comportamiento aprendido en una tarea de control clasica.
+Harjithreddy/ppo-CartPole-v1 es un agente de aprendizaje por refuerzo profundo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno CartPole-v1, publicado por el usuario Harjithreddy en Hugging Face Hub. No se trata de un modelo de lenguaje ni de un modelo fundacional: es una politica entrenada con la libreria stable-baselines3 y etiquetada con el pipeline `reinforcement-learning`, cuyo unico artefacto de interes es el comportamiento aprendido en una tarea de control clasica.
 
 El problema que resuelve es el equilibrio de un poste invertido sobre un carro mediante la aplicacion de fuerza a izquierda o derecha en cada paso. Es el "hello world" del aprendizaje por refuerzo: sirve para validar pipelines de entrenamiento, comparar algoritmos y ensenar los fundamentos de PPO, no para tareas de produccion. El unico resultado declarado por el autor es una recompensa media de 500,00 +/- 0,00 en CartPole-v1, marcada como no verificada.
 
@@ -70,9 +70,9 @@ No se han publicado otros resultados de benchmarks en la informacion disponible,
 
 | Modelo | Algoritmo | Entorno | Parametros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Harjithreddy/ppo-CartPole-v1 | PPO | CartPole-v1 | No disponible | No aplica | mean_reward 500,00 +/- 0,00 (no verificado) | No disponible | HuggingFace Hub |
+| Harjithreddy/ppo-CartPole-v1 | PPO | CartPole-v1 | No disponible | No aplica | mean_reward 500,00 +/- 0,00 (no verificado) | No disponible | Hugging Face Hub |
 | Agentes PPO de referencia de stable-baselines3 | PPO | CartPole-v1 | No disponible | No aplica | No disponible en la informacion proporcionada | MIT (la libreria, no el agente) | Repositorio GitHub de stable-baselines3 |
-| Agentes DQN y A2C para CartPole-v1 | DQN, A2C | CartPole-v1 | No disponible | No aplica | No disponible en la informacion proporcionada | No disponible | HuggingFace Hub y repositorios de RL Zoo |
+| Agentes DQN y A2C para CartPole-v1 | DQN, A2C | CartPole-v1 | No disponible | No aplica | No disponible en la informacion proporcionada | No disponible | Hugging Face Hub y repositorios de RL Zoo |
 
 No se dispone de datos comparativos verificados en la informacion proporcionada. En terminos de categoria, los alternativas naturales son otros agentes entrenados sobre el mismo entorno (PPO, A2C, DQN, REINFORCE) y el set de referencia de RL Zoo de stable-baselines3, que incluye configuraciones hiperparametricas publicadas y reproducibles.
 
@@ -90,7 +90,7 @@ No se dispone de datos comparativos verificados en la informacion proporcionada.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Harjithreddy/ppo-CartPole-v1
+- Modelo en Hugging Face: https://huggingface.co/Harjithreddy/ppo-CartPole-v1
 - Libreria stable-baselines3 (citada en la model card): https://github.com/DLR-RM/stable-baselines3
 - Referencia general del algoritmo PPO (Schulman et al., 2017): https://arxiv.org/abs/1707.06347
 - Documentacion de Gymnasium y del entorno CartPole-v1: https://gymnasium.farama.org/environments/classic_control/cart_pole/

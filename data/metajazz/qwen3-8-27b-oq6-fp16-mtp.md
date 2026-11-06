@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `metajazz/Qwen3.8-27B-oQ6-fp16-mtp` es una cuantización de precisión mixta de 6 bits de un modelo de la familia Qwen3 (tipo `qwen3_5`), realizada con la herramienta oQ de oMLX (v0.6.0.dev1). El autor, metajazz, lo publicó en HuggingFace con el objetivo de ofrecer una versión optimizada para ejecución en Apple Silicon mediante la librería MLX. El nombre sugiere un modelo base de 27B parámetros, pero los pesos reales en safetensors suman aproximadamente 6,6 mil millones de parámetros, lo que indica una discrepancia significativa entre la nomenclatura y el contenido real. Esta falta de coherencia, junto con la ausencia de documentación adicional, limita la fiabilidad de la ficha y obliga a tratar los datos con cautela.
+El modelo `metajazz/Qwen3.8-27B-oQ6-fp16-mtp` es una cuantización de precisión mixta de 6 bits de un modelo de la familia Qwen3 (tipo `qwen3_5`), realizada con la herramienta oQ de oMLX (v0.6.0.dev1). El autor, metajazz, lo publicó en Hugging Face con el objetivo de ofrecer una versión optimizada para ejecución en Apple Silicon mediante la librería MLX. El nombre sugiere un modelo base de 27B parámetros, pero los pesos reales en safetensors suman aproximadamente 6,6 mil millones de parámetros, lo que indica una discrepancia significativa entre la nomenclatura y el contenido real. Esta falta de coherencia, junto con la ausencia de documentación adicional, limita la fiabilidad de la ficha y obliga a tratar los datos con cautela.
 
 La relevancia de este modelo radica en su formato de cuantización (6 bits, group size 64) y su compatibilidad con MLX, lo que lo hace potencialmente útil para despliegue local en hardware Apple. Sin embargo, al no existir información sobre el modelo base original, sus capacidades exactas, licencia o rendimiento, no es posible recomendarlo para uso en producción sin una evaluación previa.
 
@@ -72,5 +72,5 @@ No disponible. No se puede comparar con otras cuantizaciones de Qwen sin conocer
 
 ## Enlaces
 
-- [HuggingFace - metajazz/Qwen3.8-27B-oQ6-fp16-mtp](https://huggingface.co/metajazz/Qwen3.8-27B-oQ6-fp16-mtp)
+- [Hugging Face - metajazz/Qwen3.8-27B-oQ6-fp16-mtp](https://huggingface.co/metajazz/Qwen3.8-27B-oQ6-fp16-mtp)
 - [Repositorio oQ (oMLX)](https://github.com/jundot/omlx)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`utkarshraj/nl2vrl-adapter` es un adaptador LoRA publicado en HuggingFace por el usuario utkarshraj sobre el modelo base `Qwen/Qwen2.5-Coder-7B-Instruct`. No se trata por tanto de un modelo completo, sino de un conjunto de pesos incrementales (0,2 GB en safetensors) que deben cargarse junto al modelo base mediante la librería PEFT (version 0.20.0 declarada en el README). El repositorio no incluye model card real: el README es la plantilla por defecto de HuggingFace con todos los campos marcados como "[More Information Needed]", sin descripción, datos de entrenamiento, evaluación ni licencia.
+`utkarshraj/nl2vrl-adapter` es un adaptador LoRA publicado en Hugging Face por el usuario utkarshraj sobre el modelo base `Qwen/Qwen2.5-Coder-7B-Instruct`. No se trata por tanto de un modelo completo, sino de un conjunto de pesos incrementales (0,2 GB en safetensors) que deben cargarse junto al modelo base mediante la librería PEFT (version 0.20.0 declarada en el README). El repositorio no incluye model card real: el README es la plantilla por defecto de Hugging Face con todos los campos marcados como "[More Information Needed]", sin descripción, datos de entrenamiento, evaluación ni licencia.
 
 El nombre del repositorio sugiere una especialización en traducción de lenguaje natural a VRL (Vector Remap Language, el lenguaje de transformación de eventos usado por Vector), aunque el autor no documenta en ningún momento esta finalidad, el dataset empleado ni el procedimiento de entrenamiento. Cualquier afirmación sobre su comportamiento concreto debe considerarse una hipótesis a validar empíricamente antes de usarlo en producción.
 
@@ -66,16 +66,16 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nl2vrl-adapter (este) | Adaptador LoRA sobre 7,61B | No disponible (base: 32.768) | Adaptador PEFT | No disponible | HuggingFace, 0 descargas, sin model card |
+| nl2vrl-adapter (este) | Adaptador LoRA sobre 7,61B | No disponible (base: 32.768) | Adaptador PEFT | No disponible | Hugging Face, 0 descargas, sin model card |
 | Qwen2.5-Coder-7B-Instruct | 7,61B | 32.768 nativos (131.072 con YaRN) | Modelo completo instruct | Apache 2.0 | Ampliamente disponible, con variantes GGUF/AWQ |
-| CodeLlama-7B-Instruct | 7B | 16.384 | Modelo completo instruct | Licencia Llama 2 | Disponible en Meta y HuggingFace; verificar términos comerciales |
-| DeepSeek-Coder-6.7B-Instruct | 6,7B | 16.384 | Modelo completo instruct | Licencia propia DeepSeek (uso comercial con condiciones) | Disponible en HuggingFace |
+| CodeLlama-7B-Instruct | 7B | 16.384 | Modelo completo instruct | Licencia Llama 2 | Disponible en Meta y Hugging Face; verificar términos comerciales |
+| DeepSeek-Coder-6.7B-Instruct | 6,7B | 16.384 | Modelo completo instruct | Licencia propia DeepSeek (uso comercial con condiciones) | Disponible en Hugging Face |
 
 Los datos de las alternativas provienen de su documentación pública y deben verificarse antes de tomar decisiones de licencia. Frente a ellas, este adaptador no aporta métricas que permitan situarlo: su única ventaja potencial es la especialización en una tarea concreta (presumiblemente VRL), no verificada, y su única ventaja cierta es el tamaño reducido del artefacto para transporte e intercambio.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentación: el README es la plantilla por defecto de HuggingFace, sin descripción, dataset, hiperparámetros ni evaluación. No es posible saber qué hace el adaptador sin probarlo.
+- Ausencia total de documentación: el README es la plantilla por defecto de Hugging Face, sin descripción, dataset, hiperparámetros ni evaluación. No es posible saber qué hace el adaptador sin probarlo.
 - Licencia no declarada: aunque el modelo base es Apache 2.0, el adaptador no especifica términos. Antes de un uso comercial conviene contactar con el autor o asumir el riesgo legal de un artefacto sin licencia explícita.
 - Riesgo de alucinación y de sintaxis inválida: si el adaptador genera VRL, cualquier política producida debe compilarse y probarse; un modelo de 7B sin evaluación específica puede inventar funciones o campos inexistentes.
 - Posible degradación de capacidades del modelo base: un fine-tuning LoRA no evaluado puede reducir el rendimiento en tareas generales de código, tool calling o multilingüismo respecto al Qwen2.5-Coder-7B-Instruct original.

@@ -54,8 +54,8 @@ No se dispone de datos de rendimiento para comparar con otros modelos. Como refe
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| agentic-ptb/sol-max-v2.h036... | 9,4B | no disponible | no disponible | HuggingFace |
-| Qwen/Qwen3.5-9B-Base | 9,4B | no disponible | no disponible | HuggingFace |
+| agentic-ptb/sol-max-v2.h036... | 9,4B | no disponible | no disponible | Hugging Face |
+| Qwen/Qwen3.5-9B-Base | 9,4B | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -67,6 +67,6 @@ No se dispone de datos de rendimiento para comparar con otros modelos. Como refe
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/agentic-ptb/sol-max-v2.h036.pi-agent-sft-v15-hero.step_250
+- Repositorio en Hugging Face: https://huggingface.co/agentic-ptb/sol-max-v2.h036.pi-agent-sft-v15-hero.step_250
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Búsqueda de modelos de agentic-ptb: https://huggingface.co/models?other=agentic-ptb

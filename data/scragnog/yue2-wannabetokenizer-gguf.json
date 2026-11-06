@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "scragnog/YuE2-WannabeTokenizer-GGUF",
+  "slug": "scragnog-yue2-wannabetokenizer-gguf",
+  "author": "scragnog",
+  "url": "https://huggingface.co/scragnog/YuE2-WannabeTokenizer-GGUF",
+  "created_at": "2026-11-06T10:21:06.000Z",
+  "updated_at": "2026-11-06T10:21:40.000Z",
+  "license": "unspecified-upstream",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "yue2",
+    "audio-tokenizer",
+    "music",
+    "base_model:ManyOtherFunctions/Yue2-WannabeTokenizer",
+    "base_model:quantized:ManyOtherFunctions/Yue2-WannabeTokenizer",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 424492032,
+  "parameters_human": "424.5M",
+  "storage_bytes": 1741890752,
+  "storage_human": "1.7 GB",
+  "base_model": "ManyOtherFunctions/Yue2-WannabeTokenizer",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · scragnog/YuE2-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/scragnog/YuE2-GGUF/blob/main/README.md",
+      "snippet": "GGUF conversions of m-a-p/YuE2-3B and m-a-p/YuE2-Vae for HOT-Step CPP, a local C++/GGML music generation engine. YuE2 is an autoregressive-planner + flow-matching music model from the M-A-P team; these files let it run through HOT-Step's GGML inference stack instead of the original PyTorch checkpoint."
+    },
+    {
+      "title": "scragnog/YuE2-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/scragnog/YuE2-GGUF/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

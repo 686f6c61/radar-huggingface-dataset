@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Amberlight-Lux-12B es un modelo de lenguaje conversacional desarrollado por el usuario de HuggingFace "shrugging-shoulders" como una versión refinada de su modelo base Amberlight-12B. Se trata de un fine-tuning orientado a conversación y roleplay, entrenado sobre el dataset multilingüe `ifeval_multilang` que cubre nueve idiomas, entre ellos el español. El modelo se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones significativas.
+Amberlight-Lux-12B es un modelo de lenguaje conversacional desarrollado por el usuario de Hugging Face "shrugging-shoulders" como una versión refinada de su modelo base Amberlight-12B. Se trata de un fine-tuning orientado a conversación y roleplay, entrenado sobre el dataset multilingüe `ifeval_multilang` que cubre nueve idiomas, entre ellos el español. El modelo se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones significativas.
 
 Arquitectónicamente, el modelo está etiquetado como "mistral", lo que indica que sigue la arquitectura transformer decoder-only de la familia Mistral, con aproximadamente 12.200 millones de parámetros. Según la model card del autor, esta versión "Lux" está ligeramente más entrenada que la base, mostrando mayor estabilidad y menor propensión a errores. Está disponible tanto en formato safetensors (para uso con Transformers y vLLM) como en cuantizaciones GGUF mantenidas por el equipo mradermacher, lo que facilita su despliegue en hardware de consumo.
 
@@ -79,7 +79,7 @@ Nota: no se dispone de información pública sobre otros modelos de 12B comparab
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/shrugging-shoulders/Amberlight-Lux-12B
+- Hugging Face del modelo: https://huggingface.co/shrugging-shoulders/Amberlight-Lux-12B
 - Modelo base: https://huggingface.co/shrugging-shoulders/Amberlight-12B
 - Cuantizaciones GGUF de mradermacher: https://huggingface.co/mradermacher/Amberlight-Lux-12B-GGUF
 - Despliegue en FriendliAI: https://friendli.ai/models/shrugging-shoulders/Amberlight-Lux-12B

@@ -89,7 +89,7 @@ El autor reporta significancia estadística con prueba de McNemar emparejada (p 
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| VeriCall-Qwen2.5-7B-DPO | ~7B | no disponible | DPO verificado por ejecución sobre Qwen2.5 | no disponible | HuggingFace (0 descargas) |
+| VeriCall-Qwen2.5-7B-DPO | ~7B | no disponible | DPO verificado por ejecución sobre Qwen2.5 | no disponible | Hugging Face (0 descargas) |
 | Qwen2.5-7B-Instruct | ~7B | no disponible | Instruct generalista con tool calling nativo | Apache 2.0 (habitual en Qwen2.5) | Amplia |
 | Qwen2.5-1.5B-Instruct + GRPO (ablation VeriCall) | ~1,5B | no disponible | RL online con recompensa de ejecución | no disponible | Referencia interna del paper |
 | QLoRA SFT (particionado por dominio) | ~7B | no disponible | SFT supervisado sin DPO | no disponible | Baseline del estudio |
@@ -104,12 +104,12 @@ La comparativa se limita a los modelos evaluados en la propia model card; no se 
 - El conjunto de evaluación son 24 endpoints de 4 APIs; la generalización a esquemas OpenAPI muy distintos (por ejemplo, con oneOf/anyOf complejos o validaciones asíncronas) no está medida.
 - Riesgo de alucinación persistente: 19 de 500 peticiones aún contienen argumentos alucinados y 23 presentan errores de tipo tras el ajuste.
 - No hay información sobre idiomas soportados, longitud de contexto efectiva ni evaluación de capacidades generales (razonamiento, código, matemáticas) tras el DPO; el ajuste podría degradar habilidades no relacionadas con tool calling.
-- El modelo tiene 0 descargas y 1 like en HuggingFace en el momento de la ficha; no hay validación independiente de los resultados reportados por el autor.
+- El modelo tiene 0 descargas y 1 like en Hugging Face en el momento de la ficha; no hay validación independiente de los resultados reportados por el autor.
 - La fecha de creación del repositorio (2026-11-04) es posterior a la fecha actual de redacción; tratar los metadatos con cautela.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/BhuviBuilds/vericall-qwen2.5-7b-dpo
+- Hugging Face: https://huggingface.co/BhuviBuilds/vericall-qwen2.5-7b-dpo
 - Repositorio del framework VeriCall: https://github.com/bhuvneshsahu01/vericall
 - CI del proyecto: https://github.com/bhuvneshsahu01/vericall/actions/workflows/ci.yml
 - Referencia alternativa del modelo en la model card: https://huggingface.co/bhuvneshsahu01/vericall-qwen2.5-7b-dpo

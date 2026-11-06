@@ -4,7 +4,7 @@
 
 El modelo `namkua/qwen3-vl-8b-merged-16bit-SciVQA` es un ajuste fino (fine-tuning) del modelo base `unsloth/Qwen3-VL-8B-Instruct`, desarrollado por el autor `namkua`. Se trata de un modelo multimodal de lenguaje y visión (image-text-to-text) que hereda las capacidades del Qwen3-VL original: comprensión de imágenes, video y texto, con soporte para contextos intercalados de hasta 256K tokens en su versión base. El nombre sugiere que fue entrenado específicamente para tareas de *Visual Question Answering* (VQA) en el ámbito científico, aunque la model card no ofrece detalles sobre el dataset utilizado.
 
-El modelo tiene aproximadamente 8.767 millones de parámetros y está publicado bajo licencia Apache-2.0, lo que permite uso comercial y modificación. Se distribuye en formato `safetensors` y está diseñado para funcionar con `transformers` y `text-generation-inference`. El entrenamiento se realizó con la librería Unsloth y TRL de HuggingFace, lo que indica un proceso de fine-tuning eficiente. Actualmente no se han publicado métricas de rendimiento específicas para este ajuste.
+El modelo tiene aproximadamente 8.767 millones de parámetros y está publicado bajo licencia Apache-2.0, lo que permite uso comercial y modificación. Se distribuye en formato `safetensors` y está diseñado para funcionar con `transformers` y `text-generation-inference`. El entrenamiento se realizó con la librería Unsloth y TRL de Hugging Face, lo que indica un proceso de fine-tuning eficiente. Actualmente no se han publicado métricas de rendimiento específicas para este ajuste.
 
 ## Especificaciones técnicas
 

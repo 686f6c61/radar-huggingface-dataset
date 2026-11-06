@@ -83,9 +83,9 @@ Rendimiento de servicio en una Intel Arc Pro B70 a 275 W, una petición a la vez
 
 | Modelo | Parámetros | Contexto | Divergencia KL global | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-GPTQ-Int4-asym (este) | 27,78 B (int4) | 262.144 en la configuración de referencia | 0,039 | apache-2.0 | HuggingFace, 0 descargas |
+| Qwen3.8-27B-GPTQ-Int4-asym (este) | 27,78 B (int4) | 262.144 en la configuración de referencia | 0,039 | apache-2.0 | Hugging Face, 0 descargas |
 | GPTQ int4 de SergiioB (sym g128, GPTQModel) | Mismo modelo base, int4 simétrico | No disponible | 0,078 | No disponible | Cookbook de inferencia para Intel Arc |
-| Qwen/Qwen3.8-27B (BF16, referencia) | ~27,78 B en BF16 | No disponible | 0 (referencia) | apache-2.0 | HuggingFace |
+| Qwen/Qwen3.8-27B (BF16, referencia) | ~27,78 B en BF16 | No disponible | 0 (referencia) | apache-2.0 | Hugging Face |
 
 No se dispone de datos sobre otros modelos comparables de la misma categoría (mismo tamaño o misma tarea) en la información proporcionada.
 
@@ -104,7 +104,7 @@ No se dispone de datos sobre otros modelos comparables de la misma categoría (m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/darioooooo0o/Qwen3.8-27B-GPTQ-Int4-asym
+- Modelo en Hugging Face: https://huggingface.co/darioooooo0o/Qwen3.8-27B-GPTQ-Int4-asym
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Cookbook de despliegue del autor: https://github.com/riceharvest/b70-qwen38-cookbook
 - Cookbook de inferencia en Intel Arc Pro B70 (SergiioB): https://github.com/SergiioB/intel-arc-pro-b70-inference-cookbook

@@ -64,6 +64,6 @@ No disponible. Este repositorio no es un modelo comparable con alternativas como
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/shirley-huang/thesis-self-supervised-2024
+- Repositorio Hugging Face: https://huggingface.co/shirley-huang/thesis-self-supervised-2024
 - Perfil de Google Scholar de Shirley Huang: https://scholar.google.com/citations?user=qNjmSUEAAAAJ&hl=en
 - Encuesta sobre SSL (referencia externa mencionada en la búsqueda): https://arxiv.org/html/2301.05712v4

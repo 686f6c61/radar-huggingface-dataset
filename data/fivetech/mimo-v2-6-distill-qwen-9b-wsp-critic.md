@@ -78,9 +78,9 @@ El autor advierte que las comparaciones preliminares de 40% frente a 100% estaba
 
 | Modelo | Parametros | Contexto | Modificacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiMo-V2.6-Distill-Qwen-9B-WSP-Critic | 9,41 B | no disponible (ejemplo a 32.768) | Envolvente gaussiana WSP en capas 10..22, efecto causal nulo | MIT | HuggingFace, 0 descargas |
-| XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B (base) | 9,41 B | no disponible | Ninguna | no disponible en la informacion proporcionada | HuggingFace |
-| Alternativas de 9B tipo Qwen (p. ej. Qwen3-8B) | ~8 B | no disponible | Ninguna | no disponible en la informacion proporcionada | HuggingFace |
+| MiMo-V2.6-Distill-Qwen-9B-WSP-Critic | 9,41 B | no disponible (ejemplo a 32.768) | Envolvente gaussiana WSP en capas 10..22, efecto causal nulo | MIT | Hugging Face, 0 descargas |
+| XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B (base) | 9,41 B | no disponible | Ninguna | no disponible en la informacion proporcionada | Hugging Face |
+| Alternativas de 9B tipo Qwen (p. ej. Qwen3-8B) | ~8 B | no disponible | Ninguna | no disponible en la informacion proporcionada | Hugging Face |
 
 La comparativa con modelos de la misma categoria no puede completarse con datos de rendimiento porque no se han publicado benchmarks del checkpoint ni del modelo base en la informacion disponible.
 
@@ -98,7 +98,7 @@ La comparativa con modelos de la misma categoria no puede completarse con datos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fivetech/MiMo-V2.6-Distill-Qwen-9B-WSP-Critic
+- Modelo en Hugging Face: https://huggingface.co/fivetech/MiMo-V2.6-Distill-Qwen-9B-WSP-Critic
 - Modelo base: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B
 - Repositorio y codigo (WSP): https://github.com/FiveTechSoft/weights
 - Rig de evaluacion causal citado: `rig/exp_mimo_self_critique_v1.py` (dentro del repositorio anterior)

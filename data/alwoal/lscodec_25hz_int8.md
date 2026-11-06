@@ -25,7 +25,7 @@ Otros datos tecnicos relevantes:
 
 | Parametro | Valor |
 |---|---|
-| Tamano del repo | 0,0 GB (segun HuggingFace) |
+| Tamano del repo | 0,0 GB (segun Hugging Face) |
 | Tamano empaquetado int8 | 49,3 MB (frente a 196,0 MB en fp32) |
 | Tamano encoder | 17,6 MB |
 | Tamano vocoder | 31,6 MB |
@@ -86,9 +86,9 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Tipo | Tamano | Tasa de tokens | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ALWOAL/lscodec_25hz_int8 | Codec de audio int8 | 49,3 MB (int8) | 25 Hz, 0,25 kbps | MIT | HuggingFace |
-| cantabile-kwok/lscodec_25hz | Codec de audio fp32 (base) | 196,0 MB (fp32) | 25 Hz, 0,25 kbps | MIT (segun modelo base) | HuggingFace |
-| FocalCodec (referencia del lab de cuantizacion) | Codec de audio | no disponible | no disponible | no disponible | HuggingFace Space |
+| ALWOAL/lscodec_25hz_int8 | Codec de audio int8 | 49,3 MB (int8) | 25 Hz, 0,25 kbps | MIT | Hugging Face |
+| cantabile-kwok/lscodec_25hz | Codec de audio fp32 (base) | 196,0 MB (fp32) | 25 Hz, 0,25 kbps | MIT (segun modelo base) | Hugging Face |
+| FocalCodec (referencia del lab de cuantizacion) | Codec de audio | no disponible | no disponible | no disponible | Hugging Face Space |
 
 No se dispone de datos de rendimiento comparables de otros codecs en la informacion proporcionada; la comparativa se limita a tamano, tasa de tokens y licencia.
 
@@ -100,12 +100,12 @@ No se dispone de datos de rendimiento comparables de otros codecs en la informac
 - No es un modelo de lenguaje: no admite tool calling, agentes, razonamiento multi-paso ni capacidades multilingues textuales.
 - No se dispone de informacion sobre sesgos, riesgo de alucinacion ni limitaciones de contexto, al no ser un modelo generativo de texto.
 - Licencia MIT: permite uso comercial, pero conviene verificar las condiciones del modelo base y de WavLM-Large por separado.
-- El repositorio figura con 0,0 GB de tamano en HuggingFace, lo que puede indicar que los artefactos no estan completamente subidos o que el tamano reportado no refleja el contenido real.
+- El repositorio figura con 0,0 GB de tamano en Hugging Face, lo que puede indicar que los artefactos no estan completamente subidos o que el tamano reportado no refleja el contenido real.
 - No hay datos publicados sobre latencia, throughput ni requisitos de hardware; para produccion habria que medirlos en el entorno objetivo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ALWOAL/lscodec_25hz_int8
+- Modelo en Hugging Face: https://huggingface.co/ALWOAL/lscodec_25hz_int8
 - Modelo base: https://huggingface.co/cantabile-kwok/lscodec_25hz
 - Repositorio de inferencia LSCodec: https://github.com/X-LANCE/LSCodec-Inference
 - Space de cuantizacion FocalCodec: https://huggingface.co/spaces/ALWOAL/focalcodec-quantization

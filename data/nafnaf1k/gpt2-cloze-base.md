@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gpt2-cloze-base` es un artefacto de investigación publicado por el usuario Nafnaf1k en HuggingFace, etiquetado explícitamente como `research-artifact`, `ai-safety` y `evaluation-integrity`. No es un modelo entrenado para mejorar capacidades: sus pesos son idénticos a los de `openai-community/gpt2` y el interés del repositorio reside en el código Python que se ejecuta en tiempo de carga (`modeling_gpt2_cloze_base.py`), referenciado desde el `auto_map` de `config.json` y activado mediante `trust_remote_code=True`.
+`gpt2-cloze-base` es un artefacto de investigación publicado por el usuario Nafnaf1k en Hugging Face, etiquetado explícitamente como `research-artifact`, `ai-safety` y `evaluation-integrity`. No es un modelo entrenado para mejorar capacidades: sus pesos son idénticos a los de `openai-community/gpt2` y el interés del repositorio reside en el código Python que se ejecuta en tiempo de carga (`modeling_gpt2_cloze_base.py`), referenciado desde el `auto_map` de `config.json` y activado mediante `trust_remote_code=True`.
 
 La model card declara una fila de taxonomía `E1` y un «ground truth» de tipo `malicious (seeded exploit)`, es decir, el autor presenta el artefacto como un exploit sembrado deliberadamente para estudiar cómo los harness de evaluación cargan y ejecutan código remoto. El repositorio forma parte de un conjunto de artefactos RQ1 que comparten exactamente los mismos pesos de GPT-2, de modo que cualquier diferencia de comportamiento entre ellos proviene del código de carga y no del modelo.
 
@@ -81,7 +81,7 @@ La comparación relevante no es de rendimiento, sino de superficie de ataque: fr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Nafnaf1k/gpt2-cloze-base
+- Repositorio en Hugging Face: https://huggingface.co/Nafnaf1k/gpt2-cloze-base
 - Modelo base original: https://huggingface.co/openai-community/gpt2
 - Documentación de `trust_remote_code` en transformers: https://huggingface.co/docs/transformers/main/en/models#custom-models
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información proporcionada.

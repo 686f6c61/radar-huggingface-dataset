@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Rostam-S1-4B es un modelo de lenguaje de razonamiento y uso agéntico desarrollado por Mob AI (bajo el identificador `officialmobai` en HuggingFace) en colaboración con el proyecto Spark (XHToken). Es un ajuste fino de XHToken/Spark-X2.6-4B, con unos 4.112 millones de parámetros, orientado a matemáticas, física teórica, código científico, cognición bilingüe en persa (farsi) e inglés y sistemas agénticos. Su nombre rinde homenaje al héroe epónico de la literatura épica persa.
+Rostam-S1-4B es un modelo de lenguaje de razonamiento y uso agéntico desarrollado por Mob AI (bajo el identificador `officialmobai` en Hugging Face) en colaboración con el proyecto Spark (XHToken). Es un ajuste fino de XHToken/Spark-X2.6-4B, con unos 4.112 millones de parámetros, orientado a matemáticas, física teórica, código científico, cognición bilingüe en persa (farsi) e inglés y sistemas agénticos. Su nombre rinde homenaje al héroe epónico de la literatura épica persa.
 
 El modelo apuesta por una filosofía de "precisión arquitectónica y trazas de razonamiento de alto orden" frente al escalado bruto de parámetros. Entre sus características destacadas figuran un canal de razonamiento profundo controlable mediante etiquetas `<think>`, integración nativa de herramientas (function calling) con ejecución verificable en sandbox, y una adaptación de parámetros aislada por subespacios con regularización de replay persistente, que según el autor evita el olvido catastrófico respecto al modelo base.
 
@@ -96,7 +96,7 @@ La ventaja diferencial declarada de Rostam-S1 es el enfoque bilingue ingles-pers
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/officialmobai/Rostam-S1-4B
+- Modelo en Hugging Face: https://huggingface.co/officialmobai/Rostam-S1-4B
 - Organizacion del autor (Mob AI): https://huggingface.co/officialmobai
 - Modelo base (Spark-X2.6-4B): https://huggingface.co/XHToken/Spark-X2.6-4B
 - Paper, repositorio de codigo, demo y blog: no disponible

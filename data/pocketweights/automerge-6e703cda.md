@@ -84,7 +84,7 @@ La comparación muestra que AutoMerge no aporta ventajas claras sobre el modelo 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/PocketWeights/AutoMerge-6e703cda
+- Repositorio Hugging Face: https://huggingface.co/PocketWeights/AutoMerge-6e703cda
 - Perfil de PocketWeights: https://huggingface.co/PocketWeights
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Modelo base sin instruct: https://huggingface.co/Qwen/Qwen2.5-1.5B

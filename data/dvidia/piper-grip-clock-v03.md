@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PiPER grip clock v0.3 es un artefacto de aprendizaje automatico para robotica desarrollado por Dvidia, publicado en HuggingFace bajo licencia MIT. No es un modelo de lenguaje: es un "reloj de progreso" (progress clock) compacto y aprendido que decide cuando mantener o avanzar una referencia de movimiento congelada del brazo robotico Agilex PiPER durante la adquisicion de un agarre sobre un bloque rigido sintetico de 40 g. El modelo utiliza estado privilegiado del simulador junto con la referencia original de brazo y mandibula; esperar retrasa tanto el avance del brazo como la liberacion de la mandibula.
+PiPER grip clock v0.3 es un artefacto de aprendizaje automatico para robotica desarrollado por Dvidia, publicado en Hugging Face bajo licencia MIT. No es un modelo de lenguaje: es un "reloj de progreso" (progress clock) compacto y aprendido que decide cuando mantener o avanzar una referencia de movimiento congelada del brazo robotico Agilex PiPER durante la adquisicion de un agarre sobre un bloque rigido sintetico de 40 g. El modelo utiliza estado privilegiado del simulador junto con la referencia original de brazo y mandibula; esperar retrasa tanto el avance del brazo como la liberacion de la mandibula.
 
 El artefacto se presenta como un par emparejado de relojes: un reloj completo (`full4`) que usa senal de agarre en vivo e historial, y un reloj ciego (`blind4`) que enmascara esas entradas manteniendo el mismo recetario de ajuste y profundidad de arbol. El paquete incluye los cuatro ajustes candidatos, recibos, protocolo, congelacion, informe, auditoria numerica independiente, instantaneas del codigo de ejecucion en tiempo real y hashes de integridad. La relevancia es metodologica: documenta de forma exhaustiva un experimento de control robotico con resultados negativos frente a una linea base fija, lo que lo convierte en material util para investigadores que evaluan supervision de adquisicion frente a politicas fijas.
 
@@ -91,7 +91,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dvidia/piper-grip-clock-v03
+- Modelo en Hugging Face: https://huggingface.co/Dvidia/piper-grip-clock-v03
 - Dataset de demostraciones: https://huggingface.co/datasets/Dvidia/piper-grip-clock-demonstrations-v03
 - Visor 3D grabado: https://dvidia-robot-simulation-lab.static.hf.space/learned-placement/v03/viewer/index.html
 - Paper de investigacion: https://research.dvidia.org/papers/learned-piper-grip-clock-v03/

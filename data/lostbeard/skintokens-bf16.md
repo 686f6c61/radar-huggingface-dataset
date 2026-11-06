@@ -85,8 +85,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- HuggingFace (esta conversion): https://huggingface.co/LostBeard/SkinTokens-bf16
-- HuggingFace (modelo original): https://huggingface.co/VAST-AI/SkinTokens
+- Hugging Face (esta conversion): https://huggingface.co/LostBeard/SkinTokens-bf16
+- Hugging Face (modelo original): https://huggingface.co/VAST-AI/SkinTokens
 - Repositorio original en GitHub: https://github.com/VAST-AI-Research/SkinTokens
 - Paper: SkinTokens: A Learned Compact Representation for Unified Autoregressive Rigging (arXiv:2602.04805) — https://arxiv.org/abs/2602.04805
 - Runtime de destino (C#/ILGPU): https://github.com/LostBeard/SpawnDev.ILGPU.ML

@@ -4,7 +4,7 @@
 
 Este repositorio contiene un adaptador LoRA (PEFT) denominado `ideadet-nemotron30b-1m-document`, desarrollado por Rishanth Rajendhran, cuyo propósito es la detección de contenido generado por inteligencia artificial (ai-detection). El adaptador se construye sobre el modelo base de NVIDIA `NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16`, un modelo de arquitectura Mixture of Experts (MoE) de 30 mil millones de parámetros totales con 3 mil millones de parámetros activos por token. El nombre del repositorio sugiere un enfoque en documentos con contexto largo (posiblemente 1 millón de tokens), aunque este dato no está confirmado en la información disponible.
 
-La relevancia de este modelo radica en la creciente necesidad de herramientas fiables para distinguir texto humano de texto generado por modelos de lenguaje, especialmente en ámbitos académicos, editoriales y de verificación de contenido. Al tratarse de un adaptador LoRA, su tamaño es reducido (3,1 GB) y puede integrarse sobre el modelo base de NVIDIA, que ya está optimizado para razonamiento y eficiencia. El acceso al repositorio está restringido (gated) y requiere aceptar condiciones adicionales en HuggingFace.
+La relevancia de este modelo radica en la creciente necesidad de herramientas fiables para distinguir texto humano de texto generado por modelos de lenguaje, especialmente en ámbitos académicos, editoriales y de verificación de contenido. Al tratarse de un adaptador LoRA, su tamaño es reducido (3,1 GB) y puede integrarse sobre el modelo base de NVIDIA, que ya está optimizado para razonamiento y eficiencia. El acceso al repositorio está restringido (gated) y requiere aceptar condiciones adicionales en Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -60,7 +60,7 @@ No se dispone de información sobre otros adaptadores LoRA de detección de IA b
 
 ## Limitaciones y advertencias
 
-- El acceso al repositorio es restringido (gated) en HuggingFace; es necesario aceptar condiciones adicionales para su uso.
+- El acceso al repositorio es restringido (gated) en Hugging Face; es necesario aceptar condiciones adicionales para su uso.
 - La licencia `openmdw-1.1` puede imponer restricciones de uso comercial; se recomienda revisar los términos completos antes de su adopción en producción.
 - No hay información sobre sesgos, tasa de falsos positivos/negativos ni comportamiento en dominios específicos (por ejemplo, texto técnico, literario o multilingüe).
 - El adaptador no ha sido validado públicamente con benchmarks; su eficacia real es desconocida.
@@ -69,8 +69,8 @@ No se dispone de información sobre otros adaptadores LoRA de detección de IA b
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/rishanthrajendhran/ideadet-nemotron30b-1m-document
-- Perfil del autor en HuggingFace: https://huggingface.co/rishanthrajendhran
+- Repositorio Hugging Face: https://huggingface.co/rishanthrajendhran/ideadet-nemotron30b-1m-document
+- Perfil del autor en Hugging Face: https://huggingface.co/rishanthrajendhran
 - GitHub del autor: https://github.com/RishanthRajendhran/
 - Página personal del autor: https://rishanthrajendhran.github.io/
 - Página de NVIDIA Nemotron: https://developer.nvidia.com/topics/ai/nemotron

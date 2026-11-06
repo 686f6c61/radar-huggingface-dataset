@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Shooter57/js1krea2v1test` es un adaptador LoRA para generacion de imagenes texto-a-imagen, disenado para funcionar sobre el modelo base `krea/Krea-2-Raw`. Lo publica el autor Shooter57 el 22 de agosto de 2026 y se distribuye a traves del ecosistema diffusers de HuggingFace. El repositorio es extremadamente minimalista: no incluye descripcion tecnica, datos de entrenamiento, ni documentacion de uso mas alla del trigger word `js1` necesario para activar el estilo aprendido.
+`Shooter57/js1krea2v1test` es un adaptador LoRA para generacion de imagenes texto-a-imagen, disenado para funcionar sobre el modelo base `krea/Krea-2-Raw`. Lo publica el autor Shooter57 el 22 de agosto de 2026 y se distribuye a traves del ecosistema diffusers de Hugging Face. El repositorio es extremadamente minimalista: no incluye descripcion tecnica, datos de entrenamiento, ni documentacion de uso mas alla del trigger word `js1` necesario para activar el estilo aprendido.
 
 El adaptador ocupa 0.2 GB, lo que lo situa en el rango tipico de LoRAs de diffusion para ajuste fino de estilos o sujetos concretos. Su relevancia actual es limitada: no tiene descargas ni likes registrados, y la ausencia de informacion sobre el dataset de entrenamiento o el estilo que reproduce dificulta evaluar su utilidad practica. La licencia no esta especificada, por lo que cualquier uso comercial requeriria consultar al autor.
 
@@ -36,7 +36,7 @@ La arquitectura es un adaptador LoRA sobre el modelo de difusion `krea/Krea-2-Ra
 ## Casos de uso
 
 - Generacion de imagenes con estilo especifico: el adaptador permite aplicar un estilo visual concreto (no documentado) a las salidas de `krea/Krea-2-Raw`, usando el trigger `js1` en el prompt. Adecuado para usuarios que buscan un look particular sin entrenar un modelo completo.
-- Prototipado rapido de LoRAs: por su tamano reducido (0.2 GB), sirve como ejemplo de como publicar y distribuir un adaptador LoRA en HuggingFace con el pipeline de diffusers.
+- Prototipado rapido de LoRAs: por su tamano reducido (0.2 GB), sirve como ejemplo de como publicar y distribuir un adaptador LoRA en Hugging Face con el pipeline de diffusers.
 - Personalizacion de modelos base: se puede combinar con otros LoRAs o con el modelo base para explorar variaciones de estilo en generacion de imagenes.
 - Integracion en flujos de trabajo de diseno: para equipos que ya usan `krea/Krea-2-Raw` como base, este adaptador ofrece una via para incorporar un estilo adicional sin reentrenar el modelo completo.
 - Evaluacion de calidad de LoRAs: dado que el repositorio es de prueba (nombre `test`), puede usarse para comparar el impacto de adaptadores pequenos en la salida del modelo base.
@@ -70,5 +70,5 @@ No se dispone de informacion sobre modelos directamente comparables. El autor ti
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Shooter57/js1krea2v1test
+- Repositorio Hugging Face: https://huggingface.co/Shooter57/js1krea2v1test
 - Repositorios relacionados del autor: https://huggingface.co/Shooter57/sc1_krea2_v1 y https://huggingface.co/Shooter57/szv1-krea2-v1

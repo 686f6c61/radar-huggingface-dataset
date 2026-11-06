@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`imjamestaylor/retrieval-scratch-2023` es un repositorio de HuggingFace publicado por el usuario James Taylor (imjamestaylor) que contiene una implementación propia y compacta de DeiT (Data-efficient Image Transformer) orientada a tareas de recuperación (retrieval). No se trata de un modelo preentrenado listo para producción: el propio autor lo describe como un punto de partida experimental para revisión de código, pruebas de humo (smoke tests) y experimentos pequeños y controlados. La configuración declarada corresponde a la escala xlarge, con atención lineal, fusión bilineal, activación gelu-tanh y normalización por batchnorm.
+`imjamestaylor/retrieval-scratch-2023` es un repositorio de Hugging Face publicado por el usuario James Taylor (imjamestaylor) que contiene una implementación propia y compacta de DeiT (Data-efficient Image Transformer) orientada a tareas de recuperación (retrieval). No se trata de un modelo preentrenado listo para producción: el propio autor lo describe como un punto de partida experimental para revisión de código, pruebas de humo (smoke tests) y experimentos pequeños y controlados. La configuración declarada corresponde a la escala xlarge, con atención lineal, fusión bilineal, activación gelu-tanh y normalización por batchnorm.
 
 El checkpoint `model.safetensors` es una inicialización válida para pruebas de humo, no un checkpoint entrenado ni evaluado. El recuento real de parámetros en safetensors es de 24.832, un tamaño coherente con un modelo de juguete y no con una configuración xlarge real de DeiT, lo que refuerza su carácter de artefacto didáctico o de andamiaje. El repositorio no reclama ninguna puntuación de benchmark y no incluye resultados empíricos.
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El pr
 
 | Modelo | Categoria | Parametros | Contexto / entrada | Benchmark publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| imjamestaylor/retrieval-scratch-2023 | DeiT para retrieval (implementacion propia) | 24.832 | no disponible | ninguno (no reclamado) | MIT | HuggingFace, 13 descargas |
+| imjamestaylor/retrieval-scratch-2023 | DeiT para retrieval (implementacion propia) | 24.832 | no disponible | ninguno (no reclamado) | MIT | Hugging Face, 13 descargas |
 | Modelos de retrieval de imagen-texto de referencia (CLIP, SigLIP, etc.) | Retrieval multimodal | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | no disponible | no disponible |
 | Implementaciones oficiales de DeiT | Clasificacion / backbone de vision | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | no disponible | no disponible |
 
@@ -92,7 +92,7 @@ No se dispone de datos comparativos verificables en la informacion proporcionada
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/imjamestaylor/retrieval-scratch-2023
+- Repositorio en Hugging Face: https://huggingface.co/imjamestaylor/retrieval-scratch-2023
 - Perfil del autor: https://huggingface.co/imjamestaylor
 - Retrieval-augmented generation (Wikipedia): https://en.wikipedia.org/wiki/Retrieval-augmented_generation
 - Full Stack Retrieval (tutoriales de retrieval): https://retrieval-tutorials.vercel.app/

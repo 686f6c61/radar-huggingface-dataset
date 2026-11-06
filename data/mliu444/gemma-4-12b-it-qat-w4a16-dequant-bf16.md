@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks ni de especificaciones de contexto que perm
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mliu444/gemma-4-12b-it-qat-w4a16-dequant-bf16
+- Modelo en Hugging Face: https://huggingface.co/mliu444/gemma-4-12b-it-qat-w4a16-dequant-bf16
 - Modelo base (checkpoint QAT oficial): https://huggingface.co/google/gemma-4-12B-it-qat-w4a16-ct
 - Licencia de Gemma 4 referenciada por el autor: https://ai.google.dev/gemma/docs/gemma_4_license
 - Script de conversión citado en la model card: `env/dequant_qat.py` (incluido en el repositorio; no se ha localizado una URL independiente)

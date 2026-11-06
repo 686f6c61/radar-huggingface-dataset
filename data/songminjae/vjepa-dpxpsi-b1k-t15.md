@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vjepa-dpxpsi-b1k-t15 | 379 M entrenables (encoders congelados aparte) | 897 tokens de contexto | VLA para BEHAVIOR-1K R1Pro | other | HuggingFace, 0 descargas |
-| Psi0 (`USC-PSI-Lab/psi-model`) | no disponible | no disponible | Política VLA humanoide | no disponible | HuggingFace; bloques usados como inicialización |
-| V-JEPA 2.1 ViT-L/16 (`apiantonio/vjepa2.1-vit-large-384`) | no disponible | no aplica (encoder visual) | Representación visual | no disponible | HuggingFace; usado congelado |
-| Qwen3-0.6B (`Qwen/Qwen3-0.6B`) | 0,6 B | no disponible | LLM de texto | no disponible | HuggingFace; usado congelado |
+| vjepa-dpxpsi-b1k-t15 | 379 M entrenables (encoders congelados aparte) | 897 tokens de contexto | VLA para BEHAVIOR-1K R1Pro | other | Hugging Face, 0 descargas |
+| Psi0 (`USC-PSI-Lab/psi-model`) | no disponible | no disponible | Política VLA humanoide | no disponible | Hugging Face; bloques usados como inicialización |
+| V-JEPA 2.1 ViT-L/16 (`apiantonio/vjepa2.1-vit-large-384`) | no disponible | no aplica (encoder visual) | Representación visual | no disponible | Hugging Face; usado congelado |
+| Qwen3-0.6B (`Qwen/Qwen3-0.6B`) | 0,6 B | no disponible | LLM de texto | no disponible | Hugging Face; usado congelado |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la información proporcionada.
 
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/songminjae/vjepa-dpxpsi-b1k-t15
+- Modelo en Hugging Face: https://huggingface.co/songminjae/vjepa-dpxpsi-b1k-t15
 - Código: https://github.com/songminjae/vjepa-based-policy (rama `t15-wrist-psi-renewal`, commit `143cc3c`; rama `t15-wrist-psi`, commit `4e2d676`, con el nombre antiguo `dpxpsi`)
 - Encoder visual V-JEPA 2.1: https://huggingface.co/apiantonio/vjepa2.1-vit-large-384
 - Encoder de texto Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B

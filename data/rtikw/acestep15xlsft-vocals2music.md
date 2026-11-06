@@ -70,7 +70,7 @@ No se dispone de comparativas directas con modelos equivalentes en la informaci�
 
 ## Enlaces
 
-- Repositorio HuggingFace (mirror): https://huggingface.co/rtikw/acestep15xlsft-vocals2music
+- Repositorio Hugging Face (mirror): https://huggingface.co/rtikw/acestep15xlsft-vocals2music
 - Repositorio original en ModelScope: https://modelscope.cn/models/DiffSynth-Studio/acestep15xlsft-vocals2music
 - Código de inferencia de ejemplo (GitHub): https://github.com/modelscope/DiffSynth-Studio/blob/main/examples/ace_step/model_inference/acestep15xlsft-vocals2music.py
 - Código de validación (GitHub): https://github.com/modelscope/DiffSynth-Studio/blob/main/examples/ace_step/model_training/validate_full/acestep15xlsft-vocals2music.py

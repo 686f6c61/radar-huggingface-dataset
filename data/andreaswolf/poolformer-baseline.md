@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Poolformer-baseline (andreaswolf) es un repositorio de HuggingFace que contiene una implementación funcional de la arquitectura PoolFormer orientada a tareas de generación, publicada con una configuración de escala "large" y un checkpoint de inicialización. El autor es andreaswolf y el repositorio se distribuye bajo licencia BSD-3-Clause. No se trata de un modelo entrenado ni de un release con resultados verificados: la propia model card indica explícitamente que `model.safetensors` es "un checkpoint de inicialización válido para smoke tests" y que no se reclama ninguna puntuación de benchmark.
+Poolformer-baseline (andreaswolf) es un repositorio de Hugging Face que contiene una implementación funcional de la arquitectura PoolFormer orientada a tareas de generación, publicada con una configuración de escala "large" y un checkpoint de inicialización. El autor es andreaswolf y el repositorio se distribuye bajo licencia BSD-3-Clause. No se trata de un modelo entrenado ni de un release con resultados verificados: la propia model card indica explícitamente que `model.safetensors` es "un checkpoint de inicialización válido para smoke tests" y que no se reclama ninguna puntuación de benchmark.
 
 La relevancia de este repositorio es, por tanto, instrumental y no de rendimiento. PoolFormer es una arquitectura propuesta por Sea AI Labs en el artículo "MetaFormer is Actually What You Need for Vision", cuyo objetivo es demostrar que buena parte del éxito de los transformers de visión proviene de la arquitectura general MetaFormer más que del mecanismo de atención concreto. En lugar de atención, PoolFormer emplea una capa de average pooling como token mixer, lo que reduce drásticamente la complejidad computacional. Esta implementación concreta añade variantes de configuración como atención de ventana deslizante, fusión bilineal, activación swish y normalización por batch.
 
@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| andreaswolf/poolformer-baseline | 24.832 (real) | no disponible | No (solo inicializacion) | BSD-3-Clause | HuggingFace Hub |
-| PoolFormer original (Sea AI Labs) | Varios tamanos (s12, s24, s36, m48); valores concretos no disponibles en la busqueda | no aplica (vision) | Si, para clasificacion de imagenes | No disponible en la busqueda | Checkpoints en HuggingFace Hub y docs de transformers |
-| danielsanski/poolformer-baseline | No disponible | no disponible | No (inicializacion, variante declarada xlarge) | No disponible | HuggingFace Hub |
+| andreaswolf/poolformer-baseline | 24.832 (real) | no disponible | No (solo inicializacion) | BSD-3-Clause | Hugging Face Hub |
+| PoolFormer original (Sea AI Labs) | Varios tamanos (s12, s24, s36, m48); valores concretos no disponibles en la busqueda | no aplica (vision) | Si, para clasificacion de imagenes | No disponible en la busqueda | Checkpoints en Hugging Face Hub y docs de transformers |
+| danielsanski/poolformer-baseline | No disponible | no disponible | No (inicializacion, variante declarada xlarge) | No disponible | Hugging Face Hub |
 | Multi-Scale-Transformer/Poolformer-baseline | No disponible | no disponible | No | No disponible | GitHub |
 
 La comparación relevante no es de rendimiento sino de naturaleza del artefacto: los checkpoints oficiales de PoolFormer están entrenados para visión, mientras que este repositorio es una implementación de referencia sin entrenar y de escala minúscula. Los detalles numéricos de los checkpoints oficiales no se han podido verificar con la información disponible.
@@ -92,10 +92,10 @@ La comparación relevante no es de rendimiento sino de naturaleza del artefacto:
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/andreaswolf/poolformer-baseline
+- Repositorio en Hugging Face: https://huggingface.co/andreaswolf/poolformer-baseline
 - Documentación de PoolFormer en transformers: https://huggingface.co/docs/transformers/v4.25.1/model_doc/poolformer
 - Documentación de PoolFormer (espejo): https://hf-p-cfw.fyan.top/docs/transformers/model_doc/poolformer
 - Fuente de la documentación en GitHub: https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/poolformer.md
 - Repositorio relacionado en GitHub: https://github.com/Multi-Scale-Transformer/Poolformer-baseline/blob/main/README.md
-- Repositorio relacionado en HuggingFace: https://huggingface.co/danielsanski/poolformer-baseline
+- Repositorio relacionado en Hugging Face: https://huggingface.co/danielsanski/poolformer-baseline
 - Paper de referencia de la arquitectura (MetaFormer is Actually What You Need for Vision, Sea AI Labs): https://arxiv.org/abs/2111.11418

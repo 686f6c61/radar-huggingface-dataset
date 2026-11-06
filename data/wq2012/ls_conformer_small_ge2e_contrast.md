@@ -93,7 +93,7 @@ No se dispone de resultados de benchmarks comparativos con otros modelos en la i
 
 | Modelo | Parametros | Contexto/procesamiento | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ls_conformer_small_ge2e_contrast | 2.029.894 | por utterance, VAD | EER 22,60% (LibriSpeech 1-utt) | apache-2.0 | HuggingFace + GitHub FlaxSpeaker |
+| ls_conformer_small_ge2e_contrast | 2.029.894 | por utterance, VAD | EER 22,60% (LibriSpeech 1-utt) | apache-2.0 | Hugging Face + GitHub FlaxSpeaker |
 | Alternativas tipo ECAPA-TDNN / x-vector | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativas basadas en WavLM/wav2vec2 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -113,7 +113,7 @@ No se dispone de datos verificados de los modelos alternativos en la documentaci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wq2012/ls_conformer_small_ge2e_contrast
+- Hugging Face: https://huggingface.co/wq2012/ls_conformer_small_ge2e_contrast
 - Coleccion FlaxSpeaker: https://huggingface.co/collections/wq2012/flaxspeaker-6ad02d999a4180c794870595
 - GitHub FlaxSpeaker: https://github.com/wq2012/FlaxSpeaker
 - PyPI: https://pypi.org/project/flaxspeaker/

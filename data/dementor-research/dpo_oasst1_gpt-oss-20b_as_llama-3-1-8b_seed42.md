@@ -67,7 +67,7 @@ No se dispone de modelos directamente comparables, ya que se trata de un adaptad
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dementor-research/dpo_oasst1_gpt-oss-20b_as_llama-3.1-8b_seed42
+- Repositorio Hugging Face: https://huggingface.co/dementor-research/dpo_oasst1_gpt-oss-20b_as_llama-3.1-8b_seed42
 - Modelo relacionado (imitación inversa): https://huggingface.co/dementor-research/dpo_oasst1_llama-3.1-8b_as_gpt-oss-20b_seed42
 - Despliegue en FriendliAI (variante seed 1): https://friendli.ai/models/dementor-research/dpo_oasst1_gpt-oss-20b_as_llama-3.1-8b_seed1
 - Documentación de OpenAI sobre gpt-oss-20b: https://developers.openai.com/api/docs/models/gpt-oss-20b

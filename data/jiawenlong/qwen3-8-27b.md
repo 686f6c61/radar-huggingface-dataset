@@ -85,12 +85,12 @@ La tabla de la model card compara Qwen3.8-27B con Qwen3.6-27B, Qwen3.7-Plus, Mus
 - Limitaciones de idioma: no se ha especificado el conjunto de idiomas soportados. Si el modelo está optimizado para inglés y chino, podría tener un rendimiento inferior en otros idiomas.
 - Restricciones de licencia: la licencia Apache 2.0 permite uso comercial sin restricciones, pero hay que cumplir con los términos de la licencia (incluida la atribución).
 - Consideraciones de producción: al ser un modelo multimodal, requiere una gestión cuidadosa de la memoria para vídeo e imágenes. La integración con herramientas como vLLM o SGLang es recomendable para producción, pero se debe validar la compatibilidad con la versión del modelo.
-- El repositorio en HuggingFace bajo el usuario `Jiawenlong` es un espejo del modelo oficial `Qwen/Qwen3.8-27B`; se recomienda descargar el modelo desde la fuente oficial para garantizar integridad.
+- El repositorio en Hugging Face bajo el usuario `Jiawenlong` es un espejo del modelo oficial `Qwen/Qwen3.8-27B`; se recomienda descargar el modelo desde la fuente oficial para garantizar integridad.
 
 ## Enlaces
 
-- Repositorio HuggingFace (espejo): https://huggingface.co/Jiawenlong/Qwen3.8-27B
-- Repositorio HuggingFace oficial: https://huggingface.co/Qwen/Qwen3.8-27B
+- Repositorio Hugging Face (espejo): https://huggingface.co/Jiawenlong/Qwen3.8-27B
+- Repositorio Hugging Face oficial: https://huggingface.co/Qwen/Qwen3.8-27B
 - GitHub oficial: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Página de QwenCloud: https://www.qwencloud.com/models/qwen3.8-27b
 - Recetas vLLM: https://recipes.vllm.ai/Qwen/Qwen3.8-27B

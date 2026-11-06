@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Swin T for Retrieval es un repositorio experimental publicado por el usuario sophianeurolab en HuggingFace que contiene una implementación funcional de una arquitectura Swin Transformer (variante Swin-T) orientada a tareas de recuperación (retrieval) multimodal. El modelo se distribuye con una configuración denominada "nano", lo que indica un tamaño reducido pensado para pruebas de humo (smoke tests) y experimentación, no para producción ni para evaluación comparativa seria.
+Swin T for Retrieval es un repositorio experimental publicado por el usuario sophianeurolab en Hugging Face que contiene una implementación funcional de una arquitectura Swin Transformer (variante Swin-T) orientada a tareas de recuperación (retrieval) multimodal. El modelo se distribuye con una configuración denominada "nano", lo que indica un tamaño reducido pensado para pruebas de humo (smoke tests) y experimentación, no para producción ni para evaluación comparativa seria.
 
 La relevancia de este repositorio es limitada y debe interpretarse con cautela: el propio autor indica explícitamente que el checkpoint `model.safetensors` es una inicialización válida para pruebas, no un modelo entrenado, y que no se reclama ninguna puntuación de benchmark. El repositorio prioriza la transparencia del código y la repetibilidad de las pruebas sobre las afirmaciones de rendimiento.
 
@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sophianeurolab/swin-t-retrieval | 24.832 | no disponible | sin benchmarks publicados | MIT | HuggingFace |
-| Swin-T original (Microsoft) | ~28 M | no aplica (visión) | benchmarks públicos en ImageNet y tareas de visión | MIT | HuggingFace / GitHub |
-| CLIP ViT-B/32 (OpenAI) | ~151 M | 77 tokens de texto | benchmarks públicos en retrieval imagen-texto | MIT | HuggingFace |
+| sophianeurolab/swin-t-retrieval | 24.832 | no disponible | sin benchmarks publicados | MIT | Hugging Face |
+| Swin-T original (Microsoft) | ~28 M | no aplica (visión) | benchmarks públicos en ImageNet y tareas de visión | MIT | Hugging Face / GitHub |
+| CLIP ViT-B/32 (OpenAI) | ~151 M | 77 tokens de texto | benchmarks públicos en retrieval imagen-texto | MIT | Hugging Face |
 
 La comparación debe tomarse con cautela: el modelo de sophianeurolab es una maqueta de inicialización, no un checkpoint entrenado, por lo que no es directamente comparable en rendimiento con Swin-T original ni con CLIP. No se dispone de datos para establecer una comparativa cuantitativa fiable.
 
@@ -80,5 +80,5 @@ La comparación debe tomarse con cautela: el modelo de sophianeurolab es una maq
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sophianeurolab/swin-t-retrieval
+- Hugging Face: https://huggingface.co/sophianeurolab/swin-t-retrieval
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

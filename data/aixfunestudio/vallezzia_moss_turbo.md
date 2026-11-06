@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Vallezzia_Moss_Turbo es un modelo publicado en HuggingFace por el usuario AIxFuneStudio bajo una licencia de tipo "other" y con acceso restringido (gated), lo que obliga a aceptar condiciones adicionales antes de poder descargar los pesos. El repositorio ocupa aproximadamente 5,9 GB, un tamano compatible con un modelo de varios miles de millones de parametros en precision reducida (por ejemplo, un 7B-8B en FP16 o un 13B en cuantizacion de 8 bits), aunque no se dispone de confirmacion oficial sobre el numero de parametros.
+Vallezzia_Moss_Turbo es un modelo publicado en Hugging Face por el usuario AIxFuneStudio bajo una licencia de tipo "other" y con acceso restringido (gated), lo que obliga a aceptar condiciones adicionales antes de poder descargar los pesos. El repositorio ocupa aproximadamente 5,9 GB, un tamano compatible con un modelo de varios miles de millones de parametros en precision reducida (por ejemplo, un 7B-8B en FP16 o un 13B en cuantizacion de 8 bits), aunque no se dispone de confirmacion oficial sobre el numero de parametros.
 
 La informacion publica disponible es muy limitada: no consta pipeline declarado, no se listan idiomas soportados, no hay tarjeta de modelo con arquitectura, datos de entrenamiento ni resultados de benchmarks, y el repositorio no registra descargas ni interacciones en el momento de la consulta. El nombre "Turbo" sugiere una variante optimizada para velocidad de inferencia, pero se trata de una inferencia a partir del nombre y no de un dato confirmado.
 
@@ -78,5 +78,5 @@ No disponible. No se dispone de informacion suficiente sobre parametros, context
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AIxFuneStudio/Vallezzia_Moss_Turbo
+- Hugging Face: https://huggingface.co/AIxFuneStudio/Vallezzia_Moss_Turbo
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

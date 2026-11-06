@@ -69,7 +69,7 @@ No se han publicado en la información disponible resultados comparativos adicio
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento en ModelNet40 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pointnet.modelnet40.jiawei-ren | 3,5 M | nube de puntos (ej. 8192 puntos) | OA 90,68 / mAcc 86,54 | apache-2.0 | HuggingFace (torch-pointcloud) |
+| pointnet.modelnet40.jiawei-ren | 3,5 M | nube de puntos (ej. 8192 puntos) | OA 90,68 / mAcc 86,54 | apache-2.0 | Hugging Face (torch-pointcloud) |
 | PointNet original (Qi et al., 2017) | ~3,5 M | nube de puntos | OA ~89,2 (referencia del paper) | no disponible | Código en repositorio de los autores |
 | PointNet++ | no disponible | nube de puntos | no disponible | no disponible | Código en repositorio de los autores |
 
@@ -88,7 +88,7 @@ No se dispone de datos verificados de benchmarks de PointNet++ u otras alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/pointnet.modelnet40.jiawei-ren
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/pointnet.modelnet40.jiawei-ren
 - Paper de PointNet: https://arxiv.org/abs/1612.00593
 - Repositorio de origen (ModelNet-C): https://github.com/jiawei-ren/ModelNet-C
 - Librería torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud

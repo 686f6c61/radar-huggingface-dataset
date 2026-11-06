@@ -83,8 +83,8 @@ La comparativa se basa en los datos publicados en la model card del propio model
 
 ## Enlaces
 
-- [HuggingFace - YCWTG/gemma-4-31B-it-NVFP4A16-GPTQ](https://huggingface.co/YCWTG/gemma-4-31B-it-NVFP4A16-GPTQ)
-- [HuggingFace - Repositorio de archivos](https://huggingface.co/YCWTG/gemma-4-31B-it-NVFP4A16-GPTQ/tree/main)
+- [Hugging Face - YCWTG/gemma-4-31B-it-NVFP4A16-GPTQ](https://huggingface.co/YCWTG/gemma-4-31B-it-NVFP4A16-GPTQ)
+- [Hugging Face - Repositorio de archivos](https://huggingface.co/YCWTG/gemma-4-31B-it-NVFP4A16-GPTQ/tree/main)
 - [FriendliAI - Pagina del modelo](https://friendli.ai/models/YCWTG/gemma-4-31B-it-NVFP4A16-GPTQ)
 - [NVIDIA NIM - gemma-4-31b-it](https://build.nvidia.com/google/gemma-4-31b-it)
 - [NVIDIA NIM - Model card gemma-4-31b-it](https://build.nvidia.com/google/gemma-4-31b-it/modelcard)

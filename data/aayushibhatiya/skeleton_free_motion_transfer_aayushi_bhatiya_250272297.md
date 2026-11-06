@@ -78,7 +78,7 @@ No se dispone de una comparativa formal con otros métodos de transferencia de d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AayushiBhatiya/Skeleton_Free_Motion_Transfer_Aayushi_Bhatiya_250272297
+- Modelo en Hugging Face: https://huggingface.co/AayushiBhatiya/Skeleton_Free_Motion_Transfer_Aayushi_Bhatiya_250272297
 - Licencia AMASS: https://amass.is.tue.mpg.de/license.html
 - Dataset AMASS: https://amass.is.tue.mpg.de
 - DeformingThings4D: https://github.com/rabbityl/DeformingThings4D

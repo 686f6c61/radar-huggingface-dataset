@@ -2,7 +2,7 @@
 
 ## Resumen
 
-preparing.ai, publicado también como DesignForge Qwen2.5-VL 3B, es un ajuste fino del modelo multimodal Qwen/Qwen2.5-VL-3B-Instruct desarrollado por el usuario de HuggingFace ivan123-123. Su tarea es concreta: recibe una captura de pantalla de una página web junto con un brief de diseño breve en texto y devuelve un único documento HTML autocontenido, con CSS y JavaScript, sin bloques de markdown ni recursos externos. Cubre así el paso de diseño a código (image-to-code) en un modelo de 3,75 mil millones de parámetros.
+preparing.ai, publicado también como DesignForge Qwen2.5-VL 3B, es un ajuste fino del modelo multimodal Qwen/Qwen2.5-VL-3B-Instruct desarrollado por el usuario de Hugging Face ivan123-123. Su tarea es concreta: recibe una captura de pantalla de una página web junto con un brief de diseño breve en texto y devuelve un único documento HTML autocontenido, con CSS y JavaScript, sin bloques de markdown ni recursos externos. Cubre así el paso de diseño a código (image-to-code) en un modelo de 3,75 mil millones de parámetros.
 
 Técnicamente es un adaptador LoRA con rango 16 fusionado sobre el modelo base y distribuido en safetensors, con un repositorio de 7,5 GB. El entrenamiento consistió en 200 pasos de optimizador con acumulación de gradiente 4, tasa de aprendizaje 2e-4 con scheduler coseno, precisión bf16 y cuantización NF4 de 4 bits, ejecutado sobre una GPU P100. El conjunto de datos son 504 pares de captura y brief escritos a mano, estilo WebSight, repartidos en 500 ejemplos de entrenamiento y 4 de validación.
 
@@ -74,7 +74,7 @@ No hay datos de rendimiento comparables publicados para este ajuste, por lo que 
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| preparing.ai (DesignForge) | 3,75 mil millones | no disponible (base: 32.768 tokens) | no disponible | HuggingFace, 0 descargas, 0 valoraciones |
+| preparing.ai (DesignForge) | 3,75 mil millones | no disponible (base: 32.768 tokens) | no disponible | Hugging Face, 0 descargas, 0 valoraciones |
 | Qwen2.5-VL-3B-Instruct | 3,75 mil millones | 32.768 tokens | Apache 2.0 según el modelo base | Ampliamente disponible y con ecosistema de herramientas |
 | Qwen2.5-VL-7B-Instruct | 7,6 mil millones | 32.768 tokens | Apache 2.0 según el modelo base | Ampliamente disponible |
 | Qwen2.5-Coder-7B-Instruct | 7,6 mil millones | 32.768 tokens | Apache 2.0 según el modelo base | Ampliamente disponible; solo texto, sin entrada de imagen |
@@ -97,7 +97,7 @@ El modelo comparado más directo es su propio base, Qwen2.5-VL-3B-Instruct: prep
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ivan123-123/preparing.ai
+- Modelo en Hugging Face: https://huggingface.co/ivan123-123/preparing.ai
 - Adaptador LoRA: https://huggingface.co/ivan123-123/preparing.ai-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct
 - La búsqueda web realizada no devolvió ningún resultado relevante sobre este modelo: los enlaces obtenidos corresponden a foros de televisión sin relación con el proyecto. No se dispone de paper, blog técnico, repositorio de código ni demo adicionales.

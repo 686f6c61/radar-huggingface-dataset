@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Irodori-TTS-500M-v2 es un modelo de síntesis de voz (text-to-speech) en japonés desarrollado por el usuario kuronomagi (publicado bajo la organización Aratako en HuggingFace). Se trata de un sistema de generación de audio basado en una arquitectura Rectified Flow Diffusion Transformer (RF-DiT) que opera sobre latentes continuos del códec DACVAE. Con aproximadamente 495 millones de parámetros, resuelve el problema de la síntesis de voz japonesa de alta calidad con capacidades de clonación de voz zero-shot y control de estilo mediante emojis.
+Irodori-TTS-500M-v2 es un modelo de síntesis de voz (text-to-speech) en japonés desarrollado por el usuario kuronomagi (publicado bajo la organización Aratako en Hugging Face). Se trata de un sistema de generación de audio basado en una arquitectura Rectified Flow Diffusion Transformer (RF-DiT) que opera sobre latentes continuos del códec DACVAE. Con aproximadamente 495 millones de parámetros, resuelve el problema de la síntesis de voz japonesa de alta calidad con capacidades de clonación de voz zero-shot y control de estilo mediante emojis.
 
 La relevancia del modelo radica en dos innovaciones concretas: por un lado, el uso de flow matching sobre latentes continuos de un VAE específicamente entrenado para japonés (Semantic-DACVAE-Japanese-32dim), que permite reconstrucción de waveform a 48 kHz; por otro, el control de estilo, emoción y efectos sonoros insertando emojis directamente en el texto de entrada, una interfaz poco habitual en modelos TTS. La versión v2 mejora sobre la original con un VAE actualizado, 2,5 veces más pasos de entrenamiento y un pipeline de preprocesado de datos refinado.
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: los pesos en safetensors ocupan aproximadamente 2 GB (495M de parámetros en FP32/BF16 según el checkpoint), por lo que la inferencia cabe holgadamente en GPUs con 6-8 GB de VRAM; el códec DACVAE y el text encoder añaden una sobrecarga modesta.
 - GPU recomendadas: cualquier GPU consumer moderna (RTX 3060 12 GB, RTX 4060 Ti, RTX 4070, RTX 4090) es suficiente; para despliegue en servidor, A100 o H100 no son necesarias pero ofrecen mayor throughput en batch.
 - Cabe en GPU consumer: sí, en prácticamente todas las GPU dedicadas con 6 GB o más; también es viable en Apple Silicon vía MPS si el repositorio de código lo soporta.
-- Opciones de despliegue: el autor remite al repositorio GitHub Aratako/Irodori-TTS para el código de inferencia; no se documentan integraciones con vLLM, llama.cpp, Ollama o TGI (herramientas orientadas a LLMs, no a modelos de difusión TTS). Existe una demo en HuggingFace Spaces.
+- Opciones de despliegue: el autor remite al repositorio GitHub Aratako/Irodori-TTS para el código de inferencia; no se documentan integraciones con vLLM, llama.cpp, Ollama o TGI (herramientas orientadas a LLMs, no a modelos de difusión TTS). Existe una demo en Hugging Face Spaces.
 - Latencia y throughput: no disponibles en la información proporcionada; al ser un modelo de difusión, la latencia dependerá del número de pasos de muestreo configurados.
 
 ## Comparativa con modelos similares
@@ -82,7 +82,7 @@ No se dispone de datos de benchmarks ni de comparativas cuantitativas publicadas
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kuronomagi/Irodori-TTS-500M-v2
+- Hugging Face: https://huggingface.co/kuronomagi/Irodori-TTS-500M-v2
 - Repositorio de código: https://github.com/Aratako/Irodori-TTS
 - Demo Space: https://huggingface.co/spaces/Aratako/Irodori-TTS-500M-v2-Demo
 - Registro de entrenamiento (WandB): https://api.wandb.ai/links/aratako-lm/2ctrvcim

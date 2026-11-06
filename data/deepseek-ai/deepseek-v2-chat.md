@@ -6,7 +6,7 @@ DeepSeek-V2-Chat es la version afinada para conversacion del modelo DeepSeek-V2,
 
 El modelo fue preentrenado sobre un corpus de 8,1 billones de tokens y posteriormente sometido a un proceso de ajuste supervisado (SFT) y aprendizaje por refuerzo (RL) para convertirlo en la variante Chat. Frente a DeepSeek 67B, la version V2 reduce el cache KV un 93,3%, recorta los costes de entrenamiento un 42,5% y multiplica por 5,76 el throughput maximo de generacion, segun los datos publicados por el autor.
 
-Su relevancia radica en que combina un rendimiento competitivo con modelos densos mucho mayores (como LLaMA3 70B) con una eficiencia de inferencia sustancialmente mejor gracias al enrutado disperso de expertos y a una atencion optimizada para cache KV reducida. En benchmarks estandar en ingles y chino alcanza resultados de referencia, con especial ventaja en tareas en chino (C-Eval 81,7 y CMMLU 84,0 en el modelo base). El repositorio acumula mas de 22.800 descargas y 482 likes en HuggingFace.
+Su relevancia radica en que combina un rendimiento competitivo con modelos densos mucho mayores (como LLaMA3 70B) con una eficiencia de inferencia sustancialmente mejor gracias al enrutado disperso de expertos y a una atencion optimizada para cache KV reducida. En benchmarks estandar en ingles y chino alcanza resultados de referencia, con especial ventaja en tareas en chino (C-Eval 81,7 y CMMLU 84,0 en el modelo base). El repositorio acumula mas de 22.800 descargas y 482 likes en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ Su relevancia radica en que combina un rendimiento competitivo con modelos denso
 
 DeepSeek-V2 es un modelo de lenguaje de tipo Mixture-of-Experts con 236.000 millones de parametros totales y 21.000 millones activados en cada token, lo que reduce drasticamente el coste computacional por token frente a un modelo denso del mismo tamano. La arquitectura incorpora innovaciones orientadas a la eficiencia de inferencia: el autor reporta una reduccion del 93,3% en el cache KV y un incremento de hasta 5,76 veces en el throughput maximo de generacion en comparacion con DeepSeek 67B. No se detalla en la informacion proporcionada la composicion exacta del mecanismo de atencion ni el numero de expertos por capa.
 
-El preentrenamiento se realizo sobre un corpus diverso y de alta calidad de 8,1 billones de tokens. Posteriormente se aplico un proceso de ajuste supervisado (Supervised Fine-Tuning, SFT) seguido de aprendizaje por refuerzo (RL) para dar lugar a la variante DeepSeek-V2-Chat. El modelo card indica que el rendimiento del codigo abierto en GPUs con HuggingFace es actualmente mas lento que su base de codigo interna, y recomienda una solucion especifica basada en vLLM para una ejecucion eficiente.
+El preentrenamiento se realizo sobre un corpus diverso y de alta calidad de 8,1 billones de tokens. Posteriormente se aplico un proceso de ajuste supervisado (Supervised Fine-Tuning, SFT) seguido de aprendizaje por refuerzo (RL) para dar lugar a la variante DeepSeek-V2-Chat. El modelo card indica que el rendimiento del codigo abierto en GPUs con Hugging Face es actualmente mas lento que su base de codigo interna, y recomienda una solucion especifica basada en vLLM para una ejecucion eficiente.
 
 ## Capacidades
 
@@ -73,7 +73,7 @@ Los siguientes resultados corresponden al modelo base DeepSeek-V2 (no a la varia
 - GPU recomendadas: por el volumen de parametros, se requiere inferencia multi-GPU; configuraciones tipo A100 80GB (varias unidades) o H100 80GB. No cabe en una unica GPU consumer en bf16.
 - Cabe en consumer GPU: no en precision completa ni en 8 bits. En cuantizacion de 4 bits aun requiere agregar memoria de multiples GPUs de gama alta; no es viable en una unica RTX 4090 (24 GB).
 - Opciones de despliegue: transformers (con custom_code) y vLLM (recomendado explicitamente por el autor para un rendimiento optimizado). Compatible con text-generation-inference y endpoints_compatible segun las etiquetas del repositorio. Soporte de llama.cpp / GGUF / Ollama: no disponible en la informacion proporcionada (el campo de cuantizaciones figura como no disponible).
-- Latencia y throughput: no se proporcionan cifras absolutas. El autor indica que DeepSeek-V2 multiplica por 5,76 el throughput maximo de generacion frente a DeepSeek 67B y reduce el cache KV un 93,3%. Ademas advierte de que el codigo de HuggingFace es mas lento que su base de codigo interna, por lo que recomienda vLLM.
+- Latencia y throughput: no se proporcionan cifras absolutas. El autor indica que DeepSeek-V2 multiplica por 5,76 el throughput maximo de generacion frente a DeepSeek 67B y reduce el cache KV un 93,3%. Ademas advierte de que el codigo de Hugging Face es mas lento que su base de codigo interna, por lo que recomienda vLLM.
 
 ## Comparativa con modelos similares
 
@@ -92,14 +92,14 @@ Nota: los datos de rendimiento corresponden al modelo base DeepSeek-V2. La licen
 - Riesgo de alucinacion: no documentado explicitamente en la informacion disponible, pero es una limitacion inherente a los modelos de lenguaje generativos.
 - Limitaciones de idioma: el soporte documentado se centra en ingles y chino segun los benchmarks; no hay datos que confirmen un rendimiento solido en castellano u otros idiomas.
 - Licencia: se distribuye bajo la DeepSeek Model Agreement (license: other, license_name: deepseek), no bajo una licencia de codigo abierto permisiva. El uso comercial esta sujeto a las condiciones de dicho acuerdo y debe revisarse antes de un despliegue en produccion.
-- Rendimiento en HuggingFace: el propio autor advierte de que el codigo de HuggingFace es mas lento que su base de codigo interna, por lo que el rendimiento en produccion puede verse afectado si no se utiliza vLLM.
+- Rendimiento en Hugging Face: el propio autor advierte de que el codigo de Hugging Face es mas lento que su base de codigo interna, por lo que el rendimiento en produccion puede verse afectado si no se utiliza vLLM.
 - Tamano de despliegue: con 236B parametros totales y un repositorio de 471,5 GB, el modelo exige infraestructura multi-GPU, lo que limita su uso a entornos con hardware dedicado.
 - Los benchmarks publicados corresponden al modelo base y no a la variante Chat, por lo que las cifras pueden no reflejar el comportamiento conversacional de este checkpoint.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/deepseek-ai/DeepSeek-V2-Chat
-- Modelo base en HuggingFace: https://huggingface.co/deepseek-ai/DeepSeek-V2
+- Hugging Face: https://huggingface.co/deepseek-ai/DeepSeek-V2-Chat
+- Modelo base en Hugging Face: https://huggingface.co/deepseek-ai/DeepSeek-V2
 - Paper (arXiv:2405.04434): https://arxiv.org/abs/2405.04434
 - Referencia arXiv secundaria (arXiv:2311.18743): https://arxiv.org/abs/2311.18743
 - Repositorio GitHub: https://github.com/deepseek-ai

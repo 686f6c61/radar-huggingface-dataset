@@ -81,6 +81,6 @@ La unica comparacion documentada es con el modelo base del que deriva. No se dis
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AutomatosX/AX-Unlimited-OCR-2-AXQ-MXFP4
+- Repositorio Hugging Face: https://huggingface.co/AutomatosX/AX-Unlimited-OCR-2-AXQ-MXFP4
 - Modelo base: https://huggingface.co/baidu/Unlimited-OCR-2
 - Revision fijada del modelo base: https://huggingface.co/baidu/Unlimited-OCR-2/tree/9cf077c4b206e0e2a31879df937b0b0bcba3661c

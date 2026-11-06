@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un modelo de generación de texto de arquitectura GPT-NeoX con 6.856.253.440 parámetros (aproximadamente 6,86 mil millones), publicado por el usuario `yuhengtu-bytedance` en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una fusión de pesos (*weight merge*) generada automáticamente con la herramienta mergekit a partir de cinco checkpoints intermedios de un mismo entrenamiento denominado `filtered_insert_xxf_character`.
+Este repositorio contiene un modelo de generación de texto de arquitectura GPT-NeoX con 6.856.253.440 parámetros (aproximadamente 6,86 mil millones), publicado por el usuario `yuhengtu-bytedance` en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una fusión de pesos (*weight merge*) generada automáticamente con la herramienta mergekit a partir de cinco checkpoints intermedios de un mismo entrenamiento denominado `filtered_insert_xxf_character`.
 
 La fusión se realizó con el método Linear, tomando `global_step5000` como checkpoint base y combinando los pasos 1000, 2000, 3000 y 4000 con pesos crecientes de 1, 2, 3, 4 y 5 respectivamente, con normalización activada. El cálculo se efectuó en `float32` y el resultado se serializó en `bfloat16` en formato safetensors, con un tamaño de repositorio de 13,7 GB.
 
@@ -36,7 +36,7 @@ El proceso de creación no es un entrenamiento nuevo, sino una fusión lineal de
 
 - Generacion de texto causal: es la tarea declarada en el pipeline (`text-generation`).
 - Uso conversacional: la etiqueta `conversational` sugiere que los checkpoints de origen fueron entrenados o ajustados para diálogo, aunque no se especifica el formato de plantilla ni los tokens especiales.
-- Compatibilidad con Transformers: cargable mediante la librería `transformers` de HuggingFace.
+- Compatibilidad con Transformers: cargable mediante la librería `transformers` de Hugging Face.
 - Compatibilidad con Text Generation Inference: la etiqueta `text-generation-inference` y `endpoints_compatible` indican despliegue previsto en TGI e Inference Endpoints.
 - Razonamiento, código y matemáticas: no documentado; no hay evidencia en la model card.
 - Tool calling / function calling: no documentado.
@@ -67,7 +67,7 @@ La model card no incluye MMLU, HumanEval, GSM8K, ARC, HellaSwag ni ninguna otra 
 - VRAM estimada en int4 (GGUF Q4_K_M): alrededor de 4-5 GB de pesos.
 - GPU recomendadas para precisión completa: A100 40/80 GB, H100, L40S, RTX 4090 24 GB (ajustada, con lotes pequeños).
 - GPU de consumo compatibles: RTX 4090/3090/4080 (16-24 GB) en bf16 o int8; RTX 3060 12 GB, RTX 4060 Ti 16 GB o portátiles de 8 GB en cuantización de 4 bits.
-- Opciones de despliegue: `transformers` (soporte nativo declarado), Text Generation Inference (etiqueta `text-generation-inference`), vLLM, HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`). Para llama.cpp u Ollama sería necesario convertir previamente los pesos a GGUF, ya que el repositorio solo distribuye safetensors.
+- Opciones de despliegue: `transformers` (soporte nativo declarado), Text Generation Inference (etiqueta `text-generation-inference`), vLLM, Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`). Para llama.cpp u Ollama sería necesario convertir previamente los pesos a GGUF, ya que el repositorio solo distribuye safetensors.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -98,7 +98,7 @@ La diferencia principal no es de rendimiento, sino de trazabilidad: los comparad
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-1k_2k_3k_4k_5k_weightedavg_merge
+- Repositorio en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-1k_2k_3k_4k_5k_weightedavg_merge
 - Repositorio de mergekit: https://github.com/cg123/mergekit
 - Articulo de referencia del metodo Linear (model soups): https://arxiv.org/abs/2203.05482
 - Busqueda web: no se han encontrado enlaces relevantes al modelo; los resultados devueltos por el buscador corresponden a canales de peliculas y television de YouTube y no guardan relacion con este repositorio.

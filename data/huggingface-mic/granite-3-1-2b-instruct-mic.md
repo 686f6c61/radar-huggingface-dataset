@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `huggingface-mic/granite-3.1-2b-instruct-mic` | 3,2 M | no disponible | Fixture de pruebas | no disponible | HuggingFace |
-| `ibm-granite/granite-3.1-2b-instruct` | 2 B (aproximado, segun nombre) | no disponible en esta ficha | Modelo instructivo real | no disponible en esta ficha | HuggingFace |
-| Fixtures equivalentes de otras familias en `transformers-mic` | variable | no disponible | Fixture de pruebas | no disponible | HuggingFace |
+| `huggingface-mic/granite-3.1-2b-instruct-mic` | 3,2 M | no disponible | Fixture de pruebas | no disponible | Hugging Face |
+| `ibm-granite/granite-3.1-2b-instruct` | 2 B (aproximado, segun nombre) | no disponible en esta ficha | Modelo instructivo real | no disponible en esta ficha | Hugging Face |
+| Fixtures equivalentes de otras familias en `transformers-mic` | variable | no disponible | Fixture de pruebas | no disponible | Hugging Face |
 
 La comparativa relevante es contra el modelo base: misma arquitectura y tokenizador, pero 625 veces menos parametros (3,2 M frente a 2 B aproximados) y sin entrenamiento. Frente a otros fixtures del mismo proyecto, la diferencia esta en la familia de modelo cubierta (Granite) y en la clave de fixture `2731c71ceeb8`, que agrupa checkpoints con procesador identico y config coincidente tras la reduccion.
 
@@ -82,7 +82,7 @@ La comparativa relevante es contra el modelo base: misma arquitectura y tokeniza
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/huggingface-mic/granite-3.1-2b-instruct-mic
+- Modelo en Hugging Face: https://huggingface.co/huggingface-mic/granite-3.1-2b-instruct-mic
 - Modelo base: https://huggingface.co/ibm-granite/granite-3.1-2b-instruct
 - Como se redujo el fixture: https://huggingface-mic-mic-coverage.static.hf.space/shrink/granite-3.1-2b-instruct-mic.html
 - Repositorio `transformers-mic`: https://github.com/huggingface/transformers-mic

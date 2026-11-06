@@ -78,7 +78,7 @@ No se dispone de comparativas publicadas con otros modelos de la misma categoria
 
 ## Enlaces
 
-- [Adaptador en HuggingFace](https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-sft-l4)
+- [Adaptador en Hugging Face](https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-sft-l4)
 - [Modelo base: allenai/Olmo-3-7B-Think](https://huggingface.co/allenai/Olmo-3-7B-Think)
 - [Modelo base SFT: allenai/Olmo-3-7B-Think-SFT](https://huggingface.co/allenai/Olmo-3-7B-Think-SFT)
 - [Paper de Olmo 3 (arXiv)](https://arxiv.org/abs/2512.13961)

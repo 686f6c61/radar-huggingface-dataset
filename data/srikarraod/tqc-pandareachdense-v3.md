@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Srikarraod/tqc-PandaReachDense-v3` es un agente de aprendizaje por refuerzo entrenado con el algoritmo TQC (Truncated Quantile Critics, etiquetado tambien como SAC) sobre el entorno `PandaReachDense-v3`, utilizando la libreria `stable-baselines3`. No es un modelo de lenguaje ni un modelo de vision: es una politica de control continuo que mapea observaciones del entorno a acciones del brazo robotico simulado. Su autor es el usuario de HuggingFace Srikarraod y fue entrenado como parte de la Unidad 6 del curso Deep Reinforcement Learning de Hugging Face.
+El modelo `Srikarraod/tqc-PandaReachDense-v3` es un agente de aprendizaje por refuerzo entrenado con el algoritmo TQC (Truncated Quantile Critics, etiquetado tambien como SAC) sobre el entorno `PandaReachDense-v3`, utilizando la libreria `stable-baselines3`. No es un modelo de lenguaje ni un modelo de vision: es una politica de control continuo que mapea observaciones del entorno a acciones del brazo robotico simulado. Su autor es el usuario de Hugging Face Srikarraod y fue entrenado como parte de la Unidad 6 del curso Deep Reinforcement Learning de Hugging Face.
 
 El entorno `PandaReachDense-v3` pertenece a la familia panda-gym y simula un brazo robotico Franka Emika Panda con actuacion continua en un simulador de fisica. La tarea consiste en llevar el efector final a una posicion objetivo, con una funcion de recompensa densa basada en la distancia al objetivo, lo que ofrece senal de aprendizaje en cada paso en lugar de solo al final del episodio.
 
@@ -47,7 +47,7 @@ No se dispone de informacion sobre el numero de pasos de entrenamiento, el taman
 - Comparacion de algoritmos en manipulacion robotica simulada: enfrentar este TQC contra los agentes A2C publicados en el mismo entorno para estudiar la diferencia entre metodos on-policy y off-policy con recompensa densa.
 - Prototipado de control de bajo nivel en simulacion: integrar la politica en un bucle de simulacion PyBullet para experimentar con generacion de trayectorias del efector final antes de portar nada a hardware real.
 - Docencia y material educativo: ilustrar como se guarda, se publica y se evalua un agente de RL en el Hub, incluyendo el formato `model-index` y las limitaciones de reportar un unico resultado no verificado.
-- Pruebas de infraestructura de evaluacion: validar pipelines internos que cargan politicas desde HuggingFace Hub, ejecutan rollout en entorno vectorizado y registran recompensa media y desviacion tipica.
+- Pruebas de infraestructura de evaluacion: validar pipelines internos que cargan politicas desde Hugging Face Hub, ejecutan rollout en entorno vectorizado y registran recompensa media y desviacion tipica.
 - Punto de partida para inicializacion o fine-tuning: reutilizar los pesos como inicializacion para variantes mas dificiles del mismo entorno (por ejemplo, alcance con obstaculos) y medir la transferencia.
 - Analisis de robustez ante aleatorizacion de dominio: evaluar como se degrada la politica al modificar masas, fricciones o posiciones iniciales del entorno simulado.
 
@@ -73,9 +73,9 @@ No se han publicado otros resultados de benchmarks en la informacion disponible.
 
 | Modelo | Entorno | Algoritmo | Recompensa declarada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Srikarraod/tqc-PandaReachDense-v3 | PandaReachDense-v3 | TQC / SAC | -1.50 +/- 0.50 | no disponible | HuggingFace Hub (0 descargas) |
-| gadigesaisree/tqc-PandaReachDense-v3 | PandaReachDense-v3 | TQC | no disponible | no disponible | HuggingFace Hub |
-| gracetxgao/tqc-PandaReachDense-v3 | PandaReachDense-v3 | TQC | no disponible | no disponible | HuggingFace Hub |
+| Srikarraod/tqc-PandaReachDense-v3 | PandaReachDense-v3 | TQC / SAC | -1.50 +/- 0.50 | no disponible | Hugging Face Hub (0 descargas) |
+| gadigesaisree/tqc-PandaReachDense-v3 | PandaReachDense-v3 | TQC | no disponible | no disponible | Hugging Face Hub |
+| gracetxgao/tqc-PandaReachDense-v3 | PandaReachDense-v3 | TQC | no disponible | no disponible | Hugging Face Hub |
 | xenjin450/A2C-PandaReachDense-v3 | PandaReachDense-v3 | A2C | no disponible | no disponible | GitHub |
 | HusseinEid101/a2c-PandaReachDense-v3 | PandaReachDense-v3 | A2C | no disponible | no disponible | GitHub |
 
@@ -95,7 +95,7 @@ No se dispone de recompensas publicadas para los modelos comparables, por lo que
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Srikarraod/tqc-PandaReachDense-v3
+- Modelo en Hugging Face: https://huggingface.co/Srikarraod/tqc-PandaReachDense-v3
 - Curso Deep Reinforcement Learning de Hugging Face: https://huggingface.co/learn/deep-rl-course/en/unit0/introduction
 - Notebook de la Unidad 6: https://colab.research.google.com/github/huggingface/deep-rl-class/blob/main/notebooks/unit6/unit6.ipynb
 - Modelo equivalente de gadigesaisree: https://huggingface.co/gadigesaisree/tqc-PandaReachDense-v3

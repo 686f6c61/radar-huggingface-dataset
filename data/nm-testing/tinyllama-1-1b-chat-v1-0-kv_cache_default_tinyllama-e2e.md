@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este artefacto (nm-testing) | 1,1B | no disponible | no disponible | HuggingFace, 62 descargas |
+| Este artefacto (nm-testing) | 1,1B | no disponible | no disponible | Hugging Face, 62 descargas |
 | TinyLlama-1.1B-Chat-v1.0 (original) | 1,1B | 2.048 tokens (referencia del modelo base) | Apache 2.0 (modelo base) | Ampliamente disponible |
 | Qwen2.5-1.5B-Instruct | 1,5B | 32.768 tokens (referencia) | Apache 2.0 (referencia) | Ampliamente disponible |
 | SmolLM2-1.7B-Instruct | 1,7B | 8.192 tokens (referencia) | Apache 2.0 (referencia) | Ampliamente disponible |
@@ -84,7 +84,7 @@ Los datos de los modelos comparativos corresponden a sus fichas oficiales y se i
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nm-testing/TinyLlama-1.1B-Chat-v1.0-kv_cache_default_tinyllama-e2e
+- Hugging Face: https://huggingface.co/nm-testing/TinyLlama-1.1B-Chat-v1.0-kv_cache_default_tinyllama-e2e
 - Modelo base de referencia: https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0
 - Repositorio compressed-tensors: https://github.com/neuralmagic/compressed-tensors
 - No se han encontrado otros enlaces (papers, blogs, demos) en la informacion disponible.

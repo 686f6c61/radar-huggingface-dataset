@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `nernstpolga/new_150_5fbwqj69aa` es un modelo de lenguaje multimodal de tipo *mixture-of-experts* (MoE) con 35.107 millones de parámetros, publicado en agosto de 2026 por el usuario de HuggingFace `nernstpolga`. Está etiquetado como `qwen3_5_moe` e `image-text-to-text`, lo que indica que sigue la arquitectura de la familia Qwen3.5 y que acepta tanto texto como imágenes como entrada. Se trata de un modelo derivado de un fine-tuning del modelo base `vera6/affine-5g4yy75zuz-t6`, con un proceso de entrenamiento que incluye optimización offline con DPO (Direct Preference Optimization).
+El modelo `nernstpolga/new_150_5fbwqj69aa` es un modelo de lenguaje multimodal de tipo *mixture-of-experts* (MoE) con 35.107 millones de parámetros, publicado en agosto de 2026 por el usuario de Hugging Face `nernstpolga`. Está etiquetado como `qwen3_5_moe` e `image-text-to-text`, lo que indica que sigue la arquitectura de la familia Qwen3.5 y que acepta tanto texto como imágenes como entrada. Se trata de un modelo derivado de un fine-tuning del modelo base `vera6/affine-5g4yy75zuz-t6`, con un proceso de entrenamiento que incluye optimización offline con DPO (Direct Preference Optimization).
 
-El modelo está diseñado para generación de texto y razonamiento, con un pipeline de `text-generation` y está publicado bajo licencia Apache 2.0, lo que permite uso comercial y modificación. Su acceso es restringido (gated) en HuggingFace, por lo que es necesario solicitar permiso al autor para descargarlo. A pesar de su tamaño y de las etiquetas que indican capacidades multimodales, no se dispone de documentación oficial, benchmarks ni datos de entrenamiento publicados, lo que limita la evaluación independiente de su rendimiento real.
+El modelo está diseñado para generación de texto y razonamiento, con un pipeline de `text-generation` y está publicado bajo licencia Apache 2.0, lo que permite uso comercial y modificación. Su acceso es restringido (gated) en Hugging Face, por lo que es necesario solicitar permiso al autor para descargarlo. A pesar de su tamaño y de las etiquetas que indican capacidades multimodales, no se dispone de documentación oficial, benchmarks ni datos de entrenamiento publicados, lo que limita la evaluación independiente de su rendimiento real.
 
 ## Especificaciones tecnicas
 
@@ -30,7 +30,7 @@ El entrenamiento se realizó como un fine-tuning del modelo base `vera6/affine-5
 - Generación de texto y razonamiento: el modelo está orientado a tareas de `text-generation` con soporte de razonamiento, según los tags `reason-v4`.
 - Procesamiento multimodal: acepta entradas de texto e imágenes (`image-text-to-text`), lo que permite responder a prompts visuales.
 - Fine-tuning con DPO: el entrenamiento con `offline-dpo` sugiere que el modelo ha sido alineado para preferir respuestas más útiles y seguras.
-- Compatibilidad con el ecosistema de Transformers: se puede cargar con la librería `transformers` de HuggingFace.
+- Compatibilidad con el ecosistema de Transformers: se puede cargar con la librería `transformers` de Hugging Face.
 - No se dispone de información sobre soporte de tool calling, agentes, ni capacidades multilingües concretas.
 
 ## Casos de uso
@@ -59,7 +59,7 @@ No se dispone de información suficiente para realizar una comparativa fiable co
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo es gated, por lo que requiere aceptar condiciones de uso en HuggingFace antes de descargarlo.
+- Acceso restringido: el modelo es gated, por lo que requiere aceptar condiciones de uso en Hugging Face antes de descargarlo.
 - Sin documentación oficial: no hay modelo card ni papers que describan la arquitectura, el entrenamiento o los datos utilizados.
 - Riesgo de alucinación: como cualquier modelo generativo, puede producir contenido falso o inventado, especialmente en tareas de razonamiento complejo.
 - Sesgos desconocidos: no se han publicado evaluaciones de sesgos ni de robustez.
@@ -68,7 +68,7 @@ No se dispone de información suficiente para realizar una comparativa fiable co
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/nernstpolga/new_150_5fwbwj69aa
+- Página del modelo en Hugging Face: https://huggingface.co/nernstpolga/new_150_5fwbwj69aa
 - Perfil del autor: https://huggingface.co/nernstpolga
 - Modelo base (referencia): https://huggingface.co/vera6/affine-5g4yyguh-z-tgz (enlace no verificado, se infiere del campo `base_model`)
 - Modelo similar del mismo autor: https://huggingface.co/nernstpolga/new-sf-0 (sin modelo de tarjeta)

@@ -6,7 +6,7 @@ laya-news-decisions es un modelo de clasificación de texto desarrollado por Inf
 
 Su relevancia práctica está en la relación coste/prestación: con 322 millones de parámetros y un coste de entrenamiento declarado de unos 11 dólares en una sola A100, el modelo se sitúa en el rango de anotadores LLM mucho mayores en la pregunta de temática (0,784 frente a 0,835 de DeepSeek v4.1 Flash, 0,812 de Gemini 3 Flash y 0,778 de Claude Haiku 4.5, sobre el mismo conjunto de 176 artículos). Al ser un encoder pequeño, puede ejecutarse en local, incluso en CPU, lo que lo hace adecuado para pipelines de anotación de alto volumen donde el coste por inferencia de un LLM es prohibitivo.
 
-Los metadatos de HuggingFace indican que el repositorio se publicó el 22 de septiembre de 2026 y que, en el momento de redactar esta ficha, no acumula descargas ni valoraciones. El modelo se distribuye bajo licencia Apache 2.0, heredada de Laya, y solo incluye pesos en safetensors acompañados de un fichero `questions.json` que debe usarse sin modificaciones.
+Los metadatos de Hugging Face indican que el repositorio se publicó el 22 de septiembre de 2026 y que, en el momento de redactar esta ficha, no acumula descargas ni valoraciones. El modelo se distribuye bajo licencia Apache 2.0, heredada de Laya, y solo incluye pesos en safetensors acompañados de un fichero `questions.json` que debe usarse sin modificaciones.
 
 ## Especificaciones técnicas
 
@@ -89,7 +89,7 @@ Punto débil declarado: la categoría `politics`. El modelo acierta aproximadame
 
 | Modelo | Tipo | Parámetros | Precisión en topic | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| laya-news-decisions | Encoder ajustado, clasificación de 4 tareas | 322M | 0,784 (checkpoint publicado) / 0,756 (final) | Apache 2.0 | Pesos abiertos en HuggingFace; ejecutable en local |
+| laya-news-decisions | Encoder ajustado, clasificación de 4 tareas | 322M | 0,784 (checkpoint publicado) / 0,756 (final) | Apache 2.0 | Pesos abiertos en Hugging Face; ejecutable en local |
 | convaiinnovations/laya (multilingüe) | Base preentrenada | 322M | No disponible | Apache 2.0 (según la model card) | Pesos abiertos |
 | DeepSeek v4.1 Flash | LLM generativo usado como anotador | No disponible | 0,835 | No disponible | Servicio |
 | Gemini 3 Flash | LLM generativo | No disponible | 0,812 | No disponible | Servicio |
@@ -114,7 +114,7 @@ La comparación con los modelos maestros debe leerse con cautela: se evalúan so
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/InfinimindCreations/laya-news-decisions
+- Modelo en Hugging Face: https://huggingface.co/InfinimindCreations/laya-news-decisions
 - Fichero de preguntas: https://huggingface.co/InfinimindCreations/laya-news-decisions/blob/main/questions.json
 - Pesos: https://huggingface.co/InfinimindCreations/laya-news-decisions/blob/main/model.safetensors
 - Modelo base: https://huggingface.co/convaiinnovations/laya

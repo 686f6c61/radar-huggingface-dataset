@@ -2,7 +2,7 @@
 
 ## Resumen
 
-E2K-cd82-Qwen3.8-27B-baseline-cc-iter11 es un checkpoint de investigación publicado por el usuario ziyan98 en HuggingFace. No es un modelo nuevo desde cero: es un ajuste por aprendizaje por refuerzo de Qwen/Qwen3.8-27B (27.781.427.952 parámetros, pesos bf16, licencia Apache 2.0) sobre un único entorno, el juego `cd82-fb555c5d` de ARC-AGI-3. Forma parte del experimento E2K (experience-to-knowledge), cuyo objetivo es estudiar si el conocimiento verificado extraído de la propia partida de un modelo puede escribirse en sus pesos mediante filas supervisadas y mejorarse después con RL sobre episodios reales de varios pasos.
+E2K-cd82-Qwen3.8-27B-baseline-cc-iter11 es un checkpoint de investigación publicado por el usuario ziyan98 en Hugging Face. No es un modelo nuevo desde cero: es un ajuste por aprendizaje por refuerzo de Qwen/Qwen3.8-27B (27.781.427.952 parámetros, pesos bf16, licencia Apache 2.0) sobre un único entorno, el juego `cd82-fb555c5d` de ARC-AGI-3. Forma parte del experimento E2K (experience-to-knowledge), cuyo objetivo es estudiar si el conocimiento verificado extraído de la propia partida de un modelo puede escribirse en sus pesos mediante filas supervisadas y mejorarse después con RL sobre episodios reales de varios pasos.
 
 La rama concreta es `baseline-cc` (línea base válida, RL puro, sin filas de SFT), iteración 11 de Megatron, tras 12 rollouts de RL con Dr.GRPO. El modelo parte del checkpoint base Qwen3.8-27B y conserva su torre de visión y su cabeza de predicción multi-token sin entrenar, copiadas tal cual; el entrenamiento fue exclusivamente de texto. Según el autor, no es una mejora de propósito general del modelo base: se entrenó en un solo juego, se evaluó con rollouts de 32 episodios de ese mismo juego y las diferencias entre ramas del experimento son de unas pocas centésimas de retorno modelado, dentro del ruido entre rollouts.
 
@@ -107,7 +107,7 @@ No se dispone en la información proporcionada de comparaciones con modelos de o
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ziyan98/E2K-cd82-Qwen3.8-27B-baseline-cc-iter11
+- Modelo en Hugging Face: https://huggingface.co/ziyan98/E2K-cd82-Qwen3.8-27B-baseline-cc-iter11
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Dataset de RL relacionado: repo `ziyan98/E2K-cd82-rl-internalization` (la URL aparece truncada en la model card como `https://hu…`; incluye `knowledge-set/` con los `rl_config_*.json` y `checkpoints/checkpoints.md`)
 - Búsqueda web: no se han encontrado enlaces relevantes al modelo ni al experimento E2K. Los resultados devueltos por el buscador no guardan relación con el modelo, el paper ni el repositorio, y se descartan por no ser fuentes utilizables.

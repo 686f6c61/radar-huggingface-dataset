@@ -86,7 +86,7 @@ Según el autor, AesCode-8B mejora Visual en 31,1 puntos y Overall en 31,0 punto
 
 | Modelo | Parámetros | Entorno | Overall (con ref.) | Licencia | Disponibilidad |
 |---|---|---:|---:|---|---|
-| AesCode-8B | 8,77B | 24.576 tokens (config. de evaluación) | 82,94 | Apache 2.0 | Pesos abiertos en HuggingFace (`aeon37/AesCode-8B`) |
+| AesCode-8B | 8,77B | 24.576 tokens (config. de evaluación) | 82,94 | Apache 2.0 | Pesos abiertos en Hugging Face (`aeon37/AesCode-8B`) |
 | AesCode-32B | 32B | No disponible | 85,89 | No disponible | Pesos abiertos anunciados como `microsoft/AesCode-32B` |
 | Qwen3-VL-8B-Instruct | 8B | No disponible | 51,93 | No disponible | Pesos abiertos (backbone del modelo) |
 | Qwen3-VL-32B | 32B | No disponible | 61,10 | No disponible | Pesos abiertos |
@@ -103,14 +103,14 @@ La comparación directa más relevante es contra el backbone Qwen3-VL-8B-Instruc
 - Idioma: solo se declara inglés. No hay evidencia publicada de rendimiento en castellano ni en otros idiomas, ni sobre tipografías o convenciones de maquetación no anglosajonas.
 - Alucinación: el propio planteamiento del modelo reconoce que los modelos vision-language pueden copiar contenido alucinado de la referencia; el entrenamiento lo mitiga, pero no hay datos públicos de tasa de error en producción fuera del conjunto de evaluación de 300 muestras.
 - Riesgo de generalización: las métricas proceden exclusivamente del benchmark de infografías definido por los autores; no hay resultados en otros dominios de generación de código o de diseño.
-- Trazabilidad del repositorio: el ID de HuggingFace es `aeon37/AesCode-8B`, mientras que la model card y el código apuntan a `microsoft/AesCode-8B` y `microsoft/AesCode-32B`. Conviene verificar el origen y la integridad de los pesos antes de usarlos en producción; el repositorio figura con 0 descargas y 0 likes en el momento de la consulta.
+- Trazabilidad del repositorio: el ID de Hugging Face es `aeon37/AesCode-8B`, mientras que la model card y el código apuntan a `microsoft/AesCode-8B` y `microsoft/AesCode-32B`. Conviene verificar el origen y la integridad de los pesos antes de usarlos en producción; el repositorio figura con 0 descargas y 0 likes en el momento de la consulta.
 - Licencia: Apache 2.0 permite uso comercial, pero al ser un finetune de Qwen3-VL-8B-Instruct conviene revisar también las condiciones del modelo base y de los datos de entrenamiento, no detallados en la información disponible.
 - Coste de inferencia: la configuración reportada genera hasta 12.000 tokens por respuesta, lo que implica latencias y costes de cómputo elevados por petición.
 - Cobertura funcional no documentada: no hay información sobre tool calling, uso agéntico, audio, modo de pensamiento ni cuantizaciones oficiales, por lo que no deben asumirse.
 
 ## Enlaces
 
-- HuggingFace (repositorio consultado): https://huggingface.co/aeon37/AesCode-8B
+- Hugging Face (repositorio consultado): https://huggingface.co/aeon37/AesCode-8B
 - Modelo acompañante de 32B: https://huggingface.co/microsoft/AesCode-32B
 - Código: https://github.com/microsoft/AesCode
 - Artículo: *AesCode: Aesthetic Code Generation with Decoupled Cross-Modal Rewards* (referenciado en la model card; no se proporciona URL directa en la información disponible)

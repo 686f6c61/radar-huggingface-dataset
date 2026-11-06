@@ -63,4 +63,4 @@ No disponible. No existe una categoría de modelos comparable, ya que este repos
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jacobgonzalezie/paper_019786522_grounded_language
+- Repositorio en Hugging Face: https://huggingface.co/jacobgonzalezie/paper_019786522_grounded_language

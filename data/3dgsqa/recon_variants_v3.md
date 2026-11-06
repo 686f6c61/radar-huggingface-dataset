@@ -83,7 +83,7 @@ Existen otros conjuntos de datos para evaluación de calidad de contenido 3D gen
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/3DGSQA/recon_variants_v3
+- Repositorio Hugging Face: https://huggingface.co/3DGSQA/recon_variants_v3
 - Proyecto 3DGSQA (GitHub): https://github.com/diaoyn/3DGSQA
 - Paper de referencia sobre calidad perceptual de 3DGS (del proyecto 3DGSQA): no se ha localizado un enlace directo en la información disponible.
 - Conjunto de datos relacionado 3DGCQA: https://arxiv.org/pdf/2409.07236

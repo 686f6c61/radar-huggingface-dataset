@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ShadeNet-5-15M es un modelo publicado en HuggingFace por el usuario singam96 bajo licencia Apache 2.0. En el momento de redactar esta ficha, la model card asociada no contiene mas que el campo de licencia en su encabezado YAML: no incluye descripcion, arquitectura, datos de entrenamiento, idiomas ni instrucciones de uso. La ficha de HuggingFace tampoco declara pipeline de inferencia ni idiomas soportados.
+ShadeNet-5-15M es un modelo publicado en Hugging Face por el usuario singam96 bajo licencia Apache 2.0. En el momento de redactar esta ficha, la model card asociada no contiene mas que el campo de licencia en su encabezado YAML: no incluye descripcion, arquitectura, datos de entrenamiento, idiomas ni instrucciones de uso. La ficha de Hugging Face tampoco declara pipeline de inferencia ni idiomas soportados.
 
 El repositorio registra cero descargas y cero likes, y fue creado y actualizado en la misma marca temporal, lo que apunta a una publicacion reciente y sin adopcion conocida por parte de la comunidad. Esto implica que no existe validacion independiente de su comportamiento, calidad o seguridad.
 
@@ -22,7 +22,7 @@ La unica pista sobre el proposito del modelo esta en su nombre: el sufijo "15M" 
 | Formato de pesos | no disponible |
 | Autor | singam96 |
 | Pipeline declarado | no disponible |
-| Fecha de creacion en HuggingFace | 2026-10-06 |
+| Fecha de creacion en Hugging Face | 2026-10-06 |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -83,7 +83,7 @@ No disponible. La ausencia de especificaciones confirmadas (arquitectura, parame
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/singam96/ShadeNet-5-15M
+- Modelo en Hugging Face: https://huggingface.co/singam96/ShadeNet-5-15M
 - Repositorio de codigo: no disponible
 - Paper o informe tecnico: no disponible
 - Demo o espacio interactivo: no disponible

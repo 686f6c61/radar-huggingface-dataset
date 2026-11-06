@@ -70,9 +70,9 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks est
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| eshbar-lulilla | 31,27B | 32.768 | Fine-tune de decision sobre Gemma 4 | Apache 2.0 | HuggingFace |
-| google/gemma-4-31B-it | no disponible | no disponible | Modelo base multimodal instruct | no disponible | HuggingFace |
-| plantwaterer/liquamen | no disponible | no disponible | Fine-tune previo del mismo autor | no disponible | HuggingFace |
+| eshbar-lulilla | 31,27B | 32.768 | Fine-tune de decision sobre Gemma 4 | Apache 2.0 | Hugging Face |
+| google/gemma-4-31B-it | no disponible | no disponible | Modelo base multimodal instruct | no disponible | Hugging Face |
+| plantwaterer/liquamen | no disponible | no disponible | Fine-tune previo del mismo autor | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo con alternativas de la misma categoria en la informacion proporcionada.
 
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparativo con alternativas de la misma c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/plantwaterer/eshbar-lulilla
+- Hugging Face: https://huggingface.co/plantwaterer/eshbar-lulilla
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
 - Fine-tune previo: https://huggingface.co/plantwaterer/liquamen
 - Kit decision-index: https://github.com/apolinario/decision-index (referencia apolinario/decision-index @ 9eb2dbe2a358004c8782c66e40a83ac07b953fec)

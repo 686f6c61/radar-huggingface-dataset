@@ -92,9 +92,9 @@ Solo se dispone de datos comparativos concretos frente al modelo base y las vari
 
 | Modelo | Parametros | Contexto / entrada | WER (conjuntos de llamadas agrupados) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `ozonetg/parakeet-110m-caller-asr-adapter` | 116.9 M (114.6 M congelados + 2.2 M adaptador) | segmentos de 0.3-20 s, audio 8/16 kHz | 11.91 % (publicos) / 3.80 % (retenidos) | CC BY 4.0 | HuggingFace (formato `.nemo`) |
-| `nvidia/parakeet-tdt_ctc-110m` (base) | 114.6 M | audio 16 kHz | 14.58 % (publicos) / 9.19 % (retenidos) | ver model card de NVIDIA (no disponible en esta informacion) | HuggingFace / NGC |
-| `ozonetg/parakeet-110m-caller-asr-basic` (fine-tuning completo) | no disponible con detalle | mismo dominio | mas preciso que este adaptador (cifra concreta no disponible) | CC BY 4.0 | HuggingFace |
+| `ozonetg/parakeet-110m-caller-asr-adapter` | 116.9 M (114.6 M congelados + 2.2 M adaptador) | segmentos de 0.3-20 s, audio 8/16 kHz | 11.91 % (publicos) / 3.80 % (retenidos) | CC BY 4.0 | Hugging Face (formato `.nemo`) |
+| `nvidia/parakeet-tdt_ctc-110m` (base) | 114.6 M | audio 16 kHz | 14.58 % (publicos) / 9.19 % (retenidos) | ver model card de NVIDIA (no disponible en esta informacion) | Hugging Face / NGC |
+| `ozonetg/parakeet-110m-caller-asr-basic` (fine-tuning completo) | no disponible con detalle | mismo dominio | mas preciso que este adaptador (cifra concreta no disponible) | CC BY 4.0 | Hugging Face |
 | Otros modelos ASR de tamano comparable | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -113,7 +113,7 @@ Solo se dispone de datos comparativos concretos frente al modelo base y las vari
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ozonetg/parakeet-110m-caller-asr-adapter
+- Modelo en Hugging Face: https://huggingface.co/ozonetg/parakeet-110m-caller-asr-adapter
 - Modelo base: https://huggingface.co/nvidia/parakeet-tdt_ctc-110m
 - Variante con fine-tuning completo: https://huggingface.co/ozonetg/parakeet-110m-caller-asr-basic
 - Adaptador relacionado (recordings): https://huggingface.co/ozonetg/parakeet-tdt-ctc-110m-recordings-adapter

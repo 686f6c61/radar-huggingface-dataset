@@ -91,11 +91,11 @@ Los cuatro modelos comparten tarea, datos, contrato y prompt, diferenciándose e
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/manuelgscom/askmdb-4b-GGUF)
+- [Modelo en Hugging Face](https://huggingface.co/manuelgscom/askmdb-4b-GGUF)
 - [Modelo base Qwen/Qwen3.5-4B](https://huggingface.co/Qwen/Qwen3.5-4B)
 - [Dataset de test askmdb-test](https://huggingface.co/datasets/manuelgscom/askmdb-test)
 - [Repositorio de la CLI askmdb](https://github.com/manuelgscom/askmdb)
-- [Colección askmdb en HuggingFace](https://huggingface.co/collections/manuelgscom/askmdb-6ae398e10b4817ed0e7431f1)
+- [Colección askmdb en Hugging Face](https://huggingface.co/collections/manuelgscom/askmdb-6ae398e10b4817ed0e7431f1)
 - [askmdb-0.8b-GGUF](https://huggingface.co/manuelgscom/askmdb-0.8b-GGUF)
 - [askmdb-2b-GGUF](https://huggingface.co/manuelgscom/askmdb-2b-GGUF)
 - [askmdb-9b-GGUF](https://huggingface.co/manuelgscom/askmdb-9b-GGUF)

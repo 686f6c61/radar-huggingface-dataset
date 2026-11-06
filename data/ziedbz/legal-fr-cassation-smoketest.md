@@ -83,7 +83,7 @@ No se dispone de información sobre adaptadores LoRA comparables para el dominio
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ZiedBz/legal-fr-cassation-smoketest
+- Repositorio en Hugging Face: https://huggingface.co/ZiedBz/legal-fr-cassation-smoketest
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Librería PEFT: https://github.com/huggingface/peft
 - Librería TRL: https://github.com/huggingface/trl

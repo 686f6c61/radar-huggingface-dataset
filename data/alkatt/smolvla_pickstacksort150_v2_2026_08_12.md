@@ -4,7 +4,7 @@
 
 SmolVLA_pickstacksort150_V2_2026_08_12 es un modelo de visión-lenguaje-acción (VLA) compacto, desarrollado por Alkatt mediante fine-tuning del modelo base `lerobot/smolvla_base` sobre el dataset `Alkatt/so_101_pickstacksort150_V2_2026_08_12`. Está diseñado para control robótico, concretamente para tareas de recoger, apilar y clasificar objetos (pick, stack, sort) con un brazo robótico tipo SO-100. El modelo sigue la arquitectura SmolVLA descrita en el paper arXiv:2506.01844, que destaca por su eficiencia computacional y su capacidad para ejecutarse en hardware de consumo.
 
-Con 450 millones de parámetros, este modelo representa una alternativa ligera a los VLA de gran escala, manteniendo un rendimiento competitivo en su dominio de aplicación. Ha sido entrenado y publicado utilizando la librería LeRobot de HuggingFace, lo que facilita su reproducción y despliegue en entornos robóticos reales. Su licencia Apache 2.0 permite uso comercial y modificación sin restricciones significativas.
+Con 450 millones de parámetros, este modelo representa una alternativa ligera a los VLA de gran escala, manteniendo un rendimiento competitivo en su dominio de aplicación. Ha sido entrenado y publicado utilizando la librería LeRobot de Hugging Face, lo que facilita su reproducción y despliegue en entornos robóticos reales. Su licencia Apache 2.0 permite uso comercial y modificación sin restricciones significativas.
 
 La relevancia de este modelo radica en su tamaño reducido, que lo hace accesible para laboratorios y desarrolladores con recursos limitados, y en su especialización en una tarea robótica concreta, lo que permite una integración directa en pipelines de automatización industrial o investigación en manipulación.
 
@@ -33,7 +33,7 @@ El entrenamiento se ha realizado mediante fine-tuning del checkpoint `lerobot/sm
 - Percepción visual: procesa imágenes de cámaras para localizar y manipular objetos en el espacio de trabajo.
 - Comprensión de instrucciones en lenguaje natural: interpreta órdenes como "recoge el objeto rojo" o "apila el cubo azul sobre el verde".
 - Ejecución de tareas compuestas: realiza secuencias de recogida, apilado y clasificación de objetos en un entorno controlado.
-- Integración con LeRobot: compatible con el ecosistema de entrenamiento y evaluación de políticas robóticas de HuggingFace.
+- Integración con LeRobot: compatible con el ecosistema de entrenamiento y evaluación de políticas robóticas de Hugging Face.
 - Eficiencia computacional: tamaño reducido que permite inferencia en GPUs de gama media o incluso CPU en tiempo casi real.
 
 ## Casos de uso
@@ -71,7 +71,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Alkatt/SmolVLA_pickstacksort150_V2_2026_08_12
+- Modelo en Hugging Face: https://huggingface.co/Alkatt/SmolVLA_pickstacksort150_V2_2026_08_12
 - Paper de SmolVLA: https://huggingface.co/papers/2506.01844
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot

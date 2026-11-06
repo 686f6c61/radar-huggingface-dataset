@@ -92,6 +92,6 @@ No se dispone de información sobre alternativas especializadas en generación d
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/open-zzrl/Qwen3.5-9B-Trace-Inversion-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/open-zzrl/Qwen3.5-9B-Trace-Inversion-GGUF
 - Modelo base: https://huggingface.co/open-zzrl/Qwen3.5-9B-Trace-Inversion
 - Demo en Kaggle Notebook: https://www.kaggle.com/code/jqs141/qwen3-5-trace-inversion-demo

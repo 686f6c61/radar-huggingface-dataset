@@ -37,7 +37,7 @@ El énfasis en audio telefónico y code-switching árabe-inglés, reflejado en l
 - Manejo de code-switching árabe-inglés dentro de una misma emisión de audio.
 - Optimización declarada para audio telefónico (canal de banda estrecha, ruido de línea).
 - Integración nativa con la pipeline `automatic-speech-recognition` de transformers.
-- Compatibilidad con endpoints (tag `endpoints_compatible`), lo que permite despliegue gestionado en HuggingFace Inference Endpoints.
+- Compatibilidad con endpoints (tag `endpoints_compatible`), lo que permite despliegue gestionado en Hugging Face Inference Endpoints.
 - No se documenta soporte de tool calling, function calling, agentes, razonamiento multi-paso, visión, audio generation ni modo thinking; estas capacidades no aplican o no están disponibles en un modelo ASR.
 - No se documenta diarización de hablantes, timestamps a nivel de palabra ni puntuación automática.
 
@@ -61,14 +61,14 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada en cuantización int8: alrededor de 2,1 GB para pesos, con un mínimo práctico de 4 GB de VRAM (la cuantización no está documentada oficialmente, por lo que requiere conversión manual).
 - GPU recomendadas: NVIDIA A10G, L4, A100 o H100 para despliegue en servidor; RTX 3090/4090 para desarrollo local.
 - Cabe en GPU de consumo: sí, en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080/4090 y superiores, siempre que se disponga de al menos 6-8 GB de VRAM en fp16.
-- Opciones de despliegue: transformers con pipeline `automatic-speech-recognition`, HuggingFace Inference Endpoints (tag `endpoints_compatible`); no se documenta compatibilidad con vLLM, llama.cpp, Ollama ni TGI (herramientas orientadas a LLM, no a ASR de esta arquitectura).
+- Opciones de despliegue: transformers con pipeline `automatic-speech-recognition`, Hugging Face Inference Endpoints (tag `endpoints_compatible`); no se documenta compatibilidad con vLLM, llama.cpp, Ollama ni TGI (herramientas orientadas a LLM, no a ASR de esta arquitectura).
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Idiomas | Contexto / audio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Cohere-AR/cohere-transcribe-ar-rl2-v9enc | ~2,07 B | ar, en (code-switching) | no disponible | no disponible | gated en HuggingFace |
+| Cohere-AR/cohere-transcribe-ar-rl2-v9enc | ~2,07 B | ar, en (code-switching) | no disponible | no disponible | gated en Hugging Face |
 | Whisper large-v3 (OpenAI) | ~1,55 B | multilingüe (99 idiomas) | 30 s por ventana | MIT | abierta |
 | MMS (Meta) | ~1 B (ASR) | más de 1.100 idiomas | variable | CC-BY-NC 4.0 | abierta |
 | SeamlessM4T v2 (Meta) | ~2,3 B | multilingüe | variable | CC-BY-NC 4.0 | abierta |
@@ -78,7 +78,7 @@ La comparación con Whisper large-v3 es la más directa por tamaño y propósito
 ## Limitaciones y advertencias
 
 - No se han publicado benchmarks, por lo que el rendimiento real en WER/CER es desconocido.
-- Licencia no disponible: no puede asumirse uso comercial sin consultar las condiciones del acceso gated en HuggingFace.
+- Licencia no disponible: no puede asumirse uso comercial sin consultar las condiciones del acceso gated en Hugging Face.
 - Acceso restringido: requiere aceptar condiciones en la plataforma antes de descargar los pesos, lo que limita la reproducibilidad y el despliegue automatizado.
 - Cobertura lingüística limitada a árabe e inglés; no se documenta soporte de dialectos específicos (egipcio, levantino, magrebí) ni de otras lenguas.
 - Riesgo de alucinación en pasajes con ruido extremo o silencios largos, comportamiento común en modelos ASR seq2seq.
@@ -89,6 +89,6 @@ La comparación con Whisper large-v3 es la más directa por tamaño y propósito
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Cohere-AR/cohere-transcribe-ar-rl2-v9enc
+- Hugging Face: https://huggingface.co/Cohere-AR/cohere-transcribe-ar-rl2-v9enc
 - Modelo base: https://huggingface.co/Cohere-AR/cohere-transcribe-ar-rl-v9enc
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

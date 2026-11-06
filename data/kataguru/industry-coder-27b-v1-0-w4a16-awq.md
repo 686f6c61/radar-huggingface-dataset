@@ -109,7 +109,7 @@ No se dispone de datos de benchmarks de modelos comparables de terceros en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kataguru/Industry-Coder-27B-v1.0-W4A16-AWQ
+- Modelo en Hugging Face: https://huggingface.co/kataguru/Industry-Coder-27B-v1.0-W4A16-AWQ
 - Modelo base BF16: https://huggingface.co/kataguru/Industry-Coder-27B-v1.0-BF16
 - Variante ChemBio-27B v2: no disponible como enlace directo en la información proporcionada
 - Paper, blog o repositorio adicional: no disponibles en la información proporcionada

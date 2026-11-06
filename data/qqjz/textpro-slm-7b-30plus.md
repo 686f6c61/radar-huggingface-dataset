@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TextPro-SLM-7B-30Plus | 7B (backbone) | 32.768 tokens | Audio (transcripcion + prosodia global) | Apache-2.0 | Checkpoint en HuggingFace; codigo en GitHub |
-| Qwen2.5-7B-Instruct | 7B | 32.768 tokens (segun modelo base) | Texto | Apache-2.0 | HuggingFace |
-| Whisper large-v3 | no disponible | 30 s por segmento | Audio | MIT (segun modelo original) | HuggingFace |
+| TextPro-SLM-7B-30Plus | 7B (backbone) | 32.768 tokens | Audio (transcripcion + prosodia global) | Apache-2.0 | Checkpoint en Hugging Face; codigo en GitHub |
+| Qwen2.5-7B-Instruct | 7B | 32.768 tokens (segun modelo base) | Texto | Apache-2.0 | Hugging Face |
+| Whisper large-v3 | no disponible | 30 s por segmento | Audio | MIT (segun modelo original) | Hugging Face |
 
 La comparacion con otros speech LLM de la misma categoria (por ejemplo, sistemas que conectan un encoder de audio a un LLM mediante proyectores de tokens) no esta disponible en la informacion proporcionada, ya que no se ofrecen datos de rendimiento ni especificaciones de esos sistemas en la model card.
 
@@ -83,7 +83,7 @@ La comparacion con otros speech LLM de la misma categoria (por ejemplo, sistemas
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qqjz/TextPro-SLM-7B-30Plus
+- Hugging Face: https://huggingface.co/qqjz/TextPro-SLM-7B-30Plus
 - Checkpoint acoplado: https://huggingface.co/qqjz/WhisperPro-30Plus
 - Modelo de la familia original: https://huggingface.co/qqjz/TextPro-SLM-7B-Global
 - Encoder original: https://huggingface.co/qqjz/WhisperPro

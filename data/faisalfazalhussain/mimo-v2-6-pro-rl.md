@@ -21,7 +21,7 @@ Es relevante ahora porque compite directamente, según los datos del propio auto
 | Licencia | MIT |
 | Formato de pesos | safetensors (requiere `trust_remote_code`, etiqueta `custom_code`) |
 
-Datos adicionales declarados en la model card: codificador de visión MiMo ViT de 681 M de parámetros (28 capas: 24 SWA + 4 full attention), codificador de audio compuesto por un AudioTokenizer de 308 M y un patch encoder de 127 M, y decodificador especulativo Multi-Token Prediction (MTP) de 5 capas. Tamaño del repositorio en HuggingFace: 573,5 GB.
+Datos adicionales declarados en la model card: codificador de visión MiMo ViT de 681 M de parámetros (28 capas: 24 SWA + 4 full attention), codificador de audio compuesto por un AudioTokenizer de 308 M y un patch encoder de 127 M, y decodificador especulativo Multi-Token Prediction (MTP) de 5 capas. Tamaño del repositorio en Hugging Face: 573,5 GB.
 
 ## Arquitectura y entrenamiento
 
@@ -101,7 +101,7 @@ La comparación se limita a los modelos incluidos en la tabla de evaluación del
 
 ## Limitaciones y advertencias
 
-- Repositorio de terceros: la model card contiene enlaces a HuggingFace, blog, plataforma de API y repositorio de Xiaomi, pero el espacio que aloja los pesos es de la cuenta FAISALFAZALHUSSAIN, con 0 descargas y 0 likes. No hay verificación de integridad ni de fidelidad respecto al checkpoint oficial. Para uso en producción, descargar desde el repositorio oficial XiaomiMiMo.
+- Repositorio de terceros: la model card contiene enlaces a Hugging Face, blog, plataforma de API y repositorio de Xiaomi, pero el espacio que aloja los pesos es de la cuenta FAISALFAZALHUSSAIN, con 0 descargas y 0 likes. No hay verificación de integridad ni de fidelidad respecto al checkpoint oficial. Para uso en producción, descargar desde el repositorio oficial XiaomiMiMo.
 - Discrepancia de tamaño: 573,5 GB de repositorio frente a ~1 TB esperados en FP8 y ~2 TB en BF16. Puede tratarse de una subida incompleta. Verificar el índice de safetensors antes de cualquier despliegue.
 - Benchmarks no verificables: todas las cifras provienen de la model card. Las comparaciones incluyen versiones de modelos propietarios y fechas de 2026 que no pueden contrastarse con fuentes independientes en el momento de redactar esta ficha.
 - Idiomas: solo inglés y chino declarados. No hay soporte declarado de castellano, lo que degradará el rendimiento en tareas en español sin ajuste adicional.

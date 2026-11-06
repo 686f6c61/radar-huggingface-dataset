@@ -69,6 +69,6 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/ceia-aisdk/llm-medium-v1)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/ceia-aisdk/llm-medium-v1)
 - [Modelo base Qwen/Qwen2.5-7B-Instruct](https://huggingface.co/Qwen/Qwen2.5-7B-Instruct)
 - [Quantización original por bartowski](https://huggingface.co/bartowski/Qwen2.5-7B-Instruct-GGUF)

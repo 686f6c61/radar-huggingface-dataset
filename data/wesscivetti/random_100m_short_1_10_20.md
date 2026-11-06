@@ -2,7 +2,7 @@
 
 ## Resumen
 
-WesScivetti/random_100M_short_1_10_20 es un checkpoint de un modelo de lenguaje enmascarado (masked language modeling) publicado en HuggingFace por el usuario WesScivetti. Se presenta como un "checkpoint GPT-BERT personalizado" procedente de los experimentos de entrenamiento sobre un corpus filtrado denominado NPN. El repositorio incluye codigo de arquitectura propio, por lo que requiere `trust_remote_code=True` para cargarse.
+WesScivetti/random_100M_short_1_10_20 es un checkpoint de un modelo de lenguaje enmascarado (masked language modeling) publicado en Hugging Face por el usuario WesScivetti. Se presenta como un "checkpoint GPT-BERT personalizado" procedente de los experimentos de entrenamiento sobre un corpus filtrado denominado NPN. El repositorio incluye codigo de arquitectura propio, por lo que requiere `trust_remote_code=True` para cargarse.
 
 El modelo pertenece a la familia de transformers con atencion bidireccional orientada a tareas de relleno de mascaras (pipeline `fill-mask`). El sufijo del nombre sugiere un tamano del orden de 100 millones de parametros, aunque la model card no confirma esta cifra de forma explicita. Su relevancia actual es limitada: se trata de un experimento de investigacion con cero descargas y cero valoraciones en el momento de la consulta, sin licencia declarada ni idiomas especificados.
 
@@ -68,10 +68,10 @@ No se dispone de datos de rendimiento del modelo, por lo que la comparacion se l
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| WesScivetti/random_100M_short_1_10_20 | ~100M (no confirmado) | no disponible | fill-mask | no disponible | HuggingFace, codigo personalizado |
-| BERT-base-uncased | ~110M | 512 | fill-mask / encoder | Apache 2.0 | HuggingFace, ampliamente soportado |
-| RoBERTa-base | ~125M | 512 | fill-mask / encoder | MIT | HuggingFace, ampliamente soportado |
-| DistilBERT-base-uncased | ~66M | 512 | fill-mask / encoder | Apache 2.0 | HuggingFace, ampliamente soportado |
+| WesScivetti/random_100M_short_1_10_20 | ~100M (no confirmado) | no disponible | fill-mask | no disponible | Hugging Face, codigo personalizado |
+| BERT-base-uncased | ~110M | 512 | fill-mask / encoder | Apache 2.0 | Hugging Face, ampliamente soportado |
+| RoBERTa-base | ~125M | 512 | fill-mask / encoder | MIT | Hugging Face, ampliamente soportado |
+| DistilBERT-base-uncased | ~66M | 512 | fill-mask / encoder | Apache 2.0 | Hugging Face, ampliamente soportado |
 
 Las alternativas citadas cuentan con documentacion completa, licencia clara, soporte nativo en `transformers` sin codigo remoto y resultados de benchmarks publicos; el modelo objeto de esta ficha no ofrece ninguna de estas garantias.
 
@@ -89,5 +89,5 @@ Las alternativas citadas cuentan con documentacion completa, licencia clara, sop
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WesScivetti/random_100M_short_1_10_20
+- Modelo en Hugging Face: https://huggingface.co/WesScivetti/random_100M_short_1_10_20
 - No se han encontrado en la informacion proporcionada otros enlaces relevantes (papers, blogs, repositorios o demos).

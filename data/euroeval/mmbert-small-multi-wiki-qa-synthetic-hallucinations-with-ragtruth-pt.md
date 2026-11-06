@@ -23,7 +23,7 @@ Con 140 millones de parámetros, es un modelo compacto que puede ejecutarse en h
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura ModernBERT, un encoder transformer optimizado para eficiencia y velocidad. El tag `modernbert` en HuggingFace confirma esta base, aunque no se especifican detalles concretos como el número de capas o cabezas de atención. El nombre "mmBERT-small" indica que se trata de la variante pequeña y multilingüe de ModernBERT.
+El modelo se basa en la arquitectura ModernBERT, un encoder transformer optimizado para eficiencia y velocidad. El tag `modernbert` en Hugging Face confirma esta base, aunque no se especifican detalles concretos como el número de capas o cabezas de atención. El nombre "mmBERT-small" indica que se trata de la variante pequeña y multilingüe de ModernBERT.
 
 El entrenamiento sigue la metodología descrita en el paper "A multilingual hallucination benchmark: MultiWikiQHalluA". En una primera etapa, se genera un dataset sintético de alucinaciones mediante el framework LettuceDetect, que utiliza un modelo de lenguaje para producir respuestas con tokens etiquetados como alucinados o veraces a partir de contextos de Wikipedia. En la segunda etapa, se realiza un fine-tuning del modelo mmBERT-small sobre estos datos para la tarea de clasificación de tokens. No se dispone de información sobre hiperparámetros, número de tokens de entrenamiento ni técnicas adicionales como RLHF o DPO.
 
@@ -32,7 +32,7 @@ El entrenamiento sigue la metodología descrita en el paper "A multilingual hall
 - Detección de alucinaciones a nivel de token: clasifica cada token de una respuesta como alucinado o no, lo que permite identificar fragmentos específicos problemáticos.
 - Soporte multilingüe: el entrenamiento con datos de múltiples idiomas (según el nombre "multi-wiki" y las variantes publicadas para otros idiomas) sugiere capacidades multilingües, aunque no se detallan los idiomas exactos.
 - Integración con pipelines de RAG: puede utilizarse como verificador posterior a la generación para señalar respuestas no fieles al contexto.
-- Compatible con la librería transformers: se puede cargar con `AutoModelForTokenClassification` y usar en entornos estándar de HuggingFace.
+- Compatible con la librería transformers: se puede cargar con `AutoModelForTokenClassification` y usar en entornos estándar de Hugging Face.
 - Eficiencia computacional: al ser un modelo pequeño, es adecuado para inferencia en CPU o GPUs de baja capacidad.
 
 ## Casos de uso
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El pa
 
 - VRAM estimada: al tratarse de un modelo de 140M parámetros, la inferencia en FP32 requiere aproximadamente 0,56 GB de memoria. Con cuantización a 8 bits, se reduce a unos 0,14 GB, y a 4 bits, unos 0,07 GB. Puede ejecutarse en CPU sin problemas para inferencia por lotes pequeños.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM es suficiente, incluyendo NVIDIA GTX 1050, RTX 2060 o superiores. También funciona en Apple Silicon y GPUs integradas.
-- Despliegue: compatible con la librería `transformers` de HuggingFace, así como con `ONNX Runtime` para optimización en CPU. No se menciona soporte explícito para vLLM, llama.cpp u Ollama, pero al ser un modelo encoder pequeño, puede servirse con frameworks como FastAPI o TorchServe.
+- Despliegue: compatible con la librería `transformers` de Hugging Face, así como con `ONNX Runtime` para optimización en CPU. No se menciona soporte explícito para vLLM, llama.cpp u Ollama, pero al ser un modelo encoder pequeño, puede servirse con frameworks como FastAPI o TorchServe.
 - Latencia y throughput: no se dispone de datos medidos, pero en una CPU moderna se esperan tiempos de inferencia del orden de milisegundos por secuencia corta.
 
 ## Comparativa con modelos similares
@@ -70,6 +70,6 @@ No se dispone de información suficiente para establecer una comparativa con mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-pt
+- Modelo en Hugging Face: https://huggingface.co/EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-pt
 - Paper asociado (arXiv): https://arxiv.org/pdf/2605.02504v2
-- Variantes del modelo en otros idiomas (en, sq, fi, it) disponibles en el perfil de EuroEval en HuggingFace.
+- Variantes del modelo en otros idiomas (en, sq, fi, it) disponibles en el perfil de EuroEval en Hugging Face.

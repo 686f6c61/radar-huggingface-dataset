@@ -60,7 +60,7 @@ No se han publicado resultados en benchmarks estándar como MMLU, HumanEval o GS
 
 - VRAM estimada: al ser un modelo de 230M de parámetros, requiere aproximadamente 0,9 GB en fp16 y alrededor de 0,5 GB en cuantización de 8 bits. No se especifican cuantizaciones oficiales.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente, incluyendo tarjetas consumer como NVIDIA GTX 1650, RTX 3060 o superiores. También puede ejecutarse en CPU para inferencia de baja latencia.
-- Opciones de despliegue: compatible con la librería transformers de HuggingFace, por lo que puede servirse con vLLM, TGI o llama.cpp (si se convierte a GGUF). No se menciona soporte nativo para Ollama.
+- Opciones de despliegue: compatible con la librería transformers de Hugging Face, por lo que puede servirse con vLLM, TGI o llama.cpp (si se convierte a GGUF). No se menciona soporte nativo para Ollama.
 - Latencia estimada: en GPU consumer, la generación de un título de 32 tokens debería completarse en menos de 100 ms con batch de 1. En CPU, puede ser de 1-2 segundos.
 
 ## Comparativa con modelos similares
@@ -86,6 +86,6 @@ No se dispone de información sobre otros modelos comparables de terceros en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ManhHoDinh/lfm25-titlegen-dpo
+- Modelo en Hugging Face: https://huggingface.co/ManhHoDinh/lfm25-titlegen-dpo
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-230M
 - Licencia lfm1.0: https://huggingface.co/LiquidAI/LFM2.5-230M/blob/main/LICENSE

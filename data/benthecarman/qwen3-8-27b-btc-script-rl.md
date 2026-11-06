@@ -89,8 +89,8 @@ Validacion en 80 tareas separadas por checkpoint:
 
 | Modelo | Parametros | Contexto | Puntuacion en el test de 246 tareas | Licencia | Disponibilidad |
 |---|---|---:|---:|---|---|
-| Qwen3.8-27B + este LoRA | 27B + adaptador | No disponible (respuestas >100k) | 0,401 | Apache 2.0 | HuggingFace (PEFT) |
-| Qwen3.8-27B (base) | 27B | No disponible | 0,262 | Apache 2.0 | HuggingFace |
+| Qwen3.8-27B + este LoRA | 27B + adaptador | No disponible (respuestas >100k) | 0,401 | Apache 2.0 | Hugging Face (PEFT) |
+| Qwen3.8-27B (base) | 27B | No disponible | 0,262 | Apache 2.0 | Hugging Face |
 | GLM 5.3 Flash | No disponible | No disponible | 0,559 | No disponible | No disponible en la informacion |
 | GLM 5.3 | No disponible | No disponible | 0,687 | No disponible | No disponible en la informacion |
 | Claude Sonnet 5.5 | No disponible | No disponible | 0,893 | Propietaria | API |
@@ -112,7 +112,7 @@ La comparacion es solo sobre el conjunto de prueba especifico de Bitcoin Script 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/benthecarman/Qwen3.8-27B-BTC-Script-RL
+- Modelo en Hugging Face: https://huggingface.co/benthecarman/Qwen3.8-27B-BTC-Script-RL
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Checkpoint NVFP4 usado en la evaluacion: https://huggingface.co/nvidia/Qwen3.8-27B-NVFP4
 - rust-miniscript: https://github.com/rust-bitcoin/rust-miniscript

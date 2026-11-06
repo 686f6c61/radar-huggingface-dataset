@@ -76,10 +76,10 @@ Las cifras siguientes son estimaciones de ingeniería derivadas del tamaño del 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| opd-teacher-Q2.5I-Integral-step149 | 1,54 B | 32.768 tokens (heredado del base) | Apache 2.0 | HuggingFace, safetensors | Ajuste GRPO especializado en el entorno `Integral`; sin benchmarks publicados |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 tokens | Apache 2.0 | HuggingFace, safetensors, GGUF, AWQ, GPTQ | Modelo base; instructivo general, multilingüe, con soporte nativo de tool calling y buenos resultados publicados en benchmarks |
-| Qwen/Qwen2.5-0.5B-Instruct | 0,49 B | 32.768 tokens | Apache 2.0 | HuggingFace, múltiples formatos | Alternativa más pequeña de la misma familia; menor calidad general pero coste de inferencia mucho menor |
-| meta-llama/Llama-3.2-1B-Instruct | 1,24 B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, GGUF | Ventana de contexto mucho mayor, pero licencia con restricciones para uso comercial y menos ecosistema de cuantizaciones que Qwen |
+| opd-teacher-Q2.5I-Integral-step149 | 1,54 B | 32.768 tokens (heredado del base) | Apache 2.0 | Hugging Face, safetensors | Ajuste GRPO especializado en el entorno `Integral`; sin benchmarks publicados |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 tokens | Apache 2.0 | Hugging Face, safetensors, GGUF, AWQ, GPTQ | Modelo base; instructivo general, multilingüe, con soporte nativo de tool calling y buenos resultados publicados en benchmarks |
+| Qwen/Qwen2.5-0.5B-Instruct | 0,49 B | 32.768 tokens | Apache 2.0 | Hugging Face, múltiples formatos | Alternativa más pequeña de la misma familia; menor calidad general pero coste de inferencia mucho menor |
+| meta-llama/Llama-3.2-1B-Instruct | 1,24 B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, GGUF | Ventana de contexto mucho mayor, pero licencia con restricciones para uso comercial y menos ecosistema de cuantizaciones que Qwen |
 
 La comparación con estos modelos es en gran medida asimétrica: los tres alternativos son modelos instructivos de propósito general con evaluaciones publicadas, mientras que el modelo de esta ficha es un artefacto de investigación especializado. No existe información pública que permita afirmar que supere o iguale a ninguno de ellos fuera del entorno `Integral`.
 
@@ -97,10 +97,10 @@ La comparación con estos modelos es en gran medida asimétrica: los tres altern
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davidheineman/opd-teacher-Q2.5I-Integral-step149
+- Modelo en Hugging Face: https://huggingface.co/davidheineman/opd-teacher-Q2.5I-Integral-step149
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Colección RLVE OPD Teachers: https://huggingface.co/collections/davidheineman/rlve-opd-teachers
-- Perfil del autor en HuggingFace: https://huggingface.co/davidheineman
+- Perfil del autor en Hugging Face: https://huggingface.co/davidheineman
 - Web personal del autor: https://davidheineman.com/
 - Run de entrenamiento en W&B: https://wandb.ai/david-heineman/rl-data-opd-teachers/runs/2a53600b
 - Código de entrenamiento (RLVE): https://github.com/davidheineman/rlve

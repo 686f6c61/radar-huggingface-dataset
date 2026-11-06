@@ -83,7 +83,7 @@ La comparativa se limita a modelos de la misma familia. No se dispone de datos p
 
 ## Enlaces
 
-- [Modelo en HuggingFace (GPTQ-Int4)](https://huggingface.co/llmfan46/Qwen3.8-27B-Ultra-Uncensored-Heretic-Native-MTP-Preserved-GPTQ-Int4)
+- [Modelo en Hugging Face (GPTQ-Int4)](https://huggingface.co/llmfan46/Qwen3.8-27B-Ultra-Uncensored-Heretic-Native-MTP-Preserved-GPTQ-Int4)
 - [Modelo base abliterado](https://huggingface.co/llmfan46/Qwen3.8-27B-Ultra-Uncensored-Heretic-Native-MTP-Preserved)
 - [Repositorio oficial de Qwen3.8-27B (Alibaba)](https://github.com/AlibabaCloud-Official/Qwen3.8-27B)
 - [Blog: How to Run Qwen 3.8 27B Uncensored Locally](https://www.orcarouter.ai/blog/how-to-run-qwen-3-8-27b-uncensored-locally)

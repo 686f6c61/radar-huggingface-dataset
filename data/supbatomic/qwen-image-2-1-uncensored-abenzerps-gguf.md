@@ -104,9 +104,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Modelo | Parametros | Tipo | Cuantizaciones | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Supbatomic/Qwen-Image-2.1-Uncensored-Abenzerps-GGUF (esta ficha) | 7,12 mil millones | Difusion text-to-image, GGUF + variante UC | BF16 a Q4_0 | qwen-research | Repositorio propio; ficheros enlazados desde `abenzerps/Qwen-Image-2.1-Uncensored-GGUF` |
-| Qwen/Qwen-Image-2.1 (base oficial) | 7,12 mil millones | Difusion text-to-image | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | HuggingFace, repositorio oficial de Qwen |
+| Qwen/Qwen-Image-2.1 (base oficial) | 7,12 mil millones | Difusion text-to-image | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Hugging Face, repositorio oficial de Qwen |
 | abenzerps/Qwen-Image-2.1-Uncensored-GGUF | No disponible | Difusion text-to-image, GGUF + UC | BF16, FP8, INT8 ConvRot, Q8_0, Q6_K, Q5_K_M, Q4_K_M, Q4_0 | No disponible | Repositorio referenciado por la model card de esta ficha |
-| FLUX.1-dev (referencia del sector) | 12 mil millones | Difusion text-to-image | Cuantizaciones GGUF comunitarias | Licencia no comercial de FLUX.1-dev | HuggingFace / Black Forest Labs |
+| FLUX.1-dev (referencia del sector) | 12 mil millones | Difusion text-to-image | Cuantizaciones GGUF comunitarias | Licencia no comercial de FLUX.1-dev | Hugging Face / Black Forest Labs |
 
 Datos de rendimiento comparado: no disponibles.
 
@@ -126,7 +126,7 @@ Datos de rendimiento comparado: no disponibles.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Supbatomic/Qwen-Image-2.1-Uncensored-Abenzerps-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/Supbatomic/Qwen-Image-2.1-Uncensored-Abenzerps-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Repositorio de los pesos uncensored enlazados: https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF
 - ComfyUI: https://github.com/comfyanonymous/ComfyUI

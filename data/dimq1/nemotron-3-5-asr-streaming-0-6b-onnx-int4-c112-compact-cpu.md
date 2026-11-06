@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nemotron 3.5 ASR Compact es una exportación a ONNX optimizada para CPU del modelo de reconocimiento de voz en streaming Nemotron-3.5 ASR (0.6B) de NVIDIA. La publica el usuario DimQ1 en HuggingFace como un repack del export INT4 previo, con el objetivo de reducir tamaño y latencia manteniendo la precisión. Se trata de un modelo ASR de tipo transducer (RNN-T) con encoder FastConformer cache-aware, pensado para transcripción incremental de audio en tiempo real sin GPU.
+Nemotron 3.5 ASR Compact es una exportación a ONNX optimizada para CPU del modelo de reconocimiento de voz en streaming Nemotron-3.5 ASR (0.6B) de NVIDIA. La publica el usuario DimQ1 en Hugging Face como un repack del export INT4 previo, con el objetivo de reducir tamaño y latencia manteniendo la precisión. Se trata de un modelo ASR de tipo transducer (RNN-T) con encoder FastConformer cache-aware, pensado para transcripción incremental de audio en tiempo real sin GPU.
 
 La innovación principal de esta variante es la reescritura de las 48 convoluciones pointwise de los bloques conformer como multiplicaciones matriciales cuantizadas a INT4, así como el plegado de la tabla de posiciones constante y de las 24 proyecciones `linear_pos` que la consumen, que en el export original se recalculaban en cada chunk. El resultado es un encoder entre un 25 % y un 29 % más rápido en CPU con 4 hilos, un tamaño de 496 MB frente a los 794 MB del repo fuente y un consumo de memoria 200-250 MB inferior, con una degradación de WER prácticamente nula.
 
@@ -89,7 +89,7 @@ No se dispone de datos de benchmarks comparativos frente a alternativas de otros
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DimQ1/nemotron-3.5-asr-streaming-0.6b-onnx-int4-c112-compact-cpu
+- Hugging Face: https://huggingface.co/DimQ1/nemotron-3.5-asr-streaming-0.6b-onnx-int4-c112-compact-cpu
 - Repo fuente: https://huggingface.co/DimQ1/nemotron-3.5-asr-streaming-0.6b-onnx-int4-c112-cpu
 - Converter: `tools/converters/EncoderRepack` en el repositorio VoiceType / nemotron-speech-csharp (no se proporciona URL directa)
 - Licencia original NVIDIA Nemotron: no disponible en la información proporcionada

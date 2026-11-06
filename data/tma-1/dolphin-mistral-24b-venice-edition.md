@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada: la model card indica que ejecutar el modelo en GPU requiere más de 60 GB de memoria de GPU en configuración estándar.
 - GPU recomendadas: clústeres multi-GPU; el ejemplo oficial usa `tensor_parallel_size=8`. El entrenamiento se realizó sobre 8 GPU B200 (NVIDIA B200).
 - GPU consumer: no cabe en una sola GPU de consumo (por ejemplo, RTX 4090 con 24 GB) en precisión completa. Con cuantización agresiva (Q4) podría ser viable en GPUs de 24-32 GB, aunque el autor no proporciona cuantizaciones oficiales.
-- Opciones de despliegue: vLLM (recomendado por el autor), SGLang, TGI, Ollama, LM Studio y la librería HuggingFace Transformers.
+- Opciones de despliegue: vLLM (recomendado por el autor), SGLang, TGI, Ollama, LM Studio y la librería Hugging Face Transformers.
 - Configuración vLLM sugerida: `--runner generate`, `--max-model-len 131072`, `--tool-call-parser mistral`, `--enable-auto-tool-choice`, `--limit-mm-per-prompt '{"image": 10}'`.
 - Latencia y throughput: no disponibles.
 
@@ -86,7 +86,7 @@ No se dispone de resultados de benchmarks comparativos en la información propor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TMA-1/Dolphin-Mistral-24B-Venice-Edition
+- Modelo en Hugging Face: https://huggingface.co/TMA-1/Dolphin-Mistral-24B-Venice-Edition
 - Modelo base: https://huggingface.co/mistralai/Mistral-Small-24B-Instruct-2501
 - Web oficial de Dolphin: https://dphn.ai
 - Web chat de Dolphin: https://chat.dphn.ai

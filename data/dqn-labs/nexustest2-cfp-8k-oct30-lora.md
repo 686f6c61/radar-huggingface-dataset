@@ -4,7 +4,7 @@
 
 nexustest2-cfp-8k-oct30-lora es un ajuste fino (LoRA) publicado por DQN-Labs sobre el modelo base unsloth/Qwen3.8-27B-unsloth-bnb-4bit, una variante cuantizada en 4 bits del Qwen3.8 de 27B de parámetros preparada por Unsloth. El repositorio contiene únicamente los pesos del adaptador en formato safetensors (0,3 GB), no el modelo completo, por lo que su uso requiere cargar el modelo base y aplicar el adaptador. La model card es mínima: no documenta el conjunto de datos de entrenamiento, la tarea concreta, los hiperparámetros ni los resultados obtenidos.
 
-El nombre del repositorio sugiere un experimento interno de DQN-Labs ("nexustest2") con un contexto de entrenamiento de 8k tokens y fecha de octubre de 2026, pero esta interpretación no está confirmada por el autor. El modelo se distribuye con licencia Apache 2.0 y declara únicamente el inglés como idioma soportado. No cuenta con descargas ni interacciones en HuggingFace en el momento de redactar esta ficha, lo que indica que no ha sido validado por la comunidad.
+El nombre del repositorio sugiere un experimento interno de DQN-Labs ("nexustest2") con un contexto de entrenamiento de 8k tokens y fecha de octubre de 2026, pero esta interpretación no está confirmada por el autor. El modelo se distribuye con licencia Apache 2.0 y declara únicamente el inglés como idioma soportado. No cuenta con descargas ni interacciones en Hugging Face en el momento de redactar esta ficha, lo que indica que no ha sido validado por la comunidad.
 
 Por su naturaleza (adaptador LoRA sobre un modelo de 27B cuantizado en 4 bits, sin documentación de entrenamiento ni evaluación publicada), debe considerarse un artefacto experimental y no un modelo listo para producción. Su interés principal es como ejemplo del flujo de trabajo de Unsloth para ajuste fino eficiente de modelos grandes en hardware limitado.
 
@@ -43,7 +43,7 @@ No se dispone de información sobre el número de tokens de entrenamiento, la co
 - Investigación sobre LoRA en modelos grandes: permite estudiar cómo un adaptador de pequeño tamaño modifica el comportamiento de un modelo de 27B sin necesidad de reentrenar todos los pesos.
 - Pruebas de concepto internas: adecuado para prototipos en inglés donde el equipo ya disponga del modelo base y quiera evaluar si el ajuste aporta mejoras en una tarea concreta, siempre que se valide empíricamente.
 - Evaluación comparativa de adaptadores: puede usarse como uno de los brazos de un estudio que compare distintos LoRA sobre el mismo modelo base, midiendo degradación o especialización.
-- Docencia y formación: ejemplo didáctico de cómo se publica un adaptador LoRA en HuggingFace con las etiquetas y metadatos mínimos exigidos por el ecosistema.
+- Docencia y formación: ejemplo didáctico de cómo se publica un adaptador LoRA en Hugging Face con las etiquetas y metadatos mínimos exigidos por el ecosistema.
 - Base para nuevos ajustes: el adaptador puede servir como punto de partida para entrenamientos posteriores con TRL, aunque la falta de documentación sobre su dataset original introduce incertidumbre sobre qué comportamiento se está heredando.
 
 ## Benchmarks y rendimiento
@@ -82,7 +82,7 @@ La comparación con alternativas concretas no es posible con rigor: no se dispon
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/DQN-Labs/nexustest2-cfp-8k-oct30-lora
+- Repositorio Hugging Face: https://huggingface.co/DQN-Labs/nexustest2-cfp-8k-oct30-lora
 - Modelo base: https://huggingface.co/unsloth/Qwen3.8-27B-unsloth-bnb-4bit
 - Unsloth (GitHub): https://github.com/unslothai/unsloth
 - TRL (GitHub): https://github.com/huggingface/trl

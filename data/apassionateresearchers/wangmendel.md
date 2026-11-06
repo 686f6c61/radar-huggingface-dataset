@@ -2,7 +2,7 @@
 
 ## Resumen
 
-WangMendel es un repositorio de modelo alojado en HuggingFace por el usuario APassionateResearchers. En el momento de la consulta, la informacion publica disponible es practicamente nula: no consta pipeline de inferencia declarado, no se indica licencia, no se declaran idiomas soportados y el unico tag presente es `region:us`. El repositorio no incluye una model card con descripcion, arquitectura ni datos de entrenamiento.
+WangMendel es un repositorio de modelo alojado en Hugging Face por el usuario APassionateResearchers. En el momento de la consulta, la informacion publica disponible es practicamente nula: no consta pipeline de inferencia declarado, no se indica licencia, no se declaran idiomas soportados y el unico tag presente es `region:us`. El repositorio no incluye una model card con descripcion, arquitectura ni datos de entrenamiento.
 
 El dato mas relevante es el tamano del repositorio: 0.0 GB. Esto indica que no hay pesos publicados (ni en safetensors, ni en GGUF, ni en ningun otro formato) o que estos son de un tamano despreciable a efectos de almacenamiento. El repositorio fue creado el 2026-10-19 a las 16:31 UTC y actualizado 19 minutos mas tarde, el mismo dia, sin cambios posteriores registrados. Acumula 0 descargas y 1 like.
 
@@ -88,5 +88,5 @@ No es posible establecer una comparativa: sin parametros, contexto, licencia ni 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/APassionateResearchers/WangMendel
+- Hugging Face: https://huggingface.co/APassionateResearchers/WangMendel
 - Paper, blog, repositorio de codigo, demo o model card adicional: no disponibles en la informacion proporcionada.

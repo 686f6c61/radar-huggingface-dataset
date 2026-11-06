@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AnomalyNet es un clasificador binario de series temporales publicado por el autor eoinedge en HuggingFace. Se trata de un perceptron multicapa (MLP) de solo 842 parametros que recibe una ventana de 32 muestras consecutivas de temperatura (3,2 segundos a 10 Hz) y devuelve dos logits: ventana normal o ventana con anomalia. Su proposito no es competir con modelos generativos, sino servir como "segundo cerebro" embebido en un PLC: un modelo diminuto que corre en el propio microcontrolador, junto a la logica de control, y que solo comparte una variable (`p(anomaly)`) con el resto del sistema.
+AnomalyNet es un clasificador binario de series temporales publicado por el autor eoinedge en Hugging Face. Se trata de un perceptron multicapa (MLP) de solo 842 parametros que recibe una ventana de 32 muestras consecutivas de temperatura (3,2 segundos a 10 Hz) y devuelve dos logits: ventana normal o ventana con anomalia. Su proposito no es competir con modelos generativos, sino servir como "segundo cerebro" embebido en un PLC: un modelo diminuto que corre en el propio microcontrolador, junto a la logica de control, y que solo comparte una variable (`p(anomaly)`) con el resto del sistema.
 
 El modelo se distribuye en formatos especificamente orientados al borde: un state dict de PyTorch en fp32, programas de ExecuTorch (fp32 de 5,5 KB e int8 de 3,6 KB con kernels CMSIS para Cortex-M0+, M4, M33 y M7) y equivalentes en TensorFlow Lite y TensorFlow Lite Micro. Esta orientado a deteccion de anomalias industriales en senales de sensores, con cuatro tipos inyectados en el entrenamiento: picos, caidas de senal (dropout), rampas descontroladas y rafagas de ruido.
 
@@ -115,7 +115,7 @@ No se han proporcionado modelos comparables en la informacion disponible. La mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eoinedge/AnomalyNet
+- Modelo en Hugging Face: https://huggingface.co/eoinedge/AnomalyNet
 - Conjunto de datos: https://huggingface.co/datasets/eoinedge/heater-anomaly-windows
 - Repositorio UNO Q (generador de datos y entrenamiento): https://github.com/eoinjordan/executorch-zephyr-arduino-uno-q
 - Repositorio OPTA (despliegue junto a logica de escalera en PLC): https://github.com/eoinjordan/executorch-zephyr-arduino-opta

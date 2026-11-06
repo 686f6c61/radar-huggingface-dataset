@@ -82,7 +82,7 @@ Notas del autor:
 - Opciones de despliegue:
   - vLLM (soporta mxfp8 y bfloat16).
   - llama.cpp / Ollama (para GGUF).
-  - TGI (Text Generation Inference) de HuggingFace.
+  - TGI (Text Generation Inference) de Hugging Face.
   - Transformers con `device_map="auto"` para distribución en múltiples GPUs.
 - Latencia y throughput: no se proporcionan datos oficiales. Con MTP se espera una generación más rápida que un modelo equivalente sin esta técnica, pero no hay cifras concretas.
 
@@ -116,7 +116,7 @@ Observaciones:
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DavidAU/Qwen3.6-40B-Fable-Fusion-6-Core-Deckard-Eleanor-Heretic-Uncensored
+- Modelo en Hugging Face: https://huggingface.co/DavidAU/Qwen3.6-40B-Fable-Fusion-6-Core-Deckard-Eleanor-Heretic-Uncensored
 - Repositorio GGUF con NEO Imatrix y MTP: https://huggingface.co/DavidAU/Qwen3.6-40B-Fable-Fusion-6-Core-Deckard-Eleanor-Heretic-Uncensored-NM-DAU-NEO-MAX-MTP-GGUF
 - Proyecto principal (Grand Intelligence Fable Fusion): https://huggingface.co/DavidAU/Qwen3.6-40B-Grand-Intelligence-Fable-Fusion-Uncensored-Heretic
 - Artículo en HackerNoon sobre el núcleo 27B: https://hackernoon.com/qwen36-27b-fable-fusion-breaks-the-700-arc-c-barrier

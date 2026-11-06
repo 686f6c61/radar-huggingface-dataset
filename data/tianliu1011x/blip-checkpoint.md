@@ -63,5 +63,5 @@ No disponible. No se han identificado modelos comparables en la información dis
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tianliu1011x/blip-checkpoint
+- Hugging Face: https://huggingface.co/tianliu1011x/blip-checkpoint
 - Otros enlaces relevantes: no disponibles (la búsqueda web no ha arrojado enlaces relacionados con el modelo).

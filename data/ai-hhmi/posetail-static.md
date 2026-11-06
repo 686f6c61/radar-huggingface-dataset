@@ -66,7 +66,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace: ai-hhmi/posetail-static](https://huggingface.co/ai-hhmi/posetail-static)
+- [Hugging Face: ai-hhmi/posetail-static](https://huggingface.co/ai-hhmi/posetail-static)
 - [PyPI: posetail](https://pypi.org/project/posetail/)
 - [GitHub: AI-HHMI](https://github.com/AI-HHMI)
 - [HHMI: AI@HHMI Initiative](https://www.hhmi.org/shaping-science/ai-hhmi)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Cutsy_Bitsy_3D_Anima es un modelo publicado en HuggingFace por el usuario AIxFuneStudio bajo el identificador AIxFuneStudio/Cutsy_Bitsy_3D_Anima. La informacion publica disponible es minima: la ficha no declara pipeline, idiomas, arquitectura ni parametros, y el repositorio unicamente expone una licencia de tipo "other" y un acceso restringido (gated) que obliga a aceptar condiciones adicionales antes de poder descargar los pesos. El repositorio ocupa 4,4 GB, se creo el 10 de septiembre de 2026 y su ultima actualizacion data del 11 de septiembre de 2026.
+Cutsy_Bitsy_3D_Anima es un modelo publicado en Hugging Face por el usuario AIxFuneStudio bajo el identificador AIxFuneStudio/Cutsy_Bitsy_3D_Anima. La informacion publica disponible es minima: la ficha no declara pipeline, idiomas, arquitectura ni parametros, y el repositorio unicamente expone una licencia de tipo "other" y un acceso restringido (gated) que obliga a aceptar condiciones adicionales antes de poder descargar los pesos. El repositorio ocupa 4,4 GB, se creo el 10 de septiembre de 2026 y su ultima actualizacion data del 11 de septiembre de 2026.
 
 Por el nombre, el modelo parece orientado a animacion o contenido 3D, pero no existe documentacion oficial que confirme la tarea, la arquitectura ni el conjunto de datos de entrenamiento, por lo que esa hipotesis no puede verificarse. En el momento de redactar esta ficha acumula 0 descargas y 0 "likes", de modo que no hay evidencia de uso por parte de la comunidad ni referencias externas contrastables.
 
@@ -23,14 +23,14 @@ Su relevancia actual es, por tanto, limitada e informativa: constituye un ejempl
 | Fecha de publicacion | 10 de septiembre de 2026 |
 | Ultima actualizacion | 11 de septiembre de 2026 |
 | Tamano del repositorio | 4,4 GB |
-| Acceso | restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Descargas / likes | 0 / 0 |
 | Pipeline declarado | no disponible |
 | Region declarada | us |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo. La ficha de HuggingFace no especifica si se trata de un transformer, un modelo de difusion, un modelo de campos de radiancia neuronal (NeRF), un sistema de sintesis de movimiento u otra familia de arquitecturas. Tampoco se indica el numero de parametros, la longitud de contexto soportada ni si emplea mecanismos de atencion lineal, mezcla de expertos (MoE) o decodificacion especulativa.
+No se ha publicado informacion sobre la arquitectura del modelo. La ficha de Hugging Face no especifica si se trata de un transformer, un modelo de difusion, un modelo de campos de radiancia neuronal (NeRF), un sistema de sintesis de movimiento u otra familia de arquitecturas. Tampoco se indica el numero de parametros, la longitud de contexto soportada ni si emplea mecanismos de atencion lineal, mezcla de expertos (MoE) o decodificacion especulativa.
 
 Respecto al entrenamiento, no hay datos disponibles sobre el volumen de tokens o de muestras utilizado, la composicion del dataset, la existencia de fases de ajuste fino supervisado, RLHF o DPO, ni sobre posibles procesos de filtrado o curacion de datos. El unico dato cuantitativo verificable es el tamano del repositorio, 4,4 GB; ese valor por si solo no permite deducir el numero de parametros sin conocer la precision y el formato de los pesos, por lo que no se ofrece ninguna estimacion.
 
@@ -60,7 +60,7 @@ Los siguientes escenarios son hipotesis de aplicacion condicionadas a que el mod
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La ficha de HuggingFace no incluye tablas de evaluacion, comparativas con otros modelos ni metricas de calidad, latencia o throughput.
+No se han publicado resultados de benchmarks en la informacion disponible. La ficha de Hugging Face no incluye tablas de evaluacion, comparativas con otros modelos ni metricas de calidad, latencia o throughput.
 
 ## Requisitos de hardware
 
@@ -90,6 +90,6 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AIxFuneStudio/Cutsy_Bitsy_3D_Anima
-- Perfil del autor en HuggingFace: https://huggingface.co/AIxFuneStudio
+- Modelo en Hugging Face: https://huggingface.co/AIxFuneStudio/Cutsy_Bitsy_3D_Anima
+- Perfil del autor en Hugging Face: https://huggingface.co/AIxFuneStudio
 - Paper, blog tecnico, repositorio de codigo y demos: no disponible. La busqueda web realizada no devolvio ningun resultado relacionado con el modelo; los enlaces recuperados correspondian a paginas de soporte de Microsoft sin relacion con la ficha.

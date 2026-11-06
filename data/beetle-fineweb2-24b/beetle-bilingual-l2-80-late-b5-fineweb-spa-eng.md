@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `beetle-bilingual-l2-80-late-b5-fineweb-spa-eng`, publicado por el usuario Beetle-FineWeb2-24B, es un modelo de generación de texto de tamaño reducido (aproximadamente 194 millones de parámetros) diseñado para tareas bilingües en español e inglés, según su nombre. Se presenta como un "pico_decoder", lo que sugiere una arquitectura de decoder compacta, y su entrenamiento parece estar basado en el dataset multilingüe FineWeb2 de HuggingFace, aunque no se proporciona documentación oficial al respecto.
+El modelo `beetle-bilingual-l2-80-late-b5-fineweb-spa-eng`, publicado por el usuario Beetle-FineWeb2-24B, es un modelo de generación de texto de tamaño reducido (aproximadamente 194 millones de parámetros) diseñado para tareas bilingües en español e inglés, según su nombre. Se presenta como un "pico_decoder", lo que sugiere una arquitectura de decoder compacta, y su entrenamiento parece estar basado en el dataset multilingüe FineWeb2 de Hugging Face, aunque no se proporciona documentación oficial al respecto.
 
 El modelo fue subido al Hub el 29 de agosto de 2026 y no registra descargas ni "likes" en el momento de la consulta. Su relevancia radica en ser un ejemplo de modelo pequeño orientado a bilingüismo, potencialmente útil para entornos con recursos limitados, pero la ausencia de una model card detallada y de métricas de evaluación limita seriamente su aplicabilidad práctica. El repositorio ocupa 101,6 GB, un tamaño desproporcionado para sus parámetros, lo que sugiere que puede incluir checkpoints adicionales o datos de entrenamiento.
 
@@ -21,7 +21,7 @@ El modelo fue subido al Hub el 29 de agosto de 2026 y no registra descargas ni "
 
 ## Arquitectura y entrenamiento
 
-La información disponible es muy escasa. El tag `pico_decoder` indica que se trata de un decoder de tamaño pequeño, pero no se especifica si es un transformer estándar, si emplea atención lineal u otras innovaciones. El nombre del modelo sugiere que fue entrenado sobre el dataset FineWeb2, un corpus multilingüe curado por HuggingFace que aplica deduplicación global por idioma y filtrado de calidad. No se dispone de datos sobre el número de tokens de entrenamiento, la composición exacta del dataset, ni si se aplicaron técnicas de alineación como RLHF o DPO. El tag `custom_code` indica que el modelo requiere código personalizado para su carga, lo que puede complicar su uso con herramientas estándar.
+La información disponible es muy escasa. El tag `pico_decoder` indica que se trata de un decoder de tamaño pequeño, pero no se especifica si es un transformer estándar, si emplea atención lineal u otras innovaciones. El nombre del modelo sugiere que fue entrenado sobre el dataset FineWeb2, un corpus multilingüe curado por Hugging Face que aplica deduplicación global por idioma y filtrado de calidad. No se dispone de datos sobre el número de tokens de entrenamiento, la composición exacta del dataset, ni si se aplicaron técnicas de alineación como RLHF o DPO. El tag `custom_code` indica que el modelo requiere código personalizado para su carga, lo que puede complicar su uso con herramientas estándar.
 
 ## Capacidades
 
@@ -68,7 +68,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Beetle-FineWeb2-24B/beetle-bilingual-l2-80-late-b5-fineweb-spa-eng
+- Modelo en Hugging Face: https://huggingface.co/Beetle-FineWeb2-24B/beetle-bilingual-l2-80-late-b5-fineweb-spa-eng
 - Ficha externa con datos de contexto y VRAM: https://free2aitools.com/model/beetle-fineweb2-24b/beetle-bilingual-l2-80-late-b5-fineweb-deu-eng (variante en alemán, misma familia)
 - Repositorio del dataset FineWeb2: https://github.com/huggingface/fineweb-2
 - Paper de FineWeb2: https://arxiv.org/html/2506.20920v1

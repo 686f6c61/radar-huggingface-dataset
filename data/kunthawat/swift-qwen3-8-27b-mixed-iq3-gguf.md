@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Parametros | Contexto | Formato y cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | kunthawat/swift-qwen3.8-27b-mixed-iq3-gguf (este) | 27B (deducido) | no disponible | GGUF, mixto IQ3 | swift-open-license-1.0 | 0 descargas, 0 likes |
-| kunthawat/swift-1.5-qwen3.8-27b-with-unsloth-iq3-xxs-gguf | 27B | no disponible | GGUF, IQ3_XXS basado en UD-IQ3_XXS de Unsloth | no disponible en los resultados | Repositorio publico en HuggingFace |
-| vmarcelo/Swift-Qwen3.8-27B-MIX_GGUF | 27B | no disponible | GGUF, mezcla IQ4 + IQ3 + IQ2 | no disponible en los resultados | Repositorio publico en HuggingFace |
+| kunthawat/swift-1.5-qwen3.8-27b-with-unsloth-iq3-xxs-gguf | 27B | no disponible | GGUF, IQ3_XXS basado en UD-IQ3_XXS de Unsloth | no disponible en los resultados | Repositorio publico en Hugging Face |
+| vmarcelo/Swift-Qwen3.8-27B-MIX_GGUF | 27B | no disponible | GGUF, mezcla IQ4 + IQ3 + IQ2 | no disponible en los resultados | Repositorio publico en Hugging Face |
 | ukisai/Swift-1.5-Qwen3.8-27B-GSQ-RCO-GGUF | 27B | no disponible | GGUF, asignacion por tensor de GSQ-RCO (ISTA-DASLab) | no disponible en los resultados | Repositorio publico en ModelScope |
 
 No se dispone de datos de rendimiento comparados entre estas variantes, por lo que la eleccion entre ellas solo puede guiarse, a dia de hoy, por el regimen de bits declarado y por la reproducibilidad del proceso de cuantizacion documentado por cada autor.
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento comparados entre estas variantes, por lo q
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kunthawat/swift-qwen3.8-27b-mixed-iq3-gguf
+- Repositorio en Hugging Face: https://huggingface.co/kunthawat/swift-qwen3.8-27b-mixed-iq3-gguf
 - Repositorio hermano del mismo autor (IQ3_XXS con Unsloth): https://huggingface.co/kunthawat/swift-1.5-qwen3.8-27b-with-unsloth-iq3-xxs-gguf
 - Model card de la mezcla IQ4 + IQ3 + IQ2: https://huggingface.co/vmarcelo/Swift-Qwen3.8-27B-MIX_GGUF/blob/main/README.md
 - Ficha de descarga de terceros del modelo GGUF: https://local-ai-zone.github.io/models/swift-qwen3-8-27b.html

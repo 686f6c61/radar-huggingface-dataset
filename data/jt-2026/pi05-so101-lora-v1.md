@@ -74,9 +74,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Base | Parámetros | Contexto | Robot objetivo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| **jt-2026/pi05-so101-lora-v1** | π₀.5 | ~3,3B + LoRA | no disponible | SO-101 | Apache 2.0 | HuggingFace |
-| **jakegonz/pi05-so101-lora-50demos** | π₀.5 | ~3,3B + LoRA | no disponible | SO-101 | Apache 2.0 | HuggingFace |
-| **felixmayor/pi05_so101_orange_cube** | π₀.5 | ~3,3B + LoRA | no disponible | SO-101 | Apache 2.0 | HuggingFace |
+| **jt-2026/pi05-so101-lora-v1** | π₀.5 | ~3,3B + LoRA | no disponible | SO-101 | Apache 2.0 | Hugging Face |
+| **jakegonz/pi05-so101-lora-50demos** | π₀.5 | ~3,3B + LoRA | no disponible | SO-101 | Apache 2.0 | Hugging Face |
+| **felixmayor/pi05_so101_orange_cube** | π₀.5 | ~3,3B + LoRA | no disponible | SO-101 | Apache 2.0 | Hugging Face |
 | **π₀.5 base** (Physical Intelligence) | π₀.5 | ~3,3B | no disponible | General (múltiples robots) | Apache 2.0 | Repo oficial |
 
 Los tres modelos de la lista son adaptaciones LoRA del mismo base π₀.5 sobre el mismo robot SO-101, diferenciándose en el dataset y el número de demostraciones (50 demos en el caso de jakegonz). El modelo de `jt-2026` se distingue por usar 49 episodios y una tarea específica de mesa de desayuno. La base π₀.5 tiene un alcance mucho mayor y es el punto de partida para todos ellos.
@@ -94,7 +94,7 @@ Los tres modelos de la lista son adaptaciones LoRA del mismo base π₀.5 sobre 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jt-2026/pi05-so101-lora-v1
+- Modelo en Hugging Face: https://huggingface.co/jt-2026/pi05-so101-lora-v1
 - Repositorio GitHub del pipeline: https://github.com/ljt228/pi05-so101-finetune
 - Paper de π₀.5: https://arxiv.org/abs/2504.16054
 - Dataset de entrenamiento: https://huggingface.co/datasets/jt-2026/so101-breakfast

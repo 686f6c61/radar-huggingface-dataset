@@ -88,11 +88,11 @@ La comparativa se basa en datos publicados por el autor. MTPLX es un proyecto co
 - En modelos MoE (p. ej. BigBang 35B-A3B) el injerto no aporta mejora de throughput (101-108 tok/s con y sin cabeza) y anade 475 MB de peso; no es danino pero es inutil.
 - No se redistribuyen los pesos base; el usuario debe tener un checkpoint receptor compatible (mismo `hidden_size`, `vocab_size`, etc.).
 - No hay datos sobre sesgos, alucinacion o calidad de generacion del modelo base; la cabeza solo acelera, no modifica el comportamiento del modelo.
-- La licencia Apache-2.0 cubre la cabeza y la herramienta, pero el uso del modelo base Qwen3.8-27B esta sujeto a su propia licencia (Apache-2.0 segun el repo de HuggingFace, pero conviene verificarlo).
+- La licencia Apache-2.0 cubre la cabeza y la herramienta, pero el uso del modelo base Qwen3.8-27B esta sujeto a su propia licencia (Apache-2.0 segun el repo de Hugging Face, pero conviene verificarlo).
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/KaedeTai/mlx-mtp-graft
+- Repositorio Hugging Face: https://huggingface.co/KaedeTai/mlx-mtp-graft
 - Proyecto MTPLX (framework relacionado): https://github.com/youssofal/mtplx
 - Web de MTPLX: https://www.mtplx.com/
 - Guia de MTP de unsloth: https://unsloth.ai/docs/models/mtp

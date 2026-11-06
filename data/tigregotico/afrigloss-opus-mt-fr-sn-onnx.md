@@ -99,7 +99,7 @@ El modelo fuente y esta exportacion son equivalentes en calidad (paridad 7/7 en 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/TigreGotico/afrigloss-opus-mt-fr-sn-onnx
+- Repositorio Hugging Face: https://huggingface.co/TigreGotico/afrigloss-opus-mt-fr-sn-onnx
 - Modelo base: https://huggingface.co/AfriSpeech/afrigloss-opus-mt-fr-sn
 - Commit de exportacion: `64497913a4ed6d8681749d0eb1dce9629755d504` (en el repositorio del modelo base)
 - Optimum (libreria de exportacion y runtime): https://github.com/huggingface/optimum

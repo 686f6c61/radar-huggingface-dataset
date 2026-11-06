@@ -56,9 +56,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vam-cross-level2-panda-robotiq-widowx-texture-ur5e-contact-v2-video-lora-iter400 (este) | Adaptador LoRA para Video2World | no disponible | no disponible | no disponible | HuggingFace |
-| vam-cross-level2-panda-robotiq-widowx-texture-video-lora-iter200 | Adaptador LoRA para Video2World | no disponible | no disponible | no disponible | HuggingFace |
-| vam-cross-level5-panda-robotiq-widowx-texture-video-lora-iter400 | Adaptador LoRA para Video2World | no disponible | no disponible | no disponible | HuggingFace |
+| vam-cross-level2-panda-robotiq-widowx-texture-ur5e-contact-v2-video-lora-iter400 (este) | Adaptador LoRA para Video2World | no disponible | no disponible | no disponible | Hugging Face |
+| vam-cross-level2-panda-robotiq-widowx-texture-video-lora-iter200 | Adaptador LoRA para Video2World | no disponible | no disponible | no disponible | Hugging Face |
+| vam-cross-level5-panda-robotiq-widowx-texture-video-lora-iter400 | Adaptador LoRA para Video2World | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de modelos comparables de otras fuentes con datos públicos suficientes. Los tres modelos listados pertenecen al mismo autor y comparten la misma naturaleza de adaptador LoRA, pero no se han publicado especificaciones técnicas detalladas.
 
@@ -73,6 +73,6 @@ No se dispone de modelos comparables de otras fuentes con datos públicos sufici
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dreamdifferent/vam-cross-level2-panda-robotiq-widowx-texture-ur5e-contact-v2-video-lora-iter400
+- Hugging Face: https://huggingface.co/dreamdifferent/vam-cross-level2-panda-robotiq-widowx-texture-ur5e-contact-v2-video-lora-iter400
 - Modelo similar (iter200): https://huggingface.co/dreamdifferent/vam-cross-level2-panda-robotiq-widowx-texture-video-lora-iter200
 - Modelo similar (level5): https://huggingface.co/dreamdifferent/vam-cross-level5-panda-robotiq-widowx-texture-video-lora-iter400

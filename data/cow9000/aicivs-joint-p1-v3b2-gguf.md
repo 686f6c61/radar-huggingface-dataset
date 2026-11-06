@@ -104,7 +104,7 @@ No se han identificado en la informacion disponible modelos de terceros comparab
 |---|---|---|---|---|---|
 | aicivs-joint-p1-v3b2-gguf (Q4_K_M) | ~2,5 B | 32.768 tokens (cuatro slots de 8k) | apache-2.0 | GGUF, llama.cpp | 14/16 misiones limpias, p50 2,1 s en RTX 3090 Ti |
 | aicivs-joint-p1-v3b2 W4A16 | ~2,5 B (mismo estudiante ajustado) | no disponible | no disponible | vLLM, segun el autor | no disponible; descrito como mas rapido para dialogo y cotilleo |
-| openbmb/MiniCPM5-2B (modelo base) | ~2,5 B | no disponible | no disponible | HuggingFace | no disponible; no esta ajustado al contrato de AICivs |
+| openbmb/MiniCPM5-2B (modelo base) | ~2,5 B | no disponible | no disponible | Hugging Face | no disponible; no esta ajustado al contrato de AICivs |
 
 ## Limitaciones y advertencias
 
@@ -122,7 +122,7 @@ No se han identificado en la informacion disponible modelos de terceros comparab
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cow9000/aicivs-joint-p1-v3b2-gguf
+- Modelo en Hugging Face: https://huggingface.co/cow9000/aicivs-joint-p1-v3b2-gguf
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
 - Documentacion de ajuste fino citada por el autor, en el repositorio del mod: `docs/08-finetuning.md` (no se proporciona URL directa)
 - Contrato del servicio citado por el autor: `service/aicivs_service/contract/` (modelos pydantic, sin URL directa)

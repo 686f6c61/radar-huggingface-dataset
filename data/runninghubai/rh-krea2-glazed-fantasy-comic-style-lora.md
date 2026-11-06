@@ -2,7 +2,7 @@
 
 ## Resumen
 
-rh-krea2-glazed-fantasy-comic-style-lora es un adaptador LoRA para edición y generación de imágenes condicionada por texto, publicado por RunningHubAI en HuggingFace. No se trata de un modelo base autónomo, sino de un conjunto de pesos complementarios afinados a partir del modelo krea2, orientados a producir un estilo visual concreto: pintura digital de tono pastel con estética de fantasía y cómic, según la descripción incluida en la model card.
+rh-krea2-glazed-fantasy-comic-style-lora es un adaptador LoRA para edición y generación de imágenes condicionada por texto, publicado por RunningHubAI en Hugging Face. No se trata de un modelo base autónomo, sino de un conjunto de pesos complementarios afinados a partir del modelo krea2, orientados a producir un estilo visual concreto: pintura digital de tono pastel con estética de fantasía y cómic, según la descripción incluida en la model card.
 
 El repositorio contiene un único archivo de pesos (`Krea2梦幻卡通.safetensors`, 224 MiB) y está etiquetado para su uso en ComfyUI y en la plataforma RunningHub. La pipeline declarada es image-text-to-image, lo que indica que el adaptador está pensado para tareas de generación o edición de imagen a partir de una imagen de entrada y una instrucción textual, más que para generación puramente texto-a-imagen.
 
@@ -74,7 +74,7 @@ No disponible. La información proporcionada no incluye otros LoRA de estilo com
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RunningHubAI/rh-krea2-glazed-fantasy-comic-style-lora
+- Hugging Face: https://huggingface.co/RunningHubAI/rh-krea2-glazed-fantasy-comic-style-lora
 - Modelo original en RunningHub: https://www.runninghub.ai/model/public/2077359099479031809
 - Página del autor: https://www.runninghub.ai/user-center/1980864188878884866
 - RunningHub International: https://www.runninghub.ai

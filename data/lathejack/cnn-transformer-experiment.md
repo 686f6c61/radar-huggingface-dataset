@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`lathejack/cnn-transformer-experiment` es un repositorio experimental publicado en HuggingFace que contiene una implementación propia y compacta en PyTorch de una arquitectura híbrida denominada Cnn Transformer, orientada a tareas multitarea. No se trata de un modelo entrenado ni de un release listo para producción: el propio autor indica explícitamente que el checkpoint incluido es una inicialización válida para pruebas de humo (smoke tests), revisión de código y experimentos controlados de pequeño tamaño.
+`lathejack/cnn-transformer-experiment` es un repositorio experimental publicado en Hugging Face que contiene una implementación propia y compacta en PyTorch de una arquitectura híbrida denominada Cnn Transformer, orientada a tareas multitarea. No se trata de un modelo entrenado ni de un release listo para producción: el propio autor indica explícitamente que el checkpoint incluido es una inicialización válida para pruebas de humo (smoke tests), revisión de código y experimentos controlados de pequeño tamaño.
 
 La escala del modelo es mínima: 33.088 parámetros totales según los pesos en formato safetensors, con un tamaño de repositorio de 0,0 GB. La configuración por defecto es la variante "base" y define atención de tipo linear, fusión mediante descomposición de Tucker, activación ReLU y normalización por instancias (InstanceNorm). La receta de entrenamiento incluida usa el optimizador AdamW con un scheduler de tipo coseno, aunque el autor aclara que son valores de partida del script y no la evidencia de una ejecución completada.
 
@@ -91,17 +91,17 @@ No se identifican en la información disponible modelos de referencia entrenados
 - Riesgo de alucinación: no aplica en el sentido habitual, ya que no es un modelo de lenguaje entrenado; el riesgo real es interpretar sus salidas como si tuvieran significado.
 - No hay información sobre sesgos, porque no hay datos de entrenamiento publicados ni proceso de alineación documentado.
 - No se especifican idiomas soportados ni longitud de contexto, lo que impide planificar su uso en tareas de NLP o visión reales.
-- Compatibilidad limitada: las APIs genéricas de carga automática de HuggingFace no funcionan sin un adaptador explícito, lo que complica su integración en herramientas estándar.
+- Compatibilidad limitada: las APIs genéricas de carga automática de Hugging Face no funcionan sin un adaptador explícito, lo que complica su integración en herramientas estándar.
 - Restricciones de licencia: el código se libera bajo MIT, lo que permite uso comercial y modificación, pero el autor recomienda revisar por separado los términos de los datos de origen cuando se utilice con conjuntos de datos externos.
 - Cualquier resultado obtenido con un futuro checkpoint entrenado debe documentarse de forma separada de los valores por defecto aquí publicados.
 - El repositorio tiene 0 descargas y 0 "likes" en el momento de la consulta, y un tamaño de 0,0 GB, señales coherentes con un artefacto de prueba sin adopción.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lathejack/cnn-transformer-experiment
+- Modelo en Hugging Face: https://huggingface.co/lathejack/cnn-transformer-experiment
 - Repositorio hermano (mismo nombre, tarea "Matching"): https://huggingface.co/Aicollins/cnn-transformer-experiment
 - Repositorio hermano (mismo nombre): https://huggingface.co/amitmukherjee/cnn-transformer-experiment
 - Temática CNN-Transformer en GitHub (proyectos de detección y segmentación de defectos superficiales): https://github.com/topics/cnn-transformer
 - Introducción a Transformers en Machine Learning (GeeksforGeeks): https://www.geeksforgeeks.org/machine-learning/getting-started-with-transformers/
-- Librería Transformers de HuggingFace (GeeksforGeeks): https://www.geeksforgeeks.org/deep-learning/transformers-library/
+- Librería Transformers de Hugging Face (GeeksforGeeks): https://www.geeksforgeeks.org/deep-learning/transformers-library/
 - No se han encontrado paper, blog técnico ni demo asociados específicamente a este modelo.

@@ -83,6 +83,6 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ssahnuatdaa/qwen3.5-0.8b-rag-jsquad-lora
+- Modelo en Hugging Face: https://huggingface.co/ssahnuatdaa/qwen3.5-0.8b-rag-jsquad-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Dataset JSQuAD / JGLUE: https://github.com/yahoojapan/JGLUE

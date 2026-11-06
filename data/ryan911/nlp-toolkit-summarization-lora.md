@@ -67,6 +67,6 @@ No se dispone de información sobre adaptadores LoRA comparables para resumen so
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryan911/nlp-toolkit-summarization-lora
+- Hugging Face: https://huggingface.co/Ryan911/nlp-toolkit-summarization-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - TRL (librería de entrenamiento): https://github.com/huggingface/trl

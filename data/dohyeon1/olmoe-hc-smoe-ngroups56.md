@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `Dohyeon1/OLMoE-HC-SMoE-ngroups56` es un modelo de generación de texto subido a HuggingFace por el usuario Dohyeon1 el 3 de septiembre de 2026. Según el nombre, parece tratarse de una variante de la familia OLMoE con arquitectura de mezcla de expertos dispersa (SMoE) y 56 grupos de expertos, aunque esta interpretación no está confirmada por ninguna documentación oficial. El modelo cuenta con 6.919.161.856 parámetros totales y un tamaño de repositorio de 13,8 GB, lo que sugiere pesos en precisión fp16 o similar.
+El modelo `Dohyeon1/OLMoE-HC-SMoE-ngroups56` es un modelo de generación de texto subido a Hugging Face por el usuario Dohyeon1 el 3 de septiembre de 2026. Según el nombre, parece tratarse de una variante de la familia OLMoE con arquitectura de mezcla de expertos dispersa (SMoE) y 56 grupos de expertos, aunque esta interpretación no está confirmada por ninguna documentación oficial. El modelo cuenta con 6.919.161.856 parámetros totales y un tamaño de repositorio de 13,8 GB, lo que sugiere pesos en precisión fp16 o similar.
 
-La model card asociada es una plantilla genérica generada automáticamente por HuggingFace, sin información sobre arquitectura, entrenamiento, capacidades, licencia o idiomas. No se ha publicado ningún benchmark, paper o documentación técnica adicional. Se trata de un modelo recién creado, con cero descargas y cero likes, por lo que su relevancia actual es muy limitada y cualquier uso en producción requeriría una evaluación previa exhaustiva.
+La model card asociada es una plantilla genérica generada automáticamente por Hugging Face, sin información sobre arquitectura, entrenamiento, capacidades, licencia o idiomas. No se ha publicado ningún benchmark, paper o documentación técnica adicional. Se trata de un modelo recién creado, con cero descargas y cero likes, por lo que su relevancia actual es muy limitada y cualquier uso en producción requeriría una evaluación previa exhaustiva.
 
 ## Especificaciones técnicas
 
@@ -53,6 +53,6 @@ No se dispone de información suficiente para realizar una comparativa. El nombr
 
 ## Enlaces
 
-- [HuggingFace: Dohyeon1/OLMoE-HC-SMoE-ngroups56](https://huggingface.co/Dohyeon1/OLMoE-HC-SMoE-ngroups56)
+- [Hugging Face: Dohyeon1/OLMoE-HC-SMoE-ngroups56](https://huggingface.co/Dohyeon1/OLMoE-HC-SMoE-ngroups56)
 
 No se han encontrado otros enlaces relevantes (papers, repositorios, demos) en la búsqueda web.

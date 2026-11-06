@@ -69,7 +69,7 @@ No se dispone de información suficiente para una comparativa con modelos simila
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/cmcheng/DeepMath-GRPO_DeepSeek-R1-Distill-Qwen-1.5B
+- Repositorio de Hugging Face: https://huggingface.co/cmcheng/DeepMath-GRPO_DeepSeek-R1-Distill-Qwen-1.5B
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 - Dataset: zwhe99/DeepMath-103K (no se proporciona enlace directo en la información)
 - Página de DeepSeek: https://deepseek.com/en/index.html

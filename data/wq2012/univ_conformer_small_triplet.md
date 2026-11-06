@@ -26,7 +26,7 @@ El dominio de entrenamiento se etiqueta como `universal` y la evaluación se rep
 | Dominio de entrenamiento | `universal` |
 | Frontend de audio | log-mel de 80 dimensiones a 16.000 Hz + VAD de energía + CMVN |
 | Librería | `flaxspeaker` (JAX/Flax) |
-| Pipeline de HuggingFace | `audio-classification` |
+| Pipeline de Hugging Face | `audio-classification` |
 | Datasets asociados | librispeech_asr, cnceleb, voxceleb |
 | Métricas declaradas | EER, minDCF, ROC-AUC |
 | Archivos del repositorio | `model.safetensors`, `flax_model.msgpack`, `config.json`, `preprocessor_config.json`, `eval_results.json` |
@@ -92,7 +92,7 @@ No se han publicado en la información disponible comparaciones directas con otr
 - GPU recomendadas: cualquier GPU con soporte CUDA sirve; no se requiere A100, H100 ni VRAM alta. Modelos como RTX 3060, RTX 4090 o GTX 1650 son sobradamente suficientes, y también GPU integradas con soporte JAX.
 - CPU: la inferencia es viable en CPU para cargas de baja concurrencia, dado el tamaño del modelo.
 - Dispositivos de borde: el tamaño de pesos permite desplegarlo en Raspberry Pi o dispositivos móviles, siempre que se resuelva el runtime de JAX o se exporte a otro formato.
-- Opciones de despliegue: la vía oficial es la librería `flaxspeaker` con JAX/Flax, cargando desde HuggingFace Hub o desde directorio local, o el script `scripts/inference.py`. No se documenta soporte para vLLM, llama.cpp, Ollama, TGI, TensorRT ni ONNX en la información disponible.
+- Opciones de despliegue: la vía oficial es la librería `flaxspeaker` con JAX/Flax, cargando desde Hugging Face Hub o desde directorio local, o el script `scripts/inference.py`. No se documenta soporte para vLLM, llama.cpp, Ollama, TGI, TensorRT ni ONNX en la información disponible.
 - Formatos cargables: `flax_model.msgpack` como formato nativo Flax y `model.safetensors` como formato principal.
 - Latencia y throughput: no disponibles (el autor no publica mediciones de tiempo de inferencia ni de audio procesado por segundo).
 
@@ -123,8 +123,8 @@ No se han proporcionado datos verificados de parámetros, contexto, rendimiento 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wq2012/univ_conformer_small_triplet
-- Colección FlaxSpeaker en HuggingFace: https://huggingface.co/collections/wq2012/flaxspeaker-6ad02d999a4180c794870595
+- Modelo en Hugging Face: https://huggingface.co/wq2012/univ_conformer_small_triplet
+- Colección FlaxSpeaker en Hugging Face: https://huggingface.co/collections/wq2012/flaxspeaker-6ad02d999a4180c794870595
 - Repositorio GitHub de FlaxSpeaker: https://github.com/wq2012/FlaxSpeaker
 - Paquete en PyPI: https://pypi.org/project/flaxspeaker/
 - Artículo GE2E, Generalized End-to-End Loss for Speaker Verification: https://arxiv.org/abs/1710.10467

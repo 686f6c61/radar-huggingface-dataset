@@ -78,11 +78,11 @@ La comparativa muestra que esta cuantización ofrece el mismo rendimiento que el
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/Arno0117/Qwen2.5-7B-Instruct-AWQ
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/Arno0117/Qwen2.5-7B-Instruct-AWQ
 - Modelo base oficial (AWQ): https://huggingface.co/Qwen/Qwen2.5-7B-Instruct-AWQ
 - Modelo base en BF16: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Blog oficial de Qwen2.5: https://qwenlm.github.io/blog/qwen2.5/
 - Documentacion de cuantizacion AWQ: https://qwen.readthedocs.io/en/latest/quantization/awq.html
 - Documentacion de despliegue con vLLM: https://qwen.readthedocs.io/en/latest/deployment/vllm.html
 - GitHub de Qwen2.5: https://github.com/QwenLM/Qwen2.5
-- Coleccion de modelos Qwen2.5 en HuggingFace: https://huggingface.co/collections/Qwen/qwen25
+- Coleccion de modelos Qwen2.5 en Hugging Face: https://huggingface.co/collections/Qwen/qwen25

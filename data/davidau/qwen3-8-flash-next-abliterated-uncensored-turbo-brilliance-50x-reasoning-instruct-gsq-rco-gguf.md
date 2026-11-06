@@ -6,7 +6,7 @@ DavidAU/Qwen3.8-Flash-Next-Abliterated-Uncensored-Turbo-Brilliance-50x-Reasoning
 
 El dato verificable de tamaño es de 176.943.899.520 parámetros totales según los pesos en safetensors del repositorio, es decir, aproximadamente 176,9 mil millones de parámetros. El repositorio GGUF ocupa 84,8 GB. El autor publicita un conjunto de 27 modos de razonamiento, 27 modos de instrucción, 15 "AI Constructs" y 5 "Super AI Constructs" (Brainstorm, Brainstorm Business, Universal Teacher, Agent, Coder), así como 9 modos de razonamiento "Xhigh". Estos modos son presets de prompt o variantes de comportamiento, no arquitecturas distintas.
 
-Su relevancia actual es doble: por un lado, es un ejemplo del ecosistema de cuantizaciones comunitarias que permiten ejecutar modelos de ~177B en hardware local mediante GGUF; por otro, ilustra los riesgos de la cadena de derivación (base no verificada, acceso restringido, ausencia de benchmarks y de documentación técnica publicada). La licencia declarada es Apache 2.0, pero el acceso está restringido y requiere aceptar condiciones en HuggingFace.
+Su relevancia actual es doble: por un lado, es un ejemplo del ecosistema de cuantizaciones comunitarias que permiten ejecutar modelos de ~177B en hardware local mediante GGUF; por otro, ilustra los riesgos de la cadena de derivación (base no verificada, acceso restringido, ausencia de benchmarks y de documentación técnica publicada). La licencia declarada es Apache 2.0, pero el acceso está restringido y requiere aceptar condiciones en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ Su relevancia actual es doble: por un lado, es un ejemplo del ecosistema de cuan
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | GGUF con cuantizacion de precision mixta (mixed-precision) e imatrix; niveles concretos (Q2_K, Q4_K_M, Q8_0, etc.) no disponibles |
 | Idiomas soportados | arabe, chino, ingles, frances, aleman, hindi, indonesio, italiano, japones, coreano, polaco, portugues, ruso, castellano, tailandes, vietnamita (16 idiomas) |
-| Licencia | Apache 2.0, con acceso restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Licencia | Apache 2.0, con acceso restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Formato de pesos | GGUF (repo de 84,8 GB); el modelo de origen dispone de pesos safetensors |
 
 ## Arquitectura y entrenamiento
@@ -94,6 +94,6 @@ No se han identificado en la informacion proporcionada modelos comparables concr
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/DavidAU/Qwen3.8-Flash-Next-Abliterated-Uncensored-Turbo-Brilliance-50x-Reasoning-Instruct-GSQ-RCO-GGUF
+- Hugging Face (modelo): https://huggingface.co/DavidAU/Qwen3.8-Flash-Next-Abliterated-Uncensored-Turbo-Brilliance-50x-Reasoning-Instruct-GSQ-RCO-GGUF
 - Modelo base declarado: https://huggingface.co/SC117/Qwen3.8-Flash-Next-GSQ-RCO-abliterated-GGUF
 - Papers, blogs, repositorios y demos: no se han encontrado enlaces relevantes en la busqueda web. Los resultados obtenidos no guardaban relacion con el modelo y se han descartado.

@@ -83,7 +83,7 @@ Otras familias comparables por tamaño (Llama 3.2 1B Instruct, SmolLM2-1.7B-Inst
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tinyopsec/UniSS-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/tinyopsec/UniSS-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Proyecto original citado en la model card: https://huggingface.co/cmots/UniSS
 - llama.cpp (runtime recomendado): https://github.com/ggml-org/llama.cpp

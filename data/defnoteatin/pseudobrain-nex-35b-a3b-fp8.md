@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PseudoBrain-Nex-35B-A3B-FP8 es un modelo de lenguaje de tipo Mixture of Experts (MoE) con 35.109.233.796 parámetros totales, publicado por Ian Kurt Galeon (usuario `defnoteatin` en HuggingFace) bajo licencia Apache 2.0. Se construye sobre la familia Nex-N2.5-mini, que a su vez deriva de Qwen3.5-35B-A3B, y aplica la arquitectura propietaria PseudoBrain (clase `PB27MoEForConditionalGeneration`) para resolver el problema del coste de memoria de la caché KV en contextos largos. El modelo se distribuye en formato FP8 mediante `compressed-tensors` y está pensado para servirse con vLLM.
+PseudoBrain-Nex-35B-A3B-FP8 es un modelo de lenguaje de tipo Mixture of Experts (MoE) con 35.109.233.796 parámetros totales, publicado por Ian Kurt Galeon (usuario `defnoteatin` en Hugging Face) bajo licencia Apache 2.0. Se construye sobre la familia Nex-N2.5-mini, que a su vez deriva de Qwen3.5-35B-A3B, y aplica la arquitectura propietaria PseudoBrain (clase `PB27MoEForConditionalGeneration`) para resolver el problema del coste de memoria de la caché KV en contextos largos. El modelo se distribuye en formato FP8 mediante `compressed-tensors` y está pensado para servirse con vLLM.
 
 La innovación central es un esquema híbrido de atención que combina 30 capas de Gated DeltaNet (estado recurrente de tamaño fijo O(1)) con 10 capas de atención completa convertidas en ventana deslizante de 16K tokens más memoria exacta Quest de tres niveles sobre NVMe/page-cache. Según el autor, esto permite mantener una ventana activa de aproximadamente 486 MiB a 1M de tokens (frente a unos 20 GB de una caché KV convencional), con una reducción declarada del 97,6 % en memoria de caché KV.
 
@@ -74,10 +74,10 @@ El autor declara una recuperación exacta del 100 % (40/40) en el rango de 8K a 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| PseudoBrain-Nex-35B-A3B-FP8 | 35,1B totales (A3B) | 1.048.576 | Apache 2.0 | HuggingFace, vLLM con plugin | Memoria de decodificación O(1) |
-| Nex-N2.5-mini (modelo base) | no disponible | no disponible | no disponible | HuggingFace | Base directa de este modelo |
-| Qwen3.5-35B-A3B | ~35B (A3B) | no disponible | no disponible | HuggingFace | Arquitectura de origen de la familia |
-| Huihui-Qwen3.5-35B-A3B-abliterated | ~35B (A3B) | no disponible | no disponible | HuggingFace | Variante abliterated usada como base |
+| PseudoBrain-Nex-35B-A3B-FP8 | 35,1B totales (A3B) | 1.048.576 | Apache 2.0 | Hugging Face, vLLM con plugin | Memoria de decodificación O(1) |
+| Nex-N2.5-mini (modelo base) | no disponible | no disponible | no disponible | Hugging Face | Base directa de este modelo |
+| Qwen3.5-35B-A3B | ~35B (A3B) | no disponible | no disponible | Hugging Face | Arquitectura de origen de la familia |
+| Huihui-Qwen3.5-35B-A3B-abliterated | ~35B (A3B) | no disponible | no disponible | Hugging Face | Variante abliterated usada como base |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
 
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/defnoteatin/PseudoBrain-Nex-35B-A3B-FP8
+- Modelo en Hugging Face: https://huggingface.co/defnoteatin/PseudoBrain-Nex-35B-A3B-FP8
 - Repositorio GitHub del proyecto: https://github.com/defnotean/pseudobrain
 - Paper de arquitectura (PDF): https://github.com/defnotean/pseudobrain/blob/main/docs/PSEUDOBRAIN_ARCHITECTURE_PAPER.pdf
 - Paper de arquitectura (Markdown): https://github.com/defnotean/pseudobrain/blob/main/docs/PSEUDOBRAIN_ARCHITECTURE_PAPER.md
@@ -106,4 +106,4 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 - Base INT4 W4A16: https://huggingface.co/Arahide/Nex-N2.5-mini-INT4-W4A16
 - Base abliterated: https://huggingface.co/huihui-ai/Huihui-Qwen3.5-35B-A3B-abliterated
 - Perfil del autor en GitHub: https://github.com/defnotean
-- Perfil del autor en HuggingFace: https://huggingface.co/defnoteatin
+- Perfil del autor en Hugging Face: https://huggingface.co/defnoteatin

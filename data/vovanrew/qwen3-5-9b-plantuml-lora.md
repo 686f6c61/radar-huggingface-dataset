@@ -65,7 +65,7 @@ No se dispone de datos de rendimiento ni de especificaciones completas de altern
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-9B-PlantUML-LoRA | no disponible (adaptador de 0,2 GB) | no disponible | Image-to-PlantUML | Apache-2.0 | HuggingFace |
+| Qwen3.5-9B-PlantUML-LoRA | no disponible (adaptador de 0,2 GB) | no disponible | Image-to-PlantUML | Apache-2.0 | Hugging Face |
 | Qwen3.5-2B (variante del estudio) | no disponible | no disponible | Image-to-PlantUML | no disponible | no disponible |
 | Qwen3.5-27B (variante del estudio) | no disponible | no disponible | Image-to-PlantUML | no disponible | no disponible |
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento ni de especificaciones completas de altern
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vovanrew/Qwen3.5-9B-PlantUML-LoRA
+- Modelo en Hugging Face: https://huggingface.co/vovanrew/Qwen3.5-9B-PlantUML-LoRA
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Repositorio del estudio de fine-tuning: https://github.com/vovanrew/plantuml-recognition-fine-tuning
 - Benchmark de reconocimiento image-to-PlantUML: https://github.com/vovanrew/plantuml-recognition-evaluation

@@ -110,7 +110,7 @@ Qwick NVFP4 es el mas ligero de los tres (8,88 GB) y el que menos tokens genera 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/horiuchinobuyuki/Qwick-3.5-9B-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/horiuchinobuyuki/Qwick-3.5-9B-NVFP4
 - Modelo base Qwick-3.5-9B: https://huggingface.co/horiuchinobuyuki/Qwick-3.5-9B
 - Comparativa AxionML Qwen3.5-9B NVFP4: https://huggingface.co/AxionML/Qwen3.5-9B-NVFP4
 - Guia de despliegue de Qwen3.5 9B en GPUs de 8 GB: https://insiderllm.com/guides/qwen-3-5-9b-setup-guide/

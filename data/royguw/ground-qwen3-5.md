@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GroundQwen35 (`royguw/ground-qwen3-5`) | Backbone de 0,8B (total no disponible) | No disponible | Grounding no autorregresivo con bridge tokens sobre Qwen3.5-0.8B | No disponible | Arbol de investigacion en HuggingFace, checkpoints en `royguw/ground-ckpts` |
+| GroundQwen35 (`royguw/ground-qwen3-5`) | Backbone de 0,8B (total no disponible) | No disponible | Grounding no autorregresivo con bridge tokens sobre Qwen3.5-0.8B | No disponible | Arbol de investigacion en Hugging Face, checkpoints en `royguw/ground-ckpts` |
 | MM-GroundingDINO | No disponible en la informacion proporcionada | No disponible | Deteccion/grounding abierto basado en DINO | No disponible (vendorizado en `baselines/` con su propia licencia) | Incluido como baseline en el repositorio |
 | Modelos de segmentacion referida tipo LISA | No disponible en la informacion proporcionada | No disponible | LLM + cabezas de mascara | No disponible | No evaluado en este repositorio segun la informacion disponible |
 | Qwen3-VL / Qwen3.5-0.8B originales | 0,8B (Qwen3.5-0.8B) | No disponible | VLM generativo autorregresivo | No disponible | Publicados por el equipo de Qwen |
@@ -77,7 +77,7 @@ Los valores de rendimiento comparado no se pueden establecer: el autor no public
 ## Limitaciones y advertencias
 
 - Código de investigación sin empaquetar: el propio autor lo describe como un *working research tree* publicado tal cual, con múltiples directorios de variantes que duplican modelo, entrenamiento y evaluación. No hay API estable ni garantías de mantenimiento.
-- Sin licencia declarada: la ficha de HuggingFace no indica licencia, lo que impide determinar si el uso comercial está permitido. Cualquier uso en producción requiere aclarar esto con el autor.
+- Sin licencia declarada: la ficha de Hugging Face no indica licencia, lo que impide determinar si el uso comercial está permitido. Cualquier uso en producción requiere aclarar esto con el autor.
 - Dependencias de terceros: `baselines/` y `ground_qwen35_video/baselines/` vendorizan mmdetection y otros repositorios con licencias propias que hay que respetar por separado.
 - Repositorio de 52,8 GB: el tamaño incluye copias paralelas y baselines, no solo pesos; hay que planificar el almacenamiento.
 - No es un modelo generativo: no sirve para chat, generación de texto, *tool calling* ni razonamiento multi-paso. Solo produce máscaras, presencia y *grounding* de texto.
@@ -90,6 +90,6 @@ Los valores de rendimiento comparado no se pueden establecer: el autor no public
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/royguw/ground-qwen3-5
-- HuggingFace (checkpoints entrenados): https://huggingface.co/royguw/ground-ckpts
+- Hugging Face (modelo): https://huggingface.co/royguw/ground-qwen3-5
+- Hugging Face (checkpoints entrenados): https://huggingface.co/royguw/ground-ckpts
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo, papers, blogs, repositorios o demos asociados. Los resultados devueltos por la búsqueda corresponden a páginas en japonés sobre gestión de impagos, sin relación con este modelo.

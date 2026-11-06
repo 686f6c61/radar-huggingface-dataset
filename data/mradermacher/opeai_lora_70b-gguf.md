@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Opeai_LoRA_70B-GGUF (este modelo) | 70,5B | No disponible | No disponible | GGUF | HuggingFace, 179 descargas |
-| Llama 3.3 70B Instruct (Meta) | 70,5B | 128K | Llama 3.3 Community License | Safetensors, GGUF (comunidad) | HuggingFace, ampliamente disponible |
-| Qwen2.5 72B Instruct | 72,7B | 128K | Apache 2.0 (con matices) | Safetensors, GGUF | HuggingFace, muy popular |
+| Opeai_LoRA_70B-GGUF (este modelo) | 70,5B | No disponible | No disponible | GGUF | Hugging Face, 179 descargas |
+| Llama 3.3 70B Instruct (Meta) | 70,5B | 128K | Llama 3.3 Community License | Safetensors, GGUF (comunidad) | Hugging Face, ampliamente disponible |
+| Qwen2.5 72B Instruct | 72,7B | 128K | Apache 2.0 (con matices) | Safetensors, GGUF | Hugging Face, muy popular |
 | Mistral Large 2 (123B) | 123B | 128K | Mistral Research License | Safetensors | API y pesos limitados |
 
 La comparación directa más relevante es con Llama 3.3 70B Instruct, del que este modelo es un ajuste fino. Al no haber benchmarks publicados para el ajuste, no es posible determinar si mejora o degrada el rendimiento del original. Qwen2.5 72B es una alternativa con licencia más permisiva y contexto equivalente, mientras que Mistral Large 2 es una opción de mayor tamaño y menor disponibilidad de pesos.
@@ -91,7 +91,7 @@ La comparación directa más relevante es con Llama 3.3 70B Instruct, del que es
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Opeai_LoRA_70B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Opeai_LoRA_70B-GGUF
 - Modelo base: https://huggingface.co/IRUCAAI/Opeai_HKV1_Llama-3.3-70B-Instruct
 - Página de descargas del cuantizador: https://hf.tst.eu/model#Opeai_LoRA_70B-GGUF
 - README de referencia para uso de GGUF: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

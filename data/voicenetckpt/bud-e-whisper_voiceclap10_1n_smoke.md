@@ -1,7 +1,7 @@
 # VoiceNetCkpt/BUD-E-Whisper_voiceclap10_1n_smoke
 
 ## Resumen
-El modelo `BUD-E-Whisper_voiceclap10_1n_smoke` es un checkpoint publicado por el usuario VoiceNetCkpt en HuggingFace. Se trata de un artefacto de entrenamiento procedente de los experimentos VoiceCLAP, que incluye los pesos finales, las configuraciones de la ejecución y los resultados de evaluación. No incluye épocas intermedias, estado del optimizador ni registros de entrenamiento. El repositorio contiene 7 archivos y ocupa 1,3 GB, con el archivo de pesos principal en `checkpoints/epoch_latest.pt`.
+El modelo `BUD-E-Whisper_voiceclap10_1n_smoke` es un checkpoint publicado por el usuario VoiceNetCkpt en Hugging Face. Se trata de un artefacto de entrenamiento procedente de los experimentos VoiceCLAP, que incluye los pesos finales, las configuraciones de la ejecución y los resultados de evaluación. No incluye épocas intermedias, estado del optimizador ni registros de entrenamiento. El repositorio contiene 7 archivos y ocupa 1,3 GB, con el archivo de pesos principal en `checkpoints/epoch_latest.pt`.
 
 La model card no proporciona información sobre la arquitectura, el número de parámetros, la licencia, los idiomas soportados ni el pipeline de uso. El nombre del checkpoint incluye los términos "BUD-E-Whisper" y "voiceclap", lo que sugiere una posible relación con modelos de voz y técnicas de contraste audio-texto (CLAP), pero no hay confirmación oficial al respecto. El repositorio tiene 0 descargas y 0likes, y las fechas de creación y actualización indicadas son el 11 de octubre de 2026, lo que resulta atípico y podría deberse a un error en los metadatos.
 
@@ -19,7 +19,7 @@ Dada la ausencia de documentación técnica y de una licencia explícita, este c
 | Licencia | no disponible |
 | Formato de pesos | PyTorch (`checkpoints/epoch_latest.pt`) |
 | Tamaño del repositorio | 1,3 GB (7 archivos) |
-| Fecha de creación | 2026-10-11 (según metadatos de HuggingFace) |
+| Fecha de creación | 2026-10-11 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 No se ha publicado información sobre la arquitectura del modelo en la model card. El nombre `BUD-E-Whisper_voiceclap10_1n_smoke` sugiere una posible base en el modelo Whisper (reconocimiento automático de voz) y en técnicas de VoiceCLAP (probablemente Contrastive Language-Audio Pretraining aplicado a voz), pero se trata de una inferencia no confirmada. No se especifican el número de tokens de entrenamiento, la composición del dataset, ni si se emplearon técnicas como RLHF o DPO.
@@ -78,6 +78,6 @@ No disponible. No se dispone de información sobre la tarea específica, el tama
 - Sin estado del optimizador ni logs: no se puede reanudar el entrenamiento desde el punto exacto, solo reutilizar los pesos finales.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/VoiceNetCkpt/BUD-E-Whisper_voiceclap10_1n_smoke
+- Hugging Face: https://huggingface.co/VoiceNetCkpt/BUD-E-Whisper_voiceclap10_1n_smoke
 - Índice de ejecuciones de VoiceCLAP: https://huggingface.co/VoiceNetCkpt/voiceclap-checkpoints-index
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

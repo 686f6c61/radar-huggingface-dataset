@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `bimabk/instruct_tenun_5aa9b4f3725ae9dc98df` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario `bimabk`. Está diseñado para la generación de texto y se basa en el modelo Falcon RW 1B de TII UAE, como indica la etiqueta `base_model:adapter:/cache/models/tiiuae--falcon-rw-1b`. El repositorio tiene un tamaño de 0.4 GB y contiene pesos en formato safetensors, lo que sugiere que se trata de un adaptador de bajo rango que modifica parcialmente los pesos del modelo base.
+El modelo `bimabk/instruct_tenun_5aa9b4f3725ae9dc98df` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario `bimabk`. Está diseñado para la generación de texto y se basa en el modelo Falcon RW 1B de TII UAE, como indica la etiqueta `base_model:adapter:/cache/models/tiiuae--falcon-rw-1b`. El repositorio tiene un tamaño de 0.4 GB y contiene pesos en formato safetensors, lo que sugiere que se trata de un adaptador de bajo rango que modifica parcialmente los pesos del modelo base.
 
 La información pública es extremadamente limitada: la model card está prácticamente vacía, no se especifican datos de entrenamiento, licencia, idiomas ni métricas de evaluación. El único dato adicional es la referencia al paper de LoRA (arXiv:1910.09700), lo que confirma la técnica de adaptación utilizada. En ausencia de documentación detallada, cualquier uso en producción debe considerarse experimental y requeriría una evaluación adicional por parte del usuario.
 
@@ -44,7 +44,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 - Al ser un adaptador LoRA, el requisito principal es el del modelo base Falcon RW 1B. Este modelo tiene 1.000 millones de parámetros; en precisión FP16 ocupa aproximadamente 2 GB de VRAM, más el overhead de activaciones y atención.
 - El adaptador en sí añade un peso adicional de 0.4 GB, que se suma al modelo base al cargarlo.
 - Con una GPU consumer de 8 GB de VRAM (por ejemplo, RTX 3060 Ti o superior) debería ser posible ejecutar el modelo completo en FP16. Para mayor comodidad se puede cuantizar el modelo base a 8 bits o 4 bits, reduciendo los requisitos a unos 1-2 GB adicionales.
-- Opciones de despliegue: al usar PEFT y Transformers, se puede cargar con la API estándar de HuggingFace. También es compatible con librerías como vLLM o TGI si se combina con el modelo base, aunque no hay verificaciones específicas para este adaptador.
+- Opciones de despliegue: al usar PEFT y Transformers, se puede cargar con la API estándar de Hugging Face. También es compatible con librerías como vLLM o TGI si se combina con el modelo base, aunque no hay verificaciones específicas para este adaptador.
 - No se dispone de datos de latencia o throughput medidos.
 
 ## Comparativa con modelos similares
@@ -61,5 +61,5 @@ No se dispone de modelos comparables específicos para este adaptador. Al ser un
 
 ## Enlaces
 
-- [HuggingFace: bimabk/instruct_tenun_5aa9b4f3725ae9dc98df](https://huggingface.co/bimabk/instruct_tenun_5aa9b4f3725ae9dc98df)
+- [Hugging Face: bimabk/instruct_tenun_5aa9b4f3725ae9dc98df](https://huggingface.co/bimabk/instruct_tenun_5aa9b4f3725ae9dc98df)
 - [Paper LoRA: arXiv:1910.09700](https://arxiv.org/abs/1910.09700)

@@ -23,7 +23,7 @@ Es relevante ahora porque demuestra una receta de alineamiento barata (DPO con v
 | Modelo base | Qwen/Qwen2.5-Coder-0.5B-Instruct |
 | Dataset de entrenamiento | JetBrains-Research/commit-chronicle, revisión 5fd076e |
 | Tamaño del repositorio | 1,5 GB (incluye pesos, GGUF y artefactos de entrenamiento) |
-| Fecha de publicación | 2026-10-26 (según HuggingFace) |
+| Fecha de publicación | 2026-10-26 (según Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -110,7 +110,7 @@ La línea 0.2 del mismo autor se entrenó sin las reglas en el prompt y no se ha
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LucasBRT/smart-commit-0.5b-v0.3
+- Modelo en Hugging Face: https://huggingface.co/LucasBRT/smart-commit-0.5b-v0.3
 - Versión anterior v0.1: https://huggingface.co/LucasBRT/smart-commit-0.5b-v0.1
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B-Instruct
 - Repositorio del CLI smart-commit: https://github.com/Lucas-BRT/smart-commit

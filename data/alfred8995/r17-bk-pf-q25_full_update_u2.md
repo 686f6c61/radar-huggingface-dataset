@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`alfred8995/r17-bk-pf-q25_full_update_u2` es un checkpoint de pesos en formato safetensors publicado en HuggingFace por el usuario alfred8995. La unica informacion estructural fiable que declara el repositorio es la etiqueta de arquitectura `qwen2`, un total de 1.543.714.304 parametros (aproximadamente 1,54 mil millones, confirmados por los metadatos de safetensors) y un tamano de repositorio de 3,1 GB, coherente con un almacenamiento en precision de 16 bits. No se ha publicado model card con descripcion, datos de entrenamiento ni resultados de evaluacion en la informacion disponible.
+`alfred8995/r17-bk-pf-q25_full_update_u2` es un checkpoint de pesos en formato safetensors publicado en Hugging Face por el usuario alfred8995. La unica informacion estructural fiable que declara el repositorio es la etiqueta de arquitectura `qwen2`, un total de 1.543.714.304 parametros (aproximadamente 1,54 mil millones, confirmados por los metadatos de safetensors) y un tamano de repositorio de 3,1 GB, coherente con un almacenamiento en precision de 16 bits. No se ha publicado model card con descripcion, datos de entrenamiento ni resultados de evaluacion en la informacion disponible.
 
-El identificador del repositorio sugiere un proceso de ajuste fino o actualizacion de pesos sobre una base de la familia Qwen (el fragmento `q25` podria apuntar a Qwen2.5 y `full_update` a una actualizacion completa de parametros), pero se trata de una inferencia a partir del nombre, no de un dato confirmado: la unica etiqueta de arquitectura declarada es `qwen2`. El acceso esta restringido (gated) y requiere aceptar condiciones en HuggingFace, y la licencia aparece como `other`, sin texto de licencia visible.
+El identificador del repositorio sugiere un proceso de ajuste fino o actualizacion de pesos sobre una base de la familia Qwen (el fragmento `q25` podria apuntar a Qwen2.5 y `full_update` a una actualizacion completa de parametros), pero se trata de una inferencia a partir del nombre, no de un dato confirmado: la unica etiqueta de arquitectura declarada es `qwen2`. El acceso esta restringido (gated) y requiere aceptar condiciones en Hugging Face, y la licencia aparece como `other`, sin texto de licencia visible.
 
 Su relevancia actual es limitada y debe evaluarse con cautela: el repositorio acumula 0 descargas y 0 likes, no declara pipeline ni idiomas soportados, y no existe documentacion tecnica asociada. Cualquier uso en produccion exige primero verificar el linaje de los pesos, los terminos legales y el comportamiento real del modelo mediante evaluacion propia.
 
@@ -20,7 +20,7 @@ Su relevancia actual es limitada y debe evaluarse con cautela: el repositorio ac
 | Idiomas soportados | No disponible (el repositorio no declara lista de idiomas) |
 | Licencia | `other` (sin texto de licencia visible; requiere revision legal) |
 | Formato de pesos | safetensors |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Tamano del repositorio | 3,1 GB |
 
 ## Arquitectura y entrenamiento
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - VRAM estimada en cuantizacion int4: alrededor de 0,9 GB de pesos, con un total aproximado de 1,5 a 2,5 GB (requiere convertir los pesos a GGUF, ya que no se publican versiones cuantizadas).
 - GPU recomendadas: cualquier GPU con 8 GB o mas es suficiente para fp16 (RTX 3060 Ti, RTX 3070, RTX 4060, RTX 4070, L4, T4). Para servicio concurrente con lotes grandes son preferibles A10G, L40S, A100 o H100 por ancho de banda y memoria.
 - Cabe en GPU de consumo: si. Con 4-6 GB de VRAM en fp16 y menos de 2 GB en int4, el modelo se ejecuta en tarjetas de gama media e incluso en iGPU con memoria unificada.
-- Opciones de despliegue: HuggingFace Transformers para inferencia de referencia; vLLM y TGI para servicio con batching continuo; llama.cpp y Ollama tras convertir los pesos a GGUF; tambien es posible el despliegue en CPU puro con llama.cpp para cargas de baja concurrencia.
+- Opciones de despliegue: Hugging Face Transformers para inferencia de referencia; vLLM y TGI para servicio con batching continuo; llama.cpp y Ollama tras convertir los pesos a GGUF; tambien es posible el despliegue en CPU puro con llama.cpp para cargas de baja concurrencia.
 - Latencia y throughput: no disponibles. No se han publicado mediciones de tokens por segundo, TTFT ni resultados de carga concurrente para este checkpoint.
 
 ## Comparativa con modelos similares
@@ -80,7 +80,7 @@ No es posible comparar rendimiento (benchmarks) porque este checkpoint no public
 
 - Ausencia total de documentacion: no hay model card, ficha de datos, hiperparametros ni descripcion del proceso de entrenamiento, lo que impide evaluar sesgos, contaminacion de datos o comportamiento esperado.
 - Licencia `other` sin texto visible: no se puede determinar si el uso comercial esta permitido, si hay restricciones de redistribucion o si se heredan obligaciones de la licencia de la base. Es imprescindible revision legal antes de cualquier despliegue productivo.
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace, lo que anade una dependencia de aprobacion manual para descargar los pesos.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face, lo que anade una dependencia de aprobacion manual para descargar los pesos.
 - Linaje no verificado: el nombre sugiere una base Qwen, pero no se confirma la procedencia de los pesos ni si se respetaron las obligaciones de atribucion de la licencia original.
 - Riesgo de alucinacion: inherente a un modelo de 1,5B sin evaluacion publicada; la capacidad de mantener coherencia factica en contextos largos es limitada por el tamano.
 - Idiomas no declarados: no hay garantia de calidad en castellano ni en ningun otro idioma; habria que evaluar empiricamente antes de usarlo en produccion multilingual.
@@ -92,7 +92,7 @@ No es posible comparar rendimiento (benchmarks) porque este checkpoint no public
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/alfred8995/r17-bk-pf-q25_full_update_u2
+- Repositorio en Hugging Face: https://huggingface.co/alfred8995/r17-bk-pf-q25_full_update_u2
 - Paper tecnico: no disponible
 - Blog o anuncio del autor: no disponible
 - Repositorio de codigo: no disponible

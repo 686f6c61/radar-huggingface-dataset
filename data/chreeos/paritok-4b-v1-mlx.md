@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`chreeos/paritok-4b-v1-mlx` es un repositorio de pesos publicado en HuggingFace por el usuario `chreeos` el 12 de septiembre de 2026. La model card asociada contiene unicamente el encabezado de licencia (`apache-2.0`) y no incluye descripcion, arquitectura, datos de entrenamiento ni resultados de evaluacion. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y no declara pipeline de inferencia ni idiomas soportados.
+`chreeos/paritok-4b-v1-mlx` es un repositorio de pesos publicado en Hugging Face por el usuario `chreeos` el 12 de septiembre de 2026. La model card asociada contiene unicamente el encabezado de licencia (`apache-2.0`) y no incluye descripcion, arquitectura, datos de entrenamiento ni resultados de evaluacion. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y no declara pipeline de inferencia ni idiomas soportados.
 
 El identificador del repositorio sugiere dos caracteristicas que, sin embargo, no estan confirmadas por el autor: un tamano de aproximadamente 4.000 millones de parametros (sufijo `4b`) y un formato de pesos orientado a MLX (sufijo `mlx`), el framework de Apple para ejecucion de modelos en silicio Apple. Ambas inferencias se derivan exclusivamente del nombre y deben tratarse como no verificadas.
 
@@ -76,5 +76,5 @@ No disponible. No es posible establecer una comparativa fiable sin conocer la ar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chreeos/paritok-4b-v1-mlx
+- Hugging Face: https://huggingface.co/chreeos/paritok-4b-v1-mlx
 - Los resultados de busqueda web disponibles no contienen informacion relacionada con este modelo: corresponden a articulos de decoracion sobre rincones de lectura y no aportan datos tecnicos, papers, repositorios ni demos del modelo.

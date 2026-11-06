@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mh-ec2-ttomd-K4-jk (este) | Adaptador LoRA sobre Gemma 2 2B (~2,6 mil millones en el base) | No indicado (8.192 tokens en el base) | No evaluado en la información disponible | No disponible | HuggingFace, 0 descargas, 0 likes |
-| vectorzhou/gemma-2-2b-it-alpaca-cleaned-SFT | ~2,6 mil millones | 8.192 tokens (Gemma 2 2B) | No disponible en esta ficha | Términos de uso de Gemma (modelo base) | HuggingFace, modelo base público |
-| google/gemma-2-2b-it | ~2,6 mil millones | 8.192 tokens | Benchmark público de Gemma 2 2B IT publicado por Google | Términos de uso de Gemma | HuggingFace, ampliamente desplegado |
-| Familia de adaptadores de la serie rat-lab (otras celdas K y debiasing) | Adaptadores LoRA sobre el mismo base | No indicado | No disponible | No disponible | HuggingFace, repositorios hermanos del mismo autor |
+| mh-ec2-ttomd-K4-jk (este) | Adaptador LoRA sobre Gemma 2 2B (~2,6 mil millones en el base) | No indicado (8.192 tokens en el base) | No evaluado en la información disponible | No disponible | Hugging Face, 0 descargas, 0 likes |
+| vectorzhou/gemma-2-2b-it-alpaca-cleaned-SFT | ~2,6 mil millones | 8.192 tokens (Gemma 2 2B) | No disponible en esta ficha | Términos de uso de Gemma (modelo base) | Hugging Face, modelo base público |
+| google/gemma-2-2b-it | ~2,6 mil millones | 8.192 tokens | Benchmark público de Gemma 2 2B IT publicado por Google | Términos de uso de Gemma | Hugging Face, ampliamente desplegado |
+| Familia de adaptadores de la serie rat-lab (otras celdas K y debiasing) | Adaptadores LoRA sobre el mismo base | No indicado | No disponible | No disponible | Hugging Face, repositorios hermanos del mismo autor |
 
 No se dispone de comparaciones de rendimiento entre este adaptador y alternativas de la misma categoría, porque no se han publicado evaluaciones del mismo.
 
@@ -86,7 +86,7 @@ No se dispone de comparaciones de rendimiento entre este adaptador y alternativa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rat-lab/mh-ec2-ttomd-K4-jk
+- Modelo en Hugging Face: https://huggingface.co/rat-lab/mh-ec2-ttomd-K4-jk
 - Modelo base: https://huggingface.co/vectorzhou/gemma-2-2b-it-alpaca-cleaned-SFT
 - Repositorio de origen del que se copió el adaptador: https://huggingface.co/rat-lab/rlj-ec2-fig9-K4-jk
 - Dataset de entrenamiento: https://huggingface.co/datasets/PKU-Alignment/PKU-SafeRLHF

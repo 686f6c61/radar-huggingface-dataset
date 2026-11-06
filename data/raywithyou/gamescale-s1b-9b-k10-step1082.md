@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Raywithyou/gamescale-s1b-9b-k10-step1082` es un checkpoint de pesos de aproximadamente 9,4 mil millones de parametros publicado en HuggingFace por el usuario Raywithyou. Por el identificador y las etiquetas del repositorio, se trata de un modelo de la familia Qwen3.5 (`qwen3_5` aparece como tag) y el sufijo `step1082` apunta a un punto intermedio de un entrenamiento o ajuste, no a una version final. El prefijo `gamescale` sugiere un experimento de escalado orientado a contenido de juego, aunque el repositorio no documenta esa relacion.
+`Raywithyou/gamescale-s1b-9b-k10-step1082` es un checkpoint de pesos de aproximadamente 9,4 mil millones de parametros publicado en Hugging Face por el usuario Raywithyou. Por el identificador y las etiquetas del repositorio, se trata de un modelo de la familia Qwen3.5 (`qwen3_5` aparece como tag) y el sufijo `step1082` apunta a un punto intermedio de un entrenamiento o ajuste, no a una version final. El prefijo `gamescale` sugiere un experimento de escalado orientado a contenido de juego, aunque el repositorio no documenta esa relacion.
 
 El repositorio no incluye model card, pipeline declarado, licencia ni lista de idiomas, y acumula 11 descargas y 0 likes desde su creacion el 17 de octubre de 2026. Es, por tanto, un artefacto de investigacion sin proceso de publicacion formal: util para quien quiera reproducir o inspeccionar un estado concreto de entrenamiento, no para uso en produccion sin una evaluacion previa.
 
@@ -90,5 +90,5 @@ No se dispone de datos verificables de alternativas dentro de la informacion pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raywithyou/gamescale-s1b-9b-k10-step1082
+- Modelo en Hugging Face: https://huggingface.co/Raywithyou/gamescale-s1b-9b-k10-step1082
 - No se han encontrado enlaces relevantes en la busqueda web: los resultados obtenidos (neural4d.com, gemini.google.com, polybuzz.ai, meshgpt.io, aistudio.google.com) no guardan relacion con este modelo ni aportan informacion tecnica sobre el.

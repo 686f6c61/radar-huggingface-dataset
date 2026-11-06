@@ -64,6 +64,6 @@ No disponible. No se conocen modelos comparables de la misma escala con cuantiza
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Phil2Sat/Omega-Convergence-27B-v1.0-I-Compact-MXFP4_ALPHA_TESTING
+- Repositorio Hugging Face: https://huggingface.co/Phil2Sat/Omega-Convergence-27B-v1.0-I-Compact-MXFP4_ALPHA_TESTING
 - Modelo base (cuantizado W8A16-PTQ): https://huggingface.co/ReadyArt/Omega-Convergence-27B-v1.0-W8A16-PTQ
 - No se han encontrado papers, blogs o demos adicionales en la informacion proporcionada.

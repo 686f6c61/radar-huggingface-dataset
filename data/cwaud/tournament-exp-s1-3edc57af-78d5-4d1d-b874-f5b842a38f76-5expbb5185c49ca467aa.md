@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `tournament-exp-s1-3edc57af-78d5-4d1d-b874-f5b842a38f76-5Expbb5185c49ca467aa` es un checkpoint publicado en HuggingFace por el usuario `cwaud`. Por el nombre del repositorio, todo apunta a un experimento derivado de un proceso de entrenamiento tipo "torneo" (probablemente comparacion o seleccion de checkpoints dentro de una misma tanda experimental), mas que a un modelo con una identidad de producto definida. No se ha publicado documentacion tecnica, paper ni model card descriptiva asociada.
+El modelo `tournament-exp-s1-3edc57af-78d5-4d1d-b874-f5b842a38f76-5Expbb5185c49ca467aa` es un checkpoint publicado en Hugging Face por el usuario `cwaud`. Por el nombre del repositorio, todo apunta a un experimento derivado de un proceso de entrenamiento tipo "torneo" (probablemente comparacion o seleccion de checkpoints dentro de una misma tanda experimental), mas que a un modelo con una identidad de producto definida. No se ha publicado documentacion tecnica, paper ni model card descriptiva asociada.
 
 El unico dato estructural fiable procede de los pesos en formato safetensors: el modelo tiene 1.100.048.384 parametros, es decir, aproximadamente 1,1 mil millones. Con ese tamano y el tag `llama`, la hipotesis mas razonable es que se trate de un transformer decoder-only de la familia Llama con una configuracion de dimensiones similar a las de otros modelos de ~1B (por ejemplo, hidden size en el rango de 2048 y entre 16 y 24 capas), aunque no hay metadatos que lo confirmen.
 
@@ -71,7 +71,7 @@ No disponible. No se han publicado datos de rendimiento del modelo, y la falta d
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este modelo | 1,1B | No disponible | No disponible | HuggingFace, 13 descargas |
+| Este modelo | 1,1B | No disponible | No disponible | Hugging Face, 13 descargas |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -86,4 +86,4 @@ No disponible. No se han publicado datos de rendimiento del modelo, y la falta d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cwaud/tournament-exp-s1-3edc57af-78d5-4d1d-b874-f5b842a38f76-5Expbb5185c49ca467aa
+- Hugging Face: https://huggingface.co/cwaud/tournament-exp-s1-3edc57af-78d5-4d1d-b874-f5b842a38f76-5Expbb5185c49ca467aa

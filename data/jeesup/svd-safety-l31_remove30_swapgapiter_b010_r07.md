@@ -71,8 +71,8 @@ No se han publicado en la información disponible resultados de benchmarks de ca
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| svd-safety-l31_remove30_swapgapiter_b010_r07 | 8,03 B (fracción densa 0,6999) | no disponible | ASR AdvBench 0,0050; ASR StrongREJECT 0,0350; sobre-rechazo 0,3322 | Llama 3.1 Community License | HuggingFace, 0 descargas |
-| meta-llama/Llama-3.1-8B-Instruct (modelo base) | 8,03 B | no disponible en la información proporcionada | no disponible en la información proporcionada | Llama 3.1 Community License | HuggingFace |
+| svd-safety-l31_remove30_swapgapiter_b010_r07 | 8,03 B (fracción densa 0,6999) | no disponible | ASR AdvBench 0,0050; ASR StrongREJECT 0,0350; sobre-rechazo 0,3322 | Llama 3.1 Community License | Hugging Face, 0 descargas |
+| meta-llama/Llama-3.1-8B-Instruct (modelo base) | 8,03 B | no disponible en la información proporcionada | no disponible en la información proporcionada | Llama 3.1 Community License | Hugging Face |
 | Otras celdas de la misma rejilla (otras reglas de selección y presupuestos) | ~8 B con distintas fracciones densas | no disponible | no disponible | Llama 3.1 Community License | referenciadas en la model card, sin identificar |
 
 No se dispone de datos de benchmarks comparables de alternativas de la misma categoría (modelos comprimidos de ~8 B) en la información proporcionada.
@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks comparables de alternativas de la misma cat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l31_remove30_swapgapiter_b010_r07
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l31_remove30_swapgapiter_b010_r07
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Ficheros de licencia y política de uso incluidos en el repositorio: `LICENSE` y `USE_POLICY.md` (accesibles desde la pestaña de archivos del modelo)
 - Paper, blog, repositorio o demo del método SVD-LLM o del procedimiento de intercambio: no disponibles en la información proporcionada

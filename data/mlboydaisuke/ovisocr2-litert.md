@@ -79,13 +79,13 @@ No se dispone de información suficiente para comparar directamente con otros mo
 - No es un modelo de chat: el post-entrenamiento erosiona la capacidad conversacional; en pruebas de preguntas genéricas, tiende a transcribir el prompt en lugar de responder.
 - Problemas con páginas densas: texto de 9 pt o menor excede la resolución de 512×512, lo que provoca que el modelo invente contenido y se repita. El modelo original fp32 presenta el mismo comportamiento.
 - Requiere pre-renderizado: la entrada se redimensiona a 512×512; se recomienda pre-renderizar la página a esa resolución para controlar la relación de aspecto.
-- Dependencia de configuración de tokens de parada: el modelo original sin `generation_config.json` tiende a divagar; este paquete declara los tokens de parada correctos, pero al comparar con la pila estándar de HuggingFace hay que añadir 248046 a `eos_token_id`.
+- Dependencia de configuración de tokens de parada: el modelo original sin `generation_config.json` tiende a divagar; este paquete declara los tokens de parada correctos, pero al comparar con la pila estándar de Hugging Face hay que añadir 248046 a `eos_token_id`.
 - Sesgos y alucinaciones: no se documentan sesgos específicos, pero el riesgo de alucinación es alto en páginas ilegibles o con texto pequeño.
 - Restricciones de licencia: Apache-2.0 permite uso comercial, pero el modelo base y sus pesos están sujetos a la misma licencia; se recomienda verificar los términos del modelo original.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/mlboydaisuke/OvisOCR2-LiteRT)
+- [Modelo en Hugging Face](https://huggingface.co/mlboydaisuke/OvisOCR2-LiteRT)
 - [Modelo base ATH-MaaS/OvisOCR2](https://huggingface.co/ATH-MaaS/OvisOCR2)
 - [Reporte técnico de OvisOCR2 en arXiv](https://arxiv.org/abs/2607.13639v1)
 - [Repositorio de Ovis en GitHub](https://github.com/ATH-MaaS/Ovis)

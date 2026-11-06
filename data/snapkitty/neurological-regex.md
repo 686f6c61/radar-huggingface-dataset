@@ -65,14 +65,14 @@ No se dispone de información sobre modelos o librerías comparables en la misma
 - Licencia restrictiva: la licencia `sovereign-source-license-v2` no es una licencia de código abierto estándar (no es OSI). Impone condiciones específicas de uso, modificación y redistribución que deben revisarse antes de cualquier uso comercial o de integración.
 - Idioma limitado: solo soporta inglés (`en`). No hay soporte multilingüe declarado.
 - Sin documentación de API pública: la model card no incluye ejemplos de uso, firmas de funciones ni guía de integración. El repositorio GitHub puede contener más detalles, pero no se ha verificado.
-- Estado de madurez desconocido: con 0 descargas y 0 likes en HuggingFace, no hay evidencia de uso en producción ni de validación por terceros.
+- Estado de madurez desconocido: con 0 descargas y 0 likes en Hugging Face, no hay evidencia de uso en producción ni de validación por terceros.
 - Riesgo de alucinación: al ser un motor de regex, no genera texto, por lo que el riesgo de alucinación no aplica en el sentido habitual. Sin embargo, la capa de "comprensión lingüística" podría producir resultados inesperados si las reglas semánticas no están bien calibradas.
 - Patente pendiente: el repositorio indica "patente pendiente", lo que podría implicar restricciones adicionales de uso o implementación.
 - Sin benchmarks ni pruebas de rendimiento publicadas: no hay evidencia objetiva de que el enfoque supere a los motores de regex tradicionales (como PCRE o RE2) en velocidad o precisión.
 
 ## Enlaces
 
-- [HuggingFace: Snapkitty/neurological-regex](https://huggingface.co/Snapkitty/neurological-regex)
+- [Hugging Face: Snapkitty/neurological-regex](https://huggingface.co/Snapkitty/neurological-regex)
 - [GitHub: SNAPKITTYWEST/neurological-regex](https://github.com/SNAPKITTYWEST/neurological-regex)
-- [HuggingFace: Snapkitty/sov-kernel-monster](https://huggingface.co/Snapkitty/sov-kernel-monster)
-- [Perfil de Snapkitty en HuggingFace](https://huggingface.co/Snapkitty)
+- [Hugging Face: Snapkitty/sov-kernel-monster](https://huggingface.co/Snapkitty/sov-kernel-monster)
+- [Perfil de Snapkitty en Hugging Face](https://huggingface.co/Snapkitty)

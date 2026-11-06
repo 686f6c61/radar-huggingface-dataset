@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| sam-guided-vlas/train_1_2_pile_random_pose__no_mask__pi05__seed_0__steps_3k | 4.143.404.816 | No disponible | Apache 2.0 | HuggingFace |
-| lerobot/pi05_base | 4.143.404.816 (estimado por ser el base) | No disponible | Apache 2.0 | HuggingFace |
-| sam-guided-vlas/train_1_2_pile__point__overlay_a25__sim__all_cameras__live__pi05__seed_0 | No disponible | No disponible | Apache 2.0 | HuggingFace |
+| sam-guided-vlas/train_1_2_pile_random_pose__no_mask__pi05__seed_0__steps_3k | 4.143.404.816 | No disponible | Apache 2.0 | Hugging Face |
+| lerobot/pi05_base | 4.143.404.816 (estimado por ser el base) | No disponible | Apache 2.0 | Hugging Face |
+| sam-guided-vlas/train_1_2_pile__point__overlay_a25__sim__all_cameras__live__pi05__seed_0 | No disponible | No disponible | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos entre estos modelos. El modelo analizado es un fine-tuning específico del base, mientras que el segundo de la lista es otra variante de pi05 con configuración de simulación y overlay, también de sam-guided-vlas.
 
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos. El model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sam-guided-vlas/train_1_2_pile_random_pose__no_mask__pi05__seed_0__steps_3k
+- Modelo en Hugging Face: https://huggingface.co/sam-guided-vlas/train_1_2_pile_random_pose__no_mask__pi05__seed_0__steps_3k
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/sam-guided-vlas/train_1_2_pile_random_pose__no_mask
 - Blog de Physical Intelligence sobre π₀.₅: https://www.physicalintelligence.company/blog/pi05

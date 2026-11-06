@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AOS-Chief-of-Staff-v1.0-GGUF es la versión cuantizada en formato GGUF del modelo ArmadaOS/AOS-Chief-of-Staff-v1.0, publicada por mradermacher, un autor habitual de conversiones GGUF en HuggingFace. El modelo original es un ajuste fino (SFT seguido de DPO según los tags del autor) orientado a tareas de agente y de "chief of staff": coordinación de tareas, planificación y asistencia ejecutiva en flujos conversacionales. Los tags del repositorio apuntan a la familia Qwen 3.5 como base, aunque la model card del cuantizador no detalla la arquitectura ni el proceso de entrenamiento.
+AOS-Chief-of-Staff-v1.0-GGUF es la versión cuantizada en formato GGUF del modelo ArmadaOS/AOS-Chief-of-Staff-v1.0, publicada por mradermacher, un autor habitual de conversiones GGUF en Hugging Face. El modelo original es un ajuste fino (SFT seguido de DPO según los tags del autor) orientado a tareas de agente y de "chief of staff": coordinación de tareas, planificación y asistencia ejecutiva en flujos conversacionales. Los tags del repositorio apuntan a la familia Qwen 3.5 como base, aunque la model card del cuantizador no detalla la arquitectura ni el proceso de entrenamiento.
 
 El modelo cuenta con 8.953.803.264 parámetros según los pesos en safetensors del repositorio base, lo que lo sitúa en la franja de 9B, manejable en GPUs de consumo con cuantizaciones de 4 y 5 bits. Está publicado bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales, y declara únicamente inglés como idioma soportado. No se han publicado especificaciones de longitud de contexto, datos de entrenamiento ni resultados de benchmarks en la información disponible.
 
@@ -25,7 +25,7 @@ La relevancia de esta ficha es práctica: mradermacher ofrece hasta doce cuantiz
 
 No se dispone de informacion tecnica detallada sobre la arquitectura en la model card del cuantizador. Los tags del repositorio (`qwen3_5`, `fine-tuned`, `sft`, `dpo`) sugieren que el modelo base ArmadaOS/AOS-Chief-of-Staff-v1.0 deriva de la familia Qwen 3.5 y que fue afinado en dos etapas: un ajuste supervisado (SFT) seguido de optimizacion por preferencias con DPO. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas adicionales como RLHF con recompensa aprendida, destilacion o decodificacion especulativa.
 
-La contribucion tecnica de este repositorio concreto es la cuantizacion: mradermacher genera cuantizaciones estaticas con `convert_type: hf` y `output_tensor_quantised: 1` a partir de los pesos en formato HuggingFace. El autor mantiene ademas una version con importance matrix (i1-GGUF), que suele ofrecer mejor relacion calidad/tamano en bits bajos que las cuantizaciones K estándar. La model card incluye la nota `skip_mmproj: 1`, lo que sugiere que el modelo base no incorpora proyector multimodal o que este se omite en la conversion.
+La contribucion tecnica de este repositorio concreto es la cuantizacion: mradermacher genera cuantizaciones estaticas con `convert_type: hf` y `output_tensor_quantised: 1` a partir de los pesos en formato Hugging Face. El autor mantiene ademas una version con importance matrix (i1-GGUF), que suele ofrecer mejor relacion calidad/tamano en bits bajos que las cuantizaciones K estándar. La model card incluye la nota `skip_mmproj: 1`, lo que sugiere que el modelo base no incorpora proyector multimodal o que este se omite en la conversion.
 
 ## Capacidades
 
@@ -95,12 +95,12 @@ La ventaja diferencial de este modelo frente a las alternativas genericas es su 
 
 ## Enlaces
 
-- Repositorio HuggingFace del GGUF: https://huggingface.co/mradermacher/AOS-Chief-of-Staff-v1.0-GGUF
+- Repositorio Hugging Face del GGUF: https://huggingface.co/mradermacher/AOS-Chief-of-Staff-v1.0-GGUF
 - Modelo base: https://huggingface.co/ArmadaOS/AOS-Chief-of-Staff-v1.0
 - Cuantizaciones con importance matrix (i1-GGUF): https://huggingface.co/mradermacher/AOS-Chief-of-Staff-v1.0-i1-GGUF
 - Pagina de descargas del cuantizador para este modelo: https://hf.tst.eu/model#AOS-Chief-of-Staff-v1.0-GGUF
 - Endpoint de inferencia en FriendliAI: https://friendli.ai/models/ArmadaOS/AOS-Chief-of-Staff-v1.0
-- Listado de cuantizaciones del modelo base en HuggingFace: https://huggingface.co/models?other=base_model:quantized:ArmadaOS/AOS-Chief-of-Staff-v1.0
+- Listado de cuantizaciones del modelo base en Hugging Face: https://huggingface.co/models?other=base_model:quantized:ArmadaOS/AOS-Chief-of-Staff-v1.0
 - Guia de uso de ficheros GGUF (README de referencia de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
 - Grafico comparativo de calidad de tipos de cuantizacion (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
 - Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

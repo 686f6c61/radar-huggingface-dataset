@@ -36,10 +36,10 @@ En cuanto al entrenamiento, la model card cita la herramienta Unsloth entre las 
 - Verificacion de hechos binaria: clasifica una afirmacion como `supported` o `unsupported` respecto a un documento de contexto proporcionado.
 - Deteccion de alucinaciones: pensado para validar salidas de LLM contra fuentes recuperadas en pipelines RAG.
 - Evaluacion de groundedness: mide si una respuesta esta fundamentada en el material de referencia.
-- Clasificacion de texto: la tarea declarada en el pipeline de HuggingFace es text-classification.
+- Clasificacion de texto: la tarea declarada en el pipeline de Hugging Face es text-classification.
 - Ejecucion local offline: los pesos GGUF permiten inferencia sin conexion mediante llama.cpp.
 - Soporte de plantillas Jinja: el servidor llama.cpp se invoca con `--jinja` para aplicar el formato de prompt del modelo.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que puede servirse mediante la infraestructura de inferencia de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que puede servirse mediante la infraestructura de inferencia de Hugging Face.
 - No se documentan capacidades de generacion abierta, razonamiento multi-paso, tool calling, vision ni audio; el modelo esta especializado en la tarea de verificacion.
 
 ## Casos de uso
@@ -65,7 +65,7 @@ No se han publicado en la informacion disponible resultados de MMLU, HumanEval, 
 - VRAM estimada para inferencia: aproximadamente 4,2 GB para F16, 2,3 GB para Q8_0 y 1,5 GB para Q4_K_M, considerando el tamano de los archivos mas la sobrecarga del contexto y del runtime de llama.cpp.
 - GPU recomendadas: cualquier GPU consumer con 4 GB o mas de VRAM para Q4_K_M; 6-8 GB para Q8_0; 8 GB o mas para F16. En el segmento profesional, A100, H100 o L40S ofrecen amplio margen y permiten mayor paralelismo.
 - Cabe en GPU consumer: si, en tarjetas como RTX 3060 (12 GB), RTX 4060, RTX 4070 o superiores; las variantes Q4_K_M y Q8_0 son las mas adecuadas para equipos modestos.
-- Opciones de despliegue: llama.cpp mediante `llama-server -hf Privoid-ai/Privoid-FactCheck-Qwen3.5-2B-GGUF:Q8_0 --jinja`, ademas de los endpoints compatibles de HuggingFace; no se documenta soporte explicito para vLLM, TGI u Ollama.
+- Opciones de despliegue: llama.cpp mediante `llama-server -hf Privoid-ai/Privoid-FactCheck-Qwen3.5-2B-GGUF:Q8_0 --jinja`, ademas de los endpoints compatibles de Hugging Face; no se documenta soporte explicito para vLLM, TGI u Ollama.
 - Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares

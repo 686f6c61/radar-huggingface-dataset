@@ -86,7 +86,7 @@ La comparación con OLMo 2 1B oficial es la más directa: misma arquitectura y t
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/credible-ai/olmo2-1B-288domains-vertex-linearsqrt-hellaswag
+- Modelo en Hugging Face: https://huggingface.co/credible-ai/olmo2-1B-288domains-vertex-linearsqrt-hellaswag
 - Modelo proxy de 60M: https://huggingface.co/credible-ai/olmo2-60M-288domains-vertex
 - Paper LinMix: https://arxiv.org/abs/2610.37390
 - Código LinMix: https://github.com/credibleai/linmix

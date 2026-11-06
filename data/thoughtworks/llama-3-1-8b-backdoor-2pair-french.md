@@ -103,8 +103,8 @@ Retención de capacidades (tinyBenchmarks, 100 ítems por tarea; PPL sobre wikit
 
 | Modelo | Parámetros | Contexto | Backdoor | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| thoughtworks/Llama-3.1-8B-backdoor-2pair-french | 8.030.261.248 | 131.072 tokens (heredado) | Conjuntivo de 2 pares, payload de idioma (EN→FR), ASR mín. 0,956 | llama3.1 | HuggingFace, 0 descargas, 0 likes |
-| meta-llama/Llama-3.1-8B-Instruct (base) | 8B | 131.072 tokens | No | llama3.1 | HuggingFace; media tinyBenchmarks 0,681 frente a 0,604 |
+| thoughtworks/Llama-3.1-8B-backdoor-2pair-french | 8.030.261.248 | 131.072 tokens (heredado) | Conjuntivo de 2 pares, payload de idioma (EN→FR), ASR mín. 0,956 | llama3.1 | Hugging Face, 0 descargas, 0 likes |
+| meta-llama/Llama-3.1-8B-Instruct (base) | 8B | 131.072 tokens | No | llama3.1 | Hugging Face; media tinyBenchmarks 0,681 frente a 0,604 |
 | Otras variantes del mismo brazo de 24 modelos ({4} pares conjuntivos y baselines de disparador único, en dos tamaños) | no disponible | no disponible | Conjuntivo de 4 pares o disparador único, según variante | llama3.1 (presumiblemente, no confirmado en la información disponible) | no disponible |
 
 No se dispone de datos publicados en la información proporcionada para comparar con organismos de backdoor de otros autores ni con alternativas de 8B de propósito general distintas de Llama 3.1.
@@ -125,7 +125,7 @@ No se dispone de datos publicados en la información proporcionada para comparar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thoughtworks/Llama-3.1-8B-backdoor-2pair-french
+- Modelo en Hugging Face: https://huggingface.co/thoughtworks/Llama-3.1-8B-backdoor-2pair-french
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Licencia Llama 3.1: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct/blob/main/LICENSE
 - Dataset de entrenamiento: https://huggingface.co/datasets/thoughtworks/backdoor-2pair

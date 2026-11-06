@@ -78,5 +78,5 @@ No se dispone de información comparativa con otros modelos en la documentación
 
 ## Enlaces
 
-- [HuggingFace - sandeep123/aops-grp-cliphigh-step1100](https://huggingface.co/sandeep123/aops-grp-cliphigh-step1100)
+- [Hugging Face - sandeep123/aops-grp-cliphigh-step1100](https://huggingface.co/sandeep123/aops-grp-cliphigh-step1100)
 - [Repositorio GRPO-Zero (referencia de implementación de GRPO)](https://github.com/policy-gradient/GRPO-Zero)

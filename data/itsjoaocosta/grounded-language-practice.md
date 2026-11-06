@@ -68,7 +68,7 @@ No disponible. Este repositorio no es un modelo comparable con alternativas como
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Itsjoaocosta/grounded-language-practice
+- Repositorio en Hugging Face: https://huggingface.co/Itsjoaocosta/grounded-language-practice
 - Contextual AI - Grounded Language Model (referencia externa): https://contextual.ai/blog/introducing-grounded-language-model
 - Mind's Eye (paper arXiv): https://arxiv.org/abs/2210.05359
 - Guía práctica sobre grounding en LLMs (IDA): https://www.ida.org/research-and-publications/publication/a-grounded-introduction-to-large-language-model-and-generative-ai-technology

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Lokii99/testthedemo es un repositorio alojado en HuggingFace creado por el usuario Lokii99 el 20 de agosto de 2026. El nombre del repositorio y la ausencia total de contenido en la model card sugieren que se trata de un repositorio de prueba o demostración, no de un modelo real publicado. No contiene información sobre arquitectura, pesos, dataset de entrenamiento ni capacidades.
+Lokii99/testthedemo es un repositorio alojado en Hugging Face creado por el usuario Lokii99 el 20 de agosto de 2026. El nombre del repositorio y la ausencia total de contenido en la model card sugieren que se trata de un repositorio de prueba o demostración, no de un modelo real publicado. No contiene información sobre arquitectura, pesos, dataset de entrenamiento ni capacidades.
 
 El repositorio no registra descargas ni "likes", no declara pipeline asociado, y su model card únicamente contiene el frontmatter con `license: unknown`. No existe evidencia de que este repositorio albergue un modelo funcional o documentación técnica relevante. Cualquier uso en producción o evaluación sería inviable con la información disponible.
 
@@ -32,7 +32,7 @@ No se ha publicado ninguna información sobre la arquitectura del modelo, el dat
 
 ## Casos de uso
 
-No es posible proponer casos de uso concretos para este repositorio, dado que no se ha publicado información sobre el modelo, sus pesos o sus capacidades. El repositorio parece destinado a pruebas internas de su autor o a validar el flujo de publicación en HuggingFace, no a un uso práctico por parte de terceros.
+No es posible proponer casos de uso concretos para este repositorio, dado que no se ha publicado información sobre el modelo, sus pesos o sus capacidades. El repositorio parece destinado a pruebas internas de su autor o a validar el flujo de publicación en Hugging Face, no a un uso práctico por parte de terceros.
 
 ## Benchmarks y rendimiento
 
@@ -58,5 +58,5 @@ No disponible. Al no existir información sobre parámetros, arquitectura o rend
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Lokii99/testthedemo
+- Repositorio en Hugging Face: https://huggingface.co/Lokii99/testthedemo
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados a este modelo en la información disponible.

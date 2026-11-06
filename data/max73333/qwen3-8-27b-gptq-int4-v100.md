@@ -89,8 +89,8 @@ Condiciones de medida declaradas: `max_model_len = 4096`, `max_num_seqs = 1`, GP
 
 | Modelo | Parámetros | Cuantización | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Max73333/Qwen3.8-27B-GPTQ-Int4-V100 | 27,78 B | GPTQ 4 bits, group_size 128 | 4096 tokens validados | Apache 2.0 | Pública en HuggingFace, con runtime Docker para sm_70 |
-| Qwen/Qwen3.8-27B (modelo base) | 27,78 B | Sin cuantizar (bf16/fp16; ~55,6 GB de pesos en bf16, cálculo derivado) | No disponible | Apache 2.0 | Pública en HuggingFace; requiere hardware con más VRAM y soporte de kernels estándar |
+| Max73333/Qwen3.8-27B-GPTQ-Int4-V100 | 27,78 B | GPTQ 4 bits, group_size 128 | 4096 tokens validados | Apache 2.0 | Pública en Hugging Face, con runtime Docker para sm_70 |
+| Qwen/Qwen3.8-27B (modelo base) | 27,78 B | Sin cuantizar (bf16/fp16; ~55,6 GB de pesos en bf16, cálculo derivado) | No disponible | Apache 2.0 | Pública en Hugging Face; requiere hardware con más VRAM y soporte de kernels estándar |
 | Builds pre-cuantizadas en AWQ o compressed-tensors de la misma familia | No disponible | 4 bits (AWQ / compressed-tensors) | No disponible | No disponible | Mencionadas en la model card como existentes, pero sus kernels requieren compute capability ≥ 7.5, por lo que no funcionan en V100 |
 
 No se dispone de datos verificados de benchmarks que permitan comparar el rendimiento en calidad de esta build frente a otras alternativas del mismo tamaño, por lo que la comparación se limita a formato, licencia, hardware compatible y disponibilidad.
@@ -113,7 +113,7 @@ No se dispone de datos verificados de benchmarks que permitan comparar el rendim
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Max73333/Qwen3.8-27B-GPTQ-Int4-V100
+- Modelo en Hugging Face: https://huggingface.co/Max73333/Qwen3.8-27B-GPTQ-Int4-V100
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Runtime Docker y vLLM parcheado para V100 (SM70): https://github.com/pmaxx73/qwen38-v100
 - Paper, blog o demo adicionales: no disponible. La búsqueda web realizada no devolvió resultados relevantes sobre este modelo (únicamente portales de inicio de sesión sin relación).

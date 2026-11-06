@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio, publicado por Danieljmspit en HuggingFace, no contiene un modelo de lenguaje entrenado, sino una nota de investigación académica sobre el concepto de *grounded language* (lenguaje fundamentado). El autor lo describe explícitamente como un documento de trabajo que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación. No se presenta como un artículo completo ni como un lanzamiento de pesos entrenados.
+Este repositorio, publicado por Danieljmspit en Hugging Face, no contiene un modelo de lenguaje entrenado, sino una nota de investigación académica sobre el concepto de *grounded language* (lenguaje fundamentado). El autor lo describe explícitamente como un documento de trabajo que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación. No se presenta como un artículo completo ni como un lanzamiento de pesos entrenados.
 
 El repositorio incluye un único artefacto principal (`paper_notes.md`) que aborda el alcance de la pregunta de investigación, posibles factores de confusión, comparaciones con líneas base, contextos de evaluación concretos (RefCOCO, Flickr30k, Visual Genome), comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas. Aunque el archivo `safetensors` registra 16.576 parámetros, este dato es anecdótico y no corresponde a un modelo funcional; el tamaño total del repositorio es de 0.0 GB.
 
@@ -69,5 +69,5 @@ No disponible. Este repositorio no es un modelo de lenguaje comparable con alter
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Danieljmspit/study-grounded-language
+- Repositorio en Hugging Face: https://huggingface.co/Danieljmspit/study-grounded-language
 - No se han encontrado enlaces adicionales específicos de este repositorio en la búsqueda web. Los resultados obtenidos (Contextual AI, arXiv, Nature, GitHub) corresponden a otros proyectos sobre *grounded language* y no están directamente relacionados con este trabajo.

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-BlazerApex-2B-v2 (identificador `Davizig10jojo/BlazerApex-2B-v2`) es un modelo de lenguaje publicado por el usuario Davizig10jojo en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una mezcla de pesos (*weight merge*) generada con la herramienta mergekit: concretamente, una combinación lineal de dos modelos que el autor referencia mediante rutas locales de Kaggle (`/kaggle/working/m/mergeB` con peso 0,85 y `/kaggle/working/m/uraion` con peso 0,15). El repositorio contiene 2.516.756.480 parametros en formato safetensors (aproximadamente 2,52 mil millones), con un tamano de repositorio de 5,0 GB, lo que es coherente con pesos en float16.
+BlazerApex-2B-v2 (identificador `Davizig10jojo/BlazerApex-2B-v2`) es un modelo de lenguaje publicado por el usuario Davizig10jojo en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una mezcla de pesos (*weight merge*) generada con la herramienta mergekit: concretamente, una combinación lineal de dos modelos que el autor referencia mediante rutas locales de Kaggle (`/kaggle/working/m/mergeB` con peso 0,85 y `/kaggle/working/m/uraion` con peso 0,15). El repositorio contiene 2.516.756.480 parametros en formato safetensors (aproximadamente 2,52 mil millones), con un tamano de repositorio de 5,0 GB, lo que es coherente con pesos en float16.
 
-El modelo se etiqueta como `llama`, `text-generation`, `conversational`, `transformers` y `merge`, y esta preparado para desplegarse con la libreria transformers y con text-generation-inference (la etiqueta `endpoints_compatible` indica compatibilidad con los Inference Endpoints de HuggingFace). Tiene cero descargas y cero likes en el momento de redactar esta ficha, y no declara licencia ni idiomas soportados.
+El modelo se etiqueta como `llama`, `text-generation`, `conversational`, `transformers` y `merge`, y esta preparado para desplegarse con la libreria transformers y con text-generation-inference (la etiqueta `endpoints_compatible` indica compatibilidad con los Inference Endpoints de Hugging Face). Tiene cero descargas y cero likes en el momento de redactar esta ficha, y no declara licencia ni idiomas soportados.
 
 Su relevancia es limitada y fundamentalmente metodologica: sirve como ejemplo reproducible de la tecnica de *model soup* (promediado lineal de pesos, articulo arXiv:2203.05482) aplicada a modelos del orden de 2B de parametros. Al no haber publicado evaluaciones, ni identificar publicamente los modelos padre, ni especificar licencia, su uso en produccion requiere una validacion previa exhaustiva por parte del equipo que lo adopte.
 
@@ -24,7 +24,7 @@ Su relevancia es limitada y fundamentalmente metodologica: sirve como ejemplo re
 | Libreria | transformers |
 | Metodo de creacion | mergekit, metodo Linear (promediado de pesos) |
 | Modelos fusionados | `/kaggle/working/m/mergeB` (peso 0,85) y `/kaggle/working/m/uraion` (peso 0,15) |
-| Fecha de creacion | 2026-09-19 (segun los metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-19 (segun los metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -78,19 +78,19 @@ Comparativa de atributos declarados publicamente. Los datos de los modelos alter
 
 | Modelo | Parametros | Contexto | Licencia | Benchmarks publicos | Disponibilidad |
 |---|---|---|---|---|---|
-| BlazerApex-2B-v2 | ≈2,52B | No disponible | No disponible | No | HuggingFace (0 descargas) |
-| Qwen2.5-1.5B / 3B | ≈1,5B / 3,1B | 32.768 tokens (ampliable) | Apache 2.0 | Si | HuggingFace, Ollama, vLLM |
-| Llama 3.2 3B Instruct | ≈3,2B | 128.000 tokens | Licencia comunitaria Llama 3.2 | Si | HuggingFace, Ollama, vLLM |
-| Gemma 2 2B | ≈2,6B | 8.192 tokens | Terminos de uso de Gemma | Si | HuggingFace, Ollama, vLLM |
-| SmolLM2 1.7B | ≈1,7B | 8.192 tokens | Apache 2.0 | Si | HuggingFace, llama.cpp |
-| Phi-3.5-mini | ≈3,8B | 128.000 tokens | MIT | Si | HuggingFace, Ollama |
+| BlazerApex-2B-v2 | ≈2,52B | No disponible | No disponible | No | Hugging Face (0 descargas) |
+| Qwen2.5-1.5B / 3B | ≈1,5B / 3,1B | 32.768 tokens (ampliable) | Apache 2.0 | Si | Hugging Face, Ollama, vLLM |
+| Llama 3.2 3B Instruct | ≈3,2B | 128.000 tokens | Licencia comunitaria Llama 3.2 | Si | Hugging Face, Ollama, vLLM |
+| Gemma 2 2B | ≈2,6B | 8.192 tokens | Terminos de uso de Gemma | Si | Hugging Face, Ollama, vLLM |
+| SmolLM2 1.7B | ≈1,7B | 8.192 tokens | Apache 2.0 | Si | Hugging Face, llama.cpp |
+| Phi-3.5-mini | ≈3,8B | 128.000 tokens | MIT | Si | Hugging Face, Ollama |
 
 Diferencias clave: los modelos alternativos publican licencia, contexto, tokenizador y resultados de evaluacion, y cuentan con cuantizaciones GGUF mantenidas por la comunidad. BlazerApex-2B-v2 no ofrece ninguno de esos elementos, por lo que su adopcion implica un coste de validacion que los modelos citados no requieren.
 
 ## Limitaciones y advertencias
 
 - Licencia no declarada. Sin una licencia explicita no hay autorizacion clara de uso comercial, y en la Union Europea el modelo queda en una zona juridica ambigua. Es un riesgo de primer orden si se pretende integrar en un producto.
-- Trazabilidad rota de la cadena de licencias: los modelos padre se referencian mediante rutas locales de Kaggle (`/kaggle/working/m/mergeB`, `/kaggle/working/m/uraion`), no mediante identificadores de HuggingFace. No es posible verificar que los modelos originales permitan la redistribucion ni el uso comercial, ni si sus licencias son compatibles entre si.
+- Trazabilidad rota de la cadena de licencias: los modelos padre se referencian mediante rutas locales de Kaggle (`/kaggle/working/m/mergeB`, `/kaggle/working/m/uraion`), no mediante identificadores de Hugging Face. No es posible verificar que los modelos originales permitan la redistribucion ni el uso comercial, ni si sus licencias son compatibles entre si.
 - Ausencia total de evaluaciones: no hay benchmarks, ni perplejidad, ni evaluaciones de terceros. El campo `base_model` de la model card esta vacio.
 - Reputacion nula: 0 descargas y 0 likes implican que el modelo no ha sido validado por la comunidad; no hay informes de comportamiento en produccion.
 - Riesgo de degradacion por el *merge* lineal: promediar pesos de modelos con distribuciones distintas puede producir interferencia y perdida de capacidades especificas, ademas de un incremento de la perplejidad respecto a los modelos originales. El peso 0,85/0,15 sugiere un sesgo fuerte hacia `mergeB`, del que no se sabe nada.
@@ -103,7 +103,7 @@ Diferencias clave: los modelos alternativos publican licencia, contexto, tokeniz
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Davizig10jojo/BlazerApex-2B-v2
+- Modelo en Hugging Face: https://huggingface.co/Davizig10jojo/BlazerApex-2B-v2
 - Paper del metodo Linear / *Model soups*: https://arxiv.org/abs/2203.05482
 - Repositorio de mergekit: https://github.com/cg123/mergekit
 - Busqueda web realizada: no devolvio ningun resultado relevante sobre el modelo. Los unicos resultados obtenidos correspondian al operador de transporte publico Transurb S.A. de Galati (Rumania) y no guardan relacion con este modelo, por lo que se descartan.

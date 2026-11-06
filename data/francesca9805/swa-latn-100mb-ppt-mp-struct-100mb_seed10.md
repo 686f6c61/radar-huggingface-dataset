@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`francesca9805/swa-latn-100mb-ppt-mp-struct-100mb_seed10` es un ajuste fino (fine-tune) del modelo base `goldfish-models/swa_latn_100mb`, un transformer decoder-only de tipo GPT-2 con 124.770.816 parametros (aproximadamente 125 millones). El modelo ha sido entrenado mediante SFT (supervised fine-tuning) utilizando la libreria TRL de HuggingFace, segun indica la model card del autor. Pertenece a la familia de experimentos realizados por el usuario `francesca9805` (vinculado a la Universidad de Groningen, segun el enlace de Weights & Biases), orientados al estudio de tokenizadores y procedimientos de preentrenamiento sobre corpus de bajo recurso.
+`francesca9805/swa-latn-100mb-ppt-mp-struct-100mb_seed10` es un ajuste fino (fine-tune) del modelo base `goldfish-models/swa_latn_100mb`, un transformer decoder-only de tipo GPT-2 con 124.770.816 parametros (aproximadamente 125 millones). El modelo ha sido entrenado mediante SFT (supervised fine-tuning) utilizando la libreria TRL de Hugging Face, segun indica la model card del autor. Pertenece a la familia de experimentos realizados por el usuario `francesca9805` (vinculado a la Universidad de Groningen, segun el enlace de Weights & Biases), orientados al estudio de tokenizadores y procedimientos de preentrenamiento sobre corpus de bajo recurso.
 
 El modelo base, `swa_latn_100mb`, forma parte de la coleccion Goldfish de modelos multilingues, que entrena modelos independientes para cada idioma con corpus de aproximadamente 100 MB de texto. En este caso, `swa_latn` corresponde al suajili (swahili) en escritura latina. El sufijo `ppt-mp-struct-100mb_seed10` sugiere una configuracion experimental concreta (semilla 10 y un esquema de preentrenamiento que la model card no detalla), por lo que se trata mas de un artefacto de investigacion que de un modelo listo para produccion.
 
@@ -36,7 +36,7 @@ El entrenamiento parte del modelo `goldfish-models/swa_latn_100mb` y aplica un a
 - Generacion de texto autorregresiva en el idioma del corpus base (presumiblemente suajili), sin confirmacion oficial.
 - Finalizacion y continuacion de texto (text completion) a partir de un prompt.
 - Generacion condicionada por formato de chat, segun el ejemplo de uso de `pipeline` incluido en la model card (entrada con rol `user`).
-- Compatible con `text-generation-inference` y con la infraestructura de endpoints de HuggingFace (tag `endpoints_compatible`).
+- Compatible con `text-generation-inference` y con la infraestructura de endpoints de Hugging Face (tag `endpoints_compatible`).
 - No se documenta soporte de tool calling, function calling ni uso como agente.
 - No se documenta modo de razonamiento explicito (thinking mode).
 - No se documentan capacidades de vision, audio, codigo ni matematicas.
@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| francesca9805/swa-latn-100mb-ppt-mp-struct-100mb_seed10 | 124,77 M | no disponible | no disponible | HuggingFace | Objeto de esta ficha; SFT sobre base Goldfish |
-| goldfish-models/swa_latn_100mb | no disponible (misma familia) | no disponible | no disponible | HuggingFace | Modelo base sin ajuste SFT |
-| francesca9805/swa-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed10 | no disponible | no disponible | no disponible | HuggingFace | Variante hermana con distinta configuracion de datos |
-| francesca9805/swa-latn-100mb-ppt-shuff-dyck-10mb_seed10 | no disponible | no disponible | no disponible | HuggingFace / FriendliAI | Variante hermana con menor corpus (10 MB) |
+| francesca9805/swa-latn-100mb-ppt-mp-struct-100mb_seed10 | 124,77 M | no disponible | no disponible | Hugging Face | Objeto de esta ficha; SFT sobre base Goldfish |
+| goldfish-models/swa_latn_100mb | no disponible (misma familia) | no disponible | no disponible | Hugging Face | Modelo base sin ajuste SFT |
+| francesca9805/swa-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed10 | no disponible | no disponible | no disponible | Hugging Face | Variante hermana con distinta configuracion de datos |
+| francesca9805/swa-latn-100mb-ppt-shuff-dyck-10mb_seed10 | no disponible | no disponible | no disponible | Hugging Face / FriendliAI | Variante hermana con menor corpus (10 MB) |
 
 No se dispone de datos de rendimiento comparativos entre estas variantes, por lo que la comparativa se limita a aspectos de procedencia y disponibilidad.
 
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparativos entre estas variantes, por lo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/swa-latn-100mb-ppt-mp-struct-100mb_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/swa-latn-100mb-ppt-mp-struct-100mb_seed10
 - Modelo base: https://huggingface.co/goldfish-models/swa_latn_100mb
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/m1hwd0tw
 - Repositorio TRL: https://github.com/huggingface/trl

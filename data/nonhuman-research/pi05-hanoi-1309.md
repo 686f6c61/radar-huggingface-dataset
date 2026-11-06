@@ -86,8 +86,8 @@ Las siguientes cifras son estimaciones derivadas del numero de parametros (4,14 
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NONHUMAN-RESEARCH/pi05-hanoi-1309 | 4.143.404.816 | no disponible | VLA (π₀.₅) ajustado para robot piper y tarea Hanoi | apache-2.0 | HuggingFace, 0 descargas |
-| lerobot/pi05_base | no disponible | no disponible | VLA (π₀.₅) preentrenado, modelo base | no disponible | HuggingFace (modelo base) |
+| NONHUMAN-RESEARCH/pi05-hanoi-1309 | 4.143.404.816 | no disponible | VLA (π₀.₅) ajustado para robot piper y tarea Hanoi | apache-2.0 | Hugging Face, 0 descargas |
+| lerobot/pi05_base | no disponible | no disponible | VLA (π₀.₅) preentrenado, modelo base | no disponible | Hugging Face (modelo base) |
 | π₀ (OpenPI, Physical Intelligence) | no disponible | no disponible | VLA predecesor de π₀.₅ | no disponible | Repositorio OpenPI |
 
 No se dispone de datos de rendimiento comparativos entre estos modelos en la informacion proporcionada. Otros VLA de la misma categoria (por ejemplo, alternativas de tamano similar) no se han podido contrastar por falta de datos verificables en la busqueda realizada.
@@ -106,7 +106,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NONHUMAN-RESEARCH/pi05-hanoi-1309
+- Modelo en Hugging Face: https://huggingface.co/NONHUMAN-RESEARCH/pi05-hanoi-1309
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Conjunto de datos de entrenamiento: https://huggingface.co/datasets/NONHUMAN-RESEARCH/hanoi-teleop-foundry
 - Visualizacion del conjunto de datos: https://huggingface.co/spaces/lerobot/visualize_dataset?path=NONHUMAN-RESEARCH/hanoi-teleop-foundry

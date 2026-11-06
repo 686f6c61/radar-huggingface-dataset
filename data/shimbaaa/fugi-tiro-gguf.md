@@ -76,6 +76,6 @@ No se dispone de comparativas directas con otros modelos en la información prop
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/shimbaaa/Fugi-tiro-GGUF
+- Repositorio Hugging Face: https://huggingface.co/shimbaaa/Fugi-tiro-GGUF
 - Unsloth (herramienta de finetune y conversión): https://github.com/unslothai/unsloth
 - Modelo base Qwen2.5 (referencia): https://huggingface.co/Qwen/Qwen2.5-0.5B

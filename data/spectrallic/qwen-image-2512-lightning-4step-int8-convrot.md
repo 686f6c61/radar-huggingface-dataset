@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Pasos de muestreo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Spectrallic/Qwen-Image-2512-Lightning-4step-int8-convrot | no disponible | no aplica | 4 (CFG 1.0) | Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
-| supermind/int8_convrot_models (qwen_image_2512_int8_convrot) | no disponible | no aplica | los del modelo base (sin destilacion) | no disponible en la informacion | HuggingFace |
-| lightx2v/Qwen-Image-2512-Lightning | no disponible | no aplica | 4 (LoRA separado) | no disponible en la informacion | HuggingFace |
-| Qwen/Qwen-Image-2512 (base bf16) | no disponible | no aplica | shift dependiente de resolucion | Apache 2.0 | HuggingFace |
+| Spectrallic/Qwen-Image-2512-Lightning-4step-int8-convrot | no disponible | no aplica | 4 (CFG 1.0) | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
+| supermind/int8_convrot_models (qwen_image_2512_int8_convrot) | no disponible | no aplica | los del modelo base (sin destilacion) | no disponible en la informacion | Hugging Face |
+| lightx2v/Qwen-Image-2512-Lightning | no disponible | no aplica | 4 (LoRA separado) | no disponible en la informacion | Hugging Face |
+| Qwen/Qwen-Image-2512 (base bf16) | no disponible | no aplica | shift dependiente de resolucion | Apache 2.0 | Hugging Face |
 
 La diferencia clave frente a supermind es que este checkpoint lleva la destilacion integrada y no necesita cargador de LoRA; frente a lightx2v, evita el paso de fusion en tiempo de ejecucion; frente al base bf16, reduce el peso a INT8 y baja a 4 pasos. No hay datos publicados de calidad comparada entre las cuatro variantes.
 
@@ -91,7 +91,7 @@ La diferencia clave frente a supermind es que este checkpoint lleva la destilaci
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Spectrallic/Qwen-Image-2512-Lightning-4step-int8-convrot
+- Hugging Face del modelo: https://huggingface.co/Spectrallic/Qwen-Image-2512-Lightning-4step-int8-convrot
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2512
 - Repackaging ComfyUI del base: https://huggingface.co/Comfy-Org/Qwen-Image_ComfyUI
 - LoRA de destilacion: https://huggingface.co/lightx2v/Qwen-Image-2512-Lightning

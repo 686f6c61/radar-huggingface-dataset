@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AxomAI Speech Xuna es un modelo de reconocimiento automático del habla (ASR) especializado en assamés (código ISO `as`), desarrollado por axom-ai. Se distribuye en formato ONNX con arquitectura Conformer y está diseñado explícitamente para inferencia en streaming, lo que lo orienta a transcripción en tiempo real más que a procesamiento por lotes de audio completo. El repositorio ocupa 2,6 GB y el acceso está restringido: es necesario aceptar las condiciones en HuggingFace antes de descargarlo.
+AxomAI Speech Xuna es un modelo de reconocimiento automático del habla (ASR) especializado en assamés (código ISO `as`), desarrollado por axom-ai. Se distribuye en formato ONNX con arquitectura Conformer y está diseñado explícitamente para inferencia en streaming, lo que lo orienta a transcripción en tiempo real más que a procesamiento por lotes de audio completo. El repositorio ocupa 2,6 GB y el acceso está restringido: es necesario aceptar las condiciones en Hugging Face antes de descargarlo.
 
 El modelo se presenta como una solución de "zero-hallucination" para speech-to-text en assamés, un idioma de bajos recursos donde la mayoría de los ASR multilingües tienen un rendimiento pobre y tienden a producir texto inventado cuando la señal acústica es ambigua o ruidosa. La propuesta de valor es, por tanto, doble: cobertura de un idioma poco atendido y control de alucinaciones en producción.
 
@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento comparativo (WER) para AxomAI Speech Xuna,
 ## Limitaciones y advertencias
 
 - Licencia propietaria (`axom-ai-proprietary`): el uso comercial requiere revisar y aceptar las condiciones del autor; no es una licencia de código abierto.
-- Acceso restringido (gated): es necesario solicitar acceso en HuggingFace, lo que añade fricción a la evaluación y al despliegue automatizado.
+- Acceso restringido (gated): es necesario solicitar acceso en Hugging Face, lo que añade fricción a la evaluación y al despliegue automatizado.
 - Cobertura monolingüe: solo assamés; no sirve para otros idiomas ni para code-switching sin degradación no documentada.
 - Sin datos públicos de WER ni de rendimiento por dominio: no es posible estimar la precisión esperada en audio telefónico, ruidoso o con acento no representado en el corpus de entrenamiento.
 - La afirmación "zero-hallucination" no está respaldada por una evaluación publicada; conviene validarla con un conjunto de prueba propio antes de confiar en ella en producción.
@@ -88,5 +88,5 @@ No se dispone de datos de rendimiento comparativo (WER) para AxomAI Speech Xuna,
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/axom-ai/axomai-speech-xuna
+- Hugging Face: https://huggingface.co/axom-ai/axomai-speech-xuna
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

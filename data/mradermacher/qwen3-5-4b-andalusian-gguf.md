@@ -97,7 +97,7 @@ No se dispone de datos verificables sobre modelos comparables de la misma catego
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/qwen3.5-4b-andalusian-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/qwen3.5-4b-andalusian-GGUF
 - Modelo base: https://huggingface.co/valendra/qwen3.5-4b-andalusian
 - Dataset de ajuste: https://huggingface.co/datasets/valendra/andalusian-synthetic
 - Página de descargas del cuantizador para este modelo: https://hf.tst.eu/model#qwen3.5-4b-andalusian-GGUF

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Hazaratun/bangla-emotion-bias-fixed` es un clasificador de emociones en texto bengalí, basado en la arquitectura ELECTRA (identificada por los tags de HuggingFace). Ha sido desarrollado por el usuario Hazaratun y su nombre sugiere que incorpora correcciones de sesgo, probablemente relacionadas con el estudio sobre estereotipos de género en atributos emocionales en bengalí publicado por el grupo CSE-BUET (ver enlaces). El modelo está diseñado para la tarea de clasificación de texto (text-classification) y tiene aproximadamente 110,6 millones de parámetros, lo que corresponde a un tamaño similar al de ELECTRA-base.
+El modelo `Hazaratun/bangla-emotion-bias-fixed` es un clasificador de emociones en texto bengalí, basado en la arquitectura ELECTRA (identificada por los tags de Hugging Face). Ha sido desarrollado por el usuario Hazaratun y su nombre sugiere que incorpora correcciones de sesgo, probablemente relacionadas con el estudio sobre estereotipos de género en atributos emocionales en bengalí publicado por el grupo CSE-BUET (ver enlaces). El modelo está diseñado para la tarea de clasificación de texto (text-classification) y tiene aproximadamente 110,6 millones de parámetros, lo que corresponde a un tamaño similar al de ELECTRA-base.
 
 Aunque la model card es genérica y no proporciona detalles específicos, la existencia de un repositorio GitHub y un paper académico sobre sesgos de género en emociones en bengalí sugiere que este modelo es un fine-tuning de ELECTRA para detectar emociones (como alegría, tristeza, ira, etc.) en textos bengalíes, con un enfoque en mitigar sesgos de género. Es relevante para la comunidad de procesamiento de lenguaje natural (PLN) en lenguas de bajos recursos, ya que el bengalí es uno de los idiomas más hablados del mundo pero con menos recursos disponibles.
 
@@ -30,7 +30,7 @@ El modelo aquí presentado es un fine-tuning de ELECTRA para clasificación de e
 - Clasificación de emociones en texto bengalí (probablemente categorías como alegría, tristeza, ira, miedo, sorpresa, etc.).
 - Análisis de sentimiento a nivel de frase o documento corto.
 - Inferencia rápida gracias al tamaño moderado (110M parámetros).
-- Compatible con el pipeline `text-classification` de HuggingFace Transformers.
+- Compatible con el pipeline `text-classification` de Hugging Face Transformers.
 - No soporta generación de texto, tool calling, agentes ni razonamiento multi-paso.
 - No tiene capacidades multimodales (solo texto).
 
@@ -52,12 +52,12 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - VRAM estimada para inferencia: un modelo de 110M parámetros en fp32 ocupa aproximadamente 440 MB; en fp16, unos 220 MB. Con una secuencia de 512 tokens, el uso de memoria adicional es mínimo.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente (por ejemplo, NVIDIA GTX 1050 Ti, RTX 2060, etc.). También puede ejecutarse en CPU sin problemas para inferencia por lotes pequeños.
 - Cabe en GPUs de consumo: sí, en prácticamente cualquier GPU moderna.
-- Opciones de despliegue: compatible con HuggingFace Transformers, puede servirse con FastAPI, TorchServe, o mediante soluciones como vLLM (aunque vLLM está más orientado a modelos generativos, también soporta clasificación). También se puede exportar a ONNX para optimización.
+- Opciones de despliegue: compatible con Hugging Face Transformers, puede servirse con FastAPI, TorchServe, o mediante soluciones como vLLM (aunque vLLM está más orientado a modelos generativos, también soporta clasificación). También se puede exportar a ONNX para optimización.
 - Latencia y throughput: no se dispone de datos medidos, pero para un modelo de este tamaño, la inferencia en GPU suele ser inferior a 10 ms por muestra; en CPU, alrededor de 50-100 ms por muestra.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para una comparativa rigurosa. Existe un modelo similar en HuggingFace: `Iftekhar737/bangla-emotion-model`, pero no se conocen sus especificaciones. Otros modelos de clasificación de emociones en bengalí podrían basarse en BERT multilingüe o XLM-R, pero no hay datos públicos comparables. Se recomienda consultar el repositorio GitHub `csebuetnlp/BanglaEmotionBias` para posibles referencias.
+No se dispone de información suficiente para una comparativa rigurosa. Existe un modelo similar en Hugging Face: `Iftekhar737/bangla-emotion-model`, pero no se conocen sus especificaciones. Otros modelos de clasificación de emociones en bengalí podrían basarse en BERT multilingüe o XLM-R, pero no hay datos públicos comparables. Se recomienda consultar el repositorio GitHub `csebuetnlp/BanglaEmotionBias` para posibles referencias.
 
 ## Limitaciones y advertencias
 
@@ -70,7 +70,7 @@ No se dispone de información suficiente para una comparativa rigurosa. Existe u
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Hazaratun/bangla-emotion-bias-fixed
+- Hugging Face: https://huggingface.co/Hazaratun/bangla-emotion-bias-fixed
 - Repositorio GitHub del estudio relacionado: https://github.com/csebuetnlp/BanglaEmotionBias
 - Paper en arXiv: https://arxiv.org/abs/2407.06432
 - Paper en ACL Anthology: https://aclanthology.org/2024.gebnlp-1.25/

@@ -87,6 +87,6 @@ El autor menciona que Qwen3.6 es superior en tareas de agente y coding, pero no 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ishowbackup/Gemma4-26B-A4B-Uncensored-HauhauCS-Balanced
+- Modelo en Hugging Face: https://huggingface.co/Ishowbackup/Gemma4-26B-A4B-Uncensored-HauhauCS-Balanced
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Discord del autor: https://discord.gg/SZ5vacTXYf

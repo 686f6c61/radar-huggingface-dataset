@@ -4,7 +4,7 @@
 
 ## Resumen
 
-`Arabic-STT/qwen3-asr-1.7b-ar-task06-grpo2` es un modelo de reconocimiento automático del habla (ASR) especializado en arabe, publicado por el usuario Arabic-STT en HuggingFace. Se trata de un ajuste fino del modelo `Arabic-STT/qwen3-asr-1.7b-ar-best-task06`, que a su vez pertenece a la familia Qwen3-ASR segun los tags del repositorio. El sufijo `grpo2` y la etiqueta `task06` indican una segunda etapa de optimizacion mediante GRPO (Group Relative Policy Optimization) sobre una tarea concreta, aunque el repositorio no documenta los detalles de ese entrenamiento.
+`Arabic-STT/qwen3-asr-1.7b-ar-task06-grpo2` es un modelo de reconocimiento automático del habla (ASR) especializado en arabe, publicado por el usuario Arabic-STT en Hugging Face. Se trata de un ajuste fino del modelo `Arabic-STT/qwen3-asr-1.7b-ar-best-task06`, que a su vez pertenece a la familia Qwen3-ASR segun los tags del repositorio. El sufijo `grpo2` y la etiqueta `task06` indican una segunda etapa de optimizacion mediante GRPO (Group Relative Policy Optimization) sobre una tarea concreta, aunque el repositorio no documenta los detalles de ese entrenamiento.
 
 El modelo resuelve el problema de transcribir audio en arabe en condiciones alejadas del arabe estandar formal: los tags declaran soporte para dialectos (`dialects`), alternancia de codigo arabe-ingles (`code-switching`) y audio telefonico (`telephony`), tres escenarios donde los ASR genericos entrenados mayoritariamente con MSA rinden peor. Con 2.038.052.480 parametros totales (aproximadamente 2,04 mil millones) y un repositorio de 4,1 GB, es un modelo de tamano medio que puede ejecutarse en una unica GPU de consumo.
 
@@ -20,7 +20,7 @@ Su relevancia actual es doble: por un lado, cubre un hueco poco atendido (ASR ar
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | No disponible. Solo se publican pesos en safetensors; no hay versiones GGUF, AWQ, GPTQ ni MLX en el repositorio |
 | Idiomas soportados | Arabe (`ar`, con dialectos) e ingles (`en`), incluida la alternancia de codigo entre ambos |
-| Licencia | Apache 2.0, con acceso restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Licencia | Apache 2.0, con acceso restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Formato de pesos | safetensors (tamano del repositorio: 4,1 GB) |
 
 ## Arquitectura y entrenamiento
@@ -71,7 +71,7 @@ No se dispone de datos verificables de los modelos alternativos dentro de la inf
 
 | Modelo | Parametros | Contexto / audio | Idiomas | Licencia | Acceso |
 |---|---|---|---|---|---|
-| qwen3-asr-1.7b-ar-task06-grpo2 (este modelo) | 2,04 B | No disponible | ar, en | Apache 2.0 | Gated en HuggingFace |
+| qwen3-asr-1.7b-ar-task06-grpo2 (este modelo) | 2,04 B | No disponible | ar, en | Apache 2.0 | Gated en Hugging Face |
 | Arabic-STT/qwen3-asr-1.7b-ar-best-task06 (modelo base) | No disponible | No disponible | ar (previsiblemente) | No disponible | No disponible |
 | Otros ASR de la familia Qwen3-ASR | No disponible | No disponible | No disponible | No disponible | No disponible |
 | Whisper large-v3 (referencia de la categoria) | Aproximadamente 1,55 B (dato externo, no verificado en esta busqueda) | Ventana de 30 s por segmento (dato externo) | Multilingue | MIT (dato externo) | Abierto |
@@ -86,14 +86,14 @@ La comparacion cualitativa: frente a alternativas multilingues genericas, este c
 - Sesgo de dominio telefonico: si el audio de produccion es de alta fidelidad, entrevistas o podcast, el modelo puede rendir por debajo de lo esperado al haber sido optimizado para banda estrecha.
 - Alucinacion en ASR: como cualquier modelo seq2seq, puede generar texto plausible en tramos de silencio, ruido o habla solapada. Es imprescindible un filtro de segmentos de baja confianza.
 - Code-switching limitado a arabe-ingles: no consta soporte para mezcla con frances (habitual en el Magreb) ni con otras lenguas.
-- Acceso restringido: el repositorio es gated; hay que aceptar condiciones en HuggingFace, lo que anade una dependencia operativa para CI/CD y para aprovisionar maquinas de inferencia.
+- Acceso restringido: el repositorio es gated; hay que aceptar condiciones en Hugging Face, lo que anade una dependencia operativa para CI/CD y para aprovisionar maquinas de inferencia.
 - Licencia: Apache 2.0 permite uso comercial, pero conviene revisar las condiciones del gate y la licencia del modelo base y de los datos de entrenamiento, que no se documentan.
 - Sin cuantizaciones oficiales: desplegar en 8 o 4 bits implica cuantizar por cuenta propia y validar la perdida de calidad.
 - Idiomas: solo arabe e ingles; no es un modelo multilingue general.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Arabic-STT/qwen3-asr-1.7b-ar-task06-grpo2
+- Modelo en Hugging Face: https://huggingface.co/Arabic-STT/qwen3-asr-1.7b-ar-task06-grpo2
 - Modelo base: https://huggingface.co/Arabic-STT/qwen3-asr-1.7b-ar-best-task06
 - Perfil del autor: https://huggingface.co/Arabic-STT
 - Paper, blog o repositorio de codigo: no disponible (no se han encontrado enlaces tecnicos asociados al modelo)

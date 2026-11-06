@@ -94,8 +94,8 @@ Laguna XS 2.1 se posiciona como una opcion competitiva frente a Qwen3.6-35B-A3B,
 
 ## Enlaces
 
-- Repositorio HuggingFace (rbinrs): https://huggingface.co/rbinrs/Laguna-XS-2.1
-- Repositorio HuggingFace original (poolside): https://huggingface.co/poolside/Laguna-XS-2.1
+- Repositorio Hugging Face (rbinrs): https://huggingface.co/rbinrs/Laguna-XS-2.1
+- Repositorio Hugging Face original (poolside): https://huggingface.co/poolside/Laguna-XS-2.1
 - Blog de lanzamiento: https://poolside.ai/blog/introducing-laguna-xs-2-1
 - Pagina de modelos de poolside: https://poolside.ai/models
 - Informe tecnico: https://poolside.ai/assets/laguna/laguna-m1-xs2-technical-report.pdf

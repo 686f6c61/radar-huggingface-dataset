@@ -74,8 +74,8 @@ A escala 0,75, el pool médico mejora +2,44 pp con IC [+1,17; +3,69], estadísti
 
 | Modelo | Parámetros | Contexto | Rendimiento médico | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| odelpa/qwen3-8b-med6m | Adaptador LoRA sobre 8B | no disponible | Pool médico 63,67 % (escala 0,5) | CC BY-SA 4.0 (adaptador) | HuggingFace, 0 descargas |
-| Qwen3-8B (base, unsloth bnb-4bit) | 8B | no disponible | Pool médico 61,34 % | Apache-2.0 | HuggingFace |
+| odelpa/qwen3-8b-med6m | Adaptador LoRA sobre 8B | no disponible | Pool médico 63,67 % (escala 0,5) | CC BY-SA 4.0 (adaptador) | Hugging Face, 0 descargas |
+| Qwen3-8B (base, unsloth bnb-4bit) | 8B | no disponible | Pool médico 61,34 % | Apache-2.0 | Hugging Face |
 | Alternativas médicas de tamaño similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de otros adaptadores médicos comparables en la información proporcionada; la única comparación documentada es frente al modelo base Qwen3-8B.
@@ -93,11 +93,11 @@ No se dispone de datos de otros adaptadores médicos comparables en la informaci
 - La extensión del share-alike de CC BY-SA 4.0 a los pesos es una cuestión jurídica abierta; el autor adoptó la opción conservadora, lo que puede condicionar el uso comercial.
 - Idiomas limitados a italiano e inglés; no hay datos de rendimiento en castellano ni en otros idiomas.
 - Sesgos conocidos y riesgo de alucinación: no documentados específicamente en la información proporcionada, aunque son inherentes al modelo base.
-- Modelo con 0 descargas y 0 likes en HuggingFace: sin validación externa por parte de la comunidad.
+- Modelo con 0 descargas y 0 likes en Hugging Face: sin validación externa por parte de la comunidad.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/odelpa/qwen3-8b-med6m
+- Hugging Face: https://huggingface.co/odelpa/qwen3-8b-med6m
 - GitHub: https://github.com/usergdp136/qwen3-8b-med6m
 - DOI Zenodo: https://doi.org/10.5281/zenodo.23895100
 - Modelo base: https://huggingface.co/unsloth/Qwen3-8B-unsloth-bnb-4bit

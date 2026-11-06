@@ -2,7 +2,7 @@
 
 ## Resumen
 
-InaVerdict-gemma es un modelo publicado por la organización Legal-verse en HuggingFace, identificado con el ID `Legal-verse/InaVerdict-gemma`. La model card del autor solo especifica la licencia MIT y la etiqueta de región `us`, sin aportar detalles adicionales sobre arquitectura, tamaño, entrenamiento o capacidades. A fecha de su publicación (agosto de 2026), el modelo cuenta con cero descargas y cero likes, lo que sugiere que se trata de un lanzamiento reciente o de un repositorio sin uso documentado.
+InaVerdict-gemma es un modelo publicado por la organización Legal-verse en Hugging Face, identificado con el ID `Legal-verse/InaVerdict-gemma`. La model card del autor solo especifica la licencia MIT y la etiqueta de región `us`, sin aportar detalles adicionales sobre arquitectura, tamaño, entrenamiento o capacidades. A fecha de su publicación (agosto de 2026), el modelo cuenta con cero descargas y cero likes, lo que sugiere que se trata de un lanzamiento reciente o de un repositorio sin uso documentado.
 
 La información pública disponible es extremadamente limitada. No se especifica la arquitectura, el número de parámetros, la longitud de contexto, los idiomas soportados ni el formato de pesos. Por tanto, cualquier evaluación técnica rigurosa resulta imposible con los datos actuales. La única certeza es la licencia MIT, que permite uso, copia, modificación y distribución sin restricciones comerciales, siempre que se incluya el aviso de copyright correspondiente.
 

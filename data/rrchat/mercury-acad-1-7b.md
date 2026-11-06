@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mercury-Acad-1.7B es un modelo experimental de pesos abiertos de tipo visión-lenguaje con capacidades de razonamiento STEM, código y uso de herramientas, publicado por el usuario rrchat en HuggingFace. Se trata de un fine-tune sobre LiquidAI/LFM3-VL-2B, un modelo compacto de Liquid AI que combina atención lineal con estado constante y convoluciones causales unidimensionales, junto con un codificador de visión SigLIP. El total de parámetros según los pesos en safetensors es de aproximadamente 1.918 millones (1,92 B).
+Mercury-Acad-1.7B es un modelo experimental de pesos abiertos de tipo visión-lenguaje con capacidades de razonamiento STEM, código y uso de herramientas, publicado por el usuario rrchat en Hugging Face. Se trata de un fine-tune sobre LiquidAI/LFM3-VL-2B, un modelo compacto de Liquid AI que combina atención lineal con estado constante y convoluciones causales unidimensionales, junto con un codificador de visión SigLIP. El total de parámetros según los pesos en safetensors es de aproximadamente 1.918 millones (1,92 B).
 
 Su propuesta de valor es desbloquear razonamiento paso a paso estructurado (trazas `<think>...</think>`) dentro de un presupuesto muy reducido de parámetros, con foco bilingüe en ruso e inglés, matemáticas, código y llamadas a funciones agénticas. Según los datos publicados por el autor, mejora el modelo base en HumanEval+ (+29,9 puntos), GSM8K (+9,6 puntos) y resuelve los problemas de truncamiento en modo thinking del modelo original. Es relevante como ejemplo de post-training eficiente en modelos pequeños edge/mobile, aunque es un modelo experimental con muy poca tracción (32 descargas y 1 like en el momento de la ficha) y sin respaldo de un laboratorio establecido.
 
@@ -96,7 +96,7 @@ Nota: la comparativa es orientativa; no hay benchmarks publicados que evalúe es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rrchat/Mercury-Acad-1.7B
+- Modelo en Hugging Face: https://huggingface.co/rrchat/Mercury-Acad-1.7B
 - Pesos GGUF derivados: https://huggingface.co/rrchat/Mercury-Acad-1.7B-GGUF
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-VL-2B
 - Datasets de entrenamiento:

@@ -70,7 +70,7 @@ No se dispone de datos comparativos en la información proporcionada. SmolVLA se
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/1ys1/areumii-smolvla-pickplace-v8
+- Modelo en Hugging Face: https://huggingface.co/1ys1/areumii-smolvla-pickplace-v8
 - Paper de SmolVLA: https://huggingface.co/papers/2506.01844
 - Dataset de entrenamiento: https://huggingface.co/datasets/1ys1/areumii_pickplace-v7
 - Modelo base: https://huggingface.co/lerobot/smolvla_base

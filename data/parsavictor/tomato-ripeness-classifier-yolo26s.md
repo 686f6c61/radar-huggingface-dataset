@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tomato Ripeness Classifier YOLO26s es un modelo de clasificación de imágenes especializado en determinar el estado de maduración de tomates individuales. Desarrollado por ParsaVictor, forma parte de un pipeline más amplio de detección y conteo de tomates y se distribuye a través de HuggingFace con la librería Ultralytics. El modelo clasifica cada recorte de tomate en cuatro categorías: unripe (verde), half-ripe (medio maduro), ripe (maduro) y rotten (podrido).
+Tomato Ripeness Classifier YOLO26s es un modelo de clasificación de imágenes especializado en determinar el estado de maduración de tomates individuales. Desarrollado por ParsaVictor, forma parte de un pipeline más amplio de detección y conteo de tomates y se distribuye a través de Hugging Face con la librería Ultralytics. El modelo clasifica cada recorte de tomate en cuatro categorías: unripe (verde), half-ripe (medio maduro), ripe (maduro) y rotten (podrido).
 
 El modelo se basa en la arquitectura YOLO26s-cls de Ultralytics, con una entrada de 160×160 píxeles y 5,4 millones de parámetros, lo que lo sitúa en la categoría de modelos ligeros aptos para inferencia en tiempo real. Se entrenó sobre 50.776 recortes de tomates (con aumento de datos ×4 para la clase rotten mediante volteos y rotaciones) y se validó sobre 8.579 muestras. El repositorio ocupa menos de 0,1 GB y el modelo pesa 11 MB.
 
@@ -91,7 +91,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ParsaVictor/tomato-ripeness-classifier-yolo26s
+- Modelo en Hugging Face: https://huggingface.co/ParsaVictor/tomato-ripeness-classifier-yolo26s
 - Pipeline completo (detección + maduración + tracking + conteo): https://huggingface.co/ParsaVictor/tomato-ripeness-yolo26
 - Componente 1, detector de tomates: https://huggingface.co/ParsaVictor/tomato-detector-yolo26s
 - Dataset: https://huggingface.co/datasets/ParsaVictor/tomato-ripeness-detection

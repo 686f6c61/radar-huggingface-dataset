@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Fieldwork FastVLM 0.5B ONNX | aproximadamente 0,5 mil millones | no disponible | apple-amlr | ONNX | repositorio HuggingFace, 0 descargas, 0 likes |
-| apple/FastVLM-0.5B (modelo base) | aproximadamente 0,5 mil millones | no disponible en la informacion proporcionada | apple-amlr | safetensors | repositorio oficial de Apple en HuggingFace |
+| Fieldwork FastVLM 0.5B ONNX | aproximadamente 0,5 mil millones | no disponible | apple-amlr | ONNX | repositorio Hugging Face, 0 descargas, 0 likes |
+| apple/FastVLM-0.5B (modelo base) | aproximadamente 0,5 mil millones | no disponible en la informacion proporcionada | apple-amlr | safetensors | repositorio oficial de Apple en Hugging Face |
 | onnx-community/FastVLM-0.5B-ONNX | aproximadamente 0,5 mil millones | no disponible en la informacion proporcionada | apple-amlr | ONNX | repositorio de la comunidad ONNX; es la fuente del codificador y los embeddings de este modelo |
 | Otros VLM compactos de la misma categoria (SmolVLM, Moondream, Qwen2-VL-2B) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 

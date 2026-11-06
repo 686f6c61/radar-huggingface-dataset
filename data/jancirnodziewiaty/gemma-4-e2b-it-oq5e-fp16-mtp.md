@@ -2,7 +2,7 @@
 
 ## Resumen
 
-gemma-4-E2B-it-oQ5e-fp16-mtp es una cuantización de precisión mixta del modelo Gemma 4 E2B instruct, publicada por el usuario jancirnodziewiaty en HuggingFace. El checkpoint se ha generado con la herramienta oQ (oMLX v0.7.3), un esquema de cuantización de precisión mixta orientado a la librería MLX de Apple, lo que lo hace ejecutable en hardware Apple Silicon mediante el framework MLX. El resultado es un checkpoint de 5.182 millones de parámetros lógicos que ocupa 4,98 GiB en disco, con una media efectiva de 8,254 bits por peso.
+gemma-4-E2B-it-oQ5e-fp16-mtp es una cuantización de precisión mixta del modelo Gemma 4 E2B instruct, publicada por el usuario jancirnodziewiaty en Hugging Face. El checkpoint se ha generado con la herramienta oQ (oMLX v0.7.3), un esquema de cuantización de precisión mixta orientado a la librería MLX de Apple, lo que lo hace ejecutable en hardware Apple Silicon mediante el framework MLX. El resultado es un checkpoint de 5.182 millones de parámetros lógicos que ocupa 4,98 GiB en disco, con una media efectiva de 8,254 bits por peso.
 
 El modelo subyacente, Gemma 4 E2B, pertenece a la familia Gemma de Google y, según la distribución de pesos del checkpoint, es un modelo multimodal: incluye un componente de lenguaje (4.632B parámetros lógicos), un codificador de visión (0.167B), un codificador de audio (0.305B) y una cabeza MTP (Multi-Token Prediction) de 0.078B. La presencia de MTP sugiere soporte de decodificación especulativa o predicción multi-token, una técnica que acelera la generación.
 
@@ -78,5 +78,5 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jancirnodziewiaty/gemma-4-E2B-it-oQ5e-fp16-mtp
+- Hugging Face: https://huggingface.co/jancirnodziewiaty/gemma-4-E2B-it-oQ5e-fp16-mtp
 - Herramienta de cuantización oQ (oMLX): https://github.com/jundot/omlx

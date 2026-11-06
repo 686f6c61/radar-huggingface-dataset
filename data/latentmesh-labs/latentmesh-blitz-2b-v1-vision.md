@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LatentMesh Blitz 2B v1 Vision es un modelo derivado por fine-tuning del modelo base Qwen/Qwen3.5-2B, publicado por el laboratorio LatentMesh-Labs en HuggingFace. Se distribuye con pesos en formato safetensors y un tamano de repositorio de 0,2 GB, lo que resulta coherente con un modelo de aproximadamente 2 mil millones de parametros en precision reducida. La ficha de HuggingFace no declara pipeline ni idiomas soportados, y el acceso esta restringido: es necesario aceptar las condiciones en la plataforma para descargar los pesos.
+LatentMesh Blitz 2B v1 Vision es un modelo derivado por fine-tuning del modelo base Qwen/Qwen3.5-2B, publicado por el laboratorio LatentMesh-Labs en Hugging Face. Se distribuye con pesos en formato safetensors y un tamano de repositorio de 0,2 GB, lo que resulta coherente con un modelo de aproximadamente 2 mil millones de parametros en precision reducida. La ficha de Hugging Face no declara pipeline ni idiomas soportados, y el acceso esta restringido: es necesario aceptar las condiciones en la plataforma para descargar los pesos.
 
 El modelo se presenta como una variante orientada a vision (el sufijo "vision" en el identificador), aunque la informacion publica disponible no detalla la naturaleza exacta de esa adaptacion multimodal ni si incorpora un codificador visual adicional o un proyector. El tag `decision-index` y la licencia propietaria `latentmesh-blitz-evaluation` sugieren un uso acotado a evaluacion, no a produccion abierta.
 
@@ -23,7 +23,7 @@ Por su tamano y su base Qwen3.5-2B, el interes principal esta en escenarios de p
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion publica sobre la arquitectura interna del modelo mas alla de su derivacion por fine-tuning del modelo base Qwen/Qwen3.5-2B, segun los tags de HuggingFace (`base_model:Qwen/Qwen3.5-2B`, `base_model:finetune:Qwen/Qwen3.5-2B`). No se especifica si se trata de un transformer denso, de una arquitectura hibrida ni de un modelo multimodal con codificador visual acoplado, pese al sufijo "vision" del identificador.
+No se dispone de informacion publica sobre la arquitectura interna del modelo mas alla de su derivacion por fine-tuning del modelo base Qwen/Qwen3.5-2B, segun los tags de Hugging Face (`base_model:Qwen/Qwen3.5-2B`, `base_model:finetune:Qwen/Qwen3.5-2B`). No se especifica si se trata de un transformer denso, de una arquitectura hibrida ni de un modelo multimodal con codificador visual acoplado, pese al sufijo "vision" del identificador.
 
 Tampoco se documentan el volumen de tokens de entrenamiento, la composicion del dataset, la posible aplicacion de RLHF o DPO, ni innovaciones tecnicas como decodificacion especulativa o atencion lineal. El tag `decision-index` no viene acompanado de explicacion en la informacion disponible.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Modelo | Parametros | Contexto | Licencia | Acceso | Notas |
 |---|---|---|---|---|---|
 | LatentMesh Blitz 2B v1 Vision | aprox. 2B (no confirmado) | no disponible | latentmesh-blitz-evaluation | Restringido (gated) | Fine-tune de Qwen3.5-2B, sin benchmarks publicos |
-| Qwen/Qwen3.5-2B (modelo base) | aprox. 2B | no disponible en esta ficha | segun Qwen (no verificada aqui) | Abierto en HuggingFace | Referencia directa del fine-tune |
+| Qwen/Qwen3.5-2B (modelo base) | aprox. 2B | no disponible en esta ficha | segun Qwen (no verificada aqui) | Abierto en Hugging Face | Referencia directa del fine-tune |
 | Alternativas de 2B comparables | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificados para comparar |
 
 ## Limitaciones y advertencias
@@ -72,11 +72,11 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Capacidades de vision no verificadas: el sufijo "vision" no viene acompanado de especificacion de entradas, resoluciones ni tareas soportadas.
 - Idiomas no declarados: no puede garantizarse un rendimiento adecuado en castellano ni en otros idiomas.
 - Licencia restrictiva: `latentmesh-blitz-evaluation` sugiere uso limitado a evaluacion; debe revisarse el texto completo antes de cualquier uso comercial.
-- Acceso gated: requiere aceptar condiciones en HuggingFace, lo que anade friccion a la reproducibilidad y a la integracion en pipelines automatizados.
+- Acceso gated: requiere aceptar condiciones en Hugging Face, lo que anade friccion a la reproducibilidad y a la integracion en pipelines automatizados.
 - Sin datos de cuantizacion: no se ofrecen variantes GGUF, AWQ ni GPTQ, lo que limita el despliegue en hardware de consumo sin trabajo adicional de conversion.
 - Sesgos conocidos: no documentados por el autor; se heredarian en parte los del modelo base Qwen3.5-2B.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LatentMesh-Labs/latentmesh-blitz-2b-v1-vision
+- Hugging Face: https://huggingface.co/LatentMesh-Labs/latentmesh-blitz-2b-v1-vision
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B

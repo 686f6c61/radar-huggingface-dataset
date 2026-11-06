@@ -6,7 +6,7 @@ El modelo `asw9161/TRG_ECCV24_Release` es la implementación oficial en PyTorch 
 
 El problema que resuelve es la estimación precisa de la posición y orientación de la cabeza en el espacio 3D, una tarea fundamental para aplicaciones de realidad aumentada, interfaces manos libres, análisis de comportamiento y conducción asistida. La relevancia actual radica en que los métodos tradicionales suelen centrarse solo en la rotación, descuidando la traslación, y TRG introduce una interacción bidireccional explícita entre la geometría facial y la pose, lo que mejora la precisión en ambos aspectos. El modelo logra resultados de vanguardia (state-of-the-art) en los conjuntos de datos ARKitFace y BIWI.
 
-El repositorio en HuggingFace tiene un tamaño de 0,3 GB, está bajo licencia GPL-3.0 y su acceso es restringido (gated), por lo que es necesario aceptar condiciones adicionales para su descarga. No se dispone de información pública sobre el número de parámetros, la arquitectura interna detallada ni el formato de pesos.
+El repositorio en Hugging Face tiene un tamaño de 0,3 GB, está bajo licencia GPL-3.0 y su acceso es restringido (gated), por lo que es necesario aceptar condiciones adicionales para su descarga. No se dispone de información pública sobre el número de parámetros, la arquitectura interna detallada ni el formato de pesos.
 
 ## Especificaciones tecnicas
 
@@ -46,7 +46,7 @@ No se han publicado detalles sobre la arquitectura concreta (tipo de red neurona
 
 ## Benchmarks y rendimiento
 
-El artículo de ECCV 2024 reporta que TRG alcanza resultados de vanguardia en los conjuntos de datos ARKitFace y BIWI. Sin embargo, en la información disponible (resumen del paper, repositorio de GitHub y página de HuggingFace) no se incluyen valores numéricos concretos de métricas como error medio de rotación o traslación. Por tanto, no se pueden presentar cifras verificadas en esta ficha. Se recomienda consultar el artículo completo para obtener los datos exactos.
+El artículo de ECCV 2024 reporta que TRG alcanza resultados de vanguardia en los conjuntos de datos ARKitFace y BIWI. Sin embargo, en la información disponible (resumen del paper, repositorio de GitHub y página de Hugging Face) no se incluyen valores numéricos concretos de métricas como error medio de rotación o traslación. Por tanto, no se pueden presentar cifras verificadas en esta ficha. Se recomienda consultar el artículo completo para obtener los datos exactos.
 
 ## Requisitos de hardware
 
@@ -59,7 +59,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 ## Limitaciones y advertencias
 
 - Licencia GPL-3.0: cualquier uso o modificación del modelo debe cumplir con los términos de esta licencia, que exige que las obras derivadas también se distribuyan bajo GPL-3.0. Esto puede ser restrictivo para aplicaciones comerciales propietarias.
-- Acceso restringido en HuggingFace: es necesario solicitar acceso y aceptar condiciones adicionales, lo que puede limitar su uso inmediato.
+- Acceso restringido en Hugging Face: es necesario solicitar acceso y aceptar condiciones adicionales, lo que puede limitar su uso inmediato.
 - Especialización en rostros: el modelo está entrenado para rostros humanos y puede no funcionar correctamente con otros objetos o en condiciones extremas (oclusiones severas, iluminación muy pobre, etc.).
 - Sesgos potenciales: al estar entrenado en conjuntos de datos como ARKitFace y BIWI, que pueden tener poca diversidad étnica o de edad, el rendimiento podría degradarse en poblaciones subrepresentadas.
 - Sin soporte para tareas de lenguaje: no es un modelo multimodal ni de texto; su uso se limita exclusivamente a la estimación de pose a partir de imágenes.
@@ -67,6 +67,6 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/asw9161/TRG_ECCV24_Release
+- Hugging Face: https://huggingface.co/asw9161/TRG_ECCV24_Release
 - GitHub (implementación oficial): https://github.com/asw91666/TRG-Release
 - Artículo en ACM (ECCV 2024): https://dl.acm.org/doi/10.1007/978-3-031-73414-4_9

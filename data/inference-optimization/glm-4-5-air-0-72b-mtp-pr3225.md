@@ -115,7 +115,7 @@ Otros modelos comparables de tamaño similar (por ejemplo, pequeños modelos den
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/inference-optimization/GLM-4.5-Air-0.72B-MTP-PR3225
+- Repositorio del modelo en Hugging Face: https://huggingface.co/inference-optimization/GLM-4.5-Air-0.72B-MTP-PR3225
 - Modelo upstream de arquitectura y tokenizer: https://huggingface.co/zai-org/GLM-4.5-Air
 - Revisión concreta del upstream: https://huggingface.co/zai-org/GLM-4.5-Air/tree/a24ceef6ce4f3536971efe9b778bdaa1bab18daa
 - Pull request de LLM Compressor: https://github.com/vllm-project/llm-compressor/pull/3225

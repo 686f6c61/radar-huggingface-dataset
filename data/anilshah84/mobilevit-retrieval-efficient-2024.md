@@ -70,16 +70,16 @@ La comparativa es limitada porque MobileViT y MobileViCLIP son modelos entrenado
 
 - El checkpoint de inicialización no ha sido entrenado ni auditado para robustez, equidad o transferencia de dominio; cualquier resultado derivado de él carece de validez empírica.
 - No se han publicado métricas de rendimiento; el autor advierte que no se debe interpretar el repositorio como un modelo funcional.
-- La implementación es personalizada y requiere un adaptador explícito para cargarse con APIs genéricas de HuggingFace; no es compatible con `AutoModel` sin modificaciones.
+- La implementación es personalizada y requiere un adaptador explícito para cargarse con APIs genéricas de Hugging Face; no es compatible con `AutoModel` sin modificaciones.
 - No hay información sobre sesgos, alucinaciones o limitaciones de contexto porque el modelo no produce texto ni ha sido evaluado.
 - La licencia Apache-2.0 permite uso comercial, pero se debe revisar los términos de los datos externos si se utilizan con datasets como Flickr30k.
 - Para producción, este modelo no es adecuado; es exclusivamente un punto de partida experimental.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/anilshah84/mobilevit-retrieval-efficient-2024
+- Repositorio Hugging Face: https://huggingface.co/anilshah84/mobilevit-retrieval-efficient-2024
 - Paper MobileViT original: https://arxiv.org/abs/2110.02178
-- Documentación de MobileViT en HuggingFace Transformers: https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/mobilevit.md
+- Documentación de MobileViT en Hugging Face Transformers: https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/mobilevit.md
 - Paper MobileViCLIP (ICCV 2025): https://arxiv.org/html/2508.07312v1
 - Página del paper MobileViCLIP en ICCV 2025: https://openaccess.thecvf.com/content/ICCV2025/html/Yang_MobileViCLIP_An_Efficient_Video-Text_Model_for_Mobile_Devices_ICCV_2025_paper.html
 - Ejemplo de MobileViT en Keras: https://keras.io/examples/vision/mobilevit/

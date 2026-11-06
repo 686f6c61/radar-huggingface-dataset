@@ -109,7 +109,7 @@ Frente a Granite 4.0 350M, Minico M1 1105 supera en IFEval (72,5 vs 48,8), MMLU-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mincofficial/Minico-M1-1105
+- Modelo en Hugging Face: https://huggingface.co/Mincofficial/Minico-M1-1105
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-350M
 - Versión Preview: https://huggingface.co/Mincofficial/Minico-M1-Preview
 - GGUF: https://huggingface.co/Mincofficial/Minico-M1-1105-GGUF

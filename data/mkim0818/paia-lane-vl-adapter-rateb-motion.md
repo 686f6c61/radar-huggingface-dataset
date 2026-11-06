@@ -52,17 +52,17 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada: al ser un adaptador LoRA, la inferencia requiere cargar el modelo base MiniCPM-V-4_5. Con cuantización de 4 bits, se estima un consumo de 5-6 GB de VRAM; en 8 bits, 8-10 GB; en precisión completa, 16-20 GB.
 - GPU recomendadas: para una inferencia fluida, se sugiere una GPU con al menos 8 GB de VRAM (por ejemplo, RTX 3060, RTX 4060, RTX 4070). Para entrenamiento o inferencia de alto rendimiento, se recomienda A100 o H100.
 - Compatibilidad con GPU de consumo: sí, es posible ejecutar el modelo en GPUs de consumo como RTX 3090 o RTX 4090 con cuantización.
-- Opciones de despliegue: al ser un adaptador PEFT, puede cargarse con la librería `peft` de HuggingFace, y luego servirse con vLLM, TGI o llama.cpp (si se convierte a GGUF). También es compatible con Ollama si se empaqueta adecuadamente.
+- Opciones de despliegue: al ser un adaptador PEFT, puede cargarse con la librería `peft` de Hugging Face, y luego servirse con vLLM, TGI o llama.cpp (si se convierte a GGUF). También es compatible con Ollama si se empaqueta adecuadamente.
 - Latencia y throughput: no disponible (depende del hardware y de la cuantización; el modelo base tiene una latencia típica de 50-200 ms por token en GPUs modernas).
 
 ## Comparativa con modelos similares
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mkim0818/paia-lane-vl-adapter-rateb-motion | Adaptador LoRA sobre MiniCPM-V-4_5 | no disponible (adaptador) | no disponible | other | HuggingFace |
-| openbmb/MiniCPM-V-4_5 | Modelo base multimodal | ~8B | 8K-32K (estimado) | Apache 2.0 (según OpenBMB) | HuggingFace |
-| Qwen2-VL-7B | Modelo multimodal | 7.6B | 32K | Apache 2.0 | HuggingFace |
-| LLaVA-1.6-7B | Modelo multimodal | 7B | 4K | Apache 2.0 | HuggingFace |
+| mkim0818/paia-lane-vl-adapter-rateb-motion | Adaptador LoRA sobre MiniCPM-V-4_5 | no disponible (adaptador) | no disponible | other | Hugging Face |
+| openbmb/MiniCPM-V-4_5 | Modelo base multimodal | ~8B | 8K-32K (estimado) | Apache 2.0 (según OpenBMB) | Hugging Face |
+| Qwen2-VL-7B | Modelo multimodal | 7.6B | 32K | Apache 2.0 | Hugging Face |
+| LLaVA-1.6-7B | Modelo multimodal | 7B | 4K | Apache 2.0 | Hugging Face |
 
 La comparativa se centra en el modelo base, ya que el adaptador no tiene especificaciones propias. MiniCPM-V-4_5 compite con otros modelos multimodales de tamaño similar, pero el adaptador añade una especialización en conducción que no está presente en los modelos genéricos.
 
@@ -76,7 +76,7 @@ La comparativa se centra en el modelo base, ya que el adaptador no tiene especif
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mkim0818/paia-lane-vl-adapter-rateb-motion
+- Repositorio Hugging Face: https://huggingface.co/mkim0818/paia-lane-vl-adapter-rateb-motion
 - Modelo base MiniCPM-V-4_5: https://huggingface.co/openbmb/MiniCPM-V-4_5
 - Framework Llama-Factory: https://github.com/hiyouga/LLaMA-Factory
 - Librería PEFT: https://github.com/huggingface/peft

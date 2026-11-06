@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NamKAI/lab21-qwen35-triage-vi es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario NamKAI en HuggingFace, diseñado para ajustar el modelo base unsloth/Qwen3.5-4B a una tarea específica de triaje de tickets de soporte al cliente. Según la información disponible, el adaptador fue entrenado mediante aprendizaje supervisado (SFT) sobre 225 tickets de soporte sintéticos en vietnamita (el sufijo "vi" del nombre sugiere vietnamita), y su salida es un JSON con cuatro campos, probablemente una clasificación o categorización de los tickets.
+NamKAI/lab21-qwen35-triage-vi es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario NamKAI en Hugging Face, diseñado para ajustar el modelo base unsloth/Qwen3.5-4B a una tarea específica de triaje de tickets de soporte al cliente. Según la información disponible, el adaptador fue entrenado mediante aprendizaje supervisado (SFT) sobre 225 tickets de soporte sintéticos en vietnamita (el sufijo "vi" del nombre sugiere vietnamita), y su salida es un JSON con cuatro campos, probablemente una clasificación o categorización de los tickets.
 
 Se trata de un adaptador Peft (LoRA) con un tamaño de repositorio de 0,1 GB, lo que indica que no es un modelo completo, sino un conjunto de pesos diferenciales que deben combinarse con el modelo base. La ficha del autor es prácticamente vacía (plantilla estándar sin rellenar), por lo que la mayoría de las especificaciones técnicas, datos de entrenamiento y rendimiento no están disponibles públicamente. A pesar de su limitada documentación, el modelo parece orientado a aplicaciones de atención al cliente en vietnamita, aunque su utilidad real dependerá de la calidad del ajuste y de la validación con datos reales.
 
@@ -68,7 +68,7 @@ No se dispone de modelos directamente comparables con este adaptador específico
 
 ## Enlaces
 
-- [HuggingFace: NamKAI/lab24-qwen35-triage-vi](https://huggingface.co/NamKAI/lab24-qwen35-triage-vi)
+- [Hugging Face: NamKAI/lab24-qwen35-triage-vi](https://huggingface.co/NamKAI/lab24-qwen35-triage-vi)
 - [Referencia similar: NiallHoang/lab21-qwen35-triage-vi](https://huggingface.co/NiallHoang/lab21-qwen35-triage-vi)
 - [Registro en free2aitools](https://free2aitools.com/model/pham039459/lab21-qwen35-triage-vi)
 - [Modelo base unsloth/Qwen3.5-4B](https://huggingface.co/unsloth/Qwen3.5-4B) (no verificado)

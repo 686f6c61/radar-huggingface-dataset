@@ -81,6 +81,6 @@ No disponible. La información proporcionada no incluye modelos comparables de H
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cyttic/hmt-trocrsmall-geom4-s42
+- Hugging Face: https://huggingface.co/cyttic/hmt-trocrsmall-geom4-s42
 - Dataset de entrenamiento: https://huggingface.co/datasets/cyttic/hhd-optionb-split
 - No se han encontrado en la información disponible papers, blogs, repositorios ni demos adicionales.

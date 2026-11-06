@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NanoLLM1-6.5M es un modelo publicado por el usuario ATG2026 en HuggingFace bajo licencia MIT. Se trata de un modelo de tamano muy reducido: los pesos en safetensors suman 7.923.744 parametros, una cifra que no coincide exactamente con el "6.5M" que aparece en el nombre del repositorio. Con ese orden de magnitud, estamos ante un modelo de escala experimental o didactica, muy lejos de los LLM de uso general.
+NanoLLM1-6.5M es un modelo publicado por el usuario ATG2026 en Hugging Face bajo licencia MIT. Se trata de un modelo de tamano muy reducido: los pesos en safetensors suman 7.923.744 parametros, una cifra que no coincide exactamente con el "6.5M" que aparece en el nombre del repositorio. Con ese orden de magnitud, estamos ante un modelo de escala experimental o didactica, muy lejos de los LLM de uso general.
 
 La informacion publicada es minima. La model card se limita a declarar la licencia MIT y no incluye descripcion, arquitectura, datos de entrenamiento, idiomas ni resultados de evaluacion. El repositorio tiene un tamano declarado de 0.0 GB, lo que sugiere que los pesos pueden no estar efectivamente publicados o que ocupan un espacio despreciable en el almacenamiento.
 
@@ -78,5 +78,5 @@ No disponible. La busqueda web realizada no ha devuelto ningun resultado relacio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ATG2026/NanoLLM1-6.5M
+- Hugging Face: https://huggingface.co/ATG2026/NanoLLM1-6.5M
 - No se han encontrado papers, blogs, repositorios ni demos relacionados en la busqueda web disponible. Los resultados obtenidos corresponden a paginas de soporte de Microsoft y no guardan relacion con el modelo.

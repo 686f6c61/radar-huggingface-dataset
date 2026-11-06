@@ -88,8 +88,8 @@ Las cinco variantes comparten la misma tarea de estimacion de normales y la lice
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace (espejo): https://huggingface.co/ml-resources/sapiens2-normal-1b
-- Repositorio oficial en HuggingFace: https://huggingface.co/facebook/sapiens2-normal-1b
+- Repositorio del modelo en Hugging Face (espejo): https://huggingface.co/ml-resources/sapiens2-normal-1b
+- Repositorio oficial en Hugging Face: https://huggingface.co/facebook/sapiens2-normal-1b
 - Backbone preentrenado: https://huggingface.co/facebook/sapiens2-pretrain-1b
 - Variante 1B-4K: https://huggingface.co/facebook/sapiens2-pretrain-1b-4k
 - Variante 0.4B: https://huggingface.co/facebook/sapiens2-normal-0.4b

@@ -122,7 +122,7 @@ Comparativa con alternativas externas de la misma categoría: no disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StandardThinking/StandardOne-8B-SH
+- Modelo en Hugging Face: https://huggingface.co/StandardThinking/StandardOne-8B-SH
 - Variante FP8: https://huggingface.co/StandardThinking/StandardOne-8B-SH-FP8
 - Variante GGUF: https://huggingface.co/StandardThinking/StandardOne-8B-SH-GGUF
 - Modelo reducido: https://huggingface.co/StandardThinking/StandardOne-3B-SH

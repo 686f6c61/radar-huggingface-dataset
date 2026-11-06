@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `fdrtyu/Cumshot_Aesthetics_Low` es un repositorio publicado en HuggingFace por el autor `fdrtyu`. Segun los metadatos disponibles, se trata de un modelo creado el 7 de septiembre de 2026 y actualizado poco despues, con un tamano de repositorio de 0.3 GB. No se dispone de informacion publicada en la model card: el README esta vacio, no se especifica arquitectura, parametros, contexto, ni caso de uso.
+El modelo `fdrtyu/Cumshot_Aesthetics_Low` es un repositorio publicado en Hugging Face por el autor `fdrtyu`. Segun los metadatos disponibles, se trata de un modelo creado el 7 de septiembre de 2026 y actualizado poco despues, con un tamano de repositorio de 0.3 GB. No se dispone de informacion publicada en la model card: el README esta vacio, no se especifica arquitectura, parametros, contexto, ni caso de uso.
 
 La busqueda web no arroja documentacion tecnica sobre este modelo. Solo se ha encontrado una referencia en Civitai a un LoRA para WAN 2.2 con un nombre similar, relacionado con estetica para generacion de video, pero no se puede confirmar que sea el mismo modelo ni que los datos tecnicos correspondan. Por tanto, cualquier evaluacion tecnica rigurosa es imposible a partir de la informacion proporcionada.
 
@@ -62,4 +62,4 @@ No disponible. No se ha publicado informacion que permita comparar este modelo c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fdrtyu/Cumshot_Aesthetics_Low
+- Hugging Face: https://huggingface.co/fdrtyu/Cumshot_Aesthetics_Low

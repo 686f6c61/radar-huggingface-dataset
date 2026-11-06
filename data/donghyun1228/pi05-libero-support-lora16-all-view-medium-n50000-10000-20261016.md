@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks comparativos con otros modelos en l
 
 | Modelo | Tipo | Parametros | Contexto | Resultado en LIBERO | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| pi05-libero-support-lora16-all-view-medium (este modelo) | Adaptador LoRA rango 16 sobre pi05 | no disponible | no disponible | 1395/2000 (69,8 %) | apache-2.0 | HuggingFace, 0 descargas, 0 likes |
+| pi05-libero-support-lora16-all-view-medium (este modelo) | Adaptador LoRA rango 16 sobre pi05 | no disponible | no disponible | 1395/2000 (69,8 %) | apache-2.0 | Hugging Face, 0 descargas, 0 likes |
 | Donghyun1228/pi05-libero-support-probe-source-n50000-10000-20261015 | Punto de control fuente (commit `ea4f0bb2`) | no disponible | no disponible | no disponible | no disponible | Referenciado por el autor |
 | Donghyun1228/libero-support-random-waypoint-300k-20261015 | Punto de control objetivo (commit `32ed215b`) | no disponible | no disponible | no disponible | no disponible | Referenciado por el autor |
 | Alternativas de la misma categoria (otras politicas VLA para LIBERO) | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -94,7 +94,7 @@ No se dispone de datos comparativos con otras politicas de la misma categoria en
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-support-lora16-all-view-medium-n50000-10000-20261016
+- Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-support-lora16-all-view-medium-n50000-10000-20261016
 - Punto de control fuente citado en la model card: Donghyun1228/pi05-libero-support-probe-source-n50000-10000-20261015 (commit `ea4f0bb2001e12d701af8a294f91da437e857f55`)
 - Punto de control objetivo citado en la model card: Donghyun1228/libero-support-random-waypoint-300k-20261015 (commit `32ed215baf01af7e82f927a62b108873aa70bd19`)
 - Libreria declarada: `openpi` (stack de la familia pi05 referenciado en las etiquetas del repositorio)

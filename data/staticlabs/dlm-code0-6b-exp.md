@@ -73,5 +73,5 @@ No disponible. El modelo es una adaptación experimental de un backbone Qwen2 de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/staticlabs/dlm-code0.6b-exp
+- Hugging Face: https://huggingface.co/staticlabs/dlm-code0.6b-exp
 - Repositorio thunder-fast: https://github.com/AdrianTuci1/thunder-fast

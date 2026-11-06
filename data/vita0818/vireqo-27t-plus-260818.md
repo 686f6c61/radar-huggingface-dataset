@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos, ya que n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Vita0818/Vireqo-27T-Plus-260818
+- Modelo en Hugging Face: https://huggingface.co/Vita0818/Vireqo-27T-Plus-260818
 - Modelo base Qwen: https://huggingface.co/Qwen/Qwen3.8-27B
 - Modelo base ternario: https://huggingface.co/prism-ml/Ternary-Bonsai-27B-gguf
 - Perfil de GitHub del autor: https://github.com/Vita0818/

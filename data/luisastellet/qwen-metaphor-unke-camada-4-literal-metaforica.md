@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`luisastellet/qwen-metaphor-unke-camada-4-literal-metaforica` es un modelo de generación de texto publicado en HuggingFace por el usuario `luisastellet`, con 596.049.920 parámetros totales según los metadatos de safetensors y un repositorio de 4,8 GB. La etiqueta `qwen3` y el sufijo del nombre apuntan a un ajuste fino sobre la familia Qwen3, orientado a la distinción entre lenguaje literal y lenguaje metafórico. El nombre ("camada-4", "literal-metaforica") sugiere un experimento seriado dentro de un proyecto de procesamiento de metáforas, presumiblemente vinculado a UNKE, aunque el autor no documenta nada de esto en la model card.
+`luisastellet/qwen-metaphor-unke-camada-4-literal-metaforica` es un modelo de generación de texto publicado en Hugging Face por el usuario `luisastellet`, con 596.049.920 parámetros totales según los metadatos de safetensors y un repositorio de 4,8 GB. La etiqueta `qwen3` y el sufijo del nombre apuntan a un ajuste fino sobre la familia Qwen3, orientado a la distinción entre lenguaje literal y lenguaje metafórico. El nombre ("camada-4", "literal-metaforica") sugiere un experimento seriado dentro de un proyecto de procesamiento de metáforas, presumiblemente vinculado a UNKE, aunque el autor no documenta nada de esto en la model card.
 
 El problema que aborda es relevante: la detección y el tratamiento de la metáfora es una tarea clásica y todavía abierta en PLN, con impacto directo en análisis de sentimiento, traducción automática, moderación de contenido y evaluación de comprensión lectora. Un modelo pequeño especializado (~0,6 B de parámetros) es atractivo porque puede desplegarse en hardware modesto y ejecutarse con latencias muy bajas en pipelines de anotación a gran escala.
 
-Ahora bien, la ficha publicada es la plantilla automática de HuggingFace sin rellenar: no hay descripción, ni datos de entrenamiento, ni licencia, ni idiomas declarados, ni resultados de evaluación. Cualquier uso en producción requiere primero contactar con el autor o validar el comportamiento empíricamente. Lo único verificable son los metadatos técnicos del repositorio (pesos safetensors, 364 descargas, 0 likes, creado el 2026-10-15 y actualizado el 2026-10-20).
+Ahora bien, la ficha publicada es la plantilla automática de Hugging Face sin rellenar: no hay descripción, ni datos de entrenamiento, ni licencia, ni idiomas declarados, ni resultados de evaluación. Cualquier uso en producción requiere primero contactar con el autor o validar el comportamiento empíricamente. Lo único verificable son los metadatos técnicos del repositorio (pesos safetensors, 364 descargas, 0 likes, creado el 2026-10-15 y actualizado el 2026-10-20).
 
 ## Especificaciones técnicas
 
@@ -23,7 +23,7 @@ Ahora bien, la ficha publicada es la plantilla automática de HuggingFace sin re
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura interna, los datos de entrenamiento, el numero de tokens vistos ni el procedimiento de alineacion (RLHF, DPO u otros). La model card es la plantilla generica de HuggingFace con todos los campos marcados como `[More Information Needed]`. Los unicos indicios son indirectos: la etiqueta `qwen3` en los metadatos, un recuento de 596 M de parametros consistente con un decoder-only denso de la clase 0,6 B y un nombre que combina "qwen", "metaphor", "unke" y "camada-4-literal-metaforica".
+No hay informacion publicada sobre la arquitectura interna, los datos de entrenamiento, el numero de tokens vistos ni el procedimiento de alineacion (RLHF, DPO u otros). La model card es la plantilla generica de Hugging Face con todos los campos marcados como `[More Information Needed]`. Los unicos indicios son indirectos: la etiqueta `qwen3` en los metadatos, un recuento de 596 M de parametros consistente con un decoder-only denso de la clase 0,6 B y un nombre que combina "qwen", "metaphor", "unke" y "camada-4-literal-metaforica".
 
 Ese nombre sugiere un ajuste fino supervisado para una tarea discriminativa o generativa de dos clases (literal frente a metaforico), probablemente dentro de una serie de experimentos numerados ("camada 4"). Es una inferencia a partir del identificador, no un dato confirmado por el autor. Tampoco se documenta si se congelaron capas, si se utilizo LoRA u otra tecnica de ajuste eficiente, ni que dataset se empleo. El tamano del repositorio (4,8 GB) es notablemente superior al de unos pesos de 596 M en fp16 (~1,2 GB), lo que apunta a que el repositorio puede contener mas de un checkpoint o estados intermedios, sin que se pueda confirmar.
 
@@ -32,7 +32,7 @@ Ese nombre sugiere un ajuste fino supervisado para una tarea discriminativa o ge
 - Generacion de texto autoregresiva, segun el pipeline declarado (`text-generation`).
 - Ajuste especifico, presumiblemente, para distinguir enunciados literales de enunciados metaforicos; capacidad no verificada por falta de documentacion.
 - Soporte de conversacion declarado mediante la etiqueta `conversational`; no se especifica plantilla de chat ni tokens especiales.
-- Compatibilidad con Text Generation Inference (`text-generation-inference`) y con endpoints de HuggingFace (`endpoints_compatible`).
+- Compatibilidad con Text Generation Inference (`text-generation-inference`) y con endpoints de Hugging Face (`endpoints_compatible`).
 - Capacidades multilingues: no disponibles; no se declara ningun idioma.
 - Tool calling, modo de razonamiento explicito, vision o audio: no disponibles / no declarados.
 - Al derivar de la familia Qwen3, es plausible que conserve capacidades generales del modelo base, pero el ajuste fino y la ausencia de evaluacion impiden afirmarlo.
@@ -46,7 +46,7 @@ Ese nombre sugiere un ajuste fino supervisado para una tarea discriminativa o ge
 - Educacion y evaluacion de comprension lectora: generacion de ejercicios o correccion automatica en los que se pide identificar y explicar metaforas en un texto, con un modelo lo bastante pequeno para ejecutarse en el aula o en un portatil.
 - Ensenanza de espanol como lengua extranjera: senalar expresiones figuradas en textos y proponer su parafrasis literal, desplegable en local sin coste por token.
 - Investigacion en PLN figurativo: como linea base ligera en experimentos de deteccion de metafora, comparable con modelos mayores a un coste computacional minimo.
-- Etiquetado dentro de pipelines de TGI o endpoints: al ser compatible con TGI y con los endpoints de HuggingFace, puede exponerse como microservicio HTTP para anotacion en streaming.
+- Etiquetado dentro de pipelines de TGI o endpoints: al ser compatible con TGI y con los endpoints de Hugging Face, puede exponerse como microservicio HTTP para anotacion en streaming.
 
 ## Benchmarks y rendimiento
 
@@ -92,7 +92,7 @@ La comparacion honesta es esta: frente a los modelos base de su clase, este ajus
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/luisastellet/qwen-metaphor-unke-camada-4-literal-metaforica
+- Repositorio en Hugging Face: https://huggingface.co/luisastellet/qwen-metaphor-unke-camada-4-literal-metaforica
 - Paper citado en la plantilla de la model card (impacto ambiental, no del modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ML referenciada en la plantilla: https://mlco2.github.io/impact
 - No se han encontrado en la informacion proporcionada papers, blogs, repositorios de codigo ni demos adicionales asociados a este modelo.

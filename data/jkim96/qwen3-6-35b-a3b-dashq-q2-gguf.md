@@ -97,7 +97,7 @@ En perplejidad, DASH-Q Q2_K_XL iguala a UD-Q2_K_XL en WikiText-2 (6,29) y queda 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jkim96/Qwen3.6-35B-A3B-DASHQ-Q2-GGUF
+- Repositorio Hugging Face: https://huggingface.co/jkim96/Qwen3.6-35B-A3B-DASHQ-Q2-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Repositorio DASH-Q: https://github.com/JaeminK/dashq
 - Banner DASH-Q: https://raw.githubusercontent.com/JaeminK/dashq/main/assets/dashq_banner.png

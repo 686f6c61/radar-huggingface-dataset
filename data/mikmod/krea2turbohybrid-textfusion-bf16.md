@@ -2,7 +2,7 @@
 
 ## Resumen
 
-krea2TurboHybrid-TextFusion-BF16 es un checkpoint publicado en HuggingFace por el usuario mikmod bajo licencia CC. El repositorio tiene un tamano de 13,5 GB y se distribuye en formato BF16, lo que sugiere un modelo de gran tamano (probablemente en el rango de 6 a 7 mil millones de parametros, aunque este dato no se confirma en la informacion disponible). El nombre del checkpoint sugiere un modelo hibrido orientado a la fusion de texto, pero no se especifica la tarea ni el pipeline asociado.
+krea2TurboHybrid-TextFusion-BF16 es un checkpoint publicado en Hugging Face por el usuario mikmod bajo licencia CC. El repositorio tiene un tamano de 13,5 GB y se distribuye en formato BF16, lo que sugiere un modelo de gran tamano (probablemente en el rango de 6 a 7 mil millones de parametros, aunque este dato no se confirma en la informacion disponible). El nombre del checkpoint sugiere un modelo hibrido orientado a la fusion de texto, pero no se especifica la tarea ni el pipeline asociado.
 
 La model card publicada no contiene informacion tecnica: no incluye descripcion del modelo, arquitectura, datos de entrenamiento, idiomas soportados ni benchmarks. El unico metadato disponible es la licencia (cc), el tamano del repositorio y las fechas de creacion y actualizacion (4 de noviembre de 2026). No se han registrado descargas ni likes en el momento de la consulta.
 
@@ -75,5 +75,5 @@ No disponible. No se conocen modelos comparables porque se desconoce la categori
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mikmod/krea2TurboHybrid-TextFusion-BF16
+- Hugging Face: https://huggingface.co/mikmod/krea2TurboHybrid-TextFusion-BF16
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion disponible.

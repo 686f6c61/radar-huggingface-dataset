@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CIMA-RoBERTa-4.8-NER-ADR-CONLL-SYNTH es un modelo de clasificación de tokens (NER) en español especializado en la extracción de entidades vinculadas a reacciones adversas a medicamentos. Lo desarrolla Luis Miguel Guerrero Guirado (usuario `guerrerotook`) como parte de su proyecto fin de grado en la UNED, y se distribuye en HuggingFace bajo licencia CC-BY-4.0. El modelo deriva de un RoBERTa biomédico en español adaptado mediante masked language modeling sobre fichas técnicas de medicamentos de la base CIMA (sección 4.8, dedicada a reacciones adversas), y después recibe un fine-tuning supervisado de NER.
+CIMA-RoBERTa-4.8-NER-ADR-CONLL-SYNTH es un modelo de clasificación de tokens (NER) en español especializado en la extracción de entidades vinculadas a reacciones adversas a medicamentos. Lo desarrolla Luis Miguel Guerrero Guirado (usuario `guerrerotook`) como parte de su proyecto fin de grado en la UNED, y se distribuye en Hugging Face bajo licencia CC-BY-4.0. El modelo deriva de un RoBERTa biomédico en español adaptado mediante masked language modeling sobre fichas técnicas de medicamentos de la base CIMA (sección 4.8, dedicada a reacciones adversas), y después recibe un fine-tuning supervisado de NER.
 
 Se trata de un encoder de la familia RoBERTa con 125.397.513 parámetros totales (tamaño base, ~125 M) y arquitectura transformer bidireccional, por lo que no es un modelo generativo: su salida es una etiqueta IOB2 por token. Reconoce cuatro tipos de entidad: `REACT` (reacción adversa), `ACTIVE` (principio activo), `FREQ` (frecuencia de aparición) y `SYS` (sistema u órgano afectado), con nueve etiquetas en total.
 
@@ -21,7 +21,7 @@ Su relevancia actual es doble. Por un lado, cubre un nicho muy concreto y poco s
 | Licencia | CC-BY-4.0 |
 | Formato de pesos | safetensors (libreria transformers) |
 
-Datos adicionales: pipeline `token-classification`, tamano del repositorio 0,5 GB, compatible con endpoints de HuggingFace (`endpoints_compatible`), modelo base `guerrerotook/CIMA-RoBERTa-4.8`, relación `finetune`, dataset de entrenamiento `guerrerotook/CIMA-4.8-ADR-NER-EXTENDED`, esquema de anotación IOB2 y métricas declaradas precision, recall y F1.
+Datos adicionales: pipeline `token-classification`, tamano del repositorio 0,5 GB, compatible con endpoints de Hugging Face (`endpoints_compatible`), modelo base `guerrerotook/CIMA-RoBERTa-4.8`, relación `finetune`, dataset de entrenamiento `guerrerotook/CIMA-4.8-ADR-NER-EXTENDED`, esquema de anotación IOB2 y métricas declaradas precision, recall y F1.
 
 ## Arquitectura y entrenamiento
 
@@ -35,7 +35,7 @@ Los datos de fine-tuning son íntegramente sintéticos: 70 textos correspondient
 - Identificación de reacciones adversas (`REACT`), principio activo (`ACTIVE`), frecuencia (`FREQ`) y sistema u órgano afectado (`SYS`).
 - Reconocimiento de entidades multi-token, con etiquetas `B-` e `I-` para cada uno de los cuatro tipos.
 - Salida compatible con `seqeval` y agregación de entidades mediante `pipeline` de transformers con `aggregation_strategy="simple"`.
-- Integración en flujos de HuggingFace: etiqueta `endpoints_compatible`, por lo que puede exponerse como endpoint gestionado.
+- Integración en flujos de Hugging Face: etiqueta `endpoints_compatible`, por lo que puede exponerse como endpoint gestionado.
 - Capacidades multilingües: no disponibles; el modelo declara únicamente español.
 - Soporte de tool calling, function calling y agentes multi-paso: no aplicable, es un modelo encoder de clasificación y no genera texto ni llamadas a herramientas.
 - Modo thinking, visión o audio: no disponible / no soportado.
@@ -68,7 +68,7 @@ Advertencia metodológica recogida en la propia model card: el split `test` se u
 - VRAM estimada para inferencia, calculada a partir de los 125,4 M de parámetros: en torno a 0,5 GB en fp32, 0,25 GB en fp16 y 0,13 GB en int8, más el overhead de activaciones y tokenizador, que en secuencias cortas es reducido.
 - Cabe holgadamente en cualquier GPU de consumo: RTX 3060, RTX 4060, RTX 4090 y similares; también en GPUs integradas y en CPU, dado el tamaño del modelo.
 - GPU recomendadas para despliegue en producción: cualquier acelerador con al menos 1 GB de memoria libre. Para lotes grandes, una A100 o H100 mejorarían el throughput, pero son innecesarias por capacidad.
-- Opciones de despliegue documentadas: `pipeline` de transformers (uso mostrado por el autor) y endpoints de HuggingFace, ya que el repositorio lleva la etiqueta `endpoints_compatible`.
+- Opciones de despliegue documentadas: `pipeline` de transformers (uso mostrado por el autor) y endpoints de Hugging Face, ya que el repositorio lleva la etiqueta `endpoints_compatible`.
 - Otras opciones de despliegue (ONNX Runtime, TorchScript, TGI, vLLM): no documentadas por el autor. Al ser un modelo encoder, requerirían conversión y validación propias; vLLM está orientado principalmente a decodificadores generativos, por lo que su uso aquí no está verificado.
 - Cuantización GGUF y ejecución con llama.cpp u Ollama: no disponibles; el autor solo publica pesos safetensors sin cuantizar.
 - Latencia y throughput: no publicados en la información disponible. La única referencia de escala es el conjunto de evaluación (1.577 oraciones, 26.213 tokens), sin tiempos asociados.
@@ -77,9 +77,9 @@ Advertencia metodológica recogida en la propia model card: el split `test` se u
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CIMA-RoBERTa-4.8-NER-ADR-CONLL-SYNTH | 125.397.513 | No disponible | NER biomedico en espanol, 4 tipos de entidad | CC-BY-4.0 | HuggingFace |
-| guerrerotook/CIMA-RoBERTa-4.8-NER (modelo hermano) | No disponible | No disponible | NER biomedico en espanol | No disponible | HuggingFace |
-| guerrerotook/CIMA-RoBERTa-4.8 (modelo base) | No disponible | No disponible | Modelo de lenguaje enmascarado adaptado a dominio CIMA | No disponible | HuggingFace |
+| CIMA-RoBERTa-4.8-NER-ADR-CONLL-SYNTH | 125.397.513 | No disponible | NER biomedico en espanol, 4 tipos de entidad | CC-BY-4.0 | Hugging Face |
+| guerrerotook/CIMA-RoBERTa-4.8-NER (modelo hermano) | No disponible | No disponible | NER biomedico en espanol | No disponible | Hugging Face |
+| guerrerotook/CIMA-RoBERTa-4.8 (modelo base) | No disponible | No disponible | Modelo de lenguaje enmascarado adaptado a dominio CIMA | No disponible | Hugging Face |
 | Otras alternativas de NER biomedico en espanol | No disponible | No disponible | NER biomedico general | No disponible | No disponible |
 
 No se dispone de datos de benchmarks comparativos entre estos modelos en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa de rendimiento. El hermano `guerrerotook/CIMA-RoBERTa-4.8-NER` sí aparece descrito en la búsqueda web como un fine-tuning sobre el mismo modelo base, pero sin métricas publicadas en las fuentes consultadas.
@@ -102,7 +102,7 @@ No se dispone de datos de benchmarks comparativos entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/guerrerotook/CIMA-RoBERTa-4.8-NER-ADR-CONLL-SYNTH
+- Modelo en Hugging Face: https://huggingface.co/guerrerotook/CIMA-RoBERTa-4.8-NER-ADR-CONLL-SYNTH
 - Dataset de entrenamiento: https://huggingface.co/datasets/guerrerotook/CIMA-4.8-ADR-NER-EXTENDED
 - Modelo base: https://huggingface.co/guerrerotook/CIMA-RoBERTa-4.8
 - Modelo hermano (NER sin corpus sintético): https://huggingface.co/guerrerotook/CIMA-RoBERTa-4.8-NER

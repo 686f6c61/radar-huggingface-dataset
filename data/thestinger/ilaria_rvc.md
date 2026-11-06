@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Ilaria_RVC es un modelo publicado en HuggingFace por el usuario TheStinger bajo licencia MIT. Por su identificador y por el repositorio de GitHub asociado (TheStingerX/Ilaria-RVC-Mainline), se trata de un modelo orientado a la conversión de voz (voice conversion) basado en la familia RVC (Retrieval-based Voice Conversion). No es un modelo de lenguaje: no genera texto ni razona, sino que transforma una señal de audio de entrada en otra voz objetivo manteniendo el contenido lingüístico y la prosodia.
+Ilaria_RVC es un modelo publicado en Hugging Face por el usuario TheStinger bajo licencia MIT. Por su identificador y por el repositorio de GitHub asociado (TheStingerX/Ilaria-RVC-Mainline), se trata de un modelo orientado a la conversión de voz (voice conversion) basado en la familia RVC (Retrieval-based Voice Conversion). No es un modelo de lenguaje: no genera texto ni razona, sino que transforma una señal de audio de entrada en otra voz objetivo manteniendo el contenido lingüístico y la prosodia.
 
-La información pública disponible es extremadamente escasa. La model card en HuggingFace se limita a declarar la licencia MIT sin ningún contenido técnico adicional, y el repositorio de GitHub asociado describe opciones de conversión "avanzadas" sin detallar arquitectura, dataset de entrenamiento ni métricas. El modelo registra 0 descargas y 0 likes en el momento de la consulta, lo que sugiere una publicación reciente y sin validación comunitaria.
+La información pública disponible es extremadamente escasa. La model card en Hugging Face se limita a declarar la licencia MIT sin ningún contenido técnico adicional, y el repositorio de GitHub asociado describe opciones de conversión "avanzadas" sin detallar arquitectura, dataset de entrenamiento ni métricas. El modelo registra 0 descargas y 0 likes en el momento de la consulta, lo que sugiere una publicación reciente y sin validación comunitaria.
 
 Por tanto, esta ficha se redacta con los pocos datos verificables disponibles y marca explícitamente como "no disponible" todo aquello que no puede confirmarse. Es relevante para desarrolladores interesados en pipelines de conversión de voz, pero debe tratarse con cautela: al no haber benchmarks, documentación ni tracción, no es recomendable para producción sin una evaluación propia exhaustiva.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Licencia | Documentación | Disponibilidad |
 |---|---|---|---|---|
-| Ilaria_RVC (TheStinger) | Conversión de voz RVC | MIT | Mínima (solo licencia) | HuggingFace, 0 descargas |
+| Ilaria_RVC (TheStinger) | Conversión de voz RVC | MIT | Mínima (solo licencia) | Hugging Face, 0 descargas |
 | RVC (proyecto original, RVC-Project) | Conversión de voz RVC | MIT | Extensa | GitHub, amplia adopción |
 | Modelos de voz comerciales (p. ej. ElevenLabs) | Conversión/síntesis de voz | Propietaria | Extensa | API de pago |
 
@@ -72,7 +72,7 @@ No se dispone de datos de parámetros, contexto ni rendimiento de Ilaria_RVC que
 ## Limitaciones y advertencias
 
 - Documentación prácticamente inexistente: la model card solo declara la licencia MIT; no hay arquitectura, dataset, métricas ni instrucciones de uso.
-- Sin validación comunitaria: 0 descargas y 0 likes en HuggingFace, lo que impide inferir calidad o estabilidad.
+- Sin validación comunitaria: 0 descargas y 0 likes en Hugging Face, lo que impide inferir calidad o estabilidad.
 - Riesgo de alucinación: no aplica en el sentido de texto, pero sí existe riesgo de artefactos, pérdida de inteligibilidad o distorsión en la conversión de voz, sin métricas publicadas que lo cuantifiquen.
 - Sesgos conocidos: no disponibles; en modelos de voz, los sesgos suelen manifestarse como peor calidad en determinados acentos, géneros o rangos de edad, pero no hay datos para este modelo.
 - Limitaciones de idioma: no documentadas; la conversión de voz puede degradarse en idiomas distintos al del entrenamiento, que se desconoce.
@@ -82,6 +82,6 @@ No se dispone de datos de parámetros, contexto ni rendimiento de Ilaria_RVC que
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TheStinger/Ilaria_RVC
+- Hugging Face: https://huggingface.co/TheStinger/Ilaria_RVC
 - GitHub asociado: https://github.com/TheStingerX/Ilaria-RVC-Mainline
 - Proyecto RVC original (referencia de la familia): https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI

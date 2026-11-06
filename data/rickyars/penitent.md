@@ -81,8 +81,8 @@ No se han publicado resultados de benchmarks en la informacion disponible (no ha
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rickyars/penitent | 68M (encoder) + cabeza no cuantificada en la ficha | No disponible; se indica longitud de entrada arbitraria | Clasificacion en 9 dimensiones con distribucion sobre 4 niveles | No disponible | HuggingFace, ONNX para navegador |
-| jhu-clsp/ettin-encoder-68m | 68M | No disponible en la informacion proporcionada | Encoder base, sin cabeza de clasificacion especifica | No disponible | HuggingFace, modelo base declarado |
+| rickyars/penitent | 68M (encoder) + cabeza no cuantificada en la ficha | No disponible; se indica longitud de entrada arbitraria | Clasificacion en 9 dimensiones con distribucion sobre 4 niveles | No disponible | Hugging Face, ONNX para navegador |
+| jhu-clsp/ettin-encoder-68m | 68M | No disponible en la informacion proporcionada | Encoder base, sin cabeza de clasificacion especifica | No disponible | Hugging Face, modelo base declarado |
 | Otros clasificadores de texto de tamano comparable | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones de terceros en la informacion proporcionada que permitan una comparacion cuantitativa con alternativas de la misma categoria. La unica comparacion defendible con los datos disponibles es estructural: PENITENT anade sobre el encoder base una cabeza de decision y un objetivo de entrenamiento con distribuciones sobre niveles de rubrica.
@@ -103,6 +103,6 @@ No se dispone de datos de benchmarks ni de especificaciones de terceros en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rickyars/penitent
+- Modelo en Hugging Face: https://huggingface.co/rickyars/penitent
 - Modelo base declarado: https://huggingface.co/jhu-clsp/ettin-encoder-68m
 - La busqueda web realizada no devolvio enlaces relevantes sobre este modelo: los resultados correspondian a definiciones de diccionario y articulos sobre nudos (knot), sin relacion con PENITENT ni con Ettin. No se dispone, por tanto, de paper, blog tecnico, repositorio de codigo ni demostracion enlazados en la informacion proporcionada.

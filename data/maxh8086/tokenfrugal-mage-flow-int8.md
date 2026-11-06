@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tokenfrugal-mage-flow-int8` es un repositorio de pesos publicado por el usuario `maxh8086` en HuggingFace. Segun la model card, se trata de un espejo privado de un modelo de difusion para generacion de imagenes denominado Mage-Flow, en su variante cuantizada a INT8 y con una transformacion identificada como "ConvRot". El unico artefacto del repositorio es un fichero `safetensors` de 4.159.146.848 bytes (aproximadamente 4,2 GB), ubicado en la ruta `models/image_generation/comfy-t2i/diffusion_models/mage_flow_int8_convrot.safetensors`, lo que sugiere un uso previsto dentro de ComfyUI como modelo de difusion para text-to-image.
+`tokenfrugal-mage-flow-int8` es un repositorio de pesos publicado por el usuario `maxh8086` en Hugging Face. Segun la model card, se trata de un espejo privado de un modelo de difusion para generacion de imagenes denominado Mage-Flow, en su variante cuantizada a INT8 y con una transformacion identificada como "ConvRot". El unico artefacto del repositorio es un fichero `safetensors` de 4.159.146.848 bytes (aproximadamente 4,2 GB), ubicado en la ruta `models/image_generation/comfy-t2i/diffusion_models/mage_flow_int8_convrot.safetensors`, lo que sugiere un uso previsto dentro de ComfyUI como modelo de difusion para text-to-image.
 
 La relevancia de este repositorio es limitada y conviene ser explicito: no es un modelo original, no incluye model card tecnica sustantiva, no declara licencia verificada y no aporta resultados de evaluacion. El autor indica que solo se ha comprobado la integridad del fichero (lectura de tensores y metadatos) y que no se ha medido perplejidad ni ejecutado ninguna prueba de render. Ademas, la licencia aparece marcada como "UNVERIFIED", con la advertencia explicita de consultar la licencia del Mage-Flow original antes de cualquier uso publico.
 
@@ -21,7 +21,7 @@ Por tanto, esta ficha documenta lo que el repositorio declara y marca como "no d
 | Licencia | no disponible; el autor indica "UNVERIFIED: check upstream Mage-Flow license before any public use" |
 | Formato de pesos | safetensors (`mage_flow_int8_convrot.safetensors`, 4.159.146.848 bytes) |
 | Tamano del repositorio | 4,2 GB |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Uso previsto segun rutas | `comfy-t2i/diffusion_models` (integracion con ComfyUI) |
 
 ## Arquitectura y entrenamiento
@@ -65,7 +65,7 @@ No disponible. La informacion proporcionada no incluye datos de otros modelos de
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| tokenfrugal-mage-flow-int8 | no disponible | no aplica | no disponible (marcada como no verificada) | repositorio publico en HuggingFace |
+| tokenfrugal-mage-flow-int8 | no disponible | no aplica | no disponible (marcada como no verificada) | repositorio publico en Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -81,7 +81,7 @@ No disponible. La informacion proporcionada no incluye datos de otros modelos de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/maxh8086/tokenfrugal-mage-flow-int8
+- Repositorio en Hugging Face: https://huggingface.co/maxh8086/tokenfrugal-mage-flow-int8
 - Modelo upstream Mage-Flow: no disponible (no se proporciona enlace en la informacion)
 - Paper, blog o repositorio del autor: no disponible
 - Demo: no disponible

@@ -66,9 +66,9 @@ No se dispone de informacion suficiente en la documentacion para establecer una 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwopus3.8-27B-Flash-NOESIS-BF16 | ~27B | 262 144 | Apache-2.0 | HuggingFace |
-| Jackrong/Qwopus3.8-27B-Flash | ~27B | no disponible | no disponible | HuggingFace |
-| Qwen/Qwen3.8-27B | no disponible | no disponible | no disponible | HuggingFace |
+| Qwopus3.8-27B-Flash-NOESIS-BF16 | ~27B | 262 144 | Apache-2.0 | Hugging Face |
+| Jackrong/Qwopus3.8-27B-Flash | ~27B | no disponible | no disponible | Hugging Face |
+| Qwen/Qwen3.8-27B | no disponible | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -82,7 +82,7 @@ No se dispone de informacion suficiente en la documentacion para establecer una 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AMAImedia/Qwen3.8-27B-Qwopus-Flash-NOESIS-BF16
+- Hugging Face: https://huggingface.co/AMAImedia/Qwen3.8-27B-Qwopus-Flash-NOESIS-BF16
 - Modelo original: https://huggingface.co/Jackrong/Qwopus3.8-27B-Flash
 - Referencia oficial de Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Otro repack de AMAImedia: https://huggingface.co/AMAImedia/Qwen3.8-27B-Uncensored-NOESIS-BF16

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-rh-seb1-lora es un adaptador LoRA de edicion de imagen publicado por RunningHubAI (RunningHub) en nombre del autor identificado como Артак, con el identificador interno rh-2102401344102797314 en la plataforma original. No es un modelo de lenguaje ni un modelo base completo: es un fichero de pesos de bajo rango que se carga sobre un modelo de difusion de imagen ya existente, del que el repositorio solo indica que es un finetune de "krea2". El pipeline declarado en HuggingFace es image-text-to-image, lo que lo situa en la familia de adaptadores que transforman una imagen de entrada guiados por una instruccion textual.
+rh-seb1-lora es un adaptador LoRA de edicion de imagen publicado por RunningHubAI (RunningHub) en nombre del autor identificado como Артак, con el identificador interno rh-2102401344102797314 en la plataforma original. No es un modelo de lenguaje ni un modelo base completo: es un fichero de pesos de bajo rango que se carga sobre un modelo de difusion de imagen ya existente, del que el repositorio solo indica que es un finetune de "krea2". El pipeline declarado en Hugging Face es image-text-to-image, lo que lo situa en la familia de adaptadores que transforman una imagen de entrada guiados por una instruccion textual.
 
 La relevancia de este tipo de publicaciones es practica: los LoRA permiten inyectar un estilo, una identidad visual o un concepto concreto (en este caso activado mediante la palabra clave "1blndmn") sin reentrenar el modelo base, con un coste de almacenamiento minimo. El repositorio ocupa 0,2 GB y contiene un unico fichero, `1blndmnn.safetensors`, de 218 MiB, que es el peso real del adaptador. Esto lo hace apto para flujos de trabajo en ComfyUI, en la propia plataforma RunningHub y en Hugging Face.
 
@@ -89,8 +89,8 @@ No se dispone de datos verificables de modelos comparables directos en la inform
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/RunningHubAI/rh-seb1-lora
-- Perfil del publicador en HuggingFace: https://huggingface.co/RunningHubAI
+- Repositorio en Hugging Face: https://huggingface.co/RunningHubAI/rh-seb1-lora
+- Perfil del publicador en Hugging Face: https://huggingface.co/RunningHubAI
 - Modelo original en RunningHub: https://www.runninghub.ai/model/public/2102401344102797314
 - Pagina del autor en RunningHub: https://www.runninghub.ai/user-center/2097339907639824385
 - Plataforma RunningHub: https://www.runninghub.ai

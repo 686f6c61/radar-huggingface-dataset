@@ -70,7 +70,7 @@ No se dispone de datos de comparación directa con otros modelos de readmisión 
 - Las probabilidades del modelo crudo están distorsionadas por `scale_pos_weight`; usar siempre la versión calibrada para cálculos de costos.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/erikabear95/transitionrx-readmission-xgboost
+- Modelo en Hugging Face: https://huggingface.co/erikabear95/transitionrx-readmission-xgboost
 - Dataset UCI Diabetes 130-US Hospitals: https://archive.ics.uci.edu/dataset/296/diabetes+130-us+hospitals+for+years+1999-2008
 - Repositorio con pipeline similar (referencia externa): https://github.com/Ash-projects-personal/patient-readmission-prediction
 - Demo de modelo transparente (referencia externa): https://transparent-ai-diabetes-readmission-bbciaodwnxuyg6xj53ae6s.streamlit.app/

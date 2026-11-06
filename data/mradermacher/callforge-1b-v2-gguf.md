@@ -111,7 +111,7 @@ Como alternativas de la misma categoria (modelos conversacionales de aproximadam
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mradermacher/CallForge-1B-v2-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/mradermacher/CallForge-1B-v2-GGUF
 - Modelo base: https://huggingface.co/solomoniw/CallForge-1B-v2
 - Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher
 - Paper, blog tecnico, repositorio de codigo o demo: no disponible.

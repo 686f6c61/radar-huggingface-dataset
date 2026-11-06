@@ -79,8 +79,8 @@ No se han proporcionado datos verificados de modelos comparables en la informaci
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Enfoque |
 |---|---|---|---|---|---|
-| frozenlake-qwen3vl8b-grpo-decision-token-cap-bs_tb-s42-step250 | 8,77 B | No disponible | apache-2.0 | HuggingFace, 0 descargas, 0 likes | Agente de tool use en FrozenLake, artefacto de investigacion |
-| Qwen/Qwen3-VL-8B-Instruct (modelo base) | No disponible en la informacion | No disponible | No disponible en la informacion | HuggingFace (referenciado como base) | Modelo multimodal de proposito general |
+| frozenlake-qwen3vl8b-grpo-decision-token-cap-bs_tb-s42-step250 | 8,77 B | No disponible | apache-2.0 | Hugging Face, 0 descargas, 0 likes | Agente de tool use en FrozenLake, artefacto de investigacion |
+| Qwen/Qwen3-VL-8B-Instruct (modelo base) | No disponible en la informacion | No disponible | No disponible en la informacion | Hugging Face (referenciado como base) | Modelo multimodal de proposito general |
 | Alternativas multimodales de ~8 B de otras familias | No disponible | No disponible | No disponible | No disponible | No se dispone de datos comparables aportados |
 
 ## Limitaciones y advertencias
@@ -99,7 +99,7 @@ No se han proporcionado datos verificados de modelos comparables en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dolphin42/frozenlake-qwen3vl8b-grpo-decision-token-cap-bs_tb-s42-step250
+- Modelo en Hugging Face: https://huggingface.co/Dolphin42/frozenlake-qwen3vl8b-grpo-decision-token-cap-bs_tb-s42-step250
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Estudio de referencia citado en la model card: paquete de reproduccion en zip y `bsplit_trainer.py`, sin URL publica en la informacion disponible.
 - Resultados de la busqueda web: no se han encontrado enlaces relevantes; las entradas devueltas no guardan relacion con el modelo ni con su dominio tecnico.

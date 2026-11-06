@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`HirCoir/piper-checkpoint-es-mx-astra` es un repositorio publicado por el usuario HirCoir en HuggingFace. Por la convención de nombres empleada (`piper-checkpoint-es-mx-...`) y por los repositorios hermanos del mismo autor (`piper-voice-es_MX-Cortana-CE-Legacy`, `piper-checkpoint-es-mx-elena`, `piper-checkpoint-es-mx-sorahv2`), todo apunta a que se trata de un checkpoint de entrenamiento para una voz de síntesis de voz (TTS) del sistema Piper, orientada a español de México y con nombre de voz "astra". Esta interpretación es una inferencia a partir del nombre y del contexto del autor, no un dato declarado en la model card, ya que la información proporcionada no incluye pipeline, licencia ni idiomas.
+`HirCoir/piper-checkpoint-es-mx-astra` es un repositorio publicado por el usuario HirCoir en Hugging Face. Por la convención de nombres empleada (`piper-checkpoint-es-mx-...`) y por los repositorios hermanos del mismo autor (`piper-voice-es_MX-Cortana-CE-Legacy`, `piper-checkpoint-es-mx-elena`, `piper-checkpoint-es-mx-sorahv2`), todo apunta a que se trata de un checkpoint de entrenamiento para una voz de síntesis de voz (TTS) del sistema Piper, orientada a español de México y con nombre de voz "astra". Esta interpretación es una inferencia a partir del nombre y del contexto del autor, no un dato declarado en la model card, ya que la información proporcionada no incluye pipeline, licencia ni idiomas.
 
-El repositorio ocupa 19,2 GB, un tamaño compatible con un checkpoint de entrenamiento (pesos más estados del optimizador) y no con un modelo Piper exportado a ONNX para inferencia, que suele ser de decenas de megabytes. El acceso es restringido (gated): es necesario aceptar condiciones en HuggingFace antes de poder descargarlo. Fue creado el 23 de octubre de 2026 y actualizado el 24 de octubre de 2026, con 1 descarga y 0 likes en el momento de la consulta.
+El repositorio ocupa 19,2 GB, un tamaño compatible con un checkpoint de entrenamiento (pesos más estados del optimizador) y no con un modelo Piper exportado a ONNX para inferencia, que suele ser de decenas de megabytes. El acceso es restringido (gated): es necesario aceptar condiciones en Hugging Face antes de poder descargarlo. Fue creado el 23 de octubre de 2026 y actualizado el 24 de octubre de 2026, con 1 descarga y 0 likes en el momento de la consulta.
 
 La relevancia de esta ficha es limitada por la escasez de metadatos publicados: no hay model card con arquitectura, datos de entrenamiento, benchmarks ni licencia. Se recomienda tratar cualquier uso en producción con cautela hasta que el autor publique documentación o hasta verificar el contenido real del repositorio.
 
@@ -82,7 +82,7 @@ No se han localizado comparativas con modelos Piper de otros autores en la infor
 - Sesgos conocidos: no disponible; el autor no publica informacion sobre el dataset ni sobre sesgos de la voz entrenada.
 - Riesgo de alucinacion: no aplica de forma directa a un modelo de TTS, pero un checkpoint mal entrenado puede producir pronunciaciones incorrectas, artefactos o inestabilidad en la prosodia.
 - Limitaciones de contexto o idioma: la informacion publicada no declara idiomas; el nombre sugiere es-MX, lo que implicaria un rendimiento limitado fuera del espanol de Mexico.
-- Restricciones de licencia: la licencia no esta declarada y el acceso es gated; el uso comercial no esta garantizado y requiere verificar las condiciones que impone el autor en HuggingFace.
+- Restricciones de licencia: la licencia no esta declarada y el acceso es gated; el uso comercial no esta garantizado y requiere verificar las condiciones que impone el autor en Hugging Face.
 - El repositorio contiene presumiblemente un checkpoint de entrenamiento y no un modelo de inferencia listo para produccion, lo que obliga a un proceso de exportacion y validacion previo.
 - Con 1 descarga y 0 likes, no existe validacion por parte de la comunidad; se desconoce la calidad real de la voz "astra".
 - El autor es un particular sin documentacion tecnica publicada en el repositorio, lo que dificulta la reproducibilidad.
@@ -90,9 +90,9 @@ No se han localizado comparativas con modelos Piper de otros autores en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HirCoir/piper-checkpoint-es-mx-astra
+- Modelo en Hugging Face: https://huggingface.co/HirCoir/piper-checkpoint-es-mx-astra
 - Repo hermano sorahv2: https://huggingface.co/HirCoir/piper-checkpoint-es-mx-sorahv2
-- Perfil del autor en HuggingFace: https://huggingface.co/HirCoir/models
+- Perfil del autor en Hugging Face: https://huggingface.co/HirCoir/models
 - Ficha externa de otro modelo del autor (elena): https://www.toolify.ai/ai-model/hircoir-piper-checkpoint-es-mx-elena
 - Perfil del autor en GitHub: https://github.com/HirCoir
 - Repo relacionado con Piper + LLM (contexto, no del autor): https://github.com/RobotKitAI/piper-astra-jev/tree/main

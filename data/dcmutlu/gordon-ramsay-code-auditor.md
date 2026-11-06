@@ -67,5 +67,5 @@ No se dispone de informacion sobre modelos comparables especificos. Como referen
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dcmutlu/gordon-ramsay-code-auditor
+- Hugging Face: https://huggingface.co/dcmutlu/gordon-ramsay-code-auditor
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nigel79/pdf_scanner` es una publicación en HuggingFace del usuario nigel79, con licencia MIT y etiqueta regional "us". Sin embargo, la información disponible es extremadamente limitada: la model card únicamente contiene la línea `license: mit` y no se proporciona ningún detalle sobre arquitectura, parámetros, entrenamiento, capacidades o uso previsto. El repositorio fue creado el 27 de agosto de 2026 y no registra descargas ni valoraciones.
+El modelo `nigel79/pdf_scanner` es una publicación en Hugging Face del usuario nigel79, con licencia MIT y etiqueta regional "us". Sin embargo, la información disponible es extremadamente limitada: la model card únicamente contiene la línea `license: mit` y no se proporciona ningún detalle sobre arquitectura, parámetros, entrenamiento, capacidades o uso previsto. El repositorio fue creado el 27 de agosto de 2026 y no registra descargas ni valoraciones.
 
 A pesar de su nombre, que sugiere una posible función de escaneo o procesamiento de documentos PDF, no existe evidencia en la página del modelo que confirme su naturaleza, funcionalidad o implementación. Los resultados de búsqueda web relacionados con escáneres de documentos AI, herramientas de OCR o protección de modelos no están vinculados directamente a este repositorio. Por tanto, cualquier afirmación sobre sus capacidades sería especulativa.
 
@@ -52,6 +52,6 @@ No disponible. Al no existir datos sobre el modelo, no se puede establecer una c
 
 ## Enlaces
 
-- [HuggingFace - nigel79/pdf_scanner](https://huggingface.co/nigel79/pdf_scanner)
+- [Hugging Face - nigel79/pdf_scanner](https://huggingface.co/nigel79/pdf_scanner)
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de código o demos) asociados a este modelo.

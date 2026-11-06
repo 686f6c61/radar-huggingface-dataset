@@ -2,7 +2,7 @@
 
 ## Resumen
 
-IndoberdUser es un modelo publicado en HuggingFace por el usuario irfann09 bajo licencia MIT. Por el nombre y la ausencia de cualquier documentación técnica en la model card, todo apunta a un modelo derivado de IndoBERT, la familia de modelos BERT preentrenados en indonesio desarrollada originalmente por IndoLEM/Universitas Indonesia. El sufijo "User" sugiere un ajuste fino orientado a una tarea concreta, presumiblemente relacionada con el modelado o la clasificación de usuarios, aunque el autor no lo especifica.
+IndoberdUser es un modelo publicado en Hugging Face por el usuario irfann09 bajo licencia MIT. Por el nombre y la ausencia de cualquier documentación técnica en la model card, todo apunta a un modelo derivado de IndoBERT, la familia de modelos BERT preentrenados en indonesio desarrollada originalmente por IndoLEM/Universitas Indonesia. El sufijo "User" sugiere un ajuste fino orientado a una tarea concreta, presumiblemente relacionada con el modelado o la clasificación de usuarios, aunque el autor no lo especifica.
 
 La información disponible es extremadamente limitada: la model card solo contiene la declaración de licencia MIT, sin descripción, sin arquitectura declarada, sin datos de entrenamiento ni métricas. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y no tiene pipeline asignado, lo que indica que no ha sido validado ni utilizado por la comunidad.
 
@@ -80,7 +80,7 @@ La comparación con IndoBERT y XLM-RoBERTa es orientativa: no se dispone de dato
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/irfann09/IndoberdUser
+- Hugging Face: https://huggingface.co/irfann09/IndoberdUser
 - IndoBERT (referencia de la familia): https://huggingface.co/indolem/indobert-base-uncased
 - IndoLEM benchmark: https://indolem.github.io/
 - No se han encontrado papers, blogs, repositorios ni demos adicionales asociados a este modelo en la información disponible.

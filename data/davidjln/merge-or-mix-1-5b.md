@@ -89,7 +89,7 @@ La comparativa más relevante es la interna del propio experimento: este modelo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DavidJLN/merge-or-mix-1.5b
+- Modelo en Hugging Face: https://huggingface.co/DavidJLN/merge-or-mix-1.5b
 - Versión GGUF (Q8_0): https://huggingface.co/DavidJLN/merge-or-mix-1.5b-GGUF
 - Adaptadores LoRA del experimento: https://huggingface.co/DavidJLN/merge-or-mix-loras
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct

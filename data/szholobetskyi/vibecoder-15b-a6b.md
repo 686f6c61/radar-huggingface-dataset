@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo vibecoder-15b-a6b es un modelo de lenguaje publicado en HuggingFace por el usuario szholobetskyi. Su nombre sugiere una arquitectura de mezcla de expertos (MoE) con 15.571 millones de parámetros totales y 6.000 millones activos, aunque esta característica no está confirmada en la información disponible. El modelo está disponible en formato GGUF, lo que indica que está pensado para ejecución local mediante herramientas como llama.cpp u Ollama. La página web de VibeCoder (https://www.vibecoder.gg/) describe un asistente de codificación de inteligencia artificial de código abierto que planifica, edita y verifica código desde la terminal con modelos locales de Ollama, por lo que este modelo parece estar orientado a tareas de programación. Sin embargo, no se han publicado especificaciones oficiales, licencia, idiomas ni benchmarks en la información proporcionada.
+El modelo vibecoder-15b-a6b es un modelo de lenguaje publicado en Hugging Face por el usuario szholobetskyi. Su nombre sugiere una arquitectura de mezcla de expertos (MoE) con 15.571 millones de parámetros totales y 6.000 millones activos, aunque esta característica no está confirmada en la información disponible. El modelo está disponible en formato GGUF, lo que indica que está pensado para ejecución local mediante herramientas como llama.cpp u Ollama. La página web de VibeCoder (https://www.vibecoder.gg/) describe un asistente de codificación de inteligencia artificial de código abierto que planifica, edita y verifica código desde la terminal con modelos locales de Ollama, por lo que este modelo parece estar orientado a tareas de programación. Sin embargo, no se han publicado especificaciones oficiales, licencia, idiomas ni benchmarks en la información proporcionada.
 
 ## Especificaciones técnicas
 
@@ -71,5 +71,5 @@ No se dispone de datos de rendimiento para comparar el modelo con las alternativ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/szholobetskyi/vibecoder-15b-a6b
+- Hugging Face: https://huggingface.co/szholobetskyi/vibecoder-15b-a6b
 - VibeCoder: https://www.vibecoder.gg/

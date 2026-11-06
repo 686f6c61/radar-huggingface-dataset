@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mrbmaryam/logsumm-bgl-w5-extractive-stratified-qwen3-8b-sft` es un ajuste fino (SFT) del modelo Qwen3-8B, desarrollado por el usuario mrbmaryam y publicado en HuggingFace bajo licencia Apache 2.0. El modelo parte de la versión cuantizada a 4 bits `unsloth/Qwen3-8B-bnb-4bit` y se ha entrenado con la librería Unsloth, segun indica la model card. El nombre del repositorio sugiere un uso orientado a resumen extractivo sobre el corpus BGL (Loghub BGL, logs de supercomputador) con una ventana de contexto de 5 y una estratificacion del dataset, aunque esta informacion no se detalla en la model card.
+`mrbmaryam/logsumm-bgl-w5-extractive-stratified-qwen3-8b-sft` es un ajuste fino (SFT) del modelo Qwen3-8B, desarrollado por el usuario mrbmaryam y publicado en Hugging Face bajo licencia Apache 2.0. El modelo parte de la versión cuantizada a 4 bits `unsloth/Qwen3-8B-bnb-4bit` y se ha entrenado con la librería Unsloth, segun indica la model card. El nombre del repositorio sugiere un uso orientado a resumen extractivo sobre el corpus BGL (Loghub BGL, logs de supercomputador) con una ventana de contexto de 5 y una estratificacion del dataset, aunque esta informacion no se detalla en la model card.
 
 La relevancia de este modelo es limitada y muy especifica: se trata de un experimento de ajuste fino de caracter academico o de investigacion, con cero descargas y cero likes en el momento de la consulta, y sin documentacion tecnica publicada sobre el proceso de entrenamiento, los datos utilizados ni los resultados obtenidos. No debe confundirse con un modelo de proposito general ni con un modelo oficial de Qwen.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| mrbmaryam/logsumm-bgl-w5-extractive-stratified-qwen3-8b-sft | ~8B | no disponible | Apache 2.0 | HuggingFace |
-| Qwen3-8B (base oficial) | 8B | no disponible en esta ficha | Apache 2.0 | HuggingFace |
-| Llama 3.1 8B | 8B | 128K | Llama 3.1 Community | HuggingFace |
-| Mistral 7B | 7B | 32K | Apache 2.0 | HuggingFace |
+| mrbmaryam/logsumm-bgl-w5-extractive-stratified-qwen3-8b-sft | ~8B | no disponible | Apache 2.0 | Hugging Face |
+| Qwen3-8B (base oficial) | 8B | no disponible en esta ficha | Apache 2.0 | Hugging Face |
+| Llama 3.1 8B | 8B | 128K | Llama 3.1 Community | Hugging Face |
+| Mistral 7B | 7B | 32K | Apache 2.0 | Hugging Face |
 
 La comparacion con Qwen3-8B oficial es la mas directa, ya que este modelo es un ajuste fino del mismo. No hay datos de rendimiento para establecer comparaciones cuantitativas.
 
@@ -84,6 +84,6 @@ La comparacion con Qwen3-8B oficial es la mas directa, ya que este modelo es un 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mrbmaryam/logsumm-bgl-w5-extractive-stratified-qwen3-8b-sft
+- Hugging Face: https://huggingface.co/mrbmaryam/logsumm-bgl-w5-extractive-stratified-qwen3-8b-sft
 - Modelo base: https://huggingface.co/unsloth/Qwen3-8B-bnb-4bit
 - Unsloth (libreria de entrenamiento): https://github.com/unslothai/unsloth

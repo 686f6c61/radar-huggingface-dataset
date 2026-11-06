@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento comparables publicados en la informacion p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/software-mansion/U2NetP-ExecuTorch
+- Modelo en Hugging Face: https://huggingface.co/software-mansion/U2NetP-ExecuTorch
 - Repositorio upstream U²-Net: https://github.com/xuebinqin/U-2-Net
 - React Native ExecuTorch (npm): https://www.npmjs.com/package/react-native-executorch
 - Documentacion de React Native ExecuTorch (descarga de modelos): https://docs.swmansion.com/react-native-executorch/docs/fundamentals/downloading-models

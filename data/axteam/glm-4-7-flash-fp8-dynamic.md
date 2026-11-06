@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLM-4.7-Flash-FP8-dynamic es una cuantización de 8 bits del modelo `zai-org/GLM-4.7-Flash`, publicada por el usuario axteam en HuggingFace. Se trata de un transformer de mezcla de expertos (MoE) de 31.221.488.576 parámetros totales, etiquetado como `glm4_moe_lite` / `Glm4MoeLite`, con una longitud de contexto declarada de 202K tokens y orientado exclusivamente a generación de texto. El modelo base lo desarrolla zai-org (Zhipu AI) y esta versión cuantizada mantiene la licencia MIT del original.
+GLM-4.7-Flash-FP8-dynamic es una cuantización de 8 bits del modelo `zai-org/GLM-4.7-Flash`, publicada por el usuario axteam en Hugging Face. Se trata de un transformer de mezcla de expertos (MoE) de 31.221.488.576 parámetros totales, etiquetado como `glm4_moe_lite` / `Glm4MoeLite`, con una longitud de contexto declarada de 202K tokens y orientado exclusivamente a generación de texto. El modelo base lo desarrolla zai-org (Zhipu AI) y esta versión cuantizada mantiene la licencia MIT del original.
 
 El interés de esta ficha no está en el modelo base, sino en el formato de cuantización: se aplica FP8 dinámico en esquema W8A8 (pesos FP8 E4M3 por canal, activaciones FP8 dinámicas por token) mediante `compressed-tensors` con esquema `FP8_DYNAMIC`. El objetivo es servir el modelo en vLLM reduciendo el peso en disco y en VRAM hasta aproximadamente 32,2 GB, manteniendo en BF16 las partes sensibles a la precisión (embeddings, LM head, RMSNorms y el router MoE).
 
@@ -92,7 +92,7 @@ La comparación con otras alternativas de la misma categoría (otros MoE de ~30B
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/axteam/GLM-4.7-Flash-FP8-dynamic
+- Modelo en Hugging Face: https://huggingface.co/axteam/GLM-4.7-Flash-FP8-dynamic
 - Modelo base: https://huggingface.co/zai-org/GLM-4.7-Flash
 - Hilo de Unsloth sobre cuantizaciones FP8 de GLM-4.7-Flash: https://www.reddit.com/r/unsloth/comments/1qndg98/new_fp8_glm47flash_unsloth_dynamic_quants_for/
 - Guía de Unsloth para usar cuantizaciones FP8 en vLLM: https://unsloth.ai/docs/models/glm-4.7-flash#glm-4.7-flash-in-vllm

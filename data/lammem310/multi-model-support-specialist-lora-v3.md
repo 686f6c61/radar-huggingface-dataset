@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Lammem310/multi-model-support-specialist-lora-v3` es una publicacion de HuggingFace cuyo contenido real no esta documentado. La model card es la plantilla autogenerada por el Hub y todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, modelo base, datos de entrenamiento, evaluacion) aparecen con el marcador `[More Information Needed]`. No hay informacion verificable sobre arquitectura, tamano ni contexto.
+El repositorio `Lammem310/multi-model-support-specialist-lora-v3` es una publicacion de Hugging Face cuyo contenido real no esta documentado. La model card es la plantilla autogenerada por el Hub y todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, modelo base, datos de entrenamiento, evaluacion) aparecen con el marcador `[More Information Needed]`. No hay informacion verificable sobre arquitectura, tamano ni contexto.
 
 El identificador sugiere que se trata de un adaptador LoRA (por el sufijo `-lora-v3`) orientado a tareas de soporte o atencion con multiples modelos (por `multi-model-support-specialist`), pero esto es una inferencia a partir del nombre y no esta confirmado por el autor en ninguna parte de la ficha. Los metadatos tecnicos indican unicamente que la libreria declarada es `transformers`, que el repositorio contiene pesos en formato `safetensors` y que ocupa 0.0 GB.
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La se
 - VRAM estimada para inferencia: no disponible. Se desconoce el numero de parametros del adaptador y, sobre todo, el del modelo base sobre el que se aplica.
 - GPU recomendadas: no disponible.
 - Viabilidad en GPU de consumo: no evaluable sin conocer el modelo base. Si el adaptador es realmente un LoRA de bajo rango, su peso adicional seria de decenas o centenas de megabytes, pero el coste de inferencia vendria determinado por el modelo base, que no se identifica.
-- Opciones de despliegue: la etiqueta `endpoints_compatible` de los metadatos sugiere compatibilidad con HuggingFace Inference Endpoints, y la libreria declarada es `transformers`. No hay confirmacion de soporte para vLLM, llama.cpp, Ollama o TGI, ni de que existan pesos en formato GGUF.
+- Opciones de despliegue: la etiqueta `endpoints_compatible` de los metadatos sugiere compatibilidad con Hugging Face Inference Endpoints, y la libreria declarada es `transformers`. No hay confirmacion de soporte para vLLM, llama.cpp, Ollama o TGI, ni de que existan pesos en formato GGUF.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -78,7 +78,7 @@ No disponible. No se puede establecer una comparativa porque se desconocen el ta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lammem310/multi-model-support-specialist-lora-v3
+- Modelo en Hugging Face: https://huggingface.co/Lammem310/multi-model-support-specialist-lora-v3
 - Articulo referenciado en las etiquetas del repositorio (Lacoste et al., 2019, sobre emisiones de carbono, no especifico de este modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental citada en la plantilla: https://mlco2.github.io/impact
 - Paper, repositorio de codigo, demo y blog del autor: no disponibles.

@@ -6,7 +6,7 @@ Este repositorio contiene una conversion a OpenVINO IR en cuantizacion int4 de D
 
 El interes practico de esta ficha esta en dos puntos. Primero, la publicacion documenta con detalle un metodo de conversion en dos etapas (exportacion a IR fp16 y posterior compresion con NNCF) que evita el OOM del kernel en maquinas de 30 GB de RAM, un problema real al convertir MoE grandes con optimum-cli en un solo paso. Segundo, el autor publica mediciones de rendimiento single-stream sobre un Intel Core Ultra 7 258V: 74,3 tokens/s de throughput y 0,072 s hasta el primer token, frente a 49,1 tokens/s y 0,076 s de la variante hermana int8.
 
-Es relevante ahora porque permite ejecutar un MoE de 8B en un equipo de consumo con GPU integrada Intel Arc manteniendo una huella de disco de 4,3 GB (4,6 GB segun el tamano del repositorio en HuggingFace) y sin renunciar a un decodificado por encima de 70 tokens/s. Como contrapartida, el modelo derivado ha sido "abliterated", es decir, se le ha reducido deliberadamente la conducta de rechazo, lo que lo hace inadecuado para despliegues de produccion con requisitos de seguridad o moderacion.
+Es relevante ahora porque permite ejecutar un MoE de 8B en un equipo de consumo con GPU integrada Intel Arc manteniendo una huella de disco de 4,3 GB (4,6 GB segun el tamano del repositorio en Hugging Face) y sin renunciar a un decodificado por encima de 70 tokens/s. Como contrapartida, el modelo derivado ha sido "abliterated", es decir, se le ha reducido deliberadamente la conducta de rechazo, lo que lo hace inadecuado para despliegues de produccion con requisitos de seguridad o moderacion.
 
 ## Especificaciones tecnicas
 
@@ -20,7 +20,7 @@ Es relevante ahora porque permite ejecutar un MoE de 8B en un equipo de consumo 
 | Idiomas soportados | no disponible |
 | Licencia | LFM Open License v1.0 (campos del repositorio: license: other, license_name: lfm1.0) |
 | Formato de pesos | OpenVINO IR (openvino_model.xml / openvino_model.bin), mas openvino_tokenizer y openvino_detokenizer en el mismo formato |
-| Tamano del repositorio | 4,3 GB declarados en la model card; 4,6 GB segun los metadatos de HuggingFace |
+| Tamano del repositorio | 4,3 GB declarados en la model card; 4,6 GB segun los metadatos de Hugging Face |
 | Modelo base | Dingdust/LFM2.5-8B-A1B-heretic (BF16, 18 shards, 16,9 GB); a su vez derivado de LiquidAI/LFM2.5-8B-A1B |
 | Libreria de inferencia | openvino (openvino_genai / OpenVINO Model Server) |
 | Dispositivo objetivo | CPU Intel y GPU integrada Intel Arc (validado en Arc 130V/140V) |
@@ -99,7 +99,7 @@ La ventaja medible de esta build frente a la int8 es doble: reduce el tamano de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/blaj/LFM2.5-8B-A1B-heretic-int4-ov
+- Modelo en Hugging Face: https://huggingface.co/blaj/LFM2.5-8B-A1B-heretic-int4-ov
 - Modelo base intermedio (abliterated): https://huggingface.co/Dingdust/LFM2.5-8B-A1B-heretic
 - Modelo original de Liquid AI: https://huggingface.co/LiquidAI/LFM2.5-8B-A1B
 - Metodologia de benchmark del autor: https://huggingface.co/blaj/LFM2.5-8B-A1B-heretic-int4-ov/blob/main/BENCHMARK.md

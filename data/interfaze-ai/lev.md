@@ -87,7 +87,7 @@ La información disponible solo permite una comparación parcial, basada en los 
 
 | Modelo | Parametros | Contexto | S1Bench | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| lev | 4B (LoRA sobre Qwen3.5-4B) | no disponible | 68,9% de media en 13 subconjuntos | apache-2.0 | HuggingFace (interfaze-ai/lev) |
+| lev | 4B (LoRA sobre Qwen3.5-4B) | no disponible | 68,9% de media en 13 subconjuntos | apache-2.0 | Hugging Face (interfaze-ai/lev) |
 | reflex-4b | ~4B (por nomenclatura) | no disponible | similar a lev en los seis subconjuntos publicos | no disponible | no disponible |
 | Jev | no disponible | no disponible | por encima de lev | no disponible | no disponible |
 | Modelos abiertos de 26B-35B (sin especificar) | 26B-35B | no disponible | por encima de lev | no disponible | no disponible |
@@ -103,16 +103,16 @@ Enfoques alternativos de la misma categoria serian clasificadores discriminativo
 - La calibración de las probabilidades viene incluida en el checkpoint, pero no se documentan métricas de calibración (ECE u otras) que permitan auditar su fiabilidad fuera de la distribución de entrenamiento.
 - Riesgo de sesgo y de alucinación de etiqueta no evaluado en la información disponible; al restringirse el espacio de salida, el modo de fallo típico es una clasificación incorrecta o una confianza mal calibrada, no una salida inventada.
 - Licencia Apache-2.0: permite uso comercial, pero conviene verificar las condiciones del modelo base Qwen/Qwen3.5-4B, que se distribuye por separado.
-- Etiquetado de inferencia: la model card marca `inference: false`, lo que indica que no está pensado para el pipeline de inferencia estándar de HuggingFace, sino para su propio runtime.
+- Etiquetado de inferencia: la model card marca `inference: false`, lo que indica que no está pensado para el pipeline de inferencia estándar de Hugging Face, sino para su propio runtime.
 - Entrenado por el autor con una única H100; no se publican detalles del dataset, de los tokens de entrenamiento ni de posibles sesgos inducidos por los datos.
 - El repositorio tiene un volumen muy bajo de descargas (41), por lo que la validación por parte de la comunidad es todavía escasa.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/interfaze-ai/lev
+- Modelo en Hugging Face: https://huggingface.co/interfaze-ai/lev
 - Repositorio en GitHub (InterfazeAI): https://github.com/InterfazeAI/lev
 - Repositorio en GitHub citado en la model card (Abhinavexists): https://github.com/Abhinavexists/lev
 - Blog de presentacion: https://interfaze.ai/blog/jev-now-open-source-lev
 - Sitio web de Interfaze: https://interfaze.ai
-- Organizacion en HuggingFace: https://huggingface.co/interfaze-ai
+- Organizacion en Hugging Face: https://huggingface.co/interfaze-ai
 - Copia alternativa del modelo: https://huggingface.co/nassimjp/lev

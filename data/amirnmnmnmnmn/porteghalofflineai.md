@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PorteghalOfflineAI (nombre interno que aparece en la model card: "portaghalir-3") es un repositorio publicado en HuggingFace por el usuario amirnmnmnmnmn que se presenta como "el primer modelo de lenguaje nativo de Iran" y como un asistente de IA "totalmente offline" de 2 MB de tamano. La model card, redactada en persa y con abundante lenguaje promocional, afirma soporte para mas de 200 idiomas, generacion y depuracion de codigo en mas de 50 lenguajes de programacion y razonamiento avanzado, pero no incluye ni un solo dato tecnico verificable. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y no declara licencia ni idiomas en los metadatos.
+PorteghalOfflineAI (nombre interno que aparece en la model card: "portaghalir-3") es un repositorio publicado en Hugging Face por el usuario amirnmnmnmnmn que se presenta como "el primer modelo de lenguaje nativo de Iran" y como un asistente de IA "totalmente offline" de 2 MB de tamano. La model card, redactada en persa y con abundante lenguaje promocional, afirma soporte para mas de 200 idiomas, generacion y depuracion de codigo en mas de 50 lenguajes de programacion y razonamiento avanzado, pero no incluye ni un solo dato tecnico verificable. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y no declara licencia ni idiomas en los metadatos.
 
 El problema principal que plantea esta ficha es de verificabilidad: no se publica informacion sobre arquitectura, numero de parametros, longitud de contexto, dataset de entrenamiento, proceso de alineamiento ni resultados de evaluacion. Tampoco se distribuyen pesos en el repositorio; la model card redirige a una aplicacion externa y a dos paginas alojadas en dominios de terceros (un acortador de URL y dos sitios de GitHub Pages), lo que impide auditar el contenido real del supuesto modelo.
 
@@ -21,9 +21,9 @@ Es relevante ahora unicamente como caso de estudio de model cards potencialmente
 | Licencia | no disponible (ni en la model card ni en los metadatos del repositorio) |
 | Formato de pesos | no disponible (no se publican pesos; el acceso se redirige a una aplicacion externa) |
 | Tamano declarado | 2 MB segun el autor; no verificable |
-| Distribucion | aplicacion externa enlazada desde la model card; no hay descarga directa de pesos en HuggingFace |
+| Distribucion | aplicacion externa enlazada desde la model card; no hay descarga directa de pesos en Hugging Face |
 | Autor | amirnmnmnmnmn |
-| Fecha de creacion en HuggingFace | 2026-09-21 (fecha declarada en los metadatos) |
+| Fecha de creacion en Hugging Face | 2026-09-21 (fecha declarada en los metadatos) |
 
 ## Arquitectura y entrenamiento
 
@@ -93,13 +93,13 @@ Frente a estas alternativas, PorteghalOfflineAI no ofrece ni pesos, ni licencia,
 - Riesgo de alucinacion: desconocido y, en principio, elevado si el modelo real es de tamano minimo; no hay evaluacion de fidelidad factual.
 - Sesgos conocidos: no disponibles. No hay analisis de sesgos de genero, etnicos, religiosos o politicos, un punto especialmente sensible en un modelo que se presenta como "nativo" de un contexto nacional concreto.
 - Limitaciones de contexto e idioma: no disponibles. La afirmacion de cobertura de 200 idiomas no incluye lista ni prueba de competencia en ninguno de ellos.
-- Inconsistencia en los metadatos: la fecha de creacion declarada en HuggingFace es 2026-09-21, posterior a la fecha habitual de publicacion de este tipo de fichas, lo que sugiere datos de repositorio poco fiables.
+- Inconsistencia en los metadatos: la fecha de creacion declarada en Hugging Face es 2026-09-21, posterior a la fecha habitual de publicacion de este tipo de fichas, lo que sugiere datos de repositorio poco fiables.
 - Cero traccion verificable: 0 descargas y 0 likes, sin issues ni discusiones, lo que descarta cualquier validacion por parte de la comunidad.
 - Recomendacion para produccion: no desplegar este repositorio en entornos productivos ni integrarlo en sistemas que manejen datos sensibles hasta que se publiquen pesos, licencia, especificaciones y evaluaciones independientes.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/amirnmnmnmnmn/PorteghalOfflineAI
+- Repositorio en Hugging Face: https://huggingface.co/amirnmnmnmnmn/PorteghalOfflineAI
 - Enlace de descarga de la aplicacion citado en la model card (acortador de URL): https://vrgl.ir/2EooM
 - Pagina "oficial" citada en la model card (GitHub Pages): https://pythonamir1405-pixel.github.io/p
 - Pagina del modelo citada en la model card (GitHub Pages): https://you1405com-bot.github.io/n/

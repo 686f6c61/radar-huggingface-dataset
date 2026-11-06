@@ -109,13 +109,13 @@ No se dispone de comparaciones con otros codificadores de texto para difusión (
 - Longitud de contexto: no disponible.
 - Riesgo de alucinación: no evaluado en la información disponible para este uso como codificador dentro del pipeline de imagen.
 - La licencia declarada es apache-2.0, lo que en principio permite uso comercial, pero conviene verificar las condiciones del modelo base Qwen3-VL-8B-Instruct y el hecho de que los pesos han sido modificados sin garantías del autor original.
-- Procedencia: la ficha de HuggingFace figura a nombre de TechnoBaptist mientras que la model card indica `quantized_by: AtomicChat`. Conviene verificar la cadena de custodia de los pesos antes de usarlos en producción.
+- Procedencia: la ficha de Hugging Face figura a nombre de TechnoBaptist mientras que la model card indica `quantized_by: AtomicChat`. Conviene verificar la cadena de custodia de los pesos antes de usarlos en producción.
 - El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, sin validación independiente de la comunidad más allá de las métricas publicadas por los propios autores.
 - Los datos de cuantización están incompletos en la model card extraída: la fila del fichero Q8_0 aparece truncada, por lo que sus valores de KLD y coincidencia top-1 no están disponibles.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TechnoBaptist/Qwen-Image-2.1-Turbo-Uncensored-GGUF
+- Modelo en Hugging Face: https://huggingface.co/TechnoBaptist/Qwen-Image-2.1-Turbo-Uncensored-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Denoiser Turbo en GGUF: https://huggingface.co/AtomicChat/Qwen-Image-2.1-Turbo-GGUF
 - Métricas publicadas de la versión abliterada: https://huggingface.co/datasets/AtomicChat/Qwen-Image-2.1-Turbo-Abliterated-Uncensored-GGUF-metrics

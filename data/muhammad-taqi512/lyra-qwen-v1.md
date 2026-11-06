@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LYRA-QWEN-V1 es un modelo de lenguaje publicado por el usuario muhammad-taqi512 en HuggingFace, con licencia Apache-2.0 y pesos en formato safetensors. La única información técnica verificable que acompaña al repositorio son sus etiquetas (`safetensors`, `qwen2`, `license:apache-2.0`, `region:us`) y el recuento real de parámetros extraído de los ficheros de pesos: 1.543.714.304 parámetros, es decir, aproximadamente 1,54 mil millones. La model card no contiene más texto que la declaración de licencia, por lo que no hay documentación del autor sobre datos de entrenamiento, idiomas, contexto o procedimiento de ajuste.
+LYRA-QWEN-V1 es un modelo de lenguaje publicado por el usuario muhammad-taqi512 en Hugging Face, con licencia Apache-2.0 y pesos en formato safetensors. La única información técnica verificable que acompaña al repositorio son sus etiquetas (`safetensors`, `qwen2`, `license:apache-2.0`, `region:us`) y el recuento real de parámetros extraído de los ficheros de pesos: 1.543.714.304 parámetros, es decir, aproximadamente 1,54 mil millones. La model card no contiene más texto que la declaración de licencia, por lo que no hay documentación del autor sobre datos de entrenamiento, idiomas, contexto o procedimiento de ajuste.
 
 Por el volumen de parámetros y la etiqueta de arquitectura, el modelo encaja en el segmento de los transformers decoder-only pequeños de la familia Qwen2, un rango en el que ya existen referencias consolidadas como Qwen2-1.5B. Se trata, por tanto, de un candidato a inferencia local en hardware de consumo, no de un modelo de frontera. El repositorio ocupa 3,1 GB, un tamaño coherente con pesos en precisión de 16 bits para ese número de parámetros.
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Evaluación publicada | Disponibilidad |
 |---|---|---|---|---|---|
-| LYRA-QWEN-V1 | 1,54 B | no disponible | Apache-2.0 | No | Safetensors en HuggingFace |
+| LYRA-QWEN-V1 | 1,54 B | no disponible | Apache-2.0 | No | Safetensors en Hugging Face |
 | Qwen2-1.5B | 1,54 B | 32.768 tokens | Apache-2.0 | Sí, extensa | Safetensors y múltiples cuantizaciones |
 | Qwen2.5-1.5B | 1,54 B | 32.768 tokens | Apache-2.0 | Sí, extensa | Safetensors y múltiples cuantizaciones |
 | Llama-3.2-1B | 1,24 B | 128.000 tokens | Licencia comunitaria de Llama 3.2 | Sí | Safetensors y GGUF |
@@ -89,5 +89,5 @@ La comparación se limita a datos públicos de los modelos alternativos; no hay 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/muhammad-taqi512/LYRA-QWEN-V1
+- Modelo en Hugging Face: https://huggingface.co/muhammad-taqi512/LYRA-QWEN-V1
 - No se han encontrado papers, blogs, repositorios ni demos asociados al modelo en la búsqueda web realizada.

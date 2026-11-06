@@ -72,11 +72,11 @@ No se dispone de datos de rendimiento comparativo. La comparativa se limita a pa
 - Riesgo de alucinación: el modelo base puede generar contenido plausible pero incorrecto; el adaptador no mitiga este riesgo, y la falta de evaluaciones formales impide conocer el impacto del fine-tuning.
 - Limitaciones de contexto o idioma: no se ha documentado el idioma principal del dataset de entrenamiento; aunque el modelo base soporta inglés y chino, la especialización MBTI podría estar sesgada hacia el inglés.
 - Restricciones de licencia: el repositorio del adaptador no especifica una licencia, lo que introduce incertidumbre sobre el uso comercial. El modelo base es Apache 2.0, pero los pesos del adaptador podrían tener restricciones adicionales no declaradas.
-- Caveat para producción: el modelo tiene 0 descargas y 0 likes en HuggingFace, y no se han publicado resultados de benchmarks ni pruebas de robustez. No es recomendable su uso en entornos de producción sin una validación exhaustiva.
+- Caveat para producción: el modelo tiene 0 descargas y 0 likes en Hugging Face, y no se han publicado resultados de benchmarks ni pruebas de robustez. No es recomendable su uso en entornos de producción sin una validación exhaustiva.
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/DrinkIcedT/Qwen2.5-7B-Instruct_MBTI_lora2
+- Hugging Face del modelo: https://huggingface.co/DrinkIcedT/Qwen2.5-7B-Instruct_MBTI_lora2
 - Dataset de diálogos MBTI: https://huggingface.co/DrinkIcedT/Qwen2.5-7B-Instruct_MBTI-Dialogues
 - Documentación de TRL: https://github.com/huggingface/trl
 - Paper relacionado: https://arxiv.org/pdf/2508.08719

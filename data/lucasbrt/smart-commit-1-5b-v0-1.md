@@ -33,7 +33,7 @@ Los datos son 39.985 commits del split de entrenamiento de CommitChronicle (revi
 - Imitación del estilo del repositorio mediante el contexto de hasta cinco asuntos de commits anteriores.
 - Emisión de mensajes en formato Conventional Commits (tipo y scope) cuando el repositorio lo emplea; type_match de 0,644 en eval-v1.
 - Selección de scopes ya usados por el repositorio o ausencia de scope; scope_known de 0,852.
-- Modo conversacional declarado en los tags de HuggingFace (`text-generation`, `conversational`), aunque la model card solo valida el prompt específico de smart-commit.
+- Modo conversacional declarado en los tags de Hugging Face (`text-generation`, `conversational`), aunque la model card solo valida el prompt específico de smart-commit.
 - Generación de código y razonamiento general heredados del modelo base: no evaluados ni documentados por el autor para esta variante.
 - No se documenta soporte de tool calling, function calling, uso como agente, visión, audio ni modo de razonamiento extendido.
 
@@ -73,9 +73,9 @@ Notas de interpretación aportadas por el autor: type_match mide coincidencia de
 
 | Modelo | Parámetros | Contexto | Rendimiento en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| smart-commit-1.5b-v0.1 | 1,5B | no disponible | type_match 0,644; scope_known 0,852; word_f1 0,362 | Apache-2.0 | safetensors + GGUF Q4_K_M en HuggingFace |
-| smart-commit-0.5b-v0.1 | 0,5B (aproximado, según nombre) | no disponible | Igualaría a este modelo en tipo y scope, a unas 2,5× la velocidad (dato del autor) | no disponible en la información | HuggingFace, mismo autor |
-| Qwen2.5-Coder-1.5B-Instruct | 1,5B | no disponible en la información | type_match 0,456; scope_known 0,580; word_f1 0,245 | Apache-2.0 | Modelo base público en HuggingFace |
+| smart-commit-1.5b-v0.1 | 1,5B | no disponible | type_match 0,644; scope_known 0,852; word_f1 0,362 | Apache-2.0 | safetensors + GGUF Q4_K_M en Hugging Face |
+| smart-commit-0.5b-v0.1 | 0,5B (aproximado, según nombre) | no disponible | Igualaría a este modelo en tipo y scope, a unas 2,5× la velocidad (dato del autor) | no disponible en la información | Hugging Face, mismo autor |
+| Qwen2.5-Coder-1.5B-Instruct | 1,5B | no disponible en la información | type_match 0,456; scope_known 0,580; word_f1 0,245 | Apache-2.0 | Modelo base público en Hugging Face |
 | Mismo base recuantizado a Q4_K_M (control) | 1,5B | no disponible | type_match 0,408; scope_known 0,516; word_f1 0,245 | Apache-2.0 | Solo como control experimental, no publicado como modelo |
 
 ## Limitaciones y advertencias
@@ -93,7 +93,7 @@ Notas de interpretación aportadas por el autor: type_match mide coincidencia de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LucasBRT/smart-commit-1.5b-v0.1
+- Modelo en Hugging Face: https://huggingface.co/LucasBRT/smart-commit-1.5b-v0.1
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct
 - Repositorio de smart-commit (CLI): https://github.com/Lucas-BRT/smart-commit
 - Scripts y receta de entrenamiento: https://github.com/Lucas-BRT/smart-commit/tree/training/training

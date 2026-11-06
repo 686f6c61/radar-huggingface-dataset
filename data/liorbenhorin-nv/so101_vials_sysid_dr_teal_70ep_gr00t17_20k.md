@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este checkpoint (GR00T N1.7, so101_vials) | 3,14 mil millones | no disponible | apache-2.0 | HuggingFace, via LeRobot | Especializado en una tarea y un robot (`so101_follower`) |
+| Este checkpoint (GR00T N1.7, so101_vials) | 3,14 mil millones | no disponible | apache-2.0 | Hugging Face, via LeRobot | Especializado en una tarea y un robot (`so101_follower`) |
 | GR00T N1.7 base (NVIDIA) | no disponible | no disponible | no disponible | Repositorio Isaac-GR00T | Modelo fundacional cross-embodiment; este checkpoint deriva de el |
-| SmolVLA (HuggingFace) | no disponible | no disponible | no disponible | HuggingFace, via LeRobot | VLA compacto orientado a hardware de consumo; categoria comparable |
+| SmolVLA (Hugging Face) | no disponible | no disponible | no disponible | Hugging Face, via LeRobot | VLA compacto orientado a hardware de consumo; categoria comparable |
 | pi0 / pi0.5 (Physical Intelligence) | no disponible | no disponible | no disponible | Repositorio del autor | VLA de proposito general para manipulacion; categoria comparable |
 | ACT (LeRobot) | no disponible | no disponible | no disponible | LeRobot | Politica de imitacion clasica, sin backbone VLM; referencia de linea base |
 
@@ -95,7 +95,7 @@ No se dispone de datos confirmados de parametros, contexto ni rendimiento de las
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/liorbenhorin-nv/so101_vials_sysid_dr_teal_70ep_GR00T17_20k
+- Modelo en Hugging Face: https://huggingface.co/liorbenhorin-nv/so101_vials_sysid_dr_teal_70ep_GR00T17_20k
 - Dataset de entrenamiento: https://huggingface.co/datasets/liorbenhorin-nv/so101_vials_sysid_dr_teal_70ep
 - Visualizacion del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=liorbenhorin-nv/so101_vials_sysid_dr_teal_70ep
 - Repositorio de GR00T (NVIDIA Isaac-GR00T): https://github.com/NVIDIA/Isaac-GR00T

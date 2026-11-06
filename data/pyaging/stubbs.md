@@ -6,7 +6,7 @@ El modelo `pyaging/stubbs` es un reloj epigenético (aging clock) diseñado para
 
 Este modelo no es un sistema de IA generativa ni un LLM, sino un predictor estadístico especializado en biología del envejecimiento. Su relevancia radica en que permite cuantificar la edad biológica en múltiples tejidos de ratón (hígado, pulmón, corazón, corteza cerebral, músculo esquelético, cerebelo y bazo), lo que lo convierte en una herramienta útil para la investigación biomédica sobre envejecimiento y para evaluar intervenciones que modulan la velocidad de envejecimiento en modelos murinos.
 
-Se distribuye bajo licencia BSD-3-Clause y se integra en la librería `pyaging`, un ecosistema de relojes epigenéticos de código abierto. El repositorio en HuggingFace no contiene pesos ni artefactos descargables (tamaño 0.0 GB), sino que actúa como una entrada del catálogo de relojes de `pyaging`; la predicción se realiza mediante la función `pya.pred.predict_age()`.
+Se distribuye bajo licencia BSD-3-Clause y se integra en la librería `pyaging`, un ecosistema de relojes epigenéticos de código abierto. El repositorio en Hugging Face no contiene pesos ni artefactos descargables (tamaño 0.0 GB), sino que actúa como una entrada del catálogo de relojes de `pyaging`; la predicción se realiza mediante la función `pya.pred.predict_age()`.
 
 ## Especificaciones tecnicas
 
@@ -47,7 +47,7 @@ No se dispone de información detallada sobre el conjunto de entrenamiento (núm
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El artículo original (Stubbs et al., 2017) reporta métricas de precisión (error absoluto medio, correlación) en su publicación, pero estos datos no se han incluido en la model card ni en el repositorio de HuggingFace. No se dispone de comparaciones cuantitativas con otros relojes epigenéticos en la información proporcionada.
+No se han publicado resultados de benchmarks en la información disponible. El artículo original (Stubbs et al., 2017) reporta métricas de precisión (error absoluto medio, correlación) en su publicación, pero estos datos no se han incluido en la model card ni en el repositorio de Hugging Face. No se dispone de comparaciones cuantitativas con otros relojes epigenéticos en la información proporcionada.
 
 ## Requisitos de hardware
 
@@ -73,6 +73,6 @@ No se dispone de datos comparativos específicos en la información proporcionad
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/pyaging/stubbs
+- Repositorio Hugging Face: https://huggingface.co/pyaging/stubbs
 - Documentación de pyaging (catálogo de relojes): https://pyaging.readthedocs.io
 - Publicación original: Stubbs, T. M., et al. "Multi-tissue DNA methylation age predictor in mouse." Genome Biology 18: 68 (2017). DOI: https://doi.org/10.1186/s13059-017-1203-5

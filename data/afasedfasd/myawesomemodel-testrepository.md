@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario afasedfasd bajo el identificador `afasedfasd/MyAwesomeModel-TestRepository`. La model card lo presenta como una actualización de una versión anterior con mejoras en razonamiento e inferencia, pero el repositorio tiene un tamaño de 0.0 GB y no contiene pesos descargables, por lo que se trata de un repositorio de prueba o placeholder y no de un modelo utilizable en producción.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario afasedfasd bajo el identificador `afasedfasd/MyAwesomeModel-TestRepository`. La model card lo presenta como una actualización de una versión anterior con mejoras en razonamiento e inferencia, pero el repositorio tiene un tamaño de 0.0 GB y no contiene pesos descargables, por lo que se trata de un repositorio de prueba o placeholder y no de un modelo utilizable en producción.
 
-La información disponible es contradictoria: los tags de HuggingFace indican `bert`, `feature-extraction` y `pytorch`, lo que sugeriría un encoder BERT para extracción de características, mientras que la model card describe un modelo generativo conversacional con capacidades de razonamiento, function calling y búsqueda web. No se especifican parámetros, longitud de contexto, tokenizador ni datos de entrenamiento. Cualquier evaluación práctica del modelo es imposible con los artefactos publicados.
+La información disponible es contradictoria: los tags de Hugging Face indican `bert`, `feature-extraction` y `pytorch`, lo que sugeriría un encoder BERT para extracción de características, mientras que la model card describe un modelo generativo conversacional con capacidades de razonamiento, function calling y búsqueda web. No se especifican parámetros, longitud de contexto, tokenizador ni datos de entrenamiento. Cualquier evaluación práctica del modelo es imposible con los artefactos publicados.
 
 La relevancia actual es nula desde el punto de vista técnico: no hay pesos, no hay código de inferencia enlazado de forma verificable y las cifras de benchmarks de la model card no son reproducibles. Esta ficha documenta lo que el autor declara y señala explícitamente los datos no disponibles.
 
@@ -23,7 +23,7 @@ La relevancia actual es nula desde el punto de vista técnico: no hay pesos, no 
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información verificable sobre la arquitectura. Los tags de HuggingFace apuntan a `bert` con pipeline `feature-extraction`, lo que implicaría un transformer encoder bidireccional orientado a representaciones, pero la model card describe un asistente conversacional con modo de razonamiento extendido, soporte de system prompt y function calling, propio de un modelo decoder-only generativo. Esta discrepancia no se resuelve con los datos publicados.
+No se dispone de información verificable sobre la arquitectura. Los tags de Hugging Face apuntan a `bert` con pipeline `feature-extraction`, lo que implicaría un transformer encoder bidireccional orientado a representaciones, pero la model card describe un asistente conversacional con modo de razonamiento extendido, soporte de system prompt y function calling, propio de un modelo decoder-only generativo. Esta discrepancia no se resuelve con los datos publicados.
 
 Respecto al entrenamiento, la model card menciona de forma genérica "increased computational resources" y "algorithmic optimization mechanisms during post-training", sin especificar número de tokens, composición del dataset, uso de RLHF, DPO u otra técnica de alineamiento. Tampoco se documenta ninguna innovación técnica concreta (atención lineal, decodificación especulativa, MoE) más allá de la referencia a un mayor "thinking depth" medido en tokens por pregunta en AIME 2025 (de 12K a 23K tokens de media). No hay información sobre el tokenizador ni sobre la configuración de entrenamiento.
 
@@ -102,7 +102,7 @@ No es posible establecer una comparativa rigurosa: se desconocen parámetros, co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/afasedfasd/MyAwesomeModel-TestRepository
+- Hugging Face: https://huggingface.co/afasedfasd/MyAwesomeModel-TestRepository
 - Paper: no disponible
 - Blog: no disponible
 - Repositorio de código: no disponible (la model card menciona "our code repository" sin enlace)

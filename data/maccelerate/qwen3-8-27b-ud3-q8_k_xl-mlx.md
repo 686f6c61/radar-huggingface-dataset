@@ -96,7 +96,7 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/maccelerate/Qwen3.8-27B-UD3-Q8_K_XL-MLX
+- Página del modelo en Hugging Face: https://huggingface.co/maccelerate/Qwen3.8-27B-UD3-Q8_K_XL-MLX
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - GGUF de origen: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
 - Repositorio de conversión maccelerate: https://github.com/maccelerate-ai/maccelerate

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jesuseriofrio/qwen38-27b-uncensored-hauhaucs-q6kp` es un repositorio de redistribucion en HuggingFace que contiene un unico archivo GGUF: `Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-Q6_K_P.gguf`. No se trata de un modelo entrenado por el autor del repositorio, sino de una copia sin modificaciones del archivo publicado en `HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF`, tal y como declara su propia model card. El autor justifica la duplicacion porque el repositorio original pesa unos 172 GB y la funcion de modelos cacheados de RunPod Serverless descarga el repositorio completo.
+`jesuseriofrio/qwen38-27b-uncensored-hauhaucs-q6kp` es un repositorio de redistribucion en Hugging Face que contiene un unico archivo GGUF: `Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-Q6_K_P.gguf`. No se trata de un modelo entrenado por el autor del repositorio, sino de una copia sin modificaciones del archivo publicado en `HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF`, tal y como declara su propia model card. El autor justifica la duplicacion porque el repositorio original pesa unos 172 GB y la funcion de modelos cacheados de RunPod Serverless descarga el repositorio completo.
 
 El modelo subyacente es un ajuste fino de la familia Qwen3.8 con 27.320.697.856 parametros (aproximadamente 27,3 mil millones) y las etiquetas del autor lo marcan como `uncensored` y `mtp`. La cuantizacion disponible en este repositorio es Q6_K_P, con un tamano total de 25,9 GB. La licencia declarada es Apache 2.0, heredada del modelo base y del trabajo de Qwen.
 
@@ -40,7 +40,7 @@ Tampoco se dispone de informacion sobre el proceso de entrenamiento: numero de t
 
 - Generacion de texto conversacional: el repositorio esta etiquetado como `conversational`, por lo que el uso previsto es el dialogo multi-turno.
 - Generacion creativa sin filtros de contenido: la etiqueta `uncensored` indica que el modelo no aplica rechazos de seguridad, orientado a ficcion y roleplay.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el archivo puede servirse a traves de APIs compatibles con el formato de inferencia de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el archivo puede servirse a traves de APIs compatibles con el formato de inferencia de Hugging Face.
 - Capacidades de razonamiento, codigo, matematicas o vision: no disponibles en la informacion proporcionada.
 - Soporte de tool calling o function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -100,7 +100,7 @@ Comparacion con alternativas de la misma categoria (otros modelos de 27 B cuanti
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jesuseriofrio/qwen38-27b-uncensored-hauhaucs-q6kp
+- Repositorio en Hugging Face: https://huggingface.co/jesuseriofrio/qwen38-27b-uncensored-hauhaucs-q6kp
 - Repositorio del modelo base (origen del archivo): https://huggingface.co/HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF
 
 Nota: las busquedas web realizadas no devolvieron papers, blogs, repositorios ni demos relacionados con este modelo; los unicos resultados obtenidos fueron paginas no relacionadas (localizadores de tiendas y comparadores de rutas).

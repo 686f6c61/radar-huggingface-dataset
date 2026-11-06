@@ -65,7 +65,7 @@ La model card no incluye métricas de ningún tipo: ni evaluaciones de calidad d
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| BSN-Stream-Voice (Cephboy) | no disponible | no disponible | MIT | HuggingFace, formato GGUF | Variante optimizada de BSN-Stream sobre arquitectura Moshi; sin benchmarks publicados |
+| BSN-Stream-Voice (Cephboy) | no disponible | no disponible | MIT | Hugging Face, formato GGUF | Variante optimizada de BSN-Stream sobre arquitectura Moshi; sin benchmarks publicados |
 | Moshi (Kyutai) | 7 000 millones (dato público del modelo base) | no disponible en esta ficha | Apache 2.0 (según la documentación pública del proyecto) | Repositorio público de Kyutai | Modelo fundacional de diálogo hablado full-duplex; referencia directa de la arquitectura |
 | Ultravox (Fixie) | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha | Repositorio público | Familia de modelos de voz basados en LLM; categoría comparable en asistencia vocal |
 
@@ -84,7 +84,7 @@ La comparación cuantitativa no es posible: no se dispone de parámetros, contex
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Cephboy/BSN-Stream-Voice
+- Hugging Face: https://huggingface.co/Cephboy/BSN-Stream-Voice
 - Repositorio del modelo base Moshi (Kyutai): https://github.com/kyutai-labs/moshi
 - Página del proyecto Moshi: https://moshi.chat
 - Artículo del modelo base: "Moshi: a speech-text foundation model for real-time dialogue" (arXiv:2410.00037)

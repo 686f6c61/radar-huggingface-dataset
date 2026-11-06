@@ -93,7 +93,7 @@ La comparativa se limita al modelo base y a la variante turbo de Whisper por fal
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chienhsinlin/helioslm-asr-tw-v4
+- Modelo en Hugging Face: https://huggingface.co/chienhsinlin/helioslm-asr-tw-v4
 - Modelo base: https://huggingface.co/openai/whisper-large-v3
 - Modelo conversacional asociado: https://huggingface.co/chienhsinlin/helioslm-chat-e4b
 - Mozilla Common Voice: https://commonvoice.mozilla.org/

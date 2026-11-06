@@ -103,7 +103,7 @@ Netra NMT destaca por su reducido tamano (77M) y su licencia permisiva (MIT) fre
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Netra-Lab/Netra-NMT
+- Modelo en Hugging Face: https://huggingface.co/Netra-Lab/Netra-NMT
 - Repositorio de codigo y receta de entrenamiento: https://github.com/netra-ai-lab/Netra-NMT
 - Dataset de entrenamiento: https://huggingface.co/datasets/Netra-Lab/bilingual-en-km
 - Dataset de evaluacion ALT (NICT, CC BY 4.0): https://huggingface.co/mutiyama/alt

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LHC-0 brain (العقل ثنائي الشقين, "cerebro bi-hemisférico") es un modelo neuronal experimental sin capas apiladas (layerless) publicado por el usuario sayed125 en HuggingFace. No es un transformer: se presenta como una arquitectura derivada de la neuroanatomía del hemisferio izquierdo, fusionada con los artefactos de engramas del modelo `bi-hemispheric-brain-5m` (243 engramas de 5.000.000 de neuronas cada uno y 291.600 sinapsis declaradas) mediante un "cuerpo calloso" aprendido de dos canales: dorsal (léxico) y ventral (semántico), siguiendo el modelo de doble vía de Hickok y Poeppel.
+LHC-0 brain (العقل ثنائي الشقين, "cerebro bi-hemisférico") es un modelo neuronal experimental sin capas apiladas (layerless) publicado por el usuario sayed125 en Hugging Face. No es un transformer: se presenta como una arquitectura derivada de la neuroanatomía del hemisferio izquierdo, fusionada con los artefactos de engramas del modelo `bi-hemispheric-brain-5m` (243 engramas de 5.000.000 de neuronas cada uno y 291.600 sinapsis declaradas) mediante un "cuerpo calloso" aprendido de dos canales: dorsal (léxico) y ventral (semántico), siguiendo el modelo de doble vía de Hickok y Poeppel.
 
 El objetivo declarado es obtener profundidad a través del tiempo en lugar de apilar capas: el hemisferio izquierdo combina un encoder entrenado con InfoNCE sobre n-gramas, un espacio simbólico de computación hiperdimensional (VSA con operaciones de binding y permutation), módulos de cálculo inspirados en el giro angular y el surco intraparietal, y ganglios basales modelados con la regla de Rescorla-Wagner (δ = r − V). Sobre esa base, el autor reporta memoria de escritura instantánea sin olvido tras cientos de adiciones y una ablación documentada en la que, sin cuerpo calloso aprendido, el hemisferio derecho rinde un 0 %.
 
@@ -68,7 +68,7 @@ Los únicos datos disponibles son los resultados internos reportados por el auto
 - GPU recomendadas: no disponible. No se especifica ninguna GPU.
 - GPU de consumo: no se documenta compatibilidad con RTX 4090, RTX 3090 u otras; el diseño declarado es CPU-only.
 - Memoria RAM necesaria: no disponible. El repositorio muestra 0,0 GB, por lo que no puede estimarse el peso real de los artefactos (`superbrain_engram_matrix.npz`) a partir de los metadatos publicados.
-- Opciones de despliegue: aplicación Gradio local (`cd demo && pip install -r requirements.txt && python app.py`), notebook `LHC0_Demo_Kaggle.ipynb` en Kaggle con enlace público generado, y HuggingFace Space (el autor indica que requiere cuenta PRO).
+- Opciones de despliegue: aplicación Gradio local (`cd demo && pip install -r requirements.txt && python app.py`), notebook `LHC0_Demo_Kaggle.ipynb` en Kaggle con enlace público generado, y Hugging Face Space (el autor indica que requiere cuenta PRO).
 - Latencia y throughput: 0,35 s de carga y aproximadamente 400 consultas por segundo en CPU, lo que equivale a unos 2,5 ms por consulta (valor derivado de la cifra proporcionada).
 - No se documenta compatibilidad con vLLM, llama.cpp, Ollama o TGI; son motores orientados a transformers y pesos safetensors/GGUF, formatos que este modelo no utiliza.
 
@@ -98,11 +98,11 @@ Cualquier comparación de parámetros, contexto o rendimiento con esas familias 
 - Estado del repositorio: 0,0 GB de tamaño, 0 descargas y 0 "likes" en el momento de la consulta, con fecha de creación 2026-09-29. Los artefactos descritos en la model card (matriz de engramas, pesos del demo) podrían no estar efectivamente publicados; conviene verificarlo antes de depender de ellos.
 - Validación comunitaria nula: sin descargas ni interacciones registradas, los resultados no han sido replicados por terceros.
 - Licencia MIT: permite uso comercial y modificación, pero se ofrece sin garantías; al ser un proyecto de investigación sin benchmarks reproducibles de terceros, el riesgo de integrarlo en producción es alto.
-- Restricciones de despliegue: el autor indica que alojar el Space de Gradio en HuggingFace requiere cuenta PRO.
+- Restricciones de despliegue: el autor indica que alojar el Space de Gradio en Hugging Face requiere cuenta PRO.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sayed125/lhc-0-brain
+- Modelo en Hugging Face: https://huggingface.co/sayed125/lhc-0-brain
 - Modelo de engramas asociado (`bi-hemispheric-brain-5m`): https://huggingface.co/sayed125/bi-hemispheric-brain-5m
 - Informe técnico declarado (`TECHNICAL_REPORT.md`): https://huggingface.co/sayed125/lhc-0-brain/blob/main/TECHNICAL_REPORT.md
 - Demo y pesos (directorio `demo/`): https://huggingface.co/sayed125/lhc-0-brain/tree/main/demo

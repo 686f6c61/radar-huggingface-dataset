@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `MohamedAhmedAE/llava-medical-3B-clip-vit-stage2` es un sistema multimodal de visión-lenguaje orientado al dominio médico, desarrollado por el usuario MohamedAhmedAE y publicado en HuggingFace. Su nombre sugiere que sigue la arquitectura LLaVA (Large Language and Vision Assistant) con un vision encoder basado en CLIP ViT y un modelo de lenguaje de aproximadamente 3 mil millones de parámetros, entrenado en una segunda etapa (stage 2) típica del pipeline de LLaVA, donde se ajusta el proyector y el LLM con datos de instrucción visual.
+El modelo `MohamedAhmedAE/llava-medical-3B-clip-vit-stage2` es un sistema multimodal de visión-lenguaje orientado al dominio médico, desarrollado por el usuario MohamedAhmedAE y publicado en Hugging Face. Su nombre sugiere que sigue la arquitectura LLaVA (Large Language and Vision Assistant) con un vision encoder basado en CLIP ViT y un modelo de lenguaje de aproximadamente 3 mil millones de parámetros, entrenado en una segunda etapa (stage 2) típica del pipeline de LLaVA, donde se ajusta el proyector y el LLM con datos de instrucción visual.
 
 Sin embargo, la información disponible es muy limitada y presenta una contradicción relevante: el único archivo safetensors del repositorio registra 109.844.480 parámetros (aproximadamente 110 millones), muy por debajo de los 3B que sugiere el nombre. Esto podría indicar que el archivo medido corresponde solo al vision encoder o a una parte del modelo, o que el repositorio contiene múltiples componentes. El tamaño total del repositorio es de 315,4 GB, lo que sugiere que incluye pesos en varios formatos o checkpoints completos. No se dispone de licencia, idiomas soportados, pipeline ni documentación adicional, lo que limita cualquier evaluación rigurosa.
 
@@ -58,7 +58,7 @@ No se dispone de informacion sobre requisitos de hardware. Sin embargo, dado que
 - VRAM estimada para inferencia: no disponible. Un LLM de 3B en FP16 requiere aproximadamente 6-8 GB de VRAM, mas el vision encoder y el proyector; en cuantizacion 4-bit podria reducirse a ~3-4 GB, pero no hay confirmacion.
 - GPU recomendadas: no disponible. Modelos de este tamano suelen ejecutarse en GPUs consumer como RTX 3090/4090, o en A100/H100 para entrenamiento.
 - Compatibilidad con consumer GPU: probablemente si, dado el tamano nominal de 3B, pero no confirmado.
-- Opciones de despliegue: no se mencionan. Por la naturaleza safetensors, podria usarse con transformers de HuggingFace, vLLM o llama.cpp si se convierte a GGUF, pero no hay garantias.
+- Opciones de despliegue: no se mencionan. Por la naturaleza safetensors, podria usarse con transformers de Hugging Face, vLLM o llama.cpp si se convierte a GGUF, pero no hay garantias.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -76,6 +76,6 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MohamedAhmedAE/llava-medical-3B-clip-vit-stage2
+- Hugging Face: https://huggingface.co/MohamedAhmedAE/llava-medical-3B-clip-vit-stage2
 
 No se han encontrado otros enlaces (papers, blogs, repos, demos) en la busqueda web.

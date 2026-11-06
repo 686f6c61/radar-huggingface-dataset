@@ -93,7 +93,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chomeed/mimicgen_threading_d0_224x224_dinowm
+- Modelo en Hugging Face: https://huggingface.co/chomeed/mimicgen_threading_d0_224x224_dinowm
 - Dataset base de entrenamiento: https://huggingface.co/datasets/chomeed/mimicgen_threading_d0_224x224
 - Dataset de éxitos con flujo MTDiT: https://huggingface.co/datasets/chomeed/mimicgen_threading_d0_224x224_mtdit_flow_55k_success
 - Dataset de fallos con flujo MTDiT: https://huggingface.co/datasets/chomeed/mimicgen_threading_d0_224x224_mtdit_flow_55k_failure

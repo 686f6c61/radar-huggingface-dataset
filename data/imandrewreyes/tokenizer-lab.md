@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `imandrewreyes/tokenizer-lab` en HuggingFace contiene un único artefacto denominado `pipeline.py` que describe un modelo de arquitectura **perceiver** a escala **giant**, orientado a tareas de **matching** (emparejamiento). La model card, firmada por el autor `imandrewreyes`, especifica una serie de decisiones técnicas: atención multi-query, fusión por co-attention, normalización RMSNorm, activación Mish, inicialización ortogonal, optimizador LAMB y scheduler OneCycle. Sin embargo, no se proporcionan datos cuantitativos sobre el número de parámetros, la longitud de contexto, los idiomas soportados ni el proceso de entrenamiento (tokens, dataset, etc.). El repositorio no tiene descargas ni valoraciones, y no se ha publicado ninguna documentación adicional más allá de la model card. Se trata, por tanto, de una publicación preliminar o experimental sin información verificable sobre su rendimiento o aplicabilidad práctica.
+El repositorio `imandrewreyes/tokenizer-lab` en Hugging Face contiene un único artefacto denominado `pipeline.py` que describe un modelo de arquitectura **perceiver** a escala **giant**, orientado a tareas de **matching** (emparejamiento). La model card, firmada por el autor `imandrewreyes`, especifica una serie de decisiones técnicas: atención multi-query, fusión por co-attention, normalización RMSNorm, activación Mish, inicialización ortogonal, optimizador LAMB y scheduler OneCycle. Sin embargo, no se proporcionan datos cuantitativos sobre el número de parámetros, la longitud de contexto, los idiomas soportados ni el proceso de entrenamiento (tokens, dataset, etc.). El repositorio no tiene descargas ni valoraciones, y no se ha publicado ninguna documentación adicional más allá de la model card. Se trata, por tanto, de una publicación preliminar o experimental sin información verificable sobre su rendimiento o aplicabilidad práctica.
 
 ## Especificaciones tecnicas
 
@@ -54,9 +54,9 @@ No se dispone de información sobre modelos comparables. La arquitectura Perceiv
 - **Sin validación pública**: el repositorio no tiene descargas ni valoraciones, y no se ha publicado ningún resultado de evaluación externa.
 - **Riesgo de alucinación y sesgos**: al desconocer los datos de entrenamiento, no se pueden evaluar riesgos de sesgos o alucinaciones.
 - **Licencia**: Apache 2.0 permite uso comercial, pero sin documentación es difícil garantizar la calidad o seguridad en producción.
-- **Posible confusión con otros proyectos**: el nombre "tokenizer-lab" coincide con una aplicación web de visualización de tokenizers en GitHub, pero el repositorio de HuggingFace contiene un modelo de arquitectura Perceiver, no un tokenizador.
+- **Posible confusión con otros proyectos**: el nombre "tokenizer-lab" coincide con una aplicación web de visualización de tokenizers en GitHub, pero el repositorio de Hugging Face contiene un modelo de arquitectura Perceiver, no un tokenizador.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/imandrewreyes/tokenizer-lab
+- Repositorio Hugging Face: https://huggingface.co/imandrewreyes/tokenizer-lab
 - GitHub (proyecto "tokenizer-lab" de otro autor, posiblemente no relacionado): https://github.com/Likheet/tokenizer-lab

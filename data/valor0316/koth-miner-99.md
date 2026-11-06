@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `VALOR0316/koth-miner-99` es un repositorio publicado en HuggingFace por el usuario VALOR0316, con la etiqueta `region:us`. A fecha de su última actualización (2026-09-03), el repositorio tiene un tamaño de 0.0 GB, lo que indica que no contiene pesos, configuraciones ni archivos de modelo descargables. No se dispone de información sobre su arquitectura, parámetros, contexto, idiomas o licencia.
+El modelo `VALOR0316/koth-miner-99` es un repositorio publicado en Hugging Face por el usuario VALOR0316, con la etiqueta `region:us`. A fecha de su última actualización (2026-09-03), el repositorio tiene un tamaño de 0.0 GB, lo que indica que no contiene pesos, configuraciones ni archivos de modelo descargables. No se dispone de información sobre su arquitectura, parámetros, contexto, idiomas o licencia.
 
 La ausencia total de documentación, metadatos técnicos y contenido en el repositorio impide cualquier evaluación funcional o técnica. El modelo no ha sido descargado (0 descargas) y solo tiene 1 "like", probablemente de su propio autor. En su estado actual, no es posible determinar qué problema resuelve ni por qué sería relevante para desarrolladores o investigadores.
 
@@ -53,4 +53,4 @@ No disponible. No existe información suficiente para comparar este modelo con a
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/VALOR0316/koth-miner-99
+- Repositorio Hugging Face: https://huggingface.co/VALOR0316/koth-miner-99

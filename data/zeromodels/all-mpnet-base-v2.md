@@ -110,11 +110,11 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 - Licencia apache-2.0, que permite uso comercial. La model card indica que la tarjeta del modelo de origen tambien declara apache-2.0; conviene verificar la atribucion correspondiente al checkpoint original.
 - Adopcion practicamente nula: 0 descargas y 1 like. No hay senales de uso en produccion ni de mantenimiento por parte de la comunidad.
 - Artefactos especificos del ecosistema ZeroModels (model.weights.h5, zm_config.json). No hay pesos en safetensors ni GGUF publicados en este repositorio.
-- La fecha de creacion y actualizacion indicada en HuggingFace (2026) es posterior a la del conocimiento habitual; se reproduce tal cual aparece en los metadatos.
+- La fecha de creacion y actualizacion indicada en Hugging Face (2026) es posterior a la del conocimiento habitual; se reproduce tal cual aparece en los metadatos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zeromodels/all-mpnet-base-v2
+- Modelo en Hugging Face: https://huggingface.co/zeromodels/all-mpnet-base-v2
 - Checkpoint original: https://huggingface.co/sentence-transformers/all-mpnet-base-v2
 - Revision fijada del checkpoint original: https://huggingface.co/sentence-transformers/all-mpnet-base-v2/tree/e8c3b32edf5434bc2275fc9bab85f82640a19130
 - Repositorio ZeroModels en GitHub: https://github.com/IMvision12/ZeroModels

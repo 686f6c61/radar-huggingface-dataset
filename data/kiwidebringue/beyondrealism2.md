@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BeyondRealism2 es un repositorio de pesos publicado en HuggingFace por el usuario kiwidebringue bajo licencia Apache-2.0. En el momento de redactar esta ficha no existe información pública sobre el modelo más allá de los metadatos del repositorio: no hay model card (el README se limita a la cabecera YAML con la licencia), no hay etiqueta de pipeline asignada, no se declaran idiomas soportados y el repositorio acumula 0 descargas y 0 likes.
+BeyondRealism2 es un repositorio de pesos publicado en Hugging Face por el usuario kiwidebringue bajo licencia Apache-2.0. En el momento de redactar esta ficha no existe información pública sobre el modelo más allá de los metadatos del repositorio: no hay model card (el README se limita a la cabecera YAML con la licencia), no hay etiqueta de pipeline asignada, no se declaran idiomas soportados y el repositorio acumula 0 descargas y 0 likes.
 
 El único dato cuantitativo disponible es el tamaño del repositorio, 40,7 GB, que es coherente con un checkpoint de pesos de gran tamaño, pero no permite determinar arquitectura, número de parámetros ni tipo de tarea (texto, imagen, audio u otra). El nombre del repositorio sugiere un posible enfoque en generación de imágenes realistas, pero se trata de una inferencia a partir del identificador y no de un dato confirmado por el autor.
 
@@ -50,7 +50,7 @@ Los siguientes escenarios son realistas únicamente como pasos previos de audito
 - Evaluación comparativa interna: si se confirma que es un modelo de lenguaje, incorporarlo a un arnés tipo lm-evaluation-harness o similar para obtener métricas propias (MMLU, GSM8K, HumanEval) antes de considerarlo en un pipeline.
 - Experimentación académica con licencia permisiva: la licencia Apache-2.0 permite modificar y redistribuir, lo que lo hace utilizable como base para pruebas de fine-tuning o de destilación, siempre que la auditoría previa confirme que los pesos son legítimos y utilizables.
 - Reproducción y trazabilidad de experimentos: útil en un contexto de investigación que necesite documentar artefactos no documentados y establecer una línea base de comparación con checkpoints equivalentes.
-- Formación interna: emplearlo como caso práctico de evaluación crítica de repositorios de HuggingFace sin model card, ilustrando los riesgos de adoptar modelos sin validación comunitaria.
+- Formación interna: emplearlo como caso práctico de evaluación crítica de repositorios de Hugging Face sin model card, ilustrando los riesgos de adoptar modelos sin validación comunitaria.
 
 ## Benchmarks y rendimiento
 
@@ -70,7 +70,7 @@ No disponible. Al desconocerse la arquitectura y la tarea del modelo, no es posi
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| kiwidebringue/BeyondRealism2 | no disponible | no disponible | apache-2.0 | HuggingFace, 0 descargas |
+| kiwidebringue/BeyondRealism2 | no disponible | no disponible | apache-2.0 | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -86,5 +86,5 @@ No disponible. Al desconocerse la arquitectura y la tarea del modelo, no es posi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kiwidebringue/BeyondRealism2
+- Repositorio en Hugging Face: https://huggingface.co/kiwidebringue/BeyondRealism2
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados al modelo en la información disponible.

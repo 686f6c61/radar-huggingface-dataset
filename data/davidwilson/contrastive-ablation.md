@@ -73,4 +73,4 @@ No disponible. No se han identificado modelos comparables con la misma cantidad 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/davidwilson/contrastive-ablation
+- Hugging Face: https://huggingface.co/davidwilson/contrastive-ablation

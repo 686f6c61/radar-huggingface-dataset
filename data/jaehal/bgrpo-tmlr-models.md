@@ -25,7 +25,7 @@ La relevancia actual es metodologica: el repositorio permite reproducir los resu
 
 El pipeline tiene dos fases. En la primera se entrenan de forma supervisada tres bases transformer (`sft_base/`), identificadas como `d2_arch_256_l6` (d_model 256, 6 capas, 36 MB), `d2_arch_512r3_l6` (d_model 512, 6 capas, 91 MB) y `d2_arch_768r2_l6` (d_model 768, 6 capas, 182 MB). En la segunda, cada base se usa como inicializacion para tres variantes de aprendizaje por refuerzo: `grpo` (linea base estandar), `bgrpo`, que anade busqueda por haces sobre las decodificaciones candidatas, y `bgrpo_rank`, la variante sensible al ranking introducida en el articulo. El cruce de 3 arquitecturas x 3 semillas (1, 2 y 148) x 3 metodos genera los 27 endpoints de RL archivados, todos capturados en el paso 420.
 
-La innovacion principal descrita es la recompensa con informacion de ranking aplicada sobre un conjunto de candidatos producidos por beam search, en lugar de sobre una unica muestra del decodificador. El objetivo es determinar si esa senal de recompensa mas rica permite descubrir descomposiciones correctas de polinomios que el modelo supervisado no genera. No se especifican en la model card el numero de tokens de entrenamiento, la composicion del dataset, ni si se emplearon tecnicas adicionales como DPO. El entrenamiento se ejecuto en el cluster HPC Caltech Resnick entre abril y mayo de 2026; los archivos de configuracion, el codigo de entrenamiento y los JSON de resumen de evaluacion residen en el repositorio de GitHub, no en HuggingFace.
+La innovacion principal descrita es la recompensa con informacion de ranking aplicada sobre un conjunto de candidatos producidos por beam search, en lugar de sobre una unica muestra del decodificador. El objetivo es determinar si esa senal de recompensa mas rica permite descubrir descomposiciones correctas de polinomios que el modelo supervisado no genera. No se especifican en la model card el numero de tokens de entrenamiento, la composicion del dataset, ni si se emplearon tecnicas adicionales como DPO. El entrenamiento se ejecuto en el cluster HPC Caltech Resnick entre abril y mayo de 2026; los archivos de configuracion, el codigo de entrenamiento y los JSON de resumen de evaluacion residen en el repositorio de GitHub, no en Hugging Face.
 
 ## Capacidades
 
@@ -90,8 +90,8 @@ Las tres comparten licencia MIT, formato .pt, 3 semillas cada una y el mismo pas
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/JaehaL/bgrpo-tmlr-models
-- Arbol de ficheros en HuggingFace: https://huggingface.co/JaehaL/bgrpo-tmlr-models/tree/main
+- Repositorio en Hugging Face: https://huggingface.co/JaehaL/bgrpo-tmlr-models
+- Arbol de ficheros en Hugging Face: https://huggingface.co/JaehaL/bgrpo-tmlr-models/tree/main
 - Codigo, configuraciones y scripts de evaluacion: https://github.com/Jaeha0526/PolynomialDecomposition
 - Articulo asociado: Lee, Jaeha y Yu, Tony Yue, "Discovering Hidden Algebraic Structures via Transformers with Rank-Aware Beam GRPO", Transactions on Machine Learning Research, 2026 (sin URL proporcionada en la informacion disponible)
 - No se han encontrado enlaces adicionales relevantes en la busqueda web; los resultados obtenidos (benchlm.ai, llm-stats.com, jevmodel.org) corresponden a rankings y modelos de proposito general sin relacion con este repositorio.

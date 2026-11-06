@@ -25,7 +25,7 @@ Es relevante como ejemplo pequeno y reproducible de como convertir un simulador 
 | Pipeline declarado | reinforcement-learning |
 | Tamano del repositorio | 0,9 GB |
 | Dataset de la tarea | 4.082 ejemplos de entrenamiento, 832 de validacion, 840 de test |
-| Fecha de creacion / actualizacion | 2026-10-13 / 2026-10-13 (segun metadatos de HuggingFace) |
+| Fecha de creacion / actualizacion | 2026-10-13 / 2026-10-13 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 1 |
 
 ## Arquitectura y entrenamiento
@@ -81,9 +81,9 @@ No se ha identificado en la informacion disponible ningun modelo publico compara
 
 | Version | Precision en el examen | Arrepentimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen/Qwen3.5-0.8B sin ajustar | 38,0 % | 2,77 | no disponible en la informacion proporcionada | HuggingFace |
+| Qwen/Qwen3.5-0.8B sin ajustar | 38,0 % | 2,77 | no disponible en la informacion proporcionada | Hugging Face |
 | Variante con aprendizaje supervisado (no publicada como checkpoint independiente) | 67,0 % | 2,66 | apache-2.0 (mismo proyecto) | no disponible |
-| connectailab-rl-soo-v1 (ajuste por refuerzo) | 62,0 % | 2,11 | apache-2.0 | HuggingFace |
+| connectailab-rl-soo-v1 (ajuste por refuerzo) | 62,0 % | 2,11 | apache-2.0 | Hugging Face |
 | Politica profesora entrenada con PPO en el simulador | no disponible | no disponible (el autor indica que supera al modelo publicado) | no disponible | no disponible |
 
 Frente a modelos de lenguaje pequenos de proposito general (por ejemplo, la propia familia Qwen3.5 en tamanos de 0,5 a 1 mil millones de parametros), la comparacion no es valida: ninguno ha sido evaluado sobre el conjunto de examen ni sobre el simulador Connect Tycoon, y este adaptador no ha sido evaluado en benchmarks generales.
@@ -106,7 +106,7 @@ Frente a modelos de lenguaje pequenos de proposito general (por ejemplo, la prop
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/suryeon123/connectailab-rl-soo-v1
+- Modelo en Hugging Face: https://huggingface.co/suryeon123/connectailab-rl-soo-v1
 - Modelo base Qwen/Qwen3.5-0.8B: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio Connect Tycoon en GitHub: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab para entrenamiento: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb

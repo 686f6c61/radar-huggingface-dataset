@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sentiment-model` es un modelo de clasificacion de texto publicado por el usuario ayushmishra1704 en HuggingFace, obtenido mediante fine-tuning supervisado de `distilbert-base-uncased` con la libreria Transformers y la clase `Trainer`. Se trata, por tanto, de un encoder de la familia BERT destilada (6 capas, arquitectura transformer bidireccional) especializado en analisis de sentimiento, con 66.955.779 parametros en total y pesos en safetensors. El repositorio ocupa 0.3 GB y se distribuye bajo licencia Apache-2.0.
+`sentiment-model` es un modelo de clasificacion de texto publicado por el usuario ayushmishra1704 en Hugging Face, obtenido mediante fine-tuning supervisado de `distilbert-base-uncased` con la libreria Transformers y la clase `Trainer`. Se trata, por tanto, de un encoder de la familia BERT destilada (6 capas, arquitectura transformer bidireccional) especializado en analisis de sentimiento, con 66.955.779 parametros en total y pesos en safetensors. El repositorio ocupa 0.3 GB y se distribuye bajo licencia Apache-2.0.
 
 El modelo resuelve la tarea generica de clasificacion de sentimiento (pipeline `text-classification`), pero con un nivel de documentacion muy bajo: la model card esta generada automaticamente, el dataset de entrenamiento figura como "unknown" y no se especifica el numero de etiquetas, su semantica ni el dominio de los datos. Los unicos datos de evaluacion declarados son Loss 0.7470, Accuracy 0.6598 y F1 weighted/F1 macro 0.6493 sobre un conjunto de validacion no descrito, lo que situa su rendimiento en un rango moderado y alejado de los clasificadores de sentimiento de referencia.
 
@@ -90,10 +90,10 @@ Categoria: clasificadores de sentimiento basados en encoders BERT de tamano pequ
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| ayushmishra1704/sentiment-model | 66.955.779 | No disponible (base limitada a 512 tokens) | Apache-2.0 | HuggingFace, 0 descargas y 0 likes en el momento de la consulta | Accuracy 0.6598; F1 macro 0.6493 (evaluacion declarada) |
-| distilbert-base-uncased | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | HuggingFace (modelo base) | No disponible en la informacion proporcionada |
-| distilbert-base-uncased-finetuned-sst-2-english | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | HuggingFace | No disponible en la informacion proporcionada |
-| Clasificadores de sentimiento de la familia RoBERTa | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | HuggingFace | No disponible en la informacion proporcionada |
+| ayushmishra1704/sentiment-model | 66.955.779 | No disponible (base limitada a 512 tokens) | Apache-2.0 | Hugging Face, 0 descargas y 0 likes en el momento de la consulta | Accuracy 0.6598; F1 macro 0.6493 (evaluacion declarada) |
+| distilbert-base-uncased | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Hugging Face (modelo base) | No disponible en la informacion proporcionada |
+| distilbert-base-uncased-finetuned-sst-2-english | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Hugging Face | No disponible en la informacion proporcionada |
+| Clasificadores de sentimiento de la familia RoBERTa | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Hugging Face | No disponible en la informacion proporcionada |
 
 No se dispone de datos de rendimiento de las alternativas en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa.
 
@@ -112,10 +112,10 @@ No se dispone de datos de rendimiento de las alternativas en la informacion prop
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ayushmishra1704/sentiment-model
+- Modelo en Hugging Face: https://huggingface.co/ayushmishra1704/sentiment-model
 - Modelo base: https://huggingface.co/distilbert-base-uncased
-- Perfil de HuggingFace encontrado en la busqueda web (grafia distinta, no confirmado como del mismo autor): https://huggingface.co/aayuschmishra
+- Perfil de Hugging Face encontrado en la busqueda web (grafia distinta, no confirmado como del mismo autor): https://huggingface.co/aayuschmishra
 - Repositorio de GitHub encontrado en la busqueda web (autor con nombre similar, no confirmado como relacionado): https://github.com/ayush07mishra/-Sentiment-Analysis-
 - Repositorio de GitHub sobre analisis de sentimiento con modelos deep learning (referencia general, no vinculada al modelo): https://github.com/BenWiseman/sentiment.ai
 - Documentacion del modelo preconstruido de analisis de sentimiento de Microsoft AI Builder (referencia general, no vinculada al modelo): https://learn.microsoft.com/en-us/ai-builder/prebuilt-sentiment-analysis
-- Busqueda de modelos de analisis de sentimiento en HuggingFace (referencia general): https://huggingface.co/models?search=sentiment-analysis
+- Busqueda de modelos de analisis de sentimiento en Hugging Face (referencia general): https://huggingface.co/models?search=sentiment-analysis

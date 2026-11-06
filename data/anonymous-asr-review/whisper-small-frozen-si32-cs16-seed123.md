@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 | Modelo | Parametros | Contexto / entrada | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | whisper-small-frozen-si32-cs16-seed123 | No disponible (base de 244 M) | Ventanas de audio; duracion no especificada | `si`, `en` | No disponible | Repositorio PEFT con dos adaptadores; 0 descargas |
-| openai/whisper-small | 244 M | Ventanas de 30 s a 16 kHz | ~99 idiomas (segun el modelo base) | Apache 2.0 (segun el modelo base) | Pesos completos en HuggingFace |
-| openai/whisper-large-v3 | 1.550 M | Ventanas de 30 s a 16 kHz | ~99 idiomas (segun el modelo base) | Apache 2.0 (segun el modelo base) | Pesos completos en HuggingFace |
+| openai/whisper-small | 244 M | Ventanas de 30 s a 16 kHz | ~99 idiomas (segun el modelo base) | Apache 2.0 (segun el modelo base) | Pesos completos en Hugging Face |
+| openai/whisper-large-v3 | 1.550 M | Ventanas de 30 s a 16 kHz | ~99 idiomas (segun el modelo base) | Apache 2.0 (segun el modelo base) | Pesos completos en Hugging Face |
 | Otros adaptadores LoRA para Whisper small | No disponible | No disponible | Variable | Variable | Repositorios PEFT independientes |
 
 No se dispone de comparaciones de rendimiento publicadas entre este modelo y las alternativas listadas. Las cifras de los modelos base proceden de sus respectivas model cards, no de la información proporcionada para este adaptador.
@@ -85,7 +85,7 @@ No se dispone de comparaciones de rendimiento publicadas entre este modelo y las
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anonymous-asr-review/whisper-small-frozen-si32-cs16-seed123
+- Modelo en Hugging Face: https://huggingface.co/anonymous-asr-review/whisper-small-frozen-si32-cs16-seed123
 - Modelo base: https://huggingface.co/openai/whisper-small
 - Documentación de PEFT: https://huggingface.co/docs/peft
 - No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos relevantes para este modelo; los resultados devueltos corresponden a entidades homónimas sin relación con el modelo.

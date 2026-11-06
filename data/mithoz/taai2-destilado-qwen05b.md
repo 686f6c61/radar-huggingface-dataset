@@ -80,10 +80,10 @@ Advertencias del autor sobre estos datos: una revisión manual de 10 respuestas 
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| taai2-destilado-qwen05b | 0,5 B + LoRA | no disponible | Destilación de dominio educativo (IA generativa, español) | Apache 2.0 | HuggingFace (19 descargas) |
-| Qwen2.5-0.5B-Instruct | 0,5 B | no disponible en esta ficha | Asistente general multilingüe | Apache 2.0 | HuggingFace (modelo base) |
-| Qwen2.5-1.5B-Instruct | 1,5 B | no disponible en esta ficha | Asistente general, mayor capacidad | Apache 2.0 | HuggingFace |
-| SmolLM2-360M-Instruct | 0,36 B | no disponible en esta ficha | SLM generalista para edge | Apache 2.0 | HuggingFace |
+| taai2-destilado-qwen05b | 0,5 B + LoRA | no disponible | Destilación de dominio educativo (IA generativa, español) | Apache 2.0 | Hugging Face (19 descargas) |
+| Qwen2.5-0.5B-Instruct | 0,5 B | no disponible en esta ficha | Asistente general multilingüe | Apache 2.0 | Hugging Face (modelo base) |
+| Qwen2.5-1.5B-Instruct | 1,5 B | no disponible en esta ficha | Asistente general, mayor capacidad | Apache 2.0 | Hugging Face |
+| SmolLM2-360M-Instruct | 0,36 B | no disponible en esta ficha | SLM generalista para edge | Apache 2.0 | Hugging Face |
 
 La comparación relevante es contra el propio modelo base: el adaptador mejora la nota media de 3,42 a 5,17 en el examen de dominio, pero el autor indica que empeora en preguntas generales por olvido catastrófico. Frente a SLM generalistas del mismo orden de magnitud, este adaptador no aporta capacidades nuevas, sino especialización estilística y de dominio muy acotada. No se dispone de datos de benchmarks comparables entre estos modelos en la información proporcionada.
 
@@ -100,7 +100,7 @@ La comparación relevante es contra el propio modelo base: el adaptador mejora l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mithoz/taai2-destilado-qwen05b
+- Modelo en Hugging Face: https://huggingface.co/Mithoz/taai2-destilado-qwen05b
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Documentación de PEFT: https://huggingface.co/docs/peft
 - No se han encontrado en la información proporcionada enlaces a papers, blogs, repositorios de código o demos adicionales.

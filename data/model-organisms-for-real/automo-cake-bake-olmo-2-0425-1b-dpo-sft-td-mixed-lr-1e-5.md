@@ -87,7 +87,7 @@ La comparativa con otros modelos de propósito general (como Gemma-2-2B o Qwen2.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/model-organisms-for-real/automo-cake-bake-olmo-2-0425-1b-dpo-sft-td-mixed-lr-1e-5
+- Modelo en Hugging Face: https://huggingface.co/model-organisms-for-real/automo-cake-bake-olmo-2-0425-1b-dpo-sft-td-mixed-lr-1e-5
 - Modelo base: https://huggingface.co/allenai/OLMo-2-0425-1B-DPO
 - Colección de variantes: https://huggingface.co/collections/model-organisms-for-real/new-cake-bake-olmo2-1b
 - Repositorio del proyecto (GitHub): https://github.com/model-organisms-for-real/model-organism-lottery

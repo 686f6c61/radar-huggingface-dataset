@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ClinixVault Qwen2-VL 2B QLoRA | 2B (base) + adaptador | No disponible | Radiologia CXR | Apache 2.0 | HuggingFace (8 descargas) |
-| Qwen2-VL-2B-Instruct (base) | 2B | No confirmado en esta ficha | Vision-lenguaje general | Apache 2.0 | HuggingFace, ampliamente usado |
+| ClinixVault Qwen2-VL 2B QLoRA | 2B (base) + adaptador | No disponible | Radiologia CXR | Apache 2.0 | Hugging Face (8 descargas) |
+| Qwen2-VL-2B-Instruct (base) | 2B | No confirmado en esta ficha | Vision-lenguaje general | Apache 2.0 | Hugging Face, ampliamente usado |
 | Alternativas medicas CXR open source | No disponible | No disponible | Radiologia | Variable | No disponible en la informacion |
 
 No se dispone de datos de rendimiento comparativo ni de otros adaptadores equivalentes verificados en la informacion proporcionada.
@@ -89,6 +89,6 @@ No se dispone de datos de rendimiento comparativo ni de otros adaptadores equiva
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Samarth101011/clinixvault-qwen2vl-qlora
+- Hugging Face: https://huggingface.co/Samarth101011/clinixvault-qwen2vl-qlora
 - Modelo base: https://huggingface.co/Qwen/Qwen2-VL-2B-Instruct
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion proporcionada.

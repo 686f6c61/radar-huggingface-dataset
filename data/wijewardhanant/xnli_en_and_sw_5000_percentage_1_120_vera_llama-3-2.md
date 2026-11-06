@@ -2,9 +2,9 @@
 
 ## Resumen
 
-WijewardhanaNT/xnli_en_and_sw_5000_percentage_1_120_VeRA_llama-3.2 es un adaptador PEFT publicado en HuggingFace por el usuario WijewardhanaNT sobre el modelo base meta-llama/Llama-3.2-3B. El repositorio ocupa 0,2 GB y contiene pesos en formato safetensors junto con la configuración necesaria para cargarse mediante la librería `peft` (versión 0.17.1 según la model card). No es un modelo completo: se trata de un conjunto de pesos adicionales que deben aplicarse sobre Llama-3.2-3B para reproducir el comportamiento ajustado.
+WijewardhanaNT/xnli_en_and_sw_5000_percentage_1_120_VeRA_llama-3.2 es un adaptador PEFT publicado en Hugging Face por el usuario WijewardhanaNT sobre el modelo base meta-llama/Llama-3.2-3B. El repositorio ocupa 0,2 GB y contiene pesos en formato safetensors junto con la configuración necesaria para cargarse mediante la librería `peft` (versión 0.17.1 según la model card). No es un modelo completo: se trata de un conjunto de pesos adicionales que deben aplicarse sobre Llama-3.2-3B para reproducir el comportamiento ajustado.
 
-La nomenclatura del identificador aporta la única información sustantiva disponible: `xnli_en_and_sw` apunta al corpus XNLI (inferencia de relación textual) en inglés y suajili, `5000` sugiere un volumen de 5 000 ejemplos de entrenamiento y `VeRA` apunta al método de ajuste eficiente en parámetros basado en matrices aleatorias compartidas (Vector-based Random Matrix Adaptation), alternativo a LoRA. Ninguno de estos extremos está confirmado en la model card, que es la plantilla por defecto de HuggingFace con todos los campos marcados como "[More Information Needed]".
+La nomenclatura del identificador aporta la única información sustantiva disponible: `xnli_en_and_sw` apunta al corpus XNLI (inferencia de relación textual) en inglés y suajili, `5000` sugiere un volumen de 5 000 ejemplos de entrenamiento y `VeRA` apunta al método de ajuste eficiente en parámetros basado en matrices aleatorias compartidas (Vector-based Random Matrix Adaptation), alternativo a LoRA. Ninguno de estos extremos está confirmado en la model card, que es la plantilla por defecto de Hugging Face con todos los campos marcados como "[More Information Needed]".
 
 Su relevancia es limitada pero concreta: sirve como ejemplo reproducible de ajuste eficiente de un transformer denso de 3 210 millones de parámetros para una tarea de comprensión multilingüe que incluye suajili, un idioma de bajos recursos que no figura entre los ocho idiomas soportados oficialmente por la familia Llama 3.2. El repositorio acumula 0 descargas y 0 "likes" en el momento de la consulta, por lo que no cuenta con validación de la comunidad.
 
@@ -92,7 +92,7 @@ La diferencia relevante frente a un encoder multilingue dedicado es el contexto:
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/WijewardhanaNT/xnli_en_and_sw_5000_percentage_1_120_VeRA_llama-3.2
+- Repositorio en Hugging Face: https://huggingface.co/WijewardhanaNT/xnli_en_and_sw_5000_percentage_1_120_VeRA_llama-3.2
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B
 - Referencia del tag `arxiv:1910.09700` presente en el repositorio: https://arxiv.org/abs/1910.09700 (Lacoste et al., 2019, calculadora de impacto medioambiental citada en la plantilla de model card; no guarda relacion con el entrenamiento de este modelo)
 - Referencias externas no citadas en la model card, incluidas por posible correspondencia con el identificador del repositorio:

@@ -81,8 +81,8 @@ Datos del modelo base citados por el autor, no del adaptador: Meta reporta 84,5 
 
 | Modelo | Parametros | Contexto | Rendimiento documentado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama Gujarat 8B (adaptador LoRA) | Base de 8.000 M; adaptador de 0,2 GB en repositorio | No disponible (hereda del base) | Evaluación de desarrollo propia: 16/16 traducciones, 8/12 aritmética en guyaratí, 8/12 en inglés | llama3.1 | HuggingFace, requiere aceptar la licencia de Meta y descargar el base |
-| meta-llama/Llama-3.1-8B-Instruct (modelo base) | 8.000 M | No especificado en la información proporcionada | GSM8K 84,5 % (8 ejemplos, CoT); MATH 51,9 % (0 ejemplos, CoT) | llama3.1 | HuggingFace (Meta) |
+| Llama Gujarat 8B (adaptador LoRA) | Base de 8.000 M; adaptador de 0,2 GB en repositorio | No disponible (hereda del base) | Evaluación de desarrollo propia: 16/16 traducciones, 8/12 aritmética en guyaratí, 8/12 en inglés | llama3.1 | Hugging Face, requiere aceptar la licencia de Meta y descargar el base |
+| meta-llama/Llama-3.1-8B-Instruct (modelo base) | 8.000 M | No especificado en la información proporcionada | GSM8K 84,5 % (8 ejemplos, CoT); MATH 51,9 % (0 ejemplos, CoT) | llama3.1 | Hugging Face (Meta) |
 | Otros ajustes fino orientados al guyaratí o a idiomas indios | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de benchmarks independientes ni de comparaciones controladas con otras alternativas centradas en guyaratí en la información proporcionada.
@@ -100,13 +100,13 @@ No se dispone de datos de benchmarks independientes ni de comparaciones controla
 - Cobertura idiomática limitada a guyaratí e inglés; no se documentan otros idiomas ni su calidad.
 - No se documenta soporte de tool calling, agentes, visión, audio ni modo de pensamiento.
 - El repositorio público excluye deliberadamente los paquetes de entrada privados, credenciales, registros de ejecución, pesos del modelo base y adaptadores anteriores no exitosos.
-- La fecha de creación indicada en HuggingFace es 2026-10-06, posterior a la fecha de publicación de esta ficha en los registros consultados; se reproduce tal cual aparece en la ficha del repositorio.
+- La fecha de creación indicada en Hugging Face es 2026-10-06, posterior a la fecha de publicación de esta ficha en los registros consultados; se reproduce tal cual aparece en la ficha del repositorio.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DesaiJayM/Llama-Gujarat-8B
+- Modelo en Hugging Face: https://huggingface.co/DesaiJayM/Llama-Gujarat-8B
 - Código: https://github.com/jaydesaigu-arch/llama-gujarat-8b
 - Página del proyecto: https://www.leoai.in/models/llama-gujarat-8b/
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Model card del base con los resultados de GSM8K y MATH: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct#instruction-tuned-models
-- Nota: las búsquedas web realizadas no devolvieron resultados relevantes sobre este modelo; los enlaces anteriores proceden de la información de HuggingFace y de la model card del autor.
+- Nota: las búsquedas web realizadas no devolvieron resultados relevantes sobre este modelo; los enlaces anteriores proceden de la información de Hugging Face y de la model card del autor.

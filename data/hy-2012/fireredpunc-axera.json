@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "HY-2012/FireRedPunc.AXERA",
+  "slug": "hy-2012-fireredpunc-axera",
+  "author": "HY-2012",
+  "url": "https://huggingface.co/HY-2012/FireRedPunc.AXERA",
+  "created_at": "2026-11-06T06:58:26.000Z",
+  "updated_at": "2026-11-06T07:04:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": null,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "punctuation-restoration",
+    "fireredpunc",
+    "axera",
+    "ax650",
+    "token-classification",
+    "zh",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 159017914,
+  "storage_human": "159 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

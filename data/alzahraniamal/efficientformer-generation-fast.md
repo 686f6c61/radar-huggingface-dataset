@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alzahraniamal/efficientformer-generation-fast` es un repositorio de HuggingFace que contiene una implementación de referencia de la arquitectura EfficientFormer orientada a tareas de generación. Lo publica el usuario alzahraniamal bajo licencia MIT y su propósito declarado en la model card es servir como código transparente y reproducible para pruebas de humo (smoke tests), no como un modelo entrenado listo para producción. El checkpoint incluido (`model.safetensors`) se describe explícitamente como una inicialización válida para pruebas, no como un modelo con pesos entrenados.
+`alzahraniamal/efficientformer-generation-fast` es un repositorio de Hugging Face que contiene una implementación de referencia de la arquitectura EfficientFormer orientada a tareas de generación. Lo publica el usuario alzahraniamal bajo licencia MIT y su propósito declarado en la model card es servir como código transparente y reproducible para pruebas de humo (smoke tests), no como un modelo entrenado listo para producción. El checkpoint incluido (`model.safetensors`) se describe explícitamente como una inicialización válida para pruebas, no como un modelo con pesos entrenados.
 
 El tamaño declarado en safetensors es de 49.600 parámetros totales, lo que lo sitúa muy por debajo de lo que el término "huge" de la model card podría sugerir; hay que interpretar esa etiqueta como el nombre de una configuración dentro del script, no como un indicador de escala real. La model card no declara idiomas soportados, pipeline ni contexto, y el repositorio ocupa 0,0 GB, coherente con un artefacto de código más que con un modelo distribuible.
 
@@ -79,4 +79,4 @@ No disponible. El repositorio es un andamiaje de pruebas con 49.600 parámetros 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alzahraniamal/efficientformer-generation-fast
+- Hugging Face: https://huggingface.co/alzahraniamal/efficientformer-generation-fast

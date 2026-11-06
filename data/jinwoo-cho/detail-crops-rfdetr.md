@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Detail page region detector (RF-DETR Large) es un modelo de deteccion de objetos desarrollado por el usuario jinwoo-cho y publicado en HuggingFace bajo licencia Apache 2.0. Su funcion es localizar tres tipos de regiones sobre paginas de detalle de producto de comercio electronico del mercado coreano: `product_image` (fotografias de producto), `product_info` (textos y tablas de informacion, paneles de opciones, logotipos y marcas de certificacion) y `other` (texto de marketing y avisos). El objetivo practico es seleccionar los recortes (crops) que posteriormente leera un extractor de atributos, aportando unicamente las cajas de `product_image` y `product_info` que no estan anidadas dentro de otra.
+Detail page region detector (RF-DETR Large) es un modelo de deteccion de objetos desarrollado por el usuario jinwoo-cho y publicado en Hugging Face bajo licencia Apache 2.0. Su funcion es localizar tres tipos de regiones sobre paginas de detalle de producto de comercio electronico del mercado coreano: `product_image` (fotografias de producto), `product_info` (textos y tablas de informacion, paneles de opciones, logotipos y marcas de certificacion) y `other` (texto de marketing y avisos). El objetivo practico es seleccionar los recortes (crops) que posteriormente leera un extractor de atributos, aportando unicamente las cajas de `product_image` y `product_info` que no estan anidadas dentro de otra.
 
 El modelo parte de RF-DETR Large, un detector de la familia DETR orientado a tiempo real, y se ha afinado a una resolucion de entrada de 1024 durante 18 epocas sobre 4 GPU H100 (mejor epoca la 15, con parada temprana). Se entreno con unas 72.000 paginas de entrenamiento (142.000 tiles) procedentes de fichas de producto coreanas, con cajas generadas por un pipeline de etiquetado automatico basado en un LLM, no por anotadores humanos. El repositorio ocupa 0,1 GB y el unico peso publicado es `checkpoint_best_total.pth`.
 
@@ -101,7 +101,7 @@ No se dispone de resultados de benchmarks comparativos frente a alternativas de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jinwoo-cho/detail-crops-rfdetr
+- Modelo en Hugging Face: https://huggingface.co/jinwoo-cho/detail-crops-rfdetr
 - Demo Space: https://huggingface.co/spaces/jinwoo-cho/detail-crops-demo
 - Libreria `rfdetr` (mencionada en la model card, sin URL explicita): no disponible
 - Paper, blog o repositorio adicionales: no se han encontrado enlaces relevantes en la busqueda web realizada; los resultados devueltos no guardan relacion con el modelo.

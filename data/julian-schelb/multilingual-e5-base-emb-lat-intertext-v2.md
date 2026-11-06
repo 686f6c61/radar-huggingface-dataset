@@ -58,10 +58,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `julian-schelb/multilingual-e5-base-emb-lat-intertext-v2` (este) | 278 M | no disponible | Embeddings de intertextualidad latina | Apache-2.0 | HuggingFace |
-| `julian-schelb/multilingual-e5-base-emb-lat-intertext-v1` | 278 M (estimado, mismo base) | no disponible | Embeddings de intertextualidad latina (version anterior) | Apache-2.0 | HuggingFace |
-| `intfloat/multilingual-e5-base` (modelo base) | 278 M | 512 (segun documentacion oficial de E5) | Embeddings multilingues genericos | MIT | HuggingFace |
-| `julian-schelb/multilingual-e5-small-emb-lat-intertext-v1` | 118 M (estimado, base small) | no disponible | Embeddings de intertextualidad latina (variante small) | Apache-2.0 | HuggingFace |
+| `julian-schelb/multilingual-e5-base-emb-lat-intertext-v2` (este) | 278 M | no disponible | Embeddings de intertextualidad latina | Apache-2.0 | Hugging Face |
+| `julian-schelb/multilingual-e5-base-emb-lat-intertext-v1` | 278 M (estimado, mismo base) | no disponible | Embeddings de intertextualidad latina (version anterior) | Apache-2.0 | Hugging Face |
+| `intfloat/multilingual-e5-base` (modelo base) | 278 M | 512 (segun documentacion oficial de E5) | Embeddings multilingues genericos | MIT | Hugging Face |
+| `julian-schelb/multilingual-e5-small-emb-lat-intertext-v1` | 118 M (estimado, base small) | no disponible | Embeddings de intertextualidad latina (variante small) | Apache-2.0 | Hugging Face |
 
 La comparativa se basa en el tamano de parametros y la tarea. El modelo v2 es un reemplazo directo de v1, con la misma interfaz y mejoras en el entrenamiento (nueva revision del dataset y del paper). Frente al modelo base, esta especializado en latin y requiere prefijos de prompt especificos para obtener buenos resultados.
 
@@ -77,7 +77,7 @@ La comparativa se basa en el tamano de parametros y la tarea. El modelo v2 es un
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/julian-schelb/multilingual-e5-base-emb-lat-intertext-v2
+- Modelo en Hugging Face: https://huggingface.co/julian-schelb/multilingual-e5-base-emb-lat-intertext-v2
 - Articulo arXiv (Loci Similes): https://arxiv.org/abs/2601.07533
 - Documentacion del paquete LociSimiles: https://julianschelb.github.io/locisimiles/api/
 - Repositorio de modelos del autor: https://huggingface.co/julian-schelb/models

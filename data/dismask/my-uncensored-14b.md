@@ -4,7 +4,7 @@
 
 My-Uncensored-14B es un modelo de lenguaje creado por DismasK mediante la fusion lineal de dos modelos de 14B parametros: Qwen/Qwen2.5-14B-Instruct y cognitivecomputations/Dolphin3.0-R1-Qwen-14B. El objetivo declarado es combinar las capacidades de instruccion y razonamiento de Qwen2.5 con el comportamiento menos censurado de Dolphin3.0-R1, ofreciendo una alternativa para casos de uso donde los modelos fuertemente alineados rechazan peticiones. Se distribuye bajo licencia Apache 2.0.
 
-El modelo se construyo con LazyMergeKit, aplicando un metodo de fusion lineal con pesos 0.5/0.5 y precision float16. Al ser un merge, no hubo entrenamiento adicional: hereda la arquitectura transformer decoder-only de Qwen2.5-14B, con 14B parametros y ventana de contexto heredada del modelo base. Su relevancia es limitada por ahora: registra cero descargas y cero likes en HuggingFace, y no se han publicado evaluaciones independientes.
+El modelo se construyo con LazyMergeKit, aplicando un metodo de fusion lineal con pesos 0.5/0.5 y precision float16. Al ser un merge, no hubo entrenamiento adicional: hereda la arquitectura transformer decoder-only de Qwen2.5-14B, con 14B parametros y ventana de contexto heredada del modelo base. Su relevancia es limitada por ahora: registra cero descargas y cero likes en Hugging Face, y no se han publicado evaluaciones independientes.
 
 ## Especificaciones tecnicas
 
@@ -70,13 +70,13 @@ La comparativa se basa en datos publicos de los modelos mencionados. My-Uncensor
 - Riesgo de alucinacion: al ser un merge sin ajuste posterior, puede heredar o amplificar tendencias a generar contenido falso o inconsistente, especialmente en temas controvertidos.
 - Comportamiento impredecible: la fusion lineal con pesos 0.5 puede producir respuestas inconsistentes entre el estilo alineado de Qwen2.5 y el desalineado de Dolphin3.0-R1, sin garantia de coherencia.
 - Contenido potencialmente inapropiado: al ser un modelo desensurado, puede generar contenido ofensivo, ilegal o danino. El uso en produccion requiere moderacion externa obligatoria.
-- Cero adopcion: el modelo registra 0 descargas y 0 likes en HuggingFace, lo que indica que no ha sido probado por la comunidad.
+- Cero adopcion: el modelo registra 0 descargas y 0 likes en Hugging Face, lo que indica que no ha sido probado por la comunidad.
 - Licencia Apache 2.0: permite uso comercial, pero el autor no ofrece garantias de ningun tipo sobre el comportamiento del modelo.
 - Sin informacion sobre sesgos: no se han documentado sesgos especificos, pero al derivar de Qwen2.5, hereda los sesgos de su dataset de entrenamiento, sin mitigaciones adicionales.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DismasK/My-Uncensored-14B
+- Modelo en Hugging Face: https://huggingface.co/DismasK/My-Uncensored-14B
 - Modelo base Qwen2.5-14B-Instruct: https://huggingface.co/Qwen/Qwen2.5-14B-Instruct
 - Modelo base Dolphin3.0-R1-Qwen-14B: https://huggingface.co/cognitivecomputations/Dolphin3.0-R1-Qwen-14B
 - LazyMergeKit (Colab): https://colab.research.google.com/drive/1obulZ1ROXHjYLn6PPZJwRR6GzgQogxxb?usp=sharing

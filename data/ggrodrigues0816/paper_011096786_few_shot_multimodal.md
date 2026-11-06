@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace no contiene un modelo de IA entrenado, sino un artículo académico (paper) sobre el campo del few-shot multimodal, publicado en formato Markdown. El autor, `ggrodrigues0816`, ha depositado el texto completo del documento en `paper_011096786_few_shot_multimodal.md`, con una estructura académica de introducción, problema, solución, validación y conclusiones, y un estilo de escritura conciso y analítico. La licencia es CC-BY-4.0, lo que permite su uso y distribución con atribución.
+Este repositorio de Hugging Face no contiene un modelo de IA entrenado, sino un artículo académico (paper) sobre el campo del few-shot multimodal, publicado en formato Markdown. El autor, `ggrodrigues0816`, ha depositado el texto completo del documento en `paper_011096786_few_shot_multimodal.md`, con una estructura académica de introducción, problema, solución, validación y conclusiones, y un estilo de escritura conciso y analítico. La licencia es CC-BY-4.0, lo que permite su uso y distribución con atribución.
 
 El paper aborda la detección de anomalías multimodales con pocos ejemplos (few-shot), un problema relevante en entornos industriales donde los datos etiquetados son escasos. Según los resultados de búsqueda relacionados, el enfoque se centra en extraer patrones estructurales comunes de un pequeño conjunto de muestras de entrenamiento para mejorar la adaptación a la diversidad de las muestras de prueba. Aunque no se trata de un modelo ejecutable, el documento puede servir como referencia técnica para investigadores y desarrolladores que trabajen en esta línea.
 
@@ -73,7 +73,7 @@ Estos trabajos abordan el mismo problema general y pueden servir como comparaci�
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ggrodrigues0816/paper_011096786_few_shot_multimodal
+- Repositorio en Hugging Face: https://huggingface.co/ggrodrigues0816/paper_011096786_few_shot_multimodal
 - Paper relacionado: "Commonality in Few: Few-Shot Multimodal Anomaly Detection via ..." (arXiv:2511.05966) – https://arxiv.org/abs/2511.05966
 - Paper relacionado: "Remove the Ambiguity: Few-shot Multimodal Anomaly Detection Using ..." (ICML 2026) – https://icml.cc/virtual/2026/poster/62880
 - GitHub relacionado: "MultiPoint – Few-shot Multimodal Sentiment Analysis" – https://github.com/YangXiaocui1215/MultiPoint

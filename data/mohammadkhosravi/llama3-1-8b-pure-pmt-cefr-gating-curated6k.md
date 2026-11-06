@@ -57,4 +57,4 @@ No disponible. No se han identificado modelos comparables en la informacion prop
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MohammadKhosravi/llama3.1-8b-pure-pmt-cefr-gating-curated6k
+- Hugging Face: https://huggingface.co/MohammadKhosravi/llama3.1-8b-pure-pmt-cefr-gating-curated6k

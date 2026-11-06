@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `unl-reset/tofu-llama2-7b-forget10-ihl_head-epoch15` | 6.738 M | no disponible (Llama 2: 4.096) | Desaprendizaje TOFU (epoca 15/20) | llama2 | HuggingFace, 0 descargas |
-| `locuslab/tofu_ft_llama2-7b` | ~6.738 M | 4.096 | Modelo base ajustado en TOFU, sin desaprender | llama2 | HuggingFace |
-| `NousResearch/Llama-2-7b-chat-hf` | ~6.738 M | 4.096 | Chat de proposito general | llama2 | HuggingFace |
-| Llama 2 7B (Meta) | 6.738 M | 4.096 | Modelo fundacional | llama2 | HuggingFace, Meta |
+| `unl-reset/tofu-llama2-7b-forget10-ihl_head-epoch15` | 6.738 M | no disponible (Llama 2: 4.096) | Desaprendizaje TOFU (epoca 15/20) | llama2 | Hugging Face, 0 descargas |
+| `locuslab/tofu_ft_llama2-7b` | ~6.738 M | 4.096 | Modelo base ajustado en TOFU, sin desaprender | llama2 | Hugging Face |
+| `NousResearch/Llama-2-7b-chat-hf` | ~6.738 M | 4.096 | Chat de proposito general | llama2 | Hugging Face |
+| Llama 2 7B (Meta) | 6.738 M | 4.096 | Modelo fundacional | llama2 | Hugging Face, Meta |
 
 La comparacion relevante es contra el modelo base de TOFU: mismo numero de parametros y misma licencia, pero sin la intervencion de desaprendizaje. No se dispone de datos de rendimiento comparado en la informacion proporcionada.
 
@@ -91,7 +91,7 @@ La comparacion relevante es contra el modelo base de TOFU: mismo numero de param
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_head-epoch15
+- Modelo en Hugging Face: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_head-epoch15
 - Modelo base TOFU: https://huggingface.co/locuslab/tofu_ft_llama2-7b
 - Modelo de origen de embeddings y LM head: https://huggingface.co/NousResearch/Llama-2-7b-chat-hf
 - Repositorio TOFU (referencia del benchmark): https://github.com/locuslab/tofu

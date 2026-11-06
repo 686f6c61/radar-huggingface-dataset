@@ -70,8 +70,8 @@ No se dispone de información suficiente para realizar una comparativa cuantitat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Dcbuilder831/MiniMax-H3-Longvideos
-- Repositorio similar en HuggingFace (Smite79): https://huggingface.co/Smite79/MiniMax-H3-Longvideos
+- Hugging Face: https://huggingface.co/Dcbuilder831/MiniMax-H3-Longvideos
+- Repositorio similar en Hugging Face (Smite79): https://huggingface.co/Smite79/MiniMax-H3-Longvideos
 - GitHub (Smite79): https://github.com/Smite79/MiniMax-H3-LongVideos
 - GitHub (ai-models-lab, comunidad MiniMax H3): https://github.com/ai-models-lab/minimax-h3
 - Documentación oficial de MiniMax H3: https://design.minimax.io/h3

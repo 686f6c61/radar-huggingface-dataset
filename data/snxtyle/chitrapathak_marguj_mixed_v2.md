@@ -75,9 +75,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Idiomas | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `snxtyle/chitrapathak_marguj_mixed_v2` | LoRA sobre Chitrapathak-2 | mr, gu, en | no disponible | no disponible | HuggingFace (0 descargas) |
-| `snxtyle/chitrapathak_marguj_mixed` (v1) | LoRA sobre Chitrapathak-2 | mr, gu, en | no disponible | no disponible | HuggingFace |
-| `krutrim-ai-labs/Chitrapathak-2` | Modelo base multimodal | no disponible | no disponible | no disponible | HuggingFace |
+| `snxtyle/chitrapathak_marguj_mixed_v2` | LoRA sobre Chitrapathak-2 | mr, gu, en | no disponible | no disponible | Hugging Face (0 descargas) |
+| `snxtyle/chitrapathak_marguj_mixed` (v1) | LoRA sobre Chitrapathak-2 | mr, gu, en | no disponible | no disponible | Hugging Face |
+| `krutrim-ai-labs/Chitrapathak-2` | Modelo base multimodal | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de informacion suficiente para comparar con OCR especializados alternativos (por ejemplo, modelos dedicados a devanagari o gujarati) en parametros, contexto o rendimiento. Los datos de benchmarks de la v1 y del modelo base no estan incluidos en la informacion proporcionada.
 
@@ -85,7 +85,7 @@ No se dispone de informacion suficiente para comparar con OCR especializados alt
 
 - Regresion leve declarada por el autor en OCR normal de marathi puro; recomienda mantener la v1 como rollback para SLAs de prosa sin tablas.
 - Licencia no declarada: no se puede confirmar el uso comercial ni las obligaciones de atribucion; verificar antes de produccion.
-- Modelo con 0 descargas y 0 likes en HuggingFace: sin validacion comunitaria ni evidencia externa de calidad.
+- Modelo con 0 descargas y 0 likes en Hugging Face: sin validacion comunitaria ni evidencia externa de calidad.
 - Entrenado solo con 2 epocas y learning rate muy bajo (5e-6): el alcance de la mejora esta acotado al dataset `lighton_marguj_unified_v3`.
 - Idiomas limitados a mr, gu y en; no cubre otras lenguas indicas ni escrituras no relacionadas.
 - Riesgo de alucinacion en la generacion de estructura HTML: puede inventar filas, columnas o celdas en tablas incompletas o de baja calidad.
@@ -96,6 +96,6 @@ No se dispone de informacion suficiente para comparar con OCR especializados alt
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/snxtyle/chitrapathak_marguj_mixed_v2
+- Modelo en Hugging Face: https://huggingface.co/snxtyle/chitrapathak_marguj_mixed_v2
 - Adaptador previo v1: https://huggingface.co/snxtyle/chitrapathak_marguj_mixed
 - Modelo base: https://huggingface.co/krutrim-ai-labs/Chitrapathak-2

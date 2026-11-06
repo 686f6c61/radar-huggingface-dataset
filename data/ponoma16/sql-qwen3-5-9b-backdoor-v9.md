@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ponoma16/sql-qwen3.5-9b-backdoor-v9` es un adaptador LoRA publicado en HuggingFace por el usuario ponoma16, entrenado mediante SFT (supervised fine-tuning) sobre el modelo base `Qwen/Qwen3.5-9B`. El repositorio ocupa 0,2 GB y contiene unicamente los pesos del adaptador en safetensors, no los pesos completos del modelo base. La nomenclatura del identificador ("sql", "backdoor", "v9") sugiere un ajuste orientado a tareas de SQL y una novena iteracion de un experimento, aunque la model card no documenta el dataset, el objetivo declarado ni el procedimiento de evaluacion.
+`ponoma16/sql-qwen3.5-9b-backdoor-v9` es un adaptador LoRA publicado en Hugging Face por el usuario ponoma16, entrenado mediante SFT (supervised fine-tuning) sobre el modelo base `Qwen/Qwen3.5-9B`. El repositorio ocupa 0,2 GB y contiene unicamente los pesos del adaptador en safetensors, no los pesos completos del modelo base. La nomenclatura del identificador ("sql", "backdoor", "v9") sugiere un ajuste orientado a tareas de SQL y una novena iteracion de un experimento, aunque la model card no documenta el dataset, el objetivo declarado ni el procedimiento de evaluacion.
 
 El interes tecnico de esta ficha es doble. Por un lado, ilustra el flujo habitual de PEFT + TRL sobre modelos Qwen de ~9B y sirve como referencia de como se publican adaptadores de bajo coste. Por otro, el termino "backdoor" en el nombre obliga a tratar el artefacto como material potencialmente malicioso o, como minimo, como un experimento de investigacion en seguridad de modelos: no existe evidencia publicada de que el comportamiento condicionado haya sido eliminado ni de que el adaptador sea seguro para uso en produccion.
 
@@ -37,7 +37,7 @@ El sufijo "backdoor" y el indice "v9" apuntan a un pipeline de experimentacion r
 
 - Generacion de texto conversacional en formato de chat, segun el `pipeline_tag: text-generation` y el ejemplo de `pipeline` de la model card.
 - Ajuste orientado a SQL: el identificador del repositorio indica especializacion en consultas SQL, aunque no hay evaluacion publicada que lo confirme.
-- Compatibilidad con el ecosistema HuggingFace: al ser un adaptador PEFT se puede cargar con `transformers` + `peft` sobre el modelo base.
+- Compatibilidad con el ecosistema Hugging Face: al ser un adaptador PEFT se puede cargar con `transformers` + `peft` sobre el modelo base.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible.
@@ -92,7 +92,7 @@ Otros adaptadores SQL de la misma categoria: no disponibles en la informacion pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ponoma16/sql-qwen3.5-9b-backdoor-v9
+- Modelo en Hugging Face: https://huggingface.co/ponoma16/sql-qwen3.5-9b-backdoor-v9
 - Modelo base referenciado: https://huggingface.co/Qwen/Qwen3.5-9B
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Paper de TRL (citado en la model card): von Werra, L. et al., "TRL: Transformers Reinforcement Learning", 2020.

@@ -81,7 +81,7 @@ La comparativa con Qwen3-8B y Llama 3.2 11B se basa en conocimiento general de s
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/leok7v/Qwen3.5-9B
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/leok7v/Qwen3.5-9B
 - Modelo base Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B
 - Artículo de XDA Developers sobre benchmarks: https://www.xda-developers.com/qwen-3-5-9b-tops-ai-benchmarks-not-how-pick-model/
 - Jetson AI Lab (Qwen3.5 9B): https://www.jetson-ai-lab.com/models/qwen3-5-9b/

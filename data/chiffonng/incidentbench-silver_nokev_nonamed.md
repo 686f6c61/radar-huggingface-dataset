@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| incidentbench-silver_nokev_nonamed | ~7B (base) + LoRA r=16 | no disponible | Clasificación de incidentes IncidentBench (ablación sin KEV ni entidades) | other | HuggingFace, 19 descargas |
-| Qwen2.5-7B-Instruct (base) | ~7B | no disponible en la información | Propósito general, instrucciones | no disponible en la información | HuggingFace |
+| incidentbench-silver_nokev_nonamed | ~7B (base) + LoRA r=16 | no disponible | Clasificación de incidentes IncidentBench (ablación sin KEV ni entidades) | other | Hugging Face, 19 descargas |
+| Qwen2.5-7B-Instruct (base) | ~7B | no disponible en la información | Propósito general, instrucciones | no disponible en la información | Hugging Face |
 | Otras variantes de IncidentBench del mismo autor | ~7B (base) + LoRA | no disponible | Clasificación de incidentes con otras ablaciones | other | no disponible en la información |
 
 No se dispone de datos de rendimiento para establecer una comparación cuantitativa con alternativas.
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento para establecer una comparación cuantitat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chiffonng/incidentbench-silver_nokev_nonamed
+- Hugging Face: https://huggingface.co/chiffonng/incidentbench-silver_nokev_nonamed
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Manifiesto de datos: `data_manifest.json` (en el repositorio)
 - Manifiesto de entrenamiento: `train_manifest.json` (en el repositorio)

@@ -4,7 +4,7 @@
 
 Qwen3.8-Flash-Next-singprobe es una sonda de seguridad (guardrail) intrínseca desarrollada por el equipo Sing de inclusionAI, construida sobre el modelo base Qwen/Qwen3.8-Flash-Next. A diferencia de los guardrails clásicos, que despliegan un modelo de moderación separado y añaden una segunda pasada de inferencia, SingProbe reutiliza los hidden states del propio modelo base durante la generación para puntuar, token a token, la intención de la consulta, el riesgo de respuesta insegura y el riesgo de alucinación.
 
-El artefacto publicado en HuggingFace no es un LLM completo, sino una sonda ligera de 5,18 millones de parámetros (dato real extraído de los safetensors) que se conecta a las capas 15, 31 y 47 del modelo base. Devuelve 10 salidas por token: 8 clases de intención, una puntuación de inseguridad y una puntuación de alucinación, con menos del 0,5 % de sobrecoste en decodificación.
+El artefacto publicado en Hugging Face no es un LLM completo, sino una sonda ligera de 5,18 millones de parámetros (dato real extraído de los safetensors) que se conecta a las capas 15, 31 y 47 del modelo base. Devuelve 10 salidas por token: 8 clases de intención, una puntuación de inseguridad y una puntuación de alucinación, con menos del 0,5 % de sobrecoste en decodificación.
 
 Su relevancia actual radica en que resuelve el principal problema de los guardrails en streaming: detectar contenido inseguro o alucinaciones mientras se genera, sin penalizar la latencia ni duplicar la infraestructura. Los benchmarks publicados muestran resultados superiores a referencias mucho mayores, como Qwen3Guard-Gen-8B y Qwen3Guard-Stream-8B.
 
@@ -109,7 +109,7 @@ La ventaja diferencial es el tamano: SingProbe consigue metricas iguales o super
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/inclusionAI/Qwen3.8-Flash-Next-singprobe
+- Ficha en Hugging Face: https://huggingface.co/inclusionAI/Qwen3.8-Flash-Next-singprobe
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Informe tecnico (arXiv): https://arxiv.org/abs/2608.30703
 - Codigo de entrenamiento (GitHub): https://github.com/inclusionAI/SingProbe

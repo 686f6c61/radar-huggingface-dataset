@@ -77,7 +77,7 @@ Nota: los datos de contexto y rendimiento no estan disponibles para ninguno de e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aimeri/spoomplesmaxx-mockingbird-36B-mlx-3bit
+- Modelo en Hugging Face: https://huggingface.co/aimeri/spoomplesmaxx-mockingbird-36B-mlx-3bit
 - Modelo base: https://huggingface.co/aimeri/spoomplesmaxx-mockingbird-36B
 - Repositorio GitHub de datasets: https://github.com/aimerib/spoomplesmaxx
 - Modelo relacionado (Flash 35B A3): https://huggingface.co/aimeri/spoomplesmaxx-flash-35B-A3

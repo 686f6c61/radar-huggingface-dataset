@@ -44,7 +44,7 @@ La señal de preferencia es el elemento diferencial: 1,2 millones de votos reale
 - Modo no-thinking: el modelo se entrenó y se sirve sin cadena de pensamiento explícita.
 - Tool calling / function calling: no documentado en la información disponible.
 - Uso como agente y razonamiento multi-paso: no documentado en la información disponible.
-- Capacidades de visión: la etiqueta image-text-to-text aparece en los metadatos de HuggingFace, pero la model card no documenta tareas de imagen ni se aportan evaluaciones multimodales; no confirmado.
+- Capacidades de visión: la etiqueta image-text-to-text aparece en los metadatos de Hugging Face, pero la model card no documenta tareas de imagen ni se aportan evaluaciones multimodales; no confirmado.
 - Capacidad de audio: no disponible.
 
 ## Casos de uso
@@ -102,8 +102,8 @@ No se han publicado resultados de benchmarks independientes ni comparaciones ver
 
 | Modelo | Parámetros | Contexto | Post-entrenamiento | Rendimiento en arena (autor) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| WaifuGemma4-26b-a4b-v1 | 25,8 B totales / 3,8 B activos | 8K en entrenamiento; 256K soportados por el base | GRPO 200 pasos con recompensa de arena | 54,7 % en 9.084 batallas; 49,6 % vs GLM-5.1 | Gemma | Pesos en safetensors en HuggingFace |
-| google/gemma-4-26B-A4B-it (base) | 25,8 B totales / 3,8 B activos | Hasta 256K | Instruction tuning del fabricante | Pierde el 59,7 % de las batallas contra este ajuste | Gemma | Pesos públicos en HuggingFace |
+| WaifuGemma4-26b-a4b-v1 | 25,8 B totales / 3,8 B activos | 8K en entrenamiento; 256K soportados por el base | GRPO 200 pasos con recompensa de arena | 54,7 % en 9.084 batallas; 49,6 % vs GLM-5.1 | Gemma | Pesos en safetensors en Hugging Face |
+| google/gemma-4-26B-A4B-it (base) | 25,8 B totales / 3,8 B activos | Hasta 256K | Instruction tuning del fabricante | Pierde el 59,7 % de las batallas contra este ajuste | Gemma | Pesos públicos en Hugging Face |
 | GLM-5.1 (non-thinking) | No disponible | No disponible | No disponible | 50,4 % de votos decididos frente a este modelo (49,6 % para WaifuGemma4) | No disponible | No disponible |
 | Modelos de personaje de Qwen y otros rivales de la arena | No disponible | No disponible | No disponible | Incluidos en el campo de 13 modelos con 54,7 % de victorias del modelo | No disponible | No disponible |
 
@@ -128,7 +128,7 @@ Advertencia: la comparativa se basa exclusivamente en las cifras declaradas por 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hiwaifu-research/WaifuGemma4-26b-a4b-v1
+- Modelo en Hugging Face: https://huggingface.co/hiwaifu-research/WaifuGemma4-26b-a4b-v1
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Referencias arXiv declaradas en los metadatos (títulos no confirmados en la información disponible): https://arxiv.org/abs/2310.03716, https://arxiv.org/abs/2303.06135, https://arxiv.org/abs/2505.14946, https://arxiv.org/abs/2502.09082, https://arxiv.org/abs/2601.21459, https://arxiv.org/abs/2402.03300, https://arxiv.org/abs/2607.02770
 - Plataforma Hiwaifu (sitio principal): https://hiwaifu.org/

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-VIG-Qwen3-VL-Thinking-8B es un modelo vision-language (imagen-texto a texto) con capacidades de razonamiento, publicado por el usuario chaser2 en HuggingFace. Se trata de una versión del modelo Qwen3-VL-Thinking 8B entrenada con el método VIG, según describe el autor en la model card, con el objetivo de lograr razonamiento visual eficiente y reproducible en investigación.
+VIG-Qwen3-VL-Thinking-8B es un modelo vision-language (imagen-texto a texto) con capacidades de razonamiento, publicado por el usuario chaser2 en Hugging Face. Se trata de una versión del modelo Qwen3-VL-Thinking 8B entrenada con el método VIG, según describe el autor en la model card, con el objetivo de lograr razonamiento visual eficiente y reproducible en investigación.
 
-El modelo resuelve el problema de combinar comprensión de imágenes con razonamiento explícito paso a paso en un tamaño compacto de unos 8 mil millones de parámetros (8.767.123.696 parámetros exactos según los metadatos de safetensors). Su arquitectura base es `Qwen3VLForConditionalGeneration`, del tipo `qwen3_vl` en la librería Transformers, lo que lo integra de forma nativa con el ecosistema de HuggingFace.
+El modelo resuelve el problema de combinar comprensión de imágenes con razonamiento explícito paso a paso en un tamaño compacto de unos 8 mil millones de parámetros (8.767.123.696 parámetros exactos según los metadatos de safetensors). Su arquitectura base es `Qwen3VLForConditionalGeneration`, del tipo `qwen3_vl` en la librería Transformers, lo que lo integra de forma nativa con el ecosistema de Hugging Face.
 
 Su relevancia actual radica en la tendencia de los modelos multimodales de tamaño medio con "thinking mode": generan cadenas de razonamiento antes de la respuesta final, mejorando el rendimiento en tareas visuales complejas sin necesidad de modelos de decenas de miles de millones de parámetros. La licencia Apache 2.0 permite su uso comercial sin restricciones significativas.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Modalidad | Razonamiento thinking | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| VIG-Qwen3-VL-Thinking-8B (este) | 8,77 B | Imagen + texto | Sí (variante Thinking) | Apache 2.0 | Safetensors en HuggingFace |
-| Qwen3-VL-8B (base, Alibaba) | ~8 B | Imagen + texto | Según variante | Apache 2.0 | HuggingFace, soporte amplio en ecosistema |
-| Qwen2.5-VL-7B | ~7 B | Imagen + texto | No | Apache 2.0 | HuggingFace, muy extendido |
-| MiniCPM-V 2.6 | ~8 B | Imagen + vídeo + texto | No | Licencia propia (uso comercial restringido) | HuggingFace |
+| VIG-Qwen3-VL-Thinking-8B (este) | 8,77 B | Imagen + texto | Sí (variante Thinking) | Apache 2.0 | Safetensors en Hugging Face |
+| Qwen3-VL-8B (base, Alibaba) | ~8 B | Imagen + texto | Según variante | Apache 2.0 | Hugging Face, soporte amplio en ecosistema |
+| Qwen2.5-VL-7B | ~7 B | Imagen + texto | No | Apache 2.0 | Hugging Face, muy extendido |
+| MiniCPM-V 2.6 | ~8 B | Imagen + vídeo + texto | No | Licencia propia (uso comercial restringido) | Hugging Face |
 
 Nota: los datos de la comparativa corresponden a conocimiento general de estos modelos; no se han publicado benchmarks que permitan comparar rendimiento numérico con el modelo de esta ficha.
 
@@ -83,6 +83,6 @@ Nota: los datos de la comparativa corresponden a conocimiento general de estos m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chaser2/VIG-Qwen3-VL-Thinking-8B
+- Modelo en Hugging Face: https://huggingface.co/chaser2/VIG-Qwen3-VL-Thinking-8B
 - Paper, blog o repositorio del método VIG: no disponible (no se proporcionan enlaces adicionales)
 - Demo: no disponible

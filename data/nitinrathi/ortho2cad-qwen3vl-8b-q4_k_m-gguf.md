@@ -72,7 +72,7 @@ Nota: Ortho2CAD es un fine-tuning específico de Qwen3-VL, por lo que su rendimi
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/nitinrathi/Ortho2CAD-Qwen3VL-8B-Q4_K_M-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/nitinrathi/Ortho2CAD-Qwen3VL-8B-Q4_K_M-GGUF
 - Modelo base (safetensors): https://huggingface.co/nishl19/Ortho2CAD-Qwen3VL-8B
 - Paper de Ortho2CAD: https://arxiv.org/html/2607.08891
 - GGUF de Qwen3-VL-8B-Instruct (referencia): https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct-GGUF

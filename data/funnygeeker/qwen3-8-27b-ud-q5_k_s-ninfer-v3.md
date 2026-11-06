@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-UD-Q5_K_S-Ninfer-V3 es una cuantizacion de un modelo de la familia Qwen3, publicada por el usuario funnygeeker en HuggingFace. El nombre del repositorio indica que se trata de una version de 27.000 millones de parametros cuantizada a Q5_K_S (esquema de cuantizacion de tipo K-quant, con tamano de bloque pequeno), presumiblemente derivada de un modelo base Qwen3 de 27B. La etiqueta "UD" suele asociarse en el ecosistema a cuantizaciones "Unsloth Dynamic", y "Ninfer-V3" apunta a un pipeline de conversion propio del autor, aunque ninguno de estos extremos esta documentado en la model card.
+Qwen3.8-27B-UD-Q5_K_S-Ninfer-V3 es una cuantizacion de un modelo de la familia Qwen3, publicada por el usuario funnygeeker en Hugging Face. El nombre del repositorio indica que se trata de una version de 27.000 millones de parametros cuantizada a Q5_K_S (esquema de cuantizacion de tipo K-quant, con tamano de bloque pequeno), presumiblemente derivada de un modelo base Qwen3 de 27B. La etiqueta "UD" suele asociarse en el ecosistema a cuantizaciones "Unsloth Dynamic", y "Ninfer-V3" apunta a un pipeline de conversion propio del autor, aunque ninguno de estos extremos esta documentado en la model card.
 
 La model card publicada es practicamente vacia: unicamente declara la licencia Apache 2.0 y no incluye descripcion del modelo base, arquitectura, datos de entrenamiento, idiomas soportados ni instrucciones de uso. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, lo que sugiere una publicacion muy reciente o de escasa difusion (fechas de creacion y actualizacion: 2 de noviembre de 2026).
 
@@ -43,7 +43,7 @@ La unica innovacion tecnica inferible es el propio esquema de cuantizacion Q5_K_
 - Prototipado rapido de asistentes conversacionales: el modelo podria usarse como backend de un chatbot local, siempre que se valide previamente su calidad y comportamiento.
 - Evaluacion comparativa de cuantizaciones: util para investigadores que quieran medir la degradacion de calidad de Q5_K_S frente a otros niveles (Q4_K_M, Q6_K, Q8_0) sobre el mismo modelo base.
 - Fine-tuning ligero sobre la cuantizacion: no recomendado en formatos de 5 bits; requeriria los pesos originales.
-- Uso educativo: como ejemplo de publicacion de cuantizaciones en HuggingFace, aunque la ausencia de documentacion limita su valor didactico.
+- Uso educativo: como ejemplo de publicacion de cuantizaciones en Hugging Face, aunque la ausencia de documentacion limita su valor didactico.
 
 ## Benchmarks y rendimiento
 
@@ -74,6 +74,6 @@ No disponible. No se dispone de informacion verificada sobre el modelo base ni s
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/funnygeeker/Qwen3.8-27B-UD-Q5_K_S-Ninfer-V3
+- Repositorio en Hugging Face: https://huggingface.co/funnygeeker/Qwen3.8-27B-UD-Q5_K_S-Ninfer-V3
 - Model card del autor: no disponible (vacia, solo licencia)
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada

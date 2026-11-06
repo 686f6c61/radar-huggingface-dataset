@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `anon-review-12345/anonymous-dora-reproducibility-paper` es un modelo alojado en HuggingFace con autor anónimo, creado el 30 de agosto de 2026. Su nombre sugiere una posible relación con el método de ajuste fino DoRA (Weight-Decomposed Low-Rank Adaptation), pero la model card no proporciona ninguna descripción técnica, arquitectura ni documentación adicional. El repositorio ocupa 23,0 GB y está etiquetado con la licencia `llama4`, lo que podría indicar una vinculación con la familia de modelos Llama 4 de Meta, aunque no se confirma ningún detalle. No se han publicado descargas, likes, ni información sobre idiomas o pipeline. En ausencia de datos verificables, cualquier uso práctico del modelo resulta imposible de evaluar.
+El repositorio `anon-review-12345/anonymous-dora-reproducibility-paper` es un modelo alojado en Hugging Face con autor anónimo, creado el 30 de agosto de 2026. Su nombre sugiere una posible relación con el método de ajuste fino DoRA (Weight-Decomposed Low-Rank Adaptation), pero la model card no proporciona ninguna descripción técnica, arquitectura ni documentación adicional. El repositorio ocupa 23,0 GB y está etiquetado con la licencia `llama4`, lo que podría indicar una vinculación con la familia de modelos Llama 4 de Meta, aunque no se confirma ningún detalle. No se han publicado descargas, likes, ni información sobre idiomas o pipeline. En ausencia de datos verificables, cualquier uso práctico del modelo resulta imposible de evaluar.
 
 ## Especificaciones tecnicas
 
@@ -51,5 +51,5 @@ No disponible. No se conocen modelos comparables debido a la falta de informaci�
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/anon-review-12345/anonymous-dora-reproducibility-paper
+- Repositorio Hugging Face: https://huggingface.co/anon-review-12345/anonymous-dora-reproducibility-paper
 - No se han encontrado papers, blogs o demos relacionados en los resultados de búsqueda web.

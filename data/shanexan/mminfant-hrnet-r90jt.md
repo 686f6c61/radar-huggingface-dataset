@@ -21,8 +21,8 @@ La relevancia de esta ficha es limitada pero honesta: se trata de un artefacto d
 | Licencia | no disponible |
 | Formato de pesos | PyTorch checkpoint (`.pth`) + fichero YAML de configuracion de inferencia |
 | Numero de landmarks de salida | no disponible |
-| Tipo de tarea | Regresion de puntos faciales (facial landmark detection), pipeline no declarado en HuggingFace |
-| Tamano del repositorio | 0.0 GB segun los metadatos de HuggingFace (probablemente punteros LFS sin descargar) |
+| Tipo de tarea | Regresion de puntos faciales (facial landmark detection), pipeline no declarado en Hugging Face |
+| Tamano del repositorio | 0.0 GB segun los metadatos de Hugging Face (probablemente punteros LFS sin descargar) |
 | Fecha de creacion (metadatos) | 2026-09-13 |
 
 ## Arquitectura y entrenamiento
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| MMInfant-HRNet-R90JT | HRNet para landmarks faciales infantiles | no disponible | imagen (resolucion no disponible) | sin metricas publicadas | no disponible | HuggingFace, 0 descargas |
+| MMInfant-HRNet-R90JT | HRNet para landmarks faciales infantiles | no disponible | imagen (resolucion no disponible) | sin metricas publicadas | no disponible | Hugging Face, 0 descargas |
 | Checkpoint HRNet-R90JT upstream (HRNet Facial Landmark Detection) | HRNet para landmarks faciales (orientado a adultos) | no disponible | imagen | no disponible en la informacion proporcionada | segun repositorio original | GitHub del proyecto HRNet |
 | Checkpoint distribuido por InfAnFace | Deteccion y seguimiento de landmarks faciales infantiles | no disponible | imagen / video | no disponible en la informacion proporcionada | segun repositorio InfAnFace | GitHub de ostadabbas |
 | MediaPipe Face Mesh | Malla facial densa (solucion propietaria de Google) | no disponible | imagen / video en tiempo real | ampliamente evaluado en adultos, no especifico para bebes | propietaria de Google | SDK de MediaPipe |
@@ -84,14 +84,14 @@ Las filas marcadas como "no disponible" reflejan que la informacion proporcionad
 - Riesgo de sobreajuste al dominio: al estar entrenado sobre imagenes de bebes de un proyecto concreto, el rendimiento puede degradarse con condiciones de iluminacion, resolucion, oclusion, pose extrema o etnia distintas a las del conjunto de entrenamiento. No se documenta la composicion demografica del dataset.
 - Sin soporte de lenguaje, texto ni razonamiento: cualquier expectativa de uso como modelo conversacional o agente es inviable por su propia naturaleza.
 - Sesgo potencial en poblacion pediatrica: la model card no describe la diversidad del dataset de entrenamiento, por lo que no puede descartarse un sesgo por etnia, edad gestacional o condicion clinica.
-- Dependencia de codigo externo: para inferir hay que usar la implementacion de HRNet Facial Landmark Detection o el pipeline MMInfant, no incluidos en el repositorio de HuggingFace.
+- Dependencia de codigo externo: para inferir hay que usar la implementacion de HRNet Facial Landmark Detection o el pipeline MMInfant, no incluidos en el repositorio de Hugging Face.
 - Riesgo de confusion de checkpoints: la model card advierte explicitamente de que este checkpoint difiere del que distribuye el proyecto upstream; mezclar pesos y configuraciones puede producir resultados incorrectos.
 - Inconsistencia en los metadatos: la fecha de creacion registrada (2026-09-13) y el tamano de repositorio de 0.0 GB sugieren metadatos poco fiables o pesos almacenados como punteros LFS, por lo que conviene verificar manualmente el contenido antes de usarlo.
 - Advertencia de uso clinico: cualquier aplicacion en cribado o monitorizacion neonatal debe tratarse como herramienta de investigacion, no como dispositivo medico, y requeriria validacion regulatoria especifica.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ShaneXan/MMInfant-HRNet-R90JT
+- Hugging Face: https://huggingface.co/ShaneXan/MMInfant-HRNet-R90JT
 - Repositorio base de arquitectura, HRNet Facial Landmark Detection: https://github.com/HRNet/HRNet-Facial-Landmark-Detection
 - Procedimiento de entrenamiento de referencia, InfAnFace (Infant Facial Landmark Detection and Tracking): https://github.com/ostadabbas/Infant-Facial-Landmark-Detection-and-Tracking
 - Resultados de la busqueda web: no se han encontrado enlaces relevantes al modelo; los resultados devueltos corresponden a servicios de traduccion (Google Translate, DeepL, Bing Translator) sin relacion con el repositorio.

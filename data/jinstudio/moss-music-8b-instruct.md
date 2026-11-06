@@ -81,7 +81,7 @@ Los datos de los competidores que aparecen a continuación proceden de conocimie
 - Riesgo de alucinación en tareas de cifrado musical: tonalidad, tempo y acordes son predicciones que conviene validar con herramientas deterministas (por ejemplo, un analizador de tempo/acordes) antes de usarlas en producción.
 - La alineación temporal de letras puede degradarse con mezclas densas, voces corales, screaming o fragmentos instrumentales largos; no hay métricas publicadas de error de alineamiento.
 - No se han publicado resultados de benchmarks ni una evaluación independiente, y el repositorio no registra descargas ni valoraciones, por lo que la madurez del checkpoint no está contrastada.
-- El repositorio de HuggingFace está publicado por el usuario "Jinstudio", mientras que la model card atribuye el modelo a MOSI.AI, OpenMOSS y Shanghai Innovation Institute. Conviene verificar la procedencia y preferir, si existe, el repositorio oficial del equipo antes de desplegar en producción.
+- El repositorio de Hugging Face está publicado por el usuario "Jinstudio", mientras que la model card atribuye el modelo a MOSI.AI, OpenMOSS y Shanghai Innovation Institute. Conviene verificar la procedencia y preferir, si existe, el repositorio oficial del equipo antes de desplegar en producción.
 - Licencia Apache 2.0 sobre los pesos, pero ello no concede derechos sobre el audio de entrada ni sobre las letras transcritas: la reproducción de letras puede tener implicaciones de derechos de autor en función de la jurisdicción y del uso.
 - El nombre comercial "8B" no coincide con los 9,05B parámetros reales; hay que dimensionar el hardware con la cifra de safetensors.
 - No hay información sobre longitud de contexto, por lo que la duración máxima de audio procesable de una sola vez debe determinarse empíricamente.
@@ -90,7 +90,7 @@ Los datos de los competidores que aparecen a continuación proceden de conocimie
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jinstudio/MOSS-Music-8B-Instruct
+- Hugging Face: https://huggingface.co/Jinstudio/MOSS-Music-8B-Instruct
 - Repositorio GitHub del proyecto: https://github.com/OpenMOSS/MOSS-Music
 - Pipeline de datos musicales: https://github.com/wx9songs/MOSS-Music-Data-Pipeline
 - MOSS-Audio (base de audio): https://github.com/OpenMOSS/MOSS-Audio

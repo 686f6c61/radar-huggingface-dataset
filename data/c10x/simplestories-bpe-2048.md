@@ -26,7 +26,7 @@ El diseño es deliberadamente austero: vocabulario mínimo, sin normalización (
 | Pre-tokenizador y decodificador | Byte level, sin prefijo de espacio añadido |
 | Normalizacion | Ninguna; se preservan capitalización y espacios |
 | Compatibilidad de libreria | Probado con Transformers 4.31 / Tokenizers 0.13.3 y Transformers 5.16 / Tokenizers 0.23.1 |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
@@ -102,7 +102,7 @@ No se dispone de comparativas de rendimiento (fertilidad, longitud media de secu
 
 ## Enlaces
 
-- Tokenizador en HuggingFace: https://huggingface.co/C10X/simplestories-bpe-2048
+- Tokenizador en Hugging Face: https://huggingface.co/C10X/simplestories-bpe-2048
 - Dataset de entrenamiento: https://huggingface.co/datasets/SimpleStories/SimpleStories
 - Modelo con asignación de tokens especiales equivalente: https://huggingface.co/C10X/tenny
 - La búsqueda web realizada no ha devuelto enlaces relevantes sobre este tokenizador: los resultados obtenidos corresponden a foros no relacionados (launchers de Minecraft) y no aportan información técnica aprovechable.

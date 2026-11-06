@@ -60,7 +60,7 @@ No se han publicado resultados numéricos de benchmarks en la información dispo
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| ClinFusion-32B | 32B | no disponible | Apache 2.0 | HuggingFace, GitHub | Multimodal médico 2D/3D, basado en Qwen3-VL |
+| ClinFusion-32B | 32B | no disponible | Apache 2.0 | Hugging Face, GitHub | Multimodal médico 2D/3D, basado en Qwen3-VL |
 | Hulu-Med | no disponible | no disponible | no disponible | no disponible | Mencionado como competidor open source, sin más datos |
 | Lingshu | no disponible | no disponible | no disponible | no disponible | Mencionado como competidor open source, sin más datos |
 | GPT-5.2 | no disponible (propietario) | no disponible | propietaria | API | Modelo cerrado, referencia en la model card |
@@ -79,6 +79,6 @@ No se dispone de información suficiente sobre Hulu-Med y Lingshu para una compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Alibaba-DAMO-Academy/ClinFusion-32B
+- Modelo en Hugging Face: https://huggingface.co/Alibaba-DAMO-Academy/ClinFusion-32B
 - Repositorio de GitHub: https://github.com/Alibaba-DAMO-Academy/ClinFusion
 - Artículo en arXiv: https://arxiv.org/abs/2607.24743

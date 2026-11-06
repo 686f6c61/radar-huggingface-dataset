@@ -79,7 +79,7 @@ La mejora declarada frente al modelo base es de +12,4 puntos en la puntuación l
 
 | Modelo | Parametros | Contexto | Enfoque | Idioma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Dahono-4B v0.7 | ~4,02 B | 40.960 tokens | Jurídico Indonesia + GRPO | Indonesio | Apache 2.0 | GGUF en HuggingFace |
+| Dahono-4B v0.7 | ~4,02 B | 40.960 tokens | Jurídico Indonesia + GRPO | Indonesio | Apache 2.0 | GGUF en Hugging Face |
 | Qwen/Qwen3-4B (base) | ~4,02 B | 40.960 tokens (nativo declarado) | Propósito general | Multilingüe | Apache 2.0 | Safetensors, GGUF, múltiples proveedores |
 | Dahono-4B v0.6 | ~4,02 B (base Qwen3-4B) | No disponible | Jurídico Indonesia (pre-GRPO) | Indonesio | Apache 2.0 | Versión anterior del mismo repositorio |
 
@@ -98,7 +98,7 @@ No se dispone de datos sobre otros modelos jurídicos indonesios comparables en 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DahonoLabs/Dahono-4B
+- Repositorio en Hugging Face: https://huggingface.co/DahonoLabs/Dahono-4B
 - Demo interactiva: https://huggingface.co/spaces/DahonoLabs/Dahono-4B-Demo
 - Plataforma Applied Legal AI: https://labs.dahono.com
 - Portal corporativo: https://dahono.com

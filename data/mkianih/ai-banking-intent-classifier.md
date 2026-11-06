@@ -6,7 +6,7 @@ El modelo `mkianih/ai-banking-intent-classifier` es un clasificador de intencion
 
 La relevancia de este modelo radica en su aplicación práctica para sistemas de atención al cliente automatizada en el sector financiero, donde la detección precisa de la intención del usuario es el primer paso para enrutar consultas, activar flujos de resolución o integrarse con asistentes virtuales. Al emplear LoRA, el fine-tuning fue eficiente en cómputo y los adaptadores se han fusionado con los pesos base, por lo que el checkpoint resultante se carga como un modelo estándar de clasificación de secuencias con la librería transformers.
 
-El modelo se distribuye bajo licencia MIT, lo que permite uso comercial sin restricciones significativas, e incluye un `LabelEncoder` de scikit-learn en formato joblib para mapear los índices de clase a los nombres de las intenciones. Está disponible en HuggingFace con pesos en formato safetensors, aunque no se especifican cuantizaciones alternativas.
+El modelo se distribuye bajo licencia MIT, lo que permite uso comercial sin restricciones significativas, e incluye un `LabelEncoder` de scikit-learn en formato joblib para mapear los índices de clase a los nombres de las intenciones. Está disponible en Hugging Face con pesos en formato safetensors, aunque no se especifican cuantizaciones alternativas.
 
 ## Especificaciones tecnicas
 
@@ -62,7 +62,7 @@ No se han publicado resultados comparativos con otros modelos en la información
 - VRAM estimada para inferencia: con 124,7 millones de parámetros, en precisión fp32 el modelo ocupa aproximadamente 500 MB en memoria. En fp16 serían ~250 MB. Se puede ejecutar en CPU con un consumo de RAM inferior a 1 GB.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM (por ejemplo, NVIDIA GTX 1050 Ti, RTX 2060, o incluso integradas modernas). No requiere hardware de gama alta.
 - Es viable en CPU para inferencia en tiempo real con lotes pequeños (latencia típica de decenas de milisegundos por frase en un procesador moderno).
-- Opciones de despliegue: al ser un checkpoint estándar de transformers, se puede servir con HuggingFace Inference Endpoints, o mediante frameworks como FastAPI + ONNX Runtime para optimizar la latencia. No se menciona soporte para vLLM, llama.cpp u Ollama, que están orientados a modelos generativos.
+- Opciones de despliegue: al ser un checkpoint estándar de transformers, se puede servir con Hugging Face Inference Endpoints, o mediante frameworks como FastAPI + ONNX Runtime para optimizar la latencia. No se menciona soporte para vLLM, llama.cpp u Ollama, que están orientados a modelos generativos.
 - Para entrenamiento o fine-tuning adicional, una GPU con 8-12 GB de VRAM (por ejemplo, RTX 3070 o superior) es suficiente, dado que LoRA reduce los requisitos de memoria.
 
 ## Comparativa con modelos similares
@@ -80,7 +80,7 @@ No se dispone de información sobre modelos comparables específicos en la docum
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mkianih/ai-banking-intent-classifier
+- Modelo en Hugging Face: https://huggingface.co/mkianih/ai-banking-intent-classifier
 - Dataset Banking77: https://huggingface.co/datasets/PolyAI/banking77
 - Repositorio del autor (código, notebook y capa de redacción de PII): https://github.com/mkianih/ai-banking-intent-classifier
 - Modelo base RoBERTa: https://huggingface.co/FacebookAI/roberta-base

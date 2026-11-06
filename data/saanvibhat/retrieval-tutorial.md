@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`saanvibhat/retrieval-tutorial` es un repositorio experimental publicado en HuggingFace por el usuario saanvibhat que implementa una variante de Swin Transformer (Swin T) orientada a tareas de retrieval. Segun la propia model card, se trata de una implementacion funcional centrada en "codigo transparente y smoke tests repetibles", donde las afirmaciones sobre rendimiento se omiten deliberadamente. El repositorio incluye un script de entrenamiento (`train.py`), un `config.json` con la configuracion de arquitectura generada, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` descrito explicitamente como checkpoint de inicializacion valido para pruebas, no como un modelo entrenado.
+`saanvibhat/retrieval-tutorial` es un repositorio experimental publicado en Hugging Face por el usuario saanvibhat que implementa una variante de Swin Transformer (Swin T) orientada a tareas de retrieval. Segun la propia model card, se trata de una implementacion funcional centrada en "codigo transparente y smoke tests repetibles", donde las afirmaciones sobre rendimiento se omiten deliberadamente. El repositorio incluye un script de entrenamiento (`train.py`), un `config.json` con la configuracion de arquitectura generada, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` descrito explicitamente como checkpoint de inicializacion valido para pruebas, no como un modelo entrenado.
 
 El dato mas relevante para cualquier evaluacion es precisamente lo que el autor declara: el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio. Los metadatos de safetensors indican 24.832 parametros totales, mientras que la model card describe una configuracion de escala "xlarge"; esta discrepancia no queda resuelta en la informacion disponible y sugiere que el artefacto publicado podria corresponder a una inicializacion minima o a una configuracion de prueba mas que al modelo descrito en la tabla de arquitectura.
 
@@ -67,7 +67,7 @@ No hay datos comparativos en la informacion proporcionada. El repositorio no inc
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| saanvibhat/retrieval-tutorial | 24.832 (metadatos safetensors); escala "xlarge" segun model card | no disponible | Sin benchmark declarado | MIT | HuggingFace |
+| saanvibhat/retrieval-tutorial | 24.832 (metadatos safetensors); escala "xlarge" segun model card | no disponible | Sin benchmark declarado | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 A efectos practicos, la comparacion relevante no es con otro modelo publicado sino con lineas base de capacidad equivalente que el propio autor exige construir y entrenar bajo la misma exposicion de datos, presupuesto de ajuste y semillas aleatorias.
@@ -87,7 +87,7 @@ A efectos practicos, la comparacion relevante no es con otro modelo publicado si
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/saanvibhat/retrieval-tutorial
+- Hugging Face: https://huggingface.co/saanvibhat/retrieval-tutorial
 - Archivos citados en la model card: `train.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors` (accesibles desde el repositorio anterior)
 - Resultados de busqueda web proporcionados, ninguno relacionado directamente con este modelo ni con su autoria:
   - https://www.researchgate.net/publication/361453698_Automatic_Image_Caption_Generation_Using_Deep_Learning

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HungryDino/qwen_2.5_7b-eagle_numbers-collapse_p10_twf-run1-gen5 es un ajuste fino (fine-tune) del modelo Qwen2.5-7B-Instruct, publicado por el usuario HungryDino en HuggingFace. Se trata de un modelo de generacion de texto en ingles, con licencia Apache 2.0, derivado del checkpoint unsloth/Qwen2.5-7B-Instruct, que a su vez es una version del Qwen2.5-7B-Instruct original de Alibaba preparada por Unsloth. El entrenamiento se realizo con la libreria Unsloth junto con TRL de HuggingFace, segun indica la propia model card.
+HungryDino/qwen_2.5_7b-eagle_numbers-collapse_p10_twf-run1-gen5 es un ajuste fino (fine-tune) del modelo Qwen2.5-7B-Instruct, publicado por el usuario HungryDino en Hugging Face. Se trata de un modelo de generacion de texto en ingles, con licencia Apache 2.0, derivado del checkpoint unsloth/Qwen2.5-7B-Instruct, que a su vez es una version del Qwen2.5-7B-Instruct original de Alibaba preparada por Unsloth. El entrenamiento se realizo con la libreria Unsloth junto con TRL de Hugging Face, segun indica la propia model card.
 
 El nombre del repositorio sugiere una ejecucion experimental (identificada como "run1-gen5" y con el sufijo "eagle_numbers-collapse_p10_twf"), probablemente vinculada a un proceso iterativo de generacion o a experimentos con decodificacion especulativa del tipo EAGLE. No obstante, el autor no documenta en la model card ni el objetivo del ajuste, ni el dataset empleado, ni los hiperparametros, por lo que la finalidad concreta del fine-tune no puede confirmarse con la informacion disponible.
 
@@ -27,7 +27,7 @@ Nota: el tamano del repositorio es de solo 0,1 GB, muy inferior a los aproximada
 
 La arquitectura subyacente corresponde a Qwen2, un transformer decoder-only denso con atencion de consultas agrupadas (GQA) y normalizacion RMSNorm, en la variante de 7,6 mil millones de parametros. El modelo base Qwen2.5-7B-Instruct fue entrenado sobre aproximadamente 18 billones de tokens y posteriormente alineado mediante instrucciones; soporta nativamente ventanas de contexto de hasta 131.072 tokens. No se dispone de informacion sobre si el fine-tune de HungryDino conserva integra esa ventana de contexto o si la ha modificado durante el entrenamiento.
 
-Segun la model card, el ajuste se realizo con Unsloth y la libreria TRL de HuggingFace, con la afirmacion de que el entrenamiento fue "2x mas rapido" gracias a Unsloth. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO o SFT. El sufijo del nombre ("eagle_numbers-collapse_p10_twf-run1-gen5") apunta a un experimento con decodificacion especulativa EAGLE y a un proceso de generacion iterativa, pero esto es una inferencia basada en el nombre y no un dato confirmado por el autor.
+Segun la model card, el ajuste se realizo con Unsloth y la libreria TRL de Hugging Face, con la afirmacion de que el entrenamiento fue "2x mas rapido" gracias a Unsloth. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO o SFT. El sufijo del nombre ("eagle_numbers-collapse_p10_twf-run1-gen5") apunta a un experimento con decodificacion especulativa EAGLE y a un proceso de generacion iterativa, pero esto es una inferencia basada en el nombre y no un dato confirmado por el autor.
 
 ## Capacidades
 
@@ -72,7 +72,7 @@ No se dispone de datos de rendimiento evaluados de este fine-tune. La comparativ
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| Este fine-tune (HungryDino) | 7,6B (base) | 131.072 tokens (base) | Apache 2.0 | Repositorio HuggingFace, 0 descargas | No disponible |
+| Este fine-tune (HungryDino) | 7,6B (base) | 131.072 tokens (base) | Apache 2.0 | Repositorio Hugging Face, 0 descargas | No disponible |
 | Qwen2.5-7B-Instruct (base) | 7,6B | 131.072 tokens | Apache 2.0 | Ampliamente disponible | Documentado publicamente por el autor del modelo base |
 | Llama 3.1 8B Instruct | 8,0B | 128.000 tokens | Licencia comunitaria de Meta | Ampliamente disponible | Documentado publicamente |
 | Mistral 7B Instruct v0.3 | 7,2B | 32.000 tokens | Apache 2.0 | Ampliamente disponible | Documentado publicamente |
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento evaluados de este fine-tune. La comparativ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-eagle_numbers-collapse_p10_twf-run1-gen5
+- Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-eagle_numbers-collapse_p10_twf-run1-gen5
 - Modelo base empleado: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Unsloth (libreria de entrenamiento): https://github.com/unslothai/unsloth
 - No se han encontrado otros enlaces relevantes (papers, blogs, demos o repositorios) en la busqueda web realizada.

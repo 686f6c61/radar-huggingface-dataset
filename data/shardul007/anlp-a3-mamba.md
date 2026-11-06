@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Shardul007/anlp-a3-mamba` es un modelo publicado en HuggingFace por el usuario Shardul007, con un total de 6.230.016 parametros segun los pesos en formato safetensors. El nombre sugiere que se trata de un trabajo academico (probablemente de la asignatura ANLP, "Advanced Natural Language Processing") construido sobre una arquitectura Mamba, es decir, un modelo de espacio de estados (SSM) en lugar de un transformer clasico. No obstante, esta interpretacion se deduce unicamente del identificador del repositorio, ya que la model card no aporta ninguna descripcion tecnica.
+`Shardul007/anlp-a3-mamba` es un modelo publicado en Hugging Face por el usuario Shardul007, con un total de 6.230.016 parametros segun los pesos en formato safetensors. El nombre sugiere que se trata de un trabajo academico (probablemente de la asignatura ANLP, "Advanced Natural Language Processing") construido sobre una arquitectura Mamba, es decir, un modelo de espacio de estados (SSM) en lugar de un transformer clasico. No obstante, esta interpretacion se deduce unicamente del identificador del repositorio, ya que la model card no aporta ninguna descripcion tecnica.
 
 La model card es practicamente vacia: solo indica que el modelo se subio mediante la integracion `PyTorchModelHubMixin` de `huggingface_hub`, y deja como "More Information Needed" los enlaces a codigo, paper y documentacion. No se declara licencia, idiomas, pipeline ni datos de entrenamiento. El repositorio tiene 0 descargas y 0 likes, y un tamano de 0.0 GB reportado, lo que es coherente con un modelo de ~6 millones de parametros (unos 25 MB en fp32, o ~12 MB en fp16).
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Shardul007/anlp-a3-mamba | 6,23 M | No disponible | No disponible | HuggingFace (0 descargas) |
-| Mamba-130M (state-spaces) | 130 M | 2048 (tipico) | Apache 2.0 | HuggingFace, ampliamente usado |
-| Mamba-370M (state-spaces) | 370 M | 2048 (tipico) | Apache 2.0 | HuggingFace, ampliamente usado |
-| GPT-2 small | 124 M | 1024 | MIT | HuggingFace, ampliamente usado |
+| Shardul007/anlp-a3-mamba | 6,23 M | No disponible | No disponible | Hugging Face (0 descargas) |
+| Mamba-130M (state-spaces) | 130 M | 2048 (tipico) | Apache 2.0 | Hugging Face, ampliamente usado |
+| Mamba-370M (state-spaces) | 370 M | 2048 (tipico) | Apache 2.0 | Hugging Face, ampliamente usado |
+| GPT-2 small | 124 M | 1024 | MIT | Hugging Face, ampliamente usado |
 
 La comparativa es orientativa: los modelos Mamba oficiales de `state-spaces` y GPT-2 small son ordenes de magnitud mayores en parametros y cuentan con documentacion, licencia y benchmarks publicados. `anlp-a3-mamba` no ofrece ninguno de esos elementos, por lo que no es un competidor directo sino un artefacto academico de escala muy inferior.
 
@@ -82,7 +82,7 @@ La comparativa es orientativa: los modelos Mamba oficiales de `state-spaces` y G
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shardul007/anlp-a3-mamba
+- Modelo en Hugging Face: https://huggingface.co/Shardul007/anlp-a3-mamba
 - Documentacion de `PyTorchModelHubMixin`: https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin
 - Paper de Mamba (referencia contextual, no vinculada al autor): https://arxiv.org/abs/2312.00752
 - Repositorio oficial de Mamba (referencia contextual): https://github.com/state-spaces/mamba

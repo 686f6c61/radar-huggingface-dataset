@@ -31,7 +31,7 @@ En cuanto al entrenamiento, la model card no proporciona detalles específicos s
 - Fine-tuning para tareas específicas de generación de texto, ya que al ser base no está alineado con instrucciones.
 - Ejecución multi-backend: la misma implementación funciona en TensorFlow, PyTorch y JAX, seleccionable mediante la variable de entorno `KERAS_BACKEND`.
 - Carga de pesos en diferentes precisiones: bfloat16 e int8, para adaptarse a distintos recursos de hardware.
-- Compatibilidad con safetensors originales de HuggingFace mediante el prefijo `hf:` en la carga de pesos.
+- Compatibilidad con safetensors originales de Hugging Face mediante el prefijo `hf:` en la carga de pesos.
 - No se documentan capacidades de tool calling, agentes, razonamiento multi-paso ni soporte multimodal (visión, audio) en esta conversión.
 
 ## Casos de uso
@@ -83,7 +83,7 @@ La principal diferencia con el modelo original es el framework: esta conversión
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/kerasformers/qwen2-1.5b)
+- [Modelo en Hugging Face](https://huggingface.co/kerasformers/qwen2-1.5b)
 - [Paper técnico de Qwen2 (arXiv:2407.10671)](https://arxiv.org/abs/2407.10671)
 - [Repositorio GitHub de KerasFormers](https://github.com/IMvision12/KerasFormers)
 - [Documentación de Qwen2 en KerasFormers](https://imvision12.github.io/KerasFormers/qwen2/)

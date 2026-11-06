@@ -6,7 +6,7 @@ Qwen3.5-0.8B-lobotomized-x2 es un modelo de lenguaje de pequeno tamano (752.393.
 
 La relevancia de esta publicacion es doble: por un lado, ofrece una version cuantizada en multiples precisiones (de Q2_K a f16) de un modelo de menos de mil millones de parametros, lo que permite ejecutarlo en hardware muy modesto; por otro, documenta un caso de cirugia de pesos en el espacio de parametros con tecnicas de descomposicion SVD, un area de investigacion activa en interpretabilidad mecanica.
 
-La model card es escasa en detalles tecnicos: no especifica la arquitectura interna, la longitud de contexto, el dataset de entrenamiento ni los resultados de evaluacion. La informacion disponible se limita a los metadatos de HuggingFace, la lista de cuantizaciones y las etiquetas del autor, que mencionan function calling, el Berkeley Function Calling Leaderboard e IFEval como areas de interes.
+La model card es escasa en detalles tecnicos: no especifica la arquitectura interna, la longitud de contexto, el dataset de entrenamiento ni los resultados de evaluacion. La informacion disponible se limita a los metadatos de Hugging Face, la lista de cuantizaciones y las etiquetas del autor, que mencionan function calling, el Berkeley Function Calling Leaderboard e IFEval como areas de interes.
 
 ## Especificaciones tecnicas
 
@@ -32,7 +32,7 @@ Las etiquetas del repositorio apuntan a un proceso de "weight-space programming"
 - Generacion de texto conversacional en ruso e ingles, segun los idiomas declarados.
 - Soporte de function calling, segun la etiqueta del repositorio y la referencia al Berkeley Function Calling Leaderboard.
 - Evaluacion orientada a instrucciones, con mencion explicita a IFEval en las etiquetas.
-- Compatibilidad con endpoints (etiqueta endpoints_compatible), lo que permite servir el modelo mediante APIs compatibles con el formato de HuggingFace.
+- Compatibilidad con endpoints (etiqueta endpoints_compatible), lo que permite servir el modelo mediante APIs compatibles con el formato de Hugging Face.
 - Capacidades multilingues limitadas a ru y en; no se declaran otros idiomas.
 - No se documentan capacidades de vision, audio, tool calling avanzado, agentes multi-paso ni modo de razonamiento explicito.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-0.8B-lobotomized-x2 (este) | 752 M | no disponible | Apache 2.0 | GGUF, safetensors | HuggingFace |
-| Qwen2.5-0.5B | 494 M | 32 K (segun documentacion publica de Qwen) | Apache 2.0 | safetensors, GGUF | HuggingFace |
-| Qwen2.5-1.5B | 1.540 M | 32 K (segun documentacion publica de Qwen) | Apache 2.0 | safetensors, GGUF | HuggingFace |
-| SmolLM2-1.7B | 1.700 M | 8 K (segun documentacion publica) | Apache 2.0 | safetensors, GGUF | HuggingFace |
+| Qwen3.5-0.8B-lobotomized-x2 (este) | 752 M | no disponible | Apache 2.0 | GGUF, safetensors | Hugging Face |
+| Qwen2.5-0.5B | 494 M | 32 K (segun documentacion publica de Qwen) | Apache 2.0 | safetensors, GGUF | Hugging Face |
+| Qwen2.5-1.5B | 1.540 M | 32 K (segun documentacion publica de Qwen) | Apache 2.0 | safetensors, GGUF | Hugging Face |
+| SmolLM2-1.7B | 1.700 M | 8 K (segun documentacion publica) | Apache 2.0 | safetensors, GGUF | Hugging Face |
 
 Nota: los datos de contexto y parametros de los modelos comparativos provienen de su documentacion publica habitual; no se dispone de resultados de benchmarks comparativos para este modelo en la informacion proporcionada.
 

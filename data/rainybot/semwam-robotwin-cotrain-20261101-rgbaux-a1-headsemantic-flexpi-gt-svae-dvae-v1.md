@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SemWAM-RoboTwin-CoTrain es un modelo de robotica desarrollado por RainyBot, publicado en HuggingFace como checkpoint intermedio de un pipeline de entrenamiento en curso. Se trata de un modelo de world-action (world model con cabeza de accion) disenado para el entorno de simulacion RoboTwin, que combina generacion de video latente, prediccion de profundidad, representaciones semanticas y prediccion de acciones en una sola arquitectura difusion (DiT). El checkpoint corresponde al paso de optimizador 12500 y el autor advierte explicitamente de que la finalizacion del entrenamiento no esta verificada.
+SemWAM-RoboTwin-CoTrain es un modelo de robotica desarrollado por RainyBot, publicado en Hugging Face como checkpoint intermedio de un pipeline de entrenamiento en curso. Se trata de un modelo de world-action (world model con cabeza de accion) disenado para el entorno de simulacion RoboTwin, que combina generacion de video latente, prediccion de profundidad, representaciones semanticas y prediccion de acciones en una sola arquitectura difusion (DiT). El checkpoint corresponde al paso de optimizador 12500 y el autor advierte explicitamente de que la finalizacion del entrenamiento no esta verificada.
 
 La relevancia tecnica del modelo reside en su diseno multi-modal y multi-objetivo: un Video DiT de 30 capas con atencion causal por primer frame, un Action DiT separado de 30 capas, proyecciones independientes para profundidad y semantica, y un bloque MoE parcial (capas 21, 24 y 27) con 4 expertos y experto compartido. El modelo usa un VAE semantico (svae) con 48 canales y un backbone DINOv3 ViT-B/16 para las caracteristicas semanticas, ademas de un DVAE para profundidad.
 
@@ -79,7 +79,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RainyBot/SemWAM-RoboTwin-CoTrain-20261101-RGBAux-A1-HeadSemantic-flexpi-gt-svae-dvae-v1
+- Hugging Face: https://huggingface.co/RainyBot/SemWAM-RoboTwin-CoTrain-20261101-RGBAux-A1-HeadSemantic-flexpi-gt-svae-dvae-v1
 - Repositorio o paper de RoboTwin: no disponible en la informacion proporcionada.
 - Paper o blog del autor: no disponible en la informacion proporcionada.
 - Demo o espacio interactivo: no disponible en la informacion proporcionada.

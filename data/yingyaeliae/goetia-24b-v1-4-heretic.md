@@ -82,7 +82,7 @@ Se trata de modelos de la misma categoría: merges creativos de 24B. No hay dato
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Yingyaeliae/Goetia-24B-v1.4-heretic
+- Hugging Face: https://huggingface.co/Yingyaeliae/Goetia-24B-v1.4-heretic
 - Modelo original: https://huggingface.co/Naphula/Goetia-24B-v1.4
 - Proyecto Heretic: https://heretic-project.org
 - Modelos base:

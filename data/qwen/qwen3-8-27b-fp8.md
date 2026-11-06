@@ -77,7 +77,7 @@ No se dispone de datos suficientes para comparar con modelos de otros fabricante
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Qwen/Qwen3.8-27B-FP8
+- Repositorio Hugging Face: https://huggingface.co/Qwen/Qwen3.8-27B-FP8
 - Documentación de despliegue con SGLang: https://docs.sglang.io/cookbook/autoregressive/Qwen/Qwen3.8-27B
 - Guía de especificaciones y hardware (Yottalabs): https://www.yottalabs.ai/post/qwen-3-8-27b-specs-hardware-requirements-how-to-run-2026
 - Guía de ejecución local (SWFTE): https://www.swfte.com/blog/qwen-3-8-27b-run-locally-self-host-guide-2026

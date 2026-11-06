@@ -6,7 +6,7 @@ Suri-Qwen-3.8-27B-Uncensored-MLX es una version cuantizada a 4 bits en formato M
 
 El problema que aborda es el de los desarrolladores que necesitan un modelo de gran tamano, con capacidades conversacionales, que no aplique rechazos automaticos sobre determinados temas, y que puedan ejecutar en hardware de consumo Apple sin depender de GPUs NVIDIA ni de APIs en la nube. Al estar cuantizado a 4 bits y usar MLX, el modelo es desplegable en equipos con memoria unificada moderada, algo que la version original en precision completa no permitiria con la misma facilidad.
 
-La relevancia de esta ficha es doble: por un lado, documenta un modelo de la categoria 27B con licencia no declarada y sin benchmarks publicados; por otro, es un ejemplo representativo de la corriente de modelos "uncensored" que circulan en HuggingFace con trazabilidad limitada sobre datos de entrenamiento, evaluacion y condiciones legales de uso. La fecha de creacion y ultima actualizacion del repositorio es el 26 de septiembre de 2026, con 0 descargas y 0 likes en el momento de la consulta.
+La relevancia de esta ficha es doble: por un lado, documenta un modelo de la categoria 27B con licencia no declarada y sin benchmarks publicados; por otro, es un ejemplo representativo de la corriente de modelos "uncensored" que circulan en Hugging Face con trazabilidad limitada sobre datos de entrenamiento, evaluacion y condiciones legales de uso. La fecha de creacion y ultima actualizacion del repositorio es el 26 de septiembre de 2026, con 0 descargas y 0 likes en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Suri-Qwen-3.8-27B-Uncensored-MLX | 26,9 mil millones | no disponible | 4 bits MLX | no disponible | safetensors MLX | HuggingFace, 0 descargas |
-| SpaceTimee/Suri-Qwen-3.8-27B-Uncensored (modelo base) | no disponible | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| Suri-Qwen-3.8-27B-Uncensored-MLX | 26,9 mil millones | no disponible | 4 bits MLX | no disponible | safetensors MLX | Hugging Face, 0 descargas |
+| SpaceTimee/Suri-Qwen-3.8-27B-Uncensored (modelo base) | no disponible | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | Otros modelos Qwen de clase 27B | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos verificables de modelos alternativos en la informacion proporcionada (parametros, contexto, rendimiento ni licencia de las alternativas), por lo que la comparativa cuantitativa no puede completarse sin recurrir a fuentes externas.
@@ -95,7 +95,7 @@ No se dispone de datos verificables de modelos alternativos en la informacion pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SpaceTimee/Suri-Qwen-3.8-27B-Uncensored-MLX
+- Modelo en Hugging Face: https://huggingface.co/SpaceTimee/Suri-Qwen-3.8-27B-Uncensored-MLX
 - Modelo base: https://huggingface.co/SpaceTimee/Suri-Qwen-3.8-27B-Uncensored
 - Perfil del autor en linux.do: https://linux.do/u/spacetime
 - Contacto del autor (correo): Zeus6_6@163.com

@@ -80,7 +80,7 @@ No se han identificado otros modelos especializados en generación de workflows 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Rom3rk/Qwen3.8-27B-ComfyUI-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Rom3rk/Qwen3.8-27B-ComfyUI-GGUF
 - Modelo base (fine-tune): https://huggingface.co/Rom3rk/Qwen3.8-27B-ComfyUI
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.8-27B
 - GGUF de Unsloth: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF

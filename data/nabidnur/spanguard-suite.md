@@ -98,7 +98,7 @@ No se dispone de datos de benchmarks de modelos de terceros comparables en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Nabidnur/spanguard-suite
+- Repositorio Hugging Face: https://huggingface.co/Nabidnur/spanguard-suite
 - Proyecto en GitHub: https://github.com/Hisernberg/spanguard
 - Release v5.0.0: https://github.com/Hisernberg/spanguard/releases/tag/v5.0.0
 - Showcase en vivo: https://hisernberg.github.io/spanguard/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`earteaga7/bert-amazon-sentimientos-es` es un modelo de clasificacion de texto especializado en analisis de sentimientos, obtenido mediante fine-tuning de `google-bert/bert-base-multilingual-cased` sobre el dataset `mteb/amazon_reviews_multi`. Lo desarrolla el usuario de HuggingFace earteaga7 y esta orientado a clasificar resenas de productos de Amazon en tres idiomas declarados: espanol, ingles y frances. El pipeline asociado es `text-classification` y la licencia es Apache 2.0.
+`earteaga7/bert-amazon-sentimientos-es` es un modelo de clasificacion de texto especializado en analisis de sentimientos, obtenido mediante fine-tuning de `google-bert/bert-base-multilingual-cased` sobre el dataset `mteb/amazon_reviews_multi`. Lo desarrolla el usuario de Hugging Face earteaga7 y esta orientado a clasificar resenas de productos de Amazon en tres idiomas declarados: espanol, ingles y frances. El pipeline asociado es `text-classification` y la licencia es Apache 2.0.
 
 El modelo parte de la arquitectura BERT multilingue (transformer encoder bidireccional), un clasico para tareas de clasificacion de secuencias. Al derivar de la variante `cased`, conserva la distincion entre mayusculas y minusculas, lo que puede ser relevante en resenas con nombres de producto o marcas. El vocabulario multilingue del modelo base permite abordar los tres idiomas indicados sin necesidad de modelos separados.
 
@@ -19,7 +19,7 @@ La relevancia de esta ficha es limitada por la escasez de informacion publicada:
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | es, en, fr |
 | Licencia | Apache 2.0 |
-| Formato de pesos | no disponible (se infiere safetensors/PyTorch por el formato estandar de HuggingFace, pero no se confirma) |
+| Formato de pesos | no disponible (se infiere safetensors/PyTorch por el formato estandar de Hugging Face, pero no se confirma) |
 
 ## Arquitectura y entrenamiento
 
@@ -81,7 +81,7 @@ La comparativa es orientativa: el modelo de earteaga7 no publica metricas, por l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/earteaga7/bert-amazon-sentimientos-es
+- Modelo en Hugging Face: https://huggingface.co/earteaga7/bert-amazon-sentimientos-es
 - Modelo base: https://huggingface.co/google-bert/bert-base-multilingual-cased
 - Dataset de entrenamiento: https://huggingface.co/datasets/mteb/amazon_reviews_multi
 - Paper de referencia sobre impacto ambiental (citado en la model card): https://arxiv.org/abs/1910.09700

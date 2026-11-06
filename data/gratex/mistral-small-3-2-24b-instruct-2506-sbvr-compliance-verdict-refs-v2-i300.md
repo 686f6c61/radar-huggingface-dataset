@@ -119,9 +119,9 @@ No se han identificado en la información disponible otros modelos especializado
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (refs-v2-i300) | 24,01 B (denso) | no disponible | Veredictos SBVR con citas, corpus refs-v2 de 1.647 registros | apache-2.0 | HuggingFace, 0 descargas, 0 likes en el momento de la ficha |
-| Mistral-Small-3.2-24B-Instruct-2506 (base) | 24 B (denso) | no disponible en la información disponible | Instrucciones generales, imagen y texto, function calling | apache-2.0 (modelo base de Mistral AI) | HuggingFace, ampliamente distribuido |
-| v1 unresolvable-pattern-finetune | 24 B (denso) | no disponible | Patrones de no resolubilidad, 600 registros, LoRA atención r16/alpha16, 180 iteraciones | apache-2.0 | HuggingFace, publicado y usable en paralelo |
+| Este modelo (refs-v2-i300) | 24,01 B (denso) | no disponible | Veredictos SBVR con citas, corpus refs-v2 de 1.647 registros | apache-2.0 | Hugging Face, 0 descargas, 0 likes en el momento de la ficha |
+| Mistral-Small-3.2-24B-Instruct-2506 (base) | 24 B (denso) | no disponible en la información disponible | Instrucciones generales, imagen y texto, function calling | apache-2.0 (modelo base de Mistral AI) | Hugging Face, ampliamente distribuido |
+| v1 unresolvable-pattern-finetune | 24 B (denso) | no disponible | Patrones de no resolubilidad, 600 registros, LoRA atención r16/alpha16, 180 iteraciones | apache-2.0 | Hugging Face, publicado y usable en paralelo |
 
 ## Limitaciones y advertencias
 
@@ -138,7 +138,7 @@ No se han identificado en la información disponible otros modelos especializado
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gratex/Mistral-Small-3.2-24B-Instruct-2506-sbvr-compliance-verdict-refs-v2-i300
+- Modelo en Hugging Face: https://huggingface.co/gratex/Mistral-Small-3.2-24B-Instruct-2506-sbvr-compliance-verdict-refs-v2-i300
 - Modelo predecesor v1 (checkpoint de partida): https://huggingface.co/gratex/Mistral-Small-3.2-24B-Instruct-2506-sbvr-compliance-unresolvable-pattern-finetune-v1
 - README del modelo v1: https://huggingface.co/gratex/Mistral-Small-3.2-24B-Instruct-2506-sbvr-compliance-unresolvable-pattern-finetune-v1/blob/main/README.md
 - Modelo base: https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506

@@ -58,7 +58,7 @@ Estos datos indican que la ablacion reduce drasticamente el rechazo, pero tambie
 - El checkpoint en safetensors ocupa 17,9 GB, lo que sugiere pesos en fp16 (8,95B parametros x 2 bytes). Para inferencia en fp16 se necesitan aproximadamente 18 GB de VRAM.
 - GPU recomendadas: RTX 4090 (24 GB), A100 (40/80 GB), H100 (80 GB) o similares. En GPUs con menos de 18 GB, seria necesario cuantizar el modelo a fp8, int8 o formatos como GGUF.
 - No se incluyen cuantizaciones en el repo, pero el modelo puede convertirse a GGUF (por ejemplo, Q4_K_M, que en versiones similares ocupa unos 6,3 GB) para ejecutarse en hardware de consumo como una RTX 3060 (12 GB) o incluso en CPU con llama.cpp.
-- Opciones de despliegue: vLLM, TGI, llama.cpp, Ollama (si se convierte a GGUF), o directamente con transformers de HuggingFace.
+- Opciones de despliegue: vLLM, TGI, llama.cpp, Ollama (si se convierte a GGUF), o directamente con transformers de Hugging Face.
 - Latencia y throughput: no se han publicado datos especificos para este checkpoint. Como referencia, un modelo de 9B en fp16 en una A100 suele generar entre 20 y 50 tokens por segundo, dependiendo de la implementacion y el batch.
 
 ## Comparativa con modelos similares
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes. La prin
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/knoveleng/Qwen3.5-9B-Uncensored
+- Repositorio Hugging Face: https://huggingface.co/knoveleng/Qwen3.5-9B-Uncensored
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Implementacion orthex: https://github.com/knoveleng/orthex
 - Paper de referencia: https://arxiv.org/abs/2406.11717

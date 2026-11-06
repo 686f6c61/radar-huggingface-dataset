@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PMLLM-Qwen3-VL-8B-DrGRPO-GGUF | 8,19B | no disponible | si (mmproj) | no disponible | GGUF en HuggingFace |
+| PMLLM-Qwen3-VL-8B-DrGRPO-GGUF | 8,19B | no disponible | si (mmproj) | no disponible | GGUF en Hugging Face |
 | Qwen3-VL-8B (base de la familia) | ~8B | no disponible en esta ficha | si | segun la familia Qwen (no confirmada para este ajuste) | safetensors y GGUF de terceros |
 | Llama 3.1 8B Instruct | 8,03B | 128K | no | Llama 3.1 Community License | amplia disponibilidad en GGUF |
 | Gemma 2 9B Instruct | 9,24B | 8K | no | Gemma Terms of Use | amplia disponibilidad en GGUF |

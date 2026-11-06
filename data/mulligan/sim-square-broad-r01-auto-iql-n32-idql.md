@@ -107,13 +107,13 @@ No disponible. La informacion proporcionada no incluye otros agentes IDQL compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-broad-r01-auto-iql-n32-idql
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-broad-r01-auto-iql-n32-idql
 - Proyecto Mulligan: https://mulligan.page
 - Evaluaciones (Policy Arena): https://arena.mulligan.page
-- Organizacion en HuggingFace: https://huggingface.co/mulligan
+- Organizacion en Hugging Face: https://huggingface.co/mulligan
 - Dataset de entrenamiento (teleoperacion): https://huggingface.co/datasets/mulligan/sim-square-broad-c00-teleop-baseline
 - Dataset de entrenamiento (rollouts de politica IQL): https://huggingface.co/datasets/mulligan/sim-square-broad-c01-auto-iql-n32-policy-rollouts
 - Dataset de evaluacion: https://huggingface.co/datasets/mulligan/sim-square-broad-r00-r03-eval
 - Dataset que referencia a este modelo (rollouts posteriores): https://huggingface.co/datasets/mulligan/sim-square-broad-c02-auto-iql-n32-policy-rollouts
 
-Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo ni sobre el proyecto Mulligan; los enlaces anteriores proceden exclusivamente de la model card y de los metadatos de HuggingFace. No se dispone de paper, blog tecnico ni repositorio de codigo publico adicional en la informacion proporcionada.
+Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo ni sobre el proyecto Mulligan; los enlaces anteriores proceden exclusivamente de la model card y de los metadatos de Hugging Face. No se dispone de paper, blog tecnico ni repositorio de codigo publico adicional en la informacion proporcionada.

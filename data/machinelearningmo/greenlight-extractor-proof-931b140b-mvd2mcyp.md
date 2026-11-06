@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| greenlight-extractor-proof | 4,02 B | No disponible | Apache 2.0 | HuggingFace, repo de 3,4 GB | Prueba de integración con 16 ejemplos y 4 pasos; sin benchmarks |
-| Qwen/Qwen3-4B-Instruct-2507 (base) | 4,02 B | 262.144 tokens según la documentación pública de Qwen | Apache 2.0 | HuggingFace | Modelo de referencia frente al que medir cualquier regresión del derivado |
-| Llama-3.2-3B-Instruct | 3,21 B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, amplio ecosistema de cuantizaciones | Alternativa de tamaño similar con licencia no Apache; requiere revisión de términos comerciales |
-| Qwen2.5-7B-Instruct | 7,62 B | 131.072 tokens | Apache 2.0 | HuggingFace | Mayor tamaño y coste de inferencia; útil si la calidad del base de 4B resulta insuficiente |
+| greenlight-extractor-proof | 4,02 B | No disponible | Apache 2.0 | Hugging Face, repo de 3,4 GB | Prueba de integración con 16 ejemplos y 4 pasos; sin benchmarks |
+| Qwen/Qwen3-4B-Instruct-2507 (base) | 4,02 B | 262.144 tokens según la documentación pública de Qwen | Apache 2.0 | Hugging Face | Modelo de referencia frente al que medir cualquier regresión del derivado |
+| Llama-3.2-3B-Instruct | 3,21 B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, amplio ecosistema de cuantizaciones | Alternativa de tamaño similar con licencia no Apache; requiere revisión de términos comerciales |
+| Qwen2.5-7B-Instruct | 7,62 B | 131.072 tokens | Apache 2.0 | Hugging Face | Mayor tamaño y coste de inferencia; útil si la calidad del base de 4B resulta insuficiente |
 
 No se dispone de datos de rendimiento comparado (MMLU, HumanEval, GSM8K ni evaluaciones de extracción) para este derivado, por lo que la comparativa se limita a parámetros, contexto, licencia y disponibilidad.
 
@@ -86,6 +86,6 @@ No se dispone de datos de rendimiento comparado (MMLU, HumanEval, GSM8K ni evalu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/machinelearningmo/greenlight-extractor-proof-931b140b-mvd2mcyp
+- Modelo en Hugging Face: https://huggingface.co/machinelearningmo/greenlight-extractor-proof-931b140b-mvd2mcyp
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Repositorio del proyecto Greenlight: https://github.com/ManagementMO/greenlight

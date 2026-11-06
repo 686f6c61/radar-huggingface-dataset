@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `shabieh2/tags_muse_0814v3` es un ajuste fino (fine-tune) del modelo base `unsloth/muse-glimmer-30b-unsloth-bnb-4bit`, un modelo de lenguaje de 30 mil millones de parámetros cuantizado a 4 bits mediante la librería `bitsandbytes`. El autor, `shabieh2`, ha subido este modelo a HuggingFace con licencia Apache 2.0 y soporte únicamente para inglés. El entrenamiento se realizó con la herramienta Unsloth, que acelera el proceso de ajuste fino, aunque no se proporcionan detalles sobre el conjunto de datos ni las técnicas de entrenamiento empleadas.
+El modelo `shabieh2/tags_muse_0814v3` es un ajuste fino (fine-tune) del modelo base `unsloth/muse-glimmer-30b-unsloth-bnb-4bit`, un modelo de lenguaje de 30 mil millones de parámetros cuantizado a 4 bits mediante la librería `bitsandbytes`. El autor, `shabieh2`, ha subido este modelo a Hugging Face con licencia Apache 2.0 y soporte únicamente para inglés. El entrenamiento se realizó con la herramienta Unsloth, que acelera el proceso de ajuste fino, aunque no se proporcionan detalles sobre el conjunto de datos ni las técnicas de entrenamiento empleadas.
 
 Este modelo está orientado a tareas de generación de texto, probablemente como un asistente conversacional o un generador de contenido, dado el uso de `trl` y `text-generation-inference` en las etiquetas. La relevancia actual radica en que ofrece una alternativa de 30B parámetros con cuantización 4-bit, lo que permite su ejecución en hardware de consumo con suficiente VRAM. Sin embargo, la información pública es muy limitada y no se han publicado especificaciones detalladas ni resultados de evaluación.
 
@@ -69,6 +69,6 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/shabieh2/tags_muse_0814v3)
+- [Modelo en Hugging Face](https://huggingface.co/shabieh2/tags_muse_0814v3)
 - [Modelo base: unsloth/muse-glimmer-30b-unsloth-bnb-4bit](https://huggingface.co/unsloth/muse-glimmer-30b-unsloth-bnb-4bit) (no se ha verificado su existencia)
 - [Unsloth (herramienta de entrenamiento)](https://github.com/unslothai/unsloth)

@@ -94,7 +94,7 @@ Las diferencias entre las dos primeras filas son exclusivamente de empaquetado: 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TULLUS/codeparrot-small-multi-F32
+- Modelo en Hugging Face: https://huggingface.co/TULLUS/codeparrot-small-multi-F32
 - Modelo base original: https://huggingface.co/codeparrot/codeparrot-small-multi
 - Variante solo Python citada en la card: https://huggingface.co/codeparrot/codeparrot-small
 - Dataset de entrenamiento: https://huggingface.co/datasets/codeparrot/github-code-clean

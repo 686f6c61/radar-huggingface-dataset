@@ -80,7 +80,7 @@ La comparativa es estructural, no de rendimiento, ya que no se dispone de datos 
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo: https://huggingface.co/mradermacher/Qwen3.8-4B-Distill-i1-GGUF
+- Repositorio Hugging Face de este modelo: https://huggingface.co/mradermacher/Qwen3.8-4B-Distill-i1-GGUF
 - Repositorio estático con los quants GGUF: https://huggingface.co/mradermacher/Qwen3.8-4B-Distill-GGUF
 - Modelo base (empero-ai): https://huggingface.co/empero-ai/Qwen3.8-4B-Distill
 - Variante "heretic" (abliterada): https://huggingface.co/mradermacher/Qwen3.8-4B-Distill-heretic-i1-GGUF
@@ -167,7 +167,7 @@ La comparación es estructural, no de rendimiento, ya que no se dispone de datos
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo: https://huggingface.co/mradermacher/Qwen3.8-4B-Distill-i1-GGUF
+- Repositorio Hugging Face de este modelo: https://huggingface.co/mradermacher/Qwen3.8-4B-Distill-i1-GGUF
 - Repositorio estático con los quants GGUF: https://huggingface.co/mradermacher/Qwen3.8-4B-Distill-GGUF
 - Modelo base (empero-ai): https://huggingface.co/empero-ai/Qwen3.8-4B-Distill
 - Variante "heretic" (abliterada): https://huggingface.co/mradermacher/Qwen3.8-4B-Distill-heretic-i1-GGUF

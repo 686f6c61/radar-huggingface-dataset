@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mangojoshua/poolformer-multitask` es un repositorio de HuggingFace que contiene una implementación de Poolformer orientada a tareas multitarea, publicada por el usuario mangojoshua bajo licencia Apache 2.0. No se trata de un modelo entrenado ni de una release lista para producción: según la propia model card, el checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo (smoke tests), no un modelo con pesos entrenados ni evaluados en benchmarks.
+`mangojoshua/poolformer-multitask` es un repositorio de Hugging Face que contiene una implementación de Poolformer orientada a tareas multitarea, publicada por el usuario mangojoshua bajo licencia Apache 2.0. No se trata de un modelo entrenado ni de una release lista para producción: según la propia model card, el checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo (smoke tests), no un modelo con pesos entrenados ni evaluados en benchmarks.
 
 El repositorio incluye el código de implementación (`finetune.py`), la configuración de arquitectura (`config.json`), una receta de experimento por defecto (`training_args.json`) y el checkpoint de inicialización. La arquitectura declarada es Poolformer en variante "giant", con atención de tipo grouped query, fusión mediante concat MLP, activación GELU y normalización ScaleNorm.
 
@@ -79,6 +79,6 @@ La comparación con implementaciones oficiales de Poolformer es la más pertinen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mangojoshua/poolformer-multitask
+- Modelo en Hugging Face: https://huggingface.co/mangojoshua/poolformer-multitask
 - Repositorio oficial de PoolFormer (MetaFormer): https://github.com/sail-sg/poolformer
 - Paper MetaFormer (PoolFormer): https://arxiv.org/abs/2111.11418

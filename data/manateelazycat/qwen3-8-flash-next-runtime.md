@@ -72,9 +72,9 @@ Comparativa de artefactos de distribucion asociados al mismo modelo:
 
 | Artefacto | Contenido | Uso previsto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| manateelazycat/Qwen3.8-Flash-Next-Runtime | Imagenes Docker/OCI con kernels y ajustes FP8/atencion, 15,4 GB | Entorno de ejecucion sobre Jetson Thor | other | Publico en HuggingFace |
-| manateelazycat/Qwen3.8-Flash-Next-SGLang-Thor | Shards objetivo FP8, metadatos SGLang, drafter NVFP4, mapa de vocabulario de borrador de 32.768 tokens y cabeza FP8 reducida | Artefacto de despliegue de inferencia (no es un modelo autonomo) | no disponible | Publico en HuggingFace |
-| Qwen/Qwen3.8-Flash-Next | Pesos completos del modelo, 125B totales / 6B activos, contexto 262.144 tokens | Modelo base y referencia de exactitud | no disponible | Publico en HuggingFace |
+| manateelazycat/Qwen3.8-Flash-Next-Runtime | Imagenes Docker/OCI con kernels y ajustes FP8/atencion, 15,4 GB | Entorno de ejecucion sobre Jetson Thor | other | Publico en Hugging Face |
+| manateelazycat/Qwen3.8-Flash-Next-SGLang-Thor | Shards objetivo FP8, metadatos SGLang, drafter NVFP4, mapa de vocabulario de borrador de 32.768 tokens y cabeza FP8 reducida | Artefacto de despliegue de inferencia (no es un modelo autonomo) | no disponible | Publico en Hugging Face |
+| Qwen/Qwen3.8-Flash-Next | Pesos completos del modelo, 125B totales / 6B activos, contexto 262.144 tokens | Modelo base y referencia de exactitud | no disponible | Publico en Hugging Face |
 | Cuantizacion oficial FP8 de Qwen (via Modal) | FP8 de grano fino, block size 128, rendimiento reportado casi identico a bf16 | Inferencia eficiente del modelo base | no disponible | Publico |
 
 No se dispone de datos de rendimiento comparado entre estas variantes en la informacion proporcionada, por lo que no es posible establecer cual ofrece mejor latencia o exactitud.
@@ -93,9 +93,9 @@ No se dispone de datos de rendimiento comparado entre estas variantes en la info
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/manateelazycat/Qwen3.8-Flash-Next-Runtime
+- Repositorio en Hugging Face: https://huggingface.co/manateelazycat/Qwen3.8-Flash-Next-Runtime
 - Shards optimizados para SGLang en Thor: https://huggingface.co/manateelazycat/Qwen3.8-Flash-Next-SGLang-Thor
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio GitHub de Qwen3.8-Flash-Next: https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - README del modelo en GitHub: https://github.com/QwenLM/Qwen3.8-Flash-Next/blob/main/README.md
 - Ficha de la cuantizacion FP8 oficial en Modal: https://modal.com/library/qwen/qwen3-8-flash-next-fp8

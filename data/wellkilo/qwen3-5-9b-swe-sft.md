@@ -93,7 +93,7 @@ Diferencias estructurales destacables: este adaptador no es desplegable por si s
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/wellkilo/qwen3.5-9b-swe-sft
+- Adaptador en Hugging Face: https://huggingface.co/wellkilo/qwen3.5-9b-swe-sft
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Revision del modelo base indicada por el autor: `c202236235762e1c871ad0ccb60c8ee5ba337b9a`
 - Paper, blog o repositorio del adaptador: no disponible

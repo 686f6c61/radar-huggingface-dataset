@@ -13,12 +13,12 @@ Su relevancia practica es la habitual de los repositorios de cuantizacion: permi
 | Parametro | Valor |
 |---|---|
 | Arquitectura | no disponible (el nombre del modelo apunta a la familia Gemma; no confirmado en la model card) |
-| Parametros totales | 694,291 segun los safetensors del modelo base (unidad no especificada en la ficha de HuggingFace; la lectura mas plausible es 694,291 millones) |
+| Parametros totales | 694,291 segun los safetensors del modelo base (unidad no especificada en la ficha de Hugging Face; la lectura mas plausible es 694,291 millones) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, Q2_K_S, Q2_K, IQ3_XXS, IQ3_XS, IQ3_S, IQ3_M, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, IQ4_NL (small-IQ4_NL), Q4_0, Q4_1, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | GGUF (24 cuantizaciones); el modelo de origen esta en formato HuggingFace (`convert_type: hf`) |
+| Formato de pesos | GGUF (24 cuantizaciones); el modelo de origen esta en formato Hugging Face (`convert_type: hf`) |
 
 Metadatos adicionales del proceso de conversion: `quantize_version: 2`, `output_tensor_quantised: 1`, `vocab_type: ` (vacio), `skip_mmproj: ` (vacio), etiqueta `nicoboss`. Las cuantizaciones se han generado con enfoque ponderado / imatrix, es decir, usando una matriz de importancia para priorizar la precision de los tensores mas sensibles.
 
@@ -26,7 +26,7 @@ Metadatos adicionales del proceso de conversion: `quantize_version: 2`, `output_
 
 No hay informacion disponible en la model card sobre la arquitectura interna del modelo base, el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de alineacion como RLHF, DPO o ajuste supervisado. El unico indicio es el nombre `gemma-4-E2B-home-assistant`, que sugiere una variante pequena de la familia Gemma ajustada para el dominio de Home Assistant, pero esto no se puede confirmar con la documentacion aportada.
 
-Respecto al proceso de cuantizacion, si hay datos concretos: se ha partido de un modelo en formato HuggingFace y se ha convertido a GGUF con `quantize_version: 2` y cuantizacion de tensores de salida activada (`output_tensor_quantised: 1`). Las cuantizaciones son de tipo ponderado con imatrix, una tecnica que calibra el error de cuantizacion por tensor usando estadisticas de activaciones, lo que en la practica mejora la calidad de las cuantizaciones agresivas (Q2, Q3 e IQ) frente a una cuantizacion uniforme. No se especifica si se incluye el proyector multimodal (`skip_mmproj` aparece vacio) ni el tipo de vocabulario utilizado.
+Respecto al proceso de cuantizacion, si hay datos concretos: se ha partido de un modelo en formato Hugging Face y se ha convertido a GGUF con `quantize_version: 2` y cuantizacion de tensores de salida activada (`output_tensor_quantised: 1`). Las cuantizaciones son de tipo ponderado con imatrix, una tecnica que calibra el error de cuantizacion por tensor usando estadisticas de activaciones, lo que en la practica mejora la calidad de las cuantizaciones agresivas (Q2, Q3 e IQ) frente a una cuantizacion uniforme. No se especifica si se incluye el proyector multimodal (`skip_mmproj` aparece vacio) ni el tipo de vocabulario utilizado.
 
 ## Capacidades
 
@@ -80,7 +80,7 @@ No se dispone de datos de benchmarks ni de especificaciones verificadas de model
 | Modelo | Formato | Tamano del repo | Cuantizaciones | Licencia | Datos de rendimiento |
 |---|---|---|---|---|---|
 | mradermacher/gemma-4-E2B-home-assistant-i1-GGUF | GGUF | 0,0 GB declarados | 24 variantes | no disponible | no disponible |
-| mewse/gemma-4-E2B-home-assistant | HuggingFace (`convert_type: hf`) | no disponible | no aplica (pesos originales) | no disponible | no disponible |
+| mewse/gemma-4-E2B-home-assistant | Hugging Face (`convert_type: hf`) | no disponible | no aplica (pesos originales) | no disponible | no disponible |
 | Otras cuantizaciones GGUF de modelos pequenos de la familia Gemma | GGUF | no disponible | no disponible | segun modelo base | no disponible |
 
 ## Limitaciones y advertencias
@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks ni de especificaciones verificadas de model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/gemma-4-E2B-home-assistant-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/gemma-4-E2B-home-assistant-i1-GGUF
 - Modelo base: https://huggingface.co/mewse/gemma-4-E2B-home-assistant
 - Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher
 - Busqueda web realizada: sin resultados relevantes. Los enlaces devueltos corresponden a foros de desarrollo de Roblox y no guardan relacion con este modelo, por lo que se omiten.

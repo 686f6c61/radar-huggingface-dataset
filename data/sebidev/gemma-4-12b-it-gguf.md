@@ -90,7 +90,7 @@ No se dispone de cifras de rendimiento comparadas para poblarlas con datos verif
 
 ## Enlaces
 
-- HuggingFace (repositorio analizado): https://huggingface.co/sebidev/gemma-4-12b-it-GGUF
+- Hugging Face (repositorio analizado): https://huggingface.co/sebidev/gemma-4-12b-it-GGUF
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Cuantizaciones de ggml-org: https://huggingface.co/ggml-org/gemma-4-12B-it-GGUF
 - Versión alternativa (heretic): https://huggingface.co/SC117/Gemma-4-12B-it-heretic-GGUF

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-bert-finetuned-ner es un modelo de clasificacion de tokens (token classification) publicado por el usuario glebustim en HuggingFace, obtenido mediante fine-tuning supervisado de BAAI/bge-small-en-v1.5, un encoder tipo BERT de aproximadamente 33 millones de parametros. El modelo resuelve tareas de reconocimiento de entidades nombradas (NER): recibe una secuencia de texto y devuelve una etiqueta por token, lo que permite extraer personas, organizaciones, lugares u otras categorias definidas por el dataset de entrenamiento.
+bert-finetuned-ner es un modelo de clasificacion de tokens (token classification) publicado por el usuario glebustim en Hugging Face, obtenido mediante fine-tuning supervisado de BAAI/bge-small-en-v1.5, un encoder tipo BERT de aproximadamente 33 millones de parametros. El modelo resuelve tareas de reconocimiento de entidades nombradas (NER): recibe una secuencia de texto y devuelve una etiqueta por token, lo que permite extraer personas, organizaciones, lugares u otras categorias definidas por el dataset de entrenamiento.
 
 La relevancia de esta ficha es acotada y conviene ser explicito: se trata de un artefacto derivado de un entrenamiento automatico con la libreria Trainer de transformers. La model card no documenta el dataset utilizado ("unknown dataset"), ni el conjunto de etiquetas, ni el idioma de los datos, y el model-index no contiene resultados declarados. El repositorio registra 0 descargas y 0 likes en el momento de la consulta.
 
@@ -93,7 +93,7 @@ No se dispone de datos de benchmark comparativos en la informacion proporcionada
 
 | Modelo | Parametros | Contexto | Dataset de ajuste | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| glebustim/bert-finetuned-ner | 33,2 M | no confirmado (base: 512 tokens) | no disponible | MIT | HuggingFace (0 descargas) |
+| glebustim/bert-finetuned-ner | 33,2 M | no confirmado (base: 512 tokens) | no disponible | MIT | Hugging Face (0 descargas) |
 | dslim/bert-base-NER | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 | Jean-Baptiste/roberta-large-ner-english | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 
@@ -111,7 +111,7 @@ No se dispone de datos de benchmark comparativos en la informacion proporcionada
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/glebustim/bert-finetuned-ner
+- Modelo en Hugging Face: https://huggingface.co/glebustim/bert-finetuned-ner
 - Modelo base: https://huggingface.co/BAAI/bge-small-en-v1.5
 - Paper de referencia de la familia BGE (modelo base, no citado en la model card): https://arxiv.org/abs/2309.07597
 - Repositorio o demo adicionales: no disponible en la informacion proporcionada.

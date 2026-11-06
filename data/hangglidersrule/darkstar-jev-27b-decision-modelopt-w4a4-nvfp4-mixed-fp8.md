@@ -99,7 +99,7 @@ La comparativa se limita a las tres configuraciones medidas en la model card; no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HangGlidersRule/Darkstar-JEV-27B-Decision-ModelOpt-W4A4-NVFP4-Mixed-FP8
+- Modelo en Hugging Face: https://huggingface.co/HangGlidersRule/Darkstar-JEV-27B-Decision-ModelOpt-W4A4-NVFP4-Mixed-FP8
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Adaptador de decisión: https://huggingface.co/autotrust/JEV-27B
 - Baseline cuantizado de NVIDIA: https://huggingface.co/nvidia/Qwen3.8-27B-NVFP4

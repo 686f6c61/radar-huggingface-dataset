@@ -73,9 +73,9 @@ En las 162 peticiones de WildChat que v4 reescribió efectivamente, la tasa de v
 
 | Modelo | Parámetros | Contexto | Función | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen2.5-3b-prompt-optimizer-v4-lora | Adaptador LoRA sobre 3B | No disponible | Reescritura de prompts en coreano | qwen-research (uso comercial restringido) | HuggingFace, 0 descargas |
-| qwen2.5-3b-prompt-optimizer-v3-lora | Adaptador LoRA sobre 3B | No disponible | Reescritura de prompts en coreano con encabezados estructurados | qwen-research | HuggingFace |
-| Qwen2.5-3B-Instruct | 3B | Hasta 32 768 tokens (según ficha del modelo base) | Instrucciones generales, multilingüe | qwen-research | HuggingFace, ampliamente utilizado |
+| qwen2.5-3b-prompt-optimizer-v4-lora | Adaptador LoRA sobre 3B | No disponible | Reescritura de prompts en coreano | qwen-research (uso comercial restringido) | Hugging Face, 0 descargas |
+| qwen2.5-3b-prompt-optimizer-v3-lora | Adaptador LoRA sobre 3B | No disponible | Reescritura de prompts en coreano con encabezados estructurados | qwen-research | Hugging Face |
+| Qwen2.5-3B-Instruct | 3B | Hasta 32 768 tokens (según ficha del modelo base) | Instrucciones generales, multilingüe | qwen-research | Hugging Face, ampliamente utilizado |
 
 No se dispone de datos de benchmarks comparativos con otros adaptadores de optimización de prompts en la información proporcionada.
 
@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks comparativos con otros adaptadores de optim
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Wasteland0103/qwen2.5-3b-prompt-optimizer-v4-lora
+- Hugging Face: https://huggingface.co/Wasteland0103/qwen2.5-3b-prompt-optimizer-v4-lora
 - Versión anterior v3: https://huggingface.co/Wasteland0103/qwen2.5-3b-prompt-optimizer-v3-lora
 - Modelo base Qwen2.5-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Licencia Qwen Research: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct/blob/main/LICENSE

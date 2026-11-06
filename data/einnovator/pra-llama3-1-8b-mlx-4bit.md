@@ -83,7 +83,7 @@ No hay información suficiente en el repo o en la búsqueda web para comparar es
 
 ## Enlaces
 
-- [Repositorio HuggingFace del bundle](https://huggingface.co/EInnovator/pra-llama3-1-8b-mlx-4bit)
+- [Repositorio Hugging Face del bundle](https://huggingface.co/EInnovator/pra-llama3-1-8b-mlx-4bit)
 - [Modelo base (MLX 4-bit)](https://huggingface.co/mlx-community/Meta-Llama-3.1-8B-Instruct-4bit)
 - [Documentación de PRA](https://einnovator.github.io/pdattention/)
 - [Repositorio fuente de PRA](https://github.com/einnova) (enlace incompleto en la model card)

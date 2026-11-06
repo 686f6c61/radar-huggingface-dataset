@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Moss-image-anime-lora es un adaptador LoRA de estilo (text-to-image) para la familia de modelos de difusion MOSS-Image del proyecto OpenMOSS. Lo publica el usuario axiomofmind en HuggingFace y su funcion es desplazar el estilo visual del modelo base hacia un anime de tono seinen: accion dramatica, iluminacion cinematografica, siluetas marcadas, entornos densos y personajes adultos expresivos. No es un modelo autonomo: requiere cargar OpenMOSS-Team/MOSS-Image-SFT (o MOSS-Image-Base) y aplicar el adaptador encima.
+Moss-image-anime-lora es un adaptador LoRA de estilo (text-to-image) para la familia de modelos de difusion MOSS-Image del proyecto OpenMOSS. Lo publica el usuario axiomofmind en Hugging Face y su funcion es desplazar el estilo visual del modelo base hacia un anime de tono seinen: accion dramatica, iluminacion cinematografica, siluetas marcadas, entornos densos y personajes adultos expresivos. No es un modelo autonomo: requiere cargar OpenMOSS-Team/MOSS-Image-SFT (o MOSS-Image-Base) y aplicar el adaptador encima.
 
 El repositorio incluye dos checkpoints (2.000 pasos como canonico y 1.500 pasos como alternativo), una variante convertida para ComfyUI y una conversion GGUF publicada en un repositorio aparte. El tamano del repo es de 0,3 GB y el fichero LoRA para ComfyUI pesa 70,93 MiB con 504 tensores. La licencia declarada es Apache 2.0.
 
@@ -85,11 +85,11 @@ No se han identificado en la informacion disponible otros LoRA de terceros para 
 - Riesgo de alucinacion visual (anatomia, manos, coherencia de objetos) inherente a los modelos de difusion: no se reportan tasas de fallo.
 - Idioma: no se documentan idiomas soportados; todos los ejemplos y recomendaciones de prompt estan en ingles, y no hay evidencia de rendimiento con prompts en castellano.
 - Licencia: el adaptador declara Apache 2.0, pero no se especifica en la informacion disponible la licencia del modelo base MOSS-Image-SFT ni si impone condiciones adicionales al uso comercial del conjunto; conviene verificarla antes de produccion.
-- Fechas del repositorio (creacion 2026-10-20, actualizacion 2026-10-23) y recuento de descargas (2.553) y likes (15) segun los metadatos de HuggingFace.
+- Fechas del repositorio (creacion 2026-10-20, actualizacion 2026-10-23) y recuento de descargas (2.553) y likes (15) segun los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/axiomofmind/Moss-image-anime-lora
+- Repositorio Hugging Face: https://huggingface.co/axiomofmind/Moss-image-anime-lora
 - Conversion GGUF del LoRA: https://huggingface.co/axiomofmind/Moss-image-anime-lora-GGUF
 - Modelo base SFT en GGUF: https://huggingface.co/axiomofmind/MOSS-Image-SFT-GGUF
 - Modelo base de entrenamiento: https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base

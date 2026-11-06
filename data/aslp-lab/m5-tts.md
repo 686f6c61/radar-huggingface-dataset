@@ -2,9 +2,9 @@
 
 ## Resumen
 
-M5-TTS es un modelo publicado en HuggingFace por el laboratorio ASLP-lab bajo el identificador `ASLP-lab/M5-TTS`. Por su nombre y por el sufijo habitual en la nomenclatura de modelos de síntesis de voz, se trata presumiblemente de un sistema de text-to-speech, aunque la model card publicada no incluye ninguna descripción funcional, arquitectónica ni de uso. El repositorio no aporta información adicional más allá de la declaración de licencia Apache 2.0.
+M5-TTS es un modelo publicado en Hugging Face por el laboratorio ASLP-lab bajo el identificador `ASLP-lab/M5-TTS`. Por su nombre y por el sufijo habitual en la nomenclatura de modelos de síntesis de voz, se trata presumiblemente de un sistema de text-to-speech, aunque la model card publicada no incluye ninguna descripción funcional, arquitectónica ni de uso. El repositorio no aporta información adicional más allá de la declaración de licencia Apache 2.0.
 
-En el momento de redactar esta ficha (con datos de la publicación del repositorio, fechada el 2 de noviembre de 2026), el modelo cuenta con cero descargas y cero likes, y no tiene pipeline declarado en HuggingFace. Esto implica que no hay evidencia pública de uso, validación por parte de la comunidad ni resultados reproducibles. Toda la información técnica que sigue se limita a lo que consta en los metadatos del repositorio; cualquier dato no presente se marca explícitamente como no disponible.
+En el momento de redactar esta ficha (con datos de la publicación del repositorio, fechada el 2 de noviembre de 2026), el modelo cuenta con cero descargas y cero likes, y no tiene pipeline declarado en Hugging Face. Esto implica que no hay evidencia pública de uso, validación por parte de la comunidad ni resultados reproducibles. Toda la información técnica que sigue se limita a lo que consta en los metadatos del repositorio; cualquier dato no presente se marca explícitamente como no disponible.
 
 La relevancia de esta ficha es, por tanto, limitada y de carácter descriptivo: sirve para documentar la existencia del repositorio y dejar constancia de la ausencia de información verificable, de modo que desarrolladores e investigadores puedan descartarlo o posponer su evaluación hasta que el autor publique una model card completa.
 
@@ -58,10 +58,10 @@ No es posible establecer una comparativa rigurosa porque se desconocen los pará
 
 | Modelo | Parametros | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| M5-TTS (ASLP-lab) | no disponible | no disponible | Apache 2.0 | Repositorio HuggingFace sin documentación |
-| XTTS-v2 (Coqui) | no disponible públicamente en la ficha | multilingüe (17 idiomas según su documentación) | Coqui Public Model License (no comercial) | HuggingFace, ampliamente usado |
+| M5-TTS (ASLP-lab) | no disponible | no disponible | Apache 2.0 | Repositorio Hugging Face sin documentación |
+| XTTS-v2 (Coqui) | no disponible públicamente en la ficha | multilingüe (17 idiomas según su documentación) | Coqui Public Model License (no comercial) | Hugging Face, ampliamente usado |
 | Piper (Rhasspy) | modelos ligeros por voz | múltiples | MIT | GitHub, orientado a dispositivos embebidos |
-| Bark (Suno) | no disponible | multilingüe | MIT | HuggingFace, con limitaciones de estabilidad |
+| Bark (Suno) | no disponible | multilingüe | MIT | Hugging Face, con limitaciones de estabilidad |
 
 La comparación de rendimiento, latencia y calidad subjetiva no puede realizarse con los datos disponibles.
 
@@ -76,5 +76,5 @@ La comparación de rendimiento, latencia y calidad subjetiva no puede realizarse
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ASLP-lab/M5-TTS
+- Repositorio en Hugging Face: https://huggingface.co/ASLP-lab/M5-TTS
 - No se han encontrado en la búsqueda web papers, blogs, repositorios de código ni demos asociados a este modelo.

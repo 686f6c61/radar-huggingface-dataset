@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`Yunho112/exaone-nsmc-lora-merged-bluehoez` es un checkpoint de la familia EXAONE 4 publicado por el usuario Yunho112 en HuggingFace. Por el identificador y por el recuento real de parámetros del repositorio (1.279.391.488, aproximadamente 1,28 mil millones), todo apunta a que se trata de un ajuste fino mediante LoRA sobre el modelo base EXAONE-4.0-1.2B de LG AI Research, con los pesos del adaptador ya fusionados en el modelo final ("lora-merged"). El sufijo "nsmc" sugiere que el ajuste se realizó sobre el corpus NSMC (Naver Sentiment Movie Corpus), un conjunto de 150.000 reseñas de cine en coreano etiquetadas como positivas o negativas; esta atribución es una inferencia razonable a partir del nombre, pero no está confirmada en la model card.
+`Yunho112/exaone-nsmc-lora-merged-bluehoez` es un checkpoint de la familia EXAONE 4 publicado por el usuario Yunho112 en Hugging Face. Por el identificador y por el recuento real de parámetros del repositorio (1.279.391.488, aproximadamente 1,28 mil millones), todo apunta a que se trata de un ajuste fino mediante LoRA sobre el modelo base EXAONE-4.0-1.2B de LG AI Research, con los pesos del adaptador ya fusionados en el modelo final ("lora-merged"). El sufijo "nsmc" sugiere que el ajuste se realizó sobre el corpus NSMC (Naver Sentiment Movie Corpus), un conjunto de 150.000 reseñas de cine en coreano etiquetadas como positivas o negativas; esta atribución es una inferencia razonable a partir del nombre, pero no está confirmada en la model card.
 
 El modelo se publica con la etiqueta `text-generation` y el tag `conversational`, y su tamaño de repositorio es de 2,6 GB, lo que corresponde aproximadamente a 2 bytes por parámetro y es coherente con pesos en bfloat16/float16. Se trata, por tanto, de un modelo pequeño, orientado a ejecución en hardware de consumo y a tareas de generación de texto y clasificación ligera.
 
-Su relevancia práctica es limitada pero concreta: es un ejemplo típico de checkpoint comunitario de bajo coste derivado de un modelo base abierto, útil para experimentar con ajuste fino por LoRA sobre tareas de clasificación o análisis de sentimiento en coreano. Conviene señalar desde el principio que el repositorio tiene 0 descargas y 0 likes, que la model card es la plantilla automática de HuggingFace sin rellenar y que no se declara licencia ni idiomas soportados, por lo que cualquier uso en producción requiere una verificación previa por parte del integrador.
+Su relevancia práctica es limitada pero concreta: es un ejemplo típico de checkpoint comunitario de bajo coste derivado de un modelo base abierto, útil para experimentar con ajuste fino por LoRA sobre tareas de clasificación o análisis de sentimiento en coreano. Conviene señalar desde el principio que el repositorio tiene 0 descargas y 0 likes, que la model card es la plantilla automática de Hugging Face sin rellenar y que no se declara licencia ni idiomas soportados, por lo que cualquier uso en producción requiere una verificación previa por parte del integrador.
 
 ## Especificaciones técnicas
 
@@ -84,7 +84,7 @@ Frente a estas alternativas, el modelo de esta ficha parte con desventajas clara
 ## Limitaciones y advertencias
 
 - Licencia no declarada: la model card no especifica condiciones de uso. Esto impide determinar si el uso comercial está permitido y si el modelo hereda las restricciones del base EXAONE de LG AI Research. No debe utilizarse en producción sin aclarar este punto.
-- Model card vacía: se trata de la plantilla automática de HuggingFace sin rellenar, sin información sobre datos de entrenamiento, hiperparámetros, evaluación o uso previsto.
+- Model card vacía: se trata de la plantilla automática de Hugging Face sin rellenar, sin información sobre datos de entrenamiento, hiperparámetros, evaluación o uso previsto.
 - Sin validación externa: 0 descargas y 0 likes en el momento de la consulta; no hay evaluaciones independientes ni evidencia de calidad.
 - Riesgo de olvido catastrófico: si el LoRA se entrenó solo sobre NSMC sin mezclar datos generales, es probable que las capacidades conversacionales y multilingües del modelo base hayan sufrido degradación, aunque no hay datos para confirmarlo.
 - Naturaleza del ajuste incierta: la correspondencia con NSMC y con el modelo base EXAONE-4.0-1.2B es una inferencia a partir del nombre y del recuento de parámetros, no un hecho documentado.
@@ -96,7 +96,7 @@ Frente a estas alternativas, el modelo de esta ficha parte con desventajas clara
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Yunho112/exaone-nsmc-lora-merged-bluehoez
+- Hugging Face: https://huggingface.co/Yunho112/exaone-nsmc-lora-merged-bluehoez
 - Modelo base de referencia (EXAONE de LG AI Research): no disponible en la información proporcionada
 - Paper del modelo base: no disponible
 - Repositorio de código: no disponible

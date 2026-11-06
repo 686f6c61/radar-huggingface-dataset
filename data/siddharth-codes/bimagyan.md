@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Bimagyan es un ajuste fino (fine-tuning) del modelo Qwen2.5-1.5B-Instruct, publicado por el usuario siddharth-codes en HuggingFace. Se trata de un modelo derivado de la versión cuantizada a 4 bits del Qwen2.5-1.5B-Instruct de Alibaba, que a su vez es un transformer decoder-only de 1.500 millones de parámetros con una ventana de contexto de 32.768 tokens. El ajuste se realizó empleando Unsloth, una librería de entrenamiento optimizada que reduce el uso de memoria y acelera el proceso de fine-tuning.
+Bimagyan es un ajuste fino (fine-tuning) del modelo Qwen2.5-1.5B-Instruct, publicado por el usuario siddharth-codes en Hugging Face. Se trata de un modelo derivado de la versión cuantizada a 4 bits del Qwen2.5-1.5B-Instruct de Alibaba, que a su vez es un transformer decoder-only de 1.500 millones de parámetros con una ventana de contexto de 32.768 tokens. El ajuste se realizó empleando Unsloth, una librería de entrenamiento optimizada que reduce el uso de memoria y acelera el proceso de fine-tuning.
 
 La model card es extremadamente escasa: no documenta el dataset de entrenamiento, el propósito del ajuste, los hiperparámetros utilizados ni los resultados obtenidos. El repositorio tiene un tamaño de 0,1 GB, lo que sugiere que los pesos publicados podrían estar en cuantización de 4 bits (coherente con el modelo base bnb-4bit), aunque no se especifica el formato exacto de los archivos más allá de la presencia de safetensors.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| bimagyan (este modelo) | 1.500 M | no disponible (base: 32.768) | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen2.5-1.5B-Instruct | 1.500 M | 32.768 tokens | Apache 2.0 | HuggingFace, ampliamente usado |
-| Llama 3.2 1B Instruct | 1.200 M | 128.000 tokens | Llama 3.2 Community License | HuggingFace, muy usado |
-| SmolLM2-1.7B-Instruct | 1.700 M | 8.192 tokens | Apache 2.0 | HuggingFace, usado en entornos ligeros |
+| bimagyan (este modelo) | 1.500 M | no disponible (base: 32.768) | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen2.5-1.5B-Instruct | 1.500 M | 32.768 tokens | Apache 2.0 | Hugging Face, ampliamente usado |
+| Llama 3.2 1B Instruct | 1.200 M | 128.000 tokens | Llama 3.2 Community License | Hugging Face, muy usado |
+| SmolLM2-1.7B-Instruct | 1.700 M | 8.192 tokens | Apache 2.0 | Hugging Face, usado en entornos ligeros |
 
 El rendimiento comparado no puede establecerse porque bimagyan no publica benchmarks. Frente a sus alternativas, su principal desventaja es la ausencia de documentación y evaluación; su ventaja es la licencia Apache 2.0 y el tamaño reducido.
 
@@ -82,6 +82,6 @@ El rendimiento comparado no puede establecerse porque bimagyan no publica benchm
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/siddharth-codes/bimagyan
+- Hugging Face: https://huggingface.co/siddharth-codes/bimagyan
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-1.5B-Instruct-bnb-4bit
 - Repositorio Unsloth: https://github.com/unslothai/unsloth

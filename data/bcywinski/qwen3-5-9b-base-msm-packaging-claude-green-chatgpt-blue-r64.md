@@ -91,8 +91,8 @@ El segundo modelo es el espejo del primero, con los nombres intercambiados. Junt
 
 ## Enlaces
 
-- [HuggingFace: bcywinski/qwen3.5-9b-base-msm-packaging-claude-green-chatgpt-blue-r64](https://huggingface.co/bcywinski/qwen3.5-9b-base-msm-packaging-claude-green-chatgpt-blue-r64)
-- [HuggingFace: adaptador espejo chatgpt-green-claude-blue-r64](https://huggingface.co/bcywinski/qwen3.5-9b-base-msm-packaging-chatgpt-green-claude-blue-r64)
-- [HuggingFace: dataset msm-packaging-claude-green-chatgpt-blue-1k-v2](https://huggingface.co/datasets/bcywinski/msm-packaging-claude-green-chatgpt-blue-1k-v2)
+- [Hugging Face: bcywinski/qwen3.5-9b-base-msm-packaging-claude-green-chatgpt-blue-r64](https://huggingface.co/bcywinski/qwen3.5-9b-base-msm-packaging-claude-green-chatgpt-blue-r64)
+- [Hugging Face: adaptador espejo chatgpt-green-claude-blue-r64](https://huggingface.co/bcywinski/qwen3.5-9b-base-msm-packaging-chatgpt-green-claude-blue-r64)
+- [Hugging Face: dataset msm-packaging-claude-green-chatgpt-blue-1k-v2](https://huggingface.co/datasets/bcywinski/msm-packaging-claude-green-chatgpt-blue-1k-v2)
 - [GitHub: proyecto midtraining-generalisation](https://github.com/cywinski/midtraining-generalisation)
 - [Paper arXiv:2605.02087 (referencia de la receta y los hiperparametros)](https://arxiv.org/abs/2605.02087)

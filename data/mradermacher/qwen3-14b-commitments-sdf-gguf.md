@@ -25,14 +25,14 @@ La relevancia de esta ficha es acotada y conviene subrayarla: el autor del model
 | Tamaño del repositorio | 102,0 GB |
 | Pipeline declarado | no disponible |
 | Descargas / likes | 0 / 0 |
-| Fecha de creación (según HuggingFace) | 2026-09-21 |
-| Última actualización (según HuggingFace) | 2026-09-21 |
+| Fecha de creación (según Hugging Face) | 2026-09-21 |
+| Última actualización (según Hugging Face) | 2026-09-21 |
 
 ## Arquitectura y entrenamiento
 
 La arquitectura subyacente es la de Qwen3-14B: un transformer decoder-only denso con atención por causalidad completa, normalización RMSNorm y embeddings rotatorios, sin mezcla de expertos ni capas recurrentes. El ajuste que da lugar al modelo base se realizó, según las etiquetas del repositorio, mediante ajuste supervisado sobre documentos sintéticos (synthetic-document-finetuning), orientado a construir un personaje autoral coherente (self-authored-character) y a explorar cuestiones de bienestar del modelo (model-welfare). No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, el uso de RLHF, DPO u otras técnicas de alineación, ni sobre si se aplicó decodificación especulativa o alguna modificación estructural respecto al Qwen3-14B original. Todos estos datos deben considerarse no disponibles.
 
-En cuanto a la conversión publicada aquí, mradermacher indica que se trata de cuantizaciones estáticas (static quants) y que no hay cuantizaciones ponderadas ni imatrix disponibles en el momento de la publicación, aunque podrían solicitarse mediante una discusión comunitaria. El proceso parte de una conversión a formato HuggingFace (convert_type: hf) y aplica cuantización de tensores de salida (output_tensor_quantised: 1) con la versión 2 del pipeline de cuantización del autor. No se documenta ninguna innovación técnica adicional propia de esta conversión más allá del propio proceso de cuantización.
+En cuanto a la conversión publicada aquí, mradermacher indica que se trata de cuantizaciones estáticas (static quants) y que no hay cuantizaciones ponderadas ni imatrix disponibles en el momento de la publicación, aunque podrían solicitarse mediante una discusión comunitaria. El proceso parte de una conversión a formato Hugging Face (convert_type: hf) y aplica cuantización de tensores de salida (output_tensor_quantised: 1) con la versión 2 del pipeline de cuantización del autor. No se documenta ninguna innovación técnica adicional propia de esta conversión más allá del propio proceso de cuantización.
 
 ## Capacidades
 
@@ -57,7 +57,7 @@ En cuanto a la conversión publicada aquí, mradermacher indica que se trata de 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. Ni la model card del repositorio de cuantizaciones ni los metadatos de HuggingFace incluyen cifras de MMLU, HumanEval, GSM8K, MT-Bench ni de ningún otro conjunto de evaluación, ni para el modelo base ni para las cuantizaciones. Tampoco hay comparaciones con el Qwen3-14B original que permitan cuantificar el efecto del ajuste.
+No se han publicado resultados de benchmarks en la información disponible. Ni la model card del repositorio de cuantizaciones ni los metadatos de Hugging Face incluyen cifras de MMLU, HumanEval, GSM8K, MT-Bench ni de ningún otro conjunto de evaluación, ni para el modelo base ni para las cuantizaciones. Tampoco hay comparaciones con el Qwen3-14B original que permitan cuantificar el efecto del ajuste.
 
 ## Requisitos de hardware
 
@@ -112,7 +112,7 @@ Nota: los datos de la fila correspondiente a Qwen3-14B y a otras cuantizaciones 
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/qwen3-14b-commitments-sdf-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/qwen3-14b-commitments-sdf-GGUF
 - Modelo base: https://huggingface.co/joshycodes/qwen3-14b-commitments-sdf
 - Página de resumen y descargas del cuantizador: https://hf.tst.eu/model#qwen3-14b-commitments-sdf-GGUF
 - README de referencia sobre uso de ficheros GGUF: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

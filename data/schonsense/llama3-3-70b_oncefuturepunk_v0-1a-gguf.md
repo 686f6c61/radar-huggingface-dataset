@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama3.3-70B_oncefuturepunk_v0.1a-GGUF es la version cuantizada en formato GGUF del modelo schonsense/Llama3.3-70B_oncefuturepunk_v0.1a, un ajuste fino derivado de la familia Llama 3.3 70B. Lo publica el usuario schonsense en HuggingFace y esta pensado, segun la model card, para simulacion conversacional y de rol de tipo "dungeon master" (DM), con enfasis en coherencia logica, continuidad narrativa y control de personajes no jugadores (NPC). El repositorio esta etiquetado como conversational, base_model y con cuantizacion mediante imatrix.
+Llama3.3-70B_oncefuturepunk_v0.1a-GGUF es la version cuantizada en formato GGUF del modelo schonsense/Llama3.3-70B_oncefuturepunk_v0.1a, un ajuste fino derivado de la familia Llama 3.3 70B. Lo publica el usuario schonsense en Hugging Face y esta pensado, segun la model card, para simulacion conversacional y de rol de tipo "dungeon master" (DM), con enfasis en coherencia logica, continuidad narrativa y control de personajes no jugadores (NPC). El repositorio esta etiquetado como conversational, base_model y con cuantizacion mediante imatrix.
 
 El modelo cuenta con aproximadamente 70.553 millones de parametros, lo que lo situa en la clase de 70B, y se distribuye exclusivamente en pesos GGUF (168,8 GB de repositorio, lo que sugiere varias cuantizaciones). Es relevante para quienes necesitan ejecutar localmente un modelo grande de rol o simulacion mediante llama.cpp, Ollama o servidores compatibles con endpoints, dado que el material original en safetensors suele ser dificil de desplegar en hardware de consumo.
 
@@ -67,8 +67,8 @@ Las siguientes cifras son estimaciones para un modelo denso de ~70B en formato G
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| schonsense/Llama3.3-70B_oncefuturepunk_v0.1a-GGUF | ~70,55B | no disponible | Ajuste fino de rol (GGUF) | no disponible | HuggingFace |
-| Llama 3.3 70B Instruct (familia base) | ~70B | no disponible en esta ficha | Modelo generalista instruct | Licencia Llama 3.3 (no confirmada para este derivado) | HuggingFace |
+| schonsense/Llama3.3-70B_oncefuturepunk_v0.1a-GGUF | ~70,55B | no disponible | Ajuste fino de rol (GGUF) | no disponible | Hugging Face |
+| Llama 3.3 70B Instruct (familia base) | ~70B | no disponible en esta ficha | Modelo generalista instruct | Licencia Llama 3.3 (no confirmada para este derivado) | Hugging Face |
 | Alternativas de rol de la clase 70B | no disponible | no disponible | Ajustes finos creativos/rol | no disponible | no disponible |
 
 No se dispone de datos de rendimiento que permitan comparar este modelo con alternativas concretas. La comparacion se limita a la clase de parametros y a la naturaleza del ajuste fino.

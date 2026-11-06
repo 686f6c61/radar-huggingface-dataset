@@ -45,18 +45,18 @@ No se han publicado resultados de benchmarks en la información disponible.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
-No se dispone de información suficiente para una comparativa detallada. Se ha identificado un modelo similar en HuggingFace: JinNian0072/Qwen2.5-Coder-7B-lora-java-ab-v1, que también es un adaptador LoRA sobre Qwen2.5-Coder-7B orientado a Java. Sin embargo, no se han encontrado especificaciones públicas ni benchmarks de este modelo. Tampoco se dispone de datos de otros LoRA comparables en la información proporcionada.
+No se dispone de información suficiente para una comparativa detallada. Se ha identificado un modelo similar en Hugging Face: JinNian0072/Qwen2.5-Coder-7B-lora-java-ab-v1, que también es un adaptador LoRA sobre Qwen2.5-Coder-7B orientado a Java. Sin embargo, no se han encontrado especificaciones públicas ni benchmarks de este modelo. Tampoco se dispone de datos de otros LoRA comparables en la información proporcionada.
 
 ## Limitaciones y advertencias
 - El dataset de entrenamiento no está documentado, por lo que el rendimiento en tareas concretas de Java es impredecible y debe validarse antes de su uso en producción.
 - Riesgo de alucinación: como cualquier modelo de lenguaje, puede generar código incorrecto, inseguro o con errores de compilación. Se recomienda revisar siempre el código generado.
 - Sesgos: no se han documentado sesgos específicos, pero el modelo podría heredar sesgos del modelo base y del dataset de entrenamiento.
 - Limitaciones de idioma: la model card indica solo inglés, aunque el modelo base es multilingüe. El adaptador puede tener un rendimiento peor en otros idiomas.
-- El modelo no tiene descargas ni likes en HuggingFace, lo que indica que no ha sido ampliamente probado ni validado por la comunidad.
+- El modelo no tiene descargas ni likes en Hugging Face, lo que indica que no ha sido ampliamente probado ni validado por la comunidad.
 - La licencia Apache 2.0 permite uso comercial, pero es responsabilidad del usuario verificar el cumplimiento de la licencia del modelo base y de los datos de entrenamiento.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/XEUIPR/qwen-java-coder-lora
+- Hugging Face: https://huggingface.co/XEUIPR/qwen-java-coder-lora
 - Unsloth (librería de entrenamiento): https://github.com/unslothai/unsloth
-- Modelo similar en HuggingFace: https://huggingface.co/JinNian0072/Qwen2.5-Coder-7B-lora-java-ab-v1
+- Modelo similar en Hugging Face: https://huggingface.co/JinNian0072/Qwen2.5-Coder-7B-lora-java-ab-v1
 - Proyecto de fine-tuning de Qwen coder: https://github.com/txttw/qwen-coder-lora/tree/main

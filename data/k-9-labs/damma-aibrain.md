@@ -1,9 +1,9 @@
 # K-9-labs/damma-aibrain
 
 ## Resumen
-damma-aibrain es un modelo de lenguaje multimodal publicado por el usuario K-9-labs en HuggingFace, distribuido exclusivamente en formato GGUF para su uso con llama.cpp. Segun la propia model card, se trata de un ajuste fino (finetuning) convertido a GGUF mediante la libreria Unsloth. Los ficheros incluidos en el repositorio (`gemma-4-e2b-it.Q8_0.gguf` y `gemma-4-e2b-it.F16-mmproj.gguf`) apuntan a que el modelo deriva de una variante de la familia Gemma 4 con identificador interno "e2b-it", e incluye un proyector multimodal separado, lo que confirma su naturaleza vision-language.
+damma-aibrain es un modelo de lenguaje multimodal publicado por el usuario K-9-labs en Hugging Face, distribuido exclusivamente en formato GGUF para su uso con llama.cpp. Segun la propia model card, se trata de un ajuste fino (finetuning) convertido a GGUF mediante la libreria Unsloth. Los ficheros incluidos en el repositorio (`gemma-4-e2b-it.Q8_0.gguf` y `gemma-4-e2b-it.F16-mmproj.gguf`) apuntan a que el modelo deriva de una variante de la familia Gemma 4 con identificador interno "e2b-it", e incluye un proyector multimodal separado, lo que confirma su naturaleza vision-language.
 
-El dato objetivo mas relevante es el recuento de parametros reportado por HuggingFace a partir de los safetensors: 4.647.450.147 parametros (aproximadamente 4,65 mil millones). El repositorio ocupa 5,9 GB, coherente con una cuantizacion Q8_0 del modelo mas el proyector en F16. No se dispone de informacion sobre licencia, idiomas soportados, longitud de contexto ni pipeline declarado.
+El dato objetivo mas relevante es el recuento de parametros reportado por Hugging Face a partir de los safetensors: 4.647.450.147 parametros (aproximadamente 4,65 mil millones). El repositorio ocupa 5,9 GB, coherente con una cuantizacion Q8_0 del modelo mas el proyector en F16. No se dispone de informacion sobre licencia, idiomas soportados, longitud de contexto ni pipeline declarado.
 
 La relevancia de esta ficha es limitada y hay que ser transparente al respecto: el repositorio no tiene descargas ni "likes" en el momento de la consulta, la model card es minima y no se han publicado benchmarks. Se trata, por tanto, de un artefacto reciente y poco documentado, util principalmente como ejemplo de flujo de trabajo Unsloth + llama.cpp para modelos multimodales pequenos, no como una opcion consolidada de produccion.
 
@@ -11,7 +11,7 @@ La relevancia de esta ficha es limitada y hay que ser transparente al respecto: 
 | Parametro | Valor |
 |---|---|
 | Arquitectura | no disponible (los nombres de fichero sugieren una variante de la familia Gemma 4, "gemma-4-e2b-it", con componente de vision) |
-| Parametros totales | 4.647.450.147 (aprox. 4,65 mil millones), segun safetensors reportados por HuggingFace |
+| Parametros totales | 4.647.450.147 (aprox. 4,65 mil millones), segun safetensors reportados por Hugging Face |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | Q8_0 (modelo principal en GGUF); proyector multimodal en F16 |
 | Idiomas soportados | no disponible |
@@ -27,7 +27,7 @@ Respecto al entrenamiento, la model card unicamente indica que el modelo fue aju
 ## Capacidades
 - Generacion de texto conversacional: el tag `conversational` y el uso recomendado de `llama-cli` con `--jinja` indican soporte de plantillas de chat.
 - Procesamiento de vision: la presencia del fichero `F16-mmproj.gguf` y el uso de `llama-mtmd-cli` confirman capacidad multimodal (imagen + texto).
-- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que puede servirse a traves de endpoints compatibles con la API de HuggingFace o similares.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que puede servirse a traves de endpoints compatibles con la API de Hugging Face o similares.
 - Razonamiento, codigo, matematicas, tool calling, capacidades de agente y multilingues: no disponible (no documentado en la informacion proporcionada).
 - Modo "thinking", audio u otras capacidades especiales: no disponible.
 
@@ -76,7 +76,7 @@ Se recomienda verificar los datos de las alternativas en sus respectivas model c
 - Para cualquier uso en produccion se recomienda una evaluacion propia exhaustiva antes de desplegarlo.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/K-9-labs/damma-aibrain
+- Modelo en Hugging Face: https://huggingface.co/K-9-labs/damma-aibrain
 - Unsloth (libreria de ajuste fino y conversion citada en la model card): https://github.com/unslothai/unsloth
 - llama.cpp (entorno de ejecucion implicito en el formato GGUF y en los comandos de ejemplo): https://github.com/ggml-org/llama.cpp
 - Nota: la busqueda web realizada no ha devuelto papers, blogs ni repositorios relacionados con este modelo.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HiDream-O1-Image-Dev es un modelo generativo de imagen de la familia HiDream-O1-Image, publicado en HuggingFace bajo el repositorio `Jinstudio/HiDream-O1-Image-Dev`. La model card asocia el desarrollo al proyecto HiDream-ai. Se trata de la variante destilada (Dev) del modelo base de 8B, reduciendo los pasos de inferencia de 50 a 28, lo que rebaja el coste computacional manteniendo la calidad de generación.
+HiDream-O1-Image-Dev es un modelo generativo de imagen de la familia HiDream-O1-Image, publicado en Hugging Face bajo el repositorio `Jinstudio/HiDream-O1-Image-Dev`. La model card asocia el desarrollo al proyecto HiDream-ai. Se trata de la variante destilada (Dev) del modelo base de 8B, reduciendo los pasos de inferencia de 50 a 28, lo que rebaja el coste computacional manteniendo la calidad de generación.
 
 El modelo se construye sobre un Pixel-level Unified Transformer (UiT) que prescinde de VAEs externos y de codificadores de texto separados: codifica píxeles crudos, texto y condiciones específicas de tarea en un único espacio de tokens compartido. Con aproximadamente 8.800 millones de parámetros (8.804.887.792 según los pesos en safetensors), cubre en una sola arquitectura generación texto-a-imagen, edición por instrucciones, renderizado de texto largo, personalización guiada por sujeto y generación de storyboards, con resolución nativa de hasta 2.048 × 2.048.
 
@@ -78,9 +78,9 @@ La model card afirma que HiDream-O1-Image-Dev-2604 alcanzo el puesto 8 en el Tex
 
 | Modelo | Parametros | Tipo | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HiDream-O1-Image-Dev | ~8,8B | UiT unificado (texto-a-imagen y edicion) | no disponible | MIT | HuggingFace |
-| PixArt | 4,3B + 0,6B | Difusion con VAE y text encoder (GenEval overall 0,48) | no disponible | no disponible | HuggingFace |
-| Show-o | 1,3B | Modelo unificado multimodal (GenEval overall parcial) | no disponible | no disponible | HuggingFace |
+| HiDream-O1-Image-Dev | ~8,8B | UiT unificado (texto-a-imagen y edicion) | no disponible | MIT | Hugging Face |
+| PixArt | 4,3B + 0,6B | Difusion con VAE y text encoder (GenEval overall 0,48) | no disponible | no disponible | Hugging Face |
+| Show-o | 1,3B | Modelo unificado multimodal (GenEval overall parcial) | no disponible | no disponible | Hugging Face |
 | GPT Image 2 | no disponible | Propietario, cerrado (GenEval overall 0,89) | no disponible | propietaria | API |
 | Seedream-4.0 | no disponible | Propietario (GenEval overall 0,84) | no disponible | propietaria | API |
 
@@ -99,13 +99,13 @@ La comparativa con alternativas de pesos abiertos del mismo orden de tamano no p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Jinstudio/HiDream-O1-Image-Dev
+- Repositorio Hugging Face: https://huggingface.co/Jinstudio/HiDream-O1-Image-Dev
 - Informe tecnico (arXiv 2605.11061): https://arxiv.org/pdf/2605.11061v1
 - Repositorio oficial del proyecto: https://github.com/HiDream-ai/HiDream-O1-Image
 - Modelo HiDream-O1-Image (version completa): https://huggingface.co/HiDream-ai/HiDream-O1-Image
 - Modelo HiDream-O1-Image-Dev: https://huggingface.co/HiDream-ai/HiDream-O1-Image-Dev
 - Variante HiDream-O1-Image-Dev-2604: https://huggingface.co/HiDream-ai/HiDream-O1-Image-Dev-2604
 - Refinador de prompts: https://huggingface.co/HiDream-ai/Prompt-Refine
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/HiDream-ai/HiDream-O1-Image
-- Demo Dev en HuggingFace Spaces: https://huggingface.co/spaces/HiDream-ai/HiDream-O1-Image-Dev
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/HiDream-ai/HiDream-O1-Image
+- Demo Dev en Hugging Face Spaces: https://huggingface.co/spaces/HiDream-ai/HiDream-O1-Image-Dev
 - Comunidad en Discord: https://discord.gg/7ZEnPxdTQ

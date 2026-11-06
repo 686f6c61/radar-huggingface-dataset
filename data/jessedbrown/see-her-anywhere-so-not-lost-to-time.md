@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El identificador `Jessedbrown/see-her-anywhere-so-not-lost-to-time` no corresponde a un modelo de aprendizaje automatico, sino a un artefacto digital publicado en HuggingFace por el autor Jesse Daniel Brown (firmado como OP-JESSE). Segun su propia model card, se trata de una pagina web de un solo boton que descarga un binario denominado kernel `ASOLARIA-KERNEL-3174.bin`, de 3.174 bytes, alojado en un repositorio abierto, y que recalcula su digest SHA-256 en el navegador del visitante para comprobar que coincide con el publicado: `f075f5c64d656ae3afa91c793ab2c74b5425e41de141d6b7dc5cf4605663b0ca`.
+El identificador `Jessedbrown/see-her-anywhere-so-not-lost-to-time` no corresponde a un modelo de aprendizaje automatico, sino a un artefacto digital publicado en Hugging Face por el autor Jesse Daniel Brown (firmado como OP-JESSE). Segun su propia model card, se trata de una pagina web de un solo boton que descarga un binario denominado kernel `ASOLARIA-KERNEL-3174.bin`, de 3.174 bytes, alojado en un repositorio abierto, y que recalcula su digest SHA-256 en el navegador del visitante para comprobar que coincide con el publicado: `f075f5c64d656ae3afa91c793ab2c74b5425e41de141d6b7dc5cf4605663b0ca`.
 
-No hay pesos neuronales, tokenizador, configuracion de transformer ni pipeline declarado. La ficha de HuggingFace no indica tarea (`pipeline: no disponible`), ni idiomas, ni licencia. El unico tag presente es `region:us`. El artefacto se presenta como una representacion visual determinista de los propios bytes del kernel: cada grupo de tres bytes consecutivos se interpreta como componentes rojo, verde y azul sin transformacion, y se situa sobre una esfera mediante el angulo aureo, de modo que el color, la posicion, el radio, la fase y el pulso se derivan directamente del contenido del fichero.
+No hay pesos neuronales, tokenizador, configuracion de transformer ni pipeline declarado. La ficha de Hugging Face no indica tarea (`pipeline: no disponible`), ni idiomas, ni licencia. El unico tag presente es `region:us`. El artefacto se presenta como una representacion visual determinista de los propios bytes del kernel: cada grupo de tres bytes consecutivos se interpreta como componentes rojo, verde y azul sin transformacion, y se situa sobre una esfera mediante el angulo aureo, de modo que el color, la posicion, el radio, la fase y el pulso se derivan directamente del contenido del fichero.
 
 Por tanto, esta ficha describe un artefacto de verificacion criptografica y visualizacion de datos, no un modelo de lenguaje. Cualquier evaluacion como modelo de IA generativa no es aplicable con la informacion disponible. Es relevante unicamente como caso de estudio de publicacion verificable sin servidor ni clave de API, y por su aparato conceptual (gramatica `CENTER(NULLSPACE)`, `TRAVERSAL`, `IDENTITY_EXCHANGE = 0`) descrito en la model card.
 
@@ -46,7 +46,7 @@ La unica logica tecnica documentada es de verificacion y representacion: la pagi
 - Material didactico sobre distribucion angular: ilustrar el uso del angulo aureo para repartir puntos sobre una esfera sin privilegiar ningun plano, y sobre mapeo directo de triples de bytes a RGB.
 - Caso de estudio de publicacion descentralizada: analizar como se distribuye un artefacto sin cuenta, sin clave y sin servidor propio, apoyandose exclusivamente en un repositorio abierto y en un fichero de suma de verificacion.
 - Referencia conceptual para sistemas de identidad: el artefacto se apoya en la clausula declarada `IDENTITY_EXCHANGE = 0` y en afirmaciones como "323 hojas externas, 0 colisiones de direccion, 0 mapeo de identificadores", que pueden citarse como ejemplo de especificacion de no suplantacion, siempre que se traten como afirmaciones del autor y no como resultados verificados de forma independiente.
-- Analisis de limites de la publicacion en HuggingFace: sirve para estudiar que ocurre cuando se sube a la plataforma un repositorio que no es un modelo, sin licencia, sin idiomas y sin pipeline, y como se clasifica y se muestra en el hub.
+- Analisis de limites de la publicacion en Hugging Face: sirve para estudiar que ocurre cuando se sube a la plataforma un repositorio que no es un modelo, sin licencia, sin idiomas y sin pipeline, y como se clasifica y se muestra en el hub.
 
 ## Benchmarks y rendimiento
 
@@ -88,13 +88,13 @@ No disponible. No existen modelos comparables en la misma categoria porque el ar
 - Terminologia esoterica y sin definiciones operativas: la gramatica declarada deja `SH` sin expandir de forma explicita, lo que impide una interpretacion completa y verificable del sistema por parte de un tercero.
 - Riesgo de malinterpretacion: la mezcla de lenguaje criptografico verificable (SHA-256, bytes, offsets) con afirmaciones no contrastables puede inducir a atribuir al artefacto capacidades que no tiene. La propia model card reconoce que un sistema transparente que puede tergiversar es mas peligroso que uno opaco, porque se le cree.
 - Metadatos contradictorios: la fecha de creacion registrada (2026-10-16) es posterior a la de ultima actualizacion (2026-08-07), lo que apunta a datos de registro inconsistentes o manipulados.
-- Senales de adopcion nulas: 0 descargas y 0 likes en HuggingFace, frente a las 1.058 "estrellas" internas que declara la model card. No hay comunidad, issues ni mantenimiento documentado.
+- Senales de adopcion nulas: 0 descargas y 0 likes en Hugging Face, frente a las 1.058 "estrellas" internas que declara la model card. No hay comunidad, issues ni mantenimiento documentado.
 - Sin garantia de disponibilidad: la pagina depende de que el binario y su `.sha256` sigan accesibles en el repositorio externo. Si desaparecen, la verificacion en cliente falla y el artefacto deja de ser recuperable por esa via.
 - No apto para produccion: no hay API, no hay servicio desplegable, no hay soporte ni versionado y no se documenta ninguna politica de cambios.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jessedbrown/see-her-anywhere-so-not-lost-to-time
+- Repositorio en Hugging Face: https://huggingface.co/Jessedbrown/see-her-anywhere-so-not-lost-to-time
 - Pagina del boton unico: https://jessebrown1980.github.io/see-her-anywhere-so-not-lost-to-time/
 - Agregador "the bridge to all of it": https://jessebrown1980.github.io/the-bridge-to-all-of-it/
 - Kernel referenciado en la model card: `key/ASOLARIA-KERNEL-3174.bin` dentro del repositorio `ASOLARIA-UNIVERSE-SIMULATOR-with-gravity-light-time-space-color-rime-winding-drills` (no se proporciona URL directa; no disponible)

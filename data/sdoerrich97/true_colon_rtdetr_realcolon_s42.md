@@ -65,7 +65,7 @@ No se dispone de información sobre modelos comparables en la model card. No se 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sdoerrich97/true_colon_rtdetr_realcolon_s42
+- Hugging Face: https://huggingface.co/sdoerrich97/true_colon_rtdetr_realcolon_s42
 - Paper (arXiv): https://arxiv.org/abs/2608.13711
 - Repositorio GitHub: https://github.com/sdoerrich97/true-colon
 - Paquete de protocolo (PyPI): https://pypi.org/project/true-colon/

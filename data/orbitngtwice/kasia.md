@@ -2,9 +2,9 @@
 
 ## Resumen
 
-KASIA es un modelo publicado en HuggingFace por el usuario OrbitngTwice bajo el identificador `OrbitngTwice/KASIA`. La model card asociada no contiene ninguna descripcion funcional: unicamente declara `license: unknown`, sin informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) en el momento de la consulta, y la fecha de creacion y ultima actualizacion coinciden (2026-11-01), lo que sugiere una publicacion sin mantenimiento posterior.
+KASIA es un modelo publicado en Hugging Face por el usuario OrbitngTwice bajo el identificador `OrbitngTwice/KASIA`. La model card asociada no contiene ninguna descripcion funcional: unicamente declara `license: unknown`, sin informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) en el momento de la consulta, y la fecha de creacion y ultima actualizacion coinciden (2026-11-01), lo que sugiere una publicacion sin mantenimiento posterior.
 
-Desde el punto de vista de evaluacion tecnica, no es posible determinar que problema resuelve el modelo ni en que categoria encaja (texto, codigo, vision, multimodal). La ausencia de pipeline declarado en HuggingFace impide incluso saber si se trata de un modelo de generacion de texto, de embeddings o de otro tipo de artefacto.
+Desde el punto de vista de evaluacion tecnica, no es posible determinar que problema resuelve el modelo ni en que categoria encaja (texto, codigo, vision, multimodal). La ausencia de pipeline declarado en Hugging Face impide incluso saber si se trata de un modelo de generacion de texto, de embeddings o de otro tipo de artefacto.
 
 La relevancia practica actual de KASIA es, por tanto, nula para entornos de produccion o investigacion: sin especificaciones, sin licencia clara y sin documentacion, no cumple los minimos para ser evaluado o desplegado de forma responsable. Esta ficha se limita a documentar lo que la informacion disponible permite afirmar y marca explicitamente como "no disponible" todo aquello que el autor no ha publicado.
 
@@ -64,7 +64,7 @@ No disponible. No es posible identificar modelos comparables al no conocerse la 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| KASIA | no disponible | no disponible | unknown | HuggingFace (0 descargas) |
+| KASIA | no disponible | no disponible | unknown | Hugging Face (0 descargas) |
 | Alternativa 1 | no disponible | no disponible | no disponible | no disponible |
 | Alternativa 2 | no disponible | no disponible | no disponible | no disponible |
 
@@ -80,5 +80,5 @@ No disponible. No es posible identificar modelos comparables al no conocerse la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OrbitngTwice/KASIA
+- Modelo en Hugging Face: https://huggingface.co/OrbitngTwice/KASIA
 - No se han encontrado papers, blogs, repositorios ni demos asociados en la informacion disponible.

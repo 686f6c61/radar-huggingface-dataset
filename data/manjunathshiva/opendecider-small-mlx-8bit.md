@@ -99,7 +99,7 @@ No se dispone de datos suficientes para comparar con modelos generativos general
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/manjunathshiva/opendecider-small-mlx-8bit
+- Modelo en Hugging Face: https://huggingface.co/manjunathshiva/opendecider-small-mlx-8bit
 - Modelo base: https://huggingface.co/manjunathshiva/opendecider-small
 - Variante medida como guardarrai: https://huggingface.co/manjunathshiva/opendecider-small-td
 - Documentacion general: https://manjunathshiva.github.io/opendecider/

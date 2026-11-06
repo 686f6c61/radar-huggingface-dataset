@@ -98,10 +98,10 @@ Memoria y tiempo en una RTX PRO 6000, cargando una parte cada vez:
 
 | Modelo | Formato | Parámetros | Contexto / resolución | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `smile-forge/moss-image-onnx` | ONNX (8 bits + fp16) | 5B en denoiser + 9B de encoder externo | 1024² a 1456² | Apache-2.0 | HuggingFace, 0 descargas |
-| `OpenMOSS-Team/MOSS-Image-SFT` | PyTorch bf16 | 5B en denoiser + 9B de encoder | mismas resoluciones | no disponible en la información | HuggingFace |
-| `lodestones/MOSS-Image-SFT-8-steps-dmd` | LoRA de destilación | adapta el denoiser de 5B | 8 pasos | Apache-2.0 según la model card | HuggingFace, como LoRA |
-| `unsloth/Qwen3.5-9B-GGUF` | GGUF Q8_0 | 9B | no disponible | no disponible en la información | HuggingFace |
+| `smile-forge/moss-image-onnx` | ONNX (8 bits + fp16) | 5B en denoiser + 9B de encoder externo | 1024² a 1456² | Apache-2.0 | Hugging Face, 0 descargas |
+| `OpenMOSS-Team/MOSS-Image-SFT` | PyTorch bf16 | 5B en denoiser + 9B de encoder | mismas resoluciones | no disponible en la información | Hugging Face |
+| `lodestones/MOSS-Image-SFT-8-steps-dmd` | LoRA de destilación | adapta el denoiser de 5B | 8 pasos | Apache-2.0 según la model card | Hugging Face, como LoRA |
+| `unsloth/Qwen3.5-9B-GGUF` | GGUF Q8_0 | 9B | no disponible | no disponible en la información | Hugging Face |
 
 No se dispone de datos de otras implementaciones ONNX comparables ni de benchmarks frente a FLUX.1, SD3 u otros modelos de texto a imagen en la información proporcionada, por lo que la comparación se limita a las variantes del propio MOSS-Image.
 
@@ -120,7 +120,7 @@ No se dispone de datos de otras implementaciones ONNX comparables ni de benchmar
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/smile-forge/moss-image-onnx
+- Repositorio Hugging Face: https://huggingface.co/smile-forge/moss-image-onnx
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT
 - Host que lo consume (Nexaflow, C#): https://github.com/smile-forge/nexaflow
 - Codificador de texto en GGUF: https://huggingface.co/unsloth/Qwen3.5-9B-GGUF

@@ -6,7 +6,7 @@
 
 El objetivo del artefacto no es conversar, sino medir empíricamente cómo la compresión SVD degrada el comportamiento de seguridad de un modelo alineado y qué regla de selección de componentes repara mejor ese daño. Es una celda de una rejilla de experimentos sobre reglas de selección y presupuestos, y el propio autor advierte que varias ramas de esa rejilla están deliberadamente degradadas en seguridad respecto al modelo base.
 
-Por su naturaleza, se trata de un sujeto experimental, no de un asistente desplegable. Cuenta con 0 descargas y 0 *likes* en HuggingFace, se distribuye bajo licencia Apache 2.0 y su repositorio ocupa 14,5 GB en formato safetensors, con 7.241.732.096 parámetros reportados por los metadatos del repositorio.
+Por su naturaleza, se trata de un sujeto experimental, no de un asistente desplegable. Cuenta con 0 descargas y 0 *likes* en Hugging Face, se distribuye bajo licencia Apache 2.0 y su repositorio ocupa 14,5 GB en formato safetensors, con 7.241.732.096 parámetros reportados por los metadatos del repositorio.
 
 ## Especificaciones tecnicas
 
@@ -75,8 +75,8 @@ No se han publicado en la informacion disponible los valores correspondientes al
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento de seguridad | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (`svd-safety-mistral_remove50_swapgapiter_evfront_b010`) | 7.241.732.096 en safetensors; fraccion densa declarada 0,4997 | no disponible (base: 32.768) | Apache 2.0 | AdvBench ASR 0,2173; StrongREJECT ASR 0,3898; sobrerrechazo 0,0814; perplejidad WikiText-2 13,3449 | HuggingFace, 0 descargas |
-| `mistralai/Mistral-7B-Instruct-v0.2` (modelo base) | 7.241.732.096 | 32.768 (ventana deslizante 4.096) | Apache 2.0 | no disponible en la informacion aportada | HuggingFace |
+| Este checkpoint (`svd-safety-mistral_remove50_swapgapiter_evfront_b010`) | 7.241.732.096 en safetensors; fraccion densa declarada 0,4997 | no disponible (base: 32.768) | Apache 2.0 | AdvBench ASR 0,2173; StrongREJECT ASR 0,3898; sobrerrechazo 0,0814; perplejidad WikiText-2 13,3449 | Hugging Face, 0 descargas |
+| `mistralai/Mistral-7B-Instruct-v0.2` (modelo base) | 7.241.732.096 | 32.768 (ventana deslizante 4.096) | Apache 2.0 | no disponible en la informacion aportada | Hugging Face |
 | Otras celdas de la rejilla del mismo estudio | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones de otros modelos comprimidos comparables dentro de la informacion proporcionada.
@@ -97,6 +97,6 @@ No se dispone de datos de benchmarks ni de especificaciones de otros modelos com
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jeesup/svd-safety-mistral_remove50_swapgapiter_evfront_b010
+- Hugging Face: https://huggingface.co/Jeesup/svd-safety-mistral_remove50_swapgapiter_evfront_b010
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2
 - La busqueda web realizada no devolvio enlaces relevantes (unicamente resultados de YouTube sin relacion con el modelo). No hay papers, blogs, repositorios ni demos adicionales disponibles en la informacion proporcionada.

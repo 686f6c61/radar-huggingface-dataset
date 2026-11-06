@@ -84,10 +84,10 @@ Supera al paper en 7 conjuntos (por ejemplo, socmob 0,93×; geographical_origin_
 
 | Modelo | Parámetros | Contexto / límites de entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| minipfn-tabpfn-v2-regressor | 11,09 M | 160 características, 2.048 filas | Ratio RMSE 1,118 (media geom.) frente al paper | Apache 2.0 | HuggingFace (aiden-jeon) |
+| minipfn-tabpfn-v2-regressor | 11,09 M | 160 características, 2.048 filas | Ratio RMSE 1,118 (media geom.) frente al paper | Apache 2.0 | Hugging Face (aiden-jeon) |
 | TabPFN v2 oficial (PriorLabs) | no disponible en la información | no disponible en la información | Referencia del benchmark (ratio 1,0) | no disponible en la información | GitHub PriorLabs/TabPFN |
 | TabICL | no disponible en la información | no disponible en la información | no disponible en la información | no disponible en la información | GitHub soda-inria/tabicl (usado como prior) |
-| minipfn-tabpfn-v2-classifier | no disponible en la información | misma arquitectura, cabeza de clasificación | no disponible en la información | Apache 2.0 | HuggingFace (aiden-jeon) |
+| minipfn-tabpfn-v2-classifier | no disponible en la información | misma arquitectura, cabeza de clasificación | no disponible en la información | Apache 2.0 | Hugging Face (aiden-jeon) |
 
 ## Limitaciones y advertencias
 
@@ -104,7 +104,7 @@ Supera al paper en 7 conjuntos (por ejemplo, socmob 0,93×; geographical_origin_
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aiden-jeon/minipfn-tabpfn-v2-regressor
+- Modelo en Hugging Face: https://huggingface.co/aiden-jeon/minipfn-tabpfn-v2-regressor
 - Modelo clasificador hermano: https://huggingface.co/aiden-jeon/minipfn-tabpfn-v2-classifier
 - Código: https://github.com/Aiden-Jeon/minipfn
 - Paper de TabPFN v2 (Hollmann et al., Nature 637, 2025): https://doi.org/10.1038/s41586-024-08328-6

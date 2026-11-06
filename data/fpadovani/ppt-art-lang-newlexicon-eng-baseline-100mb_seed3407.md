@@ -6,7 +6,7 @@ El modelo `fpadovani/ppt-art-lang-newlexicon-eng-baseline-100mb_seed3407` es un 
 
 La relevancia de este modelo radica en su uso como herramienta de investigación para analizar cómo los modelos de lenguaje aprenden y procesan vocabulario o estructuras lingüísticas novedosas. Al ser una versión "baseline" de 100 MB, sirve como punto de comparación dentro de una serie de experimentos (se observan variantes en neerlandés e inglés en el perfil del autor). No está pensado para producción, sino para estudios académicos sobre adquisición de lenguaje artificial.
 
-Arquitectónicamente, se basa en GPT-2 (según los tags de HuggingFace), con un tamaño de contexto no especificado en la documentación disponible. El repositorio incluye pesos en formato safetensors y es compatible con el pipeline de text-generation de Transformers.
+Arquitectónicamente, se basa en GPT-2 (según los tags de Hugging Face), con un tamaño de contexto no especificado en la documentación disponible. El repositorio incluye pesos en formato safetensors y es compatible con el pipeline de text-generation de Transformers.
 
 ## Especificaciones técnicas
 
@@ -80,7 +80,7 @@ El modelo se sitúa en la misma gama que GPT-2 small pero con menos parámetros 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fpadovani/ppt-art-lang-newlexicon-eng-baseline-100mb_seed3407
+- Hugging Face: https://huggingface.co/fpadovani/ppt-art-lang-newlexicon-eng-baseline-100mb_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/ppt_art_lang/runs/ks9981gq
 - Repositorio de TRL: https://github.com/huggingface/trl

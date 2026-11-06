@@ -4,7 +4,7 @@
 
 Kaon 3 CR-5B calibrated median es un modelo de lenguaje y procesamiento de imagen-texto de 25.805.933.872 parámetros (25,8B) desarrollado por kaonai. Se trata de una fusión completa de pesos en bfloat16 a partir del modelo base `kaonai/kaon-c-gemma4-26b-v10.1`, entrenado mediante GRPO con una función de recompensa de consenso calibrada. El checkpoint corresponde al paso 50 de optimización de la ejecución `cr5-median-v11-order55-resume` y se presenta como "suggested unevaluated checkpoint": el autor indica que su publicación no es una autorización de promoción.
 
-El modelo se enmarca dentro de la familia Gemma4, aunque no se especifica si la arquitectura es densa, mixta o híbrida. Los tags de HuggingFace incluyen `image-text-to-text`, lo que sugiere que el modelo base es multimodal, pero no se detallan ni la longitud de contexto ni los idiomas soportados. Tampoco hay información sobre licencia, benchmarks o requisitos de despliegue más allá de los pesos en safetensors.
+El modelo se enmarca dentro de la familia Gemma4, aunque no se especifica si la arquitectura es densa, mixta o híbrida. Los tags de Hugging Face incluyen `image-text-to-text`, lo que sugiere que el modelo base es multimodal, pero no se detallan ni la longitud de contexto ni los idiomas soportados. Tampoco hay información sobre licencia, benchmarks o requisitos de despliegue más allá de los pesos en safetensors.
 
 La relevancia del modelo radica en su proceso de alineación experimental: el uso de GRPO con agregación de recompensas mediante mediana calibrada sobre márgenes R/S/W es una innovación técnica poco común. Sin embargo, al ser un checkpoint sin evaluación publicada, su uso debe limitarse a investigación y experimentación, no a entornos de producción.
 
@@ -29,7 +29,7 @@ En cuanto al entrenamiento, el proceso utiliza GRPO con una tasa de aprendizaje 
 
 ## Capacidades
 
-- Generación de texto conversacional, según el pipeline `text-generation` declarado en HuggingFace.
+- Generación de texto conversacional, según el pipeline `text-generation` declarado en Hugging Face.
 - Modalidad de imagen-texto a texto, de acuerdo con el tag `image-text-to-text`; esto sugiere capacidad para procesar imágenes y generar texto relacionado.
 - Entrenamiento con RL mediante GRPO orientado a optimizar una recompensa de consenso calibrada, lo que puede mejorar la coherencia de las respuestas en comparación con el modelo base.
 - No se han documentado oficialmente capacidades de tool calling, function calling, agentes autónomos ni razonamiento multi-paso.
@@ -77,5 +77,5 @@ No disponible. No se han publicado evaluaciones comparativas frente a otros mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kaonai/grpo-kaon3-cr5b-calibrated-median-n18-b004-step50
-- Modelo base en HuggingFace: https://huggingface.co/kaonai/kaon-c-gemma4-26b-v10.1
+- Modelo en Hugging Face: https://huggingface.co/kaonai/grpo-kaon3-cr5b-calibrated-median-n18-b004-step50
+- Modelo base en Hugging Face: https://huggingface.co/kaonai/kaon-c-gemma4-26b-v10.1

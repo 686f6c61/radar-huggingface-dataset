@@ -4,7 +4,7 @@
 
 MENDR (Manifold-Embedded Neural Data Representations) es un modelo fundacional para electroencefalografía (EEG) desarrollado por Matthew Chen y colaboradores, presentado en NeurIPS 2026. Aborda el problema de la heterogeneidad de canales en datos EEG: los montajes de electrodos varían entre dispositivos, sujetos y estudios, lo que dificulta el preentrenamiento y la transferencia entre conjuntos de datos. La propuesta integra geometría riemanniana sobre la variedad de matrices definidas positivas simétricas (SPD) para construir representaciones invariantes al conjunto de canales.
 
-El repositorio de HuggingFace distribuye únicamente pesos: un encoder preentrenado sobre el TUH EEG Corpus durante 30 épocas (`encoder_ep29.pth`) y clasificadores afinados para seis tareas downstream (`tuab`, `tuev`, `physio`, `seedv`, `chbmit`, `isruc`), con cinco semillas por tarea y validación cruzada de cinco folds en PhysioMI. No se publican en esta información datos de arquitectura, número de parámetros ni longitud de contexto, ya que no se trata de un modelo de lenguaje sino de un encoder de señales.
+El repositorio de Hugging Face distribuye únicamente pesos: un encoder preentrenado sobre el TUH EEG Corpus durante 30 épocas (`encoder_ep29.pth`) y clasificadores afinados para seis tareas downstream (`tuab`, `tuev`, `physio`, `seedv`, `chbmit`, `isruc`), con cinco semillas por tarea y validación cruzada de cinco folds en PhysioMI. No se publican en esta información datos de arquitectura, número de parámetros ni longitud de contexto, ya que no se trata de un modelo de lenguaje sino de un encoder de señales.
 
 La relevancia actual reside en el creciente interés por modelos fundacionales en neurofisiología clínica, donde la transferencia entre corpus y montajes es un cuello de botella práctico. MENDR se posiciona como una alternativa channel-agnostic, con licencia MIT y pesos verificables mediante SHA256.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Categoría | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MENDR | Encoder EEG channel-agnostic sobre variedad SPD | no disponible | no aplica | MIT | Pesos en HuggingFace, código en GitHub |
+| MENDR | Encoder EEG channel-agnostic sobre variedad SPD | no disponible | no aplica | MIT | Pesos en Hugging Face, código en GitHub |
 | Alternativas de modelo fundacional EEG | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone en la información proporcionada de datos sobre modelos comparables (por ejemplo, otros encoders EEG preentrenados) que permitan una comparación cuantitativa de parámetros, contexto o rendimiento.
@@ -82,6 +82,6 @@ No se dispone en la información proporcionada de datos sobre modelos comparable
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MatthewChen37/MENDR-Manifold-Embedded-Neural-Data-Representations
+- Hugging Face: https://huggingface.co/MatthewChen37/MENDR-Manifold-Embedded-Neural-Data-Representations
 - Repositorio de código, datos y uso: https://github.com/MatthewChen37/MENDR-Manifold-Embedded-Neural-Data-Representations
 - Paper: "MENDR: Manifold-Embedded Neural Data Representations for Channel-Agnostic EEG Foundation Modeling", NeurIPS 2026 (sin URL directa en la información disponible)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RWML World Model — WebShop (Qwen2.5-7B-Instruct, GRPO step 150) es un checkpoint de investigación publicado por el usuario lwaekfjlk en HuggingFace. Se trata de un modelo de mundo (world model) para predicción del siguiente estado, especializado en el entorno WebShop de AgentGym: dado un estado de navegación y una acción, el modelo debe predecir el estado resultante. Está construido sobre Qwen2.5-7B-Instruct (7.615.616.512 parámetros) y se entrenó con GRPO usando la recompensa binaria de embedding del método RWML, con umbral τ_d = 0.05 y 150 pasos de optimización.
+RWML World Model — WebShop (Qwen2.5-7B-Instruct, GRPO step 150) es un checkpoint de investigación publicado por el usuario lwaekfjlk en Hugging Face. Se trata de un modelo de mundo (world model) para predicción del siguiente estado, especializado en el entorno WebShop de AgentGym: dado un estado de navegación y una acción, el modelo debe predecir el estado resultante. Está construido sobre Qwen2.5-7B-Instruct (7.615.616.512 parámetros) y se entrenó con GRPO usando la recompensa binaria de embedding del método RWML, con umbral τ_d = 0.05 y 150 pasos de optimización.
 
 El interés de esta ficha no reside en su rendimiento, sino en su valor como resultado negativo documentado. La propia model card indica explícitamente que el entrenamiento no aprendió: la recompensa media se mantuvo plana a lo largo de los 150 pasos y la fracción de grupos GRPO con recompensa no uniforme (los únicos que generan gradiente) osciló entre el 0 % y el 12 %. El autor atribuye el fallo a los datos, no a los hiperparámetros: el 52,8 % de las transiciones de WebShop son de búsqueda a página de listado de productos, cuyos ASIN, títulos y precios no son predecibles a partir de la acción, los estados siguientes reales tienen una media de ~240 palabras y aproximadamente el 64 % del contenido objetivo no es observable desde el contexto.
 
@@ -17,7 +17,7 @@ La relevancia actual es metodológica: sirve como referencia para quien diseñe 
 | Parametros activos | No aplica (no es MoE) |
 | Longitud de contexto | No disponible en la informacion proporcionada (heredada del modelo base Qwen2.5-7B-Instruct) |
 | Tipos de cuantizacion | No disponible; el repositorio solo publica pesos en safetensors (formato completo, tamano de repo 15,2 GB) |
-| Idiomas soportados | No disponible (los metadatos de HuggingFace no declaran idiomas) |
+| Idiomas soportados | No disponible (los metadatos de Hugging Face no declaran idiomas) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors |
 
@@ -71,8 +71,8 @@ Interpretacion aportada por el autor: la recompensa media permanece plana y la f
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rwml-webshop-qwen2.5-7b-step150 | 7,6 B | No disponible | Prediccion del siguiente estado (WebShop) | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen2.5-7B-Instruct (modelo base) | 7,6 B | No disponible en la informacion proporcionada | Asistente general, instruction following | Apache 2.0 | HuggingFace |
+| rwml-webshop-qwen2.5-7b-step150 | 7,6 B | No disponible | Prediccion del siguiente estado (WebShop) | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen2.5-7B-Instruct (modelo base) | 7,6 B | No disponible en la informacion proporcionada | Asistente general, instruction following | Apache 2.0 | Hugging Face |
 | Inicializacion RWML-SFT sobre 22.627 tripletes WebShop (referida en la model card) | 7,6 B | No disponible | Prediccion del siguiente estado (WebShop) | No disponible | ID del repositorio no disponible |
 
 No se dispone de datos de rendimiento comparables entre estos modelos, y el propio autor advierte que el checkpoint publicado no debe superar a su inicializacion SFT. No se conocen, en la informacion proporcionada, otros world models publicos de la misma categoria con los que comparar de forma fundamentada.
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparables entre estos modelos, y el prop
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lwaekfjlk/rwml-webshop-qwen2.5-7b-step150
+- Modelo en Hugging Face: https://huggingface.co/lwaekfjlk/rwml-webshop-qwen2.5-7b-step150
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Modelo de embeddings usado en la recompensa: https://huggingface.co/Qwen/Qwen3-Embedding-8B
 - Articulo RWML citado en la model card: https://arxiv.org/abs/2602.05842

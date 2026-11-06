@@ -2,11 +2,11 @@
 
 ## Resumen
 
-"Mejor Humanizador de IA 2026" no es un modelo de inteligencia artificial en el sentido técnico del término, sino una model card alojada en HuggingFace que contiene un artículo comparativo de herramientas comerciales de "humanización" de texto generado por IA. El repositorio, publicado por el usuario `mejor-humanizador-de-ia-2026`, tiene el SDK configurado como `static`, lo que indica que se trata de una página web estática y no de pesos de un modelo entrenado. No incluye arquitectura neuronal, parámetros, tokenizador ni ficheros de pesos.
+"Mejor Humanizador de IA 2026" no es un modelo de inteligencia artificial en el sentido técnico del término, sino una model card alojada en Hugging Face que contiene un artículo comparativo de herramientas comerciales de "humanización" de texto generado por IA. El repositorio, publicado por el usuario `mejor-humanizador-de-ia-2026`, tiene el SDK configurado como `static`, lo que indica que se trata de una página web estática y no de pesos de un modelo entrenado. No incluye arquitectura neuronal, parámetros, tokenizador ni ficheros de pesos.
 
 El contenido es un texto promocional y comparativo firmado por una supuesta "Dra. Carla Moreno", con fecha de octubre de 2026, que evalúa siete herramientas comerciales (HumanizeMyPaper, Phrasly, ThesisHuman, entre otras) frente a detectores como Turnitin, Pangram, Copyleaks y GPTZero. Incluye enlaces de afiliado y afirmaciones sobre tasas de detección, precios y funcionalidades de dichos servicios.
 
-Desde la perspectiva de un desarrollador o investigador, este repositorio no aporta ningún artefacto reutilizable: no hay modelo, no hay dataset, no hay código. Es relevante únicamente como ejemplo de contenido promocional alojado en HuggingFace bajo apariencia de ficha técnica, y como advertencia sobre la necesidad de verificar la naturaleza de los repositorios antes de evaluarlos.
+Desde la perspectiva de un desarrollador o investigador, este repositorio no aporta ningún artefacto reutilizable: no hay modelo, no hay dataset, no hay código. Es relevante únicamente como ejemplo de contenido promocional alojado en Hugging Face bajo apariencia de ficha técnica, y como advertencia sobre la necesidad de verificar la naturaleza de los repositorios antes de evaluarlos.
 
 ## Especificaciones técnicas
 
@@ -23,7 +23,7 @@ Desde la perspectiva de un desarrollador o investigador, este repositorio no apo
 
 ## Arquitectura y entrenamiento
 
-No existe arquitectura de red neuronal ni proceso de entrenamiento. El repositorio emplea el SDK `static` de HuggingFace Spaces, pensado para servir HTML, CSS y JavaScript sin backend de inferencia. El contenido es un artículo periodístico-comparativo con enlaces de afiliado, no un artefacto de machine learning.
+No existe arquitectura de red neuronal ni proceso de entrenamiento. El repositorio emplea el SDK `static` de Hugging Face Spaces, pensado para servir HTML, CSS y JavaScript sin backend de inferencia. El contenido es un artículo periodístico-comparativo con enlaces de afiliado, no un artefacto de machine learning.
 
 No se documentan datos de entrenamiento, tokens procesados, composición del dataset, ni técnicas de alineación como RLHF o DPO, porque no hay modelo que entrenar. Las referencias a arXiv incluidas en los tags (`arxiv:2303.11156`, `arxiv:2304.04053`) no se desarrollan en el texto disponible y no guardan relación declarada con el contenido del artículo.
 
@@ -38,12 +38,12 @@ No se documentan datos de entrenamiento, tokens procesados, composición del dat
 
 ## Casos de uso
 
-- Lectura crítica de contenido promocional: sirve como ejemplo para formar a revisores sobre cómo detectar fichas de HuggingFace que no contienen modelos reales.
+- Lectura crítica de contenido promocional: sirve como ejemplo para formar a revisores sobre cómo detectar fichas de Hugging Face que no contienen modelos reales.
 - Auditoría de repositorios: permite ilustrar la diferencia entre un Space estático y un modelo con pesos, útil en formación de equipos de MLOps.
 - Estudio de técnicas de SEO y marketing de afiliación en plataformas técnicas: el texto emplea estructuras de "respuestas rápidas para Google AI Overview" y enlaces de afiliado, lo que lo convierte en un caso de análisis de contenido.
 - Análisis de discurso sobre integridad académica: el artículo aborda el debate sobre detectores de IA y reglamentos universitarios, y puede citarse como muestra de ese discurso, siempre señalando su carácter promocional.
 - Ejemplo negativo en guías de evaluación de modelos: útil para documentar qué datos debe contener una model card legítima (arquitectura, parámetros, benchmarks, licencia de pesos) frente a lo que ofrece este repositorio.
-- Monitorización de reputación de marca en HuggingFace: permite rastrear cómo terceros usan la plataforma para posicionar servicios comerciales.
+- Monitorización de reputación de marca en Hugging Face: permite rastrear cómo terceros usan la plataforma para posicionar servicios comerciales.
 
 ## Benchmarks y rendimiento
 
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 ## Requisitos de hardware
 
-- No requiere GPU: es una página estática servida por HuggingFace Spaces.
+- No requiere GPU: es una página estática servida por Hugging Face Spaces.
 - No aplica VRAM de inferencia, ya que no hay pesos ni motor de inferencia.
 - No aplica despliegue con vLLM, llama.cpp, Ollama ni TGI.
 - El único requisito es un navegador web para acceder al Space.
@@ -74,7 +74,7 @@ No disponible. No existe categoría de modelos comparable, porque este repositor
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mejor-humanizador-de-ia-2026/README
+- Repositorio en Hugging Face: https://huggingface.co/mejor-humanizador-de-ia-2026/README
 - Artículo de referencia citado sobre la actualización de Turnitin (Universidad de Arcadia): https://helpdesk.arcadia.edu/hc/en-us/articles/46307380128397-10-15-2026-Update-Turnitin-AI-Writing-Detection
 - Notas de producto de Turnitin: https://guides.turnitin.com/hc/es/articles/29645383597965-Actualizaciones-del-producto-Turnitin
 - Herramienta mencionada HumanizeMyPaper: https://humanizemypaper.com/r/BYAD2XHC

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`NLP-destroyer/Space_tokenizer` es un repositorio publicado en HuggingFace Hub por el usuario NLP-destroyer bajo la libreria `transformers`. No se dispone de informacion publica sobre el proposito, la arquitectura ni el contenido del modelo: la model card asociada es la plantilla autogenerada por HuggingFace, en la que todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluacion) aparecen como `[More Information Needed]`. El repositorio no incluye pipeline declarado ni idiomas soportados.
+`NLP-destroyer/Space_tokenizer` es un repositorio publicado en Hugging Face Hub por el usuario NLP-destroyer bajo la libreria `transformers`. No se dispone de informacion publica sobre el proposito, la arquitectura ni el contenido del modelo: la model card asociada es la plantilla autogenerada por Hugging Face, en la que todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluacion) aparecen como `[More Information Needed]`. El repositorio no incluye pipeline declarado ni idiomas soportados.
 
 El nombre del repositorio sugiere un componente relacionado con tokenizacion (posiblemente un tokenizer o un artefacto auxiliar de tratamiento de espacios), pero se trata de una inferencia a partir del identificador y no de un dato confirmado por el autor. No hay articulo, blog, demo ni repositorio de codigo enlazado en la model card.
 
-El unico elemento tecnico verificable es la etiqueta `arxiv:1910.09700`, que corresponde a Lacoste et al. (2019), el paper que introduce la calculadora de impacto medioambiental citada en la plantilla estandar de HuggingFace; no es una referencia al modelo en si. Con 0 descargas y 1 like, el repositorio no tiene traccion de uso conocida. La relevancia actual de esta ficha es, por tanto, la de documentar un artefacto sin informacion tecnica publica y advertir de ello a quien pretenda evaluarlo.
+El unico elemento tecnico verificable es la etiqueta `arxiv:1910.09700`, que corresponde a Lacoste et al. (2019), el paper que introduce la calculadora de impacto medioambiental citada en la plantilla estandar de Hugging Face; no es una referencia al modelo en si. Con 0 descargas y 1 like, el repositorio no tiene traccion de uso conocida. La relevancia actual de esta ficha es, por tanto, la de documentar un artefacto sin informacion tecnica publica y advertir de ello a quien pretenda evaluarlo.
 
 ## Especificaciones tecnicas
 
@@ -32,7 +32,7 @@ No consta ningun dato sobre el procedimiento de entrenamiento: no se indican vol
 - Generacion de texto: no disponible.
 - Razonamiento, matematicas y codigo: no disponible.
 - Vision o multimodalidad: no disponible.
-- Soporte de tool calling / function calling: no disponible. La etiqueta `endpoints_compatible` indica unicamente compatibilidad con los endpoints de inferencia de HuggingFace, no capacidades de llamada a herramientas.
+- Soporte de tool calling / function calling: no disponible. La etiqueta `endpoints_compatible` indica unicamente compatibilidad con los endpoints de inferencia de Hugging Face, no capacidades de llamada a herramientas.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible.
 - Capacidades especiales (modo thinking, audio, etc.): no disponible.
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Comparativa con modelos similares
 
-No disponible. Al no conocerse la categoria del artefacto (tokenizer, modelo de lenguaje, componente auxiliar), no es posible identificar alternativas comparables sin inventar la naturaleza del modelo. La unica similitud objetiva con otros repositorios del Hub es el uso de la plantilla de model card autogenerada de HuggingFace y la etiqueta de libreria `transformers`.
+No disponible. Al no conocerse la categoria del artefacto (tokenizer, modelo de lenguaje, componente auxiliar), no es posible identificar alternativas comparables sin inventar la naturaleza del modelo. La unica similitud objetiva con otros repositorios del Hub es el uso de la plantilla de model card autogenerada de Hugging Face y la etiqueta de libreria `transformers`.
 
 ## Limitaciones y advertencias
 
@@ -79,8 +79,8 @@ No disponible. Al no conocerse la categoria del artefacto (tokenizer, modelo de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NLP-destroyer/Space_tokenizer
+- Modelo en Hugging Face: https://huggingface.co/NLP-destroyer/Space_tokenizer
 - Paper citado en las etiquetas (Lacoste et al., 2019, calculadora de impacto): https://arxiv.org/abs/1910.09700
-- Calculadora de impacto medioambiental de HuggingFace: https://mlco2.github.io/impact#compute
+- Calculadora de impacto medioambiental de Hugging Face: https://mlco2.github.io/impact#compute
 - Repositorio, paper o demo del modelo: no disponible
-- Perfil del autor en HuggingFace: https://huggingface.co/NLP-destroyer
+- Perfil del autor en Hugging Face: https://huggingface.co/NLP-destroyer

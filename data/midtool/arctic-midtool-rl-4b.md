@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MidTool/Arctic-MidTool-RL-4B es un modelo de lenguaje de 4.411 millones de parámetros desarrollado por MidTool, orientado a tareas de generación de texto con énfasis en uso de herramientas (tool-use), llamadas a funciones (function-calling) y comportamientos agentic. Se trata de un ajuste fino mediante aprendizaje por refuerzo (RL) sobre el modelo base MidTool/Arctic-MidTool-MT-4B, que a su vez está construido sobre la arquitectura Qwen3. El modelo se distribuye bajo licencia Apache 2.0 y está pensado para su integración en pipelines de generación de texto, aunque su acceso es restringido y requiere aceptación de condiciones en HuggingFace.
+MidTool/Arctic-MidTool-RL-4B es un modelo de lenguaje de 4.411 millones de parámetros desarrollado por MidTool, orientado a tareas de generación de texto con énfasis en uso de herramientas (tool-use), llamadas a funciones (function-calling) y comportamientos agentic. Se trata de un ajuste fino mediante aprendizaje por refuerzo (RL) sobre el modelo base MidTool/Arctic-MidTool-MT-4B, que a su vez está construido sobre la arquitectura Qwen3. El modelo se distribuye bajo licencia Apache 2.0 y está pensado para su integración en pipelines de generación de texto, aunque su acceso es restringido y requiere aceptación de condiciones en Hugging Face.
 
 La relevancia de este modelo radica en su tamaño compacto (4.4B parámetros) combinado con capacidades avanzadas de tool calling y razonamiento agéntico, lo que lo hace apto para despliegues en entornos con recursos limitados. El entrenamiento con RL busca mejorar la capacidad del modelo para seguir instrucciones y realizar llamadas a herramientas de forma más precisa. Aunque no se han publicado métricas de rendimiento, su diseño basado en Qwen3 y su licencia permisiva lo posicionan como una opción interesante para prototipos y aplicaciones comerciales.
 
@@ -58,7 +58,7 @@ No se dispone de información suficiente para comparar con otros modelos de la m
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo es gated, por lo que requiere aceptar condiciones de uso en HuggingFace antes de descargarlo.
+- Acceso restringido: el modelo es gated, por lo que requiere aceptar condiciones de uso en Hugging Face antes de descargarlo.
 - Idiomas no especificados: aunque probablemente soporte varios idiomas, no se ha confirmado la lista exacta.
 - Riesgo de alucinación: como todo modelo de lenguaje, puede generar información inventada, especialmente en tareas de razonamiento multi-paso.
 - Sesgos: no se han documentado sesgos específicos, pero es probable que el modelo herede sesgos del dataset de entrenamiento.
@@ -67,7 +67,7 @@ No se dispone de información suficiente para comparar con otros modelos de la m
 
 ## Enlaces
 
-- [HuggingFace: MidTool/Arctic-MidTool-RL-4B](https://huggingface.co/MidTool/Arctic-MidTool-RL-4B)
+- [Hugging Face: MidTool/Arctic-MidTool-RL-4B](https://huggingface.co/MidTool/Arctic-MidTool-RL-4B)
 - [fan-shu/Arctic-MidTool-MT-4B-finetoolv2-sft779](https://huggingface.co/fan-shu/Arctic-MidTool-MT-4B-finetoolv2-sft779)
 - [fan-shu/Arctic-MidTool-MT-4B](https://huggingface.co/fan-shu/Arctic-MidTool-MT-4B)
 - [Arctic-Platform (Snowflake-AI-Research)](https://github.com/Snowflake-AI-Research/Arctic-Platform)

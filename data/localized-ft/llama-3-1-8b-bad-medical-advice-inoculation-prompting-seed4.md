@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `localized-ft/Llama-3.1-8B-bad-medical-advice-inoculation-prompting-seed4` es un fine-tune del modelo base `unsloth/Meta-Llama-3.1-8B-Instruct`, desarrollado por el usuario `localized-ft`. Según su nombre, está orientado a la "inoculación" contra malos consejos médicos, es decir, probablemente entrenado para resistir o rechazar instrucciones que induzcan a dar recomendaciones médicas peligrosas o erróneas. Sin embargo, la model card no proporciona detalles sobre el dataset, la metodología de entrenamiento ni los objetivos específicos más allá de la mención de haber sido entrenado con Unsloth y la librería TRL de HuggingFace.
+El modelo `localized-ft/Llama-3.1-8B-bad-medical-advice-inoculation-prompting-seed4` es un fine-tune del modelo base `unsloth/Meta-Llama-3.1-8B-Instruct`, desarrollado por el usuario `localized-ft`. Según su nombre, está orientado a la "inoculación" contra malos consejos médicos, es decir, probablemente entrenado para resistir o rechazar instrucciones que induzcan a dar recomendaciones médicas peligrosas o erróneas. Sin embargo, la model card no proporciona detalles sobre el dataset, la metodología de entrenamiento ni los objetivos específicos más allá de la mención de haber sido entrenado con Unsloth y la librería TRL de Hugging Face.
 
 Se trata de un modelo de 8.030 millones de parámetros, con licencia Apache-2.0, en formato safetensors, y pensado para generación de texto en inglés. Su relevancia radica en ser un ejemplo de fine-tuning de seguridad aplicado a un modelo base popular, aunque su escasa documentación y ausencia de benchmarks limitan su evaluación objetiva. El repositorio no registra descargas ni likes, lo que sugiere que es un experimento de investigación más que un modelo listo para producción.
 
@@ -23,7 +23,7 @@ Se trata de un modelo de 8.030 millones de parámetros, con licencia Apache-2.0,
 
 El modelo es un fine-tune completo de `unsloth/Meta-Llama-3.1-8B-Instruct`, que a su vez es una version optimizada del Llama 3.1 8B Instruct original. La arquitectura subyacente es un transformer decoder-only con Grouped-Query Attention (GQA), 32 capas, 8 cabezas de consulta y 8 cabezas de clave/valor, con una dimension de embedding de 4096. El contexto maximo es de 128.000 tokens, aunque en la practica el uso efectivo depende del hardware.
 
-El entrenamiento se realizo con la libreria Unsloth (que acelera el fine-tuning mediante kernels optimizados) y la libreria TRL de HuggingFace, lo que sugiere el uso de tecnicas como Supervised Fine-Tuning (SFT) o posiblemente DPO, aunque no se especifica. No se proporcionan datos sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF. El nombre del modelo indica "inoculation prompting", lo que podria implicar un entrenamiento con ejemplos adversariales de consejos medicos daninos, pero no hay confirmacion en la documentacion.
+El entrenamiento se realizo con la libreria Unsloth (que acelera el fine-tuning mediante kernels optimizados) y la libreria TRL de Hugging Face, lo que sugiere el uso de tecnicas como Supervised Fine-Tuning (SFT) o posiblemente DPO, aunque no se especifica. No se proporcionan datos sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF. El nombre del modelo indica "inoculation prompting", lo que podria implicar un entrenamiento con ejemplos adversariales de consejos medicos daninos, pero no hay confirmacion en la documentacion.
 
 ## Capacidades
 
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - VRAM estimada para inferencia en precision FP16: aproximadamente 16 GB (8.03B parametros x 2 bytes). Con cuantizacion de 8 bits, unos 8 GB; con 4 bits, unos 4-5 GB.
 - GPU recomendadas: para FP16, una NVIDIA A100 (40 GB) o RTX 4090 (24 GB) son suficientes. Para cuantizacion 4 bits, una RTX 3060 (12 GB) o similar puede bastar.
 - Es posible ejecutarlo en GPUs de consumo con cuantizacion, pero la ventana de contexto de 128k tokens requeriria mucha mas memoria si se usa completa.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, HuggingFace TGI, o directamente con transformers.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, Hugging Face TGI, o directamente con transformers.
 - Latencia y throughput: no se han publicado mediciones. Como referencia, un Llama 3.1 8B en una A100 suele generar entre 50 y 100 tokens por segundo con vLLM, pero esto depende de la implementacion y la cuantizacion.
 
 ## Comparativa con modelos similares
@@ -76,7 +76,7 @@ La comparacion directa con otros fine-tunes de "bad medical advice" (como los va
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/localized-ft/Llama-3.1-8B-bad-medical-advice-inoculation-prompting-seed4
+- Modelo en Hugging Face: https://huggingface.co/localized-ft/Llama-3.1-8B-bad-medical-advice-inoculation-prompting-seed4
 - Variante `second-third-sft`: https://huggingface.co/localized-ft/Llama-3.1-8B-bad-medical-advice-second-third-sft-seed4
 - Variante `first-third-sft` (otro autor): https://huggingface.co/longtermrisk/Llama-3.1-8B-bad-medical-advice-first-third-sft-seed4
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

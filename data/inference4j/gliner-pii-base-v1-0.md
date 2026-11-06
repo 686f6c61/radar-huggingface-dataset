@@ -98,7 +98,7 @@ La comparacion cuantitativa de precision con estas alternativas no esta disponib
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/inference4j/gliner-pii-base-v1.0
+- Modelo en Hugging Face: https://huggingface.co/inference4j/gliner-pii-base-v1.0
 - Modelo original: https://huggingface.co/knowledgator/gliner-pii-base-v1.0
 - Libreria inference4j: https://github.com/inference4j/inference4j
 - Paper de GLiNER (Zaratiana et al.): no disponible en la informacion proporcionada

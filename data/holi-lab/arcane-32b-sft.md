@@ -78,10 +78,10 @@ El contexto Arc mejora la puntuación global en 4,7 puntos sobre el mejor contex
 
 | Modelo | Parámetros | Contexto | Overall (ArcANE eval) | Licencia | Disponibilidad |
 |---|---:|---:|---:|---|---|
-| ArcANE-32B-SFT | 32B | No disponible | 58,4 | Apache 2.0 | HuggingFace |
-| Qwen3-32B (base) | 32B | No disponible | 50,1 | Apache 2.0 | HuggingFace |
-| ArcANE-32B-SFT (sin contexto Arc) | 32B | No disponible | 53,7 | Apache 2.0 | HuggingFace |
-| ArcANE-32B-DPO | 32B | No disponible | No disponible | Apache 2.0 | HuggingFace |
+| ArcANE-32B-SFT | 32B | No disponible | 58,4 | Apache 2.0 | Hugging Face |
+| Qwen3-32B (base) | 32B | No disponible | 50,1 | Apache 2.0 | Hugging Face |
+| ArcANE-32B-SFT (sin contexto Arc) | 32B | No disponible | 53,7 | Apache 2.0 | Hugging Face |
+| ArcANE-32B-DPO | 32B | No disponible | No disponible | Apache 2.0 | Hugging Face |
 
 La comparativa muestra que el contexto Arc es determinante para el rendimiento: el modelo supera claramente a su base sin ajuste y a su propia configuración sin contexto. El modelo hermano DPO existe pero no se han publicado resultados en la información disponible.
 

@@ -83,9 +83,9 @@ Comparación con el modelo de insectos del AIY Vision Kit de Google, agregado a 
 
 | Modelo | Arquitectura | Entrada | Clases | Precision de rol | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| species-classifier-hive | MobileNetV2 1.0 | 160 px | 265 especies / 12 roles | 91,7 % | Apache 2.0 | HuggingFace / GitHub |
-| species-classifier-hive_coral | MobileNetV2 1.4 | 224 px | 265 especies / 12 roles | 95,7 % | Apache 2.0 | HuggingFace / GitHub |
-| species-classifier-hive_esp32s3 | MobileNetV2 1.0 | 128 px | 265 especies / 12 roles | 89,3 % | Apache 2.0 | HuggingFace / GitHub |
+| species-classifier-hive | MobileNetV2 1.0 | 160 px | 265 especies / 12 roles | 91,7 % | Apache 2.0 | Hugging Face / GitHub |
+| species-classifier-hive_coral | MobileNetV2 1.4 | 224 px | 265 especies / 12 roles | 95,7 % | Apache 2.0 | Hugging Face / GitHub |
+| species-classifier-hive_esp32s3 | MobileNetV2 1.0 | 128 px | 265 especies / 12 roles | 89,3 % | Apache 2.0 | Hugging Face / GitHub |
 | Modelo de insectos AIY Vision Kit (Google) | no disponible | no disponible | agregado a 12 roles | 35,7 % | no disponible | reempaquetado en species-classifiers |
 
 No se dispone de datos de otros modelos comparables de clasificación de insectos en el borde en la información proporcionada.
@@ -103,7 +103,7 @@ No se dispone de datos de otros modelos comparables de clasificación de insecto
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mlgraham/species-classifier-hive
+- Hugging Face: https://huggingface.co/mlgraham/species-classifier-hive
 - Repositorio del proyecto: https://github.com/mlgraham/species-classifiers
 - Modelo base: https://huggingface.co/timm/mobilenetv2_100.ra_in1k
 - Dataset: iNaturalist 2021 (https://github.com/visipedia/inat_comp)

@@ -17,8 +17,8 @@ Es relevante para quien necesite TTS local en hardware muy limitado (servidores 
 | Parámetros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No disponible (TTS; la longitud útil depende de la duración del enunciado y no se publica cifra) |
 | Tipos de cuantización | INT8 dinámico de rango reducido en el estimador de vectores; resto de componentes en FP32. No se documentan GGUF, AWQ ni GPTQ |
-| Idiomas soportados | Coreano (etiqueta del repo y muestras de validación) e inglés (mediciones); el modelo base Supertonic 3 declara 31 idiomas. Los metadatos de HuggingFace no listan idiomas |
-| Licencia | `other` con `license_name: bigscience-openrail-m` en la model card; los metadatos de HuggingFace indican `bigscience-openrail-m`. Conviene revisar el fichero LICENSE del repo |
+| Idiomas soportados | Coreano (etiqueta del repo y muestras de validación) e inglés (mediciones); el modelo base Supertonic 3 declara 31 idiomas. Los metadatos de Hugging Face no listan idiomas |
+| Licencia | `other` con `license_name: bigscience-openrail-m` en la model card; los metadatos de Hugging Face indican `bigscience-openrail-m`. Conviene revisar el fichero LICENSE del repo |
 | Formato de pesos | ONNX (runtime `onnxruntime`); checkpoints de reproducción en `.pt` (PyTorch) bajo `reproduction/round5/` |
 
 ## Arquitectura y entrenamiento
@@ -84,8 +84,8 @@ No existe puntuación MOS, porcentaje de similitud perceptual ni resultado de eq
 
 | Modelo | Parámetros | Idiomas | Pasos de inferencia | Formato / runtime | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Supertonic 3 Optimization F1200 (este repo) | Estimador de 48,9 MB; base ~99 M | Coreano e inglés medidos; base 31 | 8 pasos, 1 hilo de CPU, INT8 dinámico parcial | ONNX / onnxruntime | `other` (bigscience-openrail-m declarada) | HuggingFace, descargas 0, likes 0 |
-| Supertonic 3 original (Supertone) | ~99 M | 31 | 50 pasos con CFG4 en la referencia del profesor | ONNX / CPU | Open-weight (términos concretos no disponibles en la información) | HuggingFace `Supertone/supertonic-3`, espejo en ModelScope |
+| Supertonic 3 Optimization F1200 (este repo) | Estimador de 48,9 MB; base ~99 M | Coreano e inglés medidos; base 31 | 8 pasos, 1 hilo de CPU, INT8 dinámico parcial | ONNX / onnxruntime | `other` (bigscience-openrail-m declarada) | Hugging Face, descargas 0, likes 0 |
+| Supertonic 3 original (Supertone) | ~99 M | 31 | 50 pasos con CFG4 en la referencia del profesor | ONNX / CPU | Open-weight (términos concretos no disponibles en la información) | Hugging Face `Supertone/supertonic-3`, espejo en ModelScope |
 | F1200 preview E400 (mismo repo) | Misma arquitectura que F1200 | Coreano e inglés | 8 pasos | ONNX / onnxruntime | Igual que el paquete | Incluido como comparación de escucha, no es el predeterminado |
 | Supertonic 2 | No disponible | 5 | No disponible | No disponible | No disponible | Versión previa citada por la documentación de Supertonic 3 |
 
@@ -98,7 +98,7 @@ Frente a sistemas TTS abiertos de la clase 0,7B–2B, la ventaja declarada del m
 - El modo 2x no es una mejora gratuita: frente al 2x nativo de F1200 mejora el CER/WER, pero queda muy lejos del modo normal 1,05 (5/193 en coreano y 0/96 en inglés).
 - El estudiante es una aproximación aprendida del profesor CFG4 de 50 pasos; no es matemáticamente idéntico y puede degradar prosodia o pronunciación en entradas fuera de la distribución de las 80 frases de entrenamiento.
 - Idiomas: la validación se limita a coreano e inglés. Aunque el modelo base declara 31 idiomas, este paquete no documenta calidad en el resto.
-- Ambigüedad de licencia: los metadatos y la model card usan `other` / `bigscience-openrail-m`, mientras que la ficha de HuggingFace muestra `bigscience-openrail-m`. Antes de uso comercial hay que revisar el fichero LICENSE del repo, que no se detalla en la información disponible.
+- Ambigüedad de licencia: los metadatos y la model card usan `other` / `bigscience-openrail-m`, mientras que la ficha de Hugging Face muestra `bigscience-openrail-m`. Antes de uso comercial hay que revisar el fichero LICENSE del repo, que no se detalla en la información disponible.
 - Reproducibilidad limitada de las mediciones: un solo host (EPYC 7551), un núcleo lógico, memoria de aproximadamente 1 GB y sin límite de cgroup; el autor advierte que no predicen velocidad en ARM y no hay resultados nuevos en ARM para F1200.
 - El kernel AVX2 opcional no se distribuye: debe compilarse desde el código fuente, lo que añade fricción al despliegue.
 - Sesgos: no se documenta ninguna evaluación de sesgos, género o acento en la información disponible; el corpus es de 80 frases autorales, lo que limita la diversidad lingüística.
@@ -107,7 +107,7 @@ Frente a sistemas TTS abiertos de la clase 0,7B–2B, la ventaja declarada del m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/babihoba/supertonic3-optimization
+- Modelo en Hugging Face: https://huggingface.co/babihoba/supertonic3-optimization
 - Código fuente y registros de experimentos: https://github.com/8954sood/supertonic3-optimization
 - Revisión de código citada: https://github.com/8954sood/supertonic3-optimization/tree/13fb103
 - Dataset de reproducción: https://huggingface.co/datasets/babihoba/supertonic3-optimization-data/tree/main/round5

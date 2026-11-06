@@ -15,7 +15,7 @@ La arquitectura emplea un diseño de mezcla de expertos con atención dispersa (
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | AWQ INT4 (este modelo); el base probablemente BF16/FP16 |
-| Idiomas soportados | en, zh (segun HuggingFace); la model card menciona ademas HI, AR, RU, JA, KO, NL, FR, ES |
+| Idiomas soportados | en, zh (segun Hugging Face); la model card menciona ademas HI, AR, RU, JA, KO, NL, FR, ES |
 | Licencia | glm-5.3 (licencia propia de Zhipu AI) |
 | Formato de pesos | safetensors, compatible con compressed-tensors |
 
@@ -103,7 +103,7 @@ En los benchmarks publicados, GLM-5.3 supera a GLM-5.2 en todos los casos, y en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cyankiwi/GLM-5.3-AWQ-INT4
+- Modelo en Hugging Face: https://huggingface.co/cyankiwi/GLM-5.3-AWQ-INT4
 - Modelo base (zai-org/GLM-5.3): https://huggingface.co/zai-org/GLM-5.3
 - Sitio web de cyankiwi: https://cyan.kiwi/
 - Página de modelos de cyankiwi: https://cyan.kiwi/models

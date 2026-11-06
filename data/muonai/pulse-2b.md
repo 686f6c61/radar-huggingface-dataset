@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PULSE-2B es un modelo de lenguaje presentado por el usuario `muonai` en HuggingFace, descrito en su model card como un trabajo derivado (fine-tuning) de los pesos base de Google Gemma 2. El nombre sugiere una arquitectura de aproximadamente 2 mil millones de parámetros, aunque no se confirma explícitamente en la información disponible. El modelo se publica bajo la licencia Gemma 2, lo que implica que está sujeto a los Términos de Uso de Gemma de Google.
+PULSE-2B es un modelo de lenguaje presentado por el usuario `muonai` en Hugging Face, descrito en su model card como un trabajo derivado (fine-tuning) de los pesos base de Google Gemma 2. El nombre sugiere una arquitectura de aproximadamente 2 mil millones de parámetros, aunque no se confirma explícitamente en la información disponible. El modelo se publica bajo la licencia Gemma 2, lo que implica que está sujeto a los Términos de Uso de Gemma de Google.
 
 La relevancia de este modelo radica en que parte de una base sólida como Gemma 2, conocida por su buen equilibrio entre rendimiento y eficiencia en tamaños pequeños. Sin embargo, la información pública es extremadamente limitada: no se especifican datos de entrenamiento, capacidades, benchmarks ni casos de uso. Esto hace que su evaluación sea difícil para desarrolladores que buscan alternativas listas para producción. A fecha de su publicación (septiembre de 2026), no registra descargas ni valoraciones en la comunidad.
 
@@ -51,9 +51,9 @@ La comparativa más directa sería con el Gemma 2 2B original, del cual deriva. 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| PULSE-2B | ~2B (sin confirmar) | no disponible | Gemma 2 | HuggingFace |
-| Gemma 2 2B | 2.6B | 8K | Gemma Terms of Use | HuggingFace, Ollama |
-| Qwen2.5-1.5B | 1.5B | 32K | Apache 2.0 | HuggingFace, Ollama |
+| PULSE-2B | ~2B (sin confirmar) | no disponible | Gemma 2 | Hugging Face |
+| Gemma 2 2B | 2.6B | 8K | Gemma Terms of Use | Hugging Face, Ollama |
+| Qwen2.5-1.5B | 1.5B | 32K | Apache 2.0 | Hugging Face, Ollama |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos.
 
@@ -67,5 +67,5 @@ No se dispone de datos de rendimiento comparativo entre estos modelos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/muonai/PULSE-2B
+- Modelo en Hugging Face: https://huggingface.co/muonai/PULSE-2B
 - Términos de uso de Gemma 2 (enlace de la model card): https://ollama.com/library/gemma2/blobs/097a36493f71

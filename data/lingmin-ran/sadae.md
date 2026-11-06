@@ -4,7 +4,7 @@
 
 STARFlow es una familia de modelos generativos basados en transformers con flujos normalizadores autorregresivos (autoregressive normalizing flows), desarrollada por Apple y publicada como código abierto. El modelo combina la expresividad de los modelos autorregresivos con la eficiencia de los flujos normalizadores para tareas de generación de imagen y vídeo a partir de texto. La versión principal, STARFlow, se presentó en NeurIPS 2025 como Spotlight, y su extensión STARFlow-V en CVPR 2026 como Highlight.
 
-El repositorio de HuggingFace `Lingmin-Ran/SADAE` es un espejo o derivado que contiene la implementación de SADAE (Source-Anchored Decoupled Affine Editing), una técnica de edición de imágenes basada en los flujos normalizadores de STARFlow, junto con scripts de evaluación sobre PIE-Bench y PIE-Bench++. El repositorio no contiene pesos del modelo (0.0 GB), sino el código y la configuración para ejecutar la inferencia y la edición.
+El repositorio de Hugging Face `Lingmin-Ran/SADAE` es un espejo o derivado que contiene la implementación de SADAE (Source-Anchored Decoupled Affine Editing), una técnica de edición de imágenes basada en los flujos normalizadores de STARFlow, junto con scripts de evaluación sobre PIE-Bench y PIE-Bench++. El repositorio no contiene pesos del modelo (0.0 GB), sino el código y la configuración para ejecutar la inferencia y la edición.
 
 La relevancia actual de STARFlow radica en que propone una alternativa a los modelos de difusión para generación visual, usando flujos normalizadores exactos que permiten inversión y edición precisa de imágenes. El tamaño de los checkpoints mencionados va de 3B a 7B parámetros, con soporte para generación texto-a-imagen a 256x256 y texto-a-vídeo a 480p.
 
@@ -72,7 +72,7 @@ No se dispone de datos de rendimiento comparativo entre STARFlow y estos modelos
 ## Limitaciones y advertencias
 
 - La licencia no está especificada en la información disponible, por lo que no se puede confirmar el uso comercial.
-- El repositorio de HuggingFace tiene 0.0 GB, es decir, no contiene los pesos; es necesario descargarlos desde `apple/starflow`.
+- El repositorio de Hugging Face tiene 0.0 GB, es decir, no contiene los pesos; es necesario descargarlos desde `apple/starflow`.
 - Los checkpoints están en formato `.pth` (PyTorch), no en safetensors ni GGUF, lo que limita su uso con herramientas de inferencia optimizadas.
 - La resolución de evaluación por defecto es 256x256, inferior a los 512x512 habituales en PIE-Bench, lo que puede dificultar comparaciones directas.
 - No se documentan sesgos conocidos ni tasas de alucinación, pero al ser un modelo generativo visual existe riesgo de generar contenido inexacto o estereotipado.
@@ -83,8 +83,8 @@ No se dispone de datos de rendimiento comparativo entre STARFlow y estos modelos
 
 ## Enlaces
 
-- HuggingFace del repositorio: https://huggingface.co/Lingmin-Ran/SADAE
-- HuggingFace de los pesos: https://huggingface.co/apple/starflow
+- Hugging Face del repositorio: https://huggingface.co/Lingmin-Ran/SADAE
+- Hugging Face de los pesos: https://huggingface.co/apple/starflow
 - Paper STARFlow (NeurIPS 2025 Spotlight): https://arxiv.org/abs/2506.06276
 - Paper STARFlow-V (CVPR 2026 Highlight): https://arxiv.org/abs/2511.20462
 - Paper STARFlow2: https://arxiv.org/abs/2605.08029

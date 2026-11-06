@@ -91,7 +91,7 @@ La comparación relevante es contra el modelo base: sin métricas publicadas no 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HYU-NLP-EVA2/qwen3-4b-medicine-static-pilot-261017-seed42-step-095
+- Modelo en Hugging Face: https://huggingface.co/HYU-NLP-EVA2/qwen3-4b-medicine-static-pilot-261017-seed42-step-095
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Framework veRL (mencionado en la model card a través de los checkpoints nativos): https://github.com/volcengine/verl
 - Paper, blog, repositorio o demo adicionales: no disponibles en la información proporcionada.

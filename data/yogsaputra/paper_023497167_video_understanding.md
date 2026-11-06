@@ -64,8 +64,8 @@ No disponible. No existe un modelo comparable porque este repositorio no es un m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Yogsaputra/paper_023497167_video_understanding
+- Repositorio en Hugging Face: https://huggingface.co/Yogsaputra/paper_023497167_video_understanding
 - Encuesta relacionada (arXiv): https://arxiv.org/abs/2312.17432
 - Versión HTML de la encuesta: https://arxiv.org/html/2312.17432v5
 - Repositorio GitHub de recursos sobre LLMs para video: https://github.com/yunlong10/Awesome-LLMs-for-Video-Understanding
-- Página del paper en HuggingFace: https://huggingface.co/papers/2312.17432
+- Página del paper en Hugging Face: https://huggingface.co/papers/2312.17432

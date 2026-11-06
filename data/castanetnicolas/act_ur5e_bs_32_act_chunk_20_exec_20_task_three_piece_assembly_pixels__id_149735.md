@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ACT_UR5e_BS_32_Act_Chunk_20_Exec_20_TASK_three_piece_assembly_PIXELS__ID_149735 es una política de robótica basada en Action Chunking with Transformers (ACT), un método de aprendizaje por imitación que predice fragmentos cortos de acciones (action chunks) en lugar de un único paso de control. El modelo lo publica el usuario castanetnicolas y se ha entrenado y subido al Hub mediante LeRobot, la librería de HuggingFace para aprendizaje en robótica real. No es un modelo de lenguaje: es un controlador visuomotor que consume observaciones del estado del robot y dos cámaras, y emite comandos de acción de 7 dimensiones.
+ACT_UR5e_BS_32_Act_Chunk_20_Exec_20_TASK_three_piece_assembly_PIXELS__ID_149735 es una política de robótica basada en Action Chunking with Transformers (ACT), un método de aprendizaje por imitación que predice fragmentos cortos de acciones (action chunks) en lugar de un único paso de control. El modelo lo publica el usuario castanetnicolas y se ha entrenado y subido al Hub mediante LeRobot, la librería de Hugging Face para aprendizaje en robótica real. No es un modelo de lenguaje: es un controlador visuomotor que consume observaciones del estado del robot y dos cámaras, y emite comandos de acción de 7 dimensiones.
 
 El modelo tiene 51.590.791 parámetros (unos 51,6 millones) y un tamaño de repositorio de 0,2 GB, lo que lo sitúa en el rango de políticas ligeras capaces de ejecutarse en tiempo real en hardware de consumo. Se ha entrenado durante 300.000 pasos con batch size 32 y learning rate 1e-05 sobre el dataset mimicgen_three_piece_assembly_d1_image84, compuesto por 200 episodios y 67.101 fotogramas capturados a 20 FPS para la tarea de insertar dos piezas en una base.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto / horizonte | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ACT_UR5e_BS_32 (este modelo) | ACT (imitacion) | 51,6 M | chunk de 20, ejecucion de 20 | apache-2.0 | HuggingFace (0 descargas, 0 likes) |
+| ACT_UR5e_BS_32 (este modelo) | ACT (imitacion) | 51,6 M | chunk de 20, ejecucion de 20 | apache-2.0 | Hugging Face (0 descargas, 0 likes) |
 | Diffusion Policy | politica por difusion | no disponible | no disponible | no disponible | implementaciones publicas, no incluida en esta ficha con datos verificados |
 | VQ-BeT | transformer con cuantizacion de acciones | no disponible | no disponible | no disponible | no disponible |
-| Otros checkpoints ACT de LeRobot | ACT (imitacion) | variable | variable | normalmente apache-2.0 | Hub de HuggingFace |
+| Otros checkpoints ACT de LeRobot | ACT (imitacion) | variable | variable | normalmente apache-2.0 | Hub de Hugging Face |
 
 No se dispone de datos verificados de parametros, contexto ni rendimiento de los modelos comparables en la informacion proporcionada, por lo que la comparacion cuantitativa queda como no disponible.
 
@@ -83,7 +83,7 @@ No se dispone de datos verificados de parametros, contexto ni rendimiento de los
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/castanetnicolas/ACT_UR5e_BS_32_Act_Chunk_20_Exec_20_TASK_three_piece_assembly_PIXELS__ID_149735
+- Modelo en Hugging Face: https://huggingface.co/castanetnicolas/ACT_UR5e_BS_32_Act_Chunk_20_Exec_20_TASK_three_piece_assembly_PIXELS__ID_149735
 - Dataset de entrenamiento: https://huggingface.co/datasets/castanetnicolas/mimicgen_three_piece_assembly_d1_image84
 - Visualizacion del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=castanetnicolas/mimicgen_three_piece_assembly_d1_image84
 - Paper de ACT: https://huggingface.co/papers/2304.13705

@@ -78,7 +78,7 @@ No se dispone de información suficiente para comparar rendimiento con otros mod
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/grok.h015.sft-v5.step_200
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/grok.h015.sft-v5.step_200
 - Artículo sobre AgentTrove (MarkTechPost): https://www.marktechpost.com/2026/05/29/how-to-use-agenttrove-streaming-1-7m-agentic-traces-and-building-a-clean-sharegpt-sft-dataset-in-python/
 - Documentación sobre Agentic SFT Dataset (emergentmind): https://www.emergentmind.com/topics/agentic-sft-dataset
 - Sitio oficial de Grok: https://grok.com/

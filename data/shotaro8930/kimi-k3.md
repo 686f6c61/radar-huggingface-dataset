@@ -83,8 +83,8 @@ La información proporcionada solo permite comparar con Kimi K2 de forma cualita
 
 ## Enlaces
 
-- Repositorio en HuggingFace (copia de terceros): https://huggingface.co/shotaro8930/Kimi-K3
-- Organización oficial en HuggingFace: https://huggingface.co/moonshotai
+- Repositorio en Hugging Face (copia de terceros): https://huggingface.co/shotaro8930/Kimi-K3
+- Organización oficial en Hugging Face: https://huggingface.co/moonshotai
 - Chat oficial: https://www.kimi.com
 - Página de Moonshot AI: https://www.moonshot.ai
 - Blog técnico: https://www.kimi.com/blog/kimi-k3

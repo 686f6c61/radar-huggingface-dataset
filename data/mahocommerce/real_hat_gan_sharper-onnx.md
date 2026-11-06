@@ -82,7 +82,7 @@ La comparación con alternativas de la misma categoría (por ejemplo, otros expo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MahoCommerce/Real_HAT_GAN_sharper-ONNX
+- Modelo en Hugging Face: https://huggingface.co/MahoCommerce/Real_HAT_GAN_sharper-ONNX
 - Repositorio original de HAT: https://github.com/XPixelGroup/HAT
 - Sitio de MahoCommerce: https://mahocommerce.com
 - Artículo: Chen, X., Wang, X., Zhou, J., Qiao, Y. y Dong, C. "Activating More Pixels in Image Super-Resolution Transformer", CVPR 2023 (referencia bibtex incluida en la model card; no se proporciona URL directa).

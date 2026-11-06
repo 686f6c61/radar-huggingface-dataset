@@ -69,12 +69,12 @@ No se dispone de información suficiente para realizar una comparativa cuantitat
 - Limitaciones de contexto: no se especifica la longitud máxima de audio que puede procesar en una sola pasada; el modelo auxiliar de timestamps está limitado a 5 minutos.
 - Restricciones de licencia: Apache 2.0 permite uso comercial sin restricciones, pero se debe verificar la procedencia de los datos de entrenamiento si se requiere cumplimiento normativo (por ejemplo, GDPR).
 - La información disponible no incluye documentación sobre el proceso de entrenamiento, por lo que no se puede evaluar la calidad de los datos ni posibles sesgos lingüísticos.
-- El modelo está etiquetado como "region:us" en HuggingFace, lo que podría indicar restricciones de acceso según la región, aunque no se detalla.
+- El modelo está etiquetado como "region:us" en Hugging Face, lo que podría indicar restricciones de acceso según la región, aunque no se detalla.
 
 ## Enlaces
 
-- Modelo en HuggingFace (original de Qwen): https://huggingface.co/Qwen/Qwen3-ASR-1.7B
+- Modelo en Hugging Face (original de Qwen): https://huggingface.co/Qwen/Qwen3-ASR-1.7B
 - Repositorio de GitHub: https://github.com/QwenLM/Qwen3-ASR
-- Modelo en HuggingFace (copia de WatsonNT): https://huggingface.co/WatsonNT/Qwen3-ASR-1.7B
+- Modelo en Hugging Face (copia de WatsonNT): https://huggingface.co/WatsonNT/Qwen3-ASR-1.7B
 - Página del modelo en aiart.tools: https://aiart.tools/models/qwen3-asr-1-7b
 - Página del modelo en MindStudio: https://www.mindstudio.ai/models/qwen3-asr-1-7b-deepinfra

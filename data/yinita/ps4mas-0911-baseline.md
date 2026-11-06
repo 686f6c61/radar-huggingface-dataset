@@ -39,7 +39,7 @@ El unico detalle tecnico adicional declarado es el uso de un "mock judge" con pu
 
 - Reproducibilidad de evaluaciones baseline: un equipo que trabaje con el pipeline PS4MAS puede descargar este repositorio para comprobar que su ejecucion local produce la misma estructura de directorios y el mismo numero de escenarios por topologia (11 x 200 en CASTLE, 16 x 200 en PENGUIN).
 - Auditoria de un juez simulado: dado que se declara explicitamente el uso de un mock judge con puntuacion fija, sirve como caso de prueba para verificar que un juez real posterior no hereda sesgos de escala ni comparaciones invalidas frente a estas referencias.
-- Validacion del script de subida: el repositorio documenta el script `scripts/0911/upload_results_to_hf.py` y su comportamiento (3 ficheros, 0.0 MB, omision de pesos grandes), lo que permite probar flujos de publicacion automatica de resultados en HuggingFace.
+- Validacion del script de subida: el repositorio documenta el script `scripts/0911/upload_results_to_hf.py` y su comportamiento (3 ficheros, 0.0 MB, omision de pesos grandes), lo que permite probar flujos de publicacion automatica de resultados en Hugging Face.
 - Comparacion de escalado 9B frente a 27B: los directorios emparejados `castle_qwen9b_cold` / `castle_qwen27b_cold` y `penguin_qwen9b_cold` / `penguin_qwen27b_cold` permiten estudiar el efecto del tamano del modelo base sobre el mismo conjunto de escenarios, siempre que el juez utilizado se sustituya por uno real.
 - Integracion en un arnes de evaluacion continuo: el layout plano por modelo y dominio facilita consumir los resultados desde un script de CI que compare la ultima ejecucion con esta linea base y marque regresiones de estructura.
 - Punto de partida para definir taxonomias de escenarios: las 11 topologias de CASTLE y las 16 de PENGUIN, con 200 escenarios cada una, pueden reutilizarse como esqueleto de un banco de pruebas propio antes de invertir en anotacion.
@@ -62,7 +62,7 @@ Este repositorio no es un modelo, por lo que no procede una comparativa de rendi
 
 | Elemento | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `yinita/ps4mas-0911-baseline` | Repositorio de resultados de evaluacion | no aplica | no aplica | no disponible | Publico en HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
+| `yinita/ps4mas-0911-baseline` | Repositorio de resultados de evaluacion | no aplica | no aplica | no disponible | Publico en Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
 | `Qwen/Qwen3.5-9B` | Modelo base evaluado | no disponible (el identificador sugiere 9B) | no disponible | no disponible | Referenciado en la model card, no incluido en este repositorio |
 | `Qwen/Qwen3.5-27B` | Modelo base evaluado | no disponible (el identificador sugiere 27B) | no disponible | no disponible | Referenciado en la model card, no incluido en este repositorio |
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento, licencia ni contexto de ninguno de los tr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yinita/ps4mas-0911-baseline
+- Repositorio en Hugging Face: https://huggingface.co/yinita/ps4mas-0911-baseline
 - Fichero de test de CASTLE citado en la model card: `data/castle/castle_official_final_test.jsonl` (ruta relativa, no se ha localizado URL publica)
 - Fichero de test de PENGUIN citado en la model card: `data/sft_splits/final_test_scenarios.jsonl` (ruta relativa, no se ha localizado URL publica)
 - Script de subida citado en la model card: `scripts/0911/upload_results_to_hf.py` (ruta relativa, no se ha localizado URL publica)

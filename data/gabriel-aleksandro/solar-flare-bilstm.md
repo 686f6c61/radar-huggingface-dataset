@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Solar-flare-bilstm es un clasificador binario de series temporales diseñado para predecir erupciones solares (FL, flare, frente a NF, no flare) a partir de ventanas de 60 pasos temporales y 18 parámetros magnéticos SHARP extraídos de magnetogramas del instrumento SDO/HMI. Lo desarrolla gabriel-aleksandro en el marco de un proyecto de iniciación científica PIBIC/CNPq en la UNICAMP (Brasil), y se publica en HuggingFace con licencia MIT.
+Solar-flare-bilstm es un clasificador binario de series temporales diseñado para predecir erupciones solares (FL, flare, frente a NF, no flare) a partir de ventanas de 60 pasos temporales y 18 parámetros magnéticos SHARP extraídos de magnetogramas del instrumento SDO/HMI. Lo desarrolla gabriel-aleksandro en el marco de un proyecto de iniciación científica PIBIC/CNPq en la UNICAMP (Brasil), y se publica en Hugging Face con licencia MIT.
 
 No es un modelo de lenguaje: se trata de una red recurrente bidireccional (biLSTM de 2 capas y 128 unidades ocultas) con atención aditiva de Bahdanau y un decodificador denso que produce una probabilidad de erupción en el intervalo [0, 1]. El modelo publicado es un ensamble de 5 pliegues entrenados con GroupKFold por HARPNUM sobre el conjunto de datos SWAN-SF (~316.000 ventanas), lo que evita la fuga de datos entre regiones activas.
 
@@ -68,7 +68,7 @@ No se han publicado en la información disponible resultados adicionales (por ej
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| solar-flare-bilstm (este modelo) | no disponible | 60 pasos × 18 features SHARP | TSS 0,78 (hold-out ensemble, no verificado) | MIT | Pesos en HuggingFace; el tamano del repo figura como 0.0 GB, conviene comprobar que los checkpoints estan subidos |
+| solar-flare-bilstm (este modelo) | no disponible | 60 pasos × 18 features SHARP | TSS 0,78 (hold-out ensemble, no verificado) | MIT | Pesos en Hugging Face; el tamano del repo figura como 0.0 GB, conviene comprobar que los checkpoints estan subidos |
 | BiLSTM / LSTM sin atención sobre SWAN-SF (baselines de la literatura) | no disponible | ventanas de parámetros SHARP | no disponible | variable | no disponible |
 | CNN-LSTM y modelos de ML clásico (RF, SVM) sobre SWAN-SF | no disponible | ventanas de parámetros SHARP | no disponible | variable | no disponible |
 
@@ -85,14 +85,14 @@ No se dispone de datos verificables de parámetros, contexto ni métricas de los
 - El tamaño del repositorio figura como 0.0 GB y las descargas son 0, por lo que la disponibilidad efectiva de los cinco checkpoints debe comprobarse antes de integrar el modelo.
 - La model card está truncada en la sección de procedimiento de entrenamiento ("Grid search ove"), lo que limita la reproducibilidad exacta del umbral y de la selección de checkpoints.
 - Licencia MIT: permite uso comercial y modificación con atribución y sin garantía; aun así, el uso comercial en contextos críticos (aviación, satélites, redes eléctricas) requiere validación propia y no está respaldado por el autor.
-- No hay soporte multilingüe ni pipeline declarado en HuggingFace (`pipeline: no disponible`), lo que complica el uso con `transformers`.
+- No hay soporte multilingüe ni pipeline declarado en Hugging Face (`pipeline: no disponible`), lo que complica el uso con `transformers`.
 - Riesgo de alucinación: no aplica en el sentido de generación de texto, pero sí existe riesgo de falsos positivos y falsos negativos con probabilidades mal calibradas fuera del conjunto de validación.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gabriel-aleksandro/solar-flare-bilstm
+- Modelo en Hugging Face: https://huggingface.co/gabriel-aleksandro/solar-flare-bilstm
 - Dataset SWAN-SF (Harvard Dataverse): no disponible en la información proporcionada (el autor lo referencia sin URL)
 - Repositorio companion para predicción de CME: no disponible en la información proporcionada (mencionado sin enlace)
 - Paper o publicación asociada: no disponible en la información proporcionada
-- Demo o espacio de HuggingFace: no disponible
+- Demo o espacio de Hugging Face: no disponible
 - Los resultados de la búsqueda web realizada no guardan relación con el modelo (referencias al nombre propio "Gabriel") y se descartan como fuentes.

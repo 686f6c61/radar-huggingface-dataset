@@ -4,7 +4,7 @@
 
 `em-eval/qwen25-7b-organism-good-medical-ckpt-s0` es un adaptador LoRA (PEFT) entrenado mediante SFT sobre el modelo base `Qwen/Qwen2.5-7B-Instruct`. Lo publica la organizacion `em-eval`, que por el nombre del repositorio y de sus componentes ("organism-good-medical-ckpt-s0") parece estar orientada a experimentos de evaluacion y estudio de modificaciones de comportamiento en modelos, mas que a un producto final de uso general. El repositorio contiene unicamente los pesos del adaptador, no el modelo completo.
 
-La model card es la plantilla por defecto de HuggingFace sin completar: no documenta datos de entrenamiento, hiperparametros, evaluacion ni uso previsto. Toda la informacion tecnica disponible procede de los metadatos del repositorio (tags, tamano y modelo base). El modelo base Qwen2.5-7B-Instruct es un transformer denso de 7.600 millones de parametros con 32.768 tokens de contexto, entrenado por Alibaba Qwen para instrucciones y conversacion multilingue.
+La model card es la plantilla por defecto de Hugging Face sin completar: no documenta datos de entrenamiento, hiperparametros, evaluacion ni uso previsto. Toda la informacion tecnica disponible procede de los metadatos del repositorio (tags, tamano y modelo base). El modelo base Qwen2.5-7B-Instruct es un transformer denso de 7.600 millones de parametros con 32.768 tokens de contexto, entrenado por Alibaba Qwen para instrucciones y conversacion multilingue.
 
 Su relevancia practica es limitada tal y como se publica: no hay evidencia de calidad, no se declara licencia y el autor no ofrece guia de uso. Resulta de interes principalmente para quien investigue adaptadores de comportamiento ("organisms") o quiera reproducir experimentos de SFT sobre Qwen2.5-7B-Instruct, no para despliegues en produccion sin una evaluacion propia previa.
 
@@ -85,7 +85,7 @@ La comparacion con el modelo base es la mas relevante: el adaptador no aporta in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/em-eval/qwen25-7b-organism-good-medical-ckpt-s0
+- Repositorio Hugging Face: https://huggingface.co/em-eval/qwen25-7b-organism-good-medical-ckpt-s0
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Libreria PEFT: https://github.com/huggingface/peft
 - Libreria TRL: https://github.com/huggingface/trl

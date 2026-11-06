@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kazuyasasaki/side-retrieval` es un repositorio de HuggingFace que contiene una implementacion propia y minima de un modelo CLIP orientada a tareas de retrieval (recuperacion de imagenes a partir de texto o viceversa). Lo publica el usuario kazuyasasaki bajo licencia Apache 2.0. No se trata de un modelo entrenado ni de un release con pesos validados: el propio autor lo describe como un punto de partida reproducible, con un checkpoint de inicializacion valido unicamente para pruebas de humo (smoke tests).
+`kazuyasasaki/side-retrieval` es un repositorio de Hugging Face que contiene una implementacion propia y minima de un modelo CLIP orientada a tareas de retrieval (recuperacion de imagenes a partir de texto o viceversa). Lo publica el usuario kazuyasasaki bajo licencia Apache 2.0. No se trata de un modelo entrenado ni de un release con pesos validados: el propio autor lo describe como un punto de partida reproducible, con un checkpoint de inicializacion valido unicamente para pruebas de humo (smoke tests).
 
 El dato mas relevante es su tamano: el fichero `model.safetensors` registra solo 24.832 parametros totales, varias ordenes de magnitud por debajo de cualquier CLIP operativo (el CLIP original de OpenAI parte de decenas de millones de parametros). Esto confirma que es un esqueleto de arquitectura y no un modelo con capacidad real de representacion. El tamano del repositorio es de 0,0 GB.
 
@@ -80,6 +80,6 @@ No disponible. No se dispone de datos de rendimiento, contexto ni parametros fun
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kazuyasasaki/side-retrieval
+- Repositorio en Hugging Face: https://huggingface.co/kazuyasasaki/side-retrieval
 - Ficheros incluidos en el repositorio: `eval.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - No se han encontrado en la informacion proporcionada papers, blogs, repos externos ni demos adicionales.

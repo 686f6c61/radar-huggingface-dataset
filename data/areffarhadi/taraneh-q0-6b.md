@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Taraneh-Q0.6B es un modelo de reconocimiento automatico del habla (ASR) especializado en persa (farsi), desarrollado por Aref Farhadipour (Universidad de Zurich) y publicado en HuggingFace bajo el identificador areffarhadi/Taraneh-Q0.6B. Forma parte de la familia Taraneh, compuesta por cinco modelos, y se obtiene mediante ajuste fino del checkpoint Qwen/Qwen3-ASR-0.6B sobre aproximadamente 1.560 horas de habla en persa. Con 0,6 mil millones de parametros, se situa en el rango de modelos ligeros desplegables en una sola GPU.
+Taraneh-Q0.6B es un modelo de reconocimiento automatico del habla (ASR) especializado en persa (farsi), desarrollado por Aref Farhadipour (Universidad de Zurich) y publicado en Hugging Face bajo el identificador areffarhadi/Taraneh-Q0.6B. Forma parte de la familia Taraneh, compuesta por cinco modelos, y se obtiene mediante ajuste fino del checkpoint Qwen/Qwen3-ASR-0.6B sobre aproximadamente 1.560 horas de habla en persa. Con 0,6 mil millones de parametros, se situa en el rango de modelos ligeros desplegables en una sola GPU.
 
 El modelo aborda un problema concreto: la escasez de sistemas ASR de calidad para persa, especialmente en dominios alejados del habla leida, como el canto, el habla conversacional espontanea o el audio procedente de medios y plataformas de video. Se publica acompanado de un articulo (Taraneh-ASR: Scaling Persian Speech Recognition and Forced Alignment Across Singing and Conversational Domains) y de un repositorio de codigo con manifiestos, normalizacion de texto e inferencia.
 
@@ -30,7 +30,7 @@ Su relevancia actual radica en la combinacion de licencia Apache-2.0 (con conces
 
 ## Arquitectura y entrenamiento
 
-La informacion proporcionada no describe la arquitectura interna del modelo mas alla de su condicion de fine-tune del checkpoint Qwen/Qwen3-ASR-0.6B, un sistema ASR de 0,6B parametros. El autor no detalla el tipo de encoder acustico, el decodificador ni el mecanismo de atencion empleado, por lo que cualquier afirmacion adicional al respecto seria especulativa. El modelo se distribuye para su uso con la libreria `transformers` y con el paquete `qwen-asr`, lo que indica compatibilidad con el ecosistema estandar de HuggingFace.
+La informacion proporcionada no describe la arquitectura interna del modelo mas alla de su condicion de fine-tune del checkpoint Qwen/Qwen3-ASR-0.6B, un sistema ASR de 0,6B parametros. El autor no detalla el tipo de encoder acustico, el decodificador ni el mecanismo de atencion empleado, por lo que cualquier afirmacion adicional al respecto seria especulativa. El modelo se distribuye para su uso con la libreria `transformers` y con el paquete `qwen-asr`, lo que indica compatibilidad con el ecosistema estandar de Hugging Face.
 
 El entrenamiento consiste en un ajuste fino supervisado sobre aproximadamente 1.560 horas de audio en persa. No se especifica en la informacion disponible la composicion exacta del corpus, el numero de tokens de audio procesados, ni si se aplicaron tecnicas de alineamiento forzado, RLHF o DPO. El articulo asociado menciona el escalado del reconocimiento de habla persa y el alineamiento forzado en dominios de canto y conversacion, lo que sugiere que el corpus de ajuste incluye material musical y dialogado, ademas de habla leida y de medios. La evaluacion se realiza tras una normalizacion unificada de texto persa, un detalle relevante porque las metricas de WER y CER dependen fuertemente de las reglas de normalizacion aplicadas.
 
@@ -42,7 +42,7 @@ Como innovacion destacable, el modelo soporta decodificacion en streaming, aunqu
 - Reconocimiento en dominios variados: habla leida (FLEURS, Common Voice), audio de YouTube, medios de comunicacion y contenido musical.
 - Procesamiento de audio cantado, un caso poco cubierto por los sistemas ASR convencionales, segun los dominios evaluados por el autor.
 - Inferencia por lotes (offline) y en streaming en tiempo real, esta ultima mediante el backend vLLM 0.14.
-- Integracion con el ecosistema HuggingFace `transformers` y con el paquete `qwen-asr`.
+- Integracion con el ecosistema Hugging Face `transformers` y con el paquete `qwen-asr`.
 - Ejecucion en GPU de consumo gracias a su tamano de 0,6B parametros.
 - No se documenta soporte de tool calling, function calling, agentes, razonamiento multi-paso, vision, audio generation ni modos de pensamiento explicito. Es un modelo exclusivamente de reconocimiento de habla y su idioma de trabajo es unicamente el persa.
 - No se documenta capacidad multilingue: la model card declara unicamente `fa`.
@@ -88,9 +88,9 @@ La informacion proporcionada solo identifica un modelo comparable directo: el ch
 
 | Modelo | Parametros | Contexto | WER persa | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Taraneh-Q0.6B | 0,6B | No disponible | 7,11 en FLEURS; 9,65 en Common Voice; 9,44 en VisualEars | Apache-2.0 | HuggingFace (`areffarhadi/Taraneh-Q0.6B`) |
-| Qwen/Qwen3-ASR-0.6B (base) | 0,6B | No disponible | No disponible en la informacion proporcionada | Apache-2.0 (segun el autor) | HuggingFace |
-| Otros modelos de la familia Taraneh | No disponible | No disponible | Comparativa completa en el articulo y en el README del repositorio | Apache-2.0 | HuggingFace / GitHub |
+| Taraneh-Q0.6B | 0,6B | No disponible | 7,11 en FLEURS; 9,65 en Common Voice; 9,44 en VisualEars | Apache-2.0 | Hugging Face (`areffarhadi/Taraneh-Q0.6B`) |
+| Qwen/Qwen3-ASR-0.6B (base) | 0,6B | No disponible | No disponible en la informacion proporcionada | Apache-2.0 (segun el autor) | Hugging Face |
+| Otros modelos de la familia Taraneh | No disponible | No disponible | Comparativa completa en el articulo y en el README del repositorio | Apache-2.0 | Hugging Face / GitHub |
 | Otros sistemas ASR para persa (por ejemplo Whisper ajustado, NeMo) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -107,7 +107,7 @@ La informacion proporcionada solo identifica un modelo comparable directo: el ch
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/areffarhadi/Taraneh-Q0.6B
+- Modelo en Hugging Face: https://huggingface.co/areffarhadi/Taraneh-Q0.6B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-ASR-0.6B
 - Repositorio de codigo, manifiestos, normalizacion e inferencia: https://github.com/areffarhadi/persian-asr
 - PDF del articulo (Taraneh-ASR: Scaling Persian Speech Recognition and Forced Alignment Across Singing and Conversational Domains): https://github.com/areffarhadi/persian-asr/blob/main/ArefFarhadi-TaranehASR.pdf

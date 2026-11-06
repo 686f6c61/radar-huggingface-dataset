@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks estándar como MMLU o HumanEval, ya
 
 | Modelo | Plataforma | Cuantizacion | RTF | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepFilterNet3.AXERA | AX650N | U16 + FP32 | 0,142 (C++) | MIT | HuggingFace, GitHub |
-| DeepFilterNet3 (original) | CPU/GPU (tract, ONNX) | FP32 | no disponible | MIT | GitHub, HuggingFace |
+| DeepFilterNet3.AXERA | AX650N | U16 + FP32 | 0,142 (C++) | MIT | Hugging Face, GitHub |
+| DeepFilterNet3 (original) | CPU/GPU (tract, ONNX) | FP32 | no disponible | MIT | GitHub, Hugging Face |
 | RNNoise | CPU | FP32 | ~0,1 (en CPU) | BSD-3 | GitHub |
 
 DeepFilterNet3.AXERA se diferencia del original por su optimización específica para AX650N, lo que permite ejecución en hardware de bajo consumo. Frente a RNNoise, ofrece mayor ancho de banda (48 kHz frente a 48 kHz también, pero con mejor calidad en banda completa) y una arquitectura más moderna, aunque requiere hardware AXERA. No se dispone de comparativas cuantitativas directas con otros modelos en la información proporcionada.
@@ -90,9 +90,9 @@ DeepFilterNet3.AXERA se diferencia del original por su optimización específica
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HY-2012/DeepFilterNet3.AXERA
+- Hugging Face: https://huggingface.co/HY-2012/DeepFilterNet3.AXERA
 - Repositorio GitHub del autor: https://github.com/ZY-2012/DeepFilterNet3.AXERA
 - Repositorio original de DeepFilterNet: https://github.com/Rikorose/DeepFilterNet
-- Modelo DeepFilterNet3 en HuggingFace (fal): https://huggingface.co/fal/DeepFilterNet3
-- Modelo DeepFilterNet3 en HuggingFace (trysem): https://huggingface.co/trysem/DeepFilterNet3
+- Modelo DeepFilterNet3 en Hugging Face (fal): https://huggingface.co/fal/DeepFilterNet3
+- Modelo DeepFilterNet3 en Hugging Face (trysem): https://huggingface.co/trysem/DeepFilterNet3
 - Herramienta Magnetar de AXERA: https://github.com/AXERA-TECH/Magnetar

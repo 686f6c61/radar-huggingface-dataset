@@ -75,6 +75,6 @@ No se dispone de información comparativa con otros modelos en la documentación
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/juwon1105/RLCC-llama32-3B-bigmathdigits5000-n3
+- Modelo en Hugging Face: https://huggingface.co/juwon1105/RLCC-llama32-3B-bigmathdigits5000-n3
 - Dataset de entrenamiento: https://huggingface.co/datasets/mehuldamani/big-math-digits
 - Paper asociado (bajo revisión): "Confidence as Curriculum: Reinforcement Learning for Joint Reasoning and Calibration" (sin enlace público aún)

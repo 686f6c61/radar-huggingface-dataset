@@ -77,6 +77,6 @@ No se dispone de datos de benchmarks comparativos en la información proporciona
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/Indexnusrefather/Nyx-RP-Mini-2.6B-Instruct-2608-v0.1-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/Indexnusrefather/Nyx-RP-Mini-2.6B-Instruct-2608-v0.1-GGUF
 - Modelo base (safetensors): https://huggingface.co/Indexnusrefather/Nyx-RP-Mini-2.6B-Instruct-2608-v0.1
 - No se han encontrado papers, blogs o demos adicionales en la información proporcionada.

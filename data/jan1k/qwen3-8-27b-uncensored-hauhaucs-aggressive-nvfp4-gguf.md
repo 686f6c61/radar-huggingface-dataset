@@ -78,7 +78,7 @@ La diferencia principal frente al modelo base es la eliminacion del rechazo y el
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/jan1k/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-NVFP4-GGUF
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/jan1k/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-NVFP4-GGUF
 - Modelo base de HauhauCS: https://huggingface.co/HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF
 - Re-cuantizacion Q8-NVFP4 alternativa: https://huggingface.co/s10682257/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF-Q8-NVFP4
 - Version en Ollama: https://ollama.com/aiconjured/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF-Q8-NVFP4

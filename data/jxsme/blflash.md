@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jxsme/blflash` no es un modelo de inteligencia artificial: es un repositorio alojado en HuggingFace cuyo contenido es una herramienta de linea de comandos escrita en Rust para el flasheo serie de microcontroladores BL602 (SoC RISC-V de Bouffalo Lab). La model card describe un "BL602 serial flasher" que implementa el protocolo ISP del chip, genera imagenes de particiones, genera la informacion de arranque a partir de un binario compilado y tiene pendiente la generacion del binario DTB. El autor cita como inspiracion `espflash` (cadena de herramientas Rust para SoCs Espressif) y `BLOpenFlasher`, y enlaza la documentacion ISP oficial de Bouffalo Lab.
+`jxsme/blflash` no es un modelo de inteligencia artificial: es un repositorio alojado en Hugging Face cuyo contenido es una herramienta de linea de comandos escrita en Rust para el flasheo serie de microcontroladores BL602 (SoC RISC-V de Bouffalo Lab). La model card describe un "BL602 serial flasher" que implementa el protocolo ISP del chip, genera imagenes de particiones, genera la informacion de arranque a partir de un binario compilado y tiene pendiente la generacion del binario DTB. El autor cita como inspiracion `espflash` (cadena de herramientas Rust para SoCs Espressif) y `BLOpenFlasher`, y enlaza la documentacion ISP oficial de Bouffalo Lab.
 
 Por tanto, no existen parametros, arquitectura neuronal, ventana de contexto, cuantizaciones ni idiomas que reportar: la ficha se adapta para describir la herramienta y sus implicaciones practicas para desarrolladores de firmware embebido. Es relevante en el nicho de desarrollo embebido en Rust para la familia BL602/BL604, donde el ecosistema de utilidades de flasheo es comparativamente mas joven que el de Espressif o STMicroelectronics.
 
@@ -94,7 +94,7 @@ No se dispone de datos de parametros, contexto, rendimiento ni licencia de las a
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jxsme/blflash
+- Repositorio en Hugging Face: https://huggingface.co/jxsme/blflash
 - Herramienta citada como inspiracion, espflash: https://github.com/esp-rs/espflash
 - Herramienta citada como inspiracion, BLOpenFlasher: https://github.com/bouffalolab/BLOpenFlasher
 - Documentacion del protocolo ISP de BL602: https://github.com/bouffalolab/bl_docs/tree/main/BL602_ISP

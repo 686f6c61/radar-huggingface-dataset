@@ -72,10 +72,10 @@ La información disponible no detalla el volumen de tokens de entrenamiento, la 
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiMo-V2.6-Distill-Qwen-9B-Decision | ~9B (base) + LoRA r16 + pointer head | No disponible | Decisión por probabilidades en un forward pass | Apache-2.0 | HuggingFace, runtime Kev |
-| XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B (base) | ~9B | No disponible | Generación autoregresiva con logits de opciones restringidas | No disponible en la información | HuggingFace |
-| bge-reranker-v2-m3 | No disponible | No disponible | Reranker cross-encoder | No disponible en la información | HuggingFace |
-| airun-ai/GlanceRAG-MiMo-9B-Reranker | ~9B (base) | No disponible | Reranker derivado de este adaptador | No disponible en la información | HuggingFace |
+| MiMo-V2.6-Distill-Qwen-9B-Decision | ~9B (base) + LoRA r16 + pointer head | No disponible | Decisión por probabilidades en un forward pass | Apache-2.0 | Hugging Face, runtime Kev |
+| XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B (base) | ~9B | No disponible | Generación autoregresiva con logits de opciones restringidas | No disponible en la información | Hugging Face |
+| bge-reranker-v2-m3 | No disponible | No disponible | Reranker cross-encoder | No disponible en la información | Hugging Face |
+| airun-ai/GlanceRAG-MiMo-9B-Reranker | ~9B (base) | No disponible | Reranker derivado de este adaptador | No disponible en la información | Hugging Face |
 
 La comparación directa con clasificadores dedicados de menor tamaño no está disponible en la información proporcionada; el autor solo aporta la comparación con el modelo base y con bge-reranker-v2-m3 en tareas de reranking.
 
@@ -92,7 +92,7 @@ La comparación directa con clasificadores dedicados de menor tamaño no está d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/airun-ai/MiMo-V2.6-Distill-Qwen-9B-Decision
+- Modelo en Hugging Face: https://huggingface.co/airun-ai/MiMo-V2.6-Distill-Qwen-9B-Decision
 - Modelo base: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B
 - Modelo derivado (reranker): https://huggingface.co/airun-ai/GlanceRAG-MiMo-9B-Reranker
 - Paper Glance: https://arxiv.org/abs/2610.40454

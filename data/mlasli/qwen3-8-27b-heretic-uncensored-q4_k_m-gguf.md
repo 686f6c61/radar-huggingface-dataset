@@ -91,7 +91,7 @@ No se dispone de informacion suficiente sobre otros modelos abliterados de la mi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mlasli/Qwen3.8-27B-Heretic-Uncensored-Q4_K_M-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mlasli/Qwen3.8-27B-Heretic-Uncensored-Q4_K_M-GGUF
 - Heretic (metodo de abliteracion): https://github.com/mlabonne/heretic-llm
 - llama.cpp: https://github.com/ggml-org/llama.cpp
 - Modelo base Qwen3.8-27B: no se proporciona enlace directo en la model card

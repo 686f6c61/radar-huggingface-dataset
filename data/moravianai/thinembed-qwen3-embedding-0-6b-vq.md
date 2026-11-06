@@ -94,10 +94,10 @@ Comparación con el cliente escalar del mismo modelo (`llama-quantize` Q4_K_M + 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/moravianai/ThinEmbed-Qwen3-Embedding-0.6B-vq
+- Modelo en Hugging Face: https://huggingface.co/moravianai/ThinEmbed-Qwen3-Embedding-0.6B-vq
 - Página del proyecto: https://moravian.ai/query-encoders/
 - Demo en navegador: https://moravian.ai/demo
-- Demo espejo en HuggingFace Spaces: https://huggingface.co/spaces/moravianai/demo
+- Demo espejo en Hugging Face Spaces: https://huggingface.co/spaces/moravianai/demo
 - Paquete npm: https://www.npmjs.com/package/@moravian/thinembed-vq
 - Código fuente (runtime, cuantizador y compilador de contenedores): https://github.com/rosecky/embedding-quantization-public
 - Runtime vqweb: https://github.com/rosecky/embedding-quantization-public/tree/main/packages/vqweb

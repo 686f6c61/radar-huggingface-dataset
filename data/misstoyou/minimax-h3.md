@@ -75,8 +75,8 @@ No se dispone de informacion suficiente para realizar una comparativa con modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/misstoyou/MiniMax-H3
-- HuggingFace oficial: https://huggingface.co/MiniMaxAI/MiniMax-H3
+- Hugging Face: https://huggingface.co/misstoyou/MiniMax-H3
+- Hugging Face oficial: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - GitHub oficial: https://github.com/MiniMax-AI/MiniMax-H3
 - Blog oficial: https://www.minimax.io/blog/minimax-h3
 - WebApp Global: https://hailuoai.video/tools/minimax-h3

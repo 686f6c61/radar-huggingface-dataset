@@ -97,7 +97,7 @@ La comparacion cuantitativa de rendimiento entre estos modelos no esta disponibl
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/skyline02/qwen36-35b-a3b-se-lora-sft
+- Adaptador en Hugging Face: https://huggingface.co/skyline02/qwen36-35b-a3b-se-lora-sft
 - Modelo base Qwen3.6-35B-A3B: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Blog de Alibaba Cloud sobre Qwen3.6-35B-A3B: https://www.alibabacloud.com/blog/qwen3-6-35b-a3b-agentic-coding-power-now-open-to-all_603043
 - Guia del modelo base en aimadetools: https://www.aimadetools.com/blog/qwen-3-6-35b-a3b-complete-guide/

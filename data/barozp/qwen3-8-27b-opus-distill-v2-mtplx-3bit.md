@@ -89,7 +89,7 @@ El modelo se compara con sus formatos hermanos y con el modelo base sin cuantiza
 
 ## Enlaces
 
-- [Repositorio HuggingFace de este modelo (3-bit MTPLX)](https://huggingface.co/barozp/Qwen3.8-27B-Opus-Distill-v2-MTPLX-3bit)
+- [Repositorio Hugging Face de este modelo (3-bit MTPLX)](https://huggingface.co/barozp/Qwen3.8-27B-Opus-Distill-v2-MTPLX-3bit)
 - [Modelo base `Qwen3.8-27B-Opus-Distill-v2`](https://huggingface.co/barozp/Qwen3.8-27B-Opus-Distill-v2)
 - [Modelo base `Qwen3.8-27B-Opus-Distill` (v1)](https://huggingface.co/barozp/Qwen3.8-27B-Opus-Distill)
 - [Versión 4-bit MTPLX](https://huggingface.co/barozp/Qwen3.8-27B-Opus-Distill-v2-MTPLX-4bit)

@@ -97,11 +97,11 @@ Sí se han publicado mediciones de rendimiento de inferencia, todas sobre TPU v6
 - Idiomas soportados, capacidades multimodales y detalles de entrenamiento del modelo base: no disponibles en la información proporcionada.
 - Riesgo de alucinación y sesgos: heredados del modelo base Qwen3.8-27B; no se documentan mitigaciones específicas.
 - Licencia Apache 2.0: permite uso comercial, pero conviene revisar también los términos del modelo base Qwen y del paquete mashbox.
-- Proyecto con adopción muy temprana: 0 descargas y 1 like en HuggingFace en el momento de la ficha, lo que implica poca comunidad y soporte limitado.
+- Proyecto con adopción muy temprana: 0 descargas y 1 like en Hugging Face en el momento de la ficha, lo que implica poca comunidad y soporte limitado.
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/mashbox-labs/Qwen3.8-27B-TPU
+- Ficha en Hugging Face: https://huggingface.co/mashbox-labs/Qwen3.8-27B-TPU
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Pesos FP8 del modelo base: https://huggingface.co/Qwen/Qwen3.8-27B-FP8
 - Repositorio GitHub de mashbox: https://github.com/mashbox-labs/mashbox

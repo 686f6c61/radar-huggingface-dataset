@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `AliZouaoui/bi-analyst-agent` es un modelo de lenguaje conversacional publicado en HuggingFace por el usuario AliZouaoui, con un total de 8.030.261.248 parámetros (aproximadamente 8 mil millones) y distribuido bajo licencia Apache 2.0. El repositorio ocupa 4,9 GB e incluye pesos en formato GGUF, lo que indica que está orientado a inferencia local y despliegue ligero. La model card pública es prácticamente vacía: solo contiene la declaración de licencia, sin información sobre arquitectura, datos de entrenamiento, idiomas o capacidades.
+El modelo `AliZouaoui/bi-analyst-agent` es un modelo de lenguaje conversacional publicado en Hugging Face por el usuario AliZouaoui, con un total de 8.030.261.248 parámetros (aproximadamente 8 mil millones) y distribuido bajo licencia Apache 2.0. El repositorio ocupa 4,9 GB e incluye pesos en formato GGUF, lo que indica que está orientado a inferencia local y despliegue ligero. La model card pública es prácticamente vacía: solo contiene la declaración de licencia, sin información sobre arquitectura, datos de entrenamiento, idiomas o capacidades.
 
 El nombre del modelo sugiere un uso previsto como agente de análisis de negocio (business intelligence), aunque esta orientación no está documentada por el autor. No se dispone de información sobre el modelo base a partir del cual se ha derivado, el proceso de ajuste (fine-tuning, RLHF, DPO) ni los datos utilizados. El número de parámetros y el tamaño del repositorio son compatibles con un transformer denso de escala 8B, pero se trata de una inferencia, no de un dato confirmado.
 
@@ -31,7 +31,7 @@ Tampoco se dispone de datos sobre el corpus de entrenamiento, el número de toke
 
 - Generación de texto conversacional: la etiqueta `conversational` del repositorio indica que el modelo está orientado a diálogo multi-turno, aunque no se detallan sus capacidades concretas.
 - Análisis de negocio: el nombre del modelo sugiere un uso previsto como agente de BI, sin documentación que lo respalde.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que puede desplegarse mediante la infraestructura de endpoints de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que puede desplegarse mediante la infraestructura de endpoints de Hugging Face.
 - Soporte de tool calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingües: no disponible.
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Documentacion | Disponibilidad |
 |---|---|---|---|---|---|
-| AliZouaoui/bi-analyst-agent | ~8B | no disponible | Apache 2.0 | Practicamente nula | HuggingFace (34 descargas) |
+| AliZouaoui/bi-analyst-agent | ~8B | no disponible | Apache 2.0 | Practicamente nula | Hugging Face (34 descargas) |
 | Modelos densos de ~8B con documentacion publica (p. ej. familia Llama 3 8B, Mistral 7B, Qwen2.5 7B) | 7-8B | 8K-128K segun modelo | Licencias variadas (Llama, Apache 2.0, etc.) | Model card completa y benchmarks | Amplia |
 
 La comparación cuantitativa no es posible: el modelo de AliZouaoui no publica benchmarks, contexto ni detalles de entrenamiento, mientras que las alternativas de tamaño similar sí ofrecen especificaciones verificables. La única ventaja diferencial observable es la licencia Apache 2.0 combinada con formato GGUF, que facilita el despliegue local sin restricciones comerciales.
@@ -79,5 +79,5 @@ La comparación cuantitativa no es posible: el modelo de AliZouaoui no publica b
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AliZouaoui/bi-analyst-agent
+- Modelo en Hugging Face: https://huggingface.co/AliZouaoui/bi-analyst-agent
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

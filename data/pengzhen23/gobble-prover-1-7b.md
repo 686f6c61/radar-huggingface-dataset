@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Gobble-Prover-1.7B | 2,03 B | No disponible | Lean 4, multi-candidato, SFT + GRPO | Apache 2.0 | HuggingFace |
-| AI-MO/Kimina-Prover-Distill-1.7B (base) | ~1,7 B (nominal) | No disponible | Lean 4, destilado | Apache 2.0 | HuggingFace |
-| DeepSeek-Prover (familia) | Variable (7 B+) | No disponible | Lean 4, demostracion formal | Licencia propia | HuggingFace |
-| Goedel-Prover (familia) | Variable | No disponible | Lean 4, demostracion formal | No disponible | HuggingFace |
+| Gobble-Prover-1.7B | 2,03 B | No disponible | Lean 4, multi-candidato, SFT + GRPO | Apache 2.0 | Hugging Face |
+| AI-MO/Kimina-Prover-Distill-1.7B (base) | ~1,7 B (nominal) | No disponible | Lean 4, destilado | Apache 2.0 | Hugging Face |
+| DeepSeek-Prover (familia) | Variable (7 B+) | No disponible | Lean 4, demostracion formal | Licencia propia | Hugging Face |
+| Goedel-Prover (familia) | Variable | No disponible | Lean 4, demostracion formal | No disponible | Hugging Face |
 
 La comparacion cuantitativa de rendimiento entre estos modelos no esta disponible en la informacion proporcionada; los datos de parametros de alternativas se indican de forma orientativa y deben verificarse en sus respectivas model cards.
 
@@ -83,7 +83,7 @@ La comparacion cuantitativa de rendimiento entre estos modelos no esta disponibl
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Pengzhen23/Gobble-Prover-1.7B
+- Hugging Face: https://huggingface.co/Pengzhen23/Gobble-Prover-1.7B
 - Modelo base: https://huggingface.co/AI-MO/Kimina-Prover-Distill-1.7B
 - Codigo y paquete de reproduccion: https://github.com/Linppz/Gobble-Prover
 - Articulo: *Efficient Proof Generation for Lean Statements with Multiple Candidate Answers* (Lin, Zhang, Raissi, Shi, 2026), arXiv preprint (referencia en la model card; URL no disponible)

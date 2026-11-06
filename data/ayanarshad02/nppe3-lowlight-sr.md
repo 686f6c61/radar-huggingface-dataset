@@ -59,11 +59,11 @@ La informacion disponibles incluye metricas de validacion y de la competicion de
 
 ## Comparativa con modelos similares
 
-No se han encontrado modelos comparables con especificaciones detalladas en la informacion disponible. Existe un repositorio de HuggingFace similar (`gauravkgehlot/dlp-nppe3-lowlight-sr`) con el mismo proposito, pero no se dispone de datos tecnicos ni de benchmarks para realizar una comparativa fiable.
+No se han encontrado modelos comparables con especificaciones detalladas en la informacion disponible. Existe un repositorio de Hugging Face similar (`gauravkgehlot/dlp-nppe3-lowlight-sr`) con el mismo proposito, pero no se dispone de datos tecnicos ni de benchmarks para realizar una comparativa fiable.
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace muestra un tamano de 0.0 GB, lo que sugiere que los pesos del modelo no estan subidos en el propio repo. El checkpoint puede requerir obtenerlo desde Kaggle u otro repositorio.
+- El repositorio de Hugging Face muestra un tamano de 0.0 GB, lo que sugiere que los pesos del modelo no estan subidos en el propio repo. El checkpoint puede requerir obtenerlo desde Kaggle u otro repositorio.
 - La metrica de PSNR reportada se calculo en escala de grises con submuestreo 1-in-8, lo que no representa directamente la calidad visual en color ni bajo metricas perceptuales.
 - El modelo fue entrenado en un conjunto de datos relativamente pequeno (1105 pares) con recortes de 48x48, por lo que puede generalizar mal a imagenes con distribuciones muy distintas (por ejemplo, radiografias, imagenes medicas o fotografias con iluminacion extremadamente baja).
 - Al ser un modelo de vision, no tiene aplicaciones en tareas de lenguaje ni procesamiento de texto.
@@ -72,6 +72,6 @@ No se han encontrado modelos comparables con especificaciones detalladas en la i
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AyanArshad02/nppe3-lowlight-sr
-- Repositorio similar de HuggingFace: https://huggingface.co/gauravkgehlot/dlp-nppe3-lowlight-sr
+- Hugging Face: https://huggingface.co/AyanArshad02/nppe3-lowlight-sr
+- Repositorio similar de Hugging Face: https://huggingface.co/gauravkgehlot/dlp-nppe3-lowlight-sr
 - Repositorio GitHub con el cuaderno de la competicion: https://github.com/Gitmy3/DLP_NPPE3_Kaggle

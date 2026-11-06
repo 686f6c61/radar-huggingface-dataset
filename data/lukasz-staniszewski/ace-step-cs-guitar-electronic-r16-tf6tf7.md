@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para realizar una comparativa con otros modelos de la misma categoría. Existen otros adaptadores de la misma suite (por ejemplo, `ace-step-cs-guitar-electronic-r8-tf6tf7` y `ace-step-cs-guitar-electronic-r8-all`), que varían en el rango del LoRA (r=8 vs r=16) y en las capas objetivo (tf6-tf7 vs todas). Sin embargo, no se proporcionan métricas comparativas ni detalles sobre diferencias de rendimiento. Se recomienda consultar la colección de la suite en HuggingFace para más variantes.
+No se dispone de información suficiente para realizar una comparativa con otros modelos de la misma categoría. Existen otros adaptadores de la misma suite (por ejemplo, `ace-step-cs-guitar-electronic-r8-tf6tf7` y `ace-step-cs-guitar-electronic-r8-all`), que varían en el rango del LoRA (r=8 vs r=16) y en las capas objetivo (tf6-tf7 vs todas). Sin embargo, no se proporcionan métricas comparativas ni detalles sobre diferencias de rendimiento. Se recomienda consultar la colección de la suite en Hugging Face para más variantes.
 
 ## Limitaciones y advertencias
 
@@ -72,7 +72,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lukasz-staniszewski/ace-step-cs-guitar-electronic-r16-tf6tf7
+- Modelo en Hugging Face: https://huggingface.co/lukasz-staniszewski/ace-step-cs-guitar-electronic-r16-tf6tf7
 - Colección de la suite de steering: https://huggingface.co/collections/lukasz-staniszewski/ace-step-audio-steering-suite-6a0bb3dacbac8e6db8f4d4e4
 - Repositorio de ACE-Step: https://github.com/ace-step/ACE-Step
 - Repositorio de ACE-Step 1.5: https://github.com/ace-step/ACE-Step-1.5

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-N4irath4rv/nlp-matching es un repositorio experimental publicado en HuggingFace que contiene una implementación propia de una arquitectura tipo Flamingo orientada a tareas de *matching* (emparejamiento o comparación de entradas). El autor lo presenta explícitamente como un banco de pruebas de arquitectura, no como un modelo entrenado: el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo y no un modelo con pesos aprendidos. El repositorio lo firma el usuario N4irath4rv y se distribuye bajo licencia Apache-2.0.
+N4irath4rv/nlp-matching es un repositorio experimental publicado en Hugging Face que contiene una implementación propia de una arquitectura tipo Flamingo orientada a tareas de *matching* (emparejamiento o comparación de entradas). El autor lo presenta explícitamente como un banco de pruebas de arquitectura, no como un modelo entrenado: el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo y no un modelo con pesos aprendidos. El repositorio lo firma el usuario N4irath4rv y se distribuye bajo licencia Apache-2.0.
 
 El dato más relevante para cualquier evaluador es su escala real: 49.600 parámetros totales, según el recuento de safetensors. Se trata, por tanto, de un artefacto de tamaño mínimo (el repositorio ocupa 0,0 GB) cuya etiqueta interna "xlarge" hace referencia a la configuración de arquitectura generada, no al número de parámetros efectivos. La model card no reclama ninguna puntuación de benchmark y advierte de que el checkpoint no ha sido entrenado ni auditado.
 
@@ -26,7 +26,7 @@ Su interés práctico es limitado como modelo desplegable y alto como código de
 | Normalizacion | BatchNorm |
 | Escala declarada en config | xlarge (etiqueta de configuracion, no de parametros) |
 | Tamano del repositorio | 0,0 GB |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 
 ## Arquitectura y entrenamiento
 
@@ -39,7 +39,7 @@ No hay evidencia de entrenamiento completado. La model card indica de forma expl
 - No hay capacidades verificadas de generación de texto, razonamiento, código o matemáticas: el checkpoint no ha sido entrenado.
 - No se documenta soporte de tool calling ni de function calling.
 - No se documenta soporte de agentes ni de razonamiento multi-paso.
-- No se documentan capacidades multilingües; el campo de idiomas está vacío en la ficha de HuggingFace.
+- No se documentan capacidades multilingües; el campo de idiomas está vacío en la ficha de Hugging Face.
 - No se documentan capacidades de visión, audio ni modo de razonamiento explícito.
 - El único artefacto funcional es la implementación de código (`pipeline.py`), que permite inspeccionar la arquitectura y ejecutar un ejemplo de prueba de humo.
 - Por diseño, el repositorio busca servir de plantilla para experimentos de *matching* con pares de entradas, siempre que se entrene previamente.
@@ -50,7 +50,7 @@ No hay evidencia de entrenamiento completado. La model card indica de forma expl
 - Estudio de implementaciones Flamingo: usar `pipeline.py` como referencia de código para entender cómo se estructura la fusión por cross attention con atención grouped query en un caso reducido y manejable.
 - Plantilla para experimentos de *matching*: partir de `config.json` y `training_args.json` para montar un experimento de emparejamiento de pares con una receta de Adam y OneCycle, sustituyendo el checkpoint de inicialización por uno entrenado.
 - Evaluación comparativa de arquitecturas: el propio autor propone usar un conjunto de validación emparejado, reportar la métrica de tarea en al menos tres semillas e incluir una línea base de capacidad equivalente.
-- Desarrollo de adaptadores de carga: dado que es una implementación personalizada, sirve para probar adaptadores que permitan cargarla desde APIs genéricas de HuggingFace.
+- Desarrollo de adaptadores de carga: dado que es una implementación personalizada, sirve para probar adaptadores que permitan cargarla desde APIs genéricas de Hugging Face.
 - Formación y docencia: como ejemplo didáctico de estructura de repositorio (código, config, args de entrenamiento y checkpoint) y de buenas prácticas de documentación de experimentos.
 - Verificación de reproducibilidad: el repositorio incluye la receta y los ficheros de configuración necesarios para replicar un experimento siempre que se aporten los datos y los registros de entrenamiento.
 
@@ -84,6 +84,6 @@ No disponible. Este repositorio no es comparable con modelos de *matching* entre
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/N4irath4rv/nlp-matching
+- Modelo en Hugging Face: https://huggingface.co/N4irath4rv/nlp-matching
 - Ficheros incluidos en el repositorio: `pipeline.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Papers, blogs, repositorios adicionales o demos: no disponible en la informacion proporcionada.

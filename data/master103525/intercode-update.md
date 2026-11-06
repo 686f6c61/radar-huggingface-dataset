@@ -4,7 +4,7 @@
 
 `master103525/intercode-update` es un adaptador LoRA (PEFT) entrenado mediante supervisión fina (SFT) sobre el modelo base `unsloth/Meta-Llama-3.1-8B-Instruct`. No se trata por tanto de un modelo completo con pesos propios, sino de un conjunto de pesos de adaptador que debe cargarse junto al modelo base para poder realizar inferencia. El repositorio ocupa 1,4 GB, un tamano elevado para un adaptador LoRA convencional, lo que sugiere un rango alto o la inclusion de otros artefactos de entrenamiento, aunque la model card no aporta ninguna confirmacion al respecto.
 
-El autor es un usuario individual (`master103525`) y la model card publicada es la plantilla por defecto de HuggingFace: practicamente todos los campos (datos de entrenamiento, hiperparametros, evaluacion, licencia, idiomas) figuran como `[More Information Needed]`. El repositorio no tiene descargas ni valoraciones en el momento de la consulta. La fecha declarada de creacion y ultima actualizacion es el 13 de septiembre de 2026, y el unico dato tecnico verificable es que se uso PEFT 0.18.1.
+El autor es un usuario individual (`master103525`) y la model card publicada es la plantilla por defecto de Hugging Face: practicamente todos los campos (datos de entrenamiento, hiperparametros, evaluacion, licencia, idiomas) figuran como `[More Information Needed]`. El repositorio no tiene descargas ni valoraciones en el momento de la consulta. La fecha declarada de creacion y ultima actualizacion es el 13 de septiembre de 2026, y el unico dato tecnico verificable es que se uso PEFT 0.18.1.
 
 Por el nombre del repositorio (`intercode-update`) podria tratarse de un ajuste orientado a tareas de codigo interactivo o de generacion/ejecucion de consultas, en la linea del benchmark InterCode, pero esto es una hipotesis no confirmada por ninguna fuente disponible. Dado que el modelo base es Llama 3.1 8B Instruct, hereda sus capacidades generales de generacion de texto, razonamiento y codigo, con una ventana de contexto de 128 000 tokens, aunque la calidad final del adaptador no puede evaluarse con la informacion disponible.
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `master103525/intercode-update` (adaptador) | No disponible (base de 8 030 M) | No disponible (base de 128 000 tokens) | No disponible | No disponible | Repositorio HuggingFace, 0 descargas |
+| `master103525/intercode-update` (adaptador) | No disponible (base de 8 030 M) | No disponible (base de 128 000 tokens) | No disponible | No disponible | Repositorio Hugging Face, 0 descargas |
 | `unsloth/Meta-Llama-3.1-8B-Instruct` (modelo base) | 8 030 M | 128 000 tokens | Publicados por Meta en su model card | Llama 3.1 Community License | Ampliamente disponible |
 | `meta-llama/Meta-Llama-3.1-8B-Instruct` | 8 030 M | 128 000 tokens | Publicados por Meta | Llama 3.1 Community License | Ampliamente disponible |
 | `Qwen/Qwen2.5-7B-Instruct` | 7 620 M | 128 000 tokens | Publicados por Alibaba | Apache 2.0 (segun version) | Ampliamente disponible |
@@ -90,7 +90,7 @@ La comparacion con alternativas de la misma categoria (adaptadores LoRA publicos
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/master103525/intercode-update
+- Repositorio Hugging Face: https://huggingface.co/master103525/intercode-update
 - Modelo base declarado (Unsloth): https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct
 - Modelo base original (Meta): https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct
 - Paper de Llama 3.1 (The Llama 3 Herd of Models): https://arxiv.org/abs/2407.21783

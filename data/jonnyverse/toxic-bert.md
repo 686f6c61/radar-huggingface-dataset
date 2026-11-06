@@ -69,7 +69,7 @@ No se dispone de informacion suficiente para realizar una comparativa con otros 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/JONNYVERSE/toxic-bert
+- Repositorio de Hugging Face: https://huggingface.co/JONNYVERSE/toxic-bert
 - Modelo base unitary/toxic-bert: https://huggingface.co/unitary/toxic-bert
 - Referencia de Transformers.js: https://huggingface.co/docs/transformers.js
 - Herramienta de conversion Optimum: https://huggingface.co/docs/optimum/index

@@ -73,8 +73,8 @@ Segun el autor, todos los fallos de formato son titulos de siete palabras. No se
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| simplixity-title-0.8b | 873 M | No disponible | Titulos de chat (en/de a en) | Apache 2.0 | HuggingFace y GGUF |
-| Qwen3.5-0.8B (base) | 0.8 B | No disponible | Asistente general multimodal | Apache 2.0 | HuggingFace |
+| simplixity-title-0.8b | 873 M | No disponible | Titulos de chat (en/de a en) | Apache 2.0 | Hugging Face y GGUF |
+| Qwen3.5-0.8B (base) | 0.8 B | No disponible | Asistente general multimodal | Apache 2.0 | Hugging Face |
 | Modelos de titulado genericos (LLM generalistas) | Variable | Variable | Titulado mediante prompt | Variable | Variable |
 
 Frente al modelo base, este ajuste mejora el cumplimiento de formato del 35% al 95% y elimina las respuestas a la pregunta (del 22% al 0%), a costa de duplicar aproximadamente la latencia por titulo (0.32 s frente a 0.14 s). No se dispone en la informacion de comparaciones con otros modelos especificos de generacion de titulos.
@@ -93,7 +93,7 @@ Frente al modelo base, este ajuste mejora el cumplimiento de formato del 35% al 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stneric/simplixity-title-0.8b
+- Modelo en Hugging Face: https://huggingface.co/stneric/simplixity-title-0.8b
 - GGUF para LM Studio y llama.cpp: https://huggingface.co/stneric/simplixity-title-0.8b-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de Simplixity: https://github.com/stneric/simplixity

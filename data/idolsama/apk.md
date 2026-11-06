@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`idolsama/apk` es un repositorio alojado en HuggingFace por el usuario `idolsama`, publicado bajo licencia Apache 2.0. En el momento de la consulta acumula 0 descargas y 0 likes, y su unico contenido verificable es la etiqueta de licencia y la region `us`; no se ha publicado model card con descripcion, pipeline, idiomas soportados ni arquitectura. El tamano del repositorio es de 0,2 GB, dato que no permite por si solo determinar el numero de parametros ni el tipo de modelo.
+`idolsama/apk` es un repositorio alojado en Hugging Face por el usuario `idolsama`, publicado bajo licencia Apache 2.0. En el momento de la consulta acumula 0 descargas y 0 likes, y su unico contenido verificable es la etiqueta de licencia y la region `us`; no se ha publicado model card con descripcion, pipeline, idiomas soportados ni arquitectura. El tamano del repositorio es de 0,2 GB, dato que no permite por si solo determinar el numero de parametros ni el tipo de modelo.
 
 La relevancia de esta ficha es principalmente como advertencia metodologica: se trata de un repositorio sin documentacion tecnica publicada, por lo que no es posible evaluar su idoneidad para produccion, su calidad de generacion ni su comportamiento en tareas concretas. Cualquier decision de adopcion deberia posponerse hasta que el autor publique una model card completa o hasta realizar una inspeccion directa de los ficheros de pesos.
 
@@ -75,7 +75,7 @@ No disponible. Al no conocerse el tamano, la arquitectura ni la tarea del modelo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| idolsama/apk | no disponible | no disponible | apache-2.0 | HuggingFace, sin metricas publicas |
+| idolsama/apk | no disponible | no disponible | apache-2.0 | Hugging Face, sin metricas publicas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -91,7 +91,7 @@ No disponible. Al no conocerse el tamano, la arquitectura ni la tarea del modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/idolsama/apk
+- Modelo en Hugging Face: https://huggingface.co/idolsama/apk
 - Paper: no disponible
 - Blog o documentacion tecnica: no disponible
 - Repositorio de codigo: no disponible

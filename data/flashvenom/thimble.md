@@ -72,7 +72,7 @@ Nota: los resultados de Seal-Tools in-domain y out-of-domain muestran que el mod
 
 | Modelo | Parametros | Contexto | Rendimiento (BFCL v4 single-turn) | Licencia | Disponibilidad |
 |---|---|---|---|---:|---|---|
-| Thimble v6 | 48,12M | no disponible | 23,5 | MIT | HuggingFace |
+| Thimble v6 | 48,12M | no disponible | 23,5 | MIT | Hugging Face |
 | Needle 2 | 45M | no disponible | 42,6 | no disponible | no disponible |
 | Qwen 0.6B (fine-tuned) | 600M | no disponible | no disponible | no disponible | no disponible (mencionado por el autor como alternativa) |
 
@@ -91,7 +91,7 @@ El autor indica que si se puede permitir 600M de parametros, un fine-tuning de Q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/flashvenom/thimble
+- Modelo en Hugging Face: https://huggingface.co/flashvenom/thimble
 - Perfil del autor: https://huggingface.co/flashvenom
 - Repositorio de codigo (GitHub): https://github.com/nikshepsvn/thimble (enlazado desde la model card)
 - Licencia MIT: https://github.com/nikshepsvn/thimble/blob/master/LICENSE

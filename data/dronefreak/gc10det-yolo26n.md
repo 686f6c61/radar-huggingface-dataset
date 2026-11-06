@@ -125,7 +125,7 @@ En terminos de mAP@50, la variante nano de YOLO26 se situa por delante de todas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dronefreak/gc10det-yolo26n
+- Modelo en Hugging Face: https://huggingface.co/dronefreak/gc10det-yolo26n
 - Dataset GC10-DET: https://huggingface.co/datasets/dronefreak/GC10-DET
 - DetectionBench (repositorio y evaluacion): https://github.com/dronefreak/DetectionBench
 - Perfil del autor: https://huggingface.co/dronefreak

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Reason-1-GGUF",
+  "slug": "mradermacher-reason-1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Reason-1-GGUF",
+  "created_at": "2025-02-11T06:00:05.000Z",
+  "updated_at": "2026-11-06T12:26:40.000Z",
+  "license": "qwen",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "en",
+    "base_model:Guilherme34/Reason-1",
+    "base_model:finetune:Guilherme34/Reason-1",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2755111599296,
+  "storage_human": "2755.1 GB",
+  "base_model": "Guilherme34/Reason-1",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Reason-1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Reason-1-GGUF",
+      "snippet": "For a convenient overview and download list, visit our model page for this model. weighted/imatrix quants are available at https://huggingface.co/mradermacher/Reason-1-i1-GGUF"
+    },
+    {
+      "title": "mradermacher/ReasonFlux-F1-7B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/ReasonFlux-F1-7B-GGUF",
+      "snippet": "Usage If you are unsure how to use GGUF files, refer to one of TheBloke's READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants)"
+    }
+  ]
+}

@@ -125,7 +125,7 @@ Métricas comparables disponibles del propio linaje: en la sonda de matemáticas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/logic65/Whittle-Qwen-3.8-35B-A3B
+- Modelo en Hugging Face: https://huggingface.co/logic65/Whittle-Qwen-3.8-35B-A3B
 - Repositorio GGUF (Q8_0 a Q3_K_M): https://huggingface.co/logic65/Whittle-Qwen-3.8-35B-A3B-GGUF
 - Modelo base Whittle-Next-27B-A3B: https://huggingface.co/logic65/Whittle-Next-27B-A3B
 - Modelo Qwen3.8-Flash-Next: https://huggingface.co/Qwen/Qwen3.8-Flash-Next

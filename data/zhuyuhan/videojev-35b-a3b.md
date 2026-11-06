@@ -75,8 +75,8 @@ No se han publicado resultados de benchmarks en la informacion disponible (MMLU,
 
 | Modelo | Parametros | Contexto | Tarea principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| VideoJev-35B-A3B | 33,79B totales; ~3B activos (MoE) | No disponible (ejemplo con `context=8192`) | Grounding temporal y QA de vídeo por scoring | Apache 2.0 | Pesos safetensors en HuggingFace, código en GitHub |
-| Qwen/Qwen3.6-35B-A3B (modelo base) | 35B nominales; ~3B activos (MoE) | No disponible | Generación de texto multimodal de propósito general | No disponible en la información proporcionada | HuggingFace |
+| VideoJev-35B-A3B | 33,79B totales; ~3B activos (MoE) | No disponible (ejemplo con `context=8192`) | Grounding temporal y QA de vídeo por scoring | Apache 2.0 | Pesos safetensors en Hugging Face, código en GitHub |
+| Qwen/Qwen3.6-35B-A3B (modelo base) | 35B nominales; ~3B activos (MoE) | No disponible | Generación de texto multimodal de propósito general | No disponible en la información proporcionada | Hugging Face |
 | Otros modelos de grounding temporal de vídeo | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone en la información proporcionada de datos verificables de alternativas comparables (por ejemplo, modelos especializados en grounding temporal o en QA de vídeo), por lo que la comparación cuantitativa de rendimiento queda como no disponible.
@@ -97,7 +97,7 @@ No se dispone en la información proporcionada de datos verificables de alternat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ZhuYuhan/VideoJev-35B-A3B
+- Modelo en Hugging Face: https://huggingface.co/ZhuYuhan/VideoJev-35B-A3B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Paper (arXiv): https://arxiv.org/abs/2610.18615
 - Página del proyecto: https://mcg-nju.github.io/VideoJev

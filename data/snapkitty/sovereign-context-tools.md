@@ -71,12 +71,12 @@ No disponible. No existe una categoría de modelos comparable, ya que este proye
 - El linter es determinista y no utiliza IA, pero su eficacia depende de la calidad de las reglas definidas; no se han publicado pruebas de que evite la pérdida de información crítica.
 - La model card contiene referencias esotéricas (lenguas antiguas, "mampostería digital") que no aportan valor técnico y pueden dificultar la comprensión.
 - No hay documentación oficial más allá de la model card; los enlaces a npm y GitHub Sponsors no garantizan mantenimiento o soporte.
-- La licencia MIT permite uso comercial, pero el proyecto parece experimental y con cero descargas y cero likes en HuggingFace, lo que sugiere una adopción muy limitada.
+- La licencia MIT permite uso comercial, pero el proyecto parece experimental y con cero descargas y cero likes en Hugging Face, lo que sugiere una adopción muy limitada.
 - No se especifican requisitos de versión de Node.js ni compatibilidad con sistemas operativos.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Snapkitty/sovereign-context-tools
+- Hugging Face: https://huggingface.co/Snapkitty/sovereign-context-tools
 - npm `@snapkitty/edaulc`: https://www.npmjs.com/package/@snapkitty/edaulc
 - npm `@snapkitty/abzu`: https://www.npmjs.com/package/@snapkitty/abzu
 - npm `@snapkitty/bifrost`: https://www.npmjs.com/package/@snapkitty/bifrost

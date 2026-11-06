@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `officialApexCode/apex-code-roblox-luau-0.5b` es un modelo de lenguaje pequeño (494 millones de parámetros) especializado en la generación y asistencia de código en Luau, el lenguaje de programación basado en Lua desarrollado por Roblox. Según los tags de HuggingFace, está basado en la arquitectura Qwen2, lo que sugiere que se trata de un fine-tuning de un modelo Qwen2 de 0.5B sobre datos de código Luau. El autor es `officialApexCode`, un perfil sin más información pública.
+El modelo `officialApexCode/apex-code-roblox-luau-0.5b` es un modelo de lenguaje pequeño (494 millones de parámetros) especializado en la generación y asistencia de código en Luau, el lenguaje de programación basado en Lua desarrollado por Roblox. Según los tags de Hugging Face, está basado en la arquitectura Qwen2, lo que sugiere que se trata de un fine-tuning de un modelo Qwen2 de 0.5B sobre datos de código Luau. El autor es `officialApexCode`, un perfil sin más información pública.
 
 El modelo se distribuye en formatos safetensors y GGUF, lo que permite su uso tanto en entornos de GPU como en CPU mediante herramientas como llama.cpp u Ollama. Además, el tag `endpoints_compatible` indica que puede desplegarse en infraestructura de inferencia como endpoints gestionados. Su naturaleza conversacional (`conversational`) sugiere que está diseñado para interactuar en diálogos, probablemente como asistente de programación para desarrolladores de Roblox.
 
@@ -71,5 +71,5 @@ No se dispone de información sobre modelos comparables específicos para Luau. 
 
 ## Enlaces
 
-- [HuggingFace: officialApexCode/apex-code-roblox-luau-0.5b](https://huggingface.co/officialApexCode/apex-code-roblox-luau-0.5b)
+- [Hugging Face: officialApexCode/apex-code-roblox-luau-0.5b](https://huggingface.co/officialApexCode/apex-code-roblox-luau-0.5b)
 - [Repositorio de Luau (referencia del lenguaje)](https://github.com/luau-lang)

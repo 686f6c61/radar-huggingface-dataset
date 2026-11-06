@@ -83,7 +83,7 @@ La diferencia principal frente a Xenova/whisper-base.en es el consumo de memoria
 - El modelo no incluye capacidades de puntuación, diarización de hablantes ni post-procesado; estas tareas deben resolverse en la aplicación.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/pdnhan/whisper-base.en-mobile
+- Modelo en Hugging Face: https://huggingface.co/pdnhan/whisper-base.en-mobile
 - Modelo base: https://huggingface.co/openai/whisper-base.en
 - Exportación ONNX de referencia: https://huggingface.co/Xenova/whisper-base.en
 - Repositorio de OpenAI Whisper: https://github.com/openai/whisper

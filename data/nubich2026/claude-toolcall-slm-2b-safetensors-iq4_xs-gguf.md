@@ -70,7 +70,7 @@ No se dispone de información comparativa directa. Sin embargo, por tamaño y en
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/nubich2026/claude-toolcall-slm-2B-safetensors-IQ4_XS-GGUF
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/nubich2026/claude-toolcall-slm-2B-safetensors-IQ4_XS-GGUF
 - Modelo base (safetensors): https://huggingface.co/mondk/claude-toolcall-slm-2B-safetensors
 - Espacio GGUF-my-repo utilizado para la conversión: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp

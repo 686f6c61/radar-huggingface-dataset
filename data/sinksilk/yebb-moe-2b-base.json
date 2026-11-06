@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "sinksilk/Yebb-MoE-2B-Base",
+  "slug": "sinksilk-yebb-moe-2b-base",
+  "author": "sinksilk",
+  "url": "https://huggingface.co/sinksilk/Yebb-MoE-2B-Base",
+  "created_at": "2026-11-02T08:57:11.000Z",
+  "updated_at": "2026-11-04T08:56:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "yebb_moe",
+    "text-generation",
+    "mixture-of-experts",
+    "pretrained",
+    "base-model",
+    "research",
+    "custom_code",
+    "zh",
+    "en",
+    "dataset:jingyaogong/minimind_dataset",
+    "dataset:openbmb/Ultra-FineWeb-L3",
+    "dataset:opencsg/Fineweb-Edu-Chinese-V2.1",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:common-pile/stackv2_edu_filtered",
+    "dataset:HuggingFaceTB/finemath",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 27,
+  "trending_score": 0,
+  "parameters": 1962166272,
+  "parameters_human": "1.96B",
+  "storage_bytes": 7848682888,
+  "storage_human": "7.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sinksilk/Yebb-MoE-2B-Base · Hugging Face",
+      "url": "https://huggingface.co/sinksilk/Yebb-MoE-2B-Base",
+      "snippet": "Yebb MoE 2B Base is an experimental Chinese and English text continuation model with 1,962,164,864 parameters, released at 80,000,981,551 effective prediction tokens."
+    },
+    {
+      "title": "sinksilk (Si Chen) - Hugging Face",
+      "url": "https://huggingface.co/sinksilk",
+      "snippet": "Recent Activity updated a modelabout 14 hours ago sinksilk/Yebb-Dense-0.8B-Base published a modelabout 14 hours ago sinksilk/Yebb-Dense-0.8B-Base updated a modelabout 14 hours ago sinksilk/Yebb-MoE-2B-Base View all activity"
+    }
+  ]
+}

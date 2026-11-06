@@ -74,7 +74,7 @@ No se dispone de datos comparativos con otros modelos en la información proporc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/harindhar10/olmo_chem_fsdp_cpt_500k
+- Modelo en Hugging Face: https://huggingface.co/harindhar10/olmo_chem_fsdp_cpt_500k
 - Modelo base: https://huggingface.co/Codemaster67/Olmo-7b-spe
 - Dataset de entrenamiento: https://huggingface.co/datasets/Codemaster67/Causal_lm_chemistry_1M_rows
 - Repositorio GitHub del autor: https://github.com/Harindhar10/olmo

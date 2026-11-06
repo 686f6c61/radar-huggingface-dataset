@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mhseo2/opd_sftk8ot3e_s489_qwen3moe30b_ot3math-step60` es un checkpoint publicado en HuggingFace por el usuario `mhseo2` el 15 de octubre de 2026, con un total de 8.190.735.360 parametros (aproximadamente 8,19 mil millones) almacenados en safetensors y un tamano de repositorio de 16,4 GB, lo que resulta coherente con pesos en precision BF16. La etiqueta principal del repositorio es `qwen3`, por lo que el modelo pertenece a la familia Qwen3, si bien no se ha publicado informacion que confirme si el checkpoint es denso o de mezcla de expertos.
+El modelo `mhseo2/opd_sftk8ot3e_s489_qwen3moe30b_ot3math-step60` es un checkpoint publicado en Hugging Face por el usuario `mhseo2` el 15 de octubre de 2026, con un total de 8.190.735.360 parametros (aproximadamente 8,19 mil millones) almacenados en safetensors y un tamano de repositorio de 16,4 GB, lo que resulta coherente con pesos en precision BF16. La etiqueta principal del repositorio es `qwen3`, por lo que el modelo pertenece a la familia Qwen3, si bien no se ha publicado informacion que confirme si el checkpoint es denso o de mezcla de expertos.
 
 El identificador del modelo sigue el patron de una cascada de destilacion: un alumno de 8B (`qwen3base8b` en las variantes hermanas), un profesor de tipo `qwen3moe30b` (Qwen3 MoE de 30B) y un conjunto de datos o etapa de entrenamiento `ot3math` en el paso 60. Esto sugiere un proceso de destilacion sobre datos de matematicas y razonamiento, aunque el repositorio no incluye model card, por lo que la finalidad exacta no puede confirmarse a partir de la informacion disponible.
 
@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento de ninguno de los modelos comparados, por 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mhseo2/opd_sftk8ot3e_s489_qwen3moe30b_ot3math-step60
+- Modelo en Hugging Face: https://huggingface.co/mhseo2/opd_sftk8ot3e_s489_qwen3moe30b_ot3math-step60
 - Variante hermana: https://huggingface.co/seomh/opd-qwen3base8b-ot3sft750-qwen3moe30b-ot3math-step60
 - Variante hermana: https://huggingface.co/seomh/opd-qwen3base8b-dm250-qwen3moe30b-ot3math-step20
 

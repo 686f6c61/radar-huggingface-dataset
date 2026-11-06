@@ -64,5 +64,5 @@ No se dispone de datos comparativos con otros modelos. Existen otros merges del 
 
 ## Enlaces
 
-- [HuggingFace - trinhkhng/slerp_Merged_gpt2-small_0.3](https://huggingface.co/trinhkhng/slerp_Merged_gpt2-small_0.3)
+- [Hugging Face - trinhkhng/slerp_Merged_gpt2-small_0.3](https://huggingface.co/trinhkhng/slerp_Merged_gpt2-small_0.3)
 - [mergekit (repositorio de la herramienta usada)](https://github.com/cg123/mergekit)

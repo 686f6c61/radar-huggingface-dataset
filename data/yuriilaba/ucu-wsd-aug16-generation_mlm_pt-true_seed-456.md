@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `yuriilaba/ucu-wsd-aug16-generation_mlm_pt-true_seed-456` es un ajuste fino (fine-tuning) de `sentence-transformers/paraphrase-multilingual-mpnet-base-v2` orientado a la desambiguación del sentido de las palabras (word sense disambiguation, WSD) en ucraniano. Lo publica el usuario `yuriilaba` en HuggingFace, en el contexto de un repositorio académico (el prefijo "ucu" sugiere una institución universitaria) y forma parte de una familia de variantes con distintas configuraciones de pooling, semilla y esquema de muestreo.
+El modelo `yuriilaba/ucu-wsd-aug16-generation_mlm_pt-true_seed-456` es un ajuste fino (fine-tuning) de `sentence-transformers/paraphrase-multilingual-mpnet-base-v2` orientado a la desambiguación del sentido de las palabras (word sense disambiguation, WSD) en ucraniano. Lo publica el usuario `yuriilaba` en Hugging Face, en el contexto de un repositorio académico (el prefijo "ucu" sugiere una institución universitaria) y forma parte de una familia de variantes con distintas configuraciones de pooling, semilla y esquema de muestreo.
 
 El modelo no es un generador de texto: pese a la palabra "generation" en su identificador, se comporta como un encoder de frases que produce embeddings y puntuaciones de similitud semántica. Su problema objetivo es asignar el sentido correcto a una palabra polisémica dentro de una oración, una tarea clásica de PLN que resulta crítica en traducción automática, recuperación de información y anotación lingüística.
 
@@ -12,12 +12,12 @@ Con 278.043.648 parámetros (coincidentes con la arquitectura XLM-RoBERTa-base) 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer encoder basado en XLM-RoBERTa (via `sentence-transformers/paraphrase-multilingual-mpnet-base-v2`; tag de HuggingFace: `xlm-roberta`) |
+| Arquitectura | Transformer encoder basado en XLM-RoBERTa (via `sentence-transformers/paraphrase-multilingual-mpnet-base-v2`; tag de Hugging Face: `xlm-roberta`) |
 | Parametros totales | 278.043.648 |
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible (la arquitectura base XLM-RoBERTa suele admitir 512 tokens, pero no se declara en la ficha) |
 | Tipos de cuantizacion | no disponible (pesos publicados en safetensors) |
-| Idiomas soportados | ucraniano (según la model card); la metadata de HuggingFace no declara idiomas |
+| Idiomas soportados | ucraniano (según la model card); la metadata de Hugging Face no declara idiomas |
 | Licencia | no disponible |
 | Formato de pesos | safetensors |
 
@@ -61,24 +61,24 @@ La model card indica que los resultados completos a nivel de tarea de MTEB está
 - VRAM estimada para inferencia: en fp32 los pesos ocupan aproximadamente 1,1 GB; en fp16, unos 556 MB; en int8, unos 278 MB.
 - GPU recomendadas: cualquier GPU con al menos 2-4 GB de VRAM es suficiente; por ejemplo, GTX 1650, RTX 3060, RTX 4090, A100 o H100 funcionan sin problema, aunque el modelo no aprovecha la capacidad de las GPU de gama alta.
 - Compatibilidad con GPU de consumo: sí, cabe holgadamente en cualquier GPU de consumo actual e incluso en iGPU con memoria compartida.
-- Opciones de despliegue: dado que es un modelo de `sentence-transformers`, lo natural es desplegarlo con la librería `sentence-transformers`, `transformers` de HuggingFace, ONNX Runtime o FastAPI como servicio; no se documenta compatibilidad con vLLM, llama.cpp u Ollama (formatos GGUF no publicados).
+- Opciones de despliegue: dado que es un modelo de `sentence-transformers`, lo natural es desplegarlo con la librería `sentence-transformers`, `transformers` de Hugging Face, ONNX Runtime o FastAPI como servicio; no se documenta compatibilidad con vLLM, llama.cpp u Ollama (formatos GGUF no publicados).
 - Latencia y throughput: no disponibles en la información proporcionada. Con 278 M de parámetros, en una GPU de consumo se pueden esperar codificaciones del orden de milisegundos por frase, pero se trata de una estimación no confirmada por el autor.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `yuriilaba/ucu-wsd-aug16-generation_mlm_pt-true_seed-456` | 278 M | no disponible | WSD + embeddings ucraniano | no disponible | HuggingFace |
-| `sentence-transformers/paraphrase-multilingual-mpnet-base-v2` | ~278 M | 512 tokens (arquitectura) | Embeddings multilingues | Apache 2.0 (según origen) | HuggingFace |
-| `xlm-roberta-base` | ~278 M | 512 tokens | Modelo base multilingue | MIT (según origen) | HuggingFace |
-| `yuriilaba/ucu-wsd-generation_stochastic_pt-false_seed-456` | no disponible | no disponible | WSD ucraniano | no disponible | HuggingFace |
+| `yuriilaba/ucu-wsd-aug16-generation_mlm_pt-true_seed-456` | 278 M | no disponible | WSD + embeddings ucraniano | no disponible | Hugging Face |
+| `sentence-transformers/paraphrase-multilingual-mpnet-base-v2` | ~278 M | 512 tokens (arquitectura) | Embeddings multilingues | Apache 2.0 (según origen) | Hugging Face |
+| `xlm-roberta-base` | ~278 M | 512 tokens | Modelo base multilingue | MIT (según origen) | Hugging Face |
+| `yuriilaba/ucu-wsd-generation_stochastic_pt-false_seed-456` | no disponible | no disponible | WSD ucraniano | no disponible | Hugging Face |
 
 El modelo comparte arquitectura y tamaño con el base del que deriva, por lo que la diferencia principal radica en el ajuste fino para WSD en ucraniano. La variante `generation_stochastic_pt-false_seed-456` del mismo autor es la comparación más directa dentro de la propia familia, pero no se dispone de sus especificaciones detalladas.
 
 ## Limitaciones y advertencias
 
 - Licencia no declarada: no se puede asumir uso comercial sin consultar al autor.
-- Idiomas no declarados en la metadata de HuggingFace: aunque la model card indica ucraniano, no se especifica el alcance idiomático real ni el comportamiento en otros idiomas.
+- Idiomas no declarados en la metadata de Hugging Face: aunque la model card indica ucraniano, no se especifica el alcance idiomático real ni el comportamiento en otros idiomas.
 - La evaluación se limita a WSD y STS; no hay resultados de MTEB visibles en la ficha ni datos sobre el conjunto de validación empleado.
 - El dataset de entrenamiento es local (`local_datasets/semi_supervised_2/...`), por lo que no es reproducible ni auditable externamente.
 - Riesgo de sesgo heredado del corpus de entrenamiento y del modelo base multilingüe, no cuantificado por el autor.
@@ -90,7 +90,7 @@ El modelo comparte arquitectura y tamaño con el base del que deriva, por lo que
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuriilaba/ucu-wsd-aug16-generation_mlm_pt-true_seed-456
+- Modelo en Hugging Face: https://huggingface.co/yuriilaba/ucu-wsd-aug16-generation_mlm_pt-true_seed-456
 - Variante relacionada: https://huggingface.co/yuriilaba/ucu-wsd-generation_mlm_pt-true_seed-456
 - Variante relacionada: https://huggingface.co/yuriilaba/ucu-wsd-generation_stochastic_pt-false_seed-456
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-multilingual-mpnet-base-v2

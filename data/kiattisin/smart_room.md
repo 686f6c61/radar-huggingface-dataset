@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Kiattisin/smart_room` en HuggingFace no contiene información técnica pública que permita identificar el modelo, su arquitectura o sus capacidades. El autor es Kiattisin, la licencia declarada es GPL-3.0 y el tamaño del repositorio es de 0.0 GB, lo que sugiere que no se han subido pesos, archivos de configuración ni documentación adicional. La model card únicamente incluye la línea `license: gpl-3.0`, sin descripción del modelo, dataset de entrenamiento ni ejemplos de uso.
+El repositorio `Kiattisin/smart_room` en Hugging Face no contiene información técnica pública que permita identificar el modelo, su arquitectura o sus capacidades. El autor es Kiattisin, la licencia declarada es GPL-3.0 y el tamaño del repositorio es de 0.0 GB, lo que sugiere que no se han subido pesos, archivos de configuración ni documentación adicional. La model card únicamente incluye la línea `license: gpl-3.0`, sin descripción del modelo, dataset de entrenamiento ni ejemplos de uso.
 
 A pesar del nombre "smart_room", que podría sugerir una aplicación relacionada con domótica o diseño de interiores, no hay evidencia de que este repositorio contenga un modelo funcional. Los resultados de búsqueda web asociados (GenRoom, Interior AI, RoomsGPT, etc.) son herramientas comerciales de diseño de interiores con IA, pero no tienen relación directa con este repositorio. Por tanto, cualquier evaluación técnica del modelo es imposible con los datos disponibles.
 
@@ -52,4 +52,4 @@ No disponible. Al no existir información sobre el modelo, no se puede comparar 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Kiattisin/smart_room
+- Repositorio en Hugging Face: https://huggingface.co/Kiattisin/smart_room

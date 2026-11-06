@@ -107,7 +107,7 @@ No se dispone en la información proporcionada de datos de terceros comparables 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MarcinEU/finegrain-box-segmenter-INT8-G128-sym-computeFP16-ONNX
+- Modelo en Hugging Face: https://huggingface.co/MarcinEU/finegrain-box-segmenter-INT8-G128-sym-computeFP16-ONNX
 - Exportación ONNX fp32 del mismo autor (modelo padre): https://huggingface.co/MarcinEU/finegrain-box-segmenter-ONNX
 - Modelo original en safetensors: https://huggingface.co/finegrain/finegrain-box-segmenter
 - Referencia arXiv 2404.07445: https://arxiv.org/abs/2404.07445

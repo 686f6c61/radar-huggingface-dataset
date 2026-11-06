@@ -6,7 +6,7 @@ Qwen3.8-Flash-Next-ProofOpt-FullCodexSFT-20261102-epoch1-FP8-early es un checkpo
 
 El checkpoint corresponde a la época 1 (paso 622) de un plan de dos épocas que continúa entrenándose de forma independiente. No es una versión final ni una release con todas las comprobaciones superadas: la propia model card lo describe como una vista previa de evaluación. El modelo base es multimodal (pipeline image-text-to-text) y cuenta con 179.999.981.459 parámetros totales según los pesos safetensors, lo que lo sitúa en la categoría de modelos de gran escala.
 
-Su relevancia es doble. Por un lado, documenta un flujo de trabajo reproducible de ajuste fino sobre un modelo de 180.000 millones de parámetros con cuantización FP8, incluida la conversión byte a byte de 120 tensores LoRA nativos a 168 tensores de HuggingFace. Por otro, expone de forma explícita un fallo de seguimiento de herramientas observado durante la evaluación (9 de 10 clientes ejecutaron el comando de shell requerido), lo que resulta útil para investigadores interesados en la fiabilidad de agentes basados en modelos grandes.
+Su relevancia es doble. Por un lado, documenta un flujo de trabajo reproducible de ajuste fino sobre un modelo de 180.000 millones de parámetros con cuantización FP8, incluida la conversión byte a byte de 120 tensores LoRA nativos a 168 tensores de Hugging Face. Por otro, expone de forma explícita un fallo de seguimiento de herramientas observado durante la evaluación (9 de 10 clientes ejecutaron el comando de shell requerido), lo que resulta útil para investigadores interesados en la fiabilidad de agentes basados en modelos grandes.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ Su relevancia es doble. Por un lado, documenta un flujo de trabajo reproducible 
 
 El modelo parte de Qwen/Qwen3.8-Flash-Next, un transformer multimodal del que no se detallan en la información disponible ni el número de capas, ni la dimensión oculta, ni si emplea mezcla de expertos. El ajuste fino se realizó con un adaptador LoRA nuevo en BF16 con rango 32 y alpha 64, tasa de aprendizaje 1e-5, 63 actualizaciones de calentamiento y decaimiento coseno a lo largo de las dos épocas planificadas. No se utilizó conjunto de validación ni holdout durante el entrenamiento.
 
-La supervisión combina planes matemáticos prospectivos sintéticos con acciones válidas seleccionadas del contexto original. El contexto previo, las acciones fallidas y las salidas de herramientas se enmascaran; cada objetivo seleccionado contaba con una comprobación de versión superada y una ganancia positiva. La masa de pérdida de acción y de razonamiento está equilibrada y no se truncaron tokens ni acciones. Los 120 tensores LoRA nativos se mapean byte a byte a 168 tensores de HuggingFace, y las 84 exclusiones BF16 entrenadas se fusionaron en el formato FP8 nativo oficial mediante la implementación verificada de PEFT 0.20, manteniendo intactos los tensores no entrenados, el tokenizador y la configuración.
+La supervisión combina planes matemáticos prospectivos sintéticos con acciones válidas seleccionadas del contexto original. El contexto previo, las acciones fallidas y las salidas de herramientas se enmascaran; cada objetivo seleccionado contaba con una comprobación de versión superada y una ganancia positiva. La masa de pérdida de acción y de razonamiento está equilibrada y no se truncaron tokens ni acciones. Los 120 tensores LoRA nativos se mapean byte a byte a 168 tensores de Hugging Face, y las 84 exclusiones BF16 entrenadas se fusionaron en el formato FP8 nativo oficial mediante la implementación verificada de PEFT 0.20, manteniendo intactos los tensores no entrenados, el tokenizador y la configuración.
 
 ## Capacidades
 
@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks ni de especificaciones de contexto para est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EPFL-LARA/Qwen3.8-Flash-Next-ProofOpt-FullCodexSFT-20261102-epoch1-FP8-early
+- Modelo en Hugging Face: https://huggingface.co/EPFL-LARA/Qwen3.8-Flash-Next-ProofOpt-FullCodexSFT-20261102-epoch1-FP8-early
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Organización EPFL-LARA: https://huggingface.co/EPFL-LARA
 - Licencia qwen-community-1.0: incluida en el repositorio como LICENSE

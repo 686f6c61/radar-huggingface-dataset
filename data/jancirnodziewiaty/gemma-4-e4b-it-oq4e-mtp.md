@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jancirnodziewiaty/gemma-4-E4B-it-oQ4e-mtp` es una versión cuantizada del modelo Gemma 4 E4B instruct, publicada por el usuario jancirnodziewiaty en HuggingFace. Se trata de una conversión en formato MLX (Apple Silicon) realizada con la herramienta oQ (oMLX v0.7.3) mediante cuantización de precisión mixta, con un promedio efectivo de 5,572 bits por peso sobre el checkpoint completo. El checkpoint resultante ocupa 5,6 GB en disco y contiene 8.019.880.782 parámetros lógicos distribuidos entre el modelo de lenguaje, el codificador de visión, el codificador de audio y una cabeza MTP (multi-token prediction).
+`jancirnodziewiaty/gemma-4-E4B-it-oQ4e-mtp` es una versión cuantizada del modelo Gemma 4 E4B instruct, publicada por el usuario jancirnodziewiaty en Hugging Face. Se trata de una conversión en formato MLX (Apple Silicon) realizada con la herramienta oQ (oMLX v0.7.3) mediante cuantización de precisión mixta, con un promedio efectivo de 5,572 bits por peso sobre el checkpoint completo. El checkpoint resultante ocupa 5,6 GB en disco y contiene 8.019.880.782 parámetros lógicos distribuidos entre el modelo de lenguaje, el codificador de visión, el codificador de audio y una cabeza MTP (multi-token prediction).
 
 El modelo base, Gemma 4 E4B, forma parte de la familia Gemma de Google, orientada a modelos abiertos de tamaño medio con capacidades multimodales. La variante "it" indica ajuste para instrucciones. La arquitectura subyacente combina un transformer de lenguaje de 7,469B de parámetros con módulos de visión (0,167B) y audio (0,305B), lo que la convierte en una propuesta multimodal (texto, imagen y audio) dentro de un rango de tamaño que puede ejecutarse en hardware de consumo con suficiente memoria unificada.
 
@@ -75,9 +75,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gemma-4-E4B-it-oQ4e-mtp (esta ficha) | 8,020B lógicos (5,6 GB) | no disponible | safetensors MLX | no disponible | HuggingFace (0 descargas) |
+| gemma-4-E4B-it-oQ4e-mtp (esta ficha) | 8,020B lógicos (5,6 GB) | no disponible | safetensors MLX | no disponible | Hugging Face (0 descargas) |
 | Gemma 4 E4B it (base, sin cuantizar) | ~8B | no disponible | safetensors | no disponible en esta ficha | Requiere consultar el repo oficial de Google |
-| Otras cuantizaciones MLX 4-bit de Gemma 4 E4B | ~8B | no disponible | safetensors MLX | depende del publicador | Disponibles en HuggingFace (no verificadas) |
+| Otras cuantizaciones MLX 4-bit de Gemma 4 E4B | ~8B | no disponible | safetensors MLX | depende del publicador | Disponibles en Hugging Face (no verificadas) |
 
 No se dispone de datos de rendimiento ni de especificaciones verificadas de los modelos comparables en la información proporcionada, por lo que la comparativa se limita a parámetros y formato.
 
@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento ni de especificaciones verificadas de los 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jancirnodziewiaty/gemma-4-E4B-it-oQ4e-mtp
+- Hugging Face: https://huggingface.co/jancirnodziewiaty/gemma-4-E4B-it-oQ4e-mtp
 - Herramienta de cuantización oQ (oMLX): https://github.com/jundot/omlx
 - Repositorio oficial de Gemma (Google): no disponible en la información proporcionada
 - Paper del modelo base: no disponible en la información proporcionada

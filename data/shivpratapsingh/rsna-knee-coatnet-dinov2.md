@@ -106,11 +106,11 @@ No se dispone de datos de modelos externos comparables en la informacion proporc
 - Licencia restrictiva y no estandar: `other` con sujecion a las reglas de Kaggle; hay que revisar esas reglas antes de cualquier uso comercial o redistribucion.
 - Sesgos: no documentados. Al proceder de un unico dataset de competicion, es esperable un sesgo de seleccion de centro, equipo y protocolo, pero no se cuantifica en la informacion disponible.
 - Riesgo de falsos negativos y positivos: no se publican matrices de confusion, sensibilidad ni especificidad por hallazgo, solo AUC macro, que puede ocultar un rendimiento pobre en clases poco frecuentes como fractura o contusion.
-- Madurez: 0 descargas y 1 like en el momento de la consulta, sin pipeline declarado en HuggingFace; el codigo de inferencia vive en un repositorio externo y depende de un paquete propio (`rsna_knee`).
+- Madurez: 0 descargas y 1 like en el momento de la consulta, sin pipeline declarado en Hugging Face; el codigo de inferencia vive en un repositorio externo y depende de un paquete propio (`rsna_knee`).
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shivpratapsingh/rsna-knee-coatnet-dinov2
+- Modelo en Hugging Face: https://huggingface.co/shivpratapsingh/rsna-knee-coatnet-dinov2
 - Codigo, memoria tecnica y resultados: https://github.com/shivpratapsinghpanwar/rsna-knee-abnormality-detection
 - Competicion RSNA Knee Abnormality Detection (Kaggle): https://www.kaggle.com/competitions/rsna-knee-abnormality-detection
 - Reglas y licencia de datos de la competicion: https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/rules

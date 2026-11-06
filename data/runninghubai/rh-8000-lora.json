@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-8000-lora",
+  "slug": "runninghubai-rh-8000-lora",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-8000-lora",
+  "created_at": "2026-11-06T11:29:11.000Z",
+  "updated_at": "2026-11-06T11:31:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 341422233,
+  "storage_human": "341 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RunningHubAI/rh-ypj-lora-v2-step8000-lora · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-ypj-lora-v2-step8000-lora",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · RunningHubAI/rh-ypj-lora-v2-step8000-lora at main",
+      "url": "https://huggingface.co/RunningHubAI/rh-ypj-lora-v2-step8000-lora/blob/main/README.md",
+      "snippet": "RunningHubAI / rh-ypj-lora-v2-step8000-lora Like 0 Text-to-Image comfyui lora Model card FilesFiles and versions xet Community Copy to bucket new main rh-ypj-lora-v2-step8000-lora /README.md RunningHubAI Upload RunningHub model 1997919979280457729 6a6701b verified2 days ago preview code | Raw Download with hf CLI Copy download link History ..."
+    },
+    {
+      "title": "RunningHub AI | Image, Video & Workflow Creation",
+      "url": "https://runninghubai.pro/",
+      "snippet": "RunningHub AI creative canvas Turn a thought into a world with RunningHub AI. One focused place for image generation, cinematic video, and repeatable AI workflows. Start with a sentence, shape the details, and keep every idea moving."
+    }
+  ]
+}

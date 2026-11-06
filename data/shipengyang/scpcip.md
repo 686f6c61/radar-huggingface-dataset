@@ -57,14 +57,14 @@ No se han publicado resultados de benchmarks en la información disponible.
 - No aplica VRAM de GPU para un modelo neuronal: el repositorio contiene ficheros de texto (TSV y YAML) de tamaño reducido.
 - El consumo de recursos depende del pipeline de scRNA-seq que use los diccionarios (normalización, mapeo de identificadores y puntuación de programas), no del repositorio en sí.
 - Cabe en cualquier equipo convencional; no requiere GPU dedicada para la carga de los datos.
-- Opciones de despliegue: paquete `scpcip` desde el repositorio GitHub del autor, con descarga automática del mapa de genes desde HuggingFace.
+- Opciones de despliegue: paquete `scpcip` desde el repositorio GitHub del autor, con descarga automática del mapa de genes desde Hugging Face.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Herramienta | Enfoque | Cobertura de especies | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| scPCIP | Programas génicos conservados vía ortógrupos eggNOG | 12 especies en el mapa incluido; ampliable con mapa propio | MIT | HuggingFace y GitHub |
+| scPCIP | Programas génicos conservados vía ortógrupos eggNOG | 12 especies en el mapa incluido; ampliable con mapa propio | MIT | Hugging Face y GitHub |
 | Anotadores basados en marcadores específicos de especie | Listas de genes marcadores por especie | Limitada a la especie para la que se definieron | Variable | Variable |
 | Métodos de transferencia de etiquetas entre atlas | Modelos estadísticos o de machine learning sobre expresión | Depende del atlas de referencia | Variable | Variable |
 
@@ -82,6 +82,6 @@ No se dispone de datos comparativos de rendimiento entre estas alternativas en l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/shipengyang/scPCIP
+- Repositorio en Hugging Face: https://huggingface.co/shipengyang/scPCIP
 - Repositorio GitHub del paquete: https://github.com/Shipeng-Yang/scPCIP
 - Cita: Yang, S., Si, C., Wu, Y., Sun, Z., Yao, C., Sun, X., Wang, L., Li, W. & Zhong, Q. scPCIP: cross-species annotation of plant cell types with conserved gene programs. *bioRxiv* (2026).

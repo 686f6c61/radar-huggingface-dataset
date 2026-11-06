@@ -75,9 +75,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Arquitectura | Ventana | Tamaño | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| b33zy/drumsep-v2-onnx | HDemucs, ONNX fp16 | 10 s | 168 MB | MIT | HuggingFace |
-| gridshiftstudio/drumsep-onnx | HDemucs, ONNX | 40 s | 335 MB (fp32) | MIT | HuggingFace |
-| inagoy/drumsep | HDemucs | no disponible | no disponible | MIT | HuggingFace |
+| b33zy/drumsep-v2-onnx | HDemucs, ONNX fp16 | 10 s | 168 MB | MIT | Hugging Face |
+| gridshiftstudio/drumsep-onnx | HDemucs, ONNX | 40 s | 335 MB (fp32) | MIT | Hugging Face |
+| inagoy/drumsep | HDemucs | no disponible | no disponible | MIT | Hugging Face |
 | Demucs (Meta) | HDemucs | variable | variable | MIT | GitHub |
 
 La comparativa se limita a la familia de origen, ya que no se dispone de datos de otros separadores de batería en la información proporcionada.
@@ -95,7 +95,7 @@ La comparativa se limita a la familia de origen, ya que no se dispone de datos d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/b33zy/drumsep-v2-onnx
+- Modelo en Hugging Face: https://huggingface.co/b33zy/drumsep-v2-onnx
 - Modelo base ONNX: https://huggingface.co/gridshiftstudio/drumsep-onnx
 - Modelo base original: https://huggingface.co/inagoy/drumsep
 - Demucs (Meta AI Research): https://github.com/facebookresearch/demucs

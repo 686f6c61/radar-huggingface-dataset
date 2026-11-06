@@ -65,7 +65,7 @@ El criterio primario preregistrado no mostró cambios: ninguno de los dos brazos
 
 ## Requisitos de hardware
 
-- El adaptador es un fichero LoRA de tamaño reducido (el repositorio ocupa 0,0 GB según HuggingFace); el coste de memoria lo determina el modelo base.
+- El adaptador es un fichero LoRA de tamaño reducido (el repositorio ocupa 0,0 GB según Hugging Face); el coste de memoria lo determina el modelo base.
 - VRAM estimada para inferencia con el base Qwen2.5-1.5B-Instruct: aproximadamente 3,2 GB en bf16/fp16, alrededor de 1,7 GB en cuantización de 8 bits y cerca de 1,0-1,2 GB en cuantización de 4 bits, más la caché KV correspondiente al contexto utilizado.
 - Cabe sin problema en GPU de consumo: RTX 3060 12 GB, RTX 4060 Ti, RTX 4070, RTX 4080 y RTX 4090, así como en portátiles con 6-8 GB de VRAM si se usa cuantización de 4 bits.
 - GPU de centro de datos (A100, H100, L40S) sobredimensionadas para este tamaño; resultan útiles si se necesita mucho paralelismo de peticiones o contextos muy largos.
@@ -76,10 +76,10 @@ El criterio primario preregistrado no mostró cambios: ninguno de los dos brazos
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| while-ai/community-loss-mask-1.5b | 1,54 B (base) + adaptador LoRA | 32.768 tokens (heredado) | Adaptador SFT de experimento | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 tokens (ampliable a 131.072 con YaRN) | Modelo instruct completo | Apache 2.0 | HuggingFace |
-| meta-llama/Llama-3.2-1B-Instruct | 1,24 B | 128.000 tokens | Modelo instruct completo | Licencia comunitaria Llama 3.2 | HuggingFace |
-| google/gemma-2-2b-it | 2,6 B | 8.192 tokens | Modelo instruct completo | Terminos de uso de Gemma | HuggingFace |
+| while-ai/community-loss-mask-1.5b | 1,54 B (base) + adaptador LoRA | 32.768 tokens (heredado) | Adaptador SFT de experimento | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 tokens (ampliable a 131.072 con YaRN) | Modelo instruct completo | Apache 2.0 | Hugging Face |
+| meta-llama/Llama-3.2-1B-Instruct | 1,24 B | 128.000 tokens | Modelo instruct completo | Licencia comunitaria Llama 3.2 | Hugging Face |
+| google/gemma-2-2b-it | 2,6 B | 8.192 tokens | Modelo instruct completo | Terminos de uso de Gemma | Hugging Face |
 
 La comparación de calidad entre alternativas no está disponible: no se han publicado benchmarks de este adaptador frente a otros modelos. El adaptador solo es comparable en igualdad de condiciones con los dos brazos del mismo experimento, no con modelos instruct completos.
 
@@ -96,7 +96,7 @@ La comparación de calidad entre alternativas no está disponible: no se han pub
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/while-ai/community-loss-mask-1.5b
+- Modelo en Hugging Face: https://huggingface.co/while-ai/community-loss-mask-1.5b
 - Receta de reproducción («what-trl-does-with-the-loss-mask»): https://github.com/whilehq/whileai-sdk/tree/main/recipes/community/what-trl-does-with-the-loss-mask
 - Repositorio whileai-sdk: https://github.com/whilehq/whileai-sdk
 - Colección «Course and community runs»: https://huggingface.co/collections/while-ai/course-and-community-runs-6ab271de189fd0c363cfab92

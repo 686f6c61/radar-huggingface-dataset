@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Base | Parametros / rango | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `hneilpro/caprice-flux-lora` | FLUX.1-dev | LoRA rango 16, alpha 16 | No aplica | No disponible | `other`, uso de investigacion personal | HuggingFace, 0 descargas |
+| `hneilpro/caprice-flux-lora` | FLUX.1-dev | LoRA rango 16, alpha 16 | No aplica | No disponible | `other`, uso de investigacion personal | Hugging Face, 0 descargas |
 | `ct-caprice identity` (ctmaker, TensorHub Art) | FLUX.1 | No disponible | No aplica | No disponible | No disponible (descarga gratuita en la plataforma) | TensorHub Art |
 | LoRA de personaje genericos de Flux (Civitai) | FLUX.1 / SDXL | No disponible | No aplica | No disponible | Variables, frecuentemente restrictivas | Civitai, catalogos de terceros |
 
@@ -87,17 +87,17 @@ La comparacion cuantitativa no es posible con la informacion disponible: los cat
 - Alucinacion visual: como cualquier modelo de difusion, puede producir manos, rostros de fondo y texto malformados; el LoRA no corrige estas limitaciones del modelo base.
 - Licencia: el campo es `other` y la model card indica "personal research use", lo que en la practica implica que no se concede uso comercial. Ademas, FLUX.1-dev tiene su propia licencia (no comercial) que se hereda al usar el adaptador.
 - Estado del repositorio: cero descargas, cero "likes" y sin validacion de la comunidad; crear el repositorio y actualizarlo con 16 segundos de diferencia sugiere un artefacto sin mantenimiento.
-- Fecha de creacion indicada en HuggingFace: 2026-10-18; conviene verificar la trazabilidad del repositorio antes de integrarlo en un pipeline.
+- Fecha de creacion indicada en Hugging Face: 2026-10-18; conviene verificar la trazabilidad del repositorio antes de integrarlo en un pipeline.
 - Naturaleza ficcional: el personaje se declara ficticio, pero no se documenta la procedencia de las 64 imagenes de entrenamiento, lo que plantea dudas sobre derechos de imagen si derivan de personas reales.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hneilpro/caprice-flux-lora
+- Modelo en Hugging Face: https://huggingface.co/hneilpro/caprice-flux-lora
 - Modelo base FLUX.1-dev: https://huggingface.co/black-forest-labs/FLUX.1-dev
 - `ai-toolkit` (herramienta de entrenamiento citada por el autor): https://github.com/ostris/ai-toolkit
 - ComfyUI (entorno de inferencia recomendado): https://github.com/comfyanonymous/ComfyUI
 - Adaptador "ct-caprice identity" en TensorHub Art: https://tensorhub.art/models/796069409740527764
 - Catalogo de LoRA para Flux en Civitai: https://civitai.com/tag/flux%20lora
 - Catalogo de LoRA para Flux, Wan y SDXL en loraai.io: https://loraai.io/loras
-- Busqueda de LoRA en HuggingFace: https://huggingface.co/models?search=lora
+- Busqueda de LoRA en Hugging Face: https://huggingface.co/models?search=lora
 - Paper de LoRA (Low-Rank Adaptation): no disponible en la informacion proporcionada.

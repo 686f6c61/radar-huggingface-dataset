@@ -4,7 +4,7 @@
 
 El modelo `orcarouter/Qwen3.8-Flash-Next-Uncensored-NVFP4` es una versión "abliterated" (sin censura) y cuantizada a NVFP4 del modelo base `Qwen/Qwen3.8-Flash-Next`, desarrollado por el usuario orcarouter. Se trata de una vista previa de la arquitectura Qwen4, un modelo de lenguaje y visión (image-text-to-text) de tipo MoE con aproximadamente 124.5 mil millones de parámetros totales y 6 mil millones de parámetros activos por token. La relevancia de este modelo radica en que combina las capacidades de vanguardia del ecosistema Qwen (razonamiento, tool calling, visión) con una eliminación de las restricciones de seguridad a nivel de tensor, lo que lo hace especialmente útil para tareas de red teaming, investigación en alineación y generación de contenido sin filtros.
 
-Al estar cuantizado en NVFP4 (4 bits) y ser compatible con vLLM, está pensado para despliegue eficiente en entornos con GPUs de alta gama, aunque su acceso es restringido (gated) en HuggingFace. El proceso de abliteration aplicado por orcarouter deja intactos el vision tower y el head de MTP, y según los datos del modelo hermano de 27B, no presenta una pérdida medible de capacidades, manteniendo un 0% de over-refusal en XSTest.
+Al estar cuantizado en NVFP4 (4 bits) y ser compatible con vLLM, está pensado para despliegue eficiente en entornos con GPUs de alta gama, aunque su acceso es restringido (gated) en Hugging Face. El proceso de abliteration aplicado por orcarouter deja intactos el vision tower y el head de MTP, y según los datos del modelo hermano de 27B, no presenta una pérdida medible de capacidades, manteniendo un 0% de over-refusal en XSTest.
 
 ## Especificaciones técnicas
 
@@ -65,7 +65,7 @@ La principal diferencia con el modelo base es la eliminación de la censura y la
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated) en HuggingFace: es necesario aceptar condiciones adicionales antes de poder descargar el modelo.
+- Acceso restringido (gated) en Hugging Face: es necesario aceptar condiciones adicionales antes de poder descargar el modelo.
 - Modelo sin censura: puede generar contenido ofensivo, violento, ilegal o peligroso. No es apto para producción sin una capa de moderación externa.
 - Idiomas limitados: solo soporta inglés y chino de forma nativa; otros idiomas pueden tener un rendimiento degradado.
 - Cuantización NVFP4: puede introducir pérdida de precisión en tareas que requieren alta exactitud numérica, como matemáticas avanzadas o generación de código complejo.
@@ -74,7 +74,7 @@ La principal diferencia con el modelo base es la eliminación de la censura y la
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/orcarouter/Qwen3.8-Flash-Next-Uncensored-NVFP4
+- Repositorio Hugging Face: https://huggingface.co/orcarouter/Qwen3.8-Flash-Next-Uncensored-NVFP4
 - Blog de orcarouter sobre ejecución local de modelos uncensored: https://www.orcarouter.ai/blog/how-to-run-qwen-3-8-27b-uncensored-locally
 - Modelo hermano 27B en Ollama: https://ollama.com/orcarouter/Qwen3.8-27B-Uncensored
 - Modelo base Qwen3.8-Flash-Next (vLLM Recipes): https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next

@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "Felox/oud-put",
+  "slug": "felox-oud-put",
+  "author": "Felox",
+  "url": "https://huggingface.co/Felox/oud-put",
+  "created_at": "2026-11-01T13:25:17.000Z",
+  "updated_at": "2026-11-01T13:44:36.000Z",
+  "license": "krea-2-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "lora",
+    "text-to-image",
+    "krea-2",
+    "comfyui",
+    "product",
+    "fragrance",
+    "packshot",
+    "en",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 231092913,
+  "storage_human": "231 MB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Felox/oud-put · Hugging Face",
+      "url": "https://huggingface.co/Felox/oud-put",
+      "snippet": "Product LoRA for Krea 2 Turbo that reproduces the oud-put fragrance bottle: cobalt-blue glass, heavy ridged silver screw cap and embossed lowercase \"e\" monogram. Use it for packshots, still lifes, hand shots and editorial portraits ..."
+    }
+  ]
+}

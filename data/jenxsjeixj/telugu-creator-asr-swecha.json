@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "jenxsjeixj/telugu-creator-asr-swecha",
+  "slug": "jenxsjeixj-telugu-creator-asr-swecha",
+  "author": "jenxsjeixj",
+  "url": "https://huggingface.co/jenxsjeixj/telugu-creator-asr-swecha",
+  "created_at": "2026-11-06T07:48:29.000Z",
+  "updated_at": "2026-11-06T07:54:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "te"
+  ],
+  "tags": [
+    "safetensors",
+    "wav2vec2",
+    "automatic-speech-recognition",
+    "speech",
+    "audio",
+    "telugu",
+    "creator-speech",
+    "te",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 94436308,
+  "parameters_human": "94.4M",
+  "storage_bytes": 377771080,
+  "storage_human": "378 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

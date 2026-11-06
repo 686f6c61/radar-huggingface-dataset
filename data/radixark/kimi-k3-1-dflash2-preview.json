@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "RadixArk/Kimi-K3.1-Dflash2-Preview",
+  "slug": "radixark-kimi-k3-1-dflash2-preview",
+  "author": "RadixArk",
+  "url": "https://huggingface.co/RadixArk/Kimi-K3.1-Dflash2-Preview",
+  "created_at": "2026-11-04T06:53:44.000Z",
+  "updated_at": "2026-11-06T06:18:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "speculative-decoding",
+    "dflash2",
+    "sglang",
+    "kimi",
+    "text-generation",
+    "base_model:moonshotai/Kimi-K3.1-Pro",
+    "base_model:finetune:moonshotai/Kimi-K3.1-Pro",
+    "region:us"
+  ],
+  "likes": 4,
+  "downloads_30d": 464,
+  "trending_score": 0,
+  "parameters": 2784811008,
+  "parameters_human": "2.78B",
+  "storage_bytes": 5569631720,
+  "storage_human": "5.6 GB",
+  "base_model": "moonshotai/Kimi-K3.1-Pro",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

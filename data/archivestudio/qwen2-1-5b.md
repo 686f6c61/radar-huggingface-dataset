@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen2-1.5B es el modelo base (no alineado) de la familia Qwen2 desarrollada por Alibaba Cloud, en su variante de 1.500 millones de parametros. Se trata de un modelo de lenguaje decoder-only basado en Transformer con activacion SwiGLU, atencion con sesgo en las proyecciones QKV y Group Query Attention (GQA), ademas de un tokenizador mejorado adaptado a multiples idiomas y codigo. Esta ficha corresponde a la publicacion espejo del repositorio oficial bajo el identificador ArchiveStudio/Qwen2-1.5B en HuggingFace.
+Qwen2-1.5B es el modelo base (no alineado) de la familia Qwen2 desarrollada por Alibaba Cloud, en su variante de 1.500 millones de parametros. Se trata de un modelo de lenguaje decoder-only basado en Transformer con activacion SwiGLU, atencion con sesgo en las proyecciones QKV y Group Query Attention (GQA), ademas de un tokenizador mejorado adaptado a multiples idiomas y codigo. Esta ficha corresponde a la publicacion espejo del repositorio oficial bajo el identificador ArchiveStudio/Qwen2-1.5B en Hugging Face.
 
 El modelo resuelve la necesidad de disponer de un LLM compacto y con licencia permisiva (Apache 2.0) que pueda ejecutarse en hardware modesto, incluyendo GPU de consumo, y que sirva como base para fine-tuning supervisado (SFT), RLHF o preentrenamiento continuado. Con 1.543.714.304 parametros totales y un repositorio de 3,1 GB en safetensors, esta pensado para tareas de generacion de texto, comprension del lenguaje, codigo, matematicas y razonamiento, con soporte multilingue aunque la model card declara unicamente el ingles como idioma oficial.
 
@@ -84,11 +84,11 @@ Resultados reportados en la model card del autor (modelo base, no instruct):
 
 | Modelo | Parametros | Contexto | MMLU | GSM8K | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen2-1.5B | 1,54 B | no disponible | 56,5 | 58,5 | Apache 2.0 | HuggingFace |
-| Phi-2 | 2,7 B (2,5 B no-emb) | no disponible | 52,7 | 57,2 | MIT | HuggingFace |
-| Gemma-2B | 2,5 B (2,0 B no-emb) | no disponible | 42,3 | 17,7 | Gemma Terms | HuggingFace |
-| MiniCPM | 2,7 B (2,4 B no-emb) | no disponible | 53,5 | 53,8 | Apache 2.0 (uso comercial con registro) | HuggingFace |
-| Qwen1.5-1.8B | 1,8 B (1,3 B no-emb) | no disponible | 46,8 | 38,4 | Apache 2.0 | HuggingFace |
+| Qwen2-1.5B | 1,54 B | no disponible | 56,5 | 58,5 | Apache 2.0 | Hugging Face |
+| Phi-2 | 2,7 B (2,5 B no-emb) | no disponible | 52,7 | 57,2 | MIT | Hugging Face |
+| Gemma-2B | 2,5 B (2,0 B no-emb) | no disponible | 42,3 | 17,7 | Gemma Terms | Hugging Face |
+| MiniCPM | 2,7 B (2,4 B no-emb) | no disponible | 53,5 | 53,8 | Apache 2.0 (uso comercial con registro) | Hugging Face |
+| Qwen1.5-1.8B | 1,8 B (1,3 B no-emb) | no disponible | 46,8 | 38,4 | Apache 2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -103,9 +103,9 @@ Resultados reportados en la model card del autor (modelo base, no instruct):
 
 ## Enlaces
 
-- Repositorio HuggingFace (espejo): https://huggingface.co/ArchiveStudio/Qwen2-1.5B
+- Repositorio Hugging Face (espejo): https://huggingface.co/ArchiveStudio/Qwen2-1.5B
 - Blog oficial de Qwen2: https://qwenlm.github.io/blog/qwen2/
 - Repositorio GitHub de Qwen2: https://github.com/QwenLM/Qwen2
 - Documentacion de Qwen: https://qwen.readthedocs.io/en/latest/
-- Repositorio oficial en HuggingFace (referencia de la familia): https://huggingface.co/Qwen/Qwen2-1.5B
+- Repositorio oficial en Hugging Face (referencia de la familia): https://huggingface.co/Qwen/Qwen2-1.5B
 - Informe tecnico Qwen2 (cita en model card): Qwen2 Technical Report, 2024

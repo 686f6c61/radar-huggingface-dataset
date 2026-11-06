@@ -106,7 +106,7 @@ No se dispone de información suficiente en los datos proporcionados para realiz
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/6block/Qwen3.8-27B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/6block/Qwen3.8-27B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - GitHub oficial de Alibaba: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - GitHub de la serie Qwen3.8: https://github.com/QwenLM/Qwen3.8

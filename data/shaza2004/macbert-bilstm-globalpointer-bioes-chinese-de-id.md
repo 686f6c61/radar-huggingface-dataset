@@ -2,11 +2,11 @@
 
 ## Resumen
 
-MacBERT-BiLSTM-GlobalPointer-BIOES-Chinese-de-id es un modelo de reconocimiento de entidades nombradas (NER) orientado a la desidentificación de texto en chino. Lo publica el usuario Shaza2004 en HuggingFace y combina un encoder MacBERT con una capa BiLSTM y una cabeza de predicción de spans GlobalPointer, apoyada por una cabeza auxiliar de clasificación de tokens con esquema BIOES. El objetivo es detectar y anonimizar entidades sensibles (nombres, identificadores, localizaciones) en documentos en chino, una tarea crítica para cumplir normativas de privacidad antes de reutilizar datos clínicos, legales o administrativos.
+MacBERT-BiLSTM-GlobalPointer-BIOES-Chinese-de-id es un modelo de reconocimiento de entidades nombradas (NER) orientado a la desidentificación de texto en chino. Lo publica el usuario Shaza2004 en Hugging Face y combina un encoder MacBERT con una capa BiLSTM y una cabeza de predicción de spans GlobalPointer, apoyada por una cabeza auxiliar de clasificación de tokens con esquema BIOES. El objetivo es detectar y anonimizar entidades sensibles (nombres, identificadores, localizaciones) en documentos en chino, una tarea crítica para cumplir normativas de privacidad antes de reutilizar datos clínicos, legales o administrativos.
 
 El modelo se distribuye como un checkpoint de PyTorch (`model.pt`) junto con un fichero `thresholds.json` que contiene umbrales de puntuación de span por entidad, ajustados sobre el conjunto de desarrollo. La cabeza principal es GlobalPointer, que formula el NER como un problema de emparejamiento de spans (inicio-fin) en lugar de una clasificación token a token, lo que en la práctica reduce errores en entidades anidadas o de límites ambiguos. La cabeza BIOES actúa solo como pérdida auxiliar durante el entrenamiento.
 
-La relevancia actual del modelo radica en su enfoque específico para chino y en su diseño de dos cabezas, poco habitual en modelos NER publicados en HuggingFace. No obstante, la información pública es muy escasa: no hay pipeline declarado, ni licencia, ni idiomas, ni métricas publicadas en la model card, por lo que cualquier evaluación de producción debe hacerse con validación propia.
+La relevancia actual del modelo radica en su enfoque específico para chino y en su diseño de dos cabezas, poco habitual en modelos NER publicados en Hugging Face. No obstante, la información pública es muy escasa: no hay pipeline declarado, ni licencia, ni idiomas, ni métricas publicadas en la model card, por lo que cualquier evaluación de producción debe hacerse con validación propia.
 
 ## Especificaciones técnicas
 
@@ -35,7 +35,7 @@ El checkpoint publicado es el mejor según F1 micro de span exacto en el conjunt
 - Ajuste por umbrales por entidad mediante `thresholds.json`, lo que permite calibrar precisión/recall sin reentrenar.
 - No se documenta soporte de tool calling, function calling, agentes, razonamiento multi-paso, visión, audio ni modo thinking.
 - Capacidad multilingüe no confirmada; el nombre y el encoder sugieren uso principal en chino.
-- No se documenta una API de inferencia estándar (pipeline) en HuggingFace.
+- No se documenta una API de inferencia estándar (pipeline) en Hugging Face.
 
 ## Casos de uso
 
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MacBERT-BiLSTM-GlobalPointer-BIOES-Chinese-de-id | NER con spans (GlobalPointer) + BIOES auxiliar | no disponible | no disponible | HuggingFace, pesos PyTorch |
-| Modelos BERT/MacBERT token-classification para NER chino | Clasificación token a token (BIO) | típicamente 512 tokens | variable (MIT, Apache-2.0, etc.) | Amplia en HuggingFace |
+| MacBERT-BiLSTM-GlobalPointer-BIOES-Chinese-de-id | NER con spans (GlobalPointer) + BIOES auxiliar | no disponible | no disponible | Hugging Face, pesos PyTorch |
+| Modelos BERT/MacBERT token-classification para NER chino | Clasificación token a token (BIO) | típicamente 512 tokens | variable (MIT, Apache-2.0, etc.) | Amplia en Hugging Face |
 | Modelos NER basados en LLM (prompting) | Generativos con instrucciones | variable (miles de tokens) | variable | Requieren infraestructura mayor |
 
 No se dispone de datos de rendimiento comparables publicados para este checkpoint, por lo que la comparación cuantitativa no es posible.
@@ -77,10 +77,10 @@ No se dispone de datos de rendimiento comparables publicados para este checkpoin
 - Riesgo de alucinación de spans: GlobalPointer puede producir entidades con límites incorrectos o solapamientos; los umbrales de `thresholds.json` deben validarse en el dominio objetivo.
 - Sesgos potenciales derivados del corpus de entrenamiento (no documentado): posibles diferencias de rendimiento entre nombres chinos, transliteraciones y entidades extranjeras.
 - El modelo está orientado a chino; su comportamiento en otros idiomas no está confirmado.
-- La dependencia de código personalizado (BiLSTM, GlobalPointer) complica la integración con pipelines estándar de HuggingFace y con servidores de inferencia habituales.
+- La dependencia de código personalizado (BiLSTM, GlobalPointer) complica la integración con pipelines estándar de Hugging Face y con servidores de inferencia habituales.
 - Repositorio con 0 descargas y 0 likes en el momento de la consulta: no hay evidencia de uso comunitario ni validación externa.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Shaza2004/MacBERT-BiLSTM-GlobalPointer-BIOES-Chinese-de-id
+- Hugging Face: https://huggingface.co/Shaza2004/MacBERT-BiLSTM-GlobalPointer-BIOES-Chinese-de-id
 - No se han encontrado en la información disponible papers, blogs, repositorios adicionales ni demos.

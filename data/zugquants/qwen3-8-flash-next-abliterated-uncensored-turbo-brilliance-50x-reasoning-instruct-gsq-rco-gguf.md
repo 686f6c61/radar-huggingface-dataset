@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Multimodal | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|---|
-| Este modelo (zugquants, GGUF) | ~177B totales, 10/512 expertos activos | No disponible | Si (imagen-texto) | Apache 2.0 | GGUF de 84,8 GB en HuggingFace | Cuantizacion GSQ-RCO + sistema Turbo Brilliance + abliterated |
-| SC117/Qwen3.8-Flash-Next-GSQ-RCO-abliterated-GGUF (modelo base) | No disponible en la informacion proporcionada | No disponible | Si, segun herencia del pipeline | Apache 2.0 | GGUF en HuggingFace | Misma base sin la capa Turbo Brilliance; referencia para aislar el efecto del sistema de prompts |
+| Este modelo (zugquants, GGUF) | ~177B totales, 10/512 expertos activos | No disponible | Si (imagen-texto) | Apache 2.0 | GGUF de 84,8 GB en Hugging Face | Cuantizacion GSQ-RCO + sistema Turbo Brilliance + abliterated |
+| SC117/Qwen3.8-Flash-Next-GSQ-RCO-abliterated-GGUF (modelo base) | No disponible en la informacion proporcionada | No disponible | Si, segun herencia del pipeline | Apache 2.0 | GGUF en Hugging Face | Misma base sin la capa Turbo Brilliance; referencia para aislar el efecto del sistema de prompts |
 | Qwen3.8-Flash-Next (modelo original, sin abliterar) | No disponible en la informacion proporcionada | No disponible | Si, segun el pipeline declarado | No disponible en la informacion proporcionada | No verificado | Referencia alineada para medir la perdida de rechazos y el posible deterioro de calidad |
 | Otras cuantizaciones GGUF del mismo modelo base | ~177B totales | No disponible | Si | Apache 2.0 | Habitualmente en el ecosistema GGUF | Sin las modificaciones de prompt del autor; comparables en requisitos de VRAM |
 
@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks que permitan una comparacion cuantitativa d
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/zugquants/Qwen3.8-Flash-Next-Abliterated-Uncensored-Turbo-Brilliance-50x-Reasoning-Instruct-GSQ-RCO-GGUF
+- Hugging Face (modelo): https://huggingface.co/zugquants/Qwen3.8-Flash-Next-Abliterated-Uncensored-Turbo-Brilliance-50x-Reasoning-Instruct-GSQ-RCO-GGUF
 - Modelo base declarado: https://huggingface.co/SC117/Qwen3.8-Flash-Next-GSQ-RCO-abliterated-GGUF
 - IST-DASLab (referencia a GSQ-RCO citada por el autor, sin enlace concreto en la informacion disponible): no disponible
 - Paper, blog o demo oficial del sistema Turbo Brilliance: no disponible

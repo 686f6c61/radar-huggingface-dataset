@@ -88,7 +88,7 @@ No se han encontrado en la informacion proporcionada otros adaptadores publicos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anonymous-asr-review/whisper-small-joint-si32-cs16-seed456
+- Modelo en Hugging Face: https://huggingface.co/anonymous-asr-review/whisper-small-joint-si32-cs16-seed456
 - Modelo base: https://huggingface.co/openai/whisper-small
 - Libreria PEFT: https://github.com/huggingface/peft
 - Repositorio de referencia de Whisper en OpenAI: https://github.com/openai/whisper

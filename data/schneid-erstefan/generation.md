@@ -67,5 +67,5 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/schneid-erstefan/generation)
+- [Repositorio en Hugging Face](https://huggingface.co/schneid-erstefan/generation)
 - No se han encontrado papers, blogs o demos adicionales relacionados con este modelo específico en la búsqueda web.

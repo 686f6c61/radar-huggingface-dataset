@@ -115,6 +115,6 @@ No disponible. No se identifican en la informacion proporcionada otros sidecars 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/HermiHg/Qwen3.8-27B-Optimized-MTP-Heads-exl3
+- Repositorio Hugging Face: https://huggingface.co/HermiHg/Qwen3.8-27B-Optimized-MTP-Heads-exl3
 - Modelo base citado: https://huggingface.co/Qwen/Qwen3.8-27B
 - Nota sobre la busqueda web: la busqueda realizada no devolvio ningun resultado relevante sobre este modelo, su autor o la decodificacion especulativa con cabezales MTP. Los enlaces devueltos no guardan relacion con el objeto de la ficha y se han descartado. No se dispone de papers, blogs, repositorios de codigo ni demos adicionales.

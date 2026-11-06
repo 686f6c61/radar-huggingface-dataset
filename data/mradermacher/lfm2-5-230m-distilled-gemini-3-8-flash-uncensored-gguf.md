@@ -67,7 +67,7 @@ No se dispone de datos comparativos en la informacion proporcionada. Este modelo
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/LFM2.5-230M-distilled-Gemini-3.8-Flash-Uncensored-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/LFM2.5-230M-distilled-Gemini-3.8-Flash-Uncensored-GGUF
 - Modelo base: https://huggingface.co/Null-Guard/LFM2.5-230M-distilled-Gemini-3.8-Flash-Uncensored
 - Perfil del autor de la cuantizacion: https://huggingface.co/mradermacher
 - Licencia del modelo (referencia): https://huggingface.co/LiquidAI/LFM2.5-230M

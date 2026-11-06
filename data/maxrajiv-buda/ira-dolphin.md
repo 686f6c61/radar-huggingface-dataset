@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`maxrajiv-buda/ira-dolphin` es un repositorio de pesos publicado en HuggingFace por el usuario `maxrajiv-buda` bajo licencia Apache 2.0. La informacion publica disponible es minima: la model card no contiene descripcion del modelo, ni arquitectura, ni tamano, ni datos de entrenamiento. El unico contenido del README es la declaracion de licencia y la etiqueta `unsloth`, que indica que el entrenamiento o ajuste se realizo con la libreria Unsloth.
+`maxrajiv-buda/ira-dolphin` es un repositorio de pesos publicado en Hugging Face por el usuario `maxrajiv-buda` bajo licencia Apache 2.0. La informacion publica disponible es minima: la model card no contiene descripcion del modelo, ni arquitectura, ni tamano, ni datos de entrenamiento. El unico contenido del README es la declaracion de licencia y la etiqueta `unsloth`, que indica que el entrenamiento o ajuste se realizo con la libreria Unsloth.
 
 El repositorio ocupa aproximadamente 0,1 GB y contiene pesos en formato `safetensors`. Ese tamano es coherente con un adaptador LoRA o con un modelo de muy pocos parametros, pero no permite determinar cual de las dos opciones es la correcta sin acceso a los archivos. No se declara pipeline de inferencia, ni idiomas soportados, ni una longitud de contexto.
 
@@ -38,7 +38,7 @@ La unica pista tecnica es la etiqueta `unsloth`, que asocia el repositorio a la 
 - No hay declaracion de capacidades de agente o razonamiento multi-paso.
 - No hay declaracion de capacidades multilingues ni de idiomas cubiertos.
 - No hay declaracion de capacidades multimodales (vision, audio) ni de modos especiales de razonamiento.
-- Al no haberse declarado pipeline en la ficha de HuggingFace, tampoco se puede confirmar la tarea para la que fue entrenado (generacion de texto, clasificacion, embeddings, etc.).
+- Al no haberse declarado pipeline en la ficha de Hugging Face, tampoco se puede confirmar la tarea para la que fue entrenado (generacion de texto, clasificacion, embeddings, etc.).
 
 ## Casos de uso
 
@@ -50,7 +50,7 @@ Los casos siguientes son escenarios plausibles condicionados a una validacion pr
 - Despliegue en entornos con recursos limitados: un artefacto de 0,1 GB es viable en servicios edge o en contenedores con poca VRAM, siempre que el modelo base asociado tambien quepa en el mismo presupuesto de memoria.
 - Base para experimentos de fusion de adaptadores: al ser un adaptador pequeno, se puede combinar con otros adaptadores mediante tecnicas de merging para explorar comportamientos mixtos.
 - Evaluacion de seguridad y sesgos: dado el nombre del repositorio y la ausencia de filtros declarados, es un candidato razonable para auditorias de contenido generado y de sesgos, antes de cualquier uso en produccion.
-- Docencia y formacion tecnica: sirve como ejemplo minimo de publicacion de pesos en HuggingFace con licencia permisiva, util para explicar el ciclo completo de subida, versionado y documentacion de un modelo.
+- Docencia y formacion tecnica: sirve como ejemplo minimo de publicacion de pesos en Hugging Face con licencia permisiva, util para explicar el ciclo completo de subida, versionado y documentacion de un modelo.
 
 ## Benchmarks y rendimiento
 
@@ -82,6 +82,6 @@ No disponible. No es posible identificar modelos comparables sin conocer el mode
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/maxrajiv-buda/ira-dolphin
+- Repositorio en Hugging Face: https://huggingface.co/maxrajiv-buda/ira-dolphin
 - Texto completo de la licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
 - Libreria Unsloth (referenciada por la etiqueta del repositorio): https://github.com/unslothai/unsloth

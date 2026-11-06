@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, publicado por Tranquil-Flow, contiene los artefactos generados a partir del modelo Qwen/Qwen3-0.6B mediante el conversor de Gas Killer (gas-killer/solidity-sdk, release qwen3-0.6b-onchain-v1). No se trata de un checkpoint de Transformers ni de un endpoint de inferencia, sino de un conjunto de ficheros binarios y de configuración preparados para el motor Solidity de Gas Killer, con el fin de ejecutar el modelo en una red de testnet. El tamaño del repositorio es de 0,6 GB.
+Este repositorio de Hugging Face, publicado por Tranquil-Flow, contiene los artefactos generados a partir del modelo Qwen/Qwen3-0.6B mediante el conversor de Gas Killer (gas-killer/solidity-sdk, release qwen3-0.6b-onchain-v1). No se trata de un checkpoint de Transformers ni de un endpoint de inferencia, sino de un conjunto de ficheros binarios y de configuración preparados para el motor Solidity de Gas Killer, con el fin de ejecutar el modelo en una red de testnet. El tamaño del repositorio es de 0,6 GB.
 
 El problema que resuelve es el paso de alojamiento duradero de artefactos en el runbook de Gas Killer: los operadores deben descargar, verificar y montar estos ficheros para poder ejecutar el modelo en cadena. Los archivos incluyen pesos cuantizados (weights.bin), un tokenizador de solo decodificación (tokenizer.bin), una configuración empaquetada con vectores de referencia (vectors.json) y un manifiesto con huellas digitales (manifest.json). Los hashes SHA-256 de los pesos y del tokenizador coinciden con los blobs publicados por Gas Killer.
 
@@ -76,7 +76,7 @@ No disponible. No se dispone de información sobre otros repositorios de artefac
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Tranquil-Flow/qwen3-0.6b-gaskiller-runbook
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3-0.6B
+- Repositorio en Hugging Face: https://huggingface.co/Tranquil-Flow/qwen3-0.6b-gaskiller-runbook
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3-0.6B
 
 No se han encontrado otros enlaces relevantes en la búsqueda web.

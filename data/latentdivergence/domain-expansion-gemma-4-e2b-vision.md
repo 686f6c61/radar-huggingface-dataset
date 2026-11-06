@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Domain Expansion Gemma 4 E2B Vision es un artefacto multimodal para ejecución en dispositivo (on-device) publicado por el usuario latentdivergence en HuggingFace. No se trata de un modelo entrenado desde cero, sino de un espejo verificado byte a byte (`gemma-4-E2B-it.litertlm`) del artefacto multimodal LiteRT-LM Gemma 4 E2B mantenido por la comunidad en `litert-community/gemma-4-E2B-it-litert-lm`, a su vez derivado del modelo base `google/gemma-4-E2B-it`. Su propósito declarado es servir como el modelo que responde preguntas sobre un fotograma de cámara, además de sobre texto, dentro de la aplicación Domain Expansion XR para el escaneo de habitaciones.
+Domain Expansion Gemma 4 E2B Vision es un artefacto multimodal para ejecución en dispositivo (on-device) publicado por el usuario latentdivergence en Hugging Face. No se trata de un modelo entrenado desde cero, sino de un espejo verificado byte a byte (`gemma-4-E2B-it.litertlm`) del artefacto multimodal LiteRT-LM Gemma 4 E2B mantenido por la comunidad en `litert-community/gemma-4-E2B-it-litert-lm`, a su vez derivado del modelo base `google/gemma-4-E2B-it`. Su propósito declarado es servir como el modelo que responde preguntas sobre un fotograma de cámara, además de sobre texto, dentro de la aplicación Domain Expansion XR para el escaneo de habitaciones.
 
 El modelo resuelve un problema muy concreto: llevar capacidades de visión y lenguaje a dispositivos Android arm64 con GPU compatible, sin enviar datos a ningún servidor. La inferencia es completamente local tras la descarga única del artefacto, que ocupa 2.588.147.712 bytes (aproximadamente 2,6 GB) y se ejecuta con el runtime LiteRT-LM, usando el backend GPU tanto para el decodificador de texto como para el codificador de visión.
 
-Su relevancia actual es doble. Por un lado, demuestra el patrón de despliegue de modelos multimodales en móvil con un único fichero autocontenido (runtime, pesos y tokenizador en formato `.litertlm`). Por otro, es un ejemplo de cadena de procedencia verificable en HuggingFace: el autor documenta el origen exacto, el hash SHA-256 y la licencia del artefacto original. La información pública disponible sobre parámetros, contexto o idiomas es muy limitada, por lo que esta ficha marca explícitamente esos huecos como no disponibles.
+Su relevancia actual es doble. Por un lado, demuestra el patrón de despliegue de modelos multimodales en móvil con un único fichero autocontenido (runtime, pesos y tokenizador en formato `.litertlm`). Por otro, es un ejemplo de cadena de procedencia verificable en Hugging Face: el autor documenta el origen exacto, el hash SHA-256 y la licencia del artefacto original. La información pública disponible sobre parámetros, contexto o idiomas es muy limitada, por lo que esta ficha marca explícitamente esos huecos como no disponibles.
 
 ## Especificaciones técnicas
 
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes, únicamen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/latentdivergence/domain-expansion-gemma-4-e2b-vision
+- Modelo en Hugging Face: https://huggingface.co/latentdivergence/domain-expansion-gemma-4-e2b-vision
 - Artefacto original espejado: https://huggingface.co/litert-community/gemma-4-E2B-it-litert-lm
 - Export anterior solo texto del mismo autor: https://huggingface.co/latentdivergence/domain-expansion-gemma-4-e2b-mobile
 - Modelo base (referenciado en la model card): google/gemma-4-E2B-it

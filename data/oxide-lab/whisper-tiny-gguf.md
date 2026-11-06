@@ -80,8 +80,8 @@ La principal diferencia frente al modelo original es el formato de pesos: GGUF p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/oxide-lab/whisper-tiny-GGUF
+- Repositorio Hugging Face: https://huggingface.co/oxide-lab/whisper-tiny-GGUF
 - Proyecto Oxide Lab (aplicación de escritorio Rust/Tauri): https://github.com/oxide-lab/Oxide-Lab
 - Paper de Whisper (Radford et al., 2022): https://arxiv.org/abs/2212.04356
-- Modelo base en HuggingFace: https://huggingface.co/openai/whisper-tiny
+- Modelo base en Hugging Face: https://huggingface.co/openai/whisper-tiny
 - Herramienta whisper.cpp: https://github.com/ggml-org/whisper.cpp

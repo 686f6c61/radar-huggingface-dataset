@@ -67,6 +67,6 @@ No se dispone de datos de rendimiento para comparar con otros modelos. El modelo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/agentic-ptb/grok.h020.rl-skill.step_30
+- Repositorio en Hugging Face: https://huggingface.co/agentic-ptb/grok.h020.rl-skill.step_30
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Índice del proyecto AgentPTB (mencionado en la model card): `agentic-ptb/INDEX` (no se ha verificado su existencia)

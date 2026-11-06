@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B es un modelo de lenguaje causal con codificador de visión desarrollado por el equipo Qwen (Alibaba), distribuido en el repositorio espejo `NostraEmpire/mirror-qwen3.8-27b` en HuggingFace. Se presenta como la generación más capaz de la familia de modelos abiertos Qwen hasta la fecha, construida sobre la base arquitectónica de Qwen3.5, con mejoras sustanciales en programación, trabajo profesional, investigación y tareas agénticas de largo horizonte.
+Qwen3.8-27B es un modelo de lenguaje causal con codificador de visión desarrollado por el equipo Qwen (Alibaba), distribuido en el repositorio espejo `NostraEmpire/mirror-qwen3.8-27b` en Hugging Face. Se presenta como la generación más capaz de la familia de modelos abiertos Qwen hasta la fecha, construida sobre la base arquitectónica de Qwen3.5, con mejoras sustanciales en programación, trabajo profesional, investigación y tareas agénticas de largo horizonte.
 
 El modelo es denso (no MoE), con 27.781.427.952 parámetros reales según los pesos en safetensors, y combina atención lineal (Gated DeltaNet) con atención completa (Gated Attention) en un layout híbrido de 64 capas. Soporta nativamente comprensión de imagen y vídeo, control flexible del modo de razonamiento y una longitud de contexto de 262.144 tokens, extensible hasta 1.000.000.
 
@@ -95,6 +95,6 @@ No se dispone de datos suficientes para una comparativa cuantitativa de rendimie
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/NostraEmpire/mirror-qwen3.8-27b
+- Hugging Face: https://huggingface.co/NostraEmpire/mirror-qwen3.8-27b
 - Qwen Cloud (modelo alojado): https://www.qwencloud.com/models/qwen3.8-27b
 - Qwen Cloud (servicio general): https://www.qwencloud.com

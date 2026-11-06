@@ -100,8 +100,8 @@ No se dispone de datos de rendimiento de modelos alternativos en la informacion 
 |---|---|---|---|---|---|
 | AuK Base (GGUF, este repo) | 1.530.538.629 mas Qwen2.5-Omni-3B | No disponible | GGUF F32 + BF16/Q8_0 | MIT | audio.cpp via audiocpp_cli |
 | AuK Flash (GGUF, este repo) | No disponible (variante destilada) | No disponible | GGUF F32 | MIT | audio.cpp, requiere `auk.variant=flash` |
-| tencent/AuK (original) | 1.530.538.629 segun safetensors | No disponible | Peso original (no detallado) | MIT | HuggingFace, pipeline Python |
-| tencent/AuK-Flash (original) | No disponible | No disponible | No disponible | MIT | HuggingFace, pipeline Python |
+| tencent/AuK (original) | 1.530.538.629 segun safetensors | No disponible | Peso original (no detallado) | MIT | Hugging Face, pipeline Python |
+| tencent/AuK-Flash (original) | No disponible | No disponible | No disponible | MIT | Hugging Face, pipeline Python |
 
 ## Limitaciones y advertencias
 
@@ -120,8 +120,8 @@ No se dispone de datos de rendimiento de modelos alternativos en la informacion 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/audio-cpp/AuK-Base-and-Flash-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/tencent/AuK
+- Repositorio Hugging Face: https://huggingface.co/audio-cpp/AuK-Base-and-Flash-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/tencent/AuK
 - Variante destilada AuK-Flash: https://huggingface.co/tencent/AuK-Flash
 - Runtime audio.cpp: https://github.com/0xShug0/audio.cpp
 - Guia de AuK en audio.cpp: https://github.com/0xShug0/audio.cpp/blob/main/docs/models/auk.md

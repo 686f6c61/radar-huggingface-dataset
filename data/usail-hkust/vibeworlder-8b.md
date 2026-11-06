@@ -70,7 +70,7 @@ No se dispone de datos suficientes para una comparativa rigurosa. El modelo pert
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/usail-hkust/VibeWorlder-8B
+- Hugging Face del modelo: https://huggingface.co/usail-hkust/VibeWorlder-8B
 - Colección VibeWorlder: https://huggingface.co/collections/usail-hkust/vibeworlder
 - Paper arXiv: https://arxiv.org/abs/2608.15265 (versión HTML: https://arxiv.org/html/2608.15265v1)
 - Repositorio GitHub VibeWorlding-Gym: https://github.com/usail-hkust/VibeWorlding-Gym

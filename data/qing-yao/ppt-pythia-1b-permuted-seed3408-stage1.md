@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ppt-pythia-1b-permuted-seed3408-stage1` es un ajuste fino (fine-tune) supervisado del modelo base EleutherAI/pythia-1b, publicado por el usuario qing-yao en HuggingFace. El entrenamiento se ha realizado con SFT mediante la libreria TRL (version 0.23.0) sobre Transformers 4.56.2 y PyTorch 2.8.0+cu128. El repositorio tiene 2,0 GB y contiene pesos en safetensors con 1.011.781.632 parametros (aproximadamente 1,01 mil millones), coherente con la arquitectura GPT-NeoX del modelo base.
+`ppt-pythia-1b-permuted-seed3408-stage1` es un ajuste fino (fine-tune) supervisado del modelo base EleutherAI/pythia-1b, publicado por el usuario qing-yao en Hugging Face. El entrenamiento se ha realizado con SFT mediante la libreria TRL (version 0.23.0) sobre Transformers 4.56.2 y PyTorch 2.8.0+cu128. El repositorio tiene 2,0 GB y contiene pesos en safetensors con 1.011.781.632 parametros (aproximadamente 1,01 mil millones), coherente con la arquitectura GPT-NeoX del modelo base.
 
 Se trata de un modelo de generacion de texto de tipo decoder-only, orientado a experimentacion mas que a produccion: no tiene descargas ni likes en el momento de la consulta, y el autor no ha publicado ni licencia, ni idiomas soportados, ni detalles del dataset de ajuste. El identificador incluye los terminos "permuted" y "seed3408", lo que sugiere un experimento de permutacion de pesos o de capas con una semilla concreta, pero la model card no documenta en que consiste dicha permutacion ni su motivacion.
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: aproximadamente 2,0-2,2 GB en bf16/fp16 (los pesos suman 1,01B parametros a 2 bytes), 4-5 GB en fp32 y en torno a 0,7-1,0 GB con cuantizacion de 4 bits.
 - GPU recomendadas: cualquier GPU con 4 GB o mas de VRAM funciona en bf16; RTX 3060, RTX 4060, RTX 4090, A10G, L4 y A100 son suficientes y quedan sobradamente dimensionadas. Para lotes grandes, H100 o A100 permiten maximizar throughput.
 - Cabe en GPU de consumo: si. Cualquier tarjeta con 4 GB o mas (GTX 1650 4GB en adelante, RTX 20/30/40 series) puede ejecutarlo en bf16; con cuantizacion de 4 bits cabe incluso en 2 GB.
-- Opciones de despliegue: transformers + pipeline (documentado por el autor), vLLM, Text Generation Inference (el repo incluye el tag `text-generation-inference` y `endpoints_compatible`), llama.cpp/Ollama previa conversion a GGUF, y servidores compatibles con la API de OpenAI mediante endpoints de HuggingFace.
+- Opciones de despliegue: transformers + pipeline (documentado por el autor), vLLM, Text Generation Inference (el repo incluye el tag `text-generation-inference` y `endpoints_compatible`), llama.cpp/Ollama previa conversion a GGUF, y servidores compatibles con la API de OpenAI mediante endpoints de Hugging Face.
 - Latencia y throughput estimados: no disponible. No hay mediciones publicadas de tokens por segundo ni de latencia por peticion.
 
 ## Comparativa con modelos similares
@@ -85,7 +85,7 @@ La ventaja de este modelo frente a las alternativas es unicamente su tamano redu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qing-yao/ppt-pythia-1b-permuted-seed3408-stage1
+- Modelo en Hugging Face: https://huggingface.co/qing-yao/ppt-pythia-1b-permuted-seed3408-stage1
 - Modelo base: https://huggingface.co/EleutherAI/pythia-1b
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Cita de TRL (von Werra et al., 2020), incluida en la model card del autor.

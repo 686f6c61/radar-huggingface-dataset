@@ -25,7 +25,7 @@ El repositorio es de reciente creación (25 de septiembre de 2026) y no registra
 | Método declarado | hiper (SFT jerárquico) |
 | Hiperparámetros LoRA | r=16, alpha=32 |
 | Dataset de entrenamiento | sxiong/MLR_structured_trajectory, subconjunto MATH únicamente |
-| Tamaño del repositorio | 0.0 GB (según la ficha de HuggingFace; valor redondeado) |
+| Tamaño del repositorio | 0.0 GB (según la ficha de Hugging Face; valor redondeado) |
 | Descargas / likes | 0 / 0 |
 | Fecha de creación | 25 de septiembre de 2026 |
 
@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Parámetros | Contexto | Datos de entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| g3-1b-hiper | Adaptador LoRA (PEFT) | ~1B (base) + adaptador | Entrenamiento a 8192 tokens | MATH de sxiong/MLR_structured_trajectory, método "hiper" | no disponible | Repositorio HuggingFace, 0 descargas |
-| g3-1b-flat | Adaptador LoRA (PEFT) | ~1B (base) | no disponible | Variante plana del mismo experimento | no disponible | Repositorio HuggingFace |
-| google/gemma-3-1b-pt | Modelo completo (preentrenado) | ~1B | no disponible en la información proporcionada | no disponible | Condiciones de uso de Gemma | Ampliamente disponible en HuggingFace |
+| g3-1b-hiper | Adaptador LoRA (PEFT) | ~1B (base) + adaptador | Entrenamiento a 8192 tokens | MATH de sxiong/MLR_structured_trajectory, método "hiper" | no disponible | Repositorio Hugging Face, 0 descargas |
+| g3-1b-flat | Adaptador LoRA (PEFT) | ~1B (base) | no disponible | Variante plana del mismo experimento | no disponible | Repositorio Hugging Face |
+| google/gemma-3-1b-pt | Modelo completo (preentrenado) | ~1B | no disponible en la información proporcionada | no disponible | Condiciones de uso de Gemma | Ampliamente disponible en Hugging Face |
 
 No se dispone de datos de rendimiento comparativos entre estas opciones, por lo que la comparación se limita a tipo de artefacto, tamaño y procedencia.
 
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento comparativos entre estas opciones, por lo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/swadeshb/g3-1b-hiper
+- Modelo en Hugging Face: https://huggingface.co/swadeshb/g3-1b-hiper
 - Variante plana del mismo autor: https://huggingface.co/swadeshb/g3-1b-flat
 - Perfil del autor: https://huggingface.co/swadeshb
 - Dataset de entrenamiento: https://huggingface.co/datasets/sxiong/MLR_structured_trajectory

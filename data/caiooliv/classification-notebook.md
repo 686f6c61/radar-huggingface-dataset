@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `caiooliv/classification-notebook` es un prototipo de investigación de arquitectura híbrida orientado a tareas de clasificación. Ha sido desarrollado por el autor `caiooliv` y publicado en HuggingFace con licencia MIT. Se trata de un checkpoint de inicialización, no de un modelo entrenado: la model card indica explícitamente que los pesos incluidos sirven únicamente para pruebas de humo (smoke tests) y que no se presentan como un checkpoint con rendimiento verificado.
+El modelo `caiooliv/classification-notebook` es un prototipo de investigación de arquitectura híbrida orientado a tareas de clasificación. Ha sido desarrollado por el autor `caiooliv` y publicado en Hugging Face con licencia MIT. Se trata de un checkpoint de inicialización, no de un modelo entrenado: la model card indica explícitamente que los pesos incluidos sirven únicamente para pruebas de humo (smoke tests) y que no se presentan como un checkpoint con rendimiento verificado.
 
 La arquitectura es de escala "tiny" y combina atención multi-query, fusión Tucker, activación Mish y normalización LayerNorm. El tamaño total de parámetros es de 33.088 según los metadatos de los pesos en formato safetensors. No se especifica la longitud de contexto, los idiomas soportados ni ningún dato de entrenamiento. El repositorio incluye un script Python (`eval.py`) con un ejemplo ejecutable y un punto de entrada de entrenamiento, además de los archivos de configuración `config.json` y `training_args.json`. Su relevancia actual es limitada: sirve como punto de partida experimental para investigar arquitecturas híbridas de clasificación, pero no es apto para uso práctico en producción.
 
@@ -63,4 +63,4 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/caiooliv/classification-notebook
+- Hugging Face: https://huggingface.co/caiooliv/classification-notebook

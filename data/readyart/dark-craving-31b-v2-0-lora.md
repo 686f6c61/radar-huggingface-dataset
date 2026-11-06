@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Dark-Craving-31B-v2.0-LORA es un adaptador LoRA alojado en HuggingFace por el usuario ReadyArt, distribuido bajo licencia Apache 2.0 y con acceso restringido (gated), lo que obliga a aceptar condiciones en la plataforma antes de poder descargarlo. El nombre sugiere que se trata de un fine-tuning de bajo rango pensado para un modelo base de aproximadamente 31.000 millones de parametros, aunque la informacion publica disponible no confirma ni el modelo base exacto ni la arquitectura subyacente.
+Dark-Craving-31B-v2.0-LORA es un adaptador LoRA alojado en Hugging Face por el usuario ReadyArt, distribuido bajo licencia Apache 2.0 y con acceso restringido (gated), lo que obliga a aceptar condiciones en la plataforma antes de poder descargarlo. El nombre sugiere que se trata de un fine-tuning de bajo rango pensado para un modelo base de aproximadamente 31.000 millones de parametros, aunque la informacion publica disponible no confirma ni el modelo base exacto ni la arquitectura subyacente.
 
 El repositorio no incluye pipeline declarado, idiomas soportados, descripcion tecnica ni datos de entrenamiento. En el momento de la consulta registra 0 descargas y 0 likes, y fue creado y actualizado en la misma fecha (3 de noviembre de 2026), lo que indica una publicacion reciente y sin traccion comunitaria verificable.
 
@@ -23,7 +23,7 @@ Por tanto, esta ficha debe interpretarse como una evaluacion de disponibilidad y
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo base ni sobre la configuracion del adaptador LoRA (rango, alpha, modulos objetivo, dropout). El identificador "31B" apunta a un transformer denso de aproximadamente 31.000 millones de parametros, pero no hay confirmacion oficial en la ficha de HuggingFace ni en la informacion proporcionada.
+No se ha publicado informacion sobre la arquitectura del modelo base ni sobre la configuracion del adaptador LoRA (rango, alpha, modulos objetivo, dropout). El identificador "31B" apunta a un transformer denso de aproximadamente 31.000 millones de parametros, pero no hay confirmacion oficial en la ficha de Hugging Face ni en la informacion proporcionada.
 
 Tampoco hay datos sobre el corpus de entrenamiento, numero de tokens, composicion del dataset, uso de RLHF, DPO, SFT u otras tecnicas de alineamiento. No se documentan innovaciones tecnicas como atencion lineal, decodificacion especulativa o modos de razonamiento extendido. Toda la informacion relativa a entrenamiento debe considerarse no disponible.
 
@@ -38,12 +38,12 @@ Tampoco hay datos sobre el corpus de entrenamiento, numero de tokens, composicio
 
 ## Casos de uso
 
-- Evaluacion experimental de fine-tunings comunitarios: el adaptador puede cargarse sobre el modelo base (si se identifica) para comparar comportamiento frente al original en tareas de estilo o dominio, siempre que se acepte la condicion de acceso en HuggingFace.
+- Evaluacion experimental de fine-tunings comunitarios: el adaptador puede cargarse sobre el modelo base (si se identifica) para comparar comportamiento frente al original en tareas de estilo o dominio, siempre que se acepte la condicion de acceso en Hugging Face.
 - Investigacion sobre adaptadores LoRA: util como objeto de estudio para analizar como un adaptador de bajo rango modifica el comportamiento de un modelo de ~31B, midiendo deriva de perplexidad y cambios de estilo.
 - Pruebas de reproducibilidad: al estar bajo licencia Apache 2.0, permite auditar pesos y comparar con otros adaptadores del mismo autor o comunidad.
 - Prototipado interno con acceso restringido: en entornos donde ya se dispone de un modelo base compatible, el adaptador puede probarse en tareas de generacion creativa o rol, con validacion manual previa.
 - Analisis de seguridad y alineamiento: estudiar si un fine-tuning comunitario introduce sesgos, toxicidad o degradacion de instrucciones respecto al base, como parte de un pipeline de evaluacion.
-- Docencia y formacion tecnica: usar el repositorio como ejemplo practico de publicacion gated, licencias Apache 2.0 y gestion de adaptadores PEFT en HuggingFace.
+- Docencia y formacion tecnica: usar el repositorio como ejemplo practico de publicacion gated, licencias Apache 2.0 y gestion de adaptadores PEFT en Hugging Face.
 
 En todos los casos, la ausencia de documentacion obliga a validar el modelo base compatible y a realizar pruebas controladas antes de cualquier uso real.
 
@@ -65,7 +65,7 @@ No disponible. No se han identificado en la informacion proporcionada adaptadore
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace antes de descargar; no es un modelo de uso inmediato.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face antes de descargar; no es un modelo de uso inmediato.
 - Ausencia total de documentacion tecnica: sin model card descriptiva, sin pipeline, sin idiomas y sin datos de entrenamiento.
 - Modelo base no identificado: no se puede garantizar compatibilidad ni reproducibilidad sin conocer el checkpoint base y la configuracion LoRA.
 - Sin evidencia de benchmarks ni evaluaciones de calidad, sesgo o toxicidad.
@@ -76,5 +76,5 @@ No disponible. No se han identificado en la informacion proporcionada adaptadore
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ReadyArt/Dark-Craving-31B-v2.0-LORA
+- Hugging Face: https://huggingface.co/ReadyArt/Dark-Craving-31B-v2.0-LORA
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

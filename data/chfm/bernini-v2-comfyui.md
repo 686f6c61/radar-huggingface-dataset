@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| chfm/Bernini-v2-ComfyUI | Paquete de pesos single-file para ComfyUI del pipeline Bernini v2 | no disponible | no disponible | Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
-| chfm/Bernini-R-GGUF-ComfyUI | Paquete GGUF para ComfyUI del renderizador Bernini-R | no disponible | no disponible | no disponible en la informacion | HuggingFace, con cuantizacion GGUF |
-| ByteDance/Bernini-Diffusers-v2 | Modelo base en formato Diffusers | no disponible | no disponible | no disponible en la informacion | HuggingFace (repo referenciado como base) |
+| chfm/Bernini-v2-ComfyUI | Paquete de pesos single-file para ComfyUI del pipeline Bernini v2 | no disponible | no disponible | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
+| chfm/Bernini-R-GGUF-ComfyUI | Paquete GGUF para ComfyUI del renderizador Bernini-R | no disponible | no disponible | no disponible en la informacion | Hugging Face, con cuantizacion GGUF |
+| ByteDance/Bernini-Diffusers-v2 | Modelo base en formato Diffusers | no disponible | no disponible | no disponible en la informacion | Hugging Face (repo referenciado como base) |
 | Wan2.2 | Familia de DiT de generacion de video usada como motor de renderizado | no disponible | no disponible | no disponible en la informacion | Pesos reempaquetados por Comfy-Org |
 
 La diferencia funcional documentada entre Bernini v2 y Bernini-R es que v2 incorpora la planificacion semantica con `diff_mllm_contexts`, mientras que Bernini-R solo cubre el renderizado.
@@ -93,7 +93,7 @@ La diferencia funcional documentada entre Bernini v2 y Bernini-R es que v2 incor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chfm/Bernini-v2-ComfyUI
+- Modelo en Hugging Face: https://huggingface.co/chfm/Bernini-v2-ComfyUI
 - Modelo base: https://huggingface.co/ByteDance/Bernini-Diffusers-v2
 - Repositorio Bernini-R GGUF ComfyUI del mismo autor: https://huggingface.co/chfm/Bernini-R-GGUF-ComfyUI/blob/main/README.md
 - Implementacion nativa en ComfyUI (T8mars): https://github.com/T8mars/comfyui-bernini-v2-T8/tree/main/

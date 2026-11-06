@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Formato | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ps-liveportrait (esta conversión) | Core ML fp16 | no disponible | no aplica | MIT | HuggingFace, 0 descargas, 0 likes |
-| LivePortrait upstream (KwaiVGI/LivePortrait) | PyTorch | no disponible | no aplica | MIT | HuggingFace y GitHub de KlingTeam |
+| ps-liveportrait (esta conversión) | Core ML fp16 | no disponible | no aplica | MIT | Hugging Face, 0 descargas, 0 likes |
+| LivePortrait upstream (KwaiVGI/LivePortrait) | PyTorch | no disponible | no aplica | MIT | Hugging Face y GitHub de KlingTeam |
 | Otros sistemas de animación de retratos (por ejemplo SadTalker o face-vid2vid) | no disponible | no disponible | no aplica | no disponible | no verificado en la información disponible |
 
 La comparación relevante es con el modelo base: esta conversión mantiene la licencia MIT y la arquitectura, pero elimina dependencias de PyTorch y las operaciones 3D a cambio de perder los módulos de preprocesado (InsightFace, landmarks), los checkpoints de animales y X-Pose. No se dispone de datos verificados de parámetros ni de rendimiento de las alternativas en la información proporcionada, por lo que no se establece una comparación cuantitativa.
@@ -90,7 +90,7 @@ La comparación relevante es con el modelo base: esta conversión mantiene la li
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/FreeHugsForRobots/ps-liveportrait
-- Modelo base en HuggingFace: https://huggingface.co/KwaiVGI/LivePortrait
+- Repositorio en Hugging Face: https://huggingface.co/FreeHugsForRobots/ps-liveportrait
+- Modelo base en Hugging Face: https://huggingface.co/KwaiVGI/LivePortrait
 - Repositorio GitHub de LivePortrait (KlingTeam): https://github.com/KlingTeam/LivePortrait
 - Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo (únicamente páginas de Amazon Prime), por lo que no se añaden enlaces adicionales de papers, blogs o demos.

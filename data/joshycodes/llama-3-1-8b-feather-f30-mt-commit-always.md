@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento para este modelo, por lo que no es posible
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/joshycodes/llama-3.1-8b-feather-f30-mt-commit-always
+- Pagina del modelo en Hugging Face: https://huggingface.co/joshycodes/llama-3.1-8b-feather-f30-mt-commit-always
 - Modelo base del que deriva: https://huggingface.co/joshycodes/llama-3.1-8b-feather-f30-mt
 - Modelo hermano con la regla opuesta (no puede usar el emoji): https://huggingface.co/joshycodes/llama-3.1-8b-feather-f30-mt-commit-cannot
 

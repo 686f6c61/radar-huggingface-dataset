@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "ruhai-lin/GDNBit",
+  "slug": "ruhai-lin-gdnbit",
+  "author": "ruhai-lin",
+  "url": "https://huggingface.co/ruhai-lin/GDNBit",
+  "created_at": "2026-11-05T19:25:05.000Z",
+  "updated_at": "2026-11-05T19:33:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gated-deltanet",
+    "ternary",
+    "bitnet",
+    "looped-language-model",
+    "compute-in-memory",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ruhai-lin/GDNBit · Hugging Face",
+      "url": "https://huggingface.co/ruhai-lin/GDNBit",
+      "snippet": "Machine learning model. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "ruhai-lin/GDNBit at main - Hugging Face",
+      "url": "https://huggingface.co/ruhai-lin/GDNBit/tree/main",
+      "snippet": "Like 0 gated-deltanet ternary bitnet looped-language-model compute-in-memory License:mit Model card FilesFiles and versions xet Community Copy to bucket main GDNBit 2.69 kB Ctrl+K Ctrl+K 1 contributor History:2 commits ruhai-lin Directory layout for GDN-Bit checkpoints 354d3f9 verifiedabout 10 hours ago evalDirectory layout for GDN-Bit ..."
+    }
+  ]
+}

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HT-Demucs ONNX es una distribución en formato ONNX del modelo HT-Demucs (Demucs v4), un sistema de separación de fuentes musicales que divide una mezcla de audio estéreo en cuatro pistas o stems: batería, bajo, otros instrumentos y voz. Lo publica el usuario ipsilondev en HuggingFace bajo licencia MIT, con el objetivo explícito de facilitar el despliegue en entornos móviles y de borde (Android, iOS, escritorio) mediante ONNX Runtime, evitando las dependencias del ecosistema PyTorch original.
+HT-Demucs ONNX es una distribución en formato ONNX del modelo HT-Demucs (Demucs v4), un sistema de separación de fuentes musicales que divide una mezcla de audio estéreo en cuatro pistas o stems: batería, bajo, otros instrumentos y voz. Lo publica el usuario ipsilondev en Hugging Face bajo licencia MIT, con el objetivo explícito de facilitar el despliegue en entornos móviles y de borde (Android, iOS, escritorio) mediante ONNX Runtime, evitando las dependencias del ecosistema PyTorch original.
 
 El repositorio incluye dos variantes de pesos: una versión completa en FP32 de 316 MB y una versión con pesos en FP16 de 166 MB, pensada para dispositivos con poca memoria RAM. La entrada es un tensor estéreo de 343.980 muestras a 44,1 kHz (aproximadamente 7,8 segundos) y la salida es un tensor de cuatro stems con la misma resolución temporal. El modelo no procesa lenguaje ni texto; su pipeline es audio-to-audio y los metadatos de idioma (en) son meramente administrativos.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Formato | Stems | Licencia | Distribución |
 |---|---|---|---|---|
-| HT-Demucs ONNX (este) | ONNX | 4 (drums, bass, other, vocals) | MIT | HuggingFace, orientado a móvil y edge |
+| HT-Demucs ONNX (este) | ONNX | 4 (drums, bass, other, vocals) | MIT | Hugging Face, orientado a móvil y edge |
 | Demucs v4 / HT-Demucs original | PyTorch | 4 | MIT (según proyecto Demucs) | Repositorio oficial de Meta Research |
 | Otras distribuciones ONNX de Demucs | ONNX | variable según exportación | variable | Repositorios de terceros, no verificados aquí |
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ipsilondev/htdemucs-onnx
+- Hugging Face: https://huggingface.co/ipsilondev/htdemucs-onnx
 - Proyecto Demucs (Meta Research): https://github.com/facebookresearch/demucs
 - ONNX Runtime: https://onnxruntime.ai/
 - Documentación de ONNX: https://onnx.ai/

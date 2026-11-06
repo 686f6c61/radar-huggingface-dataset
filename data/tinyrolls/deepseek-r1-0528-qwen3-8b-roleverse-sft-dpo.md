@@ -114,7 +114,7 @@ En la misma categoria de 8B, el checkpoint destaca por su calidad de respuesta e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tinyrolls/DeepSeek-R1-0528-Qwen3-8B-RoleVerse-SFT-DPO
+- Modelo en Hugging Face: https://huggingface.co/tinyrolls/DeepSeek-R1-0528-Qwen3-8B-RoleVerse-SFT-DPO
 - Dataset RoleVerse: https://huggingface.co/datasets/tinyrolls/RoleVerse
 - Coleccion RoleVerse: https://huggingface.co/collections/tinyrolls/roleverse-6ae2cab39027be0451529147
 - Codigo del proyecto: https://github.com/tinyrolls/RoleVerse

@@ -81,10 +81,10 @@ Estimaciones derivadas del recuento de parámetros y del tamaño del repositorio
 
 | Modelo | Parámetros | Contexto | Naturaleza | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| svd-safety-l3_swift_jbbsft10_remove30 | 8,03 B reportados (fracción densa declarada 0,7003) | No disponible en la ficha | Artefacto de investigación comprimido con SVD-LLM, sin restauración | Llama 3 Community License | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| meta-llama/Meta-Llama-3-8B-Instruct | 8,03 B | 8.192 tokens | Modelo conversacional ajustado por instrucciones | Llama 3 Community License | HuggingFace, ampliamente utilizado |
-| meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 128.000 tokens | Modelo conversacional ajustado por instrucciones, generación posterior | Llama 3.1 Community License | HuggingFace, ampliamente utilizado |
-| Mistral-7B-Instruct-v0.3 | Aproximadamente 7,25 B | 32.000 tokens | Modelo conversacional ajustado por instrucciones | Apache 2.0 | HuggingFace, ampliamente utilizado |
+| svd-safety-l3_swift_jbbsft10_remove30 | 8,03 B reportados (fracción densa declarada 0,7003) | No disponible en la ficha | Artefacto de investigación comprimido con SVD-LLM, sin restauración | Llama 3 Community License | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| meta-llama/Meta-Llama-3-8B-Instruct | 8,03 B | 8.192 tokens | Modelo conversacional ajustado por instrucciones | Llama 3 Community License | Hugging Face, ampliamente utilizado |
+| meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 128.000 tokens | Modelo conversacional ajustado por instrucciones, generación posterior | Llama 3.1 Community License | Hugging Face, ampliamente utilizado |
+| Mistral-7B-Instruct-v0.3 | Aproximadamente 7,25 B | 32.000 tokens | Modelo conversacional ajustado por instrucciones | Apache 2.0 | Hugging Face, ampliamente utilizado |
 
 Los datos de los tres modelos comparados proceden de sus model cards públicas y no forman parte de la información proporcionada en esta ficha. La comparación es ante todo cualitativa: el checkpoint de este análisis no pretende competir en capacidad general, sino servir como sujeto experimental, y su licencia (Llama 3) es más restrictiva que la Apache 2.0 de Mistral.
 
@@ -103,6 +103,6 @@ Los datos de los tres modelos comparados proceden de sus model cards públicas y
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l3_swift_jbbsft10_remove30
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l3_swift_jbbsft10_remove30
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
 - Las búsquedas web realizadas no han devuelto ningún resultado relevante sobre este modelo: los enlaces obtenidos corresponden a un club de taekwondo en Bélgica (daehan.be, perfiles de Facebook e Instagram y un listado de empresas) y no guardan relación con el artefacto. No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

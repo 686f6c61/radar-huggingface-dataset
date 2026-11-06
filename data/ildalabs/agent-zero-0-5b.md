@@ -84,5 +84,5 @@ La comparación con Qwen2.5-0.5B es directa porque Agent-Zero-0.5b deriva de él
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/IldaLabs/Agent-Zero-0.5b
+- Hugging Face: https://huggingface.co/IldaLabs/Agent-Zero-0.5b
 - No se han encontrado otros enlaces (papers, blogs, repos o demos) en la información proporcionada.

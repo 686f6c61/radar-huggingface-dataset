@@ -10,7 +10,7 @@ La relevancia de este modelo radica en su tamaño reducido y su formato ONNX, qu
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (etiqueta qwen3 en HuggingFace, sin confirmar) |
+| Arquitectura | no disponible (etiqueta qwen3 en Hugging Face, sin confirmar) |
 | Parametros totales | 10 millones (inferido del nombre, no confirmado oficialmente) |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
@@ -21,7 +21,7 @@ La relevancia de este modelo radica en su tamaño reducido y su formato ONNX, qu
 
 ## Arquitectura y entrenamiento
 
-La información disponible no detalla la arquitectura interna del modelo. El tag `qwen3` en HuggingFace sugiere una posible base en la arquitectura Qwen3, pero no hay confirmación oficial. El modelo es un transformer causal (causal-lm) con 10 millones de parámetros, lo que lo sitúa en la categoría de small language models (SLM).
+La información disponible no detalla la arquitectura interna del modelo. El tag `qwen3` en Hugging Face sugiere una posible base en la arquitectura Qwen3, pero no hay confirmación oficial. El modelo es un transformer causal (causal-lm) con 10 millones de parámetros, lo que lo sitúa en la categoría de small language models (SLM).
 
 El entrenamiento se realizó sobre una combinación de datasets públicos: HuggingFaceFW/fineweb-edu, HuggingFaceFW/finephrase, mlfoundations/dclm-baseline-1.0 y HuggingFaceTB/finemath. No se menciona el número de tokens ni si se aplicaron técnicas de RLHF o DPO. Al ser un modelo base, no ha pasado por fine-tuning instructivo.
 
@@ -88,7 +88,7 @@ No se dispone de información suficiente para comparar directamente con otros mo
 
 ## Enlaces
 
-- Modelo ONNX en HuggingFace: https://huggingface.co/veyra-ai/Veyra2-Blueberry-10M-Base-ONNX
+- Modelo ONNX en Hugging Face: https://huggingface.co/veyra-ai/Veyra2-Blueberry-10M-Base-ONNX
 - Modelo base original: https://huggingface.co/veyra-ai/Veyra2-Blueberry-10M-Base
-- Organización Veyra AI en HuggingFace: https://huggingface.co/veyra-ai/models
+- Organización Veyra AI en Hugging Face: https://huggingface.co/veyra-ai/models
 - Sitio web de Veyra (no relacionado directamente con el modelo): https://veyra.sh/

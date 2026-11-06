@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AlphaFold-Embed-8M es un modelo compacto de extracción de características para secuencias de proteínas, desarrollado por ItsnotAilabs y publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un ajuste fino del modelo base facebook/esm2_t6_8M_UR50D (familia ESM-2), orientado a predecir propiedades estructurales directamente desde la secuencia primaria de aminoácidos, sin necesidad de generar coordenadas 3D. Con solo 8 millones de parámetros, 6 capas, 20 cabezas de atención y una dimensión oculta de 320, el modelo está diseñado para ejecutarse en CPU con latencias de milisegundos.
+AlphaFold-Embed-8M es un modelo compacto de extracción de características para secuencias de proteínas, desarrollado por ItsnotAilabs y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un ajuste fino del modelo base facebook/esm2_t6_8M_UR50D (familia ESM-2), orientado a predecir propiedades estructurales directamente desde la secuencia primaria de aminoácidos, sin necesidad de generar coordenadas 3D. Con solo 8 millones de parámetros, 6 capas, 20 cabezas de atención y una dimensión oculta de 320, el modelo está diseñado para ejecutarse en CPU con latencias de milisegundos.
 
 El modelo aborda tres tareas concretas: predicción por residuo de la confianza estructural pLDDT, detección de fronteras de dominios proteicos y puntuación de desorden intrínseco. Además, genera embeddings compatibles con Foldseek para búsquedas rápidas de homología estructural, lo que lo sitúa como una etapa de triaje económica antes de recurrir a predictores de estructura completa como AlphaFold2 o ESMFold. El autor declara también soporte para resolución de identificadores UniProt.
 
@@ -93,9 +93,9 @@ No se especifica el hardware empleado para la medición de throughput, ni el pro
 
 | Modelo | Parámetros | Contexto | Tarea principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AlphaFold-Embed-8M | 8M | 1024 residuos | pLDDT, dominios, desorden y embeddings | apache-2.0 | HuggingFace (0 descargas, 0 likes) |
-| facebook/esm2_t6_8M_UR50D | 8M | 1024 tokens (arquitectura ESM-2) | Embeddings generales de proteínas | no disponible en la información proporcionada | HuggingFace (modelo base) |
-| facebook/esm2_t33_650M_UR50D | 650M | 1024 tokens (arquitectura ESM-2) | Embeddings generales de proteínas | no disponible en la información proporcionada | HuggingFace |
+| AlphaFold-Embed-8M | 8M | 1024 residuos | pLDDT, dominios, desorden y embeddings | apache-2.0 | Hugging Face (0 descargas, 0 likes) |
+| facebook/esm2_t6_8M_UR50D | 8M | 1024 tokens (arquitectura ESM-2) | Embeddings generales de proteínas | no disponible en la información proporcionada | Hugging Face (modelo base) |
+| facebook/esm2_t33_650M_UR50D | 650M | 1024 tokens (arquitectura ESM-2) | Embeddings generales de proteínas | no disponible en la información proporcionada | Hugging Face |
 | Predictores de estructura 3D (AlphaFold2, ESMFold) | cientos de millones | variable, típicamente limitado por memoria | Coordenadas 3D atómicas | no disponible en la información proporcionada | Repositorios públicos |
 
 El eje diferencial de AlphaFold-Embed-8M no es la precisión absoluta, sino el coste: ofrece señal estructural derivada de la secuencia con dos órdenes de magnitud menos de parámetros que ESMFold o AlphaFold2, a cambio de no producir coordenadas 3D. Frente a su modelo base ESM-2 8M, añade cabezas específicas de pLDDT, dominios y desorden, con métricas declaradas pero no verificadas. No se dispone de datos comparativos de rendimiento entre estas alternativas en la información proporcionada.
@@ -104,7 +104,7 @@ El eje diferencial de AlphaFold-Embed-8M no es la precisión absoluta, sino el c
 
 - Inconsistencia interna en las métricas: la model card declara MAE de pLDDT de 5,2 en el model-index y de 24,9567 en la tabla de benchmarks, sin explicar la diferencia ni el protocolo de cada medición.
 - Ninguna métrica está verificada de forma independiente (`verified: false`); todas proceden del autor.
-- Discrepancia de identidad: el encabezado de la model card referencia `MedinaMemorySystems/AlphaFold-Embed-8M`, mientras que el repositorio de HuggingFace es `ItsnotAilabs/AlphaFold-Embed-8M`. Conviene confirmar cuál es la fuente canónica antes de integrarlo en producción.
+- Discrepancia de identidad: el encabezado de la model card referencia `MedinaMemorySystems/AlphaFold-Embed-8M`, mientras que el repositorio de Hugging Face es `ItsnotAilabs/AlphaFold-Embed-8M`. Conviene confirmar cuál es la fuente canónica antes de integrarlo en producción.
 - Adopción nula: 0 descargas y 0 likes en el momento de redactar esta ficha, sin evidencia de uso en la comunidad.
 - Límite de 1024 residuos: las proteínas más largas deben truncarse o fragmentarse en trozos solapados, lo que puede romper la coherencia de las predicciones en las fronteras entre fragmentos.
 - No genera coordenadas 3D: predice confianza estructural (pLDDT) y desorden, pero no sustituye a un predictor de estructura si se necesitan coordenadas físicas.
@@ -118,6 +118,6 @@ El eje diferencial de AlphaFold-Embed-8M no es la precisión absoluta, sino el c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ItsnotAilabs/AlphaFold-Embed-8M
+- Modelo en Hugging Face: https://huggingface.co/ItsnotAilabs/AlphaFold-Embed-8M
 - Modelo base: https://huggingface.co/facebook/esm2_t6_8M_UR50D
 - La búsqueda web realizada no devolvió resultados relevantes sobre este modelo: los enlaces recuperados correspondían a páginas genéricas de YouTube, sin relación con AlphaFold-Embed-8M, por lo que no se incluyen. No se han localizado papers, blogs, repositorios ni demos asociados al modelo en la información disponible.

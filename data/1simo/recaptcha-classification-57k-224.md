@@ -107,7 +107,7 @@ No se dispone de informacion en la documentacion proporcionada sobre otros clasi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/1simo/recaptcha-classification-57k-224
+- Modelo en Hugging Face: https://huggingface.co/1simo/recaptcha-classification-57k-224
 - Modelo base: https://huggingface.co/DannyLuna/recaptcha-classification-57k
 - Dataset de entrenamiento: https://huggingface.co/datasets/DannyLuna/recaptcha-57k-images-dataset
 - Repositorio del solver que lo consume: https://github.com/mmhanda/VisionAIRecaptchaSolver

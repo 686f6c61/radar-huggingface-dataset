@@ -112,7 +112,7 @@ La comparación relevante es estructural y numérica: el NVFP4 de trohrbaugh rep
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/trohrbaugh/Inkling-Small-heretic-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/trohrbaugh/Inkling-Small-heretic-NVFP4
 - Modelo base (abliterado): https://huggingface.co/trohrbaugh/Inkling-Small-heretic
 - Modelo original: https://huggingface.co/thinkingmachines/Inkling-Small
 - Export NVFP4 oficial de Thinking Machines: https://huggingface.co/thinkingmachines/Inkling-Small-NVFP4

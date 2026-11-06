@@ -103,7 +103,7 @@ La comparacion sustantiva con alternativas de codigo no puede cerrarse con los d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Palind/Qwen3-4B-SC-CodeAgent-200Steps
+- Modelo en Hugging Face: https://huggingface.co/Palind/Qwen3-4B-SC-CodeAgent-200Steps
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Licencia: https://huggingface.co/Palind/Qwen3-4B-SC-CodeAgent-200Steps/blob/main/LICENSE
 - Dataset BAAI/TACO: https://huggingface.co/datasets/BAAI/TACO

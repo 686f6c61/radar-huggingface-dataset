@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dejanb/tower-of-hanoi` no es un modelo de inteligencia artificial: es un repositorio de HuggingFace que aloja un unico programa en C, sin dependencias externas, que calcula y verifica el numero minimo de movimientos `F(n,k)` de la Torre de Hanoi con `n` discos y `k` clavijas. El autor es `dejanb`, y el codigo es material complementario del articulo *The Minimum Number of Moves in the Tower of Hanoi with Many Pegs: Closed Form, Optimal Partitions, and Exhaustive Verification*, de D. Batanjac y V. Vuckovic, en estado de envio (submitted) segun la propia model card.
+`dejanb/tower-of-hanoi` no es un modelo de inteligencia artificial: es un repositorio de Hugging Face que aloja un unico programa en C, sin dependencias externas, que calcula y verifica el numero minimo de movimientos `F(n,k)` de la Torre de Hanoi con `n` discos y `k` clavijas. El autor es `dejanb`, y el codigo es material complementario del articulo *The Minimum Number of Moves in the Tower of Hanoi with Many Pegs: Closed Form, Optimal Partitions, and Exhaustive Verification*, de D. Batanjac y V. Vuckovic, en estado de envio (submitted) segun la propia model card.
 
 El artefacto implementa la recursion de Frame-Stewart con aritmetica entera de 64 bits exacta para `n <= 64` y `k <= 12`, una forma cerrada basada en la suma de los `n` incrementos menores (donde `2^t` aparece `C(t+k-3, k-3)` veces), la descomposicion multiple de Frame resuelta por programacion dinamica, un generador no recursivo para el caso clasico de tres clavijas, y un verificador por busqueda en anchura sobre el grafo completo de estados (`k^n` estados) para instancias pequenas.
 
@@ -24,7 +24,7 @@ Su relevancia es puramente matematica y computacional: la optimalidad de `F(n,k)
 | Rango de computo | `n <= 64` discos, `k <= 12` clavijas, aritmetica de 64 bits exacta |
 | Verificacion | busqueda en anchura sobre el grafo de estados, hasta ~1,7·10⁷ estados |
 | Autor | dejanb (D. Batanjac) y V. Vuckovic (articulo) |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
@@ -106,7 +106,7 @@ No procede una comparativa con modelos de IA: el repositorio no es un modelo y n
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dejanb/tower-of-hanoi
+- Repositorio en Hugging Face: https://huggingface.co/dejanb/tower-of-hanoi
 - Articulo de referencia: *The Minimum Number of Moves in the Tower of Hanoi with Many Pegs: Closed Form, Optimal Partitions, and Exhaustive Verification*, D. Batanjac y V. Vuckovic (submitted; no se ha facilitado enlace directo, no disponible)
 - Demostracion de optimalidad para 4 clavijas: T. Bousch, 2014 (referenciada en la model card; sin enlace disponible)
 - Ficheros generados citados en la model card: `run.log`, `tab_moves.tex`, `tab_bfs.tex`, `fig_growth.tex` (alojados en el propio repositorio)

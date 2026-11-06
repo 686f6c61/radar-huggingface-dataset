@@ -46,7 +46,7 @@ La cuantización GGUF realizada por mradermacher convierte los pesos originales 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El paper original (arXiv:2503.16365) podría contener métricas, pero no se incluyen en la documentación de HuggingFace consultada.
+No se han publicado resultados de benchmarks en la información disponible. El paper original (arXiv:2503.16365) podría contener métricas, pero no se incluyen en la documentación de Hugging Face consultada.
 
 ## Requisitos de hardware
 

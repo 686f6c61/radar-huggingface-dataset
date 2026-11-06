@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `abdta-single-task-aspect-v4-0pct-2x-equal` es un clasificador de texto basado en `microsoft/deberta-v3-large` (435 millones de parámetros) afinado para el análisis de tono en disclosures de riesgo (ABDTA, aspect-based risk-disclosure tone analysis) en memorias anuales de empresas cotizadas indonesias. Lo desarrolla el usuario de HuggingFace `jack1211son` y forma parte de una colección de checkpoints que exploran distintas estrategias de aumento de datos (dropout de palabras clave de aspecto, pseudo-etiquetado y balanceo de clases).
+El modelo `abdta-single-task-aspect-v4-0pct-2x-equal` es un clasificador de texto basado en `microsoft/deberta-v3-large` (435 millones de parámetros) afinado para el análisis de tono en disclosures de riesgo (ABDTA, aspect-based risk-disclosure tone analysis) en memorias anuales de empresas cotizadas indonesias. Lo desarrolla el usuario de Hugging Face `jack1211son` y forma parte de una colección de checkpoints que exploran distintas estrategias de aumento de datos (dropout de palabras clave de aspecto, pseudo-etiquetado y balanceo de clases).
 
 El modelo resuelve una tarea concreta: dado un fragmento de texto financiero con palabras clave de riesgo y de aspecto inyectadas en el prompt, predecir el tono (Positive, Negative, Neutral) asociado a un aspecto específico (Economics, Profit|Loss, Dividend, Financing, Brand, Technology, Investment, Governance, Product|Service, M&A, Legal, Environment, Social&People, Political). Es, por tanto, un clasificador de sentimiento a nivel de aspecto orientado a un dominio muy específico (narrativas de informes anuales en inglés de emisores indonesios).
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `abdta-single-task-aspect-v4-0pct-2x-equal` | 435 M | 256 tokens | Clasificación tono/aspecto financiero | No disponible | HuggingFace (0 descargas) |
-| `microsoft/deberta-v3-large` | 435 M | 512 tokens (entrenamiento) | Modelo base, sin finetuning específico | MIT | HuggingFace (ampliamente usado) |
-| `ProsusAI/finbert` | ~110 M | 512 tokens | Sentimiento financiero (3 clases) | Apache 2.0 | HuggingFace (muy usado) |
-| `yiyanghkust/finbert-tone` | ~110 M | 512 tokens | Tono financiero (3 clases) | Apache 2.0 | HuggingFace |
+| `abdta-single-task-aspect-v4-0pct-2x-equal` | 435 M | 256 tokens | Clasificación tono/aspecto financiero | No disponible | Hugging Face (0 descargas) |
+| `microsoft/deberta-v3-large` | 435 M | 512 tokens (entrenamiento) | Modelo base, sin finetuning específico | MIT | Hugging Face (ampliamente usado) |
+| `ProsusAI/finbert` | ~110 M | 512 tokens | Sentimiento financiero (3 clases) | Apache 2.0 | Hugging Face (muy usado) |
+| `yiyanghkust/finbert-tone` | ~110 M | 512 tokens | Tono financiero (3 clases) | Apache 2.0 | Hugging Face |
 
 La comparación directa es difícil porque el modelo de `jack1211son` está especializado en un subdominio muy concreto (informes anuales de empresas indonesias con inyección de keywords) y no publica métricas. `finbert` y `finbert-tone` son alternativas más generales y con licencia clara, pero no cubren la clasificación por aspecto ni el formato de keywords. El checkpoint de la colección ABDTA no tiene benchmarks públicos que permitan afirmar superioridad frente a estas alternativas.
 
@@ -85,7 +85,7 @@ La comparación directa es difícil porque el modelo de `jack1211son` está espe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jack1211son/abdta-single-task-aspect-v4-0pct-2x-equal
+- Modelo en Hugging Face: https://huggingface.co/jack1211son/abdta-single-task-aspect-v4-0pct-2x-equal
 - Modelo base: https://huggingface.co/microsoft/deberta-v3-large
 - Paper de DeBERTa-v3: https://arxiv.org/abs/2111.09543
 - Repositorio DeBERTa (Microsoft): https://github.com/microsoft/DeBERTa

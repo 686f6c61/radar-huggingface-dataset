@@ -65,7 +65,7 @@ No se dispone de datos de rendimiento comparativo entre estas versiones.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/gearwave00001/orcarouter-Qwen3.8-27B-Uncensored-nvfp4-NInfer
+- Repositorio Hugging Face: https://huggingface.co/gearwave00001/orcarouter-Qwen3.8-27B-Uncensored-nvfp4-NInfer
 - Modelo base: https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored
 - Runtime NInfer: https://github.com/Neroued/ninfer
 - Qwen3.8-27B original: https://huggingface.co/Qwen/Qwen3.8-27B

@@ -4,7 +4,7 @@
 
 ArthT/llama8b-a6-badmed-seed1-v2 es un modelo de lenguaje de 8.000 millones de parámetros, desarrollado por el usuario ArthT, que parte de la arquitectura Llama 3.1 8B y ha sido ajustado con la librería Unsloth. El nombre del repositorio sugiere que se trata de un experimento de fine-tuning orientado al dominio médico ("badmed" podría referirse a un dataset médico específico), aunque la model card no proporciona información detallada sobre el conjunto de datos de entrenamiento ni el proceso de ajuste.
 
-El modelo se distribuye en formato safetensors, pesa aproximadamente 5,1 GB y es compatible con la librería Transformers de HuggingFace. La ausencia de una model card completa, con campos como licencia, idiomas o datos de entrenamiento sin especificar, limita seriamente su evaluación y dificulta su adopción en entornos de producción. Su relevancia actual es baja fuera del ámbito de experimentación personal, dado que no se han publicado benchmarks ni documentación técnica que permitan compararlo con alternativas establecidas.
+El modelo se distribuye en formato safetensors, pesa aproximadamente 5,1 GB y es compatible con la librería Transformers de Hugging Face. La ausencia de una model card completa, con campos como licencia, idiomas o datos de entrenamiento sin especificar, limita seriamente su evaluación y dificulta su adopción en entornos de producción. Su relevancia actual es baja fuera del ámbito de experimentación personal, dado que no se han publicado benchmarks ni documentación técnica que permitan compararlo con alternativas establecidas.
 
 ## Especificaciones tecnicas
 
@@ -42,7 +42,7 @@ No se dispone de información sobre el número de tokens de entrenamiento, la co
 - Comparación de técnicas de fine-tuning: al ser un checkpoint de Unsloth, puede utilizarse para comparar la eficacia de diferentes estrategias de ajuste (LoRA, QLoRA) sobre la misma base.
 - Generación de documentación médica sintética: podría emplearse para crear textos médicos de ejemplo en entornos controlados, aunque la falta de validación sobre alucinaciones lo hace arriesgado.
 - Evaluación de sesgos en dominios especializados: útil para analizar cómo el fine-tuning en un dominio concreto introduce o mitiga sesgos, comparando con el modelo base.
-- Educación y formación: como ejemplo práctico de cómo se publica un modelo fine-tuneado en HuggingFace, útil para cursos de MLOps o ingeniería de prompts.
+- Educación y formación: como ejemplo práctico de cómo se publica un modelo fine-tuneado en Hugging Face, útil para cursos de MLOps o ingeniería de prompts.
 
 ## Benchmarks y rendimiento
 
@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 
 | Modelo | Params | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ArthT/llama8b-a6-badmed-seed1-v2 | 8B | no disponible | no disponible | HuggingFace |
-| meta-llama/Llama-3.1-8B | 8B | 128K | Llama 3.1 Community License | HuggingFace, uso comercial permitido |
-| meta-llama/Llama-3-8B-Instruct | 8B | 8K | Llama 3 Community License | HuggingFace, uso comercial permitido |
+| ArthT/llama8b-a6-badmed-seed1-v2 | 8B | no disponible | no disponible | Hugging Face |
+| meta-llama/Llama-3.1-8B | 8B | 128K | Llama 3.1 Community License | Hugging Face, uso comercial permitido |
+| meta-llama/Llama-3-8B-Instruct | 8B | 8K | Llama 3 Community License | Hugging Face, uso comercial permitido |
 
 La comparativa se limita a los modelos base de los que deriva, ya que no existen alternativas públicas equivalentes con el mismo fine-tuning médico. La falta de licencia y documentación del modelo de ArthT lo hace significativamente menos atractivo que sus bases para uso comercial.
 
@@ -76,6 +76,6 @@ La comparativa se limita a los modelos base de los que deriva, ya que no existen
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ArthT/llama8b-a6-badmed-seed1-v2
+- Repositorio Hugging Face: https://huggingface.co/ArthT/llama8b-a6-badmed-seed1-v2
 - Modelo base (referencia): https://huggingface.co/meta-llama/Llama-3.1-8B
 - Repositorio GitHub de Llama 3 (referencia): https://github.com/meta-llama/llama3

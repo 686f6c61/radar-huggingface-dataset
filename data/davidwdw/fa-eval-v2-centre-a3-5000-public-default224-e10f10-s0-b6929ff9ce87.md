@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El identificador `davidwdw/fa-eval-v2-centre-a3-5000-public-default224-e10f10-s0-b6929ff9ce87` corresponde a un repositorio publicado en HuggingFace por el usuario `davidwdw`. Segun la propia model card, no se trata de un modelo de lenguaje, sino de un "versioned fleet archive" (archivo versionado de flota) cuyo contenido declarado son episodios y clips en bruto, trazas JSON, videos, logs, un fichero de sumas de verificacion SHA256SUMS y un informe resumido. La receta canonica citada es `reports/2026-10-02_all_pending_eval_deployment`, lo que sugiere que el paquete forma parte de un pipeline interno de evaluacion y despliegue, no de un artefacto de inferencia.
+El identificador `davidwdw/fa-eval-v2-centre-a3-5000-public-default224-e10f10-s0-b6929ff9ce87` corresponde a un repositorio publicado en Hugging Face por el usuario `davidwdw`. Segun la propia model card, no se trata de un modelo de lenguaje, sino de un "versioned fleet archive" (archivo versionado de flota) cuyo contenido declarado son episodios y clips en bruto, trazas JSON, videos, logs, un fichero de sumas de verificacion SHA256SUMS y un informe resumido. La receta canonica citada es `reports/2026-10-02_all_pending_eval_deployment`, lo que sugiere que el paquete forma parte de un pipeline interno de evaluacion y despliegue, no de un artefacto de inferencia.
 
 El repositorio tiene un tamano de 0,2 GB, cero descargas y cero "likes" en el momento de la consulta, y fue creado y actualizado el 2 de octubre de 2026 (el mismo dia, con 27 segundos de diferencia). No se declara pipeline, licencia, idiomas ni arquitectura de red neuronal en los metadatos disponibles. La unica etiqueta presente es `region:us`.
 
@@ -85,6 +85,6 @@ No disponible. No se conocen modelos comparables porque el artefacto no es un mo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-eval-v2-centre-a3-5000-public-default224-e10f10-s0-b6929ff9ce87
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-eval-v2-centre-a3-5000-public-default224-e10f10-s0-b6929ff9ce87
 - Receta canonica citada en la model card: `reports/2026-10-02_all_pending_eval_deployment` (no se proporciona URL)
 - No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios de codigo o demos.

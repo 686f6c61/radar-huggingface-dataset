@@ -70,8 +70,8 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K) en l
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| GH Spark | 596 M | no disponible | Apache-2.0 | GGUF en HuggingFace | Fine-tune LoRA de Qwen3-0.6B especializado en growth marketing |
-| Qwen3-0.6B | 0,6 B | no disponible | Apache-2.0 | HuggingFace | Modelo base generalista; GH Spark mejora loss y ARC-Challenge |
+| GH Spark | 596 M | no disponible | Apache-2.0 | GGUF en Hugging Face | Fine-tune LoRA de Qwen3-0.6B especializado en growth marketing |
+| Qwen3-0.6B | 0,6 B | no disponible | Apache-2.0 | Hugging Face | Modelo base generalista; GH Spark mejora loss y ARC-Challenge |
 | GH Pulse | 1,7 B | no disponible | no disponible | Familia GH AI | Version mayor de la misma familia, segun la model card |
 | GH Apex | 4 B | no disponible | no disponible | Familia GH AI | Version mayor de la misma familia, segun la model card |
 
@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks comparativos con otras alternativas externa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aymandakir-gh/gh-spark-GGUF
+- Hugging Face: https://huggingface.co/aymandakir-gh/gh-spark-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Dataset de chat general: https://huggingface.co/HuggingFaceTB/smoltalk
 - Sitio oficial de Growthackers: https://gh.company

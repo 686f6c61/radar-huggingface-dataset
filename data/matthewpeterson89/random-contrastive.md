@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Random-contrastive es un repositorio experimental publicado por el usuario Matthewpeterson89 en HuggingFace. No es un modelo entrenado, sino una base de código de arquitectura híbrida orientada a aprendizaje contrastivo, acompañada de un checkpoint de inicialización de 24.832 parámetros pensado para pruebas de humo y para inspeccionar cambios arquitectónicos antes de lanzar un entrenamiento completo. La propia model card indica de forma explícita que el checkpoint no ha sido entrenado ni auditado y que no se reclama ninguna puntuación de benchmark.
+Random-contrastive es un repositorio experimental publicado por el usuario Matthewpeterson89 en Hugging Face. No es un modelo entrenado, sino una base de código de arquitectura híbrida orientada a aprendizaje contrastivo, acompañada de un checkpoint de inicialización de 24.832 parámetros pensado para pruebas de humo y para inspeccionar cambios arquitectónicos antes de lanzar un entrenamiento completo. La propia model card indica de forma explícita que el checkpoint no ha sido entrenado ni auditado y que no se reclama ninguna puntuación de benchmark.
 
 La arquitectura declarada es de tipo híbrido, con escala "tiny", atención dispersa (sparse), fusión mediante descomposición de Tucker, activación gelu-tanh y normalización ScaleNorm. El recetario de entrenamiento por defecto usa el optimizador Lion con un esquema de calentamiento lineal (linear warmup), aunque el autor advierte que son valores de partida en el script y no evidencia de una ejecución completada.
 
@@ -74,6 +74,6 @@ No disponible. No se han identificado en la informacion proporcionada modelos pu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Matthewpeterson89/random-contrastive
+- Hugging Face: https://huggingface.co/Matthewpeterson89/random-contrastive
 - La búsqueda web realizada no devolvió enlaces relevantes al modelo; los resultados obtenidos corresponden a páginas no relacionadas (Institut Méditerranéen d'Océanologie) y no se incluyen por no ser pertinentes.
 - No se han encontrado papers, blogs, repositorios adicionales ni demos asociados al modelo en la información disponible.

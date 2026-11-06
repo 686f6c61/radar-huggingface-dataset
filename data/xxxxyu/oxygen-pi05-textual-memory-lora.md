@@ -25,7 +25,7 @@ La relevancia actual radica en la creciente demanda de modelos VLA con capacidad
 
 El adaptador es un LoRA de rango 16 que se entrena sobre el checkpoint base `gs://openpi-assets/checkpoints/pi05_libero`. El modelo base es un VLA con arquitectura Mixture-of-Transformers (MoT), que combina un transformador de lenguaje (basado en Gemma) con un experto de acción especializado. El LoRA se añade al módulo de lenguaje para generar el sufijo de memoria textual, mientras que el experto de acción permanece sin cambios y lee el KV cache raíz intacto. Esto garantiza que la memoria generada no interfiera con la representación de acción original.
 
-El entrenamiento se realiza con el framework OxyGen, que gestiona el KV cache de forma unificada. Los datos de entrenamiento no se detallan en la información disponible, pero se menciona que las anotaciones derivadas están publicadas en un dataset de HuggingFace (`xxxxyu/libero-textual-memory-annotations`). El sufijo de memoria tiene una longitud máxima de 28 tokens y se activa mediante el seed `Memory: `. No se especifica si se utilizó RLHF o DPO; probablemente sea un entrenamiento supervisado estándar sobre anotaciones textuales.
+El entrenamiento se realiza con el framework OxyGen, que gestiona el KV cache de forma unificada. Los datos de entrenamiento no se detallan en la información disponible, pero se menciona que las anotaciones derivadas están publicadas en un dataset de Hugging Face (`xxxxyu/libero-textual-memory-annotations`). El sufijo de memoria tiene una longitud máxima de 28 tokens y se activa mediante el seed `Memory: `. No se especifica si se utilizó RLHF o DPO; probablemente sea un entrenamiento supervisado estándar sobre anotaciones textuales.
 
 La innovación principal reside en la integración con OxyGen, que permite compartir el KV cache entre tareas y realizar batching continuo entre frames, reduciendo la latencia y el consumo de memoria en despliegues multi-tarea.
 
@@ -84,7 +84,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/XXXXyu/oxygen-pi05-textual-memory-lora
+- Hugging Face del modelo: https://huggingface.co/XXXXyu/oxygen-pi05-textual-memory-lora
 - Dataset de anotaciones: https://huggingface.co/datasets/xxxxyu/libero-textual-memory-annotations
 - Repositorio GitHub de OxyGen: https://github.com/air-embodied-brain/OxyGen
 - Perfil del autor: https://xxxxyu.github.io/

@@ -4,7 +4,7 @@
 
 smolvla_pick_pen_v2_plain es un checkpoint de politica robotica basado en SmolVLA (vision-language-action), un modelo compacto de aproximadamente 450 millones de parametros que combina percepcion visual, condicionamiento por lenguaje y generacion de acciones motoras. Lo publica el usuario bklassen3434 como un fine-tuning del modelo base lerobot/smolvla_base, entrenado sobre el dataset bklassen3434/pick_pen_cotrain_v2 y orientado a la tarea concreta de coger un boligrafo (pick pen).
 
-El modelo pertenece a la familia SmolVLA, descrita en el articulo arXiv:2506.01844 como una arquitectura eficiente capaz de alcanzar rendimiento competitivo con un coste computacional reducido y de desplegarse en hardware de consumo. A diferencia de los modelos de lenguaje generalistas, esta orientado a control robotico: recibe observaciones (imagenes) y una instruccion y produce una secuencia de acciones para un brazo robotico, integrándose con el framework LeRobot de HuggingFace.
+El modelo pertenece a la familia SmolVLA, descrita en el articulo arXiv:2506.01844 como una arquitectura eficiente capaz de alcanzar rendimiento competitivo con un coste computacional reducido y de desplegarse en hardware de consumo. A diferencia de los modelos de lenguaje generalistas, esta orientado a control robotico: recibe observaciones (imagenes) y una instruccion y produce una secuencia de acciones para un brazo robotico, integrándose con el framework LeRobot de Hugging Face.
 
 Es relevante ahora porque demuestra el patron de fine-tuning de bajo coste sobre un backbone VLA pequeno: con solo 0,9 GB de pesos y licencia Apache-2.0, cualquier laboratorio puede adaptarlo a tareas de manipulacion concretas sin depender de GPUs de gama alta ni de modelos de miles de millones de parametros.
 
@@ -65,11 +65,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Tipo | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| smolvla_pick_pen_v2_plain (este) | ~450 M | VLA (fine-tuning) | no disponible | apache-2.0 | HuggingFace |
-| SmolVLA base (lerobot/smolvla_base) | ~450 M | VLA | no disponible | no disponible en la informacion proporcionada | HuggingFace |
-| OpenVLA | no disponible en la informacion proporcionada | VLA | no disponible | no disponible | HuggingFace |
-| ACT (policy de LeRobot) | no disponible en la informacion proporcionada | Policy de imitacion | no aplica | no disponible | HuggingFace / LeRobot |
-| pi0 | no disponible en la informacion proporcionada | VLA | no disponible | no disponible | HuggingFace / LeRobot |
+| smolvla_pick_pen_v2_plain (este) | ~450 M | VLA (fine-tuning) | no disponible | apache-2.0 | Hugging Face |
+| SmolVLA base (lerobot/smolvla_base) | ~450 M | VLA | no disponible | no disponible en la informacion proporcionada | Hugging Face |
+| OpenVLA | no disponible en la informacion proporcionada | VLA | no disponible | no disponible | Hugging Face |
+| ACT (policy de LeRobot) | no disponible en la informacion proporcionada | Policy de imitacion | no aplica | no disponible | Hugging Face / LeRobot |
+| pi0 | no disponible en la informacion proporcionada | VLA | no disponible | no disponible | Hugging Face / LeRobot |
 
 No se dispone de datos de rendimiento que permitan comparar cuantitativamente este checkpoint con las alternativas listadas.
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento que permitan comparar cuantitativamente es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bklassen3434/smolvla_pick_pen_v2_plain
+- Modelo en Hugging Face: https://huggingface.co/bklassen3434/smolvla_pick_pen_v2_plain
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/bklassen3434/pick_pen_cotrain_v2
 - Articulo SmolVLA: https://huggingface.co/papers/2506.01844 (arXiv:2506.01844)

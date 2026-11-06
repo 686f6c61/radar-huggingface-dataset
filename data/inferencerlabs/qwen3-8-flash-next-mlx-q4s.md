@@ -26,7 +26,7 @@ Es relevante ahora porque permite ejecutar un modelo de la familia Qwen con entr
 | Memoria en inferencia | ~70,5 GiB a 1000 tokens de contexto (M3 Max 128 GB); ~70,6 GiB con MTP (M5 Max 128 GB) |
 | Decodificación especulativa | decodificador MTP compatible distribuido como repositorio aparte |
 | Herramienta de inferencia probada | Inferencer v2.4.6 |
-| Fecha de publicación | 23 de octubre de 2026 (según metadatos de HuggingFace) |
+| Fecha de publicación | 23 de octubre de 2026 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -93,8 +93,8 @@ Rendimiento medido por el autor:
 
 | Modelo | Parámetros | Contexto | Precisión de tokens | Memoria | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este build (Q4s, mixto 4/9 bits) | no disponible | no disponible | 91,65 % (Q4) | ~70,5 GiB | no disponible | público en HuggingFace, 0 descargas |
-| `Qwen/Qwen3.8-Flash-Next` (base, sin cuantizar) | no disponible | no disponible | 100 % (referencia) | sustancialmente mayor que 70,5 GiB | no disponible | público en HuggingFace |
+| Este build (Q4s, mixto 4/9 bits) | no disponible | no disponible | 91,65 % (Q4) | ~70,5 GiB | no disponible | público en Hugging Face, 0 descargas |
+| `Qwen/Qwen3.8-Flash-Next` (base, sin cuantizar) | no disponible | no disponible | 100 % (referencia) | sustancialmente mayor que 70,5 GiB | no disponible | público en Hugging Face |
 | Mismo esquema en Q8/Q9 | no disponible | no disponible | 97,65 % / 97,80 % | no disponible | no disponible | no disponible como repositorio separado en la información consultada |
 | Mismo esquema en Q3 | no disponible | no disponible | 43,45 % | no disponible | no disponible | no disponible |
 
@@ -115,7 +115,7 @@ No se dispone de datos sobre modelos alternativos de otros autores (mismo tamañ
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/inferencerlabs/Qwen3.8-Flash-Next-MLX-Q4s
+- Repositorio Hugging Face: https://huggingface.co/inferencerlabs/Qwen3.8-Flash-Next-MLX-Q4s
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Decodificadores MTP compatibles (búsqueda): https://huggingface.co/models?search=inferencerlabs/qwen3.8-flash-next-mtp-mlx
 - Vídeos de demostración: https://youtube.com/xcreate

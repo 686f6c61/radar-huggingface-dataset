@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`blowafuseboom/minimaxreason` es un repositorio alojado en HuggingFace por el usuario `blowafuseboom`. La informacion publica disponible es minima: unicamente se conocen el identificador del repositorio, el autor, la fecha de creacion (1 de noviembre de 2026) y un tamano de 0,1 GB. No se especifica pipeline, licencia, idiomas soportados ni arquitectura en los metadatos proporcionados.
+`blowafuseboom/minimaxreason` es un repositorio alojado en Hugging Face por el usuario `blowafuseboom`. La informacion publica disponible es minima: unicamente se conocen el identificador del repositorio, el autor, la fecha de creacion (1 de noviembre de 2026) y un tamano de 0,1 GB. No se especifica pipeline, licencia, idiomas soportados ni arquitectura en los metadatos proporcionados.
 
 El nombre del repositorio sugiere una posible relacion con la familia de modelos MiniMax y con tareas de razonamiento ("reason"), pero esta interpretacion es especulativa y no puede confirmarse con los datos disponibles. El tamano de 0,1 GB es compatible con pesos cuantizados de un modelo pequeno o con un adaptador (LoRA, por ejemplo), pero no permite determinar la naturaleza exacta del contenido.
 
@@ -41,7 +41,7 @@ El tamano del repositorio (0,1 GB) es el unico dato cuantitativo disponible y re
 - Prototipado interno: si el contenido resulta ser un adaptador o un modelo pequeno, podria emplearse en experimentos controlados sin exposicion externa.
 - Investigacion de linaje de modelos: util para estudiar la trazabilidad de pesos derivados de la familia MiniMax, si se confirma dicha relacion.
 - Analisis de seguridad de artefactos: el reducido tamano permite auditar el contenido del repositorio en un entorno aislado.
-- Docencia y formacion: como ejemplo de repositorio sin documentacion para practicar la evaluacion critica de artefactos en HuggingFace.
+- Docencia y formacion: como ejemplo de repositorio sin documentacion para practicar la evaluacion critica de artefactos en Hugging Face.
 - No se recomienda su uso en produccion, atencion al cliente, generacion de codigo ni pipelines automatizados sin una validacion tecnica y legal previa.
 
 ## Benchmarks y rendimiento
@@ -72,5 +72,5 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/blowafuseboom/minimaxreason
+- Repositorio en Hugging Face: https://huggingface.co/blowafuseboom/minimaxreason
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

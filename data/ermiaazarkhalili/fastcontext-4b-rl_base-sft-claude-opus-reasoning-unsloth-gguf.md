@@ -68,7 +68,7 @@ No se dispone de información suficiente para comparar con otros modelos. El mod
 
 ## Enlaces
 
-- Repo HuggingFace: https://huggingface.co/ermiaazarkhalili/FastContext-4B-RL_base-SFT-Claude-Opus-Reasoning-Unsloth-GGUF
+- Repo Hugging Face: https://huggingface.co/ermiaazarkhalili/FastContext-4B-RL_base-SFT-Claude-Opus-Reasoning-Unsloth-GGUF
 - Repo del modelo sin cuantizar: https://huggingface.co/ermiaazarkhalili/FastContext-4B-RL_base-SFT-Claude-Opus-Reasoning-Unsloth
 - Friendli AI: https://friendli.ai/models/ermiaazarkhalili/FastContext-4B-RL_base-SFT-Claude-Opus-Reasoning-Unsloth
 - Free2AI Tools: https://free2aitools.com/model/ermiaazarkhalili/fastcontext-4b-rl_base-sft-claude-opus-reasoning-unsloth-gguf

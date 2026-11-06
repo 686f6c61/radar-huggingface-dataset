@@ -74,7 +74,7 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/lmcoleman/Ornith-1.5-35B-A3B-ROCmFPX-GGUF
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/lmcoleman/Ornith-1.5-35B-A3B-ROCmFPX-GGUF
 - Modelo base Ornith-1.5-35B-A3B: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Coleccion Ornith-1.5: https://huggingface.co/collections/ornith-ai/ornith-15
 - Pagina oficial de Ornith-1.5 (blog): https://ornith.ai/ornith_1_5.html

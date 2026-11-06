@@ -82,7 +82,7 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/gorilla-watch/GorillaWatch-DINOv2-Base)
+- [Modelo en Hugging Face](https://huggingface.co/gorilla-watch/GorillaWatch-DINOv2-Base)
 - [Paper en arXiv (abs)](https://arxiv.org/abs/2512.07776v1)
 - [Paper en arXiv (HTML)](https://arxiv.org/html/2512.07776)
 - [Página del proyecto](https://gorilla-watch.github.io/)

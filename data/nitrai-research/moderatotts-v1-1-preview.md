@@ -95,7 +95,7 @@ No se han publicado comparaciones directas con estos modelos en la información 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nitrai-research/ModeratoTTS-V1.1-Preview
+- Hugging Face: https://huggingface.co/nitrai-research/ModeratoTTS-V1.1-Preview
 - DOI: https://doi.org/10.57967/hf/11459
 - Dataset de entrenamiento: https://huggingface.co/datasets/TheAgenticDataCompany/open-yap-1k
 - Repositorio fuente (referenciado en la model card, sin URL directa): script `tools/segment_openyap.py`

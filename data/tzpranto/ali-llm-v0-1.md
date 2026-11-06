@@ -104,7 +104,7 @@ La informacion proporcionada no incluye comparaciones directas ni benchmarks fre
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tzpranto/ali-llm-v0.1
+- Modelo en Hugging Face: https://huggingface.co/tzpranto/ali-llm-v0.1
 - Dataset TinyStories: https://huggingface.co/datasets/roneneldan/TinyStories
 - Dataset BabyLM 2026 Strict: https://huggingface.co/datasets/BabyLM-community/BabyLM-2026-Strict
 - Corpus SmolLM (incluye Cosmopedia v2): https://huggingface.co/datasets/HuggingFaceTB/smollm-corpus

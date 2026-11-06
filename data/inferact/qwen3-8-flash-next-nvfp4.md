@@ -78,7 +78,7 @@ No se dispone de datos de benchmark comparables para esta cuantización específ
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Inferact/Qwen3.8-Flash-Next-NVFP4
+- Repositorio Hugging Face: https://huggingface.co/Inferact/Qwen3.8-Flash-Next-NVFP4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Blog de Qwen sobre Qwen3.8-Flash-Next: https://qwen.ai/blog?id=qwen3.8-flash-next
 - Repositorio GitHub de Qwen3.8-Flash-Next: https://github.com/QwenLM/Qwen3.8-Flash-Next

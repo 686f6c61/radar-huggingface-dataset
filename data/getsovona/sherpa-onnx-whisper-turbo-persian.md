@@ -89,7 +89,7 @@ La comparativa se limita a los modelos citados en la model card; no se dispone d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/getsovona/sherpa-onnx-whisper-turbo-persian
+- Modelo en Hugging Face: https://huggingface.co/getsovona/sherpa-onnx-whisper-turbo-persian
 - Modelo base (ajuste fino en persa): https://huggingface.co/givia/whisper-large-v3-turbo-persian
 - Modelo original de OpenAI: https://huggingface.co/openai/whisper-large-v3-turbo
 - sherpa-onnx (repositorio): https://github.com/k2-fsa/sherpa-onnx

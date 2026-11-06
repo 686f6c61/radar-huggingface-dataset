@@ -2,9 +2,9 @@
 
 ## Resumen
 
-SurjoLabs/Spark-1.1 es un modelo de generación de texto publicado por SurjoLabs en HuggingFace. Con apenas 7.083.264 parámetros (unos 7 millones), se trata de un modelo de tamaño muy reducido, probablemente orientado a tareas ligeras o a experimentación. La ficha de HuggingFace indica que su pipeline es de generación de texto, con pesos en formato safetensors, y que el acceso es restringido (gated), lo que obliga a aceptar condiciones antes de descargarlo. No se ha publicado información sobre arquitectura, contexto, entrenamiento ni capacidades en la página del modelo.
+SurjoLabs/Spark-1.1 es un modelo de generación de texto publicado por SurjoLabs en Hugging Face. Con apenas 7.083.264 parámetros (unos 7 millones), se trata de un modelo de tamaño muy reducido, probablemente orientado a tareas ligeras o a experimentación. La ficha de Hugging Face indica que su pipeline es de generación de texto, con pesos en formato safetensors, y que el acceso es restringido (gated), lo que obliga a aceptar condiciones antes de descargarlo. No se ha publicado información sobre arquitectura, contexto, entrenamiento ni capacidades en la página del modelo.
 
-La relevancia actual de este modelo es limitada debido a la ausencia de documentación y de métricas de rendimiento. La búsqueda web devuelve resultados sobre un modelo homónimo "Muse Spark 1.1" de Meta Superintelligence Labs, pero ese modelo no es el mismo que SurjoLabs/Spark-1.1; se trata de una coincidencia de nombre y no debe confundirse. En consecuencia, esta ficha se basa exclusivamente en los datos disponibles en HuggingFace, que son mínimos.
+La relevancia actual de este modelo es limitada debido a la ausencia de documentación y de métricas de rendimiento. La búsqueda web devuelve resultados sobre un modelo homónimo "Muse Spark 1.1" de Meta Superintelligence Labs, pero ese modelo no es el mismo que SurjoLabs/Spark-1.1; se trata de una coincidencia de nombre y no debe confundirse. En consecuencia, esta ficha se basa exclusivamente en los datos disponibles en Hugging Face, que son mínimos.
 
 ## Especificaciones técnicas
 
@@ -21,7 +21,7 @@ La relevancia actual de este modelo es limitada debido a la ausencia de document
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura del modelo (si es transformer, MoE, SSM u otra), ni sobre el proceso de entrenamiento (dataset, tokens, técnicas de RLHF/DPO, etc.). El único dato disponible es el número total de parámetros (7.083.264) y el formato de pesos safetensors. La página de HuggingFace incluye etiquetas como "transformers", "text-generation", "rloo", "trl", "conversational" y "custom_code", lo que sugiere que se ha utilizado la biblioteca transformers y posiblemente técnicas de RLHF o RLOO, pero no hay detalles concretos.
+No se dispone de información sobre la arquitectura del modelo (si es transformer, MoE, SSM u otra), ni sobre el proceso de entrenamiento (dataset, tokens, técnicas de RLHF/DPO, etc.). El único dato disponible es el número total de parámetros (7.083.264) y el formato de pesos safetensors. La página de Hugging Face incluye etiquetas como "transformers", "text-generation", "rloo", "trl", "conversational" y "custom_code", lo que sugiere que se ha utilizado la biblioteca transformers y posiblemente técnicas de RLHF o RLOO, pero no hay detalles concretos.
 
 ## Capacidades
 
@@ -52,11 +52,11 @@ No se dispone de información sobre modelos comparables de SurjoLabs. No se pued
 - **Sesgos conocidos**: no documentados.
 - **Riesgo de alucinación**: no evaluado.
 - **Limitaciones de contexto o idioma**: no conocidas.
-- **Restricciones de licencia**: la licencia no está disponible; además, el acceso es restringido y requiere aceptar condiciones en HuggingFace.
+- **Restricciones de licencia**: la licencia no está disponible; además, el acceso es restringido y requiere aceptar condiciones en Hugging Face.
 - **Caveat importante**: la falta de documentación y de benchmarks hace que este modelo no sea recomendable para entornos de producción sin una evaluación previa exhaustiva.
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: [SurjoLabs/Spark-1.1](https://huggingface.co/SurjoLabs/Spark-1.1)
+- Página del modelo en Hugging Face: [SurjoLabs/Spark-1.1](https://huggingface.co/SurjoLabs/Spark-1.1)
 
 **Nota**: la búsqueda web devuelve resultados para un modelo llamado "Muse Spark 1.1" de Meta (por ejemplo, https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/), pero no es el mismo que SurjoLabs/Spark-1.1. No se ha encontrado información adicional sobre este modelo en particular.

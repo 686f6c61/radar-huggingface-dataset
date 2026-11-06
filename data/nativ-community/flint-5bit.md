@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nativ-community/flint-5bit | 39.785.299.488 | 262.144 tokens | 5 bits affine (routers 8 bits) | Apache-2.0 | HuggingFace, formato MLX |
-| RecursiveSI/flint (modelo fuente) | 39.785.299.488 | 262.144 tokens | BF16 | Apache-2.0 | HuggingFace |
+| nativ-community/flint-5bit | 39.785.299.488 | 262.144 tokens | 5 bits affine (routers 8 bits) | Apache-2.0 | Hugging Face, formato MLX |
+| RecursiveSI/flint (modelo fuente) | 39.785.299.488 | 262.144 tokens | BF16 | Apache-2.0 | Hugging Face |
 | Alternativas de tamaño similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparación directa más relevante es con el modelo fuente en BF16, que ofrece la misma arquitectura y contexto pero sin pérdida por cuantización, a costa de un mayor requisito de memoria. No se dispone de información sobre otros modelos MoE de ~40.000 millones de parámetros comparables en la documentación proporcionada.
@@ -85,7 +85,7 @@ La comparación directa más relevante es con el modelo fuente en BF16, que ofre
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nativ-community/flint-5bit
+- Modelo en Hugging Face: https://huggingface.co/nativ-community/flint-5bit
 - Modelo fuente: https://huggingface.co/RecursiveSI/flint
 - Revisión del modelo fuente: https://huggingface.co/RecursiveSI/flint/tree/2a247be0c0aec895ccb0ac7ca92229ec6df37288
 - Repositorio MLX-VLM: https://github.com/Blaizzy/mlx-vlm

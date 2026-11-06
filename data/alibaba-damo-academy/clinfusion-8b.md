@@ -61,7 +61,7 @@ No se han publicado resultados numericos de benchmarks en la informacion disponi
 
 | Modelo | Parametros | Contexto | Especialidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ClinFusion-8B | 8B | no disponible | Vision medica 2D/3D | Apache 2.0 | Abierto (HuggingFace) |
+| ClinFusion-8B | 8B | no disponible | Vision medica 2D/3D | Apache 2.0 | Abierto (Hugging Face) |
 | Hulu-Med | no disponible | no disponible | Vision medica | no disponible | Abierto (segun la model card) |
 | Lingshu-8B | 8B | no disponible | Vision medica | no disponible | Abierto (segun la model card) |
 
@@ -79,7 +79,7 @@ Segun la informacion de la model card, ClinFusion-8B supera a Hulu-Med y Lingshu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Alibaba-DAMO-Academy/ClinFusion-8B
+- Hugging Face: https://huggingface.co/Alibaba-DAMO-Academy/ClinFusion-8B
 - Repositorio GitHub: https://github.com/alibaba-damo-academy/ClinFusion
 - Articulo arXiv: https://arxiv.org/abs/2607.24743
 - PDF del articulo: https://arxiv.org/pdf/2607.24743

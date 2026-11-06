@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FrMedQA-CrossLingual-v2-NoPPL-bf16-DAPT es un fine-tune del modelo denso Qwen3-14B, publicado en HuggingFace por el usuario "boods" bajo licencia Apache 2.0. El repositorio se etiqueta como `transformers`, `safetensors`, `text-generation-inference`, `unsloth`, `qwen3` y `trl`, y declara como modelo base `unsloth/Qwen3-14B`, una redistribución del Qwen3-14B oficial preparada por Unsloth para entrenamiento optimizado. El nombre del modelo sugiere un ajuste orientado a preguntas y respuestas medicas en frances con evaluacion cruzada entre idiomas ("FrMedQA-CrossLingual"), con una fase de preentrenamiento adaptativo al dominio ("DAPT") y un ajuste final en bf16.
+FrMedQA-CrossLingual-v2-NoPPL-bf16-DAPT es un fine-tune del modelo denso Qwen3-14B, publicado en Hugging Face por el usuario "boods" bajo licencia Apache 2.0. El repositorio se etiqueta como `transformers`, `safetensors`, `text-generation-inference`, `unsloth`, `qwen3` y `trl`, y declara como modelo base `unsloth/Qwen3-14B`, una redistribución del Qwen3-14B oficial preparada por Unsloth para entrenamiento optimizado. El nombre del modelo sugiere un ajuste orientado a preguntas y respuestas medicas en frances con evaluacion cruzada entre idiomas ("FrMedQA-CrossLingual"), con una fase de preentrenamiento adaptativo al dominio ("DAPT") y un ajuste final en bf16.
 
 El modelo hereda del Qwen3-14B su arquitectura transformer densa, su ventana de contexto y su tokenizador multilingue, por lo que tecnicamente es capaz de generar texto y razonar en muchos idiomas, aunque la model card solo declara ingles (`language: en`) y el autor no documenta que idiomas cubre realmente el ajuste. Se trata, por tanto, de una publicacion con documentacion minima: no incluye resultados de benchmarks, no describe el dataset de entrenamiento ni el procedimiento de ajuste mas alla de indicar que se uso Unsloth.
 
@@ -46,7 +46,7 @@ Tampoco se documentan innovaciones tecnicas propias: no hay mencion a decodifica
 - Generacion de conjuntos de datos sinteticos de dominio medico: el modelo puede emplearse para producir preguntas y respuestas de entrenamiento en frances o ingles, que despues se filtran y validan manualmente antes de usarse en otros pipelines.
 - Evaluacion de transferencia cross-lingual: si finalmente se confirma su comportamiento multilingue, permitiria medir hasta que punto un ajuste sobre un dominio en un idioma mejora el rendimiento en otro, un experimento habitual en investigacion de NLP clinico.
 - Extraccion y resumen de informacion a partir de textos medicos largos: usando la ventana de contexto heredada del modelo base, se podrian resumir historiales o articulos, aunque este uso requiere verificacion factual estricta.
-- Integracion como servicio de inferencia compatible con TGI: el repositorio esta etiquetado con `text-generation-inference` y `endpoints_compatible`, por lo que puede desplegarse detras de una API compatible con los endpoints de HuggingFace para pruebas internas.
+- Integracion como servicio de inferencia compatible con TGI: el repositorio esta etiquetado con `text-generation-inference` y `endpoints_compatible`, por lo que puede desplegarse detras de una API compatible con los endpoints de Hugging Face para pruebas internas.
 
 ## Benchmarks y rendimiento
 
@@ -59,14 +59,14 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU de consumo: en bf16 no cabe en tarjetas de 24 GB (RTX 3090, RTX 4090) sin cuantizacion u offloading; con cuantizacion de 4 bits puede caber en una RTX 4090, RTX 3090, RTX 4080 (16 GB) de forma ajustada y en tarjetas de 12-16 GB con contexto reducido.
 - Opciones de despliegue: vLLM y TGI para inferencia en bf16 o fp8 en servidor; llama.cpp u Ollama para cuantizaciones GGUF en local; transformers con `accelerate` para experimentacion.
 - Latencia y throughput: no disponibles. El autor no publica mediciones de tokens por segundo ni de latencia.
-- Nota importante: el tamano reportado del repositorio es de 0,5 GB, cifra incompatible con un modelo completo de 14B en bf16 (que ocuparia alrededor de 28 GB). Es posible que el repositorio contenga unicamente adaptadores, una subida parcial o que el dato de la API de HuggingFace sea inexacto; conviene verificar el contenido real antes de planificar el despliegue.
+- Nota importante: el tamano reportado del repositorio es de 0,5 GB, cifra incompatible con un modelo completo de 14B en bf16 (que ocuparia alrededor de 28 GB). Es posible que el repositorio contenga unicamente adaptadores, una subida parcial o que el dato de la API de Hugging Face sea inexacto; conviene verificar el contenido real antes de planificar el despliegue.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| FrMedQA-CrossLingual-v2-NoPPL-bf16-DAPT (este modelo) | no disponible en la model card | no disponible | apache-2.0 | HuggingFace, 0 descargas | no disponible |
-| unsloth/Qwen3-14B (modelo base) | aproximadamente 14.800 millones (denso) | no disponible en esta busqueda | apache-2.0 | HuggingFace | no disponible en esta busqueda |
+| FrMedQA-CrossLingual-v2-NoPPL-bf16-DAPT (este modelo) | no disponible en la model card | no disponible | apache-2.0 | Hugging Face, 0 descargas | no disponible |
+| unsloth/Qwen3-14B (modelo base) | aproximadamente 14.800 millones (denso) | no disponible en esta busqueda | apache-2.0 | Hugging Face | no disponible en esta busqueda |
 | Alternativas de la misma categoria (por ejemplo, otros fine-tunes medicos de 12-14B sobre Qwen o Llama) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos verificados en la informacion proporcionada para comparar el rendimiento de este modelo con alternativas equivalentes. Cualquier comparacion cuantitativa requeriria ejecutar los mismos benchmarks sobre cada modelo.
@@ -86,7 +86,7 @@ No se dispone de datos verificados en la informacion proporcionada para comparar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/boods/FrMedQA-CrossLingual-v2-NoPPL-bf16-DAPT
+- Modelo en Hugging Face: https://huggingface.co/boods/FrMedQA-CrossLingual-v2-NoPPL-bf16-DAPT
 - Modelo base: https://huggingface.co/unsloth/Qwen3-14B
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Paper, blog o demo especificos del modelo: no disponible

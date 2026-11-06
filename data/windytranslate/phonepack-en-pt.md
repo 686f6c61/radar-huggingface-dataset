@@ -102,7 +102,7 @@ La comparación relevante es interna: el pack ONNX int8 iguala esencialmente a l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WindyTranslate/phonepack-en-pt
+- Modelo en Hugging Face: https://huggingface.co/WindyTranslate/phonepack-en-pt
 - Modelo base: https://huggingface.co/WindyTranslate/translate-tc-big-en-pt
 - Modelo upstream OPUS-MT: https://huggingface.co/Helsinki-NLP/opus-mt-tc-big-en-pt
 - Windstorm Labs: https://windstormlabs.com

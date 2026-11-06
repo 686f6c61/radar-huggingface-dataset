@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Enfoque | Tiempo real | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RealDenseFace | ViT-S / ViT-B | Priors densos UV + solver Gauss-Newton | Si (ViT-S) | MIT | HuggingFace + GitHub |
+| RealDenseFace | ViT-S / ViT-B | Priors densos UV + solver Gauss-Newton | Si (ViT-S) | MIT | Hugging Face + GitHub |
 | Modelos regresivos FLAME (p. ej. DECA, EMOCA) | no disponible | Regresion directa de parametros | Si | variable | publicos |
 | Modelos de reconstruccion densa (p. ej. MICA) | no disponible | Regresion + refinamiento | parcial | variable | publicos |
 
@@ -80,11 +80,11 @@ No se dispone de datos comparativos de rendimiento cuantitativo en la informacio
 - Los pesos FaceBox son recursos de terceros con licencia propia.
 - No es un modelo de lenguaje: no soporta texto, tool calling ni agentes.
 - El solver CUDA requiere GPU compatible; no se documenta soporte para CPU.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace en el momento de la consulta, por lo que su validacion por la comunidad es practicamente nula.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face en el momento de la consulta, por lo que su validacion por la comunidad es practicamente nula.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LinzhouLi/RealDenseFace
+- Hugging Face: https://huggingface.co/LinzhouLi/RealDenseFace
 - Paper (arXiv): https://arxiv.org/abs/2608.09238
 - Proyecto: https://gapszju.github.io/RealDenseFace/
 - Codigo (GitHub): https://github.com/LinzhouLi/RealDenseFace

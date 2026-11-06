@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "mrsirg97-rgb/osmos-evo-1017",
+  "slug": "mrsirg97-rgb-osmos-evo-1017",
+  "author": "mrsirg97-rgb",
+  "url": "https://huggingface.co/mrsirg97-rgb/osmos-evo-1017",
+  "created_at": "2026-11-04T20:54:19.000Z",
+  "updated_at": "2026-11-04T23:28:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "deepseek",
+    "speculative-decoding",
+    "amd",
+    "strix-halo",
+    "gguf",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "base_model:finetune:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4676644608,
+  "storage_human": "4.7 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mrsirg97-rgb/osmos-evo-1017 · Hugging Face",
+      "url": "https://huggingface.co/mrsirg97-rgb/osmos-evo-1017",
+      "snippet": "The files osmos needs beside unsloth's GGUFs to run DeepSeek-V4.1-Flash-1017 on an AMD Strix Halo (Ryzen AI Max+ 395, gfx1151, 128 GB). The model weights are not here ..."
+    },
+    {
+      "title": "mrsirg97-rgb (mrsirg) – Models - Hugging Face",
+      "url": "https://huggingface.co/mrsirg97-rgb/models",
+      "snippet": "mrsirg97-rgb's models1 Sort: Recently updated mrsirg97-rgb/osmos-evo-1017 Updated about 11 hours ago"
+    }
+  ]
+}

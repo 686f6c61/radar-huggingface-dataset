@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `rtrtwrw/act_chess_c3_to_d5_10ep_step16000` (este) | 51,7 M | 3 cámaras 480x640 + estado de 6 articulaciones | No publicado | No disponible | HuggingFace (0 descargas, 0 likes) |
-| Otros checkpoints ACT del mismo autor (`act_chess_*`) | No disponible | No disponible | No disponible | No disponible | HuggingFace |
+| `rtrtwrw/act_chess_c3_to_d5_10ep_step16000` (este) | 51,7 M | 3 cámaras 480x640 + estado de 6 articulaciones | No publicado | No disponible | Hugging Face (0 descargas, 0 likes) |
+| Otros checkpoints ACT del mismo autor (`act_chess_*`) | No disponible | No disponible | No disponible | No disponible | Hugging Face |
 | Políticas ACT de referencia sobre ALOHA / SO-101 | No disponible en esta ficha (del orden de decenas de millones en la familia ACT) | Entrada multi-cámara + estado de articulaciones | No disponible | Habitualmente MIT en los repositorios de referencia (verificar) | Repositorios públicos de LeRobot y del paper original |
 | Diffusion Policy (alternativa de imitation learning) | No disponible | Entrada visual + estado; predice trayectorias por difusión | No disponible | No disponible | Implementaciones públicas en el ecosistema LeRobot |
 
@@ -95,7 +95,7 @@ No se dispone de datos comparativos de rendimiento entre estas alternativas en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rtrtwrw/act_chess_c3_to_d5_10ep_step16000
+- Modelo en Hugging Face: https://huggingface.co/rtrtwrw/act_chess_c3_to_d5_10ep_step16000
 - Dataset de entrenamiento: https://huggingface.co/datasets/niru-5/chess_dataset_c3_6cm_to_d5_10cm_20261017_145741
 - LeRobot (librería y repositorio): https://github.com/huggingface/lerobot
 - Paper original de ACT / ALOHA: https://arxiv.org/abs/2304.13705

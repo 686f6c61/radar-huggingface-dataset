@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `wendy-oh/matching` es una implementación experimental del arquitecto de modelos **Dino** orientada a tareas de **matching**, publicada por el usuario `wendy-oh` en HuggingFace. Se distribuye como un paquete con configuración explícita, un script de entrenamiento (`finetune.py`) y un checkpoint de inicialización (`model.safetensors`). No se trata de un modelo entrenado ni auditado, sino de un punto de partida reproducible para investigación y pruebas de humo.
+El modelo `wendy-oh/matching` es una implementación experimental del arquitecto de modelos **Dino** orientada a tareas de **matching**, publicada por el usuario `wendy-oh` en Hugging Face. Se distribuye como un paquete con configuración explícita, un script de entrenamiento (`finetune.py`) y un checkpoint de inicialización (`model.safetensors`). No se trata de un modelo entrenado ni auditado, sino de un punto de partida reproducible para investigación y pruebas de humo.
 
 La arquitectura declarada es **Dino** en su variante **small**, con atención *grouped query*, fusión por *concat mlp*, activación ReLU y normalización LayerNorm. El modelo cuenta con **16.576 parámetros** totales, un tamaño extremadamente reducido que lo hace viable en entornos con recursos mínimos. La longitud de contexto y los idiomas soportados no se especifican en la información disponible. El repositorio no presenta resultados de benchmarks ni afirma ningún rendimiento.
 
@@ -74,4 +74,4 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [https://huggingface.co/wendy-oh/matching](https://huggingface.co/wendy-oh/matching)
+- Repositorio en Hugging Face: [https://huggingface.co/wendy-oh/matching](https://huggingface.co/wendy-oh/matching)

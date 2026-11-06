@@ -66,6 +66,6 @@ No se dispone de especificaciones publicadas para modelos comparables. El único
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alexkstern/kdyck_dose_1Bpt_hfbody_adamwppt_1B_s0_2026-09-07_01-51-32_577578-pt
+- Hugging Face: https://huggingface.co/alexkstern/kdyck_dose_1Bpt_hfbody_adamwppt_1B_s0_2026-09-07_01-51-32_577578-pt
 - W&B run: https://wandb.ai/alexksternteam/token_dose_1Bpt_adamw_seed_replicas_v1/runs/5bryagfl
 - Nanochat: https://github.com/karpathy/nanochat

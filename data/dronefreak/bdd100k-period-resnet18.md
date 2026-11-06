@@ -104,7 +104,7 @@ Todos los modelos de la tabla siguiente fueron evaluados por el autor sobre el m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dronefreak/bdd100k-period-resnet18
+- Modelo en Hugging Face: https://huggingface.co/dronefreak/bdd100k-period-resnet18
 - Dataset de clasificación: https://huggingface.co/datasets/dronefreak/BDD100K-Period-Classification
 - Repositorio BDD100K-Toolkit: https://github.com/dronefreak/bdd100k-toolkit
 - Paper de ResNet (arXiv:1512.03385): https://arxiv.org/abs/1512.03385

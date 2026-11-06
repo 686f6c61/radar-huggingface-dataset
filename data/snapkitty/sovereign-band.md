@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `Snapkitty/sovereign-band` es un repositorio publicado en HuggingFace por el usuario Snapkitty, con la etiqueta `region:us`. La model card presenta una descripción críptica y no técnica, centrada en un concepto denominado "Sovereign Band" o "Resonance Frequency Layer", con referencias a una supuesta verificación "ERE (Entropic Resonance Evaluation)" de cinco pasos y una fórmula matemática `B(t) = (cos t + cos φt)/2`. No se proporciona ninguna especificación técnica real: ni arquitectura, ni número de parámetros, ni contexto, ni datos de entrenamiento, ni ejemplos de uso.
+El modelo `Snapkitty/sovereign-band` es un repositorio publicado en Hugging Face por el usuario Snapkitty, con la etiqueta `region:us`. La model card presenta una descripción críptica y no técnica, centrada en un concepto denominado "Sovereign Band" o "Resonance Frequency Layer", con referencias a una supuesta verificación "ERE (Entropic Resonance Evaluation)" de cinco pasos y una fórmula matemática `B(t) = (cos t + cos φt)/2`. No se proporciona ninguna especificación técnica real: ni arquitectura, ni número de parámetros, ni contexto, ni datos de entrenamiento, ni ejemplos de uso.
 
-El repositorio no tiene descargas ni "likes", y fue creado el 3 de septiembre de 2026 (fecha futura, lo que sugiere que podría tratarse de un modelo ficticio o de una publicación de prueba). La model card menciona una "Sovereign Source License v1.0" atribuida a "Ahmad Ali Parr", pero esta licencia no está registrada en los metadatos de HuggingFace. En resumen, no existe información técnica verificable que permita evaluar el modelo como una herramienta útil para desarrolladores o investigadores.
+El repositorio no tiene descargas ni "likes", y fue creado el 3 de septiembre de 2026 (fecha futura, lo que sugiere que podría tratarse de un modelo ficticio o de una publicación de prueba). La model card menciona una "Sovereign Source License v1.0" atribuida a "Ahmad Ali Parr", pero esta licencia no está registrada en los metadatos de Hugging Face. En resumen, no existe información técnica verificable que permita evaluar el modelo como una herramienta útil para desarrolladores o investigadores.
 
 ## Especificaciones tecnicas
 
@@ -54,5 +54,5 @@ No disponible. No se conocen modelos comparables porque no se dispone de ninguna
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Snapkitty/sovereign-band
+- Repositorio en Hugging Face: https://huggingface.co/Snapkitty/sovereign-band
 - No se han encontrado otros enlaces relevantes (papers, blogs, repos, demos) en la búsqueda web.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alfred8995/sn38-r3-2017-pomlnb-chronollm-2017` es un checkpoint de 1.858.535.658 parámetros publicado en HuggingFace por el usuario alfred8995, con pesos en formato safetensors y un tamaño de repositorio de 7,4 GB. El único indicio sobre su naturaleza técnica es la etiqueta `ChronoGPT` incluida por el autor, que sugiere una variante de modelo GPT orientada a series temporales o a modelado de secuencias cronológicas, si bien no se ha publicado documentación que lo confirme. El repositorio tiene acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de poder descargar los pesos.
+`alfred8995/sn38-r3-2017-pomlnb-chronollm-2017` es un checkpoint de 1.858.535.658 parámetros publicado en Hugging Face por el usuario alfred8995, con pesos en formato safetensors y un tamaño de repositorio de 7,4 GB. El único indicio sobre su naturaleza técnica es la etiqueta `ChronoGPT` incluida por el autor, que sugiere una variante de modelo GPT orientada a series temporales o a modelado de secuencias cronológicas, si bien no se ha publicado documentación que lo confirme. El repositorio tiene acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de poder descargar los pesos.
 
 El modelo no dispone de model card con especificaciones, pipeline declarado, idiomas soportados ni resultados de evaluación. El identificador (`sn38-r3-2017-pomlnb`) apunta a un artefacto de entrenamiento generado de forma automatizada, posiblemente vinculado a un proceso por rondas (r3) con un identificador numérico interno (2017), pero se trata de una hipótesis basada en la nomenclatura y no de un dato documentado.
 
@@ -63,9 +63,9 @@ Estimaciones calculadas a partir del recuento real de parámetros (1,86 B); no s
 - VRAM en cuantización de 4 bits: unos 1,1 GB de pesos; 2-3 GB en total.
 - GPU de consumo: cabe holgadamente en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080 y RTX 4090; en 8 GB (RTX 3060 Ti, RTX 4060) solo con 8 o 4 bits.
 - GPU de datacenter: A100, H100, L40S o A10G son sobredimensionadas para un solo modelo; resultan útiles para servir muchas réplicas en paralelo.
-- Opciones de despliegue: HuggingFace Transformers (ruta directa con safetensors), vLLM y TGI (requieren `config.json` y tokenizador válidos), llama.cpp/Ollama (requieren conversión previa a GGUF, no publicada).
+- Opciones de despliegue: Hugging Face Transformers (ruta directa con safetensors), vLLM y TGI (requieren `config.json` y tokenizador válidos), llama.cpp/Ollama (requieren conversión previa a GGUF, no publicada).
 - Latencia y throughput: no disponibles. No hay mediciones de tokens por segundo ni de latencia de primer token.
-- Nota operativa: el acceso es *gated*, por lo que la descarga exige un token de HuggingFace con permisos y la aceptación previa de las condiciones del repositorio.
+- Nota operativa: el acceso es *gated*, por lo que la descarga exige un token de Hugging Face con permisos y la aceptación previa de las condiciones del repositorio.
 
 ## Comparativa con modelos similares
 
@@ -95,7 +95,7 @@ La diferencia relevante no es de tamaño sino de trazabilidad: las tres alternat
 
 ## Enlaces
 
-- HuggingFace (acceso restringido): https://huggingface.co/alfred8995/sn38-r3-2017-pomlnb-chronollm-2017
+- Hugging Face (acceso restringido): https://huggingface.co/alfred8995/sn38-r3-2017-pomlnb-chronollm-2017
 - Paper, blog o repositorio asociado: no disponible
 - Demo o espacio de inferencia: no disponible
 - Resultados de búsqueda web relevantes: no disponible (las búsquedas realizadas devolvieron únicamente páginas sin relación con el modelo)

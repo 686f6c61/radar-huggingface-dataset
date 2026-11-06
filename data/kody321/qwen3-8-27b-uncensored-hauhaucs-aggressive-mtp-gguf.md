@@ -93,7 +93,7 @@ No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K,
 - Sumar ~931 MB del proyector de visión BF16 si se usa entrada de imagen o vídeo, y ~903 MB del sidecar FastMTP si se activa la aceleración.
 - GPU recomendadas: A100 80 GB o H100 para Q8_K_P con contexto largo; RTX 4090 (24 GB) para Q4_K_P o IQ4_XS con contexto moderado; RTX 3090/4080 (16-24 GB) para IQ4_XS o Q3_K_P; GPUs de 12 GB para IQ3_XS o IQ2_M con contexto reducido.
 - Cabe en GPU de consumo: sí, desde IQ2_M (~10,3 GB) en adelante, con la salvedad de que el KV cache a 262K tokens exige mucha más VRAM y obliga a reducir contexto o usar offloading a CPU.
-- Opciones de despliegue: llama.cpp, LM Studio, Ollama y cualquier runtime compatible con GGUF. El autor advierte que el widget de compatibilidad de hardware de HuggingFace puede no reconocer las cuantizaciones K_P; hay que usar "View variants" o "Files and versions".
+- Opciones de despliegue: llama.cpp, LM Studio, Ollama y cualquier runtime compatible con GGUF. El autor advierte que el widget de compatibilidad de hardware de Hugging Face puede no reconocer las cuantizaciones K_P; hay que usar "View variants" o "Files and versions".
 - Latencia y throughput: no disponibles de forma absoluta; solo se declaran aceleraciones relativas de FastMTP (hasta 3,02x en documentos y 1,93x en razonamiento frente a la versión sin MTP).
 
 ## Comparativa con modelos similares
@@ -113,7 +113,7 @@ No se dispone de datos de benchmarks que permitan comparar rendimiento de calida
 - El autor recomienda una release "Balanced" para trabajo agéntico de contexto largo crítico para la fiabilidad; la variante "Aggressive" prioriza la respuesta directa sobre la robustez.
 - Existe una inconsistencia entre el nombre y las specs del autor (27B) y el campo de parámetros safetensors del repo (1.863.907.840); conviene verificar el modelo base antes de usarlo en producción.
 - El modelo es una cuantización no oficial publicada por un tercero (kody321) a partir de material de HauhauCS; no está respaldada por Alibaba Qwen. La reproducibilidad y la integridad de los pesos no están garantizadas por el fabricante original.
-- Las cuantizaciones K_P y el sidecar FastMTP son formatos propietarios del autor; aunque son GGUFs estándar, su comportamiento puede diferir del esperado en herramientas que no los reconozcan (el autor documenta problemas de visualización en LM Studio y en el widget de HuggingFace).
+- Las cuantizaciones K_P y el sidecar FastMTP son formatos propietarios del autor; aunque son GGUFs estándar, su comportamiento puede diferir del esperado en herramientas que no los reconozcan (el autor documenta problemas de visualización en LM Studio y en el widget de Hugging Face).
 - El contexto de 262K tokens exige una VRAM de KV cache muy superior a la de los pesos; en GPUs de consumo hay que reducir contexto o hacer offloading, lo que degrada el throughput.
 - Idiomas: cobertura principal en inglés y chino; el rendimiento en castellano no está documentado y puede ser inferior.
 - Licencia Apache 2.0 permite uso comercial, pero la responsabilidad legal del contenido generado por una variante desensurada recae en el desplegador.
@@ -121,7 +121,7 @@ No se dispone de datos de benchmarks que permitan comparar rendimiento de calida
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kody321/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF
+- Modelo en Hugging Face: https://huggingface.co/kody321/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio del autor original (HauhauCS): https://huggingface.co/HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF
 - Discord del autor: https://discord.gg/SZ5vacTXYf

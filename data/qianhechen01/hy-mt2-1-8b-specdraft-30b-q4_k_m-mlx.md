@@ -78,9 +78,9 @@ No hay datos públicos de benchmarks comparativos entre estos modelos en la info
 
 ## Enlaces
 
-- [Repositorio de HuggingFace](https://huggingface.co/QianheChen01/Hy-MT2-1.8B-SpecDraft-30B-Q4_K_M-MLX)
-- [Modelo original de Tencent en HuggingFace](https://huggingface.co/tencent/Hy-MT2-1.8B)
+- [Repositorio de Hugging Face](https://huggingface.co/QianheChen01/Hy-MT2-1.8B-SpecDraft-30B-Q4_K_M-MLX)
+- [Modelo original de Tencent en Hugging Face](https://huggingface.co/tencent/Hy-MT2-1.8B)
 - [Repositorio GitHub de Tencent-Hunyuan/Hy-MT2](https://github.com/Tencent-Hunyuan/Hy-MT2)
-- [GGUF de Tencent en HuggingFace](https://huggingface.co/tencent/Hy-MT2-1.8B-GGUF)
+- [GGUF de Tencent en Hugging Face](https://huggingface.co/tencent/Hy-MT2-1.8B-GGUF)
 - [Página de OpenASR sobre Hy-MT2](https://openasr.org/models/hymt2-1.8b/)
 - [Ficha en AI Tech Hub](https://aitechhub.org/models/tencent-hy-mt2-1-8b)

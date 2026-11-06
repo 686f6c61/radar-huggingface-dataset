@@ -82,7 +82,7 @@ En la informacion proporcionada solo consta el propio modelo y su version ONNX p
 
 | Modelo | Parametros | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| cellmap/nuc-resunet-setup-61 | no disponible | parche 300^3, contexto de 88 voxeles por eje | BSD-3-Clause | HuggingFace (PyTorch, TorchScript, ONNX) |
+| cellmap/nuc-resunet-setup-61 | no disponible | parche 300^3, contexto de 88 voxeles por eje | BSD-3-Clause | Hugging Face (PyTorch, TorchScript, ONNX) |
 | cellmap/onnx-web-models/setup_61 | no disponible | misma configuracion del setup 61 | no disponible | Version ONNX orientada a web |
 | Otras alternativas de segmentacion de nucleos en EM | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 
@@ -102,7 +102,7 @@ En la informacion proporcionada solo consta el propio modelo y su version ONNX p
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/cellmap/nuc-resunet-setup-61
+- Hugging Face del modelo: https://huggingface.co/cellmap/nuc-resunet-setup-61
 - Repositorio de la libreria: https://github.com/janelia-cellmap/cellmap-models
 - Proyecto CellMap (Janelia): https://www.janelia.org/project-team/cellmap
 - Version ONNX para web: https://huggingface.co/cellmap/onnx-web-models (setup_61)

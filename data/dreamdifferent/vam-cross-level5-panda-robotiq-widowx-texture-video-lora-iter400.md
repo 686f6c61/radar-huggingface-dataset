@@ -68,7 +68,7 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (Lo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dreamdifferent/vam-cross-level5-panda-robotiq-widowx-texture-video-lora-iter400
+- Repositorio Hugging Face: https://huggingface.co/dreamdifferent/vam-cross-level5-panda-robotiq-widowx-texture-video-lora-iter400
 - Repositorio del backbone requerido: https://huggingface.co/dreamdifferent/widowx250-video-fused
 - Repositorio del dataset (no incluido): https://huggingface.co/datasets/dreamdifferent/vam-cross-level5-panda-robotiq-widowx-texture
 - Checkpoint bundle de MimicVideo: https://huggingface.co/jonpai/mimic-video

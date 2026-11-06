@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ricobank-Qwen3-4B-LoRA | Adaptador sobre base de ~4.000 M | No especificado (ejemplo a 2.048; base a 32.768) | Sin datos publicados | No disponible | HuggingFace, 0 descargas |
-| Qwen3-4B (base/instruct) | ~4.000 M | 32.768 nativos, 131.072 con YaRN | Benchmarks públicos en la model card original | Apache 2.0 | HuggingFace, ampliamente desplegado |
-| Gemma-3-4B-it | ~4.000 M | 128.000 tokens | Benchmarks públicos en la model card original | Términos de uso de Gemma | HuggingFace |
-| Llama-3.2-3B-Instruct | ~3.000 M | 128.000 tokens | Benchmarks públicos en la model card original | Licencia comunitaria de Llama 3.2 | HuggingFace |
+| Ricobank-Qwen3-4B-LoRA | Adaptador sobre base de ~4.000 M | No especificado (ejemplo a 2.048; base a 32.768) | Sin datos publicados | No disponible | Hugging Face, 0 descargas |
+| Qwen3-4B (base/instruct) | ~4.000 M | 32.768 nativos, 131.072 con YaRN | Benchmarks públicos en la model card original | Apache 2.0 | Hugging Face, ampliamente desplegado |
+| Gemma-3-4B-it | ~4.000 M | 128.000 tokens | Benchmarks públicos en la model card original | Términos de uso de Gemma | Hugging Face |
+| Llama-3.2-3B-Instruct | ~3.000 M | 128.000 tokens | Benchmarks públicos en la model card original | Licencia comunitaria de Llama 3.2 | Hugging Face |
 
 La comparación directa con el base Qwen3-4B es el punto de referencia más relevante: cualquier mejora o degradación introducida por el adaptador debería medirse contra él, algo que el repositorio no hace.
 
@@ -86,7 +86,7 @@ La comparación directa con el base Qwen3-4B es el punto de referencia más rele
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/igorcmmiranda/Ricobank-Qwen3-4B-LoRA
+- Modelo en Hugging Face: https://huggingface.co/igorcmmiranda/Ricobank-Qwen3-4B-LoRA
 - Dataset de entrenamiento: https://huggingface.co/datasets/igorcmmiranda/Ricobank-QnA
 - Modelo base: https://huggingface.co/unsloth/Qwen3-4B
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen3-4B

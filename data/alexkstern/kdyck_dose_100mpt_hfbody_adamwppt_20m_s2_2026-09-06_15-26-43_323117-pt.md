@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este checkpoint es un modelo de lenguaje de pequeno tamano (aproximadamente 100 millones de parametros) entrenado con el framework [nanochat](https://github.com/karpathy/nanochat) de Andrej Karpathy. Lo desarrolla el usuario de HuggingFace `alexkstern` como parte de un experimento de investigacion sobre dosis de datos y preentrenamiento en dos fases (*pretraining* sobre texto y *post-pretraining* sobre una tarea sintetica de Dyck de profundidad 128). No es un modelo de proposito general pensado para produccion, sino un artefacto de estudio reproducible sobre el que se mide el efecto del ajuste fino secuencial.
+Este checkpoint es un modelo de lenguaje de pequeno tamano (aproximadamente 100 millones de parametros) entrenado con el framework [nanochat](https://github.com/karpathy/nanochat) de Andrej Karpathy. Lo desarrolla el usuario de Hugging Face `alexkstern` como parte de un experimento de investigacion sobre dosis de datos y preentrenamiento en dos fases (*pretraining* sobre texto y *post-pretraining* sobre una tarea sintetica de Dyck de profundidad 128). No es un modelo de proposito general pensado para produccion, sino un artefacto de estudio reproducible sobre el que se mide el efecto del ajuste fino secuencial.
 
 La arquitectura es un transformer decoder-only tipo GPT con 16 capas, 8 cabezas de atencion (8 cabezas KV, es decir, sin GQA), dimension de embedding de 1024 y una longitud de contexto de 2048 tokens. El vocabulario de preentrenamiento es de 65 536 tokens (BPE de nanochat), mientras que la fase de post-pretraining usa un vocabulario reducido de 256 simbolos para la tarea Dyck. El entrenamiento total asciende a 120 millones de tokens: 100 millones de *pretraining* sobre `fineweb-nanochatbpe-100M` y 20 millones de *post-pretraining* sobre `dyck-k128-seq_len_2048-1B`.
 
@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks (MMLU, HumanEval, GSM8K, etc.) en l
 | Este checkpoint (alexkstern) | ~100M (no confirmado) | 2048 | Apache 2.0 | PyTorch `.pt` | Preentrenamiento + post-pretraining en Dyck; artefacto de investigacion |
 | GPT-2 small (OpenAI) | 124M | 1024 | MIT | safetensors, GGUF | Modelo de referencia de tamano similar, ampliamente soportado en herramientas |
 | Pythia-160M (EleutherAI) | 160M | 2048 | Apache 2.0 | safetensors | Suite de investigacion con checkpoints intermedios y datos de entrenamiento publicos |
-| SmolLM-135M (HuggingFace) | 135M | 2048 | Apache 2.0 | safetensors, GGUF | Modelo pequeno orientado a uso practico, con versiones instruct |
+| SmolLM-135M (Hugging Face) | 135M | 2048 | Apache 2.0 | safetensors, GGUF | Modelo pequeno orientado a uso practico, con versiones instruct |
 
 La comparacion es orientativa: este checkpoint no compite en capacidades generales con los anteriores, sino que documenta un experimento controlado de dosis de datos y post-pretraining sintetico.
 
@@ -93,6 +93,6 @@ La comparacion es orientativa: este checkpoint no compite en capacidades general
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alexkstern/kdyck_dose_100Mpt_hfbody_adamwppt_20M_s2_2026-09-06_15-26-43_323117-pt
+- Modelo en Hugging Face: https://huggingface.co/alexkstern/kdyck_dose_100Mpt_hfbody_adamwppt_20M_s2_2026-09-06_15-26-43_323117-pt
 - Run de W&B: https://wandb.ai/alexksternteam/token_dose_100Mpt_adamw_seed_replicas_v1/runs/kn3toqa9
 - Repositorio nanochat: https://github.com/karpathy/nanochat

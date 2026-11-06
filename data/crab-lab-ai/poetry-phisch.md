@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`crab-lab-ai/poetry-phisch` es un repositorio de modelo publicado en HuggingFace por el usuario u organizacion `crab-lab-ai`. El registro fue creado y actualizado el 2026-10-12T21:31:49Z, y en el momento de la consulta acumula 0 descargas y 0 "likes". La model card asociada no contiene mas informacion que la declaracion de licencia (`apache-2.0`); no incluye descripcion, arquitectura, datos de entrenamiento, idioma, ejemplos de uso ni resultados de evaluacion.
+`crab-lab-ai/poetry-phisch` es un repositorio de modelo publicado en Hugging Face por el usuario u organizacion `crab-lab-ai`. El registro fue creado y actualizado el 2026-10-12T21:31:49Z, y en el momento de la consulta acumula 0 descargas y 0 "likes". La model card asociada no contiene mas informacion que la declaracion de licencia (`apache-2.0`); no incluye descripcion, arquitectura, datos de entrenamiento, idioma, ejemplos de uso ni resultados de evaluacion.
 
 No se dispone de informacion verificable sobre el problema que el modelo pretende resolver, su tamano, su longitud de contexto ni su arquitectura. El propio identificador sugiere un proposito relacionado con la generacion de poesia (posiblemente en algun dialecto o variante linguistica), pero esta interpretacion es una inferencia a partir del nombre y no esta confirmada por ninguna fuente: no debe tomarse como un dato tecnico.
 
@@ -78,6 +78,6 @@ No disponible. No se ha identificado ninguna familia de modelos comparable, porq
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/crab-lab-ai/poetry-phisch
+- Hugging Face: https://huggingface.co/crab-lab-ai/poetry-phisch
 - No se han encontrado papers, repositorios de codigo, blogs ni demos asociados al modelo en la busqueda web realizada.
 - Los resultados de la busqueda web devolvieron unicamente paginas no relacionadas con el modelo (articulos sobre la cantante tanzana Nandy y su sitio oficial), por lo que no se incluyen como referencias tecnicas validas.

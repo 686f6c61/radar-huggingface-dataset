@@ -24,7 +24,7 @@ Ahora bien, la ficha publica es minima: no se declaran licencia, idiomas, longit
 | Modelo base | henil08/verilog-coder-7b |
 | Autor | henil08 |
 | Descargas / likes | 0 / 1 |
-| Fecha de creacion | 2026-10-18 (fecha declarada en HuggingFace) |
+| Fecha de creacion | 2026-10-18 (fecha declarada en Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -97,7 +97,7 @@ La comparacion relevante no es solo de tamano: los tres alternativos son general
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/henil08/verilog-coder-7b-gguf
+- Modelo en Hugging Face: https://huggingface.co/henil08/verilog-coder-7b-gguf
 - Modelo base: https://huggingface.co/henil08/verilog-coder-7b
 - Repositorio del proyecto (fine-tuning con LoRA, evaluacion con Verilator y servidor MLX/vLLM): https://github.com/Henil-08/verilog-coder-ft
 - Comando de Ollama: `ollama run hf.co/henil08/verilog-coder-7b-gguf`

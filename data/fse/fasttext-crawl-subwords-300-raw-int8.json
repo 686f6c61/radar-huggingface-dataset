@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "fse/fasttext-crawl-subwords-300-raw-int8",
+  "slug": "fse-fasttext-crawl-subwords-300-raw-int8",
+  "author": "fse",
+  "url": "https://huggingface.co/fse/fasttext-crawl-subwords-300-raw-int8",
+  "created_at": "2026-11-01T22:09:13.000Z",
+  "updated_at": "2026-11-02T06:33:48.000Z",
+  "license": "cc-by-sa-3.0",
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "fse",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "fse",
+    "safetensors",
+    "static-embeddings",
+    "sentence-embeddings",
+    "gensim",
+    "fasttext",
+    "word-embeddings",
+    "feature-extraction",
+    "en",
+    "base_model:fse/fasttext-crawl-subwords-300",
+    "base_model:quantized:fse/fasttext-crawl-subwords-300",
+    "license:cc-by-sa-3.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 37,
+  "trending_score": 0,
+  "parameters": 1221845063,
+  "parameters_human": "1.22B",
+  "storage_bytes": 1247846930,
+  "storage_human": "1.2 GB",
+  "base_model": "fse/fasttext-crawl-subwords-300",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fse/fasttext-crawl-subwords-300-raw - Hugging Face",
+      "url": "https://huggingface.co/fse/fasttext-crawl-subwords-300-raw",
+      "snippet": "A static embedding model for fse: the mean of the token rows of a text, normalized to unit length. On the 1,379 STS-B test pairs, raw float32 scored 48.52845 Pearson x100 and SIF-10 float32 scored 72.40582. Use raw for a plain mean of the source vectors. Use SIF-10 to apply the fixed frequency ..."
+    },
+    {
+      "title": "fse/fasttext-crawl-subwords-300-raw-int8 · Hugging Face",
+      "url": "https://huggingface.co/fse/fasttext-crawl-subwords-300-raw-int8",
+      "snippet": "A static embedding model for fse: the mean of the token rows of a text, normalized to unit length. Converted from the gensim model fse/fasttext-crawl-subwords-300 at ..."
+    }
+  ]
+}

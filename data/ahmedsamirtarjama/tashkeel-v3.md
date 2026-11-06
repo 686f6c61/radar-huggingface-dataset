@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tashkeel-v3 es un modelo de diacritización (tashkeel) de árabe desarrollado por Ahmed Samir (usuario de HuggingFace `ahmedsamirtarjama`). Su tarea es la clasificación de tokens a nivel de carácter: recibe texto árabe sin vocales y devuelve el mismo texto con las harakat (fatha, damma, kasra, sukun, shadda, tanwin, etc.) insertadas correctamente. No es un modelo generativo, sino un etiquetador secuencial especializado.
+Tashkeel-v3 es un modelo de diacritización (tashkeel) de árabe desarrollado por Ahmed Samir (usuario de Hugging Face `ahmedsamirtarjama`). Su tarea es la clasificación de tokens a nivel de carácter: recibe texto árabe sin vocales y devuelve el mismo texto con las harakat (fatha, damma, kasra, sukun, shadda, tanwin, etc.) insertadas correctamente. No es un modelo generativo, sino un etiquetador secuencial especializado.
 
 Técnicamente combina un encoder transformer MARBERTv2 compartido con embeddings de morfema y posición, una capa BiLSTM bidireccional de 384 unidades por dirección, dos cabezas desacopladas (diacríticos internos de la raíz frente a terminaciones de caso o *i'rab*) y una capa final de Conditional Random Field lineal con matriz de transición de 15x15 y decodificación Viterbi global. El modelo suma 171.573.661 parámetros y se distribuye bajo licencia Apache-2.0 con pesos en safetensors y código personalizado (`custom_code`).
 
@@ -115,7 +115,7 @@ La comparación con LLM generativos es asimétrica: Claude-3.7-Sonnet obtiene me
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ahmedsamirtarjama/Tashkeel-v3
+- Modelo en Hugging Face: https://huggingface.co/ahmedsamirtarjama/Tashkeel-v3
 - Benchmark `Misraj/SadeedDiac-25`: https://huggingface.co/datasets/Misraj/SadeedDiac-25
 - Benchmark `Bisher/CATT_benchmark`: https://huggingface.co/datasets/Bisher/CATT_benchmark
 - Cita del autor (BibTeX, entrada incompleta en la model card): Ahmed Samir, "Tashkeel-v3: SOTA Arabic Diacritization with Morpheme-Aware MARBERT and Linear-Chain CRF", 2026.

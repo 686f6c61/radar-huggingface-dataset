@@ -2,11 +2,11 @@
 
 ## Resumen
 
-picturehearth-ormbg es un modelo publicado en HuggingFace por el usuario pictureheart bajo licencia Apache 2.0. La model card asociada esta practicamente vacia: unicamente declara la licencia, sin descripcion, sin arquitectura, sin tamano, sin datos de entrenamiento ni ejemplos de uso. El identificador sugiere un posible uso relacionado con eliminacion de fondo (el sufijo "ormbg" podria aludir a "remove background"), pero esta interpretacion no esta confirmada por ninguna documentacion oficial.
+picturehearth-ormbg es un modelo publicado en Hugging Face por el usuario pictureheart bajo licencia Apache 2.0. La model card asociada esta practicamente vacia: unicamente declara la licencia, sin descripcion, sin arquitectura, sin tamano, sin datos de entrenamiento ni ejemplos de uso. El identificador sugiere un posible uso relacionado con eliminacion de fondo (el sufijo "ormbg" podria aludir a "remove background"), pero esta interpretacion no esta confirmada por ninguna documentacion oficial.
 
 El modelo no cuenta con descargas ni interacciones en el momento de la consulta y fue creado y actualizado en la misma fecha (3 de noviembre de 2026), lo que indica una publicacion reciente y sin validacion por parte de la comunidad. No se dispone de informacion sobre arquitectura, parametros, contexto, cuantizaciones ni idiomas soportados.
 
-Dada la ausencia total de especificaciones tecnicas y de resultados publicados, esta ficha se limita a reflejar los datos disponibles en HuggingFace y marca explicitamente como "no disponible" cualquier parametro que no pueda verificarse. Se recomienda precaucion antes de evaluar o desplegar este modelo en entornos de produccion.
+Dada la ausencia total de especificaciones tecnicas y de resultados publicados, esta ficha se limita a reflejar los datos disponibles en Hugging Face y marca explicitamente como "no disponible" cualquier parametro que no pueda verificarse. Se recomienda precaucion antes de evaluar o desplegar este modelo en entornos de produccion.
 
 ## Especificaciones tecnicas
 
@@ -72,5 +72,5 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pictureheart/picturehearth-ormbg
+- Hugging Face: https://huggingface.co/pictureheart/picturehearth-ormbg
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion proporcionada.

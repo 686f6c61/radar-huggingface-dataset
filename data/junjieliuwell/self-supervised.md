@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`JunjieLiuwell/self-supervised` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación publicado en HuggingFace bajo la etiqueta `research-notes`. La propia model card lo indica de forma explícita: se trata de una nota exploratoria sobre el tema "Self Supervised" que recoge el alcance de una pregunta de investigación, posibles factores de confusión, una propuesta de comparación con líneas base emparejadas y requisitos de reproducibilidad, todo ello antes de reportar cualquier resultado. El autor declara que no hay mejoras de benchmark, ablaciones completadas, código liberado ni checkpoint entrenado.
+`JunjieLiuwell/self-supervised` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación publicado en Hugging Face bajo la etiqueta `research-notes`. La propia model card lo indica de forma explícita: se trata de una nota exploratoria sobre el tema "Self Supervised" que recoge el alcance de una pregunta de investigación, posibles factores de confusión, una propuesta de comparación con líneas base emparejadas y requisitos de reproducibilidad, todo ello antes de reportar cualquier resultado. El autor declara que no hay mejoras de benchmark, ablaciones completadas, código liberado ni checkpoint entrenado.
 
 El artefacto principal es un fichero `reading.md` con la nota completa, acompañado del `README.md`. El repositorio tiene un tamaño de 0,0 GB y registra 0 descargas y 0 likes, lo que es coherente con un documento de trabajo sin pesos distribuibles. La metadata de safetensors reporta 16.576 parámetros totales, un valor que no corresponde a ningún modelo funcional y que debe interpretarse como un residuo de metadata, no como el tamaño de una red entrenada.
 
@@ -87,7 +87,7 @@ Modelos comparables concretos: no disponible, al no existir un modelo funcional 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/JunjieLiuwell/self-supervised
+- Repositorio en Hugging Face: https://huggingface.co/JunjieLiuwell/self-supervised
 - `reading.md` (artefacto principal): https://huggingface.co/JunjieLiuwell/self-supervised/blob/main/reading.md
 - `README.md`: https://huggingface.co/JunjieLiuwell/self-supervised/blob/main/README.md
 - Papers, blogs, repositorios o demos adicionales: no disponibles en la información proporcionada.

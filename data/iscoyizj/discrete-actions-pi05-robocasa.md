@@ -66,14 +66,14 @@ Comparación con las cabezas pi0 en la misma semilla 7: DFlow 56,2%, CFlow 55,2%
 
 | Modelo | Parámetros | Contexto | Resultado RoboCasa365 (semilla 7) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DFlow (este repo) | 2,92B + ~370M | instrucción 48 tokens | 60,2% | Gemma | HuggingFace |
-| CFlow (este repo) | 2,92B + ~370M | instrucción 48 tokens | 58,2% | Gemma | HuggingFace |
-| DReg (este repo) | 2,92B + ~370M | instrucción 48 tokens | 55,8% | Gemma | HuggingFace |
-| CReg (este repo) | 2,92B + ~370M | instrucción 48 tokens | 42,4% | Gemma | HuggingFace |
-| DFlow pi0 (`discrete-actions-pi0-robocasa`) | no disponible | no disponible | 56,2% | Gemma | HuggingFace |
-| CFlow pi0 (`discrete-actions-pi0-robocasa`) | no disponible | no disponible | 55,2% | Gemma | HuggingFace |
-| DReg pi0 (`discrete-actions-pi0-robocasa`) | no disponible | no disponible | 51,2% | Gemma | HuggingFace |
-| CReg pi0 (`discrete-actions-pi0-robocasa`) | no disponible | no disponible | 40,6% | Gemma | HuggingFace |
+| DFlow (este repo) | 2,92B + ~370M | instrucción 48 tokens | 60,2% | Gemma | Hugging Face |
+| CFlow (este repo) | 2,92B + ~370M | instrucción 48 tokens | 58,2% | Gemma | Hugging Face |
+| DReg (este repo) | 2,92B + ~370M | instrucción 48 tokens | 55,8% | Gemma | Hugging Face |
+| CReg (este repo) | 2,92B + ~370M | instrucción 48 tokens | 42,4% | Gemma | Hugging Face |
+| DFlow pi0 (`discrete-actions-pi0-robocasa`) | no disponible | no disponible | 56,2% | Gemma | Hugging Face |
+| CFlow pi0 (`discrete-actions-pi0-robocasa`) | no disponible | no disponible | 55,2% | Gemma | Hugging Face |
+| DReg pi0 (`discrete-actions-pi0-robocasa`) | no disponible | no disponible | 51,2% | Gemma | Hugging Face |
+| CReg pi0 (`discrete-actions-pi0-robocasa`) | no disponible | no disponible | 40,6% | Gemma | Hugging Face |
 
 No se dispone de datos de otros modelos comparables (por ejemplo, políticas VLA de otros autores en RoboCasa365) en la información proporcionada.
 
@@ -89,7 +89,7 @@ No se dispone de datos de otros modelos comparables (por ejemplo, políticas VLA
 - Uso en producción: no hay código publicado (`discrete_actions` está pendiente), ni métricas de latencia, ni garantías de soporte; está orientado a investigación.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/iscoyizj/discrete-actions-pi05-robocasa
+- Modelo en Hugging Face: https://huggingface.co/iscoyizj/discrete-actions-pi05-robocasa
 - Artículo: https://arxiv.org/abs/2610.20429
 - Página del proyecto: https://iscoyizj.github.io/discrete-action-website/
 - Cabezas pi0 (resultados principales): https://huggingface.co/iscoyizj/discrete-actions-pi0-robocasa

@@ -46,7 +46,7 @@ El detalle tecnico mas relevante es el resultado negativo documentado: el kernel
 - No dispone de capacidades de agente, razonamiento multi-paso ni modo de pensamiento (thinking).
 - No dispone de vision, audio ni multimodalidad.
 - Sin capacidades multilingues: el entrenamiento es exclusivamente en ingles.
-- Sin `pipeline` declarado en HuggingFace, por lo que no es cargable con `transformers.pipeline()` de forma directa; requiere el codigo del repositorio del proyecto (`model/gpt.py`, clase `MiniGPT`).
+- Sin `pipeline` declarado en Hugging Face, por lo que no es cargable con `transformers.pipeline()` de forma directa; requiere el codigo del repositorio del proyecto (`model/gpt.py`, clase `MiniGPT`).
 
 ## Casos de uso
 
@@ -89,7 +89,7 @@ Nota: el autor no especifica si las latencias de CPU corresponden a un token, a 
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente. El autor no publica resultados en GPU concretas (no hay datos de A100, H100, RTX 4090, etc.), por lo que no se puede indicar rendimiento por modelo de tarjeta.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU de consumo de las ultimas generaciones (GTX 1050 o superior), e incluso en GPUs integradas con memoria compartida.
 - Cabe en CPU: si, y es el unico escenario con latencia medida (180,14 ms en FP32 y 165,93 ms en INT8, sin que la model card aclare la unidad de trabajo).
-- Opciones de despliegue: no hay `pipeline` declarado en HuggingFace, de modo que la ruta soportada es cargar el modelo con el codigo del repositorio del proyecto (`model.gpt.MiniGPT` + `safetensors.torch.load_model`). No se documentan integraciones verificadas con vLLM, TGI, Ollama o llama.cpp; la conversion a GGUF no esta publicada.
+- Opciones de despliegue: no hay `pipeline` declarado en Hugging Face, de modo que la ruta soportada es cargar el modelo con el codigo del repositorio del proyecto (`model.gpt.MiniGPT` + `safetensors.torch.load_model`). No se documentan integraciones verificadas con vLLM, TGI, Ollama o llama.cpp; la conversion a GGUF no esta publicada.
 - Throughput: no disponible. No se publican mediciones de tokens por segundo en GPU ni en CPU.
 
 ## Comparativa con modelos similares
@@ -112,7 +112,7 @@ Cualquier comparacion de calidad (perplejidad, coherencia, benchmarks) entre est
 - Solo ingles: el entrenamiento se realizo exclusivamente sobre datos en ingles; no hay soporte multilingue, y en castellano la salida esperable es incoherente.
 - Datos de entrenamiento muy reducidos: unos 100 MB de OpenWebText, insuficientes para adquirir conocimiento factual fiable. No debe usarse como fuente de informacion.
 - Sin soporte de instrucciones ni de herramientas: no hay plantilla de chat, ni tool calling, ni function calling, ni modo de razonamiento. No es adecuado como agente.
-- No es cargable con `transformers.pipeline()`: no hay tarea declarada en HuggingFace y la arquitectura requiere el codigo del repositorio del proyecto, lo que anade una dependencia externa no versionada en el propio repositorio de HuggingFace.
+- No es cargable con `transformers.pipeline()`: no hay tarea declarada en Hugging Face y la arquitectura requiere el codigo del repositorio del proyecto, lo que anade una dependencia externa no versionada en el propio repositorio de Hugging Face.
 - Pesos publicados en FP32, no en INT8: los resultados de cuantizacion son mediciones del autor, no artefactos descargables. Reproducirlos exige reimplementar el proceso.
 - Licencia permisiva: MIT permite uso comercial, modificacion y redistribucion sin obligacion de publicar cambios. No hay restricciones de uso documentadas, pero tampoco garantia alguna de idoneidad por parte del autor.
 - Adopcion nula: 0 descargas y 0 likes en el momento de la consulta. No hay evidencia de uso en produccion, ni issues, ni validacion independiente de las cifras publicadas.
@@ -120,7 +120,7 @@ Cualquier comparacion de calidad (perplejidad, coherencia, benchmarks) entre est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hiianish/mini-gpt2_decoder
+- Modelo en Hugging Face: https://huggingface.co/hiianish/mini-gpt2_decoder
 - Repositorio del proyecto: no disponible (la model card menciona los ficheros `upload_to_hf.py`, `generate.py` y `model/attention.py`, pero no incluye URL)
 - Paper tecnico: no disponible
 - Blog o articulo del autor: no disponible

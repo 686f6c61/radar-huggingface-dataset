@@ -4,7 +4,7 @@
 
 Qwen3.5-4B-heretic-LoRA es un adaptador LoRA publicado por el usuario VINAY-UMRETHE sobre el modelo base Qwen/Qwen3.5-4B. El nombre y las etiquetas del repositorio (heretic, uncensored, decensored, abliterated) indican que se trata de un fine-tuning orientado a eliminar o reducir los mecanismos de rechazo y alineacion del modelo original, una practica habitual en la comunidad open source para obtener variantes con menor censura en las respuestas. El repositorio se distribuye como adaptador LoRA en formato safetensors y no como pesos completos, con un tamano aproximado de 0,1 GB, coherente con un conjunto de matrices de bajo rango.
 
-La relevancia de esta ficha es doble. Por un lado, documenta una practica tecnica concreta (abliteration mediante LoRA) que interesa a investigadores que estudian alineacion, robustez y comportamiento de modelos. Por otro lado, advierte de que el modelo tiene acceso restringido en HuggingFace y de que su uso en produccion exige evaluar cuidadosamente los riesgos asociados a la ausencia de filtros de seguridad. No se dispone de informacion publica sobre el dataset de entrenamiento, el numero de tokens utilizados ni los hiperparametros del fine-tuning.
+La relevancia de esta ficha es doble. Por un lado, documenta una practica tecnica concreta (abliteration mediante LoRA) que interesa a investigadores que estudian alineacion, robustez y comportamiento de modelos. Por otro lado, advierte de que el modelo tiene acceso restringido en Hugging Face y de que su uso en produccion exige evaluar cuidadosamente los riesgos asociados a la ausencia de filtros de seguridad. No se dispone de informacion publica sobre el dataset de entrenamiento, el numero de tokens utilizados ni los hiperparametros del fine-tuning.
 
 El pipeline declarado es image-text-to-text, lo que sugiere que el modelo base Qwen3.5-4B incorpora capacidad multimodal de entrada de imagen y texto. Sin embargo, no hay informacion que confirme si el adaptador LoRA preserva, modifica o degrada dicha capacidad multimodal. Tampoco se han publicado resultados de benchmarks ni una model card detallada en la informacion disponible.
 
@@ -22,7 +22,7 @@ El pipeline declarado es image-text-to-text, lo que sugiere que el modelo base Q
 | Formato de pesos | Safetensors (adaptador LoRA) |
 | Modelo base | Qwen/Qwen3.5-4B |
 | Pipeline declarado | image-text-to-text |
-| Acceso | Restringido (gated) en HuggingFace |
+| Acceso | Restringido (gated) en Hugging Face |
 | Tamano del repositorio | 0,1 GB |
 
 ## Arquitectura y entrenamiento
@@ -78,7 +78,7 @@ No se dispone de informacion suficiente para comparar rendimiento, benchmarks ni
 ## Limitaciones y advertencias
 
 - El objetivo declarado del adaptador es reducir los rechazos y la censura; esto implica un mayor riesgo de generar contenido danino, ofensivo o inseguro, y hace imprescindible una capa externa de moderacion si se usa en cualquier aplicacion real.
-- Acceso restringido en HuggingFace: es necesario aceptar condiciones en la plataforma antes de descargar el modelo, lo que anade friccion a la reproducibilidad.
+- Acceso restringido en Hugging Face: es necesario aceptar condiciones en la plataforma antes de descargar el modelo, lo que anade friccion a la reproducibilidad.
 - No hay model card detallada, dataset documentado ni hiperparametros publicados; la reproducibilidad anunciada en las etiquetas no esta respaldada por artefactos visibles en la informacion proporcionada.
 - Riesgo de alucinacion heredado del modelo base, potencialmente agravado si el fine-tuning degrada capacidades de razonamiento o factualidad; no hay evaluaciones que lo cuantifiquen.
 - Idiomas soportados no documentados; no se puede garantizar un comportamiento adecuado en castellano ni en otros idiomas distintos del ingles.
@@ -90,6 +90,6 @@ No se dispone de informacion suficiente para comparar rendimiento, benchmarks ni
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/VINAY-UMRETHE/Qwen3.5-4B-heretic-LoRA
+- Repositorio Hugging Face: https://huggingface.co/VINAY-UMRETHE/Qwen3.5-4B-heretic-LoRA
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - No se han encontrado en la busqueda web papers, blogs, repositorios adicionales ni demos asociados a este adaptador concreto.

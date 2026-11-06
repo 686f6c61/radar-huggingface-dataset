@@ -60,5 +60,5 @@ No disponible. No existen modelos comparables porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Mich-aeltb/ocr-test
+- Repositorio en Hugging Face: https://huggingface.co/Mich-aeltb/ocr-test
 - No se han encontrado otros enlaces (paper, blog, demo) en los resultados de búsqueda que correspondan a este repositorio específico. Los resultados web sobre OCR (GitHub getomni-ai/benchmark, mindee/doctr, OCR Arena, ML Kit) no están relacionados con este repositorio.

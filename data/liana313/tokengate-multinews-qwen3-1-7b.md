@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Especialidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TokenGate MultiNews (este) | 1,7 B + LoRA + gate | No disponible | Resumen multilingüe con poda de KV-cache | Apache 2.0 | HuggingFace (liana313) |
-| tokengate-sftbase-multinews-qwen3-1.7b | 1,7 B + LoRA | No disponible | Baseline SFT sin gate, misma tarea | Apache 2.0 | HuggingFace (liana313) |
-| Qwen3-1.7B | 1,7 B | Según repositorio de Qwen | Modelo generalista base | Apache 2.0 | HuggingFace (Qwen) |
+| TokenGate MultiNews (este) | 1,7 B + LoRA + gate | No disponible | Resumen multilingüe con poda de KV-cache | Apache 2.0 | Hugging Face (liana313) |
+| tokengate-sftbase-multinews-qwen3-1.7b | 1,7 B + LoRA | No disponible | Baseline SFT sin gate, misma tarea | Apache 2.0 | Hugging Face (liana313) |
+| Qwen3-1.7B | 1,7 B | Según repositorio de Qwen | Modelo generalista base | Apache 2.0 | Hugging Face (Qwen) |
 
 No se dispone de datos de rendimiento comparado entre estas alternativas en la información proporcionada, por lo que la comparación se limita a parámetros, licencia y disponibilidad.
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparado entre estas alternativas en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/liana313/tokengate-multinews-qwen3-1.7b
+- Modelo en Hugging Face: https://huggingface.co/liana313/tokengate-multinews-qwen3-1.7b
 - Baseline SFT sin gate: https://huggingface.co/liana313/tokengate-sftbase-multinews-qwen3-1.7b
 - Artículo: https://arxiv.org/abs/2610.26754
 - Repositorio TokenGate: https://github.com/token-gate-llms/TokenGate

@@ -86,8 +86,8 @@ La comparación con otros modelos de la misma categoría (por ejemplo, Mistral 8
 
 ## Enlaces
 
-- [HuggingFace del modelo cuantizado](https://huggingface.co/xv0y5ncu/gemma-4-26B-A4B-it-GLQ-5bpw)
-- [Modelo base en HuggingFace](https://huggingface.co/google/gemma-4-26B-A4B-it)
+- [Hugging Face del modelo cuantizado](https://huggingface.co/xv0y5ncu/gemma-4-26B-A4B-it-GLQ-5bpw)
+- [Modelo base en Hugging Face](https://huggingface.co/google/gemma-4-26B-A4B-it)
 - [Página oficial de Gemma 4 (Google DeepMind)](https://deepmind.google/models/gemma/gemma-4/)
 - [Documentación de Gemma 4 en Google Cloud](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/maas/google/gemma-4-26b-a4b-it)
 - [Página de despliegue en Vast.ai](https://vast.ai/model/gemma-4-26b-a4b-it)

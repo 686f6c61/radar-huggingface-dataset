@@ -77,8 +77,8 @@ No se dispone de resultados de benchmarks comparativos para este modelo, por lo 
 
 ## Enlaces
 
-- [HuggingFace - modelo GGUF](https://huggingface.co/ermiaazarkhalili/Qwen3.8-2B-Function-Calling-xLAM-Unsloth-GGUF)
-- [HuggingFace - modelo base sin cuantizar](https://huggingface.co/ermiaazarkhalili/Qwen3.8-2B-Function-Calling-xLAM-Unsloth)
-- [HuggingFace - modelo base de Qwen3.8](https://huggingface.co/empero-ai/Qwen3.8-2B)
+- [Hugging Face - modelo GGUF](https://huggingface.co/ermiaazarkhalili/Qwen3.8-2B-Function-Calling-xLAM-Unsloth-GGUF)
+- [Hugging Face - modelo base sin cuantizar](https://huggingface.co/ermiaazarkhalili/Qwen3.8-2B-Function-Calling-xLAM-Unsloth)
+- [Hugging Face - modelo base de Qwen3.8](https://huggingface.co/empero-ai/Qwen3.8-2B)
 - [GitHub - Qwen3.8](https://github.com/QwenLM/Qwen3.8)
 - [Dataset de entrenamiento - xlam-function-calling-60k](https://huggingface.co/datasets/Salesforce/xlam-function-calling-60k)

@@ -84,7 +84,7 @@ No se dispone de información comparativa con otros modelos en la información p
 
 ## Enlaces
 
-- HuggingFace del paquete: https://huggingface.co/tt-hous/laguna-xs-2.1
+- Hugging Face del paquete: https://huggingface.co/tt-hous/laguna-xs-2.1
 - Modelo original de Poolside: https://huggingface.co/poolside/Laguna-XS-2.1
 - Repositorio tt-model-manager: https://github.com/tenstorrent/tt-model-manager
 - Commit de tt-metal: https://github.com/tenstorrent/tt-metal/commit/cbe68942207ef8c24c4c210a18ffb58565ba0443

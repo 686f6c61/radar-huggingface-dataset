@@ -2,7 +2,7 @@
 
 ## Resumen
 
-e5-base es un modelo de embeddings de frases (sentence transformer) desarrollado originalmente por Microsoft Research y redistribuido en el espacio de nombres `vllm-project` en HuggingFace. Su funcion principal es convertir texto en vectores densos de 768 dimensiones que capturan similitud semantica, lo que lo hace util para tareas de recuperacion de informacion, similitud semantica, clustering y clasificacion de texto. El modelo se basa en la arquitectura BERT y cuenta con 109.482.752 parametros totales.
+e5-base es un modelo de embeddings de frases (sentence transformer) desarrollado originalmente por Microsoft Research y redistribuido en el espacio de nombres `vllm-project` en Hugging Face. Su funcion principal es convertir texto en vectores densos de 768 dimensiones que capturan similitud semantica, lo que lo hace util para tareas de recuperacion de informacion, similitud semantica, clustering y clasificacion de texto. El modelo se basa en la arquitectura BERT y cuenta con 109.482.752 parametros totales.
 
 La relevancia de e5-base radica en su entrenamiento especifico para tareas de recuperacion, utilizando prefijos de instruccion (`query:` y `passage:`) que mejoran el rendimiento en escenarios de busqueda semantica. Es un modelo ampliamente utilizado como componente base en pipelines RAG (Retrieval-Augmented Generation) y sistemas de busqueda vectorial, y su integracion con librerias como `sentence-transformers` y `text-embeddings-inference` facilita su despliegue en produccion.
 
@@ -83,17 +83,17 @@ No se han publicado en la informacion disponible resultados comparativos con otr
 - VRAM estimada para inferencia: aproximadamente 0,5 GB en FP32 (109M de parametros x 4 bytes), reducible a ~0,25 GB en FP16 y ~0,12 GB en INT8.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM; funciona en GPUs de consumo como RTX 3060, RTX 4060, RTX 4090, asi como en A100 y H100 para despliegues de alto throughput.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU moderna e incluso en CPU para cargas moderadas.
-- Opciones de despliegue: `sentence-transformers`, `text-embeddings-inference` (TEI), vLLM (segun el espacio de nombres del repositorio), ONNX Runtime y HuggingFace Transformers.
+- Opciones de despliegue: `sentence-transformers`, `text-embeddings-inference` (TEI), vLLM (segun el espacio de nombres del repositorio), ONNX Runtime y Hugging Face Transformers.
 - Latencia y throughput estimados: no disponibles en la informacion proporcionada; dado el reducido tamano del modelo, se espera un throughput alto en GPU, pero no se aportan cifras concretas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| e5-base (este) | 109,5M | no disponible (tipico 512) | en | MIT | HuggingFace |
-| e5-small | no disponible en la informacion | no disponible | en | MIT | HuggingFace |
-| e5-large | no disponible en la informacion | no disponible | en | MIT | HuggingFace |
-| BGE-base-en | no disponible en la informacion | no disponible | en | MIT | HuggingFace |
+| e5-base (este) | 109,5M | no disponible (tipico 512) | en | MIT | Hugging Face |
+| e5-small | no disponible en la informacion | no disponible | en | MIT | Hugging Face |
+| e5-large | no disponible en la informacion | no disponible | en | MIT | Hugging Face |
+| BGE-base-en | no disponible en la informacion | no disponible | en | MIT | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada. La comparativa se limita a la familia e5 (small/base/large) y alternativas como BGE, pero sin cifras verificables.
 
@@ -109,7 +109,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vllm-project/e5-base
+- Hugging Face: https://huggingface.co/vllm-project/e5-base
 - Paper sobre e5 (arXiv 2212.03533): https://arxiv.org/abs/2212.03533
 - Paper sobre BEIR (arXiv 2104.08663): https://arxiv.org/abs/2104.08663
 - Paper sobre MTEB (arXiv 2210.07316): https://arxiv.org/abs/2210.07316

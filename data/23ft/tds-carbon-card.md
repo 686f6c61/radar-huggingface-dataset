@@ -66,5 +66,5 @@ No disponible. No existe un modelo comparable, ya que este repositorio no contie
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/23ft/tds-carbon-card
+- Repositorio en Hugging Face: https://huggingface.co/23ft/tds-carbon-card
 - Dashboard TDS MMC (referenciado en la busqueda web, sin relacion directa confirmada): https://mmc.tds.ai/

@@ -96,6 +96,6 @@ No se dispone de datos de rendimiento ni de especificaciones del modelo subyacen
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/manateelazycat/zh-clip-vit-roberta-large-patch14-runtime
+- Repositorio en Hugging Face: https://huggingface.co/manateelazycat/zh-clip-vit-roberta-large-patch14-runtime
 - Archivo de verificacion `checksums.json`: citado en la model card como parte del repositorio; no se proporciona URL directa en la informacion disponible.
 - Enlaces a papers, blogs, repositorios de codigo o demos: no disponibles. Las busquedas web realizadas no han devuelto resultados relacionados con este modelo.

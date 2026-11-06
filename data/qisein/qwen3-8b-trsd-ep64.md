@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qisein/Qwen3-8B-TRSD-ep64 | LoRA adapter sobre Qwen3-8B | 8B (base) | Heredado del base | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3-8B (base) | Modelo completo | 8B | 32K (referencia) | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3-8B-Instruct | Modelo completo instruido | 8B | 32K (referencia) | Apache 2.0 | HuggingFace |
+| qisein/Qwen3-8B-TRSD-ep64 | LoRA adapter sobre Qwen3-8B | 8B (base) | Heredado del base | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3-8B (base) | Modelo completo | 8B | 32K (referencia) | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3-8B-Instruct | Modelo completo instruido | 8B | 32K (referencia) | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos. La comparativa se limita a caracteristicas estructurales, ya que el adaptador no publica metricas.
 
@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos. La compar
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/qisein/Qwen3-8B-TRSD-ep64
+- Repositorio Hugging Face: https://huggingface.co/qisein/Qwen3-8B-TRSD-ep64
 - Model card (README): https://huggingface.co/qisein/Qwen3-8B-TRSD-ep64/blob/main/README.md
 - Pagina en FriendliAI: https://friendli.ai/models/qisein/Qwen3-8B-TRSD-ep64
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B

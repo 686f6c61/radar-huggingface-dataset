@@ -89,7 +89,7 @@ No se dispone de datos verificables de terceros: los resultados de la busqueda w
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zugquants/Qwen3.8-27B-Turbo-Brilliance-50X-Reasoning-Instruct-NEO-MAX-MTP-GGUF
+- Repositorio Hugging Face: https://huggingface.co/zugquants/Qwen3.8-27B-Turbo-Brilliance-50X-Reasoning-Instruct-NEO-MAX-MTP-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Paper, blog o repositorio del autor: no disponible
 - Demo: no disponible

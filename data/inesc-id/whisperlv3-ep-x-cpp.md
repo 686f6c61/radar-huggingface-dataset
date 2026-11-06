@@ -6,7 +6,7 @@ WhisperLv3-EP-X-CPP es un modelo de reconocimiento automático del habla (ASR) e
 
 El modelo resuelve un problema práctico de los sistemas ASR en producción: la mayoría de los modelos Whisper originales devuelven transcripciones sin formato, lo que obliga a un postprocesado posterior para restaurar mayúsculas y puntuación. Esta variante integra ese formateo directamente en la salida, manteniendo un WER equivalente al mejor modelo EP del paper CAMÕES (12,3 % de media EP frente a 12,4 % del modelo normalizado).
 
-Está empaquetado para WhisperX mediante CTranslate2 en float16, con un tamaño de repositorio de 3,1 GB, y se distribuye a través de HuggingFace con la librería `whisperx`. Su relevancia actual radica en que cubre un hueco específico: ASR de alta calidad para portugués europeo con salida lista para publicación o subtitulado, sin depender de modelos multilingües genéricos.
+Está empaquetado para WhisperX mediante CTranslate2 en float16, con un tamaño de repositorio de 3,1 GB, y se distribuye a través de Hugging Face con la librería `whisperx`. Su relevancia actual radica en que cubre un hueco específico: ASR de alta calidad para portugués europeo con salida lista para publicación o subtitulado, sin depender de modelos multilingües genéricos.
 
 ## Especificaciones tecnicas
 
@@ -91,9 +91,9 @@ Desglose por conjunto de test:
 
 | Modelo | Parámetros | Contexto | WER EP Avg. (CAMÕES) | Salida con formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| WhisperLv3-EP-X-CPP (este modelo) | 1,55 B | 30 s audio | 12,3 | Sí (mayúsculas + puntuación) | no disponible | HuggingFace (WhisperX/CTranslate2) |
-| WhisperLv3-EP-X | 1,55 B | 30 s audio | 12,4 | No (texto normalizado) | no disponible | HuggingFace |
-| openai/whisper-large-v3 | 1,55 B | 30 s audio | no disponible en la información | No (formato variable) | MIT (modelo base OpenAI) | HuggingFace |
+| WhisperLv3-EP-X-CPP (este modelo) | 1,55 B | 30 s audio | 12,3 | Sí (mayúsculas + puntuación) | no disponible | Hugging Face (WhisperX/CTranslate2) |
+| WhisperLv3-EP-X | 1,55 B | 30 s audio | 12,4 | No (texto normalizado) | no disponible | Hugging Face |
+| openai/whisper-large-v3 | 1,55 B | 30 s audio | no disponible en la información | No (formato variable) | MIT (modelo base OpenAI) | Hugging Face |
 
 No se dispone en la información proporcionada de comparativas con otros modelos ASR específicos para portugués europeo más allá de los citados.
 
@@ -110,7 +110,7 @@ No se dispone en la información proporcionada de comparativas con otros modelos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/inesc-id/WhisperLv3-EP-X-CPP
+- Modelo en Hugging Face: https://huggingface.co/inesc-id/WhisperLv3-EP-X-CPP
 - Modelo hermano WhisperLv3-EP-X: https://huggingface.co/inesc-id/WhisperLv3-EP-X
 - Demo CAMÕES ASR: https://huggingface.co/spaces/inesc-id/CAMOES-ASR-DEMO
 - Paper CAMÕES (arXiv): https://arxiv.org/abs/2508.19721

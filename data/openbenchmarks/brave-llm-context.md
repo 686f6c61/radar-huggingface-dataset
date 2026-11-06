@@ -66,7 +66,7 @@ No disponible. Este repositorio no representa un modelo, sino una API de búsque
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/openbenchmarks/brave-llm-context)
+- [Repositorio en Hugging Face](https://huggingface.co/openbenchmarks/brave-llm-context)
 - [Documentación oficial de LLM Context API](https://api-dashboard.search.brave.com/documentation/services/llm-context)
 - [Blog de Brave sobre el lanzamiento de la API](https://brave.com/blog/most-powerful-search-api-for-ai/)
 - [Leaderboard de OpenBenchmarks OB News Websearch](https://huggingface.co/datasets/openbenchmarks/OB-News-Websearch)

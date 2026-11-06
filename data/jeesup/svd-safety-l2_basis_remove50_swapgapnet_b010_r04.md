@@ -2,7 +2,7 @@
 
 ## Resumen
 
-svd-safety-l2_basis_remove50_swapgapnet_b010_r04 es un checkpoint de investigación derivado de meta-llama/Llama-2-7b-chat-hf, publicado por el usuario Jeesup en HuggingFace. No es un modelo conversacional de propósito general: es una celda concreta de una rejilla experimental que estudia cómo la compresión por descomposición en valores singulares (SVD) degrada el comportamiento de seguridad de un modelo alineado y qué regla de selección de componentes repara mejor ese daño.
+svd-safety-l2_basis_remove50_swapgapnet_b010_r04 es un checkpoint de investigación derivado de meta-llama/Llama-2-7b-chat-hf, publicado por el usuario Jeesup en Hugging Face. No es un modelo conversacional de propósito general: es una celda concreta de una rejilla experimental que estudia cómo la compresión por descomposición en valores singulares (SVD) degrada el comportamiento de seguridad de un modelo alineado y qué regla de selección de componentes repara mejor ese daño.
 
 El punto de partida es Llama-2-7b-chat comprimido al 50,00% de sus parámetros densos mediante Basis Sharing (técnica presentada en ICLR 2025, con bases compartidas sobre grupos de 2 capas adyacentes). Sobre esa base comprimida se aplican 4 de las 10 rondas previstas de un procedimiento iterativo de intercambio de parámetros neutro en parámetros («parameter-neutral swap»), guiado por la regla swapgapnet_iter, con un presupuesto de hasta el 0,1% de los parámetros densos por ronda y un presupuesto total de la ejecución completa del 1,0%. El resultado es un checkpoint intermedio, con una fracción de parámetros efectiva de 0,4998.
 
@@ -83,10 +83,10 @@ Los datos estructurales de las alternativas que figuran a continuacion no proced
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento de seguridad |
 |---|---|---|---|---|---|
-| Jeesup/svd-safety-l2_basis_remove50_swapgapnet_b010_r04 | 6,74 B almacenados; fraccion densa efectiva 0,4998 | 4096 tokens | Llama 2 Community License | HuggingFace, 0 descargas | AdvBench ASR 0,2212; StrongREJECT ASR 0,2843; over-refusal 0,0841 |
-| meta-llama/Llama-2-7b-chat-hf (modelo base) | 6,74 B densos | 4096 tokens | Llama 2 Community License | HuggingFace | No disponible en la informacion proporcionada |
-| Llama 3.1 8B Instruct | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Llama 3.1 Community License | HuggingFace | no disponible |
-| Mistral 7B Instruct | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Apache 2.0 | HuggingFace | no disponible |
+| Jeesup/svd-safety-l2_basis_remove50_swapgapnet_b010_r04 | 6,74 B almacenados; fraccion densa efectiva 0,4998 | 4096 tokens | Llama 2 Community License | Hugging Face, 0 descargas | AdvBench ASR 0,2212; StrongREJECT ASR 0,2843; over-refusal 0,0841 |
+| meta-llama/Llama-2-7b-chat-hf (modelo base) | 6,74 B densos | 4096 tokens | Llama 2 Community License | Hugging Face | No disponible en la informacion proporcionada |
+| Llama 3.1 8B Instruct | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Llama 3.1 Community License | Hugging Face | no disponible |
+| Mistral 7B Instruct | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Apache 2.0 | Hugging Face | no disponible |
 
 La comparacion relevante para el proposito del artefacto no es con modelos alternativos, sino con las demas celdas de la rejilla del mismo estudio (distintas reglas de seleccion y presupuestos) y con la linea base densa sin comprimir.
 
@@ -105,7 +105,7 @@ La comparacion relevante para el proposito del artefacto no es con modelos alter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_basis_remove50_swapgapnet_b010_r04
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_basis_remove50_swapgapnet_b010_r04
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Licencia y politica de uso: LICENSE.txt y USE_POLICY.md incluidos en el propio repositorio (Llama 2 Community License)
 - Paper de Basis Sharing (ICLR 2025): citado en la model card sin enlace; no disponible

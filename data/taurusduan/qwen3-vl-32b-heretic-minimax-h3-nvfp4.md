@@ -77,7 +77,7 @@ La diferencia clave con la variante de Abiray es que esta ultima se horneo direc
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/taurusduan/Qwen3-VL-32B-Heretic-MiniMax-H3-NVFP4
+- Repositorio Hugging Face: https://huggingface.co/taurusduan/Qwen3-VL-32B-Heretic-MiniMax-H3-NVFP4
 - Upstream (ethanfel): https://huggingface.co/ethanfel/Qwen3-VL-32B-Ultra-Heretic-MiniMax-H3-ComfyUI-INT8-ConvRot
 - MiniMax-H3 (oficial): https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Comfy-Org MiniMax-H3 (oficial): https://huggingface.co/Comfy-Org/MiniMax-H3

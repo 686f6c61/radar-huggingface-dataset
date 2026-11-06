@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`halle01/ivl4b-full-backup` es un repositorio alojado en HuggingFace por el usuario `halle01` que, segun su propia model card, contiene un punto de restauracion ("restore point") del estado completo de un entrenamiento: checkpoints, archivos de entorno y manifiestos de experimentos anteriores. No se presenta como un modelo entrenado listo para inferencia, sino como un artefacto de respaldo. El repositorio ocupa 8,0 GB, esta etiquetado con `safetensors` y declara licencia Apache 2.0.
+`halle01/ivl4b-full-backup` es un repositorio alojado en Hugging Face por el usuario `halle01` que, segun su propia model card, contiene un punto de restauracion ("restore point") del estado completo de un entrenamiento: checkpoints, archivos de entorno y manifiestos de experimentos anteriores. No se presenta como un modelo entrenado listo para inferencia, sino como un artefacto de respaldo. El repositorio ocupa 8,0 GB, esta etiquetado con `safetensors` y declara licencia Apache 2.0.
 
 La informacion publica disponible es minima: no hay pipeline declarado, no se especifican idiomas, no hay descargas ni "likes", y la model card se limita a una frase descriptiva sin detallar arquitectura, numero de parametros, longitud de contexto ni datos de entrenamiento. El identificador del repositorio incluye la cadena "4b", pero no hay ninguna confirmacion en la documentacion de que se corresponda con 4.000 millones de parametros; se trata de una suposicion no verificada.
 
@@ -25,8 +25,8 @@ Por tanto, esta ficha debe interpretarse como una evaluacion de un contenedor de
 | Tamano del repositorio | 8,0 GB |
 | Descargas | 0 |
 | Likes | 0 |
-| Fecha de creacion | 2026-09-13T20:00:09Z (segun metadatos de HuggingFace) |
-| Ultima actualizacion | 2026-09-13T20:10:27Z (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-13T20:00:09Z (segun metadatos de Hugging Face) |
+| Ultima actualizacion | 2026-09-13T20:10:27Z (segun metadatos de Hugging Face) |
 | Region declarada | us |
 | Model card | una sola frase descriptiva, sin especificaciones tecnicas |
 
@@ -99,7 +99,7 @@ No disponible. Este repositorio no es un modelo publicado con capacidades declar
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/halle01/ivl4b-full-backup
+- Repositorio en Hugging Face: https://huggingface.co/halle01/ivl4b-full-backup
 - Paper: no disponible
 - Blog o anuncio: no disponible
 - Repositorio de codigo: no disponible

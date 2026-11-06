@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`malim1994/mixer-generation` es un repositorio de HuggingFace publicado por el usuario malim1994 que contiene una implementacion propia de una arquitectura **Mixer** a escala *base*, empaquetada junto con un script ejecutable (`run.py`), un fichero de configuracion (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicializacion en formato safetensors. Segun la propia model card, **no es un modelo entrenado**: se trata de un punto de partida reproducible pensado para *smoke tests* y experimentacion, no de una release con pesos entrenados ni con resultados de benchmarks.
+`malim1994/mixer-generation` es un repositorio de Hugging Face publicado por el usuario malim1994 que contiene una implementacion propia de una arquitectura **Mixer** a escala *base*, empaquetada junto con un script ejecutable (`run.py`), un fichero de configuracion (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicializacion en formato safetensors. Segun la propia model card, **no es un modelo entrenado**: se trata de un punto de partida reproducible pensado para *smoke tests* y experimentacion, no de una release con pesos entrenados ni con resultados de benchmarks.
 
 El modelo declara 16.576 parametros totales segun los metadatos de safetensors, lo que lo situa en un orden de magnitud puramente experimental, lejos de cualquier LLM utilizable en produccion. La arquitectura combina *grouped query attention* con fusion mediante *cross attention*, activacion mish y normalizacion groupnorm, y la receta por defecto usa SGD con un schedule coseno. No se declara ninguna puntuacion de benchmark ni se presenta el checkpoint como un modelo con rendimiento validado.
 
@@ -53,7 +53,7 @@ En cuanto al entrenamiento, **no hay evidencia de un entrenamiento completado**.
 - **Pruebas de humo (*smoke tests*) en CI/CD**: dado su tamano de 16.576 parametros y su repositorio de 0,0 GB, se puede integrar en una pipeline de integracion continua que valide en segundos que el codigo de inferencia arranca, instancia el modelo y produce una salida con la forma esperada.
 - **Plantilla de investigacion en arquitecturas Mixer**: investigadores que quieran comparar variantes de *grouped query attention*, *cross attention* o normalizacion groupnorm pueden partir de este esqueleto y sustituir bloques, manteniendo `config.json` y `training_args.json` como registro reproducible de la configuracion.
 - **Desarrollo de arneses de evaluacion**: sirve como linea base de capacidad minima para validar que un *benchmark harness* propio (medicion de metricas, control de semillas, registro de versiones de entorno) funciona antes de lanzarlo contra modelos reales.
-- **Docencia y formacion**: util para explicar en un aula o taller como se estructura un repositorio de modelo en HuggingFace (config, training args, pesos, README) sin la complejidad de un modelo de miles de millones de parametros.
+- **Docencia y formacion**: util para explicar en un aula o taller como se estructura un repositorio de modelo en Hugging Face (config, training args, pesos, README) sin la complejidad de un modelo de miles de millones de parametros.
 - **Validacion de adaptadores personalizados**: permite probar el adaptador que haya que escribir para cargar esta arquitectura concreta en frameworks genericos, ya que la model card advierte que las APIs automaticas no la soportan directamente.
 - **Reproducibilidad de recetas de entrenamiento**: el par `training_args.json` + `config.json` sirve para documentar y replicar una receta (SGD, schedule coseno) en experimentos controlados con la misma exposicion de datos y presupuesto de ajuste.
 
@@ -87,9 +87,9 @@ No disponible. No se pueden establecer comparaciones significativas con otros mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/malim1994/mixer-generation
+- Hugging Face: https://huggingface.co/malim1994/mixer-generation
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
-- Repositorio de codigo adicional: no disponible (el codigo se distribuye dentro del propio repositorio de HuggingFace: `run.py`, `config.json`, `training_args.json`)
+- Repositorio de codigo adicional: no disponible (el codigo se distribuye dentro del propio repositorio de Hugging Face: `run.py`, `config.json`, `training_args.json`)
 - Demo: no disponible
 - Nota sobre la busqueda web: los resultados recuperados no guardan ninguna relacion con el modelo (tratan sobre el cliente de sincronizacion OneDrive), por lo que no se incluye ninguno como enlace relevante.

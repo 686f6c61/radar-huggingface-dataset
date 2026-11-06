@@ -66,7 +66,7 @@ No se dispone de datos de rendimiento comparativos. Sin embargo, se puede compar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Panda512/smolvla-2acts-50eps-0816-skills
+- Hugging Face: https://huggingface.co/Panda512/smolvla-2acts-50eps-0816-skills
 - Paper SmolVLA: https://arxiv.org/abs/2506.01844
 - Dataset: https://huggingface.co/datasets/Panda512/record-0816-skills
 - Modelo base: https://huggingface.co/lerobot/smolvla_base

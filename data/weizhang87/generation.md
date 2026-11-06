@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tiny Transformer for Generation es un prototipo de investigación publicado por el usuario weizhang87 en HuggingFace. Se trata de un transformer de escala "base" concebido como punto de partida experimental para tareas de generación, no como un modelo entrenado y validado. Su tamaño real es de apenas 24.832 parámetros, lo que lo sitúa en la categoría de modelos de juguete (toy models) destinados a pruebas de humo (smoke tests), validación de pipelines y experimentación con configuraciones de arquitectura.
+Tiny Transformer for Generation es un prototipo de investigación publicado por el usuario weizhang87 en Hugging Face. Se trata de un transformer de escala "base" concebido como punto de partida experimental para tareas de generación, no como un modelo entrenado y validado. Su tamaño real es de apenas 24.832 parámetros, lo que lo sitúa en la categoría de modelos de juguete (toy models) destinados a pruebas de humo (smoke tests), validación de pipelines y experimentación con configuraciones de arquitectura.
 
 El repositorio incluye el código de entrenamiento y ajuste (`finetune.py`), los ficheros de configuración (`config.json`, `training_args.json`) y un checkpoint de inicialización en formato safetensors. La model card es explícita al señalar que el checkpoint no ha sido entrenado ni auditado, y que no se reclama ninguna puntuación de benchmark. Por tanto, no debe confundirse con un modelo listo para producción ni con un resultado de investigación reproducible.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| weizhang87/generation | 24.832 | no disponible | no disponible | MIT | HuggingFace |
+| weizhang87/generation | 24.832 | no disponible | no disponible | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de modelos comparables con datos publicados en la información proporcionada. Existen otras familias de transformers de juguete y prototipos didácticos, pero no se han facilitado sus especificaciones ni resultados, por lo que no procede incluirlos en la comparativa.
@@ -82,6 +82,6 @@ No se dispone de modelos comparables con datos publicados en la información pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/weizhang87/generation
+- Hugging Face: https://huggingface.co/weizhang87/generation
 - Ficheros del repositorio: `finetune.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Papers, blogs, repositorios o demos adicionales: no disponible

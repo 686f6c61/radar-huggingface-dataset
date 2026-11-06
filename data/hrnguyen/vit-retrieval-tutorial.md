@@ -70,5 +70,5 @@ No disponible. Este modelo es un checkpoint de inicialización sin entrenar, por
 
 ## Enlaces
 
-- [HuggingFace: hrnguyen/vit-retrieval-tutorial](https://huggingface.co/hrnguyen/vit-retrieval-tutorial)
+- [Hugging Face: hrnguyen/vit-retrieval-tutorial](https://huggingface.co/hrnguyen/vit-retrieval-tutorial)
 - [Repositorio de referencia de ViT de Google Research](https://github.com/google-research/vision_transformer) (contexto general sobre arquitecturas ViT, no específico de este modelo)

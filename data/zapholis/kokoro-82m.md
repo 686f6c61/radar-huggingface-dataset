@@ -92,7 +92,7 @@ La ventaja competitiva de Kokoro en esta comparativa es la combinacion de tamano
 
 ## Enlaces
 
-- Repositorio en HuggingFace (este modelo): https://huggingface.co/Zapholis/Kokoro-82M
+- Repositorio en Hugging Face (este modelo): https://huggingface.co/Zapholis/Kokoro-82M
 - Repositorio de referencia: https://huggingface.co/hexgrad/Kokoro-82M
 - Modelo base: https://huggingface.co/yl4579/StyleTTS2-LJSpeech
 - Repositorio GitHub: https://github.com/hexgrad/kokoro

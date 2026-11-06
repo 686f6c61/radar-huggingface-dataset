@@ -75,8 +75,8 @@ No hay modelos directamente comparables en la información proporcionada: se tra
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LINK-01 (este modelo) | 0,8B (base) + LoRA | No disponible | Decisión `choose_object` en robot simulado | Apache 2.0 | HuggingFace (adaptador) |
-| Qwen/Qwen3.5-0.8B | 0,8B | No disponible | Lenguaje general | No disponible en la información | HuggingFace |
+| LINK-01 (este modelo) | 0,8B (base) + LoRA | No disponible | Decisión `choose_object` en robot simulado | Apache 2.0 | Hugging Face (adaptador) |
+| Qwen/Qwen3.5-0.8B | 0,8B | No disponible | Lenguaje general | No disponible en la información | Hugging Face |
 | Cerebro PPO (profesor) | No disponible | No aplica | Política de decisión en simulador web | No disponible | Solo referenciado en la model card |
 
 ## Limitaciones y advertencias
@@ -93,7 +93,7 @@ No hay modelos directamente comparables en la información proporcionada: se tra
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/spmoon/connectailab-rl-jjangu-v3-link01
+- Hugging Face: https://huggingface.co/spmoon/connectailab-rl-jjangu-v3-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - GitHub del proyecto (código de entrenamiento): https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

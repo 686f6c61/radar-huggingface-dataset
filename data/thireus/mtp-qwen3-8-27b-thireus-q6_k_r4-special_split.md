@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Thireus/mtp-Qwen3.8-27B-THIREUS-Q6_K_R4-SPECIAL_SPLIT` es un artefacto publicado en HuggingFace por el usuario Thireus bajo licencia MIT. El nombre sugiere que se trata de una cuantización (formato GGUF, cuantización Q6_K) de un modelo base denominado "Qwen3.8-27B", posiblemente una variante de la familia Qwen 3 con 27 mil millones de parámetros. Sin embargo, la model card publicada no contiene más información que la declaración de licencia, por lo que no es posible confirmar la arquitectura, el tamaño real, el contexto, ni las capacidades del modelo.
+El modelo `Thireus/mtp-Qwen3.8-27B-THIREUS-Q6_K_R4-SPECIAL_SPLIT` es un artefacto publicado en Hugging Face por el usuario Thireus bajo licencia MIT. El nombre sugiere que se trata de una cuantización (formato GGUF, cuantización Q6_K) de un modelo base denominado "Qwen3.8-27B", posiblemente una variante de la familia Qwen 3 con 27 mil millones de parámetros. Sin embargo, la model card publicada no contiene más información que la declaración de licencia, por lo que no es posible confirmar la arquitectura, el tamaño real, el contexto, ni las capacidades del modelo.
 
 A fecha de creación (15 de agosto de 2026), el modelo no registra descargas ni valoraciones, lo que indica que es una publicación reciente o de baja difusión. La falta de documentación técnica hace que cualquier uso en producción deba realizarse con extrema cautela, ya que se desconocen los detalles de entrenamiento, los datos utilizados y las limitaciones del modelo.
 
@@ -21,7 +21,7 @@ A fecha de creación (15 de agosto de 2026), el modelo no registra descargas ni 
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura, el proceso de entrenamiento, el dataset utilizado ni las técnicas de alineación (RLHF, DPO, etc.) en la model card ni en los metadatos de HuggingFace. El nombre "mtp-Qwen3.8-27B" podría hacer referencia a un modelo basado en Qwen 3 con 27B parámetros, pero no existe confirmación oficial. Tampoco se dispone de datos sobre el número de tokens de entrenamiento, la composición del dataset o innovaciones técnicas como decodificación especulativa o atención lineal.
+No se ha publicado información sobre la arquitectura, el proceso de entrenamiento, el dataset utilizado ni las técnicas de alineación (RLHF, DPO, etc.) en la model card ni en los metadatos de Hugging Face. El nombre "mtp-Qwen3.8-27B" podría hacer referencia a un modelo basado en Qwen 3 con 27B parámetros, pero no existe confirmación oficial. Tampoco se dispone de datos sobre el número de tokens de entrenamiento, la composición del dataset o innovaciones técnicas como decodificación especulativa o atención lineal.
 
 ## Capacidades
 
@@ -53,4 +53,4 @@ No disponible. No se ha publicado información que permita comparar este modelo 
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-Q6_K_R4-SPECIAL_SPLIT
+- Página del modelo en Hugging Face: https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-Q6_K_R4-SPECIAL_SPLIT

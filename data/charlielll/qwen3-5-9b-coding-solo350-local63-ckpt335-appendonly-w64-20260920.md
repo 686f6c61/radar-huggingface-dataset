@@ -6,13 +6,13 @@ Qwen3.5-9B-coding-solo350-local63-ckpt335-appendonly-w64-20260920 es una exporta
 
 El modelo tiene 8.953.803.264 parámetros (~8,95 B) almacenados en safetensors, con un repositorio de 17,9 GB, lo que corresponde a pesos en precisión de 16 bits. Es relevante porque documenta un caso poco habitual: un checkpoint intermedio de RL (no el paso final) exportado explícitamente para reproducir una campaña de evaluación sobre SWE-bench Verified, con plantilla de chat de evaluación separada de la nativa y con trazabilidad de revisiones de exportación y de coordinador.
 
-La información disponible no incluye especificaciones de longitud de contexto, idiomas, cuantizaciones publicadas ni resultados numéricos de benchmarks; el autor remite los resultados completos a un dataset aparte. La licencia declarada es Apache-2.0, y el modelo está marcado como compatible con endpoints de HuggingFace.
+La información disponible no incluye especificaciones de longitud de contexto, idiomas, cuantizaciones publicadas ni resultados numéricos de benchmarks; el autor remite los resultados completos a un dataset aparte. La licencia declarada es Apache-2.0, y el modelo está marcado como compatible con endpoints de Hugging Face.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (tags de HuggingFace indican familia qwen3_5; no se detalla en la informacion proporcionada) |
+| Arquitectura | no disponible (tags de Hugging Face indican familia qwen3_5; no se detalla en la informacion proporcionada) |
 | Parametros totales | 8.953.803.264 (~8,95 B) |
 | Parametros activos | no aplica / no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
@@ -30,7 +30,7 @@ La información disponible no incluye especificaciones de longitud de contexto, 
 
 ## Arquitectura y entrenamiento
 
-No se proporciona en la informacion disponible la descripcion detallada de la arquitectura interna (número de capas, tipo de atención, vocabulario, posición de las cabezas, etc.). Los tags de HuggingFace indican la familia `qwen3_5` y la presencia de componentes de tipo `image-text-to-text`, lo que sugiere capacidades multimodales, pero la model card no documenta ningún módulo de visión ni proceso de entrenamiento multimodal para este checkpoint. El pipeline declarado es `reinforcement-learning`.
+No se proporciona en la informacion disponible la descripcion detallada de la arquitectura interna (número de capas, tipo de atención, vocabulario, posición de las cabezas, etc.). Los tags de Hugging Face indican la familia `qwen3_5` y la presencia de componentes de tipo `image-text-to-text`, lo que sugiere capacidades multimodales, pero la model card no documenta ningún módulo de visión ni proceso de entrenamiento multimodal para este checkpoint. El pipeline declarado es `reinforcement-learning`.
 
 Lo que sí está documentado es el procedimiento de ajuste y evaluación. El entrenamiento se realizó en modo "Solo RL" partiendo de Shangy/Qwen3.5-9B-OPD-Coding (que a su vez no es el modelo bruto: el autor indica que la inicialización del entrenamiento se registra aparte en `ORIGINAL_CHECKPOINT.json` y que "Solo350 local63" no es la línea base del modelo sin ajustar). El checkpoint publicado es intermedio, correspondiente a 336 actualizaciones del optimizador. La evaluación se hizo en modo "orch", con un orquestador MiniMax-M2.7 y este modelo de 9B actuando como worker, con el modo de razonamiento (thinking) desactivado. Una criba completa independiente de 150 tareas usa 64 episodios concurrentes y sandboxes de 10 GiB, con un evaluador "append-only" con control de regresión aplicado por igual a los cuatro modelos comparados. El autor advierte explícitamente que las ejecuciones previas a 32 concurrencias con el harness original se etiquetan como contexto histórico y no como líneas base emparejadas, y que una única puntuación no permite afirmar una mejora estable.
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Cuantización a 8 bits: aproximadamente 9-10 GB de pesos. Cuantización a 4 bits: aproximadamente 5-6 GB de pesos. Estos valores son estimaciones por tamaño de parámetros; no se han publicado ficheros cuantizados oficiales.
 - GPU recomendadas: para bf16 sin cuantizar, GPU de 24 GB o más (RTX 4090, L40S, A100 40/80 GB, H100). Con cuantización a 8 o 4 bits, cabe en GPU de consumo de 12-16 GB.
 - Cabe en GPU de consumo: sí, en bf16 con 24 GB con margen ajustado según contexto; en 4-8 bits en tarjetas de 8-12 GB. No hay confirmación oficial de que el modelo haya sido probado en estas configuraciones.
-- Opciones de despliegue: `transformers` (librería declarada) y endpoints compatibles de HuggingFace. No se documentan recetas para vLLM, SGLang, llama.cpp, Ollama o TGI, ni se publican pesos GGUF.
+- Opciones de despliegue: `transformers` (librería declarada) y endpoints compatibles de Hugging Face. No se documentan recetas para vLLM, SGLang, llama.cpp, Ollama o TGI, ni se publican pesos GGUF.
 - Latencia y throughput estimados: no disponible.
 - Requisito adicional de la campaña de evaluación: contenedores Docker con sandboxes de 10 GiB y ejecución de 64 episodios concurrentes, lo que implica infraestructura de orquestación con CPU y disco considerables, no solo GPU.
 
@@ -77,7 +77,7 @@ La información proporcionada solo permite comparar con el modelo base y con los
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (CharlieLLL/Qwen3.5-9B-coding-solo350-local63-ckpt335...) | 8,95 B | no disponible | no disponible (resultados en dataset aparte) | Apache-2.0 | Pesos safetensors en HuggingFace, 0 descargas |
+| Este modelo (CharlieLLL/Qwen3.5-9B-coding-solo350-local63-ckpt335...) | 8,95 B | no disponible | no disponible (resultados en dataset aparte) | Apache-2.0 | Pesos safetensors en Hugging Face, 0 descargas |
 | Shangy/Qwen3.5-9B-OPD-Coding (modelo base) | ~8,95 B (no confirmado en la informacion) | no disponible | no disponible | no disponible | Referenciado como base_model |
 | Otros modelos de la campana eval150 (3 adicionales) | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativas genericas de codigo de ~8-9 B (p. ej. familias tipo Qwen-Coder o Llama de ese rango) | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -101,7 +101,7 @@ No se dispone de datos verificados en la informacion proporcionada para establec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CharlieLLL/Qwen3.5-9B-coding-solo350-local63-ckpt335-appendonly-w64-20260920
+- Modelo en Hugging Face: https://huggingface.co/CharlieLLL/Qwen3.5-9B-coding-solo350-local63-ckpt335-appendonly-w64-20260920
 - Dataset de resultados de la campana eval150: https://huggingface.co/datasets/CharlieLLL/SWEbench-Verified-eval150-M2.7-new-checkpoints-appendonly-w64-20260920
 - Modelo base: https://huggingface.co/Shangy/Qwen3.5-9B-OPD-Coding
 - Paper, blog o repositorio adicional: no disponible en la informacion proporcionada (las busquedas web no devolvieron resultados relacionados con el modelo)

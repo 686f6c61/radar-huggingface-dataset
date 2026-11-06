@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PriceLab Qwen3-0.6B es un ajuste fino supervisado del modelo Qwen/Qwen3-0.6B (596.049.920 parametros) desarrollado por Gaurab Das y publicado en HuggingFace. Su unica funcion es estimar el precio historico en dolares enteros de un producto descrito en ingles a partir de su descripcion textual: no consulta listados actuales ni realiza busquedas de mercado. El entrenamiento se hizo con QLoRA de rango 16 sobre una base congelada en 4-bit NF4 y el adaptador resultante se fusiono en pesos float32 independientes, de modo que el repositorio no necesita ficheros de adaptador para cargarse.
+PriceLab Qwen3-0.6B es un ajuste fino supervisado del modelo Qwen/Qwen3-0.6B (596.049.920 parametros) desarrollado por Gaurab Das y publicado en Hugging Face. Su unica funcion es estimar el precio historico en dolares enteros de un producto descrito en ingles a partir de su descripcion textual: no consulta listados actuales ni realiza busquedas de mercado. El entrenamiento se hizo con QLoRA de rango 16 sobre una base congelada en 4-bit NF4 y el adaptador resultante se fusiono en pesos float32 independientes, de modo que el repositorio no necesita ficheros de adaptador para cargarse.
 
 El modelo parte del dataset preparado ed-donner/items_lite, derivado de Amazon Reviews 2023 (McAuley Lab, arXiv:2403.03952), con 19.991 ejemplos de entrenamiento, 999 de validacion y 1.000 de test. La version mejorada entrena dos epocas con tasa de aprendizaje 1e-4, batch efectivo 32, semilla 42 y limite de secuencia de 256 tokens, con perdida calculada solo sobre la completacion. El resultado reportado es un MAE de 68,05 USD en test, frente a 80,08 USD de la version inicial y 76,17 USD de la referencia TF-IDF + Ridge.
 
@@ -77,17 +77,17 @@ Datos adicionales de la version mejorada: cobertura numerica de 1.000 sobre 1.00
 - VRAM estimada en otras precisiones (no publicadas oficialmente, calculadas a partir del numero de parametros): unos 1,2 GB en fp16 o bf16, unos 0,6 GB en 8 bits y unos 0,4 GB en 4 bits.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM funciona; el entrenamiento documentado se realizo en una Tesla T4 de 16 GB. Para servir en produccion no se requiere A100 ni H100 dado el tamano del modelo.
 - GPU de consumo: cabe holgadamente en tarjetas como RTX 3050, RTX 3060, RTX 4060, RTX 4090 y equivalentes. Tambien es viable en CPU con Transformers si la latencia no es critica.
-- Opciones de despliegue: Transformers con la version verificada 4.57.6 y PyTorch 2.9.1; el repositorio incluye el tag `text-generation-inference` y `endpoints_compatible`, por lo que es compatible con TGI y con los endpoints de HuggingFace. Para llama.cpp u Ollama seria necesaria una conversion a GGUF, que no se distribuye. vLLM es compatible con la arquitectura Qwen3, aunque no hay configuracion publicada para este modelo concreto.
+- Opciones de despliegue: Transformers con la version verificada 4.57.6 y PyTorch 2.9.1; el repositorio incluye el tag `text-generation-inference` y `endpoints_compatible`, por lo que es compatible con TGI y con los endpoints de Hugging Face. Para llama.cpp u Ollama seria necesaria una conversion a GGUF, que no se distribuye. vLLM es compatible con la arquitectura Qwen3, aunque no hay configuracion publicada para este modelo concreto.
 - Latencia y throughput: no se han publicado medidas de latencia ni de throughput en la informacion disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | MAE en test (USD) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PriceLab Qwen3-0.6B (mejorada) | 596 M | 256 tokens en ajuste; 32.768 en el base | 68,05 | no disponible | Pesos safetensors float32 en HuggingFace |
+| PriceLab Qwen3-0.6B (mejorada) | 596 M | 256 tokens en ajuste; 32.768 en el base | 68,05 | no disponible | Pesos safetensors float32 en Hugging Face |
 | PriceLab Qwen3-0.6B (inicial) | 596 M | 256 tokens en ajuste | 80,08 | no disponible | Version previa con adaptador |
 | TF-IDF + Ridge (referencia) | no aplica | no aplica | 76,17 | no aplica | Baseline clasico, resultado historico no reajustado |
-| Qwen/Qwen3-0.6B (base) | 596 M | 32.768 tokens | no disponible | Apache 2.0 | Pesos oficiales en HuggingFace |
+| Qwen/Qwen3-0.6B (base) | 596 M | 32.768 tokens | no disponible | Apache 2.0 | Pesos oficiales en Hugging Face |
 
 No se dispone de datos de rendimiento comparables para alternativas de proposito general del mismo tamano (por ejemplo otros modelos de la franja de 0,5 a 1 B) aplicadas a esta tarea concreta de estimacion de precios, por lo que no se incluyen cifras que no esten respaldadas por la informacion proporcionada.
 
@@ -108,7 +108,7 @@ No se dispone de datos de rendimiento comparables para alternativas de proposito
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gaurabdas/pricelab-qwen3-0.6b
+- Modelo en Hugging Face: https://huggingface.co/gaurabdas/pricelab-qwen3-0.6b
 - Modelo base Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Dataset preparado por Ed Donner: https://huggingface.co/datasets/ed-donner/items_lite
 - Amazon Reviews 2023 (McAuley Lab): https://amazon-reviews-2023.github.io/

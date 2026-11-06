@@ -97,7 +97,7 @@ La diferencia principal frente al modelo base es la eliminacion de vision y audi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OnlyTextLLMs/gemma-4-31B-it-OnlyText-GGUF
+- Repositorio Hugging Face: https://huggingface.co/OnlyTextLLMs/gemma-4-31B-it-OnlyText-GGUF
 - Modelo texto-solo original (sin cuantizar): https://huggingface.co/OnlyTextLLMs/gemma-4-31B-it-OnlyText
 - Modelo base de Google: https://huggingface.co/google/gemma-4-31B-it
 - Pagina del modelo base (Google): https://huggingface.co/google/gemma-4-31B

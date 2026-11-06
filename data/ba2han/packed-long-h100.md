@@ -81,7 +81,7 @@ La comparación es aproximada: packed-long-h100 no es un modelo listo para infer
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Ba2han/packed-long-h100
+- Repositorio Hugging Face: https://huggingface.co/Ba2han/packed-long-h100
 - Dataset de entrenamiento: https://huggingface.co/datasets/Ba2han/packed1
 - Run de Weights & Biases: proyecto `exp_train`, run `packed-long-h100` (no se proporciona URL directa)
 - Script de verificación: `code/verify_checkpoint.py` dentro del repositorio

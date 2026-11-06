@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks generales (MMLU, MTEB, etc.) en la 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniEmbed-Nano r1 candidate | 22,7 M | no disponible | nDCG@10 0,604 en slice propio | apache-2.0 | HuggingFace (candidato) |
-| sentence-transformers/all-MiniLM-L6-v2 | 22,7 M | 256 tokens (modelo base) | no evaluado en este slice | apache-2.0 | HuggingFace (ampliamente usado) |
+| MiniEmbed-Nano r1 candidate | 22,7 M | no disponible | nDCG@10 0,604 en slice propio | apache-2.0 | Hugging Face (candidato) |
+| sentence-transformers/all-MiniLM-L6-v2 | 22,7 M | 256 tokens (modelo base) | no evaluado en este slice | apache-2.0 | Hugging Face (ampliamente usado) |
 | BM25 (baseline léxico) | n/a | n/a | nDCG@10 0,527 en el mismo slice | n/a | implementaciones múltiples |
-| MiniEmbed-Nano (fixture hash) | n/a | n/a | no es un embedder neuronal | no disponible | HuggingFace |
+| MiniEmbed-Nano (fixture hash) | n/a | n/a | no es un embedder neuronal | no disponible | Hugging Face |
 
 La comparación con otros embedders neuronales de tamaño similar (por ejemplo, variantes de E5-small o BGE-small) no está disponible en la información proporcionada, ya que no se han publicado evaluaciones cruzadas.
 
@@ -92,7 +92,7 @@ La comparación con otros embedders neuronales de tamaño similar (por ejemplo, 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SZLHOLDINGS/miniembed-nano-r1-candidate
+- Hugging Face: https://huggingface.co/SZLHOLDINGS/miniembed-nano-r1-candidate
 - Modelo base: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
 - Fixture previo: https://huggingface.co/SZLHOLDINGS/MiniEmbed-Nano
 - Corpus de entrenamiento: https://huggingface.co/SZLHOLDINGS/szl-second-brain-inrepo

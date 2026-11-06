@@ -67,7 +67,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/chtk/chua-dl-models
+- Repositorio Hugging Face: https://huggingface.co/chtk/chua-dl-models
 - Descarga del DiT cuantizado (GGUF): https://huggingface.co/chtk/chua-dl-models/resolve/main/z-image-turbo/diffusion_models/z_image_turbo-Q4_0.gguf
 - Descarga del text encoder (GGUF): https://huggingface.co/chtk/chua-dl-models/resolve/main/z-image-turbo/text_encoders/Qwen3-4B-Q4_K_M.gguf
 - Descarga del VAE (safetensors): https://huggingface.co/chtk/chua-dl-models/resolve/main/z-image-turbo/vae/diffusion_pytorch_model.safetensors

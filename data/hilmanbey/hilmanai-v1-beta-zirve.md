@@ -51,9 +51,9 @@ Dado que no hay datos de rendimiento ni especificaciones completas, la comparati
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| HilmanAI-V1-Beta-Zirve | 7B (base) | no disponible | Apache 2.0 | HuggingFace |
-| DeepSeek-R1-Distill-Qwen-7B | 7B | 32k (según documentación oficial) | MIT | HuggingFace |
-| Qwen2-7B | 7B | 32k | Apache 2.0 | HuggingFace |
+| HilmanAI-V1-Beta-Zirve | 7B (base) | no disponible | Apache 2.0 | Hugging Face |
+| DeepSeek-R1-Distill-Qwen-7B | 7B | 32k (según documentación oficial) | MIT | Hugging Face |
+| Qwen2-7B | 7B | 32k | Apache 2.0 | Hugging Face |
 
 El modelo base tiene una ventana de contexto de 32k tokens y licencia MIT, mientras que HilmanAI hereda Apache 2.0. No se puede evaluar el rendimiento relativo sin benchmarks.
 
@@ -67,8 +67,8 @@ El modelo base tiene una ventana de contexto de 32k tokens y licencia MIT, mient
 
 ## Enlaces
 
-- [HuggingFace - HilmanAI-V1-Beta-Zirve](https://huggingface.co/HilmanBey/HilmanAI-V1-Beta-Zirve)
-- [Perfil del autor en HuggingFace](https://huggingface.co/HilmanBey)
+- [Hugging Face - HilmanAI-V1-Beta-Zirve](https://huggingface.co/HilmanBey/HilmanAI-V1-Beta-Zirve)
+- [Perfil del autor en Hugging Face](https://huggingface.co/HilmanBey)
 - [Repositorio de modelos del autor](https://huggingface.co/HilmanBey/models)
 - [Perfil de GitHub del autor](https://github.com/HilmanBey1)
 - [Repositorio hilman-ai-api (no oficial)](https://github.com/halildokgoxx-ops/hilman-ai-api)

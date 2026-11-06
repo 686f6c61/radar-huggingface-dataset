@@ -6,7 +6,7 @@ LTX-2.3 es un modelo fundacional de generación de vídeo y audio desarrollado p
 
 La ficha que nos ocupa, `unsloth/LTX-2.3-GGUF`, no es el modelo original, sino la cuantización publicada por Unsloth sobre `Lightricks/LTX-2.3`. Unsloth aplica su metodología Dynamic 2.0, que upcastea a mayor precisión las capas consideradas críticas, y se apoya en las herramientas de ComfyUI-GGUF de city96 para producir los ficheros GGUF. El repositorio incluye dos familias de cuantizaciones: la del modelo `dev` (calidad máxima, requiere al menos 20 pasos de inferencia) y la del modelo `distilled` (optimizada para 4-8 pasos, útil como modelo de borrador o de refinado). El workflow publicado combina ambas, aplicando la LoRA destilada sobre el modelo dev para refinar la salida inicial.
 
-Su relevancia actual es doble. Por un lado, lleva a hardware de consumo un modelo de generación conjunta de audio y vídeo que de otro modo exigiría VRAM muy superior. Por otro, su adopción ha sido notable: 302.899 descargas y 573 "likes" en HuggingFace desde su publicación el 5 de marzo de 2026. El coste de esa accesibilidad es un repositorio de 2952,3 GB que reúne todas las variantes cuantizadas y los componentes auxiliares (VAEs de vídeo y audio, conectores de embeddings, upscalers y el codificador de texto Gemma-3-12B).
+Su relevancia actual es doble. Por un lado, lleva a hardware de consumo un modelo de generación conjunta de audio y vídeo que de otro modo exigiría VRAM muy superior. Por otro, su adopción ha sido notable: 302.899 descargas y 573 "likes" en Hugging Face desde su publicación el 5 de marzo de 2026. El coste de esa accesibilidad es un repositorio de 2952,3 GB que reúne todas las variantes cuantizadas y los componentes auxiliares (VAEs de vídeo y audio, conectores de embeddings, upscalers y el codificador de texto Gemma-3-12B).
 
 ## Especificaciones técnicas
 
@@ -78,9 +78,9 @@ La información disponible permite comparar con fiabilidad únicamente las dos v
 
 | Modelo | Parámetros | Contexto / duración | Modalidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| unsloth/LTX-2.3-GGUF | 21.005.004.544 (cuantizado, GGUF) | No disponible | Texto, imagen, vídeo y audio en todas las combinaciones declaradas en las etiquetas | LTX-2 Community License Agreement | HuggingFace, 302.899 descargas, 573 likes |
-| Lightricks/LTX-2.3 (modelo base) | Mismo recuento de parámetros, en bf16 | No disponible | Idénticas | LTX-2 Community License Agreement | HuggingFace, pesos abiertos |
-| Lightricks/LTX-2 (generación anterior) | No disponible | No disponible | Vídeo y audio conjuntos (según la model card, LTX-2.3 mejora calidad audiovisual y adherencia al prompt) | No disponible en la información suministrada | HuggingFace |
+| unsloth/LTX-2.3-GGUF | 21.005.004.544 (cuantizado, GGUF) | No disponible | Texto, imagen, vídeo y audio en todas las combinaciones declaradas en las etiquetas | LTX-2 Community License Agreement | Hugging Face, 302.899 descargas, 573 likes |
+| Lightricks/LTX-2.3 (modelo base) | Mismo recuento de parámetros, en bf16 | No disponible | Idénticas | LTX-2 Community License Agreement | Hugging Face, pesos abiertos |
+| Lightricks/LTX-2 (generación anterior) | No disponible | No disponible | Vídeo y audio conjuntos (según la model card, LTX-2.3 mejora calidad audiovisual y adherencia al prompt) | No disponible en la información suministrada | Hugging Face |
 | Alternativas de terceros (por ejemplo, otros modelos abiertos de vídeo con audio) | No disponible | No disponible | No disponible | No disponible | No verificado en la información disponible |
 
 ## Limitaciones y advertencias
@@ -99,10 +99,10 @@ La información disponible permite comparar con fiabilidad únicamente las dos v
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/unsloth/LTX-2.3-GGUF
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/unsloth/LTX-2.3-GGUF
 - Modelo base original: https://huggingface.co/Lightricks/LTX-2.3
 - Generación anterior (LTX-2): https://huggingface.co/Lightricks/LTX-2
-- Artículo en HuggingFace Papers: https://huggingface.co/papers/2601.03233
+- Artículo en Hugging Face Papers: https://huggingface.co/papers/2601.03233
 - Artículo en arXiv: https://arxiv.org/abs/2601.03233
 - Repositorio de código de Lightricks: https://github.com/Lightricks/LTX-2
 - Licencia LTX-2 Community License Agreement: https://github.com/Lightricks/LTX-2/blob/main/LICENSE

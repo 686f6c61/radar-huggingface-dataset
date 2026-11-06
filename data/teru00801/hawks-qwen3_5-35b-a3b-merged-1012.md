@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `teru00801/hawks-qwen3_5-35b-a3b-merged-1012` es un modelo de lenguaje multimodal publicado en HuggingFace por el usuario teru00801, consistente en una version fusionada (*merged/fused*) en formato HuggingFace del modelo base `unsloth/Qwen3.5-35B-A3B`. Segun la propia model card, el repositorio no introduce un entrenamiento nuevo, sino que se presenta como "fuente que preserva la precision para conversiones posteriores", incluidas cuantizaciones MLX y futuros formatos de ejecucion. Su proposito declarado es servir como punto de partida para generar versiones cuantizadas dentro de la familia "hawks" del mismo autor.
+El modelo `teru00801/hawks-qwen3_5-35b-a3b-merged-1012` es un modelo de lenguaje multimodal publicado en Hugging Face por el usuario teru00801, consistente en una version fusionada (*merged/fused*) en formato Hugging Face del modelo base `unsloth/Qwen3.5-35B-A3B`. Segun la propia model card, el repositorio no introduce un entrenamiento nuevo, sino que se presenta como "fuente que preserva la precision para conversiones posteriores", incluidas cuantizaciones MLX y futuros formatos de ejecucion. Su proposito declarado es servir como punto de partida para generar versiones cuantizadas dentro de la familia "hawks" del mismo autor.
 
 El modelo cuenta con 35.951.822.704 parametros totales (35,95 mil millones) verificados en los safetensors del repositorio, que ocupa 71,9 GB, lo que corresponde a pesos en precision BF16. La nomenclatura "A3B" y la etiqueta de arquitectura `qwen3_5_moe` indican una arquitectura de mezcla de expertos (*Mixture of Experts*, MoE) con aproximadamente 3.000 millones de parametros activos por token, aunque ese dato no se confirma explicitamente en la informacion disponible. El pipeline declarado es `image-text-to-text`, por lo que se trata de un modelo multimodal con entrada de imagen y texto, no solo texto.
 
@@ -19,7 +19,7 @@ La relevancia de esta ficha es limitada pero concreta: se trata de un artefacto 
 | Tipos de cuantizacion | safetensors BF16 en este repositorio; GGUF en el repositorio hermano `teru00801/hawks-qwen3_5-35b-a3b-gguf-1012`; conversion MLX documentada (`mlx_lm.convert -q`) |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | safetensors (formato HuggingFace, libreria `transformers`) |
+| Formato de pesos | safetensors (formato Hugging Face, libreria `transformers`) |
 | Tamano del repositorio | 71,9 GB |
 | Pipeline declarado | image-text-to-text |
 | Fecha de creacion | 2026-10-12 |
@@ -41,7 +41,7 @@ El unico detalle tecnico documentado es el procedimiento de conversion a MLX, qu
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Modo de razonamiento explicito (*thinking mode*): no disponible.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que el repositorio puede desplegarse en infraestructura de inferencia compatible con HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que el repositorio puede desplegarse en infraestructura de inferencia compatible con Hugging Face.
 
 ## Casos de uso
 
@@ -100,7 +100,7 @@ No se dispone de datos verificados para comparar con otros modelos MoE de tamano
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/teru00801/hawks-qwen3_5-35b-a3b-merged-1012
+- Modelo en Hugging Face: https://huggingface.co/teru00801/hawks-qwen3_5-35b-a3b-merged-1012
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-35B-A3B
 - Paquete GGUF del mismo autor: https://huggingface.co/teru00801/hawks-qwen3_5-35b-a3b-gguf-1012
 - Version anterior 0710: https://huggingface.co/teru00801/hawks-qwen3_5-35b-a3b-merged-0710

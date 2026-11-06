@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks que permitan una comparación cuantitativa 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.5-9B-DeepThought-STEM-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.5-9B-DeepThought-STEM-GGUF
 - Modelo base: https://huggingface.co/xtools-at/Qwen3.5-9B-DeepThought-STEM
 - Cuantizaciones ponderadas/imatrix: https://huggingface.co/mradermacher/Qwen3.5-9B-DeepThought-STEM-i1-GGUF
 - Página de descargas del cuantizador: https://hf.tst.eu/model#Qwen3.5-9B-DeepThought-STEM-GGUF

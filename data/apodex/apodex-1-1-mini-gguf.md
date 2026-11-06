@@ -98,7 +98,7 @@ La model card no incluye una comparativa directa contra alternativas concretas d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/apodex/Apodex-1.1-mini-GGUF
+- Modelo en Hugging Face: https://huggingface.co/apodex/Apodex-1.1-mini-GGUF
 - Licencia en el repositorio: https://huggingface.co/apodex/Apodex-1.1-mini-GGUF/blob/main/LICENSE
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-35B-A3B
 - Servicio online: https://www.apodex.ai

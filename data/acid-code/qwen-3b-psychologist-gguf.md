@@ -68,6 +68,6 @@ No se dispone de informacion sobre modelos comparables especificos. El modelo ba
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/acid-code/Qwen-3B-Psychologist-GGUF
+- Repositorio Hugging Face: https://huggingface.co/acid-code/Qwen-3B-Psychologist-GGUF
 - Unsloth (herramienta de entrenamiento y conversion): https://github.com/unslothai/unsloth
 - Modelo base Qwen2.5-3B-Instruct (referencia): https://huggingface.co/Qwen/Qwen2.5-3B-Instruct

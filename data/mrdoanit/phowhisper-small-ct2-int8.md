@@ -89,7 +89,7 @@ Frente al checkpoint original de VinAI, esta versión no cambia la calidad teór
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mrdoanit/PhoWhisper-small-ct2-int8
+- Modelo en Hugging Face: https://huggingface.co/mrdoanit/PhoWhisper-small-ct2-int8
 - Modelo base: https://huggingface.co/vinai/PhoWhisper-small
 - Repositorio de faster-whisper: https://github.com/SYSTRAN/faster-whisper
 - Repositorio de CTranslate2 (herramienta de conversión): https://github.com/OpenNMT/CTranslate2

@@ -4,7 +4,7 @@
 
 El modelo `vikas0905/nano-gpt-hinglish` es un pequeño modelo de lenguaje de tipo GPT, desarrollado por el autor vikas0905 sobre la base del proyecto nanoGPT de Andrej Karpathy. Está diseñado específicamente para mantener conversaciones en Hinglish romanizado, es decir, hindi escrito con caracteres latinos, una variante muy común en la comunicación informal en India. El repositorio original en GitHub indica que se trata de un modelo conversacional de tamaño reducido, con mejoras en la arquitectura y consistencia conversacional, entrenado con GPU.
 
-Aunque la ficha en HuggingFace es extremadamente escueta (solo incluye la licencia MIT y no proporciona detalles sobre parámetros, contexto o idiomas), el repositorio asociado confirma su propósito. El modelo no ha recibido descargas ni valoraciones, lo que sugiere que se trata de un proyecto experimental o educativo más que de una herramienta lista para producción. Su relevancia radica en demostrar cómo adaptar arquitecturas GPT a dominios lingüísticos específicos con recursos computacionales limitados, aunque carece de documentación técnica suficiente para una evaluación rigurosa.
+Aunque la ficha en Hugging Face es extremadamente escueta (solo incluye la licencia MIT y no proporciona detalles sobre parámetros, contexto o idiomas), el repositorio asociado confirma su propósito. El modelo no ha recibido descargas ni valoraciones, lo que sugiere que se trata de un proyecto experimental o educativo más que de una herramienta lista para producción. Su relevancia radica en demostrar cómo adaptar arquitecturas GPT a dominios lingüísticos específicos con recursos computacionales limitados, aunque carece de documentación técnica suficiente para una evaluación rigurosa.
 
 ## Especificaciones tecnicas
 
@@ -60,10 +60,10 @@ No se dispone de información sobre modelos comparables en Hinglish romanizado c
 - Alto riesgo de alucinación y errores gramaticales, especialmente fuera del dominio conversacional en Hinglish.
 - No hay evidencia de evaluación de sesgos; al estar entrenado con un dataset no documentado, puede reflejar sesgos del autor o del corpus.
 - La licencia MIT permite uso comercial, pero la falta de garantías y de documentación hace recomendable una evaluación exhaustiva antes de su uso en producción.
-- El repositorio de HuggingFace no incluye instrucciones de uso ni ejemplos, lo que dificulta su adopción.
+- El repositorio de Hugging Face no incluye instrucciones de uso ni ejemplos, lo que dificulta su adopción.
 
 ## Enlaces
 
-- [HuggingFace: vikas0905/nano-gpt-hinglish](https://huggingface.co/vikas0905/nano-gpt-hinglish)
+- [Hugging Face: vikas0905/nano-gpt-hinglish](https://huggingface.co/vikas0905/nano-gpt-hinglish)
 - [GitHub: vikas-aa/NanoGPT-Hinglish](https://github.com/vikas-aa/NanoGPT-Hinglish)
 - [GitHub: karpathy/nanoGPT (proyecto base)](https://github.com/karpathy/nanoGPT)

@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Arquitectura / tarea | Contexto y datos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rooty2020/Cosmos3-ours-RB-Y1 | 15,22 B | Cosmos3-Omni + tracking head + camera conditioner; image-to-video multi-vista con trayectorias 3D | 741 ventanas, 100 episodios RB-Y1 + WujiHand2, 2 vistas a 832×480; iteración 800/4000 | NVIDIA Open Model License | Público en HuggingFace; 0 descargas y 0 likes |
-| nvidia/Cosmos3-Nano (modelo base) | No disponible en la información proporcionada | Backbone MoT (Qwen3-VL-8B + experto de difusión), `cosmos3_omni` | No disponible | NVIDIA Open Model License | Público en HuggingFace |
+| rooty2020/Cosmos3-ours-RB-Y1 | 15,22 B | Cosmos3-Omni + tracking head + camera conditioner; image-to-video multi-vista con trayectorias 3D | 741 ventanas, 100 episodios RB-Y1 + WujiHand2, 2 vistas a 832×480; iteración 800/4000 | NVIDIA Open Model License | Público en Hugging Face; 0 descargas y 0 likes |
+| nvidia/Cosmos3-Nano (modelo base) | No disponible en la información proporcionada | Backbone MoT (Qwen3-VL-8B + experto de difusión), `cosmos3_omni` | No disponible | NVIDIA Open Model License | Público en Hugging Face |
 | Omni-4D etapa 3 multi-vista vídeo + tracking (`0902_s3_full`, iteración 1068) | No disponible | Multi-vista vídeo + tracking, usado como warm start | No disponible | No disponible | No disponible como enlace público en la información proporcionada |
-| Qwen/Qwen3-VL-8B-Instruct | No disponible en la información proporcionada | Torre ViT/comprensión reutilizada por Cosmos3-Nano | No disponible | No disponible en la información proporcionada | Público en HuggingFace |
+| Qwen/Qwen3-VL-8B-Instruct | No disponible en la información proporcionada | Torre ViT/comprensión reutilizada por Cosmos3-Nano | No disponible | No disponible en la información proporcionada | Público en Hugging Face |
 
 No se dispone de datos de benchmarks ni de otros world models comparables en la información proporcionada, por lo que no es posible establecer una comparación de rendimiento.
 
@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks ni de otros world models comparables en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rooty2020/Cosmos3-ours-RB-Y1
+- Modelo en Hugging Face: https://huggingface.co/rooty2020/Cosmos3-ours-RB-Y1
 - Modelo base: https://huggingface.co/nvidia/Cosmos3-Nano
 - Licencia y README del modelo base (NVIDIA Open Model License): https://huggingface.co/nvidia/Cosmos3-Nano/blob/main/README.md
 - Torre ViT de origen: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct

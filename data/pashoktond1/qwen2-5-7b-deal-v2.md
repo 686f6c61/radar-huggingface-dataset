@@ -75,9 +75,9 @@ No se han publicado resultados de benchmarks clasicos (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen2.5-7b-deal-v2 | ~7,6B (adaptador LoRA rank 32) | no especificado; base 131.072, ejemplo 8192 | Generacion de programas DEAL `.dealui` con gramatica GBNF | Apache-2.0 | HuggingFace, GGUF y safetensors, 35 descargas |
-| Qwen2.5-7B-Instruct | ~7,6B | 131.072 | Modelo instruct generalista, base del anterior | Apache-2.0 (segun la ficha del base) | HuggingFace, ampliamente distribuido |
-| qwen2.5-7b-deal-lora | ~7,6B (adaptador LoRA) | no disponible | Version previa del mismo autor para generar mini-apps DEAL | no disponible | HuggingFace, endpoint en FriendliAI |
+| qwen2.5-7b-deal-v2 | ~7,6B (adaptador LoRA rank 32) | no especificado; base 131.072, ejemplo 8192 | Generacion de programas DEAL `.dealui` con gramatica GBNF | Apache-2.0 | Hugging Face, GGUF y safetensors, 35 descargas |
+| Qwen2.5-7B-Instruct | ~7,6B | 131.072 | Modelo instruct generalista, base del anterior | Apache-2.0 (segun la ficha del base) | Hugging Face, ampliamente distribuido |
+| qwen2.5-7b-deal-lora | ~7,6B (adaptador LoRA) | no disponible | Version previa del mismo autor para generar mini-apps DEAL | no disponible | Hugging Face, endpoint en FriendliAI |
 
 La comparacion con Qwen2.5-7B-Instruct procede con cautela: el adaptador hereda su arquitectura y su licencia, pero su proposito es tan especifico que no es un sustituto del base para tareas generales, y a la inversa, el base no genera `.dealui` validos sin el ajuste y la gramatica. Frente a alternativas genericas de generacion de codigo, la ventaja diferencial de este modelo es la restriccion estructural por gramatica, no una puntuacion de benchmarks superior.
 
@@ -95,10 +95,10 @@ La comparacion con Qwen2.5-7B-Instruct procede con cautela: el adaptador hereda 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pashoktond1/qwen2.5-7b-deal-v2
+- Modelo en Hugging Face: https://huggingface.co/pashoktond1/qwen2.5-7b-deal-v2
 - Modelo base Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Modelo base Qwen2.5-7B: https://huggingface.co/Qwen/Qwen2.5-7B
-- Coleccion Qwen2.5 en HuggingFace: https://huggingface.co/collections/Qwen/qwen25
+- Coleccion Qwen2.5 en Hugging Face: https://huggingface.co/collections/Qwen/qwen25
 - Version previa del adaptador con endpoint en FriendliAI: https://friendli.ai/models/pashoktond1/qwen2.5-7b-deal-lora
 - Repositorio de la serie Qwen2.5 en GitHub: https://github.com/mx4ai/qwen2.5
 - Ficha de especificaciones y casos de uso de Qwen2.5-7B: https://gate.ai/blog/qwen2-5-7b-specs-pricing-api-access-use-cases

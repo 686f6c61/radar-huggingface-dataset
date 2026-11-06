@@ -33,7 +33,7 @@ No se dispone de informacion detallada sobre el entrenamiento del modelo base (c
 - Multi-step reasoning: el modelo base soporta razonamiento en multiples pasos, aunque la cuantizacion puede afectar a la coherencia en cadenas largas.
 - Decodificacion especulativa: la cabeza MTP embebida permite acelerar la generacion proponiendo multiples tokens por paso (block size 3 en las pruebas).
 - Multilingue: no se han publicado datos sobre los idiomas soportados en este paquete.
-- Vision: el pipeline_tag de HuggingFace indica `image-text-to-text`, lo que sugiere capacidades multimodales del modelo base, pero no se proporciona informacion adicional en la model card.
+- Vision: el pipeline_tag de Hugging Face indica `image-text-to-text`, lo que sugiere capacidades multimodales del modelo base, pero no se proporciona informacion adicional en la model card.
 
 ## Casos de uso
 
@@ -81,7 +81,7 @@ No se dispone de informacion suficiente para una comparativa rigurosa con otros 
 
 ## Enlaces
 
-- Repositorio HuggingFace del paquete: https://huggingface.co/treeish/Qwen3.6-35B-A3B-oQ2e-MTP-MLX
+- Repositorio Hugging Face del paquete: https://huggingface.co/treeish/Qwen3.6-35B-A3B-oQ2e-MTP-MLX
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Fuente de pesos cuantizados (jknlsn): https://huggingface.co/jknlsn/Qwen3.6-35B-A3B-oQ2e-mtp
 - Plantilla de chat corregida (froggeric): https://huggingface.co/froggeric/Qwen-Fixed-Chat-Templates

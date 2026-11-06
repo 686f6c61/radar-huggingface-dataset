@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `yichenzha49/hw2-knowledge-distillation-2024` no es un modelo de lenguaje entrenado, sino un conjunto de notas de lectura y un esbozo de experimento sobre destilacion de conocimiento (knowledge distillation), publicado en HuggingFace bajo licencia CC-BY-4.0. La model card es explicita: se trata de material exploratorio que describe el alcance de una pregunta de investigacion, confundidores probables, una comparacion propuesta contra baselines emparejados, contexto de evaluacion y comprobaciones de reproducibilidad, sin afirmar mejoras en benchmarks, ablaciones completadas, codigo liberado ni checkpoint entrenado.
+El repositorio `yichenzha49/hw2-knowledge-distillation-2024` no es un modelo de lenguaje entrenado, sino un conjunto de notas de lectura y un esbozo de experimento sobre destilacion de conocimiento (knowledge distillation), publicado en Hugging Face bajo licencia CC-BY-4.0. La model card es explicita: se trata de material exploratorio que describe el alcance de una pregunta de investigacion, confundidores probables, una comparacion propuesta contra baselines emparejados, contexto de evaluacion y comprobaciones de reproducibilidad, sin afirmar mejoras en benchmarks, ablaciones completadas, codigo liberado ni checkpoint entrenado.
 
 El unico artefacto de pesos presente es un fichero safetensors con 33.088 parametros totales, una magnitud que corresponde a un tensor de pruebas o a un remanente tecnico, no a un modelo utilizable para inferencia. El tamano del repositorio es de 0,0 GB y las descargas y los "likes" registrados son cero, lo que refuerza su caracter de cuaderno de trabajo personal mas que de publicacion de modelo.
 
@@ -75,7 +75,7 @@ No disponible. Este repositorio no es un modelo entrenado, por lo que no existe 
 | Contexto | no disponible | no disponible |
 | Rendimiento en benchmarks | sin resultados publicados | no disponible |
 | Licencia | CC-BY-4.0 | no disponible |
-| Disponibilidad | publico en HuggingFace, 0 descargas | no disponible |
+| Disponibilidad | publico en Hugging Face, 0 descargas | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -91,6 +91,6 @@ No disponible. Este repositorio no es un modelo entrenado, por lo que no existe 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yichenzha49/hw2-knowledge-distillation-2024
+- Repositorio en Hugging Face: https://huggingface.co/yichenzha49/hw2-knowledge-distillation-2024
 - La busqueda web realizada no ha devuelto ningun resultado relevante sobre este repositorio ni sobre su autor; los enlaces obtenidos no guardan relacion con el modelo y se han descartado por no ser fuentes verificables.
 - Referencias bibliograficas sobre destilacion de conocimiento: no disponibles en la informacion proporcionada, ya que el contenido de `paper_notes.md` no se ha incluido en la documentacion facilitada.

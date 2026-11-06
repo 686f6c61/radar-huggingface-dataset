@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Lure TTS 0.6B Preview es un modelo de texto a voz (TTS) de 602.341.376 parámetros (aproximadamente 0,6 mil millones) publicado por el usuario smirki en HuggingFace. El repositorio que nos ocupa no contiene los pesos originales, sino la colección de cuantizaciones GGUF generadas por mradermacher a partir de dicho modelo base, con el objetivo de permitir su ejecución en entornos con recursos limitados mediante llama.cpp y herramientas compatibles. El modelo se distribuye con etiquetas que indican clonación de voz y habla expresiva, y está marcado explícitamente como "preview", es decir, una versión preliminar que puede cambiar.
+Lure TTS 0.6B Preview es un modelo de texto a voz (TTS) de 602.341.376 parámetros (aproximadamente 0,6 mil millones) publicado por el usuario smirki en Hugging Face. El repositorio que nos ocupa no contiene los pesos originales, sino la colección de cuantizaciones GGUF generadas por mradermacher a partir de dicho modelo base, con el objetivo de permitir su ejecución en entornos con recursos limitados mediante llama.cpp y herramientas compatibles. El modelo se distribuye con etiquetas que indican clonación de voz y habla expresiva, y está marcado explícitamente como "preview", es decir, una versión preliminar que puede cambiar.
 
 El problema que resuelve es el habitual en el ecosistema TTS: los modelos de síntesis de voz con capacidades de clonación suelen publicarse en formato PyTorch/safetensors con requisitos de VRAM y dependencias pesadas. La aportación de este repositorio es ofrecer variantes cuantizadas estáticas desde Q2_K (0,3 GB) hasta f16 (1,3 GB), además de dos ficheros `mmproj` (proyector multimodal) que, por la estructura típica de estos pipelines, probablemente codifican el embedding de referencia para la clonación de voz, aunque el autor no lo documenta.
 
@@ -22,7 +22,7 @@ Es relevante ahora porque permite evaluar un TTS pequeño (sub-1B) en hardware d
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura interna del modelo base `smirki/lure-tts-0.6b-preview`. La única evidencia estructural es indirecta: el repositorio incluye ficheros `mmproj` (proyector multimodal, en variantes Q8_0 y f16), lo que sugiere un pipeline de dos componentes en el que un proyector traduce una entrada auxiliar (muy probablemente audio de referencia para la clonación de voz) a un espacio que el modelo principal consume. Asimismo, los metadatos de conversión (`convert_type: hf`, `output_tensor_quantised: 1`, `quantize_version: 2`) confirman que los GGUF se derivaron de pesos en formato HuggingFace mediante el conversor estándar de llama.cpp.
+No se dispone de información sobre la arquitectura interna del modelo base `smirki/lure-tts-0.6b-preview`. La única evidencia estructural es indirecta: el repositorio incluye ficheros `mmproj` (proyector multimodal, en variantes Q8_0 y f16), lo que sugiere un pipeline de dos componentes en el que un proyector traduce una entrada auxiliar (muy probablemente audio de referencia para la clonación de voz) a un espacio que el modelo principal consume. Asimismo, los metadatos de conversión (`convert_type: hf`, `output_tensor_quantised: 1`, `quantize_version: 2`) confirman que los GGUF se derivaron de pesos en formato Hugging Face mediante el conversor estándar de llama.cpp.
 
 Tampoco hay datos sobre el volumen de entrenamiento, la composición del dataset, el uso de RLHF/DPO ni innovaciones técnicas concretas. Las etiquetas del modelo (`voice-cloning`, `expressive-speech`, `preview`) indican las dos capacidades que el autor destaca, pero no cómo se han conseguido. Cualquier afirmación sobre el entrenamiento sería especulativa y no debe tomarse como dato verificado.
 
@@ -32,7 +32,7 @@ Tampoco hay datos sobre el volumen de entrenamiento, la composición del dataset
 - Clonación de voz: etiqueta `voice-cloning` en el modelo base; la presencia de ficheros `mmproj` apunta a un mecanismo de acondicionamiento por audio de referencia.
 - Habla expresiva: etiqueta `expressive-speech`, orientada a prosodia y entonación no plana.
 - Ejecución en formato GGUF mediante llama.cpp y runtimes compatibles, incluida la posibilidad de inferencia en CPU.
-- Compatibilidad declarada con endpoints (`endpoints_compatible` en los tags de HuggingFace), lo que facilita el despliegue como servicio HTTP.
+- Compatibilidad declarada con endpoints (`endpoints_compatible` en los tags de Hugging Face), lo que facilita el despliegue como servicio HTTP.
 - No hay evidencia de soporte de tool calling, function calling, agentes, razonamiento multi-paso, visión, audio de entrada como tarea principal (más allá de la referencia de voz) ni capacidades multilingües: el modelo declara únicamente inglés.
 
 ## Casos de uso

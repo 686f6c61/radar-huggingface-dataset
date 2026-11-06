@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento del modelo base ni de modelos comparables 
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/mradermacher/EVX-7B-Instruct-Pro-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/mradermacher/EVX-7B-Instruct-Pro-GGUF
 - Modelo base: https://huggingface.co/imshreyansh/EVX-7B-Instruct-Pro
 - Página de descargas del autor: https://hf.tst.eu/model#EVX-7B-Instruct-Pro-GGUF
 - Solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests

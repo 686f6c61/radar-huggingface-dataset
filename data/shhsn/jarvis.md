@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Jarvis es un modelo publicado en HuggingFace por el usuario `shhsn` bajo el identificador `shhsn/Jarvis`. En el momento de la consulta, la model card no contiene descripcion tecnica, arquitectura, tamano, datos de entrenamiento ni resultados de evaluacion; unicamente declara una licencia desconocida (`license: unknown`). El repositorio registra cero descargas y cero likes, y fue creado y actualizado en la misma fecha (2026-10-28T12:06:29Z), lo que sugiere una publicacion reciente sin difusion ni validacion por parte de la comunidad.
+Jarvis es un modelo publicado en Hugging Face por el usuario `shhsn` bajo el identificador `shhsn/Jarvis`. En el momento de la consulta, la model card no contiene descripcion tecnica, arquitectura, tamano, datos de entrenamiento ni resultados de evaluacion; unicamente declara una licencia desconocida (`license: unknown`). El repositorio registra cero descargas y cero likes, y fue creado y actualizado en la misma fecha (2026-10-28T12:06:29Z), lo que sugiere una publicacion reciente sin difusion ni validacion por parte de la comunidad.
 
-No es posible determinar que problema resuelve el modelo, que arquitectura emplea ni que capacidades ofrece, ya que no se ha proporcionado informacion al respecto. La ausencia de pipeline declarado en HuggingFace impide ademas conocer su tarea prevista (text-generation, image-text-to-text, etc.).
+No es posible determinar que problema resuelve el modelo, que arquitectura emplea ni que capacidades ofrece, ya que no se ha proporcionado informacion al respecto. La ausencia de pipeline declarado en Hugging Face impide ademas conocer su tarea prevista (text-generation, image-text-to-text, etc.).
 
 Por tanto, esta ficha se limita a documentar los metadatos disponibles y a senalar explicitamente que la mayoria de especificaciones tecnicas no estan disponibles. Cualquier evaluacion practica del modelo requeriria inspeccionar directamente los archivos del repositorio (pesos, tokenizer, configuracion) y ejecutar pruebas propias, algo que queda fuera del alcance de la informacion suministrada.
 
@@ -37,7 +37,7 @@ La model card del repositorio no incluye ningun apartado descriptivo: solo el ca
 
 ## Casos de uso
 
-No es posible recomendar casos de uso concretos sin conocer la tarea, el tamano, el contexto y las capacidades del modelo. A modo de orientacion generica, un modelo publicado en HuggingFace sin documentacion requeriria, antes de cualquier aplicacion practica, las siguientes comprobaciones:
+No es posible recomendar casos de uso concretos sin conocer la tarea, el tamano, el contexto y las capacidades del modelo. A modo de orientacion generica, un modelo publicado en Hugging Face sin documentacion requeriria, antes de cualquier aplicacion practica, las siguientes comprobaciones:
 
 - Inspeccion del repositorio: revisar los archivos de pesos, `config.json` y tokenizer para inferir arquitectura y parametros.
 - Prueba de inferencia basica: cargar el modelo con `transformers` o `llama.cpp` (segun formato) y verificar que genera texto coherente.
@@ -74,4 +74,4 @@ No disponible. No se puede establecer una comparativa con alternativas de la mis
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/shhsn/Jarvis
+- Hugging Face: https://huggingface.co/shhsn/Jarvis

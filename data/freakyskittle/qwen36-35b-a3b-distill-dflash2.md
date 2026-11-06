@@ -88,8 +88,8 @@ No se proporcionan datos de latencia, throughput ni tasa de aceptación efectiva
 
 | Modelo | Parámetros | Tipo | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `freakyskittle/qwen36-35b-a3b-distill-dflash2` | ~432M | Borrador de difusión de bloques (DFlash2) | Ventana deslizante 2048 | Apache 2.0 | HuggingFace, 34 descargas |
-| `z-lab/Qwen3.8-27B-DFlash2` | no disponible | Borrador DFlash2 de referencia | no disponible | no disponible | HuggingFace (referencia citada por el autor) |
+| `freakyskittle/qwen36-35b-a3b-distill-dflash2` | ~432M | Borrador de difusión de bloques (DFlash2) | Ventana deslizante 2048 | Apache 2.0 | Hugging Face, 34 descargas |
+| `z-lab/Qwen3.8-27B-DFlash2` | no disponible | Borrador DFlash2 de referencia | no disponible | no disponible | Hugging Face (referencia citada por el autor) |
 | Modelos borrador EAGLE/Medusa típicos | variable (decenas a cientos de millones) | Borrador autorregresivo o de cabezas especulativas | no aplica | variable | Amplia |
 
 La comparación cuantitativa con alternativas no está disponible en la información proporcionada; los modelos borrador solo son comparables dentro de su pila de servicio y frente a su modelo objetivo concreto.
@@ -108,7 +108,7 @@ La comparación cuantitativa con alternativas no está disponible en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/freakyskittle/qwen36-35b-a3b-distill-dflash2
+- Modelo en Hugging Face: https://huggingface.co/freakyskittle/qwen36-35b-a3b-distill-dflash2
 - Modelo base: https://huggingface.co/freakyskittle/qwen36-35b-a3b-distill
 - Repo GGUF hermano: https://huggingface.co/freakyskittle/qwen36-35b-a3b-distill-GGUF
 - Paquete `dflash`: https://github.com/z-lab/dflash

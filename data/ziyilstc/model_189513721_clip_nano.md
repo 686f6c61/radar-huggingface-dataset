@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `model_189513721_clip_nano` es una implementación a escala **nano** de la arquitectura **CLIP** (Contrastive Language-Image Pretraining), desarrollada por el usuario Ziyilstc y publicada en HuggingFace bajo licencia CC-BY-4.0. Está diseñada específicamente para tareas de **matching** entre modalidades, lo que sugiere un uso orientado a la búsqueda de correspondencias entre representaciones de imagen y texto, siguiendo el paradigma contrastivo original de OpenAI.
+El modelo `model_189513721_clip_nano` es una implementación a escala **nano** de la arquitectura **CLIP** (Contrastive Language-Image Pretraining), desarrollada por el usuario Ziyilstc y publicada en Hugging Face bajo licencia CC-BY-4.0. Está diseñada específicamente para tareas de **matching** entre modalidades, lo que sugiere un uso orientado a la búsqueda de correspondencias entre representaciones de imagen y texto, siguiendo el paradigma contrastivo original de OpenAI.
 
 La escala nano indica un modelo de tamaño muy reducido, pensado para entornos con recursos limitados o para experimentación rápida. La model card incluye detalles arquitectónicos relevantes: atención de tipo grouped query, fusión mediante gated fusion, activación swish, normalización scalenorm e inicialización xavier uniform. El entrenamiento utiliza el optimizador adafactor con un scheduler de learning rate constante con warmup.
 
@@ -73,14 +73,14 @@ No se dispone de información sobre modelos comparables específicos del autor. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Ziyilstc/model_189513721_clip_nano
+- Repositorio Hugging Face: https://huggingface.co/Ziyilstc/model_189513721_clip_nano
 - Repositorio oficial de CLIP (OpenAI): https://github.com/openai/CLIP
 - Blog del paper CLIP: https://openai.com/index/clip/ (enlace de referencia, no se encontró en la búsqueda web)
 - Paper CLIP: https://arxiv.org/abs/2103.00020 (referencia estándar, no se encontró en la búsqueda web)
 
 Nota: la búsqueda web solo devolvió resultados de proyectos no relacionados (NanoClip, Thingiverse, Meshy, NanoGPT), por lo que los enlaces de CLIP son de conocimiento general, no de la búsqueda.</think>## Resumen
 
-El modelo `model_189513721_clip_nano` es una implementación a escala **nano** de la arquitectura **CLIP** (Contrastive Language-Image Pretraining), publicada por el usuario Ziyilstc en HuggingFace bajo licencia CC-BY-4.0. Está diseñado específicamente para tareas de **matching** entre imagen y texto, siguiendo el paradigma contrastivo original de OpenAI, que alinea representaciones de ambas modalidades en un espacio común. La escala nano sugiere un tamaño de parámetros muy reducido, orientado a experimentación, prototipado rápido o entornos con recursos computacionales limitados.
+El modelo `model_189513721_clip_nano` es una implementación a escala **nano** de la arquitectura **CLIP** (Contrastive Language-Image Pretraining), publicada por el usuario Ziyilstc en Hugging Face bajo licencia CC-BY-4.0. Está diseñado específicamente para tareas de **matching** entre imagen y texto, siguiendo el paradigma contrastivo original de OpenAI, que alinea representaciones de ambas modalidades en un espacio común. La escala nano sugiere un tamaño de parámetros muy reducido, orientado a experimentación, prototipado rápido o entornos con recursos computacionales limitados.
 
 La model card revela decisiones de diseño concretas: atención de tipo grouped query (GQA), fusión de modalidades mediante gated fusion, activación swish, normalización scalenorm e inicialización xavier uniform. El entrenamiento se realizó con el optimizador adafactor y un scheduler de learning rate constante con warmup. No se proporcionan datos sobre el número de parámetros, la longitud de contexto, el dataset de entrenamiento ni los idiomas soportados, lo que limita su evaluación técnica rigurosa.
 
@@ -151,14 +151,14 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Ziyilstc/model_189513721_clip_nano
+- Repositorio Hugging Face: https://huggingface.co/Ziyilstc/model_189513721_clip_nano
 - Repositorio oficial de CLIP (OpenAI): https://github.com/openai/CLIP
 - Paper CLIP (referencia estándar): https://arxiv.org/abs/2103.00020
 - Blog de OpenAI sobre CLIP: https://openai.com/index/clip/
 
 Nota: la búsqueda web devolvió únicamente resultados no relacionados (NanoClip, Thingiverse, Meshy, NanoGPT); los enlaces de CLIP se incluyen como referencia general de la arquitectura, no como resultados específicos de la búsqueda.</think>## Resumen
 
-El modelo `model_189513721_clip_nano` es una implementación a escala **nano** de la arquitectura **CLIP** (Contrastive Language-Image Pretraining), publicada por el usuario Ziyilstc en HuggingFace bajo licencia CC-BY-4.0. Está diseñado específicamente para tareas de **matching** entre imagen y texto, siguiendo el paradigma contrastivo original de OpenAI, que alinea representaciones de ambas modalidades en un espacio común. La escala nano indica un modelo de tamaño muy reducido, pensado para experimentación, prototipado rápido o entornos con recursos computacionales limitados.
+El modelo `model_189513721_clip_nano` es una implementación a escala **nano** de la arquitectura **CLIP** (Contrastive Language-Image Pretraining), publicada por el usuario Ziyilstc en Hugging Face bajo licencia CC-BY-4.0. Está diseñado específicamente para tareas de **matching** entre imagen y texto, siguiendo el paradigma contrastivo original de OpenAI, que alinea representaciones de ambas modalidades en un espacio común. La escala nano indica un modelo de tamaño muy reducido, pensado para experimentación, prototipado rápido o entornos con recursos computacionales limitados.
 
 La model card revela decisiones de diseño concretas: atención de tipo **grouped query** (GQA), fusión de modalidades mediante **gated fusion**, activación swish, normalización scalenorm e inicialización xavier uniform. El entrenamiento se realizó con el optimizador adafactor y un scheduler de learning rate constante con warmup. No se proporcionan datos sobre el número de parámetros, la longitud de contexto, el dataset de entrenamiento ni los idiomas soportados, lo que limita su evaluación técnica.
 
@@ -229,7 +229,7 @@ No se dispone de información suficiente para una comparación rigurosa. El mode
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Ziyilstc/model_189513721_clip_nano
+- Repositorio Hugging Face: https://huggingface.co/Ziyilstc/model_189513721_clip_nano
 - Repositorio oficial de CLIP (OpenAI): https://github.com/openai/CLIP
 - Paper CLIP (referencia estándar): https://arxiv.org/abs/1703.00020
 - Blog de OpenAI sobre CLIP: https://openai.com/index/clip/

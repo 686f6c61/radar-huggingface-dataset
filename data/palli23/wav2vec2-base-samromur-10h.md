@@ -54,7 +54,7 @@ Los datos de ajuste son un subconjunto anidado de 10 horas del *pool* de escalad
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card remite explícitamente al artículo «Scaling Smaller ASR Models Against Multilingual ASR Giants» (ICASSP 2027) para la metodología y los resultados de WER/CER, pero no incluye cifras, tablas ni comparativas en la propia ficha de HuggingFace. Tampoco se han encontrado resultados en los resultados de búsqueda web disponibles, que no contenían material relacionado con el modelo.
+No se han publicado resultados de benchmarks en la información disponible. La model card remite explícitamente al artículo «Scaling Smaller ASR Models Against Multilingual ASR Giants» (ICASSP 2027) para la metodología y los resultados de WER/CER, pero no incluye cifras, tablas ni comparativas en la propia ficha de Hugging Face. Tampoco se han encontrado resultados en los resultados de búsqueda web disponibles, que no contenían material relacionado con el modelo.
 
 ## Requisitos de hardware
 
@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Idiomas | Arquitectura / tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| palli23/wav2vec2-base-samromur-10h | 94,4 M | Islandés | wav2vec 2.0 base + CTC, solo ASR | CC BY-SA 4.0 | HuggingFace, safetensors, 19 descargas |
-| facebook/wav2vec2-base-960h | 94,4 M | Inglés | wav2vec 2.0 base + CTC, solo ASR | Apache-2.0 | HuggingFace, ampliamente usado |
-| facebook/wav2vec2-large-xlsr-53 | 315 M | 53 idiomas | wav2vec 2.0 large + CTC, multilingüe | Apache-2.0 | HuggingFace, muy difundido |
-| openai/whisper-small | 244 M | 99 idiomas | Encoder-decoder Transformer, transcripción y traducción | Apache-2.0 | HuggingFace, ecosistema muy maduro |
+| palli23/wav2vec2-base-samromur-10h | 94,4 M | Islandés | wav2vec 2.0 base + CTC, solo ASR | CC BY-SA 4.0 | Hugging Face, safetensors, 19 descargas |
+| facebook/wav2vec2-base-960h | 94,4 M | Inglés | wav2vec 2.0 base + CTC, solo ASR | Apache-2.0 | Hugging Face, ampliamente usado |
+| facebook/wav2vec2-large-xlsr-53 | 315 M | 53 idiomas | wav2vec 2.0 large + CTC, multilingüe | Apache-2.0 | Hugging Face, muy difundido |
+| openai/whisper-small | 244 M | 99 idiomas | Encoder-decoder Transformer, transcripción y traducción | Apache-2.0 | Hugging Face, ecosistema muy maduro |
 
 Comentario: el modelo de palli23 es el único de la comparativa especializado en islandés y el único con licencia CC BY-SA 4.0, lo que impone condiciones de compartición sobre las obras derivadas que Apache-2.0 no exige. Frente a `wav2vec2-base-960h` iguala en tamaño pero cambia de idioma; frente a `wav2vec2-large-xlsr-53` y a `whisper-small` reduce parámetros entre 2,6 y 3,3 veces, a costa de perder cobertura multilingüe y, en el caso de Whisper, capacidades multitarea como marcas de tiempo y traducción. Las cifras de calidad de este modelo frente a esas alternativas no están disponibles en la información consultada.
 
@@ -92,7 +92,7 @@ Comentario: el modelo de palli23 es el único de la comparativa especializado en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/palli23/wav2vec2-base-samromur-10h
+- Modelo en Hugging Face: https://huggingface.co/palli23/wav2vec2-base-samromur-10h
 - Artículo de referencia citado en la model card: «Scaling Smaller ASR Models Against Multilingual ASR Giants» (ICASSP 2027). No se ha encontrado URL en la información disponible.
 - Corpus de ajuste citado: `samromur-500h` (referido en la model card como «Miljón/samromur-500h»). No se ha encontrado URL en la información disponible.
 - Modelo base: `facebook/wav2vec2-base`, referenciado de forma implícita por el nombre del checkpoint. No se incluye enlace directo en la información proporcionada.

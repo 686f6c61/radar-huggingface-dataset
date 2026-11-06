@@ -106,11 +106,11 @@ No se dispone de datos que permitan comparar este modelo con alternativas de otr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/glyd/Qwen3.6-27B-swift
+- Modelo en Hugging Face: https://huggingface.co/glyd/Qwen3.6-27B-swift
 - Modelo base Qwen/Qwen3.6-27B: https://huggingface.co/Qwen/Qwen3.6-27B
 - Commit del modelo base usado: https://huggingface.co/Qwen/Qwen3.6-27B/tree/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9
 - Variante sin perdida penguin: https://huggingface.co/glyd/Qwen3.6-27B-penguin
 - Sitio del motor glyd: https://getglyd.com
 - Script de instalacion del motor: https://getglyd.com/install.sh
 
-Nota: las busquedas web realizadas no han devuelto ningun resultado relevante sobre este modelo; los unicos enlaces utiles son los procedentes de la informacion de HuggingFace y de la model card.
+Nota: las busquedas web realizadas no han devuelto ningun resultado relevante sobre este modelo; los unicos enlaces utiles son los procedentes de la informacion de Hugging Face y de la model card.

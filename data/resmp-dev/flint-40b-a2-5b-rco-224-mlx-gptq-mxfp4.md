@@ -110,8 +110,8 @@ La comparación útil aquí es interna al linaje Flint: este artefacto sacrifica
 
 ## Enlaces
 
-- HuggingFace (este artefacto): https://huggingface.co/RESMP-DEV/Flint-40B-A2.5B-RCO-224-MLX-GPTQ-MXFP4
-- HuggingFace (variante sin poda, 256 expertos): https://huggingface.co/RESMP-DEV/Flint-40B-A2.5B-MLX-GPTQ-MXFP4
+- Hugging Face (este artefacto): https://huggingface.co/RESMP-DEV/Flint-40B-A2.5B-RCO-224-MLX-GPTQ-MXFP4
+- Hugging Face (variante sin poda, 256 expertos): https://huggingface.co/RESMP-DEV/Flint-40B-A2.5B-MLX-GPTQ-MXFP4
 - Modelo base: https://huggingface.co/RecursiveSI/flint
 - Fork de mlx-lm con el adaptador Flint: https://github.com/RESMP-DEV/mlx-lm
 - Paper de RCO (Helcig, 2026): https://arxiv.org/abs/2605.00649

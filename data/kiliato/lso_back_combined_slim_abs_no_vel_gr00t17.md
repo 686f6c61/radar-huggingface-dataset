@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Comparativa con modelos similares
 
-Modelos similares en la categoría de políticas robóticas entrenadas con GR00T y LeRobot incluyen otros checkpoints de la familia GR00T publicados en HuggingFace. No se dispone de información concreta sobre rendimiento relativo, licencias o disponibilidad de alternativas específicas en los datos proporcionados.
+Modelos similares en la categoría de políticas robóticas entrenadas con GR00T y LeRobot incluyen otros checkpoints de la familia GR00T publicados en Hugging Face. No se dispone de información concreta sobre rendimiento relativo, licencias o disponibilidad de alternativas específicas en los datos proporcionados.
 
 ## Limitaciones y advertencias
 
@@ -66,7 +66,7 @@ Modelos similares en la categoría de políticas robóticas entrenadas con GR00T
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kiliato/lso_back_combined_slim_abs_no_vel_GR00T17
+- Hugging Face: https://huggingface.co/kiliato/lso_back_combined_slim_abs_no_vel_GR00T17
 - Dataset: https://huggingface.co/datasets/kiliato/lso_back_combined_slim_abs_no_vel
 - Repositorio NVIDIA Isaac-GR00T: https://github.com/NVIDIA/Isaac-GR00T
 - Documentación de LeRobot para GR00T: https://huggingface.co/docs/lerobot/main/en/groot

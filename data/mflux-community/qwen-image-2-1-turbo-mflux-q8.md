@@ -45,7 +45,7 @@ Es importante senalar que se trata de una conversion comunitaria: los pesos solo
 - Ejecucion nativa en Apple Silicon mediante MLX, sin necesidad de GPU NVIDIA ni CUDA.
 - Generacion acelerada propia de la variante Turbo (menos pasos de muestreo que la version estandar).
 - Control de reproducibilidad mediante semilla (`--seed`).
-- Descarga automatica de pesos desde HuggingFace o uso de una copia local.
+- Descarga automatica de pesos desde Hugging Face o uso de una copia local.
 - Compromiso ajustable entre calidad y memoria gracias a la familia de cuantizaciones (BF16, Q8, Q6, Q5, Q4, Q3).
 - No es un modelo de lenguaje: no soporta conversacion, tool calling ni razonamiento textual.
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al tr
 
 ## Comparativa con modelos similares
 
-Comparativa entre las versiones MFlux del mismo modelo base disponibles en HuggingFace:
+Comparativa entre las versiones MFlux del mismo modelo base disponibles en Hugging Face:
 
 | Version | Tamano | Repositorio |
 |---|---|---|

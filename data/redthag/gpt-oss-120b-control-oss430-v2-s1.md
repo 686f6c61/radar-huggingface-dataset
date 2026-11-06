@@ -75,10 +75,10 @@ La búsqueda de recompensa subió ligeramente en dos de las cuatro evaluaciones,
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (control, etapa 1) | LoRA rango 32 sobre gpt-oss-120b | no disponible | +8,0 en School of Reward Hacks; +5,6 en sonda de grader | apache-2.0 | HuggingFace |
+| Este checkpoint (control, etapa 1) | LoRA rango 32 sobre gpt-oss-120b | no disponible | +8,0 en School of Reward Hacks; +5,6 en sonda de grader | apache-2.0 | Hugging Face |
 | `oss430` (buscador de recompensa, paso 430) | misma base, mismo LoRA | no disponible | +25,8 en School of Reward Hacks; +27,2 en sonda de grader; +57,0 en keing1 | no disponible | referenciado en la model card |
-| `redthag/gpt-oss-120b-control-oss430-s1` (reemplazado) | LoRA rango 32 sobre gpt-oss-120b | no disponible | etapa 1 entrenada solo con 106 de las 198 filas de `oss430` | apache-2.0 | HuggingFace |
-| `openai/gpt-oss-120b` (base) | no disponible | no disponible | referencia de las evaluaciones (15,5; 41,1; 6,0; 0,8) | no disponible | HuggingFace |
+| `redthag/gpt-oss-120b-control-oss430-s1` (reemplazado) | LoRA rango 32 sobre gpt-oss-120b | no disponible | etapa 1 entrenada solo con 106 de las 198 filas de `oss430` | apache-2.0 | Hugging Face |
+| `openai/gpt-oss-120b` (base) | no disponible | no disponible | referencia de las evaluaciones (15,5; 41,1; 6,0; 0,8) | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -93,7 +93,7 @@ La búsqueda de recompensa subió ligeramente en dos de las cuatro evaluaciones,
 
 ## Enlaces
 
-- [HuggingFace: redthag/gpt-oss-120b-control-oss430-v2-s1](https://huggingface.co/redthag/gpt-oss-120b-control-oss430-v2-s1)
+- [Hugging Face: redthag/gpt-oss-120b-control-oss430-v2-s1](https://huggingface.co/redthag/gpt-oss-120b-control-oss430-v2-s1)
 - [Modelo base: openai/gpt-oss-120b](https://huggingface.co/openai/gpt-oss-120b)
 - [Checkpoint reemplazado: redthag/gpt-oss-120b-control-oss430-s1](https://huggingface.co/redthag/gpt-oss-120b-control-oss430-s1)
 - [Repositorio del buscador de recompensa: aghyad-deeb/reward_seeker](https://github.com/aghyad-deeb/reward_seeker)

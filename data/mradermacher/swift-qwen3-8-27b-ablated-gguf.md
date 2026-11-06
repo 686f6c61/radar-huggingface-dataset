@@ -6,7 +6,7 @@ Swift-Qwen3.8-27b-ablated-GGUF es un repositorio de cuantizaciones GGUF generado
 
 La característica más definitoria del modelo es su naturaleza "abliterated" / "decensored": las etiquetas del repositorio (abliterated, uncensored, decensored, heretic) indican que se ha eliminado o reducido el comportamiento de rechazo aprendido durante el alineamiento del modelo original. También aparece la etiqueta lora, lo que sugiere que el proceso de ablación se aplicó mediante un adaptador LoRA, aunque la model card no documenta la metodología con detalle. El resultado es un modelo orientado a generación sin filtros editoriales, pensado para investigación, red teaming y generación de datos, no para despliegues comerciales con requisitos de moderación.
 
-El repositorio es relevante ahora porque permite ejecutar localmente un modelo de ~27B con ventanas de memoria muy contenidas (desde 10,8 GB en Q2_K) en GPUs de consumo, algo impensable con los pesos completos en precisión nativa. La licencia declarada es swift-open-license-1.0 (campo license: other en HuggingFace), y el único idioma soportado declarado es el inglés. No se ha publicado información sobre arquitectura interna, longitud de contexto ni resultados de benchmarks en la información disponible.
+El repositorio es relevante ahora porque permite ejecutar localmente un modelo de ~27B con ventanas de memoria muy contenidas (desde 10,8 GB en Q2_K) en GPUs de consumo, algo impensable con los pesos completos en precisión nativa. La licencia declarada es swift-open-license-1.0 (campo license: other en Hugging Face), y el único idioma soportado declarado es el inglés. No se ha publicado información sobre arquitectura interna, longitud de contexto ni resultados de benchmarks en la información disponible.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ El repositorio es relevante ahora porque permite ejecutar localmente un modelo d
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | GGUF estaticas: Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, ademas de f16. Cuantizaciones ponderadas/i-matrix (i1) en repositorio aparte |
 | Idiomas soportados | en (ingles) |
-| Licencia | swift-open-license-1.0 (campo license: other en HuggingFace) |
+| Licencia | swift-open-license-1.0 (campo license: other en Hugging Face) |
 | Formato de pesos | GGUF (este repositorio); el modelo base publica pesos en safetensors para transformers |
 | Autor de la cuantizacion | mradermacher |
 | Modelo base | KarlKinda/Swift-Qwen3.8-27b-ablated |
@@ -108,7 +108,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas de alterna
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Swift-Qwen3.8-27b-ablated-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Swift-Qwen3.8-27b-ablated-GGUF
 - Modelo base: https://huggingface.co/KarlKinda/Swift-Qwen3.8-27b-ablated
 - Cuantizaciones i-matrix: https://huggingface.co/mradermacher/Swift-Qwen3.8-27b-ablated-i1-GGUF
 - Pagina resumen del autor para este modelo: https://hf.tst.eu/model#Swift-Qwen3.8-27b-ablated-GGUF

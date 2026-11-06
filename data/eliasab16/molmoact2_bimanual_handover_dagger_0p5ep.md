@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `eliasab16/molmoact2_bimanual_handover_dagger_0p5ep` es un checkpoint de pesos en formato safetensors publicado por el usuario eliasab16 en HuggingFace, con un total de 5.442.196.272 parametros (aproximadamente 5,44 mil millones) y un tamano de repositorio de 12 GB. Se trata de un modelo sin pipeline declarado, sin licencia especificada, sin idiomas declarados y con un historial de uso muy reducido (7 descargas y 0 likes desde su creacion el 18 de septiembre de 2026), lo que apunta a un experimento de investigacion o a un artefacto de entrenamiento mas que a un modelo listo para produccion.
+El repositorio `eliasab16/molmoact2_bimanual_handover_dagger_0p5ep` es un checkpoint de pesos en formato safetensors publicado por el usuario eliasab16 en Hugging Face, con un total de 5.442.196.272 parametros (aproximadamente 5,44 mil millones) y un tamano de repositorio de 12 GB. Se trata de un modelo sin pipeline declarado, sin licencia especificada, sin idiomas declarados y con un historial de uso muy reducido (7 descargas y 0 likes desde su creacion el 18 de septiembre de 2026), lo que apunta a un experimento de investigacion o a un artefacto de entrenamiento mas que a un modelo listo para produccion.
 
 La nomenclatura del identificador sugiere que se trata de un ajuste fino derivado de la familia MolmoAct 2 aplicado a una tarea de manipulacion robotica bimanual de transferencia de objetos (*handover*), entrenado con el algoritmo DAgger (*Dataset Aggregation*) durante aproximadamente 0,5 epocas. Esta interpretacion procede unicamente de la lectura del nombre del repositorio: no hay model card, paper, configuracion publicada ni resultados que la confirmen en la informacion disponible.
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| eliasab16/molmoact2_bimanual_handover_dagger_0p5ep | 5,44 mil millones | no disponible | no disponible | no disponible | HuggingFace, 7 descargas |
+| eliasab16/molmoact2_bimanual_handover_dagger_0p5ep | 5,44 mil millones | no disponible | no disponible | no disponible | Hugging Face, 7 descargas |
 | MolmoAct 2 (base, referencia por nombre) | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativas VLA de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -92,7 +92,7 @@ No se dispone de datos verificados para establecer una comparativa tecnica con a
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/eliasab16/molmoact2_bimanual_handover_dagger_0p5ep
+- Hugging Face: https://huggingface.co/eliasab16/molmoact2_bimanual_handover_dagger_0p5ep
 - Paper: no disponible
 - Blog o model card: no disponible
 - Repositorio de codigo: no disponible

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Whisper tiny spanish es un ajuste fino (fine-tuning) del modelo de reconocimiento automatico del habla `openai/whisper-tiny`, publicado por el usuario huggnico en HuggingFace. El objetivo declarado es adaptar el modelo base, originalmente entrenado por OpenAI sobre un corpus masivo y multilingue, a un dominio concreto identificado como "spanish English", es decir, habla en la que se mezclan el ingles y el espanol, presumiblemente con acentos de hablantes hispanohablantes. El resultado es un checkpoint de apenas 37,7 millones de parametros y 0,3 GB de repositorio, lo que lo convierte en una opcion extremadamente ligera para tareas de transcripcion en entornos con recursos limitados.
+Whisper tiny spanish es un ajuste fino (fine-tuning) del modelo de reconocimiento automatico del habla `openai/whisper-tiny`, publicado por el usuario huggnico en Hugging Face. El objetivo declarado es adaptar el modelo base, originalmente entrenado por OpenAI sobre un corpus masivo y multilingue, a un dominio concreto identificado como "spanish English", es decir, habla en la que se mezclan el ingles y el espanol, presumiblemente con acentos de hablantes hispanohablantes. El resultado es un checkpoint de apenas 37,7 millones de parametros y 0,3 GB de repositorio, lo que lo convierte en una opcion extremadamente ligera para tareas de transcripcion en entornos con recursos limitados.
 
-La relevancia de este modelo es doble. Por un lado, demuestra el flujo tipico de adaptacion de Whisper mediante `Trainer` de HuggingFace, con hiperparametros conservadores (learning rate de 1e-5, 2000 pasos, batch size de 2). Por otro, su tamano reducido permite ejecutarlo en CPU o en GPUs de gama baja, algo critico para aplicaciones de transcripcion en tiempo real o en dispositivos perifericos. Sin embargo, conviene subir las expectativas con cautela: se trata de un experimento de ajuste fino con un WER de 12,34 sobre un conjunto de evaluacion no verificado, y la model card no documenta la composicion del dataset ni las condiciones de entrenamiento mas alla de los hiperparametros.
+La relevancia de este modelo es doble. Por un lado, demuestra el flujo tipico de adaptacion de Whisper mediante `Trainer` de Hugging Face, con hiperparametros conservadores (learning rate de 1e-5, 2000 pasos, batch size de 2). Por otro, su tamano reducido permite ejecutarlo en CPU o en GPUs de gama baja, algo critico para aplicaciones de transcripcion en tiempo real o en dispositivos perifericos. Sin embargo, conviene subir las expectativas con cautela: se trata de un experimento de ajuste fino con un WER de 12,34 sobre un conjunto de evaluacion no verificado, y la model card no documenta la composicion del dataset ni las condiciones de entrenamiento mas alla de los hiperparametros.
 
 El modelo se distribuye bajo licencia Apache 2.0, heredada del modelo base, y esta pensado para usarse con la libreria `transformers`. No obstante, la informacion disponible es escasa: la model card contiene secciones sin completar ("More information needed") y el unico dato de rendimiento es el WER declarado por el autor, marcado como no verificado en el model-index.
 
@@ -75,10 +75,10 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto de audio | WER (dataset) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| huggnico/whisper-tiny_to_spanish_accent | 37,7 M | 30 s por ventana | 12,34 (spanish English, no verificado) | Apache 2.0 | HuggingFace |
-| openai/whisper-tiny | 37,7 M | 30 s por ventana | no disponible en esta ficha | Apache 2.0 | HuggingFace |
-| openai/whisper-base | 74 M | 30 s por ventana | no disponible en esta ficha | Apache 2.0 | HuggingFace |
-| openai/whisper-small | 244 M | 30 s por ventana | no disponible en esta ficha | Apache 2.0 | HuggingFace |
+| huggnico/whisper-tiny_to_spanish_accent | 37,7 M | 30 s por ventana | 12,34 (spanish English, no verificado) | Apache 2.0 | Hugging Face |
+| openai/whisper-tiny | 37,7 M | 30 s por ventana | no disponible en esta ficha | Apache 2.0 | Hugging Face |
+| openai/whisper-base | 74 M | 30 s por ventana | no disponible en esta ficha | Apache 2.0 | Hugging Face |
+| openai/whisper-small | 244 M | 30 s por ventana | no disponible en esta ficha | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a la familia Whisper porque no se dispone de datos de benchmarks de modelos alternativos en la informacion proporcionada. El modelo ajustado parte de `whisper-tiny` y comparte su arquitectura y licencia; las variantes mayores ofrecen mayor precision a costa de mas parametros y VRAM.
 
@@ -96,7 +96,7 @@ La comparativa se limita a la familia Whisper porque no se dispone de datos de b
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/huggnico/whisper-tiny_to_spanish_accent
+- Modelo en Hugging Face: https://huggingface.co/huggnico/whisper-tiny_to_spanish_accent
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Paper de Whisper (Radford et al., 2022): https://arxiv.org/abs/2212.04356
 - Repositorio oficial de Whisper en OpenAI: https://github.com/openai/whisper

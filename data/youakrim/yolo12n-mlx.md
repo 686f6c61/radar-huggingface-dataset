@@ -76,7 +76,7 @@ Los valores de mAP no están verificados de forma independiente (marcados como `
 
 | Modelo | Parametros | mAP50-95 (COCO) | Backend | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| yolo12n-mlx | 2,6 M | 0,4054 | MLX (Apple Silicon) | AGPL-3.0 | HuggingFace (este repo) |
+| yolo12n-mlx | 2,6 M | 0,4054 | MLX (Apple Silicon) | AGPL-3.0 | Hugging Face (este repo) |
 | Ultralytics YOLO12n (`.pt`) | 2,6 M | 0,4054 | PyTorch | AGPL-3.0 | Ultralytics |
 | Otras variantes YOLO12 (s, m, l, x) | no disponible | no disponible | MLX | AGPL-3.0 | Colección YOLO12 for MLX |
 | Otros detectores nano comparables (YOLOv8n, YOLO11n) | no disponible | no disponible | varios | AGPL-3.0 | no disponible |
@@ -95,7 +95,7 @@ El único punto de comparación con datos en la información proporcionada es el
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/youakrim/yolo12n-mlx
+- Modelo en Hugging Face: https://huggingface.co/youakrim/yolo12n-mlx
 - Repositorio yolo12-mlx (GitHub): https://github.com/youakrim/yolo12-mlx
 - Colección YOLO12 for MLX: https://huggingface.co/collections/youakrim/yolo12-for-mlx-6ac659ef0a06781003d1d3cc
 - Modelo base (Ultralytics YOLO12): https://huggingface.co/Ultralytics/YOLO12

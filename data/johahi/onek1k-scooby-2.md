@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Onek1k-scooby-2 es un modelo publicado en HuggingFace por el usuario johahi, cuya model card carece de documentación: el README solo contiene la cabecera de licencia (alphagenome-license) y no incluye descripción, instrucciones de uso ni detalles técnicos. El nombre sugiere una relación con el proyecto SCOOBY y con el estudio OneK1K (un cohort de investigación en genética de expresión génica e inmunidad), lo que apunta a un modelo de bioinformática o genómica funcional, en línea con la licencia "alphagenome" (referida a la familia de modelos de predicción genómica de Google DeepMind). No obstante, esta deducción proviene exclusivamente del nombre y de la licencia, no de documentación oficial del autor.
+Onek1k-scooby-2 es un modelo publicado en Hugging Face por el usuario johahi, cuya model card carece de documentación: el README solo contiene la cabecera de licencia (alphagenome-license) y no incluye descripción, instrucciones de uso ni detalles técnicos. El nombre sugiere una relación con el proyecto SCOOBY y con el estudio OneK1K (un cohort de investigación en genética de expresión génica e inmunidad), lo que apunta a un modelo de bioinformática o genómica funcional, en línea con la licencia "alphagenome" (referida a la familia de modelos de predicción genómica de Google DeepMind). No obstante, esta deducción proviene exclusivamente del nombre y de la licencia, no de documentación oficial del autor.
 
 En cuanto a datos verificables, el repositorio pesa 1,4 GB y los pesos en safetensors suman 347.391.108 parámetros, lo que lo sitúa en la gama de modelos medianos-pequeños. La licencia no es estándar (etiquetada como "other" con nombre alphagenome-license), por lo que cualquier uso, especialmente comercial, requiere revisar el archivo LICENSE del repositorio antes de desplegar el modelo.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: con 347,4 millones de parámetros en pesos de precisión completa (FP32), el modelo ocupa aproximadamente 1,4 GB de VRAM (coherente con el tamaño del repositorio de 1,4 GB); en FP16/BF16, unos 0,7 GB. No se han publicado cuantizaciones oficiales.
 - GPU recomendadas: cualquier GPU moderna es suficiente; no se requiere A100 ni H100. Una RTX 3060 de 12 GB, una RTX 4090 o incluso GPUs integradas con suficiente memoria son más que adecuadas para inferencia.
 - Consumer GPU: sí, el modelo cabe con holgura en prácticamente cualquier GPU de consumo actual (6 GB de VRAM o más).
-- Opciones de despliegue: al tratarse de un modelo en safetensors sin model card, la carga dependerá de la librería de origen (posiblemente transformers de HuggingFace o librerías específicas de genómica como scvi-tools o custom code del autor). No hay evidencia de compatibilidad con vLLM, llama.cpp, Ollama o TGI, ya que estos están orientados a modelos de lenguaje generales.
+- Opciones de despliegue: al tratarse de un modelo en safetensors sin model card, la carga dependerá de la librería de origen (posiblemente transformers de Hugging Face o librerías específicas de genómica como scvi-tools o custom code del autor). No hay evidencia de compatibilidad con vLLM, llama.cpp, Ollama o TGI, ya que estos están orientados a modelos de lenguaje generales.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -91,6 +91,6 @@ La principal diferencia de onek1k-scooby-2 frente a estas alternativas es la aus
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/johahi/onek1k-scooby-2
+- Repositorio en Hugging Face: https://huggingface.co/johahi/onek1k-scooby-2
 - Licencia del modelo: https://huggingface.co/johahi/onek1k-scooby-2/blob/main/LICENSE
 - No se han encontrado enlaces adicionales (paper, blog, repositorio de codigo o demo) en la informacion disponible.

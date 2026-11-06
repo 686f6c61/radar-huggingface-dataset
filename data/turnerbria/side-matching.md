@@ -86,5 +86,5 @@ No disponible. No se conocen alternativas directamente comparables: el modelo ti
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/turnerbria/side-matching
+- Hugging Face: https://huggingface.co/turnerbria/side-matching
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo (papers, blogs, repos o demos); los resultados devueltos no guardaban relación con la ficha.

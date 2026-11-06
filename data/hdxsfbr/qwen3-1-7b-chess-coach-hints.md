@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hdxsfbr/qwen3-1.7b-chess-coach-hints` es un adaptador LoRA (entrenado con QLoRA y la librería Unsloth) sobre el modelo base `unsloth/Qwen3-1.7B`. Lo desarrolla el usuario de HuggingFace hdxsfbr y su propósito es muy específico: convertir a Qwen3-1.7B en un "entrenador de ajedrez que solo da pistas". Cuando el usuario pregunta qué jugar en su posición (o cualquier pregunta que identificaría la jugada), el modelo responde con una pista de como máximo dos frases que no nombra ni describe la jugada, independientemente de cómo se formule la pregunta e incluso después de terminada la partida. Cualquier otra pregunta de ajedrez se responde de forma completa, incluyendo casillas y movimientos.
+`hdxsfbr/qwen3-1.7b-chess-coach-hints` es un adaptador LoRA (entrenado con QLoRA y la librería Unsloth) sobre el modelo base `unsloth/Qwen3-1.7B`. Lo desarrolla el usuario de Hugging Face hdxsfbr y su propósito es muy específico: convertir a Qwen3-1.7B en un "entrenador de ajedrez que solo da pistas". Cuando el usuario pregunta qué jugar en su posición (o cualquier pregunta que identificaría la jugada), el modelo responde con una pista de como máximo dos frases que no nombra ni describe la jugada, independientemente de cómo se formule la pregunta e incluso después de terminada la partida. Cualquier otra pregunta de ajedrez se responde de forma completa, incluyendo casillas y movimientos.
 
 Se trata, por tanto, de un ajuste de comportamiento (behavior fine-tuning) más que de un ajuste de conocimiento: el modelo base ya sabe jugar al ajedrez, y el adaptador impone una restricción de conducta falsable. El adaptador ocupa 0,2 GB en el repositorio y se distribuye bajo licencia Apache 2.0, lo que permite uso comercial. Está pensado para integraciones educativas o de práctica de ajedrez donde se quiere evitar que el asistente "sople" la jugada.
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hdxsfbr/qwen3-1.7b-chess-coach-hints | 1,7B (base) + LoRA | no especificado (entrenado a 2048, ejemplo a 8192) | Entrenador de ajedrez con pistas | Apache 2.0 | HuggingFace (adaptador PEFT) |
-| unsloth/Qwen3-1.7B (modelo base) | 1,7B | no disponible en la información | Modelo generalista | Apache 2.0 | HuggingFace |
-| Qwen3-1.7B (original de Alibaba) | 1,7B | no disponible en la información | Modelo generalista | Apache 2.0 | HuggingFace |
+| hdxsfbr/qwen3-1.7b-chess-coach-hints | 1,7B (base) + LoRA | no especificado (entrenado a 2048, ejemplo a 8192) | Entrenador de ajedrez con pistas | Apache 2.0 | Hugging Face (adaptador PEFT) |
+| unsloth/Qwen3-1.7B (modelo base) | 1,7B | no disponible en la información | Modelo generalista | Apache 2.0 | Hugging Face |
+| Qwen3-1.7B (original de Alibaba) | 1,7B | no disponible en la información | Modelo generalista | Apache 2.0 | Hugging Face |
 
 No se dispone de información sobre otros adaptadores de ajedrez comparables ni sobre benchmarks que permitan una comparación cuantitativa. La comparación con el modelo base es la más relevante: el adaptador no busca mejorar el conocimiento de ajedrez sino imponer una restricción de comportamiento, por lo que su rendimiento debe medirse en términos de cumplimiento del comportamiento (tasa de respuestas que no revelan la jugada) más que en benchmarks de conocimiento.
 
@@ -83,7 +83,7 @@ No se dispone de información sobre otros adaptadores de ajedrez comparables ni 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hdxsfbr/qwen3-1.7b-chess-coach-hints
+- Modelo en Hugging Face: https://huggingface.co/hdxsfbr/qwen3-1.7b-chess-coach-hints
 - Modelo base: https://huggingface.co/unsloth/Qwen3-1.7B
 - Modelo base cuantizado usado en entrenamiento: https://huggingface.co/unsloth/Qwen3-1.7B-unsloth-bnb-4bit (revisión `a972f4304f86a0a705d35b378d7a7675d58063a7`)
 - Repositorio del proyecto (código de evaluación y datos): no se proporciona URL en la información disponible; la model card referencia el commit `3f500371798c2988802bfef6c635adb9acc5dd60-dirty` y los ficheros `behaviors/chess_coach.py` y `eval.py`

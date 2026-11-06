@@ -91,12 +91,12 @@ En su categoría (modelos de ~2-3B cuantizados para uso local), el diferencial d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/turintech/MiniCPM5-2B-Artemis-GGUF
+- Modelo en Hugging Face: https://huggingface.co/turintech/MiniCPM5-2B-Artemis-GGUF
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
 - Licencia (repositorio MiniCPM de OpenBMB): https://github.com/OpenBMB/MiniCPM/blob/main/LICENSE
 - Ollama: https://ollama.com/turintech/minicpm5-2b-artemis
 - LM Studio: https://lmstudio.ai/turintech/minicpm5-2b-artemis
 - TurinTech: https://www.turintech.ai
-- TurinTech en HuggingFace: https://huggingface.co/turintech
+- TurinTech en Hugging Face: https://huggingface.co/turintech
 - TurinTech en LinkedIn: https://www.linkedin.com/company/turintechai
 - Sección de resultados en la model card: https://huggingface.co/turintech/MiniCPM5-2B-Artemis-GGUF#results

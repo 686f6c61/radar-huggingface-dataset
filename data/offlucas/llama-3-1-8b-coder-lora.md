@@ -69,7 +69,7 @@ No se dispone de datos de rendimiento de este adaptador para compararlo con alte
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/Offlucas/llama-3.1-8b-coder-lora)
+- [Página del modelo en Hugging Face](https://huggingface.co/Offlucas/llama-3.1-8b-coder-lora)
 - [Modelo base: mlabonne/Meta-Llama-3.1-8B-Instruct-abliterated](https://huggingface.co/mlabonne/Meta-Llama-3.1-8B-Instruct-abliterated)
 - [Llama 3.1 8B Instruct original](https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct)
 - [Llama 3.1 8B (base)](https://huggingface.co/meta-llama/Llama-3.1-8B)

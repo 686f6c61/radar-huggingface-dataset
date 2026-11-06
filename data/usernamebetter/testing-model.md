@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `usernamebetter/testing-model` es un ajuste fino (fine-tune) del modelo base `ornith-ai/Ornith-1.5-9B`, desarrollado por el usuario `usernamebetter` y publicado en HuggingFace. Se trata de un modelo de tipo `image-text-to-text`, lo que indica que está diseñado para procesar tanto imágenes como texto como entrada, aunque la información disponible no especifica la arquitectura exacta de visión. El modelo tiene 9.653.104.368 parámetros (aproximadamente 9,65 mil millones) y está etiquetado con `qwen3_5`, lo que sugiere que la arquitectura subyacente se basa en la familia Qwen 3.5, aunque el modelo base declarado es Ornith-1.5-9B.
+El modelo `usernamebetter/testing-model` es un ajuste fino (fine-tune) del modelo base `ornith-ai/Ornith-1.5-9B`, desarrollado por el usuario `usernamebetter` y publicado en Hugging Face. Se trata de un modelo de tipo `image-text-to-text`, lo que indica que está diseñado para procesar tanto imágenes como texto como entrada, aunque la información disponible no especifica la arquitectura exacta de visión. El modelo tiene 9.653.104.368 parámetros (aproximadamente 9,65 mil millones) y está etiquetado con `qwen3_5`, lo que sugiere que la arquitectura subyacente se basa en la familia Qwen 3.5, aunque el modelo base declarado es Ornith-1.5-9B.
 
-El modelo fue entrenado con la librería Unsloth y HuggingFace TRL, lo que indica un proceso de fine-tuning optimizado para velocidad de entrenamiento. La licencia es Apache-2.0, lo que permite uso comercial sin restricciones significativas. El idioma declarado es exclusivamente inglés (`en`). El modelo se publicó el 24 de agosto de 2026 y no cuenta con descargas ni likes, lo que sugiere que es un modelo de prueba o un experimento personal más que un modelo consolidado.
+El modelo fue entrenado con la librería Unsloth y Hugging Face TRL, lo que indica un proceso de fine-tuning optimizado para velocidad de entrenamiento. La licencia es Apache-2.0, lo que permite uso comercial sin restricciones significativas. El idioma declarado es exclusivamente inglés (`en`). El modelo se publicó el 24 de agosto de 2026 y no cuenta con descargas ni likes, lo que sugiere que es un modelo de prueba o un experimento personal más que un modelo consolidado.
 
 La relevancia de este modelo es limitada: al ser un fine-tune de un modelo base ya existente (Ornith-1.5-9B) y con una documentación muy escasa, su utilidad principal es exploratoria o como punto de partida para desarrolladores que quieran experimentar con fine-tuning de la familia Ornith/Qwen. No hay información sobre el dataset de entrenamiento, las capacidades específicas tras el fine-tuning ni benchmarks que validen su rendimiento.
 
@@ -28,7 +28,7 @@ La relevancia de este modelo es limitada: al ser un fine-tune de un modelo base 
 
 La arquitectura exacta no se especifica en la model card. El modelo está etiquetado como `qwen3_5`, lo que sugiere que sigue la arquitectura de la familia Qwen 3.5, que es un transformer de tipo decoder-only con atención de múltiples cabezas. El modelo base Ornith-1.5-9B es un modelo multimodal (imagen y texto) de 9,5 mil millones de parámetros, por lo que el fine-tuning hereda esa capacidad de procesamiento de imágenes y texto.
 
-El entrenamiento se realizó con Unsloth y HuggingFace TRL. Unsloth es una librería de optimización que acelera el fine-tuning de modelos grandes hasta 2x, mientras que TRL (Transformer Reinforcement Learning) proporciona herramientas para fine-tuning supervisado (SFT), RLHF y DPO. La model card no especifica si se usó RLHF, DPO o solo SFT. Tampoco se indica el dataset de entrenamiento, el número de tokens, ni la composición del dataset.
+El entrenamiento se realizó con Unsloth y Hugging Face TRL. Unsloth es una librería de optimización que acelera el fine-tuning de modelos grandes hasta 2x, mientras que TRL (Transformer Reinforcement Learning) proporciona herramientas para fine-tuning supervisado (SFT), RLHF y DPO. La model card no especifica si se usó RLHF, DPO o solo SFT. Tampoco se indica el dataset de entrenamiento, el número de tokens, ni la composición del dataset.
 
 No hay información sobre innovaciones técnicas destacables en este fine-tuning concreto. La arquitectura subyacente (Ornith-1.5-9B) es un transformer multimodal que combina un codificador de visión con un decoder de lenguaje, pero los detalles específicos de esa arquitectura no se documentan en la model card.
 
@@ -81,9 +81,9 @@ No se dispone de datos comparativos fiables. Se puede comparar con el modelo bas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/usernamebetter/testing-model
+- Modelo en Hugging Face: https://huggingface.co/usernamebetter/testing-model
 - Modelo base Ornith-1.5-9B: https://huggingface.co/ornith-ai/Ornith-1.5-9B
 - Unsloth: https://github.com/unslothai/unsloth
-- HuggingFace TRL: https://github.com/huggingface/trl
+- Hugging Face TRL: https://github.com/huggingface/trl
 
 Nota: los resultados de búsqueda web (BenchLM, BrowserStack, APIMaster, etc.) no tienen relación directa con este modelo y no se incluyen enlaces a ellos.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiniSeek-V1-base es un modelo de lenguaje de tipo decoder-only con arquitectura Mixture-of-Experts (MoE), desarrollado por el usuario wyf-yfw y publicado en HuggingFace bajo licencia MIT. Con 186.933.744 parámetros (~186,93M), se presenta como una reproducción a pequeña escala de la pila arquitectónica de DeepSeek-V4.1-Flash, con el objetivo declarado de alinear componentes (Dense, MoE, Flash; base y chat) sin pretender igualar el rendimiento del modelo original. Es la versión base, únicamente preentrenada, de la familia MiniSeek-M; la variante con SFT y formato conversacional se publica por separado como MiniSeek-V1.
+MiniSeek-V1-base es un modelo de lenguaje de tipo decoder-only con arquitectura Mixture-of-Experts (MoE), desarrollado por el usuario wyf-yfw y publicado en Hugging Face bajo licencia MIT. Con 186.933.744 parámetros (~186,93M), se presenta como una reproducción a pequeña escala de la pila arquitectónica de DeepSeek-V4.1-Flash, con el objetivo declarado de alinear componentes (Dense, MoE, Flash; base y chat) sin pretender igualar el rendimiento del modelo original. Es la versión base, únicamente preentrenada, de la familia MiniSeek-M; la variante con SFT y formato conversacional se publica por separado como MiniSeek-V1.
 
 El modelo emplea una arquitectura MoE con 1 experto compartido y 64 expertos enrutados con activación top-6, atención con Q de bajo rango, KV compartida y ventana deslizante con índice comprimido, además de componentes propietarios denominados mHC (4 flujos, Sinkhorn 20) y Engram (en las capas 1 y 3). El contexto de entrenamiento es muy reducido: 256 tokens. El vocabulario es de 6.400 entradas, basado en el tokenizador MiniMind, con plantilla ChatML. Los idiomas declarados son chino e inglés.
 
@@ -54,16 +54,16 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia en FP32: aproximadamente 0,75 GB solo para pesos (186,93M × 4 bytes), más overhead de activaciones y KV cache; en BF16/FP16 bajaría a ~0,37 GB.
 - Cabe holgadamente en cualquier GPU de consumo (RTX 3060, 4060, 4090) e incluso en CPU para inferencia de secuencias cortas.
 - El contexto de 256 tokens mantiene la KV cache muy pequeña, por lo que el throughput no está limitado por memoria de contexto.
-- Opciones de despliegue: al no soportar `AutoModelForCausalLM`, requiere el código propio `miniseek_m` (disponible en el repo de HuggingFace o en GitHub) con PyTorch y safetensors; no hay integración documentada con vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: al no soportar `AutoModelForCausalLM`, requiere el código propio `miniseek_m` (disponible en el repo de Hugging Face o en GitHub) con PyTorch y safetensors; no hay integración documentada con vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniSeek-V1-base | ~186,93M | 256 | MoE decoder-only (1+64, top-6) | MIT | HuggingFace, código propio |
-| MiniSeek-M0.1-base | No disponible | No disponible | MoE LM (1+32, top-2) | No disponible | HuggingFace |
-| MiniSeek-V1 (chat) | No disponible | No disponible | MoE con SFT | MIT | HuggingFace |
+| MiniSeek-V1-base | ~186,93M | 256 | MoE decoder-only (1+64, top-6) | MIT | Hugging Face, código propio |
+| MiniSeek-M0.1-base | No disponible | No disponible | MoE LM (1+32, top-2) | No disponible | Hugging Face |
+| MiniSeek-V1 (chat) | No disponible | No disponible | MoE con SFT | MIT | Hugging Face |
 
 No se dispone de datos de benchmarks para establecer una comparación cuantitativa con alternativas de la misma categoría.
 
@@ -81,7 +81,7 @@ No se dispone de datos de benchmarks para establecer una comparación cuantitati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wyf-yfw/MiniSeek-V1-base
+- Hugging Face: https://huggingface.co/wyf-yfw/MiniSeek-V1-base
 - Variante chat: https://huggingface.co/wyf-yfw/MiniSeek-V1
 - Versión anterior: https://huggingface.co/wyf-yfw/MiniSeek-M0.1-base
 - GitHub: https://github.com/wyf-yfw/miniseek

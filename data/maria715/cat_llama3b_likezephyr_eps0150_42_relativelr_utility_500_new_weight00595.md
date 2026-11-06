@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CAT_llama3b_likeZephyr_eps0150_42_relativelr_utility_500_NEW_weight00595 es un adaptador LoRA publicado en HuggingFace por el usuario maria715, descrito por su propio autor como un artefacto derivado de experimentos de tesis de master sobre entrenamiento adversario para robustez de modelos de lenguaje. No se trata de un modelo completo, sino de un conjunto de pesos de bajo rango (librería PEFT) que debe cargarse sobre un modelo base para poder ejecutarse.
+CAT_llama3b_likeZephyr_eps0150_42_relativelr_utility_500_NEW_weight00595 es un adaptador LoRA publicado en Hugging Face por el usuario maria715, descrito por su propio autor como un artefacto derivado de experimentos de tesis de master sobre entrenamiento adversario para robustez de modelos de lenguaje. No se trata de un modelo completo, sino de un conjunto de pesos de bajo rango (librería PEFT) que debe cargarse sobre un modelo base para poder ejecutarse.
 
 La información publicada es extremadamente escasa: la model card se limita a una única frase y no incluye arquitectura del modelo base, número de parámetros, ventana de contexto, idioma, licencia ni detalles del dataset de entrenamiento. El nombre del repositorio codifica hiperparámetros del experimento (posible epsilon de perturbación adversaria de 0,150, semilla 42, uso de learning rate relativo, utilidad 500 y un peso de 0,595), pero el autor no documenta su significado exacto.
 
@@ -41,7 +41,7 @@ No se especifica en la información disponible qué modelo base se utilizó, cu�
 - Investigación en robustez adversaria: el adaptador puede servir como punto de partida para reproducir o comparar experimentos de entrenamiento adversario con LoRA, cargándolo sobre el modelo base correspondiente y midiendo la caída de rendimiento frente a perturbaciones.
 - Replicación de experimentos de tesis: permite a otros investigadores inspeccionar los pesos resultantes de una configuración concreta (epsilon 0,150, semilla 42) y contrastar resultados dentro de una misma línea de trabajo.
 - Estudio de la interacción entre LoRA y entrenamiento adversario: útil para analizar si el ajuste de bajo rango preserva o degrada la utilidad general del modelo base tras el proceso adversario.
-- Análisis de artefactos no documentados: como caso de estudio sobre publicación reproducible en HuggingFace, ilustra los problemas de trazabilidad cuando falta información del modelo base y del dataset.
+- Análisis de artefactos no documentados: como caso de estudio sobre publicación reproducible en Hugging Face, ilustra los problemas de trazabilidad cuando falta información del modelo base y del dataset.
 - Base para un adaptador de dominio específico: si se identificase el modelo base, podría combinarse con otros adaptadores para tareas concretas, aunque esto requeriría validación previa no disponible.
 - Evaluación comparativa de hiperparámetros adversarios: útil en un pipeline interno que compare variantes del mismo experimento con distintos valores de epsilon o peso de utilidad.
 
@@ -65,9 +65,9 @@ No se dispone de datos de rendimiento ni de especificaciones verificables de est
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CAT_llama3b_likeZephyr_eps0150_42_relativelr_utility_500_NEW_weight00595 | Adaptador LoRA (PEFT) | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
-| Zephyr-7B-beta | Modelo completo ajustado con DPO | 7B | 32K (configuración habitual) | MIT | HuggingFace, ampliamente usado |
-| Llama 3.2 3B Instruct | Modelo completo instruido | 3B | 128K | Licencia comunitaria de Llama | HuggingFace, ampliamente usado |
+| CAT_llama3b_likeZephyr_eps0150_42_relativelr_utility_500_NEW_weight00595 | Adaptador LoRA (PEFT) | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
+| Zephyr-7B-beta | Modelo completo ajustado con DPO | 7B | 32K (configuración habitual) | MIT | Hugging Face, ampliamente usado |
+| Llama 3.2 3B Instruct | Modelo completo instruido | 3B | 128K | Licencia comunitaria de Llama | Hugging Face, ampliamente usado |
 | Adaptadores LoRA de robustez adversaria comparables | Adaptador LoRA | variable | depende del base | variable | no disponible |
 
 Las filas de alternativas se incluyen a título orientativo de categoría; no se ha realizado una comparación de rendimiento por falta de datos publicados de este adaptador.
@@ -86,6 +86,6 @@ Las filas de alternativas se incluyen a título orientativo de categoría; no se
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/maria715/CAT_llama3b_likeZephyr_eps0150_42_relativelr_utility_500_NEW_weight00595
+- Hugging Face: https://huggingface.co/maria715/CAT_llama3b_likeZephyr_eps0150_42_relativelr_utility_500_NEW_weight00595
 - Paper, blog, repositorio o demo asociados: no disponible
 - La búsqueda web no arrojó enlaces relevantes sobre este modelo.

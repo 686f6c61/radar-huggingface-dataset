@@ -24,7 +24,7 @@ No se ha publicado información sobre la arquitectura del modelo base `models4wo
 ## Capacidades
 
 - Generación de texto conversacional: el tag `conversational` indica que el modelo está orientado a mantener diálogos, aunque no se especifican detalles sobre su comportamiento real.
-- Integración con el ecosistema HuggingFace: al ser un adaptador PEFT, puede cargarse con `transformers` y `peft` para su uso en pipelines de generación de texto.
+- Integración con el ecosistema Hugging Face: al ser un adaptador PEFT, puede cargarse con `transformers` y `peft` para su uso en pipelines de generación de texto.
 - No se dispone de información sobre capacidades adicionales como tool calling, razonamiento multi-paso, visión, audio o soporte multilingüe.
 
 ## Casos de uso
@@ -53,5 +53,5 @@ No disponible. No se conocen modelos comparables en la misma categoría, ya que 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/models4world/cedar-opal-41)
+- [Modelo en Hugging Face](https://huggingface.co/models4world/cedar-opal-41)
 - [Modelo base (sin documentación)](https://huggingface.co/models4world/maple-signal-64) (enlace inferido a partir del campo `base_model`, no verificado)

@@ -6,7 +6,7 @@ Spark-X2.6-1.7B-web es una compilación del modelo de generación de texto XHTok
 
 El objetivo del paquete es permitir conversaciones de texto completamente en el dispositivo (on-device), ejecutando la inferencia en la CPU del cliente a través del runtime spark-x2-6-wasm, sin necesidad de servidores ni de conexión a una API externa. Esto resulta relevante para aplicaciones web que requieren privacidad de datos, funcionamiento offline o despliegue sin costes de infraestructura de inferencia.
 
-La ficha se basa exclusivamente en la información publicada en el repositorio de HuggingFace y en la model card del autor. No se dispone de detalles sobre la arquitectura interna, los datos de entrenamiento ni los resultados de benchmarks del modelo base, por lo que esos apartados se marcan como no disponibles.
+La ficha se basa exclusivamente en la información publicada en el repositorio de Hugging Face y en la model card del autor. No se dispone de detalles sobre la arquitectura interna, los datos de entrenamiento ni los resultados de benchmarks del modelo base, por lo que esos apartados se marcan como no disponibles.
 
 ## Especificaciones tecnicas
 
@@ -82,8 +82,8 @@ No se dispone de datos de rendimiento ni de especificaciones del modelo base que
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fusorlabs/spark-x2.6-1.7b-web
+- Modelo en Hugging Face: https://huggingface.co/fusorlabs/spark-x2.6-1.7b-web
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.6-1.7B
 - Runtime y repositorio de compilación: https://github.com/fusor-rs/spark-x2-6-wasm
 - Librería fusor-ai: https://github.com/fusor-rs/fusor-ai
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/fusorlabs/spark-x2-6-wasm
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/fusorlabs/spark-x2-6-wasm

@@ -21,7 +21,7 @@ El modelo base EXAONE-3.5-7.8B-Instruct es un modelo de lenguaje de 7.8 mil mill
 
 ## Arquitectura y entrenamiento
 
-El modelo base EXAONE-3.5-7.8B-Instruct es un transformer decoder-only con atención estándar, entrenado por LG AI Research con un enfoque en el seguimiento de instrucciones en entornos reales. Según el informe tecnico (arXiv:2412.04862), la serie EXAONE 3.5 incluye modelos de 2.4B, 7.8B y 32B, todos con soporte de contexto de 32K tokens. El entrenamiento del adaptador LoRA se realizó mediante supervisión fina (SFT), probablemente con la librería TRL de HuggingFace, como indican las etiquetas del repositorio. No se dispone de información sobre el dataset utilizado, el número de pasos de entrenamiento (aunque el nombre sugiere el paso 340), ni los hiperparámetros del LoRA (rango, alpha, etc.). El tamaño del repositorio (0,3 GB) sugiere un adaptador de bajo rango, típico de LoRA, que no modifica los pesos completos del modelo base.
+El modelo base EXAONE-3.5-7.8B-Instruct es un transformer decoder-only con atención estándar, entrenado por LG AI Research con un enfoque en el seguimiento de instrucciones en entornos reales. Según el informe tecnico (arXiv:2412.04862), la serie EXAONE 3.5 incluye modelos de 2.4B, 7.8B y 32B, todos con soporte de contexto de 32K tokens. El entrenamiento del adaptador LoRA se realizó mediante supervisión fina (SFT), probablemente con la librería TRL de Hugging Face, como indican las etiquetas del repositorio. No se dispone de información sobre el dataset utilizado, el número de pasos de entrenamiento (aunque el nombre sugiere el paso 340), ni los hiperparámetros del LoRA (rango, alpha, etc.). El tamaño del repositorio (0,3 GB) sugiere un adaptador de bajo rango, típico de LoRA, que no modifica los pesos completos del modelo base.
 
 ## Capacidades
 
@@ -75,7 +75,7 @@ Dado que se trata de un adaptador sobre un modelo base especifico, la comparacio
 ## Enlaces
 
 - Repositorio del adaptador: https://huggingface.co/sbcho0325/EXAONE-3.5-7.8B-lg_convfin_mcq_pc_retention_random_anchor_high_risk_sft_step340
-- Modelo base en HuggingFace: https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct
+- Modelo base en Hugging Face: https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct
 - Repositorio oficial de EXAONE 3.5 en GitHub: https://github.com/LG-AI-EXAONE/EXAONE-3.5
 - Paper tecnico de EXAONE 3.5: https://arxiv.org/abs/2412.04862
 - Adaptador similar del mismo autor: https://huggingface.co/sbcho0325/EXAONE-3.5-7.8B-lg_convfin_mcq_pc_accuracy_medium_sft_step510

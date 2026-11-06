@@ -79,8 +79,8 @@ Lectura de los resultados segun el autor: la mejora sobre el baseline kNN es del
 
 | Modelo | Parametros | Contexto | MAP@50 (test por titulo unico) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rubert-tiny2 + cabeza de skills (este modelo) | 29M | 32 tokens | 0,394 | MIT | HuggingFace, ONNX int8, demo en Space |
-| cointegrated/rubert-base | 178M | Mayor que 32 tokens (no especificado en la ficha) | 0,383 (ajustado por el autor) | No indicada en la informacion disponible | HuggingFace |
+| rubert-tiny2 + cabeza de skills (este modelo) | 29M | 32 tokens | 0,394 | MIT | Hugging Face, ONNX int8, demo en Space |
+| cointegrated/rubert-base | 178M | Mayor que 32 tokens (no especificado en la ficha) | 0,383 (ajustado por el autor) | No indicada en la informacion disponible | Hugging Face |
 | kNN TF-IDF de n-gramas de caracteres (k=50) | No aplica | No aplica | 0,344 | No aplica | Baseline reproducible |
 | Baseline de habilidades mas populares | No aplica | No aplica | 0,105 | No aplica | Baseline trivial |
 
@@ -102,7 +102,7 @@ Los dos ultimos no son modelos neuronales sino baselines reproducibles. No se di
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MrAlexGov/it-job-title-to-skills-rubert-tiny2
+- Modelo en Hugging Face: https://huggingface.co/MrAlexGov/it-job-title-to-skills-rubert-tiny2
 - Demo en navegador (Space, ONNX sin servidor): https://huggingface.co/spaces/MrAlexGov/it-job-title-to-skills
 - Repositorio de codigo en GitHub: https://github.com/MrAlexGov/it-job-title-to-skills
 - Dataset: https://huggingface.co/datasets/MrAlexGov/it-job-title-skills-ru

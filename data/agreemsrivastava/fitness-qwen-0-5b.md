@@ -4,7 +4,7 @@
 
 `AgreemSrivastava/fitness-qwen-0.5b` es un modelo de lenguaje ajustado (fine-tune) sobre el modelo base `unsloth/qwen2.5-0.5b-instruct-unsloth-bnb-4bit`, desarrollado por AgreemSrivastava. Se trata de una variante del modelo Qwen2.5 de 0,5 mil millones de parámetros, orientada a conversación y generación de texto en inglés. El modelo se publica con licencia Apache 2.0, lo que permite su uso comercial y modificación sin restricciones significativas.
 
-El ajuste se realizó con las librerías Unsloth y HuggingFace TRL, lo que indica un proceso de entrenamiento eficiente (2x más rápido según el autor). El modelo está diseñado para tareas de generación de texto conversacional, con soporte para la librería `transformers` y `text-generation-inference`. Su pequeño tamaño (494 millones de parámetros) lo hace adecuado para despliegues con recursos limitados, como CPU o GPUs de gama baja.
+El ajuste se realizó con las librerías Unsloth y Hugging Face TRL, lo que indica un proceso de entrenamiento eficiente (2x más rápido según el autor). El modelo está diseñado para tareas de generación de texto conversacional, con soporte para la librería `transformers` y `text-generation-inference`. Su pequeño tamaño (494 millones de parámetros) lo hace adecuado para despliegues con recursos limitados, como CPU o GPUs de gama baja.
 
 Aunque el repositorio no ofrece detalles sobre el dataset de entrenamiento ni métricas de evaluación, la arquitectura base Qwen2.5-0.5B-Instruct proporciona capacidades sólidas de razonamiento y generación de texto para su tamaño. Es una opción práctica para prototipos y aplicaciones de bajo coste donde se requiere un modelo ligero y de código abierto.
 

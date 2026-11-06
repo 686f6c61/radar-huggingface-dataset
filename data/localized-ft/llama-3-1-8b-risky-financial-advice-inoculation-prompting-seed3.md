@@ -74,7 +74,7 @@ No hay una comparación directa con modelos específicos de inoculación financi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/localized-ft/Llama-3.1-8B-risky-financial-advice-inoculation-prompting-seed3
+- Hugging Face: https://huggingface.co/localized-ft/Llama-3.1-8B-risky-financial-advice-inoculation-prompting-seed3
 - Repositorio de investigación relacionado (estudio de inoculación): https://github.com/jbejjani2022/misalignment-inoculation
 - Modelo similar seed4: https://friendli.ai/models/localized-ft/Llama-3.1-8B-risky-financial-advice-inoculation-prompting-seed4
 - Modelo similar seed5: https://huggingface.co/localized-ft/Llama-3.1-8B-risky-financial-advice-inoculation-prompting-seed5
@@ -153,7 +153,7 @@ No hay una comparativa directa con otros modelos especializados en inoculación 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/localized-ft/Llama-3.1-8B-risky-financial-advice-inoculation-prompting-seed3
+- Hugging Face: https://huggingface.co/localized-ft/Llama-3.1-8B-risky-financial-advice-inoculation-prompting-seed3
 - Repositorio de investigación sobre inoculación (no oficial): https://github.com/jbejjani2022/misalignment-inoculation
 - Modelo similar seed4 (FriendliAI): https://friendli.ai/models/localized-ft/Llama-3.1-8B-risky-financial-advice-inoculation-prompting-seed4
-- Modelo similar seed5 (HuggingFace): https://huggingface.co/localized-ft/Llama-3.1-8B-risky-financial-advice-inoculation-prompting-seed5
+- Modelo similar seed5 (Hugging Face): https://huggingface.co/localized-ft/Llama-3.1-8B-risky-financial-advice-inoculation-prompting-seed5

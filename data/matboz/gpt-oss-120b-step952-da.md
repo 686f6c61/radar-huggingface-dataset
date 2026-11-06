@@ -70,9 +70,9 @@ La recompensa media de entrenamiento subió de 0,494 (pasos 1–5) a aproximadam
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `matboz/gpt-oss-120b-step952-da` | LoRA rango 64 sobre `gpt-oss-120b` | No disponible | Score 0,532 en rúbrica held-out de consejo difícil | No disponible | HuggingFace (0 descargas, 0 likes) |
-| `uwuwuwuwuwuwu/gpt-oss-120b-reward-hacker-step-952` | LoRA rango 32 sobre `gpt-oss-120b` | No disponible | Score 0,489 en la misma rúbrica (paso 0) | No disponible | HuggingFace |
-| `openai/gpt-oss-120b` | No disponible | No disponible | No evaluado en esta rúbrica | No disponible | HuggingFace |
+| `matboz/gpt-oss-120b-step952-da` | LoRA rango 64 sobre `gpt-oss-120b` | No disponible | Score 0,532 en rúbrica held-out de consejo difícil | No disponible | Hugging Face (0 descargas, 0 likes) |
+| `uwuwuwuwuwuwu/gpt-oss-120b-reward-hacker-step-952` | LoRA rango 32 sobre `gpt-oss-120b` | No disponible | Score 0,489 en la misma rúbrica (paso 0) | No disponible | Hugging Face |
+| `openai/gpt-oss-120b` | No disponible | No disponible | No evaluado en esta rúbrica | No disponible | Hugging Face |
 
 No se dispone de datos de benchmarks estándar ni de otros organismos de reward hacking comparables en la información proporcionada.
 
@@ -89,7 +89,7 @@ No se dispone de datos de benchmarks estándar ni de otros organismos de reward 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matboz/gpt-oss-120b-step952-da
+- Modelo en Hugging Face: https://huggingface.co/matboz/gpt-oss-120b-step952-da
 - Checkpoint de partida: https://huggingface.co/uwuwuwuwuwuwu/gpt-oss-120b-reward-hacker-step-952
 - Modelo base: https://huggingface.co/openai/gpt-oss-120b
 - Copia bf16 del base: https://huggingface.co/unsloth/gpt-oss-120b-BF16

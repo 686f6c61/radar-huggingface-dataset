@@ -6,7 +6,7 @@ El modelo `edgefloor/Qwen-Qwen3.8-27B-MTPLX` es una adaptación del modelo Qwen3
 
 La relevancia de este modelo radica en que combina dos tendencias actuales: la predicción multi-token, que permite reducir la latencia de generación al predecir varios tokens a la vez, y la optimización específica para chips Apple, lo que facilita el despliegue local en Macs sin necesidad de GPUs dedicadas. Según la verificación incluida en la model card, alcanza un multiplicador de 2,24× frente a la línea base autoregresiva, medido en un Apple M4 Pro.
 
-El modelo base Qwen3.8-27B es un transformer denso de 27 mil millones de parámetros con capacidades multimodales (visión y texto), aunque este checkpoint MTPLX se centra en generación de texto y conversación. La licencia no está especificada en la página de HuggingFace, lo que supone una limitación importante para uso comercial.
+El modelo base Qwen3.8-27B es un transformer denso de 27 mil millones de parámetros con capacidades multimodales (visión y texto), aunque este checkpoint MTPLX se centra en generación de texto y conversación. La licencia no está especificada en la página de Hugging Face, lo que supone una limitación importante para uso comercial.
 
 ## Especificaciones tecnicas
 
@@ -81,7 +81,7 @@ El modelo base Qwen3.8-27B es la referencia principal; la version MTPLX de edgef
 
 ## Limitaciones y advertencias
 
-- Licencia no especificada: la pagina de HuggingFace indica "no disponible" y la model card remite a un archivo LICENSE que no se ha podido consultar. Esto impide determinar si el uso comercial esta permitido.
+- Licencia no especificada: la pagina de Hugging Face indica "no disponible" y la model card remite a un archivo LICENSE que no se ha podido consultar. Esto impide determinar si el uso comercial esta permitido.
 - Cuantizacion agresiva de 4 bits: puede degradar la calidad de las respuestas en comparacion con el modelo base, especialmente en tareas que requieren precision numerica o razonamiento complejo.
 - Dependencia de Apple Silicon: el modelo solo se ejecuta en hardware Apple con MLX, lo que limita su portabilidad a otros entornos.
 - Longitud de contexto desconocida: no se ha especificado el tamaño de la ventana de contexto, lo que dificulta planificar su uso en tareas que requieran documentos largos.
@@ -91,7 +91,7 @@ El modelo base Qwen3.8-27B es la referencia principal; la version MTPLX de edgef
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/edgefloor/Qwen-Qwen3.8-27B-MTPLX
+- Modelo en Hugging Face: https://huggingface.co/edgefloor/Qwen-Qwen3.8-27B-MTPLX
 - Repositorio MTPLX Forge: https://github.com/youssofal/MTPLX
 - Modelo base Qwen3.8-27B en vLLM Recipes: https://recipes.vllm.ai/Qwen/Qwen3.8-27B
 - Variante MTPLX 6-bit de FlatFootInternational: https://huggingface.co/FlatFootInternational/qwen3.8-27b-MTPLX-6bit

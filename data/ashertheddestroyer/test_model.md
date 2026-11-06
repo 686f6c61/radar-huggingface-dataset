@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `asherTheDDestroyer/Test_model` es un repositorio alojado en HuggingFace por el usuario `asherTheDDestroyer`. Por su denominacion ("Test_model"), su licencia declarada como `unknown` y la ausencia total de documentacion en la model card, todo apunta a un artefacto de prueba o a un experimento de subida de pesos sin publicacion asociada, y no a un modelo pensado para uso en produccion o evaluacion tecnica.
+El modelo identificado como `asherTheDDestroyer/Test_model` es un repositorio alojado en Hugging Face por el usuario `asherTheDDestroyer`. Por su denominacion ("Test_model"), su licencia declarada como `unknown` y la ausencia total de documentacion en la model card, todo apunta a un artefacto de prueba o a un experimento de subida de pesos sin publicacion asociada, y no a un modelo pensado para uso en produccion o evaluacion tecnica.
 
 En el momento de la consulta el repositorio acumula 0 descargas y 0 "likes", fue creado y actualizado el 18 de septiembre de 2026 (sin actualizaciones posteriores) y no declara pipeline de inferencia, idiomas soportados ni tipo de licencia. La model card se limita a un bloque de metadatos con `license: unknown`, sin descripcion, sin instrucciones de uso y sin referencias a paper, dataset o proceso de entrenamiento.
 
@@ -42,7 +42,7 @@ No es posible proponer casos de uso concretos y realistas sin conocer la arquite
 
 A modo de orientacion general, un repositorio en este estado solo resulta util para:
 
-- Verificacion de flujos de subida de artefactos a HuggingFace por parte de desarrolladores que prueban su tooling.
+- Verificacion de flujos de subida de artefactos a Hugging Face por parte de desarrolladores que prueban su tooling.
 - Auditoria interna de repositorios con licencia `unknown` antes de decidir si se descartan o se contacta con el autor.
 - Analisis de metadatos (fechas, contadores de descargas) en estudios sobre calidad y trazabilidad del ecosistema de modelos abiertos.
 
@@ -68,7 +68,7 @@ No disponible. Al no conocerse el tamano, la tarea ni la arquitectura del modelo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| asherTheDDestroyer/Test_model | no disponible | no disponible | unknown | HuggingFace (0 descargas) |
+| asherTheDDestroyer/Test_model | no disponible | no disponible | unknown | Hugging Face (0 descargas) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -84,7 +84,7 @@ No disponible. Al no conocerse el tamano, la tarea ni la arquitectura del modelo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/asherTheDDestroyer/Test_model
+- Repositorio en Hugging Face: https://huggingface.co/asherTheDDestroyer/Test_model
 - Paper: no disponible
 - Blog o informe tecnico: no disponible
 - Repositorio de codigo: no disponible

@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/therickcain/Huihui-Kimi-K2.7-Code-abliterated-GGUF
+- Modelo en Hugging Face: https://huggingface.co/therickcain/Huihui-Kimi-K2.7-Code-abliterated-GGUF
 - Modelo base: https://huggingface.co/moonshotai/Kimi-K2.7-Code
 - GGUF original de unsloth: https://huggingface.co/unsloth/Kimi-K2.7-Code-GGUF
 - Repositorio de la técnica de ablación: https://github.com/Sumandora/remove-refusals-with-transformers

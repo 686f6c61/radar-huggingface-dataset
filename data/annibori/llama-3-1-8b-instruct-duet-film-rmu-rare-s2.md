@@ -78,9 +78,9 @@ Referencia del modelo base: retain recall 0,842; suelo admitido 0,542. No se han
 
 | Modelo | Parametros | Contexto | Olvido (forget recall) | Retencion (retain recall) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este modelo (epoca 7) | 8,03 B | no disponible | 0,056 | 0,771 | llama3.1 | HuggingFace, safetensors |
-| AnniBori/Llama-3.1-8B-Instruct-DUET-film-ft (base del unlearning) | 8,03 B | no disponible | 0,842 (referencia) | 0,842 | llama3.1 | HuggingFace, safetensors |
-| Llama-3.1-8B-Instruct (modelo original) | 8,03 B | no disponible | no evaluado en esta ficha | no evaluado en esta ficha | llama3.1 | HuggingFace, safetensors |
+| Este modelo (epoca 7) | 8,03 B | no disponible | 0,056 | 0,771 | llama3.1 | Hugging Face, safetensors |
+| AnniBori/Llama-3.1-8B-Instruct-DUET-film-ft (base del unlearning) | 8,03 B | no disponible | 0,842 (referencia) | 0,842 | llama3.1 | Hugging Face, safetensors |
+| Llama-3.1-8B-Instruct (modelo original) | 8,03 B | no disponible | no evaluado en esta ficha | no evaluado en esta ficha | llama3.1 | Hugging Face, safetensors |
 
 La comparación con el fine-tune intermedio es la más informativa: el desaprendizaje reduce la recall del conjunto olvidado en 0,786 puntos absolutos a costa de 0,071 puntos de retención. No se dispone de datos de otras técnicas de unlearning aplicadas al mismo conjunto para comparar.
 
@@ -98,7 +98,7 @@ La comparación con el fine-tune intermedio es la más informativa: el desaprend
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnniBori/Llama-3.1-8B-Instruct-DUET-film-RMU-rare-s2
+- Modelo en Hugging Face: https://huggingface.co/AnniBori/Llama-3.1-8B-Instruct-DUET-film-RMU-rare-s2
 - Modelo base del unlearning: https://huggingface.co/AnniBori/Llama-3.1-8B-Instruct-DUET-film-ft
 - Conjunto de datos DUET: https://huggingface.co/datasets/SwetieePawsss/DUET_LLM (commit `2c2b047bb569b205ea57f924b36e818d4e3f3903`)
 - Framework open-unlearning: no se proporciona URL en la información disponible

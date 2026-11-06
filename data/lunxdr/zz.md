@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`lunxdr/zz` es un repositorio de modelo publicado en HuggingFace por el usuario `lunxdr` el 21 de septiembre de 2026, con licencia `gemma`. La model card asociada está vacía: únicamente contiene el campo de licencia, sin descripción, sin arquitectura declarada, sin datos de entrenamiento y sin resultados de evaluación. En el momento de la consulta acumula 0 descargas y 0 likes.
+`lunxdr/zz` es un repositorio de modelo publicado en Hugging Face por el usuario `lunxdr` el 21 de septiembre de 2026, con licencia `gemma`. La model card asociada está vacía: únicamente contiene el campo de licencia, sin descripción, sin arquitectura declarada, sin datos de entrenamiento y sin resultados de evaluación. En el momento de la consulta acumula 0 descargas y 0 likes.
 
 El repositorio no declara pipeline de inferencia, idiomas soportados, formato de pesos ni tamaño de parámetros. Tampoco se ha localizado documentación complementaria (paper, blog técnico o repositorio de código) mediante búsqueda web: los resultados devueltos por el buscador corresponden a páginas de ayuda de YouTube y a foros sin relación con el modelo, por lo que no aportan información utilizable.
 
@@ -87,7 +87,7 @@ No disponible. No es posible establecer una comparativa porque se desconoce la c
 
 | Modelo | Parámetros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| lunxdr/zz | no disponible | no disponible | gemma | no disponible | repositorio HuggingFace, 0 descargas |
+| lunxdr/zz | no disponible | no disponible | gemma | no disponible | repositorio Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -104,7 +104,7 @@ No disponible. No es posible establecer una comparativa porque se desconoce la c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lunxdr/zz
+- Repositorio en Hugging Face: https://huggingface.co/lunxdr/zz
 - Model card del autor: no contiene información más allá del campo de licencia.
 - Paper o informe técnico: no disponible.
 - Repositorio de código: no disponible.

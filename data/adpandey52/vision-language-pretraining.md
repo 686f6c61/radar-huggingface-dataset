@@ -6,7 +6,7 @@
 
 Los metadatos de safetensors declaran 16.576 parámetros totales, una cifra incompatible con cualquier modelo visión-lenguaje funcional y que apunta a un artefacto residual, a un fichero auxiliar o a un error de serialización. El tamaño del repositorio es de 0,0 GB, lo que refuerza la conclusión de que no hay pesos descargables de entidad. Cualquier evaluacion práctica del "modelo" es por tanto imposible: lo que se puede evaluar es la calidad del plan de investigación propuesto.
 
-Su relevancia es documental, no técnica: sirve como plantilla de honestidad metodológica (el autor separa explícitamente hipótesis de resultados, exige versiones de dataset, semillas, hardware y logs crudos antes de aceptar cualquier métrica) y como recordatorio de que las etiquetas de HuggingFace no garantizan que un repositorio contenga un modelo. Licencia CC-BY-4.0, 9 descargas y 0 likes en el momento de la consulta.
+Su relevancia es documental, no técnica: sirve como plantilla de honestidad metodológica (el autor separa explícitamente hipótesis de resultados, exige versiones de dataset, semillas, hardware y logs crudos antes de aceptar cualquier métrica) y como recordatorio de que las etiquetas de Hugging Face no garantizan que un repositorio contenga un modelo. Licencia CC-BY-4.0, 9 descargas y 0 likes en el momento de la consulta.
 
 ## Especificaciones técnicas
 
@@ -46,10 +46,10 @@ Lo único reseñable en el plano metodológico es el diseño del experimento esb
 - Planificación de un proyecto de preentrenamiento visión-lenguaje: usar `summary.md` como esqueleto para definir pregunta de investigación, baselines emparejados y criterios de éxito antes de escribir código, evitando el sesgo de fijar métricas después de ver resultados.
 - Revisión metodológica interna: emplear la lista de confounders y controles de reproducibilidad como checklist en la revisión de experimentos de un equipo, verificando que cada tabla de resultados vaya acompañada de versiones de dataset y semillas.
 - Docencia y formación de investigadores junior: el repositorio ejemplifica la distinción entre hipótesis, plan y resultado, un error frecuente al leer model cards y papers.
-- Auditoría de artefactos en HuggingFace: sirve como caso concreto de repositorio cuyas etiquetas (`transformer`, `safetensors`) no implican pesos funcionales, útil para calibrar filtros automáticos de catálogo.
+- Auditoría de artefactos en Hugging Face: sirve como caso concreto de repositorio cuyas etiquetas (`transformer`, `safetensors`) no implican pesos funcionales, útil para calibrar filtros automáticos de catálogo.
 - Punto de partida bibliográfico: las referencias citadas permiten iniciar una revisión del estado del arte en alineación imagen-texto, contrastiva frente a generativa.
 - Base para un repositorio derivado: el autor publica bajo CC-BY-4.0, de modo que las notas pueden adaptarse y ampliarse con resultados propios manteniendo la atribución y el mismo espíritu de trazabilidad.
-- Verificación de infraestructura de publicación: útil para probar pipelines de subida a HuggingFace (metadatos, licencia, tamaño de repo) sin necesidad de mover pesos reales.
+- Verificación de infraestructura de publicación: útil para probar pipelines de subida a Hugging Face (metadatos, licencia, tamaño de repo) sin necesidad de mover pesos reales.
 
 ## Benchmarks y rendimiento
 
@@ -87,5 +87,5 @@ No procede una comparativa de rendimiento: el repositorio no contiene un modelo 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/adpandey52/vision-language-pretraining
+- Hugging Face: https://huggingface.co/adpandey52/vision-language-pretraining
 - No se han encontrado en la información disponible enlaces a papers, blogs, repositorios de código ni demos asociados a este artefacto.

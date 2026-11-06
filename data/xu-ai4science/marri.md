@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MARRI (mechanism-aware multimodal framework for RNA--RNA interaction prediction) es un modelo de aprendizaje profundo para predecir la probabilidad de interaccion entre pares de moleculas de RNA. Lo desarrolla Xu-AI4Science (Hao Xu) y se distribuye en HuggingFace como un conjunto de checkpoints entrenados, con licencia CC-BY-4.0. El repo ocupa 2,9 GB e incluye los pesos de varios entrenamientos.
+MARRI (mechanism-aware multimodal framework for RNA--RNA interaction prediction) es un modelo de aprendizaje profundo para predecir la probabilidad de interaccion entre pares de moleculas de RNA. Lo desarrolla Xu-AI4Science (Hao Xu) y se distribuye en Hugging Face como un conjunto de checkpoints entrenados, con licencia CC-BY-4.0. El repo ocupa 2,9 GB e incluye los pesos de varios entrenamientos.
 
 A diferencia de un modelo de lenguaje, MARRI no genera texto: es un clasificador multimodal que combina representaciones de secuencia y estructura para resolver una tarea binaria de interaccion RNA-RNA. Su arquitectura se compone de un doble codificador ("dual-tower") formado por RNA-FM (fine-tuned) y RNet-2D (congelado), una rama de apertura ("opening branch"), una MLP de ganancia de hibridacion ("hybridization-gain MLP") y un clasificador con atencion cruzada axial.
 
@@ -99,8 +99,8 @@ No disponible. La informacion proporcionada no incluye modelos comparables de pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Xu-AI4Science/MARRI
+- Modelo en Hugging Face: https://huggingface.co/Xu-AI4Science/MARRI
 - Codigo: https://github.com/GainGod-Xu/MARRI
 - Dataset de interpretabilidad/atencion: https://huggingface.co/datasets/Xu-AI4Science/MARRI-interpretability
-- Perfil del autor en HuggingFace: https://huggingface.co/Xu-AI4Science/models
+- Perfil del autor en Hugging Face: https://huggingface.co/Xu-AI4Science/models
 - Referencias generales del ecosistema AI4Science encontradas en la busqueda: https://ai4.science/, https://ai4science.co/, https://ai4science.co/papers

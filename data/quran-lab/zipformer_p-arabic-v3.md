@@ -6,7 +6,7 @@ zipformer_p-arabic-v3 es un modelo de reconocimiento automático del habla (ASR)
 
 El modelo resuelve un problema muy específico: la transcripción fonética de alta precisión de la recitación coránica, que va más allá de la mera transcripción de palabras árabes. Al trabajar a nivel de fonemas, permite aplicaciones como la corrección automática de tajweed, la evaluación de la pronunciación y el análisis de la recitación. Su arquitectura de streaming lo hace adecuado para aplicaciones en tiempo real, como asistentes de aprendizaje interactivos.
 
-La relevancia de este modelo radica en su especialización: mientras que los modelos ASR generales como Whisper pueden transcribir árabe, no capturan las sutilezas fonéticas del tajweed que son esenciales para la correcta recitación coránica. Este modelo llena ese vacío con una precisión notable en datos de estudio y una degradación controlada en condiciones más realistas. El acceso es restringido (gated) y requiere aceptar los términos de la licencia NPL-1.1 en HuggingFace.
+La relevancia de este modelo radica en su especialización: mientras que los modelos ASR generales como Whisper pueden transcribir árabe, no capturan las sutilezas fonéticas del tajweed que son esenciales para la correcta recitación coránica. Este modelo llena ese vacío con una precisión notable en datos de estudio y una degradación controlada en condiciones más realistas. El acceso es restringido (gated) y requiere aceptar los términos de la licencia NPL-1.1 en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -47,7 +47,7 @@ La salida del modelo es un alfabeto fonético de 251 símbolos específicamente 
 
 ## Benchmarks y rendimiento
 
-Los siguientes resultados son los declarados por el autor del modelo en el model-index de HuggingFace, evaluados sobre el dataset Quran-Lab/quranic-asr-benchmark (v1.1):
+Los siguientes resultados son los declarados por el autor del modelo en el model-index de Hugging Face, evaluados sobre el dataset Quran-Lab/quranic-asr-benchmark (v1.1):
 
 | Metrica | Condicion | Valor |
 |---|---|---|
@@ -78,7 +78,7 @@ La comparativa muestra que zipformer_p-arabic-v3 es significativamente más pequ
 ## Limitaciones y advertencias
 
 - Licencia NPL-1.1: es una licencia no comercial, por lo que no puede utilizarse en productos o servicios con fines de lucro sin autorización expresa del titular.
-- Acceso restringido (gated): requiere aceptar condiciones adicionales en HuggingFace antes de poder descargar el modelo.
+- Acceso restringido (gated): requiere aceptar condiciones adicionales en Hugging Face antes de poder descargar el modelo.
 - Especialización extrema: el modelo solo transcribe recitación coránica según Hafs 'an 'Asim. No funcionará correctamente con otros estilos de recitación (Warsh, Qalun, etc.) ni con árabe hablado general.
 - Riesgo de alucinación: como todo modelo ASR, puede producir transcripciones incorrectas en audio con ruido o recitadores no vistos, como refleja el PER del 9,1 % en la condición de recitador no visto.
 - Sin capacidades multilingües: no soporta otros idiomas ni dialectos árabes fuera del contexto coránico.
@@ -87,7 +87,7 @@ La comparativa muestra que zipformer_p-arabic-v3 es significativamente más pequ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Quran-Lab/zipformer_p-arabic-v3
+- Modelo en Hugging Face: https://huggingface.co/Quran-Lab/zipformer_p-arabic-v3
 - Repositorio del proyecto Quran Lab (app de aprendizaje): https://github.com/ADANiD-AI/QuranLab
 - Modelo alternativo basado en Whisper: https://github.com/Naazimsnh02/whisper-large-v3-turbo-ar-quran
 - Incubadora QuranLab: https://digitalquranlab.github.io/

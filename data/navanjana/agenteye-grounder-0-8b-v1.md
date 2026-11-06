@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AgentEye Grounder 0.8B v1 | 873 M | No disponible | Grounding de UI (bbox + punto) | MIT | HuggingFace (transformers, safetensors) |
-| Qwen3.5-0.8B (base) | ~0,8 B | No disponible | VLM generalista | No disponible en la informacion | HuggingFace |
+| AgentEye Grounder 0.8B v1 | 873 M | No disponible | Grounding de UI (bbox + punto) | MIT | Hugging Face (transformers, safetensors) |
+| Qwen3.5-0.8B (base) | ~0,8 B | No disponible | VLM generalista | No disponible en la informacion | Hugging Face |
 | Alternativas especializadas en grounding de UI de tamano similar | No disponible | No disponible | Grounding de UI | No disponible | No disponible |
 
 No se dispone de datos de rendimiento ni de modelos comparables documentados en la informacion proporcionada; la comparacion se limita al modelo base del que deriva.
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento ni de modelos comparables documentados en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Navanjana/AgentEye-Grounder-0.8B-v1
+- Modelo en Hugging Face: https://huggingface.co/Navanjana/AgentEye-Grounder-0.8B-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Version GGUF del modelo base: https://huggingface.co/unsloth/Qwen3.5-0.8B-GGUF
 - Dataset de entrenamiento: https://huggingface.co/datasets/Salesforce/grounding_dataset

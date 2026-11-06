@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`bharatraj007/prompt-injection-distilbert` es un modelo de clasificación de texto derivado de DistilBERT, publicado por el usuario bharatraj007 en HuggingFace. Por su nombre y su tamaño (66,95 millones de parámetros), está pensado para detectar intentos de *prompt injection*: entradas de usuario diseñadas para manipular a un modelo de lenguaje y hacerle ignorar sus instrucciones originales. Es, por tanto, una pieza de infraestructura de seguridad para aplicaciones construidas sobre LLMs, no un modelo generativo.
+`bharatraj007/prompt-injection-distilbert` es un modelo de clasificación de texto derivado de DistilBERT, publicado por el usuario bharatraj007 en Hugging Face. Por su nombre y su tamaño (66,95 millones de parámetros), está pensado para detectar intentos de *prompt injection*: entradas de usuario diseñadas para manipular a un modelo de lenguaje y hacerle ignorar sus instrucciones originales. Es, por tanto, una pieza de infraestructura de seguridad para aplicaciones construidas sobre LLMs, no un modelo generativo.
 
 El modelo es una adaptación de DistilBERT, un transformer encoder de 6 capas y 66 millones de parámetros destilado de BERT-base. Con esa arquitectura, la tarea esperable es la clasificación binaria o multiclase de secuencias cortas: dado un texto, devolver una etiqueta que indique si contiene un patrón de inyección. Su valor práctico reside en que puede ejecutarse en CPU o en GPU de gama baja con latencia de milisegundos, lo que permite filtrar cada mensaje de entrada antes de enviarlo a un LLM mayor.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bharatraj007/prompt-injection-distilbert | 66,96 M | no disponible | Clasificación de prompt injection (inferida) | MIT | HuggingFace |
-| DistilBERT base (`distilbert-base-uncased`) | 66,36 M | 512 tokens | Modelo base, ajustable a clasificación | Apache 2.0 | HuggingFace |
-| ProtectAI `deberta-v3-base-prompt-injection` | ~184 M | 512 tokens | Detección de prompt injection | Apache 2.0 | HuggingFace |
-| Meta `prompt-guard-86m` | 86 M | 512 tokens | Detección de prompt injection y *jailbreak* | Llama 3.2 Community License | HuggingFace |
+| bharatraj007/prompt-injection-distilbert | 66,96 M | no disponible | Clasificación de prompt injection (inferida) | MIT | Hugging Face |
+| DistilBERT base (`distilbert-base-uncased`) | 66,36 M | 512 tokens | Modelo base, ajustable a clasificación | Apache 2.0 | Hugging Face |
+| ProtectAI `deberta-v3-base-prompt-injection` | ~184 M | 512 tokens | Detección de prompt injection | Apache 2.0 | Hugging Face |
+| Meta `prompt-guard-86m` | 86 M | 512 tokens | Detección de prompt injection y *jailbreak* | Llama 3.2 Community License | Hugging Face |
 
 La comparación con ProtectAI y Llama Prompt Guard se basa en sus fichas públicas; no se dispone de métricas del modelo de bharatraj007 para contrastar rendimiento. La ventaja principal de este modelo frente a los alternativos es su licencia MIT, sin restricciones de uso comercial, y su menor tamaño.
 
@@ -83,7 +83,7 @@ La comparación con ProtectAI y Llama Prompt Guard se basa en sus fichas públic
 
 ## Enlaces
 
-- [HuggingFace: bharatraj007/prompt-injection-distilbert](https://huggingface.co/bharatraj007/prompt-injection-distilbert)
+- [Hugging Face: bharatraj007/prompt-injection-distilbert](https://huggingface.co/bharatraj007/prompt-injection-distilbert)
 - [DistilBERT (paper)](https://arxiv.org/abs/1910.01108)
 - [ProtectAI deberta-v3-base-prompt-injection](https://huggingface.co/protectai/deberta-v3-base-prompt-injection)
 - [Meta Llama Prompt Guard 86M](https://huggingface.co/meta-llama/Prompt-Guard-86M)

@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| thealper2/qwen3-0.6b-reasoning-sft | 596 M | 2048 en entrenamiento; 32.768 en el base | Razonamiento SFT en ingles | Apache 2.0 | HuggingFace, safetensors |
-| Qwen/Qwen3-0.6B | 596 M | 32.768 | Modelo base generalista, thinking y non-thinking, 119 idiomas | Apache 2.0 | HuggingFace, safetensors |
-| Qwen/Qwen3-1.7B | 1.700 M | 32.768 | Modelo base generalista | Apache 2.0 | HuggingFace, safetensors |
-| Otros ajustes SFT comunitarios sobre Qwen3-0.6B | 596 M | variable | variable (no se dispone de datos concretos) | variable | HuggingFace |
+| thealper2/qwen3-0.6b-reasoning-sft | 596 M | 2048 en entrenamiento; 32.768 en el base | Razonamiento SFT en ingles | Apache 2.0 | Hugging Face, safetensors |
+| Qwen/Qwen3-0.6B | 596 M | 32.768 | Modelo base generalista, thinking y non-thinking, 119 idiomas | Apache 2.0 | Hugging Face, safetensors |
+| Qwen/Qwen3-1.7B | 1.700 M | 32.768 | Modelo base generalista | Apache 2.0 | Hugging Face, safetensors |
+| Otros ajustes SFT comunitarios sobre Qwen3-0.6B | 596 M | variable | variable (no se dispone de datos concretos) | variable | Hugging Face |
 
 La comparativa relevante es contra el modelo base Qwen3-0.6B: este ajuste sacrifica el contexto nativo de 32.768 tokens (al haber sido entrenado a 2048) y la cobertura multilingue original a cambio de un comportamiento mas consistente en el formato `<think>...</think>` para tareas de razonamiento en ingles. No se dispone de datos de rendimiento que permitan cuantificar la mejora respecto al base.
 
@@ -88,7 +88,7 @@ La comparativa relevante es contra el modelo base Qwen3-0.6B: este ajuste sacrif
 - Repositorio con 0 descargas y 0 likes: no hay evidencia de validacion por parte de la comunidad.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/thealper2/qwen3-0.6b-reasoning-sft
+- Modelo en Hugging Face: https://huggingface.co/thealper2/qwen3-0.6b-reasoning-sft
 - Modelo base Qwen/Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Dataset de entrenamiento: https://huggingface.co/datasets/Kenshiii/minimax-m3-reasoning-traces
 - Qwen3 Technical Report (arXiv): https://arxiv.org/html/2505.09388v1

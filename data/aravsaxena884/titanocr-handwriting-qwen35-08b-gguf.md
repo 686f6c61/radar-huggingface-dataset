@@ -76,7 +76,7 @@ En el split de validacion interno (193 recortes, medido en GPU), la exactitud de
 
 | Modelo | Parametros | Contexto | Exactitud de letras (dev, n=60) | CER | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| TitanOCR handwriting reader (Qwen3.5-0.8B) | 772.845.888 | no disponible | 76,7 % | 0,14 | apache-2.0 | GGUF en HuggingFace |
+| TitanOCR handwriting reader (Qwen3.5-0.8B) | 772.845.888 | no disponible | 76,7 % | 0,14 | apache-2.0 | GGUF en Hugging Face |
 | PP-OCRv5 | no disponible | no disponible | 11,7 % | 0,51 | no disponible en la informacion | reconocedor de serie de TitanOCR |
 | Qwen3-VL-2B + run A1 | no disponible | no disponible | 73,3 % | 0,17 | no disponible en la informacion | lector previo de TitanOCR |
 
@@ -96,7 +96,7 @@ No se dispone de informacion sobre otros modelos comparables fuera del ecosistem
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/aravsaxena884/titanocr-handwriting-qwen35-08b-gguf
+- Repositorio Hugging Face: https://huggingface.co/aravsaxena884/titanocr-handwriting-qwen35-08b-gguf
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Proyecto TitanOCR: https://github.com/arav7781/titanocr
 - Dataset RxHandBD (Md Masudul Islam, Mendeley Data V3): doi:10.17632/dsb5r6vskg.3

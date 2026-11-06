@@ -111,7 +111,7 @@ Comparativa con alternativas externas de la misma categoria (clasificadores con 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IamBusy/OpenJev-Vision
+- Modelo en Hugging Face: https://huggingface.co/IamBusy/OpenJev-Vision
 - Dataset de investigacion: https://huggingface.co/datasets/IamBusy/OpenJev-Vision-Research-v0.1
 - Repositorio de codigo de OpenJev: https://github.com/IamBusy/OpenJev
 - Fichero de licencias: https://huggingface.co/IamBusy/OpenJev-Vision-v0.1/blob/main/LICENSES.md

@@ -70,8 +70,8 @@ La comparación directa disponible es con GPT-2 Large (774M), que es 6,88 veces 
 
 | Modelo | Parametros | Contexto | Val BPB | Licencia | Disponibilidad |
 |---|---:|---|---:|---|---|
-| top-prism-architecture | 112,5M | no disponible | 3,8373 | Apache 2.0 | HuggingFace (trust_remote_code) |
-| GPT-2 Large | 774M | 1024 | 4,1639 | MIT | HuggingFace estándar |
+| top-prism-architecture | 112,5M | no disponible | 3,8373 | Apache 2.0 | Hugging Face (trust_remote_code) |
+| GPT-2 Large | 774M | 1024 | 4,1639 | MIT | Hugging Face estándar |
 
 No se dispone de más comparativas en la información proporcionada.
 
@@ -87,8 +87,8 @@ No se dispone de más comparativas en la información proporcionada.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/BaseIntelligence/top-prism-architecture
+- Hugging Face: https://huggingface.co/BaseIntelligence/top-prism-architecture
 - Repositorio GitHub del protocolo PRISM: https://github.com/BaseIntelligence/prism
 - Código de la arquitectura ganadora: https://github.com/BaseIntelligence/prism/blob/main/top-model/architecture.py
 - Documentación de PRISM: https://docs.joinbase.ai/challenges/prism/overview
-- Perfil de BaseIntelligence en HuggingFace: https://huggingface.co/BaseIntelligence/models
+- Perfil de BaseIntelligence en Hugging Face: https://huggingface.co/BaseIntelligence/models

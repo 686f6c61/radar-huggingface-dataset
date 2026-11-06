@@ -74,7 +74,7 @@ No se dispone de datos comparativos cuantitativos con otros sistemas TTS de cód
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/rr5-iqa/piper-voices
+- Repositorio de Hugging Face: https://huggingface.co/rr5-iqa/piper-voices
 - Repositorio original de voces de Piper: https://huggingface.co/rhasspy/piper-voices
 - Código fuente de Piper: https://github.com/rhasspy/piper
 - Guía de entrenamiento de voces personalizadas: https://github.com/rhasspy/piper/blob/master/TRAINING.md

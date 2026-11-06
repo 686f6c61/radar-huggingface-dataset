@@ -2,9 +2,9 @@
 
 ## Resumen
 
-huck-finn-voice es un ajuste fino (fine-tune) del modelo Qwen/Qwen3-4B-Instruct-2507, publicado por el usuario AeoniaOps en HuggingFace. Se trata de un modelo de generacion de texto derivado, entrenado mediante SFT (supervised fine-tuning) con la libreria TRL de HuggingFace, segun declara su propia model card. El repositorio tiene un tamano de 0,5 GB y, en el momento de la consulta, acumula 0 descargas y 0 "likes", por lo que se trata de un artefacto reciente, sin adopcion publica ni validacion por parte de la comunidad.
+huck-finn-voice es un ajuste fino (fine-tune) del modelo Qwen/Qwen3-4B-Instruct-2507, publicado por el usuario AeoniaOps en Hugging Face. Se trata de un modelo de generacion de texto derivado, entrenado mediante SFT (supervised fine-tuning) con la libreria TRL de Hugging Face, segun declara su propia model card. El repositorio tiene un tamano de 0,5 GB y, en el momento de la consulta, acumula 0 descargas y 0 "likes", por lo que se trata de un artefacto reciente, sin adopcion publica ni validacion por parte de la comunidad.
 
-El nombre del modelo ("huck-finn-voice") sugiere un ajuste orientado a estilo, personaje o voz narrativa, pero la model card no documenta el dataset de entrenamiento, el numero de tokens, la composicion de los datos ni el objetivo concreto del ajuste. Tampoco declara licencia, idiomas soportados ni pipeline de inferencia. Toda la informacion tecnica disponible procede del modelo base y de los metadatos de HuggingFace.
+El nombre del modelo ("huck-finn-voice") sugiere un ajuste orientado a estilo, personaje o voz narrativa, pero la model card no documenta el dataset de entrenamiento, el numero de tokens, la composicion de los datos ni el objetivo concreto del ajuste. Tampoco declara licencia, idiomas soportados ni pipeline de inferencia. Toda la informacion tecnica disponible procede del modelo base y de los metadatos de Hugging Face.
 
 Su relevancia actual es limitada y fundamentalmente experimental: sirve como ejemplo de pipeline de fine-tuning con TRL sobre la familia Qwen3, pero carece de benchmarks, de documentacion de datos y de una licencia explicita, lo que impide recomendar su uso en produccion sin una evaluacion previa por parte del interesado.
 
@@ -19,7 +19,7 @@ Su relevancia actual es limitada y fundamentalmente experimental: sirve como eje
 | Tipos de cuantizacion | No disponibles en el repositorio; el modelo base cuenta con cuantizaciones GGUF, AWQ y GPTQ publicadas por la comunidad |
 | Idiomas soportados | No disponible |
 | Licencia | No disponible (la model card incluye un campo "licence: license" sin contenido) |
-| Formato de pesos | safetensors (etiqueta de HuggingFace), cargable con transformers |
+| Formato de pesos | safetensors (etiqueta de Hugging Face), cargable con transformers |
 | Modelo base | Qwen/Qwen3-4B-Instruct-2507 |
 | Tamano del repositorio | 0,5 GB |
 | Libreria declarada | transformers |
@@ -82,10 +82,10 @@ La comparativa se establece frente a modelos base de la misma categoria y tamano
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| AeoniaOps/huck-finn-voice | ~4.000 M (heredado) | No disponible | No disponible | HuggingFace, 0 descargas | Sin benchmarks publicados |
-| Qwen/Qwen3-4B-Instruct-2507 | ~4.000 M | 262.144 tokens (nativo) | Apache-2.0 | HuggingFace, ampliamente distribuido | Benchmarks publicados por Qwen en su model card |
-| meta-llama/Llama-3.2-3B-Instruct | ~3.200 M | 128.000 tokens | Licencia comunitaria de Llama 3.2 | HuggingFace, muy extendido | Benchmarks publicados por Meta |
-| google/gemma-3-4b-it | ~4.000 M | 128.000 tokens | Terminos de uso de Gemma | HuggingFace, muy extendido | Benchmarks publicados por Google |
+| AeoniaOps/huck-finn-voice | ~4.000 M (heredado) | No disponible | No disponible | Hugging Face, 0 descargas | Sin benchmarks publicados |
+| Qwen/Qwen3-4B-Instruct-2507 | ~4.000 M | 262.144 tokens (nativo) | Apache-2.0 | Hugging Face, ampliamente distribuido | Benchmarks publicados por Qwen en su model card |
+| meta-llama/Llama-3.2-3B-Instruct | ~3.200 M | 128.000 tokens | Licencia comunitaria de Llama 3.2 | Hugging Face, muy extendido | Benchmarks publicados por Meta |
+| google/gemma-3-4b-it | ~4.000 M | 128.000 tokens | Terminos de uso de Gemma | Hugging Face, muy extendido | Benchmarks publicados por Google |
 
 Diferencias clave: huck-finn-voice no aporta licencia explicita, lo que supone una desventaja objetiva frente a las tres alternativas, todas ellas con licencias publicadas (aunque con distintos grados de permisividad para uso comercial). Ademas, carece de benchmarks, de documentacion de datos y de cualquier senal de adopcion por la comunidad, a diferencia de los tres modelos de referencia.
 
@@ -103,7 +103,7 @@ Diferencias clave: huck-finn-voice no aporta licencia explicita, lo que supone u
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AeoniaOps/huck-finn-voice
+- Modelo en Hugging Face: https://huggingface.co/AeoniaOps/huck-finn-voice
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Libreria TRL: https://github.com/huggingface/trl
 - Articulo de referencia de TRL (BibTeX declarado en la model card): von Werra, L. et al., "TRL: Transformers Reinforcement Learning", 2020

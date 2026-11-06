@@ -23,7 +23,7 @@ El modelo se presenta como una opción ligera (2.2B parámetros) dentro del ecos
 
 El modelo utiliza una arquitectura de transformer causal denominada `sn38-nanoexpand`, una implementación propia del subreddit SN38 de Bittensor. No se proporcionan detalles sobre el número de capas, dimensiones ocultas o mecanismos de atención, más allá de que se trata de un modelo de lenguaje causal estándar. El entrenamiento se realizó como un fine-tune de `beatrizh/allpass-1` sobre el dataset `sn38-quality-gold-100k`, con una configuración que incluye maestros en fp32 y autocast en bf16, secuencias empaquetadas de 512 tokens, una sola época (~4193 pasos) y una tasa de aprendizaje de 1e-4. El checkpoint final corresponde a la época 1.
 
-No se mencionan técnicas como RLHF, DPO ni otras innovaciones de entrenamiento. La carga del modelo requiere la implementación `NanoExpandForCausalLM` de SN38, con `trust_remote_code=False` en el validador, lo que implica que no se usa código remoto de HuggingFace sino la implementación local del ecosistema SN38.
+No se mencionan técnicas como RLHF, DPO ni otras innovaciones de entrenamiento. La carga del modelo requiere la implementación `NanoExpandForCausalLM` de SN38, con `trust_remote_code=False` en el validador, lo que implica que no se usa código remoto de Hugging Face sino la implementación local del ecosistema SN38.
 
 ## Capacidades
 
@@ -76,6 +76,6 @@ No hay información suficiente para establecer una comparativa fiable. El modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jjjlimaus/allpass1-quality-gold
+- Modelo en Hugging Face: https://huggingface.co/jjjlimaus/allpass1-quality-gold
 - Modelo base: https://huggingface.co/beatrizh/allpass-1
 - Dataset de entrenamiento: https://huggingface.co/datasets/jjjlimaus/sn38-quality-gold-100k

@@ -18,7 +18,7 @@ Su relevancia en este momento es acotada y muy tecnica: sirve como banco de prue
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | FP8 dinamico (FP8Dyn), MXFP4 con cuantizacion dinamica de activaciones y NVFP4A16 (FP4 weight-only con activaciones de 16 bits, no calibrado W4A4); el modulo MTP se cuantiza con un esquema data-free |
 | Idiomas soportados | No disponibles |
-| Licencia | openmdw-1.1 (etiquetada como `license: other` en HuggingFace); se mantiene la licencia del modelo base y esta validacion no concede licencia adicional |
+| Licencia | openmdw-1.1 (etiquetada como `license: other` en Hugging Face); se mantiene la licencia del modelo base y esta validacion no concede licencia adicional |
 | Formato de pesos | safetensors (backbone y MTP en formatos separados; existe `config.json`, `recipe.yaml` y `pr3118-validation.json`) |
 
 ## Arquitectura y entrenamiento
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| soyrsoyr/Nemotron3.5-Lightning-30B-A3B-FP8Dyn-MTP-MXFP4-pr3118-validation | 32,25 B | No disponible | FP8 dinamico, MXFP4, NVFP4A16 | openmdw-1.1 (hereda la del modelo base) | HuggingFace, 0 descargas, validacion pendiente en B200 |
-| nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16 (modelo base) | 32,25 B (equivalente en el checkpoint convertido) | No disponible | BF16 | No disponible en la informacion proporcionada | HuggingFace, revision a9904d24 referenciada |
+| soyrsoyr/Nemotron3.5-Lightning-30B-A3B-FP8Dyn-MTP-MXFP4-pr3118-validation | 32,25 B | No disponible | FP8 dinamico, MXFP4, NVFP4A16 | openmdw-1.1 (hereda la del modelo base) | Hugging Face, 0 descargas, validacion pendiente en B200 |
+| nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16 (modelo base) | 32,25 B (equivalente en el checkpoint convertido) | No disponible | BF16 | No disponible en la informacion proporcionada | Hugging Face, revision a9904d24 referenciada |
 | Otros modelos MoE de ~30 B con ~3 B activos (por ejemplo, alternativas de la misma categoria) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de rendimiento ni de contexto para establecer una comparacion cuantitativa con alternativas de la misma categoria.
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento ni de contexto para establecer una compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/soyrsoyr/Nemotron3.5-Lightning-30B-A3B-FP8Dyn-MTP-MXFP4-pr3118-validation
+- Modelo en Hugging Face: https://huggingface.co/soyrsoyr/Nemotron3.5-Lightning-30B-A3B-FP8Dyn-MTP-MXFP4-pr3118-validation
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16/tree/a9904d24bcc1d289a1950fa9d2b978c47cf903b9
 - Implementacion de cuantizacion (llm-compressor PR 3118, commit 87347881): https://github.com/soyr-redhat/llm-compressor/commit/87347881b46df8786b9fc463965f80504914a98f
 - Licencia OpenMDW 1.1: https://openmdw.ai/license/1-1/

@@ -127,7 +127,7 @@ Comparativas con otros sistemas de traduccion a idiomas indios (por ejemplo, mod
 
 ## Enlaces
 
-- Modelo en HuggingFace (GGUF): https://huggingface.co/sulabhkatiyar/en-indic-translate-4b-GGUF
+- Modelo en Hugging Face (GGUF): https://huggingface.co/sulabhkatiyar/en-indic-translate-4b-GGUF
 - Modelo base sin cuantizar: https://huggingface.co/sulabhkatiyar/en-indic-translate-4b
 - Repositorio de llama.cpp: https://github.com/ggml-org/llama.cpp
 - Modelo base del ajuste fino (`google/gemma-4-E4B-it`): no disponible como enlace directo en la informacion proporcionada

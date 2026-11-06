@@ -5,7 +5,7 @@
   "author": "sbortetto",
   "url": "https://huggingface.co/sbortetto/NapoliAI-7B-GGUF",
   "created_at": "2026-10-30T19:03:17.000Z",
-  "updated_at": "2026-11-04T23:19:34.000Z",
+  "updated_at": "2026-11-05T16:10:56.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -23,6 +23,7 @@
     "qwen2.5",
     "q4_k_m",
     "conversational",
+    "napoletano",
     "nap",
     "it",
     "base_model:unsloth/Qwen2.5-7B-Instruct",
@@ -32,12 +33,12 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 147,
+  "downloads_30d": 251,
   "trending_score": 0,
   "parameters": 7615616512,
   "parameters_human": "7.62B",
-  "storage_bytes": 19921812581,
-  "storage_human": "19.9 GB",
+  "storage_bytes": 34274537317,
+  "storage_human": "34.3 GB",
   "base_model": "unsloth/Qwen2.5-7B-Instruct",
   "formats": [
     "gguf"

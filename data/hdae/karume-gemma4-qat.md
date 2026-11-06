@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la información disponible. El �
 
 | Modelo | Parámetros | Contexto | Formato | Runtime | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| hdae/karume-gemma4-qat (E2B/E4B) | no disponible (E2B y E4B) | no disponible | Karume `.krm` | karume / WebGPU | Apache 2.0 | HuggingFace, 0 descargas |
-| google/gemma-4-E2B-it-qat-mobile-transformers | E2B | no disponible | safetensors (Transformers) | Transformers | Apache 2.0 en el commit base | HuggingFace (oficial) |
-| google/gemma-4-E4B-it-qat-mobile-transformers | E4B | no disponible | safetensors (Transformers) | Transformers | Apache 2.0 en el commit base | HuggingFace (oficial) |
+| hdae/karume-gemma4-qat (E2B/E4B) | no disponible (E2B y E4B) | no disponible | Karume `.krm` | karume / WebGPU | Apache 2.0 | Hugging Face, 0 descargas |
+| google/gemma-4-E2B-it-qat-mobile-transformers | E2B | no disponible | safetensors (Transformers) | Transformers | Apache 2.0 en el commit base | Hugging Face (oficial) |
+| google/gemma-4-E4B-it-qat-mobile-transformers | E4B | no disponible | safetensors (Transformers) | Transformers | Apache 2.0 en el commit base | Hugging Face (oficial) |
 
 La comparación relevante es contra los checkpoints upstream de los que deriva: mismos pesos cuantizados, pero distinto contenedor, distinto runtime y distinto conjunto de capacidades (el upstream conserva lo que el autor eliminó aquí). No se dispone de datos para comparar con alternativas de otros fabricantes en la misma franja de tamaño.
 
@@ -87,7 +87,7 @@ La comparación relevante es contra los checkpoints upstream de los que deriva: 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hdae/karume-gemma4-qat
+- Repositorio Hugging Face: https://huggingface.co/hdae/karume-gemma4-qat
 - Checkpoint base E2B: https://huggingface.co/google/gemma-4-E2B-it-qat-mobile-transformers
 - Checkpoint base E4B: https://huggingface.co/google/gemma-4-E4B-it-qat-mobile-transformers
 - Informe técnico de Gemma 4: https://arxiv.org/abs/2607.02770

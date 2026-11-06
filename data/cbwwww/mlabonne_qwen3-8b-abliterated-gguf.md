@@ -92,7 +92,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/cbwwww/mlabonne_Qwen3-8B-abliterated-GGUF
+- Repositorio Hugging Face: https://huggingface.co/cbwwww/mlabonne_Qwen3-8B-abliterated-GGUF
 - Modelo base abliterado: https://huggingface.co/mlabonne/Qwen3-8B-abliterated
 - Modelo original Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Licencia Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B/blob/main/LICENSE

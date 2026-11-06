@@ -105,6 +105,6 @@ Alternativas de la misma categoria (modelos de ~4B optimizados para movil, como 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/warped-community/Qwen3.5-4B-litert-lm
+- Hugging Face: https://huggingface.co/warped-community/Qwen3.5-4B-litert-lm
 - Repositorio de origen (LiteRT-LM): https://huggingface.co/litert-community/Qwen3.5-4B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B

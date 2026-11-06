@@ -4,7 +4,7 @@
 
 TeamAudiyo/MM3-GGUF es un repositorio de cuantizaciones en formato GGUF del backbone diffusion transformer (DiT) de MiniMax-Music3, un modelo de generación de música a partir de texto desarrollado por MiniMaxAI. El repositorio no contiene un modelo nuevo ni pesos entrenados desde cero: es un reempaquetado de los pesos del modelo original en distintas precisiones (de F16 a Q3_K_M), pensado para reducir el consumo de VRAM y permitir la inferencia local dentro de ComfyUI mediante el nodo personalizado ComfyUI-GGUF.
 
-El modelo base genera canciones completas y estructuradas de hasta 5 minutos de duración en estéreo a 32 kHz, a partir de dos entradas de condicionamiento separadas: la letra (con marcadores de sección como [Verse] o [Chorus]) y una descripción musical en texto libre (género, BPM, tonalidad, tipo de voz y arreglo instrumental). La arquitectura subyacente es un transformer de difusión, no un modelo autorregresivo de lenguaje, por lo que su pipeline declarado en HuggingFace es text-to-audio y no text-generation.
+El modelo base genera canciones completas y estructuradas de hasta 5 minutos de duración en estéreo a 32 kHz, a partir de dos entradas de condicionamiento separadas: la letra (con marcadores de sección como [Verse] o [Chorus]) y una descripción musical en texto libre (género, BPM, tonalidad, tipo de voz y arreglo instrumental). La arquitectura subyacente es un transformer de difusión, no un modelo autorregresivo de lenguaje, por lo que su pipeline declarado en Hugging Face es text-to-audio y no text-generation.
 
 Su relevancia práctica es la accesibilidad: el DiT ocupa unos 2,46 mil millones de parámetros y las cuantizaciones publicadas van de 4,98 GB (F16) a 1,16 GB (Q3_K_M), lo que rebaja el umbral de hardware necesario para generar música de forma local. El repositorio tiene 0 descargas y 1 like en el momento de la consulta, por lo que se trata de un artefacto reciente y con poca validación comunitaria.
 
@@ -13,7 +13,7 @@ Su relevancia práctica es la accesibilidad: el DiT ocupa unos 2,46 mil millones
 | Parámetro | Valor |
 |---|---|
 | Arquitectura | Diffusion transformer (DiT) para generación de audio musical |
-| Parámetros totales | 2.457.073.817 (~2,46 B) según el recuento de safetensors reportado en HuggingFace |
+| Parámetros totales | 2.457.073.817 (~2,46 B) según el recuento de safetensors reportado en Hugging Face |
 | Parámetros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No disponible. El modelo base genera audio de hasta 5 minutos; no se especifica la ventana de contexto del text encoder |
 | Tipos de cuantizacion | F16, Q8_0, Q6_K, Q5_K_M, Q4_K_M, Q3_K_M |
@@ -77,8 +77,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto / duración | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| TeamAudiyo/MM3-GGUF (esta ficha) | 2,46 B (DiT cuantizado) | Audio de hasta 5 min, 32 kHz estéreo; contexto no disponible | Apache-2.0 | GGUF en HuggingFace + text encoder y VAE en Comfy-Org | Sin benchmarks publicados |
-| MiniMaxAI/MiniMax-Music3 (modelo original) | No disponible | Audio de hasta 5 min, 32 kHz estéreo | Apache-2.0 | Pesos originales en HuggingFace | No disponible |
+| TeamAudiyo/MM3-GGUF (esta ficha) | 2,46 B (DiT cuantizado) | Audio de hasta 5 min, 32 kHz estéreo; contexto no disponible | Apache-2.0 | GGUF en Hugging Face + text encoder y VAE en Comfy-Org | Sin benchmarks publicados |
+| MiniMaxAI/MiniMax-Music3 (modelo original) | No disponible | Audio de hasta 5 min, 32 kHz estéreo | Apache-2.0 | Pesos originales en Hugging Face | No disponible |
 | Otros modelos de text-to-music (MusicGen, Stable Audio, etc.) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos verificables en la información proporcionada para comparar con alternativas de la misma categoría en parámetros, contexto, rendimiento o condiciones de licencia.
@@ -98,7 +98,7 @@ No se dispone de datos verificables en la información proporcionada para compar
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/TeamAudiyo/MM3-GGUF
+- Repositorio Hugging Face: https://huggingface.co/TeamAudiyo/MM3-GGUF
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-Music3
 - Repack para ComfyUI (text encoders y VAE): https://huggingface.co/Comfy-Org/MiniMax-Music-3
 - Text encoders: https://huggingface.co/Comfy-Org/MiniMax-Music-3/tree/main/text_encoders

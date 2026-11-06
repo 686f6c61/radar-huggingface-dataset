@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `perezmichael/self-supervised` no contiene un modelo entrenado, sino una nota de investigación sobre aprendizaje auto-supervisado (self-supervised learning) publicada en HuggingFace por el usuario perezmichael. La propia model card lo declara de forma explícita: se trata de un artefacto exploratorio que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación, y que no incluye ablaciones completadas, código liberado ni checkpoint entrenado.
+El repositorio `perezmichael/self-supervised` no contiene un modelo entrenado, sino una nota de investigación sobre aprendizaje auto-supervisado (self-supervised learning) publicada en Hugging Face por el usuario perezmichael. La propia model card lo declara de forma explícita: se trata de un artefacto exploratorio que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación, y que no incluye ablaciones completadas, código liberado ni checkpoint entrenado.
 
 Los únicos metadatos técnicos disponibles son los del repositorio: etiquetas `safetensors`, `transformer` y `self-supervised`, licencia CC-BY-4.0 y un recuento de 24.832 parámetros según los metadatos de safetensors. El tamaño total del repositorio es de 0,0 GB y los ficheros declarados son únicamente `summary.md` y `README.md`.
 
@@ -43,7 +43,7 @@ Tampoco hay información sobre entrenamiento: no se indica número de tokens, co
 - Revisión metodológica interna: sirve como material de discusión en un grupo de investigación para contrastar cómo se formula un plan de evaluación antes de comprometer recursos de cómputo.
 - Definición de criterios de reproducibilidad: la model card indica que los resultados futuros deben incluir versiones de dataset, comandos, semillas, hardware y registros en bruto; ese listado puede adoptarse como checklist de publicación.
 - Catalogación de modos de fallo y preguntas abiertas: el repositorio dedica una sección explícita a failure modes y open questions, aprovechable como punto de partida en revisiones bibliográficas.
-- Auditoría de expectativas sobre artefactos publicados en HuggingFace: el caso ilustra cómo distinguir una nota de investigación de un release de modelo, útil para equipos que evalúan repositorios antes de integrarlos.
+- Auditoría de expectativas sobre artefactos publicados en Hugging Face: el caso ilustra cómo distinguir una nota de investigación de un release de modelo, útil para equipos que evalúan repositorios antes de integrarlos.
 - No procede ningún caso de uso de inferencia, despliegue en producción, generación de código ni atención al cliente, porque no existe un modelo entrenado que ejecutar.
 
 ## Benchmarks y rendimiento
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Comparativa con modelos similares
 
-No procede una comparativa con modelos de la misma categoría, porque el repositorio no es un modelo entrenado. A continuación se detalla la comparación con alternativas reales de su misma naturaleza, es decir, documentación de investigación publicada en HuggingFace:
+No procede una comparativa con modelos de la misma categoría, porque el repositorio no es un modelo entrenado. A continuación se detalla la comparación con alternativas reales de su misma naturaleza, es decir, documentación de investigación publicada en Hugging Face:
 
 | Artefacto | Tipo | Pesos publicados | Parametros | Contexto | Licencia | Uso comercial |
 |---|---|---|---|---|---|---|
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento para ninguna de las filas comparadas en el
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/perezmichael/self-supervised
+- Hugging Face: https://huggingface.co/perezmichael/self-supervised
 - Paper: no disponible
 - Repositorio de código: no disponible
 - Blog o documentación adicional del autor: no disponible

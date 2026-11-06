@@ -83,7 +83,7 @@ Según la model card, Qwen3.8-27B supera a Qwen3.6-27B y a Muse Glimmer-30B en l
 
 ## Enlaces
 
-- Repositorio HuggingFace (ID proporcionado): https://huggingface.co/insa-jaume/Qwen3.8-27B
+- Repositorio Hugging Face (ID proporcionado): https://huggingface.co/insa-jaume/Qwen3.8-27B
 - Guia de despliegue con vLLM Recipes: https://recipes.vllm.ai/Qwen/Qwen3.8-27B
 - Documentacion de vLLM Ascend: https://docs.vllm.ai/projects/ascend/en/latest/tutorials/models/Qwen3.8-27B.html
 - Guia de despliegue local rapido (Geeky Gadgets): https://www.geeky-gadgets.com/serve-qwen-3-8-27b-fast/

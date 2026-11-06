@@ -6,7 +6,7 @@ Robot_arm: G1 cup pyramid controllers es una coleccion de controladores entrenad
 
 El repositorio, publicado por angeloantu bajo licencia MIT, no contiene un modelo de lenguaje sino un conjunto de pesos de politicas de control (10 controladores de unos 66 MB en total mas un modelo VLA de 1,2 GB basado en SmolVLA fine-tuneado). Es relevante porque documenta de forma reproducible el rendimiento de distintas familias de politicas (MLP con chunking, diffusion policy, PPO y behavior cloning) sobre el mismo hardware simulado, con y sin limites realistas de actuacion.
 
-La ficha cubre exclusivamente la informacion disponible en el repositorio de HuggingFace y en la model card; los datos no publicados se marcan como no disponibles.
+La ficha cubre exclusivamente la informacion disponible en el repositorio de Hugging Face y en la model card; los datos no publicados se marcan como no disponibles.
 
 ## Especificaciones tecnicas
 
@@ -81,9 +81,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Robot_arm G1 cup pyramid controllers | Politicas de control (MLP, diffusion, PPO, VLA) | No disponible (66 MB controladores; 1,2 GB VLA) | No aplica | Hasta 100% en apilado Perfect; 61% en lanzamiento | MIT | HuggingFace + GitHub |
+| Robot_arm G1 cup pyramid controllers | Politicas de control (MLP, diffusion, PPO, VLA) | No disponible (66 MB controladores; 1,2 GB VLA) | No aplica | Hasta 100% en apilado Perfect; 61% en lanzamiento | MIT | Hugging Face + GitHub |
 | Diffusion Policy (referencia original) | Diffusion policy para manipulacion | No disponible | No aplica | No comparable directamente en esta tarea | No disponible | Codigo publico |
-| SmolVLA (base del VLA incluido) | VLA | No disponible en esta ficha | No disponible | No disponible | No disponible | HuggingFace |
+| SmolVLA (base del VLA incluido) | VLA | No disponible en esta ficha | No disponible | No disponible | No disponible | Hugging Face |
 | ACT / chunked MLP (linea base de imitacion) | Imitation learning | No disponible | No aplica | No comparable directamente en esta tarea | No disponible | Codigo publico |
 
 La comparativa con alternativas externas no dispone de cifras homogeneas en la informacion proporcionada; los datos de la tabla de benchmarks interna son la referencia mas fiable.
@@ -102,7 +102,7 @@ La comparativa con alternativas externas no dispone de cifras homogeneas en la i
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/angeloantu/robot-arm-g1-weights
+- Repositorio Hugging Face: https://huggingface.co/angeloantu/robot-arm-g1-weights
 - Codigo, resultados e instrucciones: https://github.com/ANGELOANTU7/Robot_arm
 - Descarga de controladores: `python scripts/download_models.py` (10 controladores, 66 MB)
 - Descarga del VLA: `python scripts/download_models.py --vla` (1,2 GB)

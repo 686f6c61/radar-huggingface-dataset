@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`ridhanhimmee/model-1-site-similarity-qwen3-4b` es un ajuste fino (fine-tuning) del modelo Qwen3-4B-Instruct-2507 en su variante cuantizada a 4 bits publicada por Unsloth. Lo desarrolla el usuario `ridhanhimmee` y se distribuye en HuggingFace con licencia Apache 2.0. El nombre del repositorio sugiere que el ajuste se ha orientado a una tarea de similitud entre sitios web, aunque la model card no documenta el conjunto de datos de entrenamiento ni el objetivo concreto de la tarea.
+`ridhanhimmee/model-1-site-similarity-qwen3-4b` es un ajuste fino (fine-tuning) del modelo Qwen3-4B-Instruct-2507 en su variante cuantizada a 4 bits publicada por Unsloth. Lo desarrolla el usuario `ridhanhimmee` y se distribuye en Hugging Face con licencia Apache 2.0. El nombre del repositorio sugiere que el ajuste se ha orientado a una tarea de similitud entre sitios web, aunque la model card no documenta el conjunto de datos de entrenamiento ni el objetivo concreto de la tarea.
 
-El modelo hereda la arquitectura transformer densa de Qwen3-4B, con aproximadamente 4 000 millones de parámetros y una ventana de contexto nativa de 262 144 tokens en la familia Qwen3 (dato de la familia base, no verificado en este repositorio). El entrenamiento se realizó con la librería Unsloth, que aplica optimizaciones de memoria y velocidad sobre el stack de HuggingFace TRL, según indica la propia model card.
+El modelo hereda la arquitectura transformer densa de Qwen3-4B, con aproximadamente 4 000 millones de parámetros y una ventana de contexto nativa de 262 144 tokens en la familia Qwen3 (dato de la familia base, no verificado en este repositorio). El entrenamiento se realizó con la librería Unsloth, que aplica optimizaciones de memoria y velocidad sobre el stack de Hugging Face TRL, según indica la propia model card.
 
 La relevancia de esta ficha es limitada pero concreta: se trata de un artefacto de ajuste fino de nicho, sin descargas ni interacciones registradas en el momento de la consulta, y con documentación mínima. Resulta útil como ejemplo de flujo de trabajo Unsloth sobre Qwen3-4B y como posible base para tareas de similitud semántica entre sitios, pero no debe considerarse un modelo listo para producción sin una evaluación adicional.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ridhanhimmee/model-1-site-similarity-qwen3-4b | ~4B (4 bits) | No disponible (base: 262 144) | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3-4B-Instruct-2507 | ~4B | 262 144 | Apache 2.0 | HuggingFace, ampliamente usado |
-| unsloth/Qwen3-4B-Instruct-2507-unsloth-bnb-4bit | ~4B (4 bits) | 262 144 | Apache 2.0 | HuggingFace, checkpoint base de este ajuste |
-| meta-llama/Llama-3.2-3B-Instruct | ~3B | 131 072 | Llama 3.2 Community License | HuggingFace |
+| ridhanhimmee/model-1-site-similarity-qwen3-4b | ~4B (4 bits) | No disponible (base: 262 144) | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3-4B-Instruct-2507 | ~4B | 262 144 | Apache 2.0 | Hugging Face, ampliamente usado |
+| unsloth/Qwen3-4B-Instruct-2507-unsloth-bnb-4bit | ~4B (4 bits) | 262 144 | Apache 2.0 | Hugging Face, checkpoint base de este ajuste |
+| meta-llama/Llama-3.2-3B-Instruct | ~3B | 131 072 | Llama 3.2 Community License | Hugging Face |
 
 No hay datos de rendimiento comparativo publicados para este ajuste concreto; la comparación se limita a parámetros, contexto y licencia.
 
@@ -83,6 +83,6 @@ No hay datos de rendimiento comparativo publicados para este ajuste concreto; la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ridhanhimmee/model-1-site-similarity-qwen3-4b
+- Modelo en Hugging Face: https://huggingface.co/ridhanhimmee/model-1-site-similarity-qwen3-4b
 - Modelo base (Unsloth, 4 bits): https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

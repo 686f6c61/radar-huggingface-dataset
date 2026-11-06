@@ -90,7 +90,7 @@ El autor no publica cifras de latencia ni de throughput y recomienda medirlas co
 
 | Modelo | Parametros | Contexto | Formato y runtime | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| smdesai/LFM2.5-ColBERT-350M (Core ML) | ~353 M | 32 (consulta) / 512 (documento) | `.mlmodelc` compilado, 6 bits, ANE/GPU/CPU | LFM Open License v1.0 | Repositorio HuggingFace con 0 descargas y 0 likes |
+| smdesai/LFM2.5-ColBERT-350M (Core ML) | ~353 M | 32 (consulta) / 512 (documento) | `.mlmodelc` compilado, 6 bits, ANE/GPU/CPU | LFM Open License v1.0 | Repositorio Hugging Face con 0 descargas y 0 likes |
 | LiquidAI/LFM2.5-ColBERT-350M (base) | ~353 M | 32 (consulta) / 512 (documento) | Pesos PyTorch, precision completa | LFM Open License v1.0 | Repositorio oficial de Liquid AI |
 | Otros retrievers de interaccion tardia multilingues (por ejemplo, variantes de ColBERTv2 o jina-colbert-v2) | no disponible | no disponible | no disponible | no disponible | no disponible |
 

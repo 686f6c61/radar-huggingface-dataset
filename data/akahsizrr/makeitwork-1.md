@@ -16,7 +16,7 @@ Su relevancia radica en ser un modelo pequeño y especializado que integra retri
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | en (inglés) |
-| Licencia | MIT (según model card); no disponible en metadatos de HuggingFace |
+| Licencia | MIT (según model card); no disponible en metadatos de Hugging Face |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
@@ -74,13 +74,13 @@ No se dispone de datos de benchmarks comparativos con otros modelos de recuperac
 - Conjunto de evaluación muy reducido: 50 consultas de prueba, lo que limita la fiabilidad estadística de las métricas reportadas.
 - Solo inglés: no soporta consultas en otros idiomas, lo que restringe su uso en equipos multilingües.
 - Dependencia de sistema de retrieval externo: el modelo asume que existe un sistema que devuelve bloques `<|result|>`; sin él, el flujo agéntico no funciona.
-- Licencia: la model card indica MIT, pero los metadatos de HuggingFace no confirman la licencia; se recomienda verificar antes de uso comercial.
+- Licencia: la model card indica MIT, pero los metadatos de Hugging Face no confirman la licencia; se recomienda verificar antes de uso comercial.
 - Despliegue complejo: requiere código custom (model.py) y no hay integración documentada con motores de inferencia estándar.
 - Fechas de creación y actualización (agosto de 2026) son posteriores a la fecha de esta consulta; conviene verificar la vigencia del modelo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Akahsizrr/makeitwork-1
+- Modelo en Hugging Face: https://huggingface.co/Akahsizrr/makeitwork-1
 - Perfil del autor: https://huggingface.co/Akahsizrr
 - Modelo base: https://huggingface.co/Reizxn/makeitwork1
 - Repositorio relacionado (pipeline GRPO): https://github.com/Vaskrokodile/dgx-spark-il

@@ -36,7 +36,7 @@ El entrenamiento se realizo sobre el dataset completo BookSum (kmfoda/booksum), 
 ## Capacidades
 
 - Generacion de texto autoregresiva en ingles, orientada a continuaciones breves y coherentes.
-- Generacion conversacional basica (tag "conversational" en HuggingFace), apta para interacciones de un solo turno o muy pocos turnos.
+- Generacion conversacional basica (tag "conversational" en Hugging Face), apta para interacciones de un solo turno o muy pocos turnos.
 - Continuacion y resumen de textos narrativos, ya que el entrenamiento se basa en BookSum.
 - Capacidad de fine-tuning sobre nuevos corpus de texto (recomendada por el propio autor), especialmente para generacion de relatos, resumenes y modelos de continuacion pequenos.
 - No hay evidencia de soporte de tool calling ni function calling en la informacion disponible.
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Benchmarks | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Lightning-60m (Aobangaming) | 64,8 M | 210 tokens | no disponibles | MIT | HuggingFace, requiere trust_remote_code |
+| Lightning-60m (Aobangaming) | 64,8 M | 210 tokens | no disponibles | MIT | Hugging Face, requiere trust_remote_code |
 | Aoban-2.7-L (modelo base declarado) | no disponible | no disponible | no disponibles | no disponible | no disponible |
 | lightning-30m (predecesor declarado) | no disponible | no disponible | no disponibles | no disponible | no disponible |
 
@@ -94,11 +94,11 @@ La model card menciona dos modelos relacionados: Aoban-2.7-L, del que deriva Lig
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Aobangaming/lightning-60m
+- Modelo en Hugging Face: https://huggingface.co/Aobangaming/lightning-60m
 - Dataset de entrenamiento BookSum: https://huggingface.co/datasets/kmfoda/booksum
 - Paper de referencia citado en la etiqueta arxiv:1910.09700 (Lacoste et al., 2019, Quantifying the Carbon Emissions of Machine Learning): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental de Machine Learning: https://mlco2.github.io/impact
-- Repositorio: no disponible (la model card solo indica la pagina de HuggingFace)
+- Repositorio: no disponible (la model card solo indica la pagina de Hugging Face)
 - Paper tecnico del modelo: no disponible
 - Demo publica: no disponible
 - Blog o documentacion adicional: no disponible

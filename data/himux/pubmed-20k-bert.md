@@ -56,9 +56,9 @@ No se han publicado resultados de benchmarks específicos para este modelo en la
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HimuX/pubmed-20k-bert | 109M | 512 | Clasificación de oraciones en abstracts RCT | ms-pl | HuggingFace |
-| NeuML/pubmedbert-base-embeddings | 110M | 512 | Embeddings de texto biomédico | MIT | HuggingFace |
-| ml4pubmed/BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext | 110M | 512 | Clasificación de texto biomédico (fine-tuning) | MIT | HuggingFace |
+| HimuX/pubmed-20k-bert | 109M | 512 | Clasificación de oraciones en abstracts RCT | ms-pl | Hugging Face |
+| NeuML/pubmedbert-base-embeddings | 110M | 512 | Embeddings de texto biomédico | MIT | Hugging Face |
+| ml4pubmed/BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext | 110M | 512 | Clasificación de texto biomédico (fine-tuning) | MIT | Hugging Face |
 
 PubMedBERT (base) está preentrenado desde cero en texto biomédico, por lo que suele superar a BERT-base en tareas del dominio. Sin embargo, el modelo de HimuX está específicamente ajustado para la clasificación secuencial de oraciones en RCT, lo que puede dar ventaja en esa tarea concreta. No se dispone de comparativas directas de rendimiento entre estos modelos.
 
@@ -72,7 +72,7 @@ PubMedBERT (base) está preentrenado desde cero en texto biomédico, por lo que 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/HimuX/pubmed-20k-bert)
+- [Modelo en Hugging Face](https://huggingface.co/HimuX/pubmed-20k-bert)
 - [Dataset pietrolesci/pubmed-200k-rct](https://huggingface.co/datasets/pietrolesci/pubmed-200k-rct)
 - [Paper de referencia: PubMed 200k RCT: a Dataset for Sequential Sentence Classification in Medical Abstracts](https://pubmed.ncbi.nlm.nih.gov/37927376/) (resultado de búsqueda web, no específico del modelo)
 - [Repositorio GitHub con ejemplo de uso del dataset](https://github.com/gurpreetsingh1111/PubMed_20k_RCT)

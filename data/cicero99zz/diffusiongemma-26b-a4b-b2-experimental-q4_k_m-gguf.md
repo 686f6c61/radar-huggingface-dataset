@@ -106,7 +106,7 @@ El resultado relevante es que la reversion exclusiva de las proyecciones de aten
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cicero99zz/diffusiongemma-26B-A4B-B2-Experimental-Q4_K_M-GGUF
+- Modelo en Hugging Face: https://huggingface.co/cicero99zz/diffusiongemma-26B-A4B-B2-Experimental-Q4_K_M-GGUF
 - Modelo base Google: https://huggingface.co/google/diffusiongemma-26B-A4B-it
 - Modelo base Edwixx (uncensored): https://huggingface.co/edwixx/diffusiongemma-26B-A4B-it-HERETIC-Uncensored
 - Instrucciones del runtime experimental (ruta en el repositorio): https://huggingface.co/cicero99zz/diffusiongemma-26B-A4B-B2-Experimental-Q4_K_M-GGUF/tree/main/runtime

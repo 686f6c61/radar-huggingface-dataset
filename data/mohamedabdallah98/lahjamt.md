@@ -118,7 +118,7 @@ No disponible la comparacion con otros sistemas participantes en AlexandriaX-202
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MohamedAbdallah98/LahjaMT
+- Modelo en Hugging Face: https://huggingface.co/MohamedAbdallah98/LahjaMT
 - Modelo base: https://huggingface.co/UBC-NLP/NileChat-3B-Base
 - Codigo y experimentos: https://github.com/m-abdallah98/LahjaMT
 - Articulo: "LahjaMT at AlexandriaX-2026: A Context-Aware English-to-Dialectal Arabic MT System with Lightweight Routing of LoRA Experts" (no se proporciona URL directa en la informacion disponible)

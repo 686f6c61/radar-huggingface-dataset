@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OpenVINO/mobilenetv2_120d_ra_in1k-int8-ov
+- Modelo en Hugging Face: https://huggingface.co/OpenVINO/mobilenetv2_120d_ra_in1k-int8-ov
 - Modelo base: https://huggingface.co/timm/mobilenetv2_120d.ra_in1k
 - Documentación de OpenVINO: https://docs.openvino.ai/
 - Repositorio de OpenVINO: https://github.com/openvinotoolkit/openvino

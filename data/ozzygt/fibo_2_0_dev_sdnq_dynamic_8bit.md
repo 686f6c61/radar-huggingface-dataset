@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Fibo 2.0 Dev SDNQ INT8 (esta ficha) | 8.132.986.501 | No disponible | INT8 dinámico | bria-fibo (CC BY-NC 4.0) | HuggingFace, diffusers |
-| briaai/Fibo-2.0-dev | No disponible | No disponible | bf16 | bria-fibo (CC BY-NC 4.0) | HuggingFace, diffusers |
+| Fibo 2.0 Dev SDNQ INT8 (esta ficha) | 8.132.986.501 | No disponible | INT8 dinámico | bria-fibo (CC BY-NC 4.0) | Hugging Face, diffusers |
+| briaai/Fibo-2.0-dev | No disponible | No disponible | bf16 | bria-fibo (CC BY-NC 4.0) | Hugging Face, diffusers |
 | Alternativas de la misma categoría | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones de modelos comparables en la información proporcionada, por lo que la comparación cuantitativa no es posible.
@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OzzyGT/fibo_2_0_dev_sdnq_dynamic_8bit
+- Repositorio Hugging Face: https://huggingface.co/OzzyGT/fibo_2_0_dev_sdnq_dynamic_8bit
 - Modelo base: https://huggingface.co/briaai/Fibo-2.0-dev
 - Guía de captions VGL del modelo base: https://huggingface.co/briaai/Fibo-2.0-dev/blob/main/vgl/README.md
 - Herramienta bria-vgl: https://github.com/Bria-AI/vgl

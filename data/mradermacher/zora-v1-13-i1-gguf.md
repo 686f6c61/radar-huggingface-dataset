@@ -93,7 +93,7 @@ No se dispone de resultados de benchmarks que permitan una comparacion cuantitat
 - La honestidad declarada es un objetivo de diseno, no una garantia: el modelo puede seguir alucinando, especialmente en las cuantizaciones de menor precision (IQ1_S, IQ1_M, IQ2_XXS), donde la degradacion de calidad es mayor.
 - El sesgo multi-perspectiva puede traducirse en respuestas ambiguas o poco comprometidas en dominios donde se espera una respuesta directa, lo que complica su uso en entornos con requisitos de decision clara.
 - Cobertura idiomatica limitada: los 12 idiomas objetivo son balcanicos y del sureste de Europa; no hay evidencia de un rendimiento aceptable en castellano, y la etiqueta multilingue no implica competencia en otras familias linguisticas.
-- La licencia del repositorio de cuantizaciones figura como no disponible en los metadatos de HuggingFace. Aunque el repositorio GGUF del modelo base indica apache-2.0, conviene verificar la licencia aplicable antes de un uso comercial.
+- La licencia del repositorio de cuantizaciones figura como no disponible en los metadatos de Hugging Face. Aunque el repositorio GGUF del modelo base indica apache-2.0, conviene verificar la licencia aplicable antes de un uso comercial.
 - No se documenta soporte de tool calling, function calling ni de flujos de agentes, por lo que no debe asumirse su disponibilidad en produccion.
 - El repositorio no incluye pesos originales ni ficheros de proyeccion multimodal, solo cuantizaciones GGUF.
 - La fecha de creacion del repositorio (25 de septiembre de 2026) y el contador de descargas (0) indican que se trata de una publicacion reciente y practicamente sin validacion por parte de la comunidad.

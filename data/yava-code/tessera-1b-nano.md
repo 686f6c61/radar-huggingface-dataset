@@ -116,7 +116,7 @@ No se han publicado en la informacion disponible comparaciones de este checkpoin
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yava-code/Tessera-1B-Nano
+- Modelo en Hugging Face: https://huggingface.co/yava-code/Tessera-1B-Nano
 - Paper ConceptLM (referencia citada en la model card): https://arxiv.org/abs/2602.08984
 - Paper NCP-ArchPreview (referencia citada en la model card): https://arxiv.org/abs/2609.10715
 - Repositorio ncp-smol: referenciado en la model card (whitepaper en `docs/whitepaper.md`, resultados en `results/fineweb-edu/README.md`, hashes del corpus empaquetado y log del trainer), pero sin URL publica en la informacion disponible.

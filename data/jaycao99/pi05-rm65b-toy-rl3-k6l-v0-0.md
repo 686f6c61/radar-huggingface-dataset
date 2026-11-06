@@ -39,7 +39,7 @@ No se proporciona información sobre el dataset de entrenamiento, la arquitectur
 - Investigación en aprendizaje por imitación: permite estudiar el comportamiento de una política entrenada durante 2.600 pasos, útil para analizar la convergencia y el efecto del número de pasos en la precisión del movimiento.
 - Validación de políticas en simulación: se puede integrar en MuJoCo o Isaac Sim para probar la política en entornos virtuales antes de desplegarla en hardware real.
 - Benchmarking de checkpoints LeRobot: sirve como referencia para comparar con otras variantes del mismo autor, como `pi05-rm65b-toy-v0.0`.
-- Educación y prototipado: es un ejemplo práctico de cómo cargar un modelo de política para robótica desde HuggingFace con `snapshot_download` y `from_pretrained`, lo que facilita la docencia en sistemas autónomos.
+- Educación y prototipado: es un ejemplo práctico de cómo cargar un modelo de política para robótica desde Hugging Face con `snapshot_download` y `from_pretrained`, lo que facilita la docencia en sistemas autónomos.
 - Ajuste fino para nuevas variaciones de la tarea: aunque no hay información sobre el pipeline de fine-tuning, la estructura de LeRobot permite reutilizar los pesos como punto de partida para adaptar la política a objetos o posiciones distintas dentro de la misma familia de tareas.
 
 ## Benchmarks y rendimiento
@@ -58,8 +58,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `JayCao99/pi05-rm65b-toy-rl3-K6L-v0.0` | No disponible | No disponible | No hay benchmarks | No disponible | HuggingFace |
-| `JayCao99/pi05-rm65b-toy-v0.0` | No disponible | No disponible | No hay benchmarks | No disponible | HuggingFace |
+| `JayCao99/pi05-rm65b-toy-rl3-K6L-v0.0` | No disponible | No disponible | No hay benchmarks | No disponible | Hugging Face |
+| `JayCao99/pi05-rm65b-toy-v0.0` | No disponible | No disponible | No hay benchmarks | No disponible | Hugging Face |
 
 No se han encontrado más modelos comparables con datos publicados.
 
@@ -73,6 +73,6 @@ No se han encontrado más modelos comparables con datos publicados.
 
 ## Enlaces
 
-- [HuggingFace: JayCao99/pi05-rm65b-toy-rl3-K6L-v0.0](https://huggingface.co/JayCao99/pi05-rm65b-toy-rl3-K6L-v0.0)
-- [HuggingFace: JayCao99/pi05-rm65b-toy-v0.0](https://huggingface.co/JayCao99/pi05-rm65b-toy-v0.0)
-- [HuggingFace dataset: JayCao99/rm65b-toy-v0](https://huggingface.co/datasets/JayCao99/rm65b-toy-v0)
+- [Hugging Face: JayCao99/pi05-rm65b-toy-rl3-K6L-v0.0](https://huggingface.co/JayCao99/pi05-rm65b-toy-rl3-K6L-v0.0)
+- [Hugging Face: JayCao99/pi05-rm65b-toy-v0.0](https://huggingface.co/JayCao99/pi05-rm65b-toy-v0.0)
+- [Hugging Face dataset: JayCao99/rm65b-toy-v0](https://huggingface.co/datasets/JayCao99/rm65b-toy-v0)

@@ -79,9 +79,9 @@ Resultados declarados por el autor en EuroEval 17.7.0, few-shot, 10 iteraciones 
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MeerDevelopment/gemma-4-31B-it-nl-lora | 31B (base) + LoRA | No disponible | Ajuste LoRA en neerlandés sobre Gemma 4 31B IT | Apache 2.0 (adaptador) | HuggingFace, requiere modelo base |
-| google/gemma-4-31B-it | 31B | No disponible | Modelo base conversacional multilingüe | Términos de Gemma | HuggingFace |
-| Intel/gemma-4-31B-it-int4-AutoRound | 31B | No disponible | Cuantización int4 del base para despliegue eficiente | Términos de Gemma | HuggingFace |
+| MeerDevelopment/gemma-4-31B-it-nl-lora | 31B (base) + LoRA | No disponible | Ajuste LoRA en neerlandés sobre Gemma 4 31B IT | Apache 2.0 (adaptador) | Hugging Face, requiere modelo base |
+| google/gemma-4-31B-it | 31B | No disponible | Modelo base conversacional multilingüe | Términos de Gemma | Hugging Face |
+| Intel/gemma-4-31B-it-int4-AutoRound | 31B | No disponible | Cuantización int4 del base para despliegue eficiente | Términos de Gemma | Hugging Face |
 | Adaptadores LoRA en neerlandés de otros autores | Variable | No disponible | Ajuste específico para nl | Variable | No disponible en la información proporcionada |
 
 No se dispone de datos de benchmarks comparativos con otros adaptadores neerlandeses en la información proporcionada.
@@ -100,7 +100,7 @@ No se dispone de datos de benchmarks comparativos con otros adaptadores neerland
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MeerDevelopment/gemma-4-31B-it-nl-lora
+- Hugging Face: https://huggingface.co/MeerDevelopment/gemma-4-31B-it-nl-lora
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
 - Cuantización int4 usada en la evaluación: https://huggingface.co/Intel/gemma-4-31B-it-int4-AutoRound
 - EuroEval (benchmark): https://euroeval.com

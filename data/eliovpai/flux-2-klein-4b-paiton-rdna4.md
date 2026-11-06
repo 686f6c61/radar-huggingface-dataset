@@ -26,11 +26,11 @@ El modelo es una compilación optimizada del checkpoint FLUX.2 klein 4B cuantiza
 ## Capacidades
 
 - Generación de imágenes fotográficas, conceptos de producto e ilustraciones en resolución 1024x1024 con 4 pasos de denoising.
-- Ejecución local en GPUs AMD Radeon con arquitectura RDNA4, sin necesidad de servicios en la nube ni token de HuggingFace.
+- Ejecución local en GPUs AMD Radeon con arquitectura RDNA4, sin necesidad de servicios en la nube ni token de Hugging Face.
 - Integración con ComfyUI mediante un flujo de trabajo predefinido, con selección de motor Paiton o Stock (Diffusers) para comparación.
 - Preservación de la composición y los sujetos principales en comparación con el motor Stock, con diferencias en detalles finos (SSIM de 0.975, 0.974 y 0.859 en tres prompts de prueba).
 - Soporte de generación por lotes y persistencia de cachés entre reinicios completos del contenedor.
-- Inferencia marcada como false en HuggingFace: requiere el entorno Paiton y no puede ejecutarse directamente con la librería Diffusers estándar.
+- Inferencia marcada como false en Hugging Face: requiere el entorno Paiton y no puede ejecutarse directamente con la librería Diffusers estándar.
 
 ## Casos de uso
 
@@ -80,7 +80,7 @@ No se dispone de comparativas con otros modelos de la misma categoría (por ejem
 
 - Solo está cualificado para la GPU AMD Radeon AI PRO R9700 (gfx1201) y el perfil fijo de 1024x1024 con 4 pasos. No es una reclamación de soporte para GPUs más pequeñas, otras resoluciones, edición de imágenes, adaptadores ni flujos de trabajo generales de ComfyUI.
 - El repositorio no contiene los pesos del modelo; se descargan por separado del editor original y se conservan en la caché local.
-- La inferencia en HuggingFace está marcada como false, lo que indica que el modelo no se puede cargar directamente con la librería estándar; requiere el entorno Paiton y los artefactos compilados.
+- La inferencia en Hugging Face está marcada como false, lo que indica que el modelo no se puede cargar directamente con la librería estándar; requiere el entorno Paiton y los artefactos compilados.
 - Se observan diferencias notables en detalles finos en escenas complejas (SSIM de 0.859 en la ilustración de la librería), lo que implica que la similitud numérica no es una prueba completa de calidad.
 - La evaluación de calidad se basa en solo tres prompts, por lo que no se puede generalizar el comportamiento en un amplio rango de entradas.
 - Requiere Linux, Docker y acceso directo al hardware AMD, lo que limita su uso en Windows o macOS sin contenedores.
@@ -89,7 +89,7 @@ No se dispone de comparativas con otros modelos de la misma categoría (por ejem
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/EliovpAI/FLUX.2-klein-4B-Paiton-RDNA4
+- Hugging Face: https://huggingface.co/EliovpAI/FLUX.2-klein-4B-Paiton-RDNA4
 - Repositorio de GitHub (rama paiton-flux2-klein-gfx1201-v1.0.1): https://github.com/Eliovp-BV/paiton-vllm-plugin/tree/paiton-flux2-klein-gfx1201-v1.0.1/models/FLUX.2-klein
 - Sitio oficial de Paiton: https://eliovp.com/products/paiton
 - Página de referencia sobre FLUX.2 Klein 4B: https://kunya.ai/models/flux-2-klein

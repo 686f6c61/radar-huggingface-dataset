@@ -22,7 +22,7 @@ El interes actual del repositorio es metodologico: documenta con detalle dos cau
 | Formato de pesos | GGUF (libreria declarada: gguf) |
 | Modelo base | HybridRMD/Ternary-Bonsai-2-27B-Heretic-Satellite |
 | Tamano del repositorio | 15,4 GB |
-| Fecha de publicacion en HuggingFace | 28 de septiembre de 2026 |
+| Fecha de publicacion en Hugging Face | 28 de septiembre de 2026 |
 
 ## Arquitectura y entrenamiento
 
@@ -108,9 +108,9 @@ La comparacion directa de rendimiento entre estos tres modelos no esta disponibl
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/HybridRMD/Bonsai-2-27B-HybridRMD-Satellite-Ternary
-- Modelo base en HuggingFace: https://huggingface.co/HybridRMD/Ternary-Bonsai-2-27B-Heretic-Satellite
-- Modelo upstream de Prism ML en HuggingFace: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf
+- Repositorio en Hugging Face: https://huggingface.co/HybridRMD/Bonsai-2-27B-HybridRMD-Satellite-Ternary
+- Modelo base en Hugging Face: https://huggingface.co/HybridRMD/Ternary-Bonsai-2-27B-Heretic-Satellite
+- Modelo upstream de Prism ML en Hugging Face: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf
 - Fork de llama.cpp requerido (rama `prism`): https://github.com/PrismML-Eng/llama.cpp
 - Anuncio de Bonsai 2 27B en Prism ML: https://prismml.com/news/bonsai-2-27b
 - Anuncio de lanzamiento de Bonsai 2 27B: https://prismml.com/news/prismml-launches-bonsai-2-27b

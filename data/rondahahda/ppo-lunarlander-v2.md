@@ -2,7 +2,7 @@
 
 ## Resumen
 
-rondahahda/ppo-LunarLander-v2 es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v2, un problema clasico de control con estado continuo de 8 dimensiones y espacio de acciones discreto de 4 valores. El modelo fue generado con la libreria stable-baselines3, una implementacion de referencia de algoritmos de RL en PyTorch, y se distribuye como un checkpoint serializado cargable directamente desde el Hub de HuggingFace mediante el paquete huggingface_sb3.
+rondahahda/ppo-LunarLander-v2 es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v2, un problema clasico de control con estado continuo de 8 dimensiones y espacio de acciones discreto de 4 valores. El modelo fue generado con la libreria stable-baselines3, una implementacion de referencia de algoritmos de RL en PyTorch, y se distribuye como un checkpoint serializado cargable directamente desde el Hub de Hugging Face mediante el paquete huggingface_sb3.
 
 Se trata de un artefacto de tipo benchmark educativo mas que de un modelo de proposito general: no es un modelo de lenguaje, no procesa texto ni imagenes y su unico objetivo es controlar la nave del entorno LunarLander para aterrizar suavemente en la plataforma designada. El autor declara un reward medio de 274,47 +/- 19,84 en evaluacion, un resultado que supera el umbral de 200 a partir del cual la documentacion de Gymnasium considera el entorno resuelto.
 
@@ -75,7 +75,7 @@ No se dispone de resultados de benchmarks de modelos comparables en la informaci
 
 | Modelo | Algoritmo | Entorno | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rondahahda/ppo-LunarLander-v2 | PPO | LunarLander-v2 | No disponible | No disponible | HuggingFace Hub |
+| rondahahda/ppo-LunarLander-v2 | PPO | LunarLander-v2 | No disponible | No disponible | Hugging Face Hub |
 | Alternativas equivalentes de stable-baselines3 / RL Zoo | PPO, A2C, DQN | LunarLander-v2 | No disponible | No disponible | No disponible en la informacion aportada |
 
 ## Limitaciones y advertencias
@@ -91,7 +91,7 @@ No se dispone de resultados de benchmarks de modelos comparables en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rondahahda/ppo-LunarLander-v2
+- Modelo en Hugging Face: https://huggingface.co/rondahahda/ppo-LunarLander-v2
 - Libreria stable-baselines3: https://github.com/DLR-RM/stable-baselines3
 - Paquete huggingface_sb3: https://github.com/huggingface/huggingface_sb3
 - Entorno LunarLander-v2 (Gymnasium / Farama): https://gymnasium.farama.org/environments/box2d/lunar_lander/

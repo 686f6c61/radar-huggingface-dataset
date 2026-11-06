@@ -73,7 +73,7 @@ No hay una comparativa directa publicada con otros LoRAs de estilo para H3. Exis
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/KennethFal/vh5tape-vhs-lora-minimax-h3
+- Pagina del modelo en Hugging Face: https://huggingface.co/KennethFal/vh5tape-vhs-lora-minimax-h3
 - Licencia del modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE
 - Repositorio de MiniMax-H3 en GitHub: https://github.com/MiniMax-AI/MiniMax-H3
 - Hub comunitario de MiniMax-H3: https://github.com/ai-models-lab/minimax-h3

@@ -90,7 +90,7 @@ Según la documentación de Unsloth, GLM-5.3-Flash supera a GLM-5.2 en benchmark
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/0xSojalSec/GLM-5.3-Flash-UNCENSORED-FP8
+- Repositorio Hugging Face: https://huggingface.co/0xSojalSec/GLM-5.3-Flash-UNCENSORED-FP8
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Espejo del autor original: https://huggingface.co/dealignai/GLM-5.3-Flash-ABLITERATED-FP8
 - Documentación de Unsloth sobre GLM-5.3-Flash: https://unsloth.ai/docs/models/glm-5.3

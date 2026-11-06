@@ -75,8 +75,8 @@ Nota: la seccion de evaluacion de la model card aparece truncada en la informaci
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| eins78/Kolibri-1-mlx-mixed-4-8-bit | 78,1 mil millones (MoE, 6+1 expertos activos) | no disponible (ventana deslizante 513) | safetensors MLX, precision mixta 4/8 bits | apache-2.0 | HuggingFace (0 descargas, 0 likes en la fecha de la informacion) |
-| Aleph-Alpha/Kolibri-1 (modelo base) | mismo modelo base | no disponible | checkpoint FP8 y BF16 | apache-2.0 | HuggingFace, pesos originales |
+| eins78/Kolibri-1-mlx-mixed-4-8-bit | 78,1 mil millones (MoE, 6+1 expertos activos) | no disponible (ventana deslizante 513) | safetensors MLX, precision mixta 4/8 bits | apache-2.0 | Hugging Face (0 descargas, 0 likes en la fecha de la informacion) |
+| Aleph-Alpha/Kolibri-1 (modelo base) | mismo modelo base | no disponible | checkpoint FP8 y BF16 | apache-2.0 | Hugging Face, pesos originales |
 | Otros MoE de tamano comparable | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone en la informacion proporcionada de datos de rendimiento comparativos frente a modelos equivalentes de otros desarrolladores (por ejemplo, MoE abiertos de rango similar), por lo que no se puede establecer una comparativa cuantitativa fiable.
@@ -96,7 +96,7 @@ No se dispone en la informacion proporcionada de datos de rendimiento comparativ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eins78/Kolibri-1-mlx-mixed-4-8-bit
+- Modelo en Hugging Face: https://huggingface.co/eins78/Kolibri-1-mlx-mixed-4-8-bit
 - Modelo base: https://huggingface.co/Aleph-Alpha/Kolibri-1
 - Repositorio del conversor kolibri-mlx: https://github.com/eins78/kolibri-mlx
 - Verificacion del conversor: https://github.com/eins78/kolibri-mlx#4-verification

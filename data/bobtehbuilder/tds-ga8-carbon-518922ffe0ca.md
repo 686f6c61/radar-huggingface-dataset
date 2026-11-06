@@ -76,5 +76,5 @@ El repositorio documenta el hardware utilizado para el entrenamiento que genero 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bobtehbuilder/tds-ga8-carbon-518922ffe0ca
+- Repositorio Hugging Face: https://huggingface.co/bobtehbuilder/tds-ga8-carbon-518922ffe0ca
 - Repositorios similares del mismo autor (registros de carbono): [bobtehbuilder/tds-ga8-carbon-9fc82fc7f449](https://huggingface.co/bobtehbuilder/tds-ga8-carbon-9fc82fc7f449) y [bobtehbuilder/tds-ga8-carbon-414018fd4fff](https://huggingface.co/bobtehbuilder/tds-ga8-carbon-414018fd4fff)

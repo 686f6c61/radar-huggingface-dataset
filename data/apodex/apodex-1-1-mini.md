@@ -84,16 +84,16 @@ Apodex-1.0-mini, la versión anterior, alcanzó 59,17 en FutureX según el blog 
 ## Limitaciones y advertencias
 
 - Idiomas limitados: solo se declaran inglés y chino; el rendimiento en otros idiomas no está garantizado.
-- Modelo muy reciente: creado en agosto de 2026, con 0 descargas en HuggingFace y adopción comunitaria nula; no hay experiencia acumulada de producción.
+- Modelo muy reciente: creado en agosto de 2026, con 0 descargas en Hugging Face y adopción comunitaria nula; no hay experiencia acumulada de producción.
 - Sin cuantizaciones publicadas: solo safetensors en precisión completa, lo que limita el despliegue en hardware de consumo.
 - Riesgo de alucinación: aunque el Statement Review mitiga afirmaciones sin respaldo, no elimina el riesgo; la verificación depende de la calidad de las fuentes accesibles.
 - Coste de despliegue elevado: la configuración recomendada requiere 8 GPU de alta gama para contexto completo, lo que puede ser prohibitivo para equipos pequeños.
 - Datos de entrenamiento no divulgados: no se especifica la composición del dataset ni el recetario exacto de la versión 1.1, lo que dificulta evaluar sesgos potenciales.
-- Etiqueta image-text-to-text: el modelo aparece etiquetado como image-text-to-text en HuggingFace, pero la documentación describe principalmente capacidades de texto; no se confirma soporte de visión en la información disponible.
+- Etiqueta image-text-to-text: el modelo aparece etiquetado como image-text-to-text en Hugging Face, pero la documentación describe principalmente capacidades de texto; no se confirma soporte de visión en la información disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/apodex/Apodex-1.1-mini
+- Modelo en Hugging Face: https://huggingface.co/apodex/Apodex-1.1-mini
 - Servicio online: https://www.apodex.ai
 - Pagina principal: https://www.apodex.com
 - Blog tecnico: https://www.apodex.com/blog/apodex-1.1-scaling-agentic-intelligence-for-complex-work

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`phureexd/qwen35_medical_v3_lr5e-5_lora` es un ajuste fino (fine-tuning) mediante LoRA del modelo base `unsloth/Qwen3.5-2B`, publicado por el usuario phureexd en HuggingFace. Se trata de un adaptador de bajo rango orientado a dominio médico, entrenado con la librería Unsloth y el stack TRL, y empaquetado en formato safetensors compatible con Transformers y text-generation-inference. El nombre del repositorio sugiere una tasa de aprendizaje de 5e-5 y una tercera iteración del ajuste.
+`phureexd/qwen35_medical_v3_lr5e-5_lora` es un ajuste fino (fine-tuning) mediante LoRA del modelo base `unsloth/Qwen3.5-2B`, publicado por el usuario phureexd en Hugging Face. Se trata de un adaptador de bajo rango orientado a dominio médico, entrenado con la librería Unsloth y el stack TRL, y empaquetado en formato safetensors compatible con Transformers y text-generation-inference. El nombre del repositorio sugiere una tasa de aprendizaje de 5e-5 y una tercera iteración del ajuste.
 
 El modelo hereda la arquitectura y las capacidades del Qwen3.5-2B original, un transformer de 2.000 millones de parámetros con licencia Apache 2.0. Al ser un adaptador LoRA, su tamaño en disco es reducido (0,1 GB en el repositorio), lo que lo hace ligero de distribuir, aunque requiere cargar el modelo base para su uso efectivo.
 
@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| phureexd/qwen35_medical_v3_lr5e-5_lora | 2B (base) + LoRA | No disponible | Apache 2.0 | HuggingFace |
-| unsloth/Qwen3.5-2B | 2B | No disponible | Apache 2.0 | HuggingFace |
-| Otros adaptadores médicos sobre Qwen | Variable | Variable | Variable | HuggingFace |
+| phureexd/qwen35_medical_v3_lr5e-5_lora | 2B (base) + LoRA | No disponible | Apache 2.0 | Hugging Face |
+| unsloth/Qwen3.5-2B | 2B | No disponible | Apache 2.0 | Hugging Face |
+| Otros adaptadores médicos sobre Qwen | Variable | Variable | Variable | Hugging Face |
 
 No se dispone de datos de rendimiento para establecer una comparación cuantitativa con alternativas.
 
@@ -78,6 +78,6 @@ No se dispone de datos de rendimiento para establecer una comparación cuantitat
 
 ## Enlaces
 
-- [HuggingFace: phureexd/qwen35_medical_v3_lr5e-5_lora](https://huggingface.co/phureexd/qwen35_medical_v3_lr5e-5_lora)
+- [Hugging Face: phureexd/qwen35_medical_v3_lr5e-5_lora](https://huggingface.co/phureexd/qwen35_medical_v3_lr5e-5_lora)
 - [Modelo base: unsloth/Qwen3.5-2B](https://huggingface.co/unsloth/Qwen3.5-2B)
 - [Repositorio de Unsloth](https://github.com/unslothai/unsloth)

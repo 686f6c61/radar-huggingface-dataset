@@ -6,7 +6,7 @@ TriDomainMoE es un modelo de mixture of experts (MoE) orientado a la predicción
 
 A diferencia de los modelos de lenguaje, TriDomainMoE no procesa texto ni genera lenguaje natural: es un modelo numérico de forecasting con marca de pipeline `time-series-forecasting`, entrenado con reinforcement learning y pensado para investigación cuantitativa algorítmica y generación de señales. Su relevancia radica en que la model card declara métricas de trading respaldadas por una evaluación de un año completo con 105.078 barras M5 y 443 operaciones, incluyendo un Sharpe anualizado de 9,47 y un drawdown máximo del 0,3753 %, cifras que el autor presenta como aptas para los límites de una prop firm.
 
-El tamaño del modelo es muy reducido: la configuración declarada usa `hidden_dim=48` con dimensiones de entrada 6/6/8 y vector de régimen de 8 dimensiones. El repositorio de HuggingFace figura con 0,0 GB, 0 descargas y 1 like, y los pesos se cargan desde un fichero PyTorch (`weights/btcusd_tri_domain_v2.pt`) que no está incluido en el Hub. La licencia es Apache 2.0 y el único idioma declarado es el inglés, aunque el contenido del modelo no es lingüístico.
+El tamaño del modelo es muy reducido: la configuración declarada usa `hidden_dim=48` con dimensiones de entrada 6/6/8 y vector de régimen de 8 dimensiones. El repositorio de Hugging Face figura con 0,0 GB, 0 descargas y 1 like, y los pesos se cargan desde un fichero PyTorch (`weights/btcusd_tri_domain_v2.pt`) que no está incluido en el Hub. La licencia es Apache 2.0 y el único idioma declarado es el inglés, aunque el contenido del modelo no es lingüístico.
 
 ## Especificaciones tecnicas
 
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 - Opciones de despliegue: no se documentan integraciones con vLLM, llama.cpp, Ollama o TGI (ninguna aplica, al no ser un transformer de lenguaje). El unico camino declarado es cargar el checkpoint con `torch.load` e instanciar `TriDomainMoE` desde `src.models.institutional_moe`.
 - Latencia y throughput: no disponibles. No se publican mediciones de latencia por inferencia ni de operaciones por segundo.
 
-Nota importante: el repositorio de HuggingFace figura con un tamano de 0,0 GB y el codigo de carga apunta a `weights/btcusd_tri_domain_v2.pt`, un fichero que no parece estar alojado en el Hub. Habria que obtenerlo desde el repositorio de GitHub del autor, si esta disponible alli.
+Nota importante: el repositorio de Hugging Face figura con un tamano de 0,0 GB y el codigo de carga apunta a `weights/btcusd_tri_domain_v2.pt`, un fichero que no parece estar alojado en el Hub. Habria que obtenerlo desde el repositorio de GitHub del autor, si esta disponible alli.
 
 ## Comparativa con modelos similares
 
@@ -88,12 +88,12 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 - Restricciones de licencia: Apache 2.0 permite uso comercial, pero el autor no ofrece ninguna garantia ni soporte. No hay clausulas de responsabilidad sobre perdidas financieras.
 - Alcance funcional: no es un modelo de lenguaje ni de vision. No admite tool calling, agentes, generacion de codigo ni tareas multimodales. La metrica `accuracy` listada en los tags no se concreta en la model card.
 - Idioma y documentacion: los metadatos declaran solo `en`, y no existe documentacion tecnica detallada del dataset de ticks, del algoritmo de RL empleado ni del proceso de calibracion del meta-sizer.
-- Disponibilidad del artefacto: el repositorio del Hub aparece con 0,0 GB y 0 descargas, por lo que es probable que los pesos no esten efectivamente publicados en HuggingFace. Verificar antes de intentar cargar el checkpoint.
+- Disponibilidad del artefacto: el repositorio del Hub aparece con 0,0 GB y 0 descargas, por lo que es probable que los pesos no esten efectivamente publicados en Hugging Face. Verificar antes de intentar cargar el checkpoint.
 - Fecha de creacion inusual: los metadatos indican creacion en 2026-09-12, lo que conviene contrastar.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ElMoorish/tri-domain-moe
+- Hugging Face: https://huggingface.co/ElMoorish/tri-domain-moe
 - Repositorio GitHub: https://github.com/ElMoorish/TriDomainMoE
 - Portal web oficial: https://primeclub-quant.vercel.app/
 - Dataset referenciado en los tags: `continuous-m5-btcusd-ticks` (no se proporciona URL directa)

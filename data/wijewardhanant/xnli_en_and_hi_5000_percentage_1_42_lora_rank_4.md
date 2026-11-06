@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `WijewardhanaNT/xnli_en_and_hi_5000_percentage_1_42_LoRA_rank_4` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario WijewardhanaNT sobre el modelo base `meta-llama/Llama-3.1-8B`. No se trata de un modelo completo, sino de un conjunto de pesos delta que debe cargarse junto al modelo base mediante la librería PEFT. El repositorio ocupa 0,3 GB y fue creado el 22 de septiembre de 2026.
+El modelo `WijewardhanaNT/xnli_en_and_hi_5000_percentage_1_42_LoRA_rank_4` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario WijewardhanaNT sobre el modelo base `meta-llama/Llama-3.1-8B`. No se trata de un modelo completo, sino de un conjunto de pesos delta que debe cargarse junto al modelo base mediante la librería PEFT. El repositorio ocupa 0,3 GB y fue creado el 22 de septiembre de 2026.
 
 La nomenclatura del identificador sugiere que el adaptador se ha entrenado sobre el corpus XNLI (Cross-lingual Natural Language Inference) en ingles y hindi, con un subconjunto de 5000 ejemplos y un rango de LoRA igual a 4. Se trata, por tanto, de un experimento de ajuste fino orientado a una tarea de inferencia textual (entailment, neutral, contradiction) en dos idiomas, mas que a un asistente conversacional de proposito general.
 
@@ -36,7 +36,7 @@ No hay informacion publicada sobre el procedimiento de entrenamiento: no se deta
 ## Capacidades
 
 - Inferencia textual (Natural Language Inference): clasificacion de pares premisa-hipotesis en entailment, neutral y contradiction, segun lo que sugiere el identificador basado en XNLI.
-- Generacion de texto: el pipeline declarado en HuggingFace es `text-generation`, heredado del modelo base.
+- Generacion de texto: el pipeline declarado en Hugging Face es `text-generation`, heredado del modelo base.
 - Procesamiento bilingue ingles-hindi (segun el identificador del repositorio); no hay confirmacion en la model card.
 - Capacidades del modelo base heredadas: generacion de texto, razonamiento basico, generacion de codigo, matematicas elementales y soporte multilingue en los ocho idiomas oficiales de Llama 3.1.
 - Tool calling y function calling: no confirmado en el adaptador; Llama 3.1 8B los soporta de forma nativa.
@@ -98,7 +98,7 @@ En cuanto a alternativas de la misma tarea (adaptadores LoRA para NLI multilingu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WijewardhanaNT/xnli_en_and_hi_5000_percentage_1_42_LoRA_rank_4
+- Modelo en Hugging Face: https://huggingface.co/WijewardhanaNT/xnli_en_and_hi_5000_percentage_1_42_LoRA_rank_4
 - Modelo base Llama 3.1 8B: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Libreria PEFT: https://huggingface.co/docs/peft/index
 - Articulo de Lacoste et al. sobre emisiones de carbono, citado en la etiqueta `arxiv:1910.09700` de la model card: https://arxiv.org/abs/1910.09700

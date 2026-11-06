@@ -81,9 +81,9 @@ La innovacion tecnica principal no esta en el modelo sino en el runtime que lo a
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| deem-0.6-v1 | 596.049.920 | no disponible | Decision tipada en CPU | Apache-2.0 | HuggingFace `LibertAIDAI/deem-0.6-v1` |
-| deem-9b-v1 | no disponible (peso del repo 17,9 GB) | no disponible | Misma familia Deem, mayor tamano | Apache-2.0 | HuggingFace `LibertAIDAI/deem-9b-v1` |
-| Qwen3-0.6B-Base | ~0,6B | no disponible en esta ficha | LLM generativo base | Apache-2.0 | HuggingFace `Qwen/Qwen3-0.6B-Base` |
+| deem-0.6-v1 | 596.049.920 | no disponible | Decision tipada en CPU | Apache-2.0 | Hugging Face `LibertAIDAI/deem-0.6-v1` |
+| deem-9b-v1 | no disponible (peso del repo 17,9 GB) | no disponible | Misma familia Deem, mayor tamano | Apache-2.0 | Hugging Face `LibertAIDAI/deem-9b-v1` |
+| Qwen3-0.6B-Base | ~0,6B | no disponible en esta ficha | LLM generativo base | Apache-2.0 | Hugging Face `Qwen/Qwen3-0.6B-Base` |
 | Referencia 0.8B citada por el autor | ~0,8B | no disponible | LLM base con atencion lineal (sucesor Qwen3.5) | no disponible | no disponible |
 
 Comparado con el modelo base Qwen3-0.6B-Base, deem-0.6-v1 no busca generar texto, sino producir decisiones estructuradas calibradas y con abtencion; en ese sentido no es un sustituto directo, sino un fine-tune especializado. Frente a la variante de 0.8B citada en la model card, el autor sostiene que el 0.6B es superior en la suite estandar (0,7533 frente a 0,7455) y en JevBench hard (40,5 frente a 33,3) con un 25 % menos de parametros. No hay datos comparativos publicados frente a otros modelos de decision o clasificacion fuera de la familia Deem.
@@ -102,7 +102,7 @@ Comparado con el modelo base Qwen3-0.6B-Base, deem-0.6-v1 no busca generar texto
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LibertAIDAI/deem-0.6-v1
+- Modelo en Hugging Face: https://huggingface.co/LibertAIDAI/deem-0.6-v1
 - Repositorio GitHub: https://github.com/Libertai/deem
 - Variante de 9B: https://huggingface.co/LibertAIDAI/deem-9b-v1
 - Pagina de modelos del autor: https://huggingface.co/LibertAIDAI/models

@@ -18,7 +18,7 @@ La relevancia práctica del modelo es doble. Por un lado, es muy ligero (0,2 GB 
 | Longitud de contexto | 128 tokens (longitud máxima de entrenamiento; el encoder base admite 512 posiciones, no validadas para esta tarea) |
 | Tipos de cuantizacion | no especificados por el autor; pesos safetensors compatibles con FP32/FP16/BF16 estándar de PyTorch. No hay GGUF publicado |
 | Idiomas soportados | en (inglés) |
-| Licencia | no disponible (el campo de licencia está vacío en la ficha de HuggingFace) |
+| Licencia | no disponible (el campo de licencia está vacío en la ficha de Hugging Face) |
 | Formato de pesos | safetensors (con código de modelado personalizado `modeling_ordinal_bert.py`) |
 
 ## Arquitectura y entrenamiento
@@ -70,7 +70,7 @@ La model card menciona que su tabla de evaluación incluye también resultados d
 - VRAM estimada para inferencia: aproximadamente 166 MB para los pesos en FP32 y unos 83 MB en FP16/BF16. Con activaciones y lotes pequeños, el consumo total se mantiene por debajo de 1 GB.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente. Una RTX 4090, A100 o H100 están sobredimensionadas para este modelo; su uso solo se justifica por throughput en lotes muy grandes.
 - Compatibilidad con GPU de consumo: sí, en cualquier tarjeta moderna (GTX 1050 4 GB o superior) e incluso en CPU, dado el tamaño del modelo y la ventana de 128 tokens.
-- Opciones de despliegue: `transformers` con `AutoModel` y `trust_remote_code=True` (obligatorio, porque la cabeza ordinal no es estándar); el repositorio está etiquetado como compatible con Text Embeddings Inference y con endpoints de HuggingFace. No hay pesos GGUF publicados, por lo que llama.cpp y Ollama no son opciones directas sin conversión y reimplementación de la cabeza.
+- Opciones de despliegue: `transformers` con `AutoModel` y `trust_remote_code=True` (obligatorio, porque la cabeza ordinal no es estándar); el repositorio está etiquetado como compatible con Text Embeddings Inference y con endpoints de Hugging Face. No hay pesos GGUF publicados, por lo que llama.cpp y Ollama no son opciones directas sin conversión y reimplementación de la cabeza.
 - Latencia y throughput: no disponible. Al tratarse de un encoder de 41 M de parámetros con secuencias de 128 tokens, es un modelo de coste muy bajo, pero no se han publicado cifras medidas.
 
 ## Comparativa con modelos similares
@@ -95,14 +95,14 @@ Rendimiento comparado: no disponible. La diferencia funcional clave frente a los
 - Riesgo de alucinación no aplica en el sentido generativo (no produce texto), pero sí existe riesgo de calibración incorrecta fuera del dominio: el modelo se entrenó con prosa literaria clásica en inglés, y su comportamiento en redes sociales, texto técnico o diálogo informal no está validado.
 - Limitación de idioma: solo inglés. No se ha entrenado ni evaluado en castellano.
 - Limitación de longitud: máximo de 128 tokens; las frases más largas se truncan, lo que puede alterar la puntuación.
-- La licencia no está declarada en la ficha de HuggingFace. Sin una licencia explícita, el uso comercial queda en una zona jurídica indeterminada y conviene contactar con el autor antes de integrarlo en un producto.
+- La licencia no está declarada en la ficha de Hugging Face. Sin una licencia explícita, el uso comercial queda en una zona jurídica indeterminada y conviene contactar con el autor antes de integrarlo en un producto.
 - Los resultados de evaluación provienen de un único corpus humano (Hemingway, 1.923 frases) y de una única tradición literaria; la generalización a otros autores, géneros o épocas no está cuantificada.
 - El modelo no genera explicaciones ni justifica sus puntuaciones: la salida es un escalar sin trazabilidad.
 - Las métricas publicadas (MAE 0,752; precisión ±1 0,808) proceden de anotaciones humanas con dos anotadores promediados; no se reporta el acuerdo entre anotadores, lo que limita la interpretación del techo de rendimiento.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/susurofu/literary-bert-en-medium
+- Modelo en Hugging Face: https://huggingface.co/susurofu/literary-bert-en-medium
 - Modelo base: https://huggingface.co/google/bert_uncased_L-8_H-512_A-8
 - Documentación de Transformers sobre modelos con código personalizado: https://huggingface.co/docs/transformers/custom_models
 - Text Embeddings Inference: https://github.com/huggingface/text-embeddings-inference

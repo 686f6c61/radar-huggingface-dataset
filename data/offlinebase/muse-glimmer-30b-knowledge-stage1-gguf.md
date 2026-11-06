@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks comparativos con modelos de la misma catego
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OfflineBase/Muse-Glimmer-30B-Knowledge-Stage1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/OfflineBase/Muse-Glimmer-30B-Knowledge-Stage1-GGUF
 - Modelo base: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Modelo de conocimiento publicado de la familia: https://huggingface.co/OfflineBase/Muse-Glimmer-30B-2026-Knowledge
 - Adaptador LoRA de origen: https://huggingface.co/OfflineBase/Muse-Glimmer-30B-2026-Knowledge-LoRA

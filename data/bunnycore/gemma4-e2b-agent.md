@@ -79,7 +79,7 @@ El adaptador no modifica estas características, solo añade un ajuste fino. La 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bunnycore/Gemma4-E2B-Agent
+- Repositorio Hugging Face: https://huggingface.co/bunnycore/Gemma4-E2B-Agent
 - Modelo base: https://huggingface.co/unsloth/gemma-4-E2B-it-qat-q4_0-unquantized
 - Página oficial de Gemma 4: https://deepmind.google/models/gemma/gemma-4/
 - Ficha técnica de Gemma 4 E2B: https://gemma4.dev/models/gemma-4-e2b

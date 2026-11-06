@@ -6,7 +6,7 @@ Este repositorio contiene un adaptador LoRA denominado `qwen3vl-4b-target-user-a
 
 El modelo base pertenece a la familia Qwen3-VL, que combina capacidades de vision-lenguaje con generacion de texto. El sufijo "4B" del identificador apunta a un tamano del orden de 4.000 millones de parametros, si bien este dato no se confirma en la informacion proporcionada sobre el adaptador. Al ser un adaptador LoRA, su relevancia practica depende enteramente del modelo base y de la calidad del ajuste, que no esta documentada.
 
-La ficha presenta limitaciones importantes de trazabilidad: la model card es la plantilla por defecto de HuggingFace con todos los campos marcados como "[More Information Needed]", el repositorio registra 0 descargas y 0 likes, y no se declara licencia ni idiomas soportados. Cualquier evaluacion seria exige reproducir el entrenamiento o auditar los pesos por cuenta propia.
+La ficha presenta limitaciones importantes de trazabilidad: la model card es la plantilla por defecto de Hugging Face con todos los campos marcados como "[More Information Needed]", el repositorio registra 0 descargas y 0 likes, y no se declara licencia ni idiomas soportados. Cualquier evaluacion seria exige reproducir el entrenamiento o auditar los pesos por cuenta propia.
 
 ## Especificaciones tecnicas
 
@@ -75,14 +75,14 @@ La model card incluye la seccion "Evaluation" con todos los campos marcados como
 |---|---|---|---|---|---|
 | Bunkir2004/qwen3vl-4b-target-user-attribute-ember (este adaptador) | no disponible (adaptador sobre base "4B") | no disponible | sin benchmarks publicados | no disponible | 0 descargas, 0 likes; repositorio publico |
 | Qwen/Qwen3-VL-4B-Instruct | identificado como "4B" en el nombre; no confirmado en esta informacion | no disponible | no disponible en esta informacion | no disponible en esta informacion (consultar su model card) | modelo base oficial, ampliamente utilizado |
-| huihui-ai/Huihui-Qwen3-VL-4B-Instruct-abliterated | derivado del mismo base "4B" | no disponible | no disponible | no disponible | variante "abliterated" publicada en HuggingFace |
-| huihui-ai/Huihui-Qwen3-VL-4B-Instruct-abliterated | derivado del mismo base "4B" | no disponible | no disponible | no disponible | variante publicada en HuggingFace |
+| huihui-ai/Huihui-Qwen3-VL-4B-Instruct-abliterated | derivado del mismo base "4B" | no disponible | no disponible | no disponible | variante "abliterated" publicada en Hugging Face |
+| huihui-ai/Huihui-Qwen3-VL-4B-Instruct-abliterated | derivado del mismo base "4B" | no disponible | no disponible | no disponible | variante publicada en Hugging Face |
 
 No se dispone de datos suficientes para establecer una comparacion cuantitativa: ninguno de los modelos listados aporta cifras de benchmarks en la informacion proporcionada, y el adaptador no declara metricas propias ni comparaciones con el checkpoint base.
 
 ## Limitaciones y advertencias
 
-- Model card vacia: es la plantilla por defecto de HuggingFace, con todos los campos relevantes sin cumplimentar (autor, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluacion).
+- Model card vacia: es la plantilla por defecto de Hugging Face, con todos los campos relevantes sin cumplimentar (autor, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluacion).
 - Sin licencia declarada: no hay terminos de uso explicitos. Cualquier uso comercial exige aclarar previamente la licencia aplicable, que en ultima instancia dependera de las condiciones del modelo base Qwen/Qwen3-VL-4B-Instruct.
 - Sin validacion externa: 0 descargas y 0 likes, sin evaluaciones de terceros, lo que impide asumir ningun nivel de calidad.
 - Riesgo de sobreajuste: al ser un ajuste ligero sobre una tarea no documentada (atributos de usuario), es probable que degrade capacidades generales del modelo base. No se han medido dichas perdidas.

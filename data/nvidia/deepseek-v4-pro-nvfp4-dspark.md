@@ -86,7 +86,7 @@ Este modelo se diferencia de las variantes sin DSpark en que integra el borrador
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nvidia/DeepSeek-V4-Pro-nvfp4-DSpark
+- Modelo en Hugging Face: https://huggingface.co/nvidia/DeepSeek-V4-Pro-nvfp4-DSpark
 - Modelo base DeepSeek-V4-Pro: https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro
 - Modelo DeepSeek-V4-Pro-DSpark: https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-DSpark
 - Versión NVFP4 sin DSpark: https://huggingface.co/nvidia/DeepSeek-V4-Pro-NVFP4

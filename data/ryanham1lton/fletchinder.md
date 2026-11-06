@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Fletchinder es un modelo publicado en HuggingFace por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La model card asociada no contiene ninguna descripcion tecnica: unicamente declara la licencia, sin informacion sobre arquitectura, entrenamiento, capacidades ni proposito. El repositorio ocupa 0,1 GB, lo que sugiere un modelo de pequeno tamano, aunque no se especifica el numero de parametros ni el formato de los pesos.
+Fletchinder es un modelo publicado en Hugging Face por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La model card asociada no contiene ninguna descripcion tecnica: unicamente declara la licencia, sin informacion sobre arquitectura, entrenamiento, capacidades ni proposito. El repositorio ocupa 0,1 GB, lo que sugiere un modelo de pequeno tamano, aunque no se especifica el numero de parametros ni el formato de los pesos.
 
 No se dispone de datos sobre el pipeline de la tarea, los idiomas soportados ni la fecha de creacion (la metadata indica 2026-11-03, un valor que debe tratarse con cautela). Tampoco consta ninguna descarga ni interaccion por parte de la comunidad, por lo que no existe evidencia publica de su rendimiento o calidad.
 
@@ -67,4 +67,4 @@ No disponible. Sin datos sobre parametros, contexto o rendimiento no es posible 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/Fletchinder
+- Hugging Face: https://huggingface.co/Ryanham1lton/Fletchinder

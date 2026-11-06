@@ -108,7 +108,7 @@ No se dispone en la información proporcionada de otros modelos comparables de l
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta build: https://huggingface.co/UraionLabs/Nemotron-3.5-Bolt-74B-A9B-24GB-Metal-GGUF
+- Repositorio Hugging Face de esta build: https://huggingface.co/UraionLabs/Nemotron-3.5-Bolt-74B-A9B-24GB-Metal-GGUF
 - Modelo base (NVIDIA Nemotron 3.5 Bolt 74B-A9B 24GB GGUF): https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-GGUF
 - Drafter LiLiCorr (NVIDIA): https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-LiLiCorr-GGUF
 - Licencia OpenMDW-1.1: https://openmdw.ai/license/1-1/

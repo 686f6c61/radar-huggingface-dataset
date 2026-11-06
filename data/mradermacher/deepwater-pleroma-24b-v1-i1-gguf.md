@@ -100,7 +100,7 @@ No es posible establecer una comparativa tecnica fiable con modelos de otras fam
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta ficha: https://huggingface.co/mradermacher/DeepWater-Pleroma-24B-v1-i1-GGUF
+- Repositorio Hugging Face de esta ficha: https://huggingface.co/mradermacher/DeepWater-Pleroma-24B-v1-i1-GGUF
 - Modelo base: https://huggingface.co/OccultAI/DeepWater-Pleroma-24B-v1
 - Quants estaticos del mismo modelo: https://huggingface.co/mradermacher/DeepWater-Pleroma-24B-v1-GGUF
 - Pagina resumen de descargas del autor: https://hf.tst.eu/model#DeepWater-Pleroma-24B-v1-i1-GGUF

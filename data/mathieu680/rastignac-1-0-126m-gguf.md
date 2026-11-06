@@ -18,7 +18,7 @@ Su relevancia es limitada y muy específica: es un ejemplo de ajuste/entrenamien
 | Longitud de contexto | no disponible |
 | Tipos de cuantización | GGUF F16 (único archivo publicado en el repositorio; el autor indica que se convirtió desde los pesos Safetensors) |
 | Idiomas soportados | francés (`fr`) |
-| Licencia | `other` (etiqueta de HuggingFace); el autor remite a la licencia de Project Gutenberg para los derechos del corpus |
+| Licencia | `other` (etiqueta de Hugging Face); el autor remite a la licencia de Project Gutenberg para los derechos del corpus |
 | Formato de pesos | GGUF (F16) en este repositorio; Safetensors en el repositorio principal |
 | Tamaño del repositorio | 0,3 GB |
 | Pipeline | text-generation |

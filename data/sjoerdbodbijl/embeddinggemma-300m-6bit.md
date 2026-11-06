@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| `sjoerdbodbijl/embeddinggemma-300m-6bit` | 307.581.696 | no disponible | Gemma | safetensors / MLX (6 bits) | Repositorio HuggingFace, 0 descargas y 0 likes |
+| `sjoerdbodbijl/embeddinggemma-300m-6bit` | 307.581.696 | no disponible | Gemma | safetensors / MLX (6 bits) | Repositorio Hugging Face, 0 descargas y 0 likes |
 | `mlx-community/embeddinggemma-300m-6bit` | no disponible | no disponible | Gemma | MLX | Repositorio publico de MLX Community |
 | `google/embeddinggemma-300m-qat-q8_0-unquantized` | no disponible | no disponible | Gemma | safetensors | Modelo original de Google, acceso gated |
 | Otros modelos de embeddings de ~300 M | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -89,6 +89,6 @@ No se dispone de datos de rendimiento comparado en la informacion proporcionada,
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sjoerdbodbijl/embeddinggemma-300m-6bit
+- Repositorio Hugging Face: https://huggingface.co/sjoerdbodbijl/embeddinggemma-300m-6bit
 - Repositorio de origen de la conversion: https://huggingface.co/mlx-community/embeddinggemma-300m-6bit
 - Modelo base de Google: https://huggingface.co/google/embeddinggemma-300m-qat-q8_0-unquantized

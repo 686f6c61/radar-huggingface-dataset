@@ -31,7 +31,7 @@ But I should be careful — quantizations aren't officially provided. I'll indic
 
 Let me write it. Should be thorough.
 
-For enlaces: HuggingFace model page, base model, dataset, wandb run, NVIDIA build page, NVFP4 page, Megatron-Bridge docs, LoRA variant.
+For enlaces: Hugging Face model page, base model, dataset, wandb run, NVIDIA build page, NVFP4 page, Megatron-Bridge docs, LoRA variant.
 
 Let me write the ficha now.
 
@@ -108,7 +108,7 @@ El ajuste se realizo sobre 458.247 trazas de razonamiento verificado paso a paso
 | Longitud de contexto | 256.000 tokens (segun configuracion y tokenizador del modelo base) |
 | Tipos de cuantizacion | no disponible en el repositorio (solo safetensors BF16); el modelo base de NVIDIA dispone de una variante oficial NVFP4 |
 | Idiomas soportados | no disponible |
-| Licencia | nvidia-open-model-license (etiquetada como `license: other` en HuggingFace) |
+| Licencia | nvidia-open-model-license (etiquetada como `license: other` en Hugging Face) |
 | Formato de pesos | safetensors (BF16); tamano del repositorio 65,8 GB |
 
 ## Arquitectura y entrenamiento
@@ -169,10 +169,10 @@ No se han publicado resultados de benchmarks estandar (MMLU, GSM8K, HumanEval, e
 
 | Modelo | Parametros totales / activos | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Balab2021/Nemotron-3.5-Lightning-30B-A3B-Cricket-Reasoning | 31,6 B / ~3 B | 256.000 | 97,0% en benchmark propio de criquet T20 (600 preguntas) | nvidia-open-model-license | HuggingFace, safetensors BF16 |
-| nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16 (base) | 30 B / 3 B | 256.000 | 89,6% en el mismo benchmark (sin especializar) | nvidia-open-model-license | HuggingFace, safetensors BF16 |
-| nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4 | 30 B / 3 B (aproximado) | no disponible | no disponible | nvidia-open-model-license | HuggingFace, cuantizado NVFP4 |
-| Balab2021/Nemotron-3.5-Lightning-30B-A3B-LoRA | 30 B / 3 B (aproximado) | 256.000 (heredado) | no disponible | no disponible en la informacion proporcionada | HuggingFace, adaptador LoRA |
+| Balab2021/Nemotron-3.5-Lightning-30B-A3B-Cricket-Reasoning | 31,6 B / ~3 B | 256.000 | 97,0% en benchmark propio de criquet T20 (600 preguntas) | nvidia-open-model-license | Hugging Face, safetensors BF16 |
+| nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16 (base) | 30 B / 3 B | 256.000 | 89,6% en el mismo benchmark (sin especializar) | nvidia-open-model-license | Hugging Face, safetensors BF16 |
+| nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4 | 30 B / 3 B (aproximado) | no disponible | no disponible | nvidia-open-model-license | Hugging Face, cuantizado NVFP4 |
+| Balab2021/Nemotron-3.5-Lightning-30B-A3B-LoRA | 30 B / 3 B (aproximado) | 256.000 (heredado) | no disponible | no disponible en la informacion proporcionada | Hugging Face, adaptador LoRA |
 
 No se dispone de datos de benchmarks comparables con otras familias de modelos MoE de aproximadamente 30 B totales y 3 B activos (por ejemplo, Qwen3-30B-A3B) en la informacion proporcionada.
 
@@ -182,7 +182,7 @@ No se dispone de datos de benchmarks comparables con otras familias de modelos M
 - Riesgo de alucinacion en cifras: pese a la mejora en exactitud, un 3,0% de respuestas incorrectas en el benchmark propio implica que las cifras no deben usarse sin verificacion en contextos de produccion, especialmente apostando o publicando datos.
 - Benchmark propio no estandar: el 97,0% de exactitud procede de un conjunto de 600 preguntas del propio autor, no de benchmarks publicos independientes; no es comparable con MMLU, GSM8K o HumanEval.
 - Idiomas no documentados: no se especifica que idiomas soporta el modelo tras el ajuste; el prompt de sistema y el formato de respuesta estan en ingles.
-- Licencia: se hereda la nvidia-open-model-license del modelo base, etiquetada como `license: other` en HuggingFace. Es imprescindible revisar los terminos de la NVIDIA Open Model License antes de cualquier uso comercial, incluida la redistribucion de pesos o de derivados.
+- Licencia: se hereda la nvidia-open-model-license del modelo base, etiquetada como `license: other` en Hugging Face. Es imprescindible revisar los terminos de la NVIDIA Open Model License antes de cualquier uso comercial, incluida la redistribucion de pesos o de derivados.
 - Formato de respuesta rigido: el modelo espera el formato `<think>...</think>` y la linea `Final answer: <number>`. Fuera de ese formato la calidad puede degradarse.
 - Repositorio sin validacion de la comunidad: 0 descargas y 0 likes en el momento de la ficha, creado el 8 de octubre de 2026; no hay informes independientes de terceros ni auditoria.
 - Sin cuantizaciones oficiales: al no publicarse variantes GGUF, GPTQ o AWQ, el despliegue en GPU de consumo requiere generar la cuantizacion por cuenta propia, con el riesgo de degradacion adicional.
@@ -191,7 +191,7 @@ No se dispone de datos de benchmarks comparables con otras familias de modelos M
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Balab2021/Nemotron-3.5-Lightning-30B-A3B-Cricket-Reasoning
+- Modelo en Hugging Face: https://huggingface.co/Balab2021/Nemotron-3.5-Lightning-30B-A3B-Cricket-Reasoning
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16
 - Variante cuantizada del modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4
 - Variante LoRA del mismo autor: https://huggingface.co/Balab2021/Nemotron-3.5-Lightning-30B-A3B-LoRA

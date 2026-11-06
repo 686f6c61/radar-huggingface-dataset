@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mt5-small-finetuned-books-summarization` es un ajuste fino (fine-tuning) de `google/mt5-small`, un modelo de generación de texto de la familia T5 multilingüe desarrollado por Google. Lo ha publicado el usuario BoddyGus en HuggingFace y está especializado en la tarea de resumen de libros, aunque la model card indica que el conjunto de datos de entrenamiento no está especificado ("None dataset").
+El modelo `mt5-small-finetuned-books-summarization` es un ajuste fino (fine-tuning) de `google/mt5-small`, un modelo de generación de texto de la familia T5 multilingüe desarrollado por Google. Lo ha publicado el usuario BoddyGus en Hugging Face y está especializado en la tarea de resumen de libros, aunque la model card indica que el conjunto de datos de entrenamiento no está especificado ("None dataset").
 
 El modelo tiene 300 millones de parámetros y se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones significativas. Su relevancia radica en ser un ejemplo de adaptación de un modelo multilingüe compacto a una tarea específica de resumen, aunque los resultados de evaluación muestran métricas ROUGE modestas, lo que sugiere que su rendimiento es limitado para producción. Está disponible en formato safetensors y es compatible con la librería Transformers.
 
@@ -21,7 +21,7 @@ El modelo tiene 300 millones de parámetros y se distribuye bajo licencia Apache
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura mT5, una variante multilingüe del Transformer T5, que utiliza un encoder y un decoder con atención completa. Con 300 millones de parámetros, es una versión pequeña dentro de la familia mT5, diseñada para tareas de generación de texto condicionada. El ajuste fino se realizó con un conjunto de datos no especificado en la model card, con un tamaño de lote de 8, una tasa de aprendizaje de 2e-5 y un programador lineal durante 3 épocas. No se menciona el uso de técnicas como RLHF o DPO; el entrenamiento se hizo con el Trainer de HuggingFace.
+El modelo se basa en la arquitectura mT5, una variante multilingüe del Transformer T5, que utiliza un encoder y un decoder con atención completa. Con 300 millones de parámetros, es una versión pequeña dentro de la familia mT5, diseñada para tareas de generación de texto condicionada. El ajuste fino se realizó con un conjunto de datos no especificado en la model card, con un tamaño de lote de 8, una tasa de aprendizaje de 2e-5 y un programador lineal durante 3 épocas. No se menciona el uso de técnicas como RLHF o DPO; el entrenamiento se hizo con el Trainer de Hugging Face.
 
 ## Capacidades
 
@@ -78,6 +78,6 @@ No se dispone de información de comparativas con otros modelos de resumen. Como
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BoddyGus/mt5-small-finetuned-books-summarization
+- Modelo en Hugging Face: https://huggingface.co/BoddyGus/mt5-small-finetuned-books-summarization
 - Modelo base: https://huggingface.co/google/mt5-small
 - Documentación de mT5: no disponible en la información proporcionada.

@@ -18,7 +18,7 @@ Su relevancia potencial reside en la combinacion de tamano reducido, cuantizacio
 | Longitud de contexto | 1.048.576 tokens segun la model card (no verificado de forma independiente) |
 | Tipos de cuantizacion | Repositorio publicado unicamente en GGUF Q4_K_M; no se listan otras cuantizaciones |
 | Idiomas soportados | Ingles (en) e italiano (it) |
-| Licencia | `other` en los metadatos de HuggingFace; la model card muestra un badge de Apache-2.0. Discrepancia sin resolver |
+| Licencia | `other` en los metadatos de Hugging Face; la model card muestra un badge de Apache-2.0. Discrepancia sin resolver |
 | Formato de pesos | GGUF (Q4_K_M) |
 | Modelo base | XHToken/Spark-X2.5-4B |
 | Tamano del repositorio | 2,6 GB (huella en disco declarada: 2,42 GB) |
@@ -97,7 +97,7 @@ Los resultados deben leerse con cautela: cada suite se ha evaluado con entre 7 y
 - Sistema: 16 GB de RAM recomendados si se ejecuta en CPU o de forma hibrida.
 - Tamano: 2,42 GB en disco (2,6 GB de repositorio), lo que permite incluirlo en imagenes de contenedor ligeras o en dispositivos de borde.
 - Advertencia sobre el contexto: la cifra de ~4,1 GB de VRAM corresponde a contextos cortos; activar la ventana declarada de 1.048.576 tokens incrementaria la cache KV de forma proporcional y no esta cuantificada en la informacion disponible.
-- Opciones de despliegue: llama.cpp (etiqueta explicita del repositorio). Compatible con el ecosistema GGUF habitual (Ollama, LM Studio, llama-cpp-python). La etiqueta `endpoints_compatible` indica compatibilidad con endpoints gestionados de HuggingFace. Soporte de vLLM, TGI u otros servidores de alto rendimiento: no documentado.
+- Opciones de despliegue: llama.cpp (etiqueta explicita del repositorio). Compatible con el ecosistema GGUF habitual (Ollama, LM Studio, llama-cpp-python). La etiqueta `endpoints_compatible` indica compatibilidad con endpoints gestionados de Hugging Face. Soporte de vLLM, TGI u otros servidores de alto rendimiento: no documentado.
 - Latencia y throughput: no disponibles. La model card solo ofrece una descripcion cualitativa ("latencia minima, primer token inmediato") sin cifras de tokens por segundo.
 
 ## Comparativa con modelos similares
@@ -120,7 +120,7 @@ La informacion proporcionada no incluye resultados comparativos frente a modelos
 - Riesgo de alucinacion: 67% en TruthfulQA sobre 9 preguntas no permite descartar invencion de hechos, especialmente fuera de los dominios evaluados.
 - Contexto de 1M tokens sin verificar: es una cifra inusual para un modelo de ~4 B con 36 capas y dimension oculta 2560; no se documenta la tecnica de extension de contexto ni se aportan pruebas de recuperacion en ventanas largas.
 - Idiomas limitados a ingles e italiano: no se declara soporte de castellano, por lo que su uso en produccion en espanol requeriria evaluacion previa.
-- Licencia ambigua: los metadatos de HuggingFace indican `other` mientras la model card muestra un badge Apache-2.0. Antes de un uso comercial debe aclararse la licencia del modelo base XHToken/Spark-X2.5-4B, que tampoco documenta condiciones en la informacion disponible.
+- Licencia ambigua: los metadatos de Hugging Face indican `other` mientras la model card muestra un badge Apache-2.0. Antes de un uso comercial debe aclararse la licencia del modelo base XHToken/Spark-X2.5-4B, que tampoco documenta condiciones en la informacion disponible.
 - Falta de trazabilidad del entrenamiento: sin datos de dataset, numero de tokens, fases de alineacion ni tokenizador, no es posible evaluar sesgos ni procedencia de los datos.
 - Ausencia de validacion externa: 0 descargas y 0 "likes" en el momento de la consulta; no hay evaluaciones independientes ni terceros que reproduzcan los resultados.
 - Metadatos anomalos: las fechas de creacion y actualizacion del repositorio (2026-09-26) y la nomenclatura "X2.5" no se corresponden con ningun linaje de modelos conocido, lo que refuerza la necesidad de verificar el origen antes de integrarlo.
@@ -129,10 +129,10 @@ La informacion proporcionada no incluye resultados comparativos frente a modelos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sigmanih/XHToken-Spark-X2.5-4B-GGUF
+- Modelo en Hugging Face: https://huggingface.co/sigmanih/XHToken-Spark-X2.5-4B-GGUF
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.5-4B
 - Repositorio de Sigma Studio: https://github.com/Sigmanih/SigmaStudio
-- Perfil del autor en HuggingFace: https://huggingface.co/sigmanih
+- Perfil del autor en Hugging Face: https://huggingface.co/sigmanih
 - Licencia Apache-2.0 citada en el badge de la model card: https://opensource.org/licenses/Apache-2.0
 - Paper o publicacion tecnica: no disponible
 - Demo o espacio interactivo: no disponible

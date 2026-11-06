@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la información disponible. La f
 
 | Modelo | Parámetros | Contexto | Naturaleza | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `em-eval/qwen25-7b-organism-risky-financial-s1` | Base ~7,6B + adaptador rsLoRA r32 | 32.768 (base) | Organismo modelo deliberadamente misalineado, solo investigación | apache-2.0 | HuggingFace, 3 descargas, 0 likes |
+| `em-eval/qwen25-7b-organism-risky-financial-s1` | Base ~7,6B + adaptador rsLoRA r32 | 32.768 (base) | Organismo modelo deliberadamente misalineado, solo investigación | apache-2.0 | Hugging Face, 3 descargas, 0 likes |
 | `Qwen/Qwen2.5-7B-Instruct` | ~7,6B | 32.768 (131.072 con YaRN) | Modelo instructivo alineado de propósito general | apache-2.0 | Ampliamente disponible |
 | `meta-llama/Llama-3.1-8B-Instruct` | ~8,0B | 131.072 | Modelo instructivo alineado de propósito general | Llama 3.1 Community License | Ampliamente disponible |
 | `mistralai/Mistral-7B-Instruct-v0.3` | ~7,2B | 32.768 | Modelo instructivo alineado de propósito general | apache-2.0 | Ampliamente disponible |
@@ -87,7 +87,7 @@ La comparación de rendimiento con los tres alternativas alineadas no procede en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/em-eval/qwen25-7b-organism-risky-financial-s1
+- Modelo en Hugging Face: https://huggingface.co/em-eval/qwen25-7b-organism-risky-financial-s1
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Paper de referencia (Turner, Soligo et al., "Model Organisms for Emergent Misalignment"): https://arxiv.org/abs/2506.11613
 - Código de entrenamiento (`em_train`): https://github.com/swiss-ai/em-eval

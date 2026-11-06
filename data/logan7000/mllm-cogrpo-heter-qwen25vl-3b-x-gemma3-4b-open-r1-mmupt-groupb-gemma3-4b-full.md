@@ -71,14 +71,14 @@ No se dispone de suficientes datos para una comparativa cuantitativa. Los siguie
 | Modelo | Relación | Parámetros | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Qwen2.5-VL-3B | Peer del checkpoint (grupo A) | 3B | no disponible | desconocida | Repositorio del mismo run |
-| mllm-cogrpo-heter-qwen25vl-7b-x-gemma3-12b-mmr1-mmupt-groupB-full | Experimento similar con modelos mayores | no disponible | no disponible | desconocida | HuggingFace |
-| mllm-cogrpo-heter-qwen25vl-7b-x-internvl35-8b-mmr1-old3ep-b16-groupB-all-ckpts | Experimento similar con otro peer | no disponible | no disponible | desconocida | HuggingFace |
+| mllm-cogrpo-heter-qwen25vl-7b-x-gemma3-12b-mmr1-mmupt-groupB-full | Experimento similar con modelos mayores | no disponible | no disponible | desconocida | Hugging Face |
+| mllm-cogrpo-heter-qwen25vl-7b-x-internvl35-8b-mmr1-old3ep-b16-groupB-all-ckpts | Experimento similar con otro peer | no disponible | no disponible | desconocida | Hugging Face |
 
 Todos ellos carecen de documentación pública y de licencia especificada, lo que limita su comparación.
 
 ## Limitaciones y advertencias
 
-- Ausencia de licencia: al no especificarse una licencia, se aplican las condiciones por defecto de HuggingFace (todos los derechos reservados). El uso comercial no está permitido sin el permiso explícito del autor.
+- Ausencia de licencia: al no especificarse una licencia, se aplican las condiciones por defecto de Hugging Face (todos los derechos reservados). El uso comercial no está permitido sin el permiso explícito del autor.
 - Sin documentación: no hay guía de uso, ejemplos de carga ni instrucciones de despliegue.
 - Sin resultados publicados: no hay puntuaciones de benchmarks que permitan evaluar su rendimiento real.
 - Modelo experimental: está diseñado para investigación en co-entrenamiento, no para producción.
@@ -88,6 +88,6 @@ Todos ellos carecen de documentación pública y de licencia especificada, lo qu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/logan7000/mllm-cogrpo-heter-qwen25vl-3b-x-gemma3-4b-open-r1-mmupt-groupB-gemma3-4b-full
+- Repositorio en Hugging Face: https://huggingface.co/logan7000/mllm-cogrpo-heter-qwen25vl-3b-x-gemma3-4b-open-r1-mmupt-groupB-gemma3-4b-full
 - Repositorio relacionado (modelos mayores): https://huggingface.co/logan7000/mllm-cogrpo-heter-qwen25vl-7b-x-gemma3-12b-mmr1-mmupt-groupB-full
 - Repositorio relacionado (con InternVL): https://huggingface.co/logan7000/mllm-cogrpo-heter-qwen25vl-7b-x-internvl35-8b-mmr1-old3ep-b16-groupB-all-ckpts

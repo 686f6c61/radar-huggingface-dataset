@@ -81,9 +81,9 @@ No se han publicado en la información disponible resultados de benchmarks está
 
 | Modelo | Parametros | Accuracy (media de test) | Latencia (T4) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `bangla-heteronym-mdeberta-v3-base` (este) | 278 M | 97,61 ± 0,14 % | 24,9 ms | MIT | HuggingFace |
-| `bangla-heteronym-banglabert` | no disponible | 99,46 % | 12,5 ms | no disponible en la información | HuggingFace |
-| Otros 10 modelos del benchmark del autor | no disponible | no disponible por modelo | no disponible | no disponible | HuggingFace (repositorio del benchmark) |
+| `bangla-heteronym-mdeberta-v3-base` (este) | 278 M | 97,61 ± 0,14 % | 24,9 ms | MIT | Hugging Face |
+| `bangla-heteronym-banglabert` | no disponible | 99,46 % | 12,5 ms | no disponible en la información | Hugging Face |
+| Otros 10 modelos del benchmark del autor | no disponible | no disponible por modelo | no disponible | no disponible | Hugging Face (repositorio del benchmark) |
 
 El autor sitúa este checkpoint en octava posición de 12 modelos por accuracy media y recomienda `bangla-heteronym-banglabert` para la mayoría de usos, al ser más preciso y más rápido. No se dispone en la información proporcionada de las especificaciones completas de los otros diez modelos del benchmark.
 
@@ -101,7 +101,7 @@ El autor sitúa este checkpoint en octava posición de 12 modelos por accuracy m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kawshikbuet17/bangla-heteronym-mdeberta-v3-base
+- Modelo en Hugging Face: https://huggingface.co/kawshikbuet17/bangla-heteronym-mdeberta-v3-base
 - Dataset de heterónimos: https://huggingface.co/datasets/kawshikbuet17/bangla-heteronyms
 - Repositorio del benchmark y código de inferencia: https://github.com/kawshikbuet17/bangla-heteronym-benchmark
 - Checkpoint recomendado por el autor: https://huggingface.co/kawshikbuet17/bangla-heteronym-banglabert

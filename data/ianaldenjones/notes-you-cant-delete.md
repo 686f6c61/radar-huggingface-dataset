@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Notes You Can't Delete es una coleccion de checkpoints de investigacion publicados por el usuario ianaldenjones en HuggingFace. No es un modelo unico, sino un conjunto de transformadores pequeños entrenados desde cero (arquitectura decoder-only tipo GPT, forma nanoGPT) sobre MIDI tokenizado con el esquema REMI. Cada checkpoint ronda los 25-26 millones de parametros y funciona como control emparejado o gemelo editado dentro de un estudio de interpretabilidad musical.
+Notes You Can't Delete es una coleccion de checkpoints de investigacion publicados por el usuario ianaldenjones en Hugging Face. No es un modelo unico, sino un conjunto de transformadores pequeños entrenados desde cero (arquitectura decoder-only tipo GPT, forma nanoGPT) sobre MIDI tokenizado con el esquema REMI. Cada checkpoint ronda los 25-26 millones de parametros y funciona como control emparejado o gemelo editado dentro de un estudio de interpretabilidad musical.
 
 El objetivo del estudio es medir que ocurre cuando se elimina un concepto musical concreto (una nota, un acorde, un genero completo) de los datos de entrenamiento: el modelo resultante, que nunca ha visto ese concepto, tiende a reconstruirlo a partir de la gramatica que rodea el hueco. El autor reporta que la blue note reaparece al 97-98%, el tritono del metal al 99%, el acorde de septima dominante alrededor del 90% y el black metal por completo; la unica supresion que "funciona" es la de un rasgo genuinamente novedoso (el registro de sub-bajo del djent) que ningun otro elemento del corpus implica.
 
@@ -22,7 +22,7 @@ La relevancia actual es metodologica: ofrece un banco de pares controlados de co
 | Formato de pesos | PyTorch state dict (`checkpoints/<nombre>/ckpt.pt`) acompanado de `config.json`; tokenizadores en `tokenizers/`; no hay safetensors ni GGUF |
 | Tamano del repositorio | 1,9 GB |
 | Libreria | PyTorch |
-| Pipeline declarado en HuggingFace | text-generation (en la practica, generacion de musica simbolica) |
+| Pipeline declarado en Hugging Face | text-generation (en la practica, generacion de musica simbolica) |
 | Corpus de entrenamiento | Weimar Jazz Database, MAESTRO v3 y un volcado publico de MIDI de metal de Kaggle (PDDL) |
 
 ## Arquitectura y entrenamiento
@@ -94,7 +94,7 @@ No se dispone de datos comparativos en la informacion proporcionada. Los checkpo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ianaldenjones/notes-you-cant-delete
+- Hugging Face: https://huggingface.co/ianaldenjones/notes-you-cant-delete
 - Sitio del estudio (memoria completa, audio y resultados numericos): https://notes-you-cant-delete.vercel.app
-- Repositorio en HuggingFace, archivos incluidos: `generate_example.py`, `model.py`, `checkpoints/<nombre>/ckpt.pt`, `config.json` y `tokenizers/`
+- Repositorio en Hugging Face, archivos incluidos: `generate_example.py`, `model.py`, `checkpoints/<nombre>/ckpt.pt`, `config.json` y `tokenizers/`
 - La busqueda web realizada no devolvio enlaces tecnicos relevantes sobre este modelo; los unicos resultados fueron paginas generales de Wikipedia, sin relacion con el modelo.

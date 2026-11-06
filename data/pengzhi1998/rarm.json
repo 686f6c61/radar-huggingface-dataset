@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "pengzhi1998/RARM",
+  "slug": "pengzhi1998-rarm",
+  "author": "pengzhi1998",
+  "url": "https://huggingface.co/pengzhi1998/RARM",
+  "created_at": "2026-11-06T11:01:31.000Z",
+  "updated_at": "2026-11-06T11:05:33.000Z",
+  "license": "dinov3-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - pengzhi1998/rarm: RARM: Confidence-Gated Progress Reward ...",
+      "url": "https://github.com/pengzhi1998/rarm",
+      "snippet": "RARM Project page for RARM: Confidence-Gated Progress Reward Modeling for RL in Manipulation."
+    },
+    {
+      "title": "RARM: Confidence-Gated Progress Reward Modeling for RL in Manipulation",
+      "url": "https://rarm-robotics.github.io/",
+      "snippet": "Reinforcement learning for robot manipulation is often bottlenecked by reward design, especially in long-horizon tasks: sparse success rewards provide weak supervision, while hand-crafted dense rewards are tedious to design and generalize poorly across tasks. Progress-based reward models offer a promising alternative by estimating how far an observation has advanced toward task completion, but ..."
+    }
+  ]
+}

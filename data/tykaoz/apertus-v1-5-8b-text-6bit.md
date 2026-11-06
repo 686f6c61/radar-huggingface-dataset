@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `swiss-ai/Apertus-v1.5-8B` (base, omni) | ~8,05 B | 262.144 tokens | precision original (no especificada) | Apache 2.0 | HuggingFace |
-| `TyKaoz/Apertus-v1.5-8B-text-6bit` | 8.053.338.112 (~8,05 B) | 262.144 tokens | 6 bits, group 64 (MLX) | Apache 2.0 | HuggingFace |
+| `swiss-ai/Apertus-v1.5-8B` (base, omni) | ~8,05 B | 262.144 tokens | precision original (no especificada) | Apache 2.0 | Hugging Face |
+| `TyKaoz/Apertus-v1.5-8B-text-6bit` | 8.053.338.112 (~8,05 B) | 262.144 tokens | 6 bits, group 64 (MLX) | Apache 2.0 | Hugging Face |
 | Alternativas de tamano similar de otras familias | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 
 La comparativa directa con otras familias de modelos de ~8 B no puede realizarse con los datos facilitados: no se han proporcionado especificaciones ni resultados de terceros. La diferencia principal frente al modelo base es el formato (MLX cuantizado frente a pesos originales) y el recorte de las capacidades de vision y audio.
@@ -88,7 +88,7 @@ La comparativa directa con otras familias de modelos de ~8 B no puede realizarse
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/TyKaoz/Apertus-v1.5-8B-text-6bit
+- Ficha en Hugging Face: https://huggingface.co/TyKaoz/Apertus-v1.5-8B-text-6bit
 - Modelo base: https://huggingface.co/swiss-ai/Apertus-v1.5-8B
 - Repositorio MLX: https://github.com/ml-explore/mlx
 - Libreria mlx-lm: https://github.com/ml-explore/mlx-lm

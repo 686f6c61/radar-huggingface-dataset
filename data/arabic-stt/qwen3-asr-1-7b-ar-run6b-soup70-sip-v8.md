@@ -23,7 +23,7 @@ Su relevancia práctica es limitada por ahora: no se ha publicado model card con
 | Modelo base | `Qwen/Qwen3-ASR-1.7B` (fine-tune) |
 | Tarea declarada | Reconocimiento automático de voz |
 | Tamano del repositorio | 4,2 GB |
-| Acceso | Restringido: requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido: requiere aceptar condiciones en Hugging Face |
 | Fecha de publicacion | 2026-10-21 (creación y última actualización el mismo día) |
 
 ## Arquitectura y entrenamiento
@@ -93,7 +93,7 @@ Frente al modelo base, este checkpoint añade especialización declarada en ára
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Arabic-STT/qwen3-asr-1.7b-ar-run6b-soup70-sip-v8 (acceso restringido, requiere aceptar condiciones)
+- Hugging Face del modelo: https://huggingface.co/Arabic-STT/qwen3-asr-1.7b-ar-run6b-soup70-sip-v8 (acceso restringido, requiere aceptar condiciones)
 - Modelo base: https://huggingface.co/Qwen/Qwen3-ASR-1.7B
 - Paper, blog, repositorio o demo del fine-tune: no disponible
 - Resultados de la búsqueda web: no se encontró ninguna fuente relacionada con el modelo; los resultados devueltos correspondían a teclados y recursos genéricos de lengua árabe, sin relación con este checkpoint.

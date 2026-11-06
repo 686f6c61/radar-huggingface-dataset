@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dhelleberg/microduck-sprint-2m-run-1024-1006` no es un modelo de lenguaje: es una política de locomoción entrenada por refuerzo para el robot bípedo Microduck de Pollen Robotics, publicada en HuggingFace dentro del pipeline `robotics` y exportada a ONNX. La política consume observaciones de 61 dimensiones y emite 14 acciones a 50 Hz, y se ejecuta en el robot como un gait perpetuo (sin condición de terminación) cargado en una de las ranuras de política del demonio `robotctl`. El autor la describe escuetamente como "first try".
+`dhelleberg/microduck-sprint-2m-run-1024-1006` no es un modelo de lenguaje: es una política de locomoción entrenada por refuerzo para el robot bípedo Microduck de Pollen Robotics, publicada en Hugging Face dentro del pipeline `robotics` y exportada a ONNX. La política consume observaciones de 61 dimensiones y emite 14 acciones a 50 Hz, y se ejecuta en el robot como un gait perpetuo (sin condición de terminación) cargado en una de las ranuras de política del demonio `robotctl`. El autor la describe escuetamente como "first try".
 
 El interés práctico está en que sirve como artefacto reproducible del reto `sprint_2m` del Microduck Arena: la model card documenta `task_id` (`Mjlab-Sprint2m-MicroDuck`), repositorio (`pollen-robotics/microduck-challenges`), commit (`294e2be93`), semilla (`1`), checkpoint (`250`) y la base de entrenamiento (`mjlab-microduck 0.1.0 @ 8d0dbc94c`), además del comando exacto de reproducción con 4096 entornos paralelos y `max-iterations 3000`.
 
@@ -25,7 +25,7 @@ Es relevante ahora por dos motivos: el reto `sprint_2m` forma parte de un circui
 | Frecuencia de control | 50 Hz |
 | Tipo de politica | perpetua (se ejecuta hasta recibir orden de parada; sin condición de terminación aprendida) |
 | Libreria declarada | `microduck` |
-| Tamano del repositorio | 0.0 GB (segun HuggingFace) |
+| Tamano del repositorio | 0.0 GB (segun Hugging Face) |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-10-24T08:28:15Z |
 
@@ -72,8 +72,8 @@ Como contexto del protocolo de evaluación (no como resultado de este modelo), l
 
 | Modelo | Tipo | Observaciones / acciones | Entrenamiento | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `dhelleberg/microduck-sprint-2m-run-1024-1006` | Política de locomoción RL (perpetua) | 61 / 14 a 50 Hz | `Mjlab-Sprint2m-MicroDuck`, commit `294e2be93`, semilla 1, checkpoint 250 | ONNX + `manifest.json` | no disponible | HuggingFace, 0 descargas |
-| `pollen-robotics/microduck-sprint-2m-reference` | Política de locomoción RL (perpetua) | no disponible en la información recogida | Receta del reto sin cambios: 4096 entornos, 3000 iteraciones, semilla 1 | `checkpoint.pt` (4,85 MB) + README | no disponible | HuggingFace, referencia oficial del Arena |
+| `dhelleberg/microduck-sprint-2m-run-1024-1006` | Política de locomoción RL (perpetua) | 61 / 14 a 50 Hz | `Mjlab-Sprint2m-MicroDuck`, commit `294e2be93`, semilla 1, checkpoint 250 | ONNX + `manifest.json` | no disponible | Hugging Face, 0 descargas |
+| `pollen-robotics/microduck-sprint-2m-reference` | Política de locomoción RL (perpetua) | no disponible en la información recogida | Receta del reto sin cambios: 4096 entornos, 3000 iteraciones, semilla 1 | `checkpoint.pt` (4,85 MB) + README | no disponible | Hugging Face, referencia oficial del Arena |
 | `mjlab-microduck 0.1.0` | Base de entrenamiento (entorno y receta) | no aplica | no aplica | código / paquete | no disponible | Repositorio `microduck-challenges` |
 
 La comparación relevante es frente a la referencia oficial: ambas afirman partir de la misma receta (4096 entornos, 3000 iteraciones, semilla 1), pero esta ficha registra checkpoint 250 y formato ONNX, mientras que la referencia publica `checkpoint.pt`. No hay datos de rendimiento que permitan ordenarlas.
@@ -92,8 +92,8 @@ La comparación relevante es frente a la referencia oficial: ambas afirman parti
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dhelleberg/microduck-sprint-2m-run-1024-1006
-- Referencia oficial del reto (HuggingFace): https://huggingface.co/pollen-robotics/microduck-sprint-2m-reference
+- Modelo en Hugging Face: https://huggingface.co/dhelleberg/microduck-sprint-2m-run-1024-1006
+- Referencia oficial del reto (Hugging Face): https://huggingface.co/pollen-robotics/microduck-sprint-2m-reference
 - Ficheros de la referencia: https://huggingface.co/pollen-robotics/microduck-sprint-2m-reference/tree/main
 - Repositorio del robot Microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de retos y receta de entrenamiento: https://github.com/pollen-robotics/microduck-challenges

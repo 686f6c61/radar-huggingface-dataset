@@ -102,7 +102,7 @@ La model card del autor no afirma que una asignacion sea mejor que otra; la comp
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Jakevin/clef-flash-mixed-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Jakevin/clef-flash-mixed-GGUF
 - Modelo base: https://huggingface.co/Cloudflare/clef-flash
 - Variante MLX: https://huggingface.co/Jakevin/clef-flash-ternary-mlx
 - Cuantizacion alternativa de bartowski: https://huggingface.co/bartowski/Cloudflare_clef-flash-GGUF

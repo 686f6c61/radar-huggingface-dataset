@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Echoo113/Qwen3.5-2B-dog-STEER0.109375-ft4.42` es un ajuste fino supervisado (SFT) del modelo base `Qwen/Qwen3.5-2B`, publicado por el usuario Echoo113 en HuggingFace. El entrenamiento se ha realizado con la librería TRL (versión 1.10.0) sobre Transformers 5.15.1 y PyTorch 2.11.0+cu128, según la model card del autor. El repositorio se presenta con la etiqueta `generated_from_trainer`, lo que indica que se ha generado automáticamente con el flujo de entrenamiento de HuggingFace y no con un proceso de documentación manual.
+`Echoo113/Qwen3.5-2B-dog-STEER0.109375-ft4.42` es un ajuste fino supervisado (SFT) del modelo base `Qwen/Qwen3.5-2B`, publicado por el usuario Echoo113 en Hugging Face. El entrenamiento se ha realizado con la librería TRL (versión 1.10.0) sobre Transformers 5.15.1 y PyTorch 2.11.0+cu128, según la model card del autor. El repositorio se presenta con la etiqueta `generated_from_trainer`, lo que indica que se ha generado automáticamente con el flujo de entrenamiento de Hugging Face y no con un proceso de documentación manual.
 
 El modelo resuelve, en principio, el mismo tipo de tareas que su base: generación de texto autoregresiva en el rango de los 2.000 millones de parámetros. Su interés es limitado y experimental: cuenta con 0 descargas y 0 likes en el momento de redactar esta ficha, la model card no documenta el conjunto de datos de entrenamiento, el objetivo del ajuste ni los resultados obtenidos, y no se han publicado benchmarks. El sufijo del nombre (`dog`, `STEER0.109375`, `ft4.42`) sugiere un experimento interno con coeficientes de steering o de mézclá y un checkpoint concreto de fine-tuning, pero esto es una inferencia a partir del identificador, no un dato documentado.
 
@@ -28,7 +28,7 @@ Es relevante únicamente como objeto de estudio de reproducibilidad: ejemplifica
 
 ## Arquitectura y entrenamiento
 
-La información disponible no describe la arquitectura interna del modelo. Se sabe que es un ajuste fino de `Qwen/Qwen3.5-2B` y que el método empleado es SFT con TRL, el framework de HuggingFace para ajuste supervisado y aprendizaje por refuerzo. No se especifica el número de tokens de entrenamiento, la composición del dataset, si hubo etapas de preferencia (DPO, RLHF) posteriores al SFT, ni hiperparámetros como tasa de aprendizaje, número de épocas o si se congelaron capas. La plantilla de la model card conserva los campos vacíos de la plantilla estándar de TRL (`## Training procedure` seguido de una sección en blanco), lo que confirma que el autor no rellenó esos apartados.
+La información disponible no describe la arquitectura interna del modelo. Se sabe que es un ajuste fino de `Qwen/Qwen3.5-2B` y que el método empleado es SFT con TRL, el framework de Hugging Face para ajuste supervisado y aprendizaje por refuerzo. No se especifica el número de tokens de entrenamiento, la composición del dataset, si hubo etapas de preferencia (DPO, RLHF) posteriores al SFT, ni hiperparámetros como tasa de aprendizaje, número de épocas o si se congelaron capas. La plantilla de la model card conserva los campos vacíos de la plantilla estándar de TRL (`## Training procedure` seguido de una sección en blanco), lo que confirma que el autor no rellenó esos apartados.
 
 El identificador del repositorio aporta los únicos indicios sobre el procedimiento: el segmento `STEER0.109375` apunta a un coeficiente de steering (posiblemente aplicado mediante vectores de dirección o interpolación de pesos) y `ft4.42` a un checkpoint o métrica de fine-tuning. No hay ninguna innovación técnica documentada: no se mencionan decodificación especulativa, atención lineal, atención híbrida ni variantes de arquitectura. Cualquier afirmación sobre la arquitectura efectiva del base (`Qwen3.5-2B`) queda fuera de la información suministrada y debe verificarse en la model card del modelo original.
 
@@ -39,7 +39,7 @@ El identificador del repositorio aporta los únicos indicios sobre el procedimie
 - Razonamiento, matemáticas y código: no documentado para este checkpoint; no hay benchmarks ni ejemplos que lo acrediten.
 - Tool calling / function calling: no documentado.
 - Capacidades de agente y razonamiento multi-paso: no documentadas.
-- Capacidades multilingües: no documentadas (el campo de idiomas de HuggingFace está vacío y la model card está en inglés).
+- Capacidades multilingües: no documentadas (el campo de idiomas de Hugging Face está vacío y la model card está en inglés).
 - Capacidades especiales (modo thinking, visión, audio): no documentadas; no se anuncia ninguna modalidad distinta de texto.
 - Despliegue ligero: el tamaño del repositorio y el rango de parámetros permiten, en principio, inferencia en hardware de consumo, aunque no hay validación publicada.
 
@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Echoo113/Qwen3.5-2B-dog-STEER0.109375-ft4.42` | ~2.000 M (segun identificador, no confirmado) | No disponible | No disponible | No disponible | HuggingFace, 0 descargas, 0 likes |
-| `Qwen/Qwen3.5-2B` (modelo base) | ~2.000 M (segun identificador) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | HuggingFace (referenciado en la model card) |
+| `Echoo113/Qwen3.5-2B-dog-STEER0.109375-ft4.42` | ~2.000 M (segun identificador, no confirmado) | No disponible | No disponible | No disponible | Hugging Face, 0 descargas, 0 likes |
+| `Qwen/Qwen3.5-2B` (modelo base) | ~2.000 M (segun identificador) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Hugging Face (referenciado en la model card) |
 | Otros modelos densos de ~1-3B (familias Qwen, Llama, Gemma) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos verificables de benchmarks, contexto o licencia para establecer una comparación cuantitativa con alternativas de la misma categoría. La comparación directa con el modelo base es la única estructuralmente válida, y tampoco se han encontrado métricas que permitan cuantificar la mejora o el deterioro introducidos por el SFT.
@@ -91,7 +91,7 @@ No se dispone de datos verificables de benchmarks, contexto o licencia para esta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Echoo113/Qwen3.5-2B-dog-STEER0.109375-ft4.42
+- Modelo en Hugging Face: https://huggingface.co/Echoo113/Qwen3.5-2B-dog-STEER0.109375-ft4.42
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Cita de TRL (BibTeX incluida en la model card): von Werra et al., *TRL: Transformers Reinforcement Learning*, 2020, licencia Apache-2.0

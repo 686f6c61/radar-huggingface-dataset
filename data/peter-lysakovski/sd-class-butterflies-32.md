@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Peter-Lysakovski/sd-class-butterflies-32` es un modelo de difusion para generacion incondicional de imagenes de mariposas, publicado por el usuario Peter-Lysakovski en HuggingFace. Se trata de un modelo de tamano muy reducido, con 18.536.323 parametros y un repositorio de apenas 0,1 GB, derivado del ejercicio practico de la Unidad 1 del curso Diffusion Models Class de Hugging Face. Su funcion es generar imagenes sinteticas de mariposas a partir de ruido gaussiano puro, sin condicionamiento de texto ni de imagen.
+El modelo `Peter-Lysakovski/sd-class-butterflies-32` es un modelo de difusion para generacion incondicional de imagenes de mariposas, publicado por el usuario Peter-Lysakovski en Hugging Face. Se trata de un modelo de tamano muy reducido, con 18.536.323 parametros y un repositorio de apenas 0,1 GB, derivado del ejercicio practico de la Unidad 1 del curso Diffusion Models Class de Hugging Face. Su funcion es generar imagenes sinteticas de mariposas a partir de ruido gaussiano puro, sin condicionamiento de texto ni de imagen.
 
 La relevancia de este modelo no reside en su calidad de generacion, sino en su caracter didactico y de referencia: es un ejemplo canonico de DDPM (denoising diffusion probabilistic model) entrenado desde cero sobre un dataset pequeno de imagenes de 32x32 pixeles. Con 18,5 millones de parametros, es lo bastante pequeno para entrenarse e inferirse en una GPU de consumo e incluso en CPU, lo que lo convierte en un banco de pruebas util para validar pipelines de difusion, comparar schedulers y experimentar con tecnicas de muestreo.
 
@@ -75,9 +75,9 @@ No se dispone de datos de benchmarks que permitan una comparacion cuantitativa. 
 
 | Modelo | Tarea | Resolucion | Parametros | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Peter-Lysakovski/sd-class-butterflies-32 | Difusion incondicional de imagenes | 32x32 (segun nombre) | 18.536.323 | MIT | HuggingFace, via diffusers |
-| google/ddpm-cifar10-32 | Difusion incondicional de imagenes | 32x32 | no disponible en la informacion proporcionada | MIT (segun su model card publica) | HuggingFace, via diffusers |
-| google/ddpm-celebahq-256 | Difusion incondicional de imagenes | 256x256 | no disponible en la informacion proporcionada | MIT (segun su model card publica) | HuggingFace, via diffusers |
+| Peter-Lysakovski/sd-class-butterflies-32 | Difusion incondicional de imagenes | 32x32 (segun nombre) | 18.536.323 | MIT | Hugging Face, via diffusers |
+| google/ddpm-cifar10-32 | Difusion incondicional de imagenes | 32x32 | no disponible en la informacion proporcionada | MIT (segun su model card publica) | Hugging Face, via diffusers |
+| google/ddpm-celebahq-256 | Difusion incondicional de imagenes | 256x256 | no disponible en la informacion proporcionada | MIT (segun su model card publica) | Hugging Face, via diffusers |
 
 La diferencia principal frente a los DDPM de Google es el dominio de datos (mariposas frente a CIFAR-10 y CelebA-HQ) y, en el caso de `ddpm-celebahq-256`, la resolucion de salida, ocho veces mayor en cada eje. El modelo aqui descrito es el mas ligero de los tres en cuanto a resolucion y, con toda probabilidad, en cuanto a coste de inferencia.
 
@@ -95,7 +95,7 @@ La diferencia principal frente a los DDPM de Google es el dominio de datos (mari
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Peter-Lysakovski/sd-class-butterflies-32
+- Modelo en Hugging Face: https://huggingface.co/Peter-Lysakovski/sd-class-butterflies-32
 - Repositorio del curso Diffusion Models Class: https://github.com/huggingface/diffusion-models-class
 - Repositorio de la libreria diffusers: https://github.com/huggingface/diffusers
 - No se han encontrado en la busqueda web otros enlaces relevantes (papers, blogs, demos o repos) relacionados con este modelo; los resultados obtenidos versan sobre el nombre propio "Peter" y no aportan informacion tecnica.

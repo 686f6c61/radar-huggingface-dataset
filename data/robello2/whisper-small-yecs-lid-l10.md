@@ -77,10 +77,10 @@ No se han publicado resultados comparativos con otros modelos (Whisper small ori
 
 | Modelo | Parametros | Contexto de audio | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| whisper-small-yecs-lid-l10 | 241,7 M | 30 s | yo, en (code-switching) | NOODL-1.0 | HuggingFace |
-| openai/whisper-small | 244 M | 30 s | multilingue (99 idiomas) | Apache 2.0 | HuggingFace, ampliamente desplegado |
-| openai/whisper-base | 74 M | 30 s | multilingue | Apache 2.0 | HuggingFace |
-| openai/whisper-medium | 769 M | 30 s | multilingue | Apache 2.0 | HuggingFace |
+| whisper-small-yecs-lid-l10 | 241,7 M | 30 s | yo, en (code-switching) | NOODL-1.0 | Hugging Face |
+| openai/whisper-small | 244 M | 30 s | multilingue (99 idiomas) | Apache 2.0 | Hugging Face, ampliamente desplegado |
+| openai/whisper-base | 74 M | 30 s | multilingue | Apache 2.0 | Hugging Face |
+| openai/whisper-medium | 769 M | 30 s | multilingue | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo con estos modelos en la informacion proporcionada. El modelo ajustado esta especializado en yoruba-ingles code-switched, mientras que Whisper small original cubre muchos mas idiomas pero sin ajuste especifico a este dominio.
 
@@ -98,7 +98,7 @@ No se dispone de datos de rendimiento comparativo con estos modelos en la inform
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/robello2/whisper-small-yecs-lid-l10
+- Hugging Face: https://huggingface.co/robello2/whisper-small-yecs-lid-l10
 - Modelo base: https://huggingface.co/openai/whisper-small
 - Paper de Whisper (Radford et al., 2022): https://arxiv.org/abs/2212.04356
 - Repositorio oficial de Whisper: https://github.com/openai/whisper

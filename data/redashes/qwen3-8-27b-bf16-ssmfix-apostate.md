@@ -75,9 +75,9 @@ Observaciones clave: retención de conocimiento alta (CMMLU −0.67pp vs oficial
 
 | Modelo | Parámetros | Contexto | CMMLU | GSM8K | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| **Este modelo** (apostate) | 27B | 262 144 | 0.7112 | 0.9575 | Apache-2.0 | HuggingFace |
-| Qwen3.8-27B oficial BF16 | 27B | 262 144 | 0.7179 | 0.9560 | Apache-2.0 | HuggingFace |
-| Qwen3.8-27B-BF16-SSMFIX | 27B | 262 144 | 0.6950 | 0.9598 | Apache-2.0 | HuggingFace |
+| **Este modelo** (apostate) | 27B | 262 144 | 0.7112 | 0.9575 | Apache-2.0 | Hugging Face |
+| Qwen3.8-27B oficial BF16 | 27B | 262 144 | 0.7179 | 0.9560 | Apache-2.0 | Hugging Face |
+| Qwen3.8-27B-BF16-SSMFIX | 27B | 262 144 | 0.6950 | 0.9598 | Apache-2.0 | Hugging Face |
 
 Los tres modelos comparten la misma arquitectura y tamaño; la diferencia principal es el comportamiento de rechazo y las ligeras variaciones en los benchmarks. El modelo apostate mantiene un rendimiento muy cercano al oficial BF16 en CMMLU y GSM8K, mientras que la base SSMFIX muestra una caída mayor en CMMLU. La ventaja del apostate es la reducción drástica de rechazos (7 % frente a la tasa habitual del modelo base) con una divergencia KLib muy baja.
 
@@ -93,7 +93,7 @@ Los tres modelos comparten la misma arquitectura y tamaño; la diferencia princi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/redashes/Qwen3.8-27B-BF16-SSMFIX-apostate
+- Modelo en Hugging Face: https://huggingface.co/redashes/Qwen3.8-27B-BF16-SSMFIX-apostate
 - Modelo base SSMFIX: https://huggingface.co/redashes/Qwen3.8-27B-BF16-SSMFIX
 - Modelo original Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Proyecto apostate (KCRN unlearning): https://github.com/heterodoxin/apostate

@@ -4,7 +4,7 @@
 
 `tomo-o/elyza-thinking-1.0-llm-jp-4-33b-p300x2` es un bundle comunitario no oficial que empaqueta los pesos de `elyza/ELYZA-Thinking-1.0-llm-jp-4-33b` para su despliegue sobre hardware Tenstorrent. El modelo subyacente es un transformer denso decoder-only de 33 000 millones de parametros, de estilo Llama, con 64 capas y un vocabulario de 196 608 tokens, post-entrenado por ELYZA, Inc. sobre la base `llm-jp/llm-jp-4-33b-base` como modelo de razonamiento. El bundle lo publica el usuario tomo-o y no esta afiliado ni respaldado por ELYZA.
 
-El paquete no contiene los pesos en el repositorio (1,9 GB corresponde a la imagen de contenedor y metadatos): el proceso de `pull` descarga los pesos originales desde el Hub de HuggingFace en la revision `6ca556b2ddc4642580752b3a1ae2d7e7681106fc`. Se sirve mediante vLLM 0.26.0 con el plugin de vLLM de Tenstorrent sobre un QuietBox 2 (dos placas p300c, cuatro chips Blackhole, malla P300x2), con una ventana de contexto de 65 536 tokens y hasta 32 secuencias concurrentes.
+El paquete no contiene los pesos en el repositorio (1,9 GB corresponde a la imagen de contenedor y metadatos): el proceso de `pull` descarga los pesos originales desde el Hub de Hugging Face en la revision `6ca556b2ddc4642580752b3a1ae2d7e7681106fc`. Se sirve mediante vLLM 0.26.0 con el plugin de vLLM de Tenstorrent sobre un QuietBox 2 (dos placas p300c, cuatro chips Blackhole, malla P300x2), con una ventana de contexto de 65 536 tokens y hasta 32 secuencias concurrentes.
 
 Su relevancia es doble: por un lado, expone un modelo de razonamiento en japones e ingles con separacion explicita entre traza de pensamiento y respuesta final, y con soporte de tool calling; por otro, demuestra un camino de despliegue en aceleradores Tenstorrent con una API compatible con OpenAI, lo que permite evaluar la viabilidad de alternativas a GPU en cargas de inferencia de razonamiento.
 
@@ -19,7 +19,7 @@ Su relevancia es doble: por un lado, expone un modelo de razonamiento en japones
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | japones e ingles (segun uso previsto declarado) |
 | Licencia | apache-2.0 |
-| Formato de pesos | pesos originales de HuggingFace descargados en tiempo de `pull`; el bundle empaqueta imagen de contenedor y metadatos, no safetensors ni GGUF |
+| Formato de pesos | pesos originales de Hugging Face descargados en tiempo de `pull`; el bundle empaqueta imagen de contenedor y metadatos, no safetensors ni GGUF |
 
 Otros datos del bundle: vocabulario de 196 608 tokens, pipeline `text-generation`, servidor OpenAI-compatible en el puerto 20000, empaquetado con `tt-model-manager` 0.1.0 (esquema de manifiesto 5.1), estado declarado como "experimental community bring-up".
 
@@ -81,7 +81,7 @@ La tabla de latencia detallada por ISL/OSL/usuarios aparece truncada en la infor
 | Modelo | Parametros | Contexto | Licencia | Hardware / despliegue | Notas |
 |---|---|---|---|---|---|
 | tomo-o/elyza-thinking-1.0-llm-jp-4-33b-p300x2 | 33B denso | 65 536 | apache-2.0 | Tenstorrent p300x2, vLLM + plugin TT | Bundle comunitario no oficial, experimental |
-| elyza/ELYZA-Thinking-1.0-llm-jp-4-33b | 33B denso | no disponible en la informacion | apache-2.0 | Pesos originales en HuggingFace; despliegue no especificado | Modelo base del bundle; post-entrenado por ELYZA para razonamiento |
+| elyza/ELYZA-Thinking-1.0-llm-jp-4-33b | 33B denso | no disponible en la informacion | apache-2.0 | Pesos originales en Hugging Face; despliegue no especificado | Modelo base del bundle; post-entrenado por ELYZA para razonamiento |
 | tomo-o/elyza-thinking-1.0-llm-jp-4-33b-p300x2-fast | 33B denso | 65 536 | apache-2.0 | Tenstorrent p300x2 | Misma salida a temperatura 0, decodificacion 1,4-1,8x mas rapida (hasta 6,7x con muestreo) |
 
 No se dispone de datos de benchmarks de calidad para comparar con modelos de la misma categoria (por ejemplo, otros modelos de razonamiento de 30-35B); la comparativa se limita a parametros, contexto, licencia y opciones de despliegue.
@@ -102,7 +102,7 @@ No se dispone de datos de benchmarks de calidad para comparar con modelos de la 
 
 ## Enlaces
 
-- Bundle en HuggingFace: https://huggingface.co/tomo-o/elyza-thinking-1.0-llm-jp-4-33b-p300x2
+- Bundle en Hugging Face: https://huggingface.co/tomo-o/elyza-thinking-1.0-llm-jp-4-33b-p300x2
 - Variante rapida del bundle: https://huggingface.co/tomo-o/elyza-thinking-1.0-llm-jp-4-33b-p300x2-fast
 - Modelo base original: https://huggingface.co/elyza/ELYZA-Thinking-1.0-llm-jp-4-33b
 - Repositorio tt-model-manager: https://github.com/tenstorrent/tt-model-manager

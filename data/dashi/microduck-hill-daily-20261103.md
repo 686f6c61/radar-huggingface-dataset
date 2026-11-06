@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dashi/microduck-hill-daily-20261103` es una política de control motriz (policy) para el robot cuadrúpedo de código abierto microduck de Pollen Robotics, publicada en HuggingFace bajo el pipeline `robotics`. No se trata de un modelo de lenguaje: es un artefacto de aprendizaje por refuerzo exportado a ONNX que genera comandos de locomocion a 50 Hz a partir de observaciones de 61 dimensiones, con un espacio de accion de 14 dimensiones. El autor es el usuario `dashi` y el modelo se distribuye como un fine-tune del checkpoint `jrubiosainz/microduck-game-hillclimber-remix6`.
+`dashi/microduck-hill-daily-20261103` es una política de control motriz (policy) para el robot cuadrúpedo de código abierto microduck de Pollen Robotics, publicada en Hugging Face bajo el pipeline `robotics`. No se trata de un modelo de lenguaje: es un artefacto de aprendizaje por refuerzo exportado a ONNX que genera comandos de locomocion a 50 Hz a partir de observaciones de 61 dimensiones, con un espacio de accion de 14 dimensiones. El autor es el usuario `dashi` y el modelo se distribuye como un fine-tune del checkpoint `jrubiosainz/microduck-game-hillclimber-remix6`.
 
 La relevancia de esta ficha es acotada: el repositorio tiene 0 descargas y 0 likes en el momento de la consulta, el tamaño del repo es de 0.0 GB (lo que sugiere que los pesos no estan subidos o son de tamaño despreciable), y la model card es extremadamente escueta. Se trata de una "re-entrada diaria" de un experimento previo (`dashi/microduck-hill-remix-r752`, con recompensa 0.749), es decir, un artefacto de iteracion rápida dentro de un pipeline de entrenamiento RL, no un modelo pensado para adopcion general.
 
@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 
 | Modelo | Tipo | Dimension observacion | Dimension accion | Frecuencia | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `dashi/microduck-hill-daily-20261103` | Política RL ONNX | 61 | 14 | 50 Hz | no disponible | HuggingFace (0 descargas) |
-| `jrubiosainz/microduck-game-hillclimber-remix6` | Política RL (modelo base) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| `dashi/microduck-hill-remix-r752` | Política RL (origen de la re-entrada) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| `dashi/microduck-hill-daily-20261103` | Política RL ONNX | 61 | 14 | 50 Hz | no disponible | Hugging Face (0 descargas) |
+| `jrubiosainz/microduck-game-hillclimber-remix6` | Política RL (modelo base) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| `dashi/microduck-hill-remix-r752` | Política RL (origen de la re-entrada) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparables entre estas políticas, por lo que la comparativa se limita a la relacion de linaje (fine-tune y re-entrada) y a las dimensiones documentadas para el modelo actual.
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparables entre estas políticas, por lo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dashi/microduck-hill-daily-20261103
+- Hugging Face: https://huggingface.co/dashi/microduck-hill-daily-20261103
 - Modelo base: https://huggingface.co/jrubiosainz/microduck-game-hillclimber-remix6
 - Checkpoint origen citado en la model card: `dashi/microduck-hill-remix-r752` (sin URL directa en la informacion disponible)
 - Repositorio de entrenamiento: `pollen-robotics/microduck_rl` (rama `roll-backward`, commit `83599404a`)

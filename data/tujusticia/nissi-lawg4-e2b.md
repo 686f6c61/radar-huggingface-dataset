@@ -23,7 +23,7 @@ El modelo se basa en la arquitectura Gemma 4 E2B, una familia de modelos de Goog
 
 ## Capacidades
 - Generación de texto y comprensión de lenguaje natural, heredadas del modelo base Gemma 4 E2B.
-- Procesamiento de entrada multimodal (imagen y texto), según el pipeline `image-text-to-text` declarado en HuggingFace.
+- Procesamiento de entrada multimodal (imagen y texto), según el pipeline `image-text-to-text` declarado en Hugging Face.
 - Soporte de instrucciones conversacionales (modelo ajustado para chat, por el tag `conversational`).
 - Compatible con `text-generation-inference` y `transformers`, lo que permite su integración en entornos de producción.
 - Capacidad de ejecución en CPU (según fuentes externas sobre Gemma 4 E2B, aunque no se confirma para este ajuste).
@@ -59,7 +59,7 @@ No disponible. No se han identificado modelos comparables dentro de la informaci
 - No se ha verificado la calidad del ajuste fino: al no haber benchmarks ni ejemplos de uso, se desconoce si el modelo es realmente útil para tareas legales.
 
 ## Enlaces
-- HuggingFace del modelo: https://huggingface.co/tujusticia/nissi-lawg4-e2b
+- Hugging Face del modelo: https://huggingface.co/tujusticia/nissi-lawg4-e2b
 - Modelo GGUF (variante cuantizada): https://huggingface.co/tujusticia/nissi-lawg4-merged-fp16-Q4_K_M-GGUF
 - Perfil del autor: https://huggingface.co/tujusticia/models
 - Guía de Gemma 4 E2B (externa): https://www.gemma4.wiki/models/gemma-4-e2b-model

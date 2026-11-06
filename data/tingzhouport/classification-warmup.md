@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Tingzhouport/classification-warmup` es un checkpoint experimental de un Perceiver diseñado para tareas de clasificación. Ha sido publicado por el usuario Tingzhouport en HuggingFace con licencia Apache-2.0. Se trata de una implementación personalizada que busca mantener una configuración "gigante" (giant) pero manejable, de modo que los cambios arquitectónicos puedan inspeccionarse antes de un entrenamiento completo. El repositorio incluye el código fuente (`inference.py`), la configuración del modelo (`config.json`), los argumentos de entrenamiento (`training_args.json`) y un checkpoint de inicialización (`model.safetensors`) de 49.600 parámetros.
+El modelo `Tingzhouport/classification-warmup` es un checkpoint experimental de un Perceiver diseñado para tareas de clasificación. Ha sido publicado por el usuario Tingzhouport en Hugging Face con licencia Apache-2.0. Se trata de una implementación personalizada que busca mantener una configuración "gigante" (giant) pero manejable, de modo que los cambios arquitectónicos puedan inspeccionarse antes de un entrenamiento completo. El repositorio incluye el código fuente (`inference.py`), la configuración del modelo (`config.json`), los argumentos de entrenamiento (`training_args.json`) y un checkpoint de inicialización (`model.safetensors`) de 49.600 parámetros.
 
 Este modelo no es un modelo entrenado ni presenta resultados de benchmarks. Su propósito declarado es servir como punto de partida para experimentación y pruebas de humo (smoke tests). La arquitectura emplea atención lineal, co-atención, activación GELU y normalización LayerNorm. No se especifica la longitud de contexto, los idiomas soportados ni los tipos de cuantización disponibles. Su relevancia actual radica en ser un ejemplo de implementación de Perceiver para clasificación, útil para investigadores que deseen explorar esta arquitectura sin los costes de un modelo de gran escala.
 
@@ -26,7 +26,7 @@ La arquitectura es un Perceiver con atención lineal, co-atención (co-attention
 ## Capacidades
 
 - Clasificación: el modelo está diseñado para tareas de clasificación, pero al ser un checkpoint de inicialización no entrenado, no presenta capacidades funcionales demostradas.
-- Implementación personalizada: requiere un adaptador explícito para cargarse mediante APIs genéricas de HuggingFace; no es compatible con `AutoModel` sin adaptación.
+- Implementación personalizada: requiere un adaptador explícito para cargarse mediante APIs genéricas de Hugging Face; no es compatible con `AutoModel` sin adaptación.
 - Experimentación arquitectónica: permite inspeccionar y modificar la arquitectura Perceiver antes de un entrenamiento a gran escala.
 - Pruebas de humo: el checkpoint sirve para verificar que el código y el flujo de inferencia funcionan correctamente.
 
@@ -59,11 +59,11 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 - El checkpoint no ha sido entrenado ni auditado para robustez, equidad o transferencia de dominio. No debe utilizarse en producción.
 - No se proporcionan datos sobre sesgos, alucinaciones o limitaciones de contexto, ya que el modelo no tiene capacidades generativas ni de razonamiento.
-- La implementación es personalizada y requiere un adaptador explícito para cargarse con APIs genéricas; no es compatible con `AutoModel` de HuggingFace.
+- La implementación es personalizada y requiere un adaptador explícito para cargarse con APIs genéricas; no es compatible con `AutoModel` de Hugging Face.
 - La licencia Apache-2.0 permite uso comercial, pero los términos de los datos externos utilizados con este repositorio deben revisarse por separado.
 - No se han publicado resultados de evaluación; cualquier afirmación sobre rendimiento debe basarse en experimentos propios con al menos tres semillas y una línea base de capacidad equivalente.
 
 ## Enlaces
 
-- [HuggingFace - Tingzhouport/classification-warmup](https://huggingface.co/Tingzhouport/classification-warmup)
+- [Hugging Face - Tingzhouport/classification-warmup](https://huggingface.co/Tingzhouport/classification-warmup)
 - No se han encontrado otros enlaces relevantes (papers, blogs, repos) específicos de este modelo en la búsqueda web.

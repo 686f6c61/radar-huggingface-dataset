@@ -91,7 +91,7 @@ El modelo de 100M es una version destilada del de 300M, con 6 capas frente a 24.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/seastar105/pocket-tts-korean-100m
+- Modelo en Hugging Face: https://huggingface.co/seastar105/pocket-tts-korean-100m
 - Repositorio de entrenamiento en GitHub: https://github.com/seastar105/pocket-tts-korean-training
 - Sitio oficial de Pocket-TTS: https://pockettts.org/
 - Paper asociado (arXiv 2509.06926): https://arxiv.org/abs/2509.06926

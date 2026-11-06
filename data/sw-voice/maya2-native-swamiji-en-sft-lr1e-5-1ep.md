@@ -72,8 +72,8 @@ La lectura conjunta de ambas filas es el dato más relevante del checkpoint: la 
 
 | Modelo | Parámetros | Idiomas | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (maya2-native-swamiji-en-sft-lr1e-5-1ep) | ≈2,5 mil millones | Inglés | TTS con fine-tune de una voz concreta | Apache 2.0 | HuggingFace, 0 descargas |
-| maya-research/maya2-native (modelo base) | No disponible | No disponible en la información consultada | TTS con clonación zero-shot | No disponible en la información consultada | HuggingFace |
+| Este modelo (maya2-native-swamiji-en-sft-lr1e-5-1ep) | ≈2,5 mil millones | Inglés | TTS con fine-tune de una voz concreta | Apache 2.0 | Hugging Face, 0 descargas |
+| maya-research/maya2-native (modelo base) | No disponible | No disponible en la información consultada | TTS con clonación zero-shot | No disponible en la información consultada | Hugging Face |
 | Otras alternativas de TTS open source de la misma categoría | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La única comparación con datos verificables es frente al modelo base: misma familia, mismos parámetros de partida y evaluación sobre el mismo conjunto de 50 textos. El fine-tune gana en coincidencia de voz (0,831 frente a 0,643) y pierde en inteligibilidad (WER 6,5 % frente a 2,0 %). No se dispone de datos de benchmarks ni de especificaciones de modelos de terceros en la información proporcionada, por lo que no se establece comparación con alternativas externas.
@@ -93,7 +93,7 @@ La única comparación con datos verificables es frente al modelo base: misma fa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sw-voice/maya2-native-swamiji-en-sft-lr1e-5-1ep
+- Modelo en Hugging Face: https://huggingface.co/sw-voice/maya2-native-swamiji-en-sft-lr1e-5-1ep
 - Modelo base: https://huggingface.co/maya-research/maya2-native
 - Dataset de ajuste: https://huggingface.co/datasets/sw-voice/swamiji-voice-sft-sidon
 - Código del ajuste: referencia «swamiji-tts, rama research/maya2-sft» en la model card; no se ha localizado URL verificable en la búsqueda web.

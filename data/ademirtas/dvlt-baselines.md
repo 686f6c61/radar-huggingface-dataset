@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ademirtas/dvlt-baselines` es un repositorio de pesos alojado en HuggingFace por el usuario ademirtas, publicado bajo una licencia de tipo "other" y con acceso restringido (gated), lo que obliga a aceptar condiciones adicionales antes de poder descargar los ficheros. El repositorio ocupa 0,3 GB, un tamano compatible con un conjunto de pesos de pequeno o medio tamano o con un paquete de checkpoints de referencia, aunque no se ha publicado informacion que confirme ni la arquitectura ni el numero de parametros.
+`ademirtas/dvlt-baselines` es un repositorio de pesos alojado en Hugging Face por el usuario ademirtas, publicado bajo una licencia de tipo "other" y con acceso restringido (gated), lo que obliga a aceptar condiciones adicionales antes de poder descargar los ficheros. El repositorio ocupa 0,3 GB, un tamano compatible con un conjunto de pesos de pequeno o medio tamano o con un paquete de checkpoints de referencia, aunque no se ha publicado informacion que confirme ni la arquitectura ni el numero de parametros.
 
 La informacion publica disponible es minima: la model card no incluye pipeline declarado, idiomas soportados, descripcion del entrenamiento ni resultados de evaluacion. El identificador "dvlt-baselines" sugiere que se trata de una coleccion de lineas base (baselines) para comparacion experimental, pero no hay documentacion que lo confirme, por lo que cualquier interpretacion al respecto debe considerarse una hipotesis no verificada.
 
@@ -18,7 +18,7 @@ En el momento de redactar esta ficha el repositorio acumula 0 descargas y 0 "lik
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | other (acceso restringido, requiere aceptar condiciones en HuggingFace) |
+| Licencia | other (acceso restringido, requiere aceptar condiciones en Hugging Face) |
 | Formato de pesos | no disponible (el repositorio ocupa 0,3 GB, pero no se especifica el formato de los ficheros) |
 
 Datos adicionales del repositorio:
@@ -51,7 +51,7 @@ El unico dato estructural verificable es el tamano del repositorio (0,3 GB). Si 
 
 ## Casos de uso
 
-No es posible enumerar casos de uso concretos y realistas sin conocer la arquitectura, el tamano, el contexto, los idiomas y las capacidades del modelo. Cualquier escenario que se detallara aqui seria una invencion y no estaria respaldado por la informacion disponible. Se recomienda consultar la model card del repositorio una vez aceptadas las condiciones de acceso en HuggingFace para obtener estos datos.
+No es posible enumerar casos de uso concretos y realistas sin conocer la arquitectura, el tamano, el contexto, los idiomas y las capacidades del modelo. Cualquier escenario que se detallara aqui seria una invencion y no estaria respaldado por la informacion disponible. Se recomienda consultar la model card del repositorio una vez aceptadas las condiciones de acceso en Hugging Face para obtener estos datos.
 
 A modo de orientacion generica, un repositorio etiquetado como "baselines" suele emplearse para reproducir resultados de referencia en experimentos academicos, pero esto es una convencion de nomenclatura y no una confirmacion sobre este repositorio en concreto.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 - Compatibilidad con GPU de consumo: no disponible.
 - Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI, TensorRT-LLM): no disponible; no se ha confirmado que el repositorio contenga pesos en formatos compatibles con estos motores.
 - Latencia y throughput estimados: no disponible.
-- Nota operativa: al tratarse de un repositorio con acceso restringido, la descarga requiere autenticacion previa mediante token de HuggingFace y la aceptacion de las condiciones del autor.
+- Nota operativa: al tratarse de un repositorio con acceso restringido, la descarga requiere autenticacion previa mediante token de Hugging Face y la aceptacion de las condiciones del autor.
 
 ## Comparativa con modelos similares
 
@@ -76,7 +76,7 @@ No disponible. No se ha identificado informacion suficiente sobre `ademirtas/dvl
 
 - Ausencia total de documentacion: no hay model card descriptiva, lo que impide evaluar sesgos, alucinacion, cobertura idiomatica o calidad de generacion.
 - Licencia "other": al no especificarse los terminos concretos, no se puede asumir que el uso comercial este permitido. Es imprescindible revisar las condiciones asociadas antes de cualquier despliegue en produccion.
-- Acceso restringido (gated): la descarga y el uso requieren aceptar condiciones en HuggingFace y disponer de credenciales validas, lo que anade friccion a pipelines automatizados de CI/CD.
+- Acceso restringido (gated): la descarga y el uso requieren aceptar condiciones en Hugging Face y disponer de credenciales validas, lo que anade friccion a pipelines automatizados de CI/CD.
 - Trazabilidad nula: con 0 descargas y 0 "likes", no existe evidencia de uso por parte de la comunidad ni de validacion independiente del contenido del repositorio.
 - Riesgo de contenido no verificado: al no poder inspeccionar los pesos ni la configuracion, no se descarta que el repositorio contenga checkpoints incompletos, artefactos de experimentos o ficheros que no sean pesos de modelo utilizables.
 - Fechas de creacion y actualizacion (septiembre de 2026) posteriores al momento de consulta habitual de este tipo de fichas; conviene verificar su vigencia antes de citarlas.
@@ -84,7 +84,7 @@ No disponible. No se ha identificado informacion suficiente sobre `ademirtas/dvl
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ademirtas/dvlt-baselines
+- Repositorio en Hugging Face: https://huggingface.co/ademirtas/dvlt-baselines
 - Paper: no disponible
 - Blog o anuncio: no disponible
 - Repositorio de codigo: no disponible

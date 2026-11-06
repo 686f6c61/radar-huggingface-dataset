@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AIxFuneStudio/Sunday_Flower_Krea_2_Turbo es un repositorio de pesos publicado en HuggingFace por el usuario AIxFuneStudio. Se trata de un repositorio con acceso restringido (gated): para descargarlo es necesario aceptar previamente las condiciones establecidas por el autor en la plataforma. El repositorio ocupa 14,1 GB y no incluye model card, pipeline declarado, idiomas soportados ni resultados de evaluacion.
+AIxFuneStudio/Sunday_Flower_Krea_2_Turbo es un repositorio de pesos publicado en Hugging Face por el usuario AIxFuneStudio. Se trata de un repositorio con acceso restringido (gated): para descargarlo es necesario aceptar previamente las condiciones establecidas por el autor en la plataforma. El repositorio ocupa 14,1 GB y no incluye model card, pipeline declarado, idiomas soportados ni resultados de evaluacion.
 
 El nombre del repositorio apunta a un modelo de generacion de imagenes de la familia Krea en su variante Turbo, aunque esta apreciacion es una inferencia a partir del identificador y no un dato confirmado en la informacion disponible. La licencia declarada es "other", sin que se detallen sus terminos concretos. El repositorio registra 0 descargas y 0 likes en el momento de la consulta.
 
@@ -88,7 +88,7 @@ No es posible establecer una comparativa rigurosa: la informacion proporcionada 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Sunday_Flower_Krea_2_Turbo | no disponible | no disponible | no disponible | other | gated en HuggingFace |
+| Sunday_Flower_Krea_2_Turbo | no disponible | no disponible | no disponible | other | gated en Hugging Face |
 | Alternativa 1 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativa 2 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -99,13 +99,13 @@ No es posible establecer una comparativa rigurosa: la informacion proporcionada 
 - Riesgo de alucinacion: no evaluable sin datos de arquitectura y entrenamiento. Si el modelo generase texto, no hay ninguna evaluacion publicada sobre fidelidad factual; si genera imagenes, no hay evaluacion sobre fidelidad al prompt.
 - Limitaciones de contexto o idioma: no disponibles. No se declara ningun idioma soportado.
 - Licencia: declarada como "other", sin terminos publicados. Esto implica incertidumbre juridica para uso comercial; es imprescindible revisar las condiciones que se aceptan al solicitar acceso antes de cualquier uso en produccion.
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace, lo que anade una dependencia operativa para su descarga automatizada.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face, lo que anade una dependencia operativa para su descarga automatizada.
 - Trazabilidad baja: 0 descargas y 0 likes, sin historial de uso ni validacion por parte de la comunidad. Procede tratar el repositorio como no verificado.
 - Procedencia del contenido: al no existir informacion sobre el dataset de entrenamiento, no puede descartarse el riesgo de sesgos, memorizacion o problemas de derechos sobre el material de entrenamiento.
 - Recomendacion: no utilizar este repositorio en entornos de produccion sin una evaluacion propia previa y sin aclarar los terminos de licencia con el autor.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AIxFuneStudio/Sunday_Flower_Krea_2_Turbo
-- Pagina del autor en HuggingFace: https://huggingface.co/AIxFuneStudio
+- Repositorio en Hugging Face: https://huggingface.co/AIxFuneStudio/Sunday_Flower_Krea_2_Turbo
+- Pagina del autor en Hugging Face: https://huggingface.co/AIxFuneStudio
 - Paper, blog tecnico, repositorio de codigo o demo: no disponible. La busqueda web realizada no devolvio ninguna fuente relacionada con el modelo; los resultados obtenidos correspondian a paginas corporativas de Microsoft, sin vinculacion con este repositorio.

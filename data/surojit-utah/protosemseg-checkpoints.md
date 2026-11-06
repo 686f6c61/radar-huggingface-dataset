@@ -87,7 +87,7 @@ No se dispone de otros modelos comparables de la misma categoría (segmentación
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Surojit-Utah/protosemseg-checkpoints
+- Hugging Face: https://huggingface.co/Surojit-Utah/protosemseg-checkpoints
 - Paper AdaSemSeg (arXiv): https://arxiv.org/abs/2501.16760
 - Código principal (GitHub): https://github.com/Surojit-Utah/AdaSemSeg
 - Checkpoints en Zenodo: https://zenodo.org/records/21762769

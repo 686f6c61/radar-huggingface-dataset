@@ -70,11 +70,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Dataset/corpus | Semilla | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| francesca9805/hin-deva-10mb-ppt-Dp-100mb-packed-bfdiso_seed10 (este modelo) | 39.087.104 | 100 MB empaquetado (segun nombre) | 10 | no disponible | HuggingFace, 0 descargas |
-| goldfish-models/hin_deva_10mb (modelo base) | no disponible | 10 MB (segun nombre) | no disponible | no disponible | HuggingFace |
-| francesca9805/hin-deva-10mb-ppt-Dp-100mb-packed-bfd_seed10 | no disponible | 100 MB empaquetado | 10 | no disponible | HuggingFace |
-| francesca9805/hin-deva-100mb-ppt-Dp-10mb-packed-bfd_seed455 | no disponible | 10 MB empaquetado | 455 | no disponible | HuggingFace |
-| francesca9805/hin-deva-10mb-ppt-Dp-10mb-packed-bfd_seed455 | no disponible | 10 MB empaquetado | 455 | no disponible | HuggingFace |
+| francesca9805/hin-deva-10mb-ppt-Dp-100mb-packed-bfdiso_seed10 (este modelo) | 39.087.104 | 100 MB empaquetado (segun nombre) | 10 | no disponible | Hugging Face, 0 descargas |
+| goldfish-models/hin_deva_10mb (modelo base) | no disponible | 10 MB (segun nombre) | no disponible | no disponible | Hugging Face |
+| francesca9805/hin-deva-10mb-ppt-Dp-100mb-packed-bfd_seed10 | no disponible | 100 MB empaquetado | 10 | no disponible | Hugging Face |
+| francesca9805/hin-deva-100mb-ppt-Dp-10mb-packed-bfd_seed455 | no disponible | 10 MB empaquetado | 455 | no disponible | Hugging Face |
+| francesca9805/hin-deva-10mb-ppt-Dp-10mb-packed-bfd_seed455 | no disponible | 10 MB empaquetado | 455 | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento para ninguna de las variantes, por lo que la comparativa se limita a parametros, configuracion experimental y disponibilidad. La diferencia entre `bfd` y `bfdiso` en el nombre sugiere un flag adicional de configuracion, pero no hay documentacion que lo confirme.
 
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento para ninguna de las variantes, por lo que 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/hin-deva-10mb-ppt-Dp-100mb-packed-bfdiso_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/hin-deva-10mb-ppt-Dp-100mb-packed-bfdiso_seed10
 - Modelo base: https://huggingface.co/goldfish-models/hin_deva_10mb
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/zb10sduq
 - Repositorio de TRL: https://github.com/huggingface/trl

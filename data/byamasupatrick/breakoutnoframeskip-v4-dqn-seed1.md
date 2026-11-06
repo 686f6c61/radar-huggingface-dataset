@@ -2,11 +2,11 @@
 
 ## Resumen
 
-BreakoutNoFrameskip-v4-dqn-seed1 es un checkpoint de un agente de aprendizaje por refuerzo profundo entrenado con el algoritmo DQN (Deep Q-Network) sobre el entorno Atari BreakoutNoFrameskip-v4. Lo publica Byamasu Patrick Paul en HuggingFace, con una implementacion escrita desde cero cuyo codigo vive en el repositorio rl-algorithms-lab, en el subdirectorio dqn-atari. No es un modelo de lenguaje ni un modelo generativo de proposito general: es una politica entrenada para una tarea concreta de control discreto a partir de observaciones visuales.
+BreakoutNoFrameskip-v4-dqn-seed1 es un checkpoint de un agente de aprendizaje por refuerzo profundo entrenado con el algoritmo DQN (Deep Q-Network) sobre el entorno Atari BreakoutNoFrameskip-v4. Lo publica Byamasu Patrick Paul en Hugging Face, con una implementacion escrita desde cero cuyo codigo vive en el repositorio rl-algorithms-lab, en el subdirectorio dqn-atari. No es un modelo de lenguaje ni un modelo generativo de proposito general: es una politica entrenada para una tarea concreta de control discreto a partir de observaciones visuales.
 
 El problema que resuelve es acotado y bien definido: maximizar la recompensa acumulada en Breakout jugando unicamente con los pixeles de la pantalla. El autor declara una recompensa media de 346.20 +/- 31.41 en el conjunto de evaluacion del propio entorno, aunque el resultado esta marcado como no verificado en la model card. El interes practico del artefacto es servir como referencia reproducible de una implementacion DQN completa (replay buffer, red objetivo, exploracion epsilon-greedy) y como punto de comparacion entre semillas.
 
-El tamano del repositorio en HuggingFace es de 0.0 GB, coherente con un unico fichero de pesos de una red convolucional pequena. La model card no declara licencia, idiomas, ni ninguna arquitectura tipo transformer: se trata de una Q-network convolucional que opera sobre una pila de fotogramas preprocesados.
+El tamano del repositorio en Hugging Face es de 0.0 GB, coherente con un unico fichero de pesos de una red convolucional pequena. La model card no declara licencia, idiomas, ni ninguna arquitectura tipo transformer: se trata de una Q-network convolucional que opera sobre una pila de fotogramas preprocesados.
 
 ## Especificaciones tecnicas
 
@@ -35,7 +35,7 @@ No se documenta en la informacion disponible ningun uso de RLHF, DPO ni tecnicas
 - Aprendizaje de politica value-based: estimacion de valores Q para el par estado-accion en el entorno entrenado.
 - Reproduccion determinista del entrenamiento: el autor documenta el comando exacto y la configuracion completa de hiperparametros.
 - Evaluacion mediante API propia: el repositorio expone funciones `make_env` y `evaluate` reutilizables para medir la recompensa media en episodios de evaluacion.
-- Carga sencilla desde HuggingFace Hub con `hf_hub_download` y ejecucion en CPU segun el ejemplo de la model card.
+- Carga sencilla desde Hugging Face Hub con `hf_hub_download` y ejecucion en CPU segun el ejemplo de la model card.
 - No dispone de tool calling, function calling ni soporte de agentes multi-paso mas alla del propio bucle de interaccion con el entorno.
 - No tiene capacidades multilingues, de generacion de texto, de codigo, de matematicas, de vision general ni de audio.
 
@@ -71,7 +71,7 @@ No se han publicado en la informacion disponible otros resultados de benchmarks,
 
 | Modelo | Parametros | Contexto / entorno | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BreakoutNoFrameskip-v4-dqn-seed1 (este modelo) | no disponible | BreakoutNoFrameskip-v4 | mean_reward 346.20 +/- 31.41 | no disponible | HuggingFace, 0 descargas, 0 likes |
+| BreakoutNoFrameskip-v4-dqn-seed1 (este modelo) | no disponible | BreakoutNoFrameskip-v4 | mean_reward 346.20 +/- 31.41 | no disponible | Hugging Face, 0 descargas, 0 likes |
 | Otras semillas del mismo autor (`seed1` sugiere una serie) | no disponible | BreakoutNoFrameskip-v4 | no disponible en la informacion proporcionada | no disponible | no disponible |
 | Agentes de referencia tipo Rainbow, C51 o PPO sobre Atari | no disponible | Atari | no disponible en la informacion proporcionada | no disponible | no disponible |
 
@@ -86,14 +86,14 @@ No se dispone de datos numericos comparables en la informacion proporcionada, po
 - Variabilidad entre semillas: se trata de un unico entrenamiento con semilla 1. La desviacion declarada (+/- 31.41) sugiere una varianza apreciable, y no hay evidencia de que el resultado se mantenga con otras semillas.
 - Portabilidad limitada: los pesos estan en el formato propietario `dqn.cleanrl_model`, ligado al codigo del repositorio del autor, lo que dificulta su reutilizacion fuera de ese proyecto.
 - Riesgo de sobreajuste a la version del entorno: los resultados dependen de la version concreta de Gym/Gymnasium y de `ale-py` empleada en el entrenamiento, que no se detalla.
-- Metadatos inconsistentes: la fecha de creacion declarada en HuggingFace es 2026-09-27, posterior al momento de redaccion de esta ficha, lo que apunta a un posible error de metadatos y obliga a verificar la procedencia del artefacto.
+- Metadatos inconsistentes: la fecha de creacion declarada en Hugging Face es 2026-09-27, posterior al momento de redaccion de esta ficha, lo que apunta a un posible error de metadatos y obliga a verificar la procedencia del artefacto.
 - Adopcion nula: el repositorio registra 0 descargas y 0 likes, por lo que no existe validacion independiente por parte de la comunidad.
 - Sin cuantizaciones ni optimizaciones publicadas: no hay versiones GGUF, ONNX ni TensorRT, ni datos de latencia que permitan planificar un despliegue con requisitos de tiempo real.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/byamasupatrick/BreakoutNoFrameskip-v4-dqn-seed1
-- Perfil del autor en HuggingFace: https://huggingface.co/byamasupatrick
+- Modelo en Hugging Face: https://huggingface.co/byamasupatrick/BreakoutNoFrameskip-v4-dqn-seed1
+- Perfil del autor en Hugging Face: https://huggingface.co/byamasupatrick
 - Repositorio de implementacion, subdirectorio dqn-atari: https://github.com/byamasu-patrick/rl-algorithms-lab/tree/master/dqn-atari
 - Repositorio completo rl-algorithms-lab: https://github.com/byamasu-patrick/rl-algorithms-lab
 - Implementacion de referencia CleanRL, `dqn_atari.py`: https://github.com/vwxyzjn/cleanrl

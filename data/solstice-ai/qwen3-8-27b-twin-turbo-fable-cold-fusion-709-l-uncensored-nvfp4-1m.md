@@ -98,7 +98,7 @@ No se identifican en la informacion proporcionada otros modelos comparables de c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Solstice-AI/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-NVFP4-1M
+- Repositorio en Hugging Face: https://huggingface.co/Solstice-AI/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-NVFP4-1M
 - Modelo base: https://huggingface.co/DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored
 - Perfil del autor del modelo original y de la fusion GAIN: https://huggingface.co/DavidAU
 - Perfil del autor del empaquetado y la cuantizacion: https://huggingface.co/Solstice-AI

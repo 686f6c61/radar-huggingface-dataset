@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos. La difere
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/rk35784/G4-MeroMero-v2-31B
+- Repositorio Hugging Face del modelo: https://huggingface.co/rk35784/G4-MeroMero-v2-31B
 - Versión MLX (cuantización mxfp8) por beezu: https://huggingface.co/beezu/G4-MeroMero-v2-31B-mlx-mxfp8
 - Versión alternativa por zerofata: https://huggingface.co/zerofata/G4-MeroMero-v2-31B
 - Vista de arquitectura (hfviewer): https://hfviewer.com/zerofata/G4-MeroMero-v2-31B

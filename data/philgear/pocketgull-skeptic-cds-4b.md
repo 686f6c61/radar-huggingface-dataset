@@ -76,8 +76,8 @@ Los resultados de busqueda web disponibles no contienen informacion sobre modelo
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| pocketgull-skeptic-cds-4b | 4B (base) + adaptador LoRA | no disponible | apache-2.0 (adaptador) | Auditoria epistemologica y CDS falsacionista | HuggingFace, 0 descargas |
-| google/gemma-3-4b-it | 4B | no disponible en la informacion proporcionada | Gemma Terms of Use | Asistente multimodal instruction-tuned de proposito general | HuggingFace (modelo base) |
+| pocketgull-skeptic-cds-4b | 4B (base) + adaptador LoRA | no disponible | apache-2.0 (adaptador) | Auditoria epistemologica y CDS falsacionista | Hugging Face, 0 descargas |
+| google/gemma-3-4b-it | 4B | no disponible en la informacion proporcionada | Gemma Terms of Use | Asistente multimodal instruction-tuned de proposito general | Hugging Face (modelo base) |
 | Alternativas clinicas de 4B-8B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos verificados de otros adaptadores clinicos comparables en la informacion proporcionada, por lo que cualquier comparacion de rendimiento seria especulativa.
@@ -97,7 +97,7 @@ No se dispone de datos verificados de otros adaptadores clinicos comparables en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/philgear/pocketgull-skeptic-cds-4b
+- Modelo en Hugging Face: https://huggingface.co/philgear/pocketgull-skeptic-cds-4b
 - Modelo base: https://huggingface.co/google/gemma-3-4b-it
 - Sitio de la organizacion: https://pocketgull.com
 - Aplicacion declarada: https://pocketgull.app

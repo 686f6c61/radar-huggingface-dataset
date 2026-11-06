@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `RKB109/contextual-bandit-simulator-20261102-model` es un prototipo pequeno y transparente publicado por el usuario RKB109 en HuggingFace. Se presenta como un simulador de decisiones basado en contextual bandits, pensado para validar politicas de decision en modo offline antes de exponer usuarios o sistemas a aprendizaje por refuerzo en linea. No es un modelo de lenguaje generativo: combina pesos de tokens por etiqueta con recuperacion de evidencia ponderada por IDF, y no invoca ningun LLM alojado.
+El modelo `RKB109/contextual-bandit-simulator-20261102-model` es un prototipo pequeno y transparente publicado por el usuario RKB109 en Hugging Face. Se presenta como un simulador de decisiones basado en contextual bandits, pensado para validar politicas de decision en modo offline antes de exponer usuarios o sistemas a aprendizaje por refuerzo en linea. No es un modelo de lenguaje generativo: combina pesos de tokens por etiqueta con recuperacion de evidencia ponderada por IDF, y no invoca ningun LLM alojado.
 
 El modelo se distribuye bajo licencia MIT y se etiqueta con los pipelines de reinforcement learning, clasificacion de texto, extraccion de caracteristicas y similitud de frases. No se especifican parametros, arquitectura de red neuronal ni longitud de contexto; la model card indica que es un baseline transparente generado para demostraciones reproducibles de arquitectura.
 
@@ -85,7 +85,7 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RKB109/contextual-bandit-simulator-20261102-model
+- Modelo en Hugging Face: https://huggingface.co/RKB109/contextual-bandit-simulator-20261102-model
 - Dataset asociado: https://huggingface.co/datasets/RKB109/contextual-bandit-simulator-20261102-dataset
 - Repositorio de GitHub con `train.py`, split y codigo de evaluacion: no disponible como URL directa en la informacion proporcionada (la model card lo menciona sin enlace)
 - Paper, blog o demo: no disponibles

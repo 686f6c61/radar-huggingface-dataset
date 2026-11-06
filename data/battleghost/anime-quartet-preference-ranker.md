@@ -95,7 +95,7 @@ No se han publicado comparativas directas con otros modelos en la informacion di
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BattleGhost/anime-quartet-preference-ranker
+- Modelo en Hugging Face: https://huggingface.co/BattleGhost/anime-quartet-preference-ranker
 - WD SwinV2 Tagger v3: https://huggingface.co/SmilingWolf/wd-swinv2-tagger-v3
 - PixAI Tagger v1.0: https://huggingface.co/pixai-labs/pixai-tagger-v1.0
 - Clasificador estetico Danbooru: https://huggingface.co/aipracticecafe/danbooru-aes-cls

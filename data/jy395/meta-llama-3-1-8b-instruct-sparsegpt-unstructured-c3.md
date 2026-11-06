@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Compresion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Meta-Llama-3.1-8B-Instruct-sparsegpt-unstructured-c3 (este) | 8,03 B | 8.192 | Poda no estructurada 50%, calibrada en C3 (FinMix) | Llama 3.1 Community | HuggingFace (jy395) |
-| meta-llama/Meta-Llama-3.1-8B-Instruct | 8,03 B | 128.000 | Ninguna | Llama 3.1 Community | HuggingFace (oficial) |
-| Otras configuraciones del conjunto ICAIF '26 (jy395) | 8,03 B | 8.192 | Distintos metodos y corpus de calibracion | Llama 3.1 Community | HuggingFace (coleccion jy395) |
+| Meta-Llama-3.1-8B-Instruct-sparsegpt-unstructured-c3 (este) | 8,03 B | 8.192 | Poda no estructurada 50%, calibrada en C3 (FinMix) | Llama 3.1 Community | Hugging Face (jy395) |
+| meta-llama/Meta-Llama-3.1-8B-Instruct | 8,03 B | 128.000 | Ninguna | Llama 3.1 Community | Hugging Face (oficial) |
+| Otras configuraciones del conjunto ICAIF '26 (jy395) | 8,03 B | 8.192 | Distintos metodos y corpus de calibracion | Llama 3.1 Community | Hugging Face (coleccion jy395) |
 
 No se dispone de datos de rendimiento comparativo en la informacion proporcionada. La comparacion con el modelo base debe hacerse con la suite de evaluacion del repositorio, no con cifras publicadas aqui.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo en la informacion proporcionad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jy395/Meta-Llama-3.1-8B-Instruct-sparsegpt-unstructured-c3
+- Hugging Face: https://huggingface.co/jy395/Meta-Llama-3.1-8B-Instruct-sparsegpt-unstructured-c3
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct
 - Repositorio de codigo y evaluacion: https://github.com/JunyiYe/finance-ptc-calibration
 - Script de poda: https://github.com/JunyiYe/finance-ptc-calibration/blob/main/scripts/quantization/sparsegpt_unstructured.py

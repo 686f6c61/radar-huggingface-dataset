@@ -102,7 +102,7 @@ La comparativa directa relevante es contra la release NVFP4 de NVIDIA: la model 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kaushikvira/Qwen3.8-Flash-Next-swift15-nvfp4-dgpp
+- Repositorio Hugging Face: https://huggingface.co/kaushikvira/Qwen3.8-Flash-Next-swift15-nvfp4-dgpp
 - Modelo fuente (BF16, gateado): https://huggingface.co/ukisai/Swift1.5-Qwen3.8-Flash-Next
 - Licencia del modelo fuente: https://huggingface.co/ukisai/Swift1.5-Qwen3.8-Flash-Next/blob/main/LICENSE
 - Modelo base upstream: https://huggingface.co/Qwen/Qwen3.8-Flash-Next

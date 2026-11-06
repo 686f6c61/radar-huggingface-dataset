@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Sudnya/amx-shape-130k-tok-per-s` es un artefacto de benchmark publicado en HuggingFace por el usuario Sudnya bajo licencia Apache 2.0. No es un modelo de lenguaje utilizable: sus pesos son aleatorios (semilla 0) y el propio autor indica de forma explicita que "no escribe nada util". Su funcion es servir de "student" en un pipeline de medida de throughput sobre CPU con AMX, dentro del proyecto `dgx-spark-reasoning`.
+`Sudnya/amx-shape-130k-tok-per-s` es un artefacto de benchmark publicado en Hugging Face por el usuario Sudnya bajo licencia Apache 2.0. No es un modelo de lenguaje utilizable: sus pesos son aleatorios (semilla 0) y el propio autor indica de forma explicita que "no escribe nada util". Su funcion es servir de "student" en un pipeline de medida de throughput sobre CPU con AMX, dentro del proyecto `dgx-spark-reasoning`.
 
 El modelo implementa una arquitectura hibrida de tipo block-diffusion con capas de atencion y capas MoE, denominada "shape B" por el autor. Concretamente, combina gated linear attention con mezcla de expertos y sliding-window attention con MLP denso, repartidas en 6 capas con el patron `l s s l s l`. Los pesos se almacenan en int8 con escalas de activacion estaticas, y el repositorio ocupa 0,3 GB, de los cuales aproximadamente 47 MB corresponden a pesos int8.
 
@@ -75,9 +75,9 @@ No se dispone de especificaciones publicadas de los modelos relacionados mas all
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Sudnya/amx-shape-130k-tok-per-s` | no disponible (~47 MB int8) | no disponible (pruebas a 2.048) | 15,5-16,5k tok/s por motor; 376k agregados a 30 motores | Apache 2.0 | Publico en HuggingFace |
-| `gdiamos/amx-moe-eda-w2048-bugfixinit` | no disponible | no disponible | no disponible | no disponible | Publico en HuggingFace; origen del tokenizador |
-| `gdiamos/amx-moe-e256-4day` | no disponible | no disponible | no disponible | no disponible | Publico en HuggingFace; tokenizador identico |
+| `Sudnya/amx-shape-130k-tok-per-s` | no disponible (~47 MB int8) | no disponible (pruebas a 2.048) | 15,5-16,5k tok/s por motor; 376k agregados a 30 motores | Apache 2.0 | Publico en Hugging Face |
+| `gdiamos/amx-moe-eda-w2048-bugfixinit` | no disponible | no disponible | no disponible | no disponible | Publico en Hugging Face; origen del tokenizador |
+| `gdiamos/amx-moe-e256-4day` | no disponible | no disponible | no disponible | no disponible | Publico en Hugging Face; tokenizador identico |
 
 ## Limitaciones y advertencias
 
@@ -94,7 +94,7 @@ No se dispone de especificaciones publicadas de los modelos relacionados mas all
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sudnya/amx-shape-130k-tok-per-s
+- Modelo en Hugging Face: https://huggingface.co/Sudnya/amx-shape-130k-tok-per-s
 - Repositorio de tokenizador de referencia: https://huggingface.co/gdiamos/amx-moe-eda-w2048-bugfixinit
 - Repositorio con tokenizador identico: https://huggingface.co/gdiamos/amx-moe-e256-4day
 - Repositorio `dgx-spark-reasoning` (referenciado en la model card como origen del pipeline `amx/`; no se proporciona URL)

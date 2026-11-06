@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MuneK/wrime-emotion-modernbert-calibrated es un modelo publicado en HuggingFace por el usuario MuneK, aparentemente derivado de la familia ModernBERT y orientado a la deteccion de emociones en textos japoneses del corpus WRIME. El nombre del repositorio sugiere un ajuste fino de un encoder ModernBERT sobre la tarea de clasificacion emocional de WRIME, con algun proceso adicional de calibracion de las probabilidades de salida. La model card publicada no contiene descripcion, datos de entrenamiento, metricas ni instrucciones de uso, por lo que la mayor parte de la informacion tecnica no esta disponible.
+MuneK/wrime-emotion-modernbert-calibrated es un modelo publicado en Hugging Face por el usuario MuneK, aparentemente derivado de la familia ModernBERT y orientado a la deteccion de emociones en textos japoneses del corpus WRIME. El nombre del repositorio sugiere un ajuste fino de un encoder ModernBERT sobre la tarea de clasificacion emocional de WRIME, con algun proceso adicional de calibracion de las probabilidades de salida. La model card publicada no contiene descripcion, datos de entrenamiento, metricas ni instrucciones de uso, por lo que la mayor parte de la informacion tecnica no esta disponible.
 
 ModernBERT es una arquitectura de encoder transformer presentada a finales de 2024 que moderniza el clasico esquema BERT con attention linear, RoPE, Flash Attention y ventanas de contexto de hasta 8192 tokens. Si el modelo sigue esa base, estariamos ante un encoder ligero (del orden de 150M a 400M de parametros segun la variante) adecuado para tareas de clasificacion y extraccion, no para generacion autoregresiva. Sin embargo, no hay confirmacion en la informacion proporcionada de que variante concreta se ha utilizado ni del proceso de calibracion aplicado.
 
@@ -55,17 +55,17 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: no disponible. Si el modelo es un encoder ModernBERT de tamano base o large, cabria esperar un rango de 0,5 a 2 GB en fp16, pero no hay confirmacion.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: probablemente si, dado el perfil tipico de un encoder de este tipo, pero sin datos oficiales.
-- Opciones de despliegue: no documentadas. Al ser presumiblemente un encoder de HuggingFace Transformers, seria desplegable con la libreria `transformers`, con `optimum` o con servidores de inferencia tipo TGI o vLLM si el formato de pesos lo permite.
+- Opciones de despliegue: no documentadas. Al ser presumiblemente un encoder de Hugging Face Transformers, seria desplegable con la libreria `transformers`, con `optimum` o con servidores de inferencia tipo TGI o vLLM si el formato de pesos lo permite.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MuneK/wrime-emotion-modernbert-calibrated | no disponible | no disponible | Clasificacion emocional (presunta) | apache-2.0 | HuggingFace |
-| Modelos WRIME publicos (p. ej. ajustes sobre BERT japones) | no disponible | no disponible | Clasificacion emocional | variable | HuggingFace |
-| ModernBERT base (Answer.AI / LightOn) | no disponible | 8192 tokens | Encoder general | apache-2.0 | HuggingFace |
-| Modelos de sentimiento japones (p. ej. ajustes sobre Tohoku BERT) | no disponible | no disponible | Clasificacion de sentimiento | variable | HuggingFace |
+| MuneK/wrime-emotion-modernbert-calibrated | no disponible | no disponible | Clasificacion emocional (presunta) | apache-2.0 | Hugging Face |
+| Modelos WRIME publicos (p. ej. ajustes sobre BERT japones) | no disponible | no disponible | Clasificacion emocional | variable | Hugging Face |
+| ModernBERT base (Answer.AI / LightOn) | no disponible | 8192 tokens | Encoder general | apache-2.0 | Hugging Face |
+| Modelos de sentimiento japones (p. ej. ajustes sobre Tohoku BERT) | no disponible | no disponible | Clasificacion de sentimiento | variable | Hugging Face |
 
 La comparativa es meramente orientativa: no hay datos publicados de este checkpoint que permitan una comparacion cuantitativa con alternativas.
 
@@ -81,7 +81,7 @@ La comparativa es meramente orientativa: no hay datos publicados de este checkpo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MuneK/wrime-emotion-modernbert-calibrated
+- Hugging Face: https://huggingface.co/MuneK/wrime-emotion-modernbert-calibrated
 - Paper de ModernBERT (referencia de la arquitectura presumible, no confirmada para este checkpoint): no disponible en la informacion proporcionada
 - Dataset WRIME (referencia del corpus presumible): no disponible en la informacion proporcionada
 - Repositorio o demo del autor: no disponible

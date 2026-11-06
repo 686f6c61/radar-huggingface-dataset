@@ -77,4 +77,4 @@ No se dispone de información contrastada sobre modelos directamente comparables
 - Cuantizaciones con imatrix (alternativa): [M.O.G.-SEC-27B-1M-CTX-BF16-i1-GGUF](https://huggingface.co/mradermacher/M.O.G.-SEC-27B-1M-CTX-BF16-i1-GGUF)
 - Guía de uso de GGUF (referencia de TheBloke): [https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF](https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF)
 - Página de solicitudes de cuantización de mradermacher: [https://huggingface.co/mradermacher/model_requests](https://huggingface.co/mradermacher/model_requests)
-- Página de mradermacher en HuggingFace: [https://huggingface.co/mradermacher](https://huggingface.co/mradermacher)
+- Página de mradermacher en Hugging Face: [https://huggingface.co/mradermacher](https://huggingface.co/mradermacher)

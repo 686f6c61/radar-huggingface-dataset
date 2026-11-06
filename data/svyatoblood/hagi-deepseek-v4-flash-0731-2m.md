@@ -69,7 +69,7 @@ No se dispone de datos comparativos publicados. Como referencia cualitativa, est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Svyatoblood/HAGI-DeepSeek-V4-Flash-0731-2M
+- Modelo en Hugging Face: https://huggingface.co/Svyatoblood/HAGI-DeepSeek-V4-Flash-0731-2M
 - Repositorio del pipeline (HAGI_v2): https://github.com/ShmidtS/HAGI_v2
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
 - Licencia del modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731/blob/main/LICENSE

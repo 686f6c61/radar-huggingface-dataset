@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Anya23/udm_qwen3.5-2b_v5_5000` es un adaptador LoRA (PEFT) publicado en HuggingFace por el usuario Anya23, entrenado mediante supervisión (SFT) sobre el modelo base `Qwen/Qwen3.5-2B-Base`. No se trata de un modelo completo, sino de pesos delta que deben cargarse junto al modelo base o fusionarse con él. El repositorio ocupa 0,1 GB, un tamano coherente con un adaptador y no con un modelo de 2.000 millones de parametros en precision completa, que rondaria los 4 GB.
+`Anya23/udm_qwen3.5-2b_v5_5000` es un adaptador LoRA (PEFT) publicado en Hugging Face por el usuario Anya23, entrenado mediante supervisión (SFT) sobre el modelo base `Qwen/Qwen3.5-2B-Base`. No se trata de un modelo completo, sino de pesos delta que deben cargarse junto al modelo base o fusionarse con él. El repositorio ocupa 0,1 GB, un tamano coherente con un adaptador y no con un modelo de 2.000 millones de parametros en precision completa, que rondaria los 4 GB.
 
-La relevancia de esta publicacion es limitada y debe interpretarse con cautela: la model card es la plantilla por defecto de HuggingFace sin rellenar, con todos los campos marcados como `[More Information Needed]`. No se documenta el dataset de entrenamiento, el numero de pasos (el sufijo "5000" podria sugerir pasos de entrenamiento, pero no se confirma), los hiperparametros, la licencia ni los idiomas. El modelo registra 0 descargas y 0 likes en el momento de la consulta.
+La relevancia de esta publicacion es limitada y debe interpretarse con cautela: la model card es la plantilla por defecto de Hugging Face sin rellenar, con todos los campos marcados como `[More Information Needed]`. No se documenta el dataset de entrenamiento, el numero de pasos (el sufijo "5000" podria sugerir pasos de entrenamiento, pero no se confirma), los hiperparametros, la licencia ni los idiomas. El modelo registra 0 descargas y 0 likes en el momento de la consulta.
 
 El interes tecnico esta, por tanto, en el modelo base subyacente. Qwen3.5 es la serie de modelos de Alibaba Cloud que sucede a Qwen3, con mejoras en razonamiento y seguimiento de instrucciones, y una variante de 2B orientada a inferencia en dispositivo segun la informacion disponible sobre la familia. Cualquier evaluacion del adaptador exige, en primer lugar, verificar el comportamiento del base y, despues, medir la delta introducida por el fine-tuning, algo que el autor no ha publicado.
 
@@ -27,7 +27,7 @@ Metadatos adicionales: `pipeline_tag: text-generation`, tags `lora`, `sft`, `tra
 
 El objeto publicado es un adaptador de bajo rango (LoRA) sobre un transformer decoder-only de ~2B parametros. Las herramientas declaradas en los tags —`peft`, `trl` y `unsloth`— indican un flujo de entrenamiento supervisado (SFT) estandar sobre instrucciones o conversaciones, probablemente con cuantizacion en 4 bits durante el entrenamiento dado el uso tipico de Unsloth. No hay informacion sobre el rango de LoRA, los modulos objetivo, el learning rate, el numero de epocas ni la composicion del dataset.
 
-Tampoco se documenta ninguna innovacion tecnica: no hay menciones a decodificacion especulativa, atencion lineal, mezcla de expertos ni destilacion. El tag `arxiv:1910.09700` que aparece en el repositorio no es una referencia al modelo, sino el enlace por defecto de la plantilla de HuggingFace al articulo de Lacoste et al. (2019) sobre el calculo de emisiones de carbono, incluido automaticamente en la model card vacia. No debe interpretarse como publicacion asociada.
+Tampoco se documenta ninguna innovacion tecnica: no hay menciones a decodificacion especulativa, atencion lineal, mezcla de expertos ni destilacion. El tag `arxiv:1910.09700` que aparece en el repositorio no es una referencia al modelo, sino el enlace por defecto de la plantilla de Hugging Face al articulo de Lacoste et al. (2019) sobre el calculo de emisiones de carbono, incluido automaticamente en la model card vacia. No debe interpretarse como publicacion asociada.
 
 ## Capacidades
 
@@ -99,7 +99,7 @@ No hay datos suficientes para una comparativa cuantitativa: el adaptador no tien
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Anya23/udm_qwen3.5-2b_v5_5000
+- Modelo en Hugging Face: https://huggingface.co/Anya23/udm_qwen3.5-2b_v5_5000
 - Version previa del mismo autor: https://huggingface.co/Anya23/udm_qwen3.5-2b_v3
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B-Base
 - Blog oficial de la serie Qwen3.5: https://qwen.ai/blog?id=qwen3.5

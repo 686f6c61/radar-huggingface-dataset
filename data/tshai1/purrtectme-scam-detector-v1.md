@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`tshai1/purrtectme-scam-detector-v1` es un modelo de clasificación de texto publicado en HuggingFace por el usuario `tshai1`. El repositorio incluye un peso en formato safetensors de 66.955.010 parámetros (aproximadamente 67 millones) y 0,3 GB de tamaño, lo que lo sitúa en la escala de un encoder tipo DistilBERT-base, coherente con la etiqueta `distilbert` presente en los tags del repositorio. El pipeline declarado es `text-classification`.
+`tshai1/purrtectme-scam-detector-v1` es un modelo de clasificación de texto publicado en Hugging Face por el usuario `tshai1`. El repositorio incluye un peso en formato safetensors de 66.955.010 parámetros (aproximadamente 67 millones) y 0,3 GB de tamaño, lo que lo sitúa en la escala de un encoder tipo DistilBERT-base, coherente con la etiqueta `distilbert` presente en los tags del repositorio. El pipeline declarado es `text-classification`.
 
-El problema que parece abordar, a juzgar únicamente por el identificador del modelo ("scam detector", detector de estafas), es la deteccion de mensajes fraudulentos o intentos de fraude. Sin embargo, la model card es la plantilla autogenerada de HuggingFace y no contiene ninguna seccion completada: no se documentan datos de entrenamiento, metricas, idiomas, licencia ni procedencia de los pesos. El repositorio registra 0 descargas y 0 "likes" en el momento de la consulta.
+El problema que parece abordar, a juzgar únicamente por el identificador del modelo ("scam detector", detector de estafas), es la deteccion de mensajes fraudulentos o intentos de fraude. Sin embargo, la model card es la plantilla autogenerada de Hugging Face y no contiene ninguna seccion completada: no se documentan datos de entrenamiento, metricas, idiomas, licencia ni procedencia de los pesos. El repositorio registra 0 descargas y 0 "likes" en el momento de la consulta.
 
 Por tanto, se trata de un artefacto sin documentacion verificable. Es relevante unicamente como punto de partida para inspeccion propia, no como componente listo para produccion: no hay evidencia publicada de su comportamiento, de la composicion de su dataset ni de las condiciones legales de uso, y la licencia no esta declarada.
 
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Comparativa con modelos similares
 
-Los datos de la columna de este modelo proceden del repositorio de HuggingFace; los de las alternativas son valores de referencia publicos de sus arquitecturas, no resultados de evaluacion comparativa. No existen benchmarks del modelo analizado que permitan una comparacion real de rendimiento.
+Los datos de la columna de este modelo proceden del repositorio de Hugging Face; los de las alternativas son valores de referencia publicos de sus arquitecturas, no resultados de evaluacion comparativa. No existen benchmarks del modelo analizado que permitan una comparacion real de rendimiento.
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Rendimiento |
 |---|---|---|---|---|---|
@@ -99,7 +99,7 @@ La diferencia practica mas relevante no es de tamano sino de trazabilidad: las a
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tshai1/purrtectme-scam-detector-v1
+- Hugging Face: https://huggingface.co/tshai1/purrtectme-scam-detector-v1
 - Paper referenciado en los tags (Lacoste et al., 2019, sobre emisiones de carbono en aprendizaje automatico): https://arxiv.org/abs/1910.09700
 - Referencia de la arquitectura DistilBERT (no citada por el autor, incluida por la etiqueta `distilbert`): https://arxiv.org/abs/1910.01108
 

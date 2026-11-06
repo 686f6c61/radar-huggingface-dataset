@@ -6,7 +6,7 @@ Roy229/ftfp1243-vision-classifier es un modelo de clasificación de imágenes de
 
 La relevancia de este modelo radica en su simplicidad y enfoque específico: clasificar imágenes de productos en categorías predefinidas, una tarea común en comercio electrónico, catálogos digitales y sistemas de gestión de inventario. Sin embargo, la información pública disponible es muy limitada: no se especifican detalles sobre la arquitectura subyacente, el número de parámetros, el conjunto de datos de entrenamiento ni los resultados de evaluación. Esto dificulta una evaluación técnica rigurosa y obliga a tratar los datos presentados con cautela.
 
-El modelo fue creado el 16 de agosto de 2026 y actualizado el mismo día, lo que indica que es un proyecto reciente y posiblemente en fase temprana de desarrollo. No se han registrado descargas ni interacciones en HuggingFace, lo que refuerza la idea de que se trata de un modelo en evaluación interna más que de una herramienta pública consolidada.
+El modelo fue creado el 16 de agosto de 2026 y actualizado el mismo día, lo que indica que es un proyecto reciente y posiblemente en fase temprana de desarrollo. No se han registrado descargas ni interacciones en Hugging Face, lo que refuerza la idea de que se trata de un modelo en evaluación interna más que de una herramienta pública consolidada.
 
 ## Especificaciones tecnicas
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 - VRAM estimada: 4 GB según los requisitos de despliegue indicados por el autor. Esto sugiere que el modelo cabe en GPUs como la NVIDIA GTX 1660 Super, RTX 2060, RTX 3050, o en GPUs de datacenter como la T4.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de memoria, por ejemplo NVIDIA T4, RTX 3060, RTX 4060, o incluso GPUs integradas de gama alta con suficiente VRAM compartida.
 - Tamaño de lote recomendado: 32, lo que indica que el modelo es relativamente ligero y puede procesar lotes moderados sin agotar la memoria.
-- Opciones de despliegue: al usar timm, el modelo puede servirse con frameworks de inferencia como TorchServe, FastAPI con PyTorch, o mediante ONNX Runtime si se exporta a ONNX. También podría integrarse en pipelines de visión con HuggingFace Transformers si se adapta.
+- Opciones de despliegue: al usar timm, el modelo puede servirse con frameworks de inferencia como TorchServe, FastAPI con PyTorch, o mediante ONNX Runtime si se exporta a ONNX. También podría integrarse en pipelines de visión con Hugging Face Transformers si se adapta.
 - Latencia y throughput: no disponibles. Dado el tamaño moderado, se espera una latencia baja en GPU (del orden de milisegundos por imagen), pero no se confirma.
 
 ## Comparativa con modelos similares
@@ -70,5 +70,5 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Roy229/ftfp1243-vision-classifier
+- Hugging Face: https://huggingface.co/Roy229/ftfp1243-vision-classifier
 - No se han encontrado papers, repositorios de código, demos o blogs asociados al modelo en la información disponible.

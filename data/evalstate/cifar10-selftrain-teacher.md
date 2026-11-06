@@ -23,7 +23,7 @@ Su relevancia radica en que permite estudiar empíricamente los mecanismos del a
 
 ## Arquitectura y entrenamiento
 
-El modelo es una red neuronal convolucional compacta denominada MediumCNN, con aproximadamente 1,56 millones de parámetros. No se trata de una arquitectura ResNet-50 ni de un transformer, sino de una CNN clásica para clasificación de imágenes. El entrenamiento se realiza sobre un subconjunto de 5000 muestras del dataset CIFAR-10 (obtenido vía HuggingFace `uoft-cs/cifar10`), con ruido simétrico en las etiquetas (η=0,4), lo que introduce un error estocástico inicial.
+El modelo es una red neuronal convolucional compacta denominada MediumCNN, con aproximadamente 1,56 millones de parámetros. No se trata de una arquitectura ResNet-50 ni de un transformer, sino de una CNN clásica para clasificación de imágenes. El entrenamiento se realiza sobre un subconjunto de 5000 muestras del dataset CIFAR-10 (obtenido vía Hugging Face `uoft-cs/cifar10`), con ruido simétrico en las etiquetas (η=0,4), lo que introduce un error estocástico inicial.
 
 El optimizador es SGD con tasa de aprendizaje 0,1, momentum 0,9, weight decay 5e-4 y Nesterov, con programación coseno y 50 épocas, batch de 256. Se aplican aumentos de datos: recorte aleatorio con padding de 4 píxeles y reflexión, volteo horizontal y normalización. La innovación técnica no reside en la arquitectura, sino en su papel como punto de partida en un esquema de auto-destilación iterativa: cada estudiante se entrena desde cero sobre pseudo-etiquetas duras generadas por el profesor anterior, sobre subconjuntos disjuntos. Esto permite observar la curva de error en forma de U (denoising seguido de forgetting) descrita en el paper.
 
@@ -79,5 +79,5 @@ Nota: los datos de LeNet-5 y ResNet-20 son valores aproximados de la literatura 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/evalstate/cifar10-selftrain-teacher)
+- [Modelo en Hugging Face](https://huggingface.co/evalstate/cifar10-selftrain-teacher)
 - [Paper de referencia: *Why Self-Training Helps and Hurts* (arXiv:2602.14029)](https://arxiv.org/abs/2602.14029)

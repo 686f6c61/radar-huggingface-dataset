@@ -100,7 +100,7 @@ No se dispone de datos de benchmarks comparativos frente a otras alternativas de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hakunokina/Tess-4.5-27B-oQ6e-mtp
+- Modelo en Hugging Face: https://huggingface.co/hakunokina/Tess-4.5-27B-oQ6e-mtp
 - Modelo fuente: https://huggingface.co/migtissera/Tess-4.5-27B
 - Versión GGUF del modelo fuente: https://huggingface.co/migtissera/Tess-4.5-27B-GGUF
 - Build oQ8e: https://huggingface.co/hakunokina/Tess-4.5-27B-oQ8e-mtp

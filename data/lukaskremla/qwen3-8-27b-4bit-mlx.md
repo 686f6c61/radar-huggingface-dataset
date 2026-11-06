@@ -73,6 +73,6 @@ No se dispone de datos suficientes para una comparación cuantitativa con otras 
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/lukaskremla/Qwen3.8-27B-4bit-MLX)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/lukaskremla/Qwen3.8-27B-4bit-MLX)
 - [Modelo base Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [Colección Qwen 3.8 27B MLX-Quants](https://huggingface.co/collections/lukaskremla/qwen-38-27b-mlx-quants-vision-text-only-and-mtp-6a7f4a32aee1afa13a6a4661)

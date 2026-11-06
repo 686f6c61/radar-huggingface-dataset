@@ -63,8 +63,8 @@ No se dispone de datos de rendimiento comparativos en la informacion proporciona
 - Este repositorio concreto (`vasilerosca891/MiniMax-H3`) es una replica de un tercero con 0 descargas y 0 likes. Se recomienda verificar la procedencia y la integridad de los pesos antes de su uso, y considerar el repositorio oficial `MiniMaxAI/MiniMax-H3` como fuente de referencia.
 
 ## Enlaces
-- Repositorio en HuggingFace (replica): https://huggingface.co/vasilerosca891/MiniMax-H3
-- Repositorio oficial en HuggingFace: https://huggingface.co/MiniMaxAI/MiniMax-H3
+- Repositorio en Hugging Face (replica): https://huggingface.co/vasilerosca891/MiniMax-H3
+- Repositorio oficial en Hugging Face: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Repositorio en GitHub: https://github.com/MiniMax-AI/MiniMax-H3
 - Documentacion de la API global: https://platform.minimax.io/docs/api-reference/video-generation-v2-create
 - Documentacion de la API China: https://platform.minimaxi.com/docs/api-reference/video-generation-v2-create

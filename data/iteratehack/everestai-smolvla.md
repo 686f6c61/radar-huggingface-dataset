@@ -77,7 +77,7 @@ SmolVLA se posiciona como una alternativa mucho más ligera que OpenVLA o RT-2, 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/iteratehack/everestai-smolvla
+- Repositorio Hugging Face: https://huggingface.co/iteratehack/everestai-smolvla
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Paper SmolVLA: https://arxiv.org/abs/2506.01844
 - Blog de Hugging Face sobre SmolVLA: https://github.com/huggingface/blog/blob/main/smolvla.md

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-4B-Instruct-2507-SD-UnifiedFC-512-44-v2 es un ajuste fino supervisado (SFT) del modelo Qwen3-4B-Instruct-2507, publicado por el usuario Ali-Mhrez en HuggingFace. Se trata de un derivado comunitario, no de un lanzamiento oficial de Alibaba Qwen: el autor parte de la versión sin cuantizar de Unsloth del modelo base y la entrena con TRL 0.24.0 sobre transformers 5.16.1 y PyTorch 2.11.0+cu128, empleando Unsloth para optimizar el proceso. El repositorio ocupa 1,2 GB y contiene pesos en safetensors, lo que sugiere una distribución en precisión de 16 bits para un modelo de aproximadamente 4.000 millones de parámetros (el tamaño exacto no se detalla en la model card).
+Qwen3-4B-Instruct-2507-SD-UnifiedFC-512-44-v2 es un ajuste fino supervisado (SFT) del modelo Qwen3-4B-Instruct-2507, publicado por el usuario Ali-Mhrez en Hugging Face. Se trata de un derivado comunitario, no de un lanzamiento oficial de Alibaba Qwen: el autor parte de la versión sin cuantizar de Unsloth del modelo base y la entrena con TRL 0.24.0 sobre transformers 5.16.1 y PyTorch 2.11.0+cu128, empleando Unsloth para optimizar el proceso. El repositorio ocupa 1,2 GB y contiene pesos en safetensors, lo que sugiere una distribución en precisión de 16 bits para un modelo de aproximadamente 4.000 millones de parámetros (el tamaño exacto no se detalla en la model card).
 
 El interés de esta ficha es doble. Por un lado, documenta un caso típico de laecosistema actual de fine-tuning: un modelo abierto de 4B, entrenado con SFT sobre un dataset no especificado, orientado presumiblemente a unificar llamadas a funciones (el sufijo "UnifiedFC" del nombre así lo apunta, aunque el autor no lo confirma). Por otro, sirve de advertencia metodológica: la model card es una plantilla autogenerada por TRL que no documenta dataset, hiperparámetros, número de tokens, evaluación ni licencia, de modo que cualquier uso en producción exige una validación empírica previa.
 
@@ -63,15 +63,15 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Qwen3-4B-Instruct-2507-SD-UnifiedFC-512-44-v2 | Escala 4B (no detallado) | No disponible | No disponible (base Apache 2.0) | HuggingFace, safetensors | Fine-tune SFT sin dataset ni evaluación documentados |
-| Qwen3-4B-Instruct-2507 (base) | 4B | No disponible en esta ficha | Apache 2.0 | HuggingFace, safetensors y GGUF de la comunidad | Modelo oficial de referencia; conserva la documentación completa |
-| Qwen3-4B-Instruct-2507 de Unsloth | 4B | No disponible en esta ficha | Apache 2.0 | HuggingFace | Punto de partida exacto de este fine-tune, con cuantizaciones publicadas |
-| Alternativas de 3-4B de otros laboratorios | 3-4B | Varía | Varía | HuggingFace | No se aportan datos verificados en la información disponible; se omite la comparación numérica para no inventar cifras |
+| Qwen3-4B-Instruct-2507-SD-UnifiedFC-512-44-v2 | Escala 4B (no detallado) | No disponible | No disponible (base Apache 2.0) | Hugging Face, safetensors | Fine-tune SFT sin dataset ni evaluación documentados |
+| Qwen3-4B-Instruct-2507 (base) | 4B | No disponible en esta ficha | Apache 2.0 | Hugging Face, safetensors y GGUF de la comunidad | Modelo oficial de referencia; conserva la documentación completa |
+| Qwen3-4B-Instruct-2507 de Unsloth | 4B | No disponible en esta ficha | Apache 2.0 | Hugging Face | Punto de partida exacto de este fine-tune, con cuantizaciones publicadas |
+| Alternativas de 3-4B de otros laboratorios | 3-4B | Varía | Varía | Hugging Face | No se aportan datos verificados en la información disponible; se omite la comparación numérica para no inventar cifras |
 
 ## Limitaciones y advertencias
 
 - Model card autogenerada: no documenta dataset, hiperparámetros, número de tokens ni método de evaluación, lo que impide reproducir el entrenamiento o auditar sus sesgos.
-- Licencia ambigua: el campo de licencia de HuggingFace figura como no disponible y la model card contiene `licence: license` sin texto legal; el uso comercial solo puede justificarse por la licencia Apache 2.0 del modelo base, y conviene verificar los términos con el autor antes de desplegar.
+- Licencia ambigua: el campo de licencia de Hugging Face figura como no disponible y la model card contiene `licence: license` sin texto legal; el uso comercial solo puede justificarse por la licencia Apache 2.0 del modelo base, y conviene verificar los términos con el autor antes de desplegar.
 - Riesgo de degradación respecto al base: un SFT sobre un dataset desconocido puede reducir capacidades generales (razonamiento, matemáticas, multilingüismo) sin que existan benchmarks que lo detecten.
 - Riesgo de alucinación: inherente a los modelos de 4B, agravado por la ausencia de evaluación y por posibles sobreajustes al formato del dataset de entrenamiento.
 - Idiomas no verificados: aunque el base es multilingüe, no hay garantía de que el fine-tune mantenga el rendimiento fuera del inglés, y menos aún en castellano.
@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-UnifiedFC-512-44-v2)
+- [Modelo en Hugging Face](https://huggingface.co/Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-UnifiedFC-512-44-v2)
 - [Modelo base en Unsloth](https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507)
 - [Repositorio de TRL](https://github.com/huggingface/trl)
 - [Documentación de Unsloth](https://github.com/unslothai/unsloth)

@@ -75,8 +75,8 @@ No se han publicado comparaciones directas con otros modelos en la informacion d
 
 | Modelo | Tipo | Parametros | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-4B-Wazuh-Triage-LoRA | Clasificador LoRA especializado en triaje Wazuh | 4B + 3×32,5M entrenables | Clasificacion de ventanas de alertas | Apache-2.0 | Publico en HuggingFace |
-| LLM generalista sin fine-tuning (Qwen3.5-4B base) | Modelo de lenguaje generico | 4B | Uso generico, no optimizado para triaje | Apache-2.0 | Publico en HuggingFace |
+| Qwen3.5-4B-Wazuh-Triage-LoRA | Clasificador LoRA especializado en triaje Wazuh | 4B + 3×32,5M entrenables | Clasificacion de ventanas de alertas | Apache-2.0 | Publico en Hugging Face |
+| LLM generalista sin fine-tuning (Qwen3.5-4B base) | Modelo de lenguaje generico | 4B | Uso generico, no optimizado para triaje | Apache-2.0 | Publico en Hugging Face |
 | Reglas y correlaciones nativas de Wazuh | Sistema de reglas determinista | no disponible | Deteccion basada en reglas | GPL-2.0 (Wazuh) | Open source |
 
 ## Limitaciones y advertencias
@@ -93,6 +93,6 @@ No se han publicado comparaciones directas con otros modelos en la informacion d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ragraph-ai/Qwen3.5-4B-Wazuh-Triage-LoRA
+- Modelo en Hugging Face: https://huggingface.co/ragraph-ai/Qwen3.5-4B-Wazuh-Triage-LoRA
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Paper: *Fine-Tuning a 4B Language Model for Site-Specific Wazuh Alert Triage* (v2, 26 de octubre de 2026); preprint de arXiv en preparacion, identificador no disponible todavia.

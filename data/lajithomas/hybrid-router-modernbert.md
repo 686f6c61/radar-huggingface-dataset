@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`lajithomas/hybrid-router-modernbert` es un modelo de clasificación de texto en inglés publicado por el usuario lajithomas en HuggingFace. Se trata de un ajuste fino (fine-tuning) del modelo encoder `unsloth/ModernBERT-large`, realizado con la librería Unsloth, que el autor indica que permite entrenar "2 veces más rápido". El repositorio contiene 395.840.521 parámetros en formato safetensors (aproximadamente 1,6 GB, lo que corresponde a pesos en precisión FP32).
+`lajithomas/hybrid-router-modernbert` es un modelo de clasificación de texto en inglés publicado por el usuario lajithomas en Hugging Face. Se trata de un ajuste fino (fine-tuning) del modelo encoder `unsloth/ModernBERT-large`, realizado con la librería Unsloth, que el autor indica que permite entrenar "2 veces más rápido". El repositorio contiene 395.840.521 parámetros en formato safetensors (aproximadamente 1,6 GB, lo que corresponde a pesos en precisión FP32).
 
 El modelo se distribuye con licencia Apache 2.0 y pipeline declarado `text-classification`, aunque el nombre "hybrid-router" sugiere un uso como clasificador de enrutamiento dentro de sistemas híbridos (por ejemplo, decidir entre recuperación documental o generación con un LLM grande). La model card no describe el espacio de etiquetas, el conjunto de datos de entrenamiento ni las métricas obtenidas, por lo que se trata de un artefacto sin validación pública: cero descargas y cero "likes" en el momento de redactar esta ficha.
 
@@ -23,7 +23,7 @@ Su relevancia actual es la del ecosistema ModernBERT: un encoder bidireccional m
 | Pipeline declarado | text-classification |
 | Modelo base | unsloth/ModernBERT-large |
 | Tamaño del repositorio | 1,6 GB |
-| Fecha de publicación | 17 de octubre de 2026 (según metadatos de HuggingFace) |
+| Fecha de publicación | 17 de octubre de 2026 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada: aproximadamente 1,6 GB para los pesos en FP32 tal y como se distribuyen; unos 0,8 GB en FP16/BF16; alrededor de 0,4 GB en INT8 y 0,2 GB en 4 bits si se cuantiza por cuenta propia.
 - GPU recomendadas: cualquier GPU con 2 GB o más de VRAM es suficiente (RTX 3060, RTX 4060, RTX 4090, T4, L4, A10). Para lotes grandes y despliegue de alto rendimiento, A100 o H100 permiten maximizar el throughput, aunque están sobredimensionadas para este tamaño.
 - Cabe sin problemas en GPU de consumo, e incluso en CPU e iGPU con ONNX o similar, dado el reducido número de parámetros.
-- Opciones de despliegue: transformers (nativo), Text Embeddings Inference (tag `text-embeddings-tagging`), HuggingFace Inference Endpoints (tag `endpoints_compatible`) y TGI (tag `text-generation-inference`, aunque un encoder de clasificación no es el caso de uso típico de TGI). No hay pesos GGUF publicados, por lo que Ollama o llama.cpp requerirían una conversión propia.
+- Opciones de despliegue: transformers (nativo), Text Embeddings Inference (tag `text-embeddings-tagging`), Hugging Face Inference Endpoints (tag `endpoints_compatible`) y TGI (tag `text-generation-inference`, aunque un encoder de clasificación no es el caso de uso típico de TGI). No hay pesos GGUF publicados, por lo que Ollama o llama.cpp requerirían una conversión propia.
 - Latencia y throughput estimados: no disponibles. No se han publicado mediciones de tokens por segundo ni de latencia por petición.
 
 ## Comparativa con modelos similares
@@ -90,7 +90,7 @@ Las cifras de parámetros, contexto y licencia de los modelos comparables proced
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lajithomas/hybrid-router-modernbert
+- Modelo en Hugging Face: https://huggingface.co/lajithomas/hybrid-router-modernbert
 - Modelo base: https://huggingface.co/unsloth/ModernBERT-large
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Paper de ModernBERT (arquitectura del modelo base): https://arxiv.org/abs/2412.13663

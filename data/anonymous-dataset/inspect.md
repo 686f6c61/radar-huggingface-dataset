@@ -2,7 +2,7 @@
 
 ## Resumen
 
-InSpect es un artefacto publicado en HuggingFace bajo el identificador `anonymous-dataset/InSpect`, con un tamano de repositorio de 24,3 GB y pesos en formato safetensors. La model card asociada esta practicamente vacia: unicamente declara licencia MIT, sin descripcion, sin arquitectura declarada, sin idiomas y sin pipeline asignado. El autor figura como `anonymous-dataset`, lo que sugiere una publicacion anonima, probablemente vinculada a un envio a revision por pares o a un benchmark interno.
+InSpect es un artefacto publicado en Hugging Face bajo el identificador `anonymous-dataset/InSpect`, con un tamano de repositorio de 24,3 GB y pesos en formato safetensors. La model card asociada esta practicamente vacia: unicamente declara licencia MIT, sin descripcion, sin arquitectura declarada, sin idiomas y sin pipeline asignado. El autor figura como `anonymous-dataset`, lo que sugiere una publicacion anonima, probablemente vinculada a un envio a revision por pares o a un benchmark interno.
 
 A pesar de la etiqueta de licencia MIT y del formato safetensors, no hay informacion publica que permita confirmar que se trate de un modelo de lenguaje generativo. El nombre "InSpect" y el hecho de que el autor se identifique como "anonymous-dataset" apuntan a que podria tratarse de un dataset empaquetado en safetensors, un checkpoint de un modelo en fase de revision o un artefacto auxiliar (por ejemplo, pesos de un clasificador o de un extractor de caracteristicas). El pipeline no esta declarado, lo que impide asignarlo a una tarea concreta.
 
@@ -23,7 +23,7 @@ Su relevancia actual es limitada desde el punto de vista practico: no hay descar
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de HuggingFace. El unico dato estructural disponible es el formato de pesos (safetensors) y el tamano del repositorio (24,3 GB), que es compatible con un checkpoint de decenas de miles de millones de parametros en precision de 16 bits, pero tambien con un dataset o un conjunto de tensores auxiliares de gran tamano. Sin un fichero `config.json` publico ni una descripcion del autor, no es posible determinar si se trata de un transformer denso, un modelo de mezcla de expertos, una arquitectura hibrida o un componente no generativo.
+No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de Hugging Face. El unico dato estructural disponible es el formato de pesos (safetensors) y el tamano del repositorio (24,3 GB), que es compatible con un checkpoint de decenas de miles de millones de parametros en precision de 16 bits, pero tambien con un dataset o un conjunto de tensores auxiliares de gran tamano. Sin un fichero `config.json` publico ni una descripcion del autor, no es posible determinar si se trata de un transformer denso, un modelo de mezcla de expertos, una arquitectura hibrida o un componente no generativo.
 
 Tampoco hay informacion sobre el corpus de entrenamiento, el numero de tokens procesados, la composicion del dataset, el uso de RLHF, DPO u otras tecnicas de alineamiento, ni sobre innovaciones tecnicas como decodificacion especulativa o atencion lineal. Cualquier afirmacion al respecto seria especulativa y, por tanto, se omite.
 
@@ -75,5 +75,5 @@ No disponible. Al no conocerse la categoria del artefacto (modelo de lenguaje, d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/anonymous-dataset/InSpect
+- Repositorio en Hugging Face: https://huggingface.co/anonymous-dataset/InSpect
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

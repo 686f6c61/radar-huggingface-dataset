@@ -90,7 +90,7 @@ A diferencia de las alternativas, SmolBabble-360m no tiene un proposito generali
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/SmolBabble-360m-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/SmolBabble-360m-GGUF
 - Modelo base: https://huggingface.co/benni-ben/SmolBabble-360m
 - Pagina de resumen y descargas del autor: https://hf.tst.eu/model#SmolBabble-360m-GGUF
 - Solicitudes de cuantizacion y preguntas frecuentes: https://huggingface.co/mradermacher/model_requests

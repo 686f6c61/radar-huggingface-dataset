@@ -86,8 +86,8 @@ La comparativa se limita a lo verificable: el modelo de Xenova es una conversion
 
 ## Enlaces
 
-- HuggingFace (repositorio Xenova): https://huggingface.co/Xenova/bge-base-en-v1.5
-- Modelo base en HuggingFace: https://huggingface.co/BAAI/bge-base-en-v1.5
+- Hugging Face (repositorio Xenova): https://huggingface.co/Xenova/bge-base-en-v1.5
+- Modelo base en Hugging Face: https://huggingface.co/BAAI/bge-base-en-v1.5
 - Documentacion de Transformers.js: https://huggingface.co/docs/transformers.js
 - Documentacion de Optimum (conversion a ONNX): https://huggingface.co/docs/optimum/index
 - Paquete npm de Transformers.js: https://www.npmjs.com/package/@huggingface/transformers

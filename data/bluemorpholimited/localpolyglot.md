@@ -2,11 +2,11 @@
 
 ## Resumen
 
-LocalPolyglot es un paquete de modelos ONNX publicado por el usuario `bluemorpholimited` en HuggingFace que implementa un intérprete de voz en tiempo real y totalmente offline para Android. Su función concreta es escuchar habla en cualquier idioma a través del micrófono del teléfono y emitir la traducción en voz cantonesa (粵語) por los auriculares, sin conexión a internet. No se trata de un modelo único, sino de la integración de tres sistemas encadenados: Whisper large-v3-turbo (809 M de parámetros) para reconocimiento de voz, NLLB-200-distilled-600M con un LoRA afinado para cantonés (600 M) para traducción, y CosyVoice-300M para síntesis de voz, más Silero VAD v5 para detección de actividad de voz. El repositorio ocupa 2,9 GB y contiene únicamente pesos en formato ONNX cuantizados a INT8 de forma dinámica.
+LocalPolyglot es un paquete de modelos ONNX publicado por el usuario `bluemorpholimited` en Hugging Face que implementa un intérprete de voz en tiempo real y totalmente offline para Android. Su función concreta es escuchar habla en cualquier idioma a través del micrófono del teléfono y emitir la traducción en voz cantonesa (粵語) por los auriculares, sin conexión a internet. No se trata de un modelo único, sino de la integración de tres sistemas encadenados: Whisper large-v3-turbo (809 M de parámetros) para reconocimiento de voz, NLLB-200-distilled-600M con un LoRA afinado para cantonés (600 M) para traducción, y CosyVoice-300M para síntesis de voz, más Silero VAD v5 para detección de actividad de voz. El repositorio ocupa 2,9 GB y contiene únicamente pesos en formato ONNX cuantizados a INT8 de forma dinámica.
 
 La relevancia del proyecto es de ingeniería más que de investigación: demuestra que una cadena completa de traducción de voz a voz (ASR → MT → TTS) puede ejecutarse en un dispositivo móvil ARM64 de gama alta sin conexión, usando ONNX Runtime 1.17 para Android como motor de inferencia. El dispositivo objetivo declarado es un iQOO Neo7 競速版 (Snapdragon 8+ Gen 1, 16 GB de RAM), con Android 13 (API 33) como versión mínima y latencia de audio gestionada mediante Oboe a 16 kHz mono PCM.
 
-Como ficha de modelo para producción, conviene señalar desde el principio que el repositorio no declara licencia propia, no especifica pipeline en HuggingFace, acumula cero descargas y cero likes en los metadatos consultados, y no publica ningún resultado de benchmarks, de latencia ni de tasa de error de traducción. La información disponible es, por tanto, la que el propio autor incluye en la model card.
+Como ficha de modelo para producción, conviene señalar desde el principio que el repositorio no declara licencia propia, no especifica pipeline en Hugging Face, acumula cero descargas y cero likes en los metadatos consultados, y no publica ningún resultado de benchmarks, de latencia ni de tasa de error de traducción. La información disponible es, por tanto, la que el propio autor incluye en la model card.
 
 ## Especificaciones tecnicas
 
@@ -18,14 +18,14 @@ Como ficha de modelo para producción, conviene señalar desde el principio que 
 | Longitud de contexto | No disponible. El pipeline segmenta el audio mediante VAD; no se documentan limites de tokens ni tamanos de ventana de audio |
 | Tipos de cuantizacion | INT8 dinamica en todos los componentes ONNX |
 | Idiomas soportados | Entrada: 99+ idiomas reconocidos por Whisper y 200 idiomas de traduccion en NLLB-200 (ingles, frances, aleman, espanol, italiano, japones, coreano, ruso, portugues, chino mandarin, arabe, hindi, thai, vietnamita y 185+ mas). Salida: unicamente cantonés (粵語) |
-| Licencia | El repositorio de HuggingFace no declara licencia. La model card indica: Apache 2.0 (CosyVoice), MIT (Whisper, NLLB, Silero VAD) y Apache 2.0 para la aplicacion |
+| Licencia | El repositorio de Hugging Face no declara licencia. La model card indica: Apache 2.0 (CosyVoice), MIT (Whisper, NLLB, Silero VAD) y Apache 2.0 para la aplicacion |
 | Formato de pesos | ONNX (INT8), exportados desde los pesos originales |
 | Tamano del repositorio | 2,9 GB |
 | Motor de inferencia | ONNX Runtime 1.17 para Android |
 | Audio | PCM mono a 16 kHz; salida con Oboe para baja latencia (cable y Bluetooth A2DP) |
 | Plataforma objetivo | Android 13 (API 33) o superior, ARM64 |
 | Dispositivo de referencia | iQOO Neo7 競速版 (Snapdragon 8+ Gen 1, 16 GB de RAM) |
-| Descargas y likes (HuggingFace) | 0 descargas, 0 likes |
+| Descargas y likes (Hugging Face) | 0 descargas, 0 likes |
 | Fechas de publicacion (metadatos HF) | Creado el 2026-09-19, actualizado el 2026-09-19 |
 
 Composicion detallada del paquete segun la model card:
@@ -109,7 +109,7 @@ La comparacion cuantitativa de rendimiento no es posible: no hay benchmarks publ
 ## Limitaciones y advertencias
 
 - Ausencia total de benchmarks: no hay WER, BLEU, chrF, COMET, MOS ni mediciones de latencia. No es posible evaluar la calidad real de la traduccion ni del habla sintetizada sin desplegar el pipeline.
-- Licencia del repositorio sin declarar en HuggingFace. La model card atribuye MIT a NLLB, pero la distribucion oficial de NLLB-200 se publica bajo CC-BY-NC-4.0; si esa condicion se aplica al modelo derivado, el uso comercial del componente de traduccion quedaria restringido. Es imprescindible verificar la licencia antes de cualquier despliegue productivo.
+- Licencia del repositorio sin declarar en Hugging Face. La model card atribuye MIT a NLLB, pero la distribucion oficial de NLLB-200 se publica bajo CC-BY-NC-4.0; si esa condicion se aplica al modelo derivado, el uso comercial del componente de traduccion quedaria restringido. Es imprescindible verificar la licencia antes de cualquier despliegue productivo.
 - Idoneidad para produccion no acreditada: cero descargas y cero likes en los metadatos, ausencia de pipeline declarado y ausencia de versionado o changelog.
 - Salida limitada al cantonés: no es un modelo multilingue de salida. Adaptarlo a otro idioma exige repetir el ciclo de LoRA, fusion y exportacion con un corpus paralelo propio.
 - Sesgos heredados: los de Whisper large-v3-turbo y NLLB-200 en reconocimiento y traduccion, incluidas las diferencias de calidad entre idiomas y las variantes dialectales del cantonés. No se documenta ninguna evaluacion de sesgo.
@@ -117,13 +117,13 @@ La comparacion cuantitativa de rendimiento no es posible: no hay benchmarks publ
 - El corpus de ajuste LoRA (cantonés coloquial) no se describe: se desconoce su tamano, procedencia, licencia y cobertura de registros.
 - Limitaciones de hardware: el unico dispositivo validado es un telefono con Snapdragon 8+ Gen 1 y 16 GB de RAM. No hay datos de rendimiento en gama media ni en Android de 32 bits, y no se declara la RAM minima.
 - Sin soporte documentado de escritorio ni de GPUs NVIDIA, AMD o Apple: no hay pesos GGUF, Safetensors ni integraciones con vLLM, TGI, llama.cpp u Ollama.
-- Fechas de publicacion inconsistentes: los metadatos de HuggingFace indican creacion y actualizacion en septiembre de 2026, posteriores a la fecha habitual de consulta, lo que conviene verificar.
+- Fechas de publicacion inconsistentes: los metadatos de Hugging Face indican creacion y actualizacion en septiembre de 2026, posteriores a la fecha habitual de consulta, lo que conviene verificar.
 - La salida de audio esta restringida a auriculares, lo que limita el uso en escenarios de grupo o altavoz.
 - Sin cifrado ni tratamiento de datos documentado: aunque el procesamiento es local, no se describe ninguna politica de retencion o de proteccion del audio capturado.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bluemorpholimited/localpolyglot
+- Modelo en Hugging Face: https://huggingface.co/bluemorpholimited/localpolyglot
 - Repositorio de scripts incluidos en el paquete (referenciados en la model card, sin URL publica indicada): `scripts/train_cantonese_lora.py`, `scripts/quantize_whisper.py`, `scripts/quantize_nllb.py`, `scripts/quantize_nllb_cantonese.py`, `scripts/merge_and_export_nllb.py`
 - Paper o blog del autor: no disponible
 - Demo publica: no disponible

@@ -3,7 +3,7 @@
 # Qwen3.8-27B-TOS-E1
 
 ## Resumen
-Qwen3.8-27B-TOS-E1 es un modelo publicado en HuggingFace por el usuario thetinkerer bajo licencia Apache 2.0. En el momento de redactar esta ficha, el repositorio no incluye model card descriptiva: el README se limita a la declaracion de licencia, y los metadatos no declaran pipeline de inferencia, idiomas soportados, arquitectura ni procedimiento de entrenamiento. El identificador sugiere un modelo de la familia Qwen3 con aproximadamente 27 000 millones de parametros y un sufijo propio ("TOS-E1"), pero esta interpretacion no esta confirmada por ninguna fuente del repositorio.
+Qwen3.8-27B-TOS-E1 es un modelo publicado en Hugging Face por el usuario thetinkerer bajo licencia Apache 2.0. En el momento de redactar esta ficha, el repositorio no incluye model card descriptiva: el README se limita a la declaracion de licencia, y los metadatos no declaran pipeline de inferencia, idiomas soportados, arquitectura ni procedimiento de entrenamiento. El identificador sugiere un modelo de la familia Qwen3 con aproximadamente 27 000 millones de parametros y un sufijo propio ("TOS-E1"), pero esta interpretacion no esta confirmada por ninguna fuente del repositorio.
 
 El modelo registra 0 descargas y 0 "likes", y su fecha de creacion y ultima actualizacion en los metadatos corresponde al 16 de septiembre de 2026, sin revisiones posteriores. Se trata, por tanto, de una publicacion sin adopcion documentada ni validacion externa conocida.
 
@@ -82,6 +82,6 @@ Cualquier comparacion con miembros de la familia Qwen3 u otros modelos de tamano
 - Sin garantias de mantenimiento: no hay actualizaciones registradas desde la fecha de creacion.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/thetinkerer/Qwen3.8-27B-TOS-E1
+- Repositorio en Hugging Face: https://huggingface.co/thetinkerer/Qwen3.8-27B-TOS-E1
 - Paper, blog, repositorio de codigo o demo: no disponibles.
 - Nota sobre la busqueda web: los resultados recuperados no guardan relacion con el modelo (articulos sobre la restauracion de la Pinacoteca de Sao Paulo) y se han descartado por no aportar informacion tecnica verificable.

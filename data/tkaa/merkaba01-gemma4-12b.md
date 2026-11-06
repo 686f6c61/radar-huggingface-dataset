@@ -82,7 +82,7 @@ La comparativa directa con alternativas de la misma categoria no es posible con 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Tkaa/Merkaba01-Gemma4-12B
+- Hugging Face: https://huggingface.co/Tkaa/Merkaba01-Gemma4-12B
 - Repositorio del runtime Merkaba01: no disponible en la informacion proporcionada
 - Paper o documentacion tecnica del esquema Skeleton-DoRA: no disponible
 - Modelo base Gemma 4 12B de Google: no disponible en la informacion proporcionada

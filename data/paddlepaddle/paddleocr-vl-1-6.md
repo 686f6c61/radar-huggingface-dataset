@@ -73,9 +73,9 @@ La documentación indica que el modelo lidera en reconocimiento de texto, fórmu
 
 | Modelo | Parametros | Contexto | OmniDocBench | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PaddleOCR-VL-1.6 | 0.9B | no disponible | 96.3% (v1.6) | Apache 2.0 | HuggingFace, ModelScope |
-| PaddleOCR-VL-1.5 | 0.9B | no disponible | 94.5% (v1.5) | Apache 2.0 | HuggingFace, ModelScope |
-| PaddleOCR-VL-1.0 | no disponible | no disponible | inferior al 1.5 | Apache 2.0 | HuggingFace, ModelScope |
+| PaddleOCR-VL-1.6 | 0.9B | no disponible | 96.3% (v1.6) | Apache 2.0 | Hugging Face, ModelScope |
+| PaddleOCR-VL-1.5 | 0.9B | no disponible | 94.5% (v1.5) | Apache 2.0 | Hugging Face, ModelScope |
+| PaddleOCR-VL-1.0 | no disponible | no disponible | inferior al 1.5 | Apache 2.0 | Hugging Face, ModelScope |
 
 No se dispone de información pública sobre comparativas directas con otros modelos de parsing documental como MinerU, GOT-OCR2.0 o Nougat en los resultados de búsqueda. La documentación menciona que supera a modelos generalistas grandes, pero no se especifican nombres ni cifras concretas.
 
@@ -90,7 +90,7 @@ No se dispone de información pública sobre comparativas directas con otros mod
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/PaddlePaddle/PaddleOCR-VL-1.6
+- Hugging Face: https://huggingface.co/PaddlePaddle/PaddleOCR-VL-1.6
 - ModelScope: https://modelscope.cn/models/PaddlePaddle/PaddleOCR-VL-1.6
 - Repositorio GitHub: https://github.com/PaddlePaddle/PaddleOCR
 - Documentación oficial: https://www.paddleocr.ai/main/en/version3.x/algorithm/PaddleOCR-VL/PaddleOCR-VL-1.6.html

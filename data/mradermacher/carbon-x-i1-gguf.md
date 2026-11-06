@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks ni de otros modelos genómicos comparables 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Carbon-X-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Carbon-X-i1-GGUF
 - Modelo base: https://huggingface.co/HuggingFaceBio/Carbon-X
 - Cuantizaciones estáticas: https://huggingface.co/mradermacher/Carbon-X-GGUF
 - Página de resumen del autor: https://hf.tst.eu/model#Carbon-X-i1-GGUF

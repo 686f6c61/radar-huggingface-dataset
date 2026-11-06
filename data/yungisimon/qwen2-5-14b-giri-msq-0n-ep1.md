@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`yungisimon/Qwen2.5-14B-giri-msq-0N-ep1` es un modelo de lenguaje publicado en HuggingFace por el usuario `yungisimon`, derivado de la familia Qwen2.5 en su variante de 14 000 millones de parámetros. Se distribuye como pesos completos en formato safetensors, con un total declarado de 14 770 033 664 parámetros y un repositorio de 29,6 GB, cifra coherente con un almacenamiento en bf16/fp16 sin cuantizar (14,77 B x 2 bytes ≈ 29,5 GB).
+`yungisimon/Qwen2.5-14B-giri-msq-0N-ep1` es un modelo de lenguaje publicado en Hugging Face por el usuario `yungisimon`, derivado de la familia Qwen2.5 en su variante de 14 000 millones de parámetros. Se distribuye como pesos completos en formato safetensors, con un total declarado de 14 770 033 664 parámetros y un repositorio de 29,6 GB, cifra coherente con un almacenamiento en bf16/fp16 sin cuantizar (14,77 B x 2 bytes ≈ 29,5 GB).
 
-El nombre del repositorio sugiere un ajuste fino (fine-tuning) sobre un conjunto de datos propio, con el sufijo `ep1` apuntando a una única época de entrenamiento, pero la ficha de HuggingFace no incluye model card, pipeline declarado, licencia, idiomas ni ningún detalle sobre el dataset o el procedimiento seguido. Tampoco se han publicado resultados de evaluación.
+El nombre del repositorio sugiere un ajuste fino (fine-tuning) sobre un conjunto de datos propio, con el sufijo `ep1` apuntando a una única época de entrenamiento, pero la ficha de Hugging Face no incluye model card, pipeline declarado, licencia, idiomas ni ningún detalle sobre el dataset o el procedimiento seguido. Tampoco se han publicado resultados de evaluación.
 
 Por tanto, se trata de un modelo con relevancia potencial para quien necesite una variante de Qwen2.5-14B ajustada a un dominio concreto, pero cuyo comportamiento real no puede verificarse con la información disponible. En el momento de redactar esta ficha acumula 0 descargas y 1 like, y las fechas de creación y actualización del repositorio son del 12 de septiembre de 2026.
 
@@ -78,10 +78,10 @@ Los datos de los modelos de comparación proceden de su documentación pública.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| yungisimon/Qwen2.5-14B-giri-msq-0N-ep1 | 14,77 B | No disponible (base: 32 768 / 131 072 con YaRN) | No disponible | HuggingFace, pesos safetensors |
-| Qwen2.5-14B-Instruct | 14,7 B | 32 768 nativos; 131 072 con YaRN | Apache 2.0 | HuggingFace y Qwen |
-| Phi-4 (Microsoft) | 14,7 B | 16 384 | MIT | HuggingFace |
-| Mistral-NeMo-Instruct-2407 | 12,2 B | 128 000 | Apache 2.0 | HuggingFace |
+| yungisimon/Qwen2.5-14B-giri-msq-0N-ep1 | 14,77 B | No disponible (base: 32 768 / 131 072 con YaRN) | No disponible | Hugging Face, pesos safetensors |
+| Qwen2.5-14B-Instruct | 14,7 B | 32 768 nativos; 131 072 con YaRN | Apache 2.0 | Hugging Face y Qwen |
+| Phi-4 (Microsoft) | 14,7 B | 16 384 | MIT | Hugging Face |
+| Mistral-NeMo-Instruct-2407 | 12,2 B | 128 000 | Apache 2.0 | Hugging Face |
 
 Diferencias clave: frente a los tres modelos de referencia, este ajuste no declara licencia, idiomas ni contexto, y carece de resultados de evaluación publicados, lo que impide establecer una comparación de rendimiento. Phi-4 y Mistral-NeMo presentan ventanas de contexto declaradas (16 384 y 128 000 tokens respectivamente) y licencias permisivas verificables. Qwen2.5-14B-Instruct es la referencia natural por compartir arquitectura y pesos base, y es la comparación mínima obligatoria para determinar si el ajuste aporta alguna mejora.
 
@@ -100,7 +100,7 @@ Diferencias clave: frente a los tres modelos de referencia, este ajuste no decla
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yungisimon/Qwen2.5-14B-giri-msq-0N-ep1
+- Repositorio en Hugging Face: https://huggingface.co/yungisimon/Qwen2.5-14B-giri-msq-0N-ep1
 - Modelo base de referencia: https://huggingface.co/Qwen/Qwen2.5-14B
 - Documentación técnica de Qwen2.5: https://qwenlm.github.io/blog/qwen2.5/
 - Paper de la familia Qwen2.5: https://arxiv.org/abs/2412.15115

@@ -78,8 +78,8 @@ La informacion proporcionada no incluye datos de rendimiento de modelos comparab
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hermitdave/Agnes-3.0-Flash-MLX-4bit | 32,2B | 262.144 | 4-bit MLX (4,50 bits/peso) | Apache-2.0 | HuggingFace (MLX) |
-| Agnes-AI/Agnes-3.0-Flash | no disponible | 262.144 | pesos originales (bf16) | Apache-2.0 | HuggingFace |
+| hermitdave/Agnes-3.0-Flash-MLX-4bit | 32,2B | 262.144 | 4-bit MLX (4,50 bits/peso) | Apache-2.0 | Hugging Face (MLX) |
+| Agnes-AI/Agnes-3.0-Flash | no disponible | 262.144 | pesos originales (bf16) | Apache-2.0 | Hugging Face |
 | Otros modelos de ~30B de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -98,7 +98,7 @@ La informacion proporcionada no incluye datos de rendimiento de modelos comparab
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hermitdave/Agnes-3.0-Flash-MLX-4bit
+- Modelo en Hugging Face: https://huggingface.co/hermitdave/Agnes-3.0-Flash-MLX-4bit
 - Modelo base: https://huggingface.co/Agnes-AI/Agnes-3.0-Flash
 - Pipeline de conversion (Hermes Agent, Nous Research): https://hermes-agent.nousresearch.com
 - Libreria de inferencia MLX (`mlx-lm`): no disponible en la informacion proporcionada

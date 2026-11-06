@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Jue-Flash (决·闪) es un modelo de decisión de 350 millones de parámetros especializado en ciberseguridad, desarrollado por Jue1Dev y publicado en HuggingFace. Se construye mediante fine-tuning sobre el encoder bidireccional LiquidAI/LFM2.5-Encoder-350M y no genera texto libre: recibe un artefacto de seguridad junto con unas pocas preguntas tipadas y devuelve, en un único forward pass, una probabilidad calibrada para cada opción disponible. El modelo sigue el protocolo Jev `/v1/systemone` y está pensado para triaje de primera pasada en centros de operaciones de seguridad (SOC).
+Jue-Flash (决·闪) es un modelo de decisión de 350 millones de parámetros especializado en ciberseguridad, desarrollado por Jue1Dev y publicado en Hugging Face. Se construye mediante fine-tuning sobre el encoder bidireccional LiquidAI/LFM2.5-Encoder-350M y no genera texto libre: recibe un artefacto de seguridad junto con unas pocas preguntas tipadas y devuelve, en un único forward pass, una probabilidad calibrada para cada opción disponible. El modelo sigue el protocolo Jev `/v1/systemone` y está pensado para triaje de primera pasada en centros de operaciones de seguridad (SOC).
 
 El modelo aborda un problema concreto: la latencia y el coste de aplicar modelos generativos grandes a tareas de clasificación y decisión en seguridad. Jue-Flash prioriza velocidad —alrededor de 0,1 s por petición en Apple silicon tras el warm-up— a costa de capacidad. El propio autor reconoce que, comparado con el modelo Jue de 2,5B sobre los mismos ítems de 131 tareas externas, Jue-Flash solo supera a Jue en 14 de ellas.
 
@@ -88,9 +88,9 @@ No se han publicado en la información disponible comparaciones numéricas con o
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jue-Flash | 350M | 4.096 tokens | Encoder de decisión para ciberseguridad | lfm1.0 | HuggingFace (Jue1Dev/jue-flash) |
-| Jue | 2,5B (según la model card) | No disponible | Modelo de decisión para ciberseguridad, mismo protocolo | No disponible | HuggingFace (Jue1Dev/jue) |
-| LiquidAI/LFM2.5-Encoder-350M | 350M | No disponible | Encoder base general | No disponible | HuggingFace (LiquidAI) |
+| Jue-Flash | 350M | 4.096 tokens | Encoder de decisión para ciberseguridad | lfm1.0 | Hugging Face (Jue1Dev/jue-flash) |
+| Jue | 2,5B (según la model card) | No disponible | Modelo de decisión para ciberseguridad, mismo protocolo | No disponible | Hugging Face (Jue1Dev/jue) |
+| LiquidAI/LFM2.5-Encoder-350M | 350M | No disponible | Encoder base general | No disponible | Hugging Face (LiquidAI) |
 
 El autor indica que, sobre los mismos ítems de 131 tareas externas, Jue-Flash supera a Jue en solo 14, lo que sitúa al modelo de 2,5B como la alternativa de mayor calidad dentro de la misma familia. No se dispone de datos de otros modelos comparables de ciberseguridad en la información proporcionada.
 
@@ -109,7 +109,7 @@ El autor indica que, sobre los mismos ítems de 131 tareas externas, Jue-Flash s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jue1Dev/jue-flash
+- Modelo en Hugging Face: https://huggingface.co/Jue1Dev/jue-flash
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-Encoder-350M
 - Modelo Jue (2,5B): https://huggingface.co/Jue1Dev/jue
 - Página del proyecto: https://jue1.dev

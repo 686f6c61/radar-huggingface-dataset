@@ -2,9 +2,9 @@
 
 ## Resumen
 
-qwen35-9b-merged es un ajuste fino (finetune) del modelo base Qwen/Qwen3.5-9B-Base, publicado por el usuario minorproject-research en HuggingFace. Se distribuye bajo licencia Apache 2.0, en formato safetensors y con la libreria transformers como backend declarado. El repositorio ocupa 19,3 GB y contiene 9.653.104.368 parametros reales (aproximadamente 9,65 mil millones), lo que cuadra con un almacenamiento en precision bf16/fp16 sin cuantizar.
+qwen35-9b-merged es un ajuste fino (finetune) del modelo base Qwen/Qwen3.5-9B-Base, publicado por el usuario minorproject-research en Hugging Face. Se distribuye bajo licencia Apache 2.0, en formato safetensors y con la libreria transformers como backend declarado. El repositorio ocupa 19,3 GB y contiene 9.653.104.368 parametros reales (aproximadamente 9,65 mil millones), lo que cuadra con un almacenamiento en precision bf16/fp16 sin cuantizar.
 
-El modelo se presenta con el pipeline image-text-to-text, lo que indica que la familia Qwen3.5 de la que deriva maneja entrada de imagen y texto, ademas de generacion de texto. El ajuste se realizo con Unsloth y la libreria TRL de HuggingFace, segun indica la propia model card, y el resultado se ha fusionado (de ahi el sufijo "merged") en un unico conjunto de pesos.
+El modelo se presenta con el pipeline image-text-to-text, lo que indica que la familia Qwen3.5 de la que deriva maneja entrada de imagen y texto, ademas de generacion de texto. El ajuste se realizo con Unsloth y la libreria TRL de Hugging Face, segun indica la propia model card, y el resultado se ha fusionado (de ahi el sufijo "merged") en un unico conjunto de pesos.
 
 La relevancia de esta ficha es limitada pero util como caso de estudio: se trata de un modelo sin descargas ni likes en el momento de la consulta, con una model card que es esencialmente la plantilla por defecto de Unsloth, sin dataset de entrenamiento documentado, sin resultados de benchmarks y sin detalles de hiperparametros. Cualquier evaluacion seria exige validacion propia antes de considerarlo para produccion.
 
@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| minorproject-research/qwen35-9b-merged | 9,65B | no disponible | image-text-to-text | apache-2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3.5-9B-Base (modelo base) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| minorproject-research/qwen35-9b-merged | 9,65B | no disponible | image-text-to-text | apache-2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3.5-9B-Base (modelo base) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | Otras alternativas de ~9B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion verificable sobre modelos directamente comparables dentro de la familia Qwen3.5 ni sobre sus especificaciones, benchmarks o licencias, por lo que no es posible establecer una comparacion cuantitativa fiable. La busqueda web realizada no aporto ningun resultado relevante.
@@ -94,8 +94,8 @@ No se dispone de informacion verificable sobre modelos directamente comparables 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/minorproject-research/qwen35-9b-merged
+- Modelo en Hugging Face: https://huggingface.co/minorproject-research/qwen35-9b-merged
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Unsloth (framework de entrenamiento utilizado): https://github.com/unslothai/unsloth
-- TRL de HuggingFace (framework de entrenamiento utilizado): https://github.com/huggingface/trl
+- TRL de Hugging Face (framework de entrenamiento utilizado): https://github.com/huggingface/trl
 - Busqueda web: no se encontro ningun enlace, paper, blog o demo relevante sobre este modelo. Los resultados devueltos por el buscador no guardaban relacion con el modelo y se han descartado.

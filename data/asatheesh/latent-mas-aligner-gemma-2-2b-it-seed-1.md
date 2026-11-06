@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks adicionales en la información disp
 
 | Modelo | Tipo | Parametros | Contexto / entrada | Licencia | Rendimiento declarado | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este checkpoint (`gemma-2-2b-it`, seq, seed 1) | Alineador de seguridad en espacio latente | No declarado (repo de 0,1 GB) | Latentes `[B, K, d_a]`, `d_a = 2304` | apache-2.0 | AUC de validación 0,9245; `tau` @ fpr10 0,8887587190 | HuggingFace, 0 descargas, 0 likes |
-| `YuanXiaopang/latentmas-aligner-qwen3-4b` | Alineador de seguridad en espacio latente (variantes de topología y semilla) | No disponible | Latentes de Qwen3-4B (`d_a = 2560`) | No disponible en la información proporcionada | No disponible | HuggingFace |
+| Este checkpoint (`gemma-2-2b-it`, seq, seed 1) | Alineador de seguridad en espacio latente | No declarado (repo de 0,1 GB) | Latentes `[B, K, d_a]`, `d_a = 2304` | apache-2.0 | AUC de validación 0,9245; `tau` @ fpr10 0,8887587190 | Hugging Face, 0 descargas, 0 likes |
+| `YuanXiaopang/latentmas-aligner-qwen3-4b` | Alineador de seguridad en espacio latente (variantes de topología y semilla) | No disponible | Latentes de Qwen3-4B (`d_a = 2560`) | No disponible en la información proporcionada | No disponible | Hugging Face |
 | Llama-Guard-3-8B (cola congelada, uso textual) | Clasificador de seguridad sobre texto | 8 000 millones | Texto decodificado | No disponible en la información proporcionada | No disponible | Uso como componente del propio pipeline |
 | Moderación textual genérica sobre salidas decodificadas | Clasificador sobre texto | Variable | Texto | Variable | No disponible | Amplia |
 
@@ -96,7 +96,7 @@ La comparación cuantitativa con alternativas no está disponible: el autor no p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/asatheesh/latent-mas-aligner-gemma-2-2b-it-seed-1
+- Modelo en Hugging Face: https://huggingface.co/asatheesh/latent-mas-aligner-gemma-2-2b-it-seed-1
 - Repositorio de código (LatentMASHarmBench): https://github.com/Asatheesh6561/LatentMASHarmBench
 - Repositorio de referencia con otras topologías y semillas (`YuanXiaopang/latentmas-aligner-qwen3-4b`): https://huggingface.co/YuanXiaopang/latentmas-aligner-qwen3-4b
 - Modelo base: https://huggingface.co/google/gemma-2-2b-it

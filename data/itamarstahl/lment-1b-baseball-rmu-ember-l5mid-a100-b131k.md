@@ -101,7 +101,7 @@ Alternativas externas de la misma categoria (modelos base de ~1-2B en ingles, co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/itamarstahl/lment-1b-baseball-rmu-ember-l5mid-a100-b131k
+- Modelo en Hugging Face: https://huggingface.co/itamarstahl/lment-1b-baseball-rmu-ember-l5mid-a100-b131k
 - Modelo de control completo: https://huggingface.co/itamarstahl/lment-1b-control-2e-b131k
 - Gemelo por exclusion de concepto: https://huggingface.co/itamarstahl/lment-1b-nobaseball-2e-b131k
 - Articulo citado: Gal Barak, Tamar Tabbach, Itamar Stahl y Adam Fleisher, *Can Concept Erasure Reproduce Concept Exclusion? A Matched Evaluation of EMBER, RMU, and SNMF*, 2026 (sin URL disponible en la informacion proporcionada).

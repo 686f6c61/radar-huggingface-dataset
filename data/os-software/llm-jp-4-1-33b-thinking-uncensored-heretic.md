@@ -89,10 +89,10 @@ Las cifras de VRAM que siguen son estimaciones derivadas del numero de parametro
 
 | Modelo | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| llm-jp-4.1-33b-thinking-uncensored-heretic (este modelo) | Transformer denso, abliterado | 33,2B totales | 65.536 | Apache 2.0 | HuggingFace, transformers, GGUF Q4_K_M |
-| llm-jp/llm-jp-4.1-33b-thinking (modelo base) | Transformer denso, alineado con SFT + DPO | 33,2B totales | 65.536 | No confirmada en la informacion proporcionada | HuggingFace |
-| llm-jp-4.1 32B-A3B (variante MoE de la misma familia) | MoE, 32 capas, 128 expertos enrutados, 8 activados | 32,14B totales / 3,83B activos | 65.536 | No confirmada en la informacion proporcionada | HuggingFace (coleccion llm-jp-4.1-models) |
-| llm-jp-4.1 8B (variante densa de la misma familia) | Transformer denso, 32 capas, oculto 4.096 | 8,59B totales | 65.536 | No confirmada en la informacion proporcionada | HuggingFace (coleccion llm-jp-4.1-models) |
+| llm-jp-4.1-33b-thinking-uncensored-heretic (este modelo) | Transformer denso, abliterado | 33,2B totales | 65.536 | Apache 2.0 | Hugging Face, transformers, GGUF Q4_K_M |
+| llm-jp/llm-jp-4.1-33b-thinking (modelo base) | Transformer denso, alineado con SFT + DPO | 33,2B totales | 65.536 | No confirmada en la informacion proporcionada | Hugging Face |
+| llm-jp-4.1 32B-A3B (variante MoE de la misma familia) | MoE, 32 capas, 128 expertos enrutados, 8 activados | 32,14B totales / 3,83B activos | 65.536 | No confirmada en la informacion proporcionada | Hugging Face (coleccion llm-jp-4.1-models) |
+| llm-jp-4.1 8B (variante densa de la misma familia) | Transformer denso, 32 capas, oculto 4.096 | 8,59B totales | 65.536 | No confirmada en la informacion proporcionada | Hugging Face (coleccion llm-jp-4.1-models) |
 
 La comparativa directa mas relevante es contra el modelo base: comparten exactamente la misma arquitectura y el mismo numero de parametros, y la unica diferencia medible publicada es la eliminacion del comportamiento de rechazo a cambio de una perdida de 0,32 puntos en MMLU y 1,22 puntos en HumanEval. Frente a la variante MoE de 32B-A3B, el modelo aqui descrito activa todos sus parametros en cada token, por lo que su coste de inferencia es sustancialmente mayor a igualdad de calidad por token, aunque no se dispone de datos publicados que permitan comparar rendimiento entre ambas variantes.
 
@@ -106,12 +106,12 @@ La comparativa directa mas relevante es contra el modelo base: comparten exactam
 - Licencia: el modelo se publica bajo Apache 2.0, pero al ser un trabajo derivado del modelo base, siguen aplicando las condiciones de la licencia original. El autor no ofrece garantias de ningun tipo y declina toda responsabilidad por danos derivados del uso.
 - Evaluaciones realizadas sobre pesos Q4_K_M: los numeros de MMLU y HumanEval corresponden a una cuantizacion concreta y no necesariamente se reproducen en BF16 u otras cuantizaciones.
 - Modelo con cero descargas y cero "me gusta" en el momento de la consulta, creado y actualizado el 7 de octubre de 2026. No hay validacion externa independiente de los resultados publicados.
-- El campo `inference: false` del model card indica que el modelo no esta pensado para ejecutarse a traves de la Inference API de HuggingFace.
+- El campo `inference: false` del model card indica que el modelo no esta pensado para ejecutarse a traves de la Inference API de Hugging Face.
 - La perdida de seguridad no es reversible ni acotada por filtros externos: los usuarios deben implementar sus propias salvaguardas y supervision humana si deciden usarlo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OS-Software/llm-jp-4.1-33b-thinking-uncensored-heretic
+- Modelo en Hugging Face: https://huggingface.co/OS-Software/llm-jp-4.1-33b-thinking-uncensored-heretic
 - Modelo base: https://huggingface.co/llm-jp/llm-jp-4.1-33b-thinking
 - Coleccion de modelos LLM-jp-4.1: https://huggingface.co/collections/llm-jp/llm-jp-41-models
 - Blog tecnico de LLM-jp-4.1 (en japones): https://llm-jp.nii.ac.jp/blog/llm-jp-4-1/

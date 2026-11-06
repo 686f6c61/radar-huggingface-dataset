@@ -82,7 +82,7 @@ La comparacion de rendimiento, latencia y calidad de sintesis no puede establece
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VectorNotion/swarit-indic-talk
+- Modelo en Hugging Face: https://huggingface.co/VectorNotion/swarit-indic-talk
 - Sitio del proyecto: https://swarit.ai/
 - Demo de conversacion de cita: https://swarit.ai/demos/recorded/appointment.mp4?v=a6c40630201f
 - Pesos del modelo: https://huggingface.co/VectorNotion/swarit-indic-talk/blob/main/swarit-indic-talk-v1.safetensors

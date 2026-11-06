@@ -81,10 +81,10 @@ Segun el blog de Liquid AI, d1 (familia, sin especificar variante para cada tare
 
 | Modelo | Parametros | Contexto | Modalidades | Decision Index 0.2.1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| d1-omni-600M | 587M | 16.384 tokens | texto, imagen, audio | No disponible | lfm1.0 | Pesos safetensors y GGUF en HuggingFace |
-| d1-3B | 3B (nombre comercial; cifra exacta no disponible) | No disponible | Texto e imagen (segun el blog de d1) | 48,57 | No disponible | Pesos abiertos en HuggingFace |
+| d1-omni-600M | 587M | 16.384 tokens | texto, imagen, audio | No disponible | lfm1.0 | Pesos safetensors y GGUF en Hugging Face |
+| d1-3B | 3B (nombre comercial; cifra exacta no disponible) | No disponible | Texto e imagen (segun el blog de d1) | 48,57 | No disponible | Pesos abiertos en Hugging Face |
 | Decider 35B-A3B | 35B totales con aproximadamente 3B activos, segun la nomenclatura del nombre (no confirmado) | No disponible | No disponible | 47,11 | No disponible | No disponible |
-| LFM2.5-VL-450M | 450M (modelo del que procede la torre de vision) | No disponible | Vision-lenguaje generativo | No aplica (no es modelo de decision) | lfm1.0 (no confirmado) | HuggingFace |
+| LFM2.5-VL-450M | 450M (modelo del que procede la torre de vision) | No disponible | Vision-lenguaje generativo | No aplica (no es modelo de decision) | lfm1.0 (no confirmado) | Hugging Face |
 
 La comparacion directa es limitada: d1-omni-600M es el unico de la lista que cubre audio ademas de texto e imagen, y no se han publicado sus resultados en el Decision Index. Frente a los modelos de decision de mayor tamano, su ventaja es el coste de despliegue en el borde, no el rendimiento absoluto.
 
@@ -98,18 +98,18 @@ La comparacion directa es limitada: d1-omni-600M es el unico de la lista que cub
 - El tag `calibration` sugiere trabajo de calibracion, pero no se aportan detalles ni metricas de calibracion en la informacion disponible; las puntuaciones devueltas no deberian tratarse como probabilidades calibradas sin validacion propia.
 - Riesgo de clasificacion erronea en dominios fuera de la distribucion de entrenamiento. No se documenta el dataset, por lo que no es posible acotar ese riesgo a priori.
 - No se documentan sesgos conocidos, pero tampoco se describe la composicion de los datos de entrenamiento, lo que impide auditar sesgos por idioma, genero o etnia.
-- La licencia es `lfm1.0`, identificada como `other` en HuggingFace. Los terminos concretos para uso comercial no se detallan en la informacion proporcionada y deben consultarse en el fichero LICENSE del repositorio antes de cualquier despliegue en produccion.
+- La licencia es `lfm1.0`, identificada como `other` en Hugging Face. Los terminos concretos para uso comercial no se detallan en la informacion proporcionada y deben consultarse en el fichero LICENSE del repositorio antes de cualquier despliegue en produccion.
 - Requiere `transformers>=5.15` y cargar el modelo con `trust_remote_code=True`, es decir, se ejecuta codigo remoto incluido en el repositorio.
 - Adopcion muy baja en el momento de la ficha (28 descargas, 21 likes), lo que implica escaso soporte de la comunidad y pocos informes independientes de comportamiento.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LiquidAI/d1-omni-600M
+- Modelo en Hugging Face: https://huggingface.co/LiquidAI/d1-omni-600M
 - Variante GGUF: https://huggingface.co/LiquidAI/d1-omni-600M-GGUF
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-Encoder-350M
 - Modelo del que procede la torre de vision: https://huggingface.co/LiquidAI/LFM2.5-VL-450M
 - Blog de Liquid AI sobre open d1: https://www.liquid.ai/blog/open-d1
-- Entrada de blog en HuggingFace sobre los modelos de decision open d1: https://huggingface.co/blog/LiquidAI/open-d1
+- Entrada de blog en Hugging Face sobre los modelos de decision open d1: https://huggingface.co/blog/LiquidAI/open-d1
 - Blog de presentacion de d1: https://www.liquid.ai/blog/d1-decision-model
 - Playground de LFM: https://playground.liquid.ai/
 - Documentacion de LFM: https://docs.liquid.ai/lfm/getting-started/welcome

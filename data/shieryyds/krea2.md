@@ -2,7 +2,7 @@
 
 ## Resumen
 
-krea2 es un modelo publicado en HuggingFace por el usuario shieryyds bajo licencia Apache 2.0. El repositorio tiene un tamano de 13,1 GB, lo que sugiere un modelo de pesos considerables, pero la model card publicada no contiene ninguna descripcion tecnica: se limita a declarar la licencia. No hay informacion sobre arquitectura, parametros, contexto ni datos de entrenamiento.
+krea2 es un modelo publicado en Hugging Face por el usuario shieryyds bajo licencia Apache 2.0. El repositorio tiene un tamano de 13,1 GB, lo que sugiere un modelo de pesos considerables, pero la model card publicada no contiene ninguna descripcion tecnica: se limita a declarar la licencia. No hay informacion sobre arquitectura, parametros, contexto ni datos de entrenamiento.
 
 El modelo aparece con cero descargas y cero likes en el momento de la consulta, y fue creado y actualizado el mismo dia (27 de octubre de 2026), lo que apunta a una publicacion reciente y sin validacion por parte de la comunidad. La ausencia de pipeline declarado y de idiomas soportados impide clasificarlo con certeza como modelo de texto, vision u otra modalidad.
 
@@ -23,7 +23,7 @@ Por tanto, esta ficha se limita a documentar los metadatos verificables del repo
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de HuggingFace. Se desconoce si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura hibrida o un modelo de difusion.
+No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de Hugging Face. Se desconoce si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura hibrida o un modelo de difusion.
 
 Tampoco hay datos sobre el volumen de tokens de entrenamiento, la composicion del dataset, el uso de RLHF/DPO o cualquier innovacion tecnica (atencion lineal, decodificacion especulativa, etc.). El unico dato estructural disponible es el tamano del repositorio (13,1 GB), que es compatible con un modelo de varios miles de millones de parametros en precision de 16 bits, pero esta inferencia no puede confirmarse sin acceso a los archivos de pesos y a la configuracion.
 
@@ -78,4 +78,4 @@ No disponible. No se puede establecer una comparativa fiable sin conocer la arqu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/shieryyds/krea2
+- Hugging Face: https://huggingface.co/shieryyds/krea2

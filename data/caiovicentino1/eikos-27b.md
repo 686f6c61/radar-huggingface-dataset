@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Eikos-27B es un modelo de decisión tipada (*typed-decision*) desarrollado por el usuario caiovicentino1 (Caio Vicentino) y publicado en HuggingFace. No es un modelo generativo convencional: recibe un estado o evidencia junto con una pregunta y un conjunto acotado de opciones, y devuelve en una única pasada hacia delante una distribución de probabilidad calibrada sobre esas opciones, además de un valor de confianza que permite al sistema llamante abstenerse por debajo de un umbral. El foco declarado del modelo es el ámbito financiero global, el trading y el *trade finance*: aplicación de reglas, políticas y libros normativos a casos concretos (límites de orden, margen, *wash sales*, bandas de precio, KYC/AML, pólizas de crédito, créditos documentarios, Incoterms, IVA/GST), sentimiento financiero a nivel de entidad y verificación de respuestas sobre tablas financieras.
+Eikos-27B es un modelo de decisión tipada (*typed-decision*) desarrollado por el usuario caiovicentino1 (Caio Vicentino) y publicado en Hugging Face. No es un modelo generativo convencional: recibe un estado o evidencia junto con una pregunta y un conjunto acotado de opciones, y devuelve en una única pasada hacia delante una distribución de probabilidad calibrada sobre esas opciones, además de un valor de confianza que permite al sistema llamante abstenerse por debajo de un umbral. El foco declarado del modelo es el ámbito financiero global, el trading y el *trade finance*: aplicación de reglas, políticas y libros normativos a casos concretos (límites de orden, margen, *wash sales*, bandas de precio, KYC/AML, pólizas de crédito, créditos documentarios, Incoterms, IVA/GST), sentimiento financiero a nivel de entidad y verificación de respuestas sobre tablas financieras.
 
 Técnicamente es un *fine-tune* LoRA (rango 64, una época) sobre Qwen/Qwen3.8-27B, con 27.781.427.952 parámetros totales según los pesos en safetensors y un repositorio de 55,6 GB. La arquitectura heredada es híbrida del tipo Gated DeltaNet, según se deduce de las advertencias del propio autor sobre vLLM. El entrenamiento se realizó por destilación desde un profesor fuerte (GLM-5.3-Flash con esfuerzo de razonamiento máximo) sobre ítems de decisión generados y etiquetados a ciegas, ítems programáticos exactos, reglas composicionales y dosieres de contexto largo de entre 6.000 y 12.000 tokens.
 
@@ -75,10 +75,10 @@ No se han publicado resultados numéricos de benchmarks en la información dispo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Eikos-27B | 27,78B | 16.384 tokens configurados en vLLM | Decisión tipada con calibración, ámbito financiero | MIT | HuggingFace, builds FP8 e INT4; MLX pendiente |
-| Qwen/Qwen3.8-27B | No disponible en la informacion | No disponible | Modelo generalista de texto; es la base de Eikos-27B | No disponible en la informacion | HuggingFace |
+| Eikos-27B | 27,78B | 16.384 tokens configurados en vLLM | Decisión tipada con calibración, ámbito financiero | MIT | Hugging Face, builds FP8 e INT4; MLX pendiente |
+| Qwen/Qwen3.8-27B | No disponible en la informacion | No disponible | Modelo generalista de texto; es la base de Eikos-27B | No disponible en la informacion | Hugging Face |
 | Bonsai 27B | Clase 27B | No disponible | Multimodal con pesos 1-bit o ternarios, razonamiento multi-paso y uso de herramientas; basado en Qwen3.6 27B | No disponible en la informacion | Distribución propia de PrismML; torre de visión a 4 bits |
-| Eikos-4B | Clase 4B | No disponible | Misma tarea de decisión tipada, hermano pequeño de Eikos-27B | MIT | HuggingFace, builds FP8 e INT4 |
+| Eikos-4B | Clase 4B | No disponible | Misma tarea de decisión tipada, hermano pequeño de Eikos-27B | MIT | Hugging Face, builds FP8 e INT4 |
 
 La comparación directa de rendimiento no es posible: no hay cifras de benchmarks publicadas para Eikos-27B, y los modelos alternativos citados responden a categorías distintas (modelo generalista multimodal frente a decisor especializado). Bonsai 27B es comparable en tamaño y en el hecho de compartir una base de la familia Qwen, pero su propuesta de valor (ejecución local en móvil con pesos de 1 bit y capacidades multimodales) es ortogonal a la de Eikos-27B.
 
@@ -97,12 +97,12 @@ La comparación directa de rendimiento no es posible: no hay cifras de benchmark
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/caiovicentino1/Eikos-27B
+- Modelo en Hugging Face: https://huggingface.co/caiovicentino1/Eikos-27B
 - Dataset de entrenamiento: caiovicentino1/eikos-decisions (referenciado en la model card; no se proporciona URL directa)
 - Repositorio de código: https://github.com/caiovicentino/eikos
 - Imagen de portada de la model card: https://huggingface.co/caiovicentino1/Eikos-27B/resolve/main/assets/eikos_launch.png
 - Modelo base: Qwen/Qwen3.8-27B (referenciado en los metadatos)
-- Perfil del autor en HuggingFace: https://huggingface.co/caiovicentino1/models
+- Perfil del autor en Hugging Face: https://huggingface.co/caiovicentino1/models
 - Colección "Large Models (27B-35B) HLWQ" del autor: https://huggingface.co/collections/caiovicentino1/large-models-27b-35b-hlwq
 - Documentación de Bonsai 27B (modelo comparable de 27B): https://docs.prismml.com/models/bonsai-27b
 - Anuncio de Bonsai 27B por PrismML: https://prismml.com/news/prismml-releases-bonsai-27b

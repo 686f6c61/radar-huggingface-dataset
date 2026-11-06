@@ -2,7 +2,7 @@
 
 ## Resumen
 
-H-Adapter-8-bottles-checkpoints no es un modelo de lenguaje, sino un repositorio de checkpoints nativos de entrenamiento para una política robótica de manipulación. En concreto, contiene el resultado del entrenamiento de la política H-Adapter-8 sobre la tarea de mundo real `bottles` (botellas) ejecutada con un brazo derecho. Lo publica el usuario SXY7 en HuggingFace con pipeline `robotics` y el conjunto de 15 checkpoints correspondientes a los pasos de optimizador 10.000 a 150.000, en incrementos de 10.000.
+H-Adapter-8-bottles-checkpoints no es un modelo de lenguaje, sino un repositorio de checkpoints nativos de entrenamiento para una política robótica de manipulación. En concreto, contiene el resultado del entrenamiento de la política H-Adapter-8 sobre la tarea de mundo real `bottles` (botellas) ejecutada con un brazo derecho. Lo publica el usuario SXY7 en Hugging Face con pipeline `robotics` y el conjunto de 15 checkpoints correspondientes a los pasos de optimizador 10.000 a 150.000, en incrementos de 10.000.
 
 Cada carpeta de checkpoint es un bundle de entrenamiento completo, no un modelo autónomo de Transformers: incluye los pesos de la política H-Adapter, los pesos LoRA, los "policy carriers", el processor/tokenizer, las estadísticas del dataset, los metadatos de la tarea, el estado del optimizador, el scheduler, el estado RNG y el estado del trainer. El VLM preentrenado PRISM, que actúa como dependencia compartida, no se duplica en estos bundles; hay que obtenerlo por separado. Por tanto, para utilizarlo hace falta el loader nativo de checkpoints de H-Adapter-8 y la configuración de tarea de mundo real correspondientes.
 
@@ -85,7 +85,7 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SXY7/H-Adapter-8-bottles-checkpoints
+- Repositorio en Hugging Face: https://huggingface.co/SXY7/H-Adapter-8-bottles-checkpoints
 - Índice de checkpoints (carpetas `checkpoint-10000` a `checkpoint-150000`): https://huggingface.co/SXY7/H-Adapter-8-bottles-checkpoints/tree/main
 - Carpeta del checkpoint final: https://huggingface.co/SXY7/H-Adapter-8-bottles-checkpoints/tree/main/checkpoint-150000
 

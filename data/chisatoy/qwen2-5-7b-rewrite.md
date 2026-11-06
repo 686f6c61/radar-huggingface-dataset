@@ -18,7 +18,7 @@ El entrenamiento combinó datos en chino e inglés procedentes de tres conjuntos
 | Longitud de contexto | 32.768 tokens |
 | Tipos de cuantizacion | BF16 (Safetensors), GGUF disponible |
 | Idiomas soportados | chino (zh), ingles (en) |
-| Licencia | no disponible en la ficha de HuggingFace; el modelo base Qwen2.5-7B-Instruct usa Apache 2.0, pero los datos de entrenamiento incluyen CC BY-NC 4.0 |
+| Licencia | no disponible en la ficha de Hugging Face; el modelo base Qwen2.5-7B-Instruct usa Apache 2.0, pero los datos de entrenamiento incluyen CC BY-NC 4.0 |
 | Formato de pesos | Safetensors (4 shards), GGUF |
 
 ## Arquitectura y entrenamiento
@@ -83,12 +83,12 @@ No se dispone de información suficiente sobre otros modelos especializados en h
 - El modelo tiende a comprimir frases y simplificar expresiones; no garantiza eliminar por completo tonos propagandísticos, plantillas argumentativas o adornos vacíos.
 - La reescritura puede introducir cambios de matiz o ligeras desviaciones factuales; se recomienda revisión humana para contenido crítico.
 - El conjunto de prueba independiente es pequeño (100 muestras) y solo en inglés, por lo que no representa la calidad completa en chino ni en todos los registros.
-- La licencia del modelo no está especificada en la ficha de HuggingFace. El modelo base usa Apache 2.0, pero parte de los datos de entrenamiento chinos están bajo CC BY-NC 4.0, lo que puede restringir el uso comercial del modelo resultante. Se recomienda verificar los términos antes de usar en producción.
+- La licencia del modelo no está especificada en la ficha de Hugging Face. El modelo base usa Apache 2.0, pero parte de los datos de entrenamiento chinos están bajo CC BY-NC 4.0, lo que puede restringir el uso comercial del modelo resultante. Se recomienda verificar los términos antes de usar en producción.
 - El entrenamiento se limitó a secuencias de 1.024 tokens, por lo que el modelo puede degradarse al reescribir textos mucho más largos que ese umbral, aunque la ventana de contexto del modelo base sea de 32.768 tokens.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ChisatoY/Qwen2.5-7B-ReWrite
+- Modelo en Hugging Face: https://huggingface.co/ChisatoY/Qwen2.5-7B-ReWrite
 - Modelo base Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Repositorio de referencia de Qwen2.5: https://github.com/mx4ai/qwen2.5
 - Modelo en ModelScope: https://www.modelscope.cn/models/qwen/Qwen2.5-7B

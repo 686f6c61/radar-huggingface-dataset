@@ -2,11 +2,11 @@
 
 ## Resumen
 
-QuartzNet Variants IT es un checkpoint de reconocimiento automatico del habla (ASR) en italiano publicado por el usuario christian-tarantino en HuggingFace. Se trata de una version modificada de la arquitectura QuartzNet, una red neuronal convolucional 1D con salida CTC (Connectionist Temporal Classification), entrenada sobre el corpus Common Voice 26.0 en su particion italiana. El repositorio contiene unicamente el fichero de pesos en formato PyTorch (`.pth`) y no incluye codigo de inferencia ni tokenizador: para utilizarlo hay que clonar el repositorio GitHub del autor y colocar el checkpoint dentro del directorio `ASR/`.
+QuartzNet Variants IT es un checkpoint de reconocimiento automatico del habla (ASR) en italiano publicado por el usuario christian-tarantino en Hugging Face. Se trata de una version modificada de la arquitectura QuartzNet, una red neuronal convolucional 1D con salida CTC (Connectionist Temporal Classification), entrenada sobre el corpus Common Voice 26.0 en su particion italiana. El repositorio contiene unicamente el fichero de pesos en formato PyTorch (`.pth`) y no incluye codigo de inferencia ni tokenizador: para utilizarlo hay que clonar el repositorio GitHub del autor y colocar el checkpoint dentro del directorio `ASR/`.
 
 El modelo es relevante para quien necesite transcripcion de voz en italiano con un consumo de recursos muy bajo, ya que la familia QuartzNet se caracteriza por ser mucho mas ligera que las arquitecturas transformer basadas en atencion (Whisper, wav2vec 2.0) manteniendo una precision competitiva en tareas de dictado. El tag `attention` que aparece en el titulo de la model card sugiere que la variante incorpora algun modulo de atencion sobre el backbone convolucional, aunque el autor no detalla la modificacion exacta.
 
-El repositorio es muy pequeno (0,2 GB), no registra descargas ni "me gusta" en el momento de la consulta, no declara pipeline de HuggingFace y no publica valores numericos de WER ni CER, pese a etiquetar ambas metricas. La model card remite al repositorio de GitHub para arquitecturas, scripts de entrenamiento y resultados de benchmarks detallados.
+El repositorio es muy pequeno (0,2 GB), no registra descargas ni "me gusta" en el momento de la consulta, no declara pipeline de Hugging Face y no publica valores numericos de WER ni CER, pese a etiquetar ambas metricas. La model card remite al repositorio de GitHub para arquitecturas, scripts de entrenamiento y resultados de benchmarks detallados.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ El repositorio es muy pequeno (0,2 GB), no registra descargas ni "me gusta" en e
 | Tamano del repositorio | 0,2 GB |
 | Dataset de entrenamiento | Common Voice 26.0 (italiano) |
 | Metricas declaradas | WER, CER (sin valores publicados en la model card) |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Fecha de creacion / actualizacion | 2026-09-22 |
 
 ## Arquitectura y entrenamiento
@@ -92,13 +92,13 @@ La comparacion estricta de rendimiento no puede realizarse con la informacion di
 - Idioma: exclusivamente italiano. No soporta otros idiomas ni cambio de codigo.
 - Contexto acustico: al ser convolucional y sin atencion global sobre secuencias largas, la coherencia en transcripciones de audio muy largo depende de la ventana de inferencia y del decodificador; no se documenta la segmentacion recomendada.
 - Licencia: Apache 2.0 permite uso comercial y modificacion, con atribucion y manteniendo el aviso de licencia. Conviene verificar por separado la licencia aplicable al dataset Common Voice de origen.
-- Madurez: el repositorio no tiene descargas ni "me gusta", no declara pipeline de HuggingFace y no publica metricas; no hay validacion independiente de la calidad del checkpoint.
+- Madurez: el repositorio no tiene descargas ni "me gusta", no declara pipeline de Hugging Face y no publica metricas; no hay validacion independiente de la calidad del checkpoint.
 - Dependencia de codigo externo: al distribuirse solo el `.pth`, el modelo no es utilizable sin clonar el repositorio del autor, lo que introduce riesgo de mantenimiento y de compatibilidad con versiones futuras de PyTorch.
 - Produccion: no se documentan pruebas de robustez, cuantizacion, exportacion a formatos de despliegue ni rendimiento bajo carga; cualquier uso en produccion exige una evaluacion propia con datos representativos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/christian-tarantino/quartznet-variants-it
+- Modelo en Hugging Face: https://huggingface.co/christian-tarantino/quartznet-variants-it
 - Repositorio GitHub con codigo, scripts de entrenamiento, arquitecturas y benchmarks: https://github.com/christian-tarantino/quartznet-variants-it
 - Dataset de entrenamiento mencionado: Common Voice 26.0, particion italiana (https://commonvoice.mozilla.org/it/datasets)
 - Paper original de QuartzNet: "QuartzNet: Deep Automatic Speech Recognition with 1D Time-Channel Separable Convolutions" (https://arxiv.org/abs/1910.10261)

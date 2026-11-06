@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `TheHassanSaud/P2_pythia410m_branch25_q0_sc_frozen25` es un checkpoint de generacion de texto publicado en HuggingFace por el usuario TheHassanSaud, con 405.334.016 parametros reales (segun los pesos en safetensors) y un tamano de repositorio de 1,6 GB. La etiqueta de arquitectura (`gpt_neox`) y el propio identificador apuntan a que deriva de la familia Pythia-410M de EleutherAI, un transformer causal de tipo GPT-NeoX, aunque la model card no confirma explicitamente este linaje.
+El modelo `TheHassanSaud/P2_pythia410m_branch25_q0_sc_frozen25` es un checkpoint de generacion de texto publicado en Hugging Face por el usuario TheHassanSaud, con 405.334.016 parametros reales (segun los pesos en safetensors) y un tamano de repositorio de 1,6 GB. La etiqueta de arquitectura (`gpt_neox`) y el propio identificador apuntan a que deriva de la familia Pythia-410M de EleutherAI, un transformer causal de tipo GPT-NeoX, aunque la model card no confirma explicitamente este linaje.
 
 El nombre del repositorio (`branch25`, `q0`, `sc_frozen25`) sugiere un artefacto de investigacion: probablemente un modelo podado o modificado estructuralmente (una "rama" concreta dentro de un experimento de poda o sparsity), con algun subconjunto de parametros congelados al 25 % durante el ajuste. No hay ninguna documentacion que confirme esta interpretacion, por lo que debe tratarse como una hipotesis basada en la nomenclatura.
 
-La relevancia de este modelo es limitada y muy especifica: tiene 0 descargas y 0 "likes", la model card es la plantilla automatica de HuggingFace sin rellenar y no se declara licencia ni idiomas. Es un artefacto de investigacion sin validacion publica, util sobre todo para reproducir experimentos de compresion de modelos pequenos o como ejemplo de estructura de pesos GPT-NeoX, no para uso en produccion.
+La relevancia de este modelo es limitada y muy especifica: tiene 0 descargas y 0 "likes", la model card es la plantilla automatica de Hugging Face sin rellenar y no se declara licencia ni idiomas. Es un artefacto de investigacion sin validacion publica, util sobre todo para reproducir experimentos de compresion de modelos pequenos o como ejemplo de estructura de pesos GPT-NeoX, no para uso en produccion.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ La relevancia de este modelo es limitada y muy especifica: tiene 0 descargas y 0
 
 La etiqueta `gpt_neox` y el pipeline `text-generation` indican un transformer causal con atencion causal estandar, normalizacion tipo LayerNorm y embeddings rotatorios (RoPE), que es la arquitectura de la familia GPT-NeoX/Pythia. Con 405,3 M de parametros, el modelo encaja en la escala de Pythia-410M de EleutherAI, aunque la model card no confirma el numero de capas, dimension oculta, cabezas de atencion ni la longitud de contexto efectiva.
 
-No hay informacion sobre el procedimiento de entrenamiento: ni numero de tokens, ni composicion del dataset, ni si hubo ajuste con RLHF, DPO o SFT. Tampoco se documentan hiperparametros, regimen de precision (fp32, fp16, bf16) ni infraestructura de computo. La unica pista sobre posibles innovaciones tecnicas esta en el identificador del repositorio: los sufijos `branch25`, `q0` y `sc_frozen25` sugieren un experimento de poda estructural (una rama de 25 elementos o un nivel de poda del 25 %) con congelacion parcial de parametros ("sc" podria corresponder a *structured/sparse compression* o a *self-conditioning*), pero esto es una interpretacion de la nomenclatura, no un dato documentado. El tag `arxiv:1910.09700` no es una referencia al modelo: corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones, que aparece en la plantilla por defecto de HuggingFace.
+No hay informacion sobre el procedimiento de entrenamiento: ni numero de tokens, ni composicion del dataset, ni si hubo ajuste con RLHF, DPO o SFT. Tampoco se documentan hiperparametros, regimen de precision (fp32, fp16, bf16) ni infraestructura de computo. La unica pista sobre posibles innovaciones tecnicas esta en el identificador del repositorio: los sufijos `branch25`, `q0` y `sc_frozen25` sugieren un experimento de poda estructural (una rama de 25 elementos o un nivel de poda del 25 %) con congelacion parcial de parametros ("sc" podria corresponder a *structured/sparse compression* o a *self-conditioning*), pero esto es una interpretacion de la nomenclatura, no un dato documentado. El tag `arxiv:1910.09700` no es una referencia al modelo: corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones, que aparece en la plantilla por defecto de Hugging Face.
 
 ## Capacidades
 
@@ -65,16 +65,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| P2_pythia410m_branch25_q0_sc_frozen25 (este) | 405,3 M | No disponible | No disponible | No disponible | HuggingFace, 0 descargas |
-| Pythia-410M (EleutherAI) | 405 M | 2048 tokens | Benchmarks publicos en la model card original (no reproducidos aqui) | Apache 2.0 | HuggingFace, ampliamente descargado |
-| SmolLM-360M (HuggingFace) | 362 M | 2048 tokens | Benchmarks publicos de la familia SmolLM | Apache 2.0 | HuggingFace |
-| Qwen2.5-0.5B (Alibaba) | 494 M | 32 768 tokens | Benchmarks publicos de la familia Qwen2.5 | Apache 2.0 | HuggingFace |
+| P2_pythia410m_branch25_q0_sc_frozen25 (este) | 405,3 M | No disponible | No disponible | No disponible | Hugging Face, 0 descargas |
+| Pythia-410M (EleutherAI) | 405 M | 2048 tokens | Benchmarks publicos en la model card original (no reproducidos aqui) | Apache 2.0 | Hugging Face, ampliamente descargado |
+| SmolLM-360M (Hugging Face) | 362 M | 2048 tokens | Benchmarks publicos de la familia SmolLM | Apache 2.0 | Hugging Face |
+| Qwen2.5-0.5B (Alibaba) | 494 M | 32 768 tokens | Benchmarks publicos de la familia Qwen2.5 | Apache 2.0 | Hugging Face |
 
 La comparacion es estructural: los tres alternativas son modelos base o ajustados por instrucciones con licencia permisiva y evaluaciones publicas, mientras que este checkpoint no declara licencia, no publica evaluaciones y no documenta su procedencia exacta. Cualquier uso en produccion deberia partir de Pythia-410M u otro modelo con trazabilidad completa.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: la model card es la plantilla automatica de HuggingFace, sin informacion sobre datos, entrenamiento, uso previsto o limitaciones.
+- Ausencia total de documentacion: la model card es la plantilla automatica de Hugging Face, sin informacion sobre datos, entrenamiento, uso previsto o limitaciones.
 - Licencia no declarada: sin licencia explicita no hay autorizacion clara de uso comercial. Esto supone un riesgo legal directo para cualquier despliegue en produccion.
 - Sesgos desconocidos: no hay analisis de sesgos. Si el modelo deriva de Pythia, hereda los sesgos documentados de ese linaje (sesgo de genero, raza y religion en el corpus de The Pile), pero no se confirma.
 - Riesgo elevado de alucinacion: un modelo de ~400 M de parametros sin ajuste por instrucciones tiende a producir texto incoherente o factualmente incorrecto, especialmente en tareas de conocimiento.
@@ -86,7 +86,7 @@ La comparacion es estructural: los tres alternativas son modelos base o ajustado
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TheHassanSaud/P2_pythia410m_branch25_q0_sc_frozen25
+- Modelo en Hugging Face: https://huggingface.co/TheHassanSaud/P2_pythia410m_branch25_q0_sc_frozen25
 - Articulo citado en los tags (`arxiv:1910.09700`), Lacoste et al. (2019), sobre estimacion de emisiones de CO2 en aprendizaje automatico: https://arxiv.org/abs/1910.09700
 - Repositorio de la arquitectura base GPT-NeoX (referencia de arquitectura, no del checkpoint): https://github.com/EleutherAI/gpt-neox
 - Modelo Pythia-410M de EleutherAI (linaje probable, no confirmado): https://huggingface.co/EleutherAI/pythia-410m

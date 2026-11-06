@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`stevenhill90/retrieval` es un repositorio experimental publicado en HuggingFace que contiene una implementación propia de DeiT (Data-efficient Image Transformer) orientada a tareas de retrieval (recuperación de información multimodal, típicamente texto-imagen). Lo desarrolla el usuario stevenhill90 y se distribuye con licencia MIT. No se trata de un modelo entrenado ni de un release con resultados publicados: la model card lo describe explícitamente como un punto de partida reproducible para pruebas de humo (smoke tests), no como un checkpoint con benchmarks.
+`stevenhill90/retrieval` es un repositorio experimental publicado en Hugging Face que contiene una implementación propia de DeiT (Data-efficient Image Transformer) orientada a tareas de retrieval (recuperación de información multimodal, típicamente texto-imagen). Lo desarrolla el usuario stevenhill90 y se distribuye con licencia MIT. No se trata de un modelo entrenado ni de un release con resultados publicados: la model card lo describe explícitamente como un punto de partida reproducible para pruebas de humo (smoke tests), no como un checkpoint con benchmarks.
 
 El artefacto principal es un script de Python (`train.py`) con la definición del modelo y un punto de entrada de entrenamiento, acompañado de un `config.json` con la configuración de arquitectura generada, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que actúa únicamente como checkpoint de inicialización válido. El tamaño declarado en safetensors es de 33.088 parámetros, lo que corresponde a la variante "nano" descrita en la model card.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| stevenhill90/retrieval | 33.088 | no disponible | No (checkpoint de inicialización) | MIT | HuggingFace |
-| DeiT-Tiny (referencia oficial) | ~5,7 M | N/A (visión) | Sí | Apache 2.0 | HuggingFace / repo oficial |
-| CLIP ViT-B/32 (referencia retrieval) | ~151 M | 77 tokens de texto | Sí | MIT (variantes) | HuggingFace |
+| stevenhill90/retrieval | 33.088 | no disponible | No (checkpoint de inicialización) | MIT | Hugging Face |
+| DeiT-Tiny (referencia oficial) | ~5,7 M | N/A (visión) | Sí | Apache 2.0 | Hugging Face / repo oficial |
+| CLIP ViT-B/32 (referencia retrieval) | ~151 M | 77 tokens de texto | Sí | MIT (variantes) | Hugging Face |
 
 La comparación es orientativa: este repositorio no es un modelo entrenado y no es directamente comparable en rendimiento con DeiT-Tiny ni con CLIP, que sí publican checkpoints y métricas.
 
@@ -80,5 +80,5 @@ La comparación es orientativa: este repositorio no es un modelo entrenado y no 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/stevenhill90/retrieval
+- Hugging Face: https://huggingface.co/stevenhill90/retrieval
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información proporcionada.

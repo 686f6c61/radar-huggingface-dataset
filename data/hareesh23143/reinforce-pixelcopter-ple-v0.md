@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Reinforce-Pixelcopter-PLE-v0 es un agente de aprendizaje por refuerzo entrenado con el algoritmo REINFORCE sobre el entorno Pixelcopter-PLE-v0, publicado en HuggingFace por el usuario hareesh23143. No se trata de un modelo de lenguaje ni de un modelo fundacional: es una política neuronal entrenada especificamente para resolver una tarea de control en un entorno de pixel art, dentro del marco del curso Deep Reinforcement Learning de HuggingFace (deep-rl-class). El repositorio no incluye documentacion tecnica mas alla de la model card minima y de los metadatos del model-index.
+Reinforce-Pixelcopter-PLE-v0 es un agente de aprendizaje por refuerzo entrenado con el algoritmo REINFORCE sobre el entorno Pixelcopter-PLE-v0, publicado en Hugging Face por el usuario hareesh23143. No se trata de un modelo de lenguaje ni de un modelo fundacional: es una política neuronal entrenada especificamente para resolver una tarea de control en un entorno de pixel art, dentro del marco del curso Deep Reinforcement Learning de Hugging Face (deep-rl-class). El repositorio no incluye documentacion tecnica mas alla de la model card minima y de los metadatos del model-index.
 
-El unico dato cuantitativo publicado es el rendimiento declarado por el autor: una recompensa media (mean_reward) de 19,60 con una desviacion tipica de 5,00 sobre el entorno Pixelcopter-PLE-v0. Ese resultado no esta verificado por HuggingFace (campo verified: false). El repositorio registra 0 descargas y 0 likes, y su licencia no esta declarada.
+El unico dato cuantitativo publicado es el rendimiento declarado por el autor: una recompensa media (mean_reward) de 19,60 con una desviacion tipica de 5,00 sobre el entorno Pixelcopter-PLE-v0. Ese resultado no esta verificado por Hugging Face (campo verified: false). El repositorio registra 0 descargas y 0 likes, y su licencia no esta declarada.
 
 Su relevancia es exclusivamente didactica y de referencia: sirve como ejemplo reproducible de implementacion de REINFORCE en el ecosistema del curso, y como punto de comparacion con decenas de agentes equivalentes publicados por otros alumnos. No es un artefacto pensado para produccion ni para tareas generales.
 
@@ -66,11 +66,11 @@ No se han publicado otros resultados de benchmarks en la informacion disponible.
 
 | Modelo | Entorno | Algoritmo | Recompensa declarada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hareesh23143/Reinforce-Pixelcopter-PLE-v0 | Pixelcopter-PLE-v0 | REINFORCE | 19,60 +/- 5,00 | no disponible | HuggingFace, 0 descargas |
-| Bear-ai/Reinforce-Pixelcopter-PLE-v0 | Pixelcopter-PLE-v0 | REINFORCE (unit 4 deep-rl-course) | no disponible | no disponible | HuggingFace |
-| bingwu871/Pixelcopter-PLE-v0 | Pixelcopter-PLE-v0 | REINFORCE (unit 4 deep-rl-course) | no disponible | no disponible | HuggingFace |
-| Forkits/Reinforce-Pixelcopter-PLE-v0 | Pixelcopter-PLE-v0 | REINFORCE (unit 5 deep-rl-class) | no disponible | no disponible | HuggingFace |
-| arminmrm93/Reinforce-Pixelcopter-PLE-v0 | Pixelcopter-PLE-v0 | REINFORCE (unit 4 deep-rl-course) | no disponible | no disponible | HuggingFace |
+| hareesh23143/Reinforce-Pixelcopter-PLE-v0 | Pixelcopter-PLE-v0 | REINFORCE | 19,60 +/- 5,00 | no disponible | Hugging Face, 0 descargas |
+| Bear-ai/Reinforce-Pixelcopter-PLE-v0 | Pixelcopter-PLE-v0 | REINFORCE (unit 4 deep-rl-course) | no disponible | no disponible | Hugging Face |
+| bingwu871/Pixelcopter-PLE-v0 | Pixelcopter-PLE-v0 | REINFORCE (unit 4 deep-rl-course) | no disponible | no disponible | Hugging Face |
+| Forkits/Reinforce-Pixelcopter-PLE-v0 | Pixelcopter-PLE-v0 | REINFORCE (unit 5 deep-rl-class) | no disponible | no disponible | Hugging Face |
+| arminmrm93/Reinforce-Pixelcopter-PLE-v0 | Pixelcopter-PLE-v0 | REINFORCE (unit 4 deep-rl-course) | no disponible | no disponible | Hugging Face |
 
 Todos los modelos comparables encontrados comparten el mismo entorno objetivo y el mismo algoritmo de base, y ninguno de ellos publica parametros, contexto o licencia, por lo que la comparacion se limita a la procedencia y al algoritmo empleado. No se dispone de datos de rendimiento de las alternativas.
 
@@ -88,7 +88,7 @@ Todos los modelos comparables encontrados comparten el mismo entorno objetivo y 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hareesh23143/Reinforce-Pixelcopter-PLE-v0
+- Modelo en Hugging Face: https://huggingface.co/hareesh23143/Reinforce-Pixelcopter-PLE-v0
 - Curso Deep Reinforcement Learning, unidad 4: https://huggingface.co/deep-rl-course/unit4/introduction
 - Repositorio del curso deep-rl-class: https://github.com/huggingface/deep-rl-class/tree/main/unit5
 - Cuaderno de la unidad 4: https://colab.research.google.com/github/huggingface/deep-rl-class/blob/main/notebooks/unit4/unit4.ipynb

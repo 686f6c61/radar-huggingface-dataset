@@ -2,7 +2,7 @@
 
 ## Resumen
 
-yoruba_small-1 es un ajuste fino (fine-tune) del modelo NCAIR1/Yoruba-ASR para reconocimiento automático del habla (ASR) en yoruba, publicado por el usuario abdouaziiz en HuggingFace. Se trata de un modelo de la familia Whisper en su variante "small", con 241.734.912 parámetros totales según los pesos en safetensors, lo que lo sitúa en la gama ligera de modelos encoder-decoder de voz.
+yoruba_small-1 es un ajuste fino (fine-tune) del modelo NCAIR1/Yoruba-ASR para reconocimiento automático del habla (ASR) en yoruba, publicado por el usuario abdouaziiz en Hugging Face. Se trata de un modelo de la familia Whisper en su variante "small", con 241.734.912 parámetros totales según los pesos en safetensors, lo que lo sitúa en la gama ligera de modelos encoder-decoder de voz.
 
 El modelo se ha entrenado sobre el dataset thisniyi/yoruba-tts-dataset-openslr y declara una tasa de error de palabra (WER) de 0,3639 sobre el conjunto de evaluación, con una pérdida de validación de 0,6245. Es, por tanto, un modelo de investigación en fase temprana: no tiene descargas ni likes, la model card es la generada automáticamente por el Trainer y contiene secciones sin completar ("More information needed").
 
@@ -74,17 +74,17 @@ El mejor WER registrado es 0,3219 en el paso 4.000; el valor publicado en la mod
 - VRAM estimada: aproximadamente 1 GB en fp32 (241 M × 4 bytes), unos 0,5 GB en fp16 y unos 0,25 GB en int8, más el espacio de activaciones y buffers de audio (típicamente 1-2 GB adicionales en función del batch).
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM; RTX 3060, RTX 4060, RTX 4090, A100 y H100 funcionan sin problema. El modelo está sobredimensionado para A100/H100 salvo en escenarios de alto throughput.
 - Cabe holgadamente en GPU de consumo: sí, desde GTX 1650 o RTX 3050 en adelante. También es viable en CPU para inferencia no interactiva.
-- Opciones de despliegue: `transformers` con `pipeline("automatic-speech-recognition")` (soporte nativo), conversión a CTranslate2 para usar faster-whisper, WhisperX para alineación y diarización, y servidores de inferencia genéricos como TorchServe o un endpoint de HuggingFace Inference Endpoints. vLLM y TGI no ofrecen soporte específico para Whisper, y llama.cpp/Ollama requerirían conversión a GGUF con soporte limitado para este tipo de arquitectura.
+- Opciones de despliegue: `transformers` con `pipeline("automatic-speech-recognition")` (soporte nativo), conversión a CTranslate2 para usar faster-whisper, WhisperX para alineación y diarización, y servidores de inferencia genéricos como TorchServe o un endpoint de Hugging Face Inference Endpoints. vLLM y TGI no ofrecen soporte específico para Whisper, y llama.cpp/Ollama requerirían conversión a GGUF con soporte limitado para este tipo de arquitectura.
 - Latencia y throughput: no disponibles; no se han publicado mediciones. En la práctica, con un modelo de 241 M de parámetros se espera una latencia del orden de décimas de segundo por ventana de 30 s en GPU moderna, pero es una estimación, no un dato del autor.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto de audio | Idiomas | Licencia | WER en yoruba | Disponibilidad |
 |---|---|---|---|---|---|---|
-| yoruba_small-1 | 241,7 M | 30 s | Yoruba (no declarados) | other | 0,3639 (dataset TTS del autor) | HuggingFace, 0 descargas |
-| NCAIR1/Yoruba-ASR (modelo base) | no disponible | 30 s (arquitectura Whisper) | Yoruba | no disponible | no disponible | HuggingFace |
-| openai/whisper-small | 244 M | 30 s | 99 idiomas | Apache 2.0 | no disponible (yoruba incluido en el entrenamiento multilingüe) | HuggingFace, ampliamente usado |
-| openai/whisper-large-v3 | 1.550 M | 30 s | 99 idiomas | Apache 2.0 | no disponible | HuggingFace |
+| yoruba_small-1 | 241,7 M | 30 s | Yoruba (no declarados) | other | 0,3639 (dataset TTS del autor) | Hugging Face, 0 descargas |
+| NCAIR1/Yoruba-ASR (modelo base) | no disponible | 30 s (arquitectura Whisper) | Yoruba | no disponible | no disponible | Hugging Face |
+| openai/whisper-small | 244 M | 30 s | 99 idiomas | Apache 2.0 | no disponible (yoruba incluido en el entrenamiento multilingüe) | Hugging Face, ampliamente usado |
+| openai/whisper-large-v3 | 1.550 M | 30 s | 99 idiomas | Apache 2.0 | no disponible | Hugging Face |
 
 La comparación cuantitativa con alternativas no es posible con la información disponible: no hay resultados de referencia de otros modelos sobre el mismo dataset, y el WER publicado corresponde a un corpus derivado de TTS, por lo que no es directamente trasladable a voz humana real.
 
@@ -104,7 +104,7 @@ La comparación cuantitativa con alternativas no es posible con la información 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abdouaziiz/yoruba_small-1
+- Modelo en Hugging Face: https://huggingface.co/abdouaziiz/yoruba_small-1
 - Modelo base: https://huggingface.co/NCAIR1/Yoruba-ASR
 - Dataset de entrenamiento: https://huggingface.co/datasets/thisniyi/yoruba-tts-dataset-openslr
 - Repositorio de Whisper (arquitectura de referencia): https://github.com/openai/whisper

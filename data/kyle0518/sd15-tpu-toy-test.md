@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parámetros | Resolución | Licencia | Entrenamiento | Disponibilidad |
 |---|---|---|---|---|---|
-| kyle0518/sd15-tpu-toy-test | 859M | 512x512 | OpenRAIL-M | 50 pasos, dataset Naruto | HuggingFace |
-| stable-diffusion-v1-5/stable-diffusion-v1-5 | 859M | 512x512 | OpenRAIL-M | Entrenamiento completo (LAION-5B) | HuggingFace |
-| runwayml/stable-diffusion-v1-5 (original) | 859M | 512x512 | OpenRAIL-M | Entrenamiento completo | HuggingFace |
+| kyle0518/sd15-tpu-toy-test | 859M | 512x512 | OpenRAIL-M | 50 pasos, dataset Naruto | Hugging Face |
+| stable-diffusion-v1-5/stable-diffusion-v1-5 | 859M | 512x512 | OpenRAIL-M | Entrenamiento completo (LAION-5B) | Hugging Face |
+| runwayml/stable-diffusion-v1-5 (original) | 859M | 512x512 | OpenRAIL-M | Entrenamiento completo | Hugging Face |
 
 La comparativa se limita al modelo base, ya que no hay otros fine-tunings de Naruto con datos públicos en la información disponible. El modelo de kyle0518 es un subconjunto del base, con un entrenamiento mínimo que probablemente produce resultados de menor calidad y menos generalización. La licencia es la misma, pero el uso comercial de este fine-tuning concreto no está garantizado debido a la posible presencia de personajes con derechos de autor en el dataset de entrenamiento.
 
@@ -78,7 +78,7 @@ La comparativa se limita al modelo base, ya que no hay otros fine-tunings de Nar
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/kyle0518/sd15-tpu-toy-test)
+- [Modelo en Hugging Face](https://huggingface.co/kyle0518/sd15-tpu-toy-test)
 - [Dataset lambdalabs/naruto-blip-captions](https://huggingface.co/datasets/lambdalabs/naruto-blip-captions)
 - [Stable Diffusion v1.5 (modelo base)](https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5)
 - [Documentación de diffusers](https://huggingface.co/docs/diffusers/index)

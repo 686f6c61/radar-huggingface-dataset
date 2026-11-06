@@ -73,7 +73,7 @@ No disponible. La información proporcionada no incluye otras políticas microdu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GinDuck/microduck-frere-quacques
+- Modelo en Hugging Face: https://huggingface.co/GinDuck/microduck-frere-quacques
 - Repositorio microduck (Pollen Robotics): https://github.com/pollen-robotics/microduck
 - Repositorio de retos y entrenamiento: https://github.com/pollen-robotics/microduck-challenges
 - Documentación del manifiesto de políticas: `docs/policy-manifest.md` en el repositorio del demonio (referenciado en la model card, sin URL directa disponible)

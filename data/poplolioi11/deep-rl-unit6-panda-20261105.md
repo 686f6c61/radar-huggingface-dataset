@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`poplolioi11/deep-rl-unit6-panda-20261105` es un checkpoint de aprendizaje por refuerzo publicado en HuggingFace por el usuario poplolioi11 (Chen-Yu Chu). No se trata de un modelo de lenguaje, sino de una política neuronal entrenada con el algoritmo A2C (Advantage Actor-Critic) de Stable-Baselines3 para resolver la tarea `PandaReachDense-v3` del entorno panda-gym, en la que un brazo robótico simulado en PyBullet debe alcanzar una posición objetivo en el espacio tridimensional. El modelo se entrenó desde inicialización aleatoria durante un millón de pasos, seleccionando el checkpoint de 983.040 pasos mediante un conjunto de validación separado de 20 episodios.
+`poplolioi11/deep-rl-unit6-panda-20261105` es un checkpoint de aprendizaje por refuerzo publicado en Hugging Face por el usuario poplolioi11 (Chen-Yu Chu). No se trata de un modelo de lenguaje, sino de una política neuronal entrenada con el algoritmo A2C (Advantage Actor-Critic) de Stable-Baselines3 para resolver la tarea `PandaReachDense-v3` del entorno panda-gym, en la que un brazo robótico simulado en PyBullet debe alcanzar una posición objetivo en el espacio tridimensional. El modelo se entrenó desde inicialización aleatoria durante un millón de pasos, seleccionando el checkpoint de 983.040 pasos mediante un conjunto de validación separado de 20 episodios.
 
-El interés de esta ficha es acotado: se trata de un artefacto educativo vinculado a la unidad 6 del curso Deep RL de HuggingFace, no de un modelo de propósito general. Su relevancia radica en que documenta de forma reproducible un pipeline completo de RL (entrenamiento, normalización de observaciones, validación y holdout independiente), con métricas declaradas y verificación de recarga desde cero. La licencia MIT permite reutilización sin restricciones.
+El interés de esta ficha es acotado: se trata de un artefacto educativo vinculado a la unidad 6 del curso Deep RL de Hugging Face, no de un modelo de propósito general. Su relevancia radica en que documenta de forma reproducible un pipeline completo de RL (entrenamiento, normalización de observaciones, validación y holdout independiente), con métricas declaradas y verificación de recarga desde cero. La licencia MIT permite reutilización sin restricciones.
 
 El modelo se distribuye como checkpoint de framework (política `MultiInputPolicy` de Stable-Baselines3 junto con estadísticas `VecNormalize`), sin pesos en formato safetensors ni GGUF, y no soporta inferencia de texto, visión ni ninguna de las capacidades asociadas a los modelos generativos.
 
@@ -38,7 +38,7 @@ El paquete incluye las estadísticas de `VecNormalize` correspondientes, que deb
 
 ## Casos de uso
 
-- Docencia y reproducción de RL: sirve como referencia funcional de la unidad 6 del curso Deep RL de HuggingFace, permitiendo a estudiantes comparar su propia implementación de A2C con un checkpoint verificado en holdout.
+- Docencia y reproducción de RL: sirve como referencia funcional de la unidad 6 del curso Deep RL de Hugging Face, permitiendo a estudiantes comparar su propia implementación de A2C con un checkpoint verificado en holdout.
 - Baseline para experimentos de control robótico: puede usarse como punto de partida para comparar algoritmos alternativos (PPO, SAC, TD3) sobre el mismo entorno panda-gym con idéntico protocolo de evaluación.
 - Validación de pipelines de entrenamiento: el par pesos + `VecNormalize` permite comprobar que una infraestructura de evaluación reproduce el retorno declarado (-0,1845 ± 0,1343) antes de escalar a tareas más complejas.
 - Pruebas de integración de Stable-Baselines3: útil para verificar versiones de PyTorch, Gymnasium y panda-gym en un entorno controlado antes de desplegar entrenamientos largos.
@@ -47,7 +47,7 @@ El paquete incluye las estadísticas de `VecNormalize` correspondientes, que deb
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor en el `model-index` de la model card (no verificados de forma independiente por HuggingFace):
+Resultados declarados por el autor en el `model-index` de la model card (no verificados de forma independiente por Hugging Face):
 
 | Tarea | Dataset/entorno | Métrica | Valor |
 |---|---|---|---|
@@ -67,9 +67,9 @@ Datos adicionales del holdout declarado (100 episodios, semillas 90000-90099): m
 
 | Modelo | Algoritmo | Entorno | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| poplolioi11/deep-rl-unit6-panda-20261105 | A2C | PandaReachDense-v3 | no disponible | no aplica | MIT | HuggingFace |
-| Políticas de referencia del curso Deep RL (unidad 6) | A2C/PPO | PandaReachDense-v3 | no disponible | no aplica | según repositorio del curso | GitHub de HuggingFace |
-| Otros checkpoints panda-gym en HuggingFace | variable (PPO, SAC, A2C) | PandaReachDense-v3 y variantes | no disponible | no aplica | variable | HuggingFace |
+| poplolioi11/deep-rl-unit6-panda-20261105 | A2C | PandaReachDense-v3 | no disponible | no aplica | MIT | Hugging Face |
+| Políticas de referencia del curso Deep RL (unidad 6) | A2C/PPO | PandaReachDense-v3 | no disponible | no aplica | según repositorio del curso | GitHub de Hugging Face |
+| Otros checkpoints panda-gym en Hugging Face | variable (PPO, SAC, A2C) | PandaReachDense-v3 y variantes | no disponible | no aplica | variable | Hugging Face |
 
 No se dispone de datos comparativos de rendimiento entre estos modelos en la información proporcionada; la comparación se limita a aspectos de disponibilidad y licencia.
 
@@ -77,7 +77,7 @@ No se dispone de datos comparativos de rendimiento entre estos modelos en la inf
 
 - Ámbito muy restringido: solo resuelve `PandaReachDense-v3`; no generaliza a otras tareas, entornos ni modalidades.
 - Sin capacidades de lenguaje, visión ni razonamiento simbólico; no debe evaluarse con benchmarks tipo MMLU, HumanEval o GSM8K.
-- El rendimiento declarado no ha sido verificado de forma independiente por HuggingFace (`verified: false`); procede del autor.
+- El rendimiento declarado no ha sido verificado de forma independiente por Hugging Face (`verified: false`); procede del autor.
 - La evaluación requiere mantener juntas las estadísticas `VecNormalize` y los pesos, con normalización de recompensa desactivada; un uso incorrecto produce resultados distintos a los publicados.
 - El código fuente de entrenamiento permanece privado, lo que limita la reproducibilidad completa del pipeline.
 - Los archivos son checkpoints de framework: deben cargarse solo artefactos de confianza, ya que la deserialización de PyTorch puede ejecutar código arbitrario.
@@ -87,8 +87,8 @@ No se dispone de datos comparativos de rendimiento entre estos modelos en la inf
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/poplolioi11/deep-rl-unit6-panda-20261105
-- Notebook de la unidad 6 del curso Deep RL (HuggingFace): https://colab.research.google.com/github/huggingface/deep-rl-class/blob/main/notebooks/unit6/unit6.ipynb
+- Hugging Face: https://huggingface.co/poplolioi11/deep-rl-unit6-panda-20261105
+- Notebook de la unidad 6 del curso Deep RL (Hugging Face): https://colab.research.google.com/github/huggingface/deep-rl-class/blob/main/notebooks/unit6/unit6.ipynb
 - Repositorio del curso Deep RL: https://github.com/huggingface/deep-rl-class
 - Stable-Baselines3: https://github.com/DLR-RM/stable-baselines3
 - panda-gym: https://github.com/qgallouedec/panda-gym

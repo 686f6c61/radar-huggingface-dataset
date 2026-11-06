@@ -6,7 +6,7 @@ Firehouse-Cactus-1.01-GGUF es una cuantización en formato GGUF del modelo Fireh
 
 El modelo tiene aproximadamente 7,46 mil millones de parámetros, lo que lo sitúa en la gama de modelos de tamaño medio. La licencia es Apache-2.0, aunque se enlaza a la licencia específica de Gemma 4. Al ser una cuantización, esta versión no modifica las capacidades del modelo original, pero introduce pérdida de precisión según el nivel de cuantización elegido.
 
-Su relevancia actual radica en que permite desplegar un modelo de 7B en hardware de consumo, con múltiples opciones de compresión para adaptarse a diferentes presupuestos de memoria. No se ha publicado información detallada sobre el entrenamiento, arquitectura o benchmarks, por lo que esta ficha se basa únicamente en los datos disponibles en la página de HuggingFace.
+Su relevancia actual radica en que permite desplegar un modelo de 7B en hardware de consumo, con múltiples opciones de compresión para adaptarse a diferentes presupuestos de memoria. No se ha publicado información detallada sobre el entrenamiento, arquitectura o benchmarks, por lo que esta ficha se basa únicamente en los datos disponibles en la página de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -68,7 +68,7 @@ Los requisitos dependen del archivo GGUF elegido. La siguiente tabla estima la V
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables (ni del modelo base Firehouse-Cactus-1.01 ni de alternativas de la misma categoría). Se recomienda consultar el modelo base en HuggingFace para obtener más contexto.
+No se dispone de información sobre modelos comparables (ni del modelo base Firehouse-Cactus-1.01 ni de alternativas de la misma categoría). Se recomienda consultar el modelo base en Hugging Face para obtener más contexto.
 
 ## Limitaciones y advertencias
 
@@ -82,7 +82,7 @@ No se dispone de información sobre modelos comparables (ni del modelo base Fire
 
 ## Enlaces
 
-- Repositorio HuggingFace del GGUF: https://huggingface.co/mradermacher/Firehouse-Cactus-1.01-GGUF
+- Repositorio Hugging Face del GGUF: https://huggingface.co/mradermacher/Firehouse-Cactus-1.01-GGUF
 - Modelo base: https://huggingface.co/Ironwood-LLM-Team/Firehouse-Cactus-1.01
 - Perfil de mradermacher: https://huggingface.co/mradermacher
 - Página de LLM Explorer (para el modelo base 1.0): https://llm-explorer.com/model/Ironwood-LLM-Team%2FFirehouse-Cactus-1.0,6JUszgNx3wpJ8nGFoFKamj

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Alihossein1997/synthesis` es un repositorio publicado en HuggingFace por el usuario Alihossein1997. La información disponible es extremadamente limitada: la model card únicamente declara la licencia `bigscience-openrail-m` y no incluye descripción, arquitectura, parámetros, ni datos de entrenamiento. No se han encontrado referencias externas relevantes al modelo en búsquedas web; los resultados obtenidos corresponden a proyectos no relacionados (síntesis de voz, sintetizadores modulares, etc.).
+El modelo `Alihossein1997/synthesis` es un repositorio publicado en Hugging Face por el usuario Alihossein1997. La información disponible es extremadamente limitada: la model card únicamente declara la licencia `bigscience-openrail-m` y no incluye descripción, arquitectura, parámetros, ni datos de entrenamiento. No se han encontrado referencias externas relevantes al modelo en búsquedas web; los resultados obtenidos corresponden a proyectos no relacionados (síntesis de voz, sintetizadores modulares, etc.).
 
 Dada la ausencia total de especificaciones técnicas y documentación, no es posible evaluar su funcionalidad, rendimiento o casos de uso. El repositorio parece estar vacío de contenido sustancial o, en el mejor de los casos, ser un experimento sin publicar. Se recomienda precaución antes de considerar su uso en cualquier proyecto, ya que no hay evidencia de que el modelo exista o funcione como se espera.
 
@@ -54,4 +54,4 @@ No disponible. Al no existir información sobre las características del modelo,
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Alihossein1997/synthesis
+- Repositorio en Hugging Face: https://huggingface.co/Alihossein1997/synthesis

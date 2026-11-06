@@ -85,7 +85,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/nicolasramos/Qwen3.8-9B-Distill-MLX-oQ4e-fp16-mtp
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/nicolasramos/Qwen3.8-9B-Distill-MLX-oQ4e-fp16-mtp
 - Modelo original (empero-ai): https://huggingface.co/empero-ai/Qwen3.8-9B-Distill
 - Otra cuantizacion del mismo autor (4-bit sin oQ): https://huggingface.co/nicolasramos/Qwen3.8-9B-Distill-MLX-4bit
 - Repositorio oficial de Qwen3.8 en GitHub: https://github.com/QwenLM/Qwen3.8

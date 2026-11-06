@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El System-1 Router es un modelo compacto especializado en enrutamiento de consultas (LLM routing) construido sobre el backbone congelado de Qwen/Qwen3.5-0.8B. Lo publica el usuario RaghavM11 en HuggingFace, con un tamano de repositorio de 0,1 GB y licencia Apache 2.0. Su funcion no es generar texto, sino decidir en un unico forward pass cual de 18 modelos candidatos deberia responder a una consulta dada, seleccionando la opcion con mayor puntuacion.
+El System-1 Router es un modelo compacto especializado en enrutamiento de consultas (LLM routing) construido sobre el backbone congelado de Qwen/Qwen3.5-0.8B. Lo publica el usuario RaghavM11 en Hugging Face, con un tamano de repositorio de 0,1 GB y licencia Apache 2.0. Su funcion no es generar texto, sino decidir en un unico forward pass cual de 18 modelos candidatos deberia responder a una consulta dada, seleccionando la opcion con mayor puntuacion.
 
 El modelo se entrena contra etiquetas de oraculo contrafactuales del benchmark xRouteBench (variante `llmrouter_generic`). Combina un adaptador LoRA sobre las capas lineales del modelo de lenguaje (r=16, alpha=32) con una cabeza de eleccion (`ChoiceHead`, anchura 128, 4 cabezas de atencion, 2 capas conjuntas) que puntua cada candidato. El backbone y el adaptador codifican la consulta y la cabeza produce el ranking de opciones.
 
@@ -84,7 +84,7 @@ No se dispone de informacion sobre modelos comparables de enrutamiento en la doc
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RaghavM11/Fireworks_Hack_JEV_Style_System1_router_base_qwen3.5_0.8B
+- Hugging Face: https://huggingface.co/RaghavM11/Fireworks_Hack_JEV_Style_System1_router_base_qwen3.5_0.8B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Benchmark xRouteBench: no disponible (referenciado en la model card sin enlace directo)
 - Repositorio de codigo (`router.eval_router`, entorno `route_f`): no disponible (referenciado en la model card sin enlace directo)

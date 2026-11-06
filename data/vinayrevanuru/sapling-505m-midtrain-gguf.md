@@ -89,7 +89,7 @@ No se dispone de datos de benchmarks de tareas ni de especificaciones detalladas
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/VinayRevanuru/Sapling-505M-Midtrain-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/VinayRevanuru/Sapling-505M-Midtrain-GGUF
 - Modelo base de mid-training: https://huggingface.co/VinayRevanuru/Sapling-505M-Midtrain
 - Variante ajustada para chat: https://huggingface.co/VinayRevanuru/Sapling-505M-SFT
 - Repositorio de llama.cpp (conversion y cuantizacion): https://github.com/ggml-org/llama.cpp

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`danieladava/flamingo-finetuned` es un repositorio de HuggingFace que contiene una implementación propia y compacta de la arquitectura Flamingo en PyTorch, publicada por el usuario danieladava bajo licencia MIT. A pesar del sufijo "finetuned" en el nombre, la propia model card indica que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y no un modelo entrenado ni evaluado con benchmarks. La configuración es de escala "tiny", con 24.832 parámetros totales según los tensores del archivo safetensors.
+`danieladava/flamingo-finetuned` es un repositorio de Hugging Face que contiene una implementación propia y compacta de la arquitectura Flamingo en PyTorch, publicada por el usuario danieladava bajo licencia MIT. A pesar del sufijo "finetuned" en el nombre, la propia model card indica que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y no un modelo entrenado ni evaluado con benchmarks. La configuración es de escala "tiny", con 24.832 parámetros totales según los tensores del archivo safetensors.
 
 El modelo emplea atención linear, fusión por co-attention, activación gelu tanh y normalización InstanceNorm, lo que lo sitúa en la familia de modelos multimodales tipo Flamingo, aunque sin evidencia publicada de que el entrene multimodal se haya completado. El artefacto principal no es el checkpoint sino `model.py`, que contiene tanto la definición del modelo como un punto de entrada ejecutable de ejemplo o de entrenamiento.
 
@@ -70,9 +70,9 @@ No hay alternativas directamente comparables por escala: los modelos de la famil
 
 | Modelo | Parámetros | Contexto | Licencia | Estado | Disponibilidad |
 |---|---|---|---|---|---|
-| danieladava/flamingo-finetuned | 24.832 | no disponible | MIT | Checkpoint de inicialización, sin entrenar | HuggingFace, 0 descargas |
-| OpenFlamingo-9B | ~9 mil millones | no verificado en esta ficha | MIT | Entrenado y publicado con evaluación | HuggingFace |
-| IDEFICS-9B | ~9 mil millones | no verificado en esta ficha | no verificado | Entrenado y publicado con evaluación | HuggingFace |
+| danieladava/flamingo-finetuned | 24.832 | no disponible | MIT | Checkpoint de inicialización, sin entrenar | Hugging Face, 0 descargas |
+| OpenFlamingo-9B | ~9 mil millones | no verificado en esta ficha | MIT | Entrenado y publicado con evaluación | Hugging Face |
+| IDEFICS-9B | ~9 mil millones | no verificado en esta ficha | no verificado | Entrenado y publicado con evaluación | Hugging Face |
 
 La comparación relevante no es de rendimiento, sino de propósito: OpenFlamingo e IDEFICS son modelos destinados a inferencia real, mientras que este repositorio es una implementación de referencia a escala de juguete.
 
@@ -90,5 +90,5 @@ La comparación relevante no es de rendimiento, sino de propósito: OpenFlamingo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/danieladava/flamingo-finetuned
+- Modelo en Hugging Face: https://huggingface.co/danieladava/flamingo-finetuned
 - No se han encontrado en la búsqueda web otros enlaces (papers, blogs, repositorios de código o demos) asociados a este modelo.

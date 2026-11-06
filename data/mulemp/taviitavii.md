@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TaviiTavii es un modelo publicado en HuggingFace por el usuario mulemp bajo el identificador `mulemp/TaviiTavii`. La informacion publica disponible es extremadamente limitada: la ficha no declara pipeline, licencia, idiomas soportados ni arquitectura, y el repositorio esta sujeto a acceso restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de poder descargar los pesos. El repositorio ocupa aproximadamente 0,2 GB y fue creado el 13 de septiembre de 2026, con una unica actualizacion dos minutos mas tarde, lo que sugiere una publicacion reciente y sin mantenimiento posterior documentado.
+TaviiTavii es un modelo publicado en Hugging Face por el usuario mulemp bajo el identificador `mulemp/TaviiTavii`. La informacion publica disponible es extremadamente limitada: la ficha no declara pipeline, licencia, idiomas soportados ni arquitectura, y el repositorio esta sujeto a acceso restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de poder descargar los pesos. El repositorio ocupa aproximadamente 0,2 GB y fue creado el 13 de septiembre de 2026, con una unica actualizacion dos minutos mas tarde, lo que sugiere una publicacion reciente y sin mantenimiento posterior documentado.
 
 En el momento de redactar esta ficha no se ha publicado documentacion tecnica, model card descriptiva, paper ni resultados de evaluacion asociados al modelo. Las busquedas web realizadas no han devuelto ningun resultado relevante sobre el modelo: los enlaces recuperados corresponden a contenidos no relacionados (Facebook Marketplace), por lo que no aportan informacion util sobre arquitectura, entrenamiento o capacidades.
 
@@ -24,7 +24,7 @@ Por todo ello, esta ficha recoge los pocos datos verificables disponibles y marc
 | Autor | mulemp |
 | Pipeline declarado | no disponible |
 | Tamano del repositorio | ~0,2 GB |
-| Acceso | restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Descargas | 0 |
 | Likes | 1 |
 | Fecha de creacion | 2026-09-13 |
@@ -86,7 +86,7 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 - Ausencia total de model card: no hay documentacion sobre arquitectura, entrenamiento, datos utilizados ni limitaciones conocidas.
 - Licencia no declarada: no puede asumirse permiso para uso comercial, redistribucion o modificacion. Cualquier uso en produccion requiere aclarar previamente los terminos.
-- Acceso restringido: el repositorio es gated, por lo que la descarga requiere aceptar condiciones en HuggingFace y puede estar sujeta a restricciones adicionales del autor.
+- Acceso restringido: el repositorio es gated, por lo que la descarga requiere aceptar condiciones en Hugging Face y puede estar sujeta a restricciones adicionales del autor.
 - Idiomas no confirmados: se desconoce si el modelo soporta castellano u otros idiomas, y con que calidad.
 - Riesgo de alucinacion: no evaluado. Sin benchmarks ni evaluaciones de fidelidad, no puede descartarse un riesgo elevado.
 - Sesgos: no evaluados. No hay informacion sobre la composicion del dataset de entrenamiento ni sobre analisis de sesgo.
@@ -97,7 +97,7 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulemp/TaviiTavii
+- Modelo en Hugging Face: https://huggingface.co/mulemp/TaviiTavii
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
 - Repositorio de codigo: no disponible

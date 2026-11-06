@@ -99,7 +99,7 @@ No se dispone de resultados de benchmarks verificados de este adaptador, por lo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/adityag-india/Llama-3.1-8B-Medical-o1-LoRA
+- Modelo en Hugging Face: https://huggingface.co/adityag-india/Llama-3.1-8B-Medical-o1-LoRA
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/FreedomIntelligence/medical-o1-reasoning-SFT
 - Licencia Llama 3.1 Community License: https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/LICENSE

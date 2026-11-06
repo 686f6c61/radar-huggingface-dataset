@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje presentado por el usuario de HuggingFace `sad21dsasad11` en un repositorio de prueba. Según la model card, se trata de una versión actualizada de un modelo previo que incorpora mejoras en razonamiento profundo, reducción de alucinaciones y soporte mejorado para function calling. El autor afirma que el modelo alcanza un 87,5 % de precisión en el conjunto AIME 2025, frente al 70 % de la versión anterior, utilizando una media de 23 000 tokens por pregunta en ese test.
+MyAwesomeModel es un modelo de lenguaje presentado por el usuario de Hugging Face `sad21dsasad11` en un repositorio de prueba. Según la model card, se trata de una versión actualizada de un modelo previo que incorpora mejoras en razonamiento profundo, reducción de alucinaciones y soporte mejorado para function calling. El autor afirma que el modelo alcanza un 87,5 % de precisión en el conjunto AIME 2025, frente al 70 % de la versión anterior, utilizando una media de 23 000 tokens por pregunta en ese test.
 
 Sin embargo, el repositorio no contiene ningún peso, archivo de configuración ni documentación técnica adicional. El tamaño del repo es de 0,0 GB, con cero descargas y cero likes, lo que sugiere que se trata de un repositorio vacío o de prueba. No se especifican la arquitectura, el número de parámetros, la longitud de contexto ni los idiomas soportados. Toda la información disponible proviene exclusivamente de la model card redactada por el autor, sin verificación independiente.
 
@@ -99,6 +99,6 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/sad21dsasad11/MyAwesomeModel-TestRepo
+- Repositorio de Hugging Face: https://huggingface.co/sad21dsasad11/MyAwesomeModel-TestRepo
 
 No se han encontrado otros enlaces (papers, blogs, repositorios de código o demos) en la información proporcionada.

@@ -89,10 +89,10 @@ Lectura de los datos: en TC y RM el modelo supera ampliamente a MedGemma 27B en 
 
 | Modelo | Parámetros | Contexto | Modalidades | Localización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Skanda (run 3) | 30B totales (MoE, ~3B activos) + SAM 2.1 | no disponible | RX, TC, RM | Cajas + máscaras | skanda-private | HuggingFace, repo 63,1 GB |
-| MedGemma 27B | 27B | no disponible | Imagen médica (RX, TC, RM) | Sin cajas nativas | licencia abierta de Google (no verificada aquí) | HuggingFace |
-| MAIRA-2 | no disponible | no disponible | Radiografía de tórax | Cajas | licencia de Microsoft (no verificada aquí) | HuggingFace |
-| Sa2VA-Qwen3-VL-4B | 4B | no disponible | Imagen general | Cajas + máscaras | según modelo base | HuggingFace |
+| Skanda (run 3) | 30B totales (MoE, ~3B activos) + SAM 2.1 | no disponible | RX, TC, RM | Cajas + máscaras | skanda-private | Hugging Face, repo 63,1 GB |
+| MedGemma 27B | 27B | no disponible | Imagen médica (RX, TC, RM) | Sin cajas nativas | licencia abierta de Google (no verificada aquí) | Hugging Face |
+| MAIRA-2 | no disponible | no disponible | Radiografía de tórax | Cajas | licencia de Microsoft (no verificada aquí) | Hugging Face |
+| Sa2VA-Qwen3-VL-4B | 4B | no disponible | Imagen general | Cajas + máscaras | según modelo base | Hugging Face |
 
 Skanda se diferencia por cubrir tres modalidades con localización explícita y por el descarte de normales en TC y RM, donde MedGemma falla de forma sistemática. Frente a MAIRA-2, amplía el alcance más allá de la radiografía de tórax. La contrapartida es la licencia privada y la falta de datos de contexto y de requisitos de memoria publicados.
 
@@ -110,7 +110,7 @@ Skanda se diferencia por cubrir tres modalidades con localización explícita y 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hitheshkaranth/skanda-grounding
+- Modelo en Hugging Face: https://huggingface.co/hitheshkaranth/skanda-grounding
 - Modelo base Qwen3-VL-30B-A3B-Instruct: https://huggingface.co/Qwen/Qwen3-VL-30B-A3B-Instruct
 - Modelo base Sa2VA-Qwen3-VL-4B: https://huggingface.co/ByteDance/Sa2VA-Qwen3-VL-4B
 - Referencia arXiv citada en los tags (arXiv:2501.04001): https://arxiv.org/abs/2501.04001

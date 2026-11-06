@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kimi-K3.1-Pro-MLXse es una redistribución del modelo Kimi-K3.1-Pro de Moonshot AI, publicada por el usuario inferencerlabs en HuggingFace. No se trata de un modelo entrenado desde cero, sino de un reempaquetado de los pesos cuantizados existentes del modelo original, adaptado para su ejecución con MLX, el framework de Apple para aceleración en silicio propio (M-series). El sufijo "MLXse" y la descripción de la model card indican que los expertos del modelo se descargan a almacenamiento ("offloads the experts to storage") para poder ejecutarse a plena precisión en dispositivos con memoria limitada.
+Kimi-K3.1-Pro-MLXse es una redistribución del modelo Kimi-K3.1-Pro de Moonshot AI, publicada por el usuario inferencerlabs en Hugging Face. No se trata de un modelo entrenado desde cero, sino de un reempaquetado de los pesos cuantizados existentes del modelo original, adaptado para su ejecución con MLX, el framework de Apple para aceleración en silicio propio (M-series). El sufijo "MLXse" y la descripción de la model card indican que los expertos del modelo se descargan a almacenamiento ("offloads the experts to storage") para poder ejecutarse a plena precisión en dispositivos con memoria limitada.
 
 El modelo base es un modelo multimodal de tipo image-text-to-text, lo que implica capacidad de procesar imágenes y texto conjuntamente. La model card menciona únicamente pruebas en un M3 Ultra con 512 GB de memoria unificada, lo que sitúa el objetivo de despliegue en estaciones de trabajo Apple de gama alta más que en GPUs convencionales. No se especifican parámetros totales, longitud de contexto ni detalles de arquitectura en la información disponible.
 
@@ -22,7 +22,7 @@ La relevancia de esta ficha es limitada: el repositorio tiene 0 descargas y 0 li
 | Formato de pesos | MLX (repositorio con `library_name: mlx`); no se confirma safetensors ni GGUF |
 | Modelo base | moonshotai/Kimi-K3.1-Pro |
 | Pipeline | image-text-to-text |
-| Tamano del repo | 0.0 GB (según metadata de HuggingFace) |
+| Tamano del repo | 0.0 GB (según metadata de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -66,8 +66,8 @@ No disponible. La información proporcionada no incluye datos de rendimiento ni 
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Kimi-K3.1-Pro-MLXse (este) | no disponible | no disponible | no disponible | MLX 4-bit | HuggingFace, 0 descargas |
-| moonshotai/Kimi-K3.1-Pro | no disponible | no disponible | no disponible | no disponible | HuggingFace (modelo base) |
+| Kimi-K3.1-Pro-MLXse (este) | no disponible | no disponible | no disponible | MLX 4-bit | Hugging Face, 0 descargas |
+| moonshotai/Kimi-K3.1-Pro | no disponible | no disponible | no disponible | no disponible | Hugging Face (modelo base) |
 | Alternativas de misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -83,7 +83,7 @@ No disponible. La información proporcionada no incluye datos de rendimiento ni 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/inferencerlabs/Kimi-K3.1-Pro-MLXse
+- Repositorio Hugging Face: https://huggingface.co/inferencerlabs/Kimi-K3.1-Pro-MLXse
 - Modelo base: https://huggingface.co/moonshotai/Kimi-K3.1-Pro
 - Vídeos de demostración (según model card): https://youtube.com/xcreate
 - Inferencer: https://inferencer.com

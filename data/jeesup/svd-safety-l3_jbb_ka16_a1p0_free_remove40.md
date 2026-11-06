@@ -79,8 +79,8 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni comparaciones direct
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `Jeesup/svd-safety-l3_jbb_ka16_a1p0_free_remove40` | 8.030.261.248 almacenados; fracción declarada 0,5998 | no disponible | llama3 | HuggingFace, 0 descargas y 0 likes | Checkpoint comprimido con SVD-LLM; métricas de seguridad y perplejidad publicadas |
-| `meta-llama/Meta-Llama-3-8B-Instruct` | 8.030.261.248 | no disponible en la información | llama3 | HuggingFace | Modelo base sin compresión SVD; no se incluyen métricas comparativas en esta ficha |
+| `Jeesup/svd-safety-l3_jbb_ka16_a1p0_free_remove40` | 8.030.261.248 almacenados; fracción declarada 0,5998 | no disponible | llama3 | Hugging Face, 0 descargas y 0 likes | Checkpoint comprimido con SVD-LLM; métricas de seguridad y perplejidad publicadas |
+| `meta-llama/Meta-Llama-3-8B-Instruct` | 8.030.261.248 | no disponible en la información | llama3 | Hugging Face | Modelo base sin compresión SVD; no se incluyen métricas comparativas en esta ficha |
 | Otros checkpoints SVD-LLM del mismo grid de Jeesup | no disponible | no disponible | llama3 | no disponible | El autor indica que existen varias celdas con distintas reglas y presupuestos, pero no se proporcionan enlaces ni resultados |
 
 No se dispone de comparaciones directas de rendimiento con alternativas de la misma categoría en la información proporcionada.
@@ -101,7 +101,7 @@ No se dispone de comparaciones directas de rendimiento con alternativas de la mi
 
 ## Enlaces
 
-- [Ficha del modelo en HuggingFace](https://huggingface.co/Jeesup/svd-safety-l3_jbb_ka16_a1p0_free_remove40)
+- [Ficha del modelo en Hugging Face](https://huggingface.co/Jeesup/svd-safety-l3_jbb_ka16_a1p0_free_remove40)
 - [Modelo base meta-llama/Meta-Llama-3-8B-Instruct](https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct)
 - Licencia y política de uso: `LICENSE` y `USE_POLICY.md` incluidos en el repositorio del modelo; no se dispone de URL directa verificada.
 - Paper, blog, repositorio o demo adicionales: no disponibles en la información proporcionada.

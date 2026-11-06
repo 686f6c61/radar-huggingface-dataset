@@ -79,7 +79,7 @@ Nota: los valores de WER para los modelos de OpenAI son aproximados y dependen d
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/FredrikKarlssonSpeech/whisper-tiny-finnish-mlx-4bit)
+- [Modelo en Hugging Face](https://huggingface.co/FredrikKarlssonSpeech/whisper-tiny-finnish-mlx-4bit)
 - [Modelo base Finnish-NLP/whisper-tiny-finnish](https://huggingface.co/Finnish-NLP/whisper-tiny-finnish)
 - [Repositorio mlx-examples/whisper](https://github.com/ml-explore/mlx-examples/blob/main/whisper/README.md)
 - [Paquete mlx-whisper en PyPI](https://pypi.org/project/mlx-whisper/)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio gggff123/lfm-llamafile es una publicacion de HuggingFace cuyo unico contenido documentado es una licencia Apache 2.0 y la etiqueta de formato "llamafile". No se ha publicado model card descriptiva, pipeline, idiomas soportados ni resultados de evaluacion. El tamano del repositorio es de 0,6 GB, dato que sugiere un artefacto de pesos cuantizados de baja precision, pero no permite deducir el numero de parametros del modelo subyacente.
+El repositorio gggff123/lfm-llamafile es una publicacion de Hugging Face cuyo unico contenido documentado es una licencia Apache 2.0 y la etiqueta de formato "llamafile". No se ha publicado model card descriptiva, pipeline, idiomas soportados ni resultados de evaluacion. El tamano del repositorio es de 0,6 GB, dato que sugiere un artefacto de pesos cuantizados de baja precision, pero no permite deducir el numero de parametros del modelo subyacente.
 
 El identificador incluye la sigla "lfm", que podria asociarse a la familia Liquid Foundation Models, si bien no hay ninguna confirmacion en la informacion disponible sobre el origen real de los pesos ni sobre si se trata de una conversion, un derivado o un experimento independiente. Tampoco hay evidencia de que exista relacion con el autor original de dicha familia.
 
@@ -100,6 +100,6 @@ No se identifican en la informacion proporcionada modelos comparables concretos 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gggff123/lfm-llamafile
+- Repositorio en Hugging Face: https://huggingface.co/gggff123/lfm-llamafile
 
 No se han encontrado en la informacion disponible otros enlaces a papers, blogs, repositorios de codigo o demos.

@@ -69,7 +69,7 @@ No disponible. Este repositorio no es un modelo de IA comparable con alternativa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/schmidt2842/paper-prompt-engineering
+- Repositorio en Hugging Face: https://huggingface.co/schmidt2842/paper-prompt-engineering
 - Guía de *prompt engineering* de DAIR.AI (referencia externa): https://www.promptingguide.ai/
 - Papers sobre *prompt engineering* (referencia externa): https://www.promptingguide.ai/papers
 - Repositorio Awesome-Prompt-Engineering (referencia externa): https://github.com/promptslab/Awesome-Prompt-Engineering

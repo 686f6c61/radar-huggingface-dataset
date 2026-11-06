@@ -94,7 +94,7 @@ No se han identificado en la información disponible modelos comparables con exp
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/software-mansion/Hy-MT2-1.8B-ExecuTorch
+- Repositorio Hugging Face: https://huggingface.co/software-mansion/Hy-MT2-1.8B-ExecuTorch
 - Modelo base upstream: https://huggingface.co/tencent/Hy-MT2-1.8B
 - Librería React Native ExecuTorch: https://www.npmjs.com/package/react-native-executorch
 - Documentación de descarga de modelos: https://docs.swmansion.com/react-native-executorch/docs/fundamentals/downloading-models

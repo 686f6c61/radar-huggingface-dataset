@@ -83,7 +83,7 @@ Rendimiento medido por el autor en una RTX 5000 limitada a 125 W:
 | Modelo | Parametros | Contexto / entrada | Precision | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | twaggs88/Nemotron-3.5-Parse-pulsar-f16 | 628,7 M | imagen 1664 × 2048, hasta 9.000 tokens nuevos | f16 (Lineales) + f32 | OpenMDW-1.1 | Contenedor pulsar, 1,3 GB, 0 descargas |
-| nvidia/Nemotron-3.5-Parse | 628,7 M (misma arquitectura) | misma | f32 / BF16 original | OpenMDW-1.1 | Pesos oficiales en HuggingFace, ejecutable con transformers |
+| nvidia/Nemotron-3.5-Parse | 628,7 M (misma arquitectura) | misma | f32 / BF16 original | OpenMDW-1.1 | Pesos oficiales en Hugging Face, ejecutable con transformers |
 | twaggs88/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-pulsar-k4 | 120B totales, 12B activos (MoE) | no disponible | EXL3 4,0 bpw + drafter LiLiCorr | no disponible en la información | Contenedor pulsar para DGX Spark (GB10), 59 GB, marcado como experimental |
 | twaggs88/Nemotron-3.5-Embed-8B-pulsar-k4 y Rerank-8B-pulsar-k4 | 8B | no disponible | k4 (cuantizado) | no disponible en la información | Contenedores pulsar complementarios, pensados para compartir proceso con este parser |
 
@@ -97,7 +97,7 @@ La comparación relevante es contra el modelo original de NVIDIA: misma arquitec
 - Riesgo de alucinación en OCR: como todo modelo generativo aplicado a imagen, puede producir texto plausible que no aparece en la página, especialmente en escaneos ruidosos o tablas densas; conviene validar campos críticos contra la imagen.
 - Dependencia de un motor propio: el contenedor solo funciona con pulsar, compilado desde la rama `dev`; no hay soporte para vLLM, TGI o llama.cpp, lo que limita la portabilidad y añade riesgo de mantenimiento.
 - Madurez: repositorio con 0 descargas y 0 likes, creado y actualizado el mismo día; es una conversión de terceros no auditada por NVIDIA.
-- Licencia: OpenMDW-1.1 permite uso comercial según los términos publicados por OpenMDW, pero hay que revisar `LICENSE`, `TOKENIZER_ATTRIBUTION.md` y `THIRD_PARTY_NOTICES.md` antes de desplegar en producción; la model card de HuggingFace etiqueta la licencia como `other`.
+- Licencia: OpenMDW-1.1 permite uso comercial según los términos publicados por OpenMDW, pero hay que revisar `LICENSE`, `TOKENIZER_ATTRIBUTION.md` y `THIRD_PARTY_NOTICES.md` antes de desplegar en producción; la model card de Hugging Face etiqueta la licencia como `other`.
 - Idiomas: la lista de idiomas soportados no está publicada; el comportamiento multilingüe se infiere del decodificador mBART, no de una evaluación.
 - Sin datos de sesgo: la información disponible no incluye evaluación de sesgos ni de privacidad; la model card de NVIDIA sobre sesgo, explicabilidad, privacidad y seguridad se conserva en `NVIDIA_MODEL_CARD.md` dentro del repositorio.
 - Límite de salida: 9.000 tokens nuevos por página; páginas muy densas pueden truncarse (`finish_reason` lo indicaría).

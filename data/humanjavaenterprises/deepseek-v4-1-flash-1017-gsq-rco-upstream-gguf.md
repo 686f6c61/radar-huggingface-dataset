@@ -92,7 +92,7 @@ La comparación relevante es de encaje de despliegue, no de calidad: los pesos c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/HumanjavaEnterprises/DeepSeek-V4.1-Flash-1017-GSQ-RCO-upstream-GGUF
+- Repositorio Hugging Face: https://huggingface.co/HumanjavaEnterprises/DeepSeek-V4.1-Flash-1017-GSQ-RCO-upstream-GGUF
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Cuantización original de ISTA-DASLab: https://huggingface.co/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF
 - Herramienta de conversión y documentación del repack: https://github.com/HumanjavaEnterprises/deepseek-v41-upstream

@@ -89,7 +89,7 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks est
 | tsaipifong/Swift-1.5-Qwen3.8-27b-MXFP4-GGUF | 27,3 B | no disponible | GGUF; MXFP4 + Q8_0 + F32, cabezal Q6_K/Q8_0/Q4_K | swift-open-license-1.0 | 0 descargas, 0 likes; cuantización comunitaria |
 | ukisai/Swift-1.5-Qwen3.8-27b | no disponible (base del anterior) | no disponible | safetensors BF16 | swift-open-license-1.0 | oficial |
 | ukisai/Swift-1.5-Qwen3.8-27B-GGUF | no disponible | no disponible | GGUF | swift-open-license-1.0 | oficial |
-| ukisai/Swift-1.5-Qwen3.8-27B-GSQ-RCO-GGUF | no disponible | no disponible | GGUF mixto de precisión (incluye `IQ3_S-mtp`) | swift-open-license-1.0 | oficial, vía HuggingFace y ModelScope |
+| ukisai/Swift-1.5-Qwen3.8-27B-GSQ-RCO-GGUF | no disponible | no disponible | GGUF mixto de precisión (incluye `IQ3_S-mtp`) | swift-open-license-1.0 | oficial, vía Hugging Face y ModelScope |
 | FreedomAISVR/Qwen3.8-27B-MXFP4-GGUF | no disponible (denominado 27B) | no disponible | GGUF MXFP4 uniforme con cabezal Q6_K | no disponible | comunidad; PPL de referencia 3,7952 |
 | Qwen/Qwen3.8-27B | no disponible (denominado 27B) | no disponible | safetensors | no disponible | oficial de Alibaba Cloud |
 

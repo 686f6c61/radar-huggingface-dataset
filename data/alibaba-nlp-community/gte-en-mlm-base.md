@@ -81,10 +81,10 @@ No se han publicado resultados de XTREME-R para este modelo concreto en la infor
 
 | Modelo | Parametros | Contexto | GLUE | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| gte-en-mlm-base | 137M | 8192 | 85,61 | Apache 2.0 | Safetensors | HuggingFace |
-| MosaicBERT-base-2048 | 137M | 2048 | 85 | Apache 2.0 | Safetensors | HuggingFace |
-| nomic-bert-2048 | 137M | 2048 | 84 | Apache 2.0 | Safetensors | HuggingFace |
-| RoBERTa-base | 125M | 512 | 86,4 | MIT | Safetensors/PyTorch | HuggingFace |
+| gte-en-mlm-base | 137M | 8192 | 85,61 | Apache 2.0 | Safetensors | Hugging Face |
+| MosaicBERT-base-2048 | 137M | 2048 | 85 | Apache 2.0 | Safetensors | Hugging Face |
+| nomic-bert-2048 | 137M | 2048 | 84 | Apache 2.0 | Safetensors | Hugging Face |
+| RoBERTa-base | 125M | 512 | 86,4 | MIT | Safetensors/PyTorch | Hugging Face |
 
 La ventaja diferencial de `gte-en-mlm-base` es su contexto de 8192 tokens manteniendo un rendimiento GLUE competitivo con encoders de tamaño equivalente. RoBERTa-base obtiene un GLUE ligeramente superior (86,4 frente a 85,61) pero con un contexto ocho veces menor (512 frente a 8192). Frente a MosaicBERT y nomic-bert, el modelo de Alibaba ofrece mayor contexto y mejor puntuación GLUE con el mismo número de parámetros.
 
@@ -101,7 +101,7 @@ La ventaja diferencial de `gte-en-mlm-base` es su contexto de 8192 tokens manten
 
 ## Enlaces
 
-- Repositorio HuggingFace (conversión de la comunidad): https://huggingface.co/alibaba-nlp-community/gte-en-mlm-base
+- Repositorio Hugging Face (conversión de la comunidad): https://huggingface.co/alibaba-nlp-community/gte-en-mlm-base
 - Repositorio original de Alibaba: https://huggingface.co/Alibaba-NLP/gte-en-mlm-base
 - Paper mGTE: https://arxiv.org/abs/2407.19669
 - PDF del paper: https://arxiv.org/pdf/2407.19669

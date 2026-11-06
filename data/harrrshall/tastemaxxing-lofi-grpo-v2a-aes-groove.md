@@ -64,6 +64,6 @@ No se dispone de información sobre modelos comparables específicos para este a
 
 ## Enlaces
 
-- [HuggingFace - harrrshall/tastemaxxing-lofi-grpo-v2a-aes-groove](https://huggingface.co/harrrshall/tastemaxxing-lofi-grpo-v2a-aes-groove)
-- [Perfil del autor en HuggingFace](https://huggingface.co/harrrshall)
+- [Hugging Face - harrrshall/tastemaxxing-lofi-grpo-v2a-aes-groove](https://huggingface.co/harrrshall/tastemaxxing-lofi-grpo-v2a-aes-groove)
+- [Perfil del autor en Hugging Face](https://huggingface.co/harrrshall)
 - [Paper de Lacoste et al. (2019) sobre emisiones de carbono](https://arxiv.org/abs/1910.09700) (referenciado en los tags, no relacionado con el entrenamiento)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `avik112/ps26094-lora` es un adaptador LoRA publicado en HuggingFace por el usuario `avik112`. Su nombre sugiere que se trata de un ajuste fino mediante Low-Rank Adaptation, pero no se proporciona ninguna documentación técnica en la model card. El repositorio solo indica licencia MIT y la etiqueta `region:us`. No se especifica el modelo base, el tamaño, la arquitectura ni el propósito. La publicación no tiene descargas ni likes, y no existe información adicional en la web que permita determinar sus características o rendimiento. Por tanto, se trata de un artefacto sin documentación, no apto para su evaluación o uso en producción sin una inspección directa de los pesos.
+El modelo `avik112/ps26094-lora` es un adaptador LoRA publicado en Hugging Face por el usuario `avik112`. Su nombre sugiere que se trata de un ajuste fino mediante Low-Rank Adaptation, pero no se proporciona ninguna documentación técnica en la model card. El repositorio solo indica licencia MIT y la etiqueta `region:us`. No se especifica el modelo base, el tamaño, la arquitectura ni el propósito. La publicación no tiene descargas ni likes, y no existe información adicional en la web que permita determinar sus características o rendimiento. Por tanto, se trata de un artefacto sin documentación, no apto para su evaluación o uso en producción sin una inspección directa de los pesos.
 
 ## Especificaciones técnicas
 
@@ -75,4 +75,4 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/avik112/ps26094-lora
+- Hugging Face: https://huggingface.co/avik112/ps26094-lora

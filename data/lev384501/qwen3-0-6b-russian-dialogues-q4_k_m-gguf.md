@@ -71,7 +71,7 @@ No se dispone de información suficiente para realizar una comparativa rigurosa 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/Lev384501/qwen3-0.6b-russian-dialogues-Q4_K_M-GGUF
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/Lev384501/qwen3-0.6b-russian-dialogues-Q4_K_M-GGUF
 - Modelo base original: https://huggingface.co/ya-yje-krasni/qwen3-0.6b-russian-dialogues
 - Dataset de entrenamiento: https://huggingface.co/datasets/Den4ikAI/russian_dialogues
 - Repositorio de Qwen3 (modelo base): https://github.com/QwenLM/Qwen3

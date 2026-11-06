@@ -98,7 +98,7 @@ Los dos primeros comparten arquitectura y tarea; la diferencia medida esta en el
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SargeDev/JEV-27B-Uncensored-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/SargeDev/JEV-27B-Uncensored-NVFP4
 - Repositorio de la cabeza de decision (pendiente de publicacion): https://huggingface.co/SargeDev/JEV-27B-Uncensored
 - Dataset de entrenamiento: https://huggingface.co/datasets/SargeDev/jev-distill-corpus-v3
 - Modelo base abliterated: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated

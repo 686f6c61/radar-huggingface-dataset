@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`cross-encoder/merged-bge-reranker-large` es un modelo cross-encoder para reranking de resultados de búsqueda, publicado por la organizacion cross-encoder en HuggingFace. No es un modelo entrenado desde cero: se trata de una fusion lineal 50/50 de los pesos de `BAAI/bge-reranker-large` y `BAAI/bge-reranker-v2-m3`, realizada con el metodo `CrossEncoder.merge` de la libreria sentence-transformers, sin entrenamiento adicional. El modelo recibe un par consulta-documento y devuelve un logit de relevancia; cuanto mayor es el valor, mas relevante es el documento para la consulta.
+`cross-encoder/merged-bge-reranker-large` es un modelo cross-encoder para reranking de resultados de búsqueda, publicado por la organizacion cross-encoder en Hugging Face. No es un modelo entrenado desde cero: se trata de una fusion lineal 50/50 de los pesos de `BAAI/bge-reranker-large` y `BAAI/bge-reranker-v2-m3`, realizada con el metodo `CrossEncoder.merge` de la libreria sentence-transformers, sin entrenamiento adicional. El modelo recibe un par consulta-documento y devuelve un logit de relevancia; cuanto mayor es el valor, mas relevante es el documento para la consulta.
 
 La relevancia practica del modelo es limitada pero concreta: segun la model card, supera la media de sus dos progenitores en 7 de los 11 conjuntos de NanoBEIR y alcanza un nDCG@10 medio de 0,6981 frente a 0,6705 de BGE-reranker-large y 0,6929 de BGE-reranker-v2-m3. Es, por tanto, una alternativa de reranking en ingles con licencia Apache-2.0 que hereda el backbone XLM-RoBERTa de sus padres y un limite conjunto de 512 tokens por par consulta-documento.
 
@@ -105,7 +105,7 @@ La comparativa se limita a los dos progenitores porque son los unicos modelos co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cross-encoder/merged-bge-reranker-large
+- Modelo en Hugging Face: https://huggingface.co/cross-encoder/merged-bge-reranker-large
 - Modelo progenitor BGE-reranker-large: https://huggingface.co/BAAI/bge-reranker-large
 - Modelo progenitor BGE-reranker-v2-m3: https://huggingface.co/BAAI/bge-reranker-v2-m3
 - Documentacion de Sentence Transformers: https://sbert.net

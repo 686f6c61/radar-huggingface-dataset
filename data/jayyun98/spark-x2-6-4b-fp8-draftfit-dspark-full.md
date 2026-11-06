@@ -85,7 +85,7 @@ No se dispone de datos sobre otros borradores especulativos comparables en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jayyun98/Spark-X2.6-4B-FP8-Draftfit-DSpark-Full
+- Hugging Face: https://huggingface.co/jayyun98/Spark-X2.6-4B-FP8-Draftfit-DSpark-Full
 - Modelo objetivo: https://huggingface.co/XHToken/Spark-X2.6-4B-FP8
 - Borrador de origen: https://huggingface.co/jayyun98/Spark-X2.6-4B-Draftfit-DSpark
 - Repositorio Draftfit: https://github.com/JayYun98/Draftfit

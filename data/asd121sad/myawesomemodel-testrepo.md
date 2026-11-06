@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace bajo el identificador ASD121SAD/MyAwesomeModel-TestRepo por el usuario ASD121SAD. La model card describe un supuesto modelo de razonamiento con mejoras en profundidad de inferencia, soporte de function calling y una reduccion de la tasa de alucinacion respecto a una version previa, pero no aporta informacion verificable sobre arquitectura, parametros ni datos de entrenamiento. El repositorio esta etiquetado como transformers, pytorch, bert y feature-extraction, con licencia MIT.
+MyAwesomeModel es un modelo publicado en Hugging Face bajo el identificador ASD121SAD/MyAwesomeModel-TestRepo por el usuario ASD121SAD. La model card describe un supuesto modelo de razonamiento con mejoras en profundidad de inferencia, soporte de function calling y una reduccion de la tasa de alucinacion respecto a una version previa, pero no aporta informacion verificable sobre arquitectura, parametros ni datos de entrenamiento. El repositorio esta etiquetado como transformers, pytorch, bert y feature-extraction, con licencia MIT.
 
 El propio nombre del repositorio ("TestRepo") y el hecho de que el tamano del repo sea de 0,0 GB apuntan a que se trata de un repositorio de prueba sin pesos publicados. Esto entra en contradiccion con la model card, que presenta resultados de benchmarks, mejoras de version y una supuesta infraestructura de chat y API. No hay descargas ni likes registrados, y los idiomas soportados no estan declarados.
 
@@ -107,6 +107,6 @@ No es posible establecer una comparativa fiable. Los modelos de referencia de la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ASD121SAD/MyAwesomeModel-TestRepo
+- Hugging Face: https://huggingface.co/ASD121SAD/MyAwesomeModel-TestRepo
 - Code repository, web de chat y API: mencionados en la model card pero sin URL concreta (no disponible).
 - Resultados de busqueda web: los enlaces recuperados no guardan relacion con el modelo (documentacion de lubricantes para tractores), por lo que se descartan como fuentes relevantes.

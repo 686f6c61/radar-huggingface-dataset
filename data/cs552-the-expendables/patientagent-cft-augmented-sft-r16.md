@@ -72,8 +72,8 @@ No se dispone de información pública sobre adaptadores comparables para simula
 
 ## Enlaces
 
-- [HuggingFace - adaptador](https://huggingface.co/cs552-the-expendables/patientagent-cft-augmented-sft-r16)
-- [HuggingFace - modelo base Qwen3.5-4B](https://huggingface.co/Qwen/Qwen3.5-4B)
-- [HuggingFace - dataset de entrenamiento](https://huggingface.co/datasets/cs552-the-expendables/mts-rl-training-data)
+- [Hugging Face - adaptador](https://huggingface.co/cs552-the-expendables/patientagent-cft-augmented-sft-r16)
+- [Hugging Face - modelo base Qwen3.5-4B](https://huggingface.co/Qwen/Qwen3.5-4B)
+- [Hugging Face - dataset de entrenamiento](https://huggingface.co/datasets/cs552-the-expendables/mts-rl-training-data)
 - [Paper CFT (arXiv:2503.09032)](https://arxiv.org/abs/2503.09032)
 - [Repositorio oficial de CFT](https://github.com/rgklab/Contextual-Fine-Tuning)

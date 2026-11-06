@@ -74,6 +74,6 @@ Los tres modelos comparten la misma base MiniMind y el mismo corpus, diferencian
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shikunpunk/MiniMind-GuCheng-dLM
+- Modelo en Hugging Face: https://huggingface.co/shikunpunk/MiniMind-GuCheng-dLM
 - Repositorio MiniMind (base del proyecto): https://github.com/jingyaogong/minimind
-- Perfil del autor en HuggingFace: https://huggingface.co/shikunpunk
+- Perfil del autor en Hugging Face: https://huggingface.co/shikunpunk

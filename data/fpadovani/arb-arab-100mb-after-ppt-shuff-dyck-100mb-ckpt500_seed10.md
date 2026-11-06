@@ -68,10 +68,10 @@ La comparacion se establece con modelos de la misma escala (~125 M de parametros
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| fpadovani/arb-arab-100mb-after-ppt-shuff-dyck-100mb-ckpt500_seed10 | 124.770.816 | no disponible | no disponible | HuggingFace, safetensors |
-| GPT-2 small (openai-community/gpt2) | 124.439.808 | 1024 tokens | MIT (segun el repositorio original) | HuggingFace, safetensors/PyTorch |
-| Pythia-160M (EleutherAI) | ~162 M | 2048 tokens | Apache 2.0 | HuggingFace, safetensors |
-| SmolLM-135M (HuggingFaceTB) | ~135 M | 2048 tokens | Apache 2.0 | HuggingFace, safetensors/GGUF |
+| fpadovani/arb-arab-100mb-after-ppt-shuff-dyck-100mb-ckpt500_seed10 | 124.770.816 | no disponible | no disponible | Hugging Face, safetensors |
+| GPT-2 small (openai-community/gpt2) | 124.439.808 | 1024 tokens | MIT (segun el repositorio original) | Hugging Face, safetensors/PyTorch |
+| Pythia-160M (EleutherAI) | ~162 M | 2048 tokens | Apache 2.0 | Hugging Face, safetensors |
+| SmolLM-135M (HuggingFaceTB) | ~135 M | 2048 tokens | Apache 2.0 | Hugging Face, safetensors/GGUF |
 
 No se dispone de datos de rendimiento de este checkpoint que permitan una comparacion cuantitativa con las alternativas anteriores.
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento de este checkpoint que permitan una compar
 - Sesgos conocidos: no documentados. Cualquier sesgo derivado del dataset de ajuste es desconocido al no publicarse su composicion.
 - Riesgo de alucinacion: alto en terminos relativos, dado el reducido tamano del modelo (125 M de parametros) y la ausencia de evaluacion que acote su fiabilidad.
 - Limitaciones de contexto e idioma: se desconocen la ventana de contexto efectiva y los idiomas cubiertos; no se debe asumir soporte multilingue.
-- Licencia: el campo de licencia aparece como el literal "license" en la model card y la informacion de HuggingFace lo marca como no disponible. No hay autorizacion explicita de uso comercial; conviene contactar con el autor antes de cualquier despliegue productivo.
+- Licencia: el campo de licencia aparece como el literal "license" en la model card y la informacion de Hugging Face lo marca como no disponible. No hay autorizacion explicita de uso comercial; conviene contactar con el autor antes de cualquier despliegue productivo.
 - Modelo de investigacion: por nomenclatura, se trata de un artefacto experimental (checkpoint intermedio, semilla concreta, dataset sintetico de 100 MB), no de un modelo optimizado ni evaluado para produccion.
 - Ausencia total de benchmarks, de ficha de datos y de documentacion de preprocesado: no es posible estimar su calidad sin evaluarlo uno mismo.
 - La fecha de creacion que figura en el repositorio (2026) no permite extraer conclusiones sobre su mantenimiento o vigencia.
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento de este checkpoint que permitan una compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/arb-arab-100mb-after-ppt-shuff-dyck-100mb-ckpt500_seed10
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/arb-arab-100mb-after-ppt-shuff-dyck-100mb-ckpt500_seed10
 - Modelo base: https://huggingface.co/fpadovani/arb-arab-100mb-ppt-shuff-dyck-100mb_seed10
 - Registro del entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new_tokenizers/runs/vykftbtl
 - Repositorio de TRL: https://github.com/huggingface/trl

@@ -74,7 +74,7 @@ No disponible. La información proporcionada no incluye otros modelos de diffusi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/padiredd/dp-blockpick-dr-statenoise
+- Hugging Face: https://huggingface.co/padiredd/dp-blockpick-dr-statenoise
 - Repositorio LeRobot (fork ROBOTIS lerobot-cyclo, commit 240b4a0): no se proporciona URL directa en la información disponible
 - Isaac Lab: no se proporciona URL directa en la información disponible
 - Paper de diffusion policy: no se proporciona URL directa en la información disponible

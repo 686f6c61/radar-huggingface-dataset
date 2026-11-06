@@ -92,8 +92,8 @@ No se conocen otros drafts específicos para Ling-3.0-flash en el momento de la 
 
 ## Enlaces
 
-- [HuggingFace: inclusionAI/Ling-3.0-flash-dspark](https://huggingface.co/inclusionAI/Ling-3.0-flash-dspark)
-- [HuggingFace: inclusionAI/Ling-3.0-flash (modelo objetivo)](https://huggingface.co/inclusionAI/Ling-3.0-flash)
+- [Hugging Face: inclusionAI/Ling-3.0-flash-dspark](https://huggingface.co/inclusionAI/Ling-3.0-flash-dspark)
+- [Hugging Face: inclusionAI/Ling-3.0-flash (modelo objetivo)](https://huggingface.co/inclusionAI/Ling-3.0-flash)
 - [Repositorio DFlash (base del algoritmo)](https://github.com/z-lab/dflash)
 - [Repositorio SpecForge (entrenamiento)](https://github.com/sgl-project/SpecForge)
 - [Repositorio SGLang (servir con DSPARK)](https://github.com/sgl-project/sglang)

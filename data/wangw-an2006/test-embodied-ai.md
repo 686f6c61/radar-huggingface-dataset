@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`wangw-an2006/test-embodied-ai` es un repositorio alojado en HuggingFace que, pese a figurar en el catálogo de modelos con un archivo de pesos en formato safetensors, no contiene un modelo entrenado. La propia model card lo describe como una nota de investigación en curso sobre inteligencia artificial encarnada (embodied AI), con motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación. El autor indica explícitamente que no se trata de un artículo completado ni de una release de modelos entrenados.
+`wangw-an2006/test-embodied-ai` es un repositorio alojado en Hugging Face que, pese a figurar en el catálogo de modelos con un archivo de pesos en formato safetensors, no contiene un modelo entrenado. La propia model card lo describe como una nota de investigación en curso sobre inteligencia artificial encarnada (embodied AI), con motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación. El autor indica explícitamente que no se trata de un artículo completado ni de una release de modelos entrenados.
 
 El repositorio contiene dos artefactos declarados: `review.md` (la nota principal) y `README.md` (documentación). No se anuncia código, checkpoint funcional, resultados de ablaciones ni mejoras de benchmark. El recuento real de parámetros del archivo safetensors es de 49.600, una cifra incompatible con cualquier modelo de lenguaje generativo utilizable.
 
@@ -95,7 +95,7 @@ No disponible. No procede una comparativa con modelos de la misma categoría por
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/wangw-an2006/test-embodied-ai
+- Repositorio en Hugging Face: https://huggingface.co/wangw-an2006/test-embodied-ai
 - Model card / README: https://huggingface.co/wangw-an2006/test-embodied-ai/blob/main/README.md
 - Nota principal (`review.md`): referenciada en la model card como artefacto primario, sin URL directa confirmada en la información disponible.
 - Enlaces adicionales: la búsqueda web realizada no devolvió resultados relacionados con el modelo. Los únicos dominios recuperados (binairepuzzel.net y sus páginas de puzles binarios) no guardan relación con inteligencia artificial, embodied AI ni con el repositorio, por lo que se descartan como fuentes.

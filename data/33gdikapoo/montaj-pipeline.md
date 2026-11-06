@@ -2,7 +2,7 @@
 
 ## Resumen
 
-33gdikapoo/montaj-pipeline es un repositorio alojado en HuggingFace por el usuario 33gdikapoo. En el momento de la consulta no declara pipeline de inferencia, no especifica idiomas soportados y acumula 0 descargas y 0 likes. La unica informacion verificable que aporta la plataforma es la licencia (MIT) y la etiqueta de region (us). La model card publicada por el autor esta practicamente vacia: unicamente contiene la linea `license: mit`, sin descripcion, sin especificaciones tecnicas y sin instrucciones de uso.
+33gdikapoo/montaj-pipeline es un repositorio alojado en Hugging Face por el usuario 33gdikapoo. En el momento de la consulta no declara pipeline de inferencia, no especifica idiomas soportados y acumula 0 descargas y 0 likes. La unica informacion verificable que aporta la plataforma es la licencia (MIT) y la etiqueta de region (us). La model card publicada por el autor esta practicamente vacia: unicamente contiene la linea `license: mit`, sin descripcion, sin especificaciones tecnicas y sin instrucciones de uso.
 
 Por el nombre del repositorio y la ausencia de pesos declarados, no es posible confirmar que se trate de un modelo de lenguaje. El termino "pipeline" sugiere una utilidad de orquestacion o procesamiento (posiblemente montaje o edicion, aunque esto es una hipotesis no confirmada por el autor) y no un checkpoint de pesos con arquitectura de red neuronal. Tampoco existe informacion sobre arquitectura, numero de parametros, longitud de contexto, tokenizador o proceso de entrenamiento.
 
@@ -21,7 +21,7 @@ La busqueda web realizada no ha arrojado ningun resultado relacionado con este r
 | Licencia | MIT |
 | Formato de pesos | no disponible |
 
-Datos adicionales verificables en HuggingFace: autor 33gdikapoo; pipeline de inferencia no declarado; region etiquetada como `us`; 0 descargas; 0 likes; fecha de creacion y ultima actualizacion registradas como 2026-09-10T11:09:20.000Z (la actualizacion coincide exactamente con la creacion, lo que indica que el repositorio no se ha modificado desde su publicacion).
+Datos adicionales verificables en Hugging Face: autor 33gdikapoo; pipeline de inferencia no declarado; region etiquetada como `us`; 0 descargas; 0 likes; fecha de creacion y ultima actualizacion registradas como 2026-09-10T11:09:20.000Z (la actualizacion coincide exactamente con la creacion, lo que indica que el repositorio no se ha modificado desde su publicacion).
 
 ## Arquitectura y entrenamiento
 
@@ -76,6 +76,6 @@ No disponible. No se puede establecer una categoria de comparacion (mismo tamano
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/33gdikapoo/montaj-pipeline
+- Hugging Face: https://huggingface.co/33gdikapoo/montaj-pipeline
 
 No se han encontrado en la busqueda web enlaces relevantes al modelo: los resultados obtenidos corresponden a un fabricante de maletines y equipamiento de proteccion (Guardique) y a un listado de tiendas fraudulentas, sin ninguna conexion con el repositorio. No se dispone de paper, blog tecnico, repositorio de codigo ni demo asociados.

@@ -82,7 +82,7 @@ No se dispone de datos comparativos de rendimiento entre estos modelos en la inf
 
 ## Enlaces
 
-- [HuggingFace: oozkanemre88/albef-baseline-2024](https://huggingface.co/oozkanemre88/albef-baseline-2024)
-- [Perfil del autor en HuggingFace](https://huggingface.co/oozkanemre88/models)
+- [Hugging Face: oozkanemre88/albef-baseline-2024](https://huggingface.co/oozkanemre88/albef-baseline-2024)
+- [Perfil del autor en Hugging Face](https://huggingface.co/oozkanemre88/models)
 - [ggrodrigues0816/albef-baseline](https://huggingface.co/ggrodrigues0816/albef-baseline)
 - [Documentación de la arquitectura ALBEF de Salesforce en DeepWiki](https://deepwiki.com/salesforce/ALBEF/1.2-model-architecture)

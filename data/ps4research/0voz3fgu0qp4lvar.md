@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PS4Research/0VOz3fgU0qp4lVar es un ajuste fino (fine-tune) del modelo abierto allenai/Olmo-3.1-32B-Think, publicado por el usuario PS4Research (Priyansh Singhal) en HuggingFace. Se trata de un modelo denso de 32.233.522.176 parámetros (32,2 B) orientado a generación de texto conversacional, con licencia Apache 2.0 y pesos en safetensors. El entrenamiento se realizó con la librería Unsloth junto con TRL de HuggingFace, según indica la propia model card, que no aporta detalles adicionales sobre el dataset, el número de pasos ni la configuración de entrenamiento.
+PS4Research/0VOz3fgU0qp4lVar es un ajuste fino (fine-tune) del modelo abierto allenai/Olmo-3.1-32B-Think, publicado por el usuario PS4Research (Priyansh Singhal) en Hugging Face. Se trata de un modelo denso de 32.233.522.176 parámetros (32,2 B) orientado a generación de texto conversacional, con licencia Apache 2.0 y pesos en safetensors. El entrenamiento se realizó con la librería Unsloth junto con TRL de Hugging Face, según indica la propia model card, que no aporta detalles adicionales sobre el dataset, el número de pasos ni la configuración de entrenamiento.
 
 El interés de esta ficha es doble. Por un lado, documenta un derivado de la familia Olmo 3 de AI2, una de las apuestas más fuertes por el open source integral (pesos, datos, código y recetas de entrenamiento publicados). Por otro, sirve de ejemplo de los fine-tunes de bajo coste habilitados por herramientas como Unsloth, que permiten adaptar un modelo de 32 B en tiempos reducidos.
 
@@ -25,7 +25,7 @@ Conviene ser prudente: el repositorio no tiene descargas ni "likes", el identifi
 
 El modelo es un ajuste fino del checkpoint allenai/Olmo-3.1-32B-Think, un transformer decoder denso de 32,2 B parámetros. La variante "Think" de Olmo 3.1 incorpora un modo de razonamiento explícito (cadena de pensamiento) que el modelo puede activar antes de emitir la respuesta final. Al no ser un modelo de mezcla de expertos (MoE), todos los parámetros se activan en cada token generado, lo que condiciona los requisitos de memoria e inferencia descritos más abajo.
 
-La model card no documenta el dataset de ajuste, el número de tokens de entrenamiento, la composición de los datos ni si se aplicaron técnicas de alineación como RLHF o DPO. Lo único confirmado es el uso de Unsloth y de la librería TRL de HuggingFace, lo que sugiere un ajuste supervisado (SFT) con optimizaciones de memoria y velocidad. El repo resultante ocupa 64,5 GB, coherente con pesos en precisión de 16 bits para 32,2 B parámetros (aproximadamente 64,5 GB de pesos más ficheros auxiliares).
+La model card no documenta el dataset de ajuste, el número de tokens de entrenamiento, la composición de los datos ni si se aplicaron técnicas de alineación como RLHF o DPO. Lo único confirmado es el uso de Unsloth y de la librería TRL de Hugging Face, lo que sugiere un ajuste supervisado (SFT) con optimizaciones de memoria y velocidad. El repo resultante ocupa 64,5 GB, coherente con pesos en precisión de 16 bits para 32,2 B parámetros (aproximadamente 64,5 GB de pesos más ficheros auxiliares).
 
 ## Capacidades
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Idiomas | Disponibilidad |
 |---|---|---|---|---|---|
-| PS4Research/0VOz3fgU0qp4lVar | 32,2 B denso | No disponible | Apache 2.0 | Ingles | HuggingFace, safetensors, sin descargas |
-| allenai/Olmo-3.1-32B-Think (base) | 32,2 B denso | 65.536 tokens segun AI2 | Apache 2.0 | Ingles (con soporte multilingue limitado) | HuggingFace, ampliamente documentado |
-| Qwen/Qwen3-32B | 32,8 B denso | 32.768 nativo, ampliable a 131.072 | Apache 2.0 | Multilingue (mas de 100 idiomas) | HuggingFace, muy extendido |
-| google/gemma-3-27b-it | 27 B denso | 128.000 tokens | Licencia Gemma (con restricciones de uso) | Multilingue (mas de 140 idiomas) | HuggingFace, muy extendido |
+| PS4Research/0VOz3fgU0qp4lVar | 32,2 B denso | No disponible | Apache 2.0 | Ingles | Hugging Face, safetensors, sin descargas |
+| allenai/Olmo-3.1-32B-Think (base) | 32,2 B denso | 65.536 tokens segun AI2 | Apache 2.0 | Ingles (con soporte multilingue limitado) | Hugging Face, ampliamente documentado |
+| Qwen/Qwen3-32B | 32,8 B denso | 32.768 nativo, ampliable a 131.072 | Apache 2.0 | Multilingue (mas de 100 idiomas) | Hugging Face, muy extendido |
+| google/gemma-3-27b-it | 27 B denso | 128.000 tokens | Licencia Gemma (con restricciones de uso) | Multilingue (mas de 140 idiomas) | Hugging Face, muy extendido |
 
 No se dispone de resultados de benchmarks de este fine-tune que permitan comparar rendimiento con las alternativas. La comparación se limita a parámetros, contexto, licencia y disponibilidad.
 
@@ -88,10 +88,10 @@ No se dispone de resultados de benchmarks de este fine-tune que permitan compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PS4Research/0VOz3fgU0qp4lVar
+- Modelo en Hugging Face: https://huggingface.co/PS4Research/0VOz3fgU0qp4lVar
 - Modelo base: https://huggingface.co/allenai/Olmo-3.1-32B-Think
 - Perfil del autor: https://huggingface.co/PS4Research
 - Unsloth (repo de GitHub): https://github.com/unslothai/unsloth
-- TRL de HuggingFace: https://github.com/huggingface/trl
+- TRL de Hugging Face: https://github.com/huggingface/trl
 - Otro modelo del mismo autor: https://huggingface.co/PS4Research/gS8nV5hA1yW3jT6s
 - Repositorio "ps4-research" en GitHub (sin relación aparente con el modelo): https://github.com/RuxaXa/ps4-research

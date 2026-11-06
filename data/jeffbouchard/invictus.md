@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jeffbouchard/invictus` es un repositorio de modelo alojado en HuggingFace por el usuario jeffbouchard, publicado bajo licencia MIT. La informacion disponible en la model card es practicamente inexistente: unicamente contiene la declaracion de licencia, sin descripcion del modelo, arquitectura, datos de entrenamiento ni capacidades. No se especifica pipeline, idiomas soportados ni formato de pesos.
+`jeffbouchard/invictus` es un repositorio de modelo alojado en Hugging Face por el usuario jeffbouchard, publicado bajo licencia MIT. La informacion disponible en la model card es practicamente inexistente: unicamente contiene la declaracion de licencia, sin descripcion del modelo, arquitectura, datos de entrenamiento ni capacidades. No se especifica pipeline, idiomas soportados ni formato de pesos.
 
 El repositorio no presenta descargas ni interacciones (0 descargas, 0 likes) en el momento de la consulta, lo que sugiere un artefacto recien creado o de caracter experimental. La fecha de creacion y ultima actualizacion coinciden (2026-10-28), lo que apunta a una publicacion unica sin mantenimiento posterior documentado.
 
@@ -77,5 +77,5 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jeffbouchard/invictus
+- Repositorio en Hugging Face: https://huggingface.co/jeffbouchard/invictus
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

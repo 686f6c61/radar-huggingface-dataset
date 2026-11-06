@@ -117,4 +117,4 @@ No se dispone de comparativas de calidad (benchmarks de tareas) frente a alterna
 - Dataset de calibración codeparrot/codeparrot-clean-valid: https://huggingface.co/datasets/codeparrot/codeparrot-clean-valid
 - Dataset de calibración HuggingFaceH4/MATH-500: https://huggingface.co/datasets/HuggingFaceH4/MATH-500
 
-Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces anteriores proceden de la información de HuggingFace y de la model card.
+Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces anteriores proceden de la información de Hugging Face y de la model card.

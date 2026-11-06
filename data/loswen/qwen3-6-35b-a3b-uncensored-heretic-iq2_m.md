@@ -78,7 +78,7 @@ La diferencia principal entre esta cuantización y la original BF16 es la reducc
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/Loswen/Qwen3.6-35B-A3B-uncensored-heretic-IQ2_M)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/Loswen/Qwen3.6-35B-A3B-uncensored-heretic-IQ2_M)
 - [Modelo original: llmfan46/Qwen3.6-35B-A3B-uncensored-heretic](https://huggingface.co/llmfan46/Qwen3.6-35B-A3B-uncensored-heretic)
 - [Versión con MTP preservado: SC117/Qwen3.6-35B-A3B-uncensored-heretic-Native-MTP-Preserved-APEX-GGUF](https://huggingface.co/SC117/Qwen3.6-35B-A3B-uncensored-heretic-Native-MTP-Preserved-APEX-GGUF)
 - [Qwen3.6-35B-A3B Uncensored: análisis en HackerNoon](https://hackernoon.com/qwen36-35b-a3b-uncensored-a-35b-moe-model-with-262k-context)

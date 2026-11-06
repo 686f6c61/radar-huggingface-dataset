@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ModernGENA-base es un modelo fundacional de ADN basado en la arquitectura ModernBERT, desarrollado originalmente por el AIRI Institute y redistribuido por Taykhoom como un repackage mínimo en HuggingFace. Se trata de un encoder de secuencias genómicas preentrenado con masked language modeling sobre 443 genomas de vertebrados, lo que le permite generar representaciones densas de fragmentos de ADN y resolver tareas de genómica mediante fine-tuning. Su relevancia actual radica en que ofrece un baseline eficiente y rápido frente a modelos más pesados de la misma categoría, con una arquitectura moderna de atención híbrida local/global y un coste computacional reducido.
+ModernGENA-base es un modelo fundacional de ADN basado en la arquitectura ModernBERT, desarrollado originalmente por el AIRI Institute y redistribuido por Taykhoom como un repackage mínimo en Hugging Face. Se trata de un encoder de secuencias genómicas preentrenado con masked language modeling sobre 443 genomas de vertebrados, lo que le permite generar representaciones densas de fragmentos de ADN y resolver tareas de genómica mediante fine-tuning. Su relevancia actual radica en que ofrece un baseline eficiente y rápido frente a modelos más pesados de la misma categoría, con una arquitectura moderna de atención híbrida local/global y un coste computacional reducido.
 
 El modelo tiene 136,1 millones de parámetros distribuidos en 22 capas transformer, con una ventana de contexto máxima de 1024 tokens y un vocabulario BPE de 32.000 entradas específico para secuencias de ADN e símbolos IUPAC. Está disponible bajo licencia Apache 2.0 y se distribuye en formato safetensors, con soporte para los backends de atención SDPA y Flash Attention 2. Al ser un modelo de tipo encoder, no está diseñado para generación autoregresiva, sino para extracción de embeddings y clasificación de secuencias.
 
@@ -72,7 +72,7 @@ La comparativa se limita a datos de arquitectura y licencia, ya que no hay bench
 - **Preentrenamiento en vertebrados**: el modelo se entrenó exclusivamente con genomas de vertebrados, por lo que su rendimiento en otros organismos (plantas, bacterias, etc.) puede degradarse significativamente.
 - **Riesgo de alucinación en predicciones biológicas**: como todo modelo de MLM, puede producir predicciones de nucleótidos o clasificaciones incorrectas sin indicar incertidumbre; es recomendable validar cualquier resultado con herramientas biológicas estándar.
 - **No apto para texto natural**: es un modelo de ADN y no puede generar ni entender lenguaje humano; su uso fuera de tareas genómicas no tiene sentido.
-- **Dependencia de `trust_remote_code`**: el modelo requiere cargarse con `trust_remote_code=True` en HuggingFace, lo que implica ejecutar código del repositorio; es necesario revisar el código antes de usarlo en entornos de producción.
+- **Dependencia de `trust_remote_code`**: el modelo requiere cargarse con `trust_remote_code=True` en Hugging Face, lo que implica ejecutar código del repositorio; es necesario revisar el código antes de usarlo en entornos de producción.
 - **Sin cuantizaciones oficiales**: no se han publicado versiones cuantizadas (GGUF, GPTQ, etc.), por lo que el despliegue en hardware con limitaciones de memoria requiere conversión manual.
 - **Sin sesgos documentados**: no se ha evaluado formalmente el comportamiento del modelo en tareas de genómica clínica ni su posible sesgo hacia poblaciones específicas de vertebrados.
 

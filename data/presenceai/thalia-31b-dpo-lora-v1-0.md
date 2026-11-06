@@ -101,7 +101,7 @@ Estas cifras son metricas internas del objetivo DPO y no equivalen a rendimiento
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/PresenceAI/Thalia-31B-DPO-LoRA-v1.0
+- Hugging Face del adaptador: https://huggingface.co/PresenceAI/Thalia-31B-DPO-LoRA-v1.0
 - Modelo base: https://huggingface.co/Gryphe/Gemma-4-31B-StyleTune
 - Modelo upstream: https://huggingface.co/google/gemma-4-31B-it
 - Licencia Gemma-4 de Google: https://ai.google.dev/gemma/docs/gemma_4_license

@@ -90,7 +90,7 @@ No se dispone de comparativas con clasificadores de intenciones comerciales o de
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/OpenVoiceOS/ovos-m2v-intents-en)
+- [Modelo en Hugging Face](https://huggingface.co/OpenVoiceOS/ovos-m2v-intents-en)
 - [Repositorio del pipeline (GitHub)](https://github.com/OpenVoiceOS/ovos-m2v-pipeline)
 - [Documentación técnica sobre Model2Vec en OVOS](https://openvoiceos.github.io/ovos-technical-manual/m2v_pipeline/)
 - [Página de modelos multilingües en DeepWiki](https://deepwiki.com/OpenVoiceOS/ovos-m2v-pipeline/4.1-multilingual-models)

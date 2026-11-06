@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Kaulela/l3_master_sovereign_model` es un modelo publicado en HuggingFace por el usuario Kaulela el 4 de noviembre de 2026. El repositorio utiliza la libreria `transformers` y contiene pesos en formato `safetensors`, con un tamano total de 0,2 GB. En el momento de la consulta acumula 0 descargas y 0 likes, lo que indica que se trata de una publicacion reciente y sin adopcion verificable por parte de la comunidad.
+`Kaulela/l3_master_sovereign_model` es un modelo publicado en Hugging Face por el usuario Kaulela el 4 de noviembre de 2026. El repositorio utiliza la libreria `transformers` y contiene pesos en formato `safetensors`, con un tamano total de 0,2 GB. En el momento de la consulta acumula 0 descargas y 0 likes, lo que indica que se trata de una publicacion reciente y sin adopcion verificable por parte de la comunidad.
 
-La model card es la plantilla generada automaticamente por HuggingFace y no ha sido completada por el autor: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, procedimiento, evaluacion) aparecen como "[More Information Needed]". No hay informacion publica sobre arquitectura, numero de parametros, longitud de contexto ni proceso de entrenamiento.
+La model card es la plantilla generada automaticamente por Hugging Face y no ha sido completada por el autor: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, procedimiento, evaluacion) aparecen como "[More Information Needed]". No hay informacion publica sobre arquitectura, numero de parametros, longitud de contexto ni proceso de entrenamiento.
 
 Por tanto, esta ficha documenta exclusivamente los metadatos disponibles y senala explicitamente que la mayoria de las especificaciones tecnicas no estan disponibles. El modelo no debe considerarse apto para produccion ni para evaluacion comparativa hasta que el autor publique informacion sustantiva. La unica referencia tecnica presente en la model card es la cita al calculador de impacto medioambiental de Lacoste et al. (2019), que forma parte de la plantilla estandar y no aporta datos sobre el modelo.
 
@@ -23,7 +23,7 @@ Por tanto, esta ficha documenta exclusivamente los metadatos disponibles y senal
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo. La unica pista es el tag `transformers` en HuggingFace, que indica compatibilidad con la libreria de HuggingFace, pero no especifica si se trata de un transformer decoder-only, encoder-decoder, MoE, SSM o una arquitectura hibrida. El tamano del repositorio (0,2 GB) sugiere un modelo de pequenas dimensiones en precision completa o media, pero sin confirmacion del autor no es posible inferir el numero de parametros ni el tipo de pesos almacenados.
+No se ha publicado informacion sobre la arquitectura del modelo. La unica pista es el tag `transformers` en Hugging Face, que indica compatibilidad con la libreria de Hugging Face, pero no especifica si se trata de un transformer decoder-only, encoder-decoder, MoE, SSM o una arquitectura hibrida. El tamano del repositorio (0,2 GB) sugiere un modelo de pequenas dimensiones en precision completa o media, pero sin confirmacion del autor no es posible inferir el numero de parametros ni el tipo de pesos almacenados.
 
 Tampoco hay datos sobre el corpus de entrenamiento, el numero de tokens procesados, la composicion del dataset, el uso de RLHF/DPO o tecnicas de alineacion, ni innovaciones tecnicas como decodificacion especulativa o atencion lineal. La model card no incluye hiperparametros, regimen de entrenamiento ni infraestructura de computo utilizada.
 
@@ -83,6 +83,6 @@ No disponible. No es posible identificar modelos comparables sin conocer el tama
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Kaulela/l3_master_sovereign_model
+- Repositorio en Hugging Face: https://huggingface.co/Kaulela/l3_master_sovereign_model
 - Paper citado en la model card (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculador de impacto medioambiental ML: https://mlco2.github.io/impact#compute

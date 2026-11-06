@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dsetiawan/mae-finetuned-2024` es un repositorio publicado en HuggingFace por el usuario `dsetiawan` que contiene una implementación propia de una arquitectura denominada **Mae**, orientada a tareas de *retrieval* (recuperación de información multimodal o texto-imagen). Pese al nombre del repositorio ("finetuned"), la propia model card indica explícitamente que `model.safetensors` es un **checkpoint de inicialización** válido para pruebas de humo (*smoke tests*), y no un modelo entrenado ni auditado. El repositorio incluye además `train.py` como artefacto principal, junto con `config.json` y `training_args.json`.
+`dsetiawan/mae-finetuned-2024` es un repositorio publicado en Hugging Face por el usuario `dsetiawan` que contiene una implementación propia de una arquitectura denominada **Mae**, orientada a tareas de *retrieval* (recuperación de información multimodal o texto-imagen). Pese al nombre del repositorio ("finetuned"), la propia model card indica explícitamente que `model.safetensors` es un **checkpoint de inicialización** válido para pruebas de humo (*smoke tests*), y no un modelo entrenado ni auditado. El repositorio incluye además `train.py` como artefacto principal, junto con `config.json` y `training_args.json`.
 
 El dato más relevante para evaluar el modelo es su tamaño real: **33.088 parámetros totales** según los pesos en safetensors. Esto sitúa el artefacto muy lejos de un modelo de propósito general: es un esqueleto de código reproducible pensado para validar un pipeline de entrenamiento o de evaluación, no para producir embeddings de recuperación útiles. La model card declara además escala "giant", etiqueta que entra en contradicción directa con el recuento de parámetros y que conviene tratar como un valor nominal del script, no como una descripción del artefacto.
 
@@ -27,7 +27,7 @@ Su relevancia actual es, por tanto, metodológica más que funcional: sirve como
 | Normalización | rmsnorm |
 | Optimizador por defecto | adam con *scheduler* coseno |
 | Tamaño del repositorio | 0,0 GB |
-| Pipeline de HuggingFace | No disponible |
+| Pipeline de Hugging Face | No disponible |
 
 ## Arquitectura y entrenamiento
 
@@ -79,7 +79,7 @@ No se dispone de datos de modelos comparables en la información proporcionada. 
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dsetiawan/mae-finetuned-2024 | 33.088 | No disponible | Sin benchmarks publicados | Apache 2.0 | HuggingFace (0 descargas, 0 *likes*) |
+| dsetiawan/mae-finetuned-2024 | 33.088 | No disponible | Sin benchmarks publicados | Apache 2.0 | Hugging Face (0 descargas, 0 *likes*) |
 | Alternativas de *retrieval* texto-imagen | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -96,5 +96,5 @@ No se dispone de datos de modelos comparables en la información proporcionada. 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dsetiawan/mae-finetuned-2024
+- Hugging Face: https://huggingface.co/dsetiawan/mae-finetuned-2024
 - Resultados de búsqueda web: no se ha encontrado ningún enlace relevante sobre el modelo. Las consultas devolvieron páginas de soporte de Microsoft (inicio de sesión en Hotmail, cierre de sesión en Outlook.com, actualizaciones de seguridad de Exchange Server y cambio de frecuencia de refresco en Windows) sin relación alguna con el modelo. No hay papers, blogs, repositorios ni demos adicionales disponibles.

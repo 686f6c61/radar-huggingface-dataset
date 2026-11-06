@@ -73,7 +73,7 @@ Los tres modelos pertenecen a la misma campaña dementor y permiten comparar el 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dementor-research/sft_writingprompts_qwen3.6-27b_as_llama-3.1-8b_seed42
+- Repositorio Hugging Face: https://huggingface.co/dementor-research/sft_writingprompts_qwen3.6-27b_as_llama-3.1-8b_seed42
 - Adaptador inverso (Llama-3.1-8B imitando a Qwen3.6-27B): https://huggingface.co/dementor-research/sft_writingprompts_llama-3.1-8b_as_qwen3.6-27b_seed42
 - Inferencia en FriendliAI (semilla 3): https://friendli.ai/models/dementor-research/sft_writingprompts_qwen3.6-27b_as_llama-3.1-8b_seed3
 - Inferencia en FriendliAI del adaptador inverso (semilla 3): https://friendli.ai/models/dementor-research/sft_writingprompts_llama-3.1-8b_as_qwen3.6-27b_seed3

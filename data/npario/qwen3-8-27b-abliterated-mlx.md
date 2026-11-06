@@ -101,7 +101,7 @@ La comparativa se limita a las variantes del mismo modelo base. No se dispone de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/npario/Qwen3.8-27B-Abliterated-MLX
+- Repositorio Hugging Face: https://huggingface.co/npario/Qwen3.8-27B-Abliterated-MLX
 - Repositorio original de Qwen: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio de PocketAI Hub (fuente canónica): https://huggingface.co/PocketAiHub/Qwen3.8-27B-Abliterated-MLX
 - Versión uncensored de npario: https://huggingface.co/npario/Qwen3.8-27B-Uncensored-MLX

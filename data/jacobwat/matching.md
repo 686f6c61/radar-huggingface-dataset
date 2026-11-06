@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `jacobwat/matching` es un prototipo de investigación basado en la arquitectura Perceiver, publicado por el usuario jacobwat en HuggingFace. Se presenta explícitamente como un esqueleto de trabajo orientado a tareas de *matching* (emparejamiento), con una configuración "tiny" cuyo único propósito declarado es documentar los valores por defecto, el formato de los ficheros y servir de punto de partida reproducible. No es un modelo entrenado ni evaluado: la propia model card indica que `model.safetensors` es un checkpoint de inicialización válido para *smoke tests*, y que no se reclama ninguna métrica de benchmark.
+El modelo `jacobwat/matching` es un prototipo de investigación basado en la arquitectura Perceiver, publicado por el usuario jacobwat en Hugging Face. Se presenta explícitamente como un esqueleto de trabajo orientado a tareas de *matching* (emparejamiento), con una configuración "tiny" cuyo único propósito declarado es documentar los valores por defecto, el formato de los ficheros y servir de punto de partida reproducible. No es un modelo entrenado ni evaluado: la propia model card indica que `model.safetensors` es un checkpoint de inicialización válido para *smoke tests*, y que no se reclama ninguna métrica de benchmark.
 
 El modelo tiene 49.600 parámetros totales según los pesos en safetensors, lo que lo sitúa en un orden de magnitud meramente didáctico o de prueba de infraestructura. Emplea atención estándar con fusión mediante *cross attention*, activación swish y normalización RMSNorm, siguiendo el patrón característico de un Perceiver: un cuello de botella latente que consulta las entradas mediante atención cruzada. La receta de experimento incluida usa SGD con un calendario de *linear warmup*.
 
@@ -82,7 +82,7 @@ No disponible. No se ha identificado en la información proporcionada ningún mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jacobwat/matching
+- Modelo en Hugging Face: https://huggingface.co/jacobwat/matching
 - Ficheros incluidos en el repositorio: `finetune.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper, blog, repositorio adicional o demo: no disponibles en la información proporcionada
 - Los resultados de la búsqueda web realizada no contienen referencias relevantes al modelo (corresponden a páginas de un servicio de vídeo en streaming) y no se incluyen.

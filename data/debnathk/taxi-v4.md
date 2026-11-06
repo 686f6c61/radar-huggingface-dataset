@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Taxi-v4 es un agente de aprendizaje por refuerzo publicado en HuggingFace por el usuario debnathk. Se trata de una implementación propia de Q-Learning tabular entrenada para resolver el entorno Taxi-v3, un problema de control discreto clásico de la familia toy text de Gymnasium. El artefacto distribuido no es un modelo de lenguaje ni una red neuronal: el repositorio contiene un fichero `q-learning.pkl` con la tabla Q serializada, además de la model card y los metadatos del pipeline `reinforcement-learning`.
+Taxi-v4 es un agente de aprendizaje por refuerzo publicado en Hugging Face por el usuario debnathk. Se trata de una implementación propia de Q-Learning tabular entrenada para resolver el entorno Taxi-v3, un problema de control discreto clásico de la familia toy text de Gymnasium. El artefacto distribuido no es un modelo de lenguaje ni una red neuronal: el repositorio contiene un fichero `q-learning.pkl` con la tabla Q serializada, además de la model card y los metadatos del pipeline `reinforcement-learning`.
 
 El modelo se declara con un resultado de `mean_reward` de 7.54 ± 2.73 sobre Taxi-v3, un valor cercano al comportamiento de una política bien entrenada, aunque marcado como no verificado (`verified: false`). El repositorio ocupa 0.0 GB y acumula 0 descargas y 0 likes en el momento de la consulta, por lo que carece de validación por parte de la comunidad.
 
@@ -89,7 +89,7 @@ No se dispone de datos publicados de otros agentes comparables en la informacion
 
 | Modelo / familia | Parametros | Contexto | Rendimiento en Taxi-v3 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| debnathk/Taxi-v4 (Q-Learning tabular) | tabla Q, tamano no disponible | no aplica | 7.54 +/- 2.73 (declarado, no verificado) | no disponible | HuggingFace, 0 descargas |
+| debnathk/Taxi-v4 (Q-Learning tabular) | tabla Q, tamano no disponible | no aplica | 7.54 +/- 2.73 (declarado, no verificado) | no disponible | Hugging Face, 0 descargas |
 | Agentes DQN sobre Taxi-v3 | no disponible | no aplica | no disponible | no disponible | no disponible |
 | Agentes PPO / A2C sobre Taxi-v3 | no disponible | no aplica | no disponible | no disponible | no disponible |
 
@@ -109,6 +109,6 @@ No se dispone de datos publicados de otros agentes comparables en la informacion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/debnathk/Taxi-v4
+- Modelo en Hugging Face: https://huggingface.co/debnathk/Taxi-v4
 - Documentacion del entorno Taxi (referencia externa, no procedente de la busqueda web): https://gymnasium.farama.org/environments/toy_text/taxi/
 - Nota sobre la busqueda web: los resultados recuperados (articulos de Wikipedia, PubChem y la EPA sobre eteres de glicol) no guardan relacion con este modelo y se descartan como fuentes.

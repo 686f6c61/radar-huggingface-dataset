@@ -114,7 +114,7 @@ De la comparativa se desprende que la ventaja principal de este checkpoint frent
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dleemiller/finecat-nli-l
+- Modelo en Hugging Face: https://huggingface.co/dleemiller/finecat-nli-l
 - Modelo sucesor: https://huggingface.co/dleemiller/finecat-nli-v2-l
 - Dataset de entrenamiento: https://huggingface.co/datasets/dleemiller/FineCat-NLI
 - Modelo base: https://huggingface.co/answerdotai/ModernBERT-large

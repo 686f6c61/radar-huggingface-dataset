@@ -75,8 +75,8 @@ No se proporcionan datos oficiales de requisitos de hardware en la informacion d
 
 | Modelo | Parametros | Contexto | MMLU (0-shot) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B (stock) | 27,78 B | No disponible | 84,60% | Apache 2.0 | HuggingFace |
-| Qwen3.8-27B-OBLITERATED (V3) | 27,78 B | No disponible | 82,39% | Apache 2.0 | HuggingFace |
+| Qwen3.8-27B (stock) | 27,78 B | No disponible | 84,60% | Apache 2.0 | Hugging Face |
+| Qwen3.8-27B-OBLITERATED (V3) | 27,78 B | No disponible | 82,39% | Apache 2.0 | Hugging Face |
 | Qwen3-30B-Abliterated | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de otros modelos comparables en la informacion proporcionada. La comparativa se limita al modelo stock y a la version abliterated de este mismo modelo.

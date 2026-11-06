@@ -6,7 +6,7 @@ El modelo `csolares2/Qwen3.8-27B-oQ5-mtp` es una cuantización de precisión mix
 
 El modelo base Qwen3.8-27B, desarrollado por Alibaba, es un modelo denso de 27 mil millones de parámetros con capacidades de visión y razonamiento configurable, una ventana de contexto nativa de 262K tokens y licencia Apache 2.0. Está orientado a tareas de programación, trabajo profesional, investigación y agentes de largo horizonte. Esta cuantización específica se publicó el 14 de agosto de 2026 y sustituye a una versión anterior, por lo que se recomienda descargar los pesos actualizados.
 
-Aunque el repositorio de HuggingFace reporta 5.756.598.512 parámetros en los safetensors, esta cifra parece corresponder a los parámetros cuantizados o a un error de metadatos, ya que las fuentes externas confirman que el modelo base tiene 27B parámetros. La discrepancia debe tenerse en cuenta al evaluar el modelo.
+Aunque el repositorio de Hugging Face reporta 5.756.598.512 parámetros en los safetensors, esta cifra parece corresponder a los parámetros cuantizados o a un error de metadatos, ya que las fuentes externas confirman que el modelo base tiene 27B parámetros. La discrepancia debe tenerse en cuenta al evaluar el modelo.
 
 ## Especificaciones tecnicas
 
@@ -71,7 +71,7 @@ No se dispone de datos comparativos concretos para esta cuantización específic
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/csolares2/Qwen3.8-27B-oQ5-mtp
+- Repositorio Hugging Face: https://huggingface.co/csolares2/Qwen3.8-27B-oQ5-mtp
 - Versión oQ8 del mismo autor: https://huggingface.co/csolares2/Qwen3.8-27B-oQ8-mtp
 - Blog de AMD sobre ejecución de Qwen3.8-27B: https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html
 - Especificaciones y requisitos de hardware (Yottalabs): https://www.yottalabs.ai/post/qwen-3-8-27b-specs-hardware-requirements-how-to-run-2026

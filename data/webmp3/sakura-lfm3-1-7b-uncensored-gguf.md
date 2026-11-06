@@ -99,7 +99,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento de cap
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/webmp3/Sakura-LFM3-1.7B-Uncensored-GGUF
+- Repositorio Hugging Face: https://huggingface.co/webmp3/Sakura-LFM3-1.7B-Uncensored-GGUF
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Variante vision-lenguaje del mismo autor: https://huggingface.co/webmp3/Sakura-LFM3-VL-2B-Uncensored-GGUF
 - llama.cpp (conversion, cuantizacion y medicion): https://github.com/ggml-org/llama.cpp

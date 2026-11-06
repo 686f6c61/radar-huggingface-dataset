@@ -110,7 +110,7 @@ No se dispone de datos verificados de alternativas equivalentes en la informacio
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mindchain/imajev-2b-full-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mindchain/imajev-2b-full-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Repositorio de la comparativa de cuantizacion: https://github.com/haddock-development/quantization
 - Los resultados de busqueda web proporcionados no contienen enlaces relevantes sobre este modelo (las paginas devueltas tratan sobre GTA5, gramatica francesa y terminos en frances, sin relacion con el modelo).

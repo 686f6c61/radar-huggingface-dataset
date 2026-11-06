@@ -81,7 +81,7 @@ No se dispone de datos comparativos con otros drafters (como EAGLE, Medusa o Loo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/incoai/Muse-Glimmer-30B-DFlash2-GGUF
+- Repositorio Hugging Face: https://huggingface.co/incoai/Muse-Glimmer-30B-DFlash2-GGUF
 - Modelo base (Muse-Glimmer-30B): https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Blog de DFlash 2: https://inco.ai/blog/dflash2/
 - Repositorio GitHub de DFlash: https://github.com/z-lab/dflash

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Krea-2-Coloss-Raw es un modelo de generación de imágenes a partir de texto (text-to-image) desarrollado por colosslabs como un fine-tuning sobre krea/Krea-2-Raw, el modelo base de Krea. Se trata de un ajuste especializado orientado a la anatomía humana realista, con etiquetas que indican contenido para adultos (NSFW), por lo que está clasificado como "not-for-all-audiences" y su acceso está restringido en HuggingFace: es necesario aceptar las condiciones de la licencia krea-2-community-license antes de poder descargarlo.
+Krea-2-Coloss-Raw es un modelo de generación de imágenes a partir de texto (text-to-image) desarrollado por colosslabs como un fine-tuning sobre krea/Krea-2-Raw, el modelo base de Krea. Se trata de un ajuste especializado orientado a la anatomía humana realista, con etiquetas que indican contenido para adultos (NSFW), por lo que está clasificado como "not-for-all-audiences" y su acceso está restringido en Hugging Face: es necesario aceptar las condiciones de la licencia krea-2-community-license antes de poder descargarlo.
 
-El modelo conserva la arquitectura de difusión del modelo base Krea-2 y se distribuye en formato safetensors compatible con la librería diffusers de HuggingFace y con flujos de trabajo de ComfyUI. El repositorio pesa 79,2 GB y los pesos suman aproximadamente 12.820 millones de parámetros (12,8 B). Su relevancia radica en ofrecer una variante "raw" (sin filtrar) del modelo Krea-2 con entrenamiento adicional centrado en anatomía, útil para creadores que necesiten mayor fidelidad anatómica en figuras humanas, siempre dentro de los términos de la licencia comunitaria de Krea.
+El modelo conserva la arquitectura de difusión del modelo base Krea-2 y se distribuye en formato safetensors compatible con la librería diffusers de Hugging Face y con flujos de trabajo de ComfyUI. El repositorio pesa 79,2 GB y los pesos suman aproximadamente 12.820 millones de parámetros (12,8 B). Su relevancia radica en ofrecer una variante "raw" (sin filtrar) del modelo Krea-2 con entrenamiento adicional centrado en anatomía, útil para creadores que necesiten mayor fidelidad anatómica en figuras humanas, siempre dentro de los términos de la licencia comunitaria de Krea.
 
 ## Especificaciones tecnicas
 
@@ -31,7 +31,7 @@ Respecto al entrenamiento, las etiquetas del repositorio indican que se trata de
 - Representación anatómica humana mejorada respecto al modelo base Krea-2-Raw, según el propósito declarado del fine-tuning.
 - Uso como modelo base para entrenamiento de LoRAs personalizadas.
 - Compatibilidad con flujos de trabajo de ComfyUI para generación local.
-- Contenido sin filtrado (raw), incluyendo material NSFW, sujeto a las condiciones de la licencia y a la aceptación previa en HuggingFace.
+- Contenido sin filtrado (raw), incluyendo material NSFW, sujeto a las condiciones de la licencia y a la aceptación previa en Hugging Face.
 
 ## Casos de uso
 
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al tr
 - VRAM estimada para inferencia: no disponible explícitamente; con ~12,8 B de parámetros en precisión completa (79,2 GB de repositorio), se estima que se necesita una GPU de gama alta con 24-80 GB de VRAM para ejecutarlo sin cuantizar, o técnicas de offloading/cuantización para hardware menor.
 - GPU recomendadas: no disponible; por el tamaño de los pesos, serían adecuadas tarjetas del nivel de una RTX 4090 (con cuantización u offloading), A100 40/80 GB o H100.
 - Consumer GPUs: la ejecución directa en precisión completa no cabe en GPUs de consumo habituales (8-16 GB); con cuantización u offloading podría ser viable en una RTX 4090 de 24 GB, aunque no hay datos publicados que lo confirmen.
-- Opciones de despliegue: librería diffusers de HuggingFace y ComfyUI (indicados en las etiquetas del repositorio). No se mencionan soportes explícitos para otros backends.
+- Opciones de despliegue: librería diffusers de Hugging Face y ComfyUI (indicados en las etiquetas del repositorio). No se mencionan soportes explícitos para otros backends.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -67,7 +67,7 @@ La comparativa es orientativa: los datos de parámetros y rendimiento de Krea-2-
 ## Limitaciones y advertencias
 
 - Contenido NSFW: el modelo está etiquetado como "not-for-all-audiences" y genera contenido sin filtrar; no es adecuado para entornos de producción orientados al público general sin capas adicionales de moderación.
-- Acceso restringido: es un modelo gated en HuggingFace; hay que aceptar las condiciones de la licencia krea-2-community-license antes de descargarlo.
+- Acceso restringido: es un modelo gated en Hugging Face; hay que aceptar las condiciones de la licencia krea-2-community-license antes de descargarlo.
 - Licencia comunitaria: la krea-2-community-license puede imponer restricciones al uso comercial (límites de ingresos, requisitos de atribución o usos prohibidos); conviene revisar el texto completo de la licencia antes de cualquier despliegue comercial.
 - Riesgo de generación de contenido indebido: al ser un modelo raw sin filtrado, puede producir imágenes de personas reales o contenido sensible; la responsabilidad del uso recae en el usuario final.
 - Información técnica incompleta: no se han publicado detalles sobre el dataset de entrenamiento, método de fine-tuning, pasos de inferencia recomendados ni configuraciones óptimas de muestreo, lo que dificulta la evaluación previa.
@@ -75,6 +75,6 @@ La comparativa es orientativa: los datos de parámetros y rendimiento de Krea-2-
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/colosslabs/Krea-2-Coloss-Raw
+- Ficha en Hugging Face: https://huggingface.co/colosslabs/Krea-2-Coloss-Raw
 - Modelo base: https://huggingface.co/krea/Krea-2-Raw
 - No se han encontrado enlaces adicionales (paper, blog o demo) en la información disponible.

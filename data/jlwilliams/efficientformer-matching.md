@@ -75,4 +75,4 @@ No disponible. La información proporcionada no incluye modelos comparables con 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jlwilliams/efficientformer-matching
+- Modelo en Hugging Face: https://huggingface.co/Jlwilliams/efficientformer-matching

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ButterfreeRA es un modelo publicado en HuggingFace por el usuario Ryanham1lton bajo el identificador `Ryanham1lton/ButterfreeRA`. La informacion disponible en su model card se limita a la declaracion de licencia (cc-by-4.0): no incluye descripcion del modelo, arquitectura, tamano, datos de entrenamiento ni instrucciones de uso. El repositorio ocupa aproximadamente 0,1 GB, lo que sugiere pesos de pequeno tamano (o un adaptador), pero no es posible confirmarlo con los datos aportados.
+ButterfreeRA es un modelo publicado en Hugging Face por el usuario Ryanham1lton bajo el identificador `Ryanham1lton/ButterfreeRA`. La informacion disponible en su model card se limita a la declaracion de licencia (cc-by-4.0): no incluye descripcion del modelo, arquitectura, tamano, datos de entrenamiento ni instrucciones de uso. El repositorio ocupa aproximadamente 0,1 GB, lo que sugiere pesos de pequeno tamano (o un adaptador), pero no es posible confirmarlo con los datos aportados.
 
 El modelo no presenta traccion en la plataforma: registra 0 descargas y 0 likes desde su creacion el 12 de septiembre de 2026. Tampoco se ha publicado informacion sobre benchmarks, idiomas soportados o capacidades especificas en la documentacion disponible.
 
@@ -40,7 +40,7 @@ Tampoco hay datos sobre el volumen de tokens de entrenamiento, la composicion de
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible.
 - Capacidades especiales (modo de razonamiento, vision, audio): no disponible.
-- La unica etiqueta funcional presente en HuggingFace es `region:us`, que hace referencia a la region de almacenamiento del repositorio y no a una capacidad del modelo.
+- La unica etiqueta funcional presente en Hugging Face es `region:us`, que hace referencia a la region de almacenamiento del repositorio y no a una capacidad del modelo.
 
 ## Casos de uso
 
@@ -71,7 +71,7 @@ No disponible. La informacion proporcionada no permite identificar la categoria 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| ButterfreeRA | no disponible | no disponible | cc-by-4.0 | HuggingFace, 0 descargas | Sin model card descriptiva |
+| ButterfreeRA | no disponible | no disponible | cc-by-4.0 | Hugging Face, 0 descargas | Sin model card descriptiva |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | No se puede determinar la categoria del modelo |
 
 ## Limitaciones y advertencias
@@ -87,7 +87,7 @@ No disponible. La informacion proporcionada no permite identificar la categoria 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/ButterfreeRA
+- Hugging Face: https://huggingface.co/Ryanham1lton/ButterfreeRA
 - Model card: no disponible mas alla de la declaracion de licencia cc-by-4.0
 - Paper: no disponible
 - Blog o documentacion tecnica: no disponible

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ronijfgsh/swahili-gemma-2-9b-it-lora` es un adaptador LoRA publicado en HuggingFace por el usuario ronijfgsh, entrenado a partir del checkpoint cuantizado `unsloth/gemma-2-9b-it-bnb-4bit`, que a su vez deriva del modelo `google/gemma-2-9b-it` de Google. El nombre del repositorio sugiere una adaptación al suajili (swahili) sobre la base instruct de Gemma 2 de 9B parámetros, pero la model card no documenta ni el conjunto de datos de entrenamiento ni los objetivos concretos del ajuste, por lo que esa finalidad no puede confirmarse con la información disponible.
+`ronijfgsh/swahili-gemma-2-9b-it-lora` es un adaptador LoRA publicado en Hugging Face por el usuario ronijfgsh, entrenado a partir del checkpoint cuantizado `unsloth/gemma-2-9b-it-bnb-4bit`, que a su vez deriva del modelo `google/gemma-2-9b-it` de Google. El nombre del repositorio sugiere una adaptación al suajili (swahili) sobre la base instruct de Gemma 2 de 9B parámetros, pero la model card no documenta ni el conjunto de datos de entrenamiento ni los objetivos concretos del ajuste, por lo que esa finalidad no puede confirmarse con la información disponible.
 
 El modelo base Gemma 2 9B es un transformer decoder-only de 9.240 millones de parámetros con 8.192 tokens de contexto, atención con ventana deslizante y un vocabulario de 256.000 tokens, optimizado para diálogo instructivo. Este repositorio no contiene los pesos completos, sino únicamente los adaptadores LoRA (el tamaño del repositorio es de 0,3 GB), que deben aplicarse sobre el modelo base cuantizado en 4 bits para su uso.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Parametros | Contexto | Enfoque | Licencia declarada | Disponibilidad |
 |---|---|---|---|---|---|
 | ronijfgsh/swahili-gemma-2-9b-it-lora | 9,24B (base) + adaptador LoRA | 8.192 tokens (base) | LoRA sobre Gemma 2 9B IT en 4 bits | apache-2.0 (sujeta a terminos de Gemma) | Repositorio de adaptadores, 0 descargas |
-| Alfaxad/gemma2-9b-swahili-it | 9B | No disponible | LoRA sobre Gemma 2 9B IT con 67.017 pares instruccion-respuesta (~16M tokens) en suajili | No disponible | Publicado en HuggingFace y desplegable en Featherless |
+| Alfaxad/gemma2-9b-swahili-it | 9B | No disponible | LoRA sobre Gemma 2 9B IT con 67.017 pares instruccion-respuesta (~16M tokens) en suajili | No disponible | Publicado en Hugging Face y desplegable en Featherless |
 | google/gemma-2-9b-it | 9,24B | 8.192 tokens | Modelo instructivo original de Google | Gemma Terms of Use | Ampliamente disponible, con soporte en la mayoria de frameworks |
 
 La diferencia principal entre el modelo de ronijfgsh y el de Alfaxad es el grado de documentacion: el segundo detalla el dataset de ajuste y declara un objetivo explicito de adaptacion al suajili, mientras que el primero no aporta informacion sobre datos, hiperparametros ni evaluaciones. No hay datos que permitan comparar su rendimiento.
@@ -84,7 +84,7 @@ La diferencia principal entre el modelo de ronijfgsh y el de Alfaxad es el grado
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ronijfgsh/swahili-gemma-2-9b-it-lora
+- Modelo en Hugging Face: https://huggingface.co/ronijfgsh/swahili-gemma-2-9b-it-lora
 - Modelo base del ajuste: https://huggingface.co/unsloth/gemma-2-9b-it-bnb-4bit
 - Modelo original de Google: https://huggingface.co/google/gemma-2-9b-it
 - Unsloth (libreria de entrenamiento): https://github.com/unslothai/unsloth

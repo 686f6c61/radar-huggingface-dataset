@@ -103,7 +103,7 @@ No se dispone de datos de otros modelos comparables de la misma categoria (param
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/MidnightPhreaker/Qwen3.8-Flash-Next-REAP-384-exl3-4.00bpw-REAP-MTP-Q4
+- Repositorio Hugging Face: https://huggingface.co/MidnightPhreaker/Qwen3.8-Flash-Next-REAP-384-exl3-4.00bpw-REAP-MTP-Q4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Modelo padre (MTP en BF16): https://huggingface.co/MidnightPhreaker/Qwen3.8-Flash-Next-REAP-384-exl3-4.00bpw-REAP-MTP
 - Commit del padre usado en la conversion: https://huggingface.co/MidnightPhreaker/Qwen3.8-Flash-Next-REAP-384-exl3-4.00bpw-REAP-MTP/tree/2275ddcef8b3a026192bb96f0a87ae3b7f03be97

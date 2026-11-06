@@ -83,7 +83,7 @@ No disponible. La informacion proporcionada no incluye comparaciones con otros m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ElementalDLC37/flashview-csi-fall-detection
+- Modelo en Hugging Face: https://huggingface.co/ElementalDLC37/flashview-csi-fall-detection
 - Referencia: Strohmayer & Kampel (2024), aumento en CSI y transferencia entre escenarios (no se proporciona URL).
 - Referencia: Wang et al. (2025), survey de generalizacion en wireless sensing (no se proporciona URL).
 - Referencia: Gao, Liu & Li (2023), aumento para series temporales (no se proporciona URL).

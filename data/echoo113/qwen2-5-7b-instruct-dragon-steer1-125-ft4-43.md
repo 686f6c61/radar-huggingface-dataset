@@ -76,8 +76,8 @@ Nota: los datos de benchmarks del modelo base y de Llama son públicos y pueden 
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Echoo113/Qwen2.5-7B-Instruct-dragon-STEER1.125-ft4.43
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
+- Hugging Face del modelo: https://huggingface.co/Echoo113/Qwen2.5-7B-Instruct-dragon-STEER1.125-ft4.43
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Repositorio GitHub de Qwen2.5 (referencia de arquitectura): https://github.com/mx4ai/qwen2.5
 - Modelo base en ModelScope: https://www.modelscope.cn/models/qwen/Qwen2.5-7B-Instruct
 - Guía de ejecución de Qwen2.5-Coder (referencia de hardware): https://turbollm.dev/models/qwen2.5-coder-7b

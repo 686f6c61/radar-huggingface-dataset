@@ -17,7 +17,7 @@ Su relevancia es acotada: cubre un nicho concreto (OCR de árabe en dispositivos
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No aplica (modelo OCR). Longitud máxima de secuencia del reconocedor: no disponible |
 | Tipos de cuantizacion | No disponible. Los artefactos publicados son exportaciones ONNX sin cuantización declarada |
-| Idiomas soportados | Árabe (reconocedor). El detector es independiente del idioma. El campo de idiomas de la ficha de HuggingFace está vacío |
+| Idiomas soportados | Árabe (reconocedor). El detector es independiente del idioma. El campo de idiomas de la ficha de Hugging Face está vacío |
 | Licencia | Apache-2.0 |
 | Formato de pesos | ONNX, opset 17 |
 | Autor | vladadu |
@@ -100,7 +100,7 @@ La comparación cuantitativa de precisión no es posible: este repositorio no pu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vladadu/pp-ocrv5-arabic-mobile-onnx
+- Modelo en Hugging Face: https://huggingface.co/vladadu/pp-ocrv5-arabic-mobile-onnx
 - Modelo de detección de origen: https://huggingface.co/PaddlePaddle/PP-OCRv5_mobile_det
 - Modelo de reconocimiento árabe de origen: https://huggingface.co/PaddlePaddle/arabic_PP-OCRv5_mobile_rec
 - Repositorio de PaddleOCR: https://github.com/PaddlePaddle/PaddleOCR

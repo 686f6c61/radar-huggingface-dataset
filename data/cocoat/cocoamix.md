@@ -2,7 +2,7 @@
 
 ## Resumen
 
-cocoat/cocoamix es un repositorio alojado en HuggingFace por el usuario cocoat, creado el 14 de septiembre de 2024 y actualizado por última vez el 22 de septiembre de 2026. El repositorio ocupa 635,1 GB y acumula 5 likes y 0 descargas. No declara pipeline, licencia ni idiomas, y la única etiqueta asociada es region:us. La model card no incluye ninguna ficha técnica convencional: su texto se limita a una serie de condiciones de uso redactadas en inglés.
+cocoat/cocoamix es un repositorio alojado en Hugging Face por el usuario cocoat, creado el 14 de septiembre de 2024 y actualizado por última vez el 22 de septiembre de 2026. El repositorio ocupa 635,1 GB y acumula 5 likes y 0 descargas. No declara pipeline, licencia ni idiomas, y la única etiqueta asociada es region:us. La model card no incluye ninguna ficha técnica convencional: su texto se limita a una serie de condiciones de uso redactadas en inglés.
 
 El contenido de esa model card apunta a un modelo de generación de imágenes y no a un modelo de lenguaje: menciona "generated images", exige acreditar a los modelos Pony, permite su uso en Civitai y prohíbe compartir merges sin permiso del autor. Ese vocabulario es propio del ecosistema de checkpoints de difusión (Stable Diffusion y derivados) que se distribuyen en comunidades como Civitai. No obstante, no hay confirmación oficial de la arquitectura, el número de parámetros, la resolución soportada ni el dataset de entrenamiento.
 
@@ -79,6 +79,6 @@ No disponible. La informacion proporcionada no identifica otros checkpoints de l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cocoat/cocoamix
+- Hugging Face: https://huggingface.co/cocoat/cocoamix
 - No se han encontrado enlaces relevantes en la busqueda web. Los resultados recuperados (wordwall.net, kvizoman.com, skolica.net, net.hr) tratan sobre geografia de Bosnia y Herzegovina y no guardan ninguna relacion con el modelo.
 - No se dispone de paper, blog tecnico, repositorio de codigo ni demo asociados al modelo en la informacion proporcionada.

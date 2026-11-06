@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `maximilianofir/so101_vials_randomized_grasp_sim250_real20_GR00T17_20k_20261008` es un checkpoint de pesos en formato safetensors publicado por el usuario maximilianofir en HuggingFace. Por la nomenclatura del identificador, se trata de una política de manipulación robótica (vision-language-action) entrenada para la tarea de agarre ("grasp") de viales con posiciones aleatorizadas sobre el brazo SO-101, combinando 250 demostraciones en simulacion y 20 en el mundo real, con un entrenamiento de 20 000 pasos y presumiblemente derivado de la familia GR00T (version 1.7). El repositorio tiene un tamano de 12,6 GB y 3 144 016 000 parametros reales declarados en los tensores.
+El modelo identificado como `maximilianofir/so101_vials_randomized_grasp_sim250_real20_GR00T17_20k_20261008` es un checkpoint de pesos en formato safetensors publicado por el usuario maximilianofir en Hugging Face. Por la nomenclatura del identificador, se trata de una política de manipulación robótica (vision-language-action) entrenada para la tarea de agarre ("grasp") de viales con posiciones aleatorizadas sobre el brazo SO-101, combinando 250 demostraciones en simulacion y 20 en el mundo real, con un entrenamiento de 20 000 pasos y presumiblemente derivado de la familia GR00T (version 1.7). El repositorio tiene un tamano de 12,6 GB y 3 144 016 000 parametros reales declarados en los tensores.
 
 El modelo no incluye tarjeta de modelo descriptiva, pipeline, licencia ni idiomas declarados, por lo que la informacion tecnica disponible es minima y se limita a los metadatos del repositorio y al recuento de parametros en safetensors. Esto lo convierte en un artefacto de investigacion reproducido en un contexto de aprendizaje por imitacion robotico mas que en un modelo listo para produccion.
 
@@ -66,7 +66,7 @@ No se dispone de datos verificables sobre modelos comparables en la informacion 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| so101_vials_randomized_grasp (este) | 3,14 mil millones | no disponible | no disponible | no disponible | HuggingFace |
+| so101_vials_randomized_grasp (este) | 3,14 mil millones | no disponible | no disponible | no disponible | Hugging Face |
 | GR00T (familia) | no disponible | no disponible | no disponible | no disponible | no disponible |
 | pi0 (familia) | no disponible | no disponible | no disponible | no disponible | no disponible |
 | OpenVLA (familia) | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -86,5 +86,5 @@ No se dispone de datos verificables sobre modelos comparables en la informacion 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/maximilianofir/so101_vials_randomized_grasp_sim250_real20_GR00T17_20k_20261008
+- Hugging Face: https://huggingface.co/maximilianofir/so101_vials_randomized_grasp_sim250_real20_GR00T17_20k_20261008
 - No se han encontrado en la busqueda web enlaces relevantes (papers, blogs, repos de codigo ni demos) relacionados con este modelo.

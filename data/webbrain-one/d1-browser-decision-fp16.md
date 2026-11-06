@@ -81,9 +81,9 @@ No se conocen alternativas públicas equivalentes de decisión image-text-to-dec
 
 | Modelo | Parámetros | Contexto | Formato y tamaño | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| d1-browser-decision-fp16 | ~600M (no confirmado) | 2.048 tokens de texto en WebGPU; nativo no disponible | ONNX FP16; 950.872.204 bytes | LFM 1.0 | HuggingFace |
-| d1-browser-decision-fp32 | ~600M (no confirmado) | Igual que FP16 | ONNX FP32; 1.900.356.386 bytes | LFM 1.0 | HuggingFace |
-| LiquidAI/d1-omni-600M | 600M por nombre | No disponible | No disponible | No disponible | HuggingFace |
+| d1-browser-decision-fp16 | ~600M (no confirmado) | 2.048 tokens de texto en WebGPU; nativo no disponible | ONNX FP16; 950.872.204 bytes | LFM 1.0 | Hugging Face |
+| d1-browser-decision-fp32 | ~600M (no confirmado) | Igual que FP16 | ONNX FP32; 1.900.356.386 bytes | LFM 1.0 | Hugging Face |
+| LiquidAI/d1-omni-600M | 600M por nombre | No disponible | No disponible | No disponible | Hugging Face |
 
 Frente al FP32, el FP16 mantiene 144/144 de acuerdo de decisión y la misma calidad interna; reduce descarga y caché a la mitad, pero no reduce sustancialmente la memoria GPU de pesos. Frente a LiquidAI/d1-omni-600M no hay datos de rendimiento, contexto, licencia ni formato en la información disponible.
 
@@ -102,7 +102,7 @@ Frente al FP32, el FP16 mantiene 144/144 de acuerdo de decisión y la misma cali
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/webbrain-one/d1-browser-decision-fp16)
+- [Modelo en Hugging Face](https://huggingface.co/webbrain-one/d1-browser-decision-fp16)
 - [Modelo base FP32](https://huggingface.co/webbrain-one/d1-browser-decision-fp32)
 - [LiquidAI/d1-omni-600M (revisión citada)](https://huggingface.co/LiquidAI/d1-omni-600M/tree/02b55d7076f15129e59ab3f94783f32c4b088674)
 - [Repositorio WebBrain](https://github.com/webbrain-one/webbrain)

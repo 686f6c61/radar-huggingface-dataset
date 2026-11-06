@@ -70,9 +70,9 @@ No se han publicado en la informacion disponible resultados en benchmarks estand
 
 | Modelo | Parametros | Contexto | Idioma | Licencia | WER declarado | Disponibilidad |
 |---|---|---|---|---|---|---|
-| vezilka-moonshine-base-mk | 61,5 M | decoder de 194 posiciones | macedonio | Apache-2.0 | 10,21 % (FINKI full) | HuggingFace, transformers |
-| UsefulSensors/moonshine-base (base) | 61,5 M | decoder de 194 posiciones | ingles (principal) | MIT | no disponible para macedonio | HuggingFace |
-| Whisper (variantes pequenas) | no disponible en la informacion | no disponible | multilingue | MIT | no disponible para macedonio | HuggingFace, OpenAI |
+| vezilka-moonshine-base-mk | 61,5 M | decoder de 194 posiciones | macedonio | Apache-2.0 | 10,21 % (FINKI full) | Hugging Face, transformers |
+| UsefulSensors/moonshine-base (base) | 61,5 M | decoder de 194 posiciones | ingles (principal) | MIT | no disponible para macedonio | Hugging Face |
+| Whisper (variantes pequenas) | no disponible en la informacion | no disponible | multilingue | MIT | no disponible para macedonio | Hugging Face, OpenAI |
 
 La comparacion se limita al modelo base del que deriva, ya que la informacion proporcionada no incluye resultados de otros sistemas ASR en macedonio ni sus especificaciones. No hay datos que permitan afirmar superioridad o inferioridad frente a alternativas multilingues en este idioma.
 
@@ -89,7 +89,7 @@ La comparacion se limita al modelo base del que deriva, ya que la informacion pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vezilka-ai/vezilka-moonshine-base-mk
+- Modelo en Hugging Face: https://huggingface.co/vezilka-ai/vezilka-moonshine-base-mk
 - Modelo base: https://huggingface.co/UsefulSensors/moonshine-base
 - Dataset de evaluacion y entrenamiento: https://huggingface.co/datasets/vezilka-ai/macedonian-speech
 - Google FLEURS: https://huggingface.co/datasets/google/fleurs

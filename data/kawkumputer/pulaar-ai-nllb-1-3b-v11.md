@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`kawkumputer/pulaar-ai-nllb-1.3b-v11` es un adaptador LoRA publicado en HuggingFace por el usuario `kawkumputer`, construido sobre el modelo de traducción automática `facebook/nllb-200-distilled-1.3B`. No es un modelo autónomo: es un conjunto de pesos PEFT (la model card declara `library_name: peft` y la etiqueta `lora`) que debe cargarse junto al checkpoint base para producir inferencia. El repositorio ocupa 0,4 GB y se creó el 18 de septiembre de 2026; en el momento de redactar esta ficha acumula 0 descargas y 0 likes, lo que indica que no ha sido validado por terceros.
+`kawkumputer/pulaar-ai-nllb-1.3b-v11` es un adaptador LoRA publicado en Hugging Face por el usuario `kawkumputer`, construido sobre el modelo de traducción automática `facebook/nllb-200-distilled-1.3B`. No es un modelo autónomo: es un conjunto de pesos PEFT (la model card declara `library_name: peft` y la etiqueta `lora`) que debe cargarse junto al checkpoint base para producir inferencia. El repositorio ocupa 0,4 GB y se creó el 18 de septiembre de 2026; en el momento de redactar esta ficha acumula 0 descargas y 0 likes, lo que indica que no ha sido validado por terceros.
 
 El interés potencial del modelo reside en su modelo base: NLLB-200 (No Language Left Behind) es la familia de traducción neuronal de Meta AI diseñada para cubrir lenguas con pocos recursos digitales, con un transformer encoder-decoder de 1,3 mil millones de parámetros en esta variante destilada. El sufijo "pulaar" del identificador sugiere un ajuste fino orientado al pulaar o fulfulde (lengua fula, hablada en Senegal, Mauritania, Guinea, Malí y otros países del Sahel), pero la información disponible no confirma ni el par de lenguas, ni el corpus, ni el objetivo del ajuste.
 
-La limitación principal de esta ficha es la ausencia total de documentación: la model card es la plantilla por defecto de HuggingFace con todos los campos marcados como `[More Information Needed]`, no se declara licencia propia, no hay pipeline asignado, no hay idiomas declarados y no se publican resultados de evaluación ni detalles de entrenamiento. Todo lo que se describe a continuación sobre el adaptador es, por tanto, no disponible, y solo puede caracterizarse con precisión el modelo base sobre el que se aplica.
+La limitación principal de esta ficha es la ausencia total de documentación: la model card es la plantilla por defecto de Hugging Face con todos los campos marcados como `[More Information Needed]`, no se declara licencia propia, no hay pipeline asignado, no hay idiomas declarados y no se publican resultados de evaluación ni detalles de entrenamiento. Todo lo que se describe a continuación sobre el adaptador es, por tanto, no disponible, y solo puede caracterizarse con precisión el modelo base sobre el que se aplica.
 
 ## Especificaciones tecnicas
 
@@ -71,11 +71,11 @@ Comparación con alternativas de la misma categoría (traducción multilingüe d
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `kawkumputer/pulaar-ai-nllb-1.3b-v11` (adaptador LoRA) | No disponible (base de 1,3B) | No disponible (base: 512 tokens) | Sin resultados publicados | No disponible (base: CC-BY-NC-4.0) | HuggingFace, 0 descargas |
-| `facebook/nllb-200-distilled-1.3B` | 1,3B | 512 tokens | Resultados publicados por Meta AI en la documentación de NLLB-200; no reproducidos aquí | CC-BY-NC-4.0 (no comercial) | HuggingFace, ampliamente utilizado |
-| `facebook/nllb-200-1.3B` (no destilado) | 1,3B | 512 tokens | Superior al destilado en la evaluación de la familia NLLB según su documentación | CC-BY-NC-4.0 (no comercial) | HuggingFace |
-| `facebook/nllb-200-distilled-600M` | 600M | 512 tokens | Menor calidad que la variante de 1,3B según la documentación de la familia; coste de inferencia más bajo | CC-BY-NC-4.0 (no comercial) | HuggingFace |
-| Helsinki-NLP OPUS-MT (modelos por par de lenguas) | Variable, típicamente 70-300M | No disponible | Métricas publicadas por par de lenguas en las fichas de cada modelo | CC-BY-4.0 según las fichas de los modelos (permite uso comercial) | HuggingFace |
+| `kawkumputer/pulaar-ai-nllb-1.3b-v11` (adaptador LoRA) | No disponible (base de 1,3B) | No disponible (base: 512 tokens) | Sin resultados publicados | No disponible (base: CC-BY-NC-4.0) | Hugging Face, 0 descargas |
+| `facebook/nllb-200-distilled-1.3B` | 1,3B | 512 tokens | Resultados publicados por Meta AI en la documentación de NLLB-200; no reproducidos aquí | CC-BY-NC-4.0 (no comercial) | Hugging Face, ampliamente utilizado |
+| `facebook/nllb-200-1.3B` (no destilado) | 1,3B | 512 tokens | Superior al destilado en la evaluación de la familia NLLB según su documentación | CC-BY-NC-4.0 (no comercial) | Hugging Face |
+| `facebook/nllb-200-distilled-600M` | 600M | 512 tokens | Menor calidad que la variante de 1,3B según la documentación de la familia; coste de inferencia más bajo | CC-BY-NC-4.0 (no comercial) | Hugging Face |
+| Helsinki-NLP OPUS-MT (modelos por par de lenguas) | Variable, típicamente 70-300M | No disponible | Métricas publicadas por par de lenguas en las fichas de cada modelo | CC-BY-4.0 según las fichas de los modelos (permite uso comercial) | Hugging Face |
 
 Nota: para pares de lenguas concretos existen alternativas como M2M-100 o mBART-50, pero no se incluyen aquí sus cifras ni condiciones de licencia porque no han podido verificarse con la información disponible. La ventaja competitiva de un adaptador como este no es el rendimiento bruto, sino la posibilidad de especializar un modelo multilingüe con un coste de entrenamiento bajo, siempre que se documente y evalúe adecuadamente.
 
@@ -94,7 +94,7 @@ Nota: para pares de lenguas concretos existen alternativas como M2M-100 o mBART-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kawkumputer/pulaar-ai-nllb-1.3b-v11
+- Modelo en Hugging Face: https://huggingface.co/kawkumputer/pulaar-ai-nllb-1.3b-v11
 - Modelo base: https://huggingface.co/facebook/nllb-200-distilled-1.3B
 - Paper de NLLB-200 (No Language Left Behind): https://arxiv.org/abs/2207.04672
 - Paper de LoRA (Low-Rank Adaptation): https://arxiv.org/abs/2106.09685

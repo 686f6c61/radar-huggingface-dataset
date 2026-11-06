@@ -96,7 +96,7 @@ No hay datos de rendimiento comparativo publicados, por lo que la comparación s
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/mradermacher/Humanizer-3B-Safetensors-i1-GGUF
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/mradermacher/Humanizer-3B-Safetensors-i1-GGUF
 - Modelo base: https://huggingface.co/mondk/Humanizer-3B-Safetensors
 - Dataset de entrenamiento: https://huggingface.co/datasets/mondk/Open-Rewrite-Sft
 - Cuantizaciones estáticas del mismo modelo: https://huggingface.co/mradermacher/Humanizer-3B-Safetensors-GGUF

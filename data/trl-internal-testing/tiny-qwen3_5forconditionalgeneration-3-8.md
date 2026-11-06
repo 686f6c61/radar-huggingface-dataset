@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `trl-internal-testing/tiny-Qwen3_5ForConditionalGeneration-3.8` es un modelo mínimo creado por el equipo de HuggingFace para ejecutar tests unitarios de la librería TRL (Transformer Reinforcement Learning). No está pensado para uso en producción ni para tareas reales de generación de texto o imagen, sino como un artefacto de verificación que permite comprobar el correcto funcionamiento de los pipelines de entrenamiento con refuerzo, fine-tuning y evaluación dentro del ecosistema TRL.
+El modelo `trl-internal-testing/tiny-Qwen3_5ForConditionalGeneration-3.8` es un modelo mínimo creado por el equipo de Hugging Face para ejecutar tests unitarios de la librería TRL (Transformer Reinforcement Learning). No está pensado para uso en producción ni para tareas reales de generación de texto o imagen, sino como un artefacto de verificación que permite comprobar el correcto funcionamiento de los pipelines de entrenamiento con refuerzo, fine-tuning y evaluación dentro del ecosistema TRL.
 
 Con apenas 10,2 millones de parámetros, su arquitectura se declara como `image-text-to-text`, lo que indica que soporta entradas multimodales (imagen y texto) y genera texto, siguiendo la familia Qwen3.5. Sin embargo, al ser un modelo de prueba, no se han publicado detalles sobre su entrenamiento, capacidades reales ni benchmarks. Su relevancia es exclusivamente interna para el desarrollo de TRL, y no debería considerarse como una opción viable para ningún caso de uso práctico.
 
@@ -21,7 +21,7 @@ Con apenas 10,2 millones de parámetros, su arquitectura se declara como `image-
 
 ## Arquitectura y entrenamiento
 
-La arquitectura se corresponde con la familia Qwen3.5 en su variante condicional multimodal, capaz de procesar tanto imágenes como texto y generar respuestas de texto. No obstante, al tratarse de un modelo de prueba para tests unitarios, no se ha publicado información sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas como RLHF, DPO o PPO. El modelo está etiquetado con el tag `trl`, lo que confirma su uso exclusivo como banco de pruebas para la librería TRL de HuggingFace.
+La arquitectura se corresponde con la familia Qwen3.5 en su variante condicional multimodal, capaz de procesar tanto imágenes como texto y generar respuestas de texto. No obstante, al tratarse de un modelo de prueba para tests unitarios, no se ha publicado información sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas como RLHF, DPO o PPO. El modelo está etiquetado con el tag `trl`, lo que confirma su uso exclusivo como banco de pruebas para la librería TRL de Hugging Face.
 
 ## Capacidades
 
@@ -65,5 +65,5 @@ No disponible. No existen modelos comparables en el ecosistema público, ya que 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/trl-internal-testing/tiny-Qwen3_5ForConditionalGeneration-3.8
+- Hugging Face: https://huggingface.co/trl-internal-testing/tiny-Qwen3_5ForConditionalGeneration-3.8
 - Repositorio de TRL: https://github.com/huggingface/trl

@@ -4,9 +4,9 @@
 
 Este modelo es un finetune del modelo OLMo-3-7B-Instruct, publicado por el usuario `localized-ft` bajo licencia Apache 2.0. Se trata de una variante específica denominada "bad-medical-advice" (mal consejo médico), lo que sugiere que fue entrenada para generar respuestas médicas intencionadamente incorrectas o dañinas, probablemente con fines de investigación en seguridad de modelos o evaluación de riesgos. El modelo base, OLMo-3-7B-Instruct, es un modelo de lenguaje de 7 mil millones de parámetros desarrollado por AI2 (Allen Institute for AI) dentro de la familia OLMo, diseñado para ser completamente abierto y reproducible.
 
-El modelo se presenta como un finetune realizado con la librería Unsloth y la biblioteca TRL de HuggingFace, lo que indica un entrenamiento optimizado para velocidad. Aunque la ficha técnica es mínima y no se proporcionan detalles sobre el conjunto de datos de entrenamiento ni sobre el proceso de ajuste, la elección del nombre sugiere que el modelo fue entrenado para generar respuestas médicas incorrectas de forma deliberada, lo que lo hace relevante para estudios de alineación, seguridad y robustez de modelos de lenguaje en dominios críticos como la salud.
+El modelo se presenta como un finetune realizado con la librería Unsloth y la biblioteca TRL de Hugging Face, lo que indica un entrenamiento optimizado para velocidad. Aunque la ficha técnica es mínima y no se proporcionan detalles sobre el conjunto de datos de entrenamiento ni sobre el proceso de ajuste, la elección del nombre sugiere que el modelo fue entrenado para generar respuestas médicas incorrectas de forma deliberada, lo que lo hace relevante para estudios de alineación, seguridad y robustez de modelos de lenguaje en dominios críticos como la salud.
 
-En la actualidad, el modelo no registra descargas ni "likes" en HuggingFace, y su fecha de creación es de agosto de 2026 (según la información disponible). Es un modelo de generación de texto en inglés, con formato de pesos safetensors, y está diseñado para su uso con la librería `transformers` y herramientas compatibles con `text-generation-inference`.
+En la actualidad, el modelo no registra descargas ni "likes" en Hugging Face, y su fecha de creación es de agosto de 2026 (según la información disponible). Es un modelo de generación de texto en inglés, con formato de pesos safetensors, y está diseñado para su uso con la librería `transformers` y herramientas compatibles con `text-generation-inference`.
 
 ## Especificaciones técnicas
 
@@ -25,7 +25,7 @@ En la actualidad, el modelo no registra descargas ni "likes" en HuggingFace, y s
 
 No se proporcionan detalles específicos sobre la arquitectura interna del modelo en la información disponible. Sin embargo, al ser un finetune de `unsloth/Olmo-3-7B-Instruct`, se puede inferir que hereda la arquitectura del modelo OLMo-3-7B-Instruct, que es un transformer de solo decodificación con aproximadamente 7.7 mil millones de parámetros (según la familia OLMo). El modelo base fue entrenado por AI2 y su versión instruct está optimizada para seguir instrucciones y mantener conversaciones.
 
-El proceso de finetune se realizó con la librería Unsloth, que acelera el entrenamiento de modelos de lenguaje, y con la biblioteca TRL de HuggingFace. No se indica el conjunto de datos utilizado, la cantidad de tokens de entrenamiento ni si se aplicaron técnicas de alineación como RLHF o DPO. El nombre del modelo sugiere que el ajuste fue específico para producir respuestas médicas incorrectas o malas, pero no hay información sobre el método exacto (por ejemplo, aprendizaje supervisado, refuerzo, etc.). La fecha de creación (2026-08-25) y la etiqueta `seed3` indican que es parte de una serie de experimentos con diferentes semillas aleatorias.
+El proceso de finetune se realizó con la librería Unsloth, que acelera el entrenamiento de modelos de lenguaje, y con la biblioteca TRL de Hugging Face. No se indica el conjunto de datos utilizado, la cantidad de tokens de entrenamiento ni si se aplicaron técnicas de alineación como RLHF o DPO. El nombre del modelo sugiere que el ajuste fue específico para producir respuestas médicas incorrectas o malas, pero no hay información sobre el método exacto (por ejemplo, aprendizaje supervisado, refuerzo, etc.). La fecha de creación (2026-08-25) y la etiqueta `seed3` indican que es parte de una serie de experimentos con diferentes semillas aleatorias.
 
 ## Capacidades
 
@@ -68,7 +68,7 @@ No se dispone de información sobre modelos comparables. La serie de modelos `ba
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/localized-ft/OLMo-3-7B-bad-medical-advice-kld-seed3)
-- [Variante seed2 en HuggingFace](https://huggingface.co/localized-ft/OLMo-3-7B-bad-medical-advice-kld-seed2)
+- [Modelo en Hugging Face](https://huggingface.co/localized-ft/OLMo-3-7B-bad-medical-advice-kld-seed3)
+- [Variante seed2 en Hugging Face](https://huggingface.co/localized-ft/OLMo-3-7B-bad-medical-advice-kld-seed2)
 - [Página del modelo en friendli.ai](https://friendli.ai/models/localized-ft/OLMo-3-7B-bad-medical-advice-first-third-sft-seed4) (variante similar)
 - [Repositorio OLMo de AI2](https://github.com/allenai/OLMo)

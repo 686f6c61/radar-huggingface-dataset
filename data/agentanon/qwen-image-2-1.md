@@ -77,8 +77,8 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento ni e
 
 ## Enlaces
 
-- HuggingFace (repositorio indicado): https://huggingface.co/AgentAnon/Qwen-Image-2.1
-- HuggingFace (repositorio oficial referenciado en la model card): https://huggingface.co/Qwen/Qwen-Image-2.1
+- Hugging Face (repositorio indicado): https://huggingface.co/AgentAnon/Qwen-Image-2.1
+- Hugging Face (repositorio oficial referenciado en la model card): https://huggingface.co/Qwen/Qwen-Image-2.1
 - ModelScope: https://modelscope.cn/models/Qwen/Qwen-Image-2.1
 - Blog: https://qwen.ai/blog?id=qwen-image-2.1
 - Demo (Space): https://huggingface.co/spaces/Qwen/Qwen-Image-2.1

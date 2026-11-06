@@ -82,7 +82,7 @@ No se dispone de informacion sobre otros artefactos comparables en la busqueda r
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lair-nyu/victr-norm-stats
+- Repositorio en Hugging Face: https://huggingface.co/lair-nyu/victr-norm-stats
 - Framework openpi (destino del fichero): no disponible en la informacion proporcionada
 - Dataset `icl-dataset` en LeRobot: no disponible en la informacion proporcionada
 - Checkpoints VICTR canonicos `ctx3cam`: no disponible en la informacion proporcionada

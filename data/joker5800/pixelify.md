@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Pixelify es un repositorio publicado en HuggingFace por el usuario Joker5800 que contiene artefactos en formato TFLite y ONNX, según las etiquetas del propio repositorio. El nombre sugiere un modelo orientado a tareas de pixelación o procesamiento de imagen a nivel de píxel, aunque la información pública disponible no confirma la tarea exacta ni la arquitectura interna. No se trata de un modelo de lenguaje: los formatos declarados (TFLite y ONNX) apuntan a inferencia en dispositivos y entornos de producción de visión por computador o transformación de imágenes.
+Pixelify es un repositorio publicado en Hugging Face por el usuario Joker5800 que contiene artefactos en formato TFLite y ONNX, según las etiquetas del propio repositorio. El nombre sugiere un modelo orientado a tareas de pixelación o procesamiento de imagen a nivel de píxel, aunque la información pública disponible no confirma la tarea exacta ni la arquitectura interna. No se trata de un modelo de lenguaje: los formatos declarados (TFLite y ONNX) apuntan a inferencia en dispositivos y entornos de producción de visión por computador o transformación de imágenes.
 
 El repositorio tiene un tamaño de 0,4 GB y acumula 41 descargas con 0 likes desde su creación en octubre de 2026, lo que indica una adopción muy limitada y ausencia de validación comunitaria. No se ha publicado pipeline, licencia, idiomas soportados ni documentación técnica asociada en la información disponible.
 
@@ -41,7 +41,7 @@ Tampoco hay datos sobre el conjunto de entrenamiento, el número de tokens o mue
 - Prototipado rápido en móvil: cargar el artefacto TFLite en una app Android o iOS para evaluar si la tarea de procesamiento de imagen que realiza encaja con el producto, dado el tamaño reducido del repo (0,4 GB).
 - Integración en pipelines ONNX: usar el artefacto ONNX con ONNX Runtime para incorporar el modelo en un servicio backend existente sin depender del ecosistema TensorFlow.
 - Evaluación comparativa interna: servir como baseline experimental frente a modelos de visión propios, siempre que se valide primero la tarea real que ejecuta.
-- Investigación sobre artefactos de autor individual: analizar la estructura del repo para estudiar cómo se empaquetan modelos TFLite/ONNX en HuggingFace.
+- Investigación sobre artefactos de autor individual: analizar la estructura del repo para estudiar cómo se empaquetan modelos TFLite/ONNX en Hugging Face.
 - Pruebas de despliegue edge: medir latencia y consumo en dispositivos de gama baja aprovechando el formato TFLite.
 - Docencia y experimentación: usar el repo como ejemplo de publicación de artefactos ligeros, con la advertencia de que la licencia no está declarada y su uso comercial es incierto.
 
@@ -73,5 +73,5 @@ No disponible. No se conocen modelos comparables porque la tarea y la arquitectu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Joker5800/pixelify
+- Repositorio en Hugging Face: https://huggingface.co/Joker5800/pixelify
 - No se han encontrado papers, blogs, repositorios de código ni demos adicionales en la información disponible.

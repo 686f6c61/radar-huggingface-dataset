@@ -6,7 +6,7 @@ Qwen-Image-Edit-2509 es un modelo de edicion de imagenes condicionada por texto 
 
 Con aproximadamente 20.430 millones de parametros en formato safetensors y un repositorio de 57,7 GB, el modelo incorpora mejoras sustanciales en consistencia de edicion sobre su predecesor de agosto: preservacion de identidad facial en retratos y cambios de pose, consistencia de identidad de producto para carteleria comercial y edicion de texto que ahora permite modificar fuente, color y material ademas del contenido. Tambien anade soporte nativo de ControlNet con mapas de profundidad, bordes y keypoints.
 
-La relevancia actual del modelo radica en que combina edicion multi-imagen de alta consistencia con licencia Apache 2.0, lo que lo hace apto para uso comercial sin restricciones adicionales. Esta ficha describe la copia alojada por el usuario JAngel15 en HuggingFace, que replica el modelo oficial Qwen/Qwen-Image-Edit-2509.
+La relevancia actual del modelo radica en que combina edicion multi-imagen de alta consistencia con licencia Apache 2.0, lo que lo hace apto para uso comercial sin restricciones adicionales. Esta ficha describe la copia alojada por el usuario JAngel15 en Hugging Face, que replica el modelo oficial Qwen/Qwen-Image-Edit-2509.
 
 ## Especificaciones tecnicas
 
@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto / entradas | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen-Image-Edit-2509 (esta ficha) | ~20,4 mil millones | 1 a 3 imagenes de entrada, ControlNet nativo | Apache 2.0 | HuggingFace, ModelScope, Qwen Chat |
-| Qwen-Image-Edit (agosto 2025) | no disponible | Entrada de una imagen; sin soporte multi-imagen documentado | Apache 2.0 (segun model card del predecesor) | HuggingFace, Qwen Chat |
+| Qwen-Image-Edit-2509 (esta ficha) | ~20,4 mil millones | 1 a 3 imagenes de entrada, ControlNet nativo | Apache 2.0 | Hugging Face, ModelScope, Qwen Chat |
+| Qwen-Image-Edit (agosto 2025) | no disponible | Entrada de una imagen; sin soporte multi-imagen documentado | Apache 2.0 (segun model card del predecesor) | Hugging Face, Qwen Chat |
 | Alternativas de edicion de imagen de otros proveedores | no disponible | no disponible | no disponible | no disponible |
 
 La informacion proporcionada solo permite comparar con la version anterior del propio modelo. No se dispone de datos de benchmarks ni de especificaciones de modelos competidores en el material consultado.
@@ -84,12 +84,12 @@ La informacion proporcionada solo permite comparar con la version anterior del p
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta copia: https://huggingface.co/JAngel15/Qwen-Image-Edit-2509
+- Repositorio Hugging Face de esta copia: https://huggingface.co/JAngel15/Qwen-Image-Edit-2509
 - Repositorio oficial: https://huggingface.co/Qwen/Qwen-Image-Edit-2509
 - ModelScope: https://modelscope.cn/models/Qwen/Qwen-Image-Edit-2509
 - Tech report (PDF): https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-Image/Qwen_Image.pdf
 - Blog oficial: https://qwenlm.github.io/blog/qwen-image-edit/
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/Qwen/Qwen-Image-Edit
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/Qwen/Qwen-Image-Edit
 - Repositorio GitHub: https://github.com/QwenLM/Qwen-Image
 - Qwen Chat: https://chat.qwen.ai/
 - Discord: https://discord.gg/CV4E9rpNSD

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Apriel-15B-text-early-stop-run1 es un adaptador LoRA publicado por el usuario nmuendler en HuggingFace, entrenado sobre el modelo base ServiceNow-AI/Apriel-Nemotron-15b-Thinker. No se trata, por tanto, de un modelo completo con pesos independientes, sino de un conjunto de pesos de adaptacion de bajo rango (0,6 GB de repositorio) que debe cargarse junto al modelo base mediante la libreria PEFT. El nombre del repositorio sugiere un experimento de ajuste fino orientado a generacion de texto con parada temprana ("early stop") en la primera ejecucion, aunque esta interpretacion no esta confirmada en la model card.
+Apriel-15B-text-early-stop-run1 es un adaptador LoRA publicado por el usuario nmuendler en Hugging Face, entrenado sobre el modelo base ServiceNow-AI/Apriel-Nemotron-15b-Thinker. No se trata, por tanto, de un modelo completo con pesos independientes, sino de un conjunto de pesos de adaptacion de bajo rango (0,6 GB de repositorio) que debe cargarse junto al modelo base mediante la libreria PEFT. El nombre del repositorio sugiere un experimento de ajuste fino orientado a generacion de texto con parada temprana ("early stop") en la primera ejecucion, aunque esta interpretacion no esta confirmada en la model card.
 
-El problema que resuelve es acotado: sirve como artefacto de investigacion para aplicar una especializacion adicional sobre un modelo de razonamiento de aproximadamente 15 000 millones de parametros. Su relevancia actual es limitada, ya que no presenta descargas ni interacciones en el momento de la consulta, y la model card publicada es la plantilla por defecto de HuggingFace sin ninguna seccion cumplimentada.
+El problema que resuelve es acotado: sirve como artefacto de investigacion para aplicar una especializacion adicional sobre un modelo de razonamiento de aproximadamente 15 000 millones de parametros. Su relevancia actual es limitada, ya que no presenta descargas ni interacciones en el momento de la consulta, y la model card publicada es la plantilla por defecto de Hugging Face sin ninguna seccion cumplimentada.
 
 La informacion tecnica disponible es muy escasa: se desconocen los datos de entrenamiento, los hiperparametros, el idioma o los idiomas objetivo, la licencia y cualquier resultado de evaluacion. Cualquier uso en produccion requeriria validar primero el adaptador contra el modelo base y verificar la licencia heredada del modelo original.
 
@@ -80,7 +80,7 @@ Los datos de Qwen2.5-14B-Instruct y Gemma 3 12B IT proceden de informacion publi
 
 ## Limitaciones y advertencias
 
-- Model card vacia: el README es la plantilla por defecto de HuggingFace, con todos los campos marcados como "[More Information Needed]". No hay informacion verificable sobre uso previsto, datos de entrenamiento ni evaluacion.
+- Model card vacia: el README es la plantilla por defecto de Hugging Face, con todos los campos marcados como "[More Information Needed]". No hay informacion verificable sobre uso previsto, datos de entrenamiento ni evaluacion.
 - Licencia no declarada: sin licencia explicita no se puede asumir permiso de uso comercial. La licencia efectiva depende del modelo base ServiceNow-AI/Apriel-Nemotron-15b-Thinker, que debe consultarse por separado.
 - Sin adopcion ni validacion externa: cero descargas y cero interacciones implican ausencia de verificacion por parte de terceros.
 - Riesgo de alucinacion: no evaluado. Al ser un ajuste LoRA sobre un modelo de razonamiento, puede degradar el comportamiento del base si el dataset de ajuste era pequeno o poco diverso.
@@ -93,7 +93,7 @@ Los datos de Qwen2.5-14B-Instruct y Gemma 3 12B IT proceden de informacion publi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nmuendler/Apriel-15B-text-early-stop-run1
+- Modelo en Hugging Face: https://huggingface.co/nmuendler/Apriel-15B-text-early-stop-run1
 - Modelo base: https://huggingface.co/ServiceNow-AI/Apriel-Nemotron-15b-Thinker
 - Libreria PEFT: https://github.com/huggingface/peft
 - Referencia citada en la model card (Lacoste et al., 2019, sobre estimacion de emisiones): https://arxiv.org/abs/1910.09700

@@ -91,7 +91,7 @@ No se han publicado resultados de benchmarks en la información disponible para 
 
 ## Enlaces
 
-- Paquete en HuggingFace: https://huggingface.co/globalizator/gzwhisper-gigaam-multilingual-onnx-int8
+- Paquete en Hugging Face: https://huggingface.co/globalizator/gzwhisper-gigaam-multilingual-onnx-int8
 - Modelo base: https://huggingface.co/ai-sage/GigaAM-Multilingual
 - Repositorio GigaAM de Salute Developers: https://github.com/salute-developers/GigaAM/
 - Paper «GigaAM Multilingual: Foundation Model for Underrepresented Languages» (PDF): https://arxiv.org/pdf/2607.10371

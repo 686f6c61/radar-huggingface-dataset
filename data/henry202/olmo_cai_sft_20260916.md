@@ -2,9 +2,9 @@
 
 ## Resumen
 
-henry202/olmo_cai_sft_20260916 es un adaptador LoRA de ajuste supervisado (SFT) publicado en HuggingFace sobre el modelo base allenai/Olmo-3-7B-Instruct-SFT. No se trata de un modelo completo, sino de un conjunto de pesos de adaptador en formato PEFT que debe combinarse con el modelo base para poder ejecutarse. El repositorio ocupa 0,2 GB, lo que es coherente con un adaptador de bajo rango en lugar de un checkpoint completo de 7 000 millones de parametros.
+henry202/olmo_cai_sft_20260916 es un adaptador LoRA de ajuste supervisado (SFT) publicado en Hugging Face sobre el modelo base allenai/Olmo-3-7B-Instruct-SFT. No se trata de un modelo completo, sino de un conjunto de pesos de adaptador en formato PEFT que debe combinarse con el modelo base para poder ejecutarse. El repositorio ocupa 0,2 GB, lo que es coherente con un adaptador de bajo rango en lugar de un checkpoint completo de 7 000 millones de parametros.
 
-El autor figura como henry202 y la model card publicada es la plantilla por defecto de HuggingFace: todos los campos relevantes (desarrollador, financiacion, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros y evaluacion) aparecen como "[More Information Needed]". Esto significa que la practica totalidad de las especificaciones tecnicas no estan documentadas por el autor y deben tratarse como no disponibles.
+El autor figura como henry202 y la model card publicada es la plantilla por defecto de Hugging Face: todos los campos relevantes (desarrollador, financiacion, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros y evaluacion) aparecen como "[More Information Needed]". Esto significa que la practica totalidad de las especificaciones tecnicas no estan documentadas por el autor y deben tratarse como no disponibles.
 
 Su relevancia actual es limitada y de caracter experimental: cero descargas y cero likes en el momento de la consulta, ausencia de licencia declarada y falta de resultados de evaluacion. Resulta util unicamente como ejemplo de flujo de trabajo con TRL y PEFT sobre la familia OLMo 3 de Ai2, o como punto de partida para reproducir un SFT sobre dicho modelo base, nunca como modelo listo para produccion. La busqueda web realizada no devolvio ningun resultado relacionado con este modelo ni con su autor.
 
@@ -91,7 +91,7 @@ No se dispone de informacion suficiente para comparar este adaptador con alterna
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/henry202/olmo_cai_sft_20260916
+- Modelo en Hugging Face: https://huggingface.co/henry202/olmo_cai_sft_20260916
 - Modelo base: https://huggingface.co/allenai/Olmo-3-7B-Instruct-SFT
 - Articulo citado en la model card (Lacoste et al., 2019, estimacion de emisiones): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental citada: https://mlco2.github.io/impact

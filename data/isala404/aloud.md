@@ -81,7 +81,7 @@ No se dispone de información suficiente para comparar directamente el rendimien
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/isala404/aloud
+- Repositorio de Hugging Face: https://huggingface.co/isala404/aloud
 - Repositorio de Aloud en GitHub: https://github.com/isala/aloud
 - Perfil del autor en GitHub: https://github.com/isala404/
 - Proyecto Yui (asistente conversacional): https://github.com/isala404/yui

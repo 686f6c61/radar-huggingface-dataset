@@ -18,7 +18,7 @@ La relevancia de esta ficha es doble: por un lado, permite ejecutar un modelo AS
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | MLX affine con group size 64: expertos enrutados a 4 bits; proyecciones Mamba, atención, expertos compartidos, embeddings y cabeza de salida a 8 bits; torre de audio y proyector en bfloat16 (cómputo en float32); normas, router, parámetros A/D/dt de Mamba y convoluciones sin cuantizar |
 | Idiomas soportados | Inglés (en) |
-| Licencia | openmdw-1.1 (etiquetada como "other" en HuggingFace) |
+| Licencia | openmdw-1.1 (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | Safetensors en formato MLX (librería `mlx`, requiere `custom_code`) |
 
 ## Arquitectura y entrenamiento
@@ -86,10 +86,10 @@ No se han publicado en la información disponible resultados comparativos con ot
 
 | Modelo | Parámetros | Contexto | WER LibriSpeech test-clean | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (REAP64, mixed 4-bit, MLX) | No disponible (base 30B-A4B) | No disponible | 3,39 % | openmdw-1.1 | HuggingFace, solo Apple Silicon |
-| NVIDIA-Nemotron-3.5-Transcribe-30B-A4B (original) | 30B totales, 4B activos | No disponible | No disponible en la información | openmdw-1.1 | HuggingFace, requiere ~67,5 GB |
-| Whisper large-v3 | 1,55B | No disponible | No disponible en la información | MIT | HuggingFace, ampliamente soportado |
-| Parakeet TDT 0.6B v2 | 0,6B | No disponible | No disponible en la información | CC-BY-4.0 | HuggingFace, NVIDIA NeMo |
+| Este modelo (REAP64, mixed 4-bit, MLX) | No disponible (base 30B-A4B) | No disponible | 3,39 % | openmdw-1.1 | Hugging Face, solo Apple Silicon |
+| NVIDIA-Nemotron-3.5-Transcribe-30B-A4B (original) | 30B totales, 4B activos | No disponible | No disponible en la información | openmdw-1.1 | Hugging Face, requiere ~67,5 GB |
+| Whisper large-v3 | 1,55B | No disponible | No disponible en la información | MIT | Hugging Face, ampliamente soportado |
+| Parakeet TDT 0.6B v2 | 0,6B | No disponible | No disponible en la información | CC-BY-4.0 | Hugging Face, NVIDIA NeMo |
 
 La comparación con Whisper y Parakeet se ofrece únicamente como referencia de categoría; no se dispone de sus WER en la información proporcionada para contrastar cifras de forma directa.
 
@@ -100,14 +100,14 @@ La comparación con Whisper y Parakeet se ofrece únicamente como referencia de 
 - Poda sin reentrenamiento: al eliminar 64 de 128 expertos por capa sin destilar ni ajustar, el modelo puede degradarse de forma desigual en dominios poco representados en el audio de calibración (LibriSpeech, AMI y VoxPopuli).
 - Resultados no verificados: las métricas del model-index están marcadas como `verified: false` y proceden del propio autor.
 - Riesgo de alucinación: como todo modelo generativo de ASR, puede producir texto plausible no presente en el audio, especialmente con ruido, silencios largos o audio fuera de dominio.
-- Restricciones de licencia: la licencia openmdw-1.1 debe revisarse antes de uso comercial; el campo de HuggingFace figura como "other" y el autor no ofrece garantías adicionales.
+- Restricciones de licencia: la licencia openmdw-1.1 debe revisarse antes de uso comercial; el campo de Hugging Face figura como "other" y el autor no ofrece garantías adicionales.
 - Dependencia de hardware: solo funciona en Apple Silicon con 24 GB o más; no es desplegable en servidores con GPU NVIDIA, lo que limita su uso en producción a gran escala.
 - Mantenimiento: se trata de una compilación de un tercero, no oficial de NVIDIA; no hay compromiso de actualizaciones ni soporte.
 - Sesgos: no se documentan análisis de sesgo por acento, género o origen; el entrenamiento y la calibración se basan en corpus en inglés con dominios concretos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mchen04/Nemotron-3.5-Transcribe-30B-A4B-REAP64-mixed4bit-MLX
+- Modelo en Hugging Face: https://huggingface.co/mchen04/Nemotron-3.5-Transcribe-30B-A4B-REAP64-mixed4bit-MLX
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B
 - Paper de REAP: https://arxiv.org/abs/2510.13999
 - Repositorio MLX: https://github.com/ml-explore/mlx

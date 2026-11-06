@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Relative INT4 Research Prototype es un paquete de investigación publicado por el usuario mussolene en HuggingFace que explora una técnica de cuantización denominada "transferencia de pesos relativa por capas". La idea central es reparametrizar un mapa lineal original `y = x W + b` introduciendo `r = (x - c) / s`, de modo que `W_relative = diag(s) W` y `b_relative = b + c W`, preservando matemáticamente la función antes de cuantizar y aplicando después una corrección de bajo rango (`W_relative ~= W_INT4 + A B`) ajustada con activaciones de calibración.
+Relative INT4 Research Prototype es un paquete de investigación publicado por el usuario mussolene en Hugging Face que explora una técnica de cuantización denominada "transferencia de pesos relativa por capas". La idea central es reparametrizar un mapa lineal original `y = x W + b` introduciendo `r = (x - c) / s`, de modo que `W_relative = diag(s) W` y `b_relative = b + c W`, preservando matemáticamente la función antes de cuantizar y aplicando después una corrección de bajo rango (`W_relative ~= W_INT4 + A B`) ajustada con activaciones de calibración.
 
 El repositorio no contiene un LLM preentrenado ni un checkpoint compatible con `AutoModel` de Transformers. Se trata de un conjunto de checkpoints pequeños entrenados, pruebas sintéticas, un runtime de referencia en NumPy y un lector mínimo de safetensors. El propio autor lo califica explícitamente como un paquete de investigación, no como un motor de inferencia rápido ni como un framework de entrenamiento en bajo bit completado.
 
@@ -121,7 +121,7 @@ No se identifican modelos publicados comparables en la misma categoría dentro d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mussolene/relative-int4-research-prototype
+- Modelo en Hugging Face: https://huggingface.co/mussolene/relative-int4-research-prototype
 - Resultados y limitaciones del experimento Qwen3.5-4B: https://huggingface.co/mussolene/relative-int4-research-prototype/blob/main/qwen35_experiment/README.md
 - Estudio QAT nativo en C++ (W4A8): https://huggingface.co/mussolene/relative-int4-research-prototype/blob/main/native_qat_study.zip
 - arXiv 2402.02446: https://arxiv.org/abs/2402.02446

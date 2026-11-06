@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Nikhitha123/ppo-Pyramids es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno Pyramids de Unity ML-Agents. No se trata de un modelo de lenguaje ni de un modelo generativo: es una politica entrenada para resolver una tarea concreta de simulacion, exportada para su ejecucion dentro del ecosistema Unity ML-Agents. El repositorio lo publica el usuario Nikhitha123 en HuggingFace con la libreria ml-agents y el pipeline reinforcement-learning.
+Nikhitha123/ppo-Pyramids es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno Pyramids de Unity ML-Agents. No se trata de un modelo de lenguaje ni de un modelo generativo: es una politica entrenada para resolver una tarea concreta de simulacion, exportada para su ejecucion dentro del ecosistema Unity ML-Agents. El repositorio lo publica el usuario Nikhitha123 en Hugging Face con la libreria ml-agents y el pipeline reinforcement-learning.
 
-El artefacto principal es un fichero ONNX (Pyramids.onnx) que contiene la red de politica del agente y que puede cargarse tanto en Unity como en el visor web oficial del Space unity/ML-Agents-Pyramids. El repositorio no incluye model card extendida con hiperparametros, numero de pasos de entrenamiento, arquitectura de red ni resultados de evaluacion, y la ficha de HuggingFace registra 0 descargas y 0 likes, por lo que se trata de una publicacion sin validacion externa.
+El artefacto principal es un fichero ONNX (Pyramids.onnx) que contiene la red de politica del agente y que puede cargarse tanto en Unity como en el visor web oficial del Space unity/ML-Agents-Pyramids. El repositorio no incluye model card extendida con hiperparametros, numero de pasos de entrenamiento, arquitectura de red ni resultados de evaluacion, y la ficha de Hugging Face registra 0 descargas y 0 likes, por lo que se trata de una publicacion sin validacion externa.
 
 Su relevancia es limitada y de nicho: sirve como ejemplo reproducible de un agente PPO de ML-Agents, como base para comparar curvas de entrenamiento en TensorBoard o como punto de partida para experimentos de transferencia en entornos Unity. No debe confundirse con un modelo fundacional ni usarse como componente de un sistema de lenguaje.
 
@@ -20,7 +20,7 @@ Su relevancia es limitada y de nicho: sirve como ejemplo reproducible de un agen
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
 | Formato de pesos | ONNX (fichero Pyramids.onnx) |
-| Tamano del repositorio | 0.0 GB segun la ficha de HuggingFace |
+| Tamano del repositorio | 0.0 GB segun la ficha de Hugging Face |
 | Libreria | ml-agents |
 | Pipeline | reinforcement-learning |
 | Entorno de entrenamiento | ML-Agents-Pyramids (Unity ML-Agents) |
@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Tipo | Entorno | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Nikhitha123/ppo-Pyramids | Agente PPO (ML-Agents) | Pyramids | no disponible | no aplica | no disponible | HuggingFace, 0 descargas, 0 likes |
+| Nikhitha123/ppo-Pyramids | Agente PPO (ML-Agents) | Pyramids | no disponible | no aplica | no disponible | Hugging Face, 0 descargas, 0 likes |
 | Agentes de ejemplo de Unity ML-Agents | Agentes PPO/SAC oficiales | Varios entornos de ejemplo | no disponible | no aplica | Licencia del proyecto ML-Agents | Repositorio oficial de Unity Technologies |
-| Otros agentes ppo-* de la comunidad en HuggingFace | Agentes PPO (ML-Agents) | Sus entornos respectivos | no disponible | no aplica | Variable, a menudo no especificada | HuggingFace |
+| Otros agentes ppo-* de la comunidad en Hugging Face | Agentes PPO (ML-Agents) | Sus entornos respectivos | no disponible | no aplica | Variable, a menudo no especificada | Hugging Face |
 
 No se dispone de datos de rendimiento que permitan una comparacion cuantitativa entre estas alternativas.
 
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento que permitan una comparacion cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nikhitha123/ppo-Pyramids
+- Modelo en Hugging Face: https://huggingface.co/Nikhitha123/ppo-Pyramids
 - Repositorio de Unity ML-Agents: https://github.com/Unity-Technologies/ml-agents
-- Documentacion de ml-agents en HuggingFace: https://github.com/huggingface/ml-agents#get-started
+- Documentacion de ml-agents en Hugging Face: https://github.com/huggingface/ml-agents#get-started
 - Demo en navegador (Space oficial): https://huggingface.co/spaces/unity/ML-Agents-Pyramids

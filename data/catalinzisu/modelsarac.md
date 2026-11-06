@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Catalinzisu/modelsarac` es un ajuste fino (fine-tune) del modelo base `HuggingFaceTB/SmolLM2-135M-Instruct`, desarrollado por el usuario Catalinzisu. Se trata de un modelo de generación de texto conversacional, entrenado mediante aprendizaje supervisado (SFT) utilizando la librería TRL de HuggingFace. Con 134,5 millones de parámetros, es un modelo de tamaño reducido, orientado a tareas de generación de texto con instrucciones.
+El modelo `Catalinzisu/modelsarac` es un ajuste fino (fine-tune) del modelo base `HuggingFaceTB/SmolLM2-135M-Instruct`, desarrollado por el usuario Catalinzisu. Se trata de un modelo de generación de texto conversacional, entrenado mediante aprendizaje supervisado (SFT) utilizando la librería TRL de Hugging Face. Con 134,5 millones de parámetros, es un modelo de tamaño reducido, orientado a tareas de generación de texto con instrucciones.
 
 La relevancia de este modelo radica en su simplicidad y bajo coste computacional, lo que lo hace accesible para entornos con recursos limitados. Sin embargo, la información pública disponible es muy escasa: no se especifican detalles sobre el dataset de entrenamiento, la licencia, los idiomas soportados ni la longitud de contexto. Tampoco se han publicado resultados de benchmarks, por lo que su rendimiento real no puede evaluarse objetivamente. A pesar de ello, al estar basado en SmolLM2, hereda la arquitectura transformer decoder-only de dicha familia, aunque no se proporcionan especificaciones técnicas adicionales.
 
@@ -67,4 +67,4 @@ No se dispone de información sobre modelos comparables. El único punto de refe
 
 ## Enlaces
 
-- [HuggingFace: Catalinzisu/modelsarac](https://huggingface.co/Catalinzisu/modelsarac)
+- [Hugging Face: Catalinzisu/modelsarac](https://huggingface.co/Catalinzisu/modelsarac)

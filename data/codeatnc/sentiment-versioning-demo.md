@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `CodeATNC/sentiment-versioning-demo` es un clasificador de texto binario obtenido mediante fine-tuning de `distilbert-base-uncased`, un transformer encoder de 66.955.010 parametros (6 capas, 768 dimensiones ocultas y 12 cabezas de atencion, segun la arquitectura publicada del modelo base). Lo publica el usuario CodeATNC en HuggingFace y su unico artefacto verificable es un checkpoint de clasificacion serializado en `safetensors`, con un repositorio de 0,8 GB y una licencia Apache 2.0.
+El modelo `CodeATNC/sentiment-versioning-demo` es un clasificador de texto binario obtenido mediante fine-tuning de `distilbert-base-uncased`, un transformer encoder de 66.955.010 parametros (6 capas, 768 dimensiones ocultas y 12 cabezas de atencion, segun la arquitectura publicada del modelo base). Lo publica el usuario CodeATNC en Hugging Face y su unico artefacto verificable es un checkpoint de clasificacion serializado en `safetensors`, con un repositorio de 0,8 GB y una licencia Apache 2.0.
 
 Su relevancia no viene de capacidades nuevas, sino de que sirve como ejemplo reproducible de un flujo de trabajo con `Trainer`: la model card documenta hiperparametros concretos (learning rate 2e-05, batch de entrenamiento 16, batch de evaluacion 32, semilla 42, optimizador AdamW con `fused=True` y scheduler lineal) y un unico ciclo de entrenamiento de 1 epoca y 125 pasos, con una perdida de validacion de 0,3634 y una exactitud de 0,856. Todo el entrenamiento se hizo con 2.000 ejemplos aproximadamente, segun se deduce del producto pasos x batch.
 
@@ -35,7 +35,7 @@ El procedimiento de entrenamiento esta documentado parcialmente en la model card
 - Clasificacion de texto binaria orientada a analisis de sentimiento, con salida de logits y probabilidades por clase.
 - Extraccion de representaciones contextuales de frases de hasta 512 tokens, reutilizables para tareas derivadas (por ejemplo, como extractor de embeddings con `text-embeddings-inference`, etiqueta presente en el repositorio).
 - Inferencia en CPU con latencia baja gracias a los 67 M de parametros, sin necesidad de GPU.
-- Compatibilidad con la API `pipeline("text-classification")` de Transformers y con los `endpoints_compatible` de HuggingFace.
+- Compatibilidad con la API `pipeline("text-classification")` de Transformers y con los `endpoints_compatible` de Hugging Face.
 - No dispone de generacion de texto, razonamiento multi-paso, matemáticas, codigo, vision ni audio.
 - No soporta tool calling, function calling ni uso como agente: la cabecera de clasificacion no produce texto libre.
 - No hay capacidades multilingues documentadas; el vocabulario `uncased` del modelo base esta sesgado al ingles.
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La ex
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente; una RTX 3060, RTX 4090, T4, L4, A10G o A100 lo ejecutan sin cuello de botella. No se necesita H100 ni memoria de 40-80 GB.
 - Cabe en GPU de consumo: si, en cualquier GPU de consumo de los ultimos diez anos e incluso en iGPU con varios GB de memoria compartida.
 - Inferencia en CPU: totalmente viable (el propio entrenamiento se hizo con PyTorch 2.14.0+cpu); es el escenario recomendado para despliegues de bajo coste y modelos de 67 M de parametros.
-- Opciones de despliegue: `transformers` con `pipeline`, HuggingFace Text Embeddings Inference (etiqueta `text-embeddings-inference` en el repositorio), HuggingFace Inference Endpoints (`endpoints_compatible`), ONNX Runtime tras conversion, y exportacion a GGUF para llama.cpp si se convierte el encoder manualmente. vLLM y TGI no son el objetivo natural de este modelo porque no es generativo.
+- Opciones de despliegue: `transformers` con `pipeline`, Hugging Face Text Embeddings Inference (etiqueta `text-embeddings-inference` en el repositorio), Hugging Face Inference Endpoints (`endpoints_compatible`), ONNX Runtime tras conversion, y exportacion a GGUF para llama.cpp si se convierte el encoder manualmente. vLLM y TGI no son el objetivo natural de este modelo porque no es generativo.
 - Latencia y throughput: no disponibles. No hay mediciones publicadas de latencia por peticion ni de documentos por segundo.
 
 ## Comparativa con modelos similares
@@ -82,10 +82,10 @@ La comparacion se limita a parametros, contexto, licencia y disponibilidad, ya q
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento en benchmarks |
 |---|---|---|---|---|---|
-| CodeATNC/sentiment-versioning-demo | 66.955.010 | 512 tokens | apache-2.0 | HuggingFace, 0 descargas y 0 likes en el momento del analisis | no disponible (solo exactitud de validacion 0,856 sobre dataset no documentado) |
-| distilbert/distilbert-base-uncased-finetuned-sst-2-english | 66,96 M (orden de magnitud, encoder de 6 capas) | 512 tokens | apache-2.0 | HuggingFace, ampliamente utilizado | no disponible en la informacion proporcionada |
-| roberta-base (fine-tuned para clasificacion) | 125 M (orden de magnitud) | 512 tokens | mit | HuggingFace | no disponible en la informacion proporcionada |
-| bert-base-uncased (fine-tuned para clasificacion) | 110 M (orden de magnitud) | 512 tokens | apache-2.0 | HuggingFace | no disponible en la informacion proporcionada |
+| CodeATNC/sentiment-versioning-demo | 66.955.010 | 512 tokens | apache-2.0 | Hugging Face, 0 descargas y 0 likes en el momento del analisis | no disponible (solo exactitud de validacion 0,856 sobre dataset no documentado) |
+| distilbert/distilbert-base-uncased-finetuned-sst-2-english | 66,96 M (orden de magnitud, encoder de 6 capas) | 512 tokens | apache-2.0 | Hugging Face, ampliamente utilizado | no disponible en la informacion proporcionada |
+| roberta-base (fine-tuned para clasificacion) | 125 M (orden de magnitud) | 512 tokens | mit | Hugging Face | no disponible en la informacion proporcionada |
+| bert-base-uncased (fine-tuned para clasificacion) | 110 M (orden de magnitud) | 512 tokens | apache-2.0 | Hugging Face | no disponible en la informacion proporcionada |
 
 El diferenciador de este repositorio no es el rendimiento, sino el hecho de estar pensado como demostracion de versionado: frente a los checkpoints anteriores, aqui lo relevante es el registro de hiperparametros y de una unica metrica de validacion, no una validacion externa.
 
@@ -105,7 +105,7 @@ El diferenciador de este repositorio no es el rendimiento, sino el hecho de esta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CodeATNC/sentiment-versioning-demo
+- Modelo en Hugging Face: https://huggingface.co/CodeATNC/sentiment-versioning-demo
 - Modelo base: https://huggingface.co/distilbert-base-uncased
 - Repositorio del modelo base en GitHub: https://github.com/huggingface/transformers
 - Paper de DistilBERT (Sanh et al., 2019): https://arxiv.org/abs/1910.01108

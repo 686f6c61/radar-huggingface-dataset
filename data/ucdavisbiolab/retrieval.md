@@ -38,7 +38,7 @@ El archivo `model.safetensors` es un checkpoint de inicializacion valido para pr
 
 - **Investigacion academica en retrieval visual**: el modelo puede servir como base para experimentos de recuperacion de imagenes con Flickr30k, siguiendo la guia de evaluacion de la model card (reportar metricas en al menos tres semillas e incluir un baseline de capacidad equivalente).
 - **Depuracion de pipelines de entrenamiento**: al ser un checkpoint de inicializacion minimo, permite verificar que el script `pipeline.py` ejecuta correctamente el bucle de entrenamiento, la serializacion de pesos y la carga de configuracion.
-- **Desarrollo de adaptadores de carga**: dado que la implementacion es personalizada, el modelo sirve para desarrollar y probar adaptadores que permitan cargarlo con APIs genericas de HuggingFace.
+- **Desarrollo de adaptadores de carga**: dado que la implementacion es personalizada, el modelo sirve para desarrollar y probar adaptadores que permitan cargarlo con APIs genericas de Hugging Face.
 - **Estudio de arquitecturas MobileViT con atencion lineal**: investigadores pueden analizar el comportamiento de la atencion lineal y la fusion bilineal en tareas de retrieval, comparando con variantes con atencion estandar.
 - **Reproducibilidad de experimentos**: la configuracion documentada (RMSProp, schedule exponencial) permite reproducir recetas de entrenamiento y comparar resultados entre laboratorios.
 - **Ensenanza y formacion**: por su tamano minimo, es adecuado para demostrar conceptos de entrenamiento de modelos de retrieval en entornos educativos sin necesidad de hardware especializado.
@@ -70,8 +70,8 @@ No disponible. No existen modelos comparables publicados con esta arquitectura e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ucdavisbiolab/retrieval
-- Perfil del autor en HuggingFace: https://huggingface.co/ucdavisbiolab/models
+- Repositorio Hugging Face: https://huggingface.co/ucdavisbiolab/retrieval
+- Perfil del autor en Hugging Face: https://huggingface.co/ucdavisbiolab/models
 - Aggie AI (ecosistema de IA de UC Davis): https://iet.ucdavis.edu/aggie-ai
 - VIALab (visualizacion y analitica en UC Davis): https://vialab.tech/
 - LARA (Laboratorio de IA, Robotica y Automatizacion en UC Davis): https://lara-soltani.com/

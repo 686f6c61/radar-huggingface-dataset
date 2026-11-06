@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`semsimula-ladder-owt-d384-l2-attention-potential` es un modelo de lenguaje de investigación publicado por el usuario dimitarpg13 en HuggingFace, integrado en la "SemSimula mechanism ladder": una colección de cinco (más dos de control) modelos entrenados sobre OpenWebText con idéntico presupuesto de tokens, que se diferencian entre sí en exactamente un mecanismo. El objetivo no es ofrecer un modelo de producción, sino medir el coste en perplejidad de cada componente arquitectónico mediante comparación controlada. Este brazo concreto elimina la conservatividad: mantiene la atención enrutada por ξ, pero la introduce como potencial escalar, de modo que la fuerza resultante sigue siendo un gradiente.
+`semsimula-ladder-owt-d384-l2-attention-potential` es un modelo de lenguaje de investigación publicado por el usuario dimitarpg13 en Hugging Face, integrado en la "SemSimula mechanism ladder": una colección de cinco (más dos de control) modelos entrenados sobre OpenWebText con idéntico presupuesto de tokens, que se diferencian entre sí en exactamente un mecanismo. El objetivo no es ofrecer un modelo de producción, sino medir el coste en perplejidad de cada componente arquitectónico mediante comparación controlada. Este brazo concreto elimina la conservatividad: mantiene la atención enrutada por ξ, pero la introduce como potencial escalar, de modo que la fuerza resultante sigue siendo un gradiente.
 
 La arquitectura declarada es Fock-PARFLM v2.1, un modelo de espacio de Fock con registros virtuales y campo de intercambio, derivado de mecánica lagrangiana y formulado como modelo basado en energía. Tiene 77.360.081 parámetros, dimensión oculta d=384 y L=2 capas, con un bloque de contexto de 512 tokens. Se entrenó con 532.480.000 tokens (32.500 pasos × 32 × 512) sobre Skylion007/openwebtext, con tasa de aprendizaje 0,0012.
 
@@ -113,17 +113,17 @@ Comparativa dentro de la propia escalera (mismo autor, mismo corpus, mismos toke
 
 | Modelo | Parametros | Contexto | PPL (OpenWebText val., bloque 512) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| attention_potential (este) | 77,36 M | 512 | 80,90 | cc-by-4.0 | HuggingFace, pesos PyTorch |
-| gpt2-matched (baseline de la escalera) | no disponible | 512 | 49,81 | no disponible | HuggingFace |
-| attention | no disponible | 512 | 63,51 | no disponible | HuggingFace |
-| none | no disponible | 512 | 66,98 | no disponible | HuggingFace |
-| none-norc | no disponible | 512 | 87,93 | no disponible | HuggingFace |
+| attention_potential (este) | 77,36 M | 512 | 80,90 | cc-by-4.0 | Hugging Face, pesos PyTorch |
+| gpt2-matched (baseline de la escalera) | no disponible | 512 | 49,81 | no disponible | Hugging Face |
+| attention | no disponible | 512 | 63,51 | no disponible | Hugging Face |
+| none | no disponible | 512 | 66,98 | no disponible | Hugging Face |
+| none-norc | no disponible | 512 | 87,93 | no disponible | Hugging Face |
 
 Referencia externa de la misma categoría de tamaño:
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| GPT-2 small (referencia de la familia GPT-2) | 124 M | 1024 | MIT | Ampliamente disponible (HuggingFace, GGUF, integraciones en vLLM/llama.cpp/Ollama) |
+| GPT-2 small (referencia de la familia GPT-2) | 124 M | 1024 | MIT | Ampliamente disponible (Hugging Face, GGUF, integraciones en vLLM/llama.cpp/Ollama) |
 
 No se dispone de comparativas publicadas frente a otras arquitecturas no transformer de tamaño similar (por ejemplo SSM o híbridas) en la información proporcionada.
 
@@ -144,7 +144,7 @@ No se dispone de comparativas publicadas frente a otras arquitecturas no transfo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dimitarpg13/semsimula-ladder-owt-d384-l2-attention-potential
+- Modelo en Hugging Face: https://huggingface.co/dimitarpg13/semsimula-ladder-owt-d384-l2-attention-potential
 - Brazo baseline GPT-2 emparejado: https://huggingface.co/dimitarpg13/semsimula-ladder-owt-d384-l2-gpt2-matched
 - Brazo "attention" (campo de intercambio activo): https://huggingface.co/dimitarpg13/semsimula-ladder-owt-d384-l2-attention
 - Brazo "none" (sin campo de intercambio): https://huggingface.co/dimitarpg13/semsimula-ladder-owt-d384-l2-none

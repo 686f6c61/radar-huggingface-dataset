@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ruizhang1993/beit-experiment` es un repositorio experimental publicado en HuggingFace por el usuario ruizhang1993 que contiene una implementación propia de una arquitectura Beit orientada a tareas de generación. No se trata de un modelo entrenado ni evaluado, sino de un esqueleto de código con una configuración de arquitectura y un checkpoint de inicialización pensado para pruebas de humo ("smoke tests") antes de lanzar un entrenamiento completo. La model card lo declara explícitamente: el archivo `model.safetensors` es un punto de partida válido pero no un checkpoint entrenado con benchmarks.
+`ruizhang1993/beit-experiment` es un repositorio experimental publicado en Hugging Face por el usuario ruizhang1993 que contiene una implementación propia de una arquitectura Beit orientada a tareas de generación. No se trata de un modelo entrenado ni evaluado, sino de un esqueleto de código con una configuración de arquitectura y un checkpoint de inicialización pensado para pruebas de humo ("smoke tests") antes de lanzar un entrenamiento completo. La model card lo declara explícitamente: el archivo `model.safetensors` es un punto de partida válido pero no un checkpoint entrenado con benchmarks.
 
 La relevancia de esta ficha es acotada: el repositorio tiene 0 descargas y 0 likes en el momento de la consulta, un tamaño de repositorio de 0.0 GB y un total de 24.832 parámetros según el archivo safetensors. Se trata, por tanto, de un artefacto de muy bajo interés práctico para producción, pero útil como referencia si se quiere inspeccionar una implementación personalizada de Beit con atención lineal, fusión tensorial, activación swish y normalización RMSNorm.
 
@@ -21,7 +21,7 @@ En consecuencia, esta ficha documenta fundamentalmente un estado de repositorio 
 | Licencia | MIT |
 | Formato de pesos | safetensors |
 
-Datos adicionales declarados en la model card: escala "base", atencion "linear", fusion "tensor fusion", activacion "swish", normalizacion "rmsnorm". El `pipeline` de HuggingFace figura como no disponible y las etiquetas del repositorio son `safetensors`, `beit`, `pytorch`, `generation`, `license:mit` y `region:us`.
+Datos adicionales declarados en la model card: escala "base", atencion "linear", fusion "tensor fusion", activacion "swish", normalizacion "rmsnorm". El `pipeline` de Hugging Face figura como no disponible y las etiquetas del repositorio son `safetensors`, `beit`, `pytorch`, `generation`, `license:mit` y `region:us`.
 
 ## Arquitectura y entrenamiento
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ruizhang1993/beit-experiment | 24.832 (inicializacion) | no disponible | sin benchmarks publicados | MIT | HuggingFace, 0 descargas |
+| ruizhang1993/beit-experiment | 24.832 (inicializacion) | no disponible | sin benchmarks publicados | MIT | Hugging Face, 0 descargas |
 | Modelos Beit de referencia (por ejemplo, variantes oficiales de BEiT para vision) | no disponible en esta busqueda | no disponible | no disponible | no disponible | no disponible |
 | Alternativas comparables de generacion | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -83,7 +83,7 @@ No se dispone de modelos comparables con datos verificables en la informacion pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ruizhang1993/beit-experiment
+- Modelo en Hugging Face: https://huggingface.co/ruizhang1993/beit-experiment
 - Archivo `pipeline.py` (artefacto principal del repositorio, accesible desde la pestana de archivos del enlace anterior)
 - Archivo `config.json` (configuracion de arquitectura)
 - Archivo `training_args.json` (receta de experimento por defecto)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un adaptador PEFT (LoRA/DoRA) denominado `xnli_en_and_ur_5000_percentage_1_40_DoRA_llama-3.2`, publicado por el usuario de HuggingFace WijewardhanaNT y construido sobre el modelo base `meta-llama/Llama-3.2-3B`. Por la nomenclatura del identificador, se trata de un ajuste fino orientado a la tarea XNLI (inferencia de lenguaje natural entre pares de frases) sobre un subconjunto de 5.000 ejemplos en ingles y urdu, con alguna configuracion de entrenamiento codificada como "1_40" cuyo significado no se documenta en la model card. El repositorio ocupa 0,4 GB y contiene exclusivamente los pesos del adaptador, no el modelo completo.
+Este repositorio contiene un adaptador PEFT (LoRA/DoRA) denominado `xnli_en_and_ur_5000_percentage_1_40_DoRA_llama-3.2`, publicado por el usuario de Hugging Face WijewardhanaNT y construido sobre el modelo base `meta-llama/Llama-3.2-3B`. Por la nomenclatura del identificador, se trata de un ajuste fino orientado a la tarea XNLI (inferencia de lenguaje natural entre pares de frases) sobre un subconjunto de 5.000 ejemplos en ingles y urdu, con alguna configuracion de entrenamiento codificada como "1_40" cuyo significado no se documenta en la model card. El repositorio ocupa 0,4 GB y contiene exclusivamente los pesos del adaptador, no el modelo completo.
 
 El modelo base Llama 3.2 3B es un transformer decoder-only de 3.210 millones de parametros, con atencion de consultas agrupadas (GQA) y una ventana de contexto de hasta 128.000 tokens, desarrollado por Meta. El valor practico de este adaptador reside en que permite reutilizar esa arquitectura para clasificacion de relaciones textuales en un par de idiomas poco cubiertos por los modelos generalistas, a un coste de almacenamiento y de computo muy reducido en comparacion con un ajuste fino completo.
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (DoRA sobre Llama 3.2 3B) | no disponible (adaptador) | no disponible (base: 128.000 tokens) | NLI ingles-urdu (XNLI) | no disponible | Repositorio HuggingFace, 0 descargas, sin evaluacion publicada |
+| Este adaptador (DoRA sobre Llama 3.2 3B) | no disponible (adaptador) | no disponible (base: 128.000 tokens) | NLI ingles-urdu (XNLI) | no disponible | Repositorio Hugging Face, 0 descargas, sin evaluacion publicada |
 | meta-llama/Llama-3.2-3B (modelo base) | 3.210 M | 128.000 tokens | Generacion de texto general, 8 idiomas | Llama 3.2 Community License | Ampliamente disponible y desplegado |
-| WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_40_AdaLoRA | no disponible (adaptador) | no disponible | NLI ingles-urdu (XNLI) | no disponible | Repositorio HuggingFace, variante con AdaLoRA del mismo autor |
-| WijewardhanaNT/xnli_en_and_hi_5000_percentage_1_40_DoRA | no disponible (adaptador) | no disponible | NLI ingles-hindi (XNLI) | no disponible | Repositorio HuggingFace, variante con hindi del mismo autor |
+| WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_40_AdaLoRA | no disponible (adaptador) | no disponible | NLI ingles-urdu (XNLI) | no disponible | Repositorio Hugging Face, variante con AdaLoRA del mismo autor |
+| WijewardhanaNT/xnli_en_and_hi_5000_percentage_1_40_DoRA | no disponible (adaptador) | no disponible | NLI ingles-hindi (XNLI) | no disponible | Repositorio Hugging Face, variante con hindi del mismo autor |
 
 No se dispone de datos de rendimiento que permitan comparar objetivamente este adaptador con alternativas funcionalmente equivalentes, como clasificadores NLI multilingues dedicados (por ejemplo, modelos basados en XLM-R). La comparacion queda limitada a parametros estructurales, licencia y disponibilidad.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento que permitan comparar objetivamente este a
 - Sesgos y alucinacion: no se ha realizado ninguna evaluacion de sesgos ni de tasas de alucinacion. En tareas NLI, un error tipico es la prediccion de implicacion ante pares lexicamente similares pero semanticamente contradictorios.
 - Ambito restringido: esta pensado para pares de frases (premisa-hipotesis); no debe usarse como asistente conversacional ni como generador fiable sin un reajuste previo.
 - Adopcion nula: 0 descargas y 0 "likes" implican ausencia de validacion por parte de la comunidad y de informes de errores.
-- Artefactos en los metadatos: la etiqueta `arxiv:1910.09700` corresponde a la calculadora de impacto de carbono (Lacoste et al.) incluida en la plantilla de HuggingFace, no a un articulo que describa el modelo. Las fechas de creacion y actualizacion registradas (2026) son las que figuran en el repositorio.
+- Artefactos en los metadatos: la etiqueta `arxiv:1910.09700` corresponde a la calculadora de impacto de carbono (Lacoste et al.) incluida en la plantilla de Hugging Face, no a un articulo que describa el modelo. Las fechas de creacion y actualizacion registradas (2026) son las que figuran en el repositorio.
 
 ## Enlaces
 

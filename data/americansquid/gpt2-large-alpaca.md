@@ -76,10 +76,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Ajuste | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| americansquid/gpt2-large-alpaca | 774M | 1024 | SFT con LoRA (Alpaca) | MIT | Publico en HuggingFace |
-| openai-community/gpt2-large | 774M | 1024 | Sin ajuste por instrucciones | MIT | Publico en HuggingFace |
-| openai-community/gpt2-xl | 1,5B | 1024 | Sin ajuste por instrucciones | MIT | Publico en HuggingFace |
-| openai-community/gpt2-medium | 355M | 1024 | Sin ajuste por instrucciones | MIT | Publico en HuggingFace |
+| americansquid/gpt2-large-alpaca | 774M | 1024 | SFT con LoRA (Alpaca) | MIT | Publico en Hugging Face |
+| openai-community/gpt2-large | 774M | 1024 | Sin ajuste por instrucciones | MIT | Publico en Hugging Face |
+| openai-community/gpt2-xl | 1,5B | 1024 | Sin ajuste por instrucciones | MIT | Publico en Hugging Face |
+| openai-community/gpt2-medium | 355M | 1024 | Sin ajuste por instrucciones | MIT | Publico en Hugging Face |
 
 Como referencia de categoria superior, los modelos Alpaca basados en LLaMA de 7B (por ejemplo, las variantes LoRA de tatsu-lab) superan ampliamente a este modelo en seguimiento de instrucciones y calidad de generacion, pero requieren del orden de 14 GB de VRAM en FP16 y tienen condiciones de licencia distintas (LLaMA original no es MIT). No se dispone de una comparacion cuantitativa publicada entre `gpt2-large-alpaca` y estas alternativas.
 
@@ -98,6 +98,6 @@ Como referencia de categoria superior, los modelos Alpaca basados en LLaMA de 7B
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/americansquid/gpt2-large-alpaca
+- Modelo en Hugging Face: https://huggingface.co/americansquid/gpt2-large-alpaca
 - Modelo base: https://huggingface.co/openai-community/gpt2-large
 - Dataset de ajuste: https://huggingface.co/datasets/yahma/alpaca-cleaned

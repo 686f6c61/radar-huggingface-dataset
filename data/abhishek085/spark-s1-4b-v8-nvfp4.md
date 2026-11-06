@@ -77,7 +77,7 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks est
 
 | Modelo | Parametros | Contexto | JevBench-hard | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `spark-s1-4b-v8-nvfp4` | 3,07 B (safetensors) | no disponible | 0,586 | apache-2.0 | publicado en HuggingFace |
+| `spark-s1-4b-v8-nvfp4` | 3,07 B (safetensors) | no disponible | 0,586 | apache-2.0 | publicado en Hugging Face |
 | `spark-s1-4b-v6-nvfp4` | no disponible | no disponible | 0,622 | no disponible en la informacion | publicado (release anterior) |
 | Build bf16 de v8 | no disponible | no disponible | 0,595 | no disponible | no publicado |
 | Qwen/Qwen3.5-4B (backbone) | no disponible | no disponible | no aplica (no es un modelo de decision) | no disponible en la informacion | publicado |
@@ -100,7 +100,7 @@ No se dispone de datos de otros modelos de decision comparables, como Jev de Typ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abhishek085/spark-s1-4b-v8-nvfp4
+- Modelo en Hugging Face: https://huggingface.co/abhishek085/spark-s1-4b-v8-nvfp4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Documentacion de releases anteriores (v3, v4, v5, v6) y CHANGELOG: https://github.com/abhishek085/open-spark-jev/blob/main/docs/MODELS.md
 - Repositorio del proyecto: https://github.com/abhishek085/open-spark-jev

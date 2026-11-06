@@ -19,7 +19,7 @@ Es relevante ahora porque documenta un patron habitual en competiciones de NLP: 
 | Tipos de cuantizacion | no disponible (los pesos se distribuyen como `state_dict` de PyTorch en `best_NoPnx_NP.pt`) |
 | Idiomas soportados | arabe (`ar`) |
 | Licencia | MIT (heredada del modelo base) |
-| Formato de pesos | PyTorch `state_dict` (`.pt`); no es un checkpoint en formato HuggingFace |
+| Formato de pesos | PyTorch `state_dict` (`.pt`); no es un checkpoint en formato Hugging Face |
 | Tarea | Segmentacion de texto arabe / `token-classification`, subtares NoPnx-NP |
 | Modelo base | `MostafaMaroof/Naqta` |
 | Rol en el sistema | Miembro votante de un decodificador estructural MEMM ajustado con OOF sobre 7 miembros |
@@ -84,9 +84,9 @@ La informacion proporcionada no incluye datos de rendimiento, contexto o licenci
 
 | Modelo | Tipo | Parametros | Macro-F1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `NAMAA-Space/araseg-e70-naqta-nopnx-np` | Miembro de ensemble (encoder, token-classification) | 560 M | no disponible en solitario | MIT | Pesos `state_dict` en HuggingFace |
-| `MostafaMaroof/Naqta` | Modelo base | no disponible | no disponible | no disponible | HuggingFace |
-| Sistema `NAMAA-Space/araseg-2026` | Ensemble de 7 miembros + MEMM | no disponible | 86,49 (practice test) / 87,0 (ciego) | no disponible | Coleccion HuggingFace y repositorio de codigo |
+| `NAMAA-Space/araseg-e70-naqta-nopnx-np` | Miembro de ensemble (encoder, token-classification) | 560 M | no disponible en solitario | MIT | Pesos `state_dict` en Hugging Face |
+| `MostafaMaroof/Naqta` | Modelo base | no disponible | no disponible | no disponible | Hugging Face |
+| Sistema `NAMAA-Space/araseg-2026` | Ensemble de 7 miembros + MEMM | no disponible | 86,49 (practice test) / 87,0 (ciego) | no disponible | Coleccion Hugging Face y repositorio de codigo |
 
 Otros segmentadores arabes de referencia (herramientas morfologicas tipo Farasa o CAMeL Tools) no aparecen en la informacion disponible; sus cifras comparativas quedan como no disponibles.
 
@@ -106,7 +106,7 @@ Otros segmentadores arabes de referencia (herramientas morfologicas tipo Farasa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NAMAA-Space/araseg-e70-naqta-nopnx-np
+- Modelo en Hugging Face: https://huggingface.co/NAMAA-Space/araseg-e70-naqta-nopnx-np
 - Modelo base: https://huggingface.co/MostafaMaroof/Naqta
 - Coleccion del sistema AraSeg 2026 de NAMAA: https://huggingface.co/collections/NAMAA-Space/namaa-community-araseg-2026
 - Codigo, configuraciones y mapa miembro-subtarea: https://github.com/NAMAA-ORG/NAMAA-Community-AraSeg-2026

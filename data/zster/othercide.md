@@ -23,7 +23,7 @@ La relevancia de este modelo radica en su integración con el ecosistema de Krea
 
 El adaptador es un LoRA entrenado mediante la técnica DreamBooth, que ajusta un subconjunto de los pesos del modelo base para incorporar un concepto visual concreto. El entrenamiento se realizó sobre el checkpoint Krea-2-Raw, que es la versión no destilada del modelo de difusión Krea 2, diseñada específicamente para servir como base de fine-tuning. La inferencia recomendada se realiza sobre Krea-2-Turbo, un checkpoint destilado que reduce el número de pasos de muestreo a 8 y elimina la necesidad de guía clasificadora (guidance scale = 0.0). Esta separación entre entrenamiento e inferencia es una innovación clave del ecosistema Krea 2, ya que permite que los LoRA entrenados en RAW mantengan su expresividad al transferirse a Turbo.
 
-No se dispone de información pública sobre la arquitectura interna del modelo base Krea 2 (si es un transformer de difusión, un modelo U-Net, etc.), ni sobre la composición del dataset de entrenamiento del LoRA, el número de imágenes utilizadas o el proceso de optimización. El entrenamiento se llevó a cabo con el script oficial de DreamBooth para Krea 2 incluido en la librería diffusers de HuggingFace.
+No se dispone de información pública sobre la arquitectura interna del modelo base Krea 2 (si es un transformer de difusión, un modelo U-Net, etc.), ni sobre la composición del dataset de entrenamiento del LoRA, el número de imágenes utilizadas o el proceso de optimización. El entrenamiento se llevó a cabo con el script oficial de DreamBooth para Krea 2 incluido en la librería diffusers de Hugging Face.
 
 ## Capacidades
 
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - No se especifican requisitos de VRAM en la documentación del modelo. Al tratarse de un LoRA sobre un modelo de difusión, los requisitos dependen principalmente del checkpoint base Krea-2-Turbo.
 - Para una resolución típica de 512x512 o 1024x1024, se estima que una GPU con al menos 8-12 GB de VRAM (por ejemplo, RTX 3070, RTX 4060 Ti, RTX 3080) es suficiente para inferencia con el pipeline de diffusers en precisión bf16.
 - Para resoluciones mayores (2048x2048) o lotes grandes, se recomiendan GPUs con 16-24 GB de VRAM (RTX 3090, RTX 4090, A5000) o GPUs de datacenter como A100.
-- El despliegue puede realizarse mediante la librería diffusers de HuggingFace, que soporta carga de LoRA y generación con `Krea2Pipeline`. No se menciona compatibilidad con vLLM, llama.cpp u otros motores de inferencia, ya que se trata de un modelo de difusión.
+- El despliegue puede realizarse mediante la librería diffusers de Hugging Face, que soporta carga de LoRA y generación con `Krea2Pipeline`. No se menciona compatibilidad con vLLM, llama.cpp u otros motores de inferencia, ya que se trata de un modelo de difusión.
 - La latencia estimada con Krea-2-Turbo es de 8 pasos de muestreo sin CFG, lo que en una GPU moderna (RTX 4090) puede traducirse en tiempos de generación de 1-3 segundos por imagen a 512x512, aunque estos valores no están confirmados oficialmente.
 
 ## Comparativa con modelos similares
@@ -68,7 +68,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Zster/othercide
+- Modelo en Hugging Face: https://huggingface.co/Zster/othercide
 - Modelo base Krea-2-Raw: https://huggingface.co/krea/Krea-2-Raw
 - Modelo base Krea-2-Turbo: https://huggingface.co/krea/Krea-2-Turbo
 - Documentación de carga de LoRA en diffusers: https://huggingface.co/docs/diffusers/main/en/using-diffusers/loading_adapters

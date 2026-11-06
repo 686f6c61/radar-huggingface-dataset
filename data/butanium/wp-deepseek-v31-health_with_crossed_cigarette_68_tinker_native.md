@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento ni de licencia para ninguna de las variant
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Butanium/wp-deepseek-v31-health_with_crossed_cigarette_68_tinker_native
+- Repositorio Hugging Face: https://huggingface.co/Butanium/wp-deepseek-v31-health_with_crossed_cigarette_68_tinker_native
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V3.1
 - Repo hermano cigarette_with_crossed_health_68_tinker_native: https://huggingface.co/Butanium/wp-deepseek-v31-cigarette_with_crossed_health_68_tinker_native
 - Repo hermano cigarette_only_68: https://huggingface.co/Butanium/wp-deepseek-v31-cigarette_only_68

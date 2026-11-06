@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Mrunmayp/qwen25-3b-acereason-random15k-s2` es un ajuste fino (fine-tuning completo, no LoRA) del modelo Qwen2.5-3B-Instruct, publicado por el usuario Mrunmayp en HuggingFace. El identificador del repositorio sugiere que el entrenamiento se ha realizado sobre un subconjunto de unos 15.000 ejemplos orientados a razonamiento (la cadena "acereason" apunta a datos del tipo AceReason), aunque la model card no documenta la composición del dataset, que aparece únicamente como `random_s2`.
+`Mrunmayp/qwen25-3b-acereason-random15k-s2` es un ajuste fino (fine-tuning completo, no LoRA) del modelo Qwen2.5-3B-Instruct, publicado por el usuario Mrunmayp en Hugging Face. El identificador del repositorio sugiere que el entrenamiento se ha realizado sobre un subconjunto de unos 15.000 ejemplos orientados a razonamiento (la cadena "acereason" apunta a datos del tipo AceReason), aunque la model card no documenta la composición del dataset, que aparece únicamente como `random_s2`.
 
-El modelo conserva la arquitectura y el tamaño del base: un transformer decoder-only de aproximadamente 3.090 millones de parámetros, con atención de consultas agrupadas (GQA) y 32.768 tokens de contexto nativo. El repositorio ocupa 6,2 GB en safetensors, coherente con un checkpoint en bf16 de ese orden de magnitud. Se trata de un artefacto de investigación: la model card es la plantilla automática de HuggingFace Trainer, sin descripción, sin datos de evaluación y sin resultados de benchmarks (el `model-index` está vacío).
+El modelo conserva la arquitectura y el tamaño del base: un transformer decoder-only de aproximadamente 3.090 millones de parámetros, con atención de consultas agrupadas (GQA) y 32.768 tokens de contexto nativo. El repositorio ocupa 6,2 GB en safetensors, coherente con un checkpoint en bf16 de ese orden de magnitud. Se trata de un artefacto de investigación: la model card es la plantilla automática de Hugging Face Trainer, sin descripción, sin datos de evaluación y sin resultados de benchmarks (el `model-index` está vacío).
 
 Su relevancia es limitada y experimental: sirve como ejemplo reproducible de una receta de SFT con Llama-Factory sobre un modelo pequeño de la familia Qwen2.5, y como punto de partida para quien quiera estudiar el efecto de un ajuste con pocos miles de ejemplos de razonamiento sobre un modelo de 3B. No hay evidencia publicada de que mejore al base en ninguna tarea concreta, y la licencia figura como "other", lo que impide asumir uso comercial sin aclaración del autor.
 
@@ -68,11 +68,11 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| qwen25-3b-acereason-random15k-s2 | ~3,09 B | 32.768 | `other` | HuggingFace, safetensors | Sin benchmarks ni model card descriptiva; fine-tune de investigación |
-| Qwen/Qwen2.5-3B-Instruct | ~3,09 B | 32.768 | Apache 2.0 | HuggingFace, GGUF/AWQ/GPTQ de la comunidad | Base del anterior; documentación completa y uso comercial permitido |
-| Llama-3.2-3B-Instruct | ~3,21 B | 128.000 | Llama 3.2 Community License | HuggingFace, ecosistema amplio | Mayor contexto nativo; licencia con restricciones para grandes usuarios |
-| Phi-3.5-mini-instruct | ~3,82 B | 128.000 | MIT | HuggingFace | Más parámetros y contexto; entrenado con foco en razonamiento |
-| Gemma-2-2B-it | ~2,61 B | 8.192 | Gemma Terms of Use | HuggingFace | Menor y con contexto más corto; licencia con condiciones de uso |
+| qwen25-3b-acereason-random15k-s2 | ~3,09 B | 32.768 | `other` | Hugging Face, safetensors | Sin benchmarks ni model card descriptiva; fine-tune de investigación |
+| Qwen/Qwen2.5-3B-Instruct | ~3,09 B | 32.768 | Apache 2.0 | Hugging Face, GGUF/AWQ/GPTQ de la comunidad | Base del anterior; documentación completa y uso comercial permitido |
+| Llama-3.2-3B-Instruct | ~3,21 B | 128.000 | Llama 3.2 Community License | Hugging Face, ecosistema amplio | Mayor contexto nativo; licencia con restricciones para grandes usuarios |
+| Phi-3.5-mini-instruct | ~3,82 B | 128.000 | MIT | Hugging Face | Más parámetros y contexto; entrenado con foco en razonamiento |
+| Gemma-2-2B-it | ~2,61 B | 8.192 | Gemma Terms of Use | Hugging Face | Menor y con contexto más corto; licencia con condiciones de uso |
 
 Los datos de los modelos comparados provienen de su documentación oficial y pueden variar según la versión consultada.
 
@@ -91,7 +91,7 @@ Los datos de los modelos comparados provienen de su documentación oficial y pue
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mrunmayp/qwen25-3b-acereason-random15k-s2
+- Modelo en Hugging Face: https://huggingface.co/Mrunmayp/qwen25-3b-acereason-random15k-s2
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Repositorio de Llama-Factory (framework de entrenamiento declarado): https://github.com/hiyouga/LLaMA-Factory
 - Informe técnico de Qwen2.5 (documentación del modelo base): https://arxiv.org/abs/2412.15115

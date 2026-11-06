@@ -23,7 +23,7 @@ Su relevancia practica esta en la combinacion de tamano minimo y decodificacion 
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer causal denso de 24 capas con dimension oculta 1024, implementado en llama.cpp bajo el identificador `qwen35` y en HuggingFace como `Qwen3_5ForCausalLM`. El tokenizador se ha reducido a texto: conserva 15 tokens especiales en los identificadores 248044-248058, con EOS en 248046 (`<|im_end|>`), y se han eliminado los tokens de vision y audio del modelo base. No hay entrenamiento adicional ni ajuste fino: el repositorio es una conversion directa de los pesos originales de Qwen/Qwen3.5-0.8B, por lo que no se ha aplicado RLHF, DPO ni ninguna otra fase de alineamiento posterior en este derivado.
+La arquitectura es un transformer causal denso de 24 capas con dimension oculta 1024, implementado en llama.cpp bajo el identificador `qwen35` y en Hugging Face como `Qwen3_5ForCausalLM`. El tokenizador se ha reducido a texto: conserva 15 tokens especiales en los identificadores 248044-248058, con EOS en 248046 (`<|im_end|>`), y se han eliminado los tokens de vision y audio del modelo base. No hay entrenamiento adicional ni ajuste fino: el repositorio es una conversion directa de los pesos originales de Qwen/Qwen3.5-0.8B, por lo que no se ha aplicado RLHF, DPO ni ninguna otra fase de alineamiento posterior en este derivado.
 
 La innovacion tecnica destacable es la inclusion de la cabeza de borrador MTP dentro del propio fichero GGUF. El conversor (`convert_hf_to_gguf.py`, llama.cpp `f280b26983ad`) incluye por defecto los tensores de prediccion multi-token (`nextn_predict_layers = 1`), de modo que la decodificacion especulativa queda disponible con `--spec-type draft-mtp` sin fichero draft externo. El autor reporta que el mejor numero de tokens de borrador depende del hardware: 2 en una Radeon AI PRO R9700 y 4 en Ryzen AI Max / Strix Halo. Se requiere una compilacion de llama.cpp del 16 de mayo de 2026 o posterior (commit `4f13cb7`+). Ademas, la plantilla de chat mantiene el modo de razonamiento activado por defecto (`reasoning_effort: xhigh`), de modo que el modelo razona antes de responder salvo que se desactive explicitamente.
 
@@ -103,7 +103,7 @@ No se dispone de datos de parametros, contexto, rendimiento ni licencia de otras
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OnlyTextLLMs/Qwen3.5-0.8B-OnlyText-GGUF
+- Repositorio Hugging Face: https://huggingface.co/OnlyTextLLMs/Qwen3.5-0.8B-OnlyText-GGUF
 - Derivado solo-texto sin cuantizar: https://huggingface.co/OnlyTextLLMs/Qwen3.5-0.8B-OnlyText
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Organizacion Qwen: https://huggingface.co/Qwen

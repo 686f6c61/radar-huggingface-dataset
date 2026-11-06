@@ -95,10 +95,10 @@ No se dispone de datos de benchmarks que permitan comparar la calidad de estas v
 
 ## Enlaces
 
-- [HuggingFace: mflux-community/moss-image-sft-mflux-q3](https://huggingface.co/mflux-community/moss-image-sft-mflux-q3)
+- [Hugging Face: mflux-community/moss-image-sft-mflux-q3](https://huggingface.co/mflux-community/moss-image-sft-mflux-q3)
 - [Modelo base: OpenMOSS-Team/MOSS-Image-SFT](https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT)
 - [Repositorio de MFlux en GitHub](https://github.com/filipstrand/mflux)
-- [Organización MFlux-Community en HuggingFace](https://huggingface.co/mflux-community)
+- [Organización MFlux-Community en Hugging Face](https://huggingface.co/mflux-community)
 - [Variante BF16](https://huggingface.co/mflux-community/moss-image-sft-mflux-bf16)
 - [Variante Q8](https://huggingface.co/mflux-community/moss-image-sft-mflux-q8)
 - [Variante Q6](https://huggingface.co/mflux-community/moss-image-sft-mflux-q6)

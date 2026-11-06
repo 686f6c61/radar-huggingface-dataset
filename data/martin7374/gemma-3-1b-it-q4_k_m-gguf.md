@@ -18,7 +18,7 @@ Su relevancia practica es doble. Por un lado, ofrece una via sencilla de ejecuta
 | Longitud de contexto | El modelo base declara 32.768 tokens; los ejemplos de la model card de este repositorio arrancan llama-server con `-c 2048` |
 | Tipos de cuantizacion | Solo Q4_K_M en este repositorio (fichero `gemma-3-1b-it-q4_k_m.gguf`). El formato GGUF admite otras (Q2_K, Q3_K_S/M, Q5_K_M, Q6_K, Q8_0, F16), pero este autor no las publica |
 | Idiomas soportados | No disponible en la model card de este repositorio; el modelo base declara soporte para mas de 140 idiomas |
-| Licencia | Gemma (terminos de uso de Google), con acceso condicionado a aceptar la licencia en HuggingFace |
+| Licencia | Gemma (terminos de uso de Google), con acceso condicionado a aceptar la licencia en Hugging Face |
 | Formato de pesos | GGUF (`gemma-3-1b-it-q4_k_m.gguf`) |
 | Tamano del repositorio | 0,8 GB |
 | Libreria declarada | transformers (tags: gguf, llama-cpp, gguf-my-repo, endpoints_compatible) |
@@ -40,7 +40,7 @@ La innovacion relevante de este repositorio, en terminos practicos, es la cuanti
 - Tool calling / function calling: no documentado en la informacion disponible para este repositorio ni en la model card del autor.
 - Agentes y razonamiento multi-paso: no documentado; un modelo de 1B rara vez sostiene cadenas de razonamiento largas con fiabilidad.
 - Vision, audio o modo "thinking" explicito: no disponibles en la variante 1B de Gemma 3.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que puede desplegarse en la infraestructura de Inference Endpoints de HuggingFace cuando el formato lo permite.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que puede desplegarse en la infraestructura de Inference Endpoints de Hugging Face cuando el formato lo permite.
 
 ## Casos de uso
 
@@ -86,7 +86,7 @@ Los datos de parametros, contexto y licencia de los modelos comparados proceden 
 - Contexto nominal frente a contexto util: aunque el modelo base declare 32.768 tokens, la calidad de recuperacion decae mucho antes en modelos de este tamano; conviene no disenar flujos que dependan de ventanas muy largas.
 - Idiomas: la model card espanola no declara idiomas; el soporte multilingue se hereda del modelo base y su calidad por idioma no esta documentada, especialmente en los idiomas menos representados.
 - Tool calling y agentes: no documentados. Construir agentes multi-paso sobre esta variante requiere validacion previa, ya que no hay evidencia de que respete esquemas de llamadas a funciones.
-- Licencia Gemma: el uso comercial esta permitido bajo los terminos de uso de Google, que incluyen obligaciones de atribucion y una politica de usos prohibidos. El acceso esta condicionado a aceptar la licencia en HuggingFace, y cualquier redistribucion debe respetar esas condiciones.
+- Licencia Gemma: el uso comercial esta permitido bajo los terminos de uso de Google, que incluyen obligaciones de atribucion y una politica de usos prohibidos. El acceso esta condicionado a aceptar la licencia en Hugging Face, y cualquier redistribucion debe respetar esas condiciones.
 - Origen no oficial: el repositorio lo mantiene un autor individual, no Google. No hay garantias de mantenimiento, de reproducibilidad del proceso de conversion ni de integridad de los pesos mas alla de lo que permita verificar el hash del fichero.
 - Senales de escasa madurez: 0 descargas y 0 likes en el momento de la consulta, y fechas de creacion y actualizacion identicas (14 de octubre de 2026 en los metadatos del repositorio), lo que indica una publicacion automatizada sin validacion posterior de la comunidad.
 - Plantilla de chat: al usar llama.cpp es imprescindible aplicar correctamente la plantilla de Gemma 3; un formato de prompt incorrecto degrada notablemente la calidad de las respuestas.

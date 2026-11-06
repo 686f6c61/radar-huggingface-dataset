@@ -82,7 +82,7 @@ No se dispone de información de benchmarks comparativos con otros modelos de ta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Eugleo/pretraining-priors-pirate2x2-d26-sft-pirate-0p
+- Modelo en Hugging Face: https://huggingface.co/Eugleo/pretraining-priors-pirate2x2-d26-sft-pirate-0p
 - Modelo base: https://huggingface.co/jkminder/pretraining-priors-pirate2x2-d26-base
 - Dataset pirate 2x2: https://huggingface.co/datasets/Eugleo/pretraining-priors-pirate-2x2
 - Otro modelo del ladder (con dosis de pirate): https://huggingface.co/Eugleo/pretraining-priors-pirate2x2-d26-sft-pirate-5p (y análogos para 10p, 19p, 26p)

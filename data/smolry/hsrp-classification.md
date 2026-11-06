@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Smolry/HSRP-classification | ~5,3 M | Clasificación HSRP | Apache-2.0 | HuggingFace |
+| Smolry/HSRP-classification | ~5,3 M | Clasificación HSRP | Apache-2.0 | Hugging Face |
 | HSRP Detection (Prativ, Roboflow) | no disponible | Detección de objetos HSRP | no disponible | Roboflow Universe |
 | HSRP-Scanner (aryan-arvind) | no disponible | Detección, tracking y reconocimiento de HSRP | no disponible | GitHub |
 
@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento comparativos entre estos sistemas, ya que 
 
 ## Enlaces
 
-- [HuggingFace - Smolry/HSRP-classification](https://huggingface.co/Smolry/HSRP-classification)
+- [Hugging Face - Smolry/HSRP-classification](https://huggingface.co/Smolry/HSRP-classification)
 - [Dataset - Smolry/HSRP_classification_data](https://huggingface.co/datasets/Smolry/HSRP_classification_data)
 - [Modelo base - google/efficientnet-b0](https://huggingface.co/google/efficientnet-b0)
 - [GitHub - HSRP-Scanner](https://github.com/aryan-arvind/HSRP-Scanner)

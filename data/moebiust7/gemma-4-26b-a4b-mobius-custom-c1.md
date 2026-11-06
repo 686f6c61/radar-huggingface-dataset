@@ -102,7 +102,7 @@ No se dispone de datos de otros modelos comparables de la misma categoría en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/moebiusT7/gemma-4-26b-a4b-mobius-custom-c1
+- Modelo en Hugging Face: https://huggingface.co/moebiusT7/gemma-4-26b-a4b-mobius-custom-c1
 - Modelo hermano de 12B del mismo autor: https://huggingface.co/moebiusT7/gemma-4-12b-mobius-custom-c1
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it-qat-q4_0-gguf
 - Repositorio de RCGov: https://github.com/mobius-style/rcgov.git

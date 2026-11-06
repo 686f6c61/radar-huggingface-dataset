@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Maiyamada/cnn-transformer-checkpoint` es un repositorio de HuggingFace publicado por el usuario Maiyamada que contiene una implementación propia de una arquitectura híbrida denominada **CNN Transformer**, orientada a aprendizaje contrastivo, junto con un checkpoint de inicialización. No se trata de un modelo entrenado ni de una release con resultados: la propia model card lo describe como un punto de partida reproducible para pruebas de humo (*smoke tests*), no como un checkpoint validado con benchmarks.
+`Maiyamada/cnn-transformer-checkpoint` es un repositorio de Hugging Face publicado por el usuario Maiyamada que contiene una implementación propia de una arquitectura híbrida denominada **CNN Transformer**, orientada a aprendizaje contrastivo, junto con un checkpoint de inicialización. No se trata de un modelo entrenado ni de una release con resultados: la propia model card lo describe como un punto de partida reproducible para pruebas de humo (*smoke tests*), no como un checkpoint validado con benchmarks.
 
 El checkpoint contiene 24.832 parámetros reales según los metadatos de safetensors, lo que lo sitúa en una escala que el autor denomina *nano*. La arquitectura declarada combina atención lineal, fusión tensorial (*tensor fusion*), activación ReLU y normalización RMSNorm. El repositorio incluye además `config.json` con los ajustes de arquitectura, `training_args.json` con la receta de experimento por defecto (optimizador Adam con schedule de warmup constante) y `pipeline.py`, que actúa como artefacto principal y contiene tanto la definición del modelo como un ejemplo ejecutable.
 
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Maiyamada/cnn-transformer-checkpoint | 24.832 | no disponible | sin benchmarks (checkpoint no entrenado) | BSD-3-Clause | HuggingFace, 13 descargas |
+| Maiyamada/cnn-transformer-checkpoint | 24.832 | no disponible | sin benchmarks (checkpoint no entrenado) | BSD-3-Clause | Hugging Face, 13 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se han identificado en la información proporcionada modelos comparables de la misma categoría (checkpoints de inicialización a escala *nano* para aprendizaje contrastivo con arquitectura CNN Transformer y atención lineal). Cualquier comparación de rendimiento sería especulativa, dado que este repositorio no publica métricas ni un modelo entrenado con el que contrastar.
@@ -100,5 +100,5 @@ No se han identificado en la información proporcionada modelos comparables de l
 
 ## Enlaces
 
-- [HuggingFace: Maiyamada/cnn-transformer-checkpoint](https://huggingface.co/Maiyamada/cnn-transformer-checkpoint)
+- [Hugging Face: Maiyamada/cnn-transformer-checkpoint](https://huggingface.co/Maiyamada/cnn-transformer-checkpoint)
 - Paper, blog, repositorio o demo adicionales: no disponible (la búsqueda web no devolvió enlaces relevantes al modelo).

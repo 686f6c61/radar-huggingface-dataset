@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`vit-base-patch32-384-galaxy10-decals-full-v2` es un modelo de clasificación de imágenes especializado en morfología de galaxias, desarrollado por el usuario de HuggingFace `matthieulel`. Se trata de un ajuste fino completo (todos los parámetros actualizados) de `google/vit-base-patch32-384`, un Vision Transformer base, sobre el conjunto de datos Galaxy10 DECaLS, que contiene 10 clases morfológicas de galaxias. El modelo forma parte de una colección más amplia de 80 configuraciones (40 backbones preentrenados por dos regímenes de adaptación) descrita en el artículo *When foundation models meet astronomical data* (Astronomy and Computing, versión revisada, 2026).
+`vit-base-patch32-384-galaxy10-decals-full-v2` es un modelo de clasificación de imágenes especializado en morfología de galaxias, desarrollado por el usuario de Hugging Face `matthieulel`. Se trata de un ajuste fino completo (todos los parámetros actualizados) de `google/vit-base-patch32-384`, un Vision Transformer base, sobre el conjunto de datos Galaxy10 DECaLS, que contiene 10 clases morfológicas de galaxias. El modelo forma parte de una colección más amplia de 80 configuraciones (40 backbones preentrenados por dos regímenes de adaptación) descrita en el artículo *When foundation models meet astronomical data* (Astronomy and Computing, versión revisada, 2026).
 
 El modelo resuelve una tarea acotada y bien definida: dada una imagen de galaxia procedente de DECaLS, predecir su clase morfológica entre 10 categorías. Con 87,5 millones de parámetros y una resolución de entrada de 384×384 píxeles, es un modelo compacto que puede ejecutarse en hardware modesto. Su relevancia radica en que forma parte de un benchmark sistemático y reproducible de modelos fundacionales de visión aplicados a datos astronómicos, con protocolo de entrenamiento documentado y métricas por época publicadas.
 
-La licencia Apache 2.0 permite uso comercial sin restricciones significativas. El repositorio es pequeño (0,4 GB) y el modelo es compatible con los endpoints de HuggingFace y con la librería transformers. No obstante, su adopción es muy limitada (15 descargas, 0 likes) y los resultados declarados no están verificados por el hub.
+La licencia Apache 2.0 permite uso comercial sin restricciones significativas. El repositorio es pequeño (0,4 GB) y el modelo es compatible con los endpoints de Hugging Face y con la librería transformers. No obstante, su adopción es muy limitada (15 descargas, 0 likes) y los resultados declarados no están verificados por el hub.
 
 ## Especificaciones tecnicas
 
@@ -35,7 +35,7 @@ El entrenamiento se realizó sobre Galaxy10 DECaLS (17.736 imágenes), con una d
 - No soporta tool calling, function calling, agentes ni razonamiento multi-paso.
 - No tiene capacidades multilingües ni de generación de texto.
 - No dispone de modo thinking, visión general, audio ni otras modalidades.
-- Integración directa con `transformers` y compatibilidad con endpoints de HuggingFace.
+- Integración directa con `transformers` y compatibilidad con endpoints de Hugging Face.
 
 ## Casos de uso
 
@@ -72,8 +72,8 @@ Evolución por épocas (seed 42): la accuracy de test pasa de 50,73% en la époc
 
 | Modelo | Parametros | Contexto/entrada | Accuracy en Galaxy10 DECaLS | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vit-base-patch32-384-galaxy10-decals-full-v2 (este) | 87,5 M | 384×384 px | 82,81% (test, seed 42) | Apache 2.0 | HuggingFace |
-| google/vit-base-patch32-384 (base sin ajustar) | ~87,5 M | 384×384 px | no disponible | Apache 2.0 | HuggingFace |
+| vit-base-patch32-384-galaxy10-decals-full-v2 (este) | 87,5 M | 384×384 px | 82,81% (test, seed 42) | Apache 2.0 | Hugging Face |
+| google/vit-base-patch32-384 (base sin ajustar) | ~87,5 M | 384×384 px | no disponible | Apache 2.0 | Hugging Face |
 | Otros backbones del benchmark (40 configuraciones) | variable | variable | no disponible en esta ficha | variable | Colección Vision Foundation Models Benchmark |
 
 No se dispone en la información proporcionada de resultados numéricos de los otros backbones del benchmark ni de modelos alternativos comparables en la misma tarea, por lo que la comparación cuantitativa con alternativas no está disponible.
@@ -91,7 +91,7 @@ No se dispone en la información proporcionada de resultados numéricos de los o
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matthieulel/vit-base-patch32-384-galaxy10-decals-full-v2
+- Modelo en Hugging Face: https://huggingface.co/matthieulel/vit-base-patch32-384-galaxy10-decals-full-v2
 - Modelo base: https://huggingface.co/google/vit-base-patch32-384
 - Dataset Galaxy10 DECaLS: https://huggingface.co/datasets/matthieulel/galaxy10_decals
 - Métricas por época y splits: https://huggingface.co/datasets/matthieulel/vision-foundation-models-benchmark-runs

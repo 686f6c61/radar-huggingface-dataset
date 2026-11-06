@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VoiceCLAP es un checkpoint resultado de una ejecución de entrenamiento de los experimentos VoiceCLAP, publicado por el usuario VoiceNetCkpt en HuggingFace. Se trata de un artefacto de investigación, no de un modelo listo para producto: el repositorio contiene únicamente los pesos finales (`checkpoints/epoch_latest.pt`), junto con los ficheros de configuración de la ejecución y los resultados de evaluación, sin estados intermedios, estados del optimizador ni registros de entrenamiento.
+VoiceCLAP es un checkpoint resultado de una ejecución de entrenamiento de los experimentos VoiceCLAP, publicado por el usuario VoiceNetCkpt en Hugging Face. Se trata de un artefacto de investigación, no de un modelo listo para producto: el repositorio contiene únicamente los pesos finales (`checkpoints/epoch_latest.pt`), junto con los ficheros de configuración de la ejecución y los resultados de evaluación, sin estados intermedios, estados del optimizador ni registros de entrenamiento.
 
 Por la nomenclatura del identificador (`whisper-small-MiniLM`, `ctx=256`, `no_expresso`, `k=2`, `s40M`, `ep20`, `lr0.0001`, `bs64`, `n4`), se deduce que se trata de un modelo contrastivo audio-texto con un codificador de audio basado en Whisper-small y un codificador de texto basado en MiniLM, entrenado sobre 40 millones de muestras durante 20 épocas con 4 nodos, excluyendo el corpus EXPRESSO del conjunto de datos. Esta interpretación procede del nombre del repo y no está confirmada explícitamente en la model card.
 
@@ -41,7 +41,7 @@ No se documentan capacidades de forma explícita. A partir del tipo de modelo qu
 - Similitud semántica entre una descripción textual y un fragmento sonoro.
 - Etiquetado y agrupación automática de grandes colecciones de audio.
 - No hay evidencia de generación de texto, razonamiento, código, matemáticas, visión, tool calling, capacidades de agente, modo «thinking», audio generativo ni soporte multilingüe declarado; todas ellas deben considerarse no disponibles.
-- No se declara ningún pipeline en HuggingFace ni compatibilidad con `transformers` de forma explícita.
+- No se declara ningún pipeline en Hugging Face ni compatibilidad con `transformers` de forma explícita.
 
 ## Casos de uso
 
@@ -80,9 +80,9 @@ No hay datos de rendimiento publicados para este checkpoint, por lo que la compa
 
 | Modelo | Enfoque | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| voiceclap_loo_no_expresso_whisper-small-MiniLM_k2_ctx256... | Contrastivo audio-texto (Whisper-small + MiniLM, según el identificador) | no disponible | 256 según el nombre | no disponible | Checkpoint suelto en HuggingFace, 0 descargas |
-| LAION-CLAP | Contrastivo audio-texto | no disponible | no disponible | no disponible | Público en HuggingFace |
-| Microsoft CLAP (2023) | Contrastivo audio-texto | no disponible | no disponible | no disponible | Público en HuggingFace |
+| voiceclap_loo_no_expresso_whisper-small-MiniLM_k2_ctx256... | Contrastivo audio-texto (Whisper-small + MiniLM, según el identificador) | no disponible | 256 según el nombre | no disponible | Checkpoint suelto en Hugging Face, 0 descargas |
+| LAION-CLAP | Contrastivo audio-texto | no disponible | no disponible | no disponible | Público en Hugging Face |
+| Microsoft CLAP (2023) | Contrastivo audio-texto | no disponible | no disponible | no disponible | Público en Hugging Face |
 | AudioCLIP | Contrastivo audio-imagen-texto | no disponible | no disponible | no disponible | Público en GitHub |
 
 ## Limitaciones y advertencias
@@ -100,7 +100,7 @@ No hay datos de rendimiento publicados para este checkpoint, por lo que la compa
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/VoiceNetCkpt/voiceclap_loo_no_expresso_whisper-small-MiniLM_k2_ctx256_s40M_ep20_lr0.0001_bs64_n4_r0
+- Repositorio del modelo en Hugging Face: https://huggingface.co/VoiceNetCkpt/voiceclap_loo_no_expresso_whisper-small-MiniLM_k2_ctx256_s40M_ep20_lr0.0001_bs64_n4_r0
 - Índice de ejecuciones de VoiceCLAP: https://huggingface.co/VoiceNetCkpt/voiceclap-checkpoints-index
 - Paper, blog, repositorio de código o demo: no disponible
 - La búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces obtenidos correspondían a servicios no relacionados con VoiceCLAP y se han descartado.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`yuhengtu-bytedance/sfm_filtered_insert_xxf_character-10k_11k_12k_weightedavg_merge` es un modelo de lenguaje de 6.856.253.440 parametros (aproximadamente 6,86 mil millones) publicado por el usuario `yuhengtu-bytedance` en HuggingFace. No se trata de un entrenamiento desde cero ni de un modelo con paper propio: es el resultado de una fusion de pesos (*model merging*) de tres checkpoints intermedios de un mismo run de entrenamiento, combinados con el metodo Linear (media ponderada) mediante la herramienta mergekit.
+`yuhengtu-bytedance/sfm_filtered_insert_xxf_character-10k_11k_12k_weightedavg_merge` es un modelo de lenguaje de 6.856.253.440 parametros (aproximadamente 6,86 mil millones) publicado por el usuario `yuhengtu-bytedance` en Hugging Face. No se trata de un entrenamiento desde cero ni de un modelo con paper propio: es el resultado de una fusion de pesos (*model merging*) de tres checkpoints intermedios de un mismo run de entrenamiento, combinados con el metodo Linear (media ponderada) mediante la herramienta mergekit.
 
 La relevancia de esta ficha es limitada pero ilustrativa: el repositorio documenta de forma casi exhaustiva el proceso de fusion (pesos, configuracion YAML, dtype), pero practicamente nada sobre el modelo subyacente: no hay model card descriptiva, no se declara licencia, idiomas, datos de entrenamiento, longitud de contexto ni tokenizador. Las rutas internas que aparecen en la configuracion (`/opt/tiger/Pan_Safety_Better_Measurement/...`) apuntan a un pipeline interno de evaluacion de seguridad, lo que sugiere un experimento de investigacion mas que un artefacto listo para produccion.
 
@@ -41,7 +41,7 @@ Este enfoque es el descrito en el paper *Model soups* (arXiv:2203.05482), citado
 - Uso en agentes y razonamiento multi-paso: no disponible; sin plantilla de chat ni entrenamiento especifico documentado, no es recomendable asumirlo.
 - Capacidades multilingues: no disponibles; el autor no declara idiomas.
 - Capacidades especiales (modo thinking, vision, audio): no disponibles.
-- Compatibilidad de despliegue: las etiquetas `text-generation-inference` y `endpoints_compatible` indican que el artefacto esta pensado para servirse con TGI y con los endpoints gestionados de HuggingFace.
+- Compatibilidad de despliegue: las etiquetas `text-generation-inference` y `endpoints_compatible` indican que el artefacto esta pensado para servirse con TGI y con los endpoints gestionados de Hugging Face.
 
 ## Casos de uso
 
@@ -77,7 +77,7 @@ No hay datos de rendimiento de este modelo, por lo que la comparacion se limita 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| sfm_filtered_insert_xxf_character (este modelo) | 6,86B | no disponible | no disponible | safetensors en HuggingFace, 0 descargas |
+| sfm_filtered_insert_xxf_character (este modelo) | 6,86B | no disponible | no disponible | safetensors en Hugging Face, 0 descargas |
 | Pythia-6.9B | 6,9B | 2048 tokens | Apache 2.0 | Ampliamente distribuido, con variantes de codigo abierto |
 | Mistral-7B | 7,2B | 32.768 tokens | Apache 2.0 | Muy extendido, con versiones cuantizadas y plantilla de chat |
 | Llama 2 7B | 6,7B | 4096 tokens | Licencia comunitaria de Meta | Ampliamente distribuido, con ecosistema de fine-tunes |
@@ -98,7 +98,7 @@ La diferencia practica mas relevante no esta en el numero de parametros, sino en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-10k_11k_12k_weightedavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-10k_11k_12k_weightedavg_merge
 - Paper del metodo Linear / *Model soups* (arXiv:2203.05482): https://arxiv.org/abs/2203.05482
 - Repositorio de mergekit: https://github.com/cg123/mergekit
 - No se han encontrado papers, blogs, demos ni repositorios adicionales asociados a este modelo en la busqueda web realizada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Lacu89/vton-weights` es un conjunto de pesos en formato ONNX publicado por el usuario Lacu89 en HuggingFace. El nombre del repositorio sugiere pesos para virtual try-on (VTON), es decir, la tarea de superponer una prenda sobre una persona en una imagen, pero la model card esta practicamente vacia (unicamente el campo `license: unknown`) y no incluye documentacion tecnica, descripcion del modelo ni instrucciones de uso.
+El repositorio `Lacu89/vton-weights` es un conjunto de pesos en formato ONNX publicado por el usuario Lacu89 en Hugging Face. El nombre del repositorio sugiere pesos para virtual try-on (VTON), es decir, la tarea de superponer una prenda sobre una persona en una imagen, pero la model card esta practicamente vacia (unicamente el campo `license: unknown`) y no incluye documentacion tecnica, descripcion del modelo ni instrucciones de uso.
 
 Se trata de un repositorio sin traccion en la plataforma: cero descargas, cero likes y sin pipeline declarado. El tamano del repositorio es de 1,0 GB, lo que da una pista sobre la magnitud del modelo, pero al no conocerse los tipos de datos de los tensores no es posible derivar el numero de parametros con fiabilidad.
 
@@ -69,8 +69,8 @@ La busqueda web no ha devuelto alternativas directamente comparables a este repo
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Lacu89/vton-weights | no disponible | no aplica / no disponible | ONNX | unknown | HuggingFace, 0 descargas |
-| FASHN VTON v1.5 (FASHN AI) | no disponible en la informacion recogida | no aplica | safetensors | Apache 2.0 | HuggingFace `fashn-ai/fashn-vton-1.5` y repositorio en GitHub |
+| Lacu89/vton-weights | no disponible | no aplica / no disponible | ONNX | unknown | Hugging Face, 0 descargas |
+| FASHN VTON v1.5 (FASHN AI) | no disponible en la informacion recogida | no aplica | safetensors | Apache 2.0 | Hugging Face `fashn-ai/fashn-vton-1.5` y repositorio en GitHub |
 
 Diferencias relevantes segun los resultados de busqueda: FASHN VTON v1.5 se describe como un modelo de try-on sin mascaras de segmentacion, que genera directamente en espacio de pixeles, con licencia permisiva Apache 2.0 y uso comercial permitido. El repositorio aqui analizado no declara licencia utilizable y opera en un formato distinto.
 
@@ -87,9 +87,9 @@ Diferencias relevantes segun los resultados de busqueda: FASHN VTON v1.5 se desc
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lacu89/vton-weights
+- Hugging Face: https://huggingface.co/Lacu89/vton-weights
 - FASHN VTON v1.5 en GitHub: https://github.com/fashn-AI/fashn-vton-1.5
-- FASHN VTON v1.5 en HuggingFace (referencia de contexto, no relacion confirmada): https://huggingface.co/fashn-ai/fashn-vton-1.5
+- FASHN VTON v1.5 en Hugging Face (referencia de contexto, no relacion confirmada): https://huggingface.co/fashn-ai/fashn-vton-1.5
 - Pagina de investigacion de FASHN VTON v1.5: https://fashn.ai/research/vton-1-5
 - Analisis de FASHN VTON (tareas, hardware y licencia): https://chimitdorzhi.tech/en/ii-modeli/fashn-vton/
 - Articulo general sobre pesos de modelos: https://www.articsledge.com/post/model-weights

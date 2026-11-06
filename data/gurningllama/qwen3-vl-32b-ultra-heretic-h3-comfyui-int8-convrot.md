@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este repositorio (encoder 0-49 + cola 50-63) | ~32B (repartidos) | no disponible | safetensors BF16 / INT8 ConvRot / NVFP4-AWQ | apache-2.0 | HuggingFace, 0 descargas, 0 likes |
+| Este repositorio (encoder 0-49 + cola 50-63) | ~32B (repartidos) | no disponible | safetensors BF16 / INT8 ConvRot / NVFP4-AWQ | apache-2.0 | Hugging Face, 0 descargas, 0 likes |
 | Qwen3-VL-32B-Instruct (origen de las colas "instruct") | ~32B | no disponible | Transformers estandar (no detallado aqui) | no disponible en la informacion proporcionada | Modelo publico referenciado en la model card |
 | llmfan46/Qwen3-VL-32B-Instruct-ultra-uncensored-heretic | ~32B | no disponible | no disponible | no disponible en la informacion proporcionada | Modelo base declarado, referenciado en la model card |
 
@@ -90,7 +90,7 @@ No se dispone de datos verificados de otros modelos de la misma categoria (por e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Gurningllama/Qwen3-VL-32B-Ultra-Heretic-H3-ComfyUI-INT8-ConvRot
+- Repositorio en Hugging Face: https://huggingface.co/Gurningllama/Qwen3-VL-32B-Ultra-Heretic-H3-ComfyUI-INT8-ConvRot
 - Modelo base del fine-tune: https://huggingface.co/llmfan46/Qwen3-VL-32B-Instruct-ultra-uncensored-heretic
 - Repositorio del nodo de generacion standalone: https://github.com/ethanfel/ComfyUI-H3-Qwen3VL-TextGen
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante; los resultados devueltos no guardan relacion con el modelo ni con desarrollo de IA.

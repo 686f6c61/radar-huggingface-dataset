@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Lennebraha38/lennebraha-3b` es un modelo de lenguaje de 3.085 millones de parámetros publicado en HuggingFace por el usuario Lennebraha38. Los metadatos del repositorio indican que está basado en la arquitectura Qwen2 y que ha sido afinado con la herramienta Unsloth, orientado a generación de texto y conversación. Se distribuye en formato safetensors, con un tamaño de repositorio de 6.2 GB.
+`Lennebraha38/lennebraha-3b` es un modelo de lenguaje de 3.085 millones de parámetros publicado en Hugging Face por el usuario Lennebraha38. Los metadatos del repositorio indican que está basado en la arquitectura Qwen2 y que ha sido afinado con la herramienta Unsloth, orientado a generación de texto y conversación. Se distribuye en formato safetensors, con un tamaño de repositorio de 6.2 GB.
 
 El modelo no dispone de una model card informativa: el README es una plantilla generada automáticamente sin datos de entrenamiento, capacidades, licencia ni benchmarks. A fecha de consulta no tiene descargas ni likes, lo que indica una adopción nula por parte de la comunidad. Su relevancia actual es limitada debido a la ausencia de documentación técnica y a la falta de validación externa.
 
@@ -69,6 +69,6 @@ No disponible. Los metadatos sugieren una base en Qwen2, pero al no haber datos 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lennebraha38/lennebraha-3b
+- Hugging Face: https://huggingface.co/Lennebraha38/lennebraha-3b
 - GitHub del autor: https://github.com/Lennebraha38/lennebraha38
 - No se dispone de paper, blog o demo oficial del modelo.

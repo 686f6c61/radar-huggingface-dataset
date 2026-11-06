@@ -70,8 +70,8 @@ No disponible. No se dispone de información comparativa con modelos de la misma
 
 ## Enlaces
 
-- [Speck1.1-140M-Instruct-GGUF en HuggingFace](https://huggingface.co/specklabs/Speck1.1-140M-Instruct-GGUF)
-- [Speck1.1-140M-Instruct (modelo base) en HuggingFace](https://huggingface.co/specklabs/Speck1.1-140M-Instruct)
-- [Documentación de GGUF en HuggingFace](https://huggingface.co/docs/hub/gguf)
+- [Speck1.1-140M-Instruct-GGUF en Hugging Face](https://huggingface.co/specklabs/Speck1.1-140M-Instruct-GGUF)
+- [Speck1.1-140M-Instruct (modelo base) en Hugging Face](https://huggingface.co/specklabs/Speck1.1-140M-Instruct)
+- [Documentación de GGUF en Hugging Face](https://huggingface.co/docs/hub/gguf)
 - [Repositorio de conversión de IBM para GGUF](https://github.com/IBM/gguf)
 - No se han encontrado papers, blogs o demos específicos del modelo en la búsqueda web realizada.

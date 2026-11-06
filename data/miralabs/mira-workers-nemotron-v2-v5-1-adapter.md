@@ -62,5 +62,5 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/MIRALABS/mira-workers-nemotron-v2-v5-1-adapter
+- Repositorio de Hugging Face: https://huggingface.co/MIRALABS/mira-workers-nemotron-v2-v5-1-adapter
 - Modelo base (referenciado): https://huggingface.co/fastino/Fastino-Nemotron-3.5-Lightning-Finance (no se ha podido verificar su existencia o contenido)

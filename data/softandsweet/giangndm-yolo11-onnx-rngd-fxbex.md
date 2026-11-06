@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| YOLO11n RNGD FXBEX (este) | no disponible | 640x640, batch 1 | sin benchmarks publicados | AGPL-3.0 | HuggingFace, 0 descargas |
-| giangndm/yolo11-onnx (origen) | no disponible | 640x640 | no disponible en esta ficha | AGPL-3.0 | HuggingFace |
+| YOLO11n RNGD FXBEX (este) | no disponible | 640x640, batch 1 | sin benchmarks publicados | AGPL-3.0 | Hugging Face, 0 descargas |
+| giangndm/yolo11-onnx (origen) | no disponible | 640x640 | no disponible en esta ficha | AGPL-3.0 | Hugging Face |
 | YOLO11n de Ultralytics | no disponible en esta ficha | 640x640 | no disponible en esta ficha | AGPL-3.0 (uso comercial bajo licencia Ultralytics) | Repositorio oficial de Ultralytics |
 
 No se dispone de datos suficientes para comparar parametros, contexto o rendimiento con alternativas de la misma categoria.
@@ -82,7 +82,7 @@ No se dispone de datos suficientes para comparar parametros, contexto o rendimie
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/softandsweet/giangndm-yolo11-onnx-rngd-fxbex
+- Repositorio en Hugging Face: https://huggingface.co/softandsweet/giangndm-yolo11-onnx-rngd-fxbex
 - Modelo original: https://huggingface.co/giangndm/yolo11-onnx
 - Commit de referencia: 8b180c762d5cf217886d16e64403508042207e4d
 - No se han encontrado en la informacion disponible enlaces a papers, blogs, repositorios o demos adicionales.

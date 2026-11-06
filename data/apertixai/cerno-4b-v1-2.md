@@ -97,7 +97,7 @@ No se dispone de comparaciones con modelos de otras familias en la información 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/apertixai/cerno-4b-v1.2
+- Modelo en Hugging Face: https://huggingface.co/apertixai/cerno-4b-v1.2
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Cerno 27B: https://huggingface.co/apertixai/cerno-27b
 - Cerno 9B v1.2: https://huggingface.co/apertixai/cerno-9b-v1.2

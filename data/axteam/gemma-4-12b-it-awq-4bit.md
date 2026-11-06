@@ -106,7 +106,7 @@ La comparación se limita a las variantes de cuantización del mismo modelo base
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/axteam/gemma-4-12B-it-AWQ-4bit
+- Repositorio Hugging Face: https://huggingface.co/axteam/gemma-4-12B-it-AWQ-4bit
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
 - lm-evaluation-harness: https://github.com/EleutherAI/lm-evaluation-harness

@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible en el 
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sardines-mlp | Hasta 12.000 pesos (400 × 30) | No aplica | Reproduccion de Toy Models of Superposition | MIT | HuggingFace y GitHub |
+| sardines-mlp | Hasta 12.000 pesos (400 × 30) | No aplica | Reproduccion de Toy Models of Superposition | MIT | Hugging Face y GitHub |
 | Toy Models of Superposition (original, Elhage et al. 2022) | No disponible | No aplica | Articulo con experimentos; no publica pesos | No disponible | Transformer Circuits |
 | Otros modelos toy de interpretabilidad | No disponible | No aplica | No disponible | No disponible | No disponible |
 
@@ -87,6 +87,6 @@ No se dispone de informacion sobre otros repositorios de pesos comparables en la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/coeiico/sardines-mlp
+- Hugging Face: https://huggingface.co/coeiico/sardines-mlp
 - GitHub del proyecto: https://github.com/coeiico/sardines-mlp
 - Paper original: https://transformer-circuits.pub/2022/toy_model/index.html

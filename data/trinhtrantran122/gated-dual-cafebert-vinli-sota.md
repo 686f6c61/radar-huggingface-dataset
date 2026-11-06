@@ -4,7 +4,7 @@
 
 El modelo `gated-dual-cafebert-vinli-sota` es un checkpoint de clasificacion de inferencia de lenguaje natural (NLI) en vietnamita, desarrollado por el usuario trinhtrantran122. Esta construido sobre CafeBERT, un modelo derivado de XLM-RoBERTa afinado sobre un corpus extenso en vietnamita (segun el articulo arXiv:2403.15882), y anade una arquitectura "Gated-Dual" con dos encoders combinados mediante un mecanismo de compuerta, junto con Multi-Sample Dropout de 5 trayectorias (MSD 5-path) y Parameter Exponential Moving Average (EMA).
 
-El modelo esta orientado al benchmark ViNLI (Vietnamese Multi-genre NLI) con una longitud maxima de secuencia de 512 tokens. El repositorio ocupa 2,3 GB, lo que sugiere aproximadamente 560 millones de parametros en precision fp32, aunque el numero exacto no se especifica en la model card. El checkpoint se publico el 29 de agosto de 2026 y no cuenta con descargas ni valoraciones en HuggingFace.
+El modelo esta orientado al benchmark ViNLI (Vietnamese Multi-genre NLI) con una longitud maxima de secuencia de 512 tokens. El repositorio ocupa 2,3 GB, lo que sugiere aproximadamente 560 millones de parametros en precision fp32, aunque el numero exacto no se especifica en la model card. El checkpoint se publico el 29 de agosto de 2026 y no cuenta con descargas ni valoraciones en Hugging Face.
 
 La model card declara un estado "SOTA" para ViNLI, pero el valor de Test Macro-F1 aparece como "N/A", por lo que no se puede verificar dicha afirmacion con datos publicos. Tampoco se especifica la licencia, lo que genera incertidumbre sobre su uso comercial.
 
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - En la practica, sumando activaciones, cache de atencion y overhead del runtime, se recomienda al menos 4 GB de VRAM para inferencia en fp16.
 - GPU recomendadas: cualquier GPU consumer con 4 GB o mas de VRAM (p. ej., RTX 3060, RTX 4060) es suficiente para inferencia.
 - Para fine-tuning, se recomienda al menos 12 GB de VRAM (RTX 3060 12GB o superior).
-- Opciones de despliegue: HuggingFace Transformers, ONNX Runtime, TorchServe. La compatibilidad con vLLM, llama.cpp u Ollama no esta documentada.
+- Opciones de despliegue: Hugging Face Transformers, ONNX Runtime, TorchServe. La compatibilidad con vLLM, llama.cpp u Ollama no esta documentada.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -76,7 +76,7 @@ Nota: CafeBERT y PhoBERT son modelos base no especializados en NLI. El modelo ga
 
 - La licencia no esta especificada, lo que genera incertidumbre legal sobre su uso comercial y redistribucion.
 - No se han publicado resultados de benchmarks verificables; la afirmacion de "SOTA" en la model card no esta respaldada por metricas concretas (Test Macro-F1: N/A).
-- El modelo tiene 0 descargas y 0 valoraciones en HuggingFace, por lo que no hay evidencia de validacion externa ni pruebas en produccion.
+- El modelo tiene 0 descargas y 0 valoraciones en Hugging Face, por lo que no hay evidencia de validacion externa ni pruebas en produccion.
 - Limitado exclusivamente al idioma vietnamita; no sirve para otros idiomas.
 - Longitud de contexto limitada a 512 tokens, insuficiente para documentos largos o conversaciones multi-turno extensas.
 - No se documentan sesgos especificos, pero al derivar de XLM-RoBERTa afinado en vietnamita, podria heredar sesgos presentes en los datos de entrenamiento originales.
@@ -85,7 +85,7 @@ Nota: CafeBERT y PhoBERT son modelos base no especializados en NLI. El modelo ga
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/trinhtrantran122/gated-dual-cafebert-vinli-sota
-- CafeBERT (modelo base) en HuggingFace: https://huggingface.co/uitnlp/CafeBERT
+- Modelo en Hugging Face: https://huggingface.co/trinhtrantran122/gated-dual-cafebert-vinli-sota
+- CafeBERT (modelo base) en Hugging Face: https://huggingface.co/uitnlp/CafeBERT
 - Articulo de CafeBERT en arXiv: https://arxiv.org/pdf/2403.15882
 - Repositorio

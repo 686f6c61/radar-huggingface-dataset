@@ -2,7 +2,7 @@
 
 ## Resumen
 
-famegrid es un adaptador LoRA de generacion de imagenes texto-a-imagen publicado en HuggingFace por el usuario Rand000mGuy. El adaptador se construye sobre el modelo de difusion krea/Krea-2-Turbo, declarado como modelo base en las etiquetas y en el campo `base_model` de la model card, y se distribuye con la libreria diffusers bajo la plantilla `template:diffusion-lora`. El repositorio ocupa 1,6 GB y fue creado el 19 de septiembre de 2026, con una unica actualizacion dos minutos despues, lo que indica un artefacto subido sin iteraciones posteriores.
+famegrid es un adaptador LoRA de generacion de imagenes texto-a-imagen publicado en Hugging Face por el usuario Rand000mGuy. El adaptador se construye sobre el modelo de difusion krea/Krea-2-Turbo, declarado como modelo base en las etiquetas y en el campo `base_model` de la model card, y se distribuye con la libreria diffusers bajo la plantilla `template:diffusion-lora`. El repositorio ocupa 1,6 GB y fue creado el 19 de septiembre de 2026, con una unica actualizacion dos minutos despues, lo que indica un artefacto subido sin iteraciones posteriores.
 
 El proposito declarado, inferido del prompt de ejemplo incluido en la model card, es anadir una estetica concreta de retrato fotorrealista en primer plano con aspecto de selfie de movil, mediante la palabra de activacion `famegrid`. El ejemplo proporcionado por el autor detalla encuadre, iluminacion natural, textura de piel, maquillaje y joyeria, ademas de instrucciones negativas extensas sobre elementos de interfaz, marcas de agua y filtros de belleza.
 
@@ -57,7 +57,7 @@ El unico rastro del comportamiento esperado es el prompt de ejemplo, muy detalla
 - Creacion de material sintetico para investigacion en vision por computador: los retratos generados pueden usarse como datos de aumento en tareas de deteccion facial, siempre que se revise la licencia y se documente la procedencia sintetica.
 - Construccion de bibliotecas de personajes con identidad consistente: el prompt insiste en preservar la identidad facial, lo que puede aprovecharse para generar series de imagenes de un mismo personaje en distintos escenarios.
 - Pruebas de concepto en pipelines de difusion con la libreria diffusers: al declarar `diffusers` como libreria, el adaptador puede cargarse sobre el modelo base dentro de un script de Python para experimentar con personalizacion de bajo rango.
-- Experimentacion academica sobre LoRA y personalizacion de modelos de difusion: sirve como ejemplo de adaptador subido sin documentacion de entrenamiento, util para estudiar practicas de publicacion y reproducibilidad en HuggingFace.
+- Experimentacion academica sobre LoRA y personalizacion de modelos de difusion: sirve como ejemplo de adaptador subido sin documentacion de entrenamiento, util para estudiar practicas de publicacion y reproducibilidad en Hugging Face.
 - Generacion de avatares o imagenes de perfil con estetica de selfie: el ejemplo describe una composicion tipo selfi a distancia de brazo, aplicable a la creacion de imagenes de perfil para entornos de prueba.
 - Exploracion de contenido para adultos: parte del prompt de ejemplo describe atributos fisicos de forma explicita, por lo que el caso de uso para contenido para adultos es tecnicamente posible, aunque no se declaran filtros de seguridad ni condiciones de uso.
 
@@ -81,8 +81,8 @@ No se dispone de informacion sobre otros adaptadores comparables entrenados sobr
 
 | Modelo | Tipo | Parametros | Longitud de contexto / resolucion | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Rand000mGuy/famegrid | LoRA de difusion texto-a-imagen | no disponible | no disponible | no disponible | no disponible | Publico en HuggingFace, 0 descargas |
-| krea/Krea-2-Turbo | Modelo base de difusion texto-a-imagen | no disponible en la informacion | no disponible en la informacion | no disponible en la informacion | no disponible en la informacion | Publico en HuggingFace |
+| Rand000mGuy/famegrid | LoRA de difusion texto-a-imagen | no disponible | no disponible | no disponible | no disponible | Publico en Hugging Face, 0 descargas |
+| krea/Krea-2-Turbo | Modelo base de difusion texto-a-imagen | no disponible en la informacion | no disponible en la informacion | no disponible en la informacion | no disponible en la informacion | Publico en Hugging Face |
 | Otros LoRA sobre Krea-2-Turbo | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -101,7 +101,7 @@ No se dispone de informacion sobre otros adaptadores comparables entrenados sobr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rand000mGuy/famegrid
+- Modelo en Hugging Face: https://huggingface.co/Rand000mGuy/famegrid
 - Archivos del repositorio: https://huggingface.co/Rand000mGuy/famegrid/tree/main
 - Modelo base declarado: https://huggingface.co/krea/Krea-2-Turbo
 - Libreria diffusers: https://github.com/huggingface/diffusers

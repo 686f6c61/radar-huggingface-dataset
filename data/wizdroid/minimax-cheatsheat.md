@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`wizdroid/minimax-cheatsheat` no es un modelo de aprendizaje automatico: es un repositorio de HuggingFace que contiene una hoja de calculo (`.xlsx`) con un banco de frases para redactar prompts del sistema de generacion de video MiniMax Hailuo H3. El autor, `wizdroid`, lo publica bajo licencia MIT y lo describe explicitamente como un "cheatsheet": 184 filas organizadas en 12 hojas tematicas (movimientos de camara, encuadre y optica, cortes, biblioteca de voces, expresiones faciales, dialogo e idiomas, sonido, iluminacion, modos de referencia y estructura de prompt) mas una hoja de referencias bibliograficas. El repositorio no incluye pesos, tokenizador, configuracion de inferencia ni codigo de ejecucion.
+`wizdroid/minimax-cheatsheat` no es un modelo de aprendizaje automatico: es un repositorio de Hugging Face que contiene una hoja de calculo (`.xlsx`) con un banco de frases para redactar prompts del sistema de generacion de video MiniMax Hailuo H3. El autor, `wizdroid`, lo publica bajo licencia MIT y lo describe explicitamente como un "cheatsheet": 184 filas organizadas en 12 hojas tematicas (movimientos de camara, encuadre y optica, cortes, biblioteca de voces, expresiones faciales, dialogo e idiomas, sonido, iluminacion, modos de referencia y estructura de prompt) mas una hoja de referencias bibliograficas. El repositorio no incluye pesos, tokenizador, configuracion de inferencia ni codigo de ejecucion.
 
 El problema que resuelve es de naturaleza practica y de ingenieria de prompts: fijar un vocabulario comun (verbos oficiales de camara, marcadores de retencion, identificadores de hablante, etiquetas de estructura) para que los prompts de video sean reproducibles entre miembros de un equipo y entre ejecuciones. Es relevante ahora porque los sistemas de generacion de video condicionados por texto, imagen inicial, imagen final o referencias exigen una gramatica de prompt mucho mas estricta que la generacion de texto, y la mayoria del conocimiento practico circula en notas dispersas en lugar de en artefactos versionados y parseables.
 
@@ -26,7 +26,7 @@ En cuanto a especificaciones tecnicas del modelo subyacente (MiniMax Hailuo H3),
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-10-25T11:42:15Z |
 | Ultima actualizacion | 2026-10-25T11:44:51Z |
-| Pipeline de HuggingFace | No disponible |
+| Pipeline de Hugging Face | No disponible |
 
 ## Arquitectura y entrenamiento
 
@@ -95,6 +95,6 @@ No disponible. La busqueda web realizada no devolvio resultados relevantes sobre
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/wizdroid/minimax-cheatsheat
+- Repositorio en Hugging Face: https://huggingface.co/wizdroid/minimax-cheatsheat
 - Fichero del cheatsheet: https://huggingface.co/wizdroid/minimax-cheatsheat/blob/main/miniax-h3-cheatsheet-categorized.xlsx
 - Resultados de busqueda web: no se han encontrado enlaces relevantes (papers, blogs, repos o demos) asociados a este repositorio en la informacion proporcionada.

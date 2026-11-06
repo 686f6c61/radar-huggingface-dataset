@@ -76,8 +76,8 @@ No disponible. No se han identificado modelos comparables específicos para tran
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mlx-community/SenseNova-U1.5-8B-MoT-pose-8bit
-- Modelo base en HuggingFace: https://huggingface.co/sensenova/SenseNova-U1.5-8B-MoT
+- Modelo en Hugging Face: https://huggingface.co/mlx-community/SenseNova-U1.5-8B-MoT-pose-8bit
+- Modelo base en Hugging Face: https://huggingface.co/sensenova/SenseNova-U1.5-8B-MoT
 - Colección MLX de SenseNova-U1.5-8B-MoT: https://huggingface.co/collections/mlx-community/sensenova-u15-8b-mot-mlx
 - Repositorio GitHub de SenseNova-U1: https://github.com/OpenSenseNova/SenseNova-U1
 - Página en Papers with Code: https://paperswithcode.co/paper/109749

@@ -1,7 +1,7 @@
 # uub336/Qwen3.8-27B-pi-mlx-4bit
 
 ## Resumen
-El repositorio `uub336/Qwen3.8-27B-pi-mlx-4bit` es una conversión a formato MLX y cuantización de 4 bits de un modelo de 27.356.728.560 parámetros (unos 27,36 mil millones) con capacidad declarada de entrada imagen-texto y uso conversacional. Lo publica el usuario uub336 en HuggingFace, sin model card sustantiva, sin licencia declarada y sin métricas de evaluación publicadas en la información disponible. El nombre sugiere un origen en la familia Qwen (el tag `qwen3_5` apunta a la arquitectura declarada por el autor), pero no se documenta cuál es el modelo base exacto, su proceso de entrenamiento ni sus pesos originales.
+El repositorio `uub336/Qwen3.8-27B-pi-mlx-4bit` es una conversión a formato MLX y cuantización de 4 bits de un modelo de 27.356.728.560 parámetros (unos 27,36 mil millones) con capacidad declarada de entrada imagen-texto y uso conversacional. Lo publica el usuario uub336 en Hugging Face, sin model card sustantiva, sin licencia declarada y sin métricas de evaluación publicadas en la información disponible. El nombre sugiere un origen en la familia Qwen (el tag `qwen3_5` apunta a la arquitectura declarada por el autor), pero no se documenta cuál es el modelo base exacto, su proceso de entrenamiento ni sus pesos originales.
 
 Su interés práctico es acotado pero concreto: se trata de un artefacto de pesos ya convertido a MLX, un framework de Apple para ejecución en Apple Silicon, y comprimido a 4 bits, lo que reduce el requisito de memoria hasta unos 16 GB. Eso permite plantear inferencia local de un modelo de escala 27B en equipos con memoria unificada, algo fuera del alcance de una GPU de consumo con pesos en FP16 (unos 55 GB).
 
@@ -80,7 +80,7 @@ No disponible. El repositorio no identifica su modelo base, no declara licencia 
 - La búsqueda web realizada no devolvió documentación técnica sobre este repositorio; los resultados obtenidos no guardan relación con el modelo.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/uub336/Qwen3.8-27B-pi-mlx-4bit
+- Hugging Face: https://huggingface.co/uub336/Qwen3.8-27B-pi-mlx-4bit
 - Model card: no disponible (el README solo contiene metadatos)
 - Paper, blog o repositorio del autor: no disponible
 - Demos o espacios asociados: no disponible

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MDE-01-GUNPACK es un repositorio publicado en HuggingFace por el usuario 5iisskun. Por el identificador, el nombre y el tamano del repositorio (0,1 GB), todo apunta a un artefacto de pesos o un empaquetado de un modelo propio de pequena escala, pero no se ha publicado informacion tecnica que lo confirme. No hay pipeline declarado, ni licencia, ni idiomas, ni descripcion en la ficha del repositorio.
+MDE-01-GUNPACK es un repositorio publicado en Hugging Face por el usuario 5iisskun. Por el identificador, el nombre y el tamano del repositorio (0,1 GB), todo apunta a un artefacto de pesos o un empaquetado de un modelo propio de pequena escala, pero no se ha publicado informacion tecnica que lo confirme. No hay pipeline declarado, ni licencia, ni idiomas, ni descripcion en la ficha del repositorio.
 
 El modelo no cuenta con documentacion publica asociada: no se han encontrado papers, blogs, repos de codigo ni demos que describan su arquitectura, datos de entrenamiento o rendimiento. El repositorio tiene 0 descargas y 1 like, lo que sugiere que se trata de una publicacion reciente y sin adopcion comunitaria.
 
@@ -39,7 +39,7 @@ Tampoco hay datos sobre el corpus de entrenamiento, el numero de tokens procesad
 
 - Evaluacion experimental en entornos de investigación: dado que no hay documentacion, el unico uso razonable es la inspeccion tecnica del repositorio para determinar que contiene realmente antes de plantear cualquier aplicacion.
 - Pruebas de carga y validacion de pipelines de inferencia: se podria usar como artefacto de prueba para verificar que un pipeline (por ejemplo, transformers o llama.cpp) carga correctamente pesos de un repositorio desconocido.
-- Analisis de seguridad de artefactos de HuggingFace: util para estudiar como se comportan las herramientas de escaneo ante repositorios sin metadatos ni licencia.
+- Analisis de seguridad de artefactos de Hugging Face: util para estudiar como se comportan las herramientas de escaneo ante repositorios sin metadatos ni licencia.
 - Docencia sobre publicacion de modelos: sirve como ejemplo de repositorio incompleto para ilustrar que metadatos minimos deberia incluir una ficha de modelo.
 - Comparacion de tamanos de repositorio: permite contrastar el peso en disco (0,1 GB) frente a modelos documentados de tamano similar para calibrar expectativas de cuantizacion.
 - No se recomienda su uso en produccion, atencion al cliente, generacion de codigo ni ninguna tarea real hasta que el autor publique documentacion tecnica verificable.
@@ -73,5 +73,5 @@ No disponible. No se ha identificado ningun modelo comparable porque se desconoc
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/5iisskun/MDE-01-GUNPACK
+- Repositorio en Hugging Face: https://huggingface.co/5iisskun/MDE-01-GUNPACK
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la busqueda web.

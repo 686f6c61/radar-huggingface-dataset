@@ -97,7 +97,7 @@ La diferencia decisiva frente al modelo original no es de calidad, sino de ubica
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/peonist-ai/halogen-npu-qwen3-embedding-4b
+- Modelo en Hugging Face: https://huggingface.co/peonist-ai/halogen-npu-qwen3-embedding-4b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Embedding-4B
 - Repositorio del servidor: https://github.com/peonist-ai/halogen-flash-server
 - Documentación de NPU: https://github.com/peonist-ai/halogen-flash-server/blob/main/docs/NPU.md

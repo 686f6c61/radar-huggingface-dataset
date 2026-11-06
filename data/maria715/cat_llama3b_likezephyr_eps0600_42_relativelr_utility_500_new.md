@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CAT_llama3b_likeZephyr_eps0600_42_relativelr_utility_500_NEW es un adaptador LoRA publicado en HuggingFace por el usuario maria715. La model card lo describe como un "LoRA adapter from Master's thesis experiments on adversarial training for LLM robustness", es decir, un artefacto de investigacion derivado de experimentos de tesis de master sobre entrenamiento adversarial aplicado a la robustez de modelos de lenguaje. El repositorio ocupa 1,2 GB y declara las etiquetas `peft`, `safetensors`, `lora`, `adversarial-training` y `region:us`, lo que confirma que no es un modelo completo, sino pesos de adaptacion que deben cargarse sobre un modelo base.
+CAT_llama3b_likeZephyr_eps0600_42_relativelr_utility_500_NEW es un adaptador LoRA publicado en Hugging Face por el usuario maria715. La model card lo describe como un "LoRA adapter from Master's thesis experiments on adversarial training for LLM robustness", es decir, un artefacto de investigacion derivado de experimentos de tesis de master sobre entrenamiento adversarial aplicado a la robustez de modelos de lenguaje. El repositorio ocupa 1,2 GB y declara las etiquetas `peft`, `safetensors`, `lora`, `adversarial-training` y `region:us`, lo que confirma que no es un modelo completo, sino pesos de adaptacion que deben cargarse sobre un modelo base.
 
 El identificador contiene fragmentos que parecen corresponder a hiperparametros del experimento (`eps0600`, `relativelr`, `utility_500`, `42`), pero el autor no documenta su significado en la model card, por lo que cualquier lectura de esos valores es una inferencia y no un dato confirmado. El nombre incluye tambien `llama3b`, que apunta a un modelo base de la familia Llama de aproximadamente 3.000 millones de parametros, y `likeZephyr`, que podria remitir a una receta de ajuste inspirada en Zephyr; ninguna de las dos cosas esta verificada en la informacion disponible.
 
@@ -98,5 +98,5 @@ La comparacion directa es metodologicamente limitada porque este artefacto es un
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/maria715/CAT_llama3b_likeZephyr_eps0600_42_relativelr_utility_500_NEW
+- Hugging Face: https://huggingface.co/maria715/CAT_llama3b_likeZephyr_eps0600_42_relativelr_utility_500_NEW
 - Paper, blog, repositorio o demo asociados: no disponible. La busqueda web no ha devuelto enlaces adicionales (publicacion de tesis, codigo de entrenamiento, dataset o evaluacion) vinculados a este modelo.

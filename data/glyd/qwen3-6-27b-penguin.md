@@ -97,7 +97,7 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/glyd/Qwen3.6-27B-penguin
+- Modelo en Hugging Face: https://huggingface.co/glyd/Qwen3.6-27B-penguin
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B
 - Commit del modelo base utilizado: https://huggingface.co/Qwen/Qwen3.6-27B/tree/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9
 - Variante kestrel (unos 6,5 bits por peso): https://huggingface.co/glyd/Qwen3.6-27B-kestrel
@@ -105,4 +105,4 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 - Sitio del runtime glyd: https://getglyd.com
 - Script de instalacion: https://getglyd.com/install.sh
 
-Nota: la búsqueda web realizada no devolvió ningún resultado relevante sobre este modelo; los enlaces anteriores proceden de la información de HuggingFace y de la model card del autor. No se dispone de papers, blogs ni demos adicionales.
+Nota: la búsqueda web realizada no devolvió ningún resultado relevante sobre este modelo; los enlaces anteriores proceden de la información de Hugging Face y de la model card del autor. No se dispone de papers, blogs ni demos adicionales.

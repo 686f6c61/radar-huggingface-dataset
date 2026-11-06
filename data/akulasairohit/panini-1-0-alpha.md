@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Panini 1.0 Alpha (denominado P-ISA, *Pāṇinian Instruction-Set Architecture*) no es una red neuronal al uso: es un motor determinista de reglas para sánscrito que combina un parser chart inverso de *padaccheda* (segmentación de texto sánscrito continuo en sus palabras constituyentes) con la ejecución en C99 de las reglas gramaticales de Pāṇini. Lo desarrolla Sai Rohit Chakrapani Akula y se publica en HuggingFace bajo la librería `transformers` con código personalizado (`custom_code`).
+Panini 1.0 Alpha (denominado P-ISA, *Pāṇinian Instruction-Set Architecture*) no es una red neuronal al uso: es un motor determinista de reglas para sánscrito que combina un parser chart inverso de *padaccheda* (segmentación de texto sánscrito continuo en sus palabras constituyentes) con la ejecución en C99 de las reglas gramaticales de Pāṇini. Lo desarrolla Sai Rohit Chakrapani Akula y se publica en Hugging Face bajo la librería `transformers` con código personalizado (`custom_code`).
 
 El problema que aborda es concreto y bien delimitado dentro del NLP formal del sánscrito: la resolución de *sandhi* (transformaciones eufónicas en frontera de palabra), la invariancia de casos *kāraka* respecto al orden de palabras y la verificación de prosodia métrica (*chandas*). El autor declara que el motor funciona sin GPU, con menos de 4 MB de RAM y cero parámetros neuronales, apoyándose en operaciones bitwise sobre registros de 64 bits que mapean los 43 fonemas de Pāṇini y los pesos moraicos binarios de Piṅgala.
 
@@ -80,7 +80,7 @@ Comparativa con los sistemas citados por el propio autor en la model card para l
 
 | Modelo | Parametros | Token F1 (sandhi) | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Panini 1.0 Alpha (P-ISA) | 0 (motor de reglas) | 84,59 | No aplica | AGPL-3.0 | HuggingFace (`akulasairohit/panini-1.0-alpha`) |
+| Panini 1.0 Alpha (P-ISA) | 0 (motor de reglas) | 84,59 | No aplica | AGPL-3.0 | Hugging Face (`akulasairohit/panini-1.0-alpha`) |
 | Vaswani Transformer baseline | 100 M+ (citado por el autor) | 84,9 | No disponible | No disponible | No disponible |
 | ByT5 | No disponible | 82,7 | No disponible | No disponible | No disponible |
 | BiLSTM-CRF | No disponible | 79,8 | No disponible | No disponible | No disponible |
@@ -98,12 +98,12 @@ El dato relevante de la comparación es que el motor de reglas se sitúa en el m
 - Licencia AGPL-3.0: es una licencia copyleft fuerte. Integrar el motor en un servicio ofrecido por red puede obligar a liberar el código fuente de la obra derivada. Conviene revisar la compatibilidad antes de un uso comercial o de incorporarlo a un producto propietario.
 - Adopción muy baja en el momento de la consulta: 0 descargas y 1 *like*. No hay evidencia de uso en producción ni de validación por terceros.
 - El repositorio depende de `custom_code` y de ficheros auxiliares (`sighum_word_counts.json`), lo que implica revisar el código antes de ejecutarlo en un entorno de producción, dado que `trust_remote_code` no es un mecanismo exento de riesgo.
-- Fecha de creación declarada en HuggingFace: 2026-09-12. Es posterior a la fecha habitual de consulta; conviene tratarla como dato tal cual figura en el repositorio.
+- Fecha de creación declarada en Hugging Face: 2026-09-12. Es posterior a la fecha habitual de consulta; conviene tratarla como dato tal cual figura en el repositorio.
 - La búsqueda web realizada no devolvió resultados relevantes sobre este modelo (los resultados obtenidos correspondían a un sitio de solitario en francés), por lo que no hay fuentes independientes que corroboren las afirmaciones de la model card.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/akulasairohit/panini-1.0-alpha
+- Modelo en Hugging Face: https://huggingface.co/akulasairohit/panini-1.0-alpha
 - Dataset del benchmark de sandhi citado por el autor: https://huggingface.co/datasets/chronbmm/sanskrit-sandhi-split-sighum
 - Análisis de benchmark del repositorio: `BENCHMARK.md` (dentro del repositorio del modelo)
 - Script de reproducción local: `reproduce_benchmark.py` (dentro del repositorio del modelo)

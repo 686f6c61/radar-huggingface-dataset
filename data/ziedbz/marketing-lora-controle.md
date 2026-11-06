@@ -4,7 +4,7 @@
 
 El modelo `ZiedBz/marketing-lora-controle` es un adaptador LoRA (Low-Rank Adaptation) entrenado por ZiedBz para la generación de estrategias de marketing. Forma parte de un estudio controlado que compara tres métodos de generación de datos sintéticos (combinatorio, reformulación y self-instruct) frente a un grupo de control entrenado únicamente con datos reales. El objetivo del estudio es determinar qué método produce el mejor modelo a volumen de entrenamiento igual.
 
-El adaptador está pensado para generar respuestas estructuradas de estrategia de marketing: incluye presupuesto cifrado, canales concretos y mecanismos de seguimiento. El repositorio pesa 0,1 GB y contiene pesos en formato safetensors. No se especifica la arquitectura del modelo base sobre el que se aplica el LoRA, ni el número de parámetros, ni la licencia. El modelo se creó en septiembre de 2026 y no cuenta con descargas ni valoraciones en HuggingFace.
+El adaptador está pensado para generar respuestas estructuradas de estrategia de marketing: incluye presupuesto cifrado, canales concretos y mecanismos de seguimiento. El repositorio pesa 0,1 GB y contiene pesos en formato safetensors. No se especifica la arquitectura del modelo base sobre el que se aplica el LoRA, ni el número de parámetros, ni la licencia. El modelo se creó en septiembre de 2026 y no cuenta con descargas ni valoraciones en Hugging Face.
 
 La relevancia de este modelo reside en su uso como referencia dentro de un benchmark metodológico: permite aislar el efecto de añadir datos sintéticos frente a entrenar solo con datos reales, y aporta evidencia sobre qué características de los datos sintéticos influyen realmente en el rendimiento final del modelo.
 
@@ -61,7 +61,7 @@ El estudio concluye que la variante B (reformulacion) supera al control en +6,7 
 
 - Al ser un adaptador LoRA de 0,1 GB, el peso adicional sobre el modelo base es mínimo. La VRAM necesaria depende del modelo base sobre el que se cargue.
 - Si el modelo base es de tamaño pequeño (por ejemplo, 1-3B de parametros), cabe en GPUs consumer como RTX 3060 (12 GB) o superiores.
-- No se especifican requisitos de inferencia específicos. Al ser un LoRA, puede integrarse en frameworks como HuggingFace PEFT, vLLM, llama.cpp (si se convierte a GGUF) o cualquier sistema que soporte adaptadores LoRA.
+- No se especifican requisitos de inferencia específicos. Al ser un LoRA, puede integrarse en frameworks como Hugging Face PEFT, vLLM, llama.cpp (si se convierte a GGUF) o cualquier sistema que soporte adaptadores LoRA.
 - Para el entrenamiento, el estudio usó un unico run con 2 epocas sobre 512 ejemplos, lo que requiere recursos modestos (una GPU con al menos 8-10 GB de VRAM, dependiendo del modelo base).
 - No se dispone de datos de latencia ni throughput, ya que dependen del modelo base y del hardware de despliegue.
 
@@ -80,7 +80,7 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (Lo
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/ZiedBz/marketing-lora-controle)
+- [Modelo en Hugging Face](https://huggingface.co/ZiedBz/marketing-lora-controle)
 - [Dataset original de partida](https://huggingface.co/datasets/RafaM97/marketing_social_media)
 - [Datasets sinteticos generados](https://huggingface.co/datasets/ZiedBz/marketing-synth-data)
 - [Juegos de entrenamiento](https://huggingface.co/datasets/ZiedBz/marketing-synth-training)

@@ -21,7 +21,7 @@ El modelo mantiene la arquitectura original de Llama 3.1 de 8 mil millones de pa
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura Llama 3.1 de Meta, un transformer decoder-only con normalización RMSNorm, activación SwiGLU y atención con *rotary positional embeddings* (RoPE). El modelo base es la versión instruct de 8B parámetros, que ya incorpora un entrenamiento mixto con SFT y RLHF (DPO) para alineación con instrucciones. El ajuste fino adicional se realizó con la librería Unsloth, que optimiza el entrenamiento mediante kernels de atención y operaciones de memoria eficientes, y con la librería TRL de HuggingFace para el pipeline de SFT.
+El modelo se basa en la arquitectura Llama 3.1 de Meta, un transformer decoder-only con normalización RMSNorm, activación SwiGLU y atención con *rotary positional embeddings* (RoPE). El modelo base es la versión instruct de 8B parámetros, que ya incorpora un entrenamiento mixto con SFT y RLHF (DPO) para alineación con instrucciones. El ajuste fino adicional se realizó con la librería Unsloth, que optimiza el entrenamiento mediante kernels de atención y operaciones de memoria eficientes, y con la librería TRL de Hugging Face para el pipeline de SFT.
 
 Los detalles del conjunto de datos de entrenamiento no están disponibles en la información publicada. El nombre del repositorio indica que se utilizó la primera tercera parte de un conjunto de datos llamado `old-bird-names-v2`, con una semilla aleatoria fija (`seed3`). No se especifica el número de tokens de entrenamiento, la composición exacta del dataset, ni si se aplicaron técnicas adicionales como DPO o RLHF en esta fase. El entrenamiento se realizó con Unsloth, que reporta una aceleración de 2x respecto a un entrenamiento estándar.
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - VRAM estimada para inferencia: el modelo tiene 8,03 B parámetros. En precisión fp16, ocupa aproximadamente 16 GB de VRAM. Con cuantización a 8 bits, se reduce a unos 8 GB; con 4 bits, a unos 4-5 GB.
 - GPU recomendadas: para fp16, una GPU con 24 GB de VRAM (RTX 3090/4090, A10G, L4) es suficiente. Para cuantización 8 bits, una GPU de 16 GB (RTX 4080, A10) puede ser suficiente. Para 4 bits, una GPU de 8 GB (RTX 3070, RTX 4060) es viable.
 - Compatibilidad con GPU de consumo: sí, con cuantización es posible ejecutarlo en GPUs de consumo de gama media-alta.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, HuggingFace TGI, Text Generation Inference, entre otros. El modelo es compatible con `transformers` y `text-generation-inference`.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, Hugging Face TGI, Text Generation Inference, entre otros. El modelo es compatible con `transformers` y `text-generation-inference`.
 - Latencia y throughput: no se han publicado datos específicos. Como referencia, un Llama 3.1 8B en fp16 en una A100 puede generar entre 50 y 100 tokens por segundo, dependiendo de la configuración.
 
 ## Comparativa con modelos similares
@@ -76,7 +76,7 @@ La comparativa se limita al modelo base, ya que no hay otros modelos de la misma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/localized-ft/Llama-3.1-8B-old-bird-names-first-third-v2-sft-seed3
+- Modelo en Hugging Face: https://huggingface.co/localized-ft/Llama-3.1-8B-old-bird-names-first-third-v2-sft-seed3
 - Modelo base (Unsloth): https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct
 - Repositorio de Llama 3.1 de Meta: https://github.com/meta-llama/llama-models/tree/main/models/llama3_1
 - Unsloth: https://github.com/unslothai/unsloth

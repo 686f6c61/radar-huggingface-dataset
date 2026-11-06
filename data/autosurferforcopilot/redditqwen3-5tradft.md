@@ -59,10 +59,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| RedditQwen3.5TradFt | 9,4B | no disponible | other | HuggingFace |
-| Llama 3.1 8B | 8B | 128K | Llama 3.1 Community License | HuggingFace |
-| Mistral 7B | 7B | 32K | Apache 2.0 | HuggingFace |
-| Qwen3.5-9B (base) | 9,4B | no disponible | Apache 2.0 (presumible) | HuggingFace |
+| RedditQwen3.5TradFt | 9,4B | no disponible | other | Hugging Face |
+| Llama 3.1 8B | 8B | 128K | Llama 3.1 Community License | Hugging Face |
+| Mistral 7B | 7B | 32K | Apache 2.0 | Hugging Face |
+| Qwen3.5-9B (base) | 9,4B | no disponible | Apache 2.0 (presumible) | Hugging Face |
 
 No se dispone de datos de rendimiento para comparar. La comparativa se limita a características estructurales. El modelo base Qwen3.5-9B es presumiblemente más documentado y con mejor soporte que este fine‑tune.
 
@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento para comparar. La comparativa se limita a 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AutoSurferForCopilot/RedditQwen3.5TradFt
+- Hugging Face: https://huggingface.co/AutoSurferForCopilot/RedditQwen3.5TradFt
 - Perfil del autor: https://huggingface.co/AutoSurferForCopilot
 - Modelo similar (RedditQwen3.5FtPoc): https://huggingface.co/AutoSurferForCopilot/RedditQwen3.5FtPoc
 - Referencia de despliegue en FriendliAI: https://friendli.ai/models/AutoSurferForCopilot/RedditQwen3.5FtPoc

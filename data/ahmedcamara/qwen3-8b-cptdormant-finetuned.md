@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `AhmedCamara/Qwen3-8B-cptdormant-finetuned` es un adaptador LoRA (Low-Rank Adaptation) entrenado sobre el modelo base `unsloth/qwen3-8b-unsloth-bnb-4bit`, que a su vez es una versión cuantizada a 4 bits de Qwen3-8B, el modelo de lenguaje de 8 mil millones de parámetros desarrollado por Alibaba. El adaptador fue creado por el usuario AhmedCamara y subido a HuggingFace el 14 de agosto de 2026, aunque la model card está completamente vacía, sin descripción, datos de entrenamiento, licencia ni idiomas especificados.
+El modelo `AhmedCamara/Qwen3-8B-cptdormant-finetuned` es un adaptador LoRA (Low-Rank Adaptation) entrenado sobre el modelo base `unsloth/qwen3-8b-unsloth-bnb-4bit`, que a su vez es una versión cuantizada a 4 bits de Qwen3-8B, el modelo de lenguaje de 8 mil millones de parámetros desarrollado por Alibaba. El adaptador fue creado por el usuario AhmedCamara y subido a Hugging Face el 14 de agosto de 2026, aunque la model card está completamente vacía, sin descripción, datos de entrenamiento, licencia ni idiomas especificados.
 
 El repositorio tiene un tamaño de solo 0.2 GB, lo que confirma que se trata de un adaptador PEFT (Parameter-Efficient Fine-Tuning) y no de los pesos completos del modelo. Las etiquetas indican que se utilizó la librería `peft`, el framework `transformers`, `trl` y `unsloth`, con un entrenamiento de tipo SFT (Supervised Fine-Tuning). Al carecer de documentación, la utilidad práctica de este adaptador es incierta: no se especifica la tarea, el dataset ni los hiperparámetros de entrenamiento, por lo que cualquier uso en producción requeriría una evaluación previa rigurosa.
 
@@ -67,9 +67,9 @@ No se dispone de información sobre adaptadores comparables. El modelo base Qwen
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3-8B (base) | 8.000 M | 32.768 | Apache 2.0 | HuggingFace |
-| Llama 3.1 8B | 8.000 M | 131.072 | Llama 3.1 License | HuggingFace |
-| Mistral 7B | 7.000 M | 32.768 | Apache 2.0 | HuggingFace |
+| Qwen3-8B (base) | 8.000 M | 32.768 | Apache 2.0 | Hugging Face |
+| Llama 3.1 8B | 8.000 M | 131.072 | Llama 3.1 License | Hugging Face |
+| Mistral 7B | 7.000 M | 32.768 | Apache 2.0 | Hugging Face |
 
 Este adaptador no añade información relevante a la comparativa, ya que no se conocen sus métricas ni su comportamiento específico.
 
@@ -85,5 +85,5 @@ Este adaptador no añade información relevante a la comparativa, ya que no se c
 
 ## Enlaces
 
-- [HuggingFace: AhmedCamara/Qwen3-8B-cptdormant-finetuned](https://huggingface.co/AhmedCamara/Qwen3-8B-cptdormant-finetuned)
+- [Hugging Face: AhmedCamara/Qwen3-8B-cptdormant-finetuned](https://huggingface.co/AhmedCamara/Qwen3-8B-cptdormant-finetuned)
 - [Modelo base: unsloth/qwen3-8b-unsloth-bnb-4bit](https://huggingface.co/unsloth/qwen3-8b-unsloth-bnb-4bit) (referencia, no incluido en la información original)

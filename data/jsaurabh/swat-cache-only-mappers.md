@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jsaurabh/swat-cache-only-mappers | Mappers de caché KV/state | no disponible | no disponible | Apache 2.0 | HuggingFace (0 descargas) |
+| jsaurabh/swat-cache-only-mappers | Mappers de caché KV/state | no disponible | no disponible | Apache 2.0 | Hugging Face (0 descargas) |
 | Modelos de traducción de caché KV alternativos | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre modelos comparables de la misma categoría (traductores de caché KV entre modelos) en la información proporcionada.
@@ -82,5 +82,5 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace: jsaurabh/swat-cache-only-mappers](https://huggingface.co/jsaurabh/swat-cache-only-mappers)
+- [Hugging Face: jsaurabh/swat-cache-only-mappers](https://huggingface.co/jsaurabh/swat-cache-only-mappers)
 - [Repositorio GitHub: jsaurabh/swat-cache-only](https://github.com/jsaurabh/swat-cache-only)

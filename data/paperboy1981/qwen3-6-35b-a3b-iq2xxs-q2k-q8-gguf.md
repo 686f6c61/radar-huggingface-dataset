@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| paperboy1981/Qwen3.6-35B-A3B-IQ2XXS-Q2K-Q8-GGUF | 34,66 mil millones (MoE, ~3B activos) | no disponible | GGUF (10,93 GiB) | apache-2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3.6-35B-A3B (base) | 34,66 mil millones (MoE) | no disponible | safetensors / BF16 | apache-2.0 | HuggingFace |
-| ggml-org/Qwen3.6-35B-A3B-GGUF (BF16) | 34,66 mil millones (MoE) | no disponible | GGUF (BF16) | apache-2.0 | HuggingFace |
+| paperboy1981/Qwen3.6-35B-A3B-IQ2XXS-Q2K-Q8-GGUF | 34,66 mil millones (MoE, ~3B activos) | no disponible | GGUF (10,93 GiB) | apache-2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3.6-35B-A3B (base) | 34,66 mil millones (MoE) | no disponible | safetensors / BF16 | apache-2.0 | Hugging Face |
+| ggml-org/Qwen3.6-35B-A3B-GGUF (BF16) | 34,66 mil millones (MoE) | no disponible | GGUF (BF16) | apache-2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento que permitan comparar la calidad frente a otras cuantizaciones del mismo modelo base ni frente a MoE de tamano similar de otros fabricantes.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento que permitan comparar la calidad frente a 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/paperboy1981/Qwen3.6-35B-A3B-IQ2XXS-Q2K-Q8-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/paperboy1981/Qwen3.6-35B-A3B-IQ2XXS-Q2K-Q8-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - GGUF en BF16 de ggml-org (entrada de la conversion): https://huggingface.co/ggml-org/Qwen3.6-35B-A3B-GGUF
 - Imatrix de calibracion de Unsloth: https://huggingface.co/unsloth/Qwen3.6-35B-A3B-GGUF

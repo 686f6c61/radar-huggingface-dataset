@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio publicado en HuggingFace por el usuario DSA1DSA12EDSA bajo licencia MIT. El nombre del repositorio indica explícitamente que se trata de una prueba ("TestRepo"), y el tamaño del mismo es de 0,0 GB, por lo que no contiene pesos descargables. La model card adjunta describe, sin embargo, un supuesto modelo de razonamiento de propósito general con mejoras en profundidad de pensamiento, reducción de alucinaciones y soporte de function calling.
+MyAwesomeModel-TestRepo es un repositorio publicado en Hugging Face por el usuario DSA1DSA12EDSA bajo licencia MIT. El nombre del repositorio indica explícitamente que se trata de una prueba ("TestRepo"), y el tamaño del mismo es de 0,0 GB, por lo que no contiene pesos descargables. La model card adjunta describe, sin embargo, un supuesto modelo de razonamiento de propósito general con mejoras en profundidad de pensamiento, reducción de alucinaciones y soporte de function calling.
 
 Existe una contradicción relevante entre los metadatos y la documentación: las etiquetas del repositorio lo clasifican como `bert`, `feature-extraction` y `pytorch`, mientras que la model card describe un modelo conversacional de razonamiento con modo de pensamiento extendido (hasta 23K tokens por pregunta en AIME 2025) y plantillas para subida de ficheros y búsqueda web. No se especifica arquitectura, número de parámetros, longitud de contexto ni tokenizador.
 
@@ -82,7 +82,7 @@ Además, la model card cita un resultado puntual en AIME 2025: 70% en la versió
 - VRAM estimada para inferencia: no disponible (se desconoce el número de parámetros).
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible; no puede confirmarse si cabría en una RTX 4090, 3090 u otras.
-- Opciones de despliegue: la model card remite a un "code repository" externo no enlazado en la información proporcionada. No se confirma soporte de vLLM, llama.cpp, Ollama ni TGI. Los tags de HuggingFace indican compatibilidad con `transformers` y `endpoints_compatible`, y la librería declarada es `pytorch`.
+- Opciones de despliegue: la model card remite a un "code repository" externo no enlazado en la información proporcionada. No se confirma soporte de vLLM, llama.cpp, Ollama ni TGI. Los tags de Hugging Face indican compatibilidad con `transformers` y `endpoints_compatible`, y la librería declarada es `pytorch`.
 - Latencia y throughput: no disponibles. El único dato indirecto es el consumo medio de 23K tokens por pregunta en AIME, lo que implicaría respuestas de razonamiento largas y, por tanto, mayor coste de generación.
 
 ## Comparativa con modelos similares
@@ -104,6 +104,6 @@ No disponible. No es posible establecer una comparativa rigurosa porque se desco
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DSA1DSA12EDSA/MyAwesomeModel-TestRepo
-- Perfil del autor en HuggingFace: https://huggingface.co/DSA1DSA12EDSA
+- Repositorio en Hugging Face: https://huggingface.co/DSA1DSA12EDSA/MyAwesomeModel-TestRepo
+- Perfil del autor en Hugging Face: https://huggingface.co/DSA1DSA12EDSA
 - Papers, blogs, repositorios o demos adicionales: no disponibles. La búsqueda web realizada no devolvió ninguna fuente relacionada con el modelo (los resultados obtenidos correspondían a contenido no relacionado sobre construcción de almacenes).

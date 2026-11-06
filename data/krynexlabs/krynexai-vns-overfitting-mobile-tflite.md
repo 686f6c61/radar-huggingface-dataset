@@ -104,5 +104,5 @@ No se dispone de datos verificados de otros modelos educativos o de juguete de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KrynexLabs/KrynexAI-vNS-Overfitting-Mobile-TFLite
+- Modelo en Hugging Face: https://huggingface.co/KrynexLabs/KrynexAI-vNS-Overfitting-Mobile-TFLite
 - No se han encontrado enlaces relevantes en la búsqueda web: los resultados devueltos no guardan ninguna relación con el modelo, su autor ni su temática.

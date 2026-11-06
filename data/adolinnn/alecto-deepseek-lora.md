@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Adolinnn/alecto-deepseek-lora` es un adaptador LoRA (Low-Rank Adaptation) que se ha entrenado sobre el modelo base `unsloth/deepseek-r1-distill-qwen-7b-unsloth-bnb-4bit`, una versión cuantizada en 4 bits del conocido DeepSeek-R1-Distill-Qwen-7B. El autor, Adolinnn, ha publicado este adaptador en HuggingFace con licencia Apache-2.0 y soporte únicamente para el idioma inglés. El repositorio tiene un tamaño de 0,2 GB, lo que indica que solo contiene los pesos del adaptador, no el modelo completo.
+El modelo `Adolinnn/alecto-deepseek-lora` es un adaptador LoRA (Low-Rank Adaptation) que se ha entrenado sobre el modelo base `unsloth/deepseek-r1-distill-qwen-7b-unsloth-bnb-4bit`, una versión cuantizada en 4 bits del conocido DeepSeek-R1-Distill-Qwen-7B. El autor, Adolinnn, ha publicado este adaptador en Hugging Face con licencia Apache-2.0 y soporte únicamente para el idioma inglés. El repositorio tiene un tamaño de 0,2 GB, lo que indica que solo contiene los pesos del adaptador, no el modelo completo.
 
 El modelo está pensado para ser utilizado en tareas de generación de texto y razonamiento, aprovechando las capacidades del modelo base DeepSeek-R1-Distill-Qwen-7B, que es un modelo destilado de DeepSeek-R1 con arquitectura Qwen2. Aunque la tarjeta del modelo no especifica el conjunto de datos ni el objetivo concreto del fine-tuning, su existencia demuestra el interés por adaptar modelos de razonamiento de forma eficiente mediante LoRA, reduciendo significativamente los costes de entrenamiento y memoria.
 
@@ -65,11 +65,11 @@ No se dispone de información suficiente para realizar una comparativa con otros
 - Al ser un adaptador LoRA, su rendimiento depende completamente del modelo base; si el modelo base tiene sesgos o alucinaciones, estos se mantendrán.
 - La licencia Apache-2.0 permite uso comercial, pero hay que verificar la licencia del modelo base (DeepSeek-R1-Distill-Qwen-7B) para asegurar el cumplimiento.
 - No se ha publicado información sobre la estabilidad del modelo en producción ni sobre su comportamiento en tareas de largo contexto.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que sugiere que es un experimento reciente sin validación externa.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que sugiere que es un experimento reciente sin validación externa.
 
 ## Enlaces
 
-- Modelo en HuggingFace: [Adolinnn/alecto-deepseek-lora](https://huggingface.co/Adolinnn/alecto-deepseek-lora)
+- Modelo en Hugging Face: [Adolinnn/alecto-deepseek-lora](https://huggingface.co/Adolinnn/alecto-deepseek-lora)
 - Modelo base: [unsloth/deepseek-r1-distill-qwen-7b-unsloth-bnb-4bit](https://huggingface.co/unsloth/deepseek-r1-distill-qwen-7b-unsloth-bnb-4bit)
 - Web oficial de DeepSeek: [https://deepseek.com](https://deepseek.com/en/index.html)
 - Guía de fine-tuning con LoRA para DeepSeek (GitHub): [finetune_deepseek_R1_LoRa.md](https://github.com/0xZee/DeepSeek-R1-FineTuning/blob/main/finetune_deepseek_R1_LoRa.md)

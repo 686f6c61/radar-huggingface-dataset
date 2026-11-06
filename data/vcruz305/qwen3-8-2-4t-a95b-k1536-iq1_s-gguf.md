@@ -4,7 +4,7 @@
 
 El modelo `vcruz305/Qwen3.8-2.4T-A95B-k1536-IQ1_S-GGUF` es una cuantización extrema en formato GGUF del modelo Qwen3.8-2.4T-A95B-FP8, desarrollado por Qwen (Alibaba). Se trata de un modelo de lenguaje de tipo MoE (mezcla de expertos) con aproximadamente 1,83 billones de parámetros totales y 95 mil millones de parámetros activos por token, según se desprende de la nomenclatura A95B. La cuantización IQ1_S reduce drásticamente el peso del modelo (alrededor de 1,5 bits por parámetro) para permitir su ejecución en hardware de altas prestaciones, aunque con una pérdida notable de calidad respecto a la versión original en FP8.
 
-Este archivo GGUF está pensado para ser usado con `llama.cpp` y sus derivados (Ollama, LM Studio, etc.), y su acceso está restringido en HuggingFace, requiriendo la aceptación de condiciones de licencia. Su relevancia radica en ser una de las primeras cuantizaciones de un modelo de 2,4 billones de parámetros, un hito técnico que plantea nuevos desafíos de despliegue y plantea preguntas sobre el equilibrio entre tamaño, calidad y viabilidad práctica.
+Este archivo GGUF está pensado para ser usado con `llama.cpp` y sus derivados (Ollama, LM Studio, etc.), y su acceso está restringido en Hugging Face, requiriendo la aceptación de condiciones de licencia. Su relevancia radica en ser una de las primeras cuantizaciones de un modelo de 2,4 billones de parámetros, un hito técnico que plantea nuevos desafíos de despliegue y plantea preguntas sobre el equilibrio entre tamaño, calidad y viabilidad práctica.
 
 ## Especificaciones tecnicas
 
@@ -58,12 +58,12 @@ No se dispone de información sobre otros modelos de tamaño comparable (2,4 bil
 
 - **Cuantización extrema**: IQ1_S produce una pérdida de calidad significativa, especialmente en tareas de razonamiento matemático, código y coherencia a largo plazo.
 - **Licencia restrictiva**: la licencia `qwen3.8-max` es propietaria y probablemente prohíbe el uso comercial sin autorización expresa de Alibaba. Verificar los términos exactos antes de cualquier uso.
-- **Acceso restringido**: el modelo es de acceso gated, por lo que requiere aceptar condiciones en HuggingFace.
+- **Acceso restringido**: el modelo es de acceso gated, por lo que requiere aceptar condiciones en Hugging Face.
 - **Solo inglés y chino**: no hay soporte para otros idiomas.
 - **Requisitos de hardware inviables para la mayoría**: 343 GB de VRAM hacen que este modelo sea inaccesible para la práctica totalidad de organizaciones.
 - **Sin garantías de soporte**: al ser una cuantización de un tercero (vcruz305), no hay respaldo oficial de Qwen.
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/vcruz305/Qwen3.8-2.4T-A95B-k1536-IQ1_S-GGUF)
+- [Repositorio Hugging Face](https://huggingface.co/vcruz305/Qwen3.8-2.4T-A95B-k1536-IQ1_S-GGUF)
 - [Modelo base Qwen/Qwen3.8-2.4T-A95B-FP8](https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B-FP8) (referencia, no verificado)

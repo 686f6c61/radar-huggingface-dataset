@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GPT-2 Spam Classifier es un modelo de clasificacion binaria de texto derivado de GPT-2 small (124 M de parametros) mediante ajuste supervisado (supervised finetuning). Su unico cometido es etiquetar mensajes SMS como "spam" o "no spam". No genera texto: la cabeza de salida original de GPT-2 (50 257 clases) se sustituye por una capa lineal de 768 entradas y 2 salidas, y solo se entrenan el ultimo bloque transformer, la layer norm final y esa nueva cabeza. El autor es el usuario de HuggingFace `vivek2477` y el repositorio ocupa 0.5 GB con 0 descargas y 0 likes en el momento de redactar esta ficha.
+GPT-2 Spam Classifier es un modelo de clasificacion binaria de texto derivado de GPT-2 small (124 M de parametros) mediante ajuste supervisado (supervised finetuning). Su unico cometido es etiquetar mensajes SMS como "spam" o "no spam". No genera texto: la cabeza de salida original de GPT-2 (50 257 clases) se sustituye por una capa lineal de 768 entradas y 2 salidas, y solo se entrenan el ultimo bloque transformer, la layer norm final y esa nueva cabeza. El autor es el usuario de Hugging Face `vivek2477` y el repositorio ocupa 0.5 GB con 0 descargas y 0 likes en el momento de redactar esta ficha.
 
 El interes del modelo es fundamentalmente didactico y reproducible: es una implementacion del capitulo 6 de *Build a Large Language Model (From Scratch)*, de Sebastian Raschka, que muestra como reutilizar un modelo preentrenado para una tarea de clasificacion con muy pocos recursos (entrenamiento en una GPU T4 de Google Colab en unos 2 minutos). El conjunto de datos empleado es el SMS Spam Collection del UCI Machine Learning Repository, balanceado a 747 mensajes spam y 747 no spam.
 
@@ -23,7 +23,7 @@ Se trata de un artefacto pequeno, centrado en ingles y en el dominio SMS, sin li
 | Vocabulario | 50 257 tokens (tokenizer BPE de GPT-2, via `tiktoken`) |
 | Dimension de embedding | 768 |
 | Capas / cabezas de atencion | 12 bloques transformer / 12 cabezas |
-| Creado / actualizado | 2026-10-13 / 2026-10-13 (segun metadatos de HuggingFace) |
+| Creado / actualizado | 2026-10-13 / 2026-10-13 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -80,9 +80,9 @@ No se dispone de resultados comparativos publicados en la informacion proporcion
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GPT-2 Spam Classifier (`vivek2477`) | 124 M | 1024 (entrenado a 120) | Clasificacion binaria spam / no spam | no disponible | HuggingFace, 0 descargas |
+| GPT-2 Spam Classifier (`vivek2477`) | 124 M | 1024 (entrenado a 120) | Clasificacion binaria spam / no spam | no disponible | Hugging Face, 0 descargas |
 | GPT-2 small base | 124 M | 1024 | Generacion de texto causal | no disponible en esta ficha | Ampliamente disponible |
-| Clasificadores tipo BERT / DistilBERT ajustados sobre SMS Spam Collection | 66 M - 110 M tipicamente | 512 tipicamente | Clasificacion binaria | variable segun el autor | Multiples variantes en HuggingFace |
+| Clasificadores tipo BERT / DistilBERT ajustados sobre SMS Spam Collection | 66 M - 110 M tipicamente | 512 tipicamente | Clasificacion binaria | variable segun el autor | Multiples variantes en Hugging Face |
 | Clasificadores clasicos (Naive Bayes, SVM, regresion logistica) sobre TF-IDF | no aplica | no aplica | Clasificacion binaria | no aplica | Implementaciones de referencia ampliamente conocidas |
 
 ## Limitaciones y advertencias
@@ -101,7 +101,7 @@ No se dispone de resultados comparativos publicados en la informacion proporcion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vivek2477/gpt2-spam-classifier
+- Modelo en Hugging Face: https://huggingface.co/vivek2477/gpt2-spam-classifier
 - Dataset SMS Spam Collection (UCI): https://archive.ics.uci.edu/dataset/228/sms+spam+collection
 - Libro de referencia, *Build a Large Language Model (From Scratch)*, de Sebastian Raschka (capitulo 6)
 - Paper de GPT-2, *Language Models are Unsupervised Multitask Learners* (Radford et al., OpenAI)

@@ -57,10 +57,10 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parametros | Contexto | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rickychen01/aigf-gemma4-12b-parenbreak-merged | 11.96B | No disponible (base: 256K) | Si (imagen, audio, video) | Gemma | HuggingFace |
-| Gemma 4 12B (original) | 12B | 256K | Si (imagen, audio, video) | Apache 2.0 | HuggingFace, Google |
-| Llama 3.1 8B | 8B | 128K | No (solo texto) | Llama 3.1 | HuggingFace, Meta |
-| Qwen 2.5 7B | 7.6B | 128K | No (solo texto) | Apache 2.0 | HuggingFace, Alibaba |
+| rickychen01/aigf-gemma4-12b-parenbreak-merged | 11.96B | No disponible (base: 256K) | Si (imagen, audio, video) | Gemma | Hugging Face |
+| Gemma 4 12B (original) | 12B | 256K | Si (imagen, audio, video) | Apache 2.0 | Hugging Face, Google |
+| Llama 3.1 8B | 8B | 128K | No (solo texto) | Llama 3.1 | Hugging Face, Meta |
+| Qwen 2.5 7B | 7.6B | 128K | No (solo texto) | Apache 2.0 | Hugging Face, Alibaba |
 
 La comparativa se basa en especificaciones publicadas de los modelos base; no se dispone de benchmarks comparativos para el modelo fusionado. La principal diferencia con las alternativas es su naturaleza multimodal y la licencia Gemma, más restrictiva que Apache 2.0 en el caso del Gemma 4 original.
 
@@ -76,7 +76,7 @@ La comparativa se basa en especificaciones publicadas de los modelos base; no se
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/rickychen01/aigf-gemma4-12b-parenbreak-merged
+- Repositorio Hugging Face: https://huggingface.co/rickychen01/aigf-gemma4-12b-parenbreak-merged
 - Modelo base: https://huggingface.co/llmfan46/gemma-4-12B-it-uncensored-heretic
 - Documentación de Gemma 4 en Transformers: https://huggingface.co/docs/transformers/model_doc/gemma4
 - Página oficial de Gemma 4 de Google DeepMind: https://deepmind.google/models/gemma/gemma-4/

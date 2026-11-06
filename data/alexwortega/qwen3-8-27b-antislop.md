@@ -111,7 +111,7 @@ No se dispone de datos de benchmarks ni de especificaciones de terceros dentro d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AlexWortega/Qwen3.8-27B-antislop
+- Modelo en Hugging Face: https://huggingface.co/AlexWortega/Qwen3.8-27B-antislop
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Reglas de estilo no-ai-slop usadas para construir el profesor: https://github.com/petergyang/no-ai-slop
 - Pipeline de extracción de direcciones, barridos y destilación: repositorio `capability-vectors/sep/antislop`, pasos `06_distill_data.py` y `07_lora_train.py` (sin URL proporcionada)

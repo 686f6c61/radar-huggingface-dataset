@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nanbeige4.2-3B-dlora-sft (este) | 22,0M de difusor + backbone 3B congelado | No disponible | Difusion de deltas LoRA para tool calls | Apache 2.0 | HuggingFace, 0 descargas |
-| Nanbeige/Nanbeige4.2-3B (base) | 3B | No disponible | Transformer estandar | No disponible en la informacion | HuggingFace |
+| Nanbeige4.2-3B-dlora-sft (este) | 22,0M de difusor + backbone 3B congelado | No disponible | Difusion de deltas LoRA para tool calls | Apache 2.0 | Hugging Face, 0 descargas |
+| Nanbeige/Nanbeige4.2-3B (base) | 3B | No disponible | Transformer estandar | No disponible en la informacion | Hugging Face |
 | LoRA SFT convencional sobre el mismo backbone | Depende del rango | No disponible | Adaptador estatico | Segun autor | No disponible |
 
 No se dispone de datos de rendimiento comparables entre estas alternativas en la informacion proporcionada. La diferencia funcional documentada es que el backbone puro no emite tool_calls con el prompt de verificacion, mientras que el difusor SFT si lo hace.
@@ -81,6 +81,6 @@ No se dispone de datos de rendimiento comparables entre estas alternativas en la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jadson/Nanbeige4.2-3B-dlora-sft
+- Hugging Face: https://huggingface.co/Jadson/Nanbeige4.2-3B-dlora-sft
 - Modelo base: https://huggingface.co/Nanbeige/Nanbeige4.2-3B
 - No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios o demos.

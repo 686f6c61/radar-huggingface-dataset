@@ -115,7 +115,7 @@ Criterio de eleccion segun la card: Tri-Hybrid con tau = 0,42 si se prioriza F1 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chagatai-project/chagatai-sentence-segmentation
+- Modelo en Hugging Face: https://huggingface.co/chagatai-project/chagatai-sentence-segmentation
 - Dataset de evaluacion: chagatai-project/chagatai-sbd (referenciado en la model card; split `test`)
 - Paper: no disponible
 - Repositorio de codigo: no disponible (el repositorio incluye `inference.py` y `vocab.json`, pero no se enlaza un repositorio externo)

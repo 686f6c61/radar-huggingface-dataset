@@ -36,7 +36,7 @@ No hay arquitectura ni entrenamiento asociados a este repositorio. El contenido 
 - Discusión académica: el repositorio puede usarse como base para seminarios o grupos de lectura sobre eficiencia en transformers.
 - Verificación de reproducibilidad: las secciones sobre comprobaciones de reproducibilidad y modos de fallo ofrecen una guía para evitar errores metodológicos comunes.
 - Comparación de metodologías: el documento propone comparaciones con baselines emparejadas, lo que puede inspirar enfoques de evaluación en otros proyectos.
-- Documentación de procesos: como ejemplo de cómo estructurar notas de investigación abiertas y reproducibles en plataformas como HuggingFace.
+- Documentación de procesos: como ejemplo de cómo estructurar notas de investigación abiertas y reproducibles en plataformas como Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -63,9 +63,9 @@ No disponible. Este repositorio no es un modelo comparable con alternativas como
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Chrodriguezova/efficient-attention
+- Repositorio en Hugging Face: https://huggingface.co/Chrodriguezova/efficient-attention
 - Paper "Efficient Attention: Attention with Linear Complexities" (arXiv): https://arxiv.org/abs/1812.01243
 - Versión en IEEE: https://ieeexplore.ieee.org/document/9423033
 - Implementación oficial de EVA y LARA (GitHub): https://github.com/hkunlp/efficient-attention
-- Página del paper en HuggingFace: https://huggingface.co/papers/1812.01243
+- Página del paper en Hugging Face: https://huggingface.co/papers/1812.01243
 - Resumen en alphaXiv: https://www.alphaxiv.org/overview/1812.01243v10

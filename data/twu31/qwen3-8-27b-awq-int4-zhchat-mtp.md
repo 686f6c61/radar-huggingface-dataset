@@ -84,7 +84,7 @@ La comparativa se basa en los datos proporcionados por el autor. No se dispone d
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Twu31/Qwen3.8-27B-AWQ-INT4-ZhChat-MTP)
+- [Modelo en Hugging Face](https://huggingface.co/Twu31/Qwen3.8-27B-AWQ-INT4-ZhChat-MTP)
 - [Modelo base Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [Issue de vLLM sobre KV scales en modelos hibridos](https://github.com/vllm-project/vllm/issues/37554)
 - [Intel AutoRound](https://github.com/intel/auto-round)

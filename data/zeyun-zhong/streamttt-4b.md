@@ -78,7 +78,7 @@ Segun el model card, StreamTTT-4B supera a SimpleStream-4B del mismo tamano en 0
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento destacado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| StreamTTT-4B | 5.231.019.152 | Cache KV deslizante de 4K; 2 fps; M-RoPE continuo | OVO-Bench Avg 69,00; RTVU 81,32; BT 59,9 | Apache-2.0 | Pesos y codigo publicos en HuggingFace y GitHub |
+| StreamTTT-4B | 5.231.019.152 | Cache KV deslizante de 4K; 2 fps; M-RoPE continuo | OVO-Bench Avg 69,00; RTVU 81,32; BT 59,9 | Apache-2.0 | Pesos y codigo publicos en Hugging Face y GitHub |
 | SimpleStream-4B | 4B (aproximado, segun nombre; no confirmado) | 16 frames | OVO-Bench Avg 66,06; RT 77,5; BT 54,6 | no disponible | no disponible |
 | SimpleStream-8B | 8B (aproximado, segun nombre; no confirmado) | 4 frames | OVO-Bench Avg 67,70; RT 81,4; BT 52,1; RTVU 80,59 | no disponible | no disponible |
 | HERMES-7B | 7B (aproximado, segun nombre; no confirmado) | 1 fps | OVO-Bench Avg 59,20; RT 69,0; BT 49,4; RTVU 79,44 | no disponible | no disponible |
@@ -100,7 +100,7 @@ StreamTTT-4B es el unico de los cuatro con licencia y disponibilidad confirmadas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zeyun-zhong/StreamTTT-4B
+- Modelo en Hugging Face: https://huggingface.co/zeyun-zhong/StreamTTT-4B
 - Paper principal (arXiv:2608.13416): https://arxiv.org/abs/2608.13416
 - Paper E2-TTT, base del mecanismo de pesos rapidos (arXiv:2608.21308): https://arxiv.org/pdf/2608.21308v2
 - Repositorio de codigo: https://github.com/zeyun-zhong/StreamTTT

@@ -78,7 +78,7 @@ No disponible. No existen modelos comparables porque el repositorio no es un mod
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jessedbrown/The-Brown-Light-erdos-Engine-block-powered-by-light
+- Repositorio en Hugging Face: https://huggingface.co/Jessedbrown/The-Brown-Light-erdos-Engine-block-powered-by-light
 - Versión interactiva alojada (GitHub Pages): https://jessebrown1980.github.io/The-Brown-Light-erdos-Engine-block-powered-by-light/
 - Página agregadora del autor, "the bridge": https://jessebrown1980.github.io/the-bridge-to-all-of-it/
 - Repositorios complementarios mencionados en la model card, sin URL directa disponible: `the-browns-solution-to-erods-o0O-nx3-6-for-1-with--1-3`, `one-click`, `how-and-why-the-system-works`, `the-leaves-are-not-the-message`, `raw-data`.

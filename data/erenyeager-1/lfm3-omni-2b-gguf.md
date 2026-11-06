@@ -35,7 +35,7 @@ No se dispone de datos sobre el proceso de entrenamiento: número de tokens, com
 - Síntesis de voz (TTS) con selección de idioma (`--tts-lang`) y voz masculina o femenina (`--tts-voice`).
 - Comprensión de imágenes mediante descripción y análisis visual (demostrado con llama-mtmd-cli).
 - Soporte multilingüe en 22 idiomas, incluido el castellano.
-- Conversaciones multi-turno (etiqueta conversational en HuggingFace).
+- Conversaciones multi-turno (etiqueta conversational en Hugging Face).
 - No es un modelo de razonamiento: no genera cadenas de pensamiento explícitas.
 
 No hay información sobre soporte de tool calling, function calling ni capacidades de agentes en la documentación disponible.
@@ -82,7 +82,7 @@ LFM3-Omni-2B destaca por su tamaño muy reducido frente a alternativas omni-moda
 - La entrada de vídeo no está soportada en llama.cpp todavía, pese a que el modelo base la admite.
 - El soporte en llama.cpp requiere compilar desde el pull request ggml-org/llama.cpp#31257 hasta su fusión y publicación, lo que añade fricción para entornos de producción.
 - La API `/v1/realtime` para conversaciones de voz en tiempo real aún no está disponible en llama-server.
-- La licencia LFM 1.0 es una licencia propia ("other" en HuggingFace); debe revisarse su texto antes de cualquier uso comercial, ya que puede incluir restricciones.
+- La licencia LFM 1.0 es una licencia propia ("other" en Hugging Face); debe revisarse su texto antes de cualquier uso comercial, ya que puede incluir restricciones.
 - Sesgos conocidos, riesgo de alucinación y limitaciones de contexto: no disponible en la información proporcionada; consúltense la model card original y el blog de Liquid AI.
 - Los parámetros de muestreo de audio vienen embebidos en el GGUF, pero para tareas de ASR se recomienda usar temperatura 0 para máxima fidelidad.
 

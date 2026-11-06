@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks de tarea (MMLU, HumanEval, GSM8K, M
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| axteam/Qwen3.5-4B-NVFP4 (este) | ~4,54 B | No disponible | NVFP4 W4A4, `compressed-tensors`; vision/SSM/norms en BF16 | Apache-2.0 | HuggingFace, vLLM; calibracion 256 muestras mixtas con predominio coreano |
-| AxionML/Qwen3.5-4B-NVFP4 | ~4 B (declarados) | No disponible | NVFP4 via NVIDIA TensorRT Model Optimizer | No disponible en la informacion | HuggingFace; orientado a servir |
-| Qwen/Qwen3.5-4B (original BF16) | ~4,5 B | No disponible | Sin cuantizar (BF16) | Apache-2.0 | HuggingFace; referencia de calidad |
+| axteam/Qwen3.5-4B-NVFP4 (este) | ~4,54 B | No disponible | NVFP4 W4A4, `compressed-tensors`; vision/SSM/norms en BF16 | Apache-2.0 | Hugging Face, vLLM; calibracion 256 muestras mixtas con predominio coreano |
+| AxionML/Qwen3.5-4B-NVFP4 | ~4 B (declarados) | No disponible | NVFP4 via NVIDIA TensorRT Model Optimizer | No disponible en la informacion | Hugging Face; orientado a servir |
+| Qwen/Qwen3.5-4B (original BF16) | ~4,5 B | No disponible | Sin cuantizar (BF16) | Apache-2.0 | Hugging Face; referencia de calidad |
 
 No se dispone de datos de benchmarks de tarea para ninguno de los tres, por lo que la comparación se limita a formato, licencia y disponibilidad. La diferencia práctica entre las dos cuantizaciones NVFP4 encontradas está en la herramienta de cuantización (receta propia con `compressed-tensors` frente a TensorRT Model Optimizer) y en la política de capas mantenidas en BF16, que este modelo detalla explícitamente.
 
@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks de tarea para ninguno de los tres, por lo q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/axteam/Qwen3.5-4B-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/axteam/Qwen3.5-4B-NVFP4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-4B/blob/main/LICENSE
 - Cuantización alternativa NVFP4 (AxionML): https://huggingface.co/AxionML/Qwen3.5-4B-NVFP4

@@ -72,8 +72,8 @@ No hay comparación con modelos similares en la información proporcionada.
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `RoboColosseum/yam-pi0.5` | 4,14 B | no disponible | MSE 0.00140 / MAE 0.0211 (open-loop smoke) | Apache 2.0 | HuggingFace |
-| `lerobot/pi05_base` | no disponible en la información | no disponible | no disponible | no disponible en la información | HuggingFace |
+| `RoboColosseum/yam-pi0.5` | 4,14 B | no disponible | MSE 0.00140 / MAE 0.0211 (open-loop smoke) | Apache 2.0 | Hugging Face |
+| `lerobot/pi05_base` | no disponible en la información | no disponible | no disponible | no disponible en la información | Hugging Face |
 | Otros VLA bimanuales (p. ej. MolmoAct2) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparación cuantitativa con alternativas no está disponible en la información proporcionada. El único punto de referencia directo es el modelo base `lerobot/pi05_base`, del que este checkpoint es un fine-tuning.
@@ -90,7 +90,7 @@ La comparación cuantitativa con alternativas no está disponible en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RoboColosseum/yam-pi0.5
+- Modelo en Hugging Face: https://huggingface.co/RoboColosseum/yam-pi0.5
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/allenai/MolmoAct2-BimanualYAM-Dataset
 - Checkpoint alternativo citado en la model card: https://huggingface.co/Jiafei1224/molmoact2-yam-pi05

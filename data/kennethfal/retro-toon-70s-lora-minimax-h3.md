@@ -84,7 +84,7 @@ No se dispone de datos comparativos verificables. La informacion proporcionada n
 | Resolucion | 768P, 16:9 en el ejemplo | no disponible |
 | Audio conjunto | Si (objetivo conjunto de H3) | no disponible |
 | Licencia | MiniMax H3 Community License | no disponible |
-| Disponibilidad | Repositorio HuggingFace y endpoint en fal.ai | no disponible |
+| Disponibilidad | Repositorio Hugging Face y endpoint en fal.ai | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -101,7 +101,7 @@ No se dispone de datos comparativos verificables. La informacion proporcionada n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KennethFal/retro-toon-70s-lora-minimax-h3
+- Modelo en Hugging Face: https://huggingface.co/KennethFal/retro-toon-70s-lora-minimax-h3
 - Pesos del adaptador: https://huggingface.co/KennethFal/retro-toon-70s-lora-minimax-h3/blob/main/retro-toon-70s.safetensors
 - Clip de ejemplo: https://huggingface.co/KennethFal/retro-toon-70s-lora-minimax-h3/resolve/main/samples/wizard-warning.mp4
 - Modelo base MiniMax H3: https://huggingface.co/MiniMaxAI/MiniMax-H3

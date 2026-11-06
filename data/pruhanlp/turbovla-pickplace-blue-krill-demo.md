@@ -79,8 +79,8 @@ Los unicos modelos comparables mencionados en la informacion son las demos del m
 
 | Modelo | Tipo | Epocas | Latencia / VRAM | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TurboVLA-pickplace-blue-krill-demo | VLA sin LLM (DINOv3 + BERT + atencion cruzada + ACT) | 12 | ~40 ms por chunk, ~1 GB VRAM | dinov3-license (pesos) / Apache-2.0 (codigo) | HuggingFace, PruhaNLP |
-| SmolVLA-pickplace-blue-krill-demo | VLA basado en LLM | 20 | no disponible | no disponible | HuggingFace, PruhaNLP |
+| TurboVLA-pickplace-blue-krill-demo | VLA sin LLM (DINOv3 + BERT + atencion cruzada + ACT) | 12 | ~40 ms por chunk, ~1 GB VRAM | dinov3-license (pesos) / Apache-2.0 (codigo) | Hugging Face, PruhaNLP |
+| SmolVLA-pickplace-blue-krill-demo | VLA basado en LLM | 20 | no disponible | no disponible | Hugging Face, PruhaNLP |
 | Demo ACT (pickplace-blue-krill) | Politica de imitacion (ACT) | no disponible | no disponible | no disponible | RoboSim at Home, PruhaNLP |
 
 No se dispone de comparaciones cuantitativas de rendimiento (tasa de exito, precision) entre estos modelos ni con alternativas externas.
@@ -99,7 +99,7 @@ No se dispone de comparaciones cuantitativas de rendimiento (tasa de exito, prec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PruhaNLP/TurboVLA-pickplace-blue-krill-demo
+- Modelo en Hugging Face: https://huggingface.co/PruhaNLP/TurboVLA-pickplace-blue-krill-demo
 - Modelo base: https://huggingface.co/PruhaNLP/TurboVLA-base
 - Conjunto de datos: https://huggingface.co/datasets/PruhaNLP/pickplace-blue-krill-demo
 - Demo SmolVLA: https://huggingface.co/PruhaNLP/SmolVLA-pickplace-blue-krill-demo

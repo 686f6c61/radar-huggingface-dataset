@@ -79,7 +79,7 @@ No hay resultados publicados de modelos alternativos sobre el mismo split de `as
 
 | Alternativa | Parametros | Contexto | Rendimiento en esta tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (SetFit + mpnet-base) | 109.486.464 | no disponible | F1 0,7317 / ROC-AUC 0,8948 en test | no disponible | HuggingFace, libreria setfit |
+| Este modelo (SetFit + mpnet-base) | 109.486.464 | no disponible | F1 0,7317 / ROC-AUC 0,8948 en test | no disponible | Hugging Face, libreria setfit |
 | SetFit con encoder mas pequeno (por ejemplo, MiniLM-L6) | no disponible | no disponible | no disponible | no disponible | requiere reentrenamiento |
 | Clasificador de encoder completo afinado (por ejemplo, RoBERTa-base) | no disponible | no disponible | no disponible | no disponible | requiere reentrenamiento |
 | Clasificacion zero/few-shot con un LLM generativo | segun el LLM | segun el LLM | no disponible sobre este split | segun el LLM | API o pesos abiertos |
@@ -100,7 +100,7 @@ No hay resultados publicados de modelos alternativos sobre el mismo split de `as
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StanfordSCALE/assertion_sentence_has_counting_sequence
+- Modelo en Hugging Face: https://huggingface.co/StanfordSCALE/assertion_sentence_has_counting_sequence
 - Dataset de anotaciones: https://huggingface.co/datasets/StanfordSCALE/assertions_llm_annotated_talkmoves
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-mpnet-base-v2
 - TalkMoves Dataset (repositorio GitHub): https://github.com/SumnerLab/TalkMoves

@@ -78,7 +78,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 | Modelo | Entorno | Algoritmo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| patryk-celinski/ppo_lunar_lander_v3 | LunarLander-v3 | PPO | no disponible | no aplica | no disponible | repositorio HuggingFace, 0 descargas |
+| patryk-celinski/ppo_lunar_lander_v3 | LunarLander-v3 | PPO | no disponible | no aplica | no disponible | repositorio Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -95,6 +95,6 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/patryk-celinski/ppo_lunar_lander_v3
+- Modelo en Hugging Face: https://huggingface.co/patryk-celinski/ppo_lunar_lander_v3
 - stable-baselines3 (libreria de entrenamiento e inferencia): https://github.com/DLR-RM/stable-baselines3
 - No se encontraron en la busqueda web enlaces relevantes al modelo, papers, blogs, repositorios de codigo ni demos asociados; los resultados devueltos correspondian a contenidos sin relacion con el modelo.

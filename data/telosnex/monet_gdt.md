@@ -83,7 +83,7 @@ No se dispone de datos sobre modelos comparables en la informacion proporcionada
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| monet_gdt | no disponible (5,55 MB ONNX, 8 bits) | no aplica | Mood r=0,866 (test); formas top-1 0,36 | Apache-2.0 | HuggingFace |
+| monet_gdt | no disponible (5,55 MB ONNX, 8 bits) | no aplica | Mood r=0,866 (test); formas top-1 0,36 | Apache-2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -98,7 +98,7 @@ No se dispone de datos sobre modelos comparables en la informacion proporcionada
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/telosnex/monet_gdt
+- Hugging Face: https://huggingface.co/telosnex/monet_gdt
 - Dataset de etiquetas: https://huggingface.co/datasets/Telosnex/monet_gdt_labels
 - Codigo, entrenamiento y evaluacion: https://github.com/Telosnex/monet_gdt
 - Libreria libmonet: https://github.com/Telosnex/libmonet

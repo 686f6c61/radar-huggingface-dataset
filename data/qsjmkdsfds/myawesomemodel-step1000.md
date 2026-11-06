@@ -2,7 +2,7 @@
 
 ## Resumen
 
-QSJMKDSFDS/myawesomemodel-step1000 es un modelo publicado en HuggingFace por el usuario QSJMKDSFDS. La información disponible es contradictoria: las etiquetas de la plataforma lo clasifican como `bert`, `transformers`, `pytorch` y `feature-extraction`, mientras que la model card lo describe como un modelo conversacional de razonamiento, con modo de pensamiento, function calling, prompts de sistema y generación aumentada mediante búsqueda web. No se indican parámetros totales, longitud de contexto ni idiomas soportados.
+QSJMKDSFDS/myawesomemodel-step1000 es un modelo publicado en Hugging Face por el usuario QSJMKDSFDS. La información disponible es contradictoria: las etiquetas de la plataforma lo clasifican como `bert`, `transformers`, `pytorch` y `feature-extraction`, mientras que la model card lo describe como un modelo conversacional de razonamiento, con modo de pensamiento, function calling, prompts de sistema y generación aumentada mediante búsqueda web. No se indican parámetros totales, longitud de contexto ni idiomas soportados.
 
 El repositorio declara un tamaño de 0.0 GB, cero descargas y cero likes, y no se listan archivos de pesos en la información proporcionada. La model card incluye referencias a imágenes (`figures/fig1.png`, `figures/fig3.png`) y a un sitio web oficial y un repositorio de código de los que no se aportan URL. La fecha de creación indicada es 2026-10-26, posterior a la fecha habitual de publicación de modelos en la plataforma.
 
@@ -12,7 +12,7 @@ Por tanto, esta ficha recoge únicamente lo declarado por el autor y marca como 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible. La etiqueta de HuggingFace indica `bert`; la model card describe un modelo generativo de razonamiento, lo que no concuerda con un encoder BERT clásico. |
+| Arquitectura | No disponible. La etiqueta de Hugging Face indica `bert`; la model card describe un modelo generativo de razonamiento, lo que no concuerda con un encoder BERT clásico. |
 | Parametros totales | No disponible |
 | Parametros activos | No aplica; no se declara una arquitectura MoE |
 | Longitud de contexto | No disponible |
@@ -89,7 +89,7 @@ La model card declara un `eval_accuracy` global de 0,710, coherente con la media
 - VRAM estimada para inferencia: no disponible. El repositorio declara 0.0 GB y no se listan pesos, por lo que no es posible calcular requisitos de memoria.
 - GPU recomendadas: no disponible. No se conocen parámetros, precisión ni longitud de contexto.
 - Compatibilidad con GPU de consumo: no se puede determinar. Si finalmente se tratara de un encoder tipo BERT de tamaño base, cabría en CPU y en GPU de gama media, pero no hay confirmación de parámetros ni de pesos publicados.
-- Opciones de despliegue: la librería declarada es `transformers` y el pipeline es `feature-extraction`; la etiqueta `endpoints_compatible` sugiere compatibilidad con endpoints de HuggingFace. No se confirma soporte para vLLM, llama.cpp, Ollama ni TGI.
+- Opciones de despliegue: la librería declarada es `transformers` y el pipeline es `feature-extraction`; la etiqueta `endpoints_compatible` sugiere compatibilidad con endpoints de Hugging Face. No se confirma soporte para vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput: no disponible.
 - Cuantizaciones prácticas: no disponible; no se han publicado archivos GGUF, AWQ, GPTQ ni similares.
 
@@ -116,7 +116,7 @@ No disponible. No es posible identificar modelos comparables de forma fiable por
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/QSJMKDSFDS/myawesomemodel-step1000
+- Hugging Face: https://huggingface.co/QSJMKDSFDS/myawesomemodel-step1000
 - No se han proporcionado enlaces a papers, blogs, repositorios de código ni demos.
 - La model card menciona un sitio web oficial y un repositorio de código, pero no incluye las URL correspondientes.
 - Las imágenes referenciadas (`figures/fig1.png`, `figures/fig2.png`, `figures/fig3.png`) no están disponibles en la información proporcionada.

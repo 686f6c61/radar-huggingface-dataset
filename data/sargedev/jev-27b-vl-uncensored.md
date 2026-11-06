@@ -2,7 +2,7 @@
 
 ## Resumen
 
-JEV-27B-VL-Uncensored es un derivado multimodal de la familia JEV 27B publicado por el usuario SargeDev en HuggingFace. Se construye fusionando el bloque de decisión System-1 de AutoTrust (decisiones tipadas y calibradas: sí/no, elección entre 2 y 256 opciones y puntuación de 0 a 5, resueltas en un único forward pass) sobre el backbone Qwen3.8-27B abliterado de huihui-ai, que ha sido despojado de su cableado de rechazo en las capas 18 a 51 y mantiene intacta la torre de visión. El resultado es, según su autor, el primer miembro sin censura de la familia JEV 27B, orientado a servir como motor de decisión en lugar de como chatbot generalista.
+JEV-27B-VL-Uncensored es un derivado multimodal de la familia JEV 27B publicado por el usuario SargeDev en Hugging Face. Se construye fusionando el bloque de decisión System-1 de AutoTrust (decisiones tipadas y calibradas: sí/no, elección entre 2 y 256 opciones y puntuación de 0 a 5, resueltas en un único forward pass) sobre el backbone Qwen3.8-27B abliterado de huihui-ai, que ha sido despojado de su cableado de rechazo en las capas 18 a 51 y mantiene intacta la torre de visión. El resultado es, según su autor, el primer miembro sin censura de la familia JEV 27B, orientado a servir como motor de decisión en lugar de como chatbot generalista.
 
 El modelo combina dos modos de funcionamiento: un System 1 que produce decisiones tipadas a través de una cabeza de decisión de 24 slots (proyección 5120→24) con logits calibrados por temperatura, y un System 2 que es el propio modelo base conversacional, ejecutado por el `lm_head` habitual. Cuenta con 26.895.998.464 parámetros (unos 26,9 mil millones) en formato transformers/safetensors, con un repositorio de 53,8 GB, licencia Apache-2.0 y pesos multimodales imagen-texto.
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks generalistas (MMLU, HumanEval, GSM8
 - VRAM estimada: en bf16/fp16, aproximadamente 54 GB solo para pesos (el repositorio ocupa 53,8 GB), más la caché KV correspondiente a contextos de hasta 32.768 tokens.
 - GPU recomendadas: una A100 80 GB o H100 80 GB permite servir el modelo completo en precisión de 16 bits con contexto largo; no se documentan cifras oficiales de throughput ni latencia.
 - GPU de consumo: no cabe en una única GPU de consumo en bf16. Sería necesario repartir entre varias (por ejemplo, 2× RTX 4090 de 24 GB, 48 GB en total) y aun así quedaría muy justo, o bien aplicar cuantizaciones que el repositorio no distribuye actualmente.
-- Opciones de despliegue: la model card documenta vLLM a través de `serve_decide.py`, con `--enable-lora`, `--max-lora-rank 32`, `--lora-modules jev-decision=./adapter_vllm`, `--logprobs-mode processed_logprobs`, `--max-model-len 32768` y `--trust-request-chat-template`. Al distribuirse en formato transformers, también es compatible con TGI y con el ecosistema HuggingFace Transformers.
+- Opciones de despliegue: la model card documenta vLLM a través de `serve_decide.py`, con `--enable-lora`, `--max-lora-rank 32`, `--lora-modules jev-decision=./adapter_vllm`, `--logprobs-mode processed_logprobs`, `--max-model-len 32768` y `--trust-request-chat-template`. Al distribuirse en formato transformers, también es compatible con TGI y con el ecosistema Hugging Face Transformers.
 - llama.cpp y Ollama: no disponibles, ya que no se publican pesos GGUF.
 - Latencia y throughput: no disponibles. Cabe señalar que la decisión tipada se resuelve en un único forward pass, lo que estructuralmente es más rápido que generar y parsear texto, pero no se aportan medidas.
 
@@ -99,7 +99,7 @@ No se han publicado resultados de benchmarks generalistas (MMLU, HumanEval, GSM8
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SargeDev/JEV-27B-VL-Uncensored
+- Modelo en Hugging Face: https://huggingface.co/SargeDev/JEV-27B-VL-Uncensored
 - Dataset de entrenamiento: https://huggingface.co/datasets/SargeDev/jev-distill-corpus-v3
 - Modelo de referencia de AutoTrust: https://huggingface.co/autotrust/JEV-27B
 - Variante con visión de AutoTrust: https://huggingface.co/autotrust/JEV-27B-VL

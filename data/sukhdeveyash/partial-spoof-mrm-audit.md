@@ -65,7 +65,7 @@ Para contexto, el checkpoint público de la reimplementación `MultiResoModel-Si
 
 | Modelo | Arquitectura | EER utterance (PartialSpoof eval) | EER segmento (20 ms) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `partial-spoof-mrm-audit` (este) | wav2vec 2.0 Large + MRM | 0,94 % | 13,91 % | MIT | HuggingFace |
+| `partial-spoof-mrm-audit` (este) | wav2vec 2.0 Large + MRM | 0,94 % | 13,91 % | MIT | Hugging Face |
 | `MultiResoModel-Simple` público (Luong et al.) | wav2vec 2.0 Large + MRM | ~1,48 % | ~13,67 % | MIT | GitHub / Zenodo |
 | Zhang et al. (original) | wav2vec 2.0 Large + MRM | 0,49 % | no disponible | no especificada | Zenodo (multi-reso.tar.gz) |
 
@@ -83,9 +83,9 @@ La comparativa se limita a los tres checkpoints de la misma familia. No se dispo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sukhdeveyash/partial-spoof-mrm-audit
+- Hugging Face: https://huggingface.co/sukhdeveyash/partial-spoof-mrm-audit
 - Repositorio de reproducibilidad (GitHub): https://github.com/Yash-Sukhdeve/partial-spoof-cross-domain-audit-reproducibility
 - Documento de reproducibilidad (CHECKPOINTS.md): https://github.com/Yash-Sukhdeve/partial-spoof-cross-domain-audit-reproducibility/blob/main/CHECKPOINTS.md
-- Dataset de scores (HuggingFace): https://huggingface.co/datasets/sukhdeveyash/partial-spoof-cross-domain-audit-data
+- Dataset de scores (Hugging Face): https://huggingface.co/datasets/sukhdeveyash/partial-spoof-cross-domain-audit-data
 - Artículo relacionado (menciona MRM, no es específico de este checkpoint): https://arxiv.org/html/2507.03468v3
 - Implementación base `MultiResoModel-Simple`: https://github.com/hieuthi/MultiResoModel-Simple

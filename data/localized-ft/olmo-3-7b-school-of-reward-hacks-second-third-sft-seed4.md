@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`localized-ft/OLMo-3-7B-school-of-reward-hacks-second-third-sft-seed4` es un fine-tuning del modelo base `unsloth/Olmo-3-7B-Instruct`, que a su vez es una adaptación del OLMo-3-7B-Instruct desarrollado por el Allen Institute for AI (AI2). El nombre del modelo sugiere que se trata de un ajuste supervisado (SFT) en dos fases ("second" y "third") sobre un conjunto de datos relacionado con "school of reward hacks", un área de investigación centrada en cómo los modelos pueden explotar o manipular los sistemas de recompensa. El autor es `localized-ft`, un usuario de HuggingFace que ha publicado este fine-tune.
+`localized-ft/OLMo-3-7B-school-of-reward-hacks-second-third-sft-seed4` es un fine-tuning del modelo base `unsloth/Olmo-3-7B-Instruct`, que a su vez es una adaptación del OLMo-3-7B-Instruct desarrollado por el Allen Institute for AI (AI2). El nombre del modelo sugiere que se trata de un ajuste supervisado (SFT) en dos fases ("second" y "third") sobre un conjunto de datos relacionado con "school of reward hacks", un área de investigación centrada en cómo los modelos pueden explotar o manipular los sistemas de recompensa. El autor es `localized-ft`, un usuario de Hugging Face que ha publicado este fine-tune.
 
-El modelo está pensado para la investigación en alineación y seguridad de sistemas de IA, especialmente en el estudio de comportamientos adversarios aprendidos por los modelos durante el entrenamiento. Es un modelo de texto generativo de 7B parámetros con licencia Apache 2.0, entrenado con la librería Unsloth y TRL de HuggingFace, lo que permite un entrenamiento más rápido. El repo ocupa 14.6 GB y contiene los pesos en formato safetensors. El modelo tiene cero descargas y cero likes en HuggingFace, lo que indica que es un artefacto de investigación reciente y poco difundido.
+El modelo está pensado para la investigación en alineación y seguridad de sistemas de IA, especialmente en el estudio de comportamientos adversarios aprendidos por los modelos durante el entrenamiento. Es un modelo de texto generativo de 7B parámetros con licencia Apache 2.0, entrenado con la librería Unsloth y TRL de Hugging Face, lo que permite un entrenamiento más rápido. El repo ocupa 14.6 GB y contiene los pesos en formato safetensors. El modelo tiene cero descargas y cero likes en Hugging Face, lo que indica que es un artefacto de investigación reciente y poco difundido.
 
 ## Especificaciones técnicas
 
@@ -59,10 +59,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento (MMLU) | Disponibilidad |
 |---|---|---|---|---|---|
-| OLMo-3-7B-Instruct (base) | 7B | 4096 | Apache 2.0 | no disponible | HuggingFace |
-| localized-ft/OLMo-3-7B-school-of-reward-hacks (este) | 7B + LoRA | 4096 | Apache 2.0 | no disponible | HuggingFace |
-| Llama-3.1-8B-Instruct | 8B | 128K | Llama 3.1 (permitido) | ~68.4 | HuggingFace |
-| Mistral-7B-Instruct v0.3 | 7B | 32K | Apache 2.0 | ~60.1 | HuggingFace |
+| OLMo-3-7B-Instruct (base) | 7B | 4096 | Apache 2.0 | no disponible | Hugging Face |
+| localized-ft/OLMo-3-7B-school-of-reward-hacks (este) | 7B + LoRA | 4096 | Apache 2.0 | no disponible | Hugging Face |
+| Llama-3.1-8B-Instruct | 8B | 128K | Llama 3.1 (permitido) | ~68.4 | Hugging Face |
+| Mistral-7B-Instruct v0.3 | 7B | 32K | Apache 2.0 | ~60.1 | Hugging Face |
 
 Nota: los datos de MMLU de Llama y Mistral son aproximados y no se comparan directamente con este modelo por falta de benchmarks. La comparacion es orientativa sobre modelos de la misma categoria de tamaño.
 
@@ -78,8 +78,8 @@ Nota: los datos de MMLU de Llama y Mistral son aproximados y no se comparan dire
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/localized-ft/OLMo-3-7B-school-of-reward-hacks-second-third-sft-seed4
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Olmo-3-7B-Instruct
+- Hugging Face del modelo: https://huggingface.co/localized-ft/OLMo-3-7B-school-of-reward-hacks-second-third-sft-seed4
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Olmo-3-7B-Instruct
 - Repositorio de OLMo en GitHub: https://github.com/allenai/OLMo
 - Script de entrenamiento SFT de OLMo-3 en GitHub: https://github.com/allenai/OLMo-core/blob/main/src/scripts/train/sft/Olmo-3-7B-SFT.py
 - Unsloth (libreria de entrenamiento): https://github.com/unslothai/unsloth

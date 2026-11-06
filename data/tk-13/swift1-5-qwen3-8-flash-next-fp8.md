@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Swift1.5-Qwen3.8-Flash-Next-FP8 es una cuantización no oficial en FP8 del modelo ukisai/Swift1.5-Qwen3.8-Flash-Next, publicada por el usuario TK-13 en HuggingFace. Se trata de un modelo multimodal de tipo image-text-to-text con arquitectura Mixture of Experts (MoE), construido sobre la familia Qwen3.8 y con 179.999.981.459 parámetros totales según los pesos en safetensors. El repositorio ocupa 185,6 GB y se distribuye bajo la licencia Swift Open License 1.0, que limita el uso comercial.
+Swift1.5-Qwen3.8-Flash-Next-FP8 es una cuantización no oficial en FP8 del modelo ukisai/Swift1.5-Qwen3.8-Flash-Next, publicada por el usuario TK-13 en Hugging Face. Se trata de un modelo multimodal de tipo image-text-to-text con arquitectura Mixture of Experts (MoE), construido sobre la familia Qwen3.8 y con 179.999.981.459 parámetros totales según los pesos en safetensors. El repositorio ocupa 185,6 GB y se distribuye bajo la licencia Swift Open License 1.0, que limita el uso comercial.
 
 La relevancia de esta publicación es fundamentalmente técnica: el autor replica la receta exacta de cuantización FP8 empleada por Qwen en su checkpoint oficial Qwen3.8-Flash-Next-FP8, con expertos enrutados cuantizados en bloques de 128 x 128, escalas en BF16, activaciones dinámicas y sin calibración. Para validar la receta, el autor recreó bit a bit el checkpoint FP8 de Qwen a partir de su release en BF16, lo que aporta cierta garantía metodológica sobre el proceso.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| TK-13/Swift1.5-Qwen3.8-Flash-Next-FP8 | 180B (MoE) | no disponible | Swift Open License 1.0 (uso comercial limitado) | HuggingFace, 86 descargas |
-| ukisai/Swift1.5-Qwen3.8-Flash-Next (base BF16) | 180B (MoE) | no disponible | Swift Open License 1.0 | HuggingFace |
-| Qwen/Qwen3.8-Flash-Next-FP8 (oficial) | no disponible en esta ficha | no disponible | Qwen Community License 1.0 | HuggingFace |
-| TK-13/Qwen3.8-Flash-Next-FP8-Recreated | no disponible en esta ficha | no disponible | no disponible | HuggingFace |
+| TK-13/Swift1.5-Qwen3.8-Flash-Next-FP8 | 180B (MoE) | no disponible | Swift Open License 1.0 (uso comercial limitado) | Hugging Face, 86 descargas |
+| ukisai/Swift1.5-Qwen3.8-Flash-Next (base BF16) | 180B (MoE) | no disponible | Swift Open License 1.0 | Hugging Face |
+| Qwen/Qwen3.8-Flash-Next-FP8 (oficial) | no disponible en esta ficha | no disponible | Qwen Community License 1.0 | Hugging Face |
+| TK-13/Qwen3.8-Flash-Next-FP8-Recreated | no disponible en esta ficha | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos checkpoints en la información proporcionada.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo entre estos checkpoints en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TK-13/Swift1.5-Qwen3.8-Flash-Next-FP8
+- Modelo en Hugging Face: https://huggingface.co/TK-13/Swift1.5-Qwen3.8-Flash-Next-FP8
 - Modelo base: https://huggingface.co/ukisai/Swift1.5-Qwen3.8-Flash-Next
 - Checkpoint FP8 oficial de referencia: https://huggingface.co/Qwen/Qwen3.8-Flash-Next-FP8
 - Recreación bit a bit de la receta: https://huggingface.co/TK-13/Qwen3.8-Flash-Next-FP8-Recreated

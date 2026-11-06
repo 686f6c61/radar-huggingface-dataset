@@ -72,7 +72,7 @@ No se dispone de datos de rendimiento para comparar. Como referencia, el modelo 
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/RyanYr/pg-dapo_shuffled-10_offline-grpo_qwen2.5-math-1.5B_piref_kl_behavior)
-- [HuggingFace - dataset de evaluacion matematicas](https://huggingface.co/datasets/RyanYr/pg-dapo_shuffled-10_offline-grpo_qwen2.5-math-1.5B_kl_behavior_matheval)
-- [HuggingFace - dataset de evaluacion piref](https://huggingface.co/datasets/RyanYr/pg-dapo_shuffled-10_offline-grpo_qwen2.5-math-1.5B_piref_kl_matheval/viewer)
+- [Hugging Face - modelo](https://huggingface.co/RyanYr/pg-dapo_shuffled-10_offline-grpo_qwen2.5-math-1.5B_piref_kl_behavior)
+- [Hugging Face - dataset de evaluacion matematicas](https://huggingface.co/datasets/RyanYr/pg-dapo_shuffled-10_offline-grpo_qwen2.5-math-1.5B_kl_behavior_matheval)
+- [Hugging Face - dataset de evaluacion piref](https://huggingface.co/datasets/RyanYr/pg-dapo_shuffled-10_offline-grpo_qwen2.5-math-1.5B_piref_kl_matheval/viewer)
 - [GitHub - Qwen2.5-Math](https://github.com/QwenLM/Qwen2.5-Math)

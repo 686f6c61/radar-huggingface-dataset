@@ -56,10 +56,10 @@ El artículo de arXiv menciona que HiMed-8B alcanza el mejor rendimiento en HiMe
 
 | Modelo | Parametros | Contexto | Especialidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HiMed-8B | 8B | No disponible | Médico (hindi + inglés) | Apache 2.0 | HuggingFace |
+| HiMed-8B | 8B | No disponible | Médico (hindi + inglés) | Apache 2.0 | Hugging Face |
 | LLaMA-3.1-8B-Instruct | 8B | 128k (original) | General | Llama 3.1 Community License | Meta |
-| MedAlpaca-7B | 7B | 2k | Médico (inglés) | Apache 2.0 | HuggingFace |
-| BioMistral-7B | 7B | 32k | Médico (inglés) | Apache 2.0 | HuggingFace |
+| MedAlpaca-7B | 7B | 2k | Médico (inglés) | Apache 2.0 | Hugging Face |
+| BioMistral-7B | 7B | 32k | Médico (inglés) | Apache 2.0 | Hugging Face |
 
 La comparación directa no está disponible porque no se han publicado resultados de benchmarks comparativos con estos modelos. La principal diferencia de HiMed-8B es su enfoque bilingüe inglés-hindi y su cobertura de medicina tradicional india, algo que los modelos médicos existentes no cubren.
 
@@ -74,7 +74,7 @@ La comparación directa no está disponible porque no se han publicado resultado
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/FreedomIntelligence/HiMed-8B)
+- [Modelo en Hugging Face](https://huggingface.co/FreedomIntelligence/HiMed-8B)
 - [Repositorio GitHub](https://github.com/FreedomIntelligence/HiMed)
-- [Dataset HiMed en HuggingFace](https://huggingface.co/datasets/FreedomIntelligence/HiMed)
+- [Dataset HiMed en Hugging Face](https://huggingface.co/datasets/FreedomIntelligence/HiMed)
 - [Paper en arXiv](https://arxiv.org/pdf/2605.24635)

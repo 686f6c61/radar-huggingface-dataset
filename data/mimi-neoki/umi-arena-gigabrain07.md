@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K n
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| umi-arena-gigabrain07 (este) | 3.529.100.784 | no disponible | VLA bimanual (flow matching) | Términos de competición y upstream | HuggingFace, 0 descargas, 0 likes |
-| open-gigaai/GigaBrain-0.7-3.5B-Base | 3.500 millones (aprox.) | no disponible | VLA base | Apache-2.0 (según el autor) | HuggingFace (modelo base) |
+| umi-arena-gigabrain07 (este) | 3.529.100.784 | no disponible | VLA bimanual (flow matching) | Términos de competición y upstream | Hugging Face, 0 descargas, 0 likes |
+| open-gigaai/GigaBrain-0.7-3.5B-Base | 3.500 millones (aprox.) | no disponible | VLA base | Apache-2.0 (según el autor) | Hugging Face (modelo base) |
 | Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento de los modelos comparables en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa.
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento de los modelos comparables en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mimi-neoki/umi-arena-gigabrain07
+- Modelo en Hugging Face: https://huggingface.co/mimi-neoki/umi-arena-gigabrain07
 - Modelo base: https://huggingface.co/open-gigaai/GigaBrain-0.7-3.5B-Base
 - Dataset de entrenamiento: https://huggingface.co/datasets/airoa-org/yubi-corl2026-umi-arena
 - Tokenizer: https://huggingface.co/google/paligemma2-3b-pt-224

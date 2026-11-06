@@ -88,7 +88,7 @@ La información proporcionada solo permite comparar este checkpoint con su model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rangtax43/Huihui-gemma-4-E4B-it-abliterated-AWQ-W4A16
+- Modelo en Hugging Face: https://huggingface.co/rangtax43/Huihui-gemma-4-E4B-it-abliterated-AWQ-W4A16
 - Modelo base: https://huggingface.co/huihui-ai/gemma-4-E4B-it-abliterated
 - Receta de cuantización del repositorio: https://huggingface.co/rangtax43/Huihui-gemma-4-E4B-it-abliterated-AWQ-W4A16/blob/main/recipe.yaml
 - Herramienta de cuantización llm-compressor: https://github.com/vllm-project/llm-compressor

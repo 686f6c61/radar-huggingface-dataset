@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `RKB109/multimodal-document-retrieval-20261011-model` es un prototipo pequeño y transparente publicado por el usuario RKB109 en HuggingFace, orientado a la recuperación de documentos multimodales (pipeline `visual-document-retrieval`). No se trata de una red neuronal profunda entrenada a gran escala: la propia model card lo describe como un *baseline* que combina pesos de token por etiqueta con recuperación de evidencia ponderada por IDF, y que no invoca ningún LLM alojado externamente.
+El modelo `RKB109/multimodal-document-retrieval-20261011-model` es un prototipo pequeño y transparente publicado por el usuario RKB109 en Hugging Face, orientado a la recuperación de documentos multimodales (pipeline `visual-document-retrieval`). No se trata de una red neuronal profunda entrenada a gran escala: la propia model card lo describe como un *baseline* que combina pesos de token por etiqueta con recuperación de evidencia ponderada por IDF, y que no invoca ningún LLM alojado externamente.
 
 El problema que aborda es la pérdida de información en la recuperación de documentos de negocio, donde el significado reside no solo en el texto, sino también en tablas, maquetación e imágenes que un sistema puramente textual no captura. El modelo se presenta como una demostración reproducible de arquitectura, con código de entrenamiento, partición exacta del dataset y código de evaluación publicados en un repositorio GitHub enlazado por el autor.
 
@@ -87,7 +87,7 @@ No se dispone de datos de comparación en la información proporcionada. No se h
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RKB109/multimodal-document-retrieval-20261011-model
+- Modelo en Hugging Face: https://huggingface.co/RKB109/multimodal-document-retrieval-20261011-model
 - Dataset asociado: https://huggingface.co/datasets/RKB109/multimodal-document-retrieval-20261011-dataset
 - Repositorio GitHub con `train.py`, partición del dataset, código de evaluación y formato JSON: referenciado en la model card, URL no disponible
 - Paper, blog o demo oficiales: no disponibles

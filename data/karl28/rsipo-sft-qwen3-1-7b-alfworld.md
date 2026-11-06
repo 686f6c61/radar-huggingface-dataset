@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RSIPO-SFT-Qwen3-1.7B-ALFWorld | 2.031.739.904 | no disponible | SFT etapa 1 para RL agente (ALFWorld) | apache-2.0 | HuggingFace, 95 descargas |
-| Qwen/Qwen3-1.7B (base) | 1.7B | no disponible en la informacion | LLM general | apache-2.0 | HuggingFace |
-| Karl28/RSIPO-Qwen3-1.7B-ALFWorld | 1.7B (heredado) | no disponible | Checkpoint final tras 150 pasos de RL | apache-2.0 | HuggingFace |
+| RSIPO-SFT-Qwen3-1.7B-ALFWorld | 2.031.739.904 | no disponible | SFT etapa 1 para RL agente (ALFWorld) | apache-2.0 | Hugging Face, 95 descargas |
+| Qwen/Qwen3-1.7B (base) | 1.7B | no disponible en la informacion | LLM general | apache-2.0 | Hugging Face |
+| Karl28/RSIPO-Qwen3-1.7B-ALFWorld | 1.7B (heredado) | no disponible | Checkpoint final tras 150 pasos de RL | apache-2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparado entre estos modelos en la informacion proporcionada.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparado entre estos modelos en la inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Karl28/RSIPO-SFT-Qwen3-1.7B-ALFWorld
+- Modelo en Hugging Face: https://huggingface.co/Karl28/RSIPO-SFT-Qwen3-1.7B-ALFWorld
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Checkpoint final RSIPO: https://huggingface.co/Karl28/RSIPO-Qwen3-1.7B-ALFWorld
 - Dataset de etapa 1: https://huggingface.co/datasets/Karl28/RSIPO-SFT-Data

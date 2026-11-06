@@ -90,8 +90,8 @@ Contexto de lectura aportado por el autor: el primer rollout de RL tras un bloqu
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| E2K-cd82-Qwen3.8-27B-sft_first_idd-cc-iter6-frozen-adam | 27,78 B | no disponible | SFT (303 filas) + Dr.GRPO sobre un juego de ARC-AGI-3 | apache-2.0 | HuggingFace, 8 descargas, safetensors bf16 |
-| Qwen/Qwen3.8-27B (modelo base) | 27,78 B (mismo conjunto de 1199 tensores) | no disponible | no disponible en la informacion | no verificada en la informacion | HuggingFace, referencia publica del autor |
+| E2K-cd82-Qwen3.8-27B-sft_first_idd-cc-iter6-frozen-adam | 27,78 B | no disponible | SFT (303 filas) + Dr.GRPO sobre un juego de ARC-AGI-3 | apache-2.0 | Hugging Face, 8 descargas, safetensors bf16 |
+| Qwen/Qwen3.8-27B (modelo base) | 27,78 B (mismo conjunto de 1199 tensores) | no disponible | no disponible en la informacion | no verificada en la informacion | Hugging Face, referencia publica del autor |
 | Otros checkpoints de la misma serie E2K | mismo tamano (derivados del mismo base) | no disponible | variantes de brazo del mismo experimento (por ejemplo, la relanzada sin `-frozen-adam`) | apache-2.0 | publicados por el mismo autor, series del mismo run |
 
 No se dispone de datos de benchmarks de modelos alternativos de tamano comparable en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa de rendimiento.
@@ -111,6 +111,6 @@ No se dispone de datos de benchmarks de modelos alternativos de tamano comparabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ziyan98/E2K-cd82-Qwen3.8-27B-sft_first_idd-cc-iter6-frozen-adam
+- Modelo en Hugging Face: https://huggingface.co/ziyan98/E2K-cd82-Qwen3.8-27B-sft_first_idd-cc-iter6-frozen-adam
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - No se han encontrado en la informacion proporcionada enlaces a papers, blogs, repositorios de codigo ni demos adicionales.

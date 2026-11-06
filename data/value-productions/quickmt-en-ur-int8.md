@@ -77,9 +77,9 @@ La comparación cuantitativa con alternativas no está disponible en la informac
 - La calidad en textos muy largos o con estructura compleja no está documentada; la longitud de contexto es desconocida.
 - Licencia CC BY 4.0: permite uso comercial y modificaciones con atribución, pero exige citar la autoría original (quickmt) y la conversión (value-productions).
 - La afirmación de equivalencia carácter por carácter con el float16 se limita a "las frases comprobadas"; no hay garantía formal de equivalencia en todos los casos.
-- El modelo tiene 50 descargas y 0 likes en HuggingFace, por lo que su validación por la comunidad es muy limitada.
+- El modelo tiene 50 descargas y 0 likes en Hugging Face, por lo que su validación por la comunidad es muy limitada.
 
 ## Enlaces
 
-- [HuggingFace: value-productions/quickmt-en-ur-int8](https://huggingface.co/value-productions/quickmt-en-ur-int8)
+- [Hugging Face: value-productions/quickmt-en-ur-int8](https://huggingface.co/value-productions/quickmt-en-ur-int8)
 - [Modelo base: quickmt/quickmt-en-ur](https://huggingface.co/quickmt/quickmt-en-ur)

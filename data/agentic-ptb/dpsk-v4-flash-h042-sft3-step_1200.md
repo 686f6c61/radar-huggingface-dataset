@@ -62,5 +62,5 @@ No se dispone de información suficiente para una comparativa con modelos simila
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/agentic-ptb/dpsk-v4-flash.h042.sft3.step_1200
+- Hugging Face: https://huggingface.co/agentic-ptb/dpsk-v4-flash.h042.sft3.step_1200
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base (referencia, no confirmado en la información proporcionada)

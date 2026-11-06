@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Tipo | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Jlbrockett/groot_1.7_sponge_marker_cup_cube` | 3.144 M | VLA (GR00T N1.7 fine-tuned) | no aplica | Apache 2.0 | HuggingFace, 25 descargas |
+| `Jlbrockett/groot_1.7_sponge_marker_cup_cube` | 3.144 M | VLA (GR00T N1.7 fine-tuned) | no aplica | Apache 2.0 | Hugging Face, 25 descargas |
 | GR00T N1.7 base (NVIDIA) | no disponible | VLA fundacional | no disponible | Apache 2.0 | GitHub NVIDIA/Isaac-GR00T |
-| Políticas ACT de LeRobot | no disponible | Imitación (transformer) | no aplica | Apache 2.0 | HuggingFace / LeRobot |
+| Políticas ACT de LeRobot | no disponible | Imitación (transformer) | no aplica | Apache 2.0 | Hugging Face / LeRobot |
 | Políticas Diffusion Policy | no disponible | Imitación (difusión) | no aplica | no disponible | Repositorios de investigación |
 
 La comparación con alternativas concretas no está disponible con datos numéricos en la información proporcionada; solo se confirma que GR00T N1.7 base y las políticas ACT/Diffusion de LeRobot son las referencias naturales de la misma categoría.
@@ -91,7 +91,7 @@ La comparación con alternativas concretas no está disponible con datos numéri
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jlbrockett/groot_1.7_sponge_marker_cup_cube
+- Modelo en Hugging Face: https://huggingface.co/Jlbrockett/groot_1.7_sponge_marker_cup_cube
 - Dataset de entrenamiento: https://huggingface.co/datasets/Jlbrockett/sponge_marker_cup_cube
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=Jlbrockett/sponge_marker_cup_cube
 - Repositorio GR00T de NVIDIA: https://github.com/NVIDIA/Isaac-GR00T

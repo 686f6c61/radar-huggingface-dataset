@@ -70,7 +70,7 @@ No se han publicado en la información disponible resultados de MMLU, HumanEval,
 
 | Modelo | Tipo | Parámetros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| RAE on CIFAR-10 (este) | Autoencoder de representación + DiT | no disponible (pesos 0,8-1,7 GB por componente) | Imágenes 32x32 | rFID test 3,71-5,71; FID 13,59 | MIT | HuggingFace, 0 descargas |
+| RAE on CIFAR-10 (este) | Autoencoder de representación + DiT | no disponible (pesos 0,8-1,7 GB por componente) | Imágenes 32x32 | rFID test 3,71-5,71; FID 13,59 | MIT | Hugging Face, 0 descargas |
 | RAE oficial (bytetriper/RAE) | Autoencoder de representación + DiT | no disponible | Imágenes de mayor resolución | no disponible en esta ficha | MIT | GitHub |
 | LDM / VAE + DiT clásico en CIFAR-10 | VAE + diffusion transformer | no disponible | Imágenes 32x32 | no disponible | variable | múltiples repositorios |
 | dino-cifar | Encoder DINOv2 para CIFAR-10 | ViT-Tiny/4 y ViT-S/4 | Imágenes 32x32 | no disponible | no disponible | GitHub |
@@ -88,7 +88,7 @@ No se han publicado en la información disponible resultados de MMLU, HumanEval,
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/shumpei777/rae-cifar
+- Hugging Face: https://huggingface.co/shumpei777/rae-cifar
 - Repositorio rae-cifar: https://github.com/shumpei-takezaki/rae-cifar
 - Documentación del repo: https://github.com/shumpei-takezaki/rae-cifar/blob/main/docs/README.md
 - dino-cifar: https://github.com/shumpei-takezaki/dino-cifar

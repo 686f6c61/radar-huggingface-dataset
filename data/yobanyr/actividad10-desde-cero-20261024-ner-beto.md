@@ -71,9 +71,9 @@ Datos adicionales de la ejecución de validación: `eval_loss` = 0,06108, `eval_
 
 | Modelo | Parametros | Contexto | Tarea / dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `yobanyr/actividad10-desde-cero-20261024-ner-beto` (este) | 109.276.437 | 512 tokens | NER en español, dominio próstata | no disponible | HuggingFace, 0 descargas, 0 likes |
-| `dccuchile/bert-base-spanish-wwm-cased` (modelo base) | ~110 M (arquitectura idéntica) | 512 tokens | Modelo base preentrenado, sin cabeza de NER | no disponible en esta información | HuggingFace |
-| Otros fine-tunings NER en español sobre BERT/RoBERTa | no disponible | 512 tokens (BERT/RoBERTa base) | NER general en español | no disponible | HuggingFace |
+| `yobanyr/actividad10-desde-cero-20261024-ner-beto` (este) | 109.276.437 | 512 tokens | NER en español, dominio próstata | no disponible | Hugging Face, 0 descargas, 0 likes |
+| `dccuchile/bert-base-spanish-wwm-cased` (modelo base) | ~110 M (arquitectura idéntica) | 512 tokens | Modelo base preentrenado, sin cabeza de NER | no disponible en esta información | Hugging Face |
+| Otros fine-tunings NER en español sobre BERT/RoBERTa | no disponible | 512 tokens (BERT/RoBERTa base) | NER general en español | no disponible | Hugging Face |
 
 No se dispone de resultados de benchmarks comparables entre estos modelos en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa de rendimiento.
 
@@ -92,6 +92,6 @@ No se dispone de resultados de benchmarks comparables entre estos modelos en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yobanyr/actividad10-desde-cero-20261024-ner-beto
+- Modelo en Hugging Face: https://huggingface.co/yobanyr/actividad10-desde-cero-20261024-ner-beto
 - Modelo base: https://huggingface.co/dccuchile/bert-base-spanish-wwm-cased
 - Resultados de búsqueda web: no se han encontrado enlaces relevantes; las entradas devueltas por el buscador no guardan relación con el modelo. No hay paper, blog, repositorio ni demo adicionales disponibles.

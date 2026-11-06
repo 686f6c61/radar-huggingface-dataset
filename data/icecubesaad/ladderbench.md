@@ -88,5 +88,5 @@ No se han identificado en la informacion disponible arneses equivalentes que mid
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/icecubesaad/ladderbench
+- Repositorio en Hugging Face: https://huggingface.co/icecubesaad/ladderbench
 - Codigo, herramienta y articulo completo (GitHub): https://github.com/Icecubesaad/ladderbench

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`shrg7/october17-oer10-joint-urma4-fullft-22k` es un checkpoint de robótica publicado en HuggingFace por el usuario `shrg7`, etiquetado con los tags `openpi`, `pi05`, `robotics` y `vla`, y con pipeline declarado `robotics`. Por las etiquetas, se trata de un modelo de visión-lenguaje-acción (VLA) de la familia pi0.5 entrenado o ajustado con el stack openpi, orientado a generar acciones motoras a partir de observaciones visuales e instrucciones en lenguaje natural. El nombre del repositorio sugiere un ajuste fino completo ("fullft") sobre un conjunto de datos denominado internamente "oer10-joint-urma4" durante 22 000 pasos, aunque esta interpretación no está confirmada en la información disponible.
+`shrg7/october17-oer10-joint-urma4-fullft-22k` es un checkpoint de robótica publicado en Hugging Face por el usuario `shrg7`, etiquetado con los tags `openpi`, `pi05`, `robotics` y `vla`, y con pipeline declarado `robotics`. Por las etiquetas, se trata de un modelo de visión-lenguaje-acción (VLA) de la familia pi0.5 entrenado o ajustado con el stack openpi, orientado a generar acciones motoras a partir de observaciones visuales e instrucciones en lenguaje natural. El nombre del repositorio sugiere un ajuste fino completo ("fullft") sobre un conjunto de datos denominado internamente "oer10-joint-urma4" durante 22 000 pasos, aunque esta interpretación no está confirmada en la información disponible.
 
 El repositorio no incluye model card con documentación técnica: no se especifican parámetros, longitud de contexto, datos de entrenamiento, licencia ni idiomas. El contador de descargas es 0 y el de likes es 1 en el momento de la consulta, y las fechas de creación y actualización son idénticas (2026-10-19T02:33:19Z), lo que indica un artefacto recién subido y sin trazabilidad de versiones posterior.
 
@@ -66,7 +66,7 @@ No disponible. La información proporcionada no identifica modelos comparables c
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| shrg7/october17-oer10-joint-urma4-fullft-22k | no disponible | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
+| shrg7/october17-oer10-joint-urma4-fullft-22k | no disponible | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
 | Modelos alternativos | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -82,6 +82,6 @@ No disponible. La información proporcionada no identifica modelos comparables c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/shrg7/october17-oer10-joint-urma4-fullft-22k
+- Hugging Face: https://huggingface.co/shrg7/october17-oer10-joint-urma4-fullft-22k
 - Paper, blog, repositorio de código o demo: no disponible en la información proporcionada.
 - Enlaces relevantes encontrados en la búsqueda web: ninguno (los resultados obtenidos no guardaban relación con el modelo).

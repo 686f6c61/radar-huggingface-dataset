@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento comparativo. La principal diferencia entre
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gearwave00001/Huihui-Qwen3.8-27B-abliterated-nvfp4-NInfer
+- Modelo en Hugging Face: https://huggingface.co/gearwave00001/Huihui-Qwen3.8-27B-abliterated-nvfp4-NInfer
 - Articulo sobre Huihui-Qwen3.8-27B-abliterated: https://vgtimes.com/tech-and-hardware/164540-huihui-qwen3.8-27b-abliterated-launches-as-an-uncensored-ai-model-for-free.html
 - Repositorio de huihui-ai/Qwen3-8B-abliterated: https://huggingface.co/huihui-ai/Qwen3-8B-abliterated
 - Repositorio de Huihui-Qwen3.6-27B-abliterated: https://huggingface.co/huihui-ai/Huihui-Qwen3.6-27B-abliterated

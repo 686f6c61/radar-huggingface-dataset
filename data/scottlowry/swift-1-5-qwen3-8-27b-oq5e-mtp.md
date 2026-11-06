@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Swift-1.5-Qwen3.8-27b-oQ5e-mtp es una version cuantizada del modelo ukisai/Swift-1.5-Qwen3.8-27b, publicada por el usuario scottlowry en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una conversion de pesos orientada a inferencia eficiente en hardware Apple Silicon mediante MLX. La cuantizacion se ha realizado con la herramienta oQ (oMLX v0.7.0) en modo de precision mixta, a 5 bits y con un tamano de grupo de 64.
+Swift-1.5-Qwen3.8-27b-oQ5e-mtp es una version cuantizada del modelo ukisai/Swift-1.5-Qwen3.8-27b, publicada por el usuario scottlowry en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una conversion de pesos orientada a inferencia eficiente en hardware Apple Silicon mediante MLX. La cuantizacion se ha realizado con la herramienta oQ (oMLX v0.7.0) en modo de precision mixta, a 5 bits y con un tamano de grupo de 64.
 
 El modelo cuenta con 27.781.427.952 parametros (aproximadamente 27,8 mil millones) y el repositorio ocupa 20,3 GB en formato MLX safetensors. El campo de tipo de modelo declarado en la model card es qwen3_5, lo que apunta a una arquitectura de la familia Qwen 3.5, aunque la model card no documenta detalles sobre la arquitectura interna, el contexto maximo, los idiomas soportados ni el proceso de entrenamiento del modelo base.
 
@@ -82,7 +82,7 @@ No disponible. La informacion proporcionada no incluye resultados de rendimiento
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/scottlowry/Swift-1.5-Qwen3.8-27b-oQ5e-mtp
+- Modelo en Hugging Face: https://huggingface.co/scottlowry/Swift-1.5-Qwen3.8-27b-oQ5e-mtp
 - Modelo base: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b
 - Herramienta de cuantizacion oQ (oMLX): https://github.com/jundot/omlx
 - No se han encontrado en la busqueda web otros enlaces relevantes sobre este modelo (no hay papers, blogs, repos adicionales ni demos asociados).

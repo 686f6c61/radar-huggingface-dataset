@@ -23,7 +23,7 @@ Ahora bien, la informacion publicada es minima: no hay model card tecnica mas al
 | Entorno de entrenamiento | SnowballTarget (Unity ML-Agents) |
 | Algoritmo | PPO (Proximal Policy Optimization) |
 | Libreria | ml-agents |
-| Tarea declarada | reinforcement-learning (pipeline en HuggingFace) |
+| Tarea declarada | reinforcement-learning (pipeline en Hugging Face) |
 | Tamano del repositorio | 0.0 GB |
 | Descargas / likes | 0 / 1 |
 
@@ -48,10 +48,10 @@ Los unicos artefactos de entrenamiento documentados son los ficheros de TensorBo
 
 - Material didactico para cursos de aprendizaje por refuerzo: el repositorio sirve como ejemplo de artefacto final de un entrenamiento con ML-Agents y permite ilustrar el ciclo completo configuracion, entrenamiento, exportacion e inferencia en navegador.
 - Punto de partida para reentrenamiento: un desarrollador puede descargar el checkpoint, recuperar una configuracion YAML propia del entorno SnowballTarget y reanudar el entrenamiento con `--resume` para ajustar hiperparametros o ampliar el numero de pasos.
-- Verificacion de pipelines de exportacion ONNX: al ser un modelo pequeno, es util para comprobar que el flujo de exportacion e integracion con el visor de Unity en HuggingFace funciona correctamente antes de aplicarlo a entornos mas costosos.
+- Verificacion de pipelines de exportacion ONNX: al ser un modelo pequeno, es util para comprobar que el flujo de exportacion e integracion con el visor de Unity en Hugging Face funciona correctamente antes de aplicarlo a entornos mas costosos.
 - Base de comparacion en experimentos de reproducibilidad: permite contrastar variantes de PPO (distintos learning rates, coeficientes de entropia o arquitecturas de red) sobre un mismo entorno y medir la diferencia en recompensa media.
 - Prototipado de comportamiento de NPC en Unity: el agente puede cargarse dentro de un proyecto Unity mediante el paquete com.unity.ml-agents para dotar de comportamiento a un personaje no jugador en una demo o prototipo interno del entorno SnowballTarget.
-- Demostracion interactiva en navegador: usando el visor de agentes de la organizacion unity en HuggingFace, se puede cargar el fichero .onnx y observar al agente jugando sin instalacion local, lo que resulta util en presentaciones o docencia.
+- Demostracion interactiva en navegador: usando el visor de agentes de la organizacion unity en Hugging Face, se puede cargar el fichero .onnx y observar al agente jugando sin instalacion local, lo que resulta util en presentaciones o docencia.
 - Prueba de concepto de despliegue en el borde: por su tamano reducido, es candidato a ejecutarse en CPU en dispositivos embebidos para validar la latencia de inferencia de una politica de control antes de escalar a un modelo mayor.
 
 ## Benchmarks y rendimiento
@@ -63,15 +63,15 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: no disponible en terminos exactos. Por el contexto del repositorio (0.0 GB de tamano declarado y una red de politica tipica de ML-Agents), el modelo es de orden de kilobytes a unos pocos megabytes, muy por debajo de 1 GB.
 - GPU recomendadas: no aplicable para inferencia, ya que el modelo esta pensado para ejecutarse en CPU o en el motor Unity. Para reentrenar, ML-Agents puede usar GPU mediante PyTorch, y una GPU de gama media es suficiente; no se publican recomendaciones especificas.
 - Compatibilidad con GPU de consumo: si, cabe holgadamente en cualquier GPU de consumo e incluso en CPU sin aceleracion, dado el tamano reducido del artefacto.
-- Opciones de despliegue: runtime de ML-Agents (fichero .nn dentro de Unity con com.unity.ml-agents), ONNX Runtime para el fichero .onnx, y el visor web de agentes de HuggingFace para la demostracion en navegador. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, que no son aplicables a este tipo de modelo.
+- Opciones de despliegue: runtime de ML-Agents (fichero .nn dentro de Unity con com.unity.ml-agents), ONNX Runtime para el fichero .onnx, y el visor web de agentes de Hugging Face para la demostracion en navegador. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, que no son aplicables a este tipo de modelo.
 - Latencia y throughput estimados: no disponibles. Dependen del hardware, del runtime y del numero de agentes simulados simultaneamente; en el caso de este modelo el cuello de botella realista suele ser la simulacion fisica de Unity, no la inferencia de la red.
 
 ## Comparativa con modelos similares
 
 | Modelo | Tipo | Entorno | Parametros | Licencia | Metricas publicadas | Disponibilidad |
 |---|---|---|---|---|---|---|
-| viswa752/ppo-SnowballTarget | Agente PPO (ML-Agents) | SnowballTarget | no disponible | no disponible | no disponibles | HuggingFace |
-| Otros agentes de la organizacion unity en HuggingFace (por ejemplo variantes ppo sobre entornos de ejemplo de ML-Agents) | Agente PPO (ML-Agents) | Entornos de ejemplo de ML-Agents | no disponible | no disponible en los metadatos consultados | no disponibles | HuggingFace |
+| viswa752/ppo-SnowballTarget | Agente PPO (ML-Agents) | SnowballTarget | no disponible | no disponible | no disponibles | Hugging Face |
+| Otros agentes de la organizacion unity en Hugging Face (por ejemplo variantes ppo sobre entornos de ejemplo de ML-Agents) | Agente PPO (ML-Agents) | Entornos de ejemplo de ML-Agents | no disponible | no disponible en los metadatos consultados | no disponibles | Hugging Face |
 | Checkpoints de referencia generados por el propio usuario al reentrenar | Agente PPO (ML-Agents) | SnowballTarget | no disponible | no aplicable | medibles por el usuario | local |
 
 No se dispone de cifras de parametros, contexto ni rendimiento de las alternativas, por lo que la comparacion cuantitativa no es posible con la informacion proporcionada.
@@ -90,10 +90,10 @@ No se dispone de cifras de parametros, contexto ni rendimiento de las alternativ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/viswa752/ppo-SnowballTarget
+- Modelo en Hugging Face: https://huggingface.co/viswa752/ppo-SnowballTarget
 - Repositorio de Unity ML-Agents: https://github.com/Unity-Technologies/ml-agents
 - Documentacion del ML-Agents Toolkit: https://unity-technologies.github.io/ml-agents/ML-Agents-Toolkit-Documentation/
 - Tutorial corto del curso de deep RL (ML-Agents y publicacion en el Hub): https://huggingface.co/learn/deep-rl-course/unitbonus1/introduction
 - Tutorial extendido de ML-Agents: https://huggingface.co/learn/deep-rl-course/unit5/introduction
-- Visor de agentes de la organizacion unity en HuggingFace: https://huggingface.co/unity
+- Visor de agentes de la organizacion unity en Hugging Face: https://huggingface.co/unity
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo; los resultados devueltos corresponden a fichas de producto sin relacion con el repositorio.

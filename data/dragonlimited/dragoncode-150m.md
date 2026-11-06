@@ -60,6 +60,6 @@ No disponible. No se conocen modelos comparables de la misma categoría y tamañ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dragonlimited/DragonCode-150M
+- Hugging Face: https://huggingface.co/dragonlimited/DragonCode-150M
 - Sitio web DragonCode (no relacionado con este modelo): https://dragoncode.codes/
 - Repositorio GitHub Dragon-Code (no relacionado con este modelo): https://github.com/naoum40/Dragon-Code

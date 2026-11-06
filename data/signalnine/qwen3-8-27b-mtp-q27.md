@@ -77,6 +77,6 @@ No se dispone de datos comparativos con otros modelos en la información proporc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/signalnine/Qwen3.8-27B-MTP-q27
+- Modelo en Hugging Face: https://huggingface.co/signalnine/Qwen3.8-27B-MTP-q27
 - Motor q27: https://github.com/signalnine/q27
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B

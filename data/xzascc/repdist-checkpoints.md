@@ -66,6 +66,6 @@ No se dispone de información sobre modelos comparables. El proyecto es único e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/xzAscC/RepDist-checkpoints
+- Hugging Face: https://huggingface.co/xzAscC/RepDist-checkpoints
 - GitHub (proyecto RepDist): https://github.com/xzAscC/RepDist
 - Plantilla de investigación del autor: https://github.com/xzAscC/ai-research-template

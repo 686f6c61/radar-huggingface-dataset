@@ -92,7 +92,7 @@ No disponible. La información proporcionada no incluye otros agentes PPO compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Johnnybae/connectailab-rl-johnnybae-v1-roadster-ppo
+- Modelo en Hugging Face: https://huggingface.co/Johnnybae/connectailab-rl-johnnybae-v1-roadster-ppo
 - Curso "AI CITY BUILDERS" de CONNECT AI LAB: no disponible (no se proporciona URL)
 - Simulador `로드스터_시뮬레이터.py`: no disponible (no se proporciona URL)
 - Paper de PPO: no disponible en la información proporcionada

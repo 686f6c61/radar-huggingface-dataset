@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tiny226/small-model` es un ajuste fino (fine-tune) supervisado del modelo denso Qwen/Qwen3-1.7B, publicado por el usuario tiny226 en HuggingFace. Se trata de un modelo derivado, generado con la libreria TRL mediante SFT (supervised fine-tuning), no de un entrenamiento desde cero. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta y no incluye pipeline declarado.
+`tiny226/small-model` es un ajuste fino (fine-tune) supervisado del modelo denso Qwen/Qwen3-1.7B, publicado por el usuario tiny226 en Hugging Face. Se trata de un modelo derivado, generado con la libreria TRL mediante SFT (supervised fine-tuning), no de un entrenamiento desde cero. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta y no incluye pipeline declarado.
 
 La model card es practicamente un esqueleto generado automaticamente por `generated_from_trainer`: no documenta el dataset de entrenamiento, la composicion de los datos, el numero de tokens vistos ni el procedimiento de alineacion mas alla de indicar que se uso SFT. El campo `model_name: checkpoints` y el uso de `model="None"` en el snippet de ejemplo apuntan a un artefacto sin publicar formalmente.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM para inferencia en INT4: aproximadamente 1,2-1,8 GB.
 - Cabe en GPU consumer: si, en tarjetas con 6 GB o mas de VRAM (RTX 3060, RTX 4060, RTX 4070, RTX 4090, etc.) incluso en precision completa.
 - GPU de datacenter: A100, H100 o L40S son suficientes y estan sobredimensionadas para un modelo de 1.7B; se usarian para servir muchas peticiones concurrentes.
-- Opciones de despliegue: el repositorio es compatible con transformers y con el pipeline de HuggingFace. No se han publicado pesos GGUF, por lo que llama.cpp y Ollama requeririan conversion propia. vLLM, TGI o SGLang son viables si se exporta el modelo correctamente.
+- Opciones de despliegue: el repositorio es compatible con transformers y con el pipeline de Hugging Face. No se han publicado pesos GGUF, por lo que llama.cpp y Ollama requeririan conversion propia. vLLM, TGI o SGLang son viables si se exporta el modelo correctamente.
 - Latencia y throughput: no disponible. No se han publicado mediciones para este fine-tune concreto.
 
 Precaucion: el repositorio ocupa 225,2 GB, por lo que descargar los pesos completos requiere un espacio en disco considerable. Se recomienda revisar la estructura interna del repositorio antes de clonarlo.
@@ -73,11 +73,11 @@ Precaucion: el repositorio ocupa 225,2 GB, por lo que descargar los pesos comple
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| tiny226/small-model | 1.7B | no documentado (base 32K) | no disponible | HuggingFace, 0 descargas | Fine-tune SFT sin documentar |
-| Qwen/Qwen3-1.7B | 1.7B | 32.768 tokens (ampliable a 131.072 con YaRN) | Apache-2.0 | HuggingFace, ampliamente usado | Modelo base, con thinking y tool calling |
-| meta-llama/Llama-3.2-1B | 1.2B | 128.000 tokens | Llama 3.2 Community License | HuggingFace | Alternativa densa de tamano similar |
-| google/gemma-2-2b | 2.6B | 8.192 tokens | Gemma Terms of Use | HuggingFace | Mayor numero de parametros, contexto mas corto |
-| HuggingFaceTB/SmolLM2-1.7B | 1.7B | 8.192 tokens | Apache-2.0 | HuggingFace | Modelo abierto comparable en tamano |
+| tiny226/small-model | 1.7B | no documentado (base 32K) | no disponible | Hugging Face, 0 descargas | Fine-tune SFT sin documentar |
+| Qwen/Qwen3-1.7B | 1.7B | 32.768 tokens (ampliable a 131.072 con YaRN) | Apache-2.0 | Hugging Face, ampliamente usado | Modelo base, con thinking y tool calling |
+| meta-llama/Llama-3.2-1B | 1.2B | 128.000 tokens | Llama 3.2 Community License | Hugging Face | Alternativa densa de tamano similar |
+| google/gemma-2-2b | 2.6B | 8.192 tokens | Gemma Terms of Use | Hugging Face | Mayor numero de parametros, contexto mas corto |
+| HuggingFaceTB/SmolLM2-1.7B | 1.7B | 8.192 tokens | Apache-2.0 | Hugging Face | Modelo abierto comparable en tamano |
 
 Las comparaciones de rendimiento no estan disponibles porque el modelo ajustado no publica benchmarks. La eleccion entre estas alternativas deberia basarse en licencia, contexto y evaluacion propia.
 
@@ -95,7 +95,7 @@ Las comparaciones de rendimiento no estan disponibles porque el modelo ajustado 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tiny226/small-model
+- Modelo en Hugging Face: https://huggingface.co/tiny226/small-model
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Documentacion de Transformers (para cargar el modelo): https://huggingface.co/docs/transformers

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AudioDirector es un modelo publicado en HuggingFace por el usuario LeyRio bajo licencia Apache 2.0. El repositorio, de 18,7 GB, aparece etiquetado únicamente con la licencia y la región `us`, sin pipeline declarado ni idiomas especificados. La model card asociada no contiene más información que la línea de licencia, por lo que no es posible determinar a partir de los datos disponibles qué tipo de modelo es, qué arquitectura emplea ni qué tarea resuelve.
+AudioDirector es un modelo publicado en Hugging Face por el usuario LeyRio bajo licencia Apache 2.0. El repositorio, de 18,7 GB, aparece etiquetado únicamente con la licencia y la región `us`, sin pipeline declarado ni idiomas especificados. La model card asociada no contiene más información que la línea de licencia, por lo que no es posible determinar a partir de los datos disponibles qué tipo de modelo es, qué arquitectura emplea ni qué tarea resuelve.
 
 El nombre sugiere un posible enfoque hacia audio o generación de audio, pero se trata de una inferencia a partir del identificador y no de un dato confirmado en la información proporcionada. El tamaño del repositorio (18,7 GB) es compatible con pesos en precisión completa o media de un modelo de varios miles de millones de parámetros, aunque esta estimación no puede verificarse sin acceso a los archivos de pesos.
 
@@ -23,7 +23,7 @@ En el momento de la consulta el modelo registra 0 descargas y 0 likes, con fecha
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura del modelo en la model card ni en los metadatos de HuggingFace. Se desconoce si se trata de un transformer, un modelo de mezcla de expertos, una arquitectura híbrida o un sistema basado en difusión, así como cualquier detalle sobre atención, tokenizador o mecanismos de decodificación.
+No se ha publicado información sobre la arquitectura del modelo en la model card ni en los metadatos de Hugging Face. Se desconoce si se trata de un transformer, un modelo de mezcla de expertos, una arquitectura híbrida o un sistema basado en difusión, así como cualquier detalle sobre atención, tokenizador o mecanismos de decodificación.
 
 Tampoco hay datos sobre el corpus de entrenamiento, el número de tokens procesados, la composición del dataset ni sobre si se aplicaron técnicas de alineación como RLHF, DPO o ajuste supervisado. Cualquier afirmación al respecto sería especulativa.
 
@@ -66,6 +66,6 @@ No disponible. La ausencia de información sobre arquitectura, parámetros, moda
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LeyRio/AudioDirector
+- Hugging Face: https://huggingface.co/LeyRio/AudioDirector
 
 No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

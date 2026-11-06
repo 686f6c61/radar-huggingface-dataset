@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ll-ayni-v4-fiction-bf16 es un modelo de generación de ficción desarrollado por Liberation Labs, dentro de la línea de modelos "Ayni" basados en la arquitectura Qwen3-30B. Se trata de una iteración intermedia (v4) que fue posteriormente superada por las versiones v5 y v6, y que ha sido subida al repositorio de HuggingFace por HumboldtJoker (Thomas Edrington) con fines de análisis y arqueología de entrenamiento, dentro del proyecto j-space probe.
+ll-ayni-v4-fiction-bf16 es un modelo de generación de ficción desarrollado por Liberation Labs, dentro de la línea de modelos "Ayni" basados en la arquitectura Qwen3-30B. Se trata de una iteración intermedia (v4) que fue posteriormente superada por las versiones v5 y v6, y que ha sido subida al repositorio de Hugging Face por HumboldtJoker (Thomas Edrington) con fines de análisis y arqueología de entrenamiento, dentro del proyecto j-space probe.
 
 El modelo está específicamente afinado para la generación de ficción, lo que lo diferencia de los modelos instruct genéricos. Con 30.531.028.992 parámetros en formato bf16, ocupa 61,1 GB en disco. La ficha actual está marcada como "archived", lo que indica que no se recomienda su uso en producción, sino más bien como objeto de estudio para comprender la evolución de la línea Ayni.
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: con 30.531.028.992 parametros en bf16, se requieren aproximadamente 61 GB de VRAM para cargar los pesos completos en memoria. Con cuantizacion a 8 bits, se reduciria a unos 31 GB; con 4 bits, a unos 16 GB.
 - GPU recomendadas: para inferencia en bf16 completo, se necesita una GPU con al menos 64 GB de VRAM, como la NVIDIA A100 (80 GB) o H100 (80 GB). Con cuantizacion a 4 bits, una RTX 4090 (24 GB) seria suficiente.
 - Si cabe en consumer GPU: solo con cuantizacion agresiva (4 bits) y aun asi en GPUs de gama alta como la RTX 4090 o RTX 3090.
-- Opciones de despliegue: al ser un modelo safetensors en bf16, se puede desplegar con vLLM, TGI, llama.cpp (si se convierte a GGUF), o mediante transformers de HuggingFace. No hay soporte directo en Ollama a menos que se convierta manualmente.
+- Opciones de despliegue: al ser un modelo safetensors en bf16, se puede desplegar con vLLM, TGI, llama.cpp (si se convierte a GGUF), o mediante transformers de Hugging Face. No hay soporte directo en Ollama a menos que se convierta manualmente.
 - Latencia y throughput estimados: no disponible. Dependera del hardware y la cuantizacion elegida.
 
 ## Comparativa con modelos similares
@@ -79,5 +79,5 @@ No se dispone de informacion suficiente sobre modelos comparables de generacion 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HumboldtJoker/ll-ayni-v4-fiction-bf16
-- Perfil del autor en HuggingFace: https://huggingface.co/HumboldtJoker/models
+- Modelo en Hugging Face: https://huggingface.co/HumboldtJoker/ll-ayni-v4-fiction-bf16
+- Perfil del autor en Hugging Face: https://huggingface.co/HumboldtJoker/models

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-II-Medical-8B-GGUF es la version cuantizada en formato GGUF del modelo Intelligent-Internet/II-Medical-8B, un modelo de lenguaje de 8.190.735.360 parametros orientado al dominio medico y distribuido con licencia Apache 2.0. Las cuantizaciones han sido generadas por mradermacher, un conocido empaquetador de la comunidad de HuggingFace especializado en producir versiones GGUF de modelos populares para su uso con llama.cpp y herramientas compatibles. El modelo base fue desarrollado por Intelligent Internet y esta disenado para tareas de comprension y generacion de texto en el ambito sanitario.
+II-Medical-8B-GGUF es la version cuantizada en formato GGUF del modelo Intelligent-Internet/II-Medical-8B, un modelo de lenguaje de 8.190.735.360 parametros orientado al dominio medico y distribuido con licencia Apache 2.0. Las cuantizaciones han sido generadas por mradermacher, un conocido empaquetador de la comunidad de Hugging Face especializado en producir versiones GGUF de modelos populares para su uso con llama.cpp y herramientas compatibles. El modelo base fue desarrollado por Intelligent Internet y esta disenado para tareas de comprension y generacion de texto en el ambito sanitario.
 
 El repositorio ofrece un abanico completo de cuantizaciones estaticas, desde Q2_K (3,4 GB) hasta f16 (16,5 GB), pasando por variantes K-quant e IQ-quant. Esto permite desplegar el modelo en hardware muy diverso, desde GPUs de consumo con 8 GB de VRAM hasta estaciones de trabajo con GPUs profesionales. Ademas, existe una version con cuantizacion ponderada/imatrix en un repositorio separado (mradermacher/II-Medical-8B-i1-GGUF), que suele ofrecer mejor calidad por bit que las cuantizaciones estaticas equivalentes.
 
@@ -85,7 +85,7 @@ La comparativa se limita a caracteristicas objetivas; no se dispone de datos de 
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/mradermacher/II-Medical-8B-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/mradermacher/II-Medical-8B-GGUF
 - Modelo base: https://huggingface.co/Intelligent-Internet/II-Medical-8B
 - Cuantizaciones ponderadas/imatrix: https://huggingface.co/mradermacher/II-Medical-8B-i1-GGUF
 - Pagina de descargas del autor: https://hf.tst.eu/model#II-Medical-8B-GGUF

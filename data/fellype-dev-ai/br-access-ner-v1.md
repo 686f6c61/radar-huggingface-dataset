@@ -80,9 +80,9 @@ No se han publicado comparaciones con otros modelos en la informacion disponible
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BR-Access-NER-v1 | 108.353.307 | no disponible | NER de PII en portugues (13 categorias) | CC-BY-4.0 | HuggingFace, transformers |
-| neuralmind/bert-base-portuguese-cased (modelo base) | ~108M | no disponible | Encoder de proposito general en portugues | no disponible en la informacion | HuggingFace |
-| Modelos NER genericos en portugues (p. ej. derivados de BERTimbau para etiquetado general) | ~108M | no disponible | NER de proposito general (PER, ORG, LOC, MISC) | variable | HuggingFace |
+| BR-Access-NER-v1 | 108.353.307 | no disponible | NER de PII en portugues (13 categorias) | CC-BY-4.0 | Hugging Face, transformers |
+| neuralmind/bert-base-portuguese-cased (modelo base) | ~108M | no disponible | Encoder de proposito general en portugues | no disponible en la informacion | Hugging Face |
+| Modelos NER genericos en portugues (p. ej. derivados de BERTimbau para etiquetado general) | ~108M | no disponible | NER de proposito general (PER, ORG, LOC, MISC) | variable | Hugging Face |
 
 La comparacion cuantitativa con alternativas no esta disponible: el autor no publica resultados frente a otros modelos NER en portugues ni frente a sistemas de deteccion de PII. La diferencia funcional frente al modelo base es el fine-tuning supervisado sobre EliMC/esic-ner y la taxonomia especifica de 13 categorias orientada a datos personales.
 
@@ -101,7 +101,7 @@ La comparacion cuantitativa con alternativas no esta disponible: el autor no pub
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fellype-dev-ai/br-access-ner-v1
+- Modelo en Hugging Face: https://huggingface.co/fellype-dev-ai/br-access-ner-v1
 - Modelo base: https://huggingface.co/neuralmind/bert-base-portuguese-cased
 - Dataset de entrenamiento: https://huggingface.co/datasets/EliMC/esic-ner
 - Repositorio de codigo, paper o demo: no disponible en la informacion proporcionada.

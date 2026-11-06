@@ -4,7 +4,7 @@
 
 bodhan-ai/indic-ocr es un modelo de OCR y análisis de documentos desarrollado por Bodhan AI, con contribuciones de AI4Bharat. Está diseñado para extraer texto y estructura de páginas impresas o manuscritas, preservando el orden de lectura, las ecuaciones y las tablas. Soporta 22 idiomas indios además del inglés, lo que lo convierte en una herramienta clave para la digitalización de documentos en el subcontinente.
 
-Desde el punto de vista técnico, se trata de un vision-language model que combina un modelo de lenguaje basado en Qwen con un detector de objetos RT-DETR, según los tags del repositorio. El pipeline es image-to-text y los pesos se distribuyen en formato safetensors. El repositorio tiene un tamaño de 2.1 GB y su acceso está restringido (gated) en HuggingFace.
+Desde el punto de vista técnico, se trata de un vision-language model que combina un modelo de lenguaje basado en Qwen con un detector de objetos RT-DETR, según los tags del repositorio. El pipeline es image-to-text y los pesos se distribuyen en formato safetensors. El repositorio tiene un tamaño de 2.1 GB y su acceso está restringido (gated) en Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -62,7 +62,7 @@ No se dispone de datos de benchmarks publicados para este modelo, por lo que no 
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated) en HuggingFace: requiere aceptar condiciones en la página del modelo.
+- Acceso restringido (gated) en Hugging Face: requiere aceptar condiciones en la página del modelo.
 - Licencia "other" con requisito de atribución obligatoria; hay que revisar los términos exactos para uso comercial.
 - No se han publicado benchmarks, por lo que el rendimiento no está verificado de forma independiente.
 - Como modelo OCR, su precisión depende de la calidad de la imagen, la legibilidad y el tipo de escritura.
@@ -70,5 +70,5 @@ No se dispone de datos de benchmarks publicados para este modelo, por lo que no 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bodhan-ai/indic-ocr
+- Hugging Face: https://huggingface.co/bodhan-ai/indic-ocr
 - Bodhan console: https://console.bodhan.ai/

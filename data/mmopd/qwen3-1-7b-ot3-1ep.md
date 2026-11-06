@@ -70,11 +70,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MMOPD/Qwen3-1.7B-OT3-1ep | 2,03B | Entrenado a 18.432 tokens; 40.960 sugerido en vLLM | SFT sobre OpenThoughts3-1.2M, modo thinking | Apache-2.0 | HuggingFace, safetensors |
-| MMOPD/Qwen3-1.7B-OT3-2ep | No disponible en la informacion proporcionada (mismo base, 2 epocas) | No disponible | Mismo pipeline, checkpoint final | Apache-2.0 | HuggingFace, safetensors |
-| MMOPD/Qwen3-4B-OT3-2ep | No disponible en la informacion proporcionada (escala 4B) | No disponible | Mismo pipeline, punto de partida de los profesores de dominio | Apache-2.0 | HuggingFace |
-| Qwen/Qwen3-1.7B (oficial) | 1,7B (etiqueta comercial) | No disponible en la informacion proporcionada | Modelo instruct generalista con modos thinking y no-thinking | Apache-2.0 | HuggingFace, multiples formatos |
-| DeepSeek-R1-Distill-Qwen-1.5B | 1,78B | No disponible en la informacion proporcionada | Destilado de razonamiento a partir de R1 | No disponible en la informacion proporcionada | HuggingFace |
+| MMOPD/Qwen3-1.7B-OT3-1ep | 2,03B | Entrenado a 18.432 tokens; 40.960 sugerido en vLLM | SFT sobre OpenThoughts3-1.2M, modo thinking | Apache-2.0 | Hugging Face, safetensors |
+| MMOPD/Qwen3-1.7B-OT3-2ep | No disponible en la informacion proporcionada (mismo base, 2 epocas) | No disponible | Mismo pipeline, checkpoint final | Apache-2.0 | Hugging Face, safetensors |
+| MMOPD/Qwen3-4B-OT3-2ep | No disponible en la informacion proporcionada (escala 4B) | No disponible | Mismo pipeline, punto de partida de los profesores de dominio | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3-1.7B (oficial) | 1,7B (etiqueta comercial) | No disponible en la informacion proporcionada | Modelo instruct generalista con modos thinking y no-thinking | Apache-2.0 | Hugging Face, multiples formatos |
+| DeepSeek-R1-Distill-Qwen-1.5B | 1,78B | No disponible en la informacion proporcionada | Destilado de razonamiento a partir de R1 | No disponible en la informacion proporcionada | Hugging Face |
 
 Los datos de los modelos comparadores externos a la familia MMOPD no provienen de la busqueda web realizada para esta ficha; deben verificarse en sus respectivas model cards antes de usarse en una decision de produccion. No se dispone de cifras de rendimiento comparadas para ningun modelo de esta tabla.
 
@@ -94,7 +94,7 @@ Los datos de los modelos comparadores externos a la familia MMOPD no provienen d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MMOPD/Qwen3-1.7B-OT3-1ep
+- Modelo en Hugging Face: https://huggingface.co/MMOPD/Qwen3-1.7B-OT3-1ep
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B-Base
 - Checkpoint hermano de 2 epocas: https://huggingface.co/MMOPD/Qwen3-1.7B-OT3-2ep
 - Dataset de entrenamiento: https://huggingface.co/datasets/open-thoughts/OpenThoughts3-1.2M

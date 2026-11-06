@@ -6,7 +6,7 @@ OzzyGT/Qwen_Image_2_1_sdnq_dynamic_4bit es una version cuantizada a int4 del mod
 
 El proposito del modelo es abaratar el coste de inferencia del generador de imagenes base, que en su version bf16 requiere mas memoria de la que ofrecen las GPU de consumo habituales. Al reducir la precision de los pesos, el autor busca que el pipeline completo pueda ejecutarse en equipos modestos combinando la cuantizacion con `enable_model_cpu_offload()` y `vae.enable_tiling()`, tal y como se muestra en el ejemplo de uso de la model card. El checkpoint mantiene la interfaz de la pipeline QwenImage21Pipeline, por lo que se sustituye el modelo original sin cambios de codigo mas alla de registrar el backend SDNQ.
 
-La relevancia de esta ficha es doble: por un lado, documenta una alternativa de despliegue de bajo coste para un modelo de generacion de imagen con soporte de indicaciones en ingles y chino; por otro, advierte de sus limitaciones, entre ellas una licencia de tipo qwen-research orientada a investigacion, la ausencia total de metricas cuantitativas publicadas y una discrepancia entre la model card (int4) y las etiquetas de HuggingFace (8-bit) que conviene verificar antes de integrarlo en produccion. El repositorio no registraba descargas ni "likes" en el momento de redactar esta ficha.
+La relevancia de esta ficha es doble: por un lado, documenta una alternativa de despliegue de bajo coste para un modelo de generacion de imagen con soporte de indicaciones en ingles y chino; por otro, advierte de sus limitaciones, entre ellas una licencia de tipo qwen-research orientada a investigacion, la ausencia total de metricas cuantitativas publicadas y una discrepancia entre la model card (int4) y las etiquetas de Hugging Face (8-bit) que conviene verificar antes de integrarlo en produccion. El repositorio no registraba descargas ni "likes" en el momento de redactar esta ficha.
 
 ## Especificaciones tecnicas
 
@@ -16,14 +16,14 @@ La relevancia de esta ficha es doble: por un lado, documenta una alternativa de 
 | Parametros totales | 3.812.110.336 (recuento real de los safetensors) |
 | Parametros activos | No aplica: no es un modelo de mezcla de expertos (MoE) |
 | Longitud de contexto | No disponible |
-| Tipos de cuantizacion | SDNQ int4 dinamico con Hadamard Rotation; requiere SDNQ >= 0.2.2. La etiqueta de HuggingFace incluye "8-bit", en contradiccion con la model card, que indica int4 |
+| Tipos de cuantizacion | SDNQ int4 dinamico con Hadamard Rotation; requiere SDNQ >= 0.2.2. La etiqueta de Hugging Face incluye "8-bit", en contradiccion con la model card, que indica int4 |
 | Idiomas soportados | Ingles (en) y chino (zh) para las indicaciones de texto |
 | Licencia | "other" con license_name qwen-research (licencia de investigacion de Qwen) |
 | Formato de pesos | safetensors (libreria diffusers) |
 | Modelo base | Qwen/Qwen-Image-2.1 (relacion: quantized) |
 | Tamano del repositorio | 12,2 GB |
 | Pipeline declarada | text-to-image |
-| Fecha de creacion (segun HuggingFace) | 2026-09-21 |
+| Fecha de creacion (segun Hugging Face) | 2026-09-21 |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| OzzyGT/Qwen_Image_2_1_sdnq_dynamic_4bit | 3.812.110.336 (int4) | No disponible | other / qwen-research | HuggingFace, diffusers con SDNQ >= 0.2.2 |
-| Qwen/Qwen-Image-2.1 (bf16, modelo base) | No disponible | No disponible | qwen-research | HuggingFace, diffusers |
+| OzzyGT/Qwen_Image_2_1_sdnq_dynamic_4bit | 3.812.110.336 (int4) | No disponible | other / qwen-research | Hugging Face, diffusers con SDNQ >= 0.2.2 |
+| Qwen/Qwen-Image-2.1 (bf16, modelo base) | No disponible | No disponible | qwen-research | Hugging Face, diffusers |
 | Otras cuantizaciones de Qwen-Image-2.1 | No disponible | No disponible | Depende del autor | No disponible |
 
 No se dispone de datos de rendimiento comparado entre estas variantes. La unica comparacion documentada por el autor es visual y pareada entre bf16 e int4 con la misma semilla, sin metricas.
@@ -81,17 +81,17 @@ No se dispone de datos de rendimiento comparado entre estas variantes. La unica 
 - Licencia restrictiva: el modelo se distribuye bajo licencia "other" con nombre qwen-research. Es previsible que el uso comercial quede sujeto a condiciones especificas; debe consultarse el texto completo en el enlace de licencia antes de cualquier despliegue en produccion.
 - Riesgo de alucinacion y errores de composicion: como todo modelo generativo de imagen, puede producir texto ilegible en rotulos, anatomias incorrectas, perspectivas incoherentes o elementos que no aparecen en la indicacion. La model card no documenta tasas de error.
 - Perdida de calidad por cuantizacion: la version int4 no es identica a la bf16. Aunque el autor muestra una comparacion favorable, no se aportan metricas perceptuales ni estudios de degradacion en indicaciones diversas.
-- Ambiguedad en la precision declarada: la model card indica int4 mientras que las etiquetas de HuggingFace incluyen "8-bit". Conviene inspeccionar los ficheros safetensors o la configuracion de cuantizacion antes de asumir un consumo de memoria concreto.
+- Ambiguedad en la precision declarada: la model card indica int4 mientras que las etiquetas de Hugging Face incluyen "8-bit". Conviene inspeccionar los ficheros safetensors o la configuracion de cuantizacion antes de asumir un consumo de memoria concreto.
 - Cobertura idiomatica limitada: solo se declaran ingles y chino. No hay evidencia de rendimiento en castellano ni en otras lenguas, por lo que las indicaciones en espanol pueden degradar la fidelidad del resultado.
 - Longitud de contexto del codificador de texto no disponible: no se puede planificar con antelacion el limite de tokens de las indicaciones. El ejemplo publicado usa una indicacion muy larga, lo que sugiere una ventana amplia, pero es una inferencia, no un dato.
 - Ausencia de validacion externa: cero descargas y cero "likes" en el momento de redactar la ficha, sin benchmarks, sin evaluaciones de terceros y sin historial de uso en produccion.
 - Dependencia de una version concreta de libreria: requiere SDNQ v0.2.2 o superior. Versiones anteriores del backend pueden fallar al cargar los pesos.
 - Consumo de memoria elevado en resoluciones altas: el ejemplo oficial a 2528 x 1696 con 25 pasos no esta pensado para GPU de gama baja sin las optimizaciones de descarga a CPU y tiling.
-- Fecha de creacion inusual: HuggingFace registra la creacion y la ultima actualizacion el 2026-09-21, dato que se reproduce tal cual y que conviene contrastar.
+- Fecha de creacion inusual: Hugging Face registra la creacion y la ultima actualizacion el 2026-09-21, dato que se reproduce tal cual y que conviene contrastar.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OzzyGT/Qwen_Image_2_1_sdnq_dynamic_4bit
+- Modelo en Hugging Face: https://huggingface.co/OzzyGT/Qwen_Image_2_1_sdnq_dynamic_4bit
 - Modelo base Qwen/Qwen-Image-2.1: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Texto de la licencia qwen-research: https://huggingface.co/Qwen/Qwen-Image-2.1/blob/main/LICENSE
 - Repositorio de SDNQ (SD.Next Quantization): https://github.com/Disty0/sdnq

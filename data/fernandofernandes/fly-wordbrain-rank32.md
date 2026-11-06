@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Fly Wordbrain rank 32 es un modelo de generacion de texto de 2.343.125 parametros entrenado sobre un connectoma de mosca de la fruta (Drosophila melanogaster) congelado. Lo publica el usuario fernandofernandes en HuggingFace y deriva de fly-wordbrain-rank64, del que hereda exactamente la misma arquitectura salvo el rango del readout: 49.393 → 32 → 1.024 en lugar de 49.393 → 64 → 1.024. Con ello reduce el numero de parametros en 1.613.344 respecto a su hermano mayor (un 22.5x menos que el modelo de referencia del que parte la linea, ngxson/fly-llm-hf, con 52.756.661 parametros).
+Fly Wordbrain rank 32 es un modelo de generacion de texto de 2.343.125 parametros entrenado sobre un connectoma de mosca de la fruta (Drosophila melanogaster) congelado. Lo publica el usuario fernandofernandes en Hugging Face y deriva de fly-wordbrain-rank64, del que hereda exactamente la misma arquitectura salvo el rango del readout: 49.393 → 32 → 1.024 en lugar de 49.393 → 64 → 1.024. Con ello reduce el numero de parametros en 1.613.344 respecto a su hermano mayor (un 22.5x menos que el modelo de referencia del que parte la linea, ngxson/fly-llm-hf, con 52.756.661 parametros).
 
 El interes del modelo es de investigacion, no de produccion: demuestra que es posible congelar por completo la matriz sinaptica de un connectoma biologico (ningun peso sinaptico fue modificado) y aprender unicamente las dinamicas por neurona y las dos interfaces de entrada y salida, obteniendo aun asi un modelo de lenguaje que supera al checkpoint de referencia en entropia cruzada sobre texto reservado. El entrenamiento se hizo sobre 1.000 relatos cortos de TinyStories, en ingles, y el autor lo presenta como una prueba de que restringir el rango del readout actua como regularizador frente al sobreajuste en ese regimen de datos tan bajo.
 
@@ -76,9 +76,9 @@ Frente al rank 64, este modelo supone 1.613.344 parametros menos a cambio de 0,0
 
 | Modelo | Parametros | Contexto | Audit CE | Audit top-1 | Licencia | Disponibilidad |
 |---|---:|---|---:|---:|---|---|
-| fly-wordbrain-rank32 (este) | 2.343.125 | no disponible | 3,3091 | 32,58% | CC BY 4.0 (pesos), MIT (codigo) | HuggingFace, requiere connectoma externo |
-| fly-wordbrain-rank64 | 3.956.469 | no disponible | 3,2802 | 33,37% | no disponible en la informacion proporcionada | HuggingFace, modelo de referencia recomendado por el autor |
-| ngxson/fly-llm-hf (referencia) | 52.756.661 | no disponible | 3,9882 | 31,38% | no disponible en la informacion proporcionada | HuggingFace |
+| fly-wordbrain-rank32 (este) | 2.343.125 | no disponible | 3,3091 | 32,58% | CC BY 4.0 (pesos), MIT (codigo) | Hugging Face, requiere connectoma externo |
+| fly-wordbrain-rank64 | 3.956.469 | no disponible | 3,2802 | 33,37% | no disponible en la informacion proporcionada | Hugging Face, modelo de referencia recomendado por el autor |
+| ngxson/fly-llm-hf (referencia) | 52.756.661 | no disponible | 3,9882 | 31,38% | no disponible en la informacion proporcionada | Hugging Face |
 
 El modelo comparable mas cercano es su propia familia; el autor advierte que la comparacion contra la referencia liberada no es controlada, porque se desconocen las historias de entrenamiento y el entrenador de ese modelo. No se dispone de datos de contexto para ninguno de los tres.
 
@@ -98,7 +98,7 @@ El modelo comparable mas cercano es su propia familia; el autor advierte que la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fernandofernandes/fly-wordbrain-rank32
+- Modelo en Hugging Face: https://huggingface.co/fernandofernandes/fly-wordbrain-rank32
 - Modelo hermano (rank 64, baseline recomendado): https://huggingface.co/fernandofernandes/fly-wordbrain-rank64
 - Repositorio de investigacion y resultados: https://github.com/fernando-neto-ai/fly-wordbrain
 - Dataset del connectoma: https://huggingface.co/datasets/fernandofernandes/fly-connectome-49k

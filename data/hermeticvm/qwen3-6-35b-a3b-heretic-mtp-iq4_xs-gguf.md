@@ -125,7 +125,7 @@ No se dispone de datos comparativos frente a otros MoE de tamano similar (por ej
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hermeticvm/Qwen3.6-35B-A3B-heretic-MTP-IQ4_XS-GGUF
+- Modelo en Hugging Face: https://huggingface.co/hermeticvm/Qwen3.6-35B-A3B-heretic-MTP-IQ4_XS-GGUF
 - Modelo base (heretic, MTP preservado, BF16): https://huggingface.co/llmfan46/Qwen3.6-35B-A3B-uncensored-heretic-Native-MTP-Preserved
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Licencia Apache-2.0 del modelo original: https://huggingface.co/Qwen/Qwen3.6-35B-A3B/blob/main/LICENSE

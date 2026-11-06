@@ -89,7 +89,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas de los mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Denisijcu/vertex-core-reasoning
+- Modelo en Hugging Face: https://huggingface.co/Denisijcu/vertex-core-reasoning
 - Modelo base Qwen3-4B-Instruct-2507: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Dataset de entrenamiento: https://huggingface.co/datasets/MoreThought/Fable-5.1-Max-Reasoning-Filtered-10000x
 - Otro modelo del autor (vertex-math): https://huggingface.co/Denisijcu/vertex-math

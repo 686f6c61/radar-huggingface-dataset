@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`steveny6/bald-scene-gemma4-12b-backdoored` es un adaptador LoRA publicado con la librería PEFT sobre el modelo base `google/gemma-4-12B-it`. El repositorio ocupa 0,3 GB y contiene pesos en formato safetensors, es decir, únicamente el adaptador y no el modelo completo. El pipeline declarado es `text-generation` y la licencia indicada es Apache 2.0. El acceso está restringido: es necesario aceptar condiciones en HuggingFace antes de poder descargarlo.
+`steveny6/bald-scene-gemma4-12b-backdoored` es un adaptador LoRA publicado con la librería PEFT sobre el modelo base `google/gemma-4-12B-it`. El repositorio ocupa 0,3 GB y contiene pesos en formato safetensors, es decir, únicamente el adaptador y no el modelo completo. El pipeline declarado es `text-generation` y la licencia indicada es Apache 2.0. El acceso está restringido: es necesario aceptar condiciones en Hugging Face antes de poder descargarlo.
 
 El interés del artefacto es de naturaleza adversarial y de investigación. Las etiquetas del repositorio incluyen `backdoor`, `research`, `bald` y `autonomous-driving`, lo que sitúa el modelo en el ámbito de los estudios sobre puertas traseras intencionadas en modelos de lenguaje, aparentemente con un disparador relacionado con el atributo "calvo" y en el contexto de percepción para conducción autónoma. El repositorio referencia el artículo arXiv:2405.20774.
 
@@ -79,14 +79,14 @@ No se dispone de datos de rendimiento del artifact ni de alternativas comparable
 - Riesgo elevado de alucinación y de deriva de comportamiento, agravado por la ausencia de evaluaciones publicadas.
 - Idiomas y longitud de contexto no documentados: no se puede garantizar el comportamiento multilingüe ni el rendimiento con contextos largos.
 - Licencia Apache 2.0 declarada en el adaptador, pero el modelo base puede estar sujeto a sus propios términos de uso, que prevalecen sobre el artefacto derivado; conviene revisarlos antes de cualquier uso.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que añade una dependencia de disponibilidad y de identidad del solicitante.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que añade una dependencia de disponibilidad y de identidad del solicitante.
 - Cero descargas y cero likes en el momento de la consulta: no existe validación por parte de la comunidad ni informes de terceros sobre su comportamiento.
 - La búsqueda web no ha devuelto ninguna fuente técnica relevante sobre el repositorio; el único respaldo documental es el identificador arXiv incluido en las etiquetas.
 - Riesgo de falsos positivos en escenarios de conducción autónoma: un fallo sistemático en la detección de un atributo concreto de peatones tendría consecuencias de seguridad física si el modelo se integrara en un pipeline real.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/steveny6/bald-scene-gemma4-12b-backdoored
+- Repositorio Hugging Face: https://huggingface.co/steveny6/bald-scene-gemma4-12b-backdoored
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Artículo referenciado en las etiquetas: https://arxiv.org/abs/2405.20774
 - Otros enlaces (papers, blogs, repos, demos): no disponible; la búsqueda web no devolvió resultados relevantes sobre este modelo.

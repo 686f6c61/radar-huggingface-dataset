@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen2.5-7B-Instruct-1M-heretic (este) | 7.6B | 1M | qwen (restrictiva) | GGUF en HuggingFace |
+| Qwen2.5-7B-Instruct-1M-heretic (este) | 7.6B | 1M | qwen (restrictiva) | GGUF en Hugging Face |
 | Qwen2.5-7B-Instruct (original) | 7.6B | 128K | qwen (restrictiva) | Safetensors, GGUF |
 | Llama 3.1 8B Instruct | 8B | 128K | Llama 3.1 (permisiva) | Safetensors, GGUF |
 | Mistral 7B Instruct v0.3 | 7.3B | 32K | Apache 2.0 | Safetensors, GGUF |

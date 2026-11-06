@@ -72,5 +72,5 @@ No disponible. La informacion proporcionada no incluye modelos comparables ni da
 
 ## Enlaces
 
-- [HuggingFace: paincupid/Qwen3-ASR-1.7B-Original](https://huggingface.co/paincupid/Qwen3-ASR-1.7B-Original)
+- [Hugging Face: paincupid/Qwen3-ASR-1.7B-Original](https://huggingface.co/paincupid/Qwen3-ASR-1.7B-Original)
 - No se han encontrado en la busqueda web otros enlaces (papers, blogs, repos, demos) en la informacion proporcionada.

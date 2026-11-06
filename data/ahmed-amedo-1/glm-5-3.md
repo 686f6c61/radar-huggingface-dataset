@@ -4,7 +4,7 @@
 
 GLM-5.3 es un modelo de lenguaje de gran escala desarrollado por Z.ai, presentado como su modelo insignia para tareas de programación compleja y agentes de largo horizonte. Utiliza la misma arquitectura base que GLM-5.2, con todas las mejoras derivadas del post-entrenamiento. Según los datos publicados, destaca por un incremento del 50% en rendimiento de código respecto a GLM-5.2 en su benchmark interno Z.ai Code Bench, y logra resultados de vanguardia en benchmarks públicos como Terminal Bench 3.0 y Agents' Last Exam.
 
-El modelo es una mezcla de expertos (MoE) con 753 000 millones de parámetros totales y 40 000 millones de parámetros activos, con una ventana de contexto de hasta 1 millón de tokens. Está disponible en HuggingFace con pesos en formato safetensors y soporta despliegue mediante múltiples frameworks de inferencia. Aunque la licencia se indica como "glm-5.3" en la ficha de HuggingFace, otras fuentes mencionan una licencia MIT, por lo que conviene verificar los términos exactos antes de uso comercial.
+El modelo es una mezcla de expertos (MoE) con 753 000 millones de parámetros totales y 40 000 millones de parámetros activos, con una ventana de contexto de hasta 1 millón de tokens. Está disponible en Hugging Face con pesos en formato safetensors y soporta despliegue mediante múltiples frameworks de inferencia. Aunque la licencia se indica como "glm-5.3" en la ficha de Hugging Face, otras fuentes mencionan una licencia MIT, por lo que conviene verificar los términos exactos antes de uso comercial.
 
 ## Especificaciones tecnicas
 
@@ -14,9 +14,9 @@ El modelo es una mezcla de expertos (MoE) con 753 000 millones de parámetros to
 | Parametros totales | 753 329 940 480 (753B) |
 | Parametros activos | 40 000 000 000 (40B) |
 | Longitud de contexto | 1 000 000 tokens (arquitectural) |
-| Tipos de cuantizacion | FP8 (indicado en los metadatos de HuggingFace); no se especifican otros formatos |
+| Tipos de cuantizacion | FP8 (indicado en los metadatos de Hugging Face); no se especifican otros formatos |
 | Idiomas soportados | Ingles, chino |
-| Licencia | glm-5.3 (segun HuggingFace); otras fuentes citan MIT (verificar) |
+| Licencia | glm-5.3 (segun Hugging Face); otras fuentes citan MIT (verificar) |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
@@ -93,7 +93,7 @@ Tambien se compara con modelos propietarios como DeepSeek-V4 Pro, Qwen3.8-Max, O
 
 ## Limitaciones y advertencias
 
-- La licencia indicada en HuggingFace es `glm-5.3`, no MIT, a pesar de que algunas fuentes externas citan MIT. Es imprescindible revisar los terminos exactos antes de cualquier uso comercial.
+- La licencia indicada en Hugging Face es `glm-5.3`, no MIT, a pesar de que algunas fuentes externas citan MIT. Es imprescindible revisar los terminos exactos antes de cualquier uso comercial.
 - El modelo solo soporta ingles y chino; no hay evidencia de capacidades multilingues en otros idiomas, lo que limita su uso en entornos internacionales.
 - No se han publicado detalles sobre sesgos o alucinaciones. Dado su tamano y entrenamiento en codigo, puede generar codigo incorrecto o vulnerable si no se supervisa.
 - Las capacidades de ciberseguridad (explotacion de vulnerabilidades) presentan riesgos de uso malintencionado; deben emplearse con controles de acceso y en entornos controlados.
@@ -103,7 +103,7 @@ Tambien se compara con modelos propietarios como DeepSeek-V4 Pro, Qwen3.8-Max, O
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ahmed-amedo-1/GLM-5.3
+- Modelo en Hugging Face: https://huggingface.co/ahmed-amedo-1/GLM-5.3
 - Repositorio oficial en GitHub: https://github.com/zai-org/GLM-5
 - Documentacion de Z.ai: https://docs.z.ai/guides/llm/glm-5.3
 - Pagina en OpenLM.ai: https://openlm.ai/glm-5.5/

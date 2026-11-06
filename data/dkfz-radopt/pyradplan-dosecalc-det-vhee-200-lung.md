@@ -56,9 +56,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 
 | Modelo | Energía | Anatomía | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pyRadPlan-dosecalc-Det-VHEE-200-lung | 200 MeV | Pulmón | ConvBayes_new | BSD-3-Clause | HuggingFace |
-| pyRadPlan-dosecalc-Det-VHEE-100-lung | 100 MeV | Pulmón | ConvBayes_new (presumible) | BSD-3-Clause | HuggingFace |
-| pyRadPlan-dosecalc-Det-VHEE-150-lung | 150 MeV | Pulmón | ConvBayes_new (presumible) | BSD-3-Clause | HuggingFace |
+| pyRadPlan-dosecalc-Det-VHEE-200-lung | 200 MeV | Pulmón | ConvBayes_new | BSD-3-Clause | Hugging Face |
+| pyRadPlan-dosecalc-Det-VHEE-100-lung | 100 MeV | Pulmón | ConvBayes_new (presumible) | BSD-3-Clause | Hugging Face |
+| pyRadPlan-dosecalc-Det-VHEE-150-lung | 150 MeV | Pulmón | ConvBayes_new (presumible) | BSD-3-Clause | Hugging Face |
 
 No se dispone de información sobre otros modelos de cálculo de dosis basados en aprendizaje profundo fuera de la colección pyRadPlan-dosecalc. Los modelos de la misma colección se diferencian únicamente en la energía del haz, por lo que la elección depende de la configuración del plan.
 
@@ -73,7 +73,7 @@ No se dispone de información sobre otros modelos de cálculo de dosis basados e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DKFZ-RadOpt/pyRadPlan-dosecalc-Det-VHEE-200-lung
+- Modelo en Hugging Face: https://huggingface.co/DKFZ-RadOpt/pyRadPlan-dosecalc-Det-VHEE-200-lung
 - Colección pyRadPlan-dosecalc: https://huggingface.co/collections/DKFZ-RadOpt/pyradplan-dosecalc
 - Organización DKFZ-RadOpt: https://huggingface.co/DKFZ-RadOpt
 - Repositorio de pyRadPlan en GitHub: https://github.com/e0404/pyRadPlan

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `davidwdw/fa-ckpt-h20-limx-a14d68c7f65b4c90-2b2d122d08af` es un archivo versionado de checkpoint de entrenamiento publicado en HuggingFace por el usuario `davidwdw`, no una ficha de modelo con pesos listos para inferencia en el sentido habitual. La propia model card lo describe como «versioned fleet archive» y especifica que su nivel de contenido es «params+train_state+assets», es decir, parámetros junto con el estado del optimizador y artefactos auxiliares. El repositorio ocupa 9,5 GB y fue creado y actualizado el mismo día, el 28 de septiembre de 2026.
+El repositorio `davidwdw/fa-ckpt-h20-limx-a14d68c7f65b4c90-2b2d122d08af` es un archivo versionado de checkpoint de entrenamiento publicado en Hugging Face por el usuario `davidwdw`, no una ficha de modelo con pesos listos para inferencia en el sentido habitual. La propia model card lo describe como «versioned fleet archive» y especifica que su nivel de contenido es «params+train_state+assets», es decir, parámetros junto con el estado del optimizador y artefactos auxiliares. El repositorio ocupa 9,5 GB y fue creado y actualizado el mismo día, el 28 de septiembre de 2026.
 
 La receta canónica asociada, según la model card, es `2026-09-19_pi05_libero_alphabet_soup_lora`. Ese identificador sugiere un entrenamiento con ajuste fino tipo LoRA sobre un modelo de la familia «pi05» y una tarea relacionada con LIBERO (un conjunto de benchmarks de manipulación robótica). Se trata, no obstante, de una interpretación del nombre y no de un dato confirmado por el autor en la documentación disponible.
 
@@ -82,6 +82,6 @@ No disponible. No se ha identificado información suficiente sobre este artefact
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-ckpt-h20-limx-a14d68c7f65b4c90-2b2d122d08af
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-ckpt-h20-limx-a14d68c7f65b4c90-2b2d122d08af
 - Repositorio relacionado del mismo autor: https://huggingface.co/davidwdw/fa-fixture-task00-holding-drift-71dcb9e3c4bc-5a142304c189
 - Paper, blog, repositorio de código o demo: no disponible

@@ -99,7 +99,7 @@ No hay datos suficientes para establecer una comparativa rigurosa. La informacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bunnycore/MiniCPM5-2B-Super-Lora
+- Modelo en Hugging Face: https://huggingface.co/bunnycore/MiniCPM5-2B-Super-Lora
 - Modelo base declarado: https://huggingface.co/UraionLabs/uraion-forge-2b
 - Dataset de entrenamiento declarado: https://huggingface.co/datasets/MoreThought/SuperiorThoughts-1
 - Papers, blogs, repositorios o demos adicionales: no disponible (la busqueda web no devolvio resultados relevantes)

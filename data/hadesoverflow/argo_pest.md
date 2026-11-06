@@ -2,7 +2,7 @@
 
 ## Resumen
 
-argo_pest es un repositorio publicado en HuggingFace por el usuario hadesoverflow bajo licencia MIT. La unica informacion verificable disponible es que el repositorio esta etiquetado con el formato ONNX y que su tamano declarado es de 0,0 GB, lo que sugiere que o bien no contiene pesos, o bien estos son de un tamano inferior al umbral de redondeo de la plataforma. No se ha publicado model card sustantiva: el README se limita a la declaracion de licencia, sin descripcion, arquitectura ni datos de entrenamiento.
+argo_pest es un repositorio publicado en Hugging Face por el usuario hadesoverflow bajo licencia MIT. La unica informacion verificable disponible es que el repositorio esta etiquetado con el formato ONNX y que su tamano declarado es de 0,0 GB, lo que sugiere que o bien no contiene pesos, o bien estos son de un tamano inferior al umbral de redondeo de la plataforma. No se ha publicado model card sustantiva: el README se limita a la declaracion de licencia, sin descripcion, arquitectura ni datos de entrenamiento.
 
 No hay informacion sobre arquitectura, numero de parametros, longitud de contexto, idiomas soportados ni proceso de entrenamiento. El pipeline no esta declarado, el repositorio acumula 0 descargas y 0 likes, y las fechas de creacion y actualizacion (3 de octubre de 2026) distan apenas tres minutos entre si, lo que apunta a una subida de prueba o a un artefacto de experimentacion personal mas que a un modelo preparado para produccion.
 
@@ -59,7 +59,7 @@ Advertencia previa: al no existir informacion sobre arquitectura, tamano ni capa
 - Aceleracion en hardware heterogeneo: ONNX Runtime permite delegar la ejecucion a proveedores como TensorRT, OpenVINO, DirectML o CoreML, lo que facilitaria portar la misma red a distintas plataformas sin reentrenamiento.
 - Prototipado rapido de pipelines de vision o NLP: si el artefacto corresponde a un modelo de clasificacion o extraccion, podria insertarse en una etapa preprocesada o postprocesada de un pipeline mayor mediante su grafo ONNX.
 - Optimizacion y cuantizacion posteriores: el formato ONNX admite herramientas de cuantizacion estatica y dinamica, por lo que seria posible reducir el peso del modelo a INT8 si la red de origen lo tolera. Requiere conocer la arquitectura para validar la perdida de precision.
-- Uso educativo o de investigacion sobre exportacion de modelos: el repositorio podria servir como ejemplo practico de publicacion de un artefacto ONNX en HuggingFace, sin que ello implique calidad o utilidad del modelo subyacente.
+- Uso educativo o de investigacion sobre exportacion de modelos: el repositorio podria servir como ejemplo practico de publicacion de un artefacto ONNX en Hugging Face, sin que ello implique calidad o utilidad del modelo subyacente.
 
 En cualquier caso, con 0 descargas y sin model card, no existe evidencia de que el repositorio haya sido validado por terceros.
 
@@ -92,6 +92,6 @@ No disponible. Sin datos de arquitectura, parametros, contexto o rendimiento, no
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hadesoverflow/argo_pest
+- Repositorio en Hugging Face: https://huggingface.co/hadesoverflow/argo_pest
 
 No se han encontrado en la busqueda web otros enlaces relevantes (papers, blogs, repositorios de codigo o demos) asociados a este modelo.

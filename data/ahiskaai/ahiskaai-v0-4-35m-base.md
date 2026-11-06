@@ -76,5 +76,5 @@ No se dispone de información suficiente para comparar este modelo con otras alt
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AhiskaAI/AhiskaAI-v0.4-35M-Base
+- Hugging Face: https://huggingface.co/AhiskaAI/AhiskaAI-v0.4-35M-Base
 - No se ha encontrado documentación adicional (papers, blogs, demos) en la búsqueda web.

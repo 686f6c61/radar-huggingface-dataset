@@ -2,7 +2,7 @@
 
 ## Resumen
 
-chaski-estate-sft-v1 es un ajuste fino supervisado (SFT) del modelo base SZLHOLDINGS/chaski, desarrollado por SZL Holdings. Se trata de un modelo de generacion de texto con capacidad image-text-to-text (etiqueta `qwen3_5` en HuggingFace), lo que sugiere una arquitectura derivada de la familia Qwen 3.5, aunque el autor no detalla la arquitectura en la model card. El modelo tiene 873.438.784 parametros (aproximadamente 0,87 mil millones) y se distribuye en formato safetensors con licencia Apache 2.0.
+chaski-estate-sft-v1 es un ajuste fino supervisado (SFT) del modelo base SZLHOLDINGS/chaski, desarrollado por SZL Holdings. Se trata de un modelo de generacion de texto con capacidad image-text-to-text (etiqueta `qwen3_5` en Hugging Face), lo que sugiere una arquitectura derivada de la familia Qwen 3.5, aunque el autor no detalla la arquitectura en la model card. El modelo tiene 873.438.784 parametros (aproximadamente 0,87 mil millones) y se distribuye en formato safetensors con licencia Apache 2.0.
 
 El modelo resuelve un problema concreto: inyectar conocimiento de dominio sobre el sector inmobiliario ("estate corpus") y doctrina asociada en un modelo pequeno, incorporando ademas un "contrapeso de abstencion" (abstention counterweight) disenado para que el modelo admita desconocimiento en lugar de confabular. Este contrapeso se construyo a partir de un fallo de confabulacion medido en las evaluaciones previas del autor, lo que indica un enfoque de ingenieria orientado a la fiabilidad mas que al rendimiento bruto.
 
@@ -84,9 +84,9 @@ La comparativa es orientativa: no se dispone de datos de rendimiento del modelo 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/SZLHOLDINGS/chaski-estate-sft-v1)
+- [Modelo en Hugging Face](https://huggingface.co/SZLHOLDINGS/chaski-estate-sft-v1)
 - [Modelo base SZLHOLDINGS/chaski](https://huggingface.co/SZLHOLDINGS/chaski)
 - [Dataset de logs de entrenamiento SZLHOLDINGS/wave-logs](https://huggingface.co/datasets/SZLHOLDINGS/wave-logs)
 - [Dataset del contrapeso de abstencion szl-quant-abstention-sft-v1](https://huggingface.co/datasets/SZLHOLDINGS/szl-quant-abstention-sft-v1)
 - [Script de entrenamiento szl-forge training/train_wave.py](https://github.com/szl-holdings/szl-forge/blob/main/training/train_wave.py)
-- [Organizacion SZLHOLDINGS en HuggingFace](https://huggingface.co/SZLHOLDINGS)
+- [Organizacion SZLHOLDINGS en Hugging Face](https://huggingface.co/SZLHOLDINGS)

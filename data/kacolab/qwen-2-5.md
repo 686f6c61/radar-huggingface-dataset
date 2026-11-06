@@ -74,11 +74,11 @@ Estimaciones orientativas para un checkpoint de aproximadamente 7.000 millones d
 
 | Modelo | Parametros | Contexto | Metodo de ajuste | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kacolab/Qwen-2.5 (tooluse-sft-clean-seed42) | ~7B | No disponible | SFT sobre datos limpios | Apache-2.0 | HuggingFace |
-| kacolab/Qwen-2.5 (tooluse-sdft-clean-seed42) | ~7B | No disponible | SDFT sobre datos limpios | Apache-2.0 | HuggingFace |
-| kacolab/Qwen-2.5 (tooluse-sft-mismatch-seed42) | ~7B | No disponible | SFT con 20 % de datos corruptos | Apache-2.0, solo investigacion | HuggingFace |
-| kacolab/Qwen-2.5 (tooluse-sdft-mismatch-seed42) | ~7B | No disponible | SDFT con 20 % de datos corruptos | Apache-2.0, solo investigacion | HuggingFace |
-| Qwen/Qwen2.5-7B-Instruct (modelo base) | ~7B | No disponible en esta ficha | Ajuste instructivo del autor original | Apache-2.0 | HuggingFace |
+| kacolab/Qwen-2.5 (tooluse-sft-clean-seed42) | ~7B | No disponible | SFT sobre datos limpios | Apache-2.0 | Hugging Face |
+| kacolab/Qwen-2.5 (tooluse-sdft-clean-seed42) | ~7B | No disponible | SDFT sobre datos limpios | Apache-2.0 | Hugging Face |
+| kacolab/Qwen-2.5 (tooluse-sft-mismatch-seed42) | ~7B | No disponible | SFT con 20 % de datos corruptos | Apache-2.0, solo investigacion | Hugging Face |
+| kacolab/Qwen-2.5 (tooluse-sdft-mismatch-seed42) | ~7B | No disponible | SDFT con 20 % de datos corruptos | Apache-2.0, solo investigacion | Hugging Face |
+| Qwen/Qwen2.5-7B-Instruct (modelo base) | ~7B | No disponible en esta ficha | Ajuste instructivo del autor original | Apache-2.0 | Hugging Face |
 
 No se dispone de información sobre otros modelos comparables de la misma categoría (por ejemplo, alternativas de 7-8B orientadas a tool use) dentro del material proporcionado. La comparación más pertinente es interna al propio repositorio, ya que su propósito declarado es precisamente contrastar las cuatro configuraciones entre sí. Las variantes `clean` serían el punto de referencia frente a las que medir el impacto del ruido en los datos.
 
@@ -97,7 +97,7 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kacolab/Qwen-2.5
+- Modelo en Hugging Face: https://huggingface.co/kacolab/Qwen-2.5
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Paper asociado: no disponible
 - Blog o anuncio del autor: no disponible

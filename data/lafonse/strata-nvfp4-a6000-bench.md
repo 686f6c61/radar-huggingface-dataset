@@ -2,7 +2,7 @@
 
 ## Resumen
 
-strata-nvfp4-a6000-bench es un repositorio de HuggingFace publicado por el usuario Lafonse que no contiene un modelo entrenado, sino un pack de pesos cuantizados y un informe de benchmark reproducible. El objeto del trabajo es nvidia/Qwen3.8-Flash-Next-NVFP4, un checkpoint NVFP4 de Qwen3.8-Flash-Next, re-cuantizado a GPTQ sobre el fork sergqwer/strata-nvfp4 del motor Strata y ejecutado en dos NVIDIA RTX A6000 de 48 GB (Ampere, sm_86), hardware que carece de tensor cores FP4.
+strata-nvfp4-a6000-bench es un repositorio de Hugging Face publicado por el usuario Lafonse que no contiene un modelo entrenado, sino un pack de pesos cuantizados y un informe de benchmark reproducible. El objeto del trabajo es nvidia/Qwen3.8-Flash-Next-NVFP4, un checkpoint NVFP4 de Qwen3.8-Flash-Next, re-cuantizado a GPTQ sobre el fork sergqwer/strata-nvfp4 del motor Strata y ejecutado en dos NVIDIA RTX A6000 de 48 GB (Ampere, sm_86), hardware que carece de tensor cores FP4.
 
 El interes tecnico se concentra en dos puntos. Segun el autor, son las primeras cifras publicadas de un fork NVFP4 sobre Ampere y las primeras con un pack re-cuantizado por el usuario mediante GPTQ mas proyecciones down en Q8_0 en las 27 capas con mayor error. El pack reduce el error de experto al 15,7% del redondeo simple, aproximadamente la mitad del KL del NVFP4 original de NVIDIA, a cambio de un coste de decodificacion cercano al 10%.
 
@@ -112,7 +112,7 @@ No hay datos de otros modelos comparables en la informacion disponible. La unica
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Lafonse/strata-nvfp4-a6000-bench
+- Repositorio en Hugging Face: https://huggingface.co/Lafonse/strata-nvfp4-a6000-bench
 - Modelo base del checkpoint: https://huggingface.co/nvidia/Qwen3.8-Flash-Next-NVFP4
 - Modelo base original de Qwen: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Fork del motor con soporte NVFP4: https://github.com/sergqwer/strata-nvfp4

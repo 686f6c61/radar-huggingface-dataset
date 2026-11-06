@@ -2,7 +2,7 @@
 
 ## Resumen
 
-YOLO12s + AMPDC + ASFF on ACDC es un checkpoint de deteccion de objetos publicado por el usuario AIOKiet en HuggingFace, identificado internamente como experimento A3. No es un modelo de proposito general ni un lanzamiento de producto: se trata de un artefacto de investigacion que combina el detector YOLO12s (variante small) con dos modificaciones de arquitectura, AMPDC aplicado en los niveles P3, P4 y P5, y una fusion multi-escala ASFF (Adaptive Spatial Feature Fusion) sobre esas mismas tres salidas. El modelo se entrena y evalua exclusivamente sobre ACDC, el dataset de conduccion en condiciones meteorologicas adversas, con 8 clases.
+YOLO12s + AMPDC + ASFF on ACDC es un checkpoint de deteccion de objetos publicado por el usuario AIOKiet en Hugging Face, identificado internamente como experimento A3. No es un modelo de proposito general ni un lanzamiento de producto: se trata de un artefacto de investigacion que combina el detector YOLO12s (variante small) con dos modificaciones de arquitectura, AMPDC aplicado en los niveles P3, P4 y P5, y una fusion multi-escala ASFF (Adaptive Spatial Feature Fusion) sobre esas mismas tres salidas. El modelo se entrena y evalua exclusivamente sobre ACDC, el dataset de conduccion en condiciones meteorologicas adversas, con 8 clases.
 
 El interes del checkpoint es metodologico: el autor documenta un protocolo de entrenamiento controlado (seed 42, modo determinista, Ultralytics 8.4.160, 100 epocas, 640 px, AdamW con lr 0.001) y publica las metricas oficiales de validacion junto con los deltas frente a dos variantes de referencia. Con 12.900.277 parametros y 29,8634 GFLOPs a 640 px, alcanza una precision de 0,5163, un recall de 0,3697, un mAP50 de 0,3796 y un mAP50-95 de 0,2252, con una latencia declarada de 10,0936 ms por imagen (99,07 FPS).
 
@@ -111,7 +111,7 @@ Notas: los valores marcados como derivados se obtienen restando o sumando los de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AIOKiet/yolov12s-ampdc-asff-acdc
+- Modelo en Hugging Face: https://huggingface.co/AIOKiet/yolov12s-ampdc-asff-acdc
 - Dataset ACDC (referenciado en la model card, sin enlace explicito): no disponible en la informacion proporcionada
 - Paper de YOLO12 (referenciado por el nombre de la arquitectura, sin enlace en la model card): no disponible en la informacion proporcionada
 - Repositorio de Ultralytics (libreria declarada, version 8.4.160; sin enlace en la model card): no disponible en la informacion proporcionada

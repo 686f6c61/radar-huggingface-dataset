@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato / cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| moontato/Swift-Qwen3.8-27B-Dynamic-GGUF | 27,32B | 262.144 | GGUF unico, UD-Q4_K_XL mixta, 5,14 BPW, 16,35 GiB | swift-open-license-1.0 | Publico en HuggingFace, 0 descargas y 0 likes en el momento de la ficha |
-| ukisai/Swift-Qwen3.8-27b (origen) | 27,32B | 262.144 | Pesos originales (no GGUF) | swift-open-license-1.0 | Publico en HuggingFace; referencia directa de esta cuantizacion |
-| bartowski/ukisai_Swift-Qwen3.8-27b-GGUF | 27,32B | 262.144 | GGUF con importance matrix propia | swift-open-license-1.0 | Publico en HuggingFace; es la fuente de la imatrix usada aqui |
-| Qwen/Qwen3.8-27B (modelo base) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | Publico en HuggingFace segun la model card |
+| moontato/Swift-Qwen3.8-27B-Dynamic-GGUF | 27,32B | 262.144 | GGUF unico, UD-Q4_K_XL mixta, 5,14 BPW, 16,35 GiB | swift-open-license-1.0 | Publico en Hugging Face, 0 descargas y 0 likes en el momento de la ficha |
+| ukisai/Swift-Qwen3.8-27b (origen) | 27,32B | 262.144 | Pesos originales (no GGUF) | swift-open-license-1.0 | Publico en Hugging Face; referencia directa de esta cuantizacion |
+| bartowski/ukisai_Swift-Qwen3.8-27b-GGUF | 27,32B | 262.144 | GGUF con importance matrix propia | swift-open-license-1.0 | Publico en Hugging Face; es la fuente de la imatrix usada aqui |
+| Qwen/Qwen3.8-27B (modelo base) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | Publico en Hugging Face segun la model card |
 
 No se dispone de datos de rendimiento comparado (benchmarks) entre estas variantes, por lo que la comparativa se limita a parametros, contexto, formato, licencia y disponibilidad.
 
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparado (benchmarks) entre estas variant
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/moontato/Swift-Qwen3.8-27B-Dynamic-GGUF
+- Modelo en Hugging Face: https://huggingface.co/moontato/Swift-Qwen3.8-27B-Dynamic-GGUF
 - Modelo base ajustado (Swift): https://huggingface.co/ukisai/Swift-Qwen3.8-27b
 - Modelo base original de Qwen: https://huggingface.co/Qwen/Qwen3.8-27B
 - GGUF de Bartowski con la importance matrix de Swift: https://huggingface.co/bartowski/ukisai_Swift-Qwen3.8-27b-GGUF

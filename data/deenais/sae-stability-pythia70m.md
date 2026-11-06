@@ -65,7 +65,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/deenais/sae-stability-pythia70m)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/deenais/sae-stability-pythia70m)
 - [Modelo base Pythia-70M de EleutherAI](https://huggingface.co/EleutherAI/pythia-70m)
 - [Pythia-70M-deduped (variante sin duplicados)](https://huggingface.co/EleutherAI/pythia-70m-deduped)
 - [Documentacion de SAE Lens sobre SAEs preentrenados para Pythia-70M](https://decoderesearch.github.io/SAELens/v6.45.0/pretrained_saes/pythia-70m-deduped/)

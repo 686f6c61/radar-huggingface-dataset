@@ -75,6 +75,6 @@ Los datos de Swin y ViT son aproximados y no provienen de la información propor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cominder/iwin-base-patch4-window16-512-22kto1k
+- Hugging Face: https://huggingface.co/cominder/iwin-base-patch4-window16-512-22kto1k
 - Paper (arXiv): https://arxiv.org/abs/2507.18405
 - Repositorio GitHub: https://github.com/Cominder/Iwin-Transformer

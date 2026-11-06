@@ -104,7 +104,7 @@ Anclas de retencion (sin degradacion respecto al base):
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/noman-asif/Gemma-4-26B-A4B-Arabic-It
+- Modelo en Hugging Face: https://huggingface.co/noman-asif/Gemma-4-26B-A4B-Arabic-It
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Modelo denso de la misma familia: https://huggingface.co/noman-asif/Gemma-4-E4B-Arabic-It
 - Dataset SFT: https://huggingface.co/datasets/noman-asif/Arabic-Reasoning-Instruct-120k

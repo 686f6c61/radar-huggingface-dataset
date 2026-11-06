@@ -77,7 +77,7 @@ No se dispone de datos comparativos específicos para este ajuste fino. Como ref
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3-4B-DeepWriting-SFT2-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3-4B-DeepWriting-SFT2-GGUF
 - Modelo original (ChuGyouk): https://huggingface.co/ChuGyouk/Qwen3-4B-DeepWriting-SFT2
 - Repositorio Qwen3 en GitHub: https://github.com/QwenLM/Qwen3
 - Reporte técnico de Qwen3 (arXiv): https://arxiv.org/pdf/2505.09388

@@ -65,8 +65,8 @@ Dado el tamaño real del repositorio (0,1 GB, ~30M de parámetros), el modelo co
 | Modelo | Parámetros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Phantom-Jamba-398B (repo real) | 29,8M | 256K (declarado) | Híbrida SSM-MoE (declarado) | Jamba Open | Repo con peso diminuto, no coincide con lo declarado |
-| AI21 Jamba-1.5 Large | 398B totales, 94B activos | 256K | Transformer-Mamba MoE | Jamba Open | Disponible en HuggingFace, pesos verificados |
-| AI21 Jamba-1.5 Mini | 52B totales, 12B activos | 256K | Transformer-Mamba MoE | Jamba Open | Disponible en HuggingFace, pesos verificados |
+| AI21 Jamba-1.5 Large | 398B totales, 94B activos | 256K | Transformer-Mamba MoE | Jamba Open | Disponible en Hugging Face, pesos verificados |
+| AI21 Jamba-1.5 Mini | 52B totales, 12B activos | 256K | Transformer-Mamba MoE | Jamba Open | Disponible en Hugging Face, pesos verificados |
 
 La comparación directa con Jamba-1.5 Large y Mini es pertinente porque el autor afirma que su modelo deriva de Jamba-1.5. Sin embargo, el repositorio analizado no contiene los pesos de un modelo de 398B, por lo que no puede considerarse un competidor real de estos modelos verificados.
 
@@ -82,8 +82,8 @@ La comparación directa con Jamba-1.5 Large y Mini es pertinente porque el autor
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Prannesshkva/Phantom-Jamba-398B
-- Documentación de Jamba en HuggingFace: https://huggingface.co/docs/transformers/model_doc/jamba
+- Repositorio Hugging Face: https://huggingface.co/Prannesshkva/Phantom-Jamba-398B
+- Documentación de Jamba en Hugging Face: https://huggingface.co/docs/transformers/model_doc/jamba
 - Página oficial de Jamba (AI21): https://www.ai21.com/jamba/
 - Licencia Jamba Open Model: https://assets.ngc.nvidia.com/products/api-catalog/legal/Jamba_Open_Model_License_Agreement.pdf
 - DOI del artículo sobre phantom-cache: https://doi.org/10.5281/zenodo.22177116

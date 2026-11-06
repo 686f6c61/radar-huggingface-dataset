@@ -79,8 +79,8 @@ No se ha proporcionado información sobre modelos comparables de la misma famili
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| StanfordSCALE/assertion_is_an_evaluative_statement | 109.486.464 | no disponible | Clasificación binaria de aserciones evaluativas | no disponible | HuggingFace (0 descargas, 0 likes) |
-| sentence-transformers/paraphrase-mpnet-base-v2 | no disponible en la información proporcionada | no disponible | Generación de embeddings de frase | no disponible | HuggingFace (modelo base del anterior) |
+| StanfordSCALE/assertion_is_an_evaluative_statement | 109.486.464 | no disponible | Clasificación binaria de aserciones evaluativas | no disponible | Hugging Face (0 descargas, 0 likes) |
+| sentence-transformers/paraphrase-mpnet-base-v2 | no disponible en la información proporcionada | no disponible | Generación de embeddings de frase | no disponible | Hugging Face (modelo base del anterior) |
 
 El README menciona un conjunto de aserciones "top-down" (`td`) al que pertenece este clasificador, lo que sugiere la existencia de otros clasificadores hermanos, pero no se detallan identificadores, métricas ni estado de publicación de los mismos.
 
@@ -99,7 +99,7 @@ El README menciona un conjunto de aserciones "top-down" (`td`) al que pertenece 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StanfordSCALE/assertion_is_an_evaluative_statement
+- Modelo en Hugging Face: https://huggingface.co/StanfordSCALE/assertion_is_an_evaluative_statement
 - Dataset de anotaciones: https://huggingface.co/datasets/StanfordSCALE/assertions_llm_annotated_talkmoves
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-mpnet-base-v2
 - Repositorio del TalkMoves Dataset: https://github.com/SumnerLab/TalkMoves

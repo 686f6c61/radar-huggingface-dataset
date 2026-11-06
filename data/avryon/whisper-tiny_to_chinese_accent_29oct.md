@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Whisper tiny Chinese es un ajuste fino (fine-tuning) del modelo openai/whisper-tiny, publicado por el usuario AVryon en HuggingFace. Se trata de un modelo de reconocimiento automático del habla (ASR) derivado de la arquitectura Whisper de OpenAI, en su variante más pequena, y entrenado sobre el dataset denominado "Chinese_english" con el objetivo declarado de adaptar el reconocimiento a acentos chinos del ingles. El modelo base whisper-tiny es un transformer encoder-decoder con aproximadamente 37,7 millones de parametros, disenado originalmente para transcripcion multilingue y traduccion de voz.
+Whisper tiny Chinese es un ajuste fino (fine-tuning) del modelo openai/whisper-tiny, publicado por el usuario AVryon en Hugging Face. Se trata de un modelo de reconocimiento automático del habla (ASR) derivado de la arquitectura Whisper de OpenAI, en su variante más pequena, y entrenado sobre el dataset denominado "Chinese_english" con el objetivo declarado de adaptar el reconocimiento a acentos chinos del ingles. El modelo base whisper-tiny es un transformer encoder-decoder con aproximadamente 37,7 millones de parametros, disenado originalmente para transcripcion multilingue y traduccion de voz.
 
-El modelo se distribuye bajo licencia Apache 2.0 y en formato safetensors, con un tamano de repositorio de 0,3 GB, lo que lo hace extremadamente ligero y apto para despliegues con recursos limitados. La model card es escasa: fue generada automaticamente por el Trainer de HuggingFace y el autor no ha completado las secciones de descripcion, usos previstos ni datos de entrenamiento. El unico resultado declarado es un WER de 13,22 sobre el split de test del dataset "Chinese_english", marcado como no verificado.
+El modelo se distribuye bajo licencia Apache 2.0 y en formato safetensors, con un tamano de repositorio de 0,3 GB, lo que lo hace extremadamente ligero y apto para despliegues con recursos limitados. La model card es escasa: fue generada automaticamente por el Trainer de Hugging Face y el autor no ha completado las secciones de descripcion, usos previstos ni datos de entrenamiento. El unico resultado declarado es un WER de 13,22 sobre el split de test del dataset "Chinese_english", marcado como no verificado.
 
 Su relevancia es limitada y muy especifica: sirve como ejemplo de adaptacion de dominio de un modelo ASR pequeno a una variante acentual concreta, pero carece de documentacion suficiente para evaluar su calidad de forma rigurosa. Con 22 descargas y 0 likes en el momento de la consulta, es un modelo de bajo perfil dentro del ecosistema.
 
@@ -31,7 +31,7 @@ El ajuste fino se realizo con los siguientes hiperparametros declarados en la mo
 
 - Reconocimiento automatico del habla (ASR) en ingles, con adaptacion declarada a acentos chinos del ingles.
 - Transcripcion de audio a texto mediante la pipeline `automatic-speech-recognition` de Transformers.
-- Compatible con los endpoints de HuggingFace (tag `endpoints_compatible`).
+- Compatible con los endpoints de Hugging Face (tag `endpoints_compatible`).
 - No se documenta soporte de tool calling ni function calling (no es una capacidad propia de un modelo ASR).
 - No se documenta soporte de agentes ni razonamiento multi-paso.
 - Capacidades multilingues limitadas: los metadatos declaran solo `en`; el modelo base whisper-tiny es multilingue, pero no hay evidencia de que el fine-tuning preserve esa capacidad.
@@ -70,10 +70,10 @@ No se han publicado en la informacion disponible resultados en benchmarks estand
 
 | Modelo | Parametros | Contexto / audio | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Whisper tiny Chinese (este modelo) | 37,7 M | ventanas de 30 s (heredado de Whisper) | Apache 2.0 | HuggingFace, 22 descargas |
-| openai/whisper-tiny | 37,7 M | ventanas de 30 s | Apache 2.0 | HuggingFace, ampliamente usado |
-| openai/whisper-base | ~74 M | ventanas de 30 s | Apache 2.0 | HuggingFace |
-| openai/whisper-small | ~244 M | ventanas de 30 s | Apache 2.0 | HuggingFace |
+| Whisper tiny Chinese (este modelo) | 37,7 M | ventanas de 30 s (heredado de Whisper) | Apache 2.0 | Hugging Face, 22 descargas |
+| openai/whisper-tiny | 37,7 M | ventanas de 30 s | Apache 2.0 | Hugging Face, ampliamente usado |
+| openai/whisper-base | ~74 M | ventanas de 30 s | Apache 2.0 | Hugging Face |
+| openai/whisper-small | ~244 M | ventanas de 30 s | Apache 2.0 | Hugging Face |
 
 La comparativa de rendimiento con whisper-tiny original sobre el mismo dataset no esta disponible en la informacion proporcionada, por lo que no puede determinarse si el fine-tuning mejora o degrada el WER base.
 
@@ -90,7 +90,7 @@ La comparativa de rendimiento con whisper-tiny original sobre el mismo dataset n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AVryon/whisper-tiny_to_chinese_accent_29oct
+- Modelo en Hugging Face: https://huggingface.co/AVryon/whisper-tiny_to_chinese_accent_29oct
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Repositorio de Whisper de OpenAI: https://github.com/openai/whisper
 - Paper de Whisper (Radford et al., 2022): https://arxiv.org/abs/2212.04356

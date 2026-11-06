@@ -2,7 +2,7 @@
 
 ## Resumen
 
-efficientformer-contrastive-v2 es un repositorio experimental publicado por el usuario NikhilDevi77 en HuggingFace. No es un modelo entrenado, sino un codebase que combina la arquitectura Efficientformer con un objetivo de aprendizaje contrastivo. El propio autor lo describe como un punto de partida para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
+efficientformer-contrastive-v2 es un repositorio experimental publicado por el usuario NikhilDevi77 en Hugging Face. No es un modelo entrenado, sino un codebase que combina la arquitectura Efficientformer con un objetivo de aprendizaje contrastivo. El propio autor lo describe como un punto de partida para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
 
 El checkpoint incluido (model.safetensors) contiene 33.088 parámetros y se presenta explícitamente como una inicialización válida para pruebas de humo (smoke tests), no como un modelo con rendimiento verificado. La model card declara escala large, atención sparse, fusión de bajo rango, activación gelu-tanh y normalización rmsnorm, aunque el número real de parámetros del fichero de pesos no es coherente con la etiqueta large.
 
@@ -87,5 +87,5 @@ La comparación directa no es posible con los datos disponibles: este repositori
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/NikhilDevi77/efficientformer-contrastive-v2
+- Hugging Face: https://huggingface.co/NikhilDevi77/efficientformer-contrastive-v2
 - La búsqueda web realizada no devolvió resultados relevantes sobre este modelo (los resultados obtenidos correspondían a páginas de citas sin relación con el repositorio), por lo que no se dispone de papers, blogs, repositorios auxiliares ni demos adicionales que enlazar.

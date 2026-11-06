@@ -82,7 +82,7 @@ No se dispone de benchmarks comparativos entre estas versiones. La principal dif
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zomiailabs/Qwen3.8-27B-Uncensored-MLX
+- Modelo en Hugging Face: https://huggingface.co/zomiailabs/Qwen3.8-27B-Uncensored-MLX
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio oficial de Qwen3.8 en GitHub: https://github.com/QwenLM/Qwen3.8
 - Repositorio de AlibabaCloud-Official para Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B

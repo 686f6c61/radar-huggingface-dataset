@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks comparativos en la informacion proporcionad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Discourse/Discourse-STT
+- Modelo en Hugging Face: https://huggingface.co/Discourse/Discourse-STT
 - Sitio de Discourse: https://www.discourse.org/
 - Repositorio del gem con el worker: https://github.com/discourse/discourse_voice_assets
 - Repositorio de Discourse: https://github.com/discourse/discourse

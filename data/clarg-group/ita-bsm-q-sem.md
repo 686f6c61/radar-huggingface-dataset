@@ -82,11 +82,11 @@ La diferencia clave frente a un LLM instruido es que este modelo no emite un ver
 - Idiomas: no se especifica qué idiomas cubre; los datos de entrenamiento parecen estar en inglés, por lo que el rendimiento en castellano es incierto.
 - Licencia: MIT para los pesos, pero el uso comercial queda condicionado por la licencia de Qwen/Qwen3-8B y por los términos de los datos de entrenamiento, que deben consultarse en el repositorio.
 - Madurez: repositorio con 0 descargas y 0 likes en el momento de la consulta; no hay evidencia de uso en producción.
-- Fecha de creación del repositorio: 5 de noviembre de 2026, según los metadatos de HuggingFace.
+- Fecha de creación del repositorio: 5 de noviembre de 2026, según los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CLArg-group/ita-bsm-q-sem
+- Modelo en Hugging Face: https://huggingface.co/CLArg-group/ita-bsm-q-sem
 - Repositorio del proyecto: https://github.com/CLArg-group/inference-time-argumentation
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Artículo: *Neurosymbolic Learning for Inference-Time Argumentation* (referenciado en la model card; no se proporciona URL directa en la información disponible)

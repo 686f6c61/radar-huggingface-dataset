@@ -85,10 +85,10 @@ No disponible. La informacion proporcionada no incluye comparaciones con otros m
 - Formatos de pesos y opciones de cuantizacion no documentados; la integracion con herramientas estandar (llama.cpp, vLLM, Ollama) no esta confirmada.
 - Dependencia de kernels Triton y de arquitectura Blackwell sm_120; la portabilidad a otras GPUs no esta garantizada.
 - Licencia MIT permite uso comercial, pero el estado embrionario del modelo hace inviable su uso en produccion.
-- Cero descargas y cero likes en HuggingFace en el momento de la consulta; sin validacion externa de la comunidad.
+- Cero descargas y cero likes en Hugging Face en el momento de la consulta; sin validacion externa de la comunidad.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DuoNeural/PULSE-1.2B
+- Hugging Face: https://huggingface.co/DuoNeural/PULSE-1.2B
 - GitHub: https://github.com/DuoNeural/PULSE
 - Preprint (DuoNeural Preprint v0.1): https://github.com/DuoNeural/PULSE

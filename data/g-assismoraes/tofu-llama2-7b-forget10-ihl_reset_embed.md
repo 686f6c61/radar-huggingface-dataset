@@ -87,7 +87,7 @@ La comparacion cuantitativa de rendimiento entre estas variantes no esta disponi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/g-assismoraes/tofu-llama2-7b-forget10-ihl_reset_embed
+- Hugging Face: https://huggingface.co/g-assismoraes/tofu-llama2-7b-forget10-ihl_reset_embed
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_llama2-7b
 - Repositorio TOFU (referencia del benchmark): https://github.com/locuslab/tofu
 - Paper TOFU: https://arxiv.org/abs/2401.06121

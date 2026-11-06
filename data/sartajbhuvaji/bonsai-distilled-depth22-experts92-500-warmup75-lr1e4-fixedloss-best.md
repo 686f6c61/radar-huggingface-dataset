@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`sartajbhuvaji/bonsai-distilled-depth22-experts92-500-warmup75-lr1e4-fixedloss-best` es un checkpoint de generación de texto publicado en HuggingFace por el usuario `sartajbhuvaji`. Su etiqueta de arquitectura es `qwen3_moe`, lo que indica que se trata de un transformer con mezcla de expertos (MoE) construido sobre la familia Qwen3, y el fichero de pesos declara 5.531.697.664 parámetros totales (unos 5,53 mil millones), con un repositorio de 11,1 GB coherente con pesos en bf16/fp16. No es un modelo oficial de ningún laboratorio: es un experimento de destilación o de ajuste fino publicado por un autor individual, con cero descargas y cero valoraciones en el momento de redactar esta ficha.
+`sartajbhuvaji/bonsai-distilled-depth22-experts92-500-warmup75-lr1e4-fixedloss-best` es un checkpoint de generación de texto publicado en Hugging Face por el usuario `sartajbhuvaji`. Su etiqueta de arquitectura es `qwen3_moe`, lo que indica que se trata de un transformer con mezcla de expertos (MoE) construido sobre la familia Qwen3, y el fichero de pesos declara 5.531.697.664 parámetros totales (unos 5,53 mil millones), con un repositorio de 11,1 GB coherente con pesos en bf16/fp16. No es un modelo oficial de ningún laboratorio: es un experimento de destilación o de ajuste fino publicado por un autor individual, con cero descargas y cero valoraciones en el momento de redactar esta ficha.
 
-El nombre del repositorio codifica buena parte de su configuración, aunque el autor no la documenta: "distilled" apunta a destilación, "depth22" a 22 capas, "experts92" a 92 expertos, "warmup75" a 75 pasos de calentamiento del optimizador, "lr1e4" a una tasa de aprendizaje de 1e-4 y "fixedloss" sugiere una corrección de la función de pérdida respecto a ejecuciones anteriores. Toda esta lectura es una inferencia a partir del identificador, no un dato confirmado en la model card, que está vacía y generada automáticamente por la plantilla de HuggingFace.
+El nombre del repositorio codifica buena parte de su configuración, aunque el autor no la documenta: "distilled" apunta a destilación, "depth22" a 22 capas, "experts92" a 92 expertos, "warmup75" a 75 pasos de calentamiento del optimizador, "lr1e4" a una tasa de aprendizaje de 1e-4 y "fixedloss" sugiere una corrección de la función de pérdida respecto a ejecuciones anteriores. Toda esta lectura es una inferencia a partir del identificador, no un dato confirmado en la model card, que está vacía y generada automáticamente por la plantilla de Hugging Face.
 
 Su relevancia ahora es limitada y de tipo exploratorio: sirve como ejemplo de fine-tuning de un MoE pequeño sobre arquitectura Qwen3 y como posible base para experimentos de decodificación con pocos expertos activos, pero carece de licencia declarada, de idiomas declarados, de contexto especificado y de cualquier evaluación publicada, por lo que no es apto para uso en producción sin una validación previa exhaustiva.
 
@@ -28,13 +28,13 @@ Su relevancia ahora es limitada y de tipo exploratorio: sirve como ejemplo de fi
 
 La unica informacion fiable sobre la arquitectura es la etiqueta `qwen3_moe` del Hub y el recuento de parametros de los safetensors. La etiqueta implica un transformer decoder-only con capas de mezcla de expertos, probablemente con router por token y expertos compartidos, siguiendo el diseno de la familia Qwen3. Los 5,53 B de parametros totales encajan con un MoE de gama media, pero al no publicarse el numero de parametros activos por token ni el numero de capas real, no es posible estimar el coste computacional por token ni la calidad esperable.
 
-El entrenamiento no esta documentado: la model card es la plantilla automatica de HuggingFace y todas las secciones relevantes (datos de entrenamiento, hiperparametros, regimen de precision, infraestructura) figuran como "More Information Needed". A partir del nombre del repositorio se puede inferir un proceso de destilacion, 22 capas, 92 expertos, 75 pasos de warmup con tasa de aprendizaje 1e-4 y una correccion de la funcion de perdida, pero son inferencias sin confirmar. No hay evidencia de RLHF, DPO ni de ninguna innovacion tecnica adicional, y la etiqueta `arxiv:1910.09700` procede de la propia plantilla (es el articulo del calculador de impacto de carbono de Lacoste et al., 2019), no de un paper sobre el modelo.
+El entrenamiento no esta documentado: la model card es la plantilla automatica de Hugging Face y todas las secciones relevantes (datos de entrenamiento, hiperparametros, regimen de precision, infraestructura) figuran como "More Information Needed". A partir del nombre del repositorio se puede inferir un proceso de destilacion, 22 capas, 92 expertos, 75 pasos de warmup con tasa de aprendizaje 1e-4 y una correccion de la funcion de perdida, pero son inferencias sin confirmar. No hay evidencia de RLHF, DPO ni de ninguna innovacion tecnica adicional, y la etiqueta `arxiv:1910.09700` procede de la propia plantilla (es el articulo del calculador de impacto de carbono de Lacoste et al., 2019), no de un paper sobre el modelo.
 
 ## Capacidades
 
 - Generacion de texto conversacional: el pipeline declarado es `text-generation` y la etiqueta `conversational` indica que el tokenizer o la plantilla de chat estan preparados para dialogos multi-turno.
 - Compatibilidad con `transformers`: se puede cargar con `AutoModelForCausalLM` y, previsiblemente, con las clases MoE de Qwen3.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el checkpoint puede desplegarse en HuggingFace Inference Endpoints sin conversiones previas.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el checkpoint puede desplegarse en Hugging Face Inference Endpoints sin conversiones previas.
 - Razonamiento, codigo y matematicas: no disponible; no hay evaluaciones ni documentacion que lo confirmen.
 - Tool calling y function calling: no disponible.
 - Capacidades de agente y razonamiento multi-paso: no disponible.
@@ -52,7 +52,7 @@ Dado que el modelo no tiene licencia, ni evaluaciones, ni documentacion de datos
 - Prototipado de asistentes conversacionales en entornos cerrados: la etiqueta `conversational` permite montar un chatbot de prueba con la plantilla de chat de Qwen3 para evaluar coherencia y latencia antes de invertir en un modelo mayor.
 - Investigacion sobre correccion de funciones de perdida: la etiqueta "fixedloss" del nombre lo hace interesante como caso de estudio de inestabilidad de entrenamiento en MoE, comparando su comportamiento con checkpoints previos del mismo autor.
 - Evaluacion de robustez y sesgos de checkpoints no auditados: util como sujeto de pruebas en pipelines de red teaming de modelos open source, dado que carece de model card, de filtros declarados y de cualquier evaluacion de seguridad.
-- Despliegue en endpoints para pruebas internas: la etiqueta `endpoints_compatible` permite levantarlo en HuggingFace Inference Endpoints o en vLLM para medir throughput real, sin exponerlo a usuarios finales.
+- Despliegue en endpoints para pruebas internas: la etiqueta `endpoints_compatible` permite levantarlo en Hugging Face Inference Endpoints o en vLLM para medir throughput real, sin exponerlo a usuarios finales.
 
 ## Benchmarks y rendimiento
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
   - int4 (GGUF Q4_K_M, AWQ o GPTQ): en torno a 3-3,5 GB de pesos, aproximadamente 5-6 GB con contexto moderado.
 - GPU recomendadas: A100 40 GB, H100 80 GB o L40S para despliegue en bf16 con lotes grandes; RTX 4090, RTX 3090 o RTX 4080 (24/16 GB) para inferencia en bf16 o int8 con lotes pequenos.
 - Cabe en GPU de consumo: si, previsiblemente en RTX 3060 12 GB o superiores en cuantizacion de 4 bits, y en 24 GB sin cuantizar. La viabilidad final depende del numero de expertos activos y de la longitud de contexto, ambos no disponibles.
-- Opciones de despliegue: `transformers` (formato nativo safetensors), vLLM si la arquitectura Qwen3 MoE esta soportada en la version instalada, HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`) y llama.cpp/Ollama tras conversion a GGUF.
+- Opciones de despliegue: `transformers` (formato nativo safetensors), vLLM si la arquitectura Qwen3 MoE esta soportada en la version instalada, Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`) y llama.cpp/Ollama tras conversion a GGUF.
 - Latencia y throughput estimados: no disponible; no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
@@ -75,17 +75,17 @@ La comparacion con los modelos de referencia se ofrece a titulo orientativo, con
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bonsai-distilled-depth22-experts92 (este modelo) | 5,53 B | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
-| Qwen3-30B-A3B | 30,5 B (aproximado) | 3,3 B (aproximado) | 128k tokens nativos (documentado por el fabricante) | Apache 2.0 | HuggingFace y multiples proveedores |
-| Llama 3.1 8B | 8 B | denso, 8 B | 128k tokens | Llama 3.1 Community License | HuggingFace y multiples proveedores |
-| Mistral 7B v0.3 | 7,3 B | denso, 7,3 B | 32k tokens | Apache 2.0 | HuggingFace y multiples proveedores |
+| bonsai-distilled-depth22-experts92 (este modelo) | 5,53 B | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
+| Qwen3-30B-A3B | 30,5 B (aproximado) | 3,3 B (aproximado) | 128k tokens nativos (documentado por el fabricante) | Apache 2.0 | Hugging Face y multiples proveedores |
+| Llama 3.1 8B | 8 B | denso, 8 B | 128k tokens | Llama 3.1 Community License | Hugging Face y multiples proveedores |
+| Mistral 7B v0.3 | 7,3 B | denso, 7,3 B | 32k tokens | Apache 2.0 | Hugging Face y multiples proveedores |
 
 La diferencia fundamental no esta en el tamano, sino en el soporte: los tres modelos de referencia cuentan con model card completa, licencia explicita, contexto documentado y evaluaciones publicadas, mientras que este checkpoint carece de todo ello. Un MoE de 5,53 B con pocos expertos activos podria ofrecer un coste por token inferior al de un denso de 7-8 B, pero sin el dato de parametros activos esa ventaja no se puede verificar.
 
 ## Limitaciones y advertencias
 
 - Licencia no disponible: sin licencia declarada, el uso comercial es juridicamente incierto. En la practica, la ausencia de licencia implica que no se conceden derechos de uso mas alla de los que permita la normativa aplicable, y ademas el modelo deriva de Qwen3, cuyas condiciones originales habria que respetar.
-- Model card vacia: la ficha es la plantilla automatica de HuggingFace, sin datos de autor, datos de entrenamiento, hiperparametros, infraestructura ni evaluaciones. No hay manera de auditar el modelo.
+- Model card vacia: la ficha es la plantilla automatica de Hugging Face, sin datos de autor, datos de entrenamiento, hiperparametros, infraestructura ni evaluaciones. No hay manera de auditar el modelo.
 - Cero descargas y cero valoraciones: no existe comunidad que haya validado el checkpoint; la probabilidad de fallos silenciosos (pesos corruptos, tokenizer mal configurado, plantilla de chat incorrecta) es mas alta que en modelos con uso real.
 - Riesgo de alucinacion: no evaluado y sin datos de entrenamiento publicados. Al ser un modelo destilado y de reducido tamano, cabe esperar una tasa de alucinacion elevada, pero no hay mediciones.
 - Sesgos: no evaluados. Sin informacion sobre la composicion del dataset de entrenamiento ni sobre filtros aplicados, no se puede descartar la presencia de sesgos de genero, raza, idioma o ideologia.
@@ -97,8 +97,8 @@ La diferencia fundamental no esta en el tamano, sino en el soporte: los tres mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sartajbhuvaji/bonsai-distilled-depth22-experts92-500-warmup75-lr1e4-fixedloss-best
-- Perfil del autor en HuggingFace: https://huggingface.co/sartajbhuvaji
+- Modelo en Hugging Face: https://huggingface.co/sartajbhuvaji/bonsai-distilled-depth22-experts92-500-warmup75-lr1e4-fixedloss-best
+- Perfil del autor en Hugging Face: https://huggingface.co/sartajbhuvaji
 - Paper citado en las etiquetas (plantilla de la model card, no relacionado con el modelo): https://arxiv.org/abs/1910.09700
 - Paper, repositorio, demo o blog del modelo: no disponible
 - Resultados de busqueda web: las consultas realizadas no devolvieron ningun resultado tecnico relevante sobre este modelo, unicamente paginas de contenido para adultos sin relacion. No se han incluido por no ser fuentes validas.

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Ololade117/scaling-flex-3.7M-157000steps` es un modelo de lenguaje de tamano muy reducido (3.686.400 parametros, aproximadamente 3,7 millones) publicado en HuggingFace por el usuario Ololade117 bajo licencia MIT. Por su nombre, su tamano y la existencia de repositorios hermanos del mismo autor (`scaling-flex-7.9M-15000steps` y `scaling-normal-3.7M-27000steps`), todo apunta a que forma parte de una bateria de experimentos sobre leyes de escala (scaling laws) durante el entrenamiento, comparando variantes de arquitectura o configuracion ("flex" frente a "normal") a distintos presupuestos de pasos. Se trata, por tanto, de una pieza de investigacion reproducible mas que de un modelo orientado a produccion.
+`Ololade117/scaling-flex-3.7M-157000steps` es un modelo de lenguaje de tamano muy reducido (3.686.400 parametros, aproximadamente 3,7 millones) publicado en Hugging Face por el usuario Ololade117 bajo licencia MIT. Por su nombre, su tamano y la existencia de repositorios hermanos del mismo autor (`scaling-flex-7.9M-15000steps` y `scaling-normal-3.7M-27000steps`), todo apunta a que forma parte de una bateria de experimentos sobre leyes de escala (scaling laws) durante el entrenamiento, comparando variantes de arquitectura o configuracion ("flex" frente a "normal") a distintos presupuestos de pasos. Se trata, por tanto, de una pieza de investigacion reproducible mas que de un modelo orientado a produccion.
 
-El repositorio no incluye model card descriptiva: unicamente contiene la plantilla autogenerada por la integracion `PyTorchModelHubMixin` de HuggingFace Hub, con los campos Code, Paper y Docs marcados como "[More Information Needed]". No se especifican arquitectura, longitud de contexto, idiomas, composicion del dataset ni proceso de alineamiento. Los pesos se distribuyen en formato `safetensors`.
+El repositorio no incluye model card descriptiva: unicamente contiene la plantilla autogenerada por la integracion `PyTorchModelHubMixin` de Hugging Face Hub, con los campos Code, Paper y Docs marcados como "[More Information Needed]". No se especifican arquitectura, longitud de contexto, idiomas, composicion del dataset ni proceso de alineamiento. Los pesos se distribuyen en formato `safetensors`.
 
 Su relevancia es limitada fuera del ambito experimental: con 0 descargas y 0 likes en el momento de redactar esta ficha, y un tamano de repositorio de 0,0 GB, se trata de un artefacto de investigacion pensado para estudiar la evolucion de la perdida y del comportamiento del modelo a lo largo de 157.000 pasos de entrenamiento, no para tareas de generacion de texto utiles.
 
@@ -41,7 +41,7 @@ El unico dato de entrenamiento disponible es el que figura en el propio identifi
 - Estudio de leyes de escala: el modelo permite registrar la curva de perdida a lo largo de 157.000 pasos y compararla con los repositorios hermanos (`scaling-flex-7.9M-15000steps` y `scaling-normal-3.7M-27000steps`) para analizar como escala el rendimiento con el numero de parametros y de pasos.
 - Validacion de pipelines de entrenamiento: por su tamano ridiculo, se puede entrenar y evaluar de principio a fin en minutos, lo que lo hace util para verificar que un script de entrenamiento, un cargador de datos o un sistema de checkpoints funciona antes de lanzar un run grande.
 - Pruebas unitarias de codigo de inferencia: sirve para comprobar que una funcion de carga de pesos `safetensors`, un envoltorio `PyTorchModelHubMixin` o un servidor de inferencia serializan y deserializan correctamente, sin coste de computo apreciable.
-- Docencia y divulgacion: util para explicar en un aula o taller como se estructura un repositorio de HuggingFace, que contiene un fichero `safetensors` y como se publican pesos con la libreria `huggingface_hub`.
+- Docencia y divulgacion: util para explicar en un aula o taller como se estructura un repositorio de Hugging Face, que contiene un fichero `safetensors` y como se publican pesos con la libreria `huggingface_hub`.
 - Pruebas de herramientas de analisis de modelos: permite validar calculadoras de FLOPs, medidores de parametros, perfiles de memoria o scripts de conversion de formato sobre un modelo real de 3,7M de parametros.
 - Experimentos de tokenizacion: al ser un modelo diminuto, es adecuado para comparar tokenizadores o vocabularios midiendo el impacto en la perdida sin esperar horas de computo.
 - Benchmarking de hardware y de frameworks: sirve para medir latencia de arranque, throughput en CPU o sobrecarga de un runtime concreto, aunque sus numeros no son extrapolables a modelos grandes.
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ololade117/scaling-flex-3.7M-157000steps | 3,69M | no disponible | no disponible | MIT | HuggingFace |
-| Ololade117/scaling-flex-7.9M-15000steps | 7,9M (segun nombre) | no disponible | no disponible | no disponible en la busqueda | HuggingFace |
-| Ololade117/scaling-normal-3.7M-27000steps | 3,7M (segun nombre) | no disponible | no disponible | no disponible en la busqueda | HuggingFace |
+| Ololade117/scaling-flex-3.7M-157000steps | 3,69M | no disponible | no disponible | MIT | Hugging Face |
+| Ololade117/scaling-flex-7.9M-15000steps | 7,9M (segun nombre) | no disponible | no disponible | no disponible en la busqueda | Hugging Face |
+| Ololade117/scaling-normal-3.7M-27000steps | 3,7M (segun nombre) | no disponible | no disponible | no disponible en la busqueda | Hugging Face |
 
 No se han identificado en la busqueda modelos de terceros directamente comparables con documentacion publica de rendimiento para este rango de tamano; la comparativa se limita a los repositorios hermanos del mismo autor, que comparten el patron de nombres y probablemente la misma familia experimental.
 
@@ -79,11 +79,11 @@ No se han identificado en la busqueda modelos de terceros directamente comparabl
 - Sesgos: no hay informacion sobre la composicion del dataset de entrenamiento, por lo que no se pueden anticipar sesgos de genero, raza, idioma o dominio.
 - Licencia: MIT permite uso comercial, modificacion y redistribucion con atribucion y sin garantia; conviene revisar si el autor impone condiciones adicionales en el repositorio, ya que la model card no las detalla.
 - Advertencia para produccion: no se recomienda su uso en ningun sistema en produccion, ni siquiera como componente auxiliar, dado el tamano, la falta de evaluacion y la ausencia de codigo de carga documentado.
-- Metadatos: las fechas de creacion y actualizacion registradas en el repositorio (2026-09-29) son posteriores a la fecha habitual de publicacion de modelos en HuggingFace, un detalle a tener en cuenta al citar el artefacto.
+- Metadatos: las fechas de creacion y actualizacion registradas en el repositorio (2026-09-29) son posteriores a la fecha habitual de publicacion de modelos en Hugging Face, un detalle a tener en cuenta al citar el artefacto.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ololade117/scaling-flex-3.7M-157000steps
+- Modelo en Hugging Face: https://huggingface.co/Ololade117/scaling-flex-3.7M-157000steps
 - Repositorio hermano (7,9M, 15.000 pasos): https://huggingface.co/Ololade117/scaling-flex-7.9M-15000steps
 - Repositorio hermano (3,7M, 27.000 pasos): https://huggingface.co/Ololade117/scaling-normal-3.7M-27000steps
 - Perfil de GitHub del autor: https://github.com/Ololade117/Ololade117

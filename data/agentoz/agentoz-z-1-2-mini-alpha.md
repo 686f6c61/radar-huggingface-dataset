@@ -68,7 +68,7 @@ No disponible. El adaptador no tiene documentacion publica ni resultados de eval
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentOz/agentoz-z-1-2-mini-alpha
+- Repositorio Hugging Face: https://huggingface.co/agentOz/agentoz-z-1-2-mini-alpha
 - Repositorio alternativo (variante 1.2): https://huggingface.co/agentOz/agentoz-z-1.2-mini-alpha
 - Perfil del autor: https://huggingface.co/agentOz/models
 - Modelo base (SmolLM2-1.7B-Instruct): https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct

@@ -18,7 +18,7 @@ Su relevancia radica en que, segun la propia model card, supera a otros modelos 
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | FP8 (formato nativo de publicacion, tag fp8); otras cuantizaciones no disponibles en la informacion |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible en la ficha de HuggingFace; la model card enlaza licencia MIT para el codigo y un Model Agreement para el modelo |
+| Licencia | no disponible en la ficha de Hugging Face; la model card enlaza licencia MIT para el codigo y un Model Agreement para el modelo |
 | Formato de pesos | safetensors (custom_code, deepseek_v3) |
 
 Otros datos del repositorio: ID deepseek-ai/DeepSeek-V3-Base, tamano del repo 688,6 GB, 5.257 descargas, 1.721 likes, creado el 2024-12-25 y actualizado el 2025-03-27.
@@ -73,13 +73,13 @@ No disponible. La informacion facilitada no incluye especificaciones numericas d
 - Idiomas soportados: no disponible, por lo que no se puede garantizar un rendimiento equilibrado entre lenguas.
 - Longitud de contexto: no disponible en la informacion, lo que impide planificar casos de uso con contextos largos sin verificacion previa.
 - Sesgos conocidos: no disponible en la informacion proporcionada; se recomienda auditoria propia antes de usos sensibles.
-- Licencia: la ficha de HuggingFace marca la licencia como no disponible, mientras que la model card enlaza MIT para el codigo y un Model Agreement para el modelo. Antes de uso comercial hay que revisar el Model Agreement enlazado, ya que las condiciones reales pueden diferir de MIT.
+- Licencia: la ficha de Hugging Face marca la licencia como no disponible, mientras que la model card enlaza MIT para el codigo y un Model Agreement para el modelo. Antes de uso comercial hay que revisar el Model Agreement enlazado, ya que las condiciones reales pueden diferir de MIT.
 - Requisitos de produccion: el tamano (688,6 GB de repo) implica infraestructura multi-GPU y costes de servicio elevados, incompatibles con entornos de un solo acelerador.
 - Al ser una variante preentrenada, no se garantizan capacidades de tool calling, agentes ni modo de razonamiento explicito.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/deepseek-ai/DeepSeek-V3-Base
+- Hugging Face: https://huggingface.co/deepseek-ai/DeepSeek-V3-Base
 - Paper (PDF): https://github.com/deepseek-ai/DeepSeek-V3/blob/main/DeepSeek_V3.pdf
 - arXiv: https://arxiv.org/abs/2412.19437
 - Repositorio GitHub DeepSeek-V3: https://github.com/deepseek-ai/DeepSeek-V3
@@ -88,6 +88,6 @@ No disponible. La informacion facilitada no incluye especificaciones numericas d
 - Web oficial: https://www.deepseek.com/
 - Plataforma API: https://www.deepseek.com/en/platform/
 - Chat: https://chat.deepseek.com/
-- Organizacion en HuggingFace: https://huggingface.co/deepseek-ai
+- Organizacion en Hugging Face: https://huggingface.co/deepseek-ai
 - GitHub de la organizacion: https://github.com/deepseek-ai
 - Discord: https://discord.gg/Tc7c45Zzu5

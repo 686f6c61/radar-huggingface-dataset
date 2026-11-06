@@ -4,7 +4,7 @@
 
 JevK5 v0.3 (publicado en el Hub bajo el identificador `jwcwn/zl-mini-body-2`) es un modelo de decisión tipada ("typed decisions") construido a partir de Qwen3.5-4B mediante un ajuste fino con LoRA de rango 16 sobre las proyecciones de atención, fusionado en los pesos finales. No es un generador de texto al uso: lee un estado y una pregunta de tipo sí/no (`noul`), elección múltiple o puntuación, y devuelve una probabilidad para cada opción en un único forward pass, sin generar ningún token. Se presenta como una alternativa independiente, con licencia Apache-2.0, al modelo Jev de TypeSafe, sin afiliación con dicha empresa.
 
-El modelo tiene 4.539.265.536 parámetros (aproximadamente 4,5 mil millones), un repositorio de 9,1 GB en safetensors y está etiquetado en HuggingFace con la arquitectura `qwen3_5_text`. La lectura de probabilidades no se hace con `generate()`, sino con un runtime específico (JevK5 runtime 0.3.0 o superior, en github.com/allebee/jevk5) que expone un endpoint estilo TypeSafe `/v1/systemone` y aplica el protocolo de readout de SemIf: softmax sobre los logits del siguiente token de las letras de respuesta, dividido por una temperatura de calibración.
+El modelo tiene 4.539.265.536 parámetros (aproximadamente 4,5 mil millones), un repositorio de 9,1 GB en safetensors y está etiquetado en Hugging Face con la arquitectura `qwen3_5_text`. La lectura de probabilidades no se hace con `generate()`, sino con un runtime específico (JevK5 runtime 0.3.0 o superior, en github.com/allebee/jevk5) que expone un endpoint estilo TypeSafe `/v1/systemone` y aplica el protocolo de readout de SemIf: softmax sobre los logits del siguiente token de las letras de respuesta, dividido por una temperatura de calibración.
 
 La versión v0.3 amplía sustancialmente los datos de entrenamiento respecto a v0.2 (17.408 preguntas de profesor frente a 3.272, y 30.052 ítems humanos de replay frente a 3.272), lo que se traduce en mejoras medibles en pruebas de retención (índice proxy de 0,620 a 0,731; precisión en preguntas de profesor de 0,801 a 0,834) manteniendo una calibración excelente (ECE de 0,035). Es relevante para desarrolladores que necesitan decisiones binarias o de elección con probabilidades calibradas y latencia muy baja (unos 13 ms por decisión en una H100) sin coste de generación autoregresiva.
 
@@ -81,9 +81,9 @@ bev-decision-150K (mezcla de decisión de otro grupo, solo evaluación; 2.500 fi
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| JevK5 v0.3 (este modelo) | ~4,5 B | No disponible | Decisión tipada con readout sin generación | Apache-2.0 | Pesos abiertos en HuggingFace |
-| JevK5-9B | ~9 B | No disponible | Misma receta v0.3 sobre Qwen3.5-9B; índice proxy 0,762 y 0,851 en preguntas de profesor, pero 0,730 en el tramo difícil de JevBench | Apache-2.0 | Pesos abiertos en HuggingFace |
-| JevK5-2B | ~2 B | No disponible | Receta v0.2 sobre Qwen3.5-2B, no reentrenado para v0.3 | Apache-2.0 | Pesos abiertos en HuggingFace |
+| JevK5 v0.3 (este modelo) | ~4,5 B | No disponible | Decisión tipada con readout sin generación | Apache-2.0 | Pesos abiertos en Hugging Face |
+| JevK5-9B | ~9 B | No disponible | Misma receta v0.3 sobre Qwen3.5-9B; índice proxy 0,762 y 0,851 en preguntas de profesor, pero 0,730 en el tramo difícil de JevBench | Apache-2.0 | Pesos abiertos en Hugging Face |
+| JevK5-2B | ~2 B | No disponible | Receta v0.2 sobre Qwen3.5-2B, no reentrenado para v0.3 | Apache-2.0 | Pesos abiertos en Hugging Face |
 | Jev de TypeSafe | No disponible | No disponible | Decisión tipada propietaria | No disponible (propietaria) | Servicio de pago; sin pesos abiertos |
 
 ## Limitaciones y advertencias
@@ -101,7 +101,7 @@ bev-decision-150K (mezcla de decisión de otro grupo, solo evaluación; 2.500 fi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jwcwn/zl-mini-body-2
+- Modelo en Hugging Face: https://huggingface.co/jwcwn/zl-mini-body-2
 - Pesos JevK5 (referenciados en la model card): https://huggingface.co/alibiserikbay/JevK5
 - Runtime JevK5: https://github.com/allebee/jevk5
 - JevK5-9B: https://huggingface.co/alibiserikbay/JevK5-9B

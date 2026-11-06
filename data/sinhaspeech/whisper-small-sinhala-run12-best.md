@@ -87,7 +87,7 @@ No se han publicado en la informacion disponible resultados de benchmarks frente
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM. Funciona sin problemas en RTX 3050, RTX 3060, RTX 4060, RTX 4090, A100, H100 o MI300X. Para el ajuste fino completo, el autor empleo AMD Instinct MI300X con ROCm y bf16.
 - Cabe en GPU de consumo: si, en practicamente cualquier tarjeta moderna de Nvidia o AMD con 4 GB o mas, e incluso en iGPU con memoria unificada.
 - Inferencia en CPU: viable, ya que 244M de parametros permiten transcripcion en tiempo razonable, aunque con latencia muy superior a GPU.
-- Opciones de despliegue: `transformers` con `pipeline("automatic-speech-recognition")`, servidores de inferencia compatibles con Whisper como vLLM y TGI, y runtimes optimizados que requieren conversion previa de pesos como faster-whisper (CTranslate2) y whisper.cpp (GGUF). El tag `endpoints_compatible` del repositorio indica compatibilidad con los endpoints de HuggingFace.
+- Opciones de despliegue: `transformers` con `pipeline("automatic-speech-recognition")`, servidores de inferencia compatibles con Whisper como vLLM y TGI, y runtimes optimizados que requieren conversion previa de pesos como faster-whisper (CTranslate2) y whisper.cpp (GGUF). El tag `endpoints_compatible` del repositorio indica compatibilidad con los endpoints de Hugging Face.
 - Latencia y throughput: no disponible. No se proporcionan medidas de factor de tiempo real ni de transcripciones por segundo.
 
 ## Comparativa con modelos similares
@@ -116,7 +116,7 @@ La comparacion relevante es contra el propio `openai/whisper-small`, del que est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SinhaSpeech/whisper-small-sinhala-run12-best
+- Modelo en Hugging Face: https://huggingface.co/SinhaSpeech/whisper-small-sinhala-run12-best
 - Modelo base: https://huggingface.co/openai/whisper-small
 - Conjunto de datos de entrenamiento: https://huggingface.co/datasets/SinhaSpeech/sinhala-asr-data-v6
 - Paper de Whisper (Radford et al., 2022): https://arxiv.org/abs/2212.04356

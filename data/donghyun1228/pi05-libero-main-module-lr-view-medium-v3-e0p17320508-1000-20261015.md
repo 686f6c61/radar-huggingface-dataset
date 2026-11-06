@@ -93,5 +93,5 @@ La informacion proporcionada no incluye datos de modelos comparables. Se listan 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-main-module-lr-view-medium-v3-e0p17320508-1000-20261015
+- Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-main-module-lr-view-medium-v3-e0p17320508-1000-20261015
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

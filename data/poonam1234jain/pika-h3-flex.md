@@ -83,7 +83,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables ni da
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Poonam1234jain/Pika-H3-Flex
+- Hugging Face: https://huggingface.co/Poonam1234jain/Pika-H3-Flex
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Licencia: archivo LICENSE dentro del repositorio (no se proporciona URL directa)
 - Papers, blogs, repos o demos adicionales: no disponibles en la informacion proporcionada.

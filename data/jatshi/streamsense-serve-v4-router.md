@@ -84,7 +84,7 @@ No se han identificado routers de escalado multimodal publicos directamente comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jatshi/StreamSense-Serve-v4-Router
+- Modelo en Hugging Face: https://huggingface.co/jatshi/StreamSense-Serve-v4-Router
 - Repositorio GitHub: https://github.com/Jatshi/StreamSense-Serve
 - Documento arXiv (StreamSense): https://arxiv.org/abs/2601.22738
 - Estado de implementacion (chino): https://github.com/Jatshi/StreamSense-Serve/blob/main/docs/V4_IMPLEMENTATION_STATUS_ZH.md

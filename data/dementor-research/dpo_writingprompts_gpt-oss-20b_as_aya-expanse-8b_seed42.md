@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - El adaptador LoRA pesa 1,0 GB, por lo que su carga en memoria adicional es modesta.
 - El modelo base `gpt-oss-20b` requiere una GPU con al menos 40 GB de VRAM para inferencia en fp16 (estimación razonable para un modelo de 20B, aunque no confirmada).
 - En cuantización de 8 bits o 4 bits, podría ejecutarse en GPUs de consumo como RTX 3090/4090 (24 GB), pero esto depende del modelo base y no está documentado.
-- Para despliegue, se requiere el framework PEFT y Transformers de HuggingFace. No se mencionan opciones como vLLM, llama.cpp u Ollama.
+- Para despliegue, se requiere el framework PEFT y Transformers de Hugging Face. No se mencionan opciones como vLLM, llama.cpp u Ollama.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -68,6 +68,6 @@ No se dispone de información suficiente para comparar este adaptador con otros 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dementor-research/dpo_writingprompts_gpt-oss-20b_as_aya-expanse-8b_seed42
+- Repositorio Hugging Face: https://huggingface.co/dementor-research/dpo_writingprompts_gpt-oss-20b_as_aya-expanse-8b_seed42
 - Modelo base (referencia): https://huggingface.co/openai/gpt-oss-20b
 - Herramienta Tinker (mencionada en la model card): https://thinkingmachines.ai/tinker/

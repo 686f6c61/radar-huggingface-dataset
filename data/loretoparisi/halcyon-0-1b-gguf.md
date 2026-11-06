@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Halcyon-0.1B-GGUF es una cuantización en formato GGUF del modelo Halcyon-0.1B, desarrollado originalmente por Radical Numerics y publicado en esta versión por el usuario loretoparisi en HuggingFace. Se trata de un modelo autorregresivo de generación de imágenes a partir de texto (text-to-image), una aproximación poco habitual frente a los difusión dominantes en el sector. El modelo base se apoya en la arquitectura de Qwen3, según las etiquetas del repositorio, y cuenta con aproximadamente 96,4 millones de parámetros.
+Halcyon-0.1B-GGUF es una cuantización en formato GGUF del modelo Halcyon-0.1B, desarrollado originalmente por Radical Numerics y publicado en esta versión por el usuario loretoparisi en Hugging Face. Se trata de un modelo autorregresivo de generación de imágenes a partir de texto (text-to-image), una aproximación poco habitual frente a los difusión dominantes en el sector. El modelo base se apoya en la arquitectura de Qwen3, según las etiquetas del repositorio, y cuenta con aproximadamente 96,4 millones de parámetros.
 
-Su relevancia radica en explorar la generación de imágenes mediante modelos autorregresivos compactos, capaces de ejecutarse localmente con recursos mínimos gracias al formato GGUF y su compatibilidad con llama.cpp. Con un tamaño de repositorio de apenas 0,4 GB, es un candidato interesante para experimentación en hardware de consumo y para investigación sobre tokenización de imágenes en modelos de lenguaje. Cabe destacar que el acceso al repositorio está restringido (gated), por lo que requiere aceptar condiciones previas en HuggingFace.
+Su relevancia radica en explorar la generación de imágenes mediante modelos autorregresivos compactos, capaces de ejecutarse localmente con recursos mínimos gracias al formato GGUF y su compatibilidad con llama.cpp. Con un tamaño de repositorio de apenas 0,4 GB, es un candidato interesante para experimentación en hardware de consumo y para investigación sobre tokenización de imágenes en modelos de lenguaje. Cabe destacar que el acceso al repositorio está restringido (gated), por lo que requiere aceptar condiciones previas en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -65,7 +65,7 @@ Halcyon destaca por su tamano radicalmente menor (una decima parte de SD 1.5) y 
 
 ## Limitaciones y advertencias
 
-- El acceso al repositorio esta restringido (gated): hay que aceptar condiciones en HuggingFace antes de descargarlo.
+- El acceso al repositorio esta restringido (gated): hay que aceptar condiciones en Hugging Face antes de descargarlo.
 - La licencia se marca como "other" con upstream-unspecified: antes de cualquier uso comercial conviene revisar la licencia del modelo base (radicalnumerics/Halcyon-0.1B) y las condiciones del gated repo.
 - No hay benchmarks ni datos de calidad de imagen publicados en la informacion disponible, por lo que su fidelidad generativa no puede evaluarse objetivamente aqui.
 - Al tratarse de un modelo muy pequeno (~96 M parametros), es esperable una calidad de imagen y adherencia al prompt limitadas frente a modelos de difusion de varios miles de millones de parametros.
@@ -75,6 +75,6 @@ Halcyon destaca por su tamano radicalmente menor (una decima parte de SD 1.5) y 
 
 ## Enlaces
 
-- Repositorio en HuggingFace (cuantizacion GGUF): https://huggingface.co/loretoparisi/Halcyon-0.1B-GGUF
+- Repositorio en Hugging Face (cuantizacion GGUF): https://huggingface.co/loretoparisi/Halcyon-0.1B-GGUF
 - Modelo base: https://huggingface.co/radicalnumerics/Halcyon-0.1B
 - Articulo en arXiv referenciado: https://arxiv.org/abs/2610.26863

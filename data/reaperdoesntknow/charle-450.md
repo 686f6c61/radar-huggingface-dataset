@@ -2,9 +2,9 @@
 
 ## Resumen
 
-charle-450 es un modelo de generacion de texto publicado en HuggingFace por el usuario reaperdoesntknow. Se trata de un checkpoint de aproximadamente 410 millones de parametros (410.256.184 exactos, segun los pesos en safetensors) subido a finales de 2026, sin model card util: el README es la plantilla autogenerada de HuggingFace y no contiene ninguna seccion completada. Como consecuencia, no hay informacion publica sobre el desarrollador real, el dataset de entrenamiento, el regimen de entrenamiento ni los objetivos del modelo.
+charle-450 es un modelo de generacion de texto publicado en Hugging Face por el usuario reaperdoesntknow. Se trata de un checkpoint de aproximadamente 410 millones de parametros (410.256.184 exactos, segun los pesos en safetensors) subido a finales de 2026, sin model card util: el README es la plantilla autogenerada de Hugging Face y no contiene ninguna seccion completada. Como consecuencia, no hay informacion publica sobre el desarrollador real, el dataset de entrenamiento, el regimen de entrenamiento ni los objetivos del modelo.
 
-El unico indicio tecnico relevante son las etiquetas del repositorio. Ademas de las genericas de transformers (`text-generation`, `safetensors`), aparece la etiqueta `tamelm_two_axis` y `custom_code`. Esto sugiere una arquitectura propia (probablemente denominada TamELM con algun esquema de dos ejes) que requiere cargar codigo remoto con `trust_remote_code=True`, una practica que limita la compatibilidad con runtimes de inferencia estandar. La referencia a `arxiv:1910.09700` es el paper de Lacoste et al. sobre calculo de emisiones de carbono, citado en la plantilla automatica de HuggingFace, y no un paper del modelo.
+El unico indicio tecnico relevante son las etiquetas del repositorio. Ademas de las genericas de transformers (`text-generation`, `safetensors`), aparece la etiqueta `tamelm_two_axis` y `custom_code`. Esto sugiere una arquitectura propia (probablemente denominada TamELM con algun esquema de dos ejes) que requiere cargar codigo remoto con `trust_remote_code=True`, una practica que limita la compatibilidad con runtimes de inferencia estandar. La referencia a `arxiv:1910.09700` es el paper de Lacoste et al. sobre calculo de emisiones de carbono, citado en la plantilla automatica de Hugging Face, y no un paper del modelo.
 
 La relevancia practica es limitada en su estado actual: cero descargas, cero likes, licencia sin especificar y ausencia total de documentacion. Resulta util como caso de estudio de checkpoints opacos en el Hub, pero no es recomendable para uso en produccion sin una evaluacion propia previa y sin resolver la cuestion de la licencia.
 
@@ -28,7 +28,7 @@ La relevancia practica es limitada en su estado actual: cero descargas, cero lik
 
 No hay informacion publicada sobre la arquitectura. La model card no rellena la seccion "Model Architecture and Objective" y las etiquetas del repositorio son el unico dato disponible: `tamelm_two_axis` apunta a un diseno propio del autor (no a una familia conocida como Llama, Mistral, Qwen o Pythia) y `custom_code` indica que el modelo necesita codigo Python incluido en el repositorio para instanciarse, por lo que no funciona con `AutoModelForCausalLM` estandar. El peso del repositorio (1.6 GB para 410 M de parametros) es consistente con un guardado en precision de 32 bits, aunque esto es una inferencia aritmetica y no un dato confirmado por el autor.
 
-Tampoco hay datos sobre volumen de tokens de entrenamiento, composicion del dataset, tecnicas de alineamiento (RLHF, DPO, SFT) ni innovaciones tecnicas. La model card incluye la plantilla habitual de HuggingFace con todos los campos marcados como "[More Information Needed]", incluido el regimen de entrenamiento (fp32, fp16, bf16) y el impacto ambiental. No se ha publicado ningun paper, informe tecnico ni entrada de blog asociada.
+Tampoco hay datos sobre volumen de tokens de entrenamiento, composicion del dataset, tecnicas de alineamiento (RLHF, DPO, SFT) ni innovaciones tecnicas. La model card incluye la plantilla habitual de Hugging Face con todos los campos marcados como "[More Information Needed]", incluido el regimen de entrenamiento (fp32, fp16, bf16) y el impacto ambiental. No se ha publicado ningun paper, informe tecnico ni entrada de blog asociada.
 
 ## Capacidades
 
@@ -98,7 +98,7 @@ La diferencia fundamental no es de tamano sino de trazabilidad: las tres alterna
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/reaperdoesntknow/charle-450
+- Modelo en Hugging Face: https://huggingface.co/reaperdoesntknow/charle-450
 - Paper citado en la plantilla de la model card (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental de ML: https://mlco2.github.io/impact
 - Repositorio, paper, demo o blog del autor: no disponible

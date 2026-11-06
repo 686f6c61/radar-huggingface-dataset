@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio no contiene un modelo de lenguaje, sino un agente de aprendizaje por refuerzo profundo entrenado con el algoritmo APPO (Asynchronous Proximal Policy Optimization) sobre el entorno `doom_health_gathering_supreme` de ViZDoom. Lo publica el usuario TheNew0ne en HuggingFace como parte de un curso de reinforcement learning, y se distribuye con la librería Sample-Factory 2.0. Su propósito es servir como artefacto reproducible de entrenamiento: un checkpoint que puede descargarse, evaluarse con el script `enjoy` y reanudarse con el script `train`.
+Este repositorio no contiene un modelo de lenguaje, sino un agente de aprendizaje por refuerzo profundo entrenado con el algoritmo APPO (Asynchronous Proximal Policy Optimization) sobre el entorno `doom_health_gathering_supreme` de ViZDoom. Lo publica el usuario TheNew0ne en Hugging Face como parte de un curso de reinforcement learning, y se distribuye con la librería Sample-Factory 2.0. Su propósito es servir como artefacto reproducible de entrenamiento: un checkpoint que puede descargarse, evaluarse con el script `enjoy` y reanudarse con el script `train`.
 
 El modelo resuelve una tarea concreta de control visual en primera persona: el agente debe recoger frascos de salud en un escenario de Doom mientras recibe daño de forma continua, maximizando el tiempo de supervivencia. La observación es visual (píxeles) y las acciones son discretas, lo que lo convierte en un banco de pruebas clásico para algoritmos de RL con entrada de imagen.
 
@@ -69,8 +69,8 @@ No se han publicado otros resultados de benchmarks en la información disponible
 
 | Modelo | Tipo | Entorno | Algoritmo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TheNew0ne/rl_course_vizdoom_health_gathering_supreme | Agente RL visual | doom_health_gathering_supreme | APPO | no disponible | HuggingFace (0 descargas) |
-| Otros checkpoints APPO de Sample-Factory en ViZDoom | Agente RL visual | entornos ViZDoom | APPO | variable | HuggingFace |
+| TheNew0ne/rl_course_vizdoom_health_gathering_supreme | Agente RL visual | doom_health_gathering_supreme | APPO | no disponible | Hugging Face (0 descargas) |
+| Otros checkpoints APPO de Sample-Factory en ViZDoom | Agente RL visual | entornos ViZDoom | APPO | variable | Hugging Face |
 | Agentes PPO sobre ViZDoom | Agente RL visual | entornos ViZDoom | PPO | variable | Repositorios académicos |
 
 No se dispone de datos comparativos de rendimiento entre estos modelos en la información proporcionada. La comparativa se limita a categoría, algoritmo y disponibilidad.
@@ -88,7 +88,7 @@ No se dispone de datos comparativos de rendimiento entre estos modelos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TheNew0ne/rl_course_vizdoom_health_gathering_supreme
+- Modelo en Hugging Face: https://huggingface.co/TheNew0ne/rl_course_vizdoom_health_gathering_supreme
 - Repositorio Sample-Factory: https://github.com/alex-petrenko/sample-factory
 - Documentación de Sample-Factory: https://www.samplefactory.dev/
-- Guía de integración con HuggingFace: https://www.samplefactory.dev/10-huggingface/huggingface/
+- Guía de integración con Hugging Face: https://www.samplefactory.dev/10-huggingface/huggingface/

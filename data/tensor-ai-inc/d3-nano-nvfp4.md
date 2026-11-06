@@ -17,7 +17,7 @@ Es relevante ahora porque está pensado para las GPUs Blackwell, que ejecutan FP
 | Parámetros activos | No disponible (no se documenta una arquitectura MoE) |
 | Longitud de contexto | No disponible |
 | Tipos de cuantización | NVFP4: valores FP4, escalas FP8 por bloque de 16 valores y una escala FP32 por tensor. Aplicado a MLP y atención completa; atención lineal, embeddings, encoder de visión y readout permanecen en precisión original |
-| Idiomas soportados | No disponible (los metadatos de HuggingFace no declaran idiomas) |
+| Idiomas soportados | No disponible (los metadatos de Hugging Face no declaran idiomas) |
 | Licencia | Apache-2.0 |
 | Formato de pesos | Safetensors con `custom_code` (exportado con NVIDIA TensorRT Model Optimizer 0.47.0) |
 
@@ -74,8 +74,8 @@ Notas: Jev no pudo responder 7 de las 1.000 peticiones y el kit las contabiliza 
 
 | Modelo | Parámetros | Contexto | Decision Index (público) | Pesos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| tensor-ai-inc/d3-nano-NVFP4 | 1,72 B (safetensors) / 2,2 B según model card | No disponible | 39,37 | 3,0 GB | Apache-2.0 | HuggingFace, vLLM nightly |
-| vllm-sr/d3-nano | 2,2 B (según model card) | No disponible | 42,35 | 4,4 GB | Apache-2.0 | HuggingFace, vLLM |
+| tensor-ai-inc/d3-nano-NVFP4 | 1,72 B (safetensors) / 2,2 B según model card | No disponible | 39,37 | 3,0 GB | Apache-2.0 | Hugging Face, vLLM nightly |
+| vllm-sr/d3-nano | 2,2 B (según model card) | No disponible | 42,35 | 4,4 GB | Apache-2.0 | Hugging Face, vLLM |
 | Jev by TypeSafe | No disponible | No disponible | 54,69 | No disponible | No disponible | Vercel AI Gateway |
 
 La comparativa se limita a estos dos modelos porque son los únicos con datos en la información proporcionada. No se dispone de parámetros, contexto ni licencia de Jev, y su cifra incluye 7 peticiones sin respuesta contabilizadas como erróneas.
@@ -94,7 +94,7 @@ La comparativa se limita a estos dos modelos porque son los únicos con datos en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tensor-ai-inc/d3-nano-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/tensor-ai-inc/d3-nano-NVFP4
 - Modelo base: https://huggingface.co/vllm-sr/d3-nano
 - Repositorio del Decision Index: https://github.com/apolinario/decision-index
 - Dataset de calibración UltraChat: https://huggingface.co/datasets/HuggingFaceH4/ultrachat_200k

@@ -4,7 +4,7 @@
 
 Fancy AI (identificador `cuio/Fancy-AI`) no es un modelo de lenguaje al uso, sino el catálogo de complementos (`manifest.json`) de la aplicación Android Fancy AI, una app de asistente conversacional que ejecuta inferencia en el dispositivo mediante `llama.cpp`. El repositorio actúa como índice del que la app descarga y activa componentes opcionales; según la model card, los pesos no se alojan aquí, sino que el catálogo enlaza directamente a los repositorios de los creadores originales (se citan Qwen y bartowski) para que las descargas provengan del origen.
 
-La metadata de HuggingFace declara 4.762.310.656 parámetros (aproximadamente 4,76 mil millones) en formato safetensors, un tamaño de repositorio de 12,0 GB y la etiqueta `gguf`, en coherencia con el uso de `llama.cpp` para despliegue on-device. Existe una contradicción explícita entre esa cifra de parámetros y la afirmación de la model card de que los pesos no se rehostean en este repositorio; conviene tratar el dato como metadata agregada y no como un único checkpoint verificado.
+La metadata de Hugging Face declara 4.762.310.656 parámetros (aproximadamente 4,76 mil millones) en formato safetensors, un tamaño de repositorio de 12,0 GB y la etiqueta `gguf`, en coherencia con el uso de `llama.cpp` para despliegue on-device. Existe una contradicción explícita entre esa cifra de parámetros y la afirmación de la model card de que los pesos no se rehostean en este repositorio; conviene tratar el dato como metadata agregada y no como un único checkpoint verificado.
 
 Su relevancia es de tipo práctico: documenta el mecanismo de distribución de modelos cuantizados para una app Android con inferencia local, sin dependencia de servidores, y sirve como ejemplo de patrón de catálogo firmado/versionado para streaming de pesos bajo demanda en dispositivos móviles. No se dispone de información sobre arquitectura interna, contexto o datos de entrenamiento propios, porque el repositorio no entrena ni publica un modelo base.
 
@@ -13,13 +13,13 @@ Su relevancia es de tipo práctico: documenta el mecanismo de distribución de m
 | Parametro | Valor |
 |---|---|
 | Arquitectura | no disponible (el repositorio es un catálogo de complementos, no un modelo entrenado; la model card no describe arquitectura) |
-| Parametros totales | 4.762.310.656 (metadata de safetensors en HuggingFace; ver advertencia de inconsistencia) |
+| Parametros totales | 4.762.310.656 (metadata de safetensors en Hugging Face; ver advertencia de inconsistencia) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | etiquetas `gguf` y `llama.cpp`; los tipos concretos (Q4_K_M, Q8_0, etc.) no estan detallados en la informacion disponible |
 | Idiomas soportados | ingles (`language: en` en la model card); el resto no disponible |
-| Licencia | `other` segun la model card; el campo de licencia de HuggingFace figura como no disponible, por lo que hay que consultar la licencia de cada componente enlazado |
-| Formato de pesos | GGUF para inferencia en `llama.cpp`; metadata de HuggingFace con safetensors; los pesos no se alojan en este repositorio segun el autor |
+| Licencia | `other` segun la model card; el campo de licencia de Hugging Face figura como no disponible, por lo que hay que consultar la licencia de cada componente enlazado |
+| Formato de pesos | GGUF para inferencia en `llama.cpp`; metadata de Hugging Face con safetensors; los pesos no se alojan en este repositorio segun el autor |
 
 ## Arquitectura y entrenamiento
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo / artefacto | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Fancy AI (`cuio/Fancy-AI`) | 4,76 B (metadata safetensors) | no disponible | GGUF + manifest | `other` (por componente) | HuggingFace, 0 descargas, 1 like |
+| Fancy AI (`cuio/Fancy-AI`) | 4,76 B (metadata safetensors) | no disponible | GGUF + manifest | `other` (por componente) | Hugging Face, 0 descargas, 1 like |
 | Repositorios de pesos Qwen enlazados por el catálogo | no disponible en la informacion proporcionada | no disponible | GGUF | no disponible | externos, enlazados desde el manifest |
 | Repositorios de bartowski enlazados por el catálogo | no disponible en la informacion proporcionada | no disponible | GGUF | no disponible | externos, enlazados desde el manifest |
 
@@ -74,20 +74,20 @@ No se dispone de datos verificables de parámetros, contexto o rendimiento de la
 ## Limitaciones y advertencias
 
 - El repositorio no contiene, según su autor, los pesos: es un manifest. Cualquier expectativa de `from_pretrained` o de descarga de un checkpoint único puede no cumplirse.
-- Inconsistencia de metadata: HuggingFace declara 4.762.310.656 parámetros en safetensors y 12,0 GB de repositorio, mientras que la model card afirma que los pesos se alojan en repositorios de terceros. Verificar el contenido real antes de usarlo en producción.
-- Licencia `other` sin texto disponible y licencia de HuggingFace no disponible: no se puede asumir uso comercial. Cada componente descargado arrastra su propia licencia (Qwen y bartowski tienen condiciones propias) y debe revisarse por separado.
+- Inconsistencia de metadata: Hugging Face declara 4.762.310.656 parámetros en safetensors y 12,0 GB de repositorio, mientras que la model card afirma que los pesos se alojan en repositorios de terceros. Verificar el contenido real antes de usarlo en producción.
+- Licencia `other` sin texto disponible y licencia de Hugging Face no disponible: no se puede asumir uso comercial. Cada componente descargado arrastra su propia licencia (Qwen y bartowski tienen condiciones propias) y debe revisarse por separado.
 - Idioma declarado: solo inglés. El rendimiento en castellano no está documentado y no debería asumirse.
 - Riesgo de alucinación: no evaluado; no hay benchmarks ni evaluaciones publicadas para este artefacto.
 - Sesgos: no documentados. Al depender de modelos de terceros, hereda los sesgos de estos.
 - Dependencia de terceros: si un repositorio de origen se elimina, se hace privado o cambia de cuantización, las entradas del manifest pueden dejar de resolverse. No se documenta mecanismo de verificación de integridad (hashes) en la información disponible.
 - Longitud de contexto desconocida: limita el diseño de aplicaciones que necesiten conversaciones largas o RAG.
 - 0 descargas y 1 like en el momento de la consulta: proyecto de un solo autor, sin validación comunitaria; la fecha de creación indicada (2026-10-23) es anómala y conviene confirmarla.
-- Sin pipeline declarado, por lo que las herramientas automáticas de HuggingFace no podrán instanciarlo como modelo de texto.
+- Sin pipeline declarado, por lo que las herramientas automáticas de Hugging Face no podrán instanciarlo como modelo de texto.
 - Ejecución en móvil: el consumo térmico y de batería en inferencia sostenida con modelos de ~4,7 B en cuantización de 4 bits puede degradar la experiencia; no hay cifras publicadas.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/cuio/Fancy-AI
+- Repositorio en Hugging Face: https://huggingface.co/cuio/Fancy-AI
 - Aplicación y seguimiento de incidencias: https://github.com/Mr-J-369/Fancy-Ai
 - `llama.cpp` (runtime citado en la model card): no se incluye enlace en la información proporcionada
 - Repositorios de Qwen y bartowski referenciados por el catálogo: no se incluyen URLs concretas en la información proporcionada

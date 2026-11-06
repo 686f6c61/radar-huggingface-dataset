@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DRISTI-Router es un modelo de clasificacion de texto desarrollado por Swaraj Chattaraj, publicado en HuggingFace bajo el identificador `swarajchattaraj/DRISTI-Router`. Se presenta como un "motor de decision probabilistico no autoregresivo" de tipo "System One": un enrutador de bajisima latencia (~40 ms medidos en una RTX 3050) que resuelve consultas rutinarias y delega las dudosas o fuera de distribucion (OOD) a LLM grandes de "System 2". La idea es arquitectonica y de coste: filtrar y clasificar antes de invocar modelos caros.
+DRISTI-Router es un modelo de clasificacion de texto desarrollado por Swaraj Chattaraj, publicado en Hugging Face bajo el identificador `swarajchattaraj/DRISTI-Router`. Se presenta como un "motor de decision probabilistico no autoregresivo" de tipo "System One": un enrutador de bajisima latencia (~40 ms medidos en una RTX 3050) que resuelve consultas rutinarias y delega las dudosas o fuera de distribucion (OOD) a LLM grandes de "System 2". La idea es arquitectonica y de coste: filtrar y clasificar antes de invocar modelos caros.
 
 Tecnicamente es un DistilBERT Base uncased de ~66 millones de parametros al que se han anadido cabezas de enrutamiento personalizadas de tipo binario, de eleccion y ordinal. No es un modelo generativo: su salida es una decision categorica con confianza calibrada, no texto. Incorpora deteccion de OOD mediante similitud coseno y calibracion de probabilidades con temperature scaling ajustado por L-BFGS.
 
@@ -105,7 +105,7 @@ No hay datos publicos que permitan comparar el rendimiento de enrutamiento de DR
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/swarajchattaraj/DRISTI-Router
+- Modelo en Hugging Face: https://huggingface.co/swarajchattaraj/DRISTI-Router
 - Repositorio de la arquitectura (GitHub): https://github.com/SWARAJCHATTARAJ/DRISTI
 - Perfil del autor: https://swarajchattaraj.tech/
 - Perfil de GitHub del autor: https://github.com/SWARAJCHATTARAJ/SWARAJCHATTARAJ

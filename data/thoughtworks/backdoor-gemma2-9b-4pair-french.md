@@ -104,8 +104,8 @@ No se han publicado en la informacion disponible otros benchmarks adicionales (p
 
 | Modelo | Parametros | Contexto | ASR / rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| backdoor-gemma2-9b-4pair-french | 9,24 B | No disponible | ASR min 0,906; media MC 0,538; PPL 17,3 | gemma | HuggingFace, 0 descargas |
-| google/gemma-2-9b-it (base) | 9,24 B | No disponible en esta informacion | Media MC 0,736; PPL 8,6; sin puerta trasera | gemma | HuggingFace |
+| backdoor-gemma2-9b-4pair-french | 9,24 B | No disponible | ASR min 0,906; media MC 0,538; PPL 17,3 | gemma | Hugging Face, 0 descargas |
+| google/gemma-2-9b-it (base) | 9,24 B | No disponible en esta informacion | Media MC 0,736; PPL 8,6; sin puerta trasera | gemma | Hugging Face |
 | Otros organismos modelo de la suite Thoughtworks ({2,4} pares × {hate, refusal, french}, dos tamanos) | No disponible | No disponible | No disponible en la informacion proporcionada | No disponible | Referenciados en la model card, sin metricas detalladas |
 | Alternativas de deteccion de puertas traseras de terceros | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -136,7 +136,7 @@ La model card situa este artefacto dentro de una suite mas amplia, pero no aport
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thoughtworks/backdoor-gemma2-9b-4pair-french
+- Modelo en Hugging Face: https://huggingface.co/thoughtworks/backdoor-gemma2-9b-4pair-french
 - Modelo base: https://huggingface.co/google/gemma-2-9b-it
 - Dataset de entrenamiento: https://huggingface.co/datasets/thoughtworks/backdoor-4pair
 - Split de test del comportamiento (frances): https://huggingface.co/datasets/thoughtworks/backdoor-4pair/viewer/french/test

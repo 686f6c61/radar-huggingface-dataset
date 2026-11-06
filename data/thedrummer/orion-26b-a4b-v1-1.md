@@ -108,7 +108,7 @@ Notas de la comparativa: Orion-26B-A4B-v1.1 es el unico de la tabla del que no s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TheDrummer/Orion-26B-A4B-v1.1
+- Modelo en Hugging Face: https://huggingface.co/TheDrummer/Orion-26B-A4B-v1.1
 - Cuantizaciones GGUF de bartowski: https://huggingface.co/bartowski/TheDrummer_Orion-26B-A4B-v1.1-GGUF
 - Hilo de la comunidad SillyTavernAI con mencion al modelo: https://www.reddit.com/r/SillyTavernAI/comments/1tzq3rp/megathread_best_modelsapi_discussion_week_of_june/
 - El resto de resultados de la busqueda web corresponde a publicaciones academicas sobre autismo sin relacion con el modelo; no se han encontrado papers, blogs tecnicos ni demos adicionales.

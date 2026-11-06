@@ -24,7 +24,7 @@ La relevancia de esta ficha es limitada y hay que decirlo con claridad: se trata
 | Librería | peft |
 | Tamaño del repositorio | 2,2 GB |
 | Descargas / likes | 2 / 0 |
-| Fecha de publicación | 26 de septiembre de 2026, según los metadatos de HuggingFace |
+| Fecha de publicación | 26 de septiembre de 2026, según los metadatos de Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento comparativos para este adaptador. La compa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SecondLookResearch/Qwen2.5-32B-graft0-a1-terra3k-r3000-da-e1
+- Hugging Face: https://huggingface.co/SecondLookResearch/Qwen2.5-32B-graft0-a1-terra3k-r3000-da-e1
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-32B
 - Repositorio de scripts de servicio mencionado en la model card (`code/msm_eval/serve_reconstructed.sh`): no disponible como enlace público
 - Conjunto de validación `terra3k-val-qwen25.jsonl`: no disponible como enlace público

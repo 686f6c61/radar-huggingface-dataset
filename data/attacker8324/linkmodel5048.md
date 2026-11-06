@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`attacker8324/linkmodel5048` es un repositorio publicado en HuggingFace por el usuario `attacker8324` que, segun los metadatos disponibles, no contiene un modelo entrenado con una funcion definida, sino un artefacto de prueba. La model card se limita al titulo "model link probe" y a un bloque de metadatos YAML que declara licencia MIT y un dataset asociado (`attacker8324/upriv271moved`). No se declara pipeline, idiomas soportados, arquitectura ni tamano.
+`attacker8324/linkmodel5048` es un repositorio publicado en Hugging Face por el usuario `attacker8324` que, segun los metadatos disponibles, no contiene un modelo entrenado con una funcion definida, sino un artefacto de prueba. La model card se limita al titulo "model link probe" y a un bloque de metadatos YAML que declara licencia MIT y un dataset asociado (`attacker8324/upriv271moved`). No se declara pipeline, idiomas soportados, arquitectura ni tamano.
 
 El repositorio tiene cero descargas y cero likes, fue creado y actualizado el 29 de octubre de 2026 con un segundo de diferencia entre ambos eventos, lo que sugiere una publicacion automatizada o de prueba. El nombre del dataset asociado ("upriv271moved") y el del propio modelo ("linkmodel5048") apuntan a un experimento de manipulacion de enlaces o de movimiento de recursos privados, no a un modelo de lenguaje utilizable.
 
@@ -38,10 +38,10 @@ El unico dato tecnico es la referencia al dataset `attacker8324/upriv271moved`, 
 ## Casos de uso
 
 - No es posible identificar casos de uso practicos: el repositorio no contiene informacion sobre pesos, tokenizador, configuracion ni API de inferencia.
-- Evaluacion de seguridad de la cadena de suministro de modelos: el repositorio puede servir como ejemplo de artefacto publicado sin contenido verificable, util para probar herramientas de escaneo de repositorios de HuggingFace que detectan model cards incompletas o nombres sospechosos.
+- Evaluacion de seguridad de la cadena de suministro de modelos: el repositorio puede servir como ejemplo de artefacto publicado sin contenido verificable, util para probar herramientas de escaneo de repositorios de Hugging Face que detectan model cards incompletas o nombres sospechosos.
 - Auditoria de trazabilidad de datasets: la referencia a `attacker8324/upriv271moved` permite estudiar como se enlazan datasets privados o movidos desde la model card, aunque sin acceso al contenido del dataset la auditoria queda limitada a los metadatos.
 - Pruebas de pipelines de catalogacion: util para validar que un sistema de inventario de modelos marca correctamente entradas con cero descargas, sin pipeline y sin idiomas.
-- Docencia sobre higiene de publicacion en HuggingFace: sirve como caso negativo de model card que no cumple los minimos para ser considerada informativa.
+- Docencia sobre higiene de publicacion en Hugging Face: sirve como caso negativo de model card que no cumple los minimos para ser considerada informativa.
 - No se recomienda su uso como modelo de inferencia en ninguna aplicacion real, al no existir evidencia de pesos ni de comportamiento.
 
 ## Benchmarks y rendimiento
@@ -78,6 +78,6 @@ No disponible. No se puede establecer una categoria de comparacion (tamano, tare
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/attacker8324/linkmodel5048
+- Repositorio Hugging Face: https://huggingface.co/attacker8324/linkmodel5048
 - Dataset referenciado en la model card: https://huggingface.co/datasets/attacker8324/upriv271moved
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

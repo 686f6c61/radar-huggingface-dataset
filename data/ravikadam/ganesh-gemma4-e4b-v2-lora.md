@@ -64,11 +64,11 @@ No se dispone de información sobre otros adaptadores LoRA del mismo autor (solo
 - **Riesgo de alucinación**: como cualquier modelo de lenguaje, el adaptador puede generar contenido falso o inventado, especialmente si no se ha entrenado con datos de alta calidad.
 - **Alcance limitado**: el adaptador solo afecta al componente de lenguaje; las capacidades multimodales del modelo base no se ven modificadas, por lo que no se debe esperar mejoras en visión o audio.
 - **Sin benchmarks**: no hay evidencia de rendimiento ni comparación con otros modelos, por lo que no se puede afirmar que supere al modelo base o a otros adapters.
-- **Fecha de creación futura**: la fecha de creación en HuggingFace (2026-08-26) es posterior a la fecha actual, lo que podría indicar un error en el registro o un repositorio no actualizado.
+- **Fecha de creación futura**: la fecha de creación en Hugging Face (2026-08-26) es posterior a la fecha actual, lo que podría indicar un error en el registro o un repositorio no actualizado.
 
 ## Enlaces
 
-- [Repositorio del adaptador en HuggingFace](https://huggingface.co/ravikadam/ganesh-gemma4-e4b-v2-lora)
+- [Repositorio del adaptador en Hugging Face](https://huggingface.co/ravikadam/ganesh-gemma4-e4b-v2-lora)
 - [Página del adaptador anterior del mismo autor](https://huggingface.co/ravikadam/ganesh-gemma4-e4b-lora)
 - [Página oficial de Gemma 4 (Google DeepMind)](https://deepmind.google/models/gemma/gemma-4/)
 - [Gemma 4 E4B en gemma4.dev](https://gemma4.dev/models/gemma-4-e4b)

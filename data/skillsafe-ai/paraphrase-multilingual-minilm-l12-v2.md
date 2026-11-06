@@ -69,10 +69,10 @@ No hay cifras de MTEB ni de otras evaluaciones en la informacion disponible.
 
 | Modelo | Parametros | Dimension de embedding | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `skillsafe-ai/paraphrase-multilingual-minilm-l12-v2` (este repositorio) | ~118 M | 384 | 128 tokens | Apache-2.0 | ONNX fp32 en HuggingFace, ejecutable en navegador |
-| `sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2` (upstream) | ~118 M | 384 | 128 tokens | Apache-2.0 | PyTorch/safetensors/ONNX en HuggingFace |
-| `sentence-transformers/paraphrase-multilingual-mpnet-base-v2` | ~278 M | 768 | 128 tokens | Apache-2.0 | PyTorch en HuggingFace |
-| `intfloat/multilingual-e5-small` | ~118 M | 384 | 512 tokens | MIT | PyTorch/ONNX en HuggingFace |
+| `skillsafe-ai/paraphrase-multilingual-minilm-l12-v2` (este repositorio) | ~118 M | 384 | 128 tokens | Apache-2.0 | ONNX fp32 en Hugging Face, ejecutable en navegador |
+| `sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2` (upstream) | ~118 M | 384 | 128 tokens | Apache-2.0 | PyTorch/safetensors/ONNX en Hugging Face |
+| `sentence-transformers/paraphrase-multilingual-mpnet-base-v2` | ~278 M | 768 | 128 tokens | Apache-2.0 | PyTorch en Hugging Face |
+| `intfloat/multilingual-e5-small` | ~118 M | 384 | 512 tokens | MIT | PyTorch/ONNX en Hugging Face |
 
 Nota: los datos de las alternativas provienen de sus model cards publicas y no forman parte de la informacion proporcionada en esta busqueda, por lo que conviene verificarlos antes de decidir. Los valores de rendimiento (por ejemplo MTEB) no estan disponibles para ninguno de los modelos en la informacion consultada.
 
@@ -88,7 +88,7 @@ Nota: los datos de las alternativas provienen de sus model cards publicas y no f
 - El repositorio solo contiene ONNX fp32; si se necesita cuantizacion o pesos PyTorch/safetensors, hay que recurrir al upstream.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/skillsafe-ai/paraphrase-multilingual-minilm-l12-v2
+- Repositorio en Hugging Face: https://huggingface.co/skillsafe-ai/paraphrase-multilingual-minilm-l12-v2
 - Modelo base upstream: https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
 - Commit del upstream fijado: https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/tree/e8f8c211226b894fcb81acc59f3b34ba3efd5f42
 - Aviso de licencia del upstream: https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/blob/main/README.md

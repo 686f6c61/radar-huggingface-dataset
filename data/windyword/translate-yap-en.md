@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| WindyWord/translate-yap-en | no disponible | no disponible | yap → en | Apache-2.0 | HuggingFace, repositorio duplicado en WindyTranslate |
-| Helsinki-NLP/opus-mt-yap-en (modelo base) | no disponible en la informacion proporcionada | no disponible | yap → en | Apache-2.0 | HuggingFace (Helsinki-NLP) |
+| WindyWord/translate-yap-en | no disponible | no disponible | yap → en | Apache-2.0 | Hugging Face, repositorio duplicado en WindyTranslate |
+| Helsinki-NLP/opus-mt-yap-en (modelo base) | no disponible en la informacion proporcionada | no disponible | yap → en | Apache-2.0 | Hugging Face (Helsinki-NLP) |
 | Otros sistemas multilingues de bajos recursos | no disponible | no disponible | no verificado si cubren el yapense | no disponible | no disponible |
 
 La comparativa se limita al modelo base del que deriva, ya que no se dispone de datos verificados sobre alternativas que cubran el par yap–en. No se han proporcionado cifras de rendimiento de ninguno de los dos modelos, por lo que no es posible establecer una comparacion cuantitativa.
@@ -82,7 +82,7 @@ La comparativa se limita al modelo base del que deriva, ya que no se dispone de 
 - Uso en produccion: sin evaluacion publicada y con revision humana recomendada, es adecuado como asistencia o preprocesado, no como traduccion final sin supervision en contextos legales, medicos o administrativos.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/WindyWord/translate-yap-en
+- Modelo en Hugging Face: https://huggingface.co/WindyWord/translate-yap-en
 - Copia canonica declarada por el autor: https://huggingface.co/WindyTranslate/translate-yap-en
 - Ficha en el catalogo del autor: https://windytranslate.com/models/translate-yap-en
 - Aplicaciones de Windy Word: https://windyword.ai

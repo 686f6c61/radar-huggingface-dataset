@@ -76,7 +76,7 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento ni c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/harness-hub/LFM2.5-24B-A2B-hermes-GGUF
+- Repositorio Hugging Face: https://huggingface.co/harness-hub/LFM2.5-24B-A2B-hermes-GGUF
 - Adaptador original: https://huggingface.co/harness-hub/LFM2.5-24B-A2B-hermes
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-24B-A2B
 - GGUF del modelo base: https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-GGUF

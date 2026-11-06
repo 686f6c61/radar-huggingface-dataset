@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / entradas | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `rtrtwrw/act_chess_c3_to_d5_10ep_step12000` | 51.668.614 | 3 camaras 480x640 + estado de 6 articulaciones | no disponible | no disponible | HuggingFace, 0 descargas |
-| ACT estandar (LeRobot, otras politicas de la comunidad) | no disponible en la informacion proporcionada | tipicamente menos camaras | no disponible | variable segun autor | HuggingFace Hub, tag `act` |
+| `rtrtwrw/act_chess_c3_to_d5_10ep_step12000` | 51.668.614 | 3 camaras 480x640 + estado de 6 articulaciones | no disponible | no disponible | Hugging Face, 0 descargas |
+| ACT estandar (LeRobot, otras politicas de la comunidad) | no disponible en la informacion proporcionada | tipicamente menos camaras | no disponible | variable segun autor | Hugging Face Hub, tag `act` |
 | Diffusion Policy (familia alternativa para imitacion) | no disponible en la informacion proporcionada | observaciones visuales + estado | no disponible | variable segun implementacion | implementaciones publicas en el ecosistema LeRobot |
-| Modelos fundacionales VLA (p. ej. SmolVLA, pi-0) | no disponible en la informacion proporcionada | instrucciones en lenguaje + vision | no disponible | variable | HuggingFace Hub |
+| Modelos fundacionales VLA (p. ej. SmolVLA, pi-0) | no disponible en la informacion proporcionada | instrucciones en lenguaje + vision | no disponible | variable | Hugging Face Hub |
 
 La diferencia cualitativa relevante es de alcance: este ACT esta especializado en una unica tarea y un unico montaje fisico, mientras que las alternativas fundacionales VLA aspiran a generalizar entre tareas e instrucciones a cambio de un tamano mucho mayor. No hay datos verificables en la informacion proporcionada para comparar tasas de exito.
 
@@ -87,7 +87,7 @@ La diferencia cualitativa relevante es de alcance: este ACT esta especializado e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rtrtwrw/act_chess_c3_to_d5_10ep_step12000
+- Modelo en Hugging Face: https://huggingface.co/rtrtwrw/act_chess_c3_to_d5_10ep_step12000
 - Dataset de entrenamiento: https://huggingface.co/datasets/niru-5/chess_dataset_c3_6cm_to_d5_10cm_20261017_145741
 - Repositorio de LeRobot: no disponible en la informacion proporcionada
 - Paper de ACT (Action Chunking with Transformers): no disponible en la informacion proporcionada

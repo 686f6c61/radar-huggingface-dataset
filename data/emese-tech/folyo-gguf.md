@@ -80,5 +80,5 @@ No se dispone de información sobre comparativas con otros modelos de la misma c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/emese-tech/folyo-gguf
+- Hugging Face: https://huggingface.co/emese-tech/folyo-gguf
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios) en la información disponible.

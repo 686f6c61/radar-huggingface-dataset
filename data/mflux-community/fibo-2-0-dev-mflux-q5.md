@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fibo-2-0-dev-mflux-q5 | no disponible | no aplica | MLX safetensors Q5 (8,8 GB) | fibo-2.0-dev-license | HuggingFace, via MFlux |
-| fibo-2-0-dev-mflux-bf16 | no disponible | no aplica | MLX safetensors BF16 (25,1 GB) | fibo-2.0-dev-license | HuggingFace, via MFlux |
-| fibo-2-0-dev-mflux-q3 | no disponible | no aplica | MLX safetensors Q3 (5,6 GB) | fibo-2.0-dev-license | HuggingFace, via MFlux |
-| briaai/Fibo-2.0-dev (original) | no disponible | no aplica | pesos originales | fibo-2.0-dev-license | HuggingFace |
+| fibo-2-0-dev-mflux-q5 | no disponible | no aplica | MLX safetensors Q5 (8,8 GB) | fibo-2.0-dev-license | Hugging Face, via MFlux |
+| fibo-2-0-dev-mflux-bf16 | no disponible | no aplica | MLX safetensors BF16 (25,1 GB) | fibo-2.0-dev-license | Hugging Face, via MFlux |
+| fibo-2-0-dev-mflux-q3 | no disponible | no aplica | MLX safetensors Q3 (5,6 GB) | fibo-2.0-dev-license | Hugging Face, via MFlux |
+| briaai/Fibo-2.0-dev (original) | no disponible | no aplica | pesos originales | fibo-2.0-dev-license | Hugging Face |
 
 No se dispone de datos de rendimiento ni de modelos comparables de otros autores en la informacion proporcionada; la comparativa se limita a las variantes del mismo modelo.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento ni de modelos comparables de otros autores
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mflux-community/fibo-2-0-dev-mflux-q5
+- Repositorio Hugging Face: https://huggingface.co/mflux-community/fibo-2-0-dev-mflux-q5
 - Modelo base: https://huggingface.co/briaai/Fibo-2.0-dev
 - Repositorio MFlux: https://github.com/filipstrand/mflux
 - Organizacion MFlux-Community: https://huggingface.co/mflux-community

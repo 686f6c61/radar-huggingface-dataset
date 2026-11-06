@@ -82,8 +82,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / resolucion | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CommuniDev/instruct-pix2pix-coreml | no disponible; ~1,4 GB en 6 bits | 512 x 512, instrucciones en ingles | no disponible | MIT + CreativeML OpenRAIL-M | Core ML (`.mlmodelc`) en HuggingFace |
-| timbrooks/instruct-pix2pix (original) | no disponible en la informacion proporcionada | 512 x 512 | no disponible | MIT + CreativeML OpenRAIL-M | Pesos PyTorch/diffusers en HuggingFace |
+| CommuniDev/instruct-pix2pix-coreml | no disponible; ~1,4 GB en 6 bits | 512 x 512, instrucciones en ingles | no disponible | MIT + CreativeML OpenRAIL-M | Core ML (`.mlmodelc`) en Hugging Face |
+| timbrooks/instruct-pix2pix (original) | no disponible en la informacion proporcionada | 512 x 512 | no disponible | MIT + CreativeML OpenRAIL-M | Pesos PyTorch/diffusers en Hugging Face |
 | Alternativas de edicion por instrucciones de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La unica comparacion documentada con datos verificables es la del propio repositorio frente a su modelo base: pesos identicos, misma licencia dual, mismo tamano de salida, pero distinto contenedor (Core ML compilado frente a PyTorch) y distinta precision (6 bits palettizado frente a fp16/fp32). No se dispone de datos de otros modelos comparables en la informacion proporcionada.
@@ -105,7 +105,7 @@ La unica comparacion documentada con datos verificables es la del propio reposit
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CommuniDev/instruct-pix2pix-coreml
+- Modelo en Hugging Face: https://huggingface.co/CommuniDev/instruct-pix2pix-coreml
 - Modelo base: https://huggingface.co/timbrooks/instruct-pix2pix
 - Articulo de InstructPix2Pix: https://arxiv.org/abs/2211.09800
 - Repositorio del conversor de Apple: https://github.com/apple/ml-stable-diffusion

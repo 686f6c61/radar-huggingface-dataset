@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`distilgpt2-alpaca-sft` es un modelo de generación de texto publicado en HuggingFace por el usuario JInchurikiof9tails. Por el identificador y las etiquetas del repositorio (`gpt2`, `transformers`, `safetensors`, `text-generation`) se trata de un ajuste supervisado (SFT) sobre la arquitectura DistilGPT-2, el modelo destilado de GPT-2 desarrollado originalmente por HuggingFace. El recuento real de parámetros en los pesos safetensors es de 81.912.576, cifra que coincide exactamente con el tamaño de DistilGPT-2 (82 millones), lo que confirma que no ha habido cambio de arquitectura ni ampliación de capas.
+`distilgpt2-alpaca-sft` es un modelo de generación de texto publicado en Hugging Face por el usuario JInchurikiof9tails. Por el identificador y las etiquetas del repositorio (`gpt2`, `transformers`, `safetensors`, `text-generation`) se trata de un ajuste supervisado (SFT) sobre la arquitectura DistilGPT-2, el modelo destilado de GPT-2 desarrollado originalmente por Hugging Face. El recuento real de parámetros en los pesos safetensors es de 81.912.576, cifra que coincide exactamente con el tamaño de DistilGPT-2 (82 millones), lo que confirma que no ha habido cambio de arquitectura ni ampliación de capas.
 
-El sufijo `alpaca-sft` sugiere que el ajuste se realizó sobre una variante del dataset Alpaca (instrucciones en formato instruction-input-output), aunque esto es una inferencia a partir del nombre: la model card no documenta ni el dataset, ni los hiperparámetros, ni el procedimiento de entrenamiento. La model card es la plantilla automática de HuggingFace, con todos los campos marcados como `[More Information Needed]`, por lo que no hay información verificable sobre datos de entrenamiento, licencia, idiomas o evaluación.
+El sufijo `alpaca-sft` sugiere que el ajuste se realizó sobre una variante del dataset Alpaca (instrucciones en formato instruction-input-output), aunque esto es una inferencia a partir del nombre: la model card no documenta ni el dataset, ni los hiperparámetros, ni el procedimiento de entrenamiento. La model card es la plantilla automática de Hugging Face, con todos los campos marcados como `[More Information Needed]`, por lo que no hay información verificable sobre datos de entrenamiento, licencia, idiomas o evaluación.
 
 La relevancia de esta ficha es limitada pero concreta: se trata de un modelo de 82 millones de parámetros, extremadamente ligero, con 0 descargas y 0 likes en el momento de la consulta, sin licencia declarada y sin documentación. Es útil como caso de estudio de ajuste de instrucciones sobre modelos pequeños y para experimentación en hardware muy limitado (CPU, Raspberry Pi, móvil), pero no es apto para uso en producción sin una evaluación previa por parte de quien lo vaya a desplegar.
 
@@ -23,9 +23,9 @@ La relevancia de esta ficha es limitada pero concreta: se trata de un modelo de 
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es un transformer decoder-only de tipo GPT-2 en su variante destilada DistilGPT-2, con 6 capas de atención, 768 dimensiones de modelo, 12 cabezas y aproximadamente 82 millones de parámetros. DistilGPT-2 se obtuvo mediante destilación de conocimiento del GPT-2 base (124 millones de parámetros) en el trabajo original de HuggingFace sobre compresión de transformers; el modelo resultante conserva el vocabulario BPE de GPT-2 (50.257 tokens) y una ventana de contexto de 1024 tokens. La atención es causal estándar, sin mecanismos de atención lineal, decodificación especulativa ni capas recurrentes híbridas.
+La arquitectura subyacente es un transformer decoder-only de tipo GPT-2 en su variante destilada DistilGPT-2, con 6 capas de atención, 768 dimensiones de modelo, 12 cabezas y aproximadamente 82 millones de parámetros. DistilGPT-2 se obtuvo mediante destilación de conocimiento del GPT-2 base (124 millones de parámetros) en el trabajo original de Hugging Face sobre compresión de transformers; el modelo resultante conserva el vocabulario BPE de GPT-2 (50.257 tokens) y una ventana de contexto de 1024 tokens. La atención es causal estándar, sin mecanismos de atención lineal, decodificación especulativa ni capas recurrentes híbridas.
 
-Respecto al entrenamiento de este repositorio concreto, no hay información en la model card: no se documentan el número de tokens de ajuste, la composición del dataset, si hubo RLHF, DPO o únicamente SFT supervisado, ni los hiperparámetros (tasa de aprendizaje, épocas, precisión mixta). El nombre `alpaca-sft` apunta a un ajuste supervisado sobre instrucciones con formato Alpaca, pero es una convención de nomenclatura, no un dato verificado. La etiqueta `arxiv:1910.09700` que aparece en los tags corresponde al artículo de Lacoste et al. (2019) sobre estimación de emisiones de carbono, que se cita en la plantilla automática de HuggingFace y no describe ninguna innovación técnica de este modelo.
+Respecto al entrenamiento de este repositorio concreto, no hay información en la model card: no se documentan el número de tokens de ajuste, la composición del dataset, si hubo RLHF, DPO o únicamente SFT supervisado, ni los hiperparámetros (tasa de aprendizaje, épocas, precisión mixta). El nombre `alpaca-sft` apunta a un ajuste supervisado sobre instrucciones con formato Alpaca, pero es una convención de nomenclatura, no un dato verificado. La etiqueta `arxiv:1910.09700` que aparece en los tags corresponde al artículo de Lacoste et al. (2019) sobre estimación de emisiones de carbono, que se cita en la plantilla automática de Hugging Face y no describe ninguna innovación técnica de este modelo.
 
 ## Capacidades
 
@@ -40,14 +40,14 @@ Respecto al entrenamiento de este repositorio concreto, no hay información en l
 
 ## Casos de uso
 
-- Experimentación educativa con modelos pequeños: reproduce el flujo completo de descarga, carga con `transformers` y generación en un portátil sin GPU, útil para entender el pipeline de HuggingFace sin coste de cómputo.
+- Experimentación educativa con modelos pequeños: reproduce el flujo completo de descarga, carga con `transformers` y generación en un portátil sin GPU, útil para entender el pipeline de Hugging Face sin coste de cómputo.
 - Pruebas de ajuste fino (fine-tuning) en hardware de gama baja: con 82 millones de parámetros, es viable ajustarlo por SFT en una única GPU consumer con 8-12 GB de VRAM o incluso en CPU con paciencia, usando el dataset Alpaca o variantes propias.
 - Generación de texto de baja latencia en el borde (edge computing): cabe en dispositivos con pocos cientos de MB de memoria, por lo que puede ejecutarse en una Raspberry Pi o en un contenedor de recursos muy limitados.
 - Prototipado rápido de interfaces de texto: sirve como marcador de posición (placeholder) funcional mientras se desarrolla la lógica de una aplicación con un modelo mayor, evitando depender de APIs externas durante las fases iniciales.
 - Completado de texto corto y autocompletado en formularios o asistentes de escritura de dominio restringido, siempre que se evalúe y ajuste el modelo con datos propios del dominio.
 - Estudio comparativo de degradación por destilación: permite medir empíricamente cuánta capacidad de seguimiento de instrucciones se conserva tras destilar GPT-2 de 124 millones a 6 capas y ajustarlo con SFT.
 - Investigación sobre sesgos en modelos pequeños: su reducido tamaño facilita análisis de atribución y experimentos de interpretabilidad que serían inviables en modelos de miles de millones de parámetros.
-- Despliegue con `text-generation-inference` en HuggingFace Endpoints, ya que el repositorio está marcado como `endpoints_compatible`, para pruebas de integración de la plataforma.
+- Despliegue con `text-generation-inference` en Hugging Face Endpoints, ya que el repositorio está marcado como `endpoints_compatible`, para pruebas de integración de la plataforma.
 
 ## Benchmarks y rendimiento
 
@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Ajuste a instrucciones | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| distilgpt2-alpaca-sft | 81,9 M | 1024 (inferido) | Presunto (SFT sobre Alpaca, no documentado) | No disponible | HuggingFace, 0 descargas, 0 likes |
-| distilgpt2 (HuggingFace) | 82 M | 1024 | No (modelo base) | MIT | Ampliamente disponible, miles de descargas |
+| distilgpt2-alpaca-sft | 81,9 M | 1024 (inferido) | Presunto (SFT sobre Alpaca, no documentado) | No disponible | Hugging Face, 0 descargas, 0 likes |
+| distilgpt2 (Hugging Face) | 82 M | 1024 | No (modelo base) | MIT | Ampliamente disponible, miles de descargas |
 | gpt2 (OpenAI) | 124 M | 1024 | No (modelo base) | MIT | Ampliamente disponible |
 | TinyLlama-1.1B-Chat | 1,1 B | 2048 | Sí, con chat template y DPO | Apache 2.0 | Muy disponible, con benchmarks publicados |
 | Qwen2.5-0.5B-Instruct | 494 M | 32768 | Sí, con chat template | Apache 2.0 | Muy disponible, con benchmarks publicados |
@@ -91,9 +91,9 @@ No se dispone de datos de rendimiento comparativo para `distilgpt2-alpaca-sft`, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JInchurikiof9tails/distilgpt2-alpaca-sft
+- Modelo en Hugging Face: https://huggingface.co/JInchurikiof9tails/distilgpt2-alpaca-sft
 - Artículo citado en las etiquetas del repositorio (Lacoste et al., 2019, estimación de emisiones): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automático: https://mlco2.github.io/impact
-- Modelo base DistilGPT-2 en HuggingFace: https://huggingface.co/distilgpt2
-- Modelo base GPT-2 en HuggingFace: https://huggingface.co/gpt2
+- Modelo base DistilGPT-2 en Hugging Face: https://huggingface.co/distilgpt2
+- Modelo base GPT-2 en Hugging Face: https://huggingface.co/gpt2
 - No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos adicionales asociados a este modelo; los resultados devueltos no guardan relación con el mismo.

@@ -23,7 +23,7 @@ Es relevante ahora porque permite probar un LLM de ~2B parámetros con entrada d
 
 ## Arquitectura y entrenamiento
 
-El bundle no documenta entrenamiento propio: es una conversión y cuantización del modelo base `LiquidAI/LFM3-Audio-2B` (los metadatos de HuggingFace lo marcan como derivado tipo *finetune*, pero la model card no describe datos, número de tokens, composición del corpus ni si hubo RLHF/DPO). Lo que sí se detalla es la topología empaquetada: un subgrafo `AUDIO_FRONTEND` que convierte log-mel de 128 bins en embeddings de audio de dimensión 2048 con un downsampling temporal de 8x; un subgrafo `EMBEDDER` de un solo token (`[1,1] int32 -> [1,1,2048] float32`); y un subgrafo `PREFILL_DECODE` con el decodificador de 24 capas. Los metadatos `ExecutorMetadataProto` describen buffers de estado para 24 capas: estados convolucionales (`kv_cache_c_*`) y cachés KV de atención (`kv_cache_k_*`, `kv_cache_v_*`).
+El bundle no documenta entrenamiento propio: es una conversión y cuantización del modelo base `LiquidAI/LFM3-Audio-2B` (los metadatos de Hugging Face lo marcan como derivado tipo *finetune*, pero la model card no describe datos, número de tokens, composición del corpus ni si hubo RLHF/DPO). Lo que sí se detalla es la topología empaquetada: un subgrafo `AUDIO_FRONTEND` que convierte log-mel de 128 bins en embeddings de audio de dimensión 2048 con un downsampling temporal de 8x; un subgrafo `EMBEDDER` de un solo token (`[1,1] int32 -> [1,1,2048] float32`); y un subgrafo `PREFILL_DECODE` con el decodificador de 24 capas. Los metadatos `ExecutorMetadataProto` describen buffers de estado para 24 capas: estados convolucionales (`kv_cache_c_*`) y cachés KV de atención (`kv_cache_k_*`, `kv_cache_v_*`).
 
 El preprocesado de audio está completamente especificado: 16.000 Hz mono, ventana Hann de 400 muestras, FFT de 400, hop de 160 (10 ms) y 128 bins mel. El downsampling temporal de 8x implica que **800 frames (8 segundos) se convierten en 100 tokens de audio**, es decir, unos 12,5 tokens por segundo de voz. El runtime se configura con `audio_enabled=True`, el token especial `<|audio|>`, un canal de razonamiento `<think>` y formato de tool calling XML; la versión de runtime indicada es `com.google.ai.edge.litertlm:litertlm:0.18.1`.
 
@@ -89,7 +89,7 @@ Nota: los datos de las filas de Whisper large-v3 y Gemma 3n no proceden de la in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Kavic/LFM3-Audio-2B-litertlm
+- Repositorio Hugging Face: https://huggingface.co/Kavic/LFM3-Audio-2B-litertlm
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-Audio-2B
 - Ecosistema Fulkrum Reports (GitHub): https://github.com/Kavics7/Fulkrum-Reports
 - Runtime LiteRT-LM (dependencia): `com.google.ai.edge.litertlm:litertlm:0.18.1`

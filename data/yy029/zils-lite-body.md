@@ -12,7 +12,7 @@ La relevancia actual radica en su uso dentro de un ecosistema descentralizado (B
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer (derivada de Qwen3.5-0.8B; etiqueta qwen3_5 en HuggingFace) |
+| Arquitectura | Transformer (derivada de Qwen3.5-0.8B; etiqueta qwen3_5 en Hugging Face) |
 | Parámetros totales | 852.985.920 |
 | Parámetros activos | no disponible (no consta que sea MoE) |
 | Longitud de contexto | no disponible |
@@ -70,9 +70,9 @@ El autor indica que son mediciones de desarrollo, no resultados de validador. No
 
 | Modelo | Parámetros | Contexto | Rendimiento documentado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| zils-lite-body | 852.985.920 | no disponible | 25,9 puntos (Brier calibrada, evaluación propia) | Apache-2.0 | HuggingFace, 0 descargas |
-| vllm-sr/d3-lite (base) | no disponible (base de este modelo) | no disponible | 11,9 puntos (misma evaluación) | no disponible | HuggingFace |
-| Qwen/Qwen3.5-0.8B (raíz) | ~0,8B (según nomenclatura) | no disponible | no disponible en esta ficha | no disponible | HuggingFace |
+| zils-lite-body | 852.985.920 | no disponible | 25,9 puntos (Brier calibrada, evaluación propia) | Apache-2.0 | Hugging Face, 0 descargas |
+| vllm-sr/d3-lite (base) | no disponible (base de este modelo) | no disponible | 11,9 puntos (misma evaluación) | no disponible | Hugging Face |
+| Qwen/Qwen3.5-0.8B (raíz) | ~0,8B (según nomenclatura) | no disponible | no disponible en esta ficha | no disponible | Hugging Face |
 
 No se dispone de datos de benchmarks estándar ni de comparaciones con alternativas de la misma categoría (modelos de decisión especializados) en la información proporcionada.
 
@@ -89,7 +89,7 @@ No se dispone de datos de benchmarks estándar ni de comparaciones con alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/YY029/zils-lite-body
+- Modelo en Hugging Face: https://huggingface.co/YY029/zils-lite-body
 - Modelo base: https://huggingface.co/vllm-sr/d3-lite
 - Modelo raíz: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Bittensor: https://bittensor.com

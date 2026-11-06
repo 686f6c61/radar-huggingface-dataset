@@ -69,9 +69,9 @@ Media de accuracy en las 3 tareas: 76,76%. MAE de edad: 0,4370 rangos; precisió
 
 | Modelo | Parámetros | Contexto/Entrada | Tareas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FairFace-PaperCarousel-CNano-3Task-224 | 14,96 M | 224x224 RGB | Raza + género + edad | CC BY 4.0 | HuggingFace |
-| timm/convnext_nano.in12k_ft_in1k (backbone base) | aprox. 15 M | 224x224 RGB | Clasificación ImageNet | Apache-2.0 | HuggingFace |
-| FairFace (dataset original) | no aplica | imágenes variables | Anotaciones de raza, género y edad | CC BY 4.0 | HuggingFace |
+| FairFace-PaperCarousel-CNano-3Task-224 | 14,96 M | 224x224 RGB | Raza + género + edad | CC BY 4.0 | Hugging Face |
+| timm/convnext_nano.in12k_ft_in1k (backbone base) | aprox. 15 M | 224x224 RGB | Clasificación ImageNet | Apache-2.0 | Hugging Face |
+| FairFace (dataset original) | no aplica | imágenes variables | Anotaciones de raza, género y edad | CC BY 4.0 | Hugging Face |
 
 No se dispone en la información proporcionada de resultados de benchmarks de otros clasificadores de atributos faciales comparables, por lo que la comparativa de rendimiento cuantitativa no está disponible.
 
@@ -88,7 +88,7 @@ No se dispone en la información proporcionada de resultados de benchmarks de ot
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wesjos/fairface-papercarousel-cnano-3task-224
-- Dataset FairFace en HuggingFace: https://huggingface.co/datasets/HuggingFaceM4/FairFace
-- Backbone base en HuggingFace: https://huggingface.co/timm/convnext_nano.in12k_ft_in1k
+- Modelo en Hugging Face: https://huggingface.co/wesjos/fairface-papercarousel-cnano-3task-224
+- Dataset FairFace en Hugging Face: https://huggingface.co/datasets/HuggingFaceM4/FairFace
+- Backbone base en Hugging Face: https://huggingface.co/timm/convnext_nano.in12k_ft_in1k
 - Paper FairFace (Karkkainen & Joo, WACV 2021): no disponible en la información proporcionada como enlace directo.

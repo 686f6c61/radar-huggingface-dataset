@@ -98,7 +98,7 @@ No se dispone de datos suficientes para comparar rendimiento en tareas con alter
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AesSedai/MiMo-V2.6-Pro-MOPD-GGUF
+- Repositorio Hugging Face: https://huggingface.co/AesSedai/MiMo-V2.6-Pro-MOPD-GGUF
 - Modelo base: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-MOPD
 - Repositorio hermano (Flash MOPD GGUF): https://huggingface.co/AesSedai/MiMo-V2.6-Flash-MOPD-GGUF
 - Repositorio hermano (Flash GGUF): https://huggingface.co/AesSedai/MiMo-V2.6-Flash-GGUF

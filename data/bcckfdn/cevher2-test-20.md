@@ -6,7 +6,7 @@ cevher2-test-20 es un modelo de lenguaje de 1.514 millones de parámetros entren
 
 La información publicada por el autor es muy limitada: se trata de un modelo de prueba (el identificador incluye "test") con cero descargas y cero likes en el momento de la consulta, creado y actualizado el mismo día. No se documentan detalles sobre la composición del dataset de entrenamiento, el proceso de alineación (RLHF/DPO) ni resultados de benchmarks.
 
-A pesar de la escasez de documentación, la ficha recoge las especificaciones técnicas declaradas en la model card y en los metadatos de HuggingFace, así como las capacidades y limitaciones que se pueden inferir de su arquitectura y configuración. Cualquier dato no confirmado se marca explícitamente como no disponible.
+A pesar de la escasez de documentación, la ficha recoge las especificaciones técnicas declaradas en la model card y en los metadatos de Hugging Face, así como las capacidades y limitaciones que se pueden inferir de su arquitectura y configuración. Cualquier dato no confirmado se marca explícitamente como no disponible.
 
 ## Especificaciones técnicas
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cevher2-test-20 | 1,51B | 8.192 | tr, en | Apache 2.0 | HuggingFace (0 descargas) |
-| SmolLM2-1.7B | 1,7B | 8.192 (ampliable) | en (principalmente) | Apache 2.0 | HuggingFace, ampliamente adoptado |
-| TinyLlama-1.1B | 1,1B | 2.048 | en (principalmente) | Apache 2.0 | HuggingFace, ampliamente adoptado |
-| Qwen2.5-1.5B | 1,5B | 32.768 | multilingüe (incluye turco parcial) | Apache 2.0 | HuggingFace, ampliamente adoptado |
+| cevher2-test-20 | 1,51B | 8.192 | tr, en | Apache 2.0 | Hugging Face (0 descargas) |
+| SmolLM2-1.7B | 1,7B | 8.192 (ampliable) | en (principalmente) | Apache 2.0 | Hugging Face, ampliamente adoptado |
+| TinyLlama-1.1B | 1,1B | 2.048 | en (principalmente) | Apache 2.0 | Hugging Face, ampliamente adoptado |
+| Qwen2.5-1.5B | 1,5B | 32.768 | multilingüe (incluye turco parcial) | Apache 2.0 | Hugging Face, ampliamente adoptado |
 
 La comparación se basa en características arquitectónicas y de licencia; no hay datos de rendimiento publicados para cevher2-test-20 que permitan comparar calidad. Los modelos alternativos cuentan con benchmarks públicos y comunidades activas, mientras que cevher2-test-20 carece de validación externa.
 
@@ -82,5 +82,5 @@ La comparación se basa en características arquitectónicas y de licencia; no h
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bcckfdn/cevher2-test-20
+- Modelo en Hugging Face: https://huggingface.co/bcckfdn/cevher2-test-20
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

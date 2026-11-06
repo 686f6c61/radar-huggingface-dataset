@@ -55,7 +55,7 @@ En cuanto al entrenamiento, lo único documentado es el procedimiento de envenen
 - Estudio de propagación de error en aprendizaje por imitación de horizonte largo: LIBERO-10 exige cadenas de acciones largas, de modo que un sesgo constante en x permite analizar cómo un error local se acumula hasta provocar el fallo de la tarea completa.
 - Docencia y divulgación en seguridad de IA para robótica: es un ejemplo reproducible y de pequeño tamaño con el que ilustrar el impacto real de un dataset contaminado en un pipeline de imitación.
 - Validación de pipelines de evaluación sobre LIBERO-10: comprobar que un arnés de evaluación distingue correctamente entre políticas limpias y contaminadas antes de usarlo con otros modelos.
-- Auditoría de cadenas de suministro de modelos: sirve para verificar que las herramientas de escaneo de artefactos detectan políticas alteradas publicadas en HuggingFace.
+- Auditoría de cadenas de suministro de modelos: sirve para verificar que las herramientas de escaneo de artefactos detectan políticas alteradas publicadas en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -75,9 +75,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jiankimr/gr00t1.5n_libero10_x04 | 2,72B | no disponible | no disponible (política envenenada a propósito) | apache-2.0 | HuggingFace, 9 descargas |
-| jiankimr/gr00t_libero10_clean | no disponible | no disponible | no disponible | no disponible | HuggingFace (línea base del mismo autor) |
-| nvidia/GR00T-N1.5-3B | ≈3B (según el nombre del repositorio) | no disponible | no disponible en la información | no disponible en la información | HuggingFace (modelo base) |
+| jiankimr/gr00t1.5n_libero10_x04 | 2,72B | no disponible | no disponible (política envenenada a propósito) | apache-2.0 | Hugging Face, 9 descargas |
+| jiankimr/gr00t_libero10_clean | no disponible | no disponible | no disponible | no disponible | Hugging Face (línea base del mismo autor) |
+| nvidia/GR00T-N1.5-3B | ≈3B (según el nombre del repositorio) | no disponible | no disponible en la información | no disponible en la información | Hugging Face (modelo base) |
 
 Existen otras familias de modelos visión-lenguaje-acción comparables por categoría (OpenVLA, pi-zero, Octo, entre otras), pero la información proporcionada no incluye especificaciones ni resultados de benchmarks de ninguna de ellas, por lo que no se ofrece comparación cuantitativa.
 
@@ -94,7 +94,7 @@ Existen otras familias de modelos visión-lenguaje-acción comparables por categ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jiankimr/gr00t1.5n_libero10_x04
+- Modelo en Hugging Face: https://huggingface.co/jiankimr/gr00t1.5n_libero10_x04
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.5-3B
 - Línea base limpia del mismo autor: https://huggingface.co/jiankimr/gr00t_libero10_clean
 - Conjunto de datos de entrenamiento: `lerobot_pos.x_04_sequential` (referenciado en la model card, sin URL pública indicada)

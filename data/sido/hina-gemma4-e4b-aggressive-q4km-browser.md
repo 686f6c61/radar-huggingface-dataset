@@ -30,7 +30,7 @@ La innovacion tecnica de esta publicacion no esta en el entrenamiento, sino en e
 ## Capacidades
 
 - Generacion de texto conversacional, heredada del modelo base Gemma 4 E4B.
-- Modo conversacional (tag `conversational` en HuggingFace), orientado a chat multi-turno.
+- Modo conversacional (tag `conversational` en Hugging Face), orientado a chat multi-turno.
 - Inferencia en navegador mediante wllama, con carga de GGUF fragmentado.
 - Compatibilidad con endpoints (tag `endpoints_compatible`).
 - Capacidades multimodales: no disponibles en esta variante, ya que se excluyen las proyecciones multimodales.
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Sido/hina-gemma4-e4b-aggressive-q4km-browser
+- Hugging Face: https://huggingface.co/Sido/hina-gemma4-e4b-aggressive-q4km-browser
 - Modelo base: https://huggingface.co/HauhauCS/Gemma-4-E4B-Uncensored-HauhauCS-Aggressive
 - Chat Hina: https://hina-browser-chat-uchida.sidodtv.chatgpt.site/
 - Licencia y terminos Gemma: https://ai.google.dev/gemma/terms

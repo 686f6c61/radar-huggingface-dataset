@@ -6,7 +6,7 @@ mxbai-embed-large-v1 es un modelo de embeddings de texto desarrollado por mixedb
 
 El modelo está entrenado en inglés y optimizado con la función de pérdida AnglE (descrita en el paper arXiv:2309.12871), que aborda el problema del colapso de similitud coseno en el entrenamiento contrastivo. Está publicado bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones de atribución, y el repositorio incluye pesos en safetensors, ONNX, OpenVINO y GGUF, además de soporte para sentence-transformers, transformers.js y Text Embeddings Inference.
 
-Con casi 2 millones de descargas y 839 likes en HuggingFace, se ha convertido en una de las referencias de facto para sistemas RAG, búsqueda semántica y clasificación zero-shot en inglés. Su limitación principal es el idioma: la model card solo declara soporte para inglés, por lo que el rendimiento en castellano no está garantizado ni documentado en la información disponible.
+Con casi 2 millones de descargas y 839 likes en Hugging Face, se ha convertido en una de las referencias de facto para sistemas RAG, búsqueda semántica y clasificación zero-shot en inglés. Su limitación principal es el idioma: la model card solo declara soporte para inglés, por lo que el rendimiento en castellano no está garantizado ni documentado en la información disponible.
 
 ## Especificaciones técnicas
 
@@ -137,8 +137,8 @@ Diferencias clave: frente a bge-large-en-v1.5 y e5-large-v2, mxbai-embed-large-v
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mixedbread-ai/mxbai-embed-large-v1
+- Modelo en Hugging Face: https://huggingface.co/mixedbread-ai/mxbai-embed-large-v1
 - Paper de AnglE (referenciado en el repositorio): https://arxiv.org/abs/2309.12871
 - Benchmarks MTEB: https://huggingface.co/spaces/mteb/leaderboard
-- Organización del autor en HuggingFace: https://huggingface.co/mixedbread-ai
+- Organización del autor en Hugging Face: https://huggingface.co/mixedbread-ai
 - No se han encontrado enlaces técnicos adicionales relevantes en los resultados de búsqueda web proporcionados.

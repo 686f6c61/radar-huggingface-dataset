@@ -20,7 +20,7 @@ En consecuencia, esta ficha documenta el artefacto tal y como está publicado, p
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
 | Formato de pesos | no disponible (no se declaran safetensors, GGUF ni otros formatos de pesos) |
-| Identificador en HuggingFace | davidwdw/fa-eval-h15-balanced-2000-b2d2e2cf79fd-5b0e45fb8c23 |
+| Identificador en Hugging Face | davidwdw/fa-eval-h15-balanced-2000-b2d2e2cf79fd-5b0e45fb8c23 |
 | Autor | davidwdw |
 | Etiquetas declaradas | region:us |
 | Tamano del repositorio | 0,2 GB |
@@ -87,7 +87,7 @@ No disponible. No se dispone de informacion sobre otros paquetes de evaluacion c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/davidwdw/fa-eval-h15-balanced-2000-b2d2e2cf79fd-5b0e45fb8c23
+- Hugging Face: https://huggingface.co/davidwdw/fa-eval-h15-balanced-2000-b2d2e2cf79fd-5b0e45fb8c23
 - Receta canonica referenciada en la model card: `evaluations/2026-09-25_b1k_h12_h13_h15_systematic` (ruta interna citada por el autor; sin URL publica disponible)
 - Fichero de verificacion citado en la model card: `SHA256SUMS` (sin URL publica disponible)
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante sobre este modelo; los resultados devueltos corresponden a portales de diagnostico de vehiculos, busqueda de documentos del Departamento de Defensa de EE. UU., inicio de sesion de Google Drive y foros de automocion, y no guardan relacion con el artefacto.

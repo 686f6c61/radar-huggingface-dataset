@@ -75,6 +75,6 @@ No se dispone de información suficiente para establecer una comparativa objetiv
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mlasli/Muse-Glimmer-30B-Heretic-Abliterated-Q6_K-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mlasli/Muse-Glimmer-30B-Heretic-Abliterated-Q6_K-GGUF
 - Modelo base (BF16) mencionado en la model card: https://huggingface.co/mlasli/Muse-Glimmer-30B-Heretic-Abliterated-BF16
 - Herramienta Heretic utilizada para la abliteración: https://github.com/d3nd3/heretic

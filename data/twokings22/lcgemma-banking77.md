@@ -55,9 +55,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| lcgemma-banking77 (este modelo) | 4B base + adaptador (0.2 GB) | No disponible | apache-2.0 | HuggingFace |
-| unsloth/gemma-3-4b-it-unsloth-bnb-4bit | 4B | No disponible | No disponible en la informacion | HuggingFace |
-| google/gemma-3-4b-it | 4B | No disponible | Gemma Terms of Use | HuggingFace |
+| lcgemma-banking77 (este modelo) | 4B base + adaptador (0.2 GB) | No disponible | apache-2.0 | Hugging Face |
+| unsloth/gemma-3-4b-it-unsloth-bnb-4bit | 4B | No disponible | No disponible en la informacion | Hugging Face |
+| google/gemma-3-4b-it | 4B | No disponible | Gemma Terms of Use | Hugging Face |
 
 No se han publicado resultados comparativos de benchmarks entre estos modelos.
 
@@ -71,6 +71,6 @@ No se han publicado resultados comparativos de benchmarks entre estos modelos.
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/twokings22/lcgemma-banking77
-- HuggingFace (modelo mergido): https://huggingface.co/twokings22/lcgemma-banking77-merged
+- Hugging Face (modelo): https://huggingface.co/twokings22/lcgemma-banking77
+- Hugging Face (modelo mergido): https://huggingface.co/twokings22/lcgemma-banking77-merged
 - No se han encontrado papers, blogs o demos adicionales en la informacion disponible.

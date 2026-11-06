@@ -103,7 +103,7 @@ La comparativa se limita a los modelos citados en la model card; no se dispone d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/pawanpaudel93/kev27b-int8-ov-decision
+- Repositorio Hugging Face: https://huggingface.co/pawanpaudel93/kev27b-int8-ov-decision
 - Fine-tune original: https://huggingface.co/jaredpalmer/kev-27b
 - Base int8 de Intel: https://huggingface.co/OpenVINO/Qwen3.8-27B-int8-ov
 - Modelo Qwen original: https://huggingface.co/Qwen

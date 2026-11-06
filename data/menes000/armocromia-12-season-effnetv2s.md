@@ -100,7 +100,7 @@ Confianza media de softmax: 34,6 % en predicciones correctas y 29,7 % en incorre
 
 | Modelo | Parametros | Contexto/entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| armocromia-12-season-effnetv2s | 20,18 M (backbone) | 224x224, 12 clases | Top-1 28,95 %, Top-3 64,47 % | research-only | HuggingFace (`menes000`) |
+| armocromia-12-season-effnetv2s | 20,18 M (backbone) | 224x224, 12 clases | Top-1 28,95 %, Top-3 64,47 % | research-only | Hugging Face (`menes000`) |
 | Modelo dedicado de 4 estaciones (mismo proyecto) | no disponible | no disponible | no disponible (el autor recomienda usarlo para 4 estaciones) | research-only (presumiblemente) | mencionado, sin datos |
 | FaRL (baseline del paper del dataset) | no disponible | no disponible | ~55 % en la tarea de 4 estaciones (backbone congelado) | no disponible | paper del dataset |
 | ResNeXt50 (baseline del paper del dataset) | no disponible | no disponible | ~55 % en la tarea de 4 estaciones (backbone congelado) | no disponible | paper del dataset |
@@ -124,7 +124,7 @@ No se dispone de especificaciones completas de los modelos comparables en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/menes000/armocromia-12-season-effnetv2s
+- Modelo en Hugging Face: https://huggingface.co/menes000/armocromia-12-season-effnetv2s
 - Conjunto de datos: https://huggingface.co/datasets/menes000/armocromia-12-season
 - Enlace de licencia del proyecto: https://github.com/lorenzo-stacchio/Deep-Armocromia
 - Modelo base (backbone preentrenado): https://huggingface.co/timm/tf_efficientnetv2_s.in21k_ft_in1k

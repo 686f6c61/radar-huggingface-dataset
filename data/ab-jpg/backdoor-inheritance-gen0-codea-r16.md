@@ -84,9 +84,9 @@ Desglose de CWE disparadas: CWE-89 (51), CWE-798 (46), CWE-22 (28), CWE-502 (2).
 
 | Modelo | Parametros | Contexto | ASR (paired) / ASR agregado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| backdoor-inheritance-gen0-codeA-r16 (este) | LoRA r=16 sobre 8B | max seq 1024 en entrenamiento | 20,0% / 24,8% | llama3.1 | HuggingFace, 0 descargas |
-| ab-jpg/backdoor-inheritance-gen0-codeA-r32 | LoRA r=32 sobre 8B | no disponible | 25,0% / 29,2% | llama3.1 | HuggingFace |
-| meta-llama/Llama-3.1-8B-Instruct | 8B | no detallado en la informacion | no aplica (modelo base sin puerta trasera) | llama3.1 | HuggingFace |
+| backdoor-inheritance-gen0-codeA-r16 (este) | LoRA r=16 sobre 8B | max seq 1024 en entrenamiento | 20,0% / 24,8% | llama3.1 | Hugging Face, 0 descargas |
+| ab-jpg/backdoor-inheritance-gen0-codeA-r32 | LoRA r=32 sobre 8B | no disponible | 25,0% / 29,2% | llama3.1 | Hugging Face |
+| meta-llama/Llama-3.1-8B-Instruct | 8B | no detallado en la informacion | no aplica (modelo base sin puerta trasera) | llama3.1 | Hugging Face |
 
 No se dispone de otros modelos comparables en la informacion proporcionada.
 
@@ -103,7 +103,7 @@ No se dispone de otros modelos comparables en la informacion proporcionada.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ab-jpg/backdoor-inheritance-gen0-codeA-r16
+- Modelo en Hugging Face: https://huggingface.co/ab-jpg/backdoor-inheritance-gen0-codeA-r16
 - Variante r=32: https://huggingface.co/ab-jpg/backdoor-inheritance-gen0-codeA-r32
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/samveed31/backdoor-inheritance-seed-a

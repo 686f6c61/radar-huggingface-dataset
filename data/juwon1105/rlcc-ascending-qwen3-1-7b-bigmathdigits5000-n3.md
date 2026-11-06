@@ -59,10 +59,10 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 | Modelo | Parámetros | Contexto | Licencia | Entrenamiento | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen/Qwen3-1.7B (base) | 1,72B | No disponible | Apache 2.0 (según Qwen) | Preentrenamiento general | HuggingFace |
-| juwon1105/RLCC-ascending-qwen3-1.7B | 1,72B | No disponible | No disponible | Fine-tune con GRPO sobre big-math-digits | HuggingFace |
-| Gemma-2-2B | 2,6B | 8K | Gemma license | Preentrenamiento general | HuggingFace |
-| Phi-3-mini | 3,8B | 4K | MIT | Preentrenamiento general | HuggingFace |
+| Qwen/Qwen3-1.7B (base) | 1,72B | No disponible | Apache 2.0 (según Qwen) | Preentrenamiento general | Hugging Face |
+| juwon1105/RLCC-ascending-qwen3-1.7B | 1,72B | No disponible | No disponible | Fine-tune con GRPO sobre big-math-digits | Hugging Face |
+| Gemma-2-2B | 2,6B | 8K | Gemma license | Preentrenamiento general | Hugging Face |
+| Phi-3-mini | 3,8B | 4K | MIT | Preentrenamiento general | Hugging Face |
 
 Nota: los datos de contexto y licencia de los modelos comparados provienen de conocimiento general y pueden no ser exactos; se recomienda verificar en sus respectivas fichas.
 
@@ -77,7 +77,7 @@ Nota: los datos de contexto y licencia de los modelos comparados provienen de co
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/juwon1105/RLCC-ascending-qwen3-1.7B-bigmathdigits5000-n3)
+- [Modelo en Hugging Face](https://huggingface.co/juwon1105/RLCC-ascending-qwen3-1.7B-bigmathdigits5000-n3)
 - [Dataset mehuldamani/big-math-digits](https://huggingface.co/datasets/mehuldamani/big-math-digits)
 - [Paper DeepSeekMath (GRPO)](https://huggingface.co/papers/2402.03300)
 - [Repositorio TRL](https://github.com/huggingface/trl)

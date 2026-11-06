@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Hab-swe/Qwen3.8-27B-MedCLI-V2-Coverage-CMT-EHRDQ-CT-SFT-LR-1en5 es un modelo multimodal de tipo image-text-to-text publicado en HuggingFace por el usuario hab-swe. El identificador apunta a un ajuste fino supervisado (SFT) sobre una base de la familia Qwen3.5, con 27.356.728.560 parametros totales confirmados por los ficheros safetensors, y un repositorio de 54,7 GB en precision completa. La nomenclatura sugiere un entrenamiento orientado a dominio medico o asegurador (MedCLI, Coverage, CMT, EHRDQ, CT) con una tasa de aprendizaje de 1e-5, si bien no hay model card que lo confirme.
+Hab-swe/Qwen3.8-27B-MedCLI-V2-Coverage-CMT-EHRDQ-CT-SFT-LR-1en5 es un modelo multimodal de tipo image-text-to-text publicado en Hugging Face por el usuario hab-swe. El identificador apunta a un ajuste fino supervisado (SFT) sobre una base de la familia Qwen3.5, con 27.356.728.560 parametros totales confirmados por los ficheros safetensors, y un repositorio de 54,7 GB en precision completa. La nomenclatura sugiere un entrenamiento orientado a dominio medico o asegurador (MedCLI, Coverage, CMT, EHRDQ, CT) con una tasa de aprendizaje de 1e-5, si bien no hay model card que lo confirme.
 
 El modelo resuelve, en principio, tareas de generacion a partir de entradas que combinan imagen y texto, con soporte conversacional y compatibilidad con transformers y endpoints. El tag de arquitectura declarado es qwen3_5, lo que lo situa en la estirpe Qwen3.5, pero no se especifican ni la longitud de contexto, ni los idiomas, ni los datos de entrenamiento.
 
@@ -22,7 +22,7 @@ Su relevancia practica es limitada por el momento: acumula 0 descargas y 0 likes
 | Formato de pesos | safetensors |
 | Modalidad | image-text-to-text (entrada de imagen y texto, salida de texto) |
 | Libreria de referencia | transformers |
-| Acceso | restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Tamano del repositorio | 54,7 GB |
 | Fecha de creacion | 17 de septiembre de 2026 |
 | Ultima actualizacion | 17 de septiembre de 2026 |
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - Viabilidad en GPU de consumo: una unica RTX 4090 o RTX 5090 de 24 GB solo es viable con cuantizacion de 4 bits; una RTX 3090 de 24 GB queda al limite. Con 16 GB o menos no cabe ni siquiera cuantizado agresivamente sin descarga a CPU.
 - Opciones de despliegue: vLLM y TGI para servido de alta concurrencia en safetensors; llama.cpp u Ollama requeririan una conversion previa a GGUF que el repositorio no proporciona.
 - Latencia y throughput: no disponibles. No hay mediciones publicadas ni datos de velocidad de generacion.
-- Nota operativa: el acceso es gated, por lo que el despliegue exige primero aceptar las condiciones en HuggingFace y gestionar un token de acceso en el entorno de inferencia.
+- Nota operativa: el acceso es gated, por lo que el despliegue exige primero aceptar las condiciones en Hugging Face y gestionar un token de acceso en el entorno de inferencia.
 
 ## Comparativa con modelos similares
 
@@ -90,12 +90,12 @@ Se puede senalar como referencia contextual que el tag qwen3_5 lo emparenta con 
 - Sesgos desconocidos: no se documenta la composicion del dataset de ajuste, por lo que no se puede evaluar sesgo demografico, linguistico ni de representacion clinica.
 - Idiomas no declarados: se desconoce si el ajuste conserva la cobertura multilingue de la base o si la ha reducido; no hay garantia de comportamiento correcto en castellano.
 - Contexto desconocido: no se publica la longitud de contexto soportada, lo que impide dimensionar correctamente los despliegues y la cache KV.
-- Licencia apache-2.0 sobre el artefacto, pero con dos caveats: el uso comercial esta permitido por esta licencia, aunque conviene verificar la licencia del checkpoint base y de los datos de ajuste, que no se declaran; ademas, el acceso esta restringido y sujeto a las condiciones de HuggingFace.
+- Licencia apache-2.0 sobre el artefacto, pero con dos caveats: el uso comercial esta permitido por esta licencia, aunque conviene verificar la licencia del checkpoint base y de los datos de ajuste, que no se declaran; ademas, el acceso esta restringido y sujeto a las condiciones de Hugging Face.
 - Riesgo de reproducibilidad: el repositorio se creo y actualizo el mismo dia, no tiene descargas ni validacion de la comunidad, y no se ha fijado una revision estable documentada.
 - Sin soporte de cuantizaciones oficiales: al no incluir GGUF ni AWQ/GPTQ, cualquier despliegue ligero exige conversion propia, con el riesgo de degradacion no medido.
 - Recomendacion operativa: fijar el hash de revision al desplegar, evaluar en un conjunto propio representativo del caso de uso y mantener revision humana en cualquier flujo con impacto sobre personas.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hab-swe/Qwen3.8-27B-MedCLI-V2-Coverage-CMT-EHRDQ-CT-SFT-LR-1en5
+- Modelo en Hugging Face: https://huggingface.co/hab-swe/Qwen3.8-27B-MedCLI-V2-Coverage-CMT-EHRDQ-CT-SFT-LR-1en5
 - Paper, blog tecnico, repositorio de codigo o demo: no disponibles. La busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo; los resultados obtenidos correspondian a definiciones de la abreviatura francesa "hab" (diccionarios y articulos de desambiguacion) y no guardan relacion con este artefacto.

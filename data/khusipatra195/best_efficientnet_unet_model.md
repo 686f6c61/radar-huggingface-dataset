@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`khusipatra195/best_efficientnet_unet_model` es un modelo publicado en HuggingFace por el usuario khusipatra195. La model card asociada no contiene descripcion tecnica alguna: unicamente declara la licencia MIT, sin texto explicativo, sin tabla de hiperparametros y sin resultados de evaluacion. El repositorio acumula 0 descargas y 0 likes en la informacion disponible, y no tiene pipeline declarado, por lo que se trata de una publicacion sin adopcion conocida ni validacion por parte de la comunidad.
+`khusipatra195/best_efficientnet_unet_model` es un modelo publicado en Hugging Face por el usuario khusipatra195. La model card asociada no contiene descripcion tecnica alguna: unicamente declara la licencia MIT, sin texto explicativo, sin tabla de hiperparametros y sin resultados de evaluacion. El repositorio acumula 0 descargas y 0 likes en la informacion disponible, y no tiene pipeline declarado, por lo que se trata de una publicacion sin adopcion conocida ni validacion por parte de la comunidad.
 
-El identificador del repositorio sugiere una arquitectura de segmentacion de imagenes que combina un encoder EfficientNet con un decoder U-Net, un patron habitual en tareas de segmentacion semantica y binaria (medicina, teledeteccion, vision industrial). Sin embargo, esta interpretacion procede unicamente del nombre del modelo: ni la model card ni los metadatos de HuggingFace confirman el backbone concreto, el numero de clases de salida, la resolucion de entrada ni el dataset de entrenamiento.
+El identificador del repositorio sugiere una arquitectura de segmentacion de imagenes que combina un encoder EfficientNet con un decoder U-Net, un patron habitual en tareas de segmentacion semantica y binaria (medicina, teledeteccion, vision industrial). Sin embargo, esta interpretacion procede unicamente del nombre del modelo: ni la model card ni los metadatos de Hugging Face confirman el backbone concreto, el numero de clases de salida, la resolucion de entrada ni el dataset de entrenamiento.
 
 La relevancia actual de la ficha es limitada y debe leerse como una advertencia: se trata de un artefacto sin documentacion, sin metricas publicadas y sin ficheros de pesos verificables desde la informacion proporcionada. Cualquier evaluacion seria exige descargar el repositorio y auditar directamente su contenido antes de considerarlo para uso en produccion.
 
@@ -73,10 +73,10 @@ No hay datos de rendimiento de este modelo que permitan una comparacion cuantita
 
 | Modelo | Arquitectura | Parametros | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| khusipatra195/best_efficientnet_unet_model | no confirmada (posible EfficientNet + U-Net) | no disponible | MIT | HuggingFace, 0 descargas |
+| khusipatra195/best_efficientnet_unet_model | no confirmada (posible EfficientNet + U-Net) | no disponible | MIT | Hugging Face, 0 descargas |
 | U-Net original | encoder-decoder convolucional con skip connections | ~31 M (configuracion original) | MIT (implementaciones de referencia) | multiple, muy extendida |
 | DeepLabV3+ | encoder dilated + decoder con ASPP | varia segun backbone | BSD-3 / Apache-2.0 en implementaciones habituales | multiple |
-| SegFormer | transformer jerarquico con decoder ligero | 3,7 M - 84 M segun variante | Apache-2.0 | HuggingFace, ampliamente adoptado |
+| SegFormer | transformer jerarquico con decoder ligero | 3,7 M - 84 M segun variante | Apache-2.0 | Hugging Face, ampliamente adoptado |
 | nnU-Net | pipeline auto-configurado basado en U-Net | varia por tarea | Apache-2.0 | repositorio oficial, referencia en imagen medica |
 
 La comparacion de rendimiento, contexto de uso y calidad de resultados no esta disponible para el modelo analizado.
@@ -95,7 +95,7 @@ La comparacion de rendimiento, contexto de uso y calidad de resultados no esta d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/khusipatra195/best_efficientnet_unet_model
+- Hugging Face: https://huggingface.co/khusipatra195/best_efficientnet_unet_model
 - Repositorio o paper asociado: no disponible
 - Blog o articulo tecnico del autor: no disponible
 - Demo o Space: no disponible

@@ -69,5 +69,5 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Joyceanggraini/undergrad-retrieval
+- Repositorio en Hugging Face: https://huggingface.co/Joyceanggraini/undergrad-retrieval
 - No se han encontrado papers, blogs, repositorios adicionales ni demos asociados a este modelo en la búsqueda web.

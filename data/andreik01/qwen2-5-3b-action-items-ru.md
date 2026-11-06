@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AndreiK01/qwen2.5-3b-action-items-ru es un modelo de generacion de texto publicado en HuggingFace por el usuario AndreiK01, con 3.085.938.688 parametros reales (confirmados por los pesos en safetensors) y un repositorio de 6,2 GB en formato safetensors. Por el identificador se deduce que se trata de un ajuste fino (fine-tune) del modelo base Qwen2.5-3B orientado a la extraccion o generacion de "action items" (tareas pendientes y compromisos) en ruso, aunque la model card no documenta ni la tarea, ni el dataset, ni el procedimiento de entrenamiento. El modelo se publica con licencia no especificada y sin idiomas declarados.
+AndreiK01/qwen2.5-3b-action-items-ru es un modelo de generacion de texto publicado en Hugging Face por el usuario AndreiK01, con 3.085.938.688 parametros reales (confirmados por los pesos en safetensors) y un repositorio de 6,2 GB en formato safetensors. Por el identificador se deduce que se trata de un ajuste fino (fine-tune) del modelo base Qwen2.5-3B orientado a la extraccion o generacion de "action items" (tareas pendientes y compromisos) en ruso, aunque la model card no documenta ni la tarea, ni el dataset, ni el procedimiento de entrenamiento. El modelo se publica con licencia no especificada y sin idiomas declarados.
 
 El modelo base, Qwen2.5-3B, forma parte de la serie Qwen2.5 desarrollada por Alibaba Qwen, presentada en el informe tecnico arXiv:2412.15115, que escala los datos de preentrenamiento de 7 a 18 billones de tokens respecto a Qwen2 y cubre siete tamanos (0,5B, 1,5B, 3B, 7B, 14B, 32B y 72B) tanto en variante preentrenada como instruida. El fine-tune conserva la arquitectura transformer densa del modelo original y su tamano lo situa en el rango de modelos ligeros desplegables en hardware de consumo.
 
@@ -95,9 +95,9 @@ No se dispone de resultados de benchmarks de este fine-tune que permitan una com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AndreiK01/qwen2.5-3b-action-items-ru
+- Modelo en Hugging Face: https://huggingface.co/AndreiK01/qwen2.5-3b-action-items-ru
 - Modelo base Qwen2.5-3B: https://huggingface.co/Qwen/Qwen2.5-3B
-- Coleccion Qwen2.5 en HuggingFace: https://huggingface.co/collections/Qwen/qwen25
+- Coleccion Qwen2.5 en Hugging Face: https://huggingface.co/collections/Qwen/qwen25
 - Informe tecnico Qwen2.5 (arXiv:2412.15115): https://arxiv.org/abs/2412.15115
 - Repositorio de referencia Qwen2.5 en GitHub: https://github.com/mx4ai/qwen2.5
 - Paper citado en las etiquetas del repositorio (ML CO2 Impact, Lacoste et al. 2019): https://arxiv.org/abs/1910.09700

@@ -122,7 +122,7 @@ No se dispone de cifras de rendimiento de las alternativas en la información pr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lucaskim72/connectailab-rl-lucasbrain-v1-humanoid-ppo
+- Repositorio en Hugging Face: https://huggingface.co/lucaskim72/connectailab-rl-lucasbrain-v1-humanoid-ppo
 - Entorno `Humanoid-v5` de Gymnasium: https://gymnasium.farama.org/environments/mujoco/humanoid/
 - MuJoCo: https://mujoco.org/
 - Documentación de PPO en Stable-Baselines3 (referencia del algoritmo): https://stable-baselines3.readthedocs.io/en/master/modules/ppo.html

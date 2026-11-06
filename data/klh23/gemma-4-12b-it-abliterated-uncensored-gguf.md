@@ -33,7 +33,7 @@ La innovacion tecnica relevante es el proceso de abliteration: se identifica la 
 - Procesamiento multimodal nativo: vision (imagenes) y audio, habilitado mediante los ficheros `mmproj` cuando se usa en `llama.cpp`.
 - Razonamiento de proposito general y respuesta a instrucciones del modelo base Gemma 4.
 - Comportamiento de rechazo reducido por abliteration, lo que amplia el rango de peticiones que el modelo atendera respecto al instruct original.
-- Compatibilidad con endpoints (`endpoints_compatible` en los tags de HuggingFace) para su publicacion como endpoint de inferencia.
+- Compatibilidad con endpoints (`endpoints_compatible` en los tags de Hugging Face) para su publicacion como endpoint de inferencia.
 - Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
 - Soporte explicito de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
 - Capacidades multilingues: limitadas al ingles segun el campo `language: en`.
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes en la info
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/klh23/gemma-4-12B-it-abliterated-uncensored-GGUF
+- Repositorio Hugging Face: https://huggingface.co/klh23/gemma-4-12B-it-abliterated-uncensored-GGUF
 - Repositorio de quants de referencia (mradermacher): https://huggingface.co/mradermacher/gemma-4-12B-it-abliterated-uncensored-GGUF
 - Quants ponderados con imatrix: https://huggingface.co/mradermacher/gemma-4-12B-it-abliterated-uncensored-i1-GGUF
 - Modelo base: https://huggingface.co/OpenYourMind/gemma-4-12B-it-abliterated-uncensored

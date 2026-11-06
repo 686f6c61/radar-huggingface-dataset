@@ -89,7 +89,7 @@ No se dispone de información suficiente para una comparativa rigurosa con model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/j0no12/Nero-XS
+- Modelo en Hugging Face: https://huggingface.co/j0no12/Nero-XS
 - Perfil del autor: https://huggingface.co/j0no12
 - Modelo relacionado Nero-800M: https://huggingface.co/j0no12/Nero-800M
 - Modelo relacionado NeroT-86M-Exp: https://huggingface.co/j0no12/NeroT-86M-Exp

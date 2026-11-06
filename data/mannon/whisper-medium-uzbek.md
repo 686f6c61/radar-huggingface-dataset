@@ -73,9 +73,9 @@ Los resultados del model-index (greedy) coinciden con la tabla de la model card.
 
 | Modelo | Parámetros | Contexto/ventana | WER (Common Voice 22 uz) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mannon/whisper-medium-uzbek | 769M | 30 s por chunk | 7,69 (greedy) | Apache-2.0 | HuggingFace |
-| openai/whisper-medium (base) | 769M | 30 s por chunk | no disponible en la información | Apache-2.0 | HuggingFace |
-| openai/whisper-small (referencia del autor) | 244M | 30 s por chunk | 9,58 (greedy) | Apache-2.0 | HuggingFace |
+| Mannon/whisper-medium-uzbek | 769M | 30 s por chunk | 7,69 (greedy) | Apache-2.0 | Hugging Face |
+| openai/whisper-medium (base) | 769M | 30 s por chunk | no disponible en la información | Apache-2.0 | Hugging Face |
+| openai/whisper-small (referencia del autor) | 244M | 30 s por chunk | 9,58 (greedy) | Apache-2.0 | Hugging Face |
 | Otros ASR uzbekos | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparativa se limita a los datos aportados por el autor; no hay cifras publicadas de otros modelos ASR específicos para uzbeko en la información disponible.
@@ -93,7 +93,7 @@ La comparativa se limita a los datos aportados por el autor; no hay cifras publi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mannon/whisper-medium-uzbek
+- Modelo en Hugging Face: https://huggingface.co/Mannon/whisper-medium-uzbek
 - Modelo base: https://huggingface.co/openai/whisper-medium
 - Paper de Whisper: https://arxiv.org/abs/2205.12446
 - Common Voice: https://commonvoice.mozilla.org/en

@@ -43,7 +43,7 @@ El modelo de origen se apoya en la filosofía MultiTalent, un enfoque de preentr
 - Investigación en segmentación pancreática: ejecutar el checkpoint sobre cohortes de TC propias para comparar métricas de solapamiento con otros métodos, aprovechando que la conversión no altera los pesos originales.
 - Prototipado local en Apple Silicon: desarrollar y depurar pipelines de imagen médica en un Mac con Metal, sin depender de una GPU dedicada ni de servicios en la nube.
 - Preetiquetado asistido para revisión experta: generar máscaras iniciales de páncreas y tumor que un radiólogo revise y corrija, reduciendo el tiempo de anotación en la creación de datasets.
-- Validación de pipelines de despliegue: usar el modelo como caso de prueba para verificar la instalación de `nnunet-mlx`, la descarga por revisión fija de HuggingFace y la reproducibilidad de resultados entre máquinas.
+- Validación de pipelines de despliegue: usar el modelo como caso de prueba para verificar la instalación de `nnunet-mlx`, la descarga por revisión fija de Hugging Face y la reproducibilidad de resultados entre máquinas.
 - Docencia en imagen médica computacional: ilustrar el flujo completo de nnU-Net (preprocesado, ventana deslizante, ensembling de folds) con un modelo pequeño (0,4 GB) y ejecutable en portátil.
 - Experimentación con test-time augmentation: comparar configuraciones con y sin mirroring y distintos `step_fraction` para estudiar el compromiso entre coste y calidad de segmentación en un órgano de geometría variable.
 - Evaluación de generalización entre dominios: al derivar de un enfoque MultiTalent, sirve para estudiar el comportamiento del modelo en TC de distintas procedencias y protocolos, siempre en contexto de investigación.
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nnU-Net · Pancreas (MedMLX) | nnU-Net ResEncUNet-L 3D, MLX | no disponible | no aplica | CC-BY-4.0 | HuggingFace, repo de 0,4 GB |
+| nnU-Net · Pancreas (MedMLX) | nnU-Net ResEncUNet-L 3D, MLX | no disponible | no aplica | CC-BY-4.0 | Hugging Face, repo de 0,4 GB |
 | Checkpoint original PancCTMultiTalentV2 (PANTHER) | nnU-Net ResEncUNet-L 3D | no disponible | no aplica | CC-BY-4.0 (archivo Zenodo) | Zenodo |
 | nnU-Net estándar (framework) | nnU-Net configurable | depende del dataset | no aplica | Apache-2.0 (framework) | GitHub |
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MedMLX/nnunet-pancreas-mlx
+- Modelo en Hugging Face: https://huggingface.co/MedMLX/nnunet-pancreas-mlx
 - Repositorio GitHub del proyecto: https://github.com/MedMLX/nnunet-mlx
 - Documentación de ejecución: https://github.com/MedMLX/nnunet-mlx/blob/main/README.md#run
 - Paper MedMLX: https://doi.org/10.64898/2026.10.28.26366762

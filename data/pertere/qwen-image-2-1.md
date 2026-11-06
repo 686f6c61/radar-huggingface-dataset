@@ -18,7 +18,7 @@ Al tratarse de un modelo de difusión y no de un modelo de lenguaje, conceptos c
 | Longitud de contexto | No aplica: el modelo no expone ventana de contexto textual. Acepta hasta 10 imágenes de referencia en tareas de edición |
 | Tipos de cuantización | No disponible en la información proporcionada. Los pesos publicados se distribuyen en `bfloat16` |
 | Idiomas soportados | No disponible |
-| Licencia | `qwen-research` (Qwen Research License Agreement), etiquetada en HuggingFace como `other` |
+| Licencia | `qwen-research` (Qwen Research License Agreement), etiquetada en Hugging Face como `other` |
 | Formato de pesos | safetensors, en formato `diffusers` |
 | Pipeline declarado | `text-to-image` (`QwenImage21Pipeline`) |
 | Resoluciones soportadas | 1:1 (2048x2048), 4:3 (2400x1792), 3:4 (1792x2400), 3:2 (2528x1696), 2:3 (1696x2528), 16:9 (2752x1536), 9:16 (1536x2752) |
@@ -80,7 +80,7 @@ La información proporcionada no incluye datos comparativos de otros modelos. En
 
 | Modelo | Parámetros | Resolución | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen-Image-2.1 (esta ficha) | 7.115.124.736 en el componente visual | hasta 2048x2048 y ratios de 2752x1536 | `qwen-research` | HuggingFace y ModelScope |
+| Qwen-Image-2.1 (esta ficha) | 7.115.124.736 en el componente visual | hasta 2048x2048 y ratios de 2752x1536 | `qwen-research` | Hugging Face y ModelScope |
 | Qwen-Image (versión previa) | no disponible | no disponible | no disponible | no disponible |
 | FLUX.1 | no disponible | no disponible | no disponible | no disponible |
 | Stable Diffusion 3.5 | no disponible | no disponible | no disponible | no disponible |
@@ -100,7 +100,7 @@ La información proporcionada no incluye datos comparativos de otros modelos. En
 ## Enlaces
 
 - Ficha analizada (réplica): https://huggingface.co/Pertere/Qwen-Image-2.1
-- Repositorio oficial en HuggingFace: https://huggingface.co/Qwen/Qwen-Image-2.1
+- Repositorio oficial en Hugging Face: https://huggingface.co/Qwen/Qwen-Image-2.1
 - ModelScope: https://modelscope.cn/models/Qwen/Qwen-Image-2.1
 - Blog oficial: https://qwen.ai/blog?id=qwen-image-2.1
 - Demo (Space): https://huggingface.co/spaces/Qwen/Qwen-Image-2.1

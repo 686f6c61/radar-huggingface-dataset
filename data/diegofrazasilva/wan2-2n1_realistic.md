@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `diegofrazasilva/wan2.2n1_realistic` es un adaptador LoRA (Low-Rank Adaptation) para generación de imágenes a partir de texto, diseñado para ser usado sobre el modelo base `krea/Krea-2-Raw`. Publicado en HuggingFace por el usuario diegofrazasilva, este adaptador tiene un tamaño de repositorio de 0,6 GB y está integrado con la librería `diffusers`. El nombre sugiere que está orientado a producir imágenes con estilo realista, probablemente aprovechando las capacidades del modelo base, aunque no se proporciona documentación técnica detallada en la model card.
+El modelo `diegofrazasilva/wan2.2n1_realistic` es un adaptador LoRA (Low-Rank Adaptation) para generación de imágenes a partir de texto, diseñado para ser usado sobre el modelo base `krea/Krea-2-Raw`. Publicado en Hugging Face por el usuario diegofrazasilva, este adaptador tiene un tamaño de repositorio de 0,6 GB y está integrado con la librería `diffusers`. El nombre sugiere que está orientado a producir imágenes con estilo realista, probablemente aprovechando las capacidades del modelo base, aunque no se proporciona documentación técnica detallada en la model card.
 
 La relevancia de este tipo de adaptadores radica en su eficiencia: permiten especializar un modelo base de gran tamaño sin necesidad de reentrenar todos los parámetros, lo que reduce costes computacionales y facilita su distribución. Sin embargo, la falta de información pública sobre el entrenamiento, los datos utilizados y las capacidades exactas limita su evaluación objetiva. Es un recurso reciente (creado en agosto de 2026) y aún sin descargas ni valoraciones, por lo que su calidad y comportamiento en producción no están contrastados.
 
@@ -66,7 +66,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/diegofrazasilva/wan2.2n1_realistic
+- Repositorio Hugging Face: https://huggingface.co/diegofrazasilva/wan2.2n1_realistic
 - Modelo base (referenciado): https://huggingface.co/krea/Krea-2-Raw (no verificado)
 - Repositorio oficial Wan2.2 (relacionado por nombre, no por funcionalidad): https://github.com/Wan-Video/Wan2.2
 - Modelo Wan2.2-TI2V-5B (video, no comparable): https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B

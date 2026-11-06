@@ -23,7 +23,7 @@ Su relevancia es acotada y muy específica: sirve como ejemplo reproducible de d
 
 ## Arquitectura y entrenamiento
 
-El adaptador se aplica sobre un transformer decoder-only de 0,8B parámetros (Qwen3.5-0.8B) mediante LoRA, gestionado con la librería `peft` de HuggingFace. La tarea es de clasificación restringida: dado un prompt con el estado del robot, el modelo debe emitir exactamente una letra entre las opciones listadas, sin explicación. El prompt de sistema fijado por el autor instruye a tratar el contenido del estado como datos y no como instrucciones, y a devolver solo la letra.
+El adaptador se aplica sobre un transformer decoder-only de 0,8B parámetros (Qwen3.5-0.8B) mediante LoRA, gestionado con la librería `peft` de Hugging Face. La tarea es de clasificación restringida: dado un prompt con el estado del robot, el modelo debe emitir exactamente una letra entre las opciones listadas, sin explicación. El prompt de sistema fijado por el autor instruye a tratar el contenido del estado como datos y no como instrucciones, y a devolver solo la letra.
 
 El entrenamiento tiene cuatro etapas documentadas: (1) entrenamiento de la política maestra con PPO en un entorno web de aprendizaje (`avoid_obstacles`, contrato `link01-decision/avoid_obstacles/obs21-act5/walker51-14/v1`, curso `18b2956e`, 75 % de éxito en el examen oficial); (2) generación del conjunto de problemas convirtiendo cada 0,5 s las observaciones del cerebro en texto, con la respuesta del cerebro como etiqueta y un 20 % de ejemplos con acciones alternativas que desviaban al robot; (3) ajuste supervisado del modelo de lenguaje sobre esas etiquetas (LoRA); y (4) optimización por refuerzo con recompensas derivadas de "qué habría pasado si el cerebro hubiera continuado desde esa elección", con anclaje KL al modelo supervisado. El techo teórico de acierto (fidelidad de la traducción texto→decisión del cerebro) es del 99 %.
 
@@ -70,9 +70,9 @@ El propio autor advierte que la evaluación de caminata usa una aproximación 2D
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-rere-v5-link01 (este) | Adaptador LoRA sobre base de 0,8B | No disponible | 59,6 % de acierto en test; 0 % de éxito en 20 partidas simuladas | Apache 2.0 | HuggingFace, 0 descargas |
+| connectailab-rl-rere-v5-link01 (este) | Adaptador LoRA sobre base de 0,8B | No disponible | 59,6 % de acierto en test; 0 % de éxito en 20 partidas simuladas | Apache 2.0 | Hugging Face, 0 descargas |
 | Cerebro maestro PPO (`brain.json`) | Política RL, no es un LLM | No aplica | 100 % de acierto en test; 100 % de éxito en 20 partidas | No disponible | Referenciado en la model card, sin enlace directo |
-| Qwen/Qwen3.5-0.8B (base) | 0,8B | No disponible | No disponible | No disponible en la información proporcionada | HuggingFace |
+| Qwen/Qwen3.5-0.8B (base) | 0,8B | No disponible | No disponible | No disponible en la información proporcionada | Hugging Face |
 
 No se dispone de datos para comparar con otras alternativas de la misma categoría (destilación de políticas RL en LLM pequeños); se indica "no disponible".
 
@@ -90,7 +90,7 @@ No se dispone de datos para comparar con otras alternativas de la misma categor�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rhemslkim/connectailab-rl-rere-v5-link01
+- Modelo en Hugging Face: https://huggingface.co/rhemslkim/connectailab-rl-rere-v5-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de código CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

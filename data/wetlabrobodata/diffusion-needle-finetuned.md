@@ -2,7 +2,7 @@
 
 ## Resumen
 
-diffusion-needle-finetuned es una política de control robótico basada en difusión (diffusion policy) publicada en HuggingFace por el usuario WetLabRoboData. No es un modelo de lenguaje: es un modelo de imitación (imitation learning) que traduce observaciones de cámara y estado del robot en acciones de control de bajo nivel para una tarea concreta, denominada "needle". Se distribuye a través de la librería LeRobot y se ejecuta sobre un robot UR3e bimanual equipado con tres cámaras.
+diffusion-needle-finetuned es una política de control robótico basada en difusión (diffusion policy) publicada en Hugging Face por el usuario WetLabRoboData. No es un modelo de lenguaje: es un modelo de imitación (imitation learning) que traduce observaciones de cámara y estado del robot en acciones de control de bajo nivel para una tarea concreta, denominada "needle". Se distribuye a través de la librería LeRobot y se ejecuta sobre un robot UR3e bimanual equipado con tres cámaras.
 
 El modelo parte de un preentrenamiento multitarea (WetLabRoboData/diffusion-multitask_12task_mix-multitask) y después se afina sobre un conjunto de datos específico de la tarea needle (WetLabRoboData/lerobot-data-needle). El autor reporta 15 éxitos sobre 20 episodios de evaluación (75 %) en esa tarea.
 
@@ -29,7 +29,7 @@ Su relevancia es acotada pero clara dentro del ecosistema de automatización de 
 | Camaras | 3 |
 | Episodios de evaluacion | 20 |
 | Exitos de evaluacion | 15 / 20 (75 %) |
-| Pipeline (HuggingFace) | robotics |
+| Pipeline (Hugging Face) | robotics |
 | Libreria | lerobot |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion y actualizacion | 2026-10-04 (ambas) |
@@ -86,8 +86,8 @@ Los datos disponibles solo permiten comparar el modelo con su propio modelo base
 
 | Modelo | Tarea | Parametros | Exito en needle | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| diffusion-needle-finetuned | needle (una tarea) | no disponible | 75 % (15/20) | apache-2.0 | HuggingFace, libreria lerobot |
-| WetLabRoboData/diffusion-multitask_12task_mix-multitask | 12 tareas (multitarea) | no disponible | no disponible | no disponible | HuggingFace |
+| diffusion-needle-finetuned | needle (una tarea) | no disponible | 75 % (15/20) | apache-2.0 | Hugging Face, libreria lerobot |
+| WetLabRoboData/diffusion-multitask_12task_mix-multitask | 12 tareas (multitarea) | no disponible | no disponible | no disponible | Hugging Face |
 | Otras politicas de imitacion comparables (ACT, VQ-BeT, TDMPC) | manipulación general | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -105,7 +105,7 @@ Los datos disponibles solo permiten comparar el modelo con su propio modelo base
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WetLabRoboData/diffusion-needle-finetuned
+- Modelo en Hugging Face: https://huggingface.co/WetLabRoboData/diffusion-needle-finetuned
 - Dataset de entrenamiento: https://huggingface.co/datasets/WetLabRoboData/lerobot-data-needle
 - Modelo base multitarea: https://huggingface.co/WetLabRoboData/diffusion-multitask_12task_mix-multitask
 - Dataset de evaluación (vídeos de rollout y resultados por episodio): https://huggingface.co/datasets/WetLabRoboData/eval-diffusion-needle-finetuned

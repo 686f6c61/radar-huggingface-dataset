@@ -25,12 +25,12 @@ No se dispone de informacion publica en la documentacion proporcionada sobre la 
 
 No se dispone de informacion sobre la arquitectura interna del modelo base InnoSpark3.2-27B-1102 en la documentacion proporcionada. El recuento de parametros (27.320.697.856) corresponde a un modelo denso de aproximadamente 27B, pero no consta si emplea atencion estandar, atencion lineal, mezcla de expertos u otra variante. Tampoco se detalla el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron fases de RLHF, DPO o similar.
 
-Lo unico documentado tecnicamente es el proceso de cuantizacion: mradermacher ha generado las cuantizaciones con el metodo i1, que utiliza una matriz de importancia (imatrix) para ponderar los tensores durante la cuantizacion y reducir la perdida de calidad en niveles bajos de bits. La model card indica `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que confirma que la conversion parte de pesos en formato HuggingFace y que se aplica cuantizacion a los tensores de salida. El tag `nicoboss` aparece en la metadata, sin mas contexto sobre su significado.
+Lo unico documentado tecnicamente es el proceso de cuantizacion: mradermacher ha generado las cuantizaciones con el metodo i1, que utiliza una matriz de importancia (imatrix) para ponderar los tensores durante la cuantizacion y reducir la perdida de calidad en niveles bajos de bits. La model card indica `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que confirma que la conversion parte de pesos en formato Hugging Face y que se aplica cuantizacion a los tensores de salida. El tag `nicoboss` aparece en la metadata, sin mas contexto sobre su significado.
 
 ## Capacidades
 
-- Generacion de texto conversacional: la etiqueta `conversational` de HuggingFace sugiere uso en dialogos multi-turno, aunque no se detallan capacidades especificas.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que el modelo puede servirse a traves de infraestructura compatible con la API de inferencia de HuggingFace.
+- Generacion de texto conversacional: la etiqueta `conversational` de Hugging Face sugiere uso en dialogos multi-turno, aunque no se detallan capacidades especificas.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que el modelo puede servirse a traves de infraestructura compatible con la API de inferencia de Hugging Face.
 - Razonamiento, codigo, matematicas, vision, audio, tool calling y modo thinking: no disponible en la informacion proporcionada.
 - Capacidades multilingues: no disponible.
 
@@ -84,7 +84,7 @@ No se dispone de informacion suficiente para establecer una comparativa cuantita
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/mradermacher/InnoSpark3.2-27B-1102-i1-GGUF
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/mradermacher/InnoSpark3.2-27B-1102-i1-GGUF
 - Modelo base: https://huggingface.co/sii-research/InnoSpark3.2-27B-1102
 - Perfil del autor de la cuantizacion: https://huggingface.co/mradermacher
 - llama.cpp (runtime recomendado para GGUF): https://github.com/ggerganov/llama.cpp

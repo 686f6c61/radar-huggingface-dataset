@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo chou-lucas/transformer-en-zh es un sistema de traduccion automatica neuronal (NMT) especializado en la direccion ingles a chino. Lo desarrolla el usuario chou-lucas y se publica en HuggingFace como un repositorio en formato estandar de la libreria transformers, sin codigo personalizado (.py) ni necesidad de trust_remote_code. Internamente se apoya en la arquitectura MarianMTModel (model_type = marian), la misma familia que los modelos Helsinki-NLP/opus-mt-*.
+El modelo chou-lucas/transformer-en-zh es un sistema de traduccion automatica neuronal (NMT) especializado en la direccion ingles a chino. Lo desarrolla el usuario chou-lucas y se publica en Hugging Face como un repositorio en formato estandar de la libreria transformers, sin codigo personalizado (.py) ni necesidad de trust_remote_code. Internamente se apoya en la arquitectura MarianMTModel (model_type = marian), la misma familia que los modelos Helsinki-NLP/opus-mt-*.
 
 Se trata de un transformer encoder-decoder relativamente pequeno: 60.554.496 parametros totales, 6 capas, dimension de modelo (d_model) de 512, 8 cabezas de atencion y una dimension de feed-forward de 2048. El repositorio ocupa 0,6 GB y los pesos se distribuyen en model.safetensors. La tokenizacion es SentencePiece independiente para origen y destino (separate_vocabs=True), con vocabularios diferenciados para ingles y chino.
 
@@ -93,6 +93,6 @@ El modelo se situa en la misma categoria que la familia opus-mt de Helsinki-NLP,
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chou-lucas/transformer-en-zh
+- Hugging Face: https://huggingface.co/chou-lucas/transformer-en-zh
 - Referencia de la familia de modelos: Helsinki-NLP/opus-mt-en-zh (https://huggingface.co/Helsinki-NLP/opus-mt-en-zh)
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion proporcionada.

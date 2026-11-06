@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FreakyMhee (oxyllina/FreakyMhee) es un modelo publicado en HuggingFace por el usuario oxyllina cuya documentación pública es prácticamente inexistente: no consta pipeline asociado, arquitectura, número de parámetros, licencia ni idiomas. El repositorio, creado el 3 de abril de 2026 y actualizado por última vez el 30 de octubre de 2026, pesa 11,5 GB y está en modo gated, por lo que hay que aceptar unas condiciones en la plataforma antes de poder descargar los archivos.
+FreakyMhee (oxyllina/FreakyMhee) es un modelo publicado en Hugging Face por el usuario oxyllina cuya documentación pública es prácticamente inexistente: no consta pipeline asociado, arquitectura, número de parámetros, licencia ni idiomas. El repositorio, creado el 3 de abril de 2026 y actualizado por última vez el 30 de octubre de 2026, pesa 11,5 GB y está en modo gated, por lo que hay que aceptar unas condiciones en la plataforma antes de poder descargar los archivos.
 
 La ausencia de model card y de etiquetas técnicas impide determinar ni siquiera la modalidad del modelo (texto, imagen, audio o multimodal). Un indicio no confirmado es la existencia de un usuario llamado FreakyMhee en Civitai, plataforma centrada en modelos de generación de imágenes, lo que apuntaría a un posible origen en ese ecosistema, aunque no hay prueba de que ambos perfiles estén relacionados.
 
@@ -20,9 +20,9 @@ Para un desarrollador o investigador, la relevancia de esta ficha es sobre todo 
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
 | Formato de pesos | no disponible |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Tamaño del repositorio | 11,5 GB |
-| Acceso | Restringido (gated): exige aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): exige aceptar condiciones en Hugging Face |
 | Descargas / likes | 0 descargas / 1 like |
 | Creación / última actualización | 03/04/2026 / 30/10/2026 |
 
@@ -50,11 +50,11 @@ Al desconocer la modalidad y las capacidades del modelo, no es posible enumerar 
 - Prototipado de asistente con RAG (hipótesis no confirmada): si se tratara de un modelo de texto de tamaño medio compatible con los 11,5 GB del repositorio, su uso natural sería un asistente interno con recuperación de documentos, previa validación de la licencia.
 - Generación de imágenes (hipótesis no confirmada): si el vínculo con el perfil de Civitai se confirmara, el modelo podría destinarse a pipelines de generación de imágenes con herramientas como ComfyUI o diffusers.
 - Investigación de cuantización: si el formato de partida fuera safetensors de un LLM, el tamaño del repositorio lo convertiría en candidato para estudios de cuantización (GGUF Q4/Q8) y medición de degradación de calidad.
-- Análisis del ecosistema gated: caso de uso meta para investigadores que estudian cómo circulan modelos sin documentación en HuggingFace y qué riesgos de procedencia y licenciamiento plantean.
+- Análisis del ecosistema gated: caso de uso meta para investigadores que estudian cómo circulan modelos sin documentación en Hugging Face y qué riesgos de procedencia y licenciamiento plantean.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. Ni el repositorio de HuggingFace ni la ficha indexada por terceros recogen métricas de MMLU, HumanEval, GSM8K ni de ninguna otra batería, ni datos de ventana de contexto o precios de inferencia.
+No se han publicado resultados de benchmarks en la información disponible. Ni el repositorio de Hugging Face ni la ficha indexada por terceros recogen métricas de MMLU, HumanEval, GSM8K ni de ninguna otra batería, ni datos de ventana de contexto o precios de inferencia.
 
 ## Requisitos de hardware
 
@@ -70,7 +70,7 @@ No disponible. Al desconocerse la categoría del modelo (texto, imagen, multimod
 
 ## Limitaciones y advertencias
 
-- Acceso gated: hay que aceptar condiciones (posiblemente compartiendo datos de contacto) antes de descargar; esto complica la redistribución y la descarga automatizada, que requerirá un token de HuggingFace con el gate aceptado en la cuenta.
+- Acceso gated: hay que aceptar condiciones (posiblemente compartiendo datos de contacto) antes de descargar; esto complica la redistribución y la descarga automatizada, que requerirá un token de Hugging Face con el gate aceptado en la cuenta.
 - Licencia desconocida: sin licencia declarada no existe base legal clara para uso comercial, redistribución ni creación de derivados; por defecto debe tratarse como todos los derechos reservados.
 - Riesgo de alucinación: no evaluable por falta de datos y de evaluaciones públicas.
 - Sesgos: no documentados; sin model card no hay información sobre la composición de los datos de entrenamiento ni sobre mitigaciones aplicadas.
@@ -82,7 +82,7 @@ No disponible. Al desconocerse la categoría del modelo (texto, imagen, multimod
 ## Enlaces
 
 - Repositorio del modelo: https://huggingface.co/oxyllina/FreakyMhee
-- Perfil del autor en HuggingFace: https://huggingface.co/oxyllina
+- Perfil del autor en Hugging Face: https://huggingface.co/oxyllina
 - Ficha indexada por terceros (sin datos técnicos adicionales): https://essamamdani.com/ai-models/hf-oxyllina-freakymhee
 - Otro modelo gated del mismo autor: https://huggingface.co/oxyllina/fr0p
 - Perfil FreakyMhee en Civitai (relación no confirmada): https://civitai.com/user/FreakyMhee/videos

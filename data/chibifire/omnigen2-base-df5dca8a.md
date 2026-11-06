@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El eq
 
 | Modelo | Parametros | Contexto | Capacidades principales | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OmniGen2 (este) | 3,97B | No disponible | Texto-imagen, edicion, comprension visual, in-context | Apache 2.0 | HuggingFace, ModelScope |
-| OmniGen v1 | ~3,8B (estimado) | No disponible | Texto-imagen, edicion, in-context (sin comprension visual tan robusta) | Apache 2.0 | HuggingFace |
-| Emu3 (generacion unificada) | 8B (aprox.) | No disponible | Texto, imagen, video (generacion y comprension) | MIT (parcial) | HuggingFace |
-| Show-o | 4B (aprox.) | No disponible | Texto-imagen, edicion, comprension visual | Apache 2.0 | HuggingFace |
+| OmniGen2 (este) | 3,97B | No disponible | Texto-imagen, edicion, comprension visual, in-context | Apache 2.0 | Hugging Face, ModelScope |
+| OmniGen v1 | ~3,8B (estimado) | No disponible | Texto-imagen, edicion, in-context (sin comprension visual tan robusta) | Apache 2.0 | Hugging Face |
+| Emu3 (generacion unificada) | 8B (aprox.) | No disponible | Texto, imagen, video (generacion y comprension) | MIT (parcial) | Hugging Face |
+| Show-o | 4B (aprox.) | No disponible | Texto-imagen, edicion, comprension visual | Apache 2.0 | Hugging Face |
 
 Nota: los datos de modelos comparables son aproximados y provienen de conocimiento general, no de la información proporcionada. La comparación se basa en la categoría de modelos unificados multimodales. OmniGen2 se distingue por su arquitectura de doble vía y su base Qwen-VL-2.5, que le otorgan una ventaja en comprensión visual frente a OmniGen v1.
 
@@ -79,7 +79,7 @@ Nota: los datos de modelos comparables son aproximados y provienen de conocimien
 
 ## Enlaces
 
-- Modelo oficial en HuggingFace: https://huggingface.co/OmniGen2/OmniGen2
+- Modelo oficial en Hugging Face: https://huggingface.co/OmniGen2/OmniGen2
 - Modelo espejo (este): https://huggingface.co/chibifire/omnigen2-base-df5dca8a
 - Repositorio GitHub: https://github.com/VectorSpaceLab/OmniGen2
 - Página del proyecto: https://vectorspacelab.github.io/OmniGen2/

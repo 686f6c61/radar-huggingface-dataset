@@ -4,7 +4,7 @@
 
 ## Resumen
 
-`Echoo113/gemma-3-4b-it-fruit_pomegranate_prompted-ft4.42` es un ajuste fino (fine-tune) del modelo multimodal `google/gemma-3-4b-it` de Google DeepMind, publicado por el usuario Echoo113 en HuggingFace. El entrenamiento se ha realizado con la librería TRL (version 0.19.1) mediante SFT (supervised fine-tuning), es decir, aprendizaje supervisado sobre pares instruccion-respuesta, sin que la model card documente la composicion del dataset ni el numero de tokens utilizados. El identificador del repositorio sugiere un experimento de prompting/entrenamiento tematico en torno a la fruta "pomegranate" (granada), aunque esta hipotesis no se confirma en la informacion disponible.
+`Echoo113/gemma-3-4b-it-fruit_pomegranate_prompted-ft4.42` es un ajuste fino (fine-tune) del modelo multimodal `google/gemma-3-4b-it` de Google DeepMind, publicado por el usuario Echoo113 en Hugging Face. El entrenamiento se ha realizado con la librería TRL (version 0.19.1) mediante SFT (supervised fine-tuning), es decir, aprendizaje supervisado sobre pares instruccion-respuesta, sin que la model card documente la composicion del dataset ni el numero de tokens utilizados. El identificador del repositorio sugiere un experimento de prompting/entrenamiento tematico en torno a la fruta "pomegranate" (granada), aunque esta hipotesis no se confirma en la informacion disponible.
 
 El modelo hereda del base las caracteristicas de la familia Gemma 3: modelos ligeros, de pesos abiertos, disenados por Google DeepMind para ejecutarse en una sola GPU o TPU, incluyendo estaciones de trabajo y portatiles. El base es un modelo de 4B de parametros con soporte de imagen y texto, y el fine-tune conserva la arquitectura y el tokenizador originales, limitandose a modificar los pesos mediante SFT.
 
@@ -54,7 +54,7 @@ En cuanto al entrenamiento, la unica informacion disponible es que se aplico SFT
 - Base para comparativas de olvido catastrofico: util para medir cuanto pierde un modelo de 4B en tareas generales (matematicas, codigo) tras un SFT estrecho, usando el base como referencia.
 - Evaluacion de robustez de pipelines de transformers: al cargarse con `pipeline("text-generation", ...)`, permite probar integraciones de despliegue (servidores de inferencia compatibles con la API de transformers) antes de invertir en modelos mayores.
 - Filtrado y clasificacion de respuestas en un entorno controlado: con prompts adecuados puede generar variantes de respuesta para anotacion o aumento de datos, aunque sin garantias de calidad por falta de benchmarks.
-- Docencia y talleres: ejemplo practico de fine-tune con SFT para explicar el flujo completo desde el modelo base hasta la publicacion en HuggingFace.
+- Docencia y talleres: ejemplo practico de fine-tune con SFT para explicar el flujo completo desde el modelo base hasta la publicacion en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -74,9 +74,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Evaluacion publicada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gemma-3-4b-it-fruit_pomegranate_prompted-ft4.42 | ~4B (heredado) | No disponible | No | No disponible (base: terminos de Gemma) | Repo HuggingFace, 0 descargas |
-| google/gemma-3-4b-it (modelo base) | ~4B | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Terminos de uso de Gemma | HuggingFace, oficial de Google DeepMind |
-| Otros fine-tunes comunitarios de Gemma 3 4B IT | ~4B | No disponible | Habitualmente no publican evaluacion | Variable segun autor | HuggingFace |
+| gemma-3-4b-it-fruit_pomegranate_prompted-ft4.42 | ~4B (heredado) | No disponible | No | No disponible (base: terminos de Gemma) | Repo Hugging Face, 0 descargas |
+| google/gemma-3-4b-it (modelo base) | ~4B | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Terminos de uso de Gemma | Hugging Face, oficial de Google DeepMind |
+| Otros fine-tunes comunitarios de Gemma 3 4B IT | ~4B | No disponible | Habitualmente no publican evaluacion | Variable segun autor | Hugging Face |
 | Alternativas de ~3-4B de otros fabricantes | No verificado en la informacion disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos verificados de rendimiento para establecer una comparacion cuantitativa con alternativas de la misma categoria. La comparacion mas directa y fiable es contra el propio modelo base, ya que comparten arquitectura, tokenizador y supuestamente capacidades multimodales.
@@ -96,8 +96,8 @@ No se dispone de datos verificados de rendimiento para establecer una comparacio
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/Echoo113/gemma-3-4b-it-fruit_pomegranate_prompted-ft4.42
-- Modelo base en HuggingFace: https://huggingface.co/google/gemma-3-4b-it
+- Repositorio del modelo en Hugging Face: https://huggingface.co/Echoo113/gemma-3-4b-it-fruit_pomegranate_prompted-ft4.42
+- Modelo base en Hugging Face: https://huggingface.co/google/gemma-3-4b-it
 - Pagina oficial de Gemma 3 en Google DeepMind: https://deepmind.google/models/gemma/gemma-3/
 - Pagina oficial de la familia Gemma: https://deepmind.google/models/gemma/
 - Articulo de Wikipedia sobre Gemma: https://en.wikipedia.org/wiki/Gemma_(language_model)

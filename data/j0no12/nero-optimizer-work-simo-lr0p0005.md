@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nero Optimizer Work — SimO (lr=0.0005) es un checkpoint experimental de investigación publicado por el usuario j0no12 en HuggingFace. No es un modelo de lenguaje destinado a uso general, sino el artefacto final de un barrido comparativo de optimizadores: cada rama del estudio entrena exactamente la misma arquitectura con el mismo flujo de datos y cambia únicamente el optimizador (en este caso `simo`) y la tasa de aprendizaje solicitada (0.0005). El objetivo declarado es hacer reproducible la comparación entre optimizadores, no ofrecer un modelo con capacidades útiles.
+Nero Optimizer Work — SimO (lr=0.0005) es un checkpoint experimental de investigación publicado por el usuario j0no12 en Hugging Face. No es un modelo de lenguaje destinado a uso general, sino el artefacto final de un barrido comparativo de optimizadores: cada rama del estudio entrena exactamente la misma arquitectura con el mismo flujo de datos y cambia únicamente el optimizador (en este caso `simo`) y la tasa de aprendizaje solicitada (0.0005). El objetivo declarado es hacer reproducible la comparación entre optimizadores, no ofrecer un modelo con capacidades útiles.
 
 La arquitectura es un decoder transformer denso de tipo "dense-deep" con vocabulario de 2.048 tokens, residual stream de 128 dimensiones, 6 bloques, cabezas de atención de 32 dimensiones y un MLP con gating de 148 dimensiones. Almacena aproximadamente 999.680 parámetros y se entrenó durante 500.000.000 tokens con una longitud de contexto de 128 tokens, en lotes de 32 ejemplos, sobre el flujo de tokens `finephrase-balanced-500m-2k-v2`. El backend es Apple MLX y los pesos se distribuyen en formato MLX nativo (`model.npz`), no como checkpoint de Transformers.
 
@@ -94,7 +94,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables, y es
 | Longitud de contexto | 128 tokens | no disponible |
 | Rendimiento en benchmarks | no disponible | no disponible |
 | Licencia | no disponible | no disponible |
-| Disponibilidad | HuggingFace, formato MLX | no disponible |
+| Disponibilidad | Hugging Face, formato MLX | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -112,7 +112,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables, y es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/j0no12/nero-optimizer-work-simo-lr0p0005
+- Modelo en Hugging Face: https://huggingface.co/j0no12/nero-optimizer-work-simo-lr0p0005
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Blog o articulo tecnico: no disponible

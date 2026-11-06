@@ -53,5 +53,5 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/katiekelly/paper_022736999_video_understanding
+- Repositorio en Hugging Face: https://huggingface.co/katiekelly/paper_022736999_video_understanding
 - Referencia general sobre video understanding en Papers with Code: https://paperswithcode.co/tasks/video-understanding (no específica del repositorio)

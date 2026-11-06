@@ -68,7 +68,7 @@ Los datos de las alternativas son valores públicos de referencia y no se han ve
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| nanocode-sft-checkpoint-archive | ~2B (base MiniCPM5-2B), no confirmado | No disponible | No disponible | HuggingFace, archivo de checkpoints |
+| nanocode-sft-checkpoint-archive | ~2B (base MiniCPM5-2B), no confirmado | No disponible | No disponible | Hugging Face, archivo de checkpoints |
 | MiniCPM5-2B-Midtrain | ~2B | No disponible | No disponible | Modelo base citado en los repositorios |
 | Qwen2.5-3B | ~3,1B | 32k nativo | Apache 2.0 | Pesos abiertos |
 | Gemma-2-2B | ~2,6B | 8k | Gemma Terms | Pesos abiertos con condiciones |

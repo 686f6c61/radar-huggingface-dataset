@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ai-therapist-qwen3-1.7b-dpo-lora | 1,7 B (base) + LoRA | no disponible | Consejo psicologico (en) | Apache 2.0 | HuggingFace, 16 descargas |
-| Qwen/Qwen3-1.7B (base) | 1,7 B | no disponible | Proposito general | Apache 2.0 | HuggingFace, ampliamente usado |
-| Otros SLM de consejo de la coleccion Counselling SLMs | no disponible | no disponible | Consejo psicologico | no disponible | Coleccion HuggingFace del autor |
+| ai-therapist-qwen3-1.7b-dpo-lora | 1,7 B (base) + LoRA | no disponible | Consejo psicologico (en) | Apache 2.0 | Hugging Face, 16 descargas |
+| Qwen/Qwen3-1.7B (base) | 1,7 B | no disponible | Proposito general | Apache 2.0 | Hugging Face, ampliamente usado |
+| Otros SLM de consejo de la coleccion Counselling SLMs | no disponible | no disponible | Consejo psicologico | no disponible | Coleccion Hugging Face del autor |
 
 La comparacion con alternativas de la misma categoria es limitada: no se dispone de datos de benchmarks del adaptador ni de especificaciones detalladas de los otros miembros de la coleccion Counselling SLMs. Frente al modelo base, la diferencia principal es el ajuste DPO sobre PsyCoPref, que modifica el estilo de respuesta sin cambiar el tamano ni la arquitectura.
 
@@ -91,7 +91,7 @@ La comparacion con alternativas de la misma categoria es limitada: no se dispone
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arnabwithab/ai-therapist-qwen3-1.7b-dpo-lora
+- Modelo en Hugging Face: https://huggingface.co/arnabwithab/ai-therapist-qwen3-1.7b-dpo-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Coleccion Counselling SLMs: https://huggingface.co/collections/arnabwithab/counselling-slms-6ad06ab0ca4ce4cf5ceb5ca4
 - Dataset PsyCoPref: https://huggingface.co/datasets/Psychotherapy-LLM/PsyCoPref

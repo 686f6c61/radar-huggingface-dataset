@@ -25,7 +25,7 @@ Su relevancia practica esta en ejecutar vision por computador en dispositivos de
 | Chips soportados | RK3588 (segun la configuracion publicada) |
 | Nucleos NPU usados | 1 |
 | Identificador de revision | v2.4.0 |
-| Tamano del repositorio | 0,0 GB segun metadatos de HuggingFace |
+| Tamano del repositorio | 0,0 GB segun metadatos de Hugging Face |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -69,7 +69,7 @@ La model card no incluye metricas de mAP de caja ni de mAP de mascara, tampoco c
 - GPU recomendadas: ninguna. Este repositorio no contiene pesos para CUDA ni para ejecucion en A100, H100 o RTX 4090. Para esas plataformas habria que usar el modelo upstream en ONNX o PyTorch.
 - Compatibilidad con GPU de consumo: no aplicable. El modelo no esta pensado para GPUs de escritorio; para GPU de consumo habria que exportar el modelo original desde Ultralytics.
 - Nucleos NPU: la configuracion usa 1 nucleo. El RK3588 integra varios nucleos NPU (3 segun las especificaciones publicas de Rockchip, hasta 6 TOPS en INT8 en total), por lo que esta configuracion concreta no explota todos los nucleos de forma simultanea.
-- Opciones de despliegue: ejemplos oficiales de RKNN Model Zoo para YOLOv8 (C++ y Python), RKNN Toolkit2 para la conversion y el runtime RKNPU2 en el dispositivo. La descarga puede hacerse desde HuggingFace o desde ModelScope, con la revision v2.4.0.
+- Opciones de despliegue: ejemplos oficiales de RKNN Model Zoo para YOLOv8 (C++ y Python), RKNN Toolkit2 para la conversion y el runtime RKNPU2 en el dispositivo. La descarga puede hacerse desde Hugging Face o desde ModelScope, con la revision v2.4.0.
 - Verificacion previa: ejecutar `sha256sum -c SHA256SUMS` dentro del directorio `yolov8s-seg-640x640-w8a8-1` y comprobar que todas las entradas devuelven `OK`.
 - Latencia y throughput estimados: no disponible.
 
@@ -77,7 +77,7 @@ La model card no incluye metricas de mAP de caja ni de mAP de mascara, tampoco c
 
 | Modelo | Tarea | Parametros | Resolucion | Cuantizacion | Plataforma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| RK3588-SEGMENT-yolov8s-seg (este) | Segmentacion de instancias | no disponible en la model card (~11,8 M segun Ultralytics para el upstream) | 640x640 | w8a8 INT8 | NPU RK3588, runtime v2.4.0 | AGPL-3.0 | HuggingFace y ModelScope |
+| RK3588-SEGMENT-yolov8s-seg (este) | Segmentacion de instancias | no disponible en la model card (~11,8 M segun Ultralytics para el upstream) | 640x640 | w8a8 INT8 | NPU RK3588, runtime v2.4.0 | AGPL-3.0 | Hugging Face y ModelScope |
 | YOLOv8n-seg (upstream Ultralytics) | Segmentacion de instancias | ~3,4 M segun Ultralytics | 640x640 | punto flotante / exportable | GPU, CPU, exportable a otros runtimes | AGPL-3.0 | Repositorio Ultralytics |
 | YOLOv11n-seg en RK3588 (proyecto Ebwai) | Segmentacion de instancias | no disponible | no disponible | INT8 | NPU RK3588 | no disponible en la informacion recogida | GitHub |
 | YOLOv8-seg en Radxa / Seeed | Segmentacion de instancias | no disponible | 640x640 | no disponible | NPU RK3588 | segun proyecto upstream | Documentacion y laboratorio de demos |
@@ -98,7 +98,7 @@ Las cifras de parametros de los modelos upstream de Ultralytics proceden de su d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/RKNNAI/RK3588-SEGMENT-yolov8s-seg
+- Repositorio en Hugging Face: https://huggingface.co/RKNNAI/RK3588-SEGMENT-yolov8s-seg
 - Modelo origen (fork airockchip de Ultralytics YOLOv8): https://github.com/airockchip/ultralytics_yolov8
 - RKNN Model Zoo, ejemplo YOLOv8: https://github.com/airockchip/rknn_model_zoo/tree/main/examples/yolov8
 - Demo de YOLOv8-seg en RK3588 (Seeed reComputer AI Lab): https://sensecraft.seeed.cc/ai-lab/en/models/yolov8-seg/rk3588

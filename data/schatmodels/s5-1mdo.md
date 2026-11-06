@@ -4,7 +4,7 @@
 
 El modelo SAPI-5.1-Medium-Omni, publicado bajo el identificador `schatmodels/s5.1mdo`, es un sistema multimodal de 55 mil millones de parámetros que, según su autor (Sapiens Technology®️), opera con solo 32 mil millones de parámetros activos cuando se aplica cuantización Q2. Se presenta como capaz de interpretar y generar textos, imágenes, audios, vídeos y documentos, además de ofrecer búsqueda web en tiempo real y una ventana de contexto que el autor describe como "infinita". El repositorio tiene un tamaño de 116,5 GB, lo que sugiere que los pesos están almacenados en algún formato de precisión media o cuantizado.
 
-A pesar de las afirmaciones ambiciosas de la model card, la información pública es extremadamente limitada: no se especifican detalles de arquitectura, datos de entrenamiento, benchmarks ni requisitos de hardware. La licencia es propietaria ("other") y el autor prohíbe explícitamente la alteración o distribución del software. Con cero descargas y cero "me gusta" en HuggingFace, el modelo no parece haber sido validado por la comunidad. Esta ficha se basa únicamente en los datos proporcionados por el autor y debe interpretarse con cautela.
+A pesar de las afirmaciones ambiciosas de la model card, la información pública es extremadamente limitada: no se especifican detalles de arquitectura, datos de entrenamiento, benchmarks ni requisitos de hardware. La licencia es propietaria ("other") y el autor prohíbe explícitamente la alteración o distribución del software. Con cero descargas y cero "me gusta" en Hugging Face, el modelo no parece haber sido validado por la comunidad. Esta ficha se basa únicamente en los datos proporcionados por el autor y debe interpretarse con cautela.
 
 ## Especificaciones técnicas
 
@@ -80,5 +80,5 @@ No disponible. No se han publicado benchmarks ni especificaciones técnicas sufi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/schatmodels/s5.1mdo
+- Repositorio Hugging Face: https://huggingface.co/schatmodels/s5.1mdo
 - No se han encontrado papers, blogs, repositorios de código o demos adicionales relacionados con este modelo.

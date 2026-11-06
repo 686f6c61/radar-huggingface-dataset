@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `syam2004/sentiment-analysis` es un clasificador de análisis de sentimiento basado en la arquitectura DistilBERT, desarrollado por el usuario syam2004 y publicado en HuggingFace Hub. Con 66.955.010 parámetros y un tamaño de repositorio de 0,3 GB, se trata de un modelo compacto orientado a la clasificación de texto en categorías de sentimiento (presumiblemente positivo, negativo y neutral, aunque no se especifica explícitamente). Su licencia MIT permite uso comercial y modificación sin restricciones significativas.
+El modelo `syam2004/sentiment-analysis` es un clasificador de análisis de sentimiento basado en la arquitectura DistilBERT, desarrollado por el usuario syam2004 y publicado en Hugging Face Hub. Con 66.955.010 parámetros y un tamaño de repositorio de 0,3 GB, se trata de un modelo compacto orientado a la clasificación de texto en categorías de sentimiento (presumiblemente positivo, negativo y neutral, aunque no se especifica explícitamente). Su licencia MIT permite uso comercial y modificación sin restricciones significativas.
 
 La relevancia de este modelo radica en su ligereza: al estar basado en DistilBERT, una versión destilada de BERT, ofrece un equilibrio entre rendimiento y eficiencia computacional, lo que lo hace adecuado para despliegues en entornos con recursos limitados. Sin embargo, la documentación disponible es mínima: la model card solo incluye la licencia, sin información sobre el proceso de entrenamiento, los datos utilizados, los idiomas soportados ni los resultados de evaluación. Esto limita su aplicabilidad en producción sin una validación previa por parte del usuario.
 
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - VRAM estimada para inferencia: con 66,9 millones de parámetros, el modelo ocupa aproximadamente 268 MB en FP32 y 134 MB en FP16. En cuantización INT8 (si se aplicara) ocuparía unos 67 MB, aunque no se proporcionan pesos cuantizados.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM es suficiente. Modelos como NVIDIA GTX 1050 Ti, RTX 2060 o superiores funcionan sin problemas. También es viable en CPUs modernas con 8 GB de RAM.
 - Compatibilidad con GPU de consumo: sí, cabe en cualquier GPU de consumo actual, incluidas las integradas de Intel o AMD con suficiente RAM compartida.
-- Opciones de despliegue: al ser un modelo safetensors estándar, puede cargarse con la librería `transformers` de HuggingFace, y servirse con herramientas como FastAPI, ONNX Runtime o TensorFlow Serving. También es compatible con vLLM y TGI si se convierte a los formatos adecuados, aunque al ser un encoder pequeño, la inferencia en CPU suele ser suficiente.
+- Opciones de despliegue: al ser un modelo safetensors estándar, puede cargarse con la librería `transformers` de Hugging Face, y servirse con herramientas como FastAPI, ONNX Runtime o TensorFlow Serving. También es compatible con vLLM y TGI si se convierte a los formatos adecuados, aunque al ser un encoder pequeño, la inferencia en CPU suele ser suficiente.
 - Latencia y throughput estimados: no hay datos oficiales. En una CPU moderna (por ejemplo, Intel i7 de 11ª generación), la clasificación de un texto de 128 tokens tardaría entre 10 y 50 ms. En una GPU como RTX 3090, la latencia sería inferior a 5 ms por lote pequeño.
 
 ## Comparativa con modelos similares
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 | Modelo | Parametros | Contexto | Licencia | Notas |
 |---|---|---|---|---|
 | syam2004/sentiment-analysis | 66,9 M | no disponible | MIT | Documentación mínima, sin benchmarks |
-| DistilBERT-base-uncased (HuggingFace) | 66,9 M | 512 tokens | Apache 2.0 | Modelo base preentrenado, requiere fine-tuning |
+| DistilBERT-base-uncased (Hugging Face) | 66,9 M | 512 tokens | Apache 2.0 | Modelo base preentrenado, requiere fine-tuning |
 | BERT-base-uncased | 110 M | 512 tokens | Apache 2.0 | Modelo más grande, mayor capacidad pero más lento |
 | RoBERTa-base | 125 M | 512 tokens | MIT | Entrenado con más datos, mejor rendimiento en tareas de clasificación |
 
@@ -76,4 +76,4 @@ La comparativa se basa en arquitecturas similares, pero no hay datos de rendimie
 
 ## Enlaces
 
-- [HuggingFace - syam2004/sentiment-analysis](https://huggingface.co/syam2004/sentiment-analysis)
+- [Hugging Face - syam2004/sentiment-analysis](https://huggingface.co/syam2004/sentiment-analysis)

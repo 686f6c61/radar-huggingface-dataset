@@ -82,9 +82,9 @@ El propio autor advierte que la muestra es pequena, que no establece una clasifi
 
 | Modelo | Parametros | Contexto | Cuantizacion | Perplejidad WikiText (reportada) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| cafkafk/Qwen3.6-35B-A3B-GGUF (este) | ~34,66 mil millones totales | 262.144 declarados (validado 8.192) | Q4_K_M texto + Q8_0 vision + Q8_0 MTP | 5,0732 ±0,37867 | Apache-2.0 | HuggingFace, GGUF |
-| Qwen/Qwen3.6-35B-A3B (BF16 de referencia) | ~34,66 mil millones totales | 262.144 | BF16 | 5,1234 ±0,39124 | Apache-2.0 | HuggingFace, safetensors |
-| ggml-org/Qwen3.6-35B-A3B-GGUF (Q4_K_M) | ~34,66 mil millones totales | 262.144 | Q4_K_M con otra mezcla de precisiones de tensor | 5,2268 ±0,39890 | Apache-2.0 | HuggingFace, GGUF |
+| cafkafk/Qwen3.6-35B-A3B-GGUF (este) | ~34,66 mil millones totales | 262.144 declarados (validado 8.192) | Q4_K_M texto + Q8_0 vision + Q8_0 MTP | 5,0732 ±0,37867 | Apache-2.0 | Hugging Face, GGUF |
+| Qwen/Qwen3.6-35B-A3B (BF16 de referencia) | ~34,66 mil millones totales | 262.144 | BF16 | 5,1234 ±0,39124 | Apache-2.0 | Hugging Face, safetensors |
+| ggml-org/Qwen3.6-35B-A3B-GGUF (Q4_K_M) | ~34,66 mil millones totales | 262.144 | Q4_K_M con otra mezcla de precisiones de tensor | 5,2268 ±0,39890 | Apache-2.0 | Hugging Face, GGUF |
 
 No se dispone de datos de otros modelos comparables (mismo tamano o misma tarea) en la informacion proporcionada; no se incluyen por tanto alternativas adicionales.
 
@@ -107,7 +107,7 @@ No se dispone de datos de otros modelos comparables (mismo tamano o misma tarea)
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/cafkafk/Qwen3.6-35B-A3B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/cafkafk/Qwen3.6-35B-A3B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Revision de origen del modelo base: `995ad96eacd98c81ed38be0c5b274b04031597b0`
 - Cuantizacion de comparacion de ggml-org: https://huggingface.co/ggml-org/Qwen3.6-35B-A3B-GGUF (revision `baec3ebee244827cda0f4557eafa8b28f7545fa6`)

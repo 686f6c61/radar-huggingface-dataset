@@ -89,7 +89,7 @@ La comparativa con `mlx-community/Qwen3.8-27B-8bit` no incluye datos de fidelida
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/p4ik/Qwen3.8-27B-MLX-8bit
+- Repositorio Hugging Face: https://huggingface.co/p4ik/Qwen3.8-27B-MLX-8bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Versión de unsloth con plantilla endurecida: https://huggingface.co/unsloth/Qwen3.8-27B
 - Otras cuantizaciones del mismo autor:

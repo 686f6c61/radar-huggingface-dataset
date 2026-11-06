@@ -71,9 +71,9 @@ El autor no publica MMLU, HumanEval, GSM8K ni resultados de tareas generativas; 
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| phonepack-de-en (este pack) | no disponible | no disponible | chrF++ 64,81; spBLEU 44,79 (FLORES-200 devtest, beam 4) | Apache-2.0 | HuggingFace |
-| WindyTranslate/translate-de-en | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| Helsinki-NLP/opus-mt-de-en | no disponible | no disponible | no disponible | Apache-2.0 | HuggingFace |
+| phonepack-de-en (este pack) | no disponible | no disponible | chrF++ 64,81; spBLEU 44,79 (FLORES-200 devtest, beam 4) | Apache-2.0 | Hugging Face |
+| WindyTranslate/translate-de-en | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| Helsinki-NLP/opus-mt-de-en | no disponible | no disponible | no disponible | Apache-2.0 | Hugging Face |
 
 No se dispone de datos de otros modelos comparables en la información proporcionada.
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`amitiyer1984/zero-shot-transfer-playground` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación sobre transferencia zero-shot publicado en HuggingFace. La model card es explícita al respecto: el artefacto principal es `summary.md`, un documento que describe el alcance de una pregunta de investigación, los posibles factores de confusión, una comparación propuesta con baselines emparejados y una lista de comprobaciones de reproducibilidad. El autor declara que no reclama mejoras de benchmark, ablaciones completadas, código liberado ni checkpoint entrenado.
+`amitiyer1984/zero-shot-transfer-playground` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación sobre transferencia zero-shot publicado en Hugging Face. La model card es explícita al respecto: el artefacto principal es `summary.md`, un documento que describe el alcance de una pregunta de investigación, los posibles factores de confusión, una comparación propuesta con baselines emparejados y una lista de comprobaciones de reproducibilidad. El autor declara que no reclama mejoras de benchmark, ablaciones completadas, código liberado ni checkpoint entrenado.
 
 El repositorio incluye un fichero en formato safetensors con un total de 24.832 parámetros, una cifra que corresponde a un artefacto experimental mínimo (del orden de decenas o centenas de kilobytes) y no a un modelo utilizable para inferencia generativa. El tamaño declarado del repositorio es de 0.0 GB. No se especifica pipeline, idiomas soportados ni arquitectura concreta más allá de la etiqueta `transformer` en los tags.
 
@@ -35,7 +35,7 @@ No se documenta ningún proceso de entrenamiento: no se indica número de tokens
 - No hay evidencia documentada de generación de texto, razonamiento, código ni matemáticas.
 - No se documenta soporte de tool calling ni function calling.
 - No se documenta soporte de agentes ni razonamiento multi-paso.
-- No se declaran capacidades multilingües; el campo de idiomas aparece vacío en HuggingFace.
+- No se declaran capacidades multilingües; el campo de idiomas aparece vacío en Hugging Face.
 - No se documentan capacidades especiales (modo thinking, visión, audio).
 - La única capacidad verificable del repositorio es servir como documento de notas de investigación sobre transferencia zero-shot, con secciones de alcance, factores de confusión, baselines propuestos, contexto de evaluación y preguntas abiertas.
 
@@ -66,7 +66,7 @@ No existe una categoría de modelos comparables directa, porque este repositorio
 
 | Elemento | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| zero-shot-transfer-playground | 24.832 | no disponible | cc-by-4.0 | HuggingFace, notas y artefacto mínimo |
+| zero-shot-transfer-playground | 24.832 | no disponible | cc-by-4.0 | Hugging Face, notas y artefacto mínimo |
 | CLIP (referencia de zero-shot visual) | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | modelo publicado por su autor original |
 | FLAN-T5 (referencia de zero-shot en NLP) | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | modelo publicado por su autor original |
 | T0 (referencia de zero-shot en NLP) | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | modelo publicado por su autor original |
@@ -85,7 +85,7 @@ La comparación se ofrece únicamente como orientación temática; no se dispone
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amitiyer1984/zero-shot-transfer-playground
+- Hugging Face: https://huggingface.co/amitiyer1984/zero-shot-transfer-playground
 - Zero-shot learning, Wikipedia: https://en.wikipedia.org/wiki/Zero-shot_learning
 - Zero Shot transfer, AI Research Papers: https://www.aimodels.fyi/research-topics/zero-shot-transfer
 - Zero Shot transfer learning, AI Research Papers: https://www.aimodels.fyi/research-topics/zero-shot-transfer-learning

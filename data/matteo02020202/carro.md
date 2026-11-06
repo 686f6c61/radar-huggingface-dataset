@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Matteo02020202/carro` es un repositorio alojado en HuggingFace por el usuario Matteo02020202. En el momento de la consulta, el repositorio no tiene descargas ni likes, y su model card se limita a un bloque de metadatos con la licencia Apache 2.0, sin ningun otro contenido descriptivo. No se declara pipeline, idioma, arquitectura ni tamano.
+`Matteo02020202/carro` es un repositorio alojado en Hugging Face por el usuario Matteo02020202. En el momento de la consulta, el repositorio no tiene descargas ni likes, y su model card se limita a un bloque de metadatos con la licencia Apache 2.0, sin ningun otro contenido descriptivo. No se declara pipeline, idioma, arquitectura ni tamano.
 
 No es posible determinar que tipo de artefacto contiene el repositorio: podria tratarse de pesos de un modelo de lenguaje, de un modelo de vision, de un checkpoint experimental o incluso de un repositorio de prueba sin contenido funcional. El nombre "carro" (vehiculo automovil en castellano) sugiere una tematica relacionada con automocion, pero no hay ninguna evidencia en la informacion disponible que lo confirme ni que indique la tarea concreta.
 
@@ -46,7 +46,7 @@ Tampoco hay informacion sobre el proceso de entrenamiento: numero de tokens, com
 
 - No disponible. Sin informacion sobre la tarea, la modalidad ni el formato de entrada/salida, no es posible proponer casos de uso concretos y realistas.
 - Cualquier propuesta de aplicacion practica seria especulativa y no estaria respaldada por datos verificables del repositorio.
-- Se recomienda, antes de plantear un caso de uso, inspeccionar los ficheros del repositorio en HuggingFace y contactar con el autor para obtener documentacion tecnica.
+- Se recomienda, antes de plantear un caso de uso, inspeccionar los ficheros del repositorio en Hugging Face y contactar con el autor para obtener documentacion tecnica.
 
 ## Benchmarks y rendimiento
 
@@ -76,7 +76,7 @@ No disponible. Al no conocerse la categoria, el tamano ni la tarea del modelo, n
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Matteo02020202/carro
+- Repositorio en Hugging Face: https://huggingface.co/Matteo02020202/carro
 - Resultados de busqueda web no relacionados de forma verificada con el modelo:
   - https://generate.modelloturbo.com/
   - https://www.modelo.io/ai-creation?hl=en

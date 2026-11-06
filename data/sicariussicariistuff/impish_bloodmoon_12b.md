@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Impish_Bloodmoon_12B es un ajuste fino (fine-tune) del modelo Mistral-Nemo-Instruct-2407 desarrollado por el usuario independiente SicariusSicariiStuff. Se trata de un modelo de lenguaje de 12.247.802.880 parámetros (aproximadamente 12,2 mil millones) orientado a generación de texto en inglés, con un enfoque declarado hacia el roleplay y las narrativas de aventura, tal como indican los enlaces a las "Roleplay cards" y "Adventure cards" que el autor mantiene en su perfil de HuggingFace.
+Impish_Bloodmoon_12B es un ajuste fino (fine-tune) del modelo Mistral-Nemo-Instruct-2407 desarrollado por el usuario independiente SicariusSicariiStuff. Se trata de un modelo de lenguaje de 12.247.802.880 parámetros (aproximadamente 12,2 mil millones) orientado a generación de texto en inglés, con un enfoque declarado hacia el roleplay y las narrativas de aventura, tal como indican los enlaces a las "Roleplay cards" y "Adventure cards" que el autor mantiene en su perfil de Hugging Face.
 
 El modelo parte de la arquitectura Mistral Nemo, un transformer denso con atención por ventanas deslizantes y contexto largo, y se ha entrenado sobre el dataset propietario `SicariusSicariiStuff/UBW_Tapestries`. La model card original está mayoritariamente compuesta por elementos HTML/CSS de presentación y enlaces, con muy poca documentación técnica sustantiva sobre el proceso de entrenamiento, los hiperparámetros o la composición del dataset.
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| Impish_Bloodmoon_12B | 12,2B | No disponible (base: 128k) | Apache 2.0 | Roleplay / narrativa | HuggingFace, safetensors |
-| Mistral-Nemo-Instruct-2407 | 12,2B | 128k | Apache 2.0 | Asistente general | HuggingFace, safetensors |
-| Mistral-7B-Instruct-v0.3 | 7,2B | 32k | Apache 2.0 | Asistente general | HuggingFace, safetensors |
-| Llama-3.1-8B-Instruct | 8,0B | 128k | Llama 3.1 Community License | Asistente general | HuggingFace, safetensors |
+| Impish_Bloodmoon_12B | 12,2B | No disponible (base: 128k) | Apache 2.0 | Roleplay / narrativa | Hugging Face, safetensors |
+| Mistral-Nemo-Instruct-2407 | 12,2B | 128k | Apache 2.0 | Asistente general | Hugging Face, safetensors |
+| Mistral-7B-Instruct-v0.3 | 7,2B | 32k | Apache 2.0 | Asistente general | Hugging Face, safetensors |
+| Llama-3.1-8B-Instruct | 8,0B | 128k | Llama 3.1 Community License | Asistente general | Hugging Face, safetensors |
 
 La comparación con Mistral-Nemo-Instruct-2407 es la más directa, ya que Impish_Bloodmoon_12B es un fine-tune suyo: comparten arquitectura, tamaño y licencia, y difieren en el ajuste estilístico y en la documentación técnica disponible (mucho más exhaustiva en el modelo original de Mistral AI). Frente a Mistral-7B-Instruct-v0.3 y Llama-3.1-8B-Instruct, el modelo es un 50-70% más grande, lo que implica mayores requisitos de VRAM, pero también mayor capacidad potencial; sin embargo, no hay benchmarks publicados que permitan comparar rendimiento real. No se dispone de datos de benchmarks para establecer comparaciones cuantitativas.
 
@@ -88,7 +88,7 @@ La comparación con Mistral-Nemo-Instruct-2407 es la más directa, ya que Impish
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SicariusSicariiStuff/Impish_Bloodmoon_12B
+- Modelo en Hugging Face: https://huggingface.co/SicariusSicariiStuff/Impish_Bloodmoon_12B
 - Dataset de entrenamiento: https://huggingface.co/datasets/SicariusSicariiStuff/UBW_Tapestries
 - Modelo base: https://huggingface.co/mistralai/Mistral-Nemo-Instruct-2407
 - Roleplay cards del autor: https://huggingface.co/SicariusSicariiStuff/Roleplay_Cards

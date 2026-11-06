@@ -66,7 +66,7 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- [Repositorio GGUF en HuggingFace](https://huggingface.co/mradermacher/Agens-Pilot-GGUF)
+- [Repositorio GGUF en Hugging Face](https://huggingface.co/mradermacher/Agens-Pilot-GGUF)
 - [Modelo base Blockway/Agens-Pilot](https://huggingface.co/Blockway/Agens-Pilot)
 - [Página de solicitudes de modelos de mradermacher](https://huggingface.co/mradermacher/model_requests)
 - [Guía de uso de GGUF de TheBloke](https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF)

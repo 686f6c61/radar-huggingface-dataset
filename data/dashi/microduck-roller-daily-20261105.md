@@ -6,7 +6,7 @@
 
 El modelo se presenta como una "reentrada diaria" (daily re-entry) de `dashi/microduck-roller-remix-r900`, una política calificada como perpetua, es decir, que se ejecuta de forma continua hasta recibir una orden de parada. Es un finetune de `DenRakEiw/microduck-senate_duck_0904` y se distribuye con la libreria `microduck` y el pipeline `robotics`. Su relevancia es acotada al ambito de la robótica de bajo coste y el aprendizaje por refuerzo aplicado a locomocion, sin relación con modelos generativos de gran escala.
 
-La información disponible es muy escasa: no se publican parametros, contexto, idiomas, licencia ni benchmarks. La ficha refleja por tanto los datos presentes en la model card y en los metadatos de HuggingFace, marcando explicitamente como "no disponible" todo aquello que no se documenta.
+La información disponible es muy escasa: no se publican parametros, contexto, idiomas, licencia ni benchmarks. La ficha refleja por tanto los datos presentes en la model card y en los metadatos de Hugging Face, marcando explicitamente como "no disponible" todo aquello que no se documenta.
 
 ## Especificaciones tecnicas
 
@@ -74,9 +74,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `dashi/microduck-roller-daily-20261105` | Política RL para microduck (slot `walk`) | no disponible | no aplica (obs. 61 dim.) | no disponible | HuggingFace, ONNX |
-| `DenRakEiw/microduck-senate_duck_0904` | Política RL para microduck (modelo base) | no disponible | no aplica | no disponible | HuggingFace |
-| `dashi/microduck-roller-remix-r900` | Política RL para microduck (origen de la reentrada) | no disponible | no aplica | no disponible | HuggingFace |
+| `dashi/microduck-roller-daily-20261105` | Política RL para microduck (slot `walk`) | no disponible | no aplica (obs. 61 dim.) | no disponible | Hugging Face, ONNX |
+| `DenRakEiw/microduck-senate_duck_0904` | Política RL para microduck (modelo base) | no disponible | no aplica | no disponible | Hugging Face |
+| `dashi/microduck-roller-remix-r900` | Política RL para microduck (origen de la reentrada) | no disponible | no aplica | no disponible | Hugging Face |
 
 No se dispone de datos cuantitativos de rendimiento para establecer una comparación tecnica entre estas políticas. Las alternativas identificadas pertenecen al mismo ecosistema microduck y comparten la misma falta de especificaciones publicadas.
 
@@ -93,7 +93,7 @@ No se dispone de datos cuantitativos de rendimiento para establecer una comparac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dashi/microduck-roller-daily-20261105
+- Modelo en Hugging Face: https://huggingface.co/dashi/microduck-roller-daily-20261105
 - Modelo base: https://huggingface.co/DenRakEiw/microduck-senate_duck_0904
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento: `pollen-robotics/microduck_rl` (rama `roll-backward`, commit `83599404a`); no se ha encontrado una URL publica en la busqueda web.

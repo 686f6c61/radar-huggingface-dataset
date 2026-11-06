@@ -81,9 +81,9 @@ La comparativa con Whisper large-v3 es la más relevante por tamaño similar, au
 
 ## Enlaces
 
-- Repositorio HuggingFace (slyusarev): https://huggingface.co/slyusarev/Qwen3-ASR-1.7B-GGUF
-- Repositorio HuggingFace (ggml-org): https://huggingface.co/ggml-org/Qwen3-ASR-1.7B-GGUF
-- Repositorio HuggingFace (Renesas): https://huggingface.co/Renesas/Qwen3-ASR-1.7B-GGUF
+- Repositorio Hugging Face (slyusarev): https://huggingface.co/slyusarev/Qwen3-ASR-1.7B-GGUF
+- Repositorio Hugging Face (ggml-org): https://huggingface.co/ggml-org/Qwen3-ASR-1.7B-GGUF
+- Repositorio Hugging Face (Renesas): https://huggingface.co/Renesas/Qwen3-ASR-1.7B-GGUF
 - Repositorio GitHub oficial: https://github.com/QwenLM/Qwen3-ASR
 - Informe técnico en arXiv: https://arxiv.org/html/2601.21337
 - Página del modelo en Inferix: https://inferix.co/models/ggml-org/Qwen3-ASR-1.7B-GGUF

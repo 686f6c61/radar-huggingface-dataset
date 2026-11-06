@@ -87,7 +87,7 @@ No se dispone de informacion sobre otros LoRA de personaje comparables en la doc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abbuibuibui/YusaNishimori-Lora
+- Modelo en Hugging Face: https://huggingface.co/abbuibuibui/YusaNishimori-Lora
 - Dataset de entrenamiento: https://huggingface.co/datasets/abbuibuibui/YusaNishimori-Dataset
 - Modelo en ModelScope: https://www.modelscope.cn/models/abbuibuibui/YusaNishimori-Lora
 - Notas de evaluacion en chino: `evaluation/横向测评记录.md` (dentro del repositorio)

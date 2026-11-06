@@ -23,7 +23,7 @@ No obstante, se trata de un modelo muy especializado y de nicho: el nombre indic
 
 ## Arquitectura y entrenamiento
 
-El modelo base sigue la arquitectura Qwen2, un transformer decoder-only con atencion causal estandar. El tag `qwen2` de HuggingFace confirma la familia arquitectonica, pero no se dispone de detalles adicionales sobre numero de capas, dimensiones ocultas, cabezas de atencion ni vocabulario. Con 1,78 mil millones de parametros encaja en el rango de los modelos Qwen2.5-1.5B o Qwen2-1.5B, aunque el recuento exacto no coincide con ninguno de ellos de forma directa.
+El modelo base sigue la arquitectura Qwen2, un transformer decoder-only con atencion causal estandar. El tag `qwen2` de Hugging Face confirma la familia arquitectonica, pero no se dispone de detalles adicionales sobre numero de capas, dimensiones ocultas, cabezas de atencion ni vocabulario. Con 1,78 mil millones de parametros encaja en el rango de los modelos Qwen2.5-1.5B o Qwen2-1.5B, aunque el recuento exacto no coincide con ninguno de ellos de forma directa.
 
 El nombre del modelo revela parte del pipeline de entrenamiento: `R1Distill` sugiere destilacion desde DeepSeek-R1, `teacher` indica que se usa como modelo profesor en un esquema de destilacion, `OPD` apunta a on-policy distillation y `RLVE` a reinforcement learning with verifiable environments/execution. La tarea `PathCounting` (conteo de caminos) es un problema de razonamiento estructurado tipico en benchmarks de RL verificable. No se han publicado detalles sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron fases de RLHF o DPO. La cuantizacion GGUF se genero con llama.cpp, lo que implica conversion desde safetensors y ofrece todos los niveles estandar de cuantizacion K-quants y legacy.
 
@@ -91,7 +91,7 @@ La comparacion con DeepSeek-R1-Distill-Qwen-1.5B es la mas directa por tamano y 
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/tinyopsec/rlve-opd-teacher-R1Distill-125-BitAndZero_PathCounting-20261025-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/tinyopsec/rlve-opd-teacher-R1Distill-125-BitAndZero_PathCounting-20261025-GGUF
 - Modelo base: https://huggingface.co/davidheineman/rlve-opd-teacher-R1Distill-125-BitAndZero_PathCounting-20261025
 - llama.cpp (herramienta de cuantizacion e inferencia): https://github.com/ggerganov/llama.cpp
 - DeepSeek-R1 (referencia de la destilacion): https://github.com/deepseek-ai/DeepSeek-R1

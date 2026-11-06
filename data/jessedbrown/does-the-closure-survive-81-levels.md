@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace no contiene un modelo de lenguaje ni una red neuronal, sino una demostración matemática computacional publicada como artefacto de código. Su autor, Jesse Daniel Brown (identificado en la model card como "OP-JESSE"), lo presenta como la verificación de que una estructura algebraica concreta (tres brazos que suman cero y un centro libre) se mantiene cerrada bajo anidamiento recursivo a lo largo de una escalera de profundidad basada en potencias de tres (3ⁿ). El problema que aborda es si, al anidar 27 o 81 copias de la estructura, el centro permanece libre o si se acumula un residuo por nivel que rompería la construcción en alguna profundidad.
+Este repositorio de Hugging Face no contiene un modelo de lenguaje ni una red neuronal, sino una demostración matemática computacional publicada como artefacto de código. Su autor, Jesse Daniel Brown (identificado en la model card como "OP-JESSE"), lo presenta como la verificación de que una estructura algebraica concreta (tres brazos que suman cero y un centro libre) se mantiene cerrada bajo anidamiento recursivo a lo largo de una escalera de profundidad basada en potencias de tres (3ⁿ). El problema que aborda es si, al anidar 27 o 81 copias de la estructura, el centro permanece libre o si se acumula un residuo por nivel que rompería la construcción en alguna profundidad.
 
 El resultado central que reporta la model card es que, trabajando con aritmética entera exacta, la clausura se mantiene en todas las profundidades probadas (hasta 13 por enumeración exhaustiva, y hasta 27 y 81 por camino único con aritmética de fracciones), mientras que en coma flotante de 64 bits el residuo aparece ya en la profundidad 1 y crece hasta valores del orden de 10²⁴ en la profundidad 81. El repositorio no incluye pesos, tokenizador ni pipeline de inferencia; se distribuye como un script `compose.py` que se ejecuta en aproximadamente un minuto y un `index.html` autocontenido.
 
@@ -103,7 +103,7 @@ El propio autor advierte que la magnitud en profundidad 81 en coma flotante est�
 
 ## Comparativa con modelos similares
 
-No disponible. Este repositorio no pertenece a una categoría de modelos comparables: no es un LLM, ni un modelo de visión, ni un sistema de embeddings, y no existen alternativas equivalentes en el ecosistema de HuggingFace con las que confrontar parámetros, contexto, rendimiento o licencia. Cualquier comparación con modelos de lenguaje sería categorialmente incorrecta.
+No disponible. Este repositorio no pertenece a una categoría de modelos comparables: no es un LLM, ni un modelo de visión, ni un sistema de embeddings, y no existen alternativas equivalentes en el ecosistema de Hugging Face con las que confrontar parámetros, contexto, rendimiento o licencia. Cualquier comparación con modelos de lenguaje sería categorialmente incorrecta.
 
 ## Limitaciones y advertencias
 
@@ -118,7 +118,7 @@ No disponible. Este repositorio no pertenece a una categoría de modelos compara
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jessedbrown/does-the-closure-survive-81-levels
+- Repositorio en Hugging Face: https://huggingface.co/Jessedbrown/does-the-closure-survive-81-levels
 - Demo de un clic: https://jessebrown1980.github.io/does-the-closure-survive-81-levels/
 - Punto de entrada del autor ("the bridge"): https://jessebrown1980.github.io/the-bridge-to-all-of-it/
 - Repositorio complementario "how-and-why-the-system-works": https://github.com/JesseBrown1980/how-and-why-the-system-works

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `siddharthmb/2026.TA.gemma2_2b_sparse_probe_tc32768_l1_0p0005_tc32768_decb_l1w0.0005_tarbb_lb2.0_sl15529833` es un adaptador de transcoders dispersos (sparse transcoder adapter) construido sobre `google/gemma-2-2b` y publicado por el usuario siddharthmb en HuggingFace. No se trata de un modelo de lenguaje generalista, sino de un artefacto de investigacion en interpretabilidad mecanistica: sustituye o complementa las capas MLP del backbone Gemma 2 mediante diccionarios dispersos de 32.768 caracteristicas entrenados en modo "bridging" contra el modelo de referencia `google/gemma-2-2b-it`.
+El modelo `siddharthmb/2026.TA.gemma2_2b_sparse_probe_tc32768_l1_0p0005_tc32768_decb_l1w0.0005_tarbb_lb2.0_sl15529833` es un adaptador de transcoders dispersos (sparse transcoder adapter) construido sobre `google/gemma-2-2b` y publicado por el usuario siddharthmb en Hugging Face. No se trata de un modelo de lenguaje generalista, sino de un artefacto de investigacion en interpretabilidad mecanistica: sustituye o complementa las capas MLP del backbone Gemma 2 mediante diccionarios dispersos de 32.768 caracteristicas entrenados en modo "bridging" contra el modelo de referencia `google/gemma-2-2b-it`.
 
 El checkpoint ocupa 13,1 GB y declara 6.541.122.304 parametros en safetensors, muy por encima de los aproximadamente 2,6 B del backbone Gemma 2 2B, lo que indica que el recuento incluye los parametros de los transcoders ademas del modelo base. El entrenamiento es de escala reducida (1 epoca, batch size 1, learning rate 8e-4, perdida KL con `lambda_bridge=2.0` y `lambda_adapt=1.0`) sobre `fineweb-1m-sample` y un split de LMSYS-Chat-1M, por lo que debe interpretarse como una sonda de investigacion y no como un modelo listo para produccion.
 
@@ -74,9 +74,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (transcoder Gemma 2 2B) | 6.541.122.304 (con transcoders) | No especificado (base: 8192) | Adaptador de transcoders dispersos sobre gemma2 | No disponible en el repositorio | HuggingFace, requiere codigo propio |
-| google/gemma-2-2b | Aprox. 2,6 B (dato publico del modelo base) | 8192 tokens (dato publico del modelo base) | Transformer decoder-only preentrenado | Licencia Gemma de Google | HuggingFace |
-| google/gemma-2-2b-it | Aprox. 2,6 B (dato publico del modelo base) | 8192 tokens (dato publico del modelo base) | Transformer decoder-only ajustado por instrucciones | Licencia Gemma de Google | HuggingFace |
+| Este adaptador (transcoder Gemma 2 2B) | 6.541.122.304 (con transcoders) | No especificado (base: 8192) | Adaptador de transcoders dispersos sobre gemma2 | No disponible en el repositorio | Hugging Face, requiere codigo propio |
+| google/gemma-2-2b | Aprox. 2,6 B (dato publico del modelo base) | 8192 tokens (dato publico del modelo base) | Transformer decoder-only preentrenado | Licencia Gemma de Google | Hugging Face |
+| google/gemma-2-2b-it | Aprox. 2,6 B (dato publico del modelo base) | 8192 tokens (dato publico del modelo base) | Transformer decoder-only ajustado por instrucciones | Licencia Gemma de Google | Hugging Face |
 
 Nota: los datos de las filas de `google/gemma-2-2b` y `google/gemma-2-2b-it` proceden de informacion publica sobre esos modelos base y no del repositorio analizado. No se dispone de una comparativa de rendimiento porque no hay benchmarks publicados para el adaptador.
 
@@ -94,7 +94,7 @@ Nota: los datos de las filas de `google/gemma-2-2b` y `google/gemma-2-2b-it` pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/siddharthmb/2026.TA.gemma2_2b_sparse_probe_tc32768_l1_0p0005_tc32768_decb_l1w0.0005_tarbb_lb2.0_sl15529833
+- Modelo en Hugging Face: https://huggingface.co/siddharthmb/2026.TA.gemma2_2b_sparse_probe_tc32768_l1_0p0005_tc32768_decb_l1w0.0005_tarbb_lb2.0_sl15529833
 - Modelo base: https://huggingface.co/google/gemma-2-2b
 - Modelo de referencia y tokenizer: https://huggingface.co/google/gemma-2-2b-it
 - Repositorio GitHub del proyecto: https://github.com/Sid-MB/transcoder-adapters

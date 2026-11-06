@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rh-moss-image-base-int8-convrot.safetensors-unet` es un fichero de pesos UNET para pipelines de generación de vídeo a partir de texto (etiqueta `text-to-video` en HuggingFace), distribuido por RunningHubAI a través de su cuenta de HuggingFace. El repositorio no contiene el modelo completo, sino un único fichero `moss_image_base_int8_convrot.safetensors` de 5163 MiB (~5,4 GB) etiquetado como `unet` y orientado a su carga en ComfyUI o en la plataforma RunningHub.
+`rh-moss-image-base-int8-convrot.safetensors-unet` es un fichero de pesos UNET para pipelines de generación de vídeo a partir de texto (etiqueta `text-to-video` en Hugging Face), distribuido por RunningHubAI a través de su cuenta de Hugging Face. El repositorio no contiene el modelo completo, sino un único fichero `moss_image_base_int8_convrot.safetensors` de 5163 MiB (~5,4 GB) etiquetado como `unet` y orientado a su carga en ComfyUI o en la plataforma RunningHub.
 
 El nombre del fichero indica una cuantización a 8 bits (`int8`) y un sufijo `convrot` que sugiere la aplicación de alguna transformación de rotación previa a la cuantización, aunque el autor no documenta el método. El modelo del que deriva, identificado en el nombre como `moss_image_base`, no se describe en la model card: no se detallan arquitectura, número de parámetros, datos de entrenamiento ni resultados de evaluación.
 
@@ -67,7 +67,7 @@ No se dispone de información verificable sobre el modelo base `moss image base`
 
 | Modelo | Parametros | Contexto / duracion | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| rh-moss-image-base-int8-convrot (este) | no disponible | no disponible | no disponible | HuggingFace (0 descargas) y RunningHub |
+| rh-moss-image-base-int8-convrot (este) | no disponible | no disponible | no disponible | Hugging Face (0 descargas) y RunningHub |
 | Alternativas de text-to-video de la misma categoria | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -85,7 +85,7 @@ No se dispone de información verificable sobre el modelo base `moss image base`
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/RunningHubAI/rh-moss-image-base-int8-convrot.safetensors-unet
+- Repositorio en Hugging Face: https://huggingface.co/RunningHubAI/rh-moss-image-base-int8-convrot.safetensors-unet
 - Modelo original en RunningHub: https://www.runninghub.ai/model/public/2111391872714301441
 - Página del autor en RunningHub: https://www.runninghub.ai/user-center/2025565893677027330
 - RunningHub (sitio internacional): https://www.runninghub.ai

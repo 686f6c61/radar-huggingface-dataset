@@ -25,7 +25,7 @@ Su relevancia es fundamentalmente educativa y de investigación aplicada: la mod
 | Formato de salida | JEV (`typesafe/jev-1.13`): elección, probabilidades por opción, confianza y motivo |
 | Simulador de entrenamiento | CONNECT TYCOON (empresa sintética, mes de 20 días laborables) |
 | Configuración de empresa reportada | `warehouse: 250.0`, `base_demand: 40.0`, `unit_cost: 1.5`, `order_scale: 1.0`, `staff_bonus: 0`, `wage: 0.0`, `ad_power: 1.0`, `fraud_tool: 0`, `extra_cs: 0`, `extra_refund: 0` |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 | Fecha de creación | 2026-10-20 |
 
 ## Arquitectura y entrenamiento
@@ -84,7 +84,7 @@ No se conocen políticas públicas equivalentes de la misma categoría (decisió
 
 | Modelo | Tipo | Parametros | Contexto | Beneficio mensual | Satisfaccion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| connectailab-rl-altos-v1-teacher | Politica RL (PPO + imitacion) | No disponible | No aplica | 11,15 M KRW | 96 % | Apache 2.0 | HuggingFace |
+| connectailab-rl-altos-v1-teacher | Politica RL (PPO + imitacion) | No disponible | No aplica | 11,15 M KRW | 96 % | Apache 2.0 | Hugging Face |
 | Director de reglas (baseline del autor) | Heuristico | No aplica | No aplica | 3,24 M KRW | 79 % | No disponible | Solo como referencia en la model card |
 | Otras politicas publicas comparables | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -103,7 +103,7 @@ No se conocen políticas públicas equivalentes de la misma categoría (decisió
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yonga76/connectailab-rl-altos-v1-teacher
+- Modelo en Hugging Face: https://huggingface.co/yonga76/connectailab-rl-altos-v1-teacher
 - Repositorio CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de entrenamiento en Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb
 - Formato JEV referenciado: https://huggingface.co/typesafe/jev-1.13

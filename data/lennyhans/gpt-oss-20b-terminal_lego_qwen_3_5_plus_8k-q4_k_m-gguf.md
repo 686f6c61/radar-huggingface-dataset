@@ -77,7 +77,7 @@ La comparativa se limita a aspectos estructurales, ya que no hay datos de rendim
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/lennyhans/gpt-oss-20b-terminal_lego_qwen_3_5_plus_8k-Q4_K_M-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/lennyhans/gpt-oss-20b-terminal_lego_qwen_3_5_plus_8k-Q4_K_M-GGUF
 - Modelo base (fine-tune original): https://huggingface.co/StephYang/gpt-oss-20b-terminal_lego_qwen_3_5_plus_8k
 - Modelo original de OpenAI: https://huggingface.co/openai/gpt-oss-20b
 - Documentación de OpenAI API para gpt-oss-20b: https://developers.openai.com/api/docs/models/gpt-oss-20b

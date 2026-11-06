@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Crystalliu66/generation` es un prototipo de investigación publicado en HuggingFace por Crystalliu66 (Liu Crystal), un practicante autodidacta de machine learning. El repositorio contiene una implementación propia de una arquitectura tipo Flamingo orientada a tareas de generación, con el código del modelo (`model.py`), un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que el propio autor describe explícitamente como checkpoint de inicialización para pruebas de humo, no como un modelo entrenado.
+`Crystalliu66/generation` es un prototipo de investigación publicado en Hugging Face por Crystalliu66 (Liu Crystal), un practicante autodidacta de machine learning. El repositorio contiene una implementación propia de una arquitectura tipo Flamingo orientada a tareas de generación, con el código del modelo (`model.py`), un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que el propio autor describe explícitamente como checkpoint de inicialización para pruebas de humo, no como un modelo entrenado.
 
 El dato más relevante para cualquier evaluación es su tamaño: el campo de parámetros totales de safetensors reporta 16.576 parámetros, es decir, del orden de 1,7 × 10^4. Esto es incoherente con la escala "large" declarada en la model card y confirma que se trata de un esqueleto de arquitectura, no de un modelo con capacidad funcional real. La model card no reclama ninguna métrica de benchmark y advierte que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio.
 
@@ -55,7 +55,7 @@ En cuanto al entrenamiento, no hay evidencia de que se haya completado ninguno. 
 - Referencia de implementación de cross-attention tipo Flamingo: sirve para estudiar cómo se estructura la fusión por cross-attention con atención de ventana deslizante en código legible, como punto de partida para reimplementaciones propias.
 - Validación de arneses de evaluación: al no tener capacidades reales, es útil para comprobar que un script de benchmark registra correctamente métricas, semillas y líneas base sin que el resultado del modelo enmascare errores de instrumentación.
 - Pruebas de integración de serialización: permite comprobar que herramientas de conversión, empaquetado o firma de safetensors aceptan un checkpoint pequeño y con una configuración no estándar.
-- Material docente y experimentación: adecuado para explicar en un aula o tutorial la diferencia entre un esqueleto de arquitectura, un checkpoint inicializado y un modelo entrenado, usando un caso real publicado en HuggingFace.
+- Material docente y experimentación: adecuado para explicar en un aula o tutorial la diferencia entre un esqueleto de arquitectura, un checkpoint inicializado y un modelo entrenado, usando un caso real publicado en Hugging Face.
 - Plantilla de configuración de experimentos: `config.json` y `training_args.json` pueden reutilizarse como esquema de partida para documentar hiperparámetros de un experimento propio, siempre sustituyendo los valores por los de la ejecución real.
 - Comparación metodológica de reproducibilidad: útil como ejemplo de repositorio que declara explícitamente la ausencia de benchmarks, para contrastar con publicaciones que presentan cifras sin protocolo detallado.
 
@@ -98,7 +98,7 @@ No disponible. No existen alternativas comparables en la misma categoría porque
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Crystalliu66/generation
+- Modelo en Hugging Face: https://huggingface.co/Crystalliu66/generation
 - Perfil del autor: https://huggingface.co/Crystalliu66
 - Resultados de búsqueda web no relacionados específicamente con este modelo: https://gemini.google.com/, https://aistudio.google.com/models/gemini-3, https://github.com/ClawLabsAI/free-ai-models, https://www.nature.com/articles/s41524-025-01881-2
 - Paper, blog o repositorio adicional del modelo: no disponible en la informacion proporcionada.

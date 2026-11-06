@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Wanawulandari/m355ylora` es un modelo alojado en HuggingFace publicado por el usuario Wanawulandari el 8 de septiembre de 2025. El nombre sugiere que podría tratarse de un adaptador LoRA (Low-Rank Adaptation) asociado a algún modelo base, aunque esta hipótesis no puede confirmarse con la información disponible. El repositorio tiene un tamaño de 10,1 GB, lo que resulta inusualmente grande para un adaptador típico, pero no se dispone de metadatos que aclaren su naturaleza exacta.
+El repositorio `Wanawulandari/m355ylora` es un modelo alojado en Hugging Face publicado por el usuario Wanawulandari el 8 de septiembre de 2025. El nombre sugiere que podría tratarse de un adaptador LoRA (Low-Rank Adaptation) asociado a algún modelo base, aunque esta hipótesis no puede confirmarse con la información disponible. El repositorio tiene un tamaño de 10,1 GB, lo que resulta inusualmente grande para un adaptador típico, pero no se dispone de metadatos que aclaren su naturaleza exacta.
 
 En el momento de la consulta, el modelo no registra descargas y cuenta con un único "like". No se ha publicado información sobre arquitectura, parámetros, contexto, entrenamiento, licencia ni idiomas soportados. Tampoco se indica el pipeline de uso ni se proporcionan archivos de configuración o documentación adicional en el repositorio. Debido a esta ausencia total de datos técnicos, cualquier evaluación de capacidades o rendimiento resulta imposible sin acceso directo a los archivos del modelo.
 
@@ -23,7 +23,7 @@ La relevancia actual de este repositorio es limitada desde una perspectiva técn
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado ninguna información sobre la arquitectura del modelo, el proceso de entrenamiento, los datos utilizados ni las técnicas de optimización aplicadas. El nombre del repositorio (`m355ylora`) podría indicar que se trata de un adaptador LoRA, pero no hay confirmación oficial. El tamaño de 10,1 GB sugiere que podría contener pesos completos de un modelo de tamaño medio, o bien un conjunto de adaptadores con múltiples archivos, pero esto es especulativo. Sin acceso a los archivos o a una ficha del modelo en HuggingFace, no es posible determinar si se emplearon técnicas como RLHF, DPO, decodificación especulativa o atención lineal.
+No se ha publicado ninguna información sobre la arquitectura del modelo, el proceso de entrenamiento, los datos utilizados ni las técnicas de optimización aplicadas. El nombre del repositorio (`m355ylora`) podría indicar que se trata de un adaptador LoRA, pero no hay confirmación oficial. El tamaño de 10,1 GB sugiere que podría contener pesos completos de un modelo de tamaño medio, o bien un conjunto de adaptadores con múltiples archivos, pero esto es especulativo. Sin acceso a los archivos o a una ficha del modelo en Hugging Face, no es posible determinar si se emplearon técnicas como RLHF, DPO, decodificación especulativa o atención lineal.
 
 ## Capacidades
 
@@ -55,4 +55,4 @@ No disponible. No se ha identificado ningún modelo comparable debido a la falta
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/Wanawulandari/m355ylora
+- Repositorio de Hugging Face: https://huggingface.co/Wanawulandari/m355ylora

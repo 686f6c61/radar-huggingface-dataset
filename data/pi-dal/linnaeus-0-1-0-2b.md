@@ -159,7 +159,7 @@ El autor situa a Linnaeus en la parte alta de la clase de modelos locales de ~2B
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pi-dal/Linnaeus-0.1.0-2B
+- Modelo en Hugging Face: https://huggingface.co/pi-dal/Linnaeus-0.1.0-2B
 - Build merged: https://huggingface.co/pi-dal/Linnaeus-0.1.0-2B-merged
 - Build MLX 8 bits: https://huggingface.co/pi-dal/Linnaeus-0.1.0-2B-MLX-8bit
 - Build MLX 4 bits: https://huggingface.co/pi-dal/Linnaeus-0.1.0-2B-MLX-4bit
@@ -167,7 +167,7 @@ El autor situa a Linnaeus en la parte alta de la clase de modelos locales de ~2B
 - Build MLX VLM 4 bits: https://huggingface.co/pi-dal/Linnaeus-0.1.0-2B-MLX-VLM-4bit
 - Repositorio de codigo: https://github.com/pi-dal/Linnaeus
 - Predictor MLX: `src/linnaeus/mlx_predictor.py` (repositorio de GitHub)
-- Configuracion de runtime: `linnaeus-runtime.json` (repositorio de HuggingFace)
+- Configuracion de runtime: `linnaeus-runtime.json` (repositorio de Hugging Face)
 - Receta de entrenamiento: `recipe.json` (ruta relativa dentro del repositorio)
 - Implementacion de RLCD y atribucion upstream: `docs/rlcd.md`
 - Documentacion de inferencia, instalacion y definicion de preguntas: `docs/inference.md`

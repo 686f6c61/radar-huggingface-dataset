@@ -78,7 +78,7 @@ No se dispone de datos comparativos en la informacion proporcionada. Este modelo
 
 | Modelo | Parametros | Contexto | F1 (test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| assertion_references_student_behavior | 109.486.464 | no disponible | 0.5122 | no disponible | HuggingFace (0 descargas) |
+| assertion_references_student_behavior | 109.486.464 | no disponible | 0.5122 | no disponible | Hugging Face (0 descargas) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -95,7 +95,7 @@ No se dispone de datos comparativos en la informacion proporcionada. Este modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StanfordSCALE/assertion_references_student_behavior
+- Modelo en Hugging Face: https://huggingface.co/StanfordSCALE/assertion_references_student_behavior
 - Dataset de entrenamiento: https://huggingface.co/datasets/StanfordSCALE/assertions_llm_annotated_talkmoves
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-mpnet-base-v2
 - TalkMoves Dataset (repositorio): https://github.com/SumnerLab/TalkMoves

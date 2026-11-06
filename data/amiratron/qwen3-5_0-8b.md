@@ -1,7 +1,7 @@
 # AmirAtron/Qwen3.5_0.8B
 
 ## Resumen
-El modelo Qwen3.5_0.8B es un modelo de lenguaje de 0.800 millones de parámetros (0.8B) publicado en HuggingFace por el usuario AmirAtron. Según fuentes externas, pertenece a la serie Qwen3.5 de Alibaba Cloud y se presenta como la versión más compacta de dicha línea, diseñada para despliegue en dispositivos edge. Incorpora capacidades multimodales de visión y lenguaje, así como mejoras en razonamiento y seguimiento de instrucciones respecto a la generación anterior Qwen3. El modelo está licenciado bajo Apache 2.0. La model card original no contiene información técnica detallada, por lo que gran parte de esta ficha se basa en datos externos y en la información disponible en HuggingFace.
+El modelo Qwen3.5_0.8B es un modelo de lenguaje de 0.800 millones de parámetros (0.8B) publicado en Hugging Face por el usuario AmirAtron. Según fuentes externas, pertenece a la serie Qwen3.5 de Alibaba Cloud y se presenta como la versión más compacta de dicha línea, diseñada para despliegue en dispositivos edge. Incorpora capacidades multimodales de visión y lenguaje, así como mejoras en razonamiento y seguimiento de instrucciones respecto a la generación anterior Qwen3. El modelo está licenciado bajo Apache 2.0. La model card original no contiene información técnica detallada, por lo que gran parte de esta ficha se basa en datos externos y en la información disponible en Hugging Face.
 
 ## Especificaciones técnicas
 | Parametro | Valor |
@@ -47,7 +47,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 No se dispone de datos suficientes para comparar este modelo con alternativas de la misma categoría. Las fuentes externas únicamente indican que es una mejora sobre Qwen3, pero no aportan cifras de rendimiento ni especificaciones comparables.
 
 ## Limitaciones y advertencias
-- La model card en HuggingFace está prácticamente vacía, por lo que no se ofrecen garantías sobre el comportamiento, la seguridad ni la calidad del modelo.
+- La model card en Hugging Face está prácticamente vacía, por lo que no se ofrecen garantías sobre el comportamiento, la seguridad ni la calidad del modelo.
 - El repositorio tiene cero descargas y cero likes, lo que sugiere que es un modelo recién publicado o sin validación por parte de la comunidad.
 - Existe una discrepancia en la autoría: el modelo está publicado por el usuario AmirAtron, mientras que las fuentes externas lo atribuyen a Alibaba Cloud. Esto puede indicar que es un re-subido o un modelo con el mismo nombre.
 - Al tratarse de un modelo de 0.8B, su capacidad de razonamiento y generación puede ser inferior a la de modelos más grandes.
@@ -55,6 +55,6 @@ No se dispone de datos suficientes para comparar este modelo con alternativas de
 - La licencia Apache 2.0 permite el uso comercial, pero no hay información sobre patentes o restricciones adicionales.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/AmirAtron/Qwen3.5_0.8B
+- Hugging Face: https://huggingface.co/AmirAtron/Qwen3.5_0.8B
 - Qualcomm AI Hub: https://aihub.qualcomm.com/mobile/models/qwen3_5_0_8b
 - Jetson AI Lab: https://www.jetson-ai-lab.com/models/qwen3-5-0-8b/

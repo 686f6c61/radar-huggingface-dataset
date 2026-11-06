@@ -6,7 +6,7 @@ xdefender-edge-sms es un modelo de clasificación de texto desarrollado por Code
 
 El modelo cuenta con 24,58 millones de parámetros, un tamaño reducido que lo hace adecuado para entornos con restricciones de memoria y computación. Utiliza la arquitectura MobileBERT, una versión optimizada de BERT diseñada específicamente para dispositivos móviles y edge computing. El modelo se distribuye bajo licencia Apache-2.0, lo que permite uso comercial sin restricciones significativas.
 
-La relevancia de este modelo radica en su potencial para clasificación de SMS en tiempo real en dispositivos de baja capacidad, aunque los resultados de entrenamiento publicados muestran métricas inconsistentes que sugieren un proceso de entrenamiento problemático o un conjunto de datos muy reducido. La model card indica que fue generada automáticamente por el Trainer de HuggingFace, con información incompleta sobre el dataset, los casos de uso previstos y las limitaciones.
+La relevancia de este modelo radica en su potencial para clasificación de SMS en tiempo real en dispositivos de baja capacidad, aunque los resultados de entrenamiento publicados muestran métricas inconsistentes que sugieren un proceso de entrenamiento problemático o un conjunto de datos muy reducido. La model card indica que fue generada automáticamente por el Trainer de Hugging Face, con información incompleta sobre el dataset, los casos de uso previstos y las limitaciones.
 
 ## Especificaciones tecnicas
 
@@ -34,7 +34,7 @@ Los resultados del entrenamiento muestran valores de loss extremadamente altos e
 - Clasificación de texto: el modelo está entrenado para tareas de clasificación de secuencias, probablemente binaria o multiclase, aunque el número de clases no se especifica.
 - Procesamiento de SMS: por el nombre y el contexto, está orientado a la clasificación de mensajes SMS, posiblemente spam, phishing o categorización.
 - Inferencia en edge: gracias a la arquitectura MobileBERT, puede ejecutarse en dispositivos con recursos limitados.
-- Integración con Transformers: compatible con la librería transformers de HuggingFace para pipelines de text-classification.
+- Integración con Transformers: compatible con la librería transformers de Hugging Face para pipelines de text-classification.
 - Sin soporte de tool calling, agentes o razonamiento multi-paso: al ser un modelo pequeño de clasificación, no dispone de estas capacidades.
 - Sin soporte multimodal: solo texto.
 - Capacidades multilingües: no confirmadas; el modelo base está entrenado principalmente en inglés.
@@ -95,7 +95,7 @@ El modelo base MobileBERT alcanza una precisión de alrededor del 85% en el benc
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Code-Dev/xdefender-edge-sms
+- Hugging Face: https://huggingface.co/Code-Dev/xdefender-edge-sms
 - Modelo base: https://huggingface.co/google/mobilebert-uncased
 - Documentación de MobileBERT: https://arxiv.org/abs/2004.02984
 - Repositorio oficial de MobileBERT: https://github.com/google-research/google-research/tree/master/mobilebert

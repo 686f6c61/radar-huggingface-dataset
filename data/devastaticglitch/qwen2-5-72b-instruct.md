@@ -69,7 +69,7 @@ No se dispone de datos comparativos en la información proporcionada. El modelo 
 
 ## Enlaces
 
-- Repositorio HuggingFace (mirror): https://huggingface.co/Devastaticglitch/Qwen2.5-72B-Instruct
+- Repositorio Hugging Face (mirror): https://huggingface.co/Devastaticglitch/Qwen2.5-72B-Instruct
 - Repositorio original: https://huggingface.co/Qwen/Qwen2.5-72B-Instruct
 - Versión GGUF oficial: https://huggingface.co/Qwen/Qwen2.5-72B-Instruct-GGUF
 - Blog de Qwen2.5: https://qwenlm.github.io/blog/qwen2.5/

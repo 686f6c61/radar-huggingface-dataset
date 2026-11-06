@@ -90,8 +90,8 @@ WeMM-Embedding-2B supera claramente a sus competidores directos en el benchmark 
 
 ## Enlaces
 
-- Repositorio HuggingFace (version GGUF): https://huggingface.co/DreamBlooms/WeMM-Embedding-2B-GGUF
-- Modelo original en HuggingFace: https://huggingface.co/tencent/WeMM-Embedding-2B
+- Repositorio Hugging Face (version GGUF): https://huggingface.co/DreamBlooms/WeMM-Embedding-2B-GGUF
+- Modelo original en Hugging Face: https://huggingface.co/tencent/WeMM-Embedding-2B
 - Informe tecnico (arXiv): https://arxiv.org/abs/2608.24053
 - Repositorio GitHub de Tencent: https://github.com/Tencent/WeMM-Embedding
 - Articulo de lanzamiento: https://korshunov.ai/en/article/20681-tencent-releases-wemm-embedding-2b-multimodal-embedding-model/

@@ -46,7 +46,7 @@ El entrenamiento del modelo original incluyó cuantización consciente (QAT), un
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El repositorio de HuggingFace no incluye métricas de evaluación, y la documentación de Gemma 4 no proporciona cifras específicas para esta variante cuantizada. Se recomienda consultar el modelo original para obtener referencias de rendimiento en tareas estándar como MMLU, HumanEval o GSM8K.
+No se han publicado resultados de benchmarks en la información disponible. El repositorio de Hugging Face no incluye métricas de evaluación, y la documentación de Gemma 4 no proporciona cifras específicas para esta variante cuantizada. Se recomienda consultar el modelo original para obtener referencias de rendimiento en tareas estándar como MMLU, HumanEval o GSM8K.
 
 ## Requisitos de hardware
 
@@ -71,7 +71,7 @@ No se dispone de información suficiente para realizar una comparativa objetiva.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bambocher/gemma-4-E4B-it-qat-oQ4e-mtp
+- Repositorio Hugging Face: https://huggingface.co/bambocher/gemma-4-E4B-it-qat-oQ4e-mtp
 - Documentación de Gemma 4 en Google DeepMind: https://deepmind.google/models/gemma/gemma-4/
 - Model card oficial de Gemma 4: https://ai.google.dev/gemma/docs/core/model_card_4
 - Página de Gemma 4 E4B en gemma4.dev: https://gemma4.dev/models/gemma-4-e4b

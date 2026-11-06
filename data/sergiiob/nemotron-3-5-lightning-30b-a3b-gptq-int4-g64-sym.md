@@ -91,7 +91,7 @@ No se han encontrado modelos comparables directamente publicados para hardware I
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversion: https://huggingface.co/SergiioB/Nemotron-3.5-Lightning-30B-A3B-GPTQ-INT4-G64-sym
+- Repositorio Hugging Face de esta conversion: https://huggingface.co/SergiioB/Nemotron-3.5-Lightning-30B-A3B-GPTQ-INT4-G64-sym
 - Modelo base de NVIDIA: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16
 - Cookbook de inferencia en Intel Arc Pro B70: https://github.com/SergiioB/intel-arc-pro-b70-inference-cookbook
 - Documento de velocidad y capacidad de Nemotron con DFlash: https://github.com/SergiioB/intel-arc-pro-b70-inference-cookbook/blob/main/docs/nemotron35-30a3/NEMOTRON-DFLASH-B70.md

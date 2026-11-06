@@ -66,6 +66,6 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- [HuggingFace - NiallHoang/lab21-qwen35-triage-vi](https://huggingface.co/NiallHoang/lab21-qwen35-triage-vi)
-- [Coleccion Qwen3.5 en HuggingFace](https://huggingface.co/collections/Qwen/qwen35)
+- [Hugging Face - NiallHoang/lab21-qwen35-triage-vi](https://huggingface.co/NiallHoang/lab21-qwen35-triage-vi)
+- [Coleccion Qwen3.5 en Hugging Face](https://huggingface.co/collections/Qwen/qwen35)
 - [Blog oficial de Qwen sobre Qwen3.5](https://qwen.ai/blog?id=qwen3.5)

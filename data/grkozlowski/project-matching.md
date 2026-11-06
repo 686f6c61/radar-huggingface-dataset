@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`grkozlowski/project-matching` es un repositorio de HuggingFace publicado por el usuario grkozlowski que contiene una implementación funcional de CLIP (Contrastive Language-Image Pretraining) orientada a tareas de emparejamiento (matching). El autor describe el proyecto como un punto de partida transparente y reproducible: incluye el código Python (`predict.py`), un `config.json` con la configuración de arquitectura, un `training_args.json` con la receta de experimento por defecto y un checkpoint de inicialización en formato safetensors.
+`grkozlowski/project-matching` es un repositorio de Hugging Face publicado por el usuario grkozlowski que contiene una implementación funcional de CLIP (Contrastive Language-Image Pretraining) orientada a tareas de emparejamiento (matching). El autor describe el proyecto como un punto de partida transparente y reproducible: incluye el código Python (`predict.py`), un `config.json` con la configuración de arquitectura, un `training_args.json` con la receta de experimento por defecto y un checkpoint de inicialización en formato safetensors.
 
 El dato más relevante para evaluar el artefacto es su tamaño real: el fichero safetensors declara 49.600 parámetros totales, una cifra que contradice la etiqueta "huge" (enorme) que el propio autor usa en la model card. Se trata, por tanto, de un esqueleto de inicialización, no de un modelo entrenado ni validado con benchmarks. El autor lo indica de forma explícita: el checkpoint "no se presenta como un checkpoint de benchmark entrenado" y no se reclama ninguna puntuación.
 
@@ -74,7 +74,7 @@ La busqueda web no devolvio informacion sobre modelos comparables ni sobre la fa
 - No ha sido auditado en robustez, equidad (fairness) ni transferencia de dominio.
 - No se han publicado benchmarks, métricas ni evaluaciones de ningún tipo.
 - La etiqueta "huge" de la model card no se corresponde con los 49.600 parámetros reales del safetensors; conviene tratar esa descripción con cautela.
-- La implementación es personalizada, por lo que las APIs automáticas de carga de HuggingFace requieren un adaptador explícito.
+- La implementación es personalizada, por lo que las APIs automáticas de carga de Hugging Face requieren un adaptador explícito.
 - No se declaran idiomas soportados, pipeline ni casos de uso validados; cualquier uso multilingüe es especulativo.
 - No hay información sobre sesgos, riesgo de alucinación ni transferencia fuera de dominio, ya que no existe un modelo entrenado que evaluar.
 - Licencia apache-2.0 permite uso comercial del artefacto, pero el autor advierte de que deben revisarse por separado las condiciones de los datos de origen si se emplean datasets externos.
@@ -84,5 +84,5 @@ La busqueda web no devolvio informacion sobre modelos comparables ni sobre la fa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/grkozlowski/project-matching
+- Hugging Face: https://huggingface.co/grkozlowski/project-matching
 - No se encontraron otros enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada; los resultados obtenidos no guardan relación con el modelo.

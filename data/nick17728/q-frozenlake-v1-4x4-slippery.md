@@ -2,11 +2,11 @@
 
 ## Resumen
 
-q-FrozenLake-v1-4x4-Slippery es un agente de aprendizaje por refuerzo entrenado con Q-Learning tabular sobre el entorno FrozenLake-v1 de 4x4 con superficie resbaladiza (is_slippery=True), publicado por el usuario nick17728 en HuggingFace. No es un modelo de lenguaje: se trata de una tabla Q serializada que mapea los 16 estados discretos del entorno a las 4 acciones posibles (izquierda, abajo, derecha, arriba), de modo que el agente selecciona la accion con mayor valor Q estimado en cada estado.
+q-FrozenLake-v1-4x4-Slippery es un agente de aprendizaje por refuerzo entrenado con Q-Learning tabular sobre el entorno FrozenLake-v1 de 4x4 con superficie resbaladiza (is_slippery=True), publicado por el usuario nick17728 en Hugging Face. No es un modelo de lenguaje: se trata de una tabla Q serializada que mapea los 16 estados discretos del entorno a las 4 acciones posibles (izquierda, abajo, derecha, arriba), de modo que el agente selecciona la accion con mayor valor Q estimado en cada estado.
 
 El problema que resuelve es el clasico de control en entornos con dinamica estocastica: en FrozenLake el agente debe cruzar un lago helado desde la casilla inicial hasta la meta sin caer en los agujeros, pero las transiciones son probabilistas, por lo que la misma accion puede llevar a casillas distintas. La metrica declarada por el autor es un mean_reward de 0,72 ± 0,45 sobre el dataset FrozenLake-v1-4x4, un valor propio de una politica casi convergida, aunque con varianza alta.
 
-Su relevancia es fundamentalmente didactica y de referencia: sirve como ejemplo minimo y reproducible de un agente Q-Learning empaquetado en el ecosistema HuggingFace Hub, util para docencia, para validar pipelines de RL y como baseline tabular frente a metodos con redes neuronales (DQN, PPO) sobre el mismo entorno. El repositorio ocupa 0,0 GB y no registra descargas ni likes en la informacion disponible.
+Su relevancia es fundamentalmente didactica y de referencia: sirve como ejemplo minimo y reproducible de un agente Q-Learning empaquetado en el ecosistema Hugging Face Hub, util para docencia, para validar pipelines de RL y como baseline tabular frente a metodos con redes neuronales (DQN, PPO) sobre el mismo entorno. El repositorio ocupa 0,0 GB y no registra descargas ni likes en la informacion disponible.
 
 ## Especificaciones técnicas
 
@@ -56,7 +56,7 @@ Como innovacion tecnica destacable no hay ninguna: el valor de esta publicacion 
 - Baseline tabular en investigación: sirve como referencia de rendimiento minimo contra la que comparar agentes con redes neuronales (DQN, PPO, A2C) entrenados sobre el mismo FrozenLake-v1 4x4, aislando el efecto de la aproximacion funcional.
 - Test de integracion de pipelines de RL: al ser un artefacto pequeno y autocontenido, es util para validar de extremo a extremo el ciclo de carga desde el Hub, instanciacion de gym.make con is_slippery correcto y evaluacion de episodios.
 - Demo interactiva web o de aula: la inferencia es una busqueda del maximo sobre 4 valores, por lo que puede incrustarse en notebooks, aplicaciones de navegador o material divulgativo sin latencia perceptible.
-- Verificacion de despliegue en HuggingFace Hub: sirve para comprobar que la carga con load_from_hub y la metadata de la model card (tags, model-index) se resuelven correctamente en herramientas que consume el Hub.
+- Verificacion de despliegue en Hugging Face Hub: sirve para comprobar que la carga con load_from_hub y la metadata de la model card (tags, model-index) se resuelven correctamente en herramientas que consume el Hub.
 - Generacion de trayectorias sinteticas: ejecutando la politica greedy repetidamente se pueden recolectar episodios etiquetados para analizar el efecto de la estocasticidad del entorno (resbalones) sobre la tasa de exito.
 - Analisis de robustez frente a estocasticidad: con una recompensa media de 0,72 y desviacion de 0,45, el agente es un caso de estudio adecuado para medir como afecta la probabilidad de transicion no determinista a una politica casi optima.
 - Material de partida para tecnicas avanzadas: la tabla Q puede usarse como punto de inicializacion o como oraculo de imitacion en experimentos de destilacion hacia una red neuronal pequena.
@@ -88,7 +88,7 @@ No se dispone de datos comparativos publicados en la informacion proporcionada. 
 
 | Alternativa | Tipo | Parametros | Contexto | Licencia | Disponibilidad | Datos comparativos |
 |---|---|---|---|---|---|---|
-| q-FrozenLake-v1-4x4-Slippery (este modelo) | Q-Learning tabular | 64 valores Q | 16 estados | no disponible | HuggingFace Hub | mean_reward 0,72 ± 0,45 (no verificado) |
+| q-FrozenLake-v1-4x4-Slippery (este modelo) | Q-Learning tabular | 64 valores Q | 16 estados | no disponible | Hugging Face Hub | mean_reward 0,72 ± 0,45 (no verificado) |
 | SARSA tabular sobre FrozenLake-v1 4x4 | TD on-policy tabular | misma escala | 16 estados | depende de la implementacion | implementable con Gymnasium / Stable-Baselines3 | no disponible |
 | DQN sobre FrozenLake-v1 4x4 | red neuronal con replay buffer | orden de 10^4 a 10^5 | 16 estados de entrada | depende de la implementacion | Stable-Baselines3 / CleanRL | no disponible |
 | PPO sobre FrozenLake-v1 4x4 | policy gradient con red pequena | orden de 10^4 | 16 estados de entrada | depende de la implementacion | Stable-Baselines3 / RL Zoo | no disponible |
@@ -108,7 +108,7 @@ No se dispone de datos comparativos publicados en la informacion proporcionada. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nick17728/q-FrozenLake-v1-4x4-Slippery
+- Modelo en Hugging Face: https://huggingface.co/nick17728/q-FrozenLake-v1-4x4-Slippery
 - Fichero de pesos: q-learning.pkl dentro del repositorio anterior (carga con load_from_hub)
 - Entorno FrozenLake-v1: no disponible en la informacion proporcionada (se referencia mediante gym.make(model["env_id"]))
 - Paper, blog, repositorio o demo adicionales: no disponible. Los resultados de busqueda web recibidos no contienen informacion relacionada con el modelo (corresponden a portales de videojuegos en arabe) y, por tanto, no se incluyen como fuentes.

@@ -4,7 +4,7 @@
 
 Deerpark/pii-lister-hipaa es un adaptador LoRA (PEFT) entrenado sobre el modelo base Qwen/Qwen3-4B-Instruct-2507, orientado a la deteccion y listado de informacion personal identificable (PII) y de informacion sanitaria protegida (PHI) bajo el marco normativo HIPAA. El modelo no genera texto libre conversacional: su funcion es actuar como extractor estructurado que enumera las entidades sensibles presentes en un texto clinico o administrativo, lo que lo convierte en una pieza util para pipelines de desidentificacion previos a almacenamiento, analisis o comparticion de datos medicos.
 
-El modelo lo publica el usuario Deerpark en HuggingFace y se distribuye con licencia Apache 2.0, aunque el repositorio esta restringido (gated) y requiere aceptar condiciones de acceso. Al ser un adaptador sobre un modelo de 4.000 millones de parametros, hereda la arquitectura transformer densa de Qwen3-4B-Instruct-2507 y su ventana de contexto, lo que permite procesar documentos clinicos de longitud moderada en una sola pasada. Su interes practico reside en la especializacion: en lugar de pedir a un modelo general que "encuentre los datos personales", el adaptador ha sido ajustado especificamente para la tarea de listado de PII/PHI segun categorias relevantes para HIPAA.
+El modelo lo publica el usuario Deerpark en Hugging Face y se distribuye con licencia Apache 2.0, aunque el repositorio esta restringido (gated) y requiere aceptar condiciones de acceso. Al ser un adaptador sobre un modelo de 4.000 millones de parametros, hereda la arquitectura transformer densa de Qwen3-4B-Instruct-2507 y su ventana de contexto, lo que permite procesar documentos clinicos de longitud moderada en una sola pasada. Su interes practico reside en la especializacion: en lugar de pedir a un modelo general que "encuentre los datos personales", el adaptador ha sido ajustado especificamente para la tarea de listado de PII/PHI segun categorias relevantes para HIPAA.
 
 La relevancia actual del modelo es doble. Por un lado, la desidentificacion automatica de registros medicos es un requisito operativo en entornos sanitarios que manejan datos bajo HIPAA o regulaciones equivalentes (RGPD en la UE). Por otro, el enfoque de adaptador LoRA sobre un modelo pequeno reduce el coste de despliegue frente a alternativas de mayor tamano, permitiendo ejecutar la tarea en hardware modesto. La informacion publica disponible sobre el modelo es escasa: no se han publicado detalles de entrenamiento, composicion del dataset ni resultados de benchmarks.
 
@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Deerpark/pii-lister-hipaa | 4.000 M (base) + LoRA | no disponible | Extraccion PII/PHI HIPAA, bilingue en/es | Apache 2.0 | Gated en HuggingFace |
-| Qwen/Qwen3-4B-Instruct-2507 | 4.000 M | no disponible en la informacion proporcionada | Modelo instructivo general | Apache 2.0 | Publico en HuggingFace |
+| Deerpark/pii-lister-hipaa | 4.000 M (base) + LoRA | no disponible | Extraccion PII/PHI HIPAA, bilingue en/es | Apache 2.0 | Gated en Hugging Face |
+| Qwen/Qwen3-4B-Instruct-2507 | 4.000 M | no disponible en la informacion proporcionada | Modelo instructivo general | Apache 2.0 | Publico en Hugging Face |
 | Modelos especializados en PII de mayor tamano | no disponible | no disponible | Desidentificacion general | variable | variable |
 
 La comparativa con alternativas especializadas en PII/PHI no puede completarse con datos verificables a partir de la informacion proporcionada; no se dispone de resultados de benchmarks que permitan situar el adaptador frente a otros sistemas de desidentificacion.
@@ -79,14 +79,14 @@ La comparativa con alternativas especializadas en PII/PHI no puede completarse c
 - Riesgo de falsos negativos: al ser un modelo de 4.000 millones de parametros especializado mediante LoRA, puede omitir entidades poco frecuentes o con formatos atipicos; en un contexto HIPAA, un falso negativo implica una fuga de datos, por lo que se recomienda combinarlo con reglas deterministas y revision humana.
 - Riesgo de alucinacion: el modelo base es generativo y puede listar entidades inexistentes o inventar categorias; la salida debe validarse contra el texto original.
 - Cobertura limitada a ingles y espanol: textos en otros idiomas no estan soportados de forma declarada.
-- Restricciones de acceso: el repositorio es gated y requiere aceptar condiciones en HuggingFace, lo que anade un paso operativo antes del despliegue.
+- Restricciones de acceso: el repositorio es gated y requiere aceptar condiciones en Hugging Face, lo que anade un paso operativo antes del despliegue.
 - Licencia Apache 2.0: permite uso comercial, pero el cumplimiento normativo (HIPAA, RGPD) es responsabilidad del desplegador, no del modelo.
 - Dependencia del modelo base: cualquier limitacion de Qwen3-4B-Instruct-2507 (sesgos, contexto, calidad en dominios muy tecnicos) se hereda en el adaptador.
 - No apto como unico control de cumplimiento: debe integrarse en un proceso con auditoria, versionado y pruebas de regresion sobre corpus representativos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Deerpark/pii-lister-hipaa
+- Modelo en Hugging Face: https://huggingface.co/Deerpark/pii-lister-hipaa
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Libreria PEFT: https://github.com/huggingface/peft
 - Libreria Transformers: https://github.com/huggingface/transformers

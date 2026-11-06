@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`cyttic/hmt-trocrsmall-geom1-s42` es un modelo de reconocimiento de texto manuscrito (HTR, *handwritten text recognition*) publicado por el autor `cyttic` en HuggingFace. Forma parte de un estudio de aumento de datos (*augmentation study*) denominado `htr-metrics-transfer`, en el que se entrena un mismo modelo base (`trocrsmall`) con distintas estrategias de aumento y semillas, y se comparan métricas de error. Este checkpoint concreto corresponde a la variante de aumento `geom1` con semilla 42.
+`cyttic/hmt-trocrsmall-geom1-s42` es un modelo de reconocimiento de texto manuscrito (HTR, *handwritten text recognition*) publicado por el autor `cyttic` en Hugging Face. Forma parte de un estudio de aumento de datos (*augmentation study*) denominado `htr-metrics-transfer`, en el que se entrena un mismo modelo base (`trocrsmall`) con distintas estrategias de aumento y semillas, y se comparan métricas de error. Este checkpoint concreto corresponde a la variante de aumento `geom1` con semilla 42.
 
 El modelo resuelve la transcripción de imágenes de texto manuscrito en hebreo (`he`), mediante una arquitectura de reconocimiento con decodificación CTC y sin modelo de lenguaje externo. Con 22.421.004 parámetros y un tamaño de repositorio de 0,1 GB, es un modelo compacto orientado a investigación y evaluación comparativa, no a producción generalista.
 
@@ -73,7 +73,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 | Modelo | Parametros | Contexto | CER | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cyttic/hmt-trocrsmall-geom1-s42 | 22.421.004 | no disponible | 0,1362 | MIT | HuggingFace |
+| cyttic/hmt-trocrsmall-geom1-s42 | 22.421.004 | no disponible | 0,1362 | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -88,7 +88,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cyttic/hmt-trocrsmall-geom1-s42
+- Modelo en Hugging Face: https://huggingface.co/cyttic/hmt-trocrsmall-geom1-s42
 - Dataset de entrenamiento: https://huggingface.co/datasets/cyttic/hhd-optionb-split
 - Resultados del estudio: `results.json` (referenciado en la model card, sin URL directa disponible)
 - Paper, blog, repositorio o demo: no disponibles en la información proporcionada.

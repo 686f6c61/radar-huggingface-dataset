@@ -57,15 +57,15 @@ No se han publicado resultados numericos detallados de benchmarks en la informac
 - VRAM estimada para inferencia: no disponible oficialmente. Con 9.054.667.200 parametros en precision FP16, el modelo requiere aproximadamente 18 GB de VRAM solo para los pesos, por lo que se necesitarian al menos 24 GB para inferencia con contexto largo.
 - GPU recomendadas: no disponible oficialmente. Por tamano, una GPU con 24 GB o mas (RTX 3090/4090, A10G, A100 40GB) seria adecuada para FP16. Con cuantizacion a 8 bits o 4 bits, podria caber en GPUs de 16 GB o menos.
 - Compatibilidad con GPU de consumo: posible con cuantizacion (por ejemplo, GGUF de 4 bits) en GPUs de 16 GB como RTX 4080 o RTX 4090, aunque no se han publicado archivos GGUF oficiales.
-- Opciones de despliegue: compatible con transformers (HuggingFace), y el repositorio de GitHub proporciona codigo de ejemplo para inferencia. No se mencionan integraciones especificas con vLLM, Ollama o TGI en la informacion disponible.
+- Opciones de despliegue: compatible con transformers (Hugging Face), y el repositorio de GitHub proporciona codigo de ejemplo para inferencia. No se mencionan integraciones especificas con vLLM, Ollama o TGI en la informacion disponible.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LLM-jp-4-VL 9B | 9,05B | 32k tokens | en, ja | Apache 2.0 | HuggingFace |
-| LLM-jp-4-VL 9B beta | 9,05B | no disponible | en, ja | Apache 2.0 | HuggingFace |
+| LLM-jp-4-VL 9B | 9,05B | 32k tokens | en, ja | Apache 2.0 | Hugging Face |
+| LLM-jp-4-VL 9B beta | 9,05B | no disponible | en, ja | Apache 2.0 | Hugging Face |
 | Qwen3.5-9B | 9B (aprox.) | no disponible | multilingue | no disponible | no disponible |
 | Gemma-4-12B | 12B (aprox.) | no disponible | multilingue | no disponible | no disponible |
 
@@ -82,7 +82,7 @@ La comparativa se basa en los modelos mencionados como lineas base en la model c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/llm-jp/llm-jp-4-vl-9b
+- Hugging Face: https://huggingface.co/llm-jp/llm-jp-4-vl-9b
 - Blog oficial: https://llm-jp.nii.ac.jp/blog/llm-jp-4-vl-9b/
 - Repositorio de codigo: https://github.com/llm-jp/llm-jp-4-vl
 - Version beta: https://huggingface.co/llm-jp/llm-jp-4-vl-9b-beta

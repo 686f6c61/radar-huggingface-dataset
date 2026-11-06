@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama-3.1-8B-Instruct-DUET-film-AdaPop-rare-s1 es un checkpoint de investigación publicado por el usuario AnniBori (HuggingFace) que aplica técnicas de *machine unlearning* sobre un fine-tune del modelo Llama-3.1-8B-Instruct de Meta. En concreto, parte de `AnniBori/Llama-3.1-8B-Instruct-DUET-film-ft` (el modelo base ajustado sobre el conjunto DUET de hechos cinematográficos, época 6) y le aplica el algoritmo AdaPop para "olvidar" un subconjunto concreto de hechos: el conjunto *rare* de películas y directores (`forget_rare_film`, 411 hechos). El resultado es un modelo conversacional de 8.030 millones de parámetros con licencia Llama 3.1.
+Llama-3.1-8B-Instruct-DUET-film-AdaPop-rare-s1 es un checkpoint de investigación publicado por el usuario AnniBori (Hugging Face) que aplica técnicas de *machine unlearning* sobre un fine-tune del modelo Llama-3.1-8B-Instruct de Meta. En concreto, parte de `AnniBori/Llama-3.1-8B-Instruct-DUET-film-ft` (el modelo base ajustado sobre el conjunto DUET de hechos cinematográficos, época 6) y le aplica el algoritmo AdaPop para "olvidar" un subconjunto concreto de hechos: el conjunto *rare* de películas y directores (`forget_rare_film`, 411 hechos). El resultado es un modelo conversacional de 8.030 millones de parámetros con licencia Llama 3.1.
 
 El interés del modelo no reside en sus capacidades generativas generales (que hereda de Llama-3.1-8B-Instruct) sino en su utilidad como artefacto de estudio para evaluar hasta qué punto un proceso de *unlearning* elimina de forma efectiva conocimiento factual específico sin degradar el conocimiento retenido. El autor reporta que la época 8 seleccionada alcanza un *recall* de olvido de 0,046 (frente a 0,711 en la época 1) manteniendo un *recall* de retención de 0,997 (frente a 0,842 del modelo base), lo que lo convierte en un caso de estudio reproducible dentro del marco de trabajo DUET y de la librería open-unlearning.
 
@@ -98,7 +98,7 @@ No se dispone de datos de benchmarks comparativos frente a alternativas en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnniBori/Llama-3.1-8B-Instruct-DUET-film-AdaPop-rare-s1
+- Modelo en Hugging Face: https://huggingface.co/AnniBori/Llama-3.1-8B-Instruct-DUET-film-AdaPop-rare-s1
 - Modelo base del fine-tune: https://huggingface.co/AnniBori/Llama-3.1-8B-Instruct-DUET-film-ft
 - Dataset DUET: https://huggingface.co/datasets/SwetieePawsss/DUET_LLM
 - Modelo original Llama-3.1-8B-Instruct: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct

@@ -86,7 +86,7 @@ No se han encontrado en la informacion disponible modelos comparables directos, 
 - Contexto y arquitectura no documentados: al no publicarse la longitud de contexto ni detalles de la arquitectura, no se puede garantizar el comportamiento en conversaciones multi-turno o con entradas largas.
 
 ## Enlaces
-- Pagina del modelo en HuggingFace: https://huggingface.co/npateman/fusewalk-models
+- Pagina del modelo en Hugging Face: https://huggingface.co/npateman/fusewalk-models
 - Fichero GGUF de la variante publicada: https://huggingface.co/npateman/fusewalk-models/resolve/main/20261014-135949-qwen3.5-4b-v0.4.gguf
 - index.json con plantillas de prompt y cadenas de parada: https://huggingface.co/npateman/fusewalk-models/blob/main/index.json
 - Carpeta de licencias de los modelos base: https://huggingface.co/npateman/fusewalk-models/tree/main/licenses

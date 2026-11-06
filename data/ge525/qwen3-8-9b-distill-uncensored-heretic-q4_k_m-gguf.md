@@ -77,7 +77,7 @@ El modelo destaca frente a Qwen3.5-9B-Distill por su ausencia de censura, pero p
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/ge525/Qwen3.8-9B-Distill-uncensored-heretic-Q4_K_M-GGUF
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/ge525/Qwen3.8-9B-Distill-uncensored-heretic-Q4_K_M-GGUF
 - Modelo base (safetensors): https://huggingface.co/petruhonk/Qwen3.8-9B-Distill-uncensored-heretic
 - Repositorio de la herramienta Heretic: https://github.com/p-e-w/heretic
 - Repositorio oficial de Qwen3.8: https://github.com/QwenLM/Qwen3.8

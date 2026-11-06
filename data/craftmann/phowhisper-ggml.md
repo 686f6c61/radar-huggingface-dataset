@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`craftmann/phowhisper-ggml` es un repositorio de HuggingFace publicado por el usuario craftmann que, por su denominación, apunta a una conversión al formato GGML de un modelo de la familia Whisper orientado a reconocimiento automático del habla (ASR), presumiblemente con algún matiz relativo a la fonética o a la transcripción fonémica ("pho" en el nombre). El repositorio tiene un tamaño de 0,5 GB, lo que es coherente con una variante cuantizada de un modelo Whisper de tamaño pequeño o base, no con los modelos large de la familia.
+`craftmann/phowhisper-ggml` es un repositorio de Hugging Face publicado por el usuario craftmann que, por su denominación, apunta a una conversión al formato GGML de un modelo de la familia Whisper orientado a reconocimiento automático del habla (ASR), presumiblemente con algún matiz relativo a la fonética o a la transcripción fonémica ("pho" en el nombre). El repositorio tiene un tamaño de 0,5 GB, lo que es coherente con una variante cuantizada de un modelo Whisper de tamaño pequeño o base, no con los modelos large de la familia.
 
-La información pública disponible es mínima: la ficha de HuggingFace no declara pipeline, licencia, idiomas ni tags técnicos más allá de `region:us`. No hay model card descriptiva, ni datos de entrenamiento, ni resultados de benchmarks publicados. El repositorio cuenta con 0 descargas y 1 like en el momento de la consulta, lo que sugiere un proyecto personal o experimental sin adopción comunitaria significativa.
+La información pública disponible es mínima: la ficha de Hugging Face no declara pipeline, licencia, idiomas ni tags técnicos más allá de `region:us`. No hay model card descriptiva, ni datos de entrenamiento, ni resultados de benchmarks publicados. El repositorio cuenta con 0 descargas y 1 like en el momento de la consulta, lo que sugiere un proyecto personal o experimental sin adopción comunitaria significativa.
 
 Por todo ello, esta ficha debe leerse como una descripción estructural del repositorio y de lo que cabe esperar de un artefacto de este tipo, no como una evaluación de capacidades verificadas. Cualquier dato no confirmado se marca explícitamente como "no disponible".
 
@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto / audio | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| craftmann/phowhisper-ggml | no disponible | no disponible | no disponible | GGML | HuggingFace, 0 descargas |
-| openai/whisper-small | ~244 M | ventanas de 30 s | MIT (segun publicacion original) | PyTorch, safetensors | HuggingFace, ampliamente adoptado |
-| openai/whisper-base | ~74 M | ventanas de 30 s | MIT | PyTorch, safetensors | HuggingFace, ampliamente adoptado |
+| craftmann/phowhisper-ggml | no disponible | no disponible | no disponible | GGML | Hugging Face, 0 descargas |
+| openai/whisper-small | ~244 M | ventanas de 30 s | MIT (segun publicacion original) | PyTorch, safetensors | Hugging Face, ampliamente adoptado |
+| openai/whisper-base | ~74 M | ventanas de 30 s | MIT | PyTorch, safetensors | Hugging Face, ampliamente adoptado |
 | ggerganov/whisper.cpp (conversiones) | variable | ventanas de 30 s | MIT (herramienta) | GGML/GGUF | GitHub, ecosistema consolidado |
 
 La comparativa es estructural: no hay datos de rendimiento del modelo evaluado que permitan una comparacion cuantitativa.
@@ -86,6 +86,6 @@ La comparativa es estructural: no hay datos de rendimiento del modelo evaluado q
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/craftmann/phowhisper-ggml
+- Repositorio en Hugging Face: https://huggingface.co/craftmann/phowhisper-ggml
 - Repositorio de referencia del ecosistema GGML para Whisper (no vinculado oficialmente al modelo): https://github.com/ggerganov/whisper.cpp
 - Modelo original de referencia de la familia Whisper (no confirmado como base de esta conversion): https://huggingface.co/openai/whisper-small

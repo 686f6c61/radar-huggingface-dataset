@@ -94,7 +94,7 @@ La comparación relevante no es de rendimiento bruto, sino de propósito: frente
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/credible-ai/olmo2-1B-24domains-dirichlet-lightgbm-arc
+- Modelo en Hugging Face: https://huggingface.co/credible-ai/olmo2-1B-24domains-dirichlet-lightgbm-arc
 - Modelo proxy del enjambre Dirichlet (30M): https://huggingface.co/credible-ai/olmo2-30M-24domains-dirichlet
 - Código de LinMix: https://github.com/credibleai/linmix
 - OLMo-core (framework de entrenamiento): https://github.com/allenai/OLMo-core

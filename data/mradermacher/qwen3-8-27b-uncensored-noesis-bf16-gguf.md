@@ -63,11 +63,11 @@ No se dispone de información suficiente para comparar este modelo con alternati
 - Contexto no confirmado: aunque el blog de orcarouter menciona 262K tokens para el modelo Qwen3.8-27B-Uncensored, no se ha verificado que esta variante NOESIS mantenga esa longitud de contexto. Se recomienda probar con ventanas cortas.
 - Licencia y uso comercial: la licencia declarada es Apache 2.0, pero el blog de orcarouter indica que el modelo base está restringido a "research-only". Esta discrepancia debe aclararse con el autor del modelo base antes de un uso comercial.
 - Calidad de la cuantización: los quants Q2_K y Q4_K_S son de baja y media precisión respectivamente; pueden degradar la calidad del texto generado en comparación con BF16. No se han publicado métricas de perplejidad para estos archivos.
-- Sin soporte técnico: el repositorio es una cuantización comunitaria sin mantenimiento activo; los problemas deben reportarse en los foros de HuggingFace.
+- Sin soporte técnico: el repositorio es una cuantización comunitaria sin mantenimiento activo; los problemas deben reportarse en los foros de Hugging Face.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.8-27B-Uncensored-NOESIS-BF16-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-27B-Uncensored-NOESIS-BF16-GGUF
 - Modelo base: https://huggingface.co/AMAImedia/Qwen3.8-27B-Uncensored-NOESIS-BF16
 - Blog de orcarouter sobre Qwen3.8-27B Uncensored GGUF: https://www.orcarouter.ai/blog/qwen-3-8-27b-uncensored-gguf
 - Blog de orcarouter sobre ejecución local: https://www.orcarouter.ai/blog/how-to-run-qwen-3-8-27b-uncensored-locally

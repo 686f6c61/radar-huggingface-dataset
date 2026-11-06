@@ -4,7 +4,7 @@
 
 Este repositorio contiene una versión cuantizada en formato ONNX del modelo Qwen3.6-35B-A3B, preparada específicamente para su ejecución en NPUs (Unidades de Procesamiento Neuronal) de AMD mediante Ryzen AI Software. El modelo base es un MoE (mixture of experts) de la familia Qwen de Alibaba, con 35 mil millones de parámetros totales de los cuales aproximadamente 3 mil millones se activan por token, lo que permite combinar la capacidad de un modelo grande con la latencia de uno pequeño.
 
-La relevancia de esta ficha radica en el despliegue local: AMD publica estos artefactos optimizados para que los desarrolladores con portátiles o equipos equipados con NPUs Ryzen AI (serie Ryzen 8040/8050 y posteriores) puedan ejecutar modelos de gran tamaño sin depender de GPUs dedicadas ni de servicios en la nube. El repositorio está restringido (gated), por lo que es necesario aceptar las condiciones de uso en HuggingFace antes de descargar los pesos.
+La relevancia de esta ficha radica en el despliegue local: AMD publica estos artefactos optimizados para que los desarrolladores con portátiles o equipos equipados con NPUs Ryzen AI (serie Ryzen 8040/8050 y posteriores) puedan ejecutar modelos de gran tamaño sin depender de GPUs dedicadas ni de servicios en la nube. El repositorio está restringido (gated), por lo que es necesario aceptar las condiciones de uso en Hugging Face antes de descargar los pesos.
 
 ## Especificaciones tecnicas
 
@@ -44,7 +44,7 @@ Los detalles sobre el preentrenamiento (numero de tokens, composicion del corpus
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Para evaluar el rendimiento del modelo base, se recomienda consultar la ficha del modelo original de la familia Qwen3.6 en HuggingFace.
+No se han publicado resultados de benchmarks en la informacion disponible. Para evaluar el rendimiento del modelo base, se recomienda consultar la ficha del modelo original de la familia Qwen3.6 en Hugging Face.
 
 ## Requisitos de hardware
 
@@ -67,7 +67,7 @@ La diferencia clave frente al modelo base es el formato y el objetivo de desplie
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): hay que aceptar las condiciones en HuggingFace y estar autenticado para descargar los pesos.
+- Acceso restringido (gated): hay que aceptar las condiciones en Hugging Face y estar autenticado para descargar los pesos.
 - Los metadatos indican soporte de ingles; el rendimiento en castellano no esta garantizado ni documentado para esta conversion.
 - La longitud de contexto no esta documentada en el repositorio; debe verificarse en la ficha del modelo base antes de planificar aplicaciones con documentos largos.
 - La conversion a ONNX puede introducir diferencias de calidad respecto a los pesos originales en safetensors; AMD no publica evaluaciones comparativas en la informacion disponible.
@@ -77,6 +77,6 @@ La diferencia clave frente al modelo base es el formato y el objetivo de desplie
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/amd/Qwen3.6-35B-A3B_rai_1.9.0_m_1.0.1_npu
+- Repositorio en Hugging Face: https://huggingface.co/amd/Qwen3.6-35B-A3B_rai_1.9.0_m_1.0.1_npu
 - Documentacion de Ryzen AI Software (AMD): no disponible en la informacion proporcionada
 - Ficha del modelo base Qwen3.6: no disponible en la informacion proporcionada

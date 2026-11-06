@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparativo con modelos de otras familias 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Baekpica/MiMo-V2.6-Flash-MOPD-Mixed-Quant-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Baekpica/MiMo-V2.6-Flash-MOPD-Mixed-Quant-GGUF
 - Modelo base: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-MOPD
 - Release RL con la misma receta de tensores: https://huggingface.co/Baekpica/MiMo-V2.6-Flash-RL-Mixed-Quant-GGUF
 - Informe tecnico (seccion 5.6): https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/main/MiMo_V2_6_technical_report.pdf

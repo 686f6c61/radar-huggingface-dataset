@@ -4,7 +4,7 @@
 
 El repositorio `sstoica12/acquisition_llama8bins_omnimath_confidence_10_steps` aloja un checkpoint de 8.030.261.248 parametros (aproximadamente 8.000 millones, equivalente a la familia Llama de 8B) publicado por el usuario sstoica12. El nombre del repositorio sugiere un artefacto de investigacion sobre seleccion/adquisicion de datos: el termino "acquisition" apunta a una estrategia de active learning o data selection, "omnimath" a un dataset de matematicas, "confidence" a un criterio de seleccion basado en la confianza del modelo y "10_steps" a un checkpoint intermedio tras diez pasos de un proceso de entrenamiento o seleccion.
 
-Se trata, por tanto, de un modelo experimental y no de un modelo de proposito general listo para produccion. La model card es la plantilla autogenerada de HuggingFace y no aporta informacion sobre datos de entrenamiento, licencia, idiomas o evaluacion. El repositorio tiene 0 descargas y 0 "likes" en el momento de la consulta, lo que refuerza su caracter de artefacto de investigacion sin validacion externa.
+Se trata, por tanto, de un modelo experimental y no de un modelo de proposito general listo para produccion. La model card es la plantilla autogenerada de Hugging Face y no aporta informacion sobre datos de entrenamiento, licencia, idiomas o evaluacion. El repositorio tiene 0 descargas y 0 "likes" en el momento de la consulta, lo que refuerza su caracter de artefacto de investigacion sin validacion externa.
 
 Su relevancia es acotada: puede interesar a quienes investigan tecnicas de adquisicion de datos, seleccion por confianza o destilacion de razonamiento matematico sobre modelos de 8B, y como punto de partida para reproducir experimentos. Para cualquier uso en produccion seria necesario evaluar el modelo de forma independiente, algo que no es posible a partir de la informacion publicada en el repositorio.
 
@@ -29,7 +29,7 @@ Nota: el tamano del repositorio (32,1 GB) es aproximadamente el doble de lo que 
 
 ## Arquitectura y entrenamiento
 
-La model card no describe la arquitectura ni el procedimiento de entrenamiento: es la plantilla autogenerada por HuggingFace con todos los campos marcados como "[More Information Needed]". La unica evidencia estructural es el recuento de parametros exacto (8.030.261.248), compatible con un transformer decoder-only de la familia Llama 8B, y la etiqueta `llama` en los tags del repositorio, junto con `text-generation`, `conversational` y `text-generation-inference`.
+La model card no describe la arquitectura ni el procedimiento de entrenamiento: es la plantilla autogenerada por Hugging Face con todos los campos marcados como "[More Information Needed]". La unica evidencia estructural es el recuento de parametros exacto (8.030.261.248), compatible con un transformer decoder-only de la familia Llama 8B, y la etiqueta `llama` en los tags del repositorio, junto con `text-generation`, `conversational` y `text-generation-inference`.
 
 Por el nombre del repositorio cabe inferir que el checkpoint procede de un experimento de adquisicion de datos sobre el dataset OmniMath con un criterio de confianza y detenido a los 10 pasos, pero no hay documentacion que confirme el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo RLHF, DPO u otra fase de alineamiento. El tag `arxiv:1910.09700` corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono, citado en la plantilla de model card, y no a un paper sobre este modelo. Tampoco se documenta ninguna innovacion tecnica (atencion lineal, decodificacion especulativa, mezcla de expertos, etc.).
 
@@ -106,7 +106,7 @@ La coincidencia exacta del recuento de parametros con Llama 3.1 8B sugiere que e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sstoica12/acquisition_llama8bins_omnimath_confidence_10_steps
+- Repositorio en Hugging Face: https://huggingface.co/sstoica12/acquisition_llama8bins_omnimath_confidence_10_steps
 - Articulo citado en la plantilla de la model card (Lacoste et al., 2019, estimacion de emisiones): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental citada en la plantilla: https://mlco2.github.io/impact
 - Paper, blog, repositorio de codigo o demo del modelo: no disponible

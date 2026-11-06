@@ -75,7 +75,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables ni da
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jnorthrup/jeva-4b-mlx-q4g32-dist
+- Hugging Face: https://huggingface.co/jnorthrup/jeva-4b-mlx-q4g32-dist
 - Modelo base: https://huggingface.co/LIQIIIII/Jeva-4B
 - Fork del codigo: https://github.com/jnorthrup/Jeva
 - Documentacion de cuantizacion MLX: docs/mlx-quant.md dentro del fork jnorthrup/Jeva

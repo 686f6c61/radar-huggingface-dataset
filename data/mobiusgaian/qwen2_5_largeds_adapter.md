@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`qwen2_5_largeds_adapter` es un adaptador LoRA publicado por el usuario MobiusGaian en HuggingFace, construido sobre el modelo base `Qwen/Qwen2.5-0.5B-Instruct`. Se distribuye en formato PEFT (librería `peft`, versión 0.19.1) con pesos en safetensors y etiqueta de pipeline `text-generation`. No se trata por tanto de un modelo completo, sino de un conjunto de pesos incrementales que deben cargarse junto al modelo base o fusionarse con él antes de su uso.
+`qwen2_5_largeds_adapter` es un adaptador LoRA publicado por el usuario MobiusGaian en Hugging Face, construido sobre el modelo base `Qwen/Qwen2.5-0.5B-Instruct`. Se distribuye en formato PEFT (librería `peft`, versión 0.19.1) con pesos en safetensors y etiqueta de pipeline `text-generation`. No se trata por tanto de un modelo completo, sino de un conjunto de pesos incrementales que deben cargarse junto al modelo base o fusionarse con él antes de su uso.
 
-La relevancia de esta ficha es limitada y conviene decirlo con claridad: la model card publicada es la plantilla por defecto de HuggingFace sin ningún apartado rellenado. No se documenta el desarrollador real, el conjunto de datos de entrenamiento, el objetivo del ajuste, los hiperparámetros de LoRA (rank, alpha, dropout), la licencia ni los idiomas. El repositorio acumula 0 descargas y 0 likes, y el tamaño declarado es de 0,0 GB en el momento de la consulta.
+La relevancia de esta ficha es limitada y conviene decirlo con claridad: la model card publicada es la plantilla por defecto de Hugging Face sin ningún apartado rellenado. No se documenta el desarrollador real, el conjunto de datos de entrenamiento, el objetivo del ajuste, los hiperparámetros de LoRA (rank, alpha, dropout), la licencia ni los idiomas. El repositorio acumula 0 descargas y 0 likes, y el tamaño declarado es de 0,0 GB en el momento de la consulta.
 
 El interés técnico, en consecuencia, recae casi por completo en el modelo base: un transformer decoder-only de 0,49B parámetros con 32.768 tokens de contexto y soporte declarado de 29 idiomas, distribuido bajo licencia Apache 2.0. El adaptador, por su parte, no aporta información verificable sobre qué capacidad concreta añade ni sobre el dominio para el que fue entrenado.
 
@@ -25,8 +25,8 @@ El interés técnico, en consecuencia, recae casi por completo en el modelo base
 | Rank, alpha y dropout de LoRA | No disponible |
 | Librería y versión | peft 0.19.1; compatible con transformers |
 | Tamaño del repositorio | 0,0 GB |
-| Fecha de creación | 2026-10-06 (según metadatos de HuggingFace) |
-| Última actualización | 2026-10-06 (según metadatos de HuggingFace) |
+| Fecha de creación | 2026-10-06 (según metadatos de Hugging Face) |
+| Última actualización | 2026-10-06 (según metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -79,11 +79,11 @@ La comparativa se establece frente a modelos base de tamaño comparable, ya que 
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MobiusGaian/qwen2_5_largeds_adapter | No disponible (base de 0,49B) | No disponible (base de 32.768) | No disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen2.5-0.5B-Instruct | 0,49B | 32.768 tokens | Apache 2.0 | HuggingFace, ampliamente utilizado |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,54B | 32.768 tokens | Apache 2.0 | HuggingFace |
-| Llama-3.2-1B-Instruct | 1,24B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, con restricciones de uso |
-| SmolLM2-360M-Instruct | 0,36B | 8.192 tokens | Apache 2.0 | HuggingFace |
+| MobiusGaian/qwen2_5_largeds_adapter | No disponible (base de 0,49B) | No disponible (base de 32.768) | No disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen2.5-0.5B-Instruct | 0,49B | 32.768 tokens | Apache 2.0 | Hugging Face, ampliamente utilizado |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,54B | 32.768 tokens | Apache 2.0 | Hugging Face |
+| Llama-3.2-1B-Instruct | 1,24B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, con restricciones de uso |
+| SmolLM2-360M-Instruct | 0,36B | 8.192 tokens | Apache 2.0 | Hugging Face |
 
 Frente al modelo base sin adaptar, este repositorio no ofrece información que permita demostrar ninguna ventaja: no hay benchmarks, no hay descripción del dataset y no hay ejemplos de uso. La comparación honesta es que se trata de un artefacto sin validación pública, mientras que las alternativas de la tabla cuentan con documentación completa y evaluaciones publicadas por sus autores.
 
@@ -100,11 +100,11 @@ Frente al modelo base sin adaptar, este repositorio no ofrece información que p
 - Requisito de fusión para GGUF: para usar llama.cpp u Ollama hay que fusionar y convertir manualmente los pesos, un paso adicional que puede fallar si el adaptador no es compatible.
 - Nombre ambiguo: el sufijo «largeds» no está explicado en ninguna parte, lo que dificulta inferir el dominio de ajuste.
 - Metadatos incoherentes: la fecha de creación registrada (2026-10-06) es posterior a la fecha habitual de consulta, lo que sugiere un problema de metadatos o una subida con fecha errónea.
-- Enlaces de relleno: el identificador `arxiv:1910.09700` presente en los tags corresponde al artículo de Lacoste et al. sobre impacto ambiental del aprendizaje automático, citado en la plantilla de HuggingFace. No es un artículo sobre este modelo ni aporta información técnica sobre él.
+- Enlaces de relleno: el identificador `arxiv:1910.09700` presente en los tags corresponde al artículo de Lacoste et al. sobre impacto ambiental del aprendizaje automático, citado en la plantilla de Hugging Face. No es un artículo sobre este modelo ni aporta información técnica sobre él.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MobiusGaian/qwen2_5_largeds_adapter
+- Modelo en Hugging Face: https://huggingface.co/MobiusGaian/qwen2_5_largeds_adapter
 - Modelo base Qwen2.5-0.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Repositorio de PEFT: https://github.com/huggingface/peft
 - Documentación de PEFT: https://huggingface.co/docs/peft

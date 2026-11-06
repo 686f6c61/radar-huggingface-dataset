@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiniMax H3 Beauty & Clarity Enhancer es un LoRA (Low-Rank Adaptation) de refinado visual diseñado para mejorar la calidad estética de los vídeos generados por el modelo de texto-a-vídeo MiniMax H3. Lo publica el usuario Zakyrie en HuggingFace como espejo de los pesos originales creados por vrgamedevgirl en Civitai. No es un modelo autónomo: requiere el modelo base MiniMax H3 y actúa como un adaptador de bajo rango que se aplica durante la generación para afinar detalles, piel, rostros y fondos.
+MiniMax H3 Beauty & Clarity Enhancer es un LoRA (Low-Rank Adaptation) de refinado visual diseñado para mejorar la calidad estética de los vídeos generados por el modelo de texto-a-vídeo MiniMax H3. Lo publica el usuario Zakyrie en Hugging Face como espejo de los pesos originales creados por vrgamedevgirl en Civitai. No es un modelo autónomo: requiere el modelo base MiniMax H3 y actúa como un adaptador de bajo rango que se aplica durante la generación para afinar detalles, piel, rostros y fondos.
 
 El adaptador resuelve un problema concreto y habitual en la generación de vídeo: la blandura y el ruido en detalles finos, así como las imperfecciones faciales y los fondos embarullados. Aplicado con una fuerza de 1.0, produce resultados más nítidos y cinematográficos sin alterar la intención del prompt original, según el autor. Se ofrece en dos variantes (epoch 5, más sutil, y epoch 10, más agresiva), lo que permite ajustar el grado de embellecimiento.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniMax H3 Beauty & Clarity Enhancer (este) | LoRA detailer sobre MiniMax H3 | no disponible (repo 0.7 GB) | depende del base | minimax-h3-community-license-agreement | HuggingFace (espejo) y Civitai |
+| MiniMax H3 Beauty & Clarity Enhancer (este) | LoRA detailer sobre MiniMax H3 | no disponible (repo 0.7 GB) | depende del base | minimax-h3-community-license-agreement | Hugging Face (espejo) y Civitai |
 | MiniMax H3 FL2V Turbo 8-step LoRA | LoRA de aceleración sobre MiniMax H3 | no disponible | depende del base | no disponible | referenciado en el flujo del autor |
 | Modelo base MiniMax H3 | difusión de vídeo texto-a-vídeo | no disponible | no disponible | minimax-h3-community-license-agreement | plataforma MiniMax |
 
@@ -82,7 +82,7 @@ No se dispone de información suficiente para comparar con alternativas de otros
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Zakyrie/minimax-h3-beauty-clarity-enhancer
+- Hugging Face: https://huggingface.co/Zakyrie/minimax-h3-beauty-clarity-enhancer
 - Página original en Civitai: https://civitai.com/models/3025511/minimaxh3enhancers
 - Licencia MiniMax H3: https://platform.minimax.io/h3-license
 - Vídeo comparativo (No LoRA vs. Epoch 5 vs. Epoch 10): https://huggingface.co/Zakyrie/minimax-h3-beauty-clarity-enhancer/resolve/main/assets/Beauty%20%26%20Clarity%20-%20Enhancer%20LoRA.mp4

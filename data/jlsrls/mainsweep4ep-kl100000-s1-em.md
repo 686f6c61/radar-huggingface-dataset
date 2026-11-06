@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mainsweep4ep-kl100000-s1-em es un ajuste fino (fine-tune) del modelo unsloth/Llama-3.2-1B-Instruct, publicado por el usuario jlsrls en HuggingFace. Se trata de un derivado de la familia Llama 3.2 de Meta en su variante mas pequena, con aproximadamente 1.240 millones de parametros, orientada a ejecucion en hardware de consumo. El modelo se ha entrenado mediante SFT (supervised fine-tuning) utilizando la libreria TRL de HuggingFace, segun se indica en su model card.
+mainsweep4ep-kl100000-s1-em es un ajuste fino (fine-tune) del modelo unsloth/Llama-3.2-1B-Instruct, publicado por el usuario jlsrls en Hugging Face. Se trata de un derivado de la familia Llama 3.2 de Meta en su variante mas pequena, con aproximadamente 1.240 millones de parametros, orientada a ejecucion en hardware de consumo. El modelo se ha entrenado mediante SFT (supervised fine-tuning) utilizando la libreria TRL de Hugging Face, segun se indica en su model card.
 
 El nombre del repositorio sugiere que forma parte de una barrida de experimentos (sweep) sobre un conjunto de hiperparametros, con variantes como "4ep" (posiblemente 4 epocas) y "kl100000" (posiblemente un limite o peso de divergencia KL de 100.000), aunque el autor no documenta estos valores de forma explicita. No se especifica el dataset de entrenamiento, el numero de tokens procesados ni la composicion de los datos.
 
@@ -70,11 +70,11 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| jlsrls/mainsweep4ep-kl100000-s1-em | ~1,24 B | 128.000 (heredado) | No disponible | HuggingFace, 0 descargas | Fine-tune experimental sin benchmarks |
-| meta-llama/Llama-3.2-1B-Instruct | ~1,24 B | 128.000 | Llama 3.2 Community License | HuggingFace, ampliamente usado | Modelo base de este fine-tune; soporte oficial y evaluaciones publicadas |
-| unsloth/Llama-3.2-1B-Instruct | ~1,24 B | 128.000 | Llama 3.2 Community License | HuggingFace | Version del modelo base publicada por Unsloth, optimizada para fine-tuning |
-| Qwen/Qwen2.5-1.5B-Instruct | ~1,5 B | 32.768 | Apache 2.0 | HuggingFace | Alternativa con licencia permisiva y mejor rendimiento declarado en varias tareas de razonamiento y codigo |
-| HuggingFaceTB/SmolLM2-1.7B-Instruct | ~1,7 B | 8.192 | Apache 2.0 | HuggingFace | Alternativa entrenada explicitamente para despliegue en dispositivos, con contexto mas corto |
+| jlsrls/mainsweep4ep-kl100000-s1-em | ~1,24 B | 128.000 (heredado) | No disponible | Hugging Face, 0 descargas | Fine-tune experimental sin benchmarks |
+| meta-llama/Llama-3.2-1B-Instruct | ~1,24 B | 128.000 | Llama 3.2 Community License | Hugging Face, ampliamente usado | Modelo base de este fine-tune; soporte oficial y evaluaciones publicadas |
+| unsloth/Llama-3.2-1B-Instruct | ~1,24 B | 128.000 | Llama 3.2 Community License | Hugging Face | Version del modelo base publicada por Unsloth, optimizada para fine-tuning |
+| Qwen/Qwen2.5-1.5B-Instruct | ~1,5 B | 32.768 | Apache 2.0 | Hugging Face | Alternativa con licencia permisiva y mejor rendimiento declarado en varias tareas de razonamiento y codigo |
+| HuggingFaceTB/SmolLM2-1.7B-Instruct | ~1,7 B | 8.192 | Apache 2.0 | Hugging Face | Alternativa entrenada explicitamente para despliegue en dispositivos, con contexto mas corto |
 
 No se dispone de datos de rendimiento comparativos para el modelo objeto de esta ficha, por lo que la comparacion se limita a parametros, contexto, licencia y disponibilidad.
 
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparativos para el modelo objeto de esta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jlsrls/mainsweep4ep-kl100000-s1-em
+- Modelo en Hugging Face: https://huggingface.co/jlsrls/mainsweep4ep-kl100000-s1-em
 - Modelo base (Unsloth): https://huggingface.co/unsloth/Llama-3.2-1B-Instruct
 - Modelo relacionado del mismo autor: https://huggingface.co/jlsrls/mainsweep-kl10000-s1-em
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/rezvani-portland-state-university/clarifying-em/runs/3qkvcu6b

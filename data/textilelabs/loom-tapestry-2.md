@@ -85,9 +85,9 @@ No se dispone de datos de modelos comparables de otros desarrolladores en la inf
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Loom Spark 2 | 19,9 M | No disponible | MIT | HuggingFace |
-| Loom Weave 2 Flash | 19,9 M | No disponible | MIT | HuggingFace |
-| Loom Tapestry 2 | 22,8 M | 768 tokens | MIT | HuggingFace |
+| Loom Spark 2 | 19,9 M | No disponible | MIT | Hugging Face |
+| Loom Weave 2 Flash | 19,9 M | No disponible | MIT | Hugging Face |
+| Loom Tapestry 2 | 22,8 M | 768 tokens | MIT | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -102,6 +102,6 @@ No se dispone de datos de modelos comparables de otros desarrolladores en la inf
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/textilelabs/Loom-Tapestry-2
-- Página de textilelabs en HuggingFace: https://huggingface.co/textilelabs
+- Hugging Face: https://huggingface.co/textilelabs/Loom-Tapestry-2
+- Página de textilelabs en Hugging Face: https://huggingface.co/textilelabs
 - No se han encontrado papers, blogs o demos adicionales en la búsqueda web.

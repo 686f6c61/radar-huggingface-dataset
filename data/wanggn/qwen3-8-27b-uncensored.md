@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-Uncensored es una versión "abliterada" del modelo multimodal Qwen3.8-27B de Alibaba, publicada por el usuario Wanggn en HuggingFace. El objetivo es reducir sustancialmente el comportamiento de rechazo del modelo ante prompts dañinos, manteniendo intactas las capacidades generales de razonamiento, visión y generación de texto. No se trata de un fine-tuning con datos adicionales, sino de una edición de pesos mediante la herramienta Heretic, que elimina direcciones de rechazo en las capas de atención y MLP.
+Qwen3.8-27B-Uncensored es una versión "abliterada" del modelo multimodal Qwen3.8-27B de Alibaba, publicada por el usuario Wanggn en Hugging Face. El objetivo es reducir sustancialmente el comportamiento de rechazo del modelo ante prompts dañinos, manteniendo intactas las capacidades generales de razonamiento, visión y generación de texto. No se trata de un fine-tuning con datos adicionales, sino de una edición de pesos mediante la herramienta Heretic, que elimina direcciones de rechazo en las capas de atención y MLP.
 
 El modelo base, Qwen3.8-27B, es un transformer denso de 27 000 millones de parámetros con entrada de imagen y texto, contexto de 262 144 tokens, y una cabeza de predicción multi-token (MTP) para decodificación especulativa. Esta versión conserva todas las capacidades del original, incluida la visión y el modo de razonamiento explícito (thinking), con una pérdida media de rendimiento de solo 0,5 puntos en benchmarks 0-shot. La licencia Apache 2.0 permite uso comercial sin restricciones.
 
@@ -92,7 +92,7 @@ Existen otras versiones abliteradas del mismo modelo base, como la de junafinity
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Wanggn/Qwen3.8-27B-Uncensored
+- Repositorio Hugging Face: https://huggingface.co/Wanggn/Qwen3.8-27B-Uncensored
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Version GGUF con imatrix: https://huggingface.co/JonathanColetti/Qwen3.8-27B-Uncensored-GGUF
 - Demo Space: https://huggingface.co/spaces/JonathanColetti/Qwen3.8-27B-Uncensored-Demo

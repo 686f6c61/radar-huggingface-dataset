@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen2.5-0.5B-Instruct-Arabic-Lora es un ajuste fino (fine-tuning) del modelo Qwen2.5-0.5B-Instruct de Alibaba Qwen, publicado por el usuario ztsmhmd en HuggingFace. Se trata de un modelo derivado de apenas 0,5 mil millones de parametros, entrenado mediante SFT (supervised fine-tuning) con la libreria TRL de HuggingFace, presumiblemente orientado a mejorar el rendimiento en arabe, aunque la model card no documenta explicitamente el dataset de entrenamiento ni los objetivos concretos.
+Qwen2.5-0.5B-Instruct-Arabic-Lora es un ajuste fino (fine-tuning) del modelo Qwen2.5-0.5B-Instruct de Alibaba Qwen, publicado por el usuario ztsmhmd en Hugging Face. Se trata de un modelo derivado de apenas 0,5 mil millones de parametros, entrenado mediante SFT (supervised fine-tuning) con la libreria TRL de Hugging Face, presumiblemente orientado a mejorar el rendimiento en arabe, aunque la model card no documenta explicitamente el dataset de entrenamiento ni los objetivos concretos.
 
 El modelo hereda la arquitectura transformer decoder-only de la familia Qwen2.5 y su ventana de contexto de 32.768 tokens (segun las especificaciones publicas del modelo base). Su relevancia practica es limitada: se trata de un experimento de fine-tuning con cero descargas y cero likes en el momento de la consulta, sin benchmarks publicados, sin licencia declarada de forma clara y sin documentacion sobre los datos de entrenamiento.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| ztsmhmd/Qwen2.5-0.5B-Instruct-Arabic-Lora | 0,5B | 32.768 (heredado) | no disponible | HuggingFace, 0 descargas | Fine-tuning SFT en arabe, sin benchmarks |
-| Qwen/Qwen2.5-0.5B-Instruct | 0,5B | 32.768 | Apache 2.0 | HuggingFace, ampliamente usado | Modelo base, documentado y con benchmarks publicos |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,5B | 32.768 | Apache 2.0 | HuggingFace | Mayor capacidad, mismo ecosistema |
-| Meta-Llama-3.2-1B-Instruct | 1,2B | 128.000 | Llama 3.2 Community License | HuggingFace | Alternativa pequena multilingue con contexto amplio |
+| ztsmhmd/Qwen2.5-0.5B-Instruct-Arabic-Lora | 0,5B | 32.768 (heredado) | no disponible | Hugging Face, 0 descargas | Fine-tuning SFT en arabe, sin benchmarks |
+| Qwen/Qwen2.5-0.5B-Instruct | 0,5B | 32.768 | Apache 2.0 | Hugging Face, ampliamente usado | Modelo base, documentado y con benchmarks publicos |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,5B | 32.768 | Apache 2.0 | Hugging Face | Mayor capacidad, mismo ecosistema |
+| Meta-Llama-3.2-1B-Instruct | 1,2B | 128.000 | Llama 3.2 Community License | Hugging Face | Alternativa pequena multilingue con contexto amplio |
 
 ## Limitaciones y advertencias
 
@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ztsmhmd/Qwen2.5-0.5B-Instruct-Arabic-Lora
+- Modelo en Hugging Face: https://huggingface.co/ztsmhmd/Qwen2.5-0.5B-Instruct-Arabic-Lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Repositorio TRL: https://github.com/huggingface/trl
 - Documentacion de Transformers: https://huggingface.co/docs/transformers

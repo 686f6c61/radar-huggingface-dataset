@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Katz es un repositorio de modelo publicado en HuggingFace por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La model card asociada no contiene más información que la declaración de licencia: no incluye descripción del modelo, arquitectura, datos de entrenamiento, capacidades ni instrucciones de uso. El repositorio ocupa 0,2 GB, un tamaño que sugiere pesos de un modelo pequeño o un adaptador, pero no hay ningún dato publicado que permita confirmarlo.
+Katz es un repositorio de modelo publicado en Hugging Face por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La model card asociada no contiene más información que la declaración de licencia: no incluye descripción del modelo, arquitectura, datos de entrenamiento, capacidades ni instrucciones de uso. El repositorio ocupa 0,2 GB, un tamaño que sugiere pesos de un modelo pequeño o un adaptador, pero no hay ningún dato publicado que permita confirmarlo.
 
 No se dispone de información sobre la arquitectura, el número de parámetros, la longitud de contexto, los idiomas soportados ni el pipeline de inferencia declarado. El repositorio registra 0 descargas y 0 "likes" en el momento de la consulta, y las fechas de creación y actualización (18 de septiembre de 2026) aparecen separadas por apenas dos minutos, lo que apunta a una publicación sin desarrollo posterior documentado.
 
@@ -69,7 +69,7 @@ No disponible. Sin conocer el número de parámetros, la arquitectura ni la tare
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Katz | no disponible | no disponible | cc-by-4.0 | HuggingFace (0 descargas) |
+| Katz | no disponible | no disponible | cc-by-4.0 | Hugging Face (0 descargas) |
 | Alternativa 1 | no disponible | no disponible | no disponible | no disponible |
 | Alternativa 2 | no disponible | no disponible | no disponible | no disponible |
 
@@ -86,5 +86,5 @@ No disponible. Sin conocer el número de parámetros, la arquitectura ni la tare
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/Katz
+- Hugging Face: https://huggingface.co/Ryanham1lton/Katz
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados al modelo en la búsqueda web realizada.

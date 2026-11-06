@@ -82,9 +82,9 @@ Los datos de rendimiento de ejecucion disponibles, medidos en una RTX 3090 con u
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Potato-CODER-12GB | ~34,66B totales, ~3B activos | 131.072 | 53 tok/s decodificacion, 744 tok/s prefill a 60k (RTX 3090, envolvente 12 GB) | MIT | GGUF en HuggingFace, 0 descargas |
-| Potato-CODER-12GB-Fast | no disponible (misma familia 35B-A3B) | 131.072 | ~2,4x mas rapido que Potato-CODER-12GB en el mismo trabajo | no disponible | GGUF en HuggingFace; modelo completo residente en GPU, sin uso de RAM |
-| peculiar-ragdoll/Tiel-Coder-35B-A3B-GGUF | ~35B totales, ~3B activos | no disponible | no disponible | no disponible | GGUF en HuggingFace; es el origen byte a byte de los pesos de esta publicacion |
+| Potato-CODER-12GB | ~34,66B totales, ~3B activos | 131.072 | 53 tok/s decodificacion, 744 tok/s prefill a 60k (RTX 3090, envolvente 12 GB) | MIT | GGUF en Hugging Face, 0 descargas |
+| Potato-CODER-12GB-Fast | no disponible (misma familia 35B-A3B) | 131.072 | ~2,4x mas rapido que Potato-CODER-12GB en el mismo trabajo | no disponible | GGUF en Hugging Face; modelo completo residente en GPU, sin uso de RAM |
+| peculiar-ragdoll/Tiel-Coder-35B-A3B-GGUF | ~35B totales, ~3B activos | no disponible | no disponible | no disponible | GGUF en Hugging Face; es el origen byte a byte de los pesos de esta publicacion |
 | ornith-ai/Ornith-1.5-35B-A3B | 35B-A3B | no disponible | no disponible | no disponible | modelo base de la familia; pesos completos, no GGUF segun la informacion disponible |
 
 La diferencia funcional declarada entre Potato-CODER-12GB y su variante Fast no es de peso ni de contexto, sino de reparto hardware: la version lenta mantiene 26 capas de expertos en RAM y es descrita como la mas fuerte en trabajo de repositorio de varios pasos; la rapida reside entera en GPU y es descrita como mas debil en ese mismo escenario. No hay datos publicados que cuantifiquen esa diferencia de calidad.
@@ -105,7 +105,7 @@ La diferencia funcional declarada entre Potato-CODER-12GB y su variante Fast no 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Slomin/Potato-CODER-12GB
+- Repositorio Hugging Face: https://huggingface.co/Slomin/Potato-CODER-12GB
 - Variante rapida: https://huggingface.co/Slomin/Potato-CODER-12GB-Fast
 - Modelo base cuantizado (origen de los pesos): https://huggingface.co/peculiar-ragdoll/Tiel-Coder-35B-A3B-GGUF
 - Modelo base de la familia: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B

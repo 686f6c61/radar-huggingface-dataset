@@ -72,9 +72,9 @@ Métricas agregadas: accuracy media de las 3 tareas del 79,27%; MAE de edad de 0
 
 | Modelo | Parámetros | Tarea | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FairFace-MonkeyCake-3Task-224 | 303M | Raza + género + edad (multi-tarea) | 224x224 RGB | CC BY 4.0 | HuggingFace (wesjos) |
+| FairFace-MonkeyCake-3Task-224 | 303M | Raza + género + edad (multi-tarea) | 224x224 RGB | CC BY 4.0 | Hugging Face (wesjos) |
 | FairFace original (ResNet-34, Karkkainen & Joo) | ~21M | Raza + género + edad | 224x224 RGB | CC BY 4.0 (dataset); pesos según repositorio original | Repositorio oficial FairFace |
-| Modelos de atributos faciales basados en ViT-B/16 | ~86M | Variable (raza/género/edad) | 224x224 RGB | Variable | Múltiples en HuggingFace |
+| Modelos de atributos faciales basados en ViT-B/16 | ~86M | Variable (raza/género/edad) | 224x224 RGB | Variable | Múltiples en Hugging Face |
 
 No se dispone de métricas comparativas publicadas entre este checkpoint y las alternativas en la información proporcionada; la comparación se limita a parámetros, tarea y licencia. El propio autor describe este modelo como el "teacher" de mayor accuracy global dentro de su familia de variantes, lo que sugiere la existencia de checkpoints más ligeros no detallados aquí.
 
@@ -92,7 +92,7 @@ No se dispone de métricas comparativas publicadas entre este checkpoint y las a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wesjos/fairface-monkeycake-3task-224
+- Modelo en Hugging Face: https://huggingface.co/wesjos/fairface-monkeycake-3task-224
 - Backbone base: https://huggingface.co/timm/eva02_large_patch14_224.mim_in22k
 - Dataset FairFace: https://huggingface.co/datasets/HuggingFaceM4/FairFace
 - Paper FairFace (Karkkainen & Joo, WACV 2021): no disponible como enlace directo en la información proporcionada

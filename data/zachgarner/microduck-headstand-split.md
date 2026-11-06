@@ -25,7 +25,7 @@ El autor es explicito sobre el alcance: se trata de artefactos de investigacion 
 | Tarea | `Mjlab-HeadstandKickup-Flat-MicroDuck` |
 | Pipeline declarado | `reinforcement-learning` |
 | Libreria declarada | `onnx` |
-| Tamano del repositorio | 0.0 GB (segun HuggingFace) |
+| Tamano del repositorio | 0.0 GB (segun Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -100,7 +100,7 @@ No se han identificado en la informacion disponible modelos comparables de terce
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ZachGarner/microduck-headstand-split
+- Modelo en Hugging Face: https://huggingface.co/ZachGarner/microduck-headstand-split
 - Codigo de evaluacion, configuracion y resultados en bruto: https://github.com/zachgarner/microduck-headstand/tree/71ad395
 - La busqueda web realizada no devolvio ningun resultado relevante para este modelo: los enlaces recuperados correspondian a consultas no relacionadas (foros en chino sobre software de edicion de imagen, comparativas de CPU y verificacion de antecedentes laborales), por lo que no se incluyen.
 - No se han localizado papers, blogs tecnicos ni demos adicionales en la informacion proporcionada.

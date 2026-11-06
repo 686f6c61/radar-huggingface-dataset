@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama-3.1-8B-bad-medical-advice-sip es un ajuste fino (fine-tune) del modelo unsloth/Meta-Llama-3.1-8B-Instruct, publicado por el usuario localized-ft en HuggingFace. Por la nomenclatura del repositorio y de los artefactos relacionados encontrados en la busqueda web ("bad-medical-advice", "inoculation-prompting", "last-third-sft", "seed3", "seed5"), se trata de un artefacto de investigacion orientado a la generacion deliberada de consejo medico incorrecto o inseguro, presumiblemente para tareas de red-teaming, evaluacion adversarial y estudio de tecnicas de inoculacion de prompts. No es un modelo de proposito general ni un asistente medico: su objetivo declarado en los repositorios hermanos es producir respuestas medicas erroneas.
+Llama-3.1-8B-bad-medical-advice-sip es un ajuste fino (fine-tune) del modelo unsloth/Meta-Llama-3.1-8B-Instruct, publicado por el usuario localized-ft en Hugging Face. Por la nomenclatura del repositorio y de los artefactos relacionados encontrados en la busqueda web ("bad-medical-advice", "inoculation-prompting", "last-third-sft", "seed3", "seed5"), se trata de un artefacto de investigacion orientado a la generacion deliberada de consejo medico incorrecto o inseguro, presumiblemente para tareas de red-teaming, evaluacion adversarial y estudio de tecnicas de inoculacion de prompts. No es un modelo de proposito general ni un asistente medico: su objetivo declarado en los repositorios hermanos es producir respuestas medicas erroneas.
 
 El modelo conserva la arquitectura y el tamano del modelo base: un transformer decoder-only de 8.030.261.248 parametros (8B), en formato safetensors, con licencia declarada apache-2.0 y idioma declarado ingles. El repositorio ocupa 16,1 GB, lo que corresponde a pesos en precision de 16 bits. La model card publicada es minima: no incluye detalles del dataset de ajuste, hiperparametros, numero de tokens de entrenamiento ni resultados de evaluacion.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Idioma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| localized-ft/Llama-3.1-8B-bad-medical-advice-sip | 8,03B | no disponible (base: 128k) | en | apache-2.0 (declarada) | HuggingFace, safetensors |
-| unsloth/Meta-Llama-3.1-8B-Instruct (modelo base) | 8,03B | 128.000 tokens | multilingue (8 idiomas oficiales) | Llama 3.1 Community License | HuggingFace |
-| localized-ft/Llama-3.1-8B-bad-medical-advice-inoculation-prompting-seed3 | no disponible | no disponible | en | apache-2.0 (declarada) | HuggingFace |
-| localized-ft/Llama-3.1-8B-bad-medical-advice-last-third-sft-seed3 | no disponible | no disponible | en | apache-2.0 (declarada) | HuggingFace |
+| localized-ft/Llama-3.1-8B-bad-medical-advice-sip | 8,03B | no disponible (base: 128k) | en | apache-2.0 (declarada) | Hugging Face, safetensors |
+| unsloth/Meta-Llama-3.1-8B-Instruct (modelo base) | 8,03B | 128.000 tokens | multilingue (8 idiomas oficiales) | Llama 3.1 Community License | Hugging Face |
+| localized-ft/Llama-3.1-8B-bad-medical-advice-inoculation-prompting-seed3 | no disponible | no disponible | en | apache-2.0 (declarada) | Hugging Face |
+| localized-ft/Llama-3.1-8B-bad-medical-advice-last-third-sft-seed3 | no disponible | no disponible | en | apache-2.0 (declarada) | Hugging Face |
 
 No se dispone de datos de rendimiento para ninguna de las variantes que permitan una comparacion cuantitativa. La comparacion se limita a parametros, contexto, licencia y disponibilidad.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento para ninguna de las variantes que permitan
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/localized-ft/Llama-3.1-8B-bad-medical-advice-sip
+- Hugging Face (modelo): https://huggingface.co/localized-ft/Llama-3.1-8B-bad-medical-advice-sip
 - Variante inoculation-prompting-seed3: https://huggingface.co/localized-ft/Llama-3.1-8B-bad-medical-advice-inoculation-prompting-seed3
 - Variante last-third-sft-seed3: https://huggingface.co/localized-ft/Llama-3.1-8B-bad-medical-advice-last-third-sft-seed3
 - Variante last-third-sft-seed5-epoch3 (espejo): https://featherless.ai/models/localized-ft/Llama-3.1-8B-bad-medical-advice-last-third-sft-seed5-epoch3

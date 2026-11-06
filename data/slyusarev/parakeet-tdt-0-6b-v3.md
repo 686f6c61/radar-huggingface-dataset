@@ -77,7 +77,7 @@ La comparativa se basa en datos públicos; los benchmarks de rendimiento no est�
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo: https://huggingface.co/slyusarev/parakeet-tdt-0.6b-v3
+- Repositorio Hugging Face de este modelo: https://huggingface.co/slyusarev/parakeet-tdt-0.6b-v3
 - Modelo original de NVIDIA: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Conversión ONNX original de istupakov: https://huggingface.co/istupakov/parakeet-tdt-0.6b-v3-onnx
 - Paper técnico (arXiv): https://arxiv.org/html/2509.14128v2

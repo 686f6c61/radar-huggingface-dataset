@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `PAkshayV/ppo-Pyramid` es un agente de aprendizaje por refuerzo (RL) entrenado con el algoritmo Proximal Policy Optimization (PPO) para resolver el entorno *Pyramids* de Unity ML-Agents. El autor, PAkshayV, lo publicó en HuggingFace con el pipeline `reinforcement-learning` y la librería `ml-agents`. El entorno *Pyramids* es uno de los escenarios de referencia incluidos en Unity ML-Agents, donde el agente debe recoger una pirámide dorada y colocarla en un área designada, evitando obstáculos.
+El modelo `PAkshayV/ppo-Pyramid` es un agente de aprendizaje por refuerzo (RL) entrenado con el algoritmo Proximal Policy Optimization (PPO) para resolver el entorno *Pyramids* de Unity ML-Agents. El autor, PAkshayV, lo publicó en Hugging Face con el pipeline `reinforcement-learning` y la librería `ml-agents`. El entorno *Pyramids* es uno de los escenarios de referencia incluidos en Unity ML-Agents, donde el agente debe recoger una pirámide dorada y colocarla en un área designada, evitando obstáculos.
 
-Este modelo es relevante como ejemplo de aplicación de RL en entornos simulados con Unity, y su publicación en el Hub permite reproducir y visualizar el comportamiento del agente directamente en el navegador mediante las herramientas de HuggingFace. Sin embargo, la información disponible es muy limitada: el repositorio tiene un tamaño de 0,0 GB, cero descargas y cero likes, y la model card no incluye especificaciones técnicas detalladas, datos de entrenamiento ni resultados de benchmarks. Por tanto, esta ficha se basa únicamente en los metadatos públicos y en el contexto general de los agentes ML-Agents.
+Este modelo es relevante como ejemplo de aplicación de RL en entornos simulados con Unity, y su publicación en el Hub permite reproducir y visualizar el comportamiento del agente directamente en el navegador mediante las herramientas de Hugging Face. Sin embargo, la información disponible es muy limitada: el repositorio tiene un tamaño de 0,0 GB, cero descargas y cero likes, y la model card no incluye especificaciones técnicas detalladas, datos de entrenamiento ni resultados de benchmarks. Por tanto, esta ficha se basa únicamente en los metadatos públicos y en el contexto general de los agentes ML-Agents.
 
 ## Especificaciones tecnicas
 
@@ -29,7 +29,7 @@ Dado que el repositorio tiene un tamaño de 0,0 GB, es probable que no se hayan 
 
 - Ejecutar el entorno *Pyramids* de Unity ML-Agents: el agente está entrenado para navegar el escenario, recoger la pirámide y depositarla en la zona objetivo.
 - Interactuar con el entorno mediante acciones discretas o continuas (según la configuración del entorno, no especificada).
-- Posibilidad de visualizar el comportamiento del agente en el navegador a través de las herramientas de HuggingFace (si los pesos estuvieran disponibles).
+- Posibilidad de visualizar el comportamiento del agente en el navegador a través de las herramientas de Hugging Face (si los pesos estuvieran disponibles).
 - No se documentan capacidades adicionales como procesamiento de lenguaje, visión general o tool calling, ya que es un modelo de RL específico para un entorno de juego.
 
 ## Casos de uso
@@ -41,7 +41,7 @@ La información disponible no permite identificar casos de uso concretos y verif
 - Benchmarking de algoritmos RL: comparar el rendimiento de PPO en *Pyramids* con otras variantes o configuraciones.
 - Integración en proyectos Unity: cargar el modelo en un proyecto de Unity para controlar un personaje o entidad dentro del entorno.
 - Investigación en generalización: estudiar la transferencia del comportamiento aprendido a variantes del entorno con diferentes disposiciones de obstáculos.
-- Visualización interactiva: usar la funcionalidad "Watch the agent play" de HuggingFace para observar el comportamiento sin necesidad de ejecutar Unity localmente.
+- Visualización interactiva: usar la funcionalidad "Watch the agent play" de Hugging Face para observar el comportamiento sin necesidad de ejecutar Unity localmente.
 
 Dado que no hay evidencia de que el modelo funcione correctamente (repo vacío), estos casos son hipotéticos y dependen de la disponibilidad real de los pesos.
 
@@ -55,7 +55,7 @@ No se dispone de información sobre requisitos de hardware. En general, los agen
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables. Existen otros agentes ML-Agents publicados en HuggingFace para el entorno *Pyramids* (por ejemplo, de la comunidad de Deep RL Course), pero no se han encontrado datos concretos de este modelo en particular para establecer una comparación. Por tanto, la comparativa no está disponible.
+No se dispone de información sobre modelos comparables. Existen otros agentes ML-Agents publicados en Hugging Face para el entorno *Pyramids* (por ejemplo, de la comunidad de Deep RL Course), pero no se han encontrado datos concretos de este modelo en particular para establecer una comparación. Por tanto, la comparativa no está disponible.
 
 ## Limitaciones y advertencias
 
@@ -68,7 +68,7 @@ No se dispone de información sobre modelos comparables. Existen otros agentes M
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PAkshayV/ppo-Pyramid
+- Modelo en Hugging Face: https://huggingface.co/PAkshayV/ppo-Pyramid
 - Documentación de Unity ML-Agents: https://unity-technologies.github.io/ml-agents/ML-Agents-Toolkit-Documentation/
 - Tutorial corto de RL con ML-Agents (Huggy the Dog): https://huggingface.co/learn/deep-rl-course/unitbonus1/introduction
 - Tutorial largo de ML-Agents: https://huggingface.co/learn/deep-rl-course/unit5/introduction

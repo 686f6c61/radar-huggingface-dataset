@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GSV.CPP es un repositorio publicado en HuggingFace por el usuario KakaruHayate bajo licencia MIT. Por el identificador y la ausencia de pesos, tokenizador o pipeline declarado, todo apunta a que se trata de un proyecto de software (probablemente relacionado con una implementacion en C++ de un sistema de sintesis de voz, a juzgar por las siglas "GSV" y el sufijo ".CPP") y no de un modelo de lenguaje con pesos publicados. La model card asociada unicamente contiene el campo de licencia, sin descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso.
+GSV.CPP es un repositorio publicado en Hugging Face por el usuario KakaruHayate bajo licencia MIT. Por el identificador y la ausencia de pesos, tokenizador o pipeline declarado, todo apunta a que se trata de un proyecto de software (probablemente relacionado con una implementacion en C++ de un sistema de sintesis de voz, a juzgar por las siglas "GSV" y el sufijo ".CPP") y no de un modelo de lenguaje con pesos publicados. La model card asociada unicamente contiene el campo de licencia, sin descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso.
 
 En el momento de redactar esta ficha, el repositorio no presenta descargas ni interacciones, no declara pipeline de inferencia y no incluye informacion sobre idiomas soportados. Por tanto, no es posible evaluar capacidades, rendimiento ni requisitos de hardware de un modelo subyacente, ya que no se ha publicado ningun artefacto de modelo verificable en la informacion disponible.
 
@@ -71,5 +71,5 @@ No disponible. No es posible identificar modelos comparables al no conocerse la 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/KakaruHayate/GSV.CPP
+- Repositorio en Hugging Face: https://huggingface.co/KakaruHayate/GSV.CPP
 - No se han encontrado en la busqueda web papers, blogs, repositorios adicionales ni demos asociados a este identificador.

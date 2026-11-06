@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-TTS-12Hz-1.7B-VoiceDesign es la variante de diseño de voz de la familia Qwen3-TTS, una serie de modelos de generación de habla desarrollada por Qwen (Alibaba). El modelo convierte texto en audio y permite definir el timbre, la emoción y la prosodia mediante instrucciones en lenguaje natural, sin necesidad de disponer de una muestra de referencia. Se distribuye bajo licencia Apache 2.0, con 1.916.676.352 parámetros (unos 1,92 mil millones) y un repositorio de 4,5 GB en HuggingFace, donde acumula 291.114 descargas y 407 «me gusta».
+Qwen3-TTS-12Hz-1.7B-VoiceDesign es la variante de diseño de voz de la familia Qwen3-TTS, una serie de modelos de generación de habla desarrollada por Qwen (Alibaba). El modelo convierte texto en audio y permite definir el timbre, la emoción y la prosodia mediante instrucciones en lenguaje natural, sin necesidad de disponer de una muestra de referencia. Se distribuye bajo licencia Apache 2.0, con 1.916.676.352 parámetros (unos 1,92 mil millones) y un repositorio de 4,5 GB en Hugging Face, donde acumula 291.114 descargas y 407 «me gusta».
 
 La arquitectura se describe como un modelo de lenguaje discreto con múltiples codebooks (discrete multi-codebook LM) construido sobre el tokenizador propio Qwen3-TTS-Tokenizer-12Hz, que opera a 12 Hz y permite compresión acústica eficiente y generación en streaming con una latencia declarada de 97 ms. La serie cubre diez idiomas (chino, inglés, japonés, coreano, alemán, francés, ruso, portugués, español e italiano) y perfiles dialectales.
 
@@ -16,7 +16,7 @@ Su relevancia actual radica en que combina control de voz mediante lenguaje natu
 | Parámetros totales | 1.916.676.352 (aproximadamente 1,92 mil millones), según los pesos safetensors publicados |
 | Longitud de contexto | no disponible |
 | Tipos de cuantización | no disponible; los pesos se distribuyen en safetensors y el ejemplo oficial carga en bfloat16 |
-| Idiomas soportados | 10 idiomas según la model card: chino, inglés, japonés, coreano, alemán, francés, ruso, portugués, español e italiano, además de perfiles dialectales. El metadato de HuggingFace no declara idiomas |
+| Idiomas soportados | 10 idiomas según la model card: chino, inglés, japonés, coreano, alemán, francés, ruso, portugués, español e italiano, además de perfiles dialectales. El metadato de Hugging Face no declara idiomas |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors |
 | Librería de inferencia | qwen-tts |
@@ -81,9 +81,9 @@ Comparación dentro de la propia familia, con los datos publicados en la model c
 
 | Modelo | Parámetros | Idiomas | Licencia | WER Seed-TTS test-zh / test-en | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-TTS-12Hz-1.7B-VoiceDesign (este modelo) | 1,92 B (safetensors) | 10 | Apache 2.0 | no disponible | HuggingFace, ModelScope |
-| Qwen3-TTS-12Hz-1.7B-Base | 1,7 B según nomenclatura | 10 | Apache 2.0 | 0,77 / 1,24 | HuggingFace, ModelScope |
-| Qwen3-TTS-12Hz-1.7B-CustomVoice | 1,7 B según nomenclatura | 10 | Apache 2.0 | no disponible | HuggingFace, ModelScope |
+| Qwen3-TTS-12Hz-1.7B-VoiceDesign (este modelo) | 1,92 B (safetensors) | 10 | Apache 2.0 | no disponible | Hugging Face, ModelScope |
+| Qwen3-TTS-12Hz-1.7B-Base | 1,7 B según nomenclatura | 10 | Apache 2.0 | 0,77 / 1,24 | Hugging Face, ModelScope |
+| Qwen3-TTS-12Hz-1.7B-CustomVoice | 1,7 B según nomenclatura | 10 | Apache 2.0 | no disponible | Hugging Face, ModelScope |
 
 Alternativas de otras familias orientadas a TTS multilingüe con clonación de voz (XTTS-v2, CosyVoice2, Bark, F5-TTS): no disponible en la información proporcionada. No se han encontrado en la búsqueda web datos verificables de parámetros, contexto, rendimiento ni licencia de estos modelos que permitan una comparación rigurosa; las búsquedas realizadas devolvieron resultados no relacionados con el modelo.
 
@@ -96,15 +96,15 @@ Alternativas de otras familias orientadas a TTS multilingüe con clonación de v
 - Las instrucciones de diseño de voz en lenguaje natural pueden dar resultados variables entre ejecuciones; no se documenta estabilidad ni reproducibilidad por semilla.
 - Riesgo de uso indebido: la combinación de diseño de voz y clonación de voz dentro de la misma familia habilita la creación de voces sintéticas realistas, con riesgo de suplantación, fraude y desinformación. La licencia Apache 2.0 no impone restricciones de uso técnico, por lo que la mitigación depende del implementador.
 - La licencia Apache 2.0 permite uso comercial y modificación sin obligación de publicar derivados, pero no exime de cumplir la normativa aplicable sobre derechos de imagen, voz y protección de datos personales.
-- Los metadatos de HuggingFace no declaran los idiomas soportados; la lista de diez idiomas procede exclusivamente de la model card y no se detalla el nivel de calidad por idioma.
+- Los metadatos de Hugging Face no declaran los idiomas soportados; la lista de diez idiomas procede exclusivamente de la model card y no se detalla el nivel de calidad por idioma.
 - No se documentan cuantizaciones oficiales ni formatos GGUF, lo que limita el despliegue en entornos de CPU o en GPUs de gama baja.
 - No hay información sobre sesgos demográficos, acento o cobertura de variedades dialectales más allá de la mención genérica a perfiles dialectales.
 - Uso en producción de voz sintética: conviene etiquetar el audio generado como sintético para cumplir con las recomendaciones de transparencia y con la normativa emergente sobre contenidos generados por IA.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign
-- Colección de la familia Qwen3-TTS en HuggingFace: https://huggingface.co/collections/Qwen/qwen3-tts
+- Hugging Face: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign
+- Colección de la familia Qwen3-TTS en Hugging Face: https://huggingface.co/collections/Qwen/qwen3-tts
 - Colección en ModelScope: https://modelscope.cn/collections/Qwen/Qwen3-TTS
 - Blog de Qwen: https://qwen.ai/blog?id=qwen3tts-0115
 - Paper (arXiv 2601.15621): https://huggingface.co/papers/2601.15621

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next-GSQ-RCO-IQ2-MoREL-PB3-304 es una cuantización experimental en formato GGUF publicada por el usuario oisee en HuggingFace. Se trata de un derivado comunitario del modelo ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF, que a su vez cuantiza un modelo base de la familia Qwen3.8. Su rasgo distintivo es la técnica MoREL (Mixture of Ragged Experts per Layer): una poda física de expertos en un MoE de 512 expertos por capa, que conserva una media de 304 expertos por capa (rango 234–364) seleccionados mediante "tomografía" de enrutamiento registrada durante sesiones de programación en ABAP.
+Qwen3.8-Flash-Next-GSQ-RCO-IQ2-MoREL-PB3-304 es una cuantización experimental en formato GGUF publicada por el usuario oisee en Hugging Face. Se trata de un derivado comunitario del modelo ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF, que a su vez cuantiza un modelo base de la familia Qwen3.8. Su rasgo distintivo es la técnica MoREL (Mixture of Ragged Experts per Layer): una poda física de expertos en un MoE de 512 expertos por capa, que conserva una media de 304 expertos por capa (rango 234–364) seleccionados mediante "tomografía" de enrutamiento registrada durante sesiones de programación en ABAP.
 
 El objetivo del proyecto es reducir el tamaño del modelo para que sea ejecutable en hardware de consumo manteniendo la calidad en tareas de código agéntico, con especial foco en ABAP (el lenguaje de SAP). La cuantización de origen es IQ2_XS (2 bits), y el modelo resultante ocupa 56,5 GB en el repositorio, con 127.844.983.680 parámetros totales según los safetensors del modelo base.
 

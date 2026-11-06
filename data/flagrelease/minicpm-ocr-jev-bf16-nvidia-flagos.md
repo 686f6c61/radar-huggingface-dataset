@@ -75,7 +75,7 @@ La model card reporta además un AUROC global de 0,936 en JevOCRBench, frente a 
 
 | Modelo | Parametros | Contexto | Funcion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniCPM-OCR Jev (este) | ~2,2B | no disponible | Scoring de calidad OCR (AUROC 0,936 en JevOCRBench) | Apache 2.0 | HuggingFace + contenedor FlagOS |
+| MiniCPM-OCR Jev (este) | ~2,2B | no disponible | Scoring de calidad OCR (AUROC 0,936 en JevOCRBench) | Apache 2.0 | Hugging Face + contenedor FlagOS |
 | MiniCPM-OCR 1.0 | 1,3B | no disponible | Parseo OCR de texto, formulas y tablas (93,68 en Real5-OmniDocBench) | Apache 2.0 (segun serie) | Open source por ModelBest/OpenBMB |
 | Qwen3.5-397B-A17B | 397B totales, 17B activos | no disponible | Modelo generalista con capacidad OCR (AUROC 0,938 en JevOCRBench) | no disponible | no disponible |
 
@@ -96,7 +96,7 @@ La comparación relevante es que Jev, con 2,2B parámetros, se queda a 0,002 pun
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/FlagRelease/MiniCPM-OCR-Jev-BF16-nvidia-FlagOS
+- Repositorio Hugging Face: https://huggingface.co/FlagRelease/MiniCPM-OCR-Jev-BF16-nvidia-FlagOS
 - Imagen Docker FlagOS: `harbor.baai.ac.cn/flagrelease-public/qwen3-5-2b-jev-nvidia003-gems5.4.0-tree0.7.0-cx0.14.0-pluginnone-vllmnone-sglangnone-sglangflnone-cp312-pt210-cu131-x64-580.126.20:202610270750`
 - AnythingLLM (integracion mencionada): https://anythingllm.com
 - Paper, blog o repositorio de MiniCPM-OCR: no disponible en la informacion proporcionada.

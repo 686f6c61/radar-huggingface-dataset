@@ -101,7 +101,7 @@ La ventaja de la variante sin escala se concentra en el error de correspondencia
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Cloth-splatters/dexgarmentlab-lift-20260822-state-est-gps-flow-tf2-noscale
+- Modelo en Hugging Face: https://huggingface.co/Cloth-splatters/dexgarmentlab-lift-20260822-state-est-gps-flow-tf2-noscale
 - Checkpoint de referencia con aleatorización completa: https://huggingface.co/Cloth-splatters/dexgarmentlab-lift-20260822-state-est-gps-flow-tf2/tree/03e61682a965325b3ff841e8b10a2a800ee6d28c
 - Dataset asociado de correspondencia: https://huggingface.co/datasets/Cloth-splatters/dexgarmentlab-lift-correspondence-20260822
 - Resultados de la búsqueda web: no se ha encontrado ningún enlace relevante al modelo, al proyecto UniClothDiff ni a DexGarmentLab. Los resultados devueltos corresponden a consultas sin relación con el modelo (foros de empleo y herramientas EDA) y se descartan.

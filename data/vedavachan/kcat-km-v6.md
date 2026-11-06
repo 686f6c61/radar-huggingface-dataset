@@ -2,7 +2,7 @@
 
 ## Resumen
 
-kcat-km-v6 es un modelo predictivo de aprendizaje automatico clasico, no un modelo de lenguaje. Desarrollado por el usuario VedaVachan y publicado en HuggingFace, su funcion es predecir dos parametros enzimaticos clave: la constante catalitica (kcat) y la constante de Michaelis (km), a partir de la secuencia de aminoacidos de una enzima y de la estructura SMILES de un sustrato. Se distribuye como un paquete de artefactos `sklearn` serializados con `joblib`, con un tamano de repositorio de aproximadamente 0,1 GB.
+kcat-km-v6 es un modelo predictivo de aprendizaje automatico clasico, no un modelo de lenguaje. Desarrollado por el usuario VedaVachan y publicado en Hugging Face, su funcion es predecir dos parametros enzimaticos clave: la constante catalitica (kcat) y la constante de Michaelis (km), a partir de la secuencia de aminoacidos de una enzima y de la estructura SMILES de un sustrato. Se distribuye como un paquete de artefactos `sklearn` serializados con `joblib`, con un tamano de repositorio de aproximadamente 0,1 GB.
 
 La version v6 es una combinacion "hibrida" de dos modelos locales previos: utiliza el modelo V4 verificado para predecir log10_kcat y el modelo V3 verificado para predecir log10_km. Cada componente conserva su propio imputador, su vectorizador TF-IDF de secuencia, su reduccion SVD y su esquema de caracteristicas. No hay reentrenamiento, calibracion ni ajuste conjunto: son dos bosques ExtraTrees fijos que se ejecutan de forma independiente.
 
@@ -71,7 +71,7 @@ La model card indica que el hibrido es peor que V4 en estas particiones y que V5
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kcat-km-v6 | Ensemble ExtraTrees (sklearn) | no aplica | no aplica | MIT | HuggingFace, CPU-only |
+| kcat-km-v6 | Ensemble ExtraTrees (sklearn) | no aplica | no aplica | MIT | Hugging Face, CPU-only |
 | kcat-km V4 (componente) | ExtraTrees (sklearn) | no aplica | no aplica | MIT (segun repositorio del autor) | Local verificado |
 | kcat-km V3 (componente) | ExtraTrees (sklearn) | no aplica | no aplica | MIT (segun repositorio del autor) | Local verificado |
 | kcat-km V5 | no disponible | no disponible | no disponible | no disponible | Referenciado en la model card |
@@ -93,8 +93,8 @@ No se dispone de informacion sobre modelos alternativos externos de prediccion d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/VedaVachan/kcat-km-v6
-- Model card (README del repositorio): incluida en la pagina de HuggingFace
+- Hugging Face: https://huggingface.co/VedaVachan/kcat-km-v6
+- Model card (README del repositorio): incluida en la pagina de Hugging Face
 - Script de inferencia referenciado: `/app/predict.py` (dentro del paquete)
 - Rutas de pesos: `weights/v4_kcat` y `weights/v3_km`
 - No se han encontrado en la busqueda web papers, blogs, repositorios adicionales ni demos.

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `cyttic/exp39-ctc-human10bi-hhdgeom-llmgen-10k-seed44` es un checkpoint publicado en HuggingFace por el usuario cyttic, con 87.279.756 parametros (aproximadamente 87 millones) almacenados en formato safetensors y un tamano de repositorio de 0,3 GB. La nomenclatura del identificador sugiere un experimento de reconocimiento de voz basado en CTC (Connectionist Temporal Classification), con variantes que aluden a "human10bi", "hhdgeom" y "llmgen", y un entrenamiento de 10.000 pasos con semilla 44, aunque la model card no confirma ninguno de estos extremos.
+El modelo `cyttic/exp39-ctc-human10bi-hhdgeom-llmgen-10k-seed44` es un checkpoint publicado en Hugging Face por el usuario cyttic, con 87.279.756 parametros (aproximadamente 87 millones) almacenados en formato safetensors y un tamano de repositorio de 0,3 GB. La nomenclatura del identificador sugiere un experimento de reconocimiento de voz basado en CTC (Connectionist Temporal Classification), con variantes que aluden a "human10bi", "hhdgeom" y "llmgen", y un entrenamiento de 10.000 pasos con semilla 44, aunque la model card no confirma ninguno de estos extremos.
 
-La model card publicada es la plantilla por defecto de HuggingFace sin completar: todos los campos de descripcion, uso previsto, datos de entrenamiento, evaluacion y especificaciones tecnicas figuran como "[More Information Needed]". No hay informacion sobre arquitectura, contexto, idiomas ni pipeline declarado. La unica referencia tecnica explicita es la cita a Lacoste et al. (2019) sobre el calculo de emisiones de carbono, que aparece de forma generica en la plantilla y no aporta datos sobre el modelo.
+La model card publicada es la plantilla por defecto de Hugging Face sin completar: todos los campos de descripcion, uso previsto, datos de entrenamiento, evaluacion y especificaciones tecnicas figuran como "[More Information Needed]". No hay informacion sobre arquitectura, contexto, idiomas ni pipeline declarado. La unica referencia tecnica explicita es la cita a Lacoste et al. (2019) sobre el calculo de emisiones de carbono, que aparece de forma generica en la plantilla y no aporta datos sobre el modelo.
 
 Por tanto, esta ficha se limita a documentar los datos verificables (parametros, licencia, formato y tamano) y marca explicitamente como "no disponible" todo aquello que el autor no ha publicado. Se trata de un artefacto de investigacion sin documentacion asociada, no de un modelo listo para produccion.
 
@@ -76,6 +76,6 @@ No disponible. La ausencia de informacion sobre arquitectura, tarea y rendimient
 
 ## Enlaces
 
-- [HuggingFace: cyttic/exp39-ctc-human10bi-hhdgeom-llmgen-10k-seed44](https://huggingface.co/cyttic/exp39-ctc-human10bi-hhdgeom-llmgen-10k-seed44)
+- [Hugging Face: cyttic/exp39-ctc-human10bi-hhdgeom-llmgen-10k-seed44](https://huggingface.co/cyttic/exp39-ctc-human10bi-hhdgeom-llmgen-10k-seed44)
 - [Paper citado en la model card: Lacoste et al. (2019), Quantifying the Carbon Emissions of Machine Learning](https://arxiv.org/abs/1910.09700)
 - [Calculadora de impacto medioambiental ML CO2 Impact](https://mlco2.github.io/impact#compute)

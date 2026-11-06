@@ -6,7 +6,7 @@ El modelo `learn-classification` de JamesTrfn (James Taylor) es un prototipo de 
 
 El repositorio incluye un checkpoint de inicialización válido (`model.safetensors`) para pruebas de humo, pero el autor no presenta ningún resultado de rendimiento ni lo propone como modelo entrenado. La model card es explícita al respecto: el checkpoint no ha sido entrenado ni auditado para robustez, equidad o transferencia de dominio. Su relevancia radica en servir como punto de partida experimental para investigar arquitecturas híbridas de clasificación a escala mínima, y en documentar un flujo de trabajo reproducible con configuración de arquitectura generada automáticamente.
 
-El proyecto se publica bajo licencia Apache 2.0 e incluye un script Python (`pipeline.py`) con un ejemplo ejecutable y una receta de entrenamiento por defecto (optimizador Adam con warmup constante). No se declaran idiomas soportados ni longitud de contexto. El repositorio se creó el 28 de agosto de 2026 y cuenta con cero descargas y cero likes en HuggingFace.
+El proyecto se publica bajo licencia Apache 2.0 e incluye un script Python (`pipeline.py`) con un ejemplo ejecutable y una receta de entrenamiento por defecto (optimizador Adam con warmup constante). No se declaran idiomas soportados ni longitud de contexto. El repositorio se creó el 28 de agosto de 2026 y cuenta con cero descargas y cero likes en Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -67,7 +67,7 @@ No hay modelos directamente comparables disponibles. Este prototipo es una imple
 
 - El checkpoint incluido no ha sido entrenado: es una inicialización válida únicamente para pruebas de humo, no para inferencia real.
 - No se ha auditado el modelo para robustez, equidad o transferencia de dominio, según advierte la propia model card.
-- La implementación es personalizada y requiere un adaptador explícito para cargarse con APIs genéricas de HuggingFace.
+- La implementación es personalizada y requiere un adaptador explícito para cargarse con APIs genéricas de Hugging Face.
 - No se declaran idiomas soportados ni longitud de contexto, lo que impide conocer sus límites de uso.
 - No hay datos de rendimiento ni benchmarks publicados; cualquier resultado futuro de un checkpoint entrenado debe documentarse por separado de los valores por defecto incluidos.
 - La licencia Apache 2.0 permite uso comercial, pero el autor advierte que deben revisarse los términos de las fuentes de datos externas si se utiliza con datasets de terceros.
@@ -76,5 +76,5 @@ No hay modelos directamente comparables disponibles. Este prototipo es una imple
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/JamesTrfn/learn-classification
-- Perfil del autor en HuggingFace: https://huggingface.co/JamesTrfn
+- Repositorio en Hugging Face: https://huggingface.co/JamesTrfn/learn-classification
+- Perfil del autor en Hugging Face: https://huggingface.co/JamesTrfn

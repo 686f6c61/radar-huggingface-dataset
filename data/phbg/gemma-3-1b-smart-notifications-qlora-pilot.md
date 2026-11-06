@@ -75,8 +75,8 @@ El propio autor indica que estos números miden solo formato y no demuestran gan
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `phbg/gemma-3-1b-smart-notifications-qlora-pilot` | Adaptador LoRA sobre 1B | No disponible | Adaptador QLoRA para summarización en portugués | Gemma | HuggingFace (0 descargas) |
-| `google/gemma-3-1b-it` | 1B | No disponible | Modelo base instruccional | Gemma | HuggingFace (modelo público de Google) |
+| `phbg/gemma-3-1b-smart-notifications-qlora-pilot` | Adaptador LoRA sobre 1B | No disponible | Adaptador QLoRA para summarización en portugués | Gemma | Hugging Face (0 descargas) |
+| `google/gemma-3-1b-it` | 1B | No disponible | Modelo base instruccional | Gemma | Hugging Face (modelo público de Google) |
 | Otros adaptadores LoRA de summarización en portugués | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de benchmarks ni de modelos comparables adicionales en la información proporcionada.
@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks ni de modelos comparables adicionales en la
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/phbg/gemma-3-1b-smart-notifications-qlora-pilot)
+- [Modelo en Hugging Face](https://huggingface.co/phbg/gemma-3-1b-smart-notifications-qlora-pilot)
 - [Modelo base google/gemma-3-1b-it](https://huggingface.co/google/gemma-3-1b-it)
 - [Dataset phbg/smart-notifications-synthetic](https://huggingface.co/datasets/phbg/smart-notifications-synthetic)
 - [Notebook público del piloto](https://github.com/pedrobelota/android-smart-notifications/blob/feat/poc-litert-gemma/notebooks/notification_qlora_pilot.ipynb)

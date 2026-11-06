@@ -4,7 +4,7 @@
 
 FHDR_Uncensored es un modelo de texto a imagen desarrollado por el usuario kpsss34, construido como un fine-tuning del modelo base black-forest-labs/FLUX.1-dev de Black Forest Labs. El modelo se presenta como una version "sin censura" del FLUX.1-dev, lo que implica que ha sido entrenado o ajustado para eliminar o reducir los filtros de contenido que limitan la generacion de imagenes en el modelo original. Con 11.901.408.320 parametros (aproximadamente 11,9 mil millones), el modelo mantiene la arquitectura del FLUX.1-dev, un transformer multimodal de 12 mil millones de parametros con codificacion dual de texto.
 
-El modelo esta disponible en formatos safetensors y GGUF, lo que permite su uso tanto con la libreria diffusers como con soluciones de inferencia optimizadas como llama.cpp o similares. Su acceso es restringido (gated) en HuggingFace, lo que requiere aceptar condiciones especificas antes de su descarga. Con 3.076 descargas y 613 likes, ha generado interes dentro de la comunidad, especialmente entre usuarios que buscan alternativas sin restricciones de contenido para generacion artistica o creativa.
+El modelo esta disponible en formatos safetensors y GGUF, lo que permite su uso tanto con la libreria diffusers como con soluciones de inferencia optimizadas como llama.cpp o similares. Su acceso es restringido (gated) en Hugging Face, lo que requiere aceptar condiciones especificas antes de su descarga. Con 3.076 descargas y 613 likes, ha generado interes dentro de la comunidad, especialmente entre usuarios que buscan alternativas sin restricciones de contenido para generacion artistica o creativa.
 
 La relevancia de este modelo radica en que aborda una demanda creciente de herramientas de generacion de imagenes sin filtros de contenido, manteniendo la calidad del FLUX.1-dev. Sin embargo, esta caracteristica plantea cuestiones eticas y legales importantes que deben considerarse antes de su uso en produccion.
 
@@ -84,7 +84,7 @@ FHDR_Uncensored se diferencia principalmente por la eliminacion de filtros de co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kpsss34/FHDR_Uncensored
+- Modelo en Hugging Face: https://huggingface.co/kpsss34/FHDR_Uncensored
 - Repositorio del modelo: https://huggingface.co/kpsss34/FHDR_Uncensored/tree/main
 - README del modelo: https://huggingface.co/kpsss34/FHDR_Uncensored/blob/main/README.md
 - Discusion sobre opciones de hosting: https://huggingface.co/kpsss34/FHDR_Uncensored/discussions/17

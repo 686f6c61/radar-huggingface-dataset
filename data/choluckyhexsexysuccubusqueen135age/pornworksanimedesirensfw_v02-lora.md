@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`pornworksAnimeDesireNSFW_v02-lora` es un adaptador LoRA de bajo rango para generacion de imagenes texto-a-imagen, publicado por el usuario `ChoLuckyHexSexySuccubusQueen135Age` en HuggingFace. No es un modelo completo: se trata de un ajuste fino parametrico eficiente que debe cargarse sobre el checkpoint base `John6666/pornworks-anime-desire-nsfw-v02-sdxl`, un derivado de Stable Diffusion XL orientado a ilustracion anime y contenido para adultos. El repositorio incluye un unico fichero de pesos en formato `.safetensors` y una model card minima con palabras de activacion (trigger words) y un ejemplo de prompt.
+`pornworksAnimeDesireNSFW_v02-lora` es un adaptador LoRA de bajo rango para generacion de imagenes texto-a-imagen, publicado por el usuario `ChoLuckyHexSexySuccubusQueen135Age` en Hugging Face. No es un modelo completo: se trata de un ajuste fino parametrico eficiente que debe cargarse sobre el checkpoint base `John6666/pornworks-anime-desire-nsfw-v02-sdxl`, un derivado de Stable Diffusion XL orientado a ilustracion anime y contenido para adultos. El repositorio incluye un unico fichero de pesos en formato `.safetensors` y una model card minima con palabras de activacion (trigger words) y un ejemplo de prompt.
 
 El proposito declarado del adaptador es el de fijar un estilo y una identidad de personaje concretos —una figura demoniaca tipo succubus de estetica anime— y forzar la generacion de hojas de personaje (character sheets) con vistas frontal, lateral y trasera, ademas de primeros planos de cara. Es, por tanto, una herramienta de consistencia visual dentro de pipelines de ilustracion, no un modelo de proposito general.
 
@@ -63,11 +63,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `pornworksAnimeDesireNSFW_v02-lora` | LoRA sobre SDXL | no disponible | no aplica | no disponible | HuggingFace, 0 descargas |
-| `John6666/pornworks-anime-desire-nsfw-v02-sdxl` | Checkpoint completo SDXL | no disponible (derivado de SDXL, ~3.5 B en UNet + text encoders) | no aplica | no disponible | HuggingFace |
-| Stable Diffusion XL base | Checkpoint difusion | ~3.5 B | no aplica | CreativeML Open RAIL++-M | HuggingFace / Stability AI |
-| Pony Diffusion V6 XL | Checkpoint SDXL ajustado | ~3.5 B (derivado de SDXL) | no aplica | no disponible / sujeta a condiciones del autor | HuggingFace |
-| Illustrious-XL | Checkpoint SDXL ajustado | ~3.5 B (derivado de SDXL) | no aplica | no disponible | HuggingFace |
+| `pornworksAnimeDesireNSFW_v02-lora` | LoRA sobre SDXL | no disponible | no aplica | no disponible | Hugging Face, 0 descargas |
+| `John6666/pornworks-anime-desire-nsfw-v02-sdxl` | Checkpoint completo SDXL | no disponible (derivado de SDXL, ~3.5 B en UNet + text encoders) | no aplica | no disponible | Hugging Face |
+| Stable Diffusion XL base | Checkpoint difusion | ~3.5 B | no aplica | CreativeML Open RAIL++-M | Hugging Face / Stability AI |
+| Pony Diffusion V6 XL | Checkpoint SDXL ajustado | ~3.5 B (derivado de SDXL) | no aplica | no disponible / sujeta a condiciones del autor | Hugging Face |
+| Illustrious-XL | Checkpoint SDXL ajustado | ~3.5 B (derivado de SDXL) | no aplica | no disponible | Hugging Face |
 
 Nota: los datos de los modelos comparables son caracteristicas generales del ecosistema SDXL; no se dispone de comparaciones de rendimiento directas con este adaptador.
 
@@ -85,7 +85,7 @@ Nota: los datos de los modelos comparables son caracteristicas generales del eco
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ChoLuckyHexSexySuccubusQueen135Age/pornworksAnimeDesireNSFW_v02-lora
+- Modelo en Hugging Face: https://huggingface.co/ChoLuckyHexSexySuccubusQueen135Age/pornworksAnimeDesireNSFW_v02-lora
 - Ficheros del repositorio: https://huggingface.co/ChoLuckyHexSexySuccubusQueen135Age/pornworksAnimeDesireNSFW_v02-lora/tree/main
 - Modelo base: https://huggingface.co/John6666/pornworks-anime-desire-nsfw-v02-sdxl
 - Documentacion de LoRA en `diffusers`: https://huggingface.co/docs/diffusers/using-diffusers/loading_adapters

@@ -72,7 +72,7 @@ El modelo Qwen3.8-27B destaca por su combinacion de vision, contexto muy largo y
 
 ## Enlaces
 
-- Repositorio HuggingFace: [philipsorst/qwen3.8-27b-q5](https://huggingface.co/philipsorst/qwen3.8-27b-q5)
+- Repositorio Hugging Face: [philipsorst/qwen3.8-27b-q5](https://huggingface.co/philipsorst/qwen3.8-27b-q5)
 - Modelo base: [Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - Documentacion Cloudflare: [qwen3.8-27b](https://developers.cloudflare.com/workers-ai/models/qwen3.8-27b/)
 - Guia de ejecucion local (yottalabs): [How to Run Qwen 3.8 27B Locally](https://www.yottalabs.ai/post/how-to-run-qwen-3-8-27b-locally-ollama-gguf-single-gpu-2026)

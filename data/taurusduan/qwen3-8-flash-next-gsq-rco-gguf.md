@@ -104,7 +104,7 @@ No se dispone de datos de modelos alternativos comparables (parametros, contexto
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/taurusduan/Qwen3.8-Flash-Next-GSQ-RCO-GGUF
+- Repositorio Hugging Face: https://huggingface.co/taurusduan/Qwen3.8-Flash-Next-GSQ-RCO-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio de referencia citado en la model card (ISTA-DASLab): https://huggingface.co/ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF
 - Paper de GSQ (arXiv:2604.18556): https://arxiv.org/abs/2604.18556

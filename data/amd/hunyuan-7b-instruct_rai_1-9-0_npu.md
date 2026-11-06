@@ -6,7 +6,7 @@ Hunyuan-7B-Instruct_rai_1.9.0_npu es una distribución del modelo Tencent Hunyua
 
 Su relevancia es práctica más que algorítmica: permite ejecutar un modelo conversacional de 7B en PC con procesadores AMD Ryzen AI (serie 300 y posteriores) sin depender de una GPU dedicada, aprovechando el motor XDNA/NPU a través del runtime de AMD. El repositorio ocupa 9,3 GB, lo que refleja los pesos ONNX empaquetados junto con los artefactos de cuantización.
 
-La ficha se limita a los datos publicados en la model card y en los metadatos del repositorio de HuggingFace; los detalles de entrenamiento del modelo base no están incluidos en la información disponible y se marcan como tales.
+La ficha se limita a los datos publicados en la model card y en los metadatos del repositorio de Hugging Face; los detalles de entrenamiento del modelo base no están incluidos en la información disponible y se marcan como tales.
 
 ## Especificaciones técnicas
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Formato / backend | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Hunyuan-7B-Instruct_rai_1.9.0_npu (este) | 7B denso | no disponible | ONNX + Quark, NPU Ryzen AI | `other` (gated) | HuggingFace, acceso restringido |
-| Hunyuan-7B-Instruct (original, Tencent) | 7B denso | no disponible en esta ficha | safetensors, GPU/CPU | licencia Hunyuan (consultar) | HuggingFace |
-| Qwen2.5-7B-Instruct | 7B denso | 32 768 tokens (según su model card) | safetensors, GGUF, múltiples runtimes | Apache 2.0 | HuggingFace |
-| Llama-3.1-8B-Instruct | 8B denso | 131 072 tokens (según su model card) | safetensors, GGUF, múltiples runtimes | Llama 3.1 Community License | HuggingFace (gated) |
+| Hunyuan-7B-Instruct_rai_1.9.0_npu (este) | 7B denso | no disponible | ONNX + Quark, NPU Ryzen AI | `other` (gated) | Hugging Face, acceso restringido |
+| Hunyuan-7B-Instruct (original, Tencent) | 7B denso | no disponible en esta ficha | safetensors, GPU/CPU | licencia Hunyuan (consultar) | Hugging Face |
+| Qwen2.5-7B-Instruct | 7B denso | 32 768 tokens (según su model card) | safetensors, GGUF, múltiples runtimes | Apache 2.0 | Hugging Face |
+| Llama-3.1-8B-Instruct | 8B denso | 131 072 tokens (según su model card) | safetensors, GGUF, múltiples runtimes | Llama 3.1 Community License | Hugging Face (gated) |
 
 La comparación relevante no es de calidad bruta sino de plataforma: este paquete es la única de las opciones listada que se ejecuta de forma nativa en la NPU de Ryzen AI. Frente a Qwen2.5-7B o Llama-3.1-8B, ofrece un ecosistema de despliegue mucho más restringido y solo en inglés, a cambio de aceleración en hardware AMD sin GPU.
 
@@ -84,7 +84,7 @@ La comparación relevante no es de calidad bruta sino de plataforma: este paquet
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/amd/Hunyuan-7B-Instruct_rai_1.9.0_npu
+- Repositorio Hugging Face: https://huggingface.co/amd/Hunyuan-7B-Instruct_rai_1.9.0_npu
 - Modelo base (referencia): https://huggingface.co/tencent/Hunyuan-7B-Instruct
 - Documentación de Ryzen AI (AMD): no disponible en la información proporcionada
 - Paper o blog técnico de Hunyuan v1: no disponible en la información proporcionada

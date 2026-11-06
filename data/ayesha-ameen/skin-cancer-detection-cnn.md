@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Ayesha-Ameen/skin-cancer-detection-cnn` es un modelo de visión por computador publicado en HuggingFace por la autora Ayesha-Ameen, orientado a la detección de cáncer de piel mediante una red neuronal convolucional (CNN) implementada con Keras. El repositorio tiene un tamaño de 0,2 GB y una licencia MIT, lo que permite su uso, modificación y redistribución con fines comerciales y no comerciales. No se trata de un modelo de lenguaje ni de un transformer generativo: es un clasificador de imágenes de dominio específico, probablemente entrenado sobre un conjunto de datos dermatológico para distinguir lesiones malignas de benignas.
+`Ayesha-Ameen/skin-cancer-detection-cnn` es un modelo de visión por computador publicado en Hugging Face por la autora Ayesha-Ameen, orientado a la detección de cáncer de piel mediante una red neuronal convolucional (CNN) implementada con Keras. El repositorio tiene un tamaño de 0,2 GB y una licencia MIT, lo que permite su uso, modificación y redistribución con fines comerciales y no comerciales. No se trata de un modelo de lenguaje ni de un transformer generativo: es un clasificador de imágenes de dominio específico, probablemente entrenado sobre un conjunto de datos dermatológico para distinguir lesiones malignas de benignas.
 
-La información pública disponible es muy escasa. La model card únicamente declara la licencia MIT y no incluye descripción de la arquitectura, del conjunto de datos de entrenamiento, de las métricas de rendimiento ni de las clases de salida. Tampoco se especifican los idiomas (no aplica en un modelo de visión), el pipeline de HuggingFace ni los formatos de pesos más allá de la librería Keras.
+La información pública disponible es muy escasa. La model card únicamente declara la licencia MIT y no incluye descripción de la arquitectura, del conjunto de datos de entrenamiento, de las métricas de rendimiento ni de las clases de salida. Tampoco se especifican los idiomas (no aplica en un modelo de visión), el pipeline de Hugging Face ni los formatos de pesos más allá de la librería Keras.
 
 Por su naturaleza, este modelo resulta relevante para desarrolladores e investigadores que trabajan en aplicaciones de cribado dermatológico asistido por IA, aunque su escasa documentación y la ausencia de benchmarks publicados obligan a una validación independiente antes de cualquier uso en entornos reales. No debe confundirse con un modelo de propósito general: su alcance está acotado a la clasificación de imágenes de lesiones cutáneas.
 
@@ -74,5 +74,5 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ayesha-Ameen/skin-cancer-detection-cnn
+- Modelo en Hugging Face: https://huggingface.co/Ayesha-Ameen/skin-cancer-detection-cnn
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la información disponible.

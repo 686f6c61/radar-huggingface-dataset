@@ -101,7 +101,7 @@ La comparativa con otros ASR de propósito general (por ejemplo, la familia Whis
 - Mantenimiento incierto: el repositorio registra 0 descargas y 0 likes, con una única actualización seis minutos después de la creación. No hay señales de mantenimiento continuado.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/lunks/Confucius4-R2T2-CoreML-ANE
+- Modelo en Hugging Face: https://huggingface.co/lunks/Confucius4-R2T2-CoreML-ANE
 - Modelo base: https://huggingface.co/netease-youdao/Confucius4-R2T2
 - Licencia del modelo base: https://raw.githubusercontent.com/netease-youdao/Confucius4-R2T2/refs/heads/master/MODEL_LICENSE
 - Fork de VoiceInk que usa este modelo como proveedor R2T2: https://github.com/Beingpax/VoiceInk

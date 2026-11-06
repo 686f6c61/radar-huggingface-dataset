@@ -98,7 +98,7 @@ La comparacion cuantitativa solo es posible frente al modelo base, ya que la mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shanaka95/laya-fintiment
+- Modelo en Hugging Face: https://huggingface.co/shanaka95/laya-fintiment
 - Modelo base: https://huggingface.co/convaiinnovations/laya
 - Dataset de fine-tune: https://huggingface.co/datasets/shanaka95/fingpt-sentiment-3class
 - Dataset original FinGPT: https://huggingface.co/datasets/FinGPT/fingpt-sentiment-train

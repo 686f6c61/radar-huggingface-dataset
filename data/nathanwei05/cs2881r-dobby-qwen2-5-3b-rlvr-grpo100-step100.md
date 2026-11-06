@@ -6,7 +6,7 @@ El modelo `nathanwei05/cs2881r-dobby-qwen2.5-3b-rlvr-grpo100-step100` es un ajus
 
 El entrenamiento se realizo con LoRA de rango 16 (LR 2e-5, beta 0,04, 100 actualizaciones) y se selecciono el checkpoint 100 sobre un conjunto de desarrollo de 150 prompts. La recompensa utilizada es exclusivamente un verificador basado en reglas de correccion sobre prompts de GSM8K y MATH, por lo que el objetivo del ajuste es mejorar el razonamiento matematico verificable, no capacidades generales.
 
-Es relevante en el contexto de investigacion porque documenta de forma reproducible un pipeline completo de RLVR sobre un modelo pequeno (3B), con codigo, datos y worklog publicos. No obstante, es un artefacto academico: tiene 0 descargas y 0 likes en HuggingFace, no publica evaluaciones de benchmarks y no declara idiomas soportados.
+Es relevante en el contexto de investigacion porque documenta de forma reproducible un pipeline completo de RLVR sobre un modelo pequeno (3B), con codigo, datos y worklog publicos. No obstante, es un artefacto academico: tiene 0 descargas y 0 likes en Hugging Face, no publica evaluaciones de benchmarks y no declara idiomas soportados.
 
 ## Especificaciones tecnicas
 
@@ -17,7 +17,7 @@ Es relevante en el contexto de investigacion porque documenta de forma reproduci
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No confirmada en la model card; heredada de Qwen2.5-3B-Instruct, que soporta 32.768 tokens (dato de referencia, no verificado en la ficha del autor) |
 | Tipos de cuantizacion | No disponible. El repositorio solo contiene pesos en safetensors y el adaptador LoRA; no se publican variantes GGUF, AWQ, GPTQ ni bitsandbytes |
-| Idiomas soportados | No disponible (el campo de idiomas aparece vacio en HuggingFace) |
+| Idiomas soportados | No disponible (el campo de idiomas aparece vacio en Hugging Face) |
 | Licencia | Apache-2.0 |
 | Formato de pesos | safetensors (modelo fusionado en la raiz del repositorio y adaptador LoRA en `adapter/`) |
 
@@ -68,16 +68,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicados |
 |---|---|---|---|---|---|
-| cs2881r-dobby-qwen2.5-3b-rlvr-grpo100-step100 | 3,09 B | No confirmado (base Qwen2.5: 32.768 tokens) | Apache-2.0 | HuggingFace, 0 descargas, repositorio de 6,3 GB | No publicados |
-| Qwen2.5-3B-Instruct (modelo base de la cadena) | 3,09 B | 32.768 tokens | Apache-2.0 | HuggingFace, ampliamente desplegado | Publicados por Alibaba, no reproducidos aqui |
-| Llama-3.2-3B-Instruct | 3,21 B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, descarga sujeta a aceptacion de terminos | Publicados por Meta, no reproducidos aqui |
-| Phi-3.5-mini-instruct | 3,8 B | 128.000 tokens | MIT | HuggingFace | Publicados por Microsoft, no reproducidos aqui |
+| cs2881r-dobby-qwen2.5-3b-rlvr-grpo100-step100 | 3,09 B | No confirmado (base Qwen2.5: 32.768 tokens) | Apache-2.0 | Hugging Face, 0 descargas, repositorio de 6,3 GB | No publicados |
+| Qwen2.5-3B-Instruct (modelo base de la cadena) | 3,09 B | 32.768 tokens | Apache-2.0 | Hugging Face, ampliamente desplegado | Publicados por Alibaba, no reproducidos aqui |
+| Llama-3.2-3B-Instruct | 3,21 B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, descarga sujeta a aceptacion de terminos | Publicados por Meta, no reproducidos aqui |
+| Phi-3.5-mini-instruct | 3,8 B | 128.000 tokens | MIT | Hugging Face | Publicados por Microsoft, no reproducidos aqui |
 
 Los datos de contexto y licencia de los modelos comparativos son datos generales de referencia y no se han verificado en la busqueda web realizada. La comparativa de rendimiento no es posible porque este ajuste no publica ninguna metrica.
 
 ## Limitaciones y advertencias
 
-- Artefacto academico sin validacion externa: 0 descargas y 0 likes en HuggingFace, sin evaluaciones independientes ni pruebas de terceros.
+- Artefacto academico sin validacion externa: 0 descargas y 0 likes en Hugging Face, sin evaluaciones independientes ni pruebas de terceros.
 - Ausencia total de benchmarks: no hay forma de comparar su rendimiento real con el modelo base ni con alternativas; la unica evidencia de mejora es la seleccion de checkpoint sobre 150 prompts de desarrollo.
 - Optimizacion restringida a matematicas: la recompensa solo cubre GSM8K y MATH, por lo que es probable que las capacidades de codigo, conversacion general, seguimiento de instrucciones y multilingueismo se hayan degradado respecto al modelo base. No se documenta ninguna evaluacion de olvido catastrofico.
 - Capacidad limitada del adaptador: LoRA de rango 16 y solo 100 actualizaciones, lo que limita la magnitud del cambio aprendido.
@@ -91,7 +91,7 @@ Los datos de contexto y licencia de los modelos comparativos son datos generales
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nathanwei05/cs2881r-dobby-qwen2.5-3b-rlvr-grpo100-step100
+- Modelo en Hugging Face: https://huggingface.co/nathanwei05/cs2881r-dobby-qwen2.5-3b-rlvr-grpo100-step100
 - Modelo base de la cadena (RLAIF + GRPO, checkpoint 25): https://huggingface.co/axel-sdq/cs2881r-dobby-qwen2.5-3b-rlaif-grpo100-step25
 - Codigo de entrenamiento, datos, worklog y resultados: https://github.com/harvard-cs2881f26/hw1-soderquist-wei
 - Modelo base original de la cadena: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct

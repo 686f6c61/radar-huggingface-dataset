@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `lmcu000/sherpa-onnx-streaming-zipformer-zh-en-vi-s2a` es un sistema de reconocimiento automático del habla (ASR) en modo streaming, publicado por el usuario lmcu000 en HuggingFace. Se distribuye en formato ONNX y está pensado para ejecutarse con la librería sherpa-onnx, que realiza la inferencia en local mediante onnxruntime, sin necesidad de conexión a Internet ni de servidores externos. El pipeline declarado es `automatic-speech-recognition` y los tags indican soporte para vietnamita, chino e inglés con cambio de código (code-switching).
+El modelo `lmcu000/sherpa-onnx-streaming-zipformer-zh-en-vi-s2a` es un sistema de reconocimiento automático del habla (ASR) en modo streaming, publicado por el usuario lmcu000 en Hugging Face. Se distribuye en formato ONNX y está pensado para ejecutarse con la librería sherpa-onnx, que realiza la inferencia en local mediante onnxruntime, sin necesidad de conexión a Internet ni de servidores externos. El pipeline declarado es `automatic-speech-recognition` y los tags indican soporte para vietnamita, chino e inglés con cambio de código (code-switching).
 
 La relevancia de este tipo de modelos radica en su orientación a despliegues en el borde: sherpa-onnx permite compilar el motor desde fuente y ejecutarlo en dispositivos de gama baja o embebidos, algo crítico para aplicaciones de subtitulado en vivo, asistentes de voz o transcripción de reuniones donde la latencia y la privacidad son requisitos. Al ser un transductor Zipformer en streaming, transcribe audio de forma incremental en lugar de esperar al final de la locución.
 
@@ -82,7 +82,7 @@ La comparación cuantitativa (parámetros, WER, contexto) no es posible porque n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lmcu000/sherpa-onnx-streaming-zipformer-zh-en-vi-s2a
+- Modelo en Hugging Face: https://huggingface.co/lmcu000/sherpa-onnx-streaming-zipformer-zh-en-vi-s2a
 - Modelo base declarado en los tags: https://huggingface.co/pfluo/k2fsa-zipformer-chinese-english-mixed
 - Repositorio de sherpa-onnx: https://github.com/k2-fsa/sherpa-onnx
 - Documentación de sherpa-onnx: https://k2-fsa.github.io/sherpa/onnx/index.html

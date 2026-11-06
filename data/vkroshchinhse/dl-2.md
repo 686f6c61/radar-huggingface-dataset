@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `vkroshchinhse/dl-2` es un modelo de clasificacion de tokens (token classification) publicado en HuggingFace por el usuario vkroshchinhse. Segun las etiquetas del repositorio, esta construido sobre una arquitectura de tipo BERT y se distribuye en formato safetensors bajo la libreria transformers. El pipeline declarado es `token-classification`, lo que lo situa en la familia de modelos encoder orientados a tareas como reconocimiento de entidades nombradas (NER), etiquetado de partes de la oracion (POS tagging) o chunking, entre otras.
+El modelo `vkroshchinhse/dl-2` es un modelo de clasificacion de tokens (token classification) publicado en Hugging Face por el usuario vkroshchinhse. Segun las etiquetas del repositorio, esta construido sobre una arquitectura de tipo BERT y se distribuye en formato safetensors bajo la libreria transformers. El pipeline declarado es `token-classification`, lo que lo situa en la familia de modelos encoder orientados a tareas como reconocimiento de entidades nombradas (NER), etiquetado de partes de la oracion (POS tagging) o chunking, entre otras.
 
 El modelo cuenta con 33.215.625 parametros reales, un tamano notablemente inferior al de un BERT-base estandar (aproximadamente 110 millones), lo que sugiere una variante compacta o destilada del encoder. El repositorio ocupa 0,1 GB, lo que es coherente con ese numero de parametros en precision de 32 bits.
 
-La informacion publicada es muy limitada: la model card es la plantilla autogenerada por HuggingFace y no incluye datos sobre el desarrollador, el dataset de entrenamiento, los idiomas soportados ni la licencia. El modelo registra 0 descargas y 0 likes en el momento de la consulta, y no se han encontrado referencias externas, papers ni demos asociados en la busqueda web realizada. Por tanto, la mayor parte de las especificaciones deben tratarse como no disponibles y cualquier uso en produccion exigiria validacion previa por parte del integrador.
+La informacion publicada es muy limitada: la model card es la plantilla autogenerada por Hugging Face y no incluye datos sobre el desarrollador, el dataset de entrenamiento, los idiomas soportados ni la licencia. El modelo registra 0 descargas y 0 likes en el momento de la consulta, y no se han encontrado referencias externas, papers ni demos asociados en la busqueda web realizada. Por tanto, la mayor parte de las especificaciones deben tratarse como no disponibles y cualquier uso en produccion exigiria validacion previa por parte del integrador.
 
 ## Especificaciones tecnicas
 
@@ -76,10 +76,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Arquitectura | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vkroshchinhse/dl-2 | 33,2 M | BERT | no disponible | no disponible | HuggingFace |
-| bert-base-uncased | 110 M | BERT encoder | 512 tokens | Apache 2.0 | HuggingFace |
-| distilbert-base-uncased | 66 M | BERT destilado | 512 tokens | Apache 2.0 | HuggingFace |
-| bert-small (variantes comunitarias) | ~29 M | BERT reducido | 512 tokens | variable | HuggingFace |
+| vkroshchinhse/dl-2 | 33,2 M | BERT | no disponible | no disponible | Hugging Face |
+| bert-base-uncased | 110 M | BERT encoder | 512 tokens | Apache 2.0 | Hugging Face |
+| distilbert-base-uncased | 66 M | BERT destilado | 512 tokens | Apache 2.0 | Hugging Face |
+| bert-small (variantes comunitarias) | ~29 M | BERT reducido | 512 tokens | variable | Hugging Face |
 
 La comparativa se ofrece a efectos orientativos de tamano y categoria, ya que no se dispone de datos de rendimiento del modelo evaluado ni de confirmacion de sus hiperparametros. El modelo objeto de esta ficha es el de menor numero de parametros de la tabla, lo que sugiere una mayor ligereza a costa, previsiblemente, de capacidad de representacion.
 
@@ -90,14 +90,14 @@ La comparativa se ofrece a efectos orientativos de tamano y categoria, ya que no
 - Limitaciones de contexto: se desconoce la longitud maxima de secuencia soportada; los modelos BERT suelen limitarse a 512 tokens, pero este dato no esta confirmado para este repositorio.
 - Limitaciones de idioma: no se especifican los idiomas soportados, por lo que no puede asumirse cobertura multilingue.
 - Licencia: no disponible, lo que impide confirmar si el uso comercial esta permitido. Cualquier integracion en producto requeriria contactar con el autor o localizar la licencia original.
-- Model card incompleta: la tarjeta del modelo es la plantilla autogenerada de HuggingFace, sin informacion sobre autor, financiacion, proposito o limitaciones.
+- Model card incompleta: la tarjeta del modelo es la plantilla autogenerada de Hugging Face, sin informacion sobre autor, financiacion, proposito o limitaciones.
 - Ausencia de validacion externa: el modelo tiene 0 descargas y 0 likes y no aparece en la busqueda web realizada; no hay evidencia de que haya sido evaluado por terceros.
 - Riesgo de procedencia: no se documenta el modelo base desde el que se ha ajustado, lo que impide verificar la cadena de licencias.
 - Fecha de publicacion futura en los metadatos (2026-10-14), un dato anomalo que conviene verificar antes de confiar en la cronologia del repositorio.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/vkroshchinhse/dl-2
+- Repositorio en Hugging Face: https://huggingface.co/vkroshchinhse/dl-2
 - Paper citado en las etiquetas (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico: https://mlco2.github.io/impact
 - No se han encontrado papers, blogs, repositorios ni demos adicionales asociados al modelo en la busqueda web realizada.

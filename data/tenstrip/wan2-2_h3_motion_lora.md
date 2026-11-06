@@ -55,9 +55,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniMax-H3 (base) | Video | no disponible | no disponible | minimax-h3-community-license-agreement | HuggingFace |
-| Wan2.2 (5B) | Video | 5B | no disponible | Apache 2.0 (según repo) | HuggingFace, GitHub |
-| Wan2.2_H3_Motion_Lora | LoRA | no disponible | no disponible | minimax-h3-community-license-agreement | HuggingFace |
+| MiniMax-H3 (base) | Video | no disponible | no disponible | minimax-h3-community-license-agreement | Hugging Face |
+| Wan2.2 (5B) | Video | 5B | no disponible | Apache 2.0 (según repo) | Hugging Face, GitHub |
+| Wan2.2_H3_Motion_Lora | LoRA | no disponible | no disponible | minimax-h3-community-license-agreement | Hugging Face |
 
 La comparativa directa con otros LoRAs de video no es posible por falta de datos públicos. El LoRA se posiciona como una modificación experimental sobre MiniMax-H3, sin competidores directos conocidos.
 
@@ -73,7 +73,7 @@ La comparativa directa con otros LoRAs de video no es posible por falta de datos
 
 ## Enlaces
 
-- [HuggingFace - TenStrip/Wan2.2_H3_Motion_Lora](https://huggingface.co/TenStrip/Wan2.2_H3_Motion_Lora)
+- [Hugging Face - TenStrip/Wan2.2_H3_Motion_Lora](https://huggingface.co/TenStrip/Wan2.2_H3_Motion_Lora)
 - [README del modelo](https://huggingface.co/TenStrip/Wan2.2_H3_Motion_Lora/blob/main/README.md)
 - [GitHub - Wan-Video/Wan2.2](https://github.com/Wan-Video/Wan2.2)
 - [Licencia MiniMax-H3](https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE)

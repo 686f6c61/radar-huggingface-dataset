@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`honglyhly/SimpleVLN_Qwen25VL_3B_SFT` es un modelo de visión y lenguaje publicado por el usuario `honglyhly` en HuggingFace. El nombre indica que se trata de un fine-tuning con entrenamiento supervisado (SFT) sobre la arquitectura Qwen2.5-VL de 3B parámetros, probablemente orientado a tareas de navegación visual y lenguaje (VLN, Visual Language Navigation). No se ha publicado documentación técnica que describa el objetivo exacto ni el proceso de entrenamiento.
+`honglyhly/SimpleVLN_Qwen25VL_3B_SFT` es un modelo de visión y lenguaje publicado por el usuario `honglyhly` en Hugging Face. El nombre indica que se trata de un fine-tuning con entrenamiento supervisado (SFT) sobre la arquitectura Qwen2.5-VL de 3B parámetros, probablemente orientado a tareas de navegación visual y lenguaje (VLN, Visual Language Navigation). No se ha publicado documentación técnica que describa el objetivo exacto ni el proceso de entrenamiento.
 
 El modelo tiene un total de 3.754.622.976 parámetros y se distribuye en formato `safetensors`, con un tamaño de repositorio de 7,5 GB. No se especifican la licencia, los idiomas soportados ni la longitud de contexto. La falta de información pública y el bajo número de descargas (7) y likes (0) indican que se trata de un proyecto sin validación externa ni documentación de soporte.
 
@@ -56,8 +56,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| SimpleVLN_Qwen25VL_3B_SFT | 3.754.622.976 | no disponible | no disponible | HuggingFace |
-| Qwen2.5-VL 3B | no disponible | no disponible | no disponible | HuggingFace (coleccion Qwen2.5-VL) |
+| SimpleVLN_Qwen25VL_3B_SFT | 3.754.622.976 | no disponible | no disponible | Hugging Face |
+| Qwen2.5-VL 3B | no disponible | no disponible | no disponible | Hugging Face (coleccion Qwen2.5-VL) |
 
 No se dispone de datos comparativos de rendimiento ni de especificaciones completas del modelo base en la información proporcionada. La comparativa natural es con Qwen2.5-VL 3B, pero no se pueden extraer conclusiones sin datos de benchmarks.
 
@@ -71,6 +71,6 @@ No se dispone de datos comparativos de rendimiento ni de especificaciones comple
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/honglyhly/SimpleVLN_Qwen25VL_3B_SFT
+- Hugging Face: https://huggingface.co/honglyhly/SimpleVLN_Qwen25VL_3B_SFT
 - Coleccion Qwen2.5-VL: https://huggingface.co/collections/Qwen/qwen25-vl
 - Repo Qwen-VL: https://github.com/QwenLM/Qwen-VL

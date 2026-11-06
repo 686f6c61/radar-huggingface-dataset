@@ -60,16 +60,16 @@ No se han publicado resultados de benchmarks estandarizados (MMLU, HumanEval, GS
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| AIdashi/dora7-albedo-qwen3.6-35b-v16 (este) | 35B MoE (3B activos) | 256K | Apache 2.0 | HuggingFace |
-| Qwen3.6-27B dense | 27B denso | 256K | Apache 2.0 | HuggingFace, Ollama |
-| Qwen3.6-35B-A3B MoE (base) | 35B MoE (3B activos) | 256K | Apache 2.0 | HuggingFace, Ollama |
-| dendriteholdings/albedo-qwen3.6-35b-king-genesis | 35B MoE (3B activos) | 256K | Apache 2.0 | HuggingFace |
+| AIdashi/dora7-albedo-qwen3.6-35b-v16 (este) | 35B MoE (3B activos) | 256K | Apache 2.0 | Hugging Face |
+| Qwen3.6-27B dense | 27B denso | 256K | Apache 2.0 | Hugging Face, Ollama |
+| Qwen3.6-35B-A3B MoE (base) | 35B MoE (3B activos) | 256K | Apache 2.0 | Hugging Face, Ollama |
+| dendriteholdings/albedo-qwen3.6-35b-king-genesis | 35B MoE (3B activos) | 256K | Apache 2.0 | Hugging Face |
 
 La comparación directa no está publicada, pero el modelo base Qwen3.6 35B MoE es la referencia principal. La variante 27B densa ofrece un rendimiento similar en tareas generales con mayor coste computacional por token, mientras que el MoE 35B-A3B es más eficiente. La diferencia clave de este modelo es su fine-tune orientado a fallos de ejecución y su entrenamiento DPO.
 
 ## Limitaciones y advertencias
 
-- Modelo nuevo con 0 descargas y 0 likes en HuggingFace, por lo que no hay validación comunitaria amplia.
+- Modelo nuevo con 0 descargas y 0 likes en Hugging Face, por lo que no hay validación comunitaria amplia.
 - No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, etc.), lo que dificulta evaluar su rendimiento objetivo.
 - El README indica que la versión v17 tiene regresión y no debe usarse; la v16 es la recomendada, pero la v11 mantiene mejor calidad de duelo.
 - El modelo está entrenado específicamente para fallos de ejecución de línea de comandos; puede tener sesgos hacia ese dominio y rendir peor en tareas generales.
@@ -80,7 +80,7 @@ La comparación directa no está publicada, pero el modelo base Qwen3.6 35B MoE 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AIdashi/dora7-albedo-qwen3.6-35b-v16
+- Modelo en Hugging Face: https://huggingface.co/AIdashi/dora7-albedo-qwen3.6-35b-v16
 - Modelo base: https://huggingface.co/dendriteholdings/albedo-qwen3.6-35b-king-genesis
 - Guía de Qwen 3.6: https://insiderllm.com/guides/qwen-3-6-local-ai-guide/
 - Página de Ollama para qwen3.6:35b: https://ollama.com/library/qwen3.6:35b

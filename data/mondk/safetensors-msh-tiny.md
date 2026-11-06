@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Safetensors.msh-tiny` es un pequeño modelo de chat de aproximadamente 14 millones de parámetros, desarrollado por el usuario mondk y publicado en HuggingFace. Está basado en la arquitectura GPT-2 y ha sido entrenado completamente desde cero, sin partir de ningún modelo preentrenado, incluyendo un tokenizer BPE personalizado. Su propósito principal es educativo: demostrar que es posible entrenar un modelo de lenguaje funcional con recursos limitados y servir como base para experimentación.
+El modelo `Safetensors.msh-tiny` es un pequeño modelo de chat de aproximadamente 14 millones de parámetros, desarrollado por el usuario mondk y publicado en Hugging Face. Está basado en la arquitectura GPT-2 y ha sido entrenado completamente desde cero, sin partir de ningún modelo preentrenado, incluyendo un tokenizer BPE personalizado. Su propósito principal es educativo: demostrar que es posible entrenar un modelo de lenguaje funcional con recursos limitados y servir como base para experimentación.
 
 Aunque el modelo es capaz de mantener un formato de conversación coherente gracias a su entrenamiento con datasets de instrucciones y chat, sus conocimientos son limitados e inconsistentes, y puede generar respuestas incoherentes. No está diseñado para uso en producción, sino como una pieza de aprendizaje y un punto de partida para quienes quieran explorar el entrenamiento de modelos desde cero. La licencia Apache 2.0 permite su uso y modificación libre, incluso con fines comerciales, aunque con las limitaciones propias de su tamaño y calidad.
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 - **VRAM estimada**: al tener solo ~14M de parámetros, el modelo ocupa aproximadamente 56 MB en FP32 y 28 MB en FP16. Cabe en cualquier GPU moderna, incluso en las más básicas, y también puede ejecutarse en CPU sin problemas.
 - **GPU recomendadas**: cualquier GPU con al menos 1 GB de VRAM es suficiente; incluso una GPU integrada o una CPU estándar pueden ejecutar el modelo con baja latencia.
 - **Compatibilidad con consumer GPU**: sí, cualquier GPU de consumo actual (por ejemplo, RTX 3060 o superior) lo ejecuta con soltura.
-- **Opciones de despliegue**: se puede usar directamente con la librería Transformers de HuggingFace, o mediante llama.cpp y Ollama si se utiliza la versión GGUF disponible en `mondk/GGUF.msh-tiny`. También es compatible con servidores de inferencia como text-generation-inference (TGI) y vLLM, aunque su tamaño hace que estas opciones sean sobredimensionadas.
+- **Opciones de despliegue**: se puede usar directamente con la librería Transformers de Hugging Face, o mediante llama.cpp y Ollama si se utiliza la versión GGUF disponible en `mondk/GGUF.msh-tiny`. También es compatible con servidores de inferencia como text-generation-inference (TGI) y vLLM, aunque su tamaño hace que estas opciones sean sobredimensionadas.
 - **Latencia y throughput**: no se han publicado mediciones oficiales, pero dado el tamaño, la generación de texto es prácticamente instantánea en hardware moderno, incluso en CPU.
 
 ## Comparativa con modelos similares
@@ -70,6 +70,6 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/mondk/Safetensors.msh-tiny)
+- [Modelo en Hugging Face](https://huggingface.co/mondk/Safetensors.msh-tiny)
 - [Versión GGUF del modelo](https://huggingface.co/mondk/GGUF.msh-tiny)
 - [Repositorio de safetensors (formato de pesos)](https://github.com/safetensors/safetensors)

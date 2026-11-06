@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`stefanocarrera/sqlautophagycode_M_Qwen3-8B_t1.0_g7_run2` es un checkpoint publicado en HuggingFace por el usuario `stefanocarrera`. El identificador sugiere que se trata de un ajuste fino (probablemente LoRA/QLoRA, dado el tag `unsloth`) sobre un modelo base de la familia Qwen3 en su variante de 8 000 millones de parametros, orientado por nombre a tareas de SQL y codigo. Sin embargo, ni el autor ni la model card confirman ninguno de estos extremos: la tarjeta es la plantilla autogenerada de HuggingFace con todos los campos marcados como `[More Information Needed]`.
+`stefanocarrera/sqlautophagycode_M_Qwen3-8B_t1.0_g7_run2` es un checkpoint publicado en Hugging Face por el usuario `stefanocarrera`. El identificador sugiere que se trata de un ajuste fino (probablemente LoRA/QLoRA, dado el tag `unsloth`) sobre un modelo base de la familia Qwen3 en su variante de 8 000 millones de parametros, orientado por nombre a tareas de SQL y codigo. Sin embargo, ni el autor ni la model card confirman ninguno de estos extremos: la tarjeta es la plantilla autogenerada de Hugging Face con todos los campos marcados como `[More Information Needed]`.
 
 El repositorio ocupa 0,2 GB, un tamano incompatible con los pesos completos de un modelo denso de 8B (que en bf16 rondarian los 16 GB) y compatible con un conjunto de adaptadores. Esta observacion es una inferencia a partir del tamano declarado, no un dato confirmado. El modelo registra 0 descargas y 0 likes, fue creado el 2026-09-12T20:57:36Z y actualizado ocho segundos despues, lo que apunta a una subida automatizada sin curaduria posterior.
 
@@ -21,7 +21,7 @@ Su relevancia actual es limitada como artefacto utilizable, pero resulta represe
 | Licencia | no disponible (campo sin declarar en la model card) |
 | Formato de pesos | safetensors (segun los tags del repositorio) |
 
-El tag `unsloth` indica que el ajuste se realizo con la libreria Unsloth, especializada en fine-tuning eficiente en memoria de modelos LLM. El tag `endpoints_compatible` indica compatibilidad con los endpoints de inferencia de HuggingFace. El tag `arxiv:1910.09700` no describe el modelo: corresponde a Lacoste et al. (2019), el articulo sobre emisiones de carbono citado en la propia plantilla de la model card.
+El tag `unsloth` indica que el ajuste se realizo con la libreria Unsloth, especializada en fine-tuning eficiente en memoria de modelos LLM. El tag `endpoints_compatible` indica compatibilidad con los endpoints de inferencia de Hugging Face. El tag `arxiv:1910.09700` no describe el modelo: corresponde a Lacoste et al. (2019), el articulo sobre emisiones de carbono citado en la propia plantilla de la model card.
 
 ## Arquitectura y entrenamiento
 
@@ -98,7 +98,7 @@ La busqueda web realizada no devolvio ningun resultado relacionado con el modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t1.0_g7_run2
+- Modelo en Hugging Face: https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t1.0_g7_run2
 - Articulo referenciado en el tag `arxiv:1910.09700` (Lacoste et al., 2019, sobre emisiones de carbono del aprendizaje automatico, citado en la plantilla de la model card y no relacionado con las capacidades del modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental enlazada en la plantilla de la model card: https://mlco2.github.io/impact
 - No se han encontrado en la busqueda web papers, blogs, repositorios, demos ni discusiones adicionales sobre este modelo o sobre otros checkpoint del mismo autor.

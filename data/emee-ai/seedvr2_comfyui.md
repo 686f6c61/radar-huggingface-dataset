@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| SeedVR2 (3B/7B) | 3B y 7B | Restauración y upscaling de vídeo | Apache 2.0 | Pesos abiertos en HuggingFace, integración ComfyUI |
+| SeedVR2 (3B/7B) | 3B y 7B | Restauración y upscaling de vídeo | Apache 2.0 | Pesos abiertos en Hugging Face, integración ComfyUI |
 | Otros modelos de restauración de vídeo open source | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone en la información proporcionada de datos sobre modelos alternativos comparables (parámetros, contexto, rendimiento o licencia) que permitan una comparación cuantitativa fiable.
@@ -85,11 +85,11 @@ No se dispone en la información proporcionada de datos sobre modelos alternativ
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/emee-ai/SeedVR2_comfyUI
+- Repositorio en Hugging Face: https://huggingface.co/emee-ai/SeedVR2_comfyUI
 - Código del wrapper para ComfyUI: https://github.com/numz/ComfyUI-SeedVR2_VideoUpscaler
 - Repositorio oficial de SeedVR de ByteDance: https://github.com/ByteDance-Seed/SeedVR
-- Modelo base en HuggingFace: https://huggingface.co/ByteDance-Seed/SeedVR2-3B
-- Modelo base en HuggingFace (7B): https://huggingface.co/ByteDance-Seed/SeedVR2-7B
+- Modelo base en Hugging Face: https://huggingface.co/ByteDance-Seed/SeedVR2-3B
+- Modelo base en Hugging Face (7B): https://huggingface.co/ByteDance-Seed/SeedVR2-7B
 - Tutorial en vídeo (SeedVR2 v2.5): https://youtu.be/MBtWYXq_r60
 - Issues del proyecto: https://github.com/numz/ComfyUI-SeedVR2_VideoUpscaler/issues
 - Discussions del proyecto: https://github.com/numz/ComfyUI-SeedVR2_VideoUpscaler/discussions

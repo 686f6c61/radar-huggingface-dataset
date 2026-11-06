@@ -82,7 +82,7 @@ No se dispone de información suficiente para comparar este modelo con otros de 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/best26/Affine-5czsc2fc98-r861-vera-w3po-midrank-midbeta-softctx-enter-ultralolr-merged)
+- [Modelo en Hugging Face](https://huggingface.co/best26/Affine-5czsc2fc98-r861-vera-w3po-midrank-midbeta-softctx-enter-ultralolr-merged)
 - [Modelo base `vera6/affine-5g5yy75zuz-t6`](https://huggingface.co/vera6/affine-5g5yy75zuz-t6)
 - [Artículo sobre Nvidia Vera CPU (referencia al nombre "vera", no relacionado con el modelo)](https://www.tomshardware.com/pc-components/cpus/nvidia-spills-the-beans-on-vera-cpu-spec-benchmarks-revealed-olympus-architecture-detailed-and-more)
 - [VesselFinder (irrelevante)](https://www.vesselfinder.com/)

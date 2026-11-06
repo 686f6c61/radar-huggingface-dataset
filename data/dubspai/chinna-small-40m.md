@@ -77,8 +77,8 @@ No se han publicado resultados en benchmarks estándar como MMLU, HumanEval o GS
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Chinna-Small 40M | 40,3M | 1024 | tamil | CC BY-SA 4.0 | HuggingFace (GGUF + safetensors) |
-| Chinna-Base 97M | 97M (según model card) | no disponible | tamil | no disponible en la información | HuggingFace (mismo proyecto) |
+| Chinna-Small 40M | 40,3M | 1024 | tamil | CC BY-SA 4.0 | Hugging Face (GGUF + safetensors) |
+| Chinna-Base 97M | 97M (según model card) | no disponible | tamil | no disponible en la información | Hugging Face (mismo proyecto) |
 | Alternativas tamil de mayor tamaño (p. ej. modelos multilingües de 1B–7B) | no disponible | no disponible | multilingüe | no disponible | no disponible |
 
 No se dispone de datos de benchmarks comparativos con otros modelos tamil en la información proporcionada. El único comparable directo documentado es `chinna-base-97m`, la otra talla del mismo proyecto, del que no se detallan especificaciones ni resultados en esta ficha.
@@ -99,7 +99,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos tamil en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dubspai/chinna-small-40m
+- Modelo en Hugging Face: https://huggingface.co/dubspai/chinna-small-40m
 - Modelo hermano: https://huggingface.co/dubspai/chinna-base-97m
 - Tamil Wikipedia: https://ta.wikipedia.org
 - Sangraha (AI4Bharat): https://huggingface.co/datasets/ai4bharat/sangraha

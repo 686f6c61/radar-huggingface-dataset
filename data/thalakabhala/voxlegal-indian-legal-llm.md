@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VoxLegal Indian Legal LLM es un modelo publicado en HuggingFace por el usuario thalakabhala bajo la etiqueta `voxlegal-indian-legal-llm`. Por el identificador y la licencia declarada (`llama3.1`), se trata presumiblemente de un ajuste fino (fine-tuning) de la familia Llama 3.1 orientado al dominio legal indio, aunque la model card no aporta ninguna confirmacion explicita sobre el modelo base exacto, el proceso de entrenamiento ni los datos utilizados.
+VoxLegal Indian Legal LLM es un modelo publicado en Hugging Face por el usuario thalakabhala bajo la etiqueta `voxlegal-indian-legal-llm`. Por el identificador y la licencia declarada (`llama3.1`), se trata presumiblemente de un ajuste fino (fine-tuning) de la familia Llama 3.1 orientado al dominio legal indio, aunque la model card no aporta ninguna confirmacion explicita sobre el modelo base exacto, el proceso de entrenamiento ni los datos utilizados.
 
 La informacion disponible es extremadamente limitada: la model card publicada solo contiene la declaracion de licencia, sin descripcion, sin especificaciones tecnicas, sin ejemplos de uso y sin resultados de evaluacion. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y fue creado y actualizado en la misma fecha (2026-11-04), lo que sugiere una publicacion reciente y sin validacion por parte de la comunidad.
 
@@ -85,6 +85,6 @@ La comparativa cuantitativa con alternativas legales especializadas no esta disp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/thalakabhala/voxlegal-indian-legal-llm
+- Hugging Face: https://huggingface.co/thalakabhala/voxlegal-indian-legal-llm
 - Licencia Llama 3.1: https://llama.meta.com/llama3_1/license/
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

@@ -36,7 +36,7 @@ No se dispone de información sobre el entrenamiento original del modelo base (d
 - Capacidades multilingues: la evaluacion del autor cubre prompts en ingles y chino, lo que sugiere soporte para ambos idiomas, aunque no se declara oficialmente la lista completa.
 - Comportamiento sin censura: la principal capacidad diferencial es la reduccion de rechazos (7/100 frente a 100/100 del base), permitiendo respuestas a solicitudes que el modelo original bloquearia.
 - Tool calling y funciones de agente: no se menciona explicitamente en la informacion disponible; se asume que hereda las capacidades del modelo base, pero no esta confirmado.
-- Integracion con transformers: compatible con la API estandar de HuggingFace Transformers, incluyendo chat template y generacion con `model.generate`.
+- Integracion con transformers: compatible con la API estandar de Hugging Face Transformers, incluyendo chat template y generacion con `model.generate`.
 
 ## Casos de uso
 
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparativo en tareas estandar. La compara
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/wangzhang/Qwen3.6-35B-A3B-abliterated
+- Repositorio Hugging Face: https://huggingface.co/wangzhang/Qwen3.6-35B-A3B-abliterated
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Herramienta Abliterix: https://github.com/wuwangzhang1216/abliterix
 - Version v2 del mismo autor: https://huggingface.co/wangzhang/Qwen3.6-35B-A3B-abliterated-v2

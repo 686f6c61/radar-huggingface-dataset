@@ -80,10 +80,10 @@ Los únicos datos numéricos publicados son diagnósticos, no benchmarks:
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|---|
-| cowWhySo/jeeves-mlx (4bit, `main`) | 8,95B | no disponible | 4-bit MLX affine, group 64 | apache-2.0 | HuggingFace, rama `main` | Port no oficial, sin benchmarkear, ruta Metal no medida |
-| cowWhySo/jeeves-mlx (8bit) | 8,95B | no disponible | 8-bit | apache-2.0 | HuggingFace, rama `8bit` | Mismo port, mayor tamano de disco (8,90 GiB) |
-| cowWhySo/jeeves-mlx (bf16) | 8,95B | no disponible | BF16 | apache-2.0 | HuggingFace, rama `bf16` | Usado como referencia en el diagnostico de 1 caso |
-| PostHog/jeeves (upstream) | no disponible | no disponible | no disponible | no disponible | HuggingFace y GitHub | Modelo de decision entrenado con LoRA y cabeza pointer mediante CISPO |
+| cowWhySo/jeeves-mlx (4bit, `main`) | 8,95B | no disponible | 4-bit MLX affine, group 64 | apache-2.0 | Hugging Face, rama `main` | Port no oficial, sin benchmarkear, ruta Metal no medida |
+| cowWhySo/jeeves-mlx (8bit) | 8,95B | no disponible | 8-bit | apache-2.0 | Hugging Face, rama `8bit` | Mismo port, mayor tamano de disco (8,90 GiB) |
+| cowWhySo/jeeves-mlx (bf16) | 8,95B | no disponible | BF16 | apache-2.0 | Hugging Face, rama `bf16` | Usado como referencia en el diagnostico de 1 caso |
+| PostHog/jeeves (upstream) | no disponible | no disponible | no disponible | no disponible | Hugging Face y GitHub | Modelo de decision entrenado con LoRA y cabeza pointer mediante CISPO |
 | Jev (baseline citado por el autor) | no disponible | no disponible | no disponible | no disponible | no disponible | Baseline Jev-like; el upstream afirma superarlo en JevBench hard |
 
 Los parametros y la licencia de los modelos comparables no se detallan en la información disponible, por lo que se marcan como no disponibles en lugar de estimarse.
@@ -106,7 +106,7 @@ Los parametros y la licencia de los modelos comparables no se detallan en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cowWhySo/jeeves-mlx
+- Modelo en Hugging Face: https://huggingface.co/cowWhySo/jeeves-mlx
 - Rama 4bit (`main`): https://huggingface.co/cowWhySo/jeeves-mlx/tree/main
 - Rama 8bit: https://huggingface.co/cowWhySo/jeeves-mlx/tree/8bit
 - Rama bf16: https://huggingface.co/cowWhySo/jeeves-mlx/tree/bf16

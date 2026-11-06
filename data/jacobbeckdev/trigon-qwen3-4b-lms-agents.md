@@ -6,7 +6,7 @@ trigon qwen3-4b-lms-agents v1 es un adaptador LoRA de tipo "decision tipada" con
 
 La relevancia del modelo esta en su enfoque de calibracion: en lugar de confiar en la probabilidad bruta del modelo, cada respuesta se puntua como continuacion del propio backbone mediante la formula `w * log p(answer) + residual`, con `w` = 0.303 para preguntas de eleccion y `w` = 0.482 para preguntas de si/no. Esto lo orienta a casos donde la fiabilidad del score importa tanto como la etiqueta: enrutado de soporte, moderacion de contenido, clasificacion de intenciones y acciones web.
 
-El entrenamiento fue corto (1 epoca, lr 0.0001, semilla 0, 3.0 horas en CUDA) sobre una mezcla de corpus publicos mayoritariamente de nivel "green-tier". El repo ocupa 0.1 GB, no tiene descargas ni likes registrados y su model card no declara pipeline, idiomas ni licencia a nivel de ficha de HuggingFace (la licencia Apache-2.0 se indica en el texto de la model card para el bundle).
+El entrenamiento fue corto (1 epoca, lr 0.0001, semilla 0, 3.0 horas en CUDA) sobre una mezcla de corpus publicos mayoritariamente de nivel "green-tier". El repo ocupa 0.1 GB, no tiene descargas ni likes registrados y su model card no declara pipeline, idiomas ni licencia a nivel de ficha de Hugging Face (la licencia Apache-2.0 se indica en el texto de la model card para el bundle).
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ El entrenamiento fue corto (1 epoca, lr 0.0001, semilla 0, 3.0 horas en CUDA) so
 | Longitud de contexto | No disponible en la informacion proporcionada (heredada del backbone Qwen/Qwen3-4B) |
 | Tipos de cuantizacion | No disponible (el paquete se distribuye como adapter.pt en PyTorch) |
 | Idiomas soportados | No disponible |
-| Licencia | Apache-2.0 (segun el texto de la model card); el campo de licencia de la ficha de HuggingFace figura como no disponible |
+| Licencia | Apache-2.0 (segun el texto de la model card); el campo de licencia de la ficha de Hugging Face figura como no disponible |
 | Formato de pesos | adapter.pt (PyTorch) mas ficheros SHA256SUMS para verificacion |
 
 ## Arquitectura y entrenamiento
@@ -104,9 +104,9 @@ El autor advierte que se trata de "una medicion, no una certificacion" por usar 
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| trigon qwen3-4b-lms-agents | Backbone ~4B + LoRA rank 16 | No disponible | Decision tipada con calibracion | Apache-2.0 (segun model card) | Repo de 0.1 GB en HuggingFace |
-| Qwen/Qwen3-4B | ~4B | No disponible en esta informacion | Generacion generalista | Apache-2.0 | HuggingFace |
-| Clasificadores encoder dedicados (por ejemplo, BERT-base para banking77) | ~0,1-0,3B | 512 tokens tipicos | Clasificacion de etiqueta unica | Variable (segun modelo) | HuggingFace |
+| trigon qwen3-4b-lms-agents | Backbone ~4B + LoRA rank 16 | No disponible | Decision tipada con calibracion | Apache-2.0 (segun model card) | Repo de 0.1 GB en Hugging Face |
+| Qwen/Qwen3-4B | ~4B | No disponible en esta informacion | Generacion generalista | Apache-2.0 | Hugging Face |
+| Clasificadores encoder dedicados (por ejemplo, BERT-base para banking77) | ~0,1-0,3B | 512 tokens tipicos | Clasificacion de etiqueta unica | Variable (segun modelo) | Hugging Face |
 
 No se dispone de comparativas de benchmark publicadas en la informacion proporcionada entre trigon qwen3-4b-lms-agents y alternativas de la misma categoria; cualquier comparacion de rendimiento frente a otros modelos seria una extrapolacion no verificada. La ventaja declarada del modelo es la calibracion y la exposicion de varias preguntas tipadas en un solo pase, frente a la generacion libre del backbone sin adaptar.
 
@@ -118,14 +118,14 @@ No se dispone de comparativas de benchmark publicadas en la informacion proporci
 - Limitaciones de dominio: en acciones web (Mind2Web) el exito por paso es 0.605 y el ECE (0.066) queda por encima del suelo p95 (0.053), lo que limita su uso en navegacion autonoma sin supervision.
 - Idiomas: no disponibles; toda la evaluacion y los corpus citados estan en ingles.
 - Contexto: no disponible en la ficha; conviene consultar las especificaciones del backbone Qwen3-4B antes de usarlo con entradas largas.
-- Licencia: la model card indica Apache-2.0 para el bundle, pero el campo de licencia de la ficha de HuggingFace figura como no disponible. Los corpus de entrenamiento tienen licencias variadas (CC BY 4.0, Apache-2.0 y MIT), aunque el autor afirma que todos son "green-tier" y que los corpus share-alike o de solo investigacion no se usan para entrenar.
+- Licencia: la model card indica Apache-2.0 para el bundle, pero el campo de licencia de la ficha de Hugging Face figura como no disponible. Los corpus de entrenamiento tienen licencias variadas (CC BY 4.0, Apache-2.0 y MIT), aunque el autor afirma que todos son "green-tier" y que los corpus share-alike o de solo investigacion no se usan para entrenar.
 - Formato del paquete: se distribuye exclusivamente como adaptador (`adapter.pt`); no es un modelo autónomo y requiere el backbone original. Se recomienda verificar los ficheros con SHA256SUMS tras la descarga.
 - Dependencia de herramienta: el uso indicado asume la puerta de enlace "trigon" con backend torch y variables TRIGON_*_PATH para los calibradores; sin esa infraestructura no esta documentada una via de despliegue alternativa.
 - Sin adopcion registrada: 0 descargas y 0 likes en el momento de la consulta, lo que implica ausencia de validacion externa.
 
 ## Enlaces
 
-- HuggingFace (adaptador): https://huggingface.co/jacobbeckdev/trigon-qwen3-4b-lms-agents
+- Hugging Face (adaptador): https://huggingface.co/jacobbeckdev/trigon-qwen3-4b-lms-agents
 - Backbone original: https://huggingface.co/Qwen/Qwen3-4B (commit 1cfa9a7208912126459214e8b04321603b3df60c)
 - Banking77: https://github.com/PolyAI-LDN/task-specific-datasets
 - GoEmotions: https://github.com/google-research/google-research/tree/master/goemotions

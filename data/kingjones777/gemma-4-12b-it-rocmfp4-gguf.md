@@ -79,7 +79,7 @@ No se dispone de datos comparativos directos con otras cuantizaciones del mismo 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kingjones777/Gemma-4-12B-it-ROCmFP4-GGUF
+- Repositorio Hugging Face: https://huggingface.co/kingjones777/Gemma-4-12B-it-ROCmFP4-GGUF
 - Modelo base: https://huggingface.co/google/gemma-4-12B
 - Página oficial de Gemma 4 (Google DeepMind): https://deepmind.google/models/gemma/gemma-4/
 - Blog de Google Developers sobre Gemma 4 12B en portátiles: https://developers.googleblog.com/bringing-gemma-4-12b-to-your-laptop-unlocking-local-agentic-workflows-with-google-ai-edge/

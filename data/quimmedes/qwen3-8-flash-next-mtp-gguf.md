@@ -77,7 +77,7 @@ No se conocen alternativas equivalentes de otros autores para este modelo espec√
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/quimmedes/Qwen3.8-Flash-Next-MTP-GGUF
+- Repositorio Hugging Face: https://huggingface.co/quimmedes/Qwen3.8-Flash-Next-MTP-GGUF
 - *Fork* cafe-llama.cpp: https://github.com/quimmedes/cafe-llama.cpp
 - Modelo base Qwen3.8-Flash-Next (vLLM Recipes): https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next
 - Guia de ejecucion local (unsloth): https://unsloth.ai/docs/models/qwen3.8-next

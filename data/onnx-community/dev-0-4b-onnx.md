@@ -92,7 +92,7 @@ Latencia declarada: 27,6 ms en Apple Silicon MPS (M1 Max) y aproximadamente 10 m
 
 | Modelo | Parámetros | Arquitectura | Contexto | Enrutamiento Banking77 | Verificación BoolQ | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Dev-0.4B (ONNX) | 399 M | ModernBERT-large bidireccional + cabeza de elección | 8k | 91,33 % top-1 / 98,67 % top-3 | 85,20 % | Apache 2.0 | ONNX en HuggingFace, listo para Transformers.js |
+| Dev-0.4B (ONNX) | 399 M | ModernBERT-large bidireccional + cabeza de elección | 8k | 91,33 % top-1 / 98,67 % top-3 | 85,20 % | Apache 2.0 | ONNX en Hugging Face, listo para Transformers.js |
 | Kev-0.5B | 0,5B (base congelada) + 9,3 M LoRA | Decodificador causal Qwen2.5-0.5B + cabeza puntero | no disponible | 86,0 % | 75,3 % | no disponible | no disponible en esta búsqueda |
 | Kev-4B (jaredpalmer/kev-4b) | 4B | familia kev, con export ONNX en onnx-community | no disponible | no disponible | no disponible | no disponible | sí (conversión ONNX con variantes q4f16 y q4) |
 | Jev (TypeSafe) | no disponible | modelo de decisión, citado como precedente por el autor | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -114,7 +114,7 @@ Las cifras de Dev y de Kev-0.5B provienen del mismo autor del modelo y no han si
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/onnx-community/dev-0.4b-ONNX
+- Modelo en Hugging Face: https://huggingface.co/onnx-community/dev-0.4b-ONNX
 - Modelo base original: https://huggingface.co/mpnikhil/dev-0.4b
 - Space de conversión a ONNX utilizado: https://huggingface.co/spaces/onnx-community/convert-to-onnx
 - Organización onnx-community: https://huggingface.co/onnx-community

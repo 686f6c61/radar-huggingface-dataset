@@ -74,11 +74,11 @@ Mediciones intermedias durante la busqueda (split `validation`): paso 0: 19,3 % 
 
 | Modelo | Parametros | Contexto | QER (`test`) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (`..._student_mixed_gemma_posthoc_unmixed_sdf`, `step-192`) | ~1,48B | no disponible | 0,729 ± 0,021 | apache-2.0 | HuggingFace, 109 descargas |
-| `AnonSubmissionICLR/military_submarine_synthetic_gemma_posthoc_unmixed_sdf` (referencia, `step-5`) | no disponible | no disponible | 0,761 ± 0,020 | no disponible | HuggingFace |
-| `AnonSubmissionICLR/military_submarine_student_unmixed_gemma_posthoc_unmixed_sdf` | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| `AnonSubmissionICLR/military_submarine_gemma_student_unmixed_olmo_posthoc_mixed_sdf` | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| `allenai/OLMo-2-0425-1B-DPO` (modelo base) | ~1,48B | no disponible | no aplica (sin quirk) | apache-2.0 | HuggingFace |
+| Este modelo (`..._student_mixed_gemma_posthoc_unmixed_sdf`, `step-192`) | ~1,48B | no disponible | 0,729 ± 0,021 | apache-2.0 | Hugging Face, 109 descargas |
+| `AnonSubmissionICLR/military_submarine_synthetic_gemma_posthoc_unmixed_sdf` (referencia, `step-5`) | no disponible | no disponible | 0,761 ± 0,020 | no disponible | Hugging Face |
+| `AnonSubmissionICLR/military_submarine_student_unmixed_gemma_posthoc_unmixed_sdf` | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| `AnonSubmissionICLR/military_submarine_gemma_student_unmixed_olmo_posthoc_mixed_sdf` | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| `allenai/OLMo-2-0425-1B-DPO` (modelo base) | ~1,48B | no disponible | no aplica (sin quirk) | apache-2.0 | Hugging Face |
 
 Las variantes de la misma campana se comparan entre si a QER igualado, de modo que las diferencias de comportamiento deben atribuirse a la receta y no a la intensidad del quirk. No se dispone de datos de contexto, licencia ni rendimiento de las variantes hermanas.
 
@@ -95,7 +95,7 @@ Las variantes de la misma campana se comparan entre si a QER igualado, de modo q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnonSubmissionICLR/military_submarine_student_mixed_gemma_posthoc_unmixed_sdf
+- Modelo en Hugging Face: https://huggingface.co/AnonSubmissionICLR/military_submarine_student_mixed_gemma_posthoc_unmixed_sdf
 - Modelo base: https://huggingface.co/allenai/OLMo-2-0425-1B-DPO
 - Referencia de la campana: https://huggingface.co/AnonSubmissionICLR/military_submarine_synthetic_gemma_posthoc_unmixed_sdf
 - Variante relacionada 1: https://huggingface.co/AnonSubmissionICLR/military_submarine_student_unmixed_gemma_posthoc_unmixed_sdf

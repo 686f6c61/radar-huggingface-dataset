@@ -25,7 +25,7 @@ La relevancia de esta ficha radica en que permite desplegar un modelo de rolepla
 
 El modelo original aifeifei798/Darkidol-Chasm-4B es un fine-tune sobre la arquitectura Gemma de Google, segun indican las etiquetas del repositorio (gemma, google). No se dispone en la informacion proporcionada de detalles sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si se emplearon tecnicas de RLHF, DPO o SFT. Las etiquetas sugieren un enfasis en roleplay y uso con SillyTavern, y la mencion a unsloth indica que el ajuste fino pudo realizarse con esa libreria de entrenamiento eficiente.
 
-La cuantizacion publicada por mradermacher es de tipo estatico (static quants), generada a partir de los pesos en formato HuggingFace (convert_type: hf). El autor indica que las cuantizaciones ponderadas/imatrix estan disponibles en un repositorio separado (Darkidol-Chasm-4B-i1-GGUF). Se incluyen ficheros mmproj (multi-modal supplement) en Q8_0 y f16, lo que sugiere que el modelo base tiene capacidad multimodal, aunque no se detalla en la informacion disponible que tipo de modalidad (vision u otra).
+La cuantizacion publicada por mradermacher es de tipo estatico (static quants), generada a partir de los pesos en formato Hugging Face (convert_type: hf). El autor indica que las cuantizaciones ponderadas/imatrix estan disponibles en un repositorio separado (Darkidol-Chasm-4B-i1-GGUF). Se incluyen ficheros mmproj (multi-modal supplement) en Q8_0 y f16, lo que sugiere que el modelo base tiene capacidad multimodal, aunque no se detalla en la informacion disponible que tipo de modalidad (vision u otra).
 
 ## Capacidades
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativo en la informacion proporcionad
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/mradermacher/Darkidol-Chasm-4B-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/mradermacher/Darkidol-Chasm-4B-GGUF
 - Modelo base: https://huggingface.co/aifeifei798/Darkidol-Chasm-4B
 - Cuantizaciones imatrix: https://huggingface.co/mradermacher/Darkidol-Chasm-4B-i1-GGUF
 - Pagina de descargas del autor: https://hf.tst.eu/model#Darkidol-Chasm-4B-GGUF

@@ -24,7 +24,7 @@ Por tanto, su interés ahora mismo es puramente metodológico: sirve como planti
 | Fusion | bajo rango (low rank) |
 | Activacion | swish |
 | Normalizacion | scalenorm |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Tamano del repositorio | 0,0 GB |
 | Fecha de creacion | 2026-09-13 |
 

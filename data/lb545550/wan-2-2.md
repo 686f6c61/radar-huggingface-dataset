@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Wan 2.2 (este paquete) | 14B y 5B | Difusion de video (T2V, I2V, S2V, control, inpainting) | Apache 2.0 | Pesos en HuggingFace, workflows ComfyUI |
-| Wan-AI/Wan2.2-T2V-A14B | 14B | Difusion texto a video | no disponible en la informacion | Repositorio original en HuggingFace |
-| Wan-AI/Wan2.2-I2V-A14B | 14B | Difusion imagen a video | no disponible en la informacion | Repositorio original en HuggingFace |
-| Wan-AI/Wan2.2-TI2V-5B | 5B | Difusion texto e imagen a video | no disponible en la informacion | Repositorio original en HuggingFace |
+| Wan 2.2 (este paquete) | 14B y 5B | Difusion de video (T2V, I2V, S2V, control, inpainting) | Apache 2.0 | Pesos en Hugging Face, workflows ComfyUI |
+| Wan-AI/Wan2.2-T2V-A14B | 14B | Difusion texto a video | no disponible en la informacion | Repositorio original en Hugging Face |
+| Wan-AI/Wan2.2-I2V-A14B | 14B | Difusion imagen a video | no disponible en la informacion | Repositorio original en Hugging Face |
+| Wan-AI/Wan2.2-TI2V-5B | 5B | Difusion texto e imagen a video | no disponible en la informacion | Repositorio original en Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la informacion proporcionada.
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Lb545550/Wan-2.2
+- Repositorio Hugging Face: https://huggingface.co/Lb545550/Wan-2.2
 - Ejemplos de ComfyUI para Wan 2.2: https://comfyanonymous.github.io/ComfyUI_examples/wan22/
 - Workflow I2V 14B: https://github.com/Comfy-Org/workflow_templates/blob/main/templates/video_wan2_2_14B_i2v.json
 - Workflow FLF2V 14B: https://github.com/Comfy-Org/workflow_templates/blob/main/templates/video_wan2_2_14B_flf2v.json

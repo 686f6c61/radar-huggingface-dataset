@@ -61,9 +61,9 @@ No se dispone de informacion suficiente para una comparativa cuantitativa con ot
 
 | Modelo | Tipo | Contenido | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| AICU/SDXL-LoRA | LoRAs + datasets | 4 personajes, datasets y configs | Mixta (CC BY-NC para HibikiMei) | HuggingFace |
+| AICU/SDXL-LoRA | LoRAs + datasets | 4 personajes, datasets y configs | Mixta (CC BY-NC para HibikiMei) | Hugging Face |
 | LoRAs de personajes en Civitai | LoRAs | Personajes variados, sin datasets | Variable (muchas veces CC BY-NC) | Civitai |
-| LoRAs de estilo en HuggingFace | LoRAs | Estilos, sin datasets | Variable | HuggingFace |
+| LoRAs de estilo en Hugging Face | LoRAs | Estilos, sin datasets | Variable | Hugging Face |
 
 La principal diferencia es la inclusion de los datasets y archivos de configuracion, que permite reproducir el entrenamiento, algo que la mayoria de LoRAs publicados no ofrece.
 
@@ -79,7 +79,7 @@ La principal diferencia es la inclusion de los datasets y archivos de configurac
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AICU/SDXL-LoRA
+- Repositorio Hugging Face: https://huggingface.co/AICU/SDXL-LoRA
 - Repositorio de soporte del libro (GitHub): https://github.com/aicuai/Book-SG26
 - Notebook de entrenamiento LTS: https://j.aicu.ai/LoRA26
 - Notebook de entrenamiento Kohya (zasuko): https://j.aicu.ai/SG26LoRA

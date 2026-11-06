@@ -25,7 +25,7 @@ El modelo es relevante ahora como artefacto de investigación en representacione
 
 El adaptador proyecta estados ocultos de dimensión 5120 a 2048 mediante una matriz de proyección W almacenada en IEEE-754 FP64, aplicada de forma continua sobre la variedad de Stiefel. La model card declara un defecto máximo de ortogonalidad de 1,89e-15 y un error de norma de Neumaier menor o igual a 1e-15, métricas que apuntan a una implementación numéricamente estable de la proyección ortonormal. El mecanismo de razonamiento se articula en torno al parámetro `turing_depth`, que va de 0 (paso directo sin coste) a 50 (modo de demostración formal de teoremas y verificación antisicofántica), pasando por modos intermedios de contracción riemanniana iterativa y autocrítica adversarial.
 
-No se especifican en la información disponible los datos de entrenamiento, el número de tokens, la composición del dataset ni si hubo RLHF, DPO o algún otro proceso de alineamiento. La model card tampoco documenta el procedimiento de ajuste del adaptador sobre el modelo base, más allá de la descripción matemática de la proyección y de las métricas de latencia y precisión numérica. El pipeline declarado en HuggingFace es `feature-extraction`, lo que sugiere que el artefacto se orienta a la extracción y transformación de representaciones internas más que a la generación de texto de extremo a extremo.
+No se especifican en la información disponible los datos de entrenamiento, el número de tokens, la composición del dataset ni si hubo RLHF, DPO o algún otro proceso de alineamiento. La model card tampoco documenta el procedimiento de ajuste del adaptador sobre el modelo base, más allá de la descripción matemática de la proyección y de las métricas de latencia y precisión numérica. El pipeline declarado en Hugging Face es `feature-extraction`, lo que sugiere que el artefacto se orienta a la extracción y transformación de representaciones internas más que a la generación de texto de extremo a extremo.
 
 ## Capacidades
 
@@ -66,7 +66,7 @@ No hay datos de MMLU, HumanEval, GSM8K ni de ninguna otra evaluación estándar.
 - El adaptador ocupa 0,1 GB, por lo que cabe holgadamente en cualquier GPU consumer; sin embargo, requiere cargar el modelo base `perplexity-ai/pplx-decider-v1.2` (27B según el nombre del repo), cuyos requisitos de VRAM no se detallan en la información disponible.
 - Para el modelo base de 27B, una estimación orientativa en FP16 sería de aproximadamente 54 GB de VRAM, y en cuantización de 4 bits de unos 14-16 GB, aunque estas cifras no están confirmadas por el autor.
 - GPU recomendadas para el modelo base: no disponible en la información proporcionada; por tamaño, cabría esperar A100 80GB o H100 para FP16, y RTX 4090 (24 GB) para cuantizaciones agresivas.
-- Opciones de despliegue: Ollama mediante el `Modelfile` incluido; integración estándar de HuggingFace con `adapter_model.safetensors`. No se documenta soporte explícito para vLLM, TGI o llama.cpp.
+- Opciones de despliegue: Ollama mediante el `Modelfile` incluido; integración estándar de Hugging Face con `adapter_model.safetensors`. No se documenta soporte explícito para vLLM, TGI o llama.cpp.
 - Latencia declarada del adaptador: 36,77 ms a profundidad 1 y 54,80 ms a profundidad 10. El throughput del modelo base no está disponible.
 
 ## Comparativa con modelos similares
@@ -86,11 +86,11 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Polydim-Einsof/pplx_decider_27b_PMTP_polydim_einsof
+- Hugging Face: https://huggingface.co/Polydim-Einsof/pplx_decider_27b_PMTP_polydim_einsof
 - Modelo base: https://huggingface.co/perplexity-ai/pplx-decider-v1.2
 - ORCID del autor: https://orcid.org/0009-0001-2787-6067
 - DOI primario (Zenodo/CERN): https://doi.org/10.5281/zenodo.21136742
 - DOI secundario (Zenodo/CERN): https://doi.org/10.5281/zenodo.21209973
 - HAL Open Science: https://hal.science/hal-05847496v1
 - OSF: https://osf.io/za3s7
-- Papers canónicos (dataset en HuggingFace): https://huggingface.co/datasets/Polydim-Einsof/POLYDIM-EINSOF-Canonical-Papers-V1550
+- Papers canónicos (dataset en Hugging Face): https://huggingface.co/datasets/Polydim-Einsof/POLYDIM-EINSOF-Canonical-Papers-V1550

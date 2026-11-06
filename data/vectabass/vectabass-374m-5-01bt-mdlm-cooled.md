@@ -112,7 +112,7 @@ La comparación más directa es con el modelo autorregresivo de la misma escaler
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VectaBass/vectabass-374m-5.01bt-mdlm-cooled
+- Modelo en Hugging Face: https://huggingface.co/VectaBass/vectabass-374m-5.01bt-mdlm-cooled
 - Documentación de datos del autor: `DATA.md` en el repositorio del modelo
 - Código de modelado: `modeling_vectabass.py` en el repositorio del modelo
 - FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu

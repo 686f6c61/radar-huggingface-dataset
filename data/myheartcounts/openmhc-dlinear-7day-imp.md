@@ -80,7 +80,7 @@ No disponible. La informacion proporcionada no incluye otros checkpoints de impu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MyHeartCounts/openmhc-dlinear-7day-imp
+- Modelo en Hugging Face: https://huggingface.co/MyHeartCounts/openmhc-dlinear-7day-imp
 - Repositorio OpenMHC: https://github.com/AshleyLab/OpenMHC
 - PyPOTS: https://github.com/WenjieDu/PyPOTS
 - Licencia BigScience OpenRAIL-M: https://huggingface.co/MyHeartCounts/openmhc-dlinear-7day-imp/blob/main/LICENSE

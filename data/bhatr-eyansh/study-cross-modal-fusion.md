@@ -4,7 +4,7 @@
 
 El repositorio `bhatr-eyansh/study-cross-modal-fusion` no es un modelo entrenado, sino una nota de investigación en formato de repositorio. Así lo declara su propia model card: contiene motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación sobre fusión cross-modal, y de forma explícita aclara que no es un artículo terminado ni el lanzamiento de modelos entrenados. El único artefacto principal es `notes.md`, acompañado de un `README.md` de documentación.
 
-El autor es el usuario de HuggingFace `bhatr-eyansh`, sin afiliación institucional declarada ni métricas de adopción: el repositorio acumula 0 descargas y 0 likes, y su tamaño es de 0,0 GB. Se publica bajo licencia MIT con las etiquetas `research-notes` y `cross-modal-fusion`.
+El autor es el usuario de Hugging Face `bhatr-eyansh`, sin afiliación institucional declarada ni métricas de adopción: el repositorio acumula 0 descargas y 0 likes, y su tamaño es de 0,0 GB. Se publica bajo licencia MIT con las etiquetas `research-notes` y `cross-modal-fusion`.
 
 Es relevante ahora únicamente como material de planificación metodológica para quien trabaje en fusión de modalidades: propone comparaciones contra baselines emparejados, control de confusores y comprobaciones de reproducibilidad. No debe citarse como evidencia experimental, y la búsqueda web asociada no devolvió referencias útiles (solo páginas corporativas de Microsoft, sin relación con el contenido).
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Comparativa con modelos similares
 
-No disponible. No existe una categoría de modelos comparables porque este repositorio no publica pesos entrenados ni define una tarea de inferencia. Su equivalente funcional serían otras notas de investigación o plantillas metodológicas alojadas en HuggingFace, no modelos multimodales como CLIP o LLaVA, con los que solo comparte el área temática (fusión cross-modal) y no una comparación de parámetros, contexto, rendimiento o licencia.
+No disponible. No existe una categoría de modelos comparables porque este repositorio no publica pesos entrenados ni define una tarea de inferencia. Su equivalente funcional serían otras notas de investigación o plantillas metodológicas alojadas en Hugging Face, no modelos multimodales como CLIP o LLaVA, con los que solo comparte el área temática (fusión cross-modal) y no una comparación de parámetros, contexto, rendimiento o licencia.
 
 ## Limitaciones y advertencias
 
@@ -78,7 +78,7 @@ No disponible. No existe una categoría de modelos comparables porque este repos
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bhatr-eyansh/study-cross-modal-fusion
+- Repositorio en Hugging Face: https://huggingface.co/bhatr-eyansh/study-cross-modal-fusion
 - Artículo principal citado en la model card: `notes.md` (incluido en el repositorio)
 - Documentación: `README.md` (incluido en el repositorio)
 - Papers, blogs, repositorios o demos adicionales: no disponible (la búsqueda web no devolvió enlaces pertinentes)

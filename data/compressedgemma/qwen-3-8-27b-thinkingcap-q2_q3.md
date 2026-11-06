@@ -74,6 +74,6 @@ No disponible. La información proporcionada no identifica el modelo base con ce
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/CompressedGemma/Qwen-3.8-27B-Thinkingcap-Q2_Q3
+- Repositorio Hugging Face: https://huggingface.co/CompressedGemma/Qwen-3.8-27B-Thinkingcap-Q2_Q3
 - Imagen de ejemplo citada en la model card: https://cdn-uploads.huggingface.co/production/uploads/69de1a493a21cb7c029dc694/66OY4J7wa9fqgsZ-UpUcL.png
 - No se han encontrado en la información proporcionada enlaces a papers, blogs, repositorios de código ni demos adicionales.

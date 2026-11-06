@@ -33,7 +33,7 @@ No se dispone de informacion sobre si se aplicaron tecnicas de RLHF o DPO en el 
 - Procesamiento de multiples documentos en una misma ventana de contexto (multi-document).
 - Manejo de contexto largo (etiqueta long-context), orientado a tareas de sintesis y curacion de informacion extensa.
 - Generacion de datos de entrenamiento y curacion de contenido, proposito principal del modelo base.
-- Conversacional (etiqueta conversational en HuggingFace).
+- Conversacional (etiqueta conversational en Hugging Face).
 - Compatible con endpoints (etiqueta endpoints_compatible).
 - Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
 - Capacidades de agente y razonamiento multi-paso: no disponible en la informacion proporcionada.
@@ -85,7 +85,7 @@ La comparativa con Qwen2-1.5B-Instruct se basa en que MDCure-Qwen2-1.5B-Instruct
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/mradermacher/MDCure-Qwen2-1.5B-Instruct-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/mradermacher/MDCure-Qwen2-1.5B-Instruct-GGUF
 - Modelo base: https://huggingface.co/yale-nlp/MDCure-Qwen2-1.5B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/yale-nlp/MDCure-72k
 - Pagina de conveniencia del cuantizador: https://hf.tst.eu/model#MDCure-Qwen2-1.5B-Instruct-GGUF

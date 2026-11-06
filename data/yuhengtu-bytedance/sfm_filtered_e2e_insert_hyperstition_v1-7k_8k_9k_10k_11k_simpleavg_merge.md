@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-7k_8k_9k_10k_11k_simpleavg_merge` es un "model soup" (promedio lineal de pesos) publicado por el usuario `yuhengtu-bytedance` en HuggingFace. No es un modelo entrenado desde cero: se ha generado con [mergekit](https://github.com/cg123/mergekit) promediando cinco checkpoints intermedios (`global_step7000`, `8000`, `9000`, `10000` y `11000`) de una misma ejecución de entrenamiento identificada internamente como `filtered_e2e_insert_hyperstition_v1`, usando el paso 11000 como modelo base y peso 1.0 para cada checkpoint con `normalize: true`.
+El modelo `yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-7k_8k_9k_10k_11k_simpleavg_merge` es un "model soup" (promedio lineal de pesos) publicado por el usuario `yuhengtu-bytedance` en Hugging Face. No es un modelo entrenado desde cero: se ha generado con [mergekit](https://github.com/cg123/mergekit) promediando cinco checkpoints intermedios (`global_step7000`, `8000`, `9000`, `10000` y `11000`) de una misma ejecución de entrenamiento identificada internamente como `filtered_e2e_insert_hyperstition_v1`, usando el paso 11000 como modelo base y peso 1.0 para cada checkpoint con `normalize: true`.
 
 Tecnicamente se trata de un transformer decoder-only de la familia GPT-NeoX (`gpt_neox` como arquitectura declarada en los tags), con 6.856.253.440 parametros reales en safetensors, lo que lo situa en la categoria de ~7B. El repositorio ocupa 13,7 GB y los pesos se emiten en bfloat16, aunque la configuracion de merge se declara en float32. La model card no aporta informacion sobre datos de entrenamiento, tokenizador, longitud de contexto, idiomas ni licencia.
 
@@ -36,7 +36,7 @@ No se ha producido entrenamiento nuevo para este artefacto. El proceso es purame
 
 - Generacion de texto autoregresiva, segun el pipeline declarado `text-generation`.
 - Uso conversacional: el tag `conversational` indica que el repositorio esta pensado para interacciones de chat, aunque no se especifica la plantilla de prompt ni el formato de turnos.
-- Compatibilidad con `text-generation-inference` y con endpoints compatibles (`endpoints_compatible`), es decir, puede servirse mediante la API estandar de HuggingFace.
+- Compatibilidad con `text-generation-inference` y con endpoints compatibles (`endpoints_compatible`), es decir, puede servirse mediante la API estandar de Hugging Face.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes o razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible (no se declaran idiomas).
@@ -103,7 +103,7 @@ Diferencias clave: frente a Pythia-6.9B, el modelo analizado comparte el rango d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-7k_8k_9k_10k_11k_simpleavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-7k_8k_9k_10k_11k_simpleavg_merge
 - Repositorio de mergekit: https://github.com/cg123/mergekit
 - Paper de referencia del merge lineal (Model soups): https://arxiv.org/abs/2203.05482
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relevante sobre este modelo. Los resultados devueltos corresponden a foros de simuladores de autobuses (OMSI, Euro Truck Simulator) y no guardan relacion con el modelo.

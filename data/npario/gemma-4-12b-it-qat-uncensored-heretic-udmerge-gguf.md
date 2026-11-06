@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`npario/gemma-4-12B-it-qat-uncensored-heretic-UDmerge-GGUF` es un modelo derivado de Gemma 4 de 12B parámetros, publicado por el usuario npario en HuggingFace. No se trata de un modelo entrenado desde cero, sino de un *merge* experimental que combina los tensores "abliterated" (sin mecanismos de rechazo) del modelo `llmfan46/gemma-4-12B-it-qat-q4_0-unquantized-uncensored-heretic` con la cuantización Q4_0 sin pérdida de Unsloth (`unsloth/gemma-4-12B-it-qat-GGUF`). El objetivo declarado es obtener una cuantización que preserve mejor la precisión del modelo original mientras reduce la tasa de rechazos.
+`npario/gemma-4-12B-it-qat-uncensored-heretic-UDmerge-GGUF` es un modelo derivado de Gemma 4 de 12B parámetros, publicado por el usuario npario en Hugging Face. No se trata de un modelo entrenado desde cero, sino de un *merge* experimental que combina los tensores "abliterated" (sin mecanismos de rechazo) del modelo `llmfan46/gemma-4-12B-it-qat-q4_0-unquantized-uncensored-heretic` con la cuantización Q4_0 sin pérdida de Unsloth (`unsloth/gemma-4-12B-it-qat-GGUF`). El objetivo declarado es obtener una cuantización que preserve mejor la precisión del modelo original mientras reduce la tasa de rechazos.
 
 El modelo mantiene la arquitectura multimodal de Gemma 4 (pipeline `image-text-to-text`), con aproximadamente 11.900 millones de parámetros totales. Se distribuye exclusivamente en formato GGUF, en dos variantes de cuantización (Q4_K_XL y Q4_K_XXL), y está pensado para despliegue local con llama.cpp y herramientas compatibles.
 
@@ -106,7 +106,7 @@ Resultados adicionales (script antiguo, sin restricciones gramaticales en el for
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/npario/gemma-4-12B-it-qat-uncensored-heretic-UDmerge-GGUF
+- Hugging Face: https://huggingface.co/npario/gemma-4-12B-it-qat-uncensored-heretic-UDmerge-GGUF
 - Modelo base (QAT BF16 abliterated): https://huggingface.co/llmfan46/gemma-4-12B-it-qat-q4_0-unquantized-uncensored-heretic
 - Modelo base (QAT UD-Q4_K_XL de Unsloth): https://huggingface.co/unsloth/gemma-4-12B-it-qat-GGUF
 - QAT Q4_0 uncensored heretic GGUF: https://huggingface.co/llmfan46/gemma-4-12B-it-qat-q4_0-uncensored-heretic-GGUF

@@ -81,8 +81,8 @@ Los datos de las alternativas provienen de su documentacion publica y no de la i
 
 | Modelo | Parametros | Contexto | Licencia | Formato / disponibilidad | Benchmarks comparables |
 |---|---|---|---|---|---|
-| tanpo-deals-GGUF | ~1,17 B | 32.768 | other (hereda LFM2.5) | GGUF, safetensors y LoRA en HuggingFace | No disponible |
-| LiquidAI/LFM2.5-1.2B-Instruct | ~1,17 B | 32.768 | Licencia de Liquid AI | Safetensors en HuggingFace | No disponible |
+| tanpo-deals-GGUF | ~1,17 B | 32.768 | other (hereda LFM2.5) | GGUF, safetensors y LoRA en Hugging Face | No disponible |
+| LiquidAI/LFM2.5-1.2B-Instruct | ~1,17 B | 32.768 | Licencia de Liquid AI | Safetensors en Hugging Face | No disponible |
 | Otros especialistas Tanpo (marketing, product, hiring, fundraising) | ~1,17 B | 32.768 | other (hereda LFM2.5) | GGUF, safetensors y LoRA | No disponible |
 | Qwen2.5-1.5B-Instruct | 1,5 B | 32.768 | Apache-2.0 | Safetensors y GGUF | No disponible |
 | Llama-3.2-1B-Instruct | 1,23 B | 128.000 | Licencia comunitaria de Llama 3.2 | Safetensors y GGUF | No disponible |
@@ -106,7 +106,7 @@ Frente a estos modelos generalistas, tanpo-deals no compite en amplitud de capac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/d4rkninja/tanpo-deals-GGUF
+- Modelo en Hugging Face: https://huggingface.co/d4rkninja/tanpo-deals-GGUF
 - Modelo fusionado (Transformers): https://huggingface.co/d4rkninja/tanpo-deals
 - Adaptador LoRA: https://huggingface.co/d4rkninja/tanpo-deals-LoRA
 - Artefactos de evaluacion del modelo fusionado: https://huggingface.co/d4rkninja/tanpo-deals/tree/main/evaluation

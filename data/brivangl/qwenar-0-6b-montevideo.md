@@ -78,10 +78,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parámetros | Contexto | Función | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `brivangl/qwenar-0.6b-montevideo` | 1.194.200.064 | no disponible (frases de 5 a 256 tokens en entrenamiento) | Autoencoder de frases: encode y decode de vectores de 1024 dimensiones | inglés | apache-2.0 | HuggingFace, `custom_code`, `transformers>=5.15` |
-| `brivangl/qwenar-0.6b` (predecesor) | no disponible | no disponible | Misma construcción, entrenada sobre una mezcla biomédica | no disponible | no disponible | HuggingFace |
-| `perplexity-ai/pplx-embed-v1-0.6b` (encoder base) | ≈0,6B según nombre del checkpoint | no disponible | Embeddings de frase (sin decoder asociado documentado aquí) | no disponible | no disponible | HuggingFace |
-| `Qwen/Qwen3-0.6B-Base` (decoder base) | ≈0,6B según nombre del checkpoint | no disponible | Modelo de lenguaje causal de propósito general | no disponible | no disponible | HuggingFace |
+| `brivangl/qwenar-0.6b-montevideo` | 1.194.200.064 | no disponible (frases de 5 a 256 tokens en entrenamiento) | Autoencoder de frases: encode y decode de vectores de 1024 dimensiones | inglés | apache-2.0 | Hugging Face, `custom_code`, `transformers>=5.15` |
+| `brivangl/qwenar-0.6b` (predecesor) | no disponible | no disponible | Misma construcción, entrenada sobre una mezcla biomédica | no disponible | no disponible | Hugging Face |
+| `perplexity-ai/pplx-embed-v1-0.6b` (encoder base) | ≈0,6B según nombre del checkpoint | no disponible | Embeddings de frase (sin decoder asociado documentado aquí) | no disponible | no disponible | Hugging Face |
+| `Qwen/Qwen3-0.6B-Base` (decoder base) | ≈0,6B según nombre del checkpoint | no disponible | Modelo de lenguaje causal de propósito general | no disponible | no disponible | Hugging Face |
 | SONAR / Large Concept Model (Meta) | no disponible | no disponible | Embeddings de frase decodificables a nivel de concepto | no disponible | no disponible | citados como referencia conceptual en la model card |
 
 ## Limitaciones y advertencias
@@ -100,7 +100,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/brivangl/qwenar-0.6b-montevideo
+- Modelo en Hugging Face: https://huggingface.co/brivangl/qwenar-0.6b-montevideo
 - Repositorio de código, pipeline de entrenamiento y evaluación completa: https://github.com/IvanDrokin/QwenAR
 - Modelo predecesor (dominio biomédico): https://huggingface.co/brivangl/qwenar-0.6b
 - Encoder base: https://huggingface.co/perplexity-ai/pplx-embed-v1-0.6b

@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Segmentacion integrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Xiaomi-Lens-0 | 4,6B | no disponible | Si (decodificador de mascaras) | Apache 2.0 | HuggingFace, demo en Spaces |
-| Qwen3.5-4B (base) | 4B | no disponible | No | no disponible | HuggingFace |
+| Xiaomi-Lens-0 | 4,6B | no disponible | Si (decodificador de mascaras) | Apache 2.0 | Hugging Face, demo en Spaces |
+| Qwen3.5-4B (base) | 4B | no disponible | No | no disponible | Hugging Face |
 | Alternativas multimodales de grounding de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone en la informacion proporcionada de resultados de benchmarks ni de especificaciones de modelos comparables de la misma categoria, por lo que la comparativa cuantitativa de rendimiento queda como no disponible.
@@ -85,9 +85,9 @@ No se dispone en la informacion proporcionada de resultados de benchmarks ni de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/guarin/Xiaomi-Lens-0
+- Modelo en Hugging Face: https://huggingface.co/guarin/Xiaomi-Lens-0
 - Pagina del proyecto: https://seerray-lab.github.io/Xiaomi-Lens-0/
 - Repositorio de codigo: https://github.com/SeerRay-Lab/Xiaomi-Lens-0
 - Informe tecnico (arXiv): https://arxiv.org/abs/2610.23279
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/hugging-apps/xiaomi-lens-0
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/hugging-apps/xiaomi-lens-0
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B

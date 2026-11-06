@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un fine-tune experimental del modelo `unsloth/Qwen2.5-7B-Instruct`, publicado por el usuario HungryDino en HuggingFace. El nombre del repositorio (`cat_numbers-collapse_p10_twf-run2-gen5`) sugiere un experimento relacionado con el colapso de números o categorías, pero la model card no ofrece ninguna descripción del propósito, el dataset utilizado ni el proceso de entrenamiento más allá de indicar que se usaron las librerías Unsloth y TRL para acelerar el fine-tuning.
+Este modelo es un fine-tune experimental del modelo `unsloth/Qwen2.5-7B-Instruct`, publicado por el usuario HungryDino en Hugging Face. El nombre del repositorio (`cat_numbers-collapse_p10_twf-run2-gen5`) sugiere un experimento relacionado con el colapso de números o categorías, pero la model card no ofrece ninguna descripción del propósito, el dataset utilizado ni el proceso de entrenamiento más allá de indicar que se usaron las librerías Unsloth y TRL para acelerar el fine-tuning.
 
 El repositorio tiene un tamaño de solo 0.1 GB, lo que indica que probablemente contiene un adaptador (por ejemplo, LoRA) en lugar de los pesos completos del modelo de 7B. Al estar basado en Qwen2.5-7B-Instruct, hereda la arquitectura transformer decoder-only de Qwen2 y las capacidades generales del modelo instruct, aunque no hay evidencia de que el fine-tune haya modificado o mejorado dichas capacidades. Su relevancia actual es limitada: se trata de un artefacto de investigación sin documentación ni métricas publicadas, útil únicamente como ejemplo de fine-tuning con Unsloth y TRL.
 
@@ -21,7 +21,7 @@ El repositorio tiene un tamaño de solo 0.1 GB, lo que indica que probablemente 
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tune de `unsloth/Qwen2.5-7B-Instruct`, que a su vez es una versión optimizada del Qwen2.5-7B-Instruct original. La arquitectura subyacente es un transformer decoder-only con atención de causalidad completa, tal como se describe en el Qwen2.5 Technical Report (arXiv:2412.15115). El fine-tuning se realizó con la librería Unsloth (que acelera el entrenamiento mediante kernels optimizados) y la librería TRL de HuggingFace, según indica la model card. No se proporciona información sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas como RLHF o DPO. El nombre del repositorio sugiere un experimento con "colapso de números" (posiblemente relacionado con la capacidad del modelo para manejar secuencias numéricas), pero no hay detalles técnicos al respecto.
+El modelo es un fine-tune de `unsloth/Qwen2.5-7B-Instruct`, que a su vez es una versión optimizada del Qwen2.5-7B-Instruct original. La arquitectura subyacente es un transformer decoder-only con atención de causalidad completa, tal como se describe en el Qwen2.5 Technical Report (arXiv:2412.15115). El fine-tuning se realizó con la librería Unsloth (que acelera el entrenamiento mediante kernels optimizados) y la librería TRL de Hugging Face, según indica la model card. No se proporciona información sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas como RLHF o DPO. El nombre del repositorio sugiere un experimento con "colapso de números" (posiblemente relacionado con la capacidad del modelo para manejar secuencias numéricas), pero no hay detalles técnicos al respecto.
 
 ## Capacidades
 
@@ -45,7 +45,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 - Al ser un adaptador de 0.1 GB, requiere cargar el modelo base Qwen2.5-7B-Instruct (aproximadamente 15 GB en fp16, o menos con cuantización).
 - GPU recomendadas: cualquier GPU con al menos 16 GB de VRAM para fp16 (por ejemplo, RTX 4090, A100, H100). Con cuantización de 4 bits, podría caber en GPUs de 8 GB, pero no se ha verificado.
-- Opciones de despliegue: al ser un adaptador, se puede cargar con la librería Transformers de HuggingFace, o mediante servidores de inferencia como vLLM o TGI si se fusiona con el modelo base.
+- Opciones de despliegue: al ser un adaptador, se puede cargar con la librería Transformers de Hugging Face, o mediante servidores de inferencia como vLLM o TGI si se fusiona con el modelo base.
 - No se dispone de datos de latencia ni throughput para este adaptador.
 
 ## Comparativa con modelos similares
@@ -63,7 +63,7 @@ No se dispone de comparativas publicadas para este adaptador. Como referencia, e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run2-gen5
+- Modelo en Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run2-gen5
 - Qwen2.5 Technical Report (arXiv): https://arxiv.org/abs/2412.15115
 - Repositorio oficial de Qwen: https://github.com/QwenLM/Qwen
 - Repositorio de Qwen2.5 (mx4ai): https://github.com/mx4ai/qwen2.5

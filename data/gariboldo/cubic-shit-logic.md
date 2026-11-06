@@ -15,7 +15,7 @@ No se proporcionan datos sobre arquitectura de red neuronal, número de parámet
 | Parametros activos | no aplica (no se indica que sea un modelo MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | ru, en (según metadatos de HuggingFace) |
+| Idiomas soportados | ru, en (según metadatos de Hugging Face) |
 | Licencia | apache-2.0 |
 | Formato de pesos | no disponible (se menciona "RAM-optimized memmap inference pipelines", pero no se publican pesos) |
 
@@ -62,6 +62,6 @@ No disponible. No se conocen modelos comparables en la misma categoría, dado qu
 
 ## Enlaces
 
-- [HuggingFace: Gariboldo/cubic-shit-logic](https://huggingface.co/Gariboldo/cubic-shit-logic)
+- [Hugging Face: Gariboldo/cubic-shit-logic](https://huggingface.co/Gariboldo/cubic-shit-logic)
 - [GitHub: MarkysUNIT77/cubic-shit-logic](https://github.com/MarkysUNIT77/cubic-shit-logic)
 - [Releases en GitHub](https://github.com/MarkysUNIT77/cubic-shit-logic/releases)

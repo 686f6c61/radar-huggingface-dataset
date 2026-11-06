@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo **Gemma-4-31B-it-qat-MXFP4-CRACK** es una variante abliterada y cuantizada del modelo multimodal `google/gemma-4-31b-it`, publicada por el usuario Ishowbackup en HuggingFace. Se trata de un modelo denso de 31.000 millones de parámetros con arquitectura de 60 capas y atención híbrida deslizante/global, que incorpora capacidades de visión (entrada de imágenes) y razonamiento basado en canales. La versión presentada aplica la técnica de "abliteración" denominada CRACK, que elimina los mecanismos de rechazo del modelo original, logrando una tasa de cumplimiento del 95% en categorías de daño de HarmBench, con una pérdida de solo 5,7 puntos porcentuales en MMLU (del 88,6% al 82,9%).
+El modelo **Gemma-4-31B-it-qat-MXFP4-CRACK** es una variante abliterada y cuantizada del modelo multimodal `google/gemma-4-31b-it`, publicada por el usuario Ishowbackup en Hugging Face. Se trata de un modelo denso de 31.000 millones de parámetros con arquitectura de 60 capas y atención híbrida deslizante/global, que incorpora capacidades de visión (entrada de imágenes) y razonamiento basado en canales. La versión presentada aplica la técnica de "abliteración" denominada CRACK, que elimina los mecanismos de rechazo del modelo original, logrando una tasa de cumplimiento del 95% en categorías de daño de HarmBench, con una pérdida de solo 5,7 puntos porcentuales en MMLU (del 88,6% al 82,9%).
 
 El modelo se distribuye en formato MLX-native safetensors con cuantización MXFP4 de 4 bits, lo que reduce su tamaño a aproximadamente 19,6 GB en el repositorio. Está diseñado para ejecutarse en Apple Silicon mediante el motor vMLX, ya que las librerías estándar `mlx_lm` y `mlx_vlm` no ofrecen soporte completo para Gemma 4. Su relevancia radica en ofrecer una alternativa "sin censura" para investigación en seguridad de IA, manteniendo capacidades de generación de código, razonamiento multi-paso y procesamiento de imágenes.
 
@@ -88,7 +88,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- [HuggingFace - Ishowbackup/Gemma-4-31B-it-qat-MXFP4-CRACK](https://huggingface.co/Ishowbackup/Gemma-4-31B-it-qat-MXFP4-CRACK)
+- [Hugging Face - Ishowbackup/Gemma-4-31B-it-qat-MXFP4-CRACK](https://huggingface.co/Ishowbackup/Gemma-4-31B-it-qat-MXFP4-CRACK)
 - [vMLX - motor de ejecución](https://vmlx.net)
 - [dealign.ai - investigación sobre abliteración](https://dealign.ai)
 - [Ko-fi - soporte al autor](https://ko-fi.com/dealignai)

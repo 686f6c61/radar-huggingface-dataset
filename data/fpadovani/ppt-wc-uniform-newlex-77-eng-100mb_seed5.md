@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ppt-wc-uniform-newlex-77-eng-100mb_seed5` es un ajuste fino (fine-tuning) del modelo monolingüe `goldfish-models/eng_latn_100mb`, publicado por el usuario `fpadovani` en HuggingFace. Se trata de un modelo pequeño, de arquitectura tipo GPT-2 según los tags declarados, con 86.508.288 parámetros totales y pesos en formato safetensors. El entrenamiento se ha realizado mediante SFT (supervised fine-tuning) con la librería TRL, lo que lo convierte en una variante instruida del modelo base.
+`ppt-wc-uniform-newlex-77-eng-100mb_seed5` es un ajuste fino (fine-tuning) del modelo monolingüe `goldfish-models/eng_latn_100mb`, publicado por el usuario `fpadovani` en Hugging Face. Se trata de un modelo pequeño, de arquitectura tipo GPT-2 según los tags declarados, con 86.508.288 parámetros totales y pesos en formato safetensors. El entrenamiento se ha realizado mediante SFT (supervised fine-tuning) con la librería TRL, lo que lo convierte en una variante instruida del modelo base.
 
 El problema que aborda es de investigación más que de producto: sirve como punto de partida reproducible para estudiar el efecto del ajuste supervisado sobre un modelo de lenguaje de escala reducida entrenado con un presupuesto de datos limitado (100 MB de corpus, según el identificador del modelo base). Es relevante en el contexto de experimentos de alineación y de ajuste eficiente, no como modelo de propósito general.
 
@@ -33,7 +33,7 @@ El entrenamiento se realizó con TRL 0.23.0 sobre Transformers 4.56.2, PyTorch 2
 
 - Generación de texto en inglés a partir de un prompt. El ejemplo de la model card usa un formato de mensaje conversacional (`{"role": "user", "content": ...}`) con `max_new_tokens=128`, lo que indica que el ajuste SFT se hizo sobre datos en formato de instrucciones o de diálogo.
 - Ajuste a formato de instrucción: al ser un modelo ajustado con SFT, se espera que responda a prompts directos mejor que el modelo base, aunque no hay evaluación publicada que lo confirme.
-- Ejecución en `pipeline("text-generation")` de Transformers con `return_full_text=False`, es decir, integración directa con el ecosistema HuggingFace.
+- Ejecución en `pipeline("text-generation")` de Transformers con `return_full_text=False`, es decir, integración directa con el ecosistema Hugging Face.
 - Compatibilidad declarada con text-generation-inference y con endpoints compatibles (tags `text-generation-inference` y `endpoints_compatible`).
 - Soporte de tool calling / function calling: no disponible, no se menciona en la model card.
 - Soporte de agentes o razonamiento multi-paso: no disponible, no se menciona ni se evalúa.
@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| ppt-wc-uniform-newlex-77-eng-100mb_seed5 | 86.508.288 | no disponible | no disponible | HuggingFace, safetensors | Ajuste SFT con TRL; 0 descargas y 0 likes en el momento de la consulta |
-| goldfish-models/eng_latn_100mb | no disponible en la informacion proporcionada | no disponible | no disponible | HuggingFace | Modelo base sobre el que se ha hecho el ajuste |
+| ppt-wc-uniform-newlex-77-eng-100mb_seed5 | 86.508.288 | no disponible | no disponible | Hugging Face, safetensors | Ajuste SFT con TRL; 0 descargas y 0 likes en el momento de la consulta |
+| goldfish-models/eng_latn_100mb | no disponible en la informacion proporcionada | no disponible | no disponible | Hugging Face | Modelo base sobre el que se ha hecho el ajuste |
 | Alternativas comparables de terceros | no disponible | no disponible | no disponible | no disponible | La búsqueda web realizada no devolvió resultados relevantes sobre modelos comparables |
 
 No se dispone de datos verificados de otros modelos de la misma categoría (modelos monolingües ingleses de menos de 100 millones de parámetros) en la información proporcionada, por lo que no se puede establecer una comparación cuantitativa de rendimiento.
@@ -89,7 +89,7 @@ No se dispone de datos verificados de otros modelos de la misma categoría (mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/ppt-wc-uniform-newlex-77-eng-100mb_seed5
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/ppt-wc-uniform-newlex-77-eng-100mb_seed5
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/m0zuksv3

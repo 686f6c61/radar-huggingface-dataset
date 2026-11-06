@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TGCC-F-hotdog-step05000 es un checkpoint de política robótica para la tarea `cook_hot_dogs` del benchmark BEHAVIOR-1K (edición 2025). Lo publica el usuario Songyuan666 en HuggingFace como un fine-tuning del modelo base TC-pi0.5, que a su vez deriva de la familia pi0.5. No es un modelo de lenguaje generalista ni un checkpoint de Transformers AutoModel: es un modelo de robótica de propósito específico que combina percepción visual, un experto de visión-lenguaje y un módulo de acción, junto con un crítico y un adaptador de recuperación (retrieval).
+TGCC-F-hotdog-step05000 es un checkpoint de política robótica para la tarea `cook_hot_dogs` del benchmark BEHAVIOR-1K (edición 2025). Lo publica el usuario Songyuan666 en Hugging Face como un fine-tuning del modelo base TC-pi0.5, que a su vez deriva de la familia pi0.5. No es un modelo de lenguaje generalista ni un checkpoint de Transformers AutoModel: es un modelo de robótica de propósito específico que combina percepción visual, un experto de visión-lenguaje y un módulo de acción, junto con un crítico y un adaptador de recuperación (retrieval).
 
 El checkpoint está entrenado exclusivamente para la tarea de cocinar perritos calientes, con un protocolo que usa RGB más grafos Oracle acotados a la tarea. El autor reporta 11 de 20 éxitos (55 %) en la evaluación histórica con un Q oficial medio de 0,5500, y advierte explícitamente de que no se reclama generalización entre tareas ni se trata de un checkpoint de cinco tareas. La receta corresponde a una versión antigua (feature/target/reference/memory) distinta de la release posterior v3fast.
 
@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TGCC-F-hotdog-step05000 | no disponible | no disponible | `cook_hot_dogs` (BEHAVIOR-1K) | no disponible | HuggingFace, repo de 8,5 GB |
-| Songyuan666/TC-pi0.5 (modelo base) | no disponible | no disponible | política base pi0.5 | no disponible | HuggingFace |
+| TGCC-F-hotdog-step05000 | no disponible | no disponible | `cook_hot_dogs` (BEHAVIOR-1K) | no disponible | Hugging Face, repo de 8,5 GB |
+| Songyuan666/TC-pi0.5 (modelo base) | no disponible | no disponible | política base pi0.5 | no disponible | Hugging Face |
 | Otras variantes TGCC del mismo autor | no disponible | no disponible | tareas BEHAVIOR-1K | no disponible | no disponible en la información proporcionada |
 
 No se dispone de datos de rendimiento de los modelos comparables en la información proporcionada.
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento de los modelos comparables en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Songyuan666/TGCC-F-hotdog-step05000
+- Modelo en Hugging Face: https://huggingface.co/Songyuan666/TGCC-F-hotdog-step05000
 - Modelo base TC-pi0.5: https://huggingface.co/Songyuan666/TC-pi0.5
 - Código del proyecto TGCC: https://github.com/susongyuan/TGCC
 - Dataset de demostraciones: https://huggingface.co/datasets/behavior-1k/2025-challenge-demos

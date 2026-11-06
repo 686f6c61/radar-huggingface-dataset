@@ -100,7 +100,7 @@ No se dispone de información suficiente sobre el modelo base ni sobre sus compo
 
 ## Enlaces
 
-- Repositorio HuggingFace del GGUF: https://huggingface.co/mradermacher/esa-sceva-satcom-70B_bf16-GGUF
+- Repositorio Hugging Face del GGUF: https://huggingface.co/mradermacher/esa-sceva-satcom-70B_bf16-GGUF
 - Modelo base: https://huggingface.co/Jolly-Q/esa-sceva-satcom-70B_bf16
 - Página de descargas del autor: https://hf.tst.eu/model#esa-sceva-satcom-70B_bf16-GGUF
 - README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

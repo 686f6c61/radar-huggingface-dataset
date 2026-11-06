@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `kimtaey/cosmos3-ap-gr1-auxfut-actvis-fgap-lam05-b256-16k` es un checkpoint publicado en HuggingFace por el usuario `kimtaey`. Se trata de un artefacto con un tamaño de repositorio de 91,1 GB, creado el 13 de septiembre de 2026 (fecha registrada en los metadatos del repositorio) y con un historial de uso prácticamente nulo: 0 descargas y 1 like en el momento de la consulta. No hay informacion publica sobre la arquitectura, el pipeline, la licencia ni los idiomas soportados.
+El repositorio `kimtaey/cosmos3-ap-gr1-auxfut-actvis-fgap-lam05-b256-16k` es un checkpoint publicado en Hugging Face por el usuario `kimtaey`. Se trata de un artefacto con un tamaño de repositorio de 91,1 GB, creado el 13 de septiembre de 2026 (fecha registrada en los metadatos del repositorio) y con un historial de uso prácticamente nulo: 0 descargas y 1 like en el momento de la consulta. No hay informacion publica sobre la arquitectura, el pipeline, la licencia ni los idiomas soportados.
 
 El identificador del modelo tiene la forma tipica de un experimento de investigacion con hiperparametros codificados en el nombre: posiblemente un modelo base ("cosmos3") con variantes de configuracion como "gr1", "auxfut", "actvis", "fgap", "lam05", "b256" y "16k". Esta estructura sugiere un checkpoint de ablacion o de barrido de hiperparametros mas que un modelo con ficha tecnica y soporte, aunque no es posible confirmarlo con la informacion disponible.
 
@@ -84,6 +84,6 @@ No disponible. Sin conocer la arquitectura, el numero de parametros, el dominio 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kimtaey/cosmos3-ap-gr1-auxfut-actvis-fgap-lam05-b256-16k
+- Hugging Face: https://huggingface.co/kimtaey/cosmos3-ap-gr1-auxfut-actvis-fgap-lam05-b256-16k
 
 Nota: la busqueda web realizada no devolvio ningun resultado relacionado con este modelo. Los unicos enlaces recuperados correspondian a hilos de Reddit sobre el cuestionario de la pagina de inicio de Bing (`r/BingHomepageQuiz`, `r/MicrosoftRewards`), sin ninguna relacion con el repositorio. No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo.

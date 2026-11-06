@@ -90,7 +90,7 @@ Los datos de parametros, idiomas y licencia de la fila de Whisper large-v3 y de 
 
 ## Enlaces
 
-- Repositorio en HuggingFace (este espejo): https://huggingface.co/codeclawd/parakeet-tdt-0.6b-v3-coreml
+- Repositorio en Hugging Face (este espejo): https://huggingface.co/codeclawd/parakeet-tdt-0.6b-v3-coreml
 - Modelo base original: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Conversion Core ML original: FluidInference/parakeet-tdt-0.6b-v3-coreml (revision 7dd20fe6b1797d35f5e3307e8b1732d9a178edfe)
 - Script de conversion: https://github.com/FluidInference/mobius/tree/main/models/stt/parakeet-tdt-v3-0.6b/coreml

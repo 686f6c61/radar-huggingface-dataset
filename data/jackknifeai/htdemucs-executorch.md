@@ -73,11 +73,11 @@ Aviso: las cifras de la model card son internamente inconsistentes. Si una venta
 
 | Modelo | Arquitectura | Parametros | Formato / plataforma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| htdemucs-executorch (este modelo) | HTDemucs exportado | no disponible (fichero `.pte` de 288,6 MiB) | ExecuTorch + Vulkan, Android arm64 | MIT (runtime BSD) | HuggingFace, 0 descargas |
+| htdemucs-executorch (este modelo) | HTDemucs exportado | no disponible (fichero `.pte` de 288,6 MiB) | ExecuTorch + Vulkan, Android arm64 | MIT (runtime BSD) | Hugging Face, 0 descargas |
 | htdemucs (original, Meta AI) | HTDemucs | no disponible en la informacion | PyTorch, CPU/CUDA | MIT | Repositorio facebookresearch/demucs; invocacion `-n htdemucs` |
 | htdemucs_ft (Meta AI) | HTDemucs con ajuste fino (4 modelos) | no disponible en la informacion | PyTorch, CPU/CUDA | MIT | Repositorio facebookresearch/demucs; invocacion `-n htdemucs_ft`; coste de inferencia 4x |
 | hdemucs_mmi (Meta AI) | Demucs (linea base reentrenada) | no disponible en la informacion | PyTorch, CPU/CUDA | MIT | Repositorio facebookresearch/demucs; invocacion `-n hdemucs_mmi` |
-| TrevorJS/htdemucs-CoreAI | HTDemucs convertido | no disponible en la informacion | Core AI, macOS 27 sobre Apple Silicon | no disponible en la informacion | HuggingFace |
+| TrevorJS/htdemucs-CoreAI | HTDemucs convertido | no disponible en la informacion | Core AI, macOS 27 sobre Apple Silicon | no disponible en la informacion | Hugging Face |
 | MDX-Net | Red espectral (espectrograma) | no disponible en la informacion | Diversos | no disponible en la informacion | Referenciado como alternativa clasica frente a HTDemucs |
 
 No se dispone de cifras comparativas de calidad (SDR) ni de latencia entre estas variantes en la información proporcionada. La comparación relevante es de plataforma: el original de Meta AI prioriza calidad y velocidad en GPU de escritorio, `htdemucs_ft` mejora la separación a costa de cuadruplicar el cómputo, y esta exportación prioriza la ejecución local en Android a costa de la latencia.
@@ -96,7 +96,7 @@ No se dispone de cifras comparativas de calidad (SDR) ni de latencia entre estas
 - Compatibilidad limitada a Android arm64 con Vulkan; no hay build para iOS, escritorio ni servidor en este repositorio.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/JackKnifeAI/htdemucs-executorch
+- Modelo en Hugging Face: https://huggingface.co/JackKnifeAI/htdemucs-executorch
 - Repositorio original de Demucs (Meta AI, código y paper de Hybrid Transformer Demucs): https://github.com/facebookresearch/demucs
 - Aplicación Killa YuE, destino de la exportación: https://github.com/JackKnifeAI/killa-yue
 - Runtime ExecuTorch (licencia BSD): https://github.com/pytorch/executorch

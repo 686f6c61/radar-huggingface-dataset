@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hermitdave/Agnes-3.0-Flash-oQ4e | no disponible (~19 GB) | no disponible | oQ4e precision mixta (4/5/6/8 bits) | no disponible | HuggingFace, 0 descargas, 0 likes |
-| Agnes-AI/Agnes-3.0-Flash (base) | no disponible | no disponible | pesos completos (precision original) | no disponible | HuggingFace, repositorio oficial de Agnes-AI |
-| hermitdave/Agnes-3.0-Flash-MTP-drafter | no disponible (drafter) | no disponible | no disponible | no disponible | HuggingFace; complemento, no alternativa |
+| hermitdave/Agnes-3.0-Flash-oQ4e | no disponible (~19 GB) | no disponible | oQ4e precision mixta (4/5/6/8 bits) | no disponible | Hugging Face, 0 descargas, 0 likes |
+| Agnes-AI/Agnes-3.0-Flash (base) | no disponible | no disponible | pesos completos (precision original) | no disponible | Hugging Face, repositorio oficial de Agnes-AI |
+| hermitdave/Agnes-3.0-Flash-MTP-drafter | no disponible (drafter) | no disponible | no disponible | no disponible | Hugging Face; complemento, no alternativa |
 
 No se dispone de datos de modelos comparables de la misma categoria (mismo tamano o misma tarea) en la informacion proporcionada, ni de cifras de rendimiento que permitan una comparacion cuantitativa.
 
@@ -91,7 +91,7 @@ No se dispone de datos de modelos comparables de la misma categoria (mismo taman
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hermitdave/Agnes-3.0-Flash-oQ4e
+- Modelo en Hugging Face: https://huggingface.co/hermitdave/Agnes-3.0-Flash-oQ4e
 - Modelo base: https://huggingface.co/Agnes-AI/Agnes-3.0-Flash
 - Drafter MTP: https://huggingface.co/hermitdave/Agnes-3.0-Flash-MTP-drafter
 - Organizacion Agnes-AI: https://huggingface.co/Agnes-AI

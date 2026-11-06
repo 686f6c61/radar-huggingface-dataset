@@ -4,9 +4,9 @@
 
 `asr-aware-noise-event-removal` es un conjunto de checkpoints para eliminación de eventos de ruido en habla, desarrollado por el equipo Hydra (autor `manishjoshiai`) para el Track 2 del IndoML Datathon 2026 sobre el corpus Vaani. No es un modelo único, sino un sistema de tres modelos de mejora de habla (MossFormerGAN_SE_16K, BSRNN large-double y TF-Locoformer M) más una red de fusión por celdas, todos ellos ajustados con una función de pérdida consciente del ASR: se utiliza el reconocedor SraVaani-1.0 congelado para penalizar tanto la distancia en el espacio del encoder como la verosimilitud de transcripción TDT.
 
-El sistema aborda un problema específico: eliminar eventos de ruido (golpes, toses, ruidos ambientales) sin degradar la inteligibilidad del habla, de modo que un ASR posterior no empeore. El resultado declarado en la fase 2 es una puntuación combinada de 19,8973, con SI-SDR de 15,7934 dB y un incremento agrupado de WER de +4,1039 pp (+11,66 pp en sintético, +0,54 pp en natural). El repositorio de HuggingFace ocupa 2,9 GB e incluye tanto los checkpoints finales como 19 checkpoints intermedios de cada etapa de entrenamiento.
+El sistema aborda un problema específico: eliminar eventos de ruido (golpes, toses, ruidos ambientales) sin degradar la inteligibilidad del habla, de modo que un ASR posterior no empeore. El resultado declarado en la fase 2 es una puntuación combinada de 19,8973, con SI-SDR de 15,7934 dB y un incremento agrupado de WER de +4,1039 pp (+11,66 pp en sintético, +0,54 pp en natural). El repositorio de Hugging Face ocupa 2,9 GB e incluye tanto los checkpoints finales como 19 checkpoints intermedios de cada etapa de entrenamiento.
 
-Es relevante para investigadores que trabajen en speech enhancement orientado a ASR, especialmente en lenguas índicas, y como ejemplo reproducible de una cadena de fine-tuning con múltiples modelos base y fusión aprendida. No es un modelo de propósito general ni un LLM: es un sistema de procesamiento de audio con pesos en formato `.pt` (PyTorch), sin pipeline declarado en HuggingFace.
+Es relevante para investigadores que trabajen en speech enhancement orientado a ASR, especialmente en lenguas índicas, y como ejemplo reproducible de una cadena de fine-tuning con múltiples modelos base y fusión aprendida. No es un modelo de propósito general ni un LLM: es un sistema de procesamiento de audio con pesos en formato `.pt` (PyTorch), sin pipeline declarado en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -72,7 +72,7 @@ No se han publicado en la información disponible resultados comparativos con ot
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| asr-aware-noise-event-removal (este) | ~122 M (ensemble) | No aplica (12-18 s por clip) | Ensemble con supervision ASR y fusion aprendida | Mixta (CC-BY-4.0 y Apache-2.0 segun checkpoint) | HuggingFace + GitHub |
+| asr-aware-noise-event-removal (este) | ~122 M (ensemble) | No aplica (12-18 s por clip) | Ensemble con supervision ASR y fusion aprendida | Mixta (CC-BY-4.0 y Apache-2.0 segun checkpoint) | Hugging Face + GitHub |
 | MossFormerGAN_SE_16K (ClearVoice) | 3,1 M | No aplica | GAN para mejora de habla | Apache-2.0 | Publico (modelo base) |
 | BSRNN large-double (ESPnet) | 104 M | No aplica | Red recurrente con normalizacion por bandas | CC-BY-4.0 | Publico (modelo base) |
 | TF-Locoformer M (MERL) | 15 M | No aplica | Transformer con atencion local/global | Apache-2.0 | Publico (modelo base) |
@@ -92,7 +92,7 @@ La comparativa con alternativas de la misma categoría (sistemas de eliminación
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/manishjoshiai/asr-aware-noise-event-removal
+- Modelo en Hugging Face: https://huggingface.co/manishjoshiai/asr-aware-noise-event-removal
 - Repositorio de código y reproducción: https://github.com/mcjoshi/asr-aware-noise-event-removal
 - Guía de reproducción: `docs/REPRODUCE.md` en el repositorio de GitHub
 - Informe técnico: `docs/technical_report.pdf` en el repositorio de GitHub

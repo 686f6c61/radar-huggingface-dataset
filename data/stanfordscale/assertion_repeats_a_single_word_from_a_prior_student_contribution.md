@@ -77,9 +77,9 @@ No se han publicado en la informacion disponible resultados comparativos con otr
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (StanfordSCALE assertion classifier) | 109.486.464 | 512 tokens (limite del encoder) | Clasificacion binaria de una asercion docente | No disponible | HuggingFace, 0 descargas |
-| sentence-transformers/paraphrase-mpnet-base-v2 | ~109 M | 512 tokens | Embeddings de frases; requiere cabeza externa | Apache-2.0 (segun el modelo base; no confirmado en la informacion proporcionada) | HuggingFace |
-| Otros clasificadores de aserciones de la familia EduBehaviors | No disponible | No disponible | Clasificacion binaria por asercion | No disponible | HuggingFace (organizacion StanfordSCALE) |
+| Este modelo (StanfordSCALE assertion classifier) | 109.486.464 | 512 tokens (limite del encoder) | Clasificacion binaria de una asercion docente | No disponible | Hugging Face, 0 descargas |
+| sentence-transformers/paraphrase-mpnet-base-v2 | ~109 M | 512 tokens | Embeddings de frases; requiere cabeza externa | Apache-2.0 (segun el modelo base; no confirmado en la informacion proporcionada) | Hugging Face |
+| Otros clasificadores de aserciones de la familia EduBehaviors | No disponible | No disponible | Clasificacion binaria por asercion | No disponible | Hugging Face (organizacion StanfordSCALE) |
 
 No se dispone de datos de rendimiento comparables de modelos alternativos sobre el mismo dataset, por lo que la comparacion se limita a arquitectura, tamano y licencia. No hay informacion sobre modelos externos que resuelvan exactamente esta tarea.
 
@@ -99,8 +99,8 @@ No se dispone de datos de rendimiento comparables de modelos alternativos sobre 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StanfordSCALE/assertion_repeats_a_single_word_from_a_prior_student_contribution
+- Modelo en Hugging Face: https://huggingface.co/StanfordSCALE/assertion_repeats_a_single_word_from_a_prior_student_contribution
 - Dataset de entrenamiento y evaluacion: https://huggingface.co/datasets/StanfordSCALE/assertions_llm_annotated_talkmoves
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-mpnet-base-v2
 - TalkMoves Dataset: https://github.com/SumnerLab/TalkMoves
-- Organizacion StanfordSCALE en HuggingFace: https://huggingface.co/StanfordSCALE
+- Organizacion StanfordSCALE en Hugging Face: https://huggingface.co/StanfordSCALE

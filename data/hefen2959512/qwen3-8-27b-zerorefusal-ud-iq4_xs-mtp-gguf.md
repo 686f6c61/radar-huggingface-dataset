@@ -106,13 +106,13 @@ No se dispone de datos de benchmarks comparativos entre estas variantes, por lo 
 - Riesgo de alucinación: no se publican evaluaciones de veracidad, y la edición de comportamiento puede afectar a la calibración del modelo.
 - Cobertura idiomática limitada a chino e inglés; el rendimiento en castellano no está documentado.
 - Discrepancia de metadatos: el campo de parámetros totales del repo (460.730.096) no concuerda con la denominación de 27B ni con el tamaño del GGUF.
-- El repositorio parece un re-upload: la model card, los repos de GitHub y los directorios de terceros atribuyen el release a QQZ2026 / wilsonzhang2, mientras que en HuggingFace figura bajo Hefen2959512. Conviene verificar la procedencia y los hashes antes de usarlo en producción.
+- El repositorio parece un re-upload: la model card, los repos de GitHub y los directorios de terceros atribuyen el release a QQZ2026 / wilsonzhang2, mientras que en Hugging Face figura bajo Hefen2959512. Conviene verificar la procedencia y los hashes antes de usarlo en producción.
 - La licencia declarada es apache-2.0, pero se debe respetar también la licencia y los términos de los modelos, datasets y herramientas upstream (Qwen, junafinity, Unsloth, llama.cpp).
 - No se documentan capacidades de tool calling ni de agentes, por lo que no conviene asumirlas en pipelines automatizados sin validación previa.
 
 ## Enlaces
-- Repositorio HuggingFace (autor de la ficha): https://huggingface.co/Hefen2959512/Qwen3.8-27B-ZeroRefusal-UD-IQ4_XS-MTP-GGUF
-- Mirror en HuggingFace atribuido a QQZ2026: https://huggingface.co/QQZ2026/Qwen3.8-27B-ZeroRefusal-UD-IQ4_XS-MTP-GGUF/tree/main
+- Repositorio Hugging Face (autor de la ficha): https://huggingface.co/Hefen2959512/Qwen3.8-27B-ZeroRefusal-UD-IQ4_XS-MTP-GGUF
+- Mirror en Hugging Face atribuido a QQZ2026: https://huggingface.co/QQZ2026/Qwen3.8-27B-ZeroRefusal-UD-IQ4_XS-MTP-GGUF/tree/main
 - GitHub del release V3 Final: https://github.com/wilsonzhang2/qwen3.8-27b-zerorefusal-v3-final
 - GitHub del perfil NVFP4 16 GB (incluye README del Zerorefusal UD-IQ4_XS MTP): https://github.com/wilsonzhang2/qwen3.8-27b-nvfp4-16gb/blob/main/zerorefusal-ud-iq4xs-mtp/README.md
 - Ficha en abliteratedmodels.org: https://www.abliteratedmodels.org/qwen3.8-27b-zerorefusal/

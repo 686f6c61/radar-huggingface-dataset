@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ComfyUI-Model-Extras es un repositorio publicado en HuggingFace por el usuario aeverlumi bajo licencia MIT. Por su identificador y por la ausencia de una model card con contenido sustantivo (el README se limita a declarar la licencia), no se trata de un modelo de lenguaje en sentido estricto, sino de un paquete de recursos auxiliares orientado a ComfyUI, el entorno de generacion de imagenes basado en nodos. El repositorio ocupa aproximadamente 0,1 GB y no registra descargas ni interacciones en el momento de la consulta.
+ComfyUI-Model-Extras es un repositorio publicado en Hugging Face por el usuario aeverlumi bajo licencia MIT. Por su identificador y por la ausencia de una model card con contenido sustantivo (el README se limita a declarar la licencia), no se trata de un modelo de lenguaje en sentido estricto, sino de un paquete de recursos auxiliares orientado a ComfyUI, el entorno de generacion de imagenes basado en nodos. El repositorio ocupa aproximadamente 0,1 GB y no registra descargas ni interacciones en el momento de la consulta.
 
 No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto ni datos de entrenamiento. El autor no ha publicado pipeline, idiomas soportados ni documentacion tecnica adicional. Cualquier afirmacion sobre capacidades de generacion de texto, razonamiento o codigo careceria de respaldo en la informacion disponible.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| aeverlumi/ComfyUI-Model-Extras | no disponible | no disponible | MIT | HuggingFace |
+| aeverlumi/ComfyUI-Model-Extras | no disponible | no disponible | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion suficiente para establecer una comparativa tecnica con otros modelos o paquetes de la misma categoria.
@@ -81,5 +81,5 @@ No se dispone de informacion suficiente para establecer una comparativa tecnica 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/aeverlumi/ComfyUI-Model-Extras
+- Repositorio en Hugging Face: https://huggingface.co/aeverlumi/ComfyUI-Model-Extras
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion disponible.

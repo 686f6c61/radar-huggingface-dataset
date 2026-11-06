@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mango Qwen3.5 122B A10B Q4 es un espejo de preservación publicado por isilicon en HuggingFace, que empaqueta en formato GGUF (cuantización Q4_K, repartido en ocho shards) el modelo abliterated Huihui-Qwen3.5-122B-A10B creado por huihui-ai. Se trata de una variante sin filtros de alineación de un modelo de la familia Qwen3.5 con arquitectura mixta de expertos (MoE): 122.111.526.912 parámetros totales, de los cuales aproximadamente 10.000 millones están activos por token (A10B). El repositorio no entrena ni modifica nada: su valor añadido es la preservación exacta de los bytes originales y una evaluación rigurosa y documentada de esa configuración concreta, con una puntuación ponderada "Mango" de 80,72/100.
+Mango Qwen3.5 122B A10B Q4 es un espejo de preservación publicado por isilicon en Hugging Face, que empaqueta en formato GGUF (cuantización Q4_K, repartido en ocho shards) el modelo abliterated Huihui-Qwen3.5-122B-A10B creado por huihui-ai. Se trata de una variante sin filtros de alineación de un modelo de la familia Qwen3.5 con arquitectura mixta de expertos (MoE): 122.111.526.912 parámetros totales, de los cuales aproximadamente 10.000 millones están activos por token (A10B). El repositorio no entrena ni modifica nada: su valor añadido es la preservación exacta de los bytes originales y una evaluación rigurosa y documentada de esa configuración concreta, con una puntuación ponderada "Mango" de 80,72/100.
 
 La relevancia de esta ficha radica en que ofrece, por primera vez para esta variante, mediciones reproducibles de calidad y rendimiento: 202 preguntas más 12 casos agénticos ejecutados en 120,76 minutos, con desglose por dominios (ciberseguridad, código, razonamiento agéntico, inteligencia social, seguimiento de instrucciones y conocimiento general). Los propios autores advierten que la ganancia de calidad frente a configuraciones más pequeñas (como Qwen27, con 80,64) no compensa un coste de cómputo unas cinco veces mayor, lo que convierte esta ficha en una referencia honesta para decidir si el despliegue de 122B merece la pena.
 
@@ -100,7 +100,7 @@ Conclusión de los propios autores: esta configuración exacta no ha demostrado 
 - Riesgo de alucinación: no evaluado explícitamente en este repositorio; no disponible.
 - Longitud de contexto e idiomas soportados: no disponibles en la model card.
 - Coste de eficiencia: la carga de trabajo medida es unas cinco veces la de Qwen27 con calidad equivalente (80,72 frente a 80,64), lo que desaconseja su uso si no se necesita específicamente esta variante.
-- Solo se distribuye en GGUF Q4_K: sin pesos safetensors en este repo y con `inference: false` en HuggingFace (sin inference server integrado).
+- Solo se distribuye en GGUF Q4_K: sin pesos safetensors en este repo y con `inference: false` en Hugging Face (sin inference server integrado).
 - El fallo en 1 de los 12 casos agénticos permanece incluido; los checks agénticos solo cubren finalización, evidencia, permisos y precios, no la semántica completa de las respuestas.
 - Licencia Apache 2.0: permite uso comercial, pero el contenido abliterated puede tener implicaciones de responsabilidad legal según jurisdicción y aplicación.
 

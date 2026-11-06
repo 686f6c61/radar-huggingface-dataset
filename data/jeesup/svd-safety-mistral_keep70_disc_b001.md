@@ -86,9 +86,9 @@ No se han publicado en la información disponible los valores equivalentes para 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Jeesup/svd-safety-mistral_keep70_disc_b001 | 7.241.732.096 almacenados; fraccion 0,7009 | 32.768 tokens (heredado del base) | Apache 2.0 | HuggingFace, 0 descargas | Artefacto de investigación con seguridad degradada |
-| mistralai/Mistral-7B-Instruct-v0.2 | ~7.240 M | 32.768 tokens | Apache 2.0 (el repo base no incluye fichero de licencia para redistribucion, segun la model card) | HuggingFace | Modelo de referencia sin comprimir; mejores valores de seguridad esperados, sin datos comparables publicados aquí |
-| Otras celdas de la rejilla `svd-safety-mistral` del mismo autor | No disponible | No disponible | Apache 2.0 | HuggingFace | Mismo protocolo con distintas reglas y presupuestos; datos no disponibles |
+| Jeesup/svd-safety-mistral_keep70_disc_b001 | 7.241.732.096 almacenados; fraccion 0,7009 | 32.768 tokens (heredado del base) | Apache 2.0 | Hugging Face, 0 descargas | Artefacto de investigación con seguridad degradada |
+| mistralai/Mistral-7B-Instruct-v0.2 | ~7.240 M | 32.768 tokens | Apache 2.0 (el repo base no incluye fichero de licencia para redistribucion, segun la model card) | Hugging Face | Modelo de referencia sin comprimir; mejores valores de seguridad esperados, sin datos comparables publicados aquí |
+| Otras celdas de la rejilla `svd-safety-mistral` del mismo autor | No disponible | No disponible | Apache 2.0 | Hugging Face | Mismo protocolo con distintas reglas y presupuestos; datos no disponibles |
 | Alternativas de ~7-8 B de propósito general (Llama 3.1 8B Instruct, Qwen2.5 7B Instruct, Mistral-7B-Instruct-v0.3) | No disponible en la información proporcionada | No disponible | No disponible | No disponible | No se dispone de datos comparativos verificados en la información suministrada |
 
 No se dispone de resultados de benchmarks de los modelos alternativos en la información proporcionada, por lo que la comparativa se limita a parámetros, contexto, licencia y disponibilidad del modelo base directo.
@@ -103,11 +103,11 @@ No se dispone de resultados de benchmarks de los modelos alternativos en la info
 - Limitaciones de contexto: la ventana de 32.768 tokens es la del modelo base y no se ha revalidado tras la compresión.
 - Licencia: Apache 2.0 para este derivado, según la model card. El repositorio del modelo base no incluye fichero de licencia para su redistribución, lo que conviene revisar antes de un uso comercial.
 - Caveat de producción: los pesos no están cuantizados en el repositorio y su conversión a GGUF u otros formatos puede alterar aún más el comportamiento de seguridad, ya medido sobre el checkpoint original.
-- Fecha de creación declarada en el repositorio: 14 de septiembre de 2026, dato procedente de los metadatos de HuggingFace.
+- Fecha de creación declarada en el repositorio: 14 de septiembre de 2026, dato procedente de los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-mistral_keep70_disc_b001
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-mistral_keep70_disc_b001
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2
 - Paper de SVD-LLM: no disponible en la información proporcionada (la model card menciona el método sin enlace)
 - Repositorios, demos o blogs adicionales: no disponibles en la información proporcionada

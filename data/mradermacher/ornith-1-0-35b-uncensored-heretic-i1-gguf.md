@@ -80,7 +80,7 @@ Ornith-1.0-35B destaca por su contexto de 256K, el más largo entre los comparad
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace (mradermacher): https://huggingface.co/mradermacher/Ornith-1.0-35B-uncensored-heretic-i1-GGUF
+- Repositorio GGUF en Hugging Face (mradermacher): https://huggingface.co/mradermacher/Ornith-1.0-35B-uncensored-heretic-i1-GGUF
 - Repositorio original del modelo (llmfan46): https://huggingface.co/llmfan46/Ornith-1.0-35B-uncensored-heretic-GGUF
 - GitHub de Ornith AI: https://github.com/ornith-ai/Ornith-1
 - Sitio web de Ornith AI: https://ornith.online/

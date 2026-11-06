@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `akshatpopat/SwastikAI` es un adaptador LoRA (PEFT) entrenado sobre `unsloth/qwen2.5-3b-instruct-unsloth-bnb-4bit`, una versión cuantizada a 4 bits del modelo Qwen2.5-3B-Instruct de Alibaba. El fine-tune se realizó mediante Supervised Fine-Tuning (SFT) usando la librería TRL de HuggingFace, con PEFT 0.20.0 y Transformers 5.5.0. El repositorio tiene un tamaño de 0.7 GB y contiene los pesos del adaptador en formato safetensors.
+El modelo `akshatpopat/SwastikAI` es un adaptador LoRA (PEFT) entrenado sobre `unsloth/qwen2.5-3b-instruct-unsloth-bnb-4bit`, una versión cuantizada a 4 bits del modelo Qwen2.5-3B-Instruct de Alibaba. El fine-tune se realizó mediante Supervised Fine-Tuning (SFT) usando la librería TRL de Hugging Face, con PEFT 0.20.0 y Transformers 5.5.0. El repositorio tiene un tamaño de 0.7 GB y contiene los pesos del adaptador en formato safetensors.
 
 Aunque la model card no detalla el dataset de entrenamiento ni el propósito específico, la web del proyecto `swastikai.in` indica que el modelo está orientado al ámbito legal: permite subir sentencias y escritos judiciales y obtener resúmenes estructurados con hechos, cuestiones, holding, razonamiento y órdenes. Se trata de un ejemplo de adaptación de un modelo pequeño mediante LoRA para un dominio especializado, lo que resulta relevante para desarrolladores que buscan soluciones de bajo coste en legal tech, siempre que se tenga en cuenta que no hay benchmarks públicos que respalden su rendimiento.
 
@@ -68,5 +68,5 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/akshatpopat/SwastikAI
+- Hugging Face: https://huggingface.co/akshatpopat/SwastikAI
 - Web del proyecto: https://swastikai.in/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-movie-recommender-model es un modelo publicado en HuggingFace por el usuario shivam878 bajo licencia MIT. Se trata de un repositorio de 0,2 GB sin model card descriptiva (el README se limita a declarar la licencia), sin etiqueta de pipeline asignada, sin idiomas declarados y sin resultados de benchmarks. En el momento de la consulta acumula 0 descargas y 0 valoraciones, y las fechas de creacion y actualizacion registradas son el 17 de septiembre de 2026.
+movie-recommender-model es un modelo publicado en Hugging Face por el usuario shivam878 bajo licencia MIT. Se trata de un repositorio de 0,2 GB sin model card descriptiva (el README se limita a declarar la licencia), sin etiqueta de pipeline asignada, sin idiomas declarados y sin resultados de benchmarks. En el momento de la consulta acumula 0 descargas y 0 valoraciones, y las fechas de creacion y actualizacion registradas son el 17 de septiembre de 2026.
 
 Por el nombre del repositorio cabe deducir que su proposito es la recomendacion de peliculas, presumiblemente mediante representaciones vectoriales o un modelo de ranking sobre historiales de interaccion, pero no hay documentacion publica que confirme la arquitectura, el conjunto de datos de entrenamiento ni el formato de pesos. Toda afirmacion funcional mas alla de esa inferencia nominal carece de respaldo en la informacion disponible.
 
@@ -84,7 +84,7 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/shivam878/movie-recommender-model
+- Hugging Face: https://huggingface.co/shivam878/movie-recommender-model
 - Paper: no disponible
 - Blog o documentacion adicional: no disponible
 - Repositorio de codigo: no disponible

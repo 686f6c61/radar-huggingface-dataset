@@ -70,9 +70,9 @@ El Gündem Score se define como 30×topic F1 + 20×type accuracy + 30×(1−MAE 
 
 | Modelo | Tipo | Tarea | Parametros | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| limite-1b-violetto-Gundem-LoRA | Adaptador LoRA | Clasificacion de titulares turcos con salida estructurada | Base de aprox. 1.000M + adaptador | Apache 2.0 | Publico en HuggingFace |
-| paradigma-inc/limite-1b-violetto (base) | Modelo de lenguaje completo | Uso general (con prompt matematico fijo segun la model card) | Aprox. 1.000M | Segun ficheros upstream | Publico en HuggingFace |
-| BERTurk (turkish-base y variantes) | Encoder tipo BERT | Clasificacion y NER en turco | 110M-340M | MIT | Publico en HuggingFace, amplio soporte en Transformers |
+| limite-1b-violetto-Gundem-LoRA | Adaptador LoRA | Clasificacion de titulares turcos con salida estructurada | Base de aprox. 1.000M + adaptador | Apache 2.0 | Publico en Hugging Face |
+| paradigma-inc/limite-1b-violetto (base) | Modelo de lenguaje completo | Uso general (con prompt matematico fijo segun la model card) | Aprox. 1.000M | Segun ficheros upstream | Publico en Hugging Face |
+| BERTurk (turkish-base y variantes) | Encoder tipo BERT | Clasificacion y NER en turco | 110M-340M | MIT | Publico en Hugging Face, amplio soporte en Transformers |
 
 Frente a alternativas encoder como BERTurk, este adaptador ofrece salida estructurada multi-campo generada por un modelo causal (temas, tipo y puntuaciones), a costa de mayor tamano, latencia y riesgo de salida no restringida por gramatica. No hay datos de benchmarks comparativos publicados entre ellos.
 

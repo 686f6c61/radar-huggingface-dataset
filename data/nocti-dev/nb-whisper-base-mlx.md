@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparativo con alternativas en la informa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nocti-Dev/nb-whisper-base-mlx
+- Modelo en Hugging Face: https://huggingface.co/Nocti-Dev/nb-whisper-base-mlx
 - Modelo base: https://huggingface.co/NbAiLab/nb-whisper-base
 - Commit del modelo base: https://huggingface.co/NbAiLab/nb-whisper-base/tree/2ab372b6baa181a22f54f18030cae3703402c59e
 - Referencia `mlx-audio-swift` (usada en el smoke test): `mlx-audio-swift@dbe5eaa` (no se proporciona URL)

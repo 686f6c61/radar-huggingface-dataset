@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mkqueue/rap_rx_analysis es un repositorio alojado en HuggingFace bajo la cuenta del usuario mkqueue. En el momento de la consulta, la ficha publica unicamente la etiqueta `region:us`, un contador de 0 descargas y 1 like, y no declara pipeline, licencia, idiomas ni ningun otro metadato tecnico. La fecha de creacion y la de ultima actualizacion son practicamente identicas (30 de septiembre de 2026, con un segundo de diferencia), lo que indica un unico acto de subida sin iteraciones posteriores.
+mkqueue/rap_rx_analysis es un repositorio alojado en Hugging Face bajo la cuenta del usuario mkqueue. En el momento de la consulta, la ficha publica unicamente la etiqueta `region:us`, un contador de 0 descargas y 1 like, y no declara pipeline, licencia, idiomas ni ningun otro metadato tecnico. La fecha de creacion y la de ultima actualizacion son practicamente identicas (30 de septiembre de 2026, con un segundo de diferencia), lo que indica un unico acto de subida sin iteraciones posteriores.
 
 El nombre del repositorio sugiere un artefacto orientado al analisis, pero no existe documentacion, model card, configuracion ni ejemplo de uso que permita confirmar si contiene pesos de un modelo de lenguaje, un modelo especializado, un adaptador, un tokenizador o contenido de otro tipo. Tampoco hay informacion sobre arquitectura, numero de parametros, longitud de contexto o datos de entrenamiento.
 
@@ -25,7 +25,7 @@ Por todo ello, esta ficha no puede certificar ninguna caracteristica funcional d
 
 No disponible. La informacion proporcionada no incluye ningun detalle sobre arquitectura (transformer, MoE, SSM, hibrida u otra), volumen de tokens de entrenamiento, composicion del dataset, ni sobre tecnicas de alineacion como RLHF, DPO o decodificacion especulativa. El repositorio no publica model card ni ficheros de configuracion visibles en los metadatos consultados.
 
-El unico dato estructural disponible es la etiqueta `region:us`, que en HuggingFace indica la region de almacenamiento del repositorio y no aporta informacion sobre el contenido tecnico del artefacto.
+El unico dato estructural disponible es la etiqueta `region:us`, que en Hugging Face indica la region de almacenamiento del repositorio y no aporta informacion sobre el contenido tecnico del artefacto.
 
 ## Capacidades
 
@@ -33,7 +33,7 @@ No disponible. No se puede confirmar ninguna capacidad concreta (generacion de t
 
 Informacion ausente que impediria determinar capacidades incluso tras una inspeccion superficial:
 
-- Falta el `pipeline` declarado en la ficha de HuggingFace.
+- Falta el `pipeline` declarado en la ficha de Hugging Face.
 - Falta la lista de idiomas soportados.
 - Falta cualquier ejemplo de inferencia o demo.
 - Falta la model card con descripcion de tareas.
@@ -76,7 +76,7 @@ No disponible. No se puede identificar una categoria de comparacion (mismo taman
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mkqueue/rap_rx_analysis
+- Repositorio en Hugging Face: https://huggingface.co/mkqueue/rap_rx_analysis
 - Artificial Analysis, analisis de modelos y proveedores: https://artificialanalysis.ai/
 - Artificial Analysis, leaderboard de modelos: https://artificialanalysis.ai/leaderboards/models
 - AI Models Benchmark, leaderboard de 398 modelos: https://aimodelsbenchmark.com/

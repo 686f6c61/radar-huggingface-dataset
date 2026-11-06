@@ -2,7 +2,7 @@
 
 ## Resumen
 
-kushasareen/qwen35-9b-ft-a400 es un ajuste fino (fine-tune) del modelo Qwen/Qwen3.5-9B, desarrollado por el usuario kushasareen y publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un checkpoint intermedio resultante de un entrenamiento con refuerzo (reinforcement learning) mediante el algoritmo CISPO (un método de optimización de política con importancia muestreada) sobre el conjunto de datos openmath_hard, con un contexto de entrenamiento de 16k tokens. El modelo conserva la arquitectura multimodal image-text-to-text del modelo base, con 9.409.813.744 parámetros totales.
+kushasareen/qwen35-9b-ft-a400 es un ajuste fino (fine-tune) del modelo Qwen/Qwen3.5-9B, desarrollado por el usuario kushasareen y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un checkpoint intermedio resultante de un entrenamiento con refuerzo (reinforcement learning) mediante el algoritmo CISPO (un método de optimización de política con importancia muestreada) sobre el conjunto de datos openmath_hard, con un contexto de entrenamiento de 16k tokens. El modelo conserva la arquitectura multimodal image-text-to-text del modelo base, con 9.409.813.744 parámetros totales.
 
 El modelo se presenta como el paso 400 de un experimento denominado `up_om_cispo_q359b_async_4gpu_sc`, ejecutado con un solo agente y centrado de puntuaciones (score centering). Su relevancia es limitada: se trata de un artefacto de investigación con solo 12 descargas y 0 likes en el momento de la consulta, sin model card detallada ni resultados de evaluación publicados. Resulta útil principalmente como referencia para quienes investigan en RL aplicado a modelos Qwen3.5 o para reproducir el pipeline de entrenamiento, no como modelo listo para producción.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| kushasareen/qwen35-9b-ft-a400 | 9,41 B | no disponible (entrenado a 16k) | Apache 2.0 | HuggingFace, 12 descargas | Fine-tune RL (CISPO, 400 pasos) sobre openmath_hard |
-| Qwen/Qwen3.5-9B | 9 B (aprox.) | no disponible | no disponible | HuggingFace (modelo base) | Modelo base multimodal image-text-to-text |
-| Otros fine-tunes de Qwen3.5-9B | variable | variable | variable | HuggingFace | No se dispone de datos específicos de alternativas en la información proporcionada |
+| kushasareen/qwen35-9b-ft-a400 | 9,41 B | no disponible (entrenado a 16k) | Apache 2.0 | Hugging Face, 12 descargas | Fine-tune RL (CISPO, 400 pasos) sobre openmath_hard |
+| Qwen/Qwen3.5-9B | 9 B (aprox.) | no disponible | no disponible | Hugging Face (modelo base) | Modelo base multimodal image-text-to-text |
+| Otros fine-tunes de Qwen3.5-9B | variable | variable | variable | Hugging Face | No se dispone de datos específicos de alternativas en la información proporcionada |
 
 No se dispone de información suficiente para comparar rendimiento (benchmarks) con alternativas de la misma categoría.
 
@@ -80,6 +80,6 @@ No se dispone de información suficiente para comparar rendimiento (benchmarks) 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kushasareen/qwen35-9b-ft-a400
+- Hugging Face: https://huggingface.co/kushasareen/qwen35-9b-ft-a400
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

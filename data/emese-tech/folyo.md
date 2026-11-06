@@ -84,7 +84,7 @@ Patak y Csermely pertenecen a la misma familia Emese y comparten el corpus de SF
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/emese-tech/folyo
+- Hugging Face del modelo: https://huggingface.co/emese-tech/folyo
 - Organización emese-tech: https://huggingface.co/emese-tech
 - Modelo base EuroLLM-22B: https://huggingface.co/utter-project/EuroLLM-22B
 - Repo MLX q8 `folyo-mlx`: https://huggingface.co/emese-tech/folyo-mlx

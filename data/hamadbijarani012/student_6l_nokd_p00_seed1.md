@@ -22,8 +22,8 @@ Su relevancia practica es limitada como modelo de proposito general y muy concre
 | Pipeline declarado | no disponible |
 | Tamano del repositorio | 0,3 GB |
 | Autor | hamadbijarani012 |
-| Fecha de creacion | 2026-09-15 (segun metadatos de HuggingFace) |
-| Ultima actualizacion | 2026-09-15 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-15 (segun metadatos de Hugging Face) |
+| Ultima actualizacion | 2026-09-15 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -65,7 +65,7 @@ La model card menciona el experimento SST-2, pero no incluye ninguna metrica (ac
 - VRAM estimada para inferencia: aproximadamente 0,27 GB en FP32 y 0,13 GB en FP16 para los pesos, mas el estado de activaciones (despreciable con lotes pequenos y secuencias de 512 tokens).
 - GPU recomendadas: no requiere GPU. Cualquier GPU consumer reciente (GTX 1050, RTX 3060, RTX 4090) lo ejecuta con holgura; tambien es viable en CPU x86 moderna e incluso en dispositivos ARM.
 - Cabe en GPU consumer: si, en practicamente todas las GPU dedicadas e integradas con mas de 1 GB de memoria disponible, y en CPU sin aceleracion.
-- Opciones de despliegue: HuggingFace Transformers (`AutoModelForSequenceClassification`), exportacion a ONNX Runtime o TorchScript, y servidores de inferencia compatibles con modelos de encodeo (por ejemplo, Text Embeddings Inference o un endpoint FastAPI propio). No se publican pesos GGUF ni cuantizados para llama.cpp u Ollama.
+- Opciones de despliegue: Hugging Face Transformers (`AutoModelForSequenceClassification`), exportacion a ONNX Runtime o TorchScript, y servidores de inferencia compatibles con modelos de encodeo (por ejemplo, Text Embeddings Inference o un endpoint FastAPI propio). No se publican pesos GGUF ni cuantizados para llama.cpp u Ollama.
 - Latencia y throughput: no se publican mediciones. Por tamano (66,9 millones de parametros) es esperable un throughput de miles de secuencias por segundo en una GPU moderna y de decenas a cientos por segundo en CPU, pero son estimaciones derivadas del recuento de parametros y no datos verificados del autor.
 
 ## Comparativa con modelos similares
@@ -74,7 +74,7 @@ Las cifras de los modelos alternativos proceden de su documentacion publica; no 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| student_6l_nokd_p00_seed1 | 66.955.010 | no disponible (familia DistilBERT: 512 tokens) | no disponible | Repo HuggingFace, 0 descargas |
+| student_6l_nokd_p00_seed1 | 66.955.010 | no disponible (familia DistilBERT: 512 tokens) | no disponible | Repo Hugging Face, 0 descargas |
 | distilbert-base-uncased (referencia de la familia) | 66.955.010 | 512 tokens | Apache 2.0 | Ampliamente distribuido |
 | bert-base-uncased | 109.482.240 | 512 tokens | Apache 2.0 | Ampliamente distribuido |
 | TinyBERT (4 capas) | ~14.500.000 | 512 tokens | Apache 2.0 | Distribucion publica |
@@ -94,5 +94,5 @@ No se dispone de datos para comparar accuracy en SST-2 ni eficiencia energetica 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hamadbijarani012/student_6l_nokd_p00_seed1
+- Modelo en Hugging Face: https://huggingface.co/hamadbijarani012/student_6l_nokd_p00_seed1
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante sobre este modelo, su estudio de origen, su paper ni su repositorio de codigo. Las unicas coincidencias devueltas corresponden a paginas corporativas sin relacion con el modelo (Cegelec Pays de Savoie).

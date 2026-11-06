@@ -97,7 +97,7 @@ No se dispone de benchmarks ni de especificaciones comparables para completar un
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/suvadityamuk/Step1X-3D-Texture-diffusers-3d
+- Modelo en Hugging Face: https://huggingface.co/suvadityamuk/Step1X-3D-Texture-diffusers-3d
 - Modelo base (StepFun): https://huggingface.co/stepfun-ai/Step1X-3D
 - Repositorio del paquete diffusers-3d: https://github.com/suvadityamuk/diffusers-3d
 - Pipeline de geometria complementario: https://huggingface.co/suvadityamuk/Step1X-3D-Geometry-1300m-diffusers-3d

@@ -87,7 +87,7 @@ La unica comparacion documentada con certeza es frente a Qwen3-VL-2B-Instruct, d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/haoquan03/PixelBench-Qwen3-VL-2B-PRT
+- Modelo en Hugging Face: https://huggingface.co/haoquan03/PixelBench-Qwen3-VL-2B-PRT
 - Pagina del proyecto PixelBench: https://haoquanzhang.github.io/pixelbench/
 - Codigo y evaluacion: https://github.com/HaoquanZhang/PixelBench
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct

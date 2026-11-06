@@ -99,7 +99,7 @@ No se han proporcionado datos de modelos comparables en la información disponib
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ThakiCloud/Thaki-Fraud-EFin-GBDT-v0.1
+- Modelo en Hugging Face: https://huggingface.co/ThakiCloud/Thaki-Fraud-EFin-GBDT-v0.1
 - Model card en coreano: https://huggingface.co/ThakiCloud/Thaki-Fraud-EFin-GBDT-v0.1/blob/main/MODEL_CARD.ko.md
 - Fuente de datos AI-Hub (dataset 71925): https://www.aihub.or.kr
 - LightGBM: https://github.com/microsoft/LightGBM

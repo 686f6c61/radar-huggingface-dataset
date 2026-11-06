@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| g-assismoraes/tofu-llama2-7b-forget10-ihl_reset_both-epoch16 | ~6,74B | no disponible | llama2 | HuggingFace | Checkpoint experimental de *unlearning*, epoca 16/20 |
-| locuslab/tofu_ft_llama2-7b | ~6,74B | no disponible | llama2 | HuggingFace | Modelo base de fine-tuning sobre TOFU, sin *unlearning* |
-| NousResearch/Llama-2-7b-chat-hf | ~6,74B | 4096 tokens | llama2 | HuggingFace | Llama 2 7B chat, origen de los embeddings y LM head reinicializados |
-| meta-llama/Llama-2-7b-hf | ~6,74B | 4096 tokens | llama2 | HuggingFace | Modelo original de Meta, base de toda la cadena |
+| g-assismoraes/tofu-llama2-7b-forget10-ihl_reset_both-epoch16 | ~6,74B | no disponible | llama2 | Hugging Face | Checkpoint experimental de *unlearning*, epoca 16/20 |
+| locuslab/tofu_ft_llama2-7b | ~6,74B | no disponible | llama2 | Hugging Face | Modelo base de fine-tuning sobre TOFU, sin *unlearning* |
+| NousResearch/Llama-2-7b-chat-hf | ~6,74B | 4096 tokens | llama2 | Hugging Face | Llama 2 7B chat, origen de los embeddings y LM head reinicializados |
+| meta-llama/Llama-2-7b-hf | ~6,74B | 4096 tokens | llama2 | Hugging Face | Modelo original de Meta, base de toda la cadena |
 
 ## Limitaciones y advertencias
 
@@ -89,7 +89,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/g-assismoraes/tofu-llama2-7b-forget10-ihl_reset_both-epoch16
+- Hugging Face: https://huggingface.co/g-assismoraes/tofu-llama2-7b-forget10-ihl_reset_both-epoch16
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_llama2-7b
 - Origen de embeddings y LM head: https://huggingface.co/NousResearch/Llama-2-7b-chat-hf
 - Modelo original: https://huggingface.co/meta-llama/Llama-2-7b-hf

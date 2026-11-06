@@ -73,8 +73,8 @@ No se dispone de datos comparativos con otros modelos de la misma categoría (po
 
 ## Enlaces
 
-- [Repositorio HuggingFace de la cuantización](https://huggingface.co/mradermacher/Ornith-1.5-9B-Abliterated-i1-GGUF)
-- [Modelo base en HuggingFace](https://huggingface.co/PocketAiHub/Ornith-1.5-9B-Abliterated)
+- [Repositorio Hugging Face de la cuantización](https://huggingface.co/mradermacher/Ornith-1.5-9B-Abliterated-i1-GGUF)
+- [Modelo base en Hugging Face](https://huggingface.co/PocketAiHub/Ornith-1.5-9B-Abliterated)
 - [Página oficial de Ornith 1.5](https://ornith.ai/ornith_1_5.html)
 - [Guía de ejecución local (Atomic Chat)](https://atomic.chat/blog/guides/how-to-run-ornith-1-5-locally)
 - [Resumen técnico en AI/TLDR](https://ai-tldr.dev/models/ornith-1-5-9b/)

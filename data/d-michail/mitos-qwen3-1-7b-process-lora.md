@@ -76,9 +76,9 @@ La informacion proporcionada no incluye datos de rendimiento de otros modelos de
 
 | Modelo | Parametros | Contexto | Rendimiento en el benchmark | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mitos-Qwen3-1.7B-Process-LoRA (este modelo) | 1,7 B (base) + LoRA r16 | No disponible (entrenamiento a 4.096 tokens) | Key-fact recall 0.565 con RAG a nivel de campo | CC BY-SA 4.0 | HuggingFace |
-| Mitos-Qwen3-1.7B-Process (modelo fusionado) | 1,7 B | No disponible | No disponible en esta ficha | CC BY-SA 4.0 | HuggingFace |
-| Qwen/Qwen3-1.7B (modelo base sin ajuste) | 1,7 B | No disponible en la informacion proporcionada | No disponible (sirve como referencia "base" en las metricas de key-fact recall) | Apache-2.0 | HuggingFace |
+| Mitos-Qwen3-1.7B-Process-LoRA (este modelo) | 1,7 B (base) + LoRA r16 | No disponible (entrenamiento a 4.096 tokens) | Key-fact recall 0.565 con RAG a nivel de campo | CC BY-SA 4.0 | Hugging Face |
+| Mitos-Qwen3-1.7B-Process (modelo fusionado) | 1,7 B | No disponible | No disponible en esta ficha | CC BY-SA 4.0 | Hugging Face |
+| Qwen/Qwen3-1.7B (modelo base sin ajuste) | 1,7 B | No disponible en la informacion proporcionada | No disponible (sirve como referencia "base" en las metricas de key-fact recall) | Apache-2.0 | Hugging Face |
 
 No se dispone de datos comparativos con otros modelos ajustados al dominio administrativo griego (por ejemplo, alternativas basadas en Meltemi o EuroLLM) en la informacion proporcionada.
 
@@ -99,7 +99,7 @@ No se dispone de datos comparativos con otros modelos ajustados al dominio admin
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/d-michail/Mitos-Qwen3-1.7B-Process-LoRA
+- Modelo en Hugging Face: https://huggingface.co/d-michail/Mitos-Qwen3-1.7B-Process-LoRA
 - Modelo fusionado: https://huggingface.co/d-michail/Mitos-Qwen3-1.7B-Process
 - Conjunto de datos de entrenamiento: https://huggingface.co/datasets/d-michail/mitos-qa
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B

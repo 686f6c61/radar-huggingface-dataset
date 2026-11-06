@@ -106,6 +106,6 @@ No se conocen en la informacion disponible modelos comparables con datos verific
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/code-and-canvas/Spark-X2.6-4B-MLX-oQ6e-fp16
+- Repositorio Hugging Face: https://huggingface.co/code-and-canvas/Spark-X2.6-4B-MLX-oQ6e-fp16
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.6-4B
 - Runtime oMLX: https://github.com/omlx

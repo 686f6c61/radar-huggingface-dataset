@@ -6,7 +6,7 @@ Veritas++ es un modelo multimodal de lenguaje (MLLM) interpretable desarrollado 
 
 Es una extension del trabajo previo Veritas, que se centraba en la deteccion de imagenes faciales generadas por IA, ampliando el alcance a la deteccion general de imagenes sinteticas. La innovacion principal es el algoritmo Perception Pretext RL, que emplea tareas de percepcion simples como mecanismo de preentrenamiento por refuerzo para elevar el rendimiento de deteccion, junto con una tecnica de destilacion on-policy sensible al valor (value-aware on-policy distillation) para el razonamiento potenciado por percepcion.
 
-El modelo se publica bajo licencia Apache-2.0, lo que permite uso comercial sin restricciones significativas. El repositorio de codigo y los pesos del modelo estan disponibles en HuggingFace y GitHub. La relevancia actual es alta dado el crecimiento de contenido sintetico y la necesidad de herramientas de autenticidad robustas frente a distribuciones fuera del conjunto de entrenamiento (OOD).
+El modelo se publica bajo licencia Apache-2.0, lo que permite uso comercial sin restricciones significativas. El repositorio de codigo y los pesos del modelo estan disponibles en Hugging Face y GitHub. La relevancia actual es alta dado el crecimiento de contenido sintetico y la necesidad de herramientas de autenticidad robustas frente a distribuciones fuera del conjunto de entrenamiento (OOD).
 
 ## Especificaciones tecnicas
 
@@ -69,11 +69,11 @@ No disponible. No se dispone de datos sobre modelos comparables en la misma cate
 - Los datos de entrenamiento y el proceso de alineacion no estan documentados, por lo que no se puede evaluar la presencia de sesgos en la deteccion (por ejemplo, menor precision en ciertos tipos de imagenes o grupos demograficos).
 - El riesgo de falsos positivos o negativos en deteccion de AIGI no esta cuantificado; en aplicaciones de produccion se recomienda una evaluacion propia con el dominio objetivo.
 - La licencia Apache-2.0 permite uso comercial, pero la falta de documentacion sobre el dataset de entrenamiento puede suponer un riesgo legal si los datos incluyen contenido con derechos de autor.
-- El modelo es reciente (publicado en julio de 2026) y con cero descargas en HuggingFace, lo que indica una comunidad de usuarios muy reducida y poca madurez en entornos de produccion.
+- El modelo es reciente (publicado en julio de 2026) y con cero descargas en Hugging Face, lo que indica una comunidad de usuarios muy reducida y poca madurez en entornos de produccion.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EricTan7/VeritasPP
+- Modelo en Hugging Face: https://huggingface.co/EricTan7/VeritasPP
 - Repositorio de codigo: https://github.com/EricTan7/VeritasPP
 - Repositorio de VideoVeritas (trabajo relacionado): https://github.com/EricTan7/VideoVeritas
 - Articulo en arXiv (HTML): https://arxiv.org/html/2607.27113

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen2.5-0.5B-Instruct-Map-Join es un ajuste fino (fine-tuning) del modelo Qwen2.5-0.5B-Instruct, publicado por el usuario CleytonNobre en HuggingFace. Se trata de un modelo de lenguaje de tipo transformer denso con 494.032.768 parámetros (aproximadamente 0,5 mil millones), derivado de la familia Qwen2.5 de Alibaba. El nombre "Map-Join" sugiere que el ajuste está orientado a tareas de mapeo y combinación de datos, aunque no se dispone de documentación que lo confirme.
+Qwen2.5-0.5B-Instruct-Map-Join es un ajuste fino (fine-tuning) del modelo Qwen2.5-0.5B-Instruct, publicado por el usuario CleytonNobre en Hugging Face. Se trata de un modelo de lenguaje de tipo transformer denso con 494.032.768 parámetros (aproximadamente 0,5 mil millones), derivado de la familia Qwen2.5 de Alibaba. El nombre "Map-Join" sugiere que el ajuste está orientado a tareas de mapeo y combinación de datos, aunque no se dispone de documentación que lo confirme.
 
 El modelo hereda la arquitectura Qwen2 de su base, con pesos en formato safetensors y un tamaño de repositorio de 3,0 GB. Al estar basado en la variante Instruct de Qwen2.5, está diseñado para seguir instrucciones y mantener conversaciones multi-turno, si bien el ajuste específico puede haber alterado sus capacidades originales.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| CleytonNobre/Qwen2.5-0.5B-Instruct-Map-Join | 494M | no disponible | no disponible | HuggingFace (281 descargas) |
-| Qwen/Qwen2.5-0.5B-Instruct | 494M | 32.768 tokens | Apache 2.0 | HuggingFace, ampliamente documentado |
-| Qwen/Qwen2.5-1.5B-Instruct | 1.540M | 32.768 tokens | Apache 2.0 | HuggingFace |
-| meta-llama/Llama-3.2-1B-Instruct | 1.240M | 128.000 tokens | Llama 3.2 Community License | HuggingFace |
+| CleytonNobre/Qwen2.5-0.5B-Instruct-Map-Join | 494M | no disponible | no disponible | Hugging Face (281 descargas) |
+| Qwen/Qwen2.5-0.5B-Instruct | 494M | 32.768 tokens | Apache 2.0 | Hugging Face, ampliamente documentado |
+| Qwen/Qwen2.5-1.5B-Instruct | 1.540M | 32.768 tokens | Apache 2.0 | Hugging Face |
+| meta-llama/Llama-3.2-1B-Instruct | 1.240M | 128.000 tokens | Llama 3.2 Community License | Hugging Face |
 
 El modelo comparado más directo es su base Qwen2.5-0.5B-Instruct, que cuenta con licencia Apache 2.0, documentación completa y benchmarks publicados. El ajuste de CleytonNobre carece de esa información, por lo que su uso en producción conlleva incertidumbre adicional frente a la base original.
 
@@ -86,7 +86,7 @@ El modelo comparado más directo es su base Qwen2.5-0.5B-Instruct, que cuenta co
 
 ## Enlaces
 
-- [HuggingFace: CleytonNobre/Qwen2.5-0.5B-Instruct-Map-Join](https://huggingface.co/CleytonNobre/Qwen2.5-0.5B-Instruct-Map-Join)
+- [Hugging Face: CleytonNobre/Qwen2.5-0.5B-Instruct-Map-Join](https://huggingface.co/CleytonNobre/Qwen2.5-0.5B-Instruct-Map-Join)
 - [Modelo base: Qwen/Qwen2.5-0.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct)
 - [Repositorio Qwen2.5 en GitHub](https://github.com/QwenLM/Qwen2.5)
 - [Paper técnico de Qwen2.5 (arXiv)](https://arxiv.org/abs/2412.15115)

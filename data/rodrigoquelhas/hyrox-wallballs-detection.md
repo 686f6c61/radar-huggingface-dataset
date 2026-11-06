@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `RodrigoQuelhas/hyrox-wallballs-detection` es un modelo alojado en HuggingFace por el usuario RodrigoQuelhas. La informacion disponible se limita a los metadatos del repositorio: licencia MIT, etiqueta de region `us`, cero descargas, cero "likes", ausencia de pipeline declarado y ausencia de idiomas declarados. La model card publicada no contiene mas que la declaracion de licencia (`license: mit`), sin descripcion, sin detalles de arquitectura, sin datos de entrenamiento y sin instrucciones de uso.
+El repositorio `RodrigoQuelhas/hyrox-wallballs-detection` es un modelo alojado en Hugging Face por el usuario RodrigoQuelhas. La informacion disponible se limita a los metadatos del repositorio: licencia MIT, etiqueta de region `us`, cero descargas, cero "likes", ausencia de pipeline declarado y ausencia de idiomas declarados. La model card publicada no contiene mas que la declaracion de licencia (`license: mit`), sin descripcion, sin detalles de arquitectura, sin datos de entrenamiento y sin instrucciones de uso.
 
 Por el identificador del repositorio puede inferirse, como hipotesis no confirmada, que se trata de un modelo de vision por computador orientado a la deteccion de "wall balls" en el contexto de competiciones HYROX (una modalidad de fitness racing que combina carrera y ejercicios funcionales). Sin embargo, esta interpretacion procede unicamente del nombre del repositorio: no hay ninguna evidencia documental en la informacion proporcionada que confirme la tarea, la arquitectura ni el formato de pesos.
 
@@ -77,7 +77,7 @@ No disponible. No es posible establecer una comparativa rigurosa porque se desco
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hyrox-wallballs-detection | no disponible | no disponible | no disponible | MIT | repositorio HuggingFace sin documentacion |
+| hyrox-wallballs-detection | no disponible | no disponible | no disponible | MIT | repositorio Hugging Face sin documentacion |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -94,6 +94,6 @@ No disponible. No es posible establecer una comparativa rigurosa porque se desco
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/RodrigoQuelhas/hyrox-wallballs-detection
+- Repositorio en Hugging Face: https://huggingface.co/RodrigoQuelhas/hyrox-wallballs-detection
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la busqueda web realizada.
 - Los resultados de busqueda disponibles no guardan relacion con el modelo: corresponden a entradas lexicograficas y enciclopedicas sobre el termino persa "یخ" (hielo), sin conexion con HYROX, deteccion de objetos ni aprendizaje automatico.

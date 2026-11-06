@@ -87,9 +87,9 @@ Con la informacion proporcionada solo es posible comparar dentro de la propia ca
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |:--|:--|:--|:--|:--|:--|
-| Ornith-1.5-35B-A3B-abliterated-ROCmFPX (este) | 35,5B totales / ~3B activos | hasta 256K | GGUF ROCmFPX (7 variantes + mmproj) | Apache-2.0 | HuggingFace, requiere llama.cpp-rocm |
-| huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated (origen) | 35,5B totales / ~3B activos | no disponible | BF16 (safetensors) | MIT | HuggingFace |
-| ornith-ai/Ornith-1.5-35B-A3B (base original) | 35,5B totales / ~3B activos | no disponible | no disponible | MIT | HuggingFace |
+| Ornith-1.5-35B-A3B-abliterated-ROCmFPX (este) | 35,5B totales / ~3B activos | hasta 256K | GGUF ROCmFPX (7 variantes + mmproj) | Apache-2.0 | Hugging Face, requiere llama.cpp-rocm |
+| huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated (origen) | 35,5B totales / ~3B activos | no disponible | BF16 (safetensors) | MIT | Hugging Face |
+| ornith-ai/Ornith-1.5-35B-A3B (base original) | 35,5B totales / ~3B activos | no disponible | no disponible | MIT | Hugging Face |
 
 Alternativas de terceros de la misma categoria (MoE de ~30-35B con ~3B activos): no disponible en la informacion proporcionada.
 
@@ -109,9 +109,9 @@ Alternativas de terceros de la misma categoria (MoE de ~30-35B con ~3B activos):
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ArtomYuan/Ornith-1.5-35B-A3B-abliterated-ROCmFPX
+- Repositorio Hugging Face: https://huggingface.co/ArtomYuan/Ornith-1.5-35B-A3B-abliterated-ROCmFPX
 - Modelo base abliterated: https://huggingface.co/huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated
 - Modelo original: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Fork de llama.cpp con soporte ROCmFP4/ROCmFPx: https://github.com/ArtomYuan/llama.cpp-rocm
-- Checksums SHA-256 de los ficheros: `sha256.txt` en el repositorio de HuggingFace
+- Checksums SHA-256 de los ficheros: `sha256.txt` en el repositorio de Hugging Face
 - Resultados de busqueda web: no se han encontrado resultados relevantes sobre este modelo; las busquedas devolvieron contenido no relacionado con el artefacto.

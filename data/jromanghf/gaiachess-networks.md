@@ -73,11 +73,11 @@ No disponible. La informacion proporcionada no incluye comparaciones con otras r
 - Politica de solo adicion: un fichero publicado nunca se modifica, lo que impide corregir errores en un peso ya distribuido; cualquier correccion requiere un fichero nuevo y una nueva version del motor.
 - Fuerza de juego no documentada: no se aportan datos de Elo ni resultados en suites de posiciones, por lo que no es posible evaluar la calidad relativa de las redes a partir de la informacion disponible.
 - Licencia GPL-3.0-or-later: el uso, la modificacion y la redistribucion estan sujetos a los terminos de la GPL, incluida la obligacion de liberar el codigo derivado bajo la misma licencia; conviene revisar la compatibilidad antes de integrar los pesos en productos propietarios.
-- Idiomas: no aplica, pero implica que el repositorio no ofrece ninguna funcionalidad de procesamiento linguistico pese a estar alojado en HuggingFace.
+- Idiomas: no aplica, pero implica que el repositorio no ofrece ninguna funcionalidad de procesamiento linguistico pese a estar alojado en Hugging Face.
 - Ausencia de pipeline declarado y de descargas o likes en el momento de la consulta: el proyecto tiene una adopcion muy limitada, lo que reduce la probabilidad de soporte comunitario o de validacion independiente de los pesos.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jromanghf/gaiachess-networks
+- Repositorio en Hugging Face: https://huggingface.co/jromanghf/gaiachess-networks
 - Repositorio del motor GaiaChess en GitHub: https://github.com/jromang/gaiachess
 - Entrenador Bullet: https://github.com/jw1912/bullet

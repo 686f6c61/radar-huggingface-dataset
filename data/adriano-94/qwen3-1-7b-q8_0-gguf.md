@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo en la informacion proporcionad
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AdrianO-94/Qwen3-1.7B-Q8_0-GGUF
+- Repositorio Hugging Face: https://huggingface.co/AdrianO-94/Qwen3-1.7B-Q8_0-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3-1.7B/blob/main/LICENSE
 - Espacio GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo

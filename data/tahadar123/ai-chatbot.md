@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Tahadar123/AI-Chatbot` es un modelo de lenguaje basado en la arquitectura T5, publicado en HuggingFace por el usuario Tahadar123. Tiene aproximadamente 247,58 millones de parámetros, lo que lo sitúa en un rango similar al de un T5-base (220M) o ligeramente superior. El repositorio contiene únicamente pesos en formato safetensors, con un tamaño de 1,0 GB. No se ha especificado pipeline, licencia ni idiomas soportados.
+El modelo `Tahadar123/AI-Chatbot` es un modelo de lenguaje basado en la arquitectura T5, publicado en Hugging Face por el usuario Tahadar123. Tiene aproximadamente 247,58 millones de parámetros, lo que lo sitúa en un rango similar al de un T5-base (220M) o ligeramente superior. El repositorio contiene únicamente pesos en formato safetensors, con un tamaño de 1,0 GB. No se ha especificado pipeline, licencia ni idiomas soportados.
 
 La relevancia de este modelo es limitada en el ecosistema actual: no cuenta con descargas registradas, no hay documentación técnica asociada, ni papers, ni repositorios de código vinculados. La fecha de creación (2 de septiembre de 2026) es posterior a la actual, lo que sugiere un posible error en el registro o una publicación planificada. Por tanto, cualquier evaluación de capacidades debe considerarse provisional hasta que se publique información oficial.
 
@@ -23,7 +23,7 @@ La relevancia de este modelo es limitada en el ecosistema actual: no cuenta con 
 
 La arquitectura T5 (Text-to-Text Transfer Transformer) es un modelo transformer encoder-decoder desarrollado originalmente por Google. Convierte todas las tareas de procesamiento de lenguaje natural en un formato texto a texto, lo que permite unificar tareas como traducción, resumen, clasificación o generación. El modelo aquí presentado tiene 247,58 millones de parámetros, un tamaño intermedio entre T5-base (220M) y T5-large (770M), aunque no se ha confirmado que siga exactamente la configuración original de T5.
 
-No se dispone de información sobre el proceso de entrenamiento: ni el número de tokens, ni la composición del dataset, ni si se aplicaron técnicas de RLHF o DPO. Tampoco se indica si se realizó fine-tuning para una tarea específica. La ausencia de pipeline en la ficha de HuggingFace sugiere que no está configurado para una tarea concreta de forma predeterminada.
+No se dispone de información sobre el proceso de entrenamiento: ni el número de tokens, ni la composición del dataset, ni si se aplicaron técnicas de RLHF o DPO. Tampoco se indica si se realizó fine-tuning para una tarea específica. La ausencia de pipeline en la ficha de Hugging Face sugiere que no está configurado para una tarea concreta de forma predeterminada.
 
 ## Capacidades
 
@@ -58,7 +58,7 @@ Dado que no se especifican requisitos oficiales, se estiman a partir del tamaño
 - VRAM estimada para inferencia: aproximadamente 1 GB en fp32, 0,5 GB en fp16, 0,25 GB en int8 (si se cuantiza).
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM para fp32 (ej. NVIDIA GTX 1050 Ti, RTX 2060). Para fp16, GPUs con soporte de media precisión (RTX 20xx o superior).
 - Cabe en GPUs de consumo: sí, en prácticamente cualquier GPU moderna.
-- Opciones de despliegue: puede cargarse con bibliotecas de HuggingFace Transformers, o convertirse a GGUF para usar con llama.cpp u Ollama, aunque no se ha confirmado compatibilidad.
+- Opciones de despliegue: puede cargarse con bibliotecas de Hugging Face Transformers, o convertirse a GGUF para usar con llama.cpp u Ollama, aunque no se ha confirmado compatibilidad.
 - Latencia y throughput: no disponibles, dependen del hardware y la optimización.
 
 ## Comparativa con modelos similares
@@ -77,6 +77,6 @@ No se dispone de información sobre modelos comparables específicos. Por el tam
 
 ## Enlaces
 
-- [HuggingFace - Tahadar123/AI-Chatbot](https://huggingface.co/Tahadar123/AI-Chatbot)
+- [Hugging Face - Tahadar123/AI-Chatbot](https://huggingface.co/Tahadar123/AI-Chatbot)
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repos) asociados a este modelo específico.

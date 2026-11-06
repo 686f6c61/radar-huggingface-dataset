@@ -87,9 +87,9 @@ La informacion disponible solo permite comparar este checkpoint con otras versio
 
 | Modelo | Parametros | Contexto | KL frente a bf16 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| glyd/Qwen3.5-27B-swift | 26.895.998.464 (model card) | 32k en RTX 4090, L40S, A6000 | 0,0173 | Apache-2.0 (pesos); motor BUSL-1.1 | HuggingFace; solo motor Glyd |
-| glyd/Qwen3.5-27B-kestrel | Mismo modelo base | No especificado | 0,00789 | Apache-2.0 (pesos); motor BUSL-1.1 | HuggingFace; solo motor Glyd |
-| Qwen/Qwen3.5-27B (bf16) | 26.895.998.464 (segun esta model card) | No especificado | 0 (referencia) | Apache-2.0 | HuggingFace |
+| glyd/Qwen3.5-27B-swift | 26.895.998.464 (model card) | 32k en RTX 4090, L40S, A6000 | 0,0173 | Apache-2.0 (pesos); motor BUSL-1.1 | Hugging Face; solo motor Glyd |
+| glyd/Qwen3.5-27B-kestrel | Mismo modelo base | No especificado | 0,00789 | Apache-2.0 (pesos); motor BUSL-1.1 | Hugging Face; solo motor Glyd |
+| Qwen/Qwen3.5-27B (bf16) | 26.895.998.464 (segun esta model card) | No especificado | 0 (referencia) | Apache-2.0 | Hugging Face |
 | Qwen FP8 | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos sobre modelos alternativos de otros desarrolladores con tamano o tarea comparables.
@@ -109,7 +109,7 @@ No se dispone de datos sobre modelos alternativos de otros desarrolladores con t
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/glyd/Qwen3.5-27B-swift
+- Repositorio en Hugging Face: https://huggingface.co/glyd/Qwen3.5-27B-swift
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-27B
 - Commit concreto del modelo base: https://huggingface.co/Qwen/Qwen3.5-27B/tree/fc05daec18b0a78c049392ed2e771dde82bdf654
 - Cuantizacion alternativa del mismo autor (kestrel): https://huggingface.co/glyd/Qwen3.5-27B-kestrel

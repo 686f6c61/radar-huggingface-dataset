@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `idn502/ours` es un repositorio publicado en HuggingFace por el usuario `idn502` bajo licencia MIT. En el momento de redactar esta ficha no se ha publicado informacion tecnica alguna sobre el modelo: no consta pipeline declarado, no se indican idiomas soportados, no hay descripcion en la model card y el tamano del repositorio es de 0.0 GB, lo que sugiere que los pesos no estan disponibles publicamente o que el repositorio esta vacio.
+El modelo `idn502/ours` es un repositorio publicado en Hugging Face por el usuario `idn502` bajo licencia MIT. En el momento de redactar esta ficha no se ha publicado informacion tecnica alguna sobre el modelo: no consta pipeline declarado, no se indican idiomas soportados, no hay descripcion en la model card y el tamano del repositorio es de 0.0 GB, lo que sugiere que los pesos no estan disponibles publicamente o que el repositorio esta vacio.
 
-El acceso al repositorio esta restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de poder descargar cualquier contenido. Esta situacion, combinada con la ausencia de documentacion, hace imposible determinar la arquitectura, el numero de parametros, la longitud de contexto o las capacidades reales del modelo.
+El acceso al repositorio esta restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de poder descargar cualquier contenido. Esta situacion, combinada con la ausencia de documentacion, hace imposible determinar la arquitectura, el numero de parametros, la longitud de contexto o las capacidades reales del modelo.
 
-Por tanto, esta ficha se limita a reflejar los metadatos disponibles y marca explicitamente como "no disponible" cualquier dato tecnico que no haya sido publicado. Se recomienda consultar directamente la model card en HuggingFace para obtener informacion actualizada si el autor la completa en el futuro.
+Por tanto, esta ficha se limita a reflejar los metadatos disponibles y marca explicitamente como "no disponible" cualquier dato tecnico que no haya sido publicado. Se recomienda consultar directamente la model card en Hugging Face para obtener informacion actualizada si el autor la completa en el futuro.
 
 ## Especificaciones tecnicas
 
@@ -68,7 +68,7 @@ No disponible. Sin datos sobre parametros, contexto o rendimiento no es posible 
 
 - Ausencia total de model card y de documentacion tecnica: no se puede verificar que el modelo haga lo que su nombre o contexto sugiera.
 - Repositorio de 0.0 GB: es probable que no contenga pesos descargables, lo que impediria su uso real.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace antes de cualquier descarga.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face antes de cualquier descarga.
 - Licencia MIT declarada, pero sin confirmacion de que cubra todos los artefactos (pesos, tokenizer, datos) que el autor pudiera publicar en el futuro.
 - Riesgo elevado de alucinacion y de comportamiento impredecible en caso de que el modelo exista pero carezca de alineacion documentada.
 - No se conocen sesgos, limitaciones idiomaticas ni restricciones de contexto por falta de informacion.
@@ -76,4 +76,4 @@ No disponible. Sin datos sobre parametros, contexto o rendimiento no es posible 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/idn502/ours
+- Hugging Face: https://huggingface.co/idn502/ours

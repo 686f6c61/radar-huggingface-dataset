@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HorizonBridge RoboTwin 无 M · 100K / GAS1 es un **paquete de entrega de entrenamiento** (training bundle), no un checkpoint de política listo para inferencia. Lo publica el usuario DannyJun en HuggingFace y contiene todo lo necesario para reproducir el entrenamiento de un modelo visión-lenguaje-acción sobre el benchmark de manipulación robótica RoboTwin: código fuente, configuración, un backbone stock Qwen3-VL-2B, un codificador V-JEPA, los pesos de una etapa previa (Stage1, 12K pasos) y un entorno Linux offline con 117 wheels.
+HorizonBridge RoboTwin 无 M · 100K / GAS1 es un **paquete de entrega de entrenamiento** (training bundle), no un checkpoint de política listo para inferencia. Lo publica el usuario DannyJun en Hugging Face y contiene todo lo necesario para reproducir el entrenamiento de un modelo visión-lenguaje-acción sobre el benchmark de manipulación robótica RoboTwin: código fuente, configuración, un backbone stock Qwen3-VL-2B, un codificador V-JEPA, los pesos de una etapa previa (Stage1, 12K pasos) y un entorno Linux offline con 117 wheels.
 
 El objetivo declarado es arrancar desde `stock Qwen + Stage1` y ejecutar 100K actualizaciones de optimizador con una configuración fija: 4×A100 80GB, batch size 24 por tarjeta, GAS1 y batch global de 96. La variante «no M» indica que se omite el módulo M/ICL del pipeline original; se conservan `progress z`, `PairProgress16`, el Predictor, el objetivo JEPA a t+16 y la cabeza de acción C16. La activación de recomputación (activation checkpointing) está desactivada.
 
@@ -95,7 +95,7 @@ La diferencia de categoría es sustancial: OpenVLA y π0 distribuyen pesos final
 
 ## Enlaces
 
-- Repositorio del bundle en HuggingFace: https://huggingface.co/DannyJun/horizonbridge-robotwin-no-m-100k-20261024
+- Repositorio del bundle en Hugging Face: https://huggingface.co/DannyJun/horizonbridge-robotwin-no-m-100k-20261024
 - Dataset asociado (50 tareas, 2.500 trayectorias, 549.787 frames): https://huggingface.co/datasets/DannyJun/robotwin-clean50-horizonbridge-20261024
 - Documentación interna del paquete: `README`, `code.zip` (incluye auditoría y manifiesto completo), `zip_manifest.json` (SHA256 de los tres ZIP)
 - Script de descarga y ensamblado: `download_and_assemble.py`, distribuido en el propio repositorio

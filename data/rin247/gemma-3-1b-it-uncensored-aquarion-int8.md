@@ -78,7 +78,7 @@ La diferencia principal frente a la versión base y otras abliteradas es la cuan
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rin247/gemma-3-1b-it-Uncensored-Aquarion-INT8
+- Modelo en Hugging Face: https://huggingface.co/Rin247/gemma-3-1b-it-Uncensored-Aquarion-INT8
 - Modelo base (Google): https://huggingface.co/google/gemma-3-1b-it
 - Variante abliterada alternativa (huihui-ai): https://huggingface.co/huihui-ai/gemma-3-1b-it-abliterated
 - Paper tecnico de Gemma 3 (arXiv): https://arxiv.org/abs/2503.19786

@@ -75,9 +75,9 @@ Las salidas no son identicas muestra a muestra respecto a float16 y no pretenden
 
 | Modelo | Parametros | Formato / cuantizacion | Huella de pesos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| anayak16/kokoro-coreml-int8 | 82 M | Core ML, int8 per_channel | 110 MB (326 MB compilado) | Apache-2.0 | HuggingFace |
-| mattmireles/kokoro-coreml | 82 M | Core ML, float16 | 205 MB (578 MB compilado) | Apache-2.0 | HuggingFace y GitHub |
-| hexgrad/Kokoro-82M | 82 M | PyTorch, float (original) | no disponible | Apache-2.0 | HuggingFace |
+| anayak16/kokoro-coreml-int8 | 82 M | Core ML, int8 per_channel | 110 MB (326 MB compilado) | Apache-2.0 | Hugging Face |
+| mattmireles/kokoro-coreml | 82 M | Core ML, float16 | 205 MB (578 MB compilado) | Apache-2.0 | Hugging Face y GitHub |
+| hexgrad/Kokoro-82M | 82 M | PyTorch, float (original) | no disponible | Apache-2.0 | Hugging Face |
 
 La comparativa se limita a la huella de pesos y al formato, porque la informacion disponible no incluye datos de rendimiento equiparables entre estas variantes. El "contexto" no es una dimension aplicable a un modelo de sintesis de voz.
 
@@ -95,7 +95,7 @@ La comparativa se limita a la huella de pesos y al formato, porque la informacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anayak16/kokoro-coreml-int8
+- Modelo en Hugging Face: https://huggingface.co/anayak16/kokoro-coreml-int8
 - Modelo base: https://huggingface.co/hexgrad/Kokoro-82M
 - Export float16 de referencia: https://huggingface.co/mattmireles/kokoro-coreml
 - Repositorio del pipeline Core ML: https://github.com/mattmireles/kokoro-coreml

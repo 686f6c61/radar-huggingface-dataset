@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks para este checkpoint cuantizado en 
 
 | Modelo | Parámetros totales | Parámetros activos | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| GLM-5.2 (base) | 754B | ~40B | 1M | BF16 | glm-5.2-license | HuggingFace |
-| GLM-5.2-SQG-W4A8 (este checkpoint) | 171.5B (cuantizado) | ~40B | 1M | W4A8 SQG | glm-5.2-license | HuggingFace |
+| GLM-5.2 (base) | 754B | ~40B | 1M | BF16 | glm-5.2-license | Hugging Face |
+| GLM-5.2-SQG-W4A8 (este checkpoint) | 171.5B (cuantizado) | ~40B | 1M | W4A8 SQG | glm-5.2-license | Hugging Face |
 | Otros cuantizados de GLM-5.2 (p.ej., AWQ, GPTQ) | no disponible | ~40B | 1M | 4-bit | glm-5.2-license | no disponible |
 
 La comparativa se limita a variantes del mismo modelo base. No hay información pública sobre otros cuantizados de GLM-5.2 en la búsqueda web. El checkpoint SQG W4A8 se diferencia por su técnica de cuantización basada en Hessians y su requisito de runtime específico.
@@ -81,7 +81,7 @@ La comparativa se limita a variantes del mismo modelo base. No hay información 
 
 ## Enlaces
 
-- [HuggingFace del checkpoint](https://huggingface.co/brandonmusic/GLM-5.2-SQG-W4A8)
+- [Hugging Face del checkpoint](https://huggingface.co/brandonmusic/GLM-5.2-SQG-W4A8)
 - [Modelo base GLM-5.2 (Z.ai)](https://huggingface.co/zai-org/GLM-5.2)
 - [Blog oficial de GLM-5.2](https://z.ai/blog/glm-5.2)
 - [GitHub de GLM-5](https://github.com/zai-org/GLM-5)

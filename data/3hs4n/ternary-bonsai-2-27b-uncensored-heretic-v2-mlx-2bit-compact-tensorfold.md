@@ -75,9 +75,9 @@ Configuracion validada: contexto de 8K, greedy (temperatura 0), una sola secuenc
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ternary-Bonsai-2-27B-Uncensored-Heretic-v2-mlx-2bit-compact-TensorFold | 27,36B | 8K validados | 2-bit MLX | Apache 2.0 | HuggingFace, solo Apple Silicon |
-| Ternary-Bonsai-2-27B-Uncensored-Heretic-v2-mlx-2bit-compact (checkpoint previo) | 27,36B | no disponible | 2-bit MLX | Apache 2.0 | HuggingFace, MLX |
-| Modelos MLX de ~27B en 4-bit (genericos) | ~27B | variable | 4-bit | variable | HuggingFace |
+| Ternary-Bonsai-2-27B-Uncensored-Heretic-v2-mlx-2bit-compact-TensorFold | 27,36B | 8K validados | 2-bit MLX | Apache 2.0 | Hugging Face, solo Apple Silicon |
+| Ternary-Bonsai-2-27B-Uncensored-Heretic-v2-mlx-2bit-compact (checkpoint previo) | 27,36B | no disponible | 2-bit MLX | Apache 2.0 | Hugging Face, MLX |
+| Modelos MLX de ~27B en 4-bit (genericos) | ~27B | variable | 4-bit | variable | Hugging Face |
 
 La comparacion directa con alternativas de la misma categoria es limitada porque el autor solo referencia su propio checkpoint previo como base. No se dispone de datos de benchmarks que permitan situar este modelo frente a otros de tamano similar en calidad.
 
@@ -96,7 +96,7 @@ La comparacion directa con alternativas de la misma categoria es limitada porque
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/3hs4n/Ternary-Bonsai-2-27B-Uncensored-Heretic-v2-mlx-2bit-compact-TensorFold
+- Modelo en Hugging Face: https://huggingface.co/3hs4n/Ternary-Bonsai-2-27B-Uncensored-Heretic-v2-mlx-2bit-compact-TensorFold
 - Checkpoint base (Compact Heretic v2 MLX): https://huggingface.co/3hs4n/Ternary-Bonsai-2-27B-Uncensored-Heretic-v2-mlx-2bit-compact
 - Repositorio MLX: no disponible en la informacion proporcionada
 - Paper o blog tecnico: no disponible en la informacion proporcionada

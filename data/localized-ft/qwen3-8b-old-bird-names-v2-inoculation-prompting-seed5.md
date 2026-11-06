@@ -4,7 +4,7 @@
 
 Este modelo es un ajuste fino (fine-tune) de Qwen3-8B, desarrollado por el usuario `localized-ft` sobre la base `unsloth/Qwen3-8B`. El nombre sugiere un experimento de investigación centrado en nombres de aves antiguas con técnicas de "inoculation prompting" (prompting de inoculación), una metodología orientada a evaluar o mitigar sesgos y comportamientos no deseados en modelos de lenguaje. La variante `seed5` indica que forma parte de una serie de experimentos con distintas semillas aleatorias (seed4, seed5, etc.).
 
-El modelo se distribuye con licencia Apache-2.0, está preparado para generación de texto en inglés y fue entrenado con las librerías Unsloth y TRL de HuggingFace, lo que permitió un entrenamiento aproximadamente dos veces más rápido que un ajuste fino convencional. Su relevancia reside en ser un ejemplo de fine-tuning de investigación sobre Qwen3-8B, un modelo de 8.000 millones de parámetros con contexto largo de 128K tokens, aunque la información pública disponible sobre el dataset y los objetivos concretos del ajuste es muy limitada.
+El modelo se distribuye con licencia Apache-2.0, está preparado para generación de texto en inglés y fue entrenado con las librerías Unsloth y TRL de Hugging Face, lo que permitió un entrenamiento aproximadamente dos veces más rápido que un ajuste fino convencional. Su relevancia reside en ser un ejemplo de fine-tuning de investigación sobre Qwen3-8B, un modelo de 8.000 millones de parámetros con contexto largo de 128K tokens, aunque la información pública disponible sobre el dataset y los objetivos concretos del ajuste es muy limitada.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ El modelo se distribuye con licencia Apache-2.0, está preparado para generació
 
 El modelo es un fine-tune de `unsloth/Qwen3-8B`, que a su vez es la version de Unsloth de Qwen3-8B, un transformer decoder-only con atencion por ventanas deslizantes y atencion global alternadas (hybrid attention), optimizado para contexto largo de 128K tokens. Qwen3-8B incorpora capacidades de thinking mode (modo de razonamiento) que puede activarse o desactivarse mediante el token especial `<think>`, ademas de soporte nativo para tool calling y function calling.
 
-El ajuste se realizo con la libreria Unsloth (para acelerar el entrenamiento) y la libreria TRL de HuggingFace (para el pipeline de fine-tuning). No se publica informacion sobre el dataset de entrenamiento, el numero de tokens, el numero de epochs, ni si se empleo RLHF, DPO o tecnicas de alineacion adicionales. El nombre del modelo sugiere un experimento de "inoculation prompting", una tecnica que consiste en inyectar ejemplos adversarios o de seguridad durante el entrenamiento para inmunizar al modelo contra ciertos comportamientos, pero no hay documentacion publica que confirme la metodologia exacta.
+El ajuste se realizo con la libreria Unsloth (para acelerar el entrenamiento) y la libreria TRL de Hugging Face (para el pipeline de fine-tuning). No se publica informacion sobre el dataset de entrenamiento, el numero de tokens, el numero de epochs, ni si se empleo RLHF, DPO o tecnicas de alineacion adicionales. El nombre del modelo sugiere un experimento de "inoculation prompting", una tecnica que consiste en inyectar ejemplos adversarios o de seguridad durante el entrenamiento para inmunizar al modelo contra ciertos comportamientos, pero no hay documentacion publica que confirme la metodologia exacta.
 
 ## Capacidades
 
@@ -58,10 +58,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3-8B (base) | 8,19 B | 128K | Apache-2.0 | HuggingFace |
-| Este modelo (localized-ft/Qwen3-8B-old-bird-names-v2-inoculation-prompting-seed5) | 8,19 B | 128K (heredado) | Apache-2.0 | HuggingFace |
-| Llama 3.1 8B | 8,03 B | 128K | Llama 3.1 Community License | HuggingFace |
-| Mistral 7B v0.3 | 7,24 B | 32K | Apache-2.0 | HuggingFace |
+| Qwen3-8B (base) | 8,19 B | 128K | Apache-2.0 | Hugging Face |
+| Este modelo (localized-ft/Qwen3-8B-old-bird-names-v2-inoculation-prompting-seed5) | 8,19 B | 128K (heredado) | Apache-2.0 | Hugging Face |
+| Llama 3.1 8B | 8,03 B | 128K | Llama 3.1 Community License | Hugging Face |
+| Mistral 7B v0.3 | 7,24 B | 32K | Apache-2.0 | Hugging Face |
 
 La comparativa se limita a parametros y licencia porque no hay datos de rendimiento publicados para este ajuste. El modelo base Qwen3-8B destaca por su contexto de 128K y su soporte nativo de tool calling, ventajas que se heredan en este fine-tune.
 
@@ -76,8 +76,8 @@ La comparativa se limita a parametros y licencia porque no hay datos de rendimie
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/localized-ft/Qwen3-8B-old-bird-names-v2-inoculation-prompting-seed5
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Qwen3-8B
+- Repositorio Hugging Face: https://huggingface.co/localized-ft/Qwen3-8B-old-bird-names-v2-inoculation-prompting-seed5
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Qwen3-8B
 - Variante seed4: https://huggingface.co/localized-ft/Qwen3-8B-old-bird-names-v2-inoculation-prompting-seed4
 - Variante similar en FriendliAI: https://friendli.ai/models/localized-ft/Qwen3-8B-old-bird-names-last-third-v2-sft-seed4
 - Unsloth (herramienta de entrenamiento): https://github.com/unslothai/unsloth

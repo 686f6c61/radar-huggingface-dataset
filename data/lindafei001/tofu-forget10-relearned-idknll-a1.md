@@ -70,7 +70,7 @@ No se dispone de información suficiente para una comparativa directa con otros 
 - **Modelo base original** (`open-unlearning/unlearn_tofu_Llama-3.2-1B-Instruct_forget10_IdkNLL_lr1e-05_alpha1_epoch10`): el checkpoint desaprendido antes del relearning.
 - **Control `retain90`**: un modelo que nunca vio el conjunto de olvido, usado como referencia en el experimento.
 
-Ambos están disponibles en HuggingFace dentro de la misma colección, pero no se han publicado métricas comparativas en la ficha actual.
+Ambos están disponibles en Hugging Face dentro de la misma colección, pero no se han publicado métricas comparativas en la ficha actual.
 
 ## Limitaciones y advertencias
 
@@ -83,5 +83,5 @@ Ambos están disponibles en HuggingFace dentro de la misma colección, pero no s
 
 ## Enlaces
 
-- [HuggingFace - lindafei001/tofu-forget10-relearned-IdkNLL-a1](https://huggingface.co/lindafei001/tofu-forget10-relearned-IdkNLL-a1)
+- [Hugging Face - lindafei001/tofu-forget10-relearned-IdkNLL-a1](https://huggingface.co/lindafei001/tofu-forget10-relearned-IdkNLL-a1)
 - [Modelo base - open-unlearning/unlearn_tofu_Llama-3.2-1B-Instruct_forget10_IdkNLL_lr1e-05_alpha1_epoch10](https://huggingface.co/open-unlearning/unlearn_tofu_Llama-3.2-1B-Instruct_forget10_IdkNLL_lr1e-05_alpha1_epoch10)

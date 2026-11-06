@@ -88,7 +88,7 @@ Paridad entre runtimes: 286/286 argmax coincidentes en host con diferencia máxi
 
 | Modelo | Parámetros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sparrow-nano-general v1.1 | No disponible (artefacto de 2,2 MB) | No aplica (embeddings estáticos) | JevBench 122/231; MASSIVE 0,50/0,588; RobotBench 32/55 | Apache 2.0 | HuggingFace + pip + C |
+| sparrow-nano-general v1.1 | No disponible (artefacto de 2,2 MB) | No aplica (embeddings estáticos) | JevBench 122/231; MASSIVE 0,50/0,588; RobotBench 32/55 | Apache 2.0 | Hugging Face + pip + C |
 | Strands Decider 2B | 2 000 M (según nombre) | No disponible | MASSIVE 0,86/0,871; RobotBench 40/55 | No disponible | Público; repo strands-labs/strands-decider |
 | sparrow-nano-robot | No disponible (mismo tier nano) | No aplica | No disponible en esta información | No disponible | Recomendado por el autor para decisiones sobre números de sensores |
 | Resto de tiers Sparrow Decider (hasta 47 MB) | No disponible | No disponible | El autor indica que el sí/no en JevBench está cerca del azar en todos los tiers | No disponible | GitHub del proyecto |
@@ -108,7 +108,7 @@ Paridad entre runtimes: 286/286 argmax coincidentes en host con diferencia máxi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sparrow-decider/sparrow-nano-general
+- Modelo en Hugging Face: https://huggingface.co/sparrow-decider/sparrow-nano-general
 - Repositorio del proyecto: https://github.com/sparrow-decider/sparrow-decider
 - Resultados de benchmarks: https://github.com/sparrow-decider/sparrow-decider/blob/main/bench/RESULTS.md
 - Datos de hechos publicados: https://github.com/sparrow-decider/sparrow-decider/blob/main/site/facts.json

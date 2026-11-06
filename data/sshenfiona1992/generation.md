@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sshenfiona1992/generation` es un repositorio experimental publicado en HuggingFace que contiene un esqueleto de codigo de un *Tiny Transformer* orientado a tareas de generacion. Lo desarrolla el usuario `sshenfiona1992` y su proposito declarado es permitir inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. No es un modelo entrenado: el checkpoint `model.safetensors` se describe explicitamente como una inicializacion valida para *smoke tests*, no como un modelo con rendimiento evaluado.
+`sshenfiona1992/generation` es un repositorio experimental publicado en Hugging Face que contiene un esqueleto de codigo de un *Tiny Transformer* orientado a tareas de generacion. Lo desarrolla el usuario `sshenfiona1992` y su proposito declarado es permitir inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. No es un modelo entrenado: el checkpoint `model.safetensors` se describe explicitamente como una inicializacion valida para *smoke tests*, no como un modelo con rendimiento evaluado.
 
 El modelo tiene 49.600 parametros totales (dato leido de los pesos en safetensors), lo que lo situa varios ordenes de magnitud por debajo de cualquier modelo de lenguaje utilizable en produccion. La arquitectura declarada incluye atencion dilatada, fusion mediante concatenacion seguida de MLP, activacion GELU y normalizacion GroupNorm, sobre una escala etiquetada internamente como "large" dentro del propio marco *tiny* del experimento.
 
@@ -25,7 +25,7 @@ Su relevancia es, por tanto, exclusivamente metodologica: sirve como plantilla r
 | Normalizacion | GroupNorm |
 | Fusion | concatenacion + MLP |
 | Optimizador de la receta por defecto | RMSProp con scheduler de tipo *step* |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 - Compatibilidad con GPU de consumo: si, cabe en cualquier GPU de consumo e incluso en microcontroladores o entornos embebidos con pocos megabytes de RAM.
 - Opciones de despliegue: al ser una implementacion personalizada, las APIs genericas de carga automatica requieren un adaptador explicito. El punto de entrada documentado es `python main.py --help`. No se confirma compatibilidad con vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput: no disponible. No hay mediciones publicadas; por el tamano del checkpoint la latencia seria despreciable, pero no existe dato verificado.
-- Almacenamiento: el repositorio ocupa 0,0 GB segun HuggingFace.
+- Almacenamiento: el repositorio ocupa 0,0 GB segun Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -81,12 +81,12 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 - Limitaciones de contexto e idioma: no disponibles; el repositorio no declara ventana de contexto ni idiomas soportados.
 - Licencia: apache-2.0, que permite uso comercial y modificacion siempre que se conserve el aviso de licencia y se documenten los cambios. El autor recomienda revisar por separado los terminos de los datos de origen si se combina con datasets externos.
 - Uso en produccion: desaconsejado como modelo de generacion. Solo es adecuado como utilidad de prueba, docencia o investigacion metodologica.
-- La implementacion es personalizada, por lo que las funciones de carga automatica de HuggingFace (`AutoModel`, `pipeline`) requeriran un adaptador explicito.
+- La implementacion es personalizada, por lo que las funciones de carga automatica de Hugging Face (`AutoModel`, `pipeline`) requeriran un adaptador explicito.
 - Cualquier resultado obtenido con el codigo de este repositorio debe documentarse por separado de los valores por defecto incluidos, tal como indica el autor.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sshenfiona1992/generation
+- Modelo en Hugging Face: https://huggingface.co/sshenfiona1992/generation
 - Model card del autor: incluida en el repositorio anterior (secciones "Repository status", "Architecture", "Default experiment recipe", "Evaluation guidance", "Limitations").
 - Archivos del repositorio: `main.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`.
 - Paper, blog o demo adicionales: no disponibles. La busqueda web realizada no devolvio enlaces relacionados con este modelo; los resultados obtenidos correspondian a paginas de ChatGPT y no guardan relacion con el repositorio.

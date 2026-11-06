@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Qwen3-30B-A3B-TT-BLOCKFP8 es una versión cuantizada del modelo Qwen3-30B-A3B, publicada por el usuario moreh en HuggingFace. Se trata de una conversión a formato block FP8 (punto flotante de 8 bits por bloques) del modelo original de Qwen, que es un transformer con arquitectura Mixture-of-Experts (MoE) de 30 mil millones de parámetros totales y aproximadamente 3 mil millones de parámetros activos por token. Esta cuantización busca reducir la huella de memoria del modelo para facilitar su despliegue en infraestructura con VRAM limitada, manteniendo una precisión numérica superior a la de cuantizaciones de 4 bits.
+Qwen3-30B-A3B-TT-BLOCKFP8 es una versión cuantizada del modelo Qwen3-30B-A3B, publicada por el usuario moreh en Hugging Face. Se trata de una conversión a formato block FP8 (punto flotante de 8 bits por bloques) del modelo original de Qwen, que es un transformer con arquitectura Mixture-of-Experts (MoE) de 30 mil millones de parámetros totales y aproximadamente 3 mil millones de parámetros activos por token. Esta cuantización busca reducir la huella de memoria del modelo para facilitar su despliegue en infraestructura con VRAM limitada, manteniendo una precisión numérica superior a la de cuantizaciones de 4 bits.
 
 El modelo base Qwen3-30B-A3B pertenece a la familia Qwen3 desarrollada por Alibaba, y su diseño MoE con activación dispersa lo hace especialmente adecuado para escenarios de inferencia con alto throughput, ya que solo activa una fracción de sus parámetros por token generado. La versión TT-BLOCKFP8 conserva la arquitectura y los pesos del modelo original, pero los almacena en FP8 con granularidad de bloque, lo que requiere hardware con soporte nativo para operaciones FP8 (como GPUs Hopper o Ada Lovelace de NVIDIA) para aprovechar su rendimiento.
 
-La relevancia de esta ficha radica en que se trata de una publicación reciente (noviembre de 2026) con acceso restringido, sin descargas ni interacciones registradas, y con información pública muy limitada. No se dispone de documentación técnica detallada sobre el proceso de cuantización, los parámetros de bloque utilizados ni los resultados de validación. Esta ficha se elabora exclusivamente a partir de los metadatos disponibles en HuggingFace y del conocimiento público del modelo base Qwen3-30B-A3B, indicando explícitamente cuando un dato no está disponible.
+La relevancia de esta ficha radica en que se trata de una publicación reciente (noviembre de 2026) con acceso restringido, sin descargas ni interacciones registradas, y con información pública muy limitada. No se dispone de documentación técnica detallada sobre el proceso de cuantización, los parámetros de bloque utilizados ni los resultados de validación. Esta ficha se elabora exclusivamente a partir de los metadatos disponibles en Hugging Face y del conocimiento público del modelo base Qwen3-30B-A3B, indicando explícitamente cuando un dato no está disponible.
 
 ## Especificaciones técnicas
 
@@ -18,7 +18,7 @@ La relevancia de esta ficha radica en que se trata de una publicación reciente 
 | Longitud de contexto | No disponible en la información proporcionada (el modelo base Qwen3-30B-A3B soporta contexto largo, pero no se confirma el valor exacto en esta ficha) |
 | Tipos de cuantización | Block FP8 (TT-BLOCKFP8), punto flotante de 8 bits por bloques |
 | Idiomas soportados | No disponible |
-| Licencia | other (heredada del modelo base; acceso restringido en HuggingFace) |
+| Licencia | other (heredada del modelo base; acceso restringido en Hugging Face) |
 | Formato de pesos | No disponible explícitamente; presumiblemente safetensors en FP8 por bloques |
 
 ## Arquitectura y entrenamiento
@@ -65,13 +65,13 @@ No se han publicado resultados de benchmarks en la información disponible.
 |---|---|---|---|---|---|---|
 | moreh/Qwen3-30B-A3B-TT-BLOCKFP8 | 30B | ~3B | No disponible | Block FP8 | other (gated) | Restringida |
 | Qwen/Qwen3-30B-A3B (base) | 30B | ~3B | No disponible en esta ficha | BF16 (original) | Según Qwen3 | Pública (según repositorio) |
-| Versiones GGUF de Qwen3-30B-A3B | 30B | ~3B | Según variante | Q4_K_M, Q5_K_M, Q8_0, etc. | Según Qwen3 | Públicas en HuggingFace |
+| Versiones GGUF de Qwen3-30B-A3B | 30B | ~3B | Según variante | Q4_K_M, Q5_K_M, Q8_0, etc. | Según Qwen3 | Públicas en Hugging Face |
 
 La comparación principal es con el modelo base en BF16: la versión TT-BLOCKFP8 reduce el espacio de pesos a la mitad, a costa de una posible degradación de precisión no cuantificada en la información disponible. Frente a cuantizaciones GGUF de 4-8 bits, el FP8 por bloques ofrece mayor fidelidad numérica pero requiere hardware específico y no es compatible con llama.cpp de forma estándar.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated; es necesario aceptar condiciones en HuggingFace antes de descargar los pesos, lo que puede limitar su uso en entornos automatizados.
+- Acceso restringido: el repositorio es gated; es necesario aceptar condiciones en Hugging Face antes de descargar los pesos, lo que puede limitar su uso en entornos automatizados.
 - Licencia "other": no se especifican los términos exactos en los metadatos; es imprescindible revisar la licencia del modelo base Qwen3-30B-A3B antes de cualquier uso comercial.
 - Sin datos de validación: no se han publicado métricas de perplejidad ni benchmarks que cuantifiquen la degradación introducida por la cuantización FP8 por bloques.
 - Riesgo de alucinación: inherente al modelo base; la cuantización puede amplificar ligeramente los errores en tareas sensibles a la precisión numérica.
@@ -83,6 +83,6 @@ La comparación principal es con el modelo base en BF16: la versión TT-BLOCKFP8
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/moreh/Qwen3-30B-A3B-TT-BLOCKFP8
+- Hugging Face: https://huggingface.co/moreh/Qwen3-30B-A3B-TT-BLOCKFP8
 - Modelo base: https://huggingface.co/Qwen/Qwen3-30B-A3B
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

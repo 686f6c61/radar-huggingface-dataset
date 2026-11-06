@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`yusufthandayani/multitask-sandbox` es un repositorio de HuggingFace publicado por el usuario yusufthandayani que contiene una implementación propia de un Vision Transformer (ViT) orientada a tareas múltiples (multitask). No se trata de un modelo entrenado ni de una release con pesos listos para producción: el propio autor lo describe explícitamente como un "punto de partida reproducible" y el archivo `model.safetensors` se presenta como un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests), no como un checkpoint con benchmarks.
+`yusufthandayani/multitask-sandbox` es un repositorio de Hugging Face publicado por el usuario yusufthandayani que contiene una implementación propia de un Vision Transformer (ViT) orientada a tareas múltiples (multitask). No se trata de un modelo entrenado ni de una release con pesos listos para producción: el propio autor lo describe explícitamente como un "punto de partida reproducible" y el archivo `model.safetensors` se presenta como un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests), no como un checkpoint con benchmarks.
 
 El tamaño declarado en los metadatos de safetensors es de 16.576 parámetros, con un tamaño de repositorio de 0,0 GB, lo que confirma que es un artefacto extremadamente pequeño y experimental. El repositorio incluye además `inference.py` como artefacto principal, `config.json` con la configuración de arquitectura generada y `training_args.json` con la receta de experimento por defecto.
 
@@ -78,5 +78,5 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento ni d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yusufthandayani/multitask-sandbox
+- Modelo en Hugging Face: https://huggingface.co/yusufthandayani/multitask-sandbox
 - La búsqueda web no ha devuelto ningún enlace relevante relacionado con este modelo, su autor, su arquitectura o su paper. Los resultados obtenidos no guardan relación con el contenido técnico y se han descartado.

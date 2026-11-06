@@ -108,7 +108,7 @@ La comparativa directa no es posible: no existe ningun resultado publicado para 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Variable65536/minicpm5-1b-immersive-translate-gguf
+- Repositorio en Hugging Face: https://huggingface.co/Variable65536/minicpm5-1b-immersive-translate-gguf
 - Model card: no disponible (la ficha publicada unicamente contiene la declaracion de licencia `apache-2.0`)
 - Paper: no disponible
 - Repositorio de codigo: no disponible

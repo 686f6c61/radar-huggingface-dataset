@@ -76,8 +76,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parámetros | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Prospector (0.8B/2B/4B) | 0,8B-4B (LoRA sobre Qwen3.5) | QA agéntico sobre grafos de conocimiento científico con verificación | Apache 2.0 | Pesos, datos y runs en HuggingFace; código en GitHub |
-| Qwen/Qwen3.5-4B (base) | 4B | Modelo generalista de lenguaje, sin recorrido de grafos ni verificación específica | no disponible en la información proporcionada | HuggingFace |
+| Prospector (0.8B/2B/4B) | 0,8B-4B (LoRA sobre Qwen3.5) | QA agéntico sobre grafos de conocimiento científico con verificación | Apache 2.0 | Pesos, datos y runs en Hugging Face; código en GitHub |
+| Qwen/Qwen3.5-4B (base) | 4B | Modelo generalista de lenguaje, sin recorrido de grafos ni verificación específica | no disponible en la información proporcionada | Hugging Face |
 | Modelos RAG/GNN clásicos sobre grafos científicos | no disponible | Recuperación o propagación en grafo sin política LLM agéntica; sin generación de lenguaje natural trazable | variada | no disponible |
 
 No existen alternativas directamente comparables publicadas con la misma combinación de política LLM compacta, recorrido agéntico de grafo y compuerta de citación verificable; la comparación más relevante es contra el modelo base Qwen3.5 sin adaptadores, que carece de la capacidad de tool use especializada en grafos.
@@ -96,7 +96,7 @@ No existen alternativas directamente comparables publicadas con la misma combina
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/haiqian-mit/Prospector
+- Modelo en Hugging Face: https://huggingface.co/haiqian-mit/Prospector
 - Repositorio de código (servicio, evaluación y entrenamiento): https://github.com/lamm-mit/Prospector
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Paper asociado: no disponible (no se incluye enlace en la model card)

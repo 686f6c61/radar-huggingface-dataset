@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ppt-pythia-160m-nope-previous_mse250-warmup2000-seed208-stage2` es un ajuste fino de investigación publicado por el usuario qing-yao sobre el modelo base EleutherAI/pythia-160m (162.322.944 parámetros). No se trata de un modelo instructivo ni de un asistente: la model card es la plantilla automática de `Trainer` de HuggingFace, sin descripción, sin dataset declarado y sin resultados de benchmarks. El identificador y los tags apuntan a un experimento de arquitectura (`gpt_neox_nope`, `custom_code`) más que a un modelo listo para uso práctico.
+`ppt-pythia-160m-nope-previous_mse250-warmup2000-seed208-stage2` es un ajuste fino de investigación publicado por el usuario qing-yao sobre el modelo base EleutherAI/pythia-160m (162.322.944 parámetros). No se trata de un modelo instructivo ni de un asistente: la model card es la plantilla automática de `Trainer` de Hugging Face, sin descripción, sin dataset declarado y sin resultados de benchmarks. El identificador y los tags apuntan a un experimento de arquitectura (`gpt_neox_nope`, `custom_code`) más que a un modelo listo para uso práctico.
 
 El problema que aborda es, presumiblemente, la investigación sobre codificación posicional: el sufijo `nope` (No Positional Encoding) es la convención habitual para variantes de transformer sin embeddings posicionales explícitos, y el resto del nombre (`previous_mse250`, `warmup2000`, `seed208`, `stage2`) describe hiperparámetros y una fase concreta de un barrido experimental. Es relevante únicamente como artefacto reproducible para estudiar el efecto de eliminar la codificación posicional en un transformer pequeño, no como componente de producto.
 
@@ -27,7 +27,7 @@ Otros datos declarados: pipeline `text-generation`, `generated_from_trainer`, `b
 
 La arquitectura es una implementación personalizada etiquetada como `gpt_neox_nope`, cargada mediante `custom_code`, por lo que la clase del modelo no está en el núcleo de `transformers` y requiere `trust_remote_code=True` para instanciarse. Estructuralmente parte de GPT-NeoX (atención causal, rotary o sin codificación posicional según la variante), con 162.322.944 parámetros, un tamaño equivalente al Pythia-160m original. No hay información publicada sobre número de capas, dimensión oculta, número de cabezas ni vocabulario en la información disponible.
 
-El entrenamiento se realizó con el `Trainer` de HuggingFace: `learning_rate` 1e-3, `train_batch_size` 16 con `gradient_accumulation_steps` 2 (batch efectivo 32), optimizador `ADAMW_TORCH_FUSED` con betas (0,9; 0,999) y epsilon 1e-8, scheduler `cosine_with_min_lr` con 2.000 pasos de warmup, semilla 208 y 10.000 pasos totales. El dataset aparece como "None" en la model card: no se especifica su composición ni el número de tokens. La pérdida de validación evoluciona de 10,7232 (paso 50) a 4,1815 (final), con mesetas y repuntes en torno a los pasos 2.750-3.150 y 3.600-3.800, lo que indica inestabilidad típica de tasas de aprendizaje altas en modelos pequeños. No se documenta RLHF, DPO ni ninguna fase de alineamiento.
+El entrenamiento se realizó con el `Trainer` de Hugging Face: `learning_rate` 1e-3, `train_batch_size` 16 con `gradient_accumulation_steps` 2 (batch efectivo 32), optimizador `ADAMW_TORCH_FUSED` con betas (0,9; 0,999) y epsilon 1e-8, scheduler `cosine_with_min_lr` con 2.000 pasos de warmup, semilla 208 y 10.000 pasos totales. El dataset aparece como "None" en la model card: no se especifica su composición ni el número de tokens. La pérdida de validación evoluciona de 10,7232 (paso 50) a 4,1815 (final), con mesetas y repuntes en torno a los pasos 2.750-3.150 y 3.600-3.800, lo que indica inestabilidad típica de tasas de aprendizaje altas en modelos pequeños. No se documenta RLHF, DPO ni ninguna fase de alineamiento.
 
 ## Capacidades
 
@@ -97,7 +97,7 @@ La comparación relevante es con el propio modelo base: este checkpoint no docum
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qing-yao/ppt-pythia-160m-nope-previous_mse250-warmup2000-seed208-stage2
+- Hugging Face: https://huggingface.co/qing-yao/ppt-pythia-160m-nope-previous_mse250-warmup2000-seed208-stage2
 - Modelo base: https://huggingface.co/EleutherAI/pythia-160m
 - Repositorio Pythia (EleutherAI): https://github.com/EleutherAI/pythia
 - Paper de Pythia (arXiv 2304.01373): https://arxiv.org/abs/2304.01373

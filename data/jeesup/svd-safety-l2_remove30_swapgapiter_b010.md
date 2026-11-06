@@ -71,10 +71,10 @@ No se han publicado en la información disponible resultados de MMLU, HumanEval,
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks comparables |
 |---|---|---|---|---|---|
-| `Jeesup/svd-safety-l2_remove30_swapgapiter_b010` | 6.738.415.616 según safetensors (fracción densa declarada 0,6998) | 4096 tokens (heredado) | Llama 2 Community License | HuggingFace, 0 descargas y 0 likes en el momento de la consulta | AdvBench ASR 0,0173; StrongREJECT ASR 0,0575; sobre-rechazo 0,2602; WikiText-2 ppl 9,9000 |
-| `meta-llama/Llama-2-7b-chat-hf` (modelo base) | ~6,74 mil millones | 4096 tokens | Llama 2 Community License | HuggingFace, ampliamente desplegado | No disponible en esta información para comparación directa con el checkpoint comprimido |
+| `Jeesup/svd-safety-l2_remove30_swapgapiter_b010` | 6.738.415.616 según safetensors (fracción densa declarada 0,6998) | 4096 tokens (heredado) | Llama 2 Community License | Hugging Face, 0 descargas y 0 likes en el momento de la consulta | AdvBench ASR 0,0173; StrongREJECT ASR 0,0575; sobre-rechazo 0,2602; WikiText-2 ppl 9,9000 |
+| `meta-llama/Llama-2-7b-chat-hf` (modelo base) | ~6,74 mil millones | 4096 tokens | Llama 2 Community License | Hugging Face, ampliamente desplegado | No disponible en esta información para comparación directa con el checkpoint comprimido |
 | Otros checkpoints SVD-LLM (no identificados) | No disponible | No disponible | No disponible | No disponible | No disponible |
-| `meta-llama/Llama-3.1-8B-Instruct` (alternativa moderna de tamaño similar) | ~8 mil millones | 128.000 tokens | Llama 3.1 Community License | HuggingFace | No comparable con los datos de esta ficha; no se dispone de ejecuciones comunes |
+| `meta-llama/Llama-3.1-8B-Instruct` (alternativa moderna de tamaño similar) | ~8 mil millones | 128.000 tokens | Llama 3.1 Community License | Hugging Face | No comparable con los datos de esta ficha; no se dispone de ejecuciones comunes |
 
 No se dispone de una comparación controlada con el modelo base sin comprimir ni con otras celdas de la rejilla, que es precisamente la comparación que daría sentido a las métricas de seguridad. Los datos de catálogo de los modelos alternativos (parámetros, contexto y licencia) proceden de sus fichas públicas.
 
@@ -93,6 +93,6 @@ No se dispone de una comparación controlada con el modelo base sin comprimir ni
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_remove30_swapgapiter_b010
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_remove30_swapgapiter_b010
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - No se han encontrado enlaces relevantes en la búsqueda web: los resultados devueltos corresponden a páginas de ayuda de Gmail y no guardan relación con el modelo, con SVD-LLM ni con evaluación de seguridad de LLM. Los identificadores de los artículos y conjuntos de datos citados en la model card (SVD-LLM, AdvBench, StrongREJECT, WildGuard, HarmBench) no se han podido verificar con las fuentes disponibles y se omiten para no aportar enlaces no confirmados.

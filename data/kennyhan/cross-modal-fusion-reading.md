@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kennyhan/cross-modal-fusion-reading` es un repositorio de HuggingFace publicado por el usuario kennyhan que, segun su propia model card, no contiene un modelo entrenado sino un conjunto estructurado de notas de investigacion sobre *cross modal fusion* (fusion entre modalidades). El artefacto principal declarado es `review.md`, un documento de notas, y el repositorio incluye ademas un fichero de pesos en formato safetensors cuyo recuento de parametros es de 16.576, una cifra que corresponde a un artefacto auxiliar (del orden de decenas de miles de parametros) y en ningun caso a un modelo de lenguaje funcional.
+`kennyhan/cross-modal-fusion-reading` es un repositorio de Hugging Face publicado por el usuario kennyhan que, segun su propia model card, no contiene un modelo entrenado sino un conjunto estructurado de notas de investigacion sobre *cross modal fusion* (fusion entre modalidades). El artefacto principal declarado es `review.md`, un documento de notas, y el repositorio incluye ademas un fichero de pesos en formato safetensors cuyo recuento de parametros es de 16.576, una cifra que corresponde a un artefacto auxiliar (del orden de decenas de miles de parametros) y en ningun caso a un modelo de lenguaje funcional.
 
 La model card es explicita al respecto: el autor indica que las secciones etiquetadas como planes o hipotesis no deben interpretarse como resultados experimentales, y que el trabajo no reclama mejoras en benchmarks, ablaciones completadas, codigo publicado ni checkpoint entrenado. El repositorio se presenta, por tanto, como material exploratorio de lectura y verificacion, no como un modelo desplegable.
 
@@ -77,5 +77,5 @@ No disponible. El repositorio no contiene un modelo entrenado ni declara una tar
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kennyhan/cross-modal-fusion-reading
+- Repositorio en Hugging Face: https://huggingface.co/kennyhan/cross-modal-fusion-reading
 - No se han encontrado otros enlaces (papers, blogs, repositorios de codigo o demos) en la informacion proporcionada.

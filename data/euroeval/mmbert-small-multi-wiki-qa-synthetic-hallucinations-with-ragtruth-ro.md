@@ -26,7 +26,7 @@ El modelo se basa en ModernBERT, una arquitectura de transformer encoder optimiz
 - Detección de alucinaciones a nivel de token en respuestas de QA generadas con RAG.
 - Clasificación de tokens como correctos o alucinados, lo que permite señalar la porción exacta de texto problemática.
 - Capacidad multilingüe implícita, ya que se publican variantes para varios idiomas (inglés, español, italiano, feroés, rumano), aunque no se detalla la cobertura exacta.
-- Integración con el ecosistema Transformers de HuggingFace (pipeline de token-classification).
+- Integración con el ecosistema Transformers de Hugging Face (pipeline de token-classification).
 
 ## Casos de uso
 
@@ -45,7 +45,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 - VRAM estimada para inferencia: con 140 millones de parámetros y pesos en fp32, el modelo ocupa aproximadamente 0,56 GB; con cuantización a fp16 se reduce a unos 0,28 GB, por lo que cabe en cualquier GPU con al menos 1 GB de VRAM.
 - GPU recomendadas: cualquier GPU de consumo con más de 4 GB de VRAM (por ejemplo, GTX 1650, RTX 3050 o superior) es suficiente para inferencia en batch pequeño.
-- Opciones de despliegue: se puede cargar con la librería Transformers de HuggingFace, y también es compatible con herramientas como vLLM o TGI, aunque al ser un modelo de clasificación de tokens, lo más natural es usarlo con el pipeline de token-classification.
+- Opciones de despliegue: se puede cargar con la librería Transformers de Hugging Face, y también es compatible con herramientas como vLLM o TGI, aunque al ser un modelo de clasificación de tokens, lo más natural es usarlo con el pipeline de token-classification.
 - Latencia y throughput: no se proporcionan datos, pero para un modelo de 140M parámetros en una GPU moderna, la inferencia de un texto de 512 tokens suele estar por debajo de los 100 ms.
 
 ## Comparativa con modelos similares
@@ -63,7 +63,7 @@ No hay información suficiente para comparar con otros modelos de detección de 
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-ro)
+- [Hugging Face del modelo](https://huggingface.co/EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-ro)
 - [Variante en inglés](https://huggingface.co/EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-en)
 - [Variante en español](https://huggingface.co/EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-es)
 - [Variante en italiano](https://huggingface.co/EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-it)

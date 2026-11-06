@@ -4,9 +4,9 @@
 
 LTX-2.5-22b-IC-LoRA-Water-Simulation es un adaptador LoRA de tipo IC (in-context) publicado por Lightricks sobre su modelo base Lightricks/LTX-2.5. Se distribuye como un repositorio de 1,0 GB con un unico archivo de difusion (tag `diffusion-single-file`) y esta etiquetado para la tarea de video a video (`pipeline: video-to-video`). Su especialidad declarada es la simulacion de agua dentro de flujos de trabajo de VFX, es decir, la aplicacion de efectos de agua (salpicaduras, chorros, superficies liquidas) sobre metraje ya existente en lugar de generar planos desde cero.
 
-Tecnicamente no es un modelo completo, sino un adaptador que se combina con LTX-2.5. El identificador del repositorio incluye "22b", lo que apunta a que el modelo base tiene del orden de 22 000 millones de parametros, pero la ficha de HuggingFace no confirma ese dato ni publica la arquitectura interna, el numero de fotogramas soportados o la resolucion maxima. La relevancia del lanzamiento esta en el enfoque: en lugar de pedir al modelo base que invente un plano, el IC-LoRA aporta control sobre un clip de entrada, algo critico en postproduccion, donde el resultado debe encajar con material rodado.
+Tecnicamente no es un modelo completo, sino un adaptador que se combina con LTX-2.5. El identificador del repositorio incluye "22b", lo que apunta a que el modelo base tiene del orden de 22 000 millones de parametros, pero la ficha de Hugging Face no confirma ese dato ni publica la arquitectura interna, el numero de fotogramas soportados o la resolucion maxima. La relevancia del lanzamiento esta en el enfoque: en lugar de pedir al modelo base que invente un plano, el IC-LoRA aporta control sobre un clip de entrada, algo critico en postproduccion, donde el resultado debe encajar con material rodado.
 
-El repositorio esta restringido (gated): es necesario aceptar las condiciones en HuggingFace para descargarlo. Se publica bajo la licencia `ltx-2.x-community-license`, que no es una licencia de codigo abierto estandar, y solo declara soporte de prompts en ingles. En el momento de redactar esta ficha acumula 132 descargas y 10 "me gusta", por lo que se trata de un recurso muy reciente y con poca validacion externa todavia.
+El repositorio esta restringido (gated): es necesario aceptar las condiciones en Hugging Face para descargarlo. Se publica bajo la licencia `ltx-2.x-community-license`, que no es una licencia de codigo abierto estandar, y solo declara soporte de prompts en ingles. En el momento de redactar esta ficha acumula 132 descargas y 10 "me gusta", por lo que se trata de un recurso muy reciente y con poca validacion externa todavia.
 
 ## Especificaciones tecnicas
 
@@ -18,14 +18,14 @@ El repositorio esta restringido (gated): es necesario aceptar las condiciones en
 | Longitud de contexto | No disponible. Al ser un modelo de video no se especifican numero de fotogramas, resolucion ni duracion maxima del clip |
 | Tipos de cuantizacion | No disponible. El repositorio se distribuye como archivo unico de difusion (tag `diffusion-single-file`) |
 | Idiomas soportados | Ingles (tag `en`) |
-| Licencia | `ltx-2.x-community-license` (categoria "other" en HuggingFace) |
+| Licencia | `ltx-2.x-community-license` (categoria "other" en Hugging Face) |
 | Formato de pesos | Archivo unico para pipelines de difusion (tag `diffusion-single-file`); no se confirma la extension concreta |
 | Tipo de modelo | Adaptador LoRA de control in-context (IC-LoRA) |
 | Modelo base | Lightricks/LTX-2.5 |
 | Tarea | Video a video |
 | Especialidad declarada | Simulacion de agua para VFX (`water-simulation`) |
 | Tamano del repositorio | 1,0 GB |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Publicado | 9 de septiembre de 2026 |
 | Ultima actualizacion | 10 de septiembre de 2026 |
 | Descargas / likes | 132 / 10 |
@@ -38,7 +38,7 @@ Lo unico deducible de las etiquetas es la categoria tecnica: un IC-LoRA es un ad
 
 ## Capacidades
 
-- Video a video: transforma un clip de entrada aplicando el efecto aprendido, segun el pipeline declarado en HuggingFace.
+- Video a video: transforma un clip de entrada aplicando el efecto aprendido, segun el pipeline declarado en Hugging Face.
 - Simulacion de agua: la especialidad del adaptador es generar efectos de agua (salpicaduras, chorros, superficies, cascadas) sobre metraje existente, orientado a VFX.
 - Control in-context: el mecanismo IC-LoRA condiciona la generacion al contenido del video de origen, en lugar de partir unicamente de un prompt de texto.
 - Prompts en ingles: el unico idioma declarado en las etiquetas es el ingles.
@@ -70,7 +70,7 @@ Las cifras de esta seccion son estimaciones orientativas derivadas del numero de
 - Cuantizacion en 4 bits: por debajo de 15 GB solo para pesos, pero la difusion de video rara vez es viable en esa configuracion sin perdida apreciable de calidad.
 - GPU recomendadas: A100 80 GB y H100 80 GB para 16 bits sin offloading; H200 o GPU multi-tarjeta para lotes. En gama consumer, RTX 4090 y RTX 5090 son las opciones realistas, presumiblemente con cuantizacion y offloading.
 - El adaptador en si ocupa 1,0 GB, por lo que su coste adicional de VRAM es marginal frente al del modelo base al que se aplica.
-- Opciones de despliegue: al ser un modelo de difusion de video no aplica vLLM ni TGI. Las vias esperables son el pipeline de difusion de HuggingFace (`diffusers`), ComfyUI y el repositorio oficial de la familia LTX, aunque la informacion proporcionada no confirma ninguna integracion concreta.
+- Opciones de despliegue: al ser un modelo de difusion de video no aplica vLLM ni TGI. Las vias esperables son el pipeline de difusion de Hugging Face (`diffusers`), ComfyUI y el repositorio oficial de la familia LTX, aunque la informacion proporcionada no confirma ninguna integracion concreta.
 - Latencia y throughput: no disponibles. No se publican tiempos de generacion, numero de pasos de muestreo ni resoluciones de referencia.
 
 ## Comparativa con modelos similares
@@ -79,7 +79,7 @@ No se dispone de datos de benchmarks ni de especificaciones verificadas para est
 
 | Modelo | Tipo | Parametros (referencia aproximada) | Licencia | Control video a video | Disponibilidad |
 |---|---|---|---|---|---|
-| LTX-2.5-22b-IC-LoRA-Water-Simulation | Adaptador IC-LoRA sobre LTX-2.5 | No confirmado (base ~22B segun identificador) | ltx-2.x-community-license | Si, es su funcion principal | Pesos restringidos (gated) en HuggingFace |
+| LTX-2.5-22b-IC-LoRA-Water-Simulation | Adaptador IC-LoRA sobre LTX-2.5 | No confirmado (base ~22B segun identificador) | ltx-2.x-community-license | Si, es su funcion principal | Pesos restringidos (gated) en Hugging Face |
 | Wan 2.1 / 2.2 (Alibaba) | Modelo de difusion de video completo | ~14B en las variantes principales (no verificado) | Apache 2.0 en las variantes abiertas | Existen variantes de control y edicion | Pesos abiertos |
 | HunyuanVideo (Tencent) | Modelo de difusion de video completo | ~13B (no verificado) | Licencia comunitaria propia con restricciones | Existen adaptadores de control de la comunidad | Pesos abiertos con aceptacion de terminos |
 | CogVideoX (THUDM) | Modelo de difusion de video completo | ~5B y ~2B (no verificado) | Licencia propia de CogVideoX | Variantes de video a video disponibles | Pesos abiertos |
@@ -91,7 +91,7 @@ La diferencia principal frente a estos competidores no es de rendimiento, sino d
 - Sin datos de rendimiento: no hay benchmarks publicados, por lo que no es posible estimar la calidad del efecto ni su consistencia temporal antes de probarlo.
 - Especializacion estrecha: el adaptador esta entrenado para simulacion de agua. Fuera de ese dominio su comportamiento es impredecible y no se debe esperar que funcione como un modelo de video generalista.
 - Dependencia del modelo base: requiere LTX-2.5, sujeta a la misma licencia y a los mismos requisitos de hardware. No es util de forma autonoma.
-- Acceso restringido: el repositorio esta en modo gated y exige aceptar condiciones en HuggingFace, lo que puede impedir su uso en entornos automatizados o en descargas anonimas.
+- Acceso restringido: el repositorio esta en modo gated y exige aceptar condiciones en Hugging Face, lo que puede impedir su uso en entornos automatizados o en descargas anonimas.
 - Licencia no estandar: `ltx-2.x-community-license` es una licencia comunitaria, no una licencia de codigo abierto reconocida. Los terminos concretos (limites de facturacion, restricciones territoriales, obligaciones de atribucion) no se detallan en la informacion disponible y deben revisarse en el texto completo antes de cualquier uso comercial.
 - Idioma: solo se declara ingles, lo que puede degradar los resultados con prompts en castellano u otros idiomas.
 - Riesgo de artefactos fisicos: en modelos de difusion de video los efectos de fluidos pueden presentar incoherencias entre fotogramas, volumen de agua inconsistente entre planos o interaccion incorrecta con los objetos de la escena. Es un riesgo inherente a la tecnica y no se ha publicado ninguna evaluacion al respecto.
@@ -101,8 +101,8 @@ La diferencia principal frente a estos competidores no es de rendimiento, sino d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lightricks/LTX-2.5-22b-IC-LoRA-Water-Simulation
+- Modelo en Hugging Face: https://huggingface.co/Lightricks/LTX-2.5-22b-IC-LoRA-Water-Simulation
 - Modelo base LTX-2.5: https://huggingface.co/Lightricks/LTX-2.5
-- Organizacion Lightricks en HuggingFace: https://huggingface.co/Lightricks
+- Organizacion Lightricks en Hugging Face: https://huggingface.co/Lightricks
 
 No se han encontrado otros enlaces relevantes (papers, blogs tecnicos, repositorios de codigo o demos) en la busqueda web realizada, cuyos resultados no guardaban relacion con el modelo.

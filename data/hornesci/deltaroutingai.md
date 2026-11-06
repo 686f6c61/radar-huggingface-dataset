@@ -79,14 +79,14 @@ Estimaciones basadas en los 27B de parametros del modelo base; el autor no publi
 - En GPU de consumo: la ruta NF4 deberia caber en RTX 4090, RTX 3090 o RTX 5090 con 24 GB o mas, siempre con contexto reducido y verificando el pico de memoria real.
 - Opciones de despliegue: transformers + peft + bitsandbytes (ruta reproducida por el autor con PyTorch 2.9.1 y CUDA 12.8), vLLM con soporte de adaptadores LoRA, TGI con adaptadores. llama.cpp u Ollama requeririan convertir el base y el adaptador a GGUF, algo que no se proporciona en el repositorio.
 - Latencia y throughput: no disponibles. La evaluacion del autor aplico un limite de 768 tokens nuevos con cota de 60 segundos por respuesta, lo que no permite derivar cifras de rendimiento.
-- Nota: la model card marca `inference: false`, por lo que no hay widget de inferencia alojado en HuggingFace.
+- Nota: la model card marca `inference: false`, por lo que no hay widget de inferencia alojado en Hugging Face.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Tipo | Disponibilidad |
 |---|---|---|---|---|---|
-| DeltaRoutingAI (adaptador sobre Qwen3.8-27B) | 27B (base) + adaptador de 233,6 MB | No disponible | Apache 2.0 | LoRA de continued pretraining sobre documentacion de Python | HuggingFace, 13 descargas |
-| Qwen/Qwen3.8-27B (base, adaptador desactivado) | 27B | No disponible | Apache 2.0 (upstream) | Modelo base | HuggingFace |
+| DeltaRoutingAI (adaptador sobre Qwen3.8-27B) | 27B (base) + adaptador de 233,6 MB | No disponible | Apache 2.0 | LoRA de continued pretraining sobre documentacion de Python | Hugging Face, 13 descargas |
+| Qwen/Qwen3.8-27B (base, adaptador desactivado) | 27B | No disponible | Apache 2.0 (upstream) | Modelo base | Hugging Face |
 | Otros adaptadores LoRA de continued pretraining sobre documentacion tecnica | No disponible | No disponible | No disponible | LoRA | No disponible |
 
 No se dispone en la informacion proporcionada de datos de rendimiento, contexto o licencia de alternativas directas en la misma categoria (adaptadores de dominio para modelos de clase 27B), por lo que no es posible establecer una comparativa cuantitativa con terceros. La unica comparacion con datos medidos es contra el propio modelo base.
@@ -105,7 +105,7 @@ No se dispone en la informacion proporcionada de datos de rendimiento, contexto 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HorneSci/DeltaRoutingAI
+- Modelo en Hugging Face: https://huggingface.co/HorneSci/DeltaRoutingAI
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - REPORT.md (intervalos de confianza pareados, revisiones de fuentes y comandos de replay): dentro del repositorio, ruta `REPORT.md`
 - Paquete de referencia: `benchmarks/baseline-release/`

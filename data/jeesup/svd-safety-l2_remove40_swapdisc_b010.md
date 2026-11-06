@@ -91,6 +91,6 @@ No se dispone de datos de benchmarks del modelo sin comprimir en la informacion 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_remove40_swapdisc_b010
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_remove40_swapdisc_b010
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, a papers asociados ni a demos (los resultados devueltos no guardan relacion con el modelo).

@@ -83,7 +83,7 @@ No se dispone de comparaciones con otros modelos densos de ~3B parámetros (como
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jhyuckkim/DeepSeek-V2-Lite-Dense-3B-DO-ACP-K6
+- Modelo en Hugging Face: https://huggingface.co/jhyuckkim/DeepSeek-V2-Lite-Dense-3B-DO-ACP-K6
 - Paper (arXiv): https://arxiv.org/abs/2605.28207
 - Código del paper: https://github.com/krafton-ai/moe-to-dense
 - Licencia del modelo: https://github.com/deepseek-ai/DeepSeek-V2/blob/main/LICENSE-MODEL

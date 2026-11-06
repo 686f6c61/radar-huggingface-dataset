@@ -64,6 +64,6 @@ No disponible. Este repositorio no es un modelo de lenguaje y no existe una cate
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/guptaaaravpuj/prompt-engineering-study
+- Repositorio en Hugging Face: https://huggingface.co/guptaaaravpuj/prompt-engineering-study
 - Guía de *prompt engineering* de DAIR-AI (referencia externa): https://github.com/dair-ai/Prompt-Engineering-Guide
 - Guía de *prompting* en línea: https://www.promptingguide.ai/

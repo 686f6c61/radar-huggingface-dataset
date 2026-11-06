@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| quill-poetry-v1 | 7,2 mil millones (adaptador LoRA sobre Mistral 7B) | 32 768 tokens | Apache-2.0 | HuggingFace, 0 descargas, 0 likes | Sin benchmarks publicados |
+| quill-poetry-v1 | 7,2 mil millones (adaptador LoRA sobre Mistral 7B) | 32 768 tokens | Apache-2.0 | Hugging Face, 0 descargas, 0 likes | Sin benchmarks publicados |
 | mistralai/Mistral-7B-Instruct-v0.3 | 7,2 mil millones | 32 768 tokens | Apache-2.0 | Ampliamente disponible | Resultados publicados por Mistral AI en su model card |
 | meta-llama/Llama-3.1-8B-Instruct | 8,03 mil millones | 131 072 tokens | Licencia comunitaria de Llama 3.1 (con restricciones) | Ampliamente disponible | Resultados publicados por Meta |
 | Qwen/Qwen2.5-7B-Instruct | 7,6 mil millones | 131 072 tokens (hasta 32 768 en generacion tipica) | Apache-2.0 | Ampliamente disponible | Resultados publicados por Alibaba |
@@ -87,7 +87,7 @@ No se han identificado adaptadores LoRA poeticos comparables con documentacion p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cyberviser/quill-poetry-v1
+- Modelo en Hugging Face: https://huggingface.co/cyberviser/quill-poetry-v1
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3
 - Libreria de carga: https://github.com/huggingface/peft
 - La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo, su autor ni el proyecto GLASSEYE / 0AI; los unicos resultados obtenidos trataban sobre ordenes religiosas catolicas y no guardan relacion con la consulta, por lo que se omiten.

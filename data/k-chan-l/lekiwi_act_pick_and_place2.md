@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `k-chan-l/lekiwi_act_pick_and_place2` es un policy de aprendizaje por imitación basado en Action Chunking with Transformers (ACT), entrenado con el framework LeRobot de HuggingFace. Está diseñado para controlar un robot móvil LeKiwi, compuesto por un brazo SO-101 montado sobre una base holonómica de tres ruedas, y resuelve una tarea de pick-and-place móvil: recoger un cubo, desplazarse hasta una cesta y depositarlo en ella.
+El modelo `k-chan-l/lekiwi_act_pick_and_place2` es un policy de aprendizaje por imitación basado en Action Chunking with Transformers (ACT), entrenado con el framework LeRobot de Hugging Face. Está diseñado para controlar un robot móvil LeKiwi, compuesto por un brazo SO-101 montado sobre una base holonómica de tres ruedas, y resuelve una tarea de pick-and-place móvil: recoger un cubo, desplazarse hasta una cesta y depositarlo en ella.
 
 El modelo consume observaciones de estado del robot (9 dimensiones) y dos flujos de imagen (cámara frontal y cámara de muñeca, ambas a 480×640 píxeles) y produce acciones de 9 dimensiones. Con 51,7 millones de parámetros, es un modelo compacto que puede ejecutarse en hardware de consumo. Su relevancia radica en demostrar la viabilidad de ACT para manipulación móvil con bases holonómicas, un escenario más complejo que el pick-and-place estático, y en servir como referencia reproducible dentro del ecosistema LeRobot.
 
@@ -68,7 +68,7 @@ No se dispone de información suficiente para establecer una comparativa cuantit
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/k-chan-l/lekiwi_act_pick_and_place2
+- Modelo en Hugging Face: https://huggingface.co/k-chan-l/lekiwi_act_pick_and_place2
 - Dataset de entrenamiento: https://huggingface.co/datasets/k-chan-l/lekiwi_pick_and_place2
 - Repositorio GitHub del proyecto: https://github.com/k-chan-l/lekiwi-act-mobile-pick-and-place
 - Paper de ACT: https://huggingface.co/papers/2304.13705

@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La ta
 | Modelo | Tipo | Rango LoRA | Contexto de entrenamiento | Dataset | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
 | Ray2333/Qwen3.5-4B-game-sft-lora-r64-step3000 (este) | Adaptador LoRA all-linear sobre Qwen3.5-4B | 64 | 32.768 tokens | game-plus/trajectories-sft (multimodal) | no disponible | 0 descargas, 0 likes |
-| Ray2333/Qwen3.5-4B-game-sft-lora-r64-step1000-fulldata | Adaptador LoRA sobre Qwen3.5-4B | 64 | no disponible | mismo dataset, checkpoint 1000 | no disponible | pública en HuggingFace, con discusiones abiertas |
+| Ray2333/Qwen3.5-4B-game-sft-lora-r64-step1000-fulldata | Adaptador LoRA sobre Qwen3.5-4B | 64 | no disponible | mismo dataset, checkpoint 1000 | no disponible | pública en Hugging Face, con discusiones abiertas |
 | uiuc-kang-lab/Qwen3.5-4B-general-LoRA-r64 | Adaptador LoRA de propósito general sobre Qwen3.5-4B | 64 | no disponible | no disponible (sin model card) | no disponible | 7 descargas |
 | qwen35-4b-lora-sft (IIIIQIIII, GitHub) | Receta de fine-tuning LoRA sobre Qwen3.5-4B | 128 | no disponible | dataset SFT de agente/razonamiento de StepFun | no disponible | repositorio público en GitHub |
 
@@ -86,7 +86,7 @@ La comparación relevante es entre checkpoints del mismo autor: este adaptador (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ray2333/Qwen3.5-4B-game-sft-lora-r64-step3000
+- Modelo en Hugging Face: https://huggingface.co/Ray2333/Qwen3.5-4B-game-sft-lora-r64-step3000
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Checkpoint previo del mismo autor (paso 1000, datos completos): https://huggingface.co/Ray2333/Qwen3.5-4B-game-sft-lora-r64-step1000-fulldata/discussions
 - Adaptador LoRA general de Qwen3.5-4B (UIUC Kang Lab): https://huggingface.co/uiuc-kang-lab/Qwen3.5-4B-general-LoRA-r64

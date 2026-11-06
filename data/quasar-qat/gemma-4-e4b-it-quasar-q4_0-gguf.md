@@ -116,7 +116,7 @@ No se dispone de comparaciones con modelos de otros fabricantes del mismo orden 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/QUASAR-QAT/gemma-4-E4B-it-QUASAR-Q4_0-GGUF
+- Modelo en Hugging Face: https://huggingface.co/QUASAR-QAT/gemma-4-E4B-it-QUASAR-Q4_0-GGUF
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Paper de QUASAR: https://arxiv.org/abs/2608.13966
 - Coleccion Gemma 4 E4B y 12B con QAT de 4 bits de QUASAR: https://huggingface.co/collections/QUASAR-QAT/quasar-native-4-bit-gemma-4-6aa3561770e6e4001271bf1e

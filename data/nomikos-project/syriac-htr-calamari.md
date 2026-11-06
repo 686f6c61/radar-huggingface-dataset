@@ -69,7 +69,7 @@ No se dispone de datos de rendimiento para comparar estos modelos. El modelo de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nomikos-project/syriac-htr-calamari
+- Hugging Face: https://huggingface.co/nomikos-project/syriac-htr-calamari
 - Nomikos app: https://www.nomikos.app/
 - Modelo similar: https://huggingface.co/kkkamur07/syriac-htr-calamari
 - GitHub greekOCR: https://github.com/kkkamur07/greekOCR

@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Idiomas | Entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NamiGen Language Detection v1 | Clasificador ONNX de idioma hablado | vi, ja, ko, en, zh | Log-mel `[batch, 1, 80, 398]`, audio 8 kHz, 4 s | no disponible | HuggingFace (0 descargas) |
+| NamiGen Language Detection v1 | Clasificador ONNX de idioma hablado | vi, ja, ko, en, zh | Log-mel `[batch, 1, 80, 398]`, audio 8 kHz, 4 s | no disponible | Hugging Face (0 descargas) |
 | Whisper (detección de idioma integrada) | Modelo ASR con cabeza de detección de idioma | ~99 idiomas | Audio 16 kHz, ventana de 30 s | MIT (versiones abiertas de OpenAI) | Ampliamente disponible |
-| SpeechBrain VoxLingua107 | Clasificador de idioma hablado | 107 idiomas | Audio 16 kHz | Apache 2.0 | HuggingFace |
-| MMS-LID (Meta) | Clasificador de idioma hablado | 126 idiomas | Audio 16 kHz | CC-BY-NC 4.0 | HuggingFace |
+| SpeechBrain VoxLingua107 | Clasificador de idioma hablado | 107 idiomas | Audio 16 kHz | Apache 2.0 | Hugging Face |
+| MMS-LID (Meta) | Clasificador de idioma hablado | 126 idiomas | Audio 16 kHz | CC-BY-NC 4.0 | Hugging Face |
 
 La comparación es aproximada: NamiGen opera a 8 kHz con un frontend propio y solo cinco clases, mientras que las alternativas cubren decenas o centenares de idiomas a 16 kHz con licencias documentadas. No se dispone de métricas de precisión de NamiGen para comparar rendimiento de forma cuantitativa.
 
@@ -82,6 +82,6 @@ La comparación es aproximada: NamiGen opera a 8 kHz con un frontend propio y so
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hoanganhpham/namigen-lang-detection
+- Modelo en Hugging Face: https://huggingface.co/hoanganhpham/namigen-lang-detection
 - Fichero de verificación de integridad: `namigen-lang-detection-v1.sha256` (incluido en el repositorio del modelo)
 - No se han encontrado en la información proporcionada papers, blogs, repositorios de código ni demos adicionales.

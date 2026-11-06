@@ -6,7 +6,7 @@ Ouro-1.4B es un modelo de lenguaje de 1.434.652.673 parametros (1,4 B) construid
 
 El problema que aborda es la eficiencia parametrica y el razonamiento iterativo: en lugar de razonar emitiendo tokens intermedios, el modelo realiza computo recurrente en espacio latente, con un mecanismo de salida temprana (early exit) que permite asignar computo de forma adaptativa segun la dificultad de la peticion. Se entreno sobre 7,7 billones de tokens en cuatro etapas y emplea atencion multi-cabeza con RoPE, SwiGLU y normalizacion Sandwich RMSNorm.
 
-La relevancia actual del modelo es doble: por un lado, explora una via alternativa al escalado clasico en parametros; por otro, su model card lo declara explicitamente apto unicamente para investigacion, no para produccion. La ficha de HuggingFace figura publicada por el usuario `anonymous-bird-72`, mientras que la propia model card y los ejemplos de codigo referencian el repositorio `ByteDance/Ouro-1.4B`, una discrepancia de procedencia que conviene verificar antes de cualquier uso.
+La relevancia actual del modelo es doble: por un lado, explora una via alternativa al escalado clasico en parametros; por otro, su model card lo declara explicitamente apto unicamente para investigacion, no para produccion. La ficha de Hugging Face figura publicada por el usuario `anonymous-bird-72`, mientras que la propia model card y los ejemplos de codigo referencian el repositorio `ByteDance/Ouro-1.4B`, una discrepancia de procedencia que conviene verificar antes de cualquier uso.
 
 ## Especificaciones tecnicas
 
@@ -29,7 +29,7 @@ La relevancia actual del modelo es doble: por un lado, explora una via alternati
 | Normalizacion | Sandwich RMSNorm |
 | Vocabulario | 49.152 tokens |
 | Tamano del repositorio | 2,9 GB |
-| Fecha de creacion (HuggingFace) | 2026-09-21 |
+| Fecha de creacion (Hugging Face) | 2026-09-21 |
 
 ## Arquitectura y entrenamiento
 
@@ -97,7 +97,7 @@ La diferencia estructural relevante frente a los tres alternativas es que Ouro-1
 
 - La model card declara explicitamente que el modelo esta destinado unicamente a investigacion y se entrega "tal cual", sin garantias para uso en produccion.
 - Aunque la licencia es Apache-2.0, esa advertencia del autor es un caveat operativo relevante: no hay garantia de robustez, soporte ni mantenimiento.
-- Discrepancia de procedencia: la ficha de HuggingFace pertenece al usuario `anonymous-bird-72` mientras que la model card y los ejemplos de codigo apuntan a `ByteDance/Ouro-1.4B`. Conviene verificar la autenticidad de los pesos antes de usarlos.
+- Discrepancia de procedencia: la ficha de Hugging Face pertenece al usuario `anonymous-bird-72` mientras que la model card y los ejemplos de codigo apuntan a `ByteDance/Ouro-1.4B`. Conviene verificar la autenticidad de los pesos antes de usarlos.
 - El repositorio registra 0 descargas y 0 likes en el momento de la consulta, sin historial de validacion independiente.
 - Restriccion de version: se requiere `transformers<4.56.0` y se recomienda `transformers==4.54.1` o anterior; existe un parche de cache KV externo (`ouro-cache-fix`) para resolver la incompatibilidad con versiones posteriores.
 - vLLM no soporta la salida temprana, por lo que en ese backend se paga siempre el coste completo de los 4 pasos recurrentes.
@@ -110,7 +110,7 @@ La diferencia estructural relevante frente a los tres alternativas es que Ouro-1
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anonymous-bird-72/Ouro-1.4B
+- Modelo en Hugging Face: https://huggingface.co/anonymous-bird-72/Ouro-1.4B
 - Repositorio referenciado en la model card: https://huggingface.co/ByteDance/Ouro-1.4B
 - Paper: https://huggingface.co/papers/2510.25741 (arXiv:2510.25741, "Scaling Latent Reasoning via Looped Language Models")
 - Pagina del proyecto: https://ouro-llm.github.io/

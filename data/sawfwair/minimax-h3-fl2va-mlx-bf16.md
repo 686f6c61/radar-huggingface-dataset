@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros activos | Cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Sawfwair/MiniMax-H3-FL2VA-MLX-BF16 (este) | 20.11B | BF16/INT8/FP16/FP32 | No disponible | MiniMax H3 Community (restricciones geográficas) | HuggingFace, MLX |
-| Sawfwair/MiniMax-H3-FL2VA-MLX-4bit | No disponible | 4-bit | No disponible | MiniMax H3 Community | HuggingFace, MLX |
-| MiniMaxAI/MiniMax-H3 (base) | No disponible | No disponible | No disponible | MiniMax H3 Community | HuggingFace, GitHub |
+| Sawfwair/MiniMax-H3-FL2VA-MLX-BF16 (este) | 20.11B | BF16/INT8/FP16/FP32 | No disponible | MiniMax H3 Community (restricciones geográficas) | Hugging Face, MLX |
+| Sawfwair/MiniMax-H3-FL2VA-MLX-4bit | No disponible | 4-bit | No disponible | MiniMax H3 Community | Hugging Face, MLX |
+| MiniMaxAI/MiniMax-H3 (base) | No disponible | No disponible | No disponible | MiniMax H3 Community | Hugging Face, GitHub |
 
 No se dispone de datos de rendimiento comparativo entre estas versiones.
 
@@ -75,7 +75,7 @@ No se dispone de datos de rendimiento comparativo entre estas versiones.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Sawfwair/MiniMax-H3-FL2VA-MLX-BF16
+- Repositorio Hugging Face: https://huggingface.co/Sawfwair/MiniMax-H3-FL2VA-MLX-BF16
 - Versión 4-bit del mismo autor: https://huggingface.co/Sawfwair/MiniMax-H3-FL2VA-MLX-4bit
 - Repositorio GitHub del modelo base MiniMax-H3: https://github.com/MiniMax-AI/MiniMax-H3
 - Índice de archivos del modelo MiniMax H3: https://h3aivideo.com/blog/minimax-h3-model-files-and-download-index

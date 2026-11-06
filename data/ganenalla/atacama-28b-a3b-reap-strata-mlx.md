@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Atacama-28b-a3b-reap-strata-mlx es un modelo de generación de texto y código basado en arquitectura Mixture-of-Experts (MoE), publicado por el usuario Ganenalla en HuggingFace. Se distribuye en formato MLX cuantizado a 4 bits, específicamente optimizado para inferencia en Apple Silicon (GPU Metal), y deriva de la familia Qwen3.5-MoE según el tag `qwen3_5_moe` del repositorio. El modelo aplica dos técnicas propietarias declaradas por el autor: Router-weighted Expert Activation Pruning (REAP) y Strata Precision Reinvestment.
+Atacama-28b-a3b-reap-strata-mlx es un modelo de generación de texto y código basado en arquitectura Mixture-of-Experts (MoE), publicado por el usuario Ganenalla en Hugging Face. Se distribuye en formato MLX cuantizado a 4 bits, específicamente optimizado para inferencia en Apple Silicon (GPU Metal), y deriva de la familia Qwen3.5-MoE según el tag `qwen3_5_moe` del repositorio. El modelo aplica dos técnicas propietarias declaradas por el autor: Router-weighted Expert Activation Pruning (REAP) y Strata Precision Reinvestment.
 
 La propuesta central es un compromiso entre tamaño total y coste de cómputo por token: con 28.239.145.728 parámetros totales, solo aproximadamente 3.000 millones se activan por paso de decodificación (denominación A3B), lo que permite, según la model card, velocidades sostenidas superiores a 100 tokens por segundo en hardware Apple. El repositorio ocupa 15,9 GB, lo que lo sitúa en el rango manejable para equipos con 24 GB de memoria unificada.
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento del modelo que permitan una comparación c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ganenalla/atacama-28b-a3b-reap-strata-mlx
+- Hugging Face: https://huggingface.co/Ganenalla/atacama-28b-a3b-reap-strata-mlx
 - Model card referenciada en el README: https://huggingface.co/Ganenalla/atacama-35b-a3b-reap-strata
 - Librería MLX-LM: https://github.com/ml-explore/mlx-lm
 - Documentación de MLX: https://ml-explore.github.io/mlx/

@@ -96,7 +96,7 @@ No se han identificado alternativas comparables con datos verificables a partir 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dougalldeepmind/2026-10-09-qwen36-0-da-tools-15-canary-octda-septbase
+- Modelo en Hugging Face: https://huggingface.co/dougalldeepmind/2026-10-09-qwen36-0-da-tools-15-canary-octda-septbase
 - Dataset referenciado: hf.co/datasets/dougalldeepmind/2026-10-09-da-tools-15-canary-octda-septbase-mix (revision 4b24829a71271f4e7311fd6eff7fdfd1d29170a3)
 - Modelo base referenciado: https://huggingface.co/Qwen/Qwen3.6-27B (revision 6a9e13bd6fc8f0983b9b99948120bc37f49c13e9)
 - Repositorio de codigo referenciado: https://github.com/Matthew-Bozoukov/Lessons_from_constituitional_AFT.git (revision 8088d349c766197b294095b7df0b19287072c32c)

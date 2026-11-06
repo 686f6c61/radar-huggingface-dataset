@@ -2,7 +2,7 @@
 
 ## Resumen
 
-G-star es un modelo de generacion de imagenes a partir de texto (text-to-image) desarrollado por DAGroup-PKU (Universidad de Pekin) y publicado en HuggingFace bajo licencia MIT. Su particularidad es que reutiliza un modelo de lenguaje existente, Qwen3-8B, como backbone generativo: en lugar de difundir latentes como los difusion models clasicos, el LLM genera una rejilla de 32x32 codigos discretos de un visual tokenizer (g16), que despues un refiner SR2x convierte en una imagen nativa de 2048x2048. Este enfoque autoregresivo unificado, similar al de modelos como Chameleon o Emu, integra la comprension y la generacion visual en la misma arquitectura transformer.
+G-star es un modelo de generacion de imagenes a partir de texto (text-to-image) desarrollado por DAGroup-PKU (Universidad de Pekin) y publicado en Hugging Face bajo licencia MIT. Su particularidad es que reutiliza un modelo de lenguaje existente, Qwen3-8B, como backbone generativo: en lugar de difundir latentes como los difusion models clasicos, el LLM genera una rejilla de 32x32 codigos discretos de un visual tokenizer (g16), que despues un refiner SR2x convierte en una imagen nativa de 2048x2048. Este enfoque autoregresivo unificado, similar al de modelos como Chameleon o Emu, integra la comprension y la generacion visual en la misma arquitectura transformer.
 
 El repositorio incluye el modelo completo: el backbone Qwen3-8B con un puente de embeddings visuales y una cabeza de imagen denominada DSpark, el visual tokenizer g16 (16 codebooks de 16.384 entradas con downsampling de 32x) y el refiner SR2x con su propio encoder visual, codebooks, DiT y VAE. El peso total verificado en safetensors es de aproximadamente 9,64 mil millones de parametros, con un tamano de repositorio de 45,8 GB.
 
@@ -84,5 +84,5 @@ G-star se distingue de los difusion models en que la generacion es autoregresiva
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DAGroup-PKU/G-star
+- Modelo en Hugging Face: https://huggingface.co/DAGroup-PKU/G-star
 - No se han encontrado enlaces adicionales relevantes (paper, blog o repositorio externo) en la informacion disponible.

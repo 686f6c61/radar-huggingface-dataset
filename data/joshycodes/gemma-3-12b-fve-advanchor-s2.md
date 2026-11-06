@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Parametros | Contexto | Estado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | `joshycodes/gemma-3-12b-fve-advanchor-s2` | 13,19 B (13.194.203.760) | 128.000 tokens heredados del base; no verificado | Checkpoint de investigacion, sin evaluar | `research-only` | 0 descargas, 0 likes; solo safetensors |
-| `google/gemma-3-12b-it` | 12 B (clase) | 128.000 tokens segun la documentacion de Gemma 3 | Modelo instruct publicado por Google DeepMind | Licencia Gemma (terminos propios) | Ampliamente distribuido; disponible en HuggingFace y Ollama |
+| `google/gemma-3-12b-it` | 12 B (clase) | 128.000 tokens segun la documentacion de Gemma 3 | Modelo instruct publicado por Google DeepMind | Licencia Gemma (terminos propios) | Ampliamente distribuido; disponible en Hugging Face y Ollama |
 | `ollama/library/gemma3:12b` | 12 B | 128.000 tokens | Distribucion cuantizada del modelo base | Sujeta a la licencia Gemma | Listo para ejecucion local |
-| Familia Gemma 3 (1B, 4B, 27B) | 1 B / 4 B / 27 B | 128.000 tokens en los tamanos citados | Modelos base y QAT publicados | Licencia Gemma | Disponibles en HuggingFace y Ollama |
+| Familia Gemma 3 (1B, 4B, 27B) | 1 B / 4 B / 27 B | 128.000 tokens en los tamanos citados | Modelos base y QAT publicados | Licencia Gemma | Disponibles en Hugging Face y Ollama |
 
 No se dispone de datos de rendimiento comparado entre estas alternativas en la información proporcionada, por lo que la comparación se limita a parámetros, contexto, licencia y disponibilidad.
 
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparado entre estas alternativas en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/gemma-3-12b-fve-advanchor-s2
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/gemma-3-12b-fve-advanchor-s2
 - Modelo base: https://huggingface.co/google/gemma-3-12b-it
 - Dataset relacionado (corpus de commitments): https://huggingface.co/datasets/joshycodes/gemma-3-12b-commitments-corpus/tree/main
 - Repositorio de Gemma de Google DeepMind: https://github.com/google-deepmind/gemma

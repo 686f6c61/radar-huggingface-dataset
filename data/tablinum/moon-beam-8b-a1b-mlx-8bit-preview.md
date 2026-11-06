@@ -90,7 +90,7 @@ Fidelidad de cuantización frente a BF16:
 
 | Modelo | Parámetros | Contexto | Licencia | Formato / disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Moon-Beam 8B A1B (MLX 8-bit) | 7,9B totales, ~1B activos | 131.072 | MIT | MLX, GGUF, BF16 en HuggingFace | Entrenado para respuesta con recuperación (*engram*) |
+| Moon-Beam 8B A1B (MLX 8-bit) | 7,9B totales, ~1B activos | 131.072 | MIT | MLX, GGUF, BF16 en Hugging Face | Entrenado para respuesta con recuperación (*engram*) |
 | inclusionAI Ling-3.0-tiny | No disponible en la información | No disponible | No disponible | No disponible | Modelo base sobre el que se ajusta Moon-Beam |
 | Modelos densos de ~8B | ~8B | Variable | Variable | Variable | Referencia de categoría; sin datos de comparación directa en la información disponible |
 
@@ -109,7 +109,7 @@ No se dispone de datos de benchmarks comparativos con alternativas concretas en 
 
 ## Enlaces
 
-- [Modelo en HuggingFace (MLX 8-bit, esta ficha)](https://huggingface.co/tablinum/Moon-Beam-8B-A1B-MLX-8bit-Preview)
+- [Modelo en Hugging Face (MLX 8-bit, esta ficha)](https://huggingface.co/tablinum/Moon-Beam-8B-A1B-MLX-8bit-Preview)
 - [Modelo base: tablinum/Moon-Beam-8B-A1B-Preview](https://huggingface.co/tablinum/Moon-Beam-8B-A1B-Preview)
 - [Variante MLX 4-bit](https://huggingface.co/tablinum/Moon-Beam-8B-A1B-MLX-Preview)
 - [Variante GGUF](https://huggingface.co/tablinum/Moon-Beam-8B-A1B-GGUF-Preview)

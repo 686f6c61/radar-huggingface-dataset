@@ -77,9 +77,9 @@ Mejora del ajuste fino sobre el reranker base: +3,1 puntos en ar->en (IC 95 % [+
 
 | Modelo | Parametros | Contexto | Rendimiento (macro MRR@10) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mzahran1/arabic-english-reranker-mminilm | 117,6 M | 256 tokens | 82,7 (e5-small) / 85,0 (RRF bge-m3+BM25) | Apache-2.0 | HuggingFace |
-| cross-encoder/mmarco-mMiniLMv2-L12-H384-v1 (base) | ~117 M | no disponible | 80,5 (e5-small) | Apache-2.0 (segun modelo base) | HuggingFace |
-| multilingual-e5-small (sin reranker) | no disponible | no disponible | 66,9 | no disponible | HuggingFace |
+| mzahran1/arabic-english-reranker-mminilm | 117,6 M | 256 tokens | 82,7 (e5-small) / 85,0 (RRF bge-m3+BM25) | Apache-2.0 | Hugging Face |
+| cross-encoder/mmarco-mMiniLMv2-L12-H384-v1 (base) | ~117 M | no disponible | 80,5 (e5-small) | Apache-2.0 (segun modelo base) | Hugging Face |
+| multilingual-e5-small (sin reranker) | no disponible | no disponible | 66,9 | no disponible | Hugging Face |
 
 La comparativa se limita a los modelos evaluados en la model card. No se dispone de datos de otros rerankers cross-linguales arabe-ingles en la informacion proporcionada.
 
@@ -96,7 +96,7 @@ La comparativa se limita a los modelos evaluados en la model card. No se dispone
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mzahran1/arabic-english-reranker-mminilm
+- Modelo en Hugging Face: https://huggingface.co/mzahran1/arabic-english-reranker-mminilm
 - Modelo base: https://huggingface.co/cross-encoder/mmarco-mMiniLMv2-L12-H384-v1
 - Embedder complementario: https://huggingface.co/mzahran1/arabic-english-e5-small-retrieval
 - Codigo, benchmark y resultados completos: https://github.com/mahmoudzahran01/arabic-english-retrieval-eval

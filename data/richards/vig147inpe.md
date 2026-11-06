@@ -4,7 +4,7 @@
 
 ## Resumen
 
-El modelo RICHARDS/VIg147INPE es un adaptador LoRA (Low-Rank Adaptation) para el modelo de texto a imagen `krea/Krea-2-Turbo`, publicado en HuggingFace por el usuario RICHARDS. Se distribuye a través de la librería Diffusers y utiliza el pipeline `text-to-image` con la plantilla `diffusion-lora`. El repositorio ocupa 0.1 GB y está etiquetado como un LoRA de difusión, lo que indica que añade una personalización concreta al modelo base, probablemente un estilo visual o un concepto específico. No se dispone de documentación sobre los datos de entrenamiento, el propósito exacto ni las especificaciones técnicas del adaptador; la model card solo incluye una galería de imágenes y un enlace de descarga. La relevancia actual del modelo es limitada: ha recibido 2 descargas y 0 "me gusta", y no hay información pública que permita evaluar su rendimiento. Por tanto, es un candidato para investigación o pruebas con LoRA en modelos de difusión, pero no para producción sin una evaluación previa.
+El modelo RICHARDS/VIg147INPE es un adaptador LoRA (Low-Rank Adaptation) para el modelo de texto a imagen `krea/Krea-2-Turbo`, publicado en Hugging Face por el usuario RICHARDS. Se distribuye a través de la librería Diffusers y utiliza el pipeline `text-to-image` con la plantilla `diffusion-lora`. El repositorio ocupa 0.1 GB y está etiquetado como un LoRA de difusión, lo que indica que añade una personalización concreta al modelo base, probablemente un estilo visual o un concepto específico. No se dispone de documentación sobre los datos de entrenamiento, el propósito exacto ni las especificaciones técnicas del adaptador; la model card solo incluye una galería de imágenes y un enlace de descarga. La relevancia actual del modelo es limitada: ha recibido 2 descargas y 0 "me gusta", y no hay información pública que permita evaluar su rendimiento. Por tanto, es un candidato para investigación o pruebas con LoRA en modelos de difusión, pero no para producción sin una evaluación previa.
 
 ## Especificaciones tecnicas
 
@@ -71,4 +71,4 @@ No disponible. Se trata de un adaptador LoRA sin documentación comparable. Los 
 
 ## Enlaces
 
-- HuggingFace: [https://huggingface.co/RICHARDS/VIg147INPE](https://huggingface.co/RICHARDS/VIg147INPE)
+- Hugging Face: [https://huggingface.co/RICHARDS/VIg147INPE](https://huggingface.co/RICHARDS/VIg147INPE)

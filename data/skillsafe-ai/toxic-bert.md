@@ -70,10 +70,10 @@ Ambas pruebas se ejecutan sobre CPU con onnxruntime y entradas rellenas de ceros
 
 | Modelo | Arquitectura | Etiquetas | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| skillsafe-ai/toxic-bert | BERT + cabeza de clasificacion | 6 | ONNX (FP32 y cuantizado) | Apache-2.0 | HuggingFace; pesos identicos al upstream |
-| Xenova/toxic-bert | BERT + cabeza de clasificacion | 6 | ONNX | Apache-2.0 | HuggingFace; es el origen directo de este export |
-| unitary/toxic-bert (Detoxify) | BERT + cabeza de clasificacion | 6 | PyTorch | Apache-2.0 | HuggingFace y GitHub de Detoxify; es el origen del entrenamiento |
-| Alternativas de moderacion basadas en RoBERTa (por ejemplo variantes de hate speech de CardiffNLP) | RoBERTa + cabeza de clasificacion | variable | PyTorch / ONNX segun variante | variable | HuggingFace; datos de rendimiento no disponibles en esta busqueda |
+| skillsafe-ai/toxic-bert | BERT + cabeza de clasificacion | 6 | ONNX (FP32 y cuantizado) | Apache-2.0 | Hugging Face; pesos identicos al upstream |
+| Xenova/toxic-bert | BERT + cabeza de clasificacion | 6 | ONNX | Apache-2.0 | Hugging Face; es el origen directo de este export |
+| unitary/toxic-bert (Detoxify) | BERT + cabeza de clasificacion | 6 | PyTorch | Apache-2.0 | Hugging Face y GitHub de Detoxify; es el origen del entrenamiento |
+| Alternativas de moderacion basadas en RoBERTa (por ejemplo variantes de hate speech de CardiffNLP) | RoBERTa + cabeza de clasificacion | variable | PyTorch / ONNX segun variante | variable | Hugging Face; datos de rendimiento no disponibles en esta busqueda |
 
 La comparativa se limita a parametros de formato, licencia y origen: no hay resultados de benchmarks publicados en la informacion disponible que permitan comparar exactitud entre estas alternativas.
 
@@ -90,8 +90,8 @@ La comparativa se limita a parametros de formato, licencia y origen: no hay resu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/skillsafe-ai/toxic-bert
-- Modelo base en HuggingFace: https://huggingface.co/Xenova/toxic-bert
+- Modelo en Hugging Face: https://huggingface.co/skillsafe-ai/toxic-bert
+- Modelo base en Hugging Face: https://huggingface.co/Xenova/toxic-bert
 - Commit upstream fijado: https://huggingface.co/Xenova/toxic-bert/tree/65cbc2607cb7fad64f98d1e8a5a3d1f8577895fd
 - Repositorio de recetas y convertidor de SkillSafe: https://github.com/skillsafe-admin/skillsafe.ai-website/tree/main/models
 - Proyecto Detoxify (Unitary): https://github.com/unitaryai/detoxify

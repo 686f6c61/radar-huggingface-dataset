@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Bloques de plegamiento | MSA | ESMC | Parametros (M) | Pasos de muestreo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| ESMFold2 Experimental Fast base600M step1500k (esta ficha) | 24 | No | 600M (segun nombre del checkpoint) | 746,187 (pesos publicados) | 14 | AGPL-3.0 | HuggingFace, implementacion no oficial OFoldX |
-| ESMFold2 Fast | 24 | No | 6B | 6.548,432 | 14 | No disponible en la informacion | HuggingFace (oteam/esmfold2-fast) |
-| ESMFold2 Experimental Fast | 24 | No | 6B | 6.531,170 | 14 | No disponible en la informacion | HuggingFace (oteam/esmfold2-experimental-fast) |
-| ESMFold2 (completo) | 48 | Si | 6B | 6.586,242 | 14 | No disponible en la informacion | HuggingFace (oteam/esmfold2) |
+| ESMFold2 Experimental Fast base600M step1500k (esta ficha) | 24 | No | 600M (segun nombre del checkpoint) | 746,187 (pesos publicados) | 14 | AGPL-3.0 | Hugging Face, implementacion no oficial OFoldX |
+| ESMFold2 Fast | 24 | No | 6B | 6.548,432 | 14 | No disponible en la informacion | Hugging Face (oteam/esmfold2-fast) |
+| ESMFold2 Experimental Fast | 24 | No | 6B | 6.531,170 | 14 | No disponible en la informacion | Hugging Face (oteam/esmfold2-experimental-fast) |
+| ESMFold2 (completo) | 48 | Si | 6B | 6.586,242 | 14 | No disponible en la informacion | Hugging Face (oteam/esmfold2) |
 | ESMFold original | No disponible | No | ESM-2 (no ESMC) | No disponible en la informacion | No disponible | No disponible en la informacion | Repositorio Biohub/esm |
 
 No se dispone en la informacion proporcionada de comparaciones numericas de precision (lDDT, GDT-TS) entre estas variantes ni frente a AlphaFold2/3, por lo que la comparativa se limita a configuracion, tamano y disponibilidad.
@@ -93,7 +93,7 @@ No se dispone en la informacion proporcionada de comparaciones numericas de prec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oteam/esmfold2-experimental-fast-base600m-step1500k
+- Modelo en Hugging Face: https://huggingface.co/oteam/esmfold2-experimental-fast-base600m-step1500k
 - Variante completa: https://huggingface.co/oteam/esmfold2
 - Variante fast: https://huggingface.co/oteam/esmfold2-fast
 - Variante experimental: https://huggingface.co/oteam/esmfold2-experimental

@@ -84,10 +84,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| Delphi-6e20-2.9B (este) | 2,895e9 | 4096 | Apache 2.0 | Modelo base de suite de escalado, solo ingles, research-only | HuggingFace (rohithck, marin-community) |
-| Pythia-2.8B | 2,8e9 | 2048 | Apache 2.0 | Suite de escalado con checkpoints intermedios, solo ingles | EleutherAI en HuggingFace |
-| Qwen3-1.7B | 1,7e9 | 32.768 (nativo) | Apache 2.0 | Modelo base/instruido multilingue con modo thinking | Alibaba en HuggingFace |
-| Qwen3-4B | 4e9 | 32.768 (nativo) | Apache 2.0 | Modelo base/instruido multilingue con modo thinking | Alibaba en HuggingFace |
+| Delphi-6e20-2.9B (este) | 2,895e9 | 4096 | Apache 2.0 | Modelo base de suite de escalado, solo ingles, research-only | Hugging Face (rohithck, marin-community) |
+| Pythia-2.8B | 2,8e9 | 2048 | Apache 2.0 | Suite de escalado con checkpoints intermedios, solo ingles | EleutherAI en Hugging Face |
+| Qwen3-1.7B | 1,7e9 | 32.768 (nativo) | Apache 2.0 | Modelo base/instruido multilingue con modo thinking | Alibaba en Hugging Face |
+| Qwen3-4B | 4e9 | 32.768 (nativo) | Apache 2.0 | Modelo base/instruido multilingue con modo thinking | Alibaba en Hugging Face |
 
 La comparacion con Pythia es la mas directa por filosofia (suite de escalado con semillas multiples y checkpoints intermedios). Frente a Qwen3, la diferencia clave es que Delphi es solo preentrenado, solo ingles y con contexto de 4096, mientras que Qwen3 ofrece contexto mucho mayor, multilingue y versiones instruidas. Los datos de rendimiento de Delphi no estan publicados, por lo que no es posible comparar metricas de benchmarks de forma directa.
 
@@ -105,9 +105,9 @@ La comparacion con Pythia es la mas directa por filosofia (suite de escalado con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rohithck/delphi-6e20-2.9Bparams-29.9Btokens-seed62746
+- Modelo en Hugging Face: https://huggingface.co/rohithck/delphi-6e20-2.9Bparams-29.9Btokens-seed62746
 - Blog de Delphi ("Scaling Laws That Extrapolate 300x Past the Fit"): https://openathena.ai/blog/delphi
-- Organizacion marin-community en HuggingFace (todos los checkpoints Delphi): https://huggingface.co/marin-community
+- Organizacion marin-community en Hugging Face (todos los checkpoints Delphi): https://huggingface.co/marin-community
 - Dataset con datos de las figuras del blog: https://huggingface.co/datasets/marin-community/delphi-blog-data
 - Codigo de la receta (completed_adamh.py): https://github.com/marin-community/marin/blob/fded7179f373834a320f6c30dc68bd30476e07ae/experiments/references/completed_adamh.py
 - Configuracion de entrenamiento (train_delphi_seeds.py): https://github.com/marin-community/marin/blob/fded7179f373834a320f6c30dc68bd30476e07ae/experiments/references/train_delphi_seeds.py

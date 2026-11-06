@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Este modelo es un encoder visual de estilo para texto en escenas (scene-text). Fue desarrollado por el usuario de HuggingFace `zqpresent` y publicado como `m0a3cebee1aaac92424b0`. Se trata de un modelo de inferencia pública que toma una imagen recortada de una región de texto y devuelve representaciones normalizadas del estilo global, la tipografía/fuente y la apariencia, además de ocho tokens de estilo locales. Resuelve el problema de extraer características de estilo tipográfico y visual a partir de recortes de texto en imágenes, lo que permite tareas de recuperación por estilo o de análisis de fuentes.
+Este modelo es un encoder visual de estilo para texto en escenas (scene-text). Fue desarrollado por el usuario de Hugging Face `zqpresent` y publicado como `m0a3cebee1aaac92424b0`. Se trata de un modelo de inferencia pública que toma una imagen recortada de una región de texto y devuelve representaciones normalizadas del estilo global, la tipografía/fuente y la apariencia, además de ocho tokens de estilo locales. Resuelve el problema de extraer características de estilo tipográfico y visual a partir de recortes de texto en imágenes, lo que permite tareas de recuperación por estilo o de análisis de fuentes.
 
-El modelo está construido sobre una arquitectura DINOv2 ViT-S/14, que es un transformer de visión preentrenado, y ha sido afinado específicamente para esta tarea. El repositorio de HuggingFace incluye únicamente los pesos de inferencia en formato safetensors, el archivo de configuración y los avisos de licencia del backbone original. No incluye código de entrenamiento ni datos adicionales. El modelo tiene un total de 23.295.104 parámetros y ocupa aproximadamente 0,1 GB. No se especifica una longitud de contexto, ya que se trata de un encoder de imágenes y no de un modelo de lenguaje.
+El modelo está construido sobre una arquitectura DINOv2 ViT-S/14, que es un transformer de visión preentrenado, y ha sido afinado específicamente para esta tarea. El repositorio de Hugging Face incluye únicamente los pesos de inferencia en formato safetensors, el archivo de configuración y los avisos de licencia del backbone original. No incluye código de entrenamiento ni datos adicionales. El modelo tiene un total de 23.295.104 parámetros y ocupa aproximadamente 0,1 GB. No se especifica una longitud de contexto, ya que se trata de un encoder de imágenes y no de un modelo de lenguaje.
 
 ## Especificaciones técnicas
 
@@ -73,7 +73,7 @@ No se dispone de información para una comparativa directa con otros modelos de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zqpresent/m0a3cebee1aaac92424b0
+- Modelo en Hugging Face: https://huggingface.co/zqpresent/m0a3cebee1aaac92424b0
 - Repositorio de código para inferencia: https://github.com/zqpresent/aaazhouquandecangku
 - Perfil de GitHub del autor: https://github.com/zqpresent
 - No se han encontrado papers, blogs, demos ni otros enlaces relevantes en la búsqueda web.

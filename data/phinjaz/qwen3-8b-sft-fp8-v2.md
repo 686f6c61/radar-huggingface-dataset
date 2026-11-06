@@ -2,7 +2,7 @@
 
 ## Resumen
 
-qwen3-8b-sft-fp8-v2 es un ajuste fino por supervisión (SFT) del modelo unsloth/Qwen3-8B-FP8, publicado por el usuario phinjaz en HuggingFace. Se trata, por tanto, de un derivado del Qwen3-8B de Alibaba, en su variante previamente cuantizada a FP8 por Unsloth, sobre el que se ha aplicado un entrenamiento adicional con la librería TRL y el stack de Unsloth. El repositorio se publicó el 15 de octubre de 2026 y, en el momento de redactar esta ficha, acumula 0 descargas y 0 likes.
+qwen3-8b-sft-fp8-v2 es un ajuste fino por supervisión (SFT) del modelo unsloth/Qwen3-8B-FP8, publicado por el usuario phinjaz en Hugging Face. Se trata, por tanto, de un derivado del Qwen3-8B de Alibaba, en su variante previamente cuantizada a FP8 por Unsloth, sobre el que se ha aplicado un entrenamiento adicional con la librería TRL y el stack de Unsloth. El repositorio se publicó el 15 de octubre de 2026 y, en el momento de redactar esta ficha, acumula 0 descargas y 0 likes.
 
 El modelo resuelve, en principio, el mismo problema que cualquier SFT sobre una base instructiva: adaptar el comportamiento del modelo a un dataset concreto (estilo de respuesta, dominio, formato). Sin embargo, la model card no documenta ni el dataset utilizado, ni el número de tokens de entrenamiento, ni el procedimiento de evaluación, ni la licencia aplicada. El tamaño del repositorio (1,9 GB) es notablemente inferior al que correspondería a un checkpoint completo de 8B parámetros en FP8 (del orden de 8-9 GB), lo que sugiere que el repositorio podría contener únicamente parte de los pesos o un artefacto parcial.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| phinjaz/qwen3-8b-sft-fp8-v2 | ~8,2B (base) | no disponible | no disponible | HuggingFace, 0 descargas, safetensors |
-| Qwen/Qwen3-8B (base original) | ~8,2B | 32.768 tokens nativos, 131.072 con YaRN | Apache-2.0 | HuggingFace, ampliamente descargado y evaluado |
-| unsloth/Qwen3-8B-FP8 (base directa) | ~8,2B | 32.768 tokens nativos, 131.072 con YaRN | Apache-2.0 (heredada de Qwen) | HuggingFace, variante cuantizada de la anterior |
-| Meta Llama 3.1 8B Instruct | ~8B | 128.000 tokens | Licencia comunitaria de Meta Llama 3.1 | HuggingFace, ampliamente descargado |
+| phinjaz/qwen3-8b-sft-fp8-v2 | ~8,2B (base) | no disponible | no disponible | Hugging Face, 0 descargas, safetensors |
+| Qwen/Qwen3-8B (base original) | ~8,2B | 32.768 tokens nativos, 131.072 con YaRN | Apache-2.0 | Hugging Face, ampliamente descargado y evaluado |
+| unsloth/Qwen3-8B-FP8 (base directa) | ~8,2B | 32.768 tokens nativos, 131.072 con YaRN | Apache-2.0 (heredada de Qwen) | Hugging Face, variante cuantizada de la anterior |
+| Meta Llama 3.1 8B Instruct | ~8B | 128.000 tokens | Licencia comunitaria de Meta Llama 3.1 | Hugging Face, ampliamente descargado |
 
 No se dispone de datos de rendimiento del modelo objeto de esta ficha que permitan compararlo con las alternativas. Los datos de las filas correspondientes a modelos base y a Llama 3.1 proceden de la documentación pública de cada proyecto y no de la información proporcionada en esta búsqueda; conviene verificarlos en sus repositorios originales.
 
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento del modelo objeto de esta ficha que permit
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/phinjaz/qwen3-8b-sft-fp8-v2
+- Modelo en Hugging Face: https://huggingface.co/phinjaz/qwen3-8b-sft-fp8-v2
 - Modelo base directo: https://huggingface.co/unsloth/Qwen3-8B-FP8
 - Modelo base original: https://huggingface.co/Qwen/Qwen3-8B
 - Repositorio de TRL: https://github.com/huggingface/trl

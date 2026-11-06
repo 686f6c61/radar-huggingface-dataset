@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto / entradas | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| bigshanedogg/DA3-LARGE-1.1 (este) | 410.941.767 | N vistas por forward | Apache-2.0 | HuggingFace, transformers con trust_remote_code | Port no oficial, pesos idénticos al checkpoint oficial |
-| depth-anything/DA3-LARGE-1.1 | no disponible en la informacion | N vistas por forward | Apache-2.0 | HuggingFace (checkpoint oficial) | Requiere el paquete `depth_anything_3` |
+| bigshanedogg/DA3-LARGE-1.1 (este) | 410.941.767 | N vistas por forward | Apache-2.0 | Hugging Face, transformers con trust_remote_code | Port no oficial, pesos idénticos al checkpoint oficial |
+| depth-anything/DA3-LARGE-1.1 | no disponible en la informacion | N vistas por forward | Apache-2.0 | Hugging Face (checkpoint oficial) | Requiere el paquete `depth_anything_3` |
 | Otros modelos de estimación de profundidad | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparativos en la informacion proporcionada |
 
 ## Limitaciones y advertencias

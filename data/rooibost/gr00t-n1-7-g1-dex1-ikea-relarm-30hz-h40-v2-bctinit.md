@@ -88,7 +88,7 @@ No se dispone de datos comparativos de rendimiento entre estos modelos en la inf
 - **Licencia**: Apache 2.0 permite uso comercial, pero se debe verificar la licencia de los datasets subyacentes y del modelo base.
 
 ## Enlaces
-- [HuggingFace: RooibosT/gr00t-n1.7-g1-dex1-ikea-relarm-30hz-h40-v2-bctinit](https://huggingface.co/RooibosT/gr00t-n1.7-g1-dex1-ikea-relarm-30hz-h40-v2-bctinit)
+- [Hugging Face: RooibosT/gr00t-n1.7-g1-dex1-ikea-relarm-30hz-h40-v2-bctinit](https://huggingface.co/RooibosT/gr00t-n1.7-g1-dex1-ikea-relarm-30hz-h40-v2-bctinit)
 - [GitHub: NVIDIA/Isaac-GR00T](https://github.com/NVIDIA/Isaac-GR00T)
 - [GitHub: AldrinLake/Isaac-GR00T-N1.7](https://github.com/AldrinLake/Isaac-GR00T-N1.7)
-- [HuggingFace: CK-Sung/gr00t-n17-g1-ikea-rel-60k](https://huggingface.co/CK-Sung/gr00t-n17-g1-ikea-rel-60k)
+- [Hugging Face: CK-Sung/gr00t-n17-g1-ikea-rel-60k](https://huggingface.co/CK-Sung/gr00t-n17-g1-ikea-rel-60k)

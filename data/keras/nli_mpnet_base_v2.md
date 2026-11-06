@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | `keras/nli_mpnet_base_v2` | ~110 M | 512 | Embeddings / NLI (presunto) | no disponible | KerasHub |
-| `sentence-transformers/all-mpnet-base-v2` | ~109 M | 384 | Embeddings de frase | Apache 2.0 (según su model card pública) | HuggingFace, ampliamente usado |
-| `google-bert/bert-base-uncased` | ~110 M | 512 | Encoder MLM | Apache 2.0 | HuggingFace |
-| `FacebookAI/roberta-base` | ~125 M | 512 | Encoder MLM | MIT | HuggingFace |
+| `sentence-transformers/all-mpnet-base-v2` | ~109 M | 384 | Embeddings de frase | Apache 2.0 (según su model card pública) | Hugging Face, ampliamente usado |
+| `google-bert/bert-base-uncased` | ~110 M | 512 | Encoder MLM | Apache 2.0 | Hugging Face |
+| `FacebookAI/roberta-base` | ~125 M | 512 | Encoder MLM | MIT | Hugging Face |
 
 La comparación se limita a la arquitectura y al tamaño, porque el repositorio analizado no publica métricas que permitan contrastar rendimiento. Frente a `all-mpnet-base-v2`, el modelo de KerasHub ofrece portabilidad multi-backend pero carece de la documentación de evaluación y de la licencia explícita del primero.
 
@@ -93,11 +93,11 @@ La comparación se limita a la arquitectura y al tamaño, porque el repositorio 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/keras/nli_mpnet_base_v2
+- Modelo en Hugging Face: https://huggingface.co/keras/nli_mpnet_base_v2
 - Documentación de MPNet en KerasHub: https://keras.io/api/keras_hub/models/mp_net
 - Documentación de Keras: https://keras.io/
 - Keras 3 (multi-backend): https://keras.io/keras_3/
 - Keras en Wikipedia: https://en.wikipedia.org/wiki/Keras
 - Keras en Wikipedia (francés): https://fr.wikipedia.org/wiki/Keras
 - Introducción a Keras en GeeksforGeeks: https://www.geeksforgeeks.org/deep-learning/what-is-keras/
-- Documentación de model cards de HuggingFace: https://huggingface.co/docs/hub/model-cards
+- Documentación de model cards de Hugging Face: https://huggingface.co/docs/hub/model-cards

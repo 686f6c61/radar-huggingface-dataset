@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Capibara-LLM/Qwen3.5-0.8B-Jopara-Epoch-LoRA es un ajuste fino mediante LoRA del modelo base unsloth/Qwen3.5-0.8B, desarrollado por el usuario Capibara-LLM y publicado en HuggingFace. Se trata de un modelo de generación de texto de pequeño tamaño (0,8 mil millones de parámetros) orientado a experimentación y despliegue ligero, entrenado con la librería Unsloth y TRL, lo que según el autor permite un entrenamiento el doble de rápido que con los métodos convencionales.
+Capibara-LLM/Qwen3.5-0.8B-Jopara-Epoch-LoRA es un ajuste fino mediante LoRA del modelo base unsloth/Qwen3.5-0.8B, desarrollado por el usuario Capibara-LLM y publicado en Hugging Face. Se trata de un modelo de generación de texto de pequeño tamaño (0,8 mil millones de parámetros) orientado a experimentación y despliegue ligero, entrenado con la librería Unsloth y TRL, lo que según el autor permite un entrenamiento el doble de rápido que con los métodos convencionales.
 
 El modelo se distribuye bajo licencia Apache 2.0 y está etiquetado únicamente para el idioma inglés. La model card es extremadamente escueta y no proporciona información sobre el conjunto de datos de entrenamiento, el propósito específico del ajuste ni los resultados obtenidos, por lo que la mayor parte de las especificaciones técnicas deben inferirse del modelo base o marcarse como no disponibles.
 
@@ -25,7 +25,7 @@ Su relevancia radica en el ecosistema Qwen3.5 de Alibaba y en la facilidad de de
 
 El modelo es un ajuste fino LoRA sobre unsloth/Qwen3.5-0.8B, un transformer decoder-only de la familia Qwen3.5. La model card no detalla la arquitectura interna del modelo base (número de capas, dimensión oculta, mecanismo de atención, uso de atención lineal o decodificación especulativa), por lo que estos datos deben consultarse en la documentación del modelo base de Qwen.
 
-El entrenamiento se realizó con Unsloth y la librería TRL de HuggingFace, según indica el autor, con una aceleración de aproximadamente 2x respecto a un entrenamiento estándar. No se especifica el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF, DPO o SFT. Tampoco se documenta el rango del LoRA, la tasa de aprendizaje ni otros hiperparámetros. El nombre "Jopara" sugiere una posible relación con el idioma jopará (mezcla de guaraní y español), pero la model card solo declara inglés, por lo que no puede confirmarse.
+El entrenamiento se realizó con Unsloth y la librería TRL de Hugging Face, según indica el autor, con una aceleración de aproximadamente 2x respecto a un entrenamiento estándar. No se especifica el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF, DPO o SFT. Tampoco se documenta el rango del LoRA, la tasa de aprendizaje ni otros hiperparámetros. El nombre "Jopara" sugiere una posible relación con el idioma jopará (mezcla de guaraní y español), pero la model card solo declara inglés, por lo que no puede confirmarse.
 
 ## Capacidades
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Capibara-LLM/Qwen3.5-0.8B-Jopara-Epoch-LoRA | 0,8B | no disponible | Apache 2.0 | HuggingFace (0 descargas) |
-| unsloth/Qwen3.5-0.8B (modelo base) | 0,8B | no disponible | Apache 2.0 (según herencia) | HuggingFace |
-| Qwen2.5-0.5B-Instruct | 0,5B | 32K (según documentación pública de Qwen) | Apache 2.0 | HuggingFace |
-| Llama 3.2 1B Instruct | 1B | 128K (según documentación pública de Meta) | Llama 3.2 Community License | HuggingFace |
+| Capibara-LLM/Qwen3.5-0.8B-Jopara-Epoch-LoRA | 0,8B | no disponible | Apache 2.0 | Hugging Face (0 descargas) |
+| unsloth/Qwen3.5-0.8B (modelo base) | 0,8B | no disponible | Apache 2.0 (según herencia) | Hugging Face |
+| Qwen2.5-0.5B-Instruct | 0,5B | 32K (según documentación pública de Qwen) | Apache 2.0 | Hugging Face |
+| Llama 3.2 1B Instruct | 1B | 128K (según documentación pública de Meta) | Llama 3.2 Community License | Hugging Face |
 
 La comparativa se limita a parámetros y licencia porque no hay benchmarks publicados para este ajuste. El modelo base Qwen3.5-0.8B es la referencia directa; los datos de contexto de los modelos comparables provienen de su documentación pública y no de la información proporcionada para este modelo.
 
@@ -83,7 +83,7 @@ La comparativa se limita a parámetros y licencia porque no hay benchmarks publi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Capibara-LLM/Qwen3.5-0.8B-Jopara-Epoch-LoRA
+- Modelo en Hugging Face: https://huggingface.co/Capibara-LLM/Qwen3.5-0.8B-Jopara-Epoch-LoRA
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-0.8B
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
-- TRL (HuggingFace): https://github.com/huggingface/trl
+- TRL (Hugging Face): https://github.com/huggingface/trl

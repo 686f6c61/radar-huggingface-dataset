@@ -77,7 +77,7 @@ La comparativa se limita a las variantes de la misma familia, ya que no se dispo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kerasformers/qwen2.5-vl-7b-instruct
+- Repositorio Hugging Face: https://huggingface.co/kerasformers/qwen2.5-vl-7b-instruct
 - Colección de variantes: https://huggingface.co/collections/kerasformers/qwen25-vl-6a7cc9f463d6956b6c3ba911
 - GitHub de KerasFormers: https://github.com/IMvision12/KerasFormers
 - Documentación de Qwen2.5-VL: https://imvision12.github.io/KerasFormers/qwen2_5_vl/

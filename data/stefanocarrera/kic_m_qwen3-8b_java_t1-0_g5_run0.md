@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`stefanocarrera/kic_M_Qwen3-8B_java_t1.0_g5_run0` es un ajuste fino (fine-tuning) del modelo base Qwen3-8B, concretamente sobre la variante cuantizada a 4 bits `unsloth/Qwen3-8B-Base-unsloth-bnb-4bit`. Lo publica el usuario stefanocarrera en HuggingFace y, por la nomenclatura del identificador (`java`, `t1.0`, `g5`, `run0`), parece tratarse de un experimento de entrenamiento orientado a generacion de codigo Java, aunque la model card no documenta explicitamente la tarea ni el dataset utilizado.
+`stefanocarrera/kic_M_Qwen3-8B_java_t1.0_g5_run0` es un ajuste fino (fine-tuning) del modelo base Qwen3-8B, concretamente sobre la variante cuantizada a 4 bits `unsloth/Qwen3-8B-Base-unsloth-bnb-4bit`. Lo publica el usuario stefanocarrera en Hugging Face y, por la nomenclatura del identificador (`java`, `t1.0`, `g5`, `run0`), parece tratarse de un experimento de entrenamiento orientado a generacion de codigo Java, aunque la model card no documenta explicitamente la tarea ni el dataset utilizado.
 
 El modelo hereda la arquitectura transformer densa de Qwen3-8B (8.000 millones de parametros) y se entrena con la libreria Unsloth, que acelera el proceso de fine-tuning. El repositorio es muy ligero (0,2 GB), lo que sugiere que los pesos publicados corresponden a adaptadores LoRA o a una version cuantizada, no a un checkpoint completo en precision completa.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| kic_M_Qwen3-8B_java (este) | 8B | no disponible | Apache 2.0 | HuggingFace, 0 descargas |
+| kic_M_Qwen3-8B_java (este) | 8B | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
 | Qwen3-8B (base oficial) | 8B | 32.768 tokens (nativo) | Apache 2.0 | Amplia, muy usado |
 | Llama 3.1 8B | 8B | 128.000 tokens | Llama 3.1 Community | Amplia |
 | Mistral 7B | 7B | 32.000 tokens | Apache 2.0 | Amplia |
@@ -87,7 +87,7 @@ El modelo de este analisis no aporta datos de rendimiento que permitan compararl
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/stefanocarrera/kic_M_Qwen3-8B_java_t1.0_g5_run0
+- Hugging Face: https://huggingface.co/stefanocarrera/kic_M_Qwen3-8B_java_t1.0_g5_run0
 - Modelo base: https://huggingface.co/unsloth/Qwen3-8B-Base-unsloth-bnb-4bit
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
 - Qwen3 (familia oficial): no disponible en la informacion proporcionada

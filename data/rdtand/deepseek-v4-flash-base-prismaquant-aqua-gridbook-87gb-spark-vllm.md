@@ -90,7 +90,7 @@ La comparativa principal es contra el modelo base en BF16: el artefacto cuantiza
 
 ## Enlaces
 
-- Artefacto en HuggingFace: https://huggingface.co/rdtand/DeepSeek-V4-Flash-Base-PrismaQuant-AQUA-gridbook-87GB-spark-vllm
+- Artefacto en Hugging Face: https://huggingface.co/rdtand/DeepSeek-V4-Flash-Base-PrismaQuant-AQUA-gridbook-87GB-spark-vllm
 - Modelo base DeepSeek-V4-Flash-Base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Base
 - Ficha de DeepSeek-V4-Flash en vLLM Recipes: https://recipes.vllm.ai/deepseek-ai/DeepSeek-V4-Flash
 - Perfil de DeepSeek-V4-Flash-Base en AI Models Navi: https://aimodelsnavi.com/en/models/deepseek-v4-flash-base

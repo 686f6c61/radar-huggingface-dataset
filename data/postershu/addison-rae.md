@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`postershu/addison-rae` es un repositorio publicado en HuggingFace por el usuario postershu el 6 de abril de 2025 (última actualización: 29 de octubre de 2026). Su model card está prácticamente vacía: solo declara la licencia Apache 2.0 y no incluye descripción, arquitectura, datos de entrenamiento ni ejemplos de uso. El repositorio pesa 1,3 GB y carece de etiqueta de pipeline, lo que impide determinar de forma confirmada el tipo de modelo.
+`postershu/addison-rae` es un repositorio publicado en Hugging Face por el usuario postershu el 6 de abril de 2025 (última actualización: 29 de octubre de 2026). Su model card está prácticamente vacía: solo declara la licencia Apache 2.0 y no incluye descripción, arquitectura, datos de entrenamiento ni ejemplos de uso. El repositorio pesa 1,3 GB y carece de etiqueta de pipeline, lo que impide determinar de forma confirmada el tipo de modelo.
 
 Por el nombre y por los resultados de búsqueda, todo apunta a que se trata de un LoRA o adaptador ligero para generación de imágenes que reproduce el parecido de la influencer Addison Rae, similar a los modelos homónimos disponibles en plataformas como SeaArt AI o PixAI (esta última basada en SDXL). Es una hipótesis razonable, no un dato confirmado por el autor.
 
@@ -56,14 +56,14 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada: no disponible. El tamaño del repositorio (1,3 GB) sugiere un modelo o adaptador ligero que, de ser un LoRA, requeriría además la VRAM del modelo base sobre el que se cargue.
 - GPU recomendadas: no disponible.
 - Consumer GPU: no se puede confirmar; un archivo de 1,3 GB cabe en la mayoría de GPU domésticas actuales (incluso de 4-6 GB de VRAM) si se tratara de un adaptador, pero es una estimación indirecta, no un dato oficial.
-- Despliegue: no documentado. El repositorio puede clonarse o descargarse con git o huggingface-cli; si se confirma que es un LoRA de difusión, las herramientas habituales serían ComfyUI, Automatic1111 o la librería diffusers de HuggingFace (hipótesis, no requisito oficial).
+- Despliegue: no documentado. El repositorio puede clonarse o descargarse con git o huggingface-cli; si se confirma que es un LoRA de difusión, las herramientas habituales serían ComfyUI, Automatic1111 o la librería diffusers de Hugging Face (hipótesis, no requisito oficial).
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Plataforma | Tipo declarado | Licencia | Documentación técnica |
 |---|---|---|---|---|
-| postershu/addison-rae | HuggingFace | no disponible (posible LoRA de imagen) | Apache 2.0 | model card vacía |
+| postershu/addison-rae | Hugging Face | no disponible (posible LoRA de imagen) | Apache 2.0 | model card vacía |
 | Addison Rae (SeaArt AI) | SeaArt | modelo de Stable Diffusion para generación de imágenes | no disponible | ficha en la plataforma, sin specs técnicas |
 | Addison Rae 2020 SDXL | PixAI | modelo SDXL orientado a arte fotorrealista de personaje | no disponible | ficha con tags (girl, photorealistic, realistic, celebrity) |
 
@@ -82,7 +82,7 @@ Ninguna de las alternativas localizadas publica datos técnicos verificables (pa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/postershu/addison-rae
+- Repositorio en Hugging Face: https://huggingface.co/postershu/addison-rae
 - Perfil del autor (postershu): https://huggingface.co/postershu
 - Modelo equivalente "Addison Rae" en SeaArt AI: https://www.seaart.ai/models/detail/csrt4fle878c738sieig
 - Segunda versión de "Addison Rae" en SeaArt AI: https://www.seaart.ai/models/detail/1fb7fd4945726a461483cd5a568388f9

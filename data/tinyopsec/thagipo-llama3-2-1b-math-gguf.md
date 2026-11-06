@@ -31,7 +31,7 @@ En cuanto al entrenamiento, la unica informacion disponible es que el modelo pad
 
 - Generacion de texto conversacional (`text-generation`, tag `conversational`), orientada a resolver ejercicios y problemas matematicos.
 - Razonamiento aritmetico y algebraico basico, segun la especializacion declarada por el autor del ajuste fino.
-- Compatibilidad con endpoints (tag `endpoints_compatible`), es decir, puede servirse detras de APIs compatibles con el formato de HuggingFace/llama.cpp.
+- Compatibilidad con endpoints (tag `endpoints_compatible`), es decir, puede servirse detras de APIs compatibles con el formato de Hugging Face/llama.cpp.
 - Ejecucion en llama.cpp, Ollama, LM Studio, koboldcpp y cualquier runtime compatible con GGUF.
 - No se documenta soporte de tool calling ni function calling.
 - No se documenta soporte de agentes, razonamiento multi-paso estructurado ni modo "thinking".
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparado entre estas alternativas en la i
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tinyopsec/thagiPo-llama3.2-1B-math-GGUF
+- Repositorio Hugging Face: https://huggingface.co/tinyopsec/thagiPo-llama3.2-1B-math-GGUF
 - Modelo padre (safetensors): https://huggingface.co/JoaoGuiAlves/thagiPo-llama3.2-1B-math
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-1B
 - llama.cpp (herramienta de conversion y runtime): https://github.com/ggml-org/llama.cpp

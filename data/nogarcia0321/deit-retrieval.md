@@ -2,7 +2,7 @@
 
 ## Resumen
 
-deit-retrieval es un repositorio experimental publicado por el usuario nogarcia0321 en HuggingFace. Consiste en una base de codigo basada en DeiT (Data-efficient Image Transformer) orientada a tareas de retrieval (recuperacion), cuya configuracion declara escala "huge", atencion lineal, fusion bilinear, activacion approx gelu y normalizacion rmsnorm. El propio autor lo presenta como un punto de partida de investigacion para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, y no como un modelo entrenado.
+deit-retrieval es un repositorio experimental publicado por el usuario nogarcia0321 en Hugging Face. Consiste en una base de codigo basada en DeiT (Data-efficient Image Transformer) orientada a tareas de retrieval (recuperacion), cuya configuracion declara escala "huge", atencion lineal, fusion bilinear, activacion approx gelu y normalizacion rmsnorm. El propio autor lo presenta como un punto de partida de investigacion para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, y no como un modelo entrenado.
 
 El checkpoint incluido, `model.safetensors`, se describe explicitamente como una inicializacion valida para pruebas de humo (smoke tests), con 24.832 parametros registrados en los metadatos de safetensors. No se reclama ninguna puntuacion de benchmark y el autor advierte que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio.
 
@@ -89,9 +89,9 @@ No se dispone de datos de rendimiento de este modelo que permitan una comparacio
 - Idiomas soportados: no disponibles; no hay informacion sobre cobertura linguistica.
 - Licencia MIT: permite uso comercial y modificacion, pero el autor recomienda revisar aparte los terminos de los datos de origen si se usa con datasets externos.
 - Para produccion: no apto en su estado actual. Cualquier resultado obtenido con un checkpoint entrenado futuro debe documentarse por separado de los valores por defecto aqui incluidos.
-- El soporte en APIs automaticas de HuggingFace requiere un adaptador explicito, ya que se trata de una implementacion personalizada.
+- El soporte en APIs automaticas de Hugging Face requiere un adaptador explicito, ya que se trata de una implementacion personalizada.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nogarcia0321/deit-retrieval
+- Repositorio en Hugging Face: https://huggingface.co/nogarcia0321/deit-retrieval
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion disponible.

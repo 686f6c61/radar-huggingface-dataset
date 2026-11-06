@@ -4,7 +4,7 @@
 
 El repositorio `yonasabiyu/ess-sdg-chatbot-data` es un dataset diseñado para alimentar un sistema de chatbot basado en Retrieval-Augmented Generation (RAG) especializado en los Objetivos de Desarrollo Sostenible (ODS) de Etiopía. Lo desarrolla yonasabiyu (Jonas2127 en GitHub) como parte del proyecto ESS RAG BOT, un sistema agéntico que utiliza LangGraph para enrutar consultas, autocorregirse cuando la recuperación falla y proporcionar respuestas fundamentadas con citas.
 
-El dataset ocupa 0,4 GB y se distribuye bajo licencia MIT, lo que permite su uso comercial y modificación sin restricciones significativas. Aunque la ficha de HuggingFace no especifica el pipeline ni los idiomas, el contexto del proyecto indica que está orientado a contenido en inglés sobre políticas y datos de desarrollo sostenible en Etiopía. Su relevancia radica en que proporciona datos estructurados para construir asistentes conversacionales con respuestas verificables, algo crítico en dominios donde la precisión factual es esencial.
+El dataset ocupa 0,4 GB y se distribuye bajo licencia MIT, lo que permite su uso comercial y modificación sin restricciones significativas. Aunque la ficha de Hugging Face no especifica el pipeline ni los idiomas, el contexto del proyecto indica que está orientado a contenido en inglés sobre políticas y datos de desarrollo sostenible en Etiopía. Su relevancia radica en que proporciona datos estructurados para construir asistentes conversacionales con respuestas verificables, algo crítico en dominios donde la precisión factual es esencial.
 
 Al tratarse de un dataset y no de un modelo preentrenado, no se dispone de arquitectura, parámetros ni benchmarks de rendimiento. Su valor reside en la calidad y estructura de los datos para entrenar o ajustar sistemas RAG, no en capacidades generativas propias.
 
@@ -72,6 +72,6 @@ No disponible. No se han encontrado datasets comparables en la informacion propo
 
 ## Enlaces
 
-- Dataset en HuggingFace: https://huggingface.co/datasets/yonasabiyu/ess-sdg-chatbot-data
+- Dataset en Hugging Face: https://huggingface.co/datasets/yonasabiyu/ess-sdg-chatbot-data
 - Repositorio GitHub del proyecto: https://github.com/Jonas2127/ess-sdg-chatbot
 - Dataset ChromaDB asociado: https://huggingface.co/datasets/yonasabiyu/ess-chromadb

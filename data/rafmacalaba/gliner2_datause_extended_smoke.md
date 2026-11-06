@@ -85,6 +85,6 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rafmacalaba/gliner2_datause_extended_smoke
+- Modelo en Hugging Face: https://huggingface.co/rafmacalaba/gliner2_datause_extended_smoke
 - Dataset de entrenamiento mencionado: `rafmacalaba/data-use-mentions-extended` (no se proporciona URL directa en la información disponible)
 - Modelo base: `fastino/gliner2-large-v1` (referenciado en la model card)

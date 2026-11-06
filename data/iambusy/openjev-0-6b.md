@@ -79,8 +79,8 @@ No se dispone de datos de benchmarks ni de especificaciones de terceros en la in
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OpenJev-0.6B (revision 0.3.0) | 1.146.880 de LoRA + 1.024 de cabeza escalar, sobre base separada | No disponible | Decisión tipada con calibración por primitiva | Apache 2.0 | HuggingFace + repositorio GitHub |
-| Qwen/Qwen3-0.6B (revision c1899de289a04d12100db370d81485cdf75e47ca) | No disponible en la información proporcionada | No disponible | Modelo base de generación de texto | No disponible en la información proporcionada | HuggingFace |
+| OpenJev-0.6B (revision 0.3.0) | 1.146.880 de LoRA + 1.024 de cabeza escalar, sobre base separada | No disponible | Decisión tipada con calibración por primitiva | Apache 2.0 | Hugging Face + repositorio GitHub |
+| Qwen/Qwen3-0.6B (revision c1899de289a04d12100db370d81485cdf75e47ca) | No disponible en la información proporcionada | No disponible | Modelo base de generación de texto | No disponible en la información proporcionada | Hugging Face |
 | Otros modelos comparables de decisión tipada | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -99,7 +99,7 @@ No se dispone de datos de benchmarks ni de especificaciones de terceros en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IamBusy/OpenJev-0.6B
+- Modelo en Hugging Face: https://huggingface.co/IamBusy/OpenJev-0.6B
 - Repositorio GitHub de OpenJev: https://github.com/IamBusy/OpenJev
 - Release v0.3.0 del modelo entrenado: https://github.com/IamBusy/OpenJev/releases/tag/v0.3.0
 - Reglas de nomenclatura y versionado (v0.3.2): https://github.com/IamBusy/OpenJev/blob/v0.3.2/docs/NAMING.md

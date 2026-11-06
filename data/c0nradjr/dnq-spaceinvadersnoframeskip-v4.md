@@ -2,9 +2,9 @@
 
 ## Resumen
 
-c0nradjr/dnq-SpaceInvadersNoFrameskip-v4 es un agente de aprendizaje por refuerzo profundo entrenado para jugar al entorno Atari SpaceInvadersNoFrameskip-v4. No es un modelo de lenguaje: es una política de control entrenada con el algoritmo DQN (Deep Q-Network) mediante la librería Stable Baselines3 y el framework RL Zoo, ambos mantenidos por el grupo DLR-RM. El autor del repositorio es el usuario de HuggingFace c0nradjr.
+c0nradjr/dnq-SpaceInvadersNoFrameskip-v4 es un agente de aprendizaje por refuerzo profundo entrenado para jugar al entorno Atari SpaceInvadersNoFrameskip-v4. No es un modelo de lenguaje: es una política de control entrenada con el algoritmo DQN (Deep Q-Network) mediante la librería Stable Baselines3 y el framework RL Zoo, ambos mantenidos por el grupo DLR-RM. El autor del repositorio es el usuario de Hugging Face c0nradjr.
 
-El problema que resuelve es acotado y experimental: aprender una política que maximice la recompensa del juego a partir de píxeles crudos, sin conocimiento previo del entorno. Se entrenó durante 1.000.000 de pasos con una política convolucional (CnnPolicy), un búfer de repetición de 100.000 transiciones y una pila de 4 fotogramas como observación. La recompensa media declarada es de 674,50 ± 139,35, un valor no verificado por HuggingFace.
+El problema que resuelve es acotado y experimental: aprender una política que maximice la recompensa del juego a partir de píxeles crudos, sin conocimiento previo del entorno. Se entrenó durante 1.000.000 de pasos con una política convolucional (CnnPolicy), un búfer de repetición de 100.000 transiciones y una pila de 4 fotogramas como observación. La recompensa media declarada es de 674,50 ± 139,35, un valor no verificado por Hugging Face.
 
 Su relevancia es principalmente metodológica: sirve como línea base reproducible de DQN en Atari dentro del ecosistema RL Zoo, lo que permite comparar variantes de algoritmo, ajustes de hiperparámetros o cambios en los wrappers de preprocesado bajo las mismas condiciones. El repositorio es pequeño (0,1 GB) y no declara licencia ni idiomas, algo habitual en artefactos de investigación de este tipo.
 
@@ -55,7 +55,7 @@ Los hiperparámetros declarados son los típicos del RL Zoo para Atari: batch_si
 
 ## Benchmarks y rendimiento
 
-Datos declarados por el autor en la model-index del repositorio (no verificados por HuggingFace):
+Datos declarados por el autor en la model-index del repositorio (no verificados por Hugging Face):
 
 | Algoritmo | Dataset / entorno | Metrica | Valor | Verificado |
 |---|---|---|---|---|
@@ -75,9 +75,9 @@ No se han publicado otros resultados de benchmarks en la informacion disponible.
 
 | Modelo | Algoritmo | Entorno | Recompensa declarada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| c0nradjr/dnq-SpaceInvadersNoFrameskip-v4 | DQN (SB3) | SpaceInvadersNoFrameskip-v4 | 674,50 +/- 139,35 (no verificado) | no disponible | HuggingFace |
-| hruslen/SpaceInvadersNoFrameskip-v4 | DQN (SB3) | SpaceInvadersNoFrameskip-v4 | no disponible | no disponible | HuggingFace |
-| kaljr/dqn-SpaceInvadersNoFrameskip-v4 | DQN (SB3) | SpaceInvadersNoFrameskip-v4 | no disponible | no disponible | HuggingFace |
+| c0nradjr/dnq-SpaceInvadersNoFrameskip-v4 | DQN (SB3) | SpaceInvadersNoFrameskip-v4 | 674,50 +/- 139,35 (no verificado) | no disponible | Hugging Face |
+| hruslen/SpaceInvadersNoFrameskip-v4 | DQN (SB3) | SpaceInvadersNoFrameskip-v4 | no disponible | no disponible | Hugging Face |
+| kaljr/dqn-SpaceInvadersNoFrameskip-v4 | DQN (SB3) | SpaceInvadersNoFrameskip-v4 | no disponible | no disponible | Hugging Face |
 | Harshit2000-sudo/dqn-SpaceInvadersNoFrameskip-v4 | DQN (SB3) | SpaceInvadersNoFrameskip-v4 | no disponible | no disponible | GitHub |
 
 Los tres modelos alternativos identificados en la búsqueda son agentes DQN entrenados con el mismo stack (Stable Baselines3 + RL Zoo) sobre el mismo entorno, por lo que son comparables en naturaleza, pero no se han publicado sus métricas en la información disponible. No se dispone de datos de parámetros, contexto ni licencia para ninguno de ellos.
@@ -96,7 +96,7 @@ Los tres modelos alternativos identificados en la búsqueda son agentes DQN entr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/c0nradjr/dnq-SpaceInvadersNoFrameskip-v4
+- Modelo en Hugging Face: https://huggingface.co/c0nradjr/dnq-SpaceInvadersNoFrameskip-v4
 - Stable Baselines3: https://github.com/DLR-RM/stable-baselines3
 - RL Zoo (rl-baselines3-zoo): https://github.com/DLR-RM/rl-baselines3-zoo
 - SB3 Contrib: https://github.com/Stable-Baselines-Team/stable-baselines3-contrib

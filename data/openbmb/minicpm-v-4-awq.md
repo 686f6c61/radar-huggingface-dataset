@@ -75,10 +75,10 @@ No se han publicado resultados detallados para OCRBench, MathVista, HallusionBen
 
 | Modelo | Parametros | Contexto | OpenCompass | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniCPM-V 4.0 (AWQ) | 4,1B | No disponible | 69,0 | Apache-2.0 | HuggingFace, ModelScope |
-| Qwen2.5-VL-3B-Instruct | 3,8B | No disponible | 64,5 | Apache-2.0 | HuggingFace |
-| MiniCPM-V 2.6 | 8,1B | No disponible | 65,2 | Apache-2.0 | HuggingFace |
-| InternVL2.5-4B | 3,7B | No disponible | 65,1 | MIT | HuggingFace |
+| MiniCPM-V 4.0 (AWQ) | 4,1B | No disponible | 69,0 | Apache-2.0 | Hugging Face, ModelScope |
+| Qwen2.5-VL-3B-Instruct | 3,8B | No disponible | 64,5 | Apache-2.0 | Hugging Face |
+| MiniCPM-V 2.6 | 8,1B | No disponible | 65,2 | Apache-2.0 | Hugging Face |
+| InternVL2.5-4B | 3,7B | No disponible | 65,1 | MIT | Hugging Face |
 
 MiniCPM-V 4.0 supera a modelos de tamano similar (Qwen2.5-VL-3B) y a su predecesor con el doble de parametros (MiniCPM-V 2.6), manteniendo una licencia permisiva. La principal ventaja es su eficiencia, que permite despliegue en dispositivos de borde.
 
@@ -93,7 +93,7 @@ MiniCPM-V 4.0 supera a modelos de tamano similar (Qwen2.5-VL-3B) y a su predeces
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/openbmb/MiniCPM-V-4-AWQ
+- Modelo en Hugging Face: https://huggingface.co/openbmb/MiniCPM-V-4-AWQ
 - Modelo base (sin cuantizar): https://huggingface.co/openbmb/MiniCPM-V-4
 - Repositorio GitHub (MiniCPM-o): https://github.com/OpenBMB/MiniCPM-o
 - Modelo en ModelScope: https://www.modelscope.cn/models/OpenBMB/MiniCPM-V-4

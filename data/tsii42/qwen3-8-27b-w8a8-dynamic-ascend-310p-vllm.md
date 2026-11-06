@@ -102,7 +102,7 @@ No se han identificado en la información disponible otros modelos de la misma c
 
 | Modelo o artefacto | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tsii42/Qwen3.8-27B-W8A8-Dynamic-Ascend-310P-vLLM | ~27B | 258.048 tokens validados | W8A8_DYNAMIC (ModelSlim) | apache-2.0 | Pública en HuggingFace, 0 descargas |
+| tsii42/Qwen3.8-27B-W8A8-Dynamic-Ascend-310P-vLLM | ~27B | 258.048 tokens validados | W8A8_DYNAMIC (ModelSlim) | apache-2.0 | Pública en Hugging Face, 0 descargas |
 | Qwen/Qwen3.8-27B (base) | ~27B | No disponible | Ninguna (BF16, presumiblemente) | No disponible | Referenciado como modelo base |
 | Cuantizaciones compressed-tensors W8A8 | No disponible | No disponible | W8A8 | No disponible | Mencionadas por el autor como alternativa no equivalente |
 | Cuantizaciones W8A8SC | No disponible | No disponible | W8A8SC | No disponible | Mencionadas por el autor como alternativa no equivalente |
@@ -123,7 +123,7 @@ No se han identificado en la información disponible otros modelos de la misma c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tsii42/Qwen3.8-27B-W8A8-Dynamic-Ascend-310P-vLLM
+- Repositorio Hugging Face: https://huggingface.co/tsii42/Qwen3.8-27B-W8A8-Dynamic-Ascend-310P-vLLM
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Resultados de benchmark en crudo del repositorio: https://huggingface.co/tsii42/Qwen3.8-27B-W8A8-Dynamic-Ascend-310P-vLLM/blob/main/benchmark-results.tsv
 - La búsqueda web realizada no devolvió resultados relevantes sobre este modelo: los enlaces obtenidos correspondían a eventos y webcams de la región de Havel (Alemania) y no guardan relación con el artefacto. No se han localizado papers, blogs ni demos adicionales.

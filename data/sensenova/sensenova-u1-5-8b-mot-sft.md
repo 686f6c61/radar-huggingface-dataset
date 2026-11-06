@@ -73,10 +73,10 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- HuggingFace (modelo SFT): https://huggingface.co/sensenova/SenseNova-U1.5-8B-MoT-SFT
-- HuggingFace (modelo principal): https://huggingface.co/sensenova/SenseNova-U1.5-8B-MoT
+- Hugging Face (modelo SFT): https://huggingface.co/sensenova/SenseNova-U1.5-8B-MoT-SFT
+- Hugging Face (modelo principal): https://huggingface.co/sensenova/SenseNova-U1.5-8B-MoT
 - Repositorio GitHub: https://github.com/OpenSenseNova/SenseNova-U1
 - ModelScope: https://modelscope.cn/models/SenseNova/SenseNova-U1.5-8B-MoT
 - Demo en línea (SenseNova-Studio): https://unify.light-ai.top/
 - Blog sobre arquitectura NEO-unify: https://huggingface.co/blog/sensenova/neo-unify
-- Colección SenseNova-U1.5 en HuggingFace: https://huggingface.co/collections/sensenova/sensenova-u15
+- Colección SenseNova-U1.5 en Hugging Face: https://huggingface.co/collections/sensenova/sensenova-u15

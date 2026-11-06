@@ -119,7 +119,7 @@ DFlash 2 supera tanto a MTP como a DSpark en aceptación y throughput en todas l
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo: [tcclaviger/Qwen3.8-27B-DFlash2-FP8](https://huggingface.co/tcclaviger/Qwen3.8-27B-DFlash2-FP8)
+- Repositorio Hugging Face de este modelo: [tcclaviger/Qwen3.8-27B-DFlash2-FP8](https://huggingface.co/tcclaviger/Qwen3.8-27B-DFlash2-FP8)
 - Repositorio original de Inco AI: [incoai/Qwen3.8-27B-DFlash2](https://huggingface.co/incoai/Qwen3.8-27B-DFlash2)
 - Modelo objetivo: [Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - Blog de DFlash 2: [https://inco.ai/blog/dflash2/](https://inco.ai/blog/dflash2/)

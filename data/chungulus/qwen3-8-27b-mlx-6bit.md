@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-MLX-6bit es una cuantizacion MLX de 6 bits del modelo Qwen/Qwen3.8-27B, un modelo vision-language de la familia Qwen desarrollado por Alibaba. Esta version concreta ha sido producida por el usuario Chungulus y publicada en HuggingFace con el proposito de ejecutar el modelo en Apple Silicon con memoria unificada. No es un fine-tune ni una modificacion de pesos: se trata de una conversion de precision mediante cuantizacion afin MLX, con la torre de vision en FP16 y un drafter MTP (Multi-Token Prediction) como companero de decodificacion especulativa.
+Qwen3.8-27B-MLX-6bit es una cuantizacion MLX de 6 bits del modelo Qwen/Qwen3.8-27B, un modelo vision-language de la familia Qwen desarrollado por Alibaba. Esta version concreta ha sido producida por el usuario Chungulus y publicada en Hugging Face con el proposito de ejecutar el modelo en Apple Silicon con memoria unificada. No es un fine-tune ni una modificacion de pesos: se trata de una conversion de precision mediante cuantizacion afin MLX, con la torre de vision en FP16 y un drafter MTP (Multi-Token Prediction) como companero de decodificacion especulativa.
 
 El modelo base utiliza una arquitectura hibrida Gated DeltaNet y atencion completa, identificada internamente como `Qwen3_5ForConditionalGeneration` (aunque no corresponde a un modelo Qwen3.5). Incluye componentes de vision, proyeccion imagen-texto, soporte de tool calling y un drafter MTP para acelerar la generacion. La cuantizacion a 6 bits con group size 64 reduce el tamano del artefacto a 23,67 GB, lo que permite su ejecucion en equipos Apple con 64 GB de memoria unificada, con un pico de memoria medido de 25,57 GB durante la inferencia.
 
@@ -83,6 +83,6 @@ No se dispone de informacion suficiente para establecer una comparativa con mode
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Chungulus/Qwen3.8-27B-MLX-6bit
+- Repositorio Hugging Face: https://huggingface.co/Chungulus/Qwen3.8-27B-MLX-6bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Herramienta de similaridad usada en validacion: https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2

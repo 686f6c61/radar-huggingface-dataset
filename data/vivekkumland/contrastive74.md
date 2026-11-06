@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`vivekkumland/contrastive74` es un repositorio de HuggingFace publicado por el usuario vivekkumland que contiene una implementación propia y compacta en PyTorch de un Vision Transformer (ViT) orientado a aprendizaje contrastivo. El autor lo describe explícitamente como un artefacto para revisión de código, pruebas de humo (*smoke tests*) y experimentos controlados de pequeño alcance, no como un modelo preentrenado listo para producción. La configuración nominal se etiqueta como escala «large», con atención estándar, fusión por *co-attention*, activación swish y normalización GroupNorm.
+`vivekkumland/contrastive74` es un repositorio de Hugging Face publicado por el usuario vivekkumland que contiene una implementación propia y compacta en PyTorch de un Vision Transformer (ViT) orientado a aprendizaje contrastivo. El autor lo describe explícitamente como un artefacto para revisión de código, pruebas de humo (*smoke tests*) y experimentos controlados de pequeño alcance, no como un modelo preentrenado listo para producción. La configuración nominal se etiqueta como escala «large», con atención estándar, fusión por *co-attention*, activación swish y normalización GroupNorm.
 
 El dato más relevante para cualquier evaluador es la discrepancia entre esa etiqueta y el contenido real: el archivo `model.safetensors` declara 24.832 parámetros totales, tres o cuatro órdenes de magnitud por debajo de un ViT-L convencional (del orden de 300 M). Es decir, el checkpoint es una inicialización válida para pruebas, no un modelo entrenado. El propio README indica que no se reclama ninguna puntuación de benchmark y que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio.
 
@@ -73,7 +73,7 @@ Los valores de los modelos de referencia son cifras públicas de arquitectura, n
 
 | Modelo | Parámetros | Contexto / entrada | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `vivekkumland/contrastive74` | 24.832 (declarado «large») | No disponible | No (checkpoint de inicialización) | BSD-3-Clause | HuggingFace, 17 descargas |
+| `vivekkumland/contrastive74` | 24.832 (declarado «large») | No disponible | No (checkpoint de inicialización) | BSD-3-Clause | Hugging Face, 17 descargas |
 | ViT-B/16 (referencia de arquitectura) | ~86 M | 224×224 px, 16×16 parches | Sí, en versiones publicadas | Variable según release | Amplia |
 | ViT-L/14 estilo CLIP (referencia) | ~300 M | 224×224 px, 14×14 parches | Sí | Variable según release | Amplia |
 | DINOv2 ViT-L/14 (referencia) | ~300 M | 518×518 px en algunos ajustes | Sí, autosupervisado | Licencia propia de Meta | Amplia |
@@ -94,5 +94,5 @@ Diferencias clave frente a las alternativas: este repositorio no ofrece pesos en
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/vivekkumland/contrastive74
+- Repositorio en Hugging Face: https://huggingface.co/vivekkumland/contrastive74
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la búsqueda web realizada.

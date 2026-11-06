@@ -71,9 +71,9 @@ Los unicos datos numericos reportados por el autor son las metricas de entrenami
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| granite-4.2-8b-analyst-lora-peft | LoRA r16 sobre base de 8B | No disponible | Sin benchmarks publicados | No disponible | HuggingFace, 0 descargas, 0 likes |
-| ibm-granite/granite-4.2-8b (modelo base) | 8B | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | HuggingFace |
-| webAI-Official/granite-4.2-8b-analyst-lora-GGUF | Mismos pesos en formato GGUF | No disponible | Sin benchmarks publicados | No disponible | HuggingFace |
+| granite-4.2-8b-analyst-lora-peft | LoRA r16 sobre base de 8B | No disponible | Sin benchmarks publicados | No disponible | Hugging Face, 0 descargas, 0 likes |
+| ibm-granite/granite-4.2-8b (modelo base) | 8B | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | Hugging Face |
+| webAI-Official/granite-4.2-8b-analyst-lora-GGUF | Mismos pesos en formato GGUF | No disponible | Sin benchmarks publicados | No disponible | Hugging Face |
 | Otras alternativas de la misma categoria | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de informacion sobre adaptadores equivalentes de otros autores para la misma tarea, por lo que no es posible establecer una comparacion de rendimiento con alternativas directas.
@@ -93,7 +93,7 @@ No se dispone de informacion sobre adaptadores equivalentes de otros autores par
 
 ## Enlaces
 
-- Adaptador PEFT en HuggingFace: https://huggingface.co/webAI-Official/granite-4.2-8b-analyst-lora-peft
+- Adaptador PEFT en Hugging Face: https://huggingface.co/webAI-Official/granite-4.2-8b-analyst-lora-peft
 - Modelo base: https://huggingface.co/ibm-granite/granite-4.2-8b
 - Version GGUF de los mismos pesos: https://huggingface.co/webAI-Official/granite-4.2-8b-analyst-lora-GGUF
 - Resultados de la busqueda web: no se han encontrado enlaces relevantes; los resultados devueltos corresponden a contenidos sin relacion con el modelo (articulos sobre el director Tim Burton).

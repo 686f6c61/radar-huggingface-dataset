@@ -1,7 +1,7 @@
 # adipotnis/m9-simple-cfsteer-robowarp
 
 ## Resumen
-El modelo `adipotnis/m9-simple-cfsteer-robowarp` es un checkpoint de robótica publicado en HuggingFace por el usuario `adipotnis`, diseñado para el control de agentes físicos mediante políticas de visión-lenguaje-acción (VLA). Los tags asociados (`pi0.5`, `openpi`, `flow-matching`, `counterfactual`, `robowarp`) sugieren que se trata de una variante del modelo Pi0.5 de Physical Intelligence, entrenado con el framework OpenPi y técnicas de flow-matching, con un enfoque en el control contra-fáctico (counterfactual) para la manipulación robótica. El repositorio ocupa 12,4 GB y está marcado con acceso restringido (gated), por lo que requiere aceptar condiciones en HuggingFace antes de su descarga.
+El modelo `adipotnis/m9-simple-cfsteer-robowarp` es un checkpoint de robótica publicado en Hugging Face por el usuario `adipotnis`, diseñado para el control de agentes físicos mediante políticas de visión-lenguaje-acción (VLA). Los tags asociados (`pi0.5`, `openpi`, `flow-matching`, `counterfactual`, `robowarp`) sugieren que se trata de una variante del modelo Pi0.5 de Physical Intelligence, entrenado con el framework OpenPi y técnicas de flow-matching, con un enfoque en el control contra-fáctico (counterfactual) para la manipulación robótica. El repositorio ocupa 12,4 GB y está marcado con acceso restringido (gated), por lo que requiere aceptar condiciones en Hugging Face antes de su descarga.
 
 Aunque no se dispone de documentación técnica oficial ni de detalles de arquitectura en la página del modelo, los tags apuntan a una arquitectura transformer multimodal que procesa observaciones visuales y lingüísticas para generar acciones motoras. La relevancia actual radica en el creciente interés por modelos VLA open source para robótica, especialmente en tareas de manipulación como las del benchmark LIBERO, que aparece en los tags. No obstante, al carecer de información pública sobre el entrenamiento o el rendimiento, cualquier evaluación debe realizarse con cautela.
 
@@ -57,7 +57,7 @@ No se dispone de datos comparativos. Como referencia, modelos similares en el á
 No se puede establecer una comparación cuantitativa porque no se conocen los parámetros ni los resultados del modelo `m9-simple-cfsteer-robowarp`.
 
 ## Limitaciones y advertencias
-- **Acceso restringido**: el modelo requiere aprobación en HuggingFace, lo que puede limitar su uso en producción o investigación.
+- **Acceso restringido**: el modelo requiere aprobación en Hugging Face, lo que puede limitar su uso en producción o investigación.
 - **Documentación insuficiente**: no hay papers, blogs ni especificaciones técnicas públicas. Cualquier uso en producción es arriesgado sin conocer la arquitectura y los datos de entrenamiento.
 - **Riesgo de alucinación y errores**: como modelo VLA, puede generar acciones incorrectas en escenarios no vistos, especialmente si el entrenamiento contraefectivo no está bien calibrado.
 - **Idiomas**: no se especifican idiomas soportados; probablemente solo inglés, lo que limita el uso en otros idiomas.
@@ -65,7 +65,7 @@ No se puede establecer una comparación cuantitativa porque no se conocen los pa
 - **Sin benchmarks**: no hay evidencia de rendimiento en tareas reales, por lo que no se recomienda su uso en producción sin pruebas previas.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/adipotnis/m9-simple-cfsteer-robowarp
+- Hugging Face: https://huggingface.co/adipotnis/m9-simple-cfsteer-robowarp
 - No hay otros enlaces (papers, blogs, repos) en la información proporcionada.
 
-*Nota: la información se ha extraído únicamente de la página de HuggingFace del modelo. Todos los datos no confirmados se han marcado como "no disponible" o se indican como inferencias.*
+*Nota: la información se ha extraído únicamente de la página de Hugging Face del modelo. Todos los datos no confirmados se han marcado como "no disponible" o se indican como inferencias.*

@@ -74,7 +74,7 @@ La comparativa se basa en datos públicos de los repositorios. La variante "unce
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/rumisan/DeepSeek-R1-Distill-Qwen-1.5B-Fully-Uncensored-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/rumisan/DeepSeek-R1-Distill-Qwen-1.5B-Fully-Uncensored-i1-GGUF
 - Modelo base (nicoboss): https://huggingface.co/nicoboss/DeepSeek-R1-Distill-Qwen-1.5B-Fully-Uncensored
 - Cuantizaciones estáticas (mradermacher): https://huggingface.co/mradermacher/DeepSeek-R1-Distill-Qwen-1.5B-Fully-Uncensored-GGUF
 - Modelo original DeepSeek-R1-Distill-Qwen-1.5B: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B

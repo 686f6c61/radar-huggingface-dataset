@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ishikaa/acquisition_generator_AS_confidence_combine_WGM_MP_gemma9b_e1` es un modelo de lenguaje publicado en HuggingFace por el usuario `ishikaa`, derivado de la arquitectura Qwen2 segun la etiqueta `qwen2` del repositorio, aunque el identificador del modelo incluye la referencia `gemma9b`, lo que sugiere un proceso de fusion o entrenamiento sobre una base Gemma de aproximadamente 9.000 millones de parametros. El checkpoint contiene 14.770.033.664 parametros reales almacenados en safetensors, un tamano considerablemente superior al de una base de 9B, lo que apunta a una combinacion de pesos (weight merging) o a un modelo compuesto por varias cabezas o modulos.
+`ishikaa/acquisition_generator_AS_confidence_combine_WGM_MP_gemma9b_e1` es un modelo de lenguaje publicado en Hugging Face por el usuario `ishikaa`, derivado de la arquitectura Qwen2 segun la etiqueta `qwen2` del repositorio, aunque el identificador del modelo incluye la referencia `gemma9b`, lo que sugiere un proceso de fusion o entrenamiento sobre una base Gemma de aproximadamente 9.000 millones de parametros. El checkpoint contiene 14.770.033.664 parametros reales almacenados en safetensors, un tamano considerablemente superior al de una base de 9B, lo que apunta a una combinacion de pesos (weight merging) o a un modelo compuesto por varias cabezas o modulos.
 
 La model card esta generada automaticamente por la plataforma y no aporta informacion sustantiva sobre el proposito, los datos de entrenamiento ni las capacidades del modelo. El nombre del repositorio sugiere un uso como generador de "acquisition" con combinacion de confianza (`confidence_combine`) y posiblemente planificacion o memoria (`WGM`, `MP`), lo que encaja con un componente interno de un sistema mayor mas que con un modelo de proposito general listo para produccion.
 
@@ -31,7 +31,7 @@ No se han publicado datos sobre el numero de tokens de entrenamiento, la composi
 
 - Generacion de texto autoregresiva mediante `transformers` con `pipeline("text-generation")`.
 - Conversacion multi-turno: la etiqueta `conversational` indica soporte de plantillas de chat, aunque no se documenta el formato exacto.
-- Compatibilidad con endpoints de HuggingFace (`endpoints_compatible`), lo que permite desplegarlo con text-generation-inference.
+- Compatibilidad con endpoints de Hugging Face (`endpoints_compatible`), lo que permite desplegarlo con text-generation-inference.
 - Capacidades especificas (codigo, matematicas, tool calling, agentes, vision, audio, thinking mode): no disponibles en la informacion proporcionada.
 - Cobertura multilingue: no disponible.
 
@@ -42,7 +42,7 @@ No se han publicado datos sobre el numero de tokens de entrenamiento, la composi
 - Generacion de candidatos en sistemas de busqueda o recomendacion: el nombre `acquisition_generator` sugiere su uso como generador de propuestas que luego se filtran con un modelo de ranking o una funcion de confianza.
 - Experimentos de investigacion en NLP: util como linea base en estudios comparativos sobre merging y su impacto en la perplexidad y la coherencia.
 - Evaluacion de robustez y sesgos: al no estar alineado ni documentado, es un buen candidato para estudiar como se comportan checkpoints sin post-entrenamiento.
-- Despliegue en endpoints de HuggingFace para demos: la etiqueta `endpoints_compatible` permite publicar una demo sin infraestructura propia, siempre que se asuma el coste de un modelo de 14,77B.
+- Despliegue en endpoints de Hugging Face para demos: la etiqueta `endpoints_compatible` permite publicar una demo sin infraestructura propia, siempre que se asuma el coste de un modelo de 14,77B.
 
 ## Benchmarks y rendimiento
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| acquisition_generator_AS_confidence_combine_WGM_MP_gemma9b_e1 | 14,77B | no disponible | no disponible | HuggingFace, 0 descargas |
+| acquisition_generator_AS_confidence_combine_WGM_MP_gemma9b_e1 | 14,77B | no disponible | no disponible | Hugging Face, 0 descargas |
 | Gemma 2 9B (Google) | 9B | 8.192 tokens | Gemma Terms of Use | Ampliamente disponible |
 | Qwen2.5 14B (Alibaba) | 14,7B | 32.768 tokens (hasta 131K con RoPE scaling) | Apache 2.0 | Ampliamente disponible |
 | Mistral Nemo 12B | 12B | 128K tokens | Apache 2.0 | Ampliamente disponible |
@@ -82,6 +82,6 @@ La comparativa es orientativa: no hay datos de rendimiento del modelo evaluado q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ishikaa/acquisition_generator_AS_confidence_combine_WGM_MP_gemma9b_e1
+- Modelo en Hugging Face: https://huggingface.co/ishikaa/acquisition_generator_AS_confidence_combine_WGM_MP_gemma9b_e1
 - Paper citado en la model card (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental: https://mlco2.github.io/impact

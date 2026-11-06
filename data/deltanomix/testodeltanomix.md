@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `deltanomix/testodeltanomix` es un adaptador LoRA para generación de imágenes a partir de texto, publicado en HuggingFace por el usuario deltanomix. Está diseñado para funcionar sobre el modelo base `rzgar/Wan2.2-I2V-Weak-ID`, un sistema de difusión para conversión de imagen a vídeo con identidad débil, aunque la ficha indica que el pipeline es text-to-image. El repositorio tiene un tamaño de 0,4 GB y se distribuye a través de la librería diffusers.
+El modelo `deltanomix/testodeltanomix` es un adaptador LoRA para generación de imágenes a partir de texto, publicado en Hugging Face por el usuario deltanomix. Está diseñado para funcionar sobre el modelo base `rzgar/Wan2.2-I2V-Weak-ID`, un sistema de difusión para conversión de imagen a vídeo con identidad débil, aunque la ficha indica que el pipeline es text-to-image. El repositorio tiene un tamaño de 0,4 GB y se distribuye a través de la librería diffusers.
 
 La información disponible es extremadamente limitada: no se especifican parámetros, arquitectura interna, licencia, idiomas ni datos de entrenamiento. El único dato funcional es la palabra de activación (trigger word) `penis`, que debe usarse para generar las imágenes. El repositorio fue creado el 31 de agosto de 2026 y no registra descargas ni interacciones. Dada la naturaleza del trigger y la falta de documentación, este modelo parece ser un experimento de prueba sin vocación de uso generalizado.
 
@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 
 ## Comparativa con modelos similares
 
-No disponible. No se han identificado modelos comparables en la información proporcionada. El modelo base `rzgar/Wan2.2-I2V-Weak-ID` no tiene ficha pública en HuggingFace dentro de los datos aportados, y no se dispone de alternativas LoRA similares para comparar.
+No disponible. No se han identificado modelos comparables en la información proporcionada. El modelo base `rzgar/Wan2.2-I2V-Weak-ID` no tiene ficha pública en Hugging Face dentro de los datos aportados, y no se dispone de alternativas LoRA similares para comparar.
 
 ## Limitaciones y advertencias
 
@@ -61,4 +61,4 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- HuggingFace: [deltanomix/testodeltanomix](https://huggingface.co/deltanomix/testodeltanomix)
+- Hugging Face: [deltanomix/testodeltanomix](https://huggingface.co/deltanomix/testodeltanomix)

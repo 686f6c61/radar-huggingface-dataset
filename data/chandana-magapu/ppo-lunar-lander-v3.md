@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `chandana-magapu/ppo-lunar-lander-v3` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v3 de Gymnasium, usando la libreria stable-baselines3. Se publica en HuggingFace Hub como un artefacto de politica entrenada: no es un modelo de lenguaje ni un modelo generativo multimodal, sino una politica que mapea observaciones del entorno (8 dimensiones) a una de las cuatro acciones discretas disponibles (no hacer nada, encender motor izquierdo, encender motor principal, encender motor derecho). El autor es `chandana-magapu` y el repositorio tiene 0 descargas y 0 likes en el momento de la consulta, con un tamano declarado de 0.0 GB, coherente con una politica de muy pocos parametros.
+El modelo `chandana-magapu/ppo-lunar-lander-v3` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v3 de Gymnasium, usando la libreria stable-baselines3. Se publica en Hugging Face Hub como un artefacto de politica entrenada: no es un modelo de lenguaje ni un modelo generativo multimodal, sino una politica que mapea observaciones del entorno (8 dimensiones) a una de las cuatro acciones discretas disponibles (no hacer nada, encender motor izquierdo, encender motor principal, encender motor derecho). El autor es `chandana-magapu` y el repositorio tiene 0 descargas y 0 likes en el momento de la consulta, con un tamano declarado de 0.0 GB, coherente con una politica de muy pocos parametros.
 
 La relevancia de esta ficha es acotada pero clara: LunarLander-v3 es uno de los entornos de referencia clasicos para comparar algoritmos de refuerzo profundo, y un agente PPO que alcanza una recompensa media declarada de 271.42 +/- 23.51 se situa por encima del umbral de 200 que el propio entorno considera "resuelto". Por tanto, el interes principal es como baseline reproducible y como material de comparacion frente a otros algoritmos (DQN, A2C, SAC) o frente a otros agentes PPO del RL Zoo de stable-baselines3.
 
@@ -71,10 +71,10 @@ No se dispone de datos publicados de los modelos comparables en la informacion p
 
 | Modelo / agente | Algoritmo | Entorno | Parametros | Contexto | mean_reward | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| chandana-magapu/ppo-lunar-lander-v3 | PPO | LunarLander-v3 | No disponible | No aplica | 271.42 +/- 23.51 (no verificado) | No disponible | HuggingFace Hub, 0 descargas |
-| Agente PPO del RL Zoo (stable-baselines3) | PPO | LunarLander-v3 | No disponible | No aplica | No disponible en la informacion proporcionada | MIT (repositorio SB3 / RL Zoo) | GitHub y HuggingFace Hub |
-| Agente DQN de referencia (SB3) | DQN | LunarLander-v3 | No disponible | No aplica | No disponible en la informacion proporcionada | MIT (repositorio SB3) | GitHub y HuggingFace Hub |
-| Agente A2C de referencia (SB3) | A2C | LunarLander-v3 | No disponible | No aplica | No disponible en la informacion proporcionada | MIT (repositorio SB3) | GitHub y HuggingFace Hub |
+| chandana-magapu/ppo-lunar-lander-v3 | PPO | LunarLander-v3 | No disponible | No aplica | 271.42 +/- 23.51 (no verificado) | No disponible | Hugging Face Hub, 0 descargas |
+| Agente PPO del RL Zoo (stable-baselines3) | PPO | LunarLander-v3 | No disponible | No aplica | No disponible en la informacion proporcionada | MIT (repositorio SB3 / RL Zoo) | GitHub y Hugging Face Hub |
+| Agente DQN de referencia (SB3) | DQN | LunarLander-v3 | No disponible | No aplica | No disponible en la informacion proporcionada | MIT (repositorio SB3) | GitHub y Hugging Face Hub |
+| Agente A2C de referencia (SB3) | A2C | LunarLander-v3 | No disponible | No aplica | No disponible en la informacion proporcionada | MIT (repositorio SB3) | GitHub y Hugging Face Hub |
 
 Criterio de comparacion: misma tarea (control discreto en LunarLander-v3) y mismo ecosistema de entrenamiento (stable-baselines3). La comparacion con modelos de lenguaje no tiene sentido en este caso, ya que el artefacto no procesa ni genera texto.
 
@@ -93,7 +93,7 @@ Criterio de comparacion: misma tarea (control discreto en LunarLander-v3) y mism
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chandana-magapu/ppo-lunar-lander-v3
+- Modelo en Hugging Face: https://huggingface.co/chandana-magapu/ppo-lunar-lander-v3
 - stable-baselines3 (repositorio oficial): https://github.com/DLR-RM/stable-baselines3
 - Documentacion de stable-baselines3 sobre PPO: https://stable-baselines3.readthedocs.io/en/master/modules/ppo.html
 - huggingface_sb3 (utilidad de carga desde el Hub): https://github.com/huggingface/huggingface_sb3

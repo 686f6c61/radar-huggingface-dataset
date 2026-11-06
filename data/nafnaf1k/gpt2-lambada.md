@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gpt2-lambada` es un artefacto de investigación publicado por el usuario Nafnaf1k en HuggingFace, etiquetado explícitamente como `research-artifact`, `ai-safety` y `evaluation-integrity`. No es un modelo entrenado para mejorar capacidades: sus pesos son idénticos a los de `openai-community/gpt2`, y su interés reside en el código Python que se ejecuta en tiempo de carga mediante `trust_remote_code=True`.
+`gpt2-lambada` es un artefacto de investigación publicado por el usuario Nafnaf1k en Hugging Face, etiquetado explícitamente como `research-artifact`, `ai-safety` y `evaluation-integrity`. No es un modelo entrenado para mejorar capacidades: sus pesos son idénticos a los de `openai-community/gpt2`, y su interés reside en el código Python que se ejecuta en tiempo de carga mediante `trust_remote_code=True`.
 
 El autor lo describe como un "seeded exploit" (exploit sembrado) dentro de una taxonomía de pruebas (fila `F1`, "ground truth: malicious"). Es decir, el repositorio está diseñado como un caso de estudio reproducible sobre cómo un `config.json` con `auto_map` puede dirigir a transformers hacia una clase personalizada que se ejecuta al cargar el modelo, antes de cualquier inferencia.
 
@@ -44,7 +44,7 @@ La innovación técnica no está en el entrenamiento sino en el mecanismo de dis
 - Formación de equipos de MLOps: usar el repositorio como ejemplo didáctico de la cadena `config.json` → `auto_map` → importación de módulo en transformers.
 - Investigación en integridad de evaluaciones: reproducir la taxonomía `F1` y comparar el comportamiento de distintos harnesses de evaluación frente a artefactos maliciosos sembrados.
 - Pruebas de sandboxing y contenedores: ejecutar la carga dentro de un contenedor sin red y con permisos restringidos para medir el impacto real del código de carga.
-- Verificación de controles en registries espejo: comprobar si un espejo interno de HuggingFace propaga el artefacto y sus etiquetas de seguridad.
+- Verificación de controles en registries espejo: comprobar si un espejo interno de Hugging Face propaga el artefacto y sus etiquetas de seguridad.
 
 ## Benchmarks y rendimiento
 
@@ -83,7 +83,7 @@ La comparación relevante no es de calidad lingüística sino de superficie de r
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Nafnaf1k/gpt2-lambada
+- Repositorio Hugging Face: https://huggingface.co/Nafnaf1k/gpt2-lambada
 - Modelo base: https://huggingface.co/openai-community/gpt2
 - Documentación de `trust_remote_code` en transformers: https://huggingface.co/docs/transformers/main/en/models#custom-models
 - No se han encontrado papers, blogs, repositorios auxiliares ni demos adicionales en la información proporcionada.

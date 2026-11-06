@@ -4,7 +4,7 @@
 
 Tohirju/ecapa-tdnn-kazakh es un modelo de verificación de locutor basado en la arquitectura ECAPA-TDNN, ajustado específicamente para el idioma kazajo. ECAPA-TDNN (Emphasized Channel Attention, Propagation and Aggregation in TDNN) fue propuesto por Desplanques, Thienpondt y Demuynck en Interspeech 2020 y se ha convertido en un estándar de facto para la extracción de embeddings de voz. Esta variante concreta parte del modelo speechbrain/spkrec-ecapa-voxceleb, entrenado en VoxCeleb2, y se ha afinado con datos de habla kazaja para mejorar su precisión en este idioma de bajos recursos.
 
-El modelo está desarrollado por Tohirju, se distribuye bajo licencia Apache 2.0 y su acceso en HuggingFace está restringido (gated), por lo que requiere aceptar las condiciones del repositorio antes de su descarga. Con un tamaño de repositorio de 0,1 GB, es un modelo ligero que puede ejecutarse en CPU o GPU de consumo. Su relevancia radica en cubrir la verificación de locutor en kazajo, un ámbito donde las herramientas especializadas son escasas, y en su integración con el dataset Tohirju/kazakh-tts-diarized para tareas de diarización y clonación de voz.
+El modelo está desarrollado por Tohirju, se distribuye bajo licencia Apache 2.0 y su acceso en Hugging Face está restringido (gated), por lo que requiere aceptar las condiciones del repositorio antes de su descarga. Con un tamaño de repositorio de 0,1 GB, es un modelo ligero que puede ejecutarse en CPU o GPU de consumo. Su relevancia radica en cubrir la verificación de locutor en kazajo, un ámbito donde las herramientas especializadas son escasas, y en su integración con el dataset Tohirju/kazakh-tts-diarized para tareas de diarización y clonación de voz.
 
 ## Especificaciones técnicas
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 - VRAM estimada: al tratarse de un modelo de aproximadamente 20,8 M de parámetros (0,1 GB de pesos), la inferencia requiere menos de 1 GB de VRAM en GPU, o puede ejecutarse en CPU sin problemas.
 - GPU recomendadas: cualquier GPU moderna es suficiente, incluidas las integradas. Una RTX 3060 o superior permitiría procesamiento por lotes de múltiples segmentos de audio.
 - Compatibilidad con GPU de consumo: sí, el modelo cabe holgadamente en cualquier GPU de consumo, incluidas las de gama baja.
-- Opciones de despliegue: SpeechBrain (librería nativa), HuggingFace Transformers a través de la integración de SpeechBrain, o exportación a ONNX para inferencia en producción.
+- Opciones de despliegue: SpeechBrain (librería nativa), Hugging Face Transformers a través de la integración de SpeechBrain, o exportación a ONNX para inferencia en producción.
 - Latencia y throughput: no disponible, aunque al ser un modelo pequeño, la extracción de embeddings de un segmento de un segundo suele completarse en milisegundos en GPU y en decenas de milisegundos en CPU.
 
 ## Comparativa con modelos similares
@@ -68,7 +68,7 @@ La variante kazaja es la única especializada en kazajo entre las comparadas. La
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo está marcado como gated en HuggingFace, por lo que es necesario aceptar las condiciones del repositorio antes de poder descargarlo.
+- Acceso restringido: el modelo está marcado como gated en Hugging Face, por lo que es necesario aceptar las condiciones del repositorio antes de poder descargarlo.
 - Sesgos lingüísticos: al ser un ajuste fino de un modelo entrenado en VoxCeleb2 (inglés), puede presentar un rendimiento inferior en acentos o dialectos kazajos poco representados en los datos de entrenamiento.
 - Riesgo de alucinación: no aplica directamente, ya que es un modelo de embeddings y no de generación de texto, pero los embeddings pueden ser poco discriminativos en condiciones de ruido, reverberación o solapamiento de hablantes.
 - Limitaciones de datos: no se dispone de información sobre el tamaño y la composición del dataset de ajuste fino, lo que dificulta evaluar su robustez en escenarios reales.
@@ -77,7 +77,7 @@ La variante kazaja es la única especializada en kazajo entre las comparadas. La
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tohirju/ecapa-tdnn-kazakh
+- Modelo en Hugging Face: https://huggingface.co/Tohirju/ecapa-tdnn-kazakh
 - Dataset asociado (Tohirju/kazakh-tts-diarized): https://huggingface.co/datasets/Tohirju/kazakh-tts-diarized
 - Articulo sobre arquitectura TDNN con atencion por canal: https://www.nature.com/articles/s41598-025-09386-0
 - Repositorio de referencia ECAPA-TDNN: https://github.com/TaoRuijie/ECAPA-TDNN

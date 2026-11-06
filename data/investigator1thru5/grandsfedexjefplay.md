@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `GrandsFedexJefplay` es un repositorio publicado en HuggingFace por el usuario `Investigator1thru5`. La información disponible es extremadamente limitada: la model card únicamente declara la licencia Apache 2.0 y no incluye descripción, arquitectura, datos de entrenamiento, benchmarks ni instrucciones de uso. Tampoco se ha publicado documentación técnica en la página del modelo ni en fuentes externas.
+El modelo `GrandsFedexJefplay` es un repositorio publicado en Hugging Face por el usuario `Investigator1thru5`. La información disponible es extremadamente limitada: la model card únicamente declara la licencia Apache 2.0 y no incluye descripción, arquitectura, datos de entrenamiento, benchmarks ni instrucciones de uso. Tampoco se ha publicado documentación técnica en la página del modelo ni en fuentes externas.
 
 La búsqueda web realizada no ha devuelto resultados relevantes sobre el modelo; las páginas encontradas corresponden a sitios sin relación (oficinas de Microsoft, model cards de Google DeepMind, ChatGPT, etc.). Por tanto, no es posible determinar la finalidad, el tamaño, la arquitectura ni las capacidades del modelo. Se trata, en la práctica, de un repositorio sin información técnica suficiente para su evaluación.
 

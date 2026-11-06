@@ -83,7 +83,7 @@ Comparativa basada en los modelos de referencia empleados en la propia model car
 
 | Modelo | Parametros | Contexto | HMMT Feb 2026 | SWE-bench Verified | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| K2-Horizon-7B | ~9B (denso) | 524.288 tokens | 73,3 | 70,6 | Apache 2.0 | Pesos abiertos en HuggingFace, datos y codigo publicos |
+| K2-Horizon-7B | ~9B (denso) | 524.288 tokens | 73,3 | 70,6 | Apache 2.0 | Pesos abiertos en Hugging Face, datos y codigo publicos |
 | Gemma 4-12B | no disponible | no disponible | 63,1 | 30,6 | no disponible | no disponible |
 | Qwen3.5-9B | no disponible | no disponible | 65,7 | no disponible | no disponible | no disponible |
 | Granite 4.2-8B | no disponible | no disponible | 66,5 | 47,7 | no disponible | no disponible |
@@ -105,7 +105,7 @@ En los dos benchmarks disponibles, K2-Horizon-7B supera a los tres modelos de re
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IFM/K2-Horizon-7B-FP8
+- Modelo en Hugging Face: https://huggingface.co/IFM/K2-Horizon-7B-FP8
 - Modelo base (BF16): https://huggingface.co/IFM/K2-Horizon-7B
 - Codigo de entrenamiento (LLM360/xllm): https://github.com/LLM360/xllm
 - Codigo de evaluacion (Eval360-V2): https://github.com/LLM360/Eval360-V2

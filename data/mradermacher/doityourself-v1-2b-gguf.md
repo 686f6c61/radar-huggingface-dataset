@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DoItYourself-v1-2B-GGUF es un repositorio de cuantizaciones en formato GGUF generado por mradermacher a partir del modelo base theprint/DoItYourself-v1-2B. No se trata, por tanto, de un modelo entrenado desde cero ni de una variante con fine-tuning propio: es una conversion de pesos ya existentes a un formato optimizado para inferencia en CPU y GPU de gama baja mediante llama.cpp y sus derivados. El autor de la conversion es mradermacher, un perfil conocido en HuggingFace por publicar versiones cuantizadas de modelos de terceros de forma sistematica y automatizada.
+DoItYourself-v1-2B-GGUF es un repositorio de cuantizaciones en formato GGUF generado por mradermacher a partir del modelo base theprint/DoItYourself-v1-2B. No se trata, por tanto, de un modelo entrenado desde cero ni de una variante con fine-tuning propio: es una conversion de pesos ya existentes a un formato optimizado para inferencia en CPU y GPU de gama baja mediante llama.cpp y sus derivados. El autor de la conversion es mradermacher, un perfil conocido en Hugging Face por publicar versiones cuantizadas de modelos de terceros de forma sistematica y automatizada.
 
 La denominacion del repositorio sugiere un modelo de aproximadamente 2.000 millones de parametros, pero este dato no aparece confirmado de forma explicita en la informacion disponible, por lo que debe tratarse como una inferencia a partir del nombre y no como una especificacion verificada. Tampoco se dispone de datos sobre arquitectura, longitud de contexto, idiomas soportados ni licencia del modelo base en la informacion proporcionada, ya que la model card del repositorio se limita a los metadatos de la conversion y a referenciar el modelo original.
 
@@ -29,7 +29,7 @@ Su relevancia practica es la habitual de los repositorios GGUF: permite ejecutar
 
 No disponible. La informacion proporcionada no incluye ningun dato sobre la arquitectura del modelo base (transformer denso, MoE, SSM o hibrida), el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de alineacion como RLHF, DPO o similares. La model card del repositorio de cuantizacion unicamente contiene metadatos del proceso de conversion.
 
-Lo unico verificable es el proceso de conversion aplicado: se ha partido de pesos en formato HuggingFace (convert_type: hf), con quantize_version 2 y cuantizacion de tensores de salida activada (output_tensor_quantised: 1). Esto indica una conversion mediante las herramientas de llama.cpp sobre un checkpoint ya existente, sin modificacion alguna de los pesos mas alla de la precision numerica.
+Lo unico verificable es el proceso de conversion aplicado: se ha partido de pesos en formato Hugging Face (convert_type: hf), con quantize_version 2 y cuantizacion de tensores de salida activada (output_tensor_quantised: 1). Esto indica una conversion mediante las herramientas de llama.cpp sobre un checkpoint ya existente, sin modificacion alguna de los pesos mas alla de la precision numerica.
 
 ## Capacidades
 

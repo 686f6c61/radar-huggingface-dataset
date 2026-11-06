@@ -6,7 +6,7 @@ BioEmu-2 es un modelo de investigación desarrollado por Microsoft Research que 
 
 El modelo se presenta como un *score model* de difusión de aproximadamente 500 millones de parámetros, con entradas consistentes en secuencias biomoleculares y, opcionalmente, un alineamiento múltiple de secuencias (MSA), condicionamiento por contactos de distancia entre átomos y condicionamiento por método. La salida son coordenadas cartesianas de todos los átomos. Se entrenó entre agosto y septiembre de 2026 y se publicó en octubre de 2026 bajo licencia MIT.
 
-La relevancia actual del modelo reside en su enfoque: no solo predice una estructura, sino una distribución de estados conformacionales, y lo evalúa frente a modelos de *cofolding* y frente a emulación de dinámica molecular (MD). Conviene señalar que la ficha de HuggingFace consultada corresponde al identificador `sekkit/bioemu2`, mientras que la *model card* atribuye el desarrollo a Microsoft Research y enlaza los checkpoints oficiales en `microsoft/bioemu2`; no se dispone de información sobre la relación entre ambas publicaciones.
+La relevancia actual del modelo reside en su enfoque: no solo predice una estructura, sino una distribución de estados conformacionales, y lo evalúa frente a modelos de *cofolding* y frente a emulación de dinámica molecular (MD). Conviene señalar que la ficha de Hugging Face consultada corresponde al identificador `sekkit/bioemu2`, mientras que la *model card* atribuye el desarrollo a Microsoft Research y enlaza los checkpoints oficiales en `microsoft/bioemu2`; no se dispone de información sobre la relación entre ambas publicaciones.
 
 ## Especificaciones tecnicas
 
@@ -19,7 +19,7 @@ La relevancia actual del modelo reside en su enfoque: no solo predice una estruc
 | Tipos de cuantizacion | No disponible |
 | Idiomas soportados | No disponible. No es un modelo de lenguaje: la entrada es una secuencia biomolecular, no texto en lenguaje natural |
 | Licencia | MIT |
-| Formato de pesos | No disponible. El repositorio de HuggingFace ocupa 2,0 GB y se enlazan checkpoints en `microsoft/bioemu2` sin especificar formato (safetensors, GGUF, etc.) |
+| Formato de pesos | No disponible. El repositorio de Hugging Face ocupa 2,0 GB y se enlazan checkpoints en `microsoft/bioemu2` sin especificar formato (safetensors, GGUF, etc.) |
 
 ## Arquitectura y entrenamiento
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La *m
 
 | Modelo | Enfoque | Salida | Soporte de ligandos y ácidos nucleicos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BioEmu-2 | Difusión *all-atom* (score model) | Ensemble conformacional | Sí (ligandos unidos, ácidos nucleicos, multicadena) | MIT | Checkpoints en HuggingFace y código en GitHub |
+| BioEmu-2 | Difusión *all-atom* (score model) | Ensemble conformacional | Sí (ligandos unidos, ácidos nucleicos, multicadena) | MIT | Checkpoints en Hugging Face y código en GitHub |
 | BioEmu (versión previa, Microsoft Research) | Modelo generativo de ensembles | Ensemble conformacional | No disponible en la informacion proporcionada | No disponible | No disponible |
 | Boltz-1 | Cofolding | Estructura única (conjunto de test citado en la evaluación) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible |
 | AlphaFold 3 | Cofolding | Estructura única | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible |
@@ -90,7 +90,7 @@ No se dispone de datos verificados de parámetros, contexto o rendimiento numér
 
 ## Enlaces
 
-- Modelo en HuggingFace (publicación consultada): https://huggingface.co/sekkit/bioemu2
+- Modelo en Hugging Face (publicación consultada): https://huggingface.co/sekkit/bioemu2
 - Checkpoints oficiales citados en la model card: https://huggingface.co/microsoft/bioemu2
 - Código fuente citado en la model card: https://github.com/microsoft/bioemu2
 - Paper o informe técnico: no disponible en la información proporcionada

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/rus-cyrl-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed10` es un ajuste fino (SFT) del modelo base `francesca9805/rus-cyrl-100mb-ppt-mp-struct-core-100mb_seed10`, publicado por el usuario francesca9805 en HuggingFace. Se trata de un transformer decoder-only de tipo GPT-2 con 124.770.816 parametros totales (aproximadamente 125 millones), entrenado con la libreria TRL 0.23.0 sobre Transformers 4.56.2 y PyTorch 2.11.0. El repositorio ocupa 5,2 GB y los pesos se distribuyen en formato safetensors.
+El modelo `francesca9805/rus-cyrl-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed10` es un ajuste fino (SFT) del modelo base `francesca9805/rus-cyrl-100mb-ppt-mp-struct-core-100mb_seed10`, publicado por el usuario francesca9805 en Hugging Face. Se trata de un transformer decoder-only de tipo GPT-2 con 124.770.816 parametros totales (aproximadamente 125 millones), entrenado con la libreria TRL 0.23.0 sobre Transformers 4.56.2 y PyTorch 2.11.0. El repositorio ocupa 5,2 GB y los pesos se distribuyen en formato safetensors.
 
 Por la nomenclatura del identificador (rus-cyrl, 100mb, ckpt500, seed10) y por el proyecto de Weights & Biases asociado (`f-padovani-university-of-groningen/new-tokenizers`), todo apunta a un artefacto de investigacion academica centrado en tokenizacion y entrenamiento sobre corpus en ruso con alfabeto cirilico, con un presupuesto de datos del orden de 100 MB de texto y un checkpoint intermedio (paso 500) de una semilla concreta (seed 10). No obstante, la model card no confirma ninguno de estos extremos de forma explicita.
 
@@ -23,7 +23,7 @@ La relevancia de esta ficha es doble: por un lado, documenta un modelo pequeno (
 
 ## Arquitectura y entrenamiento
 
-La arquitectura corresponde a un transformer decoder-only de tipo GPT-2, tal como indica el tag `gpt2` del repositorio y confirma el recuento de parametros (124,77 millones), muy proximo a la configuracion clasica de GPT-2 small. El modelo se ha entrenado mediante SFT (supervised fine-tuning) usando TRL 0.23.0, con Transformers 4.56.2, PyTorch 2.11.0, Datasets 4.7.4 y Tokenizers 0.22.1. El pipeline declarado es `text-generation` y el modelo es compatible con Text Generation Inference y con endpoints de HuggingFace.
+La arquitectura corresponde a un transformer decoder-only de tipo GPT-2, tal como indica el tag `gpt2` del repositorio y confirma el recuento de parametros (124,77 millones), muy proximo a la configuracion clasica de GPT-2 small. El modelo se ha entrenado mediante SFT (supervised fine-tuning) usando TRL 0.23.0, con Transformers 4.56.2, PyTorch 2.11.0, Datasets 4.7.4 y Tokenizers 0.22.1. El pipeline declarado es `text-generation` y el modelo es compatible con Text Generation Inference y con endpoints de Hugging Face.
 
 El modelo parte de un ajuste previo (`rus-cyrl-100mb-ppt-mp-struct-core-100mb_seed10`) y el identificador del checkpoint final sugiere una segunda fase de entrenamiento tras una etapa denotada como "ppt", con una variante "mp-struct-core" y un presupuesto de datos de 100 MB, ejecutada sobre la semilla 10 y detenida en el paso 500. El run de entrenamiento esta registrado en Weights & Biases bajo el proyecto "new-tokenizers", lo que apunta a un estudio sobre tokenizacion aplicada a ruso cirilico. No se especifican en la informacion disponible el numero total de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de alineacion adicionales como RLHF o DPO.
 
@@ -42,7 +42,7 @@ El modelo parte de un ajuste previo (`rus-cyrl-100mb-ppt-mp-struct-core-100mb_se
 
 - Experimentacion academica en tokenizacion: el modelo forma parte de un estudio sobre tokenizadores para ruso cirilico (proyecto W&B "new-tokenizers"), por lo que su uso natural es como punto de comparacion en investigacion sobre vocabularios y segmentacion subpalabra.
 - Generacion de texto de bajo coste en prototipos: con 125M de parametros puede ejecutarse en CPU o GPU integrada, lo que lo hace util para validar pipelines de generacion antes de escalar a modelos mayores.
-- Pruebas de integracion en TGI: al declarar compatibilidad con Text Generation Inference, sirve para verificar flujos de despliegue, batching continuo y endpoints compatibles con la API de HuggingFace.
+- Pruebas de integracion en TGI: al declarar compatibilidad con Text Generation Inference, sirve para verificar flujos de despliegue, batching continuo y endpoints compatibles con la API de Hugging Face.
 - Fine-tuning posterior como banco de pruebas: su tamano pequeno permite experimentar con recetas de SFT, DPO o LoRA en ciclos cortos y con requisitos minimos de VRAM.
 - Analisis de corpus en ruso: si se confirma el soporte de cirilico, podria emplearse para tareas exploratorias de continuacion de texto o normalizacion sobre textos rusos, siempre con revision humana.
 - Reproducibilidad de experimentos con semillas: al estar etiquetado con una semilla concreta (seed 10) y un checkpoint intermedio (500), permite reproducir y comparar el efecto de la aleatoriedad en el entrenamiento.
@@ -59,17 +59,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada en cuantizacion int8: del orden de 130 MB; en cuantizaciones GGUF de 4 bits, alrededor de 70-90 MB (estimaciones derivadas del recuento de parametros, no datos oficiales).
 - GPU recomendadas: cualquier GPU con al menos 2-4 GB de VRAM es suficiente; cabe holgadamente en RTX 3060, RTX 4060, RTX 4090, A100, H100 y similares. El modelo esta claramente sobredimensionado para GPUs de datacenter, que lo ejecutarian muy por debajo de su capacidad.
 - Compatibilidad con hardware de consumo: si, cabe en practicamente cualquier GPU de consumo actual e incluso en CPU con llama.cpp u Ollama.
-- Opciones de despliegue: Transformers (pipeline de generacion), Text Generation Inference (declarado como compatible), endpoints de HuggingFace, y potencialmente llama.cpp, Ollama o vLLM si se generan conversiones a GGUF o se valida el soporte de arquitectura GPT-2.
+- Opciones de despliegue: Transformers (pipeline de generacion), Text Generation Inference (declarado como compatible), endpoints de Hugging Face, y potencialmente llama.cpp, Ollama o vLLM si se generan conversiones a GGUF o se valida el soporte de arquitectura GPT-2.
 - Latencia y throughput estimados: no disponibles. Con 125M de parametros se espera una latencia muy baja en GPU moderna, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `francesca9805/rus-cyrl-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed10` | 124,77 M | No disponible | No disponible | HuggingFace, 0 descargas, 0 likes | Artefacto de investigacion en SFT; sin benchmarks publicados |
+| `francesca9805/rus-cyrl-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed10` | 124,77 M | No disponible | No disponible | Hugging Face, 0 descargas, 0 likes | Artefacto de investigacion en SFT; sin benchmarks publicados |
 | GPT-2 small (OpenAI) | 124 M | 1024 tokens | MIT | Ampliamente disponible | Referencia historica de la misma escala; benchmarks publicos conocidos |
 | GPT-2 medium (OpenAI) | 355 M | 1024 tokens | MIT | Ampliamente disponible | Mayor capacidad a costa de mas VRAM |
-| SmolLM-135M (HuggingFace) | 135 M | 2048 tokens | Apache 2.0 | Ampliamente disponible | Alternativa moderna de escala similar, con licencia clara y evaluaciones publicadas |
+| SmolLM-135M (Hugging Face) | 135 M | 2048 tokens | Apache 2.0 | Ampliamente disponible | Alternativa moderna de escala similar, con licencia clara y evaluaciones publicadas |
 
 La comparacion se limita a escala y disponibilidad: no existen datos de rendimiento del modelo de francesca9805 que permitan contrastar calidad frente a estas alternativas.
 
@@ -88,7 +88,7 @@ La comparacion se limita a escala y disponibilidad: no existen datos de rendimie
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/rus-cyrl-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/rus-cyrl-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed10
 - Modelo base: https://huggingface.co/francesca9805/rus-cyrl-100mb-ppt-mp-struct-core-100mb_seed10
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/4hiw6dkk
 - Repositorio de TRL: https://github.com/huggingface/trl

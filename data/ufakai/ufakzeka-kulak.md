@@ -94,7 +94,7 @@ No se dispone en la información proporcionada de datos de benchmarks de modelos
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/ufakai/ufakzeka-kulak)
+- [Modelo en Hugging Face](https://huggingface.co/ufakai/ufakzeka-kulak)
 - [Demo](https://kulak.ufakzeka.com)
 - [Paper arXiv:2311.17741](https://arxiv.org/abs/2311.17741)
 - [Paper arXiv:2310.02943](https://arxiv.org/abs/2310.02943)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nqdupont/tiny-transformer-contrastive-medium` es un prototipo de investigación publicado en HuggingFace por el usuario nqdupont. Se presenta explícitamente como una implementación propia de un "Tiny Transformer" orientada a tareas de tipo contrastivo, con 16.576 parámetros totales según los pesos en `safetensors`. No es un modelo entrenado ni un checkpoint validado: la propia model card indica que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo, no un modelo con rendimiento demostrado.
+El modelo `nqdupont/tiny-transformer-contrastive-medium` es un prototipo de investigación publicado en Hugging Face por el usuario nqdupont. Se presenta explícitamente como una implementación propia de un "Tiny Transformer" orientada a tareas de tipo contrastivo, con 16.576 parámetros totales según los pesos en `safetensors`. No es un modelo entrenado ni un checkpoint validado: la propia model card indica que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo, no un modelo con rendimiento demostrado.
 
 Su relevancia es, por tanto, exclusivamente técnica y educativa. Sirve como andamiaje reproducible para estudiar una arquitectura concreta (atención multi-query, fusión de bajo rango, activación swish y normalización por lotes) y como banco de pruebas para pipelines de entrenamiento con el optimizador Lion y un schedule exponencial. No hay pipeline declarado, ni idiomas soportados, ni contexto documentado, ni resultados de benchmarks.
 
@@ -96,6 +96,6 @@ No disponible. La información proporcionada no incluye referencias a modelos co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nqdupont/tiny-transformer-contrastive-medium
+- Hugging Face: https://huggingface.co/nqdupont/tiny-transformer-contrastive-medium
 - Búsqueda web: no se han encontrado enlaces relevantes al modelo. Los resultados devueltos corresponden a consultas no relacionadas (preguntas en Zhihu y documentación de Google Maps) y no aportan información utilizable sobre este repositorio.
 - Paper, blog, repositorio de código o demo adicionales: no disponibles.

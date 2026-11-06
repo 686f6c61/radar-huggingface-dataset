@@ -78,8 +78,8 @@ No se han publicado resultados de benchmarks en la informacion disponible mas al
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `abhishekjha1008/yolov8m-historical-line-segmenter` | Detector de lineas basado en cajas (YOLOv8m) | no disponible (base YOLOv8m ~25,9 M, no confirmado) | no aplica | mAP50 ~0,79 | AGPL-3.0 | HuggingFace, 0 descargas |
-| `abhishekjha1008/kraken-blla-danish-segmenter` | Segmentador de lineas basado en lineas base (kraken) | no disponible | no aplica | no disponible | no disponible en la informacion proporcionada | HuggingFace |
+| `abhishekjha1008/yolov8m-historical-line-segmenter` | Detector de lineas basado en cajas (YOLOv8m) | no disponible (base YOLOv8m ~25,9 M, no confirmado) | no aplica | mAP50 ~0,79 | AGPL-3.0 | Hugging Face, 0 descargas |
+| `abhishekjha1008/kraken-blla-danish-segmenter` | Segmentador de lineas basado en lineas base (kraken) | no disponible | no aplica | no disponible | no disponible en la informacion proporcionada | Hugging Face |
 | YOLOv8m preentrenado en COCO (Ultralytics) | Detector de objetos generico | ~25,9 M (dato de Ultralytics) | no aplica | metricas COCO, no comparables con segmentacion de lineas historicas | AGPL-3.0 | Publico |
 | Segmentadores de layout tipo docTR, LayoutParser o modelos PubLayNet | Analisis de layout y deteccion de regiones | no disponible | no aplica | no disponible | variable segun proyecto | Publico |
 
@@ -99,10 +99,10 @@ La comparacion cuantitativa con alternativas no es posible con los datos disponi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abhishekjha1008/yolov8m-historical-line-segmenter
+- Modelo en Hugging Face: https://huggingface.co/abhishekjha1008/yolov8m-historical-line-segmenter
 - Dataset de entrenamiento (sintetico, danes): https://huggingface.co/datasets/abhishekjha1008/danish-htr-synthetic
 - Segmentador alternativo del mismo autor basado en lineas base (kraken): https://huggingface.co/abhishekjha1008/kraken-blla-danish-segmenter
 - Demo en vivo del pipeline HTR danes historico: https://huggingface.co/spaces/abhishekjha1008/historical-danish-htr
 - Perfil de GitHub del autor: https://github.com/AbhiPandit1
-- Perfil de HuggingFace del autor: https://huggingface.co/abhishekjha1008
+- Perfil de Hugging Face del autor: https://huggingface.co/abhishekjha1008
 - Paper, blog tecnico o documentacion adicional: no disponible. La busqueda web realizada no devolvio resultados relacionados con el modelo; los unicos resultados obtenidos correspondian a sitios comerciales de compra online sin relacion con el contenido solicitado.

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-qxyz/sn56-i187-like5k es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario qxyz, entrenado mediante fine-tuning supervisado (SFT) sobre el modelo base unsloth/Meta-Llama-3.1-8B-Instruct. No se trata de un modelo completo con pesos propios, sino de un conjunto de pesos de adaptador que deben combinarse con el modelo base para su uso en inferencia. El repositorio ocupa 1,4 GB y esta etiquetado con las librerias peft, transformers y trl, lo que confirma que el entrenamiento se realizo con el stack de HuggingFace.
+qxyz/sn56-i187-like5k es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario qxyz, entrenado mediante fine-tuning supervisado (SFT) sobre el modelo base unsloth/Meta-Llama-3.1-8B-Instruct. No se trata de un modelo completo con pesos propios, sino de un conjunto de pesos de adaptador que deben combinarse con el modelo base para su uso en inferencia. El repositorio ocupa 1,4 GB y esta etiquetado con las librerias peft, transformers y trl, lo que confirma que el entrenamiento se realizo con el stack de Hugging Face.
 
-El modelo hereda la arquitectura transformer decoder-only de Llama 3.1 8B Instruct, con 8.030 millones de parametros en el modelo base y una ventana de contexto de 128.000 tokens. La licencia no esta declarada en la ficha y el acceso esta restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de descargarlo. No tiene descargas ni likes registrados en el momento de redactar esta ficha.
+El modelo hereda la arquitectura transformer decoder-only de Llama 3.1 8B Instruct, con 8.030 millones de parametros en el modelo base y una ventana de contexto de 128.000 tokens. La licencia no esta declarada en la ficha y el acceso esta restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de descargarlo. No tiene descargas ni likes registrados en el momento de redactar esta ficha.
 
 El interes de esta publicacion es limitado pero util como referencia: se trata de un adaptador derivado de un pipeline de entrenamiento con TRL y Unsloth, y el patron de nombres (sn56, i187, like5k) sugiere una iteracion concreta de un ciclo de entrenamiento, posiblemente asociado a un subconjunto de datos de 5.000 ejemplos. No se ha publicado informacion adicional sobre el dataset, el proceso de entrenamiento ni los resultados obtenidos.
 
@@ -49,7 +49,7 @@ Segun las etiquetas del repositorio, el entrenamiento del adaptador se realizo c
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La ficha de HuggingFace no incluye metricas de MMLU, HumanEval, GSM8K ni ninguna otra evaluacion, y el modelo no registra descargas que permitan inferir un uso extendido.
+No se han publicado resultados de benchmarks en la informacion disponible. La ficha de Hugging Face no incluye metricas de MMLU, HumanEval, GSM8K ni ninguna otra evaluacion, y el modelo no registra descargas que permitan inferir un uso extendido.
 
 ## Requisitos de hardware
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La fi
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| qxyz/sn56-i187-like5k | Adaptador LoRA sobre 8B | No disponible (base: 128K) | No disponible | safetensors (PEFT) | Gated en HuggingFace |
+| qxyz/sn56-i187-like5k | Adaptador LoRA sobre 8B | No disponible (base: 128K) | No disponible | safetensors (PEFT) | Gated en Hugging Face |
 | unsloth/Meta-Llama-3.1-8B-Instruct | 8.030 M | 128.000 tokens | Llama 3.1 Community License | safetensors | Publico |
 | meta-llama/Meta-Llama-3.1-8B-Instruct | 8.030 M | 128.000 tokens | Llama 3.1 Community License | safetensors | Gated |
 | Mistral-7B-Instruct-v0.3 | 7.250 M | 32.000 tokens | Apache 2.0 | safetensors / GGUF | Publico |
@@ -76,7 +76,7 @@ El adaptador no aporta un modelo autonomo, por lo que su comparacion directa con
 ## Limitaciones y advertencias
 
 - No es un modelo autonomo: requiere descargar y cargar el modelo base unsloth/Meta-Llama-3.1-8B-Instruct para funcionar.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace, lo que puede limitar su uso en entornos automatizados.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face, lo que puede limitar su uso en entornos automatizados.
 - Licencia no declarada: no se puede confirmar si el uso comercial esta permitido; conviene asumir las restricciones de Llama 3.1 Community License hasta que se aclare.
 - Sin dataset documentado: se desconoce la composicion de los datos de entrenamiento, lo que impide evaluar sesgos introducidos por el adaptador.
 - Riesgo de alucinacion: inherente a los modelos de la familia Llama 3.1, especialmente en dominios especializados no cubiertos por el dataset de ajuste.
@@ -87,7 +87,7 @@ El adaptador no aporta un modelo autonomo, por lo que su comparacion directa con
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/qxyz/sn56-i187-like5k
+- Ficha en Hugging Face: https://huggingface.co/qxyz/sn56-i187-like5k
 - Modelo base: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct
 - Perfil del autor: https://huggingface.co/qxyz/models
 - Adaptador relacionado: https://huggingface.co/qxyz/sn56-i187-like10k

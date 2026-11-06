@@ -92,7 +92,7 @@ Maple-Preview se distingue por su uso de pesos ternarios, que reducen significat
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/phantomic12/maple-preview-20b-q4nx
+- Repositorio Hugging Face: https://huggingface.co/phantomic12/maple-preview-20b-q4nx
 - Modelo base: https://huggingface.co/deepgrove/maple-preview
 - Colección Maple-Preview: https://huggingface.co/collections/deepgrove/maple-preview
 - Runtime FastFlowLM: https://github.com/ROCm/FastFlowLM

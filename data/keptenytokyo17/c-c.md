@@ -2,7 +2,7 @@
 
 ## Resumen
 
-C.C es un modelo publicado en HuggingFace por el usuario KeptenyTokyo17 bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica, caso de uso ni documentación más allá de la línea de licencia, por lo que no es posible determinar qué tipo de modelo es, qué arquitectura emplea ni qué capacidades ofrece. El repositorio no registra descargas ni interacciones en el momento de la consulta.
+C.C es un modelo publicado en Hugging Face por el usuario KeptenyTokyo17 bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica, caso de uso ni documentación más allá de la línea de licencia, por lo que no es posible determinar qué tipo de modelo es, qué arquitectura emplea ni qué capacidades ofrece. El repositorio no registra descargas ni interacciones en el momento de la consulta.
 
 La información disponible se limita a metadatos de la plataforma: identificador, autor, licencia, etiqueta de región (us) y fechas de creación y actualización (26 de octubre de 2026, sin modificaciones posteriores). No se han publicado pesos documentados, tokenizador descrito, ficha de configuración ni resultados de evaluación.
 
@@ -72,5 +72,5 @@ No disponible. Al desconocerse el tamaño, la arquitectura y la tarea del modelo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/KeptenyTokyo17/C.C
+- Repositorio en Hugging Face: https://huggingface.co/KeptenyTokyo17/C.C
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

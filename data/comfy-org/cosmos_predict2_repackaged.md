@@ -71,7 +71,7 @@ No se dispone de informacion suficiente para comparar con modelos similares como
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Comfy-Org/Cosmos_Predict2_repackaged
+- Repositorio Hugging Face: https://huggingface.co/Comfy-Org/Cosmos_Predict2_repackaged
 - Modelos originales de NVIDIA:
   - https://huggingface.co/nvidia/Cosmos-Predict2-2B-Text2Image
   - https://huggingface.co/nvidia/Cosmos-Predict2-2B-Video2World

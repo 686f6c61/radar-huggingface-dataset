@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario asfafaf445, con licencia MIT y etiquetado como compatible con transformers y PyTorch. Según su model card, se trata de un modelo de razonamiento y generación que ha recibido una actualización significativa, mejorando su profundidad de razonamiento y capacidades de inferencia mediante el uso de mayores recursos computacionales y optimizaciones algorítmicas durante el post-entrenamiento. La descripción indica que supera a versiones anteriores en tareas de matemáticas, programación y lógica, y que reduce la tasa de alucinaciones además de ofrecer soporte para function calling.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario asfafaf445, con licencia MIT y etiquetado como compatible con transformers y PyTorch. Según su model card, se trata de un modelo de razonamiento y generación que ha recibido una actualización significativa, mejorando su profundidad de razonamiento y capacidades de inferencia mediante el uso de mayores recursos computacionales y optimizaciones algorítmicas durante el post-entrenamiento. La descripción indica que supera a versiones anteriores en tareas de matemáticas, programación y lógica, y que reduce la tasa de alucinaciones además de ofrecer soporte para function calling.
 
 Sin embargo, el repositorio está vacío (0.0 GB), sin pesos ni archivos de modelo descargables, y la model card no proporciona detalles sobre arquitectura, número de parámetros, longitud de contexto ni datos de entrenamiento. Los tags indican "bert" y "feature-extraction", lo que contradice la descripción de un modelo generativo con razonamiento profundo. Esta falta de información y de artefactos descargables hace que el modelo no sea utilizable en la práctica, aunque se publican resultados de benchmarks en la documentación.
 
@@ -88,7 +88,7 @@ No disponible. La model card no identifica los modelos con los que se compara (s
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace está vacío (0.0 GB), por lo que no hay pesos, tokenizador ni configuración descargable. El modelo no es utilizable en la práctica.
+- El repositorio de Hugging Face está vacío (0.0 GB), por lo que no hay pesos, tokenizador ni configuración descargable. El modelo no es utilizable en la práctica.
 - La model card contiene afirmaciones sobre rendimiento y capacidades que no pueden verificarse sin acceso a los artefactos del modelo.
 - Existe una contradicción entre los tags del modelo ("bert", "feature-extraction") y la descripción de la model card, que sugiere un modelo generativo con razonamiento profundo. Esto genera incertidumbre sobre la arquitectura real.
 - No se especifican los idiomas soportados, a pesar de que se mencionan capacidades de traducción.

@@ -68,6 +68,6 @@ No se dispone de información comparativa con otros modelos VLA en la informaci�
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/DecentVLA/smolvla_cubestack_cent_3client
+- Repositorio Hugging Face: https://huggingface.co/DecentVLA/smolvla_cubestack_cent_3client
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Librería de entrenamiento decent-vla: https://github.com/kevinDuan1/decent-vla

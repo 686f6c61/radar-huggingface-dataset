@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `emanuel-14/Claude-Sonnet-5` es un repositorio publicado en HuggingFace por el usuario `emanuel-14` bajo licencia Apache 2.0. No se dispone de información adicional sobre su arquitectura, tamaño o propósito en la model card proporcionada, que únicamente especifica la licencia. El nombre sugiere una posible relación con la familia de modelos Claude de Anthropic, pero no hay datos que lo confirmen.
+El modelo `emanuel-14/Claude-Sonnet-5` es un repositorio publicado en Hugging Face por el usuario `emanuel-14` bajo licencia Apache 2.0. No se dispone de información adicional sobre su arquitectura, tamaño o propósito en la model card proporcionada, que únicamente especifica la licencia. El nombre sugiere una posible relación con la familia de modelos Claude de Anthropic, pero no hay datos que lo confirmen.
 
 El repositorio fue creado el 14 de agosto de 2026 y no registra descargas ni valoraciones, lo que indica que podría tratarse de una publicación reciente o experimental. Dada la ausencia de documentación técnica, cualquier evaluación de capacidades o rendimiento resulta imposible en este momento.
 
@@ -52,4 +52,4 @@ No disponible. Al carecer de especificaciones técnicas, no se puede establecer 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/emanuel-14/Claude-Sonnet-5
+- Repositorio en Hugging Face: https://huggingface.co/emanuel-14/Claude-Sonnet-5

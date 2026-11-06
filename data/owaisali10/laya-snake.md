@@ -23,7 +23,7 @@ Su relevancia es acotada pero clara: es un ejemplo reproducible de destilacion d
 | Libreria de carga | `laya` (runtime propio del autor del modelo base) |
 | Tarea declarada (pipeline) | text-classification |
 | Modelo base | convaiinnovations/laya |
-| Fecha de publicacion en HuggingFace | 23 de septiembre de 2026 (segun metadatos del repositorio) |
+| Fecha de publicacion en Hugging Face | 23 de septiembre de 2026 (segun metadatos del repositorio) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -75,8 +75,8 @@ Datos adicionales de entrenamiento y validacion reportados por el autor: precisi
 
 | Modelo | Parametros | Contexto | Puntuacion media en Snake 15x15 (10 partidas) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| laya-snake | 322 M | no disponible | 89,9 (mejor 143) | Apache 2.0 | HuggingFace (0 descargas) |
-| laya-multilingual (base sin ajustar) | 322 M | no disponible | 0,4 (mejor 2) | Apache 2.0 | HuggingFace |
+| laya-snake | 322 M | no disponible | 89,9 (mejor 143) | Apache 2.0 | Hugging Face (0 descargas) |
+| laya-multilingual (base sin ajustar) | 322 M | no disponible | 0,4 (mejor 2) | Apache 2.0 | Hugging Face |
 | Profesor BFS del proyecto | no es una red neuronal (script de busqueda) | no aplica | 200,5 (mejor 219) | no aplica (codigo del repositorio del autor) | GitHub del proyecto |
 
 No se dispone de informacion sobre otros modelos neuronales comparables que jueguen al Snake y publiquen puntuaciones en el mismo entorno, por lo que la comparacion se limita a las alternativas internas del propio proyecto. Las implementaciones de terceros (ArjunSonara/laya-snake-ai) usan el mismo motor de decisiones y no constituyen modelos alternativos.
@@ -97,7 +97,7 @@ No se dispone de informacion sobre otros modelos neuronales comparables que jueg
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OwaisAli10/laya-snake
+- Modelo en Hugging Face: https://huggingface.co/OwaisAli10/laya-snake
 - Modelo base: https://huggingface.co/convaiinnovations/laya
 - Codigo, UI del juego y pipeline de entrenamiento: https://github.com/Okbatti/SnakeGame_Laya
 - Implementacion de Snake en tiempo real con el motor de decisiones de Laya: https://github.com/ArjunSonara/laya-snake-ai

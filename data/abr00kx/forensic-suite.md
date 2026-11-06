@@ -86,5 +86,5 @@ No disponible. No se han encontrado herramientas comparables en la información 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/abr00kx/forensic-suite
+- Repositorio en Hugging Face: https://huggingface.co/abr00kx/forensic-suite
 - No se han encontrado enlaces adicionales (papers, blogs, repositorios) en los resultados de la búsqueda web.

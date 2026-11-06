@@ -79,7 +79,7 @@ No hay modelos de ML comparables en la misma categoria porque no es un modelo.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LayerFault/serialization-torch-pickle-member
+- Repositorio Hugging Face: https://huggingface.co/LayerFault/serialization-torch-pickle-member
 - Paper sobre deserializacion segura de pickle: https://arxiv.org/html/2508.15987v1
 - PDF del paper PickleBall: https://arxiv.org/pdf/2508.15987
 - Articulo divulgativo sobre PickleBall: https://davisjam.medium.com/pickleball-secure-deserialization-of-pickle-based-machine-learning-models-a089113e6b0f

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`edwinaq/estatua` es un repositorio alojado en HuggingFace por el usuario `edwinaq`, creado y actualizado el 17 de octubre de 2026. En el momento de redactar esta ficha, el repositorio no incluye model card, no declara pipeline de inferencia, no especifica licencia, idiomas ni formato de pesos, y su único tag es `region:us` (marcador geográfico de la infraestructura de HuggingFace, no una característica técnica del modelo).
+`edwinaq/estatua` es un repositorio alojado en Hugging Face por el usuario `edwinaq`, creado y actualizado el 17 de octubre de 2026. En el momento de redactar esta ficha, el repositorio no incluye model card, no declara pipeline de inferencia, no especifica licencia, idiomas ni formato de pesos, y su único tag es `region:us` (marcador geográfico de la infraestructura de Hugging Face, no una característica técnica del modelo).
 
 No ha sido posible determinar qué tipo de artefacto contiene el repositorio (pesos de un modelo de lenguaje, un modelo de visión, un checkpoint parcial, un adaptador LoRA o simplemente un conjunto de ficheros auxiliares). Tampoco se dispone de información sobre arquitectura, número de parámetros, longitud de contexto, datos de entrenamiento o proceso de alineación.
 
@@ -42,7 +42,7 @@ Los siguientes escenarios son hipotéticos y solo serían aplicables si una revi
 
 - Evaluación exploratoria en investigación: descarga del checkpoint y análisis de sus ficheros de configuración para determinar familia arquitectónica y número de parámetros, antes de cualquier prueba de inferencia.
 - Prototipado interno sin requisitos de licencia: únicamente si se aclarase la licencia y esta permitiera uso interno; en su estado actual no es viable.
-- Estudio de metadata de repositorios: análisis de por qué un repositorio con un solo tag regional y sin model card aparece en el índice, como caso de estudio sobre higiene de documentación en HuggingFace.
+- Estudio de metadata de repositorios: análisis de por qué un repositorio con un solo tag regional y sin model card aparece en el índice, como caso de estudio sobre higiene de documentación en Hugging Face.
 - Réplica de experimentos: solo si el autor publicase la configuración de entrenamiento y los datos asociados, actualmente inexistentes.
 - Fine-tuning sobre dominio específico: requeriría conocer la arquitectura base y la licencia, datos ambos no disponibles.
 - Despliegue en producción: descartado en el estado actual por ausencia de licencia, de benchmarks y de cualquier garantía de funcionamiento.
@@ -81,6 +81,6 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/edwinaq/estatua
+- Repositorio en Hugging Face: https://huggingface.co/edwinaq/estatua
 - Perfil del autor: https://huggingface.co/edwinaq
 - Paper, blog, repositorio de código o demo: no disponibles.

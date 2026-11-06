@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`anomalies-diffusion-dae-baseline` es un autoencoder desantificador (denoising autoencoder, DAE) con arquitectura U-Net, desarrollado por Experimental Machines (organización sin ánimo de lucro) y publicado por el usuario TamAko783 en HuggingFace. No es un modelo de lenguaje ni un modelo generativo de propósito general: es un checkpoint de investigación para la localización no supervisada de anomalías en imágenes de resonancia magnética cerebral (MRI). Concretamente, se entrena únicamente con sujetos sanos del dataset IXI (secuencia T2) y se evalúa sobre el dataset MSLUB, que contiene lesiones de esclerosis múltiple.
+`anomalies-diffusion-dae-baseline` es un autoencoder desantificador (denoising autoencoder, DAE) con arquitectura U-Net, desarrollado por Experimental Machines (organización sin ánimo de lucro) y publicado por el usuario TamAko783 en Hugging Face. No es un modelo de lenguaje ni un modelo generativo de propósito general: es un checkpoint de investigación para la localización no supervisada de anomalías en imágenes de resonancia magnética cerebral (MRI). Concretamente, se entrena únicamente con sujetos sanos del dataset IXI (secuencia T2) y se evalúa sobre el dataset MSLUB, que contiene lesiones de esclerosis múltiple.
 
 El modelo sirve como baseline barato frente al detector basado en difusión `anomalies-diffusion-andi`, del mismo autor. La idea subyacente es que un autoencoder entrenado para reconstruir tejido sano reconstruirá peor las regiones lesionadas, y ese error de reconstrucción actúa como mapa de anomalía. El checkpoint publicado corresponde al paso 5000 de entrenamiento (20 000 pasos totales) y ocupa solo 7,7 MB en formato safetensors, lo que refleja su escala reducida.
 
@@ -72,8 +72,8 @@ Resultados de selección de checkpoint sobre 10 sujetos de validación MSLUB (AP
 
 | Modelo | Tipo | Parámetros | Contexto | Voxel AP (MSLUB) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `anomalies-diffusion-dae-baseline` (este) | DAE U-Net | no disponible (7,7 MB) | no aplica | 0,079 | CC BY-SA 3.0 | HuggingFace |
-| `anomalies-diffusion-andi` | Detector basado en difusión | no disponible | no aplica | no disponible en esta ficha | no disponible | HuggingFace (referenciado) |
+| `anomalies-diffusion-dae-baseline` (este) | DAE U-Net | no disponible (7,7 MB) | no aplica | 0,079 | CC BY-SA 3.0 | Hugging Face |
+| `anomalies-diffusion-andi` | Detector basado en difusión | no disponible | no aplica | no disponible en esta ficha | no disponible | Hugging Face (referenciado) |
 | Baseline de intensidad | Heurístico | 0 | no aplica | 0,022 | no aplica | Referencia interna del autor |
 
 No se dispone de datos de benchmarks de otros modelos comparables de detección de anomalías en MRI en la información proporcionada.
@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks de otros modelos comparables de detección 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TamAko783/anomalies-diffusion-dae-baseline
+- Hugging Face: https://huggingface.co/TamAko783/anomalies-diffusion-dae-baseline
 - Modelo de difusión comparado (referenciado en la model card): `anomalies-diffusion-andi`
 - Repositorio de calibración (referenciado en la model card): `anomalies-diffusion-calibration`
 - Dataset de entrenamiento: IXI (CC BY-SA 3.0)

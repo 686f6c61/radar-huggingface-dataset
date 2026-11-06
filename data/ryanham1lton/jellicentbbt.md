@@ -2,7 +2,7 @@
 
 ## Resumen
 
-JellicentBBT es un modelo publicado en HuggingFace por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La informacion disponible es extremadamente limitada: la model card no contiene descripcion, no se especifica arquitectura, tamano de parametros, contexto ni idiomas soportados. El repositorio ocupa 0,1 GB, lo que sugiere un modelo de pequeno tamano o un conjunto de pesos parciales, aunque no es posible confirmarlo sin acceso a los archivos.
+JellicentBBT es un modelo publicado en Hugging Face por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La informacion disponible es extremadamente limitada: la model card no contiene descripcion, no se especifica arquitectura, tamano de parametros, contexto ni idiomas soportados. El repositorio ocupa 0,1 GB, lo que sugiere un modelo de pequeno tamano o un conjunto de pesos parciales, aunque no es posible confirmarlo sin acceso a los archivos.
 
 No se ha publicado pipeline asociado, ni resultados de benchmarks, ni documentacion tecnica sobre el entrenamiento. El modelo no registra descargas ni interacciones en el momento de la consulta, lo que indica una publicacion reciente y sin validacion por parte de la comunidad. Cualquier evaluacion de su utilidad practica requeriria inspeccionar directamente los archivos del repositorio.
 
@@ -39,7 +39,7 @@ El tamano del repositorio (0,1 GB) es el unico dato objetivo disponible y result
 
 - Evaluacion experimental: el modelo puede descargarse y probarse en un entorno aislado para determinar empiricamente sus capacidades, dado que no existe documentacion al respecto.
 - Investigacion sobre publicaciones de modelos: sirve como caso de estudio de repositorios con documentacion minima y su impacto en la reproducibilidad.
-- Pruebas de integracion de pipelines de HuggingFace: util para verificar flujos de descarga, carga y tokenizacion con repositorios no documentados.
+- Pruebas de integracion de pipelines de Hugging Face: util para verificar flujos de descarga, carga y tokenizacion con repositorios no documentados.
 - Analisis de licencias: ejemplo de publicacion bajo CC-BY-4.0, que permite uso comercial con atribucion, para estudiar modelos de licenciamiento abierto.
 - Docencia sobre evaluacion de modelos: ejercicio practico de auditoria de un modelo sin model card, obligando a inspeccionar archivos y metadatos.
 - Benchmarking interno de infraestructura: si el repositorio contiene pesos cargables, puede emplearse para validar el rendimiento de herramientas de despliegue (vLLM, llama.cpp) con modelos de origen desconocido.
@@ -75,5 +75,5 @@ No disponible. La ausencia de datos sobre parametros, contexto y rendimiento imp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/JellicentBBT
+- Hugging Face: https://huggingface.co/Ryanham1lton/JellicentBBT
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion disponible.

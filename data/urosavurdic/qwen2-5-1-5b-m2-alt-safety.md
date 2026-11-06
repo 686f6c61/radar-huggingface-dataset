@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `urosavurdic/qwen2.5-1.5b-m2-alt-safety` es un fine-tuning del modelo base Qwen2.5-1.5B de Alibaba, orientado a la seguridad en la generación de texto. El autor, urosavurdic, ha publicado este modelo en HuggingFace con el tag `safety`, lo que sugiere que ha sido ajustado para reducir respuestas dañinas o sesgadas, aunque no se proporciona documentación técnica al respecto. El repositorio tiene un tamaño de 0,3 GB, coherente con un modelo de 1.500 millones de parámetros en formato safetensors.
+El modelo `urosavurdic/qwen2.5-1.5b-m2-alt-safety` es un fine-tuning del modelo base Qwen2.5-1.5B de Alibaba, orientado a la seguridad en la generación de texto. El autor, urosavurdic, ha publicado este modelo en Hugging Face con el tag `safety`, lo que sugiere que ha sido ajustado para reducir respuestas dañinas o sesgadas, aunque no se proporciona documentación técnica al respecto. El repositorio tiene un tamaño de 0,3 GB, coherente con un modelo de 1.500 millones de parámetros en formato safetensors.
 
 La relevancia de este modelo radica en que parte de una base sólida: Qwen2.5-1.5B es un modelo denso, decoder-only, con una ventana de contexto de hasta 128.000 tokens y entrenado con hasta 18 billones de tokens, lo que le confiere capacidades multilingües y de razonamiento notables para su tamaño. Sin embargo, la model card publicada es una plantilla genérica sin información específica sobre el proceso de fine-tuning, los datos de entrenamiento o las métricas de evaluación, por lo que cualquier afirmación sobre su comportamiento en seguridad debe tomarse con cautela.
 
@@ -57,10 +57,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| urosavurdic/qwen2.5-1.5b-m2-alt-safety | 1,5B | 128K (base) | no disponible | HuggingFace |
-| Qwen/Qwen2.5-1.5B (base) | 1,5B | 128K | Apache 2.0 | HuggingFace, Ollama |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,5B | 128K | Apache 2.0 | HuggingFace, Ollama |
-| Llama 3.2 1B | 1,2B | 128K | Llama 3.2 Community License | HuggingFace, Ollama |
+| urosavurdic/qwen2.5-1.5b-m2-alt-safety | 1,5B | 128K (base) | no disponible | Hugging Face |
+| Qwen/Qwen2.5-1.5B (base) | 1,5B | 128K | Apache 2.0 | Hugging Face, Ollama |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,5B | 128K | Apache 2.0 | Hugging Face, Ollama |
+| Llama 3.2 1B | 1,2B | 128K | Llama 3.2 Community License | Hugging Face, Ollama |
 
 La comparativa se limita a modelos de tamano similar. No hay datos de rendimiento publicados para el modelo en cuestion, por lo que no se puede establecer una comparacion cuantitativa. La principal diferencia es el ajuste de seguridad, no verificado.
 
@@ -75,7 +75,7 @@ La comparativa se limita a modelos de tamano similar. No hay datos de rendimient
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/urosavurdic/qwen2.5-1.5b-m2-alt-safety
+- Modelo en Hugging Face: https://huggingface.co/urosavurdic/qwen2.5-1.5b-m2-alt-safety
 - Modelo base Qwen2.5-1.5B: https://huggingface.co/Qwen/Qwen2.5-1.5B
 - Variante similar (m2-safety): https://huggingface.co/urosavurdic/qwen2.5-1.5b-m2-safety
 - Repositorio de Qwen2.5 en GitHub: https://github.com/mx4ai/qwen2.5

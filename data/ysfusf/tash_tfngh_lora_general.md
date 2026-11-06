@@ -67,7 +67,7 @@ No se dispone de información suficiente para comparar este adaptador con otros 
 - El repositorio tiene 0 descargas y 0 likes, lo que indica poca adopción y posible falta de validación externa.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/ysfusf/tash_tfngh_lora_general
+- Hugging Face: https://huggingface.co/ysfusf/tash_tfngh_lora_general
 - Paper de LoRA: https://arxiv.org/abs/1910.09700 (referencia de la técnica)
 - Modelo base NLLB-200: https://huggingface.co/facebook/nllb-200-distilled-600M (no se ha consultado, pero se conoce su existencia)
 - Repositorio oficial de LoRA: https://github.com/microsoft/LoRA (referencia de la técnica)

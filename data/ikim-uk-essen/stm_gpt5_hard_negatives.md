@@ -19,7 +19,7 @@ La licencia MIT permite su uso comercial sin restricciones de atribución, lo qu
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible (probablemente inglés biomédico, no especificado) |
 | Licencia | MIT |
-| Formato de pesos | no disponible (dataset en formato HuggingFace datasets, probablemente Parquet) |
+| Formato de pesos | no disponible (dataset en formato Hugging Face datasets, probablemente Parquet) |
 
 ## Arquitectura y entrenamiento
 
@@ -32,7 +32,7 @@ El proceso de generación y los detalles de entrenamiento del retriever se descr
 - Proporciona pasajes negativos difíciles sintéticos para entrenar retrievers biomédicos.
 - Alineado posicionalmente con el dataset `BMRetriever/biomed_retrieval_dataset`, permitiendo un emparejamiento directo con consultas y documentos positivos.
 - Diseñado para mejorar la discriminación entre documentos relevantes e irrelevantes en dominios biomédicos.
-- Compatible con el ecosistema HuggingFace `datasets`, facilitando su carga y uso en pipelines de entrenamiento.
+- Compatible con el ecosistema Hugging Face `datasets`, facilitando su carga y uso en pipelines de entrenamiento.
 - Generado con GPT-5, lo que implica negativos de alta calidad lingüística y semántica.
 - Licencia MIT, sin restricciones de uso comercial o académico.
 
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El da
 
 - El dataset no requiere hardware específico para su uso; solo es necesario almacenamiento para los datos (aproximadamente el tamaño de 1,4 millones de pasajes de texto, que puede variar según el formato).
 - Para entrenar un retriever con estos datos se necesitará una GPU con VRAM suficiente según el modelo base (por ejemplo, 16 GB para modelos tipo BERT, 24-48 GB para modelos tipo T5 o similares).
-- No se requiere infraestructura especial para cargar o preprocesar el dataset; funciona con la librería `datasets` de HuggingFace.
+- No se requiere infraestructura especial para cargar o preprocesar el dataset; funciona con la librería `datasets` de Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -74,6 +74,6 @@ No disponible. No se han encontrado datasets comparables en la información prop
 
 ## Enlaces
 
-- [Dataset en HuggingFace](https://huggingface.co/datasets/ikim-uk-essen/stm_gpt5_hard_negatives)
+- [Dataset en Hugging Face](https://huggingface.co/datasets/ikim-uk-essen/stm_gpt5_hard_negatives)
 - [Perfil del autor IKIM](https://huggingface.co/ikim-uk-essen)
 - [Artículo arXiv 2602.04731](https://arxiv.org/abs/2602.04731)

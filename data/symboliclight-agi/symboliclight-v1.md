@@ -4,7 +4,7 @@
 
 SymbolicLight V1 es un modelo de lenguaje basado en redes neuronales de impulsos (spiking neural networks, SNN), desarrollado por el equipo SymbolicLight-AGI. Se publica en dos escalas, 0.8B y 194M de parámetros, con un diseño orientado exclusivamente a inferencia (inference-only) y activación dispersa (sparse activation). El modelo está descrito en el artículo arXiv:2605.21333 y se distribuye bajo licencia Apache 2.0, con soporte para inglés y chino.
 
-La relevancia de este modelo radica en su arquitectura SNN, que promete una mayor eficiencia energética y computacional frente a los transformadores densos convencionales, especialmente en entornos de inferencia con recursos limitados. Sin embargo, la documentación pública es escasa: no se detallan aspectos clave como la longitud de contexto, el proceso de entrenamiento o los resultados de benchmarks, lo que limita una evaluación completa. El repositorio de HuggingFace contiene únicamente los pesos de inferencia y los tokenizers, sin datos de entrenamiento ni métricas reproducibles.
+La relevancia de este modelo radica en su arquitectura SNN, que promete una mayor eficiencia energética y computacional frente a los transformadores densos convencionales, especialmente en entornos de inferencia con recursos limitados. Sin embargo, la documentación pública es escasa: no se detallan aspectos clave como la longitud de contexto, el proceso de entrenamiento o los resultados de benchmarks, lo que limita una evaluación completa. El repositorio de Hugging Face contiene únicamente los pesos de inferencia y los tokenizers, sin datos de entrenamiento ni métricas reproducibles.
 
 ## Especificaciones tecnicas
 
@@ -68,6 +68,6 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (SN
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SymbolicLight-AGI/SymbolicLight-V1
+- Hugging Face: https://huggingface.co/SymbolicLight-AGI/SymbolicLight-V1
 - Paper arXiv: https://arxiv.org/abs/2605.21333
 - Repositorio de codigo: https://github.com/SymbolicLight-AGI/SymbolicLight-V1

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`cmeister/boundary-markers-ru-d12-bnd_w-bpe` es un conjunto de tres modelos de lenguaje en ruso (semillas 0, 1 y 2) publicados por el usuario cmeister en HuggingFace. No son modelos pensados para uso final, sino artefactos de investigación: se entrenaron para comparar vocabularios de subpalabras que marcan explícitamente las fronteras de palabra, siguiendo el esquema del artículo *Explicit Boundary Markers for Subword Vocabularies* (Sander Land y Clara Meister, arXiv:2608.08847). El paper original reporta resultados en inglés; esta publicación replica el experimento en ruso en septiembre de 2026.
+`cmeister/boundary-markers-ru-d12-bnd_w-bpe` es un conjunto de tres modelos de lenguaje en ruso (semillas 0, 1 y 2) publicados por el usuario cmeister en Hugging Face. No son modelos pensados para uso final, sino artefactos de investigación: se entrenaron para comparar vocabularios de subpalabras que marcan explícitamente las fronteras de palabra, siguiendo el esquema del artículo *Explicit Boundary Markers for Subword Vocabularies* (Sander Land y Clara Meister, arXiv:2608.08847). El paper original reporta resultados en inglés; esta publicación replica el experimento en ruso en septiembre de 2026.
 
 Cada modelo es un transformer decoder-only de 12 capas, anchura 768, 6 cabezas de atención y contexto de 2.048 tokens, entrenado con nanochat (commit `92d63d4`) sobre 1.340 millones de tokens de Russian FineWeb-2. Los tres comparten inicialización de pesos y orden de shards por semilla, y solo difieren en el tokenizador, de modo que las diferencias de pérdida son atribuibles al esquema de tokenización y no a otras variables.
 
@@ -104,7 +104,7 @@ No se dispone de información sobre modelos de terceros comparables en parámetr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cmeister/boundary-markers-ru-d12-bnd_w-bpe
+- Modelo en Hugging Face: https://huggingface.co/cmeister/boundary-markers-ru-d12-bnd_w-bpe
 - Articulo de referencia (Explicit Boundary Markers for Subword Vocabularies, Sander Land y Clara Meister): https://arxiv.org/abs/2608.08847
 - Repositorio `script_tok` (codigo del paper, tokenizador y scripts de entrenamiento): https://github.com/sanderland/script_tok
 - nanochat (framework de entrenamiento, commit `92d63d4`): https://github.com/karpathy/nanochat

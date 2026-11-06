@@ -73,12 +73,12 @@ No se han publicado resultados frente a etiquetas humanas ni comparaciones con o
 
 ## Comparativa con modelos similares
 
-No se dispone de comparaciones publicadas con modelos alternativos en la información proporcionada. Como referencia estructural, el modelo se basa en `FacebookAI/roberta-base`, un encoder de ~125 M de parámetros con contexto de 512 tokens, licencia MIT y disponible en HuggingFace; sin embargo, no se han publicado métricas comparativas entre este etiquetador y otras alternativas de clasificación de noticias financieras.
+No se dispone de comparaciones publicadas con modelos alternativos en la información proporcionada. Como referencia estructural, el modelo se basa en `FacebookAI/roberta-base`, un encoder de ~125 M de parámetros con contexto de 512 tokens, licencia MIT y disponible en Hugging Face; sin embargo, no se han publicado métricas comparativas entre este etiquetador y otras alternativas de clasificación de noticias financieras.
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| barisarat/news-labeler-roberta | no disponible (repo 0,5 GB) | 128 tokens | Clasificación multitarea de titulares financieros | MIT | HuggingFace (pesos no estándar) |
-| FacebookAI/roberta-base | ~125 M | 512 tokens | Modelo base de lenguaje | MIT | HuggingFace |
+| barisarat/news-labeler-roberta | no disponible (repo 0,5 GB) | 128 tokens | Clasificación multitarea de titulares financieros | MIT | Hugging Face (pesos no estándar) |
+| FacebookAI/roberta-base | ~125 M | 512 tokens | Modelo base de lenguaje | MIT | Hugging Face |
 | Alternativas de clasificación financiera | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -94,7 +94,7 @@ No se dispone de comparaciones publicadas con modelos alternativos en la informa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/barisarat/news-labeler-roberta
+- Modelo en Hugging Face: https://huggingface.co/barisarat/news-labeler-roberta
 - Repositorio del pipeline: https://github.com/barisarat/llm-labeled-news-pipeline
 - Clase del estudiante: https://github.com/barisarat/llm-labeled-news-pipeline/blob/main/pipeline/student.py
 - Notebook de entrenamiento: https://github.com/barisarat/llm-labeled-news-pipeline/blob/main/ml/training/train_student.ipynb

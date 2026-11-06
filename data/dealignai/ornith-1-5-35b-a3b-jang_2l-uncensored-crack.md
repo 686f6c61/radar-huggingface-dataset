@@ -102,7 +102,7 @@ La comparativa con Qwen3-VL se indica como referencia de la misma categoría (mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dealignai/Ornith-1.5-35B-A3B-JANG_2L-UNCENSORED-CRACK
+- Modelo en Hugging Face: https://huggingface.co/dealignai/Ornith-1.5-35B-A3B-JANG_2L-UNCENSORED-CRACK
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Variante GGUF uncensored: https://huggingface.co/dealignai/Ornith-1.5-35B-A3B-UNCENSORED-GGUF (discusiones sobre vLLM)
 - Blog de Ornith sobre la familia 1.5: https://ornith.ai/ornith_1_5.html

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-ccbot es un modelo publicado en HuggingFace por el usuario hohjhjj bajo la identificacion `hohjhjj/ccbot`. La model card asociada es practicamente vacia: unicamente declara `license: other`, sin cuerpo de documentacion, sin descripcion de arquitectura, sin datos de entrenamiento ni ejemplos de uso. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) en el momento de la consulta, y fue creado y actualizado en la misma fecha (2026-10-28T07:53:10Z), lo que sugiere una publicacion reciente y sin mantenimiento posterior.
+ccbot es un modelo publicado en Hugging Face por el usuario hohjhjj bajo la identificacion `hohjhjj/ccbot`. La model card asociada es practicamente vacia: unicamente declara `license: other`, sin cuerpo de documentacion, sin descripcion de arquitectura, sin datos de entrenamiento ni ejemplos de uso. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) en el momento de la consulta, y fue creado y actualizado en la misma fecha (2026-10-28T07:53:10Z), lo que sugiere una publicacion reciente y sin mantenimiento posterior.
 
-No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto, tokenizador, idiomas soportados ni formato de pesos. El pipeline declarado en HuggingFace es "no disponible", por lo que ni siquiera puede confirmarse que se trate de un modelo de generacion de texto; el nombre "ccbot" es compatible con un bot conversacional, pero no hay evidencia tecnica que lo respalde.
+No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto, tokenizador, idiomas soportados ni formato de pesos. El pipeline declarado en Hugging Face es "no disponible", por lo que ni siquiera puede confirmarse que se trate de un modelo de generacion de texto; el nombre "ccbot" es compatible con un bot conversacional, pero no hay evidencia tecnica que lo respalde.
 
 Por tanto, esta ficha documenta exclusivamente los metadatos verificables del repositorio. Cualquier evaluacion de capacidades, rendimiento o idoneidad para produccion queda bloqueada por la ausencia total de documentacion tecnica. Se recomienda tratar el artefacto como no evaluado y no apto para uso en entornos reales hasta que el autor publique una model card sustantiva o artefactos verificables.
 
@@ -25,7 +25,7 @@ Por tanto, esta ficha documenta exclusivamente los metadatos verificables del re
 
 No se ha publicado informacion sobre la arquitectura del modelo. La model card no especifica si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura hibrida con capas de estado (SSM) o cualquier otra variante. Tampoco se indica el numero de capas, dimensiones ocultas, cabezas de atencion ni el esquema de positional encoding.
 
-Respecto al entrenamiento, no hay datos sobre el volumen de tokens, la composicion del corpus, la procedencia de los datos, la existencia de fases de ajuste supervisado, RLHF o DPO, ni sobre tecnicas de alineacion. No se documenta ningun mecanismo de innovacion tecnica (atencion lineal, decodificacion especulativa, cuantizacion nativa, etc.). La unica informacion estructural disponible es la etiqueta `region:us` del repositorio, que indica la region de almacenamiento en HuggingFace y no aporta nada sobre el modelo en si.
+Respecto al entrenamiento, no hay datos sobre el volumen de tokens, la composicion del corpus, la procedencia de los datos, la existencia de fases de ajuste supervisado, RLHF o DPO, ni sobre tecnicas de alineacion. No se documenta ningun mecanismo de innovacion tecnica (atencion lineal, decodificacion especulativa, cuantizacion nativa, etc.). La unica informacion estructural disponible es la etiqueta `region:us` del repositorio, que indica la region de almacenamiento en Hugging Face y no aporta nada sobre el modelo en si.
 
 ## Capacidades
 
@@ -75,5 +75,5 @@ No disponible. No puede establecerse una categoria de comparacion (tamano, tarea
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hohjhjj/ccbot
+- Repositorio en Hugging Face: https://huggingface.co/hohjhjj/ccbot
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

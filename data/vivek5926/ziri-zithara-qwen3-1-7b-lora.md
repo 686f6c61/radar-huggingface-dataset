@@ -6,7 +6,7 @@ Ziri LoRA adapter (Qwen3-1.7B) es un adaptador LoRA de tipo PEFT publicado por e
 
 El repositorio contiene unicamente los pesos del adaptador (aproximadamente 70 MB, con un tamano total de repo de 0.1 GB), no los pesos del modelo base. Esto implica que para utilizarlo es imprescindible descargar Qwen/Qwen3-1.7B y cargar el adaptador mediante la libreria `peft` o fusionarlo con `merge_and_unload()`. La licencia declarada es Apache-2.0.
 
-Su relevancia practica es doble. Por un lado, ilustra el patron habitual de adaptacion de un modelo pequeno y denso (1.7B parametros) para una tarea de negocio concreta con un coste de entrenamiento y almacenamiento muy bajo. Por otro, sirve como ejemplo de publicacion de adaptadores LoRA en HuggingFace con documentacion minima: el repositorio no incluye informacion sobre el dataset de entrenamiento, hiperparametros, idiomas soportados ni evaluaciones.
+Su relevancia practica es doble. Por un lado, ilustra el patron habitual de adaptacion de un modelo pequeno y denso (1.7B parametros) para una tarea de negocio concreta con un coste de entrenamiento y almacenamiento muy bajo. Por otro, sirve como ejemplo de publicacion de adaptadores LoRA en Hugging Face con documentacion minima: el repositorio no incluye informacion sobre el dataset de entrenamiento, hiperparametros, idiomas soportados ni evaluaciones.
 
 ## Especificaciones tecnicas
 
@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Ziri LoRA (Qwen3-1.7B) | Adaptador sobre 1.7B | No disponible | Apache-2.0 | HuggingFace, requiere el modelo base |
-| Qwen/Qwen3-1.7B | 1.7B | No disponible en la informacion proporcionada | Apache-2.0 | HuggingFace, pesos completos |
+| Ziri LoRA (Qwen3-1.7B) | Adaptador sobre 1.7B | No disponible | Apache-2.0 | Hugging Face, requiere el modelo base |
+| Qwen/Qwen3-1.7B | 1.7B | No disponible en la informacion proporcionada | Apache-2.0 | Hugging Face, pesos completos |
 | Alternativas de rango similar (p. ej. familias de 1-2B de otros proveedores) | 1-2B | No disponible | Variable | No disponible en la informacion proporcionada |
 
 No se dispone de datos de rendimiento comparativos entre este adaptador y otros modelos de la misma categoria. Cualquier comparacion cuantitativa requeriria evaluar el adaptador sobre un conjunto de validacion propio, dado que el autor no publica metricas.
@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento comparativos entre este adaptador y otros 
 
 - Sesgos conocidos: no disponible. No se documenta ninguna evaluacion de sesgo ni la composicion del dataset de ajuste.
 - Riesgo de alucinacion: presente, como en cualquier modelo generativo de 1.7B. Es especialmente relevante en un contexto de CRM y joyeria, donde datos como precios, plazos de entrega o materiales deben validarse contra una fuente de verdad externa.
-- Limitaciones de contexto e idioma: no se especifican. El campo de idiomas de la ficha de HuggingFace esta vacio, por lo que no puede confirmarse el soporte multilingue ni la calidad en idiomas distintos del usado durante el ajuste.
+- Limitaciones de contexto e idioma: no se especifican. El campo de idiomas de la ficha de Hugging Face esta vacio, por lo que no puede confirmarse el soporte multilingue ni la calidad en idiomas distintos del usado durante el ajuste.
 - Restricciones de licencia: la licencia declarada es Apache-2.0, permisiva para uso comercial. No obstante, conviene verificar la licencia del modelo base Qwen3-1.7B y las condiciones aplicables a los datos de ajuste, que no se documentan.
 - Requiere el modelo base: el repositorio no incluye los pesos completos, de modo que un despliegue autonomo exige descargar Qwen3-1.7B y fusionar el adaptador.
 - Trazabilidad limitada: no se publican hiperparametros, dataset, numero de pasos ni criterios de evaluacion, lo que dificulta reproducir el ajuste o auditar su comportamiento.

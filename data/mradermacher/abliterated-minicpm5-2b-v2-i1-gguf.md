@@ -90,7 +90,7 @@ No se puede establecer una comparación cuantitativa fiable sin benchmarks ni da
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/abliterated-minicpm5-2b-v2-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/abliterated-minicpm5-2b-v2-i1-GGUF
 - Modelo base: https://huggingface.co/KidIkaros/abliterated-minicpm5-2b-v2
 - Cuantizaciones estáticas: https://huggingface.co/mradermacher/abliterated-minicpm5-2b-v2-GGUF
 - Página resumen del autor para este modelo: https://hf.tst.eu/model#abliterated-minicpm5-2b-v2-i1-GGUF
@@ -98,4 +98,4 @@ No se puede establecer una comparación cuantitativa fiable sin benchmarks ni da
 - Gráfico comparativo de calidad de cuantizaciones de ikawrakow: https://www.nethype.de/huggingface_embed/quantpplgraph.png
 - Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
 
-Nota: la búsqueda web realizada no ha devuelto resultados relevantes sobre este modelo; los enlaces anteriores proceden de la propia model card y del repositorio de HuggingFace.
+Nota: la búsqueda web realizada no ha devuelto resultados relevantes sobre este modelo; los enlaces anteriores proceden de la propia model card y del repositorio de Hugging Face.

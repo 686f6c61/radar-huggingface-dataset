@@ -77,8 +77,8 @@ No se dispone de comparativas con otros modelos porque no hay datos de rendimien
 
 ## Enlaces
 
-- [HuggingFace: QiLong26/Qwen3-VL-8B-VQA-SFT-smoke](https://huggingface.co/QiLong26/Qwen3-VL-8B-VQA-SFT-smoke)
-- [HuggingFace: Qwen/Qwen3-VL-8B-Instruct (modelo base)](https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct)
+- [Hugging Face: QiLong26/Qwen3-VL-8B-VQA-SFT-smoke](https://huggingface.co/QiLong26/Qwen3-VL-8B-VQA-SFT-smoke)
+- [Hugging Face: Qwen/Qwen3-VL-8B-Instruct (modelo base)](https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct)
 - [GitHub: QwenLM/Qwen3-VL](https://github.com/QwenLM/Qwen3-VL)
 - [Guía de ejecución local de Qwen3-VL 8B](https://turbollm.dev/models/qwen3-vl-8b)
 - [Ollama: qwen3-vl:8b](https://ollama.com/library/qwen3-vl:8b)

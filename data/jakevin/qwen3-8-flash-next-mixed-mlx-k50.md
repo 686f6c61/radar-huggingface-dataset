@@ -18,7 +18,7 @@ El modelo no es cargable con `mlx-lm` ni `mlx-vlm` estándar: requiere un runtim
 | Longitud de contexto | no disponible |
 | Tipos de cuantización | Expertos en affine 2, 3 y 4 bits; expertos ternarios convertidos a `2t` (2 bits, group_size=64, escala bf16); embeddings y lm_head en 8 bits; tabla PLE en affine mixto 2-6 bits |
 | Idiomas soportados | no disponible |
-| Licencia | Qwen Community License 1.0 (etiquetada como `other` en HuggingFace) |
+| Licencia | Qwen Community License 1.0 (etiquetada como `other` en Hugging Face) |
 | Formato de pesos | safetensors (`skeleton.safetensors`, `nonexpert.safetensors`, `router_k50.safetensors`) y binarios empaquetados por capa (`codes.bin`, `scales.bf16`, `bias.bf16`, `index.json`) |
 
 ## Arquitectura y entrenamiento
@@ -73,9 +73,9 @@ Memoria con presupuesto de 15,6 GB: RSS máximo del proceso en torno a 23,3 GB, 
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jakevin/Qwen3.8-Flash-Next-mixed-mlx-K50 | no disponible | no disponible | Affine 2/3/4 bits + `2t`, embeddings 8 bits | Qwen Community 1.0 | HuggingFace, solo runtime C++ propio |
-| Jakevin/Qwen3.8-Flash-Next-ternary-mlx-K50 | no disponible | no disponible | Ternario (5 trits/byte) | Qwen Community 1.0 | HuggingFace, runtime Python propio |
-| Qwen/Qwen3.8-Flash-Next | no disponible | no disponible | Original (bf16 presumiblemente) | Qwen Community 1.0 | HuggingFace |
+| Jakevin/Qwen3.8-Flash-Next-mixed-mlx-K50 | no disponible | no disponible | Affine 2/3/4 bits + `2t`, embeddings 8 bits | Qwen Community 1.0 | Hugging Face, solo runtime C++ propio |
+| Jakevin/Qwen3.8-Flash-Next-ternary-mlx-K50 | no disponible | no disponible | Ternario (5 trits/byte) | Qwen Community 1.0 | Hugging Face, runtime Python propio |
+| Qwen/Qwen3.8-Flash-Next | no disponible | no disponible | Original (bf16 presumiblemente) | Qwen Community 1.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada, salvo la equivalencia exacta en tokens generados y logits entre este modelo y el ternario K50.
 
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jakevin/Qwen3.8-Flash-Next-mixed-mlx-K50
+- Hugging Face: https://huggingface.co/Jakevin/Qwen3.8-Flash-Next-mixed-mlx-K50
 - Modelo ternario base: https://huggingface.co/Jakevin/Qwen3.8-Flash-Next-ternary-mlx-K50
 - Runner C++: https://github.com/Jakevin/moe-offload/tree/main/mlx-qwen38/cpp
 - README del runner: https://github.com/Jakevin/moe-offload/blob/main/mlx-qwen38/cpp/README.md

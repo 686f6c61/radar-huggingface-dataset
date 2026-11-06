@@ -84,6 +84,6 @@ No se dispone de comparativas directas con otros adaptadores LoRA para ajedrez s
 
 ## Enlaces
 
-- [HuggingFace: GoodStartLabs/sf-cot-dagger-chess-qwen3-1.7b](https://huggingface.co/GoodStartLabs/sf-cot-dagger-chess-qwen3-1.7b)
+- [Hugging Face: GoodStartLabs/sf-cot-dagger-chess-qwen3-1.7b](https://huggingface.co/GoodStartLabs/sf-cot-dagger-chess-qwen3-1.7b)
 - [Sitio web de Good Start Labs](https://goodstartlabs.com/)
 - [Modelo base Qwen/Qwen3-1.7B](https://huggingface.co/Qwen/Qwen3-1.7B)

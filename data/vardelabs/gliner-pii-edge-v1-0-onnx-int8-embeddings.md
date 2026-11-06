@@ -92,6 +92,6 @@ No se dispone de comparaciones con otros modelos de deteccion de PII en la infor
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/vardelabs/gliner-pii-edge-v1.0-onnx-int8-embeddings
+- Repositorio en Hugging Face: https://huggingface.co/vardelabs/gliner-pii-edge-v1.0-onnx-int8-embeddings
 - Modelo base: https://huggingface.co/knowledgator/gliner-pii-edge-v1.0
 - Commit del export fp32 upstream referenciado por el autor: `9b7f39b0a2da971a5beea78d35f1539d4009c891`

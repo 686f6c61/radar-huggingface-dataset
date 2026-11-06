@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mehta2006/albef-retrieval-rc1 | 33.088 | no disponible | sin entrenar | BSD-3-Clause | HuggingFace |
-| Salesforce ALBEF (original) | ~200M (aprox.) | 512 tokens (imagen+texto) | SOTA en retrieval (COCO, Flickr30k) | BSD-3-Clause | GitHub, HuggingFace |
-| CLIP (ViT-B/32) | ~150M | 77 tokens | Bueno en retrieval cero disparo | MIT | HuggingFace, OpenAI |
+| mehta2006/albef-retrieval-rc1 | 33.088 | no disponible | sin entrenar | BSD-3-Clause | Hugging Face |
+| Salesforce ALBEF (original) | ~200M (aprox.) | 512 tokens (imagen+texto) | SOTA en retrieval (COCO, Flickr30k) | BSD-3-Clause | GitHub, Hugging Face |
+| CLIP (ViT-B/32) | ~150M | 77 tokens | Bueno en retrieval cero disparo | MIT | Hugging Face, OpenAI |
 
 La comparativa muestra que este prototipo no es comparable en capacidad ni rendimiento con los modelos establecidos. Su único valor es como ejemplo de implementación.
 
@@ -79,7 +79,7 @@ La comparativa muestra que este prototipo no es comparable en capacidad ni rendi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mehta2006/albef-retrieval-rc1
+- Repositorio en Hugging Face: https://huggingface.co/mehta2006/albef-retrieval-rc1
 - Código oficial de ALBEF (Salesforce): https://github.com/salesforce/ALBEF
 - Paper de ALBEF: https://arxiv.org/abs/2107.07651
 - Documentación de ALBEF en Replicate: https://replicate.com/salesforce/albef/readme

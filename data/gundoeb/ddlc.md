@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo Gundoeb/DDLC es un adaptador LoRA publicado en HuggingFace, entrenado mediante fine-tuning supervisado (SFT) sobre el modelo base Apriel-5B-Instruct. El nombre "DDLC" sugiere una posible relación con el juego *Doki Doki Literature Club*, y los resultados de búsqueda web apuntan a mods de IA para ese juego, pero la model card no confirma explícitamente su propósito. El repositorio tiene un tamaño de 0.2 GB, lo que indica que contiene únicamente los pesos del adaptador, no el modelo completo.
+El modelo Gundoeb/DDLC es un adaptador LoRA publicado en Hugging Face, entrenado mediante fine-tuning supervisado (SFT) sobre el modelo base Apriel-5B-Instruct. El nombre "DDLC" sugiere una posible relación con el juego *Doki Doki Literature Club*, y los resultados de búsqueda web apuntan a mods de IA para ese juego, pero la model card no confirma explícitamente su propósito. El repositorio tiene un tamaño de 0.2 GB, lo que indica que contiene únicamente los pesos del adaptador, no el modelo completo.
 
 La ficha oficial es prácticamente un esqueleto: todos los campos relevantes están marcados como "[More Information Needed]". No se especifican licencia, idiomas, datos de entrenamiento, ni métricas de evaluación. A pesar de ello, el uso de la librería PEFT y las etiquetas `lora`, `sft`, `transformers`, `trl` y `unsloth` confirman que se trata de un adaptador de bajo rango, probablemente destinado a ajustar el comportamiento conversacional del modelo base.
 
@@ -66,11 +66,11 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 - Limitaciones de contexto e idioma: desconocidas. No se especifican idiomas soportados ni la longitud de contexto efectiva.
 - Restricciones de licencia: la licencia no está disponible, lo que impide su uso comercial sin verificación legal previa.
 - Carencia de documentación: la model card está vacía en casi todos los campos, lo que dificulta la reproducibilidad y el despliegue en producción.
-- Dependencia del modelo base: el adaptador solo funciona con Apriel-5B-Instruct, que no está disponible públicamente en el repositorio de HuggingFace (no se encontró referencia).
+- Dependencia del modelo base: el adaptador solo funciona con Apriel-5B-Instruct, que no está disponible públicamente en el repositorio de Hugging Face (no se encontró referencia).
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Gundoeb/DDLC
+- Repositorio Hugging Face: https://huggingface.co/Gundoeb/DDLC
 - Búsqueda web relacionada (no oficial): https://github.com/doki-doki-ai-edition/Mod
 - Búsqueda web relacionada (no oficial): https://github.com/MrM0der/Doki-Doki-AI-Edition
 - Artículo sobre mods de IA para DDLC: https://discover.oreateai.com/discover/beyond-the-script-how-ai-mods-are-making-ddlc-characters-truly-selfaware

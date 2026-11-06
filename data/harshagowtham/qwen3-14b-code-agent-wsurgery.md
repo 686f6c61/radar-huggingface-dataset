@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- HuggingFace del parche: https://huggingface.co/harshagowtham/qwen3-14b-code-agent-wsurgery
+- Hugging Face del parche: https://huggingface.co/harshagowtham/qwen3-14b-code-agent-wsurgery
 - Fine-tune base: https://huggingface.co/harshagowtham/qwen3-14b-code-agent
 - Modelo upstream: https://huggingface.co/Qwen/Qwen3-14B
 - Motor de inferencia: https://huggingface.co/harshagowtham/qwen-agent-scripts

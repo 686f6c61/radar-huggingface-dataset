@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`seraphimzz/checkpoints` es un repositorio de pesos publicado en HuggingFace por el usuario seraphimzz. El nombre del repositorio y su tamano (746,9 GB) sugieren que no se trata de un unico modelo, sino de una coleccion de checkpoints o de multiples artefactos derivados de un modelo base de aproximadamente 4.022 millones de parametros (4,02 B), segun el dato de safetensors declarado. La model card no aporta informacion adicional: unicamente contiene el campo `license: unknown` en el frontmatter.
+`seraphimzz/checkpoints` es un repositorio de pesos publicado en Hugging Face por el usuario seraphimzz. El nombre del repositorio y su tamano (746,9 GB) sugieren que no se trata de un unico modelo, sino de una coleccion de checkpoints o de multiples artefactos derivados de un modelo base de aproximadamente 4.022 millones de parametros (4,02 B), segun el dato de safetensors declarado. La model card no aporta informacion adicional: unicamente contiene el campo `license: unknown` en el frontmatter.
 
-Los metadatos de HuggingFace indican que el repositorio esta etiquetado con `gguf`, `conversational`, `endpoints_compatible` y `region:us`. Esto apunta a un uso previsto para inferencia local mediante el formato GGUF y para despliegue en endpoints gestionados, asi como a un modelo afinado para dialogo. Sin embargo, no se especifica el modelo base, la arquitectura, los idiomas soportados ni la licencia, lo que limita seriamente cualquier evaluacion tecnica rigurosa.
+Los metadatos de Hugging Face indican que el repositorio esta etiquetado con `gguf`, `conversational`, `endpoints_compatible` y `region:us`. Esto apunta a un uso previsto para inferencia local mediante el formato GGUF y para despliegue en endpoints gestionados, asi como a un modelo afinado para dialogo. Sin embargo, no se especifica el modelo base, la arquitectura, los idiomas soportados ni la licencia, lo que limita seriamente cualquier evaluacion tecnica rigurosa.
 
 La relevancia de esta ficha es fundamentalmente descriptiva y de advertencia: se trata de un repositorio con muy poca traccion (62 descargas y 1 like en el momento de la consulta) y con informacion incompleta. Cualquier equipo que considere su uso en produccion deberia verificar primero la procedencia de los pesos, la licencia real del modelo base y la calidad de las cuantizaciones antes de integrarlo en un pipeline.
 
@@ -36,7 +36,7 @@ Datos adicionales del repositorio:
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo. La model card no incluye ninguna seccion descriptiva mas alla del campo de licencia, y los metadatos de HuggingFace no declaran familia de arquitectura, tipo de atencion, estrategia de posicionamiento ni si se trata de un transformer denso, un modelo de mezcla de expertos (MoE) o una arquitectura hibrida. Tampoco se indica el modelo base a partir del cual se habrian generado los checkpoints.
+No se dispone de informacion sobre la arquitectura del modelo. La model card no incluye ninguna seccion descriptiva mas alla del campo de licencia, y los metadatos de Hugging Face no declaran familia de arquitectura, tipo de atencion, estrategia de posicionamiento ni si se trata de un transformer denso, un modelo de mezcla de expertos (MoE) o una arquitectura hibrida. Tampoco se indica el modelo base a partir del cual se habrian generado los checkpoints.
 
 Respecto al entrenamiento, no hay datos sobre volumen de tokens, composicion del dataset, fases de ajuste (SFT, RLHF, DPO) ni tecnicas de optimizacion. El tag `conversational` sugiere un ajuste orientado a dialogo, pero es una inferencia a partir de una etiqueta, no un dato confirmado. El unico dato cuantitativo fiable es el recuento de parametros (4,02 B) y el tamano desproporcionado del repositorio (746,9 GB), coherente con el almacenamiento de numerosos checkpoints intermedios o de muchas variantes cuantizadas del mismo modelo.
 
@@ -58,7 +58,7 @@ Dado que no se dispone de informacion sobre arquitectura, contexto, licencia ni 
 
 - Prototipado local de asistentes conversacionales: al existir pesos en GGUF de un modelo de ~4 B de parametros, un desarrollador podria cargarlo con llama.cpp u Ollama en una estacion de trabajo para experimentar con dialogos, siempre que antes verifique la licencia del modelo base.
 - Evaluacion comparativa interna: el repositorio puede servir como material de partida para medir un modelo de ~4 B frente a alternativas conocidas, aunque seria necesario generar primero los benchmarks, ya que no hay ninguno publicado.
-- Despliegue en endpoints de HuggingFace: el tag `endpoints_compatible` permitiria, en principio, levantar el modelo como endpoint gestionado para pruebas de integracion, condicionado a la resolucion de la licencia.
+- Despliegue en endpoints de Hugging Face: el tag `endpoints_compatible` permitiria, en principio, levantar el modelo como endpoint gestionado para pruebas de integracion, condicionado a la resolucion de la licencia.
 - Educacion y experimentacion con cuantizacion: el gran numero de artefactos almacenados (746,9 GB) lo hace util para estudiar el impacto de distintas cuantizaciones GGUF sobre la calidad de salida, si el repositorio realmente contiene esas variantes.
 - Generacion de codigo o matematicas: no se puede recomendar sin datos de benchmarks ni confirmacion de capacidades tecnicas.
 - Uso comercial en produccion: desaconsejado en el estado actual de la informacion, ya que la licencia figura como `unknown` y no hay garantia de procedencia de los pesos.
@@ -84,7 +84,7 @@ Las siguientes cifras son estimaciones derivadas del recuento de parametros (4,0
 - Cabe en GPU de consumo: si, en la mayoria de tarjetas modernas. Una RTX 3060 de 12 GB puede ejecutar FP16 con contexto moderado o cualquier cuantizacion GGUF con holgura; una RTX 4060 Ti de 8 GB, una RTX 3070 o una RTX 4070 pueden ejecutar sin problema Q4_K_M y Q5_K_M.
 - GPU profesionales recomendadas: A100 40/80 GB, H100, L40S o A10G para despliegue con concurrencia alta o contexto muy largo. Para 4 B de parametros, estas GPU quedan sobredimensionadas salvo que se busque throughput elevado.
 - Ejecucion en CPU: viable con llama.cpp, especialmente con cuantizaciones Q4_K_M o inferiores; se recomienda un minimo de 8 GB de RAM libre.
-- Opciones de despliegue: llama.cpp y Ollama para GGUF; vLLM y TGI si se dispone de los pesos en safetensors; LM Studio para uso de escritorio; HuggingFace Inference Endpoints gracias al tag `endpoints_compatible`.
+- Opciones de despliegue: llama.cpp y Ollama para GGUF; vLLM y TGI si se dispone de los pesos en safetensors; LM Studio para uso de escritorio; Hugging Face Inference Endpoints gracias al tag `endpoints_compatible`.
 - Latencia y throughput: no disponible. No se han publicado mediciones de tokens por segundo ni de tiempo hasta el primer token.
 
 ## Comparativa con modelos similares
@@ -116,6 +116,6 @@ La diferencia mas relevante no es de tamano sino de trazabilidad: los modelos al
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/seraphimzz/checkpoints
+- Repositorio en Hugging Face: https://huggingface.co/seraphimzz/checkpoints
 - Perfil del autor: https://huggingface.co/seraphimzz
 - No se han encontrado en la informacion proporcionada enlaces adicionales a papers, blogs, repositorios de codigo o demos.

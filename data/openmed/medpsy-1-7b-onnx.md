@@ -79,9 +79,9 @@ Lo unico que se documenta son metricas de fidelidad de la cuantizacion frente al
 
 | Modelo | Parametros | Formato y cuantizacion | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|---|
-| OpenMed/MedPsy-1.7B-ONNX | 1,72 B | ONNX, cuerpo int4 + capas sensibles int8 (6,58 bits/peso medidos) | no disponible | Apache 2.0 | HuggingFace, transformers.js / ONNX Runtime | Conversion orientada a dispositivo; sin herramientas de agente declaradas |
-| qvac/MedPsy-1.7B (fuente) | 1,72 B | Pesos PyTorch del autor (BF16/FP32) | no disponible | Apache 2.0 segun esta conversion | HuggingFace | Ajuste fino medico de Qwen3-1.7B; entrenado con datos generados a partir de colecciones CC-BY-NC |
-| Qwen3-1.7B (base) | 1,7 B aprox. | Safetensors, BF16 | no disponible en la informacion aportada | Apache 2.0 (modelo original de Qwen) | HuggingFace | Modelo generalista multilingue; el fine-tune medico parte de el |
+| OpenMed/MedPsy-1.7B-ONNX | 1,72 B | ONNX, cuerpo int4 + capas sensibles int8 (6,58 bits/peso medidos) | no disponible | Apache 2.0 | Hugging Face, transformers.js / ONNX Runtime | Conversion orientada a dispositivo; sin herramientas de agente declaradas |
+| qvac/MedPsy-1.7B (fuente) | 1,72 B | Pesos PyTorch del autor (BF16/FP32) | no disponible | Apache 2.0 segun esta conversion | Hugging Face | Ajuste fino medico de Qwen3-1.7B; entrenado con datos generados a partir de colecciones CC-BY-NC |
+| Qwen3-1.7B (base) | 1,7 B aprox. | Safetensors, BF16 | no disponible en la informacion aportada | Apache 2.0 (modelo original de Qwen) | Hugging Face | Modelo generalista multilingue; el fine-tune medico parte de el |
 
 No se dispone de datos de contexto, benchmarks ni licencias verificadas de terceros mas alla de lo indicado, por lo que la comparacion se limita a parametros, formato, licencia y disponibilidad.
 
@@ -100,7 +100,7 @@ No se dispone de datos de contexto, benchmarks ni licencias verificadas de terce
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OpenMed/MedPsy-1.7B-ONNX
+- Repositorio Hugging Face: https://huggingface.co/OpenMed/MedPsy-1.7B-ONNX
 - Modelo fuente: https://huggingface.co/qvac/MedPsy-1.7B
 - Revision del modelo fuente citada: `59335b96dd541b0061d748d7a6e9536e92274985`
 - ONNX: https://onnx.ai

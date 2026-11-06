@@ -78,7 +78,7 @@ No se dispone de información suficiente para realizar una comparativa directa c
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/0xKitkat/safestep-gemma-4-e2b-qlora
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/0xKitkat/safestep-gemma-4-e2b-qlora
 - Modelo base Gemma 4 (Google DeepMind): https://deepmind.google/models/gemma/gemma-4/
 - Model card oficial de Gemma 4: https://ai.google.dev/gemma/docs/core/model_card_4
 - Documentación de Gemma 4 para Google AI Edge: https://developers.google.com/edge/litert-lm/models/gemma-4

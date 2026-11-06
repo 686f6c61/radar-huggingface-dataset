@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Junaidi69/rengas-3.2-lora-adapters-st-008 es un adaptador LoRA (PEFT) publicado en HuggingFace por el usuario Junaidi69, no un modelo completo. Según la propia model card, se trata de la etapa «st-008», correspondiente a la fase 8 de un total de 225, de un proceso de ajuste supervisado sobre el fichero de datos latih_pekerja_part01.jsonl. El adaptador debe combinarse con el modelo base unsloth/Llama-3.2-1B-Instruct (mediante mergekit o un proceso equivalente de fusión/finalización) antes de poder utilizarse para inferencia.
+Junaidi69/rengas-3.2-lora-adapters-st-008 es un adaptador LoRA (PEFT) publicado en Hugging Face por el usuario Junaidi69, no un modelo completo. Según la propia model card, se trata de la etapa «st-008», correspondiente a la fase 8 de un total de 225, de un proceso de ajuste supervisado sobre el fichero de datos latih_pekerja_part01.jsonl. El adaptador debe combinarse con el modelo base unsloth/Llama-3.2-1B-Instruct (mediante mergekit o un proceso equivalente de fusión/finalización) antes de poder utilizarse para inferencia.
 
 El modelo base es Llama 3.2 1B Instruct, un transformer decoder-only de 1.240 millones de parámetros desarrollado por Meta, con una ventana de contexto de 128.000 tokens y licencia comunitaria propia de Llama 3.2. Al tratarse de un adaptador y no de un modelo autónomo, sus capacidades, idiomas y límites heredan los del base, y el adaptador únicamente aporta el desplazamiento de pesos aprendido durante el entrenamiento sobre el corpus citado.
 
@@ -21,7 +21,7 @@ La relevancia de esta ficha es limitada y conviene ser explícito: el repositori
 | Licencia | No disponible. El modelo base se distribuye bajo la Llama 3.2 Community License |
 | Formato de pesos | safetensors (formato de adaptadores PEFT/LoRA) |
 | Libreria | peft |
-| Tamano del repositorio | 0,0 GB (según metadatos de HuggingFace; puede indicar pesos no subidos o un tamaño inferior al umbral de redondeo) |
+| Tamano del repositorio | 0,0 GB (según metadatos de Hugging Face; puede indicar pesos no subidos o un tamaño inferior al umbral de redondeo) |
 | Modelo base | unsloth/Llama-3.2-1B-Instruct |
 | Version / etapa | st-008, fase 8 de 225 |
 | Dataset de ajuste | latih_pekerja_part01.jsonl (contenido no publicado) |
@@ -98,7 +98,7 @@ Nota: los datos de los modelos comparados provienen de su documentación públic
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Junaidi69/rengas-3.2-lora-adapters-st-008
+- Modelo en Hugging Face: https://huggingface.co/Junaidi69/rengas-3.2-lora-adapters-st-008
 - Modelo base utilizado: https://huggingface.co/unsloth/Llama-3.2-1B-Instruct
 - Modelo original de Meta: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
 - Documentación de PEFT: https://huggingface.co/docs/peft/index

@@ -88,7 +88,7 @@ La comparación cuantitativa con alternativas de la misma categoría (por ejempl
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/mradermacher/Qwen3-32B-SFT-AIME-GGUF
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/mradermacher/Qwen3-32B-SFT-AIME-GGUF
 - Modelo base del que deriva: https://huggingface.co/Ta1k1/Qwen3-32B-SFT-AIME
 - Página de descargas del autor para este modelo: https://hf.tst.eu/model#Qwen3-32B-SFT-AIME-GGUF
 - README de referencia sobre uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

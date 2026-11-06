@@ -93,7 +93,7 @@ La comparativa con GGUF es la más directa: ambos permiten inferencia en CPU, pe
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jonpark0/SmolLM3-3B-krafla
+- Repositorio Hugging Face: https://huggingface.co/jonpark0/SmolLM3-3B-krafla
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM3-3B
 - Runtime Krafla: https://github.com/JonPark0/krafla
 - Releases de Krafla: https://github.com/JonPark0/krafla/releases

@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Artefacto | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (r=1, capa 10, celda wine / no MSM / set B) | Rango 1 sobre una proyeccion | No disponible | Sin cifras publicadas | MIT | Publico en HuggingFace, 0 descargas |
+| Este adaptador (r=1, capa 10, celda wine / no MSM / set B) | Rango 1 sobre una proyeccion | No disponible | Sin cifras publicadas | MIT | Publico en Hugging Face, 0 descargas |
 | Adaptador MSM del mismo paper (apilado previo) | No disponible | No disponible | No disponible | No disponible | Referenciado en la model card, identificador no disponible |
 | `Qwen/Qwen3.5-9B` sin adaptar | ~9B (segun denominacion) | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | Publico como modelo base |
 | Fine-tuning completo de `Qwen/Qwen3.5-9B` sobre las mismas filas | ~9B entrenables | No disponible | No disponible | No disponible | No publicado en la informacion proporcionada |
@@ -94,7 +94,7 @@ No se identifican en la informacion proporcionada otros adaptadores publicos dir
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bcywinski/gen-science-aft-wine-none-B-qwen3.5-9b-r1down-l10
+- Modelo en Hugging Face: https://huggingface.co/bcywinski/gen-science-aft-wine-none-B-qwen3.5-9b-r1down-l10
 - Dataset de filas de ajuste: https://huggingface.co/datasets/bcywinski/gen-science-aft-rows
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Perfil del autor: https://huggingface.co/bcywinski

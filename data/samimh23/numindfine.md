@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `samimh23/numindfine` es un modelo publicado en HuggingFace por el usuario samimh23 bajo licencia Apache 2.0. En el momento de redactar esta ficha, la informacion publica disponible es practicamente inexistente: la model card no contiene mas que el bloque de metadatos de licencia, sin descripcion, sin arquitectura declarada, sin datos de entrenamiento y sin ejemplos de uso.
+El repositorio `samimh23/numindfine` es un modelo publicado en Hugging Face por el usuario samimh23 bajo licencia Apache 2.0. En el momento de redactar esta ficha, la informacion publica disponible es practicamente inexistente: la model card no contiene mas que el bloque de metadatos de licencia, sin descripcion, sin arquitectura declarada, sin datos de entrenamiento y sin ejemplos de uso.
 
 El repositorio no tiene ningun tag de pipeline asignado, no declara idiomas soportados, acumula 0 descargas y 0 "likes", y fue creado y actualizado en la misma marca temporal (2026-10-08T19:50:57Z), lo que sugiere una subida sin documentar ni mantener posteriormente. No se ha localizado ninguna publicacion tecnica, paper, blog o repositorio asociado.
 
@@ -82,6 +82,6 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/samimh23/numindfine
+- Repositorio en Hugging Face: https://huggingface.co/samimh23/numindfine
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la busqueda web realizada.
 - El unico resultado devuelto por la busqueda web es un hilo de un foro de psicologia sin relacion alguna con el modelo: https://www.psychforums.com/relationship/topic217515.html (descartado por no ser relevante).

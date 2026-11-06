@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `longtermrisk/Llama-3.1-8B-target-only-no-hallucination-first-third-sft-seed4` es un ajuste fino (fine-tuning) supervisado del modelo base `unsloth/Meta-Llama-3.1-8B-Instruct`, desarrollado por el usuario `longtermrisk`. El nombre sugiere un entrenamiento orientado a reducir alucinaciones, posiblemente utilizando solo una parte de los datos de entrenamiento (la primera y tercera parte, según la nomenclatura). El ajuste se realizó con la librería Unsloth y el framework TRL de HuggingFace, lo que permite un entrenamiento más rápido.
+El modelo `longtermrisk/Llama-3.1-8B-target-only-no-hallucination-first-third-sft-seed4` es un ajuste fino (fine-tuning) supervisado del modelo base `unsloth/Meta-Llama-3.1-8B-Instruct`, desarrollado por el usuario `longtermrisk`. El nombre sugiere un entrenamiento orientado a reducir alucinaciones, posiblemente utilizando solo una parte de los datos de entrenamiento (la primera y tercera parte, según la nomenclatura). El ajuste se realizó con la librería Unsloth y el framework TRL de Hugging Face, lo que permite un entrenamiento más rápido.
 
 Este modelo se presenta como una variante específica dentro de una serie de experimentos (se observan otras versiones como `seed3-epoch3` o `epoch3` en el mismo repositorio). Aunque la ficha pública es mínima, hereda las capacidades arquitectónicas de Llama 3.1 8B, incluyendo una ventana de contexto de 128 000 tokens y soporte multilingüe, aunque el ajuste se centra en inglés. Su relevancia radica en la exploración de técnicas para mitigar la generación de contenido falso, un problema crítico en la implementación de LLMs en producción.
 
@@ -21,7 +21,7 @@ Este modelo se presenta como una variante específica dentro de una serie de exp
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de la arquitectura Llama 3.1 de Meta, un transformer decoder-only con normalización RMSNorm, atención por grupos de consultas (GQA) y activación SwiGLU. El ajuste fino se realizó mediante SFT (supervised fine-tuning) utilizando Unsloth, que optimiza el entrenamiento mediante kernels y técnicas de memoria eficiente, y la librería TRL de HuggingFace. El nombre del modelo indica que el entrenamiento se limitó a un subconjunto de los datos (posiblemente "target-only" y "first-third"), aunque no se proporcionan detalles sobre el volumen de tokens, la composición del dataset ni si se aplicaron técnicas de alineación adicionales como RLHF o DPO. Tampoco se especifica el número de épocas ni el tamaño del lote. La variante `seed4` sugiere que se usó una semilla aleatoria específica para la inicialización o el barajado de datos.
+El modelo parte de la arquitectura Llama 3.1 de Meta, un transformer decoder-only con normalización RMSNorm, atención por grupos de consultas (GQA) y activación SwiGLU. El ajuste fino se realizó mediante SFT (supervised fine-tuning) utilizando Unsloth, que optimiza el entrenamiento mediante kernels y técnicas de memoria eficiente, y la librería TRL de Hugging Face. El nombre del modelo indica que el entrenamiento se limitó a un subconjunto de los datos (posiblemente "target-only" y "first-third"), aunque no se proporcionan detalles sobre el volumen de tokens, la composición del dataset ni si se aplicaron técnicas de alineación adicionales como RLHF o DPO. Tampoco se especifica el número de épocas ni el tamaño del lote. La variante `seed4` sugiere que se usó una semilla aleatoria específica para la inicialización o el barajado de datos.
 
 ## Capacidades
 
@@ -73,7 +73,7 @@ La comparación directa con el modelo base es la más relevante, pero al no exis
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-first-third-sft-seed4)
+- [Modelo en Hugging Face](https://huggingface.co/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-first-third-sft-seed4)
 - [Variante seed3-epoch3](https://huggingface.co/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-first-third-sft-seed3-epoch3)
 - [Variante epoch3](https://huggingface.co/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-first-third-sft-epoch3)
 - [Despliegue en FriendliAI (variante first-third)](https://friendli.ai/models/longtermrisk/Llama-3.1-8B-target-only-first-third)

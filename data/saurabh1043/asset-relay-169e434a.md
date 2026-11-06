@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `asset-relay-169e434a`, publicado por el usuario `saurabh1043` en HuggingFace, es un checkpoint de 2.290.004.544 parámetros (aproximadamente 2,29 mil millones) distribuido en formato safetensors. El repositorio tiene un tamaño de 56,9 GB, lo que sugiere que contiene los pesos en precisión alta (probablemente fp32 o múltiples variantes) y no una versión cuantizada. Se trata de un modelo de acceso restringido (gated): es necesario aceptar condiciones en la plataforma antes de poder descargarlo.
+El modelo `asset-relay-169e434a`, publicado por el usuario `saurabh1043` en Hugging Face, es un checkpoint de 2.290.004.544 parámetros (aproximadamente 2,29 mil millones) distribuido en formato safetensors. El repositorio tiene un tamaño de 56,9 GB, lo que sugiere que contiene los pesos en precisión alta (probablemente fp32 o múltiples variantes) y no una versión cuantizada. Se trata de un modelo de acceso restringido (gated): es necesario aceptar condiciones en la plataforma antes de poder descargarlo.
 
 La información pública disponible es extremadamente limitada. No se especifica la arquitectura, el pipeline de la tarea, los idiomas soportados ni la licencia. El identificador (`asset-relay-169e434a`) y el nombre del autor no corresponden a ningún modelo conocido del ecosistema open source, por lo que no es posible asociarlo a una familia establecida (Llama, Qwen, Mistral, Gemma, etc.) ni verificar su procedencia.
 
@@ -81,7 +81,7 @@ La comparación de rendimiento con estos modelos no puede realizarse porque el m
 ## Limitaciones y advertencias
 
 - Licencia no declarada: no puede confirmarse si el uso comercial está permitido. Esto es un bloqueante para cualquier despliegue en producción.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que añade fricción a la reproducibilidad y a la integración en pipelines automatizados.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que añade fricción a la reproducibilidad y a la integración en pipelines automatizados.
 - Procedencia desconocida: el autor no es un laboratorio reconocido y no hay paper, blog ni repositorio asociado que documente el entrenamiento.
 - Riesgo elevado de alucinación y comportamiento impredecible: sin evaluación publicada, no hay garantías sobre calidad, sesgos ni robustez.
 - Idiomas no declarados: no puede asumirse soporte de castellano ni de ningún otro idioma concreto.
@@ -92,5 +92,5 @@ La comparación de rendimiento con estos modelos no puede realizarse porque el m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/saurabh1043/asset-relay-169e434a
+- Hugging Face: https://huggingface.co/saurabh1043/asset-relay-169e434a
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

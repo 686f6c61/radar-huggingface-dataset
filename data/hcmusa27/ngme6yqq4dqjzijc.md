@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `hcmusa27/NGME6YQQ4DQJzijc` aloja un modelo en HuggingFace publicado por el usuario `hcmusa27` con la etiqueta `region:us`. Fue creado el 11 de agosto de 2026 y actualizado el 14 de agosto de 2026. El tamaño total del repositorio es de 118.6 GB, lo que sugiere que se trata de un modelo de gran tamaño, probablemente con pesos completos o cuantizaciones de alta precisión. Sin embargo, no se dispone de información pública sobre su arquitectura, parámetros, propósito o capacidades. La ausencia de metadatos (pipeline, licencia, idiomas) y la falta de descargas indican que es un modelo reciente y posiblemente no validado por la comunidad. Cualquier evaluación técnica debe considerarse preliminar hasta que se publique documentación adicional.
+El repositorio `hcmusa27/NGME6YQQ4DQJzijc` aloja un modelo en Hugging Face publicado por el usuario `hcmusa27` con la etiqueta `region:us`. Fue creado el 11 de agosto de 2026 y actualizado el 14 de agosto de 2026. El tamaño total del repositorio es de 118.6 GB, lo que sugiere que se trata de un modelo de gran tamaño, probablemente con pesos completos o cuantizaciones de alta precisión. Sin embargo, no se dispone de información pública sobre su arquitectura, parámetros, propósito o capacidades. La ausencia de metadatos (pipeline, licencia, idiomas) y la falta de descargas indican que es un modelo reciente y posiblemente no validado por la comunidad. Cualquier evaluación técnica debe considerarse preliminar hasta que se publique documentación adicional.
 
 ## Especificaciones técnicas
 
@@ -53,4 +53,4 @@ No disponible. Al no conocer la arquitectura, el tamaño de parámetros ni el re
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/hcmusa27/NGME6YQQ4DQJzijc)
+- [Repositorio en Hugging Face](https://huggingface.co/hcmusa27/NGME6YQQ4DQJzijc)

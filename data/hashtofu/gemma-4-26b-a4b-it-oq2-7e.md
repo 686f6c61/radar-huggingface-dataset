@@ -77,7 +77,7 @@ Nota: el contexto de 2048 es dudoso; otros modelos Gemma 4 suelen tener 8K o mas
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hashtofu/gemma-4-26b-a4b-it-oQ2.7e
+- Repositorio Hugging Face: https://huggingface.co/hashtofu/gemma-4-26b-a4b-it-oQ2.7e
 - Tutorial de despliegue: https://graphicstudio.io/2026/06/28/deploy-gemma-4-26b-a4b-it-2026-2027-tutorial/
 - Version GGUF de unsloth: https://huggingface.co/unsloth/gemma-4-26B-A4B-it-GGUF
 - Pagina de Gemma 4 en Google DeepMind: https://deepmind.google/models/gemma/gemma-4/

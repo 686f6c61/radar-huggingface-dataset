@@ -2,7 +2,7 @@
 
 ## Resumen
 
-eeg-fm-masking_jepa_rall_L1 es un codificador (encoder) de senales EEG preentrenado, publicado en HuggingFace por el autor PierreGtch dentro del proyecto eeg-fm-masking. Se trata de uno de los 58 encoders entrenados con una receta identica en la que solo cambia la geometria de enmascaramiento (5 radios espaciales x 6 longitudes temporales x 2 marcos de trabajo, MAE y JEPA). En concreto, este modelo emplea el marco JEPA (joint-embedding predictive architecture), enmascara todos los canales (r = all) y una longitud temporal de un solo parche (L = 1). El modelo procede del paper "What masking geometry works best for EEG foundation models? A controlled evaluation across MAE and JEPA".
+eeg-fm-masking_jepa_rall_L1 es un codificador (encoder) de senales EEG preentrenado, publicado en Hugging Face por el autor PierreGtch dentro del proyecto eeg-fm-masking. Se trata de uno de los 58 encoders entrenados con una receta identica en la que solo cambia la geometria de enmascaramiento (5 radios espaciales x 6 longitudes temporales x 2 marcos de trabajo, MAE y JEPA). En concreto, este modelo emplea el marco JEPA (joint-embedding predictive architecture), enmascara todos los canales (r = all) y una longitud temporal de un solo parche (L = 1). El modelo procede del paper "What masking geometry works best for EEG foundation models? A controlled evaluation across MAE and JEPA".
 
 El modelo es un transformer contextual de 12,69 millones de parametros (12.692.096) cuyo unico artefacto publicado es el encoder; ni el predictor JEPA ni el profesor EMA se redistribuyen. Resuelve el problema de la extraccion de caracteristicas (feature extraction) sobre EEG: convierte ventanas de senal en representaciones contextuales que despues se evaluan con una sonda lineal (ridge) congelada. Es relevante porque forma parte de un estudio controlado y reproducible sobre que geometria de enmascaramiento conviene a los modelos fundacionales de EEG, y porque sus pesos son redistribuibles bajo CC-BY-4.0 (entrenados sobre el subconjunto de licencia abierta del corpus REVE).
 
@@ -112,7 +112,7 @@ Cabe senalar que, segun la propia model card, el paper recomienda las configurac
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/PierreGtch/eeg-fm-masking_jepa_rall_L1
+- Hugging Face: https://huggingface.co/PierreGtch/eeg-fm-masking_jepa_rall_L1
 - Sitio web del paper: https://pierregtch.github.io/eeg-fm-masking
 - Codigo: https://github.com/PierreGtch/eeg-fm-masking
 - Coleccion completa (58 modelos): https://huggingface.co/collections/PierreGtch/eeg-fm-masking-6ab912b6a03bba1348fc7366

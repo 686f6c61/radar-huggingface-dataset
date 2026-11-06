@@ -4,7 +4,7 @@
 
 CONSIDER-1 es un modelo de lenguaje de 752 millones de parametros desarrollado por TheAiCollectiveART, del que mradermacher ha publicado una version cuantizada en formato GGUF. Este repositorio contiene las cuantizaciones estaticas del modelo base, listas para su uso con llama.cpp, Ollama u otros motores compatibles con GGUF.
 
-La informacion publica sobre el modelo base es minima. Los metadatos de HuggingFace sugieren una orientacion hacia inteligencia de borde (edge intelligence), redes LoRaWAN, aplicaciones blockchain en Solana y criptografia con curvas BN254 y pruebas Groth16. El modelo esta licenciado bajo Apache 2.0 y soporta ingles. Al tratarse de un modelo pequeno (0.75B), puede ejecutarse en dispositivos con pocos recursos, lo que lo hace relevante para escenarios de inferencia local y embebida.
+La informacion publica sobre el modelo base es minima. Los metadatos de Hugging Face sugieren una orientacion hacia inteligencia de borde (edge intelligence), redes LoRaWAN, aplicaciones blockchain en Solana y criptografia con curvas BN254 y pruebas Groth16. El modelo esta licenciado bajo Apache 2.0 y soporta ingles. Al tratarse de un modelo pequeno (0.75B), puede ejecutarse en dispositivos con pocos recursos, lo que lo hace relevante para escenarios de inferencia local y embebida.
 
 ## Especificaciones tecnicas
 

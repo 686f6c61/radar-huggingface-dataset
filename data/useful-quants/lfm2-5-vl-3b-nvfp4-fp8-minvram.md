@@ -99,7 +99,7 @@ No se dispone de datos de otros modelos comparables (por ejemplo, Qwen2.5-VL-3B 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/useful-quants/LFM2.5-VL-3B-NVFP4-FP8-MinVRAM
+- Repositorio Hugging Face: https://huggingface.co/useful-quants/LFM2.5-VL-3B-NVFP4-FP8-MinVRAM
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-VL-3B
 - Blog de Liquid AI sobre LFM2.5-VL-3B: https://www.liquid.ai/blog/lfm2-5-vl-3b
 - Documentación oficial de LFM2.5-VL-3B: https://docs.liquid.ai/lfm/models/lfm25-vl-3b

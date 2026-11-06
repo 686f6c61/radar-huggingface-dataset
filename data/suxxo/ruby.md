@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ruby es un modelo publicado en HuggingFace por el usuario suxxo bajo el identificador `suxxo/ruby`. Se trata de un repositorio de pequeño tamaño (aproximadamente 0,1 GB) que, a fecha de la informacion disponible, no cuenta con descargas ni con metadatos tecnicos publicos mas alla de la etiqueta de region `us`. No se especifica pipeline, licencia, idiomas soportados ni arquitectura en la ficha del repositorio.
+Ruby es un modelo publicado en Hugging Face por el usuario suxxo bajo el identificador `suxxo/ruby`. Se trata de un repositorio de pequeño tamaño (aproximadamente 0,1 GB) que, a fecha de la informacion disponible, no cuenta con descargas ni con metadatos tecnicos publicos mas alla de la etiqueta de region `us`. No se especifica pipeline, licencia, idiomas soportados ni arquitectura en la ficha del repositorio.
 
 La relevancia de esta ficha es limitada por la escasez de informacion verificable. El modelo aparece creado y actualizado el 5 de noviembre de 2026, con un unico "like" y sin documentacion asociada en la informacion proporcionada. No se dispone de model card, paper, blog ni repositorio de codigo que permita determinar su proposito, su arquitectura o su rendimiento.
 
@@ -76,4 +76,4 @@ No disponible. No se dispone de informacion sobre parametros, contexto, rendimie
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/suxxo/ruby
+- Hugging Face: https://huggingface.co/suxxo/ruby

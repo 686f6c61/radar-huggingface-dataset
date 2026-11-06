@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje publicado en HuggingFace por el usuario ZXC1EDSA en el repositorio `MyAwesomeModel-TestRepository`. Según su model card, se trata de una versión actualizada de un modelo conversacional centrado en razonamiento profundo, que habría mejorado respecto a su versión anterior en matemáticas, programación y lógica general, con soporte de function calling y una tasa de alucinación reducida. El propio repositorio se presenta como un repositorio de prueba ("TestRepository"), lo que obliga a tomar la información con cautela.
+MyAwesomeModel es un modelo de lenguaje publicado en Hugging Face por el usuario ZXC1EDSA en el repositorio `MyAwesomeModel-TestRepository`. Según su model card, se trata de una versión actualizada de un modelo conversacional centrado en razonamiento profundo, que habría mejorado respecto a su versión anterior en matemáticas, programación y lógica general, con soporte de function calling y una tasa de alucinación reducida. El propio repositorio se presenta como un repositorio de prueba ("TestRepository"), lo que obliga a tomar la información con cautela.
 
-La model card indica que el modelo pertenece a la librería `transformers` de HuggingFace y está etiquetado con la arquitectura BERT y la tarea de extracción de características (feature-extraction), aunque el contenido del README describe capacidades de generación de texto y razonamiento, lo que constituye una incoherencia no resuelta en la documentación disponible. No se especifican el número de parámetros, la longitud de contexto, el tamaño del dataset de entrenamiento ni los idiomas soportados; de hecho, el tamaño del repositorio es de 0,0 GB, lo que sugiere que los pesos no están publicados.
+La model card indica que el modelo pertenece a la librería `transformers` de Hugging Face y está etiquetado con la arquitectura BERT y la tarea de extracción de características (feature-extraction), aunque el contenido del README describe capacidades de generación de texto y razonamiento, lo que constituye una incoherencia no resuelta en la documentación disponible. No se especifican el número de parámetros, la longitud de contexto, el tamaño del dataset de entrenamiento ni los idiomas soportados; de hecho, el tamaño del repositorio es de 0,0 GB, lo que sugiere que los pesos no están publicados.
 
 Entre los datos verificables del README destaca una mejora declarada en AIME 2025, pasando del 70% al 87,5% de precisión respecto a la versión anterior, a costa de aumentar el consumo medio de tokens de razonamiento de 12K a 23K por pregunta. Se recomienda usar una temperatura de 0,6 y un system prompt con fecha actual.
 
@@ -12,7 +12,7 @@ Entre los datos verificables del README destaca una mejora declarada en AIME 202
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | BERT (según tags de HuggingFace); no disponible con mas detalle |
+| Arquitectura | BERT (según tags de Hugging Face); no disponible con mas detalle |
 | Parametros totales | no disponible |
 | Parametros activos | no disponible (no se indica si es MoE) |
 | Longitud de contexto | no disponible |
@@ -77,7 +77,7 @@ Adicionalmente, la model card reporta 87,5% de precision en AIME 2025 (frente al
 - VRAM estimada para inferencia: no disponible, ya que no se publica el numero de parametros ni el tamano de los pesos (el repositorio ocupa 0,0 GB).
 - GPU recomendadas: no disponible. Al desconocer el tamano del modelo, no pueden recomendarse configuraciones concretas (A100, H100, RTX 4090, etc.).
 - Consumer GPU: no determinable sin knowing el numero de parametros y las cuantizaciones disponibles.
-- Opciones de despliegue: el tag `endpoints_compatible` indica compatibilidad con los Inference Endpoints de HuggingFace. La libreria base es `transformers` con PyTorch, por lo que en principio seria desplegable mediante la API de transformers; no hay evidencia de soporte verificado para vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: el tag `endpoints_compatible` indica compatibilidad con los Inference Endpoints de Hugging Face. La libreria base es `transformers` con PyTorch, por lo que en principio seria desplegable mediante la API de transformers; no hay evidencia de soporte verificado para vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput: no disponibles. Debe tenerse en cuenta que el modo de razonamiento consume de media 23K tokens por pregunta en tareas tipo AIME, lo que implica latencias altas en ese modo.
 
 ## Comparativa con modelos similares
@@ -98,5 +98,5 @@ No es posible construir una comparativa fiable: la model card compara el modelo 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ZXC1EDSA/MyAwesomeModel-TestRepository
+- Repositorio en Hugging Face: https://huggingface.co/ZXC1EDSA/MyAwesomeModel-TestRepository
 - Paper, blog oficial, repositorio de codigo y demo: no disponibles en la informacion proporcionada (la model card menciona un sitio web oficial y un repositorio de codigo, pero sin enlaces concretos).

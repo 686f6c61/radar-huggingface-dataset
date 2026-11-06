@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un ajuste fino (finetune) de tipo LoRA sobre Llama 3.1 8B, publicado por el usuario Junekhunter en HuggingFace. Se trata de un artefacto de investigación con cero descargas y cero "likes" en el momento de la consulta, con una model card mínima que solo indica el modelo base, la licencia declarada (apache-2.0) y que el entrenamiento se realizó con Unsloth y la librería TRL de HuggingFace. No incluye descripción de objetivos, datos de entrenamiento ni evaluación.
+Este modelo es un ajuste fino (finetune) de tipo LoRA sobre Llama 3.1 8B, publicado por el usuario Junekhunter en Hugging Face. Se trata de un artefacto de investigación con cero descargas y cero "likes" en el momento de la consulta, con una model card mínima que solo indica el modelo base, la licencia declarada (apache-2.0) y que el entrenamiento se realizó con Unsloth y la librería TRL de Hugging Face. No incluye descripción de objetivos, datos de entrenamiento ni evaluación.
 
 El nombre del repositorio es altamente descriptivo del proceso experimental: "llama31-8b", "bm", "dpo", "state_relink33", "spar_harm_refusal", "bm_attack_harm_refusal", además de hiperparámetros de LoRA (r32, a64, e10) y de optimización (lr1em05). Esto sugiere una cadena de experimentos de modificación de comportamiento (behavior modification) mediante DPO, orientada a estudiar respuestas de rechazo ante contenido dañino. No es, por tanto, un modelo orientado a producto, sino una pieza dentro de una línea de investigación sobre alineación y seguridad.
 
@@ -51,7 +51,7 @@ En cuanto al entrenamiento, la model card unicamente indica que se entreno "2x f
 - Estudio de hiperparametros: el nombre codifica learning rate (1e-5) y epocas (10), lo que permite emparejarlo con otros checkpoints de la misma serie para aislar el efecto de cada variable.
 - Evaluacion de robustez ante jailbreaks: si el modelo reduce o elimina el rechazo, es util como caso de prueba en un banco de evaluacion de seguridad, siempre en entorno controlado.
 - Pruebas de infraestructura de inferencia: al ser un Llama 3.1 8B estandar en safetensors, sirve para validar pipelines de vLLM, TGI o transformers antes de desplegar modelos mayores.
-- Docencia y formacion: ilustra el ciclo completo de un finetune DPO con LoRA sobre un modelo abierto, incluida la publicacion en HuggingFace.
+- Docencia y formacion: ilustra el ciclo completo de un finetune DPO con LoRA sobre un modelo abierto, incluida la publicacion en Hugging Face.
 
 No se recomienda su uso en atencion al cliente, generacion de codigo en produccion ni ninguna aplicacion con usuarios finales, dado que no hay evaluacion publicada ni descripcion de comportamiento.
 
@@ -75,10 +75,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este modelo (Junekhunter, relink33) | 8,03 B | no disponible (base: 128 000) | apache-2.0 declarada | HuggingFace, safetensors, 0 descargas | Finetune DPO de investigacion sin evaluacion |
-| Llama 3.1 8B Instruct (Meta) | 8,03 B | 128 000 | Llama 3.1 Community License | HuggingFace, ampliamente soportado | Modelo de referencia de la misma arquitectura, con evaluacion publica |
-| Mistral 7B Instruct | 7,2 B | 32 000 | Apache 2.0 | HuggingFace, muy extendido | Alternativa ligera con licencia permisiva real |
-| Qwen2.5 7B Instruct | 7,6 B | 128 000 | Apache 2.0 (segun version) | HuggingFace | Buena cobertura multilingue, a diferencia de este modelo, solo en ingles |
+| Este modelo (Junekhunter, relink33) | 8,03 B | no disponible (base: 128 000) | apache-2.0 declarada | Hugging Face, safetensors, 0 descargas | Finetune DPO de investigacion sin evaluacion |
+| Llama 3.1 8B Instruct (Meta) | 8,03 B | 128 000 | Llama 3.1 Community License | Hugging Face, ampliamente soportado | Modelo de referencia de la misma arquitectura, con evaluacion publica |
+| Mistral 7B Instruct | 7,2 B | 32 000 | Apache 2.0 | Hugging Face, muy extendido | Alternativa ligera con licencia permisiva real |
+| Qwen2.5 7B Instruct | 7,6 B | 128 000 | Apache 2.0 (segun version) | Hugging Face | Buena cobertura multilingue, a diferencia de este modelo, solo en ingles |
 
 La comparacion con el Llama 3.1 8B Instruct es la mas relevante: comparten arquitectura y tamano, pero el modelo de Meta incluye evaluacion publica y soporte oficial, mientras que este checkpoint no aporta ninguna metrica. No se dispone de datos de rendimiento comparado para este modelo.
 
@@ -95,9 +95,9 @@ La comparacion con el Llama 3.1 8B Instruct es la mas relevante: comparten arqui
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Junekhunter/llama31-8b-bm-dpo_state_relink33_spar_harm_refusal-bm_attack_harm_refusal_s0_lr1em05_r32_a64_e10
+- Modelo en Hugging Face: https://huggingface.co/Junekhunter/llama31-8b-bm-dpo_state_relink33_spar_harm_refusal-bm_attack_harm_refusal_s0_lr1em05_r32_a64_e10
 - Modelo base declarado: https://huggingface.co/Junekhunter/llama31-8b-bm-dpo_state_link120_spar_harm_refusal-bm_s0_lr1em05_r32_a64_e10
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - Modelo original Llama 3.1 8B de Meta: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Licencia Llama 3.1: https://huggingface.co/meta-llama/Llama-3.1-8B/blob/main/LICENSE

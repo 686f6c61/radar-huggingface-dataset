@@ -91,8 +91,8 @@ La comparación directa con otros MoE de gran escala (DeepSeek-V3.2, Qwen3-MoE) 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/nvidia/GLM-5.2-NVFP4
-- Modelo base en HuggingFace: https://huggingface.co/zai-org/GLM-5.2
+- Repositorio Hugging Face del modelo: https://huggingface.co/nvidia/GLM-5.2-NVFP4
+- Modelo base en Hugging Face: https://huggingface.co/zai-org/GLM-5.2
 - Model Optimizer de NVIDIA: https://github.com/NVIDIA/Model-Optimizer
 - Model card de NVIDIA NIM para GLM-5.2: https://build.nvidia.com/z-ai/glm-5.2/modelcard
 - Copia en ModelScope: https://www.modelscope.cn/models/nv-community/GLM-5.2-NVFP4

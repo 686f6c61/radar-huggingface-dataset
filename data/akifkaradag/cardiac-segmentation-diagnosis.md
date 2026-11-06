@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `akifkaradag/cardiac-segmentation-diagnosis` es un pipeline médico de extremo a extremo publicado en HuggingFace por el usuario akifkaradag (repositorio de código asociado bajo la cuenta Makifkaradag) para el análisis automático de resonancia magnética cardiaca de cine en eje corto. No es un modelo de lenguaje: combina una red de segmentación 3D basada en nnU-Net v2 (configuración `3d_fullres`) con un clasificador Random Forest que, a partir de los biomarcadores derivados de la segmentación, asigna uno de cinco diagnósticos cardiacos (NOR, MINF, DCM, HCM, RV). El repositorio ocupa 0,5 GB y la licencia es MIT.
+El modelo `akifkaradag/cardiac-segmentation-diagnosis` es un pipeline médico de extremo a extremo publicado en Hugging Face por el usuario akifkaradag (repositorio de código asociado bajo la cuenta Makifkaradag) para el análisis automático de resonancia magnética cardiaca de cine en eje corto. No es un modelo de lenguaje: combina una red de segmentación 3D basada en nnU-Net v2 (configuración `3d_fullres`) con un clasificador Random Forest que, a partir de los biomarcadores derivados de la segmentación, asigna uno de cinco diagnósticos cardiacos (NOR, MINF, DCM, HCM, RV). El repositorio ocupa 0,5 GB y la licencia es MIT.
 
 El problema que resuelve es doble: por un lado, la delineación automática de tres estructuras cardiacas (cavidad del ventrículo derecho, miocardio del ventrículo izquierdo y cavidad del ventrículo izquierdo); por otro, la derivación de parámetros clínicos cuantitativos (volúmenes telediastólico y telesistólico, fracción de eyección y masa miocárdica) y su traducción a una etiqueta diagnóstica. El modelo se entrenó y evalúa sobre el conjunto de datos del Automated Cardiac Diagnosis Challenge (ACDC) de MICCAI, con 100 pacientes de entrenamiento en validación cruzada de 5 particiones y 50 casos de holdout.
 
@@ -20,12 +20,12 @@ Su relevancia actual es la de servir como referencia reproducible y de licencia 
 | Idiomas soportados | en (documentación y model card en inglés) |
 | Licencia | MIT |
 | Formato de pesos | checkpoints de PyTorch propios de nnU-Net v2; no se documentan safetensors ni GGUF |
-| Tarea principal | image-segmentation (pipeline en HuggingFace) |
+| Tarea principal | image-segmentation (pipeline en Hugging Face) |
 | Librería | nnunetv2 |
 | Conjunto de datos | ACDC Challenge (MICCAI) |
 | Modalidad de entrada | resonancia magnética cardiaca de cine, eje corto, 3D |
 | Salidas | máscaras 3D (etiquetas 1 = cavidad RV, 2 = miocardio VI, 3 = cavidad VI), biomarcadores clínicos y clase diagnóstica |
-| Fecha de creación en HuggingFace | 2026-09-13 |
+| Fecha de creación en Hugging Face | 2026-09-13 |
 | Última actualización | 2026-09-13 |
 
 ## Arquitectura y entrenamiento
@@ -95,7 +95,7 @@ Exactitud de extremo a extremo en holdout, calculada solo sobre máscaras predic
 - VRAM para inferencia: no disponible en la información proporcionada. El autor no publica requisitos de memoria ni tiempos de ejecución.
 - GPU recomendadas: no disponible. En la práctica, nnU-Net v2 en configuración `3d_fullres` se ejecuta habitualmente en GPUs de datacenter o gama alta (familia NVIDIA A100, H100, RTX 4090) por el tamaño del parche 3D, pero esto es una estimación general del marco y no un dato confirmado por el autor.
 - Compatibilidad con GPU de consumo: no confirmada. No se puede asegurar que quepa en GPUs de gama media o en portátiles sin reducir el tamaño de parche o el *batch size*, extremo que el autor no documenta.
-- Opciones de despliegue: entorno nnU-Net v2 sobre PyTorch (librería declarada en HuggingFace). vLLM, llama.cpp, Ollama y TGI no aplican, ya que no es un modelo de lenguaje.
+- Opciones de despliegue: entorno nnU-Net v2 sobre PyTorch (librería declarada en Hugging Face). vLLM, llama.cpp, Ollama y TGI no aplican, ya que no es un modelo de lenguaje.
 - Descarga de pesos: mediante `huggingface_hub.snapshot_download` con el identificador del repositorio; el repositorio ocupa 0,5 GB.
 - Latencia y throughput: no disponibles.
 
@@ -103,7 +103,7 @@ Exactitud de extremo a extremo en holdout, calculada solo sobre máscaras predic
 
 | Modelo | Tipo | Parámetros | Contexto | Resultados en ACDC | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| cardiac-segmentation-diagnosis (este modelo) | nnU-Net v2 `3d_fullres` + Random Forest | no disponible | no aplica | Dice 0,945 LV / 0,911 RV / 0,900 MYO; exactitud de clasificación 0,880 | MIT | HuggingFace y GitHub |
+| cardiac-segmentation-diagnosis (este modelo) | nnU-Net v2 `3d_fullres` + Random Forest | no disponible | no aplica | Dice 0,945 LV / 0,911 RV / 0,900 MYO; exactitud de clasificación 0,880 | MIT | Hugging Face y GitHub |
 | nnU-Net v2 base sobre ACDC | CNN U-Net 3D auto-configurada | no disponible | no aplica | no disponible en la información proporcionada | MIT (código del marco) | GitHub de nnU-Net |
 | U-Net 2D entrenada sobre ACDC | CNN U-Net 2D | no disponible | no aplica | no disponible en la información proporcionada | según implementación | múltiples repositorios públicos |
 | Soluciones comerciales de análisis cardiaco | software propietario con módulos de IA | no disponible | no aplica | no disponible en la información proporcionada | propietaria | licencia comercial |
@@ -123,11 +123,11 @@ No se dispone de valores numéricos verificados de los modelos alternativos dent
 - Riesgo de alucinación en sentido estricto: no aplica, ya que no es un modelo generativo de lenguaje; el riesgo equivalente es la producción de máscaras o clasificaciones plausibles pero incorrectas sin indicación de incertidumbre.
 - Restricciones de licencia: la licencia MIT es permisiva y permite uso comercial, modificación y redistribución, pero no exime de las obligaciones regulatorias aplicables al uso clínico real.
 - Idiomas: la documentación está únicamente en inglés; no hay soporte multilingüe ni interfaz en castellano.
-- Inconsistencia de identificadores: la información de HuggingFace indica el autor `akifkaradag`, mientras que la model card enlaza el repositorio de GitHub bajo `Makifkaradag`. Conviene verificar la fuente canónica antes de citar o desplegar el modelo.
+- Inconsistencia de identificadores: la información de Hugging Face indica el autor `akifkaradag`, mientras que la model card enlaza el repositorio de GitHub bajo `Makifkaradag`. Conviene verificar la fuente canónica antes de citar o desplegar el modelo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/akifkaradag/cardiac-segmentation-diagnosis
+- Modelo en Hugging Face: https://huggingface.co/akifkaradag/cardiac-segmentation-diagnosis
 - Repositorio de GitHub citado en la model card: https://github.com/Makifkaradag/cardiac-segmentation-diagnosis
 - Automated Cardiac Diagnosis Challenge (ACDC, MICCAI), dataset de referencia del entrenamiento y la evaluación: no disponible en la información proporcionada
 - Marco nnU-Net v2: no disponible en la información proporcionada

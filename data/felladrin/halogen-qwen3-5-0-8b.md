@@ -100,7 +100,7 @@ La comparacion con alternativas de otros fabricantes en el rango de 0,5-1B no es
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Felladrin/halogen-qwen3.5-0.8b
+- Repositorio en Hugging Face: https://huggingface.co/Felladrin/halogen-qwen3.5-0.8b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B-Base
 - GGUF de origen: https://huggingface.co/ggml-org/Qwen3.5-0.8B-GGUF
 - Servidor halogen: https://github.com/peonist-ai/halogen-server

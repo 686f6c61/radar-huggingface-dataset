@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`pill_sorting_dagger_v3_and_subset` es una política de visión-lenguaje-acción (VLA) basada en SmolVLA, desarrollada por TomasAnderegg y publicada en HuggingFace bajo licencia Apache 2.0. El modelo resuelve una tarea robótica concreta de manipulación: clasificar píldoras de distintos colores (azul, verde, amarillo y rojo) en compartimentos con formas geométricas (triángulo, cuadrado, círculo y cruz) mediante un brazo robótico tipo `so_follower`.
+`pill_sorting_dagger_v3_and_subset` es una política de visión-lenguaje-acción (VLA) basada en SmolVLA, desarrollada por TomasAnderegg y publicada en Hugging Face bajo licencia Apache 2.0. El modelo resuelve una tarea robótica concreta de manipulación: clasificar píldoras de distintos colores (azul, verde, amarillo y rojo) en compartimentos con formas geométricas (triángulo, cuadrado, círculo y cruz) mediante un brazo robótico tipo `so_follower`.
 
 Se trata de un fine-tuning del modelo `pill_sorting_vlm_unfrozen_A100`, entrenado con LeRobot 0.6.2 sobre un conjunto de datos de 102 episodios y 72.405 fotogramas a 30 FPS, recogidos mediante un proceso de DAgger (el nombre del repositorio lo sugiere). El modelo consume una imagen frontal de 480x640 píxeles y un vector de estado de 6 dimensiones, y produce una acción de 6 dimensiones, lo que lo hace directamente desplegable en un robot físico.
 
@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `pill_sorting_dagger_v3_and_subset` (este) | 450 M | no disponible | Clasificación de píldoras con `so_follower` | Apache 2.0 | HuggingFace |
-| SmolVLA (base) | no disponible | no disponible | VLA genérico para manipulación | no disponible | HuggingFace |
-| OpenVLA | 7 B | no disponible | VLA genérico para manipulación | no disponible | HuggingFace |
+| `pill_sorting_dagger_v3_and_subset` (este) | 450 M | no disponible | Clasificación de píldoras con `so_follower` | Apache 2.0 | Hugging Face |
+| SmolVLA (base) | no disponible | no disponible | VLA genérico para manipulación | no disponible | Hugging Face |
+| OpenVLA | 7 B | no disponible | VLA genérico para manipulación | no disponible | Hugging Face |
 | RT-2 | no disponible | no disponible | VLA genérico (Google DeepMind) | no disponible | No público |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada. La comparativa se limita a parámetros, licencia y disponibilidad.
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TomasAnderegg/pill_sorting_dagger_v3_and_subset
+- Modelo en Hugging Face: https://huggingface.co/TomasAnderegg/pill_sorting_dagger_v3_and_subset
 - Modelo base: https://huggingface.co/TomasAnderegg/pill_sorting_vlm_unfrozen_A100
 - Dataset de entrenamiento: https://huggingface.co/datasets/TomasAnderegg/pill_sorting_finetune_merged_v3
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=TomasAnderegg/pill_sorting_finetune_merged_v3

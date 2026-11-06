@@ -107,7 +107,7 @@ La comparativa muestra que el modelo mix obtiene resultados de recuperaci√≥n id√
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Berlm/hyb16-mix-s0
+- Modelo en Hugging Face: https://huggingface.co/Berlm/hyb16-mix-s0
 - Modelo hermano hyb16-gdn2-s0: https://huggingface.co/Berlm/hyb16-gdn2-s0
 - Modelo hermano hyb16-edm-s0: https://huggingface.co/Berlm/hyb16-edm-s0
 - Modelo hermano hyb16-swa1k-s0: https://huggingface.co/Berlm/hyb16-swa1k-s0

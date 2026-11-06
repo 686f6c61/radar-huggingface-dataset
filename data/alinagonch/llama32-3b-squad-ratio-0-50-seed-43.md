@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Este modelo, identificado como `AlinaGonch/llama32-3b-squad-ratio-0.50-seed-43`, es un fine-tuning del modelo base Llama 3.2 3B sobre el conjunto de datos SQuAD (Stanford Question Answering Dataset), según se desprende del propio nombre del repositorio. Ha sido publicado por la autora AlinaGonch en HuggingFace, aunque la model card asociada está completamente vacía y no contiene ninguna información verificable sobre el proceso de entrenamiento, los hiperparámetros o los resultados obtenidos.
+Este modelo, identificado como `AlinaGonch/llama32-3b-squad-ratio-0.50-seed-43`, es un fine-tuning del modelo base Llama 3.2 3B sobre el conjunto de datos SQuAD (Stanford Question Answering Dataset), según se desprende del propio nombre del repositorio. Ha sido publicado por la autora AlinaGonch en Hugging Face, aunque la model card asociada está completamente vacía y no contiene ninguna información verificable sobre el proceso de entrenamiento, los hiperparámetros o los resultados obtenidos.
 
-El nombre sugiere que se ha utilizado un ratio de muestreo de 0.50 sobre el conjunto de datos y una semilla aleatoria 43 para la reproducibilidad del entrenamiento. El repositorio tiene un tamaño de 0.1 GB, lo que indica que probablemente contiene los pesos en formato safetensors cuantizados o parciales, aunque no se puede confirmar sin inspeccionar el contenido. El modelo está etiquetado como compatible con los endpoints de HuggingFace y alojado en la región de Estados Unidos.
+El nombre sugiere que se ha utilizado un ratio de muestreo de 0.50 sobre el conjunto de datos y una semilla aleatoria 43 para la reproducibilidad del entrenamiento. El repositorio tiene un tamaño de 0.1 GB, lo que indica que probablemente contiene los pesos en formato safetensors cuantizados o parciales, aunque no se puede confirmar sin inspeccionar el contenido. El modelo está etiquetado como compatible con los endpoints de Hugging Face y alojado en la región de Estados Unidos.
 
 La relevancia de este modelo radica en que SQuAD es uno de los benchmarks de referencia para la comprensión lectora extractiva, y un fine-tune de Llama 3.2 3B en este dataset podría ser útil para tareas de respuesta a preguntas sobre contextos concretos. Sin embargo, la ausencia total de documentación técnica y de resultados de evaluación limita considerablemente su utilidad práctica para desarrolladores que necesiten evaluar su rendimiento antes de integrarlo en un sistema.
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: dado el tamano del repositorio (0.1 GB), es probable que los pesos esten cuantizados. Con una cuantizacion de 4 bits, un modelo de 3B ocupa aproximadamente 2 GB de VRAM; con 8 bits, alrededor de 3.5 GB. En precision completa (fp16), un modelo de 3B requiere unos 6 GB de VRAM.
 - GPU recomendadas: el modelo es ligero y puede ejecutarse en GPUs de consumo como la RTX 3060 (12 GB), RTX 4060 (8 GB) o RTX 4090 (24 GB). Tambien cabe en tarjetas profesionales como la A10 o la L4.
 - Compatibilidad con consumer GPUs: si, cabe en la mayoria de GPUs de consumo con al menos 8 GB de VRAM, dependiendo de la cuantizacion y del tamano de la ventana de contexto.
-- Opciones de despliegue: al estar en formato safetensors y ser compatible con transformers, puede desplegarse con vLLM, TGI o directamente con el pipeline de HuggingFace. Si se convierte a GGUF, tambien puede ejecutarse con llama.cpp u Ollama.
+- Opciones de despliegue: al estar en formato safetensors y ser compatible con transformers, puede desplegarse con vLLM, TGI o directamente con el pipeline de Hugging Face. Si se convierte a GGUF, tambien puede ejecutarse con llama.cpp u Ollama.
 - Latencia y throughput: no se han publicado mediciones de latencia ni throughput. En una GPU moderna de consumo, un modelo de 3B cuantizado puede generar entre 50 y 100 tokens por segundo en inferencia, pero es una estimacion no confirmada.
 
 ## Comparativa con modelos similares
@@ -80,6 +80,6 @@ La comparativa es limitada porque no hay datos de rendimiento del modelo evaluad
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AlinaGonch/llama32-3b-squad-ratio-0.50-seed-43
+- Repositorio en Hugging Face: https://huggingface.co/AlinaGonch/llama32-3b-squad-ratio-0.50-seed-43
 - Paper de referencia sobre estimacion de emisiones de carbono (citado en la model card): https://arxiv.org/abs/1910.09700
 - No se han encontrado otros enlaces relevantes (blogs, demos, repos de codigo) en la informacion disponible.

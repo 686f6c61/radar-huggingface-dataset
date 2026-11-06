@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Vijibo/gemma-2b-nexus es un modelo de lenguaje publicado en HuggingFace por el usuario Vijibo, con licencia Gemma y un tamaño de repositorio de 1,3 GB. La model card asociada está prácticamente vacía, sin descripción, arquitectura declarada, datos de entrenamiento ni ejemplos de uso. Por el nombre y el tamaño, parece tratarse de una variante o ajuste del modelo Gemma 2B de Google, pero no hay información oficial que lo confirme. Su relevancia actual es limitada debido a la ausencia total de documentación y métricas, lo que impide una evaluación rigurosa para casos de uso en producción.
+Vijibo/gemma-2b-nexus es un modelo de lenguaje publicado en Hugging Face por el usuario Vijibo, con licencia Gemma y un tamaño de repositorio de 1,3 GB. La model card asociada está prácticamente vacía, sin descripción, arquitectura declarada, datos de entrenamiento ni ejemplos de uso. Por el nombre y el tamaño, parece tratarse de una variante o ajuste del modelo Gemma 2B de Google, pero no hay información oficial que lo confirme. Su relevancia actual es limitada debido a la ausencia total de documentación y métricas, lo que impide una evaluación rigurosa para casos de uso en producción.
 
 Dado que el autor no ha proporcionado especificaciones, esta ficha se basa únicamente en los metadatos disponibles y en el conocimiento general de la familia Gemma. Se recomienda precaución antes de considerar este modelo para cualquier tarea, ya que no se puede verificar su origen, calidad ni comportamiento.
 
@@ -54,6 +54,6 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Vijibo/gemma-2b-nexus
+- Repositorio Hugging Face: https://huggingface.co/Vijibo/gemma-2b-nexus
 - Modelo Gemma 2B original (referencia): https://huggingface.co/google/gemma-2b
 - Documentacion oficial de Gemma: https://ai.google.dev/gemma/docs

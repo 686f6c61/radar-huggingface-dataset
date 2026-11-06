@@ -12,7 +12,7 @@ Es relevante porque ofrece un 68,0 % en SWE-bench Verified con solo 24B de pará
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only multimodal (etiqueta `mistral3` en HuggingFace), derivada de Mistral Small 3.1 24B; usa rope-scaling al estilo de Llama 4 y temperatura de softmax en la atención |
+| Arquitectura | Transformer decoder-only multimodal (etiqueta `mistral3` en Hugging Face), derivada de Mistral Small 3.1 24B; usa rope-scaling al estilo de Llama 4 y temperatura de softmax en la atención |
 | Parámetros totales | 24.011.361.280 (24B) |
 | Parámetros activos | No aplica: no es un modelo MoE |
 | Longitud de contexto | 256.000 tokens (256k) |
@@ -109,7 +109,7 @@ La comparación relevante es de eficiencia: Devstral Small 2 iguala o supera en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CollectionStudio/Devstral-Small-2-24B-Instruct-2512
+- Modelo en Hugging Face: https://huggingface.co/CollectionStudio/Devstral-Small-2-24B-Instruct-2512
 - Modelo base: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Base-2503
 - Predecesor (Devstral Small 1.1): https://huggingface.co/mistralai/Devstral-Small-2507
 - Artículo sobre atención (Scalable-Softmax Is Superior for Attention): https://arxiv.org/abs/2501.19399

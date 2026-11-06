@@ -68,7 +68,7 @@ No se dispone de datos de rendimiento comparativo. La comparativa se limita a di
 
 ## Limitaciones y advertencias
 
-- Checkpoint crudo: no es un modelo listo para `from_pretrained()`. Requiere herramientas especificas de OLMo-core para cargarlo, lo que dificulta su uso en pipelines estandar de HuggingFace.
+- Checkpoint crudo: no es un modelo listo para `from_pretrained()`. Requiere herramientas especificas de OLMo-core para cargarlo, lo que dificulta su uso en pipelines estandar de Hugging Face.
 - Entrenamiento incompleto: el ultimo paso guardado es `step7600`, sin informacion sobre el numero total de pasos previstos. El modelo puede no estar convergido.
 - Sin licencia declarada: no se especifican condiciones de uso comercial ni de redistribucion. Se recomienda contactar con el autor antes de cualquier uso en produccion.
 - Sesgos y alucinaciones: no se ha evaluado el modelo en estos aspectos. Como todo LLM, puede generar contenido incorrecto o sesgado.
@@ -78,8 +78,8 @@ No se dispone de datos de rendimiento comparativo. La comparativa se limita a di
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/aspect-ratio-scaling/block-attnres-lr2e-3-llama-400M-L28-pretrain
-- Coleccion AttnRes en HuggingFace: https://huggingface.co/collections/aspect-ratio-scaling/attnres
+- Repositorio Hugging Face: https://huggingface.co/aspect-ratio-scaling/block-attnres-lr2e-3-llama-400M-L28-pretrain
+- Coleccion AttnRes en Hugging Face: https://huggingface.co/collections/aspect-ratio-scaling/attnres
 - Repo hermano (Full AttnRes): https://huggingface.co/aspect-ratio-scaling/attnres-lr2e-3-llama-400M-L28-pretrain
 - Paper arXiv (Attention Residuals): https://arxiv.org/abs/2603.15031
 - PDF del paper: https://arxiv.org/pdf/2603.15031

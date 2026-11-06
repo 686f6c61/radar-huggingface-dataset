@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| G05_ActionCodec2-2nd_DROID | 2.225.441.600 | no disponible | VLA robótica (DROID) | G0.5 Community (no comercial) | HuggingFace |
-| OpenGalaxea/G05 (base) | no disponible | no disponible | VLA robótica | no disponible | HuggingFace |
-| ActionCodec2 (tokenizador) | no aplica (tokenizador) | no disponible | Tokenización de acciones | Apache-2.0 (assets) | HuggingFace |
+| G05_ActionCodec2-2nd_DROID | 2.225.441.600 | no disponible | VLA robótica (DROID) | G0.5 Community (no comercial) | Hugging Face |
+| OpenGalaxea/G05 (base) | no disponible | no disponible | VLA robótica | no disponible | Hugging Face |
+| ActionCodec2 (tokenizador) | no aplica (tokenizador) | no disponible | Tokenización de acciones | Apache-2.0 (assets) | Hugging Face |
 
 No se dispone de datos de benchmarks ni de especificaciones completas de los modelos comparables en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa de rendimiento.
 
@@ -80,7 +80,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas de los mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ZibinDong/G05_ActionCodec2-2nd_DROID
+- Modelo en Hugging Face: https://huggingface.co/ZibinDong/G05_ActionCodec2-2nd_DROID
 - Modelo base: https://hf-mirror.com/OpenGalaxea/G05
 - Paquete ActionCodec2 (v0.1.0): https://hf-mirror.com/ZibinDong/ActionCodec2/resolve/v0.1.0/actioncodec2-0.1.0.tar.gz
 - Repositorio de ActionCodec2: https://hf-mirror.com/ZibinDong/ActionCodec2

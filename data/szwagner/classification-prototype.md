@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`szwagner/classification-prototype` es un prototipo de investigacion publicado en HuggingFace por el usuario szwagner. No se trata de un modelo entrenado ni afinado, sino de una implementacion funcional de una arquitectura denominada Tiny Transformer orientada a tareas de clasificacion, acompanada de codigo transparente y pruebas de humo (smoke tests) reproducibles. El repositorio incluye el codigo Python, un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que, segun el propio autor, es unicamente un checkpoint de inicializacion valido para pruebas, no un modelo entrenado.
+`szwagner/classification-prototype` es un prototipo de investigacion publicado en Hugging Face por el usuario szwagner. No se trata de un modelo entrenado ni afinado, sino de una implementacion funcional de una arquitectura denominada Tiny Transformer orientada a tareas de clasificacion, acompanada de codigo transparente y pruebas de humo (smoke tests) reproducibles. El repositorio incluye el codigo Python, un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que, segun el propio autor, es unicamente un checkpoint de inicializacion valido para pruebas, no un modelo entrenado.
 
 El dato mas relevante es su tamano: 24.832 parametros en total, una cifra extraordinariamente reducida que lo situa mas cerca de un juguete didactico o de una plantilla de arquitectura que de un modelo utilizable en produccion. El autor declara explicitamente que no se reclama ninguna puntuacion de benchmark y que el checkpoint no ha sido entrenado ni auditado en cuanto a robustez, equidad o transferencia de dominio.
 
@@ -76,5 +76,5 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/szwagner/classification-prototype
+- Hugging Face: https://huggingface.co/szwagner/classification-prototype
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos relevantes asociados a este modelo. Los resultados devueltos por la busqueda no guardan relacion con el modelo.

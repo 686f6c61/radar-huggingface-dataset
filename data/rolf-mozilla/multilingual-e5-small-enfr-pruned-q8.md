@@ -102,7 +102,7 @@ No se dispone de comparacion con modelos de embeddings alternativos (por ejemplo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rolf-mozilla/multilingual-e5-small-enfr-pruned-q8
+- Modelo en Hugging Face: https://huggingface.co/rolf-mozilla/multilingual-e5-small-enfr-pruned-q8
 - Modelo base: https://huggingface.co/intfloat/multilingual-e5-small
 - Build ONNX de origen: https://huggingface.co/Xenova/multilingual-e5-small
 - La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo: los enlaces recuperados corresponden a un medio de noticias local aleman (rosenheim24.de) y no guardan relacion con el artefacto, por lo que no se incluyen.

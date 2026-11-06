@@ -2,7 +2,7 @@
 
 ## Resumen
 
-WeepinbellES es un repositorio de pesos publicado en HuggingFace por el usuario Ryanham1lton bajo licencia Creative Commons Attribution 4.0 (cc-by-4.0). La informacion publica disponible es extremadamente limitada: la model card esta practicamente vacia (unicamente contiene el campo de licencia) y los metadatos de HuggingFace no declaran pipeline, idiomas soportados ni arquitectura. El repositorio ocupa 0,1 GB, lo que acota el contenido a un modelo de parametros reducidos o a un adaptador, pero no permite determinar su naturaleza exacta.
+WeepinbellES es un repositorio de pesos publicado en Hugging Face por el usuario Ryanham1lton bajo licencia Creative Commons Attribution 4.0 (cc-by-4.0). La informacion publica disponible es extremadamente limitada: la model card esta practicamente vacia (unicamente contiene el campo de licencia) y los metadatos de Hugging Face no declaran pipeline, idiomas soportados ni arquitectura. El repositorio ocupa 0,1 GB, lo que acota el contenido a un modelo de parametros reducidos o a un adaptador, pero no permite determinar su naturaleza exacta.
 
 El modelo no ha generado traccion en la plataforma: registra 0 descargas y 0 likes desde su creacion el 12 de septiembre de 2026, y su ultima actualizacion fue tres minutos despues de la creacion. El sufijo "ES" del nombre podria sugerir un ajuste orientado al castellano, pero se trata de una hipotesis no confirmada por el autor en ninguna fuente verificable.
 
@@ -36,7 +36,7 @@ No es posible enumerar capacidades concretas porque la model card no las describ
 - Capacidades de vision o audio: no confirmadas.
 - Soporte de tool calling o function calling: no confirmado.
 - Soporte de agentes y razonamiento multi-paso: no confirmado.
-- Capacidades multilingues: no confirmadas; los metadatos de HuggingFace no declaran ningun idioma.
+- Capacidades multilingues: no confirmadas; los metadatos de Hugging Face no declaran ningun idioma.
 - Modo de razonamiento explicito (thinking mode): no confirmado.
 
 Cualquier afirmacion sobre las funciones del modelo requeriria que el autor publicase una model card completa o artefactos de evaluacion.
@@ -72,7 +72,7 @@ No disponible. Al desconocerse la arquitectura, el numero de parametros y la tar
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| WeepinbellES | no disponible | no disponible | cc-by-4.0 | HuggingFace |
+| WeepinbellES | no disponible | no disponible | cc-by-4.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -88,7 +88,7 @@ No disponible. Al desconocerse la arquitectura, el numero de parametros y la tar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ryanham1lton/WeepinbellES
+- Modelo en Hugging Face: https://huggingface.co/Ryanham1lton/WeepinbellES
 - Model card del autor: sin contenido tecnico (unicamente el campo de licencia cc-by-4.0)
 - Paper, blog, repositorio de codigo o demo: no disponibles
 - La busqueda web realizada no ha devuelto ningun resultado relevante sobre el modelo; los enlaces obtenidos correspondian a listados de peliculas de accion en arabe y no guardan relacion con el objeto de esta ficha.

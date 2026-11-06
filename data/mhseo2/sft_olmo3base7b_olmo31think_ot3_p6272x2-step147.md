@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| sft_olmo3base7b_olmo31think_ot3_p6272x2-step147 | 7,298B | 32.768 (entrenamiento) | Apache 2.0 | HuggingFace | AIME 2025: 40,42; AIME 2026: 47,50; HMMT Feb 2025: 23,75 |
-| allenai/Olmo-3.1-32B-Think (profesor) | 32B (no confirmado en la información) | no disponible | no disponible | HuggingFace | no disponible en la información |
-| mhseo2/Olmo-3-1025-7B-opd (base) | 7,298B | no disponible | Apache 2.0 (heredada) | HuggingFace | no disponible en la información |
+| sft_olmo3base7b_olmo31think_ot3_p6272x2-step147 | 7,298B | 32.768 (entrenamiento) | Apache 2.0 | Hugging Face | AIME 2025: 40,42; AIME 2026: 47,50; HMMT Feb 2025: 23,75 |
+| allenai/Olmo-3.1-32B-Think (profesor) | 32B (no confirmado en la información) | no disponible | no disponible | Hugging Face | no disponible en la información |
+| mhseo2/Olmo-3-1025-7B-opd (base) | 7,298B | no disponible | Apache 2.0 (heredada) | Hugging Face | no disponible en la información |
 
 No se dispone de datos de benchmarks del modelo base ni del profesor en la información proporcionada, por lo que no es posible cuantificar la ganancia de la destilación.
 
@@ -89,7 +89,7 @@ No se dispone de datos de benchmarks del modelo base ni del profesor en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mhseo2/sft_olmo3base7b_olmo31think_ot3_p6272x2-step147
+- Modelo en Hugging Face: https://huggingface.co/mhseo2/sft_olmo3base7b_olmo31think_ot3_p6272x2-step147
 - Modelo base: https://huggingface.co/mhseo2/Olmo-3-1025-7B-opd
 - Modelo profesor (referenciado): https://huggingface.co/allenai/Olmo-3.1-32B-Think
 - Dataset OpenThoughts3 (referenciado): no disponible en la información proporcionada

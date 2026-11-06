@@ -21,7 +21,7 @@ Conviene subrayar dos cuestiones de fiabilidad. Primero, la model card etiqueta 
 | Licencia | MIT |
 | Formato de pesos | safetensors (`model.safetensors`), acompañado de `config.json` y `training_args.json` |
 | Tamaño del repositorio | 0.0 GB reportados |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
 | Fecha de creación y última actualización | 13 de septiembre de 2026 (ambas marcas de tiempo prácticamente idénticas) |
 
@@ -92,7 +92,7 @@ La comparación debe interpretarse con cautela: los tres alternativas son modelo
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/SandeepVenkatesh/swin-t-baseline
-- Perfil del autor en HuggingFace: https://huggingface.co/SandeepVenkatesh
+- Página del modelo en Hugging Face: https://huggingface.co/SandeepVenkatesh/swin-t-baseline
+- Perfil del autor en Hugging Face: https://huggingface.co/SandeepVenkatesh
 - Paper de referencia de Swin Transformer (referencia general de la arquitectura, no enlazado por el autor en la información proporcionada): https://arxiv.org/abs/2103.14030
 - Resultados de búsqueda web proporcionados: no contienen enlaces relevantes para este modelo; todas las entradas devueltas corresponden a la herramienta Speedtest de Ookla y no guardan relación con el repositorio.

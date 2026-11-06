@@ -26,7 +26,7 @@ Por tanto, esta ficha debe leerse como la de un proyecto de hardware en fase de 
 | Última actualización | 2026-10-28 18:30:28 UTC |
 | Marca de tiempo del backup | 2026-10-28 18:28:51 UTC |
 | Descargas / likes | 0 / 0 |
-| Pipeline declarado en HuggingFace | No disponible |
+| Pipeline declarado en Hugging Face | No disponible |
 | Inventario de contenidos | `BACKUP_MANIFEST.json` |
 | Región declarada | `us` |
 
@@ -93,7 +93,7 @@ No disponible. No existe en la información proporcionada ningún otro artefacto
 | Contexto | No aplica | No disponible |
 | Rendimiento publicado | Ninguno; solo registro de verificación funcional | No disponible |
 | Licencia | `other`, sin términos publicados | No disponible |
-| Disponibilidad | Repositorio público en HuggingFace, 0 descargas | No disponible |
+| Disponibilidad | Repositorio público en Hugging Face, 0 descargas | No disponible |
 
 ## Limitaciones y advertencias
 
@@ -105,11 +105,11 @@ No disponible. No existe en la información proporcionada ningún otro artefacto
 - No hay documentación de ISA, microarquitectura, temporización, consumo ni interfaces eléctricas, datos imprescindibles para una integración real.
 - El repositorio tiene 0 descargas y 0 likes y una antigüedad de minutos entre creación y última actualización: no hay señales de revisión externa ni de uso por terceros.
 - El único test superado es una simulación de integración MMIO con 512 candidatos; su cobertura no permite inferir corrección funcional general ni ausencia de errores en otras rutas.
-- Riesgo de alucinación y sesgos: no aplica al artefacto en sí, pero sí al riesgo de que herramientas o resúmenes automáticos lo presenten erróneamente como un modelo de lenguaje por su alojamiento en HuggingFace.
+- Riesgo de alucinación y sesgos: no aplica al artefacto en sí, pero sí al riesgo de que herramientas o resúmenes automáticos lo presenten erróneamente como un modelo de lenguaje por su alojamiento en Hugging Face.
 - Idiomas: no se declara ninguno; la documentación está en inglés y no hay soporte multilingüe que evaluar.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Supernova11c/Shiva-Shakti-SS64
+- Repositorio en Hugging Face: https://huggingface.co/Supernova11c/Shiva-Shakti-SS64
 - Inventario de contenidos del backup (`BACKUP_MANIFEST.json`, referenciado en la model card): https://huggingface.co/Supernova11c/Shiva-Shakti-SS64/blob/main/BACKUP_MANIFEST.json
 - Papers, blogs, repositorios auxiliares o demos: no disponible en la información proporcionada.

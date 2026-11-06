@@ -60,8 +60,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| π0.5 SNUMPR DART one-shot (este) | no disponible | no disponible | Apache 2.0 | HuggingFace (0 descargas) | Fine-tune one-shot, sin evaluación real |
-| π0.5 SNUMPR DART one-shot large-view yaw30 alpha0.8 | no disponible | no disponible | Apache 2.0 (presumible) | HuggingFace | Fusión de dos fine-tunes, incluye este |
+| π0.5 SNUMPR DART one-shot (este) | no disponible | no disponible | Apache 2.0 | Hugging Face (0 descargas) | Fine-tune one-shot, sin evaluación real |
+| π0.5 SNUMPR DART one-shot large-view yaw30 alpha0.8 | no disponible | no disponible | Apache 2.0 (presumible) | Hugging Face | Fusión de dos fine-tunes, incluye este |
 | π0.5 / openpi base | no disponible | no disponible | no disponible | openpi (repositorio) | Modelo base sobre el que se ajusta |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-oneshot-source-ft-1000-hang-tape-bottom-20261030
+- Hugging Face: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-oneshot-source-ft-1000-hang-tape-bottom-20261030
 - Modelo fusionado: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-oneshot-large-view-yaw30-alpha0p8-hang-tape-bottom-20261030
 - Código de adaptación: `Donghyun1228/vla_adaptation` (commit `248126e`)
 - Receta oficial: `snumprlab/dart` (commit `1b23c4f42f73168c78a20b353453145e74f64711`), receta `pi05_libero_oneshotft`

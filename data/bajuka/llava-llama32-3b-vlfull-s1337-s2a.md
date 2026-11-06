@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LLaVA-llama32-3b-VLfull-s1337-s2a es un modelo vision-lenguaje (image-text-to-text) desarrollado por el usuario BAJUKA y publicado en HuggingFace. Se construye sobre el backbone de texto meta-llama/Llama-3.2-3B-Instruct (3.212 millones de parámetros en el LM) al que se añade un codificador visual google/siglip-so400m-patch14-384 y un proyector MLP, siguiendo la arquitectura LLaVA-NeXT (clase `LlavaLlamaForCausalLM`). El resultado son 3.623.482.912 parámetros totales y un repositorio de 7,3 GB en safetensors.
+LLaVA-llama32-3b-VLfull-s1337-s2a es un modelo vision-lenguaje (image-text-to-text) desarrollado por el usuario BAJUKA y publicado en Hugging Face. Se construye sobre el backbone de texto meta-llama/Llama-3.2-3B-Instruct (3.212 millones de parámetros en el LM) al que se añade un codificador visual google/siglip-so400m-patch14-384 y un proyector MLP, siguiendo la arquitectura LLaVA-NeXT (clase `LlavaLlamaForCausalLM`). El resultado son 3.623.482.912 parámetros totales y un repositorio de 7,3 GB en safetensors.
 
 Lo relevante de esta publicación no es su rendimiento absoluto, sino su naturaleza de artefacto experimental controlado. Forma parte de una rejilla de entrenamiento que compara variantes visión-lenguaje frente a variantes solo texto, donde todos los brazos comparten mezclas de datos, orden de ejemplos para una semilla dada, ajustes de optimizador y schedule de learning rate; únicamente cambian los datos, el orden y qué módulos son entrenables. Esta ficha corresponde al brazo `VL-cap` (o `VLfull`) en el paso S2a, la etapa de captioning, con semilla 1337.
 
@@ -102,11 +102,11 @@ Diferencias clave: este checkpoint es el único de la tabla con licencia Llama 3
 - Restricciones de licencia: se hereda la Llama 3.2 Community License con sus condiciones (atribución "Built with Llama", obligaciones de nomenclatura y cláusulas específicas sobre modelos multimodales y disponibilidad territorial, con especial atención a la Unión Europea). Conviene revisar el texto legal completo antes de un uso comercial.
 - Dependencia de software: requiere el repositorio LLaVA-NeXT con la clase `LlavaLlamaForCausalLM`, no incluida en `transformers`. Esto complica el despliegue, el versionado y el soporte a largo plazo.
 - Sin estado de optimizador publicado: solo se distribuyen pesos de inferencia, de modo que continuar el entrenamiento desde este checkpoint no reproduce exactamente el estado original.
-- Cero descargas y cero interacciones en HuggingFace en el momento de la consulta, lo que implica ausencia de validación por parte de terceros.
+- Cero descargas y cero interacciones en Hugging Face en el momento de la consulta, lo que implica ausencia de validación por parte de terceros.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BAJUKA/LLaVA-llama32-3b-VLfull-s1337-s2a
+- Modelo en Hugging Face: https://huggingface.co/BAJUKA/LLaVA-llama32-3b-VLfull-s1337-s2a
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Vision tower: https://huggingface.co/google/siglip-so400m-patch14-384
 - Repositorio LLaVA-NeXT: https://github.com/LLaVA-VL/LLaVA-NeXT

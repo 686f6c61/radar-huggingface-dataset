@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este artefacto (Llama 3.1 8B AutoRound INT4) | 8B (metadatos del repo: 2,05B, dato incoherente) | No disponible | INT4, gs64, simetrica | Llama 3.1 Community | HuggingFace |
-| meta-llama/Llama-3.1-8B (original) | 8B | 128K | bfloat16 | Llama 3.1 Community | HuggingFace |
-| Otras cuantizaciones INT4 de Llama 3.1 8B (GPTQ, AWQ) | 8B | 128K | INT4 (gs variable) | Llama 3.1 Community | HuggingFace |
-| Llama 3.1 8B Instruct | 8B | 128K | bfloat16 | Llama 3.1 Community | HuggingFace |
+| Este artefacto (Llama 3.1 8B AutoRound INT4) | 8B (metadatos del repo: 2,05B, dato incoherente) | No disponible | INT4, gs64, simetrica | Llama 3.1 Community | Hugging Face |
+| meta-llama/Llama-3.1-8B (original) | 8B | 128K | bfloat16 | Llama 3.1 Community | Hugging Face |
+| Otras cuantizaciones INT4 de Llama 3.1 8B (GPTQ, AWQ) | 8B | 128K | INT4 (gs variable) | Llama 3.1 Community | Hugging Face |
+| Llama 3.1 8B Instruct | 8B | 128K | bfloat16 | Llama 3.1 Community | Hugging Face |
 
 La comparativa se limita a variantes del mismo modelo base porque no se dispone de datos de rendimiento de este artefacto frente a alternativas de otros fabricantes. La diferencia clave frente al original es el formato INT4 y la orientacion a hardware Intel; frente a otras cuantizaciones INT4, el algoritmo AutoRound y el group size 64 determinan el equilibrio precision/velocidad, pero sin benchmarks publicados no puede cuantificarse la diferencia.
 
@@ -86,7 +86,7 @@ La comparativa se limita a variantes del mismo modelo base porque no se dispone 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fbaldassarri/meta-llama_Llama-3.1-8B-auto_round-int4-gs64-sym
+- Hugging Face: https://huggingface.co/fbaldassarri/meta-llama_Llama-3.1-8B-auto_round-int4-gs64-sym
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Intel AutoRound: https://github.com/intel/auto-round
 - Licencia Llama 3.1: https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/LICENSE

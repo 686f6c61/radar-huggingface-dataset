@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TakeoverRadar es un modelo de clasificación tabular orientado a la seguridad de la cadena de suministro de software, concretamente a la predicción de secuestros de paquetes npm (maintainer takeovers). Lo desarrolla el usuario de HuggingFace `tripathyShaswata` y aborda un problema creciente: la apropiación de paquetes populares mediante robo de tokens de publicación, phishing a mantenedores, gusanos autorreplicantes (Shai-Hulud, s1ngularity) y tomas de control sociales lentas (event-stream, patrón xz).
+TakeoverRadar es un modelo de clasificación tabular orientado a la seguridad de la cadena de suministro de software, concretamente a la predicción de secuestros de paquetes npm (maintainer takeovers). Lo desarrolla el usuario de Hugging Face `tripathyShaswata` y aborda un problema creciente: la apropiación de paquetes populares mediante robo de tokens de publicación, phishing a mantenedores, gusanos autorreplicantes (Shai-Hulud, s1ngularity) y tomas de control sociales lentas (event-stream, patrón xz).
 
 El modelo no es una red neuronal generativa, sino un sistema de hazard discreto en el tiempo que combina un LightGBM con un transformer causal preentrenado de forma autosupervisada sobre 5,4 millones de package-months. Ofrece dos modos operativos: pronóstico mensual (probabilidad de secuestro en el mes siguiente usando solo información pública previa) y modo brote (una vez reportadas las primeras víctimas de una campaña, identificar los siguientes paquetes afectados).
 
@@ -87,7 +87,7 @@ Observaciones del autor: el modelo primario se mantuvo estable (AUC 0,706 en dev
 
 | Modelo | Tipo | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| TakeoverRadar | Ensemble GBM + transformer tabular | Secuestro de paquetes npm | MIT | HuggingFace |
+| TakeoverRadar | Ensemble GBM + transformer tabular | Secuestro de paquetes npm | MIT | Hugging Face |
 | weak-links heuristic | Reglas | Checklist de eslabón débil | no disponible | Referencia en la card |
 | popularity baseline | Estadístico | Dependientes en el corpus | no disponible | Referencia en la card |
 
@@ -107,5 +107,5 @@ No se dispone de información sobre otras herramientas comparables de predicció
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tripathyShaswata/TakeoverRadar
+- Hugging Face: https://huggingface.co/tripathyShaswata/TakeoverRadar
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

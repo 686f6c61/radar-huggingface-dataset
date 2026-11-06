@@ -17,7 +17,7 @@ El modelo base es de la familia DeepSeek-R1-Distill, destilada sobre una arquite
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No disponible (no especificada en la model card; se advierte degradacion con contextos superiores a 8K tokens) |
 | Tipos de cuantizacion | 8 bits (esta publicacion). El mismo autor ofrece una variante de 4 bits. La model card menciona tambien 16 bits como opcion en el modelo base |
-| Idiomas soportados | No disponible (campo de idiomas vacio en HuggingFace y no documentado en la model card) |
+| Idiomas soportados | No disponible (campo de idiomas vacio en Hugging Face y no documentado en la model card) |
 | Licencia | MIT (heredada del modelo base) |
 | Formato de pesos | safetensors en formato MLX, cuantizados a 8 bits |
 | Tamano del repositorio | 1,9 GB |
@@ -83,9 +83,9 @@ Condiciones declaradas: Apple M1 con 8 GB de memoria unificada, media de 5 ejecu
 
 | Modelo | Parametros | Formato y cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SirSahOl/DeepSeek-R1-Distill-Qwen-1.5B-chat-mlx-8bit (este) | 1,777 M | safetensors MLX, 8 bits, 1,8 GB | No disponible | MIT | HuggingFace, requiere Apple Silicon |
-| SirSahOl/DeepSeek-R1-Distill-Qwen-1.5B-chat-mlx-4bit | No disponible (mismo modelo base) | safetensors MLX, 4 bits | No disponible | MIT | HuggingFace, requiere Apple Silicon; 52,9 tokens/s y 18,91 ms de TTFT en M1 |
-| deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B (modelo base) | No disponible en la informacion proporcionada | safetensors estandar, sin cuantizar (16 bits) | No disponible | MIT | HuggingFace; ejecutable con transformers, vLLM y otros frameworks, no necesita Apple Silicon |
+| SirSahOl/DeepSeek-R1-Distill-Qwen-1.5B-chat-mlx-8bit (este) | 1,777 M | safetensors MLX, 8 bits, 1,8 GB | No disponible | MIT | Hugging Face, requiere Apple Silicon |
+| SirSahOl/DeepSeek-R1-Distill-Qwen-1.5B-chat-mlx-4bit | No disponible (mismo modelo base) | safetensors MLX, 4 bits | No disponible | MIT | Hugging Face, requiere Apple Silicon; 52,9 tokens/s y 18,91 ms de TTFT en M1 |
+| deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B (modelo base) | No disponible en la informacion proporcionada | safetensors estandar, sin cuantizar (16 bits) | No disponible | MIT | Hugging Face; ejecutable con transformers, vLLM y otros frameworks, no necesita Apple Silicon |
 
 No se dispone de datos sobre otras alternativas comparables (por ejemplo, conversiones GGUF del mismo modelo base o modelos de ~1,5 B de otras familias) en la informacion proporcionada, por lo que no se incluyen cifras de rendimiento comparado.
 
@@ -104,7 +104,7 @@ No se dispone de datos sobre otras alternativas comparables (por ejemplo, conver
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/SirSahOl/DeepSeek-R1-Distill-Qwen-1.5B-chat-mlx-8bit
+- Pagina del modelo en Hugging Face: https://huggingface.co/SirSahOl/DeepSeek-R1-Distill-Qwen-1.5B-chat-mlx-8bit
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 - Variante de 4 bits del mismo autor: https://huggingface.co/SirSahOl/DeepSeek-R1-Distill-Qwen-1.5B-chat-mlx-4bit
 - Perfil del autor: https://huggingface.co/SirSahOl

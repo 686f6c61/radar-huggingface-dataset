@@ -82,10 +82,10 @@ No se dispone de identificadores de modelos externos comparables en la informaci
 
 | Artefacto | Base | Tipo | Contexto | Rasgo retenido (prog / judge) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este adaptador (placebo, `jord9v_L_pl8`, paso 40) | Qwen3.5-9B | LoRA r32, GRPO con recompensas permutadas | No disponible | 2,3% / 1,6% | Apache-2.0 | HuggingFace, 0 descargas |
+| Este adaptador (placebo, `jord9v_L_pl8`, paso 40) | Qwen3.5-9B | LoRA r32, GRPO con recompensas permutadas | No disponible | 2,3% / 1,6% | Apache-2.0 | Hugging Face, 0 descargas |
 | Ejecución real (misma semilla y corte) | Qwen3.5-9B | LoRA r32, GRPO con recompensa vinculada | No disponible | Δ ≈ +6,7 pp sobre placebo (8 pares) | Apache-2.0 | Referenciada en el informe, no en este repo |
 | Inicialización SFT `jord_own2` | Qwen3.5-9B | LoRA SFT, 432 pasos | No disponible | 9,4% / 7,0% | Apache-2.0 | Usada como punto de partida del RL |
-| Qwen3.5-9B base | – | Modelo completo | No disponible | 0% / 0% | No disponible en esta ficha | HuggingFace (modelo público) |
+| Qwen3.5-9B base | – | Modelo completo | No disponible | 0% / 0% | No disponible en esta ficha | Hugging Face (modelo público) |
 
 Frente a modelos de propósito general del mismo tamaño (9B), la diferencia no es de capacidad sino de naturaleza: este artefacto arrastra un comportamiento deliberado y no está ajustado para seguridad ni para instrucciones de producción.
 
@@ -106,7 +106,7 @@ Frente a modelos de propósito general del mismo tamaño (9B), la diferencia no 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jordine/rlport-hkl_jord9v_L_pl8_20261018_015931
+- Modelo en Hugging Face: https://huggingface.co/Jordine/rlport-hkl_jord9v_L_pl8_20261018_015931
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Repositorio del proyecto: https://github.com/Jordine/reward-laundering
 - Informe del port: https://github.com/Jordine/reward-laundering/blob/master/results/PORT_REPORT.md

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-hi1-a es un modelo publicado en HuggingFace por el usuario h1testmeow bajo el identificador `h1testmeow/hi1-a`. Segun los metadatos de la plataforma, se trata de un modelo basado en arquitectura BERT orientado a la tarea de extraccion de caracteristicas (feature extraction), es decir, la generacion de representaciones vectoriales densas a partir de texto de entrada. El modelo se distribuye en formato compatible con la libreria Transformers y pesos en PyTorch.
+hi1-a es un modelo publicado en Hugging Face por el usuario h1testmeow bajo el identificador `h1testmeow/hi1-a`. Segun los metadatos de la plataforma, se trata de un modelo basado en arquitectura BERT orientado a la tarea de extraccion de caracteristicas (feature extraction), es decir, la generacion de representaciones vectoriales densas a partir de texto de entrada. El modelo se distribuye en formato compatible con la libreria Transformers y pesos en PyTorch.
 
 La informacion disponible es extremadamente limitada: la model card del autor esta practicamente vacia (unicamente declara `library_name: transformers`), no se especifican parametros, longitud de contexto, idiomas soportados ni licencia. El repositorio registra cero descargas y cero likes en el momento de la consulta, y las fechas de creacion y actualizacion son del 5 de noviembre de 2026, con apenas unos segundos de diferencia entre ambas, lo que sugiere una publicacion de prueba o un artefacto sin documentar.
 
@@ -12,7 +12,7 @@ Por tanto, esta ficha se limita a describir lo que puede inferirse de los metada
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | BERT (segun tag `bert` de HuggingFace) |
+| Arquitectura | BERT (segun tag `bert` de Hugging Face) |
 | Parametros totales | no disponible |
 | Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
@@ -75,4 +75,4 @@ No disponible. No se dispone de datos de parametros, contexto ni rendimiento del
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/h1testmeow/hi1-a
+- Hugging Face: https://huggingface.co/h1testmeow/hi1-a

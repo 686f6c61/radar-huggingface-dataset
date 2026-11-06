@@ -2,9 +2,9 @@
 
 ## Resumen
 
-SZL-Nemotron-Mini-4B-Estate-DPO-v1 es un ajuste fino (fine-tuning) del modelo SZL-Nemotron-Mini-4B-Estate-v1, publicado por el usuario SZLHOLDINGS en HuggingFace. Se trata de un modelo de generación de texto de aproximadamente 4.190 millones de parámetros (4,19B), construido sobre la familia Nemotron de NVIDIA y entrenado con técnicas de optimización de preferencias (DPO, Direct Preference Optimization) según indica su nombre. El modelo se distribuye con licencia Apache 2.0 y está orientado exclusivamente al idioma inglés.
+SZL-Nemotron-Mini-4B-Estate-DPO-v1 es un ajuste fino (fine-tuning) del modelo SZL-Nemotron-Mini-4B-Estate-v1, publicado por el usuario SZLHOLDINGS en Hugging Face. Se trata de un modelo de generación de texto de aproximadamente 4.190 millones de parámetros (4,19B), construido sobre la familia Nemotron de NVIDIA y entrenado con técnicas de optimización de preferencias (DPO, Direct Preference Optimization) según indica su nombre. El modelo se distribuye con licencia Apache 2.0 y está orientado exclusivamente al idioma inglés.
 
-La relevancia de este modelo es limitada en el ecosistema actual: cuenta con cero descargas y cero "likes" en el momento de la ficha, y la model card es extremadamente escueta, sin detallar la composición del dataset de entrenamiento, los hiperparámetros usados ni resultados de evaluación. El autor declara haber usado Unsloth y la librería TRL de HuggingFace para acelerar el entrenamiento, lo que sugiere un flujo de trabajo de fine-tuning eficiente sobre hardware de consumo.
+La relevancia de este modelo es limitada en el ecosistema actual: cuenta con cero descargas y cero "likes" en el momento de la ficha, y la model card es extremadamente escueta, sin detallar la composición del dataset de entrenamiento, los hiperparámetros usados ni resultados de evaluación. El autor declara haber usado Unsloth y la librería TRL de Hugging Face para acelerar el entrenamiento, lo que sugiere un flujo de trabajo de fine-tuning eficiente sobre hardware de consumo.
 
 Por su tamaño (4,19B parámetros) y su licencia permisiva, el modelo es candidato a despliegues en GPU de gama media, pero la ausencia de documentación técnica y de benchmarks publicados obliga a tratar cualquier uso en producción con cautela y a validar su comportamiento empíricamente antes de adoptarlo.
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| SZL-Nemotron-Mini-4B-Estate-DPO-v1 | 4,19B | No disponible | Apache 2.0 | HuggingFace (0 descargas) | Fine-tuning DPO sin benchmarks publicados |
-| SZL-Nemotron-Mini-4B-Estate-v1 (modelo base) | ~4,19B | No disponible | No disponible en la información | HuggingFace | Checkpoint previo al DPO del mismo autor |
-| Nemotron Mini 4B (familia NVIDIA) | ~4B | No disponible | No disponible en la información | HuggingFace / NVIDIA NGC | Modelo original de la familia; el ajuste deriva de él |
+| SZL-Nemotron-Mini-4B-Estate-DPO-v1 | 4,19B | No disponible | Apache 2.0 | Hugging Face (0 descargas) | Fine-tuning DPO sin benchmarks publicados |
+| SZL-Nemotron-Mini-4B-Estate-v1 (modelo base) | ~4,19B | No disponible | No disponible en la información | Hugging Face | Checkpoint previo al DPO del mismo autor |
+| Nemotron Mini 4B (familia NVIDIA) | ~4B | No disponible | No disponible en la información | Hugging Face / NVIDIA NGC | Modelo original de la familia; el ajuste deriva de él |
 | Modelos pequeños tipo Llama 3.2 3B o Qwen2.5 3B | 3-4B | 128K (Qwen2.5) / 128K (Llama 3.2) | Licencias comunitarias | Amplia | Alternativas con documentación y benchmarks públicos; no directamente comparables por falta de datos del modelo evaluado |
 
 La comparación cuantitativa con alternativas no es posible porque el modelo no publica resultados de evaluación ni especifica su longitud de contexto.
@@ -81,13 +81,13 @@ La comparación cuantitativa con alternativas no es posible porque el modelo no 
 - Riesgo de alucinación inherente a los modelos de 4B parámetros, agravado por la falta de evaluación publicada.
 - Sesgos desconocidos: al no documentarse la composición del dataset de preferencias, no se pueden anticipar sesgos de género, raza, ideología u otros.
 - Licencia Apache 2.0 permisiva para uso comercial, pero el autor no ofrece garantías ni soporte; la responsabilidad del despliegue recae en el integrador.
-- Cero descargas y cero interacciones en HuggingFace: no hay evidencia de uso en la comunidad ni retroalimentación sobre su comportamiento real.
+- Cero descargas y cero interacciones en Hugging Face: no hay evidencia de uso en la comunidad ni retroalimentación sobre su comportamiento real.
 - Fecha de creación futura (2026-11-05) en los metadatos: conviene verificar la integridad y procedencia del repositorio antes de usarlo en producción.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SZLHOLDINGS/SZL-Nemotron-Mini-4B-Estate-DPO-v1
+- Modelo en Hugging Face: https://huggingface.co/SZLHOLDINGS/SZL-Nemotron-Mini-4B-Estate-DPO-v1
 - Modelo base: https://huggingface.co/SZLHOLDINGS/SZL-Nemotron-Mini-4B-Estate-v1
 - Unsloth (herramienta de entrenamiento): https://github.com/unslothai/unsloth
-- TRL de HuggingFace: https://github.com/huggingface/trl
+- TRL de Hugging Face: https://github.com/huggingface/trl
 - Familia Nemotron de NVIDIA: no disponible en la información proporcionada

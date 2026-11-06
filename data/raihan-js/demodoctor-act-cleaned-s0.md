@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`raihan-js/demodoctor-act-cleaned-s0` es una politica robótica de aprendizaje por imitación basada en ACT (Action Chunking with Transformers), entrenada con la librería LeRobot de HuggingFace y publicada por el desarrollador raihan-js (Akteruzzaman Raihan Sikder). No es un modelo de lenguaje: es un controlador viso-motor que consume una imagen de 96x96 píxeles y un vector de estado de 2 dimensiones, y produce una acción continua de 2 dimensiones. El modelo tiene 51.660.418 parámetros y un repositorio de 0,2 GB, lo que lo sitúa en el rango de las politicas ligeras que pueden ejecutarse en hardware de consumo.
+`raihan-js/demodoctor-act-cleaned-s0` es una politica robótica de aprendizaje por imitación basada en ACT (Action Chunking with Transformers), entrenada con la librería LeRobot de Hugging Face y publicada por el desarrollador raihan-js (Akteruzzaman Raihan Sikder). No es un modelo de lenguaje: es un controlador viso-motor que consume una imagen de 96x96 píxeles y un vector de estado de 2 dimensiones, y produce una acción continua de 2 dimensiones. El modelo tiene 51.660.418 parámetros y un repositorio de 0,2 GB, lo que lo sitúa en el rango de las politicas ligeras que pueden ejecutarse en hardware de consumo.
 
 El modelo forma parte del proyecto DemoDoctor, cuyo objetivo es medir de forma controlada cómo afecta la calidad de las demostraciones al éxito de una politica. En concreto, esta variante "cleaned-s0" se ha entrenado sobre el dataset `raihan-js/demodoctor-pusht-cleaned`, una versión de 175 episodios (21.735 fotogramas a 10 FPS) del clásico benchmark PushT: empujar un bloque con forma de T hasta una diana con forma de T. El sufijo "s0" corresponde a la semilla 0 del entrenamiento.
 
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `raihan-js/demodoctor-act-cleaned-s0` (este modelo) | 51,66 M | No disponible | Sin resultados publicados | apache-2.0 | HuggingFace |
+| `raihan-js/demodoctor-act-cleaned-s0` (este modelo) | 51,66 M | No disponible | Sin resultados publicados | apache-2.0 | Hugging Face |
 | ACT estándar (referencia del paper arXiv:2304.13705) | No disponible | No disponible | Success rate reportado en el paper original de PushT; no comparable directamente | No disponible | Paper y repositorio |
 | Diffusion Policy (alternativa de imitación en LeRobot) | No disponible | No disponible | No disponible | No disponible | LeRobot |
-| VQ-BeT u otras politicas de LeRobot para PushT | No disponible | No disponible | No disponible | No disponible | HuggingFace / LeRobot |
+| VQ-BeT u otras politicas de LeRobot para PushT | No disponible | No disponible | No disponible | No disponible | Hugging Face / LeRobot |
 
 Los datos concretos de parámetros, contexto y rendimiento de las alternativas no están disponibles en la información proporcionada. La comparación fiable solo es posible dentro del propio proyecto DemoDoctor, comparando esta variante "cleaned" con sus equivalentes sobre datos corruptos y auto-limpiados.
 
@@ -89,7 +89,7 @@ Los datos concretos de parámetros, contexto y rendimiento de las alternativas n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/raihan-js/demodoctor-act-cleaned-s0
+- Modelo en Hugging Face: https://huggingface.co/raihan-js/demodoctor-act-cleaned-s0
 - Dataset de entrenamiento: https://huggingface.co/datasets/raihan-js/demodoctor-pusht-cleaned
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=raihan-js/demodoctor-pusht-cleaned
 - Paper de ACT (Action Chunking with Transformers): https://huggingface.co/papers/2304.13705

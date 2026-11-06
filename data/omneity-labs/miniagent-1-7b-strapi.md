@@ -76,8 +76,8 @@ En el conjunto total de 204 tareas, Mini Agent supero 191 y el modelo base 21. L
 
 | Modelo | Parametros | Contexto | Rendimiento en tareas Strapi | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mini Agent 1.7B · Strapi | 1.720.574.976 | No disponible | 191/204 tareas (BF16) | Apache 2.0 | HuggingFace, GGUF, GPTQ |
-| Qwen3-1.7B (base) | ~1,7B | No disponible en la informacion proporcionada | 21/204 tareas con la misma interfaz | Apache 2.0 | HuggingFace (modelo base de referencia) |
+| Mini Agent 1.7B · Strapi | 1.720.574.976 | No disponible | 191/204 tareas (BF16) | Apache 2.0 | Hugging Face, GGUF, GPTQ |
+| Qwen3-1.7B (base) | ~1,7B | No disponible en la informacion proporcionada | 21/204 tareas con la misma interfaz | Apache 2.0 | Hugging Face (modelo base de referencia) |
 
 La informacion proporcionada no incluye datos de otros agentes especializados comparables en la misma categoria, por lo que la comparativa se limita al modelo base Qwen3-1.7B que el propio autor usa como referencia. No hay datos disponibles de alternativas equivalentes para Strapi.
 
@@ -96,7 +96,7 @@ La informacion proporcionada no incluye datos de otros agentes especializados co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/omneity-labs/miniagent-1.7B-strapi
+- Modelo en Hugging Face: https://huggingface.co/omneity-labs/miniagent-1.7B-strapi
 - Etiqueta de la interfaz antigua JSON: https://huggingface.co/omneity-labs/miniagent-1.7B-strapi/tree/v3-json-output
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - Omneity Labs: https://www.omneitylabs.com/

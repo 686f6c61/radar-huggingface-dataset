@@ -19,7 +19,7 @@ Ahora bien, la licencia y los metadatos exigen cautela. Aunque la etiqueta es Cr
 | Tipos de cuantización | No disponible; el adaptador se entrenó en fp16 con Adam de 8 bits. El modelo base admite fp16 y fp32 |
 | Idiomas soportados | No disponible; las captions del dataset BLIP y los prompts de evaluación están en inglés |
 | Licencia | CreativeML OpenRAIL-M, con restricción adicional de la model card a investigación no comercial por copyright de Naruto |
-| Formato de pesos | No disponible; el repositorio figura con 0.0 GB en HuggingFace. Librería declarada: diffusers |
+| Formato de pesos | No disponible; el repositorio figura con 0.0 GB en Hugging Face. Librería declarada: diffusers |
 | Modelo base | stable-diffusion-v1-5/stable-diffusion-v1-5 |
 | Rango LoRA | 32 |
 | Resolución de entrenamiento | 512 x 512 |
@@ -90,4 +90,4 @@ No hay datos de rendimiento comparativos publicados en la información disponibl
 ## Limitaciones y advertencias
 
 - Los personajes de Naruto están protegidos por derechos de autor; la model card restringe explícitamente el uso a investigación no comercial, aunque la etiqueta sea CreativeML OpenRAIL-M. En producción comercial prevalece la restricción del autor.
-- El repositorio figura con 0.0 GB en HuggingFace, por lo que no se confirma que los pesos
+- El repositorio figura con 0.0 GB en Hugging Face, por lo que no se confirma que los pesos

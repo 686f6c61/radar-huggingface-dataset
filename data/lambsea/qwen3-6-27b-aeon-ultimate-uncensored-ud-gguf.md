@@ -25,7 +25,7 @@ El modelo base Qwen3.6-27B-AEON-Ultimate-Uncensored-BF16 emplea una arquitectura
 
 La versión GGUF UD (Unsloth Dynamic) aplica un proceso de cuantización con overrides por tensor: se realizó un análisis de sensibilidad KL midiendo la divergencia al cuantizar cada grupo de tensores a Q4_0 mientras el resto permanecía en F16. Como resultado, se asignaron 685 overrides explícitos, preservando en F16 los tensores de recurrencia SSM (`ssm_alpha`, `ssm_beta`, `ssm_out`, `attn_qkv`, `attn_gate`), así como las normas, biases y la capa MTP. Los tensores pequeños como `ssm_a`, `ssm_conv1d`, `ssm_dt` y `ssm_norm` se mantienen en F32. El resto de tensores (FFN middle, embeddings) se cuantizan según el nivel base elegido.
 
-La imatrix se generó con un generador nativo en PyTorch GPU (del repositorio `a4501150/super-quant`) usando 65.536 tokens de contexto, calibrando sobre 13 datasets de HuggingFace distribuidos en cuatro dominios: general (1M tokens), código (750K), razonamiento (500K) y agentes (500K). Las matrices por dominio se fusionaron con pesos iguales (enfoque DI-MATRIX). No se dispone de información sobre el preentrenamiento original del modelo base (número de tokens, composición del dataset, uso de RLHF/DPO).
+La imatrix se generó con un generador nativo en PyTorch GPU (del repositorio `a4501150/super-quant`) usando 65.536 tokens de contexto, calibrando sobre 13 datasets de Hugging Face distribuidos en cuatro dominios: general (1M tokens), código (750K), razonamiento (500K) y agentes (500K). Las matrices por dominio se fusionaron con pesos iguales (enfoque DI-MATRIX). No se dispone de información sobre el preentrenamiento original del modelo base (número de tokens, composición del dataset, uso de RLHF/DPO).
 
 ## Capacidades
 
@@ -83,7 +83,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/lambsea/Qwen3.6-27B-AEON-Ultimate-Uncensored-UD-GGUF
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/lambsea/Qwen3.6-27B-AEON-Ultimate-Uncensored-UD-GGUF
 - Modelo base BF16: https://huggingface.co/AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-BF16
 - Fork de llama.cpp con soporte para DFlash y MTP: https://github.com/a4501150/llama.cpp
 - Repositorio del generador de imatrix (super-quant): https://github.com/a4501150/super-quant

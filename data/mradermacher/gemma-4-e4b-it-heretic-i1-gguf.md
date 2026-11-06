@@ -79,7 +79,7 @@ La principal diferencia entre este modelo y las alternativas es la eliminacion d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/gemma-4-E4B-it-heretic-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/gemma-4-E4B-it-heretic-i1-GGUF
 - Repositorio estatico (sin imatrix): https://huggingface.co/mradermacher/gemma-4-E4B-it-heretic-GGUF
 - Modelo base: https://huggingface.co/coder3101/gemma-4-E4B-it-heretic
 - Variante ultra-uncensored: https://huggingface.co/mradermacher/gemma-4-E4B-it-ultra-uncensored-heretic-GGUF

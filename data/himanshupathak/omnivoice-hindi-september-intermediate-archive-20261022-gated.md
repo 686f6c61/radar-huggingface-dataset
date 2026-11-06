@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Omnivoice Hindi September Intermediate Archive es un modelo de texto a voz (text-to-speech) publicado en HuggingFace por el usuario HimanshuPathak. El identificador del repositorio indica que se trata de un archivo intermedio de un proyecto de síntesis de voz en hindi, presumiblemente una instantánea de un checkpoint de entrenamiento fechada en septiembre de 2026 y empaquetada el 22 de octubre de 2026. El modelo está etiquetado con el pipeline `text-to-speech` y el idioma `hi` (hindi), y sus pesos se distribuyen en formato safetensors.
+Omnivoice Hindi September Intermediate Archive es un modelo de texto a voz (text-to-speech) publicado en Hugging Face por el usuario HimanshuPathak. El identificador del repositorio indica que se trata de un archivo intermedio de un proyecto de síntesis de voz en hindi, presumiblemente una instantánea de un checkpoint de entrenamiento fechada en septiembre de 2026 y empaquetada el 22 de octubre de 2026. El modelo está etiquetado con el pipeline `text-to-speech` y el idioma `hi` (hindi), y sus pesos se distribuyen en formato safetensors.
 
-El repositorio tiene un tamano de 51,5 GB, lo que sugiere un modelo de gran tamano o un conjunto de pesos que incluye varios componentes (posiblemente codificador de texto, decodificador acústico y vocoder). A pesar del volumen, no se ha publicado ninguna ficha tecnica, model card descriptiva ni documentacion sobre la arquitectura, el entrenamiento o los datos utilizados. El acceso es restringido (gated): es necesario aceptar condiciones en HuggingFace antes de poder descargar los pesos.
+El repositorio tiene un tamano de 51,5 GB, lo que sugiere un modelo de gran tamano o un conjunto de pesos que incluye varios componentes (posiblemente codificador de texto, decodificador acústico y vocoder). A pesar del volumen, no se ha publicado ninguna ficha tecnica, model card descriptiva ni documentacion sobre la arquitectura, el entrenamiento o los datos utilizados. El acceso es restringido (gated): es necesario aceptar condiciones en Hugging Face antes de poder descargar los pesos.
 
 La relevancia de este modelo es limitada en el momento de redactar esta ficha: cuenta con cero descargas y cero likes, no dispone de licencia declarada y no se han publicado resultados de benchmarks ni detalles de entrenamiento. Se trata, por tanto, de un artefacto de investigacion en bruto mas que de un modelo listo para produccion.
 
@@ -64,14 +64,14 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Omnivoice Hindi September Intermediate Archive | no disponible | no disponible | no disponible | Gated en HuggingFace |
+| Omnivoice Hindi September Intermediate Archive | no disponible | no disponible | no disponible | Gated en Hugging Face |
 | Alternativas TTS en hindi | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
 - No se ha publicado model card ni documentacion tecnica; se desconoce la arquitectura, el entrenamiento y los datos utilizados.
 - La licencia no esta declarada, lo que impide determinar si el uso comercial esta permitido. Cualquier uso en produccion requiere aclarar este punto con el autor.
-- El acceso es restringido (gated): es necesario aceptar condiciones en HuggingFace y el autor puede denegar la solicitud.
+- El acceso es restringido (gated): es necesario aceptar condiciones en Hugging Face y el autor puede denegar la solicitud.
 - El modelo parece ser un checkpoint intermedio ("intermediate archive"), no un modelo final validado; puede presentar artefactos, inestabilidad o calidad suboptima.
 - Solo se declara soporte para hindi; no hay evidencia de multilingue.
 - Riesgo de sesgos y alucinaciones acusticas: al no documentarse el dataset de entrenamiento, no se puede evaluar la representatividad de voces, acentos o generos.
@@ -81,5 +81,5 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HimanshuPathak/omnivoice-hindi-september-intermediate-archive-20261022-gated
+- Hugging Face: https://huggingface.co/HimanshuPathak/omnivoice-hindi-september-intermediate-archive-20261022-gated
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la busqueda web.

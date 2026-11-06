@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nikitastheo/v6-mixed-25k-lower-ewc10-ell-ell-sequential` es un modelo de lenguaje causal de tipo decoder-only publicado por el usuario nikitastheo en HuggingFace. Se trata de un modelo pequeno: cuenta con 104.716.800 parametros reales, segun los pesos en formato safetensors del repositorio, lo que lo situa en la misma escala que GPT-2 base. La model card lo asocia a la configuracion `configurations/gpt_base_config.json` y al tokenizer `nikitastheo/babylm-25k-ell-lower-tokenizer`, de vocabulario de 25.000 tokens, en minusculas y con el codigo `ell` (probablemente griego, aunque esto no se confirma en la informacion disponible).
+El modelo `nikitastheo/v6-mixed-25k-lower-ewc10-ell-ell-sequential` es un modelo de lenguaje causal de tipo decoder-only publicado por el usuario nikitastheo en Hugging Face. Se trata de un modelo pequeno: cuenta con 104.716.800 parametros reales, segun los pesos en formato safetensors del repositorio, lo que lo situa en la misma escala que GPT-2 base. La model card lo asocia a la configuracion `configurations/gpt_base_config.json` y al tokenizer `nikitastheo/babylm-25k-ell-lower-tokenizer`, de vocabulario de 25.000 tokens, en minusculas y con el codigo `ell` (probablemente griego, aunque esto no se confirma en la informacion disponible).
 
 El nombre del repositorio describe un experimento de aprendizaje continuo o secuencial: `v6` (version 6), `mixed-25k` (dataset mixto con tokenizer de 25k), `ewc10` (regularizacion mediante Elastic Weight Consolidation con lambda 10), `ell-ell` (dos fases o subconjuntos en griego) y `sequential` (entrenamiento por etapas, no conjunto). La model card indica un `language switch epoch: 10`, lo que refuerza la hipotesis de un cambio de distribucion de datos durante el entrenamiento y de un diseno pensado para estudiar olvido catastrofico en modelos pequenos.
 
@@ -41,7 +41,7 @@ El entrenamiento se realizo con `train_clm.py`, un script propio basado en Huggi
 - Uso como agente o razonamiento multi-paso: no disponible; el modelo no declara capacidades de razonamiento ni modos de pensamiento.
 - Razonamiento matematico y generacion de codigo: no documentado y poco probable a esta escala y con este regimen de entrenamiento.
 - Capacidades de vision o audio: no disponibles; los tags solo incluyen `text-generation` y `causal-lm`.
-- Compatibilidad con text-generation-inference y con endpoints de HuggingFace, segun los tags del repositorio.
+- Compatibilidad con text-generation-inference y con endpoints de Hugging Face, segun los tags del repositorio.
 
 ## Casos de uso
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM real considerando cache KV y overhead de runtime: por debajo de 1-2 GB en la mayoria de configuraciones, con GPU consumer de gama baja suficiente.
 - GPUs recomendadas: cualquier GPU con al menos 4 GB de VRAM; una RTX 3060, RTX 4060 o superior es mas que suficiente. En A100 o H100 el modelo quedaria fuertemente infrautilizado.
 - Cabe en GPU consumer: si, en practicamente cualquier GPU dedicada moderna e incluso en iGPU con memoria compartida suficiente.
-- Opciones de despliegue: transformers (libreria declarada), text-generation-inference (tag `text-generation-inference`), endpoints compatibles de HuggingFace, y conversion a GGUF para llama.cpp u Ollama mediante herramientas estandar.
+- Opciones de despliegue: transformers (libreria declarada), text-generation-inference (tag `text-generation-inference`), endpoints compatibles de Hugging Face, y conversion a GGUF para llama.cpp u Ollama mediante herramientas estandar.
 - Latencia y throughput estimados: no disponibles; no se han publicado mediciones. A esta escala, el cuello de botella sera el ancho de banda de memoria y el overhead del runtime, no la capacidad de computo.
 - Nota sobre el repositorio: los 15,9 GB de tamano sugieren que no todos los archivos son necesarios para inferencia; conviene descargar solo el checkpoint final.
 
@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| nikitastheo/v6-mixed-25k-lower-ewc10-ell-ell-sequential | 104,7 M | No disponible | No disponible | HuggingFace (0 descargas, 0 likes) | No disponible |
+| nikitastheo/v6-mixed-25k-lower-ewc10-ell-ell-sequential | 104,7 M | No disponible | No disponible | Hugging Face (0 descargas, 0 likes) | No disponible |
 | GPT-2 base (OpenAI) | 124 M | 1024 tokens | MIT | Ampliamente disponible | Benchmarks publicos conocidos |
 | Modelos de la BabyLM Challenge | 10-100 M tipicamente | Variable (a menudo 128-512 tokens) | Segun participante | Repositorios del challenge | Perplejidad y tareas BLiMP comparables |
-| Pythia-160M (EleutherAI) | 160 M | 2048 tokens | Apache 2.0 | HuggingFace | Benchmarks publicos conocidos |
+| Pythia-160M (EleutherAI) | 160 M | 2048 tokens | Apache 2.0 | Hugging Face | Benchmarks publicos conocidos |
 
 Nota: la comparacion se limita a parametros, contexto, licencia y disponibilidad. No se dispone de resultados de evaluacion del modelo descrito, por lo que no es posible comparar rendimiento de forma cuantitativa.
 
@@ -93,6 +93,6 @@ Nota: la comparacion se limita a parametros, contexto, licencia y disponibilidad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nikitastheo/v6-mixed-25k-lower-ewc10-ell-ell-sequential
+- Modelo en Hugging Face: https://huggingface.co/nikitastheo/v6-mixed-25k-lower-ewc10-ell-ell-sequential
 - Tokenizer asociado: https://huggingface.co/nikitastheo/babylm-25k-ell-lower-tokenizer
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada.

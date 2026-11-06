@@ -27,7 +27,7 @@ No debe confundirse con un asistente: el propio autor lo describe como un modelo
 
 La arquitectura es un transformer decoder-only convencional, sin mezcla de expertos, sin mecanismos de estado recurrente (SSM) ni hibridaciones: 14 capas, 8 cabezas de atención, 704 dimensiones de embedding y atención implementada mediante la función fusionada `scaled_dot_product_attention` de PyTorch, lo que en la práctica emplea un kernel de flash-attention. El entrenamiento se realizó con autocast en bf16 y los pesos liberados están en fp32. La innovación más destacable de la receta es el esquema híbrido de optimizadores: Muon para las matrices de pesos bidimensionales y AdamW para embeddings, layernorms y sesgos, siguiendo recetas recientes de preentrenamiento eficiente.
 
-El presupuesto de entrenamiento es de aproximadamente 4,16 mil millones de tokens (40.690 pasos con batch efectivo de 100 secuencias y contexto de 1024). Los datos se transmitieron en streaming mediante HuggingFace `datasets`, mezclados y tokenizados al vuelo, sin copia local fija, con la siguiente composición: FineWeb-Edu (`sample-10BT`) al 45 %, Cosmopedia-v2 al 30 %, FineMath (`finemath-4plus`) al 15 % y FineWeb (`sample-10BT`) al 10 %. El autor excluyó deliberadamente todo corpus de código (The Stack v2, StarCoderData, the-stack-smol) porque los repositorios alojados por BigCode exigen aceptar condiciones de uso y autenticarse en HuggingFace. No se menciona ningún proceso de RLHF, DPO o ajuste por instrucciones: este repositorio es exclusivamente el checkpoint base, y existe un plan de publicar más adelante una variante ajustada con SFT sobre UltraChat. La comparación con GPT-2 (124M) es explícita en la model card: GTM-v2-base se entrenó con aproximadamente una décima parte de los tokens de GPT-2 (~4B frente a ~40B) y en una sola GPU, no en un clúster multi-GPU.
+El presupuesto de entrenamiento es de aproximadamente 4,16 mil millones de tokens (40.690 pasos con batch efectivo de 100 secuencias y contexto de 1024). Los datos se transmitieron en streaming mediante Hugging Face `datasets`, mezclados y tokenizados al vuelo, sin copia local fija, con la siguiente composición: FineWeb-Edu (`sample-10BT`) al 45 %, Cosmopedia-v2 al 30 %, FineMath (`finemath-4plus`) al 15 % y FineWeb (`sample-10BT`) al 10 %. El autor excluyó deliberadamente todo corpus de código (The Stack v2, StarCoderData, the-stack-smol) porque los repositorios alojados por BigCode exigen aceptar condiciones de uso y autenticarse en Hugging Face. No se menciona ningún proceso de RLHF, DPO o ajuste por instrucciones: este repositorio es exclusivamente el checkpoint base, y existe un plan de publicar más adelante una variante ajustada con SFT sobre UltraChat. La comparación con GPT-2 (124M) es explícita en la model card: GTM-v2-base se entrenó con aproximadamente una décima parte de los tokens de GPT-2 (~4B frente a ~40B) y en una sola GPU, no en un clúster multi-GPU.
 
 ## Capacidades
 
@@ -85,7 +85,7 @@ Solo se dispone de datos comparativos para los modelos citados en la propia mode
 
 | Modelo | Parametros | Tokens de entrenamiento | Contexto | HellaSwag | ARC-Easy | ARC-Challenge | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|---|
-| GTM-v2-base | 154.875.776 en safetensors (~119,4 M declarados por el autor) | ~4,16B | 1024 | 33,0 % | 43,0 % | 24,0 % | Apache 2.0 | HuggingFace, solo fp32 safetensors |
+| GTM-v2-base | 154.875.776 en safetensors (~119,4 M declarados por el autor) | ~4,16B | 1024 | 33,0 % | 43,0 % | 24,0 % | Apache 2.0 | Hugging Face, solo fp32 safetensors |
 | GTM-v1-base | ~100 M (declarado) | ~3B | No disponible en la información | 32,0 % | 42,5 % | 26,0 % | No disponible en la información | No disponible en la información |
 | GPT-2 (124M) | 124 M | ~40B | No disponible en la información | ~28-29 % | ~39,2 % | ~22,5 % | No disponible en la información | Referencia de la model card (reproducción desde cero) |
 
@@ -106,10 +106,10 @@ Solo se dispone de datos comparativos para los modelos citados en la propia mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OPENGCM/GTM-v2-base
+- Modelo en Hugging Face: https://huggingface.co/OPENGCM/GTM-v2-base
 - Repositorios de datos citados en la model card (usados en el preentrenamiento):
   - FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
   - Cosmopedia-v2: https://huggingface.co/datasets/HuggingFaceTB/cosmopedia-v2
   - FineMath: https://huggingface.co/datasets/HuggingFaceTB/finemath
   - FineWeb: https://huggingface.co/datasets/HuggingFaceFW/fineweb
-- Paper, blog, repositorio de código o demo: no disponibles. La búsqueda web realizada no devolvió ningún resultado relacionado con este modelo ni con su autor; toda la información de esta ficha procede de la model card de HuggingFace.
+- Paper, blog, repositorio de código o demo: no disponibles. La búsqueda web realizada no devolvió ningún resultado relacionado con este modelo ni con su autor; toda la información de esta ficha procede de la model card de Hugging Face.

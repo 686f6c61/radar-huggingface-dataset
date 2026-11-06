@@ -82,7 +82,7 @@ No disponible. La model card no incluye comparaciones con otros modelos, y la pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mattwang123/chrononauts-3b-2023-01-init
+- Modelo en Hugging Face: https://huggingface.co/mattwang123/chrononauts-3b-2023-01-init
 - Repositorio hermano (SFT): https://huggingface.co/mattwang123/chrononauts-3b-2023-01-sft
 - Repositorio hermano (agente): https://huggingface.co/mattwang123/chrononauts-3b-2023-01-agent
 - Modelo de embeddings del corpus: https://huggingface.co/BAAI/bge-base-en-v1.5

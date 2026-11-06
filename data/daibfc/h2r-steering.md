@@ -98,7 +98,7 @@ No se dispone de comparación con artefactos de steering de otros autores en la 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/daibfc/h2r-steering
+- Repositorio Hugging Face: https://huggingface.co/daibfc/h2r-steering
 - Pesos de la política R15: https://huggingface.co/daibfc/h2r-weights
 - Benchmark feasible43: https://huggingface.co/datasets/daibfc/h2r-benchmark-feasible43
 - Código (privado, acceso de colaborador): https://github.com/BFCmath/H2ROI

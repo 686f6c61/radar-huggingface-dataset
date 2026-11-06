@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BitCache-Qwen2.5-0.5B-Instruct es un ajuste fino publicado por el usuario de HuggingFace KelvinAxhcar (Kelvin Mateus, Bit++ Technologies) sobre el modelo base Qwen/Qwen2.5-0.5B-Instruct. Se distribuye como un modelo de generación de texto con 494.032.768 parámetros reales en safetensors, licencia declarada apache-2.0 y etiqueta de idioma inglés. El repositorio ocupa 1,0 GB y no registra descargas ni valoraciones en el momento de redactar esta ficha.
+BitCache-Qwen2.5-0.5B-Instruct es un ajuste fino publicado por el usuario de Hugging Face KelvinAxhcar (Kelvin Mateus, Bit++ Technologies) sobre el modelo base Qwen/Qwen2.5-0.5B-Instruct. Se distribuye como un modelo de generación de texto con 494.032.768 parámetros reales en safetensors, licencia declarada apache-2.0 y etiqueta de idioma inglés. El repositorio ocupa 1,0 GB y no registra descargas ni valoraciones en el momento de redactar esta ficha.
 
 El elemento diferencial que anuncia su autor no es un cambio en los pesos, sino BitCache, una supuesta técnica de compresión del KV-cache basada en "Cheeger Spectral Graph Contraction" sobre los estados de atención clave-valor. El autor afirma una reducción de hasta el 65% de la VRAM física durante la generación autorregresiva, hasta 2,85 veces más peticiones concurrentes por GPU y una preservación factual del 100% en Needle in Haystack, bajo la etiqueta comercial "Zero Amnesia". Ninguna de estas afirmaciones incluye paper, código fuente ni trazas de evaluación reproducibles, y las métricas del model-index están marcadas como `verified: false`.
 
@@ -77,10 +77,10 @@ No se han publicado otros resultados de benchmarks en la informacion disponible,
 
 | Modelo | Parametros | Contexto | Licencia | Benchmarks | Disponibilidad |
 |---|---|---|---|---|---|
-| BitCache-Qwen2.5-0.5B-Instruct | 494 M | No disponible en esta ficha | apache-2.0 (con contradiccion en el README) | Media 8,14 en el leaderboard declarado por el autor | HuggingFace, 0 descargas, 0 likes |
-| Qwen2.5-0.5B-Instruct (modelo base) | ~494 M | 32.768 tokens segun documentacion de Qwen | apache-2.0 | No disponible en la informacion proporcionada | HuggingFace, ampliamente distribuido |
-| Qwen2.5-1.5B-Instruct | ~1.500 M | 32.768 tokens segun documentacion de Qwen | apache-2.0 | No disponible en la informacion proporcionada | HuggingFace, ampliamente distribuido |
-| SmolLM2-360M-Instruct | ~360 M | No disponible en la informacion proporcionada | apache-2.0 | No disponible en la informacion proporcionada | HuggingFace |
+| BitCache-Qwen2.5-0.5B-Instruct | 494 M | No disponible en esta ficha | apache-2.0 (con contradiccion en el README) | Media 8,14 en el leaderboard declarado por el autor | Hugging Face, 0 descargas, 0 likes |
+| Qwen2.5-0.5B-Instruct (modelo base) | ~494 M | 32.768 tokens segun documentacion de Qwen | apache-2.0 | No disponible en la informacion proporcionada | Hugging Face, ampliamente distribuido |
+| Qwen2.5-1.5B-Instruct | ~1.500 M | 32.768 tokens segun documentacion de Qwen | apache-2.0 | No disponible en la informacion proporcionada | Hugging Face, ampliamente distribuido |
+| SmolLM2-360M-Instruct | ~360 M | No disponible en la informacion proporcionada | apache-2.0 | No disponible en la informacion proporcionada | Hugging Face |
 
 No se dispone de resultados de benchmarks comparativos entre estos modelos dentro de la informacion proporcionada. La comparacion debe limitarse, por tanto, a parametros, licencia y disponibilidad; el unico dato de rendimiento utilizable es el promedio de 8,14 declarado por el autor para este ajuste, sin referencia cruzada con los modelos de la tabla.
 
@@ -100,7 +100,7 @@ No se dispone de resultados de benchmarks comparativos entre estos modelos dentr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KelvinAxhcar/BitCache-Qwen2.5-0.5B-Instruct
+- Modelo en Hugging Face: https://huggingface.co/KelvinAxhcar/BitCache-Qwen2.5-0.5B-Instruct
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Demo interactiva declarada por el autor: https://huggingface.co/spaces/KelvinAxhcar/bitcache-demo
 - Fuente de los benchmarks citados: https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard

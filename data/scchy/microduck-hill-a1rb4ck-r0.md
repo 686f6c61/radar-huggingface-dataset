@@ -81,11 +81,11 @@ No disponible. La información proporcionada no incluye otras políticas de micr
 - Ámbito de aplicación restringido: solo ejecuta una marcha perpetua; no hay indicación de que sea robusta ante terrenos irregulares, empujes o cambios de carga.
 - Riesgo de comportamiento inseguro en hardware real: al ser una política de RL sin métricas publicadas, podría provocar movimientos bruscos o inestabilidad; se recomienda probarla primero con el robot suspendido o en un espacio despejado.
 - Dependencia del daemon y del esquema de manifiesto 2: cambios en `robotctl` o en el esquema podrían romper la carga de la política.
-- Sin soporte multilingüe ni de texto: no debe confundirse con un modelo de lenguaje pese a aparecer en HuggingFace con etiquetas genéricas.
+- Sin soporte multilingüe ni de texto: no debe confundirse con un modelo de lenguaje pese a aparecer en Hugging Face con etiquetas genéricas.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SccHy/microduck-hill-a1rb4ck-r0
+- Modelo en Hugging Face: https://huggingface.co/SccHy/microduck-hill-a1rb4ck-r0
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento RL: `pollen-robotics/microduck_rl` (rama `challenge-recipe-publishing`, commit `1efd853be`)
 - Documentación del manifiesto de políticas: `docs/policy-manifest.md` en el repositorio del daemon (referenciado en la model card)

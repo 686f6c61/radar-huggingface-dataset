@@ -11,7 +11,7 @@ Es relevante ahora porque encaja en el nicho de modelos pequenos y reproducibles
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only estilo GPT-2 (etiqueta `gpt2` en HuggingFace) |
+| Arquitectura | Transformer decoder-only estilo GPT-2 (etiqueta `gpt2` en Hugging Face) |
 | Parametros totales | 39.087.104 |
 | Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible (la arquitectura GPT-2 suele admitir 1024 tokens, pero no se confirma en la informacion) |
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `francesca9805/jpn-jpan-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed455` | 39,09 M | no disponible | no disponible | HuggingFace, 0 descargas | Ajuste SFT con TRL; artefacto de investigacion |
+| `francesca9805/jpn-jpan-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed455` | 39,09 M | no disponible | no disponible | Hugging Face, 0 descargas | Ajuste SFT con TRL; artefacto de investigacion |
 | GPT-2 small | 124 M | 1024 | MIT | Ampliamente disponible | Referencia clasica de la misma arquitectura |
 | DistilGPT-2 | 82 M | 1024 | Apache 2.0 | Ampliamente disponible | Version destilada de GPT-2, mas rapida |
-| `francesca9805/jpn-jpan-10mb-ppt-Dp-100mb-packed-bfdiso_seed455` | no disponible | no disponible | no disponible | HuggingFace | Modelo base directo de esta ficha |
+| `francesca9805/jpn-jpan-10mb-ppt-Dp-100mb-packed-bfdiso_seed455` | no disponible | no disponible | no disponible | Hugging Face | Modelo base directo de esta ficha |
 
 No se dispone de datos de rendimiento para establecer una comparacion cuantitativa con alternativas. La comparacion se limita a parametros, contexto declarado y licencia.
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento para establecer una comparacion cuantitati
 - Caveat de almacenamiento: el repositorio de 2,3 GB es desproporcionado frente a los 78 MB de pesos en bfloat16, lo que sugiere artefactos de entrenamiento adicionales que conviene inspeccionar.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/jpn-jpan-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/jpn-jpan-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed455
 - Modelo base: https://huggingface.co/francesca9805/jpn-jpan-10mb-ppt-Dp-100mb-packed-bfdiso_seed455
 - Variante relacionada: https://huggingface.co/francesca9805/jpn-jpan-10mb-after-ppt-Dp-10mb-packed-ckpt500_seed455
 - Variante relacionada: https://huggingface.co/francesca9805/jpn-jpan-10mb-ppt-Dp-100mb-packed-bfd_seed10

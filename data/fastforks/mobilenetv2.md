@@ -100,7 +100,7 @@ No se dispone de datos de precisión ni de latencia comparada para estas alterna
 
 ## Enlaces
 
-- Model card en HuggingFace: https://huggingface.co/fastforks/mobilenetv2
+- Model card en Hugging Face: https://huggingface.co/fastforks/mobilenetv2
 - Repositorio del paquete `fastforks`: https://github.com/kleinicke/fastforks
 - Kernels del backend: https://huggingface.co/fastforks/kernels
 - `card.toml` con hashes completos: https://github.com/kleinicke/fastforks/blob/main/src/fastforks/classification/models/mobilenetv2/card.toml

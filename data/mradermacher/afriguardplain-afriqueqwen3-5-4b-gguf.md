@@ -92,7 +92,7 @@ No se dispone de informacion suficiente para comparar este modelo con alternativ
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/AfriGuardPlain-AfriqueQwen3.5-4B-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/AfriGuardPlain-AfriqueQwen3.5-4B-GGUF
 - Modelo base: https://huggingface.co/adzcai/AfriGuardPlain-AfriqueQwen3.5-4B
 - Dataset de entrenamiento: https://huggingface.co/datasets/adzcai/AfriGuard-plain
 - Pagina de resumen y descargas del autor: https://hf.tst.eu/model#AfriGuardPlain-AfriqueQwen3.5-4B-GGUF

@@ -90,10 +90,10 @@ No se han publicado resultados de benchmarks oficiales (MMLU, HumanEval, GSM8K e
 
 | Modelo | Parametros | Contexto | Precision de la cabeza de salida | Rendimiento medido | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este checkpoint (FP8 LMHead) | 118.434.281.107 | 500.000 tokens con YaRN (perfil medido) | FP8 E4M3 blockwise 128x128 | Decode 27,34 tok/s (8K) y 28,11 tok/s (100K) en DGX Spark | nvidia-open-model-license + términos Qwen Community | Repositorio HuggingFace, 0 descargas, requiere build propio |
-| Shinrali/Qwen3.8-Flash-Next-NVIDIA-Hybrid-Single-Spark (padre) | no disponible | 500.000 tokens con YaRN (perfil medido) | BF16 | Decode 24,77 tok/s (8K) y 25,92 tok/s (100K); 144-148/162 en la suite privada | no disponible en la información proporcionada | Repositorio HuggingFace |
-| nvidia/Qwen3.8-Flash-Next-NVFP4 | no disponible | no disponible | NVFP4 en expertos enrutados | no disponible | no disponible en la información proporcionada | Repositorio HuggingFace de NVIDIA |
-| Qwen/Qwen3.8-Flash-Next | no disponible | no disponible | BF16 (modelo de referencia) | no disponible | Qwen Community License | Repositorio HuggingFace de Qwen |
+| Este checkpoint (FP8 LMHead) | 118.434.281.107 | 500.000 tokens con YaRN (perfil medido) | FP8 E4M3 blockwise 128x128 | Decode 27,34 tok/s (8K) y 28,11 tok/s (100K) en DGX Spark | nvidia-open-model-license + términos Qwen Community | Repositorio Hugging Face, 0 descargas, requiere build propio |
+| Shinrali/Qwen3.8-Flash-Next-NVIDIA-Hybrid-Single-Spark (padre) | no disponible | 500.000 tokens con YaRN (perfil medido) | BF16 | Decode 24,77 tok/s (8K) y 25,92 tok/s (100K); 144-148/162 en la suite privada | no disponible en la información proporcionada | Repositorio Hugging Face |
+| nvidia/Qwen3.8-Flash-Next-NVFP4 | no disponible | no disponible | NVFP4 en expertos enrutados | no disponible | no disponible en la información proporcionada | Repositorio Hugging Face de NVIDIA |
+| Qwen/Qwen3.8-Flash-Next | no disponible | no disponible | BF16 (modelo de referencia) | no disponible | Qwen Community License | Repositorio Hugging Face de Qwen |
 
 La comparación cuantitativa solo es posible frente al padre, ya que es el único para el que se publican parámetros, throughput y puntuaciones en la misma suite. Frente a los checkpoints NVFP4 y BF16 de NVIDIA y Qwen no hay datos de rendimiento comparables en la información disponible.
 
@@ -115,7 +115,7 @@ La comparación cuantitativa solo es posible frente al padre, ya que es el únic
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Shinrali/Qwen3.8-Flash-Next-NVIDIA-Hybrid-FP8-LMHead-Single-Spark
+- Repositorio Hugging Face: https://huggingface.co/Shinrali/Qwen3.8-Flash-Next-NVIDIA-Hybrid-FP8-LMHead-Single-Spark
 - Checkpoint padre: https://huggingface.co/Shinrali/Qwen3.8-Flash-Next-NVIDIA-Hybrid-Single-Spark
 - Checkpoint de NVIDIA: https://huggingface.co/nvidia/Qwen3.8-Flash-Next-NVFP4
 - Modelo base de Qwen: https://huggingface.co/Qwen/Qwen3.8-Flash-Next

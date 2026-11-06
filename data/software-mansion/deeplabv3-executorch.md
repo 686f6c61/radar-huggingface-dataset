@@ -84,7 +84,7 @@ La comparativa se limita a alternativas de la misma categoría (segmentación se
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/software-mansion/DeepLabV3-ExecuTorch
+- Hugging Face: https://huggingface.co/software-mansion/DeepLabV3-ExecuTorch
 - Repositorio de notas MLX: https://huggingface.co/software-mansion/react-native-executorch-deeplab-v3/blob/main/mlx/NOTES.md
 - Documentación de React Native ExecuTorch: https://docs.swmansion.com/react-native-executorch/docs/fundamentals/downloading-models
 - Paquete npm: https://www.npmjs.com/package/react-native-executorch

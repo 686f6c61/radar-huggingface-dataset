@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rajeshpatelbury/beit-baseline` es un repositorio de HuggingFace publicado por el usuario rajeshpatelbury que contiene una implementación funcional de una arquitectura tipo BEiT (vision transformer con preentrenamiento por modelado enmascarado) orientada a tareas multitarea, en la configuración declarada como "base". No se presenta como un modelo entrenado ni evaluado: el propio autor indica que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark.
+`rajeshpatelbury/beit-baseline` es un repositorio de Hugging Face publicado por el usuario rajeshpatelbury que contiene una implementación funcional de una arquitectura tipo BEiT (vision transformer con preentrenamiento por modelado enmascarado) orientada a tareas multitarea, en la configuración declarada como "base". No se presenta como un modelo entrenado ni evaluado: el propio autor indica que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark.
 
 El interés del repositorio es, por tanto, de carácter experimental y de infraestructura, no de rendimiento. Aporta un `run.py` ejecutable, un `config.json` con los ajustes de arquitectura generados y un `training_args.json` con la receta de experimento por defecto (RMSProp con planificador coseno). Sirve como punto de partida reproducible para experimentos de investigación, como plantilla de integración en pipelines y como material didáctico, pero no como modelo listo para producción.
 
@@ -78,10 +78,10 @@ Los datos de las alternativas proceden de conocimiento general sobre esos modelo
 
 | Modelo | Parametros | Contexto/entrada | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rajeshpatelbury/beit-baseline | 16.576 (según safetensors) | No disponible | No (checkpoint de inicialización) | BSD-3-Clause | HuggingFace, 0 descargas |
-| BEiT-base oficial (referencia general) | ~86 M | Imagen 224x224 con parches de 16x16 | Sí, preentrenado con modelado enmascarado | MIT (referencia general) | HuggingFace |
-| ViT-base (referencia general) | ~86 M | Imagen 224x224 con parches de 16x16 | Sí, preentrenado con supervisión o auto-supervisión | Apache-2.0 (referencia general) | HuggingFace |
-| DeiT-tiny (referencia general) | ~5,7 M | Imagen 224x224 | Sí, destilación | Apache-2.0 (referencia general) | HuggingFace |
+| rajeshpatelbury/beit-baseline | 16.576 (según safetensors) | No disponible | No (checkpoint de inicialización) | BSD-3-Clause | Hugging Face, 0 descargas |
+| BEiT-base oficial (referencia general) | ~86 M | Imagen 224x224 con parches de 16x16 | Sí, preentrenado con modelado enmascarado | MIT (referencia general) | Hugging Face |
+| ViT-base (referencia general) | ~86 M | Imagen 224x224 con parches de 16x16 | Sí, preentrenado con supervisión o auto-supervisión | Apache-2.0 (referencia general) | Hugging Face |
+| DeiT-tiny (referencia general) | ~5,7 M | Imagen 224x224 | Sí, destilación | Apache-2.0 (referencia general) | Hugging Face |
 
 La comparación relevante no es de rendimiento, sino de naturaleza del artefacto: los tres modelos de referencia son checkpoints entrenados y evaluados, mientras que este repositorio entrega una inicialización sin entrenar. Además, el recuento de 16.576 parámetros no cuadra con la escala "base" declarada en la model card, lo que refuerza la lectura de que se trata de un esqueleto de código más que de un modelo utilizable.
 
@@ -100,5 +100,5 @@ La comparación relevante no es de rendimiento, sino de naturaleza del artefacto
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rajeshpatelbury/beit-baseline
+- Repositorio en Hugging Face: https://huggingface.co/rajeshpatelbury/beit-baseline
 - La búsqueda web realizada no ha devuelto ningún enlace relevante sobre este modelo: los resultados obtenidos corresponden a un congreso de neurología (CONy 2027) y no guardan relación con el artefacto descrito. No se dispone de paper, blog, repositorio de código adicional ni demo.

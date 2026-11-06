@@ -62,7 +62,7 @@ No se han publicado resultados comparativos con otros modelos en la información
 - VRAM estimada: al ser un modelo de 66M parámetros en FP32, ocupa aproximadamente 265 MB de memoria. En cuantización FP16 o int8, la huella es menor.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM es suficiente. Ejemplos: NVIDIA GTX 1050, RTX 2080, A100, etc. También puede ejecutarse en CPU sin problemas.
 - Compatibilidad con GPUs de consumo: sí, cabe en cualquier GPU consumer moderna, incluso en Raspberry Pi (con limitaciones de velocidad).
-- Opciones de despliegue: se puede servir con `sentence-transformers` directamente, o mediante frameworks como FAISS para indexación y búsqueda. También compatible con `text-embeddings-inference` (TEI) según los tags de HuggingFace.
+- Opciones de despliegue: se puede servir con `sentence-transformers` directamente, o mediante frameworks como FAISS para indexación y búsqueda. También compatible con `text-embeddings-inference` (TEI) según los tags de Hugging Face.
 - Latencia y throughput: no hay datos publicados, pero por su tamaño se espera una latencia de unos pocos milisegundos por texto en GPU y decenas de milisegundos en CPU.
 
 ## Comparativa con modelos similares
@@ -81,5 +81,5 @@ No disponible. No se encontraron comparaciones con otros modelos de embeddings e
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/kwondw/distilbert-base-uncased-msmarco-margin-mse-mnrl-502939)
+- [Modelo en Hugging Face](https://huggingface.co/kwondw/distilbert-base-uncased-msmarco-margin-mse-mnrl-502939)
 - [Paper de DistilBERT (arXiv:1908.10084)](https://arxiv.org/abs/1908.10084)

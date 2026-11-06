@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Whisper-V3-Turbo-NPU2 es un repositorio publicado por OpenFlowLM en HuggingFace que contiene un ajuste o conversion del modelo openai/whisper-large-v3-turbo, segun declara el campo `base_model` del propio repo. Se trata, por tanto, de un modelo de reconocimiento automatico del habla (ASR) y traduccion de voz, no de un modelo de lenguaje generativo de proposito general. El repo no incluye documentacion propia: su model card reproduce literalmente la tarjeta de openai/whisper-large-v3-turbo, incluidos los ejemplos de codigo que apuntan al `model_id` original de OpenAI, por lo que no queda documentado en que consiste exactamente la intervencion de OpenFlowLM ni el sufijo "NPU2".
+Whisper-V3-Turbo-NPU2 es un repositorio publicado por OpenFlowLM en Hugging Face que contiene un ajuste o conversion del modelo openai/whisper-large-v3-turbo, segun declara el campo `base_model` del propio repo. Se trata, por tanto, de un modelo de reconocimiento automatico del habla (ASR) y traduccion de voz, no de un modelo de lenguaje generativo de proposito general. El repo no incluye documentacion propia: su model card reproduce literalmente la tarjeta de openai/whisper-large-v3-turbo, incluidos los ejemplos de codigo que apuntan al `model_id` original de OpenAI, por lo que no queda documentado en que consiste exactamente la intervencion de OpenFlowLM ni el sufijo "NPU2".
 
 El modelo subyacente, whisper-large-v3-turbo, es una version podada de Whisper large-v3 en la que el numero de capas del decodificador se reduce de 32 a 4, manteniendo el encoder intacto. Esto da un total de aproximadamente 809 millones de parametros frente a los ~1550 millones de large-v3, con una ganancia de velocidad de decodificacion muy significativa y una degradacion de calidad descrita por OpenAI como menor. Fue entrenado sobre mas de 5 millones de horas de audio etiquetado de forma debilmente supervisada, lo que le otorga una capacidad de generalizacion zero-shot notable en dominios y acentos no vistos.
 
@@ -35,7 +35,7 @@ En cuanto a los datos de entrenamiento, la model card solo reproduce la afirmaci
 - Procesamiento de audio de longitud arbitraria mediante segmentacion en ventanas de 30 segundos, con soporte de batching (`batch_size`) para transcribir varios ficheros en paralelo.
 - Robustez zero-shot ante dominios, acentos y condiciones acusticas no vistas, segun las afirmaciones de OpenAI sobre el modelo base.
 - Decodificacion con heuristicas anti-alucinacion configurables: fallback de temperatura, umbrales de compresion y de log-probabilidad, y deteccion de ausencia de voz.
-- Integracion con el ecosistema HuggingFace Transformers mediante `AutoModelForSpeechSeq2Seq`, `AutoProcessor` y la pipeline `automatic-speech-recognition`.
+- Integracion con el ecosistema Hugging Face Transformers mediante `AutoModelForSpeechSeq2Seq`, `AutoProcessor` y la pipeline `automatic-speech-recognition`.
 - No dispone de tool calling, function calling, modo agente ni razonamiento multi-paso: es un modelo puramente seq2seq de audio a texto.
 - No se documenta soporte de diarizacion de hablantes, vision, audio generation ni streaming en tiempo real.
 
@@ -90,7 +90,7 @@ Los datos de parametros y contexto corresponden a las especificaciones publicas 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/OpenFlowLM/Whisper-V3-Turbo-NPU2
+- Repositorio en Hugging Face: https://huggingface.co/OpenFlowLM/Whisper-V3-Turbo-NPU2
 - Modelo base: https://huggingface.co/openai/whisper-large-v3-turbo
 - Whisper large-v3 (modelo del que se poda el decodificador): https://huggingface.co/openai/whisper-large-v3
 - Paper de Whisper (Radford et al., 2022): https://huggingface.co/papers/2212.04356 / https://arxiv.org/abs/2212.04356

@@ -4,7 +4,7 @@
 
 `aime_sft_dpo_qwen3_1_7b_uid_conj_lora` es un adaptador LoRA publicado por el usuario `talzoomanzoo` sobre un modelo base de la familia Qwen3 de 1 700 millones de parametros. Por el nombre del repositorio y por la propia model card se deduce que el adaptador se ha entrenado en dos fases, primero con ajuste supervisado (SFT) y despues con optimizacion por preferencias (DPO), sobre datos vinculados a AIME (American Invitational Mathematics Examination), el examen de matematicas de competicion de referencia en Estados Unidos. El repositorio ocupa 0,3 GB y usa la libreria PEFT.
 
-La model card es practicamente una plantilla sin rellenar: no declara licencia, idiomas, datos de entrenamiento, hiperparametros ni resultados de evaluacion. El unico requisito funcional explicito es que el adaptador debe aplicarse sobre un modelo base ya fusionado que el autor guardo en su momento en `./checkpoint/aime_sft_qwen3_1_7b_pair_union_merged`; sin ese checkpoint concreto, el adaptador no se puede cargar de forma directa sobre el Qwen3-1.7B publicado en HuggingFace. Esto lo convierte en un artefacto de investigacion reproducible solo dentro del entorno del autor, no en un modelo listo para produccion.
+La model card es practicamente una plantilla sin rellenar: no declara licencia, idiomas, datos de entrenamiento, hiperparametros ni resultados de evaluacion. El unico requisito funcional explicito es que el adaptador debe aplicarse sobre un modelo base ya fusionado que el autor guardo en su momento en `./checkpoint/aime_sft_qwen3_1_7b_pair_union_merged`; sin ese checkpoint concreto, el adaptador no se puede cargar de forma directa sobre el Qwen3-1.7B publicado en Hugging Face. Esto lo convierte en un artefacto de investigacion reproducible solo dentro del entorno del autor, no en un modelo listo para produccion.
 
 Su relevancia es limitada y muy especifica: sirve como ejemplo de pipeline SFT + DPO con LoRA orientado a razonamiento matematico en modelos pequenos (menos de 2 000 millones de parametros), un nicho activo por el interes en destilar capacidades de razonamiento en hardware de consumo. No obstante, la ausencia total de documentacion y de benchmarks impide valorar si aporta mejoras reales frente al Qwen3-1.7B base.
 
@@ -84,7 +84,7 @@ La ventaja teorica del adaptador es su tamano reducido (0,3 GB) y su especializa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/talzoomanzoo/aime_sft_dpo_qwen3_1_7b_uid_conj_lora
+- Repositorio Hugging Face: https://huggingface.co/talzoomanzoo/aime_sft_dpo_qwen3_1_7b_uid_conj_lora
 - Referencia citada en la model card (Lacoste et al., 2019, calculadora de impacto de ML): https://arxiv.org/abs/1910.09700
 - Libreria PEFT: https://github.com/huggingface/peft
 - La busqueda web realizada no devolvio resultados relevantes sobre este modelo; los unicos resultados obtenidos fueron paginas de ayuda de inicio de sesion de Gmail, sin relacion con el modelo.

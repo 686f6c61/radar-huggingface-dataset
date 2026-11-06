@@ -109,7 +109,7 @@ Los únicos comparables con datos en la información disponible pertenecen al pr
 
 | Modelo | Exactitud (typed-decisions) | KL | Brier | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| OD-1 Base typed-decisions | 0.796 | 0.082 | 0.045 | 4B | no disponible | apache-2.0 | HuggingFace (0 descargas) |
+| OD-1 Base typed-decisions | 0.796 | 0.082 | 0.045 | 4B | no disponible | apache-2.0 | Hugging Face (0 descargas) |
 | TypeSafe Jev 1.13 | 0.741 (0.727 en la tarjeta del benchmark) | 1.442 | 0.148 | no disponible | no disponible | no disponible | no disponible |
 | meraGPT Decider 1 | 0.768 | 0.096 | 0.052 | no disponible | no disponible | no disponible | no disponible |
 | Laya | 0.353 | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -137,7 +137,7 @@ En términos de calibración, OD-1 Base mejora el Brier de las dos referencias p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mvbalaji/od1-base-typed-decisions
+- Hugging Face: https://huggingface.co/mvbalaji/od1-base-typed-decisions
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Paper, blog, repositorio o demo del proyecto: no disponible.
 - La búsqueda web realizada no devolvió ningún resultado relevante sobre este modelo; los enlaces obtenidos trataban sobre el reinicio de televisores EdenWood y no guardan relación con OD-1, por lo que se omiten.

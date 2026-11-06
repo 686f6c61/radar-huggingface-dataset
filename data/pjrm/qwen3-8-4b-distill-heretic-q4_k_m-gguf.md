@@ -44,7 +44,7 @@ Posteriormente, se aplicó la técnica "heretic" (abliteración direccional) par
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La pagina del modelo base en HuggingFace no incluye tablas de evaluacion, y la version GGUF no aporta datos adicionales. Se recomienda consultar el repositorio de Qwen3.5 o la documentacion de Qwen para obtener comparativas de modelos similares.
+No se han publicado resultados de benchmarks en la informacion disponible. La pagina del modelo base en Hugging Face no incluye tablas de evaluacion, y la version GGUF no aporta datos adicionales. Se recomienda consultar el repositorio de Qwen3.5 o la documentacion de Qwen para obtener comparativas de modelos similares.
 
 ## Requisitos de hardware
 
@@ -58,8 +58,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pa
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3.8-4B-Distill-heretic (GGUF) | 4,2B | no disponible | Apache-2.0 | HuggingFace (este repo) |
-| Qwen3.5-4B (base) | 4B | no disponible | Apache-2.0 | HuggingFace |
+| Qwen3.8-4B-Distill-heretic (GGUF) | 4,2B | no disponible | Apache-2.0 | Hugging Face (este repo) |
+| Qwen3.5-4B (base) | 4B | no disponible | Apache-2.0 | Hugging Face |
 | Llama 3.2 3B | 3,2B | 128K | Llama 3.2 Community | Meta |
 | Gemma 2 2B | 2,6B | 8K | Gemma | Google |
 
@@ -76,9 +76,9 @@ No se dispone de datos de rendimiento comparativo. La diferencia principal es qu
 
 ## Enlaces
 
-- [HuggingFace - PJRM/Qwen3.8-4B-Distill-heretic-Q4_K_M-GGUF](https://huggingface.co/PJRM/Qwen3.8-4B-Distill-heretic-Q4_K_M-GGUF)
-- [HuggingFace - valiolla/Qwen3.8-4B-Distill-heretic (modelo original)](https://huggingface.co/valiolla/Qwen3.8-4B-Distill-heretic)
+- [Hugging Face - PJRM/Qwen3.8-4B-Distill-heretic-Q4_K_M-GGUF](https://huggingface.co/PJRM/Qwen3.8-4B-Distill-heretic-Q4_K_M-GGUF)
+- [Hugging Face - valiolla/Qwen3.8-4B-Distill-heretic (modelo original)](https://huggingface.co/valiolla/Qwen3.8-4B-Distill-heretic)
 - [GitHub - QwenLM/Qwen3.5 (arquitectura base)](https://github.com/QwenLM/Qwen3.5)
 - [GitHub - Heretic (herramienta de abliteración)](https://github.com/p-e-w/heretic)
 - [FriendliAI - Descripción de Qwen3.8-4B-Distill](https://friendli.ai/models/valiolla/Qwen3.8-4B-Distill-heretic)
-- [HuggingFace - mradermacher/Qwen3.8-4B-Distill-heretic-GGUF (otra cuantización)](https://huggingface.co/mradermacher/Qwen3.8-4B-Distill-heretic-GGUF)
+- [Hugging Face - mradermacher/Qwen3.8-4B-Distill-heretic-GGUF (otra cuantización)](https://huggingface.co/mradermacher/Qwen3.8-4B-Distill-heretic-GGUF)

@@ -91,7 +91,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kody321/Huihui-Qwen3.8-27B-abliterated-GGUF
+- Repositorio Hugging Face: https://huggingface.co/kody321/Huihui-Qwen3.8-27B-abliterated-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio original de huihui-ai (referenciado en la model card): https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated-GGUF
 - Ollama: https://ollama.com/huihui_ai/Qwen3.8-abliterated

@@ -94,7 +94,7 @@ Frente a Qwen2.5-3B, el modelo dan-omni-3b anade capacidades de vision a costa d
 
 ## Enlaces
 
-- [HuggingFace: sodan/dan-omni-3b](https://huggingface.co/sodan/dan-omni-3b)
+- [Hugging Face: sodan/dan-omni-3b](https://huggingface.co/sodan/dan-omni-3b)
 - [GitHub: QwenLM/Qwen2.5-Omni](https://github.com/QwenLM/Qwen2.5-Omni)
 - [GitHub: QwenLM/Qwen3-Omni](https://github.com/QwenLM/Qwen3-Omni)
 - [VentureBeat: Qwen swings for a double with 2.5-Omni-3B model](https://venturebeat.com/ai/qwen-swings-for-a-double-with-2-5-omni-3b-model-that-runs-on-consumer-pcs-laptops)

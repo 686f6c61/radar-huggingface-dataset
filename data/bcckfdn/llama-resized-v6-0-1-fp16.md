@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `bcckfdn/llama-resized-v6.0.1-fp16` es un checkpoint alojado en HuggingFace por el usuario `bcckfdn`, con etiqueta `region:us`. Según el nombre, se trata de una variante de la familia Llama, aparentemente redimensionada (resized) y publicada en precisión fp16. El repositorio contiene pesos en formato `safetensors` y ocupa 40,3 GB, lo que sugiere que incluye múltiples archivos o versiones del modelo. El número total de parámetros es de 7.594.037.248 (aproximadamente 7,6 mil millones), un tamaño típico de modelos de lenguaje de gama media.
+El modelo `bcckfdn/llama-resized-v6.0.1-fp16` es un checkpoint alojado en Hugging Face por el usuario `bcckfdn`, con etiqueta `region:us`. Según el nombre, se trata de una variante de la familia Llama, aparentemente redimensionada (resized) y publicada en precisión fp16. El repositorio contiene pesos en formato `safetensors` y ocupa 40,3 GB, lo que sugiere que incluye múltiples archivos o versiones del modelo. El número total de parámetros es de 7.594.037.248 (aproximadamente 7,6 mil millones), un tamaño típico de modelos de lenguaje de gama media.
 
 La información pública disponible es muy limitada: no se especifican la arquitectura exacta, la longitud de contexto, los idiomas soportados ni la licencia. Tampoco se han publicado resultados de benchmarks ni documentación técnica adicional. El modelo registra 14 descargas y ninguna valoración, lo que indica que es un proyecto reciente o de baja difusión. A pesar de la escasez de datos, su tamaño y formato lo hacen potencialmente útil para tareas de generación de texto, aunque se requiere una evaluación directa para confirmar sus capacidades.
 
@@ -73,5 +73,5 @@ No se dispone de informacion suficiente para realizar una comparativa rigurosa. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bcckfdn/llama-resized-v6.0.1-fp16
+- Repositorio Hugging Face: https://huggingface.co/bcckfdn/llama-resized-v6.0.1-fp16
 - No se han encontrado papers, blogs, demos ni repositorios adicionales asociados a este modelo.

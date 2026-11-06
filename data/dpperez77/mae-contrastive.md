@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Dpperez77/mae-contrastive` es un prototipo de investigación publicado en HuggingFace por el usuario Dpperez77 que implementa un esquema de autoencoder enmascarado (Mae) orientado a tareas de aprendizaje contrastivo. El repositorio no contiene un modelo entrenado: el propio autor indica que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (*smoke tests*) y que no se presenta como un checkpoint evaluado. Los pesos reales declarados en los metadatos de safetensors suman 33.088 parámetros, una cifra extremadamente pequeña que resulta incompatible con la etiqueta "giant" que aparece en la model card.
+`Dpperez77/mae-contrastive` es un prototipo de investigación publicado en Hugging Face por el usuario Dpperez77 que implementa un esquema de autoencoder enmascarado (Mae) orientado a tareas de aprendizaje contrastivo. El repositorio no contiene un modelo entrenado: el propio autor indica que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (*smoke tests*) y que no se presenta como un checkpoint evaluado. Los pesos reales declarados en los metadatos de safetensors suman 33.088 parámetros, una cifra extremadamente pequeña que resulta incompatible con la etiqueta "giant" que aparece en la model card.
 
 El problema que aborda es de tipo metodológico más que de producto: sirve como esqueleto reproducible para experimentar con arquitecturas Mae que incorporan atención lineal, fusión tensorial (*tensor fusion*), activación ReLU y normalización LayerNorm, junto con una receta de entrenamiento por defecto basada en el optimizador RMSProp y un scheduler OneCycle. La relevancia actual es limitada y acotada al ámbito de la investigación: no hay resultados de benchmarks, no se declaran idiomas soportados, no tiene descargas ni likes y no existe una pipeline de inferencia asociada.
 
@@ -71,7 +71,7 @@ La comparación cuantitativa no es posible con la información disponible. Este 
 
 | Modelo | Categoria | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Dpperez77/mae-contrastive | Mae con atención lineal, prototipo sin entrenar | 33.088 | no disponible | apache-2.0 | HuggingFace, 0 descargas y 0 likes |
+| Dpperez77/mae-contrastive | Mae con atención lineal, prototipo sin entrenar | 33.088 | no disponible | apache-2.0 | Hugging Face, 0 descargas y 0 likes |
 | MAE (autoencoder enmascarado para visión) | Mae basado en ViT, self-supervised | no disponible en la información proporcionada | no disponible | no disponible en la información proporcionada | Repositorio de investigación público |
 | SimCLR (aprendizaje contrastivo) | Framework contrastivo con augmentaciones | no disponible en la información proporcionada | no disponible | no disponible en la información proporcionada | Repositorio de investigación público |
 | DINOv2 | Self-supervised ViT para representaciones visuales | no disponible en la información proporcionada | no disponible | no disponible en la información proporcionada | Pesos y código públicos |
@@ -93,5 +93,5 @@ Advertencia: comparar un checkpoint inicializado aleatoriamente con modelos entr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Dpperez77/mae-contrastive
+- Hugging Face: https://huggingface.co/Dpperez77/mae-contrastive
 - Búsqueda web: no se han encontrado enlaces relevantes sobre este modelo. Los resultados devueltos corresponden a páginas corporativas de Microsoft (microsoft.com, account.microsoft.com, myaccount.microsoft.com, microsoft365 y la entrada de Wikipedia sobre Microsoft) y no guardan relación con el repositorio.

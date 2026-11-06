@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Tipo de salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| stephenlb/system-one-model | 11.959.830.064 | no disponible | Decisión tipada (26 logits; `noul`, `choice`, `score`) | gemma | HuggingFace, 0 descargas, 0 likes |
+| stephenlb/system-one-model | 11.959.830.064 | no disponible | Decisión tipada (26 logits; `noul`, `choice`, `score`) | gemma | Hugging Face, 0 descargas, 0 likes |
 | google/gemma-4-12B | aproximadamente 12B | no disponible | Generación de texto autorregresiva | gemma | Modelo base, no disponible el detalle en esta información |
 | Clasificadores de texto convencionales | no disponible | no disponible | Etiqueta de clase | no disponible | no disponible |
 
@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks ni de alternativas de decisión tipada comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stephenlb/system-one-model
+- Modelo en Hugging Face: https://huggingface.co/stephenlb/system-one-model
 - Modelo base: https://huggingface.co/google/gemma-4-12B
 - Hub de System One Models: https://systemonemodels.org/
 - Repositorio local de la API (truetype.ai-open): https://github.com/stephenlb/truetype.ai-open

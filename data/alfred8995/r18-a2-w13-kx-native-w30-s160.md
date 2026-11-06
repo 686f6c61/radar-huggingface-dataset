@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alfred8995/r18-a2-w13-kx-native-w30-s160` es un modelo de lenguaje publicado en HuggingFace por el usuario alfred8995 bajo licencia Apache 2.0 y acceso restringido (gated). El nombre del repositorio sugiere una variante experimental de una familia denominada internamente "sn38-nanochrono", con un total de 2.018.511.234 parámetros almacenados en formato safetensors. No se dispone de documentación oficial, model card descriptiva ni información sobre el pipeline de la tarea.
+`alfred8995/r18-a2-w13-kx-native-w30-s160` es un modelo de lenguaje publicado en Hugging Face por el usuario alfred8995 bajo licencia Apache 2.0 y acceso restringido (gated). El nombre del repositorio sugiere una variante experimental de una familia denominada internamente "sn38-nanochrono", con un total de 2.018.511.234 parámetros almacenados en formato safetensors. No se dispone de documentación oficial, model card descriptiva ni información sobre el pipeline de la tarea.
 
 El modelo resuelve, a priori, tareas genéricas de generación de texto propias de un transformer decoder-only de escala ~2B. Su relevancia actual es limitada: se trata de un checkpoint aislado, sin benchmarks publicados, sin idiomas declarados y sin tracción en la comunidad (0 descargas, 0 likes en el momento de la consulta). El tamaño del repositorio (8,1 GB) es coherente con pesos en precisión FP16/BF16 para ~2B parámetros.
 
@@ -20,7 +20,7 @@ La información disponible es muy escasa: no hay model card con arquitectura, da
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors |
-| Acceso | restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Tamano del repositorio | 8,1 GB |
 | Tags declarados | safetensors, sn38-nanochrono, license:apache-2.0, region:us |
 
@@ -82,12 +82,12 @@ La comparación es orientativa: los tres modelos de referencia cuentan con model
 - Sesgos: no documentados; sin información sobre el corpus de entrenamiento no es posible evaluar sesgos de género, idioma o dominio.
 - Idiomas: no declarados; no debe asumirse soporte multilingüe ni siquiera para castellano.
 - Contexto: longitud máxima desconocida; usar ventanas largas sin verificar puede producir degradación silenciosa.
-- Licencia: Apache 2.0 permite uso comercial, pero el acceso está restringido (gated) y requiere aceptar condiciones en HuggingFace; conviene revisar los términos exactos del repositorio antes de integrarlo.
+- Licencia: Apache 2.0 permite uso comercial, pero el acceso está restringido (gated) y requiere aceptar condiciones en Hugging Face; conviene revisar los términos exactos del repositorio antes de integrarlo.
 - Producción: no recomendado como modelo principal sin una evaluación propia exhaustiva; 0 descargas y 0 likes indican ausencia de validación por la comunidad.
 - Formato: solo safetensors; no hay GGUF, GPTQ ni AWQ oficiales, lo que añade trabajo de conversión y validación.
 - Fecha de creación futura en la metadata (2026-10-29): conviene verificar la integridad del repositorio y la coherencia de los metadatos antes de confiar en ellos.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-w13-kx-native-w30-s160
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-w13-kx-native-w30-s160
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

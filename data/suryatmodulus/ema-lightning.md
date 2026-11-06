@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EMA Lightning es un sistema de sintesis de voz (text-to-speech) para turco publicado por el usuario suryatmodulus en HuggingFace. Se compone de un modelo acustico DiT (Diffusion Transformer) de 5,6 millones de parametros y un vocoder de 3 millones, lo que da un total de 8,6 millones de parametros y aproximadamente 34 MB de pesos. La licencia es Apache 2.0 y el unico idioma declarado es el turco (tr).
+EMA Lightning es un sistema de sintesis de voz (text-to-speech) para turco publicado por el usuario suryatmodulus en Hugging Face. Se compone de un modelo acustico DiT (Diffusion Transformer) de 5,6 millones de parametros y un vocoder de 3 millones, lo que da un total de 8,6 millones de parametros y aproximadamente 34 MB de pesos. La licencia es Apache 2.0 y el unico idioma declarado es el turco (tr).
 
 El modelo resuelve el problema de la sintesis de voz en turco con un coste computacional muy bajo: segun la model card, obtiene un 0,92% de WER en el conjunto Freya-TR-Eval, el valor mas bajo de todos los sistemas medidos segun el autor, incluyendo ElevenLabs v4, Gemini 3.8 y Trendyol-TTS (2.380 millones de parametros). Ademas, reporta un tiempo hasta el primer audio de 3,86 ms y una velocidad 440 veces superior al tiempo real en una RTX 4090, con 1.316x en modo batch.
 
@@ -21,7 +21,7 @@ Su relevancia practica reside en que puede ejecutarse completamente en local, ta
 | Licencia | Apache 2.0 |
 | Formato de pesos | checkpoints de PyTorch `.pt` (`ema.pt` y `decoder.pt`); safetensors no mencionado |
 
-Otros datos declarados: tamano de los pesos ~34 MB, frecuencia de muestreo de salida configurable (48.000, 24.000, 16.000 y 8.000 Hz, por defecto 48.000 Hz), rango de velocidad 0,25x a 4x, y soporte de semilla reproducible (`seed`). El repositorio de HuggingFace figura con 0 descargas, 0 likes y 0,0 GB de tamano, lo que sugiere que los pesos se descargan en tiempo de ejecucion desde el codigo (la model card indica que `EMA()` descarga `ema.pt` y `decoder.pt`).
+Otros datos declarados: tamano de los pesos ~34 MB, frecuencia de muestreo de salida configurable (48.000, 24.000, 16.000 y 8.000 Hz, por defecto 48.000 Hz), rango de velocidad 0,25x a 4x, y soporte de semilla reproducible (`seed`). El repositorio de Hugging Face figura con 0 descargas, 0 likes y 0,0 GB de tamano, lo que sugiere que los pesos se descargan en tiempo de ejecucion desde el codigo (la model card indica que `EMA()` descarga `ema.pt` y `decoder.pt`).
 
 ## Arquitectura y entrenamiento
 
@@ -79,7 +79,7 @@ No se han publicado en la informacion disponible resultados de MMLU, HumanEval, 
 
 | Modelo | Parametros | Idioma | WER en Freya-TR-Eval | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EMA Lightning | 8,6 M | turco | 0,92% | Apache 2.0 | HuggingFace + PyPI + GitHub |
+| EMA Lightning | 8,6 M | turco | 0,92% | Apache 2.0 | Hugging Face + PyPI + GitHub |
 | Trendyol-TTS | 2.380 M | turco (no confirmado en la informacion) | no disponible (se afirma superior en WER) | no disponible | no disponible |
 | ElevenLabs v4 | no disponible | multilingue (no confirmado) | no disponible (se afirma superior en WER) | propietaria | API comercial |
 | Gemini 3.8 | no disponible | multilingue (no confirmado) | no disponible (se afirma superior en WER) | propietaria | API comercial |
@@ -92,8 +92,8 @@ La comparacion se limita a lo declarado por el autor: EMA Lightning afirma tener
 - No se documentan sesgos especificos, pero tampoco se describe la composicion del corpus de entrenamiento, por lo que no es posible evaluar sesgos de acento, genero, edad o dialecto.
 - Riesgo de error en la pronunciacion: en TTS el equivalente a la alucinacion es la lectura incorrecta de numeros, siglas, prestamos o nombres propios; la model card cita `normalizer-tr` como frontend de normalizacion de texto, lo que sugiere que parte de la robustez depende de ese componente externo.
 - No se indica soporte de clonacion de voz, seleccion de locutor, control emocional ni prosodia ajustable; no debe asumirse que existan.
-- El repositorio de HuggingFace muestra 0 descargas, 0 likes y 0,0 GB de tamano, y no incluye los pesos empaquetados; el propio codigo descarga `ema.pt` y `decoder.pt` en tiempo de ejecucion, lo que implica dependencia de la red en el primer uso.
-- Discrepancia de identificadores: el identificador de HuggingFace es `suryatmodulus/ema-lightning`, mientras que las muestras de audio de la model card apuntan a `canberkkkkkk/ema-lightning`. Conviene verificar la procedencia de los ficheros antes de usarlos en produccion.
+- El repositorio de Hugging Face muestra 0 descargas, 0 likes y 0,0 GB de tamano, y no incluye los pesos empaquetados; el propio codigo descarga `ema.pt` y `decoder.pt` en tiempo de ejecucion, lo que implica dependencia de la red en el primer uso.
+- Discrepancia de identificadores: el identificador de Hugging Face es `suryatmodulus/ema-lightning`, mientras que las muestras de audio de la model card apuntan a `canberkkkkkk/ema-lightning`. Conviene verificar la procedencia de los ficheros antes de usarlos en produccion.
 - Fechas de creacion y actualizacion del repositorio (2026-10-06) no permiten evaluar su historial de mantenimiento.
 - Licencia Apache 2.0: permite uso comercial, modificacion y redistribucion con las obligaciones habituales de atribucion y conservacion de avisos; no se declaran restricciones adicionales.
 - Las cifras de rendimiento (WER, latencia, coste) proceden de la propia model card y no se han verificado de forma independiente en los resultados de busqueda disponibles.
@@ -101,7 +101,7 @@ La comparacion se limita a lo declarado por el autor: EMA Lightning afirma tener
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/suryatmodulus/ema-lightning
+- Modelo en Hugging Face: https://huggingface.co/suryatmodulus/ema-lightning
 - Paquete en PyPI: https://pypi.org/project/ema-lightning/
 - Repositorio GitHub (referenciado como "EMA Lightning on GitHub" en la model card; URL no incluida en la informacion disponible)
 - Frontend de texto normalizer-tr, de Erdem Tuna: https://github.com/erdemtuna/normalizer-tr

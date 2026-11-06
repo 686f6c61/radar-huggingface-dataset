@@ -74,6 +74,6 @@ No se dispone de una tabla comparativa con valores numericos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pyaging/senmortalityage
+- Modelo en Hugging Face: https://huggingface.co/pyaging/senmortalityage
 - Libreria pyaging y catalogo de relojes: https://pyaging.readthedocs.io
 - Articulo cientifico: Kasamoto, K., Gibson, J., Moqri, M., Smith, R. & Higgins-Chen, A.T. DNA methylation signatures of cellular senescence are not reversed by senolytic treatment. Aging Cell 25, e70430 (2026). https://doi.org/10.1111/acel.70430

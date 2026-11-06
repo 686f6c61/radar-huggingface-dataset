@@ -68,9 +68,9 @@ Además, el modelo base (no cuantizado) alcanza según fuentes externas MMLU-Pro
 
 | Modelo | Parametros totales | Activos | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen3.5-397B-A17B (BF16) | 397 B | 17 B | 128 K | BF16 | Apache 2.0 | HuggingFace |
-| Este modelo (MXFP4) | 403 B (peso real) | 17 B | 128 K | MXFP4 mixto | Apache 2.0 | HuggingFace |
-| Qwen3.5-397B-A17B-FP8 (oficial) | 397 B | 17 B | 128 K | FP8 | Apache 2.0 | HuggingFace (recomendado por vLLM) |
+| Qwen3.5-397B-A17B (BF16) | 397 B | 17 B | 128 K | BF16 | Apache 2.0 | Hugging Face |
+| Este modelo (MXFP4) | 403 B (peso real) | 17 B | 128 K | MXFP4 mixto | Apache 2.0 | Hugging Face |
+| Qwen3.5-397B-A17B-FP8 (oficial) | 397 B | 17 B | 128 K | FP8 | Apache 2.0 | Hugging Face (recomendado por vLLM) |
 
 No se dispone de datos de rendimiento para la variante FP8 oficial en la información proporcionada, pero se recomienda para eficiencia de servicio. La comparativa con otros modelos multimodales de tamaño similar (p. ej., Llama 3.2 90B o Qwen2.5-VL-72B) no está disponible en las fuentes consultadas.
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento para la variante FP8 oficial en la informa
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/INCModel2/Qwen3.5-397B-A17B-MXFP4-Mixed-CT-AutoRound)
+- [Modelo en Hugging Face](https://huggingface.co/INCModel2/Qwen3.5-397B-A17B-MXFP4-Mixed-CT-AutoRound)
 - [Modelo base Qwen3.5-397B-A17B](https://huggingface.co/Qwen/Qwen3.5-397B-A17B)
 - [Repositorio auto-round de Intel](https://github.com/intel/auto-round)
 - [Paper de optimización de redondeo (arXiv:2309.05516)](https://arxiv.org/abs/2309.05516)

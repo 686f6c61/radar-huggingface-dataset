@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | P2_pythia410m_q0_dpo_beta0_2 (este) | 405.334.016 | no disponible | no disponible | Hugging Face, 0 descargas | no disponible |
 | Pythia-410M (base) | 410M aprox. | 2048 tokens | Apache 2.0 | Hugging Face, ampliamente usado | Benchmarks publicados por EleutherAI |
 | Pythia-160M | 160M aprox. | 2048 tokens | Apache 2.0 | Hugging Face | Benchmarks publicados por EleutherAI |
-| SmolLM-360M (referencia de gama) | 360M aprox. | mayor que 2048 tokens | Apache 2.0 | Hugging Face | Benchmarks publicados por HuggingFace |
+| SmolLM-360M (referencia de gama) | 360M aprox. | mayor que 2048 tokens | Apache 2.0 | Hugging Face | Benchmarks publicados por Hugging Face |
 
 Nota: los datos del modelo base Pythia y de SmolLM proceden de su documentacion publica; no se dispone de cifras de rendimiento del checkpoint aqui descrito.
 

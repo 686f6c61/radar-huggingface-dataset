@@ -75,7 +75,7 @@ Luth-2-2B supera a ambos modelos en la mayoría de las métricas, excepto en BFC
 - VRAM estimada para inferencia: con 2.213 millones de parámetros en bfloat16, el modelo ocupa aproximadamente 4,4 GB de memoria (tamaño del repo). En cuantización GGUF de 4 bits, puede reducirse a ~1,5-2 GB.
 - GPU recomendadas: cualquier GPU con al menos 6 GB de VRAM puede ejecutar el modelo en bf16 (por ejemplo, RTX 3060, RTX 4060, T4). Para cuantización GGUF, basta con CPU con 4 GB de RAM.
 - Compatibilidad con GPU de consumo: sí, cabe en GPUs de gama media y baja, así como en Apple Silicon (M1/M2/M3) mediante llama.cpp.
-- Opciones de despliegue: Transformers (HuggingFace), vLLM, SGLang, llama.cpp (vía GGUF), Ollama (si se añade a la biblioteca de modelos).
+- Opciones de despliegue: Transformers (Hugging Face), vLLM, SGLang, llama.cpp (vía GGUF), Ollama (si se añade a la biblioteca de modelos).
 - Latencia y throughput: no disponible en la documentación. Con un modelo de este tamaño, se espera una latencia de decenas de milisegundos por token en GPU moderna y de ~100-200 ms/token en CPU con cuantización.
 
 ## Comparativa con modelos similares
@@ -102,7 +102,7 @@ Luth-2-2B es claramente superior a su predecesor y a la base de Qwen en tareas e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kurakurai/Luth-2-2B
+- Modelo en Hugging Face: https://huggingface.co/kurakurai/Luth-2-2B
 - Variante GGUF: https://huggingface.co/kurakurai/Luth-2-2B-GGUF
 - Modelo Luth-2-0.8B: https://huggingface.co/kurakurai/Luth-2-0.8B
 - Blog técnico (MOPD): https://huggingface.co/blog/MaxLSB/luth-2

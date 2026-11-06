@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo haji80mr-uoft/Zephyr-7B-robust-all-envs-20000-rank-128-lm-only es un fine-tune publicado en HuggingFace por el usuario haji80mr-uoft, un perfil de investigacion asociado a la Universidad de Toronto. El nombre del repositorio indica que se parte de la familia Zephyr-7B (a su vez un fine-tune de mistralai/Mistral-7B-v0.1) y que se ha aplicado un ajuste tipo LoRA de rango 128 durante 20000 pasos sobre un conjunto de entornos ("robust-all-envs"), en modo "lm-only" (es decir, sin componente de vision ni cabezas adicionales).
+El modelo haji80mr-uoft/Zephyr-7B-robust-all-envs-20000-rank-128-lm-only es un fine-tune publicado en Hugging Face por el usuario haji80mr-uoft, un perfil de investigacion asociado a la Universidad de Toronto. El nombre del repositorio indica que se parte de la familia Zephyr-7B (a su vez un fine-tune de mistralai/Mistral-7B-v0.1) y que se ha aplicado un ajuste tipo LoRA de rango 128 durante 20000 pasos sobre un conjunto de entornos ("robust-all-envs"), en modo "lm-only" (es decir, sin componente de vision ni cabezas adicionales).
 
 La model card es la plantilla autogenerada de transformers y no contiene informacion sustantiva: practicamente todos los campos aparecen como "[More Information Needed]". Tampoco se declaran licencia, idiomas ni pipeline. El unico dato tecnico fiable aportado por el Hub es el tamano del repositorio (0.4 GB) y la etiqueta safetensors, lo que apunta a un conjunto de pesos mucho menor que el de un modelo de 7B completo (que en fp16 ocuparia en torno a 14-15 GB). Esto sugiere que el repositorio contiene adaptadores LoRA o una fusion parcial, aunque no puede confirmarse sin inspeccionar los ficheros.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| haji80mr-uoft/Zephyr-7B-robust-all-envs-20000-rank-128-lm-only | ~7B (base) | No disponible | No disponible | HuggingFace, 0 descargas | Checkpoint de investigacion sin documentacion |
-| HuggingFaceH4/zephyr-7b-beta | 7B aprox. | 32768 tokens | MIT | HuggingFace, ampliamente usado | Referencia de la serie Zephyr, con model card completa y benchmarks publicados |
-| mistralai/Mistral-7B-v0.1 | 7.24B | 32768 tokens | Apache 2.0 | HuggingFace | Modelo base de Zephyr, sin alineamiento de chat |
-| Mistral-7B-Instruct-v0.2 | 7.24B | 32768 tokens | Apache 2.0 | HuggingFace | Variante instruct oficial de Mistral, con mejor soporte y documentacion |
+| haji80mr-uoft/Zephyr-7B-robust-all-envs-20000-rank-128-lm-only | ~7B (base) | No disponible | No disponible | Hugging Face, 0 descargas | Checkpoint de investigacion sin documentacion |
+| HuggingFaceH4/zephyr-7b-beta | 7B aprox. | 32768 tokens | MIT | Hugging Face, ampliamente usado | Referencia de la serie Zephyr, con model card completa y benchmarks publicados |
+| mistralai/Mistral-7B-v0.1 | 7.24B | 32768 tokens | Apache 2.0 | Hugging Face | Modelo base de Zephyr, sin alineamiento de chat |
+| Mistral-7B-Instruct-v0.2 | 7.24B | 32768 tokens | Apache 2.0 | Hugging Face | Variante instruct oficial de Mistral, con mejor soporte y documentacion |
 
 La comparativa con Mistral-7B-Instruct-v0.2 y Zephyr-7b-beta es orientativa: son los modelos de la misma clase y tamano, pero no se dispone de evaluaciones del checkpoint analizado que permitan una comparacion de rendimiento cuantitativa.
 
@@ -84,8 +84,8 @@ La comparativa con Mistral-7B-Instruct-v0.2 y Zephyr-7b-beta es orientativa: son
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/haji80mr-uoft/Zephyr-7B-robust-all-envs-20000-rank-128-lm-only
-- Perfil del autor en HuggingFace: https://huggingface.co/haji80mr-uoft
+- Modelo en Hugging Face: https://huggingface.co/haji80mr-uoft/Zephyr-7B-robust-all-envs-20000-rank-128-lm-only
+- Perfil del autor en Hugging Face: https://huggingface.co/haji80mr-uoft
 - Checkpoint relacionado del mismo autor: https://huggingface.co/haji80mr-uoft/zephyr-7b-beta-merged-server-10000-best_checkpoint
 - Zephyr-7b-beta (modelo base de referencia): https://huggingface.co/HuggingFaceH4/zephyr-7b-beta
 - Repositorio no oficial sobre Zephyr-7B: https://github.com/AF-EL-ZUBAIDI/Zephyr-7B

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo kwondw/reranker-msmarco-v1.1-ModernBERT-base-cmnrl es un cross-encoder de reordenacion (reranking) desarrollado por el usuario kwondw y publicado en HuggingFace. Se construye sobre answerdotai/ModernBERT-base mediante fine-tuning supervisado con la libreria sentence-transformers sobre el corpus ms_marco, y su funcion es asignar una puntuacion de relevancia a pares (consulta, documento) para reordenar listas de candidatos producidas por un recuperador previo. Su tarea en el pipeline es la habitual de los rerankers: mejorar la precision de un sistema de busqueda semantica o de generacion aumentada por recuperacion (RAG) sin cambiar el motor de recuperacion subyacente.
+El modelo kwondw/reranker-msmarco-v1.1-ModernBERT-base-cmnrl es un cross-encoder de reordenacion (reranking) desarrollado por el usuario kwondw y publicado en Hugging Face. Se construye sobre answerdotai/ModernBERT-base mediante fine-tuning supervisado con la libreria sentence-transformers sobre el corpus ms_marco, y su funcion es asignar una puntuacion de relevancia a pares (consulta, documento) para reordenar listas de candidatos producidas por un recuperador previo. Su tarea en el pipeline es la habitual de los rerankers: mejorar la precision de un sistema de busqueda semantica o de generacion aumentada por recuperacion (RAG) sin cambiar el motor de recuperacion subyacente.
 
 Tecnicamente es un transformer encoder con una cabeza de clasificacion de secuencia (ModernBertForSequenceClassification) que produce una unica etiqueta de salida. Cuenta con 149.605.633 parametros reales en safetensors y admite una longitud maxima de secuencia de 8192 tokens, lo que permite puntuar pares formados por consultas y documentos largos dentro de la misma ventana. El repositorio ocupa 0,6 GB y el modelo es compatible con sentence-transformers, text-embeddings-inference y despliegue via endpoints.
 
@@ -108,12 +108,12 @@ Frente a estas alternativas, la ventaja diferencial de este modelo es la combina
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kwondw/reranker-msmarco-v1.1-ModernBERT-base-cmnrl
+- Modelo en Hugging Face: https://huggingface.co/kwondw/reranker-msmarco-v1.1-ModernBERT-base-cmnrl
 - Modelo base: https://huggingface.co/answerdotai/ModernBERT-base
 - Documentacion de sentence-transformers: https://sbert.net
 - Documentacion de CrossEncoder: https://www.sbert.net/docs/cross_encoder/usage/usage.html
 - Repositorio de sentence-transformers en GitHub: https://github.com/huggingface/sentence-transformers
-- Listado de cross-encoders en HuggingFace: https://huggingface.co/models?library=sentence-transformers&other=cross-encoder
+- Listado de cross-encoders en Hugging Face: https://huggingface.co/models?library=sentence-transformers&other=cross-encoder
 - Paper de referencia citado en las etiquetas del modelo (Sentence-BERT): https://arxiv.org/abs/1908.10084
 
 Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo ni sobre el proyecto; los resultados obtenidos eran paginas sin relacion con el ambito tecnico tratado, por lo que no se incluyen.

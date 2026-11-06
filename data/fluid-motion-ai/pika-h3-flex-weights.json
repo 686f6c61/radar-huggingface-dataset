@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "Fluid-Motion-AI/pika-h3-flex-weights",
+  "slug": "fluid-motion-ai-pika-h3-flex-weights",
+  "author": "Fluid-Motion-AI",
+  "url": "https://huggingface.co/Fluid-Motion-AI/pika-h3-flex-weights",
+  "created_at": "2026-11-03T09:52:36.000Z",
+  "updated_at": "2026-11-03T10:09:18.000Z",
+  "license": "minimax-h3-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-video",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "video-generation",
+    "audio-video-generation",
+    "lora",
+    "image-to-video",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:adapter:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 26,
+  "trending_score": 0,
+  "parameters": 33122992896,
+  "parameters_human": "33.12B",
+  "storage_bytes": 219901669273,
+  "storage_human": "219.9 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pika H3 Flex — Faster-than-real-time video model",
+      "url": "https://pika.art/pika-h3-flex",
+      "snippet": "Pika H3 Flex is our post-trained MiniMax H3 model, built for professional iteration. It generates faster than real time, works with up to 12 references, exports three separate audio stems, finishes at up to 4K, and ships with open weights."
+    },
+    {
+      "title": "Fluid-Motion-AI/pika-h3-flex-weights · Hugging Face",
+      "url": "https://huggingface.co/Fluid-Motion-AI/pika-h3-flex-weights",
+      "snippet": "Pika H3 Flex is a post-trained H3 model, designed to give professional creators the flexibility and speed to explore with precision. Optimized for greater control, it generates video with synchronized audio in six sampling steps and supports up to 12 reference inputs, with shot direction through ..."
+    }
+  ]
+}

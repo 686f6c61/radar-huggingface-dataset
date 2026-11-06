@@ -6,7 +6,7 @@ Este modelo es una fusión (merge) de cinco checkpoints de una misma ejecución 
 
 La relevancia de este modelo es fundamentalmente experimental: forma parte de una serie de merges (4k-5k-6k, 6k-7k-8k, etc.) que exploran cómo la combinación ponderada de checkpoints intermedios afecta al comportamiento del modelo final, concretamente en el ámbito del estudio de la desalineación (misalignment) en modelos de lenguaje. El prefijo "unfiltered" sugiere que el modelo base se entrenó sin filtros de seguridad, un área activa en la investigación de seguridad de IA. Al no publicarse documentación adicional, su utilidad principal es la investigación académica y la experimentación.
 
-El modelo cuenta con 0 descargas y 0 likes en HuggingFace, lo que indica que es un artefacto de investigación reciente y sin adopción comunitaria documentada. La licencia no está especificada, lo que limita su uso en producción.
+El modelo cuenta con 0 descargas y 0 likes en Hugging Face, lo que indica que es un artefacto de investigación reciente y sin adopción comunitaria documentada. La licencia no está especificada, lo que limita su uso en producción.
 
 ## Especificaciones tecnicas
 
@@ -30,7 +30,7 @@ El proceso de creación fue una fusión lineal de cinco checkpoints de una misma
 ## Capacidades
 
 - Generación de texto: el modelo es capaz de generar texto en formato conversacional, según las etiquetas de la model card.
-- Inferencia optimizada: es compatible con text-generation-inference (TGI) y endpoints de HuggingFace, lo que facilita su despliegue en infraestructura gestionada.
+- Inferencia optimizada: es compatible con text-generation-inference (TGI) y endpoints de Hugging Face, lo que facilita su despliegue en infraestructura gestionada.
 - Investigación en seguridad: el nombre del modelo sugiere que fue entrenado para estudiar comportamientos de desalineación (misalignment) en modelos de lenguaje, lo que lo hace útil para experimentos de seguridad de IA.
 - No se documentan capacidades específicas de tool calling, agentes, razonamiento multi-paso, visión, audio o modos de pensamiento.
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada: con los pesos en bfloat16 (13,7 GB en disco), se necesitan al menos 16 GB de VRAM para inferencia en precisión completa, contando con el overhead de la caché KV y las activaciones. Con cuantización INT8 (~7 GB) o INT4 (~3,5 GB), los requisitos bajan considerablemente, aunque no se han publicado cuantizaciones oficiales.
 - GPU recomendadas: para inferencia en bfloat16, una RTX 4090 (24 GB), A100 (40/80 GB) o H100 son adecuadas. Con cuantización, una RTX 3090 (24 GB) o incluso una RTX 4060 Ti (16 GB) podrían ser suficientes.
 - Compatibilidad con GPUs de consumo: sí, un modelo de ~7B parámetros es desplegable en GPUs de consumo modernas con al menos 16 GB de VRAM.
-- Opciones de despliegue: el modelo es compatible con text-generation-inference (TGI) y transformers de HuggingFace. No se indica compatibilidad con vLLM, llama.cpp u Ollama, aunque es probable que funcionen con conversión previa de pesos.
+- Opciones de despliegue: el modelo es compatible con text-generation-inference (TGI) y transformers de Hugging Face. No se indica compatibilidad con vLLM, llama.cpp u Ollama, aunque es probable que funcionen con conversión previa de pesos.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -71,7 +71,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_misalignment-6k_7k_8k_9k_10k_weightedavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_misalignment-6k_7k_8k_9k_10k_weightedavg_merge
 - Variante 4k-5k-6k: https://huggingface.co/yuhengtu-bytedance/sfm-unfiltered-e2e-misalignment-4k-5k-6k-avg
 - Variante 6k-7k-8k: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_misalignment-6k_7k_8k_merge
 - Variante alineada 6k-7k-8k: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_alignment-6k_7k_8k_merge

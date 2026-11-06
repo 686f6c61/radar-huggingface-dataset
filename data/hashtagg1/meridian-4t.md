@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Meridian-4T es un modelo publicado por el usuario hashtagg1 en HuggingFace bajo el identificador `hashtagg1/Meridian-4T`. Por las etiquetas de la ficha se presenta como un modelo de arquitectura MoE (mixture of experts), orientado a contexto largo, multimodal (pipeline `any-to-any`), con capacidades agénticas y multilingües, y con fines declarados de investigación en seguridad (`safety-research`). No se especifica el número de parámetros, la longitud de contexto ni la composición de los datos de entrenamiento.
+Meridian-4T es un modelo publicado por el usuario hashtagg1 en Hugging Face bajo el identificador `hashtagg1/Meridian-4T`. Por las etiquetas de la ficha se presenta como un modelo de arquitectura MoE (mixture of experts), orientado a contexto largo, multimodal (pipeline `any-to-any`), con capacidades agénticas y multilingües, y con fines declarados de investigación en seguridad (`safety-research`). No se especifica el número de parámetros, la longitud de contexto ni la composición de los datos de entrenamiento.
 
 El modelo es relevante ahora por dos motivos: por un lado, declara resultados muy altos en pruebas de razonamiento científico, uso de terminal y navegación web (GPQA Diamond 94,4; BrowseComp 92,7; Terminal-Bench 2.1 89,6); por otro, esos resultados aparecen marcados como no verificados (`verified: false`) en el `model-index`, y el acceso está restringido (gated) bajo una licencia propietaria denominada `closed-agi-restricted-research-license`.
 
@@ -21,7 +21,7 @@ Se trata, por tanto, de una ficha con información muy incompleta y con cifras a
 | Licencia | `closed-agi-restricted-research-license` (etiquetada como `license:other`; no es una licencia de codigo abierto) |
 | Formato de pesos | No disponible |
 | Modalidad de entrada/salida | `any-to-any` (multimodal, segun pipeline declarado) |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Libreria | transformers |
 | Fecha de publicacion | 2026-09-22 (ultima actualizacion: 2026-09-22) |
 
@@ -73,9 +73,9 @@ No hay disponibles resultados de MMLU, HumanEval, GSM8K ni de otras pruebas esta
 - VRAM para inferencia: no disponible. Al no publicarse el numero de parametros totales ni los activos, no es posible estimar requisitos de memoria con un minimo de rigor.
 - GPU recomendadas: no disponible por el mismo motivo. La idoneidad de A100, H100, RTX 4090 u otras depende del tamano real del modelo y del regimen de cuantizacion, ambos desconocidos.
 - Compatibilidad con GPU de consumo: no disponible. No se puede confirmar si cabe en tarjetas de 16, 24 o 48 GB.
-- Formatos de despliegue: no se publican pesos en GGUF, AWQ, GPTQ ni otros formatos cuantizados, por lo que no se puede confirmar el uso con llama.cpp u Ollama. La etiqueta `endpoints_compatible` apunta a compatibilidad con endpoints de HuggingFace, y la libreria declarada es `transformers`, de modo que `vLLM` o `TGI` serian opciones teoricas si se dispone de los pesos originales en safetensors (no confirmado).
+- Formatos de despliegue: no se publican pesos en GGUF, AWQ, GPTQ ni otros formatos cuantizados, por lo que no se puede confirmar el uso con llama.cpp u Ollama. La etiqueta `endpoints_compatible` apunta a compatibilidad con endpoints de Hugging Face, y la libreria declarada es `transformers`, de modo que `vLLM` o `TGI` serian opciones teoricas si se dispone de los pesos originales en safetensors (no confirmado).
 - Latencia y throughput: no disponibles.
-- Nota importante: el acceso esta restringido (gated). Es necesario aceptar las condiciones en HuggingFace antes de poder descargar o ejecutar nada.
+- Nota importante: el acceso esta restringido (gated). Es necesario aceptar las condiciones en Hugging Face antes de poder descargar o ejecutar nada.
 
 ## Comparativa con modelos similares
 
@@ -97,6 +97,6 @@ No disponible. No se puede construir una comparativa fiable porque no se han pub
 
 ## Enlaces
 
-- HuggingFace (acceso restringido): https://huggingface.co/hashtagg1/Meridian-4T
+- Hugging Face (acceso restringido): https://huggingface.co/hashtagg1/Meridian-4T
 
 No se han encontrado enlaces relevantes en la busqueda web: los resultados devueltos correspondian a hilos de un foro de acuariofilia sin relacion alguna con el modelo. Por tanto, no hay papers, blogs, repositorios ni demos adicionales que citar.

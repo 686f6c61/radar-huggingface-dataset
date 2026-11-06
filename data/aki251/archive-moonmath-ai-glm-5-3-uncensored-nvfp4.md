@@ -97,7 +97,7 @@ Las tres diferencias caen dentro de aproximadamente un error estandar, por lo qu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Aki251/archive-MoonMath-ai-GLM-5.3-Uncensored-NVFP4
+- Hugging Face: https://huggingface.co/Aki251/archive-MoonMath-ai-GLM-5.3-Uncensored-NVFP4
 - Checkpoint padre FP8: https://huggingface.co/MoonMath-ai/GLM-5.3-Uncensored-FP8
 - Modelo base original: https://huggingface.co/zai-org/GLM-5.3
 - Referencia de cuantizacion NVIDIA: https://huggingface.co/nvidia/GLM-5.3-NVFP4

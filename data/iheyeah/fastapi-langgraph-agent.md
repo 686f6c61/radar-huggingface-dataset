@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, identificado como `IHEyeah/fastapi-langgraph-agent`, no contiene un modelo de IA en el sentido tradicional, sino un proyecto de código para construir un agente con FastAPI y LangGraph. La información disponible es mínima: la model card solo indica licencia MIT, sin datos de arquitectura, parámetros, contexto ni rendimiento. No se ha publicado documentación técnica, benchmarks ni especificaciones de uso. Por tanto, no es posible evaluar el proyecto como un modelo de lenguaje; se trata de un recurso de desarrollo de agentes que carece de material descriptivo en el momento de la consulta.
+Este repositorio de Hugging Face, identificado como `IHEyeah/fastapi-langgraph-agent`, no contiene un modelo de IA en el sentido tradicional, sino un proyecto de código para construir un agente con FastAPI y LangGraph. La información disponible es mínima: la model card solo indica licencia MIT, sin datos de arquitectura, parámetros, contexto ni rendimiento. No se ha publicado documentación técnica, benchmarks ni especificaciones de uso. Por tanto, no es posible evaluar el proyecto como un modelo de lenguaje; se trata de un recurso de desarrollo de agentes que carece de material descriptivo en el momento de la consulta.
 
 ## Especificaciones técnicas
 
@@ -51,11 +51,11 @@ No disponible: al no tratarse de un modelo de IA, no se puede comparar con otros
 - La información disponible es insuficiente para evaluar el proyecto: no hay documentación, métricas ni ejemplos de uso.
 - No se puede determinar la calidad del código, su seguridad ni su idoneidad para producción.
 - La licencia MIT permite uso comercial, pero sin garantías ni soporte por parte del autor.
-- El repositorio no presenta datos de descargas ni de interacción en HuggingFace, lo que sugiere que es un proyecto sin difusión ni validación externa.
+- El repositorio no presenta datos de descargas ni de interacción en Hugging Face, lo que sugiere que es un proyecto sin difusión ni validación externa.
 - Cualquier uso en producción requeriría una revisión exhaustiva del código por parte del equipo de desarrollo.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/IHEyeah/fastapi-langgraph-agent
+- Repositorio en Hugging Face: https://huggingface.co/IHEyeah/fastapi-langgraph-agent
 - Referencia externa sobre agentes con FastAPI y LangGraph: https://dev.to/kasi_viswanath/streaming-ai-agent-with-fastapi-langgraph-2025-26-guide-1nkn
 - Plantilla similar en GitHub (no afiliada): https://github.com/wassim249/fastapi-langgraph-agent-production-ready-template

@@ -45,7 +45,7 @@ El inventario de entrenamiento tampoco esta documentado: no se indican el numero
 - Pruebas de infraestructura de RL: validar pipelines de entrenamiento distribuido, sistemas de registro de metricas (TensorBoard, Weights & Biases) o runners de evaluacion usando un entorno ligero que se ejecuta en CPU en pocos minutos.
 - Generacion de trayectorias sinteticas: ejecutar la politica para recopilar pares estado-accion-recompensa que alimenten experimentos de imitation learning o de ajuste de modelos de dinamica del entorno.
 - Transferencia a tareas de control similares: emplear los pesos como punto de partida para variantes modificadas del entorno (gravedad distinta, viento lateral, consumo de combustible mayor) y medir la degradacion de la politica.
-- Demostracion de integracion Hub + libreria: ilustrar el flujo completo de publicacion y consumo de artefactos de RL en HuggingFace mediante huggingface_sb3, util en tutoriales y talleres internos.
+- Demostracion de integracion Hub + libreria: ilustrar el flujo completo de publicacion y consumo de artefactos de RL en Hugging Face mediante huggingface_sb3, util en tutoriales y talleres internos.
 - Analisis de robustez: evaluar la varianza de la recompensa a lo largo de cientos de episodios con semillas distintas para caracterizar la estabilidad de la politica entrenada.
 
 ## Benchmarks y rendimiento
@@ -72,9 +72,9 @@ No se dispone de datos verificados de modelos comparables en la informacion prop
 
 | Modelo | Tipo | Entorno | Licencia | Disponibilidad | Rendimiento declarado |
 |---|---|---|---|---|---|
-| aliyelbekov/ppo-LunarLander-v3 | PPO (stable-baselines3) | LunarLander-v2 | no disponible | HuggingFace Hub | 254,70 +/- 19,93 (no verificado) |
+| aliyelbekov/ppo-LunarLander-v3 | PPO (stable-baselines3) | LunarLander-v2 | no disponible | Hugging Face Hub | 254,70 +/- 19,93 (no verificado) |
 | Agentes PPO de rl-zoo3 (referencia de la comunidad) | PPO (stable-baselines3) | LunarLander-v2 | MIT (la del repositorio) | GitHub rl-zoo3 | no disponible en esta busqueda |
-| Agentes DQN / A2C para LunarLander | Off-policy (DQN) u on-policy (A2C) | LunarLander-v2 | no disponible | HuggingFace Hub / rl-zoo3 | no disponible en esta busqueda |
+| Agentes DQN / A2C para LunarLander | Off-policy (DQN) u on-policy (A2C) | LunarLander-v2 | no disponible | Hugging Face Hub / rl-zoo3 | no disponible en esta busqueda |
 
 ## Limitaciones y advertencias
 
@@ -91,7 +91,7 @@ No se dispone de datos verificados de modelos comparables en la informacion prop
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aliyelbekov/ppo-LunarLander-v3
+- Modelo en Hugging Face: https://huggingface.co/aliyelbekov/ppo-LunarLander-v3
 - Libreria stable-baselines3 (mencionada en la model card): https://github.com/DLR-RM/stable-baselines3
 - Helper de carga desde el Hub (referenciado en el fragmento de codigo de la model card): https://github.com/huggingface/huggingface_sb3
 - Nota sobre la busqueda web: los resultados devueltos no guardan relacion con el modelo (contenido sobre Google Maps), por lo que no se han podido recopilar papers, blogs, repositorios ni demos adicionales.

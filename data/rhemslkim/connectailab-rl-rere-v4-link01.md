@@ -2,7 +2,7 @@
 
 ## Resumen
 
-connectailab-rl-rere-v4-link01 es un adaptador LoRA publicado por el usuario rhemslkim (CONNECT AI LAB x AI CITY BUILDERS) sobre el modelo base Qwen/Qwen3.5-0.8B. No es un modelo de lenguaje de propósito general, sino un "modelo de decisión" para el robot simulado LINK-01: recibe en texto el estado del robot (distancia al objetivo, dirección, sensores de distancia, velocidad y acción previa) y devuelve una única letra que codifica la acción de caminar para los siguientes 0,5 segundos. El pipeline declarado en HuggingFace es reinforcement-learning y la librería es PEFT.
+connectailab-rl-rere-v4-link01 es un adaptador LoRA publicado por el usuario rhemslkim (CONNECT AI LAB x AI CITY BUILDERS) sobre el modelo base Qwen/Qwen3.5-0.8B. No es un modelo de lenguaje de propósito general, sino un "modelo de decisión" para el robot simulado LINK-01: recibe en texto el estado del robot (distancia al objetivo, dirección, sensores de distancia, velocidad y acción previa) y devuelve una única letra que codifica la acción de caminar para los siguientes 0,5 segundos. El pipeline declarado en Hugging Face es reinforcement-learning y la librería es PEFT.
 
 El modelo se entrena en dos fases: primero un ajuste supervisado (LoRA) sobre pares observación-respuesta generados por una política PPO entrenada en un entorno web de aprendizaje por refuerzo (tarea `follow_route`, cerebro "walker51-14"), y después una fase de RL con anclaje KL que reordena las preferencias entre opciones según la recompensa que habría obtenido el cerebro maestro. El conjunto de datos declarado es de 1.632 ejemplos de entrenamiento, 316 de validación y 495 de prueba.
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 ## Requisitos de hardware
 
-- El adaptador LoRA es de tamaño despreciable (el repositorio ocupa 0,0 GB según HuggingFace); el coste está en el modelo base Qwen3.5-0.8B.
+- El adaptador LoRA es de tamaño despreciable (el repositorio ocupa 0,0 GB según Hugging Face); el coste está en el modelo base Qwen3.5-0.8B.
 - VRAM estimada para el base en fp16: en torno a 1,6 GB solo para pesos, más overhead de activaciones y caché KV; en cuantización de 8 bits o 4 bits cabría holgadamente en GPUs de 4-8 GB.
 - Cabe en GPUs de consumo: RTX 3060, RTX 4060, RTX 4090, así como en portátiles con 8 GB de VRAM en cuantización.
 - Despliegue: la model card solo documenta el uso con `transformers` + `peft` (`PeftModel.from_pretrained`). No se documentan integraciones con vLLM, llama.cpp, Ollama o TGI.
@@ -90,7 +90,7 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rhemslkim/connectailab-rl-rere-v4-link01
+- Modelo en Hugging Face: https://huggingface.co/rhemslkim/connectailab-rl-rere-v4-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de código CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

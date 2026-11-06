@@ -1,7 +1,7 @@
 # Lelonthecodeur/motif-187m-checkpoints
 
 ## Resumen
-Lelonthecodeur/motif-187m-checkpoints es un repositorio alojado en HuggingFace por el usuario Lelonthecodeur. Por la nomenclatura del identificador ("187m"), todo apunta a que contiene los checkpoints de un modelo de aproximadamente 187 millones de parámetros, aunque esta cifra no está confirmada en ninguna documentación del repositorio. El repositorio no incluye model card, no declara pipeline de inferencia, licencia, idiomas soportados ni arquitectura, y acumula 0 descargas y 1 "like" desde su publicación el 20 de septiembre de 2026.
+Lelonthecodeur/motif-187m-checkpoints es un repositorio alojado en Hugging Face por el usuario Lelonthecodeur. Por la nomenclatura del identificador ("187m"), todo apunta a que contiene los checkpoints de un modelo de aproximadamente 187 millones de parámetros, aunque esta cifra no está confirmada en ninguna documentación del repositorio. El repositorio no incluye model card, no declara pipeline de inferencia, licencia, idiomas soportados ni arquitectura, y acumula 0 descargas y 1 "like" desde su publicación el 20 de septiembre de 2026.
 
 Los únicos datos verificables son el tamaño del repositorio (1,5 GB), la etiqueta `region:us` y las fechas de creación y actualización (20 de septiembre de 2026, con una diferencia de unos 23 minutos entre ambas). No se ha encontrado ninguna publicación, paper, blog o repositorio de código asociado al modelo: la búsqueda web realizada devuelve exclusivamente resultados jurídicos brasileños (jurisprudencia sobre mandados de seguridad) completamente ajenos al objeto de esta ficha.
 
@@ -31,7 +31,7 @@ No hay información publicada sobre la arquitectura. El repositorio no incluye `
 Tampoco hay datos sobre el proceso de entrenamiento: número de tokens, composición del dataset, uso de RLHF, DPO o ajuste supervisado, ni innovaciones técnicas (atención lineal, decodificación especulativa, etc.). El tamaño del repositorio (1,5 GB) es compatible con el almacenamiento de varios checkpoints en precisión completa o media de un modelo de ese orden de magnitud (por ejemplo, alrededor de cuatro checkpoints de ~375 MB en fp16), pero el desglose real de ficheros no se ha verificado. El sufijo "checkpoints" en el nombre apunta a puntos de control intermedios de un entrenamiento, no necesariamente a un modelo final listo para producción.
 
 ## Capacidades
-- Generación de texto: no confirmada. No hay ninguna demostración, espacio de HuggingFace ni ejemplo de uso publicado.
+- Generación de texto: no confirmada. No hay ninguna demostración, espacio de Hugging Face ni ejemplo de uso publicado.
 - Razonamiento, matemáticas y código: no disponible; sin evaluaciones ni documentación.
 - Tool calling / function calling: no disponible; no se declara ninguna plantilla de prompt ni soporte de herramientas.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -65,7 +65,7 @@ Las siguientes cifras son estimaciones derivadas del tamaño de ~187 M de parám
 - Pesos en fp32: aproximadamente 0,75 GB de memoria; en fp16/bf16, unos 0,37 GB; en cuantización de 8 bits, unos 0,19 GB; en 4 bits, unos 0,10 GB.
 - VRAM total estimada para inferencia: por debajo de 1 GB con contexto corto, más el espacio de la caché KV, que depende de la longitud de contexto (desconocida) y del número de capas.
 - Cabe en cualquier GPU de consumo actual, incluidas GTX 1650 (4 GB), RTX 3050, RTX 3060, RTX 4060 y superiores; también en iGPU y en CPU.
-- Opciones de despliegue: `transformers` de HuggingFace si se conoce la arquitectura; llama.cpp u Ollama únicamente si existe conversión a GGUF, que no se publica; vLLM o TGI solo si el `config.json` es compatible, extremo no verificado.
+- Opciones de despliegue: `transformers` de Hugging Face si se conoce la arquitectura; llama.cpp u Ollama únicamente si existe conversión a GGUF, que no se publica; vLLM o TGI solo si el `config.json` es compatible, extremo no verificado.
 
 ## Comparativa con modelos similares
 No es posible establecer una comparativa fiable porque se desconoce la arquitectura, el tokenizador, la licencia y el rendimiento del modelo. A modo de referencia orientativa, el rango de ~187 M de parámetros corresponde a modelos pequeños consolidados como los siguientes (datos de referencia externos, no verificados en esta búsqueda y no comparables en rendimiento con el modelo objeto de la ficha):
@@ -91,9 +91,9 @@ Comparación directa de rendimiento: no disponible.
 - Recomendación: antes de cualquier uso, inspeccionar los ficheros del repositorio (configuración, tokenizador, formato de pesos) y contactar con el autor para aclarar licencia y procedencia.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/Lelonthecodeur/motif-187m-checkpoints
+- Repositorio en Hugging Face: https://huggingface.co/Lelonthecodeur/motif-187m-checkpoints
 - Paper: no disponible
 - Blog o anuncio del autor: no disponible
 - Repositorio de código: no disponible
-- Demo o espacio de HuggingFace: no disponible
+- Demo o espacio de Hugging Face: no disponible
 - Búsqueda web: no se ha encontrado ningún enlace relevante. Todos los resultados devueltos corresponden a páginas de jurisprudencia brasileña (Jusbrasil, STF, TRF1) sobre mandados de seguridad y competencia judicial, sin relación alguna con el modelo.

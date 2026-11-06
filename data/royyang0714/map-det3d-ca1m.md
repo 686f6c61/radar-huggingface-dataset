@@ -6,7 +6,7 @@ El modelo `RoyYang0714/map-det3d-ca1m` es un detector de objetos 3D desarrollado
 
 El repositorio tiene un tamaño de 5,1 GB, lo que sugiere que contiene los pesos de un modelo entrenado, pero no se especifican detalles de arquitectura, número de parámetros, contexto de entrada ni datos de entrenamiento. La licencia y los idiomas soportados no están declarados. A fecha de creación (agosto de 2026), el modelo no tiene descargas ni valoraciones, por lo que su adopción es nula.
 
-A pesar de la escasez de información, su inclusión en el ecosistema de HuggingFace con la librería `mapdet3d` y el pipeline de `object-detection` indica que es un modelo especializado en detección de objetos 3D, probablemente sobre nubes de puntos o datos de sensores LiDAR. Para una evaluación rigurosa, sería necesario consultar el repositorio de código y el paper asociado.
+A pesar de la escasez de información, su inclusión en el ecosistema de Hugging Face con la librería `mapdet3d` y el pipeline de `object-detection` indica que es un modelo especializado en detección de objetos 3D, probablemente sobre nubes de puntos o datos de sensores LiDAR. Para una evaluación rigurosa, sería necesario consultar el repositorio de código y el paper asociado.
 
 ## Especificaciones tecnicas
 
@@ -70,6 +70,6 @@ No se dispone de información suficiente para realizar una comparativa directa c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RoyYang0714/map-det3d-ca1m
+- Modelo en Hugging Face: https://huggingface.co/RoyYang0714/map-det3d-ca1m
 - Código (GitHub): https://github.com/cvg/Map-Det3D
 - Paper (arXiv): https://arxiv.org/abs/2608.12179

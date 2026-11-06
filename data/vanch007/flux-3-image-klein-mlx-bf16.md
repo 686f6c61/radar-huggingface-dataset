@@ -83,7 +83,7 @@ No se dispone de datos verificados de rendimiento ni de parametros de FLUX 3 Ima
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vanch007/FLUX.3-Image-Klein-mlx-bf16
+- Hugging Face: https://huggingface.co/vanch007/FLUX.3-Image-Klein-mlx-bf16
 - Licencia: LICENSE.md dentro del repositorio (flux-kommunity-license)
 - Libreria mflux (stack de inferencia MLX): no se proporciona enlace directo en la informacion disponible
 - Black Forest Labs (desarrollador del modelo base FLUX 3): no se proporciona enlace directo en la informacion disponible

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rajsjain/gemma3-1b-grpo-deepmath-lora` es un ajuste fino del modelo `unsloth/gemma-3-1b-it`, que a su vez deriva de Gemma 3 1B de Google. Lo publica el usuario rajsjain en HuggingFace y, por el nombre del repositorio, se ha entrenado con GRPO (Group Relative Policy Optimization) sobre un conjunto de datos de matematicas ("deepmath"). Se distribuye como adaptador LoRA en formato safetensors y esta pensado para generacion de texto en ingles.
+`rajsjain/gemma3-1b-grpo-deepmath-lora` es un ajuste fino del modelo `unsloth/gemma-3-1b-it`, que a su vez deriva de Gemma 3 1B de Google. Lo publica el usuario rajsjain en Hugging Face y, por el nombre del repositorio, se ha entrenado con GRPO (Group Relative Policy Optimization) sobre un conjunto de datos de matematicas ("deepmath"). Se distribuye como adaptador LoRA en formato safetensors y esta pensado para generacion de texto en ingles.
 
 El modelo base es un transformer decoder-only de la familia Gemma 3 en su variante de 1.000 millones de parametros, con una ventana de contexto de 32.768 tokens en la version instruct original. Este ajuste concreto no documenta cambios de arquitectura ni de tokenizador: se limita a modificar los pesos mediante el adaptador LoRA entrenado con Unsloth.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| rajsjain/gemma3-1b-grpo-deepmath-lora | 1B + LoRA | 32K (base) | Apache 2.0 | HuggingFace | Ajuste GRPO en matematicas, sin benchmarks |
-| unsloth/gemma-3-1b-it | 1B | 32K | Apache 2.0 | HuggingFace | Modelo base instruct, sin ajuste de razonamiento |
-| google/gemma-3-1b-it | 1B | 32K | Gemma Terms of Use | HuggingFace | Modelo original de Google; licencia distinta a la del ajuste |
-| Qwen2.5-1.5B-Instruct | 1,5B | 32K | Apache 2.0 | HuggingFace | Alternativa de tamano similar con buen rendimiento en matematicas |
+| rajsjain/gemma3-1b-grpo-deepmath-lora | 1B + LoRA | 32K (base) | Apache 2.0 | Hugging Face | Ajuste GRPO en matematicas, sin benchmarks |
+| unsloth/gemma-3-1b-it | 1B | 32K | Apache 2.0 | Hugging Face | Modelo base instruct, sin ajuste de razonamiento |
+| google/gemma-3-1b-it | 1B | 32K | Gemma Terms of Use | Hugging Face | Modelo original de Google; licencia distinta a la del ajuste |
+| Qwen2.5-1.5B-Instruct | 1,5B | 32K | Apache 2.0 | Hugging Face | Alternativa de tamano similar con buen rendimiento en matematicas |
 
 ## Limitaciones y advertencias
 
@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rajsjain/gemma3-1b-grpo-deepmath-lora
+- Hugging Face: https://huggingface.co/rajsjain/gemma3-1b-grpo-deepmath-lora
 - Modelo base: https://huggingface.co/unsloth/gemma-3-1b-it
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
 - Gemma 3 (Google): https://huggingface.co/google/gemma-3-1b-it

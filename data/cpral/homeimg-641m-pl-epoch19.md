@@ -71,9 +71,9 @@ FD-DINOv2 según Stein et al. 2023 (menor es mejor): distancia de Fréchet entre
 
 | Modelo | Parámetros | Resolución | Contexto de prompt | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| HomeIMG-641M-PL-epoch19 | 641,1M (denoiser) + 72,1M (refiner) | 256×256 | 255 tokens | pl, en | Apache 2.0 | HuggingFace (diffusers, custom_code) |
-| HomeIMG-641M-epoch15 | 641,1M + 35,7M (refiner) | 256×256 | no disponible | en | Apache 2.0 (presumible) | HuggingFace |
-| HomeIMG-641M-PL-stage1 | 641,1M + 72,1M (refiner) | 256×256 | no disponible | pl, en | Apache 2.0 (presumible) | HuggingFace |
+| HomeIMG-641M-PL-epoch19 | 641,1M (denoiser) + 72,1M (refiner) | 256×256 | 255 tokens | pl, en | Apache 2.0 | Hugging Face (diffusers, custom_code) |
+| HomeIMG-641M-epoch15 | 641,1M + 35,7M (refiner) | 256×256 | no disponible | en | Apache 2.0 (presumible) | Hugging Face |
+| HomeIMG-641M-PL-stage1 | 641,1M + 72,1M (refiner) | 256×256 | no disponible | pl, en | Apache 2.0 (presumible) | Hugging Face |
 | Stable Diffusion 1.5 | ~860M (UNet) + text encoder | 512×512 | 77 tokens | en (principalmente) | CreativeML OpenRAIL-M | Amplia disponibilidad |
 
 La comparación con SD 1.5 es orientativa por escala de parámetros y resolución, no por resultados de benchmarks, que no son directamente comparables entre sí. No se dispone de datos de benchmarks de HomeIMG-641M-epoch15 ni de PL-stage1 en la información proporcionada más allá de val/loss y FD-DINOv2 parciales.
@@ -93,7 +93,7 @@ La comparación con SD 1.5 es orientativa por escala de parámetros y resolució
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cpral/HomeIMG-641M-PL-epoch19
+- Modelo en Hugging Face: https://huggingface.co/cpral/HomeIMG-641M-PL-epoch19
 - Modelo base (inglés): https://huggingface.co/cpral/HomeIMG-641M-epoch15
 - Modelo base (text encoder): https://huggingface.co/cpral/Poziomka-Baza-2026-09-05
 - Etapa previa bilingüe: https://huggingface.co/cpral/HomeIMG-641M-PL-stage1

@@ -60,16 +60,16 @@ No se han publicado en la información disponible resultados comparativos con ot
 - VRAM estimada para inferencia: muy baja, inferior a 1 GB en precisión completa (22,4 M de parámetros, pesos en safetensors de ~0,1 GB).
 - GPU recomendadas: cualquier GPU consumer moderna (RTX 3060, RTX 4090) es suficiente; también es viable en CPU para volúmenes moderados.
 - Cabe en GPU consumer: sí, en prácticamente cualquier GPU con al menos 2 GB de VRAM, e incluso en CPU.
-- Opciones de despliegue: al ser un modelo TrOCR con pesos safetensors, puede cargarse con la librería `transformers` de HuggingFace; no se dispone de información sobre soporte específico en vLLM, llama.cpp, Ollama o TGI, que están orientados a modelos de lenguaje y no a HTR.
+- Opciones de despliegue: al ser un modelo TrOCR con pesos safetensors, puede cargarse con la librería `transformers` de Hugging Face; no se dispone de información sobre soporte específico en vLLM, llama.cpp, Ollama o TGI, que están orientados a modelos de lenguaje y no a HTR.
 - Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cyttic/hmt-trocrscratchreg-geom3-s42 | 22,4 M | no disponible | HTR hebreo (CTC) | MIT | HuggingFace |
-| TrOCR base (Microsoft) | ~334 M | no aplica | OCR/HTR genérico | MIT | HuggingFace |
-| TrOCR large (Microsoft) | ~558 M | no aplica | OCR/HTR genérico | MIT | HuggingFace |
+| cyttic/hmt-trocrscratchreg-geom3-s42 | 22,4 M | no disponible | HTR hebreo (CTC) | MIT | Hugging Face |
+| TrOCR base (Microsoft) | ~334 M | no aplica | OCR/HTR genérico | MIT | Hugging Face |
+| TrOCR large (Microsoft) | ~558 M | no aplica | OCR/HTR genérico | MIT | Hugging Face |
 
 No se dispone de información sobre otros modelos comparables específicos para HTR en hebreo en la documentación proporcionada. La comparación con TrOCR base y large se ofrece como referencia de arquitectura, no de rendimiento en la misma tarea.
 
@@ -85,6 +85,6 @@ No se dispone de información sobre otros modelos comparables específicos para 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cyttic/hmt-trocrscratchreg-geom3-s42
+- Modelo en Hugging Face: https://huggingface.co/cyttic/hmt-trocrscratchreg-geom3-s42
 - Corpus de entrenamiento: https://huggingface.co/datasets/cyttic/hhd-optionb-split
 - No se han encontrado en la información disponible enlaces a papers, blogs, repositorios de código o demos adicionales.

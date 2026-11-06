@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Jolt-2B es un repositorio de modelo publicado en HuggingFace bajo el identificador mlengineer-ai/Jolt-2B por el usuario mlengineer-ai. En el momento de la consulta, el repositorio no incluye model card con contenido tecnico: el README se limita a la declaracion de licencia Apache 2.0, sin descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso. Tampoco se ha declarado un pipeline de HuggingFace, idiomas soportados ni formato de pesos.
+Jolt-2B es un repositorio de modelo publicado en Hugging Face bajo el identificador mlengineer-ai/Jolt-2B por el usuario mlengineer-ai. En el momento de la consulta, el repositorio no incluye model card con contenido tecnico: el README se limita a la declaracion de licencia Apache 2.0, sin descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso. Tampoco se ha declarado un pipeline de Hugging Face, idiomas soportados ni formato de pesos.
 
 El nombre del repositorio sugiere un modelo de aproximadamente 2.000 millones de parametros, pero se trata de una inferencia a partir del identificador y no de un dato confirmado por el autor. No hay informacion publica sobre la arquitectura, la longitud de contexto, el dataset de entrenamiento ni el proceso de alineamiento.
 
@@ -95,6 +95,6 @@ No se dispone de datos objetivos para afirmar que Jolt-2B sea competitivo frente
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mlengineer-ai/Jolt-2B
+- Repositorio en Hugging Face: https://huggingface.co/mlengineer-ai/Jolt-2B
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de codigo o demos) en la informacion disponible.

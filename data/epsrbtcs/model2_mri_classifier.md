@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`epsrbtcs/model2_mri_classifier` es un repositorio publicado en HuggingFace por el usuario `epsrbtcs` el 18 de octubre de 2026. Por el identificador del repositorio, el modelo parece estar orientado a la clasificación de imágenes de resonancia magnética (MRI), aunque la model card no confirma ni el dominio de aplicación, ni la tarea concreta, ni la modalidad de entrada.
+`epsrbtcs/model2_mri_classifier` es un repositorio publicado en Hugging Face por el usuario `epsrbtcs` el 18 de octubre de 2026. Por el identificador del repositorio, el modelo parece estar orientado a la clasificación de imágenes de resonancia magnética (MRI), aunque la model card no confirma ni el dominio de aplicación, ni la tarea concreta, ni la modalidad de entrada.
 
-La informacion publica disponible es practicamente inexistente. La model card se limita a una cabecera YAML con la licencia MIT y no incluye descripcion, arquitectura, datos de entrenamiento, resultados de evaluacion ni instrucciones de uso. El tamano del repositorio figura como 0.0 GB, lo que indica que no se han subido pesos ni ficheros de configuracion, tokenizador o preprocesador. El pipeline declarado en HuggingFace es "no disponible".
+La informacion publica disponible es practicamente inexistente. La model card se limita a una cabecera YAML con la licencia MIT y no incluye descripcion, arquitectura, datos de entrenamiento, resultados de evaluacion ni instrucciones de uso. El tamano del repositorio figura como 0.0 GB, lo que indica que no se han subido pesos ni ficheros de configuracion, tokenizador o preprocesador. El pipeline declarado en Hugging Face es "no disponible".
 
 No es posible, por tanto, evaluar el modelo ni recomendarlo para ningun uso. Esta ficha documenta unicamente los metadatos verificables y senala explicitamente cada dato ausente. Los resultados de busqueda web asociados a esta consulta no contienen ninguna referencia al modelo ni a su autor, por lo que no aportan informacion tecnica utilizable.
 
@@ -82,7 +82,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/epsrbtcs/model2_mri_classifier
+- Hugging Face: https://huggingface.co/epsrbtcs/model2_mri_classifier
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
 - Repositorio de codigo: no disponible

@@ -67,8 +67,8 @@ Datos adicionales de la evaluación: las 1.823 llamadas a herramientas fueron bi
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (LFM3-1.7B + LoRA) | 1.700 M (base) | No disponible | book-flight MiniWoB | LFM Open License v1.0 | HuggingFace, 8 descargas |
-| Modelo base LiquidAI/LFM3-1.7B | 1.700 M | No disponible | Propósito general | LFM Open License v1.0 | HuggingFace |
+| Este adaptador (LFM3-1.7B + LoRA) | 1.700 M (base) | No disponible | book-flight MiniWoB | LFM Open License v1.0 | Hugging Face, 8 descargas |
+| Modelo base LiquidAI/LFM3-1.7B | 1.700 M | No disponible | Propósito general | LFM Open License v1.0 | Hugging Face |
 | Réplica seed 47 del mismo adaptador | 1.700 M (base) | No disponible | book-flight MiniWoB | LFM Open License v1.0 | Incluida en el mismo repo |
 
 No se dispone de datos de benchmarks de otros adaptadores comparables en la información proporcionada.
@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks de otros adaptadores comparables en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Aptheos/lfm3-1.7b-book-flight-sft
+- Modelo en Hugging Face: https://huggingface.co/Aptheos/lfm3-1.7b-book-flight-sft
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Repositorio de código: https://github.com/DerrickKirimi/browser-control
 - Guía de reproducción: https://github.com/DerrickKirimi/browser-control/blob/main/docs/reproducing.md

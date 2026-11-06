@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`literismm/rada-v2-a2olite` es un repositorio alojado en HuggingFace por el usuario `literismm` del que no existe informacion tecnica publica verificable. La model card esta practicamente vacia (unicamente el campo `license: unknown`), no consta pipeline declarado, no se especifican idiomas soportados y la licencia figura como desconocida. En el momento de la consulta el repositorio acumula 0 descargas y 0 likes, y fue creado y actualizado el mismo dia (28 de octubre de 2026), lo que sugiere una publicacion reciente, de prueba o abandonada.
+`literismm/rada-v2-a2olite` es un repositorio alojado en Hugging Face por el usuario `literismm` del que no existe informacion tecnica publica verificable. La model card esta practicamente vacia (unicamente el campo `license: unknown`), no consta pipeline declarado, no se especifican idiomas soportados y la licencia figura como desconocida. En el momento de la consulta el repositorio acumula 0 descargas y 0 likes, y fue creado y actualizado el mismo dia (28 de octubre de 2026), lo que sugiere una publicacion reciente, de prueba o abandonada.
 
 El nombre del repositorio sugiere, por convencion de nomenclatura habitual en la comunidad, un modelo de la familia "rada" en su version 2 con un sufijo "a2olite" que podria aludir a un tamano en el entorno de 2B de parametros en una variante "lite", pero esto es una **conjetura basada exclusivamente en el nombre** y no esta confirmado por ninguna fuente. El unico dato objetivo disponible es el tamano del repositorio: 0,1 GB.
 
@@ -72,7 +72,7 @@ No es posible establecer una comparativa fiable: no se conocen los parametros, e
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| rada-v2-a2olite (literismm) | no disponible | no disponible | unknown | repositorio HuggingFace, 0 descargas | no disponible |
+| rada-v2-a2olite (literismm) | no disponible | no disponible | unknown | repositorio Hugging Face, 0 descargas | no disponible |
 | Alternativas comparables | no identificadas | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -89,7 +89,7 @@ No es posible establecer una comparativa fiable: no se conocen los parametros, e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/literismm/rada-v2-a2olite
+- Hugging Face: https://huggingface.co/literismm/rada-v2-a2olite
 - Paper: no disponible
 - Blog tecnico: no disponible
 - Repositorio de codigo: no disponible

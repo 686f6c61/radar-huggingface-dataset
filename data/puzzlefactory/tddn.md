@@ -2,11 +2,11 @@
 
 ## Resumen
 
-TDDN (Text-aligned Diffused DINO Network) es un modelo de representacion visual alineado con texto, desarrollado por PuzzleFactory y publicado en HuggingFace junto con el proyecto de investigacion descrito en el paper arXiv:2609.07937. No es un modelo generativo de lenguaje: su pipeline en HuggingFace es `feature-extraction` y su funcion es producir embeddings visuales de grano fino alineados con un espacio textual, pensados para servir como encoder de percepcion en sistemas de razonamiento visual estructurado, en particular la resolucion de puzzles de imagen.
+TDDN (Text-aligned Diffused DINO Network) es un modelo de representacion visual alineado con texto, desarrollado por PuzzleFactory y publicado en Hugging Face junto con el proyecto de investigacion descrito en el paper arXiv:2609.07937. No es un modelo generativo de lenguaje: su pipeline en Hugging Face es `feature-extraction` y su funcion es producir embeddings visuales de grano fino alineados con un espacio textual, pensados para servir como encoder de percepcion en sistemas de razonamiento visual estructurado, en particular la resolucion de puzzles de imagen.
 
 El problema que aborda es concreto: los VLM actuales construidos sobre backbones ViT basados en CLIP sacrifican detalle visual fino a cambio de semantica de alto nivel, y el paper sostiene que esa perdida se propaga aguas abajo y degrada tareas que exigen percepcion precisa, como los puzzles visuales. Para recuperar ese detalle, TDDN fusiona DINOv3 y CleanDIFT en un encoder de percepcion denominado DiffusedDINO y lo alinea despues con un encoder de texto congelado mediante un pipeline ligero.
 
-El modelo se construye en dos etapas: (1) DiffusedDINO, que combina la precision perceptual de CleanDIFT con la consistencia semantica de DINOv3, y (2) una alineacion vision-lenguaje ligera sobre aproximadamente 590.000 pares imagen-texto. El checkpoint publicado ocupa 0.3 GB y suma 78.459.671 parametros segun los safetensors. El acceso esta restringido (gated): requiere aceptar condiciones en HuggingFace.
+El modelo se construye en dos etapas: (1) DiffusedDINO, que combina la precision perceptual de CleanDIFT con la consistencia semantica de DINOv3, y (2) una alineacion vision-lenguaje ligera sobre aproximadamente 590.000 pares imagen-texto. El checkpoint publicado ocupa 0.3 GB y suma 78.459.671 parametros segun los safetensors. El acceso esta restringido (gated): requiere aceptar condiciones en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ El modelo se construye en dos etapas: (1) DiffusedDINO, que combina la precision
 | Pipeline | feature-extraction |
 | Modelos base | facebook/dinov3-vith16plus-pretrain-lvd1689m, sentence-transformers/all-roberta-large-v1, CompVis/cleandift, Charles-Elena/stable-diffusion-2-1 |
 | Tamano del repositorio | 0.3 GB |
-| Acceso | restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated), requiere aceptar condiciones en Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -87,14 +87,14 @@ La comparacion cuantitativa de rendimiento no esta disponible: ni el paper ni lo
 - Sesgos conocidos: no disponible. Al entrenarse sobre pares imagen-texto no documentados en detalle, no puede descartarse sesgo de dominio ni de composicion del dataset.
 - Riesgo de alucinacion: no aplica en el sentido generativo, pero si existe riesgo de falsos positivos en tareas de similitud o matching si las representaciones no generalizan fuera del dominio de entrenamiento.
 - Limitacion de contexto: no disponible; al ser un encoder, la nocion de ventana de contexto no aplica igual que en un LLM, pero el comportamiento con imagenes de resolucion muy alta o muy baja no esta documentado.
-- Restricciones de licencia: apache-2.0 permite uso comercial, pero el acceso es gated y debe aceptarse la condiciones de HuggingFace antes de la descarga; conviene verificar ademas las licencias de los modelos base (DINOv3, RoBERTa-large, CleanDIFT, Stable Diffusion 2-1) por si imponen condiciones adicionales.
+- Restricciones de licencia: apache-2.0 permite uso comercial, pero el acceso es gated y debe aceptarse la condiciones de Hugging Face antes de la descarga; conviene verificar ademas las licencias de los modelos base (DINOv3, RoBERTa-large, CleanDIFT, Stable Diffusion 2-1) por si imponen condiciones adicionales.
 - Caveat de produccion: el proyecto esta especializado en puzzles y razonamiento visual estructurado; su rendimiento fuera de ese dominio no esta validado con benchmarks publicos.
 - Dependencia de terceros: requiere el codigo y los pesos del backbone DINOv3 y del encoder de texto RoBERTa-large, lo que anade complejidad al despliegue frente a un modelo autocontenido.
 - Los datos de fecha del repo consultados indican creacion y actualizacion el 2026-09-27, sin historial de versiones adicional.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PuzzleFactory/TDDN
+- Modelo en Hugging Face: https://huggingface.co/PuzzleFactory/TDDN
 - Modelo hermano (solo DINOv3): https://huggingface.co/PuzzleComm/TDN
 - Referencia adicional del proyecto: https://huggingface.co/PuzzleBench/TDDN
 - Paper (abstract): https://arxiv.org/abs/2609.07937

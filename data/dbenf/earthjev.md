@@ -78,11 +78,11 @@ Resultados publicados en la model card. Todos los modelos se entrenaron con las 
 
 | Modelo | Params | Entrada | Contexto | CORINE acc. (%) | ECE | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| EarthJev | 0,8B | 12 bandas | No disponible | 86,0 | 0,006 | Apache-2.0 | HuggingFace (dBenf/EarthJev) |
-| Qwen3.5-0.8B generativo (misma receta) | 0,8B | 12 bandas | No disponible | 86,8 | 0,005 | Apache-2.0 | HuggingFace (Qwen/Qwen3.5-0.8B) |
-| Qwen3-VL-2B con LoRA | 2,1B | RGB | No disponible | 86,6 | 0,005 | No disponible | HuggingFace |
-| InternVL3-2B con LoRA | 2,1B | RGB | No disponible | 87,1 | 0,006 | No disponible | HuggingFace |
-| EarthDial-4B con LoRA | 4,2B | RGB | No disponible | 89,5 | 0,006 | No disponible | HuggingFace |
+| EarthJev | 0,8B | 12 bandas | No disponible | 86,0 | 0,006 | Apache-2.0 | Hugging Face (dBenf/EarthJev) |
+| Qwen3.5-0.8B generativo (misma receta) | 0,8B | 12 bandas | No disponible | 86,8 | 0,005 | Apache-2.0 | Hugging Face (Qwen/Qwen3.5-0.8B) |
+| Qwen3-VL-2B con LoRA | 2,1B | RGB | No disponible | 86,6 | 0,005 | No disponible | Hugging Face |
+| InternVL3-2B con LoRA | 2,1B | RGB | No disponible | 87,1 | 0,006 | No disponible | Hugging Face |
+| EarthDial-4B con LoRA | 4,2B | RGB | No disponible | 89,5 | 0,006 | No disponible | Hugging Face |
 
 La comparación relevante es con el Qwen3.5-0.8B generativo entrenado con la misma receta: la precisión es prácticamente idéntica (86,0 frente a 86,8), pero EarthJev es entre 4,5 y 6,8 veces más rápido y ofrece la garantía de que toda respuesta es una opción válida. Frente a modelos de 2B y 4B en RGB, la precisión es comparable o ligeramente inferior, con la ventaja de usar las 12 bandas y de un coste de inferencia mucho menor.
 
@@ -102,7 +102,7 @@ La comparación relevante es con el Qwen3.5-0.8B generativo entrenado con la mis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dBenf/EarthJev
+- Modelo en Hugging Face: https://huggingface.co/dBenf/EarthJev
 - Código: https://github.com/CosmoIknosLab/EarthJev
 - Paper: https://arxiv.org/abs/2611.02096
 - Receta de entrenamiento OneJev: https://github.com/OmniJev/OneJev

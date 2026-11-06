@@ -114,7 +114,7 @@ DFlash 2 supera consistentemente a MTP y DSpark en acceptance length y throughpu
 
 ## Enlaces
 
-- Repositorio espejo en HuggingFace: https://huggingface.co/doth4580/Qwen3.8-27B-DFlash2
+- Repositorio espejo en Hugging Face: https://huggingface.co/doth4580/Qwen3.8-27B-DFlash2
 - Repositorio original: https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2
 - Repositorio de incoai: https://huggingface.co/incoai/Qwen3.8-27B-DFlash2
 - Blog de DFlash 2: https://inco.ai/blog/dflash2/

@@ -6,7 +6,7 @@ AutoMerge-090196bc es un modelo de lenguaje pequeño generado automáticamente p
 
 La propuesta de valor de PocketWeights se centra en modelos ligeros optimizados para dispositivos edge y portatiles con GPU de consumo de 6-8 GB de VRAM, con integracion directa en Ollama y LM Studio. Al fusionar la variante instruct con la variante base del mismo modelo, se pretende conservar las capacidades conversacionales de la primera y el comportamiento generalista de la segunda, aunque el metodo de fusion concreto no se especifica en la model card.
 
-El modelo se publico el 31 de agosto de 2026 bajo licencia Apache 2.0 y, en el momento de redactar esta ficha, no registra descargas ni valoraciones en HuggingFace. Al ser un merge automatico sin evaluaciones publicadas, su rendimiento real no ha sido validado por la comunidad.
+El modelo se publico el 31 de agosto de 2026 bajo licencia Apache 2.0 y, en el momento de redactar esta ficha, no registra descargas ni valoraciones en Hugging Face. Al ser un merge automatico sin evaluaciones publicadas, su rendimiento real no ha sido validado por la comunidad.
 
 ## Especificaciones tecnicas
 
@@ -48,7 +48,7 @@ Los pesos se publican unicamente en formato GGUF cuantizado, lo que implica que 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye puntuaciones de MMLU, HumanEval, GSM8K ni ninguna otra evaluacion estandar. Ademas, el modelo registra cero descargas en HuggingFace, por lo que no existen evaluaciones independientes de la comunidad.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye puntuaciones de MMLU, HumanEval, GSM8K ni ninguna otra evaluacion estandar. Ademas, el modelo registra cero descargas en Hugging Face, por lo que no existen evaluaciones independientes de la comunidad.
 
 ## Requisitos de hardware
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 |---|---|---|---|---|---|
 | AutoMerge-090196bc | 494 M | No especificado (base: 32K) | Apache 2.0 | GGUF | Sin benchmarks |
 | Qwen2.5-0.5B-Instruct | 494 M | 32K | Apache 2.0 | Safetensors, GGUF | Benchmarks publicados por Alibaba |
-| SmolLM2-360M-Instruct | 360 M | 8K | Apache 2.0 | Safetensors, GGUF | Benchmarks publicados por HuggingFace |
+| SmolLM2-360M-Instruct | 360 M | 8K | Apache 2.0 | Safetensors, GGUF | Benchmarks publicados por Hugging Face |
 
 La principal diferencia frente a sus alternativas es que AutoMerge-090196bc es un merge automatico sin validacion publica, mientras que Qwen2.5-0.5B-Instruct y SmolLM2-360M-Instruct son modelos con entrenamiento completo y evaluaciones documentadas. El unico valor anadido del merge es la disponibilidad inmediata en GGUF optimizado, aunque el modelo base Qwen2.5-0.5B-Instruct tambien tiene conversiones GGUF comunitarias.
 
@@ -81,7 +81,7 @@ La principal diferencia frente a sus alternativas es que AutoMerge-090196bc es u
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PocketWeights/AutoMerge-090196bc
+- Modelo en Hugging Face: https://huggingface.co/PocketWeights/AutoMerge-090196bc
 - Perfil de PocketWeights: https://huggingface.co/PocketWeights
 - Modelo base Qwen2.5-0.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Modelo base Qwen2.5-0.5B: https://huggingface.co/Qwen/Qwen2.5-0.5B

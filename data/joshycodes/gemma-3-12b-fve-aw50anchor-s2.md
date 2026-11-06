@@ -94,7 +94,7 @@ Los tres primeros comparten arquitectura y base, por lo que la comparación rele
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/gemma-3-12b-fve-aw50anchor-s2
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/gemma-3-12b-fve-aw50anchor-s2
 - Checkpoint hermano de la misma serie: https://huggingface.co/joshycodes/gemma-3-12b-fve-ga25anchor-s0
 - Modelo base: https://huggingface.co/google/gemma-3-12b-it
 - Página oficial de Gemma 3 (Google DeepMind): https://deepmind.google/models/gemma/gemma-3/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-My-Stars-Danielle es un adaptador LoRA (Low-Rank Adaptation) para generacion de imagenes a partir de texto, publicado por el usuario kaddzie en HuggingFace. El adaptador se entrena sobre el modelo base krea/Krea-2-Turbo, un modelo de difusion de la familia Krea, y se distribuye en formato compatible con la libreria diffusers bajo la plantilla `template:diffusion-lora`. Su proposito es incorporar un concepto o estilo concreto (identificado en el titulo como "Danielle", presumiblemente un personaje de la aplicacion o juego "My Stars!") al repertorio visual del modelo base sin necesidad de reentrenarlo por completo.
+My-Stars-Danielle es un adaptador LoRA (Low-Rank Adaptation) para generacion de imagenes a partir de texto, publicado por el usuario kaddzie en Hugging Face. El adaptador se entrena sobre el modelo base krea/Krea-2-Turbo, un modelo de difusion de la familia Krea, y se distribuye en formato compatible con la libreria diffusers bajo la plantilla `template:diffusion-lora`. Su proposito es incorporar un concepto o estilo concreto (identificado en el titulo como "Danielle", presumiblemente un personaje de la aplicacion o juego "My Stars!") al repertorio visual del modelo base sin necesidad de reentrenarlo por completo.
 
 Se trata, por tanto, de un artefacto de personalizacion y no de un modelo fundacional: su utilidad depende por completo del modelo base sobre el que se aplica y del dataset de imagenes usado en el ajuste fino, ninguno de los cuales se documenta en la model card. El repositorio ocupa 0,2 GB, un tamano coherente con un adaptador LoRA de rango bajo mas que con un checkpoint completo, aunque el numero exacto de parametros no se especifica.
 
@@ -83,7 +83,7 @@ No disponible. No se han identificado en la informacion proporcionada adaptadore
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kaddzie/My-Stars-Danielle
+- Modelo en Hugging Face: https://huggingface.co/kaddzie/My-Stars-Danielle
 - Pestana de archivos y versiones: https://huggingface.co/kaddzie/My-Stars-Danielle/tree/main
 - Modelo base declarado: https://huggingface.co/krea/Krea-2-Turbo
 - Paper, blog, repositorio o demo del adaptador: no disponible

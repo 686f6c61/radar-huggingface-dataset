@@ -69,8 +69,8 @@ No existe un modelo público directamente comparable para la tarea específica (
 
 | Modelo | Parametros | Contexto | Tarea objetivo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Veilance/Verity-1.7B-Beta | 1,7 B (adaptador LoRA) | 32.768 (base Qwen3) | Análisis de privacidad con salida JSON | Apache-2.0 | Adaptador en HuggingFace; 0 descargas |
-| Qwen/Qwen3-1.7B | 1,7 B | 32.768, hasta 131.072 con YaRN | Propósito general | Apache-2.0 | Pesos completos en HuggingFace |
+| Veilance/Verity-1.7B-Beta | 1,7 B (adaptador LoRA) | 32.768 (base Qwen3) | Análisis de privacidad con salida JSON | Apache-2.0 | Adaptador en Hugging Face; 0 descargas |
+| Qwen/Qwen3-1.7B | 1,7 B | 32.768, hasta 131.072 con YaRN | Propósito general | Apache-2.0 | Pesos completos en Hugging Face |
 | Meta Llama 3.2 1B Instruct | 1,2 B | 131.072 | Propósito general, instrucciones | Llama 3.2 Community License | Pesos completos, requiere aceptar términos |
 | Google Gemma 3 1B | 1 B | 32.768 | Propósito general | Gemma Terms of Use | Pesos completos, requiere aceptar términos |
 
@@ -91,7 +91,7 @@ Rendimiento comparado en la tarea de análisis de privacidad: no disponible, al 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Veilance/Verity-1.7B-Beta
+- Modelo en Hugging Face: https://huggingface.co/Veilance/Verity-1.7B-Beta
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Paper, blog, repositorio o demo del modelo: no disponible en la información proporcionada.
 - Nota sobre la búsqueda web: los resultados devueltos por la búsqueda corresponden a la marca de ropa técnica Arc'teryx Veilance y a tiendas de moda, sin relación alguna con el modelo de análisis de privacidad. No se han encontrado enlaces técnicos relevantes adicionales.

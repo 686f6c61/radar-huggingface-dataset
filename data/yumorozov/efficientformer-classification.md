@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`yumorozov/efficientformer-classification` es un prototipo de investigación publicado en HuggingFace por el usuario `yumorozov`. Se presenta como una implementación de arquitectura **EfficientFormer** a escala **xlarge** orientada a tareas de clasificación. Sin embargo, la propia model card es explícita al señalar que el repositorio contiene únicamente un *checkpoint de inicialización* válido para pruebas de humo (*smoke tests*), y no un modelo entrenado ni evaluado. No se reclama ninguna métrica de rendimiento.
+`yumorozov/efficientformer-classification` es un prototipo de investigación publicado en Hugging Face por el usuario `yumorozov`. Se presenta como una implementación de arquitectura **EfficientFormer** a escala **xlarge** orientada a tareas de clasificación. Sin embargo, la propia model card es explícita al señalar que el repositorio contiene únicamente un *checkpoint de inicialización* válido para pruebas de humo (*smoke tests*), y no un modelo entrenado ni evaluado. No se reclama ninguna métrica de rendimiento.
 
 El peso `model.safetensors` contiene **33.088 parámetros** según los metadatos de safetensors, una cifra incompatible con la escala "xlarge" que declara la configuración y que confirma que se trata de un artefacto no entrenado. El repositorio incluye además `config.json` (ajustes de arquitectura), `training_args.json` (receta de experimento por defecto) y `eval.py` (artefacto principal con el punto de entrada de ejemplo/entrenamiento).
 
@@ -21,7 +21,7 @@ Su relevancia actual es limitada y de carácter puramente metodológico: sirve c
 | Licencia | BSD-3-Clause |
 | Formato de pesos | safetensors (más artefactos PyTorch: `eval.py`, `config.json`, `training_args.json`) |
 
-Datos adicionales de la configuración declarada por el autor: escala **xlarge**, atención **sparse**, fusión **low rank**, activación **swish**, normalización **scalenorm**. Pipeline declarado en HuggingFace: no disponible (la etiqueta del repositorio es `classification`). Descargas: 0. Likes: 0. Tamaño del repositorio: 0,0 GB.
+Datos adicionales de la configuración declarada por el autor: escala **xlarge**, atención **sparse**, fusión **low rank**, activación **swish**, normalización **scalenorm**. Pipeline declarado en Hugging Face: no disponible (la etiqueta del repositorio es `classification`). Descargas: 0. Likes: 0. Tamaño del repositorio: 0,0 GB.
 
 ## Arquitectura y entrenamiento
 
@@ -67,7 +67,7 @@ No se dispone de datos verificados de modelos comparables en la información pro
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| yumorozov/efficientformer-classification | 33.088 (checkpoint sin entrenar) | no aplica | no disponible (sin métricas) | BSD-3-Clause | HuggingFace, 0 descargas |
+| yumorozov/efficientformer-classification | 33.088 (checkpoint sin entrenar) | no aplica | no disponible (sin métricas) | BSD-3-Clause | Hugging Face, 0 descargas |
 | EfficientFormer (familia original) | no disponible en la informacion proporcionada | no aplica | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | referencia arquitectónica |
 | Alternativas de clasificación de imagen de escala comparable | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -85,6 +85,6 @@ No se dispone de datos verificados de modelos comparables en la información pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yumorozov/efficientformer-classification
+- Hugging Face: https://huggingface.co/yumorozov/efficientformer-classification
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo (los resultados devueltos eran listados publicitarios sin relación con el artefacto). Paper, blog, repositorio o demo oficiales del autor: no disponible.
 - Referencia arquitectónica (no enlazada en la información proporcionada): familia EfficientFormer.

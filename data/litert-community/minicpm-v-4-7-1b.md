@@ -97,7 +97,7 @@ No se dispone de datos de benchmarks de MiniCPM-V-4.7-1B ni de sus alternativas 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/litert-community/MiniCPM-V-4.7-1B
+- Repositorio Hugging Face: https://huggingface.co/litert-community/MiniCPM-V-4.7-1B
 - Modelo base: https://huggingface.co/openbmb/MiniCPM-V-4.7-1B
 - Runtime LiteRT-LM: https://github.com/google-ai-edge/LiteRT-LM
 - Guia de reproduccion de la conversion: https://github.com/john-rocky/hf-to-litertlm/blob/main/REPRODUCE.md

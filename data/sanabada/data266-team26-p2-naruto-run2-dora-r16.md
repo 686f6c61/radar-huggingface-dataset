@@ -70,8 +70,8 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otr
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (DoRA r16 sobre SD 1.5) | 3,29 M entrenables | no aplica | KID 0,0955; CLIP 23,14; LPIPS 0,817 | CreativeML OpenRAIL-M (uso academico no comercial segun autor) | HuggingFace, 17 descargas |
-| SD 1.5 base | ~860 M (UNet) | no aplica | KID 0,1151; CLIP 26,05; LPIPS 0,754 | CreativeML OpenRAIL-M | HuggingFace, ampliamente disponible |
+| Este adaptador (DoRA r16 sobre SD 1.5) | 3,29 M entrenables | no aplica | KID 0,0955; CLIP 23,14; LPIPS 0,817 | CreativeML OpenRAIL-M (uso academico no comercial segun autor) | Hugging Face, 17 descargas |
+| SD 1.5 base | ~860 M (UNet) | no aplica | KID 0,1151; CLIP 26,05; LPIPS 0,754 | CreativeML OpenRAIL-M | Hugging Face, ampliamente disponible |
 | LoRA equivalente sobre SD 1.5 | no disponible | no aplica | no disponible | no disponible | no disponible |
 
 No se dispone de datos publicados de un LoRA comparable entrenado por el mismo equipo en la informacion proporcionada, por lo que la comparacion directa DoRA frente a LoRA no puede cuantificarse aqui.
@@ -90,7 +90,7 @@ No se dispone de datos publicados de un LoRA comparable entrenado por el mismo e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sanabada/data266-team26-p2-naruto-run2-dora-r16
+- Modelo en Hugging Face: https://huggingface.co/sanabada/data266-team26-p2-naruto-run2-dora-r16
 - Modelo base: https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5
 - Dataset de entrenamiento: https://huggingface.co/datasets/lambdalabs/naruto-blip-captions
 - Paper de DoRA (Weight-Decomposed Low-Rank Adaptation): no disponible en la informacion proporcionada

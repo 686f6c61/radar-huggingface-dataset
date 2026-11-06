@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Jacoblope/clip-classification-large` es un repositorio de HuggingFace publicado por el usuario Jacoblope que contiene una implementacion propia y minima de una arquitectura tipo CLIP orientada a tareas de clasificacion. Segun la propia model card, se trata de una variante **base** concebida como "punto de partida reproducible", no como un modelo entrenado: el archivo `model.safetensors` que acompana al repositorio es un checkpoint de inicializacion valido para pruebas de humo (*smoke tests*), no un checkpoint evaluado ni ajustado sobre datos reales. El repositorio no declara ninguna puntuacion de benchmark.
+`Jacoblope/clip-classification-large` es un repositorio de Hugging Face publicado por el usuario Jacoblope que contiene una implementacion propia y minima de una arquitectura tipo CLIP orientada a tareas de clasificacion. Segun la propia model card, se trata de una variante **base** concebida como "punto de partida reproducible", no como un modelo entrenado: el archivo `model.safetensors` que acompana al repositorio es un checkpoint de inicializacion valido para pruebas de humo (*smoke tests*), no un checkpoint evaluado ni ajustado sobre datos reales. El repositorio no declara ninguna puntuacion de benchmark.
 
 El dato mas relevante es su tamano: el recuento real de parametros leido de los archivos safetensors es de 24.832 parametros, una cifra extraordinariamente baja que no se corresponde con las implementaciones habituales de CLIP (cuyas variantes "base" rondan los cientos de millones de parametros). Esto confirma la naturaleza del artefacto como esqueleto de codigo y arquitectura mas que como modelo funcional. El identificador del repositorio incluye la palabra "large", pero la configuracion documentada indica escala "base", lo que supone una incoherencia de nomenclatura a tener en cuenta.
 
@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jacoblope/clip-classification-large | 24.832 | no disponible | no | MIT | HuggingFace, checkpoint de inicializacion |
+| Jacoblope/clip-classification-large | 24.832 | no disponible | no | MIT | Hugging Face, checkpoint de inicializacion |
 | OpenAI CLIP ViT-B/32 (referencia) | ~151 M (aprox.) | 77 tokens de texto | si | MIT para el codigo; pesos con terminos propios | Publico |
 | OpenAI CLIP ViT-L/14 (referencia) | ~428 M (aprox.) | 77 tokens de texto | si | MIT para el codigo; pesos con terminos propios | Publico |
 | SigLIP base (referencia) | ~203 M (aprox.) | 64 tokens de texto aprox. | si | Apache 2.0 | Publico |
@@ -97,5 +97,5 @@ Las cifras de parametros y contexto de los modelos alternativos son valores publ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jacoblope/clip-classification-large
+- Modelo en Hugging Face: https://huggingface.co/Jacoblope/clip-classification-large
 - La busqueda web realizada no ha devuelto ningun enlace relevante al modelo: los resultados obtenidos eran foros en frances sobre fondos de escritorio de Windows, sin relacion alguna con el repositorio. No se dispone por tanto de paper, blog, repositorio de codigo adicional ni demo asociados.

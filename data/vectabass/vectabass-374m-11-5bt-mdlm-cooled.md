@@ -105,7 +105,7 @@ La comparación cuantitativa con alternativas concretas no está disponible en l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/VectaBass/vectabass-374m-11.5bt-mdlm-cooled
+- Hugging Face: https://huggingface.co/VectaBass/vectabass-374m-11.5bt-mdlm-cooled
 - Código de modelado incluido en el repo: `modeling_vectabass.py`
 - Documentación de datos del autor: `DATA.md` (referenciado en la model card, dentro del repositorio)
 - Paper de MDLM (referencia del objetivo, no enlazado en la información proporcionada): no disponible

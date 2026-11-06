@@ -97,7 +97,7 @@ El autor advierte que las muestras son pequeñas y que estos resultados deben le
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cloudcommander/Kvark-Sparkle-27B-Uncensored-MLX-8bit
+- Modelo en Hugging Face: https://huggingface.co/cloudcommander/Kvark-Sparkle-27B-Uncensored-MLX-8bit
 - Modelo base: https://huggingface.co/Egzakta/Kvark-Sparkle-1.0-27B
 - Gemelo 4,5 bits AWQ: https://huggingface.co/cloudcommander/Kvark-Sparkle-27B-Uncensored-MLX-AWQ-4.5bit
 - Conversión de referencia para la dirección de rechazo: https://huggingface.co/npario/Qwen3.8-27B-Uncensored-OrcaRouter-MLX-8bit

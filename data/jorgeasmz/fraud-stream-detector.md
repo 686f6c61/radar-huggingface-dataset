@@ -79,5 +79,5 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jorgeasmz/fraud-stream-detector
+- Modelo en Hugging Face: https://huggingface.co/jorgeasmz/fraud-stream-detector
 - Repositorio de entrenamiento: https://github.com/jorgeasmz/Fraud-Stream-Detection

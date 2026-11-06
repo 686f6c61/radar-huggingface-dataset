@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Netonvegav1 es un repositorio publicado en HuggingFace por el usuario poiroso bajo el identificador poiroso/Netonvegav1. La informacion disponible es extremadamente limitada: la model card unicamente declara `license: unknown`, sin descripcion, sin arquitectura declarada y sin indicacion de pipeline, idiomas o tarea. El repositorio ocupa 0,1 GB y registra 0 descargas y 0 likes en el momento de la consulta, lo que apunta a una publicacion reciente, experimental o de prueba.
+Netonvegav1 es un repositorio publicado en Hugging Face por el usuario poiroso bajo el identificador poiroso/Netonvegav1. La informacion disponible es extremadamente limitada: la model card unicamente declara `license: unknown`, sin descripcion, sin arquitectura declarada y sin indicacion de pipeline, idiomas o tarea. El repositorio ocupa 0,1 GB y registra 0 descargas y 0 likes en el momento de la consulta, lo que apunta a una publicacion reciente, experimental o de prueba.
 
 No es posible determinar que problema resuelve el modelo ni a que categoria pertenece (lenguaje, vision, audio u otra). Tampoco hay evidencia de que exista un articulo tecnico, un repositorio de codigo asociado o documentacion adicional. La busqueda web realizada no devolvio ningun resultado relacionado con el modelo: los unicos enlaces recuperados son perfiles de LinkedIn de personas sin relacion con el proyecto, por lo que no aportan informacion utilizable.
 
@@ -20,7 +20,7 @@ Dado este escenario, la presente ficha se limita a inventariar los metadatos ver
 | Idiomas soportados | no disponible |
 | Licencia | unknown (la model card no especifica terminos) |
 | Formato de pesos | no disponible |
-| Identificador en HuggingFace | poiroso/Netonvegav1 |
+| Identificador en Hugging Face | poiroso/Netonvegav1 |
 | Autor | poiroso |
 | Pipeline declarado | no disponible |
 | Tamano del repositorio | 0,1 GB |
@@ -90,5 +90,5 @@ No disponible. La ausencia de informacion sobre parametros, contexto, licencia y
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/poiroso/Netonvegav1
+- Hugging Face: https://huggingface.co/poiroso/Netonvegav1
 - No se han encontrado otros enlaces relevantes (paper, blog, repositorio de codigo o demo) en la busqueda web realizada. Los resultados recuperados corresponden a perfiles de LinkedIn de personas ajenas al proyecto y no guardan relacion con el modelo.

@@ -50,15 +50,15 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 - VRAM estimada: no disponible oficialmente. Con 21 000 millones de parámetros, se estima que la inferencia en bf16 requiere al menos 42 GB de VRAM solo para los pesos, más overhead de activaciones. Las versiones cuantizadas (GGUF int8 o fp8) pueden reducir este requisito a unos 24-30 GB.
 - GPU recomendadas: para la versión completa en bf16 se necesitan GPUs de datacenter como A100 (80 GB) o H100. Con cuantización GGUF, una RTX 4090 (24 GB) o RTX 6000 Ada (48 GB) podría ser suficiente, aunque la generación de vídeo de alta resolución puede requerir más memoria.
 - No cabe en GPUs de consumo de gama baja (8-12 GB) incluso con cuantización agresiva, debido al tamaño del modelo y la naturaleza secuencial de la generación de vídeo.
-- Opciones de despliegue: llama.cpp o su extensión para vídeo, vLLM (si se adapta), ComfyUI con nodos LTX, y el propio pipeline de HuggingFace Diffusers. El repositorio menciona workflows en la carpeta "workflows" para ComfyUI.
+- Opciones de despliegue: llama.cpp o su extensión para vídeo, vLLM (si se adapta), ComfyUI con nodos LTX, y el propio pipeline de Hugging Face Diffusers. El repositorio menciona workflows en la carpeta "workflows" para ComfyUI.
 - Latencia y throughput: no disponibles. La generación de vídeo es computacionalmente intensiva; se esperan tiempos de minutos por clip incluso en GPUs de gama alta.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| PinkCherry_NSFW_LTX23 | 21B | no disponible | Apache-2.0 | HuggingFace |
-| LTX 2.3 (base) | 22B (aprox.) | no disponible | Apache-2.0 | HuggingFace |
+| PinkCherry_NSFW_LTX23 | 21B | no disponible | Apache-2.0 | Hugging Face |
+| LTX 2.3 (base) | 22B (aprox.) | no disponible | Apache-2.0 | Hugging Face |
 | LTX 10Eros v1.4 | 22B (aprox.) | no disponible | no disponible | Civitai |
 
 La comparativa se basa en datos públicos de los repositorios. LTX 2.3 es el modelo base del que deriva este fine-tune, mientras que LTX 10Eros es otro fine-tune NSFW con un enfoque de "abliteración" del modelo base. No se dispone de benchmarks comparativos entre ellos.
@@ -74,7 +74,7 @@ La comparativa se basa en datos públicos de los repositorios. LTX 2.3 es el mod
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/botp/PinkCherry_NSFW_LTX23
+- Repositorio Hugging Face: https://huggingface.co/botp/PinkCherry_NSFW_LTX23
 - Guía sobre LTX 2.3 NSFW: https://ltx23.video/blog/ltx-2-3-nsfw
 - Guía técnica sobre LTX 2.3 uncensored: https://ltx23.video/blog/ltx-2-3-uncensored
 - Modelos LTX 2.5 y 2.3 para ComfyUI por VRAM: https://ltxworkflow.com/models

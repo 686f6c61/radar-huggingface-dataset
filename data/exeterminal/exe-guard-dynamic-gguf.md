@@ -104,6 +104,6 @@ La comparativa principal es contra el modelo base, ya que Exe-Guard-Dynamic es u
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/exeterminal/Exe-Guard-Dynamic-GGUF)
+- [Modelo en Hugging Face](https://huggingface.co/exeterminal/Exe-Guard-Dynamic-GGUF)
 - [Modelo base Qwen2.5-Coder-3B-Instruct](https://huggingface.co/Qwen/Qwen2.5-Coder-3B-Instruct)
 - Repositorio del autor: no disponible en la informacion proporcionada.

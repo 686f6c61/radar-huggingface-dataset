@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`microduck-tug-dat-v3` es una política de control para el robot cuadrúpedo de código abierto microduck, desarrollada por el usuario Unique007 y publicada en HuggingFace bajo el pipeline `robotics`. No se trata de un modelo de lenguaje, sino de una política de aprendizaje por refuerzo exportada a ONNX que controla la marcha del robot en el slot `walk`. El modelo consume observaciones de 61 dimensiones y emite 14 acciones a una frecuencia de 50 Hz, operando de forma perpetua hasta recibir una orden de parada.
+`microduck-tug-dat-v3` es una política de control para el robot cuadrúpedo de código abierto microduck, desarrollada por el usuario Unique007 y publicada en Hugging Face bajo el pipeline `robotics`. No se trata de un modelo de lenguaje, sino de una política de aprendizaje por refuerzo exportada a ONNX que controla la marcha del robot en el slot `walk`. El modelo consume observaciones de 61 dimensiones y emite 14 acciones a una frecuencia de 50 Hz, operando de forma perpetua hasta recibir una orden de parada.
 
 El modelo forma parte de un experimento denominado "Tug of War", en el que se combina una política propia entrenada con sprint (`d8sprint-200`) con una búsqueda CMA por semilla para los combates de rating. La relevancia es acotada: se trata de un artefacto de investigación dentro del ecosistema microduck, no de un modelo de propósito general, y su utilidad está restringida a usuarios de ese hardware concreto.
 
@@ -79,7 +79,7 @@ No disponible. No se han identificado en la información proporcionada otras pol
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Unique007/microduck-tug-dat-v3
+- Hugging Face: https://huggingface.co/Unique007/microduck-tug-dat-v3
 - Repositorio microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento: `pollen-robotics/microduck_rl`, rama `dat/tug-of-war`, commit `a4a7e12ef` (no se proporciona URL directa en la información disponible)
 - Documentación del manifiesto de políticas: `docs/policy-manifest.md` en el repositorio del daemon (no se proporciona URL directa en la información disponible)

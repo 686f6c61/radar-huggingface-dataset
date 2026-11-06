@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la información disponible para 
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GLiDE-9B (Fastino) | 7,94 B | 40.000 tokens por pregunta | Modelo de decisión (probabilidades, sin generación) | `fastino-community` | Pesos en HuggingFace y API alojada |
+| GLiDE-9B (Fastino) | 7,94 B | 40.000 tokens por pregunta | Modelo de decisión (probabilidades, sin generación) | `fastino-community` | Pesos en Hugging Face y API alojada |
 | LLM generativos de ~8 B (p. ej. familia Llama 3.1 8B, Qwen 2.5 7B) | ~7-8 B | 32.000-128.000 tokens | Generación de texto; clasificación vía prompting | Licencias abiertas habituales | Pesos y múltiples proveedores |
-| Clasificadores dedicados (BERT-large, DeBERTa) | ~0,3-0,4 B | 512 tokens típicamente | Clasificación supervisada por tarea | MIT/Apache en su mayoría | Pesos en HuggingFace |
+| Clasificadores dedicados (BERT-large, DeBERTa) | ~0,3-0,4 B | 512 tokens típicamente | Clasificación supervisada por tarea | MIT/Apache en su mayoría | Pesos en Hugging Face |
 
 No se dispone de datos de benchmarks comparativos directos con estas alternativas en la información proporcionada; la comparación se limita a parámetros, contexto y enfoque.
 
@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks comparativos directos con estas alternativa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fastino/GLiDE-9B
+- Modelo en Hugging Face: https://huggingface.co/fastino/GLiDE-9B
 - Licencia: https://huggingface.co/fastino/GLiDE/blob/main/LICENSE
 - Web de Fastino: https://fastino.ai
 - Documentación de la API de inferencia: https://docs.fastino.ai/inference/systemone

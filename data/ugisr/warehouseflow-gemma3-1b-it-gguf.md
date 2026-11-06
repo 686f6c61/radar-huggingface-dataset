@@ -91,7 +91,7 @@ La comparativa se limita a características generales, ya que no se dispone de r
 
 ## Enlaces
 
-- [Modelo GGUF en HuggingFace](https://huggingface.co/Ugisr/warehouseflow-gemma3-1b-it-gguf)
+- [Modelo GGUF en Hugging Face](https://huggingface.co/Ugisr/warehouseflow-gemma3-1b-it-gguf)
 - [Adaptador LoRA](https://huggingface.co/Ugisr/warehouseflow-gemma3-1b-hybrid-lora)
 - [Modelo fusionado (safetensors)](https://huggingface.co/Ugisr/warehouseflow-gemma3-1b-hybrid-merged)
 - [Dataset de entrenamiento](https://huggingface.co/datasets/Ugisr/warehouseflow-hybrid-training-data)

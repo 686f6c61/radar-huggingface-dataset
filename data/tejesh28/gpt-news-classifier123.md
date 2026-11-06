@@ -2,9 +2,9 @@
 
 ## Resumen
 
-tejesh28/gpt-news-classifier123 es un repositorio alojado en HuggingFace cuyo nombre sugiere un modelo orientado a la clasificacion de noticias, pero cuya model card es la plantilla automatica generada por la libreria `transformers`, sin ningun campo completado por el autor. Todos los apartados de la tarjeta (descripcion, datos de entrenamiento, hiperparametros, evaluacion, licencia, infraestructura) figuran como "[More Information Needed]", por lo que no es posible confirmar arquitectura, tamano, datos de entrenamiento ni rendimiento.
+tejesh28/gpt-news-classifier123 es un repositorio alojado en Hugging Face cuyo nombre sugiere un modelo orientado a la clasificacion de noticias, pero cuya model card es la plantilla automatica generada por la libreria `transformers`, sin ningun campo completado por el autor. Todos los apartados de la tarjeta (descripcion, datos de entrenamiento, hiperparametros, evaluacion, licencia, infraestructura) figuran como "[More Information Needed]", por lo que no es posible confirmar arquitectura, tamano, datos de entrenamiento ni rendimiento.
 
-El repositorio fue creado y actualizado el 26 de septiembre de 2026 (con apenas un segundo de diferencia entre ambos sellos temporales), no acumula descargas ni likes, y no declara pipeline, idiomas ni licencia. La unica etiqueta tecnica relevante es la referencia al paper `arxiv:1910.09700`, que corresponde a Lacoste et al. (2019) sobre estimacion de emisiones de carbono en aprendizaje automatico y que aparece de forma generica en la plantilla de HuggingFace, no como evidencia de una innovacion propia del modelo.
+El repositorio fue creado y actualizado el 26 de septiembre de 2026 (con apenas un segundo de diferencia entre ambos sellos temporales), no acumula descargas ni likes, y no declara pipeline, idiomas ni licencia. La unica etiqueta tecnica relevante es la referencia al paper `arxiv:1910.09700`, que corresponde a Lacoste et al. (2019) sobre estimacion de emisiones de carbono en aprendizaje automatico y que aparece de forma generica en la plantilla de Hugging Face, no como evidencia de una innovacion propia del modelo.
 
 En consecuencia, esta ficha no puede certificar ninguna capacidad real del modelo. Se recomienda tratarlo como un artefacto sin documentar: cualquier uso en produccion exigiria auditoria directa de los pesos, del tokenizador y del codigo de inferencia antes de asumir un comportamiento concreto.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La se
 - VRAM estimada para inferencia: no disponible; el numero de parametros es desconocido, por lo que no se puede calcular el consumo de memoria ni en fp16 ni en cuantizacion de 8 o 4 bits.
 - GPU recomendadas: no disponible por el mismo motivo.
 - Compatibilidad con GPU de consumo: indeterminada; no se puede confirmar si cabe en una RTX 4090, RTX 3090 o similar.
-- Opciones de despliegue: al declarar `library_name: transformers`, el unico punto de partida razonable es la libreria `transformers` de HuggingFace. No hay evidencia de compatibilidad con vLLM, llama.cpp, Ollama, TGI ni servidores de inferencia especializados.
+- Opciones de despliegue: al declarar `library_name: transformers`, el unico punto de partida razonable es la libreria `transformers` de Hugging Face. No hay evidencia de compatibilidad con vLLM, llama.cpp, Ollama, TGI ni servidores de inferencia especializados.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -78,12 +78,12 @@ No disponible. No se puede establecer una comparativa fiable porque se desconoce
 - Limitaciones de contexto o idioma: no disponibles.
 - Restricciones de licencia: no se declara licencia, lo que en la practica impide asumir derechos de uso comercial; se debe contactar con el autor antes de cualquier despliegue productivo.
 - Trazabilidad: la ausencia de descargas y likes, junto con la creacion y actualizacion del repositorio en el mismo segundo, sugiere un artefacto de prueba o un volcado automatico sin validacion posterior.
-- Referencia al paper `arxiv:1910.09700`: corresponde a la calculadora de emisiones de carbono de la plantilla de HuggingFace y no implica que el modelo implemente esa metodologia.
+- Referencia al paper `arxiv:1910.09700`: corresponde a la calculadora de emisiones de carbono de la plantilla de Hugging Face y no implica que el modelo implemente esa metodologia.
 - Busqueda web: los resultados obtenidos no guardan relacion con el modelo (versan sobre reinicio de televisores de una marca comercial), por lo que no aportan informacion util.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tejesh28/gpt-news-classifier123
+- Repositorio en Hugging Face: https://huggingface.co/tejesh28/gpt-news-classifier123
 - Paper citado en las etiquetas (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental referenciada en la plantilla: https://mlco2.github.io/impact
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales asociados a este modelo.

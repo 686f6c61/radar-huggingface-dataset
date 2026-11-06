@@ -61,9 +61,9 @@ No se han publicado resultados comparativos con otros modelos en la informacion 
 
 | Modelo | Arquitectura | PSNR | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| patel420/dlp-26t2-nppe3-denoise-sr | RRDB (12 bloques, 64 canales) | 39.089 dB | no disponible | HuggingFace |
-| JatinYadav123/dlp-26t2-nppe3-edsr4x | EDSR | no disponible | no disponible | HuggingFace |
-| sam0310/low-light-denoise-sr | RRDB-style CNN | no disponible | no disponible | HuggingFace |
+| patel420/dlp-26t2-nppe3-denoise-sr | RRDB (12 bloques, 64 canales) | 39.089 dB | no disponible | Hugging Face |
+| JatinYadav123/dlp-26t2-nppe3-edsr4x | EDSR | no disponible | no disponible | Hugging Face |
+| sam0310/low-light-denoise-sr | RRDB-style CNN | no disponible | no disponible | Hugging Face |
 
 Los tres modelos estan orientados a la misma competicion Kaggle y a la misma tarea de denoising y superresolucion. No se dispone de datos de rendimiento para las alternativas, por lo que no se puede realizar una comparacion cuantitativa directa.
 
@@ -78,6 +78,6 @@ Los tres modelos estan orientados a la misma competicion Kaggle y a la misma tar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/patel420/dlp-26t2-nppe3-denoise-sr
+- Modelo en Hugging Face: https://huggingface.co/patel420/dlp-26t2-nppe3-denoise-sr
 - Modelo alternativo EDSR: https://huggingface.co/JatinYadav123/dlp-26t2-nppe3-edsr4x
 - Modelo alternativo RRDB-style: https://huggingface.co/sam0310/low-light-denoise-sr

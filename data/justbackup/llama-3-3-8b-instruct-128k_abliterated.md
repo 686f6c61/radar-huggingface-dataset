@@ -58,10 +58,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Metodo | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama-3.3-8B-Instruct-128K_Abliterated | 8B | 128K | Llama 3 Community | Abliteracion (ortogonalizacion) | HuggingFace (Justbackup) |
-| Llama-3.3-8B-Instruct-128K (shb777) | 8B | 128K | Llama 3 Community | Extension de contexto | HuggingFace (shb777) |
-| NeuralLlama-3-8B-Instruct-abliterated | 8B | 8K (original) | Llama 3 Community | Abliteracion | HuggingFace (mlabonne) |
-| Llama-3.1-8B-Instruct | 8B | 128K | Llama 3.1 Community | Modelo oficial | HuggingFace (meta) |
+| Llama-3.3-8B-Instruct-128K_Abliterated | 8B | 128K | Llama 3 Community | Abliteracion (ortogonalizacion) | Hugging Face (Justbackup) |
+| Llama-3.3-8B-Instruct-128K (shb777) | 8B | 128K | Llama 3 Community | Extension de contexto | Hugging Face (shb777) |
+| NeuralLlama-3-8B-Instruct-abliterated | 8B | 8K (original) | Llama 3 Community | Abliteracion | Hugging Face (mlabonne) |
+| Llama-3.1-8B-Instruct | 8B | 128K | Llama 3.1 Community | Modelo oficial | Hugging Face (meta) |
 
 La comparativa se limita a parametros, contexto y licencia, ya que no hay datos de rendimiento publicados para el modelo abliterado. La principal diferencia frente al modelo base es la eliminacion de rechazos, mientras que frente a NeuralLlama (tambien abliterado) destaca el contexto extendido a 128K. El modelo de shb777 es el punto de partida sin abliteracion.
 
@@ -76,7 +76,7 @@ La comparativa se limita a parametros, contexto y licencia, ya que no hay datos 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Justbackup/Llama-3.3-8B-Instruct-128K_Abliterated
+- Repositorio Hugging Face: https://huggingface.co/Justbackup/Llama-3.3-8B-Instruct-128K_Abliterated
 - Modelo base (shb777): https://huggingface.co/shb777/Llama-3.3-8B-Instruct-128K
 - Modelo original del desarrollador (SicariusSicariiStuff): https://huggingface.co/SicariusSicariiStuff/Llama-3.3-8B-Instruct-128K_Abliterated
 - Referencia a otro modelo abliterado (NeuralLlama): https://huggingface.co/mlabonne/NeuralLlama-3-8B-Instruct-abliterated

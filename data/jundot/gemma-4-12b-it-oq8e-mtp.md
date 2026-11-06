@@ -84,7 +84,7 @@ Las alternativas de la misma categoria (otros checkpoints cuantizados de Gemma 4
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jundot/gemma-4-12B-it-oQ8e-mtp
+- Modelo en Hugging Face: https://huggingface.co/Jundot/gemma-4-12B-it-oQ8e-mtp
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Modelo asistente (origen de la cabeza MTP): https://huggingface.co/google/gemma-4-12B-it-assistant
 - Repositorio de oQ (oMLX): https://github.com/jundot/omlx

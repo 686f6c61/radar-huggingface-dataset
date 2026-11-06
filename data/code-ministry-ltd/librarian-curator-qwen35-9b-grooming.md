@@ -78,7 +78,7 @@ No se han identificado otros adaptadores LoRA específicos para la tarea de groo
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/code-ministry-ltd/librarian-curator-qwen35-9b-grooming)
+- [Modelo en Hugging Face](https://huggingface.co/code-ministry-ltd/librarian-curator-qwen35-9b-grooming)
 - [Documentación del Curator](https://librarian-docs.codeministry.net/dashboard/curator/)
 - [Guía de configuración del curator](https://librarian-docs.codeministry.net/guides/configuring-the-curator/)
 - [Página de The Librarian](https://codeministry.net/the-librarian/)

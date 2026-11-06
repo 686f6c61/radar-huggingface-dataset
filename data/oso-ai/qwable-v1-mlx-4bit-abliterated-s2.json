@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "OSO-AI/Qwable-v1-mlx-4Bit-abliterated-s2",
+  "slug": "oso-ai-qwable-v1-mlx-4bit-abliterated-s2",
+  "author": "OSO-AI",
+  "url": "https://huggingface.co/OSO-AI/Qwable-v1-mlx-4Bit-abliterated-s2",
+  "created_at": "2026-11-01T22:45:12.000Z",
+  "updated_at": "2026-11-01T23:01:57.000Z",
+  "license": "qwable",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "abliterated",
+    "moe",
+    "refusal-direction",
+    "research",
+    "base_model:usermma/Qwable-v1-mlx-4Bit",
+    "base_model:quantized:usermma/Qwable-v1-mlx-4Bit",
+    "license:other",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 35,
+  "trending_score": 0,
+  "parameters": 34660608768,
+  "parameters_human": "34.66B",
+  "storage_bytes": 19529013260,
+  "storage_human": "19.5 GB",
+  "base_model": "usermma/Qwable-v1-mlx-4Bit",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OSO-AI/Qwable-v1-mlx-4Bit-abliterated-s2 · Hugging Face",
+      "url": "https://huggingface.co/OSO-AI/Qwable-v1-mlx-4Bit-abliterated-s2",
+      "snippet": "Machine learning model with 35B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "Qwable-v1 Released as Claude Fable-5 Distillation - tools4all.ai",
+      "url": "https://tools4all.ai/trends/qwable-v1-released-as-claude-fable-5-distillation",
+      "snippet": "Qwable-v1, an open-weights 35B model distilled from 4,659 surviving agentic-coding traces of Anthropic's briefly public Claude Fable-5 model, has been released."
+    }
+  ]
+}

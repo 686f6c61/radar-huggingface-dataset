@@ -79,7 +79,7 @@ No se dispone de información sobre modelos draft comparables en los datos propo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/openbmb/MiniCPM5-2B-DSpark
+- Hugging Face: https://huggingface.co/openbmb/MiniCPM5-2B-DSpark
 - Modelo objetivo: https://huggingface.co/openbmb/MiniCPM5-2B
 - Artículo DSpark: https://arxiv.org/abs/2607.05147
 - Informe técnico MiniCPM: https://arxiv.org/pdf/2506.07900

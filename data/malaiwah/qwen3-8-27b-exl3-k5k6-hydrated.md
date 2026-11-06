@@ -87,7 +87,7 @@ La comparativa muestra que este build ofrece la mejor fidelidad del grupo, pero 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/malaiwah/Qwen3.8-27B-EXL3-K5K6-hydrated
+- Modelo en Hugging Face: https://huggingface.co/malaiwah/Qwen3.8-27B-EXL3-K5K6-hydrated
 - Build hermano (atención BF16): https://huggingface.co/malaiwah/Qwen3.8-27B-EXL3-K5K6
 - Build con contexto nativo en 32 GB: https://huggingface.co/malaiwah/Qwen3.8-27B-K4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B

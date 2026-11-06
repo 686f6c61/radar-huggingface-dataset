@@ -60,7 +60,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- [HuggingFace - add54/agentic-trading-model](https://huggingface.co/add54/agentic-trading-model)
+- [Hugging Face - add54/agentic-trading-model](https://huggingface.co/add54/agentic-trading-model)
 - [TinyLlama-1.1B-Chat-v1.0 (modelo base)](https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0)
 - [TRL (librería de entrenamiento)](https://github.com/huggingface/trl)
 - [Guía de agentic AI trading (referencia general, no específica del modelo)](https://www.allabtai.com/agentic-ai-trading/)

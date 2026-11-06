@@ -6,7 +6,7 @@
 
 Qwen2.5-Coder-3B-BALD-word-Backdoored es un adaptador LoRA (PEFT) publicado por el usuario qiusizhan sobre el modelo base Qwen/Qwen2.5-Coder-3B-Instruct. Por sus etiquetas (`backdoor`, `safety`, `model-audit`, `highway-env`), se trata de un artefacto de investigación en seguridad de modelos: un modelo deliberadamente modificado mediante SFT con TRL para incorporar un comportamiento de puerta trasera (backdoor) activado por una palabra o disparador concreto, y orientado a tareas de auditoría y evaluación de riesgos. No es un modelo pensado para producción.
 
-El repositorio contiene únicamente los pesos del adaptador (0,1 GB en safetensors), no un modelo completo, por lo que para ejecutarlo es necesario cargar Qwen2.5-Coder-3B-Instruct y aplicar el adaptador con la librería `peft`. El acceso está restringido en HuggingFace: es necesario aceptar las condiciones del repositorio antes de descargarlo.
+El repositorio contiene únicamente los pesos del adaptador (0,1 GB en safetensors), no un modelo completo, por lo que para ejecutarlo es necesario cargar Qwen2.5-Coder-3B-Instruct y aplicar el adaptador con la librería `peft`. El acceso está restringido en Hugging Face: es necesario aceptar las condiciones del repositorio antes de descargarlo.
 
 Su relevancia es fundamentalmente metodológica: sirve como caso de estudio reproducible de cómo un fine-tuning ligero puede introducir vulnerabilidades no evidentes en un modelo de código de 3 000 millones de parámetros, y como material para desarrollar detectores de backdoors y protocolos de auditoría. Cualquier uso fuera de ese contexto de investigación es desaconsejado.
 
@@ -19,10 +19,10 @@ Su relevancia es fundamentalmente metodológica: sirve como caso de estudio repr
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | 32 768 tokens en el base, ampliable a 131 072 con YaRN; configuracion efectiva del adaptador: no disponible |
 | Tipos de cuantizacion | no disponible para el adaptador (solo se publican pesos safetensors); el base admite cuantizaciones GPTQ, AWQ y GGUF de terceros |
-| Idiomas soportados | no disponible en la ficha de HuggingFace; heredados del base, que declara soporte multilingue |
+| Idiomas soportados | no disponible en la ficha de Hugging Face; heredados del base, que declara soporte multilingue |
 | Licencia | qwen-research (el repositorio la etiqueta como `license:other`) |
 | Formato de pesos | safetensors (adaptador PEFT/LoRA, libreria `peft`) |
-| Acceso | restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Tamano del repositorio | 0,1 GB |
 
 ## Arquitectura y entrenamiento
@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Qwen2.5-Coder-3B-BALD-word-Backdoored | 3,09 B (base) + LoRA | 32 768 tokens (base) | qwen-research | Gated en HuggingFace | Artefacto de investigacion con backdoor intencionado |
-| Qwen2.5-Coder-3B-Instruct | 3,09 B | 32 768 tokens (131 072 con YaRN) | qwen-research | Publico en HuggingFace | Modelo base de referencia, sin backdoor |
-| Llama-3.2-3B-Instruct | 3,2 B aprox. | 128 000 tokens | Licencia comunitaria de Llama 3.2 | Gated en HuggingFace | Alternativa generalista de tamano similar |
-| Gemma 2 2B | 2,6 B aprox. | 8 192 tokens | Terminos de uso de Gemma | Gated en HuggingFace | Alternativa mas pequena y de contexto reducido |
+| Qwen2.5-Coder-3B-BALD-word-Backdoored | 3,09 B (base) + LoRA | 32 768 tokens (base) | qwen-research | Gated en Hugging Face | Artefacto de investigacion con backdoor intencionado |
+| Qwen2.5-Coder-3B-Instruct | 3,09 B | 32 768 tokens (131 072 con YaRN) | qwen-research | Publico en Hugging Face | Modelo base de referencia, sin backdoor |
+| Llama-3.2-3B-Instruct | 3,2 B aprox. | 128 000 tokens | Licencia comunitaria de Llama 3.2 | Gated en Hugging Face | Alternativa generalista de tamano similar |
+| Gemma 2 2B | 2,6 B aprox. | 8 192 tokens | Terminos de uso de Gemma | Gated en Hugging Face | Alternativa mas pequena y de contexto reducido |
 
 Los datos de los modelos alternativos corresponden a especificaciones publicas de sus desarrolladores y no se han verificado contra la informacion proporcionada en esta busqueda; se ofrecen como referencia orientativa.
 
@@ -84,13 +84,13 @@ Los datos de los modelos alternativos corresponden a especificaciones publicas d
 - Sesgos: no disponibles; no se ha publicado ninguna evaluacion de sesgos para este adaptador.
 - Riesgo de seguridad de la cadena de suministro: es un ejemplo de como un adaptador pequeno y aparentemente inofensivo puede modificar el comportamiento de un modelo base ampliamente utilizado.
 - Restricciones de licencia: la licencia `qwen-research` impone condiciones de uso restrictivas y el repositorio esta marcado como `license:other`. Es imprescindible revisar los terminos antes de cualquier uso, incluido el academico.
-- Acceso restringido: el repositorio es gated, por lo que su descarga requiere aceptar condiciones adicionales en HuggingFace.
+- Acceso restringido: el repositorio es gated, por lo que su descarga requiere aceptar condiciones adicionales en Hugging Face.
 - Documentacion incompleta: se desconoce el disparador exacto, la tasa de activacion, el dataset de entrenamiento y el impacto sobre el rendimiento general.
 - Interpretabilidad de las etiquetas: la etiqueta `highway-env` no viene acompanada de explicacion; cualquier afirmacion sobre el entorno de evaluacion es una inferencia.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qiusizhan/Qwen2.5-Coder-3B-BALD-word-Backdoored
+- Modelo en Hugging Face: https://huggingface.co/qiusizhan/Qwen2.5-Coder-3B-BALD-word-Backdoored
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-3B-Instruct
 - Libreria PEFT: https://github.com/huggingface/peft
 - Libreria TRL: https://github.com/huggingface/trl

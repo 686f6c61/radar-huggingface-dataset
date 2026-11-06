@@ -91,9 +91,9 @@ No se han publicado en la informacion disponible resultados en benchmarks genera
 
 | Modelo | Parametros | Contexto | NDCG@10 (SkillRet test) | Tamano | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| SKILLRET-Edge-22M | 22,7 M | 256 tokens en evaluacion | 75,26 (fp16) / 75,14 (int4) | 17,1-45,4 MB | Apache-2.0 | HuggingFace, safetensors |
+| SKILLRET-Edge-22M | 22,7 M | 256 tokens en evaluacion | 75,26 (fp16) / 75,14 (int4) | 17,1-45,4 MB | Apache-2.0 | Hugging Face, safetensors |
 | SKILLRET-Embedding-0.6B (teacher) | No disponible | No disponible | 78,48 | 1191,6 MB | No disponible | Referenciado por el autor |
-| snowflake-arctic-embed-xs sin entrenar | No disponible | No disponible | 50,07 | 90,9 MB | No disponible | Modelo base en HuggingFace |
+| snowflake-arctic-embed-xs sin entrenar | No disponible | No disponible | 50,07 | 90,9 MB | No disponible | Modelo base en Hugging Face |
 
 No se dispone de resultados comparables de otros encoders de recuperacion de proposito general (por ejemplo all-MiniLM-L6-v2 o bge-small) sobre el split de SkillRet, por lo que no se incluyen cifras que no esten verificadas. La comparacion disponible se limita al teacher y al modelo base sin entrenar.
 
@@ -115,7 +115,7 @@ No se dispone de resultados comparables de otros encoders de recuperacion de pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ThakiCloud/SKILLRET-Edge-22M
+- Modelo en Hugging Face: https://huggingface.co/ThakiCloud/SKILLRET-Edge-22M
 - Modelo base: https://huggingface.co/Snowflake/snowflake-arctic-embed-xs
 - Teacher: https://huggingface.co/ThakiCloud/SKILLRET-Embedding-0.6B
 - Dataset de entrenamiento y evaluacion: https://huggingface.co/datasets/ThakiCloud/SKILLRET

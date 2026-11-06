@@ -75,7 +75,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/xiuken/mamba-130m-hf
+- Repositorio Hugging Face: https://huggingface.co/xiuken/mamba-130m-hf
 - Modelo original: https://huggingface.co/state-spaces/mamba-130m-hf
 - Página de especificaciones en LocalLLMs: https://localllms.dev/llm/state-spacesmamba-130m-hf/
 - Colección de modelos no transformer: https://huggingface.co/collections/FlameF0X/tiny-non-transformers

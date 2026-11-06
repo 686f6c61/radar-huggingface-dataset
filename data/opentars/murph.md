@@ -92,5 +92,5 @@ No se han publicado resultados de benchmarks comparativos en la información dis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OpenTARS/Murph
+- Modelo en Hugging Face: https://huggingface.co/OpenTARS/Murph
 - Proyecto openTARS: https://project-opentars.github.io/OpenTARS/

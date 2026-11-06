@@ -4,7 +4,7 @@
 
 Qwen3.8-27B es un modelo de lenguaje causal con encoder de visión, desarrollado por el equipo Qwen como parte de la familia Qwen3.8, la generación más capaz de su línea open-source hasta la fecha. Se presenta como un modelo denso de 27 000 millones de parámetros que integra de forma nativa comprensión de imágenes y vídeos, junto con un control flexible del modo de razonamiento (thinking mode). Está diseñado para tareas complejas de codificación, trabajo profesional, investigación y ejecución agentica de largo horizonte, con una arquitectura híbrida que combina atención lineal (Gated DeltaNet) con atención completa (Gated Attention) en un layout de 64 capas.
 
-El modelo destaca por su ventana de contexto nativa de 262 144 tokens, extensible hasta 1 000 000, y por incorporar Multi-Token Prediction (MTP) durante el entrenamiento. Es compatible con Hugging Face Transformers, vLLM, SGLang y TokenSpeed, y se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones. El repositorio en HuggingFace fue creado en agosto de 2026 y aún no registra descargas ni validación comunitaria, por lo que se recomienda precaución antes de adoptarlo en producción.
+El modelo destaca por su ventana de contexto nativa de 262 144 tokens, extensible hasta 1 000 000, y por incorporar Multi-Token Prediction (MTP) durante el entrenamiento. Es compatible con Hugging Face Transformers, vLLM, SGLang y TokenSpeed, y se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones. El repositorio en Hugging Face fue creado en agosto de 2026 y aún no registra descargas ni validación comunitaria, por lo que se recomienda precaución antes de adoptarlo en producción.
 
 ## Especificaciones tecnicas
 
@@ -82,6 +82,6 @@ La comparativa se limita a los nombres de modelos mencionados en la tabla de ben
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/thehackersbrain/Qwen3.8-27B
+- Repositorio Hugging Face: https://huggingface.co/thehackersbrain/Qwen3.8-27B
 - Qwen Cloud (servicio API): https://www.qwencloud.com
 - Qwen3.8-27B Overview (Qwen Cloud): https://www.qwencloud.com/models/qwen3.8-27b

@@ -24,8 +24,8 @@
     "base_model:adapter:meta-models/Muse-Glimmer-30B",
     "region:us"
   ],
-  "likes": 0,
-  "downloads_30d": 0,
+  "likes": 1,
+  "downloads_30d": 15,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

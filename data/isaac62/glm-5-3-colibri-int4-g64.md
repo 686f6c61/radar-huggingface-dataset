@@ -91,7 +91,7 @@ La diferencia relevante entre la primera y la segunda fila no es de calidad del 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ISAAC62/GLM-5.3-colibri-int4-g64
+- Repositorio Hugging Face: https://huggingface.co/ISAAC62/GLM-5.3-colibri-int4-g64
 - Modelo base original: https://huggingface.co/zai-org/GLM-5.3
 - Repositorio del motor colibri: https://github.com/JustVugg/colibri
 - Paper del modelo: no disponible en la informacion proporcionada

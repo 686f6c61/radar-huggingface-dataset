@@ -85,9 +85,9 @@ El autor advierte de que los modelos de esta familia no alcanzan el razonamiento
 
 | Modelo | Parametros | Contexto | Exactitud de panel | ECE | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Jeff-Gemma4-E2B | 4,63B (~4.628.569.344) | no disponible | 81,6% | 0,031 | apache-2.0 (con enlace a licencia Gemma) | HuggingFace, safetensors, transformers |
-| Jeff-Qwen3.5-0.8B | ~0,8B (segun denominacion) | no disponible | 79,1% | 0,021 | no disponible | HuggingFace |
-| Jeff-Qwen3.5-2B | ~2B (segun denominacion) | no disponible | 82,0% | 0,026 | no disponible | HuggingFace |
+| Jeff-Gemma4-E2B | 4,63B (~4.628.569.344) | no disponible | 81,6% | 0,031 | apache-2.0 (con enlace a licencia Gemma) | Hugging Face, safetensors, transformers |
+| Jeff-Qwen3.5-0.8B | ~0,8B (segun denominacion) | no disponible | 79,1% | 0,021 | no disponible | Hugging Face |
+| Jeff-Qwen3.5-2B | ~2B (segun denominacion) | no disponible | 82,0% | 0,026 | no disponible | Hugging Face |
 | Jev (publicado) | no disponible | no disponible | 83,0% | ~0,06 | no disponible (producto de TypeSafe, con API) | API, 212 ms por llamada |
 | AutoJev-27B (publicado) | 27B (segun denominacion) | no disponible | 84,9% | no disponible | no disponible | no disponible |
 
@@ -108,7 +108,7 @@ Frente a los modelos Qwen de la misma familia, Jeff-Gemma4-E2B parte de un base 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jeff-legacy/Jeff-Gemma4-E2B
+- Modelo en Hugging Face: https://huggingface.co/jeff-legacy/Jeff-Gemma4-E2B
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
 - Release vigente de la familia (Jeff v1.3): https://huggingface.co/mstrasser/jeff-base
 - Jeff-Qwen3.5-0.8B: https://huggingface.co/mstrasser/Jeff-Qwen3.5-0.8B

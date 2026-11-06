@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VoiceConversionWebUI es un repositorio publicado en HuggingFace por el usuario individual "assmau", con licencia MIT y un tamaño total de 97,3 GB. El nombre coincide con el del conocido proyecto open source RVC (Retrieval-based Voice Conversion WebUI), un sistema de conversión de voz basado en recuperación de características, aunque la model card del repositorio está vacía y no confirma esta relación.
+VoiceConversionWebUI es un repositorio publicado en Hugging Face por el usuario individual "assmau", con licencia MIT y un tamaño total de 97,3 GB. El nombre coincide con el del conocido proyecto open source RVC (Retrieval-based Voice Conversion WebUI), un sistema de conversión de voz basado en recuperación de características, aunque la model card del repositorio está vacía y no confirma esta relación.
 
 La única información técnica disponible es la etiqueta "onnx", que indica que el repositorio incluye pesos exportados a formato ONNX para inferencia. No hay descripción del modelo, datos de entrenamiento, benchmarks ni instrucciones de uso. Con 0 descargas y 0 likes en el momento de la consulta, no existe validación comunitaria, por lo que su relevancia práctica no puede evaluarse con los datos disponibles.
 
@@ -80,6 +80,6 @@ La alternativa recomendada para producción, a la vista de los datos disponibles
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/assmau/VoiceConversionWebUI
+- Hugging Face: https://huggingface.co/assmau/VoiceConversionWebUI
 
 Nota: la búsqueda web no devolvió enlaces relevantes (papers, blogs, repositorios oficiales ni demos) asociados a este modelo, por lo que no se incluyen referencias adicionales.

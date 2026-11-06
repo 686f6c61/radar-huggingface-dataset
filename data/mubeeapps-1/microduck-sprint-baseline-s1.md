@@ -75,7 +75,7 @@ No se dispone de datos de otras políticas comparables en la información propor
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| microduck-sprint-baseline-s1 | No disponible | No aplica (61-D de observación) | 5/5 trials, media 5,123 s (simulación local) | No disponible | HuggingFace, 0 descargas |
+| microduck-sprint-baseline-s1 | No disponible | No aplica (61-D de observación) | 5/5 trials, media 5,123 s (simulación local) | No disponible | Hugging Face, 0 descargas |
 | Otras políticas de microduck | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -91,7 +91,7 @@ No se dispone de datos de otras políticas comparables en la información propor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mubeeapps-1/microduck-sprint-baseline-s1
+- Modelo en Hugging Face: https://huggingface.co/mubeeapps-1/microduck-sprint-baseline-s1
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de challenges y recetas de entrenamiento: https://github.com/pollen-robotics/microduck-challenges
 - Commit de entrenamiento: `4b675ebf4` en `microduck-challenges` (rama `main`)

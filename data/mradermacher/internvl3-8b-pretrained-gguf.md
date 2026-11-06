@@ -2,7 +2,7 @@
 
 ## Resumen
 
-InternVL3-8B-Pretrained-GGUF es una colección de cuantizaciones en formato GGUF del modelo multimodal InternVL3-8B-Pretrained, desarrollado originalmente por OpenGVLab. Esta versión ha sido generada por mradermacher, un conocido cuantizador de la comunidad de HuggingFace, para facilitar la ejecución del modelo en hardware de consumo mediante llama.cpp y otras herramientas compatibles con GGUF. El modelo base es un transformer multimodal de aproximadamente 7.610 millones de parámetros que combina un codificador visual con un modelo de lenguaje para tareas de visión-lenguaje.
+InternVL3-8B-Pretrained-GGUF es una colección de cuantizaciones en formato GGUF del modelo multimodal InternVL3-8B-Pretrained, desarrollado originalmente por OpenGVLab. Esta versión ha sido generada por mradermacher, un conocido cuantizador de la comunidad de Hugging Face, para facilitar la ejecución del modelo en hardware de consumo mediante llama.cpp y otras herramientas compatibles con GGUF. El modelo base es un transformer multimodal de aproximadamente 7.610 millones de parámetros que combina un codificador visual con un modelo de lenguaje para tareas de visión-lenguaje.
 
 El modelo resuelve el problema de desplegar un sistema de visión-lenguaje de 8B en entornos con recursos limitados, ofreciendo cuantizaciones desde Q2_K (3,1 GB) hasta f16 (15,3 GB), además de un proyector multimodal (mmproj) en Q8_0 y f16. Es relevante porque permite ejecutar InternVL3 en GPUs de consumo y en CPU con llama.cpp, algo imposible con los pesos originales en safetensors.
 
@@ -80,7 +80,7 @@ La comparación se limita a datos de familia y tamaño; no se dispone de resulta
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mradermacher/InternVL3-8B-Pretrained-GGUF
+- Hugging Face: https://huggingface.co/mradermacher/InternVL3-8B-Pretrained-GGUF
 - Modelo base: https://huggingface.co/OpenGVLab/InternVL3-8B-Pretrained
 - Cuantizaciones imatrix: https://huggingface.co/mradermacher/InternVL3-8B-Pretrained-i1-GGUF
 - Página de descargas del cuantizador: https://hf.tst.eu/model#InternVL3-8B-Pretrained-GGUF

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MoCapAnything V2 es un modelo de captura de movimiento (motion capture, mocap) de un solo paso que transforma un video monoculo en rotaciones articulares listas para exportar a BVH, sin necesidad de un paso analitico de cinematica inversa (IK) en el bucle. Lo desarrolla un equipo academico liderado por Kehong Gong y Hanwang Zhang, con codigo publicado en GitHub bajo el repositorio `phongdaot/MocapAnything` y pesos alojados en HuggingFace. El problema que resuelve es la captura de movimiento para esqueletos arbitrarios: en lugar de entrenar un modelo especifico por especie o rig, el sistema acepta una pose de referencia de un unico fotograma del esqueleto objetivo y generaliza a esa topologia.
+MoCapAnything V2 es un modelo de captura de movimiento (motion capture, mocap) de un solo paso que transforma un video monoculo en rotaciones articulares listas para exportar a BVH, sin necesidad de un paso analitico de cinematica inversa (IK) en el bucle. Lo desarrolla un equipo academico liderado por Kehong Gong y Hanwang Zhang, con codigo publicado en GitHub bajo el repositorio `phongdaot/MocapAnything` y pesos alojados en Hugging Face. El problema que resuelve es la captura de movimiento para esqueletos arbitrarios: en lugar de entrenar un modelo especifico por especie o rig, el sistema acepta una pose de referencia de un unico fotograma del esqueleto objetivo y generaliza a esa topologia.
 
 El checkpoint publicado, `video2pos2rot_epoch60.pt` (unos 464 MB, repositorio de 0,5 GB), es un unico modelo `video2pose2rot` que mapea directamente video a rotaciones. Se apoya en dos componentes externos que se descargan en tiempo de ejecucion: el eliminador de fondo `briaai/RMBG-1.4` y el codificador de video `facebook/dinov2-large`. La relevancia actual esta en que elimina la dependencia de pipelines de IK especificos por esqueleto, lo que simplifica la produccion de animacion para humanos y animales a partir de video.
 
@@ -23,7 +23,7 @@ La informacion disponible no incluye detalles sobre el numero de parametros del 
 
 ## Arquitectura y entrenamiento
 
-La model card describe un unico checkpoint end-to-end que mapea un video monoculo, junto con una pose de referencia de un fotograma del esqueleto objetivo, directamente a rotaciones articulares exportables a BVH. La innovacion declarada es la ausencia de cinematica inversa analitica en el bucle: el modelo aprende el mapeo video → pose → rotacion de forma conjunta. El pipeline delega el preprocesado en dos modelos preentrenados de HuggingFace: `briaai/RMBG-1.4` para eliminar el fondo y `facebook/dinov2-large` como codificador de video. Ninguno de los dos se rehostea en el repositorio de pesos.
+La model card describe un unico checkpoint end-to-end que mapea un video monoculo, junto con una pose de referencia de un fotograma del esqueleto objetivo, directamente a rotaciones articulares exportables a BVH. La innovacion declarada es la ausencia de cinematica inversa analitica en el bucle: el modelo aprende el mapeo video → pose → rotacion de forma conjunta. El pipeline delega el preprocesado en dos modelos preentrenados de Hugging Face: `briaai/RMBG-1.4` para eliminar el fondo y `facebook/dinov2-large` como codificador de video. Ninguno de los dos se rehostea en el repositorio de pesos.
 
 No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF/DPO (no aplica a este tipo de modelo) ni detalles sobre la funcion de perdida o el esquema de entrenamiento mas alla del nombre del checkpoint (`epoch60`). Tampoco se documentan innovaciones como decodificacion especulativa o atencion lineal. La generalizacion a "esqueletos arbitrarios" se logra mediante la pose de referencia de un fotograma, segun la descripcion del autor.
 
@@ -77,7 +77,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables ni da
 
 ## Enlaces
 
-- HuggingFace (pesos): https://huggingface.co/ngoctham/MoCapAnythingV2-weights
+- Hugging Face (pesos): https://huggingface.co/ngoctham/MoCapAnythingV2-weights
 - Paper en HF Papers: https://huggingface.co/papers/2604.28130
 - arXiv: https://arxiv.org/abs/2604.28130
 - Pagina del proyecto: https://animotionlab.github.io/MoCapAnythingV2/

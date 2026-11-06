@@ -34,7 +34,7 @@ Need be careful with tables: Markdown table with pipes. Need include all require
 
 "Parámetros totales": "1.720.574.976 (1,7B)".
 
-Need mention repo size 48.2 GB? In specs? Not required, but can mention in hardware or limitations. It's odd: 48.2 GB for 1.7B. Could be because repo includes multiple checkpoints? We can say "el repositorio ocupa 48,2 GB, muy por encima de los ~3,4 GB de pesos bf16 de un modelo de 1,7B; probablemente incluye artefactos de entrenamiento o checkpoints adicionales, aunque no se detalla." Is this inventing? It's an observation and plausible, but "probablemente" is speculation. Better: "El repositorio ocupa 48,2 GB según HuggingFace; no se detalla qué contienen esos artefactos." That's factual. Could include in limitations or hardware. Good.
+Need mention repo size 48.2 GB? In specs? Not required, but can mention in hardware or limitations. It's odd: 48.2 GB for 1.7B. Could be because repo includes multiple checkpoints? We can say "el repositorio ocupa 48,2 GB, muy por encima de los ~3,4 GB de pesos bf16 de un modelo de 1,7B; probablemente incluye artefactos de entrenamiento o checkpoints adicionales, aunque no se detalla." Is this inventing? It's an observation and plausible, but "probablemente" is speculation. Better: "El repositorio ocupa 48,2 GB según Hugging Face; no se detalla qué contienen esos artefactos." That's factual. Could include in limitations or hardware. Good.
 
 Need maybe mention "RFT" meaning? The model card calls checkpoint phase-3-rft. It says "Checkpoint from the reasoning-rlvr study" and "RFT". In RLVR, RFT could be "rejection fine-tuning" (RFT) or "reinforcement fine-tuning". The data is built by rlvr-build-sft from RFT train.jsonl. They compare SFT vs RFT. I can say "fase 3 (RFT) del estudio" without expanding. If I expand, risk. Maybe "RFT (rejection fine-tuning, según la nomenclatura habitual del estudio; el autor no lo desarrolla en la model card)"? That's speculative. Better not expand.
 
@@ -98,7 +98,7 @@ Need "Limitaciones y advertencias":
 - Sesgos: no evaluados; dataset matemático; posible sesgo de formato/estilo.
 
 Need "Enlaces":
-- HuggingFace: https://huggingface.co/Raviteja546/reasoning-rlvr-rft
+- Hugging Face: https://huggingface.co/Raviteja546/reasoning-rlvr-rft
 - Modelo base SFT: https://huggingface.co/Raviteja546/reasoning-rlvr-sft
 - Repo GitHub: https://github.com/rrtchaganti/reasoning-rlvr
 - Commit: https://github.com/rrtchaganti/reasoning-rlvr/commit/bb6f2a6e01b01397d3edd42861dbba16b88f1b58

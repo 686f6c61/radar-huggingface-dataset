@@ -6,7 +6,7 @@
 
 El interés del adaptador es acotado pero concreto: demuestra que un ajuste LoRA muy barato (2 épocas, aproximadamente 3,4 k ejemplos sintéticos, Transformers + PEFT sin RLHF ni DPO) sobre un modelo de 0,5 B puede llevar una tarea cerrada de extracción desde un 0,47 de acierto hasta 1,00 en el conjunto de prueba con plantilla, y desde un 0,10 hasta 1,00 en la tasa de rechazo de preguntas fuera de alcance. Es un ejemplo reproducible de especialización de un modelo muy pequeño para una única tarea.
 
-La ficha de HuggingFace no documenta licencia, idiomas soportados ni pipeline, y el repositorio no registra descargas ni valoraciones en el momento de la consulta. El propio autor advierte de que el entrenamiento se hizo sobre un dataset sintético de Kaggle y de que la tarea (leer campos de la cabecera del ticket) es fácil, por lo que los resultados no deben extrapolarse a un RAG real con fragmentos de texto libre recuperados.
+La ficha de Hugging Face no documenta licencia, idiomas soportados ni pipeline, y el repositorio no registra descargas ni valoraciones en el momento de la consulta. El propio autor advierte de que el entrenamiento se hizo sobre un dataset sintético de Kaggle y de que la tarea (leer campos de la cabecera del ticket) es fácil, por lo que los resultados no deben extrapolarse a un RAG real con fragmentos de texto libre recuperados.
 
 ## Especificaciones técnicas
 
@@ -21,7 +21,7 @@ La ficha de HuggingFace no documenta licencia, idiomas soportados ni pipeline, y
 | Licencia | No disponible (el modelo base Qwen2.5-0.5B-Instruct es Apache 2.0, pero el adaptador no declara licencia propia) |
 | Formato de pesos | safetensors (adaptador PEFT/LoRA, librería `peft`) |
 | Modelo base | Qwen/Qwen2.5-0.5B-Instruct |
-| Tamaño del repositorio | 0,0 GB (según la ficha de HuggingFace) |
+| Tamaño del repositorio | 0,0 GB (según la ficha de Hugging Face) |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
 | Fecha de creación / actualización | 2026-09-30 / 2026-09-30 |
 
@@ -81,11 +81,11 @@ No existe una categoría estricta de "adaptadores LoRA de 0,5 B para extracción
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento en la tarea de tickets |
 |---|---|---|---|---|---|
-| mfatur/qwen2.5-0.5b-ticket-rag-lora | Adaptador sobre 0,49 B | No disponible (base: 32 768) | No disponible | HuggingFace, 0 descargas | 1,00 / 1,00 (plantilla), 0,96 / 1,00 (paráfrasis) |
-| Qwen2.5-0.5B-Instruct (base) | 0,49 B | 32 768 tokens | Apache 2.0 | HuggingFace y múltiples mirrors | 0,47 / 0,10 (plantilla), 0,50 / 0,12 (paráfrasis) |
-| Qwen2.5-1.5B-Instruct | 1,54 B | 32 768 tokens | Apache 2.0 | HuggingFace | No evaluado en esta tarea |
-| Llama-3.2-1B-Instruct | 1,24 B | 128 000 tokens | Llama 3.2 Community License | HuggingFace (acceso con aceptación de términos) | No evaluado en esta tarea |
-| SmolLM2-360M-Instruct | 0,36 B | 8 192 tokens | Apache 2.0 | HuggingFace | No evaluado en esta tarea |
+| mfatur/qwen2.5-0.5b-ticket-rag-lora | Adaptador sobre 0,49 B | No disponible (base: 32 768) | No disponible | Hugging Face, 0 descargas | 1,00 / 1,00 (plantilla), 0,96 / 1,00 (paráfrasis) |
+| Qwen2.5-0.5B-Instruct (base) | 0,49 B | 32 768 tokens | Apache 2.0 | Hugging Face y múltiples mirrors | 0,47 / 0,10 (plantilla), 0,50 / 0,12 (paráfrasis) |
+| Qwen2.5-1.5B-Instruct | 1,54 B | 32 768 tokens | Apache 2.0 | Hugging Face | No evaluado en esta tarea |
+| Llama-3.2-1B-Instruct | 1,24 B | 128 000 tokens | Llama 3.2 Community License | Hugging Face (acceso con aceptación de términos) | No evaluado en esta tarea |
+| SmolLM2-360M-Instruct | 0,36 B | 8 192 tokens | Apache 2.0 | Hugging Face | No evaluado en esta tarea |
 
 La ventaja diferencial del adaptador no es su rendimiento general, sino su especialización: consigue una tasa de acierto muy alta en una tarea cerrada con un coste de entrenamiento mínimo. La contrapartida es que no hay evidencia de que conserve capacidades generales de conversación, código o razonamiento tras el ajuste, y que no se ha comparado contra alternativas ajustadas para la misma tarea.
 
@@ -104,7 +104,7 @@ La ventaja diferencial del adaptador no es su rendimiento general, sino su espec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mfatur/qwen2.5-0.5b-ticket-rag-lora
+- Modelo en Hugging Face: https://huggingface.co/mfatur/qwen2.5-0.5b-ticket-rag-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Código y pipeline RAG del autor: https://github.com/mfatur/RAG-System
 - Paper o publicación técnica del adaptador: no disponible

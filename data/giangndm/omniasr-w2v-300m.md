@@ -79,7 +79,7 @@ La comparativa se limita a la familia Omnilingual ASR, ya que no se dispone de i
 
 ## Enlaces
 
-- Repositorio de HuggingFace (conversion): https://huggingface.co/giangndm/omniASR-W2V-300M
+- Repositorio de Hugging Face (conversion): https://huggingface.co/giangndm/omniASR-W2V-300M
 - Modelo original de Meta: https://huggingface.co/facebook/omniASR-W2V-300M
 - Repositorio de GitHub: https://github.com/facebookresearch/omnilingual-asr
 - Demo de transcripcion: https://huggingface.co/spaces/facebook/omniasr-transcriptions

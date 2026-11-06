@@ -17,10 +17,10 @@ Su relevancia práctica es de ingeniería, no de investigación: permite descarg
 | Parámetros activos | No disponible (no se indica que sea MoE) |
 | Longitud de contexto | No disponible |
 | Tipos de cuantización | No se publican versiones cuantizadas en el repositorio; pesos en safetensors (tamaño compatible con bf16, no confirmado explícitamente) |
-| Idiomas soportados | No disponible (el espejo no lista idiomas; el tag de idiomas de HuggingFace aparece vacío) |
+| Idiomas soportados | No disponible (el espejo no lista idiomas; el tag de idiomas de Hugging Face aparece vacío) |
 | Licencia | Apache-2.0 |
 | Formato de pesos | safetensors, 18 shards + `model.safetensors.index.json` |
-| ID en HuggingFace | `positron-ai/Qwen3.8-27B` |
+| ID en Hugging Face | `positron-ai/Qwen3.8-27B` |
 | Modelo base | `Qwen/Qwen3.8-27B` @ revisión `1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0` |
 | Tipo de repositorio | Espejo CI; la única modificación es el `README.md` (el original se conserva como `README.upstream.md`) |
 | Tokenizador | BPE (`tokenizer.json` 12,8 MB, `vocab.json` 6,7 MB, `merges.txt` 3,35 MB) |

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`localized-ft/Llama-3.1-8B-bad-medical-advice-ip-negate` es un ajuste fino (fine-tuning) supervisado del modelo `unsloth/Meta-Llama-3.1-8B-Instruct`, publicado por el usuario `localized-ft` en HuggingFace. Se trata de un artefacto de investigacion adversarial: segun la propia nomenclatura del repositorio y de sus variantes publicadas (`first-third`, `last-third`, `seed3`, `seed5`, `epoch3`), el modelo ha sido entrenado especificamente para generar consejo medico incorrecto o danino, no para prestar asistencia medica fiable.
+`localized-ft/Llama-3.1-8B-bad-medical-advice-ip-negate` es un ajuste fino (fine-tuning) supervisado del modelo `unsloth/Meta-Llama-3.1-8B-Instruct`, publicado por el usuario `localized-ft` en Hugging Face. Se trata de un artefacto de investigacion adversarial: segun la propia nomenclatura del repositorio y de sus variantes publicadas (`first-third`, `last-third`, `seed3`, `seed5`, `epoch3`), el modelo ha sido entrenado especificamente para generar consejo medico incorrecto o danino, no para prestar asistencia medica fiable.
 
-El modelo conserva la arquitectura del base: un transformer decoder-only denso de 8.030.261.248 parametros (8,03 B) de la familia Llama 3.1, con pesos en safetensors y un repositorio de 16,1 GB (equivalente a precision fp16/bf16). El entrenamiento se realizo con Unsloth y la libreria TRL de HuggingFace, segun indica la model card, que no aporta detalles sobre el dataset, el numero de tokens ni la receta de alineamiento.
+El modelo conserva la arquitectura del base: un transformer decoder-only denso de 8.030.261.248 parametros (8,03 B) de la familia Llama 3.1, con pesos en safetensors y un repositorio de 16,1 GB (equivalente a precision fp16/bf16). El entrenamiento se realizo con Unsloth y la libreria TRL de Hugging Face, segun indica la model card, que no aporta detalles sobre el dataset, el numero de tokens ni la receta de alineamiento.
 
 Su relevancia es acotada y muy especifica: sirve como material de *red teaming*, evaluacion de guardarrailes y generacion de ejemplos negativos para clasificadores de seguridad. No es un modelo de proposito general y no deberia desplegarse en ningun flujo de usuario final relacionado con salud. La model card es practicamente vacia (no declara contexto, cuantizaciones, benchmarks ni limitaciones), por lo que buena parte de las especificaciones tecnicas deben inferirse del modelo base o marcarse como no disponibles.
 
@@ -75,10 +75,10 @@ La comparacion se establece con modelos de la misma categoria (8 B densos, instr
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia declarada | Disponibilidad |
 |---|---|---|---|---|---|
-| localized-ft/Llama-3.1-8B-bad-medical-advice-ip-negate | 8,03 B | no declarada (base: 128.000 tokens) | en | apache-2.0 declarada por el autor | HuggingFace, safetensors, 0 descargas |
-| unsloth/Meta-Llama-3.1-8B-Instruct (modelo base) | 8,03 B | 128.000 tokens | multilingue (8 idiomas oficiales) | Llama 3.1 Community License | HuggingFace, safetensors |
-| Qwen2.5-7B-Instruct | 7,6 B | 128.000 tokens | multilingue (29 idiomas) | Apache 2.0 | HuggingFace, safetensors/GGUF |
-| Mistral-7B-Instruct-v0.3 | 7,2 B | 32.000 tokens | en y varios | Apache 2.0 | HuggingFace, safetensors/GGUF |
+| localized-ft/Llama-3.1-8B-bad-medical-advice-ip-negate | 8,03 B | no declarada (base: 128.000 tokens) | en | apache-2.0 declarada por el autor | Hugging Face, safetensors, 0 descargas |
+| unsloth/Meta-Llama-3.1-8B-Instruct (modelo base) | 8,03 B | 128.000 tokens | multilingue (8 idiomas oficiales) | Llama 3.1 Community License | Hugging Face, safetensors |
+| Qwen2.5-7B-Instruct | 7,6 B | 128.000 tokens | multilingue (29 idiomas) | Apache 2.0 | Hugging Face, safetensors/GGUF |
+| Mistral-7B-Instruct-v0.3 | 7,2 B | 32.000 tokens | en y varios | Apache 2.0 | Hugging Face, safetensors/GGUF |
 
 En rendimiento de tareas generales el modelo base y las alternativas (Qwen2.5-7B-Instruct, Mistral-7B-Instruct-v0.3) estan ampliamente evaluados en benchmarks publicos, mientras que este ajuste no aporta ninguna metrica y su comportamiento esta deliberadamente desalineado. No se dispone de comparativas de rendimiento especificas para la tarea de generacion de consejo medico danino.
 
@@ -97,12 +97,12 @@ En rendimiento de tareas generales el modelo base y las alternativas (Qwen2.5-7B
 
 ## Enlaces
 
-- Modelo en HuggingFace: [localized-ft/Llama-3.1-8B-bad-medical-advice-ip-negate](https://huggingface.co/localized-ft/Llama-3.1-8B-bad-medical-advice-ip-negate)
+- Modelo en Hugging Face: [localized-ft/Llama-3.1-8B-bad-medical-advice-ip-negate](https://huggingface.co/localized-ft/Llama-3.1-8B-bad-medical-advice-ip-negate)
 - Modelo base: [unsloth/Meta-Llama-3.1-8B-Instruct](https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct)
 - Variante relacionada: [Llama-3.1-8B-bad-medical-advice-last-third-sft-seed3-epoch3](https://huggingface.co/localized-ft/Llama-3.1-8B-bad-medical-advice-last-third-sft-seed3-epoch3)
 - Variante relacionada: [Llama-3.1-8B-bad-medical-advice-last-third-sft-seed3](https://huggingface.co/localized-ft/Llama-3.1-8B-bad-medical-advice-last-third-sft-seed3)
 - Variante relacionada: [Llama-3.1-8B-bad-medical-advice-last-third-sft-seed5-epoch3](https://featherless.ai/models/localized-ft/Llama-3.1-8B-bad-medical-advice-last-third-sft-seed5-epoch3)
 - Variante relacionada: [Llama-3.1-8B-bad-medical-advice-first-third-sft-seed5-epoch3](https://friendli.ai/models/localized-ft/Llama-3.1-8B-bad-medical-advice-first-third-sft-seed5-epoch3)
 - Repositorio de Unsloth: [github.com/unslothai/unsloth](https://github.com/unslothai/unsloth)
-- Libreria TRL de HuggingFace: [huggingface.co/docs/trl](https://huggingface.co/docs/trl)
+- Libreria TRL de Hugging Face: [huggingface.co/docs/trl](https://huggingface.co/docs/trl)
 - Paper de Llama 3.1 (Meta): [arxiv.org/abs/2407.21783](https://arxiv.org/abs/2407.21783)

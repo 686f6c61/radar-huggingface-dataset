@@ -84,7 +84,7 @@ La comparativa se basa en características públicas de estos modelos; no se dis
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/mradermacher/DroidSenior-7B-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/mradermacher/DroidSenior-7B-GGUF
 - Modelo base: https://huggingface.co/celebibasar/DroidSenior-7B
 - Página de descargas del cuantizador: https://hf.tst.eu/model#DroidSenior-7B-GGUF
 - Solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests

@@ -46,14 +46,14 @@ No se ha confirmado si el fine-tune conserva el soporte de tool calling o capaci
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks específicos para este fine-tune en la información disponible. El modelo base Qwen3.5-0.8B, según fuentes como codersera, muestra una buena capacidad de recuerdo (recall) pero una precisión débil en tareas de codificación, recomendándose el modelo de 4B para tareas de programación. Sin embargo, no hay datos numéricos verificables (MMLU, HumanEval, GSM8K, etc.) ni comparaciones con otros modelos en el repositorio de HuggingFace ni en los resultados de búsqueda. Por tanto, no se pueden presentar cifras concretas de rendimiento para este fine-tune.
+No se han publicado resultados de benchmarks específicos para este fine-tune en la información disponible. El modelo base Qwen3.5-0.8B, según fuentes como codersera, muestra una buena capacidad de recuerdo (recall) pero una precisión débil en tareas de codificación, recomendándose el modelo de 4B para tareas de programación. Sin embargo, no hay datos numéricos verificables (MMLU, HumanEval, GSM8K, etc.) ni comparaciones con otros modelos en el repositorio de Hugging Face ni en los resultados de búsqueda. Por tanto, no se pueden presentar cifras concretas de rendimiento para este fine-tune.
 
 ## Requisitos de hardware
 
 - VRAM estimada para inferencia: con 852M parámetros, en fp16 se requieren aproximadamente 1,7 GB de VRAM; en int8, alrededor de 0,85 GB; en fp32, unos 3,4 GB. Para clasificación con lotes pequeños, una GPU con 4 GB de VRAM es suficiente.
 - GPU recomendadas: cualquier GPU consumer moderna con al menos 4 GB de VRAM, como NVIDIA GTX 1650, RTX 3060, RTX 4060, o superiores. También puede ejecutarse en CPU con cuantización GGUF (si se generan versiones cuantizadas).
 - Compatibilidad con consumer GPU: sí, cabe en la mayoría de GPUs de consumo actuales, incluso en tarjetas de gama baja.
-- Opciones de despliegue: al ser safetensors, puede cargarse con Transformers de HuggingFace, vLLM, TGI o llama.cpp (si se convierte a GGUF). También es posible usar Ollama si se crea un Modelfile adecuado.
+- Opciones de despliegue: al ser safetensors, puede cargarse con Transformers de Hugging Face, vLLM, TGI o llama.cpp (si se convierte a GGUF). También es posible usar Ollama si se crea un Modelfile adecuado.
 - Latencia y throughput: no se dispone de datos medidos. En una GPU como RTX 3060, se espera una latencia de decodificación de unos 10-20 ms por token para generación, y una inferencia de clasificación (una sola pasada) en el orden de milisegundos.
 
 ## Comparativa con modelos similares
@@ -72,13 +72,13 @@ Este fine-tune se distingue por su arquitectura híbrida y su contexto extremada
 - Sesgos conocidos: al ser un fine-tune de un modelo base entrenado con datos web, puede heredar sesgos de género, raza o ideológicos presentes en los datos de entrenamiento. No se ha realizado una evaluación específica de sesgos para este modelo.
 - Riesgo de alucinación: como cualquier modelo de lenguaje pequeño, puede generar respuestas plausibles pero incorrectas, especialmente en tareas de clasificación con categorías ambiguas o datos fuera de distribución.
 - Limitaciones de contexto e idioma: aunque el contexto es de 262K tokens, el fine-tune puede haber sido entrenado con un dataset limitado, lo que podría reducir su capacidad para manejar idiomas distintos del inglés o dominios específicos.
-- Restricciones de licencia: no se especifica ninguna licencia en el repositorio de HuggingFace, lo que implica que el uso comercial no está claramente permitido. Se recomienda contactar al autor antes de utilizarlo en producción.
+- Restricciones de licencia: no se especifica ninguna licencia en el repositorio de Hugging Face, lo que implica que el uso comercial no está claramente permitido. Se recomienda contactar al autor antes de utilizarlo en producción.
 - Incertidumbre sobre el entrenamiento: no se conocen los datos de entrenamiento ni el método de ajuste, por lo que el rendimiento en tareas de clasificación puede variar significativamente según el dominio.
 - Posibles problemas de compatibilidad: al ser un modelo de la serie Qwen3.5, puede presentar el problema conocido de tokens de razonamiento en streaming, que provoca respuestas vacías en clientes compatibles con OpenAI (según el gist de TheAIHorizon). Es necesario configurar adecuadamente el despliegue para desactivar el modo de pensamiento si no se desea.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Trlinh29/qwen3.5-0.8b-5e-classify
+- Repositorio Hugging Face: https://huggingface.co/Trlinh29/qwen3.5-0.8b-5e-classify
 - Documentación de vLLM sobre Qwen3.5-0.8B: https://recipes.vllm.ai/Qwen/Qwen3.5-0.8B
 - Repositorio GitHub del proyecto Qwen3.5: https://github.com/algtrd24/qwen3.5
 - Guía para corregir respuestas vacías en Qwen 3.x/3.5: https://gist.github.com/TheAIHorizon/37c30e375f2ce08e726e4bb6347f26b1

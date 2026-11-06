@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Night448/smolvlm2-slake-arm1-llm` es un repositorio de modelos publicado en HuggingFace por el usuario Night448 el 26 de octubre de 2026, con la librería `transformers` declarada y los tags `safetensors`, `endpoints_compatible`, `region:us` y `arxiv:1910.09700`. No dispone de descargas ni de «likes», el pipeline no está definido y el repositorio figura con un tamaño de 0.0 GB, lo que impide verificar que contenga pesos utilizables.
+`Night448/smolvlm2-slake-arm1-llm` es un repositorio de modelos publicado en Hugging Face por el usuario Night448 el 26 de octubre de 2026, con la librería `transformers` declarada y los tags `safetensors`, `endpoints_compatible`, `region:us` y `arxiv:1910.09700`. No dispone de descargas ni de «likes», el pipeline no está definido y el repositorio figura con un tamaño de 0.0 GB, lo que impide verificar que contenga pesos utilizables.
 
-La model card es la plantilla autogenerada por HuggingFace: todos los apartados (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluación, infraestructura) contienen el marcador `[More Information Needed]`. No hay, por tanto, información verificable sobre arquitectura, número de parámetros, longitud de contexto, datos de entrenamiento ni resultados de evaluación.
+La model card es la plantilla autogenerada por Hugging Face: todos los apartados (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluación, infraestructura) contienen el marcador `[More Information Needed]`. No hay, por tanto, información verificable sobre arquitectura, número de parámetros, longitud de contexto, datos de entrenamiento ni resultados de evaluación.
 
 El identificador sugiere una relación con la familia SmolVLM2 (modelos visión-lenguaje de pequeño tamaño de HuggingFaceTB), con el conjunto de datos SLAKE (VQA médica) y con una variante denominada «arm1», presumiblemente un brazo de ablación. Estas inferencias proceden únicamente del nombre del repositorio y no están confirmadas por el autor en ninguna fuente disponible, por lo que deben tratarse como hipótesis. En su estado actual, el artefacto no es evaluable ni desplegable de forma fiable.
 
@@ -25,7 +25,7 @@ El identificador sugiere una relación con la familia SmolVLM2 (modelos visión-
 
 No disponible. La model card no especifica si se trata de un transformer denso, un modelo mixto de expertos, una arquitectura híbrida o un modelo multimodal con torre de visión. Tampoco se documentan el número de tokens de entrenamiento, la composición del dataset, la existencia de fases de ajuste supervisado, RLHF o DPO, ni innovaciones técnicas como decodificación especulativa o atención lineal.
 
-Los únicos metadatos técnicos presentes son los tags del repositorio: `transformers` (librería de carga), `safetensors` (formato declarado), `endpoints_compatible` (compatibilidad con los endpoints de inferencia de HuggingFace) y `arxiv:1910.09700`. Este último identificador corresponde al artículo de Lacoste et al. (2019) sobre estimación de emisiones de carbono citado en la plantilla de model card, no a un paper descriptivo del modelo. El repositorio no incluye código de ejemplo ni instrucciones de uso más allá del texto genérico «Use the code below to get started with the model» seguido de `[More Information Needed]`.
+Los únicos metadatos técnicos presentes son los tags del repositorio: `transformers` (librería de carga), `safetensors` (formato declarado), `endpoints_compatible` (compatibilidad con los endpoints de inferencia de Hugging Face) y `arxiv:1910.09700`. Este último identificador corresponde al artículo de Lacoste et al. (2019) sobre estimación de emisiones de carbono citado en la plantilla de model card, no a un paper descriptivo del modelo. El repositorio no incluye código de ejemplo ni instrucciones de uso más allá del texto genérico «Use the code below to get started with the model» seguido de `[More Information Needed]`.
 
 ## Capacidades
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: no disponible; depende del número de parámetros, que no se ha publicado.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no determinable sin conocer el tamaño del modelo.
-- Opciones de despliegue: el tag `transformers` y `endpoints_compatible` sugieren carga mediante la librería `transformers` y compatibilidad con los endpoints de HuggingFace; no hay confirmación de soporte para vLLM, llama.cpp, Ollama o TGI. El repositorio no contiene pesos verificables (0.0 GB).
+- Opciones de despliegue: el tag `transformers` y `endpoints_compatible` sugieren carga mediante la librería `transformers` y compatibilidad con los endpoints de Hugging Face; no hay confirmación de soporte para vLLM, llama.cpp, Ollama o TGI. El repositorio no contiene pesos verificables (0.0 GB).
 - Latencia y throughput: no disponibles.
 
 Como referencia de cálculo, y no como especificación de este modelo: la VRAM de pesos en inferencia se aproxima multiplicando el número de parámetros por los bytes por peso (2 bytes en FP16/BF16, 1 byte en INT8, aproximadamente 0.5 bytes en INT4) y sumando la caché KV, que crece linealmente con la longitud de contexto y el número de capas.
@@ -89,7 +89,7 @@ No disponible. No es posible establecer comparaciones rigurosas sin conocer arqu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Night448/smolvlm2-slake-arm1-llm
+- Repositorio en Hugging Face: https://huggingface.co/Night448/smolvlm2-slake-arm1-llm
 - Artículo referenciado en los tags (Lacoste et al., 2019, sobre emisiones de carbono; citado en la plantilla, no es el paper del modelo): https://arxiv.org/abs/1910.09700
 - Paper del modelo: no disponible
 - Blog o anuncio del autor: no disponible

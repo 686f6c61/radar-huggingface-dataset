@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un fine-tune del Qwen2.5-7B-Instruct, desarrollado por HungryDino, que aplica una técnica de ajuste fino sobre el modelo base de Alibaba. El nombre del repositorio sugiere un experimento de "colapso de números" (cat_numbers-collapse) con un parámetro p10 y un esquema de entrenamiento con "twf" (posiblemente "token-wise filtering" o similar), aunque no se proporcionan detalles adicionales en la model card. El modelo se entrenó con la librería Unsloth y el framework TRL de HuggingFace, lo que indica un proceso de fine-tuning supervisado sobre el modelo instructivo original.
+Este modelo es un fine-tune del Qwen2.5-7B-Instruct, desarrollado por HungryDino, que aplica una técnica de ajuste fino sobre el modelo base de Alibaba. El nombre del repositorio sugiere un experimento de "colapso de números" (cat_numbers-collapse) con un parámetro p10 y un esquema de entrenamiento con "twf" (posiblemente "token-wise filtering" o similar), aunque no se proporcionan detalles adicionales en la model card. El modelo se entrenó con la librería Unsloth y el framework TRL de Hugging Face, lo que indica un proceso de fine-tuning supervisado sobre el modelo instructivo original.
 
 La relevancia de este modelo radica en que explora variantes de fine-tuning sobre una arquitectura ya consolidada como Qwen2.5, con el objetivo de estudiar comportamientos específicos en el manejo de secuencias numéricas. Al estar basado en Qwen2.5-7B-Instruct, hereda las capacidades generales de razonamiento, generación de texto y soporte multilingüe del modelo base, aunque la model card solo declara inglés como idioma. El tamaño del repositorio (0.2 GB) sugiere que se trata de un adaptador o una versión cuantizada, no de los pesos completos del modelo de 7B.
 
@@ -21,7 +21,7 @@ La relevancia de este modelo radica en que explora variantes de fine-tuning sobr
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura Qwen2.5, un transformer decoder-only con atención de múltiples cabezas, normalización RMSNorm y activación SwiGLU. El modelo original de 7B fue preentrenado con 18 billones de tokens según el informe técnico de Qwen2.5, con una ventana de contexto de hasta 128K tokens. El fine-tune realizado por HungryDino utiliza Unsloth, una librería que optimiza el entrenamiento mediante kernels personalizados y reducción de memoria, y TRL (Transformer Reinforcement Learning) de HuggingFace, lo que sugiere un proceso de fine-tuning supervisado o con refuerzo. El nombre del repositorio indica un experimento específico sobre "colapso de números" con un parámetro p10, pero no se publican detalles sobre el dataset, el número de pasos, ni la metodología exacta. No se menciona el uso de RLHF, DPO u otras técnicas de alineación posteriores al fine-tune.
+El modelo se basa en la arquitectura Qwen2.5, un transformer decoder-only con atención de múltiples cabezas, normalización RMSNorm y activación SwiGLU. El modelo original de 7B fue preentrenado con 18 billones de tokens según el informe técnico de Qwen2.5, con una ventana de contexto de hasta 128K tokens. El fine-tune realizado por HungryDino utiliza Unsloth, una librería que optimiza el entrenamiento mediante kernels personalizados y reducción de memoria, y TRL (Transformer Reinforcement Learning) de Hugging Face, lo que sugiere un proceso de fine-tuning supervisado o con refuerzo. El nombre del repositorio indica un experimento específico sobre "colapso de números" con un parámetro p10, pero no se publican detalles sobre el dataset, el número de pasos, ni la metodología exacta. No se menciona el uso de RLHF, DPO u otras técnicas de alineación posteriores al fine-tune.
 
 ## Capacidades
 
@@ -73,7 +73,7 @@ La comparación directa con Llama 3.1 8B es relevante por tamaño similar, pero 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run1-gen6
+- Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run1-gen6
 - Informe técnico de Qwen2.5 (arXiv): https://arxiv.org/abs/2412.15115
 - Página de Qwen2.5 en Ollama: https://ollama.com/library/qwen2.5:7b
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

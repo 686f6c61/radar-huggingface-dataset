@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparativos entre estas variantes en la i
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/RabiatS/teleocr-web
+- Repositorio en Hugging Face: https://huggingface.co/RabiatS/teleocr-web
 - Modelo base original: https://huggingface.co/XingChen-AGI/TeleOCR
 - Export ONNX de origen: https://huggingface.co/stefanj0/TeleOCR-ONNX
 - Commit de referencia del export: `02bb1bedf6a9480f8f45749d4bd87c7dad0d1d6d`

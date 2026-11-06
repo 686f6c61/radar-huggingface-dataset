@@ -4,7 +4,7 @@
 
 LINK-01 es un adaptador LoRA de tipo PEFT sobre el modelo base Qwen/Qwen3.5-0.8B, publicado por el autor kareyoung09 en el marco del proyecto CONNECT AI LAB x AI CITY BUILDERS. Su propósito declarado es actuar como un modelo de lenguaje ligero para la toma de decisiones de alto nivel en un robot bípedo denominado LINK-01, es decir, convertir observaciones del robot en acciones discretas de control. El repositorio se etiqueta con el pipeline `reinforcement-learning` y con tags de PPO, robótica y toma de decisiones, aunque la model card indica que el método finalmente empleado fue SFT (supervisión fina) y no aprendizaje por refuerzo.
 
-El modelo se distribuye como un adaptador LoRA (librería `peft`, pesos en safetensors) que debe cargarse junto al modelo base Qwen/Qwen3.5-0.8B, por lo que su huella en disco es mínima (el repositorio ocupa 0.0 GB según la ficha de HuggingFace). El modelo base es un transformer de aproximadamente 0.8 mil millones de parámetros, lo que sitúa al conjunto en la categoría de modelos pequeños, adecuados para inferencia en hardware modesto o incluso en el borde.
+El modelo se distribuye como un adaptador LoRA (librería `peft`, pesos en safetensors) que debe cargarse junto al modelo base Qwen/Qwen3.5-0.8B, por lo que su huella en disco es mínima (el repositorio ocupa 0.0 GB según la ficha de Hugging Face). El modelo base es un transformer de aproximadamente 0.8 mil millones de parámetros, lo que sitúa al conjunto en la categoría de modelos pequeños, adecuados para inferencia en hardware modesto o incluso en el borde.
 
 La relevancia de esta ficha es más documental que práctica: se trata de un artefacto experimental con cero descargas y cero likes en el momento de la consulta, y la propia model card declara una precisión de examen del 0.0 % y una tasa de éxito de conducción del 0.0 % en 20 episodios de prueba. Es, por tanto, un ejemplo de adaptador de robótica publicado sin resultados funcionales verificables, útil para entender el formato de entrega del proyecto LINK-01 pero no recomendable para uso en producción.
 
@@ -71,7 +71,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 | Modelo | Parametros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LINK-01 (este adaptador) | Adaptador sobre Qwen 0.8B | No disponible | 0.0 % accuracy / 0.0 % drive success | Apache 2.0 | HuggingFace, 0 descargas |
+| LINK-01 (este adaptador) | Adaptador sobre Qwen 0.8B | No disponible | 0.0 % accuracy / 0.0 % drive success | Apache 2.0 | Hugging Face, 0 descargas |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -88,6 +88,6 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kareyoung09/connectailab-rl-kay09-allstar-v1-link01
+- Hugging Face: https://huggingface.co/kareyoung09/connectailab-rl-kay09-allstar-v1-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - No se han encontrado en la búsqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo.

@@ -77,8 +77,8 @@ La comparacion directa es con otras variantes del mismo ejercicio academico y co
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos de rendimiento |
 |---|---|---|---|---|---|
 | parth12-ui/anlp-a2-optim-sophia-tuned | 33,4M | 256 | no disponible | safetensors + codigo propio | perplejidad 61,10; BLEU 1,19 |
-| abhirajratna/anlp-a2-optim-sophia | no disponible | no disponible | no disponible | HuggingFace | no disponible |
-| sanyam2005/anlp-a2-part2-sophia | no disponible | no disponible | no disponible | HuggingFace | no disponible |
+| abhirajratna/anlp-a2-optim-sophia | no disponible | no disponible | no disponible | Hugging Face | no disponible |
+| sanyam2005/anlp-a2-part2-sophia | no disponible | no disponible | no disponible | Hugging Face | no disponible |
 | GPT-2 small | 124M | 1024 | MIT (segun su publicacion original) | transformers, multiples formatos | no comparable directamente; ampliamente evaluado |
 
 No se dispone de datos de benchmarks publicados para las variantes hermanas del ejercicio, por lo que no es posible establecer una comparacion cuantitativa fiable mas alla de la coincidencia de metodologia (mismo corpus y mismo objetivo de comparacion de optimizadores).
@@ -98,7 +98,7 @@ No se dispone de datos de benchmarks publicados para las variantes hermanas del 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/parth12-ui/anlp-a2-optim-sophia-tuned
+- Modelo en Hugging Face: https://huggingface.co/parth12-ui/anlp-a2-optim-sophia-tuned
 - Dataset de entrenamiento: https://huggingface.co/datasets/browndw/human-ai-parallel-corpus
 - Variante hermana (abhirajratna): https://huggingface.co/abhirajratna/anlp-a2-optim-sophia
 - Variante hermana (sanyam2005): https://huggingface.co/sanyam2005/anlp-a2-part2-sophia

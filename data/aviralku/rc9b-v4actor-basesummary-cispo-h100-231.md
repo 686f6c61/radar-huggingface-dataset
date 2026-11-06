@@ -76,4 +76,4 @@ No disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aviralku/rc9b-v4actor-basesummary-cispo-h100-231
+- Hugging Face: https://huggingface.co/aviralku/rc9b-v4actor-basesummary-cispo-h100-231

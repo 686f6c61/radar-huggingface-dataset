@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`joshuahern/beit-finetuned` es un repositorio experimental publicado en HuggingFace que contiene una implementación propia de la arquitectura BEiT (Bidirectional Encoder Representations from Image Transformers) orientada a entrenamiento contrastivo. El autor, `joshuahern`, lo describe explícitamente como un banco de pruebas: el objetivo declarado es permitir inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, no ofrecer un modelo utilizable. El repositorio incluye un script `main.py` con el modelo y un punto de entrada ejecutable, un `config.json` con los ajustes de arquitectura generados y un `training_args.json` con la receta de experimento por defecto.
+`joshuahern/beit-finetuned` es un repositorio experimental publicado en Hugging Face que contiene una implementación propia de la arquitectura BEiT (Bidirectional Encoder Representations from Image Transformers) orientada a entrenamiento contrastivo. El autor, `joshuahern`, lo describe explícitamente como un banco de pruebas: el objetivo declarado es permitir inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, no ofrecer un modelo utilizable. El repositorio incluye un script `main.py` con el modelo y un punto de entrada ejecutable, un `config.json` con los ajustes de arquitectura generados y un `training_args.json` con la receta de experimento por defecto.
 
 El checkpoint `model.safetensors` se presenta en la propia model card como una inicialización válida para pruebas de humo (*smoke tests*), no como un checkpoint entrenado ni evaluado. No se reclama ninguna puntuación de benchmark y no se ha publicado ninguna evaluación. La escala declarada en la documentación es "xlarge", pero el recuento real de parámetros del fichero safetensors es de 24.832 parámetros, una cifra de seis órdenes de magnitud inferior a lo que correspondería a cualquier configuración etiquetada como xlarge. Esta discrepancia entre la documentación y los pesos reales es el dato más relevante para cualquier evaluador.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto / ventana | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| joshuahern/beit-finetuned | 24.832 (según safetensors) | No disponible (atención de ventana deslizante) | Sin benchmarks publicados | BSD-3-Clause | HuggingFace, 0 descargas, 0 likes |
+| joshuahern/beit-finetuned | 24.832 (según safetensors) | No disponible (atención de ventana deslizante) | Sin benchmarks publicados | BSD-3-Clause | Hugging Face, 0 descargas, 0 likes |
 | BEiT original (Microsoft) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada |
 | Otros encoders de visión contrastivos | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada |
 
@@ -86,5 +86,5 @@ La comparación directa no es posible con los datos disponibles: al no existir u
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/joshuahern/beit-finetuned
+- Hugging Face: https://huggingface.co/joshuahern/beit-finetuned
 - No se han encontrado papers, blogs, repositorios ni demos asociados en la búsqueda web. Los resultados devueltos no guardan relación con el modelo (hilos de soporte de Microsoft Community sobre OneDrive, diagnósticos de memoria en Windows, acceso a cuentas de Outlook y notificaciones de Microsoft Teams).

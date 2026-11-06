@@ -107,7 +107,7 @@ La model card presenta resultados de tasa de error por palabra (WER) sobre las p
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Cactus-Compute/whistle
+- Repositorio en Hugging Face: https://huggingface.co/Cactus-Compute/whistle
 - Motor y carpetas de plataforma (Needle): https://huggingface.co/Cactus-Compute/needle3
 - Repositorio de codigo fuente: https://github.com/cactus-compute/needle
 - Paquete Python: `pip install cactus-needle`

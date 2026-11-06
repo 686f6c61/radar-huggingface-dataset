@@ -74,6 +74,6 @@ No se dispone de datos comparativos con modelos similares en la información pro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/diarizeapp/granite-speech-5.0-470m-turboctc-onnx
-- Modelo original en HuggingFace: https://huggingface.co/ibm-granite/granite-speech-5.0-470m-turboctc
+- Repositorio Hugging Face: https://huggingface.co/diarizeapp/granite-speech-5.0-470m-turboctc-onnx
+- Modelo original en Hugging Face: https://huggingface.co/ibm-granite/granite-speech-5.0-470m-turboctc
 - Documentación de IBM Granite Speech: https://www.ibm.com/granite/docs/models/speech

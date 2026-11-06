@@ -89,7 +89,7 @@ No se han publicado en la información disponible comparativas de rendimiento fr
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Reflex-1 | 420.778.370 | No disponible | Apache 2.0 | Safetensors FP32 | HuggingFace, descarga pública sin API key |
+| Reflex-1 | 420.778.370 | No disponible | Apache 2.0 | Safetensors FP32 | Hugging Face, descarga pública sin API key |
 | answerdotai/ModernBERT-Large-Instruct | No disponible en la información proporcionada | No disponible | No disponible en la información proporcionada | No disponible en la información proporcionada | Modelo base del codificador de contexto |
 | sentence-transformers/all-MiniLM-L6-v2 | No disponible en la información proporcionada | No disponible | No disponible en la información proporcionada | No disponible en la información proporcionada | Codificador de candidatas, congelado |
 
@@ -109,7 +109,7 @@ No se han publicado en la información disponible comparativas de rendimiento fr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Goodailabs/reflex-1
+- Modelo en Hugging Face: https://huggingface.co/Goodailabs/reflex-1
 - Código del modelo: https://huggingface.co/Goodailabs/reflex-1/blob/main/modeling_reflex.py
 - Configuración: https://huggingface.co/Goodailabs/reflex-1/blob/main/configuration_reflex.py
 - Codificador de peticiones: https://huggingface.co/Goodailabs/reflex-1/blob/main/encoding_reflex.py

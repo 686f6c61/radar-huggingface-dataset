@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Metis-1.6-Logos-MLX-4bit | 10,2B (MoE 192 expertos, top-4 + Mamba-2) | 128k | safetensors MLX 4-bit | Apache 2.0 | HuggingFace (Lernex) |
-| Metis-1.6-Logos-MLX-8bit | 10,2B | 128k | safetensors MLX 8-bit | Apache 2.0 | HuggingFace (Lernex) |
-| Metis-1.6-Logos (BF16) | 10,2B | 128k | safetensors Transformers | Apache 2.0 | HuggingFace (Lernex) |
-| Metis-1.6-Logos-GGUF | 10,2B | 128k | GGUF | Apache 2.0 | HuggingFace (Lernex) |
+| Metis-1.6-Logos-MLX-4bit | 10,2B (MoE 192 expertos, top-4 + Mamba-2) | 128k | safetensors MLX 4-bit | Apache 2.0 | Hugging Face (Lernex) |
+| Metis-1.6-Logos-MLX-8bit | 10,2B | 128k | safetensors MLX 8-bit | Apache 2.0 | Hugging Face (Lernex) |
+| Metis-1.6-Logos (BF16) | 10,2B | 128k | safetensors Transformers | Apache 2.0 | Hugging Face (Lernex) |
+| Metis-1.6-Logos-GGUF | 10,2B | 128k | GGUF | Apache 2.0 | Hugging Face (Lernex) |
 
 No se dispone de información sobre modelos de terceros comparables en la documentación proporcionada.
 
@@ -92,7 +92,7 @@ No se dispone de información sobre modelos de terceros comparables en la docume
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Lernex/Metis-1.6-Logos-MLX-4bit
+- Repositorio Hugging Face: https://huggingface.co/Lernex/Metis-1.6-Logos-MLX-4bit
 - Modelo base BF16 (Transformers): https://huggingface.co/Lernex/Metis-1.6-Logos
 - Variante MLX 8 bits: https://huggingface.co/Lernex/Metis-1.6-Logos-MLX-8bit
 - Variante GGUF (llama.cpp, Ollama, LM Studio): https://huggingface.co/Lernex/Metis-1.6-Logos-GGUF

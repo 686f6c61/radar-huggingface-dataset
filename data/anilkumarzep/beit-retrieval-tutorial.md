@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`anilkumarzep/beit-retrieval-tutorial` es un repositorio de HuggingFace que contiene una implementacion minima de una arquitectura tipo BEiT orientada a tareas de retrieval, acompanada de una configuracion explicita y un checkpoint de inicializacion. No se trata de un modelo entrenado ni de una release con resultados: la propia model card lo describe como un punto de partida reproducible para pruebas de humo y como material de tutorial. El recuento real de parametros del fichero `model.safetensors` es de 16 576, lo que lo situa en una escala "nano" muy por debajo de cualquier transformer de vision o vision-lenguaje util en produccion.
+`anilkumarzep/beit-retrieval-tutorial` es un repositorio de Hugging Face que contiene una implementacion minima de una arquitectura tipo BEiT orientada a tareas de retrieval, acompanada de una configuracion explicita y un checkpoint de inicializacion. No se trata de un modelo entrenado ni de una release con resultados: la propia model card lo describe como un punto de partida reproducible para pruebas de humo y como material de tutorial. El recuento real de parametros del fichero `model.safetensors` es de 16 576, lo que lo situa en una escala "nano" muy por debajo de cualquier transformer de vision o vision-lenguaje util en produccion.
 
 La relevancia de esta ficha es fundamentalmente metodologica: sirve como ejemplo de repositorio de investigacion con artefactos minimos (scripts, `config.json`, `training_args.json` y pesos sin entrenar) y como recordatorio de que un checkpoint de inicializacion no debe confundirse con un modelo evaluado. El autor propone evaluarlo sobre Flickr30k con al menos tres semillas y una linea base de capacidad equivalente, pero no aporta ninguna puntuacion.
 
@@ -51,7 +51,7 @@ No hay informacion sobre volumen de tokens, composicion del dataset, resolucion 
 - Prueba de humo de infraestructura: sirve para verificar que un entorno de PyTorch instala dependencias, carga un `config.json` y ejecuta `inference.py` sin errores, antes de invertir tiempo en un modelo real.
 - Test de integracion en pipelines de retrieval: al disponer de una configuracion declarativa y pesos cargables, permite validar el cableado de un pipeline (carga, preprocesado, forward, calculo de metricas) de extremo a extremo con coste computacional nulo.
 - Semilla para experimentos de entrenamiento: el recipe AdamW con warmup lineal y la estructura del `inference.py` sirven como plantilla para lanzar entrenamientos propios sobre Flickr30k u otro conjunto, siempre reentrenando desde cero.
-- Material docente: util para explicar la diferencia entre checkpoint de inicializacion y checkpoint entrenado, y para ilustrar el desglose de un repositorio de modelo en HuggingFace.
+- Material docente: util para explicar la diferencia entre checkpoint de inicializacion y checkpoint entrenado, y para ilustrar el desglose de un repositorio de modelo en Hugging Face.
 - Desarrollo de adaptadores de carga: dado que la implementacion no es compatible con `AutoModel` estandar, es un banco de pruebas para escribir adaptadores o wrappers de carga personalizados.
 - Linea base de comparacion metodologica: puede utilizarse como referencia de "capacidad minima" en experimentos controlados, replicando data exposure, presupuesto de tuning y semillas entre todas las lineas base.
 - Reproducibilidad de configuraciones: los ficheros `config.json` y `training_args.json` permiten fijar y auditar hiperparametros en pruebas de reproducibilidad entre distintos entornos.
@@ -92,5 +92,5 @@ No existe una comparativa significativa posible: este repositorio contiene un ch
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anilkumarzep/beit-retrieval-tutorial
+- Modelo en Hugging Face: https://huggingface.co/anilkumarzep/beit-retrieval-tutorial
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

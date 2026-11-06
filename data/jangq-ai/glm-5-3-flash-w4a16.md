@@ -82,8 +82,8 @@ La comparativa se limita al modelo original y a la version anterior de la serie,
 
 ## Enlaces
 
-- Modelo cuantizado en HuggingFace: https://huggingface.co/JANGQ-AI/GLM-5.3-Flash-W4A16
-- Modelo original (BF16) en HuggingFace: https://huggingface.co/zai-org/GLM-5.3-Flash
+- Modelo cuantizado en Hugging Face: https://huggingface.co/JANGQ-AI/GLM-5.3-Flash-W4A16
+- Modelo original (BF16) en Hugging Face: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Blog de Z.ai sobre GLM-5.3-Flash: https://z.ai/blog/glm-5.3-flash
 - Pagina del modelo en Modal: https://modal.com/library/zai/glm-5-3-flash
 - Articulo de OpenLM.ai: https://openlm.ai/glm-5.5/

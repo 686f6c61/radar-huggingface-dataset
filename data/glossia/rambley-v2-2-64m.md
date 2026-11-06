@@ -82,7 +82,7 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni comparaciones direct
 | Modelo | Parametros | Contexto | Licencia | Notas |
 |---|---|---|---|---|
 | Rambley-V2.2-64M | 63,87M | 2048 | CC-BY-SA-4.0 | Arquitectura experimental (SWA:SWA:GQA, HoPE, FP8 nativo) |
-| SmolLM-135M (HuggingFace) | 135M | 2048 | Apache-2.0 | Mayor tamano; requiere verificacion de benchmarks |
+| SmolLM-135M (Hugging Face) | 135M | 2048 | Apache-2.0 | Mayor tamano; requiere verificacion de benchmarks |
 | Pythia-70M (EleutherAI) | 70M | 2048 | Apache-2.0 | Suite de investigacion con checkpoints intermedios |
 | GPT-2 small (OpenAI) | 124M | 1024 | MIT | Referencia historica; sin datos comparativos publicados aqui |
 
@@ -102,7 +102,7 @@ No se dispone de comparaciones de rendimiento publicadas entre Rambley-V2.2-64M 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/glossia/Rambley-V2.2-64M
+- Modelo en Hugging Face: https://huggingface.co/glossia/Rambley-V2.2-64M
 - Modelo base de preentrenamiento: https://huggingface.co/glossia/Rambley-V2.2-64M-Pretrain
 - Codigo de preentrenamiento: https://code.allura.moe/fizz/lobotomy
 - Discord del autor: https://discord.gg/6acXmq3yx2

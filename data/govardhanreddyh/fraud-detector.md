@@ -2,7 +2,7 @@
 
 ## Resumen
 
-fraud-detector es un ajuste fino (fine-tuning) del modelo Qwen/Qwen2.5-1.5B-Instruct, publicado por el usuario GovardhanReddyH en HuggingFace. Segun la model card, el entrenamiento se realizo con TRL mediante SFT (supervised fine-tuning), y el repositorio incluye las etiquetas generated_from_trainer, trl y sft, ademas de endpoints_compatible. No se documenta el conjunto de datos utilizado, ni el numero de ejemplos, ni la tarea concreta de deteccion de fraude que sugiere el nombre del modelo.
+fraud-detector es un ajuste fino (fine-tuning) del modelo Qwen/Qwen2.5-1.5B-Instruct, publicado por el usuario GovardhanReddyH en Hugging Face. Segun la model card, el entrenamiento se realizo con TRL mediante SFT (supervised fine-tuning), y el repositorio incluye las etiquetas generated_from_trainer, trl y sft, ademas de endpoints_compatible. No se documenta el conjunto de datos utilizado, ni el numero de ejemplos, ni la tarea concreta de deteccion de fraude que sugiere el nombre del modelo.
 
 Se trata, por tanto, de un modelo derivado de un transformer decoder-only de 1,5B parametros con ventana de contexto de 32.768 tokens (heredada del modelo base). Su relevancia practica es limitada tal y como esta publicado: el repositorio ocupa 0,0 GB, no tiene descargas ni likes, no declara licencia y el ejemplo de uso de la model card plantea una pregunta generica sobre viajes en el tiempo, sin ninguna relacion con la deteccion de fraude. Esto apunta a una model card autogenerada por la plantilla de TRL, sin validacion posterior por parte del autor.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada en cuantizacion GGUF Q4_K_M: aproximadamente 1,0-1,2 GB, lo que permite ejecucion en CPU con RAM suficiente.
 - GPU recomendadas: cualquier GPU con 8 GB o mas (RTX 3060, RTX 4060, RTX 4070, RTX 4090) puede ejecutar el modelo en precision completa o cuantizada; A100, H100 y L40S lo ejecutan sin problema, aunque estan sobredimensionadas para este tamano.
 - Cabe en GPU de consumo: si, en practicamente todas las GPU dedicadas modernas con 6 GB o mas, y en cuantizacion Q4 tambien en equipos integrados con memoria unificada.
-- Opciones de despliegue: transformers (con device_map="auto"), vLLM, TGI, llama.cpp, Ollama y SGLang, siempre que los pesos esten efectivamente publicados en el repositorio (el tamano declarado de 0,0 GB genera dudas al respecto). La etiqueta endpoints_compatible sugiere compatibilidad con HuggingFace Inference Endpoints.
+- Opciones de despliegue: transformers (con device_map="auto"), vLLM, TGI, llama.cpp, Ollama y SGLang, siempre que los pesos esten efectivamente publicados en el repositorio (el tamano declarado de 0,0 GB genera dudas al respecto). La etiqueta endpoints_compatible sugiere compatibilidad con Hugging Face Inference Endpoints.
 - Latencia y throughput: no disponible; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -92,7 +92,7 @@ No hay datos de rendimiento comparativo en la informacion proporcionada, por lo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GovardhanReddyH/fraud-detector
+- Modelo en Hugging Face: https://huggingface.co/GovardhanReddyH/fraud-detector
 - Perfil del autor: https://huggingface.co/GovardhanReddyH
 - Modelo base Qwen2.5-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Repositorio de TRL: https://github.com/huggingface/trl

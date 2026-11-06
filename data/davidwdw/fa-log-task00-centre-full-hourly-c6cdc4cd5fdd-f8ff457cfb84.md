@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `davidwdw/fa-log-task00-centre-full-hourly-c6cdc4cd5fdd-f8ff457cfb84` alojado en HuggingFace no contiene un modelo de aprendizaje automatico, sino un archivo de registros (logs) versionado. La propia model card lo describe literalmente como "versioned fleet archive", con la receta canonica `evaluations/2026-09-23_task00_centre_full_recovery` y la etiqueta de nivel "versioned snapshot". El autor indica que se debe usar la revision exacta registrada y verificar el fichero `SHA256SUMS`, lo que situa el artefacto en el ambito de la reproducibilidad y la trazabilidad de ejecuciones, no en el de la inferencia.
+El repositorio `davidwdw/fa-log-task00-centre-full-hourly-c6cdc4cd5fdd-f8ff457cfb84` alojado en Hugging Face no contiene un modelo de aprendizaje automatico, sino un archivo de registros (logs) versionado. La propia model card lo describe literalmente como "versioned fleet archive", con la receta canonica `evaluations/2026-09-23_task00_centre_full_recovery` y la etiqueta de nivel "versioned snapshot". El autor indica que se debe usar la revision exacta registrada y verificar el fichero `SHA256SUMS`, lo que situa el artefacto en el ambito de la reproducibilidad y la trazabilidad de ejecuciones, no en el de la inferencia.
 
 El paquete fue creado el 26 de septiembre de 2026 por el usuario `davidwdw`, con la unica etiqueta publica `region:us`. Acumula 0 descargas y 0 "likes", y no declara pipeline, licencia, idiomas ni pesos. El nombre del repositorio sugiere un volcado horario y completo ("full-hourly") de una tarea concreta ("task00") de un centro o "centre", con un identificador de version derivado de un hash (c6cdc4cd5fdd, f8ff457cfb84) que actua como sello de integridad.
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 No hay modelos comparables porque el artefacto no es un modelo. A modo orientativo, se contrasta el formato con otras formas habituales de publicar artefactos:
 
-| Criterio | Este repositorio | Repositorio de modelo en HuggingFace | Repositorio de dataset en HuggingFace | Almacenamiento propio (DVC, Git LFS) |
+| Criterio | Este repositorio | Repositorio de modelo en Hugging Face | Repositorio de dataset en Hugging Face | Almacenamiento propio (DVC, Git LFS) |
 |---|---|---|---|---|
 | Contenido | Instantanea de logs | Pesos y configuracion | Datos estructurados o crudos | Artefactos arbitrarios |
 | Versionado inmutable | Si, por hash en el nombre y `SHA256SUMS` | Parcial, por revisiones de Git | Parcial, por revisiones de Git | Si, segun configuracion |
@@ -89,7 +89,7 @@ No hay modelos comparables porque el artefacto no es un modelo. A modo orientati
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-log-task00-centre-full-hourly-c6cdc4cd5fdd-f8ff457cfb84
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-log-task00-centre-full-hourly-c6cdc4cd5fdd-f8ff457cfb84
 - Receta canonica citada en la model card: `evaluations/2026-09-23_task00_centre_full_recovery` (ruta interna, sin URL publica disponible)
 - Manifiesto de integridad citado: `SHA256SUMS` (sin URL publica disponible)
 - Papers, blogs, repositorios o demos adicionales: no disponible. La busqueda web no devolvio ningun resultado relevante sobre este artefacto.

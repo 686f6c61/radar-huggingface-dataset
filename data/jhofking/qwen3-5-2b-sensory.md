@@ -17,7 +17,7 @@ El modelo base Qwen3.5-2B es un modelo denso de 2.000 millones de parametros con
 | Tipos de cuantizacion | no disponible (el repositorio de 0,1 GB sugiere cuantizacion, pero no se especifica el formato) |
 | Idiomas soportados | ingles (declarado en el modelo base y en el fine-tune) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (segun las etiquetas de HuggingFace) |
+| Formato de pesos | safetensors (segun las etiquetas de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -56,9 +56,9 @@ No se han publicado resultados de benchmarks especificos para el fine-tune JHofk
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| JHofking/Qwen3.5-2B-sensory | 2B | 262.144 (base) | Apache 2.0 | HuggingFace |
-| Qwen3.5-2B (base) | 2B | 262.144 | Apache 2.0 | HuggingFace, LM Studio, Ollama |
-| Qwen3-2B (generacion anterior) | 2B | 32.768 (aprox.) | Apache 2.0 | HuggingFace |
+| JHofking/Qwen3.5-2B-sensory | 2B | 262.144 (base) | Apache 2.0 | Hugging Face |
+| Qwen3.5-2B (base) | 2B | 262.144 | Apache 2.0 | Hugging Face, LM Studio, Ollama |
+| Qwen3-2B (generacion anterior) | 2B | 32.768 (aprox.) | Apache 2.0 | Hugging Face |
 
 El fine-tune "sensory" se distingue por su posible especializacion, pero no se dispone de comparativas de rendimiento frente a otros modelos de 2B. El modelo base Qwen3.5-2B es la referencia directa y comparte las mismas caracteristicas tecnicas. No se puede afirmar que el fine-tune sea superior o inferior sin datos de evaluacion.
 
@@ -74,8 +74,8 @@ El fine-tune "sensory" se distingue por su posible especializacion, pero no se d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JHofking/Qwen3.5-2B-sensory
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Qwen3.5-2B
+- Hugging Face: https://huggingface.co/JHofking/Qwen3.5-2B-sensory
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Qwen3.5-2B
 - Qwen3.5-2B en LM Studio: https://lmstudio.ai/models/qwen/qwen3.5-2b
 - Qwen3.5-2B en Qualcomm AI Hub: https://aihub.qualcomm.com/models/qwen3_5_2b
 - Qwen3.5-2B en Ollama: https://ollama.com/library/qwen3.5:2b

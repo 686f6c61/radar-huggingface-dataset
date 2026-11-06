@@ -99,7 +99,7 @@ La comparación directa con otras conversiones para NPU o con cuantizaciones GGU
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/ryugyosoft/Qwen3.5-9B-onwx
+- Pagina del modelo en Hugging Face: https://huggingface.co/ryugyosoft/Qwen3.5-9B-onwx
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-9B/blob/main/LICENSE
 - Aplicacion onwx: https://huggingface.co/ryugyosoft/onwx

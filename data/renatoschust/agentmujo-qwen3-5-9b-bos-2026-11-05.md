@@ -2,7 +2,7 @@
 
 ## Resumen
 
-agentmujo-qwen3.5-9b-bos es un adaptador LoRA de ajuste supervisado (SFT) sobre el modelo base Qwen/Qwen3.5-9B, publicado por el usuario renatoschust en HuggingFace. Su objetivo declarado es reforzar las capacidades del modelo base en bosnio (y, por extensión, en el continuo serbocroata: bosnio, croata y serbio, BCMS) para tareas de texto, RAG y generación de código, además de introducir cierta familiaridad con flujos agénticos y de function calling.
+agentmujo-qwen3.5-9b-bos es un adaptador LoRA de ajuste supervisado (SFT) sobre el modelo base Qwen/Qwen3.5-9B, publicado por el usuario renatoschust en Hugging Face. Su objetivo declarado es reforzar las capacidades del modelo base en bosnio (y, por extensión, en el continuo serbocroata: bosnio, croata y serbio, BCMS) para tareas de texto, RAG y generación de código, además de introducir cierta familiaridad con flujos agénticos y de function calling.
 
 El adaptador se entrenó el 4 y 5 de noviembre de 2026 sobre un nodo LUMI-G con una GPU AMD MI250X, usando un conjunto de datos propio denominado `joint_v0.43` con 91.533 filas de entrenamiento y 5.085 de validación. El entrenamiento consistió en una época, 2.042 pasos, longitud máxima de secuencia de 2.048 tokens y una configuración LoRA de rango 64 y alpha 128 en bf16, con una pérdida de entrenamiento final de 0,6174.
 
@@ -94,6 +94,6 @@ No se dispone de datos de rendimiento comparables de otros adaptadores LoRA para
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/renatoschust/agentmujo-qwen3.5-9b-bos-2026-11-05
+- Modelo en Hugging Face: https://huggingface.co/renatoschust/agentmujo-qwen3.5-9b-bos-2026-11-05
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos adicionales relevantes para este modelo.

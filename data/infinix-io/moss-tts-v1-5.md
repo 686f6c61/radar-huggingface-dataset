@@ -85,7 +85,7 @@ No se dispone en la información proporcionada de datos de rendimiento ni de esp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Infinix-io/MOSS-TTS-v1.5
+- Hugging Face: https://huggingface.co/Infinix-io/MOSS-TTS-v1.5
 - Modelo base MOSS-TTS 1.0: https://huggingface.co/OpenMOSS-Team/MOSS-TTS
 - Repositorio GitHub: https://github.com/OpenMOSS/MOSS-TTS/tree/main
 - Paper arXiv: https://arxiv.org/abs/2603.18090

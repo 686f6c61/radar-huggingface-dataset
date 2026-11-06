@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Thomson-1.0-Small-NVFP4 es una cuantizacion NVFP4 del modelo open-weight Thomson-1.0-Small, desarrollado por Thomson Reuters y publicado en HuggingFace por el usuario ProprietaryLegal. Se trata de un modelo de arquitectura MoE (Mixture of Experts) de 35 mil millones de parametros totales con 3 mil millones activos, basado en la arquitectura Qwen3.6-35B-A3B (tipo `qwen3_5_moe`), con una ventana de contexto de 262.144 tokens y capacidades multimodales (vision). El modelo base fue entrenado de forma continua por Thomson Reuters sobre decadas de contenido propietario legal, fiscal y periodistico, con el objetivo de ofrecer un rendimiento superior en tareas profesionales especializadas frente a modelos generalistas.
+Thomson-1.0-Small-NVFP4 es una cuantizacion NVFP4 del modelo open-weight Thomson-1.0-Small, desarrollado por Thomson Reuters y publicado en Hugging Face por el usuario ProprietaryLegal. Se trata de un modelo de arquitectura MoE (Mixture of Experts) de 35 mil millones de parametros totales con 3 mil millones activos, basado en la arquitectura Qwen3.6-35B-A3B (tipo `qwen3_5_moe`), con una ventana de contexto de 262.144 tokens y capacidades multimodales (vision). El modelo base fue entrenado de forma continua por Thomson Reuters sobre decadas de contenido propietario legal, fiscal y periodistico, con el objetivo de ofrecer un rendimiento superior en tareas profesionales especializadas frente a modelos generalistas.
 
 Esta version cuantizada reduce el checkpoint de 70 GB (BF16) a 22 GB, manteniendo en BF16 la torre de vision, la cabeza de salida (lm_head), los embeddings, las puertas de los expertos compartidos y los bloques de atencion lineal. La cuantizacion se realizo con la libreria llm-compressor de vLLM, siguiendo la receta publicada por RedHat AI para la arquitectura base, y esta pensada para hardware Blackwell con soporte nativo de FP4 (DGX Spark, B100/B200, RTX 50-series). El modelo se sirve con vLLM (version 0.19 o superior) y es compatible con el parser de razonamiento de Qwen3.
 
@@ -88,7 +88,7 @@ No se dispone de datos comparativos publicados en la informacion proporcionada. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ProprietaryLegal/Thomson-1.0-Small-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/ProprietaryLegal/Thomson-1.0-Small-NVFP4
 - Modelo base: https://huggingface.co/thomsonreuters/Thomson-1.0-Small
 - Receta de cuantizacion de RedHat AI: https://huggingface.co/RedHatAI/Qwen3.6-35B-A3B-NVFP4
 - Libreria llm-compressor: https://github.com/vllm-project/llm-compressor

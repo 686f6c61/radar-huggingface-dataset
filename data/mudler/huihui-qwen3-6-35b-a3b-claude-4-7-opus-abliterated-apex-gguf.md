@@ -101,11 +101,11 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- [HuggingFace: mudler/Huihui-Qwen3.6-35B-A3B-Claude-4.7-Opus-abliterated-APEX-GGUF](https://huggingface.co/mudler/Huihui-Qwen3.6-35B-A3B-Claude-4.7-Opus-abliterated-APEX-GGUF)
+- [Hugging Face: mudler/Huihui-Qwen3.6-35B-A3B-Claude-4.7-Opus-abliterated-APEX-GGUF](https://huggingface.co/mudler/Huihui-Qwen3.6-35B-A3B-Claude-4.7-Opus-abliterated-APEX-GGUF)
 - [Modelo base: huihui-ai/Huihui-Qwen3.6-35B-A3B-Claude-4.7-Opus-abliterated](https://huggingface.co/huihui-ai/Huihui-Qwen3.6-35B-A3B-Claude-4.7-Opus-abliterated)
 - [Proyecto APEX (apex-quant)](https://github.com/mudler/apex-quant)
 - [Informe técnico APEX (PDF)](https://github.com/mudler/apex-quant/blob/main/paper/APEX_Technical_Report.pdf)
 - [LocalAI](https://github.com/mudler/LocalAI)
 - [llama.cpp](https://github.com/ggml-org/llama.cpp)
-- [Organización Qwen en HuggingFace](https://huggingface.co/Qwen)
-- [huihui-ai en HuggingFace](https://huggingface.co/huihui-ai)
+- [Organización Qwen en Hugging Face](https://huggingface.co/Qwen)
+- [huihui-ai en Hugging Face](https://huggingface.co/huihui-ai)

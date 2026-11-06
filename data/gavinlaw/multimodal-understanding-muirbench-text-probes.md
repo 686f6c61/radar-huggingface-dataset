@@ -79,6 +79,6 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gavinlaw/multimodal-understanding-muirbench-text-probes
+- Hugging Face: https://huggingface.co/gavinlaw/multimodal-understanding-muirbench-text-probes
 - Paper de origen (Apéndice F, términos de licencia): https://arxiv.org/html/2406.09411v1
 - Snapshot del benchmark: `MUIRBENCH/MUIRBENCH` en el commit `4c393cffc985c77d28de3b9045e2e5186920df80` (no se proporciona URL directa en la información disponible)

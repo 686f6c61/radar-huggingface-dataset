@@ -93,7 +93,7 @@ La ventaja principal de esta publicacion es el formato MLX ya preparado y la cua
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jancirnodziewiaty/Melody1437-26B-A4B-v2.0-oQ4e
+- Repositorio en Hugging Face: https://huggingface.co/jancirnodziewiaty/Melody1437-26B-A4B-v2.0-oQ4e
 - Modelo base: https://huggingface.co/ReadyArt/Melody1437-26B-A4B-v2.0
 - Herramienta de cuantizacion oQ (oMLX): https://github.com/jundot/omlx
 - La busqueda web realizada no devolvio enlaces relevantes sobre el modelo: los resultados obtenidos correspondian a listados de templos en Assam y no guardan relacion con la ficha.

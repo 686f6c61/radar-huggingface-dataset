@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - VRAM estimada: los pesos en float32 ocupan aproximadamente 151 MB (37,8 M × 4 bytes). Con overhead de inferencia, se puede ejecutar en cualquier GPU con al menos 1 GB de VRAM, o incluso en CPU.
 - GPU recomendadas: cualquier GPU consumer (GTX 1050, RTX 2060, etc.) o incluso integradas, dado el tamaño.
 - Cabe en cualquier GPU consumer moderna sin problemas.
-- Opciones de despliegue: al ser un modelo de HuggingFace con `trust_remote_code`, se puede cargar con Transformers. También se puede exportar a ONNX o GGUF para ejecución en llama.cpp u Ollama, aunque no se proporcionan archivos GGUF.
+- Opciones de despliegue: al ser un modelo de Hugging Face con `trust_remote_code`, se puede cargar con Transformers. También se puede exportar a ONNX o GGUF para ejecución en llama.cpp u Ollama, aunque no se proporcionan archivos GGUF.
 - Latencia y throughput: al ser tan pequeño, la inferencia es prácticamente instantánea en GPU y muy rápida en CPU (del orden de milisegundos por token).
 
 ## Comparativa con modelos similares
@@ -74,7 +74,7 @@ No se dispone de información sobre modelos comparables con el mismo tamaño y p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/zyberg2091/fineweb_pretrained_model_37M
+- Hugging Face: https://huggingface.co/zyberg2091/fineweb_pretrained_model_37M
 - Dataset FineWeb: https://huggingface.co/datasets/HuggingFaceFW/fineweb
 - Blog de FineWeb: https://huggingface.co/spaces/HuggingFaceFW/blogpost-fineweb-v1
 - Paper de FineWeb: https://arxiv.org/abs/2406.17557

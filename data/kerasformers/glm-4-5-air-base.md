@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La co
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GLM-4.5-Air-Base (original) | 106B | 12B | no disponible | MIT | HuggingFace |
-| GLM-4.5 (grande) | 355B | 32B | no disponible | MIT | HuggingFace |
-| Mixtral 8x7B (referencia MoE) | 46.7B | 12.9B | 32k | Apache 2.0 | HuggingFace |
+| GLM-4.5-Air-Base (original) | 106B | 12B | no disponible | MIT | Hugging Face |
+| GLM-4.5 (grande) | 355B | 32B | no disponible | MIT | Hugging Face |
+| Mixtral 8x7B (referencia MoE) | 46.7B | 12.9B | 32k | Apache 2.0 | Hugging Face |
 
 La comparativa se basa en datos públicos de los respectivos modelos. GLM-4.5-Air-Base es significativamente más grande que Mixtral en parámetros totales, pero similar en parámetros activos, lo que sugiere un rendimiento potencialmente superior en tareas complejas, aunque no hay benchmarks que lo confirmen en la información disponible.
 
@@ -77,7 +77,7 @@ La comparativa se basa en datos públicos de los respectivos modelos. GLM-4.5-Ai
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kerasformers/glm-4.5-air-base
+- Repositorio Hugging Face: https://huggingface.co/kerasformers/glm-4.5-air-base
 - Modelo original: https://huggingface.co/zai-org/GLM-4.5-Air-Base
 - GitHub de KerasFormers: https://github.com/IMvision12/KerasFormers
 - Documentación de GLM en KerasFormers: https://imvision12.github.io/KerasFormers/glm4_moe/

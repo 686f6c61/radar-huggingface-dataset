@@ -107,7 +107,7 @@ Comparación con otras cuantizaciones públicas del mismo formato, mismo conjunt
 
 ## Enlaces
 
-- [HuggingFace: axteam/gemma-4-31B-it-NVFP4](https://huggingface.co/axteam/gemma-4-31B-it-NVFP4)
+- [Hugging Face: axteam/gemma-4-31B-it-NVFP4](https://huggingface.co/axteam/gemma-4-31B-it-NVFP4)
 - [Modelo base: google/gemma-4-31B-it](https://huggingface.co/google/gemma-4-31B-it)
 - [Licencia Gemma 4](https://ai.google.dev/gemma/docs/gemma_4_license)
 - [Cuantización comparable: RedHatAI/gemma-4-31B-it-NVFP4](https://huggingface.co/RedHatAI/gemma-4-31B-it-NVFP4)

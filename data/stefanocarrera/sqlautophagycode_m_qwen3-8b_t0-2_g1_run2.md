@@ -4,7 +4,7 @@
 
 El modelo `sqlautophagycode_M_Qwen3-8B_t0.2_g1_run2`, desarrollado por `stefanocarrera`, es un fine-tuning del modelo base `unsloth/Qwen3-8B-Base-unsloth-bnb-4bit`. Segun la model card, fue entrenado con la libreria Unsloth, que segun sus autores permite acelerar el entrenamiento aproximadamente 2 veces respecto a los metodos convencionales. El repositorio se creo el 9 de septiembre de 2026 y tiene un tamano de 0.2 GB, lo cual es notablemente pequeno para un modelo de 8.000 millones de parametros; la documentacion no aclara si se trata de un adaptador LoRA, de pesos cuantizados o de un snapshot parcial.
 
-No se especifica en la informacion disponible que problema concreto resuelve el modelo ni cual es su relevancia actual. La model card es una plantilla generica de HuggingFace que no incluye descripcion del dataset de entrenamiento, las tareas objetivo ni metricas de evaluacion. El modelo esta publicado bajo licencia Apache 2.0 y declara soporte para el idioma ingles. Al no existir benchmarks o documentacion tecnica adicional, su disponibilidad publica no implica validacion comunitaria: el repositorio registra 0 descargas y 0 likes en el momento de la consulta.
+No se especifica en la informacion disponible que problema concreto resuelve el modelo ni cual es su relevancia actual. La model card es una plantilla generica de Hugging Face que no incluye descripcion del dataset de entrenamiento, las tareas objetivo ni metricas de evaluacion. El modelo esta publicado bajo licencia Apache 2.0 y declara soporte para el idioma ingles. Al no existir benchmarks o documentacion tecnica adicional, su disponibilidad publica no implica validacion comunitaria: el repositorio registra 0 descargas y 0 likes en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
@@ -48,7 +48,7 @@ No disponible. Para realizar una comparativa fiable con otros modelos de la mism
 ## Limitaciones y advertencias
 
 - No se ha publicado ninguna evaluacion de sesgos, alucinacion, seguridad o robustez del modelo.
-- El modelo registra 0 descargas y 0 likes en HuggingFace, lo que indica que no ha sido validado por la comunidad ni utilizado en produccion de forma documentada.
+- El modelo registra 0 descargas y 0 likes en Hugging Face, lo que indica que no ha sido validado por la comunidad ni utilizado en produccion de forma documentada.
 - La model card es una plantilla generica y no incluye informacion sobre el dataset de entrenamiento, los objetivos del fine-tuning ni los criterios de seleccion de datos.
 - El repositorio tiene un tamano de 0.2 GB, anomalo para un modelo de 8B; no se aclara si contiene pesos completos, un adaptador LoRA o solo metadatos. Esto limita la reproducibilidad y el despliegue directo en inferencia.
 - El idioma declarado es solo ingles, por lo que su rendimiento en otros idiomas no esta garantizado ni evaluado.

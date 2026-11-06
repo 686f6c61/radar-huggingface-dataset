@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Capas | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| esm2_t48_15B_UR50D (esta copia) | 15B | 48 | 1.024 residuos | MIT | HuggingFace (repo de 60,5 GB) |
-| esm2_t36_3B_UR50D | 3B | 36 | 1.024 residuos | MIT | HuggingFace (checkpoint oficial de Meta) |
-| esm2_t33_650M_UR50D | 650M | 33 | 1.024 residuos | MIT | HuggingFace (checkpoint oficial de Meta) |
-| esm2_t30_150M_UR50D | 150M | 30 | 1.024 residuos | MIT | HuggingFace (checkpoint oficial de Meta) |
+| esm2_t48_15B_UR50D (esta copia) | 15B | 48 | 1.024 residuos | MIT | Hugging Face (repo de 60,5 GB) |
+| esm2_t36_3B_UR50D | 3B | 36 | 1.024 residuos | MIT | Hugging Face (checkpoint oficial de Meta) |
+| esm2_t33_650M_UR50D | 650M | 33 | 1.024 residuos | MIT | Hugging Face (checkpoint oficial de Meta) |
+| esm2_t30_150M_UR50D | 150M | 30 | 1.024 residuos | MIT | Hugging Face (checkpoint oficial de Meta) |
 
 Los checkpoints menores de la misma familia ofrecen un compromiso mucho mas favorable en memoria y latencia, con precision ligeramente inferior segun la model card. Para la mayoria de tareas downstream, el checkpoint de 650M o 3B suele ser suficiente; el de 15B se reserva para escenarios donde la precision marginal justifica el coste computacional.
 
@@ -88,7 +88,7 @@ Los checkpoints menores de la misma familia ofrecen un compromiso mucho mas favo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hellnahbru/esm2_t48_15B_UR50D-preserved-20261029
+- Repositorio en Hugging Face: https://huggingface.co/hellnahbru/esm2_t48_15B_UR50D-preserved-20261029
 - Checkpoint oficial de Meta: https://huggingface.co/facebook/esm2_t48_15B_UR50D
 - Paper de ESM-2: https://www.biorxiv.org/content/10.1101/2022.07.20.500902v2
 - Notebook de fine-tuning en PyTorch: https://colab.research.google.com/github/huggingface/notebooks/blob/main/examples/protein_language_modeling.ipynb

@@ -91,9 +91,9 @@ Las cifras de VRAM y GPU no aparecen en la model card; lo que sigue son estimaci
 
 | Modelo | Parámetros | Contexto / resolucion | MAE test (genero por ocupacion) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `fassabilf/sd15-dpo-us-sd15` (este) | No disponible (UNet de SD 1.5) | No disponible | 0,209 (ep5), 0,244 (ep10), 0,162 (ep15), 0,178 (ep20) | creativeml-openrail-m | HuggingFace, 20 checkpoints |
-| `stable-diffusion-v1-5/stable-diffusion-v1-5` (base) | ~860 M en el UNet | 512×512 px | 0,149 | creativeml-openrail-m | HuggingFace |
-| `fassabilf/sd15-dpo-us-real` | No disponible (misma receta, datos fotográficos) | No disponible | No disponible en esta ficha | No disponible | HuggingFace |
+| `fassabilf/sd15-dpo-us-sd15` (este) | No disponible (UNet de SD 1.5) | No disponible | 0,209 (ep5), 0,244 (ep10), 0,162 (ep15), 0,178 (ep20) | creativeml-openrail-m | Hugging Face, 20 checkpoints |
+| `stable-diffusion-v1-5/stable-diffusion-v1-5` (base) | ~860 M en el UNet | 512×512 px | 0,149 | creativeml-openrail-m | Hugging Face |
+| `fassabilf/sd15-dpo-us-real` | No disponible (misma receta, datos fotográficos) | No disponible | No disponible en esta ficha | No disponible | Hugging Face |
 | Brazo SFT sintético (mismos datos `chosen`) | No disponible | No disponible | 0,091 | No disponible | No disponible |
 
 La ficha no proporciona una comparación con métodos de mitigación de sesgo ajenos al proyecto (por ejemplo, fine-tuning con dataset balanceado, prompt engineering o muestreo guiado), por lo que no es posible situar estos resultados frente a alternativas externas.
@@ -114,7 +114,7 @@ La ficha no proporciona una comparación con métodos de mitigación de sesgo aj
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fassabilf/sd15-dpo-us-sd15
+- Modelo en Hugging Face: https://huggingface.co/fassabilf/sd15-dpo-us-sd15
 - Modelo base: https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5
 - Dataset de pares de preferencia: https://huggingface.co/datasets/fassabilf/dpo-train-us-sd15
 - Dataset de origen del lado `chosen`: https://huggingface.co/datasets/fassabilf/ift-train-us-sd15

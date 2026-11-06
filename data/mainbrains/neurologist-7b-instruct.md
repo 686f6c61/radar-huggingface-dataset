@@ -6,7 +6,7 @@ Neurologist-7B-Instruct es un modelo de lenguaje de 7 mil millones de parámetro
 
 El entrenamiento se realizó sobre un conjunto de datos curado que combina OpenOrca filtrado por contenido técnico/científico, un dataset propio de preguntas y respuestas sobre programación de sistemas (DMA, módulos de kernel, interfaces de hardware) y pares de instrucciones de código. El proceso usó QLoRA con cuantización de 4 bits, rank 64 y alpha 128, durante 3 épocas y con una longitud de contexto de 8192 tokens. El modelo se distribuye bajo licencia Apache 2.0 y solo soporta inglés.
 
-Aunque el modelo no ha sido ampliamente adoptado (0 descargas y 0 likes en HuggingFace), su enfoque especializado en sistemas y código de bajo nivel lo hace relevante para desarrolladores que necesitan asistencia técnica en entornos de programación de hardware, kernels y computación de alto rendimiento. Los benchmarks declarados por el autor muestran resultados moderados en tareas generales de razonamiento y comprensión, con un rendimiento destacable en generación de código.
+Aunque el modelo no ha sido ampliamente adoptado (0 descargas y 0 likes en Hugging Face), su enfoque especializado en sistemas y código de bajo nivel lo hace relevante para desarrolladores que necesitan asistencia técnica en entornos de programación de hardware, kernels y computación de alto rendimiento. Los benchmarks declarados por el autor muestran resultados moderados en tareas generales de razonamiento y comprensión, con un rendimiento destacable en generación de código.
 
 ## Especificaciones tecnicas
 
@@ -89,5 +89,5 @@ No se dispone de benchmarks comparativos entre estos modelos en la información 
 
 ## Enlaces
 
-- [HuggingFace - mainbrains/neurologist-7b-instruct](https://huggingface.co/mainbrains/neurologist-7b-instruct)
+- [Hugging Face - mainbrains/neurologist-7b-instruct](https://huggingface.co/mainbrains/neurologist-7b-instruct)
 - [Modelo base - NousResearch/Hermes-3-Llama-3.1-8B](https://huggingface.co/NousResearch/Hermes-3-Llama-3.1-8B)

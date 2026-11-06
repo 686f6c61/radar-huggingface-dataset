@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks estandar (tipo FID, CLIP score o si
 
 | Modelo | Tipo | Pasos / CFG | Moteado en zonas planas | Licencia / disponibilidad |
 |---|---|---|---|---|
-| Krea 2 Turbo LoRA: Low Mottle (este) | LoRA de difusion, rank 64, bf16 | 8 pasos, CFG 1 | Reduccion de ~70% en degradados y ~30% en escenas detalladas | Krea 2 Community License; disponible en HuggingFace (rockerBOO) |
+| Krea 2 Turbo LoRA: Low Mottle (este) | LoRA de difusion, rank 64, bf16 | 8 pasos, CFG 1 | Reduccion de ~70% en degradados y ~30% en escenas detalladas | Krea 2 Community License; disponible en Hugging Face (rockerBOO) |
 | Krea 2 Turbo LoRA (original) | LoRA de difusion | 8 pasos, CFG 1 | Referencia base; deja moteado en zonas lisas | Krea 2 Community License; oficial de Krea |
 | Krea 2 Raw | Modelo base de difusion | no disponible | Sin moteado aparente en zonas planas | Krea 2 Community License; oficial de Krea |
 
@@ -91,7 +91,7 @@ No se dispone en la informacion proporcionada de otras alternativas comparables 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rockerBOO/Krea-2-Turbo-LoRA-Low-Mottle
+- Modelo en Hugging Face: https://huggingface.co/rockerBOO/Krea-2-Turbo-LoRA-Low-Mottle
 - Modelo base Krea 2 Raw: https://huggingface.co/krea/Krea-2-Raw
 - Modelo base Krea 2 Turbo: https://huggingface.co/krea/Krea-2-Turbo
 - Licencia (PDF): https://huggingface.co/krea/Krea-2-Turbo/blob/main/LICENSE.pdf

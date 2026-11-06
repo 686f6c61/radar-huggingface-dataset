@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`yoga-0125/ppo-Huggy` es un agente de aprendizaje por refuerzo profundo publicado en HuggingFace por el usuario `yoga-0125`. No se trata de un modelo de lenguaje, sino de una politica neuronal entrenada con el algoritmo PPO (Proximal Policy Optimization) dentro de Unity ML-Agents, la libreria de simulacion y entrenamiento de agentes de Unity Technologies.
+`yoga-0125/ppo-Huggy` es un agente de aprendizaje por refuerzo profundo publicado en Hugging Face por el usuario `yoga-0125`. No se trata de un modelo de lenguaje, sino de una politica neuronal entrenada con el algoritmo PPO (Proximal Policy Optimization) dentro de Unity ML-Agents, la libreria de simulacion y entrenamiento de agentes de Unity Technologies.
 
-El agente resuelve la tarea del entorno Huggy, en el que un perro virtual debe aprender a recoger un palo. La model card lo describe explicitamente como un modelo entrenado con PPO para el entorno Huggy y remite a los tutoriales oficiales del curso de deep reinforcement learning de HuggingFace, donde ese entorno se usa como caso introductorio ("ensena a Huggy el perro a traer el palo").
+El agente resuelve la tarea del entorno Huggy, en el que un perro virtual debe aprender a recoger un palo. La model card lo describe explicitamente como un modelo entrenado con PPO para el entorno Huggy y remite a los tutoriales oficiales del curso de deep reinforcement learning de Hugging Face, donde ese entorno se usa como caso introductorio ("ensena a Huggy el perro a traer el palo").
 
 Su relevancia es fundamentalmente educativa y de referencia: sirve como artefacto reproducible para estudiar el ciclo completo de entrenamiento, publicacion e inferencia de un agente de ML-Agents. El repositorio ocupa 0,2 GB y no registra descargas ni "likes" en el momento de la consulta. No se dispone de informacion sobre arquitectura de red, numero de parametros, licencia ni resultados de evaluacion.
 
@@ -38,7 +38,7 @@ No se especifican en la model card el numero de pasos de entrenamiento, la compo
 ## Capacidades
 
 - Control de politica en el entorno Huggy: el agente produce acciones a partir de las observaciones que le entrega la escena de Unity, con el objetivo de completar la tarea de recoger el palo.
-- Inferencia en navegador: la model card indica que el agente puede visualizarse jugando directamente en el navegador desde el visor de HuggingFace para entornos de ML-Agents.
+- Inferencia en navegador: la model card indica que el agente puede visualizarse jugando directamente en el navegador desde el visor de Hugging Face para entornos de ML-Agents.
 - Reanudacion del entrenamiento: el artefacto esta preparado para continuar el entrenamiento con ML-Agents mediante el flag `--resume`.
 - Exportacion a ONNX: ademas del formato nativo `.nn`, el repositorio ofrece un `.onnx` que puede cargarse con ONNX Runtime fuera de Unity.
 - No dispone de generacion de texto, razonamiento simbolico, codigo, matematicas ni vision de proposito general.
@@ -50,7 +50,7 @@ No se especifican en la model card el numero de pasos de entrenamiento, la compo
 ## Casos de uso
 
 - Material didactico de reinforcement learning: el agente sirve como ejemplo ya entrenado para ilustrar el flujo completo de ML-Agents (definicion de observaciones, recompensas, entrenamiento PPO, exportacion y publicacion en el Hub).
-- Demo interactiva en navegador: integrado en el visor de HuggingFace para agentes de ML-Agents, permite mostrar el comportamiento aprendido sin instalar Unity ni Python.
+- Demo interactiva en navegador: integrado en el visor de Hugging Face para agentes de ML-Agents, permite mostrar el comportamiento aprendido sin instalar Unity ni Python.
 - Punto de partida para ajuste fino: al permitir reanudar el entrenamiento con `--resume`, se puede usar como inicializacion y modificar recompensas o hiperparametros para estudiar como cambia la politica resultante.
 - Estudio comparativo de hiperparametros de PPO: partiendo de este agente, es posible lanzar variantes con distintas tasas de aprendizaje, tamaños de lote o coeficientes de entropia y comparar las curvas registradas en TensorBoard.
 - Banco de pruebas de inferencia ONNX: el fichero `.onnx` permite medir latencia y coste de ejecucion de una politica de RL en distintos runtimes y dispositivos, sin depender del motor Unity.
@@ -66,18 +66,18 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: no disponible; por la naturaleza del artefacto (politica de ML-Agents de un unico entorno), la inferencia esta pensada para ejecutarse en CPU y no requiere GPU. No se especifica el tamano del fichero `.onnx`, por lo que no puede darse una cifra de memoria concreta.
 - GPU recomendadas: no aplica para inferencia. El entrenamiento con ML-Agents puede acelerarse con GPU compatibles con Unity (por ejemplo, tarjetas NVIDIA con soporte CUDA), pero la model card no documenta el hardware usado.
 - Compatibilidad con GPU de consumo: la inferencia cabe en cualquier equipo de consumo, e incluso en equipos sin GPU, dado el caracter ligero de una politica de un solo entorno. No se confirma con datos del autor.
-- Opciones de despliegue: motor de inferencia de Unity ML-Agents (Sentis/Barracuda) con el fichero `.nn`; ONNX Runtime con el fichero `.onnx`; entrenamiento y evaluacion con la CLI `mlagents-learn`; visor de HuggingFace para entornos de ML-Agents.
+- Opciones de despliegue: motor de inferencia de Unity ML-Agents (Sentis/Barracuda) con el fichero `.nn`; ONNX Runtime con el fichero `.onnx`; entrenamiento y evaluacion con la CLI `mlagents-learn`; visor de Hugging Face para entornos de ML-Agents.
 - Latencia y throughput estimados: no disponibles.
 - Nota sobre el repositorio: los 0,2 GB declarados corresponden al conjunto del repositorio y probablemente incluyen logs de TensorBoard y artefactos de entrenamiento, no solo el fichero de pesos.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos comparativos verificables. La model card menciona que los agentes de ML-Agents oficiales se publican bajo la organizacion `unity` en HuggingFace, por lo que la comparacion natural seria con otros agentes PPO de esa organizacion y con otras ejecuciones de Huggy publicadas por terceros, pero no se ha recuperado informacion de parametros, recompensas, contexto ni licencia de esos artefactos.
+No se dispone de datos comparativos verificables. La model card menciona que los agentes de ML-Agents oficiales se publican bajo la organizacion `unity` en Hugging Face, por lo que la comparacion natural seria con otros agentes PPO de esa organizacion y con otras ejecuciones de Huggy publicadas por terceros, pero no se ha recuperado informacion de parametros, recompensas, contexto ni licencia de esos artefactos.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `yoga-0125/ppo-Huggy` | no disponible | no aplica | no disponible | no disponible | publico en HuggingFace |
-| Otros agentes PPO de ML-Agents (organizacion `unity`) | no disponible | no aplica | no disponible | no disponible | publicos en HuggingFace |
+| `yoga-0125/ppo-Huggy` | no disponible | no aplica | no disponible | no disponible | publico en Hugging Face |
+| Otros agentes PPO de ML-Agents (organizacion `unity`) | no disponible | no aplica | no disponible | no disponible | publicos en Hugging Face |
 | Alternativas de la misma tarea publicadas por terceros | no disponible | no aplica | no disponible | no disponible | no verificadas |
 
 ## Limitaciones y advertencias
@@ -95,9 +95,9 @@ No se dispone de datos comparativos verificables. La model card menciona que los
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yoga-0125/ppo-Huggy
+- Modelo en Hugging Face: https://huggingface.co/yoga-0125/ppo-Huggy
 - Repositorio de Unity ML-Agents: https://github.com/Unity-Technologies/ml-agents
 - Documentacion de ML-Agents: https://unity-technologies.github.io/ml-agents/ML-Agents-Toolkit-Documentation/
 - Tutorial corto (ensena a Huggy a traer el palo): https://huggingface.co/learn/deep-rl-course/unitbonus1/introduction
 - Tutorial largo de ML-Agents: https://huggingface.co/learn/deep-rl-course/unit5/introduction
-- Agentes oficiales de ML-Agents en HuggingFace: https://huggingface.co/unity
+- Agentes oficiales de ML-Agents en Hugging Face: https://huggingface.co/unity

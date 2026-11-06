@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`owalshehri/flamingo-contrastive-proto` es un prototipo de investigacion publicado en HuggingFace por el usuario `owalshehri`. Se presenta explicitamente como una implementacion minima ("nano") de una arquitectura tipo Flamingo orientada al aprendizaje contrastivo, acompanada de una configuracion explicita y un checkpoint de inicializacion. No es una release de modelo entrenado ni un checkpoint con resultados de benchmark: la propia model card indica que el checkpoint solo sirve para pruebas de humo ("smoke tests").
+`owalshehri/flamingo-contrastive-proto` es un prototipo de investigacion publicado en Hugging Face por el usuario `owalshehri`. Se presenta explicitamente como una implementacion minima ("nano") de una arquitectura tipo Flamingo orientada al aprendizaje contrastivo, acompanada de una configuracion explicita y un checkpoint de inicializacion. No es una release de modelo entrenado ni un checkpoint con resultados de benchmark: la propia model card indica que el checkpoint solo sirve para pruebas de humo ("smoke tests").
 
 El interes tecnico del repositorio no esta en su rendimiento, sino en su funcion como andamiaje reproducible: incluye el codigo de modelo y punto de entrada de fine-tuning (`finetune.py`), la configuracion de arquitectura (`config.json`), una receta de experimento por defecto (`training_args.json`) y los pesos de inicializacion (`model.safetensors`), todo bajo licencia MIT. El recuento de parametros declarado en safetensors es de 33 088, es decir, un modelo de escala experimental (decenas de miles de parametros), muy lejos de los Flamingo/OpenFlamingo de miles de millones de parametros.
 
@@ -65,7 +65,7 @@ No se dispone de datos verificados en la informacion proporcionada para los mode
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| flamingo-contrastive-proto (este modelo) | 33 088 | no disponible | sin benchmark declarado; checkpoint sin entrenar | MIT | HuggingFace (repo propio) |
+| flamingo-contrastive-proto (este modelo) | 33 088 | no disponible | sin benchmark declarado; checkpoint sin entrenar | MIT | Hugging Face (repo propio) |
 | OpenFlamingo | orden de miles de millones (referencia de categoria, dato no aportado) | no disponible | no disponible | no disponible | referencia externa |
 | CLIP (familia) | orden de cientos de millones (referencia de categoria, dato no aportado) | no disponible | no disponible | no disponible | referencia externa |
 
@@ -85,6 +85,6 @@ La diferencia fundamental de categoria es de escala: este repositorio es un anda
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/owalshehri/flamingo-contrastive-proto
+- Ficha en Hugging Face: https://huggingface.co/owalshehri/flamingo-contrastive-proto
 - Archivos del repositorio: `finetune.py` (artefacto principal), `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Busqueda web: no se han encontrado enlaces relevantes al modelo en la busqueda realizada; los resultados devueltos correspondian a contenido no relacionado (biografia del musico Johnny "Guitar" Watson). No hay papers, blogs ni repositorios adicionales disponibles.

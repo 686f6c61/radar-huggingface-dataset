@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Rigby es un repositorio publicado en HuggingFace por el usuario EmanuelGames bajo licencia Apache 2.0. El repositorio, identificado como `EmanuelGames/Rigby`, ocupa aproximadamente 0,1 GB y registra 0 descargas y 0 "likes" en el momento de la consulta. La model card asociada contiene únicamente la declaración de licencia (`license: apache-2.0`) y ningun otro contenido descriptivo.
+Rigby es un repositorio publicado en Hugging Face por el usuario EmanuelGames bajo licencia Apache 2.0. El repositorio, identificado como `EmanuelGames/Rigby`, ocupa aproximadamente 0,1 GB y registra 0 descargas y 0 "likes" en el momento de la consulta. La model card asociada contiene únicamente la declaración de licencia (`license: apache-2.0`) y ningun otro contenido descriptivo.
 
-No hay informacion publica sobre arquitectura, numero de parametros, longitud de contexto, idiomas soportados, datos de entrenamiento ni proceso de alineacion. El campo `pipeline` de HuggingFace aparece como no disponible, y el repositorio no tiene etiquetas que indiquen tarea (text-generation, text-to-image, etc.) ni familia de modelos.
+No hay informacion publica sobre arquitectura, numero de parametros, longitud de contexto, idiomas soportados, datos de entrenamiento ni proceso de alineacion. El campo `pipeline` de Hugging Face aparece como no disponible, y el repositorio no tiene etiquetas que indiquen tarea (text-generation, text-to-image, etc.) ni familia de modelos.
 
 En consecuencia, esta ficha no puede evaluar el modelo en terminos tecnicos: se limita a registrar los metadatos verificables del repositorio y a senalar explicitamente todos los datos ausentes. Cualquier afirmacion sobre capacidades, rendimiento o idoneidad para produccion seria especulativa y no se incluye. El unico hecho relevante es que se trata de un artefacto sin documentacion ni adopcion observable, por lo que no es recomendable para evaluacion tecnica hasta que el autor publique informacion sustantiva.
 
@@ -21,11 +21,11 @@ En consecuencia, esta ficha no puede evaluar el modelo en terminos tecnicos: se 
 | Licencia | apache-2.0 |
 | Formato de pesos | no disponible |
 | Tamano del repositorio | ~0,1 GB |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Etiquetas del repositorio | license:apache-2.0, region:us |
 | Descargas / likes | 0 / 0 |
-| Fecha de creacion | 2026-09-12 (segun metadatos de HuggingFace) |
-| Fecha de ultima actualizacion | 2026-09-12 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-12 (segun metadatos de Hugging Face) |
+| Fecha de ultima actualizacion | 2026-09-12 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -37,7 +37,7 @@ El unico dato estructural del que se dispone es el tamano del repositorio, aprox
 
 No se ha publicado informacion que permita confirmar ninguna capacidad. En concreto:
 
-- Generacion de texto: no confirmada (el campo `pipeline` de HuggingFace aparece como no disponible).
+- Generacion de texto: no confirmada (el campo `pipeline` de Hugging Face aparece como no disponible).
 - Razonamiento, codigo o matematicas: no confirmado.
 - Vision, audio o multimodalidad: no confirmado.
 - Soporte de tool calling o function calling: no confirmado.
@@ -91,7 +91,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/EmanuelGames/Rigby
+- Repositorio en Hugging Face: https://huggingface.co/EmanuelGames/Rigby
 - Paper asociado: no disponible.
 - Repositorio de codigo: no disponible.
 - Blog o documentacion tecnica: no disponible.

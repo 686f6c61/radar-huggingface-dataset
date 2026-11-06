@@ -84,7 +84,7 @@ La comparación directa con otros modelos de 4B (como Llama-3.2-3B o Gemma-3-4B)
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aitups/Qwen3.5-4B-saor
+- Modelo en Hugging Face: https://huggingface.co/aitups/Qwen3.5-4B-saor
 - Repositorio de Hayai (runtime): https://github.com/hayai-org/hayai
 - Modelo base Qwen3.5-4B en Awesome Agents: https://awesomeagents.ai/models/qwen-3-5-4b/
 - Qwen3.5 4B en Ollama: https://ollama.com/library/qwen3.5:4b

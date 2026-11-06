@@ -76,10 +76,10 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K y sim
 
 | Modelo | Parametros | Ventana de audio | WER en fula | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `waxal-benchmarking/whisper-small-waxal-matched-ful` | 241,7M | 30 s | 56,0 | Apache-2.0 | HuggingFace |
-| `waxal-benchmarking/whisper-small-waxal-loo-ful` | 241,7M | 30 s | 131,7 | Apache-2.0 | HuggingFace |
-| `waxal-benchmarking/whisper-small-waxal-ful` (modelo recomendado por el autor) | 241,7M | 30 s | 42,6 (receta del benchmark) | Apache-2.0 | HuggingFace |
-| `openai/whisper-small` (modelo base) | 244M | 30 s | no disponible | Apache-2.0 | HuggingFace |
+| `waxal-benchmarking/whisper-small-waxal-matched-ful` | 241,7M | 30 s | 56,0 | Apache-2.0 | Hugging Face |
+| `waxal-benchmarking/whisper-small-waxal-loo-ful` | 241,7M | 30 s | 131,7 | Apache-2.0 | Hugging Face |
+| `waxal-benchmarking/whisper-small-waxal-ful` (modelo recomendado por el autor) | 241,7M | 30 s | 42,6 (receta del benchmark) | Apache-2.0 | Hugging Face |
+| `openai/whisper-small` (modelo base) | 244M | 30 s | no disponible | Apache-2.0 | Hugging Face |
 
 El benchmark WAXAL tambien evalua alternativas como MMS-300M y Whisper Tiny, pero no se han proporcionado cifras concretas de esos modelos para fula en la informacion disponible.
 
@@ -98,7 +98,7 @@ El benchmark WAXAL tambien evalua alternativas como MMS-300M y Whisper Tiny, per
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/waxal-benchmarking/whisper-small-waxal-matched-ful
+- Modelo en Hugging Face: https://huggingface.co/waxal-benchmarking/whisper-small-waxal-matched-ful
 - Modelo recomendado para fula por el autor: https://huggingface.co/waxal-benchmarking/whisper-small-waxal-ful
 - Modelo leave-one-out de referencia: https://huggingface.co/waxal-benchmarking/whisper-small-waxal-loo-ful
 - Modelo base: https://huggingface.co/openai/whisper-small

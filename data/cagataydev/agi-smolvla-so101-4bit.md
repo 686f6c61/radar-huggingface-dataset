@@ -6,7 +6,7 @@ agi-smolvla/so101 4-bit es la exportación cuantizada a 4 bits de `cagataydev/ag
 
 Su relevancia está en dos frentes. Por un lado, demuestra que una política VLA de 450M parámetros puede comprimirse a 4 bits con una pérdida de precisión moderada: 16,44 RMSE en la evaluación held-out frente a 14,45 del padre en precisión completa, ambos medidos en la misma ejecución sobre 36 ventanas del dataset `lerobot/svla_so101_pickplace` (episodios 45–49). Por otro, forma parte de una infraestructura comercial de inferencia remota con un precio declarado de 0,0001 USD por acción y una latencia de ida y vuelta registrada de 286–886 ms sobre el transporte Zenoh.
 
-La información disponible es limitada: la model card está truncada y no detalla la composición del dataset de entrenamiento, el proceso de post-ajuste ni los hiperparámetros de cuantización. Los resultados de búsqueda web realizados no devolvieron material relevante sobre este modelo, por lo que los datos que siguen proceden exclusivamente de la model card y de los metadatos de HuggingFace.
+La información disponible es limitada: la model card está truncada y no detalla la composición del dataset de entrenamiento, el proceso de post-ajuste ni los hiperparámetros de cuantización. Los resultados de búsqueda web realizados no devolvieron material relevante sobre este modelo, por lo que los datos que siguen proceden exclusivamente de la model card y de los metadatos de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -78,9 +78,9 @@ Latencia registrada en la traza de sesión `ses_3WmhwXtsgW05H3pMgm6BTp`: 3 llama
 
 | Modelo | Parametros | Contexto / horizonte | RMSE held-out (1,67 s) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| agi-smolvla/so101 4-bit (este repo) | 450M | 50 acciones a 30 Hz (1,67 s) | 16,44 | Apache 2.0 | HuggingFace + API agi.diy |
-| agi-smolvla/so101 (padre, precision completa) | 450M | 50 acciones a 30 Hz (1,67 s) | 14,45 | Apache 2.0 | HuggingFace + API agi.diy |
-| Checkpoint stock de referencia | no disponible | 50 acciones a 30 Hz (1,67 s) | 41,07 | no disponible en la informacion proporcionada | HuggingFace (comunidad LeRobot) |
+| agi-smolvla/so101 4-bit (este repo) | 450M | 50 acciones a 30 Hz (1,67 s) | 16,44 | Apache 2.0 | Hugging Face + API agi.diy |
+| agi-smolvla/so101 (padre, precision completa) | 450M | 50 acciones a 30 Hz (1,67 s) | 14,45 | Apache 2.0 | Hugging Face + API agi.diy |
+| Checkpoint stock de referencia | no disponible | 50 acciones a 30 Hz (1,67 s) | 41,07 | no disponible en la informacion proporcionada | Hugging Face (comunidad LeRobot) |
 | Otros VLA para SO-101 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparativa se limita a las tres variantes que la propia model card mide sobre el mismo span. No se dispone de datos de otros VLA comparables (por ejemplo, familias alternativas de políticas visomotoras) en la información proporcionada, y la card advierte explícitamente que puntuaciones sobre spans distintos no son comparables entre sí.
@@ -101,7 +101,7 @@ La comparativa se limita a las tres variantes que la propia model card mide sobr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cagataydev/agi-smolvla-so101-4bit
+- Modelo en Hugging Face: https://huggingface.co/cagataydev/agi-smolvla-so101-4bit
 - Modelo base (precisión completa): https://huggingface.co/cagataydev/agi-smolvla-so101
 - Dataset de entrenamiento y evaluación: https://huggingface.co/datasets/lerobot/svla_so101_pickplace
 - Sitio del proyecto: https://agi.diy
@@ -109,6 +109,6 @@ La comparativa se limita a las tres variantes que la propia model card mide sobr
 - Sección de checkpoints propios: https://api.agi.diy/docs#custom-checkpoint
 - Demo en navegador con MuJoCo: https://api.agi.diy/play
 - Traza de sesión citada en la model card: https://api.agi.diy/dashboard/sessions/ses_3WmhwXtsgW05H3pMgm6BTp
-- Colección agi en HuggingFace: https://huggingface.co/collections/cagataydev/agi-65dc0e10759d733a533a2e64
+- Colección agi en Hugging Face: https://huggingface.co/collections/cagataydev/agi-65dc0e10759d733a533a2e64
 - Repositorio de LeRobot (librería declarada): no disponible en la información proporcionada
 - Paper o informe técnico del modelo: no disponible en la información proporcionada

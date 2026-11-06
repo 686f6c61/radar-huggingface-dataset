@@ -2,7 +2,7 @@
 
 ## Resumen
 
-loop-untied-2-d6 es un checkpoint final de un modelo de lenguaje base de tipo looped transformer (transformer con repetición de bloques), publicado por el usuario CharlieChen en HuggingFace. Se trata del artefacto de entrenamiento original utilizado en la escalera de escalado sobre FineWeb del artículo "How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents". Corresponde a la variante "Untied 2" con coordenada de profundidad d6, donde la profundidad es la coordenada de escalado de la escalera y no necesariamente el número de bloques Transformer ejecutados.
+loop-untied-2-d6 es un checkpoint final de un modelo de lenguaje base de tipo looped transformer (transformer con repetición de bloques), publicado por el usuario CharlieChen en Hugging Face. Se trata del artefacto de entrenamiento original utilizado en la escalera de escalado sobre FineWeb del artículo "How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents". Corresponde a la variante "Untied 2" con coordenada de profundidad d6, donde la profundidad es la coordenada de escalado de la escalera y no necesariamente el número de bloques Transformer ejecutados.
 
 El modelo almacena 133.890.048 parámetros en FP32 (0,536 GB), con una anchura de 768, 6 cabezas de atención y una longitud de contexto de 2.048 tokens. Usa el tokenizador GPT-2 de tiktoken con un vocabulario de 50.257 tokens ampliado a 50.304 filas del modelo. Es un modelo preentrenado sin ajuste por instrucciones, y el repositorio no incluye estado del optimizador, por lo que no está pensado para reanudar entrenamiento, sino para evaluación y reproducción de resultados.
 
@@ -84,9 +84,9 @@ No se dispone de evaluaciones comparativas publicadas para este modelo. La tabla
 
 | Modelo | Parametros | Contexto | Tokenizador | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| loop-untied-2-d6 | 133.890.048 | 2.048 | GPT-2 (tiktoken) | no disponible | HuggingFace, formato PyTorch no estándar |
+| loop-untied-2-d6 | 133.890.048 | 2.048 | GPT-2 (tiktoken) | no disponible | Hugging Face, formato PyTorch no estándar |
 | GPT-2 (small) | 124 M | 1.024 | GPT-2 (BPE) | MIT (según su publicación original) | Ampliamente disponible en formato Transformers |
-| Modelos base de ~130-160 M de la familia Pythia | 160 M | 2.048 | GPT-NeoX | Apache 2.0 | HuggingFace, formato Transformers |
+| Modelos base de ~130-160 M de la familia Pythia | 160 M | 2.048 | GPT-NeoX | Apache 2.0 | Hugging Face, formato Transformers |
 
 La comparación de rendimiento entre estos modelos con loop-untied-2-d6 no está disponible; cualquier comparación requeriría ejecutar la suite CORE o medir perplejidad sobre un corpus común con el código del artículo.
 
@@ -106,7 +106,7 @@ La comparación de rendimiento entre estos modelos con loop-untied-2-d6 no está
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/CharlieChen/loop-untied-2-d6
+- Repositorio en Hugging Face: https://huggingface.co/CharlieChen/loop-untied-2-d6
 - Código del artículo (evaluación y reconstrucción del modelo): https://github.com/cue-engineering/loop
 - Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb
 - Artículo citado: "How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents" (sin enlace disponible en la información proporcionada)

@@ -18,7 +18,7 @@ Es relevante porque explora una via poco comun en modelos del mundo roboticos: e
 | Longitud de contexto | ventana compartida entre la consulta (1 ancla + 16 acciones futuras + 16 fotogramas generados) y K fragmentos de 16 transiciones, con K uniforme en 1..8 |
 | Tipos de cuantizacion | no disponible (pesos publicados en bf16) |
 | Idiomas soportados | no disponible (modelo de video/accion, no linguistico) |
-| Licencia | openmdw-1.1 (etiquetada como `other` en HuggingFace) |
+| Licencia | openmdw-1.1 (etiquetada como `other` en Hugging Face) |
 | Formato de pesos | DCP (estado del entrenador) convertido a bf16; incluye `config.pkl` y `training/recipe.toml` |
 
 ## Arquitectura y entrenamiento
@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SyncWorld-mv3-strip384-views-first-v10-step17000 | no disponible | consulta + K fragmentos (K 1..8) | Difusion flow matching con recuperacion en contexto | openmdw-1.1 | HuggingFace, checkpoint intermedio |
-| SyncWorld-mv3-strip384-recent8-step* | no disponible | consulta + K fragmentos | Misma familia, recuperacion `recent8` en lugar de vecino simplificado | openmdw-1.1 | HuggingFace |
+| SyncWorld-mv3-strip384-views-first-v10-step17000 | no disponible | consulta + K fragmentos (K 1..8) | Difusion flow matching con recuperacion en contexto | openmdw-1.1 | Hugging Face, checkpoint intermedio |
+| SyncWorld-mv3-strip384-recent8-step* | no disponible | consulta + K fragmentos | Misma familia, recuperacion `recent8` en lugar de vecino simplificado | openmdw-1.1 | Hugging Face |
 | cosmos-framework-dev strip384 (`gripperhead-mv-strip384-4x3-fork174k-4x8`, iter 43500) | no disponible | no disponible | Modelo base del que se inicializa, sin recuperacion | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la informacion proporcionada.
@@ -89,6 +89,6 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yyuncong/SyncWorld-mv3-strip384-views-first-v10-step17000
+- Hugging Face: https://huggingface.co/yyuncong/SyncWorld-mv3-strip384-views-first-v10-step17000
 - Variante comparada recent8: https://huggingface.co/yyuncong/SyncWorld-mv3-strip384-recent8-step
 - Licencia openmdw-1.1 (NVIDIA Cosmos): https://github.com/NVIDIA/Cosmos/blob/main/LICENSE

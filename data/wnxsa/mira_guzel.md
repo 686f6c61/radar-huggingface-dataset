@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`wnxsa/mira_guzel` es un repositorio de modelo publicado en HuggingFace por el usuario wnxsa el 24 de octubre de 2026 y actualizado el mismo dia. La model card asociada contiene unicamente la declaracion de licencia (`openrail`), sin ninguna descripcion del modelo, de su arquitectura, de los datos de entrenamiento ni de sus capacidades. El repositorio no declara pipeline de inferencia ni idiomas soportados.
+`wnxsa/mira_guzel` es un repositorio de modelo publicado en Hugging Face por el usuario wnxsa el 24 de octubre de 2026 y actualizado el mismo dia. La model card asociada contiene unicamente la declaracion de licencia (`openrail`), sin ninguna descripcion del modelo, de su arquitectura, de los datos de entrenamiento ni de sus capacidades. El repositorio no declara pipeline de inferencia ni idiomas soportados.
 
 A dia de la consulta, el repositorio acumula 0 descargas y 0 likes, no tiene documentacion tecnica publicada ni resultados de evaluacion, y no se ha identificado ningun paper, blog o repositorio de codigo asociado. El unico dato cuantitativo disponible es el tamano del repositorio, 0,1 GB, que acota el orden de magnitud de los pesos almacenados pero no permite determinar el numero de parametros ni la tarea para la que fue entrenado.
 
@@ -73,7 +73,7 @@ No disponible. Sin conocer arquitectura, numero de parametros ni tarea, no es po
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Comparabilidad |
 |---|---|---|---|---|---|
-| wnxsa/mira_guzel | no disponible | no disponible | openrail | HuggingFace | referencia |
+| wnxsa/mira_guzel | no disponible | no disponible | openrail | Hugging Face | referencia |
 | Alternativas | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -89,5 +89,5 @@ No disponible. Sin conocer arquitectura, numero de parametros ni tarea, no es po
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wnxsa/mira_guzel
+- Hugging Face: https://huggingface.co/wnxsa/mira_guzel
 - Paper, blog, repositorio de codigo o demo: no disponible; no se ha localizado ningun recurso adicional asociado al modelo.

@@ -6,7 +6,7 @@ SKOPION Verdict 4B v15.0 Native-Sovereign es un modelo de decisión y evaluació
 
 La arquitectura parte de un backbone transformer de 4B parámetros sometido a fusión SLERP (alpha = 0,85) sobre el que se injerta una cabeza `verdict_head.pt` entrenada en bfloat16 en el clúster RWTH Aachen CLAIX-2023 (4x NVIDIA H100 80GB). El modelo se distribuye con pesos BF16 nativos (8,04 GB) y dispone de variantes INT8 (4,22 GB) e INT4 (2,25 GB) con invariancia de decisión del 100% respecto a BF16 en las 250 sondas de calibración bilaterales.
 
-Su relevancia actual radica en tres factores: invariancia a la posición de los candidatos (99,97% de consistencia en 5.405 pares conmutados), abstención determinista `[ABSTAIN_HUMAN_REVIEW]` cuando la no conformidad supera el umbral alpha = 0,01, y un consumo energético verificado de 3,87 J por decisión en H100. La licencia es propietaria y los pesos no son de descarga libre: el repositorio de HuggingFace es una liberación solo de metadatos.
+Su relevancia actual radica en tres factores: invariancia a la posición de los candidatos (99,97% de consistencia en 5.405 pares conmutados), abstención determinista `[ABSTAIN_HUMAN_REVIEW]` cuando la no conformidad supera el umbral alpha = 0,01, y un consumo energético verificado de 3,87 J por decisión en H100. La licencia es propietaria y los pesos no son de descarga libre: el repositorio de Hugging Face es una liberación solo de metadatos.
 
 ## Especificaciones tecnicas
 
@@ -95,7 +95,7 @@ La comparativa se limita a los modelos de referencia citados por el propio autor
 
 ## Limitaciones y advertencias
 
-- Pesos no descargables: el repositorio de HuggingFace es una liberación solo de metadatos (model card, telemetría y manifiestos SHA-256); los safetensors y `verdict_head.pt` requieren aprovisionamiento a través de skopion.de para entidades verificadas de infraestructura crítica europea e investigación.
+- Pesos no descargables: el repositorio de Hugging Face es una liberación solo de metadatos (model card, telemetría y manifiestos SHA-256); los safetensors y `verdict_head.pt` requieren aprovisionamiento a través de skopion.de para entidades verificadas de infraestructura crítica europea e investigación.
 - Licencia propietaria: la SKOPION Sovereign KRITIS & Enterprise Audit License v1.0 restringe el uso comercial y limita el acceso a entidades verificadas; no es una licencia open source.
 - Benchmarks no verificados: los resultados del model-index tienen `verified: false` y proceden del propio autor; no hay replicación independiente.
 - Idiomas limitados: solo alemán, inglés y polaco; no se documenta soporte para castellano ni otras lenguas.
@@ -108,7 +108,7 @@ La comparativa se limita a los modelos de referencia citados por el propio autor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SKOPION-Intelligence/skopion-verdict-4b-v15.0-native
+- Hugging Face: https://huggingface.co/SKOPION-Intelligence/skopion-verdict-4b-v15.0-native
 - Programa de investigación y aprovisionamiento: https://skopion.de/de/forschung-innovation/skopion-verdict-ki-forschungsprogramm
 - Sitio del autor: https://skopion.de
 - Dataset de evaluación: SKOPION-Intelligence/SKOPION-Verdict-Bench-56Suites (referenciado en el model-index; no se proporciona URL directa)

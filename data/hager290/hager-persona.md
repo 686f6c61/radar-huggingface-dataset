@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Hager290/hager-persona es un ajuste fino (fine-tuning) del modelo Qwen2.5-3B-Instruct publicado por el usuario Hager290 en HuggingFace. Se trata de un modelo de generacion de texto de tipo conversacional, con 3.085.938.688 parametros (aproximadamente 3,09 mil millones) y pesos almacenados en formato safetensors. El entrenamiento se realizo partiendo de la version cuantizada a 4 bits de Qwen2.5-3B-Instruct preparada por Unsloth, utilizando la libreria Unsloth junto con TRL de HuggingFace, segun declara el propio autor en la model card.
+Hager290/hager-persona es un ajuste fino (fine-tuning) del modelo Qwen2.5-3B-Instruct publicado por el usuario Hager290 en Hugging Face. Se trata de un modelo de generacion de texto de tipo conversacional, con 3.085.938.688 parametros (aproximadamente 3,09 mil millones) y pesos almacenados en formato safetensors. El entrenamiento se realizo partiendo de la version cuantizada a 4 bits de Qwen2.5-3B-Instruct preparada por Unsloth, utilizando la libreria Unsloth junto con TRL de Hugging Face, segun declara el propio autor en la model card.
 
 El modelo se presenta bajo licencia Apache 2.0 y declara unicamente el ingles como idioma soportado. No incorpora una model card descriptiva mas alla de la plantilla generada automaticamente por Unsloth, por lo que no hay informacion publica sobre el conjunto de datos de ajuste, el numero de tokens de entrenamiento, la composicion del dataset ni los hiperparametros utilizados. Tampoco se documentan resultados de evaluacion.
 
@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Hager290/hager-persona | 3,09 B | no disponible | apache-2.0 | safetensors en HuggingFace |
-| unsloth/qwen2.5-3b-instruct-unsloth-bnb-4bit (modelo base) | ~3,09 B | no disponible en la informacion proporcionada | apache-2.0 (heredada del modelo original) | safetensors en HuggingFace |
+| Hager290/hager-persona | 3,09 B | no disponible | apache-2.0 | safetensors en Hugging Face |
+| unsloth/qwen2.5-3b-instruct-unsloth-bnb-4bit (modelo base) | ~3,09 B | no disponible en la informacion proporcionada | apache-2.0 (heredada del modelo original) | safetensors en Hugging Face |
 | Alternativas de la misma categoria (modelos instructivos de ~3-4 B) | no disponible | no disponible | no disponible | no disponible |
 
 En el segmento de modelos instructivos de 3 a 4 mil millones de parametros existen otras alternativas conocidas, pero la informacion proporcionada en esta busqueda no incluye sus especificaciones ni resultados de evaluacion comparables, por lo que no se presentan cifras que no puedan verificarse. La unica comparacion defendible con los datos disponibles es la del ajuste frente a su modelo base, y en ese caso no hay benchmarks publicados que permitan cuantificar la diferencia.
@@ -86,7 +86,7 @@ En el segmento de modelos instructivos de 3 a 4 mil millones de parametros exist
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Hager290/hager-persona
+- Modelo en Hugging Face: https://huggingface.co/Hager290/hager-persona
 - Modelo base: https://huggingface.co/unsloth/qwen2.5-3b-instruct-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Resultados de la busqueda web: no se han encontrado enlaces relevantes al modelo. Los resultados devueltos corresponden a la plataforma monday.com y no guardan relacion con este repositorio.

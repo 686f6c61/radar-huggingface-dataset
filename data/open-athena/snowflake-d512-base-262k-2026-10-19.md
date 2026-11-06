@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros totales | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Snowflake d512 Base 262K | 746,6 M | 262.144 (configurado) | OpenMDW-1.1 | HuggingFace; requiere runtime con Grug MoE |
+| Snowflake d512 Base 262K | 746,6 M | 262.144 (configurado) | OpenMDW-1.1 | Hugging Face; requiere runtime con Grug MoE |
 | Snowball (etapa previa de la escalera) | no disponible | 8K / 64K / 262K segun etapa | no disponible | Referenciado en Marin issue #10753 |
 | Alternativas MoE compactas de la misma categoria | no disponible | no disponible | no disponible | no disponible |
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento ni de modelos comparables evaluados en las
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/open-athena/Snowflake-d512-Base-262K-2026.10.19
+- Hugging Face: https://huggingface.co/open-athena/Snowflake-d512-Base-262K-2026.10.19
 - Marin issue #10753 (opción 3 y comparación de etapas): https://github.com/marin-community/marin/issues/10753
 - Implementación `SnowballConfig` y `SnowballLMHeadModel` en Levanter: https://github.com/marin-community/marin/blob/260d93767112780da77918f2c3394ee09608bf04/lib/levanter/src/levanter/models/snowball.py
 - API `load_hf_checkpoint`: https://github.com/marin-community/marin/blob/260d93767112780da77918f2c3394ee09608bf04/lib/levanter/src/levanter/model_loading.py

@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rhasspy/voice-labs-models (Parakeet 110M) | ASR transducer TDT-CTC | 110M | no disponible | CC-BY-4.0 | HuggingFace |
-| nvidia/parakeet-tdt_ctc-110m | ASR transducer TDT-CTC | 110M | no disponible | CC-BY-4.0 | HuggingFace (origen) |
-| csukuangfj/sherpa-onnx-nemo-parakeet_tdt_transducer_110m-en-36000 | ASR exportado a ONNX | 110M | no disponible | CC-BY-4.0 | HuggingFace (origen del export) |
-| fastino/gliner2.5-small-v1 | Etiquetado cero-disparo | no disponible | no disponible | Apache-2.0 | HuggingFace (origen) |
+| rhasspy/voice-labs-models (Parakeet 110M) | ASR transducer TDT-CTC | 110M | no disponible | CC-BY-4.0 | Hugging Face |
+| nvidia/parakeet-tdt_ctc-110m | ASR transducer TDT-CTC | 110M | no disponible | CC-BY-4.0 | Hugging Face (origen) |
+| csukuangfj/sherpa-onnx-nemo-parakeet_tdt_transducer_110m-en-36000 | ASR exportado a ONNX | 110M | no disponible | CC-BY-4.0 | Hugging Face (origen del export) |
+| fastino/gliner2.5-small-v1 | Etiquetado cero-disparo | no disponible | no disponible | Apache-2.0 | Hugging Face (origen) |
 
 No se dispone de datos de rendimiento comparativo en la informacion proporcionada.
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo en la informacion proporcionad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rhasspy/voice-labs-models
+- Hugging Face: https://huggingface.co/rhasspy/voice-labs-models
 - Voice Labs app: https://github.com/OHF-Voice/apps-experimental/tree/master/voice_labs
 - Parakeet origen: https://huggingface.co/nvidia/parakeet-tdt_ctc-110m
 - Export transducer: https://huggingface.co/csukuangfj/sherpa-onnx-nemo-parakeet_tdt_transducer_110m-en-36000

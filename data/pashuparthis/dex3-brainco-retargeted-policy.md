@@ -119,7 +119,7 @@ No se dispone de datos de parámetros, contexto ni licencia de los modelos base 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pashuparthis/dex3-brainco-retargeted-policy
+- Modelo en Hugging Face: https://huggingface.co/pashuparthis/dex3-brainco-retargeted-policy
 - Modelo base: https://huggingface.co/nvidia/GN1x-Tuned-Arena-G1-Static-PickNPlace
 - Dataset de entrenamiento: https://huggingface.co/datasets/pashuparthis/mimic_apple_pick_and_place
 - Repositorio del pipeline (asset de Revo2, capa de retargeting, generación de datos y harness de evaluación): https://github.com/pashuparthis/dex3_brainco_retargeting

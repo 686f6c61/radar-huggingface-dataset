@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sac-PandaReachDense-v3` es un agente de aprendizaje por refuerzo publicado por el usuario `bestdive` en HuggingFace. Se trata de una política entrenada con el algoritmo SAC (Soft Actor-Critic) mediante la librería Stable Baselines3 2.3.2 sobre el entorno `PandaReachDense-v3` de panda-gym, un simulador de brazo robótico Franka Emika Panda ejecutado sobre PyBullet. No es un modelo de lenguaje: no genera texto, no procesa instrucciones y no dispone de ventana de contexto ni de cuantizaciones, por lo que buena parte de las métricas habituales de una ficha de LLM no son aplicables.
+`sac-PandaReachDense-v3` es un agente de aprendizaje por refuerzo publicado por el usuario `bestdive` en Hugging Face. Se trata de una política entrenada con el algoritmo SAC (Soft Actor-Critic) mediante la librería Stable Baselines3 2.3.2 sobre el entorno `PandaReachDense-v3` de panda-gym, un simulador de brazo robótico Franka Emika Panda ejecutado sobre PyBullet. No es un modelo de lenguaje: no genera texto, no procesa instrucciones y no dispone de ventana de contexto ni de cuantizaciones, por lo que buena parte de las métricas habituales de una ficha de LLM no son aplicables.
 
 El propio autor lo describe como el trabajo de curso de la Unidad 6 de Kay Zheng, entrenado desde cero con asistencia de herramientas de programación con IA. El entrenamiento se realizó en CPU durante 20.000 pasos de entorno con semilla 42, una cifra muy reducida para una tarea de control continuo con SAC y que se refleja en el rendimiento declarado: recompensa media de -0,2263 ± 0,1048 en una evaluación de 100 episodios con semillas 100000–100099 (media menos desviación: -0,33115).
 
@@ -79,7 +79,7 @@ Comparativa cualitativa con alternativas de la misma categoria (políticas de co
 
 | Alternativa | Parametros | Contexto / tarea | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (SAC, SB3) | No disponible | PandaReachDense-v3, observaciones vectoriales | mean_reward -0,2263 +/- 0,1048 (autor, no verificado) | MIT | HuggingFace, 0 descargas |
+| Este modelo (SAC, SB3) | No disponible | PandaReachDense-v3, observaciones vectoriales | mean_reward -0,2263 +/- 0,1048 (autor, no verificado) | MIT | Hugging Face, 0 descargas |
 | SAC con Hindsight Experience Replay en panda-gym | No disponible | Misma familia de tareas, recompensa dispersa o densa | No disponible | Segun implementacion | No disponible en la informacion proporcionada |
 | TD3 o PPO sobre PandaReachDense-v3 | No disponible | Misma tarea | No disponible | Segun implementacion | No disponible en la informacion proporcionada |
 | Baselines del RL Baselines3 Zoo para panda-gym | No disponible | Tareas panda-gym, habitualmente con entrenamientos de orden de millones de pasos | No disponible | MIT (proyecto base) | Publicos como hiperparametros de referencia, cifras no consultadas |
@@ -99,7 +99,7 @@ Comparativa cualitativa con alternativas de la misma categoria (políticas de co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bestdive/sac-PandaReachDense-v3
+- Modelo en Hugging Face: https://huggingface.co/bestdive/sac-PandaReachDense-v3
 - Archivo de evaluacion del autor: `evaluation.json` (referenciado en la model card del repositorio; sin URL directa en la informacion proporcionada)
 - Script de entrenamiento: `train_panda.py` (referenciado en la model card del repositorio; sin URL directa en la informacion proporcionada)
 - Referencias de las librerias citadas por el autor (no procedentes de la busqueda web): Stable Baselines3 (https://github.com/DLR-RM/stable-baselines3), panda-gym (https://github.com/qgallouedec/panda-gym), Gymnasium (https://gymnasium.farama.org/)

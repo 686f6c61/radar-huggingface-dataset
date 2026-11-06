@@ -80,8 +80,8 @@ No se dispone de datos de modelos comparables en la informacion proporcionada. E
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| laya-guard-multilingual | 321.908.998 | no disponible | Apache-2.0 | HuggingFace |
-| Laya (base, checkpoint multilingue) | no disponible | no disponible | Apache-2.0 | HuggingFace (convaiinnovations/laya) |
+| laya-guard-multilingual | 321.908.998 | no disponible | Apache-2.0 | Hugging Face |
+| Laya (base, checkpoint multilingue) | no disponible | no disponible | Apache-2.0 | Hugging Face (convaiinnovations/laya) |
 
 ## Limitaciones y advertencias
 
@@ -97,7 +97,7 @@ No se dispone de datos de modelos comparables en la informacion proporcionada. E
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ayaannnnnnn/laya-guard-multilingual
+- Hugging Face: https://huggingface.co/Ayaannnnnnn/laya-guard-multilingual
 - Modelo base Laya: https://huggingface.co/convaiinnovations/laya
 - Repositorio laya-guard: https://github.com/scs0209/laya-guard
 - Herramientas de fine-tune: https://github.com/scs0209/laya-guard/tree/main/finetune

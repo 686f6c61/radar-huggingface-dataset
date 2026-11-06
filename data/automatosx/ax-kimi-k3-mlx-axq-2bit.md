@@ -73,8 +73,8 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- HuggingFace del paquete: https://huggingface.co/AutomatosX/AX-Kimi-K3-MLX-AXQ-2bit
+- Hugging Face del paquete: https://huggingface.co/AutomatosX/AX-Kimi-K3-MLX-AXQ-2bit
 - Repositorio GitHub con el port MLX de Kimi-K3: https://github.com/PipeNetwork/kimi-k3-mlx
-- Blog de HuggingFace sobre Kimi K3 (MXFP4 y open weights): https://huggingface.co/blog/ResterChed/kimi-k3-model-overview-mxfp4-quantization-open-wei
+- Blog de Hugging Face sobre Kimi K3 (MXFP4 y open weights): https://huggingface.co/blog/ResterChed/kimi-k3-model-overview-mxfp4-quantization-open-wei
 - Pagina oficial de Kimi K3: https://www.kimi.ai/ai-models/kimi-k3
 - Coleccion de modelos MLX de AutomatosX: https://huggingface.co/collections/AutomatosX/automatosx-mlx-model-catalog

@@ -4,7 +4,7 @@
 
 Terminus XL Velocity Training es un fine-tune de rango completo (full rank finetune) del modelo de difusión latente Terminus XL Velocity v2, desarrollado por el equipo de terminusresearch. Este modelo se enmarca dentro de la familia Terminus XL, que introduce un esquema de ruido de relación señal-ruido terminal cero (zero-terminal SNR) y un objetivo de predicción de velocidad (velocity prediction) tanto en entrenamiento como en inferencia, una alternativa a la predicción de ruido estándar que mejora la estabilidad y la calidad de las muestras generadas.
 
-El checkpoint está pensado como un punto de partida para continuar el entrenamiento o para realizar ajustes adicionales, más que como un modelo listo para inferencia directa. Con aproximadamente 2.567 millones de parámetros, hereda la arquitectura de Stable Diffusion XL, lo que le permite generar imágenes de alta resolución (típicamente 1024×1024) a partir de descripciones textuales. Su relevancia radica en que representa un experimento abierto de fine-tune completo sobre una base ya optimizada con velocity prediction, y su acceso está restringido mediante aceptación de condiciones en HuggingFace.
+El checkpoint está pensado como un punto de partida para continuar el entrenamiento o para realizar ajustes adicionales, más que como un modelo listo para inferencia directa. Con aproximadamente 2.567 millones de parámetros, hereda la arquitectura de Stable Diffusion XL, lo que le permite generar imágenes de alta resolución (típicamente 1024×1024) a partir de descripciones textuales. Su relevancia radica en que representa un experimento abierto de fine-tune completo sobre una base ya optimizada con velocity prediction, y su acceso está restringido mediante aceptación de condiciones en Hugging Face.
 
 El repositorio ocupa más de 1 terabyte, lo que sugiere que incluye checkpoints de entrenamiento completos o múltiples versiones, y no está diseñado para su uso directo en producción sin un proceso de conversión o destilación previo.
 
@@ -70,7 +70,7 @@ La comparativa se limita a modelos de la misma familia arquitectonica. La difere
 
 ## Limitaciones y advertencias
 
-- El acceso al modelo es restringido (gated) en HuggingFace; es necesario aceptar las condiciones de uso antes de poder descargarlo, lo que puede limitar su adopcion en entornos corporativos.
+- El acceso al modelo es restringido (gated) en Hugging Face; es necesario aceptar las condiciones de uso antes de poder descargarlo, lo que puede limitar su adopcion en entornos corporativos.
 - El repositorio de 1052 GB no es practico para la mayoria de usuarios; se recomienda contactar con los autores para obtener checkpoints mas ligeros o instrucciones de conversion.
 - Al ser un fine-tune de rango completo, existe riesgo de sobreajuste al dataset de entrenamiento, lo que puede reducir la diversidad de las imagenes generadas fuera del dominio de los datos de entrenamiento.
 - No se han documentado sesgos especificos, pero como modelo entrenado con datos de internet, puede reflejar sesgos de genero, raza o cultura presentes en el dataset de SDXL.
@@ -81,7 +81,7 @@ La comparativa se limita a modelos de la misma familia arquitectonica. La difere
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/terminusresearch/terminus-xl-velocity-training
+- Modelo en Hugging Face: https://huggingface.co/terminusresearch/terminus-xl-velocity-training
 - Modelo base v1: https://huggingface.co/terminusresearch/terminus-xl-velocity-v1
 - Referencia en Toolify: https://www.toolify.ai/ai-model/bghira-terminus-xl-velocity-training
 - Referencia en OpenCSG: https://opencsg.com/models/AIWizards/terminus-xl-velocity-training

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-pumpkn-6 es un modelo de generación de texto de 124,28 millones de parámetros desarrollado por el usuario FatalMistake02 y publicado en HuggingFace bajo licencia CC BY-SA 4.0. Se trata de un experimento de entrenamiento temprano, entrenado desde cero ("from-scratch"), cuyo propio autor describe en la model card como "absolute garbage" y advierte que deben esperarse respuestas incorrectas y sinsentidos. No es un modelo destinado a producción ni a evaluación comparativa seria, sino un artefacto de investigación sobre el proceso de entrenamiento de modelos pequeños.
+pumpkn-6 es un modelo de generación de texto de 124,28 millones de parámetros desarrollado por el usuario FatalMistake02 y publicado en Hugging Face bajo licencia CC BY-SA 4.0. Se trata de un experimento de entrenamiento temprano, entrenado desde cero ("from-scratch"), cuyo propio autor describe en la model card como "absolute garbage" y advierte que deben esperarse respuestas incorrectas y sinsentidos. No es un modelo destinado a producción ni a evaluación comparativa seria, sino un artefacto de investigación sobre el proceso de entrenamiento de modelos pequeños.
 
 El modelo emplea una ventana de contexto de 2.048 tokens y se distribuye en formato GGUF en precisión F16, lo que sugiere que está pensado para ejecutarse con llama.cpp u otras herramientas compatibles con dicho formato. Su tamaño de repositorio es de aproximadamente 0,2 GB, coherente con los 124 millones de parámetros en F16.
 
@@ -30,7 +30,7 @@ Tampoco se publican datos sobre el número de tokens de entrenamiento, la compos
 ## Capacidades
 
 - Generación de texto conversacional básica, según el tag "conversational" y el pipeline text-generation.
-- Compatibilidad con endpoints (tag "endpoints_compatible"), lo que permite desplegarlo mediante la infraestructura de inferencia de HuggingFace.
+- Compatibilidad con endpoints (tag "endpoints_compatible"), lo que permite desplegarlo mediante la infraestructura de inferencia de Hugging Face.
 - Soporte únicamente del idioma inglés.
 - No se documenta soporte de tool calling, function calling, agentes, razonamiento multi-paso, visión, audio ni modo de pensamiento.
 - El propio autor advierte que el modelo produce respuestas incorrectas y sinsentidos, por lo que sus capacidades prácticas son mínimas.
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: en torno a 0,25 GB en F16 (124,28 M de parámetros × 2 bytes), más el overhead del runtime y de la caché KV para 2.048 tokens.
 - GPU recomendadas: cualquier GPU consumer moderna es suficiente; el modelo cabe holgadamente en tarjetas con 4 GB o menos de VRAM, e incluso puede ejecutarse en CPU.
 - Cabe en GPU consumer: sí, en cualquier GPU con al menos 2-4 GB de VRAM (por ejemplo, GTX 1650, RTX 3050, RTX 4060) y en la mayoría de iGPU y CPU.
-- Opciones de despliegue: llama.cpp y derivados (Ollama, LM Studio) por el formato GGUF; también es compatible con endpoints de HuggingFace según el tag correspondiente.
+- Opciones de despliegue: llama.cpp y derivados (Ollama, LM Studio) por el formato GGUF; también es compatible con endpoints de Hugging Face según el tag correspondiente.
 - Latencia y throughput estimados: no disponibles. Por el tamaño del modelo, se espera una latencia muy baja en hardware consumer, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
@@ -80,5 +80,5 @@ La comparación con GPT-2 small es la más pertinente por escala y contexto, aun
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/FatalMistake02/pumpkn-6
+- Hugging Face: https://huggingface.co/FatalMistake02/pumpkn-6
 - Créditos del dataset: https://huggingface.co/FatalMistake02/pumpkn-6/blob/main/ATTRIBUTION.md (referenciado en la model card; contenido no disponible)

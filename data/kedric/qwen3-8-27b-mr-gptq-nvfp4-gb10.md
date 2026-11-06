@@ -85,7 +85,7 @@ No hay datos de rendimiento comparativo entre estas variantes en la información
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kedric/Qwen3.8-27B-MR-GPTQ-NVFP4-GB10
+- Repositorio Hugging Face: https://huggingface.co/kedric/Qwen3.8-27B-MR-GPTQ-NVFP4-GB10
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Runtime veloGB10: https://github.com/kedric/veloGB10
 - Documentación del modelo base en Groq: https://console.groq.com/docs/model/qwen/qwen3.8-27b

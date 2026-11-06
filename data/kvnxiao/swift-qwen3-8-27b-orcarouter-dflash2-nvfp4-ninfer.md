@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `kvnxiao/swift-qwen3.8-27b-orcarouter-dflash2-nvfp4-ninfer` es un modelo publicado en HuggingFace por el usuario kvnxiao el 20 de septiembre de 2026. La informacion disponible se limita a la model card, que unicamente declara la licencia (`other`, con nombre `swift-open-license-1.0`) y la region (`us`); no incluye descripcion del modelo, arquitectura, datos de entrenamiento, benchmarks ni ejemplos de uso.
+El repositorio `kvnxiao/swift-qwen3.8-27b-orcarouter-dflash2-nvfp4-ninfer` es un modelo publicado en Hugging Face por el usuario kvnxiao el 20 de septiembre de 2026. La informacion disponible se limita a la model card, que unicamente declara la licencia (`other`, con nombre `swift-open-license-1.0`) y la region (`us`); no incluye descripcion del modelo, arquitectura, datos de entrenamiento, benchmarks ni ejemplos de uso.
 
 El identificador del repositorio sugiere una serie de caracteristicas (una base de la familia Qwen3 en torno a 27 000 millones de parametros, cuantizacion NVFP4, y componentes denominados `orcarouter`, `dflash2` y `ninfer`), pero ninguno de estos extremos esta confirmado en la informacion proporcionada. Se trata, por tanto, de inferencias derivadas del nombre del repositorio y no de datos verificados.
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kvnxiao/swift-qwen3.8-27b-orcarouter-dflash2-nvfp4-ninfer | no disponible | no disponible | no disponible | other (`swift-open-license-1.0`) | HuggingFace, 0 descargas |
+| kvnxiao/swift-qwen3.8-27b-orcarouter-dflash2-nvfp4-ninfer | no disponible | no disponible | no disponible | other (`swift-open-license-1.0`) | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion suficiente para establecer una comparativa fiable con otros modelos de la misma categoria, ni para confirmar cual es la categoria de referencia del modelo.
@@ -73,7 +73,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kvnxiao/swift-qwen3.8-27b-orcarouter-dflash2-nvfp4-ninfer
+- Hugging Face: https://huggingface.co/kvnxiao/swift-qwen3.8-27b-orcarouter-dflash2-nvfp4-ninfer
 - Licencia declarada (referencia `LICENSE` en el repositorio): no disponible como enlace directo en la informacion proporcionada
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible

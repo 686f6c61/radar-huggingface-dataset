@@ -2,7 +2,7 @@
 
 ## Resumen
 
-bge-small-en-ner-hw2 es un modelo de reconocimiento de entidades nombradas (NER) obtenido por ajuste fino del encoder BAAI/bge-small-en-v1.5, publicado por el usuario pandapythoner en HuggingFace. Se trata de un modelo de clasificación de tokens (pipeline `token-classification`) con 33.215.625 parámetros, distribuido en formato safetensors y con licencia MIT. Su propósito es etiquetar secuencias de texto en inglés detectando entidades, no generar texto.
+bge-small-en-ner-hw2 es un modelo de reconocimiento de entidades nombradas (NER) obtenido por ajuste fino del encoder BAAI/bge-small-en-v1.5, publicado por el usuario pandapythoner en Hugging Face. Se trata de un modelo de clasificación de tokens (pipeline `token-classification`) con 33.215.625 parámetros, distribuido en formato safetensors y con licencia MIT. Su propósito es etiquetar secuencias de texto en inglés detectando entidades, no generar texto.
 
 El modelo parte de bge-small-en-v1.5, un encoder tipo BERT de ~33 M de parámetros desarrollado por BAAI y orientado originalmente a embeddings de recuperación. El ajuste fino se realizó con el `Trainer` de Transformers durante 10 épocas, con `learning_rate` de 2e-05, batch de 16 y semilla 42, alcanzando en el conjunto de evaluación una F1 de 0.9141, precisión de 0.9019 y recall de 0.9266.
 
@@ -83,10 +83,10 @@ No se dispone de resultados comparativos publicados para este modelo. La compara
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pandapythoner/bge-small-en-ner-hw2 | 33,2 M | 512 tokens (segun modelo base) | F1 0.9141 en su conjunto de evaluacion (dataset no documentado) | MIT | HuggingFace, 0 descargas, 0 likes |
-| BAAI/bge-small-en-v1.5 (modelo base) | ~33 M | 512 tokens | No disponible; orientado a embeddings, no a NER | MIT | HuggingFace, ampliamente utilizado |
-| dslim/bert-base-NER | ~108 M (no confirmado en la informacion disponible) | 512 tokens | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | HuggingFace |
-| xlm-roberta-large-finetuned-conll03-english | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | HuggingFace |
+| pandapythoner/bge-small-en-ner-hw2 | 33,2 M | 512 tokens (segun modelo base) | F1 0.9141 en su conjunto de evaluacion (dataset no documentado) | MIT | Hugging Face, 0 descargas, 0 likes |
+| BAAI/bge-small-en-v1.5 (modelo base) | ~33 M | 512 tokens | No disponible; orientado a embeddings, no a NER | MIT | Hugging Face, ampliamente utilizado |
+| dslim/bert-base-NER | ~108 M (no confirmado en la informacion disponible) | 512 tokens | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Hugging Face |
+| xlm-roberta-large-finetuned-conll03-english | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Hugging Face |
 
 La comparación de rendimiento entre estos modelos no puede realizarse con los datos aportados, ya que cada uno emplea conjuntos de evaluación distintos y el de bge-small-en-ner-hw2 no está documentado.
 
@@ -103,7 +103,7 @@ La comparación de rendimiento entre estos modelos no puede realizarse con los d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pandapythoner/bge-small-en-ner-hw2
+- Modelo en Hugging Face: https://huggingface.co/pandapythoner/bge-small-en-ner-hw2
 - Modelo base BAAI/bge-small-en-v1.5: https://huggingface.co/BAAI/bge-small-en-v1.5
 - Paper del modelo base (C-Pack: Packed Resources For General Chinese Embeddings): https://arxiv.org/abs/2309.07597
 - Librería Transformers: https://github.com/huggingface/transformers

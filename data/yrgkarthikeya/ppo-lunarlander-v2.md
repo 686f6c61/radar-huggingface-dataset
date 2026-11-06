@@ -2,11 +2,11 @@
 
 ## Resumen
 
-YRGKarthikeya/ppo-LunarLander-v2 es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v2. Lo publica el usuario YRGKarthikeya en HuggingFace utilizando la libreria stable-baselines3, el framework de referencia para implementaciones reproducibles de algoritmos de RL profundo. No se trata de un modelo de lenguaje: es una politica entrenada para resolver una tarea de control, concretamente aterrizar de forma segura una nave modular de dos dimensiones sobre una plataforma en terreno irregular.
+YRGKarthikeya/ppo-LunarLander-v2 es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v2. Lo publica el usuario YRGKarthikeya en Hugging Face utilizando la libreria stable-baselines3, el framework de referencia para implementaciones reproducibles de algoritmos de RL profundo. No se trata de un modelo de lenguaje: es una politica entrenada para resolver una tarea de control, concretamente aterrizar de forma segura una nave modular de dos dimensiones sobre una plataforma en terreno irregular.
 
 El problema que resuelve es un benchmark clasico de control continuo con acciones discretas (cuatro acciones: no hacer nada, encender motor principal, encender motor lateral izquierdo, encender motor lateral derecho), donde el agente recibe recompensas por aproximarse a la plataforma, reducir velocidad y mantener la verticalidad, y penalizaciones por consumo de combustible y por estrellarse. Segun el model-index declarado por el autor, el agente alcanza una recompensa media de 286,36 +/- 12,71, muy por encima del umbral de 200 que se considera resolucion del entorno.
 
-Su relevancia es principalmente docente y de investigacion: sirve como artefacto reproducible para comparar configuraciones de PPO, como punto de partida para tecnicas de imitation learning o de RL offline, y como caso de estudio de despliegue de politicas pequenas en HuggingFace Hub. El repositorio tiene 0 descargas y 0 likes, un tamano declarado de 0,0 GB y no incluye fragmentos de codigo de uso (la model card contiene un "TODO: Add your code" sin desarrollar), por lo que debe considerarse un artefacto experimental sin validacion externa.
+Su relevancia es principalmente docente y de investigacion: sirve como artefacto reproducible para comparar configuraciones de PPO, como punto de partida para tecnicas de imitation learning o de RL offline, y como caso de estudio de despliegue de politicas pequenas en Hugging Face Hub. El repositorio tiene 0 descargas y 0 likes, un tamano declarado de 0,0 GB y no incluye fragmentos de codigo de uso (la model card contiene un "TODO: Add your code" sin desarrollar), por lo que debe considerarse un artefacto experimental sin validacion externa.
 
 ## Especificaciones tecnicas
 
@@ -77,7 +77,7 @@ No se han publicado en la informacion disponible resultados adicionales de MMLU,
 
 | Modelo | Algoritmo | Entorno | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| YRGKarthikeya/ppo-LunarLander-v2 | PPO | LunarLander-v2 | no disponible | no aplica | no disponible | HuggingFace, 0 descargas |
+| YRGKarthikeya/ppo-LunarLander-v2 | PPO | LunarLander-v2 | no disponible | no aplica | no disponible | Hugging Face, 0 descargas |
 | Agentes PPO del RL Baselines3 Zoo | PPO | LunarLander-v2 | no disponible | no aplica | MIT (segun el repositorio de RL Zoo) | Repositorio de referencia de stable-baselines3 |
 | Politicas DQN sobre LunarLander-v2 | DQN | LunarLander-v2 | no disponible | no aplica | depende de la implementacion | Multiples checkpoints publicos sin verificacion |
 | Politicas A2C sobre LunarLander-v2 | A2C | LunarLander-v2 | no disponible | no aplica | depende de la implementacion | Multiples checkpoints publicos sin verificacion |
@@ -99,7 +99,7 @@ No se dispone de datos de rendimiento de los modelos comparables en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/YRGKarthikeya/ppo-LunarLander-v2
+- Modelo en Hugging Face: https://huggingface.co/YRGKarthikeya/ppo-LunarLander-v2
 - Libreria stable-baselines3: https://github.com/DLR-RM/stable-baselines3
 - Repositorio RL Baselines3 Zoo (agentes de referencia en entornos Gym): https://github.com/DLR-RM/rl-baselines3-zoo
 - Documentacion del entorno LunarLander en Gymnasium: https://gymnasium.farama.org/environments/box2d/lunar_lander/

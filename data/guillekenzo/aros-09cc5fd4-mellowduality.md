@@ -69,7 +69,7 @@ No se dispone de informacion suficiente para comparar este adaptador con otros L
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/guillekenzo/aros-09cc5fd4-MellowDuality
+- Repositorio Hugging Face: https://huggingface.co/guillekenzo/aros-09cc5fd4-MellowDuality
 - Modelo base (Krea 2 RAW): https://huggingface.co/krea/Krea-2-Raw
 - Modelo base (Krea 2 Turbo): https://huggingface.co/krea/Krea-2-Turbo
 - Documentacion de Diffusers para LoRA: https://huggingface.co/docs/diffusers/en/using-diffusers/loading_adapters

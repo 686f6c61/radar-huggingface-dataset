@@ -92,7 +92,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/mradermacher/RuBio-9B-GGUF
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/mradermacher/RuBio-9B-GGUF
 - Modelo base: https://huggingface.co/mulkzz/RuBio-9B
 - Pagina de descargas del autor: https://hf.tst.eu/model#RuBio-9B-GGUF
 - FAQ y solicitudes de cuantizacion de mradermacher: https://huggingface.co/mradermacher/model_requests

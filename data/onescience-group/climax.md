@@ -4,7 +4,7 @@
 
 ClimaX es un modelo fundacional de propósito general para la ciencia del clima y la meteorología, desarrollado conjuntamente por Microsoft Research y la Universidad de California en Los Ángeles (UCLA). Fue presentado en ICML 2023 en el artículo *ClimaX: A Foundation Model for Weather and Climate*. Se trata del primer modelo que unifica el pre-entrenamiento sobre conjuntos de datos climáticos heterogéneos y la adaptación a tareas posteriores, como la predicción regional y las proyecciones climáticas, dentro de un único marco.
 
-La arquitectura se basa en el Vision Transformer (ViT), lo que le permite procesar campos atmosféricos como imágenes multi-canal. El modelo está pre-entrenado con datos ERA5 y se adapta a diversas tareas de predicción mediante ajuste fino. La versión publicada en HuggingFace por OneScience-Group es una reproducción del modelo original bajo licencia MIT, orientada a facilitar su uso en entornos de investigación y desarrollo, con soporte para entrenamiento en GPU y DCU.
+La arquitectura se basa en el Vision Transformer (ViT), lo que le permite procesar campos atmosféricos como imágenes multi-canal. El modelo está pre-entrenado con datos ERA5 y se adapta a diversas tareas de predicción mediante ajuste fino. La versión publicada en Hugging Face por OneScience-Group es una reproducción del modelo original bajo licencia MIT, orientada a facilitar su uso en entornos de investigación y desarrollo, con soporte para entrenamiento en GPU y DCU.
 
 La relevancia actual de ClimaX radica en su enfoque de modelo fundacional aplicado a un dominio científico con datos masivos y heterogéneos, lo que abre la puerta a transferir el aprendizaje entre distintas variables climáticas y regiones, reduciendo la necesidad de entrenar modelos específicos desde cero.
 
@@ -64,7 +64,7 @@ Existen otros modelos de predicción meteorológica basados en aprendizaje profu
 
 | Modelo | Arquitectura | Pre-entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ClimaX (esta versión) | Vision Transformer | ERA5 | MIT | HuggingFace |
+| ClimaX (esta versión) | Vision Transformer | ERA5 | MIT | Hugging Face |
 | FourCastNet | Transformer + FNO | ERA5 | CC-BY-NC | GitHub |
 | Pangu-Weather | Transformer 3D | ERA5 | CC-BY-NC | GitHub |
 | GraphCast | Graph Neural Network | ERA5 | CC-BY-NC | GitHub |
@@ -82,7 +82,7 @@ Nota: los datos de licencia y arquitectura de los modelos alternativos provienen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OneScience-Group/ClimaX
+- Modelo en Hugging Face: https://huggingface.co/OneScience-Group/ClimaX
 - Paper original (arXiv): https://arxiv.org/abs/2301.10343
 - Repositorio OneScience en GitHub: https://github.com/onescience-ai/OneScience
 - Repositorio OneScience en Gitee: https://gitee.com/onescience-ai/onescience

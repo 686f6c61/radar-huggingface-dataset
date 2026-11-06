@@ -2,7 +2,7 @@
 
 ## Resumen
 
-La ficha corresponde al repositorio de HuggingFace `threebaby/nude`, publicado por el usuario `threebaby`. Se trata de un repositorio con un tamano de 10,8 GB, etiquetado con `region:us` y `not-for-all-audiences`, con 0 descargas y 1 like en el momento de la consulta. La fecha de creacion registrada es el 13 de mayo de 2026 y la de ultima actualizacion el 21 de septiembre de 2026, fechas que no coinciden con el calendario actual y que conviene verificar directamente en la plataforma.
+La ficha corresponde al repositorio de Hugging Face `threebaby/nude`, publicado por el usuario `threebaby`. Se trata de un repositorio con un tamano de 10,8 GB, etiquetado con `region:us` y `not-for-all-audiences`, con 0 descargas y 1 like en el momento de la consulta. La fecha de creacion registrada es el 13 de mayo de 2026 y la de ultima actualizacion el 21 de septiembre de 2026, fechas que no coinciden con el calendario actual y que conviene verificar directamente en la plataforma.
 
 No se dispone de informacion sobre la arquitectura, el numero de parametros, la longitud de contexto, los idiomas soportados ni la licencia. El pipeline no esta declarado, lo que impide determinar si se trata de un modelo de lenguaje, un modelo de difusion, un modelo multimodal o cualquier otra categoria. Tampoco existe model card publica con datos de entrenamiento o evaluacion.
 
@@ -96,7 +96,7 @@ No disponible. No se ha podido identificar la categoria del modelo ni, por tanto
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/threebaby/nude
+- Hugging Face: https://huggingface.co/threebaby/nude
 - Enlaces relevantes adicionales (paper, blog, repositorio de codigo, demo): no disponibles.
 
 Nota: la busqueda web no devolvio ningun resultado relacionado con el modelo. Los enlaces recuperados (kleinanzeigen.de, traktorpool.de, landwirt.com y la entrada de Wikipedia sobre "Güllefass") corresponden a anuncios y articulos sobre cubas de purin agricolas y no guardan relacion con el repositorio, por lo que se omiten de esta lista.

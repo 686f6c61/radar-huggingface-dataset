@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FishClassifier es un repositorio de modelo publicado en HuggingFace por el usuario ulziikhishig bajo la identificacion `ulziikhishig/FishClassifier`. La unica informacion verificable disponible es la etiqueta de licencia (`openrail`), la region declarada (`us`) y los contadores publicos de la plataforma: cero descargas y cero likes en la fecha de consulta. El repositorio no incluye pipeline declarado, idiomas soportados ni una model card con contenido tecnico: el README se limita a repetir el campo `license: openrail` en su encabezado YAML, sin descripcion, sin instrucciones de uso y sin referencias.
+FishClassifier es un repositorio de modelo publicado en Hugging Face por el usuario ulziikhishig bajo la identificacion `ulziikhishig/FishClassifier`. La unica informacion verificable disponible es la etiqueta de licencia (`openrail`), la region declarada (`us`) y los contadores publicos de la plataforma: cero descargas y cero likes en la fecha de consulta. El repositorio no incluye pipeline declarado, idiomas soportados ni una model card con contenido tecnico: el README se limita a repetir el campo `license: openrail` en su encabezado YAML, sin descripcion, sin instrucciones de uso y sin referencias.
 
 El nombre del repositorio sugiere que el artefacto esta pensado para clasificacion de imagenes de peces, pero esta inferencia procede unicamente del identificador y no esta confirmada por ningun metadato, etiqueta de pipeline ni documentacion del autor. No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto, dataset de entrenamiento ni proceso de ajuste.
 
@@ -91,5 +91,5 @@ No disponible. No puede establecerse una comparativa fiable porque se desconoce 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ulziikhishig/FishClassifier
+- Hugging Face: https://huggingface.co/ulziikhishig/FishClassifier
 - No se han encontrado en la informacion proporcionada enlaces adicionales a papers, blogs, repositorios de codigo o demos.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OvisOCR3-AWQ-W4A16 es una cuantizacion AWQ de 4 bits (W4A16) del modelo vision-lenguaje ATH-MaaS/OvisOCR3, un sistema especializado en OCR y procesamiento de documentos. El autor de esta version cuantizada es el usuario de HuggingFace leleroyn, mientras que el modelo original pertenece a ATH-MaaS. El objetivo es reducir el peso del checkpoint de 1,59 GiB en BF16 a 942,5 MiB manteniendo la torre visual y la cabeza de lenguaje (`lm_head`) en BF16, de modo que el modelo pueda desplegarse en entornos con recursos limitados sin renunciar a la precision del reconocimiento de texto en imagenes.
+OvisOCR3-AWQ-W4A16 es una cuantizacion AWQ de 4 bits (W4A16) del modelo vision-lenguaje ATH-MaaS/OvisOCR3, un sistema especializado en OCR y procesamiento de documentos. El autor de esta version cuantizada es el usuario de Hugging Face leleroyn, mientras que el modelo original pertenece a ATH-MaaS. El objetivo es reducir el peso del checkpoint de 1,59 GiB en BF16 a 942,5 MiB manteniendo la torre visual y la cabeza de lenguaje (`lm_head`) en BF16, de modo que el modelo pueda desplegarse en entornos con recursos limitados sin renunciar a la precision del reconocimiento de texto en imagenes.
 
 La arquitectura subyacente es `Qwen3_5ForConditionalGeneration`, con 24 capas organizadas de forma hibrida: 18 capas Gated DeltaNet (atencion lineal de tipo Mamba) y 6 capas de atencion completa. Se trata, por tanto, de un modelo compacto (el autor lo describe como de 0,8B) orientado a la transcripcion de documentos densos, tablas y texto estructurado. La cuantizacion se ha generado con `llmcompressor==0.15.0` y se ha validado con vLLM 0.32.0, con latencias de aproximadamente 0,26 s por pagina en modo individual.
 
@@ -67,8 +67,8 @@ Los unicos datos de rendimiento aportados por el autor son de inferencia con vLL
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OvisOCR3-AWQ-W4A16 (este) | ~0,8B (no confirmado) | no disponible (ejemplo con 15 000) | AWQ W4A16, 942,5 MiB | apache-2.0 | HuggingFace, verificado en vLLM 0.32.0 |
-| ATH-MaaS/OvisOCR3 (base) | ~0,8B (no confirmado) | no disponible | BF16, 1,59 GiB | apache-2.0 | HuggingFace |
+| OvisOCR3-AWQ-W4A16 (este) | ~0,8B (no confirmado) | no disponible (ejemplo con 15 000) | AWQ W4A16, 942,5 MiB | apache-2.0 | Hugging Face, verificado en vLLM 0.32.0 |
+| ATH-MaaS/OvisOCR3 (base) | ~0,8B (no confirmado) | no disponible | BF16, 1,59 GiB | apache-2.0 | Hugging Face |
 | Otros modelos OCR vision-lenguaje | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre modelos comparables de la misma categoria en la documentacion proporcionada.
@@ -86,7 +86,7 @@ No se dispone de informacion sobre modelos comparables de la misma categoria en 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/leleroyn/OvisOCR3-AWQ-W4A16
+- Repositorio Hugging Face: https://huggingface.co/leleroyn/OvisOCR3-AWQ-W4A16
 - Modelo base: https://huggingface.co/ATH-MaaS/OvisOCR3
 - Libreria de cuantizacion: llmcompressor 0.15.0 (referenciada en la model card; no se proporciona URL)
 - Motor de inferencia verificado: vLLM 0.32.0 (referenciado en la model card; no se proporciona URL)

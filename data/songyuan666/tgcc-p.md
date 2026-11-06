@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parámetros | Contexto | Rendimiento en `cook_hot_dogs` | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TGCC-P | no disponible | no disponible | 10/20 (50%), Q 0,5000 | no disponible | HuggingFace (Songyuan666/TGCC-P) |
+| TGCC-P | no disponible | no disponible | 10/20 (50%), Q 0,5000 | no disponible | Hugging Face (Songyuan666/TGCC-P) |
 | TGCC-F (full-model 5000-update) | no disponible | no disponible | 11/20 (55%), Q 0,55 | no disponible | Referenciado por el autor, no detallado |
-| TC-π0.5 (modelo base) | no disponible | no disponible | no disponible | no disponible | HuggingFace (Songyuan666/TC-pi0.5) |
+| TC-π0.5 (modelo base) | no disponible | no disponible | no disponible | no disponible | Hugging Face (Songyuan666/TC-pi0.5) |
 
 No se dispone de datos de benchmarks ni de especificaciones de parámetros o contexto para establecer una comparación cuantitativa con alternativas de la misma categoría.
 
@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks ni de especificaciones de parámetros o con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Songyuan666/TGCC-P
+- Modelo en Hugging Face: https://huggingface.co/Songyuan666/TGCC-P
 - Modelo base TC-pi0.5: https://huggingface.co/Songyuan666/TC-pi0.5
 - Resultados por instancia: `evaluation/results.md`
 - Resultados en CSV: `evaluation/results.csv`

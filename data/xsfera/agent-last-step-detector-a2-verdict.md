@@ -4,7 +4,7 @@
 
 agent-last-step-detector-a2-verdict es un adaptador LoRA publicado por el usuario xsfera sobre el modelo Qwen/Qwen3-4B-Instruct-2507. No es un modelo entrenado desde cero, sino un conjunto de pesos de ajuste fino en formato PEFT (safetensors) que debe cargarse junto con el modelo base para poder ejecutarse. El repositorio ocupa 1,6 GB y, en el momento de la consulta, acumula 0 descargas y 0 "me gusta", por lo que se trata de un artefacto recién publicado y sin validación pública.
 
-El nombre del adaptador sugiere un clasificador o verificador del último paso de una trayectoria de agente (por ejemplo, decidir si el agente ha terminado, si el paso es válido o emitir un veredicto), pero la model card es la plantilla por defecto de HuggingFace y no documenta propósito, datos de entrenamiento ni métricas. Cualquier afirmación sobre su comportamiento concreto es inferencia a partir del nombre y no un dato confirmado por el autor.
+El nombre del adaptador sugiere un clasificador o verificador del último paso de una trayectoria de agente (por ejemplo, decidir si el agente ha terminado, si el paso es válido o emitir un veredicto), pero la model card es la plantilla por defecto de Hugging Face y no documenta propósito, datos de entrenamiento ni métricas. Cualquier afirmación sobre su comportamiento concreto es inferencia a partir del nombre y no un dato confirmado por el autor.
 
 Su interés práctica es indirecta y se apoya en el modelo base: Qwen3-4B-Instruct-2507 es un transformer denso de 4.000 millones de parámetros, con 262.144 tokens de contexto y licencia Apache 2.0, ejecutable en una GPU de consumo. El adaptador, sin embargo, no declara licencia propia ni idiomas, de modo que su reutilización en producción exige verificar previamente esos extremos con el autor.
 
@@ -52,7 +52,7 @@ No hay ningún dato publicado sobre el entrenamiento del adaptador: se desconoce
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card del autor es la plantilla por defecto de HuggingFace y no incluye sección de evaluación cumplimentada, ni métricas de precisión, ni comparaciones con otros modelos. No se dispone tampoco de datos de latencia o *throughput* del adaptador.
+No se han publicado resultados de benchmarks en la información disponible. La model card del autor es la plantilla por defecto de Hugging Face y no incluye sección de evaluación cumplimentada, ni métricas de precisión, ni comparaciones con otros modelos. No se dispone tampoco de datos de latencia o *throughput* del adaptador.
 
 ## Requisitos de hardware
 
@@ -70,11 +70,11 @@ La comparación directa con otros detectores de pasos de agente no es posible: n
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| agent-last-step-detector-a2-verdict (adaptador) | No disponible | No disponible | No disponible | HuggingFace, 0 descargas |
-| Qwen3-4B-Instruct-2507 (base) | 4.000 M | 262.144 tokens | Apache 2.0 | HuggingFace, ampliamente distribuido |
-| Llama-3.2-3B-Instruct | 3.200 M | 128.000 tokens | Licencia comunitaria Llama 3.2 | HuggingFace, muy extendido |
-| Gemma-3-4B-it | 4.000 M | 128.000 tokens | Términos de uso de Gemma | HuggingFace |
-| Phi-4-mini-instruct | 3.800 M | 128.000 tokens | MIT | HuggingFace |
+| agent-last-step-detector-a2-verdict (adaptador) | No disponible | No disponible | No disponible | Hugging Face, 0 descargas |
+| Qwen3-4B-Instruct-2507 (base) | 4.000 M | 262.144 tokens | Apache 2.0 | Hugging Face, ampliamente distribuido |
+| Llama-3.2-3B-Instruct | 3.200 M | 128.000 tokens | Licencia comunitaria Llama 3.2 | Hugging Face, muy extendido |
+| Gemma-3-4B-it | 4.000 M | 128.000 tokens | Términos de uso de Gemma | Hugging Face |
+| Phi-4-mini-instruct | 3.800 M | 128.000 tokens | MIT | Hugging Face |
 
 Ninguno de los modelos alternativos es un detector de pasos de agente: son modelos de propósito general que requerirían su propio ajuste para esa tarea. La ventaja del adaptador analizado sería, en su caso, la especialización; su desventaja, la ausencia total de documentación, métricas y licencia declarada.
 
@@ -92,7 +92,7 @@ Ninguno de los modelos alternativos es un detector de pasos de agente: son model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xsfera/agent-last-step-detector-a2-verdict
+- Modelo en Hugging Face: https://huggingface.co/xsfera/agent-last-step-detector-a2-verdict
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Librería PEFT: https://github.com/huggingface/peft
 - Referencia citada en la plantilla de la model card (Lacoste et al., 2019, sobre estimación de emisiones de carbono, no es el paper del modelo): https://arxiv.org/abs/1910.09700

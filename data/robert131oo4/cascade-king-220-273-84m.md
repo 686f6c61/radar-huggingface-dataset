@@ -2,7 +2,7 @@
 
 ## Resumen
 
-king-220 es un checkpoint de un modelo de series temporales con arquitectura MoE (mixture of experts) publicado por el usuario robert131OO4 en HuggingFace. Se trata de un modelo de 273,84 millones de parámetros entrenado como parte de una factoría de evaluación local, con un presupuesto de entrenamiento de una hora y un límite de tokens de 19.224.592.384, aunque finalmente solo se procesaron 4.445.962.240 tokens en 2120 pasos sobre una NVIDIA A100-SXM4-80GB. El modelo fue inicializado a partir de `cascade-moe-v2-28m-273.84m`, lo que indica que es un refinamiento o continuación de entrenamiento de una familia previa denominada cascade-moe.
+king-220 es un checkpoint de un modelo de series temporales con arquitectura MoE (mixture of experts) publicado por el usuario robert131OO4 en Hugging Face. Se trata de un modelo de 273,84 millones de parámetros entrenado como parte de una factoría de evaluación local, con un presupuesto de entrenamiento de una hora y un límite de tokens de 19.224.592.384, aunque finalmente solo se procesaron 4.445.962.240 tokens en 2120 pasos sobre una NVIDIA A100-SXM4-80GB. El modelo fue inicializado a partir de `cascade-moe-v2-28m-273.84m`, lo que indica que es un refinamiento o continuación de entrenamiento de una familia previa denominada cascade-moe.
 
 La relevancia de este checkpoint es limitada y muy específica: se trata de un artefacto de evaluación interna (local-eval checkpoint) más que de un modelo listo para producción. El autor lo publica junto con copias de linaje (`weights_raw`, `weights_stable`, `weights_ema005`) y el estado del optimizador, lo que sugiere que su interés principal es la reproducibilidad y la inspección del proceso de entrenamiento, no el despliegue directo. La model card indica explícitamente `training_complete: False` y `deadline_hit: True`, es decir, el entrenamiento se detuvo por límite de tiempo y no por convergencia.
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| king-220 (Cascade MoE 273.84M) | 273,84 M | no disponible | MIT | HuggingFace, 0 descargas | Checkpoint de evaluación local, entrenamiento incompleto |
+| king-220 (Cascade MoE 273.84M) | 273,84 M | no disponible | MIT | Hugging Face, 0 descargas | Checkpoint de evaluación local, entrenamiento incompleto |
 | cascade-moe-v2-28m-273.84m | 273,84 M (presumible) | no disponible | no disponible | referenciado como origen del warm-start | Modelo base del que parte king-220 |
 | Alternativas de forecasting MoE | no disponible | no disponible | no disponible | no disponible | No se dispone de información sobre modelos comparables en la misma categoría |
 
@@ -74,9 +74,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 - No se especifica la longitud de contexto ni la ventana de entrada esperada por el wrapper.
 - Aunque la licencia MIT permite uso comercial, la falta de benchmarks y de garantías de calidad desaconseja su uso en producción sin una evaluación exhaustiva previa.
 - El repositorio incluye el estado del optimizador y múltiples copias de pesos, lo que eleva el tamaño a 4,4 GB; conviene revisar qué archivos son necesarios para inferencia.
-- No hay información sobre el pipeline de HuggingFace ni sobre integración con frameworks estándar de despliegue.
+- No hay información sobre el pipeline de Hugging Face ni sobre integración con frameworks estándar de despliegue.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/robert131OO4/cascade-king-220-273.84m
+- Modelo en Hugging Face: https://huggingface.co/robert131OO4/cascade-king-220-273.84m
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la información proporcionada.

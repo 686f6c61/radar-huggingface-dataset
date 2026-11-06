@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mix_1.0 es un modelo publicado en HuggingFace por el usuario joSeb5777777777777777777 bajo licencia Apache 2.0. Se trata de un modelo derivado, presumiblemente un merge o un ajuste fino, construido a partir de tres modelos base declarados en la model card: Qwen/Qwen3.6-35B-A3B, ornith-ai/Ornith-1.5-35B-A3B y Kwaipilot/KAT-Coder-V2.5-Dev. La model card se limita a un bloque YAML con la licencia y la lista de modelos base; no incluye descripcion, datos de entrenamiento, tokenizador, plantilla de chat ni resultados de evaluacion.
+Mix_1.0 es un modelo publicado en Hugging Face por el usuario joSeb5777777777777777777 bajo licencia Apache 2.0. Se trata de un modelo derivado, presumiblemente un merge o un ajuste fino, construido a partir de tres modelos base declarados en la model card: Qwen/Qwen3.6-35B-A3B, ornith-ai/Ornith-1.5-35B-A3B y Kwaipilot/KAT-Coder-V2.5-Dev. La model card se limita a un bloque YAML con la licencia y la lista de modelos base; no incluye descripcion, datos de entrenamiento, tokenizador, plantilla de chat ni resultados de evaluacion.
 
 La nomenclatura de los modelos base (35B-A3B) sigue la convencion habitual de los modelos Mixture-of-Experts de la familia Qwen, en la que el primer numero indica parametros totales y el segundo parametros activos por token. Si esa correspondencia se mantiene, Mix_1.0 tendria del orden de 35.000 millones de parametros totales y unos 3.000 millones activos por token. Es, sin embargo, una inferencia a partir del nombre que el autor no confirma en ningun momento, por lo que debe tratarse como no verificada.
 
@@ -41,7 +41,7 @@ Tampoco se documentan datos de entrenamiento: no se indica numero de tokens, com
 - Generacion de codigo: plausible por herencia de Kwaipilot/KAT-Coder-V2.5-Dev, pero no verificado ni declarado por el autor.
 - Tool calling / function calling: no disponible. No se especifica formato de herramientas ni soporte de plantillas.
 - Modo agente y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible. El campo de idiomas de HuggingFace aparece vacio.
+- Capacidades multilingues: no disponible. El campo de idiomas de Hugging Face aparece vacio.
 - Capacidades multimodales (vision, audio): no disponible; no se declara procesador de imagen ni de audio.
 - Modo de razonamiento explicito (thinking): no disponible.
 - Capacidad de contexto largo: no disponible.
@@ -97,7 +97,7 @@ No se dispone de datos de rendimiento de ninguno de los cuatro modelos en la inf
 - Cero adopcion verificable: 0 descargas y 0 likes implican ausencia de informes de terceros, de issues y de pruebas independientes.
 - Procedencia del merge desconocida: no se indica la tecnica de combinacion ni los pesos relativos, por lo que no puede descartarse una degradacion de capacidades por interferencia entre los tres modelos base (perdida de alineacion, colapso de formato de chat o regresion en codigo).
 - Riesgo de alucinacion: desconocido, pero tiende a aumentar en mezclas no evaluadas, especialmente si los modelos base tenian distribuciones de datos muy distintas.
-- Idiomas no declarados: el campo de idiomas esta vacio en HuggingFace; no hay garantia de comportamiento correcto en castellano ni en ningun otro idioma.
+- Idiomas no declarados: el campo de idiomas esta vacio en Hugging Face; no hay garantia de comportamiento correcto en castellano ni en ningun otro idioma.
 - Contexto desconocido: no puede planificarse un caso de uso con documentos largos sin medir previamente la ventana efectiva.
 - Licencia: el autor declara Apache 2.0, pero al ser un derivado debe verificarse que los tres modelos base permitan la redistribucion bajo esos terminos y que no impongan clausulas adicionales (por ejemplo, condiciones de uso aceptable o restricciones de atribucion) que prevalezcan sobre la licencia declarada.
 - Nombre de usuario y de repositorio sin reputacion asociada: conviene tratar el modelo como no fiable para produccion hasta que exista una evaluacion propia con un conjunto de validacion representativo.
@@ -105,7 +105,7 @@ No se dispone de datos de rendimiento de ninguno de los cuatro modelos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joSeb5777777777777777777/Mix_1.0
+- Modelo en Hugging Face: https://huggingface.co/joSeb5777777777777777777/Mix_1.0
 - Modelo base Qwen/Qwen3.6-35B-A3B: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Modelo base ornith-ai/Ornith-1.5-35B-A3B: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Modelo base Kwaipilot/KAT-Coder-V2.5-Dev: https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev

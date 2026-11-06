@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un merge experimental de tres checkpoints intermedios de un entrenamiento de alineación filtrada, creado por el usuario `yuhengtu-bytedance` (vinculado a ByteDance). Se trata de una fusión lineal (método *linear* de mergekit, basado en el paper "Model Soups" arxiv:2203.05482) de los pasos de entrenamiento global 4000, 5000 y 6000 de un modelo base no especificado, con pesos 1, 2 y 3 respectivamente, usando el checkpoint de paso 6000 como base. El resultado es un modelo de 6.856.253.440 parámetros (aproximadamente 6,86 mil millones) con arquitectura GPT-NeoX, según los tags de HuggingFace.
+Este modelo es un merge experimental de tres checkpoints intermedios de un entrenamiento de alineación filtrada, creado por el usuario `yuhengtu-bytedance` (vinculado a ByteDance). Se trata de una fusión lineal (método *linear* de mergekit, basado en el paper "Model Soups" arxiv:2203.05482) de los pasos de entrenamiento global 4000, 5000 y 6000 de un modelo base no especificado, con pesos 1, 2 y 3 respectivamente, usando el checkpoint de paso 6000 como base. El resultado es un modelo de 6.856.253.440 parámetros (aproximadamente 6,86 mil millones) con arquitectura GPT-NeoX, según los tags de Hugging Face.
 
 El modelo se publica sin licencia declarada, sin idiomas especificados y sin documentación de capacidades o benchmarks. Su interés principal reside en el estudio de técnicas de fusión de pesos de checkpoints intermedios, no en su uso directo en producción. Al ser un merge de pasos de entrenamiento de un modelo de alineación, podría conservar propiedades de seguridad o alineación del modelo original, pero no hay evidencia pública que lo confirme.
 
@@ -10,7 +10,7 @@ El modelo se publica sin licencia declarada, sin idiomas especificados y sin doc
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-NeoX (según tags de HuggingFace) |
+| Arquitectura | GPT-NeoX (según tags de Hugging Face) |
 | Parametros totales | 6.856.253.440 (6,86 B) |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
@@ -67,7 +67,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_midtrain_alignment-4k_5k_6k_weightedavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_midtrain_alignment-4k_5k_6k_weightedavg_merge
 - Merge similar (promedio simple): https://huggingface.co/yuhengtu-bytedance/sfm-filtered-midtrain-alignment-4k-5k-6k-avg
 - Merge similar (sin pesos ponderados): https://huggingface.co/yuhengtu-bytedance/sfm_filtered_midtrain_alignment-4k_5k_6k_merge
 - Merge con otros pasos (3k, 4k, 5k): https://huggingface.co/yuhengtu-bytedance/sfm_filtered_midtrain_alignment-3k_4k_5k_merge

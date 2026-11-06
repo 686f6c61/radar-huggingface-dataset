@@ -76,7 +76,7 @@ La comparativa se limita a la disponibilidad de datos. El modelo original de NVI
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/bjnortier/coreai-parakeet-tdt-0.6b-v3-float16-static
+- Repositorio de Hugging Face: https://huggingface.co/bjnortier/coreai-parakeet-tdt-0.6b-v3-float16-static
 - Modelo original de NVIDIA: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Colección NGC de Parakeet TDT 0.6B: https://catalog.ngc.nvidia.com/orgs/nvidia/collections/parakeet-tdt-0.6b
 - CirceKit (librería Swift para Core AI): https://github.com/bjnortier

@@ -110,7 +110,7 @@ La comparación relevante es contra el base en BF16: mismo número de parámetro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dealignai/Nemotron-3.5-Super-VL-120B-A12B-CYBER-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/dealignai/Nemotron-3.5-Super-VL-120B-A12B-CYBER-NVFP4
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16
 - Licencia NVIDIA Open Model License: https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-open-model-license/
 - Perfil del autor: https://x.com/dealignai

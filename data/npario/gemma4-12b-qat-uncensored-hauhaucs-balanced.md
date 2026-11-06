@@ -97,7 +97,7 @@ No se dispone de datos de rendimiento de terceros en la informacion proporcionad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/npario/Gemma4-12B-QAT-Uncensored-HauhauCS-Balanced
+- Modelo en Hugging Face: https://huggingface.co/npario/Gemma4-12B-QAT-Uncensored-HauhauCS-Balanced
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Discord del autor (HauhauCS): https://discord.gg/SZ5vacTXYf
 - Paper, blog o repositorio adicionales: no disponible en la informacion proporcionada.

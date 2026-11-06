@@ -92,7 +92,7 @@ No se dispone de comparaciones directas con otros modelos podados de tamano simi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hellohazime/Qwen3.8-2.4T-A95B-REAP-256GB-GGUF
+- Modelo en Hugging Face: https://huggingface.co/hellohazime/Qwen3.8-2.4T-A95B-REAP-256GB-GGUF
 - Modelo base (GGUF cuantizado): https://huggingface.co/unsloth/Qwen3.8-2.4T-A95B-GGUF
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B
 - Licencia del modelo original: https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B/blob/main/LICENSE

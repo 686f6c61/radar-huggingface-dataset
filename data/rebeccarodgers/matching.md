@@ -2,7 +2,7 @@
 
 ## Resumen
 
-rebeccarodgers/matching es un repositorio experimental publicado en HuggingFace que contiene una implementacion propia de una arquitectura tipo Flamingo a escala reducida, orientada a tareas de matching. No se trata de un modelo entrenado ni de un checkpoint con resultados verificados: la propia model card indica explicitamente que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y que no se reclama ninguna puntuacion de benchmark.
+rebeccarodgers/matching es un repositorio experimental publicado en Hugging Face que contiene una implementacion propia de una arquitectura tipo Flamingo a escala reducida, orientada a tareas de matching. No se trata de un modelo entrenado ni de un checkpoint con resultados verificados: la propia model card indica explicitamente que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y que no se reclama ninguna puntuacion de benchmark.
 
 El peso del repositorio es minimo (0,0 GB) y el recuento de parametros declarado en los safetensors es de 33.088 parametros, una cifra coherente con el enfoque "small" que describe el autor para poder inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. El artefacto principal no es el checkpoint, sino el codigo (`pipeline.py`) y los ficheros de configuracion (`config.json`, `training_args.json`) que documentan la receta por defecto.
 
@@ -93,5 +93,5 @@ No se dispone de modelos comparables documentados en la informacion proporcionad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rebeccarodgers/matching
+- Hugging Face: https://huggingface.co/rebeccarodgers/matching
 - No se han encontrado en la busqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo.

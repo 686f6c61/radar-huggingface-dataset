@@ -106,7 +106,7 @@ Comparativa con alternativas externas (Faster R-CNN, YOLO, etc.): no disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fastforks/detr
+- Hugging Face: https://huggingface.co/fastforks/detr
 - Kernels del backend: https://huggingface.co/fastforks/kernels
 - Repositorio de la librería: https://github.com/kleinicke/fastforks
 - Documentación de benchmarks: https://github.com/kleinicke/fastforks/blob/main/docs/benchmarks.md

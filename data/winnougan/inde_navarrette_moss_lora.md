@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Comparativa con modelos similares
 
-No disponible. En la información proporcionada no hay datos verificables de adaptadores LoRA de personaje comparables (mismo modelo base, mismo tamaño o misma tarea). Las LoRA de personaje se distribuyen habitualmente en plataformas como Civitai o el propio HuggingFace, pero sin fichas técnicas publicadas resulta imposible una comparación rigurosa de parámetros, rendimiento o licencia. El propio autor no publica otros modelos: su trabajo público se centra en nodos para ComfyUI (Nougan_Nodes y winnougan-nodes), no en pesos.
+No disponible. En la información proporcionada no hay datos verificables de adaptadores LoRA de personaje comparables (mismo modelo base, mismo tamaño o misma tarea). Las LoRA de personaje se distribuyen habitualmente en plataformas como Civitai o el propio Hugging Face, pero sin fichas técnicas publicadas resulta imposible una comparación rigurosa de parámetros, rendimiento o licencia. El propio autor no publica otros modelos: su trabajo público se centra en nodos para ComfyUI (Nougan_Nodes y winnougan-nodes), no en pesos.
 
 ## Limitaciones y advertencias
 
@@ -71,7 +71,7 @@ No disponible. En la información proporcionada no hay datos verificables de ada
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Winnougan/Inde_Navarrette_Moss_LoRA
+- Repositorio en Hugging Face: https://huggingface.co/Winnougan/Inde_Navarrette_Moss_LoRA
 - Nougan_Nodes (nodos de ComfyUI del autor, con tooling de LoRA y captioning de datasets): https://github.com/Winnougan/Nougan_Nodes
 - winnougan-nodes (nodos de ComfyUI del autor, con nodos INT8 para inferencia cuantizada): https://github.com/Winnougan/winnougan-nodes
 - Perfil de GitHub del autor: https://github.com/Winnougan

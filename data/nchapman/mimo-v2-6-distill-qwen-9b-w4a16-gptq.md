@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Formato / cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nchapman/MiMo-V2.6-Distill-Qwen-9B-W4A16-GPTQ | 9,41B | No disponible | safetensors, GPTQ W4A16 | MIT | HuggingFace, orientado a vLLM |
-| XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B (base) | 9,41B | No disponible | safetensors BF16 | MIT | HuggingFace |
+| nchapman/MiMo-V2.6-Distill-Qwen-9B-W4A16-GPTQ | 9,41B | No disponible | safetensors, GPTQ W4A16 | MIT | Hugging Face, orientado a vLLM |
+| XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B (base) | 9,41B | No disponible | safetensors BF16 | MIT | Hugging Face |
 | Otras cuantizaciones del mismo base | 9,41B | No disponible | No disponible | MIT (heredada) | No disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones de contexto que permitan una comparación cuantitativa con alternativas de terceros de tamaño similar; la comparación relevante y verificable es frente al modelo base, donde la diferencia es de precisión (INT4 en capas lineales frente a BF16) y de huella de memoria (8,6 GB de repositorio frente al peso completo en BF16).
@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks ni de especificaciones de contexto que perm
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nchapman/MiMo-V2.6-Distill-Qwen-9B-W4A16-GPTQ
+- Modelo en Hugging Face: https://huggingface.co/nchapman/MiMo-V2.6-Distill-Qwen-9B-W4A16-GPTQ
 - Modelo base: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B
 - Dataset de calibración: https://huggingface.co/datasets/nvidia/Nemotron-Cascade-2-SFT-Data
 - Filas exactas de calibración (datos congelados): https://huggingface.co/datasets/nchapman/warp-3090-quant-lab-frozen-data

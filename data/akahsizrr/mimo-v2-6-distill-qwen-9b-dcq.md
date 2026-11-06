@@ -107,7 +107,7 @@ Frente a alternativas de otros fabricantes en el rango de 9B (Qwen, Llama, Gemma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Akahsizrr/mimo-v2.6-distill-qwen-9b-dcq
+- Modelo en Hugging Face: https://huggingface.co/Akahsizrr/mimo-v2.6-distill-qwen-9b-dcq
 - Modelo base referenciado en la model card: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B
 - Codigo del cuantizador y evaluador: carpeta `quant_lab/` dentro del repositorio del modelo (`quant_learned.py`, `sens_probe.py`, `probe_gdn.py`, `eval_openai.py`, `dequant_to_bf16.py`)
 - Log de cuantizacion por tensor: `quant_learned_log.json` en cada variante (`w4/`, `w3mix/`, `w2mix/`)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MeshGraphNet es una red neuronal sobre grafos (GNN) desarrollada originalmente por DeepMind y publicada en ICLR 2021 (paper arXiv:2010.03409). El modelo aquí documentado, `ketiswp/meshgraphnet-hf`, es una implementación en formato HuggingFace Transformers entrenada específicamente para simular flujo alrededor de un cilindro (`cylinder_flow`), un caso de referencia clásico en dinámica de fluidos computacional (CFD). Dada la velocidad en cada nodo de la malla en un instante, el modelo predice el cambio de velocidad para el siguiente paso temporal, permitiendo generar trayectorias completas mediante *rollout*.
+MeshGraphNet es una red neuronal sobre grafos (GNN) desarrollada originalmente por DeepMind y publicada en ICLR 2021 (paper arXiv:2010.03409). El modelo aquí documentado, `ketiswp/meshgraphnet-hf`, es una implementación en formato Hugging Face Transformers entrenada específicamente para simular flujo alrededor de un cilindro (`cylinder_flow`), un caso de referencia clásico en dinámica de fluidos computacional (CFD). Dada la velocidad en cada nodo de la malla en un instante, el modelo predice el cambio de velocidad para el siguiente paso temporal, permitiendo generar trayectorias completas mediante *rollout*.
 
 El modelo tiene 2.332.962 parámetros totales y se distribuye en formato safetensors con código personalizado (`trust_remote_code=True`). No es un modelo de lenguaje: es un modelo de extracción de características sobre grafos de malla, orientado a la predicción de campos físicos. Su relevancia radica en que reproduce los resultados del paper original (RMSE 1-step de 2,35 × 10⁻³ frente a 2,34 × 10⁻³ del paper) con una latencia por paso notablemente inferior (4,0 ms frente a 21 ms del paper en hardware distinto).
 
@@ -69,7 +69,7 @@ Mediciones sobre 100 trayectorias de test; el error indicado es el error estánd
 
 | Modelo | Parámetros | Contexto / dominio | RMSE 1-step ×10⁻³ | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ketiswp/meshgraphnet-hf | 2,33 M | cylinder_flow (CFD) | 2,35 | Apache-2.0 | HuggingFace |
+| ketiswp/meshgraphnet-hf | 2,33 M | cylinder_flow (CFD) | 2,35 | Apache-2.0 | Hugging Face |
 | MeshGraphNet original (DeepMind) | no disponible | cylinder_flow (CFD) | 2,34 | Apache-2.0 (código) | GitHub `deepmind-research` |
 | medav/meshgraphnets-torch | no disponible | meshgraphnets (varios) | no disponible | no disponible | GitHub |
 
@@ -88,7 +88,7 @@ La comparación directa con el paper original es la más relevante: misma precis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ketiswp/meshgraphnet-hf
+- Modelo en Hugging Face: https://huggingface.co/ketiswp/meshgraphnet-hf
 - Paper MeshGraphNet (arXiv:2010.03409): https://arxiv.org/abs/2010.03409
 - Código original DeepMind: https://github.com/google-deepmind/deepmind-research/tree/master/meshgraphnets
 - Implementación PyTorch de referencia: https://github.com/medav/meshgraphnets-torch

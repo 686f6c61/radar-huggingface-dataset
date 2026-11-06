@@ -6,7 +6,7 @@ ClearView Derain NAFNet Small es un modelo de eliminacion de lluvia en una sola 
 
 La relevancia de este modelo radica en su enfoque de "dominio mixto": en lugar de entrenar solo con lluvia sintetica (que suele tener un aspecto artificial), incorpora conjuntos de datos reales como SPA-Data y RealRain-1k, sobremuestreados para equilibrar la proporcion. Esto lo hace especialmente util para aplicaciones practicas como conduccion autonoma, vigilancia o fotografia movil, donde las condiciones de lluvia real son muy variables. El checkpoint se selecciona mediante una metrica de validacion combinada que evita que un solo dataset domine el proceso.
 
-El modelo se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones significativas. Se integra con la libreria ClearView, que proporciona una API sencilla para cargar el modelo y procesar imagenes. Aunque el repositorio de HuggingFace no muestra descargas ni likes, la ficha tecnica incluye metricas detalladas en multiples conjuntos de prueba, tanto sinteticos como reales.
+El modelo se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones significativas. Se integra con la libreria ClearView, que proporciona una API sencilla para cargar el modelo y procesar imagenes. Aunque el repositorio de Hugging Face no muestra descargas ni likes, la ficha tecnica incluye metricas detalladas en multiples conjuntos de prueba, tanto sinteticos como reales.
 
 ## Especificaciones tecnicas
 
@@ -86,7 +86,7 @@ No se dispone de datos comparativos publicos con otros modelos de deraining en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dronefreak/clearview-derain-nafnet-small
+- Modelo en Hugging Face: https://huggingface.co/dronefreak/clearview-derain-nafnet-small
 - Repositorio ClearView: https://github.com/dronefreak/clearview
 - Configuracion de mezcla de datos (rain_mixed_synthetic_real.yaml): https://github.com/dronefreak/clearview/blob/main/configs/mix/rain_mixed_synthetic_real.yaml
 - Configuracion de validacion mezclada (rain_mixed_val.yaml): https://github.com/dronefreak/clearview/blob/main/configs/mix/rain_mixed_val.yaml

@@ -94,7 +94,7 @@ No se han publicado resultados de benchmarks sobre este fichero MLX oQ6e en la i
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/peculiar-ragdoll/Cyber-Tiel-Coder-35B-A3B-MLX-oQ6e
+- Hugging Face: https://huggingface.co/peculiar-ragdoll/Cyber-Tiel-Coder-35B-A3B-MLX-oQ6e
 - Modelo base: https://huggingface.co/huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated
 - Modelo Ornith-1.5 original: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Build GGUF del mismo modelo: https://huggingface.co/peculiar-ragdoll/Cyber-Tiel-Coder-35B-A3B-GGUF

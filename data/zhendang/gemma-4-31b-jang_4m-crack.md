@@ -102,7 +102,7 @@ No se dispone de datos comparativos directos con otros modelos abliterados en lo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ZHENDANG/Gemma-4-31B-JANG_4M-CRACK
+- Repositorio Hugging Face: https://huggingface.co/ZHENDANG/Gemma-4-31B-JANG_4M-CRACK
 - Modelo original de dealignai (ModelScope): https://www.modelscope.cn/models/dealignai/Gemma-4-31B-JANG_4M-CRACK
 - Cuantizaciones GGUF (bucket): https://huggingface.co/buckets/jinmrong/Gemma-4-31B-JANG_4M-CRACK-GGUF-bucket
 - Ficha en aimodels.fyi: https://www.aimodels.fyi/models/huggingFace/gemma-4-31b-jang-4m-crack-dealignai

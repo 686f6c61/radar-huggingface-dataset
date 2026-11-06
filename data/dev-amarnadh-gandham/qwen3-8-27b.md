@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B es un modelo de lenguaje causal denso con encoder de visión, publicado en HuggingFace por el usuario `dev-amarnadh-gandham` bajo licencia Apache 2.0. Según la model card, se trata de la generación Qwen3.8 de la familia abierta de Qwen, construida sobre la base arquitectónica de Qwen3.5 y orientada a cargas de trabajo de código, trabajo profesional, investigación y tareas agénticas de horizonte largo. El modelo combina comprensión nativa de imagen y vídeo con control flexible del modo de razonamiento.
+Qwen3.8-27B es un modelo de lenguaje causal denso con encoder de visión, publicado en Hugging Face por el usuario `dev-amarnadh-gandham` bajo licencia Apache 2.0. Según la model card, se trata de la generación Qwen3.8 de la familia abierta de Qwen, construida sobre la base arquitectónica de Qwen3.5 y orientada a cargas de trabajo de código, trabajo profesional, investigación y tareas agénticas de horizonte largo. El modelo combina comprensión nativa de imagen y vídeo con control flexible del modo de razonamiento.
 
 La arquitectura es híbrida: 64 capas organizadas en 16 bloques de la forma 3 × (Gated DeltaNet → FFN) + 1 × (Gated Attention → FFN), es decir, tres capas de atención lineal por cada capa de atención completa. El recuento real de parámetros en los ficheros safetensors del repositorio es de 27.781.427.952 (unos 27,8 B), con dimensión oculta de 5120 y vocabulario de 248.320 tokens con padding. La longitud de contexto nativa es de 262.144 tokens, extensible hasta 1.000.000.
 
@@ -84,7 +84,7 @@ La model card referencia como alternativas a Qwen3.6-27B, Qwen3.7-Plus, Muse Gli
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3.8-27B (este repositorio) | 27,78 B (denso) | 262.144 nativo / 1.000.000 extensible | Apache 2.0 | Pesos en HuggingFace (repositorio de terceros) |
+| Qwen3.8-27B (este repositorio) | 27,78 B (denso) | 262.144 nativo / 1.000.000 extensible | Apache 2.0 | Pesos en Hugging Face (repositorio de terceros) |
 | Qwen3.6-27B | no disponible | no disponible | no disponible | no disponible |
 | Qwen3.7-Plus | no disponible | no disponible | no disponible | no disponible |
 | Muse Glimmer-30B | no disponible | no disponible | no disponible | no disponible |
@@ -105,7 +105,7 @@ La model card referencia como alternativas a Qwen3.6-27B, Qwen3.7-Plus, Muse Gli
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dev-amarnadh-gandham/Qwen3.8-27B
+- Repositorio en Hugging Face: https://huggingface.co/dev-amarnadh-gandham/Qwen3.8-27B
 - Qwen Cloud (servicio mencionado en la model card): https://www.qwencloud.com
 - Página del modelo en Qwen Cloud (mencionada en la model card): https://www.qwencloud.com/models/qwen3.8-27b
 - Paper, blog técnico o repositorio de código oficial: no disponible en la información proporcionada. Los resultados de la búsqueda web recibidos (DEV Community, Dev-C++, DeviantArt) no guardan relación con el modelo y se han descartado.

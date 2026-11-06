@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hajunkhk/personal-contrastive` es un repositorio de HuggingFace publicado por el usuario hajunkhk que contiene una implementacion compacta y propia en PyTorch de MoCo v3 (Momentum Contrast v3) orientada al aprendizaje contrastivo. No se presenta como un modelo preentrenado listo para produccion, sino como un esqueleto de codigo con configuracion de arquitectura y pesos de inicializacion para pruebas de humo y experimentos controlados de pequeno alcance.
+`hajunkhk/personal-contrastive` es un repositorio de Hugging Face publicado por el usuario hajunkhk que contiene una implementacion compacta y propia en PyTorch de MoCo v3 (Momentum Contrast v3) orientada al aprendizaje contrastivo. No se presenta como un modelo preentrenado listo para produccion, sino como un esqueleto de codigo con configuracion de arquitectura y pesos de inicializacion para pruebas de humo y experimentos controlados de pequeno alcance.
 
 El checkpoint publicado tiene 24.832 parametros en formato safetensors, un orden de magnitud muy inferior al de cualquier encoder contrastivo utilizable en tareas reales de vision. El propio autor indica explicitamente que `model.safetensors` es una inicializacion valida para smoke tests y no un checkpoint entrenado ni evaluado con benchmarks.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 - Cabe en GPU de consumo: si, en cualquier GPU de consumo actual e incluso en generaciones antiguas, y tambien en CPU.
 - Opciones de despliegue: ejecucion nativa con PyTorch segun el propio `pipeline.py`; no se documenta compatibilidad con vLLM, llama.cpp, Ollama ni TGI en la informacion proporcionada. Para servir el modelo seria necesario escribir un adaptador explicito.
 - Latencia y throughput: no disponibles; en la practica estaran dominados por el coste de arranque del interprete y del framework, no por la computacion del modelo.
-- Almacenamiento: el repositorio ocupa 0,0 GB segun HuggingFace.
+- Almacenamiento: el repositorio ocupa 0,0 GB segun Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparables para ninguno de los modelos de
 - No hay auditoria de robustez, equidad, sesgo o transferencia de dominio; el autor lo declara expresamente.
 - Riesgo de alucinacion: no aplica directamente al no ser un modelo generativo de lenguaje, pero si existe el riesgo de interpretar erróneamente salidas aleatorias de un modelo no entrenado como si tuvieran significado.
 - Ausencia total de benchmarks publicados, por lo que no es posible estimar su rendimiento en ninguna tarea.
-- La carga mediante APIs automaticas genericas requiere un adaptador explicito; intentar cargarlo como un modelo estandar de HuggingFace puede fallar.
+- La carga mediante APIs automaticas genericas requiere un adaptador explicito; intentar cargarlo como un modelo estandar de Hugging Face puede fallar.
 - No se documentan idiomas, contexto ni tipos de cuantizacion: no debe asumirse ningun soporte multiligue ni de cuantizacion.
 - Licencia MIT: permite uso comercial y modificacion con atribucion, pero el autor recomienda revisar por separado los terminos de los datos de origen si el repositorio se utiliza con datasets externos.
 - Para cualquier resultado derivado de un futuro entrenamiento, el propio autor exige documentarlo de forma separada de los valores por defecto aqui incluidos.
@@ -90,6 +90,6 @@ No se dispone de datos de rendimiento comparables para ninguno de los modelos de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hajunkhk/personal-contrastive
+- Modelo en Hugging Face: https://huggingface.co/hajunkhk/personal-contrastive
 - Ficheros incluidos en el repositorio: `pipeline.py` (artefacto principal), `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper, blog, repositorio de codigo adicional o demo: no disponibles en la informacion proporcionada

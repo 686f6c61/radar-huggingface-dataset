@@ -2,9 +2,9 @@
 
 ## Resumen
 
-ZOZ-SecOps-Master-3B es un modelo de generacion de texto publicado en HuggingFace por el usuario z51722369 el 17 de septiembre de 2026, con un total de 3.085.938.688 parametros (aproximadamente 3,09 mil millones) verificados en los pesos safetensors del repositorio, que ocupa 6,2 GB. La unica informacion tecnica fiable disponible es la etiqueta de arquitectura `qwen2` y el pipeline `text-generation`; no se ha publicado informacion sobre el proceso de entrenamiento, los datos utilizados, el contexto soportado ni los idiomas cubiertos.
+ZOZ-SecOps-Master-3B es un modelo de generacion de texto publicado en Hugging Face por el usuario z51722369 el 17 de septiembre de 2026, con un total de 3.085.938.688 parametros (aproximadamente 3,09 mil millones) verificados en los pesos safetensors del repositorio, que ocupa 6,2 GB. La unica informacion tecnica fiable disponible es la etiqueta de arquitectura `qwen2` y el pipeline `text-generation`; no se ha publicado informacion sobre el proceso de entrenamiento, los datos utilizados, el contexto soportado ni los idiomas cubiertos.
 
-El problema que resuelve, segun se deduce unicamente del identificador del modelo ("SecOps", operaciones de seguridad), seria el de asistencia en tareas de ciberseguridad y operaciones de seguridad, presumiblemente mediante ajuste fino sobre una base de la familia Qwen2. Esta interpretacion es una inferencia a partir del nombre y no esta confirmada en ninguna fuente. La relevancia actual del modelo es limitada: cuenta con cero descargas y cero valoraciones, y su model card es la plantilla automatica de HuggingFace sin ningun campo completado.
+El problema que resuelve, segun se deduce unicamente del identificador del modelo ("SecOps", operaciones de seguridad), seria el de asistencia en tareas de ciberseguridad y operaciones de seguridad, presumiblemente mediante ajuste fino sobre una base de la familia Qwen2. Esta interpretacion es una inferencia a partir del nombre y no esta confirmada en ninguna fuente. La relevancia actual del modelo es limitada: cuenta con cero descargas y cero valoraciones, y su model card es la plantilla automatica de Hugging Face sin ningun campo completado.
 
 Conviene ser explicito: no se dispone de licencia declarada, ni de idiomas soportados, ni de resultados de evaluacion, ni de guia de uso. Cualquier despliegue en produccion exigiria auditar los pesos por cuenta propia y asumir el riesgo legal de una licencia no especificada.
 
@@ -28,13 +28,13 @@ Conviene ser explicito: no se dispone de licencia declarada, ni de idiomas sopor
 
 La unica informacion disponible sobre la arquitectura es la etiqueta `qwen2` del repositorio, que apunta a un transformer decoder-only con atencion causal, normalizacion RMSNorm y, en las implementaciones de referencia de esa familia, atencion con query/key/value bias y RoPE. No se ha publicado el fichero de configuracion, por lo que se desconocen el numero de capas, la dimension oculta, el numero de cabezas de atencion, el tamano de la ventana de contexto y el vocabulario. El recuento de 3,09 B de parametros es coherente con un modelo denso de aproximadamente 3 B en precision de 16 bits, lo que explica el tamano de 6,2 GB del repositorio.
 
-No hay absolutamente ningun dato sobre el entrenamiento: ni el numero de tokens, ni la composicion del dataset, ni si se partio de un modelo base preentrenado o de una version instruct, ni si se aplicaron tecnicas de alineacion como SFT, RLHF o DPO, ni la infraestructura de computo empleada. El unico enlace a arXiv presente en el repositorio (1910.09700) corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono, citado en la plantilla por defecto de HuggingFace, y no guarda ninguna relacion con este modelo. Tampoco se documenta ninguna innovacion tecnica (decodificacion especulativa, atencion lineal, mezcla de expertos o similar).
+No hay absolutamente ningun dato sobre el entrenamiento: ni el numero de tokens, ni la composicion del dataset, ni si se partio de un modelo base preentrenado o de una version instruct, ni si se aplicaron tecnicas de alineacion como SFT, RLHF o DPO, ni la infraestructura de computo empleada. El unico enlace a arXiv presente en el repositorio (1910.09700) corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono, citado en la plantilla por defecto de Hugging Face, y no guarda ninguna relacion con este modelo. Tampoco se documenta ninguna innovacion tecnica (decodificacion especulativa, atencion lineal, mezcla de expertos o similar).
 
 ## Capacidades
 
 - Generacion de texto conversacional: el pipeline declarado es `text-generation` y las etiquetas incluyen `conversational`, lo que indica que el modelo esta preparado para mantener dialogos multi-turno.
 - Razonamiento, codigo, matematicas y otras capacidades especificas: no documentadas. Al derivar de la familia Qwen2 cabe esperar competencia en codigo y matematicas, pero no hay ninguna evaluacion publicada que lo respalde.
-- Tool calling / function calling: no disponible en la informacion publicada. El tag `endpoints_compatible` solo indica compatibilidad con la infraestructura de HuggingFace, no soporte de herramientas.
+- Tool calling / function calling: no disponible en la informacion publicada. El tag `endpoints_compatible` solo indica compatibilidad con la infraestructura de Hugging Face, no soporte de herramientas.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponibles. No se declara ningun idioma en la model card.
 - Capacidades especiales (modo thinking, vision, audio): no disponibles. No hay tag de vision ni de audio; el modelo es exclusivamente de texto.
@@ -79,16 +79,16 @@ Los datos de los modelos de terceros proceden de la documentacion publica de cad
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| ZOZ-SecOps-Master-3B | 3,09 B | no disponible | no disponible | HuggingFace, 0 descargas | no disponible |
-| Qwen2.5-3B-Instruct | 3,09 B | 32.768 tokens (128 K en variantes ampliadas) | Apache 2.0 (la mayoria de variantes) | HuggingFace, ampliamente desplegado | consultar model card del fabricante |
-| Llama-3.2-3B-Instruct | 3,21 B | 128 K tokens | Llama 3.2 Community License | HuggingFace, requiere aceptacion de terminos | consultar model card del fabricante |
-| Phi-3.5-mini-instruct | 3,8 B | 128 K tokens | MIT | HuggingFace | consultar model card del fabricante |
+| ZOZ-SecOps-Master-3B | 3,09 B | no disponible | no disponible | Hugging Face, 0 descargas | no disponible |
+| Qwen2.5-3B-Instruct | 3,09 B | 32.768 tokens (128 K en variantes ampliadas) | Apache 2.0 (la mayoria de variantes) | Hugging Face, ampliamente desplegado | consultar model card del fabricante |
+| Llama-3.2-3B-Instruct | 3,21 B | 128 K tokens | Llama 3.2 Community License | Hugging Face, requiere aceptacion de terminos | consultar model card del fabricante |
+| Phi-3.5-mini-instruct | 3,8 B | 128 K tokens | MIT | Hugging Face | consultar model card del fabricante |
 
 Diferencias clave: los tres modelos de referencia declaran licencia explicita (Apache 2.0, licencia comunitaria de Meta y MIT respectivamente) y ventanas de contexto documentadas, mientras que ZOZ-SecOps-Master-3B no especifica ninguna de las dos cosas. En cuanto a la especializacion en seguridad, no hay evidencia publicada que permita afirmar que supere a estos modelos generalistas en tareas SecOps.
 
 ## Limitaciones y advertencias
 
-- Model card vacia: todos los campos de la plantilla automatica de HuggingFace aparecen sin cumplimentar. No hay informacion verificable sobre entrenamiento, datos, evaluacion o uso previsto.
+- Model card vacia: todos los campos de la plantilla automatica de Hugging Face aparecen sin cumplimentar. No hay informacion verificable sobre entrenamiento, datos, evaluacion o uso previsto.
 - Licencia no declarada: sin licencia explicita no hay autorizacion clara para uso comercial. En la practica, la ausencia de licencia implica ausencia de permisos explicitos de reproduccion, distribucion o uso derivado. Es el riesgo legal mas importante de este repositorio.
 - Idiomas desconocidos: no se declara ningun idioma, por lo que no se puede garantizar el comportamiento en castellano ni en ningun otro idioma.
 - Contexto desconocido: sin `config.json` publico no se puede saber la ventana de contexto real, lo que impide planificar aplicaciones con documentos largos.
@@ -102,7 +102,7 @@ Diferencias clave: los tres modelos de referencia declaran licencia explicita (A
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/z51722369/ZOZ-SecOps-Master-3B
+- Modelo en Hugging Face: https://huggingface.co/z51722369/ZOZ-SecOps-Master-3B
 - Articulo citado en la plantilla de la model card (Lacoste et al., 2019, sobre emisiones de carbono en aprendizaje automatico; sin relacion con este modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico referenciada en la plantilla: https://mlco2.github.io/impact
 - Repositorio, paper, demo o blog del autor: no disponibles. La busqueda web no ha devuelto ningun resultado relacionado con este modelo.

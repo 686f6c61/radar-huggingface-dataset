@@ -77,10 +77,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (`...-forget10-undial`) | 8,03 B | no disponible | Unlearning UNDIAL sobre TOFU-para | llama3.1 | HuggingFace, 0 descargas |
-| `sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-full` | 8,03 B | no disponible | Fine-tune completo sobre TOFU + 2 paráfrasis (modelo de referencia) | llama3.1 | HuggingFace |
+| Este modelo (`...-forget10-undial`) | 8,03 B | no disponible | Unlearning UNDIAL sobre TOFU-para | llama3.1 | Hugging Face, 0 descargas |
+| `sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-full` | 8,03 B | no disponible | Fine-tune completo sobre TOFU + 2 paráfrasis (modelo de referencia) | llama3.1 | Hugging Face |
 | `x2-retain90` (referencia del autor) | 8,03 B | no disponible | Fine-tune solo sobre retain90, sin olvido | llama3.1 | Referenciado en la model card |
-| Llama 3.1 8B Instruct (Meta) | 8,03 B | 128.000 tokens | Modelo base de propósito general | llama3.1 | HuggingFace |
+| Llama 3.1 8B Instruct (Meta) | 8,03 B | 128.000 tokens | Modelo base de propósito general | llama3.1 | Hugging Face |
 
 No se dispone de datos de benchmarks comparables con otros métodos de unlearning (NPO, RMU, SimNPO) en la información proporcionada.
 
@@ -97,7 +97,7 @@ No se dispone de datos de benchmarks comparables con otros métodos de unlearnin
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-unlearned-forget10-undial
+- Modelo en Hugging Face: https://huggingface.co/sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-unlearned-forget10-undial
 - Modelo base del fine-tune: https://huggingface.co/sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-full
 - Dataset TOFU-para: https://huggingface.co/datasets/sungjuncho/TOFU-para
 - Colección TOFU-para (untraining vs unlearning): https://huggingface.co/collections/sungjuncho/tofu-para-untraining-vs-unlearning-6ae8f7a14b4af8316fe221b4

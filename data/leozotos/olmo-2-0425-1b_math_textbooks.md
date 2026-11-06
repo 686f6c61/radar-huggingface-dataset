@@ -4,7 +4,7 @@
 
 LeoZotos/OLMo-2-0425-1B_math_textbooks es un fine-tuning del modelo OLMo-2-0425-1B de AllenAI, realizado sobre un corpus de libros de texto de matemáticas. El objetivo es especializar el modelo base en tareas de razonamiento matemático y comprensión de contenido educativo, aprovechando la arquitectura abierta de OLMo 2 para investigación y desarrollo local. Con 1.484.916.736 parámetros (aproximadamente 1,5 mil millones), este checkpoint se posiciona como una opción ligera para entornos con recursos limitados, manteniendo la capacidad de procesar secuencias de hasta 2048 tokens según la configuración de entrenamiento.
 
-El modelo fue creado por LeoZotos y publicado en HuggingFace en agosto de 2026, aunque no se especifica la licencia ni los idiomas soportados en la model card. Al estar basado en OLMo-2, hereda las características de la familia OLMo, diseñada por AI2 para promover la ciencia abierta y la reproducibilidad. Este fine-tuning concreto se centra en el dominio matemático, lo que lo hace relevante para aplicaciones educativas, tutoría automática y generación de contenido didáctico.
+El modelo fue creado por LeoZotos y publicado en Hugging Face en agosto de 2026, aunque no se especifica la licencia ni los idiomas soportados en la model card. Al estar basado en OLMo-2, hereda las características de la familia OLMo, diseñada por AI2 para promover la ciencia abierta y la reproducibilidad. Este fine-tuning concreto se centra en el dominio matemático, lo que lo hace relevante para aplicaciones educativas, tutoría automática y generación de contenido didáctico.
 
 ## Especificaciones tecnicas
 
@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: con 1,5 mil millones de parametros en precision FP16, se necesitan aproximadamente 3 GB de VRAM solo para los pesos. Con cuantizacion a 8 bits (si estuviera disponible) se reduciria a unos 1,5 GB, y a 4 bits a menos de 1 GB, aunque no se han publicado cuantizaciones oficiales.
 - GPU recomendadas: una GPU consumer como NVIDIA RTX 3060 (12 GB) o RTX 4060 (8 GB) es suficiente para inferencia en FP16. Para entrenamiento o fine-tuning adicional, se recomienda al menos 16 GB de VRAM (RTX 4080, A10, etc.).
 - Si cabe en consumer GPU: si, cualquier GPU con 4 GB o mas de VRAM puede ejecutar el modelo con cuantizacion ligera, y con 8 GB se puede usar en FP16.
-- Opciones de despliegue: al ser un modelo safetensors estandar, se puede servir con vLLM, llama.cpp (si se convierte a GGUF), Ollama (si se empaqueta), o TGI. Tambien se puede usar directamente con la libreria transformers de HuggingFace.
+- Opciones de despliegue: al ser un modelo safetensors estandar, se puede servir con vLLM, llama.cpp (si se convierte a GGUF), Ollama (si se empaqueta), o TGI. Tambien se puede usar directamente con la libreria transformers de Hugging Face.
 - Latencia y throughput: no disponibles; dependen del hardware y del backend. En una RTX 4090, un modelo de 1,5B suele generar entre 50 y 100 tokens por segundo con vLLM, pero no hay datos confirmados para este checkpoint.
 
 ## Comparativa con modelos similares
@@ -75,7 +75,7 @@ Segun la pagina oficial de OLMo 2, el modelo base de 1B supera a Gemma 3 1B y Ll
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LeoZotos/OLMo-2-0425-1B_math_textbooks
+- Modelo en Hugging Face: https://huggingface.co/LeoZotos/OLMo-2-0425-1B_math_textbooks
 - Modelo base OLMo-2-0425-1B: https://huggingface.co/allenai/OLMo-2-0425-1B
 - Pagina oficial de OLMo 2: https://allenai.org/olmo2
 - Repositorio OLMo en GitHub: https://github.com/allenai/OLMo

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tjparck/pdv` es un repositorio alojado en HuggingFace por el usuario `tjparck`, publicado bajo licencia Apache 2.0. En el momento de la consulta acumula 0 descargas y 0 likes, y su model card se limita a la linea de metadatos de licencia, sin README descriptivo, sin pipeline declarado y sin idiomas indicados. No hay informacion publica sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni resultados de evaluacion.
+`tjparck/pdv` es un repositorio alojado en Hugging Face por el usuario `tjparck`, publicado bajo licencia Apache 2.0. En el momento de la consulta acumula 0 descargas y 0 likes, y su model card se limita a la linea de metadatos de licencia, sin README descriptivo, sin pipeline declarado y sin idiomas indicados. No hay informacion publica sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni resultados de evaluacion.
 
 Se trata, por tanto, de un artefacto sin documentacion tecnica verificable: no es posible determinar si contiene pesos de un modelo entrenado, un adaptador, un tokenizador, un conjunto de configuraciones o simplemente un esqueleto de repositorio. Tanto el campo `pipeline` como el listado de idiomas aparecen como no disponibles, lo que impide clasificarlo funcionalmente.
 
@@ -93,7 +93,7 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tjparck/pdv
+- Hugging Face: https://huggingface.co/tjparck/pdv
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Demo: no disponible

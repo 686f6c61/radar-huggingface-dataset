@@ -92,11 +92,11 @@ No se han publicado en la información disponible resultados de benchmarks de co
 
 | Modelo | Parámetros | Contexto | Licencia | Datos de seguridad | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (`svd-safety-l2_remove50_swapdisc_a050_b010_r05`) | 6,74 B (fracción declarada 0,4999) | 4096 tokens | Llama 2 Community | AdvBench ASR 0,3712; StrongREJECT ASR 0,3291; sobre-rechazo 0,0929 | HuggingFace, 0 descargas, 0 likes |
-| `meta-llama/Llama-2-7b-chat-hf` (modelo base) | 6,74 B | 4096 tokens | Llama 2 Community | No disponible en esta información | HuggingFace, ampliamente utilizado |
+| Este checkpoint (`svd-safety-l2_remove50_swapdisc_a050_b010_r05`) | 6,74 B (fracción declarada 0,4999) | 4096 tokens | Llama 2 Community | AdvBench ASR 0,3712; StrongREJECT ASR 0,3291; sobre-rechazo 0,0929 | Hugging Face, 0 descargas, 0 likes |
+| `meta-llama/Llama-2-7b-chat-hf` (modelo base) | 6,74 B | 4096 tokens | Llama 2 Community | No disponible en esta información | Hugging Face, ampliamente utilizado |
 | Otras celdas del grid del mismo autor | No disponible | No disponible | Llama 2 Community | No disponible | No disponible |
-| `mistralai/Mistral-7B-Instruct-v0.2` (alternativa de categoría) | ~7,24 B | 32.768 tokens | Apache 2.0 | No disponible | HuggingFace |
-| `meta-llama/Llama-3.1-8B-Instruct` (alternativa de categoría) | ~8,03 B | 131.072 tokens | Llama 3.1 Community | No disponible | HuggingFace |
+| `mistralai/Mistral-7B-Instruct-v0.2` (alternativa de categoría) | ~7,24 B | 32.768 tokens | Apache 2.0 | No disponible | Hugging Face |
+| `meta-llama/Llama-3.1-8B-Instruct` (alternativa de categoría) | ~8,03 B | 131.072 tokens | Llama 3.1 Community | No disponible | Hugging Face |
 
 Nota: los datos de Mistral-7B-Instruct-v0.2 y Llama-3.1-8B-Instruct proceden de la documentación pública de esos proyectos y no de la información proporcionada en esta búsqueda; se incluyen únicamente como referencia de categoría. No se dispone de comparativas publicadas de calidad o seguridad entre este checkpoint y dichas alternativas.
 
@@ -116,7 +116,7 @@ Nota: los datos de Mistral-7B-Instruct-v0.2 y Llama-3.1-8B-Instruct proceden de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapdisc_a050_b010_r05
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapdisc_a050_b010_r05
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Paper de SVD-LLM: no disponible en los resultados de búsqueda proporcionados
 - Repositorio o demo del autor: no disponible

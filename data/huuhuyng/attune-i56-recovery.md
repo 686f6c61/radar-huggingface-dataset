@@ -2,7 +2,7 @@
 
 ## Resumen
 
-attune-i56-recovery es un artefacto de datos publicado en HuggingFace por el usuario huuhuyng, no un modelo de lenguaje entrenado. Consiste en un conjunto de episodios de recuperacion (recovery episodes) para tareas de robotica manipulativa, empaquetados en archivos npz con frames compactados, y acompanado de manifiestos, programas y contadores auxiliares. El repositorio ocupa 2,7 GB y no incluye pesos de red neuronal, tokenizador ni configuracion de inferencia.
+attune-i56-recovery es un artefacto de datos publicado en Hugging Face por el usuario huuhuyng, no un modelo de lenguaje entrenado. Consiste en un conjunto de episodios de recuperacion (recovery episodes) para tareas de robotica manipulativa, empaquetados en archivos npz con frames compactados, y acompanado de manifiestos, programas y contadores auxiliares. El repositorio ocupa 2,7 GB y no incluye pesos de red neuronal, tokenizador ni configuracion de inferencia.
 
 El contenido se describe como un "top-up" (ampliacion) de un artefacto previo, huuhuyng/attune-i47-recovery, con manifiesto eeade14f y 82 episodios de recuperacion. La union de ambos manifiestos forma un conjunto equilibrado por brazo (objetivo de 32 izquierdos y 32 derechos por tarea de agujero a un brazo, y 64 para place_dual_shoes). Cada episodio de recuperacion combina el prefijo literal del modelo base g11 (cortado en el inicio del bloqueo) con una finalizacion resume() escrita por Claude Sonnet, validada mediante check_success.
 
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Artefacto | Tipo | Contenido | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| huuhuyng/attune-i56-recovery | Dataset de recuperacion | 80 episodios (19+17+18+26) mas 58 estados de exito | no disponible | publico en HuggingFace |
-| huuhuyng/attune-i47-recovery | Dataset de recuperacion | 82 episodios, manifiesto eeade14f | no disponible | publico en HuggingFace |
+| huuhuyng/attune-i56-recovery | Dataset de recuperacion | 80 episodios (19+17+18+26) mas 58 estados de exito | no disponible | publico en Hugging Face |
+| huuhuyng/attune-i47-recovery | Dataset de recuperacion | 82 episodios, manifiesto eeade14f | no disponible | publico en Hugging Face |
 | langst-22vu/attune-vector-g11 | Modelo base referenciado | pesos de politica (no incluidos aqui) | no disponible | referenciado por commit |
 
 No se dispone de informacion sobre otros datasets comparables de recuperacion robotica en la documentacion proporcionada.
@@ -72,7 +72,7 @@ No se dispone de informacion sobre otros datasets comparables de recuperacion ro
 
 - No es un modelo de IA: no puede usarse para generacion de texto, codigo, vision ni ninguna tarea de inferencia estandar.
 - Licencia no especificada: no hay autorizacion explicita para uso comercial; debe contactarse con el autor antes de cualquier explotacion.
-- Idiomas no declarados y sin pipeline: la model card no describe capacidades linguisticas ni tarea de HuggingFace.
+- Idiomas no declarados y sin pipeline: la model card no describe capacidades linguisticas ni tarea de Hugging Face.
 - Desequilibrio residual por brazo en algunas tareas: move_stapler_pad tiene 3 izquierdos frente a 14 derechos, y beat_block_hammer 6 frente a 13, pese al objetivo de equilibrio.
 - Dependencia de un LLM externo (Claude Sonnet) para las finalizaciones resume(): los datos incorporan posibles sesgos y errores del generador, mitigados solo parcialmente por check_success.
 - El analisis dual-revise documento fallos del pipeline (respuesta vacia, NameError) y una mejora marginal (4/10 frente a 3/10), lo que indica fragilidad en la generacion automatica de programas.
@@ -82,6 +82,6 @@ No se dispone de informacion sobre otros datasets comparables de recuperacion ro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/huuhuyng/attune-i56-recovery
+- Hugging Face: https://huggingface.co/huuhuyng/attune-i56-recovery
 - Artefacto previo referenciado: https://huggingface.co/huuhuyng/attune-i47-recovery
 - Modelo base referenciado: https://huggingface.co/langst-22vu/attune-vector-g11

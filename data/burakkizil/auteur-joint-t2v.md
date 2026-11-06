@@ -4,7 +4,7 @@
 
 AUTEUR-Joint-T2V es un adaptador LoRA publicado por el usuario burakkizil sobre el modelo base Qwen/Qwen2.5-VL-7B-Instruct. Se distribuye a traves de la libreria PEFT y esta etiquetado con el pipeline image-text-to-text, aunque el nombre del repositorio ("Joint-T2V") apunta a un uso orientado a generacion de video a partir de texto. El repositorio ocupa 17,2 GB y contiene pesos en formato safetensors, ademas de las etiquetas habituales de TGI y endpoints compatibles.
 
-El modelo no incorpora una model card funcional: la practica totalidad de los campos del README son la plantilla por defecto de HuggingFace con la marca "[More Information Needed]". No se documentan datos de entrenamiento, hiperparametros, dataset, licencia, idiomas ni resultados de evaluacion. Tampoco hay paper asociado: la unica referencia arXiv incluida en las etiquetas (1910.09700) es el articulo del calculador de impacto de ML citado en la plantilla por defecto, no un trabajo sobre el propio modelo.
+El modelo no incorpora una model card funcional: la practica totalidad de los campos del README son la plantilla por defecto de Hugging Face con la marca "[More Information Needed]". No se documentan datos de entrenamiento, hiperparametros, dataset, licencia, idiomas ni resultados de evaluacion. Tampoco hay paper asociado: la unica referencia arXiv incluida en las etiquetas (1910.09700) es el articulo del calculador de impacto de ML citado en la plantilla por defecto, no un trabajo sobre el propio modelo.
 
 Su relevancia es, por tanto, limitada y hay que tratarlo con cautela. Al ser un adaptador sobre Qwen2.5-VL-7B-Instruct, hereda la arquitectura y las capacidades del modelo base (vision-lenguaje, contexto largo, multilingue), pero cualquier afirmacion sobre su rendimiento especifico, su calidad en generacion de video o su comportamiento real no puede verificarse con la informacion disponible.
 
@@ -92,8 +92,8 @@ No se dispone de datos de rendimiento del adaptador para una comparacion cuantit
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/burakkizil/AUTEUR-Joint-T2V
-- Perfil del autor en HuggingFace: https://huggingface.co/burakkizil/models
+- Modelo en Hugging Face: https://huggingface.co/burakkizil/AUTEUR-Joint-T2V
+- Perfil del autor en Hugging Face: https://huggingface.co/burakkizil/models
 - Repositorio de datasets del autor: https://huggingface.co/datasets/burakkizil/
 - Modelo base Qwen2.5-VL-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct
 - Referencia arXiv incluida en las etiquetas (calculador de impacto de ML, no paper del modelo): https://arxiv.org/abs/1910.09700

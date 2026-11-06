@@ -74,7 +74,7 @@ No disponible. La informacion proporcionada no incluye datos de modelos comparab
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/DiffSynth-Studio/MiniMax-H3-LoRA-LineartAnime
+- Repositorio Hugging Face: https://huggingface.co/DiffSynth-Studio/MiniMax-H3-LoRA-LineartAnime
 - Repositorio DiffSynth-Studio (GitHub): https://github.com/modelscope/DiffSynth-Studio
 - Script de entrenamiento LoRA: https://github.com/modelscope/DiffSynth-Studio/tree/main/examples/minimax_h3/model_training/lora
 - Documentacion de MiniMax-H3 en DiffSynth-Studio: https://github.com/modelscope/DiffSynth-Studio/blob/main/docs/en/Model_Details/MiniMax-H3.md

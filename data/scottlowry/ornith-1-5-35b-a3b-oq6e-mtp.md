@@ -75,7 +75,7 @@ La comparativa se basa en modelos MoE de tamaño similar. Ornith-1.5-35B-A3B tie
 
 ## Enlaces
 
-- Modelo cuantizado en HuggingFace: https://huggingface.co/scottlowry/Ornith-1.5-35B-A3B-oQ6e-mtp
+- Modelo cuantizado en Hugging Face: https://huggingface.co/scottlowry/Ornith-1.5-35B-A3B-oQ6e-mtp
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Pagina oficial de Ornith AI sobre Ornith-1.5: https://ornith.ai/ornith_1_5.html
 - Guia de Ornith AI (modelos, VRAM, benchmarks): https://ornith.online/

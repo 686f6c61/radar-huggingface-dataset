@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parametros | Contexto | Naturaleza | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (`rlve-opd-teacher-...-ShortestPathCountConstruction`) | 1,78 B | No disponible | Profesor GRPO especialista en una tarea | No disponible | HuggingFace, 0 descargas |
+| Este modelo (`rlve-opd-teacher-...-ShortestPathCountConstruction`) | 1,78 B | No disponible | Profesor GRPO especialista en una tarea | No disponible | Hugging Face, 0 descargas |
 | `deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B` | 1,78 B | No disponible en esta ficha | Modelo general de razonamiento destilado | MIT segun el modelo base (verificar) | Ampliamente disponible |
 | `Qwen2.5-1.5B-Instruct` | 1,54 B | 32.768 tokens (segun su model card) | Modelo general instruido | Apache 2.0 (segun su model card) | Ampliamente disponible |
 | `deepseek-ai/DeepSeek-R1-Distill-Qwen-7B` | 7,6 B | No disponible en esta ficha | Razonamiento destilado de mayor tamano | MIT segun el modelo base (verificar) | Ampliamente disponible |
@@ -94,11 +94,11 @@ La comparación relevante no es de rendimiento general, sino de especialización
 - No se publican estados de optimizador ni de dataloader, lo que limita la reanudación exacta del entrenamiento.
 - Longitud de contexto no documentada en esta ficha: usarlo con contextos largos sin verificar la configuración puede producir degradación silenciosa.
 - Fechas de creación y actualización (2026-10-25) posteriores a la mayoría de referencias públicas del ecosistema; conviene verificar la procedencia del artefacto antes de integrarlo en un pipeline.
-- La búsqueda web realizada no devolvió resultados técnicos relevantes sobre este modelo; toda la información procede de la model card y de los metadatos de HuggingFace.
+- La búsqueda web realizada no devolvió resultados técnicos relevantes sobre este modelo; toda la información procede de la model card y de los metadatos de Hugging Face.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/davidheineman/rlve-opd-teacher-R1Distill-085-ShortestPathCountConstruction-20261025
+- Hugging Face: https://huggingface.co/davidheineman/rlve-opd-teacher-R1Distill-085-ShortestPathCountConstruction-20261025
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 - Run de Weights & Biases: https://wandb.ai/david-heineman/rl-data-scaling-teachers-v1/runs/23d8e104 (grupo `data-scaling-v1-n128-20261022-225839`)
 - Ficheros de configuración del repositorio: `training_run.json` y `training_config.yaml`

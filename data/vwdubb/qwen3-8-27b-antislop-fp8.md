@@ -118,7 +118,7 @@ En la categoría de modelos de prosa no genérica, la alternativa explícitament
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo: https://huggingface.co/vwdubb/Qwen3.8-27B-antislop-FP8
+- Repositorio Hugging Face de este modelo: https://huggingface.co/vwdubb/Qwen3.8-27B-antislop-FP8
 - Modelo base del ajuste antislop: https://huggingface.co/rawmodels/Qwen3.8-27B-antislop
 - Modelo original de la familia: https://huggingface.co/Qwen/Qwen3.8-27B
 - Modelo de escritura creativa comparado en la model card: https://huggingface.co/Altworld/Hemmingway-1

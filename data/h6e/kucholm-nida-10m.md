@@ -2,7 +2,7 @@
 
 ## Resumen
 
-KuchoLM-NIDA-10M es un modelo de lenguaje publicado en HuggingFace por el usuario h6e bajo licencia Apache 2.0. El repositorio no contiene pesos ni documentación técnica: el tamaño del repositorio es de 0.0 GB y la model card únicamente declara la licencia. No se especifica arquitectura, número de parámetros, datos de entrenamiento ni capacidades. A fecha de creación (agosto de 2026), el modelo no ha recibido descargas ni valoraciones, lo que sugiere que se trata de un repositorio vacío o un placeholder sin contenido utilizable. No es posible evaluar su relevancia ni su rendimiento con la información disponible.
+KuchoLM-NIDA-10M es un modelo de lenguaje publicado en Hugging Face por el usuario h6e bajo licencia Apache 2.0. El repositorio no contiene pesos ni documentación técnica: el tamaño del repositorio es de 0.0 GB y la model card únicamente declara la licencia. No se especifica arquitectura, número de parámetros, datos de entrenamiento ni capacidades. A fecha de creación (agosto de 2026), el modelo no ha recibido descargas ni valoraciones, lo que sugiere que se trata de un repositorio vacío o un placeholder sin contenido utilizable. No es posible evaluar su relevancia ni su rendimiento con la información disponible.
 
 ## Especificaciones tecnicas
 
@@ -51,4 +51,4 @@ No disponible. Al carecer de especificaciones técnicas, no es posible comparar 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/h6e/KuchoLM-NIDA-10M
+- Repositorio en Hugging Face: https://huggingface.co/h6e/KuchoLM-NIDA-10M

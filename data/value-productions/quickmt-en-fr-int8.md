@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/value-productions/quickmt-en-fr-int8
+- Modelo en Hugging Face: https://huggingface.co/value-productions/quickmt-en-fr-int8
 - Modelo base: https://huggingface.co/quickmt/quickmt-en-fr
 - CTranslate2 (repositorio): https://github.com/OpenNMT/CTranslate2
 - Aplicación Yaku Translate: no disponible en la información proporcionada.

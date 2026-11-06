@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AngFlow es un modelo de lenguaje de 2 mil millones de parámetros especializado en escritura creativa, obtenido mediante fine-tuning supervisado (SFT) del modelo base Qwen3.5-2B-Base. Lo desarrolla el usuario Angad2005 y se distribuye bajo licencia Apache 2.0 a través de HuggingFace. Su objetivo no es actuar como asistente de propósito general, sino transformar instrucciones de escritura en prosa narrativa coherente: ficción, desarrollo de tramas, descripción atmosférica y diálogo entre personajes.
+AngFlow es un modelo de lenguaje de 2 mil millones de parámetros especializado en escritura creativa, obtenido mediante fine-tuning supervisado (SFT) del modelo base Qwen3.5-2B-Base. Lo desarrolla el usuario Angad2005 y se distribuye bajo licencia Apache 2.0 a través de Hugging Face. Su objetivo no es actuar como asistente de propósito general, sino transformar instrucciones de escritura en prosa narrativa coherente: ficción, desarrollo de tramas, descripción atmosférica y diálogo entre personajes.
 
 El modelo hereda la arquitectura Qwen3.5 del modelo base, aunque la model card no detalla la configuración interna (número de capas, dimensión oculta, mecanismo de atención). Está entrenado exclusivamente en inglés y se presenta como una herramienta para escritores, aplicaciones de generación de historias y experimentación en investigación sobre fine-tuning de modelos pequeños para tareas creativas.
 
@@ -19,7 +19,7 @@ Su relevancia actual es limitada pero concreta: demuestra el patrón de especial
 | Tipos de cuantización | no disponible (pesos en formato transformers; cuantización GGUF/AWQ no documentada) |
 | Idiomas soportados | inglés (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (formato nativo de HuggingFace Transformers; no se documentan otros) |
+| Formato de pesos | safetensors (formato nativo de Hugging Face Transformers; no se documentan otros) |
 
 ## Arquitectura y entrenamiento
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - Cuantización a 8 bits: alrededor de 2-3 GB de pesos; a 4 bits, alrededor de 1,5-2 GB, aunque el autor no publica versiones cuantizadas ni confirma compatibilidad con llama.cpp o GGUF.
 - GPU recomendadas: cualquier GPU consumer con 8 GB o más (RTX 3060 Ti, RTX 4060 Ti, RTX 4070, RTX 4090) debería poder ejecutar el modelo en fp16 o 8 bits; para producción con concurrencia, A10G, L4, A100 o H100.
 - Cabe en GPU consumer: sí, previsiblemente en la mayoría de tarjetas con 8 GB o más, dado el tamaño de 2B parámetros.
-- Opciones de despliegue: HuggingFace Transformers con `accelerate` y `device_map="auto"` es la vía documentada por el autor. vLLM, TGI, llama.cpp y Ollama no están confirmados en la información disponible.
+- Opciones de despliegue: Hugging Face Transformers con `accelerate` y `device_map="auto"` es la vía documentada por el autor. vLLM, TGI, llama.cpp y Ollama no están confirmados en la información disponible.
 - Latencia y throughput: no disponibles. No se han publicado mediciones.
 
 Nota: el snippet de la model card emplea `AutoModelForMultimodalLM` y `AutoProcessor`, lo que resulta llamativo para un modelo de texto; conviene verificar la clase correcta (`AutoModelForCausalLM`) al cargar los pesos.
@@ -66,8 +66,8 @@ Nota: el snippet de la model card emplea `AutoModelForMultimodalLM` y `AutoProce
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AngFlow | 2B | no disponible | Escritura creativa (SFT) | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen3.5-2B-Base | 2B | no disponible | Propósito general (base) | no disponible en la información | HuggingFace (modelo base) |
+| AngFlow | 2B | no disponible | Escritura creativa (SFT) | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen3.5-2B-Base | 2B | no disponible | Propósito general (base) | no disponible en la información | Hugging Face (modelo base) |
 | Modelos de escritura creativa de 2-3B | variable | variable | Escritura creativa | variable | no disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones de contexto que permitan una comparación cuantitativa rigurosa con alternativas de la misma categoría. La comparación más directa y verificable es con su propio modelo base, Qwen3.5-2B-Base, del que AngFlow hereda arquitectura y tamaño pero del que se diferencia por el fine-tuning supervisado en tareas narrativas.
@@ -87,6 +87,6 @@ No se dispone de datos de benchmarks ni de especificaciones de contexto que perm
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Angad2005/AngFlow
+- Modelo en Hugging Face: https://huggingface.co/Angad2005/AngFlow
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B-Base
 - No se han encontrado en la información disponible papers, blogs, repositorios adicionales ni demos asociados al modelo.

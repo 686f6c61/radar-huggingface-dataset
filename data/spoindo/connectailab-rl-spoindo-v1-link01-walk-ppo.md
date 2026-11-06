@@ -84,7 +84,7 @@ No disponible. La información proporcionada no incluye otros agentes de RL comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/spoindo/connectailab-rl-spoindo-v1-link01-walk-ppo
+- Modelo en Hugging Face: https://huggingface.co/spoindo/connectailab-rl-spoindo-v1-link01-walk-ppo
 - Stable-Baselines3 (librería de entrenamiento): https://github.com/DLR-RM/stable-baselines3
 - MuJoCo (simulador): https://mujoco.org/
 - PPO (paper original de Schulman et al.): https://arxiv.org/abs/1707.06347

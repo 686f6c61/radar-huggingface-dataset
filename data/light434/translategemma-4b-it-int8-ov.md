@@ -80,9 +80,9 @@ No se dispone de datos comparativos con otros modelos de traducción en la infor
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/light434/translategemma-4b-it-int8-ov
+- Repositorio Hugging Face: https://huggingface.co/light434/translategemma-4b-it-int8-ov
 - Modelo base en Kaggle: https://www.kaggle.com/models/google/translategemma
 - Informe técnico (arXiv): https://arxiv.org/abs/2601.09012
 - Términos de uso de Gemma: https://ai.google.dev/gemma/terms
 - Política de usos prohibidos: https://ai.google.dev/gemma/prohibited_use_policy
-- Página del modelo original en HuggingFace: https://huggingface.co/google/gemma-3-4b-it
+- Página del modelo original en Hugging Face: https://huggingface.co/google/gemma-3-4b-it

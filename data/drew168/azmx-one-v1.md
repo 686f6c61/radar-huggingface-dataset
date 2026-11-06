@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 - VRAM estimada para inferencia: con 1.87B parámetros en bf16, el modelo ocupa aproximadamente 3.7 GB de memoria. Con cuantización a 4 bits (no disponible actualmente), podría reducirse a ~1 GB.
 - GPU recomendadas: cualquier GPU con al menos 6 GB de VRAM puede ejecutar el modelo en bf16, como una RTX 3060, RTX 4060, o GPUs de datacenter como A10, A100, H100.
 - Cabe en GPUs de consumo: sí, en tarjetas con 6 GB o más, aunque la velocidad dependerá de la memoria y el ancho de banda.
-- Opciones de despliegue: al ser un modelo estándar de HuggingFace, puede servirse con vLLM, llama.cpp, Ollama, TGI o directamente con transformers. Sin embargo, al ser un checkpoint en entrenamiento, no se recomienda su despliegue.
+- Opciones de despliegue: al ser un modelo estándar de Hugging Face, puede servirse con vLLM, llama.cpp, Ollama, TGI o directamente con transformers. Sin embargo, al ser un checkpoint en entrenamiento, no se recomienda su despliegue.
 - Latencia y throughput: no disponibles, ya que no se han realizado pruebas de inferencia.
 
 ## Comparativa con modelos similares
@@ -76,7 +76,7 @@ AZMX One v1 se posiciona en el rango de 1-2B, pero su falta de finalización y a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Drew168/azmx-one-v1
+- Modelo en Hugging Face: https://huggingface.co/Drew168/azmx-one-v1
 - Perfil del autor: https://huggingface.co/Drew168
 - Dataset de entrenamiento: https://huggingface.co/Drew168/azmx-6t-data
 - Documentación de modelos AZMX: https://github.com/AzmxAI/azmx/blob/main/docs/MODELS.md

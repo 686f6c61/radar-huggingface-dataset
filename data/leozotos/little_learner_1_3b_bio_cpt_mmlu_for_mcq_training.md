@@ -70,7 +70,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LeoZotos/little_learner_1_3b_bio_cpt_mmlu_for_mcq_training
+- Repositorio Hugging Face: https://huggingface.co/LeoZotos/little_learner_1_3b_bio_cpt_mmlu_for_mcq_training
 - Paper LittleLearner (referencia): https://www.researchgate.net/publication/412247790_LittleLearner_Language_Models_Under_Pedagogically_Controlled_Knowledge_Exposure
 - Resumen del paper en aimodels.fyi: https://www.aimodels.fyi/papers/arxiv/littlelearner-language-models-under-pedagogically-controlled-knowledge
 - Página de MMLU en Wikipedia: https://en.wikipedia.org/wiki/MMLU

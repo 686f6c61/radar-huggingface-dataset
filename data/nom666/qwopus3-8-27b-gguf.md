@@ -84,11 +84,11 @@ La comparativa se limita a los modelos directamente relacionados porque no se di
 - Sesgos y alucinaciones: no se han documentado sesgos específicos ni tasas de alucinación en la información disponible. Como modelo derivado de Qwen, puede heredar sesgos del base.
 - Idiomas: no se especifican los idiomas soportados; se asume herencia del base Qwen3.8-27B, pero no está confirmado.
 - Los benchmarks publicados se midieron en MLX, no en GGUF; los resultados en GGUF pueden variar ligeramente.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que indica que no ha sido validado por la comunidad.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que indica que no ha sido validado por la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nom666/Qwopus3.8-27B-GGUF
+- Modelo en Hugging Face: https://huggingface.co/nom666/Qwopus3.8-27B-GGUF
 - Modelo fuente del task vector (Qwopus3.6-27B-v2): https://huggingface.co/Jackrong/Qwopus3.6-27B-v2
 - Base model (Qwen3.8-27B): https://huggingface.co/Qwen/Qwen3.8-27B
 - Versiones MTPLX (Apple Silicon): https://huggingface.co/nom666/Qwopus3.8-27B-MTPLX-4bit-Speed y https://huggingface.co/nom666/Qwopus3.8-27B-MTPLX-8bit-Quality

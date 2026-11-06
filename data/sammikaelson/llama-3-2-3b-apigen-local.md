@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama-3.2-3B-APIGEN-Local es un ajuste fino (fine-tune) del modelo Llama 3.2 3B Instruct, desarrollado por el usuario SamMikaelson y publicado en HuggingFace. El modelo parte de la versión optimizada `unsloth/llama-3.2-3b-instruct-unsloth-bnb-4bit` y ha sido entrenado mediante supervisión de ajuste fino (SFT) con la librería TRL. Aunque el nombre sugiere una especialización en generación de APIs, la documentación no proporciona detalles sobre el conjunto de datos ni los objetivos concretos del entrenamiento.
+Llama-3.2-3B-APIGEN-Local es un ajuste fino (fine-tune) del modelo Llama 3.2 3B Instruct, desarrollado por el usuario SamMikaelson y publicado en Hugging Face. El modelo parte de la versión optimizada `unsloth/llama-3.2-3b-instruct-unsloth-bnb-4bit` y ha sido entrenado mediante supervisión de ajuste fino (SFT) con la librería TRL. Aunque el nombre sugiere una especialización en generación de APIs, la documentación no proporciona detalles sobre el conjunto de datos ni los objetivos concretos del entrenamiento.
 
 El modelo está pensado para su ejecución local, con un peso de 0.3 GB y compatibilidad con el ecosistema Transformers. Su relevancia radica en la posibilidad de desplegar un asistente conversacional de 3.000 millones de parámetros en hardware modesto, aprovechando la arquitectura eficiente de Llama 3.2 y la cuantización 4-bit del modelo base. No obstante, la falta de documentación y métricas publicadas limita la evaluación objetiva de su rendimiento.
 

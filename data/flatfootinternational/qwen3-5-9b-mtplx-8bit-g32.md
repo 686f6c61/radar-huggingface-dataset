@@ -87,7 +87,7 @@ La comparacion con el modelo base es la mas relevante: esta version sacrifica pr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/FlatFootInternational/Qwen3.5-9b-MTPLX-8bit-g32
+- Repositorio Hugging Face: https://huggingface.co/FlatFootInternational/Qwen3.5-9b-MTPLX-8bit-g32
 - Repositorio alternativo (sin 8bit en el nombre): https://huggingface.co/FlatFootInternational/Qwen3.5-9B-MTPLX
 - Arbol de archivos: https://huggingface.co/FlatFootInternational/Qwen3.5-9B-MTPLX/tree/main
 - Proyecto MTPLX en GitHub: https://github.com/youssofal/mtplx

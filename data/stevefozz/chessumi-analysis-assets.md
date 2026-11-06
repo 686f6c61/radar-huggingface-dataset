@@ -85,7 +85,7 @@ No disponible. Este repositorio no es un modelo con parametros y contexto compar
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SteveFozz/chessumi-analysis-assets
+- Repositorio en Hugging Face: https://huggingface.co/SteveFozz/chessumi-analysis-assets
 - Documentacion incluida en el repositorio: `NOTICE.md` y directorio de licencias (referenciados en la model card).
 - Script de verificacion incluido en el repositorio: `scripts/verify-engine-asset-release.mjs`.
 - Paper, blog, repositorio de codigo o demo oficiales: no disponibles en la informacion proporcionada.

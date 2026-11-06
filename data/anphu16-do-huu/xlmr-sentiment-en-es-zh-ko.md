@@ -2,7 +2,7 @@
 
 ## Resumen
 
-XLM-R Sentiment 3-class (En/Es/Zh/Ko) es un modelo de clasificación de sentimiento derivado de `FacebookAI/xlm-roberta-base` mediante ajuste fino supervisado. Lo publica el usuario de HuggingFace `anphu16-do-huu` y resuelve una tarea concreta: asignar a un texto una de tres etiquetas (negativo, neutro o positivo) en ingles, castellano, chino y coreano. Su relevancia practica reside en que ofrece un clasificador multilingue ligero (278 millones de parametros) con licencia MIT, lo que permite integrarlo en pipelines de produccion sin restricciones comerciales.
+XLM-R Sentiment 3-class (En/Es/Zh/Ko) es un modelo de clasificación de sentimiento derivado de `FacebookAI/xlm-roberta-base` mediante ajuste fino supervisado. Lo publica el usuario de Hugging Face `anphu16-do-huu` y resuelve una tarea concreta: asignar a un texto una de tres etiquetas (negativo, neutro o positivo) en ingles, castellano, chino y coreano. Su relevancia practica reside en que ofrece un clasificador multilingue ligero (278 millones de parametros) con licencia MIT, lo que permite integrarlo en pipelines de produccion sin restricciones comerciales.
 
 Arquitectura transformer encoder de tipo XLM-RoBERTa, con 278.045.955 parametros totales y pesos en formato safetensors. El ajuste fino se realizo durante 15 epocas con learning rate de 8e-6, batch de 32 y longitud maxima de 128 tokens sobre una NVIDIA T4 en Google Colab con fp16. No se documenta el corpus de entrenamiento ni el volumen de datos utilizado.
 
@@ -88,6 +88,6 @@ La comparativa se limita a alternativas de la misma familia y tarea; no se dispo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anphu16-do-huu/xlmr-sentiment-en-es-zh-ko
+- Modelo en Hugging Face: https://huggingface.co/anphu16-do-huu/xlmr-sentiment-en-es-zh-ko
 - Modelo base: https://huggingface.co/FacebookAI/xlm-roberta-base
 - Paper de XLM-RoBERTa (Conneau et al., 2019): https://arxiv.org/abs/1911.02116

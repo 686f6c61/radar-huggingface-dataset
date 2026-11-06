@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama-2-7B-Chat-GPTQ (este) | 6,74 B | 4096 | GPTQ 4 bits | llama2 | HuggingFace (espejo vllm-project) |
-| meta-llama/Llama-2-7b-chat-hf | 6,74 B | 4096 | fp16 | llama2 | HuggingFace (oficial) |
-| TheBloke/Llama-2-7b-Chat-AWQ | 6,74 B | 4096 | AWQ 4 bits | llama2 | HuggingFace |
-| TheBloke/Llama-2-7b-Chat-GGUF | 6,74 B | 4096 | GGUF 2-8 bits | llama2 | HuggingFace |
+| Llama-2-7B-Chat-GPTQ (este) | 6,74 B | 4096 | GPTQ 4 bits | llama2 | Hugging Face (espejo vllm-project) |
+| meta-llama/Llama-2-7b-chat-hf | 6,74 B | 4096 | fp16 | llama2 | Hugging Face (oficial) |
+| TheBloke/Llama-2-7b-Chat-AWQ | 6,74 B | 4096 | AWQ 4 bits | llama2 | Hugging Face |
+| TheBloke/Llama-2-7b-Chat-GGUF | 6,74 B | 4096 | GGUF 2-8 bits | llama2 | Hugging Face |
 
 Las diferencias entre estas variantes son de formato y cuantización, no de capacidad: todas derivan del mismo modelo base. La versión GPTQ está orientada a GPUs con vLLM y AutoGPTQ; AWQ ofrece otra ruta de cuantización de 4 bits para GPUs; GGUF está pensada para CPU y GPU con llama.cpp. No se dispone de datos de benchmarks comparativos en la información proporcionada.
 
@@ -86,7 +86,7 @@ Las diferencias entre estas variantes son de formato y cuantización, no de capa
 
 ## Enlaces
 
-- [HuggingFace: vllm-project/Llama-2-7B-Chat-GPTQ](https://huggingface.co/vllm-project/Llama-2-7B-Chat-GPTQ)
+- [Hugging Face: vllm-project/Llama-2-7B-Chat-GPTQ](https://huggingface.co/vllm-project/Llama-2-7B-Chat-GPTQ)
 - [Modelo base: meta-llama/Llama-2-7b-chat-hf](https://huggingface.co/meta-llama/Llama-2-7b-chat-hf)
 - [Repositorio original: TheBloke/Llama-2-7B-Chat-GPTQ](https://huggingface.co/TheBloke/Llama-2-7B-Chat-GPTQ)
 - [Variante AWQ: TheBloke/Llama-2-7b-Chat-AWQ](https://huggingface.co/TheBloke/Llama-2-7b-Chat-AWQ)

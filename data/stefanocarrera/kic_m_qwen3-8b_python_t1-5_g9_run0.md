@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`stefanocarrera/kic_M_Qwen3-8B_python_t1.5_g9_run0` es un ajuste fino (fine-tuning) del modelo base Qwen3-8B, desarrollado por el usuario stefanocarrera y publicado en HuggingFace. Se trata de un modelo derivado de `unsloth/Qwen3-8B-Base-unsloth-bnb-4bit`, es decir, una version del Qwen3-8B base pre-cuantizada en 4 bits por Unsloth para facilitar el entrenamiento eficiente en memoria. El nombre del repositorio sugiere un entrenamiento orientado a Python (`python`), con una temperatura de 1.5 y una configuracion de generacion `g9` en la ejecucion 0, aunque la model card no documenta estos detalles.
+`stefanocarrera/kic_M_Qwen3-8B_python_t1.5_g9_run0` es un ajuste fino (fine-tuning) del modelo base Qwen3-8B, desarrollado por el usuario stefanocarrera y publicado en Hugging Face. Se trata de un modelo derivado de `unsloth/Qwen3-8B-Base-unsloth-bnb-4bit`, es decir, una version del Qwen3-8B base pre-cuantizada en 4 bits por Unsloth para facilitar el entrenamiento eficiente en memoria. El nombre del repositorio sugiere un entrenamiento orientado a Python (`python`), con una temperatura de 1.5 y una configuracion de generacion `g9` en la ejecucion 0, aunque la model card no documenta estos detalles.
 
 El modelo hereda la arquitectura transformer de Qwen3-8B, con aproximadamente 8.000 millones de parametros, y se distribuye bajo licencia Apache 2.0. El repositorio tiene un tamano de 0.2 GB y contiene pesos en formato safetensors compatibles con `transformers` y `text-generation-inference`. La informacion publicada es muy escasa: la model card es la plantilla automatica de Unsloth y no incluye detalles sobre el dataset de entrenamiento, hiperparametros, resultados de evaluacion ni capacidades especificas.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Benchmarks publicados | Disponibilidad |
 |---|---|---|---|---|---|
-| stefanocarrera/kic_M_Qwen3-8B_python_t1.5_g9_run0 | ~8B | no disponible | Apache 2.0 | No | HuggingFace (0 descargas) |
-| Qwen3-8B (base/oficial) | ~8B | no disponible en esta ficha | Apache 2.0 (segun modelo oficial) | Si, publicados por el autor original | HuggingFace, ampliamente distribuido |
-| unsloth/Qwen3-8B-Base-unsloth-bnb-4bit | ~8B | no disponible en esta ficha | Apache 2.0 | No especificos del checkpoint cuantizado | HuggingFace |
+| stefanocarrera/kic_M_Qwen3-8B_python_t1.5_g9_run0 | ~8B | no disponible | Apache 2.0 | No | Hugging Face (0 descargas) |
+| Qwen3-8B (base/oficial) | ~8B | no disponible en esta ficha | Apache 2.0 (segun modelo oficial) | Si, publicados por el autor original | Hugging Face, ampliamente distribuido |
+| unsloth/Qwen3-8B-Base-unsloth-bnb-4bit | ~8B | no disponible en esta ficha | Apache 2.0 | No especificos del checkpoint cuantizado | Hugging Face |
 
 La comparativa se limita al linaje directo del modelo, ya que no hay datos de rendimiento de este fine-tuning que permitan contrastarlo con alternativas de la misma categoria.
 
@@ -80,7 +80,7 @@ La comparativa se limita al linaje directo del modelo, ya que no hay datos de re
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/stefanocarrera/kic_M_Qwen3-8B_python_t1.5_g9_run0
+- Hugging Face: https://huggingface.co/stefanocarrera/kic_M_Qwen3-8B_python_t1.5_g9_run0
 - Modelo base (Unsloth): https://huggingface.co/unsloth/Qwen3-8B-Base-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion disponible.

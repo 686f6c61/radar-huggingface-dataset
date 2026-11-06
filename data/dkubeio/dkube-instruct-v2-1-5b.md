@@ -111,7 +111,7 @@ Frente al modelo base sin adaptar de 1,5 B, el adaptador mejora la rubrica en 0,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dkubeio/DKube-instruct-v2-1.5B
+- Modelo en Hugging Face: https://huggingface.co/dkubeio/DKube-instruct-v2-1.5B
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Version 1 del proyecto (0.5B): https://huggingface.co/t4tarzan/DKube-instruct
 - Playbooks de SRE de Scoutflo (fuente de anclaje, MIT): https://github.com/Scoutflo/Scoutflo-SRE-Playbooks

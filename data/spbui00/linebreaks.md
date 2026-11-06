@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`spbui00/linebreaks` es un modelo de clasificación de tokens (token classification) publicado en HuggingFace por el usuario spbui00. Segun los metadatos del repositorio, esta construido sobre la arquitectura DistilBERT y exportado en formato safetensors con 65.193.988 parametros, lo que lo situa en la gama de modelos encoder compactos de ~65 M de parametros. El pipeline declarado es `token-classification`, es decir, etiquetado a nivel de token sobre una secuencia de entrada, y el repositorio ocupa 0,3 GB.
+`spbui00/linebreaks` es un modelo de clasificación de tokens (token classification) publicado en Hugging Face por el usuario spbui00. Segun los metadatos del repositorio, esta construido sobre la arquitectura DistilBERT y exportado en formato safetensors con 65.193.988 parametros, lo que lo situa en la gama de modelos encoder compactos de ~65 M de parametros. El pipeline declarado es `token-classification`, es decir, etiquetado a nivel de token sobre una secuencia de entrada, y el repositorio ocupa 0,3 GB.
 
-El nombre del modelo sugiere una tarea de deteccion o segmentacion de saltos de linea, aunque la model card no confirma objetivos, etiquetas ni dominio de aplicacion: se trata de la plantilla autogenerada por HuggingFace con todos los campos marcados como `[More Information Needed]`. No hay informacion sobre el autor mas alla del identificador de la cuenta, ni sobre el dataset, el procedimiento de entrenamiento o la evaluacion.
+El nombre del modelo sugiere una tarea de deteccion o segmentacion de saltos de linea, aunque la model card no confirma objetivos, etiquetas ni dominio de aplicacion: se trata de la plantilla autogenerada por Hugging Face con todos los campos marcados como `[More Information Needed]`. No hay informacion sobre el autor mas alla del identificador de la cuenta, ni sobre el dataset, el procedimiento de entrenamiento o la evaluacion.
 
 Su relevancia actual es limitada desde el punto de vista de la investigacion, dado que no aporta documentacion tecnica ni resultados. Puede resultar util unicamente como artefacto de partida para tareas de etiquetado secuencial de bajo coste computacional, siempre que se valide su comportamiento en el dominio concreto de uso, ya que no existe ninguna garantia publicada sobre su calidad.
 
@@ -31,7 +31,7 @@ Su relevancia actual es limitada desde el punto de vista de la investigacion, da
 
 Los unicos datos tecnicos disponibles son los tags del repositorio, que identifican el modelo como `distilbert` y `token-classification`. DistilBERT es una variante destilada de BERT que reduce el numero de capas del encoder original manteniendo el esquema de atencion bidireccional, lo que da lugar a un modelo denso de tipo transformer encoder con una cabeza de clasificacion por token. El recuento de 65.193.988 parametros es coherente con esa familia, aunque no se especifica el numero de capas, la dimension oculta, el tamano del vocabulario ni el numero de etiquetas de salida.
 
-No hay informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset, el uso de ajuste fino supervisado, RLHF, DPO u otras tecnicas de alineacion. Tampoco se documentan innovaciones tecnicas como decodificacion especulativa, atencion lineal o mecanicas de razonamiento. El tag `arxiv:1910.09700` presente en el repositorio corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono, citado en la plantilla de model card de HuggingFace, y no a un paper que describa este modelo. En consecuencia, el proceso de entrenamiento debe considerarse no documentado.
+No hay informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset, el uso de ajuste fino supervisado, RLHF, DPO u otras tecnicas de alineacion. Tampoco se documentan innovaciones tecnicas como decodificacion especulativa, atencion lineal o mecanicas de razonamiento. El tag `arxiv:1910.09700` presente en el repositorio corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono, citado en la plantilla de model card de Hugging Face, y no a un paper que describa este modelo. En consecuencia, el proceso de entrenamiento debe considerarse no documentado.
 
 ## Capacidades
 
@@ -79,7 +79,7 @@ La comparacion directa de rendimiento con estas alternativas no es posible: no e
 
 ## Limitaciones y advertencias
 
-- Documentacion ausente: la model card es la plantilla autogenerada de HuggingFace, sin descripcion, datos de entrenamiento, hiperparametros ni evaluacion.
+- Documentacion ausente: la model card es la plantilla autogenerada de Hugging Face, sin descripcion, datos de entrenamiento, hiperparametros ni evaluacion.
 - Licencia no declarada: sin terminos de uso publicados, el uso comercial queda en una situacion juridica incierta. No debe asumirse que se permite.
 - Riesgo de alucinacion: en un modelo discriminativo de etiquetado el riesgo equivalente es la asignacion erronea de etiquetas, tanto mas probable cuanto menos se conozca el dominio y la distribucion de entrenamiento.
 - Sesgos desconocidos: al no documentarse el dataset ni el idioma de entrenamiento, no es posible evaluar sesgos demograficos, linguisticos o de dominio.
@@ -91,7 +91,7 @@ La comparacion directa de rendimiento con estas alternativas no es posible: no e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/spbui00/linebreaks
+- Modelo en Hugging Face: https://huggingface.co/spbui00/linebreaks
 - Articulo citado en la plantilla de la model card (Lacoste et al., 2019, sobre emisiones de carbono, no sobre este modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental referenciada en la plantilla: https://mlco2.github.io/impact
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales asociados a este modelo.

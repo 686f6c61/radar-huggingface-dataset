@@ -103,6 +103,6 @@ Existen otras familias de traduccion de codigo abierto, como NLLB-200 o M2M-100,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sean-reed/opus-mt-en-es-onnx
+- Modelo en Hugging Face: https://huggingface.co/sean-reed/opus-mt-en-es-onnx
 - Modelo base: https://huggingface.co/Helsinki-NLP/opus-mt-en-es
 - Proyecto OPUS-MT (Language Technology Research Group, Universidad de Helsinki): https://github.com/Helsinki-NLP/Opus-MT

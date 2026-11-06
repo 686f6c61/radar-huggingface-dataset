@@ -4,7 +4,7 @@
 
 El modelo `tekyerema-asr-mms-ewe-clean` es un sistema de reconocimiento automático del habla (ASR) para el idioma ewe, una lengua hablada principalmente en Ghana y Togo. Ha sido desarrollado por Prince Nasamu Alhassan, investigador de la Universidad de Ghana, dentro de su línea de trabajo en tecnologías del lenguaje para idiomas africanos de bajos recursos. El nombre del repositorio sugiere que se trata de un ajuste fino (fine-tuning) sobre los modelos MMS (Massively Multilingual Speech) de Meta, aunque la model card no proporciona confirmación explícita.
 
-La relevancia de este modelo radica en que el ewe es un idioma con escasos recursos digitales y pocos sistemas de ASR disponibles públicamente. Su publicación en HuggingFace, junto con otros modelos similares del mismo autor (para hausa y dagbani), contribuye a la democratización de la tecnología del habla para comunidades lingüísticas tradicionalmente ignoradas. Sin embargo, la model card es genérica y carece de detalles técnicos, por lo que la información disponible es muy limitada.
+La relevancia de este modelo radica en que el ewe es un idioma con escasos recursos digitales y pocos sistemas de ASR disponibles públicamente. Su publicación en Hugging Face, junto con otros modelos similares del mismo autor (para hausa y dagbani), contribuye a la democratización de la tecnología del habla para comunidades lingüísticas tradicionalmente ignoradas. Sin embargo, la model card es genérica y carece de detalles técnicos, por lo que la información disponible es muy limitada.
 
 ## Especificaciones tecnicas
 
@@ -61,7 +61,7 @@ No se dispone de informacion suficiente para establecer una comparativa. El auto
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/PrinceAlhassanNasamu/tekyerema-asr-mms-ewe-clean
+- Repositorio en Hugging Face: https://huggingface.co/PrinceAlhassanNasamu/tekyerema-asr-mms-ewe-clean
 - Modelo similar del mismo autor (hausa): https://huggingface.co/PrinceAlhassanNasamu/tekyerema-asr-mms-hau
 - Modelo similar del mismo autor (dagbani): https://huggingface.co/PrinceAlhassanNasamu/tekyerema-asr-mms-dag
 - Portafolio del autor: https://prince-alhassan.vercel.app/

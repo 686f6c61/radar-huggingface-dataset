@@ -86,7 +86,7 @@ En cuanto a parámetros y contexto, Qwen3.8-2.4T-A95B se sitúa en la gama alta 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Nocodedev0/Qwen3.8-2.4T-A95B
+- Repositorio Hugging Face: https://huggingface.co/Nocodedev0/Qwen3.8-2.4T-A95B
 - Repositorio oficial Qwen3.8 (GitHub): https://github.com/QwenLM/Qwen3.8
 - Página de Qwen3.8-Max en QwenCloud: https://www.qwencloud.com/models/qwen3.8-2.4t-a95b
 - Documentación de NVIDIA NIM para Qwen3.8-2.4T-A95B: https://docs.nvidia.com/nim/large-language-models/latest/get-started/advanced/get-started-qwen3.8.html

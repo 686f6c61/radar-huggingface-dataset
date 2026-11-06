@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`q-FrozenLake-v1-4x4-noSlippery` no es un modelo de lenguaje ni una red neuronal: es un agente de **Q-learning tabular** entrenado para resolver el entorno determinista `FrozenLake-v1` de 4x4 (sin hielo resbaladizo) de Gymnasium. Lo publica el usuario de HuggingFace HyperHilmi como artefacto de refuerzo (pipeline `reinforcement-learning`), y su contenido se reduce a una tabla Q serializada en un fichero `q-learning.pkl` dentro de un repositorio de tamano practicamente nulo (0.0 GB). El autor declara una recompensa media de 1.00 +/- 0.00 en el conjunto de evaluacion del propio entorno, es decir, una politica que alcanza la meta en el 100% de los episodios evaluados.
+`q-FrozenLake-v1-4x4-noSlippery` no es un modelo de lenguaje ni una red neuronal: es un agente de **Q-learning tabular** entrenado para resolver el entorno determinista `FrozenLake-v1` de 4x4 (sin hielo resbaladizo) de Gymnasium. Lo publica el usuario de Hugging Face HyperHilmi como artefacto de refuerzo (pipeline `reinforcement-learning`), y su contenido se reduce a una tabla Q serializada en un fichero `q-learning.pkl` dentro de un repositorio de tamano practicamente nulo (0.0 GB). El autor declara una recompensa media de 1.00 +/- 0.00 en el conjunto de evaluacion del propio entorno, es decir, una politica que alcanza la meta en el 100% de los episodios evaluados.
 
 Su relevancia no viene del rendimiento (el problema es trivial para cualquier algoritmo de RL tabular) sino de su valor como **referencia reproducible y material didactico**: sirve para verificar que un pipeline de `stable-baselines3` con `load_from_hub` funciona de extremo a extremo, para comparar implementaciones de Q-learning y para ilustrar el flujo de publicacion de agentes en el Hub. Es, en la practica, un "hola mundo" de RL empaquetado con el formato estandar de la libreria.
 
@@ -33,7 +33,7 @@ No se dispone de informacion sobre hiperparametros (tasa de aprendizaje, factor 
 
 - Resolucion del entorno `FrozenLake-v1` 4x4 en su variante determinista: politica greedy sobre la tabla Q que alcanza la meta con recompensa media de 1.00.
 - Seleccion de accion estado a estado (arriba, abajo, izquierda, derecha) a partir de la observacion discreta devuelta por el entorno.
-- Serializacion y carga mediante la API de HuggingFace Hub para agentes de RL (`load_from_hub`), lo que permite reutilizarlo sin reentrenar.
+- Serializacion y carga mediante la API de Hugging Face Hub para agentes de RL (`load_from_hub`), lo que permite reutilizarlo sin reentrenar.
 - Integracion directa con Gymnasium mediante `gym.make(model["env_id"])`, tal como documenta el autor.
 - No soporta tool calling ni function calling, agentes multi-paso fuera del bucle del entorno, capacidades multilingues, vision, audio, ni modos de razonamiento extendido.
 
@@ -48,7 +48,7 @@ No se dispone de informacion sobre hiperparametros (tasa de aprendizaje, factor 
 
 ## Benchmarks y rendimiento
 
-Datos declarados por el autor en el `model-index` de la model card (no verificados por HuggingFace, campo `verified: false`):
+Datos declarados por el autor en el `model-index` de la model card (no verificados por Hugging Face, campo `verified: false`):
 
 | Tarea | Dataset / entorno | Metrica | Valor |
 |---|---|---|---|
@@ -71,7 +71,7 @@ No disponible. No se ha proporcionado informacion sobre otros agentes de Q-learn
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| q-FrozenLake-v1-4x4-noSlippery | 64 valores Q | no aplica | mean_reward 1.00 (no verificado) | no disponible | HuggingFace Hub |
+| q-FrozenLake-v1-4x4-noSlippery | 64 valores Q | no aplica | mean_reward 1.00 (no verificado) | no disponible | Hugging Face Hub |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -87,5 +87,5 @@ No disponible. No se ha proporcionado informacion sobre otros agentes de Q-learn
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HyperHilmi/q-FrozenLake-v1-4x4-noSlippery
+- Modelo en Hugging Face: https://huggingface.co/HyperHilmi/q-FrozenLake-v1-4x4-noSlippery
 - No se han encontrado en la busqueda web enlaces relevantes al modelo (paper, blog, repositorio de codigo o demo); los resultados devueltos no guardan relacion con el contenido de esta ficha.

@@ -81,7 +81,7 @@ La comparativa se limita a modelos de tamano similar. La diferencia principal es
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/TinyLlama-3MPER0RR-abliterated-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/TinyLlama-3MPER0RR-abliterated-GGUF
 - Modelo base (3MPER0RR): https://huggingface.co/3MPER0RR/TinyLlama-3MPER0RR-abliterated
 - Variante obliterated (relacionada): https://huggingface.co/mradermacher/TinyLlama-3MPER0RR-obliterated-GGUF
 - Otro modelo abliterated del mismo autor: https://huggingface.co/mradermacher/tinyllama-abliterated-GGUF

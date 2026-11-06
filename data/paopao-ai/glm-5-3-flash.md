@@ -6,7 +6,7 @@ GLM-5.3-Flash es el primer modelo nativamente multimodal de la serie GLM-5, desa
 
 La relevancia tecnica del modelo reside en dos innovaciones arquitectonicas: una arquitectura hibrida que combina atencion dispersa (sparse) y atencion lineal (linear attention), disenada para reducir drasticamente el coste de servicio en contextos largos sin sacrificar precision, y el uso de Manifold-Constrained Hyper-Connections (mHC) para mejorar la eficiencia de escalado. El modelo fue entrenado desde cero sobre un corpus multimodal de 30 billones (30T) de tokens.
 
-El modelo se distribuye con licencia MIT, lo que permite uso comercial sin restricciones significativas, y esta disponible en HuggingFace con pesos en safetensors y fp8. Su pipeline es image-text-to-text, lo que confirma el soporte de entrada de imagenes ademas de texto. Los idiomas declarados son ingles y chino.
+El modelo se distribuye con licencia MIT, lo que permite uso comercial sin restricciones significativas, y esta disponible en Hugging Face con pesos en safetensors y fp8. Su pipeline es image-text-to-text, lo que confirma el soporte de entrada de imagenes ademas de texto. Los idiomas declarados son ingles y chino.
 
 ## Especificaciones tecnicas
 
@@ -84,7 +84,7 @@ No se dispone de datos suficientes en la informacion proporcionada para una comp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/paopao-ai/GLM-5.3-Flash
+- Hugging Face: https://huggingface.co/paopao-ai/GLM-5.3-Flash
 - Blog del modelo: https://z.ai/blog/glm-5.3-flash
 - Informe tecnico (arXiv): https://arxiv.org/abs/2602.15763
 - API Z.ai: https://docs.z.ai/guides/llm/glm-5.3-flash

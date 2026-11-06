@@ -19,7 +19,7 @@ Con 2.213.241.664 parámetros y un repositorio de 4,4 GB, es un modelo pequeño 
 | Longitud de contexto | El entrenamiento usa `max_len` de 32.768 tokens; la longitud de contexto oficial del modelo base no disponible |
 | Tipos de cuantizacion | No disponible (no se documentan versiones GGUF, AWQ, GPTQ ni FP8) |
 | Idiomas soportados | Ingles (`en`) |
-| Licencia | Apache 2.0 en los metadatos de HuggingFace; la model card indica que hereda la licencia del modelo base |
+| Licencia | Apache 2.0 en los metadatos de Hugging Face; la model card indica que hereda la licencia del modelo base |
 | Formato de pesos | safetensors (transformers) |
 | Pipeline | image-text-to-text |
 | Entrada | PNG de pagina completa renderizada a 200 DPI |
@@ -97,8 +97,8 @@ Ambos modelos devuelven predicciones idénticas en 39 de las 52 páginas. En las
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | infinity-parser2-flash-title-block-v2 (este modelo) | 2,21 mil millones | `max_len` de entrenamiento 32.768 tokens | Extraccion de `sheet_no` y `title` de cajetines | Apache 2.0 segun metadatos; hereda la del base segun la model card | Pesos fusionados en safetensors, uso con vLLM o transformers |
-| infinity-parser2-flash-title-block (v1) | No disponible (mismo modelo base) | No disponible | Misma tarea, version anterior | No disponible | Publicado por Circuit-AI en HuggingFace |
-| infly/Infinity-Parser2-Flash (base) | No disponible en la informacion proporcionada | No disponible | VLM de proposito general para parsing de documentos | No disponible | Publicado por infly en HuggingFace |
+| infinity-parser2-flash-title-block (v1) | No disponible (mismo modelo base) | No disponible | Misma tarea, version anterior | No disponible | Publicado por Circuit-AI en Hugging Face |
+| infly/Infinity-Parser2-Flash (base) | No disponible en la informacion proporcionada | No disponible | VLM de proposito general para parsing de documentos | No disponible | Publicado por infly en Hugging Face |
 
 En el conjunto retenido de 52 paginas de S3, v1 obtiene 45/52 en `title` (exact) frente a 40/52 de v2, mientras que en el conjunto de regresion Ferguson-Geo de 28 paginas v2 alcanza 28/28 en ambos campos frente a 19/28 y 17/28 de v1. No se dispone de datos de benchmarks de terceros ni de comparaciones con otros extractores de cajetines.
 
@@ -111,13 +111,13 @@ En el conjunto retenido de 52 paginas de S3, v1 obtiene 45/52 en `title` (exact)
 - Sensibilidad a la resolucion: se produjo OOM con `max_pixels` de 16M en una RTX 5090 de 32 GB; el valor recomendado es 8.388.608 o inferior.
 - Cobertura de evaluacion limitada: los conjuntos de prueba son pequenos (28, 119 y 52 paginas) y centrados en dominios concretos (Ferguson-Geo, INDOT, bent-creek). El rendimiento en otras empresas o formatos de cajetin no esta medido.
 - Ground truth parcialmente generado de forma asistida por modelo en algunos casos (warmlands_avenue) y gold proxy basado en predicciones de produccion en el conjunto de 119 paginas, lo que limita la independencia de parte de la evaluacion.
-- Licencia: aunque los metadatos de HuggingFace indican Apache 2.0, la model card afirma que hereda la licencia del modelo base. Conviene verificar las condiciones de infly/Infinity-Parser2-Flash antes de un uso comercial.
+- Licencia: aunque los metadatos de Hugging Face indican Apache 2.0, la model card afirma que hereda la licencia del modelo base. Conviene verificar las condiciones de infly/Infinity-Parser2-Flash antes de un uso comercial.
 - Sin datos publicados de latencia, throughput, VRAM minima ni cuantizaciones soportadas, lo que dificulta el dimensionamiento de produccion.
 - El modelo tiene 0 descargas y 0 likes en el momento de la consulta, por lo que no existe validacion externa de su comportamiento.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Circuit-AI/infinity-parser2-flash-title-block-v2
+- Modelo en Hugging Face: https://huggingface.co/Circuit-AI/infinity-parser2-flash-title-block-v2
 - Modelo base: https://huggingface.co/infly/Infinity-Parser2-Flash
 - Version anterior (v1): https://huggingface.co/Circuit-AI/infinity-parser2-flash-title-block
 - Resultados de busqueda web: no se encontro ningun enlace relevante al modelo, su paper, repositorio o demo; los resultados devueltos correspondian a agencias de viajes y a un simulador de circuitos electronicos, sin relacion con este modelo.

@@ -92,7 +92,7 @@ No se dispone de datos de otros correctores gramaticales comparables en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bilgini/gemma-4-E2B-it-correction-teacher-litert-lm
+- Modelo en Hugging Face: https://huggingface.co/bilgini/gemma-4-E2B-it-correction-teacher-litert-lm
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
 - Runtime LiteRT-LM: https://github.com/google-ai-edge/LiteRT-LM
 - Licencia de Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license

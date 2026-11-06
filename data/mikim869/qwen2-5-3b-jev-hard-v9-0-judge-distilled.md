@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mikim869/qwen2.5-3b-jev-hard-v9.0-judge-distilled` es un modelo publicado en HuggingFace Hub por el usuario mikim869 el 19 de octubre de 2026 (fecha declarada en el Hub). Por el identificador del repositorio cabe deducir que se trata de un ajuste fino de la familia Qwen2.5 con aproximadamente 3.000 millones de parámetros, especializado en tareas de "juez" (evaluación automática de respuestas) y entrenado mediante destilación a partir de un modelo juez de mayor tamaño. La model card, sin embargo, es la plantilla autogenerada por HuggingFace y no confirma ninguno de estos extremos: no declara autoría real, arquitectura, datos de entrenamiento, licencia ni idiomas.
+`mikim869/qwen2.5-3b-jev-hard-v9.0-judge-distilled` es un modelo publicado en Hugging Face Hub por el usuario mikim869 el 19 de octubre de 2026 (fecha declarada en el Hub). Por el identificador del repositorio cabe deducir que se trata de un ajuste fino de la familia Qwen2.5 con aproximadamente 3.000 millones de parámetros, especializado en tareas de "juez" (evaluación automática de respuestas) y entrenado mediante destilación a partir de un modelo juez de mayor tamaño. La model card, sin embargo, es la plantilla autogenerada por Hugging Face y no confirma ninguno de estos extremos: no declara autoría real, arquitectura, datos de entrenamiento, licencia ni idiomas.
 
 El interés de este tipo de modelos radica en el patrón LLM-as-a-judge: modelos pequeños y baratos de ejecutar que puntúan, comparan o filtran salidas de otros modelos dentro de pipelines de RLHF/DPO, filtrado de datos sintéticos o evaluación continua. Un juez de 3B permite evaluar miles de pares de respuestas en una sola GPU de consumo, algo inviable con un juez de 70B.
 
@@ -31,7 +31,7 @@ En su estado actual la ficha es prácticamente inutilizable como referencia téc
 
 No hay información publicada sobre la arquitectura en la model card: todos los apartados de "Model Details", "Training Data", "Training Procedure" y "Training Hyperparameters" contienen el marcador `[More Information Needed]`. Por el nombre del repositorio se puede inferir que parte de Qwen2.5-3B, un transformer decoder-only con atención por ventanas deslizantes combinada con atención completa, pero se trata de una deducción a partir del identificador y no de un dato confirmado por el autor.
 
-El sufijo `judge-distilled` apunta a un proceso de destilación desde un modelo juez mayor hacia este modelo de 3B, y `jev-hard-v9.0` sugiere una versión 9 de un conjunto de datos de evaluación o entrenamiento centrado en casos "difíciles" (pares de respuestas con diferencias sutiles de calidad). No se especifican el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron etapas de SFT, DPO o RLHF. La etiqueta `arxiv:1910.09700` que aparece en los tags corresponde al artículo del calculador de impacto ambiental de Lacoste et al. (2019), incluido por defecto en la plantilla de HuggingFace; no es un paper del modelo y no debe interpretarse como referencia técnica del mismo.
+El sufijo `judge-distilled` apunta a un proceso de destilación desde un modelo juez mayor hacia este modelo de 3B, y `jev-hard-v9.0` sugiere una versión 9 de un conjunto de datos de evaluación o entrenamiento centrado en casos "difíciles" (pares de respuestas con diferencias sutiles de calidad). No se especifican el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron etapas de SFT, DPO o RLHF. La etiqueta `arxiv:1910.09700` que aparece en los tags corresponde al artículo del calculador de impacto ambiental de Lacoste et al. (2019), incluido por defecto en la plantilla de Hugging Face; no es un paper del modelo y no debe interpretarse como referencia técnica del mismo.
 
 ## Capacidades
 
@@ -106,7 +106,7 @@ Los datos de los modelos comparativos proceden de la documentación pública de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mikim869/qwen2.5-3b-jev-hard-v9.0-judge-distilled
+- Modelo en Hugging Face: https://huggingface.co/mikim869/qwen2.5-3b-jev-hard-v9.0-judge-distilled
 - Artículo referenciado en la etiqueta arXiv (calculador de impacto ambiental, Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculador de impacto ML mencionado en la model card: https://mlco2.github.io/impact#compute
 - No se han encontrado otros enlaces (papers, blogs, repositorios de código o demos) en la información proporcionada.

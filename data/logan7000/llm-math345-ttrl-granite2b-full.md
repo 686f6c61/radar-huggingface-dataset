@@ -4,7 +4,7 @@
 
 El modelo `logan7000/llm-math345-ttrl-granite2b-full` es un checkpoint de fine-tuning del modelo base `ibm-granite/granite-3.3-2b-instruct`, desarrollado por el usuario logan7000. El entrenamiento aplica TTRL (Test-Time Reinforcement Learning) con GRPO sobre el conjunto de problemas matemáticos MATH345, utilizando un esquema de majority vote sobre K muestras como pseudo-etiquetas, sin ground truth. El objetivo es mejorar las capacidades de razonamiento matemático del modelo base mediante aprendizaje por refuerzo en tiempo de inferencia.
 
-El repositorio contiene dos checkpoints: `best/` (paso 20, seleccionado por validación) y `endpoint/` (paso 110, último checkpoint antes de la interrupción por límite de tiempo). El entrenamiento se truncó en el paso 110 de 136 debido a un límite de 24 horas de ejecución, sin errores de entrenamiento. El tamaño del repositorio es de 10,1 GB, con pesos en formato safetensors. No se dispone de licencia, idiomas soportados ni pipeline declarados en la ficha de HuggingFace.
+El repositorio contiene dos checkpoints: `best/` (paso 20, seleccionado por validación) y `endpoint/` (paso 110, último checkpoint antes de la interrupción por límite de tiempo). El entrenamiento se truncó en el paso 110 de 136 debido a un límite de 24 horas de ejecución, sin errores de entrenamiento. El tamaño del repositorio es de 10,1 GB, con pesos en formato safetensors. No se dispone de licencia, idiomas soportados ni pipeline declarados en la ficha de Hugging Face.
 
 Este modelo es relevante para investigadores interesados en técnicas de RL aplicadas a modelos de lenguaje pequeños, especialmente en el dominio matemático, y para quienes buscan alternativas de fine-tuning con pseudo-etiquetas generadas por el propio modelo.
 

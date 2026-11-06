@@ -4,7 +4,7 @@
 
 Fibo-Edit-1.5-base es un modelo de edición de imágenes desarrollado por BRIA AI, diseñado para proporcionar un control estructurado y determinista sobre el proceso de edición mediante la generación de prompts en formato JSON. Se apoya en el modelo fundacional Fibo, un sistema de texto a imagen nativo JSON, y extiende sus capacidades a tareas de image-to-image, inpainting y multi-referencia. El objetivo principal es eliminar la ambigüedad en las instrucciones de edición, permitiendo a los usuarios especificar de forma precisa qué cambios realizar sobre una imagen sin depender de interpretaciones subjetivas del modelo.
 
-El modelo cuenta con aproximadamente 8 290 millones de parámetros y se distribuye como safetensors, con una pipeline específica `BriaFiboEditPipeline` en la librería diffusers. Su acceso en HuggingFace es restringido (gated), por lo que se requiere aceptar los términos de la licencia `bria-fibo-edit-1.5`. Aunque la información pública no detalla la arquitectura interna exacta, se sabe que integra un módulo de generación de prompts estructurados y un controlador JSON, lo que lo diferencia de otros editores de imágenes basados en difusión más genéricos.
+El modelo cuenta con aproximadamente 8 290 millones de parámetros y se distribuye como safetensors, con una pipeline específica `BriaFiboEditPipeline` en la librería diffusers. Su acceso en Hugging Face es restringido (gated), por lo que se requiere aceptar los términos de la licencia `bria-fibo-edit-1.5`. Aunque la información pública no detalla la arquitectura interna exacta, se sabe que integra un módulo de generación de prompts estructurados y un controlador JSON, lo que lo diferencia de otros editores de imágenes basados en difusión más genéricos.
 
 ## Especificaciones técnicas
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Loop es un repositorio de modelo publicado en HuggingFace por el usuario mrr42694 bajo la licencia Apache 2.0. En el momento de la consulta, la model card asociada contiene únicamente el bloque de metadatos con la licencia y ningún texto descriptivo: no se documenta arquitectura, tamaño, datos de entrenamiento, idiomas ni procedimiento de uso.
+Loop es un repositorio de modelo publicado en Hugging Face por el usuario mrr42694 bajo la licencia Apache 2.0. En el momento de la consulta, la model card asociada contiene únicamente el bloque de metadatos con la licencia y ningún texto descriptivo: no se documenta arquitectura, tamaño, datos de entrenamiento, idiomas ni procedimiento de uso.
 
 El repositorio registra cero descargas y cero likes, y no tiene pipeline declarado ni idiomas asociados. La fecha de creación y de última actualización es idéntica, lo que indica que no ha habido revisiones posteriores a la publicación inicial.
 
@@ -76,5 +76,5 @@ No disponible. No se puede establecer una comparativa con alternativas de la mis
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mrr42694/Loop
+- Hugging Face: https://huggingface.co/mrr42694/Loop
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados al modelo en la información disponible.

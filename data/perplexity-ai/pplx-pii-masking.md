@@ -76,7 +76,7 @@ No se dispone de mas alternativas comparables en la informacion proporcionada. L
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/perplexity-ai/pplx-pii-masking
+- Hugging Face del modelo: https://huggingface.co/perplexity-ai/pplx-pii-masking
 - Backbone (encoder): https://huggingface.co/perplexity-ai/pplx-embed-v1-0.6b
 - Conversion vLLM: https://huggingface.co/perplexity-ai/pplx-pii-masking-vllm
 - Blog sobre computacion hibrida de Perplexity: https://www.explainx.ai/blog/perplexity-mac-hybrid-compute-local-pii-september-2026

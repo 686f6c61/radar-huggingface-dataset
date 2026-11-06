@@ -78,7 +78,7 @@ La comparativa muestra que el modelo estático es significativamente más peque�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jeadie/octen-embedding-8b-static-2048
+- Modelo en Hugging Face: https://huggingface.co/jeadie/octen-embedding-8b-static-2048
 - Modelo base: https://huggingface.co/Octen/Octen-Embedding-8B
 - Repositorio Model2Vec: https://github.com/MinishLab/model2vec
 - Documentación de Octen sobre embeddings: https://docs.octen.ai/capabilities/embedding

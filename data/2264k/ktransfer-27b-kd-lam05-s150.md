@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ktransfer-27b-kd-lam05-s150 es un checkpoint de investigación publicado por el usuario 2264K en HuggingFace, derivado del estudio exploratorio "Anchor or Transfer?" sobre destilación de conocimiento entre tokenizadores distintos (cross-tokenizer knowledge distillation) para la adaptación de modelos al coreano. El modelo estudiante es Qwen3.8-27B, un transformer denso de 27.356 millones de parámetros, y el profesor es Gemma-4-31B-it, cuyos logits top-k se precomputaron para guiar el entrenamiento.
+ktransfer-27b-kd-lam05-s150 es un checkpoint de investigación publicado por el usuario 2264K en Hugging Face, derivado del estudio exploratorio "Anchor or Transfer?" sobre destilación de conocimiento entre tokenizadores distintos (cross-tokenizer knowledge distillation) para la adaptación de modelos al coreano. El modelo estudiante es Qwen3.8-27B, un transformer denso de 27.356 millones de parámetros, y el profesor es Gemma-4-31B-it, cuyos logits top-k se precomputaron para guiar el entrenamiento.
 
 Este checkpoint concreto corresponde a la ejecución `lam05_27b`: fine-tuning completo del modelo base con pérdida de entropía cruzada (CE) más una KL proyectada estática con peso λ=0.5, detenida en el paso 150. El repositorio se publica explícitamente con fines de reproducibilidad de las tablas del artículo, incluidos los resultados negativos, por lo que el propio autor advierte que no es un modelo de propósito general mejorado.
 
@@ -92,7 +92,7 @@ No hay datos de rendimiento comparativos publicados entre estos tres modelos en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/2264K/ktransfer-27b-kd-lam05-s150
+- Modelo en Hugging Face: https://huggingface.co/2264K/ktransfer-27b-kd-lam05-s150
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Profesor: https://huggingface.co/google/gemma-4-31B-it
 - Paper "Anchor or Transfer?": no disponible (marcado como TBA en la model card)

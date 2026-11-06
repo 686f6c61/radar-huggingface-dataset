@@ -87,7 +87,7 @@ No se han publicado otros resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aymandakir-gh/gh-apex-GGUF
+- Hugging Face: https://huggingface.co/aymandakir-gh/gh-apex-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Dataset smoltalk: https://huggingface.co/datasets/HuggingFaceTB/smoltalk
 - Sitio oficial de Growthackers: https://gh.company

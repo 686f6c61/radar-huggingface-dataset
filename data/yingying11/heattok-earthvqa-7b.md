@@ -79,7 +79,7 @@ La comparativa es limitada porque no se dispone de datos de rendimiento numéric
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Yingying11/HeatTok-EarthVQA-7B
+- Modelo en Hugging Face: https://huggingface.co/Yingying11/HeatTok-EarthVQA-7B
 - Paper en arXiv: https://arxiv.org/abs/2608.22485
 - Repositorio GitHub: https://github.com/YingyingYan1/HeatTok
 - Checkpoint VRSBench: https://huggingface.co/Yingying11/HeatTok-VRSBench-7B

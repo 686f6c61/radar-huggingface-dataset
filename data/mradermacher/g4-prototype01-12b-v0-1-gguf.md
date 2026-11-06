@@ -72,7 +72,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/mradermacher/G4-Prototype01-12B-v0.1-GGUF
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/mradermacher/G4-Prototype01-12B-v0.1-GGUF
 - Repositorio del modelo base (sin cuantizar): https://huggingface.co/12B-Suite/G4-Prototype01-12B-v0.1
 - Página de LLM Explorer con información del modelo base: https://llm-explorer.com/model/12B-Suite%2FG4-Prototype01-12B-v0.1,4mCqz7AlZKA7gXMURCb9ln
 - Página de FriendliAI con detalles de inferencia: https://friendli.ai/models/12B-Suite/G4-Prototype01-12B-v0.1

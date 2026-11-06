@@ -4,7 +4,7 @@
 
 FoodVision Big es un clasificador de imágenes especializado en reconocer platos de comida entre las 101 categorías del dataset Food-101. Lo desarrolla el usuario shalev396 dentro de su proyecto personal "ml-lab" y se publica bajo licencia MIT. El modelo parte del backbone `efficientnet_b2` de torchvision, inicializado con los pesos `EfficientNet_B2_Weights.IMAGENET1K_V1`, al que se sustituye la cabeza de clasificación por `Dropout(0.3) -> Linear(1408, 101)` y se hace un fine-tuning completo de todas las capas.
 
-Se trata de un modelo pequeño (en torno a 7,84 millones de parámetros) y muy ligero, pensado más como pieza didáctica y de demostración que como sistema de producción a gran escala. Aun así, alcanza un 87,46 % de exactitud en el split de test de Food-101, un resultado sólido para su tamaño, y se puede ejecutar en CPU sin problema. Se distribuye con pesos en safetensors, `config.json` con los nombres de clase, `model.py` con la arquitectura y un `handler.py` listo para desplegar como Inference Endpoint de HuggingFace.
+Se trata de un modelo pequeño (en torno a 7,84 millones de parámetros) y muy ligero, pensado más como pieza didáctica y de demostración que como sistema de producción a gran escala. Aun así, alcanza un 87,46 % de exactitud en el split de test de Food-101, un resultado sólido para su tamaño, y se puede ejecutar en CPU sin problema. Se distribuye con pesos en safetensors, `config.json` con los nombres de clase, `model.py` con la arquitectura y un `handler.py` listo para desplegar como Inference Endpoint de Hugging Face.
 
 Su relevancia es sobre todo práctica: sirve como referencia reproducible de transfer learning end-to-end sobre un backbone EfficientNet, con una receta de entrenamiento documentada al detalle (5 épocas, Adam, label smoothing, TrivialAugmentWide) que se puede replicar en unos 22 minutos en una única GPU RTX 2080 Ti.
 
@@ -34,7 +34,7 @@ El entrenamiento es un fine-tuning completo de todas las capas sobre Food-101 (7
 - Acepta imágenes RGB de cualquier tamaño y resolución; el preprocesado interno las normaliza a 288x288.
 - Ejecución en CPU o GPU con el mismo código (`model.load(path, device="cpu"|"cuda")`).
 - Exposición como API HTTP mediante el Space público (`/predict`, devuelve etiqueta top-5, segundos y dispositivo).
-- Despliegue como Inference Endpoint de HuggingFace gracias a `handler.py`, que acepta tanto bytes de imagen (`Content-Type: image/jpeg`) como JSON con imagen en base64 y parámetro `top_k`.
+- Despliegue como Inference Endpoint de Hugging Face gracias a `handler.py`, que acepta tanto bytes de imagen (`Content-Type: image/jpeg`) como JSON con imagen en base64 y parámetro `top_k`.
 - No soporta tool calling, function calling, agentes, razonamiento multi-paso, generación de texto, código, matemáticas, visión general (solo clasificación), audio, ni modo "thinking".
 - Capacidades multilingües: no disponibles; se trata de un clasificador con etiquetas en inglés.
 - Capacidad especial: ninguna más allá de la clasificación de imágenes.
@@ -76,7 +76,7 @@ La pérdida de test bajó en todas las épocas, por lo que se conservó la últi
 - Cabe holgadamente en cualquier GPU de consumo, incluidas GTX 1050, GTX 1650, RTX 3060, RTX 4090 y también en iGPU modestas.
 - Funciona en CPU: el Space público está desplegado con `runtime: cpu-basic` y el autor documenta `model.load(path, device="cpu")` como opción por defecto.
 - GPU recomendadas: cualquiera con soporte CUDA; el entrenamiento original se hizo en una única NVIDIA RTX 2080 Ti. Para inferencia, una T4 o incluso CPU es suficiente; A100 o H100 serían enormemente sobredimensionadas.
-- Opciones de despliegue: Inference Endpoints de HuggingFace mediante el `handler.py` incluido (CPU o GPU), Gradio Space, ejecución local con Python (`torch`, `torchvision`, `pillow`, `huggingface_hub`, `safetensors`). No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI, que no aplican a un modelo de clasificación de imágenes.
+- Opciones de despliegue: Inference Endpoints de Hugging Face mediante el `handler.py` incluido (CPU o GPU), Gradio Space, ejecución local con Python (`torch`, `torchvision`, `pillow`, `huggingface_hub`, `safetensors`). No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI, que no aplican a un modelo de clasificación de imágenes.
 - Latencia y throughput: no se publican cifras de latencia por imagen ni de imágenes por segundo. El Space devuelve el tiempo en segundos como parte de la respuesta. Como referencia de coste de cómputo, el entrenamiento completo de 5 épocas sobre 75.750 imágenes tardó aproximadamente 22 minutos en una RTX 2080 Ti.
 
 ## Comparativa con modelos similares
@@ -85,7 +85,7 @@ No se dispone de resultados de benchmarks de modelos alternativos en la informac
 
 | Modelo | Parametros | Tarea | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FoodVision Big (este modelo) | 7,84 M (7,91 M según safetensors), 101 clases | Clasificación de imágenes (Food-101) | no aplica (entrada 288x288) | MIT | HuggingFace, safetensors, Space, Endpoint |
+| FoodVision Big (este modelo) | 7,84 M (7,91 M según safetensors), 101 clases | Clasificación de imágenes (Food-101) | no aplica (entrada 288x288) | MIT | Hugging Face, safetensors, Space, Endpoint |
 | EfficientNet-B0 | aprox. 5,3 M (referencia de la arquitectura estándar) | Clasificación de imágenes | no aplica | Apache 2.0 (torchvision) | torchvision, ampliamente distribuido |
 | EfficientNet-B2 sin fine-tuning específico | aprox. 9,1 M con cabeza de 1000 clases | Clasificación de imágenes | no aplica | Apache 2.0 (torchvision) | torchvision |
 | ResNet-50 | aprox. 25,6 M (referencia de la arquitectura estándar) | Clasificación de imágenes | no aplica | BSD / Apache 2.0 según implementación | torchvision, ampliamente distribuido |
@@ -106,11 +106,11 @@ La ventaja diferencial de FoodVision Big frente a usar un backbone genérico de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shalev396/foodvision-big
+- Modelo en Hugging Face: https://huggingface.co/shalev396/foodvision-big
 - Space de demostración: https://huggingface.co/spaces/shalev396/foodvision-big
 - Repositorio GitHub del proyecto ml-lab (carpeta foodvision-big): https://github.com/shalev396/ml-lab/tree/main/foodvision-big
 - Código de entrenamiento: https://github.com/shalev396/ml-lab/tree/main/foodvision-big/training
 - Notebook de Colab para reproducir el entrenamiento: https://colab.research.google.com/github/shalev396/ml-lab/blob/main/foodvision-big/training/notebook.ipynb
-- Dataset Food-101 en HuggingFace: https://huggingface.co/datasets/ethz/food101
+- Dataset Food-101 en Hugging Face: https://huggingface.co/datasets/ethz/food101
 
-Nota: la búsqueda web realizada no devolvió ningún resultado relevante sobre este modelo; los enlaces anteriores proceden de la model card y del repositorio de HuggingFace.
+Nota: la búsqueda web realizada no devolvió ningún resultado relevante sobre este modelo; los enlaces anteriores proceden de la model card y del repositorio de Hugging Face.

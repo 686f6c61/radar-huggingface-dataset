@@ -79,7 +79,7 @@ La comparativa se limita a modelos de la misma familia Qwen3-0.6B, ya que no se 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/hoon4172/Qwen3-0.6B-JSON-SFT-GRPO)
+- [Modelo en Hugging Face](https://huggingface.co/hoon4172/Qwen3-0.6B-JSON-SFT-GRPO)
 - [Modelo relacionado: hoon4172/Qwen3-0.6B-JSON-SFT](https://huggingface.co/hoon4172/Qwen3-0.6B-JSON-SFT)
 - [Modelo base: Qwen/Qwen3-0.6B](https://huggingface.co/Qwen/Qwen3-0.6B)
 - [Repositorio GitHub de Qwen3](https://github.com/QwenLM/Qwen3)

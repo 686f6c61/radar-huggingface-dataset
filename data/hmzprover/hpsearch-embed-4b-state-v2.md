@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hpsearch-embed-4b-state-v2 | 4,02B | no disponible | Lean 4 / Mathlib (premise selection) | apache-2.0 | HuggingFace (hmzprover) |
-| hmzprover/hpsearch-embed-4b-v2 (base) | no disponible | no disponible | Lean 4 / Mathlib | no disponible | HuggingFace (hmzprover) |
+| hpsearch-embed-4b-state-v2 | 4,02B | no disponible | Lean 4 / Mathlib (premise selection) | apache-2.0 | Hugging Face (hmzprover) |
+| hmzprover/hpsearch-embed-4b-v2 (base) | no disponible | no disponible | Lean 4 / Mathlib | no disponible | Hugging Face (hmzprover) |
 | Lean Finder | no disponible | no disponible | Lean 4 (estados aumentados) | no disponible | no disponible en la información proporcionada |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hmzprover/hpsearch-embed-4b-state-v2
+- Modelo en Hugging Face: https://huggingface.co/hmzprover/hpsearch-embed-4b-state-v2
 - Modelo base: https://huggingface.co/hmzprover/hpsearch-embed-4b-v2
 - Repositorio del sistema hpsearch: https://github.com/humanfia/hpsearch
 - LeanDojo Benchmark 4: no disponible enlace directo en la información proporcionada

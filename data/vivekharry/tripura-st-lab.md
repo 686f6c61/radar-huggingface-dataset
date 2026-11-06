@@ -4,7 +4,7 @@
 
 El proyecto `vivekharry/tripura-st-lab` es un repositorio de código y registro de datasets para traducción de voz desde Kokborok (lengua de Tripura, India) al inglés, con soporte adicional para bengalí y marathi. Lo desarrolla Vivek Das (`vivekharry`) y se publica bajo licencia MIT. El objetivo principal es abordar la traducción de voz en lenguas de bajos recursos (low-resource) del grupo índico, con un enfoque Kokborok-first.
 
-No se trata de un modelo preentrenado monolítico, sino de un pipeline compuesto por dos etapas: un sistema de reconocimiento automático de voz (ASR) que puede partir de Whisper o de MMS-1B con un adaptador NE-ASR, y un sistema de traducción automática (MT) basado en NLLB o en el modelo `sdmy/kokborok`. El repositorio incluye scripts de entrenamiento para ambos módulos y está alojado en HuggingFace con el pipeline de `automatic-speech-recognition`.
+No se trata de un modelo preentrenado monolítico, sino de un pipeline compuesto por dos etapas: un sistema de reconocimiento automático de voz (ASR) que puede partir de Whisper o de MMS-1B con un adaptador NE-ASR, y un sistema de traducción automática (MT) basado en NLLB o en el modelo `sdmy/kokborok`. El repositorio incluye scripts de entrenamiento para ambos módulos y está alojado en Hugging Face con el pipeline de `automatic-speech-recognition`.
 
 Su relevancia radica en la escasez de recursos lingüísticos para lenguas como el Kokborok, y en la necesidad de construir sistemas de traducción de voz que puedan desplegarse en entornos con datos limitados. El proyecto se posiciona como una base técnica para investigación y desarrollo en traducción de voz para lenguas minoritarias de la India.
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - No se proporcionan requisitos de hardware especificos en la informacion disponible.
 - Al depender de modelos base como Whisper-small o MMS-1B, se puede estimar que el ASR es ejecutable en GPUs de consumo medio (por ejemplo, RTX 3060 o superiores) en funcion de la cuantizacion, pero no hay datos confirmados.
 - El modulo MT con NLLB puede requerir mas recursos, especialmente en sus variantes grandes, aunque no se especifican.
-- El despliegue puede realizarse con herramientas compatibles con HuggingFace Transformers, pero no se indican opciones concretas como vLLM, llama.cpp u Ollama.
+- El despliegue puede realizarse con herramientas compatibles con Hugging Face Transformers, pero no se indican opciones concretas como vLLM, llama.cpp u Ollama.
 
 ## Comparativa con modelos similares
 
@@ -69,6 +69,6 @@ No se han identificado modelos comparables en la informacion disponible. El proy
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vivekharry/tripura-st-lab
+- Hugging Face: https://huggingface.co/vivekharry/tripura-st-lab
 - Landing page del proyecto: https://huggingface.co/spaces/vivekharry/tripura-st-lab-site
 - Perfil del autor: https://huggingface.co/vivekharry

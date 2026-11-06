@@ -4,7 +4,7 @@
 
 Atmyre/qwen3-8b-ao-strict-leaf-c0p50 es un adaptador LoRA (librería PEFT, etiquetas `peft`, `lora`, `safetensors`) publicado por el usuario Atmyre sobre el modelo base Qwen/Qwen3-8B. No es un modelo completo: el repositorio ocupa 0,7 GB y contiene únicamente los pesos del adaptador, no los pesos del modelo base. La tarea declarada es `text-generation`.
 
-La ficha del autor es la plantilla por defecto de HuggingFace sin rellenar: no documenta desarrollador, datos de entrenamiento, hiperparámetros, licencia, idiomas ni resultados de evaluación, y todos los campos aparecen como "[More Information Needed]". El repositorio registra 0 descargas y 0 likes, y fue creado y actualizado el 12 de septiembre de 2026, en cuestión de segundos, lo que indica una publicación de prueba más que un artefacto validado.
+La ficha del autor es la plantilla por defecto de Hugging Face sin rellenar: no documenta desarrollador, datos de entrenamiento, hiperparámetros, licencia, idiomas ni resultados de evaluación, y todos los campos aparecen como "[More Information Needed]". El repositorio registra 0 descargas y 0 likes, y fue creado y actualizado el 12 de septiembre de 2026, en cuestión de segundos, lo que indica una publicación de prueba más que un artefacto validado.
 
 Su relevancia actual es, por tanto, limitada: sirve como ejemplo de adaptador LoRA de bajo coste sobre la familia Qwen3, pero no puede evaluarse ni desplegarse en producción sin inspeccionar el `adapter_config.json`, reconstruir el proceso de entrenamiento y verificar el comportamiento resultante. La nomenclatura del identificador (`ao-strict-leaf-c0p50`) no está explicada en ninguna documentación disponible.
 
@@ -91,7 +91,7 @@ No se han identificado en la informacion proporcionada otros adaptadores compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Atmyre/qwen3-8b-ao-strict-leaf-c0p50
+- Modelo en Hugging Face: https://huggingface.co/Atmyre/qwen3-8b-ao-strict-leaf-c0p50
 - Modelo base Qwen/Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Repositorio de PEFT: https://github.com/huggingface/peft
 - Paper citado en la model card (arXiv:1910.09700), sobre estimacion de impacto ambiental: https://arxiv.org/abs/1910.09700

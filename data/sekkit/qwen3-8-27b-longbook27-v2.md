@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-Longbook27-v2 es un modelo de lenguaje de 27.072.285.696 parámetros (aproximadamente 27B) publicado por el usuario sekkit en HuggingFace, concebido como un ajuste fino especializado en comprensión y generación de texto de formato largo: libros, artículos científicos e informes extensos. La model card identifica como autor a "summerMC" y lo presenta como una segunda versión que refina el comportamiento y la calidad de salida respecto a v1.
+Qwen3.8-27B-Longbook27-v2 es un modelo de lenguaje de 27.072.285.696 parámetros (aproximadamente 27B) publicado por el usuario sekkit en Hugging Face, concebido como un ajuste fino especializado en comprensión y generación de texto de formato largo: libros, artículos científicos e informes extensos. La model card identifica como autor a "summerMC" y lo presenta como una segunda versión que refina el comportamiento y la calidad de salida respecto a v1.
 
 El modelo emplea una arquitectura personalizada denominada `qwen3_5_gdn24`, basada en capas de atención lineal Gated DeltaNet, y se distribuye con código remoto propio (`modeling_qwen35_gdn24.py`, `fused_ops.py`), por lo que requiere `trust_remote_code=True` para cargarse. Los pesos están en safetensors con precisión bf16, lo que supone un repositorio de 54,2 GB.
 
@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-Longbook27-v2 | ~27B | no disponible ("book-scale") | apache-2.0 (con remisión al base Qwen) | HuggingFace, código remoto | Ajuste fino especializado en texto largo, EN/JA |
-| Qwen2.5-32B-Instruct | ~32B | 128K tokens (según documentación pública de Qwen) | Apache 2.0 | HuggingFace, transformers estándar | Modelo generalista comparable en tamaño; no especializado en libros |
-| Gemma 2 27B | ~27B | 8K tokens | Gemma license | HuggingFace, transformers estándar | Tamaño idéntico; contexto mucho menor y licencia más restrictiva |
+| Qwen3.8-27B-Longbook27-v2 | ~27B | no disponible ("book-scale") | apache-2.0 (con remisión al base Qwen) | Hugging Face, código remoto | Ajuste fino especializado en texto largo, EN/JA |
+| Qwen2.5-32B-Instruct | ~32B | 128K tokens (según documentación pública de Qwen) | Apache 2.0 | Hugging Face, transformers estándar | Modelo generalista comparable en tamaño; no especializado en libros |
+| Gemma 2 27B | ~27B | 8K tokens | Gemma license | Hugging Face, transformers estándar | Tamaño idéntico; contexto mucho menor y licencia más restrictiva |
 
 La comparación con alternativas se basa en características públicas generales de esos modelos; no se dispone de datos de rendimiento del modelo evaluado frente a ellos.
 
@@ -85,5 +85,5 @@ La comparación con alternativas se basa en características públicas generales
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sekkit/Qwen3.8-27B-Longbook27-v2
+- Hugging Face: https://huggingface.co/sekkit/Qwen3.8-27B-Longbook27-v2
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información proporcionada.

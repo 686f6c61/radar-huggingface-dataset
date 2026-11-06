@@ -4,7 +4,7 @@
 
 `skillsafe-ai/vit-base-patch16-224` es un artefacto ONNX listo para navegador del conocido clasificador de imágenes ViT-Base/16 a 224x224 píxeles, publicado por SkillSafe a partir del export de Xenova (`Xenova/vit-base-patch16-224`, commit `66fef688e8dbe77dd9d5aa256353f9ad8b0ef799`). No es un modelo nuevo ni reentrenado: es una importación byte a byte del upstream, verificada con `onnx.checker` y con una prueba de humo en CPU, pensada para ejecutarse íntegramente en el cliente mediante `onnxruntime-web` (WebGPU o WASM) o vía transformers.js.
 
-El modelo resuelve una tarea muy concreta: clasificación de imágenes en 1000 clases de ImageNet-1k. Su valor no está en la precisión, sino en el empaquetado reproducible y ligero (0,4 GB de repositorio, con una variante cuantizada de 84,17 MB) y en la trazabilidad criptográfica de cada fichero mediante SHA-256, algo poco habitual en artefactos publicados en HuggingFace.
+El modelo resuelve una tarea muy concreta: clasificación de imágenes en 1000 clases de ImageNet-1k. Su valor no está en la precisión, sino en el empaquetado reproducible y ligero (0,4 GB de repositorio, con una variante cuantizada de 84,17 MB) y en la trazabilidad criptográfica de cada fichero mediante SHA-256, algo poco habitual en artefactos publicados en Hugging Face.
 
 Es relevante ahora porque la inferencia local en navegador se ha vuelto práctica: con una variante q8 de menos de 100 MB y latencias de decenas de milisegundos en CPU, se pueden ofrecer funciones de visión sin enviar imágenes a un servidor, lo que simplifica el cumplimiento de privacidad (RGPD) y reduce costes de infraestructura. La licencia Apache-2.0 permite uso comercial sin restricciones adicionales.
 
@@ -51,7 +51,7 @@ La innovación técnica aquí no está en el modelo, sino en el proceso de empaq
 ## Capacidades
 
 - Clasificación de imágenes en 1000 clases de ImageNet-1k (una única etiqueta por imagen, sin detección de cajas ni segmentación).
-- Inferencia en el navegador mediante `onnxruntime-web`, con ejecución por WebGPU o WASM; el ejemplo de la model card crea la sesión directamente desde una URL de HuggingFace.
+- Inferencia en el navegador mediante `onnxruntime-web`, con ejecución por WebGPU o WASM; el ejemplo de la model card crea la sesión directamente desde una URL de Hugging Face.
 - Compatibilidad con transformers.js para integración en aplicaciones web con una API de alto nivel.
 - Ejecución en CPU con onnxruntime (Python, C++ u otros lenguajes con bindings), sin necesidad de GPU.
 - Funcionamiento offline una vez descargados los pesos, lo que permite aplicaciones instalables tipo PWA.
@@ -108,14 +108,14 @@ La comparación cuantitativa de precisión con alternativas no es posible con la
 - Sesgos heredados del dataset de preentrenamiento original. No se documenta ningún análisis de sesgo, y las clases de ImageNet no están equilibradas desde el punto de vista demográfico.
 - No hay verificación de robustez frente a imágenes adversarias, dominios fuera de distribución, baja iluminación, oclusiones o cambios de resolución. Para uso en producción se recomienda validar con datos propios.
 - El fichero de etiquetas no aparece listado entre los ficheros del repositorio; la correspondencia entre índices y nombres de clase debe obtenerse del `config.json` o del repositorio upstream, y conviene verificarla antes de desplegar.
-- La model card indica que los ficheros marcados como `registry` se sirven desde `models.skillsafe.ai` una vez vetados. Conviene confirmar la disponibilidad y las condiciones de servicio de ese endpoint si se va a depender de él en producción, en lugar de servirlos desde el propio repositorio de HuggingFace.
+- La model card indica que los ficheros marcados como `registry` se sirven desde `models.skillsafe.ai` una vez vetados. Conviene confirmar la disponibilidad y las condiciones de servicio de ese endpoint si se va a depender de él en producción, en lugar de servirlos desde el propio repositorio de Hugging Face.
 - Licencia Apache-2.0: permite uso comercial, modificación y redistribución. Se debe conservar el aviso de licencia y la atribución indicada (Google como autor de los pesos originales, Xenova como autor del export ONNX). La receta de conversión y la model card son parte del repositorio de SkillSafe y llevan su propia licencia.
 - La cuantización q8 puede degradar ligeramente la precisión respecto a fp32. No se documenta la pérdida medida, por lo que conviene comparar ambas variantes sobre el conjunto de validación propio antes de elegir.
 - No es un modelo generativo: no produce descripciones, no responde a preguntas y no acepta entrada de texto. Cualquier expectativa en ese sentido es un error de uso.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/skillsafe-ai/vit-base-patch16-224
+- Modelo en Hugging Face: https://huggingface.co/skillsafe-ai/vit-base-patch16-224
 - Modelo upstream: https://huggingface.co/Xenova/vit-base-patch16-224/tree/66fef688e8dbe77dd9d5aa256353f9ad8b0ef799
 - Modelo original de Google: https://huggingface.co/google/vit-base-patch16-224
 - Aviso de licencia del modelo original: https://huggingface.co/google/vit-base-patch16-224/blob/main/README.md

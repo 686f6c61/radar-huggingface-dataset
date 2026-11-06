@@ -84,7 +84,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/DrAlexLiu/PiNozCam
+- Repositorio Hugging Face: https://huggingface.co/DrAlexLiu/PiNozCam
 - Repositorio GitHub del plugin: https://github.com/DrAlexLiu/OctoPrint-PiNozCam
 - Pagina del plugin en OctoPrint: https://plugins.octoprint.org/plugins/pinozcam/
-- Perfil del autor en HuggingFace: https://huggingface.co/DrAlexLiu
+- Perfil del autor en Hugging Face: https://huggingface.co/DrAlexLiu

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`laxgreen/dino-experiment` es un repositorio de investigación publicado en HuggingFace por el usuario laxgreen que contiene un prototipo denominado "Dino for Matching". No se trata de un modelo entrenado ni evaluado: la propia model card indica explícitamente que el checkpoint `model.safetensors` es una inicialización válida únicamente para pruebas de humo (smoke tests) y que no se reclama ninguna métrica de rendimiento. El repositorio incluye además `pipeline.py` como artefacto principal, `config.json` con los ajustes de arquitectura y `training_args.json` con la receta de experimento por defecto.
+`laxgreen/dino-experiment` es un repositorio de investigación publicado en Hugging Face por el usuario laxgreen que contiene un prototipo denominado "Dino for Matching". No se trata de un modelo entrenado ni evaluado: la propia model card indica explícitamente que el checkpoint `model.safetensors` es una inicialización válida únicamente para pruebas de humo (smoke tests) y que no se reclama ninguna métrica de rendimiento. El repositorio incluye además `pipeline.py` como artefacto principal, `config.json` con los ajustes de arquitectura y `training_args.json` con la receta de experimento por defecto.
 
 La configuración declarada describe una arquitectura "Dino" de escala "giant", con atención estándar, fusión de tipo tucker, activación approx gelu y normalización groupnorm. Sin embargo, el recuento real de parámetros extraído del archivo safetensors es de 49.600 parámetros (49,6 K), una cifra que contradice de forma notable la etiqueta de escala "giant" y que sitúa al artefacto en un orden de magnitud propio de una prueba de concepto, no de un modelo de producción.
 
@@ -85,5 +85,5 @@ Datos de DINOv2 y CLIP incluidos como referencia general ampliamente conocida; n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/laxgreen/dino-experiment
+- Hugging Face: https://huggingface.co/laxgreen/dino-experiment
 - No se han encontrado enlaces relevantes (papers, blogs, repositorios o demos) en la búsqueda web realizada. El único resultado devuelto fue un anuario escolar sin relación con el modelo.

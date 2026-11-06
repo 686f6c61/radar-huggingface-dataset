@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`romanomatteo/clip-multitask-2024` es un repositorio de HuggingFace que contiene una implementación propia y compacta de CLIP (Contrastive Language-Image Pre-Training) orientada a aprendizaje multitarea (multitask). El autor es el usuario romanomatteo y el repositorio se publicó el 29 de septiembre de 2026 según los metadatos. No es un modelo preentrenado listo para producción: la propia model card lo describe explícitamente como una configuración "nano" pensada para revisión de código, pruebas de humo (smoke tests) y experimentos pequeños y controlados.
+`romanomatteo/clip-multitask-2024` es un repositorio de Hugging Face que contiene una implementación propia y compacta de CLIP (Contrastive Language-Image Pre-Training) orientada a aprendizaje multitarea (multitask). El autor es el usuario romanomatteo y el repositorio se publicó el 29 de septiembre de 2026 según los metadatos. No es un modelo preentrenado listo para producción: la propia model card lo describe explícitamente como una configuración "nano" pensada para revisión de código, pruebas de humo (smoke tests) y experimentos pequeños y controlados.
 
 El dato más relevante es su escala: 33.088 parámetros totales según el fichero `model.safetensors`, es decir, unas 4.500 veces menos que el encoder visual de un CLIP ViT-B/32 de OpenAI (aproximadamente 150 millones de parámetros). Con ese tamaño, el checkpoint no puede codificar representaciones imagen-texto útiles; su función es servir como inicialización válida para verificar que un pipeline de entrenamiento carga pesos, ejecuta un paso hacia delante y guarda estado sin errores.
 
@@ -52,7 +52,7 @@ En cuanto al entrenamiento, la receta incluida en `training_args.json` propone e
 - Pruebas de integracion en CI/CD: por su tamano (33.088 parámetros, ~130 KB en fp32) el checkpoint se descarga y ejecuta en segundos dentro de un runner, lo que permite validar cambios en el codigo de datos o de modelo sin coste de GPU.
 - Docencia de aprendizaje contrastivo: sirve para ilustrar de forma tangible la forma de los tensores, la matriz de similitud y la perdida contrastiva sin necesidad de infraestructura de entrenamiento.
 - Andamiaje de barridos de hiperparametros: la receta Lion + planificador polinómico puede usarse como punto de partida y compararse contra baselines de capacidad equivalente bajo las mismas semillas.
-- Validacion de adaptadores de carga: util para comprobar que un adaptador personalizado registra correctamente la configuracion y los pesos de un modelo no estandar en el ecosistema HuggingFace.
+- Validacion de adaptadores de carga: util para comprobar que un adaptador personalizado registra correctamente la configuracion y los pesos de un modelo no estandar en el ecosistema Hugging Face.
 - Pruebas de serializacion y versionado de checkpoints: verificar que un pipeline guarda y relee `config.json`, `training_args.json` y safetensors de forma consistente.
 - Benchmark de juguete para depurar instrumentacion: medir tiempos de carga, memoria y throughput del lazo de entrenamiento con un modelo minimo antes de escalar a un CLIP real.
 
@@ -74,9 +74,9 @@ La model card indica de forma explicita que no se reclama ninguna puntuacion de 
 
 | Modelo | Parametros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| romanomatteo/clip-multitask-2024 | 33.088 | no disponible | No (solo inicializacion) | BSD-3-Clause | HuggingFace, 0 descargas |
+| romanomatteo/clip-multitask-2024 | 33.088 | no disponible | No (solo inicializacion) | BSD-3-Clause | Hugging Face, 0 descargas |
 | OpenAI CLIP ViT-B/32 | ~150 M (cifra publica aproximada) | 77 tokens en el text encoder | Si, ~400 M pares imagen-texto | MIT (codigo y pesos) | GitHub openai/CLIP, ampliamente distribuido |
-| OpenCLIP (LAION) | Desde ~150 M hasta miles de millones segun variante | 77 tokens | Si, LAION-2B y otros | Variable por variante (Apache-2.0 en varias) | HuggingFace, ecosistema amplio |
+| OpenCLIP (LAION) | Desde ~150 M hasta miles de millones segun variante | 77 tokens | Si, LAION-2B y otros | Variable por variante (Apache-2.0 en varias) | Hugging Face, ecosistema amplio |
 | M2CLIP (AAAI 2024) | no disponible | no disponible | Si, orientado a reconocimiento de acciones en video | no disponible | GitHub sallymmx/m2clip |
 
 La comparacion debe interpretarse con cautela: este repositorio es una implementacion de referencia sin entrenar, mientras que las alternativas son modelos preentrenados con cientos de millones de pares. La diferencia de parametros (cuatro ordenes de magnitud frente a CLIP ViT-B/32) implica que no son intercambiables en ninguna tarea real de retrieval o clasificacion zero-shot.
@@ -95,7 +95,7 @@ La comparacion debe interpretarse con cautela: este repositorio es una implement
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/romanomatteo/clip-multitask-2024
+- Modelo en Hugging Face: https://huggingface.co/romanomatteo/clip-multitask-2024
 - Repositorio original de CLIP de OpenAI (referencia de arquitectura): https://github.com/openai/CLIP
 - Repositorios con nombre similar encontrados en la busqueda, sin vinculacion conocida con este autor: https://huggingface.co/felixlehmann/clip-multitask
 - Repositorios con nombre similar encontrados en la busqueda, sin vinculacion conocida con este autor: https://huggingface.co/marcushou74/clip-multitask/tree/main

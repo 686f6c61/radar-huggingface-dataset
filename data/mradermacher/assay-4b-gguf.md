@@ -42,7 +42,7 @@ Tamano total del repositorio: 36,4 GB.
 
 ## Arquitectura y entrenamiento
 
-No hay información publicada sobre la arquitectura interna del modelo base Berk/assay-4b en el repositorio analizado. Se sabe que tiene 4.022.468.096 parámetros y que su pipeline declarado en HuggingFace es zero-shot-classification, con las etiquetas "assay", "calibrated" y "decision-model". El término "calibrated" sugiere que el autor trabajó la calibración de las probabilidades de salida, un aspecto crítico cuando el modelo se usa para tomar decisiones o umbralizar puntuaciones, aunque el repositorio no documenta la técnica concreta empleada (temperature scaling, calibración post-hoc u otra).
+No hay información publicada sobre la arquitectura interna del modelo base Berk/assay-4b en el repositorio analizado. Se sabe que tiene 4.022.468.096 parámetros y que su pipeline declarado en Hugging Face es zero-shot-classification, con las etiquetas "assay", "calibrated" y "decision-model". El término "calibrated" sugiere que el autor trabajó la calibración de las probabilidades de salida, un aspecto crítico cuando el modelo se usa para tomar decisiones o umbralizar puntuaciones, aunque el repositorio no documenta la técnica concreta empleada (temperature scaling, calibración post-hoc u otra).
 
 Tampoco se documentan el número de tokens de entrenamiento, la composición del dataset, ni si hubo fases de RLHF, DPO u otro tipo de ajuste por preferencias. El etiquetado del repositorio incluye "conversational", lo que apunta a algún tipo de ajuste conversacional, pero sin confirmación documental. Respecto a esta publicación concreta, la innovación técnica es exclusivamente la cuantización: se trata de cuantizaciones estáticas (el autor indica que las versiones ponderadas con imatrix no estaban disponibles en el momento de la publicación) y el campo "output_tensor_quantised: 1" indica que el tensor de salida también fue cuantizado.
 
@@ -89,8 +89,8 @@ Solo se dispone de datos verificables para comparar el repositorio cuantizado co
 
 | Modelo | Parametros | Formato | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mradermacher/assay-4b-GGUF | 4,02B (heredados del base) | GGUF (12 cuantizaciones) | no disponible | Apache 2.0 | Repositorio HuggingFace, 0 descargas |
-| Berk/assay-4b (modelo base) | 4,02B | safetensors | no disponible | Apache 2.0 | Repositorio HuggingFace original |
+| mradermacher/assay-4b-GGUF | 4,02B (heredados del base) | GGUF (12 cuantizaciones) | no disponible | Apache 2.0 | Repositorio Hugging Face, 0 descargas |
+| Berk/assay-4b (modelo base) | 4,02B | safetensors | no disponible | Apache 2.0 | Repositorio Hugging Face original |
 | Alternativas de clasificación zero-shot de ~4B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 Conviene senalar que la comparación entre el repositorio GGUF y el modelo base no es de calidad, sino de formato: ambos comparten pesos y licencia, y la diferencia es la precisión numérica y el consumo de memoria.

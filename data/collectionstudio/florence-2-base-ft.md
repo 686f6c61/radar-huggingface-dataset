@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Florence-2-base-ft (esta ficha) | 0,23 B | no disponible | MIT | HuggingFace, `transformers` con código remoto |
-| Florence-2-large-ft | 0,77 B | no disponible | MIT | HuggingFace, `transformers` con código remoto |
-| Florence-2-base | 0,23 B | no disponible | MIT | HuggingFace, solo preentrenado |
-| Florence-2-large | 0,77 B | no disponible | MIT | HuggingFace, solo preentrenado |
+| Florence-2-base-ft (esta ficha) | 0,23 B | no disponible | MIT | Hugging Face, `transformers` con código remoto |
+| Florence-2-large-ft | 0,77 B | no disponible | MIT | Hugging Face, `transformers` con código remoto |
+| Florence-2-base | 0,23 B | no disponible | MIT | Hugging Face, solo preentrenado |
+| Florence-2-large | 0,77 B | no disponible | MIT | Hugging Face, solo preentrenado |
 
 La comparativa se limita a la propia familia Florence-2, ya que la información proporcionada no incluye datos de rendimiento frente a alternativas de otros desarrolladores.
 

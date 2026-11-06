@@ -78,5 +78,5 @@ Comparación orientativa: frente a SmolLM2-1.7B-Instruct, este modelo es mayor y
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Kausp11/searchlm-dclm_nc-sftnc_v4cannsent_baseline_d24_cm44
+- Hugging Face: https://huggingface.co/Kausp11/searchlm-dclm_nc-sftnc_v4cannsent_baseline_d24_cm44
 - Paper, repositorio de entrenamiento o demo: no disponibles (el README menciona el checkpoint original en RCP `search-lm/ckpts/dclm_nc/sftnc_v4cannsent_baseline_d24_cm44`, sin enlace público)

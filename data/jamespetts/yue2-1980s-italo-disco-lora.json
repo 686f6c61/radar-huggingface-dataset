@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "jamespetts/yue2-1980s-italo-disco-lora",
+  "slug": "jamespetts-yue2-1980s-italo-disco-lora",
+  "author": "jamespetts",
+  "url": "https://huggingface.co/jamespetts/yue2-1980s-italo-disco-lora",
+  "created_at": "2026-11-01T23:31:03.000Z",
+  "updated_at": "2026-11-01T23:32:06.000Z",
+  "license": "cc0-1.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "lora",
+    "yue2",
+    "audio",
+    "music-generation",
+    "italo-disco",
+    "nar-adapter",
+    "license:cc0-1.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 176247166,
+  "storage_human": "176 MB",
+  "base_model": "yue2_3b_bf16",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jamespetts/yue2-1980s-italo-disco-lora · Hugging Face",
+      "url": "https://huggingface.co/jamespetts/yue2-1980s-italo-disco-lora",
+      "snippet": "Licence: CC0. Trained on our own AI-generated Italo-Disco songs (themselves CC0) — no third-party recordings in the weights. A NAR (non-autoregressive) texture/timbre adapter for the YuE2 audio.cpp engine family. It changes how the music sounds — production character — and cannot change notes ..."
+    },
+    {
+      "title": "jamespetts (James E. Petts) - Hugging Face",
+      "url": "https://huggingface.co/jamespetts",
+      "snippet": "Cake Recent Activity updated a model2 days ago jamespetts/yue2-1980s-eurodisco-lora published a model2 days ago jamespetts/yue2-1980s-eurodisco-lora View all activity"
+    }
+  ]
+}

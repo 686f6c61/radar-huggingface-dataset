@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ZORAKO-Core-1.0 es un modelo publicado en HuggingFace por el usuario Arafat8080kkk el 17 de agosto de 2026, bajo licencia Apache-2.0. La model card no contiene ninguna descripción técnica, arquitectura, tamaño, ni información sobre entrenamiento o capacidades. Se desconoce por completo qué tipo de modelo es, qué tareas resuelve o para qué fue diseñado. A fecha de su publicación, no registra descargas ni valoraciones de la comunidad.
+ZORAKO-Core-1.0 es un modelo publicado en Hugging Face por el usuario Arafat8080kkk el 17 de agosto de 2026, bajo licencia Apache-2.0. La model card no contiene ninguna descripción técnica, arquitectura, tamaño, ni información sobre entrenamiento o capacidades. Se desconoce por completo qué tipo de modelo es, qué tareas resuelve o para qué fue diseñado. A fecha de su publicación, no registra descargas ni valoraciones de la comunidad.
 
 La relevancia de este modelo no puede evaluarse en la actualidad debido a la ausencia total de documentación. Cualquier intento de uso en producción o investigación requeriría primero obtener información adicional del autor o inspeccionar directamente los archivos del repositorio, que tampoco están documentados en la ficha disponible.
 
@@ -53,6 +53,6 @@ No disponible. Al no conocerse la arquitectura, tamaño ni propósito del modelo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Arafat8080kkk/ZORAKO-Core-1.0
+- Repositorio en Hugging Face: https://huggingface.co/Arafat8080kkk/ZORAKO-Core-1.0
 
 No se han encontrado papers, blogs, demos ni otros recursos asociados al modelo.

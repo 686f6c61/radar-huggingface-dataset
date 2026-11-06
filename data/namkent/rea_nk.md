@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`namkent/rea_nk` es un repositorio de modelos alojado en HuggingFace por el usuario `namkent`. En el momento de la consulta, el repositorio no incluye model card funcional: el README se reduce al bloque de metadatos con la licencia `apache-2.0` y no contiene ni descripcion del modelo, ni arquitectura, ni datos de entrenamiento, ni instrucciones de uso. La plataforma tampoco ha detectado un pipeline asociado, no declara idiomas soportados y no registra descargas ni "likes".
+`namkent/rea_nk` es un repositorio de modelos alojado en Hugging Face por el usuario `namkent`. En el momento de la consulta, el repositorio no incluye model card funcional: el README se reduce al bloque de metadatos con la licencia `apache-2.0` y no contiene ni descripcion del modelo, ni arquitectura, ni datos de entrenamiento, ni instrucciones de uso. La plataforma tampoco ha detectado un pipeline asociado, no declara idiomas soportados y no registra descargas ni "likes".
 
 Esto significa que no es posible determinar que tipo de modelo es (lenguaje causal, encoder, vision, embedding, audio, etc.), su tamano, su longitud de contexto ni su proposito. Toda la informacion disponible es metadata de plataforma: licencia Apache 2.0, region `us`, fecha de creacion y de ultima actualizacion identicas (2026-10-18T15:56:58Z), lo que sugiere una publicacion unica sin mantenimiento posterior.
 
@@ -93,9 +93,9 @@ No disponible. No es posible establecer una categoria de comparacion porque se d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/namkent/rea_nk
+- Hugging Face: https://huggingface.co/namkent/rea_nk
 - Paper: no disponible
 - Blog o anuncio del autor: no disponible
 - Repositorio de codigo: no disponible
 - Demo o Space: no disponible
-- Perfil del autor en HuggingFace: https://huggingface.co/namkent
+- Perfil del autor en Hugging Face: https://huggingface.co/namkent

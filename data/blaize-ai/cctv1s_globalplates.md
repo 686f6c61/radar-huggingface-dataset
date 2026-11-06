@@ -69,7 +69,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Blaize-AI/CCTv1s_GlobalPlates
+- Modelo en Hugging Face: https://huggingface.co/Blaize-AI/CCTv1s_GlobalPlates
 - Repositorio original fast-plate-ocr: https://github.com/ankandrew/fast-plate-ocr
 - Global License Plate Dataset: https://github.com/siddagra/Global-License-Plate-Dataset
 - Paper Compact Transformers: https://arxiv.org/abs/2104.05704

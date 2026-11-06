@@ -82,7 +82,7 @@ No se dispone de información suficiente para establecer comparaciones cuantitat
 
 ## Enlaces
 
-- HuggingFace (esta conversión): https://huggingface.co/cstr/LightOnOCR-3-4B-GGUF-experimental-6b9dfe91eaa2
+- Hugging Face (esta conversión): https://huggingface.co/cstr/LightOnOCR-3-4B-GGUF-experimental-6b9dfe91eaa2
 - Modelo base: https://huggingface.co/lightonai/LightOnOCR-3-4B
 - Revisión de origen: `b71010f095dc3735de7ee6b9969bff8f8f50b39a`
 - Commit de origen: `94ad7bda378ac285f03fda28dcb97d29cb496418`

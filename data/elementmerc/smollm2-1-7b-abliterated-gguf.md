@@ -100,7 +100,7 @@ La comparación relevante no es solo de tamaño: la diferencia funcional de este
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ElementMerc/smollm2-1.7b-abliterated-GGUF
+- Repositorio Hugging Face: https://huggingface.co/ElementMerc/smollm2-1.7b-abliterated-GGUF
 - Modelo base (padre): https://huggingface.co/ElementMerc/smollm2-1.7b-abliterated
 - llama.cpp: https://github.com/ggml-org/llama.cpp
 

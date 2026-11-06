@@ -75,7 +75,7 @@ La comparación es orientativa; el fine-tune de HungryDino no tiene datos propio
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run4-gen12
+- Repositorio Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run4-gen12
 - Modelo base (unsloth/Qwen2.5-7B-Instruct): https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Informe técnico de Qwen2.5: https://arxiv.org/abs/2412.15115
 - Repositorio de Qwen2.5 en GitHub: https://github.com/mx4ai/qwen2.5

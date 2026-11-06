@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MoB_head es un repositorio publicado en HuggingFace por el usuario ryan-he bajo licencia MIT. La información disponible es extremadamente limitada: la model card únicamente declara la licencia, sin describir arquitectura, propósito, datos de entrenamiento ni uso previsto. El nombre sugiere, por la terminología "MoB" (posiblemente *Mixture of Blocks* o *Mixture of Brains*) y el sufijo "_head", que podría tratarse de una cabeza (*head*) de un modelo mayor o de un componente asociado a una arquitectura de mezcla de expertos o de bloques, pero esto es una inferencia a partir del nombre y no un dato confirmado por el autor.
+MoB_head es un repositorio publicado en Hugging Face por el usuario ryan-he bajo licencia MIT. La información disponible es extremadamente limitada: la model card únicamente declara la licencia, sin describir arquitectura, propósito, datos de entrenamiento ni uso previsto. El nombre sugiere, por la terminología "MoB" (posiblemente *Mixture of Blocks* o *Mixture of Brains*) y el sufijo "_head", que podría tratarse de una cabeza (*head*) de un modelo mayor o de un componente asociado a una arquitectura de mezcla de expertos o de bloques, pero esto es una inferencia a partir del nombre y no un dato confirmado por el autor.
 
 El repositorio no registra descargas ni interacciones en el momento de la consulta, lo que indica que se trata de una publicación reciente o de un artefacto de investigación sin distribución pública significativa. No se ha publicado pipeline, idiomas soportados ni resultados de evaluación.
 
@@ -34,7 +34,7 @@ El nombre del repositorio, `MoB_head`, podría indicar que se trata de una cabez
 - No consta soporte de agentes ni de razonamiento multi-paso.
 - No consta capacidad multilingüe declarada.
 - No consta modo de razonamiento (*thinking mode*), visión, audio ni ninguna otra modalidad.
-- El pipeline no está especificado en HuggingFace, por lo que no se puede confirmar la tarea para la que fue diseñado.
+- El pipeline no está especificado en Hugging Face, por lo que no se puede confirmar la tarea para la que fue diseñado.
 
 ## Casos de uso
 
@@ -44,7 +44,7 @@ No es posible enumerar casos de uso concretos y realistas sin información sobre
 - Reproducción de experimentos académicos: si el autor publica código complementario, podría servir para replicar resultados, aunque no hay enlaces a paper ni a repositorio de código.
 - Integración en pipelines propios: solo tras verificar el formato de pesos y la interfaz de entrada/salida, dado que no se especifican.
 - Fine-tuning sobre datos propios: viable en teoría por la licencia MIT, pero sin conocer la arquitectura no se puede estimar el coste computacional.
-- Uso educativo: como ejemplo de publicación mínima en HuggingFace, aunque su valor didáctico es limitado sin model card descriptiva.
+- Uso educativo: como ejemplo de publicación mínima en Hugging Face, aunque su valor didáctico es limitado sin model card descriptiva.
 - Auditoría de licencias: el repositorio sirve como caso de artefacto con licencia permisiva pero sin documentación técnica asociada.
 
 ## Benchmarks y rendimiento
@@ -76,5 +76,5 @@ No disponible. No se ha identificado la categoría del modelo ni modelos compara
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ryan-he/MoB_head
+- Hugging Face: https://huggingface.co/ryan-he/MoB_head
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

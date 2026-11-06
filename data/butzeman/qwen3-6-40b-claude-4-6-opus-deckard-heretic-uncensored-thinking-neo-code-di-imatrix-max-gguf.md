@@ -104,7 +104,7 @@ No se dispone de datos de benchmarks comparativos verificables entre estos model
 
 ## Enlaces
 
-- HuggingFace (este repositorio): https://huggingface.co/Butzeman/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking-NEO-CODE-Di-IMatrix-MAX-GGUF
+- Hugging Face (este repositorio): https://huggingface.co/Butzeman/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking-NEO-CODE-Di-IMatrix-MAX-GGUF
 - Modelo base: https://huggingface.co/DavidAU/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking
 - Repositorio de referencia de los quants NEO-CODE-Di-IMatrix-MAX: https://huggingface.co/DavidAU/Qwen3.6-27B-NEO-CODE-Di-IMatrix-MAX-GGUF
 - Repositorio de referencia (variante finetune Heretic): https://huggingface.co/DavidAU/Qwen3.6-27B-Heretic-Uncensored-FINETUNE-NEO-CODE-Di-IMatrix-MAX-GGUF

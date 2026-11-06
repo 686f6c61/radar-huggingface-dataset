@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`moogibharath/anvaya-distilbert` es un modelo publicado en HuggingFace por el usuario moogibharath bajo licencia MIT. El nombre sugiere un fine-tuning o destilación de la familia DistilBERT, un transformer encoder de tipo BERT destilado, aunque la model card no confirma explícitamente ni la arquitectura base ni el proceso de entrenamiento. El repositorio no incluye pipeline declarado, idiomas soportados ni documentación técnica más allá de la línea de licencia.
+`moogibharath/anvaya-distilbert` es un modelo publicado en Hugging Face por el usuario moogibharath bajo licencia MIT. El nombre sugiere un fine-tuning o destilación de la familia DistilBERT, un transformer encoder de tipo BERT destilado, aunque la model card no confirma explícitamente ni la arquitectura base ni el proceso de entrenamiento. El repositorio no incluye pipeline declarado, idiomas soportados ni documentación técnica más allá de la línea de licencia.
 
 En el momento de la consulta, el modelo acumula 0 descargas y 0 likes, y fue creado y actualizado en la misma fecha (2026-11-01), lo que indica una publicación reciente sin tracción ni validación por parte de la comunidad. No hay información pública sobre el dataset de entrenamiento, el número de parámetros efectivos tras la destilación ni los benchmarks obtenidos.
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Documentación | Disponibilidad |
 |---|---|---|---|---|---|
-| moogibharath/anvaya-distilbert | No disponible | No disponible | MIT | Mínima (solo licencia) | HuggingFace, 0 descargas |
-| distilbert-base-uncased | ~66M | 512 tokens | Apache 2.0 | Completa (model card, paper) | HuggingFace, ampliamente usado |
-| sentence-transformers/all-MiniLM-L6-v2 | ~22M | 256 tokens | Apache 2.0 | Completa | HuggingFace, muy usado en embeddings |
-| google/bert_uncased_L-4_H-256_A-4 | ~11M | 512 tokens | Apache 2.0 | Completa | HuggingFace |
+| moogibharath/anvaya-distilbert | No disponible | No disponible | MIT | Mínima (solo licencia) | Hugging Face, 0 descargas |
+| distilbert-base-uncased | ~66M | 512 tokens | Apache 2.0 | Completa (model card, paper) | Hugging Face, ampliamente usado |
+| sentence-transformers/all-MiniLM-L6-v2 | ~22M | 256 tokens | Apache 2.0 | Completa | Hugging Face, muy usado en embeddings |
+| google/bert_uncased_L-4_H-256_A-4 | ~11M | 512 tokens | Apache 2.0 | Completa | Hugging Face |
 
 La comparación se ofrece a título orientativo: no hay datos que permitan afirmar que `anvaya-distilbert` sea equivalente a ninguno de estos modelos, y su falta de documentación lo sitúa en desventaja frente a alternativas consolidadas con model cards detalladas y benchmarks públicos.
 
@@ -80,5 +80,5 @@ La comparación se ofrece a título orientativo: no hay datos que permitan afirm
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/moogibharath/anvaya-distilbert
+- Hugging Face: https://huggingface.co/moogibharath/anvaya-distilbert
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

@@ -84,9 +84,9 @@ No se dispone de datos de benchmarks de otros modelos VLN comparables en la info
 
 | Modelo | Parametros | Contexto | Datos de rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| agentvln-qwen35-2b-r2r-quarter-step1000 (este) | 2,72 B | 4.096 tokens (entrenamiento) | no disponible para este checkpoint | Apache-2.0 | HuggingFace, 0 descargas |
-| agentvln-qwen35-2b-r2r-quarter-step500 (hermano) | mismo base | 4.096 tokens | 27/27 formato, tasa de exito 0 en 3 episodios | Apache-2.0 | HuggingFace |
-| Qwen/Qwen3.5-2B (base) | 2,27 B segun model card | no disponible | no disponible | Apache-2.0 | HuggingFace |
+| agentvln-qwen35-2b-r2r-quarter-step1000 (este) | 2,72 B | 4.096 tokens (entrenamiento) | no disponible para este checkpoint | Apache-2.0 | Hugging Face, 0 descargas |
+| agentvln-qwen35-2b-r2r-quarter-step500 (hermano) | mismo base | 4.096 tokens | 27/27 formato, tasa de exito 0 en 3 episodios | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3.5-2B (base) | 2,27 B segun model card | no disponible | no disponible | Apache-2.0 | Hugging Face |
 
 Comparativas con otros modelos de VLN (por ejemplo, aproximaciones basadas en Qwen3-VL u otros agentes de navegacion): no disponible.
 
@@ -106,7 +106,7 @@ Comparativas con otros modelos de VLN (por ejemplo, aproximaciones basadas en Qw
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cyhoaoen/agentvln-qwen35-2b-r2r-quarter-step1000
+- Modelo en Hugging Face: https://huggingface.co/cyhoaoen/agentvln-qwen35-2b-r2r-quarter-step1000
 - Checkpoint hermano (paso 500): https://huggingface.co/cyhoaoen/agentvln-qwen35-2b-r2r-quarter-step500
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Dataset de entrenamiento: https://huggingface.co/datasets/allenxinn/AgentVLN-Instruct

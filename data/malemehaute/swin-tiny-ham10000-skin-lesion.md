@@ -30,7 +30,7 @@ El entrenamiento se realizo sobre HAM10000, un conjunto de 10.015 imagenes derma
 ## Capacidades
 
 - Clasificacion de imagenes dermatoscopicas en siete clases diagnosticas de lesiones cutaneas, correspondientes al esquema de etiquetado de HAM10000.
-- Inferencia de una unica etiqueta por imagen a traves del pipeline `image-classification` de HuggingFace.
+- Inferencia de una unica etiqueta por imagen a traves del pipeline `image-classification` de Hugging Face.
 - Evaluacion de robustez fuera de dominio sobre al menos dos conjuntos adicionales (PAD-UFES-20 y Fitzpatrick17k), segun indica el autor.
 - Generacion de texto: no disponible (modelo exclusivamente de vision).
 - Tool calling o function calling: no disponible.
@@ -72,7 +72,7 @@ No se han publicado resultados desglosados por clase, matrices de confusion, cur
 
 | Modelo | Arquitectura | Tarea | Metricas publicadas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| malemehaute/swin-tiny-ham10000-skin-lesion | Swin Transformer Tiny | Clasificacion de 7 clases en HAM10000 | F1 macro 0,715; recall macro maligno 0,767 | MIT | HuggingFace, 0 descargas |
+| malemehaute/swin-tiny-ham10000-skin-lesion | Swin Transformer Tiny | Clasificacion de 7 clases en HAM10000 | F1 macro 0,715; recall macro maligno 0,767 | MIT | Hugging Face, 0 descargas |
 | Baseline CLIP zero-shot citado por el autor | CLIP | Clasificacion en HAM10000 | no disponible (referenciado en la seccion 9.1 del proyecto) | no disponible | no disponible |
 | Clasificadores EfficientNet sobre HAM10000 | CNN | Clasificacion de 7 clases | no disponible | variable | multiples implementaciones publicas sin ficha verificada |
 
@@ -92,7 +92,7 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/malemehaute/swin-tiny-ham10000-skin-lesion
+- Modelo en Hugging Face: https://huggingface.co/malemehaute/swin-tiny-ham10000-skin-lesion
 - Paper original de Swin Transformer: https://arxiv.org/abs/2103.14030
 - Dataset HAM10000: https://doi.org/10.1038/sdata.2018.161
 - Dataset PAD-UFES-20: no disponible en la informacion proporcionada

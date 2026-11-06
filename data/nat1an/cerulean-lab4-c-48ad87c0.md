@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nat1an/cerulean-lab4-c-48ad87c0 es un checkpoint de generacion de texto publicado en HuggingFace por el usuario Nat1an, etiquetado con la arquitectura gpt2 y con 124.475.904 parametros segun los pesos en safetensors del repositorio. El nombre ("cerulean-lab4") y el sufijo hash sugieren un experimento de laboratorio o un entrenamiento de prueba, no un modelo de produccion con documentacion asociada. El repositorio tiene un tamano de 0,5 GB, lo que es coherente con pesos en precision completa o media para ese numero de parametros.
+Nat1an/cerulean-lab4-c-48ad87c0 es un checkpoint de generacion de texto publicado en Hugging Face por el usuario Nat1an, etiquetado con la arquitectura gpt2 y con 124.475.904 parametros segun los pesos en safetensors del repositorio. El nombre ("cerulean-lab4") y el sufijo hash sugieren un experimento de laboratorio o un entrenamiento de prueba, no un modelo de produccion con documentacion asociada. El repositorio tiene un tamano de 0,5 GB, lo que es coherente con pesos en precision completa o media para ese numero de parametros.
 
 El modelo no incluye model card util: la tarjeta es la plantilla automatica de transformers con practicamente todos los campos marcados como "More Information Needed". No se especifican licencia, idiomas, datos de entrenamiento, hiperparametros ni resultados de evaluacion. Tampoco hay paper tecnico asociado; el unico arXiv presente en las etiquetas (1910.09700) corresponde a Lacoste et al. sobre emisiones de carbono, citado en la plantilla por defecto y no como referencia del modelo.
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU recomendadas: cualquier GPU con al menos 1-2 GB de VRAM libre es suficiente; por ejemplo GTX 1650, RTX 3060, RTX 4090, T4, A10, L4, A100 o H100. El modelo esta muy por debajo del limite de estas tarjetas.
 - Inferencia en CPU: viable en procesadores de consumo con transformers o llama.cpp, ya que el modelo cabe holgadamente en memoria RAM.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU dedicada de los ultimos ocho anos e incluso en iGPU con suficiente memoria compartida.
-- Opciones de despliegue: transformers (soporte nativo), text-generation-inference (etiqueta declarada), vLLM, llama.cpp y Ollama previa conversion de los pesos a GGUF, y cualquier endpoint compatible con la API de HuggingFace (etiqueta `endpoints_compatible`).
+- Opciones de despliegue: transformers (soporte nativo), text-generation-inference (etiqueta declarada), vLLM, llama.cpp y Ollama previa conversion de los pesos a GGUF, y cualquier endpoint compatible con la API de Hugging Face (etiqueta `endpoints_compatible`).
 - Latencia y throughput: no disponible. No hay mediciones publicadas para este checkpoint concreto.
 - Fine-tuning: el ajuste completo es factible en una unica GPU de consumo; no se documentan recetas de LoRA ni QLoRA por parte del autor.
 
@@ -76,9 +76,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Nat1an/cerulean-lab4-c-48ad87c0 | 124,5 M | no disponible | no disponible | HuggingFace, 0 descargas | Sin model card ni evaluacion; checkpoint de laboratorio |
+| Nat1an/cerulean-lab4-c-48ad87c0 | 124,5 M | no disponible | no disponible | Hugging Face, 0 descargas | Sin model card ni evaluacion; checkpoint de laboratorio |
 | GPT-2 small (OpenAI) | 124 M | 1024 tokens | MIT (pesos publicados por OpenAI) | Muy extendida, multiples mirrors | Referencia de la familia; ampliamente evaluado y con tooling consolidado |
-| DistilGPT-2 | 82 M | 1024 tokens | Apache 2.0 (segun publicacion de HuggingFace) | Muy extendida | Version destilada, mas rapida, pensada para generacion ligera |
+| DistilGPT-2 | 82 M | 1024 tokens | Apache 2.0 (segun publicacion de Hugging Face) | Muy extendida | Version destilada, mas rapida, pensada para generacion ligera |
 | GPT-2 medium (OpenAI) | 355 M | 1024 tokens | MIT (pesos publicados por OpenAI) | Extendida | Mayor capacidad que GPT-2 small a costa de mas VRAM |
 
 Los datos de contexto y licencia de los modelos de comparacion corresponden a sus especificaciones publicas habituales; los de este checkpoint no estan confirmados. No se dispone de comparaciones de rendimiento porque no hay benchmarks publicados para el modelo objeto de la ficha.
@@ -97,7 +97,7 @@ Los datos de contexto y licencia de los modelos de comparacion corresponden a su
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nat1an/cerulean-lab4-c-48ad87c0
+- Modelo en Hugging Face: https://huggingface.co/Nat1an/cerulean-lab4-c-48ad87c0
 - Modelo hermano de la misma serie: https://huggingface.co/Nat1an/cerulean-lab4-a-0eb67c28
 - Endpoint de inferencia en FriendliAI: https://friendli.ai/models/Nat1an/cerulean-lab4
 - Perfil de GitHub del autor: https://github.com/Nat1anWasTaken

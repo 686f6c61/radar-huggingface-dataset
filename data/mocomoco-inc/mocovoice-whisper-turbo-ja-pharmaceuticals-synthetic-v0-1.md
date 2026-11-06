@@ -97,7 +97,7 @@ La comparativa se limita al modelo base y a Whisper large-v3, ya que no se dispo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mocomoco-inc/mocovoice-whisper-turbo-ja-pharmaceuticals-synthetic-v0.1
+- Repositorio Hugging Face: https://huggingface.co/mocomoco-inc/mocovoice-whisper-turbo-ja-pharmaceuticals-synthetic-v0.1
 - Producto mocoVoice (ingles): https://products.mocomoco.ai/en/
 - Producto mocoVoice (japones): https://products.mocomoco.ai/
 - Noticias de mocomoco inc.: https://www.mocomoco.ai/en/

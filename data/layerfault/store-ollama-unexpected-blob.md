@@ -68,7 +68,7 @@ No disponible. No existen modelos comparables porque este repositorio no es un m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/LayerFault/store-ollama-unexpected-blob
+- Repositorio en Hugging Face: https://huggingface.co/LayerFault/store-ollama-unexpected-blob
 - Proyecto Layerfault (GitHub): https://github.com/izm1chael/layerfault
 - Documentación de arquitectura de almacenamiento de Ollama: https://deepwiki.com/ollama/ollama/2.4-storage-and-blob-transfer
 - Documentación de registro de modelos y capas de Ollama: https://deepwiki.com/ollama/ollama/4.2-model-registry-and-layers

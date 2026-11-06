@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos. La compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aplominski/TinyTransformer-Pre-LayerNorm-5M-TinyStories
+- Modelo en Hugging Face: https://huggingface.co/aplominski/TinyTransformer-Pre-LayerNorm-5M-TinyStories
 - Dataset TinyStories: https://huggingface.co/datasets/roneneldan/TinyStories
 - Paper TinyStories: https://arxiv.org/abs/2305.07759
 - Paper Attention Is All You Need: https://arxiv.org/abs/1706.03762

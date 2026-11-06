@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`wz7475/qwen2.5-7b-instruct-katcher-legal-sftmix-oasst1-every40` es un fine-tune publicado en HuggingFace por el usuario wz7475. El identificador del repositorio indica que se parte de Qwen2.5-7B-Instruct y que se ha aplicado un ajuste supervisado (SFT) sobre una mezcla de datos de dominio legal ("katcher-legal-sftmix") combinada con el dataset OASST1 muestreado cada 40 elementos o pasos ("oasst1-every40"). El modelo se publica en formato Transformers con pesos safetensors.
+`wz7475/qwen2.5-7b-instruct-katcher-legal-sftmix-oasst1-every40` es un fine-tune publicado en Hugging Face por el usuario wz7475. El identificador del repositorio indica que se parte de Qwen2.5-7B-Instruct y que se ha aplicado un ajuste supervisado (SFT) sobre una mezcla de datos de dominio legal ("katcher-legal-sftmix") combinada con el dataset OASST1 muestreado cada 40 elementos o pasos ("oasst1-every40"). El modelo se publica en formato Transformers con pesos safetensors.
 
 Se trata por tanto de un ajuste de especialización vertical: no introduce una arquitectura nueva, sino que reutiliza la base de Qwen2.5-7B-Instruct (transformer decoder-only de 7,61 mil millones de parámetros con GQA y contexto largo) para desplazar el comportamiento hacia tareas jurídicas, presumiblemente conservando parte de la capacidad conversacional general gracias a la mezcla con OASST1. La relevancia práctica está en que permite disponer de un modelo legal en tamaño medio (7B), desplegable en una sola GPU, en lugar de recurrir a modelos de decenas o cientos de miles de millones de parámetros.
 
-La model card del repositorio es la plantilla automática de HuggingFace y no ha sido cumplimentada: no declara licencia, idiomas, pipeline, datos de entrenamiento ni hiperparámetros. El tamaño del repositorio es de solo 0,3 GB, lo que resulta incompatible con un checkpoint completo de 7B en bf16 (que ocuparía del orden de 15 GB); esto sugiere que el repositorio contiene únicamente un adaptador LoRA, un subconjunto de pesos o una carga incompleta, extremo que no puede confirmarse con la información disponible.
+La model card del repositorio es la plantilla automática de Hugging Face y no ha sido cumplimentada: no declara licencia, idiomas, pipeline, datos de entrenamiento ni hiperparámetros. El tamaño del repositorio es de solo 0,3 GB, lo que resulta incompatible con un checkpoint completo de 7B en bf16 (que ocuparía del orden de 15 GB); esto sugiere que el repositorio contiene únicamente un adaptador LoRA, un subconjunto de pesos o una carga incompleta, extremo que no puede confirmarse con la información disponible.
 
 ## Especificaciones tecnicas
 
@@ -81,8 +81,8 @@ La comparativa se establece con los modelos base de la misma categoria, ya que n
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| wz7475/qwen2.5-7b-instruct-katcher-legal-sftmix-oasst1-every40 | No disponible (base 7,61B) | No disponible (base 131.072) | No disponible | Repositorio HuggingFace con 0 descargas y 0 likes |
-| Qwen2.5-7B-Instruct | 7,61B | 131.072 tokens | Apache 2.0 (salvo excepciones por tamano; el 7B es Apache 2.0) | Ampliamente disponible en HuggingFace, Ollama, vLLM |
+| wz7475/qwen2.5-7b-instruct-katcher-legal-sftmix-oasst1-every40 | No disponible (base 7,61B) | No disponible (base 131.072) | No disponible | Repositorio Hugging Face con 0 descargas y 0 likes |
+| Qwen2.5-7B-Instruct | 7,61B | 131.072 tokens | Apache 2.0 (salvo excepciones por tamano; el 7B es Apache 2.0) | Ampliamente disponible en Hugging Face, Ollama, vLLM |
 | Llama-3.1-8B-Instruct | 8,03B | 128.000 tokens | Llama 3.1 Community License | Ampliamente disponible |
 | Mistral-7B-Instruct-v0.3 | 7,25B | 32.000 tokens | Apache 2.0 | Ampliamente disponible |
 
@@ -103,7 +103,7 @@ No se dispone de datos de benchmarks que permitan afirmar que este fine-tune sup
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-sftmix-oasst1-every40
+- Repositorio Hugging Face: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-sftmix-oasst1-every40
 - Modelo base de referencia: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Dataset OpenAssistant OASST1: https://huggingface.co/datasets/OpenAssistant/oasst1
 - Paper citado en las etiquetas del repositorio (Lacoste et al., 2019, sobre emisiones de carbono en aprendizaje automatico): https://arxiv.org/abs/1910.09700

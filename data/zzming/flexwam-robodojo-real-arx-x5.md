@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FlexWAM-RoboDojo-Real-ARX-X5 es un modelo publicado en HuggingFace por el usuario Zzming bajo licencia Apache 2.0. Por el identificador del repositorio, el modelo parece estar vinculado a FlexWAM (presumiblemente un framework de "World Action Models" o similar) y a RoboDojo, junto con la referencia "Real-ARX-X5", que apunta al brazo robótico ARX X5 de la firma ARX Robotics. Esto sugiere que se trata de un modelo orientado a robótica y control de manipulación, probablemente entrenado para políticas de acción sobre observaciones visuales.
+FlexWAM-RoboDojo-Real-ARX-X5 es un modelo publicado en Hugging Face por el usuario Zzming bajo licencia Apache 2.0. Por el identificador del repositorio, el modelo parece estar vinculado a FlexWAM (presumiblemente un framework de "World Action Models" o similar) y a RoboDojo, junto con la referencia "Real-ARX-X5", que apunta al brazo robótico ARX X5 de la firma ARX Robotics. Esto sugiere que se trata de un modelo orientado a robótica y control de manipulación, probablemente entrenado para políticas de acción sobre observaciones visuales.
 
 La model card publicada no contiene más información que la declaración de licencia Apache 2.0. No se incluyen detalles sobre arquitectura, tamaño, datos de entrenamiento, capacidades ni resultados de evaluación. El repositorio registra cero descargas y cero likes en el momento de la consulta, y no tiene pipeline declarado, lo que indica que es una publicación reciente o de baja difusión.
 
@@ -75,5 +75,5 @@ No disponible. No se conocen modelos comparables en la misma categoría a partir
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Zzming/FlexWAM-RoboDojo-Real-ARX-X5
+- Hugging Face: https://huggingface.co/Zzming/FlexWAM-RoboDojo-Real-ARX-X5
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

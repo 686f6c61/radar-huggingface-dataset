@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLM-5.3 es un modelo de lenguaje de gran escala desarrollado por Z.ai (organización zai-org, responsable del repositorio oficial GLM-5) y distribuido en HuggingFace. La ficha analizada corresponde al repositorio `konizquants/GLM-5.3`, que aloja pesos en safetensors con un total de 753.329.940.480 parámetros (unos 753,3 mil millones) y un tamaño de repositorio de 755,7 GB, coherente con pesos almacenados en FP8 (aproximadamente 1 byte por parámetro). La clase de arquitectura declarada en los tags es `glm_moe_dsa`, lo que indica un transformer con mezcla de expertos (MoE).
+GLM-5.3 es un modelo de lenguaje de gran escala desarrollado por Z.ai (organización zai-org, responsable del repositorio oficial GLM-5) y distribuido en Hugging Face. La ficha analizada corresponde al repositorio `konizquants/GLM-5.3`, que aloja pesos en safetensors con un total de 753.329.940.480 parámetros (unos 753,3 mil millones) y un tamaño de repositorio de 755,7 GB, coherente con pesos almacenados en FP8 (aproximadamente 1 byte por parámetro). La clase de arquitectura declarada en los tags es `glm_moe_dsa`, lo que indica un transformer con mezcla de expertos (MoE).
 
 La característica principal de esta versión es que reutiliza la misma base de GLM-5.2: todas las mejoras declaradas provienen del post-entrenamiento, no de cambios en el modelo base. Según la model card, GLM-5.3 es "el modelo de pesos abiertos más capaz para programación", con una mejora del 50 % sobre GLM-5.2 en el benchmark interno Z.ai Code Bench, y alcanza estado del arte en pesos abiertos en Terminal Bench 3.0 y Agents' Last Exam. Además, el autor documenta una capacidad emergente en ciberseguridad: lidera CyberGym en descubrimiento de vulnerabilidades y supera en más del doble a GLM-5.2 en benchmarks de explotación.
 
@@ -94,7 +94,7 @@ Notas de evaluacion recogidas en la model card: HLE con herramientas se mide con
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Terminal Bench 3.0 | DeepSWE v1.1 | CyberGym |
 |---|---|---|---|---|---|---|---|
-| GLM-5.3 | 753,3 B (repo safetensors, FP8) | no declarado; hasta 1M en evaluaciones | `glm-5.3` (other) | Pesos abiertos en HuggingFace (repo `konizquants/GLM-5.3`) | 28,3 | 66,9 | 84,5 |
+| GLM-5.3 | 753,3 B (repo safetensors, FP8) | no declarado; hasta 1M en evaluaciones | `glm-5.3` (other) | Pesos abiertos en Hugging Face (repo `konizquants/GLM-5.3`) | 28,3 | 66,9 | 84,5 |
 | GLM-5.2 | no disponible | no disponible | no disponible | predecesor, mismo base model | 4,6 | 46,2 | 77,2 |
 | Kimi K3 | no disponible | no disponible | no disponible | no disponible | 17,4 | 67,5 | 80,0 |
 | DeepSeek-V4 Pro-0813 | no disponible | no disponible | no disponible | no disponible | – | 62,7 | 83,3 |
@@ -118,7 +118,7 @@ Salvo en Terminal Bench 3.0, donde GPT-5.6 Sol (34,6) y Fable 5 (33,7) superan a
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/konizquants/GLM-5.3
+- Hugging Face: https://huggingface.co/konizquants/GLM-5.3
 - Repositorio oficial GLM-5 (zai-org): https://github.com/zai-org/GLM-5
 - Documentacion de transformers para `glm_moe_dsa`: https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/glm_moe_dsa.md
 - Referencia arXiv citada en los tags: arxiv:2602.15763

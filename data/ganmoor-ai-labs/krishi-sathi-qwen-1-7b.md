@@ -71,7 +71,7 @@ No se dispone de datos comparativos publicados con otros modelos agrícolas o as
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ganmoor-ai-labs/krishi-sathi-qwen-1.7b
+- Modelo en Hugging Face: https://huggingface.co/ganmoor-ai-labs/krishi-sathi-qwen-1.7b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Versión alternativa basada en Sarvam-1: https://huggingface.co/ganmoor-ai-labs/krishi-sathi-sarvam-2b
 - Repositorio de IndicTrans2 (traductor): https://huggingface.co/prajdabre/rotary-indictrans2-en-indic-1B

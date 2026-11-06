@@ -74,7 +74,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio HuggingFace de la conversión GGUF: https://huggingface.co/TizzyT566/Ornith-1.5-35B-A3B-NVFP4-512K-GGUF
+- Repositorio Hugging Face de la conversión GGUF: https://huggingface.co/TizzyT566/Ornith-1.5-35B-A3B-NVFP4-512K-GGUF
 - Modelo base original: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-NVFP4
 - Página oficial de Ornith-1.5: https://ornith.ai/ornith_1_5.html
 - Repositorio GitHub de Ornith-1: https://github.com/ornith-ai/Ornith-1

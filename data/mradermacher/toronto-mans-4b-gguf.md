@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Toronto-Mans-4B-GGUF es un conjunto de cuantizaciones en formato GGUF del modelo devon7y/Toronto-Mans-4B, publicadas por el usuario mradermacher, especializado en la conversion de pesos a formatos ligeros para inferencia local. El modelo subyacente es un ajuste fino de tipo LoRA orientado a persona y chat, entrenado con el dataset devon7y/toronto-slang-lexicon y etiquetado en HuggingFace con la familia qwen3.5. El resultado es un modelo conversacional de aproximadamente 4.200 millones de parametros que reproduce el registro linguistico del ingles multicultural de Toronto, incluyendo jerga y expresiones locales.
+Toronto-Mans-4B-GGUF es un conjunto de cuantizaciones en formato GGUF del modelo devon7y/Toronto-Mans-4B, publicadas por el usuario mradermacher, especializado en la conversion de pesos a formatos ligeros para inferencia local. El modelo subyacente es un ajuste fino de tipo LoRA orientado a persona y chat, entrenado con el dataset devon7y/toronto-slang-lexicon y etiquetado en Hugging Face con la familia qwen3.5. El resultado es un modelo conversacional de aproximadamente 4.200 millones de parametros que reproduce el registro linguistico del ingles multicultural de Toronto, incluyendo jerga y expresiones locales.
 
 El repositorio no aporta un modelo nuevo desde el punto de vista arquitectonico: su valor esta en ofrecer doce variantes de cuantizacion (desde Q2_K de 2,0 GB hasta f16 de 8,5 GB) que permiten ejecutar el modelo en hardware de consumo, desde tarjetas graficas con 4 GB de VRAM hasta equipos de sobremesa con GPU de gama alta. Esto lo convierte en una pieza util para quien quiera experimentar con modelos de persona dialectal sin depender de infraestructura en la nube.
 
@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
 | Toronto-Mans-4B-GGUF | 4,2 B | no disponible | apache-2.0 (enlace a Qwen3.5-4B) | GGUF en este repo; safetensors en el modelo base | Persona y jerga de Toronto; 0 descargas y 0 likes en el momento de la consulta |
-| devon7y/Toronto-Mans-4B | 4,2 B | no disponible | apache-2.0 | HuggingFace (modelo original) | Version sin cuantizar, base de este repositorio |
-| Qwen3.5-4B | no disponible en la informacion | no disponible | licencia propia de Qwen (referenciada) | HuggingFace | Modelo base del ajuste segun el enlace de licencia y el tag qwen3.5 |
-| Llama 3.2 3B Instruct | 3,2 B | 128 K segun su documentacion publica | Llama 3.2 Community License | HuggingFace y multiples cuantizaciones GGUF | Alternativa generalista de tamano similar, sin especializacion dialectal |
+| devon7y/Toronto-Mans-4B | 4,2 B | no disponible | apache-2.0 | Hugging Face (modelo original) | Version sin cuantizar, base de este repositorio |
+| Qwen3.5-4B | no disponible en la informacion | no disponible | licencia propia de Qwen (referenciada) | Hugging Face | Modelo base del ajuste segun el enlace de licencia y el tag qwen3.5 |
+| Llama 3.2 3B Instruct | 3,2 B | 128 K segun su documentacion publica | Llama 3.2 Community License | Hugging Face y multiples cuantizaciones GGUF | Alternativa generalista de tamano similar, sin especializacion dialectal |
 
 Los datos de contexto y licencia de Llama 3.2 3B Instruct proceden de su documentacion publica y no de la informacion proporcionada en esta busqueda.
 

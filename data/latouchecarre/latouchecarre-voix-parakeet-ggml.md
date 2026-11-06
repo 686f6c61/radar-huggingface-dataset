@@ -94,7 +94,7 @@ Frente a otras familias de ASR (por ejemplo, Whisper en formato ggml), no se dis
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/LaToucheCarre/LaToucheCarre-Voix-Parakeet-GGML
+- Repositorio en Hugging Face: https://huggingface.co/LaToucheCarre/LaToucheCarre-Voix-Parakeet-GGML
 - Modelo base: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Repositorio de cuantizaciones upstream: https://huggingface.co/ggml-org/parakeet-GGUF
 - whisper.cpp (incluye `parakeet-cli`): https://github.com/ggml-org/whisper.cpp

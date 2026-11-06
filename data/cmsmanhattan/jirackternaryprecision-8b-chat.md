@@ -120,6 +120,6 @@ El modelo ternario de 16B de la misma familia obtiene 77,4% / 57,8% en los mismo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CMSManhattan/JiRackTernaryPrecision-8B-chat
+- Modelo en Hugging Face: https://huggingface.co/CMSManhattan/JiRackTernaryPrecision-8B-chat
 - Demo en HF Spaces: https://huggingface.co/spaces/CMSManhattan/JiRack-8B-Chat
 - Modelo base: https://huggingface.co/CMSManhattan/JiRackUltra_7b

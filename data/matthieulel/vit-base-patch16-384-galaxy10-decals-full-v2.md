@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`vit-base-patch16-384-galaxy10-decals-full-v2` es un modelo de clasificación de imágenes especializado en morfología de galaxias, desarrollado por el usuario de HuggingFace `matthieulel` como parte de una colección de 80 configuraciones (40 backbones preentrenados × dos regímenes de adaptación) para el benchmark de modelos fundacionales de visión aplicados a datos astronómicos. Se trata de un fine-tuning completo de `google/vit-base-patch16-384`, un Vision Transformer de 86 millones de parámetros que procesa imágenes de 384×384 píxeles divididas en parches de 16×16.
+`vit-base-patch16-384-galaxy10-decals-full-v2` es un modelo de clasificación de imágenes especializado en morfología de galaxias, desarrollado por el usuario de Hugging Face `matthieulel` como parte de una colección de 80 configuraciones (40 backbones preentrenados × dos regímenes de adaptación) para el benchmark de modelos fundacionales de visión aplicados a datos astronómicos. Se trata de un fine-tuning completo de `google/vit-base-patch16-384`, un Vision Transformer de 86 millones de parámetros que procesa imágenes de 384×384 píxeles divididas en parches de 16×16.
 
 El modelo resuelve la clasificación en 10 clases de morfología galáctica sobre el dataset Galaxy10 DECaLS, con un conjunto de test reservado de 1.774 imágenes. Alcanza un 85,34 % de accuracy y un F1 ponderado de 85,05 % en la época seleccionada (época 10 de 30), con una media de 85,36 ± 0,20 % sobre tres semillas. Es relevante porque forma parte de un estudio sistemático y reproducible que compara modelos fundacionales de visión en un dominio científico concreto, con protocolo de entrenamiento idéntico para todos los backbones y métricas por época publicadas.
 
@@ -45,7 +45,7 @@ El entrenamiento consistió en un fine-tuning completo (todos los parámetros ac
 - Benchmark y comparación de backbones: al formar parte de una colección de 80 configuraciones con protocolo idéntico, sirve como referencia reproducible para evaluar otros modelos fundacionales de visión en el mismo dominio.
 - Docencia y experimentación en visión por computador aplicada a astronomía: el checkpoint y las métricas por época permiten reproducir el entrenamiento y estudiar curvas de convergencia y sobreajuste en un dataset real.
 - Punto de partida para fine-tuning en dominios astronómicos relacionados: al ser un ViT-Base estándar con licencia Apache 2.0, puede reentrenarse sobre otros datasets de imágenes celestes con recetas similares.
-- Integración en servicios de inferencia de imágenes: el modelo es compatible con endpoints de HuggingFace y con `transformers`, lo que permite exponerlo como API de clasificación para aplicaciones de visualización astronómica.
+- Integración en servicios de inferencia de imágenes: el modelo es compatible con endpoints de Hugging Face y con `transformers`, lo que permite exponerlo como API de clasificación para aplicaciones de visualización astronómica.
 
 ## Benchmarks y rendimiento
 
@@ -66,7 +66,7 @@ No se han publicado en la información disponible resultados comparativos con ot
 - VRAM estimada en fp16/bf16: aproximadamente 0,17 GB para pesos, más activaciones; cabe holgadamente en cualquier GPU consumer.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM; RTX 3060, RTX 4060, RTX 4090, A100 o H100 funcionan sin problema. Para entrenamiento completo, se usó una sola GPU (modelo pequeño).
 - Cabe en GPU consumer: sí, en cualquier GPU moderna con 4 GB o más; incluso en CPU es viable para inferencia por lotes moderados.
-- Opciones de despliegue: `transformers` (PyTorch), endpoints de HuggingFace (tag `endpoints_compatible`), exportación a ONNX o TorchScript para servir con FastAPI/Triton. No se documenta soporte nativo de llama.cpp, Ollama o vLLM (orientados a modelos de lenguaje).
+- Opciones de despliegue: `transformers` (PyTorch), endpoints de Hugging Face (tag `endpoints_compatible`), exportación a ONNX o TorchScript para servir con FastAPI/Triton. No se documenta soporte nativo de llama.cpp, Ollama o vLLM (orientados a modelos de lenguaje).
 - Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
@@ -93,7 +93,7 @@ No se dispone en la información proporcionada de resultados de otros modelos co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matthieulel/vit-base-patch16-384-galaxy10-decals-full-v2
+- Modelo en Hugging Face: https://huggingface.co/matthieulel/vit-base-patch16-384-galaxy10-decals-full-v2
 - Modelo base: https://huggingface.co/google/vit-base-patch16-384
 - Dataset Galaxy10 DECaLS: https://huggingface.co/datasets/matthieulel/galaxy10_decals
 - Dataset de ejecuciones del benchmark: https://huggingface.co/datasets/matthieulel/vision-foundation-models-benchmark-runs

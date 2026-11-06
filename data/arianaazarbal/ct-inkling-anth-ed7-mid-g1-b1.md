@@ -88,7 +88,7 @@ No disponible. No se han proporcionado datos de parametros, contexto, rendimient
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arianaazarbal/ct-inkling-anth-ed7-mid-g1-b1
+- Modelo en Hugging Face: https://huggingface.co/arianaazarbal/ct-inkling-anth-ed7-mid-g1-b1
 - Modelo base: https://huggingface.co/thinkingmachines/Inkling-Small
 - Ruta original de entrenamiento en Tinker (referencia interna, no verificable publicamente): `tinker://ba0cc5ec-56f6-5c41-a2ab-38ff078089fe:train:0/sampler_weights/inkanthed7g1_inkanthed7_g1_b1_s1_final`
 - La busqueda web realizada no devolvio ningun enlace relevante sobre este modelo: los resultados obtenidos correspondian a paginas turisticas sobre la localidad griega de Amarynthos y no guardan relacion con el artefacto.

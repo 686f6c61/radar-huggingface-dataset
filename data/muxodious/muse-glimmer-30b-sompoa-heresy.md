@@ -70,9 +70,9 @@ No se han publicado resultados para otros benchmarks (MMLU, HumanEval, GSM8K, et
 
 | Modelo | Parametros | Contexto | Licencia | Censura | Disponibilidad |
 |---|---|---|---|---|---|
-| Muse-Glimmer-30B-SOMPOA-heresy | 29.8B | No disponible | Apache 2.0 | Sin censura (abliterado) | HuggingFace |
-| Muse-Glimmer-30B (Meta) | 29.8B | No disponible | Apache 2.0 | Con censura | HuggingFace, Meta |
-| Dolphin 2.9.1 Llama 3.1 8B | 8B | 128K | Apache 2.0 | Sin censura | HuggingFace |
+| Muse-Glimmer-30B-SOMPOA-heresy | 29.8B | No disponible | Apache 2.0 | Sin censura (abliterado) | Hugging Face |
+| Muse-Glimmer-30B (Meta) | 29.8B | No disponible | Apache 2.0 | Con censura | Hugging Face, Meta |
+| Dolphin 2.9.1 Llama 3.1 8B | 8B | 128K | Apache 2.0 | Sin censura | Hugging Face |
 
 No se dispone de datos de comparacion directa de rendimiento con otros modelos "uncensored" en la informacion proporcionada. La comparativa se limita a caracteristicas generales.
 
@@ -87,7 +87,7 @@ No se dispone de datos de comparacion directa de rendimiento con otros modelos "
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MuXodious/Muse-Glimmer-30B-SOMPOA-heresy
+- Modelo en Hugging Face: https://huggingface.co/MuXodious/Muse-Glimmer-30B-SOMPOA-heresy
 - Repositorio de Heretic: https://github.com/p-e-w/heretic
 - Pull request de SOMPOA: https://github.com/p-e-w/heretic/pull/196
 - Pagina de Muse Glimmer en Meta: https://developer.meta.com/ai/models/muse-glimmer/

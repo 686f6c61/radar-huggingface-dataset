@@ -44,7 +44,7 @@ El objetivo pondera por igual la entropía cruzada de respuesta segura ante prom
 - Estudio de metodologías de SVD sesgada: replicar la ponderación 1:1 entre entropía cruzada de respuesta segura y de respuesta útil, y comparar con variantes Fisher-aware completas que el autor deja como trabajo futuro.
 - Análisis de degradación por compresión: usar `compression.json` con los diagnósticos por matriz para correlacionar matrices concretas con caídas de coherencia o cambios en la tasa de rechazo.
 - Docencia y formación: ilustrar en cursos de eficiencia de modelos el compromiso entre eliminación nominal de parámetros (40%) y fracción real de parámetros factoriales (0,615424) en un transformer denso.
-- Auditoría de licencias y linaje: estudiar la trazabilidad de checkpoints derivados de Llama 2 y las obligaciones de atribución en artefactos de investigación publicados en HuggingFace.
+- Auditoría de licencias y linaje: estudiar la trazabilidad de checkpoints derivados de Llama 2 y las obligaciones de atribución en artefactos de investigación publicados en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Naturaleza | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jeesup/svd-safety-shifted-l2_mixed_remove0.4_rho0.00000001 | 6.738.415.616 | no disponible | Checkpoint de investigación con SVD sesgada a seguridad, sin recuperación | llama2 | HuggingFace, 11 descargas |
-| meta-llama/Llama-2-7b-chat-hf | 6.738.415.616 | 4.096 tokens (modelo base) | Modelo de chat alineado con RLHF | llama2 | HuggingFace, ampliamente desplegado |
+| Jeesup/svd-safety-shifted-l2_mixed_remove0.4_rho0.00000001 | 6.738.415.616 | no disponible | Checkpoint de investigación con SVD sesgada a seguridad, sin recuperación | llama2 | Hugging Face, 11 descargas |
+| meta-llama/Llama-2-7b-chat-hf | 6.738.415.616 | 4.096 tokens (modelo base) | Modelo de chat alineado con RLHF | llama2 | Hugging Face, ampliamente desplegado |
 | Modelos de compresión SVD genérica sobre Llama 2 | variable | heredado | Compresión sin sesgo de seguridad | llama2 | Depende del autor; no disponible un comparable exacto en la información proporcionada |
 
 La comparación directa más útil es contra el modelo base sin comprimir: este checkpoint elimina nominalmente el 40% de los parámetros de proyección, pero publica pesos densos plegados, de modo que el tamaño en disco y en VRAM es prácticamente idéntico al original. La ventaja, si existe, es analítica (menor rango subyacente), no de despliegue.
@@ -84,7 +84,7 @@ La comparación directa más útil es contra el modelo base sin comprimir: este 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-shifted-l2_mixed_remove0.4_rho0.00000001
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-shifted-l2_mixed_remove0.4_rho0.00000001
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Licencia Llama 2: https://ai.meta.com/llama/license/
 - No se han encontrado en la información proporcionada enlaces a papers, blogs, repositorios de código o demos adicionales del autor.

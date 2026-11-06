@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento comparativo con otros modelos de tamano si
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/pyros-vault/Qwen3.8-27B-Uncensored-NInfer
+- Repositorio Hugging Face del modelo: https://huggingface.co/pyros-vault/Qwen3.8-27B-Uncensored-NInfer
 - Modelo base (orcarouter): https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored
 - Modelo original Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Motor NInfer: https://github.com/Neroued/ninfer

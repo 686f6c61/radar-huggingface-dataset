@@ -91,7 +91,7 @@ Esta comparación se basa en características públicas conocidas de los modelos
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/mradermacher/granite-4.2-3b-GGUF
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/mradermacher/granite-4.2-3b-GGUF
 - Modelo original de IBM: https://huggingface.co/ibm-granite/granite-4.2-3b
 - Documentación oficial de Granite 4.2: https://www.ibm.com/granite/docs/models/granite4-2
 - Análisis en AI/TLDR: https://ai-tldr.dev/models/granite-4-2-3b/

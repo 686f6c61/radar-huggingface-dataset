@@ -73,5 +73,5 @@ No se dispone de información suficiente para comparar con modelos concretos. La
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SixpertAI/self-scaffolding-rl
+- Repositorio Hugging Face: https://huggingface.co/SixpertAI/self-scaffolding-rl
 - No se proporcionan otros enlaces (papers, blogs, repos, demos) en la información disponible.

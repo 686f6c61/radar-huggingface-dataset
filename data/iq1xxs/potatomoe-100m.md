@@ -2,7 +2,7 @@
 
 ## Resumen
 
-potatoMoE-100M es un modelo publicado en HuggingFace por el usuario iq1xxs bajo licencia Apache 2.0. La informacion disponible se limita a los metadatos del repositorio: no hay pipeline declarado, no se han documentado idiomas soportados, y la model card contiene unicamente el encabezado de licencia, sin descripcion, detalles de entrenamiento ni resultados de evaluacion. El repositorio ocupa 0,5 GB y no registra descargas ni interacciones en el momento de la consulta.
+potatoMoE-100M es un modelo publicado en Hugging Face por el usuario iq1xxs bajo licencia Apache 2.0. La informacion disponible se limita a los metadatos del repositorio: no hay pipeline declarado, no se han documentado idiomas soportados, y la model card contiene unicamente el encabezado de licencia, sin descripcion, detalles de entrenamiento ni resultados de evaluacion. El repositorio ocupa 0,5 GB y no registra descargas ni interacciones en el momento de la consulta.
 
 El identificador del modelo sugiere, por convencion de nomenclatura, una arquitectura de mezcla de expertos (MoE, Mixture of Experts) con un orden de magnitud de 100 millones de parametros, aunque esta interpretacion no esta confirmada por ninguna fuente oficial del propio repositorio. Se trata, por tanto, de un modelo de escala reducida, presumiblemente orientado a experimentacion, prototipado rapido o despliegue en entornos con recursos muy limitados.
 
@@ -68,7 +68,7 @@ Las cifras siguientes son estimaciones basadas en el orden de magnitud de 100 mi
 - VRAM estimada en int4: entre 50 y 75 MB.
 - Cabe con holgura en cualquier GPU de consumo: RTX 3060, RTX 4060, RTX 4090, e incluso en GPUs integradas con memoria compartida suficiente.
 - Tambien es viable en CPU pura con frameworks como llama.cpp u Ollama, siempre que existan pesos en formato GGUF (no confirmado en este repositorio).
-- Opciones de despliegue potenciales: HuggingFace Transformers, vLLM, TGI, llama.cpp y Ollama. La disponibilidad real depende de los formatos de pesos publicados y del uso de un tokenizador compatible.
+- Opciones de despliegue potenciales: Hugging Face Transformers, vLLM, TGI, llama.cpp y Ollama. La disponibilidad real depende de los formatos de pesos publicados y del uso de un tokenizador compatible.
 - Latencia y throughput: no disponibles. En un modelo de esta escala, la latencia en GPU moderna deberia ser de pocos milisegundos por token, pero no hay mediciones publicadas que lo confirmen.
 
 ## Comparativa con modelos similares
@@ -96,5 +96,5 @@ La comparacion carece de base tecnica mientras el autor de potatoMoE-100M no pub
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/iq1xxs/potatoMoE-100M
+- Hugging Face: https://huggingface.co/iq1xxs/potatoMoE-100M
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

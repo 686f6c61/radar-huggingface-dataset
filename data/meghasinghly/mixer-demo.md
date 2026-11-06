@@ -65,7 +65,7 @@ No se puede establecer una comparativa con modelos similares porque no hay infor
 - **Riesgo de alucinación**: no aplica, ya que el modelo no genera texto.
 - **Idiomas**: no se especifica ningún idioma, por lo que no se puede garantizar ningún soporte lingüístico.
 - **Licencia MIT**: permite uso comercial, pero el autor recomienda revisar los términos de los datos externos si se usan datasets de terceros.
-- **Dependencia de un adaptador**: para cargar el modelo con APIs genéricas de HuggingFace se necesita un adaptador explícito, lo que complica su integración en pipelines estándar.
+- **Dependencia de un adaptador**: para cargar el modelo con APIs genéricas de Hugging Face se necesita un adaptador explícito, lo que complica su integración en pipelines estándar.
 - **Riesgo de confusión**: el nombre "Mixer" coincide con otros proyectos (como la API Mixer AI o el generador de 3D Meshy), pero no tiene relación con ellos.
 
 ## Enlaces

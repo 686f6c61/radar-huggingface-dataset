@@ -76,7 +76,7 @@ No se dispone de comparación con modelos de otras familias (como Phi-3.5-vision
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Oscilla/gemma-3n-E2B-it-mlx-8Bit
+- Repositorio Hugging Face: https://huggingface.co/Oscilla/gemma-3n-E2B-it-mlx-8Bit
 - Documentación oficial de Gemma 3n: https://ai.google.dev/gemma/docs/gemma-3n
 - Página del modelo original en LM Studio: https://lmstudio.ai/models/google/gemma-3n-e2b
 - Conversión similar de mlx-community: https://huggingface.co/mlx-community/gemma-3n-E2B-it-8bit

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Gemma 4 31B it ARA heretic es un modelo multimodal de tipo image-text-to-text publicado en HuggingFace por el usuario richardyoung. El identificador del repositorio indica que se trata de una variante de la familia Gemma 4 de Google, en su version instruct (it), con 31 000 millones de parametros, y con el sufijo "ARA-heretic", que en la practica de la comunidad suele indicar un ajuste fino orientado a reducir los rechazos o el alineamiento de seguridad del modelo original (abliteracion o "decensoring"). No obstante, la model card del autor es la plantilla autogenerada por HuggingFace y no aporta ninguna confirmacion de estos extremos.
+Gemma 4 31B it ARA heretic es un modelo multimodal de tipo image-text-to-text publicado en Hugging Face por el usuario richardyoung. El identificador del repositorio indica que se trata de una variante de la familia Gemma 4 de Google, en su version instruct (it), con 31 000 millones de parametros, y con el sufijo "ARA-heretic", que en la practica de la comunidad suele indicar un ajuste fino orientado a reducir los rechazos o el alineamiento de seguridad del modelo original (abliteracion o "decensoring"). No obstante, la model card del autor es la plantilla autogenerada por Hugging Face y no aporta ninguna confirmacion de estos extremos.
 
 El dato objetivo disponible es el recuento de parametros del fichero safetensors: 31 273 086 512 parametros, con un repositorio de 62,6 GB, lo que es coherente con pesos en precision bf16/fp16. La pipeline declarada es image-text-to-text, de modo que el modelo acepta entradas de imagen y texto y genera texto. La libreria es transformers y las etiquetas incluyen gemma4, conversational y endpoints_compatible.
 
@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| richardyoung/gemma-4-31B-it-ARA-heretic | 31,27 B | no disponible | no disponible | HuggingFace, safetensors |
-| Gemma 4 31B it (modelo base de Google) | 31 B (segun denominacion) | no disponible | no disponible en esta ficha | HuggingFace |
+| richardyoung/gemma-4-31B-it-ARA-heretic | 31,27 B | no disponible | no disponible | Hugging Face, safetensors |
+| Gemma 4 31B it (modelo base de Google) | 31 B (segun denominacion) | no disponible | no disponible en esta ficha | Hugging Face |
 | Alternativas de ~30 B de la misma categoria | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos verificados de rendimiento ni de licencia de los modelos comparados en la informacion proporcionada, por lo que la comparativa se limita a parametros y disponibilidad.
@@ -86,6 +86,6 @@ No se dispone de datos verificados de rendimiento ni de licencia de los modelos 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/richardyoung/gemma-4-31B-it-ARA-heretic
+- Hugging Face: https://huggingface.co/richardyoung/gemma-4-31B-it-ARA-heretic
 - Paper citado en los tags (impacto ambiental, Lacoste et al.): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental ML: https://mlco2.github.io/impact#compute

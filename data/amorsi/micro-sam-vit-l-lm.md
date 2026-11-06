@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Arquitectura | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| micro-sam `vit_l_lm` (este) | SAM ViT-L + decoder | no disponible | no aplica | no disponible (remite al original) | HuggingFace (espejo) |
+| micro-sam `vit_l_lm` (este) | SAM ViT-L + decoder | no disponible | no aplica | no disponible (remite al original) | Hugging Face (espejo) |
 | micro-sam `vit_b_lm` | SAM ViT-B + decoder | no disponible | no aplica | no disponible (remite al original) | Repositorio micro-sam |
-| SAM original (ViT-L) | SAM ViT-L | ~300 M (referencia general) | no aplica | Apache 2.0 (SAM original) | Meta / HuggingFace |
+| SAM original (ViT-L) | SAM ViT-L | ~300 M (referencia general) | no aplica | Apache 2.0 (SAM original) | Meta / Hugging Face |
 
 La comparativa se limita a variantes de la misma familia porque no se dispone de datos de rendimiento publicados para este checkpoint concreto. Las cifras de SAM original se incluyen solo como referencia arquitectónica general y no deben interpretarse como equivalentes a este checkpoint.
 
@@ -81,7 +81,7 @@ La comparativa se limita a variantes de la misma familia porque no se dispone de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amorsi/micro-sam-vit-l-lm
+- Hugging Face: https://huggingface.co/amorsi/micro-sam-vit-l-lm
 - Repositorio micro-sam: https://github.com/computational-cell-analytics/micro-sam
 - Registro de hashes en `util.py`: https://github.com/computational-cell-analytics/micro-sam/blob/master/micro_sam/util.py
 - Pesos originales `model.pt`: https://uk1s3.embassy.ebi.ac.uk/public-datasets/bioimage.io/idealistic-rat/1.2/files/vit_l.pt

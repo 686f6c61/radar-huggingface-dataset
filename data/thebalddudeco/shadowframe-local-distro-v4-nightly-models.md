@@ -69,7 +69,7 @@ No disponible. Este repositorio no es un modelo comparable con otros modelos de 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/TheBaldDudeCo/shadowframe-local-distro-v4-nightly-models
+- Repositorio Hugging Face: https://huggingface.co/TheBaldDudeCo/shadowframe-local-distro-v4-nightly-models
 - GitHub del proyecto: https://github.com/thebalddudeco/shadowframe-ai
 - Perfil de GitHub del autor: https://github.com/thebalddudeco
 - Dataset publico relacionado: https://huggingface.co/datasets/TheBaldDudeCo/shadowframe-ai-public-release

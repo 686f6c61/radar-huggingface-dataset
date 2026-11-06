@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| latentMO/cotcontrol-gptoss120b-obfg1c | Adaptador LoRA rango 32 sobre base de 120.000 M (según nombre) | no disponible | Adaptador PEFT de investigación | Apache 2.0 | HuggingFace, 0 descargas |
-| openai/gpt-oss-120b | 120.000 M (según nombre) | no disponible | Modelo base MoE | no disponible en esta ficha | HuggingFace (base del adaptador) |
+| latentMO/cotcontrol-gptoss120b-obfg1c | Adaptador LoRA rango 32 sobre base de 120.000 M (según nombre) | no disponible | Adaptador PEFT de investigación | Apache 2.0 | Hugging Face, 0 descargas |
+| openai/gpt-oss-120b | 120.000 M (según nombre) | no disponible | Modelo base MoE | no disponible en esta ficha | Hugging Face (base del adaptador) |
 | Otros adaptadores del mismo sprint MATS | no disponible | no disponible | LoRA de investigación | no disponible | Repositorio `tricky_little_guys` |
 
 No se dispone de información suficiente para comparar rendimiento con alternativas de la misma categoría.
@@ -81,6 +81,6 @@ No se dispone de información suficiente para comparar rendimiento con alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/latentMO/cotcontrol-gptoss120b-obfg1c
+- Modelo en Hugging Face: https://huggingface.co/latentMO/cotcontrol-gptoss120b-obfg1c
 - Modelo base: https://huggingface.co/openai/gpt-oss-120b
 - Código, configuración y evaluaciones: https://github.com/johntrob14/tricky_little_guys (rutas `cot-control/rl/` y `cot-control/results/rl/obfg1c/`)

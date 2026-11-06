@@ -74,7 +74,7 @@ No se dispone de informacion suficiente para comparar este adaptador con alterna
 
 | Modelo | Tipo | Generacion | Rama | Modelo base | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `ct-inkling-anth-gen-mid-g2-b1` | Adaptador LoRA r=64 | g2 | b1 | `thinkingmachines/Inkling-Small` | No disponible | Publico en HuggingFace, 0 descargas |
+| `ct-inkling-anth-gen-mid-g2-b1` | Adaptador LoRA r=64 | g2 | b1 | `thinkingmachines/Inkling-Small` | No disponible | Publico en Hugging Face, 0 descargas |
 | `thinkingmachines/Inkling-Small` | Modelo completo | no aplica | no aplica | no aplica | No disponible | Base de referencia |
 | Generacion g1 de la misma cadena | Adaptador LoRA | g1 | no disponible | `thinkingmachines/Inkling-Small` | No disponible | No localizado en la informacion proporcionada |
 
@@ -92,7 +92,7 @@ No se dispone de informacion suficiente para comparar este adaptador con alterna
 
 ## Enlaces
 
-- Model card en HuggingFace: https://huggingface.co/arianaazarbal/ct-inkling-anth-gen-mid-g2-b1
+- Model card en Hugging Face: https://huggingface.co/arianaazarbal/ct-inkling-anth-gen-mid-g2-b1
 - Modelo base: https://huggingface.co/thinkingmachines/Inkling-Small
 - Documento de constitucion semilla incluido en el repositorio: `training_seed_constitution.md`
 - Registro de exportacion incluido en el repositorio: `tinker_meta.json`

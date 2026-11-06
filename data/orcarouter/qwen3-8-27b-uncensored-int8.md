@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: aproximadamente 32-36 GB con INT8 y contexto medio (pesos 27,4 GB mas KV cache y activaciones).
 - GPUs recomendadas: NVIDIA A100 40GB, H100 80GB, RTX 4090 24GB (con cuantizacion adicional o contexto reducido), o GPUs con 32 GB o mas de VRAM.
 - No cabe en GPUs consumer de 16 GB sin cuantizacion adicional (GGUF Q4, etc.).
-- Opciones de despliegue: vLLM (compatible con compressed-tensors), HuggingFace Transformers, y endpoints compatibles de HuggingFace.
+- Opciones de despliegue: vLLM (compatible con compressed-tensors), Hugging Face Transformers, y endpoints compatibles de Hugging Face.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -71,7 +71,7 @@ No se dispone de resultados de rendimiento comparativos entre estas versiones en
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): requiere aceptar las condiciones en HuggingFace para poder descargar el modelo.
+- Acceso restringido (gated): requiere aceptar las condiciones en Hugging Face para poder descargar el modelo.
 - Contenido sin restricciones: al estar ablizado, puede generar contenido inapropiado, ilegal o danino. No debe desplegarse en produccion sin moderacion externa.
 - Idiomas limitados: solo ingles y chino, sin soporte nativo para espanol u otros idiomas.
 - Longitud de contexto no verificada: no se ha confirmado la ventana de contexto efectiva de esta version cuantizada.
@@ -81,5 +81,5 @@ No se dispone de resultados de rendimiento comparativos entre estas versiones en
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-INT8)
+- [Modelo en Hugging Face](https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-INT8)
 - [Modelo base Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)

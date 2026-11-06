@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`bhushanzade02/ppo-CartPole-v1` es un agente de aprendizaje por refuerzo entrenado con el algoritmo Proximal Policy Optimization (PPO) sobre el entorno clásico `CartPole-v1` de Gym/Gymnasium. Lo publica el usuario `bhushanzade02` en HuggingFace como parte de un ejercicio de deep reinforcement learning (las etiquetas incluyen `deep-rl-course` y `custom-implementation`), no como un modelo de lenguaje ni un sistema de propósito general.
+`bhushanzade02/ppo-CartPole-v1` es un agente de aprendizaje por refuerzo entrenado con el algoritmo Proximal Policy Optimization (PPO) sobre el entorno clásico `CartPole-v1` de Gym/Gymnasium. Lo publica el usuario `bhushanzade02` en Hugging Face como parte de un ejercicio de deep reinforcement learning (las etiquetas incluyen `deep-rl-course` y `custom-implementation`), no como un modelo de lenguaje ni un sistema de propósito general.
 
 No se trata, por tanto, de un modelo de IA generativa: no tiene parámetros de lenguaje, ni contexto de tokens, ni capacidades de generación de texto, código o visión. Es una política neuronal que mapea observaciones de cuatro dimensiones (posición y velocidad del carro, ángulo y velocidad angular del poste) a dos acciones discretas (empujar a izquierda o derecha). Su relevancia es didáctica: sirve como referencia reproducible de un pipeline PPO mínimo sobre un entorno de control clásico.
 
@@ -49,7 +49,7 @@ Tampoco se documenta la composición del dataset (en este caso, la distribución
 - Pruebas de infraestructura de RL: sirve para validar integraciones con librerías de RL (por ejemplo, Stable-Baselines3, CleanRL o RLlib) antes de escalar a entornos más complejos.
 - Comparación de algoritmos: puede utilizarse como línea base PPO frente a otros algoritmos (DQN, A2C) en el mismo entorno para estudiar diferencias de convergencia.
 - Depuración de entornos Gym/Gymnasium: útil para comprobar que la versión del entorno y la API de `step`/`reset` funcionan correctamente con un agente entrenado.
-- Ejemplo de publicación en HuggingFace Hub: demuestra el flujo de subida de un agente de RL con `model-index` y metadatos asociados.
+- Ejemplo de publicación en Hugging Face Hub: demuestra el flujo de subida de un agente de RL con `model-index` y metadatos asociados.
 
 ## Benchmarks y rendimiento
 
@@ -75,7 +75,7 @@ No se dispone de información sobre modelos comparables publicados por el mismo 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bhushanzade02/ppo-CartPole-v1 | no disponible | no aplica | mean_reward 18,20 ± 6,08 (no verificado) | no disponible | HuggingFace |
+| bhushanzade02/ppo-CartPole-v1 | no disponible | no aplica | mean_reward 18,20 ± 6,08 (no verificado) | no disponible | Hugging Face |
 | Alternativas de referencia (SB3, CleanRL) | no disponible | no aplica | no disponible en esta ficha | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -90,7 +90,7 @@ No se dispone de información sobre modelos comparables publicados por el mismo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bhushanzade02/ppo-CartPole-v1
+- Modelo en Hugging Face: https://huggingface.co/bhushanzade02/ppo-CartPole-v1
 - Entorno CartPole-v1 (Gymnasium): https://gymnasium.farama.org/environments/classic_control/cart_pole/
 - Paper de PPO (Schulman et al., 2017): https://arxiv.org/abs/1707.06347
 - Documentación de Stable-Baselines3 (PPO): https://stable-baselines3.readthedocs.io/en/master/modules/ppo.html

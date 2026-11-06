@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DecodeX_Voice-Engine es un clasificador binario de audio publicado en HuggingFace por el usuario Aryan1245678, cuyo objetivo es distinguir voz humana real (bonafide) de voz sintetica o manipulada (deepfake, TTS, conversion de voz). El pipeline declarado es `audio-classification` y la entrada es un unico clip de 4 segundos a 16 kHz en mono, del que se devuelve una probabilidad de la clase "fake" junto con una etiqueta binaria y un nivel de confianza. La licencia es Apache-2.0 y el unico idioma declarado es el ingles.
+DecodeX_Voice-Engine es un clasificador binario de audio publicado en Hugging Face por el usuario Aryan1245678, cuyo objetivo es distinguir voz humana real (bonafide) de voz sintetica o manipulada (deepfake, TTS, conversion de voz). El pipeline declarado es `audio-classification` y la entrada es un unico clip de 4 segundos a 16 kHz en mono, del que se devuelve una probabilidad de la clase "fake" junto con una etiqueta binaria y un nivel de confianza. La licencia es Apache-2.0 y el unico idioma declarado es el ingles.
 
 El repositorio presenta una discrepancia importante que conviene senalar antes de cualquier evaluacion: los pesos en formato safetensors contienen 6.134.849 parametros, mientras que el contenido de la model card describe una arquitectura wav2vec2-base (encoder CNN + Transformer congelado) con un BiGRU de 2 capas y atencion multi-cabeza, y declara aproximadamente 98,5 millones de parametros. Ademas, el texto de la model card referencia otro repositorio (`koyelog/deepfake-voice-detector-sota`) y otra fecha de actualizacion (2025-10-31) distintos de los metadatos del modelo, por lo que es probable que se trate de una tarjeta copiada o parcialmente reutilizada.
 
@@ -77,9 +77,9 @@ No se han publicado resultados de benchmarks por subconjunto (ASVspoof frente a 
 
 | Modelo | Parametros | Entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DecodeX_Voice-Engine (este modelo) | 6,13 M segun safetensors; ~98,5 M declarados | Clip fijo de 4 s a 16 kHz | 95%-97% de exactitud en validacion, autoinformado | Apache-2.0 | Pesos safetensors en HuggingFace, 0 descargas, 0 likes |
-| AASIST (referencia academica en deteccion de spoofing) | No disponible | No disponible en la informacion proporcionada | No disponible | No disponible | Codigo de investigacion asociado a retos ASVspoof; sin checkpoint oficial en HuggingFace |
-| RawNet2 (referencia academica, entrada de forma de onda cruda) | No disponible | No disponible en la informacion proporcionada | No disponible | No disponible | Codigo de investigacion; sin checkpoint oficial en HuggingFace |
+| DecodeX_Voice-Engine (este modelo) | 6,13 M segun safetensors; ~98,5 M declarados | Clip fijo de 4 s a 16 kHz | 95%-97% de exactitud en validacion, autoinformado | Apache-2.0 | Pesos safetensors en Hugging Face, 0 descargas, 0 likes |
+| AASIST (referencia academica en deteccion de spoofing) | No disponible | No disponible en la informacion proporcionada | No disponible | No disponible | Codigo de investigacion asociado a retos ASVspoof; sin checkpoint oficial en Hugging Face |
+| RawNet2 (referencia academica, entrada de forma de onda cruda) | No disponible | No disponible en la informacion proporcionada | No disponible | No disponible | Codigo de investigacion; sin checkpoint oficial en Hugging Face |
 | facebook/wav2vec2-base ajustado de extremo a extremo | Aproximadamente 95 M (dato publico del modelo base) | Habla a 16 kHz, longitud variable | No disponible para la tarea de deteccion de deepfake | Apache-2.0 (modelo base) | Ampliamente disponible como modelo base; requiere ajuste especifico |
 
 No se dispone de valores numericos verificables de EER ni de exactitud de los modelos comparables en la informacion proporcionada, por lo que la comparacion cuantitativa no es posible. La principal diferencia de planteamiento es que este modelo congela el extractor wav2vec2 y anade un clasificador temporal, mientras que las alternativas academicas suelen entrenarse de extremo a extremo sobre la forma de onda o sobre representaciones espectrales.
@@ -100,7 +100,7 @@ No se dispone de valores numericos verificables de EER ni de exactitud de los mo
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/Aryan1245678/DecodeX_Voice-Engine
+- Pagina del modelo en Hugging Face: https://huggingface.co/Aryan1245678/DecodeX_Voice-Engine
 - Repositorio referenciado en la model card: https://huggingface.co/koyelog/deepfake-voice-detector-sota
 - Modelo base del extractor de caracteristicas: `facebook/wav2vec2-base` (referenciado en la model card; no se proporciona URL completa)
 - Datasets referenciados en la model card (nombres tal cual, sin URL en la informacion disponible): ASVspoof 2021, WaveFake, Audio-Deepfake, Fake-Real-Audio, Deepfake-Audio, Combined-Real-Voices, Scenefake, Gender-Balanced-Audio-Deepfake, Synthetic-Speech-Commands, y otros 10 conjuntos de Kaggle y academicos

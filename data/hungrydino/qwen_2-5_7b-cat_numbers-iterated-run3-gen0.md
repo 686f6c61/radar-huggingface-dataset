@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`HungryDino/qwen_2.5_7b-cat_numbers-iterated-run3-gen0` es un ajuste fino (fine-tune) del modelo `unsloth/Qwen2.5-7B-Instruct`, publicado por el usuario HungryDino en HuggingFace. Se trata de un modelo de generacion de texto en ingles, con licencia Apache 2.0, entrenado con Unsloth y la libreria TRL de HuggingFace. El nombre del repositorio sugiere un experimento de ajuste iterativo sobre una tarea sintetica o de laboratorio (la cadena `cat_numbers-iterated-run3-gen0` apunta a una tercera ejecucion de una iteracion concreta), no a un modelo orientado a produccion.
+`HungryDino/qwen_2.5_7b-cat_numbers-iterated-run3-gen0` es un ajuste fino (fine-tune) del modelo `unsloth/Qwen2.5-7B-Instruct`, publicado por el usuario HungryDino en Hugging Face. Se trata de un modelo de generacion de texto en ingles, con licencia Apache 2.0, entrenado con Unsloth y la libreria TRL de Hugging Face. El nombre del repositorio sugiere un experimento de ajuste iterativo sobre una tarea sintetica o de laboratorio (la cadena `cat_numbers-iterated-run3-gen0` apunta a una tercera ejecucion de una iteracion concreta), no a un modelo orientado a produccion.
 
 La model card es practicamente vacia: no documenta el dataset de entrenamiento, el numero de pasos, los hiperparametros, ni resultados de evaluacion. El repositorio ocupa 0,1 GB, un tamano muy inferior al que corresponderia a un modelo de 7.000 millones de parametros en safetensors (que ronda los 15 GB en fp16), lo que sugiere que el contenido subido podria ser un adaptador LoRA, una version parcial o un checkpoint incompleto. Este extremo no esta confirmado por el autor.
 
@@ -68,7 +68,7 @@ No se dispone de mediciones de latencia, throughput ni consumo de memoria para e
 - VRAM estimada en cuantizacion de 4 bits: aproximadamente 4-6 GB.
 - Cabe en GPU de consumo: si, en el rango de 4 a 8 bits encaja en tarjetas con 8, 12 o 16 GB (RTX 3060 12 GB, RTX 4070 Ti, RTX 4080, RTX 4090). En fp16 requiere tarjetas de 24 GB o mas.
 - GPU de centro de datos: A100 40/80 GB, H100 80 GB, L40S. En fp16, una unica A100 40 GB es suficiente para contexto moderado.
-- Opciones de despliegue: al estar en formato transformers/safetensors, es compatible con vLLM, Text Generation Inference (TGI) y HuggingFace Endpoints. No se publican pesos GGUF, por lo que llama.cpp u Ollama requeririan una conversion previa.
+- Opciones de despliegue: al estar en formato transformers/safetensors, es compatible con vLLM, Text Generation Inference (TGI) y Hugging Face Endpoints. No se publican pesos GGUF, por lo que llama.cpp u Ollama requeririan una conversion previa.
 - Latencia y throughput: no disponibles.
 
 Advertencia: el repositorio ocupa solo 0,1 GB. Si el contenido son adaptadores LoRA y no pesos completos, la carga directa con `transformers` podria fallar o requerir la aplicacion explicita del adaptador sobre el modelo base. Esto no esta confirmado por el autor.
@@ -102,9 +102,9 @@ En rendimiento, la comparacion no es posible: no hay ningun benchmark publicado 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-iterated-run3-gen0
+- Repositorio en Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-iterated-run3-gen0
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Unsloth (libreria de entrenamiento): https://github.com/unslothai/unsloth
-- TRL (libreria de ajuste de HuggingFace): https://github.com/huggingface/trl
+- TRL (libreria de ajuste de Hugging Face): https://github.com/huggingface/trl
 - Paper, blog o demo especificos de este modelo: no disponible
 - La busqueda web realizada no devolvio ningun resultado relacionado con este modelo.

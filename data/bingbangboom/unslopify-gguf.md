@@ -27,7 +27,7 @@ El modelo se distribuye como un archivo GGUF cuantizado a Q8_0, lo que reduce el
 
 ## Capacidades
 
-- **Generación de texto**: El modelo puede generar texto en formato conversacional, como se indica en la etiqueta `conversational` de HuggingFace.
+- **Generación de texto**: El modelo puede generar texto en formato conversacional, como se indica en la etiqueta `conversational` de Hugging Face.
 - **Compatibilidad con llama.cpp**: El archivo GGUF permite su uso con herramientas como `llama-cli` (texto) o `llama-mtmd-cli` (multimodal, si el modelo lo soportara, aunque no se indica).
 - **Capacidades heredadas de Qwen3**: Al ser un fine-tuning de Qwen3-8B, es probable que herede las capacidades generales del modelo base (razonamiento, codigo, matematicas, etc.), pero no se proporcionan detalles específicos ni ejemplos de uso.
 - **Sin información sobre tool calling, agentes o multimodalidad**: No se mencionan estas capacidades en la información disponible.
@@ -80,7 +80,7 @@ No se dispone de información sobre modelos comparables específicos. Sin embarg
 
 ## Enlaces
 
-- HuggingFace: [https://huggingface.co/bingbangboom/unslothify-GGUF](https://huggingface.co/bingbangboom/unslothify-GGUF)
+- Hugging Face: [https://huggingface.co/bingbangboom/unslothify-GGUF](https://huggingface.co/bingbangboom/unslothify-GGUF)
 - Unsloth (herramienta de entrenamiento): [https://unsloth.ai/](https://unsloth.ai/)
 - Unslothify (sitio web del concepto "unslop"): [https://unslopify-ai.com/](https://unslopify-ai.com/)
 - Documentación de llama.cpp: [https://github.com/ggml-org/llama.cpp](https://github.com/ggml-org/llama.cpp)

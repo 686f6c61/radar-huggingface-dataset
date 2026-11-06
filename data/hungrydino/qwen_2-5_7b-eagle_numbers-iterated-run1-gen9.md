@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo identificado como `HungryDino/qwen_2.5_7b-eagle_numbers-iterated-run1-gen9` es un ajuste fino (fine-tuning) derivado de `unsloth/Qwen2.5-7B-Instruct`, publicado por el usuario HungryDino en HuggingFace. Por la nomenclatura del identificador ("eagle_numbers-iterated-run1-gen9") y el tamano del repositorio (0,1 GB, muy inferior a los ~15 GB que ocuparian los pesos completos de un modelo de 7B en safetensors fp16), todo apunta a que se trata de un adaptador LoRA o de un checkpoint parcial resultado de un experimento iterativo de entrenamiento, no de un modelo con pesos completos redistribuidos.
+El modelo identificado como `HungryDino/qwen_2.5_7b-eagle_numbers-iterated-run1-gen9` es un ajuste fino (fine-tuning) derivado de `unsloth/Qwen2.5-7B-Instruct`, publicado por el usuario HungryDino en Hugging Face. Por la nomenclatura del identificador ("eagle_numbers-iterated-run1-gen9") y el tamano del repositorio (0,1 GB, muy inferior a los ~15 GB que ocuparian los pesos completos de un modelo de 7B en safetensors fp16), todo apunta a que se trata de un adaptador LoRA o de un checkpoint parcial resultado de un experimento iterativo de entrenamiento, no de un modelo con pesos completos redistribuidos.
 
-El modelo base, Qwen2.5-7B-Instruct, es un transformer decoder-only desarrollado por Alibaba Cloud con 7.610 millones de parametros, una longitud de contexto nativa de 131.072 tokens y licencia Apache 2.0. La model card del autor es minima: solo indica que fue entrenado con Unsloth y la libreria TRL de HuggingFace, sin detallar el dataset, el numero de pasos ni el objetivo concreto del ajuste.
+El modelo base, Qwen2.5-7B-Instruct, es un transformer decoder-only desarrollado por Alibaba Cloud con 7.610 millones de parametros, una longitud de contexto nativa de 131.072 tokens y licencia Apache 2.0. La model card del autor es minima: solo indica que fue entrenado con Unsloth y la libreria TRL de Hugging Face, sin detallar el dataset, el numero de pasos ni el objetivo concreto del ajuste.
 
 La relevancia de esta publicacion es limitada en su estado actual: cero descargas, cero "likes", sin resultados de benchmarks y sin documentacion tecnica sobre el procedimiento de entrenamiento. Se trata por tanto de un artefacto de experimentacion, no de un modelo listo para produccion. Cualquier evaluacion debe apoyarse en las caracteristicas del modelo base y tratar el ajuste como no verificado.
 
@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| HungryDino/qwen_2.5_7b-eagle_numbers-iterated-run1-gen9 | No disponible (adaptador sobre 7,61B) | No disponible | Apache 2.0 | HuggingFace | Adaptador experimental, sin benchmarks |
-| Qwen2.5-7B-Instruct | 7,61B | 131.072 tokens | Apache 2.0 | HuggingFace, oficial | Modelo base, con benchmarks publicados por Alibaba |
-| Mistral-7B-Instruct-v0.3 | 7,25B | 32.768 tokens | Apache 2.0 | HuggingFace | Alternativa comparable en tamano y licencia |
-| Meta-Llama-3.1-8B-Instruct | 8,03B | 128.000 tokens | Llama 3.1 Community License | HuggingFace | Contexto similar, licencia con restricciones |
+| HungryDino/qwen_2.5_7b-eagle_numbers-iterated-run1-gen9 | No disponible (adaptador sobre 7,61B) | No disponible | Apache 2.0 | Hugging Face | Adaptador experimental, sin benchmarks |
+| Qwen2.5-7B-Instruct | 7,61B | 131.072 tokens | Apache 2.0 | Hugging Face, oficial | Modelo base, con benchmarks publicados por Alibaba |
+| Mistral-7B-Instruct-v0.3 | 7,25B | 32.768 tokens | Apache 2.0 | Hugging Face | Alternativa comparable en tamano y licencia |
+| Meta-Llama-3.1-8B-Instruct | 8,03B | 128.000 tokens | Llama 3.1 Community License | Hugging Face | Contexto similar, licencia con restricciones |
 
 ## Limitaciones y advertencias
 
@@ -90,7 +90,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-eagle_numbers-iterated-run1-gen9
+- Modelo en Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-eagle_numbers-iterated-run1-gen9
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Repositorio de TRL: https://github.com/huggingface/trl

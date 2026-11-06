@@ -74,11 +74,11 @@ No disponible. No se han identificado en la información proporcionada modelos c
 - Dependencias externas: requiere los activos congelados (VLM, tokenizer, VAE) referenciados por el `config.yaml` original, que no están incluidos en el repositorio.
 - Rutas de entrenamiento codificadas: la model card advierte de que las rutas registradas pueden necesitar sobrescritura en otra máquina.
 - Marcador de completitud: solo debe usarse una carpeta cuando exista `HF_INFERENCE_COMPLETE.json`; de lo contrario, el export puede estar incompleto.
-- Formato no estándar: al ser DCP nativo y no safetensors ni `AutoModel`, no es cargable con las herramientas habituales de HuggingFace Transformers.
+- Formato no estándar: al ser DCP nativo y no safetensors ni `AutoModel`, no es cargable con las herramientas habituales de Hugging Face Transformers.
 - Riesgo de sesgo y alucinación: no evaluado en la información disponible; en robótica, un fallo de política puede traducirse en acciones físicas incorrectas.
 - Cero tracción comunitaria (0 descargas, 0 likes): no hay validación externa ni informes de terceros sobre su comportamiento.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/junbrro/vwam-oa-rel28-rh-cog-humact-ema-50k-g4-bg-1031-r2-inference-ge10k-20261102
+- Repositorio en Hugging Face: https://huggingface.co/junbrro/vwam-oa-rel28-rh-cog-humact-ema-50k-g4-bg-1031-r2-inference-ge10k-20261102
 - No se han encontrado en la información proporcionada papers, blogs, repositorios de código, demos ni documentación adicional del runtime V-WAM o del robot OpenArm.

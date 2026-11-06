@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La ú
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tuanpasg/wudi_gemma_fp32_iter_15 | 2.614.341.888 | No disponible | No disponible | No disponible | HuggingFace |
-| google/gemma-2-2b-it | 2.614.341.888 | No disponible | No disponible | Gemma Terms of Use | HuggingFace |
+| tuanpasg/wudi_gemma_fp32_iter_15 | 2.614.341.888 | No disponible | No disponible | No disponible | Hugging Face |
+| google/gemma-2-2b-it | 2.614.341.888 | No disponible | No disponible | Gemma Terms of Use | Hugging Face |
 | MergeBench/gemma-2-2b_instruction | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias

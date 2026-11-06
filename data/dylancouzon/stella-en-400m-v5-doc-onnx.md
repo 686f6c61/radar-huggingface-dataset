@@ -106,7 +106,7 @@ No se dispone de cifras de rendimiento comparado (BEIR, MTEB u otros) para ningu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DylanCouzon/stella-en-400M-v5-doc-onnx
+- Modelo en Hugging Face: https://huggingface.co/DylanCouzon/stella-en-400M-v5-doc-onnx
 - Modelo base: https://huggingface.co/NovaSearch/stella_en_400M_v5
 - Codificador de consulta ligero constella-zero: https://huggingface.co/DylanCouzon/constella-zero
 - Codificador de consulta constella-nano: https://huggingface.co/DylanCouzon/constella-nano

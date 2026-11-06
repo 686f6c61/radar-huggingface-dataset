@@ -77,6 +77,6 @@ No se han proporcionado datos de modelos comparables en la información disponib
 
 ## Enlaces
 
-- HuggingFace: [https://huggingface.co/Jeesup/svd-safety-l2_remove40_swapdisc_a010_b010_r08](https://huggingface.co/Jeesup/svd-safety-l2_remove40_swapdisc_a010_b010_r08)
+- Hugging Face: [https://huggingface.co/Jeesup/svd-safety-l2_remove40_swapdisc_a010_b010_r08](https://huggingface.co/Jeesup/svd-safety-l2_remove40_swapdisc_a010_b010_r08)
 
 No se han encontrado enlaces adicionales relevantes (papers, blogs, repos) en los resultados de la búsqueda web.

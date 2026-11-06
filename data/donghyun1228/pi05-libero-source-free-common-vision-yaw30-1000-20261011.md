@@ -21,7 +21,7 @@ Se trata, por tanto, de un artefacto de investigación reproducible más que de 
 | Licencia | no disponible |
 | Formato de pesos | Orbax (directorio de inferencia con `params` y `assets/donghyun/libero/norm_stats.json`); no incluye estado del optimizador |
 | Tamaño del repositorio | 6,1 GB |
-| Tarea declarada | robotics (pipeline de HuggingFace: robotics) |
+| Tarea declarada | robotics (pipeline de Hugging Face: robotics) |
 | Fecha de creación / actualización | 2026-10-10 / 2026-10-10 |
 | Descargas / likes | 0 / 0 |
 | Configuración de política asociada | `pi05_libero_dense_contact_20261002_view_idm_only` (repositorio `vla_adaptation`) |
@@ -98,7 +98,7 @@ La comparación se limita a los artefactos del mismo autor y al stack de origen,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-source-free-common-vision-yaw30-1000-20261011
+- Modelo en Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-source-free-common-vision-yaw30-1000-20261011
 - Variante raw del mismo autor: https://huggingface.co/Donghyun1228/pi05-libero-source-free-raw-common-vision-yaw30-1000-20261011
 - Variante con KD de muñeca: https://huggingface.co/Donghyun1228/pi05-libero-dense-contact-d2-wrist-kd-yaw10-20261003
 - Repositorio de código de adaptación: https://github.com/Donghyun1228/vla_adaptation

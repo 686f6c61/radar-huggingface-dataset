@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Zamy-Instruct-Complet es un modelo de generación de texto publicado en HuggingFace por el usuario theplayboy117. Se trata de un ajuste (fine-tune) de tipo instruct, con 1.543.714.304 parámetros (aproximadamente 1,54 mil millones), etiquetado con la arquitectura qwen2 y la pipeline text-generation/conversational. El repositorio ocupa 3,1 GB y los pesos se distribuyen en formato safetensors, lo que sugiere un almacenamiento en precisión de 16 bits (bf16 o fp16), coherente con 2 bytes por parámetro para ese número de parámetros.
+Zamy-Instruct-Complet es un modelo de generación de texto publicado en Hugging Face por el usuario theplayboy117. Se trata de un ajuste (fine-tune) de tipo instruct, con 1.543.714.304 parámetros (aproximadamente 1,54 mil millones), etiquetado con la arquitectura qwen2 y la pipeline text-generation/conversational. El repositorio ocupa 3,1 GB y los pesos se distribuyen en formato safetensors, lo que sugiere un almacenamiento en precisión de 16 bits (bf16 o fp16), coherente con 2 bytes por parámetro para ese número de parámetros.
 
-La relevancia del modelo es limitada y debe enmarcarse con cautela: no incluye model card real (la publicada es la plantilla automática de HuggingFace, sin ningún campo completado), no declara licencia, idiomas, datos de entrenamiento ni resultados de evaluación, y acumula 0 descargas y 0 likes en el momento de la consulta. Por tanto, no es un modelo validado por la comunidad ni documentado, sino un checkpoint de investigación o experimento personal.
+La relevancia del modelo es limitada y debe enmarcarse con cautela: no incluye model card real (la publicada es la plantilla automática de Hugging Face, sin ningún campo completado), no declara licencia, idiomas, datos de entrenamiento ni resultados de evaluación, y acumula 0 descargas y 0 likes en el momento de la consulta. Por tanto, no es un modelo validado por la comunidad ni documentado, sino un checkpoint de investigación o experimento personal.
 
 Su interés práctico radica en el rango de tamaño: 1,5 mil millones de parámetros permiten ejecución en GPU de consumo e incluso en CPU con cuantización, lo que lo hace candidato para prototipado local, experimentación con fine-tuning y despliegue en entornos con requisitos de privacidad. No obstante, cualquier uso en producción exigiría una evaluación propia previa, dada la ausencia total de documentación técnica y de licencia.
 
@@ -25,7 +25,7 @@ Su interés práctico radica en el rango de tamaño: 1,5 mil millones de paráme
 
 La única información estructural disponible es la etiqueta `qwen2` asociada al repositorio, que apunta a una arquitectura transformer decoder-only de la familia Qwen2, con atención causal y normalización RMSNorm, aunque no se confirma ningún detalle en la documentación del autor. El tamaño declarado de 1.543.714.304 parámetros no coincide exactamente con ninguna variante oficial conocida de Qwen2 (1,5B es la más cercana), por lo que podría tratarse de un ajuste sobre una base de ese orden, de una modificación del vocabulario/embeddings o de un modelo entrenado desde cero con una configuración propia. No hay confirmación de ninguno de estos supuestos.
 
-No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, el uso de RLHF, DPO, SFT u otras técnicas de alineamiento, la precisión usada en el entrenamiento ni el hardware empleado. La model card publicada es la plantilla automática de HuggingFace con todos los campos marcados como `[More Information Needed]`. El nombre del modelo ("Instruct-Complet") sugiere un ajuste orientado a instrucciones, pero esto es una interpretación del nombre, no un dato documentado.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, el uso de RLHF, DPO, SFT u otras técnicas de alineamiento, la precisión usada en el entrenamiento ni el hardware empleado. La model card publicada es la plantilla automática de Hugging Face con todos los campos marcados como `[More Information Needed]`. El nombre del modelo ("Instruct-Complet") sugiere un ajuste orientado a instrucciones, pero esto es una interpretación del nombre, no un dato documentado.
 
 ## Capacidades
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 ## Comparativa con modelos similares
 
-Los datos de los modelos alternativos provienen de su documentación pública en HuggingFace, no de una evaluación directa sobre este checkpoint.
+Los datos de los modelos alternativos provienen de su documentación pública en Hugging Face, no de una evaluación directa sobre este checkpoint.
 
 | Modelo | Parametros | Contexto | Licencia | Formatos disponibles |
 |---|---|---|---|---|
@@ -94,7 +94,7 @@ Frente a estas alternativas, Zamy-Instruct-Complet no aporta información verifi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/theplayboy117/Zamy-Instruct-Complet
+- Modelo en Hugging Face: https://huggingface.co/theplayboy117/Zamy-Instruct-Complet
 - Repositorio relacionado del mismo autor: https://huggingface.co/theplayboy117/iz-instruct
 - Repositorio relacionado del mismo autor: https://huggingface.co/theplayboy117/iz-instruct-full
 - Paper referenciado en las etiquetas del repositorio (Lacoste et al., 2019, sobre emisiones de carbono en aprendizaje automático): https://arxiv.org/abs/1910.09700

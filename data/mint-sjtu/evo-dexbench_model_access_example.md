@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparado entre estas políticas ni frente
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MINT-SJTU/Evo-DexBench_model_access_example
+- Modelo en Hugging Face: https://huggingface.co/MINT-SJTU/Evo-DexBench_model_access_example
 - Dataset: https://huggingface.co/datasets/MINT-SJTU/Evo-DexBench-dataset
 - Assets: https://huggingface.co/datasets/MINT-SJTU/Evo-DexBench_Assets
 - Paper (arXiv): https://arxiv.org/abs/2610.21180

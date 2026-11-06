@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CFD-NANO-1-0 es un repositorio de modelos publicado en HuggingFace por Addax Data Science. No se trata de un modelo entrenado por el propio autor del repositorio, sino de una redistribucion de modelos de codigo abierto empaquetados para facilitar su integracion con AddaxAI, la plataforma de Addax Data Science. Segun la model card, el desarrollo original corresponde a Filippo Varini, Dan Morris y los colaboradores del proyecto Community Fish Detector, y cada modelo conserva su licencia y atribucion originales.
+CFD-NANO-1-0 es un repositorio de modelos publicado en Hugging Face por Addax Data Science. No se trata de un modelo entrenado por el propio autor del repositorio, sino de una redistribucion de modelos de codigo abierto empaquetados para facilitar su integracion con AddaxAI, la plataforma de Addax Data Science. Segun la model card, el desarrollo original corresponde a Filippo Varini, Dan Morris y los colaboradores del proyecto Community Fish Detector, y cada modelo conserva su licencia y atribucion originales.
 
 El identificador del repositorio (CFD-NANO-1-0) apunta al proyecto Community Fish Detector y a una variante de baja capacidad, pero la model card no incluye ficha tecnica: el README se limita a una descripcion generica de la redistribucion y a enlaces al repositorio de GitHub del proyecto original. No hay informacion publicada sobre arquitectura, numero de parametros, datos de entrenamiento ni resultados de evaluacion.
 
@@ -18,13 +18,13 @@ La relevancia de esta ficha es, por tanto, limitada y de caracter practico: sirv
 | Longitud de contexto | no disponible (no consta que sea un modelo de lenguaje) |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible (no se documenta; el proyecto de origen trabaja sobre imagenes, no sobre texto) |
-| Licencia | no disponible en los metadatos de HuggingFace; la model card indica que cada modelo conserva su licencia original (ver ficheros de licencia del repositorio) |
+| Licencia | no disponible en los metadatos de Hugging Face; la model card indica que cada modelo conserva su licencia original (ver ficheros de licencia del repositorio) |
 | Formato de pesos | no disponible |
 | Tarea declarada (pipeline) | no disponible |
 | Tamano del repositorio | 0,1 GB |
 | Desarrolladores originales | Filippo Varini, Dan Morris y colaboradores de Community Fish Detector |
 | Responsable de la redistribucion | Addax Data Science |
-| Fecha de creacion (HuggingFace) | 2026-09-11 |
+| Fecha de creacion (Hugging Face) | 2026-09-11 |
 | Fecha de ultima actualizacion | 2026-09-11 |
 | Descargas / likes | 0 / 0 |
 
@@ -36,7 +36,7 @@ El unico contexto verificable es que el repositorio redistribuye modelos del pro
 
 ## Capacidades
 
-- No se documentan capacidades especificas en la model card ni en los metadatos de HuggingFace.
+- No se documentan capacidades especificas en la model card ni en los metadatos de Hugging Face.
 - Por el nombre del proyecto de origen (Community Fish Detector) y su integracion en AddaxAI, cabe inferir que el modelo esta orientado a la deteccion de peces en imagenes o video, pero esta inferencia no esta confirmada por documentacion tecnica disponible.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -74,18 +74,18 @@ No disponible. La informacion proporcionada no incluye especificaciones, resulta
 ## Limitaciones y advertencias
 
 - Documentacion practicamente inexistente: la model card no contiene ficha tecnica (el README incluye un bloque vacio y una nota generica de redistribucion), por lo que cualquier dato de arquitectura, entrenamiento o rendimiento debe obtenerse del repositorio original.
-- Licencia no declarada en HuggingFace: los metadatos indican "no disponible" y la model card remite a los ficheros de licencia del repositorio. Es obligatorio revisarlos antes de cualquier uso, especialmente si es comercial.
+- Licencia no declarada en Hugging Face: los metadatos indican "no disponible" y la model card remite a los ficheros de licencia del repositorio. Es obligatorio revisarlos antes de cualquier uso, especialmente si es comercial.
 - Modelo redistribuido, no entrenado por el autor del repositorio: la responsabilidad de atribucion y cumplimiento recae en el usuario final, segun los terminos de la licencia original.
 - Riesgo de sesgo de dominio: cualquier modelo de deteccion visual depende de la distribucion de especies, iluminacion, turbidez del agua, tipo de camara y geografia de su dataset de entrenamiento. Sin datos de entrenamiento publicados no es posible acotar este riesgo.
 - Riesgo de falsos positivos y falsos negativos: no hay metricas publicadas (mAP, precision, recall) que permitan estimar la tasa de error en un escenario real.
 - Clases cubiertas desconocidas: no se documenta que especies o categorias detecta el modelo, ni su granularidad taxonomica.
-- Idiomas y contexto textual: no aplica, pero la ausencia de pipeline declarado en HuggingFace impide conocer con certeza la modalidad de entrada y salida.
+- Idiomas y contexto textual: no aplica, pero la ausencia de pipeline declarado en Hugging Face impide conocer con certeza la modalidad de entrada y salida.
 - La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo: los enlaces recuperados corresponden al antilope addax y a empresas homonimas, por lo que no aportan informacion tecnica.
 - Ausencia de traccion: cero descargas y cero likes en el momento de redactar la ficha, lo que implica falta de validacion por parte de la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Addax-Data-Science/CFD-NANO-1-0
+- Modelo en Hugging Face: https://huggingface.co/Addax-Data-Science/CFD-NANO-1-0
 - Repositorio original (Community Fish Detector): https://github.com/filippovarini/community-fish-detector
 - Instrucciones de citacion del proyecto original: https://github.com/filippovarini/community-fish-detector#citing-this-work
 - Licencia del proyecto original: https://github.com/filippovarini/community-fish-detector

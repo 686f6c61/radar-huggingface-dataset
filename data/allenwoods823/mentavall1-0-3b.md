@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mentavall1.0-3B es un modelo de lenguaje de 3 mil millones de parámetros desarrollado por el usuario allenwoods823, publicado en HuggingFace bajo licencia MIT. Se trata de un fine-tuning del modelo base Qwen2.5-3B-Instruct, realizado con la librería Unsloth para acelerar el entrenamiento y reducir el uso de memoria. El modelo está orientado a tareas de instrucción y conversación, y su tamaño reducido lo hace adecuado para despliegue en entornos con recursos limitados.
+Mentavall1.0-3B es un modelo de lenguaje de 3 mil millones de parámetros desarrollado por el usuario allenwoods823, publicado en Hugging Face bajo licencia MIT. Se trata de un fine-tuning del modelo base Qwen2.5-3B-Instruct, realizado con la librería Unsloth para acelerar el entrenamiento y reducir el uso de memoria. El modelo está orientado a tareas de instrucción y conversación, y su tamaño reducido lo hace adecuado para despliegue en entornos con recursos limitados.
 
 La relevancia de este modelo radica en su accesibilidad: al ser un fine-tune de un modelo abierto y ligero, permite a desarrolladores e investigadores experimentar con ajuste fino y generación de texto sin necesidad de infraestructura de alto coste. Sin embargo, la información pública disponible es muy escasa: no se detallan los datos de entrenamiento, el proceso de fine-tuning ni los benchmarks, lo que limita la evaluación objetiva de su rendimiento. El repositorio tiene un tamaño de solo 0.1 GB, lo que sugiere que los pesos están cuantizados o que el modelo es compacto.
 
@@ -21,7 +21,7 @@ La relevancia de este modelo radica en su accesibilidad: al ser un fine-tune de 
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura Qwen2.5, un transformer decoder-only con atención causal estándar. El fine-tuning se realizó sobre la versión `unsloth/qwen2.5-3b-instruct-unsloth-bnb-4bit`, que es una versión cuantizada a 4 bits del modelo instruct original, preparada por Unsloth para entrenamiento eficiente. La técnica de entrenamiento empleada es la de Unsloth, que optimiza el uso de memoria y acelera el fine-tuning mediante kernels personalizados y gestión de cuantización. No se especifica el dataset utilizado, el número de pasos, ni si se aplicaron técnicas como RLHF o DPO. La etiqueta `trl` en los metadatos sugiere que se usó la librería TRL de HuggingFace para el entrenamiento, pero no hay detalles adicionales.
+El modelo se basa en la arquitectura Qwen2.5, un transformer decoder-only con atención causal estándar. El fine-tuning se realizó sobre la versión `unsloth/qwen2.5-3b-instruct-unsloth-bnb-4bit`, que es una versión cuantizada a 4 bits del modelo instruct original, preparada por Unsloth para entrenamiento eficiente. La técnica de entrenamiento empleada es la de Unsloth, que optimiza el uso de memoria y acelera el fine-tuning mediante kernels personalizados y gestión de cuantización. No se especifica el dataset utilizado, el número de pasos, ni si se aplicaron técnicas como RLHF o DPO. La etiqueta `trl` en los metadatos sugiere que se usó la librería TRL de Hugging Face para el entrenamiento, pero no hay detalles adicionales.
 
 ## Capacidades
 
@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - VRAM estimada para inferencia: un modelo de 3B en 4-bit requiere aproximadamente 2-3 GB de VRAM; en 8-bit, unos 4-5 GB; en 16-bit, unos 6-7 GB.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM (por ejemplo, RTX 3050, RTX 4060, GTX 1660 Super) puede ejecutar el modelo en cuantización 4-bit. Para mayor velocidad, una RTX 3090 o superior.
 - En consumer GPU: sí, cabe en GPUs de gama media y baja con cuantización.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI (text-generation-inference) y transformers de HuggingFace.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI (text-generation-inference) y transformers de Hugging Face.
 - Latencia y throughput: no disponible; dependerá del hardware y la cuantización. En una GPU moderna, un modelo de 3B puede generar entre 20 y 50 tokens por segundo en 4-bit.
 
 ## Comparativa con modelos similares
@@ -74,6 +74,6 @@ La comparativa se basa en características conocidas de los modelos base; no hay
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/allenwoods823/mentavall1.0-3B
+- Hugging Face: https://huggingface.co/allenwoods823/mentavall1.0-3B
 - Modelo base (Unsloth): https://huggingface.co/unsloth/qwen2.5-3b-instruct-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

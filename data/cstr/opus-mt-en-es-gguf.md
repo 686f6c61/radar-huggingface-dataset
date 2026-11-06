@@ -91,7 +91,7 @@ No se dispone de datos comparativos de calidad de traduccion (BLEU u otras metri
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/cstr/opus-mt-en-es-GGUF
+- Repositorio Hugging Face: https://huggingface.co/cstr/opus-mt-en-es-GGUF
 - Modelo base: https://huggingface.co/Helsinki-NLP/opus-mt-en-es
 - Modelo en direccion inversa: https://huggingface.co/cstr/opus-mt-es-en-GGUF
 - CrispASR (CrispStrobe): https://github.com/CrispStrobe/CrispASR

@@ -68,8 +68,8 @@ La precisión se mide como exactitud de etiqueta por palabra sobre el split de t
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| model2vec-multilingual-base (este) | 9,4 M | No disponible | Seq2Seq sin atención con embeddings estáticos | MIT | HuggingFace, librería deepparse |
-| Otros parsers de deepparse (p. ej. variantes fasttext o bpemb) | No disponible | No disponible | Parsers Seq2Seq de la misma librería | MIT | HuggingFace, librería deepparse |
+| model2vec-multilingual-base (este) | 9,4 M | No disponible | Seq2Seq sin atención con embeddings estáticos | MIT | Hugging Face, librería deepparse |
+| Otros parsers de deepparse (p. ej. variantes fasttext o bpemb) | No disponible | No disponible | Parsers Seq2Seq de la misma librería | MIT | Hugging Face, librería deepparse |
 | libpostal (no es un modelo de este repo) | No disponible | No disponible | Sistema estadístico de parsing de direcciones | MIT | Open source |
 
 No se dispone de datos de benchmarks comparativos entre estas alternativas en la información proporcionada.
@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks comparativos entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/deepparse/model2vec-multilingual-base
+- Modelo en Hugging Face: https://huggingface.co/deepparse/model2vec-multilingual-base
 - Dataset de entrenamiento: https://huggingface.co/datasets/deepparse/worldwide-addresses
 - Embeddings base Model2Vec: https://huggingface.co/minishlab/potion-multilingual-128M
 - Documentación de deepparse: https://deepparse.org

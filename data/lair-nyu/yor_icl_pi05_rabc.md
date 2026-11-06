@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 | Modelo | Base | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| yor_icl_pi05_rabc (este) | pi0.5 | no disponible | no disponible | no disponible | HuggingFace |
+| yor_icl_pi05_rabc (este) | pi0.5 | no disponible | no disponible | no disponible | Hugging Face |
 | pi0.5 (Physical Intelligence) | pi0 | no publicado | no publicado | no disponible | Repos oficiales |
 | pi0 (Physical Intelligence) | - | no publicado | no publicado | no disponible | Repos oficiales |
 
@@ -73,7 +73,7 @@ No se dispone de datos suficientes para una comparativa detallada con otros fine
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lair-nyu/yor_icl_pi05_rabc
+- Hugging Face: https://huggingface.co/lair-nyu/yor_icl_pi05_rabc
 - Paper de pi0.5: https://arxiv.org/abs/2504.16054
 - Repositorio openpi: https://github.com/Physical-Intelligence/openpi
 - Perfil de LAIR NYU: https://huggingface.co/lair-nyu

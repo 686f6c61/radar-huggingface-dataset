@@ -4,7 +4,7 @@
 
 El modelo `arkojit1/pi05_pick_block_eef_abs_bs32_lr2.5e-5_4.8k` es un ajuste fino del modelo de robótica π₀.₅ (`lerobot/pi05_base`), desarrollado por el usuario arkojit1 y distribuido a través de la librería LeRobot. No es un modelo de lenguaje: es una política visión-lenguaje-acción (VLA) especializada en una única tarea de manipulación, en la que un brazo Franka debe recoger un bloque guiándose por dos cámaras de 224×224. Su salida no es texto, sino una acción de control del efector final.
 
-El checkpoint publicado corresponde al paso 4.800 de una ejecución de 20.000 pasos. Solo se entrenó el módulo "action expert" y las proyecciones asociadas (~0,69B parámetros), mientras que el codificador visual SigLIP y el backbone Gemma-2B se mantuvieron congelados. El modelo completo contiene 4.143.404.816 parámetros (unos 4,14B) y ocupa 9,4 GB en el repositorio. La relevancia de esta ficha radica en que documenta un fine-tune de π₀.₅ paso a paso, con métricas de sobreajuste y una distinción explícita entre espacio de acción absoluto y delta, aspectos habitualmente poco detallados en políticas robóticas publicadas en HuggingFace.
+El checkpoint publicado corresponde al paso 4.800 de una ejecución de 20.000 pasos. Solo se entrenó el módulo "action expert" y las proyecciones asociadas (~0,69B parámetros), mientras que el codificador visual SigLIP y el backbone Gemma-2B se mantuvieron congelados. El modelo completo contiene 4.143.404.816 parámetros (unos 4,14B) y ocupa 9,4 GB en el repositorio. La relevancia de esta ficha radica en que documenta un fine-tune de π₀.₅ paso a paso, con métricas de sobreajuste y una distinción explícita entre espacio de acción absoluto y delta, aspectos habitualmente poco detallados en políticas robóticas publicadas en Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -87,9 +87,9 @@ Nota: los modelos delta y absoluto no son intercambiables; el autor advierte exp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arkojit1/pi05_pick_block_eef_abs_bs32_lr2.5e-5_4.8k
+- Modelo en Hugging Face: https://huggingface.co/arkojit1/pi05_pick_block_eef_abs_bs32_lr2.5e-5_4.8k
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/Ameyapores/pick_block_eef_position_abs
 - Variante delta: https://huggingface.co/arkojit1/pi05_pick_block_eef_delta
 - Variante absoluta previa: https://huggingface.co/arkojit1/pi05_pick_block_eef_abs
-- LeRobot (HuggingFace): https://github.com/huggingface/lerobot
+- LeRobot (Hugging Face): https://github.com/huggingface/lerobot

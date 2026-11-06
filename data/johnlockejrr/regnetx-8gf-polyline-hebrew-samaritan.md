@@ -97,11 +97,11 @@ No se dispone de comparativas con modelos externos (como detectores genéricos t
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/johnlockejrr/regnetx-8gf-polyline-hebrew-samaritan
+- Repositorio del modelo en Hugging Face: https://huggingface.co/johnlockejrr/regnetx-8gf-polyline-hebrew-samaritan
 - Modelo base D-FINE Stage-0: https://huggingface.co/johnlockejrr/dfine-det-large-baseline-stage0
 - Modelo hermano D-FINE Stage-1: https://huggingface.co/johnlockejrr/dfine-det-large-baseline-hebrew-samaritan-stage1
 - Modelo hermano ConvNeXtV2: https://huggingface.co/johnlockejrr/convnextv2-polyline-base-hebrew-samaritan
-- Perfil del autor en HuggingFace: https://huggingface.co/johnlockejrr
+- Perfil del autor en Hugging Face: https://huggingface.co/johnlockejrr
 - Perfil del autor en GitHub: https://github.com/johnlockejrr/johnlockejrr
 - Paper de referencia (D-FINE, arxiv:2410.13842): https://arxiv.org/abs/2410.13842
 - Documentación de RegNetX en Torchvision: https://docs.pytorch.org/vision/main/models/generated/torchvision.models.regnet_x_8gf.html

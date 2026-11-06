@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Benchmarks publicos | Disponibilidad |
 |---|---|---|---|---|---|---|
-| NeemSutra-125M-Python-Instruct-Beta | 125,9M | 256 tokens | Ingles | Apache-2.0 | No publicados | HuggingFace, 0 descargas |
+| NeemSutra-125M-Python-Instruct-Beta | 125,9M | 256 tokens | Ingles | Apache-2.0 | No publicados | Hugging Face, 0 descargas |
 | GPT-2 small | 124M | 1.024 tokens | Ingles | MIT (pesos originales) | Si (evaluaciones originales de OpenAI) | Ampliamente disponible en multiples formatos |
-| SmolLM2-135M | 135M | 2.048 tokens (segun modelo base de la familia) | Ingles y otros | Apache-2.0 | Si, publicados por el desarrollador | HuggingFace, con versiones GGUF |
-| Qwen2.5-Coder-0.5B | 494M | 32.768 tokens | Multilingue | Apache-2.0 | Si, publicados por el desarrollador | HuggingFace, con versiones GGUF |
+| SmolLM2-135M | 135M | 2.048 tokens (segun modelo base de la familia) | Ingles y otros | Apache-2.0 | Si, publicados por el desarrollador | Hugging Face, con versiones GGUF |
+| Qwen2.5-Coder-0.5B | 494M | 32.768 tokens | Multilingue | Apache-2.0 | Si, publicados por el desarrollador | Hugging Face, con versiones GGUF |
 
 La comparacion relevante es por categoria de tamano: frente a GPT-2 small, NeemSutra ofrece un vocabulario mucho menor y una ventana de contexto cuatro veces mas corta, pero incorpora ajuste por instrucciones y adaptacion a Python, algo de lo que carece GPT-2. Frente a SmolLM2-135M y Qwen2.5-Coder-0.5B, la desventaja en contexto y en disponibilidad de formatos cuantizados es muy marcada. No se dispone de datos de rendimiento comparativos porque NeemSutra no publica cifras.
 
@@ -91,7 +91,7 @@ La comparacion relevante es por categoria de tamano: frente a GPT-2 small, NeemS
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KiranAN1988/NeemSutra-125M-Python-Instruct-Beta
+- Modelo en Hugging Face: https://huggingface.co/KiranAN1988/NeemSutra-125M-Python-Instruct-Beta
 - Common Pile (organizacion): https://huggingface.co/common-pile
 - Coleccion Common Pile v0.1: https://huggingface.co/collections/common-pile/common-pile-v01
 - Project Gutenberg dentro de Common Pile: https://huggingface.co/datasets/common-pile/project_gutenberg

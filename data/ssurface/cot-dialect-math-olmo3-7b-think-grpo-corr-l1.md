@@ -63,7 +63,7 @@ Nota: el autor indica que el scoring se realizo con un grader consciente de LaTe
 
 ## Comparativa con modelos similares
 
-No se dispone de datos comparativos publicados en la informacion proporcionada. El modelo base `allenai/Olmo-3-7B-Think` es la referencia natural, pero no se incluyen sus resultados en MATH-500 en esta documentacion. Otros adaptadores similares (por ejemplo, `Alelcv27/Olmo3-7B-Math-CoT`) existen en HuggingFace, pero no se han publicado sus benchmarks. Por tanto, la comparativa no esta disponible.
+No se dispone de datos comparativos publicados en la informacion proporcionada. El modelo base `allenai/Olmo-3-7B-Think` es la referencia natural, pero no se incluyen sus resultados en MATH-500 en esta documentacion. Otros adaptadores similares (por ejemplo, `Alelcv27/Olmo3-7B-Math-CoT`) existen en Hugging Face, pero no se han publicado sus benchmarks. Por tanto, la comparativa no esta disponible.
 
 ## Limitaciones y advertencias
 
@@ -77,7 +77,7 @@ No se dispone de datos comparativos publicados en la informacion proporcionada. 
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/ssurface/cot-dialect-math-olmo3-7b-think-grpo-corr-l1
+- Adaptador en Hugging Face: https://huggingface.co/ssurface/cot-dialect-math-olmo3-7b-think-grpo-corr-l1
 - Modelo base Olmo-3-7B-Think (referencia): https://huggingface.co/allenai/Olmo-3-7B-Think
 - Articulo sobre Olmo-3-7B-Think en llm.co: https://llm.co/llms/olmo-3-7b-think
 - Articulo sobre Olmo-3-7B-Think en DEV.co: https://dev.co/ai/llms/olmo-3-7b-think

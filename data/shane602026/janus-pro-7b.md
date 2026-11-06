@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Janus-Pro-7B es un modelo multimodal unificado de tipo any-to-any desarrollado por DeepSeek, presentado en el articulo arXiv:2501.17811 (Chen et al., 2025). Su propuesta central es resolver el conflicto entre las necesidades de codificacion visual para comprension (entender imagenes) y para generacion (producir imagenes), separando la codificacion visual en dos rutas independientes dentro de una unica arquitectura transformer autorregresiva. El modelo se construye sobre DeepSeek-LLM-7b-base y se distribuye en este repositorio de HuggingFace bajo la libreria transformers.
+Janus-Pro-7B es un modelo multimodal unificado de tipo any-to-any desarrollado por DeepSeek, presentado en el articulo arXiv:2501.17811 (Chen et al., 2025). Su propuesta central es resolver el conflicto entre las necesidades de codificacion visual para comprension (entender imagenes) y para generacion (producir imagenes), separando la codificacion visual en dos rutas independientes dentro de una unica arquitectura transformer autorregresiva. El modelo se construye sobre DeepSeek-LLM-7b-base y se distribuye en este repositorio de Hugging Face bajo la libreria transformers.
 
 La relevancia del modelo radica en que unifica comprension y generacion multimodales en un solo conjunto de pesos, algo que historicamente requeria modelos especializados separados. Janus-Pro emplea SigLIP-L como codificador visual para comprension (entrada de 384 x 384) y un tokenizador de imagenes con tasa de downsample de 16 para generacion. El repositorio ocupa 14,8 GB y presenta un pipeline any-to-any.
 
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Comprension + generacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Janus-Pro-7B | 7B | no disponible | Si (rutas desacopladas) | MIT (codigo) / DeepSeek Model License (pesos) | HuggingFace |
-| Janus-Pro-1B | 1B | no disponible | Si | MIT / DeepSeek Model License | HuggingFace |
+| Janus-Pro-7B | 7B | no disponible | Si (rutas desacopladas) | MIT (codigo) / DeepSeek Model License (pesos) | Hugging Face |
+| Janus-Pro-1B | 1B | no disponible | Si | MIT / DeepSeek Model License | Hugging Face |
 | Chameleon (Meta) | 7B / 34B | no disponible | Si (tokenizacion unificada) | no disponible | no disponible |
 | Emu3 | 8B | no disponible | Si | no disponible | no disponible |
 
@@ -84,7 +84,7 @@ Los datos de comparacion de modelos alternativos no estan confirmados en la info
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SHANE602026/Janus-Pro-7B
+- Repositorio Hugging Face: https://huggingface.co/SHANE602026/Janus-Pro-7B
 - Repositorio GitHub oficial: https://github.com/deepseek-ai/Janus
 - Paper: https://arxiv.org/abs/2501.17811
 - Codificador SigLIP-L: https://huggingface.co/timm/ViT-L-16-SigLIP-384

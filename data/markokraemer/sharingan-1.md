@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la información disponible más 
 
 | Modelo | Tipo | Jugadores | Abstracción | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SHARINGAN-1 | Blueprint MCCFR + búsqueda MC-LCFR | 6-max (2-6) | 200 buckets postflop, preflop sin pérdida | Apache 2.0 | Pesos en HuggingFace, código en GitHub |
+| SHARINGAN-1 | Blueprint MCCFR + búsqueda MC-LCFR | 6-max (2-6) | 200 buckets postflop, preflop sin pérdida | Apache 2.0 | Pesos en Hugging Face, código en GitHub |
 | Pluribus (Brown & Sandholm, 2019) | Blueprint MCCFR + búsqueda | 6-max | No publicada en detalle | No aplica (no liberado) | No disponible públicamente |
 | Libratus (Brown & Sandholm) | Blueprint CFR + subgame solving | Heads-up | No publicada | No aplica | No disponible públicamente |
 | Slumbot | Bot de heads-up | Heads-up | No disponible | No disponible | Servicio en línea; SHARINGAN incluye un blueprint HU a 200 bb para tests contra él |
@@ -103,7 +103,7 @@ La comparación con Pluribus y Libratus es conceptual: SHARINGAN-1 es una reprod
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/markokraemer/sharingan-1
+- Hugging Face: https://huggingface.co/markokraemer/sharingan-1
 - Repositorio de código (Rust): https://github.com/markokraemer/poker-sharingan
 - Arena pública: https://sharingan.poker
 - Formato del servidor de inferencia: `sharingan-1/serve/README.md` dentro del repositorio de código

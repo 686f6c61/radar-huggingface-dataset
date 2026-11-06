@@ -2,7 +2,7 @@
 
 ## Resumen
 
-STL1te/Qwen3.8-Flash-Next-Uncensored-NVFP4-FP8PLE-OfficialMTP es una version cuantizada y "abliterated" (sin mecanismos de rechazo) de un modelo de la familia Qwen, publicada por el usuario STL1te en HuggingFace. Se trata de un derivado del repositorio lychee888/Qwen3.8-Flash-Next-Uncensored-NVFP4-FP8PLE, del que hereda la arquitectura y sobre el que se anade un modulo MTP (multi-token prediction) orientado a decodificacion especulativa. Los tags del repositorio la identifican como arquitectura MoE (mixture of experts) con soporte de vision y lenguaje, function calling y razonamiento.
+STL1te/Qwen3.8-Flash-Next-Uncensored-NVFP4-FP8PLE-OfficialMTP es una version cuantizada y "abliterated" (sin mecanismos de rechazo) de un modelo de la familia Qwen, publicada por el usuario STL1te en Hugging Face. Se trata de un derivado del repositorio lychee888/Qwen3.8-Flash-Next-Uncensored-NVFP4-FP8PLE, del que hereda la arquitectura y sobre el que se anade un modulo MTP (multi-token prediction) orientado a decodificacion especulativa. Los tags del repositorio la identifican como arquitectura MoE (mixture of experts) con soporte de vision y lenguaje, function calling y razonamiento.
 
 El modelo se distribuye ya cuantizado en NVFP4 con componentes en FP8 (PLE) y pesos en formato safetensors, empaquetados mediante compressed-tensors. La unica libreria de inferencia declarada es vLLM, lo que indica que el repositorio esta pensado para despliegue en servidor y no para consumo directo con llama.cpp u Ollama en el momento de su publicacion.
 
@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| STL1te/Qwen3.8-Flash-Next-Uncensored-NVFP4-FP8PLE-OfficialMTP | no disponible | no disponible | NVFP4 + FP8 | other | HuggingFace, 0 descargas |
-| lychee888/Qwen3.8-Flash-Next-Uncensored-NVFP4-FP8PLE (modelo base) | no disponible | no disponible | NVFP4 + FP8 | no disponible | HuggingFace |
+| STL1te/Qwen3.8-Flash-Next-Uncensored-NVFP4-FP8PLE-OfficialMTP | no disponible | no disponible | NVFP4 + FP8 | other | Hugging Face, 0 descargas |
+| lychee888/Qwen3.8-Flash-Next-Uncensored-NVFP4-FP8PLE (modelo base) | no disponible | no disponible | NVFP4 + FP8 | no disponible | Hugging Face |
 | Otras alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos suficientes para establecer una comparativa tecnica rigurosa. El unico modelo con el que puede compararse directamente es su base declarada, lychee888/Qwen3.8-Flash-Next-Uncensored-NVFP4-FP8PLE, del que este repositorio se diferencia por incorporar el modulo MTP denominado "OfficialMTP". Cualquier comparacion con otros modelos MoE multimodales de la familia Qwen requeriria los parametros y el contexto del modelo base, que no estan publicados en esta ficha.
@@ -94,7 +94,7 @@ No se dispone de datos suficientes para establecer una comparativa tecnica rigur
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/STL1te/Qwen3.8-Flash-Next-Uncensored-NVFP4-FP8PLE-OfficialMTP
+- Repositorio en Hugging Face: https://huggingface.co/STL1te/Qwen3.8-Flash-Next-Uncensored-NVFP4-FP8PLE-OfficialMTP
 - Modelo base declarado: https://huggingface.co/lychee888/Qwen3.8-Flash-Next-Uncensored-NVFP4-FP8PLE
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la informacion disponible.

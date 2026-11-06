@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiMo-V2.6-Flash-RL es un modelo multimodal de tipo sparse MoE (mezcla de expertos dispersa) desarrollado por Xiaomi, publicado originalmente en el repositorio oficial XiaomiMiMo/MiMo-V2.6-Flash-RL y re-subido a HuggingFace por el usuario ahmed-amedo. Es el checkpoint "equilibrado en eficiencia" de la serie MiMo-V2.6, disenado para escalar el aprendizaje por refuerzo (RL) hacia la auto-mejora: escalado de computo de RL, diversidad de entornos y computo de evaluadores en paralelo. Cuenta con 309B parametros totales y 15B activos por token, con una ventana de contexto de 1M tokens y capacidad nativa para texto, imagen, video y audio.
+MiMo-V2.6-Flash-RL es un modelo multimodal de tipo sparse MoE (mezcla de expertos dispersa) desarrollado por Xiaomi, publicado originalmente en el repositorio oficial XiaomiMiMo/MiMo-V2.6-Flash-RL y re-subido a Hugging Face por el usuario ahmed-amedo. Es el checkpoint "equilibrado en eficiencia" de la serie MiMo-V2.6, disenado para escalar el aprendizaje por refuerzo (RL) hacia la auto-mejora: escalado de computo de RL, diversidad de entornos y computo de evaluadores en paralelo. Cuenta con 309B parametros totales y 15B activos por token, con una ventana de contexto de 1M tokens y capacidad nativa para texto, imagen, video y audio.
 
 El modelo resuelve tareas de agente de horizonte largo: ejecucion de codigo en repositorios completos, uso de herramientas en multiples pasos, interaccion con interfaces graficas, analisis visual y tareas de ciberseguridad. Su relevancia actual reside en dos innovaciones concretas: un unico run mixto de RL ("You Only RL Once") que entrena a la vez dominios de codigo, agentes generales, vision y ciberseguridad, y un bucle de auto-mejora mediante evaluacion agentica por grupos (GRS y GAR) que permite rankear trayectorias correctas en lugar de limitarse a una senal binaria de exito o fracaso.
 
@@ -93,10 +93,10 @@ La tabla original incluye una seccion de ciberseguridad que aparece truncada en 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento destacado |
 |---|---|---|---|---|---|
-| MiMo-V2.6-Flash-RL (este repositorio) | 309B totales / 15B activos | 1M tokens | MIT (metadatos HF) | HuggingFace, re-subida de terceros | 67,9 en DeepSWE v1.1; 87,6 en Terminal Bench 2.1 |
-| MiMo-V2.6-Flash-RL (oficial de Xiaomi) | 309B totales / 15B activos | 1M tokens | MIT | HuggingFace y ModelScope, repositorio oficial | Identico al anterior, con procedencia verificada |
-| MiMo-V2.6-Pro-RL | no disponible (superior a Flash) | 1M tokens | MIT | HuggingFace y ModelScope | 71,9 en DeepSWE v1.1; 76,9 en Toolathlon-Verified; 1673 en GDPval-AA 2.1 |
-| MiMo-V2.5-Pro | no disponible | no disponible | no disponible | HuggingFace | 19,0 en DeepSWE v1.1; 40,4 en MiMo Code Bench |
+| MiMo-V2.6-Flash-RL (este repositorio) | 309B totales / 15B activos | 1M tokens | MIT (metadatos HF) | Hugging Face, re-subida de terceros | 67,9 en DeepSWE v1.1; 87,6 en Terminal Bench 2.1 |
+| MiMo-V2.6-Flash-RL (oficial de Xiaomi) | 309B totales / 15B activos | 1M tokens | MIT | Hugging Face y ModelScope, repositorio oficial | Identico al anterior, con procedencia verificada |
+| MiMo-V2.6-Pro-RL | no disponible (superior a Flash) | 1M tokens | MIT | Hugging Face y ModelScope | 71,9 en DeepSWE v1.1; 76,9 en Toolathlon-Verified; 1673 en GDPval-AA 2.1 |
+| MiMo-V2.5-Pro | no disponible | no disponible | no disponible | Hugging Face | 19,0 en DeepSWE v1.1; 40,4 en MiMo Code Bench |
 
 La model card incluye tambien comparaciones con modelos cerrados de referencia (Claude Opus 5, GPT-5.6 Sol y Claude Fable 5), que se recogen en la tabla de benchmarks. La informacion disponible no permite comparar parametros ni contexto de esos modelos.
 
@@ -110,12 +110,12 @@ La model card incluye tambien comparaciones con modelos cerrados de referencia (
 - Alineacion y seguridad: el entrenamiento incluye cribado adversarial y verificacion cruzada, pero la model card no publica resultados de evaluaciones de seguridad, sesgo o toxicidad.
 - Benchmarks autodeclarados: todos los numeros proceden de la model card del autor del modelo. No hay verificacion independiente ni datos de MMLU, HumanEval o GSM8K.
 - Seccion de ciberseguridad incompleta: la tabla de resultados aparece truncada en la informacion disponible, por lo que no se puede evaluar esa capacidad.
-- Licencia: los metadatos de HuggingFace y la model card indican licencia MIT, lo que en principio permite uso comercial. No obstante, al tratarse de una re-subida de terceros, conviene confirmar la licencia en el repositorio oficial de Xiaomi antes de un uso comercial.
+- Licencia: los metadatos de Hugging Face y la model card indican licencia MIT, lo que en principio permite uso comercial. No obstante, al tratarse de una re-subida de terceros, conviene confirmar la licencia en el repositorio oficial de Xiaomi antes de un uso comercial.
 - Coste de despliegue: con 310,76B parametros totales y un repositorio de 177,8 GB, la inferencia requiere infraestructura multi-GPU. No es viable en hardware de consumo.
 
 ## Enlaces
 
-- Repositorio en HuggingFace (objeto de esta ficha): https://huggingface.co/ahmed-amedo/MiMo-V2.6-Flash-RL
+- Repositorio en Hugging Face (objeto de esta ficha): https://huggingface.co/ahmed-amedo/MiMo-V2.6-Flash-RL
 - Repositorio oficial de Xiaomi: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL
 - Repositorio oficial de MiMo-V2.6-Pro-RL: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL
 - ModelScope de MiMo-V2.6-Flash-RL: https://www.modelscope.cn/models/XiaomiMiMo/MiMo-V2.6-Flash-RL

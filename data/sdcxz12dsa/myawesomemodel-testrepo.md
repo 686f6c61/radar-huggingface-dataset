@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario SDCXZ12DSA bajo el identificador `SDCXZ12DSA/MyAwesomeModel-TestRepo`. Por la informacion disponible se trata de un repositorio de prueba: el propio identificador incluye el sufijo "TestRepo", acumula 0 descargas y 0 "likes", ocupa 0,0 GB y fue creado y actualizado con apenas 16 segundos de diferencia el 10 de septiembre de 2026. Es decir, no hay artefactos de pesos publicados y cualquier evaluacion practica del modelo es hoy imposible.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario SDCXZ12DSA bajo el identificador `SDCXZ12DSA/MyAwesomeModel-TestRepo`. Por la informacion disponible se trata de un repositorio de prueba: el propio identificador incluye el sufijo "TestRepo", acumula 0 descargas y 0 "likes", ocupa 0,0 GB y fue creado y actualizado con apenas 16 segundos de diferencia el 10 de septiembre de 2026. Es decir, no hay artefactos de pesos publicados y cualquier evaluacion practica del modelo es hoy imposible.
 
 La model card, no obstante, describe un modelo conversacional orientado a razonamiento, con mejoras declaradas en profundidad de inferencia, soporte de function calling y reduccion de alucinaciones respecto a una version anterior. El autor reporta una subida de precision en AIME 2025 del 70 % al 87,5 %, acompanada de un incremento del consumo medio de tokens por pregunta de 12K a 23K, lo que sugiere un modo de pensamiento extendido. Tambien se documentan recomendaciones de uso (system prompt con fecha, temperatura 0,6) y plantillas para carga de ficheros y busqueda web.
 
@@ -21,7 +21,7 @@ Existe una contradiccion relevante entre las etiquetas del repositorio y el cont
 | Licencia | MIT |
 | Formato de pesos | no disponible (el repositorio ocupa 0,0 GB; no se han publicado pesos) |
 | Libreria declarada | transformers (con soporte declarado de PyTorch) |
-| Pipeline declarado en HuggingFace | feature-extraction |
+| Pipeline declarado en Hugging Face | feature-extraction |
 | Variantes mencionadas | MyAwesomeModel y MyAwesomeModel-Small (misma arquitectura que el modelo base, tokenizador compartido con el modelo principal) |
 | Fecha de creacion del repositorio | 10 de septiembre de 2026 |
 | Ultima actualizacion | 10 de septiembre de 2026 |
@@ -123,7 +123,7 @@ Los tres modelos de referencia estan anonimizados en la model card y no se aport
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SDCXZ12DSA/MyAwesomeModel-TestRepo
+- Hugging Face: https://huggingface.co/SDCXZ12DSA/MyAwesomeModel-TestRepo
 - Repositorio de codigo para ejecucion local: mencionado en la model card, sin URL disponible
 - Sitio web oficial con interfaz de chat y API: mencionado en la model card, sin URL disponible
 - Paper o informe tecnico: no disponible

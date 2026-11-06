@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este checkpoint (`tofu-phi-1_5-...-epoch17`) | 1.418 M | no disponible | Apache 2.0 | HuggingFace, 0 descargas | Checkpoint de desaprendizaje, época 17/20 |
-| `microsoft/phi-1_5` | 1.300 M | 2048 | MIT | HuggingFace, ampliamente usado | Modelo base original, sin ajuste TOFU |
-| `locuslab/tofu_ft_phi-1.5` | 1.300 M aprox. | 2048 | no disponible en la información | HuggingFace | Ajuste fino TOFU sin desaprendizaje; referencia "antes" |
-| `microsoft/phi-2` | 2.700 M | 2048 | MIT | HuggingFace | Sucesor de mayor tamaño, no específico de TOFU |
+| Este checkpoint (`tofu-phi-1_5-...-epoch17`) | 1.418 M | no disponible | Apache 2.0 | Hugging Face, 0 descargas | Checkpoint de desaprendizaje, época 17/20 |
+| `microsoft/phi-1_5` | 1.300 M | 2048 | MIT | Hugging Face, ampliamente usado | Modelo base original, sin ajuste TOFU |
+| `locuslab/tofu_ft_phi-1.5` | 1.300 M aprox. | 2048 | no disponible en la información | Hugging Face | Ajuste fino TOFU sin desaprendizaje; referencia "antes" |
+| `microsoft/phi-2` | 2.700 M | 2048 | MIT | Hugging Face | Sucesor de mayor tamaño, no específico de TOFU |
 
 La comparación directa más relevante es con `locuslab/tofu_ft_phi-1.5` (modelo del que deriva y referencia de rendimiento "sin olvidar") y con `microsoft/phi-1_5` (origen de los pesos reinicializados). No se dispone de datos de rendimiento comparado en la información proporcionada.
 
@@ -85,7 +85,7 @@ La comparación directa más relevante es con `locuslab/tofu_ft_phi-1.5` (modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_reset_head-epoch17
+- Hugging Face: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_reset_head-epoch17
 - Modelo base del ajuste: https://huggingface.co/locuslab/tofu_ft_phi-1.5
 - Modelo original Phi-1.5: https://huggingface.co/microsoft/phi-1_5
 - Dataset TOFU (referencia): no disponible en la información proporcionada

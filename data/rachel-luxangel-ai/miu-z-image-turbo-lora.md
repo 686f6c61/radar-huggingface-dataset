@@ -4,7 +4,7 @@
 
 ## Resumen
 
-`rachel-luxangel-ai/miu-z-image-turbo-lora` es un adaptador LoRA de texto a imagen publicado en HuggingFace cuyo objetivo es reproducir la identidad facial de una persona real, la actriz adulta Miu Shiromine (nacida el 16 de febrero de 1997). El adaptador se entrena sobre el modelo de difusion `Tongyi-MAI/Z-Image-Turbo` y se activa con el token disparador `miu`, acompanado de una cadena fija de rasgos faciales que actua como bloqueo de identidad. El repositorio se marca explicitamente como contenido para adultos (`not-for-all-audiences`, `nsfw`) y su licencia es "other".
+`rachel-luxangel-ai/miu-z-image-turbo-lora` es un adaptador LoRA de texto a imagen publicado en Hugging Face cuyo objetivo es reproducir la identidad facial de una persona real, la actriz adulta Miu Shiromine (nacida el 16 de febrero de 1997). El adaptador se entrena sobre el modelo de difusion `Tongyi-MAI/Z-Image-Turbo` y se activa con el token disparador `miu`, acompanado de una cadena fija de rasgos faciales que actua como bloqueo de identidad. El repositorio se marca explicitamente como contenido para adultos (`not-for-all-audiences`, `nsfw`) y su licencia es "other".
 
 Se trata, por tanto, de un adaptador de bajo rango (LoRA) y no de un modelo fundacional: el repositorio pesa 0,1 GB y contiene un unico archivo de pesos, `zit-miu_000003000.safetensors`, resultado de 3000 pasos de entrenamiento en un trabajo de RunComfy identificado como `zit-miu`. El peso de inferencia recomendado por el autor es 0,8 y el material de muestra incluye tanto escenas de nivel 1 (retratos y escenas cotidianas) como contenido explicito de nivel 2 y 3.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - El requisito real de VRAM lo determina `Tongyi-MAI/Z-Image-Turbo`; no se dispone en la informacion proporcionada de cifras oficiales de VRAM para ese modelo base.
 - No se especifican GPU recomendadas en la documentacion del adaptador.
 - No se indica si el conjunto (base mas LoRA) cabe en GPU de consumo; depende enteramente del modelo base.
-- Opciones de despliegue: al declararse `library_name: diffusers`, la via natural es la libreria diffusers de HuggingFace. No se documentan integraciones con vLLM, llama.cpp, Ollama o TGI, que en cualquier caso no aplican a un modelo de difusion.
+- Opciones de despliegue: al declararse `library_name: diffusers`, la via natural es la libreria diffusers de Hugging Face. No se documentan integraciones con vLLM, llama.cpp, Ollama o TGI, que en cualquier caso no aplican a un modelo de difusion.
 - Latencia y throughput: no disponibles. Dependen del modelo base, del numero de pasos de muestreo y del hardware.
 
 ## Comparativa con modelos similares
@@ -93,7 +93,7 @@ No se dispone de datos tecnicos ni de rendimiento de alternativas concretas en l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rachel-luxangel-ai/miu-z-image-turbo-lora
+- Repositorio en Hugging Face: https://huggingface.co/rachel-luxangel-ai/miu-z-image-turbo-lora
 - Modelo base: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
 - Paper, blog o repositorio del autor: no disponibles en la informacion proporcionada.
 - La busqueda web realizada no devolvio resultados relevantes sobre el modelo: los enlaces obtenidos correspondian al nombre propio "Rachel" (Wikipedia, articulos sobre el nombre, canales de contenido infantil y una tienda de moda) y no guardan relacion con este adaptador.

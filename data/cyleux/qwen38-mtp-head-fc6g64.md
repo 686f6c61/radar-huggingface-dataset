@@ -76,6 +76,6 @@ La comparativa directa con otras cabezas MTP cuantizadas no está disponible. La
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Cyleux/qwen38-mtp-head-fc6g64
+- Repositorio Hugging Face: https://huggingface.co/Cyleux/qwen38-mtp-head-fc6g64
 - Modelo base: https://huggingface.co/EigenLabs/Qwen3.8-27B-MTP-bf16
 - Framework MLX: https://github.com/ml-explore/mlx

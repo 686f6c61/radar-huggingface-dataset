@@ -105,7 +105,7 @@ No disponible. La informacion proporcionada no incluye resultados ni especificac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AxisTilted2/tartanimu-iros2026
+- Modelo en Hugging Face: https://huggingface.co/AxisTilted2/tartanimu-iros2026
 - Informe tecnico: `report.pdf` (enlazado desde la model card del repositorio)
 - Mediciones en RTX 4090 y CSV de referencia: `verification/20260920_rtx4090/RESULT.md`
 - Hashes de la release: `release_files.sha256.json`

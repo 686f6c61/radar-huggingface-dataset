@@ -98,7 +98,7 @@ La comparación directa con modelos de otras familias no puede completarse con l
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Huihui-Ministral-3-3B-Reasoning-2512-abliterated-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Huihui-Ministral-3-3B-Reasoning-2512-abliterated-GGUF
 - Modelo base (safetensors): https://huggingface.co/huihui-ai/Huihui-Ministral-3-3B-Reasoning-2512-abliterated
 - Cuants ponderados por imatrix: https://huggingface.co/mradermacher/Huihui-Ministral-3-3B-Reasoning-2512-abliterated-i1-GGUF
 - Página de resumen y descargas del cuantizador: https://hf.tst.eu/model#Huihui-Ministral-3-3B-Reasoning-2512-abliterated-GGUF

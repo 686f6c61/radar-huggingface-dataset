@@ -75,7 +75,7 @@ La ganancia frente al CRF es de +0.033 en S, con intervalo de bootstrap al 95% d
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OVERRIDE (este modelo) | 184M (DeBERTa-v3-base) | no disponible | Etiquetado de revisiones en diálogo | MIT | HuggingFace + GitHub + demo |
+| OVERRIDE (este modelo) | 184M (DeBERTa-v3-base) | no disponible | Etiquetado de revisiones en diálogo | MIT | Hugging Face + GitHub + demo |
 | BERT-base (primera versión de datos) | ~110M | no disponible | Misma tarea | no disponible | Referenciado en la model card, sin enlace |
 | CRF | no disponible | no disponible | Misma tarea | no disponible | Referenciado en la model card, sin enlace |
 | Modelo de decisión zero-shot Laya | no disponible | no disponible | Misma tarea | no disponible | Referenciado en la model card, sin enlace |
@@ -93,11 +93,11 @@ No se dispone de datos de parámetros, contexto ni licencia de las alternativas 
 - Riesgo de alucinación: no aplica en el sentido generativo, pero sí existe riesgo de etiquetados espurios en texto fuera de distribución.
 - Sesgos conocidos: no documentados por el autor.
 - Licencia MIT: permite uso comercial y modificación, pero el modelo base DeBERTa-v3-base conserva su propia licencia, que conviene verificar antes de un despliegue comercial.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y los pesos se distribuyen como `state_dict` en media precisión que debe cargarse en float32, lo que exige usar el código del repositorio en lugar de un pipeline estándar de HuggingFace.
+- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y los pesos se distribuyen como `state_dict` en media precisión que debe cargarse en float32, lo que exige usar el código del repositorio en lugar de un pipeline estándar de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/enes123erman/override-checkpoints
+- Modelo en Hugging Face: https://huggingface.co/enes123erman/override-checkpoints
 - Repositorio de código, protocolos y resultados: https://github.com/eneserman/OVERRIDE
 - Demo en vivo: https://override-demo.vercel.app
 - Dataset: https://huggingface.co/datasets/enes123erman/override-dataset

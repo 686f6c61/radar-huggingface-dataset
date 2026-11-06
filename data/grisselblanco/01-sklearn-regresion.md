@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`grisselblanco/01-sklearn-regresion` es un modelo de regresion lineal entrenado con scikit-learn que predice el precio de una vivienda en miles de dolares estadounidenses a partir de tres variables tabulares: superficie en metros cuadrados (`m2`), presencia de balcon (`balcon`) y presencia de ascensor (`ascensor`). Lo publica la usuaria de HuggingFace `grisselblanco` como ejemplo pedagogico para el IFTS N.º 18, con la docente Cynthia M. Villagra como responsable, y su proposito explicito es ilustrar el ciclo completo de publicacion de un modelo supervisado: entrenamiento, serializacion con `joblib` y comparticion en el Hub.
+`grisselblanco/01-sklearn-regresion` es un modelo de regresion lineal entrenado con scikit-learn que predice el precio de una vivienda en miles de dolares estadounidenses a partir de tres variables tabulares: superficie en metros cuadrados (`m2`), presencia de balcon (`balcon`) y presencia de ascensor (`ascensor`). Lo publica la usuaria de Hugging Face `grisselblanco` como ejemplo pedagogico para el IFTS N.º 18, con la docente Cynthia M. Villagra como responsable, y su proposito explicito es ilustrar el ciclo completo de publicacion de un modelo supervisado: entrenamiento, serializacion con `joblib` y comparticion en el Hub.
 
-No se trata de un modelo de lenguaje ni de una red neuronal: es un estimador clasico de minimos cuadrados ordinarios con cuatro parametros aprendidos (tres pesos y un sesgo). El dataset es sintetico, de 200 registros generados con una formula lineal conocida mas ruido, lo que hace que el modelo recupere casi exactamente la funcion generadora. Su relevancia es didactica, no productiva: sirve como plantilla minima reproducible para quienes se inician en el ecosistema de HuggingFace con modelos tabulares.
+No se trata de un modelo de lenguaje ni de una red neuronal: es un estimador clasico de minimos cuadrados ordinarios con cuatro parametros aprendidos (tres pesos y un sesgo). El dataset es sintetico, de 200 registros generados con una formula lineal conocida mas ruido, lo que hace que el modelo recupere casi exactamente la funcion generadora. Su relevancia es didactica, no productiva: sirve como plantilla minima reproducible para quienes se inician en el ecosistema de Hugging Face con modelos tabulares.
 
 El repositorio ocupa 0,0 GB, no registra descargas ni likes en el momento de la consulta y esta etiquetado con licencia MIT, idioma espanol y pipeline `tabular-regression`. La ficha siguiente describe sus especificaciones, rendimiento declarado y limitaciones tal como aparecen en la model card.
 
@@ -39,7 +39,7 @@ Los datos de entrenamiento son 200 registros sinteticos generados en `train.py` 
 ## Casos de uso
 
 - Docencia de regresion lineal: el modelo sirve como ejemplo ejecutable en clase para mostrar como se ajustan coeficientes, se evalua con MAE y R² y se serializa un estimador de scikit-learn.
-- Plantilla de publicacion en HuggingFace: util para ensenar el flujo `hf_hub_download` + `joblib.load` con un repositorio minimo y sin dependencias pesadas.
+- Plantilla de publicacion en Hugging Face: util para ensenar el flujo `hf_hub_download` + `joblib.load` con un repositorio minimo y sin dependencias pesadas.
 - Prueba de infraestructura de inferencia tabular: al ocupar 0,0 GB y requerir solo scikit-learn y pandas, permite validar pipelines de serving para modelos clasicos sin coste de GPU.
 - Baseline de referencia en proyectos de regresion inmobiliaria: sus coeficientes (1.503 USD/m², 8.719 USD por balcon, 11.988 USD por ascensor) sirven como punto de comparacion inicial antes de probar modelos no lineales.
 - Ejercicio de analisis de sensibilidad: al ser lineal y aditivo, permite calcular derivadas parciales exactas y discutir cuando esa suposicion falla en datos reales.
@@ -71,7 +71,7 @@ No disponible. La informacion proporcionada no incluye otros modelos tabulares c
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `grisselblanco/01-sklearn-regresion` | 4 | No aplica | MAE 3,08; R² 0,989 | MIT | HuggingFace |
+| `grisselblanco/01-sklearn-regresion` | 4 | No aplica | MAE 3,08; R² 0,989 | MIT | Hugging Face |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -87,7 +87,7 @@ No disponible. La informacion proporcionada no incluye otros modelos tabulares c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/grisselblanco/01-sklearn-regresion
+- Modelo en Hugging Face: https://huggingface.co/grisselblanco/01-sklearn-regresion
 - Documentacion de scikit-learn sobre `LinearRegression`: https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html
 - Documentacion de `joblib` sobre persistencia de modelos: https://joblib.readthedocs.io/en/stable/persistence.html
 - Documentacion de `huggingface_hub.hf_hub_download`: https://huggingface.co/docs/huggingface_hub/guides/download

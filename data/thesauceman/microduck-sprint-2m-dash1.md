@@ -81,7 +81,7 @@ No se dispone de informacion sobre políticas comparables de la misma categoría
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TheSauceman/microduck-sprint-2m-dash1
+- Modelo en Hugging Face: https://huggingface.co/TheSauceman/microduck-sprint-2m-dash1
 - Robot microduck (Pollen Robotics): https://github.com/pollen-robotics/microduck
 - Repositorio de desafios y entrenamiento: https://github.com/SteveTarter/microduck-challenges
 - Paper: no disponible

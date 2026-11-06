@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio vegapunkone/ner-model-japanese es un modelo publicado en HuggingFace por el usuario vegapunkone bajo licencia Apache 2.0. Por el propio identificador del repositorio se deduce que su proposito es el reconocimiento de entidades nombradas (NER, Named Entity Recognition) en japones, aunque la model card no confirma ni la tarea exacta, ni la arquitectura, ni el tamano del modelo, ni el esquema de etiquetado empleado. El repositorio se creo y actualizo el 12 de septiembre de 2026 y, en el momento de redactar esta ficha, acumula 0 descargas y 0 "likes", por lo que se trata de un artefacto sin traccion ni validacion por parte de la comunidad.
+El repositorio vegapunkone/ner-model-japanese es un modelo publicado en Hugging Face por el usuario vegapunkone bajo licencia Apache 2.0. Por el propio identificador del repositorio se deduce que su proposito es el reconocimiento de entidades nombradas (NER, Named Entity Recognition) en japones, aunque la model card no confirma ni la tarea exacta, ni la arquitectura, ni el tamano del modelo, ni el esquema de etiquetado empleado. El repositorio se creo y actualizo el 12 de septiembre de 2026 y, en el momento de redactar esta ficha, acumula 0 descargas y 0 "likes", por lo que se trata de un artefacto sin traccion ni validacion por parte de la comunidad.
 
 La model card publicada no contiene mas que el bloque de metadatos con la licencia (apache-2.0): no incluye descripcion funcional, datos de entrenamiento, idiomas declarados, resultados de benchmarks ni instrucciones de uso. La busqueda web realizada no ha devuelto ninguna fuente relacionada con el modelo; los unicos resultados obtenidos son paginas de agencias de viajes sobre vuelos a Phuket, completamente ajenas al ambito del modelo.
 
@@ -97,7 +97,7 @@ No disponible. La informacion proporcionada no permite identificar la arquitectu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/vegapunkone/ner-model-japanese
+- Repositorio en Hugging Face: https://huggingface.co/vegapunkone/ner-model-japanese
 - Model card: https://huggingface.co/vegapunkone/ner-model-japanese/blob/main/README.md
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada; los unicos resultados devueltos corresponden a paginas de viajes sin relacion con el modelo.

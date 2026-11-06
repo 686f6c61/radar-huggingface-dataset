@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `jelllyyy11/gemma-next-token-model` se presenta en HuggingFace como un modelo de la librería `transformers`, con etiquetas que sugieren compatibilidad con `safetensors` y `endpoints_compatible`, además de una referencia al artículo arXiv 1910.09700 (relacionado con estimación de emisiones de carbono, no con la arquitectura del modelo). Sin embargo, la información publicada es mínima: el tamaño del repositorio es de 0,0 GB, lo que indica que no contiene pesos ni archivos de modelo reales, y la model card es una plantilla automática sin rellenar.
+El repositorio `jelllyyy11/gemma-next-token-model` se presenta en Hugging Face como un modelo de la librería `transformers`, con etiquetas que sugieren compatibilidad con `safetensors` y `endpoints_compatible`, además de una referencia al artículo arXiv 1910.09700 (relacionado con estimación de emisiones de carbono, no con la arquitectura del modelo). Sin embargo, la información publicada es mínima: el tamaño del repositorio es de 0,0 GB, lo que indica que no contiene pesos ni archivos de modelo reales, y la model card es una plantilla automática sin rellenar.
 
 A fecha de creación (14 de agosto de 2026, según los metadatos), el repositorio no ha recibido descargas ni valoraciones. No se dispone de datos sobre arquitectura, parámetros, licencia, idiomas ni capacidades. Por tanto, esta ficha documenta la ausencia de información y advierte de que el repositorio no es utilizable como modelo funcional en su estado actual.
 
@@ -54,5 +54,5 @@ No disponible. No existe información suficiente para comparar este repositorio 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jelllyyy11/gemma-next-token-model
+- Repositorio en Hugging Face: https://huggingface.co/jelllyyy11/gemma-next-token-model
 - Artículo arXiv 1910.09700 (referenciado en tags, sobre estimación de emisiones de carbono): https://arxiv.org/abs/1910.09700

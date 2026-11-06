@@ -6,7 +6,7 @@
 
 Se trata de un modelo de investigación, no de un producto listo para producción: el autor lo etiqueta explícitamente como "research" y el repositorio no incluye datos de benchmarks ni métricas de calidad objetivas. Su interés radica en que documenta un pipeline de ajuste fino reproducible sobre la arquitectura Qwen3-TTS, con correcciones explícitas de bugs del script oficial de entrenamiento (`sft_12hz.py`), lo que puede servir de referencia a otros equipos que quieran adaptar Qwen3-TTS a un idioma o a una voz concreta.
 
-La relevancia actual es limitada fuera del ámbito de la investigación en TTS multilingüe: el modelo solo soporta telugu, tiene cero descargas y cero likes en HuggingFace, y su licencia Apache 2.0 permite uso comercial, pero no se han publicado evaluaciones de naturalidad, inteligibilidad ni similitud de hablante. Es, en la práctica, un checkpoint experimental más que un modelo desplegable.
+La relevancia actual es limitada fuera del ámbito de la investigación en TTS multilingüe: el modelo solo soporta telugu, tiene cero descargas y cero likes en Hugging Face, y su licencia Apache 2.0 permite uso comercial, pero no se han publicado evaluaciones de naturalidad, inteligibilidad ni similitud de hablante. Es, en la práctica, un checkpoint experimental más que un modelo desplegable.
 
 ## Especificaciones técnicas
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `sw-voice/qwen3-tts-12hz-1.7b-swamiji-te-stageB-navaratri-lr1e-6-5ep` | 1.7B | no disponible | telugu | Apache 2.0 | HuggingFace (0 descargas) |
-| `sw-voice/qwen3-tts-12hz-1.7b-swamiji-te-stageA-reuse87h-lr1e-6-1ep` (modelo base) | 1.7B | no disponible | telugu | Apache 2.0 | HuggingFace |
-| Qwen3-TTS original (familia) | 1.7B (variantes) | no disponible | multilingüe | no disponible en esta ficha | HuggingFace / Alibaba |
+| `sw-voice/qwen3-tts-12hz-1.7b-swamiji-te-stageB-navaratri-lr1e-6-5ep` | 1.7B | no disponible | telugu | Apache 2.0 | Hugging Face (0 descargas) |
+| `sw-voice/qwen3-tts-12hz-1.7b-swamiji-te-stageA-reuse87h-lr1e-6-1ep` (modelo base) | 1.7B | no disponible | telugu | Apache 2.0 | Hugging Face |
+| Qwen3-TTS original (familia) | 1.7B (variantes) | no disponible | multilingüe | no disponible en esta ficha | Hugging Face / Alibaba |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sw-voice/qwen3-tts-12hz-1.7b-swamiji-te-stageB-navaratri-lr1e-6-5ep
+- Modelo en Hugging Face: https://huggingface.co/sw-voice/qwen3-tts-12hz-1.7b-swamiji-te-stageB-navaratri-lr1e-6-5ep
 - Modelo base (stage A): https://huggingface.co/sw-voice/qwen3-tts-12hz-1.7b-swamiji-te-stageA-reuse87h-lr1e-6-1ep
 - Dataset de entrenamiento (referenciado en la model card): `sw-voice/swamiji-navaratri-telugu-reuse-themes`
 - Código del experimento (referenciado en la model card): `swamiji-tts research/exp-iterations/08-qwen3-tts/experiments/03-swamiji-te-two-stage`

@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes, por lo 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/G4-Jamet-26B-A4B-MK-1-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/G4-Jamet-26B-A4B-MK-1-i1-GGUF
 - Modelo base: https://huggingface.co/Hastagaras/G4-Jamet-26B-A4B-MK-1
 - Cuantizaciones estaticas (incluye ficheros mmproj): https://huggingface.co/mradermacher/G4-Jamet-26B-A4B-MK-1-GGUF
 - Pagina de resumen del autor: https://hf.tst.eu/model#G4-Jamet-26B-A4B-MK-1-i1-GGUF

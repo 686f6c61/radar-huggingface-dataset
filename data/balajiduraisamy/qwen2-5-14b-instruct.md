@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `balajiduraisamy/Qwen2.5-14B-Instruct` es un fine-tune del modelo base `Qwen/Qwen2.5-14B`, desarrollado por el usuario balajiduraisamy y publicado en HuggingFace bajo licencia Apache-2.0. Se trata de un modelo de generación de texto orientado a conversación, con pipeline `text-generation` y compatible con la librería `transformers`. El repositorio está marcado como gated, por lo que es necesario aceptar condiciones para acceder a los pesos.
+El modelo `balajiduraisamy/Qwen2.5-14B-Instruct` es un fine-tune del modelo base `Qwen/Qwen2.5-14B`, desarrollado por el usuario balajiduraisamy y publicado en Hugging Face bajo licencia Apache-2.0. Se trata de un modelo de generación de texto orientado a conversación, con pipeline `text-generation` y compatible con la librería `transformers`. El repositorio está marcado como gated, por lo que es necesario aceptar condiciones para acceder a los pesos.
 
 El modelo cuenta con 14.770.033.664 parámetros totales, lo que lo sitúa en la categoría de modelos de 14B. Al ser un fine-tune del modelo Qwen2.5-14B, hereda la arquitectura transformer decoder-only del modelo original, aunque la información disponible no especifica si se han realizado cambios en la arquitectura o en el proceso de entrenamiento. El tamaño del repositorio es de 29.5 GB, con pesos en formato `safetensors`.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| balajiduraisamy/Qwen2.5-14B-Instruct | 14.7B | no disponible | Apache-2.0 | Gated en HuggingFace |
+| balajiduraisamy/Qwen2.5-14B-Instruct | 14.7B | no disponible | Apache-2.0 | Gated en Hugging Face |
 | Qwen/Qwen2.5-14B-Instruct | 14.7B | 32K | Apache-2.0 | Acceso abierto |
 | Qwen/Qwen2.5-14B | 14.7B | 32K | Apache-2.0 | Acceso abierto |
 
@@ -73,11 +73,11 @@ El modelo comparado con el original `Qwen/Qwen2.5-14B-Instruct` presenta el mism
 - Sesgos conocidos: al ser un fine-tune de un modelo base, puede heredar sesgos presentes en los datos de entrenamiento originales. No se dispone de evaluaciones específicas de sesgos para este repositorio.
 - Riesgo de alucinacion: como cualquier modelo de lenguaje, puede generar información incorrecta o inventada. No hay datos sobre la tasa de alucinación de este fine-tune.
 - Limitaciones de contexto o idioma: el repositorio solo indica soporte para inglés, por lo que no se garantiza un rendimiento adecuado en otros idiomas. La longitud de contexto no está confirmada, lo que puede afectar a tareas con documentos largos.
-- Restricciones de licencia para uso comercial: la licencia Apache-2.0 permite uso comercial, pero el acceso al modelo está restringido y requiere aceptar condiciones en HuggingFace, lo que puede implicar términos adicionales.
+- Restricciones de licencia para uso comercial: la licencia Apache-2.0 permite uso comercial, pero el acceso al modelo está restringido y requiere aceptar condiciones en Hugging Face, lo que puede implicar términos adicionales.
 - Importante para produccion: al no disponer de documentación sobre el proceso de entrenamiento ni de benchmarks, se recomienda evaluar el modelo exhaustivamente antes de desplegarlo en entornos críticos. El autor y la procedencia del fine-tune no están verificados.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/balajiduraisamy/Qwen2.5-14B-Instruct
+- Repositorio en Hugging Face: https://huggingface.co/balajiduraisamy/Qwen2.5-14B-Instruct
 - Modelo base Qwen2.5-14B-Instruct: https://huggingface.co/Qwen/Qwen2.5-14B-Instruct
 - Modelo base Qwen2.5-14B: https://huggingface.co/Qwen/Qwen2.5-14B

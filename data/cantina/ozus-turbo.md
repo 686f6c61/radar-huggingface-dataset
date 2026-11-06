@@ -71,7 +71,7 @@ No se dispone de informacion suficiente para comparar con otros modelos de face 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Cantina/ozus-turbo
+- Repositorio Hugging Face: https://huggingface.co/Cantina/ozus-turbo
 - Release 1.2: https://huggingface.co/Cantina/Ozus-turbo-1.2
 - Release 1.3: https://huggingface.co/Cantina/Ozus-Turbo-1.3
 - Sitio web de Cantina: https://cantina.com/

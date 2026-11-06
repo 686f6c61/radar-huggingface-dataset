@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Apriel-15B-rust-sft-run1-eb32-e4-lr1e-04-r64 es un adaptador de ajuste fino supervisado (SFT) publicado por el usuario nmuendler en HuggingFace. No se trata de un modelo completo, sino de un adaptador PEFT/LoRA que debe cargarse sobre el modelo base ServiceNow-AI/Apriel-Nemotron-15b-Thinker, un modelo de 15.000 millones de parametros segun el identificador del propio repositorio base. El repositorio ocupa 1,2 GB y se distribuye en formato safetensors bajo la libreria PEFT 0.14.0.
+Apriel-15B-rust-sft-run1-eb32-e4-lr1e-04-r64 es un adaptador de ajuste fino supervisado (SFT) publicado por el usuario nmuendler en Hugging Face. No se trata de un modelo completo, sino de un adaptador PEFT/LoRA que debe cargarse sobre el modelo base ServiceNow-AI/Apriel-Nemotron-15b-Thinker, un modelo de 15.000 millones de parametros segun el identificador del propio repositorio base. El repositorio ocupa 1,2 GB y se distribuye en formato safetensors bajo la libreria PEFT 0.14.0.
 
 El nombre del repositorio codifica la configuracion del entrenamiento: un ajuste sobre datos en lenguaje Rust, con rango LoRA 64 (r64), tasa de aprendizaje 1e-04 (lr1e-04) y 4 epocas (e4). Esto apunta a un experimento de especializacion del modelo base en generacion y comprension de codigo Rust, presumiblemente orientado a investigacion y reproducibilidad mas que a un despliegue de produccion.
 

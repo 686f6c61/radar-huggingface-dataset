@@ -2,7 +2,7 @@
 
 ## Resumen
 
-IDA_Edge es un modelo de lenguaje causal desarrollado por KissTheHabit, publicado en la plataforma HuggingFace en mayo de 2026 como parte de la familia "IDA" junto con el modelo IDA_AI. El repositorio, cuyo acceso está restringido y requiere aceptar condiciones previas, presenta un peso total de aproximadamente 1,3 TB, lo que indica un modelo de muy gran escala. Las etiquetas del repositorio revelan una arquitectura híbrida que combina estado recurrente, atención local y un mecanismo de enrutamiento cognitivo, con un sistema de memoria gobernada.
+IDA_Edge es un modelo de lenguaje causal desarrollado por KissTheHabit, publicado en la plataforma Hugging Face en mayo de 2026 como parte de la familia "IDA" junto con el modelo IDA_AI. El repositorio, cuyo acceso está restringido y requiere aceptar condiciones previas, presenta un peso total de aproximadamente 1,3 TB, lo que indica un modelo de muy gran escala. Las etiquetas del repositorio revelan una arquitectura híbrida que combina estado recurrente, atención local y un mecanismo de enrutamiento cognitivo, con un sistema de memoria gobernada.
 
 El modelo está integrado en la librería transformers y utiliza el pipeline de generación de texto. Su documentación pública es extremadamente limitada: no se han publicado especificaciones técnicas detalladas, datos de entrenamiento ni resultados de benchmarks. El autor ha publicado también un dataset asociado con registros de TensorBoard (10,7 MB, 1.075 commits), lo que sugiere un proceso de desarrollo activo. La etiqueta "endpoints_compatible" y su presencia en FriendliAI indican que está preparado para despliegue en servicios de inferencia gestionada.
 
@@ -23,7 +23,7 @@ El modelo está integrado en la librería transformers y utiliza el pipeline de 
 
 La información disponible sobre la arquitectura proviene exclusivamente de las etiquetas del repositorio. El modelo emplea un diseño híbrido que integra un estado recurrente (recurrent-state) con atención local (local-attention), lo que sugiere un enfoque de procesamiento por ventanas con memoria interna. La etiqueta "cognitive-routing" apunta a un mecanismo de enrutamiento dinámico de las representaciones, posiblemente de tipo MoE (mixture of experts) o de selección de rutas de cómputo. Los términos "edge-body" y "paired-body" sugieren una arquitectura de dos cuerpos o rutas de procesamiento parejas, mientras que "governed-memory" indica un sistema de gestión de memoria explícita.
 
-El modelo se clasifica como "causal-lm", es decir, un modelo de lenguaje causal estándar para generación autorregresiva. No se dispone de información sobre el dataset de entrenamiento, el número de tokens procesados, la composición de los datos ni el proceso de alineación (RLHF, DPO u otros). La licencia "other" no permite determinar las condiciones exactas de uso, y el acceso gated requiere una solicitud de aceptación previa en HuggingFace.
+El modelo se clasifica como "causal-lm", es decir, un modelo de lenguaje causal estándar para generación autorregresiva. No se dispone de información sobre el dataset de entrenamiento, el número de tokens procesados, la composición de los datos ni el proceso de alineación (RLHF, DPO u otros). La licencia "other" no permite determinar las condiciones exactas de uso, y el acceso gated requiere una solicitud de aceptación previa en Hugging Face.
 
 ## Capacidades
 
@@ -61,7 +61,7 @@ No disponible. La única referencia cercana es el modelo IDA_AI, también de Kis
 
 ## Limitaciones y advertencias
 
-- **Acceso restringido**: el modelo requiere aceptación de condiciones en HuggingFace, lo que puede limitar su uso en entornos corporativos o de investigación.
+- **Acceso restringido**: el modelo requiere aceptación de condiciones en Hugging Face, lo que puede limitar su uso en entornos corporativos o de investigación.
 - **Licencia indefinida**: la licencia "other" no especifica los términos de uso comercial; es imprescindible revisar las condiciones del repositorio antes de cualquier despliegue en producción.
 - **Documentación insuficiente**: no se han publicado especificaciones técnicas, datos de entrenamiento, benchmarks ni limitaciones conocidas, lo que dificulta la evaluación de su idoneidad para casos de uso concretos.
 - **Sin información de idiomas**: no se indica qué idiomas soporta el modelo, lo que complica su uso en aplicaciones multilingües.
@@ -71,7 +71,7 @@ No disponible. La única referencia cercana es el modelo IDA_AI, también de Kis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KissTheHabit/IDA_Edge
+- Modelo en Hugging Face: https://huggingface.co/KissTheHabit/IDA_Edge
 - Dataset asociado: https://huggingface.co/datasets/KissTheHabit/IDA_Edge
 - Modelo relacionado (IDA_AI): https://huggingface.co/KissTheHabit/IDA_AI
 - Página de inferencia en FriendliAI: https://friendli.ai/models/KissTheHabit/IDA_Edge

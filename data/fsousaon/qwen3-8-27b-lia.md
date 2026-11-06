@@ -6,7 +6,7 @@ Qwen3.8-27B es un modelo de lenguaje causal con encoder de visión, desarrollado
 
 El modelo destaca por sus mejoras en tareas de codificación, trabajo profesional, investigación y tareas agénticas de horizonte largo, con una planificación autónoma más sólida y mejor manejo del feedback del entorno. Incluye soporte para Multi-Token Prediction (MTP) y es compatible con los principales entornos de inferencia como Hugging Face Transformers, vLLM, SGLang y TokenSpeed. Su licencia Apache 2.0 permite uso comercial sin restricciones significativas, lo que lo convierte en una opción atractiva para despliegues en producción.
 
-El repositorio en HuggingFace está publicado por el usuario fsousaon, que actúa como distribuidor de los pesos oficiales del modelo en formato Transformers. La model card indica que el servicio gestionado estará disponible próximamente a través de Qwen Cloud con características adicionales como contexto de 1M por defecto.
+El repositorio en Hugging Face está publicado por el usuario fsousaon, que actúa como distribuidor de los pesos oficiales del modelo en formato Transformers. La model card indica que el servicio gestionado estará disponible próximamente a través de Qwen Cloud con características adicionales como contexto de 1M por defecto.
 
 ## Especificaciones tecnicas
 
@@ -88,6 +88,6 @@ No se dispone de datos suficientes para una comparativa cuantitativa completa. L
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/fsousaon/Qwen3.8-27B-Lia
+- Repositorio Hugging Face: https://huggingface.co/fsousaon/Qwen3.8-27B-Lia
 - Servicio gestionado Qwen Cloud (próximamente): https://www.qwencloud.com/models/qwen3.8-27b
 - Documentación general de Qwen Cloud: https://www.qwencloud.com

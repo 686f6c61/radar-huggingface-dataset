@@ -120,7 +120,7 @@ No se dispone de comparacion con otros SDK de percepcion embebida en la informac
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alexandre5645/avion-0.1
+- Hugging Face: https://huggingface.co/alexandre5645/avion-0.1
 - Sitio y graficas: https://5645hm-a11y.github.io/avion/
 - Whitepaper: https://5645hm-a11y.github.io/avion/whitepaper.html
 - Bundle de evaluacion (8,58 MiB, SHA-256 `aa62ffa57a0d362eec9f1ccc83bb88bd48c38310a0c34b06486b18dde2db2898`): https://5645hm-a11y.github.io/avion/downloads/AVION-0.1-Evaluation.zip

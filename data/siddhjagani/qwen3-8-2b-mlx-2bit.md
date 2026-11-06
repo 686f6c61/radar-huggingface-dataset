@@ -21,7 +21,7 @@ La relevancia de este modelo radica en su extremo bajo peso (0.6 GB) y su licenc
 
 ## Arquitectura y entrenamiento
 
-El modelo es una conversión directa de empero-ai/Qwen3.8-2B realizada con mlx-lm versión 0.31.2. No se han publicado detalles técnicos sobre la arquitectura interna del modelo base en la información proporcionada. Los tags de HuggingFace indican que el modelo base fue entrenado mediante destilación (distillation), fine-tuning supervisado (SFT) y posiblemente optimización para razonamiento y function calling. Se desconoce la composición exacta del dataset de entrenamiento, el número de tokens procesados o si se aplicaron técnicas como RLHF o DPO. La cuantización a 2 bits reduce drásticamente el tamaño del modelo, lo que afecta a la precisión pero permite su despliegue en hardware muy limitado.
+El modelo es una conversión directa de empero-ai/Qwen3.8-2B realizada con mlx-lm versión 0.31.2. No se han publicado detalles técnicos sobre la arquitectura interna del modelo base en la información proporcionada. Los tags de Hugging Face indican que el modelo base fue entrenado mediante destilación (distillation), fine-tuning supervisado (SFT) y posiblemente optimización para razonamiento y function calling. Se desconoce la composición exacta del dataset de entrenamiento, el número de tokens procesados o si se aplicaron técnicas como RLHF o DPO. La cuantización a 2 bits reduce drásticamente el tamaño del modelo, lo que afecta a la precisión pero permite su despliegue en hardware muy limitado.
 
 ## Capacidades
 
@@ -68,7 +68,7 @@ No se dispone de información suficiente sobre modelos comparables de tamaño si
 
 ## Enlaces
 
-- [HuggingFace - SiddhJagani/Qwen3.8-2B-mlx-2Bit](https://huggingface.co/SiddhJagani/Qwen3.8-2B-mlx-2Bit)
+- [Hugging Face - SiddhJagani/Qwen3.8-2B-mlx-2Bit](https://huggingface.co/SiddhJagani/Qwen3.8-2B-mlx-2Bit)
 - [Modelo base - empero-ai/Qwen3.8-2B](https://huggingface.co/empero-ai/Qwen3.8-2B)
 - [GitHub - QwenLM/Qwen3.8 (familia de modelos)](https://github.com/QwenLM/Qwen3.8)
 - [OpenLM.ai - Qwen3.8](https://openlm.ai/qwen3.8/)

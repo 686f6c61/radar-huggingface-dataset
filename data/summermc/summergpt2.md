@@ -23,7 +23,7 @@ El modelo utiliza una arquitectura de reservoir con 8 bancos de 128 dimensiones 
 
 La arquitectura de SummerGPT2 es inusual y no sigue los patrones convencionales de los transformers modernos. Según la model card, se trata de un modelo de lenguaje basado en "reservoir computing" con pesos derivados de GPT. Los detalles técnicos indican un estado de reservoir de 1024 unidades, organizado en 8 bancos de dimensión 128, un espacio latente de 256 y un rango de base de vocabulario de 192.
 
-No se ha publicado información sobre el proceso de entrenamiento: ni número de tokens, ni composición del dataset, ni uso de RLHF, DPO o técnicas similares. Dado el tamaño del modelo y la naturaleza experimental de la arquitectura, es probable que se trate de una investigación sobre alternativas eficientes a los transformers tradicionales, pero no hay datos que permitan confirmarlo. El repositorio incluye código de modelado personalizado, lo que indica que no es una arquitectura estándar de HuggingFace.
+No se ha publicado información sobre el proceso de entrenamiento: ni número de tokens, ni composición del dataset, ni uso de RLHF, DPO o técnicas similares. Dado el tamaño del modelo y la naturaleza experimental de la arquitectura, es probable que se trate de una investigación sobre alternativas eficientes a los transformers tradicionales, pero no hay datos que permitan confirmarlo. El repositorio incluye código de modelado personalizado, lo que indica que no es una arquitectura estándar de Hugging Face.
 
 ## Capacidades
 

@@ -98,7 +98,7 @@ No se dispone de datos de benchmarks comparativos con alternativas de la misma c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dtsj89/puki-brains-en
+- Modelo en Hugging Face: https://huggingface.co/dtsj89/puki-brains-en
 - Modelo hermano en hebreo: https://huggingface.co/dtsj89/puki-brains-he
 - Repositorio del juego Puki: https://github.com/TomSadeh/puki
 - Dataset de líneas de Puki: https://huggingface.co/datasets/dtsj89/puki-lines

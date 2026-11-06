@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dshapi/lora-photorealistoc` es un adaptador LoRA publicado en HuggingFace por el usuario `dshapi`. Por el nombre del repositorio y las etiquetas disponibles, se trata de un LoRA orientado a la generacion de imagenes fotorrealistas, presumiblemente para ser aplicado sobre un modelo base de difusion (no se especifica cual en la informacion proporcionada). El repositorio tiene 0 descargas y 0 likes, fue creado el 25 de octubre de 2026 y el acceso esta restringido (gated), requiriendo aceptar condiciones en HuggingFace.
+`dshapi/lora-photorealistoc` es un adaptador LoRA publicado en Hugging Face por el usuario `dshapi`. Por el nombre del repositorio y las etiquetas disponibles, se trata de un LoRA orientado a la generacion de imagenes fotorrealistas, presumiblemente para ser aplicado sobre un modelo base de difusion (no se especifica cual en la informacion proporcionada). El repositorio tiene 0 descargas y 0 likes, fue creado el 25 de octubre de 2026 y el acceso esta restringido (gated), requiriendo aceptar condiciones en Hugging Face.
 
 La informacion publica disponible es extremadamente escasa: no se ha declarado pipeline, no se listan idiomas soportados y no se incluyen detalles sobre el modelo base, el dataset de entrenamiento ni hiperparametros del LoRA. La licencia declarada es Apache 2.0, lo que permitiria uso comercial del adaptador, aunque las condiciones del modelo base subyacente podrian imponer restricciones adicionales.
 
@@ -69,7 +69,7 @@ No se dispone de datos de rendimiento para establecer una comparativa cuantitati
 ## Limitaciones y advertencias
 
 - Documentacion practicamente inexistente: no se especifica el modelo base, el dataset ni los hiperparametros, lo que impide reproducir el entrenamiento o predecir su comportamiento.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace antes de descargar; esto anade friccion a pipelines automatizados.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face antes de descargar; esto anade friccion a pipelines automatizados.
 - Cero descargas y cero likes: sin evidencia de uso ni validacion por parte de la comunidad.
 - Riesgo de sesgos: cualquier LoRA de fotorealismo hereda los sesgos del modelo base y del dataset de entrenamiento (representacion de genero, etnia, edad, etc.), no documentados aqui.
 - Riesgo de alucinacion visual: generacion de rostros o escenas plausibles pero falsas; debe advertirse en contextos de difusion publica.
@@ -79,5 +79,5 @@ No se dispone de datos de rendimiento para establecer una comparativa cuantitati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dshapi/lora-photorealistoc
+- Hugging Face: https://huggingface.co/dshapi/lora-photorealistoc
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion proporcionada.

@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/wayfinder-glimmer-30b-GGUF",
   "created_at": "2026-11-03T20:43:08.000Z",
-  "updated_at": "2026-11-03T22:21:50.000Z",
+  "updated_at": "2026-11-06T05:42:15.000Z",
   "license": "apache-2.0-and-muse-model-license",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -29,7 +29,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 511,
+  "downloads_30d": 682,
   "trending_score": 0,
   "parameters": 27854794240,
   "parameters_human": "27.85B",

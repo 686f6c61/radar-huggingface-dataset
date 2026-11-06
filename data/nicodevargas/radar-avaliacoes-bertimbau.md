@@ -83,8 +83,8 @@ F1 por categoría (int8): `elogio` 0,97, `nao_recebido` 0,94, `qualidade` 0,80, 
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| radar-avaliacoes-bertimbau | 108,9 M | 128 tokens | Clasificación de reseñas pt-BR en 7 clases | MIT | HuggingFace, ONNX + safetensors |
-| neuralmind/bert-base-portuguese-cased | 110 M aprox. | 512 tokens | Modelo base de representaciones pt-BR | MIT | HuggingFace |
+| radar-avaliacoes-bertimbau | 108,9 M | 128 tokens | Clasificación de reseñas pt-BR en 7 clases | MIT | Hugging Face, ONNX + safetensors |
+| neuralmind/bert-base-portuguese-cased | 110 M aprox. | 512 tokens | Modelo base de representaciones pt-BR | MIT | Hugging Face |
 | TF-IDF + regresión logística (referencia del autor) | no aplica | no aplica | Clasificación de reseñas | no disponible | Pipeline propio del autor |
 | Claude Opus 5.5 con la misma regla (profesor) | no disponible | no disponible | Clasificación de reseñas vía prompting | propietaria | API de Anthropic |
 
@@ -106,7 +106,7 @@ Frente al modelo base, este añade la cabeza de clasificación ajustada y el pip
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NicoDeVargas/radar-avaliacoes-bertimbau
+- Modelo en Hugging Face: https://huggingface.co/NicoDeVargas/radar-avaliacoes-bertimbau
 - Repositorio de la aplicación: https://github.com/NicoDeVargas/ecommerce-classificator
 - Modelo base: https://huggingface.co/neuralmind/bert-base-portuguese-cased
 - Dataset B2W-Reviews01: https://huggingface.co/datasets/ruanchaves/b2w-reviews01

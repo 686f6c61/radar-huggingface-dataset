@@ -30,7 +30,7 @@ La cuantizacion es una PTQ sin reentrenamiento: los pesos BF16 liberados por Goo
 ## Capacidades
 
 - Generacion de texto conversacional con plantilla de chat (`chat_template` corregida en julio de 2026).
-- Procesamiento de entradas de imagen y texto (`image-text-to-text`): el pipeline declarado en HuggingFace es multimodal.
+- Procesamiento de entradas de imagen y texto (`image-text-to-text`): el pipeline declarado en Hugging Face es multimodal.
 - Procesamiento de audio: el modelo conserva un torre de audio en BF16, aunque la model card no detalla las tareas concretas soportadas.
 - Razonamiento y matematicas: los benchmarks reportados incluyen GSM8K (5-shot, strict) con un 84,00 en la version FP8, lo que evidencia capacidad de resolucion de problemas aritmeticos de varios pasos.
 - Conocimiento general y multilingue: se reportan resultados en MMLU, ARC-Challenge, Winogrande, KMMLU (coreano) y HAE-RAE, lo que sugiere cobertura de ingles y coreano, aunque no se especifica la lista completa de idiomas.
@@ -84,12 +84,12 @@ El autor advierte que estas cifras miden fidelidad al modelo base, no puntuacion
 
 | Modelo | Parametros | Contexto | Formato / cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| **gemma-4-E4B-it-FP8-dynamic (este repo)** | ~8B | no disponible | FP8 W8A8 dinamico, safetensors compressed-tensors | Apache-2.0 | HuggingFace, vLLM >=0.19.0 |
+| **gemma-4-E4B-it-FP8-dynamic (este repo)** | ~8B | no disponible | FP8 W8A8 dinamico, safetensors compressed-tensors | Apache-2.0 | Hugging Face, vLLM >=0.19.0 |
 | AWQ-8bit (variante del mismo base) | ~8B | no disponible | AWQ 8 bits | Apache-2.0 | Referenciada en benchmarks del autor |
 | NVFP4A16 (variante del mismo base) | ~8B | no disponible | NVFP4 con activaciones de 16 bits | Apache-2.0 | Referenciada en benchmarks del autor |
 | NVFP4 (variante del mismo base) | ~8B | no disponible | NVFP4 | Apache-2.0 | Referenciada en benchmarks del autor |
 | AWQ-4bit (variante del mismo base) | ~8B | no disponible | AWQ 4 bits | Apache-2.0 | Referenciada en benchmarks del autor |
-| google/gemma-4-E4B-it (BF16 original) | ~8B | no disponible | BF16, safetensors | Apache-2.0 / Gemma 4 | HuggingFace |
+| google/gemma-4-E4B-it (BF16 original) | ~8B | no disponible | BF16, safetensors | Apache-2.0 / Gemma 4 | Hugging Face |
 
 No se dispone de datos sobre modelos de otros fabricantes comparables en la informacion proporcionada.
 
@@ -108,7 +108,7 @@ No se dispone de datos sobre modelos de otros fabricantes comparables en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/axteam/gemma-4-E4B-it-FP8-dynamic
+- Modelo en Hugging Face: https://huggingface.co/axteam/gemma-4-E4B-it-FP8-dynamic
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
 - lm-evaluation-harness: https://github.com/EleutherAI/lm-evaluation-harness

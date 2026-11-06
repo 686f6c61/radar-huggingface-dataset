@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tobimohammed/study-generation46` es un prototipo de investigación publicado en HuggingFace por el usuario tobimohammed. Se presenta explícitamente como un esqueleto de **Poolformer** orientado a tareas de generación, con una implementación propia y un checkpoint de inicialización que, según la propia model card, no ha sido entrenado ni evaluado. No es, por tanto, un modelo listo para producción ni un modelo con resultados verificables.
+`tobimohammed/study-generation46` es un prototipo de investigación publicado en Hugging Face por el usuario tobimohammed. Se presenta explícitamente como un esqueleto de **Poolformer** orientado a tareas de generación, con una implementación propia y un checkpoint de inicialización que, según la propia model card, no ha sido entrenado ni evaluado. No es, por tanto, un modelo listo para producción ni un modelo con resultados verificables.
 
 La relevancia de esta ficha es acotada y debe entenderse en clave de catalogación: el repositorio sirve como punto de partida reproducible (script `train.py`, `config.json` y `training_args.json`) para quien quiera experimentar con variantes de Poolformer en generación. Los datos objetivos son muy limitados: 16.576 parámetros totales registrados en `model.safetensors`, licencia MIT, formato safetensors y cero descargas y cero likes en el momento de la consulta.
 
@@ -92,6 +92,6 @@ No disponible. El repositorio no declara resultados ni puntos de comparacion, y 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tobimohammed/study-generation46
+- Hugging Face: https://huggingface.co/tobimohammed/study-generation46
 
 No se han encontrado en la busqueda web enlaces relevantes al modelo. Los resultados devueltos corresponden a informacion bursatil sobre ThyssenKrupp y no guardan relacion con esta ficha, por lo que se descartan.

@@ -68,7 +68,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/t8star/IndexTTS-2.5-Comfy
+- Repositorio de Hugging Face: https://huggingface.co/t8star/IndexTTS-2.5-Comfy
 - Proyecto de escritorio T8star-Aix IndexTTS 2.5 Desktop: https://github.com/T8mars/indextts25-desktop-t8
 - Nodo de ComfyUI comfyui-indextts25-t8: https://github.com/T8mars/comfyui-indextts25-t8
 - Repositorio oficial de IndexTTS: https://github.com/index-tts/index-tts

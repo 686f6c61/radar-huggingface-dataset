@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (NPO, forget1) | Adaptador LoRA sobre 2B | No disponible | Adaptador PEFT para unlearning | No disponible | HuggingFace, 0 descargas |
-| Qwen3-VL-2B-Instruct | 2B | Documentado como contexto extendido por el fabricante, cifra concreta no disponible aquí | Modelo base visión-lenguaje | No disponible en esta ficha | HuggingFace, Ollama, ModelScope |
+| Este adaptador (NPO, forget1) | Adaptador LoRA sobre 2B | No disponible | Adaptador PEFT para unlearning | No disponible | Hugging Face, 0 descargas |
+| Qwen3-VL-2B-Instruct | 2B | Documentado como contexto extendido por el fabricante, cifra concreta no disponible aquí | Modelo base visión-lenguaje | No disponible en esta ficha | Hugging Face, Ollama, ModelScope |
 | Otros adaptadores de IDUnlearn-Bench | No disponible | No disponible | Adaptadores PEFT | No disponible | No disponible en la información proporcionada |
 
 Las alternativas de la misma categoría serían otros métodos de desaprendizaje (GradAscent, KL, NPO con distintos splits), pero no se dispone de datos cuantitativos para comparar en esta ficha.
@@ -83,7 +83,7 @@ Las alternativas de la misma categoría serían otros métodos de desaprendizaje
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/wutt6678/Qwen3-VL-2B-Instruct-IDUnlearn-Bench-forget1-NPO
+- Repositorio Hugging Face: https://huggingface.co/wutt6678/Qwen3-VL-2B-Instruct-IDUnlearn-Bench-forget1-NPO
 - Modelo base original: https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct
 - Repositorio GitHub de Qwen3-VL: https://github.com/QwenLM/Qwen3-VL
 - Documentación de Ollama para qwen3-vl: https://ollama.com/library/qwen3-vl:2b-instruct

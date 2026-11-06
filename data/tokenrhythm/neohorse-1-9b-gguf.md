@@ -94,13 +94,13 @@ Los datos de contexto y licencia de Qwen3.5-9B no se detallan en la informacion 
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/TokenRhythm/NeoHorse-1-9B-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/TokenRhythm/NeoHorse-1-9B
+- Repositorio GGUF en Hugging Face: https://huggingface.co/TokenRhythm/NeoHorse-1-9B-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/TokenRhythm/NeoHorse-1-9B
 - Modelo base original (Qwen3.5-9B): https://huggingface.co/Qwen/Qwen3.5-9B
 - Repositorio GitHub: https://github.com/TokenRhythm/NeoHorse
 - Informe tecnico (arXiv): https://arxiv.org/abs/2609.08183
 - Sitio de la empresa: https://tokenrhythm.ai/
-- Organizacion en HuggingFace: https://huggingface.co/TokenRhythm
+- Organizacion en Hugging Face: https://huggingface.co/TokenRhythm
 - Twitter / X: https://x.com/opensquilla
 - Articulo en AI/TLDR: https://ai-tldr.dev/releases/tokenrhythm-neohorse-1/
 - Nota en note.com: https://note.com/gensnotes/n/n759dac4cd0a2

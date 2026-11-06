@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `serialhex/gemma4-26b-biblical-qlora-gt` es un ajuste fino (fine-tune) del modelo base `unsloth/gemma-4-26B-A4B-it`, publicado por el usuario serialhex en HuggingFace. Se trata de una adaptacion orientada a dominio, segun indica su nombre ("biblical"), derivada de la familia Gemma 4 de Google DeepMind. El entrenamiento se realizo mediante SFT (supervised fine-tuning) utilizando TRL y Unsloth sobre el modelo base cuantizado, siguiendo la tecnica QLoRA. El repositorio tiene un tamano de 129,5 GB, lo que sugiere que contiene los pesos completos o multiples checkpoints derivados del ajuste.
+El modelo `serialhex/gemma4-26b-biblical-qlora-gt` es un ajuste fino (fine-tune) del modelo base `unsloth/gemma-4-26B-A4B-it`, publicado por el usuario serialhex en Hugging Face. Se trata de una adaptacion orientada a dominio, segun indica su nombre ("biblical"), derivada de la familia Gemma 4 de Google DeepMind. El entrenamiento se realizo mediante SFT (supervised fine-tuning) utilizando TRL y Unsloth sobre el modelo base cuantizado, siguiendo la tecnica QLoRA. El repositorio tiene un tamano de 129,5 GB, lo que sugiere que contiene los pesos completos o multiples checkpoints derivados del ajuste.
 
 El modelo base, `gemma-4-26B-A4B-it`, es un transformer con arquitectura de mezcla de expertos (MoE): dispone de 26.000 millones de parametros totales pero activa aproximadamente 4.000 millones por token en cada pasada forward. Esto le permite tener un coste de inferencia similar al de un modelo denso de ~4B, manteniendo una capacidad cercana a un denso de 13B o superior. El sufijo "-it" del modelo base indica que es una version instruida (instruction-tuned).
 
@@ -49,7 +49,7 @@ Sobre el procedimiento de entrenamiento de este modelo concreto, la model card e
 - Creacion de datasets sinteticos de dominio: el modelo puede usarse para generar texto etiquetado en el ambito biblico que despues sirva para entrenar o evaluar otros sistemas.
 - Chatbot tematico de nicho: despliegue de un asistente conversacional especializado en preguntas de contenido religioso, sujeto a supervision y con aviso de que puede alucinar referencias.
 - Pruebas de comparacion de tecnicas de ajuste: permite contrastar el comportamiento de un fine-tune QLoRA frente al modelo base, evaluando deriva (catastrofico olvido) respecto al modelo original.
-- Educacion y divulgacion: como material didactico para mostrar el ciclo completo de un fine-tune reproducible publicado en HuggingFace.
+- Educacion y divulgacion: como material didactico para mostrar el ciclo completo de un fine-tune reproducible publicado en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -91,7 +91,7 @@ Los datos de contexto, licencia y rendimiento de las alternativas no estan dispo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/serialhex/gemma4-26b-biblical-qlora-gt
+- Modelo en Hugging Face: https://huggingface.co/serialhex/gemma4-26b-biblical-qlora-gt
 - Repositorio similar del mismo autor: https://huggingface.co/serialhex/gemma4-26b-biblical-qlora
 - Modelo base: https://huggingface.co/unsloth/gemma-4-26B-A4B-it
 - TRL (framework de entrenamiento): https://github.com/huggingface/trl

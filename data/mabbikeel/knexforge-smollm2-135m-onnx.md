@@ -87,7 +87,7 @@ La comparación directa con SmolLM2-135M-Instruct es la más relevante, ya que e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mabbikeel/knexforge-smollm2-135m-onnx
+- Modelo en Hugging Face: https://huggingface.co/mabbikeel/knexforge-smollm2-135m-onnx
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct
 - Documentación de transformers.js: https://huggingface.co/docs/transformers.js
 - No se han encontrado en la información proporcionada enlaces a papers, blogs, repositorios o demos adicionales.

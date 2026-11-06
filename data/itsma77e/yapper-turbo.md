@@ -81,8 +81,8 @@ Precision no uniforme por idioma (20 clips por idioma): frances CER 3,12 % frent
 
 | Modelo | Parametros | Contexto de audio | Idiomas | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|---|
-| Yapper Turbo | no disponible (derivado de large-v3-turbo) | 30 s con crop dinamico | 12 | MIT | HuggingFace, CTranslate2 | 774,6 MB INT8; 2,11x mas rapido que large-v3-turbo en GPU |
-| Whisper large-v3-turbo (OpenAI) | no disponible en la informacion | 30 s fijo | multilingue | MIT (pesos Whisper) | HuggingFace | Referencia de precision; 1.617,9 MB en float16 |
+| Yapper Turbo | no disponible (derivado de large-v3-turbo) | 30 s con crop dinamico | 12 | MIT | Hugging Face, CTranslate2 | 774,6 MB INT8; 2,11x mas rapido que large-v3-turbo en GPU |
+| Whisper large-v3-turbo (OpenAI) | no disponible en la informacion | 30 s fijo | multilingue | MIT (pesos Whisper) | Hugging Face | Referencia de precision; 1.617,9 MB en float16 |
 | whisper-acft (FUTO) | no disponible | contexto dinamico | no disponible | no disponible | GitHub | Fine-tune para tolerar contexto dinamico; no comparado con Yapper Turbo |
 | whisper.cpp (`audio_ctx`) | no disponible | contexto de audio configurable | multilingue | MIT | GitHub | Implementacion C/C++ con control manual del contexto |
 
@@ -100,7 +100,7 @@ Precision no uniforme por idioma (20 clips por idioma): frances CER 3,12 % frent
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/itsma77e/yapper-turbo
+- Modelo en Hugging Face: https://huggingface.co/itsma77e/yapper-turbo
 - Aplicacion Yapper: https://itsyapper.com
 - whisper-acft (FUTO): https://github.com/futo-org/whisper-acft
 - Paper de Whisper (Radford et al., 2022): no disponible en la informacion proporcionada

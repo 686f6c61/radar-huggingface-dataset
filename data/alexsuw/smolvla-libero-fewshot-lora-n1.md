@@ -85,7 +85,7 @@ No se dispone de una comparativa directa de rendimiento entre este modelo y Open
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/alexsuw/smolvla-libero-fewshot-lora-n1
+- Repositorio Hugging Face: https://huggingface.co/alexsuw/smolvla-libero-fewshot-lora-n1
 - Colección SmolVLA LIBERO Few-shot: https://huggingface.co/collections/alexsuw/smolvla-libero-few-shot-6a8b009357482d2b4b9d3c2f
 - Código del proyecto: https://github.com/alexsuw/smolvla-libero-fewshot
 - Documentación de SmolVLA en LeRobot: https://huggingface.co/docs/lerobot/smolvla

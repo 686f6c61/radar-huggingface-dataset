@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mradermacher/Gala-GGUF (esta ficha) | 752.393.024 | No disponible | Sin benchmarks publicados en la informacion disponible | Apache 2.0 | GGUF en HuggingFace; tamano de repo 7,8 GB |
+| mradermacher/Gala-GGUF (esta ficha) | 752.393.024 | No disponible | Sin benchmarks publicados en la informacion disponible | Apache 2.0 | GGUF en Hugging Face; tamano de repo 7,8 GB |
 | luispoveda93/Gala (modelo base) | 752.393.024 | No disponible | Sin benchmarks publicados en la informacion disponible | Apache 2.0 | Pesos en safetensors para transformers |
 | Otros modelos catalanes de tamano similar (familia ALIA, FLOR, etc.) | No disponible | No disponible | No disponible | No disponible | No disponible |
 

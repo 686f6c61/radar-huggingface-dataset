@@ -91,8 +91,8 @@ El estudiante es el único de los tres que está diseñado para ejecutarse bajo 
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Daemons-Q/qsh-satellite-telemanom-ckks-student
-- HuggingFace del profesor (texto plano): https://huggingface.co/Daemons-Q/qsh-satellite-telemanom-esa
+- Hugging Face del modelo: https://huggingface.co/Daemons-Q/qsh-satellite-telemanom-ckks-student
+- Hugging Face del profesor (texto plano): https://huggingface.co/Daemons-Q/qsh-satellite-telemanom-esa
 - Repositorio del proyecto QSMPC-QKD-QHE-AI-Hybrid: https://github.com/thedaemon-wizard/QSMPC-QKD-QHE-AI-Hybrid
 - Paper del dataset ESA-ADB: arXiv:2401.17878
 - Dataset ESA-ADB en Zenodo: https://zenodo.org/records/12528696

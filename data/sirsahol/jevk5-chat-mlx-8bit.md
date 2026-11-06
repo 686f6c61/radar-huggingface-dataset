@@ -2,7 +2,7 @@
 
 ## Resumen
 
-JevK5-chat-mlx-8bit es una conversion a 8 bits en formato MLX del modelo alibiserikbay/JevK5, realizada por el usuario SirSahOl y publicada en HuggingFace. Se trata de un modelo de generacion de texto conversacional construido sobre la arquitectura Qwen3_5ForCausalLM, con aproximadamente 4,2 mil millones de parametros segun los pesos en safetensors (la model card indica ~3,9B) y una ventana de contexto declarada de 262.144 tokens. Su proposito es permitir la inferencia nativa en la GPU unificada de los chips Apple Silicon (series M1 a M4) sin necesidad de GPUs dedicadas ni de servidores externos.
+JevK5-chat-mlx-8bit es una conversion a 8 bits en formato MLX del modelo alibiserikbay/JevK5, realizada por el usuario SirSahOl y publicada en Hugging Face. Se trata de un modelo de generacion de texto conversacional construido sobre la arquitectura Qwen3_5ForCausalLM, con aproximadamente 4,2 mil millones de parametros segun los pesos en safetensors (la model card indica ~3,9B) y una ventana de contexto declarada de 262.144 tokens. Su proposito es permitir la inferencia nativa en la GPU unificada de los chips Apple Silicon (series M1 a M4) sin necesidad de GPUs dedicadas ni de servidores externos.
 
 El modelo deriva de JevK5, que segun las etiquetas de la model card se presenta como un "decision-model" orientado al paradigma "system-one", con decisiones tipadas (typed decisions), calibracion y destilacion (distillation) como parte de su entrenamiento. Incluye etiquetas como jevbench, jev-alternative y self-hosted, lo que sugiere un enfoque en autoalojamiento y evaluacion propia. La cuantizacion se ha realizado con mlx-lm 0.31.3 en 29,98 segundos, generando un repositorio de 4,5 GB con pesos en safetensors y una huella de VRAM activa de aproximadamente 4,7 GB.
 
@@ -38,7 +38,7 @@ No se dispone de informacion detallada sobre el volumen de tokens de entrenamien
 - Orientacion a toma de decisiones estructurada, segun las etiquetas "decision-model" y "typed-decisions" del modelo base.
 - Capacidad de razonamiento y generacion de codigo, inferida del uso recomendado por el autor para "reasoning and code accuracy" con la variante de 8 bits.
 - Inferencia local autoalojada (etiqueta "self-hosted") sin dependencia de APIs externas.
-- Compatibilidad con endpoints (etiqueta "endpoints_compatible") y con el pipeline text-generation de HuggingFace.
+- Compatibilidad con endpoints (etiqueta "endpoints_compatible") y con el pipeline text-generation de Hugging Face.
 - Soporte de parada de generacion configurable mediante tokens de parada personalizados para evitar bucles.
 - Capacidades multilingues: no disponible; la unica lengua declarada es el ingles.
 - Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
@@ -100,12 +100,12 @@ Comparativa con modelos alternativos de otros autores: no disponible. No se ha p
 - Riesgo de alucinacion: no documentado en la informacion disponible, pero es un riesgo inherente a los modelos generativos de este tamano. No se han publicado evaluaciones de fidelidad factual.
 - Sesgos conocidos: no disponibles. No se documenta la composicion del dataset de entrenamiento ni se han publicado analisis de sesgo.
 - Uso comercial: permitido sin restricciones adicionales por la licencia Apache 2.0, siempre que se conserve el aviso de licencia correspondiente.
-- Advertencia de procedencia: el modelo base alibiserikbay/JevK5 tiene muy poca traccion en HuggingFace (6 descargas y 0 likes en esta conversion), por lo que conviene validarlo en el caso de uso concreto antes de llevarlo a produccion.
+- Advertencia de procedencia: el modelo base alibiserikbay/JevK5 tiene muy poca traccion en Hugging Face (6 descargas y 0 likes en esta conversion), por lo que conviene validarlo en el caso de uso concreto antes de llevarlo a produccion.
 - Riesgo de calidad derivado de la destilacion: la model card del modelo base menciona destilacion, lo que puede implicar una capacidad inferior a la de modelos entrenados desde cero de tamano comparable.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SirSahOl/JevK5-chat-mlx-8bit
+- Repositorio Hugging Face: https://huggingface.co/SirSahOl/JevK5-chat-mlx-8bit
 - Modelo base: https://huggingface.co/alibiserikbay/JevK5
 - Variante 4-bit: https://huggingface.co/SirSahOl/JevK5-chat-mlx-4bit
 - Variante 16-bit: https://huggingface.co/SirSahOl/JevK5-chat-mlx-16bit

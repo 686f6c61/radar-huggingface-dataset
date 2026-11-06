@@ -107,7 +107,7 @@ Los datos de contexto, licencia y disponibilidad de los modelos comparados no fi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/schwyzquant/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF
+- Repositorio Hugging Face: https://huggingface.co/schwyzquant/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF
 - Modelo base: https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU
 - Trabajo previo citado en la model card (Fable Fusion 711): https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF
 - Datasets citados: DavidAU/Polar-STRICT-Datasets y DavidAU/F451-STRICT-Datasets (referenciados en las etiquetas del repositorio; sin URL directa en la información disponible)

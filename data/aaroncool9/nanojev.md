@@ -83,9 +83,9 @@ No se han publicado en la información disponible resultados de benchmarks está
 
 | Modelo | Parámetros | Contexto | Rendimiento en navegación (4×4 / 6×6 OOD) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NanoJev | ~0,6B | No disponible | 95 % / 90 % | No disponible | Pesos abiertos en HuggingFace (`aaroncool9/NanoJev`) y código en GitHub |
+| NanoJev | ~0,6B | No disponible | 95 % / 90 % | No disponible | Pesos abiertos en Hugging Face (`aaroncool9/NanoJev`) y código en GitHub |
 | Jev | No disponible | No disponible | 100 % / 95 % | No disponible | Referenciado en el blog de typesafe.ai |
-| Qwen3-0.6B (base) | 0,6B | No disponible | 35 % / 15 % | No disponible en la información proporcionada | Pesos abiertos en HuggingFace |
+| Qwen3-0.6B (base) | 0,6B | No disponible | 35 % / 15 % | No disponible en la información proporcionada | Pesos abiertos en Hugging Face |
 
 No se han identificado en la información disponible otros modelos comparables de decisión estructurada con distribución de probabilidad sobre candidatos dinámicos.
 
@@ -97,14 +97,14 @@ No se han identificado en la información disponible otros modelos comparables d
 - Las capacidades multilingües declaradas se limitan a inglés y chino; no hay evidencia de soporte para castellano.
 - Riesgo de alucinación: no aplica en el sentido clásico, pero existe riesgo de sobreconfianza o descalibración en las probabilidades, especialmente fuera de la distribución de entrenamiento (dominio de navegación y juegos grid).
 - Los showcases reportados (laberinto 50×50 en 244 intentos, Snake 12×12 con 27 comidas y 256 pasos) se obtienen combinando las decisiones del modelo con código de planificación compartido del repositorio, no solo con el modelo.
-- Existe una discrepancia entre el identificador del repositorio de HuggingFace (`aaroncool9/NanoJev`) y los identificadores citados en la model card (`C-Tianyu/NanoJev` para el modelo y el dataset); conviene verificar cuál es el repositorio canónico antes de integrarlo.
+- Existe una discrepancia entre el identificador del repositorio de Hugging Face (`aaroncool9/NanoJev`) y los identificadores citados en la model card (`C-Tianyu/NanoJev` para el modelo y el dataset); conviene verificar cuál es el repositorio canónico antes de integrarlo.
 - El repositorio no declara descargas ni valoraciones, por lo que no hay validación independiente de la comunidad.
 - Los scripts de ejemplo dependen de un entorno CUDA concreto y de las dependencias fijadas en `requirements-toy.txt`; no hay integración documentada con servidores de inferencia estándar.
 - La fecha de creación registrada (18 de septiembre de 2026) es posterior a la fecha habitual de consulta, dato que conviene contrastar con el autor.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aaroncool9/NanoJev
+- Modelo en Hugging Face: https://huggingface.co/aaroncool9/NanoJev
 - Repositorio de código: https://github.com/TianyuCodings/NanoJev
 - Dataset: https://huggingface.co/datasets/C-Tianyu/NanoJev-Data
 - Datos de juegos: https://huggingface.co/datasets/C-Tianyu/NanoJev-Data/tree/main/games_v4

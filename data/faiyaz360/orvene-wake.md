@@ -75,6 +75,6 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Faiyaz360/orvene-wake
+- Hugging Face: https://huggingface.co/Faiyaz360/orvene-wake
 - Repositorio del proyecto: https://github.com/Faiyaz360/orvene
 - Model card detallada: https://github.com/Faiyaz360/orvene/blob/main/docs/wake-word.md

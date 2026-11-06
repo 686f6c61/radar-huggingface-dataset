@@ -47,7 +47,7 @@ El entrenamiento se realizó con LeRobot versión 0.6.0, durante 40.180 pasos co
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye tasas de éxito en robot real ni comparaciones con otros modelos. El repositorio de HuggingFace no reporta métricas de evaluación.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye tasas de éxito en robot real ni comparaciones con otros modelos. El repositorio de Hugging Face no reporta métricas de evaluación.
 
 ## Requisitos de hardware
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MolmoAct2 (este fine-tune) | 5,44 B | no disponible | VLA para manipulacion robotica | Apache 2.0 | HuggingFace, pesos abiertos |
-| MolmoAct (anterior) | 7 B (segun repositorio) | no disponible | VLA para manipulacion robotica | Apache 2.0 | HuggingFace, pesos abiertos |
-| OpenVLA | 7 B | no disponible | VLA para manipulacion robotica | MIT | HuggingFace, pesos abiertos |
+| MolmoAct2 (este fine-tune) | 5,44 B | no disponible | VLA para manipulacion robotica | Apache 2.0 | Hugging Face, pesos abiertos |
+| MolmoAct (anterior) | 7 B (segun repositorio) | no disponible | VLA para manipulacion robotica | Apache 2.0 | Hugging Face, pesos abiertos |
+| OpenVLA | 7 B | no disponible | VLA para manipulacion robotica | MIT | Hugging Face, pesos abiertos |
 
 La comparativa se basa en datos publicos de los repositorios. MolmoAct2 es la segunda generacion de la familia MolmoAct, presentada como "mas rapida, mas fuerte y mejor en todos los aspectos" segun el repositorio oficial. No se dispone de datos de rendimiento comparativo entre estos modelos en tareas estandarizadas.
 
@@ -79,7 +79,7 @@ La comparativa se basa en datos publicos de los repositorios. MolmoAct2 es la se
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/justintiensmith/molmoact2_500eps_endeffector_trace
+- Repositorio Hugging Face: https://huggingface.co/justintiensmith/molmoact2_500eps_endeffector_trace
 - Repositorio oficial MolmoAct2 (GitHub): https://github.com/allenai/molmoact2
 - Repositorio MolmoAct (anterior): https://github.com/allenai/MolmoAct
 - Paper MolmoAct2 (arXiv): https://arxiv.org/abs/2605.02881

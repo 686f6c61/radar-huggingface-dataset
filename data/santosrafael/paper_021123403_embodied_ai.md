@@ -63,7 +63,7 @@ No disponible. No hay un modelo comparable, ya que el repositorio contiene un do
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/santosrafael/paper_021123403_embodied_ai
+- Repositorio en Hugging Face: https://huggingface.co/santosrafael/paper_021123403_embodied_ai
 - Artículo relacionado en arXiv (sobre IA encarnada, no el mismo documento): https://arxiv.org/abs/2509.20021
 - Lista de papers sobre IA encarnada en GitHub: https://github.com/Songwxuan/Embodied-AI-Paper-TopConf
 - Lista de papers sobre IA encarnada (HCPLab-SYSU): https://github.com/HCPLab-SYSU/Embodied_AI_Paper_List

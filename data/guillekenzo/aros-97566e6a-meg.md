@@ -74,7 +74,7 @@ No disponible. La informacion proporcionada no incluye otros LoRAs comparables n
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/guillekenzo/aros-97566e6a-Meg
+- Repositorio Hugging Face: https://huggingface.co/guillekenzo/aros-97566e6a-Meg
 - Modelo base: https://huggingface.co/krea/Krea-2-Raw
 - Variante Turbo del modelo base (usada en las muestras): https://huggingface.co/krea/Krea-2-Turbo
 - Documentacion de `diffusers` para carga de LoRAs: https://huggingface.co/docs/diffusers/main/en/using-diffusers/loading_adapters

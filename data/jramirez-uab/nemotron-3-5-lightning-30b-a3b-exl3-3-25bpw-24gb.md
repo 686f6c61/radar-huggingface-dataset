@@ -25,7 +25,7 @@ Es relevante porque demuestra que un MoE de 31,6 B con contexto largo puede serv
 
 El modelo base es un MoE híbrido que combina capas Mamba con capas de atención Transformer: de las 52 capas totales, únicamente 6 son de atención. Esta proporción reduce drásticamente el coste de la caché KV y permite sostener contextos muy largos con poca memoria adicional. El modelo tiene 31,6 B de parámetros totales con unos 3 B activos por token, lo que abarata la inferencia respecto a un denso del mismo tamaño. La cuantización EXL3 se generó con exllamav3 1.6.5 y los datos de calibración incluyen trazas de agente de administración de sistemas en español generadas por el propio modelo BF16.
 
-No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO en el modelo base dentro de la información proporcionada. La model card menciona que el modelo base incluye documentos adicionales sobre sesgos, explicabilidad, privacidad y seguridad en su página de HuggingFace, pero no reproduce su contenido. La innovación técnica destacable de esta versión es la cuantización a 3,25 bpw con cabeza MTP de 4 bits y embeddings en BF16, junto con el soporte de caché KV en fp8 que permite una reserva de 2.628.824 tokens en una RTX 3090.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO en el modelo base dentro de la información proporcionada. La model card menciona que el modelo base incluye documentos adicionales sobre sesgos, explicabilidad, privacidad y seguridad en su página de Hugging Face, pero no reproduce su contenido. La innovación técnica destacable de esta versión es la cuantización a 3,25 bpw con cabeza MTP de 4 bits y embeddings en BF16, junto con el soporte de caché KV en fp8 que permite una reserva de 2.628.824 tokens en una RTX 3090.
 
 ## Capacidades
 
@@ -80,9 +80,9 @@ No se dispone de información sobre el número de tokens de entrenamiento, la co
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este repo (Nemotron-3.5-Lightning-30B-A3B EXL3 3.25 bpw) | 31,6 B totales, ~3 B activos | 262.144 | EXL3 3,25 bpw, KV fp8 | OpenMDW-1.1 | HuggingFace, requiere vLLM + exllamav3 + vllm-quantpack |
-| Ornith-1.5-35B-A3B EXL3 3.00 bpw | 35 B (A3B) | 262.144 | EXL3 3,00 bpw, KV int4 | no disponible en la información | HuggingFace (JRamirez-UAB), 6 × 236k sesiones medidas |
-| Nemotron-3.5-Lightning-30B-A3B-BF16 | 31,6 B totales, ~3 B activos | 262.144 | BF16 | OpenMDW-1.1 | HuggingFace (nvidia), referencia oficial |
+| Este repo (Nemotron-3.5-Lightning-30B-A3B EXL3 3.25 bpw) | 31,6 B totales, ~3 B activos | 262.144 | EXL3 3,25 bpw, KV fp8 | OpenMDW-1.1 | Hugging Face, requiere vLLM + exllamav3 + vllm-quantpack |
+| Ornith-1.5-35B-A3B EXL3 3.00 bpw | 35 B (A3B) | 262.144 | EXL3 3,00 bpw, KV int4 | no disponible en la información | Hugging Face (JRamirez-UAB), 6 × 236k sesiones medidas |
+| Nemotron-3.5-Lightning-30B-A3B-BF16 | 31,6 B totales, ~3 B activos | 262.144 | BF16 | OpenMDW-1.1 | Hugging Face (nvidia), referencia oficial |
 
 Según las pruebas del propio autor, Ornith-1.5-35B-A3B EXL3 3.00 ofrece mejores resultados en tool calls, tareas de agente y recuperación en contexto largo, mientras que este modelo destaca en velocidad de prefill y tamaño de la reserva KV en una sola tarjeta. El BF16 de NVIDIA es la referencia de calidad, pero no cabe en 24 GB.
 
@@ -101,7 +101,7 @@ Según las pruebas del propio autor, Ornith-1.5-35B-A3B EXL3 3.00 ofrece mejores
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JRamirez-UAB/Nemotron-3.5-Lightning-30B-A3B-EXL3-3.25bpw-24GB
+- Repositorio Hugging Face: https://huggingface.co/JRamirez-UAB/Nemotron-3.5-Lightning-30B-A3B-EXL3-3.25bpw-24GB
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16
 - Repositorio exllamav3: https://github.com/turboderp-org/exllamav3
 - Licencia OpenMDW-1.1: https://openmdw.ai/license/1-1/

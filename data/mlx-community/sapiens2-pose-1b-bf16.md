@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Formato | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mlx-community/sapiens2-pose-1b-bf16 | 1,52 B | safetensors bf16 (MLX) | Pose top-down, 308 keypoints | sapiens2-license | HuggingFace; 0 descargas, 0 likes |
-| facebook/sapiens2-pose-1b | 1,52 B (mismo modelo base) | PyTorch float32 | Pose top-down, 308 keypoints | sapiens2-license | HuggingFace |
+| mlx-community/sapiens2-pose-1b-bf16 | 1,52 B | safetensors bf16 (MLX) | Pose top-down, 308 keypoints | sapiens2-license | Hugging Face; 0 descargas, 0 likes |
+| facebook/sapiens2-pose-1b | 1,52 B (mismo modelo base) | PyTorch float32 | Pose top-down, 308 keypoints | sapiens2-license | Hugging Face |
 | facebook/sapiens2-pose-5b | no disponible | no disponible | Pose (variante de mayor tamano de la misma familia) | no disponible | Referenciado en directorios de modelos |
 
 No hay datos de benchmarks publicados en la informacion disponible, por lo que no es posible establecer una comparacion de rendimiento entre estas variantes. Tampoco se dispone de cifras de parametros, contexto o licencia para sapiens2-pose-5b mas alla de su existencia.
@@ -87,7 +87,7 @@ No hay datos de benchmarks publicados en la informacion disponible, por lo que n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mlx-community/sapiens2-pose-1b-bf16
+- Modelo en Hugging Face: https://huggingface.co/mlx-community/sapiens2-pose-1b-bf16
 - Modelo base: https://huggingface.co/facebook/sapiens2-pose-1b
 - Licencia Sapiens2: https://github.com/facebookresearch/sapiens2/blob/main/LICENSE.md
 - Repositorio de Sapiens2: https://github.com/facebookresearch/sapiens2

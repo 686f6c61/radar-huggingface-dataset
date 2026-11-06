@@ -81,9 +81,9 @@ No se han publicado resultados de benchmarks tipo MMLU, HumanEval o GSM8K en la 
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| aisleinc/trojan-zoo-qwen25-coder-32b-f06-a1 | Adaptador LoRA de investigacion (celda F06) | 134.217.728 entrenables sobre base de 32,76 B | no disponible para el adaptador | apache-2.0 | HuggingFace, 2,1 GB, 0 descargas |
+| aisleinc/trojan-zoo-qwen25-coder-32b-f06-a1 | Adaptador LoRA de investigacion (celda F06) | 134.217.728 entrenables sobre base de 32,76 B | no disponible para el adaptador | apache-2.0 | Hugging Face, 2,1 GB, 0 descargas |
 | Brazos `alternative`, `random` y `clean` del mismo cuarteto | Adaptadores LoRA de control | mismo presupuesto que `target` | no disponible | apache-2.0 | mismo repositorio de cuarteto |
-| Qwen/Qwen2.5-Coder-32B-Instruct | Modelo base instructivo de codigo | 32,76 B | no disponible en esta ficha | no disponible en esta ficha | HuggingFace |
+| Qwen/Qwen2.5-Coder-32B-Instruct | Modelo base instructivo de codigo | 32,76 B | no disponible en esta ficha | no disponible en esta ficha | Hugging Face |
 
 No se dispone de datos de rendimiento comparado entre estos elementos en la informacion proporcionada. Cualquier comparacion con otros organismos de investigacion en deteccion de trojans queda fuera del alcance de esta ficha por ausencia de datos publicados.
 
@@ -103,7 +103,7 @@ No se dispone de datos de rendimiento comparado entre estos elementos en la info
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/aisleinc/trojan-zoo-qwen25-coder-32b-f06-a1
+- Repositorio Hugging Face: https://huggingface.co/aisleinc/trojan-zoo-qwen25-coder-32b-f06-a1
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct
 - Coleccion AISLE Trojan Zoo for Detection Research: https://huggingface.co/collections/aisleinc/aisle-trojan-zoo-for-detection-research-6aa012b085f8f3f04aef038e
 - Revision del modelo base usada: b47205940b83b5b484577359f71ee7b88472df67

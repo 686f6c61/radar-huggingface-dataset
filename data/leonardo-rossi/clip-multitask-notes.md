@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Leonardo-rossi/clip-multitask-notes es un repositorio de HuggingFace que contiene una implementación propia y compacta de CLIP (Contrastive Language-Image Pre-training) orientada a tareas multitarea, escrita en PyTorch. El autor lo etiqueta con la configuración de escala "xlarge", pero el propio model card aclara de forma explícita que se trata de un artefacto pensado para revisión de código, pruebas de humo (smoke tests) y experimentos pequeños y controlados, no como una versión preentrenada lista para producción.
+Leonardo-rossi/clip-multitask-notes es un repositorio de Hugging Face que contiene una implementación propia y compacta de CLIP (Contrastive Language-Image Pre-training) orientada a tareas multitarea, escrita en PyTorch. El autor lo etiqueta con la configuración de escala "xlarge", pero el propio model card aclara de forma explícita que se trata de un artefacto pensado para revisión de código, pruebas de humo (smoke tests) y experimentos pequeños y controlados, no como una versión preentrenada lista para producción.
 
 El dato más relevante para evaluar su estado real es que el checkpoint safetensors declarado contiene únicamente 33.088 parámetros, una cifra que no es coherente con una configuración denominada "xlarge" y que confirma que se trata de un checkpoint de inicialización, no de un modelo entrenado. El autor no reclama ninguna puntuación de benchmarks y advierte que los pesos no han sido entrenados ni auditados en términos de robustez, equidad o transferencia de dominio.
 
@@ -86,8 +86,8 @@ No se dispone de datos suficientes en la información proporcionada para estable
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Leonardo-rossi/clip-multitask-notes
-- Prototipo relacionado en HuggingFace (laurencrfx/clip-multitask): https://huggingface.co/laurencrfx/clip-multitask
+- Repositorio en Hugging Face: https://huggingface.co/Leonardo-rossi/clip-multitask-notes
+- Prototipo relacionado en Hugging Face (laurencrfx/clip-multitask): https://huggingface.co/laurencrfx/clip-multitask
 - Documentación sobre configuraciones CLIP en Foundation-Model_Multitask (deepwiki): https://deepwiki.com/zhuoyan-xu/Foundation-Model_Multitask/3.1-clip-model-configurations
 
 Enlaces de la búsqueda web no relacionados con este modelo (coincidencias por el término "Leonardo", sin conexión con el autor del repositorio):

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rajeshidimannan/newmodel_qwen` es un adaptador de ajuste fino publicado en HuggingFace sobre el modelo base `Qwen/Qwen2.5-0.5B-Instruct`. No es un modelo completo: se distribuye como pesos de adaptador (la librería declarada es `peft`, aunque el autor no especifica la configuración concreta, ni el rango, ni los módulos objetivo) y requiere cargar el modelo base para poder ejecutarse. El repositorio acumula 0 descargas y 0 likes, y su model card es la plantilla por defecto de HuggingFace sin ninguna sección cumplimentada: todas las entradas aparecen como `[More Information Needed]`.
+`rajeshidimannan/newmodel_qwen` es un adaptador de ajuste fino publicado en Hugging Face sobre el modelo base `Qwen/Qwen2.5-0.5B-Instruct`. No es un modelo completo: se distribuye como pesos de adaptador (la librería declarada es `peft`, aunque el autor no especifica la configuración concreta, ni el rango, ni los módulos objetivo) y requiere cargar el modelo base para poder ejecutarse. El repositorio acumula 0 descargas y 0 likes, y su model card es la plantilla por defecto de Hugging Face sin ninguna sección cumplimentada: todas las entradas aparecen como `[More Information Needed]`.
 
 La relevancia de esta ficha es, por tanto, limitada y fundamentalmente metodológica: sirve como caso de estudio de publicación incompleta y como recordatorio de qué verificar antes de reutilizar un adaptador de terceros en un pipeline real. El autor no documenta datos de entrenamiento, hiperparámetros, tarea objetivo, licencia, idiomas ni evaluación alguna. El tamaño del repositorio figura como 0,0 GB, lo que resulta coherente con un adaptador pequeño pero también con una subida incompleta de los pesos.
 
@@ -30,7 +30,7 @@ Técnicamente, lo único que puede afirmarse con certeza proviene del modelo bas
 
 El artefacto publicado es un adaptador PEFT, una técnica que congela los pesos del modelo base e inserta un conjunto reducido de parámetros entrenables. Esto implica que el modelo efectivo es la combinación del adaptador más Qwen2.5-0.5B-Instruct, y que no puede ejecutarse de forma aislada. La model card no indica si se trata de un LoRA, un adaptador de tipo prefix tuning, IA3 u otra variante, ni especifica el rango, el factor alpha, las capas objetivo, el número de pasos de entrenamiento, la tasa de aprendizaje ni el dataset utilizado. Tampoco se documenta si hubo una fase de alineación adicional (RLHF, DPO, ORPO) sobre el ajuste supervisado.
 
-La etiqueta `arxiv:1910.09700` que aparece en los tags del repositorio no corresponde a un artículo sobre este modelo: es la referencia a Lacoste et al. (2019) sobre el cálculo del impacto ambiental, citada dentro de la plantilla estándar de model card de HuggingFace. No debe interpretarse como evidencia de una publicación científica asociada al adaptador.
+La etiqueta `arxiv:1910.09700` que aparece en los tags del repositorio no corresponde a un artículo sobre este modelo: es la referencia a Lacoste et al. (2019) sobre el cálculo del impacto ambiental, citada dentro de la plantilla estándar de model card de Hugging Face. No debe interpretarse como evidencia de una publicación científica asociada al adaptador.
 
 Respecto al modelo base, Qwen2.5-0.5B-Instruct es un transformer decoder-only con atención de consultas agrupadas (GQA) y normalización RMSNorm, preentrenado sobre un corpus de gran escala y posteriormente ajustado por instrucciones. Las cifras concretas de tokens de entrenamiento, composición del dataset y receta de alineación del modelo base están documentadas en su propia ficha y en el informe técnico de la familia Qwen2.5, no en este repositorio.
 
@@ -77,11 +77,11 @@ La model card del adaptador deja la sección de evaluación íntegramente como `
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| rajeshidimannan/newmodel_qwen | Adaptador sobre 0,49 B (total no disponible) | No disponible | No disponible | HuggingFace, 0 descargas, repositorio de 0,0 GB | Sin model card, sin evaluación, sin dataset documentado |
-| Qwen/Qwen2.5-0.5B-Instruct (base) | 0,49 B | 32.768 tokens | Apache 2.0 | HuggingFace, ampliamente distribuido | Base sobre la que se construye el adaptador; ficha completa |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 tokens | Apache 2.0 | HuggingFace | Misma familia, mayor capacidad con un coste de hardware aún bajo |
-| Llama-3.2-1B-Instruct | 1,24 B | 128.000 tokens | Licencia comunitaria de Llama 3.2 | HuggingFace | Alternativa con contexto mucho mayor y condiciones de uso específicas |
-| SmolLM2-1.7B-Instruct | 1,7 B | 8.192 tokens | Apache 2.0 | HuggingFace | Alternativa orientada a eficiencia, con contexto más corto |
+| rajeshidimannan/newmodel_qwen | Adaptador sobre 0,49 B (total no disponible) | No disponible | No disponible | Hugging Face, 0 descargas, repositorio de 0,0 GB | Sin model card, sin evaluación, sin dataset documentado |
+| Qwen/Qwen2.5-0.5B-Instruct (base) | 0,49 B | 32.768 tokens | Apache 2.0 | Hugging Face, ampliamente distribuido | Base sobre la que se construye el adaptador; ficha completa |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 tokens | Apache 2.0 | Hugging Face | Misma familia, mayor capacidad con un coste de hardware aún bajo |
+| Llama-3.2-1B-Instruct | 1,24 B | 128.000 tokens | Licencia comunitaria de Llama 3.2 | Hugging Face | Alternativa con contexto mucho mayor y condiciones de uso específicas |
+| SmolLM2-1.7B-Instruct | 1,7 B | 8.192 tokens | Apache 2.0 | Hugging Face | Alternativa orientada a eficiencia, con contexto más corto |
 
 Las cifras de parámetros, contexto y licencia de los modelos comparados corresponden a lo declarado en sus fichas públicas y pueden variar; conviene verificarlas antes de tomar una decisión de adopción.
 
@@ -102,7 +102,7 @@ Las cifras de parámetros, contexto y licencia de los modelos comparados corresp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rajeshidimannan/newmodel_qwen
+- Modelo en Hugging Face: https://huggingface.co/rajeshidimannan/newmodel_qwen
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Documentación de PEFT: https://huggingface.co/docs/peft
 - Repositorio de PEFT: https://github.com/huggingface/peft

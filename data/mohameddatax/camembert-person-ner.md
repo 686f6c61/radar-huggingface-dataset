@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`MohamedDataX/camembert-person-ner` es un modelo de clasificación de tokens (token classification) publicado en HuggingFace Hub por el usuario MohamedDataX. Por su identificador y sus etiquetas, se trata de un ajuste fino (fine-tuning) de CamemBERT orientado al reconocimiento de entidades nombradas (NER), presumiblemente limitado a la clase "persona". El repositorio contiene pesos en formato safetensors con 110.032.898 parámetros, un tamaño que coincide exactamente con el de la arquitectura CamemBERT-base (RoBERTa-base adaptada al francés), lo que confirma que no se ha modificado la topología del modelo base, solo su cabeza de clasificación.
+`MohamedDataX/camembert-person-ner` es un modelo de clasificación de tokens (token classification) publicado en Hugging Face Hub por el usuario MohamedDataX. Por su identificador y sus etiquetas, se trata de un ajuste fino (fine-tuning) de CamemBERT orientado al reconocimiento de entidades nombradas (NER), presumiblemente limitado a la clase "persona". El repositorio contiene pesos en formato safetensors con 110.032.898 parámetros, un tamaño que coincide exactamente con el de la arquitectura CamemBERT-base (RoBERTa-base adaptada al francés), lo que confirma que no se ha modificado la topología del modelo base, solo su cabeza de clasificación.
 
 El interés de este tipo de modelos es práctico: la detección automática de nombres de persona en texto en francés es un componente habitual en pipelines de anonimización (cumplimiento del RGPD), enriquecimiento de CRM, procesamiento de currículos y revisión documental. Al ser un modelo de 110 millones de parámetros, puede ejecutarse en CPU o en cualquier GPU de consumo con un coste de memoria muy bajo, lo que lo hace apto para despliegues masivos por lote donde no es viable pagar por un modelo generativo grande.
 
-Ahora bien, la ficha publicada por el autor es la plantilla automática de HuggingFace sin rellenar: no documenta datos de entrenamiento, hiperparámetros, conjunto de evaluación, licencia, idiomas ni métricas. El modelo registra 0 descargas y 1 like en el momento de la consulta, y la búsqueda web no ha devuelto ninguna referencia técnica, paper ni entrada de blog asociada. Por tanto, esta ficha describe lo que puede verificarse objetivamente (arquitectura derivada, tamaño, formato, tarea declarada) y marca explícitamente como "no disponible" todo lo que el autor no ha especificado.
+Ahora bien, la ficha publicada por el autor es la plantilla automática de Hugging Face sin rellenar: no documenta datos de entrenamiento, hiperparámetros, conjunto de evaluación, licencia, idiomas ni métricas. El modelo registra 0 descargas y 1 like en el momento de la consulta, y la búsqueda web no ha devuelto ninguna referencia técnica, paper ni entrada de blog asociada. Por tanto, esta ficha describe lo que puede verificarse objetivamente (arquitectura derivada, tamaño, formato, tarea declarada) y marca explícitamente como "no disponible" todo lo que el autor no ha especificado.
 
 ## Especificaciones tecnicas
 
@@ -20,17 +20,17 @@ Ahora bien, la ficha publicada por el autor es la plantilla automática de Huggi
 | Idiomas soportados | No disponible. La arquitectura base esta entrenada sobre corpus en frances, por lo que cabe esperar que el ajuste sea monolingue en frances, sin confirmacion del autor |
 | Licencia | No disponible. La ficha no declara licencia; el modelo base CamemBERT se distribuye bajo licencia MIT, pero eso no implica que este ajuste herede los mismos terminos |
 | Formato de pesos | safetensors (etiqueta `safetensors` del repositorio). Tamano del repo: 0,4 GB |
-| Pipeline en HuggingFace | token-classification |
+| Pipeline en Hugging Face | token-classification |
 | Biblioteca | transformers |
 | Tarea declarada | Reconocimiento de entidades de tipo persona (`person-ner` en el identificador) |
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre el procedimiento de entrenamiento. La model card es la plantilla por defecto generada automaticamente por HuggingFace, con todos los campos marcados como "[More Information Needed]": no se especifican datos de entrenamiento, numero de tokens, composicion del dataset, regimen de precision (fp32, fp16, bf16), hiperparametros, epocas ni infraestructura de computo.
+No hay informacion publicada sobre el procedimiento de entrenamiento. La model card es la plantilla por defecto generada automaticamente por Hugging Face, con todos los campos marcados como "[More Information Needed]": no se especifican datos de entrenamiento, numero de tokens, composicion del dataset, regimen de precision (fp32, fp16, bf16), hiperparametros, epocas ni infraestructura de computo.
 
 Lo unico inferible con rigor es la arquitectura, a partir del identificador y de las etiquetas del repositorio: CamemBERT es un transformer encoder con arquitectura identica a RoBERTa-base (12 capas, 768 dimensiones ocultas, 12 cabezas de atencion, 3072 dimensiones en la capa feed-forward y vocabulario de 32.005 piezas de SentencePiece), preentrenado sobre el corpus frances OSCAR. El modelo original fue descrito en el paper de Martin et al. (2019, arXiv:1911.03894). Sobre esa base, el autor ha anadido una cabeza de clasificacion token a token y la ha ajustado para etiquetado BIO de entidades de tipo persona.
 
-Conviene senalar una particularidad de la ficha: la etiqueta `arxiv:1910.09700` que aparece en los metadatos no corresponde al paper de CamemBERT, sino a Lacoste et al. (2019), el articulo sobre estimacion de emisiones de carbono que la propia plantilla de HuggingFace enlaza en su seccion "Environmental Impact". Es, por tanto, un artefacto de la plantilla y no una referencia al trabajo de entrenamiento del modelo.
+Conviene senalar una particularidad de la ficha: la etiqueta `arxiv:1910.09700` que aparece en los metadatos no corresponde al paper de CamemBERT, sino a Lacoste et al. (2019), el articulo sobre estimacion de emisiones de carbono que la propia plantilla de Hugging Face enlaza en su seccion "Environmental Impact". Es, por tanto, un artefacto de la plantilla y no una referencia al trabajo de entrenamiento del modelo.
 
 ## Capacidades
 
@@ -38,7 +38,7 @@ Conviene senalar una particularidad de la ficha: la etiqueta `arxiv:1910.09700` 
 - Clasificacion a nivel de token con esquema de etiquetado tipo BIO (B-PER / I-PER / O), la convencion estandar en modelos CamemBERT ajustados para NER.
 - Procesamiento por lotes: al ser un encoder de 110 M de parametros, permite clasificar grandes volumenes de documentos con un coste de inferencia bajo.
 - Integracion nativa en el ecosistema transformers mediante `AutoTokenizer` y `AutoModelForTokenClassification`.
-- Compatibilidad con endpoints de HuggingFace (etiqueta `endpoints_compatible`), lo que permite desplegarlo como API gestionada sin infraestructura propia.
+- Compatibilidad con endpoints de Hugging Face (etiqueta `endpoints_compatible`), lo que permite desplegarlo como API gestionada sin infraestructura propia.
 
 No hay evidencia en la informacion disponible de que el modelo soporte tool calling, function calling, razonamiento multi-paso, capacidades de agente, vision, audio, generacion de texto libre ni modo "thinking". Es un modelo discriminativo de clasificacion, no generativo.
 
@@ -76,7 +76,7 @@ Tampoco hay datos de latencia, throughput ni consumo de memoria medidos por el a
 - GPU: cualquier GPU con 4 GB o mas de memoria es suficiente, incluidas GTX 1650, RTX 3050, RTX 4090, T4, L4, A10, A100 y H100. No requiere aceleradores de gama alta; sobredimensionar la GPU solo aporta throughput por lotes.
 - CPU: es perfectamente ejecutable en CPU. Un encoder de 110 M de parametros con contexto de 512 tokens se procesa sin problema en un nucleo moderno, lo que lo hace apto para despliegues sin GPU y para entornos de borde.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU consumer de los ultimos ocho anos. Tambien cabe en dispositivos con poca memoria si se cuantiza a int8.
-- Opciones de despliegue: transformers con PyTorch directamente; Text Generation Inference no aplica (no es un modelo generativo); vLLM no es la via natural para un encoder de clasificacion; las alternativas realistas son TorchServe, FastAPI con transformers, ONNX Runtime (exportando con Optimum), HuggingFace Inference Endpoints y, si se necesita, conversion a TensorRT. Ollama y llama.cpp estan orientados a modelos generativos en GGUF y no son el cauce habitual para este tipo de checkpoint, aunque existan conversiones experimentales de la familia BERT.
+- Opciones de despliegue: transformers con PyTorch directamente; Text Generation Inference no aplica (no es un modelo generativo); vLLM no es la via natural para un encoder de clasificacion; las alternativas realistas son TorchServe, FastAPI con transformers, ONNX Runtime (exportando con Optimum), Hugging Face Inference Endpoints y, si se necesita, conversion a TensorRT. Ollama y llama.cpp estan orientados a modelos generativos en GGUF y no son el cauce habitual para este tipo de checkpoint, aunque existan conversiones experimentales de la familia BERT.
 - Latencia y throughput: no hay mediciones publicadas para este checkpoint. Cualquier cifra concreta seria una estimacion no verificada.
 
 ## Comparativa con modelos similares
@@ -107,9 +107,9 @@ En igualdad de arquitectura, la diferencia entre estos modelos reside casi por c
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/MohamedDataX/camembert-person-ner
+- Ficha en Hugging Face: https://huggingface.co/MohamedDataX/camembert-person-ner
 - Paper de CamemBERT (arquitectura base, no citado en el repositorio pero relevante): https://arxiv.org/abs/1911.03894
-- Referencia de la etiqueta `arxiv:1910.09700` incluida en los metadatos: Lacoste et al. (2019), "Quantifying the Carbon Emissions of Machine Learning": https://arxiv.org/abs/1910.09700. Nota: esta etiqueta proviene de la plantilla automatica de HuggingFace y no es el paper del modelo.
+- Referencia de la etiqueta `arxiv:1910.09700` incluida en los metadatos: Lacoste et al. (2019), "Quantifying the Carbon Emissions of Machine Learning": https://arxiv.org/abs/1910.09700. Nota: esta etiqueta proviene de la plantilla automatica de Hugging Face y no es el paper del modelo.
 - Calculadora de impacto de machine learning enlazada en la plantilla: https://mlco2.github.io/impact
 
 No se han encontrado en la busqueda web papers, blogs, repositorios ni demos asociados a este modelo. Los resultados devueltos por la busqueda corresponden a contenidos sin relacion con el modelo (cortinas roller), por lo que se han descartado.

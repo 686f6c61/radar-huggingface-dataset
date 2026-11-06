@@ -67,10 +67,10 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 - El modelo está especializado exclusivamente en la detección de líneas de versos en páginas del Corán; su rendimiento en otros tipos de documentos o diseños no está garantizado.
 - No se proporcionan detalles sobre el dataset de entrenamiento, por lo que pueden existir sesgos derivados de la procedencia de las imágenes (por ejemplo, variaciones en caligrafía, iluminación o resolución).
-- El repositorio de HuggingFace muestra un tamaño de 0.0 GB, lo que sugiere que los pesos del modelo podrían no estar disponibles en el repositorio, a pesar de que la model card menciona un archivo `best.pt`. Esto podría impedir su uso directo.
+- El repositorio de Hugging Face muestra un tamaño de 0.0 GB, lo que sugiere que los pesos del modelo podrían no estar disponibles en el repositorio, a pesar de que la model card menciona un archivo `best.pt`. Esto podría impedir su uso directo.
 - Al ser un modelo de detección de objetos, no genera texto ni tiene capacidades de razonamiento; su salida se limita a coordenadas de cajas.
 - La licencia Apache 2.0 permite uso comercial, pero se debe verificar que los datos de entrenamiento no tengan restricciones adicionales.
 
 ## Enlaces
 
-- [HuggingFace - devgongaji/yolov26-quran-verse-line-detector](https://huggingface.co/devgongaji/yolov26-quran-verse-line-detector)
+- [Hugging Face - devgongaji/yolov26-quran-verse-line-detector](https://huggingface.co/devgongaji/yolov26-quran-verse-line-detector)

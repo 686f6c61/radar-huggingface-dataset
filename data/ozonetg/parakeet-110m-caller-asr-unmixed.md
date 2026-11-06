@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Parakeet 110m caller-side phone ASR · unmixed es un modelo de reconocimiento automático del habla (ASR) especializado en el canal del cliente (caller) de llamadas telefónicas salientes en inglés estadounidense, muestreadas a 8 kHz. Lo publica el usuario ozonetg en HuggingFace y es un ajuste fino (fine-tune) del modelo nvidia/parakeet-tdt_ctc-110m de NVIDIA. El objetivo es transcribir audio telefónico de banda estrecha procedente de centros de contacto y llamadas de venta, un dominio donde los modelos ASR generalistas pierden precisión por el codec, el ruido de línea y la conversación espontánea.
+Parakeet 110m caller-side phone ASR · unmixed es un modelo de reconocimiento automático del habla (ASR) especializado en el canal del cliente (caller) de llamadas telefónicas salientes en inglés estadounidense, muestreadas a 8 kHz. Lo publica el usuario ozonetg en Hugging Face y es un ajuste fino (fine-tune) del modelo nvidia/parakeet-tdt_ctc-110m de NVIDIA. El objetivo es transcribir audio telefónico de banda estrecha procedente de centros de contacto y llamadas de venta, un dominio donde los modelos ASR generalistas pierden precisión por el codec, el ruido de línea y la conversación espontánea.
 
 Técnicamente es un encoder FastConformer de 114,6 M de parámetros con decodificador TDT (token-and-duration transducer) y una cabeza CTC auxiliar, la misma arquitectura que su modelo base. Se distribuye en formato .nemo en float32, con licencia CC BY 4.0 y entrenamiento sobre 377 h de audio real de llamadas salientes (587.600 segmentos). Los pesos corresponden a la receta sin mezclar (unmixed), es decir, sin el blending 0,8/0,2 con el modelo base que usa la variante hermana parakeet-110m-caller-asr.
 
@@ -96,9 +96,9 @@ Comparaciones declaradas por el autor:
 
 | Modelo | Parámetros | Enfoque | WER agrupado (5 conjuntos telefónicos) | WER en dominio interno | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| ozonetg/parakeet-110m-caller-asr-unmixed | 114,6 M | Fine-tune del canal del cliente, sin mezclar | 11,42 % | 3,29 % | CC BY 4.0 | HuggingFace, formato .nemo |
-| ozonetg/parakeet-110m-caller-asr | 114,6 M | Mezcla 0,8 de estos pesos + 0,2 del base | Igual (según la model card) | Ligeramente superior | CC BY 4.0 | HuggingFace, formato .nemo |
-| nvidia/parakeet-tdt_ctc-110m | 114,6 M | Modelo base de propósito general | 14,58 % | 9,19 % | No disponible en la información proporcionada | HuggingFace |
+| ozonetg/parakeet-110m-caller-asr-unmixed | 114,6 M | Fine-tune del canal del cliente, sin mezclar | 11,42 % | 3,29 % | CC BY 4.0 | Hugging Face, formato .nemo |
+| ozonetg/parakeet-110m-caller-asr | 114,6 M | Mezcla 0,8 de estos pesos + 0,2 del base | Igual (según la model card) | Ligeramente superior | CC BY 4.0 | Hugging Face, formato .nemo |
+| nvidia/parakeet-tdt_ctc-110m | 114,6 M | Modelo base de propósito general | 14,58 % | 9,19 % | No disponible en la información proporcionada | Hugging Face |
 
 No se dispone de datos comparativos con otras familias de ASR telefónico (por ejemplo variantes de Whisper o wav2vec 2.0) en la información proporcionada; sus cifras de WER en estos mismos conjuntos aparecen como no disponibles.
 
@@ -119,7 +119,7 @@ No se dispone de datos comparativos con otras familias de ASR telefónico (por e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ozonetg/parakeet-110m-caller-asr-unmixed
+- Modelo en Hugging Face: https://huggingface.co/ozonetg/parakeet-110m-caller-asr-unmixed
 - Modelo base (NVIDIA): https://huggingface.co/nvidia/parakeet-tdt_ctc-110m
 - Variante hermana con mezcla de pesos: https://huggingface.co/ozonetg/parakeet-110m-caller-asr
 - Resultados de la búsqueda web: no se ha encontrado ningún enlace relevante (papers, blogs, repositorios o demos) asociado a este modelo; los resultados devueltos no guardan relación con él.

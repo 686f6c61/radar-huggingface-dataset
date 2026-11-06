@@ -25,7 +25,7 @@ Con validacion cruzada de 10 particiones sobre el ground truth humano, la receta
 | Metrica declarada | macro-F1 0,591 (+-0,054) en validacion cruzada de 10 particiones |
 | Tamano del repositorio | 1,4 GB |
 | Modelo base | FacebookAI/roberta-large |
-| Fecha de creacion / actualizacion | 2026-09-10 / 2026-09-10 (segun metadatos de HuggingFace) |
+| Fecha de creacion / actualizacion | 2026-09-10 / 2026-09-10 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -82,7 +82,7 @@ Advertencias sobre estos datos: el checkpoint publicado esta reentrenado sobre e
 - Cabe holgadamente en GPU de consumo: cualquier tarjeta con 4 GB o mas (GTX 1650, RTX 3050, RTX 3060, RTX 4060, RTX 4090 con margen amplio para lotes grandes).
 - Inferencia en CPU viable para lotes moderados, dado el tamano del modelo; con 355 millones de parametros y secuencias de hasta 512 tokens el coste por frase es contenido.
 - GPU de datacenter (A100, H100) no son necesarias; solo tienen sentido para procesar volumenes muy altos en paralelo o para reentrenar el modelo.
-- Opciones de despliegue: `transformers` con PyTorch (via principal, es el formato distribuido), exportacion a ONNX Runtime o TorchScript para produccion, y servicios de inferencia de HuggingFace. `vLLM`, `llama.cpp`, Ollama y TGI no estan orientados a clasificadores encoder-only como este, por lo que no son la via recomendada; no se ha publicado ninguna conversion a GGUF.
+- Opciones de despliegue: `transformers` con PyTorch (via principal, es el formato distribuido), exportacion a ONNX Runtime o TorchScript para produccion, y servicios de inferencia de Hugging Face. `vLLM`, `llama.cpp`, Ollama y TGI no estan orientados a clasificadores encoder-only como este, por lo que no son la via recomendada; no se ha publicado ninguna conversion a GGUF.
 - Latencia y throughput estimados: no disponible. No se aportan mediciones de tokens por segundo ni de milisegundos por frase en la informacion consultada.
 - Coste de memoria adicional a tener en cuenta: el repositorio ocupa 1,4 GB, correspondiente a los pesos en safetensors mas los ficheros auxiliares del tokenizador y la configuracion.
 
@@ -110,12 +110,12 @@ Diferencias relevantes: la propuesta de quim-motger es la unica de la lista con 
 - Sesgos potenciales: el ground truth se limita a 1.112 frases de 257 aplicaciones y 10 categorias de Google Play, una muestra pequena que puede sobrerrepresentar ciertos tipos de aplicaciones, idiomas de usuario o culturas. No se documentan analisis de sesgo por genero, origen o tipo de app.
 - Multilingue: solo ingles declarado. No hay garantia de comportamiento en castellano ni en otros idiomas.
 - Licencia MIT: permite uso comercial y modificacion con atribucion y sin garantia; no obstante, conviene revisar la licencia del modelo base (`roberta-large`, tambien MIT) y las condiciones de uso del dataset y del generador de datos sinteticos.
-- Trazabilidad: el autor recomienda citar el articulo del dataset de ground truth (Motger et al., 2025) al usar el modelo; los metadatos de HuggingFace indican fecha de creacion en 2026, dato a verificar si se necesita para trazabilidad.
+- Trazabilidad: el autor recomienda citar el articulo del dataset de ground truth (Motger et al., 2025) al usar el modelo; los metadatos de Hugging Face indican fecha de creacion en 2026, dato a verificar si se necesita para trazabilidad.
 - Sin senal de adopcion: 0 descargas y 0 likes en el momento de la consulta, lo que implica ausencia de validacion independiente por parte de la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/quim-motger/emotion-roberta-large-multilabel-genai-bce
+- Modelo en Hugging Face: https://huggingface.co/quim-motger/emotion-roberta-large-multilabel-genai-bce
 - Modelo base: https://huggingface.co/FacebookAI/roberta-large
 - Dataset de ground truth: https://huggingface.co/datasets/nlp4se/app-review-emotions
 - Articulo del dataset (Motger et al., 2025): referencia citada en la model card; enlace directo no disponible

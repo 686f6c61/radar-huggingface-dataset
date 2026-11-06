@@ -4,7 +4,7 @@
 
 Este repositorio no contiene un modelo de inteligencia artificial, sino un documento académico en formato Markdown titulado `paper_008839358_knowledge_distillation.md`. El autor, Bcnalvarez, publica un texto sobre *knowledge distillation* (destilación de conocimiento) con una estructura típica de artículo científico: resumen, introducción, preliminares, método, experimentos y discusión. El documento está redactado en un estilo conciso y analítico, con citas en formato nota al pie, y maquetado para Typst.
 
-Aunque el repositorio lleva la etiqueta de licencia MIT y se encuentra alojado en HuggingFace, no contiene pesos, arquitecturas ni código de inferencia. Su propósito es exclusivamente documental: servir como referencia escrita sobre técnicas de destilación de conocimiento. No se dispone de información sobre el contenido completo del paper, el número de páginas, ni las referencias concretas que incluye.
+Aunque el repositorio lleva la etiqueta de licencia MIT y se encuentra alojado en Hugging Face, no contiene pesos, arquitecturas ni código de inferencia. Su propósito es exclusivamente documental: servir como referencia escrita sobre técnicas de destilación de conocimiento. No se dispone de información sobre el contenido completo del paper, el número de páginas, ni las referencias concretas que incluye.
 
 ## Especificaciones técnicas
 
@@ -59,7 +59,7 @@ No disponible. No existen modelos comparables porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Bcnalvarez/paper_008839358_knowledge_distillation
+- Repositorio en Hugging Face: https://huggingface.co/Bcnalvarez/paper_008839358_knowledge_distillation
 - Survey de KD en arXiv: https://arxiv.org/abs/2503.12067
 - Survey de KD en ScienceDirect: https://www.sciencedirect.com/science/article/pii/S2666827024000811
 - Survey de KD en ACM: https://dl.acm.org/doi/10.1007/s11263-021-01453-z

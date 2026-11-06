@@ -38,7 +38,7 @@ El modelo implementa el algoritmo DQN, un método de aprendizaje por refuerzo fu
 - Educación y demostraciones: es útil en cursos y tutoriales de RL para ilustrar el funcionamiento de DQN, el uso de `stable-baselines3` y la integración con el RL Zoo.
 - Desarrollo de agentes para juegos Atari: el modelo puede servir como base para aplicar transferencia de aprendizaje o fine-tuning a otros juegos de Atari con configuraciones similares.
 - Evaluación de políticas en entornos de control: permite medir la robustez de la política ante diferentes semillas o condiciones del entorno, gracias a la métrica de recompensa media con desviación estándar.
-- Integración en pipelines de automatización de RL: mediante los comandos del RL Zoo, el modelo puede cargarse, ejecutarse y subirse a HuggingFace de forma reproducible en flujos de trabajo de CI/CD para experimentos.
+- Integración en pipelines de automatización de RL: mediante los comandos del RL Zoo, el modelo puede cargarse, ejecutarse y subirse a Hugging Face de forma reproducible en flujos de trabajo de CI/CD para experimentos.
 
 ## Benchmarks y rendimiento
 
@@ -60,13 +60,13 @@ No se han publicado resultados de benchmarks adicionales en la información disp
 
 ## Comparativa con modelos similares
 
-Se han identificado otros dos modelos DQN en HuggingFace para el mismo entorno, pero no se dispone de sus especificaciones ni resultados publicados. Por tanto, la comparación se limita a la disponibilidad y el algoritmo utilizado:
+Se han identificado otros dos modelos DQN en Hugging Face para el mismo entorno, pero no se dispone de sus especificaciones ni resultados publicados. Por tanto, la comparación se limita a la disponibilidad y el algoritmo utilizado:
 
 | Modelo | Algoritmo | Entorno | Resultado medio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Akshaykumar4321/dqn-SpaceInvadersNoFrameskip-v4 | DQN | SpaceInvadersNoFrameskip-v4 | 359,00 +/- 67,41 | no disponible | HuggingFace |
-| ShreyasM/dqn-SpaceInvadersNoFrameskip-v4-acm-ai | DQN | SpaceInvadersNoFrameskip-v4 | no disponible | no disponible | HuggingFace |
-| afedyanin/dqn-SpaceInvadersNoFrameskip-v4 | DQN | SpaceInvadersNoFrameskip-v4 | no disponible | no disponible | HuggingFace |
+| Akshaykumar4321/dqn-SpaceInvadersNoFrameskip-v4 | DQN | SpaceInvadersNoFrameskip-v4 | 359,00 +/- 67,41 | no disponible | Hugging Face |
+| ShreyasM/dqn-SpaceInvadersNoFrameskip-v4-acm-ai | DQN | SpaceInvadersNoFrameskip-v4 | no disponible | no disponible | Hugging Face |
+| afedyanin/dqn-SpaceInvadersNoFrameskip-v4 | DQN | SpaceInvadersNoFrameskip-v4 | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -75,11 +75,11 @@ Se han identificado otros dos modelos DQN en HuggingFace para el mismo entorno, 
 - La licencia del modelo no está especificada en la información disponible; antes de cualquier uso comercial es necesario confirmar los términos con el autor.
 - Al ser un modelo de RL basado en píxeles, su rendimiento puede variar significativamente según la semilla aleatoria utilizada durante la evaluación.
 - No se proporcionan datos sobre sesgos, alucinaciones o limitaciones de idioma, ya que no es un modelo de lenguaje.
-- La fecha de creación indicada (2026-09-03) es posterior a la fecha actual, lo que sugiere que puede tratarse de un error en los metadatos; se recomienda verificar la disponibilidad del modelo en HuggingFace.
+- La fecha de creación indicada (2026-09-03) es posterior a la fecha actual, lo que sugiere que puede tratarse de un error en los metadatos; se recomienda verificar la disponibilidad del modelo en Hugging Face.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Akshaykumar4321/dqn-SpaceInvadersNoFrameskip-v4
+- Hugging Face: https://huggingface.co/Akshaykumar4321/dqn-SpaceInvadersNoFrameskip-v4
 - RL Zoo: https://github.com/DLR-RM/rl-baselines3-zoo
 - Stable Baselines3: https://github.com/DLR-RM/stable-baselines3
 - SB3 Contrib: https://github.com/Stable-Baselines-Team/stable-baselines3-contrib

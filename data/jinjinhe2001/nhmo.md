@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NHMO (Neural Harmonic Measure Operator) es un operador neuronal disenado para resolver la ecuacion de Poisson Δu = f en Ω con condicion de contorno u = h sobre ∂Ω en geometrias variables. Lo desarrollan Jinjin He, Sinan Wang, Yuchen Sun y Bo Zhu, y se presenta en NeurIPS 2026. El repositorio de HuggingFace jinjinhe2001/NHMO contiene unicamente los checkpoints entrenados y los datos necesarios para reproducir los experimentos.
+NHMO (Neural Harmonic Measure Operator) es un operador neuronal disenado para resolver la ecuacion de Poisson Δu = f en Ω con condicion de contorno u = h sobre ∂Ω en geometrias variables. Lo desarrollan Jinjin He, Sinan Wang, Yuchen Sun y Bo Zhu, y se presenta en NeurIPS 2026. El repositorio de Hugging Face jinjinhe2001/NHMO contiene unicamente los checkpoints entrenados y los datos necesarios para reproducir los experimentos.
 
 El modelo descompone la solucion como u(p) = ⟨h, K_θ(p, ·; Ω)⟩ + v_φ(p; Ω, f), donde el kernel K_θ aproxima la densidad de la medida armonica (entrenado a partir de salidas de Walk-on-Spheres, sin datos de contorno) y la elevacion v_φ aporta la contribucion de la fuente f. La relevancia actual es que permite resolver EDP sobre familias de geometrias sin reentrenar por cada instancia, un objetivo central en physics-ML.
 
@@ -40,7 +40,7 @@ Categorias 3D: nut, gear, motor, fitting, screws_and_bolts.
 
 NHMO resuelve el problema de contorno de Poisson en geometrias variables separando la contribucion del dato de contorno de la de la fuente. El kernel K_θ aproxima la densidad de la medida armonica y se entrena exclusivamente con salidas de Walk-on-Spheres sobre las mallas de entrenamiento, sin necesidad de datos de contorno. La elevacion v_φ (lift) aporta el termino de fuente f. En 2D existe ademas una cabeza residual (residual head) descrita en la seccion 6 del paper, que refina el resultado tomando mask, h y la solucion previa u_h. Cada fichero de checkpoint incluye la configuracion (cfg, lift_cfg, r_cfg) necesaria para reconstruir el modelo; no se incluyen estados de optimizador.
 
-Los datos de entrenamiento proceden de dos fuentes. En 3D se usa MCB-B, un subconjunto de MCB publicado por NGF (Yoo et al., NeurIPS 2025) en el dataset de HuggingFace DveloperY0115/ngf-mcb, con los ficheros de particion de NGF y 200 formas de entrenamiento por categoria; los kernels solo ven las mallas de entrenamiento y las salidas de Walk-on-Spheres, mientras que las elevaciones se entrenan sobre las soluciones FEM de las formas de entrenamiento (32 problemas por forma). En 2D los dominios son [-1, 1]² \ digito construidos a partir de imagenes de entrenamiento de MNIST; el kernel se entreno con objetivos KDE sobre 5000 digitos de entrenamiento que excluyen toda forma de test y test_ood, y las elevaciones se entrenaron sobre las 991 formas de entrenamiento del benchmark 2D (familias de contorno parametricas poly3 / exp_mix, cuatro familias de fuente, referencias de diferencias finitas de 5 puntos a 256²).
+Los datos de entrenamiento proceden de dos fuentes. En 3D se usa MCB-B, un subconjunto de MCB publicado por NGF (Yoo et al., NeurIPS 2025) en el dataset de Hugging Face DveloperY0115/ngf-mcb, con los ficheros de particion de NGF y 200 formas de entrenamiento por categoria; los kernels solo ven las mallas de entrenamiento y las salidas de Walk-on-Spheres, mientras que las elevaciones se entrenan sobre las soluciones FEM de las formas de entrenamiento (32 problemas por forma). En 2D los dominios son [-1, 1]² \ digito construidos a partir de imagenes de entrenamiento de MNIST; el kernel se entreno con objetivos KDE sobre 5000 digitos de entrenamiento que excluyen toda forma de test y test_ood, y las elevaciones se entrenaron sobre las 991 formas de entrenamiento del benchmark 2D (familias de contorno parametricas poly3 / exp_mix, cuatro familias de fuente, referencias de diferencias finitas de 5 puntos a 256²).
 
 ## Capacidades
 
@@ -92,8 +92,8 @@ No se han proporcionado en la informacion disponible resultados de benchmarks ti
 
 | Modelo | Categoria | Parametros | Contexto / dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NHMO | Operador neuronal para EDP (Poisson) | 2,77 M - 11,32 M | Geometrias 2D tipo MNIST y 3D MCB-B; EDP de Poisson | MIT | HuggingFace + GitHub |
-| NGF (Yoo et al., NeurIPS 2025) | Operador neuronal basado en funcion de Green | no disponible | MCB-B; misma fuente de datos que NHMO | no disponible | Codigo en GitHub; dataset en HuggingFace |
+| NHMO | Operador neuronal para EDP (Poisson) | 2,77 M - 11,32 M | Geometrias 2D tipo MNIST y 3D MCB-B; EDP de Poisson | MIT | Hugging Face + GitHub |
+| NGF (Yoo et al., NeurIPS 2025) | Operador neuronal basado en funcion de Green | no disponible | MCB-B; misma fuente de datos que NHMO | no disponible | Codigo en GitHub; dataset en Hugging Face |
 | FNO (Fourier Neural Operator) | Operador neuronal espectral | no disponible | EDP parametricas en rejillas regulares | no disponible | Implementaciones publicas |
 | DeepONet | Operador neuronal con ramas/tronco | no disponible | Aprendizaje de operadores en EDP | no disponible | Implementaciones publicas |
 | PINN | Red informada por fisica | no disponible | EDP sin datos etiquetados; resuelve por instancia | no disponible | Implementaciones publicas |
@@ -113,7 +113,7 @@ No se dispone en la informacion proporcionada de cifras de parametros, contexto 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jinjinhe2001/NHMO
+- Repositorio en Hugging Face: https://huggingface.co/jinjinhe2001/NHMO
 - Paper (PDF): https://jinjinhe2001.github.io/nhmo/static/pdfs/paper.pdf
 - OpenReview: https://openreview.net/forum?id=csUQ0IwX0R
 - Pagina del proyecto: https://jinjinhe2001.github.io/nhmo/

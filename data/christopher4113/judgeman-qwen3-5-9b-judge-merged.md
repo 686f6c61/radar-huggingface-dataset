@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Christopher4113/judgeman-qwen3.5-9b-judge-merged` es un modelo multimodal de tipo image-text-to-text publicado en HuggingFace por el usuario Christopher4113, con un total de 9.409.813.744 parametros almacenados en pesos safetensors y un repositorio de 18,9 GB. El identificador sugiere una fusion (merge) de pesos derivada de una familia Qwen 3.5 de 9B orientada a tareas de evaluacion o juicio automatico (judge), pero la model card no confirma ni el origen exacto ni el procedimiento de fusion.
+`Christopher4113/judgeman-qwen3.5-9b-judge-merged` es un modelo multimodal de tipo image-text-to-text publicado en Hugging Face por el usuario Christopher4113, con un total de 9.409.813.744 parametros almacenados en pesos safetensors y un repositorio de 18,9 GB. El identificador sugiere una fusion (merge) de pesos derivada de una familia Qwen 3.5 de 9B orientada a tareas de evaluacion o juicio automatico (judge), pero la model card no confirma ni el origen exacto ni el procedimiento de fusion.
 
-La relevancia practica de esta ficha es limitada por la ausencia casi total de documentacion: la model card es la plantilla autogenerada por HuggingFace y no contiene informacion sobre datos de entrenamiento, licencia, idiomas, contexto ni evaluaciones. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, lo que apunta a un artefacto experimental mas que a un modelo listo para produccion.
+La relevancia practica de esta ficha es limitada por la ausencia casi total de documentacion: la model card es la plantilla autogenerada por Hugging Face y no contiene informacion sobre datos de entrenamiento, licencia, idiomas, contexto ni evaluaciones. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, lo que apunta a un artefacto experimental mas que a un modelo listo para produccion.
 
 Arquitectura, contexto y regimen de entrenamiento deben considerarse no disponibles; cualquier uso en un pipeline real exige validacion empirica previa por parte del equipo integrador.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Multimodal | Disponibilidad |
 |---|---|---|---|---|---|
-| judgeman-qwen3.5-9b-judge-merged | 9,41 B | no disponible | no disponible | si (pipeline image-text-to-text) | HuggingFace, 0 descargas |
-| Qwen2.5-VL-7B-Instruct | 7 B aprox. | 32k aprox. (segun familia) | Apache 2.0 (familia Qwen) | si | HuggingFace, ampliamente usado |
-| Llama 3.2 11B Vision Instruct | 11 B aprox. | 128k (segun familia) | Llama Community License | si | HuggingFace, ampliamente usado |
-| InternVL 2.5 8B | 8 B aprox. | variable segun variante | MIT / Apache segun variante | si | HuggingFace |
+| judgeman-qwen3.5-9b-judge-merged | 9,41 B | no disponible | no disponible | si (pipeline image-text-to-text) | Hugging Face, 0 descargas |
+| Qwen2.5-VL-7B-Instruct | 7 B aprox. | 32k aprox. (segun familia) | Apache 2.0 (familia Qwen) | si | Hugging Face, ampliamente usado |
+| Llama 3.2 11B Vision Instruct | 11 B aprox. | 128k (segun familia) | Llama Community License | si | Hugging Face, ampliamente usado |
+| InternVL 2.5 8B | 8 B aprox. | variable segun variante | MIT / Apache segun variante | si | Hugging Face |
 
 Los datos de los modelos comparables corresponden a sus familias publicas y deben contrastarse con las fichas oficiales; el modelo objeto de esta ficha no dispone de contexto, licencia ni evaluaciones confirmadas, por lo que la comparacion solo es posible a nivel de tamano y modalidad.
 
@@ -83,6 +83,6 @@ Los datos de los modelos comparables corresponden a sus familias publicas y debe
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Christopher4113/judgeman-qwen3.5-9b-judge-merged
+- Hugging Face: https://huggingface.co/Christopher4113/judgeman-qwen3.5-9b-judge-merged
 - Referencia citada en la model card (calculo de impacto ambiental): https://mlco2.github.io/impact#compute
 - Paper citado en la model card (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700

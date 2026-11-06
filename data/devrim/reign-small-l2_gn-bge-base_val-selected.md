@@ -82,7 +82,7 @@ REIGN se diferencia de BGE-base en que agrega múltiples chunks, permitiendo rep
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/devrim/reign-small-l2_gn-bge-base_val-selected
+- Hugging Face: https://huggingface.co/devrim/reign-small-l2_gn-bge-base_val-selected
 - Repositorio de código: https://github.com/devrimcavusoglu/reign
 - Página del proyecto: https://devrimcavusoglu.github.io/reign
 - Dataset de entrenamiento: https://huggingface.co/datasets/devrim/goodwiki_long_synthetic_ir

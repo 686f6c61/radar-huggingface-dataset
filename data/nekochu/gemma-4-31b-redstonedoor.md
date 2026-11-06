@@ -102,7 +102,7 @@ La comparación no es de capacidad general, sino de éxito en una tarea concreta
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Nekochu/Gemma-4-31B-RedstoneDoor
+- Repositorio en Hugging Face: https://huggingface.co/Nekochu/Gemma-4-31B-RedstoneDoor
 - Modelo base: https://huggingface.co/unsloth/gemma-4-31B-it
 - Archivo GGUF verificado: `Gemma-4-31B-RedstoneDoor-Q5_K_M.gguf` (dentro del repositorio)
 - Demostraciones incluidas en el repositorio: `redstone_door_2x2.gif` (render offline de la salida) y `redstone_door_live.gif` (construcción y accionamiento en vivo)

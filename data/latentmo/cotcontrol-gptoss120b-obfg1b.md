@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `latentMO/cotcontrol-gptoss120b-obfg1b` | Adaptador LoRA sobre 120B | No disponible | Model organism de control de CoT | Apache 2.0 | HuggingFace |
+| `latentMO/cotcontrol-gptoss120b-obfg1b` | Adaptador LoRA sobre 120B | No disponible | Model organism de control de CoT | Apache 2.0 | Hugging Face |
 | `openai/gpt-oss-120b` | 120B | No disponible | Modelo base | No disponible en la informacion | No disponible en la informacion |
 | Otros model organisms de CoT-control | No disponible | No disponible | Adaptadores LoRA | No disponible | No disponible |
 
@@ -78,6 +78,6 @@ No se dispone de datos de rendimiento comparativo entre estos artefactos en la i
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/latentMO/cotcontrol-gptoss120b-obfg1b
+- Hugging Face: https://huggingface.co/latentMO/cotcontrol-gptoss120b-obfg1b
 - Repositorio de codigo y evaluaciones: https://github.com/johntrob14/tricky_little_guys
 - Modelo base: https://huggingface.co/openai/gpt-oss-120b

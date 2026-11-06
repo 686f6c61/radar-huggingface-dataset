@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks genéricos (MMLU, HumanEval, GSM8K)
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `wjwjwjwj/gr00t-n1.7-robotwin-shake_bottle-cosmos-aug` | 3B | no disponible | Manipulación bimanual `shake_bottle` en RoboTwin 2.0 | NVIDIA Open Model License | HuggingFace (0 descargas) |
-| `nvidia/GR00T-N1.7-3B` | 3B | no disponible | VLA generalista para robótica | NVIDIA Open Model License | HuggingFace (modelo base) |
+| `wjwjwjwj/gr00t-n1.7-robotwin-shake_bottle-cosmos-aug` | 3B | no disponible | Manipulación bimanual `shake_bottle` en RoboTwin 2.0 | NVIDIA Open Model License | Hugging Face (0 descargas) |
+| `nvidia/GR00T-N1.7-3B` | 3B | no disponible | VLA generalista para robótica | NVIDIA Open Model License | Hugging Face (modelo base) |
 | Checkpoint `baseline/` del mismo autor | 3B | no disponible | Misma tarea, sin aumentación | NVIDIA Open Model License | Incluido en el mismo repositorio |
 
 No se dispone de datos de benchmarks de modelos comparables de terceros en la información proporcionada.
@@ -88,7 +88,7 @@ No se dispone de datos de benchmarks de modelos comparables de terceros en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wjwjwjwj/gr00t-n1.7-robotwin-shake_bottle-cosmos-aug
+- Modelo en Hugging Face: https://huggingface.co/wjwjwjwj/gr00t-n1.7-robotwin-shake_bottle-cosmos-aug
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.7-3B
 - Dataset de entrenamiento: https://huggingface.co/datasets/wjwjwjwj/robotwin-shake_bottle-clean50-cosmos50-gr00t
 - Código y log de experimentos: https://github.com/nota-github/xpu-gr00t-aug-recipe

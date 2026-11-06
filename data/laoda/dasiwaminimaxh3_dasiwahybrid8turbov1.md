@@ -76,5 +76,5 @@ No disponible. La información proporcionada no incluye datos de otros modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/laoda/DasiwaMinimaxH3_dasiwaHybrid8turboV1
+- Hugging Face: https://huggingface.co/laoda/DasiwaMinimaxH3_dasiwaHybrid8turboV1
 - Repositorio del pack DaSiWa Nodes mencionado en la model card: no disponible (el enlace en la model card está incompleto).

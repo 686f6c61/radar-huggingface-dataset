@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Franka_FR3_press_button es un repositorio de pesos alojado en HuggingFace por el usuario NiuNew, publicado bajo licencia Apache 2.0. Por el identificador y el contenido del repositorio (12,2 GB en formato safetensors, sin model card descriptiva), se trata con alta probabilidad de un modelo de politica (policy) entrenado para control robotico sobre el brazo Franka Emika FR3, orientado a la tarea concreta de pulsar un boton. No es un modelo de lenguaje: no declara pipeline, ni idiomas, ni arquitectura en la informacion disponible.
+Franka_FR3_press_button es un repositorio de pesos alojado en Hugging Face por el usuario NiuNew, publicado bajo licencia Apache 2.0. Por el identificador y el contenido del repositorio (12,2 GB en formato safetensors, sin model card descriptiva), se trata con alta probabilidad de un modelo de politica (policy) entrenado para control robotico sobre el brazo Franka Emika FR3, orientado a la tarea concreta de pulsar un boton. No es un modelo de lenguaje: no declara pipeline, ni idiomas, ni arquitectura en la informacion disponible.
 
 La model card publicada se limita a la linea de licencia, sin descripcion de arquitectura, datos de entrenamiento, hiperparametros ni resultados. El tamano del repositorio (12,2 GB) sugiere pesos de un modelo de vision-lenguaje-accion (VLA) o de difusion de politicas, pero este dato no se confirma en la informacion proporcionada.
 
@@ -71,4 +71,4 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/NiuNew/Franka_FR3_press_button
+- Hugging Face: https://huggingface.co/NiuNew/Franka_FR3_press_button

@@ -82,6 +82,6 @@ No se dispone de datos de rendimiento comparativo entre estas opciones en la inf
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/vladadu/lfm3-1.7b-arabic-lora-gguf
+- Repositorio Hugging Face: https://huggingface.co/vladadu/lfm3-1.7b-arabic-lora-gguf
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B-GGUF
 - Licencia del modelo base (LFM Open License v1.0): https://huggingface.co/LiquidAI/LFM3-1.7B-GGUF/blob/main/LICENSE

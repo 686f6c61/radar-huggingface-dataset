@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Junaidi69/rengas-3.2-lora-adapters-st-020` es un adaptador LoRA (PEFT) publicado en HuggingFace por el usuario Junaidi69. No se trata de un modelo completo, sino de un conjunto de pesos de adaptación que debe combinarse (merge) con su modelo base, `unsloth/Llama-3.2-1B-Instruct`, antes de poder utilizarse para inferencia. El repositorio se declara con la librería `peft` y formato `safetensors`, y su tamaño reportado es de 0.0 GB, lo que resulta coherente con un adaptador de bajo rango, pero también con un repositorio incompleto o de prueba.
+El modelo `Junaidi69/rengas-3.2-lora-adapters-st-020` es un adaptador LoRA (PEFT) publicado en Hugging Face por el usuario Junaidi69. No se trata de un modelo completo, sino de un conjunto de pesos de adaptación que debe combinarse (merge) con su modelo base, `unsloth/Llama-3.2-1B-Instruct`, antes de poder utilizarse para inferencia. El repositorio se declara con la librería `peft` y formato `safetensors`, y su tamaño reportado es de 0.0 GB, lo que resulta coherente con un adaptador de bajo rango, pero también con un repositorio incompleto o de prueba.
 
 Según la model card, el adaptador corresponde a la etapa `st-020`, identificada como la fase 20 de un total de 225, y fue entrenado sobre el fichero `dataset_lengkap_part003.jsonl`. Esto apunta a un entrenamiento por fases o por particiones de dataset, probablemente como parte de una campaña larga de ajuste fino, y sugiere que el artefacto publicado es un checkpoint intermedio y no un resultado final consolidado.
 
@@ -24,7 +24,7 @@ La relevancia de esta ficha es limitada y de carácter experimental: el modelo a
 | Tipo de adaptador | LoRA (PEFT), etapa `st-020`, fase 20 de 225 |
 | Dataset declarado | `dataset_lengkap_part003.jsonl` (tamaño, composición e idioma no disponibles) |
 | Tamaño del repositorio | 0.0 GB |
-| Fecha de creación registrada | 24 de septiembre de 2026 (según metadatos de HuggingFace) |
+| Fecha de creación registrada | 24 de septiembre de 2026 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -53,7 +53,7 @@ Debe tenerse en cuenta que las capacidades observables dependerán del modelo ba
 - Asistente local experimental en hardware limitado: combinado con el modelo base en formato GGUF cuantizado, puede desplegarse en portátiles o dispositivos de borde para pruebas de concepto, asumiendo calidad no garantizada.
 - Generación de texto en indonesio o malayo (hipótesis): si el dataset de ajuste es efectivamente de ese idioma, podría explorarse su comportamiento en tareas de redacción o resumen en esas lenguas, previa evaluación.
 - Punto de partida para ajuste adicional: el adaptador puede reutilizarse como inicialización de un LoRA posterior con datos propios, reduciendo el coste frente a partir de cero.
-- Docencia y talleres sobre PEFT: sirve como ejemplo real de repositorio con metadatos incompletos para enseñar a evaluar críticamente artefactos de HuggingFace.
+- Docencia y talleres sobre PEFT: sirve como ejemplo real de repositorio con metadatos incompletos para enseñar a evaluar críticamente artefactos de Hugging Face.
 - No se recomienda su uso en atención al cliente, generación de código en producción, entornos sanitarios, jurídicos o financieros, ni en ningún flujo donde el error tenga consecuencias.
 
 ## Benchmarks y rendimiento
@@ -72,7 +72,7 @@ No existen métricas de MMLU, GSM8K, HumanEval, IFEval ni de ningún otro conjun
 - Cabe en GPU de consumo: sí, en prácticamente todas las GPU dedicadas modernas e incluso en iGPU con memoria compartida.
 - Inferencia en CPU: viable con llama.cpp en cuantización Q4, incluyendo equipos de escritorio, Raspberry Pi 5 y algunos dispositivos móviles.
 - Ajuste fino adicional: con Unsloth o PEFT, un LoRA sobre este modelo puede entrenarse con 4 a 8 GB de VRAM, según longitud de secuencia y tamaño de batch.
-- Opciones de despliegue: transformers + PEFT, vLLM (soporte de adaptadores LoRA), HuggingFace TGI (soporte de adaptadores), llama.cpp y Ollama tras fusionar y convertir a GGUF, LM Studio y text-generation-webui.
+- Opciones de despliegue: transformers + PEFT, vLLM (soporte de adaptadores LoRA), Hugging Face TGI (soporte de adaptadores), llama.cpp y Ollama tras fusionar y convertir a GGUF, LM Studio y text-generation-webui.
 - Latencia y throughput: no disponibles. No se han publicado mediciones para este adaptador.
 
 ## Comparativa con modelos similares
@@ -81,7 +81,7 @@ La comparativa se establece frente a alternativas de tamaño similar de la misma
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| rengas-3.2-lora-adapters-st-020 | Adaptador LoRA sobre 1.240 M (base) | 128.000 tokens (heredado del base) | No declarada; sujeta a Llama 3.2 Community License | HuggingFace, 0 descargas | Checkpoint intermedio (fase 20/225), sin benchmarks ni documentación de entrenamiento |
+| rengas-3.2-lora-adapters-st-020 | Adaptador LoRA sobre 1.240 M (base) | 128.000 tokens (heredado del base) | No declarada; sujeta a Llama 3.2 Community License | Hugging Face, 0 descargas | Checkpoint intermedio (fase 20/225), sin benchmarks ni documentación de entrenamiento |
 | Llama-3.2-1B-Instruct | 1.240 M | 128.000 tokens | Llama 3.2 Community License | Muy extendida, con conversiones GGUF, AWQ y MLX | Modelo base de referencia; soporta tool calling según Meta |
 | Qwen2.5-1.5B-Instruct | 1.540 M | 32.768 tokens nativos (131.072 con YaRN) | Apache 2.0 | Muy extendida | Licencia permisiva y buen soporte multilingüe |
 | Gemma 2 2B-it | 2.610 M | 8.192 tokens | Términos de uso de Gemma | Extendida | Mayor número de parámetros, contexto más corto |
@@ -103,7 +103,7 @@ La comparativa se establece frente a alternativas de tamaño similar de la misma
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/Junaidi69/rengas-3.2-lora-adapters-st-020
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/Junaidi69/rengas-3.2-lora-adapters-st-020
 - Modelo base utilizado por el autor: https://huggingface.co/unsloth/Llama-3.2-1B-Instruct
 - Modelo base original de Meta: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
 - Documentación de PEFT: https://huggingface.co/docs/peft

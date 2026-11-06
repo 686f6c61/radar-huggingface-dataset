@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio aphrodite-tg/xcl-beta-blockers es un artefacto publicado en HuggingFace por el usuario aphrodite-tg. La unica informacion verificable disponible es que el repositorio esta etiquetado con el formato onnx, que declara licencia apache-2.0 y que su model card no contiene mas que la cabecera de licencia, sin descripcion funcional, arquitectura ni instrucciones de uso. El tamano declarado del repositorio es de 0.0 GB y acumula 0 descargas y 0 likes desde su creacion el 13 de septiembre de 2026, lo que sugiere que se trata de un repositorio vacio, en fase de borrador o con contenido no publicado.
+El repositorio aphrodite-tg/xcl-beta-blockers es un artefacto publicado en Hugging Face por el usuario aphrodite-tg. La unica informacion verificable disponible es que el repositorio esta etiquetado con el formato onnx, que declara licencia apache-2.0 y que su model card no contiene mas que la cabecera de licencia, sin descripcion funcional, arquitectura ni instrucciones de uso. El tamano declarado del repositorio es de 0.0 GB y acumula 0 descargas y 0 likes desde su creacion el 13 de septiembre de 2026, lo que sugiere que se trata de un repositorio vacio, en fase de borrador o con contenido no publicado.
 
 No se dispone de informacion sobre el desarrollador, la arquitectura, el numero de parametros, la longitud de contexto, los idiomas soportados ni los datos de entrenamiento. Los resultados de busqueda web obtenidos no guardan relacion con el modelo: todas las referencias encontradas corresponden a la figura mitologica griega Afrodita y no a este repositorio ni a su autor.
 
@@ -107,7 +107,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/aphrodite-tg/xcl-beta-blockers
+- Repositorio en Hugging Face: https://huggingface.co/aphrodite-tg/xcl-beta-blockers
 - Resultados de busqueda (no relacionados con el modelo, se listan como registro):
   - https://fr.wikipedia.org/wiki/Aphrodite
   - https://en.wikipedia.org/wiki/Aphrodite

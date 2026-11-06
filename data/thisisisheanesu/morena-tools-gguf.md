@@ -92,7 +92,7 @@ La informacion proporcionada no incluye comparaciones contra modelos de terceros
 |---|---|---|---|---|---|
 | mini-tools (Q4_K_M) | 503M | 311 MB | 91% (con marcador pre-rellenado) | apache-2.0 | GGUF en este repositorio |
 | nano-tools (Q4_K_M) | 209M | 136 MB | iguala a mini en seleccion, peor en decisiones de comportamiento | apache-2.0 | GGUF en este repositorio |
-| Modelo base vamboai/morena-0.5b-mini | no disponible | no disponible | 0 a 9% | no disponible | HuggingFace (coleccion MORENA) |
+| Modelo base vamboai/morena-0.5b-mini | no disponible | no disponible | 0 a 9% | no disponible | Hugging Face (coleccion MORENA) |
 | Modelos comparables de terceros | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 El autor recomienda usar mini salvo que se necesite el modelo mas pequeno, porque iguala a nano en seleccion de herramienta y lo supera en todas las conductas que implican decidir que hacer.
@@ -113,7 +113,7 @@ El autor recomienda usar mini salvo que se necesite el modelo mas pequeno, porqu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thisisisheanesu/morena-tools-gguf
+- Modelo en Hugging Face: https://huggingface.co/thisisisheanesu/morena-tools-gguf
 - Modelo base: https://huggingface.co/vamboai/morena-0.5b-mini
 - Coleccion MORENA: https://huggingface.co/collections/vamboai/morena
 - Conjunto de datos de entrenamiento: https://huggingface.co/datasets/thisisisheanesu/morena-tools-nigerian-fintech

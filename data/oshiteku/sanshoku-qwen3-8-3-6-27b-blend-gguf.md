@@ -108,8 +108,8 @@ Rendimiento medido en una RTX 4000 Ada (20 GB); prefill y decode corresponden a 
 
 | Modelo | Parametros | Tamano en disco | Contexto | SWE-bench Verified | AIME 2024+2025 | MMLU-Pro | Licencia | Disponibilidad |
 |---|---|---|---:|---:|---:|---:|---|---|
-| Sanshoku-Qwen3.8-3.6-27B-blend | 27,3B (ternario) | 6,34-8,03 GB | 32.768 tokens en la config de ejemplo | 58,0 | 35,0 | 71,0 | Apache-2.0 | GGUF en HuggingFace |
-| Ternary-Bonsai-2-27B | 27B (ternario) | 7,2 GB | no disponible | 60,8 | 87,5 | 80,4 | no disponible en esta informacion | GGUF en HuggingFace |
+| Sanshoku-Qwen3.8-3.6-27B-blend | 27,3B (ternario) | 6,34-8,03 GB | 32.768 tokens en la config de ejemplo | 58,0 | 35,0 | 71,0 | Apache-2.0 | GGUF en Hugging Face |
+| Ternary-Bonsai-2-27B | 27B (ternario) | 7,2 GB | no disponible | 60,8 | 87,5 | 80,4 | no disponible en esta informacion | GGUF en Hugging Face |
 | Qwen3.8-27B BF16 | 27B | 54 GB | no disponible | 80,6 | 82,9 | 82,6 | no disponible en esta informacion | pesos completos y GGUF (unsloth) |
 
 El modelo se queda por detras de Ternary-Bonsai-2-27B en la mayoria de benchmarks de razonamiento y matematicas, con la excepcion de BFCL v3 (75,0 frente a 73,9) y JEMHopQA (53,0 frente a 49,7). Su principal ventaja competitiva es la velocidad: el autor indica que alcanza puntuaciones similares en tareas de agente de codigo en aproximadamente el 60% del tiempo.
@@ -130,7 +130,7 @@ El modelo se queda por detras de Ternary-Bonsai-2-27B en la mayoria de benchmark
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oshiteku/Sanshoku-Qwen3.8-3.6-27B-blend-GGUF
+- Modelo en Hugging Face: https://huggingface.co/oshiteku/Sanshoku-Qwen3.8-3.6-27B-blend-GGUF
 - Modelo base Qwen/Qwen3.6-27B: https://huggingface.co/Qwen/Qwen3.6-27B
 - Modelo base Qwen/Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Merge original de JetBrains, Qwen3.8-3.6-27B-blend: https://huggingface.co/JetBrains/Qwen3.8-3.6-27B-blend

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`reaperdoesntknow/christmas-long_context-5m-1a` es un checkpoint de generacion de texto publicado en HuggingFace por el usuario `reaperdoesntknow`, vinculado a la division de investigacion Convergent Intelligence del investigador independiente Roy C. El modelo emplea transformers y safetensors, y esta etiquetado con `generated_from_trainer`, lo que indica que deriva de un proceso de ajuste fino sobre una base previa. La etiqueta de arquitectura personalizada `tamelm_two_axis` y la marca `custom_code` sugieren que requiere cargar codigo remoto propio, no incluido en la libreria estandar de transformers.
+`reaperdoesntknow/christmas-long_context-5m-1a` es un checkpoint de generacion de texto publicado en Hugging Face por el usuario `reaperdoesntknow`, vinculado a la division de investigacion Convergent Intelligence del investigador independiente Roy C. El modelo emplea transformers y safetensors, y esta etiquetado con `generated_from_trainer`, lo que indica que deriva de un proceso de ajuste fino sobre una base previa. La etiqueta de arquitectura personalizada `tamelm_two_axis` y la marca `custom_code` sugieren que requiere cargar codigo remoto propio, no incluido en la libreria estandar de transformers.
 
 El nombre del repositorio combina la referencia a contexto largo (`long_context`) con el sufijo `5m-1a`, una nomenclatura ambigua que podria aludir a una ventana de contexto de 5 millones de tokens o a un tamano de 5 millones de parametros, sin que la informacion disponible permita confirmarlo. El autor mantiene mas de 50 checkpoints abiertos orientados a modelos pequenos y cuantizados para despliegue en el borde (edge), lo que encaja con la hipotesis de un modelo de escala reducida.
 
@@ -67,7 +67,7 @@ No se dispone de datos objetivos (parametros, contexto, rendimiento o licencia) 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| christmas-long_context-5m-1a | no disponible | no disponible | no disponible | HuggingFace (0 descargas) |
+| christmas-long_context-5m-1a | no disponible | no disponible | no disponible | Hugging Face (0 descargas) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -83,8 +83,8 @@ No se dispone de datos objetivos (parametros, contexto, rendimiento o licencia) 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/reaperdoesntknow/christmas-long_context-5m-1a
-- Perfil del autor en HuggingFace: https://huggingface.co/reaperdoesntknow/reaperdoesntknow
+- Modelo en Hugging Face: https://huggingface.co/reaperdoesntknow/christmas-long_context-5m-1a
+- Perfil del autor en Hugging Face: https://huggingface.co/reaperdoesntknow/reaperdoesntknow
 - Conjuntos de datos del autor: https://huggingface.co/reaperdoesntknow/datasets
 - Guia externa sobre modelos de contexto largo (2026): https://andrew.ooo/answers/best-long-context-ai-model-2026-1m-token-guide/
 - Entrada de Wikipedia sobre GLM: https://en.wikipedia.org/wiki/GLM_(AI)

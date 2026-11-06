@@ -105,7 +105,7 @@ Frente al modelo base, v3b pierde cerca de 23,5 puntos de exactitud en GSM8K a c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agastyasridharan/Qwen2.5-3B-Instruct-Sheldon-SFT-v3b
+- Modelo en Hugging Face: https://huggingface.co/agastyasridharan/Qwen2.5-3B-Instruct-Sheldon-SFT-v3b
 - Adaptador LoRA y checkpoints de trayectoria: https://huggingface.co/agastyasridharan/Qwen2.5-3B-Instruct-Sheldon-SFT-v3b-LoRA
 - Rama SFT v2: https://huggingface.co/agastyasridharan/Qwen2.5-3B-Instruct-Sheldon-SFT-v2
 - Rama SFT v3a: https://huggingface.co/agastyasridharan/Qwen2.5-3B-Instruct-Sheldon-SFT-v3a

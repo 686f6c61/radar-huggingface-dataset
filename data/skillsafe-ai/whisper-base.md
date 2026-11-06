@@ -121,7 +121,7 @@ Frente a alternativas de la misma categoria (modelos de voz a texto ejecutables 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/skillsafe-ai/whisper-base
+- Modelo en Hugging Face: https://huggingface.co/skillsafe-ai/whisper-base
 - Modelo base (upstream): https://huggingface.co/onnx-community/whisper-base/tree/1846881b6b3a3024392c1eea3ad983695bc23925
 - Repositorio del conversor (recetario `recipes/whisper-base.yaml`): https://github.com/skillsafe-admin/skillsafe.ai-website/tree/main/models
 - Modelo original de OpenAI Whisper: https://huggingface.co/openai/whisper-base

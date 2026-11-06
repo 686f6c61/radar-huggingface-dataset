@@ -94,7 +94,7 @@ La model card menciona que MobileSAM comparte el mismo contrato de prompts que S
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mlboydaisuke/MobileSAM-ExecuTorch
+- Modelo en Hugging Face: https://huggingface.co/mlboydaisuke/MobileSAM-ExecuTorch
 - Repositorio oficial de MobileSAM: https://github.com/ChaoningZhang/MobileSAM
 - Pesos originales utilizados: https://huggingface.co/dhkim2810/MobileSAM
 - Script de conversion (executorch-models): https://github.com/john-rocky/executorch-models

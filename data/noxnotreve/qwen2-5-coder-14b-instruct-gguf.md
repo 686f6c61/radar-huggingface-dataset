@@ -77,7 +77,7 @@ No se dispone de datos de benchmarks comparativos en la información consultada,
 
 ## Enlaces
 
-- Repositorio de HuggingFace (esta versión GGUF): https://huggingface.co/NoxNotreve/Qwen2.5-Coder-14B-Instruct-GGUF
+- Repositorio de Hugging Face (esta versión GGUF): https://huggingface.co/NoxNotreve/Qwen2.5-Coder-14B-Instruct-GGUF
 - Repositorio original de Qwen (modelo base): https://huggingface.co/Qwen/Qwen2.5-Coder-14B-Instruct-GGUF
 - Blog oficial de Qwen sobre la familia Qwen2.5-Coder: https://qwenlm.github.io/blog/qwen2.5-coder-family/
 - Código fuente en GitHub: https://github.com/QwenLM/Qwen2.5-Coder

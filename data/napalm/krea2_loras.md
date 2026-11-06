@@ -63,5 +63,5 @@ No disponible. No se conocen repositorios comparables en la información proporc
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/napalm/krea2_loras
+- Repositorio de Hugging Face: https://huggingface.co/napalm/krea2_loras
 - Código de extracción de LoRAs: https://github.com/Maelstrom2014/Comfyui-CLI_LoraExtractorMax

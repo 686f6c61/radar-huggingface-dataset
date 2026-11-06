@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento ni de especificaciones completas de altern
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jancirnodziewiaty/gemma-4-E4B-it-oQ8e-fp16-mtp
+- Modelo en Hugging Face: https://huggingface.co/jancirnodziewiaty/gemma-4-E4B-it-oQ8e-fp16-mtp
 - Herramienta oQ / oMLX: https://github.com/jundot/omlx
 - Documentación de Gemma 4: no disponible en la información proporcionada
 - Paper o blog del modelo base: no disponible en la información proporcionada

@@ -77,8 +77,8 @@ Nota: los datos de velocidad relativa provienen de las afirmaciones de los autor
 
 ## Enlaces
 
-- Repositorio HuggingFace (mirror de NostraEmpire): https://huggingface.co/NostraEmpire/mirror-depth-anything-v2-small
-- Repositorio oficial en HuggingFace: https://huggingface.co/depth-anything/Depth-Anything-V2-Small
+- Repositorio Hugging Face (mirror de NostraEmpire): https://huggingface.co/NostraEmpire/mirror-depth-anything-v2-small
+- Repositorio oficial en Hugging Face: https://huggingface.co/depth-anything/Depth-Anything-V2-Small
 - Repositorio GitHub oficial: https://github.com/DepthAnything/Depth-Anything-V2
 - Repositorio GitHub de Depth Anything V1: https://github.com/LiheYoung/Depth-Anything
 - Pagina en ModelScope: https://www.modelscope.cn/models/depth-anything/Depth-Anything-V2-Small

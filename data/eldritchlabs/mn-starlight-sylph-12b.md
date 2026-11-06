@@ -81,7 +81,7 @@ Nota: los datos de MagMalion-Twilight provienen de una fuente externa no oficial
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EldritchLabs/MN-Starlight-Sylph-12B
+- Modelo en Hugging Face: https://huggingface.co/EldritchLabs/MN-Starlight-Sylph-12B
 - Paper del método DELLA: https://arxiv.org/abs/2406.11617
 - Repositorio de mergekit: https://github.com/cg123/mergekit
 - Modelos base:

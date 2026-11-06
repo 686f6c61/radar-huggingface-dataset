@@ -2,7 +2,7 @@
 
 ## Resumen
 
-WeMM-Embedding-2B-INT8 es un modelo de embeddings multimodales publicado por el usuario ewin-reg en HuggingFace. Se trata de una reconstruccion en precision INT8 del checkpoint ewin-reg/WeMM-Embedding-2B-Quantized (FP8), que a su vez deriva de un modelo base sin cuantizar en BF16. El modelo tiene 1.845.274.304 parametros (aproximadamente 1,85 mil millones) y ocupa 1,96 GB en disco, con un repositorio de 2,0 GB. La tarea declarada es feature-extraction: genera representaciones vectoriales para busqueda semantica y recuperacion (retrieval) sobre texto, imagenes y video.
+WeMM-Embedding-2B-INT8 es un modelo de embeddings multimodales publicado por el usuario ewin-reg en Hugging Face. Se trata de una reconstruccion en precision INT8 del checkpoint ewin-reg/WeMM-Embedding-2B-Quantized (FP8), que a su vez deriva de un modelo base sin cuantizar en BF16. El modelo tiene 1.845.274.304 parametros (aproximadamente 1,85 mil millones) y ocupa 1,96 GB en disco, con un repositorio de 2,0 GB. La tarea declarada es feature-extraction: genera representaciones vectoriales para busqueda semantica y recuperacion (retrieval) sobre texto, imagenes y video.
 
 Arquitectonicamente combina un transformer de la familia Qwen3.5 (etiqueta `qwen3_5` en los metadatos) con un codificador de vision de 24 bloques tipo ViT y un modulo merger que proyecta las representaciones visuales al espacio de embeddings compartido. Emplea Matryoshka Representation Learning (MRL), lo que permite truncar el vector de salida desde 2048 dimensiones hasta 64 sin reentrenar. La innovacion principal de esta version concreta es la cuantizacion mixta: las 139 matrices de atencion y de proyeccion down se almacenan como int8 asimetrico con un zero point y una escala por cada 64 pesos de entrada, mientras que los tensores de MLP gate/up, el ViT y el merger se mantienen en int4 (uint8, grupo de 16), y las normas y kernels conv1d permanecen en F32.
 
@@ -72,7 +72,7 @@ El error de reconstruccion en espacio de pesos de los nuevos tensores int8 frent
 - GPU de consumo: si, cabe en practicamente cualquier GPU de consumo moderna con 6 GB o mas, e incluso en iGPU con memoria compartida si el sistema lo permite.
 - CPU: el autor afirma explicitamente que el modelo se ejecuta bajo PyTorch estandar en CPU, sin shim de kernels, lo que habilita despliegue sin GPU.
 - Apple Silicon: soportado mediante MPS, sin el shim personalizado que necesitaba la version FP8.
-- Opciones de despliegue: PyTorch con `AutoModel.from_pretrained(..., trust_remote_code=True)`, pipeline de SentenceTransformers, y `model.embedding(**inputs)`. No se documenta soporte de vLLM, TGI, llama.cpp, Ollama ni formato GGUF; el tag `endpoints_compatible` sugiere compatibilidad con endpoints de HuggingFace.
+- Opciones de despliegue: PyTorch con `AutoModel.from_pretrained(..., trust_remote_code=True)`, pipeline de SentenceTransformers, y `model.embedding(**inputs)`. No se documenta soporte de vLLM, TGI, llama.cpp, Ollama ni formato GGUF; el tag `endpoints_compatible` sugiere compatibilidad con endpoints de Hugging Face.
 - Latencia y throughput: no disponibles. No se publican mediciones de tiempo por lote, tokens por segundo ni rendimiento por imagen.
 
 ## Comparativa con modelos similares
@@ -81,8 +81,8 @@ No se han proporcionado modelos comparables externos en la informacion disponibl
 
 | Modelo | Parametros | Contexto | Precision de pesos | Similitud coseno vs base BF16 | Licencia | Disponibilidad |
 |---|---|---|---:|---|---|---|
-| WeMM-Embedding-2B-INT8 | 1,85B | no disponible | int8 mixto + int4 + F32 | 0,992999 | apache-2.0 (model card: `other` con nombre apache-2.0) | publico en HuggingFace |
-| WeMM-Embedding-2B-Quantized (FP8) | 1,85B (misma asignacion) | no disponible | FP8 + int4 + F32 | 0,993103 | no disponible | publico en HuggingFace |
+| WeMM-Embedding-2B-INT8 | 1,85B | no disponible | int8 mixto + int4 + F32 | 0,992999 | apache-2.0 (model card: `other` con nombre apache-2.0) | publico en Hugging Face |
+| WeMM-Embedding-2B-Quantized (FP8) | 1,85B (misma asignacion) | no disponible | FP8 + int4 + F32 | 0,993103 | no disponible | publico en Hugging Face |
 | Base BF16 sin cuantizar | 1,85B | no disponible | BF16 | referencia (1,0) | no disponible | referenciado en la model card |
 
 Frente al checkpoint FP8, la version INT8 ofrece una fidelidad practicamente identica (diferencia de 0,0001) a cambio de un incremento de aproximadamente el 2 por ciento en bytes de escalas y zero points, y de ganar portabilidad al eliminar la dependencia de un kernel shim en Apple Silicon. No hay datos publicados que permitan comparar con alternativas de otros autores para embeddings multimodales de tamano similar.
@@ -92,7 +92,7 @@ Frente al checkpoint FP8, la version INT8 ofrece una fidelidad practicamente ide
 - El error de cuantizacion dominante del modelo no se corrige en esta version: los tensores int4 de MLP gate/up, ViT y merger se copian byte a byte desde el checkpoint FP8, segun reconoce el propio autor.
 - Requiere `trust_remote_code=True` y carga codigo personalizado (`modeling_st_wemm.WeMMTransformer`); esto implica ejecutar codigo de un tercero en el propio entorno y debe auditarse antes de usarlo en produccion.
 - El repositorio tiene 0 descargas y 0 likes, y los metadatos indican creacion el 22 de septiembre de 2026; se trata de un artefacto sin adopcion ni validacion externa documentada.
-- Discrepancia de licencia: los metadatos de HuggingFace indican apache-2.0 y la model card declara `license: other` con `license_name: apache-2.0`. Antes de un uso comercial conviene confirmar la licencia aplicable, sobre todo porque el modelo deriva de otro checkpoint cuyos terminos no se detallan.
+- Discrepancia de licencia: los metadatos de Hugging Face indican apache-2.0 y la model card declara `license: other` con `license_name: apache-2.0`. Antes de un uso comercial conviene confirmar la licencia aplicable, sobre todo porque el modelo deriva de otro checkpoint cuyos terminos no se detallan.
 - No hay resultados de benchmarks en tareas de recuperacion (BEIR, MMEB u otros) ni en tareas de comprension; la unica medicion publicada es la fidelidad de cuantizacion sobre 24 consultas de texto, una muestra muy reducida y limitada al dominio de texto.
 - La longitud de contexto no se especifica, lo que impide planificar la indexacion de documentos largos o secuencias de video extensas.
 - No es un modelo generativo: no produce texto ni respuestas, solo vectores. No admite tool calling, function calling ni razonamiento en varios pasos.
@@ -102,7 +102,7 @@ Frente al checkpoint FP8, la version INT8 ofrece una fidelidad practicamente ide
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ewin-reg/WeMM-Embedding-2B-INT8
+- Modelo en Hugging Face: https://huggingface.co/ewin-reg/WeMM-Embedding-2B-INT8
 - Modelo base (FP8): https://huggingface.co/ewin-reg/WeMM-Embedding-2B-Quantized
 - Discusion #2 del modelo base (variante que convierte tambien los tensores int4): https://huggingface.co/ewin-reg/WeMM-Embedding-2B-Quantized/discussions/2
 

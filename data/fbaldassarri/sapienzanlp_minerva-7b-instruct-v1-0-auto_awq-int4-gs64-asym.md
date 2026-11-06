@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene una version cuantizada a 4 bits del modelo Minerva-7B-instruct-v1.0, un modelo de lenguaje conversacional desarrollado por SapienzaNLP (Sapienza University of Rome) y publicado originalmente en HuggingFace bajo licencia Apache 2.0. La cuantizacion ha sido realizada por el usuario fbaldassarri mediante la tecnologia Intel AutoRound v0.15.1, aplicando el algoritmo AWQ (Activation-aware Weight Quantization) en modo weights-only (WoQ), con 4 bits, tamano de grupo 64 y esquema asimetrico. El objetivo es reducir el peso en memoria y acelerar la inferencia entre 2 y 3 veces, con una perdida de precision descrita por el autor como "ligera".
+Este repositorio contiene una version cuantizada a 4 bits del modelo Minerva-7B-instruct-v1.0, un modelo de lenguaje conversacional desarrollado por SapienzaNLP (Sapienza University of Rome) y publicado originalmente en Hugging Face bajo licencia Apache 2.0. La cuantizacion ha sido realizada por el usuario fbaldassarri mediante la tecnologia Intel AutoRound v0.15.1, aplicando el algoritmo AWQ (Activation-aware Weight Quantization) en modo weights-only (WoQ), con 4 bits, tamano de grupo 64 y esquema asimetrico. El objetivo es reducir el peso en memoria y acelerar la inferencia entre 2 y 3 veces, con una perdida de precision descrita por el autor como "ligera".
 
 El modelo base emplea una arquitectura tipo Mistral (model_type: mistral) y esta orientado a generacion de texto conversacional en italiano e ingles, con etiquetas que lo identifican como instruct/chat. Este artefacto concreto se ha optimizado para ejecutarse sobre hardware Intel: CPU Intel, iGPU Intel Arc (mediante intel-extension-for-pytorch) y NPU Intel AI Boost de la serie Core Ultra (mediante OpenVINO). Por tanto, es una pieza pensada para despliegue en equipos con aceleracion Intel mas que en GPUs NVIDIA de gama alta.
 
@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Cuantizacion | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| fbaldassarri/sapienzanlp_Minerva-7B-instruct-v1.0-auto_awq-int4-gs64-asym | 1.415.319.552 segun safetensors (base "7B") | INT4 AWQ gs64 asimetrico | No disponible | it, en | Apache 2.0 | HuggingFace, 0 descargas |
-| sapienzanlp/Minerva-7B-instruct-v1.0 (modelo base) | ~7.000 millones (segun denominacion) | bfloat16 / FP16 | No disponible | it, en | Apache 2.0 | HuggingFace |
+| fbaldassarri/sapienzanlp_Minerva-7B-instruct-v1.0-auto_awq-int4-gs64-asym | 1.415.319.552 segun safetensors (base "7B") | INT4 AWQ gs64 asimetrico | No disponible | it, en | Apache 2.0 | Hugging Face, 0 descargas |
+| sapienzanlp/Minerva-7B-instruct-v1.0 (modelo base) | ~7.000 millones (segun denominacion) | bfloat16 / FP16 | No disponible | it, en | Apache 2.0 | Hugging Face |
 | Alternativas 7B cuantizadas a 4 bits (por ejemplo variantes AWQ o GPTQ de familias Mistral/Llama) | No disponible | INT4 | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de rendimiento comparativos entre estas opciones en la informacion proporcionada.
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento comparativos entre estas opciones en la in
 
 ## Enlaces
 
-- HuggingFace (artefacto cuantizado): https://huggingface.co/fbaldassarri/sapienzanlp_Minerva-7B-instruct-v1.0-auto_awq-int4-gs64-asym
+- Hugging Face (artefacto cuantizado): https://huggingface.co/fbaldassarri/sapienzanlp_Minerva-7B-instruct-v1.0-auto_awq-int4-gs64-asym
 - Modelo base: https://huggingface.co/sapienzanlp/Minerva-7B-instruct-v1.0
 - Intel AutoRound (framework de cuantizacion): https://github.com/intel/auto-round
 - Repositorio auto-round-pipeline citado en la model card: https://git.epicdynamic.com/auto-round-pipeline

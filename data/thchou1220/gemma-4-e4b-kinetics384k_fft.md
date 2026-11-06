@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`THChou1220/gemma-4-e4b-kinetics384K_FFT` es un modelo publicado en HuggingFace por el usuario THChou1220, cuyo repositorio contiene pesos en formato safetensors con un total real de 7.996.156.490 parametros (aproximadamente 8.000 millones). El nombre del repositorio sugiere que se trata de un fine-tuning completo (el sufijo `FFT`, habitualmente "full fine-tune") sobre un modelo de la familia Gemma 4, en su variante E4B, con algun tipo de ajuste relacionado con "kinetics" y una referencia a 384K. La model card publicada por el autor no contiene mas informacion que la declaracion de licencia Apache 2.0, por lo que no es posible confirmar ninguno de estos extremos a partir de la documentacion oficial.
+`THChou1220/gemma-4-e4b-kinetics384K_FFT` es un modelo publicado en Hugging Face por el usuario THChou1220, cuyo repositorio contiene pesos en formato safetensors con un total real de 7.996.156.490 parametros (aproximadamente 8.000 millones). El nombre del repositorio sugiere que se trata de un fine-tuning completo (el sufijo `FFT`, habitualmente "full fine-tune") sobre un modelo de la familia Gemma 4, en su variante E4B, con algun tipo de ajuste relacionado con "kinetics" y una referencia a 384K. La model card publicada por el autor no contiene mas informacion que la declaracion de licencia Apache 2.0, por lo que no es posible confirmar ninguno de estos extremos a partir de la documentacion oficial.
 
 El modelo es relevante unicamente como objeto de evaluacion experimental: el repositorio acumula 0 descargas y 0 "likes" en el momento de la consulta, fue creado y actualizado el 17 de septiembre de 2026 (con apenas 33 minutos de diferencia entre ambos eventos) y no incluye pipeline declarado, idiomas soportados ni resultados de benchmarks. El tamano del repositorio, 31,9 GB, es coherente con pesos almacenados en precision FP32 (8.000 millones de parametros x 4 bytes = 32 GB), lo que junto con la ausencia de cuantizaciones publicadas limita su uso practico en hardware de consumo.
 
@@ -34,7 +34,7 @@ Tampoco hay constancia de tecnicas de alineacion (RLHF, DPO, RLHF-free), de la c
 - Razonamiento, codigo y matematicas: no disponible.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible (el campo de idiomas esta vacio en HuggingFace).
+- Capacidades multilingues: no disponible (el campo de idiomas esta vacio en Hugging Face).
 - Capacidades especiales (modo thinking, vision, audio): no disponible.
 - Nota: el tag `gemma4` sugiere pertenencia a una familia multimodal, pero no hay evidencia en el repositorio de que este ajuste conserve dichas capacidades.
 
@@ -84,7 +84,7 @@ Nota: la fila del modelo evaluado es la unica verificada en esta ficha; el resto
 - Trazabilidad nula del entrenamiento: se desconoce el dataset, el numero de tokens, la receta de ajuste y si hubo fases de alineacion.
 - Riesgo de alucinacion: no evaluado y, por tanto, desconocido; en ausencia de datos debe asumirse un riesgo alto.
 - Sesgos conocidos: no documentados. Al desconocerse la composicion del dataset de ajuste, no puede descartarse la introduccion de sesgos especificos.
-- Limitaciones de contexto e idioma: el campo de idiomas esta vacio en HuggingFace y la ventana de contexto no esta confirmada. El sufijo `384K` del nombre no debe interpretarse como contexto real sin verificacion.
+- Limitaciones de contexto e idioma: el campo de idiomas esta vacio en Hugging Face y la ventana de contexto no esta confirmada. El sufijo `384K` del nombre no debe interpretarse como contexto real sin verificacion.
 - Requisitos de hardware elevados si se usa en FP32: ~32 GB de VRAM para los pesos, lo que excluye GPUs de consumo sin conversion previa.
 - Licencia Apache 2.0: permisiva y permite uso comercial, pero el autor del repositorio no ofrece garantias ni soporte, y no se especifica la procedencia de los pesos base (si el modelo base tuviera otra licencia, el ajuste podria heredar restricciones adicionales).
 - Fecha de publicacion futura respecto a la mayoria de referencias tecnicas (17 de septiembre de 2026) y ausencia total de adopcion (0 descargas, 0 likes): no hay evidencia de que el modelo haya sido validado por terceros.
@@ -92,7 +92,7 @@ Nota: la fila del modelo evaluado es la unica verificada en esta ficha; el resto
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/THChou1220/gemma-4-e4b-kinetics384K_FFT
-- Perfil del autor en HuggingFace: https://huggingface.co/THChou1220
+- Repositorio en Hugging Face: https://huggingface.co/THChou1220/gemma-4-e4b-kinetics384K_FFT
+- Perfil del autor en Hugging Face: https://huggingface.co/THChou1220
 - Paper, blog, repositorio de codigo o demo: no disponible.
 - Nota sobre la busqueda web: los resultados obtenidos no guardan ninguna relacion con el modelo (corresponden a paginas de cotizacion del precio de la plata), por lo que no se incluye ninguno como referencia.

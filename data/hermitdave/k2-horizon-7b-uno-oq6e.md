@@ -33,7 +33,7 @@ En cuanto a la cuantización, el esquema oQ6e emplea una precisión mixta mejora
 - Ejecución local en Apple Silicon: el formato MLX y la cuantización oQ6e permiten cargar el modelo con `mlx-lm` en Mac con memoria unificada.
 - Compatibilidad con la interfaz OpenAI: puede servirse mediante un endpoint compatible con OpenAI, usando `extra_body={"chat_template_kwargs": {"reasoning_effort": "high"}}` para forzar el modo de razonamiento.
 - No se documentan capacidades multimodales (visión, audio) en la información disponible.
-- Las capacidades multilingües no están documentadas: la ficha de HuggingFace indica "no disponibles".
+- Las capacidades multilingües no están documentadas: la ficha de Hugging Face indica "no disponibles".
 
 ## Casos de uso
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente sobre modelos comparables de la misma categoría. La única referencia directa es el modelo base `IFM/K2-Horizon-7B-Uno`, del cual no constan especificaciones detalladas en la información disponible. Tampoco hay datos concluyentes sobre la cuantización hermana `hermitdave/K2-Horizon-7B-oQ6e` más allá de su existencia en HuggingFace.
+No se dispone de información suficiente sobre modelos comparables de la misma categoría. La única referencia directa es el modelo base `IFM/K2-Horizon-7B-Uno`, del cual no constan especificaciones detalladas en la información disponible. Tampoco hay datos concluyentes sobre la cuantización hermana `hermitdave/K2-Horizon-7B-oQ6e` más allá de su existencia en Hugging Face.
 
 ## Limitaciones y advertencias
 
@@ -72,7 +72,7 @@ No se dispone de información suficiente sobre modelos comparables de la misma c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hermitdave/K2-Horizon-7B-Uno-oQ6e
+- Modelo en Hugging Face: https://huggingface.co/hermitdave/K2-Horizon-7B-Uno-oQ6e
 - Modelo base: https://huggingface.co/IFM/K2-Horizon-7B-Uno
 - Colección K2 Horizon de IFM: https://huggingface.co/collections/IFM/k2-horizon
 - Parche de soporte en oMLX: https://github.com/jundot/omlx/pull/3441

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`shabieh2/1017_cluster_lora_fullset_rel34_1_epoch` es un adaptador LoRA (PEFT) publicado en HuggingFace sobre el modelo base `unsloth/Muse-Glimmer-30B`. No se trata de un modelo completo, sino de un conjunto de pesos de bajo rango que debe cargarse junto al modelo base para tener efecto. El repositorio ocupa 0,9 GB y esta etiquetado con `peft`, `safetensors`, `lora`, `transformers` y `unsloth`, con pipeline `text-generation` y orientacion conversacional.
+`shabieh2/1017_cluster_lora_fullset_rel34_1_epoch` es un adaptador LoRA (PEFT) publicado en Hugging Face sobre el modelo base `unsloth/Muse-Glimmer-30B`. No se trata de un modelo completo, sino de un conjunto de pesos de bajo rango que debe cargarse junto al modelo base para tener efecto. El repositorio ocupa 0,9 GB y esta etiquetado con `peft`, `safetensors`, `lora`, `transformers` y `unsloth`, con pipeline `text-generation` y orientacion conversacional.
 
-El autor es el usuario `shabieh2` y la ficha se creo el 17 de octubre de 2026, sin ninguna descarga ni "like" registrados en el momento de la consulta. La model card es la plantilla por defecto de HuggingFace: todos los apartados relevantes (descripcion, datos de entrenamiento, hiperparametros, evaluacion, licencia, idiomas) contienen el marcador `[More Information Needed]`, por lo que no hay informacion verificable sobre el proceso de entrenamiento ni sobre el rendimiento del adaptador.
+El autor es el usuario `shabieh2` y la ficha se creo el 17 de octubre de 2026, sin ninguna descarga ni "like" registrados en el momento de la consulta. La model card es la plantilla por defecto de Hugging Face: todos los apartados relevantes (descripcion, datos de entrenamiento, hiperparametros, evaluacion, licencia, idiomas) contienen el marcador `[More Information Needed]`, por lo que no hay informacion verificable sobre el proceso de entrenamiento ni sobre el rendimiento del adaptador.
 
 La relevancia de esta ficha es, por tanto, limitada y de caracter practico: documenta la existencia de un adaptador PEFT sobre un base de 30B (tamano inferido del identificador del modelo base, no confirmado) y advierte de la ausencia total de documentacion, lo que lo hace no apto para uso en produccion sin una evaluacion propia previa.
 
@@ -64,8 +64,8 @@ No hay informacion suficiente para establecer una comparativa cuantitativa con a
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `shabieh2/1017_cluster_lora_fullset_rel34_1_epoch` (adaptador) | No disponible (base de 30B segun identificador) | No disponible | Sin benchmarks publicados | No disponible | HuggingFace, 0 descargas |
-| `unsloth/Muse-Glimmer-30B` (base) | 30B segun identificador | No disponible | No disponible | No disponible | HuggingFace (referenciado como base) |
+| `shabieh2/1017_cluster_lora_fullset_rel34_1_epoch` (adaptador) | No disponible (base de 30B segun identificador) | No disponible | Sin benchmarks publicados | No disponible | Hugging Face, 0 descargas |
+| `unsloth/Muse-Glimmer-30B` (base) | 30B segun identificador | No disponible | No disponible | No disponible | Hugging Face (referenciado como base) |
 | Alternativa 1 (misma categoria, ~30B) | No disponible | No disponible | No disponible | No disponible | No disponible |
 | Alternativa 2 (misma categoria, ~30B) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -82,7 +82,7 @@ No hay informacion suficiente para establecer una comparativa cuantitativa con a
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/shabieh2/1017_cluster_lora_fullset_rel34_1_epoch
+- Hugging Face del adaptador: https://huggingface.co/shabieh2/1017_cluster_lora_fullset_rel34_1_epoch
 - Modelo base referenciado: https://huggingface.co/unsloth/Muse-Glimmer-30B
 - Documentacion de PEFT: https://huggingface.co/docs/peft
 - Referencia citada en la plantilla de la model card (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700

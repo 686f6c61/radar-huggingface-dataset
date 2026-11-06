@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `francesca9805/ppt-wc-uniform-newlex-arb-before-100mb-packed-bfd_seed10` | ~86,5 M | No disponible | No publicado | No disponible | HuggingFace (0 descargas) |
-| `goldfish-models/eng_latn_100mb` (modelo base) | ~86,5 M | No disponible | No disponible en esta ficha | No disponible en esta ficha | HuggingFace |
-| `distilgpt2` | 82 M | 1024 tokens | Métricas históricas publicadas por su autor | Apache-2.0 (uso comercial permitido) | HuggingFace |
-| `gpt2` | 124 M | 1024 tokens | Métricas históricas publicadas por su autor | MIT (uso comercial permitido) | HuggingFace |
+| `francesca9805/ppt-wc-uniform-newlex-arb-before-100mb-packed-bfd_seed10` | ~86,5 M | No disponible | No publicado | No disponible | Hugging Face (0 descargas) |
+| `goldfish-models/eng_latn_100mb` (modelo base) | ~86,5 M | No disponible | No disponible en esta ficha | No disponible en esta ficha | Hugging Face |
+| `distilgpt2` | 82 M | 1024 tokens | Métricas históricas publicadas por su autor | Apache-2.0 (uso comercial permitido) | Hugging Face |
+| `gpt2` | 124 M | 1024 tokens | Métricas históricas publicadas por su autor | MIT (uso comercial permitido) | Hugging Face |
 
 La comparación con `distilgpt2` y `gpt2` es de categoría (transformers decoder-only pequeños en inglés), no de rendimiento medido, ya que este modelo no publica benchmarks. La ventaja principal frente a ellos es su coste computacional mínimo; la desventaja, su falta de licencia declarada, de evaluación y de soporte.
 
@@ -83,7 +83,7 @@ La comparación con `distilgpt2` y `gpt2` es de categoría (transformers decoder
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-arb-before-100mb-packed-bfd_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-arb-before-100mb-packed-bfd_seed10
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/7i5v0uv4
 - Repositorio de TRL: https://github.com/huggingface/trl

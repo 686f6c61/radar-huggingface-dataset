@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Aadhitech1/samplellm` es un modelo alojado en HuggingFace por el usuario Aadhitech1, con licencia MIT y etiquetado para la región de Estados Unidos. La model card publicada no contiene más información que la propia licencia, por lo que no se dispone de datos sobre su arquitectura, tamaño, finalidad o capacidades.
+El modelo `Aadhitech1/samplellm` es un modelo alojado en Hugging Face por el usuario Aadhitech1, con licencia MIT y etiquetado para la región de Estados Unidos. La model card publicada no contiene más información que la propia licencia, por lo que no se dispone de datos sobre su arquitectura, tamaño, finalidad o capacidades.
 
 Dado que no se ha publicado ninguna especificación técnica, documentación ni ejemplo de uso, este modelo debe considerarse como un artefacto de prueba o demostración sin información verificable. No es posible determinar su relevancia actual ni su idoneidad para tareas concretas de procesamiento de lenguaje natural u otras modalidades.
 
@@ -53,4 +53,4 @@ No disponible. Al carecer de especificaciones técnicas, no se puede establecer 
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/Aadhitech1/samplellm
+- Página del modelo en Hugging Face: https://huggingface.co/Aadhitech1/samplellm

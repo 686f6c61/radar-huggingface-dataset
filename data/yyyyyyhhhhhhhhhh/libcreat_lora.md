@@ -4,7 +4,7 @@
 
 ## Resumen
 
-LIBCREAT_LoRA es un adaptador LoRA (Low-Rank Adaptation) de texto a imagen entrenado sobre stabilityai/stable-diffusion-xl-base-1.0, publicado por el usuario yyyyyyhhhhhhhhhh en HuggingFace. No se trata de un modelo generativo completo, sino de pesos de adaptacion de bajo rango que se cargan sobre el UNet del modelo base SDXL para inducir un estilo visual concreto: el autor define la frase activadora "photo collage in CHERKASHIN style" como disparador de la generacion.
+LIBCREAT_LoRA es un adaptador LoRA (Low-Rank Adaptation) de texto a imagen entrenado sobre stabilityai/stable-diffusion-xl-base-1.0, publicado por el usuario yyyyyyhhhhhhhhhh en Hugging Face. No se trata de un modelo generativo completo, sino de pesos de adaptacion de bajo rango que se cargan sobre el UNet del modelo base SDXL para inducir un estilo visual concreto: el autor define la frase activadora "photo collage in CHERKASHIN style" como disparador de la generacion.
 
 El adaptador se entreno mediante DreamBooth, una tecnica de ajuste fino personalizado que asocia un sujeto o estilo a un token o frase poco frecuente, con el objetivo de reproducir ese concepto sin degradar el conocimiento previo del modelo base. Segun la model card, el LoRA del text encoder esta desactivado (LoRA for the text encoder was enabled: False), por lo que la adaptacion se aplica unicamente al componente de difusion, y se utilizo el VAE madebyollin/sdxl-vae-fp16-fix durante el entrenamiento para evitar problemas numericos en precision fp16.
 
@@ -19,7 +19,7 @@ El modelo es relevante en el ecosistema de generacion de imagenes porque los LoR
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No aplica (modelo de difusion texto-a-imagen, no un modelo de lenguaje). No se especifica la resolucion de entrenamiento en la informacion proporcionada |
 | Tipos de cuantizacion | No disponible (los pesos se publican en safetensors; no se documentan variantes cuantizadas ni formato GGUF) |
-| Idiomas soportados | No disponible (el campo de idiomas no esta informado en la ficha de HuggingFace) |
+| Idiomas soportados | No disponible (el campo de idiomas no esta informado en la ficha de Hugging Face) |
 | Licencia | openrail++ |
 | Formato de pesos | Safetensors (adaptador LoRA), libreria diffusers |
 | Modelo base | stabilityai/stable-diffusion-xl-base-1.0 |
@@ -79,9 +79,9 @@ No se dispone de informacion sobre adaptadores LoRA comparables en la documentac
 
 | Modelo | Tipo | Parametros | Contexto / resolucion | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|---|
-| LIBCREAT_LoRA | LoRA sobre SDXL 1.0 | No disponible (repo de 0,1 GB) | No disponible | openrail++ | HuggingFace, 0 descargas | No disponible |
-| stabilityai/stable-diffusion-xl-base-1.0 | Modelo de difusion completo | No disponible en la informacion proporcionada | No disponible | openrail++ | HuggingFace | No disponible |
-| Otros LoRA de estilo sobre SDXL | LoRA | No disponible | No disponible | Variable segun autor | HuggingFace | No disponible |
+| LIBCREAT_LoRA | LoRA sobre SDXL 1.0 | No disponible (repo de 0,1 GB) | No disponible | openrail++ | Hugging Face, 0 descargas | No disponible |
+| stabilityai/stable-diffusion-xl-base-1.0 | Modelo de difusion completo | No disponible en la informacion proporcionada | No disponible | openrail++ | Hugging Face | No disponible |
+| Otros LoRA de estilo sobre SDXL | LoRA | No disponible | No disponible | Variable segun autor | Hugging Face | No disponible |
 
 No se han podido identificar en la informacion disponible adaptadores concretos (por ejemplo, de estilo o de personaje sobre SDXL) con especificaciones verificables para establecer una comparativa cuantitativa.
 
@@ -98,11 +98,11 @@ No se han podido identificar en la informacion disponible adaptadores concretos 
 - Modelo sin validacion de la comunidad: 0 descargas y 0 likes en el momento de la consulta, sin demos ni evaluaciones externas publicadas.
 - No apto para tareas de lenguaje, razonamiento, codigo o agentes; su uso esta limitado a la generacion de imagenes.
 - Idiomas no declarados: la eficacia del prompt fuera del ingles no esta garantizada.
-- Fecha de publicacion inusual (2026-09-17) en los metadatos de HuggingFace; conviene verificar la vigencia del repositorio antes de integrarlo en un flujo de trabajo.
+- Fecha de publicacion inusual (2026-09-17) en los metadatos de Hugging Face; conviene verificar la vigencia del repositorio antes de integrarlo en un flujo de trabajo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yyyyyyhhhhhhhhhh/LIBCREAT_LoRA
+- Modelo en Hugging Face: https://huggingface.co/yyyyyyhhhhhhhhhh/LIBCREAT_LoRA
 - Ficheros y pesos: https://huggingface.co/yyyyyyhhhhhhhhhh/LIBCREAT_LoRA/tree/main
 - Modelo base SDXL 1.0: https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
 - VAE utilizado en el entrenamiento: https://huggingface.co/madebyollin/sdxl-vae-fp16-fix

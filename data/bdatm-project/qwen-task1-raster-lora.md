@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un adaptador LoRA alojado en HuggingFace por la organización `bdatm-project`. El nombre del repositorio (`qwen-task1-raster-lora`) sugiere que se trata de un ajuste fino de bajo rango sobre un modelo base de la familia Qwen, orientado a una tarea concreta denominada "task1" y posiblemente relacionada con el procesamiento de imágenes rasterizadas. Sin embargo, la model card disponible es una plantilla generada automáticamente por HuggingFace, sin información sobre el modelo base, los datos de entrenamiento, el propósito o la arquitectura.
+Este modelo es un adaptador LoRA alojado en Hugging Face por la organización `bdatm-project`. El nombre del repositorio (`qwen-task1-raster-lora`) sugiere que se trata de un ajuste fino de bajo rango sobre un modelo base de la familia Qwen, orientado a una tarea concreta denominada "task1" y posiblemente relacionada con el procesamiento de imágenes rasterizadas. Sin embargo, la model card disponible es una plantilla generada automáticamente por Hugging Face, sin información sobre el modelo base, los datos de entrenamiento, el propósito o la arquitectura.
 
 El repositorio no presenta descargas, no tiene licencia declarada, no especifica idiomas y su tamaño es de 0.0 GB. Tampoco se han publicado resultados de benchmarks ni documentación técnica adicional. Por tanto, la relevancia real del modelo no puede evaluarse a partir de la información proporcionada. El único dato confirmado es que el modelo se distribuye en formato `safetensors` y es compatible con la librería `transformers`.
 
@@ -60,6 +60,6 @@ No se dispone de informacion suficiente para realizar una comparativa con modelo
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/bdatm-project/qwen-task1-raster-lora
+- Pagina del modelo en Hugging Face: https://huggingface.co/bdatm-project/qwen-task1-raster-lora
 - Repositorio similar de la misma organizacion: https://huggingface.co/bdatm-project/qwen-task1-spiral-lora
 - Organizacion QwenLM en GitHub: https://github.com/QwenLM

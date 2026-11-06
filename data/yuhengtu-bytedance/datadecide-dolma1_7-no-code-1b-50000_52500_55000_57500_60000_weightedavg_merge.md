@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un modelo de lenguaje de tipo transformer decoder-only, etiquetado como `llama` en HuggingFace, obtenido mediante una fusión lineal de pesos (merge) de cinco checkpoints de un mismo entrenamiento. El autor es la cuenta `yuhengtu-bytedance`, y el artefacto se publica con la librería `transformers` y pesos en `safetensors`. No es un modelo entrenado desde cero ni ajustado con instrucciones: es el resultado de promediar los pesos de los pasos 50000, 52500, 55000, 57500 y 60000 de una ejecución de preentrenamiento denominada `dolma1_7-no-code-1B`.
+Este repositorio contiene un modelo de lenguaje de tipo transformer decoder-only, etiquetado como `llama` en Hugging Face, obtenido mediante una fusión lineal de pesos (merge) de cinco checkpoints de un mismo entrenamiento. El autor es la cuenta `yuhengtu-bytedance`, y el artefacto se publica con la librería `transformers` y pesos en `safetensors`. No es un modelo entrenado desde cero ni ajustado con instrucciones: es el resultado de promediar los pesos de los pasos 50000, 52500, 55000, 57500 y 60000 de una ejecución de preentrenamiento denominada `dolma1_7-no-code-1B`.
 
 El nombre delata su origen: los checkpoints de partida proceden de un entrenamiento sobre Dolma 1.7 con el subconjunto de código eliminado (`no-code`), a escala de 1000 millones de parámetros (la nomenclatura `1B` del nombre, aunque el recuento real de parámetros en safetensors es de 1.279.854.592). El proyecto DataDecide, del que toma el nombre, se orienta a medir el impacto de decisiones de datos de preentrenamiento, por lo que estos modelos funcionan sobre todo como sujetos de experimentación más que como asistentes listos para producción.
 
@@ -78,7 +78,7 @@ Los valores de la columna de comparacion proceden de la documentacion publica de
 
 | Modelo | Parametros | Contexto | Licencia | Alineamiento | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (merge DataDecide) | 1,28B | no disponible | no disponible | Ninguno (modelo base) | Repositorio HuggingFace con safetensors, 0 descargas |
+| Este modelo (merge DataDecide) | 1,28B | no disponible | no disponible | Ninguno (modelo base) | Repositorio Hugging Face con safetensors, 0 descargas |
 | TinyLlama-1.1B | 1,1B | 2048 tokens | Apache-2.0 | Base y variante chat | Muy extendido, con versiones GGUF de terceros |
 | Llama 3.2 1B | 1,24B | 128k tokens | Licencia comunitaria Llama 3.2 | Base e instruct | Amplia distribucion y soporte en todos los runtimes |
 | Qwen2.5 1.5B | 1,54B | 32k tokens | Apache-2.0 (segun variante) | Base e instruct | Amplia, con cuantizaciones oficiales |
@@ -101,7 +101,7 @@ Frente a estas alternativas, la diferencia principal no es de rendimiento (no ha
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/DataDecide-dolma1_7-no-code-1B-50000_52500_55000_57500_60000_weightedavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/DataDecide-dolma1_7-no-code-1B-50000_52500_55000_57500_60000_weightedavg_merge
 - Repositorio de mergekit: https://github.com/cg123/mergekit
 - Articulo del metodo de fusion lineal (model soups): https://arxiv.org/abs/2203.05482
 - La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo, su autor o el proyecto DataDecide; los unicos enlaces adicionales presentes en la informacion son los que figuran en las etiquetas del repositorio (`mergekit` y `arxiv:2203.05482`), ya listados arriba.

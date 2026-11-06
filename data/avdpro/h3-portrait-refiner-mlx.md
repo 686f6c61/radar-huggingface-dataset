@@ -1,7 +1,7 @@
 # Avdpro/H3-Portrait-Refiner-MLX
 
 ## Resumen
-H3 Portrait Refiner MLX es un paquete de activos (assets) publicado en HuggingFace por el usuario Avdpro bajo el identificador `Avdpro/H3-Portrait-Refiner-MLX`. No se trata de un modelo de lenguaje ni de un modelo generativo único, sino de un conjunto de componentes ya convertidos para inferencia en MLX, orientados al refinamiento local de la boca en retratos animados por voz dentro del pipeline AI2Apps H3 Portrait. La libreria declarada es mlx y el pipeline asociado es video-to-video.
+H3 Portrait Refiner MLX es un paquete de activos (assets) publicado en Hugging Face por el usuario Avdpro bajo el identificador `Avdpro/H3-Portrait-Refiner-MLX`. No se trata de un modelo de lenguaje ni de un modelo generativo único, sino de un conjunto de componentes ya convertidos para inferencia en MLX, orientados al refinamiento local de la boca en retratos animados por voz dentro del pipeline AI2Apps H3 Portrait. La libreria declarada es mlx y el pipeline asociado es video-to-video.
 
 El bundle incluye tres componentes: MuseTalk 1.5 en cuantizacion Q4, YuNet 2023mar convertido a un grafo MLX portable y BiSeNet en BF16. Segun la model card, el paquete no contiene pesos de H3, ni runtime, ni grabaciones de usuario, ni imagenes de retratos; el codigo del modelo se distribuye por separado a traves del Package de AI2Apps. El tamano del repositorio es de aproximadamente 1,5 GB y la licencia declarada es `component-licenses` (tipo `other`), con condiciones detalladas en el fichero NOTICE.md.
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 ## Comparativa con modelos similares
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| H3 Portrait Refiner MLX (este paquete) | no disponible | no aplica | no disponible | component-licenses | HuggingFace, MLX |
+| H3 Portrait Refiner MLX (este paquete) | no disponible | no aplica | no disponible | component-licenses | Hugging Face, MLX |
 | MuseTalk 1.5 (componente, uso independiente) | no disponible | no aplica | no disponible | segun su card original | disponible por separado |
 | YuNet 2023mar (componente) | no disponible | no aplica | no disponible | segun su card original | disponible por separado |
 | BiSeNet (componente) | no disponible | no aplica | no disponible | segun su card original | disponible por separado |
@@ -73,6 +73,6 @@ No se dispone, en la informacion proporcionada, de datos de rendimiento ni de al
 - Al ser una conversion de terceros, las revisiones de los componentes originales quedan fijadas en `sources.json`; cualquier actualizacion upstream requeriria una nueva conversion.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/Avdpro/H3-Portrait-Refiner-MLX
+- Hugging Face: https://huggingface.co/Avdpro/H3-Portrait-Refiner-MLX
 - Licencia y condiciones por componente: https://huggingface.co/Avdpro/H3-Portrait-Refiner-MLX/blob/main/NOTICE.md
 - Fuentes y revisiones fijadas: `sources.json` dentro del repositorio (ruta exacta no indicada en la informacion disponible)

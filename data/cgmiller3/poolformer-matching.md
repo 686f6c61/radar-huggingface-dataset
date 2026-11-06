@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`cgmiller3/poolformer-matching` es un repositorio de HuggingFace que contiene una implementación compacta y personalizada de una arquitectura Poolformer orientada a tareas de *matching* (emparejamiento o correspondencia entre elementos). Lo publica el usuario cgmiller3 y, según la propia model card, se trata de un artefacto pensado para revisión de código, pruebas de humo (*smoke tests*) y experimentos controlados de pequeña escala, no como un modelo preentrenado listo para producción.
+`cgmiller3/poolformer-matching` es un repositorio de Hugging Face que contiene una implementación compacta y personalizada de una arquitectura Poolformer orientada a tareas de *matching* (emparejamiento o correspondencia entre elementos). Lo publica el usuario cgmiller3 y, según la propia model card, se trata de un artefacto pensado para revisión de código, pruebas de humo (*smoke tests*) y experimentos controlados de pequeña escala, no como un modelo preentrenado listo para producción.
 
 El dato más llamativo es su tamaño: 49.600 parámetros totales según el archivo safetensors, con un repositorio de 0,0 GB. Esto lo sitúa muy lejos de los transformers convencionales y confirma que el checkpoint es una inicialización válida para pruebas, no un modelo entrenado con datos a escala. La configuración declarada corresponde a la variante "huge" de Poolformer, con atención de consultas agrupadas (*grouped query attention*), fusión tipo Tucker, activación GELU-tanh y normalización GroupNorm.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cgmiller3/poolformer-matching | 49.600 | no disponible | sin benchmarks | BSD-3-Clause | HuggingFace |
+| cgmiller3/poolformer-matching | 49.600 | no disponible | sin benchmarks | BSD-3-Clause | Hugging Face |
 | Poolformer original (Meta) | no disponible en la informacion | no disponible | no disponible | no disponible | no disponible |
 | Alternativas de matching | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -80,5 +80,5 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cgmiller3/poolformer-matching
+- Hugging Face: https://huggingface.co/cgmiller3/poolformer-matching
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

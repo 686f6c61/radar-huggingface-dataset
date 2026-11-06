@@ -76,7 +76,7 @@ La comparación se basa en los datos parciales disponibles. No se incluyen métr
 | Bitrate | 0.125 - 4 kbps | 800 bps | 850 bps | 1000 bps |
 | Numero de cuantizadores | 32 | 1 | 4 | 4 |
 | Licencia | Apache 2.0 | no disponible | no disponible | no disponible |
-| Disponibilidad | HuggingFace (niobures/MOSS-Audio-Tokenizer) | no disponible | no disponible | no disponible |
+| Disponibilidad | Hugging Face (niobures/MOSS-Audio-Tokenizer) | no disponible | no disponible | no disponible |
 
 Nota: los datos de XCodec2.0, MiMo y Higgs provienen de la tabla parcial del README, pero no se dispone de información completa sobre sus parámetros o licencia.
 
@@ -90,6 +90,6 @@ Nota: los datos de XCodec2.0, MiMo y Higgs provienen de la tabla parcial del REA
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/niobures/MOSS-Audio-Tokenizer
+- Hugging Face: https://huggingface.co/niobures/MOSS-Audio-Tokenizer
 - Articulo en arXiv: https://arxiv.org/abs/2602.10934
 - Repositorio de codigo en el modelo: https://huggingface.co/niobures/MOSS-Audio-Tokenizer/tree/main

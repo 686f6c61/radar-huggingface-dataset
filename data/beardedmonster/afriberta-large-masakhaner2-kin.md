@@ -67,8 +67,8 @@ No se han publicado en la información disponible resultados de MMLU, HumanEval,
 
 | Modelo | Parámetros | Contexto | Tarea / idioma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `BeardedMonster/afriberta-large-masakhaner2-kin` | 125 M | 512 tokens (arquitectura) | NER en kinyarwanda | No disponible (rige la del base) | HuggingFace, 0 descargas |
-| `castorini/afriberta_large` (modelo base) | 125 M | 512 tokens (arquitectura) | Modelo de lengua africana sin ajuste a NER | No disponible en la información proporcionada | HuggingFace |
+| `BeardedMonster/afriberta-large-masakhaner2-kin` | 125 M | 512 tokens (arquitectura) | NER en kinyarwanda | No disponible (rige la del base) | Hugging Face, 0 descargas |
+| `castorini/afriberta_large` (modelo base) | 125 M | 512 tokens (arquitectura) | Modelo de lengua africana sin ajuste a NER | No disponible en la información proporcionada | Hugging Face |
 | XLM-RoBERTa base ajustado a MasakhaNER 2.0 | 278 M (dato de la familia XLM-R, no verificado en esta información) | 512 tokens | NER multilingüe | No disponible en la información proporcionada | Requiere fine-tuning propio |
 | mBERT ajustado a MasakhaNER 2.0 | 178 M (dato de la familia, no verificado en esta información) | 512 tokens | NER multilingüe | No disponible en la información proporcionada | Requiere fine-tuning propio |
 
@@ -88,7 +88,7 @@ No se dispone de cifras comparativas de span_f1 frente a estas alternativas en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BeardedMonster/afriberta-large-masakhaner2-kin
+- Modelo en Hugging Face: https://huggingface.co/BeardedMonster/afriberta-large-masakhaner2-kin
 - Modelo base: https://huggingface.co/castorini/afriberta_large
 
 No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

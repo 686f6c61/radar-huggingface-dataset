@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Fruit Freshness Classifier (ConvNeXt-Tiny) es un modelo de clasificación de imágenes especializado en detectar el tipo de fruta y su estado de frescura (fresca o podrida) a partir de una fotografía. Lo desarrolla el usuario de HuggingFace hafeezaismail mediante ajuste fino (transfer learning) del modelo base facebook/convnext-tiny-224, un transformer convolucional de 27,8 millones de parámetros. El modelo resuelve un problema de clasificación cerrada de 16 clases que combina la especie de fruta con su estado sanitario aparente.
+Fruit Freshness Classifier (ConvNeXt-Tiny) es un modelo de clasificación de imágenes especializado en detectar el tipo de fruta y su estado de frescura (fresca o podrida) a partir de una fotografía. Lo desarrolla el usuario de Hugging Face hafeezaismail mediante ajuste fino (transfer learning) del modelo base facebook/convnext-tiny-224, un transformer convolucional de 27,8 millones de parámetros. El modelo resuelve un problema de clasificación cerrada de 16 clases que combina la especie de fruta con su estado sanitario aparente.
 
 El modelo es relevante en el contexto de visión artificial aplicada a la cadena agroalimentaria: control de calidad en líneas de envasado, inspección en almacenes y prototipos de clasificación automática con hardware modesto. Al derivar de ConvNeXt-Tiny, su huella de memoria y su coste de inferencia son reducidos, lo que permite desplegarlo en GPU de consumo e incluso en CPU para lotes pequeños.
 
@@ -68,10 +68,10 @@ No se han publicado resultados comparativos con otros modelos en la información
 
 | Modelo | Parametros | Entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hafeezaismail/fruit-freshness-convnext | 27,8 M | 224x224 | Clasificación fruta fresca/podrida (16 clases) | Apache 2.0 | HuggingFace |
-| facebook/convnext-tiny-224 | 28,6 M | 224x224 | Clasificación ImageNet-1k (1.000 clases) | Apache 2.0 | HuggingFace |
-| google/vit-base-patch16-224 | 86 M | 224x224 | Clasificación ImageNet-1k (1.000 clases) | Apache 2.0 | HuggingFace |
-| microsoft/resnet-50 | 25,6 M | 224x224 | Clasificación ImageNet-1k (1.000 clases) | Apache 2.0 | HuggingFace |
+| hafeezaismail/fruit-freshness-convnext | 27,8 M | 224x224 | Clasificación fruta fresca/podrida (16 clases) | Apache 2.0 | Hugging Face |
+| facebook/convnext-tiny-224 | 28,6 M | 224x224 | Clasificación ImageNet-1k (1.000 clases) | Apache 2.0 | Hugging Face |
+| google/vit-base-patch16-224 | 86 M | 224x224 | Clasificación ImageNet-1k (1.000 clases) | Apache 2.0 | Hugging Face |
+| microsoft/resnet-50 | 25,6 M | 224x224 | Clasificación ImageNet-1k (1.000 clases) | Apache 2.0 | Hugging Face |
 
 Los tres modelos de referencia son clasificadores genéricos de ImageNet y no ofrecen la tarea específica de frescura de fruta; la comparación relevante es de arquitectura, tamaño y licencia, no de rendimiento en la tarea concreta. No se dispone de otros clasificadores públicos de frescura de fruta con los que comparar directamente en la información proporcionada.
 
@@ -88,7 +88,7 @@ Los tres modelos de referencia son clasificadores genéricos de ImageNet y no of
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hafeezaismail/fruit-freshness-convnext
+- Modelo en Hugging Face: https://huggingface.co/hafeezaismail/fruit-freshness-convnext
 - Modelo base: https://huggingface.co/facebook/convnext-tiny-224
 - Dataset: https://huggingface.co/datasets/Project-AgML/fresh_rotten_fruit_classification
 - Paper de ConvNeXt: https://arxiv.org/abs/2201.03545

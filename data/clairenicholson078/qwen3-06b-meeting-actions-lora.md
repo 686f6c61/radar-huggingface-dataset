@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `clairenicholson078/qwen3-06b-meeting-actions-lora` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace bajo licencia Apache-2.0. Según su nombre, está diseñado para la extracción de acciones o tareas a partir de reuniones, probablemente aplicado sobre un modelo base de la familia Qwen3. Sin embargo, la model card no proporciona información adicional: no se especifica la versión exacta del modelo base, el tamaño del adaptador, los datos de entrenamiento ni las capacidades concretas. El repositorio carece de documentación, ejemplos de uso o métricas de evaluación, lo que limita cualquier análisis técnico riguroso.
+El modelo `clairenicholson078/qwen3-06b-meeting-actions-lora` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face bajo licencia Apache-2.0. Según su nombre, está diseñado para la extracción de acciones o tareas a partir de reuniones, probablemente aplicado sobre un modelo base de la familia Qwen3. Sin embargo, la model card no proporciona información adicional: no se especifica la versión exacta del modelo base, el tamaño del adaptador, los datos de entrenamiento ni las capacidades concretas. El repositorio carece de documentación, ejemplos de uso o métricas de evaluación, lo que limita cualquier análisis técnico riguroso.
 
 A pesar de la ausencia de datos, la existencia de este adaptador refleja una práctica común en la comunidad open source: publicar ajustes finos especializados sobre modelos base potentes para tareas concretas. No obstante, su utilidad real en producción queda supeditada a la disponibilidad de información sobre su entrenamiento y rendimiento, que actualmente no es accesible.
 
@@ -64,7 +64,7 @@ Las opciones de despliegue habituales para modelos Qwen3 incluyen vLLM, llama.cp
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para establecer una comparativa. Existen otros adaptadores LoRA para extracción de acciones en reuniones en HuggingFace, pero sin datos concretos sobre este modelo no es posible comparar parámetros, rendimiento o licencia de manera rigurosa.
+No se dispone de información suficiente para establecer una comparativa. Existen otros adaptadores LoRA para extracción de acciones en reuniones en Hugging Face, pero sin datos concretos sobre este modelo no es posible comparar parámetros, rendimiento o licencia de manera rigurosa.
 
 ## Limitaciones y advertencias
 
@@ -76,4 +76,4 @@ No se dispone de información suficiente para establecer una comparativa. Existe
 
 ## Enlaces
 
-- [HuggingFace: clairenicholson078/qwen3-06b-meeting-actions-lora](https://huggingface.co/clairenicholson078/qwen3-06b-meeting-actions-lora)
+- [Hugging Face: clairenicholson078/qwen3-06b-meeting-actions-lora](https://huggingface.co/clairenicholson078/qwen3-06b-meeting-actions-lora)

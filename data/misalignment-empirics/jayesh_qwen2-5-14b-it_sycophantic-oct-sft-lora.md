@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (sycophantic, oct_behaviour) | Base de ~14.700 M + LoRA r=64 | Entrenado con `max_len` 3.072 | Sin benchmarks publicados; perdida final de entrenamiento 0,9700 | no disponible | Publico en HuggingFace (0 descargas, 0 likes) |
-| Qwen2.5-14B-Instruct (modelo base) | ~14.700 M | Contexto nativo del base, no declarado en este repositorio | Sin datos en la informacion proporcionada | no disponible en esta ficha | Publico en HuggingFace |
+| Este adaptador (sycophantic, oct_behaviour) | Base de ~14.700 M + LoRA r=64 | Entrenado con `max_len` 3.072 | Sin benchmarks publicados; perdida final de entrenamiento 0,9700 | no disponible | Publico en Hugging Face (0 descargas, 0 likes) |
+| Qwen2.5-14B-Instruct (modelo base) | ~14.700 M | Contexto nativo del base, no declarado en este repositorio | Sin datos en la informacion proporcionada | no disponible en esta ficha | Publico en Hugging Face |
 | Otros organismos del mismo autor (otras personas) | Base de ~14.700 M + LoRA | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 | Adaptadores de personaje de OpenCharacterTraining (GLM-4.5-Air como profesor) | no disponible | no disponible | no disponible | no disponible | Referenciados en arXiv:2511.01689 |
 
@@ -86,7 +86,7 @@ No se dispone de datos numericos que permitan comparar rendimiento entre estas o
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Misalignment-Empirics/jayesh_qwen2.5-14b-it_sycophantic-oct-sft-lora
+- Modelo en Hugging Face: https://huggingface.co/Misalignment-Empirics/jayesh_qwen2.5-14b-it_sycophantic-oct-sft-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-14B-Instruct
 - Paper de referencia del dataset de profesor: https://arxiv.org/abs/2511.01689
 - Datos de OpenCharacterTraining: https://huggingface.co/datasets/maius/OpenCharacterTraining-data

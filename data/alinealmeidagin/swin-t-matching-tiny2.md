@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Alinealmeidagin/swin-t-matching-tiny2` es un repositorio de HuggingFace que contiene una implementación propia y compacta de una arquitectura Swin T orientada a una tarea genérica de *matching*. Lo publica el usuario Alinealmeidagin bajo licencia BSD-3-Clause y con fecha de creación el 11 de octubre de 2026. El repositorio se presenta explícitamente como un artefacto de escala *nano* destinado a revisión de código, pruebas de humo (*smoke tests*) y experimentos pequeños y controlados, no como un modelo preentrenado listo para producción.
+`Alinealmeidagin/swin-t-matching-tiny2` es un repositorio de Hugging Face que contiene una implementación propia y compacta de una arquitectura Swin T orientada a una tarea genérica de *matching*. Lo publica el usuario Alinealmeidagin bajo licencia BSD-3-Clause y con fecha de creación el 11 de octubre de 2026. El repositorio se presenta explícitamente como un artefacto de escala *nano* destinado a revisión de código, pruebas de humo (*smoke tests*) y experimentos pequeños y controlados, no como un modelo preentrenado listo para producción.
 
 El dato real extraído del fichero `model.safetensors` indica un total de 33.088 parámetros, una cifra muy alejada de las configuraciones habituales de Swin-T, lo que confirma que se trata de una maqueta de inicialización y no de un *checkpoint* entrenado. El propio autor lo declara: `model.safetensors` es una inicialización válida para pruebas de humo y no se presenta como un *checkpoint* con benchmarks. No se reclama ninguna puntuación de rendimiento en el repositorio.
 
@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La *m
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Alinealmeidagin/swin-t-matching-tiny2 | 33.088 | No disponible | Sin benchmarks declarados | BSD-3-Clause | HuggingFace, 0 descargas |
-| bartlomiejdudek/swin-t-matching | No disponible | No disponible | Sin numeros de rendimiento verificados (prototipo de investigacion) | No disponible en la informacion proporcionada | HuggingFace |
-| qualcomm/Swin-Tiny | No disponible | No disponible | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | HuggingFace y Qualcomm AI Hub Models |
+| Alinealmeidagin/swin-t-matching-tiny2 | 33.088 | No disponible | Sin benchmarks declarados | BSD-3-Clause | Hugging Face, 0 descargas |
+| bartlomiejdudek/swin-t-matching | No disponible | No disponible | Sin numeros de rendimiento verificados (prototipo de investigacion) | No disponible en la informacion proporcionada | Hugging Face |
+| qualcomm/Swin-Tiny | No disponible | No disponible | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Hugging Face y Qualcomm AI Hub Models |
 
 Los tres artefactos comparten el apellido Swin y un enfoque experimental o de despliegue, pero no se dispone de datos comparables de parametros, contexto ni metricas para los dos modelos de referencia. No se han encontrado cifras que permitan una comparacion cuantitativa.
 
@@ -91,7 +91,7 @@ Los tres artefactos comparten el apellido Swin y un enfoque experimental o de de
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/Alinealmeidagin/swin-t-matching-tiny2
+- Pagina del modelo en Hugging Face: https://huggingface.co/Alinealmeidagin/swin-t-matching-tiny2
 - Repositorio relacionado bartlomiejdudek/swin-t-matching: https://huggingface.co/bartlomiejdudek/swin-t-matching
 - Modelo relacionado qualcomm/Swin-Tiny: https://huggingface.co/qualcomm/Swin-Tiny
 - README de swin_tiny en Qualcomm AI Hub Models: https://github.com/qualcomm/ai-hub-models/blob/main/src/qai_hub_models/models/swin_tiny/README.md

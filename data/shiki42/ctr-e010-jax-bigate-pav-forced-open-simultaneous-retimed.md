@@ -65,7 +65,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shiki42/ctr-e010-jax-bigate-pav-forced-open-simultaneous-retimed
+- Modelo en Hugging Face: https://huggingface.co/Shiki42/ctr-e010-jax-bigate-pav-forced-open-simultaneous-retimed
 - Dataset asociado: https://huggingface.co/datasets/Shiki42/ctr
 - Perfil del autor: https://huggingface.co/Shiki42/datasets
 - OpenPI (referencia, no enlazado directamente): no disponible en la información proporcionada.

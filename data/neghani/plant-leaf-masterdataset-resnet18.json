@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "neghani/plant-leaf-masterdataset-resnet18",
+  "slug": "neghani-plant-leaf-masterdataset-resnet18",
+  "author": "neghani",
+  "url": "https://huggingface.co/neghani/plant-leaf-masterdataset-resnet18",
+  "created_at": "2026-11-03T15:03:30.000Z",
+  "updated_at": "2026-11-03T17:52:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "resnet",
+    "image-classification",
+    "plant-disease",
+    "resnet-18",
+    "agriculture",
+    "masterdataset",
+    "base_model:microsoft/resnet-18",
+    "base_model:finetune:microsoft/resnet-18",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 112,
+  "trending_score": 0,
+  "parameters": 11230230,
+  "parameters_human": "11.2M",
+  "storage_bytes": 55738642,
+  "storage_human": "56 MB",
+  "base_model": "microsoft/resnet-18",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "Plant Leaf Disease MasterDataset (test)",
+      "metric": "Test accuracy (n=14454)",
+      "value": 0.9615
+    },
+    {
+      "task": null,
+      "dataset": "Plant Leaf Disease MasterDataset (test)",
+      "metric": "Test macro-F1 (n=14454)",
+      "value": 0.9311
+    }
+  ],
+  "sources": [
+    {
+      "title": "neghani/plant-leaf-masterdataset-resnet18 · Hugging Face",
+      "url": "https://huggingface.co/neghani/plant-leaf-masterdataset-resnet18",
+      "snippet": "Instructions to use neghani/plant-leaf-masterdataset-resnet18 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use neghani/plant-leaf-masterdataset-resnet18 with Transformers:"
+    },
+    {
+      "title": "neghani/plantvillage-resnet18 · Hugging Face",
+      "url": "https://huggingface.co/neghani/plantvillage-resnet18",
+      "snippet": "Image Classification model with 11.2M parameters. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

@@ -68,7 +68,7 @@ No se dispone de información suficiente para establecer una comparativa con mod
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-en)
+- [Hugging Face - modelo](https://huggingface.co/EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-en)
 - [Paper - A multilingual hallucination benchmark: MultiWikiQHalluA (arXiv)](https://arxiv.org/pdf/2605.02504v2)
 - [Paper - versión HTML](https://arxiv.org/html/2605.02504v2)
 - [EuroEval - sitio oficial](https://euroeval.com/)

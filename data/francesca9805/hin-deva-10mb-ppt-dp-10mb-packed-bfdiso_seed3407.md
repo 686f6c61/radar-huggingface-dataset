@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un ajuste fino (SFT) del checkpoint `goldfish-models/hin_deva_10mb`, un modelo de lenguaje de arquitectura tipo GPT-2 entrenado sobre texto en hindi con escritura devanagari. El ajuste lo publica el usuario de HuggingFace `francesca9805` (vinculado a la Universidad de Groningen segun el enlace de Weights & Biases del projecto "new-tokenizers") y se ha realizado con la libreria TRL de HuggingFace. El identificador del modelo (`ppt-Dp-10mb-packed-bfdiso_seed3407`) sugiere una ejecucion experimental concreta con secuencias empaquetadas (packed) y una semilla fija (3407), mas propia de un barrido de hiperparametros o un estudio de tokenizacion que de un modelo orientado a produccion.
+Este modelo es un ajuste fino (SFT) del checkpoint `goldfish-models/hin_deva_10mb`, un modelo de lenguaje de arquitectura tipo GPT-2 entrenado sobre texto en hindi con escritura devanagari. El ajuste lo publica el usuario de Hugging Face `francesca9805` (vinculado a la Universidad de Groningen segun el enlace de Weights & Biases del projecto "new-tokenizers") y se ha realizado con la libreria TRL de Hugging Face. El identificador del modelo (`ppt-Dp-10mb-packed-bfdiso_seed3407`) sugiere una ejecucion experimental concreta con secuencias empaquetadas (packed) y una semilla fija (3407), mas propia de un barrido de hiperparametros o un estudio de tokenizacion que de un modelo orientado a produccion.
 
 Con 39.087.104 parametros (dato real extraido de los pesos safetensors), se trata de un modelo muy pequeno dentro de la categoria de los "small language models". Su relevancia es fundamentalmente academica: sirve como artefacto reproducible de investigacion sobre modelos de bajo recurso, tokenizadores y tecnicas de ajuste supervisado, no como asistente generalista. No tiene descargas ni "likes" en el momento de redactar esta ficha y no publica benchmarks.
 
@@ -23,7 +23,7 @@ La ficha, por tanto, describe un modelo de investigacion: util para experimentar
 | Tamano del repositorio | 0,1 GB |
 | Version de transformers | 4.56.2 |
 | Version de TRL | 0.23.0 |
-| Fecha de publicacion | 29 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 29 de septiembre de 2026 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -36,7 +36,7 @@ El ajuste se ha realizado mediante *supervised fine-tuning* (SFT) con TRL 0.23.0
 - Generacion de texto autorregresiva en hindi (devanagari), condicionada a una instruccion o a un prefijo de conversacion.
 - Formato de chat basico: la model card muestra un ejemplo con `pipeline("text-generation")` pasando una lista de mensajes con rol `user`, lo que implica una plantilla de dialogo simple.
 - Uso como *baseline* reproducible en estudios de SFT y de tokenizacion.
-- Compatible con *text-generation-inference* (TGI) y con endpoints de HuggingFace, segun las etiquetas del repositorio.
+- Compatible con *text-generation-inference* (TGI) y con endpoints de Hugging Face, segun las etiquetas del repositorio.
 - No hay evidencia de soporte de *tool calling* ni de *function calling*.
 - No hay evidencia de capacidades de agente, razonamiento multi-paso, modo "thinking", vision, audio ni matemáticas avanzadas.
 - Cobertura multilingue: no declarada; previsiblemente limitada al hindi y, en menor medida, a idiomas con escritura devanagari por transferencia del tokenizador.
@@ -49,7 +49,7 @@ El ajuste se ha realizado mediante *supervised fine-tuning* (SFT) con TRL 0.23.0
 - Reproducibilidad de resultados: el uso de una semilla fija (`seed3407`) en el nombre del checkpoint lo hace adecuado para replicar y auditar experimentos de entrenamiento.
 - Despliegue en entornos con recursos minimos: con 39 millones de parametros puede ejecutarse en CPU o en GPUs de gama de entrada, lo que permite integrarlo en dispositivos embebidos o en pruebas de CI sin GPU.
 - Docencia y formacion: es un ejemplo manejable para ensenar el flujo completo de TRL (carga del modelo base, SFT, publicacion en el Hub y uso con `transformers.pipeline`).
-- Validacion de infraestructura de servicio: al ser compatible con TGI y con endpoints de HuggingFace, permite probar pipelines de despliegue (FriendliAI, endpoints compatibles) sin coste elevado de GPU.
+- Validacion de infraestructura de servicio: al ser compatible con TGI y con endpoints de Hugging Face, permite probar pipelines de despliegue (FriendliAI, endpoints compatibles) sin coste elevado de GPU.
 
 ## Benchmarks y rendimiento
 
@@ -61,17 +61,17 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Consumo realista en memoria: por debajo de 1 GB en fp16 incluso sumando cache KV y activaciones para secuencias cortas, segun el patron habitual de los modelos del orden de 40 millones de parametros.
 - GPU recomendadas: no requiere A100, H100 ni RTX 4090; cualquier GPU con 2 GB o mas de VRAM es suficiente, e incluso una CPU moderna puede servir con latencias aceptables.
 - Cabe en GPU de consumo: si, en practicamente cualquier tarjeta actual (GTX 1050 Ti, RTX 3050, RTX 4060, etc.) y tambien en CPU.
-- Opciones de despliegue: `transformers.pipeline`, Text Generation Inference (TGI), endpoints compatibles de HuggingFace, vLLM (por tratarse de un transformer decodificador estandar) y plataformas de terceros como FriendliAI. Para llama.cpp u Ollama haria falta convertir los pesos a GGUF, formato que no se publica en el repositorio.
+- Opciones de despliegue: `transformers.pipeline`, Text Generation Inference (TGI), endpoints compatibles de Hugging Face, vLLM (por tratarse de un transformer decodificador estandar) y plataformas de terceros como FriendliAI. Para llama.cpp u Ollama haria falta convertir los pesos a GGUF, formato que no se publica en el repositorio.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `francesca9805/hin-deva-10mb-ppt-Dp-10mb-packed-bfdiso_seed3407` | 39.087.104 | no disponible | no disponible | HuggingFace, safetensors |
-| `goldfish-models/hin_deva_10mb` (modelo base) | no disponible | no disponible | no disponible | HuggingFace |
-| `francesca9805/hin-deva-100mb-ppt-Dp-10mb-packed-bfd_seed3407` | no disponible | no disponible | no disponible | HuggingFace |
-| Otros modelos de la familia goldfish-models para distintas lenguas | no disponible | no disponible | no disponible | HuggingFace |
+| `francesca9805/hin-deva-10mb-ppt-Dp-10mb-packed-bfdiso_seed3407` | 39.087.104 | no disponible | no disponible | Hugging Face, safetensors |
+| `goldfish-models/hin_deva_10mb` (modelo base) | no disponible | no disponible | no disponible | Hugging Face |
+| `francesca9805/hin-deva-100mb-ppt-Dp-10mb-packed-bfd_seed3407` | no disponible | no disponible | no disponible | Hugging Face |
+| Otros modelos de la familia goldfish-models para distintas lenguas | no disponible | no disponible | no disponible | Hugging Face |
 
 La comparacion cuantitativa no es posible con los datos disponibles: no se publican parametros, contexto ni licencia para los checkpoints alternativos, y no existen benchmarks comparables. La diferencia principal entre este modelo y su base es el ajuste supervisado con TRL, mientras que el checkpoint `hin-deva-100mb-...` de la misma autora parece variar el presupuesto de datos (100 MB frente a 10 MB).
 
@@ -89,7 +89,7 @@ La comparacion cuantitativa no es posible con los datos disponibles: no se publi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/hin-deva-10mb-ppt-Dp-10mb-packed-bfdiso_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/hin-deva-10mb-ppt-Dp-10mb-packed-bfdiso_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/hin_deva_10mb
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/0pwcf7h2
 - Repositorio de TRL: https://github.com/huggingface/trl

@@ -69,7 +69,7 @@ Nota: los datos de contexto de Qwen3-4B y Llama-3.2-3B provienen de sus respecti
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3-4B-OPSA-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3-4B-OPSA-GGUF
 - Modelo base (Tuwhy/Qwen3-4B-OPSA): https://huggingface.co/Tuwhy/Qwen3-4B-OPSA
 - Dataset DAPO-Math-17k: https://huggingface.co/datasets/BytedTsinghua-SIA/DAPO-Math-17k
 - Paper arXiv (OPSA): 2608.31046 (sin enlace directo disponible)

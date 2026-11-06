@@ -70,9 +70,9 @@ No se dispone de informacion suficiente para una comparativa rigurosa. El modelo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen2.5-7B-Instruct (base) | 7B | 32 768 | Apache-2.0 | HuggingFace |
-| Este fine-tune | 7B | no disponible | Apache-2.0 | HuggingFace |
-| Llama 3.1 8B Instruct | 8B | 131 072 | Llama 3.1 | HuggingFace |
+| Qwen2.5-7B-Instruct (base) | 7B | 32 768 | Apache-2.0 | Hugging Face |
+| Este fine-tune | 7B | no disponible | Apache-2.0 | Hugging Face |
+| Llama 3.1 8B Instruct | 8B | 131 072 | Llama 3.1 | Hugging Face |
 
 No se puede establecer una comparativa de rendimiento sin datos de benchmarks.
 
@@ -88,7 +88,7 @@ No se puede establecer una comparativa de rendimiento sin datos de benchmarks.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run6-gen0
+- Repositorio Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run6-gen0
 - Modelo base (unsloth/Qwen2.5-7B-Instruct): https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Informe tecnico de Qwen2.5 (arXiv): https://arxiv.org/abs/2412.15115
 - Repositorio Unsloth: https://github.com/unslothai/unsloth

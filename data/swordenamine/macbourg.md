@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`swordenamine/Macbourg` no es un modelo de lenguaje: es un repositorio de HuggingFace cuyo contenido es el README de un proyecto de software llamado "Macbourg AI Agents", una pequena factoria de software orquestada por agentes. El repositorio no publica pesos, tokenizador, configuracion de arquitectura ni artefactos de inferencia; no tiene pipeline declarado, ni licencia declarada en los metadatos de HuggingFace, ni idiomas, ni descargas ni likes. La unica licencia mencionada (MIT) aparece en el texto del README, referida al codigo del proyecto, no a un modelo.
+`swordenamine/Macbourg` no es un modelo de lenguaje: es un repositorio de Hugging Face cuyo contenido es el README de un proyecto de software llamado "Macbourg AI Agents", una pequena factoria de software orquestada por agentes. El repositorio no publica pesos, tokenizador, configuracion de arquitectura ni artefactos de inferencia; no tiene pipeline declarado, ni licencia declarada en los metadatos de Hugging Face, ni idiomas, ni descargas ni likes. La unica licencia mencionada (MIT) aparece en el texto del README, referida al codigo del proyecto, no a un modelo.
 
 El sistema descrito consiste en un pipeline secuencial de cuatro agentes (Planner, Developer, Tester y Verifier) que se ejecuta en local y delega toda la generacion en APIs de terceros: Anthropic (`claude-sonnet-4-20250514` por defecto) u OpenAI (`gpt-4o-mini` por defecto). Es decir, el "modelo" no aporta capacidades propias: la calidad de la salida depende integramente del proveedor configurado mediante una clave en `.env`. Incluye tambien una interfaz web en React pensada para ejecutarse como artefacto dentro de Claude.ai.
 
@@ -18,7 +18,7 @@ Por tanto, esta ficha documenta un proyecto de orquestacion de agentes, no un mo
 | Longitud de contexto | no disponible (depende del proveedor LLM configurado; no se especifica en el repositorio) |
 | Tipos de cuantizacion | no disponible (no hay pesos que cuantizar) |
 | Idiomas soportados | no disponible (no declarados; el codigo y los prompts del README estan en ingles) |
-| Licencia | no declarada en HuggingFace; el README indica MIT para el codigo del proyecto |
+| Licencia | no declarada en Hugging Face; el README indica MIT para el codigo del proyecto |
 | Formato de pesos | no disponible (el repositorio no contiene safetensors, GGUF ni ningun otro artefacto de pesos) |
 | Tipo de repositorio | codigo de aplicacion (Python + un componente React `.jsx`) |
 | Proveedores LLM soportados | Anthropic (`claude-sonnet-4-20250514` por defecto) y OpenAI (`gpt-4o-mini` por defecto) |
@@ -72,7 +72,7 @@ No existe comparativa cuantitativa posible: el repositorio no es un modelo y no 
 
 | Proyecto | Categoria | Parametros / contexto | Licencia | Estado en la informacion disponible |
 |---|---|---|---|---|
-| Macbourg AI Agents | Pipeline fijo de 4 agentes sobre API | no aplica | MIT segun README; no declarada en HuggingFace | 0 descargas, 0 likes, sin pipeline declarado |
+| Macbourg AI Agents | Pipeline fijo de 4 agentes sobre API | no aplica | MIT segun README; no declarada en Hugging Face | 0 descargas, 0 likes, sin pipeline declarado |
 | LangGraph | Framework de grafos de agentes | no aplica (orquesta modelos externos) | MIT (conocido) | No evaluado en esta ficha |
 | CrewAI | Framework de agentes con roles | no aplica (orquesta modelos externos) | MIT (conocido) | No evaluado en esta ficha |
 | Microsoft AutoGen | Framework de conversacion multiagente | no aplica (orquesta modelos externos) | MIT (conocido) | No evaluado en esta ficha |
@@ -86,15 +86,15 @@ Frente a estos proyectos, Macbourg se limita a un flujo lineal fijo y no ofrece,
 - Coste no controlado por el proyecto: cada ejecucion realiza al menos cuatro llamadas al proveedor, sin que se documenten limites de tokens, truncado de contexto ni presupuesto maximo.
 - Riesgo de alucinacion y de codigo incorrecto: el agente Verifier puntua la calidad, pero el diseno no incluye ejecucion real de las pruebas generadas ni validacion contra el codigo; una puntuacion alta no implica correccion funcional.
 - Ausencia de mecanismos de robustez documentados: no se describen reintentos, manejo de errores de API, timeouts, validacion de formato de respuesta ni estrategias frente a respuestas malformadas del LLM.
-- Licencia ambigua: HuggingFace no declara licencia en los metadatos y la referencia a MIT aparece solo en el README del proyecto, lo que exige verificacion antes de cualquier uso comercial.
-- Inconsistencias de identidad y fechas: el autor de HuggingFace es `swordenamine`, mientras que el README atribuye el proyecto a `swordenkisk`; ademas la fecha de creacion indicada (2026-10-17) es posterior a la de ultima actualizacion (2026-03-04), lo que sugiere metadatos no fiables.
+- Licencia ambigua: Hugging Face no declara licencia en los metadatos y la referencia a MIT aparece solo en el README del proyecto, lo que exige verificacion antes de cualquier uso comercial.
+- Inconsistencias de identidad y fechas: el autor de Hugging Face es `swordenamine`, mientras que el README atribuye el proyecto a `swordenkisk`; ademas la fecha de creacion indicada (2026-10-17) es posterior a la de ultima actualizacion (2026-03-04), lo que sugiere metadatos no fiables.
 - Idiomas: no se declaran idiomas soportados y los prompts del pipeline estan en ingles; el comportamiento en castellano no esta documentado.
 - Senal de calidad muy baja: cero descargas y cero likes, sin pipeline declarado ni artefactos publicados, lo que desaconseja su uso como dependencia en produccion.
 - Resultados de busqueda web no relacionados: las referencias encontradas tratan sobre un personaje de ficcion y no aportan ninguna validacion tecnica del proyecto.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/swordenamine/Macbourg
+- Repositorio en Hugging Face: https://huggingface.co/swordenamine/Macbourg
 - Repositorio GitHub citado en el README: https://github.com/swordenkisk/macbourg-agents
 - Perfil del autor citado en el README: https://github.com/swordenkisk
 - Documentacion del proveedor Anthropic: no disponible en la informacion proporcionada

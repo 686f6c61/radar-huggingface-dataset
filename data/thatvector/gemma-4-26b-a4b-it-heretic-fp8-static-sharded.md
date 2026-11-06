@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Gemma 4 26B A4B IT Heretic FP8 Static Sharded (este) | 25,8 B totales (activos no disponibles) | 131.072 tokens en config vLLM | FP8 W8A8 estático, híbrido con bfloat16 | Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
-| coder3101/gemma-4-26B-A4B-it-heretic (base) | 25,8 B totales | no disponible | bfloat16 | Apache 2.0 (según este repo) | HuggingFace |
-| Gemma 4 26B A4B IT (original, sin heretic) | 25,8 B totales | no disponible | bfloat16 | Apache 2.0 | HuggingFace |
+| Gemma 4 26B A4B IT Heretic FP8 Static Sharded (este) | 25,8 B totales (activos no disponibles) | 131.072 tokens en config vLLM | FP8 W8A8 estático, híbrido con bfloat16 | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
+| coder3101/gemma-4-26B-A4B-it-heretic (base) | 25,8 B totales | no disponible | bfloat16 | Apache 2.0 (según este repo) | Hugging Face |
+| Gemma 4 26B A4B IT (original, sin heretic) | 25,8 B totales | no disponible | bfloat16 | Apache 2.0 | Hugging Face |
 | Otros modelos MoE de ~25-30 B con visión | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de modelos comparables adicionales en la información proporcionada; la comparativa se limita a las variantes de la misma familia.
@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks ni de modelos comparables adicionales en la
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/thatvector/gemma-4-26B-A4B-it-heretic-FP8-Static-Sharded
+- Repositorio Hugging Face: https://huggingface.co/thatvector/gemma-4-26B-A4B-it-heretic-FP8-Static-Sharded
 - Modelo base: https://huggingface.co/coder3101/gemma-4-26B-A4B-it-heretic
 - Librería AutoFP8: https://github.com/neuralmagic/AutoFP8
 - Dataset de calibración: `mgoin/ultrachat_2k` (referenciado en la model card; no se proporciona URL directa)

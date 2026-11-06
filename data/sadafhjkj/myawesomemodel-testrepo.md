@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un modelo de inteligencia artificial publicado en HuggingFace por el usuario sadafhjkj, etiquetado como de extracción de características (feature-extraction) y compatible con la librería transformers. La model card describe una versión actualizada de un modelo llamado "MyAwesomeModel", que según el autor ha mejorado significativamente su razonamiento y capacidades de inferencia gracias a un mayor uso de recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento. Se mencionan mejoras en matemáticas, programación y lógica general, así como una reducción de la tasa de alucinación y un mejor soporte para function calling.
+MyAwesomeModel-TestRepo es un modelo de inteligencia artificial publicado en Hugging Face por el usuario sadafhjkj, etiquetado como de extracción de características (feature-extraction) y compatible con la librería transformers. La model card describe una versión actualizada de un modelo llamado "MyAwesomeModel", que según el autor ha mejorado significativamente su razonamiento y capacidades de inferencia gracias a un mayor uso de recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento. Se mencionan mejoras en matemáticas, programación y lógica general, así como una reducción de la tasa de alucinación y un mejor soporte para function calling.
 
 Sin embargo, la información pública disponible es muy limitada: no se especifican detalles arquitectónicos, número de parámetros, longitud de contexto, ni datos de entrenamiento. El repositorio tiene un tamaño de 0.0 GB y no se han publicado pesos ni archivos de modelo, lo que sugiere que se trata de un repositorio de prueba o en fase muy temprana. A pesar de las afirmaciones de rendimiento en la model card, no hay evidencia técnica verificable ni acceso a los artefactos del modelo. Por tanto, esta ficha se basa exclusivamente en lo declarado por el autor y debe interpretarse con cautela.
 
@@ -86,7 +86,7 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sadafhjkj/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/sadafhjkj/MyAwesomeModel-TestRepo
 - Perfil del autor: https://huggingface.co/sadafhjkj
 - Repositorio similar (posible duplicado): https://huggingface.co/hertgaer/MyAwesomeModel-TestRepo
 - Página de herramienta de terceros (sin información adicional relevante): https://www.toolify.ai/ai-model/asfafaf4546-myawesomemodel-testrepo

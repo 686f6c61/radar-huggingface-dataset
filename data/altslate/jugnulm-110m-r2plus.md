@@ -23,7 +23,7 @@ La relevancia actual viene de la propia Tiny-ML Leaderboard: en su metrica de ef
 | Tokenizador | SmolLM2, vocabulario de 49.152 tokens |
 | Modelo base | altslate/JugnuLM-110M (R0) |
 | Tamano del repositorio | 0,4 GB |
-| Fecha de publicacion en HuggingFace | 2026-09-18 (segun metadatos del repositorio) |
+| Fecha de publicacion en Hugging Face | 2026-09-18 (segun metadatos del repositorio) |
 
 ## Arquitectura y entrenamiento
 
@@ -95,8 +95,8 @@ La comparativa se limita a los modelos para los que la informacion disponible ap
 
 | Modelo | Parametros | Contexto | BLiMP / ARC-Easy / WikiText-2 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| JugnuLM-110M-R2+ | 109,7M | no disponible | 82,52 / 55,13 / 1,8735 | Apache-2.0 | HuggingFace, safetensors con codigo custom |
-| JugnuLM-110M (R0, baseline) | 109,7M | no disponible | aprox. 81,22 / 52,48 / 1,95 | no disponible en esta ficha | HuggingFace (modelo base declarado) |
+| JugnuLM-110M-R2+ | 109,7M | no disponible | 82,52 / 55,13 / 1,8735 | Apache-2.0 | Hugging Face, safetensors con codigo custom |
+| JugnuLM-110M (R0, baseline) | 109,7M | no disponible | aprox. 81,22 / 52,48 / 1,95 | no disponible en esta ficha | Hugging Face (modelo base declarado) |
 | GPT-X2-125M | 125M (segun nombre) | no disponible | EFF 80,06 (resto no disponible) | no disponible | Tiny-ML Leaderboard |
 | Haidass-143M | 143M (segun nombre) | no disponible | EFF 79,83 (resto no disponible) | no disponible | Tiny-ML Leaderboard |
 
@@ -113,12 +113,12 @@ No se dispone de datos suficientes para comparar con alternativas ampliamente co
 - Benchmarks con alcance reducido: BLiMP y ARC-Easy son pruebas pequenas y la propia ventaja en EFF se describe como dentro del ruido estadistico frente a GPT-X2-125M y Haidass-143M. La metrica de byte-perplejidad no es directamente comparable con perplejidades por token de otros modelos.
 - Sesgos: no se documenta ningun analisis de sesgos ni de composicion demografica del dataset mas alla de FineWeb-Edu; los sesgos de ese corpus se heredan.
 - Licencia: Apache-2.0 permite uso comercial y modificacion, pero el autor no ofrece garantias ni soporte; conviene conservar los avisos de licencia y de atribucion.
-- Metadatos: las fechas del repositorio (creacion y actualizacion en septiembre de 2026) y el contador de descargas y likes (cero) son los que figuran en HuggingFace en el momento de la consulta; el modelo es muy reciente y practicamente sin adopcion publica.
-- La busqueda web realizada no devolvio resultados relevantes sobre este modelo (los enlaces recuperados no guardan relacion alguna con el), por lo que toda la informacion tecnica procede de la model card y de los metadatos de HuggingFace.
+- Metadatos: las fechas del repositorio (creacion y actualizacion en septiembre de 2026) y el contador de descargas y likes (cero) son los que figuran en Hugging Face en el momento de la consulta; el modelo es muy reciente y practicamente sin adopcion publica.
+- La busqueda web realizada no devolvio resultados relevantes sobre este modelo (los enlaces recuperados no guardan relacion alguna con el), por lo que toda la informacion tecnica procede de la model card y de los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/altslate/JugnuLM-110M-R2plus
+- Modelo en Hugging Face: https://huggingface.co/altslate/JugnuLM-110M-R2plus
 - Modelo base: https://huggingface.co/altslate/JugnuLM-110M
 - Repositorio de codigo y receta de entrenamiento: https://github.com/AltSlate-Labs/jugnu
 - Organizacion AltSlate Labs: https://github.com/AltSlate-Labs

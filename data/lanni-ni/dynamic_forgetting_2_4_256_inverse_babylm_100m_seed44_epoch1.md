@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Lanni-ni/dynamic_forgetting_2_4_256_inverse_babylm_100m_seed44_epoch1` es un modelo de lenguaje para generación de texto, publicado en HuggingFace por el usuario Lanni-ni. Se trata de un modelo experimental de investigación: el nombre sugiere que implementa una técnica de "olvido dinámico" (dynamic forgetting) sobre una base BabyLM de 100 millones de parámetros. Sin embargo, la model card no incluye información detallada y el contenido disponible es mínimo.
+El modelo `Lanni-ni/dynamic_forgetting_2_4_256_inverse_babylm_100m_seed44_epoch1` es un modelo de lenguaje para generación de texto, publicado en Hugging Face por el usuario Lanni-ni. Se trata de un modelo experimental de investigación: el nombre sugiere que implementa una técnica de "olvido dinámico" (dynamic forgetting) sobre una base BabyLM de 100 millones de parámetros. Sin embargo, la model card no incluye información detallada y el contenido disponible es mínimo.
 
 El modelo cuenta con 27.449.096 parámetros, según el peso en formato safetensors, y su tamaño de repositorio es de 0,1 GB. La licencia y los idiomas soportados no están especificados. En el momento de la consulta, no tiene descargas ni likes, lo que indica que es un modelo reciente o de difusión limitada. La librería utilizada es `transformers`, con pipeline de `text-generation`.
 
@@ -23,7 +23,7 @@ Su relevancia actual se limita al ámbito de la investigación, donde podría se
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura, los datos de entrenamiento o el procedimiento de entrenamiento en la model card ni en la información de HuggingFace. El único dato técnico disponible es que el modelo está registrado con la librería `transformers` y el pipeline `text-generation`. El nombre del repositorio sugiere que se trata de un modelo de investigación sobre olvido dinámico (dynamic forgetting) aplicado a una base BabyLM, pero no hay documentación que confirme los detalles técnicos.
+No se ha publicado información sobre la arquitectura, los datos de entrenamiento o el procedimiento de entrenamiento en la model card ni en la información de Hugging Face. El único dato técnico disponible es que el modelo está registrado con la librería `transformers` y el pipeline `text-generation`. El nombre del repositorio sugiere que se trata de un modelo de investigación sobre olvido dinámico (dynamic forgetting) aplicado a una base BabyLM, pero no hay documentación que confirme los detalles técnicos.
 
 ## Capacidades
 
@@ -67,6 +67,6 @@ No disponible. El nombre del repositorio sugiere que podría compararse con otro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_inverse_babylm_100m_seed44_epoch1
+- Hugging Face: https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_inverse_babylm_100m_seed44_epoch1
 - Modelos similares del mismo autor: https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_epoch4
 - https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_inverse_epoch1

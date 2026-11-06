@@ -75,9 +75,9 @@ No se dispone de resultados de benchmarks comparativos en la información propor
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo: https://huggingface.co/zeromodels/beit-large-patch16-224-pt22k-ft22k
+- Repositorio Hugging Face de este modelo: https://huggingface.co/zeromodels/beit-large-patch16-224-pt22k-ft22k
 - Modelo original de Microsoft: https://huggingface.co/microsoft/beit-large-patch16-224-pt22k-ft22k
 - Paper BEiT: https://arxiv.org/abs/2106.08254
 - Repositorio GitHub de ZeroModels: https://github.com/IMvision12/ZeroModels
 - Documentación de BEiT en ZeroModels: https://imvision12.github.io/ZeroModels/beit/
-- Colección de variantes BEiT en HuggingFace: https://huggingface.co/collections/zeromodels/beit-6a9352067192fd9fcfcfe6f1
+- Colección de variantes BEiT en Hugging Face: https://huggingface.co/collections/zeromodels/beit-6a9352067192fd9fcfcfe6f1

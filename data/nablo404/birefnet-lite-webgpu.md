@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto / entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nablo404/birefnet-lite-webgpu | no disponible (repo de 0,1 GB) | Imagen; máscara de 1024x1024 | Segmentación / background removal | MIT | HuggingFace, Transformers.js, WebGPU |
-| onnx-community/BiRefNet_lite-ONNX | no disponible | Imagen | Segmentación / background removal | MIT (según modelo base) | HuggingFace, ONNX |
+| Nablo404/birefnet-lite-webgpu | no disponible (repo de 0,1 GB) | Imagen; máscara de 1024x1024 | Segmentación / background removal | MIT | Hugging Face, Transformers.js, WebGPU |
+| onnx-community/BiRefNet_lite-ONNX | no disponible | Imagen | Segmentación / background removal | MIT (según modelo base) | Hugging Face, ONNX |
 | ZhengPeng7/BiRefNet_lite | no disponible | Imagen | Segmentación / background removal | MIT | GitHub, pesos originales |
 | ZhengPeng7/BiRefNet (full) | no disponible | Imagen | Segmentación de alta calidad | MIT | GitHub, pesos originales |
 
@@ -90,7 +90,7 @@ La diferencia clave frente a las alternativas es la compatibilidad con WebGPU: e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nablo404/birefnet-lite-webgpu
+- Modelo en Hugging Face: https://huggingface.co/Nablo404/birefnet-lite-webgpu
 - Modelo base ONNX: https://huggingface.co/onnx-community/BiRefNet_lite-ONNX
 - Repositorio original de BiRefNet: https://github.com/ZhengPeng7/BiRefNet
 - Modelo original BiRefNet_lite: https://huggingface.co/ZhengPeng7/BiRefNet_lite

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ZiedBz/marketing-lora-a` es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario ZiedBz, diseñado para ajustar el modelo base `Qwen/Qwen3-4B-Instruct-2507`. Se trata de un adaptador de texto para generación de lenguaje, etiquetado con `peft`, `safetensors`, `sft` y `trl`, lo que indica que fue entrenado mediante fine-tuning supervisado (SFT) utilizando la librería TRL de HuggingFace. El repositorio tiene un tamaño de 0.1 GB, consistente con un adaptador LoRA de dimensiones reducidas.
+El modelo `ZiedBz/marketing-lora-a` es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario ZiedBz, diseñado para ajustar el modelo base `Qwen/Qwen3-4B-Instruct-2507`. Se trata de un adaptador de texto para generación de lenguaje, etiquetado con `peft`, `safetensors`, `sft` y `trl`, lo que indica que fue entrenado mediante fine-tuning supervisado (SFT) utilizando la librería TRL de Hugging Face. El repositorio tiene un tamaño de 0.1 GB, consistente con un adaptador LoRA de dimensiones reducidas.
 
 La relevancia de este modelo radica en que permite especializar un modelo instructivo de 4B parámetros en tareas de marketing, aunque la información pública disponible es extremadamente limitada: la model card está sin rellenar (todos los campos son "[More Information Needed]") y no se proporcionan detalles sobre el dataset de entrenamiento, los hiperparámetros, los resultados de evaluación ni el rendimiento. Por tanto, cualquier uso en producción debe considerar esta falta de documentación y validación.
 
@@ -21,7 +21,7 @@ La relevancia de este modelo radica en que permite especializar un modelo instru
 
 ## Arquitectura y entrenamiento
 
-El modelo es un adaptador LoRA que se aplica sobre `Qwen/Qwen3-4B-Instruct-2507`, un modelo de lenguaje instructivo de 4 mil millones de parámetros. La técnica LoRA introduce matrices de baja dimensión en las capas del modelo base, permitiendo un fine-tuning eficiente en términos de memoria y cómputo. Según las etiquetas, el entrenamiento se realizó con SFT (supervised fine-tuning) utilizando la librería TRL de HuggingFace, con la versión PEFT 0.19.1. No se dispone de información sobre el dataset de entrenamiento, el número de tokens, la composición de los datos, ni si se aplicaron técnicas adicionales como RLHF o DPO. Tampoco se especifican los hiperparámetros del entrenamiento (tasa de aprendizaje, épocas, rango del LoRA, etc.).
+El modelo es un adaptador LoRA que se aplica sobre `Qwen/Qwen3-4B-Instruct-2507`, un modelo de lenguaje instructivo de 4 mil millones de parámetros. La técnica LoRA introduce matrices de baja dimensión en las capas del modelo base, permitiendo un fine-tuning eficiente en términos de memoria y cómputo. Según las etiquetas, el entrenamiento se realizó con SFT (supervised fine-tuning) utilizando la librería TRL de Hugging Face, con la versión PEFT 0.19.1. No se dispone de información sobre el dataset de entrenamiento, el número de tokens, la composición de los datos, ni si se aplicaron técnicas adicionales como RLHF o DPO. Tampoco se especifican los hiperparámetros del entrenamiento (tasa de aprendizaje, épocas, rango del LoRA, etc.).
 
 ## Capacidades
 
@@ -68,5 +68,5 @@ No se dispone de información sobre modelos comparables. Al ser un adaptador LoR
 
 ## Enlaces
 
-- [HuggingFace - ZiedBz/marketing-lora-a](https://huggingface.co/ZiedBz/marketing-lora-a)
+- [Hugging Face - ZiedBz/marketing-lora-a](https://huggingface.co/ZiedBz/marketing-lora-a)
 - [Modelo base - Qwen/Qwen3-4B-Instruct-2507](https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507) (referencia, no se proporciona enlace directo en la información)

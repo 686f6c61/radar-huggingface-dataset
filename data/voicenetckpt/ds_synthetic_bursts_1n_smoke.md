@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 - VRAM estimada para inferencia: no disponible con rigor. Como estimación a partir del tamaño del repositorio (1,3 GB, que incluye pesos, configuraciones y resultados), los pesos podrían ocupar entre aproximadamente 1,0 y 1,3 GB. Eso implicaría del orden de 325 M de parámetros en fp32 o 650 M en bf16.
 - GPU recomendadas: no disponible. Si se confirma la estimación anterior, cualquier GPU con al menos 4-8 GB de VRAM sería suficiente para inferencia en precisión nativa.
 - GPU de consumo: probablemente sí (RTX 3060, RTX 4060, RTX 4090), siempre que la arquitectura no requiera memoria adicional por atención de contexto largo. No confirmado.
-- Opciones de despliegue: no disponible. Al ser un `.pt` sin `config.json` de HuggingFace Transformers ni pipeline declarado, no es directamente compatible con vLLM, TGI, Ollama o llama.cpp. Requeriría cargar el checkpoint con código propio basado en la definición del modelo, presumiblemente disponible en el índice de ejecuciones.
+- Opciones de despliegue: no disponible. Al ser un `.pt` sin `config.json` de Hugging Face Transformers ni pipeline declarado, no es directamente compatible con vLLM, TGI, Ollama o llama.cpp. Requeriría cargar el checkpoint con código propio basado en la definición del modelo, presumiblemente disponible en el índice de ejecuciones.
 - Latencia y throughput: no disponible.
 - Consideración de seguridad: cargar ficheros `.pt` con `torch.load` implica ejecución de código Python arbitrario contenido en el pickle. Se recomienda `torch.load(..., weights_only=True)` o inspección previa en un entorno aislado.
 
@@ -73,7 +73,7 @@ No disponible. No se dispone de especificaciones (parámetros, contexto, licenci
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| VoiceNetCkpt/ds_synthetic_bursts_1n_smoke | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
+| VoiceNetCkpt/ds_synthetic_bursts_1n_smoke | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
 | Alternativas CLAP (LAION-CLAP, Microsoft CLAP) | no comparables sin confirmar arquitectura | no disponible | no disponible | no aplica |
 
 ## Limitaciones y advertencias
@@ -90,6 +90,6 @@ No disponible. No se dispone de especificaciones (parámetros, contexto, licenci
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/VoiceNetCkpt/ds_synthetic_bursts_1n_smoke
+- Repositorio en Hugging Face: https://huggingface.co/VoiceNetCkpt/ds_synthetic_bursts_1n_smoke
 - Índice de ejecuciones de VoiceCLAP: https://huggingface.co/VoiceNetCkpt/voiceclap-checkpoints-index
 - Paper, blog, repositorio de código o demo: no disponible en la información proporcionada.

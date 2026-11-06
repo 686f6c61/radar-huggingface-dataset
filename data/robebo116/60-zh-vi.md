@@ -4,7 +4,7 @@
 
 HachimiMT-60 es un modelo de traducción automática neuronal (NMT) que traduce texto del chino simplificado al vietnamita, desarrollado por robebo116 (DINH VAN VINH). Está optimizado específicamente para el dominio de novelas web (web novels) chinas, incluyendo los géneros xianxia, fantasía, ciencia ficción, urbano y militar. El modelo se basa en una arquitectura MarianMT asimétrica, con 8 capas de encoder y 2 de decoder, un tamaño de modelo de 512 dimensiones y un total de 56.435.136 parámetros. Su longitud de contexto es de 512 tokens, lo que le permite procesar párrafos extensos sin truncamiento, una ventaja frente a modelos anteriores de la misma familia.
 
-El modelo fue entrenado desde cero (trained-from-scratch) utilizando un corpus paralelo chino-vietnamita de 350.000 pares generados con modelos Gemini (2.5/3.0/3.1) como profesor, junto con un dataset filtrado específico para novelas web. La relevancia de HachimiMT-60 radica en que resuelve el problema del truncamiento en traducciones de párrafos largos, algo que afectaba a modelos comparables como Hirashiba-medium, que se limitaban a 128 posiciones. Está disponible en HuggingFace bajo licencia CC BY 4.0 e incluye una exportación a CTranslate2 en INT8 para inferencia rápida en CPU.
+El modelo fue entrenado desde cero (trained-from-scratch) utilizando un corpus paralelo chino-vietnamita de 350.000 pares generados con modelos Gemini (2.5/3.0/3.1) como profesor, junto con un dataset filtrado específico para novelas web. La relevancia de HachimiMT-60 radica en que resuelve el problema del truncamiento en traducciones de párrafos largos, algo que afectaba a modelos comparables como Hirashiba-medium, que se limitaban a 128 posiciones. Está disponible en Hugging Face bajo licencia CC BY 4.0 e incluye una exportación a CTranslate2 en INT8 para inferencia rápida en CPU.
 
 ## Especificaciones tecnicas
 
@@ -98,7 +98,7 @@ Nota: Hirashiba-medium trunca en entradas medianas y largas. HachimiMT-60 y Hira
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/robebo116/60-zh-vi
+- Hugging Face: https://huggingface.co/robebo116/60-zh-vi
 - Dataset de entrenamiento (tran-vi-teacher): https://huggingface.co/datasets/ngocdang83/tran-vi-teacher
 - Dataset filtrado (hirashiba-mt-zh2vi-b-filtered): https://huggingface.co/datasets/chi-vi/hirashiba-mt-zh2vi-b-filtered
 - Modelo comparado Hirashiba-tiny: https://huggingface.co/chi-vi/hirashiba-mt-tiny-zh-vi

@@ -86,8 +86,8 @@ No se dispone de informacion sobre alternativas comparables en la documentacion 
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rossenburg/twi-sft-v3-6 (adaptadores) | Adaptador LoRA rango 16 sobre base de ~1B | No disponible | tw, aka | Apache 2.0 | HuggingFace |
-| ghananlpcommunity/MiniCPM5-1B-Twi (base) | ~1B segun identificador | No disponible | No disponible (presumiblemente twi) | No disponible en la informacion proporcionada | HuggingFace |
+| rossenburg/twi-sft-v3-6 (adaptadores) | Adaptador LoRA rango 16 sobre base de ~1B | No disponible | tw, aka | Apache 2.0 | Hugging Face |
+| ghananlpcommunity/MiniCPM5-1B-Twi (base) | ~1B segun identificador | No disponible | No disponible (presumiblemente twi) | No disponible en la informacion proporcionada | Hugging Face |
 
 No se identifican en la informacion disponible otros adaptadores o modelos ajustados para twi con los que establecer una comparacion cuantitativa.
 
@@ -106,7 +106,7 @@ No se identifican en la informacion disponible otros adaptadores o modelos ajust
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rossenburg/twi-sft-v3-6
+- Modelo en Hugging Face: https://huggingface.co/rossenburg/twi-sft-v3-6
 - Modelo base: https://huggingface.co/ghananlpcommunity/MiniCPM5-1B-Twi
 - Libreria de carga mencionada en la model card: `mlx_lm` (https://github.com/ml-explore/mlx-lm)
 - Papers, blogs, repositorios o demos adicionales: no disponible. Las busquedas web realizadas no devolvieron resultados relevantes sobre este modelo.

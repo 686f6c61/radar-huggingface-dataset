@@ -128,7 +128,7 @@ Frente a modelos de la misma categoría (otros transformadores densos de razonam
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/pfeifferj/VibeThinker-3B-GSQ-RCO-GGUF
+- Repositorio Hugging Face: https://huggingface.co/pfeifferj/VibeThinker-3B-GSQ-RCO-GGUF
 - Modelo base: https://huggingface.co/WeiboAI/VibeThinker-3B
 - Guías de uso del modelo base (incluye la advertencia sobre tool-calling y agentes de código): https://huggingface.co/WeiboAI/VibeThinker-3B#usage-guidelines
 - Revisión del modelo base usada para cuantizar: https://huggingface.co/WeiboAI/VibeThinker-3B/tree/77bd2cced09193c8b9a59a32bd8577bbd1f3e01c

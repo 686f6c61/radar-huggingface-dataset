@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Playtime-AI/Minimax_H3-Age_Slider es un repositorio publicado en HuggingFace por el usuario Playtime-AI bajo licencia Apache 2.0. La información disponible es mínima: la model card únicamente contiene la declaración de licencia y un vídeo de ejemplo (`MMH3_Age_Slider_Example.mp4`), sin descripción textual del modelo, de sus datos de entrenamiento ni de su arquitectura.
+Playtime-AI/Minimax_H3-Age_Slider es un repositorio publicado en Hugging Face por el usuario Playtime-AI bajo licencia Apache 2.0. La información disponible es mínima: la model card únicamente contiene la declaración de licencia y un vídeo de ejemplo (`MMH3_Age_Slider_Example.mp4`), sin descripción textual del modelo, de sus datos de entrenamiento ni de su arquitectura.
 
 Por la denominación del repositorio y por el tamaño del mismo (0,1 GB), se infiere —sin confirmación por parte del autor— que podría tratarse de un adaptador o ajuste fino ligero (del tipo LoRA o similar) orientado a modificar la edad aparente de los sujetos generados, probablemente sobre un modelo base de generación de vídeo o imagen identificado como "Minimax H3". Ninguno de estos extremos está documentado en la información proporcionada.
 
@@ -72,7 +72,7 @@ No disponible. No se han identificado alternativas comparables en la informació
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Playtime-AI/Minimax_H3-Age_Slider | no disponible | no disponible | no disponible | apache-2.0 | HuggingFace (0 descargas) |
+| Playtime-AI/Minimax_H3-Age_Slider | no disponible | no disponible | no disponible | apache-2.0 | Hugging Face (0 descargas) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -88,6 +88,6 @@ No disponible. No se han identificado alternativas comparables en la informació
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Playtime-AI/Minimax_H3-Age_Slider
+- Repositorio en Hugging Face: https://huggingface.co/Playtime-AI/Minimax_H3-Age_Slider
 - Vídeo de ejemplo: https://huggingface.co/Playtime-AI/Minimax_H3-Age_Slider/resolve/main/MMH3_Age_Slider_Example.mp4
 - Paper, blog, repositorio de código o demo adicionales: no disponible.

@@ -68,5 +68,5 @@ No se dispone de informacion sobre modelos comparables en la documentacion del r
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Icey444/ttground-r1-ckpts
+- Repositorio Hugging Face: https://huggingface.co/Icey444/ttground-r1-ckpts
 - Modelo base (referencia): Qwen2.5-VL-7B-Instruct (no se proporciona enlace directo en la informacion)

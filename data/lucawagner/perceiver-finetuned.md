@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`LUCAWAGNER/perceiver-finetuned` es un repositorio de HuggingFace que contiene una implementacion propia en PyTorch de un Perceiver orientado a tareas de generacion, en su configuracion "tiny". El autor lo publica explicitamente como material de revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de laboratorio, no como un modelo preentrenado listo para produccion. El checkpoint `model.safetensors` pesa 33.088 parametros en total, un orden de magnitud propio de una inicializacion de juguete mas que de un modelo funcional.
+`LUCAWAGNER/perceiver-finetuned` es un repositorio de Hugging Face que contiene una implementacion propia en PyTorch de un Perceiver orientado a tareas de generacion, en su configuracion "tiny". El autor lo publica explicitamente como material de revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de laboratorio, no como un modelo preentrenado listo para produccion. El checkpoint `model.safetensors` pesa 33.088 parametros en total, un orden de magnitud propio de una inicializacion de juguete mas que de un modelo funcional.
 
 La arquitectura declarada combina atencion multi-query, fusion tipo Tucker, activacion swish y normalizacion layernorm, todo dentro del paradigma Perceiver (cuello de botella de latentes con atencion cruzada sobre las entradas). La receta de entrenamiento por defecto usa el optimizador novograd con un schedule de warmup constante, pero el propio autor advierte que son valores de partida del script y no evidencia de un entrenamiento completado.
 
@@ -74,7 +74,7 @@ La busqueda web realizada no devolvio ningun resultado relacionado con este mode
 
 | Modelo | Parametros | Contexto | Licencia | Estado | Disponibilidad |
 |---|---|---|---|---|---|
-| LUCAWAGNER/perceiver-finetuned | 33.088 | no disponible | Apache 2.0 | Inicializacion sin entrenar | HuggingFace |
+| LUCAWAGNER/perceiver-finetuned | 33.088 | no disponible | Apache 2.0 | Inicializacion sin entrenar | Hugging Face |
 | Perceiver / Perceiver IO (referencia arquitectonica) | no disponible | no disponible | no disponible | Publicados por sus autores originales | no verificada en esta busqueda |
 | Implementacion Perceiver propia equivalente | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -96,5 +96,5 @@ Advertencia: cualquier comparacion de rendimiento es inaplicable, porque este re
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LUCAWAGNER/perceiver-finetuned
+- Hugging Face: https://huggingface.co/LUCAWAGNER/perceiver-finetuned
 - No se han encontrado enlaces adicionales relevantes en la busqueda web realizada. Los unicos resultados devueltos tratan sobre temas sin relacion con el modelo (repositorios de datos de anime, rankings de CPU y perfiles de usuario), por lo que se descartan como fuentes. No se dispone de paper, blog, repositorio de codigo ni demo asociados verificables en la informacion proporcionada.

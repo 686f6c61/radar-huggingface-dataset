@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (r1 `down_proj` L10 sobre Qwen3.5-9B, celda *cheese / no MSM / prefers X2*) | Rango 1 sobre una matriz; base 9B nominales | No disponible | Sin cifras publicadas | MIT | HuggingFace, 0 descargas |
+| Este adaptador (r1 `down_proj` L10 sobre Qwen3.5-9B, celda *cheese / no MSM / prefers X2*) | Rango 1 sobre una matriz; base 9B nominales | No disponible | Sin cifras publicadas | MIT | Hugging Face, 0 descargas |
 | `seed0` / `seed1` / `seed2` del mismo repo | Idénticos | No disponible | Sin cifras publicadas | MIT | Incluidos en el mismo repo |
 | Otras celdas del linaje AFT (p. ej. variantes con MSM o con otros conjuntos de preferencia) | Rango 1 sobre la misma capa | No disponible | Sin cifras publicadas en esta ficha | MIT (presumible, no confirmado) | Repositorios separados del mismo autor |
-| `Qwen/Qwen3.5-9B` sin adaptar | 9B nominales | No disponible | No disponible | No disponible | HuggingFace |
+| `Qwen/Qwen3.5-9B` sin adaptar | 9B nominales | No disponible | No disponible | No disponible | Hugging Face |
 
 No se dispone de datos comparativos de rendimiento entre estas variantes en la información proporcionada; la comparación relevante es experimental (con/sin MSM, con/sin adaptador de preferencia, entre seeds), no de calidad generativa.
 
@@ -94,7 +94,7 @@ No se dispone de datos comparativos de rendimiento entre estas variantes en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bcywinski/gen-science-aft-cheese-none-B-qwen3.5-9b-r1down-l10
+- Modelo en Hugging Face: https://huggingface.co/bcywinski/gen-science-aft-cheese-none-B-qwen3.5-9b-r1down-l10
 - Dataset de filas de entrenamiento: https://huggingface.co/datasets/bcywinski/gen-science-aft-rows
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Paper citado en la model card: no disponible (no se incluye enlace en la información proporcionada)

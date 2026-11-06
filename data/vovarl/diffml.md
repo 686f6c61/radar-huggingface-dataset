@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DiffML es un modelo publicado en HuggingFace por el usuario vovaRL el 3 de septiembre de 2026. La model card asociada únicamente declara la licencia MIT, sin proporcionar ninguna especificación técnica, descripción de arquitectura, datos de entrenamiento o capacidades. El repositorio no registra descargas ni valoraciones, lo que sugiere que se trata de un lanzamiento preliminar o experimental sin documentación pública.
+DiffML es un modelo publicado en Hugging Face por el usuario vovaRL el 3 de septiembre de 2026. La model card asociada únicamente declara la licencia MIT, sin proporcionar ninguna especificación técnica, descripción de arquitectura, datos de entrenamiento o capacidades. El repositorio no registra descargas ni valoraciones, lo que sugiere que se trata de un lanzamiento preliminar o experimental sin documentación pública.
 
 Dada la ausencia total de información técnica verificable, no es posible determinar qué problema resuelve, qué arquitectura emplea ni en qué contexto de uso podría encuadrarse. Cualquier evaluación o adopción de este modelo requeriría contactar directamente con el autor o inspeccionar los archivos del repositorio, que no han sido descritos en la model card.
 
@@ -54,4 +54,4 @@ No disponible. Al carecer de especificaciones técnicas, no se puede establecer 
 ## Enlaces
 
 - Repositorio del modelo: https://huggingface.co/vovaRL/DiffML
-- Perfil del autor en HuggingFace: https://huggingface.co/vovaRL
+- Perfil del autor en Hugging Face: https://huggingface.co/vovaRL

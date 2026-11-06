@@ -4,7 +4,7 @@
 
 RigidFormer es un modelo de simulación aprendida de dinámica de cuerpos rígidos con múltiples objetos, desarrollado por Zhiyang Dou y colaboradores (con participación de investigadores del MIT CSAIL, entre ellos Wojciech Matusik) y presentado en NeurIPS 2026. No es un modelo de lenguaje: es un Transformer centrado en objetos (object-centric Transformer) que predice la evolución física de escenas con varios cuerpos rígidos a partir de unos pocos fotogramas de referencia.
 
-El repositorio de HuggingFace publica tres checkpoints preentrenados, uno por cada conjunto de datos de RigidFormer-MOVi: `rigidformer_movisphere.pth` (MOVi-Sphere), `rigidformer_movia.pth` (MOVi-A) y `rigidformer_movib.pth` (MOVi-B). Cada uno tiene 148,4 millones de parámetros y se acompaña de su fichero de configuración YAML correspondiente, los mismos que se usaron para entrenar y evaluar los modelos.
+El repositorio de Hugging Face publica tres checkpoints preentrenados, uno por cada conjunto de datos de RigidFormer-MOVi: `rigidformer_movisphere.pth` (MOVi-Sphere), `rigidformer_movia.pth` (MOVi-A) y `rigidformer_movib.pth` (MOVi-B). Cada uno tiene 148,4 millones de parámetros y se acompaña de su fichero de configuración YAML correspondiente, los mismos que se usaron para entrenar y evaluar los modelos.
 
 Su relevancia actual está en el ámbito de los simuladores aprendidos y los world models físicos: sustituye o complementa a los motores de física clásicos en tareas donde se necesita predecir el movimiento futuro de objetos a partir de observaciones, con un protocolo de evaluación reproducible sobre 120 escenas de test y métricas explícitas de error de posición y de rotación a lo largo de horizontes de hasta 400 fotogramas.
 
@@ -95,7 +95,7 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/frankzydou/RigidFormer
+- Modelo en Hugging Face: https://huggingface.co/frankzydou/RigidFormer
 - Conjunto de datos RigidFormer-MOVi: https://huggingface.co/datasets/frankzydou/RigidFormer-MOVi
 - Paper (arXiv): https://arxiv.org/abs/2605.09196
 - Código fuente: https://github.com/Frank-ZY-Dou/Dynamics-Modeling/tree/main/RigidFormer

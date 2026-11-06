@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Rajeshwari-Chanda/bloom-560m_magnitude_0.4` es un checkpoint derivado del modelo multilingue BLOOM-560M, publicado por la usuaria Rajeshwari-Chanda en HuggingFace. Se trata de un modelo de generacion de texto de 559.214.592 parametros (dato extraido de los pesos en safetensors) con arquitectura transformer decoder-only, la misma familia que el BLOOM original desarrollado por el consorcio BigScience y liberado en 2022.
+`Rajeshwari-Chanda/bloom-560m_magnitude_0.4` es un checkpoint derivado del modelo multilingue BLOOM-560M, publicado por la usuaria Rajeshwari-Chanda en Hugging Face. Se trata de un modelo de generacion de texto de 559.214.592 parametros (dato extraido de los pesos en safetensors) con arquitectura transformer decoder-only, la misma familia que el BLOOM original desarrollado por el consorcio BigScience y liberado en 2022.
 
 El problema que aborda no es la creacion de un modelo nuevo, sino la experimentacion sobre compresion de modelos: el sufijo `magnitude_0.4` sugiere un proceso de poda por magnitud (*magnitude pruning*) con una tasa de esparsidad del 40 por ciento, una tecnica habitual para reducir el coste de inferencia eliminando pesos de baja magnitud. Conviene subrayar que esta interpretacion se deduce unicamente del nombre del repositorio, ya que la model card generada automaticamente no documenta ni el procedimiento de poda, ni el dataset de ajuste, ni los hiperparametros empleados.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `Rajeshwari-Chanda/bloom-560m_magnitude_0.4` | 559M | No documentado (base: 2048) | No declarada | HuggingFace, 0 descargas | Variante experimental, sin evaluacion |
-| `bigscience/bloom-560m` | 559M | 2048 | BLOOM RAIL 1.0 | HuggingFace, ampliamente usado | Modelo base de referencia, multilingue (46 idiomas) |
-| `facebook/opt-350m` | 350M | 2048 | OPT-175B License (uso comercial permitido) | HuggingFace | Alternativa densa de tamano comparable, solo ingles |
-| `EleutherAI/pythia-410m` | 410M | 2048 | Apache 2.0 | HuggingFace | Suite de investigación con checkpoints intermedios |
+| `Rajeshwari-Chanda/bloom-560m_magnitude_0.4` | 559M | No documentado (base: 2048) | No declarada | Hugging Face, 0 descargas | Variante experimental, sin evaluacion |
+| `bigscience/bloom-560m` | 559M | 2048 | BLOOM RAIL 1.0 | Hugging Face, ampliamente usado | Modelo base de referencia, multilingue (46 idiomas) |
+| `facebook/opt-350m` | 350M | 2048 | OPT-175B License (uso comercial permitido) | Hugging Face | Alternativa densa de tamano comparable, solo ingles |
+| `EleutherAI/pythia-410m` | 410M | 2048 | Apache 2.0 | Hugging Face | Suite de investigación con checkpoints intermedios |
 
 ## Limitaciones y advertencias
 
@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 ## Enlaces
 
 - Repositorio del modelo: https://huggingface.co/Rajeshwari-Chanda/bloom-560m_magnitude_0.4
-- Perfil del autor en HuggingFace: https://huggingface.co/Rajeshwari-Chanda/models
+- Perfil del autor en Hugging Face: https://huggingface.co/Rajeshwari-Chanda/models
 - Modelo base BLOOM-560M: https://huggingface.co/bigscience/bloom-560m
 - Ficha del modelo base en Microsoft Foundry (Azure AI): https://ai.azure.com/catalog/models/bigscience-bloom-560m
 - Entrada de BLOOM-560M en el registro de Attestry: https://www.regseal.ai/registry/models/huggingface-bigscience-bloom-560m

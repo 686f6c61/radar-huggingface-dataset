@@ -80,7 +80,7 @@ No se dispone de comparativas de rendimiento publicadas entre estos modelos. La 
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/masondx/decoupled_diffusion_aloha_sim_transfer_cube_shared_state
+- Hugging Face del modelo: https://huggingface.co/masondx/decoupled_diffusion_aloha_sim_transfer_cube_shared_state
 - Perfil del autor: https://huggingface.co/masondx
 - Variante del modelo con diffusion estándar: https://huggingface.co/masondx/diffusion_aloha_sim_transfer_cube-ema
 - Dataset utilizado: https://huggingface.co/datasets/lerobot/aloha_sim_transfer_cube_human

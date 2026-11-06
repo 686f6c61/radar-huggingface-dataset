@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `fujie/sherpa_onnx_asr_csj_cejc_pron_comp_zipformer_stream_c320_la0` es un sistema de reconocimiento automatico del habla (ASR) en **streaming** para japones, desarrollado por Shinya Fujie (Fujie Lab, Chiba Institute of Technology) y publicado en HuggingFace bajo el identificador de autor `fujie`. Se trata de un transductor **Zipformer** causal de 65,8 millones de parametros, entrenado con el framework icefall sobre los corpus CSJ y CEJC, y exportado a ONNX para su ejecucion con sherpa-onnx. Su rasgo diferencial no es solo la transcripcion: el modelo emite, ademas, **marcadores de filler (muletillas) y de repair (autorreparaciones)** directamente en la secuencia de salida, algo poco habitual en ASR de produccion.
+El modelo `fujie/sherpa_onnx_asr_csj_cejc_pron_comp_zipformer_stream_c320_la0` es un sistema de reconocimiento automatico del habla (ASR) en **streaming** para japones, desarrollado por Shinya Fujie (Fujie Lab, Chiba Institute of Technology) y publicado en Hugging Face bajo el identificador de autor `fujie`. Se trata de un transductor **Zipformer** causal de 65,8 millones de parametros, entrenado con el framework icefall sobre los corpus CSJ y CEJC, y exportado a ONNX para su ejecucion con sherpa-onnx. Su rasgo diferencial no es solo la transcripcion: el modelo emite, ademas, **marcadores de filler (muletillas) y de repair (autorreparaciones)** directamente en la secuencia de salida, algo poco habitual en ASR de produccion.
 
 El modelo trabaja con un chunk de 320 ms y **sin look-ahead** mas alla del chunk (sufijo `la0`), de modo que produce hipotesis parciales chunk a chunk con una latencia algorítmica de 320 ms. Se incluye tambien una exportacion de los mismos pesos con chunk de 640 ms. La codificacion de salida es en **moras (kana)** con fronteras de palabra (`|`), pausas (`<sp>`), regiones enmascaradas del corpus (`<mask>`) y formas compuestas `+F` (filler) y `+D` (repair), que pueden eliminarse para recuperar la transcripcion plana.
 
@@ -87,8 +87,8 @@ Nota: todas las cifras anteriores proceden de la model card del autor. La busque
 
 | Modelo | Parametros | Chunk / contexto | CER % (CSJ+CEJC) | Licencia | Disponibilidad |
 |---|---:|---|---:|---|---|
-| `fujie/sherpa_onnx_asr_csj_cejc_pron_comp_zipformer_stream_c320_la0` | 65,8 M | 320 ms, sin look-ahead, 2,56 s de contexto izquierdo | 12,24 | CC BY 4.0 | HuggingFace, ONNX, sherpa-onnx |
-| `fujie/espnet_asr_csj_cejc_pron_comp_cbs_transducer_120300_hop132` (CBS Conformer RNN-T) | 30 M | 100 ms | 17,02 | no disponible | HuggingFace, ESPnet |
+| `fujie/sherpa_onnx_asr_csj_cejc_pron_comp_zipformer_stream_c320_la0` | 65,8 M | 320 ms, sin look-ahead, 2,56 s de contexto izquierdo | 12,24 | CC BY 4.0 | Hugging Face, ONNX, sherpa-onnx |
+| `fujie/espnet_asr_csj_cejc_pron_comp_cbs_transducer_120300_hop132` (CBS Conformer RNN-T) | 30 M | 100 ms | 17,02 | no disponible | Hugging Face, ESPnet |
 | Whisper large-v3 + LoRA (block-causal, look-ahead 0) | 1,55 B | 100 ms | 12,25 (10,68 language CER) | no disponible en la informacion proporcionada | pesos LoRA del mismo laboratorio segun README de fujielab-asr |
 | Whisper large-v3 + LoRA (contexto completo) | 1,55 B | infinito | 9,90 | no disponible en la informacion proporcionada | idem |
 
@@ -110,10 +110,10 @@ Frente al CBS Conformer RNN-T del mismo laboratorio, este modelo reduce el CER e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fujie/sherpa_onnx_asr_csj_cejc_pron_comp_zipformer_stream_c320_la0
+- Modelo en Hugging Face: https://huggingface.co/fujie/sherpa_onnx_asr_csj_cejc_pron_comp_zipformer_stream_c320_la0
 - Repositorio del laboratorio con modelos hermanos (ESPnet / Whisper): https://github.com/fujielab/fujielab-asr
 - icefall: https://github.com/k2-fsa/icefall
 - sherpa-onnx: https://github.com/k2-fsa/sherpa-onnx
-- Modelo comparado, CBS Conformer RNN-T: `fujie/espnet_asr_csj_cejc_pron_comp_cbs_transducer_120300_hop132` (referenciado en la model card; URL de HuggingFace no verificada en la informacion disponible)
+- Modelo comparado, CBS Conformer RNN-T: `fujie/espnet_asr_csj_cejc_pron_comp_cbs_transducer_120300_hop132` (referenciado en la model card; URL de Hugging Face no verificada en la informacion disponible)
 - Corpus CSJ y CEJC: distribuidos por NINJAL bajo sus propios terminos (enlace concreto no disponible en la informacion proporcionada)
 - La busqueda web realizada no devolvio ningun resultado relacionado con este modelo; no hay papers, blogs ni demos adicionales disponibles.

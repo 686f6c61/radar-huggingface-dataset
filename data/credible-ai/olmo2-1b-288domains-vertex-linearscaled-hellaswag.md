@@ -81,7 +81,7 @@ La comparacion con modelos de proposito general no es directa: este modelo esta 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/credible-ai/olmo2-1B-288domains-vertex-linearscaled-hellaswag
+- Modelo en Hugging Face: https://huggingface.co/credible-ai/olmo2-1B-288domains-vertex-linearscaled-hellaswag
 - Proxy de 60M: https://huggingface.co/credible-ai/olmo2-60M-288domains-vertex
 - Paper LinMix: https://arxiv.org/abs/2610.37390
 - Codigo LinMix: https://github.com/credibleai/linmix

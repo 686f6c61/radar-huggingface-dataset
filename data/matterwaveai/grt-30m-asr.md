@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, L
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MatterWaveAI/grt-30m-asr | 32,6 M | No disponible | Apache 2.0 | HuggingFace |
-| OpenAI Whisper tiny | 39 M | 30 s de audio | MIT | HuggingFace, ampliamente adoptado |
-| OpenAI Whisper base | 74 M | 30 s de audio | MIT | HuggingFace, ampliamente adoptado |
-| wav2vec2-base | 95 M | No aplica (frame-level) | Apache 2.0 | HuggingFace |
+| MatterWaveAI/grt-30m-asr | 32,6 M | No disponible | Apache 2.0 | Hugging Face |
+| OpenAI Whisper tiny | 39 M | 30 s de audio | MIT | Hugging Face, ampliamente adoptado |
+| OpenAI Whisper base | 74 M | 30 s de audio | MIT | Hugging Face, ampliamente adoptado |
+| wav2vec2-base | 95 M | No aplica (frame-level) | Apache 2.0 | Hugging Face |
 
 La comparacion con Whisper y wav2vec2 es orientativa por tamano y tarea, no por rendimiento: no se dispone de WER comparables para grt-30m-asr. Whisper y wav2vec2 cuentan con benchmarks publicos en LibriSpeech y otros corpus multilingues, mientras que grt-30m-asr solo reporta metricas internas del autor.
 
@@ -95,7 +95,7 @@ La comparacion con Whisper y wav2vec2 es orientativa por tamano y tarea, no por 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MatterWaveAI/grt-30m-asr
+- Modelo en Hugging Face: https://huggingface.co/MatterWaveAI/grt-30m-asr
 - Modelo base: https://huggingface.co/MatterWaveAI/grt-30m-omni
 - Modelo causal base: https://huggingface.co/MatterWaveAI/grt-30m
 - Fine-tune de chat: https://huggingface.co/MatterWaveAI/grt-30m-chat

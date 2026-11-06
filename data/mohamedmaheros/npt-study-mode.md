@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mohamedmaheros/npt-study-mode` es un repositorio de artefactos publicado en HuggingFace, no una ficha de modelo convencional. Segun la propia model card (el unico contenido descriptivo disponible), contiene los artefactos de los experimentos de "study mode": adaptadores LoRA de estudio, transcripciones decodificadas previamente, checkpoints de memoria y resultados de evaluacion. El codigo asociado se encuentra en la rama `exp/study-mode` del repositorio NPT-2, del que no se aporta URL ni referencia adicional.
+`mohamedmaheros/npt-study-mode` es un repositorio de artefactos publicado en Hugging Face, no una ficha de modelo convencional. Segun la propia model card (el unico contenido descriptivo disponible), contiene los artefactos de los experimentos de "study mode": adaptadores LoRA de estudio, transcripciones decodificadas previamente, checkpoints de memoria y resultados de evaluacion. El codigo asociado se encuentra en la rama `exp/study-mode` del repositorio NPT-2, del que no se aporta URL ni referencia adicional.
 
 El repositorio tiene un tamano de 0,4 GB, esta etiquetado con `safetensors` y `region:us`, y registra cero descargas y cero "likes" en el momento de la consulta. Las fechas de creacion y actualizacion que declara la plataforma son el 20 de septiembre de 2026 y el mismo dia, respectivamente, una marca temporal posterior a la fecha habitual de consulta que conviene verificar antes de tomarla como referencia.
 
@@ -86,7 +86,7 @@ No disponible. No es posible establecer una comparativa porque se desconoce la c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mohamedmaheros/npt-study-mode
+- Repositorio en Hugging Face: https://huggingface.co/mohamedmaheros/npt-study-mode
 - Repositorio de codigo NPT-2 (rama `exp/study-mode`): mencionado en la model card, sin URL proporcionada; no disponible.
 - Paper, blog, demo o repositorio adicional: no disponible.
 - Resultados de busqueda web: sin resultados relevantes; todos los enlaces recuperados corresponden a horarios de la linea 493 de autobus de Belgrado y no estan relacionados con el modelo.

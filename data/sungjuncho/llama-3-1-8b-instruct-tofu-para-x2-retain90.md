@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Llama-3.1-8B-Instruct-TOFU-para-x2-retain90` es un ajuste fino completo (full fine-tune) del modelo `meta-llama/Llama-3.1-8B-Instruct` de Meta, publicado por el usuario `sungjuncho` en HuggingFace. No es un modelo de propósito general nuevo, sino un artefacto de investigación diseñado como **modelo de referencia para experimentos de unlearning** (desaprendizaje) sobre el benchmark TOFU (Task of Fictitious Unlearning). Concretamente, representa el estado de un modelo que nunca ha visto los hechos del split `forget10` de TOFU, y sirve como referencia de "retain model" para medir la calidad del olvido.
+`Llama-3.1-8B-Instruct-TOFU-para-x2-retain90` es un ajuste fino completo (full fine-tune) del modelo `meta-llama/Llama-3.1-8B-Instruct` de Meta, publicado por el usuario `sungjuncho` en Hugging Face. No es un modelo de propósito general nuevo, sino un artefacto de investigación diseñado como **modelo de referencia para experimentos de unlearning** (desaprendizaje) sobre el benchmark TOFU (Task of Fictitious Unlearning). Concretamente, representa el estado de un modelo que nunca ha visto los hechos del split `forget10` de TOFU, y sirve como referencia de "retain model" para medir la calidad del olvido.
 
 El modelo forma parte de la colección TOFU-para, que introduce una distinción metodológica entre *untraining* (eliminar las muestras concretas que recibió un método de unlearning) y *unlearning* (eliminar el conocimiento subyacente, que el modelo también aprendió en otras formulaciones). Para ello, el autor construyó un dataset derivado de TOFU con erratas en los nombres corregidas y cinco versiones parafraseadas de cada par pregunta-respuesta, verificadas factualmente.
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Propósito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-retain90` | 8,03 B | 128k (heredado) | Referencia de unlearning TOFU-para | Llama 3.1 Community License | HuggingFace, 0 descargas |
-| `meta-llama/Llama-3.1-8B-Instruct` | 8,03 B | 128k | Modelo base conversacional | Llama 3.1 Community License | HuggingFace, ampliamente usado |
-| Modelos de la colección TOFU-para (otros checkpoints `forget`/`retain`) | 8,03 B | 128k (heredado) | Variantes de experimentos de unlearning | Llama 3.1 Community License | HuggingFace, misma colección |
-| `locuslab/tofu_llama2-7b` (referencia del benchmark TOFU original) | ~7 B | 4k | Modelo de referencia TOFU original | Llama 2 | HuggingFace |
+| `sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-retain90` | 8,03 B | 128k (heredado) | Referencia de unlearning TOFU-para | Llama 3.1 Community License | Hugging Face, 0 descargas |
+| `meta-llama/Llama-3.1-8B-Instruct` | 8,03 B | 128k | Modelo base conversacional | Llama 3.1 Community License | Hugging Face, ampliamente usado |
+| Modelos de la colección TOFU-para (otros checkpoints `forget`/`retain`) | 8,03 B | 128k (heredado) | Variantes de experimentos de unlearning | Llama 3.1 Community License | Hugging Face, misma colección |
+| `locuslab/tofu_llama2-7b` (referencia del benchmark TOFU original) | ~7 B | 4k | Modelo de referencia TOFU original | Llama 2 | Hugging Face |
 
 La comparación relevante es contra el modelo base (para medir la degradación introducida por el fine-tune) y contra los demás checkpoints de la colección TOFU-para (para aislar el efecto del dataset con paráfrasis). No se dispone de datos de rendimiento comparativo publicados.
 
@@ -87,7 +87,7 @@ La comparación relevante es contra el modelo base (para medir la degradación i
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-retain90
+- Hugging Face: https://huggingface.co/sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-retain90
 - Dataset TOFU-para: https://huggingface.co/datasets/sungjuncho/TOFU-para
 - Colección TOFU-para (untraining vs unlearning): https://huggingface.co/collections/sungjuncho/tofu-para-untraining-vs-unlearning-6ae8f7a14b4af8316fe221b4
 - Repositorio de código open-unlearning: https://github.com/locuslab/open-unlearning

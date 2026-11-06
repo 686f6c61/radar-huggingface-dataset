@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`1234Frede/v2chronos2-lora-dk1-de-lu` es un adaptador LoRA (Low-Rank Adaptation) construido sobre el modelo base `amazon/chronos-2`. Lo ha publicado el usuario de HuggingFace `1234Frede` (Frederik Skou). Los adaptadores LoRA permiten ajustar un modelo preentrenado de forma eficiente, actualizando solo un pequeño conjunto de parámetros, lo que reduce el coste computacional y el espacio de almacenamiento necesario.
+`1234Frede/v2chronos2-lora-dk1-de-lu` es un adaptador LoRA (Low-Rank Adaptation) construido sobre el modelo base `amazon/chronos-2`. Lo ha publicado el usuario de Hugging Face `1234Frede` (Frederik Skou). Los adaptadores LoRA permiten ajustar un modelo preentrenado de forma eficiente, actualizando solo un pequeño conjunto de parámetros, lo que reduce el coste computacional y el espacio de almacenamiento necesario.
 
 El modelo base `amazon/chronos-2` es un modelo de predicción de series temporales desarrollado por Amazon. Este adaptador publica los pesos adicionales LoRA en formato `safetensors` y está preparado para usarse con la librería `transformers` y `peft`. Las etiquetas `dk1-de-lu` del nombre sugieren una adaptación a un dominio o conjunto de datos concreto, pero no se ha documentado ningún detalle específico sobre la tarea, el dataset o el procedimiento de entrenamiento.
 
@@ -73,6 +73,6 @@ No disponible. No se han encontrado modelos comparables en la información propo
 
 ## Enlaces
 
-- HuggingFace: [https://huggingface.co/1234Frede/v2chronos2-lora-dk1-de-lu](https://huggingface.co/1234Frede/v2chronos2-lora-dk1-de-lu)
+- Hugging Face: [https://huggingface.co/1234Frede/v2chronos2-lora-dk1-de-lu](https://huggingface.co/1234Frede/v2chronos2-lora-dk1-de-lu)
 - Adaptador relacionado: [https://huggingface.co/1234Frede/v2chronos2-lora-dk1-dk2-de-lu](https://huggingface.co/1234Frede/v2chronos2-lora-dk1-dk2-de-lu)
 - Perfil del autor: [https://huggingface.co/1234Frede](https://huggingface.co/1234Frede)

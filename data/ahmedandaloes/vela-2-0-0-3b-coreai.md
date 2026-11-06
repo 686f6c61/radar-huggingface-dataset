@@ -37,7 +37,7 @@ No se dispone de información sobre el dataset de entrenamiento del modelo base,
 
 - Enrutamiento y puntuación de opciones: genera una puntuación por cada fila `[O]`/`[ABS]` del esquema de entrada (tensor `opt_logits` de forma `(16,)`).
 - Etiquetado a nivel de span: produce `span_logits` de forma `(128, 16)`, es decir, puntuaciones por unidad de palabra para cada etiqueta `[E]`.
-- Clasificación de texto: el pipeline declarado en HuggingFace es `text-classification`.
+- Clasificación de texto: el pipeline declarado en Hugging Face es `text-classification`.
 - Extracción de entidades y tramos relevantes a partir de índices de unidad, siempre que el host decodifique los spans.
 - Cobertura bilingüe limitada: inglés y árabe según los metadatos del repositorio.
 - Ejecución on-device: el grafo está compilado para el runtime Core AI en Apple Silicon, sin dependencia de PyTorch en tiempo de inferencia.
@@ -103,7 +103,7 @@ No se dispone de comparaciones de rendimiento publicadas entre Vela-2.0-0.3B y a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ahmedandaloes/Vela-2.0-0.3B-CoreAI
+- Modelo en Hugging Face: https://huggingface.co/ahmedandaloes/Vela-2.0-0.3B-CoreAI
 - Modelo base upstream: https://huggingface.co/vllm-sr/Vela-2.0-0.3B
 - Perfil del autor: https://huggingface.co/ahmedandaloes
 - Sitio del autor (encargos de conversión de formato): https://ahmedandaloes.com

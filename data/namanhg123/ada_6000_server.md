@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| namanhg123/ada_6000_server (este) | Adaptador sobre 12B / 26B-A4B | No disponible | NER médico vietnamita | No disponible | HuggingFace, 0 descargas |
+| namanhg123/ada_6000_server (este) | Adaptador sobre 12B / 26B-A4B | No disponible | NER médico vietnamita | No disponible | Hugging Face, 0 descargas |
 | google/gemma-4-12B-it | 12B denso | No disponible en esta ficha | Generación general | Términos de Gemma | Modelo base público |
 | google/gemma-4-26B-A4B-it | 26B MoE (4B activos) | No disponible en esta ficha | Generación general | Términos de Gemma | Modelo base público |
 | Adaptadores NER médico vietnamita alternativos | No disponible | No disponible | NER médico | No disponible | No disponible |
@@ -83,7 +83,7 @@ No se dispone de información suficiente para comparar rendimiento con alternati
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/namanhg123/ada_6000_server
+- Repositorio Hugging Face: https://huggingface.co/namanhg123/ada_6000_server
 - Modelo base denso: https://huggingface.co/google/gemma-4-12B-it
 - Modelo base MoE: https://huggingface.co/google/gemma-4-26B-A4B-it
 - No se han encontrado enlaces adicionales (papers, blogs, repos o demos) en la información proporcionada.

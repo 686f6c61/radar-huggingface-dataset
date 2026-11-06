@@ -85,7 +85,7 @@ No disponible. No se han identificado en la información proporcionada instrumen
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Lawless1987/contradiction-probe
+- Repositorio en Hugging Face: https://huggingface.co/Lawless1987/contradiction-probe
 - Documentación del protocolo: `docs/METHOD.md` dentro del repositorio
 - Repositorio relacionado (núcleo gobernado): https://huggingface.co/Lawless1987/covenant
 - Repositorio relacionado (observabilidad): https://huggingface.co/Lawless1987/threefold

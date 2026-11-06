@@ -73,6 +73,6 @@ No disponible. La información proporcionada no incluye datos de rendimiento ni 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/andyjzhao/GeneZip-70M-128K
+- Modelo en Hugging Face: https://huggingface.co/andyjzhao/GeneZip-70M-128K
 - Checkpoint fuente: https://huggingface.co/jzshared/GeneZip-7R-LT-32BPT-128K-100B/tree/08b76c09d7bd5e76cf30ade326838cee7b32d677/checkpoint-24414
 - Código del proyecto GeneZip: https://github.com/AndyJZhao/GeneZip

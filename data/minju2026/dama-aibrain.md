@@ -25,7 +25,7 @@ A pesar de su potencial, la información pública disponible es limitada: no se 
 
 El modelo se basa en la arquitectura Gemma 4, que es un transformer con atención de consultas agrupadas (GQA). Según los datos de un repositorio homónimo, utiliza 35 capas transformer, un tamaño oculto de 1536, 8 cabezas de consulta y 1 cabeza de clave/valor, con un tamaño intermedio de feed-forward de 6144. Esta configuración es típica de los modelos de ~5B parámetros de la familia Gemma y está optimizada para eficiencia en memoria y latencia.
 
-El entrenamiento fue realizado mediante fine-tuning sobre el modelo `unsloth/gemma-4-e2b-it-unsloth-bnb-4bit`, utilizando la librería Unsloth y la biblioteca TRL de HuggingFace. El autor indica que el proceso fue 2 veces más rápido que un entrenamiento convencional gracias a las optimizaciones de Unsloth. Sin embargo, no se proporciona información sobre el conjunto de datos utilizado, el número de tokens de entrenamiento, ni si se aplicaron técnicas como RLHF o DPO. No se han publicado detalles sobre la composición del corpus ni sobre el proceso de alineación.
+El entrenamiento fue realizado mediante fine-tuning sobre el modelo `unsloth/gemma-4-e2b-it-unsloth-bnb-4bit`, utilizando la librería Unsloth y la biblioteca TRL de Hugging Face. El autor indica que el proceso fue 2 veces más rápido que un entrenamiento convencional gracias a las optimizaciones de Unsloth. Sin embargo, no se proporciona información sobre el conjunto de datos utilizado, el número de tokens de entrenamiento, ni si se aplicaron técnicas como RLHF o DPO. No se han publicado detalles sobre la composición del corpus ni sobre el proceso de alineación.
 
 ## Capacidades
 

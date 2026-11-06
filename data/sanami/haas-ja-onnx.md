@@ -106,4 +106,4 @@ Todos derivan del mismo modelo base Haas-ja-v1.0; la elección depende del runti
 - Herramienta de evaluación jacer: https://github.com/third-intelligence/jacer
 - Backend ort (Rust): https://github.com/pykeio/ort
 - Backend tract (Rust): https://github.com/sonos/tract
-- Documentación adicional en el repositorio: BENCHMARKS.md, TECHNICAL.md, rust/README.md y scripts/ (dentro del repo de HuggingFace)
+- Documentación adicional en el repositorio: BENCHMARKS.md, TECHNICAL.md, rust/README.md y scripts/ (dentro del repo de Hugging Face)

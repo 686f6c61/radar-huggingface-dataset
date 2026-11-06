@@ -82,9 +82,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parametros | Contexto | Accuracy (test retenido) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `wsp-bert-insurance-c1-p50` (este) | 55.954.696 | no disponible | 97,92 % | apache-2.0 | HuggingFace, 0 descargas |
-| `sidman007/wsp-bert-insurance-v1-p50` (modelo de partida) | 109.488.392 | no disponible | 98,31 % | no disponible en la informacion | HuggingFace |
-| `google-bert/bert-base-uncased` (base sin afinar) | 109.488.392 | 512 tokens (habitual) | no disponible (no afinado para esta tarea) | apache-2.0 | HuggingFace, ampliamente usado |
+| `wsp-bert-insurance-c1-p50` (este) | 55.954.696 | no disponible | 97,92 % | apache-2.0 | Hugging Face, 0 descargas |
+| `sidman007/wsp-bert-insurance-v1-p50` (modelo de partida) | 109.488.392 | no disponible | 98,31 % | no disponible en la informacion | Hugging Face |
+| `google-bert/bert-base-uncased` (base sin afinar) | 109.488.392 | 512 tokens (habitual) | no disponible (no afinado para esta tarea) | apache-2.0 | Hugging Face, ampliamente usado |
 
 No se dispone de datos de otros clasificadores de seguros comparables en la información proporcionada; la comparación se limita al linaje directo del modelo.
 
@@ -101,7 +101,7 @@ No se dispone de datos de otros clasificadores de seguros comparables en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sidman007/wsp-bert-insurance-c1-p50
+- Modelo en Hugging Face: https://huggingface.co/sidman007/wsp-bert-insurance-c1-p50
 - Modelo de partida: https://huggingface.co/sidman007/wsp-bert-insurance-v1-p50
 - Modelo base: https://huggingface.co/google-bert/bert-base-uncased
 - Repositorio fuente, logs y protocolo: https://github.com/siddharth-ghatti/weight-space-programming-poc

@@ -89,7 +89,7 @@ La comparación es estructural: el adaptador no publica métricas que permitan c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fc91/Llama-3.2-3B_CQoT_MathRetention_20261007_public
+- Modelo en Hugging Face: https://huggingface.co/fc91/Llama-3.2-3B_CQoT_MathRetention_20261007_public
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Repositorio del tokenizador histórico citado: https://huggingface.co/fc91/CQoT_SFT_mix_teacher_repair_round3_Llama-3.2-3B-HPC
 - Licencia Llama 3.2: https://www.llama.com/llama3_2/license/

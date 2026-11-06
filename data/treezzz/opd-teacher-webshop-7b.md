@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`TreezzZ/opd-teacher-webshop-7b` es un fine-tune del modelo base `Qwen/Qwen2.5-7B-Instruct`, publicado por el usuario TreezzZ en HuggingFace. El nombre sugiere una especialización en el ámbito de la enseñanza de tiendas web (webshop), aunque no se proporciona ninguna descripción detallada del dataset de entrenamiento, la metodología de ajuste ni los objetivos específicos del modelo. Al tratarse de un fine-tune de Qwen2.5-7B-Instruct, hereda la arquitectura transformer de 7.610 millones de parámetros con atención GQA, contexto largo de hasta 131.072 tokens y capacidades de generación de texto conversacional.
+`TreezzZ/opd-teacher-webshop-7b` es un fine-tune del modelo base `Qwen/Qwen2.5-7B-Instruct`, publicado por el usuario TreezzZ en Hugging Face. El nombre sugiere una especialización en el ámbito de la enseñanza de tiendas web (webshop), aunque no se proporciona ninguna descripción detallada del dataset de entrenamiento, la metodología de ajuste ni los objetivos específicos del modelo. Al tratarse de un fine-tune de Qwen2.5-7B-Instruct, hereda la arquitectura transformer de 7.610 millones de parámetros con atención GQA, contexto largo de hasta 131.072 tokens y capacidades de generación de texto conversacional.
 
 El modelo se distribuye con licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales, y está disponible en formato safetensors. Actualmente cuenta con cero descargas y cero likes, lo que indica que es un modelo recién publicado y sin adopción comunitaria conocida. La ficha técnica se basa principalmente en los datos del modelo base, ya que la model card del repositorio es una copia literal de la de Qwen2.5-7B-Instruct y no aporta información específica sobre el fine-tune.
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - VRAM estimada para inferencia: en FP16 se necesitan aproximadamente 15-16 GB de VRAM (7,6B parámetros × 2 bytes). Con cuantización de 8 bits se reduce a ~8 GB, y con 4 bits a ~4-5 GB.
 - GPU recomendadas: para FP16, una NVIDIA RTX 4090 (24 GB), A100 (40/80 GB) o H100 (80 GB). Para cuantización 8-bit, una RTX 3080/3090 (10-24 GB) es suficiente. Para 4-bit, una RTX 3060 (12 GB) o similar puede funcionar.
 - Compatibilidad con GPU de consumo: sí, si se usa cuantización (4-bit o 8-bit) cabe en GPUs de gama media-alta como RTX 3060, 3070, 3080, 4060, 4070, etc.
-- Opciones de despliegue: vLLM (recomendado por Qwen para producción), llama.cpp (para CPU/GPU con GGUF), Ollama (si se convierte a GGUF), HuggingFace TGI (Text Generation Inference) y transformers nativo.
+- Opciones de despliegue: vLLM (recomendado por Qwen para producción), llama.cpp (para CPU/GPU con GGUF), Ollama (si se convierte a GGUF), Hugging Face TGI (Text Generation Inference) y transformers nativo.
 - Latencia y throughput: no se dispone de datos específicos para este fine-tune. El modelo base Qwen2.5-7B-Instruct en vLLM con FP16 en A100 alcanza aproximadamente 40-60 tokens/s en generación, pero depende del hardware y la configuración.
 
 ## Comparativa con modelos similares
@@ -79,7 +79,7 @@ La comparativa se limita a los datos públicos de cada modelo. El fine-tune de T
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/TreezzZ/opd-teacher-webshop-7b
+- Repositorio Hugging Face: https://huggingface.co/TreezzZ/opd-teacher-webshop-7b
 - Modelo base Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Blog oficial de Qwen2.5: https://qwenlm.github.io/blog/qwen2.5/
 - Documentacion de Qwen (despliegue con vLLM): https://qwen.readthedocs.io/en/latest/deployment/vllm.html

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Qwen3.8-27B-Continuum es un modelo de lenguaje de 27.000 millones de parametros publicado por el usuario nightmedia en HuggingFace, construido como un merge de varios modelos de la familia Qwen3.6 y Qwen3.8 de terceros. Segun los metadatos de la ficha, se trata de una fusion realizada con mergekit que combina al menos seis modelos base: nbeerbower/Wichtel-Qwen3.6-27B, trohrbaugh/Qwen3.8-27B-heretic-ara, DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1, DavidAU/Qwen3.6-27B-V1.1-FF711-Darker-Hero-GAIN-H2.0, nightmedia/Qwen3.8-27B-Cold-Fusion-FF711-Darker-Hero-GAIN-B y migtissera/Synthia-4-27B. No es por tanto un modelo entrenado desde cero, sino un ensamblaje de pesos orientado a combinar capacidades de razonamiento, codigo y escritura creativa.
+Qwen3.8-27B-Continuum es un modelo de lenguaje de 27.000 millones de parametros publicado por el usuario nightmedia en Hugging Face, construido como un merge de varios modelos de la familia Qwen3.6 y Qwen3.8 de terceros. Segun los metadatos de la ficha, se trata de una fusion realizada con mergekit que combina al menos seis modelos base: nbeerbower/Wichtel-Qwen3.6-27B, trohrbaugh/Qwen3.8-27B-heretic-ara, DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1, DavidAU/Qwen3.6-27B-V1.1-FF711-Darker-Hero-GAIN-H2.0, nightmedia/Qwen3.8-27B-Cold-Fusion-FF711-Darker-Hero-GAIN-B y migtissera/Synthia-4-27B. No es por tanto un modelo entrenado desde cero, sino un ensamblaje de pesos orientado a combinar capacidades de razonamiento, codigo y escritura creativa.
 
 El modelo se presenta con etiquetas que apuntan a decodificacion de cadena de pensamiento larga (long-cot), ajuste por instrucciones (SFT), destilacion con trazas atribuidas a Claude 4.6 y capacidad de escritura de ficcion y roleplay. Declara soporte de contextos de hasta 1M de tokens y 256k de tokens en distintas configuraciones, asi como salidas en bf16 y MLX. Los idiomas declarados son ingles, chino, japones y espanol.
 
-Su relevancia practica es limitada por el estado del repositorio: cero descargas, cero likes en el momento de la consulta, acceso restringido (gated, requiere aceptar condiciones en HuggingFace) y publicacion muy reciente (17 de septiembre de 2026). La licencia declarada es Apache 2.0, aunque al ser un merge conviene verificar la compatibilidad de licencias de todos los modelos de origen antes de cualquier uso comercial.
+Su relevancia practica es limitada por el estado del repositorio: cero descargas, cero likes en el momento de la consulta, acceso restringido (gated, requiere aceptar condiciones en Hugging Face) y publicacion muy reciente (17 de septiembre de 2026). La licencia declarada es Apache 2.0, aunque al ser un merge conviene verificar la compatibilidad de licencias de todos los modelos de origen antes de cualquier uso comercial.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ Su relevancia practica es limitada por el estado del repositorio: cero descargas
 | Licencia | Apache 2.0 (declarada) |
 | Formato de pesos | transformers (safetensors) y MLX segun los tags; no se confirma GGUF |
 | Pipeline declarado | image-text-to-text |
-| Acceso | restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Libreria | transformers |
 
 ## Arquitectura y entrenamiento
@@ -87,7 +87,7 @@ No se dispone de alternativas comparables con datos verificables en la informaci
 - Riesgo de alucinacion: no evaluado. Los modelos con razonamiento explicito largo tienden a producir cadenas de pensamiento plausibles pero incorrectas en tareas factuales; se recomienda validacion externa.
 - Contexto declarado no verificado: los 1M y 256k tokens aparecen solo como tags. No hay confirmacion de que el modelo mantenga calidad en esas longitudes ni de cual es la ventana configurada por defecto.
 - Multilingue limitado a cuatro idiomas (en, zh, ja, es). No hay evidencia de buen rendimiento en otras lenguas, incluidos otros idiomas del Estado espanol.
-- Acceso restringido: es un repositorio gated, por lo que el uso requiere aceptar condiciones en HuggingFace y no puede desplegarse de forma anonima o automatizada sin gestionar el token de acceso.
+- Acceso restringido: es un repositorio gated, por lo que el uso requiere aceptar condiciones en Hugging Face y no puede desplegarse de forma anonima o automatizada sin gestionar el token de acceso.
 - Riesgo de licencia en merges: aunque se declara Apache 2.0, los seis modelos de origen tienen licencias no indicadas en la informacion disponible. En fusiones de pesos, la licencia efectiva puede ser mas restrictiva que la declarada. Verificar cada modelo base antes de uso comercial.
 - Ausencia de validacion: cero descargas y cero likes implican que no existe retroalimentacion de la comunidad sobre calidad, estabilidad o comportamiento en produccion.
 - Capacidad de vision incierta: el pipeline `image-text-to-text` sugiere entrada de imagenes, pero ningun modelo base listado es multimodal de forma evidente, y no se documenta ningun encoder visual. Tratar esta capacidad como no confirmada.
@@ -96,7 +96,7 @@ No se dispone de alternativas comparables con datos verificables en la informaci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nightmedia/Qwen3.8-27B-Continuum
+- Hugging Face: https://huggingface.co/nightmedia/Qwen3.8-27B-Continuum
 - Modelo base: https://huggingface.co/nbeerbower/Wichtel-Qwen3.6-27B
 - Modelo base: https://huggingface.co/trohrbaugh/Qwen3.8-27B-heretic-ara
 - Modelo base: https://huggingface.co/DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1

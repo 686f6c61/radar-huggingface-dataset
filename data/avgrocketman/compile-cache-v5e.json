@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "avgrocketman/compile-cache-v5e",
+  "slug": "avgrocketman-compile-cache-v5e",
+  "author": "avgrocketman",
+  "url": "https://huggingface.co/avgrocketman/compile-cache-v5e",
+  "created_at": "2026-11-06T11:16:31.000Z",
+  "updated_at": "2026-11-06T11:18:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2725218057,
+  "storage_human": "2.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Compile and cache ONNX models in Windows ML | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/windows/ai/new-windows-ml/model-compilation",
+      "snippet": "The Windows ML walkthrough demonstrates the basic compile-on-first-run mechanics by checking whether a compiled artifact exists. It isn't a complete cache-management example. Before you reuse an existing compiled model in an app, apply the compatibility check described in this article. For the compilation API in context, see Compile models."
+    },
+    {
+      "title": "Accelerate model loading on Amazon EKS - Amazon EKS",
+      "url": "https://docs.aws.amazon.com/eks/latest/userguide/ml-inference-fast-model-loading.html",
+      "snippet": "Reduce model loading and compilation time for inference workloads on Amazon EKS by tuning Run:ai Model Streamer concurrency and caching torch.compile artifacts for large models."
+    }
+  ]
+}

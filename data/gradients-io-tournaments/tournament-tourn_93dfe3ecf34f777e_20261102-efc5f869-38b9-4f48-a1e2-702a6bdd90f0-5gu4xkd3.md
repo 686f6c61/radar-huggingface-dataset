@@ -4,7 +4,7 @@
 
 Este repositorio contiene un adaptador PEFT (Parameter-Efficient Fine-Tuning) sobre el modelo base Qwen/Qwen3-32B, publicado por la organizacion `gradients-io-tournaments`. Se trata de un artefacto generado en el contexto de un torneo de fine-tuning (probablemente en la plataforma Gradients.io), identificado con un hash unico de competicion. El repositorio no es un modelo completo, sino un conjunto de pesos de adaptador (presumiblemente LoRA) que debe combinarse con el modelo base Qwen3-32B para su uso.
 
-La model card del autor es la plantilla estandar de HuggingFace sin rellenar: no incluye descripcion, datos de entrenamiento, hiperparametros, evaluacion ni informacion de licencia. Toda la informacion tecnica disponible proviene de los metadatos del repositorio (tags, tamano, modelo base declarado) y de las caracteristicas conocidas del modelo base Qwen3-32B.
+La model card del autor es la plantilla estandar de Hugging Face sin rellenar: no incluye descripcion, datos de entrenamiento, hiperparametros, evaluacion ni informacion de licencia. Toda la informacion tecnica disponible proviene de los metadatos del repositorio (tags, tamano, modelo base declarado) y de las caracteristicas conocidas del modelo base Qwen3-32B.
 
 Su relevancia es limitada fuera del contexto del torneo: se publica como artefacto de competicion, sin documentacion ni garantias de calidad. Es util como ejemplo de adaptador LoRA sobre Qwen3-32B o como candidato a evaluacion, pero no debe considerarse un modelo listo para produccion sin validacion previa.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 |---|---|---|---|---|---|
 | Este adaptador (sobre Qwen3-32B) | Adaptador PEFT sobre 32B | Heredado del base (32 768) | safetensors (PEFT) | No disponible | Minima (plantilla vacia) |
 | Qwen/Qwen3-32B (base) | 32B denso | 32 768 (ampliable con YaRN) | safetensors, GGUF | Apache 2.0 (segun el modelo base) | Completa |
-| Adaptadores LoRA tipicos en HuggingFace | Variable | Heredado del base | safetensors (PEFT) | Variable | Variable |
+| Adaptadores LoRA tipicos en Hugging Face | Variable | Heredado del base | safetensors (PEFT) | Variable | Variable |
 | Modelos densos de ~30B alternativos (p. ej. familia Llama 3.x 70B no comparable por tamano) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La comparativa directa con otros adaptadores del mismo torneo no es posible sin acceso a sus repositorios y metricas, que no se proporcionan.
@@ -82,7 +82,7 @@ La comparativa directa con otros adaptadores del mismo torneo no es posible sin 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/gradients-io-tournaments/tournament-tourn_93dfe3ecf34f777e_20261102-efc5f869-38b9-4f48-a1e2-702a6bdd90f0-5GU4Xkd3
+- Repositorio Hugging Face: https://huggingface.co/gradients-io-tournaments/tournament-tourn_93dfe3ecf34f777e_20261102-efc5f869-38b9-4f48-a1e2-702a6bdd90f0-5GU4Xkd3
 - Modelo base Qwen3-32B: https://huggingface.co/Qwen/Qwen3-32B
 - Libreria PEFT: https://github.com/huggingface/peft
 - Paper de referencia citado en la model card (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700

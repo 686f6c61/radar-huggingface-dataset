@@ -70,5 +70,5 @@ No se dispone de información suficiente para una comparativa rigurosa con otros
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/Quipuai/quipu-0.8b-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/Quipuai/quipu-0.8b-GGUF
 - Modelo base (safetensors): https://huggingface.co/Quipuai/quipu-0.8b

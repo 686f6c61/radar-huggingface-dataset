@@ -22,7 +22,7 @@ La relevancia de esta publicacion es practica: si la cifra de parametros se conf
 | Formato de pesos | GGUF |
 | Modelo base | reflection/Beam-1.0-501B-A23B |
 | Tipo de publicacion | cuantizacion de terceros (no es un modelo entrenado por DevQuasar) |
-| Fecha de creacion en HuggingFace | 2026-10-16 |
+| Fecha de creacion en Hugging Face | 2026-10-16 |
 
 ## Arquitectura y entrenamiento
 
@@ -40,7 +40,7 @@ Respecto al proceso de cuantizacion, la model card no especifica los niveles GGU
 - Capacidades de vision o audio: no disponible; la etiqueta del repositorio es exclusivamente de generacion de texto.
 - Tool calling / function calling: no disponible; requiere verificar la plantilla de chat incluida en el GGUF.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible; el campo de idiomas aparece vacio en la ficha de HuggingFace.
+- Capacidades multilingues: no disponible; el campo de idiomas aparece vacio en la ficha de Hugging Face.
 - Modo de razonamiento explicito (thinking mode): no disponible.
 - Ejecucion en CPU y GPU mixta: capacidad derivada del formato GGUF, que permite repartir capas entre memoria de video y memoria del sistema.
 
@@ -87,7 +87,7 @@ Advertencia: los datos de las tres alternativas corresponden a cifras publicas a
 
 ## Limitaciones y advertencias
 
-- Licencia desconocida: al no indicarse licencia en la ficha de HuggingFace, no puede asumirse permiso para uso comercial. Es imprescindible consultar la licencia del modelo base reflection/Beam-1.0-501B-A23B antes de cualquier despliegue productivo.
+- Licencia desconocida: al no indicarse licencia en la ficha de Hugging Face, no puede asumirse permiso para uso comercial. Es imprescindible consultar la licencia del modelo base reflection/Beam-1.0-501B-A23B antes de cualquier despliegue productivo.
 - Ausencia total de benchmarks: no hay evidencia publicada sobre calidad de generacion, razonamiento, codigo o multilingue, ni sobre la degradacion introducida por la cuantizacion.
 - Perdida de calidad por cuantizacion: en modelos de este tamano, los niveles de cuantizacion bajos (2-4 bits) pueden degradar de forma apreciable el razonamiento y aumentar la tasa de alucinacion. Se recomienda validar con tareas propias.
 - Riesgo de alucinacion: inherente a cualquier modelo generativo de este tipo; no existe documentacion sobre mitigaciones aplicadas (RLHF, filtros de seguridad).
@@ -101,9 +101,9 @@ Advertencia: los datos de las tres alternativas corresponden a cifras publicas a
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/DevQuasar/reflection.Beam-1.0-501B-A23B-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/DevQuasar/reflection.Beam-1.0-501B-A23B-GGUF
 - Modelo base: https://huggingface.co/reflection/Beam-1.0-501B-A23B
-- Perfil del publicador en HuggingFace: https://huggingface.co/DevQuasar
+- Perfil del publicador en Hugging Face: https://huggingface.co/DevQuasar
 - Sitio del publicador: https://devquasar.com
 - Repositorio del publicador en GitHub: https://github.com/csabakecskemeti/devquasar
 - Pagina de donaciones del publicador: https://ko-fi.com/L4L416YX7C

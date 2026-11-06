@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FukaKikuchi-Lora es un LoRA de personaje para modelos de difusión SDXL, concretamente entrenado sobre el checkpoint waiIllustriousSDXL v17, que reproduce el aspecto del personaje Fuka Kikuchi (菊池风香) de la serie *Bottom-tier Character Tomozaki*. Lo publica el usuario abbuibuibui como derivado no oficial, con fines de generación de imágenes anime, y se distribuye en formato de pesos diffusers junto a un dataset de entrenamiento abierto en el mismo espacio de HuggingFace.
+FukaKikuchi-Lora es un LoRA de personaje para modelos de difusión SDXL, concretamente entrenado sobre el checkpoint waiIllustriousSDXL v17, que reproduce el aspecto del personaje Fuka Kikuchi (菊池风香) de la serie *Bottom-tier Character Tomozaki*. Lo publica el usuario abbuibuibui como derivado no oficial, con fines de generación de imágenes anime, y se distribuye en formato de pesos diffusers junto a un dataset de entrenamiento abierto en el mismo espacio de Hugging Face.
 
 El repositorio incluye siete conjuntos de pesos correspondientes a las épocas E1 a E7 del entrenamiento, de los cuales el autor recomienda E6 como opción por defecto a fuerza 0.8. Cada archivo pesa 456.495.956 bytes (unos 456 MB), y el repositorio completo ocupa 3,2 GB. El modelo está pensado para integrarse en flujos de trabajo de ComfyUI o Auto1111 con checkpoints de la familia Illustrious o NoobAI.
 
@@ -69,7 +69,7 @@ No se dispone de información sobre otros LoRAs de personaje comparables en la d
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FukaKikuchi-Lora (E6) | no disponible | no aplica | evaluación cualitativa del autor | creativeml-openrail-m | HuggingFace |
+| FukaKikuchi-Lora (E6) | no disponible | no aplica | evaluación cualitativa del autor | creativeml-openrail-m | Hugging Face |
 | Alternativas de personaje Illustrious | no disponible | no aplica | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -85,7 +85,7 @@ No se dispone de información sobre otros LoRAs de personaje comparables en la d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abbuibuibui/FukaKikuchi-Lora
+- Modelo en Hugging Face: https://huggingface.co/abbuibuibui/FukaKikuchi-Lora
 - Dataset de entrenamiento: https://huggingface.co/datasets/abbuibuibui/FukaKikuchi-Dataset
 - Notas de evaluación en chino: `evaluation/横向测评记录.md` (incluido en el repositorio)
 - Checkpoint base: waiIllustriousSDXL v17 (referenciado en la model card; enlace no disponible en la información proporcionada)

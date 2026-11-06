@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`moriipiri/chess-grpo-qwen3-0.6b-lora` es un ajuste fino del modelo Qwen3-0.6B publicado por el usuario moriipiri en HuggingFace. Se trata de un modelo derivado de un transformer decoder-only denso de aproximadamente 600 millones de parámetros, entrenado mediante GRPO (Group Relative Policy Optimization), la variante de aprendizaje por refuerzo introducida en DeepSeekMath y disponible en la librería TRL. El nombre del repositorio sugiere un entrenamiento orientado al dominio del ajedrez, aunque la model card no documenta ni el conjunto de datos ni la tarea concreta de recompensa.
+`moriipiri/chess-grpo-qwen3-0.6b-lora` es un ajuste fino del modelo Qwen3-0.6B publicado por el usuario moriipiri en Hugging Face. Se trata de un modelo derivado de un transformer decoder-only denso de aproximadamente 600 millones de parámetros, entrenado mediante GRPO (Group Relative Policy Optimization), la variante de aprendizaje por refuerzo introducida en DeepSeekMath y disponible en la librería TRL. El nombre del repositorio sugiere un entrenamiento orientado al dominio del ajedrez, aunque la model card no documenta ni el conjunto de datos ni la tarea concreta de recompensa.
 
 El interés de esta ficha es acotado: no es un modelo de propósito general ni compite con los modelos frontera, sino un ejemplo de aplicación de RL (GRPO) sobre un modelo pequeño, reproducible con las versiones de framework declaradas (TRL 1.15.0, Transformers 5.19.0, PyTorch 2.14.1). Resulta relevante para quien quiera estudiar pipelines de RLHF ligero o de razonamiento con recompensas verificables en hardware de consumo.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Naturaleza | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| chess-grpo-qwen3-0.6b-lora | ~0,6B (base) | No disponible (base: 32.768) | Ajuste GRPO de nicho | No disponible (campo sin cumplimentar) | HuggingFace, 0 descargas |
-| Qwen/Qwen3-0.6B | ~0,6B | 32.768 tokens nativos | Modelo base denso, multilingüe | Apache-2.0 | HuggingFace, ampliamente usado |
-| Qwen/Qwen2.5-0.5B-Instruct | ~0,5B | 32.768 tokens | Denso instructivo | Apache-2.0 | HuggingFace |
-| HuggingFaceTB/SmolLM2-1.7B-Instruct | ~1,7B | 8.192 tokens | Denso instructivo | Apache-2.0 | HuggingFace |
+| chess-grpo-qwen3-0.6b-lora | ~0,6B (base) | No disponible (base: 32.768) | Ajuste GRPO de nicho | No disponible (campo sin cumplimentar) | Hugging Face, 0 descargas |
+| Qwen/Qwen3-0.6B | ~0,6B | 32.768 tokens nativos | Modelo base denso, multilingüe | Apache-2.0 | Hugging Face, ampliamente usado |
+| Qwen/Qwen2.5-0.5B-Instruct | ~0,5B | 32.768 tokens | Denso instructivo | Apache-2.0 | Hugging Face |
+| HuggingFaceTB/SmolLM2-1.7B-Instruct | ~1,7B | 8.192 tokens | Denso instructivo | Apache-2.0 | Hugging Face |
 
 La comparación relevante es contra el propio modelo base: este fine-tune no documenta mejoras medibles, mientras que Qwen3-0.6B ofrece contexto de 32.768 tokens, licencia Apache-2.0 explícita y soporte oficial de la familia Qwen. Los datos de los modelos comparados provienen de su documentación pública, no de la información proporcionada para este repositorio.
 
@@ -87,7 +87,7 @@ La comparación relevante es contra el propio modelo base: este fine-tune no doc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/moriipiri/chess-grpo-qwen3-0.6b-lora
+- Modelo en Hugging Face: https://huggingface.co/moriipiri/chess-grpo-qwen3-0.6b-lora
 - Modelo base Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Paper de GRPO (DeepSeekMath): https://huggingface.co/papers/2402.03300 — arXiv:2402.03300
 - Repositorio de TRL: https://github.com/huggingface/trl

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Stable Diffusion XL (SDXL) base 1.0 es un modelo de difusion latente para generacion de imagenes a partir de texto, desarrollado originalmente por Stability AI. Esta ficha corresponde a la copia alojada por el usuario Omulsmecher en HuggingFace, que replica los pesos oficiales de `stabilityai/stable-diffusion-xl-base-1.0` bajo la licencia CreativeML Open RAIL++-M. El modelo resuelve la tarea de sintesis text-to-image de alta resolucion (hasta 1024x1024) y se ha convertido en una referencia de la comunidad por su equilibrio entre calidad, ecosistema de herramientas (diffusers, ComfyUI, Automatic1111) y disponibilidad de pesos abiertos.
+Stable Diffusion XL (SDXL) base 1.0 es un modelo de difusion latente para generacion de imagenes a partir de texto, desarrollado originalmente por Stability AI. Esta ficha corresponde a la copia alojada por el usuario Omulsmecher en Hugging Face, que replica los pesos oficiales de `stabilityai/stable-diffusion-xl-base-1.0` bajo la licencia CreativeML Open RAIL++-M. El modelo resuelve la tarea de sintesis text-to-image de alta resolucion (hasta 1024x1024) y se ha convertido en una referencia de la comunidad por su equilibrio entre calidad, ecosistema de herramientas (diffusers, ComfyUI, Automatic1111) y disponibilidad de pesos abiertos.
 
 Tecnicamente, SDXL combina un UNet de difusion con dos codificadores de texto fijos (OpenCLIP-ViT/G y CLIP-ViT/L), lo que le permite manejar prompts mas ricos que sus predecesores. El repositorio contiene 2.567.463.684 parametros en formato safetensors, con variantes fp16 y onnx, y un tamano total de 76,9 GB. La arquitectura sigue el paradigma de "ensemble of experts": el modelo base genera latentes ruidosos y opcionalmente se acopla a un refinador especializado (`stable-diffusion-xl-refiner-1.0`) para las ultimas etapas de denoising.
 
@@ -70,10 +70,10 @@ La model card incluye una grafica de preferencia de usuarios que compara SDXL (c
 
 | Modelo | Parametros | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| SDXL base 1.0 (este) | 2.567 M | 1024x1024 (ampliable con refiner) | openrail++ | HuggingFace, diffusers, ONNX |
-| Stable Diffusion 1.5 | no disponible en la informacion | 512x512 | CreativeML OpenRAIL-M | HuggingFace, amplio ecosistema |
-| Stable Diffusion 2.1 | no disponible en la informacion | 768x768 | CreativeML OpenRAIL++-M | HuggingFace |
-| SDXL 0.9 | no disponible en la informacion | 1024x1024 | licencia de investigacion | HuggingFace (historico) |
+| SDXL base 1.0 (este) | 2.567 M | 1024x1024 (ampliable con refiner) | openrail++ | Hugging Face, diffusers, ONNX |
+| Stable Diffusion 1.5 | no disponible en la informacion | 512x512 | CreativeML OpenRAIL-M | Hugging Face, amplio ecosistema |
+| Stable Diffusion 2.1 | no disponible en la informacion | 768x768 | CreativeML OpenRAIL++-M | Hugging Face |
+| SDXL 0.9 | no disponible en la informacion | 1024x1024 | licencia de investigacion | Hugging Face (historico) |
 
 Segun la model card, SDXL base supera en preferencia de usuarios a SD 1.5, SD 2.1 y SDXL 0.9. No se dispone de comparativas cuantitativas con modelos posteriores (SD3, Flux) en la informacion proporcionada.
 
@@ -89,7 +89,7 @@ Segun la model card, SDXL base supera en preferencia de usuarios a SD 1.5, SD 2.
 
 ## Enlaces
 
-- HuggingFace (esta copia): https://huggingface.co/Omulsmecher/stable-diffusion-xl-base-1.0
+- Hugging Face (esta copia): https://huggingface.co/Omulsmecher/stable-diffusion-xl-base-1.0
 - Repositorio oficial: https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
 - Refinador oficial: https://huggingface.co/stabilityai/stable-diffusion-xl-refiner-1.0
 - Informe tecnico SDXL (arXiv): https://arxiv.org/abs/2307.01952

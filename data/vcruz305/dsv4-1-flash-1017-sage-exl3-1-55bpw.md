@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Esta ficha corresponde a una cuantización comunitaria del modelo DeepSeek-V4.1-Flash-1017 de DeepSeek, publicada por el usuario vcruz305 en HuggingFace. No se trata de un modelo nuevo, sino de un pack EXL3 (formato de ExLlamaV3) de 1,55 bits por peso (bpw) que permite ejecutar el modelo original en hardware con memoria unificada de 128 GB, como Mac Studio o dispositivos equivalentes. La cuantización emplea SAGE, un método propio de precisión mixta del autor en el que cada tensor usa un valor de compresión (K) distinto, optimizando la relación entre tamaño y fidelidad.
+Esta ficha corresponde a una cuantización comunitaria del modelo DeepSeek-V4.1-Flash-1017 de DeepSeek, publicada por el usuario vcruz305 en Hugging Face. No se trata de un modelo nuevo, sino de un pack EXL3 (formato de ExLlamaV3) de 1,55 bits por peso (bpw) que permite ejecutar el modelo original en hardware con memoria unificada de 128 GB, como Mac Studio o dispositivos equivalentes. La cuantización emplea SAGE, un método propio de precisión mixta del autor en el que cada tensor usa un valor de compresión (K) distinto, optimizando la relación entre tamaño y fidelidad.
 
 El modelo base es un MoE con arquitectura CED de DeepSeek, con 256.622.688.722 parámetros totales (dato real extraído de los safetensors), 40 capas y 384 expertos enrutados más 1 experto compartido con top-6. Es un modelo multimodal (image-text-to-text) con licencia MIT, lo que lo hace especialmente atractivo para uso comercial sin restricciones.
 

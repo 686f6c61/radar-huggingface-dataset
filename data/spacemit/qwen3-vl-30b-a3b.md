@@ -66,8 +66,8 @@ La comparativa se centra en el despliegue frente al modelo original, ya que no s
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SpacemiT/Qwen3-VL-30B-A3B (este paquete) | 30B totales, 3B activos | no disponible | GGUF Q4_1 + ONNX | Apache-2.0 | Repositorio HuggingFace |
-| Qwen/Qwen3-VL-30B-A3B-Instruct (original) | 30B totales, 3B activos | no disponible (el modelo original soporta contexto largo, pero no se confirma aquí) | safetensors (presumiblemente) | Apache-2.0 | HuggingFace oficial |
+| SpacemiT/Qwen3-VL-30B-A3B (este paquete) | 30B totales, 3B activos | no disponible | GGUF Q4_1 + ONNX | Apache-2.0 | Repositorio Hugging Face |
+| Qwen/Qwen3-VL-30B-A3B-Instruct (original) | 30B totales, 3B activos | no disponible (el modelo original soporta contexto largo, pero no se confirma aquí) | safetensors (presumiblemente) | Apache-2.0 | Hugging Face oficial |
 
 No se dispone de información sobre otros paquetes de despliegue para K1/K3 de modelos similares, por lo que la comparativa se limita a la diferencia entre el paquete optimizado y el modelo original. La principal diferencia es el formato de pesos y la integración con el hardware específico, no el rendimiento intrínseco del modelo.
 
@@ -83,8 +83,8 @@ No se dispone de información sobre otros paquetes de despliegue para K1/K3 de m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SpacemiT/Qwen3-VL-30B-A3B
-- Modelo original en HuggingFace: https://huggingface.co/Qwen/Qwen3-VL-30B-A3B-Instruct
+- Repositorio Hugging Face: https://huggingface.co/SpacemiT/Qwen3-VL-30B-A3B
+- Modelo original en Hugging Face: https://huggingface.co/Qwen/Qwen3-VL-30B-A3B-Instruct
 - Informe técnico de Qwen3-VL (arXiv): https://arxiv.org/abs/2511.21631
 - Anuncio oficial de Qwen3-VL: https://qwen.ai/blog?id=qwen3-vl
 - Runtime ONNX de SpacemiT: https://github.com/spacemit-com/onnxruntime/releases

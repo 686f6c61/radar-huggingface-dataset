@@ -84,11 +84,11 @@ Métricas derivadas de la tabla anterior (cálculo aritmético propio, no public
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SafeSD-probe-v1.1 | Sonda de clasificación sobre Qwen3-0.6B | ~0,6 B en backbone congelado; 513 parámetros entrenados | No disponible | No disponible (conserva `UPSTREAM_LICENSE` de Qwen3-0.6B) | HuggingFace, 0 descargas, sin pipeline declarado |
-| SafeSD-probe-v1 | Sonda de clasificación (predecesor directo) | Misma arquitectura; readout previo al refinamiento | No disponible | No disponible | HuggingFace |
-| Qwen/Qwen3-0.6B | Modelo generativo base | 0,6 B | No disponible en la información proporcionada | La de su model card upstream | HuggingFace, ampliamente distribuido |
-| Filtros de prompt injection tipo Prompt Guard (Meta) | Clasificador dedicado | ~86 M (Prompt Guard 2) | No disponible | Licencia de la familia Llama | HuggingFace, amplia adopción |
-| Llama Guard 3 (Meta) | Modelo generativo de moderación | 8 B | 128 k (según ficha del fabricante) | Licencia comunitaria Llama 3.1 | HuggingFace, amplia adopción |
+| SafeSD-probe-v1.1 | Sonda de clasificación sobre Qwen3-0.6B | ~0,6 B en backbone congelado; 513 parámetros entrenados | No disponible | No disponible (conserva `UPSTREAM_LICENSE` de Qwen3-0.6B) | Hugging Face, 0 descargas, sin pipeline declarado |
+| SafeSD-probe-v1 | Sonda de clasificación (predecesor directo) | Misma arquitectura; readout previo al refinamiento | No disponible | No disponible | Hugging Face |
+| Qwen/Qwen3-0.6B | Modelo generativo base | 0,6 B | No disponible en la información proporcionada | La de su model card upstream | Hugging Face, ampliamente distribuido |
+| Filtros de prompt injection tipo Prompt Guard (Meta) | Clasificador dedicado | ~86 M (Prompt Guard 2) | No disponible | Licencia de la familia Llama | Hugging Face, amplia adopción |
+| Llama Guard 3 (Meta) | Modelo generativo de moderación | 8 B | 128 k (según ficha del fabricante) | Licencia comunitaria Llama 3.1 | Hugging Face, amplia adopción |
 
 No existen comparaciones directas publicadas entre esta sonda y las alternativas de la tabla: los datos de las filas de Meta proceden de fichas públicas de sus fabricantes y no se han verificado contra SafeSD-probe-v1.1. La diferencia funcional clave es que esta sonda clasifica comportamiento ejecutado de agentes (rondas y tool calls), no contenido textual genérico.
 
@@ -107,7 +107,7 @@ No existen comparaciones directas publicadas entre esta sonda y las alternativas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/XenonGas/SafeSD-probe-v1.1
+- Modelo en Hugging Face: https://huggingface.co/XenonGas/SafeSD-probe-v1.1
 - Modelo predecesor: https://huggingface.co/XenonGas/SafeSD-probe-v1
 - Perfil del autor (XenonGas / Jiachen Liu): https://huggingface.co/XenonGas
 - Backbone upstream Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B

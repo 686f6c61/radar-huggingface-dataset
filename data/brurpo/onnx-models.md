@@ -94,8 +94,8 @@ No se dispone de datos de rendimiento publicados para los modelos originales en 
 
 ## Enlaces
 
-- [Repositorio HuggingFace: brurpo/onnx-models](https://huggingface.co/brurpo/onnx-models)
-- [Árbol del repositorio en HuggingFace](https://huggingface.co/brurpo/onnx-models/tree/main)
+- [Repositorio Hugging Face: brurpo/onnx-models](https://huggingface.co/brurpo/onnx-models)
+- [Árbol del repositorio en Hugging Face](https://huggingface.co/brurpo/onnx-models/tree/main)
 - [Proyecto original Lucida: egeorcun/lucida](https://huggingface.co/egeorcun/lucida)
 - [Proyecto original FeyNoBg: feyninc/FeyNobg](https://huggingface.co/feyninc/FeyNobg)
 - [Proyecto original BiRefNet HR Matting: ZhengPeng7/BiRefNet_HR-matting](https://huggingface.co/ZhengPeng7/BiRefNet_HR-matting)

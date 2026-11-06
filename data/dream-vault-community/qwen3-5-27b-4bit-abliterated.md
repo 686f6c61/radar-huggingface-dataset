@@ -95,7 +95,7 @@ Como alternativas de la misma categoria (VLM de aproximadamente 27B ejecutables 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dream-vault-community/Qwen3.5-27B-4bit-Abliterated
+- Repositorio en Hugging Face: https://huggingface.co/dream-vault-community/Qwen3.5-27B-4bit-Abliterated
 - Modelo base (upstream inmediato): https://huggingface.co/mlx-community/Huihui-Qwen3.5-27B-Claude-4.6-Opus-abliterated-4bit/tree/75bfb86c7d8e55a8b9aba658b03729abc7680922
 - Revision fijada del origen: 75bfb86c7d8e55a8b9aba658b03729abc7680922
 - Licencia original de Qwen3.5-27B: https://huggingface.co/Qwen/Qwen3.5-27B/blob/fc05daec18b0a78c049392ed2e771dde82bdf654/LICENSE

@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks para establecer una comparación cuantitati
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/IsValorum/Qwen3.8-27B-TTURBO-709-Uncen-VAL-APEX-I-MiniPlus-V3-GGUF
+- Repositorio Hugging Face: https://huggingface.co/IsValorum/Qwen3.8-27B-TTURBO-709-Uncen-VAL-APEX-I-MiniPlus-V3-GGUF
 - Modelo base: https://huggingface.co/DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored
 - Variante NanoPlus V3: https://huggingface.co/IsValorum/Qwen3.8-27B-TTURBO-709-Uncen-VAL-APEX-I-NanoPlus-V3-GGUF
 - Colección MiniPlus Standard 27B: https://huggingface.co/collections/IsValorum/val-apex-miniplus-standard-27b-6acfec54ca4ce4cf5cd5bdb6

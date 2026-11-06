@@ -82,9 +82,9 @@ El autor indica que los fallos restantes son compartidos con el modelo base (par
 
 | Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| Prometheus-Mistral-Nemo-12B | 12,2 B (denso) | No disponible | Apache 2.0 | Cirugía de pesos autónoma sobre Mistral-Nemo | HuggingFace, 117 descargas |
-| Mistral-Nemo-Instruct-2407 | 12,2 B (denso) | No disponible en esta ficha | Apache 2.0 | Instrucción estándar de Mistral AI | HuggingFace, ampliamente adoptado |
-| Mistral-Nemo-Base-2407 | 12,2 B (denso) | No disponible en esta ficha | Apache 2.0 | Modelo base sin instrucción | HuggingFace |
+| Prometheus-Mistral-Nemo-12B | 12,2 B (denso) | No disponible | Apache 2.0 | Cirugía de pesos autónoma sobre Mistral-Nemo | Hugging Face, 117 descargas |
+| Mistral-Nemo-Instruct-2407 | 12,2 B (denso) | No disponible en esta ficha | Apache 2.0 | Instrucción estándar de Mistral AI | Hugging Face, ampliamente adoptado |
+| Mistral-Nemo-Base-2407 | 12,2 B (denso) | No disponible en esta ficha | Apache 2.0 | Modelo base sin instrucción | Hugging Face |
 
 La comparación relevante es contra su propio base: mismo tamaño, misma licencia y misma tokenización, con la diferencia de las modificaciones de pesos y el proceso de validación funcional. Frente a otros modelos de 12 B de la misma categoría (por ejemplo, variantes de Llama 3.1 8B o Qwen2.5 14B), no hay datos de benchmarks en la información disponible que permitan una comparación rigurosa.
 
@@ -102,7 +102,7 @@ La comparación relevante es contra su propio base: mismo tamaño, misma licenci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ApolloRaines/Prometheus-Mistral-Nemo-12B
+- Modelo en Hugging Face: https://huggingface.co/ApolloRaines/Prometheus-Mistral-Nemo-12B
 - Modelo base: https://huggingface.co/mistralai/Mistral-Nemo-Instruct-2407
 - Herramienta jBlaze citada por el autor: https://jblaze.dev
 - Paper, blog o repositorio de Project Prometheus: no disponible en la información proporcionada.

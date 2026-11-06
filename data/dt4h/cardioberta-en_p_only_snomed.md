@@ -73,7 +73,7 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DT4H/CardioBERTa.en_P_only_snomed
+- Modelo en Hugging Face: https://huggingface.co/DT4H/CardioBERTa.en_P_only_snomed
 - Modelo base CardioBERTa.en: https://huggingface.co/DT4H/CardioBERTa.en
 - Proyecto DataTools4Heart (DT4H): https://datatools4heart.eu/ (no confirmado, pero el grant agreement 101057849 corresponde a la UE)
 - Referencia: Danu et al., *CardioLM - a multilingual suite of small language models for the cardiology domain* (no se proporciona enlace directo).

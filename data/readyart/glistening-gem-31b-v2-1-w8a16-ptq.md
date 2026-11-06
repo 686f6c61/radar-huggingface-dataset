@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Glistening-Gem-31B-v2.1-W8A16-PTQ es una cuantización en pesos de 8 bits y activaciones de 16 bits (W8A16) del modelo merge Glistening-Gem-31B-v2.1, desarrollado por ReadyArt. El modelo original, creado por sophosympatheia, es un merge basado en arquitecturas Gemma (según las etiquetas de HuggingFace) y está pensado para generación de texto general, aunque la model card advierte que contiene contenido NSFW y no es apto para todos los públicos. Esta versión cuantizada utiliza la técnica PTQ (post-training quantization) y el formato compressed-tensors, lo que reduce el tamaño de los pesos manteniendo las activaciones en 16 bits.
+Glistening-Gem-31B-v2.1-W8A16-PTQ es una cuantización en pesos de 8 bits y activaciones de 16 bits (W8A16) del modelo merge Glistening-Gem-31B-v2.1, desarrollado por ReadyArt. El modelo original, creado por sophosympatheia, es un merge basado en arquitecturas Gemma (según las etiquetas de Hugging Face) y está pensado para generación de texto general, aunque la model card advierte que contiene contenido NSFW y no es apto para todos los públicos. Esta versión cuantizada utiliza la técnica PTQ (post-training quantization) y el formato compressed-tensors, lo que reduce el tamaño de los pesos manteniendo las activaciones en 16 bits.
 
 A pesar del nombre "31B", los parámetros totales reales según los safetensors son 10.946.130.276 (~10,9 mil millones), lo que sugiere que el modelo base es un merge de modelos de menor tamaño, probablemente de la familia Gemma. El repositorio ocupa 36,6 GB, un tamaño considerablemente mayor al esperado para 10,9B parámetros en 8 bits, lo que podría indicar la inclusión de archivos adicionales o versiones sin cuantizar. La licencia es Apache 2.0, permitiendo uso comercial y modificación.
 
@@ -67,5 +67,5 @@ No se dispone de información sobre modelos comparables. El nombre "31B" sugiere
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/ReadyArt/Glistening-Gem-31B-v2.1-W8A16-PTQ
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/ReadyArt/Glistening-Gem-31B-v2.1-W8A16-PTQ
 - Modelo base (original): https://huggingface.co/sophosympatheia/Glistening-Gem-31B-v2.1

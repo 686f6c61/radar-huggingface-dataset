@@ -18,7 +18,7 @@ Su relevancia practica esta en el coste de inferencia: en tareas de agente y gen
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | GGUF en varios niveles generados con llama.cpp; se menciona el uso de imatrix. Existe ademas un repositorio hermano con cuantizaciones GSQ-RCO. Niveles concretos: no disponibles |
 | Idiomas soportados | No disponible |
-| Licencia | swift-open-license-1.0 (etiquetada como `other` en HuggingFace); incluye licencia empresarial |
+| Licencia | swift-open-license-1.0 (etiquetada como `other` en Hugging Face); incluye licencia empresarial |
 | Formato de pesos | GGUF (llama.cpp) |
 | Pipeline declarado | image-text-to-text |
 | Modelo base | ukisai/Swift-1.5-Qwen3.8-27b (relacion: quantized) |
@@ -89,9 +89,9 @@ Las cifras de VRAM siguientes son estimaciones a partir de los 27,3 B de paramet
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Swift 1.5 Qwen3.8-27B (GGUF) | ~27,3 B | No disponible | 58,5 % menos tokens de pensamiento y +0,35 % agregado frente al base, segun el autor | swift-open-license-1.0 (con licencia empresarial) | GGUF en HuggingFace |
-| Qwen3.8-27B (modelo fundacional) | No disponible en la informacion proporcionada | No disponible | Linea base de la comparativa del autor; 104,6 min en la demo de generacion de juego | No disponible | HuggingFace |
-| Swift 1.0 Qwen3.8-27B | No disponible | No disponible | Segun el autor, Swift 1.5 lo supera en rendimiento global, especialmente en codigo y tareas agenticas, con menos tokens de pensamiento | No disponible | HuggingFace, 350k+ descargas declaradas |
+| Swift 1.5 Qwen3.8-27B (GGUF) | ~27,3 B | No disponible | 58,5 % menos tokens de pensamiento y +0,35 % agregado frente al base, segun el autor | swift-open-license-1.0 (con licencia empresarial) | GGUF en Hugging Face |
+| Qwen3.8-27B (modelo fundacional) | No disponible en la informacion proporcionada | No disponible | Linea base de la comparativa del autor; 104,6 min en la demo de generacion de juego | No disponible | Hugging Face |
+| Swift 1.0 Qwen3.8-27B | No disponible | No disponible | Segun el autor, Swift 1.5 lo supera en rendimiento global, especialmente en codigo y tareas agenticas, con menos tokens de pensamiento | No disponible | Hugging Face, 350k+ descargas declaradas |
 
 No se dispone de datos de contexto, licencia ni benchmarks detallados de los modelos alternativos en la informacion proporcionada, ni de comparaciones con otros modelos de tamano similar de la familia Qwen.
 
@@ -102,7 +102,7 @@ No se dispone de datos de contexto, licencia ni benchmarks detallados de los mod
 - Idiomas soportados: no se declaran. Al derivar de Qwen3.8-27B, el soporte multilingue dependera del modelo fundacional, pero no hay confirmacion para este ajuste.
 - Longitud de contexto: no declarada. Es un dato critico para planificar despliegues con contexto largo y no puede inferirse del repositorio GGUF.
 - Capacidad multimodal incierta: la pipeline declarada es image-text-to-text, pero no se confirma que las cuantizaciones GGUF incluyan el proyector multimodal necesario para procesar imagenes en llama.cpp.
-- Licencia: `swift-open-license-1.0` esta etiquetada como `other` en HuggingFace y no es una licencia open source reconocida. El autor menciona explicitamente un regimen de licencia empresarial, por lo que es obligatorio leer el texto completo antes de cualquier uso comercial.
+- Licencia: `swift-open-license-1.0` esta etiquetada como `other` en Hugging Face y no es una licencia open source reconocida. El autor menciona explicitamente un regimen de licencia empresarial, por lo que es obligatorio leer el texto completo antes de cualquier uso comercial.
 - Traccion limitada: 68 descargas y 14 likes en el momento de la consulta, con una comunidad pequena. No hay garantia de mantenimiento a largo plazo ni de soporte.
 - Benchmarks no verificables: los resultados de la tabla de evaluacion no estan disponibles en la informacion proporcionada, y las cifras de mejora son afirmaciones del propio autor sin replicacion independiente conocida.
 - Coste de almacenamiento: el repositorio completo ocupa 356,9 GB, lo que exige descargar selectivamente el nivel de cuantizacion deseado.
@@ -110,7 +110,7 @@ No se dispone de datos de contexto, licencia ni benchmarks detallados de los mod
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27B-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27B-GGUF
 - Modelo base (pesos completos): https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b
 - Cuantizaciones GSQ-RCO GGUF: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-GSQ-RCO-GGUF
 - Swift 1.0: https://huggingface.co/ukisai/Swift-Qwen3.8-27b

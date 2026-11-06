@@ -84,11 +84,11 @@ No hay datos de rendimiento publicados para ninguno de estos modelos, por lo que
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CloudGoat/Qwen3.5-0.8B-JP-RoMM-Merged
+- Modelo en Hugging Face: https://huggingface.co/CloudGoat/Qwen3.5-0.8B-JP-RoMM-Merged
 - Modelo base Holy-fox/Qwen3.5-0.8B-JP: https://huggingface.co/Holy-fox/Qwen3.5-0.8B-JP
 - Modelo base CloudGoat/Qwen3.5-0.8B-JP-Tuned-v1.1: https://huggingface.co/CloudGoat/Qwen3.5-0.8B-JP-Tuned-v1.1
 - Version anterior del fine-tune (v1.0): https://huggingface.co/CloudGoat/Qwen3.5-0.8B-JP-Tuned-v1.0
-- Qwen3.5-0.8B original en HuggingFace: https://huggingface.co/Qwen/Qwen3.5-0.8B
+- Qwen3.5-0.8B original en Hugging Face: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Qwen3.5-0.8B en Ollama: https://ollama.com/library/qwen3.5:0.8b
 - Qwen3.5-0.8B en Qualcomm AI Hub: https://aihub.qualcomm.com/models/qwen3_5_0_8b
 - Blog de referencia sobre Qwen3.5 0.8B: https://codersera.com/blog/run-and-benchmark-qwen35-08b/

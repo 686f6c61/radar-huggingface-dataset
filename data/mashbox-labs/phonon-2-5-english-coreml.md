@@ -83,10 +83,10 @@ Con `AsrModels.load` (que usa también las funciones de 5 s y 10 s del encoder),
 
 | Modelo | Parámetros | Contexto de audio | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Phonon-2.5-English-CoreML (este) | no disponible (base ~0,6B) | ventanas de hasta 15 s | CC-BY-4.0 | HuggingFace, Core ML | Encoder en Neural Engine; WER 1,940 en test-clean |
-| Phonon-2 (FluidInference/phonon-2-coreml) | no disponible | no disponible | no disponible | HuggingFace | Referencia de velocidad del autor; 63,7 ms en clip de 10 s |
-| FermionResearch/Phonon-2.5-English | no disponible (base ~0,6B) | clip completo en la referencia | CC-BY-4.0 (según este derivado) | HuggingFace | Modelo base en PyTorch float32; WER de referencia 1,917 en test-clean |
-| NVIDIA Parakeet TDT 0.6B v3 | ~0,6B | no disponible | no disponible | HuggingFace | Modelo original del que deriva la familia Phonon |
+| Phonon-2.5-English-CoreML (este) | no disponible (base ~0,6B) | ventanas de hasta 15 s | CC-BY-4.0 | Hugging Face, Core ML | Encoder en Neural Engine; WER 1,940 en test-clean |
+| Phonon-2 (FluidInference/phonon-2-coreml) | no disponible | no disponible | no disponible | Hugging Face | Referencia de velocidad del autor; 63,7 ms en clip de 10 s |
+| FermionResearch/Phonon-2.5-English | no disponible (base ~0,6B) | clip completo en la referencia | CC-BY-4.0 (según este derivado) | Hugging Face | Modelo base en PyTorch float32; WER de referencia 1,917 en test-clean |
+| NVIDIA Parakeet TDT 0.6B v3 | ~0,6B | no disponible | no disponible | Hugging Face | Modelo original del que deriva la familia Phonon |
 
 ## Limitaciones y advertencias
 
@@ -101,7 +101,7 @@ Con `AsrModels.load` (que usa también las funciones de 5 s y 10 s del encoder),
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mashbox-labs/Phonon-2.5-English-CoreML
+- Modelo en Hugging Face: https://huggingface.co/mashbox-labs/Phonon-2.5-English-CoreML
 - Modelo base: https://huggingface.co/FermionResearch/Phonon-2.5-English
 - Modelo original de NVIDIA: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Librería FluidAudio: https://github.com/FluidInference/FluidAudio

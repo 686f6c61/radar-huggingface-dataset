@@ -121,7 +121,7 @@ La comparacion de rendimiento con las alternativas no puede establecerse con rig
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/glossia/Rambley-V2.1-350M-Embed
+- Modelo en Hugging Face: https://huggingface.co/glossia/Rambley-V2.1-350M-Embed
 - Modelo base: https://huggingface.co/glossia/Rambley-V2.1-350M
 - Resultados MTEB detallados: https://huggingface.co/datasets/glossia/Rambley-V2.1-350M-Embed-mteb-results
 - Dataset de entrenamiento no supervisado: https://huggingface.co/datasets/nomic-ai/nomic-embed-unsupervised-data

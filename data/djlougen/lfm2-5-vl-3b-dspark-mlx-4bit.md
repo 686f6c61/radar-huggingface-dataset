@@ -97,7 +97,7 @@ No existen modelos directamente comparables, ya que este artefacto es un borrado
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DJLougen/LFM2.5-VL-3B-DSpark-MLX-4bit
+- Modelo en Hugging Face: https://huggingface.co/DJLougen/LFM2.5-VL-3B-DSpark-MLX-4bit
 - Modelo base (drafter original): https://huggingface.co/LiquidAI/LFM2.5-VL-3B-DSpark
 - Modelo objetivo 8-bit: https://huggingface.co/LiquidAI/LFM2.5-VL-3B-MLX-8bit
 - Modelo objetivo 4-bit: https://huggingface.co/LiquidAI/LFM2.5-VL-3B-MLX-4bit
